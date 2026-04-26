@@ -1,24 +1,24 @@
 ---
-generated_at: '2026-04-19'
+generated_at: '2026-04-26'
 category_descriptions:
-  limits-quotas: Configuring and using custom fields in Azure DevOps test runs, including
-    how to define, manage, and apply them for better test reporting and tracking.
+  limits-quotas: 'Managing Azure Test Plans limits: configuring custom fields on test
+    runs, and understanding data retention policies, storage limits, and cleanup behavior.'
   security: Managing permissions, access levels, and security roles for users and
     groups in Azure Test Plans manual testing features.
   integrations: 'Using tcm.exe CLI to manage Azure Test Plans: create and run test
     suites, import/export test cases, manage test configurations, and automate test
     management tasks'
 skill_description: Expert knowledge for Azure Test Plans development including limits
-  & quotas, security, and integrations & coding patterns. Use when configuring custom
-  test run fields, managing test access, or automating suites via tcm.exe and test
-  configs, and other Azure Test Plans related development tasks. Not for Azure DevOps
-  (use azure-devops), Azure Boards (use azure-boards), Azure Pipelines (use azure-pipelines),
-  Azure App Testing (use azure-app-testing).
-use_when: Use when configuring custom test run fields, managing test access, or automating
-  suites via tcm.exe and test configs, and other Azure Test Plans related development
-  tasks.
-confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Boards (use azure-boards),
-  Azure Pipelines (use azure-pipelines), Azure App Testing (use azure-app-testing).
+  & quotas, security, and integrations & coding patterns. Use when configuring test
+  run fields, data retention, user permissions, tcm.exe automation, or test suite
+  management, and other Azure Test Plans related development tasks. Not for Azure
+  DevOps (use azure-devops), Azure Pipelines (use azure-pipelines), Azure Boards (use
+  azure-boards), Azure App Testing (use azure-app-testing).
+use_when: Use when configuring test run fields, data retention, user permissions,
+  tcm.exe automation, or test suite management, and other Azure Test Plans related
+  development tasks.
+confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (use
+  azure-pipelines), Azure Boards (use azure-boards), Azure App Testing (use azure-app-testing).
 ---
 # Azure Test Plans Crawl Report
 
@@ -27,14 +27,14 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Boards (use a
 - **Total Pages**: 33
 - **Fetched**: 33
 - **Fetch Failed**: 0
-- **Classified**: 3
-- **Unclassified**: 30
+- **Classified**: 4
+- **Unclassified**: 29
 
 ### Incremental Update
-- **New Pages**: 10
-- **Updated Pages**: 1
-- **Unchanged**: 22
-- **Deleted Pages**: 8
+- **New Pages**: 0
+- **Updated Pages**: 2
+- **Unchanged**: 31
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-test-plans/azure-test-plans.csv`
 
 ## Classification Statistics
@@ -42,40 +42,18 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Boards (use a
 | Type | Count | Percentage |
 |------|-------|------------|
 | integrations | 1 | 3.0% |
-| limits-quotas | 1 | 3.0% |
+| limits-quotas | 2 | 6.1% |
 | security | 1 | 3.0% |
-| *(Unclassified)* | 30 | 90.9% |
+| *(Unclassified)* | 29 | 87.9% |
 
 ## Changes
 
-### New Pages
-
-- [Tour Test Plans](https://learn.microsoft.com/en-us/azure/devops/test/navigate-test-plans?view=azure-devops)
-- [Key concepts](https://learn.microsoft.com/en-us/azure/devops/test/test-objects-overview?view=azure-devops)
-- [Create & manage test plans](https://learn.microsoft.com/en-us/azure/devops/test/create-a-test-plan?view=azure-devops)
-- [Create & manage test suites](https://learn.microsoft.com/en-us/azure/devops/test/create-test-suites?view=azure-devops)
-- [Create & manage test cases](https://learn.microsoft.com/en-us/azure/devops/test/create-test-cases?view=azure-devops)
-- [Copy or clone test items](https://learn.microsoft.com/en-us/azure/devops/test/copy-clone-test-items?view=azure-devops)
-- [Import and export test cases](https://learn.microsoft.com/en-us/azure/devops/test/bulk-import-export-test-cases?view=azure-devops)
-- [Add custom data fields](https://learn.microsoft.com/en-us/azure/devops/test/custom-fields?view=azure-devops)
-- [Actual Result](https://learn.microsoft.com/en-us/azure/devops/test/actual-result?view=azure-devops)
-- [Request & provide feedback](https://learn.microsoft.com/en-us/azure/devops/test/request-stakeholder-feedback?view=azure-devops)
-
 ### Updated Pages
 
-- [Associate automated tests with test cases](https://learn.microsoft.com/en-us/azure/devops/test/associate-automated-test-with-test-case?view=azure-devops)
-  - Updated: 2026-02-27T22:02:00.000Z → 2026-04-17T21:04:00.000Z
-
-### Deleted Pages
-
-- ~~Bulk import and export test cases (CSV/XLSX)~~ (https://learn.microsoft.com/en-us/azure/devops/test/bulk-import-export-test-cases?view=azure-devops)
-- ~~Copy/clone test plans, suites, cases~~ (https://learn.microsoft.com/en-us/azure/devops/test/copy-clone-test-items?view=azure-devops)
-- ~~Create test plans and test suites~~ (https://learn.microsoft.com/en-us/azure/devops/test/create-a-test-plan?view=azure-devops)
-- ~~Create test cases~~ (https://learn.microsoft.com/en-us/azure/devops/test/create-test-cases?view=azure-devops)
-- ~~Store custom data in test plan or test result~~ (https://learn.microsoft.com/en-us/azure/devops/test/custom-fields?view=azure-devops)
-- ~~Navigate Test Plans~~ (https://learn.microsoft.com/en-us/azure/devops/test/navigate-test-plans?view=azure-devops)
-- ~~Request and provide stakeholder feedback~~ (https://learn.microsoft.com/en-us/azure/devops/test/request-stakeholder-feedback?view=azure-devops)
-- ~~Test objects and terms~~ (https://learn.microsoft.com/en-us/azure/devops/test/test-objects-overview?view=azure-devops)
+- [Import and export test cases](https://learn.microsoft.com/en-us/azure/devops/test/bulk-import-export-test-cases?view=azure-devops)
+  - Updated: 2026-04-08T21:05:00.000Z → 2026-04-23T08:00:00.000Z
+- [Manual testing FAQs](https://learn.microsoft.com/en-us/azure/devops/test/reference-qa?view=azure-devops)
+  - Updated: 2026-04-08T21:05:00Z → 2026-04-22T21:02:00Z
 
 ## Classified Pages
 
@@ -83,18 +61,19 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Boards (use a
 |-----------|------|------------|--------|
 | [Add custom data fields](https://learn.microsoft.com/en-us/azure/devops/test/custom-fields?view=azure-devops) | limits-quotas | 0.70 | Explicitly states a numeric limit: up to 100 custom fields per Azure DevOps project; this is a concrete quota not generally known from training. |
 | [Default permissions (Security)](https://learn.microsoft.com/en-us/azure/devops/test/manual-test-permissions?view=azure-devops) | security | 0.70 | Covers Azure DevOps access levels, licensing, and permissions for manual and exploratory testing. Likely includes specific permission names, role mappings, and access requirements, which are product-specific security/authorization details. |
+| [Manual testing FAQs](https://learn.microsoft.com/en-us/azure/devops/test/reference-qa?view=azure-devops) | limits-quotas | 0.70 | FAQ pages for Azure Test Plans typically include concrete, product-specific details such as test data retention durations, limits on test artifacts, and possibly other numeric constraints that are not obvious from general knowledge. These quantified retention/limit values qualify as expert knowledge under the limits-quotas category. |
 | [Test case management commands](https://learn.microsoft.com/en-us/azure/devops/test/test-case-managment-reference?view=azure-devops) | integrations | 0.70 | Reference for tcm.exe command-line tool, which is a product-specific integration/automation interface. Such pages typically list commands, arguments, and options (API-like parameters) unique to Azure Test Plans, matching the integrations & coding patterns criteria. |
 
 ## Unclassified Pages
 
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
-| [Manual testing FAQs](https://learn.microsoft.com/en-us/azure/devops/test/reference-qa?view=azure-devops) | 0.40 | FAQ across many topics; summary does not expose specific limits, error codes, or configuration matrices, so cannot reliably classify as expert knowledge from the given text. |
 | [Set test retention policies](https://learn.microsoft.com/en-us/azure/devops/test/how-long-to-keep-test-results?view=azure-devops) | 0.40 | Discusses having a policy for test result retention conceptually; summary does not show concrete retention limits, config parameter tables, or tier-specific values. Appears as general guidance rather than detailed limits or configuration reference. |
 | [Manage test failure type](https://learn.microsoft.com/en-us/azure/devops/test/manage-test-failure-type?view=azure-devops) | 0.35 | Customization of failure types is described conceptually; summary does not show numeric limits, config tables, or security/role specifics. |
 | [Actual Result](https://learn.microsoft.com/en-us/azure/devops/test/actual-result?view=azure-devops) | 0.30 | Describes preview feature to record actual results; configuration is at test plan level but no clear numeric limits, config tables, or error codes in summary. |
 | [Add to existing bugs](https://learn.microsoft.com/en-us/azure/devops/test/add-to-bugs-exploratory-testing?view=azure-devops) | 0.30 | Describes how the extension searches for existing bugs and how to add findings; no error codes, numeric limits, or config parameter tables. |
 | [Explore work items](https://learn.microsoft.com/en-us/azure/devops/test/explore-workitems-exploratory-testing?view=azure-devops) | 0.30 | Exploring work items and linking them; workflow guidance without numeric limits or configuration parameter tables. |
+| [Import and export test cases](https://learn.microsoft.com/en-us/azure/devops/test/bulk-import-export-test-cases?view=azure-devops) | 0.30 | Primarily a how-to/tutorial for importing and exporting test cases via CSV/Excel with UI steps and general guidance. It does not focus on product-specific limits, configuration parameter tables, error-code-based troubleshooting, or other expert-only details as defined by the sub-skill types. |
 | [Install the Test & Feedback extension](https://learn.microsoft.com/en-us/azure/devops/test/perform-exploratory-tests?view=azure-devops) | 0.30 | Installation and basic use of the Test & Feedback extension; appears as a feature/tutorial page without detailed configuration matrices or limits. |
 | [Run manual tests](https://learn.microsoft.com/en-us/azure/devops/test/run-manual-tests?view=azure-devops) | 0.30 | Describes running manual tests and capturing diagnostics; no numeric limits, config parameter tables, or error-code-based troubleshooting. |
 | [Share steps between test cases](https://learn.microsoft.com/en-us/azure/devops/test/share-steps-between-test-cases?view=azure-devops) | 0.30 | How-to for using shared steps/parameters in test cases; procedural guidance but no config tables, limits, or error-resolution content. |
@@ -102,7 +81,6 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Boards (use a
 | [Test in Standalone mode](https://learn.microsoft.com/en-us/azure/devops/test/standalone-mode-exploratory-testing?view=azure-devops) | 0.30 | Standalone mode description; mostly explains mode behavior and requirements, not detailed configuration or quotas. |
 | [Associate automated tests with test cases](https://learn.microsoft.com/en-us/azure/devops/test/associate-automated-test-with-test-case?view=azure-devops) | 0.25 | How-to associate automated tests with test cases for traceability; likely code/linking steps but summary shows no specific parameter tables, limits, or error codes. |
 | [Collect diagnostic data](https://learn.microsoft.com/en-us/azure/devops/test/collect-diagnostic-data?view=azure-devops) | 0.25 | Describes collecting diagnostic data during tests; summary does not show specific log locations, error codes, or config parameters. |
-| [Import and export test cases](https://learn.microsoft.com/en-us/azure/devops/test/bulk-import-export-test-cases?view=azure-devops) | 0.25 | Bulk import/export via CSV/Excel with an import wizard; summary does not indicate detailed parameter tables or limits beyond generic capability. |
 | [Manage test runs](https://learn.microsoft.com/en-us/azure/devops/test/test-runs?view=azure-devops) | 0.25 | Covers using the Test Run Hub to track execution and results; appears to be feature usage guidance without specific limits, config tables, or error-code-based troubleshooting. |
 | [Perform user acceptance testing](https://learn.microsoft.com/en-us/azure/devops/test/user-acceptance-testing?view=azure-devops) | 0.25 | User acceptance testing workflow; mostly process guidance without numeric thresholds or config tables. |
 | [Progress report](https://learn.microsoft.com/en-us/azure/devops/test/progress-report?view=azure-devops) | 0.25 | Progress report usage; focuses on interpreting charts and status, not on configuration or limits. |

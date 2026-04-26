@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-19'
+generated_at: '2026-04-26'
 category_descriptions:
   scenarios: End-to-end adoption and landing zone guidance for specific Azure scenarios
     (AI agents, AKS, RHEL, ARO, AIS, AVD/Citrix, AVS, Oracle, SAP, analytics/data
@@ -23,19 +23,19 @@ category_descriptions:
     ops, data/analytics, security, cost, DevOps, AI agents) needed to run and scale
     Azure cloud adoption.
   readiness: 'Designing and operating Azure landing zones: network topology, identity,
-    subscriptions, governance, automation/DevOps, multitenancy, and workload‑specific
-    patterns (SAP, AVS, analytics, Oracle, etc.).'
+    subscriptions, governance, automation/DevOps, multitenant setups, and workload‑specific
+    patterns (SAP, AVS, analytics, Oracle, API, App Service).'
   security: Security design and governance for Azure landing zones, including Zero
     Trust, IAM, encryption, DevOps, AKS, analytics, SAP/Oracle, Arc, and ongoing security
     operations.
 skill_description: Expert guidance for planning and executing cloud adoption using
   Azure Cloud Adoption Framework. Covers strategy, planning, readiness & landing zones,
   adoption patterns, governance, security, operations & management, organization &
-  teams, and adoption scenarios. Use when designing Azure landing zones, AVS/VMware,
-  SAP/Oracle, AKS, or AI/analytics workloads, and other Azure Cloud Adoption Framework
+  teams, and adoption scenarios. Use when designing AI agent, SAP/Oracle, AVS/VMware,
+  AKS, or analytics/data mesh workloads on Azure, and other Azure Cloud Adoption Framework
   related development tasks.
-use_when: Use when designing Azure landing zones, AVS/VMware, SAP/Oracle, AKS, or
-  AI/analytics workloads, and other Azure Cloud Adoption Framework related development
+use_when: Use when designing AI agent, SAP/Oracle, AVS/VMware, AKS, or analytics/data
+  mesh workloads on Azure, and other Azure Cloud Adoption Framework related development
   tasks.
 ---
 # Azure Cloud Adoption Framework Crawl Report
@@ -74,10 +74,10 @@ use_when: Use when designing Azure landing zones, AVS/VMware, SAP/Oracle, AKS, o
 
 ### Updated Pages
 
-- [Sustainability](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/inform/sustainability)
-  - Updated: 2025-02-03T18:03:00.000Z → 2026-04-13T18:03:00.000Z
-- [Extend an SAP landing zone to support Power Platform](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/sap/sap-power-platform-extend-landing-zone)
-  - Updated: 2024-11-05T18:01:00.000Z → 2026-04-16T22:04:00.000Z
+- [Transition a single subscription with no management groups](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/align-scenario-single-subscription)
+  - Updated: 2025-12-19T21:03:00.000Z → 2026-04-23T18:04:00.000Z
+- [Transition by duplicating a landing zone management group](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/align-approach-duplicate-brownfield-audit-only)
+  - Updated: 2025-12-19T21:03:00.000Z → 2026-04-23T18:04:00.000Z
 
 ## Classified Pages
 
@@ -183,6 +183,8 @@ use_when: Use when designing Azure landing zones, AVS/VMware, SAP/Oracle, AKS, o
 | [Team topologies](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/considerations/devops-teams-topologies) | organization | 0.86 | Gives prescriptive guidance on team structures, platform vs application teams, and how to balance control and autonomy—clear organizational operating model and RACI-style content. |
 | [Technical planning](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-vmware/plan) | planning | 0.86 | Provides templates and concrete guidance to include Azure VMware Solution in the overall adoption plan, including backlog creation and skills planning—clear planning methodology. |
 | [Traditional Azure networking topology](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/traditional-azure-networking-topology) | readiness | 0.86 | Describes detailed design considerations and recommendations for traditional Azure network topologies, including diagrams and connectivity patterns, which are landing zone network design (readiness). |
+| [Transition a single subscription with no management groups](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/align-scenario-single-subscription) | readiness | 0.86 | Provides detailed, scenario-specific guidance for transitioning an existing single-subscription Azure environment with no management groups into the Azure landing zone reference architecture, including concrete steps, architectural considerations, and alignment details that go beyond generic concepts. This is expert readiness/landing zone implementation knowledge rather than planning or strategy. |
+| [Transition by duplicating a landing zone management group](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/align-approach-duplicate-brownfield-audit-only) | readiness | 0.86 | Describes a specific brownfield transition approach where a landing zone management group is duplicated with policies in audit-only mode, including how to assess subscriptions for compliance and avoid impact to application teams. This is concrete landing zone architecture and management group design/transition guidance, fitting readiness and containing expert implementation details. |
 | [3. Monitor Azure](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/manage/monitor) | operations | 0.85 | Contains detailed guidance on planning, configuring, and optimizing monitoring across Azure, other clouds, on-premises, and edge, including concrete monitoring patterns and integration practices that are implementation-specific. |
 | [4. Manage agents](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai-agents/integrate-manage-operate) | operations | 0.85 | Covers lifecycle management, integration into workflows, and operational excellence for AI agents, including security, compliance, and cost efficiency—operations and management focus. |
 | [Assess workloads](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/plan/assess-workloads-for-cloud-migration) | planning | 0.85 | Describes a structured assessment phase to collect architecture, performance, security, and dependency data before migration; fits migration planning and assessment. |
@@ -248,7 +250,6 @@ use_when: Use when designing Azure landing zones, AVS/VMware, SAP/Oracle, AKS, o
 | [Single-region design that doesn't have Global Reach](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-vmware/single-region-virtual-wan-without-global-reach) | readiness | 0.84 | Network topology and traffic flow guidance for AVS with secure Virtual WAN but no Global Reach, including design trade-offs—implementation-level landing zone content. |
 | [Single-region design that has Global Reach](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-vmware/single-region-virtual-wan-global-reach) | readiness | 0.84 | Provides best-practice topology and traffic flow recommendations for AVS with secure Virtual WAN and ExpressRoute Global Reach in a single region. |
 | [Transition a regional organization environment](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/align-scenario-regional-org) | readiness | 0.84 | Covers a complex regional organization scenario with dev/test/prod management groups and how to transition to the landing zone architecture—expert multi-region, multi-environment readiness guidance. |
-| [Transition a single subscription with no management groups](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/align-scenario-single-subscription) | readiness | 0.84 | Scenario article with concrete steps and considerations for moving from a single subscription with no management groups into the landing zone architecture—expert subscription and management group redesign. |
 | [Transition management groups](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/align-scenario-multiple-management-groups) | readiness | 0.84 | Provides prescriptive guidance for reworking management group hierarchies and subscriptions into the landing zone reference architecture—deep readiness and platform structure expertise. |
 | [Transition to the Azure landing zone reference architecture](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/enterprise-scale/transition) | readiness | 0.84 | Gives detailed recommendations for onboarding existing subscriptions, management groups, and connectivity into the Azure landing zone reference architecture—expert environment transition and landing zone design. |
 | [Governance and security](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai-agents/governance-security-across-organization) | governance | 0.83 | Provides layered governance and security framework for AI agents, including data governance, compliance, and policy formation mapped to CAF governance concepts—specialized governance guidance. |
@@ -277,7 +278,6 @@ use_when: Use when designing Azure landing zones, AVS/VMware, SAP/Oracle, AKS, o
 | [SAP data integration with Azure - Security](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/sap/sap-lza-data-integration-security) | security | 0.82 | Provides multi-layer security architecture and component-level considerations for SAP data integration using Azure services—deep security posture guidance. |
 | [Scale with multiple subscriptions](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-setup-guide/initial-subscriptions) | readiness | 0.82 | Gives prescriptive guidance on initial subscription creation and scaling patterns as the environment grows—core subscription design and readiness expertise. |
 | [Security governance and compliance](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/eslz-security-governance-and-compliance) | scenarios | 0.82 | Contains detailed, scenario-specific design considerations and recommended security, governance, and compliance controls for Azure Virtual Desktop landing zones. This is a workload-specific CAF adaptation rather than generic governance or security methodology, so it fits scenarios. |
-| [Transition by duplicating a landing zone management group](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/align-approach-duplicate-brownfield-audit-only) | readiness | 0.82 | Describes a specific transition approach using duplicated management groups with audit-only policies to assess compliance—expert, nuanced landing zone migration pattern. |
 | [Update custom policies](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/update-custom-policies) | governance | 0.82 | Provides high-level but concrete process for updating already-deployed custom policies and initiatives, including tooling-specific paths (Terraform, Bicep), which is expert policy-governance lifecycle guidance. |
 | [1. Assess your cloud adoption strategy](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/assessment) | strategy | 0.80 | Describes a concrete assessment process for an existing cloud adoption strategy, including how to interpret maturity, identify gaps, and align with business goals. This is expert strategy-assessment methodology, not just conceptual overview or planning detail. |
 | [1. Define operating model](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/plan/prepare-organization-for-cloud) | planning | 0.80 | Describes converting strategy into a cloud adoption plan, including choosing operations approaches and distributing responsibilities; fits adoption planning guidance. |

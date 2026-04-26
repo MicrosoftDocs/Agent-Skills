@@ -1,9 +1,9 @@
 ---
 name: azure-cosmos-db
-description: Expert knowledge for Azure Cosmos DB development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Cosmos DB NoSQL/Mongo/Cassandra APIs, change feed, vector search, global distribution, or HTAP/analytics workloads, and other Azure Cosmos DB related development tasks. Not for Azure Table Storage (use azure-table-storage), Azure SQL Database (use azure-sql-database), Azure Database for MySQL (use azure-database-mysql), Azure Database for PostgreSQL (use azure-database-postgresql).
+description: Expert knowledge for Azure Cosmos DB development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Cosmos DB NoSQL/Mongo/Cassandra/Gremlin/Postgres APIs, change feed, vector search, RU/cost, or global distribution, and other Azure Cosmos DB related development tasks. Not for Azure Table Storage (use azure-table-storage), Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance), Azure Data Explorer (use azure-data-explorer).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-19"
+  generated_at: "2026-04-26"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Cosmos DB Skill
@@ -25,13 +25,13 @@ This skill requires **network access** to fetch documentation content:
 | Category | Location | Description |
 |----------|----------|-------------|
 | Troubleshooting | L37-L91 | Diagnosing and fixing Cosmos DB issues: SDK errors, timeouts, 4xx/5xx codes, performance/RU analysis, metrics/log queries, CMK/backup problems, and API-specific (Mongo/Cassandra/Gremlin/Postgres) troubleshooting. |
-| Best Practices | L92-L151 | Performance, scaling, cost, and resiliency best practices for Cosmos DB (all APIs/SDKs), including partitioning, indexing, throughput, benchmarking, DR, and tuning PostgreSQL/Cassandra workloads |
+| Best Practices | L92-L151 | Performance, scaling, partitioning, indexing, cost optimization, SDK tuning, and HA/DR best practices for Cosmos DB (NoSQL, MongoDB, Cassandra, PostgreSQL) and legacy DocumentDB. |
 | Decision Making | L152-L206 | Guides for choosing Cosmos DB options (consistency, throughput, backup, analytics, vector search), estimating RU/costs, and planning/migrating workloads across APIs (Cassandra, MongoDB, PostgreSQL, DynamoDB). |
 | Architecture & Design Patterns | L207-L249 | Architectural patterns for Cosmos DB and PostgreSQL: multitenancy, sharding, HA/DR, change feed, HTAP, real-time analytics, and AI/LLM agents, memory, vectors, and semantic caching. |
-| Limits & Quotas | L250-L294 | Limits, quotas, and behaviors for Cosmos DB and DocumentDB: RU/throughput, autoscale, burst, backups, partitions, indexing, APIs (Core, Cassandra, Mongo, Table, Gremlin), and PostgreSQL cluster sizing. |
-| Security | L295-L361 | Securing Cosmos DB and related services: identity/RBAC, keys and encryption, network isolation (VNet, Private Link, firewalls), TLS, auditing, policies, and data‑level protections. |
-| Configuration | L362-L485 | Configuring Cosmos DB and related services: throughput, indexing, TTL, backup/restore, global distribution, monitoring, emulators, SDK tuning, and deployment via Bicep/ARM/Terraform across all APIs. |
-| Integrations & Coding Patterns | [integrations.md](integrations.md) | SDK patterns, bulk ops, change feed, vector search, and integrations (Kafka, Spark, Functions, BI, AI agents) for Cosmos DB APIs (NoSQL, Mongo, Cassandra, PostgreSQL, Gremlin, DocumentDB). |
+| Limits & Quotas | L250-L293 | Limits, quotas, and behaviors for Cosmos DB and DocumentDB: RU/throughput, autoscale, burst, backups, partitions, indexing, APIs (Core, Cassandra, Mongo, Table, Gremlin), and PostgreSQL cluster sizing. |
+| Security | L294-L361 | Securing Cosmos DB and related services: identity/RBAC, keys and encryption, network isolation (VNet, Private Link, firewalls), TLS, auditing, policies, and data protection features. |
+| Configuration | L362-L484 | Configuring Cosmos DB and related services: throughput, indexing, TTL, backup/restore, global distribution, monitoring, emulators, SDK tuning, and deployment via Bicep/ARM/Terraform across all APIs. |
+| Integrations & Coding Patterns | [integrations.md](integrations.md) | SDK patterns, bulk ops, change feed, vector search, and integration guides for Cosmos DB APIs (NoSQL, Mongo, Cassandra, Gremlin, PostgreSQL, DocumentDB) plus Kafka, Spark, BI, and migration tools. |
 | Deployment | [deployment.md](deployment.md) | Deploying and managing Cosmos DB and Azure DocumentDB: ARM/Bicep/Terraform templates, CI/CD, scaling, backup/restore, upgrades, maintenance, and start/stop operations for various APIs. |
 
 ### Troubleshooting
@@ -97,7 +97,7 @@ This skill requires **network access** to fetch documentation content:
 | Best practices for Azure Cosmos DB .NET SDK v3 | https://learn.microsoft.com/en-us/azure/cosmos-db/best-practice-dotnet |
 | Best practices for Azure Cosmos DB Java SDK v4 | https://learn.microsoft.com/en-us/azure/cosmos-db/best-practice-java |
 | Optimize Azure Cosmos DB Python SDK performance | https://learn.microsoft.com/en-us/azure/cosmos-db/best-practice-python |
-| Apply performance best practices for Cosmos DB JavaScript SDK | https://learn.microsoft.com/en-us/azure/cosmos-db/best-practices-javascript |
+| Optimize Azure Cosmos DB JavaScript SDK usage | https://learn.microsoft.com/en-us/azure/cosmos-db/best-practices-javascript |
 | Adapt Apache Cassandra applications to Cosmos DB Cassandra API | https://learn.microsoft.com/en-us/azure/cosmos-db/cassandra/adoption |
 | Apply recommended Cosmos DB Cassandra driver extension settings | https://learn.microsoft.com/en-us/azure/cosmos-db/cassandra/driver-extensions |
 | Implement lightweight transactions in Cosmos DB Cassandra API | https://learn.microsoft.com/en-us/azure/cosmos-db/cassandra/lightweight-transactions |
@@ -264,7 +264,6 @@ This skill requires **network access** to fetch documentation content:
 | Runtime limits for Cosmos DB Gremlin engine | https://learn.microsoft.com/en-us/azure/cosmos-db/gremlin/limits |
 | Use hierarchical partition keys to bypass 20-GB limit | https://learn.microsoft.com/en-us/azure/cosmos-db/hierarchical-partition-keys-unlimited-scale |
 | Alert when Cosmos DB logical partitions near 20 GB limit | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-alert-on-logical-partition-key-storage-size |
-| Manage Cosmos DB accounts and understand control plane limits | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-manage-database-account |
 | Understand limits and behavior of Cosmos DB integrated cache | https://learn.microsoft.com/en-us/azure/cosmos-db/integrated-cache-faq |
 | Request unit charges for key-value operations in Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/key-value-store-cost |
 | Migrate nonpartitioned Cosmos DB containers to partitioned | https://learn.microsoft.com/en-us/azure/cosmos-db/migrate-containers-partitioned-to-nonpartitioned |
@@ -301,7 +300,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure RBAC permissions for Cosmos DB continuous backup restore | https://learn.microsoft.com/en-us/azure/cosmos-db/continuous-backup-restore-permissions |
 | Configure Cosmos DB to meet data residency requirements | https://learn.microsoft.com/en-us/azure/cosmos-db/data-residency |
 | Use Microsoft Defender threat protection for Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/defender-for-cosmos-db |
-| Configure Dynamic Data Masking in Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/dynamic-data-masking |
+| Configure Dynamic Data Masking in Azure Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/dynamic-data-masking |
 | Secure Azure Cosmos DB for Gremlin accounts | https://learn.microsoft.com/en-us/azure/cosmos-db/gremlin/security |
 | Add and assign Cosmos DB RBAC user roles | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-add-assign-user-roles |
 | Use Always Encrypted client-side encryption in Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-always-encrypted |
@@ -336,6 +335,7 @@ This skill requires **network access** to fetch documentation content:
 | Reference for Cosmos DB data plane RBAC roles | https://learn.microsoft.com/en-us/azure/cosmos-db/reference-data-plane-security |
 | Reference for Cosmos DB data plane RBAC roles | https://learn.microsoft.com/en-us/azure/cosmos-db/reference-data-plane-security |
 | Protect Cosmos DB resources with Azure locks | https://learn.microsoft.com/en-us/azure/cosmos-db/resource-locks |
+| Secure Azure Cosmos DB for NoSQL accounts and data | https://learn.microsoft.com/en-us/azure/cosmos-db/security |
 | Review Cosmos DB Azure Policy compliance controls | https://learn.microsoft.com/en-us/azure/cosmos-db/security-controls-policy |
 | Enforce minimum TLS version for Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/self-serve-minimum-tls-enforcement |
 | Store Cosmos DB credentials securely in Azure Key Vault | https://learn.microsoft.com/en-us/azure/cosmos-db/store-credentials-key-vault |
@@ -376,7 +376,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure Azure Monitor alerts for Cosmos DB resources | https://learn.microsoft.com/en-us/azure/cosmos-db/create-alerts |
 | Use keyboard shortcuts in Cosmos DB Data Explorer | https://learn.microsoft.com/en-us/azure/cosmos-db/data-explorer-shortcuts |
 | Configure and use Azure Cosmos DB local emulator | https://learn.microsoft.com/en-us/azure/cosmos-db/emulator |
-| Run Azure Cosmos DB Linux-based emulator container | https://learn.microsoft.com/en-us/azure/cosmos-db/emulator-linux |
 | Control Cosmos DB Windows emulator via CLI and PowerShell | https://learn.microsoft.com/en-us/azure/cosmos-db/emulator-windows-arguments |
 | Retrieve request unit charges for Cosmos DB queries | https://learn.microsoft.com/en-us/azure/cosmos-db/find-request-unit-charge |
 | Reference schema for Azure Cosmos DB Fleet Analytics tables | https://learn.microsoft.com/en-us/azure/cosmos-db/fleet-analytics-schema-reference |

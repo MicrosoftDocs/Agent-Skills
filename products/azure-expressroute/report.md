@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-12'
+generated_at: '2026-04-26'
 category_descriptions:
   limits-quotas: ExpressRoute bandwidth, route, and gateway limits, FastPath constraints,
     rate limiting on provider circuits, and how to monitor advertised routes to stay
@@ -10,9 +10,9 @@ category_descriptions:
   deployment: Guides for deploying and migrating ExpressRoute circuits/gateways, understanding
     Direct SKUs, testing multi-site resiliency, and automating setup with ARM templates,
     PowerShell, and Terraform.
-  configuration: How to configure and manage ExpressRoute circuits, peerings, VNets,
-    gateways, routing/BGP, NAT, IPv6, monitoring, resiliency, and Global Reach using
-    portal, PowerShell, and CLI
+  configuration: Configuring and managing ExpressRoute circuits, gateways, routing/peering,
+    NAT, IPv6, Global Reach, monitoring, resiliency, and linking VNets using portal,
+    PowerShell, and CLI.
   architecture-patterns: Designing resilient, highly available ExpressRoute topologies,
     multi-circuit routing, coexistence with S2S VPN, DR/backup patterns, and using
     Microsoft peering for PSTN services.
@@ -30,17 +30,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure ExpressRoute development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  designing ExpressRoute circuits/gateways, BGP routing, Global Reach, FastPath, or
-  S2S VPN coexistence, and other Azure ExpressRoute related development tasks. Not
-  for Azure Internet Peering (use azure-internet-peering), Azure Peering Service (use
-  azure-peering-service), Azure Virtual WAN (use azure-virtual-wan), Azure VPN Gateway
-  (use azure-vpn-gateway).
+  designing ExpressRoute circuits/gateways, BGP routing, Global Reach, S2S VPN coexistence,
+  or encrypted traffic, and other Azure ExpressRoute related development tasks. Not
+  for Azure Internet Peering (use azure-internet-peering), Azure Virtual WAN (use
+  azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway), Azure Virtual Network
+  (use azure-virtual-network).
 use_when: Use when designing ExpressRoute circuits/gateways, BGP routing, Global Reach,
-  FastPath, or S2S VPN coexistence, and other Azure ExpressRoute related development
-  tasks.
+  S2S VPN coexistence, or encrypted traffic, and other Azure ExpressRoute related
+  development tasks.
 confusable_not_for: Not for Azure Internet Peering (use azure-internet-peering), Azure
-  Peering Service (use azure-peering-service), Azure Virtual WAN (use azure-virtual-wan),
-  Azure VPN Gateway (use azure-vpn-gateway).
+  Virtual WAN (use azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway),
+  Azure Virtual Network (use azure-virtual-network).
 ---
 # Azure ExpressRoute Crawl Report
 
@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Internet Peering (use azure-internet-peering),
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 95
+- **Updated Pages**: 1
+- **Unchanged**: 94
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-expressroute/azure-expressroute.csv`
 
@@ -75,6 +75,11 @@ confusable_not_for: Not for Azure Internet Peering (use azure-internet-peering),
 | *(Unclassified)* | 25 | 26.3% |
 
 ## Changes
+
+### Updated Pages
+
+- [Azure portal](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-add-gateway-portal-resource-manager)
+  - Updated: 2025-11-18T17:01:00.000Z → 2026-04-24T17:42:00.000Z
 
 ## Classified Pages
 
@@ -99,7 +104,7 @@ confusable_not_for: Not for Azure Internet Peering (use azure-internet-peering),
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-coexist-resource-manager) | configuration | 0.70 | How-to for coexistence of ExpressRoute and site-to-site VPN using PowerShell; includes product-specific gateway configuration steps and parameters beyond generic knowledge. |
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-reset-peering) | configuration | 0.70 | Shows PowerShell commands and parameters to enable/disable ExpressRoute peerings and describes resulting BGP session behavior, fitting configuration knowledge. |
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-routing-arm) | configuration | 0.70 | PowerShell article for routing/peering typically includes specific parameter names (peer ASN, VLAN ID, prefixes, routing configuration fields) and how they must be set for ExpressRoute circuits, which matches product-specific configuration knowledge. |
-| [Azure portal](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-add-gateway-portal-resource-manager) | configuration | 0.70 | Portal-based configuration including gateway creation, SKU upgrades, and settings; contains concrete configuration parameters. |
+| [Azure portal](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-add-gateway-portal-resource-manager) | configuration | 0.70 | Step-by-step configuration article for ExpressRoute virtual network gateways that typically includes specific gateway SKUs, configuration options, and setting names/values (e.g., gateway type, SKU selection, and upgrade behavior). These are product-specific configuration details rather than generic concepts, fitting the configuration sub-skill. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-linkvnet-portal-resource-manager) | configuration | 0.70 | Portal how-to for creating VNet-to-ExpressRoute connections; includes specific connection settings and resource relationships. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-linkvnet-portal-resource-manager) | configuration | 0.70 | Portal how-to for creating VNet-to-ExpressRoute connections; includes specific connection settings and resource relationships. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-reset-peering-portal) | configuration | 0.70 | Details how enabling/disabling peerings affects BGP sessions on primary/secondary connections and uses specific portal configuration options, which is product-specific configuration behavior. |

@@ -1,9 +1,9 @@
 ---
 name: azure-database-postgresql
-description: Expert knowledge for Azure Database for PostgreSQL development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using pgvector search, Azure AI/OpenAI embeddings, VNet/private endpoints, geo-replication, or CI/CD deploys, and other Azure Database for PostgreSQL related development tasks. Not for Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Cosmos DB (use azure-cosmos-db).
+description: Expert knowledge for Azure Database for PostgreSQL development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Azure Database for PostgreSQL with vector search, AI/OpenAI embeddings, VNet/private endpoints, HA, or sharding, and other Azure Database for PostgreSQL related development tasks. Not for Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Cosmos DB (use azure-cosmos-db).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-19"
+  generated_at: "2026-04-26"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Database for PostgreSQL Skill
@@ -25,14 +25,14 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L37-L60 | Diagnosing and fixing Azure PostgreSQL issues: connectivity/TLS/auth, HA health, migration validation, autovacuum, performance (CPU/IOPS/memory/slow queries), scaling, CLI, and extension errors. |
-| Best Practices | L61-L79 | Performance, migration, and security best practices for Azure PostgreSQL: tuning queries, extensions, pooling, bulk load, stats, partitioning, pgvector, Oracle migration, and maintenance. |
-| Decision Making | L80-L94 | Guidance on choosing compute tiers, versions, and hosting, planning upgrades and geo-replication, and sizing, validating, and reserving capacity for Azure Database for PostgreSQL. |
-| Architecture & Design Patterns | L95-L105 | Patterns for using Azure PostgreSQL (often with OpenAI) to build recommendation/semantic search apps, microservices, multitenancy, real-time dashboards, and sharded/elastic data architectures. |
-| Limits & Quotas | L106-L125 | Backup/restore behavior, storage and performance limits, quotas, client/replica caps, elastic cluster limits, and known migration/conversion constraints for Azure Database for PostgreSQL. |
-| Security | L126-L157 | Securing Azure Database for PostgreSQL: network/VNet and firewall, TLS/SSL, identities and auth (Entra, SCRAM, managed identities), encryption, auditing, Defender, and security policies. |
-| Configuration | L158-L246 | Configuring Azure Database for PostgreSQL servers: parameters, extensions, logging, monitoring, HA, networking, maintenance, scaling, vector search, and migration-related settings. |
+| Best Practices | L61-L80 | Performance, migration, and security best practices for Azure Database for PostgreSQL: tuning queries/extensions, pooling, bulk load, maintenance, schema/app/Oracle migration, and hardening. |
+| Decision Making | L81-L95 | Guidance on choosing compute tiers, versions, and hosting, planning upgrades and geo-replication, and sizing, validating, and reserving capacity for Azure Database for PostgreSQL. |
+| Architecture & Design Patterns | L96-L106 | Patterns for using Azure PostgreSQL (often with OpenAI) to build recommendation/semantic search apps, microservices, multitenancy, real-time dashboards, and sharded/elastic data architectures. |
+| Limits & Quotas | L107-L126 | Backup/restore behavior, storage and performance limits, quotas, client/replica caps, elastic cluster limits, and known migration/conversion constraints for Azure Database for PostgreSQL. |
+| Security | L127-L158 | Securing Azure Database for PostgreSQL: network/VNet and firewall, TLS/SSL, identities and auth (Entra, SCRAM, managed identities), encryption, auditing, Defender, and security policies. |
+| Configuration | L159-L246 | Configuring Azure Database for PostgreSQL servers: parameters, extensions, logging, monitoring, HA, networking, maintenance, scaling, vector search, and migration-related settings. |
 | Integrations & Coding Patterns | L247-L276 | Integrating Azure PostgreSQL with AI/ML and apps: Azure AI/OpenAI embeddings, LangChain, Foundry/MCP, SDKs (C#, Java, Python, Go, PHP), VS Code, Storage, Data Factory, and migration tools. |
-| Deployment | L277-L287 | Deploying and upgrading Azure PostgreSQL (CI/CD, Bicep, AKS/Django, Web Apps), managing networking (VNet, private endpoints), maintenance behavior, and point-in-time restore. |
+| Deployment | L277-L287 | CI/CD deployment, upgrades, and recovery for Azure PostgreSQL: pipelines/GitHub Actions, Bicep provisioning, AKS/Django and Web App integration, VNet/private endpoint changes, and point-in-time restore. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -62,6 +62,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Optimize Apache AGE graph query performance on Azure | https://learn.microsoft.com/en-us/azure/postgresql/azure-ai/generative-ai-age-performance |
+| Handle scheduled maintenance for Azure PostgreSQL flexible servers | https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/concepts-maintenance |
 | Use pg_partman to partition large tables on Azure | https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/how-to-use-pg-partman |
 | Apply connection pooling best practices for Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/connectivity/concepts-connection-pooling-best-practices |
 | Apply Azure-specific considerations for PostgreSQL extensions | https://learn.microsoft.com/en-us/azure/postgresql/extensions/concepts-extensions-considerations |
@@ -158,7 +159,6 @@ This skill requires **network access** to fetch documentation content:
 ### Configuration
 | Topic | URL |
 |-------|-----|
-| Configure and plan scheduled maintenance for Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/concepts-maintenance |
 | Apply server configuration concepts for Azure PostgreSQL flexible server | https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/concepts-servers |
 | Schedule maintenance windows for Azure PostgreSQL flexible server | https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/how-to-configure-scheduled-maintenance |
 | Deploy PostgreSQL elastic clusters using ARM templates | https://learn.microsoft.com/en-us/azure/postgresql/elastic-clusters/quickstart-create-elastic-cluster-arm-template |
@@ -283,5 +283,5 @@ This skill requires **network access** to fetch documentation content:
 | Deploy Azure PostgreSQL flexible server using Bicep | https://learn.microsoft.com/en-us/azure/postgresql/developer/create-server-bicep |
 | Deploy Django on AKS with Azure PostgreSQL backend | https://learn.microsoft.com/en-us/azure/postgresql/developer/django-aks-database |
 | Deploy Azure Web App and PostgreSQL in same VNet | https://learn.microsoft.com/en-us/azure/postgresql/developer/webapp-server-vnet |
-| Understand PostgreSQL maintenance release rollout behavior | https://learn.microsoft.com/en-us/azure/postgresql/release-notes-maintenance/release-notes-maintenance-index |
+| Migrate Azure PostgreSQL from VNet injection to private endpoints | https://learn.microsoft.com/en-us/azure/postgresql/network/how-to-migrate-vnet-private-endpoint-capable-server |
 | Restore PostgreSQL flexible server to a point in time | https://learn.microsoft.com/en-us/azure/postgresql/samples/sample-point-in-time-restore |

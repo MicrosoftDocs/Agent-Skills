@@ -1,9 +1,9 @@
 ---
 name: azure-defender-for-iot
-description: Expert knowledge for Azure Defender For Iot development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when deploying OT sensors, configuring micro agents, setting up traffic mirroring, or integrating with Sentinel/SIEM, and other Azure Defender For Iot related development tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure Security (use azure-security), Azure External Attack Surface Management (use azure-external-attack-surface-management), Azure Sentinel (use azure-sentinel).
+description: Expert knowledge for Azure Defender For Iot development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when deploying OT sensors, configuring micro agents, setting up traffic mirroring, or integrating with Sentinel/SIEM, and other Azure Defender For Iot related development tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure IoT (use azure-iot), Azure IoT Hub (use azure-iot-hub), Azure Security (use azure-security).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-16"
+  generated_at: "2026-04-26"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Defender For Iot Skill
@@ -31,7 +31,7 @@ This skill requires **network access** to fetch documentation content:
 | Limits & Quotas | L76-L84 | Info on OT trial setup, supported/retiring features, appliance catalog and requirements, and Defender for IoT data retention and storage limits. |
 | Security | L85-L103 | Securing Defender for IoT OT environments: auth, RBAC/roles, SSO, certificates, Zero Trust, alert workflows/response, and auditing user and programming activity. |
 | Configuration | L104-L135 | Configuring Defender for IoT agents/sensors: micro agent twins, dependencies, alerts, OT sensor settings, traffic mirroring, connectivity, monitoring methods, and threat intel updates. |
-| Integrations & Coding Patterns | L136-L163 | Integrating Defender for IoT with SIEMs, firewalls, ServiceNow, Sentinel, OT sensors, and micro agents, plus using APIs, playbooks, and workbooks to automate alerts and manage inventory/vulnerabilities. |
+| Integrations & Coding Patterns | L136-L163 | Integrating Defender for IoT with SIEMs, firewalls, ServiceNow, Sentinel, REST APIs, and micro agents, plus patterns for alert, inventory, vulnerability, and data automation/visualization. |
 | Deployment | L164-L187 | Planning and deploying Defender for IoT OT sensors: hardware/VM options, appliance-specific guides, traffic mirroring, onboarding, activation, and moving IoT security resources across regions. |
 
 ### Troubleshooting
@@ -147,7 +147,7 @@ This skill requires **network access** to fetch documentation content:
 | Send Defender for IoT alerts to LogRhythm | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/integrations/logrhythm |
 | Send Defender for IoT alerts to RSA NetWitness | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/integrations/netwitness |
 | Connect on-premises Defender for IoT to Sentinel (legacy) | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/integrations/on-premises-sentinel |
-| Stream Defender for IoT cloud alerts to external SIEMs | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/integrations/send-cloud-data-to-partners |
+| Integrate Defender for IoT alerts with partner SIEM | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/integrations/send-cloud-data-to-partners |
 | Configure legacy ServiceNow integration for Defender for IoT | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/integrations/service-now-legacy |
 | Use Sentinel solution to detect IoT threats | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/iot-advanced-threat-monitoring |
 | Connect Defender for IoT with Microsoft Sentinel | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/iot-solution |

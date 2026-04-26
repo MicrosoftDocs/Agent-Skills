@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-12'
+generated_at: '2026-04-26'
 category_descriptions:
   configuration: 'Configuring and governing Network Watcher logging: AMA for Connection
     Monitor, NSG/VNet flow logs setup, schemas, filtering, templates (Bicep/ARM),
@@ -40,13 +40,13 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Networking 
 - **Total Pages**: 64
 - **Fetched**: 64
 - **Fetch Failed**: 0
-- **Classified**: 29
-- **Unclassified**: 35
+- **Classified**: 28
+- **Unclassified**: 36
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 64
+- **Updated Pages**: 1
+- **Unchanged**: 63
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-network-watcher/azure-network-watcher.csv`
 
@@ -56,13 +56,18 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Networking 
 |------|-------|------------|
 | configuration | 12 | 18.8% |
 | decision-making | 3 | 4.7% |
-| integrations | 4 | 6.2% |
+| integrations | 3 | 4.7% |
 | limits-quotas | 1 | 1.6% |
 | security | 3 | 4.7% |
 | troubleshooting | 6 | 9.4% |
-| *(Unclassified)* | 35 | 54.7% |
+| *(Unclassified)* | 36 | 56.2% |
 
 ## Changes
+
+### Updated Pages
+
+- [Integrate Microsoft Sentinel with traffic analytics](https://learn.microsoft.com/en-us/azure/network-watcher/traffic-analytics-sentinel)
+  - Updated: 2026-03-17T06:14:00.000Z → 2026-04-24T11:19:00.000Z
 
 ## Classified Pages
 
@@ -88,7 +93,6 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Networking 
 | [Read flow logs](https://learn.microsoft.com/en-us/azure/network-watcher/flow-logs-read) | integrations | 0.70 | Article on using a PowerShell script to parse flow logs created hourly and updated every few minutes; includes concrete script code and log schema usage, which are product-specific integration/coding patterns. |
 | [Schema and data aggregation](https://learn.microsoft.com/en-us/azure/network-watcher/traffic-analytics-schema) | configuration | 0.70 | Schema and data aggregation documentation; such pages typically define field names, types, and aggregation rules for Traffic Analytics data, which are detailed configuration/schema references. |
 | [VNet flow logs managed identity](https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-managed-identity) | security | 0.70 | Describes using user-assigned managed identities for VNet flow logs to access storage; likely includes specific role assignments, scopes, and identity configuration steps, which are product-specific security details. |
-| [Integrate Microsoft Sentinel with traffic analytics](https://learn.microsoft.com/en-us/azure/network-watcher/traffic-analytics-sentinel) | integrations | 0.68 | Integration guide between Traffic Analytics and Microsoft Sentinel likely includes product-specific configuration steps, parameter names, and settings unique to this integration (for example, how to connect flow logs, workspaces, and data connectors), which qualifies as expert integration knowledge beyond generic concepts. |
 | [VNet flow logs filtering](https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-filtering) | configuration | 0.68 | The article describes product-specific filtering options for Azure Network Watcher virtual network flow logs (for example, filtering by flow state, action, IP ranges, ports, protocols, intra- vs inter-VNet traffic). These are concrete configuration capabilities and parameters unique to this service, not just conceptual logging guidance, fitting the configuration sub-skill best. |
 | [Audit and deploy using Azure Policy](https://learn.microsoft.com/en-us/azure/network-watcher/nsg-flow-logs-policy-portal) | configuration | 0.65 | Shows how to use Azure Policy built-ins for NSG flow logs; likely lists policy definitions, parameters, and assignment options, which are concrete configuration details. |
 | [Audit and deploy using Azure Policy](https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-policy) | configuration | 0.65 | Shows how to use built-in Azure Policy definitions to audit and deploy VNet flow logs; such content typically lists specific policy names, parameters, and effects, which are configuration-level details. |
@@ -129,6 +133,7 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Networking 
 | [Update to latest version](https://learn.microsoft.com/en-us/azure/network-watcher/network-watcher-agent-update) | 0.30 | Update procedure for VM extension; summary lacks configuration parameters, limits, or troubleshooting mappings. |
 | [Overview](https://learn.microsoft.com/en-us/azure/network-watcher/nsg-flow-logs-overview) | 0.25 | Overview of NSG flow logs and retirement notice; summary does not indicate detailed configuration tables, limits, or troubleshooting mappings. |
 | [Overview](https://learn.microsoft.com/en-us/azure/network-watcher/traffic-analytics) | 0.25 | High-level overview of Traffic Analytics capabilities and benefits; summary does not indicate detailed configuration parameters, limits, or troubleshooting content. |
+| [Integrate Microsoft Sentinel with traffic analytics](https://learn.microsoft.com/en-us/azure/network-watcher/traffic-analytics-sentinel) | 0.20 | Appears to be an integration/overview of connecting Traffic Analytics with Microsoft Sentinel without clear indication of detailed configuration tables, specific parameter values, or error-code-based troubleshooting. Likely high-level integration and benefits rather than product-specific expert details. |
 | [Monitor communication between VMs](https://learn.microsoft.com/en-us/azure/network-watcher/monitor-vm-communication) | 0.20 | Step-by-step tutorial using portal; no indication of detailed settings tables, limits, or troubleshooting codes. |
 | [Overview](https://learn.microsoft.com/en-us/azure/network-watcher/connection-troubleshoot-overview) | 0.20 | Page is an overview of the Network Watcher connection troubleshoot feature, describing what it does and the kinds of issues it can detect, but not providing specific error codes, diagnostic commands, configuration parameters, or numeric limits. It lacks the concrete symptom→cause→solution mappings or detailed settings required for troubleshooting or configuration classifications. |
 | [Overview](https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-overview) | 0.20 | Conceptual overview of virtual network flow logs and their uses; summary does not indicate detailed configuration parameters, limits, or troubleshooting mappings. |

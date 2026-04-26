@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-19'
+generated_at: '2026-04-26'
 category_descriptions:
   configuration: Configuring IoT Edge devices, networking, gateways, provisioning
     (DPS, X.509, TPM, symmetric keys), EFLOW/VM settings, storage, proxies, and built-in/custom
@@ -26,18 +26,18 @@ category_descriptions:
     and patterns for handling offline/intermittent connectivity, local processing,
     and sync behavior in Azure IoT Edge setups.
   limits-quotas: 'Azure IoT Edge service and resource limits: max modules, routes,
-    deployments, message sizes, throttling, and other scalability and quota constraints
-    for edge solutions.'
+    deployments, message sizes, throttling, and other scale/restriction constraints
+    for planning and troubleshooting.'
 skill_description: Expert knowledge for Azure IoT Edge development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  provisioning IoT Edge/EFLOW, deploying modules via manifests/CI-CD, using DPS/X.509,
-  or designing gateway topologies, and other Azure IoT Edge related development tasks.
+  configuring IoT Edge modules/DPS, EFLOW on Windows, gateways/downstream devices,
+  CI/CD deployments, or quotas, and other Azure IoT Edge related development tasks.
   Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Central (use azure-iot-central),
   Azure IoT Operations (use azure-iot-operations), Azure Stack Edge (use azure-stack-edge).
-use_when: Use when provisioning IoT Edge/EFLOW, deploying modules via manifests/CI-CD,
-  using DPS/X.509, or designing gateway topologies, and other Azure IoT Edge related
-  development tasks.
+use_when: Use when configuring IoT Edge modules/DPS, EFLOW on Windows, gateways/downstream
+  devices, CI/CD deployments, or quotas, and other Azure IoT Edge related development
+  tasks.
 confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Central (use
   azure-iot-central), Azure IoT Operations (use azure-iot-operations), Azure Stack
   Edge (use azure-stack-edge).
@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Central
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 9
-- **Unchanged**: 89
+- **Updated Pages**: 1
+- **Unchanged**: 97
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-iot-edge/azure-iot-edge.csv`
 
@@ -78,30 +78,14 @@ confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Central
 
 ### Updated Pages
 
-- [Resolve common errors](https://learn.microsoft.com/en-us/azure/iot-edge/troubleshoot-common-errors)
-  - Updated: 2026-03-03T23:37:00.000Z → 2026-04-14T22:21:00.000Z
-- [Benefits](https://learn.microsoft.com/en-us/azure/iot-edge/iot-edge-for-linux-on-windows-benefits)
-  - Updated: 2025-08-21T05:12:00.000Z → 2026-04-13T22:10:00.000Z
-- [Supported platforms](https://learn.microsoft.com/en-us/azure/iot-edge/iot-edge-for-linux-on-windows-support)
-  - Updated: 2024-11-19T23:02:00.000Z → 2026-04-13T22:10:00.000Z
-- [About Azure IoT Edge](https://learn.microsoft.com/en-us/azure/iot-edge/about-iot-edge)
-  - Updated: 2026-02-20T08:00:00.000Z → 2026-04-13T22:10:00.000Z
-- [Configure, connect, and verify a GPU](https://learn.microsoft.com/en-us/azure/iot-edge/configure-connect-verify-gpu)
-  - Updated: 2025-06-05T22:05:00.000Z → 2026-04-13T22:10:00.000Z
 - [Limits and restrictions](https://learn.microsoft.com/en-us/azure/iot-edge/iot-edge-limits-and-restrictions)
-  - Updated: 2025-07-11T22:35:00.000Z → 2026-04-13T22:10:00.000Z
-- [Configure proxy support](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-configure-proxy-support)
-  - Updated: 2025-05-09T08:00:00.000Z → 2026-04-13T22:10:00.000Z
-- [Update IoT Edge](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-update-iot-edge)
-  - Updated: 2026-03-03T23:37:00.000Z → 2026-04-13T08:00:00.000Z
-- [Manage device certificates](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-manage-device-certificates)
-  - Updated: 2026-03-23T08:00:00.000Z → 2026-04-13T08:00:00.000Z
+  - Updated: 2026-04-13T22:10:00.000Z → 2026-04-23T06:20:00.000Z
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
-| [Limits and restrictions](https://learn.microsoft.com/en-us/azure/iot-edge/iot-edge-limits-and-restrictions) | limits-quotas | 0.95 | Explicitly documents IoT Edge limits and restrictions; such pages typically include concrete numeric constraints (for example, module counts, message sizes, or resource limits) that qualify as expert knowledge under limits-quotas. |
+| [Limits and restrictions](https://learn.microsoft.com/en-us/azure/iot-edge/iot-edge-limits-and-restrictions) | limits-quotas | 0.95 | The page is explicitly about IoT Edge limits and restrictions and will list concrete numerical limits, constraints, and version-specific behaviors that are not generally known from training data, matching the limits-quotas criteria. |
 | [Configure device settings](https://learn.microsoft.com/en-us/azure/iot-edge/configure-device) | configuration | 0.90 | Detailed reference of config.toml sections, option names, and allowed values for IoT Edge devices. |
 | [Diagnose IoT Edge devices](https://learn.microsoft.com/en-us/azure/iot-edge/troubleshoot) | troubleshooting | 0.90 | Explicit troubleshooting article for Azure IoT Edge. Typically includes specific error messages, diagnostic commands, log locations, and symptom→cause→solution flows that are unique to IoT Edge and not broadly known, matching the troubleshooting criteria. |
 | [Resolve common errors](https://learn.microsoft.com/en-us/azure/iot-edge/troubleshoot-common-errors) | troubleshooting | 0.90 | The page is explicitly a troubleshooting guide for Azure IoT Edge, organized around common issues and how to resolve them. These mappings of specific IoT Edge behaviors/logs to causes and fixes are product-specific troubleshooting knowledge that goes beyond generic debugging. |

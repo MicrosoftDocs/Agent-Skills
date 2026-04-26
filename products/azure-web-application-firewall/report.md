@@ -52,10 +52,10 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 - **Unclassified**: 12
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 79
-- **Deleted Pages**: 1
+- **Unchanged**: 80
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-web-application-firewall/azure-web-application-firewall.csv`
 
 ## Classification Statistics
@@ -74,14 +74,6 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | *(Unclassified)* | 12 | 15.0% |
 
 ## Changes
-
-### New Pages
-
-- [Support and troubleshooting](https://learn.microsoft.com/en-us/azure/web-application-firewall/support-help)
-
-### Deleted Pages
-
-- ~~Troubleshoot~~ (https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/web-application-firewall-troubleshoot)
 
 ## Classified Pages
 

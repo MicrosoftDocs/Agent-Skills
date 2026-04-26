@@ -1,14 +1,14 @@
 ---
 name: microsoft-foundry-tools
-description: Expert knowledge for Microsoft Foundry Tools (aka Azure AI services, Azure Cognitive Services) development including best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when using Content Moderator, Content Understanding analyzers, document extraction, routing, or secure Foundry setup, and other Microsoft Foundry Tools related development tasks. Not for Microsoft Foundry (use microsoft-foundry), Microsoft Foundry Classic (use microsoft-foundry-classic), Microsoft Foundry Local (use microsoft-foundry-local).
+description: Expert knowledge for Microsoft Foundry Tools (aka Azure AI services, Azure Cognitive Services) development including best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Content Moderator/Understanding APIs, Foundry analyzers, document extraction, face recognition, or secure deployment, and other Microsoft Foundry Tools related development tasks. Not for Microsoft Foundry (use microsoft-foundry), Microsoft Foundry Classic (use microsoft-foundry-classic), Microsoft Foundry Local (use microsoft-foundry-local).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-19"
+  generated_at: "2026-04-26"
   generator: "docs2skills/1.0.0"
 ---
 # Microsoft Foundry Tools Skill
 
-This skill provides expert guidance for Microsoft Foundry Tools. Covers best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Microsoft Foundry Tools. Covers best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -26,11 +26,11 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Best Practices | L35-L41 | Guidance on improving Content Understanding accuracy, grounding and confidence in document extraction, and migrating from preview to GA Content Understanding APIs. |
 | Decision Making | L42-L48 | Guides for choosing the right Azure AI/Foundry tool for document processing and estimating Content Understanding costs and pricing plans. |
-| Architecture & Design Patterns | L49-L53 | Designing and configuring how Content Understanding analyzers are mapped to specific model deployments, including routing strategies and deployment architecture patterns. |
-| Limits & Quotas | L54-L61 | Quotas, limits, and language support for Azure Content Moderator and Content Understanding, including image/list caps, API usage constraints, and .NET sample considerations. |
-| Security | L62-L66 | Securing Foundry: auth methods, Entra-only access, keys/Key Vault, CMK encryption, DLP, VNet rules, API key rotation, Azure Policy and regulatory compliance configuration |
-| Configuration | L67-L77 | Configuring Foundry environments and resources: credentials, subdomains, ARM provisioning, logging, and detailed setup for Content Understanding analyzers, layouts, images, faces, and routing. |
-| Integrations & Coding Patterns | L78-L92 | Using Content Moderator and Content Understanding via REST/.NET: text/image/video moderation, term lists, multimodal analysis, and consuming Markdown/structured outputs |
+| Limits & Quotas | L49-L56 | Quotas, rate limits, list size caps, and supported languages for Content Moderator and Content Understanding APIs, plus .NET/image list usage within those limits. |
+| Security | L57-L61 | Securing Foundry: auth methods, Entra-only access, keys/Key Vault, CMK encryption, DLP, VNet rules, API key rotation, Azure Policy and regulatory compliance configuration |
+| Configuration | L62-L71 | Configuring and customizing Content Understanding analyzers (prebuilt and custom), document layout, face detection/recognition, and Standard/Pro task settings in Foundry classic. |
+| Integrations & Coding Patterns | L72-L87 | Using Content Moderator and Content Understanding via REST/.NET: text/image/video moderation, term lists, multimodal analysis, and consuming Markdown/structured outputs |
+| Deployment | L88-L91 | Guidance on deployment options for analyzer models in Foundry Tools, including how to choose between different hosting, scaling, and configuration approaches. |
 
 ### Best Practices
 | Topic | URL |
@@ -46,18 +46,13 @@ This skill requires **network access** to fetch documentation content:
 | Choose between Foundry and Content Understanding Studio features | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/foundry-vs-content-understanding-studio |
 | Estimate and plan Content Understanding pricing | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/pricing-explainer |
 
-### Architecture & Design Patterns
-| Topic | URL |
-|-------|-----|
-| Map Content Understanding analyzers to model deployments | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/models-deployments |
-
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
 | Use Content Moderator image lists within quota limits | https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/image-lists-quickstart-dotnet |
 | Use supported languages in Content Moderator API | https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/language-support |
 | Apply Content Moderator .NET samples with list limits | https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/samples-dotnet |
-| Review Azure Content Understanding service quotas and limits | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/service-limits |
+| Reference quotas and limits for Content Understanding | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/service-limits |
 
 ### Security
 | Topic | URL |
@@ -67,11 +62,10 @@ This skill requires **network access** to fetch documentation content:
 ### Configuration
 | Topic | URL |
 |-------|-----|
-| Configure Content Understanding analyzers and parameters | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/analyzer-reference |
+| Configure and reference Content Understanding analyzers | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/analyzer-reference |
 | Use and customize Content Understanding prebuilt analyzers | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/prebuilt-analyzers |
 | Configure document layout analysis with Content Understanding | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/document/elements |
 | Configure face detection and recognition in Content Understanding | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/face/overview |
-| Configure classification and routing in Content Understanding Studio | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/how-to/classification-content-understanding-studio |
 | Configure Standard and Pro tasks in Foundry classic | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/how-to/content-understanding-foundry-classic |
 | Build and refine custom analyzers in Content Understanding Studio | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/how-to/customize-analyzer-content-understanding-studio |
 
@@ -90,3 +84,8 @@ This skill requires **network access** to fetch documentation content:
 | Create custom Content Understanding analyzers via REST API | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/tutorial/create-custom-analyzer |
 | Extract structured audiovisual content with Content Understanding | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/video/elements |
 | Use audiovisual Markdown output from Content Understanding | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/video/markdown |
+
+### Deployment
+| Topic | URL |
+|-------|-----|
+| Choose model deployment options for analyzers | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/models-deployments |

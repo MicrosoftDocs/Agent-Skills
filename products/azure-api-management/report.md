@@ -1,15 +1,15 @@
 ---
-generated_at: '2026-04-19'
+generated_at: '2026-04-26'
 category_descriptions:
   integrations: Patterns and samples for integrating API Management with AI/LLM backends,
-    OAuth/Graph, logging/monitoring, events, Service Bus, Service Fabric, MCP, and
-    importing/exporting APIs.
+    OAuth/Graph, logging and events, external services (Event Hubs, Service Bus, Dapr),
+    and importing/exporting APIs.
   limits-quotas: 'Rate, quota, and validation limits in API Management: throttling,
     per-key quotas, OpenAI/LLM token control, protocol format limits, WebSocket/self-hosted
     gateway caps, and request/response validation.'
-  security: 'Securing API Management and gateways: authN/Z (OAuth2, Entra ID, B2C,
-    JWT, certs, mTLS), RBAC, managed identity, TLS/ciphers, DDoS/Defender, and secure
-    developer portal access.'
+  security: 'Securing API Management and its portals: authN/Z (OAuth2, Entra ID, B2C,
+    JWT, mTLS, basic), certificates, RBAC, managed identity, self-hosted gateway auth,
+    DDoS/Defender, and compliance.'
   decision-making: Guidance for choosing APIM tiers/networking, scaling and cost planning,
     DevOps/CI/CD, migrations (ARM, portals, workspaces, Amazon API Gateway), and monetization/analytics
     transitions.
@@ -31,17 +31,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure API Management development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when managing APIM policies, self-hosted gateways, VNet/custom domains, OAuth/Entra
-  auth, or multi-region setups, and other Azure API Management related development
+  Use when integrating APIM with OpenAI/LLMs, Entra ID/OAuth, self-hosted gateways,
+  VNets, or Front Door/App Gateway, and other Azure API Management related development
   tasks. Not for Azure Application Gateway (use azure-application-gateway), Azure
-  Front Door (use azure-front-door), Azure Api Center (use azure-api-center), Azure
-  App Service (use azure-app-service).
-use_when: Use when managing APIM policies, self-hosted gateways, VNet/custom domains,
-  OAuth/Entra auth, or multi-region setups, and other Azure API Management related
+  Front Door (use azure-front-door), Azure Web Application Firewall (use azure-web-application-firewall),
+  Azure Service Bus (use azure-service-bus).
+use_when: Use when integrating APIM with OpenAI/LLMs, Entra ID/OAuth, self-hosted
+  gateways, VNets, or Front Door/App Gateway, and other Azure API Management related
   development tasks.
 confusable_not_for: Not for Azure Application Gateway (use azure-application-gateway),
-  Azure Front Door (use azure-front-door), Azure Api Center (use azure-api-center),
-  Azure App Service (use azure-app-service).
+  Azure Front Door (use azure-front-door), Azure Web Application Firewall (use azure-web-application-firewall),
+  Azure Service Bus (use azure-service-bus).
 ---
 # Azure API Management Crawl Report
 
@@ -54,10 +54,10 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 - **Unclassified**: 50
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 7
+- **New Pages**: 1
+- **Updated Pages**: 6
 - **Unchanged**: 268
-- **Deleted Pages**: 0
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-api-management/azure-api-management.csv`
 
 ## Classification Statistics
@@ -66,33 +66,39 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 |------|-------|------------|
 | architecture-patterns | 3 | 1.1% |
 | best-practices | 6 | 2.2% |
-| configuration | 98 | 35.6% |
+| configuration | 96 | 34.9% |
 | decision-making | 17 | 6.2% |
 | deployment | 18 | 6.5% |
-| integrations | 28 | 10.2% |
+| integrations | 29 | 10.5% |
 | limits-quotas | 15 | 5.5% |
-| security | 34 | 12.4% |
+| security | 35 | 12.7% |
 | troubleshooting | 6 | 2.2% |
 | *(Unclassified)* | 50 | 18.2% |
 
 ## Changes
 
+### New Pages
+
+- [Configure credential manager - GitHub API](https://learn.microsoft.com/en-us/azure/api-management/credentials-how-to-github)
+
 ### Updated Pages
 
-- [Configure update settings](https://learn.microsoft.com/en-us/azure/api-management/configure-service-update-settings)
-  - Updated: 2025-11-25T23:25:00.000Z → 2026-04-13T08:00:00.000Z
 - [Use managed identities for Azure resources](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-use-managed-service-identity)
-  - Updated: 2025-12-19T18:11:00.000Z → 2026-04-16T22:31:00.000Z
-- [Credential manager overview](https://learn.microsoft.com/en-us/azure/api-management/credentials-overview)
-  - Updated: 2025-09-29T17:17:00.000Z → 2026-04-10T08:00:00.000Z
+  - Updated: 2026-04-16T22:31:00.000Z → 2026-04-23T06:20:00.000Z
 - [Configure common credential providers](https://learn.microsoft.com/en-us/azure/api-management/credentials-configure-common-providers)
-  - Updated: 2025-12-08T23:11:00.000Z → 2026-04-15T06:10:00.000Z
-- [Virtual network configuration](https://learn.microsoft.com/en-us/azure/api-management/virtual-network-reference)
-  - Updated: 2025-06-17T08:00:00.000Z → 2026-04-10T08:00:00.000Z
+  - Updated: 2026-04-15T06:10:00.000Z → 2026-04-22T06:17:00.000Z
+- [Configure credential manager - Microsoft Graph API](https://learn.microsoft.com/en-us/azure/api-management/credentials-how-to-azure-ad)
+  - Updated: 2025-12-08T08:00:00.000Z → 2026-04-22T06:17:00.000Z
 - [Regional availability](https://learn.microsoft.com/en-us/azure/api-management/api-management-region-availability)
-  - Updated: 2026-03-11T17:32:00.000Z → 2026-04-14T06:14:00.000Z
+  - Updated: 2026-04-14T06:14:00.000Z → 2026-04-25T17:14:00.000Z
+- [set-backend-service](https://learn.microsoft.com/en-us/azure/api-management/set-backend-service-policy)
+  - Updated: 2024-07-23T08:00:00.000Z → 2026-04-24T06:15:00.000Z
 - [authentication-managed-identity](https://learn.microsoft.com/en-us/azure/api-management/authentication-managed-identity-policy)
-  - Updated: 2025-02-16T12:10:00.000Z → 2026-04-16T22:31:00.000Z
+  - Updated: 2026-04-16T22:31:00.000Z → 2026-04-23T06:20:00.000Z
+
+### Deleted Pages
+
+- ~~Configure credential manager - GitHub~~ (https://learn.microsoft.com/en-us/azure/api-management/credentials-how-to-github)
 
 ## Classified Pages
 
@@ -128,14 +134,12 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [retry](https://learn.microsoft.com/en-us/azure/api-management/retry-policy) | configuration | 0.82 | Describes retrycondition, retrycount, and restrictions (cannot contain wait), which are concrete configuration parameters and behavior details. |
 | [send-request](https://learn.microsoft.com/en-us/azure/api-management/send-request-policy) | configuration | 0.82 | Includes configuration for sending outbound HTTP requests with a timeout parameter and policy XML, which are concrete APIM configuration options. |
 | [send-service-bus-message](https://learn.microsoft.com/en-us/azure/api-management/send-service-bus-message-policy) | configuration | 0.82 | Provides policy configuration for sending messages to Service Bus queues/topics, including tier applicability and options, which are detailed integration/configuration parameters. |
-| [set-backend-service](https://learn.microsoft.com/en-us/azure/api-management/set-backend-service-policy) | configuration | 0.82 | Explains how to override backend URLs, reference backend entities, and support load balancing, which are detailed APIM configuration behaviors. |
 | [sql-data-source](https://learn.microsoft.com/en-us/azure/api-management/sql-data-source-policy) | configuration | 0.82 | Documents configuration of T-SQL requests to Azure SQL, tier support (not Consumption), and policy elements, which are specific configuration details. |
 | [validate-client-certificate](https://learn.microsoft.com/en-us/azure/api-management/validate-client-certificate-policy) | security | 0.82 | Describes validation rules and claims for client certificates; product-specific security policy configuration. |
 | [Access resource protected by network security perimeter](https://learn.microsoft.com/en-us/azure/api-management/using-network-security-perimeter) | security | 0.80 | Provides step-by-step configuration for network security perimeters, trusted access, and managed identity between API Management and a protected backend. |
 | [Authenticate and authorize to LLM APIs](https://learn.microsoft.com/en-us/azure/api-management/api-management-authenticate-authorize-ai-apis) | security | 0.80 | Describes concrete auth methods (API key, managed identity, OAuth 2.0) with policy usage; includes product-specific security configuration patterns and likely role/scope details. |
 | [Authenticate with Microsoft Entra ID - client secret](https://learn.microsoft.com/en-us/azure/api-management/self-hosted-gateway-enable-azure-ad) | security | 0.80 | Uses Entra app with client secret/cert; contains app registration details, scopes, and gateway config parameters specific to APIM. |
 | [Authenticate with Microsoft Entra ID - workload identity](https://learn.microsoft.com/en-us/azure/api-management/self-hosted-gateway-enable-workload-identity) | security | 0.80 | Shows how to use Entra workload identity; includes role assignments, identity configuration, and gateway settings unique to APIM. |
-| [Configure credential manager - Microsoft Graph API](https://learn.microsoft.com/en-us/azure/api-management/credentials-how-to-azure-ad) | integrations | 0.80 | Provides step-by-step configuration of a managed connection to Microsoft Graph using Entra and authorization code flow, including provider-specific parameters. |
 | [Deploy a self-hosted gateway to Azure Kubernetes Service](https://learn.microsoft.com/en-us/azure/api-management/how-to-deploy-self-hosted-gateway-azure-kubernetes-service) | deployment | 0.80 | AKS deployment guide for self-hosted gateway; contains product-specific deployment YAML/Helm values, ports, and resource requirements. |
 | [Deploy a self-hosted gateway to Kubernetes (YAML)](https://learn.microsoft.com/en-us/azure/api-management/how-to-deploy-self-hosted-gateway-kubernetes) | deployment | 0.80 | Kubernetes YAML deployment article; includes container image, environment variables, and Kubernetes resource settings specific to APIM gateway. |
 | [Deploy to multiple Azure regions](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-deploy-multi-region) | deployment | 0.80 | Details Premium multi-region deployment, including configuring regional scale units and availability zones, which are product-specific deployment constraints. |
@@ -166,7 +170,7 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Email notifications and templates](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-configure-notifications) | configuration | 0.78 | Contains event types, notification settings, and template configuration specific to API Management; concrete configuration options rather than conceptual overview. |
 | [Export API as custom connector](https://learn.microsoft.com/en-us/azure/api-management/export-api-power-platform) | integrations | 0.78 | Provides concrete steps and parameters to export APIs as custom connectors for Copilot Studio, Power Apps, and Power Automate; product-specific integration pattern. |
 | [Manage protocols and ciphers](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-manage-protocols-ciphers) | security | 0.78 | TLS/cipher management article for APIM; typically lists supported TLS versions, cipher suite names, and configuration switches—product-specific security settings and constraints. |
-| [authentication-managed-identity](https://learn.microsoft.com/en-us/azure/api-management/authentication-managed-identity-policy) | security | 0.78 | Policy reference pages for Azure API Management typically list exact policy attributes, allowed values, and behavior details for using managed identities and Microsoft Entra ID tokens. This includes product-specific security configuration parameters (for example, policy XML elements/attributes, header names, token acquisition behavior, and caching semantics) that go beyond generic knowledge and match the security sub-skill criteria. |
+| [authentication-managed-identity](https://learn.microsoft.com/en-us/azure/api-management/authentication-managed-identity-policy) | security | 0.78 | Policy reference pages for Azure API Management typically list exact policy attributes, allowed values, and behavior details for using managed identities to obtain tokens and set Authorization headers. This is product-specific security configuration (managed identity + Microsoft Entra ID token acquisition) with concrete settings and examples that go beyond generic knowledge. |
 | [azure-openai-token-limit](https://learn.microsoft.com/en-us/azure/api-management/azure-openai-token-limit-policy) | configuration | 0.78 | Policy reference page with product-specific configuration elements and attributes (for example, rate, quota period, behavior on 429/403) and concrete usage examples. Contains named settings and their allowed values/semantics for this specific policy, which are not generic LLM knowledge. |
 | [cache-remove-value](https://learn.microsoft.com/en-us/azure/api-management/cache-remove-value-policy) | configuration | 0.78 | Provides policy syntax and behavior for deleting cache entries by key, which is specific to APIM cache configuration. |
 | [check-header](https://learn.microsoft.com/en-us/azure/api-management/check-header-policy) | configuration | 0.78 | Policy reference pages list policy XML shape, attributes, and allowed values (for headers, status codes, error messages) that are product-specific configuration details rather than generic concepts. |
@@ -207,7 +211,6 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Virtual network integration (v2 tiers)](https://learn.microsoft.com/en-us/azure/api-management/integrate-vnet-outbound) | configuration | 0.75 | Explains Standard v2/Premium v2 VNet integration for outbound calls, including connectivity requirements and supported scenarios, which are product-specific settings. |
 | [validate-content](https://learn.microsoft.com/en-us/azure/api-management/validate-content-policy) | limits-quotas | 0.75 | Policy reference lists supported schema formats/content types and includes a 4 MB maximum schema size limit; explicit numeric constraint and behavior. |
 | [validate-status-code](https://learn.microsoft.com/en-us/azure/api-management/validate-status-code-policy) | limits-quotas | 0.75 | Policy reference includes a 4 MB maximum API schema size limit and notes on behavior when exceeded; explicit numeric limit plus configuration. |
-| [Configure credential manager - GitHub](https://learn.microsoft.com/en-us/azure/api-management/credentials-how-to-github) | integrations | 0.74 | How-to for managed GitHub connection with OAuth 2.0 authorization code flow; likely includes APIM credential manager parameters, redirect URIs, and provider-specific config values beyond generic OAuth theory. |
 | [Mutual certificate authentication for backend](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-mutual-certificates) | security | 0.74 | The article provides product-specific security configuration details for Azure API Management, including how to manage client certificates, bind them to APIs/backends, and configure mutual TLS. It focuses on concrete configuration steps and settings unique to APIM security rather than generic TLS concepts, which qualifies as expert security knowledge. |
 | [Self-hosted gateway authentication options](https://learn.microsoft.com/en-us/azure/api-management/self-hosted-gateway-authentication-options) | security | 0.74 | Summarizes gateway authentication modes; references configuration settings for authenticating to cloud APIM endpoint—product-specific security configuration. |
 | [azure-openai-semantic-cache-lookup](https://learn.microsoft.com/en-us/azure/api-management/azure-openai-semantic-cache-lookup-policy) | configuration | 0.74 | The azure-openai-semantic-cache-lookup policy reference includes specific configuration such as similarity score thresholds, vector proximity behavior, and external cache settings, which are detailed product-specific configuration parameters. |
@@ -215,12 +218,14 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [ip-filter](https://learn.microsoft.com/en-us/azure/api-management/ip-filter-policy) | configuration | 0.74 | The ip-filter policy reference defines specific elements, ordering requirements, and configuration patterns (allow/deny lists, CIDR ranges) that are product-specific configuration details. |
 | [llm-semantic-cache-lookup](https://learn.microsoft.com/en-us/azure/api-management/llm-semantic-cache-lookup-policy) | configuration | 0.74 | The llm-semantic-cache-lookup policy reference includes configuration for external cache, vector proximity, and score thresholds, which are expert, product-specific configuration details. |
 | [llm-semantic-cache-store](https://learn.microsoft.com/en-us/azure/api-management/llm-semantic-cache-store-policy) | configuration | 0.74 | The llm-semantic-cache-store policy reference documents concrete policy elements and cache configuration for storing chat completion responses, which are detailed configuration settings. |
+| [set-backend-service](https://learn.microsoft.com/en-us/azure/api-management/set-backend-service-policy) | integrations | 0.74 | This is a policy reference page with product-specific configuration details for the set-backend-service policy, including how to specify backend entities, base URLs, and usage patterns unique to Azure API Management. It describes concrete policy syntax and behavior that go beyond generic knowledge and align with the integrations & coding patterns category. |
 | [set-method](https://learn.microsoft.com/en-us/azure/api-management/set-method-policy) | configuration | 0.74 | Describes the policy syntax and allowed configuration to change HTTP methods, which is specific to APIM policy configuration. |
 | [set-status](https://learn.microsoft.com/en-us/azure/api-management/set-status-policy) | configuration | 0.74 | Defines policy XML and attributes to set HTTP status codes, including how it fits in the pipeline, which are APIM-specific configuration details. |
 | [Log events to Azure Event Hubs](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-log-event-hubs) | integrations | 0.73 | Describes logging APIM events to Event Hubs; typically includes diagnostic setting names, categories, and Event Hub configuration parameters unique to this integration. |
 | [Configure a custom domain](https://learn.microsoft.com/en-us/azure/api-management/configure-custom-domain) | configuration | 0.72 | The article provides product-specific configuration details for mapping custom DNS names to Azure API Management endpoints, including required host header behavior and certificate selection for different endpoints. These are concrete, service-specific configuration behaviors and constraints that go beyond generic knowledge, but it does not focus on numeric limits/quotas, troubleshooting, or architecture patterns. |
 | [Configure multiple connections](https://learn.microsoft.com/en-us/azure/api-management/configure-credential-connection) | configuration | 0.72 | Describes setting up multiple connections to a credential provider; likely includes specific UI/config parameters and constraints for APIM credential manager that are product-specific. |
 | [Options to secure developer portal access](https://learn.microsoft.com/en-us/azure/api-management/secure-developer-portal-access) | security | 0.72 | Describes concrete security configuration options for the API Management developer portal (Microsoft Entra ID, External ID, basic auth, anonymous access default). While the summary is high level, this page typically includes product-specific security settings and configuration steps (e.g., toggling anonymous access, choosing auth providers) that go beyond generic security concepts. |
+| [Use managed identities for Azure resources](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-use-managed-service-identity) | security | 0.72 | Page describes how to create and use system-assigned and user-assigned managed identities specifically for Azure API Management to access other Azure resources (like Key Vault). This involves product-specific security configuration steps and identity usage patterns that go beyond generic managed identity concepts. |
 | [azure-openai-emit-token-metric](https://learn.microsoft.com/en-us/azure/api-management/azure-openai-emit-token-metric-policy) | configuration | 0.72 | The azure-openai-emit-token-metric policy reference documents concrete policy attributes and metric names (Total, Prompt, Completion tokens) for emitting token metrics, which are product-specific configuration details. |
 | [llm-emit-token-metric](https://learn.microsoft.com/en-us/azure/api-management/llm-emit-token-metric-policy) | configuration | 0.72 | The llm-emit-token-metric policy reference defines specific metric types and policy attributes for sending LLM token metrics to Application Insights, which are detailed configuration parameters. |
 | [ADAL-based identity provider retirement (September 2025)](https://learn.microsoft.com/en-us/azure/api-management/breaking-changes/identity-provider-adal-retirement-sep-2025) | security | 0.70 | Explains retirement of ADAL-based auth in the developer portal, affected identity providers, and required configuration changes to MSAL, which are detailed security/auth configuration decisions. |
@@ -232,7 +237,7 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Call external services from policies](https://learn.microsoft.com/en-us/azure/api-management/api-management-sample-send-request) | integrations | 0.70 | Uses send-request and related policies with specific configuration to integrate external services; product-specific policy integration patterns. |
 | [Configure Front Door](https://learn.microsoft.com/en-us/azure/api-management/front-door-api-management) | architecture-patterns | 0.70 | Describes a concrete pattern using Front Door for global load balancing, TLS offload, caching, and WAF in front of API Management, with product-specific behavior. |
 | [Configure a GraphQL resolver](https://learn.microsoft.com/en-us/azure/api-management/configure-graphql-resolver) | integrations | 0.70 | Details resolver configuration and supported data sources for GraphQL fields; product-specific integration and configuration pattern. |
-| [Configure common credential providers](https://learn.microsoft.com/en-us/azure/api-management/credentials-configure-common-providers) | configuration | 0.70 | Explains configuring Microsoft Entra and generic OAuth providers for managed connections with provider-specific settings and parameters in API Management’s credential manager, which are product-specific configuration details. |
+| [Configure credential manager - Microsoft Graph API](https://learn.microsoft.com/en-us/azure/api-management/credentials-how-to-azure-ad) | integrations | 0.70 | Page walks through creating and using a managed connection from Azure API Management to Microsoft Graph using Microsoft Entra and authorization code grant. It focuses on a concrete integration pattern (API Management → Graph) with product-specific identity and connection configuration, fitting the integrations & coding patterns category. |
 | [Configure credential manager - user-delegated permissions](https://learn.microsoft.com/en-us/azure/api-management/credentials-how-to-user-delegated) | integrations | 0.70 | Guides configuring managed connections with user-delegated permissions to backend OAuth 2.0 APIs; likely details APIM credential manager settings and Entra/user delegation parameters not generally known. |
 | [Configure custom domain for self-hosted gateway](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-configure-custom-domain-gateway) | configuration | 0.70 | Custom DNS/hostname mapping for gateway; likely includes specific configuration steps, certificate requirements, and APIM settings. |
 | [Configure update settings](https://learn.microsoft.com/en-us/azure/api-management/configure-service-update-settings) | configuration | 0.70 | Describes product-specific settings for service updates (upgrade groups, maintenance windows) with concrete configuration options and constraints for different API Management tiers, which are not generic knowledge. |
@@ -272,14 +277,13 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Protect your API with Azure AD B2C](https://learn.microsoft.com/en-us/azure/api-management/howto-protect-backend-frontend-azure-ad-b2c) | security | 0.70 | Shows a specific security configuration using AD B2C, Easy Auth, and PKCE SPA flow to protect APIs, which is product- and flow-specific. |
 | [Protect your API with Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-protect-backend-with-aad) | security | 0.70 | Provides concrete configuration steps and parameters to secure APIs with OAuth 2.0 and Entra ID, beyond generic OAuth concepts. |
 | [Provision a self-hosted gateway](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-provision-self-hosted-gateway) | deployment | 0.70 | Provisioning gateway resource is a deployment prerequisite; article likely includes resource-level constraints, required settings, and tier applicability for self-hosted gateway. |
-| [Regional availability](https://learn.microsoft.com/en-us/azure/api-management/api-management-region-availability) | deployment | 0.70 | The page describes availability of API Management v2 tiers and workspace gateways by Azure region, supplementing product availability by region. This is deployment-related metadata (which SKUs can be deployed where), effectively a platform/region support matrix, which fits the deployment sub-skill focused on platform/tier support constraints. |
+| [Regional availability](https://learn.microsoft.com/en-us/azure/api-management/api-management-region-availability) | deployment | 0.70 | Page provides a region-by-region availability matrix for API Management v2 tiers and workspace gateways. This is product- and SKU-specific deployment/region support information that changes over time and isn't inferable from general knowledge. It directly affects where you can deploy specific tiers, fitting the deployment category best. |
 | [Retrieve IP addresses](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-ip-addresses) | configuration | 0.70 | Explains how to obtain public/private IPs and when they change, enabling precise firewall and routing configuration specific to API Management. |
 | [Reuse policy configurations](https://learn.microsoft.com/en-us/azure/api-management/policy-fragments) | configuration | 0.70 | Describes how to define and apply reusable policy XML fragments, including limitations; product-specific configuration pattern. |
 | [Self-hosted gateway support policy](https://learn.microsoft.com/en-us/azure/api-management/self-hosted-gateway-support-policies) | limits-quotas | 0.70 | Support policies article typically lists explicit limitations, supported versions, and constraints (for tiers, environments) that function as product-specific limits/quotas. |
 | [Send events to Event Grid](https://learn.microsoft.com/en-us/azure/api-management/how-to-event-grid) | integrations | 0.70 | Details specific API Management event types, subscription configuration, and Event Grid integration behavior, which are product-specific integration patterns. |
 | [Set or edit policies](https://learn.microsoft.com/en-us/azure/api-management/set-edit-policies) | configuration | 0.70 | Explains how to configure policies via XML policy definitions and the policy editor. Policy configuration in API Management is highly product-specific and typically includes concrete policy names, XML elements, and allowed settings, which qualifies as expert configuration knowledge. |
 | [Upgrade and scale](https://learn.microsoft.com/en-us/azure/api-management/upgrade-and-scale) | decision-making | 0.70 | Covers tier-specific scaling behavior, unit-based capacity guidance, and how to choose scale units/tiers for load, which is concrete decision guidance beyond generic knowledge. |
-| [Use managed identities for Azure resources](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-use-managed-service-identity) | security | 0.70 | Covers product-specific steps and parameters to create and use system-assigned and user-assigned managed identities for API Management to access other Azure resources, including Entra/Key Vault integration details. |
 | [Virtual network changes (March 2023)](https://learn.microsoft.com/en-us/azure/api-management/breaking-changes/rp-source-ip-address-change-mar-2023) | configuration | 0.70 | Describes specific new source IP addresses per region and required network configuration updates, which are concrete, product-specific configuration details. |
 | [Virtual network changes (September 2023)](https://learn.microsoft.com/en-us/azure/api-management/breaking-changes/rp-source-ip-address-change-sep-2023) | configuration | 0.70 | Provides exact new source IP address for Switzerland North and steps to adjust network configuration, which are concrete configuration details. |
 | [cross-domain](https://learn.microsoft.com/en-us/azure/api-management/cross-domain-policy) | configuration | 0.70 | Policy reference for enabling Flash/Silverlight cross-domain access with specific configuration elements; product-specific policy configuration. |
@@ -289,6 +293,8 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [validate-headers](https://learn.microsoft.com/en-us/azure/api-management/validate-headers-policy) | limits-quotas | 0.70 | Policy reference includes a specific maximum API schema size limit (4 MB) and behavior when exceeded; this is an explicit numeric limit/constraint. |
 | [validate-odata-request](https://learn.microsoft.com/en-us/azure/api-management/validate-odata-request-policy) | configuration | 0.70 | Policy reference for validating OData request URLs, headers, and parameters; includes product-specific configuration elements. |
 | [validate-parameters](https://learn.microsoft.com/en-us/azure/api-management/validate-parameters-policy) | limits-quotas | 0.70 | Includes explicit maximum API schema size (4 MB) and versioning caveats; numeric limit qualifies as limits-quotas plus configuration details. |
+| [Configure common credential providers](https://learn.microsoft.com/en-us/azure/api-management/credentials-configure-common-providers) | security | 0.68 | Page covers configuring identity/credential providers (Microsoft Entra, generic OAuth) in the API Management credential manager. It contains product-specific security configuration details and provider-specific settings, which qualify as expert security configuration knowledge rather than generic OAuth concepts. |
+| [Configure credential manager - GitHub API](https://learn.microsoft.com/en-us/azure/api-management/credentials-how-to-github) | integrations | 0.68 | The article describes a product-specific pattern for integrating Azure API Management with the GitHub API using OAuth 2.0 authorization code grant, including concrete configuration steps and parameter values unique to APIM’s credential manager and GitHub’s API. This goes beyond generic OAuth theory and provides detailed integration configuration, fitting the integrations sub-skill. |
 | [Connect privately using private endpoint](https://learn.microsoft.com/en-us/azure/api-management/private-endpoint) | configuration | 0.68 | Page describes how to configure an inbound private endpoint for Azure API Management using Private Link, including product-specific settings and network configuration steps (VNet, private endpoint association, DNS behavior). This is concrete, product-specific configuration guidance rather than a conceptual overview, fitting the configuration sub-skill best. |
 | [Create subscriptions](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-create-subscriptions) | configuration | 0.68 | Walkthrough for creating subscriptions; includes subscription key handling, scope options, and settings specific to APIM. |
 | [Metrics retirements (August 2023)](https://learn.microsoft.com/en-us/azure/api-management/breaking-changes/metrics-retirement-aug-2023) | configuration | 0.68 | Details specific metric names being retired and the replacement metric, along with guidance to update monitoring and alert rules—product-specific monitoring configuration knowledge. |

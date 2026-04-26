@@ -1,9 +1,9 @@
 ---
 name: azure-vm-scalesets
-description: Expert knowledge for Azure Virtual Machine Scale Sets development including troubleshooting, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring VMSS autoscale, upgrade modes, zones/PPGs, Spot/standby pools, or disk encryption with Key Vault, and other Azure Virtual Machine Scale Sets related development tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure App Service (use azure-app-service), Azure Service Fabric (use azure-service-fabric).
+description: Expert knowledge for Azure Virtual Machine Scale Sets development including troubleshooting, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring autoscale rules, upgrade modes, zones/PPGs, Spot/standby pools, or VMSS via CLI/ARM, and other Azure Virtual Machine Scale Sets related development tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Service Fabric (use azure-service-fabric), Azure Red Hat OpenShift (use azure-redhat-openshift).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-05"
+  generated_at: "2026-04-26"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Virtual Machine Scale Sets Skill
@@ -29,7 +29,7 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L56-L64 | Designing resilient VM scale sets: zones, fault domains, zone balancing modes, proximity placement groups, and standby pools to optimize availability, latency, and scale-out behavior. |
 | Limits & Quotas | L65-L73 | VMSS capacity, instance and placement group limits, standby pool constraints, maintenance notification behavior, and FAQs on supported scale, features, and quotas |
 | Security | L74-L82 | Encrypting VM scale set disks (CLI, PowerShell, ARM), configuring Key Vault and extension sequencing for Azure Disk Encryption, and setting security policies/RBAC for VMSS. |
-| Configuration | L83-L130 | Configuring VM Scale Sets: scaling rules, upgrades, networking, disks, images, health/repair, standby pools, instance mix, protection, and automation via CLI, PowerShell, templates, and portal |
+| Configuration | L83-L130 | Configuring VM Scale Sets: scaling rules, upgrades, networking, disks, health/repairs, autoscale, instance mix, standby pools, protection, and CLI/PowerShell/ARM template settings. |
 | Integrations & Coding Patterns | L131-L140 | Using CLI/PowerShell/DSC/custom script to deploy apps, configure, and manage VM Scale Sets, plus integrating standby pools with Log Analytics for monitoring and automation. |
 | Deployment | L141-L149 | Creating and deploying VM scale sets with gallery/custom images, ARM templates, app deployment steps, and configuring instances across availability zones. |
 

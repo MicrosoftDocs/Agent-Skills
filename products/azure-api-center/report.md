@@ -37,9 +37,9 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 - **Unclassified**: 17
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 35
+- **Unchanged**: 36
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-api-center/azure-api-center.csv`
 
@@ -55,10 +55,6 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 | *(Unclassified)* | 17 | 47.2% |
 
 ## Changes
-
-### New Pages
-
-- [Enable plugin marketplace](https://learn.microsoft.com/en-us/azure/api-center/enable-api-center-plugin-marketplace)
 
 ## Classified Pages
 

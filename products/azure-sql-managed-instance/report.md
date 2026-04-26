@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-19'
+generated_at: '2026-04-26'
 category_descriptions:
   decision-making: Guidance for choosing Azure SQL Managed Instance vs other Azure
     SQL options, tiers, pools, networking, HA/DR options, ML differences, and planning
@@ -16,9 +16,9 @@ category_descriptions:
   limits-quotas: 'Limits, quotas, and performance caps for Azure SQL MI: DTUs, free-tier
     and memory limits, resource ceilings, monitoring behavior, and how to request
     quota increases.'
-  security: 'Configuring Azure SQL Managed Instance security: Entra auth and logins,
-    Windows/Kerberos, managed identities, TDE and Key Vault, TLS, auditing, threat
-    protection, networking, and policy-based controls.'
+  security: 'Identity, auth, and data protection for SQL Managed Instance: Entra/Windows
+    auth, managed identities, TDE & Key Vault, TLS, auditing, threat protection, networking,
+    and security best practices.'
   integrations: Connecting apps and tools to SQL Managed Instance (.NET, Java, Python,
     etc.), automation, data import, DTC, XEvents, MI Link, backups, tracing, and Spark
     integration.
@@ -31,13 +31,13 @@ category_descriptions:
 skill_description: Expert knowledge for Azure SQL Managed Instance development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when using MI link, HA/DR and geo-replication, Entra/Kerberos auth, Key Vault
-  TDE, or XEvents/Intelligent Insights, and other Azure SQL Managed Instance related
-  development tasks. Not for Azure SQL Database (use azure-sql-database), SQL Server
-  on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Database for MariaDB
-  (use azure-database-mariadb), Azure Database for MySQL (use azure-database-mysql).
-use_when: Use when using MI link, HA/DR and geo-replication, Entra/Kerberos auth,
-  Key Vault TDE, or XEvents/Intelligent Insights, and other Azure SQL Managed Instance
+  Use when choosing MI tiers/HA, configuring networking/backups, tuning performance,
+  securing with Entra/TDE, or using MI Link, and other Azure SQL Managed Instance
+  related development tasks. Not for Azure SQL Database (use azure-sql-database),
+  SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Database
+  for MariaDB (use azure-database-mariadb), Azure Database for MySQL (use azure-database-mysql).
+use_when: Use when choosing MI tiers/HA, configuring networking/backups, tuning performance,
+  securing with Entra/TDE, or using MI Link, and other Azure SQL Managed Instance
   related development tasks.
 confusable_not_for: Not for Azure SQL Database (use azure-sql-database), SQL Server
   on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Database for MariaDB
@@ -54,10 +54,10 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), SQL Ser
 - **Unclassified**: 55
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 5
-- **Unchanged**: 234
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 240
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sql-managed-instance/azure-sql-managed-instance.csv`
 
 ## Classification Statistics
@@ -77,27 +77,10 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), SQL Ser
 
 ## Changes
 
-### New Pages
-
-- [SQL Server Audit in Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/auditing?view=azuresql)
-- [How to configure SQL Server Audit in Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/auditing-configure?view=azuresql)
-
 ### Updated Pages
 
-- [What's new?](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-release-notes-whats-new?view=azuresql)
-  - Updated: 2026-03-31T22:34:00.000Z → 2026-04-13T22:36:00.000Z
-- [Database using Log Replay Service](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/log-replay-service-migrate?view=azuresql)
-  - Updated: 2026-03-10T22:39:00.000Z → 2026-04-16T08:00:00.000Z
-- [Migrate with the link](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/managed-instance-link-migrate?view=azuresql)
-  - Updated: 2026-02-19T08:00:00.000Z → 2026-04-14T17:42:00.000Z
-- [Best practices](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/managed-instance-link-best-practices?view=azuresql)
-  - Updated: 2026-01-29T18:37:00.000Z → 2026-04-14T17:42:00.000Z
-- [Troubleshoot](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/managed-instance-link-troubleshoot-how-to?view=azuresql)
-  - Updated: 2026-03-10T22:39:00.000Z → 2026-04-14T17:42:00.000Z
-
-### Deleted Pages
-
-- ~~Auditing~~ (https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/auditing-configure?view=azuresql)
+- [Bring Your Own Key (BYOK)](https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-overview?view=azuresql)
+  - Updated: 2026-03-05T08:00:00.000Z → 2026-04-22T08:00:00.000Z
 
 ## Classified Pages
 
@@ -111,7 +94,6 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), SQL Ser
 | [Troubleshoot](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-troubleshoot?view=azuresql) | troubleshooting | 0.90 | Explicit troubleshooting article; expected to map specific Kerberos/Entra errors and symptoms to causes and resolutions for Windows Authentication on Managed Instance. |
 | [Set up the incoming trust-based flow](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-setup-incoming-trust-based-flow?view=azuresql) | security | 0.86 | The page describes how to configure Windows Authentication for Azure SQL Managed Instance using Microsoft Entra ID with an incoming trust-based flow. It includes product-specific identity and Kerberos configuration steps (service accounts, Trusted Domain Object, key rotation, and removal), which are detailed security and authentication settings unique to this product, fitting the security sub-skill. |
 | [Troubleshoot geo-replication redo lag](https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-geo-replication-redo?view=azuresql) | troubleshooting | 0.86 | The page focuses on understanding and troubleshooting geo-replication and redo lag, which implies product-specific metrics, behaviors, and diagnostic steps for Azure SQL Database. It likely includes concrete symptom → cause → resolution guidance (for example, interpreting redo queue/lag, tuning, and mitigation steps) that go beyond generic replication concepts and constitute expert troubleshooting knowledge. |
-| [Bring Your Own Key (BYOK)](https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-overview?view=azuresql) | security | 0.85 | Details Bring Your Own Key (BYOK) for TDE using Azure Key Vault, including key lifecycle responsibilities and separation of duties; this is product-specific encryption and key management configuration, fitting the security category. |
 | [Connectivity errors](https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-common-errors-issues?view=azuresql) | troubleshooting | 0.85 | Explicitly about connection errors; includes specific error messages, causes, and steps to resolve, which is classic symptom→cause→solution troubleshooting content. |
 | [Create server with Microsoft Entra-only authentication enabled](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-azure-ad-only-authentication-create-server?view=azuresql) | security | 0.85 | How-to guide for provisioning Azure SQL logical servers/managed instances with Microsoft Entra-only authentication. It necessarily includes specific configuration flags/parameters in ARM/CLI/Portal, and describes how SQL authentication is disabled and Entra principals are enforced. This is product-specific identity and access configuration, fitting the security sub-skill. |
 | [Log diagnostic telemetry](https://learn.microsoft.com/en-us/azure/azure-sql/database/metrics-diagnostic-telemetry-logging-streaming-export-configure?view=azuresql) | configuration | 0.85 | Details telemetry types, destinations, and configuration via portal/CLI/ARM; includes specific metric/log names and settings, which are configuration parameters. |
@@ -257,6 +239,7 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), SQL Ser
 | [Use Resource Health for connectivity issues](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/resource-health-to-troubleshoot-connectivity?view=azuresql) | troubleshooting | 0.70 | Shows how to use Resource Health for diagnosing service-impacting issues; includes product-specific health states, timelines, and support workflows, fitting symptom-to-diagnosis guidance. |
 | [Use Spark Connector](https://learn.microsoft.com/en-us/azure/azure-sql/database/spark-connector?view=azuresql) | integrations | 0.70 | Connector article typically includes connector-specific options, connection properties, and parameter details unique to this integration, which qualify as expert integration knowledge. |
 | [With user-assigned managed identity](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/authentication-azure-ad-user-assigned-managed-identity-create-managed-instance?view=azuresql) | security | 0.70 | Security-focused how-to that configures a user-assigned managed identity from Microsoft Entra ID for the managed instance. Involves product-specific identity configuration steps and parameters, which qualify as security expert knowledge. |
+| [Bring Your Own Key (BYOK)](https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-overview?view=azuresql) | security | 0.68 | The BYOK TDE overview for Azure SQL and Synapse typically includes product-specific security configuration details such as required Azure RBAC roles, Key Vault access policy/permission names (e.g., get, wrapKey, unwrapKey), and specific considerations and recommendations for key rotation and lifecycle management. These are concrete, service-specific security settings rather than generic encryption concepts, so it fits the security sub-skill. It is not primarily limits, troubleshooting, or architecture guidance. |
 | [Cancel operations](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/management-operations-cancel?view=azuresql) | deployment | 0.68 | Explains which management operations can be canceled and how; includes product-specific constraints and behavior during cancellation, relevant to deployment/change workflows. |
 | [Database using Log Replay Service](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/log-replay-service-migrate?view=azuresql) | best-practices | 0.68 | Step-by-step migration guide for Log Replay Service that typically includes product-specific prerequisites, sequencing, and best-practice recommendations (for example, backup/log chain handling, cutover patterns, and configuration details) that go beyond generic migration theory. |
 | [.NET with Visual Studio](https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-dotnet-visual-studio?view=azuresql) | integrations | 0.65 | Quickstart includes concrete connection string formats, provider/driver names, and code patterns specific to Azure SQL connectivity from .NET in Visual Studio. |

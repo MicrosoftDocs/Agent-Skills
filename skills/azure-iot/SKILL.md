@@ -1,14 +1,14 @@
 ---
 name: azure-iot
-description: Expert knowledge for Azure IoT development including architecture & design patterns, and integrations & coding patterns. Use when using MQTT, IoT Plug and Play, DPS/IoT Hub, SAP ERP integration, or industrial IoT reference architectures, and other Azure IoT related development tasks. Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Edge (use azure-iot-edge), Azure IoT Central (use azure-iot-central), Azure Defender For Iot (use azure-defender-for-iot).
+description: Expert knowledge for Azure IoT development including decision making, architecture & design patterns, and integrations & coding patterns. Use when using MQTT or IoT Plug and Play, DPS/IoT Hub, SAP ERP integration, industrial IoT architectures, or device schemas, and other Azure IoT related development tasks. Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Edge (use azure-iot-edge), Azure IoT Central (use azure-iot-central), Azure Defender For Iot (use azure-defender-for-iot).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-19"
+  generated_at: "2026-04-26"
   generator: "docs2skills/1.0.0"
 ---
 # Azure IoT Skill
 
-This skill provides expert guidance for Azure IoT. Covers architecture & design patterns, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure IoT. Covers decision making, architecture & design patterns, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -24,8 +24,15 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Architecture & Design Patterns | L30-L35 | Reference architectures and patterns for industrial IoT on Azure, including dataspace-based designs, component choices, and end-to-end implementation guidance for industrial scenarios. |
-| Integrations & Coding Patterns | L36-L39 | Patterns and code for integrating devices via MQTT and IoT Plug and Play, building device/service apps, formatting payloads, using DPS/IoT Hub, and connecting SAP ERP to Azure IoT. |
+| Decision Making | L31-L36 | Guidance on designing Azure Device Registry namespaces and schema registries for IoT, including structure, organization, and planning of device data models. |
+| Architecture & Design Patterns | L37-L42 | Reference architectures and patterns for industrial IoT on Azure, including dataspace-based designs, component choices, and end-to-end implementation guidance for industrial scenarios. |
+| Integrations & Coding Patterns | L43-L46 | Patterns and code for integrating devices via MQTT and IoT Plug and Play, building device/service apps, formatting payloads, using DPS/IoT Hub, and connecting SAP ERP to Azure IoT. |
+
+### Decision Making
+| Topic | URL |
+|-------|-----|
+| Design and choose Azure Device Registry namespaces | https://learn.microsoft.com/en-us/azure/iot/iot-device-registry-namespace-guidance |
+| Plan Azure Device Registry schema registries for IoT | https://learn.microsoft.com/en-us/azure/iot/iot-device-registry-schema-registry-guidance |
 
 ### Architecture & Design Patterns
 | Topic | URL |

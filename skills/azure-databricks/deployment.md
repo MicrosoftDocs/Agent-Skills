@@ -7,6 +7,9 @@
 ### Deployment
 | Topic | URL |
 |-------|-----|
+| Deploy Azure Databricks workspaces with Azure CLI | https://learn.microsoft.com/en-us/azure/databricks/admin/workspace/azure-cli |
+| Deploy Databricks workspaces using Azure Portal | https://learn.microsoft.com/en-us/azure/databricks/admin/workspace/create-workspace |
+| Deploy Azure Databricks workspaces using PowerShell | https://learn.microsoft.com/en-us/azure/databricks/admin/workspace/powershell |
 | Deploy Databricks stacks using the legacy Stack CLI | https://learn.microsoft.com/en-us/azure/databricks/archive/dev-tools/cli/stack-cli |
 | Deploy MLflow models with legacy Databricks Model Serving | https://learn.microsoft.com/en-us/azure/databricks/archive/legacy-model-serving/model-serving |
 | Export and import Databricks dashboards across workspaces | https://learn.microsoft.com/en-us/azure/databricks/dashboards/automate/import-export |
@@ -16,9 +19,7 @@
 | Set up Azure DevOps CI/CD pipelines for Databricks | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/ci-cd/azure-devops |
 | Use Databricks GitHub Actions for CI/CD pipelines | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/ci-cd/github |
 | Prepare workspace and local environment for Databricks Apps | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-apps/configure-env |
-| Deploy Databricks apps via UI and CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-apps/deploy |
 | Use Declarative Automation Bundles with Databricks VS Code | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/vscode-ext/bundles |
-| Deploy custom AI agents on Databricks Apps with Agent Framework | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/agent-framework/author-agent |
 | Author and deploy Databricks agents on Model Serving | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/agent-framework/author-agent-model-serving |
 | Build and deploy a chat UI for Databricks agents | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/agent-framework/chat-app |
 | Deploy Databricks AI agents with Model Serving | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/agent-framework/deploy-agent |
@@ -35,7 +36,7 @@
 | Enable MLflow Tracing for agents deployed outside Databricks | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/tracing/prod-tracing-external |
 | Create and manage scheduled Databricks notebook jobs | https://learn.microsoft.com/en-us/azure/databricks/notebooks/schedule-notebook-jobs |
 | Provision Lakebase resources with Terraform | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/automate-with-terraform |
-| Manage Databricks Git folders with Terraform | https://learn.microsoft.com/en-us/azure/databricks/repos/automate-with-terraform |
+| Migrate Databricks HTTP routing to serverless compute | https://learn.microsoft.com/en-us/azure/databricks/query-federation/http-migration |
 | Integrate Databricks Git folders into CI/CD workflows | https://learn.microsoft.com/en-us/azure/databricks/repos/ci-cd |
 | Check Azure Databricks feature availability by region | https://learn.microsoft.com/en-us/azure/databricks/resources/feature-region-support |
 | Understand Azure Databricks platform release windows | https://learn.microsoft.com/en-us/azure/databricks/resources/platform-release |

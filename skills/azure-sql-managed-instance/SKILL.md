@@ -1,9 +1,9 @@
 ---
 name: azure-sql-managed-instance
-description: Expert knowledge for Azure SQL Managed Instance development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using MI link, HA/DR and geo-replication, Entra/Kerberos auth, Key Vault TDE, or XEvents/Intelligent Insights, and other Azure SQL Managed Instance related development tasks. Not for Azure SQL Database (use azure-sql-database), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Database for MariaDB (use azure-database-mariadb), Azure Database for MySQL (use azure-database-mysql).
+description: Expert knowledge for Azure SQL Managed Instance development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when choosing MI tiers/HA, configuring networking/backups, tuning performance, securing with Entra/TDE, or using MI Link, and other Azure SQL Managed Instance related development tasks. Not for Azure SQL Database (use azure-sql-database), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Database for MariaDB (use azure-database-mariadb), Azure Database for MySQL (use azure-database-mysql).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-19"
+  generated_at: "2026-04-26"
   generator: "docs2skills/1.0.0"
 ---
 # Azure SQL Managed Instance Skill
@@ -29,7 +29,7 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L77-L90 | Guidance for choosing Azure SQL Managed Instance vs other Azure SQL options, tiers, pools, networking, HA/DR options, ML differences, and planning Db2/Oracle migrations. |
 | Architecture & Design Patterns | L91-L95 | Connectivity architecture, networking models, and connection options for Azure SQL Database, including gateways, endpoints, firewalls, and integration with VNets and private access. |
 | Limits & Quotas | L96-L105 | Limits, quotas, and performance caps for Azure SQL MI: DTUs, free-tier and memory limits, resource ceilings, monitoring behavior, and how to request quota increases. |
-| Security | L106-L160 | Configuring Azure SQL Managed Instance security: Entra auth and logins, Windows/Kerberos, managed identities, TDE and Key Vault, TLS, auditing, threat protection, networking, and policy-based controls. |
+| Security | L106-L160 | Identity, auth, and data protection for SQL Managed Instance: Entra/Windows auth, managed identities, TDE & Key Vault, TLS, auditing, threat protection, networking, and security best practices. |
 | Configuration | L161-L212 | Configuring and monitoring SQL Managed Instance: networking, backups/restore, maintenance windows, alerts, metrics/logs, Intelligent Insights, XEvents, auditing, and deployment options. |
 | Integrations & Coding Patterns | L213-L236 | Connecting apps and tools to SQL Managed Instance (.NET, Java, Python, etc.), automation, data import, DTC, XEvents, MI Link, backups, tracing, and Spark integration. |
 | Deployment | L237-L257 | Deploying, scaling, moving, and pausing Azure SQL Managed Instance; networking setup, regional availability, DR/replication, migrations, and BACPAC import/export. |
@@ -134,7 +134,7 @@ This skill requires **network access** to fetch documentation content:
 | Enable Azure SQL TDE with Key Vault BYOK | https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-configure?view=azuresql |
 | Configure cross-tenant customer-managed keys for Azure SQL TDE | https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-cross-tenant?view=azuresql |
 | Use user-assigned managed identities for TDE customer-managed keys | https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-identity?view=azuresql |
-| Set up customer-managed TDE with Azure Key Vault | https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-overview?view=azuresql |
+| Configure customer-managed TDE with Azure Key Vault | https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-overview?view=azuresql |
 | Enable and manage transparent data encryption in Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-tde-overview?view=azuresql |
 | Secure SQL Managed Instance with Microsoft Entra logins | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/aad-security-configure-tutorial?view=azuresql |
 | Configure SQL Server Audit on Azure SQL Managed Instance | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/auditing?view=azuresql |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-19'
+generated_at: '2026-04-26'
 category_descriptions:
   decision-making: Guidance on choosing Azure Firewall SKUs (Basic/Standard/Premium),
     comparing features and performance, and planning or changing deployments based
@@ -11,7 +11,7 @@ category_descriptions:
     DNS/proxy/FTP, maintenance windows, monitoring/logging, and advanced Premium/PowerShell
     management.
   limits-quotas: Azure Firewall capacity, IP/port/session limits, SNAT scaling with
-    NAT Gateway, prescaling ranges, and TCP idle timeout behaviors and configuration.
+    NAT Gateway, prescaling options, and TCP idle timeout behaviors and configuration.
   troubleshooting: Diagnosing Azure Firewall issues using known limitations, packet
     captures, and Sentinel log analysis for malware detection and traffic investigation.
   best-practices: Best practices for Azure Firewall DNS proxy/caching, performance
@@ -28,17 +28,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Firewall development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  configuring Azure Firewall SKUs, policies/rules, TLS inspection, hub-spoke DNAT,
-  or SFTP to Storage, and other Azure Firewall related development tasks. Not for
-  Azure Application Gateway (use azure-application-gateway), Azure Front Door (use
-  azure-front-door), Azure Web Application Firewall (use azure-web-application-firewall),
-  Azure DDos Protection (use azure-ddos-protection).
-use_when: Use when configuring Azure Firewall SKUs, policies/rules, TLS inspection,
-  hub-spoke DNAT, or SFTP to Storage, and other Azure Firewall related development
-  tasks.
-confusable_not_for: Not for Azure Application Gateway (use azure-application-gateway),
-  Azure Front Door (use azure-front-door), Azure Web Application Firewall (use azure-web-application-firewall),
-  Azure DDos Protection (use azure-ddos-protection).
+  choosing Firewall SKUs, designing hub-spoke/forced tunneling, configuring DNAT/SNAT/app
+  rules, TLS inspection, or DNS proxy, and other Azure Firewall related development
+  tasks. Not for Azure Firewall Manager (use azure-firewall-manager), Azure Web Application
+  Firewall (use azure-web-application-firewall), Azure Virtual Network (use azure-virtual-network),
+  Azure Virtual WAN (use azure-virtual-wan).
+use_when: Use when choosing Firewall SKUs, designing hub-spoke/forced tunneling, configuring
+  DNAT/SNAT/app rules, TLS inspection, or DNS proxy, and other Azure Firewall related
+  development tasks.
+confusable_not_for: Not for Azure Firewall Manager (use azure-firewall-manager), Azure
+  Web Application Firewall (use azure-web-application-firewall), Azure Virtual Network
+  (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan).
 ---
 # Azure Firewall Crawl Report
 
@@ -51,10 +51,10 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 - **Unclassified**: 25
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 1
-- **Unchanged**: 83
-- **Deleted Pages**: 1
+- **Unchanged**: 84
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-firewall/azure-firewall.csv`
 
 ## Classification Statistics
@@ -74,18 +74,10 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 
 ## Changes
 
-### New Pages
-
-- [Support and troubleshooting](https://learn.microsoft.com/en-us/azure/firewall/support-help)
-
 ### Updated Pages
 
-- [FAQ](https://learn.microsoft.com/en-us/azure/firewall/firewall-faq)
-  - Updated: 2026-03-06T12:21:00Z → 2026-04-15T17:15:00Z
-
-### Deleted Pages
-
-- ~~Known issues and limitations~~ (https://learn.microsoft.com/en-us/azure/firewall/firewall-known-issues)
+- [TCP idle timeout behavior](https://learn.microsoft.com/en-us/azure/firewall/tcp-session-behavior)
+  - Updated: 2026-03-29T11:12:00.000Z → 2026-04-20T22:11:00.000Z
 
 ## Classified Pages
 
@@ -95,6 +87,7 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Scale outbound SNAT ports](https://learn.microsoft.com/en-us/azure/firewall/integrate-with-nat-gateway) | limits-quotas | 0.90 | States exact SNAT port counts (2,496 per public IP per VMSS instance, minimum two instances, up to 250 public IPs, totaling 1,248,000 ports) and discusses when more are needed; these are precise numeric limits/quotas. |
 | [Scale outbound SNAT ports with zone redundancy](https://learn.microsoft.com/en-us/azure/firewall/integrate-with-nat-gateway-v2) | limits-quotas | 0.90 | Again specifies 2,496 SNAT ports per public IP per instance, at least two instances, and up to 250 public IPs; these are concrete numeric limits and scaling characteristics. |
 | [Best practices for performance](https://learn.microsoft.com/en-us/azure/firewall/firewall-best-practices) | best-practices | 0.86 | The page provides product-specific performance tuning guidance for Azure Firewall, including concrete recommendations on configuring rules, SNAT, IDPS, and monitoring to minimize latency and maximize throughput. These are actionable DO/DON'T style best practices tied to Azure Firewall behavior rather than generic networking advice, so it fits the best-practices sub-skill. |
+| [TCP idle timeout behavior](https://learn.microsoft.com/en-us/azure/firewall/tcp-session-behavior) | limits-quotas | 0.86 | The page explains Azure Firewall TCP session management with specific idle timeout values and behaviors for long-running sessions. It describes default timeout durations, how they are applied, and conditions under which sessions are terminated, which are product-specific operational limits that an LLM wouldn't reliably know from training. |
 | [Threat intelligence](https://learn.microsoft.com/en-us/azure/firewall/threat-intel) | security | 0.85 | Details enabling threat intelligence-based filtering, including behavior (evaluated before NAT/network/app rules) and data sources (Microsoft Threat Intelligence feed), which are product-specific security settings. |
 | [Packet capture on Azure Firewall](https://learn.microsoft.com/en-us/azure/firewall/packet-capture) | troubleshooting | 0.80 | Packet capture usage is framed for troubleshooting; article covers how to capture and analyze traffic, a product-specific diagnostic workflow. |
 | [SNAT private ranges](https://learn.microsoft.com/en-us/azure/firewall/snat-private-range) | configuration | 0.80 | Explains default SNAT behavior with RFC1918/RFC6598 ranges and how to override it; includes product-specific configuration options and edge-case behavior for SNAT, which is expert configuration knowledge. |
@@ -125,7 +118,6 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Prescaling](https://learn.microsoft.com/en-us/azure/firewall/prescaling) | limits-quotas | 0.70 | Prescaling involves setting minimum and maximum capacity units; this feature typically includes numeric ranges and constraints for capacity units, which are limit/quota-like expert details. |
 | [Protect Azure Kubernetes Service (AKS)](https://learn.microsoft.com/en-us/azure/firewall/protect-azure-kubernetes-service) | security | 0.70 | Shows how to secure AKS inbound/outbound traffic with Azure Firewall, including scenario-specific rule and routing configurations. |
 | [Routing in hub and spoke](https://learn.microsoft.com/en-us/azure/firewall/firewall-multi-hub-spoke) | architecture-patterns | 0.70 | Covers using Azure Firewall in self-managed multi-hub-and-spoke topologies; this is a concrete Azure networking architecture pattern. |
-| [TCP idle timeout behavior](https://learn.microsoft.com/en-us/azure/firewall/tcp-session-behavior) | limits-quotas | 0.70 | Focuses on TCP session management and idle timeout behavior; such articles typically include specific default timeout values and ranges, which are numeric limits unique to the product. |
 | [Track rule set changes](https://learn.microsoft.com/en-us/azure/firewall/rule-set-change-tracking) | configuration | 0.70 | Explains how to query and analyze rule collection group changes via Azure Resource Graph, a product-specific configuration and auditing pattern. |
 | [Change Azure Firewall SKU](https://learn.microsoft.com/en-us/azure/firewall/change-sku) | decision-making | 0.68 | The page is focused on how to upgrade/downgrade between Azure Firewall Standard and Premium SKUs, including when you would change (to gain or drop specific security capabilities). This is SKU/feature-based selection and migration guidance rather than just a how-to. It provides product-specific guidance on choosing between SKUs and how to move between them, which fits the decision-making category better than generic configuration or deployment. |
 | [Monitoring Azure Firewall reference](https://learn.microsoft.com/en-us/azure/firewall/monitor-firewall-reference) | configuration | 0.68 | A 'monitoring data reference' article typically enumerates specific log categories, metrics, schema fields, and diagnostic settings for Azure Firewall in Azure Monitor. These are product-specific configuration and reference details (names of tables, fields, categories, and how to enable them), which fits the configuration category as it documents concrete monitoring/diagnostic configuration options. |

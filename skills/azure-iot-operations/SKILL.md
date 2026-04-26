@@ -1,9 +1,9 @@
 ---
 name: azure-iot-operations
-description: Expert knowledge for Azure IoT Operations development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building IoT data flows/graphs, MQTT broker setups, WASM/ONNX workloads, Akri/REST connectors, or OPC UA/MQTT security, and other Azure IoT Operations related development tasks. Not for Azure IoT (use azure-iot), Azure IoT Hub (use azure-iot-hub), Azure IoT Edge (use azure-iot-edge), Azure IoT Central (use azure-iot-central).
+description: Expert knowledge for Azure IoT Operations development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building MQTT broker flows, OPC UA/MQTT pipelines, WASM/ONNX data flows, Akri/REST connectors, or IoT assets, and other Azure IoT Operations related development tasks. Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Edge (use azure-iot-edge), Azure IoT Central (use azure-iot-central), Azure Defender For Iot (use azure-defender-for-iot).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-19"
+  generated_at: "2026-04-26"
   generator: "docs2skills/1.0.0"
 ---
 # Azure IoT Operations Skill
@@ -30,9 +30,9 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L57-L61 | Designing IoT data processing pipelines with data flow graphs and applying Azure IoT Operations in layered/segmented industrial network topologies and architectures. |
 | Limits & Quotas | L62-L66 | Details on MQTT broker feature support, protocol limits, and control capabilities in Azure IoT Operations, including which MQTT functions and controls are available or restricted. |
 | Security | L67-L84 | Securing Azure IoT Operations: TLS/cert management, OPC UA trust, MQTT authz/authn, private networking, secrets/Key Vault, RBAC roles, and image validation. |
-| Configuration | L85-L127 | Configuring Azure IoT Operations data flows, endpoints, routing, transforms, persistence, MQTT broker settings, device/asset models, and observability/metrics for monitoring and tuning. |
-| Integrations & Coding Patterns | L128-L146 | Patterns and code for integrating devices and cameras, building Akri/REST/WASM connectors and transforms, using state store, ONNX, schemas, and expression/mapping languages in IoT data flows |
-| Deployment | L147-L155 | Deploying, cloning, upgrading, and securing Azure IoT Operations in production (incl. private networks), plus deploying observability (Prometheus/Grafana) and WASM/graph workloads. |
+| Configuration | L85-L126 | Configuring IoT Operations data flows, endpoints, schemas, MQTT broker, assets/devices, persistence, scaling, and observability/metrics, plus cleanup and UI-based resource management. |
+| Integrations & Coding Patterns | L127-L145 | Patterns and code for integrating devices and cameras, building Akri/REST/WASM connectors and transforms, using state store, ONNX, schemas, and expression/mapping languages in IoT data flows |
+| Deployment | L146-L154 | Deploying, cloning, upgrading, and securing Azure IoT Operations in production (incl. private networks), plus deploying observability (Prometheus/Grafana) and WASM/graph workloads. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -110,7 +110,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure container registry endpoints for IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/howto-configure-registry-endpoint |
 | Configure WebAssembly graph definitions for IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/howto-configure-wasm-graph-definitions |
 | Use MQTT broker state store for data persistence | https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/overview-state-store |
-| Define Azure IoT Operations assets and devices in Device Registry | https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/concept-assets-devices |
 | Configure OPC UA assets and devices in Azure IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/howto-configure-opc-ua |
 | Manage Azure IoT Operations resources in the operations experience UI | https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/howto-use-operations-experience |
 | Configure SSE connector assets and devices in Azure IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/howto-use-sse-connector |

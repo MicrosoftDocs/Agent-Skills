@@ -1,9 +1,9 @@
 ---
 name: azure-planetary-computer-pro
-description: Expert knowledge for Microsoft Planetary Computer Pro development including troubleshooting, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when managing STAC collections, GeoCatalog ingestion, SAS tokens, Explorer visualization, or QGIS/ArcGIS integration, and other Microsoft Planetary Computer Pro related development tasks. Not for Azure Open Datasets (use azure-open-datasets), Azure Maps (use azure-maps), Azure Data Explorer (use azure-data-explorer), Azure Synapse Analytics (use azure-synapse-analytics).
+description: Expert knowledge for Microsoft Planetary Computer Pro development including troubleshooting, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when managing STAC collections, GeoCatalog ingestion, SAS tokens, APIM proxies, or QGIS/ArcGIS integrations, and other Microsoft Planetary Computer Pro related development tasks. Not for Azure Open Datasets (use azure-open-datasets), Azure Maps (use azure-maps), Azure Data Explorer (use azure-data-explorer), Azure Synapse Analytics (use azure-synapse-analytics).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-05"
+  generated_at: "2026-04-26"
   generator: "docs2skills/1.0.0"
 ---
 # Microsoft Planetary Computer Pro Skill
@@ -28,8 +28,8 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L40-L44 | Guidance on selecting how to access Planetary Computer Pro data, including connection options, integrations with tools/services, and choosing the best method for your workflow. |
 | Limits & Quotas | L45-L49 | Supported file formats, data types, and size/usage limits for datasets and computations in Planetary Computer Pro, including quotas that affect how you process and store data. |
 | Security | L50-L60 | Authenticating apps and services to Planetary Computer Pro, configuring Entra ID, RBAC, managed identities, cross-tenant access, and SAS-based authorization for GeoCatalog access and data ingestion |
-| Configuration | L61-L74 | Configuring Planetary Computer Pro collections: ingestion sources, mosaics, tiles, render/colormap settings, Explorer visualization, queryable filters, and US Gov cloud endpoints. |
-| Integrations & Coding Patterns | L75-L88 | Patterns and APIs for creating/managing STAC collections/items, bulk ingesting data, generating SAS tokens, and integrating Planetary Computer Pro with web apps, QGIS, ArcGIS, and other tools |
+| Configuration | L61-L75 | Configuring Planetary Computer Pro collections, tiles, mosaics, render/colormap settings, queryables, ingestion sources, APIM proxies, and US Gov cloud endpoints for visualization and search. |
+| Integrations & Coding Patterns | L76-L89 | Patterns and APIs for creating/managing STAC collections/items, bulk ingesting data, generating SAS tokens, and integrating Planetary Computer Pro with web apps, QGIS, ArcGIS, and other tools |
 
 ### Troubleshooting
 | Topic | URL |
@@ -63,6 +63,7 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Configure Planetary Computer Pro collections for Explorer visualization | https://learn.microsoft.com/en-us/azure/planetary-computer/collection-configuration-concept |
 | Configure collection visualization settings in Planetary Computer Pro portal | https://learn.microsoft.com/en-us/azure/planetary-computer/configure-collection-web-interface |
+| Configure APIM proxy for Planetary Computer GeoCatalog | https://learn.microsoft.com/en-us/azure/planetary-computer/create-api-proxy-geocatalog |
 | Apply sample render configurations for Planetary Computer Pro data visualization | https://learn.microsoft.com/en-us/azure/planetary-computer/data-visualization-samples |
 | Configure ingestion sources for Planetary Computer Pro GeoCatalogs | https://learn.microsoft.com/en-us/azure/planetary-computer/ingestion-source |
 | Configure mosaic options for Planetary Computer Pro collections | https://learn.microsoft.com/en-us/azure/planetary-computer/mosaic-configurations-for-collections |

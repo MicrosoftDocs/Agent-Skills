@@ -1,9 +1,9 @@
 ---
 name: azure-sql-virtual-machines
-description: Expert knowledge for SQL Server on Azure Virtual Machines development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when choosing Azure SQL vs SQL VMs, configuring Always On/FCI, tuning storage/VM sizing, or securing with Key Vault/Entra, and other SQL Server on Azure Virtual Machines related development tasks. Not for Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance), Azure Virtual Machines (use azure-virtual-machines), Azure Database Migration service (use azure-database-migration).
+description: Expert knowledge for SQL Server on Azure Virtual Machines development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when choosing Azure SQL vs SQL VMs, configuring AG/FCI HADR, tuning storage/VM, securing with Key Vault/MI, or Blob backups, and other SQL Server on Azure Virtual Machines related development tasks. Not for Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance), Azure Virtual Machines (use azure-virtual-machines), Azure Data Science Virtual Machines (use azure-data-science-vm).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-19"
+  generated_at: "2026-04-26"
   generator: "docs2skills/1.0.0"
 ---
 # SQL Server on Azure Virtual Machines Skill
@@ -25,7 +25,7 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L37-L51 | Diagnosing and fixing Azure SQL and SQL Server on VM issues: capacity, connectivity, performance, geo-replication, memory, log full, I/O throttling, and IaaS Agent extension errors |
-| Best Practices | L52-L65 | Best practices for SQL Server on Azure VMs: performance tuning, storage/VM sizing, tempdb/ephemeral disks, HADR/FCI/DNN configuration, backups, and planned maintenance readiness. |
+| Best Practices | L52-L65 | Best practices for SQL Server on Azure VMs: performance tuning, storage/VM sizing, tempdb/ephemeral disks, HADR/FCI/DNN setup, backups/restores, and planned maintenance readiness. |
 | Decision Making | L66-L80 | Guidance for choosing Azure SQL vs SQL VMs, comparing pricing/licensing, selecting HADR options, and planning migrations (Db2, Oracle, SQL 2014) and regional feature availability. |
 | Architecture & Design Patterns | L81-L89 | High-level designs and patterns for SQL Server on Azure VMs: connectivity, Always On availability groups, failover cluster instances, and Windows Server Failover Clustering setup. |
 | Limits & Quotas | L90-L95 | Info on Azure SQL capacity limits, DTU benchmark behavior, regional feature availability, and how to request quota increases for databases and managed instances |

@@ -1,9 +1,9 @@
 ---
 name: azure-repos
-description: Expert knowledge for Azure Repos development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when managing Azure Repos Git/TFVC, branch/PR policies, repo permissions, CodeQL/secret scans, or TFVC migrations, and other Azure Repos related development tasks. Not for Azure DevOps (use azure-devops), Azure Pipelines (use azure-pipelines), Azure Boards (use azure-boards), Azure Artifacts (use azure-artifacts).
+description: Expert knowledge for Azure Repos development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when managing Azure Repos Git/TFVC branching, PR policies, permissions, CodeQL/secrets scanning, or migrations, and other Azure Repos related development tasks. Not for Azure DevOps (use azure-devops), Azure Pipelines (use azure-pipelines), Azure Boards (use azure-boards), Azure Test Plans (use azure-test-plans).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-19"
+  generated_at: "2026-04-26"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Repos Skill
@@ -24,7 +24,7 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L36-L49 | Diagnosing and fixing Git/TFVC issues in Azure Repos: index.lock, push/RPC errors, merge/lock conflicts, undo/recover changes, and troubleshooting CodeQL, dependency, and secret scanning. |
+| Troubleshooting | L36-L49 | Diagnosing and fixing Git/TFVC issues (locks, RPC errors, merge conflicts, undo/recover changes) and troubleshooting CodeQL, dependency, and secret scanning in Azure DevOps/GitHub. |
 | Best Practices | L50-L65 | Git and TFVC best practices: branching, pull requests, merges, large binaries, .gitignore, cross‑platform compatibility, repo health, and workspace cleanup/optimization. |
 | Decision Making | L66-L74 | Guidance on choosing and migrating version control in Azure Repos: Git vs TFVC, SVN/TFVC-to-Git migration strategies, mixed Git+TFVC use, and local vs server TFVC workspaces. |
 | Architecture & Design Patterns | L75-L83 | Designing and choosing TFVC branching structures/strategies, planning strategic branches, implementing feature isolation, and managing branches for DevOps workflows in Azure Repos. |

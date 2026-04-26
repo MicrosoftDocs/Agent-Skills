@@ -32,8 +32,8 @@ confusable_not_for: Not for Azure Large Instances (use azure-large-instances), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 7
+- **Updated Pages**: 0
+- **Unchanged**: 8
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-baremetal-infrastructure/azure-baremetal-infrastructure.csv`
 
@@ -46,11 +46,6 @@ confusable_not_for: Not for Azure Large Instances (use azure-large-instances), A
 | *(Unclassified)* | 6 | 75.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [Get started](https://learn.microsoft.com/en-us/azure/baremetal-infrastructure/workloads/nc2-on-azure/get-started)
-  - Updated: 2025-07-31T17:19:00.000Z → 2026-04-13T17:16:00.000Z
 
 ## Classified Pages
 

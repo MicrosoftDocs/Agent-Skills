@@ -54,9 +54,9 @@ confusable_not_for: Not for Azure Communication Services (use azure-communicatio
 - **Unclassified**: 75
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 1
-- **Unchanged**: 182
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 184
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-speech/azure-speech.csv`
 
@@ -76,15 +76,6 @@ confusable_not_for: Not for Azure Communication Services (use azure-communicatio
 | *(Unclassified)* | 75 | 40.8% |
 
 ## Changes
-
-### New Pages
-
-- [Add an MCP server (preview)](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-voice-live-mcp-server)
-
-### Updated Pages
-
-- [Part 3: Train a model](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-custom-speech-train-model)
-  - Updated: 2025-12-19T08:00:00.000Z → 2026-04-17T22:08:00.000Z
 
 ## Classified Pages
 

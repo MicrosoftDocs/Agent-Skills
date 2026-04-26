@@ -3,7 +3,7 @@ name: azure-synapse-analytics
 description: Expert knowledge for Azure Synapse Analytics development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing Synapse workspaces, Spark pools, dedicated/serverless SQL, Delta Lake, or Synapse Link workloads, and other Azure Synapse Analytics related development tasks. Not for Azure Data Factory (use azure-data-factory), Azure Data Explorer (use azure-data-explorer), Azure Databricks (use azure-databricks), Azure HDInsight (use azure-hdinsight).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-12"
+  generated_at: "2026-04-26"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Synapse Analytics Skill
@@ -31,8 +31,8 @@ This skill requires **network access** to fetch documentation content:
 | Limits & Quotas | L163-L172 | Synapse SQL pool limits: maintenance windows, memory/concurrency by performance level, capacity caps, temp table behavior, serverless Delta Lake v1 querying, and Synapse Link feature limits/issues. |
 | Security | L173-L231 | Securing Synapse workspaces end-to-end: auth and RBAC, network isolation, private endpoints, encryption, data exfiltration, policies, and secure access to storage, SQL, Spark, and migration scenarios. |
 | Configuration | L232-L280 | Configuring Synapse workspaces, Spark pools, and SQL pools: environments, scaling, libraries, monitoring/metrics, backups/restore, workload management, and integrations (Purview, AML, SynapseML). |
-| Integrations & Coding Patterns | L281-L317 | Patterns and code to integrate Synapse (Spark, serverless, dedicated SQL) with ADLS, Cosmos DB, Azure SQL, AML, monitoring (Log Analytics, Prometheus), and external tools via connectors, REST, and T-SQL. |
-| Deployment | L318-L331 | Deploying and managing Synapse workspaces and dedicated SQL pools: ARM/Bicep templates, CI/CD, source control, restore points, maintenance windows, and automated compute management. |
+| Integrations & Coding Patterns | L281-L318 | Patterns and code to integrate Synapse (Spark, serverless, dedicated SQL) with storage, ML, monitoring, Cosmos DB, Kusto, Stream Analytics, and external tools via connectors, REST, and PowerShell. |
+| Deployment | L319-L332 | Deploying and managing Synapse workspaces and dedicated SQL pools: ARM/Bicep templates, CI/CD, source control, restore points, maintenance windows, and automated compute management. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -292,6 +292,7 @@ This skill requires **network access** to fetch documentation content:
 | Use Spark CDM connector to read/write Common Data Model | https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/data-sources/apache-spark-cdm-connector |
 | Use Kusto connector with Synapse serverless Spark | https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/data-sources/apache-spark-kusto-connector |
 | Use Synapse Spark connector for SQL databases | https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/data-sources/apache-spark-sql-connector |
+| Configure Synapse Spark logs to Azure Storage with cert auth | https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/how-to-use-certificate-with-service-principal-for-log-storage |
 | Develop and submit Spark apps from IntelliJ to Synapse | https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/intellij-tool-synapse |
 | Use MSSparkUtils utilities in Synapse Spark notebooks | https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/microsoft-spark-utilities |
 | Mount external storage using Synapse Spark file APIs | https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/synapse-file-mount-api |

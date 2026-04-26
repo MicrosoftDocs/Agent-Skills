@@ -1,9 +1,9 @@
 ---
 name: azure-cloud-adoption-framework
-description: Expert guidance for planning and executing cloud adoption using Azure Cloud Adoption Framework. Covers strategy, planning, readiness & landing zones, adoption patterns, governance, security, operations & management, organization & teams, and adoption scenarios. Use when designing Azure landing zones, AVS/VMware, SAP/Oracle, AKS, or AI/analytics workloads, and other Azure Cloud Adoption Framework related development tasks.
+description: Expert guidance for planning and executing cloud adoption using Azure Cloud Adoption Framework. Covers strategy, planning, readiness & landing zones, adoption patterns, governance, security, operations & management, organization & teams, and adoption scenarios. Use when designing AI agent, SAP/Oracle, AVS/VMware, AKS, or analytics/data mesh workloads on Azure, and other Azure Cloud Adoption Framework related development tasks.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-19"
+  generated_at: "2026-04-26"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Cloud Adoption Framework Skill
@@ -26,7 +26,7 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Strategy | L37-L55 | Strategic cloud planning: defining business goals, exec strategy, cost, resiliency, security, sustainability, and workload-specific plans (AI agents, data, VDI, VMware, SAP, Oracle, hybrid/multicloud). |
 | Planning | L56-L84 | Planning cloud adoption, migration waves, modernization roadmaps, cost/skills readiness, and detailed plans for workloads (AI, data, Oracle, SAP, AVS, AVD, analytics) on Azure. |
-| Readiness & Landing Zones | L85-L216 | Designing and operating Azure landing zones: network topology, identity, subscriptions, governance, automation/DevOps, multitenancy, and workload‑specific patterns (SAP, AVS, analytics, Oracle, etc.). |
+| Readiness & Landing Zones | L85-L216 | Designing and operating Azure landing zones: network topology, identity, subscriptions, governance, automation/DevOps, multitenant setups, and workload‑specific patterns (SAP, AVS, analytics, Oracle, API, App Service). |
 | Adoption Patterns | L217-L253 | Patterns and step-by-step guides for planning, migrating, modernizing, and operating workloads on Azure (apps, data, AI agents, AVD, SAP, Oracle, VMware) using CAF best practices. |
 | Governance | L254-L294 | Cloud and data governance for Azure: policies, guardrails, cost control, tagging, compliance, responsible AI, landing zones, Arc, analytics, SAP, AKS, and API/App Service governance. |
 | Security | L295-L331 | Security design and governance for Azure landing zones, including Zero Trust, IAM, encryption, DevOps, AKS, analytics, SAP/Oracle, Arc, and ongoing security operations. |
@@ -122,10 +122,10 @@ This skill requires **network access** to fetch documentation content:
 | Test Azure landing zone deployments and policies | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/enterprise-scale/testing-approach |
 | Transition existing Azure environments to landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/enterprise-scale/transition |
 | Understand Azure landing zones as environment foundation | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/ |
-| Use duplicate management groups to audit landing zone alignment | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/align-approach-duplicate-brownfield-audit-only |
+| Transition to CAF landing zone by duplicating management group | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/align-approach-duplicate-brownfield-audit-only |
 | Transition existing management groups to landing zone hierarchy | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/align-scenario-multiple-management-groups |
 | Align regional dev/test/prod structures to landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/align-scenario-regional-org |
-| Migrate a single-subscription Azure environment to landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/align-scenario-single-subscription |
+| Migrate a single Azure subscription into CAF landing zone architecture | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/align-scenario-single-subscription |
 | Define and configure Microsoft Entra tenants for Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/azure-ad-define |
 | Understand CSP service agreements in Azure landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/azure-billing-cloud-solution-provider |
 | Design Enterprise Agreement enrollment for Azure landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/azure-billing-enterprise-agreement |

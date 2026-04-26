@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-19'
+generated_at: '2026-04-26'
 category_descriptions:
   security: 'Configuring ADX security: auth/RBAC, managed identities, encryption/CMK,
     network isolation (private endpoints, outbound/public access), policies, locks,
@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 7
-- **Unchanged**: 190
+- **Updated Pages**: 1
+- **Unchanged**: 196
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-explorer/azure-data-explorer.csv`
 
@@ -78,20 +78,8 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 
 ### Updated Pages
 
-- [Get data from Amazon S3](https://learn.microsoft.com/en-us/azure/data-explorer/get-data-amazon-s3)
-  - Updated: 2025-10-06T22:02:00.000Z → 2026-04-13T17:02:00.000Z
-- [Ingest historical data](https://learn.microsoft.com/en-us/azure/data-explorer/ingest-data-historical)
-  - Updated: 2025-11-03T08:00:00.000Z → 2026-04-12T08:00:00.000Z
-- [Create an Event Hubs data connection](https://learn.microsoft.com/en-us/azure/data-explorer/create-event-hubs-connection)
-  - Updated: 2025-08-26T08:00:00.000Z → 2026-01-12T08:00:00.000Z
-- [Add a query visualization](https://learn.microsoft.com/en-us/azure/data-explorer/add-query-visualization)
-  - Updated: 2023-10-13T11:04:00.000Z → 2026-04-13T17:02:00.000Z
-- [Explore the results grid](https://learn.microsoft.com/en-us/azure/data-explorer/web-results-grid)
-  - Updated: 2023-05-28T08:00:00.000Z → 2026-04-13T17:02:00.000Z
-- [Query data in Azure Data Lake](https://learn.microsoft.com/en-us/azure/data-explorer/data-lake-query-data)
-  - Updated: 2025-06-11T22:03:00.000Z → 2026-04-12T08:00:00.000Z
-- [Monitoring data reference](https://learn.microsoft.com/en-us/azure/data-explorer/monitor-data-explorer-reference)
-  - Updated: 2025-01-02T18:01:00.000Z → 2026-04-16T08:00:00.000Z
+- [Use dashboards](https://learn.microsoft.com/en-us/azure/data-explorer/azure-data-explorer-dashboards)
+  - Updated: 2025-08-28T11:06:00.000Z → 2026-04-20T08:00:00.000Z
 
 ## Classified Pages
 
@@ -260,7 +248,6 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | [Ingest and query monitoring data](https://learn.microsoft.com/en-us/azure/data-explorer/ingest-data-no-code) | 0.35 | No-code ingestion tutorial; focuses on steps rather than detailed configuration matrices or limits. |
 | [Integration with Data Factory](https://learn.microsoft.com/en-us/azure/data-explorer/data-factory-integration) | 0.35 | Integration overview with Azure Data Factory; no detailed parameter tables or limits in summary. |
 | [Sample app generator](https://learn.microsoft.com/en-us/azure/data-explorer/sample-app-generator-wizard) | 0.35 | Sample app generator wizard is a tooling overview; summary doesn’t indicate detailed configuration tables or non-obvious constraints, more of a guided example generator. |
-| [Use dashboards](https://learn.microsoft.com/en-us/azure/data-explorer/azure-data-explorer-dashboards) | 0.35 | Dashboard article appears to be a how-to for building dashboards; mostly workflow/UI, not detailed configuration matrices or error/limit references. |
 | [Write KQL queries](https://learn.microsoft.com/en-us/azure/data-explorer/web-ui-kql) | 0.35 | Describes KQL editor features like IntelliSense and quick fixes; mostly conceptual usage guidance without detailed parameter tables. |
 | [Add a cluster connection](https://learn.microsoft.com/en-us/azure/data-explorer/add-cluster-connection) | 0.30 | How to add cluster connections in web UI; likely step-by-step UI instructions rather than parameter tables. |
 | [Apply conditional formatting](https://learn.microsoft.com/en-us/azure/data-explorer/dashboard-conditional-formatting) | 0.30 | Explains conditional formatting rules conceptually; no product-specific limits, config parameter tables, or error codes. |
@@ -296,6 +283,7 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | [Query data in the web UI overview](https://learn.microsoft.com/en-us/azure/data-explorer/web-ui-query-overview) | 0.20 | UI overview of query page; describes features but not deep configuration tables or limits. |
 | [Query integrations overview](https://learn.microsoft.com/en-us/azure/data-explorer/integrate-query-overview) | 0.20 | High-level overview of query integrations; mainly navigation and conceptual listing of tools. |
 | [Solution architectures](https://learn.microsoft.com/en-us/azure/data-explorer/solution-architectures) | 0.20 | Points to Azure Architecture Center; no product-specific decision matrices or quantified thresholds in this summary. |
+| [Use dashboards](https://learn.microsoft.com/en-us/azure/data-explorer/azure-data-explorer-dashboards) | 0.20 | Appears to be a how-to/tutorial for creating dashboards and visualizations in Azure Data Explorer. The summary does not indicate presence of numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. It looks like general usage guidance rather than expert-only reference details. |
 | [Visualize sample data dashboards](https://learn.microsoft.com/en-us/azure/data-explorer/web-ui-samples-dashboards) | 0.20 | Quickstart for sample dashboards; primarily step-by-step usage, no deep config, limits, or troubleshooting mappings. |
 | [What is Azure Data Explorer?](https://learn.microsoft.com/en-us/azure/data-explorer/data-explorer-overview) | 0.10 | High-level product overview without concrete limits, configs, or error details. |
 | [What's new](https://learn.microsoft.com/en-us/azure/data-explorer/whats-new) | 0.10 | Documentation change log; no technical limits, configs, or troubleshooting content. |

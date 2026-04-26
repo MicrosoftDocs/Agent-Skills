@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-04-26'
 category_descriptions:
   troubleshooting: Diagnosing and fixing Defender for IoT micro agent and OT sensor
     issues, understanding/handling security and health alerts, and validating sensor/agent
@@ -13,8 +13,8 @@ category_descriptions:
   limits-quotas: Info on OT trial setup, supported/retiring features, appliance catalog
     and requirements, and Defender for IoT data retention and storage limits.
   integrations: Integrating Defender for IoT with SIEMs, firewalls, ServiceNow, Sentinel,
-    OT sensors, and micro agents, plus using APIs, playbooks, and workbooks to automate
-    alerts and manage inventory/vulnerabilities.
+    REST APIs, and micro agents, plus patterns for alert, inventory, vulnerability,
+    and data automation/visualization.
   deployment: 'Planning and deploying Defender for IoT OT sensors: hardware/VM options,
     appliance-specific guides, traffic mirroring, onboarding, activation, and moving
     IoT security resources across regions.'
@@ -31,15 +31,14 @@ skill_description: Expert knowledge for Azure Defender For Iot development inclu
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
   Use when deploying OT sensors, configuring micro agents, setting up traffic mirroring,
   or integrating with Sentinel/SIEM, and other Azure Defender For Iot related development
-  tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure Security
-  (use azure-security), Azure External Attack Surface Management (use azure-external-attack-surface-management),
-  Azure Sentinel (use azure-sentinel).
+  tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure IoT
+  (use azure-iot), Azure IoT Hub (use azure-iot-hub), Azure Security (use azure-security).
 use_when: Use when deploying OT sensors, configuring micro agents, setting up traffic
   mirroring, or integrating with Sentinel/SIEM, and other Azure Defender For Iot related
   development tasks.
 confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-cloud),
-  Azure Security (use azure-security), Azure External Attack Surface Management (use
-  azure-external-attack-surface-management), Azure Sentinel (use azure-sentinel).
+  Azure IoT (use azure-iot), Azure IoT Hub (use azure-iot-hub), Azure Security (use
+  azure-security).
 ---
 # Azure Defender For Iot Crawl Report
 
@@ -53,8 +52,8 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 180
+- **Updated Pages**: 1
+- **Unchanged**: 179
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-defender-for-iot/azure-defender-for-iot.csv`
 
@@ -74,6 +73,11 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | *(Unclassified)* | 64 | 35.6% |
 
 ## Changes
+
+### Updated Pages
+
+- [Stream cloud alerts to a partner SIEM](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/integrations/send-cloud-data-to-partners)
+  - Updated: 2025-10-24T05:11:00.000Z → 2026-04-22T19:06:00.000Z
 
 ## Classified Pages
 
@@ -106,7 +110,6 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | [SSL/TLS certificate requirements](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/best-practices/certificate-requirements) | security | 0.80 | Details certificate file requirements and validation (CRL, expiration) for Defender for IoT OT sensors, which are product-specific security configuration rules. |
 | [SSO for sensor console login](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/set-up-sso) | security | 0.80 | SSO setup with Microsoft Entra ID includes specific application IDs, claims, and configuration parameters for the sensor console, which are product-specific security settings. |
 | [Sensor health message reference](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/sensor-health-messages) | troubleshooting | 0.80 | A reference of sensor health messages implies specific message texts and meanings, mapping symptoms to causes and actions, which is product-specific troubleshooting knowledge. |
-| [Stream cloud alerts to a partner SIEM](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/integrations/send-cloud-data-to-partners) | integrations | 0.80 | Describes sending data via Sentinel and Event Hubs to SIEMs like Splunk; this involves specific connector, Event Hub, and data format configurations unique to this integration. |
 | [Vulnerability management](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/api/sensor-vulnerability-apis) | integrations | 0.80 | Vulnerability management API reference exposes product-specific endpoints and response schemas aligned with integration patterns. |
 | [Which appliances do I need?](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/ot-appliance-sizing) | decision-making | 0.80 | Helps choose physical vs virtual appliances and hardware profiles based on monitoring needs; product-specific sizing and selection guidance. |
 | [Work with Defender-IoT-micro-agent for Eclipse ThreadX (Preview)](https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/how-to-threadx-security-module) | configuration | 0.80 | Explicitly about configuring/customizing the ThreadX micro agent for network, bandwidth, and memory; likely includes product-specific parameters and ranges. |
@@ -169,6 +172,7 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | [Validate after installation](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/ot-deploy/post-install-validation-ot-software) | troubleshooting | 0.70 | Post-install validation via UI/CLI for system health; likely includes checks, commands, and symptom→resolution guidance specific to this product. |
 | [Visualize data with workbooks](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/workbooks) | integrations | 0.70 | Using Azure Monitor workbooks with Defender for IoT requires product-specific queries and workbook configuration tied to this data source. |
 | [YS-techsystems YS-FIT2 (Rugged MIL-STD-810G)](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/appliance-catalog/ys-techsystems-ys-fit2) | deployment | 0.70 | Includes deployment and installation details for a specific hardware platform, which are product-specific deployment patterns. |
+| [Stream cloud alerts to a partner SIEM](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/integrations/send-cloud-data-to-partners) | integrations | 0.68 | The page describes a product-specific integration pattern for streaming Defender for IoT cloud alerts through Microsoft Sentinel and Azure Event Hubs into a partner SIEM (Splunk example). It focuses on how to wire these services together, which is integration-focused expert knowledge beyond generic SDK usage or conceptual overviews. |
 | [Analyze OT programming details and changes](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-analyze-programming-details-changes) | security | 0.65 | Investigating programming events and code changes on OT devices is a product-specific forensic/security workflow, likely with unique event types and fields. |
 | [Audit user activity](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/track-user-activity) | security | 0.65 | Auditing user activity typically documents specific log locations, event types, and access patterns unique to Defender for IoT, which are security-related expert details. |
 | [Azure connection methods](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/architecture-connections) | architecture-patterns | 0.65 | Describes supported architecture models for connecting sensors to Azure; product-specific connection patterns and when to use them. |
