@@ -203,7 +203,7 @@
 | Persist aggregation output with $out in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/aggregation/$out |
 | Transform documents with $replaceWith in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/aggregation/$replacewith |
 | Randomly sample documents with $sample in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/aggregation/$sample |
-| Set or update fields with $set in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/aggregation/$set |
+| Use the $set update operator in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/aggregation/$set |
 | Implement pagination with $skip in DocumentDB pipelines | https://learn.microsoft.com/en-us/azure/documentdb/operators/aggregation/$skip |
 | Convert expression types with $convert in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/aggregation/type-expression/$convert |
 | Check numeric types using $isNumber in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/aggregation/type-expression/$isnumber |
@@ -229,7 +229,6 @@
 | Apply $bitAnd bitwise operations in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/bitwise/$bitand |
 | Use $bitNot bitwise operator in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/bitwise/$bitnot |
 | Use $bitOr bitwise operator in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/bitwise/$bitor |
-| Compare values using $cmp in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/comparison-query/$cmp |
 | Filter equal values with $eq in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/comparison-query/$eq |
 | Query greater-than values with $gt in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/comparison-query/$gt |
 | Query minimum thresholds with $gte in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/comparison-query/$gte |

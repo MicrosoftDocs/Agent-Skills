@@ -1,9 +1,9 @@
 ---
 name: azure-app-service
-description: Expert knowledge for Azure App Service development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when choosing App Service plans/tiers, configuring TLS/domains, deploying via slots/CI-CD, or securing with Entra/managed identity, and other Azure App Service related development tasks. Not for Azure Functions (use azure-functions), Azure Spring Apps (use azure-spring-apps), Azure Static Web Apps (use azure-static-web-apps), Azure Kubernetes Service (AKS) (use azure-kubernetes-service).
+description: Expert knowledge for Azure App Service development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when choosing App Service plans/ASE, configuring VNet/inbound/outbound, auth/TLS, slots/CI-CD, or custom containers, and other Azure App Service related development tasks. Not for Azure Functions (use azure-functions), Azure Container Apps (use azure-container-apps), Azure Spring Apps (use azure-spring-apps), Azure Static Web Apps (use azure-static-web-apps).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-19"
+  generated_at: "2026-04-26"
   generator: "docs2skills/1.0.0"
 ---
 # Azure App Service Skill
@@ -25,14 +25,14 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L37-L43 | Diagnosing and troubleshooting App Service apps using built-in diagnostics and Azure Monitor, plus fixing common WordPress-on-App-Service configuration and runtime issues. |
-| Best Practices | L44-L54 | Best practices for deploying, securing, routing, and maintaining App Service apps, including handling IP/TLS changes, Traffic Manager, and minimizing downtime during maintenance/restarts |
+| Best Practices | L44-L54 | Best practices for deploying and securing App Service apps, handling inbound/outbound and TLS IP changes, and using Traffic Manager for resilient, geo-distributed endpoints |
 | Decision Making | L55-L75 | Guidance on choosing App Service tiers, plans, auth and networking, plus planning cost, TLS, domains, and migrations (Windows↔Linux, .NET, VNet, Docker Compose, Arc). |
 | Architecture & Design Patterns | L76-L80 | Architectural guidance for App Service: ASE geo-distribution, outbound traffic via NAT Gateway, and recommended Azure services/patterns for building scalable, secure apps. |
 | Limits & Quotas | L81-L85 | App Service resource limits (CPU, memory, connections), quota types, how they’re measured/monitored, and how to use metrics to detect and avoid hitting plan or app quotas. |
-| Security | L86-L133 | Securing App Service apps: auth (Entra, social, OIDC, MCP), TLS/certs, IP/VNet/firewall, managed identities/Graph/SQL/Storage access, and end‑to‑end network and data protection. |
-| Configuration | L134-L189 | Configuring App Service apps: runtime and language settings, containers, networking/VNet, domains/certs, storage, security/auth, monitoring, backups, and environment variables. |
-| Integrations & Coding Patterns | L190-L203 | Patterns for integrating App Service with TLS/SSL, Application Gateway, Azure OpenAI chatbots, Key Vault via MSI, managed identity DB access, and WebJobs event-driven bindings. |
-| Deployment | L204-L229 | Deploying and scaling App Service apps: CI/CD (GitHub Actions, Azure Pipelines, CLI/PowerShell), ZIP/FTP/Git deploy, custom containers, slots, ASE/Arc, scaling, DNS and credentials. |
+| Security | L86-L139 | Securing App Service apps: auth (Entra, social, OIDC, MCP), managed identities/Graph/Storage/SQL, TLS/certs, IP/VNet/firewall, Key Vault secrets, and end-to-end network isolation. |
+| Configuration | L140-L193 | Configuring App Service apps: app settings, networking/VNet, storage, containers/sidecars, auth, certificates/domains, language runtimes, health/monitoring, backup/restore, and ASE setup. |
+| Integrations & Coding Patterns | L194-L204 | Patterns for integrating App Service apps with APM, TLS/SSL certs, Application Gateway, MCP, Azure OpenAI chatbots (Node/Flask), and event-driven jobs via WebJobs bindings. |
+| Deployment | L205-L230 | Deploying and scaling App Service apps: CI/CD (GitHub Actions, Azure Pipelines, CLI/PowerShell), ZIP/FTP/Git deploy, custom containers, slots, ASE/Arc, scaling, DNS and credentials. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -50,7 +50,7 @@ This skill requires **network access** to fetch documentation content:
 | Prepare App Service apps for outbound IP address changes | https://learn.microsoft.com/en-us/azure/app-service/ip-address-change-outbound |
 | Handle TLS/SSL IP address changes for App Service bindings | https://learn.microsoft.com/en-us/azure/app-service/ip-address-change-ssl |
 | Apply security best practices to Azure App Service deployments | https://learn.microsoft.com/en-us/azure/app-service/overview-security |
-| Apply Traffic Manager best practices with Azure App Service | https://learn.microsoft.com/en-us/azure/app-service/web-sites-traffic-manager |
+| Configure Azure Traffic Manager with App Service endpoints | https://learn.microsoft.com/en-us/azure/app-service/web-sites-traffic-manager |
 
 ### Decision Making
 | Topic | URL |
@@ -90,20 +90,21 @@ This skill requires **network access** to fetch documentation content:
 | Handle App Service Managed Certificate changes and validation | https://learn.microsoft.com/en-us/azure/app-service/app-service-managed-certificate-changes-july-2025 |
 | Configure TLS mutual authentication in Azure App Service | https://learn.microsoft.com/en-us/azure/app-service/app-service-web-configure-tls-mutual-auth |
 | Secure App Service OpenAPI tools for Foundry with Entra auth | https://learn.microsoft.com/en-us/azure/app-service/configure-authentication-ai-foundry-openapi-tool |
+| Manage App Service authentication API versions | https://learn.microsoft.com/en-us/azure/app-service/configure-authentication-api-version |
 | Customize sign-in and sign-out behavior in App Service auth | https://learn.microsoft.com/en-us/azure/app-service/configure-authentication-customize-sign-in-out |
 | Configure MCP server authorization in Azure App Service | https://learn.microsoft.com/en-us/azure/app-service/configure-authentication-mcp |
 | Secure MCP servers on App Service with Entra authentication | https://learn.microsoft.com/en-us/azure/app-service/configure-authentication-mcp-server-vscode |
 | Manage OAuth tokens with App Service authentication | https://learn.microsoft.com/en-us/azure/app-service/configure-authentication-oauth-tokens |
 | Configure Microsoft Entra authentication for App Service | https://learn.microsoft.com/en-us/azure/app-service/configure-authentication-provider-aad |
-| Configure Sign in with Apple for App Service authentication | https://learn.microsoft.com/en-us/azure/app-service/configure-authentication-provider-apple |
-| Configure Facebook authentication for Azure App Service | https://learn.microsoft.com/en-us/azure/app-service/configure-authentication-provider-facebook |
-| Configure GitHub authentication for Azure App Service | https://learn.microsoft.com/en-us/azure/app-service/configure-authentication-provider-github |
+| Configure Sign in with Apple for App Service | https://learn.microsoft.com/en-us/azure/app-service/configure-authentication-provider-apple |
+| Configure Facebook as App Service identity provider | https://learn.microsoft.com/en-us/azure/app-service/configure-authentication-provider-facebook |
+| Configure GitHub authentication for App Service | https://learn.microsoft.com/en-us/azure/app-service/configure-authentication-provider-github |
 | Configure Google authentication for Azure App Service | https://learn.microsoft.com/en-us/azure/app-service/configure-authentication-provider-google |
 | Configure custom OpenID Connect providers for App Service | https://learn.microsoft.com/en-us/azure/app-service/configure-authentication-provider-openid-connect |
-| Configure X (Twitter) authentication for Azure App Service | https://learn.microsoft.com/en-us/azure/app-service/configure-authentication-provider-twitter |
+| Configure X (Twitter) authentication for App Service | https://learn.microsoft.com/en-us/azure/app-service/configure-authentication-provider-twitter |
 | Access user identities with App Service authentication | https://learn.microsoft.com/en-us/azure/app-service/configure-authentication-user-identities |
 | Disable basic auth for App Service deployments securely | https://learn.microsoft.com/en-us/azure/app-service/configure-basic-auth-disable |
-| Encrypt App Service app source at rest with CMK | https://learn.microsoft.com/en-us/azure/app-service/configure-encrypt-at-rest-using-cmk |
+| Encrypt Azure App Service app content with customer-managed keys | https://learn.microsoft.com/en-us/azure/app-service/configure-encrypt-at-rest-using-cmk |
 | Configure security for Java apps on Azure App Service | https://learn.microsoft.com/en-us/azure/app-service/configure-language-java-security |
 | Configure TLS/SSL bindings for App Service custom domains | https://learn.microsoft.com/en-us/azure/app-service/configure-ssl-bindings |
 | Configure TLS/SSL certificates for Azure App Service | https://learn.microsoft.com/en-us/azure/app-service/configure-ssl-certificate |
@@ -114,20 +115,25 @@ This skill requires **network access** to fetch documentation content:
 | Configure and use managed identities in Azure App Service | https://learn.microsoft.com/en-us/azure/app-service/overview-managed-identity |
 | Configure TLS/SSL security for Azure App Service | https://learn.microsoft.com/en-us/azure/app-service/overview-tls |
 | Prevent dangling subdomain takeovers in Azure App Service | https://learn.microsoft.com/en-us/azure/app-service/reference-dangling-subdomain-prevention |
-| Configure managed identity access to Microsoft Graph from App Service | https://learn.microsoft.com/en-us/azure/app-service/scenario-secure-app-access-microsoft-graph-as-app |
+| Use managed identity to call Microsoft Graph from App Service | https://learn.microsoft.com/en-us/azure/app-service/scenario-secure-app-access-microsoft-graph-as-app |
 | Grant delegated Microsoft Graph access for App Service users | https://learn.microsoft.com/en-us/azure/app-service/scenario-secure-app-access-microsoft-graph-as-user |
 | Secure App Service access to Azure Storage with managed identities | https://learn.microsoft.com/en-us/azure/app-service/scenario-secure-app-access-storage |
 | Enable authentication for Azure App Service web apps | https://learn.microsoft.com/en-us/azure/app-service/scenario-secure-app-authentication-app-service |
 | Use Azure Policy compliance controls for App Service | https://learn.microsoft.com/en-us/azure/app-service/security-controls-policy |
 | Configure minimum TLS versions for Azure App Service and Functions | https://learn.microsoft.com/en-us/azure/app-service/tls-minimum-version |
 | Secure App Service apps end-to-end with built-in auth | https://learn.microsoft.com/en-us/azure/app-service/tutorial-auth-aad |
-| Access Microsoft Graph as app using managed identity | https://learn.microsoft.com/en-us/azure/app-service/tutorial-connect-app-access-microsoft-graph-as-app-javascript |
-| Access Microsoft Graph as user from App Service | https://learn.microsoft.com/en-us/azure/app-service/tutorial-connect-app-access-microsoft-graph-as-user-javascript |
+| Configure managed identity access to Microsoft Graph from App Service | https://learn.microsoft.com/en-us/azure/app-service/tutorial-connect-app-access-microsoft-graph-as-app-javascript |
+| Grant delegated Microsoft Graph access for App Service users | https://learn.microsoft.com/en-us/azure/app-service/tutorial-connect-app-access-microsoft-graph-as-user-javascript |
 | Connect App Service to SQL on behalf of signed-in user | https://learn.microsoft.com/en-us/azure/app-service/tutorial-connect-app-access-sql-database-as-user-dotnet |
-| Secure JavaScript web app access to Azure Storage | https://learn.microsoft.com/en-us/azure/app-service/tutorial-connect-app-access-storage-javascript |
-| Configure E2E user auth from App Service to Azure services | https://learn.microsoft.com/en-us/azure/app-service/tutorial-connect-app-app-graph-javascript |
+| Use managed identities to access Azure Storage from App Service | https://learn.microsoft.com/en-us/azure/app-service/tutorial-connect-app-access-storage-javascript |
+| Configure end-to-end user auth to Azure services | https://learn.microsoft.com/en-us/azure/app-service/tutorial-connect-app-app-graph-javascript |
 | Secure database access from App Service with managed identity | https://learn.microsoft.com/en-us/azure/app-service/tutorial-connect-msi-azure-database |
+| Secure .NET App Service secrets with Key Vault | https://learn.microsoft.com/en-us/azure/app-service/tutorial-connect-msi-key-vault |
+| Secure JavaScript App Service secrets with Key Vault | https://learn.microsoft.com/en-us/azure/app-service/tutorial-connect-msi-key-vault-javascript |
+| Secure PHP App Service secrets with Key Vault | https://learn.microsoft.com/en-us/azure/app-service/tutorial-connect-msi-key-vault-php |
+| Secure Python App Service secrets with Key Vault | https://learn.microsoft.com/en-us/azure/app-service/tutorial-connect-msi-key-vault-python |
 | Secure SQL access with managed identity in App Service | https://learn.microsoft.com/en-us/azure/app-service/tutorial-connect-msi-sql-database |
+| Isolate Azure App Service traffic with VNet integration | https://learn.microsoft.com/en-us/azure/app-service/tutorial-networking-isolate-vnet |
 | Secure App Service apps with custom domains and certificates | https://learn.microsoft.com/en-us/azure/app-service/tutorial-secure-domain-certificate |
 | Secure N-tier Azure App Service with private networking | https://learn.microsoft.com/en-us/azure/app-service/tutorial-secure-ntier-app |
 
@@ -137,7 +143,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure Azure App Service App Configuration references | https://learn.microsoft.com/en-us/azure/app-service/app-service-configuration-references |
 | Configure Hybrid Connections for Azure App Service apps | https://learn.microsoft.com/en-us/azure/app-service/app-service-hybrid-connections |
 | Configure Key Vault references in App Service settings | https://learn.microsoft.com/en-us/azure/app-service/app-service-key-vault-references |
-| Manage App Service authentication API and runtime versions | https://learn.microsoft.com/en-us/azure/app-service/configure-authentication-api-version |
 | Configure App Service authentication using file-based settings | https://learn.microsoft.com/en-us/azure/app-service/configure-authentication-file-based |
 | Configure common settings for Azure App Service apps | https://learn.microsoft.com/en-us/azure/app-service/configure-common |
 | Mount Azure Storage file shares in App Service | https://learn.microsoft.com/en-us/azure/app-service/configure-connect-to-azure-storage |
@@ -149,7 +154,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure Aspire applications on Azure App Service | https://learn.microsoft.com/en-us/azure/app-service/configure-language-dotnet-aspire |
 | Configure ASP.NET apps on Azure App Service | https://learn.microsoft.com/en-us/azure/app-service/configure-language-dotnet-framework |
 | Configure ASP.NET Core apps on Azure App Service | https://learn.microsoft.com/en-us/azure/app-service/configure-language-dotnetcore |
-| Configure APM for Java apps on Azure App Service | https://learn.microsoft.com/en-us/azure/app-service/configure-language-java-apm |
 | Configure Java data sources on Azure App Service | https://learn.microsoft.com/en-us/azure/app-service/configure-language-java-data-sources |
 | Deploy and configure Java apps on Azure App Service | https://learn.microsoft.com/en-us/azure/app-service/configure-language-java-deploy-run |
 | Configure Node.js applications on Azure App Service | https://learn.microsoft.com/en-us/azure/app-service/configure-language-nodejs |
@@ -190,15 +194,12 @@ This skill requires **network access** to fetch documentation content:
 ### Integrations & Coding Patterns
 | Topic | URL |
 |-------|-----|
+| Integrate Java apps with APM tools on App Service | https://learn.microsoft.com/en-us/azure/app-service/configure-language-java-apm |
 | Use App Service TLS/SSL certificates in application code | https://learn.microsoft.com/en-us/azure/app-service/configure-ssl-certificate-in-code |
 | Integrate App Service Environment with Azure Application Gateway | https://learn.microsoft.com/en-us/azure/app-service/environment/integrate-with-application-gateway |
 | Integrate Azure App Service as an MCP server | https://learn.microsoft.com/en-us/azure/app-service/scenario-ai-model-context-protocol-server |
 | Integrate Node.js Express chatbot with Azure OpenAI via App Service | https://learn.microsoft.com/en-us/azure/app-service/tutorial-ai-openai-chatbot-node |
 | Integrate Python Flask chatbot with Azure OpenAI via App Service | https://learn.microsoft.com/en-us/azure/app-service/tutorial-ai-openai-chatbot-python |
-| Use Key Vault with App Service .NET via MSI | https://learn.microsoft.com/en-us/azure/app-service/tutorial-connect-msi-key-vault |
-| Use Key Vault with App Service JavaScript via MSI | https://learn.microsoft.com/en-us/azure/app-service/tutorial-connect-msi-key-vault-javascript |
-| Use Key Vault with App Service PHP via MSI | https://learn.microsoft.com/en-us/azure/app-service/tutorial-connect-msi-key-vault-php |
-| Use Key Vault with App Service Python via MSI | https://learn.microsoft.com/en-us/azure/app-service/tutorial-connect-msi-key-vault-python |
 | Implement event-driven jobs with Azure WebJobs SDK bindings | https://learn.microsoft.com/en-us/azure/app-service/webjobs-sdk-how-to |
 
 ### Deployment

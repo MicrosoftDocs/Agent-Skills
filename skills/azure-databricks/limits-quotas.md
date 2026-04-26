@@ -8,7 +8,7 @@
 | Topic | URL |
 |-------|-----|
 | Review Azure Databricks serverless compute quotas | https://learn.microsoft.com/en-us/azure/databricks/admin/account-settings/serverless-quotas |
-| Configure AI Gateway endpoint rate limits in Databricks | https://learn.microsoft.com/en-us/azure/databricks/ai-gateway/rate-limits-beta |
+| Set and manage Unity AI Gateway endpoint rate limits | https://learn.microsoft.com/en-us/azure/databricks/ai-gateway/rate-limits-beta |
 | Clone legacy Databricks dashboards to AI/BI | https://learn.microsoft.com/en-us/azure/databricks/archive/legacy/clone-legacy-to-aibi |
 | Use and migrate from legacy Databricks online tables | https://learn.microsoft.com/en-us/azure/databricks/archive/machine-learning/feature-store/online-tables |
 | Check Databricks metric view feature runtime requirements | https://learn.microsoft.com/en-us/azure/databricks/business-semantics/metric-views/feature-availability |
@@ -32,11 +32,9 @@
 | Understand Meta Ads ingestion connector limits | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/meta-ads-limits |
 | Review MySQL Lakeflow connector limitations and considerations | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/mysql-limits |
 | Understand NetSuite Lakeflow connector limitations | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/netsuite-limits |
-| Understand PostgreSQL Lakeflow Connect connector limitations | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/postgresql-limits |
 | Review Salesforce Lakeflow connector limitations | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/salesforce-limits |
 | Understand ServiceNow Lakeflow connector limitations | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/servicenow-limits |
 | Review Microsoft SharePoint connector ingestion limits | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/sharepoint-limits |
-| Review SQL Server Lakeflow Connect connector limitations | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/sql-server-limits |
 | Review TikTok Ads Lakeflow connector limitations | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/tiktok-ads-limits |
 | Understand Workday HCM Lakeflow connector limitations | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/workday-hcm-limits |
 | Review limitations for Workday Reports ingestion | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/workday-reports-limits |
@@ -44,11 +42,10 @@
 | Zerobus Ingest connector limits and constraints | https://learn.microsoft.com/en-us/azure/databricks/ingestion/zerobus-limits |
 | Understand Databricks JDBC driver parameter limits | https://learn.microsoft.com/en-us/azure/databricks/integrations/jdbc-oss/example |
 | Handle large parameter arrays in For each tasks | https://learn.microsoft.com/en-us/azure/databricks/jobs/for-each-lookup-example |
-| Understand Lakeflow Spark Declarative Pipeline limits and quotas | https://learn.microsoft.com/en-us/azure/databricks/ldp/limitations |
+| Lakeflow Spark pipeline limits in Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/ldp/limitations |
 | Understand Databricks Runtime ML library maintenance and support | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/databricks-runtime-ml-maintenance |
-| Use Databricks Online Feature Stores for low-latency serving | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/feature-store/online-feature-store |
 | Overview and limits of Databricks Foundation Model APIs | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/foundation-model-apis/ |
-| Foundation Model APIs rate limits and quotas | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/foundation-model-apis/limits |
+| Understand Databricks Foundation Model APIs limits and quotas | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/foundation-model-apis/limits |
 | Understand model units for provisioned throughput capacity | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/foundation-model-apis/model-units |
 | Review Azure Databricks model serving limits and regions | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/model-serving-limits |
 | Understand and debug Databricks model serving timeouts | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/model-serving-timeouts |
@@ -57,7 +54,7 @@
 | Notebook size and feature limits in Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/notebooks/notebook-limitations |
 | Understand Lakebase and standard Postgres differences | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/compatibility |
 | Lakebase Autoscaling feature and compatibility limitations | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/limitations |
-| Manage Lakebase databases and branch limits | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/manage-databases |
+| Understand Lakebase Postgres database count limits | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/manage-databases |
 | Wait for streaming query termination with awaitTermination | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/streamingquery/awaittermination |
 | Use StreamingQuery.id for unique query identification | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/streamingquery/id |
 | Name streaming queries with StreamingQuery.name | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/streamingquery/name |
@@ -83,4 +80,5 @@
 | DROP VOLUME retention behavior in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-ddl-drop-volume |
 | Recover dropped Unity Catalog tables with UNDROP | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-ddl-undrop-table |
 | Understand real-time mode limitations in Structured Streaming | https://learn.microsoft.com/en-us/azure/databricks/structured-streaming/real-time/limitations |
+| Reference supported features and limits for real-time mode | https://learn.microsoft.com/en-us/azure/databricks/structured-streaming/real-time/reference |
 | Scale Mosaic AI Vector Search endpoints to high QPS | https://learn.microsoft.com/en-us/azure/databricks/vector-search/high-qps |

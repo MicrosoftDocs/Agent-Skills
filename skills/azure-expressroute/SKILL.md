@@ -1,9 +1,9 @@
 ---
 name: azure-expressroute
-description: Expert knowledge for Azure ExpressRoute development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing ExpressRoute circuits/gateways, BGP routing, Global Reach, FastPath, or S2S VPN coexistence, and other Azure ExpressRoute related development tasks. Not for Azure Internet Peering (use azure-internet-peering), Azure Peering Service (use azure-peering-service), Azure Virtual WAN (use azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway).
+description: Expert knowledge for Azure ExpressRoute development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing ExpressRoute circuits/gateways, BGP routing, Global Reach, encryption (IPsec/MACsec), or automation, and other Azure ExpressRoute related development tasks. Not for Azure Internet Peering (use azure-internet-peering), Azure Virtual WAN (use azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway), Azure Virtual Network (use azure-virtual-network).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-12"
+  generated_at: "2026-04-26"
   generator: "docs2skills/1.0.0"
 ---
 # Azure ExpressRoute Skill
@@ -30,7 +30,7 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L62-L72 | Designing resilient, highly available ExpressRoute topologies, multi-circuit routing, coexistence with S2S VPN, DR/backup patterns, and using Microsoft peering for PSTN services. |
 | Limits & Quotas | L73-L80 | ExpressRoute bandwidth, route, and gateway limits, FastPath constraints, rate limiting on provider circuits, and how to monitor advertised routes to stay within quotas |
 | Security | L81-L90 | Encryption (IPsec, MACsec), NAT rules, RBAC roles, and security best practices for protecting ExpressRoute circuits and traffic |
-| Configuration | L91-L127 | How to configure and manage ExpressRoute circuits, peerings, VNets, gateways, routing/BGP, NAT, IPv6, monitoring, resiliency, and Global Reach using portal, PowerShell, and CLI |
+| Configuration | L91-L127 | Configuring and managing ExpressRoute circuits, peerings, gateways, routing, NAT, BFD, IPv6, Global Reach, monitoring, resiliency, and linking VNets using portal, PowerShell, and CLI. |
 | Integrations & Coding Patterns | L128-L134 | Automating ExpressRoute circuit creation/management with PowerShell or Azure CLI, and configuring a site-to-site VPN that runs over ExpressRoute Microsoft peering. |
 | Deployment | L135-L141 | Guides for deploying and migrating ExpressRoute circuits/gateways, understanding Direct SKUs, testing multi-site resiliency, and automating setup with ARM templates, PowerShell, and Terraform. |
 
@@ -96,7 +96,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure BFD over Azure ExpressRoute peering | https://learn.microsoft.com/en-us/azure/expressroute/expressroute-bfd |
 | Configure NAT on Cisco and Juniper for ExpressRoute | https://learn.microsoft.com/en-us/azure/expressroute/expressroute-config-samples-nat |
 | Router interface and BGP configuration samples for ExpressRoute | https://learn.microsoft.com/en-us/azure/expressroute/expressroute-config-samples-routing |
-| Create and manage ExpressRoute virtual network gateways | https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-add-gateway-portal-resource-manager |
+| Configure Azure ExpressRoute virtual network gateway in portal | https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-add-gateway-portal-resource-manager |
 | Manage ExpressRoute virtual network gateways with PowerShell | https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-add-gateway-resource-manager |
 | Add IPv6 support to ExpressRoute private peering | https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-add-ipv6 |
 | Configure coexisting ExpressRoute and S2S VPN connections (classic) | https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-coexist-classic |

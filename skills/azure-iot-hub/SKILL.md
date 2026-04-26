@@ -1,9 +1,9 @@
 ---
 name: azure-iot-hub
-description: Expert knowledge for Azure IoT Hub development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when provisioning devices via DPS, managing twins/jobs/routing, using device streams, or integrating Device Update, and other Azure IoT Hub related development tasks. Not for Azure IoT (use azure-iot), Azure IoT Central (use azure-iot-central), Azure IoT Edge (use azure-iot-edge), Azure Defender For Iot (use azure-defender-for-iot).
+description: Expert knowledge for Azure IoT Hub development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring IoT Hub/DPS, device twins/routing, MQTT/AMQP clients, Cosmos DB event storage, or Device Update, and other Azure IoT Hub related development tasks. Not for Azure IoT (use azure-iot), Azure IoT Central (use azure-iot-central), Azure IoT Edge (use azure-iot-edge), Azure Defender For Iot (use azure-defender-for-iot).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-19"
+  generated_at: "2026-04-26"
   generator: "docs2skills/1.0.0"
 ---
 # Azure IoT Hub Skill
@@ -28,11 +28,11 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L54-L63 | Best practices for secure, scalable IoT Hub/DPS deployments: device provisioning at scale, OEM security, cert renewal/ADR, resilient reconnection, auto device config, and IoT Hub hardening. |
 | Decision Making | L64-L76 | Guidance for choosing IoT Hub vs alternatives, tiers/scale, pricing, routing, comms patterns (C2D/D2C), monitoring methods, and when to use or disable disaster recovery. |
 | Architecture & Design Patterns | L77-L83 | Design patterns for DPS lifecycle/HA/DR, VNet connectivity, secure device streams, and reliably persisting ordered IoT Hub events with Cosmos DB. |
-| Limits & Quotas | L84-L89 | Details on IoT Hub and Device Update service limits, quotas, throttling behavior, and how many devices/operations you can scale to before hitting constraints. |
-| Security | L90-L128 | Securing IoT Hub, DPS, and Device Update: auth (Entra ID, RBAC, SAS, X.509), certificates and revocation, TLS/ciphers, keys, network/IP controls, private endpoints, and Azure Policy compliance. |
-| Configuration | L129-L170 | Configuring IoT Hub and DPS: enroll devices, manage certificates and ADR, set twins, jobs, routing, endpoints, file upload, message enrichments, queries, and monitoring/metrics/logs. |
-| Integrations & Coding Patterns | L171-L195 | Patterns and code samples for connecting devices/DPS to IoT Hub (MQTT/HTTPS/AMQP), managing identities/twins/files, direct methods, C2D messages, bulk ops, and message formats. |
-| Deployment | L196-L207 | Deploying and updating IoT Hubs and devices: region/SKU migration, failover, ARM/Bicep deployments, Device Update (image/package, proxy, OS support), and scheduling jobs via CLI. |
+| Limits & Quotas | L84-L90 | Details on IoT Hub, DPS, and Device Update service limits, quotas, and throttling behaviors, including scale constraints and how operations are restricted under load. |
+| Security | L91-L129 | Securing IoT Hub, DPS, and Device Update: auth (Entra ID, RBAC, SAS, X.509), certificates and revocation, TLS/ciphers, keys, network/IP controls, private endpoints, and Azure Policy compliance. |
+| Configuration | L130-L171 | Configuring IoT Hub and DPS: enroll devices, manage certificates and ADR, set twins, jobs, routing, endpoints, file upload, message enrichments, queries, and monitoring/metrics/logs. |
+| Integrations & Coding Patterns | L172-L196 | Patterns and code samples for connecting devices/DPS to IoT Hub (MQTT/HTTPS/AMQP), managing identities/twins/files, direct methods, C2D messages, bulk ops, and message formats. |
+| Deployment | L197-L208 | Deploying and updating IoT Hubs and devices: region/SKU migration, failover, ARM/Bicep deployments, Device Update (image/package, proxy, OS support), and scheduling jobs via CLI. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -84,6 +84,7 @@ This skill requires **network access** to fetch documentation content:
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
+| Azure IoT DPS FAQ with limits and behaviors | https://learn.microsoft.com/en-us/azure/iot-dps/dps-faq |
 | Review Azure Device Update service limits | https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-limits |
 | Azure IoT Hub quotas, limits, and throttling behavior | https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-quotas-throttling |
 

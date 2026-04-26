@@ -1,9 +1,9 @@
 ---
 name: azure-data-factory
-description: Expert knowledge for Azure Data Factory development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing ADF pipelines, Mapping Data Flows, SHIR/SSIS IR, secure VNet/Private Link setups, or CI/CD deployments, and other Azure Data Factory related development tasks. Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure Databricks (use azure-databricks), Azure Stream Analytics (use azure-stream-analytics), Azure Data Explorer (use azure-data-explorer).
+description: Expert knowledge for Azure Data Factory development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building ADF pipelines, mapping data flows, SHIR/SSIS IR, VNet/Private Link, or CI/CD deployments, and other Azure Data Factory related development tasks. Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure Databricks (use azure-databricks), Azure Stream Analytics (use azure-stream-analytics), Azure Data Explorer (use azure-data-explorer).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-12"
+  generated_at: "2026-04-26"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Data Factory Skill
@@ -31,7 +31,7 @@ This skill requires **network access** to fetch documentation content:
 | Limits & Quotas | L146-L150 | Info on ADF connector lifecycle stages and timelines, plus how reservation discounts work for Mapping Data Flows and how they affect cost and capacity planning |
 | Security | L151-L181 | Securing Data Factory with identity, encryption, Key Vault, and Azure Policy, plus network controls like VNets, Private Link, firewalls, private endpoints, and secure runtimes (Azure-SSIS, self-hosted). |
 | Configuration | L182-L295 | Configuring ADF artifacts and runtime: pipelines, activities, data flows, triggers, copy behavior, formats, IRs (Azure/self-hosted/SSIS), monitoring, logging, parameters, and DevOps setup. |
-| Integrations & Coding Patterns | L296-L482 | Connector how-tos, patterns, and activities for copying/transforming data between ADF and many services (databases, SaaS apps, files, Fabric, Databricks, SSIS, ML, Synapse) using data flows and SDKs. |
+| Integrations & Coding Patterns | L296-L482 | Connector how-tos, patterns, and activities for integrating ADF with dozens of data sources, running external compute (Databricks, Synapse, SSIS, ML), and building mapping data flow transformations. |
 | Deployment | L483-L496 | CI/CD and deployment for ADF: ARM/linked templates, Azure DevOps pipelines, hotfix flows, pre/post scripts, IR automation, SSIS job migration, and networked IR migration. |
 
 ### Troubleshooting
@@ -363,7 +363,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure Azure Data Factory OData connector | https://learn.microsoft.com/en-us/azure/data-factory/connector-odata |
 | Use ODBC connector in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-odbc |
 | Copy and transform Microsoft 365 data with Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-office-365 |
-| Configure Azure Data Factory Oracle connector | https://learn.microsoft.com/en-us/azure/data-factory/connector-oracle |
+| Integrate Azure Data Factory with Oracle databases | https://learn.microsoft.com/en-us/azure/data-factory/connector-oracle |
 | Connect Azure Data Factory to Oracle Cloud Storage | https://learn.microsoft.com/en-us/azure/data-factory/connector-oracle-cloud-storage |
 | Connect Azure Data Factory to Oracle Eloqua | https://learn.microsoft.com/en-us/azure/data-factory/connector-oracle-eloqua |
 | Connect Azure Data Factory to Oracle Responsys | https://learn.microsoft.com/en-us/azure/data-factory/connector-oracle-responsys |

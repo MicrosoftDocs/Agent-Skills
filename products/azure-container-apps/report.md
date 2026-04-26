@@ -1,15 +1,15 @@
 ---
-generated_at: '2026-04-19'
+generated_at: '2026-04-26'
 category_descriptions:
   configuration: 'Configuring Container Apps runtime: networking, ingress, scaling,
     revisions, Dapr, Java features, logging/monitoring, storage mounts, workload profiles,
-    and routing/traffic controls.'
-  security: 'Securing Container Apps: auth (Entra, social, OIDC, mTLS, certs), secrets/MI,
-    network controls (VNet, private endpoints, firewall, WAF), TLS/DNS, and security
-    best practices/policies.'
-  deployment: 'Deploying and automating Container Apps: CI/CD with GitHub Actions/Azure
-    Pipelines, Docker Compose migration, self-hosted runners, and Arc-enabled Kubernetes
-    integration.'
+    and maintenance/alerts.'
+  security: 'Auth, network, and data protection for Container Apps: identity providers,
+    mTLS/client certs, CORS, domains/TLS, secrets, managed identity, private endpoints,
+    firewalls, and security best practices.'
+  deployment: 'Guides for deploying and automating Container Apps: CI/CD with GitHub
+    Actions/Azure Pipelines, Docker Compose, Arc-enabled Kubernetes, cross-region
+    moves, and self-hosted CI runners.'
   decision-making: Guidance on choosing Container Apps plans, compute, GPUs, and hosting
     options, plus cost modeling and migration paths from Functions, Heroku, Java/Spring/Tomcat,
     and other Azure services.
@@ -31,33 +31,33 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Container Apps development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when configuring ingress/scale, securing with Entra/OIDC, wiring Dapr/Spring,
-  or deploying via GitHub Actions, and other Azure Container Apps related development
-  tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure
-  Container Instances (use azure-container-instances), Azure App Service (use azure-app-service),
-  Azure Functions (use azure-functions).
-use_when: Use when configuring ingress/scale, securing with Entra/OIDC, wiring Dapr/Spring,
-  or deploying via GitHub Actions, and other Azure Container Apps related development
-  tasks.
+  Use when configuring ingress/scale, Dapr, managed identity, CI/CD pipelines, or
+  Java microservices on Azure Container Apps, and other Azure Container Apps related
+  development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
+  Azure App Service (use azure-app-service), Azure Functions (use azure-functions),
+  Azure Spring Apps (use azure-spring-apps).
+use_when: Use when configuring ingress/scale, Dapr, managed identity, CI/CD pipelines,
+  or Java microservices on Azure Container Apps, and other Azure Container Apps related
+  development tasks.
 confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
-  Azure Container Instances (use azure-container-instances), Azure App Service (use
-  azure-app-service), Azure Functions (use azure-functions).
+  Azure App Service (use azure-app-service), Azure Functions (use azure-functions),
+  Azure Spring Apps (use azure-spring-apps).
 ---
 # Azure Container Apps Crawl Report
 
 ## Summary
 
-- **Total Pages**: 209
-- **Fetched**: 209
+- **Total Pages**: 211
+- **Fetched**: 211
 - **Fetch Failed**: 0
-- **Classified**: 131
-- **Unclassified**: 78
+- **Classified**: 134
+- **Unclassified**: 77
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 18
-- **Unchanged**: 190
-- **Deleted Pages**: 1
+- **New Pages**: 2
+- **Updated Pages**: 2
+- **Unchanged**: 207
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-container-apps/azure-container-apps.csv`
 
 ## Classification Statistics
@@ -66,63 +66,28 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 |------|-------|------------|
 | architecture-patterns | 3 | 1.4% |
 | best-practices | 3 | 1.4% |
-| configuration | 39 | 18.7% |
-| decision-making | 16 | 7.7% |
-| deployment | 6 | 2.9% |
-| integrations | 19 | 9.1% |
-| limits-quotas | 2 | 1.0% |
-| security | 32 | 15.3% |
-| troubleshooting | 11 | 5.3% |
-| *(Unclassified)* | 78 | 37.3% |
+| configuration | 40 | 19.0% |
+| decision-making | 16 | 7.6% |
+| deployment | 7 | 3.3% |
+| integrations | 19 | 9.0% |
+| limits-quotas | 2 | 0.9% |
+| security | 33 | 15.6% |
+| troubleshooting | 11 | 5.2% |
+| *(Unclassified)* | 77 | 36.5% |
 
 ## Changes
 
 ### New Pages
 
-- [Container exits](https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-container-create-failures)
+- [Relocate to another region](https://learn.microsoft.com/en-us/azure/container-apps/relocate-region)
+- [Manage secrets for Azure Functions on Azure Container Apps](https://learn.microsoft.com/en-us/azure/container-apps/functions-secrets-tutorial)
 
 ### Updated Pages
 
-- [About Azure Container Apps](https://learn.microsoft.com/en-us/azure/container-apps/overview)
-  - Updated: 2025-07-15T17:10:00.000Z → 2026-03-31T08:00:00.000Z
-- [Command line](https://learn.microsoft.com/en-us/azure/container-apps/get-started)
-  - Updated: 2025-02-05T18:02:00.000Z → 2026-04-14T17:11:00.000Z
-- [Authentication](https://learn.microsoft.com/en-us/azure/container-apps/mcp-authentication)
-  - Updated: 2026-02-27T06:11:00.000Z → 2026-04-13T22:10:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/container-apps/sessions)
-  - Updated: 2026-04-06T22:10:00.000Z → 2026-04-14T22:21:00.000Z
-- [AutoGen](https://learn.microsoft.com/en-us/azure/container-apps/sessions-tutorial-autogen)
-  - Updated: 2024-10-11T08:00:00.000Z → 2026-03-31T08:00:00.000Z
-- [Semantic Kernel](https://learn.microsoft.com/en-us/azure/container-apps/sessions-tutorial-semantic-kernel)
-  - Updated: 2024-10-11T08:00:00.000Z → 2026-03-31T08:00:00.000Z
-- [Health probe](https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-health-probe-failures)
-  - Updated: 2025-01-27T23:07:00.000Z → 2026-04-14T22:21:00.000Z
-- [Storage mount](https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-storage-mount-failures)
-  - Updated: 2025-01-27T23:07:00.000Z → 2026-04-14T22:21:00.000Z
-- [Target port](https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-target-port-settings)
-  - Updated: 2025-01-27T23:07:00.000Z → 2026-04-14T22:21:00.000Z
-- [Custom OpenID Connect](https://learn.microsoft.com/en-us/azure/container-apps/authentication-openid)
-  - Updated: 2024-10-16T17:09:00.000Z → 2026-04-14T17:11:00.000Z
-- [Dapr component resiliency](https://learn.microsoft.com/en-us/azure/container-apps/dapr-component-resiliency)
-  - Updated: 2026-02-18T23:18:00.000Z → 2026-03-27T08:00:00.000Z
-- [Connect to Azure or partner services](https://learn.microsoft.com/en-us/azure/container-apps/dapr-component-connect-services)
-  - Updated: 2026-02-12T23:11:00.000Z → 2026-03-27T08:00:00.000Z
-- [Enable token authentication for Dapr requests](https://learn.microsoft.com/en-us/azure/container-apps/dapr-authentication-token)
-  - Updated: 2026-02-12T23:11:00.000Z → 2026-04-16T17:19:00.000Z
-- [Use a custom virtual network](https://learn.microsoft.com/en-us/azure/container-apps/vnet-custom)
-  - Updated: 2025-02-03T08:00:00.000Z → 2026-04-02T08:00:00.000Z
-- [Turn on Java features](https://learn.microsoft.com/en-us/azure/container-apps/java-feature-switch)
-  - Updated: 2024-10-14T11:21:00.000Z → 2026-03-30T08:00:00.000Z
-- [Connect to Eureka Server for Spring](https://learn.microsoft.com/en-us/azure/container-apps/java-eureka-server)
-  - Updated: 2024-11-19T18:02:00.000Z → 2026-03-30T08:00:00.000Z
-- [Connect to Config Server for Spring](https://learn.microsoft.com/en-us/azure/container-apps/java-config-server)
-  - Updated: 2024-11-19T18:02:00.000Z → 2026-03-30T08:00:00.000Z
-- [Connect to Gateway for Spring](https://learn.microsoft.com/en-us/azure/container-apps/java-gateway-for-spring)
-  - Updated: 2024-11-19T18:02:00.000Z → 2026-03-31T08:00:00.000Z
-
-### Deleted Pages
-
-- ~~Container create~~ (https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-container-create-failures)
+- [Custom container sessions](https://learn.microsoft.com/en-us/azure/container-apps/sessions-custom-container)
+  - Updated: 2026-03-13T22:12:00.000Z → 2026-04-24T22:19:00.000Z
+- [Overview](https://learn.microsoft.com/en-us/azure/container-apps/java-overview)
+  - Updated: 2024-11-19T08:00:00.000Z → 2026-04-24T22:19:00.000Z
 
 ## Classified Pages
 
@@ -195,6 +160,7 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Consumption-only environment type](https://learn.microsoft.com/en-us/azure/container-apps/environment-type-consumption-only) | decision-making | 0.70 | Describes features and billing considerations for a specific legacy environment type and when to use it versus newer options, which is environment/tier selection guidance. |
 | [Container debug console](https://learn.microsoft.com/en-us/azure/container-apps/container-debug-console) | troubleshooting | 0.70 | Debug console is a troubleshooting tool; article explains when and how to use it, including platform-specific behavior like one debug container per app. |
 | [Create a highly available Eureka server component cluster](https://learn.microsoft.com/en-us/azure/container-apps/java-eureka-server-highly-available) | architecture-patterns | 0.70 | Focuses on HA design for Eureka using multiple instances and clustering; product-specific pattern for resilience and scaling of the service registry. |
+| [Custom container sessions](https://learn.microsoft.com/en-us/azure/container-apps/sessions-custom-container) | configuration | 0.70 | The page describes how to configure custom container-based session pools in Azure Container Apps, including product-specific settings like container probes for session pools and behavior differences from built-in code interpreter sessions. These are configuration details unique to this feature rather than generic concepts. |
 | [Dapr component resiliency](https://learn.microsoft.com/en-us/azure/container-apps/dapr-component-resiliency) | configuration | 0.70 | Page explains how to configure resiliency policies (retries, timeouts, circuit breakers) for Dapr components in Azure Container Apps. It focuses on product-specific configuration of resiliency settings rather than generic resiliency concepts, matching the configuration category. |
 | [Deploy a frontend microservice app](https://learn.microsoft.com/en-us/azure/container-apps/communicate-between-microservices) | integrations | 0.70 | Tutorial on communication between microservices using FQDNs and ingress modes; contains product-specific networking behavior and patterns. |
 | [Deploy self-hosted CI/CD runners with jobs](https://learn.microsoft.com/en-us/azure/container-apps/tutorial-ci-cd-runners-jobs) | deployment | 0.70 | Shows how to host GitHub Actions runners and Azure Pipelines agents as jobs; includes product-specific job configuration for CI/CD scenarios. |
@@ -209,6 +175,7 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Log monitoring](https://learn.microsoft.com/en-us/azure/container-apps/log-monitoring) | configuration | 0.70 | Covers Log Analytics workspace integration and specific log tables/queries for Container Apps, which are product-specific configuration/usage details. |
 | [Make quota requests](https://learn.microsoft.com/en-us/azure/container-apps/quota-requests) | limits-quotas | 0.70 | Explains how to change default limits; while process-focused, it depends on and references specific quota values and scopes from the platform’s quota system. |
 | [Manage a Functions app](https://learn.microsoft.com/en-us/azure/container-apps/functions-manage) | configuration | 0.70 | Shows CLI commands and parameters to list and interact with functions, including revision targeting; these are product-specific management/configuration commands. |
+| [Manage secrets for Azure Functions on Azure Container Apps](https://learn.microsoft.com/en-us/azure/container-apps/functions-secrets-tutorial) | security | 0.70 | Page focuses on handling app-level secrets and Functions host keys when running Azure Functions inside Azure Container Apps. It describes product-specific security configuration patterns (using Container Apps secrets, Key Vault references, and Functions host key storage/management) that are unique to this integration scenario, going beyond generic concepts. |
 | [Managing outbound connections with Azure Firewall](https://learn.microsoft.com/en-us/azure/container-apps/use-azure-firewall) | security | 0.70 | The article describes product-specific steps to integrate Azure Container Apps with Azure Firewall using user-defined routes, including concrete configuration of routing and firewall usage to secure outbound traffic. This is security-focused configuration guidance with Azure-specific constructs (UDR, virtual network routing, central firewall), which qualifies as expert knowledge beyond generic concepts. |
 | [Migrate Spring Boot applications](https://learn.microsoft.com/en-us/azure/container-apps/migrate-spring-boot) | decision-making | 0.70 | Migration guide for Spring Boot to Azure Container Apps that covers pre-migration assessment and post-migration optimization. This typically includes Azure-specific considerations, trade-offs, and recommendations for how/when to migrate, which are decision-making and migration-path guidance beyond generic concepts. |
 | [Migrate Spring Cloud applications](https://learn.microsoft.com/en-us/azure/container-apps/migrate-spring-cloud) | decision-making | 0.70 | Explains what to be aware of when migrating Spring Cloud applications to Azure Container Apps, implying Azure- and Spring-Cloud-specific considerations and trade-offs. This is migration decision guidance rather than a simple tutorial, fitting decision-making with product-specific nuances. |
@@ -239,6 +206,7 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Communicate between multiple apps](https://learn.microsoft.com/en-us/azure/container-apps/connect-apps) | integrations | 0.68 | The page describes product-specific communication patterns between container apps in the same Azure Container Apps environment, including use of FQDNs, app names, Dapr service invocation, and custom domains. These are concrete, platform-specific integration patterns and routing behaviors that go beyond generic container networking knowledge, fitting the integrations sub-skill best. |
 | [Migrate Java with GitHub Copilot app modernization](https://learn.microsoft.com/en-us/azure/container-apps/migrate-java-github-copilot-app-modernization) | decision-making | 0.68 | Describes using GitHub Copilot app modernization with Azure Container Apps, including supported Java versions and frameworks and how to approach upgrades and migration. This is specialized migration and tool-selection guidance with product-specific constraints (e.g., supported Java versions). |
 | [Private endpoints and DNS](https://learn.microsoft.com/en-us/azure/container-apps/private-endpoints-with-dns) | security | 0.68 | The page is focused on configuring private endpoints and DNS for Azure Container Apps environments, which is a product-specific security and network access configuration scenario. It likely includes concrete settings such as required DNS zone names, record patterns, and environment-specific configuration steps for private endpoints and virtual networks. This aligns best with the security sub-skill, as it covers secure connectivity and private access configuration rather than generic networking concepts. |
+| [Relocate to another region](https://learn.microsoft.com/en-us/azure/container-apps/relocate-region) | deployment | 0.68 | Describes a product-specific, non-obvious deployment/migration pattern for Azure Container Apps between regions, including the fact that in-place region migration is not supported and that workloads must be recreated in the target region. This is concrete, service-specific deployment/migration guidance rather than a generic tutorial. |
 | [Securing a custom VNET with an NSG](https://learn.microsoft.com/en-us/azure/container-apps/firewall-integration) | security | 0.68 | Page focuses on concrete network security configuration for Azure Container Apps environments, including NSGs, user-defined routes, and firewall-secured outbound traffic. These are product-specific security settings and patterns that go beyond generic concepts, matching the security sub-skill criteria. |
 | [Blue/Green deployment](https://learn.microsoft.com/en-us/azure/container-apps/blue-green-deployment) | best-practices | 0.66 | Applies blue-green deployment strategy specifically to Container Apps, including how to route traffic between environments/revisions, which is actionable product-specific practice beyond generic theory. |
 | [Alerts](https://learn.microsoft.com/en-us/azure/container-apps/alerts) | configuration | 0.65 | Shows how to configure metric and log-based alerts for Container Apps; includes product-specific alert rule configuration steps. |
@@ -304,7 +272,6 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Build a Java metrics dashboard with Azure Managed Grafana](https://learn.microsoft.com/en-us/azure/container-apps/java-metrics-with-grafana) | 0.30 | Tutorial on building a Java metrics dashboard with Azure Managed Grafana. From the summary, it appears to be a step-by-step example, not a reference of configuration options, limits, or troubleshooting mappings. |
 | [Code interpreter sessions](https://learn.microsoft.com/en-us/azure/container-apps/sessions-code-interpreter) | 0.30 | Describes serverless code interpreter sessions and isolation model; appears to be a usage/tutorial-style article without explicit limits, configuration matrices, or detailed troubleshooting mappings. |
 | [Containers](https://learn.microsoft.com/en-us/azure/container-apps/containers) | 0.30 | General overview of containers and jobs in Container Apps; summary doesn’t indicate detailed config tables or limits. |
-| [Custom container sessions](https://learn.microsoft.com/en-us/azure/container-apps/sessions-custom-container) | 0.30 | Explains using custom containers for dynamic sessions and notes scope limitations, but summary does not show concrete configuration tables, numeric limits, or error-resolution content. |
 | [Deploy using ARM or Bicep](https://learn.microsoft.com/en-us/azure/container-apps/microservices-dapr-azure-resource-manager) | 0.30 | Quickstart using ARM/Bicep; focused on example deployment rather than comprehensive configuration reference or limits. |
 | [Deploy using Azure CLI](https://learn.microsoft.com/en-us/azure/container-apps/microservices-dapr) | 0.30 | Quickstart deployment tutorial; mainly step-by-step usage of CLI without emphasis on reusable configuration matrices or expert-only details. |
 | [Dockerfile](https://learn.microsoft.com/en-us/azure/container-apps/java-get-started-dockerfile) | 0.30 | Step-by-step tutorial deploying a sample via Dockerfile; likely uses generic commands without deep config matrices or limits. |
@@ -333,11 +300,11 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Modernize .NET & Java apps](https://learn.microsoft.com/en-us/azure/container-apps/modernize-ai) | 0.20 | High-level modernization and Copilot tooling overview; no indication of concrete limits, configs, or error mappings. |
 | [Overview](https://learn.microsoft.com/en-us/azure/container-apps/ai-integration) | 0.20 | High-level overview of AI workloads on Azure Container Apps; summary suggests examples and scenarios but no indication of numeric limits, config tables, error codes, or decision matrices. |
 | [Overview](https://learn.microsoft.com/en-us/azure/container-apps/dotnet-overview) | 0.20 | High-level .NET overview for Container Apps; primarily conceptual guidance and positioning without detailed config tables or limits. |
-| [Overview](https://learn.microsoft.com/en-us/azure/container-apps/java-overview) | 0.20 | Java overview content describing benefits and options; lacks detailed configuration parameters or quotas. |
 | [Overview](https://learn.microsoft.com/en-us/azure/container-apps/javascript-overview) | 0.20 | High-level JavaScript overview; mostly conceptual and marketing-style description of capabilities. |
 | [About Azure Container Apps](https://learn.microsoft.com/en-us/azure/container-apps/overview) | 0.10 | High-level overview of Azure Container Apps scenarios and benefits; no specific limits, configs, error codes, or decision matrices. |
 | [Introduction to containers](https://learn.microsoft.com/en-us/azure/container-apps/java-containers-intro) | 0.10 | Intro to containers for Java is conceptual and generic; not specific to Container Apps configuration or limits. |
 | [Introduction to containers](https://learn.microsoft.com/en-us/azure/container-apps/start-containers) | 0.10 | Introductory explanation of containers and motivations; no product-specific limits, configs, or troubleshooting content. |
+| [Overview](https://learn.microsoft.com/en-us/azure/container-apps/java-overview) | 0.10 | High-level overview of running Java on Azure Container Apps with benefits and general deployment options; no specific limits, configuration tables, error codes, or decision matrices that meet the expert-knowledge criteria. |
 | [Samples](https://learn.microsoft.com/en-us/azure/container-apps/samples) | 0.10 | Index page listing sample scenarios; primarily navigation to other content. No indication of limits, configuration tables, troubleshooting mappings, or decision matrices. |
 | [Use serverless containers](https://learn.microsoft.com/en-us/azure/container-apps/start-serverless-containers) | 0.10 | Conceptual overview of serverless containers and scaling; lacks specific configuration parameters or numeric thresholds. |
 | [What's new](https://learn.microsoft.com/en-us/azure/container-apps/whats-new) | 0.10 | What's new page is a changelog/announcements; not a stable expert-knowledge reference for configuration, limits, or troubleshooting. |

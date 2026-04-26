@@ -1,9 +1,9 @@
 ---
 name: azure-database-mysql
-description: Expert knowledge for Azure Database for MySQL development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when planning MySQL Flexible Server HA/BCDR, CI/CD deployments, VNet/Private Link, read replicas, or AKS connectivity, and other Azure Database for MySQL related development tasks. Not for Azure Database for MariaDB (use azure-database-mariadb), Azure Database for PostgreSQL (use azure-database-postgresql), Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance).
+description: Expert knowledge for Azure Database for MySQL development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when deploying MySQL Flexible Server, configuring VNet/Private Link, HA/read replicas, backups/restore, or AKS connectivity, and other Azure Database for MySQL related development tasks. Not for Azure Database for MariaDB (use azure-database-mariadb), Azure Database for PostgreSQL (use azure-database-postgresql), Azure SQL Database (use azure-sql-database), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-19"
+  generated_at: "2026-04-26"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Database for MySQL Skill
@@ -26,7 +26,7 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L37-L53 | Diagnosing and fixing MySQL Flexible Server issues: connectivity, performance (CPU/memory/queries), errors, corruption, capacity, replication lag, CLI problems, and using logs/self-heal tools |
 | Best Practices | L54-L71 | Best practices for monitoring, performance tuning, troubleshooting, safe operations, BCDR, and end-to-end migration/optimization for Azure Database for MySQL Flexible Server |
-| Decision Making | L72-L89 | Guidance on MySQL Flexible Server planning: version lifecycle, HA/BCDR, performance features, sizing and pricing, and assessing, choosing methods for, and executing migrations to Azure. |
+| Decision Making | L72-L89 | Guidance on MySQL version planning, HA/BCDR choices, sizing and tiers, performance features, and end-to-end migration/upgrade strategies to Azure Database for MySQL. |
 | Architecture & Design Patterns | L90-L97 | Patterns for connecting AKS to MySQL Flexible Server, designing backup/restore, data-in/out replication, high availability (zone-redundant), and read-replica-based scaling. |
 | Limits & Quotas | L98-L106 | Limits, quotas, and performance caps for MySQL Flexible Server: compute/storage/IOPS limits, quota increase process, restore retention limits, and stop/start duration constraints. |
 | Security | L107-L133 | Securing Azure Database for MySQL Flexible Server: network isolation (Private Link, firewalls), TLS and cert rotation, encryption, Entra auth, users, and audit logging before/after migration. |
@@ -72,7 +72,7 @@ This skill requires **network access** to fetch documentation content:
 ### Decision Making
 | Topic | URL |
 |-------|-----|
-| Plan for Azure Database for MySQL version lifecycle | https://learn.microsoft.com/en-us/azure/mysql/concepts-version-policy |
+| Plan MySQL version lifecycle on Azure Database | https://learn.microsoft.com/en-us/azure/mysql/concepts-version-policy |
 | Choose and purchase MySQL Flexible Server reserved capacity | https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concept-reserved-pricing |
 | Use accelerated logs for high-performance MySQL workloads | https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-accelerated-logs |
 | Plan business continuity for MySQL Flexible Server | https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-business-continuity |

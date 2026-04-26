@@ -1,9 +1,9 @@
 ---
 name: azure-vmware-solution
-description: Expert knowledge for Azure VMware Solution development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing AVS networking/storage, HCX migrations, Citrix/Horizon VDI, JetStream DR, or NetApp Files integrations, and other Azure VMware Solution related development tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Machine Scale Sets (use azure-vm-scalesets), Azure Stack Edge (use azure-stack-edge), Azure Baremetal Infrastructure (use azure-baremetal-infrastructure).
+description: Expert knowledge for Azure VMware Solution development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring AVS networking/vSAN, HCX migration/DR, Citrix/Horizon desktops, Defender for Cloud, or Cloud Director, and other Azure VMware Solution related development tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Machine Scale Sets (use azure-vm-scalesets), Azure Stack Edge (use azure-stack-edge), Azure Migrate (use azure-migrate).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-19"
+  generated_at: "2026-04-26"
   generator: "docs2skills/1.0.0"
 ---
 # Azure VMware Solution Skill
@@ -24,21 +24,21 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L43 | Diagnosing and fixing Azure VMware Solution issues: deployment failures, known platform errors, and disaster recovery problems (replication, failover, and recovery). |
+| Troubleshooting | L37-L43 | Diagnosing and fixing AVS issues: known errors and workarounds, deployment failures, and disaster recovery problems for Azure VMware Solution VMs. |
 | Best Practices | L44-L51 | Best practices for AVS private cloud maintenance, security hardening, and tuning NSX scale/performance specifically for HCX migration scenarios. |
 | Decision Making | L52-L65 | Guidance on choosing AVS connectivity, migration tools, backup and storage options, SQL/Windows licensing, cross-region moves, reserved instances, and VMware Cloud Foundation subscriptions. |
 | Architecture & Design Patterns | L66-L76 | Network, storage, and desktop virtualization design for AVS: hub-spoke integration, vSAN/stretched clusters, Citrix/Horizon, GitHub Enterprise Server, and Cloud Director tenant networking. |
 | Limits & Quotas | L77-L88 | Host, cluster, capacity, and quota limits for AVS private clouds, plus vSAN ESA support, Gen2 routing limits, and required network ports and planning steps. |
 | Security | L89-L103 | Securing AVS: identity/access control, Defender for Cloud, vSAN CMK encryption, external LDAP/vCenter identity, Trusted Launch/vTPM, ESU, role assignments, app protection, and credential rotation. |
-| Configuration | L104-L142 | Configuring AVS environments: networking, storage, backup/DR, monitoring, DNS, SNAT, vSAN, Cloud Director, Arc, and integrations like NetApp, Elastic SAN, Pure, and Aria Operations. |
-| Integrations & Coding Patterns | L143-L154 | Networking, migration, and integration patterns for AVS: VPN/ExpressRoute, HCX migrations, Traffic Manager, monitoring/logging, backup, and using services like NetApp Files with AVS VMs |
+| Configuration | L104-L140 | Configuring AVS environments: networking, storage, backup/DR, monitoring, DNS, SNAT, vSAN, Cloud Director, Arc, and integrations like NetApp, Elastic SAN, Pure, and Aria Operations. |
+| Integrations & Coding Patterns | L141-L154 | Patterns for connecting AVS to Azure services: storage (Elastic SAN, ANF), networking/VPN, HCX migration/DR, backups, monitoring/logging, and automation via HCX Run Commands. |
 | Deployment | L155-L160 | Guides for deploying AVS workloads: Citrix Virtual Apps/Desktops, JetStream DR for AVS/on-prem, and integrating VMware Cloud Director service with Azure VMware Solution. |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
 | Resolve Azure VMware Solution known issues and workarounds | https://learn.microsoft.com/en-us/azure/azure-vmware/azure-vmware-solution-known-issues |
-| Resolve disaster recovery issues in Azure VMware | https://learn.microsoft.com/en-us/azure/azure-vmware/ecosystem-disaster-recovery-vms |
+| Resolve disaster recovery issues for AVS virtual machines | https://learn.microsoft.com/en-us/azure/azure-vmware/ecosystem-disaster-recovery-vms |
 | Troubleshoot Azure VMware Solution deployment failures | https://learn.microsoft.com/en-us/azure/azure-vmware/fix-deployment-failures |
 
 ### Best Practices
@@ -111,7 +111,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure Cloud Backup policies for AVS datastores and VMs | https://learn.microsoft.com/en-us/azure/azure-vmware/backup-azure-netapp-files-datastores-vms |
 | Back up AVS VMware virtual machines with Azure Backup Server | https://learn.microsoft.com/en-us/azure/azure-vmware/backup-azure-vmware-solution-virtual-machines |
 | Configure alerts and metrics monitoring for Azure VMware Solution | https://learn.microsoft.com/en-us/azure/azure-vmware/configure-alerts-for-azure-vmware-solution |
-| Use Azure Elastic SAN as AVS iSCSI datastores | https://learn.microsoft.com/en-us/azure/azure-vmware/configure-azure-elastic-san |
 | Create Azure Monitor resource health alerts for AVS | https://learn.microsoft.com/en-us/azure/azure-vmware/configure-azure-monitor-for-resource-health-for-azure-vmware-solution |
 | Use Azure Native Pure Storage Cloud with AVS | https://learn.microsoft.com/en-us/azure/azure-vmware/configure-azure-native-pure-storage-cloud |
 | Configure Azure VMware Solution performance and health metrics | https://learn.microsoft.com/en-us/azure/azure-vmware/configure-azure-vmware-solution-metrics |
@@ -128,7 +127,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure Windows Server Failover Cluster on AVS vSAN | https://learn.microsoft.com/en-us/azure/azure-vmware/configure-windows-server-failover-cluster |
 | Create and manage AVS placement policies for VMs | https://learn.microsoft.com/en-us/azure/azure-vmware/create-placement-policy |
 | Deploy VMware Cloud Director Availability on AVS | https://learn.microsoft.com/en-us/azure/azure-vmware/deploy-vmware-cloud-director-availability-in-azure-vmware-solution |
-| Deploy VMware Site Recovery Manager for AVS disaster recovery | https://learn.microsoft.com/en-us/azure/azure-vmware/disaster-recovery-using-vmware-site-recovery-manager |
 | Configure Managed SNAT for Azure VMware workloads | https://learn.microsoft.com/en-us/azure/azure-vmware/enable-managed-snat-for-workloads |
 | Configure default routes and disable internet for Azure VMware Solution | https://learn.microsoft.com/en-us/azure/azure-vmware/enable-public-ip-nsx-edge |
 | Configure Azure Hybrid Benefit Unlimited Virtualization for SQL on AVS | https://learn.microsoft.com/en-us/azure/azure-vmware/enable-sql-azure-hybrid-benefit |
@@ -143,7 +141,9 @@ This skill requires **network access** to fetch documentation content:
 ### Integrations & Coding Patterns
 | Topic | URL |
 |-------|-----|
+| Configure Azure Elastic SAN as AVS iSCSI datastore | https://learn.microsoft.com/en-us/azure/azure-vmware/configure-azure-elastic-san |
 | Configure site-to-site VPN with Azure Virtual WAN for Azure VMware Solution | https://learn.microsoft.com/en-us/azure/azure-vmware/configure-port-mirroring-azure-vmware-solution |
+| Deploy VMware Site Recovery Manager for AVS DR | https://learn.microsoft.com/en-us/azure/azure-vmware/disaster-recovery-using-vmware-site-recovery-manager |
 | Enable HCX migrations over public internet for AVS | https://learn.microsoft.com/en-us/azure/azure-vmware/enable-hcx-access-over-internet |
 | Install Cloud Backup plug-in for Azure VMware VMs | https://learn.microsoft.com/en-us/azure/azure-vmware/install-cloud-backup-virtual-machines |
 | Integrate Azure Native Monitoring and Protection with AVS VMs | https://learn.microsoft.com/en-us/azure/azure-vmware/integrate-azure-native-services |

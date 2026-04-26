@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-12'
+generated_at: '2026-04-26'
 category_descriptions:
   deployment: 'Deploying and managing Synapse workspaces and dedicated SQL pools:
     ARM/Bicep templates, CI/CD, source control, restore points, maintenance windows,
@@ -22,22 +22,22 @@ category_descriptions:
   troubleshooting: 'Diagnosing and fixing Synapse issues: workspace/tenant moves,
     Spark jobs and libraries, SQL pools and queries, Synapse Link, Studio/storage
     connectivity, and common errors/timeouts.'
-  integrations: Patterns and code to integrate Synapse (Spark, serverless, dedicated
-    SQL) with ADLS, Cosmos DB, Azure SQL, AML, monitoring (Log Analytics, Prometheus),
-    and external tools via connectors, REST, and T-SQL.
+  integrations: Integrating Synapse with Spark, SQL pools, ML, Cosmos DB, ADLS, Kusto,
+    Stream Analytics, and tools (Fivetran, Striim), plus logging/monitoring, packaging,
+    and data movement patterns.
   limits-quotas: 'Synapse SQL pool limits: maintenance windows, memory/concurrency
     by performance level, capacity caps, temp table behavior, serverless Delta Lake
     v1 querying, and Synapse Link feature limits/issues.'
 skill_description: Expert knowledge for Azure Synapse Analytics development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when designing Synapse workspaces, Spark pools, dedicated/serverless SQL, Delta
-  Lake, or Synapse Link workloads, and other Azure Synapse Analytics related development
+  Use when working with Synapse workspaces, Spark pools, dedicated/serverless SQL
+  pools, Synapse Link, or Delta Lake, and other Azure Synapse Analytics related development
   tasks. Not for Azure Data Factory (use azure-data-factory), Azure Data Explorer
   (use azure-data-explorer), Azure Databricks (use azure-databricks), Azure HDInsight
   (use azure-hdinsight).
-use_when: Use when designing Synapse workspaces, Spark pools, dedicated/serverless
-  SQL, Delta Lake, or Synapse Link workloads, and other Azure Synapse Analytics related
+use_when: Use when working with Synapse workspaces, Spark pools, dedicated/serverless
+  SQL pools, Synapse Link, or Delta Lake, and other Azure Synapse Analytics related
   development tasks.
 confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure Data
   Explorer (use azure-data-explorer), Azure Databricks (use azure-databricks), Azure
@@ -47,14 +47,14 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure D
 
 ## Summary
 
-- **Total Pages**: 446
-- **Fetched**: 446
+- **Total Pages**: 447
+- **Fetched**: 447
 - **Fetch Failed**: 0
-- **Classified**: 260
+- **Classified**: 261
 - **Unclassified**: 186
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
 - **Unchanged**: 446
 - **Deleted Pages**: 0
@@ -69,13 +69,17 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure D
 | configuration | 45 | 10.1% |
 | decision-making | 16 | 3.6% |
 | deployment | 11 | 2.5% |
-| integrations | 33 | 7.4% |
+| integrations | 34 | 7.6% |
 | limits-quotas | 6 | 1.3% |
 | security | 55 | 12.3% |
 | troubleshooting | 22 | 4.9% |
-| *(Unclassified)* | 186 | 41.7% |
+| *(Unclassified)* | 186 | 41.6% |
 
 ## Changes
+
+### New Pages
+
+- [Collect Apache Spark Application Logs and Metrics to Azure Storage Account Using Certificate-Based Service Principal Authentication](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/how-to-use-certificate-with-service-principal-for-log-storage)
 
 ## Classified Pages
 
@@ -199,6 +203,7 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure D
 | [Browse an ADLS Gen2 folder with ACLs](https://learn.microsoft.com/en-us/azure/synapse-analytics/how-to-access-container-with-access-control-lists) | security | 0.70 | Focuses on using ACLs instead of account-level roles; likely includes specific RBAC roles, ACL entries, and security configuration details. |
 | [CETAS](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-tables-cetas) | integrations | 0.70 | CETAS syntax and options for Synapse SQL are product-specific; includes detailed T-SQL patterns and storage-related options that go beyond generic SQL knowledge. |
 | [COPY statement examples](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/quickstart-bulk-load-copy-tsql-examples) | security | 0.70 | Focuses on authentication mechanisms for COPY with concrete examples; likely includes specific auth options, parameters, and secure configuration patterns unique to Synapse COPY. |
+| [Collect Apache Spark Application Logs and Metrics to Azure Storage Account Using Certificate-Based Service Principal Authentication](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/how-to-use-certificate-with-service-principal-for-log-storage) | integrations | 0.70 | Page describes product-specific integration of Synapse Spark with Azure Storage and Key Vault using the Apache Spark diagnostic emitter extension and certificate-based service principal authentication, including concrete configuration steps and parameters unique to this integration scenario. |
 | [Collect Apache Spark applications logs and metrics with Azure Event Hubs](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/azure-synapse-diagnostic-emitters-azure-eventhub) | integrations | 0.70 | Similar to Storage article but for Event Hubs; likely includes connection string formats, Event Hubs-specific emitter settings, and usage patterns. |
 | [Collect Apache Spark applications logs and metrics with Azure Storage account](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/azure-synapse-diagnostic-emitters-azure-storage) | integrations | 0.70 | Uses diagnostic emitter extension; expected to document library config keys, destinations, and constraints for sending logs/metrics to Storage. |
 | [Collect Apache Spark applications metrics using APIs](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/connect-monitor-azure-synapse-spark-application-level-metrics) | integrations | 0.70 | Tutorial for integrating Synapse Spark with on-prem Prometheus; likely includes connector configuration parameters, endpoints, and product-specific integration details. |

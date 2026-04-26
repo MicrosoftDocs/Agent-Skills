@@ -1,9 +1,9 @@
 ---
 name: azure-managed-lustre
-description: Expert knowledge for Azure Managed Lustre development including troubleshooting, best practices, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when mounting AMLFS, integrating with Blob auto-import/export, using AKS CSI, setting CMK/root squash, or tuning performance, and other Azure Managed Lustre related development tasks. Not for Azure HPC Cache (use azure-hpc-cache), Azure NetApp Files (use azure-netapp-files), Azure Blob Storage (use azure-blob-storage), Azure Elastic SAN (use azure-elastic-san).
+description: Expert knowledge for Azure Managed Lustre development including troubleshooting, best practices, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when deploying AMLFS with Blob auto-import/export, Terraform, AKS CSI, quotas, or HA/DR failover, and other Azure Managed Lustre related development tasks. Not for Azure HPC Cache (use azure-hpc-cache), Azure NetApp Files (use azure-netapp-files), Azure Blob Storage (use azure-blob-storage), Azure Elastic SAN (use azure-elastic-san).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-05"
+  generated_at: "2026-04-26"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Managed Lustre Skill
@@ -24,7 +24,7 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L40 | Diagnosing and resolving Azure Managed Lustre deployment failures and performance issues, including cluster provisioning errors, throughput/latency problems, and tuning guidance. |
+| Troubleshooting | L35-L40 | Diagnosing and resolving Azure Managed Lustre issues, including cluster deployment failures, configuration problems, and performance bottlenecks or slow I/O. |
 | Best Practices | L41-L46 | Guidance on tuning Azure Managed Lustre performance via optimal file/directory layout, client striping, and network setup (NICs, throughput, latency, and scaling). |
 | Architecture & Design Patterns | L47-L51 | Designing Azure Managed Lustre for high availability, regional redundancy, disaster recovery, and failover strategies across regions or zones |
 | Limits & Quotas | L52-L56 | Configuring and managing user, group, and project storage quotas in Azure Managed Lustre, including setup steps, commands, and best practices for capacity control. |

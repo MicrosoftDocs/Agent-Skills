@@ -1,9 +1,12 @@
 ---
-generated_at: '2026-04-19'
+generated_at: '2026-04-26'
 category_descriptions:
   security: 'Securing Azure Container Registry: auth methods, RBAC/ABAC and tokens,
     network isolation (firewall, Private Link, IP/service tags), data exfiltration
     controls, image signing/verification, and policy/compliance.'
+  integrations: Patterns and code samples for integrating ACR with AKS/ACI, GitHub
+    Actions, ORAS, Helm, Notation signing, webhooks, artifact caching, transfers,
+    and image import/build workflows.
   configuration: 'Configuring ACR behavior: caching, purge/retention/soft delete,
     delete locks, tasks (YAML, timers, multi-step, patching, agent pools), webhooks,
     wildcard cache rules, and monitoring.'
@@ -11,9 +14,6 @@ category_descriptions:
     and migrating image signing from Docker Content Trust to Notary Project.
   best-practices: 'Best practices for ACR operations: managing public image dependencies,
     safe image deletion and storage cleanup, and robust image tagging/versioning strategies.'
-  integrations: How to integrate ACR with ACI, AKS, Helm, ORAS, Buildpacks, ACR Transfer,
-    GitHub Actions, Notation, Key Vault, and webhooks for image access, builds, signing,
-    and automation
   troubleshooting: 'Diagnosing and fixing ACR issues: health checks, error codes,
     login/auth, network and performance problems, transfer/streaming/cache failures,
     logs, Arc/connected registry, and CMK encryption.'
@@ -29,12 +29,12 @@ skill_description: Expert knowledge for Azure Container Registry development inc
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
   Use when using ACR Tasks, geo-replication, Private Link, connected registries, or
-  image signing with Notation, and other Azure Container Registry related development
+  image signing/verification, and other Azure Container Registry related development
   tasks. Not for Azure Container Apps (use azure-container-apps), Azure Container
   Instances (use azure-container-instances), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
   Azure Red Hat OpenShift (use azure-redhat-openshift).
 use_when: Use when using ACR Tasks, geo-replication, Private Link, connected registries,
-  or image signing with Notation, and other Azure Container Registry related development
+  or image signing/verification, and other Azure Container Registry related development
   tasks.
 confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azure
   Container Instances (use azure-container-instances), Azure Kubernetes Service (AKS)
@@ -44,16 +44,16 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 
 ## Summary
 
-- **Total Pages**: 122
-- **Fetched**: 122
+- **Total Pages**: 123
+- **Fetched**: 123
 - **Fetch Failed**: 0
-- **Classified**: 88
+- **Classified**: 89
 - **Unclassified**: 34
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 121
+- **New Pages**: 1
+- **Updated Pages**: 0
+- **Unchanged**: 122
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-container-registry/azure-container-registry.csv`
 
@@ -63,21 +63,20 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 |------|-------|------------|
 | architecture-patterns | 2 | 1.6% |
 | best-practices | 4 | 3.3% |
-| configuration | 14 | 11.5% |
-| decision-making | 3 | 2.5% |
-| deployment | 3 | 2.5% |
-| integrations | 12 | 9.8% |
+| configuration | 14 | 11.4% |
+| decision-making | 3 | 2.4% |
+| deployment | 3 | 2.4% |
+| integrations | 13 | 10.6% |
 | limits-quotas | 2 | 1.6% |
-| security | 36 | 29.5% |
+| security | 36 | 29.3% |
 | troubleshooting | 12 | 9.8% |
-| *(Unclassified)* | 34 | 27.9% |
+| *(Unclassified)* | 34 | 27.6% |
 
 ## Changes
 
-### Updated Pages
+### New Pages
 
-- [Overview](https://learn.microsoft.com/en-us/azure/container-registry/artifact-cache-overview)
-  - Updated: 2025-12-01T23:09:00.000Z → 2026-04-14T22:12:00.000Z
+- [Enable artifact cache from another ACR registry](https://learn.microsoft.com/en-us/azure/container-registry/artifact-cache-acr-to-acr-cli)
 
 ## Classified Pages
 
@@ -153,6 +152,7 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | [Use ACR webhooks](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-webhook) | integrations | 0.70 | Webhooks require specific payload formats, event types, and configuration parameters unique to ACR; this is an integration pattern with external services. |
 | [Validate container image signatures in AKS with Ratify and Azure Policy](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-tutorial-verify-with-ratify-aks) | security | 0.70 | Shows concrete configuration of Ratify and Azure Policy on AKS clusters, including policy setup and verification behavior specific to ACR/AKS, which is product-specific security configuration. |
 | [Wildcard support](https://learn.microsoft.com/en-us/azure/container-registry/wildcards-artifact-cache) | configuration | 0.70 | Describes supported wildcard patterns for artifact cache rules, mapping target to source repositories. This is product-specific configuration behavior (which wildcard syntaxes are supported and how they apply), fitting configuration. |
+| [Enable artifact cache from another ACR registry](https://learn.microsoft.com/en-us/azure/container-registry/artifact-cache-acr-to-acr-cli) | integrations | 0.68 | The article describes a product-specific integration pattern between two Azure Container Registries using managed identity, Azure CLI, and Bicep. It includes concrete configuration steps and parameters (identity-based auth between upstream and downstream registries) that are specific to Azure Container Registry’s artifact cache feature, which go beyond generic container registry knowledge. |
 | [ACR Transfer with Az CLI](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-transfer-cli) | integrations | 0.65 | CLI-focused guide for ACR Transfer using the acrtransfer extension; likely documents specific CLI commands and parameters unique to this feature, matching integrations & coding patterns. |
 | [About connected registry](https://learn.microsoft.com/en-us/azure/container-registry/intro-connected-registry) | architecture-patterns | 0.65 | Describes connected registry feature, scenarios, and when to use on-prem/remote replicas; includes ACR-specific architectural pattern. |
 | [Build image with Buildpacks (preview)](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-tasks-pack-build) | integrations | 0.65 | Shows product-specific CLI command (az acr pack build) and its parameters to integrate Cloud Native Buildpacks with ACR, which is an integration/coding pattern. |

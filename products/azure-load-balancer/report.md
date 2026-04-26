@@ -51,10 +51,10 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 - **Unclassified**: 46
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 3
-- **Unchanged**: 83
-- **Deleted Pages**: 8
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 87
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-load-balancer/azure-load-balancer.csv`
 
 ## Classification Statistics
@@ -73,30 +73,6 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | *(Unclassified)* | 46 | 52.9% |
 
 ## Changes
-
-### New Pages
-
-- [Support and troubleshooting for Azure Load Balancer](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-support-help)
-
-### Updated Pages
-
-- [Retrieve metadata using the Azure IMDS](https://learn.microsoft.com/en-us/azure/load-balancer/howto-load-balancer-imds)
-  - Updated: 2026-01-29T08:00:00.000Z → 2026-04-14T22:21:00.000Z
-- [Retrieve information using the Azure Instance Metadata Service](https://learn.microsoft.com/en-us/azure/load-balancer/instance-metadata-service-load-balancer)
-  - Updated: 2026-01-29T08:00:00.000Z → 2026-04-14T22:21:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-faqs)
-  - Updated: 2026-02-23T23:22:00Z → 2026-04-14T22:21:00Z
-
-### Deleted Pages
-
-- ~~Common deployment errors~~ (https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-common-deployment-errors)
-- ~~Troubleshoot Azure Load Balancer~~ (https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-troubleshoot)
-- ~~Backend pool (VM) traffic~~ (https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-troubleshoot-backend-traffic)
-- ~~Troubleshoot load balancer health event logs~~ (https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-troubleshoot-health-event-logs)
-- ~~Health Probe status~~ (https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-troubleshoot-health-probe-status)
-- ~~Common error codes for Azure Instance Metadata Service (IMDS)~~ (https://learn.microsoft.com/en-us/azure/load-balancer/troubleshoot-load-balancer-imds)
-- ~~Troubleshoot SNAT exhaustion and connection timeouts~~ (https://learn.microsoft.com/en-us/azure/load-balancer/troubleshoot-outbound-connection)
-- ~~Resource health and inbound availability issues~~ (https://learn.microsoft.com/en-us/azure/load-balancer/troubleshoot-rhc)
 
 ## Classified Pages
 

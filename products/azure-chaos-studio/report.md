@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-04-26'
 category_descriptions:
   security: 'Securing Chaos Studio: identities, roles, permissions, CMK encryption,
     network/IP controls, Private Link, VNet injection, AKS auth, and safely controlling
     experiment targets/capabilities.'
-  configuration: 'Configuring Chaos Studio: ARM/Bicep experiment definitions, deploying
-    agents/targets, parameters, Azure Monitor/Workbook integration, OS/tool compatibility,
-    and onboarding via Azure Policy'
+  configuration: 'Configuring Chaos Studio: deploy agents/targets via ARM/Bicep/Policy,
+    define experiments and parameters, set up monitoring with Azure Monitor/Workbooks,
+    and verify OS/tool compatibility.'
   troubleshooting: Diagnosing and fixing Chaos Studio and Chaos Agent issues, including
     installation/health problems, VM agent status checks, known errors, and common
     experiment or connectivity failures.
@@ -17,12 +17,13 @@ category_descriptions:
     experiments into automated workflows
 skill_description: Expert knowledge for Chaos Studio development including troubleshooting,
   limits & quotas, security, configuration, and integrations & coding patterns. Use
-  when defining ARM/Bicep experiments, deploying Chaos Agents, using CLI/REST, or
-  integrating with Azure Monitor, and other Chaos Studio related development tasks.
-  Not for Azure Monitor (use azure-monitor), Azure Resiliency (use azure-resiliency),
+  when securing Chaos Studio targets, deploying agents via ARM/Policy, configuring
+  experiments, or using CLI/REST APIs, and other Chaos Studio related development
+  tasks. Not for Azure Monitor (use azure-monitor), Azure Resiliency (use azure-resiliency),
   Azure Reliability (use azure-reliability), Azure Site Recovery (use azure-site-recovery).
-use_when: Use when defining ARM/Bicep experiments, deploying Chaos Agents, using CLI/REST,
-  or integrating with Azure Monitor, and other Chaos Studio related development tasks.
+use_when: Use when securing Chaos Studio targets, deploying agents via ARM/Policy,
+  configuring experiments, or using CLI/REST APIs, and other Chaos Studio related
+  development tasks.
 confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Resiliency (use
   azure-resiliency), Azure Reliability (use azure-reliability), Azure Site Recovery
   (use azure-site-recovery).
@@ -39,8 +40,8 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Resiliency 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 51
+- **Updated Pages**: 1
+- **Unchanged**: 50
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-chaos-studio/azure-chaos-studio.csv`
 
@@ -56,6 +57,11 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Resiliency 
 | *(Unclassified)* | 20 | 39.2% |
 
 ## Changes
+
+### Updated Pages
+
+- [Azure policy definitions](https://learn.microsoft.com/en-us/azure/chaos-studio/sample-policy-targets)
+  - Updated: 2024-10-14T08:00:00.000Z → 2026-04-20T17:15:00.000Z
 
 ## Classified Pages
 
@@ -74,7 +80,6 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Resiliency 
 | [Targets and capabilities](https://learn.microsoft.com/en-us/azure/chaos-studio/sample-template-targets) | configuration | 0.85 | ARM template samples expose specific resource types, properties, and parameter structures for Chaos Studio targets/capabilities—detailed configuration reference. |
 | [Accessing container image details](https://learn.microsoft.com/en-us/azure/chaos-studio/azure-container-instance-details) | security | 0.80 | Provides exact container image details from MCR used as a bastion for private networking; used in security reviews and allowlisting—product-specific security artifact. |
 | [Authorize Chaos Studio IP addresses for an AKS cluster](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-aks-ip-ranges) | security | 0.80 | Explains how to allow Chaos Studio IP addresses to reach AKS, likely including specific IP ranges and network rule configuration—product-specific security/networking. |
-| [Azure policy definitions](https://learn.microsoft.com/en-us/azure/chaos-studio/sample-policy-targets) | configuration | 0.80 | Contains Azure Policy definitions that create Chaos Studio targets/capabilities, including policy rule structure and resource details specific to Chaos Studio. |
 | [Bicep](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-bicep) | configuration | 0.80 | Bicep sample defines Chaos Studio resources and parameters; includes specific property names and structures unique to the service. |
 | [Configure an experiment using customer-managed keys (CMK)](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-configure-customer-managed-keys) | security | 0.80 | Covers CMK setup with user-assigned managed identities and Azure Blob Storage; this typically includes specific role assignments, key vault/identity configuration details, and access scope requirements. |
 | [Emit telemetry to App Insights](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-set-up-app-insights) | integrations | 0.80 | Shows how to configure Chaos Studio agent-based experiments to emit specific telemetry events to Application Insights—product-specific integration settings. |
@@ -84,6 +89,7 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Resiliency 
 | [Use Microsoft Entra authentication with Chaos Mesh](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-aks-authentication) | security | 0.80 | Describes supported authentication methods between Chaos Studio and AKS using Microsoft Entra, including auth flows and permissions specific to this integration. |
 | [Verify agent status](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-agent-verify-status) | troubleshooting | 0.80 | Explains agent status states and how to troubleshoot when not running correctly—symptom to cause/solution guidance specific to Chaos Agent. |
 | [Concepts](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-agent-concepts) | security | 0.75 | Deep dive into agent behavior, network access requirements, identities, and security considerations—product-specific security and connectivity configuration. |
+| [Azure policy definitions](https://learn.microsoft.com/en-us/azure/chaos-studio/sample-policy-targets) | configuration | 0.70 | Page provides concrete Azure Policy definition samples for configuring Chaos Studio targets and capabilities per resource type. These include specific policy rule structures, parameter names, and configuration patterns that are product-specific and not just conceptual, fitting the configuration sub-skill. |
 | [Chaos Mesh version compatibility](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-versions) | configuration | 0.70 | Version support and compatibility reference typically lists specific OS versions, agent versions, and tool support matrices that are detailed, product-specific configuration/compatibility data. |
 | [Experiment examples](https://learn.microsoft.com/en-us/azure/chaos-studio/experiment-examples) | integrations | 0.70 | Provides concrete CLI and JSON examples for experiment creation; likely includes request schema, parameter names, and values specific to Chaos Studio’s API and portal integration. |
 | [Limitations and known issues](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-limitations) | limits-quotas | 0.70 | Limitations and known issues pages usually enumerate concrete constraints (unsupported scenarios, resource types, or behaviors) that are highly product-specific and not general knowledge. |

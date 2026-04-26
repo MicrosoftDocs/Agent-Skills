@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-12'
+generated_at: '2026-04-26'
 category_descriptions:
   best-practices: 'Network performance and connectivity guidance: VNet design, NSGs,
     service endpoints, outbound access, MTU/TCP tuning, and tools to test throughput
@@ -47,8 +47,8 @@ confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtu
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 129
+- **Updated Pages**: 1
+- **Unchanged**: 128
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-network/azure-virtual-network.csv`
 
@@ -66,6 +66,11 @@ confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtu
 | *(Unclassified)* | 74 | 57.4% |
 
 ## Changes
+
+### Updated Pages
+
+- [Configure subnet peering](https://learn.microsoft.com/en-us/azure/virtual-network/how-to-configure-subnet-peering)
+  - Updated: 2025-12-15T23:10:00.000Z → 2026-04-22T17:34:00.000Z
 
 ## Classified Pages
 
@@ -159,7 +164,6 @@ confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtu
 | [Private IPs](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/private-ip-addresses) | 0.36 | Overview of private IP addresses and scenarios; conceptual networking behavior without explicit limits, settings tables, or troubleshooting content. |
 | [Add or remove a subnet delegation](https://learn.microsoft.com/en-us/azure/virtual-network/manage-subnet-delegation) | 0.35 | How-to for adding/removing subnet delegation; procedural with minimal product-specific configuration tables or decision criteria. |
 | [Add or remove network interfaces](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-network-interface-vm) | 0.35 | Explains adding/removing NICs on VMs; operational steps, not a configuration reference or troubleshooting guide with error codes. |
-| [Configure subnet peering](https://learn.microsoft.com/en-us/azure/virtual-network/how-to-configure-subnet-peering) | 0.35 | How-to for configuring subnet peering; focuses on steps and basic behavior, not deep configuration references or decision matrices. |
 | [Custom IP address prefix (BYOIP)](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/custom-ip-address-prefix) | 0.35 | Conceptual overview of custom IP address prefix (BYOIP); describes what it is and how it behaves, but summary shows no detailed limits or configuration tables. |
 | [Deploy container networking](https://learn.microsoft.com/en-us/azure/virtual-network/deploy-container-networking) | 0.35 | Deployment guide for Azure CNI in Kubernetes; largely tutorial-style without comprehensive configuration reference tables or troubleshooting mappings. |
 | [Different subscriptions and tenants](https://learn.microsoft.com/en-us/azure/virtual-network/create-peering-different-subscriptions) | 0.35 | Tutorial for peering VNets across subscriptions/tenants; procedural steps, no detailed limits, config matrices, or troubleshooting mappings. |
@@ -197,6 +201,7 @@ confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtu
 | [Configure internet routing preference for a virtual machine](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/configure-routing-preference-virtual-machine) | 0.28 | Tutorial on configuring routing preference for a VM; procedural guidance without detailed numeric thresholds, limits, or troubleshooting mappings. |
 | [Configure mixed Routing Preference for a VM](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/routing-preference-mixed-network-adapter-portal) | 0.28 | Tutorial for configuring both routing preferences using two NICs; scenario walkthrough rather than reference-style expert content. |
 | [Manage a virtual network](https://learn.microsoft.com/en-us/azure/virtual-network/manage-virtual-network) | 0.25 | Basic management article for creating/changing/deleting VNets; generic portal/CLI operations without expert-level configuration or troubleshooting content. |
+| [Configure subnet peering](https://learn.microsoft.com/en-us/azure/virtual-network/how-to-configure-subnet-peering) | 0.20 | Page is a how-to guide for configuring subnet peering in Azure Virtual Network. It appears to be procedural (UI/CLI steps) without tables of configuration parameters, numeric limits, error-code-based troubleshooting, or decision matrices. It does not match the specific expert-knowledge patterns for limits, configuration, troubleshooting, or decision-making as defined. |
 | [Create public IP address - Terraform](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/create-public-ip-terraform) | 0.20 | Quickstart Terraform tutorial for creating a public IP; primarily step-by-step resource creation with no detailed limits, quotas, configuration matrices, or product-specific best practices beyond generic Terraform usage. |
 | [Create public IP prefix - Terraform](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/create-public-ip-prefix-terraform) | 0.20 | Quickstart Terraform tutorial for creating a public IP prefix; focuses on basic creation/change/delete workflow without detailed configuration parameter tables, limits, or troubleshooting content. |
 | [Overview](https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-overview) | 0.20 | Overview of Microsoft Azure Network Adapter (MANA) and its benefits; description suggests conceptual/performance overview without explicit limits, configuration tables, error codes, or decision matrices that meet the expert-knowledge criteria. |

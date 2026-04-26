@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-19'
+generated_at: '2026-04-26'
 category_descriptions:
   architecture-patterns: 'Architectural patterns for Azure Front Door: apex domain
     setup, blue/green deployments, manual failover with Traffic Manager, static blob
@@ -47,16 +47,16 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 
 ## Summary
 
-- **Total Pages**: 101
-- **Fetched**: 101
+- **Total Pages**: 102
+- **Fetched**: 102
 - **Fetch Failed**: 0
 - **Classified**: 77
-- **Unclassified**: 24
+- **Unclassified**: 25
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 100
+- **New Pages**: 1
+- **Updated Pages**: 0
+- **Unchanged**: 101
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-front-door/azure-front-door.csv`
 
@@ -64,23 +64,22 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 5 | 5.0% |
+| architecture-patterns | 5 | 4.9% |
 | best-practices | 2 | 2.0% |
-| configuration | 28 | 27.7% |
-| decision-making | 8 | 7.9% |
-| deployment | 9 | 8.9% |
+| configuration | 28 | 27.5% |
+| decision-making | 8 | 7.8% |
+| deployment | 9 | 8.8% |
 | integrations | 2 | 2.0% |
-| limits-quotas | 5 | 5.0% |
-| security | 17 | 16.8% |
+| limits-quotas | 5 | 4.9% |
+| security | 17 | 16.7% |
 | troubleshooting | 1 | 1.0% |
-| *(Unclassified)* | 24 | 23.8% |
+| *(Unclassified)* | 25 | 24.5% |
 
 ## Changes
 
-### Updated Pages
+### New Pages
 
-- [FAQ](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-faq)
-  - Updated: 2026-04-08T17:12:00Z → 2026-04-14T22:21:00Z
+- [Video on-demand and live streaming](https://learn.microsoft.com/en-us/azure/frontdoor/video-on-demand-live-streaming)
 
 ## Classified Pages
 
@@ -188,6 +187,7 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Create a Front Door - Portal](https://learn.microsoft.com/en-us/azure/frontdoor/create-front-door-portal) | 0.20 | Quickstart using portal; step-by-step creation without broad config reference tables or limits. |
 | [Create a Front Door - PowerShell](https://learn.microsoft.com/en-us/azure/frontdoor/create-front-door-powershell) | 0.20 | Quickstart tutorial for creating a Front Door profile with PowerShell; primarily step-by-step instructions without configuration matrices, limits, or troubleshooting mappings. |
 | [Front Door (classic) retirement FAQ](https://learn.microsoft.com/en-us/azure/frontdoor/classic-retirement-faq) | 0.20 | Retirement FAQ content is primarily conceptual and procedural (dates, migration guidance, feature overview) without detailed limits, configuration tables, error-code-based troubleshooting, or quantified decision matrices that meet the expert-knowledge criteria. |
+| [Video on-demand and live streaming](https://learn.microsoft.com/en-us/azure/frontdoor/video-on-demand-live-streaming) | 0.20 | Appears to be an architectural/performance overview of using Azure Front Door for VOD and live streaming. The summary indicates high-level architecture and benefits but does not show concrete limits, configuration parameter tables, error codes, or decision matrices with quantified thresholds. Without evidence of specific numeric limits, config values, or troubleshooting mappings, it does not meet the expert-knowledge criteria for any sub-skill type. |
 | [What is Azure Front Door (classic)?](https://learn.microsoft.com/en-us/azure/frontdoor/classic-overview) | 0.20 | An overview page; primarily conceptual description of the service and its capabilities without detailed numeric limits, configuration tables, or troubleshooting mappings. |
 | [Accelerate and secure your web application](https://learn.microsoft.com/en-us/azure/frontdoor/scenarios) | 0.10 | High-level scenario/overview of Azure Front Door capabilities and when to consider using it; no specific limits, configuration parameters, error codes, or decision matrices with quantified trade-offs. |
 | [Support and troubleshooting](https://learn.microsoft.com/en-us/azure/frontdoor/support-help) | 0.10 | Page is a general support/help landing page pointing to forums and support channels, without product-specific error codes, diagnostic steps, configuration parameters, or limits. It does not meet the troubleshooting or other expert-knowledge criteria. |

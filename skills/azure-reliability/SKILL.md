@@ -1,9 +1,9 @@
 ---
 name: azure-reliability
-description: Expert knowledge for Azure Reliability development including best practices, decision making, architecture & design patterns, limits & quotas, and deployment. Use when designing zone-redundant AKS, MySQL Flexible Server, Azure Functions, Queue Storage, or multi-region DR setups, and other Azure Reliability related development tasks. Not for Azure Monitor (use azure-monitor), Azure Resiliency (use azure-resiliency), Azure Service Health (use azure-service-health), Azure Sre Agent (use azure-sre-agent).
+description: Expert knowledge for Azure Reliability development including best practices, decision making, architecture & design patterns, limits & quotas, and deployment. Use when designing zone/multi-region apps, MySQL Flexible Server HA, resilient Functions, DR failover, or Queue size limits, and other Azure Reliability related development tasks. Not for Azure Resiliency (use azure-resiliency), Azure Monitor (use azure-monitor), Azure Service Health (use azure-service-health), Azure Site Recovery (use azure-site-recovery).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-19"
+  generated_at: "2026-04-26"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Reliability Skill
@@ -24,17 +24,18 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Best Practices | L33-L71 | Patterns and guidance to design, configure, and harden Azure services (AKS, DBs, networking, messaging, backup, DR) for high availability, fault tolerance, and disaster recovery. |
-| Decision Making | L72-L76 | Guidance on using availability zones, nonregional services, and resilient Azure Functions architectures to design highly available, fault-tolerant Azure solutions. |
-| Architecture & Design Patterns | L77-L83 | Designing Azure apps for high availability using zones and multi-region patterns, including planning zone-resilient workloads, hardening zonal deployments, and building in nonpaired regions. |
-| Limits & Quotas | L84-L88 | Details on Azure Queue Storage message size limits, including max message size, behavior when limits are exceeded, and best practices for handling large payloads. |
-| Deployment | L89-L92 | Guidance on deploying Azure services and MySQL Flexible Server with availability zones, including configuring zone-redundant high availability and migration to zone-resilient setups. |
+| Best Practices | L33-L74 | Patterns and guidance to design, configure, and harden Azure services (compute, data, networking, messaging) for high availability, failover, and disaster recovery. |
+| Decision Making | L75-L79 | Guidance on using availability zones, nonregional services, and resilient Azure Functions architectures to design highly available, fault-tolerant Azure solutions. |
+| Architecture & Design Patterns | L80-L86 | Designing Azure apps for high availability using zones and multi-region patterns, including planning zone-resilient workloads, hardening zonal deployments, and building in nonpaired regions. |
+| Limits & Quotas | L87-L91 | Details on Azure Queue Storage message size limits, including max message size, behavior when limits are exceeded, and best practices for handling large payloads. |
+| Deployment | L92-L95 | Guidance on deploying Azure services and MySQL Flexible Server with availability zones, including configuring zone-redundant high availability and migration to zone-resilient setups. |
 
 ### Best Practices
 | Topic | URL |
 |-------|-----|
 | Design resilient clusters in Azure Kubernetes Service | https://learn.microsoft.com/en-us/azure/reliability/reliability-aks |
 | Configure reliability for Azure API Center | https://learn.microsoft.com/en-us/azure/reliability/reliability-api-center |
+| Build resilient configurations with Azure App Configuration | https://learn.microsoft.com/en-us/azure/reliability/reliability-app-configuration |
 | Build resilient configurations with Azure App Configuration | https://learn.microsoft.com/en-us/azure/reliability/reliability-app-configuration |
 | Harden Azure App Service Environment reliability | https://learn.microsoft.com/en-us/azure/reliability/reliability-app-service-environment |
 | Architect highly available Azure Application Gateway v2 | https://learn.microsoft.com/en-us/azure/reliability/reliability-application-gateway-v2 |
@@ -48,6 +49,7 @@ This skill requires **network access** to fetch documentation content:
 | Design resilient Azure Database for MySQL deployments | https://learn.microsoft.com/en-us/azure/reliability/reliability-database-mysql |
 | Implement high availability for Azure Database for PostgreSQL | https://learn.microsoft.com/en-us/azure/reliability/reliability-database-postgresql |
 | Implement resilient architectures in Azure Databricks | https://learn.microsoft.com/en-us/azure/reliability/reliability-databricks |
+| Harden application reliability with Azure DDoS Protection | https://learn.microsoft.com/en-us/azure/reliability/reliability-ddos-protection |
 | Ensure reliability for Azure Device Registry metadata | https://learn.microsoft.com/en-us/azure/reliability/reliability-device-registry |
 | Design high availability for Azure DocumentDB | https://learn.microsoft.com/en-us/azure/reliability/reliability-documentdb |
 | Build resilient architectures with Azure Event Grid | https://learn.microsoft.com/en-us/azure/reliability/reliability-event-grid |
@@ -60,6 +62,7 @@ This skill requires **network access** to fetch documentation content:
 | Design resilient architectures with Azure Load Balancer | https://learn.microsoft.com/en-us/azure/reliability/reliability-load-balancer |
 | Design resilient workflows with Azure Logic Apps | https://learn.microsoft.com/en-us/azure/reliability/reliability-logic-apps |
 | Improve reliability of Azure Managed Grafana workspaces | https://learn.microsoft.com/en-us/azure/reliability/reliability-managed-grafana |
+| Ensure resilient Azure Key Vault Managed HSM deployments | https://learn.microsoft.com/en-us/azure/reliability/reliability-managed-hsm |
 | Increase reliability of Azure Managed Redis caches | https://learn.microsoft.com/en-us/azure/reliability/reliability-managed-redis |
 | Implement resilient logging with Azure Monitor Logs | https://learn.microsoft.com/en-us/azure/reliability/reliability-monitor-logs |
 | Improve reliability of Azure Notification Hubs | https://learn.microsoft.com/en-us/azure/reliability/reliability-notification-hubs |

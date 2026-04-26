@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-05'
+generated_at: '2026-04-26'
 category_descriptions:
   integrations: Patterns and APIs for creating/managing STAC collections/items, bulk
     ingesting data, generating SAS tokens, and integrating Planetary Computer Pro
@@ -10,9 +10,9 @@ category_descriptions:
   decision-making: Guidance on selecting how to access Planetary Computer Pro data,
     including connection options, integrations with tools/services, and choosing the
     best method for your workflow.
-  configuration: 'Configuring Planetary Computer Pro collections: ingestion sources,
-    mosaics, tiles, render/colormap settings, Explorer visualization, queryable filters,
-    and US Gov cloud endpoints.'
+  configuration: 'Configuring Planetary Computer Pro data access and visualization:
+    collections, tiles, mosaics, render/colormap settings, queryables, ingestion sources,
+    APIM proxy, and US Gov cloud endpoints.'
   troubleshooting: Diagnosing and resolving Planetary Computer Pro GeoCatalog ingestion
     failures, including error code meanings, common causes, and step-by-step remediation
     guidance.
@@ -21,13 +21,13 @@ category_descriptions:
     process and store data.
 skill_description: Expert knowledge for Microsoft Planetary Computer Pro development
   including troubleshooting, decision making, limits & quotas, security, configuration,
-  and integrations & coding patterns. Use when managing STAC collections, GeoCatalog
-  ingestion, SAS tokens, Explorer visualization, or QGIS/ArcGIS integration, and other
-  Microsoft Planetary Computer Pro related development tasks. Not for Azure Open Datasets
-  (use azure-open-datasets), Azure Maps (use azure-maps), Azure Data Explorer (use
-  azure-data-explorer), Azure Synapse Analytics (use azure-synapse-analytics).
-use_when: Use when managing STAC collections, GeoCatalog ingestion, SAS tokens, Explorer
-  visualization, or QGIS/ArcGIS integration, and other Microsoft Planetary Computer
+  and integrations & coding patterns. Use when managing STAC collections/items, GeoCatalog
+  ingestion, SAS tokens, tiles/mosaics, or QGIS/ArcGIS integration, and other Microsoft
+  Planetary Computer Pro related development tasks. Not for Azure Open Datasets (use
+  azure-open-datasets), Azure Maps (use azure-maps), Azure Data Explorer (use azure-data-explorer),
+  Azure Synapse Analytics (use azure-synapse-analytics).
+use_when: Use when managing STAC collections/items, GeoCatalog ingestion, SAS tokens,
+  tiles/mosaics, or QGIS/ArcGIS integration, and other Microsoft Planetary Computer
   Pro related development tasks.
 confusable_not_for: Not for Azure Open Datasets (use azure-open-datasets), Azure Maps
   (use azure-maps), Azure Data Explorer (use azure-data-explorer), Azure Synapse Analytics
@@ -37,14 +37,14 @@ confusable_not_for: Not for Azure Open Datasets (use azure-open-datasets), Azure
 
 ## Summary
 
-- **Total Pages**: 45
-- **Fetched**: 45
+- **Total Pages**: 46
+- **Fetched**: 46
 - **Fetch Failed**: 0
-- **Classified**: 32
+- **Classified**: 33
 - **Unclassified**: 13
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
 - **Unchanged**: 45
 - **Deleted Pages**: 0
@@ -54,15 +54,19 @@ confusable_not_for: Not for Azure Open Datasets (use azure-open-datasets), Azure
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| configuration | 10 | 22.2% |
+| configuration | 11 | 23.9% |
 | decision-making | 1 | 2.2% |
-| integrations | 11 | 24.4% |
+| integrations | 11 | 23.9% |
 | limits-quotas | 1 | 2.2% |
-| security | 7 | 15.6% |
-| troubleshooting | 2 | 4.4% |
-| *(Unclassified)* | 13 | 28.9% |
+| security | 7 | 15.2% |
+| troubleshooting | 2 | 4.3% |
+| *(Unclassified)* | 13 | 28.3% |
 
 ## Changes
+
+### New Pages
+
+- [Create an API Proxy for GeoCatalogs](https://learn.microsoft.com/en-us/azure/planetary-computer/create-api-proxy-geocatalog)
 
 ## Classified Pages
 
@@ -86,6 +90,7 @@ confusable_not_for: Not for Azure Open Datasets (use azure-open-datasets), Azure
 | [Build a web application](https://learn.microsoft.com/en-us/azure/planetary-computer/build-web-application) | integrations | 0.70 | Quickstart for a web app using Entra ID auth, STAC APIs, and map tiles; includes concrete API usage and auth parameters. |
 | [Bulk ingestion](https://learn.microsoft.com/en-us/azure/planetary-computer/bulk-ingestion-api) | integrations | 0.70 | Shows how to use the Bulk Ingestion API with configuration of ingestion sources and collections; product-specific API patterns and parameters. |
 | [Collection configuration overview](https://learn.microsoft.com/en-us/azure/planetary-computer/collection-configuration-concept) | configuration | 0.70 | Describes configuration options for collections (filters, zoom levels, searchable attributes, data types); product-specific configuration settings. |
+| [Create an API Proxy for GeoCatalogs](https://learn.microsoft.com/en-us/azure/planetary-computer/create-api-proxy-geocatalog) | configuration | 0.70 | The article describes a concrete architecture and configuration for placing Azure API Management in front of a Planetary Computer Pro GeoCatalog to enable anonymous and collection-level access control. This involves product-specific settings and policies in APIM (such as how authentication and access control are handled for GeoCatalog requests), which are configuration details not generally known from training data. It is not just a conceptual overview or generic tutorial, but a specific configuration pattern for this service combination. |
 | [Get a collection SAS token](https://learn.microsoft.com/en-us/azure/planetary-computer/get-collection-sas-token) | integrations | 0.70 | Covers retrieving collection-level SAS tokens for STAC collection assets in managed storage within a GeoCatalog. This involves specific storage/SAS parameters and token usage patterns that are product-specific integration details between Planetary Computer Pro and Azure Storage. |
 | [Ingestion sources](https://learn.microsoft.com/en-us/azure/planetary-computer/ingestion-source) | configuration | 0.70 | Explains ingestion source concept including location, URI structure, and authentication methods—product-specific configuration parameters for ingestion. |
 | [Partner Application Overview](https://learn.microsoft.com/en-us/azure/planetary-computer/working-with-partner-applications) | integrations | 0.70 | Describes cross-tenant application integration scenarios and patterns for partner apps to read/write GeoCatalog data—product-specific integration model. |

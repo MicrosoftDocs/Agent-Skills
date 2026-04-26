@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-05'
+generated_at: '2026-04-26'
 category_descriptions:
   best-practices: Guidance on sizing and deploying ARO clusters and infra nodes, optimizing
     OpenShift Virtualization VMs, and understanding ARO 4 support limits and policies
@@ -45,13 +45,13 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 - **Total Pages**: 66
 - **Fetched**: 66
 - **Fetch Failed**: 0
-- **Classified**: 53
-- **Unclassified**: 13
+- **Classified**: 52
+- **Unclassified**: 14
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 66
+- **Updated Pages**: 2
+- **Unchanged**: 64
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-redhat-openshift/azure-redhat-openshift.csv`
 
@@ -64,12 +64,19 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | decision-making | 1 | 1.5% |
 | deployment | 9 | 13.6% |
 | integrations | 5 | 7.6% |
-| limits-quotas | 2 | 3.0% |
+| limits-quotas | 1 | 1.5% |
 | security | 13 | 19.7% |
 | troubleshooting | 4 | 6.1% |
-| *(Unclassified)* | 13 | 19.7% |
+| *(Unclassified)* | 14 | 21.2% |
 
 ## Changes
+
+### Updated Pages
+
+- [Support lifecycle for Azure Red Hat OpenShift 4](https://learn.microsoft.com/en-us/azure/openshift/support-lifecycle)
+  - Updated: 2025-11-14T18:00:00.000Z → 2026-04-20T08:00:00.000Z
+- [What's new with Azure Red Hat OpenShift?](https://learn.microsoft.com/en-us/azure/openshift/azure-redhat-openshift-release-notes)
+  - Updated: 2026-02-25T08:00:00.000Z → 2026-04-20T08:00:00.000Z
 
 ## Classified Pages
 
@@ -110,7 +117,6 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Migrate from OpenShift SDN to OVN-Kubernetes](https://learn.microsoft.com/en-us/azure/openshift/howto-sdn-to-ovn) | deployment | 0.70 | Describes migration path due to SDN deprecation, including version constraints and steps; deployment/migration decision and process. |
 | [Rotate service principal credentials](https://learn.microsoft.com/en-us/azure/openshift/howto-service-principal-credential-rotation) | security | 0.70 | Details rotation of Entra service principal credentials for ARO using Azure CLI; includes product-specific identity and permission handling steps. |
 | [Segregate worker nodes into subnets](https://learn.microsoft.com/en-us/azure/openshift/howto-segregate-machinesets) | configuration | 0.70 | Network-level configuration of worker machine sets into different private subnets with access control implications is product-specific configuration. |
-| [Support lifecycle for Azure Red Hat OpenShift 4](https://learn.microsoft.com/en-us/azure/openshift/support-lifecycle) | limits-quotas | 0.70 | Support lifecycle and supported OCP versions involve specific version numbers, timelines, and deprecation details that function as product-specific limits/constraints. |
 | [Support policies for Azure Red Hat OpenShift 4](https://learn.microsoft.com/en-us/azure/openshift/support-policies-v4) | best-practices | 0.70 | The page defines which specific configuration changes to internal Azure Red Hat OpenShift 4 components are supported vs unsupported, including explicit DO/DON'T guidance that directly affects cluster supportability. These are product-specific support and configuration rules that function as best-practice constraints and are not generic knowledge. |
 | [Tag resources using Azure Policy](https://learn.microsoft.com/en-us/azure/openshift/howto-tag-resources) | configuration | 0.70 | Involves creating JSON policy definitions/assignments and remediation for ARO-managed resource groups, with specific parameters and behavior. |
 | [Use Admin Kubeconfig](https://learn.microsoft.com/en-us/azure/openshift/howto-kubeconfig) | troubleshooting | 0.70 | Explicitly for regaining access when console/ingress/auth components fail; maps specific failure scenarios to using Admin Kubeconfig. |
@@ -140,9 +146,10 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Create an Azure Red Hat OpenShift cluster](https://learn.microsoft.com/en-us/azure/openshift/create-cluster) | 0.30 | Quickstart for creating a cluster; summary does not show detailed config tables, limits, or security roles beyond generic how-to. |
 | [Deploy a JBoss EAP Java app](https://learn.microsoft.com/en-us/azure/openshift/howto-deploy-java-jboss-enterprise-application-platform-app) | 0.30 | Quickstart/tutorial for deploying JBoss EAP on Azure Red Hat OpenShift via the portal. It focuses on step-by-step setup using a Marketplace offer, not on limits, configuration matrices, error codes, or product-specific parameter tables. No clear expert-only limits, quotas, or specialized configuration references are indicated. |
 | [Set up OpenShift Virtualization](https://learn.microsoft.com/en-us/azure/openshift/howto-create-openshift-virtualization) | 0.30 | Appears to be a how-to/overview for using OpenShift Virtualization on Azure Red Hat OpenShift, focused on describing capabilities and basic usage. The summary does not indicate detailed configuration tables, limits, error codes, or product-specific decision matrices; it reads as conceptual and procedural rather than expert reference content. |
+| [Support lifecycle for Azure Red Hat OpenShift 4](https://learn.microsoft.com/en-us/azure/openshift/support-lifecycle) | 0.30 | Support lifecycle and version policy information is high-level policy/overview content. The summary does not indicate concrete numerical limits, configuration parameters, error codes, or decision matrices tied to technical choices. It describes release cadence and support policy conceptually, which an LLM is likely to know in general form, and does not fit any of the specified expert-knowledge sub-skill types. |
 | [Upgrade a cluster with managed identities enabled](https://learn.microsoft.com/en-us/azure/openshift/howto-upgrade-aro-openshift-cluster) | 0.30 | This is an upgrade how-to for clusters with managed identities. It is likely a procedural tutorial (using web console or MUO) without configuration matrices, limits, or detailed diagnostic mappings. It describes lifecycle operations rather than expert-only configuration parameters or troubleshooting details. |
 | [Connect to an Azure Red Hat OpenShift cluster](https://learn.microsoft.com/en-us/azure/openshift/connect-cluster) | 0.20 | Basic connection instructions using kubeadmin; no indication of detailed configuration parameters or troubleshooting mappings. |
 | [Create cluster with managed identities](https://learn.microsoft.com/en-us/azure/openshift/howto-create-openshift-cluster) | 0.20 | Primarily a how-to deployment guide for creating an Azure Red Hat OpenShift cluster with managed identities using CLI/Portal/Bicep/ARM. It does not clearly indicate detailed configuration tables, limits, error-code-based troubleshooting, or product-specific decision matrices; it appears to be procedural tutorial content rather than expert reference material. |
 | [Delete an Azure Red Hat OpenShift cluster](https://learn.microsoft.com/en-us/azure/openshift/delete-cluster) | 0.20 | Quickstart for deleting a cluster; operational but not configuration/limits-focused and lacks expert-only details in summary. |
-| [What's new with Azure Red Hat OpenShift?](https://learn.microsoft.com/en-us/azure/openshift/azure-redhat-openshift-release-notes) | 0.20 | Release notes are mostly change logs; summary does not indicate detailed limits, configs, or troubleshooting mappings. |
+| [What's new with Azure Red Hat OpenShift?](https://learn.microsoft.com/en-us/azure/openshift/azure-redhat-openshift-release-notes) | 0.20 | Release notes summarize changes and new features but typically do not provide structured limits, configuration tables, troubleshooting mappings, or decision matrices as defined by the sub-skill types. They are more update/announcement oriented than reusable expert reference content. |
 | [About Azure Red Hat OpenShift](https://learn.microsoft.com/en-us/azure/openshift/intro-openshift) | 0.10 | High-level introduction and benefits overview without product-specific limits, configs, or detailed patterns. |

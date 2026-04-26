@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-19'
+generated_at: '2026-04-26'
 category_descriptions:
   integrations: Patterns and code for integrating devices via MQTT and IoT Plug and
     Play, building device/service apps, formatting payloads, using DPS/IoT Hub, and
@@ -7,14 +7,17 @@ category_descriptions:
   architecture-patterns: Reference architectures and patterns for industrial IoT on
     Azure, including dataspace-based designs, component choices, and end-to-end implementation
     guidance for industrial scenarios.
-skill_description: Expert knowledge for Azure IoT development including architecture
-  & design patterns, and integrations & coding patterns. Use when using MQTT, IoT
-  Plug and Play, DPS/IoT Hub, SAP ERP integration, or industrial IoT reference architectures,
-  and other Azure IoT related development tasks. Not for Azure IoT Hub (use azure-iot-hub),
-  Azure IoT Edge (use azure-iot-edge), Azure IoT Central (use azure-iot-central),
-  Azure Defender For Iot (use azure-defender-for-iot).
-use_when: Use when using MQTT, IoT Plug and Play, DPS/IoT Hub, SAP ERP integration,
-  or industrial IoT reference architectures, and other Azure IoT related development
+  decision-making: Guidance on designing Azure Device Registry namespaces and schema
+    registries, including structure, organization, and planning for IoT device data
+    and metadata.
+skill_description: Expert knowledge for Azure IoT development including decision making,
+  architecture & design patterns, and integrations & coding patterns. Use when using
+  MQTT or IoT Plug and Play, DPS/IoT Hub, SAP ERP integration, device registries,
+  or schema registries, and other Azure IoT related development tasks. Not for Azure
+  IoT Hub (use azure-iot-hub), Azure IoT Edge (use azure-iot-edge), Azure IoT Central
+  (use azure-iot-central), Azure Defender For Iot (use azure-defender-for-iot).
+use_when: Use when using MQTT or IoT Plug and Play, DPS/IoT Hub, SAP ERP integration,
+  device registries, or schema registries, and other Azure IoT related development
   tasks.
 confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Edge (use
   azure-iot-edge), Azure IoT Central (use azure-iot-central), Azure Defender For Iot
@@ -24,16 +27,16 @@ confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Edge (u
 
 ## Summary
 
-- **Total Pages**: 9
-- **Fetched**: 9
+- **Total Pages**: 11
+- **Fetched**: 11
 - **Fetch Failed**: 0
-- **Classified**: 3
+- **Classified**: 5
 - **Unclassified**: 6
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 1
-- **Unchanged**: 7
+- **New Pages**: 2
+- **Updated Pages**: 0
+- **Unchanged**: 9
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-iot/azure-iot.csv`
 
@@ -41,25 +44,24 @@ confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Edge (u
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 2 | 22.2% |
-| integrations | 1 | 11.1% |
-| *(Unclassified)* | 6 | 66.7% |
+| architecture-patterns | 2 | 18.2% |
+| decision-making | 2 | 18.2% |
+| integrations | 1 | 9.1% |
+| *(Unclassified)* | 6 | 54.5% |
 
 ## Changes
 
 ### New Pages
 
-- [IoT device development](https://learn.microsoft.com/en-us/azure/iot/iot-overview-device-development)
-
-### Updated Pages
-
-- [What is Azure IoT?](https://learn.microsoft.com/en-us/azure/iot/iot-introduction)
-  - Updated: 2025-10-07T08:00:00.000Z → 2026-04-15T11:11:00.000Z
+- [Best practices for namespaces](https://learn.microsoft.com/en-us/azure/iot/iot-device-registry-namespace-guidance)
+- [Best practices for schema registries](https://learn.microsoft.com/en-us/azure/iot/iot-device-registry-schema-registry-guidance)
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
+| [Best practices for namespaces](https://learn.microsoft.com/en-us/azure/iot/iot-device-registry-namespace-guidance) | decision-making | 0.78 | The article focuses on how to design and plan Azure Device Registry namespaces, including when to create new namespaces versus reuse existing ones. This is product-specific decision guidance about organizational boundaries and solution design, matching the decision-making category rather than generic best practices. It helps users choose between options for different solution scenarios. |
+| [Best practices for schema registries](https://learn.microsoft.com/en-us/azure/iot/iot-device-registry-schema-registry-guidance) | decision-making | 0.78 | The article provides guidance on how to design schema registries in Azure Device Registry, including when to create new registries and when to reuse existing ones for Azure IoT Operations. This is product-specific selection and design guidance for different solution scenarios, aligning with decision-making rather than generic conceptual content. |
 | [Connect on-premises SAP system to Azure](https://learn.microsoft.com/en-us/azure/iot/howto-connect-on-premises-sap-to-azure) | integrations | 0.70 | Step-by-step integration of SAP ERP via OPC UA and Azure; product-specific integration architecture and configuration details. |
 | [Enable industrial dataspace in Azure](https://learn.microsoft.com/en-us/azure/iot/howto-iot-industrial-dataspaces) | architecture-patterns | 0.60 | Describes how to build an industrial dataspace using Azure and open-source implementations; architecture-specific guidance for secure data exchange. |
 | [Implement industrial IoT reference solution](https://learn.microsoft.com/en-us/azure/iot/tutorial-iot-industrial-solution-architecture) | architecture-patterns | 0.60 | Reference architecture for industrial IoT with specific use cases (OEE, forecasting, anomaly detection); likely includes Azure-service-specific architectural patterns and components. |

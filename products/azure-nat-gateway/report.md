@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-19'
+generated_at: '2026-04-26'
 category_descriptions:
   limits-quotas: NAT Gateway limits, SNAT port quotas, connection scaling behavior,
     per-resource caps, and FAQs on throughput, IPs, and troubleshooting limit-related
@@ -17,21 +17,24 @@ category_descriptions:
     connectivity patterns when using Azure NAT Gateway.
   decision-making: Guidance on choosing NAT Gateway SKUs, migrating existing NAT Gateways
     to StandardV2, and moving outbound internet access from other methods to NAT Gateway.
+  integrations: Guidance and templates for deploying Azure NAT Gateway V2 using infrastructure-as-code
+    (ARM/Bicep/Terraform), including configuration patterns and automation.
   deployment: How to deploy and redeploy NAT Gateway (ARM/Bicep), migrate or move
     outbound traffic from VMs/public IPs, and transition existing outbound access
     to Azure NAT Gateway.
 skill_description: Expert knowledge for Azure NAT Gateway development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
-  configuration, and deployment. Use when managing SNAT ports, outbound IPs, flow
-  logs, hub-spoke egress, or Azure Firewall integration, and other Azure NAT Gateway
-  related development tasks. Not for Azure Virtual Network (use azure-virtual-network),
-  Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual
-  WAN (use azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway).
-use_when: Use when managing SNAT ports, outbound IPs, flow logs, hub-spoke egress,
-  or Azure Firewall integration, and other Azure NAT Gateway related development tasks.
+  configuration, integrations & coding patterns, and deployment. Use when configuring
+  SNAT ports, scaling outbound IPs, reading NAT flow logs, or deploying NAT Gateway
+  via IaC, and other Azure NAT Gateway related development tasks. Not for Azure Virtual
+  Network (use azure-virtual-network), Azure Load Balancer (use azure-load-balancer),
+  Azure Virtual WAN (use azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway).
+use_when: Use when configuring SNAT ports, scaling outbound IPs, reading NAT flow
+  logs, or deploying NAT Gateway via IaC, and other Azure NAT Gateway related development
+  tasks.
 confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), Azure
-  Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use
-  azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway).
+  Load Balancer (use azure-load-balancer), Azure Virtual WAN (use azure-virtual-wan),
+  Azure VPN Gateway (use azure-vpn-gateway).
 ---
 # Azure NAT Gateway Crawl Report
 
@@ -45,8 +48,8 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 20
+- **Updated Pages**: 1
+- **Unchanged**: 23
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-nat-gateway/azure-nat-gateway.csv`
 
@@ -58,7 +61,8 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | best-practices | 1 | 4.2% |
 | configuration | 5 | 20.8% |
 | decision-making | 3 | 12.5% |
-| deployment | 3 | 12.5% |
+| deployment | 2 | 8.3% |
+| integrations | 1 | 4.2% |
 | limits-quotas | 1 | 4.2% |
 | troubleshooting | 1 | 4.2% |
 | *(Unclassified)* | 5 | 20.8% |
@@ -67,14 +71,8 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ### Updated Pages
 
-- [What is Azure NAT Gateway?](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-overview)
-  - Updated: 2025-11-18T17:01:00.000Z → 2026-04-15T17:15:00.000Z
-- [Create and validate a Standard V2 Azure NAT Gateway](https://learn.microsoft.com/en-us/azure/nat-gateway/quickstart-create-nat-gateway-v2)
-  - Updated: 2025-11-18T18:43:00.000Z → 2026-04-16T17:19:00.000Z
-- [Migrate outbound access](https://learn.microsoft.com/en-us/azure/nat-gateway/tutorial-migrate-outbound-nat)
-  - Updated: 2025-11-18T17:01:00.000Z → 2026-04-16T22:31:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/nat-gateway/faq)
-  - Updated: 2026-01-21T06:14:00Z → 2026-04-16T17:19:00Z
+- [Use deployment templates to create StandardV2 NAT Gateway](https://learn.microsoft.com/en-us/azure/nat-gateway/quickstart-create-nat-gateway-v2-templates)
+  - Updated: 2026-01-22T06:12:00.000Z → 2026-04-22T17:34:00.000Z
 
 ## Classified Pages
 
@@ -95,7 +93,7 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Migrate outbound access](https://learn.microsoft.com/en-us/azure/nat-gateway/tutorial-migrate-outbound-nat) | decision-making | 0.65 | Tutorial on migrating outbound connectivity from default outbound access or load balancer outbound rules to NAT Gateway, including when and how to switch and reuse IPs. This is migration/selection guidance between outbound options, fitting decision-making. |
 | [NAT gateway resource](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-resource) | configuration | 0.65 | Describes key components of the NAT gateway resource and how they are configured; likely includes resource properties and settings specific to NAT Gateway beyond generic knowledge. |
 | [Use a NAT gateway with a hub and spoke network](https://learn.microsoft.com/en-us/azure/nat-gateway/tutorial-hub-spoke-route-nat) | architecture-patterns | 0.65 | Shows how to use NAT Gateway in a hub-and-spoke architecture with a network virtual appliance; focuses on a specific architecture pattern. |
-| [Use deployment templates to create StandardV2 NAT Gateway](https://learn.microsoft.com/en-us/azure/nat-gateway/quickstart-create-nat-gateway-v2-templates) | deployment | 0.65 | Provides ARM/Bicep templates and parameters for deploying NAT Gateway V2 and related resources; template-based deployment details are product-specific. |
+| [Use deployment templates to create StandardV2 NAT Gateway](https://learn.microsoft.com/en-us/azure/nat-gateway/quickstart-create-nat-gateway-v2-templates) | integrations | 0.64 | The quickstart uses ARM, Bicep, and Terraform templates to provision a NAT Gateway V2, VNet, subnet, and VM. These templates typically include product-specific resource types, properties, and configuration parameters (for example, NAT gateway SKU, public IP association, subnet bindings) that represent concrete integration patterns between Azure NAT Gateway and other Azure resources. While it is a quickstart, the presence of full infrastructure-as-code templates with specific resource schemas and parameter names constitutes expert, product-specific integration knowledge beyond generic deployment commands. |
 | [Integrate NAT gateway internal load balancer](https://learn.microsoft.com/en-us/azure/nat-gateway/tutorial-nat-gateway-load-balancer-internal-portal) | architecture-patterns | 0.60 | Describes replacing public load balancer or routing with NAT Gateway for internal load balancer backends; specific outbound connectivity pattern. |
 | [Integrate NAT gateway public load balancer](https://learn.microsoft.com/en-us/azure/nat-gateway/tutorial-nat-gateway-load-balancer-public-portal) | architecture-patterns | 0.60 | Shows how NAT Gateway replaces outbound rules on a public load balancer; this is a product-specific integration pattern for outbound connectivity design. |
 | [Migrate a virtual machine public IP address](https://learn.microsoft.com/en-us/azure/nat-gateway/tutorial-migrate-ilip-nat) | deployment | 0.60 | Shows how to migrate from a VM’s direct public IP to NAT Gateway while reusing the IP; product-specific deployment/migration guidance. |

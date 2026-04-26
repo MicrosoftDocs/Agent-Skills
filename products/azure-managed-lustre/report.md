@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-05'
+generated_at: '2026-04-26'
 category_descriptions:
   configuration: 'Configuring Azure Managed Lustre: network/storage prerequisites,
     client install/upgrade, mounting (fstab), ARM/Bicep deployment, and monitoring/alerts
@@ -18,19 +18,18 @@ category_descriptions:
   best-practices: Guidance on tuning Azure Managed Lustre performance via optimal
     file/directory layout, client striping, and network setup (NICs, throughput, latency,
     and scaling).
-  troubleshooting: Diagnosing and resolving Azure Managed Lustre deployment failures
-    and performance issues, including cluster provisioning errors, throughput/latency
-    problems, and tuning guidance.
+  troubleshooting: Diagnosing and resolving Azure Managed Lustre issues, including
+    cluster deployment failures, configuration problems, and performance bottlenecks
+    or slow I/O.
 skill_description: Expert knowledge for Azure Managed Lustre development including
   troubleshooting, best practices, architecture & design patterns, limits & quotas,
-  security, configuration, and integrations & coding patterns. Use when mounting AMLFS,
-  integrating with Blob auto-import/export, using AKS CSI, setting CMK/root squash,
-  or tuning performance, and other Azure Managed Lustre related development tasks.
-  Not for Azure HPC Cache (use azure-hpc-cache), Azure NetApp Files (use azure-netapp-files),
-  Azure Blob Storage (use azure-blob-storage), Azure Elastic SAN (use azure-elastic-san).
-use_when: Use when mounting AMLFS, integrating with Blob auto-import/export, using
-  AKS CSI, setting CMK/root squash, or tuning performance, and other Azure Managed
-  Lustre related development tasks.
+  security, configuration, and integrations & coding patterns. Use when deploying
+  AMLFS with Blob auto-import/export, Terraform, AKS CSI, quotas, or HA/DR failover,
+  and other Azure Managed Lustre related development tasks. Not for Azure HPC Cache
+  (use azure-hpc-cache), Azure NetApp Files (use azure-netapp-files), Azure Blob Storage
+  (use azure-blob-storage), Azure Elastic SAN (use azure-elastic-san).
+use_when: Use when deploying AMLFS with Blob auto-import/export, Terraform, AKS CSI,
+  quotas, or HA/DR failover, and other Azure Managed Lustre related development tasks.
 confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure NetApp Files
   (use azure-netapp-files), Azure Blob Storage (use azure-blob-storage), Azure Elastic
   SAN (use azure-elastic-san).
@@ -47,8 +46,8 @@ confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure NetApp 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 30
+- **Updated Pages**: 1
+- **Unchanged**: 29
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-managed-lustre/azure-managed-lustre.csv`
 
@@ -67,11 +66,16 @@ confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure NetApp 
 
 ## Changes
 
+### Updated Pages
+
+- [Troubleshoot cluster performance issues](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/troubleshoot-performance)
+  - Updated: 2026-02-27T18:05:00.000Z → 2026-04-24T17:07:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
-| [Troubleshoot cluster performance issues](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/troubleshoot-performance) | troubleshooting | 0.86 | The page is explicitly a troubleshooting guide for Azure Managed Lustre performance, organized around common performance issues and how to resolve them. It likely includes product-specific diagnostics (for example, how to collect performance metrics, which logs or counters to inspect, and how to interpret them) and concrete remediation steps tailored to this service, which qualifies as expert troubleshooting knowledge beyond generic debugging advice. |
+| [Troubleshoot cluster performance issues](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/troubleshoot-performance) | troubleshooting | 0.86 | The page is explicitly a troubleshooting guide for Azure Managed Lustre performance, organized around specific performance symptoms and their causes with product-specific remediation steps. It focuses on diagnosing cluster performance issues unique to Azure Managed Lustre rather than generic performance tuning, matching the troubleshooting criteria of symptom → cause → solution for this service. |
 | [Troubleshoot cluster deployment failures](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/troubleshoot-deployment) | troubleshooting | 0.85 | Explicit troubleshooting guide for deployment; likely organized by error codes/messages and causes with specific resolutions unique to this service. |
 | [Configure a network security group](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/configure-network-security-group) | security | 0.80 | Describes specific NSG rules (ports, protocols, directions) required for Managed Lustre, which are detailed security configuration settings. |
 | [Monitoring reference for metrics and logs](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/monitor-file-system-reference) | configuration | 0.80 | Monitoring data reference will list metric names, dimensions, and log schemas unique to this service, which are detailed configuration/telemetry references. |

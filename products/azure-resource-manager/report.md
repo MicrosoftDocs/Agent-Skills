@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-19'
+generated_at: '2026-04-26'
 category_descriptions:
   deployment: 'Deploying and moving Azure resources with ARM/Bicep: CI/CD pipelines,
     template specs, deployment scripts, deployment stacks, and cross-subscription/region
@@ -53,8 +53,8 @@ confusable_not_for: Not for Azure Blueprints (use azure-blueprints), Azure Polic
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 460
+- **Updated Pages**: 1
+- **Unchanged**: 463
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-resource-manager/azure-resource-manager.csv`
 
@@ -77,14 +77,8 @@ confusable_not_for: Not for Azure Blueprints (use azure-blueprints), Azure Polic
 
 ### Updated Pages
 
-- [Resource functions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-functions-resource)
-  - Updated: 2025-12-22T08:00:00.000Z → 2026-04-17T08:00:00.000Z
-- [All functions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-functions)
-  - Updated: 2025-09-11T08:00:00.000Z → 2026-04-17T08:00:00.000Z
-- [Supported resource types](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/tag-support)
-  - Updated: 2026-02-09T08:00:00.000Z → 2026-04-03T08:00:00.000Z
-- [All functions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-functions)
-  - Updated: 2025-07-10T08:00:00.000Z → 2026-04-17T08:00:00.000Z
+- [Create Bicep files - Visual Studio](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/quickstart-create-bicep-use-visual-studio)
+  - Updated: 2025-12-22T08:00:00.000Z → 2026-04-20T17:21:00.000Z
 
 ## Classified Pages
 
@@ -509,7 +503,6 @@ confusable_not_for: Not for Azure Blueprints (use azure-blueprints), Azure Polic
 | [Convert portal template gallery](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-spec-convert) | 0.30 | Primarily a how-to conversion guide from portal gallery templates to template specs without detailed configuration tables, limits, or error mappings. |
 | [Create Bicep files - Bicep MCP Server](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/quickstart-create-bicep-use-visual-studio-code-model-context-protocol) | 0.30 | Quickstart for VS Code and Bicep MCP server; summary suggests walkthrough rather than detailed configuration tables or limits. |
 | [Create Bicep files - VS Code](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/quickstart-create-bicep-use-visual-studio-code) | 0.30 | Quickstart tutorial for using VS Code with Bicep; primarily step-by-step guidance without configuration matrices or limits. |
-| [Create Bicep files - Visual Studio](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/quickstart-create-bicep-use-visual-studio) | 0.30 | Quickstart for Visual Studio authoring; mostly procedural steps, not deep configuration reference or limits. |
 | [Create a custom resource provider](https://learn.microsoft.com/en-us/azure/azure-resource-manager/custom-providers/create-custom-provider) | 0.30 | Quickstart tutorial for creating a custom provider; primarily step-by-step guidance without configuration tables or error-code mappings. |
 | [Create a custom resource provider - Azure PowerShell](https://learn.microsoft.com/en-us/azure/azure-resource-manager/custom-providers/create-custom-provider-quickstart-powershell) | 0.30 | PowerShell quickstart for creating a custom provider; procedural content without detailed config matrices or product-specific troubleshooting. |
 | [Create a management group - .NET](https://learn.microsoft.com/en-us/azure/governance/management-groups/create-management-group-dotnet) | 0.30 | Quickstart for creating a management group with .NET; tutorial-style code, no SDK parameter tables or edge-case guidance. |
@@ -549,6 +542,7 @@ confusable_not_for: Not for Azure Blueprints (use azure-blueprints), Azure Polic
 | [2 - Add resource](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-tutorial-add-resource) | 0.20 | Tutorial for adding a storage account resource to a template; step-by-step example without broader configuration reference or limits. |
 | [Add service group members in Azure portal](https://learn.microsoft.com/en-us/azure/governance/service-groups/create-service-group-member-portal) | 0.20 | Quickstart for adding members via portal; focuses on basic usage and preview notice, not on quotas, configuration matrices, or error-resolution mappings. |
 | [Contribute to Bicep](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview) | 0.20 | High-level overview of Bicep; conceptual description without detailed configs, limits, or troubleshooting. |
+| [Create Bicep files - Visual Studio](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/quickstart-create-bicep-use-visual-studio) | 0.20 | Quickstart tutorial focused on using Visual Studio and the Bicep extension to create and deploy basic resources. It does not present configuration parameter tables, limits/quotas, error-code-based troubleshooting, or product-specific decision matrices. The content is primarily step-by-step guidance rather than expert reference details. |
 | [Create JSON templates - VS Code](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/quickstart-create-templates-use-visual-studio-code) | 0.20 | Quickstart/tutorial for creating ARM templates in VS Code; focuses on step-by-step usage, not detailed configuration tables, limits, or product-specific best practices. |
 | [Create JSON templates - portal](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/quickstart-create-templates-use-the-portal) | 0.20 | Portal-based quickstart for creating and deploying a simple ARM template; no detailed limits, configuration matrices, or troubleshooting content. |
 | [Create a service group in Azure portal](https://learn.microsoft.com/en-us/azure/governance/service-groups/create-service-group-portal) | 0.20 | Quickstart for creating a service group via portal; primarily step-by-step UI instructions without detailed configuration tables, limits, or product-specific troubleshooting content. |

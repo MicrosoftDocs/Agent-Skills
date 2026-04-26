@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-19'
+generated_at: '2026-04-26'
 category_descriptions:
   decision-making: Guidance for choosing Azure SQL vs SQL VMs, comparing pricing/licensing,
     selecting HADR options, and planning migrations (Db2, Oracle, SQL 2014) and regional
@@ -17,8 +17,8 @@ category_descriptions:
     load balancers), storage/layout, editions/versions, IaaS Agent, monitoring, connectivity,
     and deployment automation.'
   best-practices: 'Best practices for SQL Server on Azure VMs: performance tuning,
-    storage/VM sizing, tempdb/ephemeral disks, HADR/FCI/DNN configuration, backups,
-    and planned maintenance readiness.'
+    storage/VM sizing, tempdb, backups/restore, HADR/FCI/DNN configuration, and maintenance
+    planning.'
   security: 'Securing SQL Server on Azure VMs: TLS/cert rotation, Azure Policy, Key
     Vault/EKM, managed identities, Entra auth, hardening guidance, and confidential
     VM deployment.'
@@ -34,14 +34,14 @@ skill_description: Expert knowledge for SQL Server on Azure Virtual Machines dev
   tuning storage/VM sizing, or securing with Key Vault/Entra, and other SQL Server
   on Azure Virtual Machines related development tasks. Not for Azure SQL Database
   (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance),
-  Azure Virtual Machines (use azure-virtual-machines), Azure Database Migration service
-  (use azure-database-migration).
+  Azure Virtual Machines (use azure-virtual-machines), Azure Data Science Virtual
+  Machines (use azure-data-science-vm).
 use_when: Use when choosing Azure SQL vs SQL VMs, configuring Always On/FCI, tuning
   storage/VM sizing, or securing with Key Vault/Entra, and other SQL Server on Azure
   Virtual Machines related development tasks.
 confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure SQL
   Managed Instance (use azure-sql-managed-instance), Azure Virtual Machines (use azure-virtual-machines),
-  Azure Database Migration service (use azure-database-migration).
+  Azure Data Science Virtual Machines (use azure-data-science-vm).
 ---
 # SQL Server on Azure Virtual Machines Crawl Report
 
@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 126
+- **Updated Pages**: 1
+- **Unchanged**: 127
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sql-virtual-machines/azure-sql-virtual-machines.csv`
 
@@ -79,10 +79,8 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 
 ### Updated Pages
 
-- [What's new?](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/doc-changes-updates-release-notes-whats-new?view=azuresql)
-  - Updated: 2026-04-01T08:00:00.000Z → 2026-04-17T17:37:00.000Z
-- [Pricing](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/pricing-guidance?view=azuresql)
-  - Updated: 2025-11-18T08:00:00.000Z → 2026-04-15T17:35:00.000Z
+- [Storage](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/performance-guidelines-best-practices-storage?view=azuresql)
+  - Updated: 2026-04-01T17:39:00.000Z → 2026-04-23T22:39:00.000Z
 
 ## Classified Pages
 
@@ -94,7 +92,6 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | [Transaction log errors in Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/troubleshoot-transaction-log-errors-issues?view=azuresql-mi) | troubleshooting | 0.86 | The page targets Azure SQL Managed Instance and addresses specific transaction log full errors (9002, 40552), explaining their causes and how to resolve them in this particular platform. It follows a symptom → cause → solution structure with platform-specific guidance, which fits the troubleshooting sub-skill and contains expert operational knowledge. |
 | [Connectivity errors](https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-common-errors-issues?view=azuresql) | troubleshooting | 0.85 | Explicitly about connection errors; includes error codes/messages and stepwise diagnosis and resolution for Azure SQL and Fabric SQL. |
 | [Known issues and troubleshooting](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/sql-agent-extension-troubleshoot-known-issues?view=azuresql) | troubleshooting | 0.85 | Explicitly a troubleshooting article with known issues and resolutions for the SQL IaaS Agent extension. |
-| [Storage](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/performance-guidelines-best-practices-storage?view=azuresql) | best-practices | 0.85 | Storage-focused performance best practices for SQL Server on Azure VMs, including product-specific recommendations on disk types, storage pools, and caching strategies that go beyond generic advice. |
 | [Capacity errors during deployment](https://learn.microsoft.com/en-us/azure/azure-sql/capacity-errors-troubleshoot?view=azuresql) | troubleshooting | 0.80 | Guides diagnosis and resolution of capacity errors with specific error messages and recommended actions for SQL Database and Managed Instance. |
 | [Common connection issues](https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-common-connectivity-issues?view=azuresql) | troubleshooting | 0.80 | The article explicitly focuses on preventing, diagnosing, and mitigating connection and transient errors, and will include specific error patterns, connection string options, retry logic settings, and symptom→cause→solution guidance unique to Azure SQL, which fits the troubleshooting category. |
 | [EKM with AKV using managed identities](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/managed-identity-extensible-key-management?view=azuresql) | security | 0.80 | Combines managed identities, TDE EKM, and Key Vault; involves specific security configuration parameters and role assignments unique to this integration. |
@@ -106,6 +103,7 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | [With the Azure portal](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/manage-sql-vm-portal?view=azuresql) | configuration | 0.80 | Explains SQL VM management settings exposed via the SQL virtual machines resource, including SQL-specific configuration options. |
 | [Distributed network name (DNN)](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/failover-cluster-instance-distributed-network-name-dnn-configure?view=azuresql) | configuration | 0.78 | DNN setup for FCI requires specific cluster resource names and Azure networking parameters that are product-specific configuration details. |
 | [SSL root certificate expiring](https://learn.microsoft.com/en-us/azure/azure-sql/updates/ssl-root-certificate-expiring?view=azuresql) | security | 0.78 | Details certificate authority changes and required client configuration updates to maintain secure connections, which are product-specific security settings. |
+| [Storage](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/performance-guidelines-best-practices-storage?view=azuresql) | best-practices | 0.78 | The page provides product-specific performance best practices for SQL Server on Azure VMs, including concrete recommendations on disk type selection, storage pool configuration, and caching strategies tailored to Azure storage. These are actionable DO/DON'T guidelines unique to this environment rather than generic database advice, fitting the best-practices category. |
 | [Virtual network name (VNN)](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/failover-cluster-instance-vnn-azure-load-balancer-configure?view=azuresql) | configuration | 0.78 | Load balancer configuration for FCI VNN typically includes specific port numbers, probe settings, and Azure resource parameters unique to this scenario. |
 | [Automatic registration](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/sql-agent-extension-automatic-registration-all-vms?view=azuresql) | configuration | 0.75 | Covers enabling automatic registration at subscription level, including extension settings and behavior. |
 | [Bulk register multiple VMs](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/sql-agent-extension-manually-register-vms-bulk?view=azuresql) | configuration | 0.75 | Uses a specific PowerShell cmdlet and describes bulk registration behavior and constraints for SQL VMs. |
