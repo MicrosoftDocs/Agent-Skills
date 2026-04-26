@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-04-19'
+generated_at: '2026-04-26'
 category_descriptions:
-  security: 'Securing Azure Container Registry: auth methods, RBAC/ABAC and tokens,
-    network isolation (firewall, Private Link, IP/service tags), data exfiltration
-    controls, image signing/verification, and policy/compliance.'
+  security: 'Securing Azure Container Registry: auth methods, RBAC/ABAC, network isolation
+    (firewalls, Private Link, service endpoints), data exfiltration controls, image
+    signing/verification, and compliance/policy.'
   configuration: 'Configuring ACR behavior: caching, purge/retention/soft delete,
     delete locks, tasks (YAML, timers, multi-step, patching, agent pools), webhooks,
     wildcard cache rules, and monitoring.'
@@ -28,14 +28,14 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Container Registry development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when using ACR Tasks, geo-replication, Private Link, connected registries, or
-  image signing with Notation, and other Azure Container Registry related development
-  tasks. Not for Azure Container Apps (use azure-container-apps), Azure Container
-  Instances (use azure-container-instances), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
-  Azure Red Hat OpenShift (use azure-redhat-openshift).
-use_when: Use when using ACR Tasks, geo-replication, Private Link, connected registries,
-  or image signing with Notation, and other Azure Container Registry related development
-  tasks.
+  Use when managing ACR auth/network isolation, tasks & webhooks, geo-replication,
+  connected registries, or image signing, and other Azure Container Registry related
+  development tasks. Not for Azure Container Apps (use azure-container-apps), Azure
+  Container Instances (use azure-container-instances), Azure Kubernetes Service (AKS)
+  (use azure-kubernetes-service), Azure Red Hat OpenShift (use azure-redhat-openshift).
+use_when: Use when managing ACR auth/network isolation, tasks & webhooks, geo-replication,
+  connected registries, or image signing, and other Azure Container Registry related
+  development tasks.
 confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azure
   Container Instances (use azure-container-instances), Azure Kubernetes Service (AKS)
   (use azure-kubernetes-service), Azure Red Hat OpenShift (use azure-redhat-openshift).
@@ -44,16 +44,16 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 
 ## Summary
 
-- **Total Pages**: 122
-- **Fetched**: 122
+- **Total Pages**: 123
+- **Fetched**: 123
 - **Fetch Failed**: 0
-- **Classified**: 88
+- **Classified**: 89
 - **Unclassified**: 34
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 121
+- **New Pages**: 1
+- **Updated Pages**: 0
+- **Unchanged**: 122
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-container-registry/azure-container-registry.csv`
 
@@ -63,21 +63,20 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 |------|-------|------------|
 | architecture-patterns | 2 | 1.6% |
 | best-practices | 4 | 3.3% |
-| configuration | 14 | 11.5% |
-| decision-making | 3 | 2.5% |
-| deployment | 3 | 2.5% |
+| configuration | 14 | 11.4% |
+| decision-making | 3 | 2.4% |
+| deployment | 3 | 2.4% |
 | integrations | 12 | 9.8% |
 | limits-quotas | 2 | 1.6% |
-| security | 36 | 29.5% |
+| security | 37 | 30.1% |
 | troubleshooting | 12 | 9.8% |
-| *(Unclassified)* | 34 | 27.9% |
+| *(Unclassified)* | 34 | 27.6% |
 
 ## Changes
 
-### Updated Pages
+### New Pages
 
-- [Overview](https://learn.microsoft.com/en-us/azure/container-registry/artifact-cache-overview)
-  - Updated: 2025-12-01T23:09:00.000Z → 2026-04-14T22:12:00.000Z
+- [Enable artifact cache from another ACR registry](https://learn.microsoft.com/en-us/azure/container-registry/artifact-cache-acr-to-acr-cli)
 
 ## Classified Pages
 
@@ -135,6 +134,7 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/container-registry/policy-reference) | security | 0.70 | Index of ACR-specific Azure Policy built-ins with names and links to definitions; these are concrete security/governance configurations unique to the product. |
 | [Customer managed keys - Overview](https://learn.microsoft.com/en-us/azure/container-registry/tutorial-customer-managed-keys) | security | 0.70 | Tutorial on customer-managed keys for ACR Premium; likely includes Key Vault integration details and ACR-specific encryption settings. |
 | [Enable artifact cache - CLI](https://learn.microsoft.com/en-us/azure/container-registry/artifact-cache-cli) | configuration | 0.70 | CLI-focused article for enabling artifact cache with/without auth; likely includes specific parameters and allowed values for configuration. |
+| [Enable artifact cache from another ACR registry](https://learn.microsoft.com/en-us/azure/container-registry/artifact-cache-acr-to-acr-cli) | security | 0.70 | The article provides product-specific, step-by-step configuration for enabling artifact caching between Azure Container Registries using managed identity. It includes concrete CLI/Bicep configuration patterns, identity setup, and permission assignments unique to ACR’s artifact cache feature. This is expert, implementation-level security/identity configuration rather than a generic tutorial. |
 | [Geo-replication](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-geo-replication) | decision-making | 0.70 | Geo-replication guidance for ACR (Premium-only) usually includes when to use geo-replication, region selection considerations, and trade-offs around latency, availability, and cost across regions. It helps decide whether and how to use geo-replication for different scenarios, aligning with decision-making. While it mentions the Premium SKU requirement (a limit), the core value is guiding regional replication choices rather than listing numeric quotas. |
 | [Import container images](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-import-images) | integrations | 0.70 | Describes ACR-specific import operations via Azure APIs, including supported scenarios and parameters for copying images and artifacts. |
 | [Kubernetes authentication scenarios](https://learn.microsoft.com/en-us/azure/container-registry/authenticate-kubernetes-options) | decision-making | 0.70 | Compares multiple auth mechanisms for different Kubernetes environments and scenarios; helps choose between options with scenario-based guidance, fitting decision-making. |

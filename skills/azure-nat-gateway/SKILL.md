@@ -3,7 +3,7 @@ name: azure-nat-gateway
 description: Expert knowledge for Azure NAT Gateway development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, configuration, and deployment. Use when managing SNAT ports, outbound IPs, flow logs, hub-spoke egress, or Azure Firewall integration, and other Azure NAT Gateway related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-19"
+  generated_at: "2026-04-26"
   generator: "docs2skills/1.0.0"
 ---
 # Azure NAT Gateway Skill
@@ -30,7 +30,7 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L52-L60 | Design patterns for placing NAT Gateway in VNets, hub-spoke, with NVAs, and with internal/public load balancers, plus scaling outbound traffic and combining with Azure Firewall. |
 | Limits & Quotas | L61-L65 | NAT Gateway limits, SNAT port quotas, connection scaling behavior, per-resource caps, and FAQs on throughput, IPs, and troubleshooting limit-related issues. |
 | Configuration | L66-L74 | Configuring NAT Gateway (Standard and StandardV2), managing IPs/resources, setting up flow logs, and configuring monitoring, metrics, and alerts for gateway traffic. |
-| Deployment | L75-L80 | How to deploy and redeploy NAT Gateway (ARM/Bicep), migrate or move outbound traffic from VMs/public IPs, and transition existing outbound access to Azure NAT Gateway. |
+| Deployment | L75-L79 | How to deploy and redeploy NAT Gateway (ARM/Bicep), migrate or move outbound traffic from VMs/public IPs, and transition existing outbound access to Azure NAT Gateway. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -75,6 +75,5 @@ This skill requires **network access** to fetch documentation content:
 ### Deployment
 | Topic | URL |
 |-------|-----|
-| Deploy Standard V2 NAT Gateway with ARM/Bicep | https://learn.microsoft.com/en-us/azure/nat-gateway/quickstart-create-nat-gateway-v2-templates |
 | Redeploy NAT Gateway after cross-region resource move | https://learn.microsoft.com/en-us/azure/nat-gateway/region-move-nat-gateway |
 | Move VM public IP outbound traffic to NAT Gateway | https://learn.microsoft.com/en-us/azure/nat-gateway/tutorial-migrate-ilip-nat |

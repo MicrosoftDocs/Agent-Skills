@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-19'
+generated_at: '2026-04-26'
 category_descriptions:
   limits-quotas: Info on Private Link service availability per resource type and how
     to raise per‑VNet Private Endpoint limits using High Scale configuration
@@ -64,8 +64,8 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ### Updated Pages
 
-- [Private DNS zone values](https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-dns)
-  - Updated: 2025-08-04T08:00:00.000Z → 2026-04-17T08:00:00.000Z
+- [What is a network security perimeter?](https://learn.microsoft.com/en-us/azure/private-link/network-security-perimeter-concepts)
+  - Updated: 2025-08-01T08:00:00.000Z → 2026-04-20T11:11:00.000Z
 
 ## Classified Pages
 
@@ -110,7 +110,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Export private endpoint DNS records](https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-export-dns) | 0.30 | Tutorial on exporting DNS records via portal; operational steps but no detailed configuration parameter tables or numeric constraints. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/private-link/private-link-faq) | 0.30 | FAQ page likely mixes conceptual Q&A; summary does not indicate specific numeric limits, config tables, or error-code-based troubleshooting. |
 | [Monitor Private Link](https://learn.microsoft.com/en-us/azure/private-link/monitor-private-link) | 0.30 | Monitoring overview for Azure Private Link; describes available metrics/logs and tools but summary does not indicate specific numeric limits, configuration parameter tables, or error-code-based troubleshooting. Likely general guidance LLM already knows. |
-| [What is a network security perimeter?](https://learn.microsoft.com/en-us/azure/private-link/network-security-perimeter-concepts) | 0.30 | Explains what Network Security Perimeter is and its benefits; no specific RBAC lists, config parameters, or numeric thresholds. |
 | [Connect to a SQL server - Azure CLI](https://learn.microsoft.com/en-us/azure/private-link/tutorial-private-endpoint-sql-cli) | 0.25 | Tutorial for connecting to Azure SQL via Private Endpoint using CLI; scenario walkthrough rather than reference limits, configuration matrices, or troubleshooting. |
 | [Create a network security perimeter - Azure CLI](https://learn.microsoft.com/en-us/azure/private-link/create-network-security-perimeter-cli) | 0.25 | CLI quickstart for network security perimeter; tutorial-style content without expert-level configuration matrices or limits. |
 | [Create a network security perimeter - Azure portal](https://learn.microsoft.com/en-us/azure/private-link/create-network-security-perimeter-portal) | 0.25 | Portal quickstart for creating a network security perimeter; procedural steps without detailed RBAC role lists, config parameter tables, or numeric limits. |
@@ -120,6 +119,7 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Create a Private Link service - Azure portal](https://learn.microsoft.com/en-us/azure/private-link/create-private-link-service-portal) | 0.20 | Quickstart using Azure portal; step-by-step creation of a Private Link service without detailed configuration option tables or expert-only constraints. |
 | [Create a Private Link service - Bicep](https://learn.microsoft.com/en-us/azure/private-link/create-private-link-service-bicep) | 0.20 | Bicep quickstart; focuses on example deployment, not exhaustive configuration parameters, limits, or troubleshooting mappings. |
 | [Create a Private Link service - PowerShell](https://learn.microsoft.com/en-us/azure/private-link/create-private-link-service-powershell) | 0.20 | PowerShell quickstart for creating a Private Link service; primarily procedural tutorial, not a configuration reference or troubleshooting guide. |
+| [What is a network security perimeter?](https://learn.microsoft.com/en-us/azure/private-link/network-security-perimeter-concepts) | 0.20 | Conceptual overview of Azure Network Security Perimeter; describes what NSP is and its purpose but does not list specific limits, configuration parameter tables, RBAC role details, or troubleshooting error codes. No expert-only numeric thresholds, decision matrices, or product-specific configuration references. |
 | [Private Link service](https://learn.microsoft.com/en-us/azure/private-link/private-link-service-overview) | 0.10 | Service overview for Azure Private Link service; primarily conceptual without expert-level numeric limits or config matrices. |
 | [What is Azure Private Link?](https://learn.microsoft.com/en-us/azure/private-link/private-link-overview) | 0.10 | High-level overview of Azure Private Link features and architecture without detailed limits, configuration tables, or error mappings. |
 | [What is a private endpoint?](https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview) | 0.10 | Conceptual overview of private endpoints; no detailed quotas, config parameter tables, or troubleshooting content. |

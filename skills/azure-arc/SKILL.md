@@ -1,9 +1,9 @@
 ---
 name: azure-arc
-description: Expert knowledge for Azure Arc development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing Arc-enabled Kubernetes, servers/VMs, SQL MI, Edge RAG, resource bridge, or Arc data services, and other Azure Arc related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Virtual Machines (use azure-virtual-machines), Azure Stack Edge (use azure-stack-edge), Azure VMware Solution (use azure-vmware-solution).
+description: Expert knowledge for Azure Arc development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing Arc-enabled Kubernetes, servers/VMs, SQL MI, Edge RAG, resource bridge, or Arc data services, and other Azure Arc related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Stack Edge (use azure-stack-edge), Azure Virtual Machines (use azure-virtual-machines), Azure Resource Manager (use azure-resource-manager).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-19"
+  generated_at: "2026-04-26"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Arc Skill
@@ -30,7 +30,7 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L103-L111 | Patterns for Arc data/compute design: container storage data flow, Arc Edge Volumes, HA/DR for Arc SQL MI and failover groups, and advanced Edge RAG data parsing. |
 | Limits & Quotas | L112-L127 | Limits, quotas, versions, and requirements for Arc-enabled Kubernetes, Edge RAG, Arc data services, resource bridge, and billing/ESU behavior for connected machines and Windows Server. |
 | Security | L128-L186 | Securing Azure Arc: identity, RBAC, AD/Entra auth, keytabs, TDE, certificates, network/Private Link, policies, and hardening for Kubernetes, servers, SQL MI, Edge RAG, SCVMM, and vSphere. |
-| Configuration | L187-L286 | Configuring Azure Arc infrastructure and data services: storage, networking, GitOps, monitoring, security, Edge RAG, agents/extensions, and lifecycle tasks for Arc-enabled Kubernetes, servers, and data. |
+| Configuration | L187-L286 | How to configure and manage Azure Arc infrastructure, data services, Edge RAG, Kubernetes (GitOps, cert-manager, Key Vault), networking, monitoring, and VM/agent settings. |
 | Integrations & Coding Patterns | L287-L310 | Programmatic and automation patterns for Azure Arc: CLI/PowerShell/ARM/SDK usage, onboarding at scale, VM extensions, monitoring/security integration, and infrastructure-as-code workflows. |
 | Deployment | L311-L342 | Deploying and upgrading Azure Arc components: data controllers, Edge RAG, resource bridge, agents (Kubernetes, VMs, SCVMM, vSphere), plus prerequisites, support matrices, and clean removal steps. |
 
@@ -242,7 +242,7 @@ This skill requires **network access** to fetch documentation content:
 | Use Azure portal Kubernetes resource view for Arc-enabled clusters | https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/kubernetes-resource-view |
 | Use version-managed extensions on Arc-enabled Kubernetes | https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/managed-extensions |
 | Monitor Flux v2 GitOps status on Arc and AKS | https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/monitor-gitops-flux-2 |
-| Configure Azure Key Vault Secret Store extension on Arc Kubernetes | https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/secret-store-extension |
+| Configure Azure Key Vault Secret Store extension for Arc Kubernetes | https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/secret-store-extension |
 | Configure Azure Key Vault Secret Store Extension on Arc Kubernetes | https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/secret-store-extension-reference |
 | Configure AKV Secrets Provider extension on Arc Kubernetes | https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/tutorial-akv-secrets-provider |
 | Apply Flux v2 configurations at scale with Azure Policy | https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/use-azure-policy-flux-2 |

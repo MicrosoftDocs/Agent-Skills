@@ -3,7 +3,7 @@ name: azure-partner-solutions
 description: Expert knowledge for Azure Partner Solutions development including troubleshooting, decision making, architecture & design patterns, security, configuration, and integrations & coding patterns. Use when using Service Connector, Confluent Cloud, MongoDB Atlas, Dynatrace APM, or Palo Alto Cloud NGFW on Azure, and other Azure Partner Solutions related development tasks. Not for Azure Industry (use azure-industry), Azure Managed Applications (use azure-managed-applications), Azure Lighthouse (use azure-lighthouse), Azure Networking (use azure-networking).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-05"
+  generated_at: "2026-04-26"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Partner Solutions Skill

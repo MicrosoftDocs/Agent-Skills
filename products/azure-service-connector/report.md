@@ -41,8 +41,8 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 6
-- **Unchanged**: 57
+- **Updated Pages**: 0
+- **Unchanged**: 63
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-connector/azure-service-connector.csv`
 
@@ -59,21 +59,6 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | *(Unclassified)* | 28 | 44.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [Azure File](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-storage-file)
-  - Updated: 2024-09-11T11:20:00.000Z → 2026-04-13T11:11:00.000Z
-- [Azure Queue Storage](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-storage-queue)
-  - Updated: 2024-09-25T11:13:00.000Z → 2026-04-13T17:16:00.000Z
-- [Azure Web PubSub](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-web-pubsub)
-  - Updated: 2024-09-11T11:20:00.000Z → 2026-04-13T17:16:00.000Z
-- [Python app to PostgreSQL](https://learn.microsoft.com/en-us/azure/service-connector/tutorial-django-webapp-postgres-cli)
-  - Updated: 2024-09-23T11:17:00.000Z → 2026-04-17T11:12:00.000Z
-- [Manage authentication](https://learn.microsoft.com/en-us/azure/service-connector/how-to-manage-authentication)
-  - Updated: 2025-05-12T08:00:00.000Z → 2026-04-13T22:10:00.000Z
-- [Troubleshoot](https://learn.microsoft.com/en-us/azure/service-connector/how-to-troubleshoot-front-end-error)
-  - Updated: 2023-10-19T08:00:00.000Z → 2026-04-13T17:16:00.000Z
 
 ## Classified Pages
 

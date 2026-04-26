@@ -53,8 +53,8 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure API Man
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 228
+- **Updated Pages**: 0
+- **Unchanged**: 229
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-logic-apps/azure-logic-apps.csv`
 
@@ -74,11 +74,6 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure API Man
 | *(Unclassified)* | 42 | 18.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [Parse or chunk content](https://learn.microsoft.com/en-us/azure/logic-apps/parse-document-chunk-text)
-  - Updated: 2026-03-11T08:00:00.000Z → 2026-04-13T08:00:00.000Z
 
 ## Classified Pages
 

@@ -1,18 +1,18 @@
 ---
-generated_at: '2026-04-19'
+generated_at: '2026-04-26'
 category_descriptions:
   decision-making: 'Planning and sizing Azure Site Recovery: choosing tools vs Azure
     Migrate, VMware/Hyper-V DR capacity and cost estimation, managed disk pricing,
     failover/failback options, and classic-to-modern migration.'
-  configuration: 'Configuring Azure Site Recovery for VMs and clusters (Azure, VMware,
-    Hyper‑V, physical): replication setup, networking, encryption, appliances, policies,
+  configuration: 'Configuring Azure Site Recovery for Azure, VMware, Hyper‑V, and
+    physical servers: replication setup, networking, encryption, appliances, policies,
     monitoring, failover and failback settings.'
   troubleshooting: Diagnosing and fixing Azure Site Recovery replication, failover,
     agent/extension, network, and appliance issues for Azure VMs, Hyper-V, VMware,
     and physical servers.
-  limits-quotas: 'Site Recovery scale, capacity, and support limits: VM/Hyper‑V/VMware
-    matrices, high‑churn limits, shared disks, Mobility service usage, planner limits,
-    and safe use with Azure Backup.'
+  limits-quotas: Support limits, capacity planning, and compatibility matrices for
+    Azure Site Recovery (VMware/Hyper-V/physical/Azure VMs), including churn limits,
+    shared disks, Mobility service usage, and safe use with Backup.
   integrations: 'Scripts and templates for automating ASR: PowerShell for Hyper‑V/shared
     disks, ExpressRoute/Traffic Manager integration, and Bicep/ARM/Terraform to deploy
     Recovery Services vaults.'
@@ -30,17 +30,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Site Recovery development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when planning ASR for VMware/Hyper‑V, automating vaults via ARM/Bicep/Terraform,
-  or designing DR for SQL/SAP/AD workloads, and other Azure Site Recovery related
-  development tasks. Not for Azure Backup (use azure-backup), Azure Migrate (use azure-migrate),
-  Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Machine Scale
-  Sets (use azure-vm-scalesets).
-use_when: Use when planning ASR for VMware/Hyper‑V, automating vaults via ARM/Bicep/Terraform,
-  or designing DR for SQL/SAP/AD workloads, and other Azure Site Recovery related
-  development tasks.
+  Use when planning ASR for VMware/Hyper‑V, scripting vaults with ARM/Bicep/Terraform,
+  or protecting SAP/SQL/AD workloads, and other Azure Site Recovery related development
+  tasks. Not for Azure Backup (use azure-backup), Azure Migrate (use azure-migrate),
+  Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Network (use
+  azure-virtual-network).
+use_when: Use when planning ASR for VMware/Hyper‑V, scripting vaults with ARM/Bicep/Terraform,
+  or protecting SAP/SQL/AD workloads, and other Azure Site Recovery related development
+  tasks.
 confusable_not_for: Not for Azure Backup (use azure-backup), Azure Migrate (use azure-migrate),
-  Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Machine Scale
-  Sets (use azure-vm-scalesets).
+  Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Network (use
+  azure-virtual-network).
 ---
 # Azure Site Recovery Crawl Report
 
@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Backup (use azure-backup), Azure Migrate (use 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 6
-- **Unchanged**: 196
+- **Updated Pages**: 2
+- **Unchanged**: 200
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-site-recovery/azure-site-recovery.csv`
 
@@ -78,18 +78,10 @@ confusable_not_for: Not for Azure Backup (use azure-backup), Azure Migrate (use 
 
 ### Updated Pages
 
-- [On Azure VMs](https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-how-to-enable-replication)
-  - Updated: 2025-10-31T08:00:00.000Z → 2026-04-14T17:11:00.000Z
-- [Manage the configuration server for VMware](https://learn.microsoft.com/en-us/azure/site-recovery/vmware-azure-manage-configuration-server)
-  - Updated: 2026-01-23T23:11:00.000Z → 2026-04-15T08:00:00.000Z
-- [Feature releases](https://learn.microsoft.com/en-us/azure/site-recovery/feature-updates-whats-new)
-  - Updated: 2025-06-13T08:00:00.000Z → 2026-04-14T08:00:00.000Z
-- [Azure to Azure](https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-support-matrix)
-  - Updated: 2026-02-27T08:00:00.000Z → 2026-04-14T08:00:00.000Z
-- [Configure on-premise disks for Azure through Hydration](https://learn.microsoft.com/en-us/azure/site-recovery/hydration-process)
-  - Updated: 2026-02-27T08:00:00.000Z → 2026-04-15T08:00:00.000Z
-- [Walkthrough-Set up disaster recovery](https://learn.microsoft.com/en-us/azure/site-recovery/physical-azure-disaster-recovery)
-  - Updated: 2025-10-31T08:00:00.000Z → 2026-04-15T08:00:00.000Z
+- [Support requirements for Azure Site Recovery replication appliance](https://learn.microsoft.com/en-us/azure/site-recovery/replication-appliance-support-matrix)
+  - Updated: 2026-03-02T12:12:00.000Z → 2026-04-21T17:17:00.000Z
+- [Enable on-premises replication with private endpoints](https://learn.microsoft.com/en-us/azure/site-recovery/hybrid-how-to-enable-replication-private-endpoints)
+  - Updated: 2025-05-11T08:00:00.000Z → 2026-04-21T17:17:00.000Z
 
 ## Classified Pages
 
@@ -122,15 +114,14 @@ confusable_not_for: Not for Azure Backup (use azure-backup), Azure Migrate (use 
 | [Analyze the cost estimation report](https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-vmware-deployment-planner-cost-estimation) | decision-making | 0.80 | Provides detailed DR cost estimation per VM and summary graphs; used for cost-based decision-making with quantified trade-offs. |
 | [Configure Mobility Service Proxy Settings](https://learn.microsoft.com/en-us/azure/site-recovery/configure-mobility-service-proxy-settings) | configuration | 0.80 | Proxy configuration for Mobility Service is highly product-specific, with concrete parameters and steps for networking configuration. |
 | [Configure replication settings](https://learn.microsoft.com/en-us/azure/site-recovery/vmware-azure-set-up-replication) | configuration | 0.80 | Describes policy parameters (RPO, retention, frequency) for VMware replication; product-specific configuration options and ranges. |
-| [Enable on-premises replication with private endpoints](https://learn.microsoft.com/en-us/azure/site-recovery/hybrid-how-to-enable-replication-private-endpoints) | configuration | 0.80 | Private endpoint setup requires specific subnet, DNS, and vault endpoint configuration parameters and constraints; includes product-specific settings and limitations (e.g., no automatic upgrades). |
 | [Enable replication with private endpoints](https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-how-to-enable-replication-private-endpoints) | configuration | 0.80 | Covers use of Private Link endpoints for vault access, including reference architecture and required settings; product-specific networking configuration. |
 | [Exclude disks](https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-exclude-disks) | configuration | 0.80 | Uses Az PowerShell with specific cmdlets/parameters to exclude disks; SDK/API-level configuration details unique to Site Recovery. |
 | [Manage network interfaces for on-premises to Azure replication](https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-manage-network-interfaces-on-premises-to-azure) | configuration | 0.80 | Discusses NIC limits per VM size and primary/secondary NIC behavior in Site Recovery scenarios; includes specific configuration constraints and mappings. |
 | [On CMK enabled disks](https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-how-to-enable-replication-cmk-disks) | configuration | 0.80 | Product-specific guidance for CMK-enabled disks replication; includes required Key Vault, disk, and Site Recovery settings. |
 | [On encrypted VMs](https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-how-to-enable-replication-ade-vms) | configuration | 0.80 | Details support matrix (Windows vs Linux, ADE versions, managed vs unmanaged disks) and required settings; product-specific encryption configuration and constraints. |
-| [Support requirements for Azure Site Recovery replication appliance](https://learn.microsoft.com/en-us/azure/site-recovery/replication-appliance-support-matrix) | limits-quotas | 0.80 | Describes support and requirements for the replication appliance, which typically includes specific OS versions, resource minimums, and configuration constraints. These are concrete support/limit details that qualify as expert knowledge. |
 | [Using Site Recovery with Azure Backup](https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-backup-interoperability) | limits-quotas | 0.80 | Interoperability matrix between Site Recovery and Backup includes specific supported/unsupported combinations and constraints (e.g., scenarios where MARS agents can’t co-exist). |
 | [Azure to Azure](https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-support-matrix) | limits-quotas | 0.78 | Support matrices for Azure Site Recovery typically list precise supported/unsupported configurations, OS versions, disk types, and sometimes size or count constraints per scenario and region. These are product-specific, versioned details that an LLM won't reliably know from training and function as de facto limits/constraints for what is supported. |
+| [Support requirements for Azure Site Recovery replication appliance](https://learn.microsoft.com/en-us/azure/site-recovery/replication-appliance-support-matrix) | limits-quotas | 0.78 | Support/requirements matrix pages for Azure Site Recovery typically list exact supported versions, capacities, and constraints (for example, supported VMware versions, OS versions, and other hard requirements). These are product-specific, numeric/variant limits that change over time and are not reliably known from pretraining, fitting the limits-quotas category best. |
 | [Enable replication for VMware VMs](https://learn.microsoft.com/en-us/azure/site-recovery/vmware-azure-enable-replication) | configuration | 0.75 | Describes enabling VMware VM replication; includes Site Recovery-specific configuration parameters and prerequisites. |
 | [Enable replication for a physical server - Modernized](https://learn.microsoft.com/en-us/azure/site-recovery/physical-server-enable-replication) | configuration | 0.75 | How-to for enabling physical server replication; includes agent/appliance configuration and supported settings. |
 | [For an added disk](https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-enable-replication-added-disk) | configuration | 0.75 | Explains behavior when adding disks to already-protected VMs and how to enable replication; includes Site Recovery-specific state transitions and options. |
@@ -152,6 +143,7 @@ confusable_not_for: Not for Azure Backup (use azure-backup), Azure Migrate (use 
 | [Deprecation of Site Recovery data encryption](https://learn.microsoft.com/en-us/azure/site-recovery/encryption-feature-deprecation) | security | 0.70 | Deprecation article will specify which encryption options/parameters are affected and required remediation steps, including security-related configuration details. |
 | [Deprecation of classic experience](https://learn.microsoft.com/en-us/azure/site-recovery/vmware-physical-azure-classic-deprecation) | decision-making | 0.70 | Deprecation article with dates and alternative options; helps decide migration paths and timelines, which is decision-making guidance. |
 | [Deprecation of parameters - New-AzRecoveryServicesAsrVMNicConfig cmdlet](https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-ipconfig-cmdlet-parameter-deprecation) | configuration | 0.70 | Describes deprecation of specific PowerShell cmdlet parameters and the alternative cmdlet; this is product-specific configuration guidance with exact cmdlet/parameter names and behavioral implications. |
+| [Enable on-premises replication with private endpoints](https://learn.microsoft.com/en-us/azure/site-recovery/hybrid-how-to-enable-replication-private-endpoints) | configuration | 0.70 | The article gives product-specific configuration steps and constraints for enabling replication via Azure Private Link, including which components must use private endpoints and support/behavior details (for example, automatic upgrades not supported). This is concrete, service-specific configuration knowledge rather than a generic overview. |
 | [Enable replication between zones within a region](https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-how-to-enable-zone-to-zone-disaster-recovery) | configuration | 0.70 | Explains how to configure replication/failover between availability zones; includes Site Recovery-specific zone configuration behavior. |
 | [Examples for retaining IP addresses after failover](https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-retain-ip-azure-vm-failover) | configuration | 0.70 | Provides concrete scenarios and configuration steps to keep IPs across regions; involves product-specific networking settings and constraints. |
 | [ExpressRoute with Azure VM disaster recovery](https://learn.microsoft.com/en-us/azure/site-recovery/azure-vm-disaster-recovery-with-expressroute) | integrations | 0.70 | Describes integration of ExpressRoute with Site Recovery; includes product-specific connectivity patterns and configuration details. |

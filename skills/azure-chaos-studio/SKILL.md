@@ -1,9 +1,9 @@
 ---
 name: azure-chaos-studio
-description: Expert knowledge for Chaos Studio development including troubleshooting, limits & quotas, security, configuration, and integrations & coding patterns. Use when defining ARM/Bicep experiments, deploying Chaos Agents, using CLI/REST, or integrating with Azure Monitor, and other Chaos Studio related development tasks. Not for Azure Monitor (use azure-monitor), Azure Resiliency (use azure-resiliency), Azure Reliability (use azure-reliability), Azure Site Recovery (use azure-site-recovery).
+description: Expert knowledge for Chaos Studio development including troubleshooting, limits & quotas, security, configuration, and integrations & coding patterns. Use when securing Chaos Studio targets, deploying agents via ARM/Bicep, tuning faults, or automating via CLI/REST, and other Chaos Studio related development tasks. Not for Azure Monitor (use azure-monitor), Azure Resiliency (use azure-resiliency), Azure Reliability (use azure-reliability), Azure Site Recovery (use azure-site-recovery).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-16"
+  generated_at: "2026-04-26"
   generator: "docs2skills/1.0.0"
 ---
 # Chaos Studio Skill
@@ -27,7 +27,7 @@ This skill requires **network access** to fetch documentation content:
 | Troubleshooting | L33-L40 | Diagnosing and fixing Chaos Studio and Chaos Agent issues, including installation/health problems, VM agent status checks, known errors, and common experiment or connectivity failures. |
 | Limits & Quotas | L41-L48 | Chaos Studio limits: agent OS/fault compatibility, known issues, regional/HA behavior, and throttling, quotas, and usage constraints for experiments |
 | Security | L49-L63 | Securing Chaos Studio: identities, roles, permissions, CMK encryption, network/IP controls, Private Link, VNet injection, AKS auth, and safely controlling experiment targets/capabilities. |
-| Configuration | L64-L76 | Configuring Chaos Studio: ARM/Bicep experiment definitions, deploying agents/targets, parameters, Azure Monitor/Workbook integration, OS/tool compatibility, and onboarding via Azure Policy |
+| Configuration | L64-L76 | Configuring Chaos Studio: deploy agents/targets via ARM/Bicep, set fault/action parameters, integrate with Azure Monitor/Workbooks/Policy, and verify OS/tool compatibility. |
 | Integrations & Coding Patterns | L77-L82 | Using CLI/REST to create and manage Chaos Studio experiments, plus patterns for sending Chaos Agent telemetry to Application Insights and integrating experiments into automated workflows |
 
 ### Troubleshooting
@@ -70,7 +70,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure Azure Workbook to measure Chaos Studio faults | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-fault-metrics-and-dashboard |
 | Configure Azure Monitor integration for Chaos Studio | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-set-up-azure-monitor |
 | Check OS and tool compatibility for Chaos Studio | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-versions |
-| Use Azure Policy to onboard resources to Chaos Studio | https://learn.microsoft.com/en-us/azure/chaos-studio/sample-policy-targets |
+| Use Azure Policy to auto-add Chaos Studio targets | https://learn.microsoft.com/en-us/azure/chaos-studio/sample-policy-targets |
 | Define Chaos Studio experiments using ARM templates | https://learn.microsoft.com/en-us/azure/chaos-studio/sample-template-experiment |
 | Deploy Chaos Studio targets and capabilities via ARM | https://learn.microsoft.com/en-us/azure/chaos-studio/sample-template-targets |
 

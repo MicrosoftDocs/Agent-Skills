@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-19'
+generated_at: '2026-04-26'
 category_descriptions:
   integrations: Coding patterns and integration guides for FHIR, DICOM, MedTech, and
     de-identification APIs, including REST/SDK usage, bulk ops, data pipelines, and
@@ -52,8 +52,8 @@ confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure API M
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 5
-- **Unchanged**: 197
+- **Updated Pages**: 1
+- **Unchanged**: 201
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-health-data-services/azure-health-data-services.csv`
 
@@ -76,16 +76,8 @@ confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure API M
 
 ### Updated Pages
 
-- [Regional availability of services & features](https://learn.microsoft.com/en-us/azure/healthcare-apis/services-features-regional-availability)
-  - Updated: 2025-09-08T22:37:00.000Z → 2026-04-16T06:12:00.000Z
-- [Get an access token](https://learn.microsoft.com/en-us/azure/healthcare-apis/get-access-token)
-  - Updated: 2025-06-02T08:00:00.000Z → 2026-04-14T06:14:00.000Z
 - [2026](https://learn.microsoft.com/en-us/azure/healthcare-apis/release-notes-2026)
-  - Updated: 2026-04-09T17:25:00.000Z → 2026-04-13T22:10:00.000Z
-- [Known issues](https://learn.microsoft.com/en-us/azure/healthcare-apis/known-issues)
-  - Updated: 2026-02-24T23:11:00.000Z → 2026-04-16T06:12:00.000Z
-- [Release notes](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/release-notes-2026)
-  - Updated: 2026-03-26T22:23:00.000Z → 2026-04-12T06:11:00.000Z
+  - Updated: 2026-04-13T22:10:00.000Z → 2026-04-22T19:06:00.000Z
 
 ## Classified Pages
 
@@ -283,6 +275,7 @@ confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure API M
 | [Reliability](https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/reliability-health-data-services-deidentification) | 0.30 | High-level reliability guidance (active-active, Azure Front Door) without evidence of specific limits, configuration parameter tables, or decision matrices that meet any sub-skill criteria. |
 | [Transparency Note](https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/transparency-note) | 0.30 | Transparency note is conceptual/responsible AI oriented; lacks concrete configuration parameters, limits, or troubleshooting details. |
 | [What is the DICOM service?](https://learn.microsoft.com/en-us/azure/healthcare-apis/dicom/overview) | 0.30 | High-level overview of the DICOM service benefits and use cases; primarily conceptual/marketing without detailed configuration or limits. |
+| [2026](https://learn.microsoft.com/en-us/azure/healthcare-apis/release-notes-2026) | 0.20 | Monthly release notes typically list new features and fixes but not structured limits, configuration matrices, error-code troubleshooting flows, or decision tables as defined in the sub-skill types. The description/summary do not indicate presence of numeric limits, config parameter tables, RBAC details, or other expert-knowledge patterns. |
 | [Azure API for FHIR](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/overview) | 0.20 | Azure API for FHIR overview plus retirement notice; no evidence of detailed limits, configuration parameters, or troubleshooting mappings. |
 | [Azure Health Data Services quickstart](https://learn.microsoft.com/en-us/azure/healthcare-apis/healthcare-apis-quickstart) | 0.20 | Quickstart for creating a workspace via portal; primarily step-by-step tutorial without detailed configuration parameter tables or product-specific constraints. |
 | [CMS Interoperability and Patient Access rule introduction](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/centers-for-medicare-tutorial-introduction) | 0.20 | Tutorial series introduction; high-level description of CMS rule and implementation guides, not detailed configuration or troubleshooting content. |
@@ -296,5 +289,4 @@ confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure API M
 | [FHIR service](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/overview) | 0.10 | Overview of FHIR service capabilities; no concrete limits, config parameters, or troubleshooting mappings are indicated. |
 | [What is Azure Health Data Services?](https://learn.microsoft.com/en-us/azure/healthcare-apis/healthcare-apis-overview) | 0.10 | High-level product overview of Azure Health Data Services without numeric limits, configuration tables, or detailed error/security specifics. |
 | [Workspace overview](https://learn.microsoft.com/en-us/azure/healthcare-apis/workspace-overview) | 0.10 | High-level overview of Azure Health Data Services workspace; no specific limits, configuration tables, security roles, or troubleshooting details. |
-| [2026](https://learn.microsoft.com/en-us/azure/healthcare-apis/release-notes-2026) | - | Release notes summary only; no specific fixes, configuration details, or error codes are provided in the description. Without concrete technical content, it does not meet the expert knowledge criteria. |
 | [GitHub projects](https://learn.microsoft.com/en-us/azure/healthcare-apis/github-projects) | - | List of related GitHub projects; navigation/links page without embedded technical reference content. |

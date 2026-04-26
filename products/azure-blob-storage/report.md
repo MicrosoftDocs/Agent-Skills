@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-19'
+generated_at: '2026-04-26'
 category_descriptions:
   deployment: 'Guides for deploying and configuring Blob Storage: static website hosting
     (CDN, GitHub Actions, Terraform), feature support, Data Lake enablement, and hybrid/migration
@@ -43,16 +43,16 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Table Storage (
 
 ## Summary
 
-- **Total Pages**: 408
-- **Fetched**: 408
+- **Total Pages**: 409
+- **Fetched**: 409
 - **Fetch Failed**: 0
 - **Classified**: 335
-- **Unclassified**: 73
+- **Unclassified**: 74
 
 ### Incremental Update
 - **New Pages**: 1
-- **Updated Pages**: 4
-- **Unchanged**: 403
+- **Updated Pages**: 2
+- **Unchanged**: 406
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-blob-storage/azure-blob-storage.csv`
 
@@ -60,32 +60,28 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Table Storage (
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| best-practices | 30 | 7.4% |
+| best-practices | 30 | 7.3% |
 | configuration | 63 | 15.4% |
 | decision-making | 22 | 5.4% |
 | deployment | 11 | 2.7% |
-| integrations | 132 | 32.4% |
+| integrations | 132 | 32.3% |
 | limits-quotas | 17 | 4.2% |
 | security | 54 | 13.2% |
 | troubleshooting | 6 | 1.5% |
-| *(Unclassified)* | 73 | 17.9% |
+| *(Unclassified)* | 74 | 18.1% |
 
 ## Changes
 
 ### New Pages
 
-- [Understand egress insights](https://learn.microsoft.com/en-us/azure/storage-discovery/egress-insights)
+- [NetApp Data Migrator getting started guide](https://learn.microsoft.com/en-us/azure/storage/solution-integration/validated-partners/data-management/netapp-data-migrator-guide)
 
 ### Updated Pages
 
-- [Transfer from Azure Blob to Blob](https://learn.microsoft.com/en-us/azure/storage-mover/azure-to-azure-migration)
-  - Updated: 2025-12-18T18:11:00.000Z → 2026-04-16T06:12:00.000Z
-- [Blob storage](https://learn.microsoft.com/en-us/azure/storage/blobs/scalability-targets)
-  - Updated: 2023-09-12T11:19:00.000Z → 2025-06-26T22:19:00.000Z
-- [Access tiers](https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview)
-  - Updated: 2025-12-02T08:00:00.000Z → 2026-04-13T22:10:00.000Z
-- [Smart tiering](https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-smart)
-  - Updated: 2026-04-07T22:12:00.000Z → 2026-04-13T22:10:00.000Z
+- [Overview of validated partners](https://learn.microsoft.com/en-us/azure/storage/solution-integration/validated-partners/data-management/partner-overview)
+  - Updated: 2025-10-03T11:10:00.000Z → 2026-04-23T11:10:00.000Z
+- [Azure Storage Migration Program Solutions](https://learn.microsoft.com/en-us/azure/storage/solution-integration/validated-partners/data-management/azure-file-migration-program-solutions)
+  - Updated: 2025-03-20T17:02:00.000Z → 2026-04-23T11:10:00.000Z
 
 ## Classified Pages
 
@@ -459,7 +455,6 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Table Storage (
 | [Deploy Storage Discovery and access insights](https://learn.microsoft.com/en-us/azure/storage-discovery/get-storage-estate-insights) | 0.35 | Getting-started tutorial; focuses on basic deployment and usage, not deep configuration or limits. |
 | [ARM](https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-quickstart-arm) | 0.30 | ARM template quickstart; shows one deployment example rather than full configuration reference. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-quickstart-cli) | 0.30 | Quickstart using Azure CLI; focuses on basic usage, not exhaustive configuration or limits. |
-| [Azure Storage Migration Program Solutions](https://learn.microsoft.com/en-us/azure/storage/solution-integration/validated-partners/data-management/azure-file-migration-program-solutions) | 0.30 | Program overview and engagement details for Storage Migration Program; more about process and partners than technical decision matrices or configuration. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-quickstart-portal) | 0.30 | Quickstart using Azure portal; likely step-by-step tutorial without deep config tables or limits. |
 | [Bicep](https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-quickstart-bicep) | 0.30 | Bicep quickstart; demonstrates a template, but not a comprehensive config or limits reference. |
 | [BlobFuse2 help](https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-commands-help) | 0.30 | Command reference for 'blobfuse2 help'; generic CLI usage, no limits, configs, or troubleshooting mappings. |
@@ -471,6 +466,7 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Table Storage (
 | [Install BlobFuse](https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-install) | 0.30 | Installation instructions for BlobFuse; mostly package commands without rich configuration tables or limits. |
 | [Manage containers (Azure portal)](https://learn.microsoft.com/en-us/azure/storage/blobs/blob-containers-portal) | 0.30 | Portal how-to for managing containers; mostly UI steps without detailed configuration tables or limits. |
 | [Management components](https://learn.microsoft.com/en-us/azure/storage-discovery/management-components) | 0.30 | Key concepts/management components overview; conceptual rather than detailed configuration or limits. |
+| [NetApp Data Migrator getting started guide](https://learn.microsoft.com/en-us/azure/storage/solution-integration/validated-partners/data-management/netapp-data-migrator-guide) | 0.30 | Summary indicates a migration how-to/tutorial for NetApp Data Migrator to Azure NetApp Files, focused on deployment steps and workflow. It does not clearly mention numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices, so no qualifying expert-knowledge sub-skill type can be confidently assigned from the provided description. |
 | [PowerShell](https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-quickstart-powershell) | 0.30 | Quickstart using PowerShell; primarily procedural, not a reference of parameters, limits, or troubleshooting. |
 | [Release notes](https://learn.microsoft.com/en-us/azure/storage-discovery/release-notes) | 0.30 | Release notes; while detailed, they are version history rather than reusable skill knowledge like limits, configs, or troubleshooting mappings. |
 | [Service prerequisites](https://learn.microsoft.com/en-us/azure/storage-mover/service-prerequisites) | 0.30 | Service prerequisites overview; description suggests high-level requirements and examples of sources, but no clear indication of detailed configuration tables, limits, or error mappings. |
@@ -496,11 +492,12 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Table Storage (
 | [Understand egress insights](https://learn.microsoft.com/en-us/azure/storage-discovery/egress-insights) | 0.20 | Page appears to describe how to view and interpret egress insights and patterns in Azure Storage Discovery, but the summary does not indicate presence of numeric limits, configuration parameter tables, error-code-based troubleshooting, or concrete decision matrices. It reads as conceptual/analytical guidance about understanding egress rather than product-specific expert details that match any sub-skill type. |
 | [What is Azure Storage Actions?](https://learn.microsoft.com/en-us/azure/storage-actions/overview) | 0.20 | High-level service overview without product-specific limits, configs, or error diagnostics. |
 | [What is Azure Storage Discovery?](https://learn.microsoft.com/en-us/azure/storage-discovery/overview) | 0.20 | Service overview for Storage Discovery; high-level description without detailed limits, configs, or troubleshooting. |
+| [Azure Storage Migration Program Solutions](https://learn.microsoft.com/en-us/azure/storage/solution-integration/validated-partners/data-management/azure-file-migration-program-solutions) | 0.10 | Program overview for Azure Storage Migration Program and ISV engagement; focuses on how to engage and FAQs, not on technical limits, configuration tables, or troubleshooting details. |
 | [Introduction to Blob Storage](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction) | 0.10 | Introductory overview of Blob Storage; no expert-level numeric limits, configs, or troubleshooting content. |
 | [Overview of validated partners](https://learn.microsoft.com/en-us/azure/storage/solution-integration/validated-partners/analytics/partner-overview) | 0.10 | Partner overview and listing for analytics integrations; no detailed configuration parameters, limits, or troubleshooting content. |
 | [Overview of validated partners](https://learn.microsoft.com/en-us/azure/storage/solution-integration/validated-partners/backup-archive-disaster-recovery/partner-overview) | 0.10 | High-level overview of archive/backup/BCDR partners; lacks concrete settings, limits, or error-resolution details. |
 | [Overview of validated partners](https://learn.microsoft.com/en-us/azure/storage/solution-integration/validated-partners/container-solutions/partner-overview) | 0.10 | Container solution partner overview; primarily a list of partners without deep technical configuration or troubleshooting content. |
-| [Overview of validated partners](https://learn.microsoft.com/en-us/azure/storage/solution-integration/validated-partners/data-management/partner-overview) | 0.10 | Data governance/management/migration partner overview; mostly descriptive listing, not detailed technical guidance. |
+| [Overview of validated partners](https://learn.microsoft.com/en-us/azure/storage/solution-integration/validated-partners/data-management/partner-overview) | 0.10 | Partner overview/listing page for data governance, management, and migration solutions; marketing-style content without numeric limits, configuration parameters, error codes, or decision matrices. |
 | [Overview of validated partners](https://learn.microsoft.com/en-us/azure/storage/solution-integration/validated-partners/primary-secondary-storage/partner-overview) | 0.10 | Partner overview listing NAS/SAN solution vendors and high-level positioning. No indication of numeric limits, configuration parameters, decision matrices, or troubleshooting details. |
 | [Use with other Azure services](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-integrate-with-services-tutorials) | 0.10 | Navigation page listing other tutorials; no technical details, limits, configuration parameters, or troubleshooting content. |
 | [What is Azure Blob Storage?](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-overview) | 0.10 | High-level overview of Azure Blob Storage; no specific limits, configs, or error details. |

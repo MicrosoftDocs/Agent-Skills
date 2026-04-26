@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-05'
+generated_at: '2026-04-26'
 category_descriptions:
   integrations: Patterns and setup guides for connecting Azure services to external
     data platforms (Confluent Cloud, MongoDB Atlas, Neon Postgres) using Service Connector
@@ -45,8 +45,8 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 112
+- **Updated Pages**: 1
+- **Unchanged**: 111
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-partner-solutions/azure-partner-solutions.csv`
 
@@ -63,6 +63,11 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 | *(Unclassified)* | 76 | 67.9% |
 
 ## Changes
+
+### Updated Pages
+
+- [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/new-relic/faq)
+  - Updated: 2026-02-13T06:11:00Z → 2026-04-19T17:12:00Z
 
 ## Classified Pages
 
@@ -113,7 +118,6 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 | [Create a connector to Azure Cosmos DB](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/add-cosmos-db-connector) | 0.40 | Tutorial for creating a Cosmos DB connector; similar to index 26, focused on walkthrough rather than config matrices. |
 | [Create a connector to Blob Storage](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/add-confluent-connectors) | 0.40 | Tutorial for creating a Blob Storage connector; likely shows steps and some fields but not a full configuration reference with defaults/ranges. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/faq) | 0.40 | FAQ for Confluent Cloud on Azure; while FAQs can contain expert details, the provided summary is generic and does not confirm presence of specific error codes, limits, or configuration tables required by any sub-skill type. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/new-relic/faq) | 0.40 | FAQ about setup, management, and billing is likely conceptual and procedural; summary does not indicate specific error codes, config tables, or numeric limits. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/pure-storage/faq) | 0.40 | FAQ about resources and developer tools; likely conceptual and procedural answers, with no clear indication of error-code mappings, numeric limits, or config tables in the summary. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/qumulo/faq) | 0.40 | FAQ for Azure Native Qumulo; likely general Q&A about usage and concepts, with no explicit indication of error-code mappings or configuration tables in the summary. |
 | [Manage a resource](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/manage) | 0.40 | Managing Confluent Cloud resource settings; summary does not indicate detailed parameter tables or limits. |
@@ -156,6 +160,7 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 | [Dynatrace](https://learn.microsoft.com/en-us/azure/partner-solutions/dynatrace/) | 0.20 | Landing/overview page for Azure Native Dynatrace Service; focuses on what the service is and general workflow, without specific quotas, config parameters, or error mappings. |
 | [Elastic](https://learn.microsoft.com/en-us/azure/partner-solutions/elastic/) | 0.20 | Overview for Elastic with Azure; summary is conceptual (centralizes analytics) and does not suggest detailed limits, configuration matrices, or troubleshooting guidance. |
 | [F5](https://learn.microsoft.com/en-us/azure/partner-solutions/nginx/) | 0.20 | Overview for NGINXaaS Azure Native integration; description suggests marketplace positioning and basic management, not detailed configuration parameters or quotas. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/new-relic/faq) | 0.20 | FAQ content about Azure Native New Relic Service setup, management, and billing is primarily conceptual and procedural. It typically lacks detailed numeric limits, configuration parameter tables, specific RBAC role lists, or error-code-based troubleshooting flows required for expert-knowledge sub-skills. |
 | [Frequently asked questions](https://learn.microsoft.com/en-us/azure/partner-solutions/faq) | 0.20 | FAQ likely addresses general usage and billing; summary shows no error codes, limits, or config tables. |
 | [Get support](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/get-support) | 0.20 | Support-contact article; typically procedural with no technical limits, configs, or troubleshooting mappings. |
 | [Manage your Apache Airflow on Astro resource](https://learn.microsoft.com/en-us/azure/partner-solutions/astronomer/manage) | 0.20 | Management article for Astro resources appears to be general portal operations; no indication of detailed configuration parameters, limits, or error mappings. |

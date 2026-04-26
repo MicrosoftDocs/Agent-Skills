@@ -42,9 +42,9 @@ confusable_not_for: Not for Azure Cache for Redis (use azure-cache-redis).
 - **Unclassified**: 12
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 2
-- **Unchanged**: 64
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 68
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-managed-redis/azure-managed-redis.csv`
 
@@ -62,18 +62,6 @@ confusable_not_for: Not for Azure Cache for Redis (use azure-cache-redis).
 | *(Unclassified)* | 12 | 17.6% |
 
 ## Changes
-
-### New Pages
-
-- [Enable Redis keyspace notifications](https://learn.microsoft.com/en-us/azure/redis/enable-redis-keyspace-notifications)
-- [Dashboards with Grafana](https://learn.microsoft.com/en-us/azure/redis/grafana-dashboards)
-
-### Updated Pages
-
-- [What's new](https://learn.microsoft.com/en-us/azure/redis/whats-new)
-  - Updated: 2026-04-01T22:41:00.000Z → 2026-04-15T22:11:00.000Z
-- [Manage data with client tools](https://learn.microsoft.com/en-us/azure/redis/how-to-redis-access-data)
-  - Updated: 2026-03-17T11:12:00.000Z → 2026-04-15T22:11:00.000Z
 
 ## Classified Pages
 

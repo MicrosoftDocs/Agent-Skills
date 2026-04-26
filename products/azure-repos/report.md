@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-19'
+generated_at: '2026-04-26'
 category_descriptions:
   security: 'Securing Azure Repos and TFVC: auth methods (Entra, PAT, SSH, GCM), repo/branch/PR
     permissions and policies, branch locking, secure imports, and GitHub Advanced
@@ -13,9 +13,9 @@ category_descriptions:
   integrations: Integrating Azure Repos with tools (Functions, Node.js, IDEs, Slack/Teams,
     scanners) and automating workflows via TFVC/tf.exe and Git-specific commands and
     permissions.
-  troubleshooting: 'Diagnosing and fixing Git/TFVC issues in Azure Repos: index.lock,
-    push/RPC errors, merge/lock conflicts, undo/recover changes, and troubleshooting
-    CodeQL, dependency, and secret scanning.'
+  troubleshooting: Diagnosing and fixing Git/TFVC issues (locks, RPC errors, merge
+    conflicts, undo/recover changes) and troubleshooting CodeQL, dependency, and secret
+    scanning in Azure DevOps/GitHub.
   decision-making: 'Guidance on choosing and migrating version control in Azure Repos:
     Git vs TFVC, SVN/TFVC-to-Git migration strategies, mixed Git+TFVC use, and local
     vs server TFVC workspaces.'
@@ -27,15 +27,15 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Repos development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, and integrations & coding patterns. Use when managing Azure
-  Repos Git/TFVC, branch/PR policies, repo permissions, CodeQL/secret scans, or TFVC
+  Repos Git/TFVC branching, PR policies, permissions, CodeQL/secrets scanning, or
   migrations, and other Azure Repos related development tasks. Not for Azure DevOps
   (use azure-devops), Azure Pipelines (use azure-pipelines), Azure Boards (use azure-boards),
-  Azure Artifacts (use azure-artifacts).
-use_when: Use when managing Azure Repos Git/TFVC, branch/PR policies, repo permissions,
-  CodeQL/secret scans, or TFVC migrations, and other Azure Repos related development
+  Azure Test Plans (use azure-test-plans).
+use_when: Use when managing Azure Repos Git/TFVC branching, PR policies, permissions,
+  CodeQL/secrets scanning, or migrations, and other Azure Repos related development
   tasks.
 confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (use
-  azure-pipelines), Azure Boards (use azure-boards), Azure Artifacts (use azure-artifacts).
+  azure-pipelines), Azure Boards (use azure-boards), Azure Test Plans (use azure-test-plans).
 ---
 # Azure Repos Crawl Report
 
@@ -49,8 +49,8 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 204
+- **Updated Pages**: 1
+- **Unchanged**: 205
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-repos/azure-repos.csv`
 
@@ -72,10 +72,8 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 
 ### Updated Pages
 
-- [Configure GitHub Advanced Security](https://learn.microsoft.com/en-us/azure/devops/repos/security/configure-github-advanced-security-features?view=azure-devops)
-  - Updated: 2026-03-25T21:04:00.000Z → 2026-04-14T13:04:00.000Z
-- [Configure code scanning](https://learn.microsoft.com/en-us/azure/devops/repos/security/github-advanced-security-code-scanning?view=azure-devops)
-  - Updated: 2025-02-21T04:40:00.000Z → 2026-04-14T13:04:00.000Z
+- [Frequently asked questions](https://learn.microsoft.com/en-us/azure/devops/repos/git/howto?view=azure-devops)
+  - Updated: 2026-02-24T02:03:00Z → 2026-04-22T21:02:00Z
 
 ## Classified Pages
 
@@ -116,7 +114,7 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 | [Extend pull request workflows with pull request status](https://learn.microsoft.com/en-us/azure/devops/repos/git/pull-request-status?view=azure-devops) | integrations | 0.70 | Describes PR workflow extensibility using status and policy; involves PR Status API and external integrations with specific parameters and behaviors. |
 | [Folder comparison filters](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/folder-comparison-filters?view=azure-devops) | configuration | 0.70 | Describes ordered list of comparison filters, default name filters, and use via UI and tf folderdiff; this is product-specific configuration behavior not generally known. |
 | [Folderdiff](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/folderdiff-command?view=azure-devops) | integrations | 0.70 | Command reference with product-specific syntax, options, and behaviors for tf folderdiff that an LLM won't reliably know from training. |
-| [Frequently asked questions](https://learn.microsoft.com/en-us/azure/devops/repos/git/howto?view=azure-devops) | troubleshooting | 0.70 | FAQ explicitly covers troubleshooting clone, push, proxy, SSL, and authentication issues in Azure Repos Git, likely including specific error messages and resolutions that are product-specific. |
+| [Frequently asked questions](https://learn.microsoft.com/en-us/azure/devops/repos/git/howto?view=azure-devops) | troubleshooting | 0.70 | The FAQ includes product-specific troubleshooting guidance for Git in Azure Repos, such as authentication, proxy, SSL, and clone/push issues. It maps concrete symptoms (e.g., failing clone/push, SSL errors) to causes and resolutions that are specific to Azure DevOps/Azure Repos configuration and environment, which qualifies as expert troubleshooting knowledge beyond generic Git usage. |
 | [Get](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/get-command?view=azure-devops) | integrations | 0.70 | Detailed CLI reference for tf get with parameters and behaviors specific to Azure DevOps TFVC. |
 | [Git commands](https://learn.microsoft.com/en-us/azure/devops/repos/git/command-prompt?view=azure-devops) | configuration | 0.70 | Command reference for common Git tasks in Visual Studio, including Azure DevOps-specific behaviors and options—effectively a configuration/command reference. |
 | [Git index.lock file](https://learn.microsoft.com/en-us/azure/devops/repos/git/git-index-lock?view=azure-devops) | troubleshooting | 0.70 | index.lock problems are a specific failure mode; article likely maps the lock-file symptom to causes and safe resolution steps in this environment. |

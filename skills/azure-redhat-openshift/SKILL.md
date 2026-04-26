@@ -1,9 +1,9 @@
 ---
 name: azure-redhat-openshift
-description: Expert knowledge for Azure Red Hat OpenShift development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when creating ARO clusters, configuring networking/storage, securing with Entra/NSGs, using GPUs/Key Vault, or upgrading, and other Azure Red Hat OpenShift related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Container Apps (use azure-container-apps), Azure Container Instances (use azure-container-instances), Azure VMware Solution (use azure-vmware-solution).
+description: Expert knowledge for Azure Red Hat OpenShift development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when creating ARO clusters, configuring networking/storage, securing with Entra/Key Vault, or integrating GPUs/virtualization, and other Azure Red Hat OpenShift related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Container Apps (use azure-container-apps), Azure VMware Solution (use azure-vmware-solution).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-05"
+  generated_at: "2026-04-26"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Red Hat OpenShift Skill
@@ -26,8 +26,8 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L36-L43 | Fixing common ARO cluster issues, restoring cluster access, and manually updating or troubleshooting cluster certificates and connectivity via CLI |
 | Best Practices | L44-L51 | Guidance on sizing and deploying ARO clusters and infra nodes, optimizing OpenShift Virtualization VMs, and understanding ARO 4 support limits and policies |
-| Decision Making | L52-L56 | Defines the shared responsibility model for Azure Red Hat OpenShift, detailing which operational tasks are handled by Microsoft, Red Hat, and the customer. |
-| Limits & Quotas | L57-L62 | Scaling and capacity limits for ARO clusters, including configuring multiple load balancer IPs and understanding ARO versioning, support lifecycle, and upgrade constraints. |
+| Decision Making | L52-L57 | Covers who manages what in ARO (Microsoft vs customer) and how to pick a supported ARO version based on features, support lifecycle, and upgrade considerations. |
+| Limits & Quotas | L58-L62 | Scaling and capacity limits for ARO clusters, including configuring multiple load balancer IPs and understanding ARO versioning, support lifecycle, and upgrade constraints. |
 | Security | L63-L79 | Identity, auth, and network security for ARO: Entra/managed identities, workload identity, NSGs/egress control, disk encryption, FIPS, Front Door protection, Lockbox, and credential rotation. |
 | Configuration | L80-L98 | Configuring ARO clusters: networking (proxy, DNS, egress, MTU), storage (Azure Files, Prometheus), registry/pull secrets, node/subnet layout, Spot VMs, tagging, and health alerts. |
 | Integrations & Coding Patterns | L99-L107 | Running ARO with external services: virtualization, NVIDIA GPUs, Azure NetApp Files, Prometheus→Azure Monitor, ACR auth, and Azure Key Vault secret integration. |
@@ -53,12 +53,12 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Understand responsibility matrix for ARO operations | https://learn.microsoft.com/en-us/azure/openshift/responsibility-matrix |
+| Choose supported Azure Red Hat OpenShift versions | https://learn.microsoft.com/en-us/azure/openshift/support-lifecycle |
 
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
 | Configure multiple load balancer IPs to scale ARO clusters | https://learn.microsoft.com/en-us/azure/openshift/howto-multiple-ips |
-| Understand Azure Red Hat OpenShift support lifecycle and versions | https://learn.microsoft.com/en-us/azure/openshift/support-lifecycle |
 
 ### Security
 | Topic | URL |

@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-04-05'
+generated_at: '2026-04-26'
 category_descriptions:
   configuration: 'Configuring VM Scale Sets: scaling rules, upgrades, networking,
-    disks, images, health/repair, standby pools, instance mix, protection, and automation
-    via CLI, PowerShell, templates, and portal'
+    disks, health/repairs, autoscale, instance mix, standby pools, protection, and
+    CLI/PowerShell/ARM template settings.'
   architecture-patterns: 'Designing resilient VM scale sets: zones, fault domains,
     zone balancing modes, proximity placement groups, and standby pools to optimize
     availability, latency, and scale-out behavior.'
@@ -28,17 +28,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Virtual Machine Scale Sets development
   including troubleshooting, decision making, architecture & design patterns, limits
   & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when configuring VMSS autoscale, upgrade modes, zones/PPGs, Spot/standby pools,
-  or disk encryption with Key Vault, and other Azure Virtual Machine Scale Sets related
-  development tasks. Not for Azure Virtual Machines (use azure-virtual-machines),
-  Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure App Service
-  (use azure-app-service), Azure Service Fabric (use azure-service-fabric).
-use_when: Use when configuring VMSS autoscale, upgrade modes, zones/PPGs, Spot/standby
-  pools, or disk encryption with Key Vault, and other Azure Virtual Machine Scale
-  Sets related development tasks.
+  Use when configuring autoscale rules, upgrade modes, zones/PPGs, Spot/standby pools,
+  or VMSS via CLI/ARM, and other Azure Virtual Machine Scale Sets related development
+  tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Kubernetes
+  Service (AKS) (use azure-kubernetes-service), Azure Service Fabric (use azure-service-fabric),
+  Azure Red Hat OpenShift (use azure-redhat-openshift).
+use_when: Use when configuring autoscale rules, upgrade modes, zones/PPGs, Spot/standby
+  pools, or VMSS via CLI/ARM, and other Azure Virtual Machine Scale Sets related development
+  tasks.
 confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines), Azure
-  Kubernetes Service (AKS) (use azure-kubernetes-service), Azure App Service (use
-  azure-app-service), Azure Service Fabric (use azure-service-fabric).
+  Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Service Fabric (use
+  azure-service-fabric), Azure Red Hat OpenShift (use azure-redhat-openshift).
 ---
 # Azure Virtual Machine Scale Sets Crawl Report
 
@@ -52,8 +52,8 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 93
+- **Updated Pages**: 1
+- **Unchanged**: 92
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-vm-scalesets/azure-vm-scalesets.csv`
 
@@ -72,6 +72,11 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | *(Unclassified)* | 10 | 10.8% |
 
 ## Changes
+
+### Updated Pages
+
+- [Overview](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-automatic-upgrade)
+  - Updated: 2025-01-17T22:59:00.000Z → 2026-04-21T22:04:00.000Z
 
 ## Classified Pages
 
@@ -107,7 +112,7 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Manage fault domains](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-manage-fault-domains) | architecture-patterns | 0.70 | Guides choosing number of fault domains based on orchestration mode and region/zone; product-specific resiliency pattern and configuration trade-offs. |
 | [Modify a scale set](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-upgrade-scale-set) | configuration | 0.70 | Details how to update scale set configuration via REST/PowerShell/CLI, including which properties can be changed and how they propagate—specific configuration surface. |
 | [Monitor automatic repairs service state](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/alert-rules-automatic-repairs-service-state) | configuration | 0.70 | Shows how to configure alert rules on Automatic Repairs ServiceState, including metric/log selection and conditions—product-specific monitoring configuration. |
-| [Overview](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-automatic-upgrade) | configuration | 0.70 | Automatic OS upgrade behavior for VMSS includes specific settings (properties in the model, modes, health checks, sequencing) and constraints unique to VMSS. These are detailed configuration options and operational behaviors. |
+| [Overview](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-automatic-upgrade) | configuration | 0.70 | The page describes product-specific settings and requirements for enabling automatic OS image upgrades on Azure Virtual Machine Scale Sets, including configuration options and behavior unique to this feature. This goes beyond conceptual overview and provides concrete configuration knowledge, but does not primarily focus on limits/quotas, troubleshooting, or decision matrices. |
 | [Overview](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-upgrade-policy) | decision-making | 0.70 | Compares automatic, manual, and rolling upgrade modes with impact on uptime; provides scenario-based guidance on which mode to choose, a product-specific decision. |
 | [Proximity placement groups](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/proximity-placement-groups) | architecture-patterns | 0.70 | Explains when and how to use proximity placement groups to minimize latency, a product-specific placement pattern with design trade-offs. |
 | [Reimage a virtual machine](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-reimage-virtual-machine) | configuration | 0.70 | Explains reimage behavior (OS disk replacement, what changes require reimage) and how to invoke it per instance—product-specific operational configuration. |

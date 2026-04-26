@@ -1,9 +1,9 @@
 ---
 name: azure-functions
-description: Expert knowledge for Azure Functions development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building HTTP/queue-triggered apps, Durable Functions, Linux/container hosting, API Mgmt/Logic Apps, or Flex plans, and other Azure Functions related development tasks. Not for Azure App Service (use azure-app-service), Azure Logic Apps (use azure-logic-apps), Azure Container Apps (use azure-container-apps), Azure Kubernetes Service (AKS) (use azure-kubernetes-service).
+description: Expert knowledge for Azure Functions development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building trigger/binding integrations, Durable Functions, containerized apps, CI/CD deployments, or Flex plans, and other Azure Functions related development tasks. Not for Azure App Service (use azure-app-service), Azure Logic Apps (use azure-logic-apps), Azure Container Apps (use azure-container-apps), Azure Kubernetes Service (AKS) (use azure-kubernetes-service).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-19"
+  generated_at: "2026-04-26"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Functions Skill
@@ -26,13 +26,13 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L37-L59 | Diagnosing and fixing Durable Functions/Task SDK issues, AZFD/AZFW error codes, storage and config problems, and runtime/deployment errors for Node.js, Python, and VM start/stop functions. |
 | Best Practices | L60-L79 | Patterns and guidance for robust, performant Azure Functions and Durable Functions: orchestration/entity design, versioning, error handling, DI, HTTP/connection usage, scaling, and language-specific best practices. |
-| Decision Making | L80-L101 | Guidance on choosing Functions hosting/runtime models, estimating costs, and planning migrations (plans, runtimes, languages, AWS Lambda, Express.js, Service Bus) for optimal architecture. |
+| Decision Making | L80-L101 | Guidance on choosing Functions hosting/runtime models, estimating costs, and planning migrations (plans, runtimes, languages, AWS Lambda, Express.js, Service Bus) and refactors. |
 | Architecture & Design Patterns | L102-L107 | Running Functions in Linux containers, Durable Functions design with Azure Storage, and hosting Functions on Azure Container Apps for scalable, container-based architectures. |
 | Limits & Quotas | L108-L116 | Details on Functions hosting limits: legacy and Flex Consumption plans, scaling behavior, concurrency and target-based scaling settings, and supported languages/versions. |
 | Security | L117-L134 | Securing Functions apps: encryption at rest, secure storage, keys/secrets, managed identity, private endpoints/VNet, Web PubSub, networking/access controls, and secure MCP hosting. |
 | Configuration | L135-L169 | Configuring Azure Functions apps: bindings, triggers, app/host settings, runtime versions, plans, networking, monitoring/telemetry, and local/Core Tools setup. |
 | Integrations & Coding Patterns | L170-L273 | Patterns and how-tos for wiring Functions to external systems (DBs, messaging, AI/OpenAI, Dapr, MCP, storage, HTTP) using triggers/bindings, plus integration with API Mgmt, Logic Apps, and on-prem. |
-| Deployment | L274-L303 | Deploying and hosting Azure Functions: provisioning plans (Consumption/Flex/Kubernetes), containers, CI/CD (GitHub/Azure Pipelines), slots, zero‑downtime, and migration/deployment automation. |
+| Deployment | L274-L303 | Deploying and updating Azure Functions: provisioning plans with IaC tools, containers, CI/CD (GitHub Actions/Azure Pipelines), slots, zero‑downtime, migrations, and special solutions like Start/Stop VMs. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -291,7 +291,7 @@ This skill requires **network access** to fetch documentation content:
 | Set up Azure Pipelines CI/CD for Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-how-to-azure-devops |
 | Run Azure Functions in custom Linux containers on Container Apps | https://learn.microsoft.com/en-us/azure/azure-functions/functions-how-to-custom-container |
 | Configure GitHub Actions CI/CD for Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-how-to-github-actions |
-| Automate Azure Functions deployment with Bicep or ARM | https://learn.microsoft.com/en-us/azure/azure-functions/functions-infrastructure-as-code |
+| Deploy Azure Functions with Bicep or ARM templates | https://learn.microsoft.com/en-us/azure/azure-functions/functions-infrastructure-as-code |
 | Host Azure Functions on Kubernetes with KEDA | https://learn.microsoft.com/en-us/azure/azure-functions/functions-kubernetes-keda |
 | Configure zone-redundant Azure Functions apps | https://learn.microsoft.com/en-us/azure/azure-functions/functions-zone-redundancy |
 | Migrate Azure Cosmos DB Functions extension from v3 to v4 | https://learn.microsoft.com/en-us/azure/azure-functions/migrate-cosmos-db-version-3-version-4 |

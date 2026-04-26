@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-12'
+generated_at: '2026-04-26'
 category_descriptions:
   deployment: 'Deploying and managing Synapse workspaces and dedicated SQL pools:
     ARM/Bicep templates, CI/CD, source control, restore points, maintenance windows,
@@ -23,8 +23,8 @@ category_descriptions:
     Spark jobs and libraries, SQL pools and queries, Synapse Link, Studio/storage
     connectivity, and common errors/timeouts.'
   integrations: Patterns and code to integrate Synapse (Spark, serverless, dedicated
-    SQL) with ADLS, Cosmos DB, Azure SQL, AML, monitoring (Log Analytics, Prometheus),
-    and external tools via connectors, REST, and T-SQL.
+    SQL) with storage, ML, monitoring, Cosmos DB, Kusto, Stream Analytics, and external
+    tools via connectors, REST, and PowerShell.
   limits-quotas: 'Synapse SQL pool limits: maintenance windows, memory/concurrency
     by performance level, capacity caps, temp table behavior, serverless Delta Lake
     v1 querying, and Synapse Link feature limits/issues.'
@@ -47,14 +47,14 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure D
 
 ## Summary
 
-- **Total Pages**: 446
-- **Fetched**: 446
+- **Total Pages**: 447
+- **Fetched**: 447
 - **Fetch Failed**: 0
-- **Classified**: 260
+- **Classified**: 261
 - **Unclassified**: 186
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
 - **Unchanged**: 446
 - **Deleted Pages**: 0
@@ -69,13 +69,17 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure D
 | configuration | 45 | 10.1% |
 | decision-making | 16 | 3.6% |
 | deployment | 11 | 2.5% |
-| integrations | 33 | 7.4% |
+| integrations | 34 | 7.6% |
 | limits-quotas | 6 | 1.3% |
 | security | 55 | 12.3% |
 | troubleshooting | 22 | 4.9% |
-| *(Unclassified)* | 186 | 41.7% |
+| *(Unclassified)* | 186 | 41.6% |
 
 ## Changes
+
+### New Pages
+
+- [Collect Apache Spark Application Logs and Metrics to Azure Storage Account Using Certificate-Based Service Principal Authentication](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/how-to-use-certificate-with-service-principal-for-log-storage)
 
 ## Classified Pages
 
@@ -269,6 +273,7 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure D
 | [Create a Synapse workspace](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/workspace-connected-create) | configuration | 0.69 | Describes how to enable workspace features on existing dedicated SQL pools, involving specific configuration steps and settings unique to Synapse. |
 | [Restore a deleted data warehouse](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-restore-deleted-dw) | configuration | 0.69 | Documents the process and parameters for restoring deleted pools, which is a product-specific recovery configuration scenario. |
 | [Restore an existing data warehouse](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-restore-active-paused-dw) | configuration | 0.69 | How-to for restoring existing pools with portal/PowerShell, including product-specific restore options and constraints for standalone dedicated SQL pools. |
+| [Collect Apache Spark Application Logs and Metrics to Azure Storage Account Using Certificate-Based Service Principal Authentication](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/how-to-use-certificate-with-service-principal-for-log-storage) | integrations | 0.68 | The page describes product-specific integration of Synapse Apache Spark with Azure Storage and Key Vault using the Apache Spark diagnostic emitter extension and certificate-based service principal authentication. It includes concrete configuration details and parameters unique to this integration scenario, going beyond a generic tutorial. |
 | [Conditional Access](https://learn.microsoft.com/en-us/azure/synapse-analytics/security/workspace-conditional-access) | security | 0.68 | Shows how Synapse integrates with Entra Conditional Access; contains product-specific scope and configuration details. |
 | [Create restore points](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-restore-points) | configuration | 0.68 | Explains how to configure and create restore points via PowerShell and portal, including specific parameters and behaviors unique to Synapse backups. |
 | [Data types](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-tables-data-types) | best-practices | 0.68 | Explicitly called out as recommendations for defining table data types in dedicated SQL pools, which typically include Synapse-specific behaviors and performance implications beyond generic SQL Server knowledge. |

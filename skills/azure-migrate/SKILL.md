@@ -1,9 +1,9 @@
 ---
 name: azure-migrate
-description: Expert knowledge for Azure Migrate development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using AppCAT/CAST/Copilot, Site Recovery APIs, Azure Migrate appliances, Arc discovery, or Resource Mover, and other Azure Migrate related development tasks. Not for Azure Database Migration service (use azure-database-migration), Azure Site Recovery (use azure-site-recovery), Azure Virtual Machines (use azure-virtual-machines), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines).
+description: Expert knowledge for Azure Migrate development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using AppCAT/CAST, Site Recovery APIs, Azure Migrate appliances, Arc discovery, or Resource Mover, and other Azure Migrate related development tasks. Not for Azure Database Migration service (use azure-database-migration), Azure Site Recovery (use azure-site-recovery), Azure Virtual Machines (use azure-virtual-machines), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-19"
+  generated_at: "2026-04-26"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Migrate Skill
@@ -30,7 +30,7 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L106-L111 | Architecture and data flow for Azure Migrate using Arc-based discovery and Hyper-V, including components, connectivity, prerequisites, and how discovery/inventory works. |
 | Limits & Quotas | L112-L125 | Azure Migrate region support, appliance prerequisites/capacity, and support matrices/limits for VMware, Hyper-V, and physical server discovery and migration. |
 | Security | L126-L141 | Securing Azure Migrate: least-privilege roles/accounts, Private Link discovery/migration, encrypted VM moves, Trusted Launch, RBAC, and Entra ID app registration. |
-| Configuration | L142-L170 | Configuring Azure Migrate projects, appliances, assessments, dependencies, Arc/agents, networking, and Resource Mover settings for server, SQL, .NET/Java, and PostgreSQL migrations |
+| Configuration | L142-L170 | Configuring Azure Migrate appliances, assessments, dependencies, Arc/agents, networking (private endpoints), and Resource Mover settings for server, SQL, .NET, Java, and PostgreSQL migrations |
 | Integrations & Coding Patterns | L171-L178 | Code-level integration patterns: using AppCAT CLI, CAST Highlight, GitHub Copilot insights, and Site Recovery REST APIs to assess and automate VMware-to-Azure app migrations. |
 | Deployment | L179-L186 | Planning and executing migration waves, setting up Azure DevOps pipelines for containers, and checking support/matrix for cross-region moves of VMs and Azure SQL with Resource Mover |
 
@@ -159,7 +159,7 @@ This skill requires **network access** to fetch documentation content:
 | Enable extra data collection on Arc-enabled servers | https://learn.microsoft.com/en-us/azure/migrate/how-to-enable-additional-data-collection-for-arc-servers?view=migrate |
 | Manage Arc resource synchronization in Azure Migrate projects | https://learn.microsoft.com/en-us/azure/migrate/how-to-manage-arc-resource-sync?view=migrate |
 | Configure Azure Migrate appliance for physical servers | https://learn.microsoft.com/en-us/azure/migrate/how-to-set-up-appliance-physical?view=migrate |
-| Use Azure Migrate over Private Link with private endpoints | https://learn.microsoft.com/en-us/azure/migrate/how-to-use-azure-migrate-with-private-endpoints?view=migrate |
+| Configure Azure Migrate with Private Endpoints | https://learn.microsoft.com/en-us/azure/migrate/how-to-use-azure-migrate-with-private-endpoints?view=migrate |
 | Reference for Azure Migrate Collector VM extension settings | https://learn.microsoft.com/en-us/azure/migrate/migrate-virtual-machine-extension-reference?view=migrate |
 | Use built-in Azure Policy definitions for Azure Migrate | https://learn.microsoft.com/en-us/azure/migrate/policy-reference?view=migrate |
 | Configure PostgreSQL assessment properties in Azure Migrate | https://learn.microsoft.com/en-us/azure/migrate/postgresql-assessment-properties?view=migrate |

@@ -1,9 +1,9 @@
 ---
 name: azure-key-vault
-description: Expert knowledge for Azure Key Vault development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Key Vault/Managed HSM APIs, RBAC vs access policies, Private Link, key rotation, or IaC deployment, and other Azure Key Vault related development tasks. Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure Cloud Hsm (use azure-cloud-hsm), Azure Payment Hsm (use azure-payment-hsm), Azure Information Protection (use azure-information-protection).
+description: Expert knowledge for Azure Key Vault development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Key Vault/Managed HSM APIs, RBAC vs access policies, Private Link, key rotation, or IaC deployments, and other Azure Key Vault related development tasks. Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure Cloud Hsm (use azure-cloud-hsm), Azure Payment Hsm (use azure-payment-hsm), Azure Attestation (use azure-attestation).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-19"
+  generated_at: "2026-04-26"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Key Vault Skill
@@ -25,10 +25,10 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L36-L44 | Diagnosing and fixing Key Vault errors: REST/API error codes, access policy failures, Private Link misconfig, and Azure Policy enforcement issues. |
-| Best Practices | L45-L55 | Guidance on BYOK/HSM key import, key/secret security best practices, disaster recovery for Managed HSM, and automating single/dual-credential secret rotation in Key Vault. |
+| Best Practices | L45-L55 | Best practices for HSM-backed keys (BYOK), secure key lifecycle management, disaster recovery for Managed HSM, and automating single/dual-credential secret rotation in Key Vault. |
 | Decision Making | L56-L62 | Guidance on planning key and HSM capacity, scaling, and migrating cryptographic workloads or Key Vault access control from access policies to RBAC |
 | Limits & Quotas | L63-L73 | Key Vault/Managed HSM limits: throttling, quotas, size constraints, logging latency, soft-delete behavior, and network/IP firewall configuration. |
-| Security | L74-L99 | Securing Azure Key Vault and Managed HSM: auth, RBAC vs access policies, firewalls, Private Link, soft-delete, backups, and security best practices for keys, secrets, and certificates. |
+| Security | L74-L99 | Securing Azure Key Vault and Managed HSM: auth, RBAC vs access policies, firewalls, Private Link, soft-delete, backup/restore, and best practices for keys, secrets, and certificates. |
 | Configuration | L100-L123 | Configuring Key Vault and Managed HSM: monitoring, alerts, logging, policies, key types/rotation, secure key release, replication, and special secret formats (e.g., multiline). |
 | Integrations & Coding Patterns | L124-L151 | Using Key Vault from code and services: JS/Go/.NET/Python client patterns for keys/secrets/certs, rotation and backup, plus integrations with Event Grid, Logic Apps, Databricks, DigiCert, and TLS offload. |
 | Deployment | L152-L155 | How to deploy and provision Azure Key Vault and Managed HSM (vaults, keys, secrets) using ARM templates, Bicep, Terraform, Azure CLI, and PowerShell |
@@ -47,7 +47,7 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Plan and execute BYOK HSM key transfers to Key Vault | https://learn.microsoft.com/en-us/azure/key-vault/keys/hsm-protected-keys |
 | Implement BYOK HSM-protected keys for Azure Key Vault | https://learn.microsoft.com/en-us/azure/key-vault/keys/hsm-protected-keys-byok |
-| Apply security best practices for Azure Key Vault keys | https://learn.microsoft.com/en-us/azure/key-vault/keys/secure-keys |
+| Apply secure key management practices in Azure Key Vault | https://learn.microsoft.com/en-us/azure/key-vault/keys/secure-keys |
 | Execute disaster recovery for Azure Managed HSM disruptions | https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/disaster-recovery-guide |
 | Generate and import BYOK HSM keys into Azure Managed HSM | https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/hsm-protected-keys-byok |
 | Automate single-credential secret rotation with Key Vault | https://learn.microsoft.com/en-us/azure/key-vault/secrets/tutorial-rotation |

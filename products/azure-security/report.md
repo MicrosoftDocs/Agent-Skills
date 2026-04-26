@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-12'
+generated_at: '2026-04-26'
 category_descriptions:
   integrations: Guidance on generating signed SBOMs for container images, attaching
     them in CI/CD, and integrating software supply chain security into deployment
@@ -13,9 +13,9 @@ category_descriptions:
   security: 'Securing Azure workloads: threat modeling mitigations, AKS image signing,
     crypto and data protection, ransomware defense, incident response, and Azure-specific
     security/operational best practices.'
-  best-practices: Security hardening checklists and patterns for Azure (IaaS/PaaS),
-    covering identity, network, data encryption, secrets, DNS, and app/database protection
-    best practices
+  best-practices: 'Security hardening checklists and patterns for Azure IaaS/PaaS:
+    identity, network, data encryption, secrets, SQL/Storage/App Service/Service Fabric,
+    DNS, and operational security best practices.'
   troubleshooting: Diagnosing and resolving common Azure Customer Lockbox issues,
     including access request problems, approval/denial errors, and configuration or
     permission-related failures.
@@ -24,16 +24,16 @@ category_descriptions:
     trade-offs.
 skill_description: Expert knowledge for Azure Security development including troubleshooting,
   best practices, decision making, security, configuration, integrations & coding
-  patterns, and deployment. Use when securing AKS workloads, SBOMs, Notation image
-  signing, Key Vault/HSM keys, or Customer Lockbox access, and other Azure Security
+  patterns, and deployment. Use when securing AKS, signing container images/SBOMs,
+  configuring firewalls/antimalware, or choosing Key Vault/HSM, and other Azure Security
   related development tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud),
-  Azure Firewall (use azure-firewall), Azure DDos Protection (use azure-ddos-protection),
-  Azure Web Application Firewall (use azure-web-application-firewall).
-use_when: Use when securing AKS workloads, SBOMs, Notation image signing, Key Vault/HSM
-  keys, or Customer Lockbox access, and other Azure Security related development tasks.
+  Azure Firewall (use azure-firewall), Azure Web Application Firewall (use azure-web-application-firewall),
+  Azure Sentinel (use azure-sentinel).
+use_when: Use when securing AKS, signing container images/SBOMs, configuring firewalls/antimalware,
+  or choosing Key Vault/HSM, and other Azure Security related development tasks.
 confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-cloud),
-  Azure Firewall (use azure-firewall), Azure DDos Protection (use azure-ddos-protection),
-  Azure Web Application Firewall (use azure-web-application-firewall).
+  Azure Firewall (use azure-firewall), Azure Web Application Firewall (use azure-web-application-firewall),
+  Azure Sentinel (use azure-sentinel).
 ---
 # Azure Security Crawl Report
 
@@ -47,8 +47,8 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 126
+- **Updated Pages**: 3
+- **Unchanged**: 123
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-security/azure-security.csv`
 
@@ -67,6 +67,15 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 
 ## Changes
 
+### Updated Pages
+
+- [Encryption at rest](https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-atrest)
+  - Updated: 2026-04-09T08:00:00.000Z → 2026-04-20T08:00:00.000Z
+- [Best practices](https://learn.microsoft.com/en-us/azure/security/fundamentals/data-encryption-best-practices)
+  - Updated: 2026-04-02T08:00:00.000Z → 2026-04-21T22:10:00.000Z
+- [Data encryption models](https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-models)
+  - Updated: 2026-04-02T08:00:00.000Z → 2026-04-20T08:00:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
@@ -84,7 +93,7 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | [Auditing and logging](https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool-auditing-and-logging) | security | 0.70 | Threat-model-specific mitigation guidance and code examples for auditing/logging are product- and tool-specific security patterns, beyond generic concepts. |
 | [Authorization](https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool-authorization) | security | 0.70 | Lists specific authorization-related threats and mitigation instructions tied to the Threat Modeling Tool threat library, which is specialized security guidance. |
 | [Azure Marketplace images](https://learn.microsoft.com/en-us/azure/security/fundamentals/azure-marketplace-images) | best-practices | 0.70 | Security configuration requirements for Marketplace images; includes concrete recommendations and likely specific settings that are product- and process-specific. |
-| [Best practices](https://learn.microsoft.com/en-us/azure/security/fundamentals/data-encryption-best-practices) | best-practices | 0.70 | Prescriptive best-practices article aligned with Zero Trust and current Azure capabilities; likely includes concrete Azure-specific recommendations and patterns for configuring encryption and data protection beyond generic security advice. |
+| [Best practices](https://learn.microsoft.com/en-us/azure/security/fundamentals/data-encryption-best-practices) | best-practices | 0.70 | Explicitly described as prescriptive best practices for data security and encryption using Azure capabilities. Likely includes concrete, product-specific recommendations and patterns beyond generic security theory. |
 | [Best practices](https://learn.microsoft.com/en-us/azure/security/fundamentals/identity-management-best-practices) | best-practices | 0.70 | Prescriptive identity and access control guidance for Entra ID; likely includes concrete recommendations (e.g., specific policies, MFA configurations, conditional access patterns) that are product-specific. |
 | [Best practices](https://learn.microsoft.com/en-us/azure/security/fundamentals/network-best-practices) | best-practices | 0.70 | Collection of Azure-specific network security recommendations (NSGs, firewalls, DDoS, segmentation) with concrete guidance tailored to Azure. |
 | [Best practices](https://learn.microsoft.com/en-us/azure/security/fundamentals/operational-best-practices) | best-practices | 0.70 | Operational best practices for protecting Azure data, apps, and assets; includes Azure-specific recommendations and controls aligned to Zero Trust. |
@@ -183,7 +192,6 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | [Shared responsibility in the cloud](https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility) | 0.30 | Explains shared responsibility model conceptually across SaaS/PaaS/IaaS; no product-specific settings, limits, or detailed role/permission mappings. |
 | [Trusted Hardware Identity Management](https://learn.microsoft.com/en-us/azure/security/fundamentals/trusted-hardware-identity-management) | 0.30 | Technical overview of Trusted Hardware Identity Management and its role in certificate cache management and TCB information; appears architectural/conceptual without concrete configuration parameters, limits, or troubleshooting mappings. |
 | [Virtual machine security overview](https://learn.microsoft.com/en-us/azure/security/fundamentals/virtual-machines-overview) | 0.30 | Overview of security features for Azure VMs; primarily descriptive without detailed settings, limits, or troubleshooting mappings. |
-| [Data encryption models](https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-models) | 0.25 | Describes different data encryption models and their pros/cons at a conceptual level; no indication of numeric thresholds, configuration tables, or detailed decision matrices. |
 | [Double encryption](https://learn.microsoft.com/en-us/azure/security/fundamentals/double-encryption) | 0.25 | Explains the concept of double encryption and that Azure provides it for data at rest and in transit; appears conceptual without detailed configuration values or product-specific patterns. |
 | [Microsoft Threat Modeling tool](https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool) | 0.25 | Overview of the Threat Modeling Tool and process; primarily conceptual and marketing-style description without detailed configuration or limits. |
 | [Mitigations](https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool-mitigations) | 0.25 | Mitigations page appears to describe generic mitigation guidance for threats; summary does not indicate product-specific configuration parameters or error mappings. |
@@ -191,8 +199,9 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | [Acquire Stage](https://learn.microsoft.com/en-us/azure/security/container-secure-supply-chain/articles/container-secure-supply-chain-implementation/acquire-overview) | 0.20 | Acquire stage overview describes goals and concepts; no specific RBAC roles, config parameters, or quantified checks are indicated. |
 | [Build Stage](https://learn.microsoft.com/en-us/azure/security/container-secure-supply-chain/articles/container-secure-supply-chain-implementation/build-overview) | 0.20 | Build stage overview is about background and goals; no product-specific configuration tables, limits, or error mappings are evident. |
 | [Catalog Stage](https://learn.microsoft.com/en-us/azure/security/container-secure-supply-chain/articles/container-secure-supply-chain-implementation/catalog-overview) | 0.20 | Catalog stage overview focuses on rationale and objectives; lacks detailed settings, limits, or concrete security configurations. |
+| [Data encryption models](https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-models) | 0.20 | Conceptual overview of Azure data encryption models and their advantages/disadvantages; summary does not indicate concrete configuration parameters, limits, or decision matrices with quantified trade-offs. |
 | [Deploy Stage](https://learn.microsoft.com/en-us/azure/security/container-secure-supply-chain/articles/container-secure-supply-chain-implementation/deploy-overview) | 0.20 | Deploy stage overview discusses validating metadata and attestations conceptually; does not show concrete policies, parameters, or decision matrices. |
-| [Encryption at rest](https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-atrest) | 0.20 | Described as an overview of Azure data encryption at rest and general considerations; no indication of specific RBAC roles, configuration parameters, limits, or error codes. Content is conceptual security guidance rather than product-specific configuration or troubleshooting details. |
+| [Encryption at rest](https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-atrest) | 0.20 | High-level overview of Azure data encryption at rest and general considerations; no specific RBAC roles, configuration parameters, limits, or error codes are indicated in the summary. |
 | [End-to-end security](https://learn.microsoft.com/en-us/azure/security/fundamentals/end-to-end) | 0.20 | End-to-end architecture overview organized by protection/detection/response; lacks concrete configuration parameters, limits, or decision matrices. |
 | [Introduction](https://learn.microsoft.com/en-us/azure/security/container-secure-supply-chain/articles/container-secure-supply-chain-implementation/containers-secure-supply-chain-overview) | 0.20 | High-level introduction to the Containers Secure Supply Chain framework; conceptual overview without concrete configuration values, limits, or error details. |
 | [Introduction to Azure security](https://learn.microsoft.com/en-us/azure/security/fundamentals/overview) | 0.20 | High-level overview of Azure security capabilities; primarily conceptual and marketing-style, without detailed configuration, limits, or error mappings. |

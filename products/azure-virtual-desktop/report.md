@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-19'
+generated_at: '2026-04-26'
 category_descriptions:
   deployment: 'Guides for deploying and migrating AVD: adding session hosts, moving
     from classic to current AVD, changing regions, using regional host pools, and
@@ -21,23 +21,23 @@ category_descriptions:
   decision-making: 'Planning and cost/licensing decisions for AVD: deployment models,
     autoscale, host pool and tool choices, storage/FSLogix, data locations, ESU, Local/Extended
     Zones, and Insights cost estimation'
-  security: 'Securing Azure Virtual Desktop: SSO (Entra ID/AD FS), MFA/Conditional
-    Access, RBAC/roles, managed identities, external identities, session protections
-    (watermarking, screen capture, clipboard), and auditing.'
+  security: Securing AVD with SSO, MFA, RBAC, external identities, clipboard/screen
+    controls, watermarking, WebAuthn, Kerberos, managed identities, and Purview forensic
+    onboarding
   limits-quotas: Guidance on RDP bandwidth requirements and optimizing Microsoft Teams
     (audio/video, collaboration features) performance and configuration in Azure Virtual
     Desktop.
 skill_description: Expert knowledge for Azure Virtual Desktop development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when working with FSLogix profiles, MSIX App Attach, autoscale/Start VM on Connect,
-  Teams optimization, or AVD SSO, and other Azure Virtual Desktop related development
-  tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Dev Box
-  (use azure-dev-box), Azure VMware Solution (use azure-vmware-solution), Azure Data
-  Science Virtual Machines (use azure-data-science-vm).
-use_when: Use when working with FSLogix profiles, MSIX App Attach, autoscale/Start
-  VM on Connect, Teams optimization, or AVD SSO, and other Azure Virtual Desktop related
-  development tasks.
+  Use when managing AVD host pools, FSLogix profiles, autoscale/Start VM on Connect,
+  MSIX App Attach, or Teams optimizations, and other Azure Virtual Desktop related
+  development tasks. Not for Azure Virtual Machines (use azure-virtual-machines),
+  Azure Dev Box (use azure-dev-box), Azure VMware Solution (use azure-vmware-solution),
+  Azure Data Science Virtual Machines (use azure-data-science-vm).
+use_when: Use when managing AVD host pools, FSLogix profiles, autoscale/Start VM on
+  Connect, MSIX App Attach, or Teams optimizations, and other Azure Virtual Desktop
+  related development tasks.
 confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines), Azure
   Dev Box (use azure-dev-box), Azure VMware Solution (use azure-vmware-solution),
   Azure Data Science Virtual Machines (use azure-data-science-vm).
@@ -49,13 +49,13 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 - **Total Pages**: 150
 - **Fetched**: 150
 - **Fetch Failed**: 0
-- **Classified**: 121
-- **Unclassified**: 29
+- **Classified**: 120
+- **Unclassified**: 30
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 2
-- **Unchanged**: 147
+- **Unchanged**: 148
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-desktop/azure-virtual-desktop.csv`
 
@@ -64,7 +64,7 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 5 | 3.3% |
-| best-practices | 8 | 5.3% |
+| best-practices | 7 | 4.7% |
 | configuration | 57 | 38.0% |
 | decision-making | 12 | 8.0% |
 | deployment | 6 | 4.0% |
@@ -72,20 +72,16 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | limits-quotas | 2 | 1.3% |
 | security | 15 | 10.0% |
 | troubleshooting | 12 | 8.0% |
-| *(Unclassified)* | 29 | 19.3% |
+| *(Unclassified)* | 30 | 20.0% |
 
 ## Changes
 
-### New Pages
-
-- [Network connectivity for 169.254.169.254 and 168.63.129.16](https://learn.microsoft.com/en-us/azure/virtual-desktop/azurecommunicationips)
-
 ### Updated Pages
 
-- [Required FQDNs and endpoints](https://learn.microsoft.com/en-us/azure/virtual-desktop/required-fqdn-endpoint)
-  - Updated: 2026-03-11T08:00:00.000Z → 2026-04-13T15:06:00.000Z
-- [Screen capture protection](https://learn.microsoft.com/en-us/azure/virtual-desktop/screen-capture-protection)
-  - Updated: 2026-02-05T04:10:00.000Z → 2026-04-17T04:06:00.000Z
+- [RDP Multipath](https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-multipath)
+  - Updated: 2025-11-10T21:32:00.000Z → 2026-04-21T03:37:00.000Z
+- [Configure a managed identity](https://learn.microsoft.com/en-us/azure/virtual-desktop/configure-managed-identity)
+  - Updated: 2025-08-14T20:36:00.000Z → 2026-04-22T20:42:00.000Z
 
 ## Classified Pages
 
@@ -104,7 +100,6 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Collect and query user connection quality data](https://learn.microsoft.com/en-us/azure/virtual-desktop/connection-quality-monitoring) | troubleshooting | 0.80 | Shows how to set up and query a specific connection quality data table in Log Analytics, including table names and KQL examples for diagnosing issues—product-specific troubleshooting patterns. |
 | [Configure RDP Shortpath](https://learn.microsoft.com/en-us/azure/virtual-desktop/configure-rdp-shortpath) | configuration | 0.80 | How-to configuration article for enabling Shortpath with specific settings and network parameters, matching configuration criteria. |
 | [Configure Start VM on Connect](https://learn.microsoft.com/en-us/azure/virtual-desktop/start-virtual-machine-connect) | configuration | 0.80 | Explains enabling/disabling Start VM on Connect with behavior differences for pooled vs personal pools; involves specific host pool settings and constraints. |
-| [Configure a managed identity](https://learn.microsoft.com/en-us/azure/virtual-desktop/configure-managed-identity) | security | 0.80 | Managed identity setup for host pools requires specific role assignments and ARM permissions; this is product-specific security configuration with concrete RBAC details. |
 | [Configure single sign-on using AD FS](https://learn.microsoft.com/en-us/azure/virtual-desktop/configure-adfs-sso) | security | 0.80 | Product-specific SSO configuration using AD FS, with concrete settings and integration steps, fits security configuration. |
 | [Configure single sign-on using Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/virtual-desktop/configure-single-sign-on) | security | 0.80 | Describes enabling SSO with Entra ID tokens, including configuration steps and parameters specific to this product’s SSO behavior. |
 | [Enforce Microsoft Entra multifactor authentication](https://learn.microsoft.com/en-us/azure/virtual-desktop/set-up-mfa) | security | 0.80 | Shows how to enforce MFA via Conditional Access, including policy configuration specific to Azure Virtual Desktop sign-ins. |
@@ -133,6 +128,7 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Increase chroma value to 4:4:4](https://learn.microsoft.com/en-us/azure/virtual-desktop/graphics-chroma-value-increase-4-4-4) | configuration | 0.75 | Article explicitly shows how to set chroma value via Intune or Group Policy, implying specific policy names, registry keys, and allowed values (4:2:0 vs 4:4:4). |
 | [Onboard to Purview forensic evidence](https://learn.microsoft.com/en-us/azure/virtual-desktop/purview-forensic-evidence) | security | 0.75 | Integration with Purview Insider Risk forensic evidence; involves specific policies, triggers, and onboarding steps that are security-focused and product-specific. |
 | [Scale with a runbook and logic app](https://learn.microsoft.com/en-us/azure/virtual-desktop/set-up-scaling-script) | configuration | 0.75 | How-to for configuring the scaling script; likely includes runbook parameters, schedules, and Logic Apps settings that are product-specific. |
+| [Configure a managed identity](https://learn.microsoft.com/en-us/azure/virtual-desktop/configure-managed-identity) | security | 0.74 | The page describes how to configure managed identities specifically for Azure Virtual Desktop host pools, including assigning Azure RBAC permissions for ARM operations on VMs, Key Vault, and networking resources. This involves product-specific security configuration (managed identity usage, required roles/permissions, and scope) rather than generic concepts, fitting the security sub-skill. |
 | [Screen capture protection](https://learn.microsoft.com/en-us/azure/virtual-desktop/screen-capture-protection) | security | 0.74 | The page describes how to enable and configure Screen Capture Protection for Azure Virtual Desktop and Windows 365, including product-specific security behavior (what is blocked/allowed, client/OS requirements, and interaction with watermarking). This is concrete, product-specific security configuration guidance rather than a conceptual overview. |
 | [Add and manage App Attach applications](https://learn.microsoft.com/en-us/azure/virtual-desktop/app-attach-setup) | configuration | 0.72 | Management of App Attach apps uses AVD-specific portal and PowerShell parameters, including configuration of package sources, registration options, and assignment settings. |
 | [Launch OneDrive with RemoteApp](https://learn.microsoft.com/en-us/azure/virtual-desktop/onedrive-remoteapp) | configuration | 0.72 | Describes a workaround for the standard OneDrive autostart setting not working with RemoteApp, implying specific script/configuration steps unique to AVD. |
@@ -198,7 +194,6 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Licensing](https://learn.microsoft.com/en-us/azure/virtual-desktop/licensing) | decision-making | 0.65 | Details licensing differences for internal vs external use and per-user access pricing, guiding choice of licensing models. |
 | [Monitor Autoscale operations](https://learn.microsoft.com/en-us/azure/virtual-desktop/autoscale-monitor-operations-insights) | troubleshooting | 0.65 | Focuses on monitoring autoscale operations and identifying issues; uses Insights data and likely provides diagnostic patterns specific to autoscale. |
 | [Preferred application group type overview](https://learn.microsoft.com/en-us/azure/virtual-desktop/preferred-application-group-type) | configuration | 0.65 | Describes behavior of preferred application group type and likely includes specific property names and allowed values that control desktop vs RemoteApp access. |
-| [RDP Multipath](https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-multipath) | best-practices | 0.65 | Describes when and how RDP Multipath enhances connections and which connections are eligible, providing product-specific usage recommendations. |
 | [Redirect video playback and calls](https://learn.microsoft.com/en-us/azure/virtual-desktop/multimedia-redirection-video-playback-calls) | configuration | 0.65 | Covers multimedia redirection for video and calls over RDP for Azure Virtual Desktop/Windows 365/Dev Box; such articles typically include product-specific settings, client/server configuration parameters, and enablement steps that qualify as configuration expert knowledge. |
 | [Resolve Azure Advisor recommendations](https://learn.microsoft.com/en-us/azure/virtual-desktop/azure-advisor-recommendations) | best-practices | 0.65 | Walkthrough of concrete Azure Advisor recommendations and how to remediate them for AVD, which are product-specific DO/DO-NOT style guidance with actionable steps. |
 | [Use features of the Remote Desktop client](https://learn.microsoft.com/en-us/azure/virtual-desktop/remote-desktop-client/client-features-windows-msrdc) | configuration | 0.65 | Explains client features and likely their configuration options; product-specific client behavior and settings when used with AVD. |
@@ -230,6 +225,7 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Understanding network connectivity](https://learn.microsoft.com/en-us/azure/virtual-desktop/network-connectivity) | 0.35 | Conceptual network connectivity overview; no explicit mention of FQDN lists, ports, or config tables in the summary. |
 | [Azure Virtual Desktop Agent](https://learn.microsoft.com/en-us/azure/virtual-desktop/agent-overview) | 0.30 | Described as an overview of the agent and update processes; likely conceptual with minimal concrete configuration or troubleshooting matrices in the summary. |
 | [Identities and authentication](https://learn.microsoft.com/en-us/azure/virtual-desktop/authentication) | 0.30 | High-level overview of identities and authentication methods for Azure Virtual Desktop; conceptual explanation without specific RBAC role lists, parameter tables, or concrete configuration values. |
+| [RDP Multipath](https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-multipath) | 0.30 | Page appears to be a conceptual/behavioral overview of RDP Multipath benefits and operation for Azure Virtual Desktop, without clear evidence of numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. Based on the summary, it mainly explains what RDP Multipath does and that it integrates with RDP Shortpath, but does not expose detailed product-specific configuration values, quotas, or troubleshooting mappings. |
 | [Service architecture and resilience](https://learn.microsoft.com/en-us/azure/virtual-desktop/service-architecture-resilience) | 0.30 | Architecture and resilience overview appears conceptual; no indication of quantified thresholds, decision matrices, or config tables. |
 | [Use cases for Azure Virtual Desktop Insights](https://learn.microsoft.com/en-us/azure/virtual-desktop/insights-use-cases) | 0.30 | Describes use cases and scenarios for Insights at a conceptual level; does not emphasize specific parameters, limits, or decision matrices with quantified trade-offs. |
 | [Insights](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-insights) | 0.25 | Insights release notes; summary does not indicate detailed config tables or troubleshooting mappings. |

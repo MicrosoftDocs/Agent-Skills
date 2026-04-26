@@ -1,9 +1,9 @@
 ---
 name: azure-quantum
-description: Expert knowledge for Azure Quantum development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Azure Quantum workspaces, QDK/Q#, QIR/OpenQASM circuits, IonQ/PASQAL/Quantinuum/Rigetti targets, or hybrid jobs, and other Azure Quantum related development tasks. Not for Azure HPC Cache (use azure-hpc-cache), Azure Batch (use azure-batch), Azure Databricks (use azure-databricks), Azure Machine Learning (use azure-machine-learning).
+description: Expert knowledge for Azure Quantum development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using QDK/SDKs with QIR/OpenQASM/Qiskit, targeting IonQ/PASQAL/Quantinuum/Rigetti, or deploying workspaces via Bicep, and other Azure Quantum related development tasks. Not for Azure HPC Cache (use azure-hpc-cache), Azure Batch (use azure-batch), Azure Databricks (use azure-databricks), Azure Machine Learning (use azure-machine-learning).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-19"
+  generated_at: "2026-04-26"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Quantum Skill
@@ -24,22 +24,21 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L45 | Troubleshooting Azure Quantum provider issues: diagnosing job failures and understanding support/escalation policies and limits for IonQ, PASQAL, Quantinuum, and Rigetti. |
-| Best Practices | L46-L52 | Best practices for using QDK in VS Code with Copilot, optimizing large Q# programs via resource estimation, and systematically testing and debugging quantum code. |
-| Decision Making | L53-L61 | Guidance on Azure Quantum costs, provider pricing and regions, workspace migration, choosing Q# dev tools, and planning quantum-safe cryptography with the resource estimator. |
-| Architecture & Design Patterns | L62-L66 | Guidance on designing hybrid quantum-classical workflows in Azure Quantum, including architecture options, orchestration patterns, and when to offload tasks to quantum hardware. |
-| Limits & Quotas | L67-L73 | Managing Azure Quantum quotas, job/session limits, timeouts, and Rigetti-specific hardware constraints and target capabilities. |
+| Troubleshooting | L37-L44 | Troubleshooting Azure Quantum provider issues: diagnosing job failures and understanding support/escalation policies and limits for IonQ, PASQAL, Quantinuum, and Rigetti. |
+| Best Practices | L45-L51 | Best practices for using QDK in VS Code with Copilot, optimizing large Q# programs via resource estimation, and systematically testing and debugging quantum code. |
+| Decision Making | L52-L60 | Guidance on Azure Quantum costs, provider pricing and regions, workspace migration, choosing Q# dev tools, and planning quantum-safe cryptography with the resource estimator. |
+| Architecture & Design Patterns | L61-L65 | Guidance on designing hybrid quantum-classical workflows in Azure Quantum, including architecture options, orchestration patterns, and when to offload tasks to quantum hardware. |
+| Limits & Quotas | L66-L73 | Usage limits, quotas, and timeouts for Azure Quantum jobs and sessions, plus hardware/target-specific constraints for Pasqal and Rigetti quantum providers. |
 | Security | L74-L84 | Managing secure access to Azure Quantum workspaces: RBAC and access control, bulk user assignment, ARM locks, managed identities, service principals, and secure handling of access keys. |
-| Configuration | L85-L101 | Configuring Azure Quantum workspaces, QDK tools, simulators, noise models, and hardware targets (IonQ, PASQAL, Quantinuum, Rigetti), plus tuning and batching resource estimator runs. |
-| Integrations & Coding Patterns | L102-L111 | Using the Azure Quantum QDK and SDKs to connect workspaces and submit/run circuits and programs (QIR, OpenQASM, Pulser, Qiskit, Cirq) and hybrid jobs with Adaptive RI |
-| Deployment | L112-L116 | Deploying Azure Quantum workspaces with Bicep and running/submitting Q# quantum programs from VS Code to Azure Quantum backends |
+| Configuration | L85-L100 | Configuring Azure Quantum workspaces, QDK tools, simulators, and hardware targets, plus tuning and batching resource estimator runs and using VS Code/QDK chemistry visualizer features |
+| Integrations & Coding Patterns | L101-L110 | Using the Azure Quantum QDK and SDKs to connect workspaces and submit/run circuits and programs (QIR, OpenQASM, Pulser, Qiskit, Cirq) and hybrid jobs with Adaptive RI |
+| Deployment | L111-L115 | Deploying Azure Quantum workspaces with Bicep and running/submitting Q# quantum programs from VS Code to Azure Quantum backends |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
 | Diagnose and fix common Azure Quantum issues | https://learn.microsoft.com/en-us/azure/quantum/azure-quantum-common-issues |
 | Support and escalation policy for IonQ on Azure Quantum | https://learn.microsoft.com/en-us/azure/quantum/provider-support-ionq |
-| Support policy for PASQAL on Azure Quantum | https://learn.microsoft.com/en-us/azure/quantum/provider-support-pasqal |
 | Support policy for Quantinuum on Azure Quantum | https://learn.microsoft.com/en-us/azure/quantum/provider-support-quantinuum |
 | Support policy for Rigetti on Azure Quantum | https://learn.microsoft.com/en-us/azure/quantum/provider-support-rigetti |
 
@@ -69,6 +68,7 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Review and manage Azure Quantum usage quotas | https://learn.microsoft.com/en-us/azure/quantum/azure-quantum-quotas |
 | Manage Azure Quantum sessions and avoid timeouts | https://learn.microsoft.com/en-us/azure/quantum/how-to-work-with-sessions |
+| Review Pasqal quantum targets and technical constraints | https://learn.microsoft.com/en-us/azure/quantum/provider-pasqal |
 | Rigetti provider targets and hardware limits in Azure Quantum | https://learn.microsoft.com/en-us/azure/quantum/provider-rigetti |
 
 ### Security
@@ -87,12 +87,11 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Configure Azure Quantum workspaces with Azure CLI | https://learn.microsoft.com/en-us/azure/quantum/how-to-manage-quantum-workspaces-with-the-azure-cli |
 | Run Microsoft Quantum resource estimator locally and online | https://learn.microsoft.com/en-us/azure/quantum/how-to-submit-re-jobs |
-| Install and use the QDK molecule visualizer in Jupyter | https://learn.microsoft.com/en-us/azure/quantum/how-to-use-molecule-visualizer |
+| Configure and use QDK chemistry molecule visualizer | https://learn.microsoft.com/en-us/azure/quantum/how-to-use-molecule-visualizer |
 | Set up QDK VS Code extension and environment | https://learn.microsoft.com/en-us/azure/quantum/install-overview-qdk |
 | Install and run neutral atom device simulators in QDK | https://learn.microsoft.com/en-us/azure/quantum/install-qdk-neutral-atom-simulators |
 | Configure target parameters for the Quantum resource estimator | https://learn.microsoft.com/en-us/azure/quantum/overview-resources-estimator |
 | Configure and use IonQ targets in Azure Quantum | https://learn.microsoft.com/en-us/azure/quantum/provider-ionq |
-| Configure PASQAL simulators and QPUs in Azure Quantum | https://learn.microsoft.com/en-us/azure/quantum/provider-pasqal |
 | Configure Quantinuum quantum targets in Azure Quantum | https://learn.microsoft.com/en-us/azure/quantum/provider-quantinuum |
 | Configure noise models for neutral atom simulations in QDK | https://learn.microsoft.com/en-us/azure/quantum/qdk-simulator-noise-models |
 | Batch and compare multiple resource estimator configurations | https://learn.microsoft.com/en-us/azure/quantum/resource-estimator-batching |

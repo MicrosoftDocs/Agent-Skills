@@ -32,9 +32,9 @@ confusable_not_for: Not for Azure Carbon Optimization (use azure-carbon-optimiza
 - **Unclassified**: 5
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 1
-- **Unchanged**: 13
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 15
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-impact-reporting/azure-impact-reporting.csv`
 
@@ -48,15 +48,6 @@ confusable_not_for: Not for Azure Carbon Optimization (use azure-carbon-optimiza
 | *(Unclassified)* | 5 | 33.3% |
 
 ## Changes
-
-### New Pages
-
-- [Log Upload for Guest Health Reporting](https://learn.microsoft.com/en-us/azure/azure-impact-reporting/guest-health-log-upload)
-
-### Updated Pages
-
-- [FAQ for Guest Health Reporting](https://learn.microsoft.com/en-us/azure/azure-impact-reporting/guest-health-faq)
-  - Updated: 2025-09-26T22:02:00.000Z → 2026-04-14T22:03:00.000Z
 
 ## Classified Pages
 

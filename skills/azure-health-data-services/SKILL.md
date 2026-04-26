@@ -3,7 +3,7 @@ name: azure-health-data-services
 description: Expert knowledge for Azure Health Data Services development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using FHIR, DICOM, MedTech, de-identification APIs, Synapse/ADF pipelines, or SMART on FHIR apps, and other Azure Health Data Services related development tasks. Not for Azure Health Bot (use azure-health-bot), Azure API Management (use azure-api-management), Azure Data Factory (use azure-data-factory), Azure Cosmos DB (use azure-cosmos-db).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-19"
+  generated_at: "2026-04-26"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Health Data Services Skill

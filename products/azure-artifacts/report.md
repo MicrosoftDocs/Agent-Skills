@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-04-12'
+generated_at: '2026-04-26'
 category_descriptions:
   limits-quotas: Storage quotas, free allocation, and per-package size/count limits
     in Azure Artifacts, plus how to monitor, manage, and publish packages within those
     limits.
-  integrations: How to connect build tools and CLIs (Cargo, Maven, Gradle, npm, NuGet,
-    Python, PowerShell, Universal) to Azure Artifacts feeds, publish/restore packages,
-    and use upstream sources.
+  integrations: How to connect build tools (Cargo, Maven, Gradle, npm, NuGet, Python,
+    PowerShell) to Azure Artifacts feeds to publish, restore, proxy upstream registries,
+    and debug with symbols.
   best-practices: Guidance on Azure Artifacts package management best practices, configuring
     and using upstream sources, and safely restoring packages from external feeds.
   security: 'Securing Azure Artifacts feeds: configuring permissions, protecting upstream
@@ -20,15 +20,15 @@ category_descriptions:
     Azure Artifacts feeds, including workflow setup, authentication, and CI/CD integration.
 skill_description: Expert knowledge for Azure Artifacts development including best
   practices, decision making, limits & quotas, security, configuration, integrations
-  & coding patterns, and deployment. Use when managing feeds, upstream sources, package
-  publishing/restore, GitHub Actions CI/CD, or npm/NuGet config, and other Azure Artifacts
+  & coding patterns, and deployment. Use when managing feeds, upstream sources, views/promotion,
+  retention, or GitHub Actions CI/CD to Azure Artifacts, and other Azure Artifacts
   related development tasks. Not for Azure DevOps (use azure-devops), Azure Pipelines
-  (use azure-pipelines), Azure Repos (use azure-repos), Azure Boards (use azure-boards).
-use_when: Use when managing feeds, upstream sources, package publishing/restore, GitHub
-  Actions CI/CD, or npm/NuGet config, and other Azure Artifacts related development
+  (use azure-pipelines), Azure Repos (use azure-repos), Azure Test Plans (use azure-test-plans).
+use_when: Use when managing feeds, upstream sources, views/promotion, retention, or
+  GitHub Actions CI/CD to Azure Artifacts, and other Azure Artifacts related development
   tasks.
 confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (use
-  azure-pipelines), Azure Repos (use azure-repos), Azure Boards (use azure-boards).
+  azure-pipelines), Azure Repos (use azure-repos), Azure Test Plans (use azure-test-plans).
 ---
 # Azure Artifacts Crawl Report
 
@@ -42,8 +42,8 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 73
+- **Updated Pages**: 1
+- **Unchanged**: 72
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-artifacts/azure-artifacts.csv`
 
@@ -61,6 +61,11 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 | *(Unclassified)* | 13 | 17.8% |
 
 ## Changes
+
+### Updated Pages
+
+- [Use packages from Google Maven Repository](https://learn.microsoft.com/en-us/azure/devops/artifacts/maven/google-maven?view=azure-devops)
+  - Updated: 2026-02-17T18:05:00.000Z → 2026-04-20T17:05:00.000Z
 
 ## Classified Pages
 
@@ -89,12 +94,12 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 | [Restore Maven packages](https://learn.microsoft.com/en-us/azure/devops/artifacts/maven/install?view=azure-devops) | integrations | 0.70 | How-to page for connecting Maven to Azure Artifacts feeds; typically includes product-specific repository URLs, settings.xml snippets, and authentication parameters that are configuration/integration details rather than generic Maven knowledge. |
 | [Set up upstream sources](https://learn.microsoft.com/en-us/azure/devops/artifacts/how-to/set-up-upstream-sources?view=azure-devops) | configuration | 0.70 | How-to for setting up upstream sources; typically includes feed settings, allowed values, and UI/REST configuration options specific to Azure Artifacts. |
 | [Use packages from Crates.io](https://learn.microsoft.com/en-us/azure/devops/artifacts/cargo/cargo-upstream-source?view=azure-devops) | integrations | 0.70 | Guides configuring Cargo to use Crates.io through Azure Artifacts; includes registry configuration and Azure-specific endpoints. |
-| [Use packages from Google Maven Repository](https://learn.microsoft.com/en-us/azure/devops/artifacts/maven/google-maven?view=azure-devops) | integrations | 0.70 | Shows how to configure Google Maven as an upstream source; includes Azure feed configuration and Maven/Gradle repository entries unique to this integration. |
 | [Use packages from Gradle Plugins](https://learn.microsoft.com/en-us/azure/devops/artifacts/maven/gradle-plugins?view=azure-devops) | integrations | 0.70 | Documents how to add Gradle Plugins as an upstream source; likely includes specific repository URLs and feed configuration options. |
 | [Use packages from JitPack](https://learn.microsoft.com/en-us/azure/devops/artifacts/maven/jitpack-upstream?view=azure-devops) | integrations | 0.70 | Integration-focused article for JitPack; includes Azure Artifacts feed settings and Maven/Gradle configuration details. |
 | [Use packages from Maven Central](https://learn.microsoft.com/en-us/azure/devops/artifacts/maven/upstream-sources?view=azure-devops) | integrations | 0.70 | Covers Maven settings for using Maven Central through Azure Artifacts; includes repository IDs, URLs, and snapshot behavior specific to the service. |
 | [Use packages from NuGet.org](https://learn.microsoft.com/en-us/azure/devops/artifacts/nuget/upstream-sources?view=azure-devops) | integrations | 0.70 | Shows how to configure projects/CLI to pull from nuget.org through Azure Artifacts; includes NuGet.config entries, source URLs, and Azure-specific parameters. |
 | [Use packages from the npm registry](https://learn.microsoft.com/en-us/azure/devops/artifacts/npm/upstream-sources?view=azure-devops) | integrations | 0.70 | Documents npmrc configuration, registry URLs, and scope handling for Azure Artifacts; these are product-specific integration details. |
+| [Use packages from Google Maven Repository](https://learn.microsoft.com/en-us/azure/devops/artifacts/maven/google-maven?view=azure-devops) | integrations | 0.68 | Page describes configuring Azure Artifacts to use Google Maven Repository as an upstream source, including product-specific feed/upstream settings and permission requirements (e.g., Feed and Upstream Reader/Collaborator). This is concrete integration/configuration knowledge specific to Azure DevOps Artifacts and Maven, beyond generic Maven or package management concepts. |
 | [Cargo](https://learn.microsoft.com/en-us/azure/devops/artifacts/get-started-cargo?view=azure-devops) | integrations | 0.65 | Get-started article that configures Cargo to use Azure Artifacts; includes registry configuration and Azure-specific URLs. |
 | [Debug with Visual Studio](https://learn.microsoft.com/en-us/azure/devops/artifacts/symbols/debug-with-symbols-visual-studio?view=azure-devops) | integrations | 0.65 | Shows how to configure Visual Studio symbol settings to use Azure Artifacts symbol server; includes server URLs and configuration options unique to this integration. |
 | [Debug with WinDbg](https://learn.microsoft.com/en-us/azure/devops/artifacts/symbols/debug-with-symbols-windbg?view=azure-devops) | integrations | 0.65 | Explains configuring WinDbg to consume symbols from Azure Artifacts; includes .sympath settings and server URLs specific to Azure Artifacts. |
