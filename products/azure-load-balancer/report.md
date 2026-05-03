@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-19'
+generated_at: '2026-05-03'
 category_descriptions:
   configuration: 'Configuring Azure Load Balancer behavior: backends/frontends (incl.
     cross-subscription, IP-based, outbound-only), rules, health probes, traffic distribution,
@@ -9,9 +9,9 @@ category_descriptions:
     best practices.
   integrations: Using IMDS, Azure Monitor CLI, and REST APIs to query load balancer/VM
     IPs, retrieve metadata, and collect/load metrics for integration and automation.
-  decision-making: Guidance on choosing the right Load Balancer SKU and planning/migrating
-    configurations, including Basic→Standard, NAT rules v1→v2, and AWS NLB→Azure Load
-    Balancer.
+  decision-making: 'Guidance on choosing the right Load Balancer SKU and step‑by‑step
+    migrations: Basic→Standard, NAT rules v1→v2, and moving workloads from AWS NLB
+    to Azure Load Balancer'
   limits-quotas: 'Limits, behaviors, and configuration of Load Balancer connections:
     SNAT/flow limits, TCP idle timeout settings, and when/why TCP resets occur and
     how to control them'
@@ -28,13 +28,13 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Load Balancer development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when configuring frontends/backends, SNAT/outbound rules, health probes, NAT
-  rules v2, or IMDS/Monitor integrations, and other Azure Load Balancer related development
+  Use when configuring SNAT/outbound rules, health probes, VMSS backends, IMDS/Monitor
+  APIs, or Basic→Standard migrations, and other Azure Load Balancer related development
   tasks. Not for Azure Application Gateway (use azure-application-gateway), Azure
   Traffic Manager (use azure-traffic-manager), Azure Front Door (use azure-front-door),
   Azure Virtual Network (use azure-virtual-network).
-use_when: Use when configuring frontends/backends, SNAT/outbound rules, health probes,
-  NAT rules v2, or IMDS/Monitor integrations, and other Azure Load Balancer related
+use_when: Use when configuring SNAT/outbound rules, health probes, VMSS backends,
+  IMDS/Monitor APIs, or Basic→Standard migrations, and other Azure Load Balancer related
   development tasks.
 confusable_not_for: Not for Azure Application Gateway (use azure-application-gateway),
   Azure Traffic Manager (use azure-traffic-manager), Azure Front Door (use azure-front-door),
@@ -51,10 +51,10 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 - **Unclassified**: 46
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 3
-- **Unchanged**: 83
-- **Deleted Pages**: 8
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 86
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-load-balancer/azure-load-balancer.csv`
 
 ## Classification Statistics
@@ -74,29 +74,10 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 
 ## Changes
 
-### New Pages
-
-- [Support and troubleshooting for Azure Load Balancer](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-support-help)
-
 ### Updated Pages
 
-- [Retrieve metadata using the Azure IMDS](https://learn.microsoft.com/en-us/azure/load-balancer/howto-load-balancer-imds)
-  - Updated: 2026-01-29T08:00:00.000Z → 2026-04-14T22:21:00.000Z
-- [Retrieve information using the Azure Instance Metadata Service](https://learn.microsoft.com/en-us/azure/load-balancer/instance-metadata-service-load-balancer)
-  - Updated: 2026-01-29T08:00:00.000Z → 2026-04-14T22:21:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-faqs)
-  - Updated: 2026-02-23T23:22:00Z → 2026-04-14T22:21:00Z
-
-### Deleted Pages
-
-- ~~Common deployment errors~~ (https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-common-deployment-errors)
-- ~~Troubleshoot Azure Load Balancer~~ (https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-troubleshoot)
-- ~~Backend pool (VM) traffic~~ (https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-troubleshoot-backend-traffic)
-- ~~Troubleshoot load balancer health event logs~~ (https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-troubleshoot-health-event-logs)
-- ~~Health Probe status~~ (https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-troubleshoot-health-probe-status)
-- ~~Common error codes for Azure Instance Metadata Service (IMDS)~~ (https://learn.microsoft.com/en-us/azure/load-balancer/troubleshoot-load-balancer-imds)
-- ~~Troubleshoot SNAT exhaustion and connection timeouts~~ (https://learn.microsoft.com/en-us/azure/load-balancer/troubleshoot-outbound-connection)
-- ~~Resource health and inbound availability issues~~ (https://learn.microsoft.com/en-us/azure/load-balancer/troubleshoot-rhc)
+- [Migrate AWS Network Load Balancing](https://learn.microsoft.com/en-us/azure/load-balancer/network-load-balancing-aws-to-azure-how-to)
+  - Updated: 2025-10-02T22:32:00.000Z → 2026-04-03T08:00:00.000Z
 
 ## Classified Pages
 
@@ -117,7 +98,6 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Get Load Balancer metrics with REST](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-query-metrics-rest-api) | integrations | 0.70 | Shows how to collect bytes-processed metrics for Standard Load Balancer using Azure Monitor REST API; includes endpoint usage and parameters, which are integration-specific. |
 | [Health probes](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-custom-probe-overview) | configuration | 0.70 | Describes health probe properties and SKU comparison; typically includes probe configuration parameters (interval, threshold, protocol) and their allowed values, which are product-specific configuration details. |
 | [Manage load balancer rules](https://learn.microsoft.com/en-us/azure/load-balancer/manage-rules-how-to) | configuration | 0.70 | Describes four rule types and their properties; management article likely includes rule settings and allowed values, which are product-specific configuration details. |
-| [Migrate AWS Network Load Balancing](https://learn.microsoft.com/en-us/azure/load-balancer/network-load-balancing-aws-to-azure-how-to) | decision-making | 0.70 | Migration guide with feature mappings and step-by-step planning/execution guidance between AWS NLB and Azure Load Balancer; this cross-cloud mapping and migration detail is product-specific decision guidance not generally known. |
 | [Monitor and alert with LoadBalancerHealthEvent logs](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-monitor-alert-health-event-logs) | troubleshooting | 0.70 | Focuses on using LoadBalancerHealthEvent resource logs to identify and troubleshoot issues; maps health events to diagnosing load balancer health problems, which is troubleshooting guidance. |
 | [Monitoring data reference](https://learn.microsoft.com/en-us/azure/load-balancer/monitor-load-balancer-reference) | configuration | 0.70 | A 'monitoring data reference' page for a specific Azure service typically lists all supported metrics, dimensions, log categories, and their exact names/semantics. These are product-specific parameters and schema details that LLMs won't reliably know, fitting the configuration category for monitoring/telemetry settings. |
 | [Retrieve information using the Azure Instance Metadata Service](https://learn.microsoft.com/en-us/azure/load-balancer/instance-metadata-service-load-balancer) | integrations | 0.70 | Describes using Azure Instance Metadata Service to retrieve load balancer and VM IP information, which generally includes specific REST paths, query structure, and metadata schema fields. These are concrete, product-specific API usage details that fit the integrations sub-skill type rather than a conceptual overview. |
@@ -125,6 +105,7 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [SKUs](https://learn.microsoft.com/en-us/azure/load-balancer/skus) | decision-making | 0.70 | SKU overview pages typically include comparison tables of Basic, Standard, and Gateway with capabilities and constraints to guide selection, which is product-specific decision guidance. |
 | [TCP reset on idle timeout](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-tcp-reset) | limits-quotas | 0.70 | Explains TCP reset on idle timeout; likely includes specific idle timeout behavior and packet handling details that are product-specific and not generic knowledge. |
 | [Testing inbound frontend IP address reachability](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-test-frontend-reachability) | troubleshooting | 0.70 | Shows how to use ping and traceroute for diagnosing inbound connectivity issues to Standard Public Load Balancer frontends. While somewhat procedural, it is clearly framed as a troubleshooting technique for a specific product scenario. |
+| [Migrate AWS Network Load Balancing](https://learn.microsoft.com/en-us/azure/load-balancer/network-load-balancing-aws-to-azure-how-to) | decision-making | 0.68 | The page focuses on migrating from AWS NLB to Azure Load Balancer with feature mappings and migration planning. This is expert, product-specific guidance that helps users decide how to map AWS capabilities to Azure equivalents and plan the transition. It goes beyond conceptual comparison by providing concrete migration steps and mapping of features, which fits the decision-making category better than generic tutorials, even though the summary doesn't show numeric thresholds. |
 | [Outbound only load balancer configuration](https://learn.microsoft.com/en-us/azure/load-balancer/egress-only) | configuration | 0.68 | The article is a step-by-step, product-specific configuration guide for creating an egress-only setup using internal and external Standard Load Balancers plus Azure Bastion. It describes how to wire outbound NAT for VMs behind an internal load balancer, including specific Azure resources and their relationships. This is detailed configuration knowledge that goes beyond generic concepts, but it does not focus on numeric limits/quotas, troubleshooting error codes, or architecture decision matrices. |
 | [Attach a cross-subscription backend to an Azure Load Balancer](https://learn.microsoft.com/en-us/azure/load-balancer/cross-subscription-how-to-attach-backend) | configuration | 0.65 | How-to guide for attaching cross-subscription backends; includes specific resource relationships and configuration steps unique to cross-subscription backend pools. |
 | [Attach a cross-subscription frontend to an Azure Load Balancer](https://learn.microsoft.com/en-us/azure/load-balancer/cross-subscription-how-to-attach-frontend) | configuration | 0.65 | Describes creating a load balancer in one subscription and attaching a frontend IP from another; product-specific configuration pattern for cross-subscription frontends. |

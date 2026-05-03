@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-05'
+generated_at: '2026-05-03'
 category_descriptions:
   configuration: 'Configuring AVNM: IPAM pools, network groups (static/dynamic via
     Policy), cross-tenant connections, event logs, and managing UDRs/topologies and
@@ -35,13 +35,13 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 - **Total Pages**: 52
 - **Fetched**: 52
 - **Fetch Failed**: 0
-- **Classified**: 22
-- **Unclassified**: 30
+- **Classified**: 21
+- **Unclassified**: 31
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 52
+- **Updated Pages**: 1
+- **Unchanged**: 51
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-network-manager/azure-virtual-network-manager.csv`
 
@@ -51,12 +51,17 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 |------|-------|------------|
 | configuration | 10 | 19.2% |
 | integrations | 1 | 1.9% |
-| limits-quotas | 2 | 3.8% |
+| limits-quotas | 1 | 1.9% |
 | security | 7 | 13.5% |
 | troubleshooting | 2 | 3.8% |
-| *(Unclassified)* | 30 | 57.7% |
+| *(Unclassified)* | 31 | 59.6% |
 
 ## Changes
+
+### Updated Pages
+
+- [IP address management overview](https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-ip-address-management)
+  - Updated: 2026-01-09T08:00:00.000Z → 2026-04-27T22:14:00.000Z
 
 ## Classified Pages
 
@@ -67,7 +72,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Automate IP address management](https://learn.microsoft.com/en-us/azure/virtual-network-manager/automate-ip-address-management-ipam-sample) | configuration | 0.70 | Provides a PowerShell script and describes IPAM pool usage; includes specific parameters, resource properties, and configuration patterns unique to AVNM IPAM. |
 | [Configure Event Logs for Azure Virtual Network Manager](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-configure-event-logs) | configuration | 0.70 | How-to for configuring event logs with Log Analytics and storage accounts; likely includes diagnostic setting names, categories, and destination parameters, which are product-specific configuration details. |
 | [Define dynamic network group membership with Azure Policy](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-define-network-group-membership-azure-policy) | configuration | 0.70 | Shows how to build conditional expressions and parameters in Azure Policy for AVNM; includes concrete policy parameter names, operators, and configuration patterns. |
-| [IP address management overview](https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-ip-address-management) | limits-quotas | 0.70 | IPAM article explicitly lists regions where the feature is unavailable; this is product-specific availability/limit information that changes over time. |
 | [Protect high-risk network ports with security admin rules and exceptions](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-block-high-risk-ports) | security | 0.70 | Scenario-driven security configuration including general block rules and exception rules; contains AVNM-specific security patterns and interactions with NSGs. |
 | [Security admin rule overview](https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-security-admins) | security | 0.70 | Explains what security admin rules are and how they work; likely includes rule structure, fields (source, destination, ports, protocols), and evaluation behavior specific to AVNM. |
 | [Using network groups as source and destination](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-create-security-admin-rule-network-group) | security | 0.70 | Portal how-to for creating security admin configurations and rules; includes specific rule fields (ports, protocols, directions) and deployment behavior unique to AVNM. |
@@ -118,4 +122,5 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Common use cases for Azure Virtual Network Manager](https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-use-cases) | 0.20 | Use-case discussion for AVNM; scenario-focused, not detailed with numeric thresholds, configs, or troubleshooting mappings. |
 | [Create Virtual Network Manager - Portal](https://learn.microsoft.com/en-us/azure/virtual-network-manager/create-virtual-network-manager-portal) | 0.20 | Quickstart/tutorial for creating a mesh topology in Azure Virtual Network Manager via the portal. It focuses on step-by-step deployment and verification, without detailed limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. Content is procedural rather than expert reference material. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/virtual-network-manager/faq) | 0.20 | FAQ page appears to be general Q&A about Azure Virtual Network Manager without detailed limits tables, configuration parameter matrices, or structured troubleshooting content with specific error codes. Likely focuses on conceptual clarifications and common questions rather than expert-only numeric limits, configuration references, or decision matrices. |
+| [IP address management overview](https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-ip-address-management) | 0.20 | Conceptual overview of IP address management in Azure Virtual Network Manager; no evidence of numeric limits, configuration parameter tables, error codes, or decision matrices with quantified trade-offs. |
 | [What is Azure Virtual Network Manager?](https://learn.microsoft.com/en-us/azure/virtual-network-manager/overview) | 0.20 | High-level overview of Azure Virtual Network Manager; conceptual description of capabilities without concrete limits, configs, or error details. |

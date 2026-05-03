@@ -3,7 +3,7 @@ name: azure-rbac
 description: Expert knowledge for Azure Role-based access control development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when managing Azure RBAC/ABAC roles, PIM, custom roles, Activity Log audits, or role assignments via CLI/ARM, and other Azure Role-based access control related development tasks. Not for Azure Active Directory B2C (use azure-active-directory-b2c), Azure Information Protection (use azure-information-protection), Azure Policy (use azure-policy), Azure Security (use azure-security).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-12"
+  generated_at: "2026-05-03"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Role-based access control Skill

@@ -1,9 +1,9 @@
 ---
 name: azure-sql-database
-description: Expert knowledge for Azure SQL Database development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when choosing vCore/DTU/Hyperscale/serverless, configuring geo‑replication, elastic pools, Data Sync, or HA/DR, and other Azure SQL Database related development tasks. Not for Azure SQL Managed Instance (use azure-sql-managed-instance), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Cosmos DB (use azure-cosmos-db), Azure Database for PostgreSQL (use azure-database-postgresql).
+description: Expert knowledge for Azure SQL Database development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when choosing vCore/DTU tiers, Hyperscale/serverless, geo-replication/Data Sync, elastic pools, or HA/DR setups, and other Azure SQL Database related development tasks. Not for Azure SQL Managed Instance (use azure-sql-managed-instance), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Database for MySQL (use azure-database-mysql), Azure Database for PostgreSQL (use azure-database-postgresql).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-19"
+  generated_at: "2026-05-03"
   generator: "docs2skills/1.0.0"
 ---
 # Azure SQL Database Skill
@@ -24,12 +24,12 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L59 | Diagnosing and fixing Azure SQL issues: performance (CPU, memory, deadlocks, blocking), connectivity, capacity/scaling, geo‑replication, data sync, imports/exports, and transaction log errors. |
+| Troubleshooting | L37-L59 | Diagnosing and fixing Azure SQL issues: performance (CPU, memory, blocking, deadlocks), connectivity, capacity/scaling, import/export, geo-replication, Data Sync, and transaction log errors. |
 | Best Practices | L60-L76 | Best practices for Azure SQL operations: monitoring, security, HA/DR, failover, maintenance, space management, read replicas, elastic pools, Data Sync, and post-migration T-SQL adaptation. |
 | Decision Making | L77-L100 | Guidance for choosing Azure SQL deployment, pricing, and HA/DR options: vCore vs DTU, Hyperscale, serverless, reservations, licensing, migration paths, and cost/DR/automation planning. |
 | Architecture & Design Patterns | L101-L117 | Architectural patterns for Azure SQL: geo-replication, HA/DR, backups, connectivity, sharding/elastic scale-out, multi-tenant SaaS models, and rolling upgrade/failover designs. |
 | Limits & Quotas | L118-L131 | Limits, quotas, and resource caps for Azure SQL (free tiers, DTU/vCore, elastic pools, Hyperscale), plus how to request quota increases and watcher/operational constraints. |
-| Security | L132-L199 | Securing Azure SQL: authentication (Entra, MFA, managed identity), network/firewall, encryption (TDE, Always Encrypted), auditing/Defender, data masking/classification, and compliance best practices. |
+| Security | L132-L199 | Security features for Azure SQL: auth (Entra, managed identity, MFA), network/firewall, auditing, encryption (TDE, Always Encrypted), threat protection, compliance, and best‑practice hardening. |
 | Configuration | L200-L265 | Configuring Azure SQL databases: monitoring, backups, geo-replication/failover, security/immutability, scaling and elastic pools, Data Sync, maintenance windows, and CLI/PowerShell setup. |
 | Integrations & Coding Patterns | L266-L294 | Connecting apps and tools to Azure SQL (EF Core, .NET, Node.js, Python), sharding/elastic patterns, and automating management, replication, sync, and streaming via PowerShell/Spark/Stream Analytics |
 | Deployment | L295-L310 | Deploying and scaling Azure SQL databases/MI: automation (GitHub, ARM, Bicep, Terraform), Hyperscale/elastic pools, regional moves, feature availability, and dev environment setup. |
@@ -49,12 +49,12 @@ This skill requires **network access** to fetch documentation content:
 | Use Azure Resource Health to troubleshoot Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/resource-health-to-troubleshoot-connectivity?view=azuresql |
 | Troubleshoot common Azure SQL Data Sync issues | https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-data-sync-troubleshoot?view=azuresql |
 | Troubleshoot transient connectivity errors for Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-common-connectivity-issues?view=azuresql |
-| Troubleshoot common connectivity issues for Azure SQL and Fabric SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-common-errors-issues?view=azuresql |
+| Troubleshoot Azure SQL and Fabric SQL connectivity errors | https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-common-errors-issues?view=azuresql |
 | Troubleshoot geo-replication and redo lag in Azure SQL Database | https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-geo-replication-redo?view=azuresql |
 | Investigate and fix memory issues in Azure SQL Database | https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-memory-errors-issues?view=azuresql |
 | Resolve transaction log full errors in Azure SQL Database | https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-transaction-log-errors-issues?view=azuresql-db |
 | Identify and resolve blocking in Azure SQL Database | https://learn.microsoft.com/en-us/azure/azure-sql/database/understand-resolve-blocking?view=azuresql |
-| Resolve known issues in Azure SQL Managed Instance | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-known-issues?view=azuresql |
+| Resolve known Azure SQL Managed Instance issues | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-known-issues?view=azuresql |
 | Resolve transaction log full errors in Azure SQL Managed Instance | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/troubleshoot-transaction-log-errors-issues?view=azuresql-mi |
 
 ### Best Practices
@@ -191,8 +191,8 @@ This skill requires **network access** to fetch documentation content:
 | Use database-level TDE with customer-managed keys in Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-database-level-overview?view=azuresql |
 | Configure TDE with user-assigned managed identity in Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-identity?view=azuresql |
 | Rotate Azure SQL TDE protector using PowerShell and CLI | https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-key-rotation?view=azuresql |
-| Set up customer-managed TDE with Azure Key Vault | https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-overview?view=azuresql |
-| Respond to compromised Azure SQL TDE protector key | https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-remove-tde-protector?view=azuresql |
+| Configure customer-managed TDE with Azure Key Vault | https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-overview?view=azuresql |
+| Rotate and remove BYOK TDE protector via PowerShell/CLI | https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-remove-tde-protector?view=azuresql |
 | Configure transparent data encryption for Azure SQL databases | https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-tde-overview?view=azuresql |
 | Secure Azure SQL with virtual network service endpoints and rules | https://learn.microsoft.com/en-us/azure/azure-sql/database/vnet-service-endpoint-rule-overview?view=azuresql |
 | Prepare for Azure SQL TLS root certificate rotation | https://learn.microsoft.com/en-us/azure/azure-sql/updates/ssl-root-certificate-expiring?view=azuresql |

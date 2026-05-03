@@ -3,7 +3,7 @@ name: azure-resource-graph
 description: Expert knowledge for Azure Resource Graph development including troubleshooting, best practices, decision making, limits & quotas, configuration, and integrations & coding patterns. Use when querying via CLI/PowerShell/REST, using GET/LIST vs Query APIs, shared queries, alerts, or Power BI, and other Azure Resource Graph related development tasks. Not for Azure Monitor (use azure-monitor), Azure Policy (use azure-policy), Azure Resource Manager (use azure-resource-manager), Azure Portal (use azure-portal).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-05"
+  generated_at: "2026-05-03"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Resource Graph Skill

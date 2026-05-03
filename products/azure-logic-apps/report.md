@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-19'
+generated_at: '2026-05-03'
 category_descriptions:
   integrations: Patterns and samples for integrating Logic Apps with Azure/IBM/SAP
     systems, B2B/EDI, AI/OpenAI, storage, messaging, custom code/connectors, and automated
@@ -7,9 +7,9 @@ category_descriptions:
   limits-quotas: 'Limits, quotas, and performance behaviors in Logic Apps: message
     size/chunking, pagination, SQL timeouts/results, inline JavaScript limits, configuration
     caps, and metering/billing rules.'
-  configuration: 'Configuring Logic Apps workflows, runtime, and B2B: app/host settings,
-    control flow, schemas/maps, integration accounts, monitoring/logging, on-premises
-    access, and SQL/PowerShell features.'
+  configuration: Configuring Logic Apps workflows, runtime, B2B/integration accounts,
+    monitoring/logging, on-premises connectivity, control flow, schemas/maps, and
+    Workflow Definition Language.
   security: 'Securing Logic Apps: auth (managed identity, Entra, OAuth/OBO, Easy Auth),
     private endpoints/storage, certificates, cross-tenant/connector blocking, and
     Azure Policy/Defender governance.'
@@ -24,22 +24,22 @@ category_descriptions:
   best-practices: 'Best practices for Logic Apps: error/exception handling patterns,
     using control functions and rulesets efficiently, advanced rule operations, and
     handling non‑Unicode text encodings.'
-  troubleshooting: Diagnosing and fixing Logic Apps failures, throttling/429s, B2B
-    (AS2, X12, EDIFACT) acknowledgment errors, and interpreting detailed test/run
-    error info and alerts
+  troubleshooting: Diagnosing and fixing Logic Apps failures, throttling (429), B2B/EDI
+    (AS2, X12, EDIFACT) acknowledgment errors, and using tests, metrics, and alerts
+    for detailed error analysis.
 skill_description: Expert knowledge for Azure Logic Apps development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building B2B/EDI flows, AI/OpenAI integrations, hybrid/on-premises access, BizTalk
-  migrations, or DR/HA designs, and other Azure Logic Apps related development tasks.
-  Not for Azure Functions (use azure-functions), Azure API Management (use azure-api-management),
-  Azure Service Bus (use azure-service-bus), Azure Event Grid (use azure-event-grid).
+  building B2B/EDI flows, AI/OpenAI integrations, hybrid/on-premises connections,
+  or multi-region DR Logic Apps, and other Azure Logic Apps related development tasks.
+  Not for Azure Functions (use azure-functions), Azure Service Bus (use azure-service-bus),
+  Azure Event Grid (use azure-event-grid), Azure Data Factory (use azure-data-factory).
 use_when: Use when building B2B/EDI flows, AI/OpenAI integrations, hybrid/on-premises
-  access, BizTalk migrations, or DR/HA designs, and other Azure Logic Apps related
-  development tasks.
-confusable_not_for: Not for Azure Functions (use azure-functions), Azure API Management
-  (use azure-api-management), Azure Service Bus (use azure-service-bus), Azure Event
-  Grid (use azure-event-grid).
+  connections, or multi-region DR Logic Apps, and other Azure Logic Apps related development
+  tasks.
+confusable_not_for: Not for Azure Functions (use azure-functions), Azure Service Bus
+  (use azure-service-bus), Azure Event Grid (use azure-event-grid), Azure Data Factory
+  (use azure-data-factory).
 ---
 # Azure Logic Apps Crawl Report
 
@@ -48,13 +48,13 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure API Man
 - **Total Pages**: 229
 - **Fetched**: 229
 - **Fetch Failed**: 0
-- **Classified**: 187
-- **Unclassified**: 42
+- **Classified**: 188
+- **Unclassified**: 41
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 228
+- **Updated Pages**: 2
+- **Unchanged**: 227
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-logic-apps/azure-logic-apps.csv`
 
@@ -62,23 +62,25 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure API Man
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 13 | 5.7% |
+| architecture-patterns | 12 | 5.2% |
 | best-practices | 4 | 1.7% |
-| configuration | 37 | 16.2% |
+| configuration | 38 | 16.6% |
 | decision-making | 6 | 2.6% |
 | deployment | 19 | 8.3% |
 | integrations | 78 | 34.1% |
 | limits-quotas | 6 | 2.6% |
 | security | 13 | 5.7% |
-| troubleshooting | 11 | 4.8% |
-| *(Unclassified)* | 42 | 18.3% |
+| troubleshooting | 12 | 5.2% |
+| *(Unclassified)* | 41 | 17.9% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Parse or chunk content](https://learn.microsoft.com/en-us/azure/logic-apps/parse-document-chunk-text)
-  - Updated: 2026-03-11T08:00:00.000Z → 2026-04-13T08:00:00.000Z
+- [View health and performance metrics](https://learn.microsoft.com/en-us/azure/logic-apps/view-workflow-metrics)
+  - Updated: 2024-01-10T08:00:00.000Z → 2026-04-28T11:25:00.000Z
+- [Enable zone redundancy](https://learn.microsoft.com/en-us/azure/logic-apps/set-up-zone-redundancy-availability-zones)
+  - Updated: 2025-11-26T18:11:00.000Z → 2026-04-28T11:25:00.000Z
 
 ## Classified Pages
 
@@ -203,6 +205,7 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure API Man
 | [Data operations - code examples](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-data-operations-code-samples) | integrations | 0.70 | Provides concrete action definition samples for data operations in Logic Apps workflow JSON. These are product-specific code patterns and configuration snippets for the Logic Apps engine. |
 | [DataMapTestExecutor class](https://learn.microsoft.com/en-us/azure/logic-apps/testing-framework/data-map-test-executor-class-definition) | integrations | 0.70 | SDK class for compiling and executing data map tests. Product-specific integration for testing data transformations. |
 | [DevOps deployment](https://learn.microsoft.com/en-us/azure/logic-apps/devops-deployment-single-tenant-azure-logic-apps) | deployment | 0.70 | Provides an overview of the CI/CD experience specifically for Standard Logic Apps, including supported DevOps approaches and environment automation patterns. |
+| [Enable zone redundancy](https://learn.microsoft.com/en-us/azure/logic-apps/set-up-zone-redundancy-availability-zones) | configuration | 0.70 | The page describes how to enable zone redundancy for Logic Apps workflows using availability zones. This typically involves product-specific settings (for example, region and zone-related configuration options) that are not generic Azure concepts. It is not just conceptual DR guidance but concrete configuration for this service, so it best fits configuration rather than architecture or best practices. |
 | [Estimate storage costs](https://learn.microsoft.com/en-us/azure/logic-apps/estimate-storage-costs) | decision-making | 0.70 | Describes using the Logic Apps Storage Calculator for Standard workflows, with guidance on cost estimation and storage usage in single-tenant vs multitenant. This is cost/capacity decision guidance specific to Logic Apps, fitting decision-making around storage and billing. |
 | [Exchange EDIFACT messages](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-enterprise-integration-edifact) | integrations | 0.70 | Describes using the EDIFACT connector with encoding/decoding actions. This typically includes connector operation names, required parameters, and behavior specific to EDIFACT integration in Logic Apps, fitting integration & coding patterns. |
 | [Generate schemas for SAP artifacts](https://learn.microsoft.com/en-us/azure/logic-apps/connectors/sap-generate-schemas-for-artifacts) | integrations | 0.70 | Walkthrough for using the SAP connector action 'Generate schemas' and related actions; this involves specific connector operations and request patterns to SAP artifacts, which are detailed integration patterns unique to Logic Apps + SAP. |
@@ -240,7 +243,6 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure API Man
 | [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/logic-apps/policy-reference) | security | 0.65 | Index of built-in Azure Policy definitions for Logic Apps. Policy names and their specific effects/conditions are security/governance configuration details unique to the service. |
 | [Bicep](https://learn.microsoft.com/en-us/azure/logic-apps/quickstart-create-deploy-bicep) | deployment | 0.65 | Quickstart for deploying Logic Apps Consumption workflows via Bicep; includes ARM/Bicep resource types and properties specific to Logic Apps deployment. While tutorial-like, it encodes product-specific deployment schema and constraints that qualify as deployment expert knowledge. |
 | [Connect to on-premises data sources](https://learn.microsoft.com/en-us/azure/logic-apps/connect-on-premises-data-sources) | configuration | 0.65 | Describes creating an on-premises data gateway resource and wiring connectors that require it. This typically involves specific connector settings and gateway resource configuration, which are expert configuration details for Logic Apps integrations. |
-| [Enable zone redundancy](https://learn.microsoft.com/en-us/azure/logic-apps/set-up-zone-redundancy-availability-zones) | architecture-patterns | 0.65 | Covers setting up availability zone support and zone redundancy for Logic Apps. Likely includes product-specific architecture guidance and configuration constraints for distributing workloads across zones. |
 | [Install on-premises data gateway](https://learn.microsoft.com/en-us/azure/logic-apps/install-on-premises-data-gateway-workflows) | configuration | 0.65 | Gateway installation and setup for Logic Apps usually includes specific configuration steps, service settings, and environment requirements for the on-premises data gateway, which are product-specific configuration details beyond generic knowledge. |
 | [Monitor and track B2B messages](https://learn.microsoft.com/en-us/azure/logic-apps/monitor-track-b2b-messages-consumption) | configuration | 0.65 | Covers setting up Azure Monitor logs for B2B messages (AS2, X12, EDIFACT) in Consumption workflows. This typically includes specific diagnostic categories and configuration steps for integration accounts and monitoring tables. |
 | [Monitor and track B2B transactions](https://learn.microsoft.com/en-us/azure/logic-apps/monitor-track-b2b-transactions-standard) | configuration | 0.65 | The article is about setting up monitoring and tracking for B2B transactions (X12, EDIFACT, AS2) in Standard workflows. This typically includes product-specific tracking settings, configuration options, and possibly parameter tables for enabling tracking, which qualifies as configuration-focused expert knowledge. |
@@ -255,6 +257,7 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure API Man
 | [TestWorkflowRunActionRepetitionResult class](https://learn.microsoft.com/en-us/azure/logic-apps/testing-framework/test-workflow-run-action-repetition-result-class-definition) | integrations | 0.65 | Describes a specialized result class for actions in loop iterations. Product-specific SDK API for test integrations. |
 | [TestWorkflowRunActionResult class](https://learn.microsoft.com/en-us/azure/logic-apps/testing-framework/test-workflow-run-action-result-class-definition) | integrations | 0.65 | SDK class reference for action execution results in tests. Product-specific integration details for test frameworks. |
 | [TestWorkflowRunTriggerResult class](https://learn.microsoft.com/en-us/azure/logic-apps/testing-framework/test-workflow-run-trigger-result-class-definition) | integrations | 0.65 | SDK class for trigger execution results in tests. Product-specific integration details for testing triggers. |
+| [View health and performance metrics](https://learn.microsoft.com/en-us/azure/logic-apps/view-workflow-metrics) | troubleshooting | 0.65 | The page focuses on using Azure Monitor metrics for Logic Apps workflows to identify failures, slow triggers, and high error rates. These are product-specific diagnostic signals and metric names/fields that an LLM is unlikely to know in detail from training, and they are used in a symptom → diagnosis context, fitting the troubleshooting category better than generic monitoring guidance. |
 | [View workflow status and run history](https://learn.microsoft.com/en-us/azure/logic-apps/view-workflow-status-run-history) | troubleshooting | 0.65 | The page focuses on checking workflow status, viewing run and trigger history, and setting up alerts for Azure Logic Apps. These are product-specific diagnostic workflows that help identify and resolve issues with runs (symptom → inspection/diagnosis via history and metrics → corrective actions/alerts). While it may not list explicit error codes, it contains detailed, service-specific monitoring and debugging guidance that goes beyond generic concepts, fitting best under troubleshooting. |
 | [Agreements](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-enterprise-integration-agreements) | configuration | 0.60 | Agreements define protocols and message exchange details in integration accounts. This typically includes protocol-specific settings and parameters (e.g., for AS2/X12/EDIFACT) that are product-specific configuration knowledge. |
 | [Azure CLI - Consumption workflow sample script](https://learn.microsoft.com/en-us/azure/logic-apps/sample-logic-apps-cli-script) | deployment | 0.60 | Provides a concrete CLI script using the Logic Apps extension with product-specific parameters and deployment behavior. |
@@ -284,7 +287,6 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure API Man
 | [Create variables for saving values](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-create-variables-store-values) | 0.40 | How-to on using variables in Logic Apps; mostly step-by-step designer usage without config tables, limits, or product-specific edge-case guidance. |
 | [Manage Azure resources with automation tasks](https://learn.microsoft.com/en-us/azure/logic-apps/create-automation-tasks-azure-resources) | 0.40 | Shows how to create automation tasks for Azure resources; mostly scenario/tutorial content without detailed config matrices or limits. |
 | [Monitor workflows](https://learn.microsoft.com/en-us/azure/logic-apps/monitor-logic-apps-overview) | 0.40 | High-level monitoring overview integrating with Azure Monitor; mostly conceptual and navigational without detailed error mappings or config tables. |
-| [View health and performance metrics](https://learn.microsoft.com/en-us/azure/logic-apps/view-workflow-metrics) | 0.40 | Primarily a how-to for viewing Logic Apps metrics; likely UI navigation and conceptual monitoring guidance without detailed limits, config tables, or error-code-based troubleshooting. |
 | [AI playbook and solution development](https://learn.microsoft.com/en-us/azure/logic-apps/ai-resources) | 0.35 | Resource index and examples for AI integration; summary does not show concrete config tables or limits. |
 | [Agentic workflows](https://learn.microsoft.com/en-us/azure/logic-apps/agent-workflows-concepts) | 0.35 | Conceptual description of agentic workflows and LLM usage; no clear evidence of numeric thresholds, config tables, or error mappings. |
 | [Export Standard from portal to Visual Studio Code](https://learn.microsoft.com/en-us/azure/logic-apps/export-standard-logic-app-to-visual-studio-code) | 0.35 | Guide to exporting Standard logic apps to VS Code; mostly operational steps for downloading a zip and opening in VS Code, without deep configuration matrices or limits. |

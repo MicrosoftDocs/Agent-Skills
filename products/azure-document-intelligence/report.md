@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-12'
+generated_at: '2026-05-03'
 category_descriptions:
   security: 'Securing Document Intelligence: creating SAS tokens, configuring data-at-rest
     encryption, and using managed identities and VNets to lock down access to resources.'
@@ -13,8 +13,7 @@ category_descriptions:
     outputs, and integrate with apps, Azure Functions, and Logic Apps for end‑to‑end
     document workflows
   decision-making: Choosing the right Document Intelligence model, understanding version
-    changes, and migrating or updating apps to API v3.1 based on changelog and migration
-    guidance
+    changes, and migrating or updating apps between API versions and retired features
   troubleshooting: 'Diagnosing and fixing Document Intelligence issues: latency/performance
     problems, service error codes and meanings, and known Foundry-specific bugs and
     workarounds.'
@@ -29,16 +28,16 @@ skill_description: Expert knowledge for Azure AI Document Intelligence developme
   including troubleshooting, best practices, decision making, architecture & design
   patterns, limits & quotas, security, configuration, integrations & coding patterns,
   and deployment. Use when using AnalyzeDocument/Markdown APIs, custom models, containers,
-  SAS/managed identity auth, or VNets, and other Azure AI Document Intelligence related
-  development tasks. Not for Azure AI Search (use azure-cognitive-search), Azure AI
-  Vision (use azure-ai-vision), Azure AI Custom Vision (use azure-custom-vision),
-  Azure AI Speech (use azure-speech).
+  VNets/managed identity, or batch OCR workloads, and other Azure AI Document Intelligence
+  related development tasks. Not for Azure AI Vision (use azure-ai-vision), Azure
+  AI Search (use azure-cognitive-search), Azure AI Language (use azure-language-service),
+  Azure AI Video Indexer (use azure-video-indexer).
 use_when: Use when using AnalyzeDocument/Markdown APIs, custom models, containers,
-  SAS/managed identity auth, or VNets, and other Azure AI Document Intelligence related
-  development tasks.
-confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure AI
-  Vision (use azure-ai-vision), Azure AI Custom Vision (use azure-custom-vision),
-  Azure AI Speech (use azure-speech).
+  VNets/managed identity, or batch OCR workloads, and other Azure AI Document Intelligence
+  related development tasks.
+confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI Search
+  (use azure-cognitive-search), Azure AI Language (use azure-language-service), Azure
+  AI Video Indexer (use azure-video-indexer).
 ---
 # Azure AI Document Intelligence Crawl Report
 
@@ -47,13 +46,13 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 - **Total Pages**: 77
 - **Fetched**: 77
 - **Fetch Failed**: 0
-- **Classified**: 36
-- **Unclassified**: 41
+- **Classified**: 37
+- **Unclassified**: 40
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 77
+- **Updated Pages**: 1
+- **Unchanged**: 76
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-document-intelligence/azure-document-intelligence.csv`
 
@@ -64,15 +63,20 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | architecture-patterns | 1 | 1.3% |
 | best-practices | 7 | 9.1% |
 | configuration | 2 | 2.6% |
-| decision-making | 3 | 3.9% |
+| decision-making | 4 | 5.2% |
 | deployment | 4 | 5.2% |
 | integrations | 6 | 7.8% |
 | limits-quotas | 6 | 7.8% |
 | security | 4 | 5.2% |
 | troubleshooting | 3 | 3.9% |
-| *(Unclassified)* | 41 | 53.2% |
+| *(Unclassified)* | 40 | 51.9% |
 
 ## Changes
+
+### Updated Pages
+
+- [What's new](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/whats-new?view=doc-intel-4.0.0)
+  - Updated: 2026-03-13T22:11:00.000Z → 2026-04-27T17:23:00.000Z
 
 ## Classified Pages
 
@@ -112,6 +116,7 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | [Analyze document API response](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/concept/analyze-document-response?view=doc-intel-4.0.0) | integrations | 0.65 | Deep response-shape documentation for AnalyzeDocument typically includes field names, types, and constraints—SDK/REST response contract details that are product-specific integration knowledge. |
 | [Back up and recover models](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/how-to-guides/disaster-recovery?view=doc-intel-4.0.0) | architecture-patterns | 0.65 | Guidance on using copy model API for DR across regions; includes product-specific DR pattern and constraints tied to resource regions and model management. |
 | [Compose custom extraction models](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/how-to-guides/compose-custom-models?view=doc-intel-4.0.0) | configuration | 0.65 | Covers custom and composed models with version-specific compose behavior; likely includes API parameters and behavior differences—product-specific configuration semantics. |
+| [What's new](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/whats-new?view=doc-intel-4.0.0) | decision-making | 0.65 | Release notes include specific GA/preview API version numbers and exact retirement dates, which are time-sensitive expert details not reliably known from training data. Content guides decisions about when to upgrade from preview to GA versions based on these dates, fitting decision-making better than other categories. |
 | [Changelog and migration guide](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/versioning/changelog-release-history?view=doc-intel-4.0.0) | decision-making | 0.60 | Version-based release history and migration guide; helps decide when and how to move between versions and SDKs, which is product-specific decision and migration guidance. |
 | [Use table tags to train your custom model](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/v21/supervised-table-tags?view=doc-intel-2.1.0) | best-practices | 0.60 | Describes when and how to use table tags for complex hierarchical forms—product-specific labeling strategy and edge-case handling beyond generic ML knowledge. |
 
@@ -159,4 +164,3 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | [SDK targets: REST API v2.1 (GA)](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/v21/sdk-overview-v2-1?view=doc-intel-2.1.0) | 0.20 | SDK overview for v2.1; similar to other SDK overview pages, not focused on limits, configuration matrices, or troubleshooting. |
 | [SDK targets: REST API v4.0 2024-11-30 latest (GA)](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/versioning/sdk-overview-v4-0?view=doc-intel-4.0.0) | 0.20 | SDK overview for v4.0; likely high-level description and links, without detailed parameter tables or error mappings. |
 | [What is Azure Document Intelligence in Foundry Tools?](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/overview?view=doc-intel-4.0.0) | 0.20 | High-level service overview of Azure Document Intelligence in Foundry Tools without detailed limits, configs, or error mappings. |
-| [What's new](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/whats-new?view=doc-intel-4.0.0) | 0.20 | Release notes / what's new page with version timelines and high-level updates; no detailed limits, configuration tables, error codes, or decision matrices that meet the expert-knowledge criteria. |

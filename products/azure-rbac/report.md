@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-12'
+generated_at: '2026-05-03'
 category_descriptions:
   best-practices: 'Security-focused guidance on designing Azure RBAC: choosing scopes,
     delegating access with ABAC conditions, and applying least privilege and separation-of-duties
@@ -47,8 +47,8 @@ confusable_not_for: Not for Azure Active Directory B2C (use azure-active-directo
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 104
+- **Updated Pages**: 1
+- **Unchanged**: 103
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-rbac/azure-rbac.csv`
 
@@ -66,6 +66,11 @@ confusable_not_for: Not for Azure Active Directory B2C (use azure-active-directo
 | *(Unclassified)* | 8 | 7.7% |
 
 ## Changes
+
+### Updated Pages
+
+- [What's new in docs](https://learn.microsoft.com/en-us/azure/role-based-access-control/whats-new)
+  - Updated: 2026-04-09T08:00:00.000Z → 2026-04-29T08:00:00.000Z
 
 ## Classified Pages
 
@@ -179,4 +184,4 @@ confusable_not_for: Not for Azure Active Directory B2C (use azure-active-directo
 | [Delegate role assignment management overview](https://learn.microsoft.com/en-us/azure/role-based-access-control/delegate-role-assignments-overview) | 0.30 | Overview of delegating Azure access management using Azure ABAC; mainly conceptual explanation of delegation and scenarios, not detailed RBAC role tables, permission scopes, or configuration parameters that would qualify as expert security/configuration guidance. |
 | [What is Azure ABAC?](https://learn.microsoft.com/en-us/azure/role-based-access-control/conditions-overview) | 0.20 | Conceptual overview of Azure ABAC; no detailed condition syntax, attributes tables, or config parameters in the summary. |
 | [What is Azure RBAC?](https://learn.microsoft.com/en-us/azure/role-based-access-control/overview) | 0.20 | High-level conceptual overview of Azure RBAC without detailed role lists, permissions, or configuration parameters. |
-| [What's new in docs](https://learn.microsoft.com/en-us/azure/role-based-access-control/whats-new) | - | Release notes and documentation change log for Azure RBAC; does not focus on concrete limits, configuration tables, security role definitions, or other structured expert details as defined by the sub-skill types. |
+| [What's new in docs](https://learn.microsoft.com/en-us/azure/role-based-access-control/whats-new) | 0.10 | Release notes and documentation change log for Azure RBAC; does not focus on detailed limits, configuration parameters, error codes, or other structured expert knowledge as defined by the sub-skill types. |

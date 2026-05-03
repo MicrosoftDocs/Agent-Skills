@@ -1,9 +1,9 @@
 ---
 name: azure-web-pubsub
-description: Expert knowledge for Azure Web PubSub development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building WebSocket/MQTT apps, using Socket.IO, geo-replication, private endpoints, or Functions bindings, and other Azure Web PubSub related development tasks. Not for Azure SignalR Service (use azure-signalr-service), Azure Event Hubs (use azure-event-hubs), Azure Service Bus (use azure-service-bus), Azure Relay (use azure-relay).
+description: Expert knowledge for Azure Web PubSub development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building WebSocket/Socket.IO/MQTT apps, configuring geo-replication, custom domains, metrics/alerts, or Functions bindings, and other Azure Web PubSub related development tasks. Not for Azure SignalR Service (use azure-signalr-service), Azure Event Hubs (use azure-event-hubs), Azure Service Bus (use azure-service-bus), Azure Relay (use azure-relay).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-05"
+  generated_at: "2026-05-03"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Web PubSub Skill
@@ -26,13 +26,13 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L37-L46 | Diagnosing and fixing Azure Web PubSub issues: local handler debugging, service/resource logs, common errors, and Socket.IO-specific troubleshooting and diagnostics. |
 | Best Practices | L47-L51 | Guidance on building resilient WebSocket clients for Azure Web PubSub, including reconnection strategies, handling disconnects, error handling, and connection lifecycle best practices. |
-| Decision Making | L52-L57 | Guidance on configuring Web PubSub for high availability with zones and understanding pricing, billing meters, and cost considerations |
-| Architecture & Design Patterns | L58-L64 | Architectural patterns for Web PubSub: DR/resiliency design, bridging MQTT with Web PubSub, and understanding the internal Socket.IO support model. |
-| Limits & Quotas | L65-L70 | Capacity and performance limits for Web PubSub (connections, messages, scaling) and which Socket.IO server APIs aren’t supported or behave differently. |
-| Security | L71-L100 | Securing Azure Web PubSub: auth with Entra ID/managed identity/keys, mTLS, network isolation (VNets, private endpoints, firewalls), policies, key rotation, and client auth for WebSocket/Socket.IO/MQTT. |
-| Configuration | L101-L116 | Configuring Web PubSub behavior: monitoring/metrics, alerts, custom domains, event routing, geo-replication, client URLs, Socket.IO/MQTT options, local tunneling, and OData filters. |
-| Integrations & Coding Patterns | L117-L146 | Client/server integration patterns for Azure Web PubSub: SDK usage, WebSocket/MQTT, REST, CloudEvents, Functions bindings, Socket.IO, auth, and reliable messaging subprotocols. |
-| Deployment | L147-L153 | Guides for moving Web PubSub across regions, configuring Premium autoscale, and deploying/migrating Socket.IO apps and serverless chat to Azure Web PubSub. |
+| Decision Making | L52-L56 | Guidance on configuring Web PubSub for high availability with zones and understanding pricing, billing meters, and cost considerations |
+| Architecture & Design Patterns | L57-L63 | Architectural patterns for Web PubSub: multi-region resiliency, bridging MQTT with Web PubSub, and internal design details for Socket.IO protocol support. |
+| Limits & Quotas | L64-L69 | Capacity and performance limits for Web PubSub (connections, messages, scaling) and which Socket.IO server APIs aren’t supported or behave differently. |
+| Security | L70-L99 | Securing Azure Web PubSub: auth with Entra ID/managed identity/keys, mTLS, network isolation (VNets, private endpoints, firewalls), policies, key rotation, and client auth for WebSocket/Socket.IO/MQTT. |
+| Configuration | L100-L115 | Configuring Web PubSub behavior: monitoring/metrics, alerts, custom domains, event routing, geo-replication, client URLs, Socket.IO/MQTT options, local tunneling, and OData filters. |
+| Integrations & Coding Patterns | L116-L145 | Client/server integration patterns for Azure Web PubSub: SDK usage, WebSocket/MQTT, REST, CloudEvents, Functions bindings, Socket.IO, auth, and reliable messaging subprotocols. |
+| Deployment | L146-L152 | Guides for moving Web PubSub across regions, configuring Premium autoscale, and deploying/migrating Socket.IO apps and serverless chat to Azure Web PubSub. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -52,13 +52,12 @@ This skill requires **network access** to fetch documentation content:
 ### Decision Making
 | Topic | URL |
 |-------|-----|
-| Use availability zones and zone redundancy for Web PubSub | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/concept-availability-zones |
 | Understand Azure Web PubSub billing model | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/concept-billing-model |
 
 ### Architecture & Design Patterns
 | Topic | URL |
 |-------|-----|
-| Design resilient and DR architectures for Web PubSub | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/concept-disaster-recovery |
+| Design resilient multi-region Azure Web PubSub | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/concept-disaster-recovery |
 | Cross-protocol communication between MQTT and Web PubSub | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/reference-mqtt-cross-protocol-communication |
 | Internal design of Web PubSub for Socket.IO support | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/socketio-service-internal |
 

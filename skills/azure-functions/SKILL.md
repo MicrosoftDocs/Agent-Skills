@@ -1,9 +1,9 @@
 ---
 name: azure-functions
-description: Expert knowledge for Azure Functions development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building HTTP/queue-triggered apps, Durable Functions, Linux/container hosting, API Mgmt/Logic Apps, or Flex plans, and other Azure Functions related development tasks. Not for Azure App Service (use azure-app-service), Azure Logic Apps (use azure-logic-apps), Azure Container Apps (use azure-container-apps), Azure Kubernetes Service (AKS) (use azure-kubernetes-service).
+description: Expert knowledge for Azure Functions development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building HTTP/event-driven Functions, Durable workflows, containerized Functions, CI/CD deployments, or Dapr/OpenAI integrations, and other Azure Functions related development tasks. Not for Azure App Service (use azure-app-service), Azure Logic Apps (use azure-logic-apps), Azure Container Apps (use azure-container-apps), Azure Kubernetes Service (AKS) (use azure-kubernetes-service).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-19"
+  generated_at: "2026-05-03"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Functions Skill
@@ -26,13 +26,13 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L37-L59 | Diagnosing and fixing Durable Functions/Task SDK issues, AZFD/AZFW error codes, storage and config problems, and runtime/deployment errors for Node.js, Python, and VM start/stop functions. |
 | Best Practices | L60-L79 | Patterns and guidance for robust, performant Azure Functions and Durable Functions: orchestration/entity design, versioning, error handling, DI, HTTP/connection usage, scaling, and language-specific best practices. |
-| Decision Making | L80-L101 | Guidance on choosing Functions hosting/runtime models, estimating costs, and planning migrations (plans, runtimes, languages, AWS Lambda, Express.js, Service Bus) for optimal architecture. |
+| Decision Making | L80-L101 | Guidance on choosing Functions hosting/runtime models, comparing costs and plans, and planning migrations (between runtimes, models, plans, and from AWS Lambda or Express APIs). |
 | Architecture & Design Patterns | L102-L107 | Running Functions in Linux containers, Durable Functions design with Azure Storage, and hosting Functions on Azure Container Apps for scalable, container-based architectures. |
 | Limits & Quotas | L108-L116 | Details on Functions hosting limits: legacy and Flex Consumption plans, scaling behavior, concurrency and target-based scaling settings, and supported languages/versions. |
-| Security | L117-L134 | Securing Functions apps: encryption at rest, secure storage, keys/secrets, managed identity, private endpoints/VNet, Web PubSub, networking/access controls, and secure MCP hosting. |
-| Configuration | L135-L169 | Configuring Azure Functions apps: bindings, triggers, app/host settings, runtime versions, plans, networking, monitoring/telemetry, and local/Core Tools setup. |
-| Integrations & Coding Patterns | L170-L273 | Patterns and how-tos for wiring Functions to external systems (DBs, messaging, AI/OpenAI, Dapr, MCP, storage, HTTP) using triggers/bindings, plus integration with API Mgmt, Logic Apps, and on-prem. |
-| Deployment | L274-L303 | Deploying and hosting Azure Functions: provisioning plans (Consumption/Flex/Kubernetes), containers, CI/CD (GitHub/Azure Pipelines), slots, zero‑downtime, and migration/deployment automation. |
+| Security | L117-L133 | Securing Functions apps: encryption at rest, secure storage, keys/secrets, managed identity, private endpoints/VNet, Web PubSub, networking/access controls, and secure MCP hosting. |
+| Configuration | L134-L168 | Configuring Azure Functions apps: bindings, triggers, app/host settings, runtime versions, plans, networking, monitoring/telemetry, and local/Core Tools setup. |
+| Integrations & Coding Patterns | L169-L273 | Patterns and how-tos for wiring Functions to external systems (HTTP, storage, data stores, messaging, OpenAI, Dapr, MCP, SignalR, Web PubSub) using triggers, input/output bindings, and extensions |
+| Deployment | L274-L303 | Deploying and hosting Azure Functions: provisioning plans (Consumption/Flex/Kubernetes), CI/CD (GitHub Actions, Azure Pipelines), containers, templates (Bicep/ARM/Terraform), and migration tasks. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -121,7 +121,6 @@ This skill requires **network access** to fetch documentation content:
 | Use secured storage accounts with Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/configure-networking-how-to |
 | Handle AZFD0012 non-highly identifiable secret warnings | https://learn.microsoft.com/en-us/azure/azure-functions/errors-diagnostics/diagnostic-events/azfd0012 |
 | Manage and use access keys for Azure Functions endpoints | https://learn.microsoft.com/en-us/azure/azure-functions/function-keys-how-to |
-| Secure Azure Web PubSub trigger endpoints in Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-web-pubsub-trigger |
 | Restrict Azure Functions access using private site access | https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-private-site-access |
 | Secure Azure Functions with VNet private endpoints | https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-vnet |
 | Connect Azure Functions to Azure SQL via managed identity | https://learn.microsoft.com/en-us/azure/azure-functions/functions-identity-access-azure-sql-with-managed-identity |
@@ -261,8 +260,9 @@ This skill requires **network access** to fetch documentation content:
 | Write entities with Azure Tables output binding | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-storage-table-output |
 | Send SMS with Azure Functions Twilio binding | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-twilio |
 | Use Azure Web PubSub bindings in Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-web-pubsub |
-| Issue Web PubSub client URLs and tokens via Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-web-pubsub-input |
+| Use Web PubSub input bindings in Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-web-pubsub-input |
 | Send messages with Web PubSub output binding | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-web-pubsub-output |
+| Handle Azure Web PubSub triggers in Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-web-pubsub-trigger |
 | Connect PowerShell Azure Functions to on-premises via Hybrid Connections | https://learn.microsoft.com/en-us/azure/azure-functions/functions-hybrid-powershell |
 | Integrate Azure Functions with Azure Cosmos DB for unstructured data | https://learn.microsoft.com/en-us/azure/azure-functions/functions-integrate-store-unstructured-data-cosmosdb |
 | Connect MCP servers on Azure Functions to Foundry Agent Service | https://learn.microsoft.com/en-us/azure/azure-functions/functions-mcp-foundry-tools |
@@ -291,7 +291,7 @@ This skill requires **network access** to fetch documentation content:
 | Set up Azure Pipelines CI/CD for Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-how-to-azure-devops |
 | Run Azure Functions in custom Linux containers on Container Apps | https://learn.microsoft.com/en-us/azure/azure-functions/functions-how-to-custom-container |
 | Configure GitHub Actions CI/CD for Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-how-to-github-actions |
-| Automate Azure Functions deployment with Bicep or ARM | https://learn.microsoft.com/en-us/azure/azure-functions/functions-infrastructure-as-code |
+| Deploy Azure Functions with Bicep or ARM templates | https://learn.microsoft.com/en-us/azure/azure-functions/functions-infrastructure-as-code |
 | Host Azure Functions on Kubernetes with KEDA | https://learn.microsoft.com/en-us/azure/azure-functions/functions-kubernetes-keda |
 | Configure zone-redundant Azure Functions apps | https://learn.microsoft.com/en-us/azure/azure-functions/functions-zone-redundancy |
 | Migrate Azure Cosmos DB Functions extension from v3 to v4 | https://learn.microsoft.com/en-us/azure/azure-functions/migrate-cosmos-db-version-3-version-4 |

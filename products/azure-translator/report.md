@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-12'
+generated_at: '2026-05-03'
 category_descriptions:
   configuration: 'Configuring Azure Translator behavior: resource setup, Docker/container
     settings, profanity filters, content exclusion, dynamic dictionaries, word alignment,
@@ -50,8 +50,8 @@ confusable_not_for: Not for Azure AI Language (use azure-language-service), Azur
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 125
+- **Updated Pages**: 1
+- **Unchanged**: 124
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-translator/azure-translator.csv`
 
@@ -70,6 +70,11 @@ confusable_not_for: Not for Azure AI Language (use azure-language-service), Azur
 | *(Unclassified)* | 50 | 40.0% |
 
 ## Changes
+
+### Updated Pages
+
+- [What's new?](https://learn.microsoft.com/en-us/azure/ai-services/translator/whats-new)
+  - Updated: 2026-04-01T08:00:00.000Z → 2026-04-30T08:00:00.000Z
 
 ## Classified Pages
 
@@ -198,10 +203,10 @@ confusable_not_for: Not for Azure AI Language (use azure-language-service), Azur
 | [Sentence alignment](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/azure-ai-foundry/concepts/sentence-alignment) | 0.20 | Describes sentence alignment conceptually; no indication of numeric thresholds, config parameters, or error mappings. |
 | [Translator Pro FAQ](https://learn.microsoft.com/en-us/azure/ai-services/translator/solutions/translator-pro/faq) | 0.20 | An FAQ for a mobile application is usually conceptual and usage-oriented (what it is, how to use, licensing, platforms) rather than containing numeric limits, configuration parameter tables, or structured troubleshooting content with error codes. The summary indicates general Q&A, not the expert-knowledge patterns required. |
 | [What are Azure Translator solutions?](https://learn.microsoft.com/en-us/azure/ai-services/translator/solutions/overview) | 0.20 | Overview of prebuilt solutions; marketing/introductory content without detailed limits, configs, or decision matrices. |
+| [What's new?](https://learn.microsoft.com/en-us/azure/ai-services/translator/whats-new) | 0.20 | Release notes/what's-new summary without exposed specific limits, configuration parameters, error codes, or decision matrices; primarily high-level feature and enhancement descriptions. |
 | [BLEU score](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/azure-ai-foundry/concepts/bleu-score) | 0.10 | Defines BLEU score conceptually; no product-specific configuration or numeric thresholds beyond generic knowledge. |
 | [Bilingual Evaluation Understudies (BLEU) score](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/concepts/bleu-score) | 0.10 | Defines BLEU score conceptually; no product-specific configuration or numeric thresholds beyond generic knowledge. |
 | [What is Azure Translator in Foundry Tools?](https://learn.microsoft.com/en-us/azure/ai-services/translator/overview) | 0.10 | High-level product overview of Azure Translator; no concrete limits, configs, or error details. |
 | [What is Translator text translation?](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/overview) | 0.10 | Text translation overview; describes capabilities and doc structure without detailed limits or configs. |
 | [What is the Custom Translator portal?](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/overview) | 0.10 | Service overview and capabilities; marketing/introductory content without detailed limits, configs, or patterns. |
-| [What's new?](https://learn.microsoft.com/en-us/azure/ai-services/translator/whats-new) | 0.10 | Release notes and high-level 'what's new' overview without detailed limits, configuration tables, error codes, or decision matrices; primarily conceptual and informational rather than deep technical reference. |
 | [Custom translation key terms](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/azure-ai-foundry/key-terms) | - | Access-restricted key terms list; content not visible in summary and likely definitional rather than configuration/limits. |

@@ -1,9 +1,9 @@
 ---
 name: azure-health-data-services
-description: Expert knowledge for Azure Health Data Services development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using FHIR, DICOM, MedTech, de-identification APIs, Synapse/ADF pipelines, or SMART on FHIR apps, and other Azure Health Data Services related development tasks. Not for Azure Health Bot (use azure-health-bot), Azure API Management (use azure-api-management), Azure Data Factory (use azure-data-factory), Azure Cosmos DB (use azure-cosmos-db).
+description: Expert knowledge for Azure Health Data Services development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using FHIR/DICOM/MedTech, de-identification APIs, SMART on FHIR, Synapse/ADF pipelines, or CMK encryption, and other Azure Health Data Services related development tasks. Not for Azure Health Bot (use azure-health-bot), Azure Data Factory (use azure-data-factory), Azure Synapse Analytics (use azure-synapse-analytics), Azure Machine Learning (use azure-machine-learning).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-19"
+  generated_at: "2026-05-03"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Health Data Services Skill
@@ -24,21 +24,21 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L45 | Diagnosing and fixing Azure Health Data Services issues: FHIR access tokens, event delivery, $convert-data failures, identity provider setup, and known platform limitations. |
+| Troubleshooting | L37-L45 | Diagnosing and fixing Azure Health Data Services issues: FHIR access token problems, event delivery failures, $convert-data errors, identity provider misconfig, and known platform limitations. |
 | Best Practices | L46-L53 | Guidance on using customer-managed keys with FHIR/DICOM, optimizing FHIR performance, and safely running, monitoring, and managing FHIR reindex jobs. |
-| Decision Making | L54-L60 | Guidance on planning and executing migrations from Azure API for FHIR to FHIR service or Azure Health Data Services, including retirement timelines, architecture, and migration strategies. |
-| Architecture & Design Patterns | L61-L67 | Architectural patterns for FHIR, DICOM, and de-identification: disaster recovery setup, reliable anonymization services, DICOM + Data Lake integration, and digital pathology workflow design. |
-| Limits & Quotas | L68-L73 | Autoscaling and performance tuning for Azure API for FHIR/FHIR service, plus supported languages and limits for the Azure Health de-identification service. |
-| Security | L74-L114 | Configuring secure access to FHIR/DICOM/HDI: Entra app registration, auth flows and tokens, RBAC and policies, CMK encryption, network/Private Link, and SMART on FHIR. |
-| Configuration | L115-L172 | Configuring FHIR, DICOM, and MedTech services: bulk ops, profiles/validation, CORS, logging/metrics, de-identification, events, security (Private Link), and standards (CARIN, Da Vinci). |
-| Integrations & Coding Patterns | L173-L205 | Coding patterns and integration guides for FHIR, DICOM, MedTech, and de-identification APIs, including REST/SDK usage, bulk ops, data pipelines, and connections to Synapse, ADF, AML, Power BI, and Teams. |
-| Deployment | L206-L222 | How to deploy and move Azure Health Data Services (FHIR, DICOM, de-identification, workspaces) using portal, ARM, Bicep, CLI, PowerShell, and check regional availability |
+| Decision Making | L54-L59 | Guidance on planning and executing migrations from Azure API for FHIR to FHIR service or Azure Health Data Services, including retirement timelines, architecture, and migration strategies. |
+| Architecture & Design Patterns | L60-L66 | Architectural patterns for FHIR, DICOM, and de-identification: disaster recovery setup, reliable anonymization services, DICOM + Data Lake integration, and digital pathology workflow design. |
+| Limits & Quotas | L67-L72 | Autoscaling and performance tuning for Azure API for FHIR/FHIR service, plus supported languages and limits for the Azure Health de-identification service. |
+| Security | L73-L113 | Configuring secure access to FHIR/DICOM/HDI: Entra app registration, auth flows and tokens, RBAC and policies, CMK encryption, network/Private Link, and SMART on FHIR. |
+| Configuration | L114-L169 | Configuring FHIR, DICOM, and MedTech services: bulk ops, profiles/validation, CORS, logging/metrics, de-identification, events, security (Private Link), and standards (CARIN, Da Vinci). |
+| Integrations & Coding Patterns | L170-L202 | Coding patterns and integration guides for FHIR, DICOM, MedTech, and de-identification APIs, including REST/SDK usage, bulk ops, data pipelines, and connections to Synapse, ADF, AML, Power BI, and Teams. |
+| Deployment | L203-L219 | How to deploy and move Azure Health Data Services (FHIR, DICOM, de-identification, workspaces) using portal, ARM, Bicep, CLI, PowerShell, and check regional availability |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
 | Validate and troubleshoot Azure API for FHIR access tokens | https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/azure-api-fhir-access-token-validation |
-| Troubleshoot Azure Health Data Services events issues | https://learn.microsoft.com/en-us/azure/healthcare-apis/events/events-troubleshooting-guide |
+| Troubleshoot event delivery in Azure Health Data Services | https://learn.microsoft.com/en-us/azure/healthcare-apis/events/events-troubleshooting-guide |
 | Troubleshoot FHIR $convert-data operation failures | https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/convert-data-troubleshoot |
 | Troubleshoot FHIR identity provider configuration issues | https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/troubleshoot-identity-provider-configuration |
 | Review known issues for Azure Health Data Services | https://learn.microsoft.com/en-us/azure/healthcare-apis/known-issues |
@@ -54,7 +54,6 @@ This skill requires **network access** to fetch documentation content:
 ### Decision Making
 | Topic | URL |
 |-------|-----|
-| Plan migration from Azure API for FHIR retirement | https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/release-notes-2026 |
 | Plan migration from Azure API for FHIR to FHIR service | https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/migration-faq |
 | Plan migration from Azure API for FHIR to Health Data Services | https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/migration-strategies |
 
@@ -143,9 +142,7 @@ This skill requires **network access** to fetch documentation content:
 | Understand DICOM service v2 conformance and APIs | https://learn.microsoft.com/en-us/azure/healthcare-apis/dicom/dicom-services-conformance-statement-v2 |
 | Enable and query DICOM diagnostic logging | https://learn.microsoft.com/en-us/azure/healthcare-apis/dicom/enable-diagnostic-logging |
 | Disable FHIR and DICOM events by deleting subscriptions | https://learn.microsoft.com/en-us/azure/healthcare-apis/events/events-disable-delete-workspace |
-| Enable diagnostic settings for events logs and metrics | https://learn.microsoft.com/en-us/azure/healthcare-apis/events/events-enable-diagnostic-settings |
 | Understand Azure Health Data Services event message schema | https://learn.microsoft.com/en-us/azure/healthcare-apis/events/events-message-structure |
-| Use metrics for Azure Health Data Services events | https://learn.microsoft.com/en-us/azure/healthcare-apis/events/events-use-metrics |
 | Configure FHIR service for CARIN Blue Button tests | https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/carin-implementation-guide-blue-button-tutorial |
 | Configure CORS settings for FHIR service | https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/configure-cross-origin-resource-sharing |
 | Configure $convert-data settings for FHIR service | https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/convert-data-configuration |

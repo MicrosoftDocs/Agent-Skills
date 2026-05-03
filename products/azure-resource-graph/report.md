@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-05'
+generated_at: '2026-05-03'
 category_descriptions:
   integrations: Running Resource Graph queries via CLI, PowerShell, REST, Logic Apps,
     Power BI; creating shared queries and alerts; and retrieving resource change history
@@ -42,8 +42,8 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Policy (use
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 33
+- **Updated Pages**: 1
+- **Unchanged**: 32
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-resource-graph/azure-resource-graph.csv`
 
@@ -60,6 +60,11 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Policy (use
 | *(Unclassified)* | 11 | 33.3% |
 
 ## Changes
+
+### Updated Pages
+
+- [Understanding the query language](https://learn.microsoft.com/en-us/azure/governance/resource-graph/concepts/query-language)
+  - Updated: 2024-03-20T08:00:00.000Z → 2026-04-30T17:19:00.000Z
 
 ## Classified Pages
 
@@ -96,10 +101,10 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Policy (use
 | [View resource changes in the portal](https://learn.microsoft.com/en-us/azure/governance/resource-graph/changes/view-resource-changes) | 0.45 | Portal how-to for viewing changes; mostly UI navigation and filtering, not configuration matrices or numeric limits. |
 | [Analyze changes to your resources with Change Analysis](https://learn.microsoft.com/en-us/azure/governance/resource-graph/changes/resource-graph-changes) | 0.40 | Conceptual explanation of Change Analysis; no explicit limits, configuration tables, or troubleshooting mappings indicated. |
 | [Create and share a query in Azure portal](https://learn.microsoft.com/en-us/azure/governance/resource-graph/tutorials/create-share-query) | 0.40 | Portal tutorial for saving and sharing queries; mostly UI flow and conceptual RBAC usage without detailed config tables or limits. |
-| [Understanding the query language](https://learn.microsoft.com/en-us/azure/governance/resource-graph/concepts/query-language) | 0.40 | Describes supported Kusto operators and functions; largely conceptual language reference that LLMs already know. |
 | [Alerts samples](https://learn.microsoft.com/en-us/azure/governance/resource-graph/samples/alerts-samples) | 0.35 | Alert sample queries; primarily KQL examples for alerts, not configuration tables or limits. |
 | [Advanced query samples](https://learn.microsoft.com/en-us/azure/governance/resource-graph/samples/advanced) | 0.30 | Advanced query samples; KQL usage examples but not configuration, limits, or error-resolution content. |
 | [Run a query - Azure portal](https://learn.microsoft.com/en-us/azure/governance/resource-graph/first-query-portal) | 0.30 | Quickstart UI walkthrough for running a query in the portal; no detailed limits, configs, or troubleshooting data. |
 | [Starter query samples](https://learn.microsoft.com/en-us/azure/governance/resource-graph/samples/starter) | 0.30 | Starter query samples; mostly KQL examples without product-specific limits, configs, or troubleshooting mappings. |
 | [Samples by category](https://learn.microsoft.com/en-us/azure/governance/resource-graph/samples/samples-by-category) | 0.20 | Index of sample queries by category; navigation-style content without detailed technical constraints. |
+| [Understanding the query language](https://learn.microsoft.com/en-us/azure/governance/resource-graph/concepts/query-language) | 0.20 | Primarily a conceptual and syntactic overview of Kusto Query Language constructs supported by Azure Resource Graph (data types, operators, functions). It does not focus on product-specific limits, configuration tables, error-code troubleshooting, or decision matrices with quantified trade-offs. The content is largely generic language reference that an LLM is likely to know from training rather than expert-only product configuration or limits. |
 | [What is Azure Resource Graph?](https://learn.microsoft.com/en-us/azure/governance/resource-graph/overview) | 0.20 | High-level overview of Azure Resource Graph capabilities; no concrete limits, configs, or error mappings. |

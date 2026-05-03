@@ -43,9 +43,9 @@ confusable_not_for: Not for Azure Defender For Iot (use azure-defender-for-iot),
 - **Unclassified**: 3
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 1
-- **Unchanged**: 14
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 16
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-firmware-analysis/azure-firmware-analysis.csv`
 
@@ -62,15 +62,6 @@ confusable_not_for: Not for Azure Defender For Iot (use azure-defender-for-iot),
 | *(Unclassified)* | 3 | 18.8% |
 
 ## Changes
-
-### New Pages
-
-- [Firmware analysis integration with Azure Device Registry](https://learn.microsoft.com/en-us/azure/firmware-analysis/firmware-analysis-integration-with-azure-device-registry)
-
-### Updated Pages
-
-- [What's new?](https://learn.microsoft.com/en-us/azure/firmware-analysis/release-notes)
-  - Updated: 2026-03-31T22:19:00.000Z → 2026-04-14T22:21:00.000Z
 
 ## Classified Pages
 

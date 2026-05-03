@@ -1,11 +1,11 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-05-03'
 category_descriptions:
-  decision-making: Guidance on choosing the right SignalR Service mode (Default/Serverless/Classic)
-    and configuring availability zones/zone redundancy for high availability and resilience.
   configuration: 'Configuring SignalR apps: connection strings, upstream endpoints,
     custom domains, monitoring/metrics, negotiation endpoints, Functions bindings,
     and using the local emulator.'
+  decision-making: Guidance on choosing the right SignalR Service mode (Default/Serverless/Classic)
+    and configuring availability zones/zone redundancy for high availability and resilience.
   security: 'Securing Azure SignalR: auth with Entra ID/managed identities, keys and
     rotation, network/private endpoints/NSGs, WAF, Key Vault, RBAC, cross-tenant access,
     and Azure Policy compliance.'
@@ -14,9 +14,9 @@ category_descriptions:
   best-practices: Guidance on safely shutting down SignalR app servers and managing
     client lifecycle events, including detecting, handling, and recovering from client
     disconnects and reconnects.
-  architecture-patterns: Patterns for scaling and sharding Azure SignalR, designing
-    multi-instance topologies, and building resilient, disaster-ready SignalR deployments
-    for ASP.NET Core apps
+  architecture-patterns: Patterns for scaling and sharding SignalR, designing resilient
+    multi-region topologies, and architecting high-availability, high-throughput ASP.NET
+    Core SignalR apps with Azure SignalR.
   integrations: Using SignalR from servers and REST, managing clients, integrating
     with Event Grid, API Management, Application Gateway, and detailed data-plane
     REST API references
@@ -28,49 +28,59 @@ category_descriptions:
 skill_description: Expert knowledge for Azure SignalR Service development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when choosing SignalR mode, configuring upstreams/custom domains, securing with
-  Entra ID/MI, scaling/sharding, or tracing issues, and other Azure SignalR Service
-  related development tasks. Not for Azure Web PubSub (use azure-web-pubsub), Azure
-  Service Bus (use azure-service-bus), Azure Event Hubs (use azure-event-hubs).
-use_when: Use when choosing SignalR mode, configuring upstreams/custom domains, securing
-  with Entra ID/MI, scaling/sharding, or tracing issues, and other Azure SignalR Service
-  related development tasks.
-confusable_not_for: Not for Azure Web PubSub (use azure-web-pubsub), Azure Service
-  Bus (use azure-service-bus), Azure Event Hubs (use azure-event-hubs).
+  Use when configuring SignalR modes, Entra-secured hubs, multi-region scale-out,
+  autoscale/Bicep deploys, or REST/Event Grid integrations, and other Azure SignalR
+  Service related development tasks. Not for Azure Web PubSub (use azure-web-pubsub),
+  Azure Relay (use azure-relay), Azure Service Bus (use azure-service-bus), Azure
+  Event Hubs (use azure-event-hubs).
+use_when: Use when configuring SignalR modes, Entra-secured hubs, multi-region scale-out,
+  autoscale/Bicep deploys, or REST/Event Grid integrations, and other Azure SignalR
+  Service related development tasks.
+confusable_not_for: Not for Azure Web PubSub (use azure-web-pubsub), Azure Relay (use
+  azure-relay), Azure Service Bus (use azure-service-bus), Azure Event Hubs (use azure-event-hubs).
 ---
 # Azure SignalR Service Crawl Report
 
 ## Summary
 
-- **Total Pages**: 73
-- **Fetched**: 73
+- **Total Pages**: 72
+- **Fetched**: 72
 - **Fetch Failed**: 0
-- **Classified**: 60
+- **Classified**: 59
 - **Unclassified**: 13
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
-- **Unchanged**: 73
-- **Deleted Pages**: 0
+- **Unchanged**: 71
+- **Deleted Pages**: 2
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-signalr-service/azure-signalr-service.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 3 | 4.1% |
-| best-practices | 2 | 2.7% |
-| configuration | 8 | 11.0% |
-| decision-making | 2 | 2.7% |
-| deployment | 8 | 11.0% |
-| integrations | 11 | 15.1% |
-| limits-quotas | 3 | 4.1% |
-| security | 18 | 24.7% |
-| troubleshooting | 5 | 6.8% |
-| *(Unclassified)* | 13 | 17.8% |
+| architecture-patterns | 3 | 4.2% |
+| best-practices | 2 | 2.8% |
+| configuration | 8 | 11.1% |
+| decision-making | 1 | 1.4% |
+| deployment | 8 | 11.1% |
+| integrations | 11 | 15.3% |
+| limits-quotas | 3 | 4.2% |
+| security | 18 | 25.0% |
+| troubleshooting | 5 | 6.9% |
+| *(Unclassified)* | 13 | 18.1% |
 
 ## Changes
+
+### New Pages
+
+- [Disaster recovery](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-concept-disaster-recovery)
+
+### Deleted Pages
+
+- ~~Availability zones~~ (https://learn.microsoft.com/en-us/azure/azure-signalr/availability-zones)
+- ~~Resiliency and disaster recovery~~ (https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-concept-disaster-recovery)
 
 ## Classified Pages
 
@@ -106,7 +116,6 @@ confusable_not_for: Not for Azure Web PubSub (use azure-web-pubsub), Azure Servi
 | [Application firewall](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-howto-configure-application-firewall) | security | 0.70 | Application Firewall for SignalR is a product-specific security feature; full article is expected to define rule types, scopes, and configuration parameters that go beyond generic firewall concepts. |
 | [Audit compliance using Azure Policy](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-howto-azure-policy) | security | 0.70 | Introduces built-in policies for SignalR; these are product-specific security/compliance configurations with defined policy names and effects. |
 | [Authentication](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-concept-authenticate-oauth) | security | 0.70 | End-to-end guide for integrating custom auth with SignalR; includes product-specific auth flows and configuration beyond generic security advice. |
-| [Availability zones](https://learn.microsoft.com/en-us/azure/azure-signalr/availability-zones) | decision-making | 0.70 | Explains zone redundancy as a Premium-tier feature and upgrade behavior; helps decide when to use Premium vs Standard for HA. |
 | [Connection string](https://learn.microsoft.com/en-us/azure/azure-signalr/concept-connection-string) | configuration | 0.70 | Details structure, generation, and app configuration of SignalR connection strings; includes specific setting names and usage patterns. |
 | [Create SignalR Service](https://learn.microsoft.com/en-us/azure/azure-signalr/scripts/signalr-cli-create-service) | deployment | 0.70 | Scripted creation of a SignalR resource and resource group with specific CLI commands is product-specific deployment knowledge. |
 | [Event Grid integration](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-howto-event-grid-integration) | integrations | 0.70 | Shows how to enable Event Grid events for SignalR and subscribe to connection events; likely includes event types, schema, and CLI parameters that are product-specific integration details. |
@@ -114,7 +123,6 @@ confusable_not_for: Not for Azure Web PubSub (use azure-web-pubsub), Azure Servi
 | [Messages and connections](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-concept-messages-and-connections) | limits-quotas | 0.70 | Defines how messages and connections are counted for billing; includes precise counting rules that function as quantitative limits/quotas. |
 | [Multiple instances](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-howto-scale-multi-instances) | architecture-patterns | 0.70 | Explains multi-endpoint support, cross-region messaging, and sharding scenarios; these are product-specific scaling architecture patterns. |
 | [REST API](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-quickstart-rest-api) | integrations | 0.70 | Describes REST API usage and specification for SignalR broadcasting; REST endpoints and parameters are product-specific integration details. |
-| [Resiliency and disaster recovery](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-concept-disaster-recovery) | architecture-patterns | 0.70 | Provides approaches for multi-instance setup for resiliency and DR; these are architecture patterns specific to SignalR Service. |
 | [Secure outbound traffic through Shared Private Endpoints](https://learn.microsoft.com/en-us/azure/azure-signalr/howto-shared-private-endpoints) | security | 0.70 | Describes outbound private endpoint connections from SignalR in serverless mode with specific requirements; this is a product-specific secure networking pattern. |
 | [Security controls by Azure Policy](https://learn.microsoft.com/en-us/azure/azure-signalr/security-controls-policy) | security | 0.70 | Lists specific built-in policy definitions and compliance controls for SignalR; these are concrete security/compliance configuration artifacts. |
 | [Service mode](https://learn.microsoft.com/en-us/azure/azure-signalr/concept-service-mode) | decision-making | 0.70 | Explains Default, Serverless, and Classic modes and how to choose based on scenario; mode-selection guidance is product-specific decision-making content. |
@@ -125,6 +133,7 @@ confusable_not_for: Not for Azure Web PubSub (use azure-web-pubsub), Azure Servi
 | [Use SignalR Service with Application Gateway](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-howto-work-with-app-gateway) | integrations | 0.70 | Covers using SignalR behind Application Gateway; full article typically includes listener, routing, and header configuration specific to SignalR’s real-time connections. |
 | [Use resource logs to monitor SignalR Service](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-howto-diagnostic-logs) | troubleshooting | 0.70 | Focuses on analyzing and troubleshooting using SignalR resource logs; likely maps log categories and fields to issues, which is product-specific troubleshooting knowledge. |
 | [Use the Azure SignalR SDK](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-howto-use) | integrations | 0.70 | Shows how to connect server-side code to SignalR Service using the SDK; includes product-specific API usage and configuration patterns. |
+| [Disaster recovery](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-concept-disaster-recovery) | architecture-patterns | 0.68 | The page describes concrete approaches for achieving resiliency and disaster recovery with Azure SignalR Service by using multiple instances across regions. It focuses on product-specific architectural patterns (for example, how to arrange instances and clients for failover) rather than generic DR concepts. While it may not include many numeric thresholds, it provides Azure SignalR–specific guidance on when and how to use particular multi-instance patterns, which qualifies as expert architectural knowledge. |
 | [Autoscale](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-howto-scale-autoscale) | deployment | 0.65 | Autoscale is Premium-only and implemented via Azure Monitor autoscale; the full article (not in summary) typically includes SignalR-specific autoscale metrics, thresholds, and configuration details that are product-specific deployment behavior rather than generic scaling concepts. |
 | [Azure SignalR Service deployment - ARM template](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-quickstart-azure-signalr-service-arm-template) | deployment | 0.65 | ARM template-based deployment of SignalR Service with resource definitions and parameters is concrete, product-specific deployment guidance. |
 | [Azure SignalR Service deployment - Bicep](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-quickstart-azure-signalr-service-bicep) | deployment | 0.65 | Shows how to deploy SignalR via Bicep with Azure CLI/PowerShell; Bicep resource definitions and deployment specifics are product- and platform-specific deployment knowledge. |

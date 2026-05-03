@@ -1,14 +1,14 @@
 ---
-generated_at: '2026-04-05'
+generated_at: '2026-05-03'
 category_descriptions:
-  decision-making: Guidance on configuring Web PubSub for high availability with zones
-    and understanding pricing, billing meters, and cost considerations
   security: 'Securing Azure Web PubSub: auth with Entra ID/managed identity/keys,
     mTLS, network isolation (VNets, private endpoints, firewalls), policies, key rotation,
     and client auth for WebSocket/Socket.IO/MQTT.'
-  architecture-patterns: 'Architectural patterns for Web PubSub: DR/resiliency design,
-    bridging MQTT with Web PubSub, and understanding the internal Socket.IO support
-    model.'
+  decision-making: Guidance on configuring Web PubSub for high availability with zones
+    and understanding pricing, billing meters, and cost considerations
+  architecture-patterns: 'Architectural patterns for Web PubSub: multi-region resiliency,
+    bridging MQTT with Web PubSub, and internal design details for Socket.IO protocol
+    support.'
   configuration: 'Configuring Web PubSub behavior: monitoring/metrics, alerts, custom
     domains, event routing, geo-replication, client URLs, Socket.IO/MQTT options,
     local tunneling, and OData filters.'
@@ -28,13 +28,14 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Web PubSub development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building WebSocket/MQTT apps, using Socket.IO, geo-replication, private endpoints,
-  or Functions bindings, and other Azure Web PubSub related development tasks. Not
-  for Azure SignalR Service (use azure-signalr-service), Azure Event Hubs (use azure-event-hubs),
-  Azure Service Bus (use azure-service-bus), Azure Relay (use azure-relay).
-use_when: Use when building WebSocket/MQTT apps, using Socket.IO, geo-replication,
-  private endpoints, or Functions bindings, and other Azure Web PubSub related development
-  tasks.
+  building WebSocket/Socket.IO/MQTT apps, configuring geo-replication, custom domains,
+  metrics/alerts, or Functions bindings, and other Azure Web PubSub related development
+  tasks. Not for Azure SignalR Service (use azure-signalr-service), Azure Event Hubs
+  (use azure-event-hubs), Azure Service Bus (use azure-service-bus), Azure Relay (use
+  azure-relay).
+use_when: Use when building WebSocket/Socket.IO/MQTT apps, configuring geo-replication,
+  custom domains, metrics/alerts, or Functions bindings, and other Azure Web PubSub
+  related development tasks.
 confusable_not_for: Not for Azure SignalR Service (use azure-signalr-service), Azure
   Event Hubs (use azure-event-hubs), Azure Service Bus (use azure-service-bus), Azure
   Relay (use azure-relay).
@@ -43,17 +44,17 @@ confusable_not_for: Not for Azure SignalR Service (use azure-signalr-service), A
 
 ## Summary
 
-- **Total Pages**: 112
-- **Fetched**: 112
+- **Total Pages**: 111
+- **Fetched**: 111
 - **Fetch Failed**: 0
-- **Classified**: 81
+- **Classified**: 80
 - **Unclassified**: 31
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
-- **Unchanged**: 112
-- **Deleted Pages**: 0
+- **Unchanged**: 110
+- **Deleted Pages**: 2
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-web-pubsub/azure-web-pubsub.csv`
 
 ## Classification Statistics
@@ -62,16 +63,25 @@ confusable_not_for: Not for Azure SignalR Service (use azure-signalr-service), A
 |------|-------|------------|
 | architecture-patterns | 3 | 2.7% |
 | best-practices | 1 | 0.9% |
-| configuration | 12 | 10.7% |
-| decision-making | 2 | 1.8% |
+| configuration | 12 | 10.8% |
+| decision-making | 1 | 0.9% |
 | deployment | 4 | 3.6% |
-| integrations | 25 | 22.3% |
+| integrations | 25 | 22.5% |
 | limits-quotas | 2 | 1.8% |
-| security | 26 | 23.2% |
+| security | 26 | 23.4% |
 | troubleshooting | 6 | 5.4% |
-| *(Unclassified)* | 31 | 27.7% |
+| *(Unclassified)* | 31 | 27.9% |
 
 ## Changes
+
+### New Pages
+
+- [Disaster recovery](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/concept-disaster-recovery)
+
+### Deleted Pages
+
+- ~~Availability zones~~ (https://learn.microsoft.com/en-us/azure/azure-web-pubsub/concept-availability-zones)
+- ~~Resiliency and disaster recovery~~ (https://learn.microsoft.com/en-us/azure/azure-web-pubsub/concept-disaster-recovery)
 
 ## Classified Pages
 
@@ -135,9 +145,9 @@ confusable_not_for: Not for Azure SignalR Service (use azure-signalr-service), A
 | [Wildcard group role patterns](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/concept-wildcard-group-roles) | security | 0.70 | Describes wildcard group role patterns for client authorization, which is product-specific security/authorization configuration. Likely includes concrete role string formats and pattern syntax unique to Azure Web PubSub. |
 | [Write an upstream server](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-web-pubsub-write-upstream-server) | integrations | 0.70 | Shows complete implementations in multiple languages and explains how the service calls upstream handlers; includes product-specific request formats and handler patterns. |
 | [Admin UI](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/socketio-troubleshoot-admin-ui) | configuration | 0.68 | Describes Azure-customized Admin UI; likely includes configuration options and behaviors specific to the Azure-hosted version. |
+| [Disaster recovery](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/concept-disaster-recovery) | architecture-patterns | 0.68 | The page goes beyond conceptual DR to recommend specific multi-instance patterns for Azure Web PubSub, including when to use each approach for regional outages. It provides product-specific architectural guidance for resiliency and disaster recovery rather than generic theory, fitting the architecture-patterns sub-skill. |
 | [Authentication and permissions](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/tutorial-permission) | security | 0.65 | Walkthrough for adding authentication and permissions, including negotiate API behavior and access token usage; contains product-specific security patterns and configuration steps. |
 | [Autoscale](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-scale-autoscale) | deployment | 0.65 | Autoscale configuration usually includes tier-specific availability, metric names, and scale rules/constraints; these are product-specific deployment/runtime behaviors not generally known. |
-| [Availability zones](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/concept-availability-zones) | decision-making | 0.65 | Explains availability zone support and that zone redundancy is Premium-only, guiding tier selection and upgrade decisions with product-specific constraints. |
 | [Configure event handler](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-develop-eventhandler) | configuration | 0.65 | Details how to register and configure event handlers, including webhook-style integration; product-specific configuration behavior. |
 | [Metrics](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/concept-metrics) | configuration | 0.65 | Metrics article will list metric names, dimensions, and units specific to Web PubSub, which are configuration/monitoring parameters not generally known. |
 | [Quickstart for Socket.IO users](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/socketio-quickstart) | integrations | 0.65 | Quickstart for wiring an existing Socket.IO app to Web PubSub; likely includes connection options, configuration parameters, and code patterns specific to this integration. |
@@ -157,7 +167,6 @@ confusable_not_for: Not for Azure SignalR Service (use azure-signalr-service), A
 | [Develop with local tunnel tool](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-web-pubsub-tunnel-tool) | configuration | 0.60 | Describes the awps-tunnel tool and how to configure it; includes product-specific options and behavior for local tunneling. |
 | [FAQs](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/resource-faq) | troubleshooting | 0.60 | FAQ for a specific service typically includes concrete answers about error conditions, behavior quirks, and configuration gotchas that map symptoms to causes/solutions. |
 | [Monitor Azure Web PubSub](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-azure-monitor) | configuration | 0.60 | Explains how to collect and analyze monitoring data; includes product-specific metric/log configuration details. |
-| [Resiliency and disaster recovery](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/concept-disaster-recovery) | architecture-patterns | 0.60 | Describes concrete approaches to multi-instance, multi-region resiliency and DR for Web PubSub; these are product-specific architecture patterns and recommendations for when/how to use them. |
 
 ## Unclassified Pages
 

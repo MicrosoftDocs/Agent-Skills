@@ -1,9 +1,9 @@
 ---
 name: azure-event-hubs
-description: Expert knowledge for Azure Event Hubs development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Kafka clients/Streams, .NET SDK, Flink/Spark, geo-disaster recovery, or Premium processing units, and other Azure Event Hubs related development tasks. Not for Azure Service Bus (use azure-service-bus), Azure Event Grid (use azure-event-grid), Azure Notification Hubs (use azure-notification-hubs), Azure Stream Analytics (use azure-stream-analytics).
+description: Expert knowledge for Azure Event Hubs development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Kafka clients/Streams, Flink/Spark, Entra ID/RBAC, geo-disaster recovery, or Kafka mirroring, and other Azure Event Hubs related development tasks. Not for Azure Service Bus (use azure-service-bus), Azure Event Grid (use azure-event-grid), Azure Stream Analytics (use azure-stream-analytics), Azure Functions (use azure-functions).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-05-03"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Event Hubs Skill
@@ -29,10 +29,10 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L56-L61 | Guidance on choosing the right Event Hubs tier and planning migrations from Apache Kafka, including feature, cost, and compatibility considerations. |
 | Architecture & Design Patterns | L62-L69 | Patterns and guidance for Event Hubs reliability: availability/consistency design, geo-disaster recovery, and building/operating replication tasks (often with Azure Functions). |
 | Limits & Quotas | L70-L78 | Event Hubs capacity, quotas, and throughput limits, plus auto-inflate, geo-disaster recovery, and governance via application groups and FAQs on behavior and scaling. |
-| Security | L79-L105 | Security, auth, and compliance for Event Hubs: Entra ID, SAS, RBAC, managed identities, encryption, TLS, network isolation (VNet, Private Link, NSP, firewalls), and Azure Policy governance. |
-| Configuration | L106-L118 | Configuring Event Hubs behavior: partitions, retention, compaction, scaling, replication, metrics/logs, governance (application groups), and Premium processing units. |
-| Integrations & Coding Patterns | L119-L136 | Patterns and code for integrating Event Hubs with .NET, Kafka (clients, Streams, Connect, Debezium), Flink, Spark, Akka, schema/JSON registry, and adding metadata or managing hubs programmatically |
-| Deployment | L137-L143 | Guides for deploying Event Hubs with Kafka mirroring (MirrorMaker 1/2), setting up geo-replication, and running/local-testing Event Hubs apps using the emulator. |
+| Security | L79-L106 | Authentication, authorization, encryption, and network protection for Event Hubs: Entra ID, SAS, RBAC, managed identities, CMK, TLS, firewalls, VNets, Private Link, and security policies. |
+| Configuration | L107-L119 | Configuring Event Hubs behavior: partitions, retention, compaction, scaling, replication, metrics/logs, governance (application groups), and Premium processing units. |
+| Integrations & Coding Patterns | L120-L137 | Patterns and code for integrating Event Hubs with .NET, Kafka (clients, Streams, Connect, Debezium), Flink, Spark, Akka, schema/JSON registry, and adding metadata or managing hubs programmatically |
+| Deployment | L138-L144 | Guides for deploying Event Hubs with Kafka mirroring (MirrorMaker 1/2), setting up geo-replication, and running/local-testing Event Hubs apps using the emulator. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -86,6 +86,7 @@ This skill requires **network access** to fetch documentation content:
 | Authorize Event Hubs access using Entra RBAC roles | https://learn.microsoft.com/en-us/azure/event-hubs/authorize-access-azure-active-directory |
 | Choose authorization options for Azure Event Hubs | https://learn.microsoft.com/en-us/azure/event-hubs/authorize-access-event-hubs |
 | Authorize Event Hubs access with SAS rules | https://learn.microsoft.com/en-us/azure/event-hubs/authorize-access-shared-access-signature |
+| Enable confidential computing for Azure Event Hubs Dedicated | https://learn.microsoft.com/en-us/azure/event-hubs/confidential-computing |
 | Configure customer-managed keys for Event Hubs encryption at rest | https://learn.microsoft.com/en-us/azure/event-hubs/configure-customer-managed-key |
 | Enable and configure managed identities for Event Hubs namespaces | https://learn.microsoft.com/en-us/azure/event-hubs/enable-managed-identity |
 | Configure managed identity for Event Hubs Capture | https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-capture-managed-identity |

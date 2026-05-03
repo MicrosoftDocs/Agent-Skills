@@ -1,9 +1,9 @@
 ---
 name: azure-front-door
-description: Expert knowledge for Azure Front Door development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring Front Door routing/caching, rules engine, WAF/TLS, Private Link origins, or classic-to-Std/Prm migrations, and other Azure Front Door related development tasks. Not for Azure Application Gateway (use azure-application-gateway), Azure Traffic Manager (use azure-traffic-manager), Azure Load Balancer (use azure-load-balancer), Azure Web Application Firewall (use azure-web-application-firewall).
+description: Expert knowledge for Azure Front Door development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring Front Door routing/caching, WAF/TLS, Private Link origins, CDN streaming, or IaC/CLI automation, and other Azure Front Door related development tasks. Not for Azure Application Gateway (use azure-application-gateway), Azure Load Balancer (use azure-load-balancer), Azure Traffic Manager (use azure-traffic-manager), Azure Web Application Firewall (use azure-web-application-firewall).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-19"
+  generated_at: "2026-05-03"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Front Door Skill
@@ -25,14 +25,14 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L37-L41 | Diagnosing and fixing Azure Front Door 4xx/5xx errors, CORS and compression issues, config/runtime problems, and performance bottlenecks using logs, reference strings, and best practices. |
-| Best Practices | L42-L47 | Guidance on secure, scalable Front Door configs and practical rules engine patterns for URL routing, header rewrites, redirects, caching, and conditional traffic handling. |
-| Decision Making | L48-L59 | Guidance on Front Door vs Azure CDN cost/pricing, choosing Standard vs Premium vs Classic tiers, and planning/mapping migrations from Front Door classic to Standard/Premium. |
-| Architecture & Design Patterns | L60-L68 | Architectural patterns for Azure Front Door: apex domain setup, blue/green deployments, manual failover with Traffic Manager, static blob hosting, reliable uploads, and well-architected design guidance. |
-| Limits & Quotas | L69-L77 | POP codes and locations, regional POP lists, Front Door limits/quotas and behaviors, routing composite limits, and subscription-level bandwidth throttling details. |
-| Security | L78-L98 | TLS, certificates, cipher suites, WAF, DDoS, security headers, origin protection (Private Link, restricted access), managed identity, and secure logging for Azure Front Door. |
-| Configuration | L99-L130 | Configuring Azure Front Door behavior: caching, routing, rules, redirects/rewrites, custom domains, Private Link, protocol support, health probes, monitoring, and cache purge tools. |
-| Integrations & Coding Patterns | L131-L136 | Automating Azure Front Door setup with Azure CLI/PowerShell, including creating profiles, endpoints, and delivery rules via scripts and command-line workflows. |
-| Deployment | L137-L148 | Automating Front Door deployment and migration using Bicep/ARM/Terraform, updating DevOps pipelines, and upgrading or migrating between Classic, Standard, and Premium tiers. |
+| Best Practices | L42-L48 | Designing optimal Front Door configs, rules engine patterns, and CDN tuning for video-on-demand/live streaming performance, reliability, and cost efficiency. |
+| Decision Making | L49-L61 | Cost and tier comparisons (Front Door vs Azure CDN, Standard vs Premium vs Classic), billing details, and guidance for planning, mapping, and executing migrations or upgrades between tiers. |
+| Architecture & Design Patterns | L62-L70 | Architectural patterns for Azure Front Door: apex domain setup, blue/green deployments, manual failover with Traffic Manager, static blob hosting, reliable uploads, and well-architected design guidance. |
+| Limits & Quotas | L71-L78 | POP codes and locations, regional POP lists, Front Door limits/quotas and behaviors, routing composite limits, and subscription-level bandwidth throttling details. |
+| Security | L79-L97 | TLS/HTTPS setup, cipher/TLS policy hardening, WAF protection, origin access controls (Private Link, restrictions, managed identity auth), and securing/scrubbing Front Door logs |
+| Configuration | L98-L126 | Configuring Azure Front Door behavior: caching, rules, headers/protocols, custom domains, Private Link backends, compression, WebSockets, metrics/logs, and cache purge via portal/CLI/PowerShell. |
+| Integrations & Coding Patterns | L127-L132 | Automating Azure Front Door setup with Azure CLI/PowerShell, including creating profiles, endpoints, and delivery rules via scripts and command-line workflows. |
+| Deployment | L133-L143 | Automating Front Door deployment and migration using Bicep/ARM/Terraform, updating DevOps pipelines, and upgrading or migrating between Classic, Standard, and Premium tiers. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -44,6 +44,7 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Apply Azure Front Door configuration best practices | https://learn.microsoft.com/en-us/azure/frontdoor/best-practices |
 | Implement Azure Front Door rules engine scenarios and patterns | https://learn.microsoft.com/en-us/azure/frontdoor/rules-engine-scenarios |
+| Optimize VOD and Live Streaming with Azure Front Door | https://learn.microsoft.com/en-us/azure/frontdoor/video-on-demand-live-streaming |
 
 ### Decision Making
 | Topic | URL |
@@ -51,6 +52,7 @@ This skill requires **network access** to fetch documentation content:
 | Understand Azure Front Door billing components and usage | https://learn.microsoft.com/en-us/azure/frontdoor/billing |
 | Evaluate cost differences between Azure CDN and Front Door | https://learn.microsoft.com/en-us/azure/frontdoor/compare-cdn-front-door-price |
 | Choose between Azure Front Door and Azure CDN tiers | https://learn.microsoft.com/en-us/azure/frontdoor/front-door-cdn-comparison |
+| Migrate Azure Front Door Classic to Standard or Premium | https://learn.microsoft.com/en-us/azure/frontdoor/migrate-tier |
 | FAQ for migrating to Front Door Standard/Premium | https://learn.microsoft.com/en-us/azure/frontdoor/migration-faq |
 | Map settings from Front Door classic to Standard/Premium | https://learn.microsoft.com/en-us/azure/frontdoor/tier-mapping |
 | Plan migration from Front Door classic to Standard/Premium | https://learn.microsoft.com/en-us/azure/frontdoor/tier-migration |
@@ -71,7 +73,6 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Map Azure Front Door POP abbreviations to locations | https://learn.microsoft.com/en-us/azure/frontdoor/edge-locations-by-abbreviation |
 | Review Azure Front Door POP locations by region | https://learn.microsoft.com/en-us/azure/frontdoor/edge-locations-by-region |
-| Azure Front Door FAQs on limits and behavior | https://learn.microsoft.com/en-us/azure/frontdoor/front-door-faq |
 | Understand Azure Front Door routing composite limits | https://learn.microsoft.com/en-us/azure/frontdoor/front-door-routing-limits |
 | Understand Front Door Standard/Premium bandwidth throttling by subscription | https://learn.microsoft.com/en-us/azure/frontdoor/standard-premium/subscription-offers |
 
@@ -81,7 +82,6 @@ This skill requires **network access** to fetch documentation content:
 | Disable weak DHE cipher suites on Front Door | https://learn.microsoft.com/en-us/azure/frontdoor/diffie-hellman-ciphers |
 | End-to-end TLS and cipher support in Front Door | https://learn.microsoft.com/en-us/azure/frontdoor/end-to-end-tls |
 | Configure HTTPS and certificates for Front Door custom domains | https://learn.microsoft.com/en-us/azure/frontdoor/front-door-custom-domain-https |
-| Understand DDoS protection with Azure Front Door | https://learn.microsoft.com/en-us/azure/frontdoor/front-door-ddos |
 | Add security headers with Azure Front Door Rules Engine | https://learn.microsoft.com/en-us/azure/frontdoor/front-door-security-headers |
 | Protect and scale web apps with Front Door and WAF | https://learn.microsoft.com/en-us/azure/frontdoor/front-door-waf |
 | Use managed identity for Key Vault certificates | https://learn.microsoft.com/en-us/azure/frontdoor/managed-identity |
@@ -94,7 +94,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure sensitive data protection in Front Door logs | https://learn.microsoft.com/en-us/azure/frontdoor/standard-premium/sensitive-data-protection |
 | Configure Azure Front Door TLS policies | https://learn.microsoft.com/en-us/azure/frontdoor/standard-premium/tls-policy |
 | Set predefined or custom TLS policy in Front Door | https://learn.microsoft.com/en-us/azure/frontdoor/standard-premium/tls-policy-configure |
-| Features of WAF on Azure Front Door | https://learn.microsoft.com/en-us/azure/frontdoor/web-application-firewall |
 
 ### Configuration
 | Topic | URL |
@@ -104,16 +103,13 @@ This skill requires **network access** to fetch documentation content:
 | Understand HTTP header protocol support in Azure Front Door | https://learn.microsoft.com/en-us/azure/frontdoor/front-door-http-headers-protocol |
 | HTTP/2 protocol support in Azure Front Door | https://learn.microsoft.com/en-us/azure/frontdoor/front-door-http2 |
 | Configure Azure Front Door rule set actions | https://learn.microsoft.com/en-us/azure/frontdoor/front-door-rules-engine-actions |
-| Configure URL redirection behavior in Azure Front Door | https://learn.microsoft.com/en-us/azure/frontdoor/front-door-url-redirect |
 | Configure URL rewrite rules in Azure Front Door | https://learn.microsoft.com/en-us/azure/frontdoor/front-door-url-rewrite |
 | Configure wildcard custom domains in Azure Front Door | https://learn.microsoft.com/en-us/azure/frontdoor/front-door-wildcard-domain |
-| Configure and interpret Azure Front Door health probes | https://learn.microsoft.com/en-us/azure/frontdoor/health-probes |
 | Configure caching rules in Azure Front Door | https://learn.microsoft.com/en-us/azure/frontdoor/how-to-configure-caching |
 | Configure origins and origin groups in Azure Front Door | https://learn.microsoft.com/en-us/azure/frontdoor/how-to-configure-origin |
-| Connect Front Door Premium to Application Gateway | https://learn.microsoft.com/en-us/azure/frontdoor/how-to-enable-private-link-application-gateway |
+| Configure Azure Front Door Private Link to Application Gateway | https://learn.microsoft.com/en-us/azure/frontdoor/how-to-enable-private-link-application-gateway |
 | Connect Front Door to static website via Private Link | https://learn.microsoft.com/en-us/azure/frontdoor/how-to-enable-private-link-storage-static-website |
 | Integrate Azure Storage with Front Door caching | https://learn.microsoft.com/en-us/azure/frontdoor/integrate-storage-account |
-| Configure monitoring and alerts for Azure Front Door | https://learn.microsoft.com/en-us/azure/frontdoor/monitor-front-door |
 | Use Azure Front Door monitoring metrics and logs | https://learn.microsoft.com/en-us/azure/frontdoor/monitor-front-door-reference |
 | Use server variables in Azure Front Door rule sets | https://learn.microsoft.com/en-us/azure/frontdoor/rule-set-server-variables |
 | Use Azure Front Door rule set match conditions | https://learn.microsoft.com/en-us/azure/frontdoor/rules-match-conditions |
@@ -141,7 +137,6 @@ This skill requires **network access** to fetch documentation content:
 | Deploy Azure Front Door using ARM templates | https://learn.microsoft.com/en-us/azure/frontdoor/create-front-door-template |
 | Provision Azure Front Door with Terraform configuration | https://learn.microsoft.com/en-us/azure/frontdoor/create-front-door-terraform |
 | Deploy Azure Front Door using ARM/Bicep template samples | https://learn.microsoft.com/en-us/azure/frontdoor/front-door-quickstart-template-samples |
-| Migrate Front Door classic to Standard/Premium | https://learn.microsoft.com/en-us/azure/frontdoor/migrate-tier |
 | Migrate Front Door classic using PowerShell | https://learn.microsoft.com/en-us/azure/frontdoor/migrate-tier-powershell |
 | Update DevOps pipelines after Front Door migration | https://learn.microsoft.com/en-us/azure/frontdoor/post-migration-dev-ops-experience |
 | Provision Azure Front Door with Terraform configuration samples | https://learn.microsoft.com/en-us/azure/frontdoor/terraform-samples |

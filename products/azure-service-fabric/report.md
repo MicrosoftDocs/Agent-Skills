@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-05'
+generated_at: '2026-05-03'
 category_descriptions:
   configuration: Configuring Service Fabric clusters, networking, scaling, backups,
     monitoring, manifests, actors, containers, and tooling (CLI/IDE) for deployment,
@@ -7,9 +7,9 @@ category_descriptions:
   decision-making: 'Guidance on planning Service Fabric clusters: OS/disk choices,
     stateless node types, capacity/durability sizing, migration targets, and supported
     cluster versions.'
-  best-practices: Best-practice guidance for designing, scaling, upgrading, testing,
-    monitoring, backing up, and operating Service Fabric clusters, services, actors,
-    and Reliable Collections in production.
+  best-practices: Best-practice guidance for designing, testing, operating, and upgrading
+    Service Fabric apps/clusters, including reliability, backup/restore, actors, networking,
+    health, and migration from Cloud Services.
   architecture-patterns: 'Designing and tuning Service Fabric cluster behavior: Cluster
     Resource Manager architecture, metrics balancing/defrag, movement costs, service
     affinity, API gateway, and networking patterns.'
@@ -31,17 +31,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Service Fabric development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when building Service Fabric clusters, Reliable Services/Actors, Cluster Resource
-  Manager policies, reverse proxy, or sfctl/PowerShell automation, and other Azure
-  Service Fabric related development tasks. Not for Azure App Service (use azure-app-service),
-  Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Container Apps
-  (use azure-container-apps), Azure Cloud Services (use azure-cloud-services).
-use_when: Use when building Service Fabric clusters, Reliable Services/Actors, Cluster
-  Resource Manager policies, reverse proxy, or sfctl/PowerShell automation, and other
-  Azure Service Fabric related development tasks.
-confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Kubernetes
-  Service (AKS) (use azure-kubernetes-service), Azure Container Apps (use azure-container-apps),
-  Azure Cloud Services (use azure-cloud-services).
+  Use when working with Service Fabric clusters, Reliable Services/Actors, reverse
+  proxy, sfctl/PowerShell, or EventStore APIs, and other Azure Service Fabric related
+  development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
+  Azure App Service (use azure-app-service), Azure Container Apps (use azure-container-apps),
+  Azure Virtual Machines (use azure-virtual-machines).
+use_when: Use when working with Service Fabric clusters, Reliable Services/Actors,
+  reverse proxy, sfctl/PowerShell, or EventStore APIs, and other Azure Service Fabric
+  related development tasks.
+confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
+  Azure App Service (use azure-app-service), Azure Container Apps (use azure-container-apps),
+  Azure Virtual Machines (use azure-virtual-machines).
 ---
 # Azure Service Fabric Crawl Report
 
@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Kub
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 404
+- **Updated Pages**: 3
+- **Unchanged**: 401
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-fabric/azure-service-fabric.csv`
 
@@ -76,6 +76,15 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Kub
 | *(Unclassified)* | 74 | 18.3% |
 
 ## Changes
+
+### Updated Pages
+
+- [Overview of Azure clusters](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-azure-clusters-overview)
+  - Updated: 2026-03-22T08:00:00.000Z → 2026-04-27T17:05:00.000Z
+- [Patch cluster nodes (Windows)](https://learn.microsoft.com/en-us/azure/service-fabric/how-to-patch-cluster-nodes-windows)
+  - Updated: 2026-03-22T08:00:00.000Z → 2026-04-27T17:05:00.000Z
+- [Common questions](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-common-questions)
+  - Updated: 2026-03-22T08:00:00.000Z → 2026-04-27T17:05:00.000Z
 
 ## Classified Pages
 
@@ -311,7 +320,6 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Kub
 | [Node types and virtual machine scale sets](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-nodetypes) | configuration | 0.70 | Explains mapping between node types and VM scale sets and how to connect; likely includes specific resource names, extension IDs, and configuration details unique to Service Fabric. |
 | [On-demand backup of partition](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-backup-restore-service-ondemand-backup) | configuration | 0.70 | Describes using on-demand backup features, including when and how to trigger backups before planned changes; involves product-specific backup APIs/parameters. |
 | [Open a port in the load balancer](https://learn.microsoft.com/en-us/azure/service-fabric/create-load-balancer-rule) | configuration | 0.70 | Explains how to expose/route ports via Azure Load Balancer for Service Fabric; likely includes specific port mappings and LB rule parameters tied to Service Fabric cluster topology. |
-| [Patch cluster nodes (Windows)](https://learn.microsoft.com/en-us/azure/service-fabric/how-to-patch-cluster-nodes-windows) | best-practices | 0.70 | Gives concrete recommendation to use VM scale set automatic OS image upgrades and mentions durability tier requirement (silver or greater), which is a product-specific best-practice and constraint. |
 | [Plan for a cluster deployment](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-azure-deployment-preparation) | deployment | 0.70 | Azure cluster deployment planning; includes Service Fabric-specific requirements (node types, durability, reliability, certificates, networking) that are necessary for production deployment. |
 | [Plan for standalone cluster deployment](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation) | deployment | 0.70 | Pre-deployment preparation for standalone clusters; typically includes specific OS, networking, certificate, and configuration requirements unique to Service Fabric standalone deployments. |
 | [Prepare for disaster recovery](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-disaster-recovery) | best-practices | 0.70 | Discusses disaster scenarios and mitigations; likely includes Service Fabric-specific recommendations (replica placement, backup strategies, multi-region patterns) that are actionable best practices. |
@@ -355,6 +363,7 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Kub
 | [View health reports](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-view-entities-aggregated-health) | troubleshooting | 0.70 | Describes Service Fabric health queries, entity hierarchy, and how to interpret aggregated health for diagnosis; includes product-specific query patterns and evaluation logic useful for troubleshooting. |
 | [Volume and logging drivers](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-containers-volume-logging-drivers) | configuration | 0.70 | Describes Azure Files volume plugin as a Service Fabric app, with driver-specific configuration and deployment details that are product-specific integration/configuration knowledge. |
 | [WCF](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-reliable-services-communication-wcf) | integrations | 0.70 | Describes how to plug in the built-in WCF communication stack via ICommunicationListener and related APIs, which are Service Fabric–specific integration patterns. |
+| [Patch cluster nodes (Windows)](https://learn.microsoft.com/en-us/azure/service-fabric/how-to-patch-cluster-nodes-windows) | best-practices | 0.68 | Contains product-specific guidance such as requiring silver or greater durability for VM Scale Set automatic OS image upgrades and explicit support end dates for Windows Server versions, which are concrete, time-bound details and recommendations unique to Service Fabric operations rather than generic patching advice. |
 | [Scale to zero nodes](https://learn.microsoft.com/en-us/azure/service-fabric/how-to-managed-cluster-scale-to-zero) | configuration | 0.68 | How-to article for enabling and configuring scale-to-zero on node types; likely includes specific Service Fabric managed cluster settings/parameters and constraints that are product-specific and not general knowledge. |
 | [1- Create container images](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-tutorial-create-container-images) | integrations | 0.65 | Shows how to prepare container images for a multi-container Service Fabric application; includes Dockerfile and image configuration tailored to Service Fabric. |
 | [2- Debug the application](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-tutorial-debug-log-local-cluster) | troubleshooting | 0.65 | Covers attaching remote debugger and redirecting logs; likely includes specific log locations, commands, and debugging configuration unique to Service Fabric Java apps. |
@@ -426,7 +435,6 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Kub
 | [Deploy a Windows container application](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-quickstart-containers) | 0.45 | Windows container quickstart; shows basic deployment of a pre-built image without deep configuration or troubleshooting content. |
 | [Hosting activation and deactivation lifecycle advanced topics](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-hosting-lifecycle) | 0.45 | Explains activation/deactivation lifecycle events and cluster configurations at a conceptual level; summary lacks explicit parameter tables or timeout ranges. |
 | [Add a node type](https://learn.microsoft.com/en-us/azure/service-fabric/virtual-machine-scale-set-scale-node-type-scale-out) | 0.40 | How-to for adding a node type/VM scale set; mostly procedural ARM/portal steps without detailed config tables, limits, or product-specific gotchas. |
-| [Common questions](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-common-questions) | 0.40 | General FAQ about Service Fabric capabilities and usage; likely conceptual and guidance-level without detailed numeric limits or configuration tables. |
 | [Create .NET application](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-quickstart-dotnet) | 0.40 | App quickstart for a .NET voting sample; primarily step-by-step tutorial without structured configuration tables, limits, or troubleshooting mappings. |
 | [Debug a .NET service in VS](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-debugging-your-application) | 0.40 | Debugging in Visual Studio on local cluster; mostly generic debugging workflow with minimal product-specific configuration tables or error mappings. |
 | [Deploy a Reliable Services application](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-quickstart-java-reliable-services) | 0.40 | Java reliable services quickstart; focuses on building and deploying a sample voting app, not on product-specific configuration matrices. |
@@ -480,9 +488,10 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Kub
 | [C# Reliable Services application on Linux](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-create-your-first-linux-application-with-csharp) | 0.20 | Tutorial for creating a Linux Service Fabric app with C#; largely step-by-step without configuration matrices or error-resolution mappings. |
 | [C# Reliable Services application on Windows](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-reliable-services-quick-start) | 0.20 | Introductory quickstart for creating stateless and stateful services; mostly conceptual and wizard-driven steps without deep expert-only details. |
 | [Clusters overview](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-deploy-anywhere) | 0.20 | High-level overview and comparison of Azure vs standalone clusters; mostly conceptual and marketing-style description without detailed limits, configs, or decision matrices. |
+| [Common questions](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-common-questions) | 0.20 | FAQ-style page about Service Fabric capabilities and usage; description indicates conceptual Q&A without specific limits, configuration tables, error-code mappings, or other detailed expert data that match any sub-skill detection criteria. |
 | [Java Reliable Services application on Linux](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-reliable-services-quick-start-java) | 0.20 | Java quickstart for Reliable Services; focuses on basic creation and deployment, not on advanced configuration or troubleshooting. |
 | [Monitoring partners](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-diagnostics-partners) | 0.20 | Partner monitoring overview; likely high-level integration/marketing without detailed config parameters or error mappings. |
-| [Overview of Azure clusters](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-azure-clusters-overview) | 0.20 | Overview of creating clusters on Windows Server and Linux; primarily conceptual without detailed configuration tables or quantified decision criteria. |
+| [Overview of Azure clusters](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-azure-clusters-overview) | 0.20 | Content is an overview of Service Fabric clusters (what they are, high-level scaling behavior). No specific limits, configuration tables, error codes, or decision matrices are evident, so it doesn't meet any expert-knowledge criteria. |
 | [Overview of standalone clusters](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-standalone-clusters-overview) | 0.20 | Standalone clusters overview; high-level description of what clusters are and where they can run, without deep configuration or decision matrices. |
 | [Release notes](https://learn.microsoft.com/en-us/azure/service-fabric/release-notes) | 0.20 | Release notes overview/landing page; likely links out to detailed version notes but itself is primarily navigation/summary content without concrete limits, configs, or error mappings. |
 | [Reliable Actors overview](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-reliable-actors-introduction) | 0.20 | High-level introduction to Reliable Actors and the virtual actor pattern without product-specific limits, configuration tables, or error/diagnostic details. |

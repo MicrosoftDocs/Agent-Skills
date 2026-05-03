@@ -34,9 +34,9 @@ confusable_not_for: Not for Azure Reliability (use azure-reliability), Azure Res
 - **Unclassified**: 12
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 17
+- **Unchanged**: 18
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-extended-zones/azure-extended-zones.csv`
 
@@ -51,10 +51,6 @@ confusable_not_for: Not for Azure Reliability (use azure-reliability), Azure Res
 | *(Unclassified)* | 12 | 66.7% |
 
 ## Changes
-
-### New Pages
-
-- [Deploy Azure Firewall in an Extended Zone (Preview)](https://learn.microsoft.com/en-us/azure/extended-zones/deploy-azure-firewall)
 
 ## Classified Pages
 

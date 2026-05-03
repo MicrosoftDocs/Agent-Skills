@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-19'
+generated_at: '2026-05-03'
 category_descriptions:
   decision-making: Guidance on choosing Azure Firewall SKUs (Basic/Standard/Premium),
     comparing features and performance, and planning or changing deployments based
@@ -7,11 +7,11 @@ category_descriptions:
   security: 'Azure Firewall security setup: compliance, RBAC/permissions, Azure Policy,
     TLS inspection and CA chains, threat intel, DNAT, AKS and hybrid network protection,
     and portal deployment.'
-  configuration: Configuring Azure Firewall policies, rules (DNAT/SNAT/app), IP Groups,
-    DNS/proxy/FTP, maintenance windows, monitoring/logging, and advanced Premium/PowerShell
-    management.
+  configuration: Configuring Azure Firewall policies and rules (DNAT, SNAT, app/SQL/FQDN),
+    IP Groups, DNS/proxy/FTP/explicit proxy, maintenance windows, monitoring/logging,
+    and Premium features via portal/PowerShell.
   limits-quotas: Azure Firewall capacity, IP/port/session limits, SNAT scaling with
-    NAT Gateway, prescaling ranges, and TCP idle timeout behaviors and configuration.
+    NAT Gateway, prescaling options, and TCP idle timeout configuration and behaviors
   troubleshooting: Diagnosing Azure Firewall issues using known limitations, packet
     captures, and Sentinel log analysis for malware detection and traffic investigation.
   best-practices: Best practices for Azure Firewall DNS proxy/caching, performance
@@ -28,17 +28,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Firewall development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  configuring Azure Firewall SKUs, policies/rules, TLS inspection, hub-spoke DNAT,
-  or SFTP to Storage, and other Azure Firewall related development tasks. Not for
-  Azure Application Gateway (use azure-application-gateway), Azure Front Door (use
-  azure-front-door), Azure Web Application Firewall (use azure-web-application-firewall),
-  Azure DDos Protection (use azure-ddos-protection).
-use_when: Use when configuring Azure Firewall SKUs, policies/rules, TLS inspection,
-  hub-spoke DNAT, or SFTP to Storage, and other Azure Firewall related development
+  configuring DNAT/SNAT rules, TLS inspection, DNS proxy, hub-and-spoke routing, or
+  SFTP to Azure Storage, and other Azure Firewall related development tasks. Not for
+  Azure Virtual Network (use azure-virtual-network), Azure Networking (use azure-networking),
+  Azure Web Application Firewall (use azure-web-application-firewall), Azure Firewall
+  Manager (use azure-firewall-manager).
+use_when: Use when configuring DNAT/SNAT rules, TLS inspection, DNS proxy, hub-and-spoke
+  routing, or SFTP to Azure Storage, and other Azure Firewall related development
   tasks.
-confusable_not_for: Not for Azure Application Gateway (use azure-application-gateway),
-  Azure Front Door (use azure-front-door), Azure Web Application Firewall (use azure-web-application-firewall),
-  Azure DDos Protection (use azure-ddos-protection).
+confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), Azure
+  Networking (use azure-networking), Azure Web Application Firewall (use azure-web-application-firewall),
+  Azure Firewall Manager (use azure-firewall-manager).
 ---
 # Azure Firewall Crawl Report
 
@@ -47,14 +47,14 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 - **Total Pages**: 85
 - **Fetched**: 85
 - **Fetch Failed**: 0
-- **Classified**: 60
-- **Unclassified**: 25
+- **Classified**: 61
+- **Unclassified**: 24
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 2
 - **Unchanged**: 83
-- **Deleted Pages**: 1
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-firewall/azure-firewall.csv`
 
 ## Classification Statistics
@@ -63,29 +63,23 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 |------|-------|------------|
 | architecture-patterns | 9 | 10.6% |
 | best-practices | 4 | 4.7% |
-| configuration | 18 | 21.2% |
+| configuration | 19 | 22.4% |
 | decision-making | 5 | 5.9% |
 | deployment | 5 | 5.9% |
 | integrations | 1 | 1.2% |
 | limits-quotas | 6 | 7.1% |
 | security | 10 | 11.8% |
 | troubleshooting | 2 | 2.4% |
-| *(Unclassified)* | 25 | 29.4% |
+| *(Unclassified)* | 24 | 28.2% |
 
 ## Changes
 
-### New Pages
-
-- [Support and troubleshooting](https://learn.microsoft.com/en-us/azure/firewall/support-help)
-
 ### Updated Pages
 
-- [FAQ](https://learn.microsoft.com/en-us/azure/firewall/firewall-faq)
-  - Updated: 2026-03-06T12:21:00Z → 2026-04-15T17:15:00Z
-
-### Deleted Pages
-
-- ~~Known issues and limitations~~ (https://learn.microsoft.com/en-us/azure/firewall/firewall-known-issues)
+- [FQDN tags](https://learn.microsoft.com/en-us/azure/firewall/fqdn-tags)
+  - Updated: 2026-03-29T11:12:00.000Z → 2026-04-28T17:24:00.000Z
+- [TCP idle timeout behavior](https://learn.microsoft.com/en-us/azure/firewall/tcp-session-behavior)
+  - Updated: 2026-03-29T11:12:00.000Z → 2026-04-20T22:11:00.000Z
 
 ## Classified Pages
 
@@ -99,6 +93,7 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Packet capture on Azure Firewall](https://learn.microsoft.com/en-us/azure/firewall/packet-capture) | troubleshooting | 0.80 | Packet capture usage is framed for troubleshooting; article covers how to capture and analyze traffic, a product-specific diagnostic workflow. |
 | [SNAT private ranges](https://learn.microsoft.com/en-us/azure/firewall/snat-private-range) | configuration | 0.80 | Explains default SNAT behavior with RFC1918/RFC6598 ranges and how to override it; includes product-specific configuration options and edge-case behavior for SNAT, which is expert configuration knowledge. |
 | [Secure firewall deployment](https://learn.microsoft.com/en-us/azure/firewall/secure-firewall) | best-practices | 0.80 | Explicitly a best-practices article for securing Azure Firewall, likely including concrete recommendations and configurations for network, data, logging, and threat detection. |
+| [TCP idle timeout behavior](https://learn.microsoft.com/en-us/azure/firewall/tcp-session-behavior) | limits-quotas | 0.78 | The page describes Azure Firewall TCP session management with specific idle timeout values and behaviors for long-running sessions. These are product-specific timeout limits and behaviors that qualify as expert knowledge under limits-quotas. |
 | [Application rules with SQL FQDNs](https://learn.microsoft.com/en-us/azure/firewall/sql-fqdn-filtering) | configuration | 0.75 | Provides product-specific configuration details: SQL FQDN filtering supported only in proxy mode on port 1433, behavior in redirect mode, and handling non-default ports—these are concrete configuration behaviors unique to Azure Firewall. |
 | [Certificates](https://learn.microsoft.com/en-us/azure/firewall/premium-certificates) | security | 0.75 | Details requirement for valid intermediate CA certificates and use of Azure Key Vault for TLS inspection; these are product-specific security configuration steps. |
 | [DNS proxy settings](https://learn.microsoft.com/en-us/azure/firewall/dns-settings) | configuration | 0.75 | Describes specific DNS settings for Azure Firewall, including default behavior (Azure DNS, proxy disabled) and configuration options, which are product-specific configuration parameters. |
@@ -106,6 +101,7 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [FTP support](https://learn.microsoft.com/en-us/azure/firewall/ftp-support) | configuration | 0.75 | Specifies that Passive FTP is enabled and Active FTP disabled by default due to security concerns, and that Active FTP can be enabled only via PowerShell/CLI/ARM; these are concrete product-specific configuration behaviors. |
 | [Roles and permissions](https://learn.microsoft.com/en-us/azure/firewall/roles-permissions) | security | 0.75 | Describes roles and permissions needed across dependent resources for Azure Firewall operations; such pages typically list specific RBAC roles and scopes, which are product-specific security configuration details. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/firewall/firewall-faq) | limits-quotas | 0.74 | The FAQ includes concrete, product-specific numeric limits and behaviors (for example, maximum number of IP groups, rule collection limits, SNAT port allocations, throughput expectations, and other capacity-related figures) that are unlikely to be reliably known from general training data. These are expressed as exact values and constraints, fitting the limits-quotas category better than the others. |
+| [FQDN tags](https://learn.microsoft.com/en-us/azure/firewall/fqdn-tags) | configuration | 0.74 | The page defines Azure Firewall FQDN tags that map to specific Microsoft services and their underlying FQDN groups. These tag names and their exact service associations are product-specific configuration details that an LLM is unlikely to know reliably from training. They are used directly in firewall application rule configuration, fitting the configuration sub-skill type. |
 | [Azure Firewall features by SKU](https://learn.microsoft.com/en-us/azure/firewall/features-by-sku) | decision-making | 0.70 | Provides SKU-by-SKU feature breakdown to support choosing Basic, Standard, or Premium; comparison content is SKU-specific and used for selection decisions. |
 | [CLI](https://learn.microsoft.com/en-us/azure/firewall/deploy-ps-policy) | configuration | 0.70 | Covers deploying and configuring Azure Firewall Policy with PowerShell; such articles typically list cmdlets and parameter names/values for rules and policies, which are product-specific configuration details. |
 | [Choose the right SKU](https://learn.microsoft.com/en-us/azure/firewall/choose-firewall-sku) | decision-making | 0.70 | Explicitly positioned as a comparison guide to choose between Basic, Standard, and Premium; SKU selection guidance is product-specific decision-making even if summary is brief. |
@@ -125,7 +121,6 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Prescaling](https://learn.microsoft.com/en-us/azure/firewall/prescaling) | limits-quotas | 0.70 | Prescaling involves setting minimum and maximum capacity units; this feature typically includes numeric ranges and constraints for capacity units, which are limit/quota-like expert details. |
 | [Protect Azure Kubernetes Service (AKS)](https://learn.microsoft.com/en-us/azure/firewall/protect-azure-kubernetes-service) | security | 0.70 | Shows how to secure AKS inbound/outbound traffic with Azure Firewall, including scenario-specific rule and routing configurations. |
 | [Routing in hub and spoke](https://learn.microsoft.com/en-us/azure/firewall/firewall-multi-hub-spoke) | architecture-patterns | 0.70 | Covers using Azure Firewall in self-managed multi-hub-and-spoke topologies; this is a concrete Azure networking architecture pattern. |
-| [TCP idle timeout behavior](https://learn.microsoft.com/en-us/azure/firewall/tcp-session-behavior) | limits-quotas | 0.70 | Focuses on TCP session management and idle timeout behavior; such articles typically include specific default timeout values and ranges, which are numeric limits unique to the product. |
 | [Track rule set changes](https://learn.microsoft.com/en-us/azure/firewall/rule-set-change-tracking) | configuration | 0.70 | Explains how to query and analyze rule collection group changes via Azure Resource Graph, a product-specific configuration and auditing pattern. |
 | [Change Azure Firewall SKU](https://learn.microsoft.com/en-us/azure/firewall/change-sku) | decision-making | 0.68 | The page is focused on how to upgrade/downgrade between Azure Firewall Standard and Premium SKUs, including when you would change (to gain or drop specific security capabilities). This is SKU/feature-based selection and migration guidance rather than just a how-to. It provides product-specific guidance on choosing between SKUs and how to move between them, which fits the decision-making category better than generic configuration or deployment. |
 | [Monitoring Azure Firewall reference](https://learn.microsoft.com/en-us/azure/firewall/monitor-firewall-reference) | configuration | 0.68 | A 'monitoring data reference' article typically enumerates specific log categories, metrics, schema fields, and diagnostic settings for Azure Firewall in Azure Monitor. These are product-specific configuration and reference details (names of tables, fields, categories, and how to enable them), which fits the configuration category as it documents concrete monitoring/diagnostic configuration options. |
@@ -168,7 +163,6 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Overview](https://learn.microsoft.com/en-us/azure/firewall/premium-portal) | 0.35 | Portal overview of Premium; summary points to high-level features, not detailed configuration parameters or limits. |
 | [Azure Firewall with Microsoft Sentinel](https://learn.microsoft.com/en-us/azure/firewall/firewall-sentinel-overview) | 0.30 | Overview of integrating Azure Firewall with Microsoft Sentinel; largely conceptual about benefits and scenarios, without detailed configuration parameters or numeric thresholds. |
 | [Deploy with Availability Zones](https://learn.microsoft.com/en-us/azure/firewall/deploy-availability-zone-powershell) | 0.30 | Availability Zones deployment via PowerShell; likely procedural without detailed limits, config parameter tables, or error mappings. |
-| [FQDN tags](https://learn.microsoft.com/en-us/azure/firewall/fqdn-tags) | 0.30 | High-level overview of FQDN tags; mainly conceptual explanation of what tags are and how to use them, without detailed configuration tables or limits. |
 | [Preview features](https://learn.microsoft.com/en-us/azure/firewall/firewall-preview) | 0.30 | Lists preview features conceptually; no detailed limits, configs, or troubleshooting mappings. |
 | [Service tags](https://learn.microsoft.com/en-us/azure/firewall/service-tags) | 0.30 | Overview of service tags; describes concept and usage but not detailed configuration parameters, limits, or troubleshooting mappings. |
 | [ARM template](https://learn.microsoft.com/en-us/azure/firewall/deploy-template) | 0.20 | ARM template quickstart; focuses on sample deployment, not on expert configuration or limits. |

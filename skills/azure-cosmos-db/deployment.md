@@ -7,25 +7,32 @@
 ### Deployment
 | Topic | URL |
 |-------|-----|
+| Deploy Cosmos DB NoSQL resources using Bicep | https://learn.microsoft.com/en-us/azure/cosmos-db/bicep-samples |
+| Manage Cosmos DB Cassandra with Bicep templates | https://learn.microsoft.com/en-us/azure/cosmos-db/cassandra/manage-with-bicep |
+| Migrate Apache Cassandra data to Cosmos DB Cassandra | https://learn.microsoft.com/en-us/azure/cosmos-db/cassandra/migrate-data |
 | Deploy Cosmos DB Cassandra resources with ARM templates | https://learn.microsoft.com/en-us/azure/cosmos-db/cassandra/templates-samples |
-| Deploy web app and Cosmos DB with ARM template | https://learn.microsoft.com/en-us/azure/cosmos-db/create-website |
+| Deploy Cosmos DB web app using ARM template | https://learn.microsoft.com/en-us/azure/cosmos-db/create-website |
+| Use Cosmos DB emulator for local development and CI | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-develop-emulator |
+| Restore deleted Cosmos DB containers or databases in-account | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-restore-in-account-continuous-backup |
+| Migrate from Cosmos DB MongoDB API to Azure DocumentDB | https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/how-to-migrate-documentdb |
+| Manage Cosmos DB for MongoDB using Bicep | https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/manage-with-bicep |
+| Migrate large MongoDB datasets to Cosmos DB with Databricks | https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/migrate-databricks |
+| Deploy Cosmos DB for MongoDB with ARM templates | https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/resource-manager-template-samples |
 | Migrate MongoDB offline to Cosmos DB using native tools | https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/tutorial-mongotools-cosmos-db |
-| Use backup and restore in Cosmos DB PostgreSQL | https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/concepts-backup |
-| Start and stop cluster compute nodes safely | https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/concepts-compute-start-stop |
-| Understand scheduled maintenance for Cosmos DB PostgreSQL | https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/concepts-maintenance |
-| Plan and execute cluster upgrades | https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/concepts-upgrade |
-| Start and stop Cosmos DB PostgreSQL clusters | https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/how-to-start-stop-cluster |
-| Configure scheduled maintenance in Azure portal | https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/howto-maintenance |
-| Restart all nodes in a Cosmos DB PostgreSQL cluster | https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/howto-restart |
-| Upgrade PostgreSQL and Citus in Cosmos DB PostgreSQL | https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/howto-upgrade |
-| Terraform support for managing Cosmos DB for PostgreSQL | https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/reference-terraform |
-| Deploy and configure Cosmos DB with ARM templates | https://learn.microsoft.com/en-us/azure/cosmos-db/samples-resource-manager-templates |
-| Schedule Cosmos DB throughput scaling with Azure Functions | https://learn.microsoft.com/en-us/azure/cosmos-db/scale-on-schedule |
-| Deploy Cosmos DB for Table with ARM templates | https://learn.microsoft.com/en-us/azure/cosmos-db/table/resource-manager-templates |
-| Deploy ASP.NET app with Cosmos DB and managed identity on AKS via Bicep | https://learn.microsoft.com/en-us/azure/cosmos-db/tutorial-deploy-app-bicep-aks |
+| Upgrade Cosmos DB for MongoDB wire protocol version | https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/upgrade-version |
+| Manage scheduled maintenance for Cosmos DB clusters | https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/concepts-maintenance |
+| Upgrade PostgreSQL and Citus versions in Cosmos DB for PostgreSQL clusters | https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/howto-upgrade |
+| Deploy Cosmos DB for PostgreSQL cluster with Bicep | https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/quickstart-create-bicep |
+| Manage Azure Cosmos DB for PostgreSQL with Terraform | https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/reference-terraform |
+| Deploy and configure Cosmos DB NoSQL with ARM templates | https://learn.microsoft.com/en-us/azure/cosmos-db/samples-resource-manager-templates |
+| Provision Cosmos DB NoSQL accounts with Terraform | https://learn.microsoft.com/en-us/azure/cosmos-db/samples-terraform |
+| Create Azure Cosmos DB for Table resources using Bicep | https://learn.microsoft.com/en-us/azure/cosmos-db/table/manage-with-bicep |
+| Deploy Azure Cosmos DB for Table with ARM templates | https://learn.microsoft.com/en-us/azure/cosmos-db/table/resource-manager-templates |
+| Deploy ASP.NET app with Cosmos DB and AKS via Bicep | https://learn.microsoft.com/en-us/azure/cosmos-db/tutorial-deploy-app-bicep-aks |
+| Implement .NET bulk import to Cosmos DB for NoSQL | https://learn.microsoft.com/en-us/azure/cosmos-db/tutorial-dotnet-bulk-import |
 | Set up Azure DevOps CI/CD with Cosmos DB emulator | https://learn.microsoft.com/en-us/azure/cosmos-db/tutorial-setup-ci-cd |
-| Create and use Azure DocumentDB replica clusters for DR | https://learn.microsoft.com/en-us/azure/documentdb/how-to-cross-region-replica-portal |
+| Deploy Spring Boot app with Cosmos DB on AKS | https://learn.microsoft.com/en-us/azure/cosmos-db/tutorial-springboot-azure-kubernetes-service |
+| Enable diagnostic logging for DocumentDB with Azure Monitor | https://learn.microsoft.com/en-us/azure/documentdb/how-to-monitor-diagnostics-logs |
 | Deploy an Azure DocumentDB cluster using Bicep | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-bicep |
-| Create an Azure DocumentDB cluster in the portal | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-portal |
-| Deploy an Azure DocumentDB cluster using Terraform | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-terraform |
-| Plan Azure DocumentDB deployments by region availability | https://learn.microsoft.com/en-us/azure/documentdb/regional-availability |
+| Create a new Azure DocumentDB cluster in the portal | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-portal |
+| Track Azure DocumentDB feature and engine release changes | https://learn.microsoft.com/en-us/azure/documentdb/release-notes |

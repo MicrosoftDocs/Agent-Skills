@@ -1,9 +1,9 @@
 ---
 name: azure-well-architected
-description: Expert guidance for designing, assessing, and optimizing Azure workloads using Azure Well Architected. Covers design review checklists, recommendations, design principles, tradeoffs, service guides, workload patterns, and assessment questions. Use when designing AI, SAP, SaaS, HPC, or mission‑critical workloads, or optimizing cost, security, reliability, and ops, and other Azure Well Architected related development tasks.
+description: Expert guidance for designing, assessing, and optimizing Azure workloads using Azure Well Architected. Covers design review checklists, recommendations, design principles, tradeoffs, service guides, workload patterns, and assessment questions. Use when designing AI, SAP, SaaS, HPC, or mission‑critical workloads and choosing regions/AZs or service configurations, and other Azure Well Architected related development tasks.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-19"
+  generated_at: "2026-05-03"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Well Architected Skill
@@ -24,21 +24,21 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Design Review Checklists | L35-L43 | Checklists to review Azure workloads for cost, operations, performance, reliability, and security, with concrete questions and best practices for each architecture pillar. |
-| Recommendations | L44-L115 | Guidance and best practices to design, operate, and improve Azure workloads across cost, operations, performance, reliability, security, and sustainability (FinOps, DevOps, DR, CI/CD, IAM, monitoring). |
-| Design Principles | L116-L133 | Design principles and patterns for cost, reliability, security, performance, ops, and sustainability across Azure workloads like AI, SAP, Oracle, AVS, AVD, SaaS, HPC, and mission‑critical systems. |
-| Tradeoffs | L134-L143 | Guidance on balancing cost, reliability, performance, security, and operations in Azure designs, including region/AZ choices and cross-pillar tradeoff analysis for architecture decisions |
-| Service Guides | L144-L194 | End-to-end design, security, networking, operations, monitoring, and optimization guidance for specific Azure services, aligned to Well-Architected Framework best practices. |
-| Workload Patterns | L195-L255 | Designing, operating, and optimizing specialized Azure workloads (AI, HPC, mission‑critical, SaaS, SAP, sustainability) using Well‑Architected principles for architecture, data, ops, security, and cost. |
-| Assessment Questions | L256-L269 | Guided assessments and maturity models to evaluate AI, SaaS, AVD, AVS, and other Azure workloads against WAF pillars: cost, reliability, security, performance, and operations. |
+| Design Review Checklists | L35-L43 | Checklists to review Azure workloads for cost, operations, performance, reliability, and security best practices and identify design gaps or improvements. |
+| Recommendations | L44-L115 | Prescriptive best practices to design, run, and improve Azure workloads across cost, reliability, security, performance, operations, DevOps, and sustainability (how to optimize and govern end to end). |
+| Design Principles | L116-L132 | Design principles and patterns for cost, reliability, security, performance, ops, and sustainability across Azure workloads like AI, SAP, Oracle, AVS, AVD, SaaS, HPC, and mission‑critical systems. |
+| Tradeoffs | L133-L142 | Guidance on weighing cost, reliability, performance, security, and operations tradeoffs in Azure architectures, including regions/AZ choices and cross-pillar design decisions. |
+| Service Guides | L143-L193 | End-to-end design, security, networking, operations, monitoring, and optimization guidance for specific Azure services, aligned to Well-Architected Framework best practices. |
+| Workload Patterns | L194-L246 | Designing, operating, and optimizing specialized Azure workloads (AI, HPC, mission‑critical, SaaS, SAP, sustainability) using Well‑Architected principles for architecture, data, ops, security, and cost. |
+| Assessment Questions | L247-L260 | Guided assessments and maturity models to evaluate AI, SaaS, AVD, AVS, and other Azure workloads against WAF pillars: cost, reliability, security, performance, and operations. |
 
 ### Design Review Checklists
 | Topic | URL |
 |-------|-----|
 | Use Cost Optimization design review checklist for Azure | https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/checklist |
 | Use operational excellence design review checklist | https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/checklist |
-| Use the Performance Efficiency design review checklist | https://learn.microsoft.com/en-us/azure/well-architected/performance-efficiency/checklist |
-| Use reliability design review checklist for Azure | https://learn.microsoft.com/en-us/azure/well-architected/reliability/checklist |
+| Use performance efficiency design review checklist | https://learn.microsoft.com/en-us/azure/well-architected/performance-efficiency/checklist |
+| Use reliability design checklist for Azure workloads | https://learn.microsoft.com/en-us/azure/well-architected/reliability/checklist |
 | Use the Security design review checklist for workloads | https://learn.microsoft.com/en-us/azure/well-architected/security/checklist |
 
 ### Recommendations
@@ -77,8 +77,8 @@ This skill requires **network access** to fetch documentation content:
 | Standardize development tools and processes for Azure teams | https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/tools-processes |
 | Design CI/CD-based workload development supply chains | https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/workload-supply-chain |
 | Implement capacity planning for Azure performance efficiency | https://learn.microsoft.com/en-us/azure/well-architected/performance-efficiency/capacity-planning |
-| Collect and use performance data for Azure workloads | https://learn.microsoft.com/en-us/azure/well-architected/performance-efficiency/collect-performance-data |
 | Continuously optimize performance efficiency in Azure | https://learn.microsoft.com/en-us/azure/well-architected/performance-efficiency/continuous-performance-optimize |
+| Implement monitoring strategies for workload performance | https://learn.microsoft.com/en-us/azure/well-architected/performance-efficiency/monitoring |
 | Optimize application code and infrastructure performance on Azure | https://learn.microsoft.com/en-us/azure/well-architected/performance-efficiency/optimize-code-infrastructure |
 | Optimize data performance in Azure workloads | https://learn.microsoft.com/en-us/azure/well-architected/performance-efficiency/optimize-data-performance |
 | Optimize operational tasks to protect workload performance | https://learn.microsoft.com/en-us/azure/well-architected/performance-efficiency/optimize-operational-tasks |
@@ -92,7 +92,7 @@ This skill requires **network access** to fetch documentation content:
 | Perform failure mode analysis for Azure reliability | https://learn.microsoft.com/en-us/azure/well-architected/reliability/failure-mode-analysis |
 | Identify and prioritize workload flows for reliability | https://learn.microsoft.com/en-us/azure/well-architected/reliability/identify-flows |
 | Define availability and recovery targets for reliability | https://learn.microsoft.com/en-us/azure/well-architected/reliability/metrics |
-| Design reliable monitoring and alerting for workloads | https://learn.microsoft.com/en-us/azure/well-architected/reliability/monitoring-alerting-strategy |
+| Implement monitoring strategy for workload reliability | https://learn.microsoft.com/en-us/azure/well-architected/reliability/monitoring |
 | Design redundancy strategies to meet reliability targets | https://learn.microsoft.com/en-us/azure/well-architected/reliability/redundancy |
 | Design reliable scaling strategies for Azure workloads | https://learn.microsoft.com/en-us/azure/well-architected/reliability/scaling |
 | Build self-healing and self-preservation into workloads | https://learn.microsoft.com/en-us/azure/well-architected/reliability/self-preservation |
@@ -127,19 +127,18 @@ This skill requires **network access** to fetch documentation content:
 | Apply Performance Efficiency design principles in Azure | https://learn.microsoft.com/en-us/azure/well-architected/performance-efficiency/principles |
 | Apply reliability design principles to Azure workloads | https://learn.microsoft.com/en-us/azure/well-architected/reliability/principles |
 | Use WAF-aligned design principles for SaaS on Azure | https://learn.microsoft.com/en-us/azure/well-architected/saas/design-principles |
-| Use WAF design principles for SAP workloads on Azure | https://learn.microsoft.com/en-us/azure/well-architected/sap/design-principles |
 | Apply security design principles with zero trust | https://learn.microsoft.com/en-us/azure/well-architected/security/principles |
 | Use sustainability design principles for Azure workloads | https://learn.microsoft.com/en-us/azure/well-architected/sustainability/sustainability-design-principles |
 
 ### Tradeoffs
 | Topic | URL |
 |-------|-----|
-| Evaluate Cost Optimization tradeoffs across WAF pillars | https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/tradeoffs |
+| Analyze cost optimization tradeoffs across WAF pillars | https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/tradeoffs |
 | Balance regions and availability zones for reliability and cost | https://learn.microsoft.com/en-us/azure/well-architected/design-guides/regions-availability-zones |
-| Analyze Operational Excellence tradeoffs across WAF pillars | https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/tradeoffs |
-| Evaluate Performance Efficiency tradeoffs across WAF pillars | https://learn.microsoft.com/en-us/azure/well-architected/performance-efficiency/tradeoffs |
-| Evaluate cross-pillar tradeoffs for reliability designs | https://learn.microsoft.com/en-us/azure/well-architected/reliability/tradeoffs |
-| Analyze security tradeoffs across WAF pillars | https://learn.microsoft.com/en-us/azure/well-architected/security/tradeoffs |
+| Evaluate operational excellence tradeoffs in Azure workloads | https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/tradeoffs |
+| Analyze performance efficiency tradeoffs across WAF pillars | https://learn.microsoft.com/en-us/azure/well-architected/performance-efficiency/tradeoffs |
+| Analyze reliability tradeoffs across WAF pillars | https://learn.microsoft.com/en-us/azure/well-architected/reliability/tradeoffs |
+| Evaluate security tradeoffs in Azure architectures | https://learn.microsoft.com/en-us/azure/well-architected/security/tradeoffs |
 
 ### Service Guides
 | Topic | URL |
@@ -236,14 +235,6 @@ This skill requires **network access** to fetch documentation content:
 | Design incident management processes for SaaS solutions on Azure | https://learn.microsoft.com/en-us/azure/well-architected/saas/incident-management |
 | Design networking topology and security for SaaS on Azure | https://learn.microsoft.com/en-us/azure/well-architected/saas/networking |
 | Plan region selection and resource organization for SaaS on Azure | https://learn.microsoft.com/en-us/azure/well-architected/saas/resource-organization |
-| Design SAP applications on Azure for cost and reliability | https://learn.microsoft.com/en-us/azure/well-architected/sap/design-areas/application-design |
-| Design SAP application platform on Azure for cost and performance | https://learn.microsoft.com/en-us/azure/well-architected/sap/design-areas/application-platform |
-| Optimize SAP data platform on Azure for cost and performance | https://learn.microsoft.com/en-us/azure/well-architected/sap/design-areas/data-platform |
-| Design networking and connectivity for SAP workloads on Azure | https://learn.microsoft.com/en-us/azure/well-architected/sap/design-areas/networking-and-connectivity |
-| Define operational procedures and SOPs for SAP workloads on Azure | https://learn.microsoft.com/en-us/azure/well-architected/sap/design-areas/operational-procedures |
-| Secure SAP workloads on Azure using WAF-aligned practices | https://learn.microsoft.com/en-us/azure/well-architected/sap/design-areas/security |
-| Apply WAF best practices to SAP workloads on Azure | https://learn.microsoft.com/en-us/azure/well-architected/sap/get-started |
-| Architect SAP workloads on Azure using WAF | https://learn.microsoft.com/en-us/azure/well-architected/sap/quick-links |
 | Optimize Azure workloads for sustainability with WAF | https://learn.microsoft.com/en-us/azure/well-architected/sustainability/ |
 | Design applications on Azure for sustainability and carbon efficiency | https://learn.microsoft.com/en-us/azure/well-architected/sustainability/sustainability-application-design |
 | Choose sustainable application platform and infrastructure options on Azure | https://learn.microsoft.com/en-us/azure/well-architected/sustainability/sustainability-application-platform |

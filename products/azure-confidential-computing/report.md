@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-12'
+generated_at: '2026-05-03'
 category_descriptions:
   integrations: Coding patterns and samples for building, running, and attesting Intel
     SGX/AMD SEV-SNP confidential apps and containers, including SKR flows, tools,
@@ -19,9 +19,9 @@ category_descriptions:
   deployment: How to deploy and migrate Azure confidential VMs/VMSS and AKS (SGX and
     confidential node pools), create custom images, and set up Fortanix CCM using
     CLI and ARM templates.
-  troubleshooting: 'Troubleshooting AKS confidential node issues: common errors, limitations,
-    configuration and deployment problems, and FAQs about setup, security, and workload
-    compatibility.'
+  troubleshooting: Diagnosing and fixing common Azure Kubernetes Service (AKS) confidential
+    node issues, including deployment failures, node attestation problems, and enclave/TEE
+    runtime errors.
   best-practices: 'FAQ and guidance on using Azure confidential VMs: supported scenarios,
     security guarantees, limitations, performance, pricing, and operational best practices.'
   limits-quotas: Guidance on choosing sizes, quotas, and deployment limits for Intel
@@ -29,17 +29,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Confidential Computing development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when using SGX/SEV-SNP VMs, AKS confidential containers, SKR with Key Vault/Fortanix,
-  vTPM, or attestation APIs, and other Azure Confidential Computing related development
-  tasks. Not for Azure Virtual Enclaves (use azure-virtual-enclaves), Azure Virtual
-  Machines (use azure-virtual-machines), Azure Dedicated HSM (use azure-dedicated-hsm),
-  Azure Attestation (use azure-attestation).
-use_when: Use when using SGX/SEV-SNP VMs, AKS confidential containers, SKR with Key
-  Vault/Fortanix, vTPM, or attestation APIs, and other Azure Confidential Computing
-  related development tasks.
+  Use when using SGX/SEV-SNP VMs, AKS confidential containers, attestation/SKR flows,
+  Fortanix CCM, or vTPM/Key Vault, and other Azure Confidential Computing related
+  development tasks. Not for Azure Virtual Enclaves (use azure-virtual-enclaves),
+  Azure Virtual Machines (use azure-virtual-machines), Azure Key Vault (use azure-key-vault),
+  Azure Dedicated HSM (use azure-dedicated-hsm).
+use_when: Use when using SGX/SEV-SNP VMs, AKS confidential containers, attestation/SKR
+  flows, Fortanix CCM, or vTPM/Key Vault, and other Azure Confidential Computing related
+  development tasks.
 confusable_not_for: Not for Azure Virtual Enclaves (use azure-virtual-enclaves), Azure
-  Virtual Machines (use azure-virtual-machines), Azure Dedicated HSM (use azure-dedicated-hsm),
-  Azure Attestation (use azure-attestation).
+  Virtual Machines (use azure-virtual-machines), Azure Key Vault (use azure-key-vault),
+  Azure Dedicated HSM (use azure-dedicated-hsm).
 ---
 # Azure Confidential Computing Crawl Report
 
@@ -53,8 +53,8 @@ confusable_not_for: Not for Azure Virtual Enclaves (use azure-virtual-enclaves),
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 70
+- **Updated Pages**: 1
+- **Unchanged**: 69
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-confidential-computing/azure-confidential-computing.csv`
 
@@ -74,6 +74,11 @@ confusable_not_for: Not for Azure Virtual Enclaves (use azure-virtual-enclaves),
 | *(Unclassified)* | 19 | 27.1% |
 
 ## Changes
+
+### Updated Pages
+
+- [Confidential enclave nodes FAQ](https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-nodes-aks-faq)
+  - Updated: 2025-06-19T17:03:00Z → 2026-04-30T11:20:00Z
 
 ## Classified Pages
 
@@ -116,6 +121,7 @@ confusable_not_for: Not for Azure Virtual Enclaves (use azure-virtual-enclaves),
 | [Use sample app with guest attestation](https://learn.microsoft.com/en-us/azure/confidential-computing/guest-attestation-example) | integrations | 0.70 | Shows how to integrate workloads with guest attestation APIs using sample code; includes API usage patterns specific to this feature. |
 | [Use virtual TPMs in Azure confidential VMs](https://learn.microsoft.com/en-us/azure/confidential-computing/how-to-leverage-virtual-tpms-in-azure-confidential-vms) | security | 0.70 | How-to for using vTPM benefits after establishing trust; includes product-specific secure usage patterns on Linux confidential VMs. |
 | [Virtual Machine Metablob Disk](https://learn.microsoft.com/en-us/azure/confidential-computing/virtual-machine-metablob-disk) | configuration | 0.70 | Explains behavior changes when using VMMD with confidential VMs and ties them to specific API/CLI/PowerShell versions; product-specific configuration details. |
+| [Confidential enclave nodes FAQ](https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-nodes-aks-faq) | troubleshooting | 0.68 | As an FAQ for AKS confidential (Intel SGX) nodes, this page likely maps specific questions and issues to product-specific answers, including constraints and behaviors unique to confidential nodes. FAQs for specialized features typically include expert operational details (for example, supported VM sizes, behavior differences, and known limitations) that go beyond generic Kubernetes knowledge, fitting a troubleshooting/issue-resolution pattern more than conceptual overview. |
 | [About Azure confidential GPUs](https://learn.microsoft.com/en-us/azure/confidential-computing/gpu-options) | decision-making | 0.65 | Explains the specific AMD/NVIDIA-based confidential GPU SKU and how CPU and GPU TEEs interact, informing when to choose this option. |
 | [Attestation](https://learn.microsoft.com/en-us/azure/confidential-computing/attestation-solutions) | security | 0.65 | Details Microsoft-specific attestation approaches and when to use them; product-specific security/attestation configuration guidance. |
 | [Confidential VM node pools in AKS](https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-node-pool-aks) | deployment | 0.65 | Describes support for specific confidential VM series (DCasv5, ECasv5) as AKS node pools, which is a product-specific deployment capability matrix between AKS and confidential VM SKUs. |
@@ -128,7 +134,6 @@ confusable_not_for: Not for Azure Virtual Enclaves (use azure-virtual-enclaves),
 | [Confidential containers on AKS](https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-containers-on-aks-preview) | configuration | 0.60 | Describes enabling pod-level isolation with Confidential Containers on AKS, which implies AKS- and feature-specific configuration steps and parameters beyond generic Kubernetes knowledge. |
 | [Confidential containers overview](https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-containers) | decision-making | 0.60 | Portfolio-style article describing different confidential container service options. It is used to choose between offerings, which is decision-making guidance rather than just conceptual overview. |
 | [Confidential containers with Azure Container Instances](https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-containers) | decision-making | 0.60 | Describes Azure’s portfolio of confidential container capabilities and options, helping users understand which option to use for different needs, which is decision-making guidance. |
-| [Confidential enclave nodes FAQ](https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-nodes-aks-faq) | troubleshooting | 0.60 | FAQ for Intel SGX-based confidential nodes on AKS likely includes concrete operational issues, constraints, and resolutions specific to this integration, functioning as troubleshooting guidance. |
 | [FAQ for confidential VMs](https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-vm-faq) | best-practices | 0.60 | FAQ for confidential VMs typically includes product-specific gotchas, constraints, and recommended patterns not obvious from generic knowledge. |
 
 ## Unclassified Pages

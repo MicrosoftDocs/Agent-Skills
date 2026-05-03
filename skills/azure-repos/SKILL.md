@@ -1,9 +1,9 @@
 ---
 name: azure-repos
-description: Expert knowledge for Azure Repos development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when managing Azure Repos Git/TFVC, branch/PR policies, repo permissions, CodeQL/secret scans, or TFVC migrations, and other Azure Repos related development tasks. Not for Azure DevOps (use azure-devops), Azure Pipelines (use azure-pipelines), Azure Boards (use azure-boards), Azure Artifacts (use azure-artifacts).
+description: Expert knowledge for Azure Repos development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when managing Azure Repos/TFVC auth & policies, PR/branch rules, CodeQL/secret scans, or Git vs TFVC migration, and other Azure Repos related development tasks. Not for Azure DevOps (use azure-devops), Azure Artifacts (use azure-artifacts), Azure Pipelines (use azure-pipelines), Azure Boards (use azure-boards).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-19"
+  generated_at: "2026-05-03"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Repos Skill
@@ -24,20 +24,20 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L36-L49 | Diagnosing and fixing Git/TFVC issues in Azure Repos: index.lock, push/RPC errors, merge/lock conflicts, undo/recover changes, and troubleshooting CodeQL, dependency, and secret scanning. |
+| Troubleshooting | L36-L49 | Diagnosing and fixing Git/Azure Repos and TFVC issues: locks, merge/push errors, undo/recover changes, plus troubleshooting CodeQL, dependency, and secret scanning. |
 | Best Practices | L50-L65 | Git and TFVC best practices: branching, pull requests, merges, large binaries, .gitignore, cross‑platform compatibility, repo health, and workspace cleanup/optimization. |
 | Decision Making | L66-L74 | Guidance on choosing and migrating version control in Azure Repos: Git vs TFVC, SVN/TFVC-to-Git migration strategies, mixed Git+TFVC use, and local vs server TFVC workspaces. |
 | Architecture & Design Patterns | L75-L83 | Designing and choosing TFVC branching structures/strategies, planning strategic branches, implementing feature isolation, and managing branches for DevOps workflows in Azure Repos. |
 | Limits & Quotas | L84-L89 | Repo size/branch/file limits in Azure Repos Git, and which languages/package managers are supported for GitHub Advanced Security dependency scanning. |
-| Security | L90-L113 | Securing Azure Repos and TFVC: auth methods (Entra, PAT, SSH, GCM), repo/branch/PR permissions and policies, branch locking, secure imports, and GitHub Advanced Security setup. |
-| Configuration | L114-L144 | Configuring Azure Repos/DevOps Git & TFVC: branch and PR policies, notifications, templates, repo settings, work item keywords, and security/scanning (CodeQL, secrets, dependencies). |
-| Integrations & Coding Patterns | L145-L198 | Integrating Azure Repos with tools (Functions, Node.js, IDEs, Slack/Teams, scanners) and automating workflows via TFVC/tf.exe and Git-specific commands and permissions. |
+| Security | L90-L113 | Securing Azure Repos and TFVC: auth methods (Entra, PAT, SSH, GCM), branch/repo/TFVC permissions and policies, secure cloning/import, SSH key management, and GitHub Advanced Security setup. |
+| Configuration | L114-L145 | Configuring Azure Repos and TFVC: branch and PR policies, notifications, templates, repo settings, GitHub Advanced Security (CodeQL, dependency/secret scanning), and TFVC check-in/workspace options. |
+| Integrations & Coding Patterns | L146-L198 | Integrating Azure Repos with tools (Functions, Node.js, IDEs, Slack/Teams, scanners) and automating workflows via TFVC/tf.exe and Git-specific commands and permissions. |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
 | Handle Git index.lock issues in Visual Studio and Azure Repos | https://learn.microsoft.com/en-us/azure/devops/repos/git/git-index-lock?view=azure-devops |
-| Troubleshoot Git issues in Azure Repos | https://learn.microsoft.com/en-us/azure/devops/repos/git/howto?view=azure-devops |
+| Troubleshoot Git usage issues in Azure Repos | https://learn.microsoft.com/en-us/azure/devops/repos/git/howto?view=azure-devops |
 | Troubleshoot and resolve Git merge conflicts in Azure Repos | https://learn.microsoft.com/en-us/azure/devops/repos/git/merging?view=azure-devops |
 | Fix RPC failure errors when pushing to Azure Repos | https://learn.microsoft.com/en-us/azure/devops/repos/git/rpc-failures-http-postbuffer?view=azure-devops |
 | Undo and recover Git changes in Azure Repos | https://learn.microsoft.com/en-us/azure/devops/repos/git/undo?view=azure-devops |
@@ -96,6 +96,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure Azure Repos Git branch policies securely | https://learn.microsoft.com/en-us/azure/devops/repos/git/branch-policies?view=azure-devops |
 | Clone Azure Repos Git repositories with secure authentication | https://learn.microsoft.com/en-us/azure/devops/repos/git/clone?view=azure-devops |
 | Secure Azure Repos SSH keys with passphrases | https://learn.microsoft.com/en-us/azure/devops/repos/git/gcm-ssh-passphrase?view=azure-devops |
+| Authenticate Go install with Azure Repos Git | https://learn.microsoft.com/en-us/azure/devops/repos/git/go-install?view=azure-devops |
 | Securely import external Git repositories into Azure Repos | https://learn.microsoft.com/en-us/azure/devops/repos/git/import-git-repository?view=azure-devops |
 | Lock Azure Repos Git branches to prevent updates | https://learn.microsoft.com/en-us/azure/devops/repos/git/lock-branches?view=azure-devops |
 | Enforce branch folder structure and secure auth in Azure Repos | https://learn.microsoft.com/en-us/azure/devops/repos/git/require-branch-folders?view=azure-devops |
@@ -103,7 +104,6 @@ This skill requires **network access** to fetch documentation content:
 | Use Git Credential Manager to access Azure Repos securely | https://learn.microsoft.com/en-us/azure/devops/repos/git/set-up-credential-managers?view=azure-devops |
 | Configure SSH key authentication for Azure Repos Git | https://learn.microsoft.com/en-us/azure/devops/repos/git/use-ssh-keys-to-authenticate?view=azure-devops |
 | Configure GitHub Advanced Security in Azure Repos | https://learn.microsoft.com/en-us/azure/devops/repos/security/configure-github-advanced-security-features?view=azure-devops |
-| Set up GitHub Advanced Security code scanning in Azure DevOps | https://learn.microsoft.com/en-us/azure/devops/repos/security/github-advanced-security-code-scanning?view=azure-devops |
 | Manage permissions for GitHub Advanced Security in Azure DevOps | https://learn.microsoft.com/en-us/azure/devops/repos/security/github-advanced-security-permissions?view=azure-devops |
 | Control TFVC access with permissions and inheritance | https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/control-access-team-foundation-version-control?view=azure-devops |
 | Permanently destroy TFVC version-controlled files safely | https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/destroy-version-controlled-files?view=azure-devops |
@@ -124,6 +124,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure Azure Repos Git repository-level settings | https://learn.microsoft.com/en-us/azure/devops/repos/git/repository-settings?view=azure-devops |
 | Configure commit message keywords to close Azure Boards work items | https://learn.microsoft.com/en-us/azure/devops/repos/git/resolution-mentions?view=azure-devops |
 | Configure custom CodeQL queries in Azure DevOps | https://learn.microsoft.com/en-us/azure/devops/repos/security/github-advanced-security-code-scanning-queries?view=azure-devops |
+| Configure Code Scanning with GitHub Advanced Security | https://learn.microsoft.com/en-us/azure/devops/repos/security/github-advanced-security-code-scanning?view=azure-devops |
 | Configure dependency scanning for GitHub Advanced Security in Azure DevOps | https://learn.microsoft.com/en-us/azure/devops/repos/security/github-advanced-security-dependency-scanning?view=azure-devops |
 | Understand secret scanning patterns in GitHub Advanced Security | https://learn.microsoft.com/en-us/azure/devops/repos/security/github-advanced-security-secret-scan-patterns?view=azure-devops |
 | Configure secret scanning for GitHub Advanced Security in Azure DevOps | https://learn.microsoft.com/en-us/azure/devops/repos/security/github-advanced-security-secret-scanning?view=azure-devops |
@@ -148,7 +149,6 @@ This skill requires **network access** to fetch documentation content:
 | Create Azure Functions-based custom branch policy for PRs | https://learn.microsoft.com/en-us/azure/devops/repos/git/create-pr-status-server-with-azure-functions?view=azure-devops |
 | Build a Node.js pull request status server for Azure Repos | https://learn.microsoft.com/en-us/azure/devops/repos/git/create-pr-status-server?view=azure-devops |
 | Use Azure DevOps IntelliJ plugin with Git repositories | https://learn.microsoft.com/en-us/azure/devops/repos/git/create-repo-intellij?view=azure-devops |
-| Authenticate Go install with Azure Repos Git | https://learn.microsoft.com/en-us/azure/devops/repos/git/go-install?view=azure-devops |
 | Extend Azure Repos pull request workflow with status and policy | https://learn.microsoft.com/en-us/azure/devops/repos/git/pull-request-status?view=azure-devops |
 | Use Azure CLI and Git to share code in Azure Repos | https://learn.microsoft.com/en-us/azure/devops/repos/git/share-your-code-in-git-cmdline?view=azure-devops |
 | Share Eclipse projects to Azure Repos Git | https://learn.microsoft.com/en-us/azure/devops/repos/git/share-your-code-in-git-eclipse?view=azure-devops |

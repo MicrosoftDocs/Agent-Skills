@@ -38,8 +38,8 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 9
-- **Unchanged**: 2
+- **Updated Pages**: 0
+- **Unchanged**: 11
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-oracle/azure-oracle.csv`
 
@@ -54,27 +54,6 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | *(Unclassified)* | 7 | 63.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [Overview](https://learn.microsoft.com/en-us/azure/oracle/oracle-azure-overview)
-  - Updated: 2023-12-13T12:18:00.000Z → 2026-04-15T22:11:00.000Z
-- [Get started](https://learn.microsoft.com/en-us/azure/oracle/oracle-db/oracle-database-get-started)
-  - Updated: 2024-10-28T22:05:00.000Z → 2026-04-15T22:11:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/oracle/oracle-db/database-overview)
-  - Updated: 2025-04-18T11:09:00.000Z → 2026-04-15T22:11:00.000Z
-- [Region availability](https://learn.microsoft.com/en-us/azure/oracle/oracle-db/oracle-database-regions)
-  - Updated: 2026-03-30T22:11:00.000Z → 2026-04-15T22:11:00.000Z
-- [Network planning](https://learn.microsoft.com/en-us/azure/oracle/oracle-db/oracle-database-network-plan)
-  - Updated: 2025-09-16T17:23:00.000Z → 2026-04-15T22:11:00.000Z
-- [Support](https://learn.microsoft.com/en-us/azure/oracle/oracle-db/oracle-database-support)
-  - Updated: 2025-05-26T05:37:00.000Z → 2026-04-15T22:11:00.000Z
-- [Oracle Exadata Database on Dedicated Infrastructure Logs on Azure for Enhanced Observability](https://learn.microsoft.com/en-us/azure/oracle/oracle-db/oracle-exadata-database-dedicated-infrastructure-logs)
-  - Updated: 2025-08-14T22:10:00.000Z → 2026-04-15T22:11:00.000Z
-- [Onboard Oracle Database@Azure](https://learn.microsoft.com/en-us/azure/oracle/oracle-db/onboard-oracle-database)
-  - Updated: 2024-10-28T22:05:00.000Z → 2026-04-15T22:11:00.000Z
-- [FAQs](https://learn.microsoft.com/en-us/azure/oracle/oracle-db/faq-oracle-database-azure)
-  - Updated: 2024-10-28T22:05:00.000Z → 2026-04-15T22:11:00.000Z
 
 ## Classified Pages
 

@@ -44,8 +44,8 @@ confusable_not_for: Not for Azure Cost Management (use azure-cost-management), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 30
+- **Updated Pages**: 0
+- **Unchanged**: 32
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-advisor/azure-advisor.csv`
 
@@ -62,13 +62,6 @@ confusable_not_for: Not for Azure Cost Management (use azure-cost-management), A
 | *(Unclassified)* | 7 | 21.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [Operational Excellence](https://learn.microsoft.com/en-us/azure/advisor/advisor-reference-operational-excellence-recommendations)
-  - Updated: 2026-02-10T08:00:00.000Z → 2026-04-14T08:00:00.000Z
-- [Reliability](https://learn.microsoft.com/en-us/azure/advisor/advisor-reference-reliability-recommendations)
-  - Updated: 2026-03-24T08:00:00.000Z → 2026-04-14T08:00:00.000Z
 
 ## Classified Pages
 

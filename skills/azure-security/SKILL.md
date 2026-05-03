@@ -1,9 +1,9 @@
 ---
 name: azure-security
-description: Expert knowledge for Azure Security development including troubleshooting, best practices, decision making, security, configuration, integrations & coding patterns, and deployment. Use when securing AKS workloads, SBOMs, Notation image signing, Key Vault/HSM keys, or Customer Lockbox access, and other Azure Security related development tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure Firewall (use azure-firewall), Azure DDos Protection (use azure-ddos-protection), Azure Web Application Firewall (use azure-web-application-firewall).
+description: Expert knowledge for Azure Security development including troubleshooting, best practices, decision making, security, configuration, integrations & coding patterns, and deployment. Use when securing AKS images, Customer Lockbox, Notation-signed containers, Key Vault/HSM keys, or Azure Gov workloads, and other Azure Security related development tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure Sentinel (use azure-sentinel), Azure DDos Protection (use azure-ddos-protection), Azure Web Application Firewall (use azure-web-application-firewall).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-12"
+  generated_at: "2026-05-03"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Security Skill
@@ -25,9 +25,9 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L35-L39 | Diagnosing and resolving common Azure Customer Lockbox issues, including access request problems, approval/denial errors, and configuration or permission-related failures. |
-| Best Practices | L40-L58 | Security hardening checklists and patterns for Azure (IaaS/PaaS), covering identity, network, data encryption, secrets, DNS, and app/database protection best practices |
+| Best Practices | L40-L58 | Security hardening checklists and patterns for Azure identities, networks, IaaS/PaaS apps and data, including encryption, secrets, DNS safety, and secure deployment/operations practices |
 | Decision Making | L59-L63 | Guidance on choosing Azure key management options (Key Vault, managed HSM, app-managed keys), including security, compliance, performance, and integration trade-offs. |
-| Security | L64-L94 | Securing Azure workloads: threat modeling mitigations, AKS image signing, crypto and data protection, ransomware defense, incident response, and Azure-specific security/operational best practices. |
+| Security | L64-L94 | Securing Azure workloads: threat modeling mitigations, auth/crypto/logging best practices, ransomware defense, incident response, Customer Lockbox, AKS image validation, and Azure security tools. |
 | Configuration | L95-L102 | Configuring Azure security features like antimalware, firewalls, container vulnerability tools, security logging/auditing, and upcoming managed TLS/DCV changes |
 | Integrations & Coding Patterns | L103-L107 | Guidance on generating signed SBOMs for container images, attaching them in CI/CD, and integrating software supply chain security into deployment workflows. |
 | Deployment | L108-L114 | Guides for signing and verifying container images with Notation in Azure Pipelines/GitHub Actions, plus comparing security feature availability in Azure vs Azure Government. |
@@ -41,7 +41,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Harden Azure Marketplace images before publishing | https://learn.microsoft.com/en-us/azure/security/fundamentals/azure-marketplace-images |
-| Implement Azure data security and encryption best practices | https://learn.microsoft.com/en-us/azure/security/fundamentals/data-encryption-best-practices |
+| Apply Azure data security and encryption practices | https://learn.microsoft.com/en-us/azure/security/fundamentals/data-encryption-best-practices |
 | Use Azure SQL database security checklist | https://learn.microsoft.com/en-us/azure/security/fundamentals/database-security-checklist |
 | Apply security best practices to Azure IaaS workloads | https://learn.microsoft.com/en-us/azure/security/fundamentals/iaas |
 | Apply Microsoft Entra identity security best practices | https://learn.microsoft.com/en-us/azure/security/fundamentals/identity-management-best-practices |

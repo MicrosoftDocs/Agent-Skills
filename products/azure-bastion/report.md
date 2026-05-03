@@ -48,7 +48,7 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 - **New Pages**: 0
 - **Updated Pages**: 0
 - **Unchanged**: 40
-- **Deleted Pages**: 1
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-bastion/azure-bastion.csv`
 
 ## Classification Statistics
@@ -65,10 +65,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | *(Unclassified)* | 16 | 40.0% |
 
 ## Changes
-
-### Deleted Pages
-
-- ~~Troubleshoot~~ (https://learn.microsoft.com/en-us/troubleshoot/azure/bastion/welcome-azure-bastion)
 
 ## Classified Pages
 

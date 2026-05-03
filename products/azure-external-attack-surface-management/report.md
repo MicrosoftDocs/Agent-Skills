@@ -30,55 +30,93 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 - **Total Pages**: 22
 - **Fetched**: 22
 - **Fetch Failed**: 0
-- **Classified**: 12
-- **Unclassified**: 10
+- **Classified**: 0
+- **Unclassified**: 22
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 22
+- **Updated Pages**: 22
+- **Unchanged**: 0
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-external-attack-surface-management/azure-external-attack-surface-management.csv`
 
 ## Classification Statistics
 
-| Type | Count | Percentage |
-|------|-------|------------|
-| configuration | 10 | 45.5% |
-| integrations | 1 | 4.5% |
-| limits-quotas | 1 | 4.5% |
-| *(Unclassified)* | 10 | 45.5% |
+*No classified pages*
 
 ## Changes
 
+### Updated Pages
+
+- [Overview](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/overview)
+  - Updated: 2026-03-10T22:11:00.000Z → 2026-04-24T17:58:00.000Z
+- [Understanding inventory assets](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/understanding-inventory-assets)
+  - Updated: 2024-12-10T18:02:00.000Z → 2026-04-24T17:58:00.000Z
+- [What is Discovery?](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/what-is-discovery)
+  - Updated: 2024-12-10T18:02:00.000Z → 2026-04-24T17:58:00.000Z
+- [Understanding asset details](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/understanding-asset-details)
+  - Updated: 2024-09-26T22:04:00.000Z → 2026-04-24T17:58:00.000Z
+- [Understanding dashboards](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/understanding-dashboards)
+  - Updated: 2024-08-27T22:05:00.000Z → 2026-04-24T17:58:00.000Z
+- [Using and managing discovery](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/using-and-managing-discovery)
+  - Updated: 2023-12-18T23:04:00.000Z → 2026-04-24T17:58:00.000Z
+- [Modifying inventory assets](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/modifying-inventory-assets)
+  - Updated: 2024-09-26T22:04:00.000Z → 2026-04-24T17:58:00.000Z
+- [Policy engine automation](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/policy-engine)
+  - Updated: 2024-06-18T22:05:00.000Z → 2026-04-24T17:58:00.000Z
+- [Understand billable assets](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/understanding-billable-assets)
+  - Updated: 2023-04-18T17:34:00.000Z → 2026-04-24T17:58:00.000Z
+- [Leveraging data connections](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/data-connections)
+  - Updated: 2025-07-22T17:26:00.000Z → 2026-04-24T17:58:00.000Z
+- [Inventory filters overview](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/inventory-filters)
+  - Updated: 2023-07-11T22:03:00.000Z → 2026-04-24T17:58:00.000Z
+- [Domain asset filters](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/domain-asset-filters)
+  - Updated: 2023-04-17T23:20:00.000Z → 2026-04-24T17:58:00.000Z
+- [Host asset filters](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/host-asset-filters)
+  - Updated: 2023-08-02T11:22:00.000Z → 2026-04-24T17:58:00.000Z
+- [Page asset filters](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/page-asset-filters)
+  - Updated: 2023-07-19T17:27:00.000Z → 2026-04-24T17:58:00.000Z
+- [Contact asset filters](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/contact-asset-filters)
+  - Updated: 2023-04-17T23:20:00.000Z → 2026-04-24T17:58:00.000Z
+- [SSL certificate asset filters](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/ssl-certificate-asset-filters)
+  - Updated: 2023-04-17T23:20:00.000Z → 2026-04-24T17:58:00.000Z
+- [IP address asset filters](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/ip-address-asset-filters)
+  - Updated: 2023-07-19T17:27:00.000Z → 2026-04-24T17:58:00.000Z
+- [IP block asset filters](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/ip-block-asset-filters)
+  - Updated: 2023-04-17T23:20:00.000Z → 2026-04-24T17:58:00.000Z
+- [ASN asset filters](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/asn-asset-filters)
+  - Updated: 2023-04-17T23:20:00.000Z → 2026-04-24T17:58:00.000Z
+- [Deploying the Defender EASM Azure resource](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/deploying-the-defender-easm-azure-resource)
+  - Updated: 2023-10-11T22:21:00.000Z → 2026-04-24T17:58:00.000Z
+- *...and 2 more*
+
 ## Classified Pages
 
-| TOC Title | Type | Confidence | Reason |
-|-----------|------|------------|--------|
-| [ASN asset filters](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/asn-asset-filters) | configuration | 0.80 | ASN asset filters article will specify ASN-related filter fields and operators, a product-specific configuration reference. |
-| [Contact asset filters](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/contact-asset-filters) | configuration | 0.80 | Contact asset filters page describes specific filter fields and operators for contacts, which are configuration parameters unique to this product. |
-| [Domain asset filters](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/domain-asset-filters) | configuration | 0.80 | Domain-specific filter article will list field names, operators, and valid values for domain assets, matching configuration-parameter style documentation. |
-| [Host asset filters](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/host-asset-filters) | configuration | 0.80 | Host asset filters page focuses on filter fields and operators for hosts, which are product-specific configuration options. |
-| [IP address asset filters](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/ip-address-asset-filters) | configuration | 0.80 | IP address asset filters article defines filter fields (IP ranges, status, etc.) and operators, which are product-specific configuration options. |
-| [IP block asset filters](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/ip-block-asset-filters) | configuration | 0.80 | IP block asset filters page similarly documents filter fields and operators for IP blocks, fitting configuration criteria. |
-| [Inventory filters overview](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/inventory-filters) | configuration | 0.80 | Outlines each filter and operator with guidance on input options; this implies tables of filter names, operators, and allowed values, which are concrete configuration parameters. |
-| [Page asset filters](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/page-asset-filters) | configuration | 0.80 | Page asset filters article will enumerate filterable fields and operators for page assets, a configuration reference. |
-| [SSL certificate asset filters](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/ssl-certificate-asset-filters) | configuration | 0.80 | SSL certificate asset filters will list certificate-related fields and operators; this is a structured configuration reference. |
-| [Leveraging data connections](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/data-connections) | integrations | 0.70 | Data connector configuration to Log Analytics and Azure Data Explorer usually includes connector names, parameters, and schema details that are product-specific integration settings. |
-| [Understand billable assets](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/understanding-billable-assets) | limits-quotas | 0.70 | Explains billing based on billable asset counts and a 30-day free trial; such pages typically define what constitutes a billable asset and may include thresholds or counting rules that are numeric and product-specific. |
-| [Policy engine automation](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/policy-engine) | configuration | 0.65 | Describes defining policies based on flexible query parameters to label or change asset states; likely includes specific policy fields, operators, and allowed values, which are product-specific configuration details. |
+*No classified pages*
 
 ## Unclassified Pages
 
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
-| [Deploying the Defender EASM Azure resource](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/deploying-the-defender-easm-azure-resource) | 0.40 | Step-by-step creation of a Defender EASM Azure resource and trial info; summary does not indicate deployment matrices, limits, or detailed config tables beyond standard portal steps. |
-| [Microsoft Security Copilot and Defender EASM](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/easm-copilot) | 0.35 | Explains using Security Copilot with Defender EASM data at a high level; summary does not show concrete API parameters, config tables, or error codes. |
-| [Modifying inventory assets](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/modifying-inventory-assets) | 0.35 | Covers modifying inventory assets (states, labels, non-applicable CVEs) as workflow guidance; no specific config tables or error mappings evident. |
-| [Understanding asset details](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/understanding-asset-details) | 0.35 | Describes asset details and metadata types (Whois, SSL info) but summary suggests UI/field description, not config tables or quotas. |
-| [Using and managing discovery](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/using-and-managing-discovery) | 0.35 | Explains using and managing discovery at a feature level; summary does not show concrete config parameters or limits. |
-| [Understanding inventory assets](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/understanding-inventory-assets) | 0.30 | Describes asset discovery conceptually; no detailed configuration tables, limits, or troubleshooting content indicated. |
-| [What is Discovery?](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/what-is-discovery) | 0.30 | Explains what discovery is and how it works conceptually; lacks numeric limits, config parameters, or decision matrices. |
-| [Discovering your attack surface](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/discovering-your-attack-surface) | 0.25 | Describes preconfigured attack surfaces conceptually; no evidence of numeric limits, configuration parameters, or troubleshooting mappings. |
-| [Understanding dashboards](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/understanding-dashboards) | 0.25 | Dashboard overview and purpose; no indication of numeric thresholds, decision matrices, or product-specific troubleshooting. |
-| [Overview](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/overview) | 0.10 | High-level product overview of Microsoft Defender EASM without specific limits, configuration parameters, error codes, or decision matrices; primarily conceptual and marketing-style description. |
+| [ASN asset filters](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/asn-asset-filters) | 0.45 | ASN asset filters describe searching for ASNs; no detailed configuration, limits, or troubleshooting mappings. |
+| [Contact asset filters](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/contact-asset-filters) | 0.45 | Contact asset filters focus on how to search for contacts; no expert-level limits, security roles, or integration parameters. |
+| [Domain asset filters](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/domain-asset-filters) | 0.45 | Domain asset filters article focuses on which filters exist and how to search; not structured as config/limits/decision matrices per the required categories. |
+| [Host asset filters](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/host-asset-filters) | 0.45 | Host asset filters article is similar to other filter pages—search operators and fields, but no numeric limits, error codes, or tiered constraints. |
+| [IP address asset filters](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/ip-address-asset-filters) | 0.45 | IP address asset filters article is about finding subsets of IPs; no numeric quotas, config parameter tables, or decision matrices. |
+| [IP block asset filters](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/ip-block-asset-filters) | 0.45 | IP block asset filters similarly focus on search/filter usage; lacks the specific expert-knowledge patterns required for any sub-skill type. |
+| [Inventory filters overview](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/inventory-filters) | 0.45 | Describes inventory filter functionality and operators conceptually; likely lists filter names but not as configuration with defaults/ranges or numeric limits. |
+| [Page asset filters](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/page-asset-filters) | 0.45 | Page asset filters describe search fields and operators; this is UI/query usage, not configuration tables or troubleshooting mappings. |
+| [SSL certificate asset filters](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/ssl-certificate-asset-filters) | 0.45 | SSL certificate asset filters describe search filters for certs; not configuration/limits/troubleshooting content as defined. |
+| [Understand billable assets](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/understanding-billable-assets) | 0.40 | Explains billing model and 30-day free trial but only at a high level; no detailed pricing tables, tier limits, or quantified decision guidance. |
+| [Deploying the Defender EASM Azure resource](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/deploying-the-defender-easm-azure-resource) | 0.35 | Step-by-step creation of a Defender EASM Azure resource and mention of free trial; deployment-like tutorial but without tier matrices or constraints. |
+| [Leveraging data connections](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/data-connections) | 0.35 | Mentions data connections to Log Analytics and Azure Data Explorer; summary suggests a feature overview, not detailed integration parameter references. |
+| [Microsoft Security Copilot and Defender EASM](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/easm-copilot) | 0.35 | Explains using Microsoft Security Copilot with Defender EASM data; appears as a feature overview/integration usage without detailed parameter tables or error codes. |
+| [Modifying inventory assets](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/modifying-inventory-assets) | 0.35 | Covers modifying inventory assets (states, labels, non-applicable CVEs) as workflow guidance, not as structured configuration or limits. |
+| [Policy engine automation](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/policy-engine) | 0.35 | Policy engine automation is described conceptually (label assets, change states based on queries); no explicit parameter tables, limits, or error mappings. |
+| [Discovering your attack surface](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/discovering-your-attack-surface) | 0.30 | Describes preconfigured attack surfaces and discovery at a conceptual level; no detailed configuration, limits, or decision guidance. |
+| [Understanding asset details](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/understanding-asset-details) | 0.30 | Describes asset details and metadata types (Whois, SSL signature algorithms) but not as structured configuration, limits, or troubleshooting content. |
+| [Understanding inventory assets](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/understanding-inventory-assets) | 0.30 | Describes inventory asset concepts and discovery behavior at a high level; no detailed configuration tables, limits, or troubleshooting mappings. |
+| [Using and managing discovery](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/using-and-managing-discovery) | 0.30 | Explains using and managing discovery in general terms; appears procedural/tutorial without detailed config tables or numeric constraints. |
+| [What is Discovery?](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/what-is-discovery) | 0.30 | Explains what discovery is and how it works conceptually; lacks specific numeric limits, config parameters, or decision criteria. |
+| [Overview](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/overview) | 0.20 | High-level product overview of Defender EASM; no concrete limits, configs, error codes, or decision matrices. |
+| [Understanding dashboards](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/understanding-dashboards) | 0.20 | Dashboard overview and purpose; no specific configuration parameters, limits, or decision matrices. |

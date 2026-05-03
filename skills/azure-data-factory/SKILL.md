@@ -1,9 +1,9 @@
 ---
 name: azure-data-factory
-description: Expert knowledge for Azure Data Factory development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing ADF pipelines, Mapping Data Flows, SHIR/SSIS IR, secure VNet/Private Link setups, or CI/CD deployments, and other Azure Data Factory related development tasks. Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure Databricks (use azure-databricks), Azure Stream Analytics (use azure-stream-analytics), Azure Data Explorer (use azure-data-explorer).
+description: Expert knowledge for Azure Data Factory development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building ADF pipelines, mapping data flows, SHIR/Azure-SSIS IR, SAP CDC, or SSIS-to-ADF migrations, and other Azure Data Factory related development tasks. Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure Databricks (use azure-databricks), Azure Stream Analytics (use azure-stream-analytics), Azure Logic Apps (use azure-logic-apps).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-12"
+  generated_at: "2026-05-03"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Data Factory Skill
@@ -26,12 +26,12 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L37-L90 | Diagnosing and fixing ADF issues: connector/format errors, copy & data flow performance, pipelines/triggers, SHIR/SSIS IR problems, security/access, and interpreting failure logs. |
 | Best Practices | L91-L113 | Performance, DataOps, and reliability best practices for ADF: tuning data flows/copy, optimizing sources/sinks/IR, handling schema drift/errors, and migrating data (HDFS, Netezza, S3) to Azure. |
-| Decision Making | L114-L134 | Guidance on ADF architecture, runtimes, connector upgrades, cost optimization, and migration/modernization of pipelines, SSIS, Synapse, and data warehouses to Azure/Fabric |
+| Decision Making | L114-L134 | Guidance for architectural and cost decisions in ADF: choosing runtimes/compute/connectors, planning upgrades/migrations (SSIS, Synapse, Fabric), and optimizing pricing and reserved capacity. |
 | Architecture & Design Patterns | L135-L145 | Patterns and architectures for ADF: efficient mapping data flows, metadata‑driven copy, SSIS IR with SQL MI/failover/VNet, Cosmos DB migration, and SAP CDC design. |
 | Limits & Quotas | L146-L150 | Info on ADF connector lifecycle stages and timelines, plus how reservation discounts work for Mapping Data Flows and how they affect cost and capacity planning |
 | Security | L151-L181 | Securing Data Factory with identity, encryption, Key Vault, and Azure Policy, plus network controls like VNets, Private Link, firewalls, private endpoints, and secure runtimes (Azure-SSIS, self-hosted). |
-| Configuration | L182-L295 | Configuring ADF artifacts and runtime: pipelines, activities, data flows, triggers, copy behavior, formats, IRs (Azure/self-hosted/SSIS), monitoring, logging, parameters, and DevOps setup. |
-| Integrations & Coding Patterns | L296-L482 | Connector how-tos, patterns, and activities for copying/transforming data between ADF and many services (databases, SaaS apps, files, Fabric, Databricks, SSIS, ML, Synapse) using data flows and SDKs. |
+| Configuration | L182-L307 | Configuring ADF pipelines, activities, data flows, triggers, runtimes, connectors, formats, monitoring, parameters, and integration runtimes (Azure, self-hosted, Azure-SSIS, SAP CDC). |
+| Integrations & Coding Patterns | L308-L482 | Using ADF connectors, activities, and templates to integrate hundreds of data sources, run SSIS/Databricks/Synapse/ML jobs, and build mapping data flow expressions and functions. |
 | Deployment | L483-L496 | CI/CD and deployment for ADF: ARM/linked templates, Azure DevOps pipelines, hotfix flows, pre/post scripts, IR automation, SSIS job migration, and networked IR migration. |
 
 ### Troubleshooting
@@ -191,6 +191,8 @@ This skill requires **network access** to fetch documentation content:
 | Define and configure datasets in Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/concepts-datasets-linked-services |
 | Configure integration runtimes in Data Factory and Synapse | https://learn.microsoft.com/en-us/azure/data-factory/concepts-integration-runtime |
 | Define and configure linked services in Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/concepts-linked-services |
+| Configure Azure Data Factory Amazon Redshift connector | https://learn.microsoft.com/en-us/azure/data-factory/connector-amazon-redshift |
+| Configure Azure Data Factory Oracle connector settings | https://learn.microsoft.com/en-us/azure/data-factory/connector-oracle |
 | Override default ARM template parameters for ADF CI/CD | https://learn.microsoft.com/en-us/azure/data-factory/continuous-integration-delivery-resource-manager-custom-parameters |
 | Configure Append Variable activity in Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/control-flow-append-variable-activity |
 | Configure Data Flow activity execution | https://learn.microsoft.com/en-us/azure/data-factory/control-flow-execute-data-flow-activity |
@@ -226,22 +228,32 @@ This skill requires **network access** to fetch documentation content:
 | Create and configure self-hosted integration runtime | https://learn.microsoft.com/en-us/azure/data-factory/create-self-hosted-integration-runtime |
 | Create shared self-hosted IR with PowerShell | https://learn.microsoft.com/en-us/azure/data-factory/create-shared-self-hosted-integration-runtime-powershell |
 | Configure cross-tenant Azure DevOps connections for ADF | https://learn.microsoft.com/en-us/azure/data-factory/cross-tenant-connections-to-azure-devops |
-| Configure Aggregate transformation in mapping data flows | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-aggregate |
-| Use Alter Row transformation for database updates | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-alter-row |
-| Configure Assert transformation for data quality checks | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-assert |
+| Configure Aggregate transformation in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-aggregate |
+| Configure Alter row transformation for database updates | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-alter-row |
+| Set and use Assert transformation in data flows | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-assert |
 | Use Cast transformation to change column data types | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-cast |
-| Configure Conditional Split transformation in mapping data flows | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-conditional-split |
-| Configure Derived Column transformation in mapping data flows | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-derived-column |
+| Configure Conditional split transformation in data flows | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-conditional-split |
+| Configure Derived column transformation in mapping data flows | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-derived-column |
 | Configure Exists transformation for row matching | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-exists |
-| Configure Filter transformation for row selection | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-filter |
+| Configure Filter transformation to remove rows | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-filter |
 | Configure Flatten transformation for hierarchical data | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-flatten |
-| Use Flowlet transformation for reusable logic in data flows | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-flowlet |
-| Configure Join transformation in mapping data flows | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-join |
-| Configure Lookup transformation for reference data in data flows | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-lookup |
+| Use Flowlet transformation to reuse data flow logic | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-flowlet |
+| Configure Join transformation to combine data sources | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-join |
+| Configure Lookup transformations in mapping data flows | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-lookup |
 | Configure multiple branches in mapping data flows | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-new-branch |
+| Configure Parse transformation in ADF mapping data flows | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-parse |
+| Configure Pivot transformation in ADF mapping data flows | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-pivot |
+| Configure Rank transformation in ADF mapping data flows | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-rank |
 | Author and configure mapping data flow script | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-script |
-| Configure Select transformation in ADF data flows | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-select |
-| Configure source transformation in ADF data flows | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-source |
+| Configure Select transformation in ADF mapping data flows | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-select |
+| Configure sink settings in ADF mapping data flows | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-sink |
+| Configure Sort transformation in ADF mapping data flows | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-sort |
+| Configure source settings in ADF mapping data flows | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-source |
+| Configure Stringify transformation in ADF mapping data flows | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-stringify |
+| Configure Surrogate Key transformation in ADF mapping data flows | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-surrogate-key |
+| Configure Union transformation in ADF mapping data flows | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-union |
+| Configure Unpivot transformation in ADF mapping data flows | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-unpivot |
+| Configure Window transformation in ADF mapping data flows | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-window |
 | Configure Delete activity for file cleanup | https://learn.microsoft.com/en-us/azure/data-factory/delete-activity |
 | Configure Avro format options in ADF and Synapse | https://learn.microsoft.com/en-us/azure/data-factory/format-avro |
 | Configure binary dataset format in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/format-binary |
@@ -302,7 +314,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure ADF connector for Amazon Marketplace Web Service | https://learn.microsoft.com/en-us/azure/data-factory/connector-amazon-marketplace-web-service |
 | Integrate Amazon RDS for Oracle with Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-amazon-rds-for-oracle |
 | Copy data from Amazon RDS for SQL Server with ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-amazon-rds-for-sql-server |
-| Copy data from Amazon Redshift using ADF/Synapse | https://learn.microsoft.com/en-us/azure/data-factory/connector-amazon-redshift |
 | Copy data from S3-compatible storage using ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-amazon-s3-compatible-storage |
 | Copy and transform data in Amazon S3 with ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-amazon-simple-storage-service |
 | Transform AppFigures data with ADF Data Flows | https://learn.microsoft.com/en-us/azure/data-factory/connector-appfigures |
@@ -363,7 +374,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure Azure Data Factory OData connector | https://learn.microsoft.com/en-us/azure/data-factory/connector-odata |
 | Use ODBC connector in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-odbc |
 | Copy and transform Microsoft 365 data with Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-office-365 |
-| Configure Azure Data Factory Oracle connector | https://learn.microsoft.com/en-us/azure/data-factory/connector-oracle |
 | Connect Azure Data Factory to Oracle Cloud Storage | https://learn.microsoft.com/en-us/azure/data-factory/connector-oracle-cloud-storage |
 | Connect Azure Data Factory to Oracle Eloqua | https://learn.microsoft.com/en-us/azure/data-factory/connector-oracle-eloqua |
 | Connect Azure Data Factory to Oracle Responsys | https://learn.microsoft.com/en-us/azure/data-factory/connector-oracle-responsys |
@@ -419,19 +429,9 @@ This skill requires **network access** to fetch documentation content:
 | Use date and time functions in ADF mapping flows | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-date-time-functions |
 | Use expression functions in ADF mapping data flows | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-expression-functions |
 | Reference for all ADF mapping data flow functions | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-expressions-usage |
-| Call external endpoints from mapping data flows | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-external-call |
+| Call external endpoints from ADF mapping data flows | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-external-call |
 | Use map functions in mapping data flows | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-map-functions |
 | Use metafunctions in mapping data flows | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-metafunctions |
-| Configure parse transformation in ADF mapping data flows | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-parse |
-| Use pivot transformation in ADF mapping data flows | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-pivot |
-| Configure rank transformation in ADF mapping data flows | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-rank |
-| Configure sink transformation targets in ADF data flows | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-sink |
-| Use sort transformation in ADF mapping data flows | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-sort |
-| Stringify complex data types in ADF data flows | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-stringify |
-| Generate surrogate keys in ADF mapping data flows | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-surrogate-key |
-| Union multiple streams in ADF mapping data flows | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-union |
-| Use unpivot transformation in ADF mapping data flows | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-unpivot |
-| Configure window transformation in ADF mapping data flows | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-window |
 | Use window functions in mapping data flows | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-window-functions |
 | Use mapping data flow transformation functions | https://learn.microsoft.com/en-us/azure/data-factory/data-transformation-functions |
 | Automate SSISDB log cleanup with Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/how-to-clean-up-ssisdb-logs-with-elastic-jobs |

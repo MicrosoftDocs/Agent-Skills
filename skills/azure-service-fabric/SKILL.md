@@ -1,9 +1,9 @@
 ---
 name: azure-service-fabric
-description: Expert knowledge for Azure Service Fabric development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building Service Fabric clusters, Reliable Services/Actors, Cluster Resource Manager policies, reverse proxy, or sfctl/PowerShell automation, and other Azure Service Fabric related development tasks. Not for Azure App Service (use azure-app-service), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Container Apps (use azure-container-apps), Azure Cloud Services (use azure-cloud-services).
+description: Expert knowledge for Azure Service Fabric development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when working with Service Fabric clusters, Reliable Services/Actors, reverse proxy, sfctl/PowerShell, or EventStore APIs, and other Azure Service Fabric related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure App Service (use azure-app-service), Azure Container Apps (use azure-container-apps), Azure Virtual Machines (use azure-virtual-machines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-05"
+  generated_at: "2026-05-03"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Service Fabric Skill
@@ -25,7 +25,7 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L37-L59 | Diagnosing and fixing Service Fabric issues: connectivity, upgrades, health, logging/monitoring, container and Java logs, reverse proxy, Reliable Services/Actors, and local cluster setup. |
-| Best Practices | L60-L93 | Best-practice guidance for designing, scaling, upgrading, testing, monitoring, backing up, and operating Service Fabric clusters, services, actors, and Reliable Collections in production. |
+| Best Practices | L60-L93 | Best-practice guidance for designing, testing, operating, and upgrading Service Fabric apps/clusters, including reliability, backup/restore, actors, networking, health, and migration from Cloud Services. |
 | Decision Making | L94-L105 | Guidance on planning Service Fabric clusters: OS/disk choices, stateless node types, capacity/durability sizing, migration targets, and supported cluster versions. |
 | Architecture & Design Patterns | L106-L118 | Designing and tuning Service Fabric cluster behavior: Cluster Resource Manager architecture, metrics balancing/defrag, movement costs, service affinity, API gateway, and networking patterns. |
 | Limits & Quotas | L119-L123 | Configuring Service Fabric app upgrade settings: health policies, rolling upgrade behavior, monitoring, and timeout parameters to control safe, reliable deployments. |
@@ -61,7 +61,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Best practices to migrate Cloud Services to Service Fabric | https://learn.microsoft.com/en-us/azure/service-fabric/cloud-services-to-service-fabric-migration-guide |
-| Enable automatic OS patching for Service Fabric nodes | https://learn.microsoft.com/en-us/azure/service-fabric/how-to-patch-cluster-nodes-windows |
+| Patch Windows OS on Azure Service Fabric clusters | https://learn.microsoft.com/en-us/azure/service-fabric/how-to-patch-cluster-nodes-windows |
 | Apply data serialization best practices for Service Fabric upgrades | https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-application-upgrade-data-serialization |
 | Avoid invalid Service Fabric ARM cluster configurations | https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-azure-resource-manager-guardrails |
 | Design Azure Service Fabric applications effectively | https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-best-practices-applications |

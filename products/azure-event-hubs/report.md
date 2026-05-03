@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-05-03'
 category_descriptions:
   integrations: Patterns and code for integrating Event Hubs with .NET, Kafka (clients,
     Streams, Connect, Debezium), Flink, Spark, Akka, schema/JSON registry, and adding
@@ -9,9 +9,9 @@ category_descriptions:
     (transient/permanent).'
   decision-making: Guidance on choosing the right Event Hubs tier and planning migrations
     from Apache Kafka, including feature, cost, and compatibility considerations.
-  security: 'Security, auth, and compliance for Event Hubs: Entra ID, SAS, RBAC, managed
-    identities, encryption, TLS, network isolation (VNet, Private Link, NSP, firewalls),
-    and Azure Policy governance.'
+  security: 'Authentication, authorization, encryption, and network protection for
+    Event Hubs: Entra ID, SAS, RBAC, managed identities, CMK, TLS, firewalls, VNets,
+    Private Link, and security policies.'
   configuration: 'Configuring Event Hubs behavior: partitions, retention, compaction,
     scaling, replication, metrics/logs, governance (application groups), and Premium
     processing units.'
@@ -30,30 +30,28 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Event Hubs development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  using Kafka clients/Streams, .NET SDK, Flink/Spark, geo-disaster recovery, or Premium
-  processing units, and other Azure Event Hubs related development tasks. Not for
+  using Kafka clients/Streams, Flink/Spark, Entra ID/RBAC, geo-disaster recovery,
+  or Kafka mirroring, and other Azure Event Hubs related development tasks. Not for
   Azure Service Bus (use azure-service-bus), Azure Event Grid (use azure-event-grid),
-  Azure Notification Hubs (use azure-notification-hubs), Azure Stream Analytics (use
-  azure-stream-analytics).
-use_when: Use when using Kafka clients/Streams, .NET SDK, Flink/Spark, geo-disaster
-  recovery, or Premium processing units, and other Azure Event Hubs related development
-  tasks.
+  Azure Stream Analytics (use azure-stream-analytics), Azure Functions (use azure-functions).
+use_when: Use when using Kafka clients/Streams, Flink/Spark, Entra ID/RBAC, geo-disaster
+  recovery, or Kafka mirroring, and other Azure Event Hubs related development tasks.
 confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Event
-  Grid (use azure-event-grid), Azure Notification Hubs (use azure-notification-hubs),
-  Azure Stream Analytics (use azure-stream-analytics).
+  Grid (use azure-event-grid), Azure Stream Analytics (use azure-stream-analytics),
+  Azure Functions (use azure-functions).
 ---
 # Azure Event Hubs Crawl Report
 
 ## Summary
 
-- **Total Pages**: 111
-- **Fetched**: 111
+- **Total Pages**: 112
+- **Fetched**: 112
 - **Fetch Failed**: 0
-- **Classified**: 72
+- **Classified**: 73
 - **Unclassified**: 39
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
 - **Unchanged**: 111
 - **Deleted Pages**: 0
@@ -65,16 +63,20 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 |------|-------|------------|
 | architecture-patterns | 4 | 3.6% |
 | best-practices | 2 | 1.8% |
-| configuration | 9 | 8.1% |
+| configuration | 9 | 8.0% |
 | decision-making | 2 | 1.8% |
 | deployment | 4 | 3.6% |
-| integrations | 14 | 12.6% |
+| integrations | 14 | 12.5% |
 | limits-quotas | 5 | 4.5% |
-| security | 23 | 20.7% |
-| troubleshooting | 9 | 8.1% |
-| *(Unclassified)* | 39 | 35.1% |
+| security | 24 | 21.4% |
+| troubleshooting | 9 | 8.0% |
+| *(Unclassified)* | 39 | 34.8% |
 
 ## Changes
+
+### New Pages
+
+- [Confidential computing](https://learn.microsoft.com/en-us/azure/event-hubs/confidential-computing)
 
 ## Classified Pages
 
@@ -138,6 +140,7 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 | [Security controls by Azure Policy](https://learn.microsoft.com/en-us/azure/event-hubs/security-controls-policy) | security | 0.70 | Lists specific Azure Policy built-ins and compliance controls for Event Hubs; includes concrete policy definitions and mappings to standards. |
 | [Using Apache Kafka Mirror Maker 1](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-kafka-mirror-maker-tutorial) | deployment | 0.70 | Shows how to configure MirrorMaker 1 to mirror Kafka into Event Hubs; includes product-specific deployment and configuration details. |
 | [Using Apache Kafka Mirror Maker 2](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-kafka-mirrormaker-2-tutorial) | deployment | 0.70 | Tutorial for using MirrorMaker 2 with Event Hubs; includes concrete configuration parameters and constraints for this replication deployment. |
+| [Confidential computing](https://learn.microsoft.com/en-us/azure/event-hubs/confidential-computing) | security | 0.68 | Page is focused on configuring confidential computing for Event Hubs Dedicated namespaces, which is a product-specific security feature. It likely includes concrete enablement steps, specific configuration options, and constraints tied to this capability (for example, which SKUs support it, how to turn it on, and any required settings). This is security-focused configuration rather than a generic overview, so it best fits the security sub-skill. |
 | [Add custom data to events](https://learn.microsoft.com/en-us/azure/event-hubs/add-custom-data-event) | integrations | 0.65 | Explains how to attach key-value metadata to EventData objects and how consumers use it; includes product-specific event structure and coding patterns. |
 | [Application groups](https://learn.microsoft.com/en-us/azure/event-hubs/resource-governance-overview) | limits-quotas | 0.65 | Resource governance with application groups implies applying quotas and access policies per group; this page likely includes group-level quota settings and constraints specific to Premium/Dedicated tiers. |
 | [Client-side schema enforcement](https://learn.microsoft.com/en-us/azure/event-hubs/schema-registry-client-side-enforcement) | integrations | 0.65 | Describes concrete client-side validation/serialization patterns against Schema Registry when producing/consuming events; includes product-specific usage details beyond generic concepts. |

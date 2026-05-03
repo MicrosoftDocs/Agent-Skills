@@ -48,8 +48,8 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 51
+- **Updated Pages**: 0
+- **Unchanged**: 52
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-energy-data-services/azure-energy-data-services.csv`
 
@@ -67,11 +67,6 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 | *(Unclassified)* | 18 | 34.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [Change tier for seismic workloads](https://learn.microsoft.com/en-us/azure/energy-data-services/tutorial-seismic-change-tier)
-  - Updated: 2026-03-10T16:12:00.000Z → 2026-04-13T06:11:00.000Z
 
 ## Classified Pages
 

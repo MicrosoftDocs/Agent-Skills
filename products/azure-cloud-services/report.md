@@ -46,8 +46,8 @@ confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtu
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 43
+- **Updated Pages**: 0
+- **Unchanged**: 45
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cloud-services/azure-cloud-services.csv`
 
@@ -65,13 +65,6 @@ confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtu
 | *(Unclassified)* | 14 | 31.1% |
 
 ## Changes
-
-### Updated Pages
-
-- [Guest OS release news](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/cloud-services-guestos-update-matrix)
-  - Updated: 2026-02-25T08:00:00.000Z → 2026-04-14T08:00:00.000Z
-- [Guest OS patches](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/cloud-services-guestos-microsoft-security-response-center-releases)
-  - Updated: 2026-02-26T08:00:00.000Z → 2026-04-14T08:00:00.000Z
 
 ## Classified Pages
 

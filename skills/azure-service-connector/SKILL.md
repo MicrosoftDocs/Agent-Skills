@@ -1,9 +1,9 @@
 ---
 name: azure-service-connector
-description: Expert knowledge for Azure Service Connector development including troubleshooting, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when wiring Azure compute to Cosmos DB, Key Vault, Redis, Kafka, OpenAI, or external services via Service Connector, and other Azure Service Connector related development tasks. Not for Azure App Service (use azure-app-service), Azure Functions (use azure-functions), Azure Logic Apps (use azure-logic-apps), Azure API Management (use azure-api-management).
+description: Expert knowledge for Azure Service Connector development including troubleshooting, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when wiring Azure compute to databases, messaging, storage, AI services, or Key Vault via Service Connector, and other Azure Service Connector related development tasks. Not for Azure API Management (use azure-api-management), Azure App Service (use azure-app-service), Azure Functions (use azure-functions), Azure Logic Apps (use azure-logic-apps).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-19"
+  generated_at: "2026-05-03"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Service Connector Skill
@@ -28,8 +28,8 @@ This skill requires **network access** to fetch documentation content:
 | Limits & Quotas | L39-L43 | Limits on number/types of connections, supported scenarios, and guidance to mitigate Service Connector constraints or unsupported configurations. |
 | Security | L44-L50 | Service Connector security, required permissions and Microsoft Entra roles, and how to configure and choose authentication methods for connected services |
 | Configuration | L51-L57 | How to define and retrieve Service Connector connection settings, choose and configure auth methods, and supply correct CLI/IaC parameters for creating connections |
-| Integrations & Coding Patterns | L58-L87 | How to connect Azure compute to databases, messaging, storage, AI, and external services (Cosmos DB, Kafka, Redis, Key Vault, OpenAI, etc.) using Service Connector integration patterns |
-| Deployment | L88-L91 | Info on where Service Connector is regionally supported per compute service and how to create connections using infrastructure-as-code tools. |
+| Integrations & Coding Patterns | L58-L90 | How to connect Azure compute to databases, messaging, storage, AI, and config services using Service Connector, including auth patterns, setup steps, and integration examples. |
+| Deployment | L91-L94 | Info on where Service Connector is regionally supported per compute service and how to create connections using infrastructure-as-code tools. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -84,6 +84,9 @@ This skill requires **network access** to fetch documentation content:
 | Integrate Azure Queue Storage via Service Connector | https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-storage-queue |
 | Connect Azure Table Storage via Service Connector | https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-storage-table |
 | Connect Azure Web PubSub using Service Connector | https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-web-pubsub |
+| Connect JBoss EAP on App Service to MySQL with managed identity | https://learn.microsoft.com/en-us/azure/service-connector/tutorial-java-jboss-connect-managed-identity-mysql-database |
+| Store Service Connector settings in Azure App Configuration | https://learn.microsoft.com/en-us/azure/service-connector/tutorial-portal-app-configuration-store |
+| Use Service Connector with AKS workload identity for Storage | https://learn.microsoft.com/en-us/azure/service-connector/tutorial-python-aks-storage-workload-identity |
 
 ### Deployment
 | Topic | URL |

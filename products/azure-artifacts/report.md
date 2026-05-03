@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-12'
+generated_at: '2026-05-03'
 category_descriptions:
   limits-quotas: Storage quotas, free allocation, and per-package size/count limits
     in Azure Artifacts, plus how to monitor, manage, and publish packages within those
@@ -37,13 +37,13 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 - **Total Pages**: 73
 - **Fetched**: 73
 - **Fetch Failed**: 0
-- **Classified**: 60
-- **Unclassified**: 13
+- **Classified**: 58
+- **Unclassified**: 15
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 73
+- **Updated Pages**: 3
+- **Unchanged**: 70
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-artifacts/azure-artifacts.csv`
 
@@ -52,15 +52,24 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 | Type | Count | Percentage |
 |------|-------|------------|
 | best-practices | 3 | 4.1% |
-| configuration | 7 | 9.6% |
+| configuration | 6 | 8.2% |
 | decision-making | 3 | 4.1% |
 | deployment | 1 | 1.4% |
-| integrations | 39 | 53.4% |
+| integrations | 38 | 52.1% |
 | limits-quotas | 4 | 5.5% |
 | security | 3 | 4.1% |
-| *(Unclassified)* | 13 | 17.8% |
+| *(Unclassified)* | 15 | 20.5% |
 
 ## Changes
+
+### Updated Pages
+
+- [Use upstream sources with public feeds](https://learn.microsoft.com/en-us/azure/devops/artifacts/how-to/public-feeds-upstream-sources?view=azure-devops)
+  - Updated: 2025-11-11T02:02:00.000Z → 2026-05-01T01:05:00.000Z
+- [Use packages from Google Maven Repository](https://learn.microsoft.com/en-us/azure/devops/artifacts/maven/google-maven?view=azure-devops)
+  - Updated: 2026-02-17T18:05:00.000Z → 2026-04-20T17:05:00.000Z
+- [Share packages publicly](https://learn.microsoft.com/en-us/azure/devops/artifacts/tutorials/share-packages-publicly?view=azure-devops)
+  - Updated: 2025-11-11T02:02:00.000Z → 2026-05-01T01:05:00.000Z
 
 ## Classified Pages
 
@@ -89,7 +98,6 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 | [Restore Maven packages](https://learn.microsoft.com/en-us/azure/devops/artifacts/maven/install?view=azure-devops) | integrations | 0.70 | How-to page for connecting Maven to Azure Artifacts feeds; typically includes product-specific repository URLs, settings.xml snippets, and authentication parameters that are configuration/integration details rather than generic Maven knowledge. |
 | [Set up upstream sources](https://learn.microsoft.com/en-us/azure/devops/artifacts/how-to/set-up-upstream-sources?view=azure-devops) | configuration | 0.70 | How-to for setting up upstream sources; typically includes feed settings, allowed values, and UI/REST configuration options specific to Azure Artifacts. |
 | [Use packages from Crates.io](https://learn.microsoft.com/en-us/azure/devops/artifacts/cargo/cargo-upstream-source?view=azure-devops) | integrations | 0.70 | Guides configuring Cargo to use Crates.io through Azure Artifacts; includes registry configuration and Azure-specific endpoints. |
-| [Use packages from Google Maven Repository](https://learn.microsoft.com/en-us/azure/devops/artifacts/maven/google-maven?view=azure-devops) | integrations | 0.70 | Shows how to configure Google Maven as an upstream source; includes Azure feed configuration and Maven/Gradle repository entries unique to this integration. |
 | [Use packages from Gradle Plugins](https://learn.microsoft.com/en-us/azure/devops/artifacts/maven/gradle-plugins?view=azure-devops) | integrations | 0.70 | Documents how to add Gradle Plugins as an upstream source; likely includes specific repository URLs and feed configuration options. |
 | [Use packages from JitPack](https://learn.microsoft.com/en-us/azure/devops/artifacts/maven/jitpack-upstream?view=azure-devops) | integrations | 0.70 | Integration-focused article for JitPack; includes Azure Artifacts feed settings and Maven/Gradle configuration details. |
 | [Use packages from Maven Central](https://learn.microsoft.com/en-us/azure/devops/artifacts/maven/upstream-sources?view=azure-devops) | integrations | 0.70 | Covers Maven settings for using Maven Central through Azure Artifacts; includes repository IDs, URLs, and snapshot behavior specific to the service. |
@@ -116,7 +124,6 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 | [Safeguard against malicious public packages](https://learn.microsoft.com/en-us/azure/devops/artifacts/concepts/upstream-behavior?view=azure-devops) | security | 0.65 | Focuses on controlling access to public registries and protecting from malicious packages; likely includes feed-level security options and permission settings specific to Azure Artifacts. |
 | [Share PowerShell modules with Azure Artifacts](https://learn.microsoft.com/en-us/azure/devops/artifacts/tutorials/private-powershell-library?view=azure-devops) | integrations | 0.65 | Shows how to register an Azure Artifacts feed as a PowerShell repository; includes Register-PSRepository parameters and feed URLs specific to Azure. |
 | [Use packages from PowerShell Gallery](https://learn.microsoft.com/en-us/azure/devops/artifacts/tutorials/powershell-upstream-source?view=azure-devops) | integrations | 0.65 | Shows how to configure PowerShell Gallery as upstream; includes repository registration commands and Azure feed URLs. |
-| [Use upstream sources with public feeds](https://learn.microsoft.com/en-us/azure/devops/artifacts/how-to/public-feeds-upstream-sources?view=azure-devops) | configuration | 0.65 | Covers enabling and adding upstream sources on public feeds; likely documents specific feed options and constraints unique to public feeds. |
 | [npm](https://learn.microsoft.com/en-us/azure/devops/artifacts/get-started-npm?view=azure-devops) | integrations | 0.65 | Shows npmrc configuration, registry URLs, and scopes for Azure Artifacts; these are concrete integration settings. |
 | [Install NuGet packages with Visual Studio](https://learn.microsoft.com/en-us/azure/devops/artifacts/nuget/install-nuget-packages-with-visual-studio?view=azure-devops) | integrations | 0.60 | Visual Studio integration; includes configuration of package sources pointing to Azure Artifacts feeds. |
 | [Migrate from MyGet to Azure Artifacts](https://learn.microsoft.com/en-us/azure/devops/artifacts/tutorials/migrate-packages?view=azure-devops) | decision-making | 0.60 | Migration guide using a specific PowerShell module; includes product-specific steps and considerations for moving feeds. |
@@ -135,12 +142,14 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 | [Symbols overview](https://learn.microsoft.com/en-us/azure/devops/artifacts/concepts/symbols?view=azure-devops) | 0.40 | Conceptual explanation of symbol files and Azure Artifacts symbol server; summary does not indicate detailed configuration parameters or error mappings. |
 | [Package badges](https://learn.microsoft.com/en-us/azure/devops/artifacts/package-badges?view=azure-devops) | 0.30 | Describes using badges; likely UI-driven and conceptual, without deep config matrices or numeric constraints. |
 | [Upstream from internal feeds](https://learn.microsoft.com/en-us/azure/devops/artifacts/how-to/upstream-internal-feed?view=azure-devops) | 0.30 | Primarily a how-to/tutorial for configuring an internal feed as an upstream source in Azure Artifacts; it does not emphasize numeric limits, detailed configuration parameter tables, error-code-based troubleshooting, or decision matrices. The content is procedural rather than expert reference material. |
-| [Share packages publicly](https://learn.microsoft.com/en-us/azure/devops/artifacts/tutorials/share-packages-publicly?view=azure-devops) | 0.25 | Tutorial on sharing packages publicly; summary doesn’t indicate detailed limits, config tables, or error codes. |
 | [What are feed views?](https://learn.microsoft.com/en-us/azure/devops/artifacts/concepts/views?view=azure-devops) | 0.25 | Conceptual explanation of feed views; summary doesn’t show numeric thresholds or config tables. |
 | [Publish your first package](https://learn.microsoft.com/en-us/azure/devops/artifacts/get-started-artifacts-ai?view=azure-devops) | 0.20 | Tutorial-style first package publish; summary shows no limits, config tables, or product-specific error codes. |
 | [Search for packages in upstream sources](https://learn.microsoft.com/en-us/azure/devops/artifacts/how-to/search-upstream?view=azure-devops) | 0.20 | Page is a how-to for searching and using upstream sources in Azure Artifacts. It appears to be procedural/tutorial content without detailed limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. No strong evidence of product-specific numeric limits, RBAC role lists, or configuration option tables that would qualify as expert knowledge under the defined categories. |
+| [Share packages publicly](https://learn.microsoft.com/en-us/azure/devops/artifacts/tutorials/share-packages-publicly?view=azure-devops) | 0.20 | Tutorial-style page about sharing Azure Artifacts packages via public feeds; primarily procedural guidance without detailed limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. Content is not focused on numeric quotas, specialized configuration references, or other expert-only details. |
 | [Universal Packages upstream sources](https://learn.microsoft.com/en-us/azure/devops/artifacts/universal-packages/universal-packages-upstream?view=azure-devops) | 0.20 | Page is a how-to for configuring upstream sources for Universal Packages. It describes steps and concepts but does not include numeric limits/quotas, detailed configuration parameter tables with defaults/ranges, error-code-based troubleshooting, or decision matrices. Content is primarily procedural/tutorial rather than expert reference data. |
+| [Use packages from Google Maven Repository](https://learn.microsoft.com/en-us/azure/devops/artifacts/maven/google-maven?view=azure-devops) | 0.20 | Describes consuming packages from Google Maven Repository via Azure Artifacts upstream sources; likely a step-by-step tutorial without configuration parameter tables, limits, or troubleshooting matrices. |
 | [Use packages from PyPI](https://learn.microsoft.com/en-us/azure/devops/artifacts/python/use-packages-from-pypi?view=azure-devops) | 0.20 | Primarily a how-to/tutorial for consuming PyPI packages via Azure Artifacts using upstream sources and command-line steps. It does not focus on limits, configuration matrices, security roles, or detailed troubleshooting with error codes. The content is procedural rather than reference-style expert knowledge as defined by the sub-skill types. |
+| [Use upstream sources with public feeds](https://learn.microsoft.com/en-us/azure/devops/artifacts/how-to/public-feeds-upstream-sources?view=azure-devops) | 0.20 | How-to guide for enabling and using upstream sources in a public Azure Artifacts feed; appears to be procedural without detailed config tables, limits, or product-specific error mappings. |
 | [Package notifications](https://learn.microsoft.com/en-us/azure/devops/artifacts/how-to/follow-package-notifications?view=azure-devops) | 0.15 | Explains notification behavior; summary shows no numeric limits, config tables, or error mappings. |
 | [What are feeds?](https://learn.microsoft.com/en-us/azure/devops/artifacts/concepts/feeds?view=azure-devops) | 0.15 | Conceptual explanation of feeds and types; no evidence of limits, config matrices, or troubleshooting. |
 | [Key concepts](https://learn.microsoft.com/en-us/azure/devops/artifacts/artifacts-key-concepts?view=azure-devops) | 0.10 | Key concepts/overview page; no indication of numeric limits, config parameters, or troubleshooting content. |

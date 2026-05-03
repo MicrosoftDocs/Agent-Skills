@@ -1,9 +1,9 @@
 ---
 name: azure-private-link
-description: Expert knowledge for Azure Private Link development including best practices, decision making, architecture & design patterns, limits & quotas, security, and configuration. Use when configuring Private Endpoints, DNS and Private Resolver, NSP migrations, Azure Firewall traffic control, or High Scale limits, and other Azure Private Link related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure VPN Gateway (use azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute), Azure Virtual WAN (use azure-virtual-wan).
+description: Expert knowledge for Azure Private Link development including best practices, decision making, architecture & design patterns, limits & quotas, security, and configuration. Use when configuring Private Endpoints, DNS and Azure Private Resolver, High Scale limits, RBAC, or Azure Firewall traffic control, and other Azure Private Link related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure VPN Gateway (use azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-19"
+  generated_at: "2026-05-03"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Private Link Skill
@@ -25,7 +25,7 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Best Practices | L34-L38 | DNS design and configuration guidance for private endpoints, including zone setup, name resolution patterns, split-horizon DNS, and avoiding common DNS misconfigurations with Private Link |
-| Decision Making | L39-L44 | Guidance on planning/migrating to Network Security Perimeter and designing Azure Private Link architectures optimized for security, segmentation, and cost. |
+| Decision Making | L39-L44 | Guidance on choosing perimeter access modes and designing Azure Private Link setups, focusing on security tradeoffs, cost optimization, and migration/transition considerations. |
 | Architecture & Design Patterns | L45-L49 | Designing DNS architectures for Private Endpoints using Azure Private Resolver, including name resolution patterns, forwarding rules, and integration with on-premises or hybrid networks |
 | Limits & Quotas | L50-L55 | Info on Private Link service availability per resource type and how to raise per‑VNet Private Endpoint limits using High Scale configuration |
 | Security | L56-L62 | RBAC setup for Private Link/Endpoint and Network Security Perimeter operations, plus inspecting and controlling Private Endpoint traffic with Azure Firewall. |
@@ -39,7 +39,7 @@ This skill requires **network access** to fetch documentation content:
 ### Decision Making
 | Topic | URL |
 |-------|-----|
-| Plan and transition Azure resources to Network Security Perimeter | https://learn.microsoft.com/en-us/azure/private-link/network-security-perimeter-transition |
+| Choose and transition Azure network security perimeter access modes | https://learn.microsoft.com/en-us/azure/private-link/network-security-perimeter-transition |
 | Optimize Azure Private Link design for cost and security | https://learn.microsoft.com/en-us/azure/private-link/private-link-cost-optimization |
 
 ### Architecture & Design Patterns

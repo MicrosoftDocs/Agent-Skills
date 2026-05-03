@@ -1,9 +1,9 @@
 ---
 name: azure-sap
-description: Expert knowledge for SAP HANA on Azure Large Instances development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing HANA Large Instances with SDAF/ACSS, Azure Monitor for SAP, Key Vault/RBAC, HA/DR clusters, or RISE, and other SAP HANA on Azure Large Instances related development tasks. Not for Azure Large Instances (use azure-large-instances), Azure Virtual Machines (use azure-virtual-machines), Azure Baremetal Infrastructure (use azure-baremetal-infrastructure), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines).
+description: Expert knowledge for SAP HANA on Azure Large Instances development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing HANA Large Instances, HA/DR clusters, Entra ID/RBAC, Azure Monitor for SAP, or RISE integrations, and other SAP HANA on Azure Large Instances related development tasks. Not for Azure Large Instances (use azure-large-instances), Azure Virtual Machines (use azure-virtual-machines), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Baremetal Infrastructure (use azure-baremetal-infrastructure).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-19"
+  generated_at: "2026-05-03"
   generator: "docs2skills/1.0.0"
 ---
 # SAP HANA on Azure Large Instances Skill
@@ -24,23 +24,23 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L48 | Diagnosing and fixing SAP on Azure issues: deployment automation, BPS data extraction (ADF/Fabric), SAP Insights/AMS, Azure Monitor for SAP, VM scale sets, and VM extensions. |
+| Troubleshooting | L37-L48 | Diagnosing and fixing SAP on Azure issues: deployment automation, data extraction pipelines (ADF/Fabric), Business Process Solutions, AMS Insights, Azure Monitor for SAP, VM scale sets, and SAP VM extensions. |
 | Best Practices | L49-L60 | Best practices for testing, validating, and optimizing SAP on Azure: HA/DR design, automated test frameworks, Quality Insights checks, Azure Files/DFS-N tuning, and VM scale set deployment. |
-| Decision Making | L61-L77 | Guidance on planning SAP on Azure: choosing infra, VM/storage options, DR, data models and tiering, SAP version support, data extraction, and app/network architecture decisions. |
-| Architecture & Design Patterns | L78-L105 | Architecting SAP on Azure: HA/DR patterns, DB choices (HANA, SQL, Oracle, Db2, ASE, MaxDB), RISE integration, zoning/latency, networking, security, and multi-region/VM designs. |
-| Limits & Quotas | L106-L110 | SAP on Azure limits: supported platforms/features for SAP testing automation, Azure Monitor for SAP quotas/behavior, and sizing/HA deployment constraints using Azure Files SMB. |
-| Security | L111-L126 | Security, identity, and access design for SAP on Azure: Key Vault secrets, RBAC, TLS, private endpoints, encrypted storage, secure DB providers, and Entra ID/RISE integration. |
-| Configuration | L127-L200 | Configuring and automating SAP on Azure: Terraform/SDAF setup, Azure Center registration and lifecycle, monitoring (Azure Monitor), HA/DR and storage layouts, and OS/DB-specific HA cluster designs. |
-| Integrations & Coding Patterns | L201-L214 | Patterns and automation for integrating SAP HANA/Azure LI with Azure Monitor, ADF, RISE, Salesforce, Exchange, Universal Print, VIS APIs, and SAP Principal Propagation. |
-| Deployment | L215-L243 | Deploying and automating SAP on Azure: control plane/workload zones, SDAF scripts/pipelines, ACSS-based S/4HANA/NetWeaver/BO/B1 installs, HA/DR, and planning checklists. |
+| Decision Making | L61-L74 | Guidance on planning SAP on Azure: choosing infra, VM/storage options, DR, data models and tiering, SAP version support, data extraction, and app/network architecture decisions. |
+| Architecture & Design Patterns | L75-L102 | Architecting SAP on Azure: HA/DR patterns, DB choices (HANA, SQL, Oracle, Db2, ASE, MaxDB), RISE integration, zoning/latency, networking, security, and multi-region/VM designs. |
+| Limits & Quotas | L103-L107 | SAP on Azure limits: supported platforms/features for SAP testing automation, Azure Monitor for SAP quotas/behavior, and sizing/HA deployment constraints using Azure Files SMB. |
+| Security | L108-L123 | Security, identity, and access design for SAP on Azure: RBAC, Entra ID/SPNs, TLS, private endpoints, encrypted storage, and secure monitoring providers (Azure Monitor, Db2, SQL Server, RISE). |
+| Configuration | L124-L200 | Configuring SAP on Azure: automation framework, networking, storage, HA/DR clusters, monitoring, and Azure Center/Monitor integrations for HANA, NetWeaver, S/4HANA, and related components |
+| Integrations & Coding Patterns | L201-L213 | Automating SAP on Azure with VIS (CLI, PowerShell, REST), integrating monitoring, email, printing, OData/Power Query, and connecting SAP/RISE to Azure services. |
+| Deployment | L214-L240 | Deploying and tearing down SAP landscapes on Azure: automation scripts, DevOps pipelines, HA/DR patterns, VM/ANF/WSFC setups, and workload-specific guides (S/4HANA, B1, BO, NetWeaver, HANA). |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
 | Troubleshoot SAP Deployment Automation Framework issues on Azure | https://learn.microsoft.com/en-us/azure/sap/automation/troubleshooting |
-| Troubleshoot and monitor BPS data extraction with ADF | https://learn.microsoft.com/en-us/azure/sap/business-process-solutions/monitor-data-extraction |
-| Monitor and troubleshoot BPS data extraction in Fabric | https://learn.microsoft.com/en-us/azure/sap/business-process-solutions/monitor-fabric-data-extraction-processing |
-| Troubleshoot common issues in SAP Business Process Solutions | https://learn.microsoft.com/en-us/azure/sap/business-process-solutions/troubleshooting |
+| Monitor and troubleshoot Azure Data Factory extraction | https://learn.microsoft.com/en-us/azure/sap/business-process-solutions/monitor-data-extraction |
+| Monitor and troubleshoot Fabric data extraction pipelines | https://learn.microsoft.com/en-us/azure/sap/business-process-solutions/monitor-fabric-data-extraction-processing |
+| Diagnose and fix common Business Process Solutions issues | https://learn.microsoft.com/en-us/azure/sap/business-process-solutions/troubleshooting |
 | Enable SAP Insights for workload troubleshooting in AMS | https://learn.microsoft.com/en-us/azure/sap/monitor/enable-sap-insights |
 | Resolve common Azure Monitor for SAP issues | https://learn.microsoft.com/en-us/azure/sap/monitor/faq |
 | Resolve common issues with SAP VM scale sets | https://learn.microsoft.com/en-us/azure/sap/workloads/virtual-machine-scale-set-sap-faq |
@@ -61,10 +61,7 @@ This skill requires **network access** to fetch documentation content:
 ### Decision Making
 | Topic | URL |
 |-------|-----|
-| Choose new vs existing infrastructure for SAP automation | https://learn.microsoft.com/en-us/azure/sap/automation/new-vs-existing |
 | Plan SAP Deployment Automation Framework usage on Azure | https://learn.microsoft.com/en-us/azure/sap/automation/plan-deployment |
-| Use Business Process Solutions templates for analytics and AI agents | https://learn.microsoft.com/en-us/azure/sap/business-process-solutions/business-templates |
-| Select and understand data models in Business Process Solutions | https://learn.microsoft.com/en-us/azure/sap/business-process-solutions/data-models-business-process-solutions |
 | Plan and configure DR for Azure Center for SAP solutions | https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/compliance-cedr |
 | Select certified SAP configurations on Azure | https://learn.microsoft.com/en-us/azure/sap/workloads/certifications |
 | Choose methods to extract SAP data into Microsoft Fabric | https://learn.microsoft.com/en-us/azure/sap/workloads/extract-sap-data |
@@ -112,8 +109,8 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Set SAP deployment SPN secrets in Azure Key Vault | https://learn.microsoft.com/en-us/azure/sap/automation/bash/set-secrets |
+| Understand Business Process Solutions compliance attestation | https://learn.microsoft.com/en-us/azure/sap/business-process-solutions/attestation |
 | Configure Azure RBAC for Azure Center for SAP solutions | https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/manage-with-azure-rbac |
-| Configure Azure networking and security for S/4HANA | https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/prepare-network |
 | Configure TLS 1.2 security for Azure Monitor for SAP | https://learn.microsoft.com/en-us/azure/sap/monitor/enable-tls-azure-monitor-sap-solutions |
 | Enable Trusted Access and private endpoints for Azure Monitor for SAP solutions | https://learn.microsoft.com/en-us/azure/sap/monitor/enable-trusted-access |
 | Create secure IBM Db2 provider for Azure Monitor for SAP | https://learn.microsoft.com/en-us/azure/sap/monitor/provider-ibm-db2 |
@@ -138,15 +135,18 @@ This skill requires **network access** to fetch documentation content:
 | Configure SDAF control plane web application | https://learn.microsoft.com/en-us/azure/sap/automation/configure-webapp |
 | Extend SAP Deployment Automation Framework configuration | https://learn.microsoft.com/en-us/azure/sap/automation/extensibility |
 | Customize Azure resource naming in SAP automation | https://learn.microsoft.com/en-us/azure/sap/automation/naming-module |
-| Configure Insights and templates in Business Process Solutions | https://learn.microsoft.com/en-us/azure/sap/business-process-solutions/configure-insights |
-| Configure SAP source systems with Open Mirroring | https://learn.microsoft.com/en-us/azure/sap/business-process-solutions/configure-source-system-with-open-mirroring |
+| Use shell script reference for SAP deployment automation | https://learn.microsoft.com/en-us/azure/sap/automation/reference-bash |
+| Configure insights, semantic models, and report refresh | https://learn.microsoft.com/en-us/azure/sap/business-process-solutions/configure-insights |
+| Configure Salesforce as a Business Process Solutions source | https://learn.microsoft.com/en-us/azure/sap/business-process-solutions/configure-salesforce-source-system |
+| Configure SAP source systems with Azure Data Factory | https://learn.microsoft.com/en-us/azure/sap/business-process-solutions/configure-source-system-with-data-factory |
+| Configure SAP S/4HANA and ECC with open mirroring | https://learn.microsoft.com/en-us/azure/sap/business-process-solutions/configure-source-system-with-open-mirroring |
+| Configure datasets and tables in Business Process Solutions | https://learn.microsoft.com/en-us/azure/sap/business-process-solutions/manage-datasets |
 | Prepare SAP installation media for Azure Center for SAP | https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/get-sap-installation-media |
 | Monitor SAP systems with Azure Center for SAP | https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/monitor-portal |
-| Start and stop SAP systems via Azure CLI in Azure Center | https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/quick-stop-start-sap-cli |
-| Start and stop SAP systems via Azure PowerShell in Azure Center | https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/quick-stop-start-sap-powershell |
+| Configure virtual network for S/4HANA on Azure | https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/prepare-network |
 | Register existing SAP systems in Azure Center using Azure CLI | https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/quickstart-register-system-cli |
 | Register existing SAP systems in Azure Center using PowerShell | https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/quickstart-register-system-powershell |
-| Register existing SAP systems in Azure Center via portal | https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/register-existing-system |
+| Register existing SAP systems in Azure Center | https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/register-existing-system |
 | Control SAP system lifecycle via Azure VIS | https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/start-stop-sap-systems |
 | Reference of logs and metrics for Azure Monitor for SAP solutions | https://learn.microsoft.com/en-us/azure/sap/monitor/data-reference |
 | Configure HA Pacemaker provider for Azure Monitor for SAP | https://learn.microsoft.com/en-us/azure/sap/monitor/provider-ha-pacemaker-cluster |
@@ -169,7 +169,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure HA SAP NetWeaver on RHEL with Azure NetApp Files | https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-netapp-files |
 | Configure HA SAP NetWeaver on RHEL with Azure Files NFS | https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-nfs-azure-files |
 | Configure Pacemaker clusters on RHEL for Azure SAP | https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-pacemaker |
-| Configure SAP PAS and AAS on RHEL ASCS/SCS HA VMs | https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-with-dialog-instance |
+| Configure SAP PAS and AAS on RHEL HA VMs | https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-with-dialog-instance |
 | Configure SAP HANA ASCS/ERS high availability on RHEL VMs | https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-with-hana-ascs-ers-dialog-instance |
 | Configure HA SAP NetWeaver on Azure VMs with SLES | https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-suse |
 | Configure HA SAP NetWeaver on SLES with Azure NetApp Files | https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-suse-netapp-files |
@@ -203,9 +203,8 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Integrate Azure Monitor for SAP with automation | https://learn.microsoft.com/en-us/azure/sap/automation/integration-azure-monitor-sap |
 | Run SDAF Ansible playbooks to install SAP | https://learn.microsoft.com/en-us/azure/sap/automation/run-ansible |
-| Download SAP media using automation framework playbooks | https://learn.microsoft.com/en-us/azure/sap/automation/software |
-| Configure Salesforce as a source system for Business Process Solutions | https://learn.microsoft.com/en-us/azure/sap/business-process-solutions/configure-salesforce-source-system |
-| Integrate SAP source systems with Business Process Solutions via Azure Data Factory | https://learn.microsoft.com/en-us/azure/sap/business-process-solutions/configure-source-system-with-data-factory |
+| Control SAP systems with Azure CLI VIS | https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/quick-stop-start-sap-cli |
+| Control SAP systems with Azure PowerShell VIS | https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/quick-stop-start-sap-powershell |
 | Control SAP and VM lifecycle via VIS REST APIs | https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/stop-start-sap-and-underlying-vm |
 | Integrate SAP ABAP outbound email with Exchange Online | https://learn.microsoft.com/en-us/azure/sap/workloads/exchange-online-integration-sap-email-outbound |
 | Configure SAP Principal Propagation for live OData with Power Query | https://learn.microsoft.com/en-us/azure/sap/workloads/expose-sap-odata-to-power-query |
@@ -225,13 +224,12 @@ This skill requires **network access** to fetch documentation content:
 | Configure Azure DevOps for SAP automation pipelines | https://learn.microsoft.com/en-us/azure/sap/automation/configure-devops |
 | Deploy control plane for SAP automation framework | https://learn.microsoft.com/en-us/azure/sap/automation/deploy-control-plane |
 | Deploy SAP infrastructure with SDAF and Azure DevOps | https://learn.microsoft.com/en-us/azure/sap/automation/devops-tutorial |
-| Use Bash scripts to deploy SAP automation framework | https://learn.microsoft.com/en-us/azure/sap/automation/reference-bash |
 | Check SAP Deployment Automation support matrix | https://learn.microsoft.com/en-us/azure/sap/automation/supportability |
-| Deploy Business Process Solutions workload item in Fabric | https://learn.microsoft.com/en-us/azure/sap/business-process-solutions/deploy-workload-item |
-| Run data extraction and processing pipelines in Business Process Solutions | https://learn.microsoft.com/en-us/azure/sap/business-process-solutions/run-extraction-data-processing |
-| Deploy S/4HANA infrastructure with Azure Center for SAP | https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/deploy-s4hana |
+| Deploy Business Process Solutions workload items in Fabric | https://learn.microsoft.com/en-us/azure/sap/business-process-solutions/deploy-workload-item |
+| Run data extraction and processing in Business Process Solutions | https://learn.microsoft.com/en-us/azure/sap/business-process-solutions/run-extraction-data-processing |
+| Deploy S/4HANA infrastructure with Azure Center | https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/deploy-s4hana |
 | Install SAP software on ACSS-managed systems | https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/install-software |
-| Create distributed HA SAP system with ACSS using Azure CLI | https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/quickstart-create-high-availability-namecustom |
+| Deploy distributed HA SAP infrastructure via Azure CLI | https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/quickstart-create-high-availability-namecustom |
 | Deploy SAP Business One on Azure Virtual Machines | https://learn.microsoft.com/en-us/azure/sap/workloads/business-one-azure |
 | Deploy SAP BusinessObjects BI on Azure for Linux | https://learn.microsoft.com/en-us/azure/sap/workloads/businessobjects-deployment-guide-linux |
 | Deploy SAP BusinessObjects BI on Azure for Windows | https://learn.microsoft.com/en-us/azure/sap/workloads/businessobjects-deployment-guide-windows |
@@ -239,5 +237,4 @@ This skill requires **network access** to fetch documentation content:
 | Deploy SAP NetWeaver on Azure Linux VMs | https://learn.microsoft.com/en-us/azure/sap/workloads/deployment-guide |
 | Prepare and deploy SAP HANA on Azure VMs | https://learn.microsoft.com/en-us/azure/sap/workloads/hana-get-started |
 | Deploy HA SAP NetWeaver on Azure NetApp Files SMB | https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-windows-netapp-files-smb |
-| Onboard SAP Edge Integration Cell to Azure AKS/Arc | https://learn.microsoft.com/en-us/azure/sap/workloads/sap-edge-integration-cell-with-azure |
 | Install SAP NetWeaver HA on WSFC with file share | https://learn.microsoft.com/en-us/azure/sap/workloads/sap-high-availability-installation-wsfc-file-share |

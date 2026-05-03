@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-05'
+generated_at: '2026-05-03'
 category_descriptions:
   configuration: 'Configuring and tuning HDInsight clusters: networking/VPN, Ambari/Hive/Spark/HBase
     settings, autoscale, monitoring/logging, SSH/Jupyter/VS Code access, and script-based
@@ -45,14 +45,14 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 
 ## Summary
 
-- **Total Pages**: 425
-- **Fetched**: 425
+- **Total Pages**: 426
+- **Fetched**: 426
 - **Fetch Failed**: 0
 - **Classified**: 334
-- **Unclassified**: 91
+- **Unclassified**: 92
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
 - **Unchanged**: 425
 - **Deleted Pages**: 0
@@ -64,16 +64,20 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 |------|-------|------------|
 | architecture-patterns | 11 | 2.6% |
 | best-practices | 38 | 8.9% |
-| configuration | 53 | 12.5% |
+| configuration | 53 | 12.4% |
 | decision-making | 21 | 4.9% |
 | deployment | 11 | 2.6% |
-| integrations | 64 | 15.1% |
+| integrations | 64 | 15.0% |
 | limits-quotas | 4 | 0.9% |
 | security | 40 | 9.4% |
 | troubleshooting | 92 | 21.6% |
-| *(Unclassified)* | 91 | 21.4% |
+| *(Unclassified)* | 92 | 21.6% |
 
 ## Changes
+
+### New Pages
+
+- [Reliability in HDInsight](https://learn.microsoft.com/en-us/azure/hdinsight/reliability-hdinsight)
 
 ## Classified Pages
 
@@ -502,6 +506,7 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | [Create Apache Kafka cluster - PowerShell](https://learn.microsoft.com/en-us/azure/hdinsight/kafka/apache-kafka-quickstart-powershell) | 0.20 | Quickstart using PowerShell; procedural creation and basic usage, not configuration reference or troubleshooting. |
 | [Open-source software support](https://learn.microsoft.com/en-us/azure/hdinsight/open-source-software) | 0.20 | High-level description of open-source support scope; more policy/overview than technical configuration or troubleshooting. |
 | [Preview features](https://learn.microsoft.com/en-us/azure/hdinsight/what-are-preview-features) | 0.20 | Conceptual explanation of preview features and limitations; no detailed limits tables, configs, or product-specific procedures. |
+| [Reliability in HDInsight](https://learn.microsoft.com/en-us/azure/hdinsight/reliability-hdinsight) | 0.20 | High-level reliability overview for Azure HDInsight (availability zones, cross-region recovery, business continuity) without visible concrete limits, configuration tables, error codes, or decision matrices. Content appears conceptual rather than detailed, product-specific expert guidance. |
 | [Subscribe to HDInsight release notes GitHub repo](https://learn.microsoft.com/en-us/azure/hdinsight/subscribe-to-hdi-release-notes-repo) | 0.20 | Simple how-to for subscribing to GitHub release notes; no product-specific limits, configs, or troubleshooting details. |
 | [What is Apache HBase in HDInsight?](https://learn.microsoft.com/en-us/azure/hdinsight/hbase/apache-hbase-overview) | 0.20 | Overview of HBase on HDInsight; conceptual description without detailed configuration or limits. |
 | [What is Apache Hadoop in HDInsight?](https://learn.microsoft.com/en-us/azure/hdinsight/hadoop/apache-hadoop-introduction) | 0.20 | High-level introduction to Hadoop, MapReduce, and HDInsight; conceptual overview without detailed configuration, limits, or troubleshooting mappings. |

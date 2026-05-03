@@ -1,9 +1,9 @@
 ---
 name: azure-confidential-computing
-description: Expert knowledge for Azure Confidential Computing development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using SGX/SEV-SNP VMs, AKS confidential containers, SKR with Key Vault/Fortanix, vTPM, or attestation APIs, and other Azure Confidential Computing related development tasks. Not for Azure Virtual Enclaves (use azure-virtual-enclaves), Azure Virtual Machines (use azure-virtual-machines), Azure Dedicated HSM (use azure-dedicated-hsm), Azure Attestation (use azure-attestation).
+description: Expert knowledge for Azure Confidential Computing development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using SGX/SEV-SNP VMs, AKS confidential containers, attestation/SKR flows, Fortanix CCM, or vTPM/Key Vault, and other Azure Confidential Computing related development tasks. Not for Azure Virtual Enclaves (use azure-virtual-enclaves), Azure Virtual Machines (use azure-virtual-machines), Azure Key Vault (use azure-key-vault), Azure Dedicated HSM (use azure-dedicated-hsm).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-12"
+  generated_at: "2026-05-03"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Confidential Computing Skill
@@ -24,7 +24,7 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L41 | Troubleshooting AKS confidential node issues: common errors, limitations, configuration and deployment problems, and FAQs about setup, security, and workload compatibility. |
+| Troubleshooting | L37-L41 | Diagnosing and fixing common Azure Kubernetes Service (AKS) confidential node issues, including deployment failures, node attestation problems, and enclave/TEE runtime errors. |
 | Best Practices | L42-L46 | FAQ and guidance on using Azure confidential VMs: supported scenarios, security guarantees, limitations, performance, pricing, and operational best practices. |
 | Decision Making | L47-L59 | Guidance on choosing Azure confidential computing options: VMs (AMD/Intel), containers, GPUs, deployment models, capabilities, products, and use cases for secure workloads. |
 | Architecture & Design Patterns | L60-L69 | Architectural patterns and design guidance for using Azure confidential VMs, SGX enclaves, AKS, and multi-party analytics to build secure AI and containerized workloads. |
@@ -37,7 +37,7 @@ This skill requires **network access** to fetch documentation content:
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
-| FAQ for AKS confidential computing nodes | https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-nodes-aks-faq |
+| Resolve common AKS confidential node issues | https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-nodes-aks-faq |
 
 ### Best Practices
 | Topic | URL |
