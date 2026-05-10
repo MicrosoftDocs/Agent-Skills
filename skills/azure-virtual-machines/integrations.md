@@ -10,7 +10,6 @@
 | Move Azure Marketplace VM to another subscription via CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/azure-cli-change-subscription-marketplace |
 | Create Azure VM restore points using REST APIs | https://learn.microsoft.com/en-us/azure/virtual-machines/create-restore-points |
 | Configure Azure Backup extension for SQL Server on Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/backup-azure-sql-server-running-azure-vm |
-| Configure Azure Key Vault VM extension for Windows certificate refresh | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/key-vault-windows |
 | Monitor Azure VM availability with Project Flash via Azure Monitor metric | https://learn.microsoft.com/en-us/azure/virtual-machines/flash-azure-monitor |
 | Monitor Azure VM availability with Project Flash via Azure Resource Graph | https://learn.microsoft.com/en-us/azure/virtual-machines/flash-azure-resource-graph |
 | Monitor Azure VM availability with Project Flash via Resource Health | https://learn.microsoft.com/en-us/azure/virtual-machines/flash-azure-resource-health |
@@ -26,6 +25,8 @@
 | Get Azure VM maintenance notifications with PowerShell | https://learn.microsoft.com/en-us/azure/virtual-machines/maintenance-notifications-powershell |
 | Query Azure VM availability data using Azure Resource Graph | https://learn.microsoft.com/en-us/azure/virtual-machines/resource-graph-availability |
 | Query Azure VM resources with Azure Resource Graph | https://learn.microsoft.com/en-us/azure/virtual-machines/resource-graph-samples |
+| Configure Azure VM scheduled events with Event Grid | https://learn.microsoft.com/en-us/azure/virtual-machines/scheduled-events-event-grid |
+| Use Azure Resource Graph for VM scheduled events | https://learn.microsoft.com/en-us/azure/virtual-machines/scheduled-events-resource-graph |
 | CLI scripts to copy managed disks across subscriptions | https://learn.microsoft.com/en-us/azure/virtual-machines/scripts/copy-managed-disks-to-same-or-different-subscription |
 | CLI script to export managed disk VHDs to storage accounts | https://learn.microsoft.com/en-us/azure/virtual-machines/scripts/copy-managed-disks-vhd-to-storage-account |
 | CLI scripts to copy managed disk snapshots across subscriptions | https://learn.microsoft.com/en-us/azure/virtual-machines/scripts/copy-snapshot-to-same-or-different-subscription |

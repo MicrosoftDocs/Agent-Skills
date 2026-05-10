@@ -1,9 +1,9 @@
 ---
 name: azure-synapse-analytics
-description: Expert knowledge for Azure Synapse Analytics development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing Synapse workspaces, Spark pools, dedicated/serverless SQL, ELT/PolyBase loads, or Synapse Link, and other Azure Synapse Analytics related development tasks. Not for Azure Data Factory (use azure-data-factory), Azure Data Explorer (use azure-data-explorer), Azure Databricks (use azure-databricks), Azure Stream Analytics (use azure-stream-analytics).
+description: Expert knowledge for Azure Synapse Analytics development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing Synapse SQL pools, Spark pools, serverless SQL, Synapse Link, or ELT/PolyBase pipelines, and other Azure Synapse Analytics related development tasks. Not for Azure Analysis Services (use azure-analysis-services), Azure Data Explorer (use azure-data-explorer), Azure Data Factory (use azure-data-factory), Azure Databricks (use azure-databricks).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-03"
+  generated_at: "2026-05-10"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Synapse Analytics Skill
@@ -24,15 +24,15 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L62 | Diagnosing and fixing Synapse issues: workspace/tenant moves, Spark jobs and libraries, SQL pools and queries, Synapse Link, Studio/storage connectivity, and common errors/timeouts. |
-| Best Practices | L63-L121 | Best practices for Synapse: Spark tuning, Delta/Hyperspace optimization, dedicated/serverless SQL design and performance, T-SQL patterns, indexing/stats, and Netezza/Oracle/Teradata migration guidance. |
-| Decision Making | L122-L141 | Guidance on choosing Synapse components, planning migrations (Netezza/Oracle/Teradata/SQL pools), sizing and cost management, Spark lifecycle, table distribution, and using tools like Advisor and query history. |
-| Architecture & Design Patterns | L142-L162 | Architecture and design guidance for Synapse workspaces, SQL/serverless/Spark pools, data warehouse migrations, table design, ELT/PolyBase loading, and workload management. |
-| Limits & Quotas | L163-L172 | Synapse SQL pool limits: maintenance windows, memory/concurrency by performance level, capacity caps, temp table behavior, serverless Delta Lake v1 querying, and Synapse Link feature limits/issues. |
-| Security | L173-L231 | Securing Synapse workspaces end-to-end: auth and RBAC, network isolation, private endpoints, encryption, data exfiltration, policies, and secure access to storage, SQL, Spark, and migration scenarios. |
-| Configuration | L232-L280 | Configuring Synapse workspaces, Spark pools, and SQL pools: environments, scaling, libraries, monitoring/metrics, backups/restore, workload management, and integrations (Purview, AML, SynapseML). |
-| Integrations & Coding Patterns | L281-L318 | Integrating Synapse with Spark, SQL pools, ML, Cosmos DB, storage, and third‑party tools, including connectors, logging/monitoring, automation APIs, and data movement patterns. |
-| Deployment | L319-L332 | Deploying and managing Synapse workspaces and dedicated SQL pools: ARM/Bicep templates, CI/CD, source control, restore points, maintenance windows, and automated compute management. |
+| Troubleshooting | L37-L66 | Diagnosing and fixing Synapse workspace, SQL pool, Spark, Studio, and Synapse Link issues, including connectivity, performance, job failures, tenant moves, and workload misclassification. |
+| Best Practices | L67-L128 | Best practices for Synapse performance, SQL/T-SQL patterns, Spark optimization, indexing/statistics, data loading, and migrating/modernizing from Netezza, Oracle, and Teradata. |
+| Decision Making | L129-L149 | Guidance for choosing Synapse components, sizing and cost models, planning/assessing environments, and tools/steps to migrate or upgrade data warehouses to Synapse SQL. |
+| Architecture & Design Patterns | L150-L169 | Architecture and design guidance for Synapse workspaces, SQL/serverless/Spark pools, data warehouse migrations, table/distribution/partition strategies, ELT/PolyBase loading, and workload management. |
+| Limits & Quotas | L170-L178 | SQL and Synapse Link limits: memory/concurrency caps, dedicated pool capacity/quotas, serverless SQL constraints for Delta Lake v1, and feature/known issues for Synapse Link (Cosmos DB, SQL). |
+| Security | L179-L239 | Securing Synapse workspaces end-to-end: auth and RBAC, network and private endpoints, firewall and data exfiltration, encryption/TDE, policies, managed identities, and secure data access/migration. |
+| Configuration | L240-L288 | Configuring Synapse workspaces, Spark pools, and SQL pools: runtimes, scaling, libraries, monitoring/metrics, backups/restore, workload management, and integrations (Purview, AML). |
+| Integrations & Coding Patterns | L289-L338 | Patterns and code to integrate Synapse (Spark, serverless, dedicated SQL) with storage, ML, monitoring, external tools, and other Azure services, plus querying external data formats. |
+| Deployment | L339-L346 | Guides for deploying Synapse workspaces and dedicated SQL pools with CI/CD and ARM templates, plus operational readiness checks and configuring SQL pool maintenance windows. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -43,12 +43,16 @@ This skill requires **network access** to fetch documentation content:
 | Diagnose and resolve Livy job errors in Synapse Spark | https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-handle-livy-error |
 | Debug Synapse Spark apps with extended history server | https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-history-server |
 | Troubleshoot Synapse Spark library installation failures | https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-troubleshoot-library-errors |
-| Identify Synapse queries exceeding execution timeouts | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-how-to-find-queries-running-beyond-wlm-elapsed-timeout |
-| Troubleshoot and optimize Gen2 cache performance | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-how-to-monitor-cache |
+| Monitor query activity and resource utilization in Synapse | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-concept-resource-utilization-query-activity |
+| Identify queries exceeding workload group timeouts | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-how-to-find-queries-running-beyond-wlm-elapsed-timeout |
+| Monitor and adjust workload importance in Synapse | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-how-to-manage-and-monitor-workload-importance |
+| Monitor and troubleshoot Gen2 cache performance | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-how-to-monitor-cache |
 | Troubleshoot misclassified workloads in Synapse SQL pools | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-how-to-troubleshoot-missed-classification |
+| Use DMVs to diagnose Synapse SQL workloads | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-manage-monitor |
 | Use dedicated SQL pool FAQ for common issues and behaviors | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-overview-faq |
-| Troubleshoot Azure Synapse dedicated SQL pools | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-troubleshoot |
-| Diagnose and fix Synapse dedicated SQL pool connectivity | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-troubleshoot-connectivity |
+| Troubleshoot common dedicated SQL pool issues | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-troubleshoot |
+| Diagnose and fix Synapse SQL pool connectivity issues | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-troubleshoot-connectivity |
+| Monitor workload groups and query activity in Synapse portal | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-workload-management-portal-monitor |
 | Troubleshoot common serverless SQL pool issues | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/resources-self-help-sql-on-demand |
 | Troubleshoot Synapse Link Entra user impersonation issues | https://learn.microsoft.com/en-us/azure/synapse-analytics/synapse-link/troubleshoot/troubleshoot-sql-azure-active-directory |
 | Troubleshoot Synapse Link for Azure SQL after database failover | https://learn.microsoft.com/en-us/azure/synapse-analytics/synapse-link/troubleshoot/troubleshoot-sql-database-failover |
@@ -82,42 +86,45 @@ This skill requires **network access** to fetch documentation content:
 | Use Hyperspace indexes to accelerate Synapse Spark | https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-performance-hyperspace |
 | Improve Delta MERGE performance with Low Shuffle Merge | https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/low-shuffle-merge-for-apache-spark |
 | Optimize Spark Delta Lake writes with Optimize Write | https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/optimize-write-for-apache-spark |
-| Apply dedicated SQL pool design and performance best practices | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/cheat-sheet |
+| Analyze and prioritize dedicated SQL pool workloads | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/analyze-your-workload |
+| Apply performance best practices for Synapse dedicated SQL pool | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/cheat-sheet |
 | Optimize Synapse materialized views for performance | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/performance-tuning-materialized-views |
 | Optimize ordered clustered columnstore indexes in Synapse | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/performance-tuning-ordered-cci |
-| Optimize transactional performance in Synapse SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-develop-best-practices-transactions |
-| Use dynamic SQL safely in Synapse SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-develop-dynamic-sql |
-| Implement GROUP BY options in Synapse SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-develop-group-by-options |
-| Instrument Synapse queries with labels | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-develop-label |
-| Implement T-SQL loops in Synapse SQL pools | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-develop-loops |
-| Design stored procedures for Synapse SQL pools | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-develop-stored-procedures |
-| Use transactions correctly in Synapse SQL pools | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-develop-transactions |
-| Apply user-defined schemas in Synapse SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-develop-user-defined-schemas |
-| Assign T-SQL variables in Synapse SQL pools | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-develop-variable-assignment |
+| Optimize result set caching in dedicated SQL pools | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/performance-tuning-result-set-caching |
+| Optimize transaction performance in dedicated SQL pool | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-develop-best-practices-transactions |
+| Use dynamic SQL safely in dedicated SQL pool | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-develop-dynamic-sql |
+| Implement GROUP BY options in dedicated SQL pool | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-develop-group-by-options |
+| Instrument Synapse queries with T-SQL labels | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-develop-label |
+| Implement T-SQL loops instead of cursors in Synapse | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-develop-loops |
+| Design and use stored procedures in dedicated SQL pool | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-develop-stored-procedures |
+| Implement transactions in Synapse SQL pool workloads | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-develop-transactions |
+| Use user-defined schemas in dedicated SQL pool | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-develop-user-defined-schemas |
+| Assign T-SQL variables in dedicated SQL pool | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-develop-variable-assignment |
 | Optimize columnstore index memory and compression in Synapse | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-memory-optimizations-for-columnstore-compression |
-| Apply design and coding recommendations for Synapse dedicated SQL pools | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-overview-develop |
-| Choose data types for Synapse SQL tables | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-tables-data-types |
-| Use IDENTITY surrogate keys in Synapse SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-tables-identity |
+| Use primary, foreign, and unique keys in Synapse | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-table-constraints |
+| Choose optimal table data types in dedicated SQL pool | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-tables-data-types |
+| Implement IDENTITY surrogate keys in Synapse SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-tables-identity |
 | Indexing strategies for Synapse dedicated SQL pool | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-tables-index |
 | Create and maintain statistics in Synapse SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-tables-statistics |
-| Use temporary tables effectively in Synapse SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-tables-temporary |
+| Use temporary tables effectively in dedicated SQL pool | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-tables-temporary |
 | Apply performance best practices for Synapse dedicated SQL pools | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/best-practices-dedicated-sql-pool |
 | Implement performance and cost best practices for serverless SQL pools | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/best-practices-serverless-sql-pool |
-| Optimize columnstore compression and performance in Synapse | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/data-load-columnstore-compression |
-| Apply data loading best practices for Synapse dedicated SQL pools | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/data-loading-best-practices |
+| Tune columnstore compression in dedicated SQL pools | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/data-load-columnstore-compression |
+| Optimize data loading into dedicated SQL pools | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/data-loading-best-practices |
 | Use dynamic SQL safely in Synapse SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-dynamic-sql |
-| Apply GROUP BY options in Synapse SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-group-by-options |
-| Use query labels in Synapse SQL pools | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-label |
-| Implement T-SQL loops efficiently in Synapse SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-loops |
-| Tune Synapse dedicated SQL pool with materialized views | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-materialized-view-performance-tuning |
-| Develop stored procedures in Synapse SQL pools | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-stored-procedures |
-| Choose table data types for Synapse SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-tables-data-types |
+| Apply GROUP BY options in Synapse SQL queries | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-group-by-options |
+| Use query labels for monitoring in Synapse SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-label |
+| Implement T-SQL loops and cursor alternatives in Synapse | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-loops |
+| Improve query performance with materialized views | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-materialized-view-performance-tuning |
+| Develop stored procedures for Synapse SQL pools | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-stored-procedures |
+| Choose optimal table data types in Synapse SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-tables-data-types |
 | Create and maintain statistics in Synapse SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-tables-statistics |
-| Optimize transactional code in Synapse SQL pool | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-transaction-best-practices |
-| Use transactions in Synapse dedicated SQL pool | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-transactions |
-| Use user-defined schemas in Synapse SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-user-defined-schemas |
-| Assign T-SQL variables in Synapse SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-variable-assignment |
-| Design and use views in Synapse SQL pools | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-views |
+| Use temporary tables effectively in Synapse SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-tables-temporary |
+| Optimize transactional code in Synapse dedicated SQL pool | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-transaction-best-practices |
+| Use transactions with Synapse dedicated SQL pool | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-transactions |
+| Design and use user-defined schemas in Synapse SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-user-defined-schemas |
+| Assign and use T-SQL variables in Synapse SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-variable-assignment |
+| Create and manage T-SQL views in Synapse SQL pools | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-views |
 
 ### Decision Making
 | Topic | URL |
@@ -125,7 +132,7 @@ This skill requires **network access** to fetch documentation content:
 | Compare Synapse data integration with Azure Data Factory | https://learn.microsoft.com/en-us/azure/synapse-analytics/data-integration/concepts-data-factory-differences |
 | Assess environment to choose Synapse technologies | https://learn.microsoft.com/en-us/azure/synapse-analytics/guidance/implementation-success-assess-environment |
 | Review Synapse project plan for implementation success | https://learn.microsoft.com/en-us/azure/synapse-analytics/guidance/implementation-success-evaluate-project-plan |
-| Plan migration to Azure Synapse dedicated SQL pool | https://learn.microsoft.com/en-us/azure/synapse-analytics/migration-guides/migrate-to-synapse-analytics-guide |
+| Plan and execute migration to Synapse dedicated SQL pool | https://learn.microsoft.com/en-us/azure/synapse-analytics/migration-guides/migrate-to-synapse-analytics-guide |
 | Select tools for Netezza data warehouse migration to Synapse | https://learn.microsoft.com/en-us/azure/synapse-analytics/migration-guides/netezza/6-microsoft-third-party-migration-tools |
 | Select tools for Oracle data warehouse migration to Synapse | https://learn.microsoft.com/en-us/azure/synapse-analytics/migration-guides/oracle/6-microsoft-third-party-migration-tools |
 | Choose Microsoft and third-party tools for Teradata to Synapse migration | https://learn.microsoft.com/en-us/azure/synapse-analytics/migration-guides/teradata/6-microsoft-third-party-migration-tools |
@@ -133,11 +140,12 @@ This skill requires **network access** to fetch documentation content:
 | Plan Synapse Spark runtime lifecycle and support | https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/runtime-for-apache-spark-lifecycle-and-supportability |
 | Plan and execute migration of dedicated SQL pool to Gen2 | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/gen2-migration-schedule |
 | Use Azure Advisor recommendations for Synapse SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-concept-recommendations |
-| Plan upgrade to latest Synapse SQL pool generation | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/upgrade-to-latest-generation |
+| Plan and execute upgrade to latest SQL pool generation | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/upgrade-to-latest-generation |
 | Choose appropriate DWUs for Synapse dedicated SQL pools | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/what-is-a-data-warehouse-unit-dwu-cdwu |
-| Plan and manage serverless SQL pool query costs | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/data-processed |
-| Use Synapse Distribution Advisor to choose table distribution strategies | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/distribution-advisor |
-| Choose methods for Synapse query history analysis | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/query-history-storage-analysis |
+| Manage serverless SQL pool cost by data processed | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/data-processed |
+| Use Synapse Distribution Advisor for table design | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/distribution-advisor |
+| Choose methods for historical query analysis in Synapse | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/query-history-storage-analysis |
+| Choose Synapse SQL resource consumption model | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/resource-consumption-models |
 
 ### Architecture & Design Patterns
 | Topic | URL |
@@ -154,18 +162,16 @@ This skill requires **network access** to fetch documentation content:
 | Design replicated tables in Synapse SQL pool | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/design-guidance-for-replicated-tables |
 | Design hash and round-robin distributed tables | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-tables-distribute |
 | Partition tables in Synapse dedicated SQL pool | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-tables-partition |
-| Configure workload isolation with workload groups | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-workload-isolation |
-| Design workload management for Synapse SQL pool | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-workload-management |
+| Design workload management strategy in Synapse SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-workload-management |
 | Use external tables with Synapse SQL pools | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-tables-external-tables |
-| Design tables for Synapse dedicated and serverless SQL pools | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-tables-overview |
-| Design PolyBase ELT data loading strategies for Synapse | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/load-data-overview |
+| Design tables for Synapse dedicated and serverless SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-tables-overview |
+| Design PolyBase ELT loading strategy in Synapse | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/load-data-overview |
 
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
-| Memory and concurrency limits by Synapse performance level | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/memory-concurrency-limits |
-| Review capacity limits for Synapse dedicated SQL pools | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-service-capacity-limits |
-| Use temporary tables in Synapse SQL pools | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-tables-temporary |
+| Understand memory and concurrency limits in Synapse SQL pool | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/memory-concurrency-limits |
+| Dedicated SQL pool capacity limits and quotas | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-service-capacity-limits |
 | Query Delta Lake v1 with Synapse serverless SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/query-delta-lake-format |
 | Supported features and limitations of Synapse Link for Cosmos DB | https://learn.microsoft.com/en-us/azure/synapse-analytics/synapse-link/concept-synapse-link-cosmos-db-support |
 | Limitations and known issues for Synapse Link for SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/synapse-link/synapse-link-for-sql-known-issues |
@@ -211,20 +217,22 @@ This skill requires **network access** to fetch documentation content:
 | Configure encryption and key management for Synapse | https://learn.microsoft.com/en-us/azure/synapse-analytics/security/workspaces-encryption |
 | Secure Synapse Spark credentials with Linked Services | https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-secure-credentials-with-tokenlibrary |
 | Secure Synapse Spark log emission with certificate-based service principal | https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/how-to-use-certificate-with-service-principalp-emit-log-event-hubs |
-| Implement column-level security in Synapse SQL pool | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/column-level-security |
-| Configure secure authentication for Synapse COPY data loads | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/quickstart-bulk-load-copy-tsql-examples |
-| Configure single-region data residency in Synapse | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/single-region-residency |
-| Configure authentication methods for Synapse dedicated SQL pools | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-authentication |
-| Configure TDE in Synapse SQL via Azure portal | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-encryption-tde |
-| Manage Synapse Transparent Data Encryption with T-SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-encryption-tde-tsql |
-| Secure Azure Synapse dedicated SQL pools with access and monitoring | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-overview-manage-security |
+| Implement column-level security in Synapse dedicated SQL pool | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/column-level-security |
+| Deploy Synapse dedicated SQL pool with TDE using ARM template | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/quickstart-arm-template |
+| Deploy Synapse dedicated SQL pool with TDE using Bicep | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/quickstart-bicep |
+| Secure authentication options for Synapse COPY | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/quickstart-bulk-load-copy-tsql-examples |
+| Configure single-region data residency for Synapse SQL pool | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/single-region-residency |
+| Configure authentication for Synapse dedicated SQL pool | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-authentication |
+| Configure Transparent Data Encryption in Synapse portal | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-encryption-tde |
+| Manage Transparent Data Encryption in Synapse with T-SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-encryption-tde-tsql |
+| Secure Azure Synapse dedicated SQL pool with roles and encryption | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-overview-manage-security |
 | Configure Microsoft Entra authentication for Synapse SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/active-directory-authentication |
 | Configure storage access control for serverless SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-storage-files-storage-access-control |
-| Use multifactor Entra authentication with Synapse SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/mfa-authentication |
-| Set access control on shared Spark databases | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/shared-databases-access-control |
+| Configure Entra MFA authentication for Synapse SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/mfa-authentication |
+| Configure access control for shared databases in serverless SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/shared-databases-access-control |
 | Configure SQL authentication options in Synapse Analytics | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/sql-authentication |
 | Use managed identity to load external data securely | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/tutorial-external-tables-using-managed-identity |
-| Secure external data access using Entra ID passthrough | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/tutorial-load-data-using-entra-id |
+| Use Entra ID passthrough for external tables | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/tutorial-load-data-using-entra-id |
 | Secure Synapse Link for Azure SQL Database with network controls | https://learn.microsoft.com/en-us/azure/synapse-analytics/synapse-link/connect-synapse-link-sql-database-vnet |
 | Configure secure networking for Synapse Link SQL Server 2022 | https://learn.microsoft.com/en-us/azure/synapse-analytics/synapse-link/connect-synapse-link-sql-server-2022-vnet |
 | Use managed identities with Azure Synapse Analytics | https://learn.microsoft.com/en-us/azure/synapse-analytics/synapse-service-identity |
@@ -255,27 +263,27 @@ This skill requires **network access** to fetch documentation content:
 | Configure Apache Spark pool sizes and behavior | https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-pool-configurations |
 | Select supported Apache Spark runtimes in Synapse | https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-version-support |
 | Configure backup, restore points, and geo-backups for Synapse dedicated SQL pools | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/backup-and-restore |
-| Disable geo-backups for Synapse SQL pools | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/disable-geo-backup |
-| Configure monitoring for Synapse dedicated SQL pools | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/monitor-sql-pool-synapse-analytics |
-| Configure and use result set caching in Synapse dedicated SQL pools | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/performance-tuning-result-set-caching |
+| Disable geo-backups for Synapse dedicated SQL pool | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/disable-geo-backup |
+| Configure monitoring for Synapse dedicated SQL pool | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/monitor-sql-pool-synapse-analytics |
 | Use resource classes for Synapse workload management | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/resource-classes-for-workload-management |
-| Monitor query activity and resources in Synapse | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-concept-resource-utilization-query-activity |
-| Configure connections to Synapse SQL pools | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-connect-overview |
-| Configure workload groups and query timeouts in Synapse | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-how-to-convert-resource-classes-workload-groups |
+| Configure connection strings for Synapse SQL pools | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-connection-strings |
+| Configure workload importance in dedicated SQL pools | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-how-to-configure-workload-importance |
+| Convert resource classes to workload groups in Synapse | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-how-to-convert-resource-classes-workload-groups |
 | Configure and manage Synapse SQL pool compute | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-manage-compute-overview |
-| Restore existing Synapse dedicated SQL pools | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-restore-active-paused-dw |
-| Restore deleted Synapse dedicated SQL pools | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-restore-deleted-dw |
-| Recover Synapse SQL pools from deleted servers | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-restore-from-deleted-server |
-| Restore Synapse SQL pools from geo-backups | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-restore-from-geo-backup |
-| Create user-defined restore points in Synapse SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-restore-points |
-| Configure table constraints in Synapse SQL pools | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-table-constraints |
-| Configure workload classification in Synapse SQL pool | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-workload-classification |
-| Set workload importance in Synapse SQL pool | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-workload-importance |
-| Monitor workload groups in Synapse portal | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-workload-management-portal-monitor |
-| Enable Synapse workspace features for SQL pools | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/workspace-connected-create |
-| Enable Synapse workspace experience for existing SQL DW | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/workspace-connected-experience |
-| Configure Synapse SQL connection strings for multiple clients | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/connection-strings |
-| Configure collation types for Synapse dedicated SQL pools | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/reference-collation-types |
+| Configure Azure Monitor for Synapse SQL workloads | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-monitor-workload-portal |
+| Configure collation types for Synapse dedicated SQL pools | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-reference-collation-types |
+| Restore an existing Synapse dedicated SQL pool | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-restore-active-paused-dw |
+| Restore a deleted Synapse dedicated SQL pool | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-restore-deleted-dw |
+| Restore Synapse SQL pool from a deleted server | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-restore-from-deleted-server |
+| Geo-restore a Synapse dedicated SQL pool from backup | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-restore-from-geo-backup |
+| Create and manage user-defined restore points in Synapse | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-restore-points |
+| Configure workload classification in Synapse dedicated SQL pool | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-workload-classification |
+| Set workload importance for Synapse SQL queries | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-workload-importance |
+| Configure workload isolation with workload groups in Synapse | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-workload-isolation |
+| Enable Synapse workspace features on existing SQL pool | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/workspace-connected-create |
+| Configure connection strings for Synapse SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/connection-strings |
+| Create and use views in serverless SQL pool | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/create-use-views |
+| Configure collation types in Synapse SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/reference-collation-types |
 | Monitor Synapse Link for Azure SQL Database with Studio and Azure Monitor | https://learn.microsoft.com/en-us/azure/synapse-analytics/synapse-link/how-to-monitor-synapse-link-sql-database |
 
 ### Integrations & Coding Patterns
@@ -298,19 +306,31 @@ This skill requires **network access** to fetch documentation content:
 | Mount external storage using Synapse Spark file APIs | https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/synapse-file-mount-api |
 | Move data between Synapse Spark and Dedicated SQL pools | https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/synapse-spark-sql-pool-import-export |
 | Monitor Synapse Spark metrics with Prometheus and Grafana | https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/use-prometheus-grafana-to-monitor-apache-spark-application-level-metrics |
-| Set up Fivetran with Synapse dedicated SQL pools | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/fivetran-quickstart |
-| Build Synapse SQL pool connection strings | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-connection-strings |
-| Create tables with CTAS in Synapse SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-develop-ctas |
-| Integrate Azure Stream Analytics with Synapse SQL pools | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-integrate-azure-stream-analytics |
-| Manage Synapse dedicated SQL pool compute via REST APIs | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-manage-compute-rest-api |
-| Score ONNX machine learning models with T-SQL PREDICT in Synapse | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-predict |
-| Automate Synapse dedicated SQL pool with PowerShell and REST | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-reference-powershell-cmdlets |
-| Deploy and configure Striim for Synapse integration | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/striim-quickstart |
+| Set up Fivetran with Synapse dedicated SQL pool | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/fivetran-quickstart |
+| Use Azure Functions to manage Synapse SQL pool compute | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/manage-compute-with-azure-functions |
+| Bulk load data with Synapse COPY T-SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/quickstart-bulk-load-copy-tsql |
+| Create tables with CTAS in Synapse dedicated SQL pool | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-develop-ctas |
+| Integrate Synapse data with Azure Machine Learning designer | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-get-started-analyze-with-azure-machine-learning |
+| Integrate Azure Stream Analytics with Synapse SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-integrate-azure-stream-analytics |
+| Control Synapse SQL pool compute via REST APIs | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-manage-compute-rest-api |
+| Score ML models in Synapse with T-SQL PREDICT | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-predict |
+| Manage Synapse dedicated SQL pools with PowerShell and REST | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-reference-powershell-cmdlets |
+| Integrate Synapse dedicated SQL pool with Azure Repos | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-source-control-integration |
+| Store serverless SQL query results to storage | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/create-external-table-as-select |
 | Query Azure Storage files with OPENROWSET | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-openrowset |
-| Access Azure Storage files via serverless SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-storage-files-overview |
-| Query Spark tables from serverless SQL pool | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-storage-files-spark-tables |
-| Use CETAS to export data in Synapse SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-tables-cetas |
+| Query Azure Storage files with serverless SQL pool | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-storage-files-overview |
+| Query Spark tables via serverless SQL pool | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-storage-files-spark-tables |
+| Use CETAS to create external tables in Synapse SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-tables-cetas |
+| Connect to Azure Synapse SQL using sqlcmd | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/get-started-connect-sqlcmd |
+| Connect Azure Synapse SQL from Visual Studio with SSDT | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/get-started-visual-studio |
 | Query Cosmos DB analytical store using Synapse serverless SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/query-cosmos-db-analytical-store |
+| Query Azure storage with serverless SQL pool | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/query-data-storage |
+| Query folders and multiple files in serverless SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/query-folders-multiple-csv-files |
+| Query JSON files using serverless SQL pool | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/query-json-files |
+| Query Parquet files using serverless SQL pool | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/query-parquet-files |
+| Query nested Parquet types with serverless SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/query-parquet-nested-types |
+| Query single CSV files with serverless SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/query-single-csv-file |
+| Use file metadata in serverless SQL queries | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/query-specific-files |
 | Connect Azure SQL Database to Synapse via Synapse Link | https://learn.microsoft.com/en-us/azure/synapse-analytics/synapse-link/connect-synapse-link-sql-database |
 | Copy Synapse Link Cosmos DB data to Dedicated SQL via Spark | https://learn.microsoft.com/en-us/azure/synapse-analytics/synapse-link/how-to-copy-to-sql-pool |
 | Query Cosmos DB via Synapse Spark 2 analytical store | https://learn.microsoft.com/en-us/azure/synapse-analytics/synapse-link/how-to-query-analytical-store-spark |
@@ -319,14 +339,8 @@ This skill requires **network access** to fetch documentation content:
 ### Deployment
 | Topic | URL |
 |-------|-----|
-| Restore dedicated SQL pools in Synapse Analytics | https://learn.microsoft.com/en-us/azure/synapse-analytics/backuprestore/restore-sql-pool |
-| Create user-defined restore points in Synapse SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/backuprestore/sqlpool-create-restore-point |
 | Implement CI/CD for Azure Synapse workspaces | https://learn.microsoft.com/en-us/azure/synapse-analytics/cicd/continuous-integration-delivery |
 | Perform operational readiness review for Synapse deployment | https://learn.microsoft.com/en-us/azure/synapse-analytics/guidance/implementation-success-perform-operational-readiness-review |
 | Deploy Synapse workspaces using ARM templates | https://learn.microsoft.com/en-us/azure/synapse-analytics/quickstart-deployment-template-workspaces |
 | Plan and configure Synapse SQL pool maintenance windows | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/maintenance-scheduling |
-| Automate Synapse SQL compute management with Functions | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/manage-compute-with-azure-functions |
-| Deploy Synapse dedicated SQL pool using ARM templates | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/quickstart-arm-template |
-| Deploy Synapse dedicated SQL pool using Bicep templates | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/quickstart-bicep |
 | Set up CI/CD for Synapse dedicated SQL pools | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-continuous-integration-and-deployment |
-| Integrate Synapse SQL pools with source control | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-source-control-integration |

@@ -3,7 +3,7 @@ name: azure-pipelines
 description: Expert knowledge for Azure Pipelines development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring YAML CI/CD, agents, service connections, Key Vault secrets, or Azure/Kubernetes deployments, and other Azure Pipelines related development tasks. Not for Azure DevOps (use azure-devops), Azure Boards (use azure-boards), Azure Repos (use azure-repos), Azure Test Plans (use azure-test-plans).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-03"
+  generated_at: "2026-05-10"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Pipelines Skill
@@ -30,9 +30,9 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L66-L73 | Guidance on end-to-end CI/CD and DevOps architectures for Azure: baseline pipeline patterns, Web App deployment design, and IaaS/VM-focused DevTest and production pipelines. |
 | Limits & Quotas | L74-L82 | Limits, quotas, and capacity for Azure Pipelines: hosted agent caps, image deprecation, parallel jobs, agent pool concurrency, large package handling, and retention policy configuration. |
 | Security | L83-L133 | Securing Azure Pipelines: auth for agents, service connections, secrets/Key Vault, permissions/approvals, artifact and repo protection, and integrating security scans and policy checks. |
-| Configuration | L134-L495 | Configuring Azure Pipelines: agents, YAML/classic triggers, stages/jobs/steps, variables, environments, artifacts, test/coverage, analytics, and detailed task input references. |
-| Integrations & Coding Patterns | L496-L521 | Patterns and scripts for integrating Azure Pipelines with languages, tools, secrets, Git, notifications, external APIs/services, and UI tests, plus multi-repo and variable/Key Vault management. |
-| Deployment | L522-L583 | End-to-end deployment with Azure Pipelines: agent setup (self-hosted/scale set/deployment groups), CI/CD for apps/containers/DBs, and using built-in tasks for IIS, Kubernetes, VMs, and Azure services. |
+| Configuration | L134-L494 | Configuring Azure Pipelines: agents, YAML/classic triggers, stages/jobs/steps, variables, environments, artifacts, test/coverage, analytics, and detailed task input references. |
+| Integrations & Coding Patterns | L495-L520 | Patterns and scripts for integrating Azure Pipelines with languages, tools, secrets, Git, notifications, external APIs/services, and UI tests, plus multi-repo and variable/Key Vault management. |
+| Deployment | L521-L582 | End-to-end deployment with Azure Pipelines: agent setup (self-hosted/scale set/deployment groups), CI/CD for apps/containers/DBs, and using built-in tasks for IIS, Kubernetes, VMs, and Azure services. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -161,7 +161,6 @@ This skill requires **network access** to fetch documentation content:
 | Set build completion triggers in classic pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/release/pipeline-triggers-classic?view=azure-devops |
 | Configure classic release triggers in Azure Pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/release/triggers?view=azure-devops |
 | Use variables in classic Azure release pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/release/variables?view=azure-devops |
-| Monitor pipelines with Azure DevOps dashboard widgets | https://learn.microsoft.com/en-us/azure/devops/pipelines/reports/pipeline-widgets?view=azure-devops |
 | Use Azure Pipelines analytics and reports | https://learn.microsoft.com/en-us/azure/devops/pipelines/reports/pipelinereport?view=azure-devops |
 | Configure advanced Git repository options in Azure Pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/repos/pipeline-options-for-git?view=azure-devops |
 | Reference for built-in Azure Pipelines task configuration | https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/?view=azure-pipelines |

@@ -1,15 +1,15 @@
 ---
-generated_at: '2026-05-03'
+generated_at: '2026-05-10'
 category_descriptions:
   decision-making: 'Guidance for choosing Azure SQL deployment, pricing, and HA/DR
     options: vCore vs DTU, Hyperscale, serverless, reservations, licensing, migration
     paths, and cost/DR/automation planning.'
-  troubleshooting: 'Diagnosing and fixing Azure SQL issues: performance (CPU, memory,
-    blocking, deadlocks), connectivity, capacity/scaling, import/export, geo-replication,
-    Data Sync, and transaction log errors.'
+  troubleshooting: 'Diagnosing and fixing Azure SQL issues: performance, CPU/memory,
+    deadlocks, blocking, capacity/scale, connectivity, geo-replication, Data Sync,
+    log full, and Managed Instance problems.'
   configuration: 'Configuring Azure SQL databases: monitoring, backups, geo-replication/failover,
-    security/immutability, scaling and elastic pools, Data Sync, maintenance windows,
-    and CLI/PowerShell setup.'
+    maintenance, security/immutability, elastic pools/jobs, Data Sync, networking/TLS,
+    and CLI/PowerShell/ARM setup.'
   best-practices: 'Best practices for Azure SQL operations: monitoring, security,
     HA/DR, failover, maintenance, space management, read replicas, elastic pools,
     Data Sync, and post-migration T-SQL adaptation.'
@@ -31,14 +31,14 @@ category_descriptions:
 skill_description: Expert knowledge for Azure SQL Database development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  choosing vCore/DTU tiers, Hyperscale/serverless, geo-replication/Data Sync, elastic
-  pools, or HA/DR setups, and other Azure SQL Database related development tasks.
-  Not for Azure SQL Managed Instance (use azure-sql-managed-instance), SQL Server
-  on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Database for MySQL
-  (use azure-database-mysql), Azure Database for PostgreSQL (use azure-database-postgresql).
-use_when: Use when choosing vCore/DTU tiers, Hyperscale/serverless, geo-replication/Data
-  Sync, elastic pools, or HA/DR setups, and other Azure SQL Database related development
-  tasks.
+  choosing vCore/DTU/Hyperscale/serverless, configuring geo‑replication/HA, or securing
+  with Entra/TDE/Always Encrypted, and other Azure SQL Database related development
+  tasks. Not for Azure SQL Managed Instance (use azure-sql-managed-instance), SQL
+  Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Database
+  for MySQL (use azure-database-mysql), Azure Database for PostgreSQL (use azure-database-postgresql).
+use_when: Use when choosing vCore/DTU/Hyperscale/serverless, configuring geo‑replication/HA,
+  or securing with Entra/TDE/Always Encrypted, and other Azure SQL Database related
+  development tasks.
 confusable_not_for: Not for Azure SQL Managed Instance (use azure-sql-managed-instance),
   SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Database
   for MySQL (use azure-database-mysql), Azure Database for PostgreSQL (use azure-database-postgresql).
@@ -50,13 +50,13 @@ confusable_not_for: Not for Azure SQL Managed Instance (use azure-sql-managed-in
 - **Total Pages**: 362
 - **Fetched**: 362
 - **Fetch Failed**: 0
-- **Classified**: 239
-- **Unclassified**: 123
+- **Classified**: 240
+- **Unclassified**: 122
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 5
-- **Unchanged**: 357
+- **Updated Pages**: 2
+- **Unchanged**: 360
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sql-database/azure-sql-database.csv`
 
@@ -66,29 +66,23 @@ confusable_not_for: Not for Azure SQL Managed Instance (use azure-sql-managed-in
 |------|-------|------------|
 | architecture-patterns | 13 | 3.6% |
 | best-practices | 13 | 3.6% |
-| configuration | 62 | 17.1% |
+| configuration | 63 | 17.4% |
 | decision-making | 20 | 5.5% |
 | deployment | 13 | 3.6% |
 | integrations | 25 | 6.9% |
 | limits-quotas | 10 | 2.8% |
 | security | 64 | 17.7% |
 | troubleshooting | 19 | 5.2% |
-| *(Unclassified)* | 123 | 34.0% |
+| *(Unclassified)* | 122 | 33.7% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Documentation](https://learn.microsoft.com/en-us/azure/azure-sql/database/?view=azuresql)
-  - Updated: 2026-04-06T22:36:00Z → 2026-04-30T22:38:00Z
-- [Bring Your Own Key (BYOK)](https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-overview?view=azuresql)
-  - Updated: 2026-03-05T08:00:00.000Z → 2026-04-22T08:00:00.000Z
-- [Remove TDE protector](https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-remove-tde-protector?view=azuresql)
-  - Updated: 2026-03-05T08:00:00.000Z → 2026-04-23T17:37:00.000Z
+- [Configure long-term backup retention](https://learn.microsoft.com/en-us/azure/azure-sql/database/long-term-backup-retention-configure?view=azuresql)
+  - Updated: 2025-09-30T17:41:00.000Z → 2026-05-05T22:37:00.000Z
 - [Known issues with Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-known-issues?view=azuresql)
-  - Updated: 2026-03-10T22:39:00.000Z → 2026-04-28T08:00:00.000Z
-- [Connectivity errors](https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-common-errors-issues?view=azuresql)
-  - Updated: 2025-10-28T22:34:00.000Z → 2026-05-01T17:42:00.000Z
+  - Updated: 2026-04-28T08:00:00.000Z → 2026-05-01T08:00:00.000Z
 
 ## Classified Pages
 
@@ -153,6 +147,7 @@ confusable_not_for: Not for Azure SQL Managed Instance (use azure-sql-managed-in
 | [Configure isolated access for Hyperscale named replicas](https://learn.microsoft.com/en-us/azure/azure-sql/database/hyperscale-named-replica-security-configure?view=azuresql) | security | 0.78 | How-to article for granting access to a Hyperscale named replica without access to primary/other replicas; contains product-specific security configuration steps and role/permission patterns unique to Azure SQL Hyperscale. |
 | [Create server configured with UMI and customer-managed TDE](https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-create-server?view=azuresql) | security | 0.78 | How-to guide for configuring customer-managed TDE using a user-assigned managed identity and Azure Key Vault. Contains product-specific security configuration steps (e.g., identity assignment, Key Vault access policies, TDE protector settings) that go beyond generic concepts, but not primarily limits, troubleshooting, or deployment. |
 | [IP-based firewall](https://learn.microsoft.com/en-us/azure/azure-sql/database/firewall-configure?view=azuresql) | security | 0.78 | Firewall configuration for Azure SQL Database/Azure Synapse typically includes product-specific security settings such as server-level vs database-level firewall rules, exact parameter names, portal/PowerShell/T-SQL configuration options, and possibly special cases like 'Allow Azure services and resources to access this server'. These are concrete, product-specific security configurations rather than conceptual security guidance. |
+| [Known issues with Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-known-issues?view=azuresql) | troubleshooting | 0.78 | A 'known issues' page for a specific Azure service typically lists concrete symptoms, causes, and workarounds or resolutions for product-specific problems. These are time-sensitive, expert details that change over time and are unlikely to be fully captured in model training. The structure aligns with troubleshooting (symptom → cause → workaround/resolution), rather than generic concepts or limits. |
 | [Managed identity](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-azure-ad-user-assigned-managed-identity?view=azuresql) | security | 0.78 | Describes system-assigned and user-assigned managed identities for Azure SQL, including how they are created/assigned and used with Entra authentication. Such pages typically contain specific configuration steps, identity types, and required permissions/roles, which are product-specific security and identity configuration details. |
 | [Microsoft Entra authentication](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-configure?view=azuresql) | security | 0.78 | Configuration-focused article for Entra (Azure AD) authentication to Azure SQL Database, Managed Instance, and Synapse. It typically includes specific steps, T-SQL commands, and Entra/SQL role mappings and settings (e.g., contained database users, server principals, specific permission scopes), which are product-specific security configuration details rather than generic concepts. |
 | [Remove TDE protector](https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-remove-tde-protector?view=azuresql) | security | 0.78 | The article gives product-specific, stepwise security response procedures for a compromised TDE protector using customer-managed keys in Azure Key Vault, including exact PowerShell/Azure CLI commands and required parameters for Azure SQL Database, Managed Instance, and Synapse. This is concrete security configuration guidance (key management, protector changes) rather than conceptual overview. |
@@ -201,6 +196,7 @@ confusable_not_for: Not for Azure SQL Managed Instance (use azure-sql-managed-in
 | [Configure failover group for elastic pool](https://learn.microsoft.com/en-us/azure/azure-sql/database/scripts/add-elastic-pool-to-failover-group-powershell?view=azuresql) | integrations | 0.70 | Provides concrete PowerShell cmdlets and configuration parameters for adding an elastic pool to a failover group and testing failover, which are product-specific integration details. |
 | [Configure failover group for single database](https://learn.microsoft.com/en-us/azure/azure-sql/database/scripts/add-database-to-failover-group-powershell?view=azuresql) | integrations | 0.70 | Includes specific Az PowerShell commands and parameters to create failover groups, add databases, and test failover; these are detailed product-specific scripting patterns. |
 | [Configure legal hold backup immutability](https://learn.microsoft.com/en-us/azure/azure-sql/database/backup-immutability-legal-hold?view=azuresql) | configuration | 0.70 | Product-specific configuration of legal hold immutability mode for LTR backups, including lock behavior and removal requirements, which are detailed settings for this feature. |
+| [Configure long-term backup retention](https://learn.microsoft.com/en-us/azure/azure-sql/database/long-term-backup-retention-configure?view=azuresql) | configuration | 0.70 | The page describes how to configure Azure SQL Database long-term backup retention policies using Azure portal, CLI, and PowerShell, including specific policy parameters and references to deprecated/legacy APIs and cmdlets. This is product-specific configuration guidance rather than a conceptual overview, and includes concrete settings and commands unique to Azure SQL Database LTR. |
 | [Configure security](https://learn.microsoft.com/en-us/azure/azure-sql/database/secure-database-tutorial?view=azuresql) | security | 0.70 | Tutorial on securing a database; likely includes concrete steps for firewall, encryption, authentication, and roles specific to Azure SQL. |
 | [Configure threat detection](https://learn.microsoft.com/en-us/azure/azure-sql/database/threat-detection-configure?view=azuresql) | security | 0.70 | Configuration of Advanced Threat Protection includes security settings, alert types, and possibly role requirements—product-specific security configuration. |
 | [Configure time-based backup immutability](https://learn.microsoft.com/en-us/azure/azure-sql/database/backup-immutability-time-based?view=azuresql) | configuration | 0.70 | Stepwise configuration of time-based immutability policies (create, enable, lock) for LTR backups; includes product-specific settings and behavior for this feature. |
@@ -231,7 +227,6 @@ confusable_not_for: Not for Azure SQL Managed Instance (use azure-sql-managed-in
 | [Import from BACPAC](https://learn.microsoft.com/en-us/azure/azure-sql/database/scripts/import-from-bacpac-powershell?view=azuresql) | integrations | 0.70 | Includes specific PowerShell cmdlets and configuration parameters for importing BACPAC files into Azure SQL, which are product-specific integration patterns. |
 | [Import or export database with managed identity authentication](https://learn.microsoft.com/en-us/azure/azure-sql/database/database-import-export-managed-identity?view=azuresql) | security | 0.70 | Shows how to configure managed identity authentication for BACPAC import/export, including identity assignments and access control settings. |
 | [Job automation overview](https://learn.microsoft.com/en-us/azure/azure-sql/database/job-automation-overview?view=azuresql) | decision-making | 0.70 | Summarizes job automation technologies (elastic jobs, SQL Agent, etc.) across platforms, helping decide which to use in which scenario with product-specific criteria. |
-| [Known issues with Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-known-issues?view=azuresql) | troubleshooting | 0.70 | A 'known issues' page for a specific service typically lists concrete symptoms, affected features, and product-specific workarounds or resolutions. These are time-bound, implementation-specific details that change over time and aren't reliably captured in model training. The structure (issue → impact → workaround/resolution) aligns with troubleshooting guidance. |
 | [Maintenance window](https://learn.microsoft.com/en-us/azure/azure-sql/database/maintenance-window?view=azuresql) | configuration | 0.70 | Explains Azure SQL maintenance window feature behavior and configuration options, including what events are covered and how scheduling affects operations—product-specific configuration semantics. |
 | [Maintenance window in Azure SQL](https://learn.microsoft.com/en-us/azure/azure-sql/maintenance-window-azure-sql?view=azuresql) | configuration | 0.70 | Describes configurable maintenance windows with options via portal, PowerShell, CLI, and API; likely includes specific setting names and allowed values. |
 | [Manage Auditing using APIs](https://learn.microsoft.com/en-us/azure/azure-sql/database/auditing-manage-using-api?view=azuresql) | integrations | 0.70 | Covers specific APIs for configuring auditing, including parameter names and usage patterns unique to Azure SQL and Synapse. |
@@ -435,7 +430,6 @@ confusable_not_for: Not for Azure SQL Managed Instance (use azure-sql-managed-in
 | [Azure Policy for Microsoft Entra-only authentication](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-azure-ad-only-authentication-policy?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 351) |
 | [Batching for performance](https://learn.microsoft.com/en-us/azure/azure-sql/performance-improve-use-batching?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 351) |
 | [Conditional access](https://learn.microsoft.com/en-us/azure/azure-sql/database/conditional-access-configure?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 351) |
-| [Configure long-term backup retention](https://learn.microsoft.com/en-us/azure/azure-sql/database/long-term-backup-retention-configure?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 351) |
 | [Configure temporal retention policy](https://learn.microsoft.com/en-us/azure/azure-sql/database/temporal-tables-retention-policy?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 351) |
 | [Connect and query](https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-content-reference-guide?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 351) |
 | [Directory Readers role for groups](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-directory-readers-role-tutorial?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 351) |

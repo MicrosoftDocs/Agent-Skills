@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-03'
+generated_at: '2026-05-10'
 category_descriptions:
   integrations: How to connect apps (ASP.NET Core, .NET, Node.js, Python, Go) to Azure
     Managed Redis, secure with Entra ID, use bindings, keyspace notifications, and
@@ -16,20 +16,18 @@ category_descriptions:
     latency/timeouts, data loss, server resources, client performance, and using Redis
     Insight/redis-cli for troubleshooting.'
   deployment: Scaling and upgrading Managed Redis, migrating from Basic/Standard/Premium
-    or Redis Enterprise, deploying via ARM/Bicep, and configuring maintenance windows
-    for updates.
+    or Redis Enterprise, deploying with ARM/Bicep, and configuring maintenance/update
+    windows.
   decision-making: Guidance on choosing Managed Redis tiers, planning deployments,
     comparing with Azure Cache/Redis Enterprise, and selecting/migrating/reserving
     the right Managed Redis option.
 skill_description: Expert knowledge for Azure Managed Redis development including
   troubleshooting, best practices, decision making, security, configuration, integrations
   & coding patterns, and deployment. Use when using Entra ID auth, geo-replication,
-  keyspace notifications, Blob import/export, or ARM/Bicep deployments, and other
-  Azure Managed Redis related development tasks. Not for Azure Cache for Redis (use
-  azure-cache-redis).
-use_when: Use when using Entra ID auth, geo-replication, keyspace notifications, Blob
-  import/export, or ARM/Bicep deployments, and other Azure Managed Redis related development
-  tasks.
+  persistence, keyspace notifications, or Blob-based import/export, and other Azure
+  Managed Redis related development tasks. Not for Azure Cache for Redis (use azure-cache-redis).
+use_when: Use when using Entra ID auth, geo-replication, persistence, keyspace notifications,
+  or Blob-based import/export, and other Azure Managed Redis related development tasks.
 confusable_not_for: Not for Azure Cache for Redis (use azure-cache-redis).
 ---
 # Azure Managed Redis Crawl Report
@@ -43,9 +41,9 @@ confusable_not_for: Not for Azure Cache for Redis (use azure-cache-redis).
 - **Unclassified**: 10
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 5
-- **Unchanged**: 63
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 69
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-managed-redis/azure-managed-redis.csv`
 
@@ -64,23 +62,10 @@ confusable_not_for: Not for Azure Cache for Redis (use azure-cache-redis).
 
 ## Changes
 
-### New Pages
-
-- [Explore migration options](https://learn.microsoft.com/en-us/azure/redis/migrate/migrate-redis-enterprise-options)
-- [Migration using tooling](https://learn.microsoft.com/en-us/azure/redis/migrate/migrate-redis-enterprise-with-tooling)
-
 ### Updated Pages
 
-- [Import/Export data](https://learn.microsoft.com/en-us/azure/redis/how-to-import-export-data)
-  - Updated: 2025-05-20T05:24:00.000Z → 2026-04-27T22:14:00.000Z
-- [Self-service migration](https://learn.microsoft.com/en-us/azure/redis/migrate/migrate-basic-standard-premium-self-service)
-  - Updated: 2026-03-26T06:13:00.000Z → 2026-05-02T06:17:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/redis/migrate/migrate-redis-enterprise-overview)
-  - Updated: 2026-03-26T06:13:00.000Z → 2026-05-02T06:17:00.000Z
-- [Understand differences](https://learn.microsoft.com/en-us/azure/redis/migrate/migrate-redis-enterprise-understand)
-  - Updated: 2026-03-26T06:13:00.000Z → 2026-05-02T06:17:00.000Z
-- [Self-service migration](https://learn.microsoft.com/en-us/azure/redis/migrate/migrate-redis-enterprise-self-service)
-  - Updated: 2026-03-26T06:13:00.000Z → 2026-05-02T06:17:00.000Z
+- [Migration using tooling](https://learn.microsoft.com/en-us/azure/redis/migrate/migrate-redis-enterprise-with-tooling)
+  - Updated: 2026-05-02T06:17:00.000Z → 2026-05-04T22:15:00.000Z
 
 ## Classified Pages
 
@@ -114,7 +99,6 @@ confusable_not_for: Not for Azure Cache for Redis (use azure-cache-redis).
 | [Create Redis cache - Bicep](https://learn.microsoft.com/en-us/azure/redis/redis-cache-bicep-provision) | deployment | 0.70 | Shows Bicep resource definitions and parameters for deploying Redis; this is product-specific IaC deployment configuration. |
 | [Go app](https://learn.microsoft.com/en-us/azure/redis/go-get-started) | integrations | 0.70 | Go quickstart shows concrete connection code and auth configuration for Azure Managed Redis, which is product-specific. |
 | [Kubernetes-hosted client applications best practices](https://learn.microsoft.com/en-us/azure/redis/best-practices-kubernetes) | best-practices | 0.70 | Kubernetes hosting guidance will include product-specific networking, connection, and scaling recommendations. |
-| [Migration using tooling](https://learn.microsoft.com/en-us/azure/redis/migrate/migrate-redis-enterprise-with-tooling) | deployment | 0.70 | Describes built-in migration tooling behavior (hostname reassignment, automatic client reconnection, key reuse, post-migration validation and hostname update), which are product-specific deployment mechanics and constraints. |
 | [Monitor using diagnostic settings](https://learn.microsoft.com/en-us/azure/redis/monitor-diagnostic-settings) | configuration | 0.70 | Describes diagnostic categories and destinations for Redis resource logs, including specific setting names and options. |
 | [Node.js app](https://learn.microsoft.com/en-us/azure/redis/nodejs-get-started) | integrations | 0.70 | Node.js quickstart demonstrates concrete client configuration and Entra ID-based connection details unique to this service. |
 | [Persist your cache with Redis data persistence](https://learn.microsoft.com/en-us/azure/redis/how-to-persistence) | configuration | 0.70 | How-to for configuring Redis persistence; such articles typically include product-specific settings (AOF/RDB modes, frequency, parameters) and concrete configuration values unique to Azure Managed Redis. |
@@ -137,6 +121,7 @@ confusable_not_for: Not for Azure Cache for Redis (use azure-cache-redis).
 | [Import/Export data](https://learn.microsoft.com/en-us/azure/redis/how-to-import-export-data) | integrations | 0.65 | How-to for import/export using RDB snapshots and Azure Blob Storage likely includes product-specific commands, parameters, and configuration details (storage account/container, blob paths, Redis snapshot handling) that go beyond generic knowledge, fitting integrations & coding patterns. |
 | [Manage data with client tools](https://learn.microsoft.com/en-us/azure/redis/how-to-redis-access-data) | troubleshooting | 0.65 | Page focuses on using Redis Insight and redis-cli specifically with Azure Managed Redis for accessing data and for debugging/troubleshooting. This is product-specific, tool-based guidance that likely includes concrete commands, connection details, and diagnostic usage patterns that go beyond generic Redis knowledge, fitting the troubleshooting sub-skill best among the available categories. |
 | [Migrate to Azure Managed Redis from other caches](https://learn.microsoft.com/en-us/azure/redis/migrate/migration-guide) | decision-making | 0.65 | Describes a number of approaches to migrate from on-premises or other clouds to Azure Managed Redis. Multiple approaches with guidance on choosing among them aligns with decision-making for migration strategy. |
+| [Migration using tooling](https://learn.microsoft.com/en-us/azure/redis/migrate/migrate-redis-enterprise-with-tooling) | deployment | 0.65 | The page describes a product-specific migration path from Azure Cache for Redis Enterprise tier to Azure Managed Redis, including how the hostname and access keys are handled and what clients must do post-migration. This is expert, product-specific deployment/migration guidance rather than a generic tutorial, fitting the deployment/migration sub-skill best. |
 | [Monitor Cache for Redis](https://learn.microsoft.com/en-us/azure/redis/monitor-cache) | configuration | 0.65 | Monitoring article details specific metrics, logs, and Azure Monitor configuration for this service. |
 | [Overview](https://learn.microsoft.com/en-us/azure/redis/migrate/migrate-basic-standard-premium-overview) | decision-making | 0.65 | Migration overview content that likely includes phase-based guidance, recommended approaches, and when to choose specific migration paths for Azure Cache for Redis to Azure Managed Redis. This is migration decision guidance rather than just conceptual overview. |
 | [Planning FAQs](https://learn.microsoft.com/en-us/azure/redis/planning-faq) | decision-making | 0.65 | Planning FAQ typically covers SKU/tier selection, sizing, and deployment considerations with scenario-based guidance. |

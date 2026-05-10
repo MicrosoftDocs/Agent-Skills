@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-05-03'
+generated_at: '2026-05-10'
 category_descriptions:
-  configuration: 'Configuring Stream Analytics jobs: inputs, outputs (SQL, Cosmos
-    DB, Event Hubs, Kafka, Power BI, Delta Lake, etc.), autoscale, monitoring/alerts,
-    event policies, error handling, and job compatibility.'
+  configuration: 'Configuring Stream Analytics jobs: inputs/outputs (SQL, Cosmos DB,
+    Event Hubs, Kafka, Power BI, Delta Lake, etc.), partitioning, autoscale, compatibility,
+    monitoring, and error/late-event policies.'
   security: Securing Stream Analytics with managed identities, private endpoints,
     VNets, data protection, credential rotation, and Azure Policy for outputs like
     Event Hubs, SQL, Cosmos DB, Blob, Service Bus, Power BI.
@@ -31,17 +31,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Stream Analytics development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when wiring ASA with Event Hubs/Kafka, Cosmos/SQL/Delta outputs, ML/AML scoring,
-  UDFs, or IoT Edge jobs, and other Azure Stream Analytics related development tasks.
-  Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure Data Factory
-  (use azure-data-factory), Azure Event Hubs (use azure-event-hubs), Azure HDInsight
-  (use azure-hdinsight).
-use_when: Use when wiring ASA with Event Hubs/Kafka, Cosmos/SQL/Delta outputs, ML/AML
-  scoring, UDFs, or IoT Edge jobs, and other Azure Stream Analytics related development
+  Use when building ASA jobs with Event Hubs/Kafka, Cosmos DB/SQL outputs, ML/AML
+  scoring, UDFs, or IoT Edge, and other Azure Stream Analytics related development
+  tasks. Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure Data
+  Explorer (use azure-data-explorer), Azure Event Hubs (use azure-event-hubs), Azure
+  Functions (use azure-functions).
+use_when: Use when building ASA jobs with Event Hubs/Kafka, Cosmos DB/SQL outputs,
+  ML/AML scoring, UDFs, or IoT Edge, and other Azure Stream Analytics related development
   tasks.
 confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics),
-  Azure Data Factory (use azure-data-factory), Azure Event Hubs (use azure-event-hubs),
-  Azure HDInsight (use azure-hdinsight).
+  Azure Data Explorer (use azure-data-explorer), Azure Event Hubs (use azure-event-hubs),
+  Azure Functions (use azure-functions).
 ---
 # Azure Stream Analytics Crawl Report
 
@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 18
-- **Unchanged**: 149
+- **Updated Pages**: 1
+- **Unchanged**: 166
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-stream-analytics/azure-stream-analytics.csv`
 
@@ -79,42 +79,8 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 
 ### Updated Pages
 
-- [Capture Event Hubs data in Delta Lake format](https://learn.microsoft.com/en-us/azure/stream-analytics/capture-event-hub-data-delta-lake)
-  - Updated: 2024-08-09T11:21:00.000Z → 2026-04-30T17:19:00.000Z
-- [Filter and ingest to Azure Data Explorer](https://learn.microsoft.com/en-us/azure/stream-analytics/no-code-filter-ingest-data-explorer)
-  - Updated: 2024-08-09T11:21:00.000Z → 2025-09-15T22:11:00.000Z
-- [Azure Blob Storage & Azure Data Lake Gen2](https://learn.microsoft.com/en-us/azure/stream-analytics/blob-output-managed-identity)
-  - Updated: 2023-10-12T11:16:00.000Z → 2026-04-30T17:19:00.000Z
-- [Power BI](https://learn.microsoft.com/en-us/azure/stream-analytics/powerbi-output-managed-identity)
-  - Updated: 2023-08-16T21:54:00.000Z → 2026-04-30T17:19:00.000Z
-- [Azure SQL DB & Azure Synapse Analytics](https://learn.microsoft.com/en-us/azure/stream-analytics/sql-database-output-managed-identity)
-  - Updated: 2023-11-10T08:00:00.000Z → 2026-04-30T17:19:00.000Z
-- [Update or merge in a SQL Database with Azure Functions](https://learn.microsoft.com/en-us/azure/stream-analytics/sql-database-upsert)
-  - Updated: 2024-07-26T05:35:00.000Z → 2026-04-30T17:19:00.000Z
-- [Write output data to delta table in ADLS Gen2](https://learn.microsoft.com/en-us/azure/stream-analytics/write-to-delta-table-adls-gen2)
-  - Updated: 2024-01-29T08:00:00.000Z → 2026-04-30T17:19:00.000Z
-- [Integrate third party services using Azure Functions](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-with-azure-functions)
-  - Updated: 2024-03-29T08:00:00.000Z → 2026-04-29T08:00:00.000Z
-- [Stream Analytics Cluster](https://learn.microsoft.com/en-us/azure/stream-analytics/cluster-overview)
-  - Updated: 2025-03-05T08:00:00.000Z → 2026-04-30T17:19:00.000Z
-- [Choose a streaming analytics technology](https://learn.microsoft.com/en-us/azure/stream-analytics/streaming-technologies)
-  - Updated: 2024-01-29T08:00:00.000Z → 2026-04-30T17:19:00.000Z
-- [Inputs overview](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-add-inputs)
-  - Updated: 2026-03-02T23:28:00.000Z → 2026-04-30T17:19:00.000Z
-- [Reference data inputs](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-use-reference-data)
-  - Updated: 2024-02-26T08:00:00.000Z → 2026-04-29T08:00:00.000Z
-- [Power BI](https://learn.microsoft.com/en-us/azure/stream-analytics/power-bi-output)
-  - Updated: 2025-01-23T08:00:00.000Z → 2026-04-30T17:19:00.000Z
-- [Improve query performance](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-parallelization)
-  - Updated: 2024-12-17T08:00:00.000Z → 2026-04-29T08:00:00.000Z
-- [No code editor](https://learn.microsoft.com/en-us/azure/stream-analytics/no-code-stream-processing)
-  - Updated: 2023-07-10T15:04:00.000Z → 2026-04-29T08:00:00.000Z
-- [Autoscale jobs](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-autoscale)
-  - Updated: 2024-05-28T08:00:00.000Z → 2026-04-29T08:00:00.000Z
-- [CI/CD overview](https://learn.microsoft.com/en-us/azure/stream-analytics/cicd-overview)
-  - Updated: 2025-01-24T05:34:00.000Z → 2026-04-30T17:19:00.000Z
-- [Build, test, and deploy with PowerShell](https://learn.microsoft.com/en-us/azure/stream-analytics/cicd-tools)
-  - Updated: 2025-01-23T08:00:00.000Z → 2026-04-30T17:19:00.000Z
+- [Write data to Delta Lake](https://learn.microsoft.com/en-us/azure/stream-analytics/write-to-delta-lake)
+  - Updated: 2024-06-07T05:36:00.000Z → 2026-05-07T17:21:00.000Z
 
 ## Classified Pages
 
@@ -149,7 +115,6 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | [Job simulation](https://learn.microsoft.com/en-us/azure/stream-analytics/optimize-query-using-job-diagram-simulator) | best-practices | 0.80 | Provides guidance on evaluating query parallelism and SU usage with Job Simulation, including concrete recommendations and product-specific performance tuning patterns. |
 | [Pair jobs for reliability](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-job-reliability) | best-practices | 0.80 | Focused on avoiding service interruptions and making jobs upgrade-resilient; likely includes concrete recommendations (paired regions, deployment patterns) specific to Stream Analytics. |
 | [Understand and adjust Streaming Units](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-streaming-unit-consumption) | limits-quotas | 0.80 | Explains SU configurations and conversions; these pages usually include numeric SU-to-resource mappings, scaling limits, and configuration ranges that qualify as limits/quotas. |
-| [Write data to Delta Lake](https://learn.microsoft.com/en-us/azure/stream-analytics/write-to-delta-lake) | configuration | 0.80 | Describes the native Delta Lake output connector, modes, and optimization for high-speed ingestion; includes product-specific configuration options for Delta outputs. |
 | [Azure Blob and Data Lake output overview](https://learn.microsoft.com/en-us/azure/stream-analytics/blob-storage-azure-data-lake-gen2-output) | configuration | 0.75 | Explains using Blob and ADLS Gen2 as outputs, including capabilities and likely configuration options for output paths and formats. |
 | [Azure SQL DB & Azure Synapse Analytics](https://learn.microsoft.com/en-us/azure/stream-analytics/sql-database-output-managed-identity) | security | 0.75 | Explains managed identity authentication from Stream Analytics to Azure SQL Database and Azure Synapse Analytics; such articles typically specify required roles/permissions and configuration parameters, fitting the security sub-skill. |
 | [Azure Synapse Analytics](https://learn.microsoft.com/en-us/azure/stream-analytics/azure-synapse-analytics-output) | configuration | 0.75 | Describes using a dedicated SQL pool as output with throughput characteristics and table requirements; includes product-specific output configuration details. |
@@ -200,6 +165,7 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | [Update credentials](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-login-credentials-inputs-outputs) | security | 0.70 | Covers updating credentials and resuming jobs; this is identity/credential management with product-specific operational steps and constraints (must stop job, resume from last output). |
 | [Use ML REST APIs](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-how-to-configure-azure-machine-learning-endpoints-in-stream-analytics) | integrations | 0.70 | Covers how to wire Azure Machine Learning Studio (classic) web service endpoints as UDFs in Stream Analytics, including endpoint configuration details that are product-specific integration patterns. |
 | [Watermark delay increase](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-job-analysis-with-metric-dimensions) | best-practices | 0.70 | Explains how to interpret specific metrics like watermark delay and backlogged events to assess performance; provides product-specific guidance on what to monitor and how. |
+| [Write data to Delta Lake](https://learn.microsoft.com/en-us/azure/stream-analytics/write-to-delta-lake) | configuration | 0.70 | The page describes how to configure the native Delta Lake output connector for Azure Stream Analytics, including product-specific output settings and behaviors (such as append mode to Delta tables in ADLS Gen2). These are concrete, service-specific configuration details rather than just conceptual guidance. |
 | [Anomaly detection](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-machine-learning-anomaly-detection) | integrations | 0.68 | The page describes product-specific built-in ML functions (AnomalyDetection_SpikeAndDip and AnomalyDetection_ChangePoint) for Azure Stream Analytics, including how to apply them directly in Stream Analytics jobs. These are concrete, service-specific function patterns and parameters for integrating Azure Stream Analytics with ML-based anomaly detection, which go beyond generic ML or anomaly detection concepts. |
 | [Improve query performance](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-parallelization) | best-practices | 0.68 | Describes product-specific guidance on scaling Stream Analytics jobs via input partitioning, query tuning, and streaming unit configuration. This is actionable, service-specific performance/scaling advice rather than generic concepts, fitting best-practices. Not clearly focused on numeric limits/quotas or deployment matrices. |
 | [Set up CI/CD pipeline](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-tools-for-visual-studio-cicd) | deployment | 0.68 | Describes a NuGet package that adds MSBuild, local run, and deployment tooling; includes product-specific build/deploy configuration for CI/CD. |

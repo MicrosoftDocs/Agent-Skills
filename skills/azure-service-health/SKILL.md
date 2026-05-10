@@ -1,14 +1,14 @@
 ---
 name: azure-service-health
-description: Expert knowledge for Azure Service Health development including troubleshooting, security, configuration, and integrations & coding patterns. Use when integrating Service Health via APIs/webhooks, configuring alerts as code, or diagnosing VM Resource Health issues, and other Azure Service Health related development tasks. Not for Azure Monitor (use azure-monitor), Azure Reliability (use azure-reliability), Azure Resiliency (use azure-resiliency), Azure Quotas (use azure-quotas).
+description: Expert knowledge for Azure Service Health development including troubleshooting, limits & quotas, security, configuration, and integrations & coding patterns. Use when integrating Service Health via APIs/webhooks, configuring alerts as code, or diagnosing VM Resource Health events, and other Azure Service Health related development tasks. Not for Azure Monitor (use azure-monitor), Azure Reliability (use azure-reliability), Azure Resiliency (use azure-resiliency), Azure Quotas (use azure-quotas).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-03"
+  generated_at: "2026-05-10"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Service Health Skill
 
-This skill provides expert guidance for Azure Service Health. Covers troubleshooting, security, configuration, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Service Health. Covers troubleshooting, limits & quotas, security, configuration, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -24,15 +24,21 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L32-L36 | Understanding VM Resource Health annotations, diagnosing VM health issues, and troubleshooting platform or user-caused VM availability and performance problems |
-| Security | L37-L45 | Managing who can see Azure Service Health and security advisories using tenant admin roles, RBAC, and subscription vs tenant-level access configuration |
-| Configuration | L46-L54 | Configuring Service Health and Resource Health alerts via ARM/Bicep/PowerShell and querying Service Health data/fields with Azure Resource Graph. |
-| Integrations & Coding Patterns | L55-L64 | Using APIs, Resource Graph, webhooks, and connectors (OpsGenie, PagerDuty, ServiceNow) to query, route, and integrate Azure Service Health and Security advisories into external systems |
+| Troubleshooting | L33-L37 | Understanding VM Resource Health annotations, diagnosing VM health issues, and troubleshooting platform or user-caused VM availability and performance problems |
+| Limits & Quotas | L38-L42 | Details on how long Azure Service Health notifications are kept, their lifecycle stages, and retention behavior for different event types and channels |
+| Security | L43-L51 | Managing access and permissions for Azure Service Health and security advisories, including tenant vs subscription scope, admin roles, and RBAC for viewing history and alerts |
+| Configuration | L52-L60 | Configuring Service Health and Resource Health alerts via ARM/Bicep/PowerShell and querying Service Health data/fields with Azure Resource Graph. |
+| Integrations & Coding Patterns | L61-L70 | Using APIs, Resource Graph, webhooks, and connectors (OpsGenie, PagerDuty, ServiceNow) to query, route, and integrate Azure Service Health and Security advisories into external systems |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
 | Interpret and troubleshoot VM Resource Health annotations | https://learn.microsoft.com/en-us/azure/service-health/resource-health-vm-annotation |
+
+### Limits & Quotas
+| Topic | URL |
+|-------|-----|
+| Understand lifecycle and retention of Service Health notifications | https://learn.microsoft.com/en-us/azure/service-health/service-health-notification-transitions |
 
 ### Security
 | Topic | URL |

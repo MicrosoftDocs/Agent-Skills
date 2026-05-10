@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-05-03'
+generated_at: '2026-05-10'
 category_descriptions:
-  integrations: 'Patterns and how-tos for wiring Managed Grafana to Azure data/AI
-    services: MCP and AI Foundry, Prometheus/AKS, Azure Monitor, App Insights, Data
-    Explorer, alerts, and data source plugins.'
+  integrations: Integrating Managed Grafana with Azure/AKS Prometheus, Azure Monitor,
+    App Insights, Azure Data Explorer, MCP/Azure AI Foundry, and managing data source
+    plugins and alert flows.
   security: 'Securing Managed Grafana: auth/permissions, roles and team sync, private
     endpoints and outbound IPs, data encryption, service accounts/tokens, and security
     best practices.'
@@ -20,15 +20,15 @@ category_descriptions:
     access, configuration, and private endpoint connectivity and DNS problems.
 skill_description: Expert knowledge for Azure Managed Grafana development including
   troubleshooting, decision making, limits & quotas, security, configuration, integrations
-  & coding patterns, and deployment. Use when integrating Azure Monitor/App Insights,
-  Prometheus/AKS, configuring plugins/alerts, or enabling zone-redundant workspaces,
+  & coding patterns, and deployment. Use when wiring Azure Monitor/Prometheus data,
+  configuring workspaces, private endpoints, email alerts, or image/report rendering,
   and other Azure Managed Grafana related development tasks. Not for Azure Monitor
-  (use azure-monitor), Azure Data Explorer (use azure-data-explorer).
-use_when: Use when integrating Azure Monitor/App Insights, Prometheus/AKS, configuring
-  plugins/alerts, or enabling zone-redundant workspaces, and other Azure Managed Grafana
+  (use azure-monitor), Azure Sre Agent (use azure-sre-agent).
+use_when: Use when wiring Azure Monitor/Prometheus data, configuring workspaces, private
+  endpoints, email alerts, or image/report rendering, and other Azure Managed Grafana
   related development tasks.
-confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Data Explorer
-  (use azure-data-explorer).
+confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Sre Agent (use
+  azure-sre-agent).
 ---
 # Azure Managed Grafana Crawl Report
 
@@ -41,9 +41,9 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Data Explor
 - **Unclassified**: 9
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 3
-- **Unchanged**: 40
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 43
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-managed-grafana/azure-managed-grafana.csv`
 
@@ -62,18 +62,10 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Data Explor
 
 ## Changes
 
-### New Pages
-
-- [Ingest data via OpenTelemetry Collector](https://learn.microsoft.com/en-us/azure/managed-grafana/grafana-opentelemetry-app-insights)
-
 ### Updated Pages
 
-- [Grafana settings](https://learn.microsoft.com/en-us/azure/managed-grafana/grafana-settings)
-  - Updated: 2025-11-18T18:43:00.000Z → 2026-04-23T17:12:00.000Z
-- [Remote MCP server](https://learn.microsoft.com/en-us/azure/managed-grafana/grafana-mcp-server)
-  - Updated: 2026-04-09T17:25:00.000Z → 2026-04-23T17:12:00.000Z
-- [Manage access and permissions for users and identities](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-manage-access-permissions-users-identities)
-  - Updated: 2025-02-20T12:33:00.000Z → 2026-04-20T22:11:00.000Z
+- [Ingest data via OpenTelemetry Collector](https://learn.microsoft.com/en-us/azure/managed-grafana/grafana-opentelemetry-app-insights)
+  - Updated: 2026-04-21T22:10:00.000Z → 2026-05-04T22:15:00.000Z
 
 ## Classified Pages
 
@@ -96,7 +88,6 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Data Explor
 | [Configure data sources](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-data-source-plugins-managed-identity) | integrations | 0.75 | Covers supported data sources per plan and how to add/configure/remove them; includes plan-specific support matrix and data source configuration details. |
 | [Connect to a data source privately](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-connect-to-data-source-privately) | security | 0.75 | Explains managed private endpoints in a managed VNet and how they link to Azure data sources; product-specific private connectivity configuration. |
 | [Use deterministic outbound IPs](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-deterministic-ip) | security | 0.75 | Describes deterministic outbound IP feature, plan requirement (Standard), and firewall rule configuration; product-specific networking and security behavior. |
-| [Ingest data via OpenTelemetry Collector](https://learn.microsoft.com/en-us/azure/managed-grafana/grafana-opentelemetry-app-insights) | integrations | 0.74 | Describes running an OpenTelemetry Collector with Azure Monitor Exporter and wiring specific tools (GitHub Copilot, Claude Code, OpenClaw) into Application Insights for Azure Managed Grafana dashboards. This is a concrete integration pattern with product-specific configuration and pipeline details. |
 | [Add an Azure Monitor workspace](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-connect-azure-monitor-workspace) | integrations | 0.70 | Product-specific integration between Azure Monitor workspace (managed Prometheus) and Managed Grafana with configuration steps and parameters. |
 | [Agent Framework Workflow dashboard](https://learn.microsoft.com/en-us/azure/managed-grafana/agent-framework-workflow-dashboard) | integrations | 0.70 | Prebuilt dashboard for multi-agent workflows with OpenTelemetry and Application Insights; product-specific metrics and visualization patterns. |
 | [Configure MCP for AI Foundry agents](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-configure-mcp-for-ai-foundry) | integrations | 0.70 | Covers how to wire the Azure Managed Grafana MCP endpoint into Azure AI Foundry agents so they can query Azure resources, metrics, logs, and dashboards. This is a product-specific integration pattern between two Azure services with concrete configuration steps and parameters. |
@@ -104,6 +95,7 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Data Explor
 | [Enable Grafana Enterprise](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-grafana-enterprise) | decision-making | 0.70 | Describes prerequisites (Standard plan), plan options, and how to update plans; supports decision-making about Enterprise add-on usage and access to plugins. |
 | [Enable zone redundancy](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-enable-zone-redundancy) | deployment | 0.70 | Describes zone redundancy option, availability zone usage, and billing implications; product-specific deployment/reliability configuration. |
 | [Encryption](https://learn.microsoft.com/en-us/azure/managed-grafana/encryption) | security | 0.70 | Product-specific description of how data is stored and encrypted; includes implementation details not obvious from generic knowledge. |
+| [Ingest data via OpenTelemetry Collector](https://learn.microsoft.com/en-us/azure/managed-grafana/grafana-opentelemetry-app-insights) | integrations | 0.70 | The page describes an end-to-end ingestion pipeline using OpenTelemetry Collector with the Azure Monitor Exporter and configuring multiple source applications (GitHub Copilot, Claude Code, OpenClaw). This implies product-specific integration details and configuration parameters for wiring OTLP to Application Insights and Azure Managed Grafana dashboards, which go beyond generic concepts and constitute expert integration knowledge. |
 | [Manage plugins](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-manage-plugins) | configuration | 0.70 | Explains how to add/remove plugins via Azure portal rather than Grafana UI/CLI; product-specific configuration path and constraints. |
 | [Microsoft Foundry dashboard](https://learn.microsoft.com/en-us/azure/managed-grafana/azure-ai-foundry-dashboard) | integrations | 0.70 | Prebuilt dashboard for AI metrics (latency, throughput, token usage); includes specific metrics, queries, and panel configurations tied to Azure AI Foundry. |
 | [Migrate to Azure Managed Grafana](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-migrate) | decision-making | 0.70 | Migration guide with what can be migrated automatically and how; supports decision-making and concrete migration steps between environments. |

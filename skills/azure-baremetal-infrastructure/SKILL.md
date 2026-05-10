@@ -1,9 +1,9 @@
 ---
 name: azure-baremetal-infrastructure
-description: Expert knowledge for Azure Baremetal Infrastructure development including decision making, and architecture & design patterns. Use when planning NC2 on Azure BareMetal regions/SKUs, cluster sizing, HA layouts, and VNet/ExpressRoute integration, and other Azure Baremetal Infrastructure related development tasks. Not for Azure Large Instances (use azure-large-instances), Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Machine Scale Sets (use azure-vm-scalesets), SAP HANA on Azure Large Instances (use azure-sap).
+description: Expert knowledge for Azure Baremetal Infrastructure development including decision making, and architecture & design patterns. Use when planning NC2 on Azure BareMetal regions/SKUs, deployment topologies, Azure integrations, HA, or networking, and other Azure Baremetal Infrastructure related development tasks. Not for Azure Large Instances (use azure-large-instances), Azure Virtual Machines (use azure-virtual-machines), Azure VMware Solution (use azure-vmware-solution), SAP HANA on Azure Large Instances (use azure-sap).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-19"
+  generated_at: "2026-05-10"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Baremetal Infrastructure Skill
@@ -24,13 +24,13 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Decision Making | L30-L34 | Guidance on choosing Azure regions and bare metal SKUs for Nutanix Cloud Clusters, including capacity, performance, and availability considerations. |
+| Decision Making | L30-L34 | Guidance on choosing Azure regions and bare metal SKUs for Nutanix Cloud Clusters, including availability, sizing, and placement considerations. |
 | Architecture & Design Patterns | L35-L38 | NC2 on Azure BareMetal architecture choices, deployment topologies, integration patterns with Azure services, and design considerations for performance, HA, and networking. |
 
 ### Decision Making
 | Topic | URL |
 |-------|-----|
-| Select regions and SKUs for Nutanix Cloud Clusters on Azure | https://learn.microsoft.com/en-us/azure/baremetal-infrastructure/workloads/nc2-on-azure/available-regions-skus |
+| Select Azure regions and SKUs for Nutanix Cloud Clusters | https://learn.microsoft.com/en-us/azure/baremetal-infrastructure/workloads/nc2-on-azure/available-regions-skus |
 
 ### Architecture & Design Patterns
 | Topic | URL |

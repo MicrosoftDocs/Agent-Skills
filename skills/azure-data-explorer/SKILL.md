@@ -1,9 +1,9 @@
 ---
 name: azure-data-explorer
-description: Expert knowledge for Azure Data Explorer development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when securing ADX clusters, configuring ingestion/retention, integrating via Kusto/SQL APIs, or optimizing cost/perf, and other Azure Data Explorer related development tasks. Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure HDInsight (use azure-hdinsight), Azure Databricks (use azure-databricks), Azure Stream Analytics (use azure-stream-analytics).
+description: Expert knowledge for Azure Data Explorer development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when securing clusters, configuring ingestion, integrating clients/BI tools, tuning queries, or troubleshooting ADX, and other Azure Data Explorer related development tasks. Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure Stream Analytics (use azure-stream-analytics), Azure HDInsight (use azure-hdinsight), Azure Databricks (use azure-databricks).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-03"
+  generated_at: "2026-05-10"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Data Explorer Skill
@@ -31,7 +31,7 @@ This skill requires **network access** to fetch documentation content:
 | Limits & Quotas | L81-L91 | Cluster limits and behaviors: free cluster quotas, auto-stop, safe delete/recover, ingestion file size and invalid data handling, and supported data/compression formats. |
 | Security | L92-L119 | Securing ADX clusters: auth/RBAC, managed identities, encryption/CMK, network isolation (private endpoints, outbound/public access), policies, locks, and privacy data purge. |
 | Configuration | L120-L136 | Configuring ADX clusters, schemas, policies, plugins, and data connections, plus emulator setup, KQL/T-SQL use, monitoring refs, and web UI settings/profiles/shortcuts. |
-| Integrations & Coding Patterns | L137-L170 | Integrating ADX with tools and services: SQL/JDBC/ODBC, PowerShell, Power Automate/Apps, Logic Apps, Functions, Grafana, Splunk, OpenTelemetry, Tableau, Python, MATLAB, Sisense, and more. |
+| Integrations & Coding Patterns | L137-L170 | Integrating ADX with tools and services (SQL, ODBC/JDBC, Power Automate/Apps, Functions, Grafana, Splunk, OpenTelemetry, Tableau, MATLAB, etc.) and coding/query patterns for those connections. |
 | Deployment | L171-L177 | Provisioning and automating ADX environments, deploying schema via Azure DevOps, and migrating clusters to availability zones and from VNet injection to private endpoints. |
 
 ### Troubleshooting
@@ -149,7 +149,7 @@ This skill requires **network access** to fetch documentation content:
 | Ingest data from Splunk Universal Forwarder into Azure Data Explorer | https://learn.microsoft.com/en-us/azure/data-explorer/ingest-data-splunk-uf |
 | Configure Telegraf Azure Data Explorer output plugin | https://learn.microsoft.com/en-us/azure/data-explorer/ingest-data-telegraf |
 | Use ADX input/output bindings in Azure Functions | https://learn.microsoft.com/en-us/azure/data-explorer/integrate-azure-functions |
-| Connect MCP AI agents to Azure Data Explorer | https://learn.microsoft.com/en-us/azure/data-explorer/integrate-mcp-servers |
+| Integrate MCP servers with Azure Data Explorer clusters | https://learn.microsoft.com/en-us/azure/data-explorer/integrate-mcp-servers |
 | Configure K2Bridge to use Azure Data Explorer in Kibana | https://learn.microsoft.com/en-us/azure/data-explorer/k2bridge |
 | Query ADX from Jupyter using Kqlmagic | https://learn.microsoft.com/en-us/azure/data-explorer/kqlmagic |
 | Query ADX as a linked server from SQL Server | https://learn.microsoft.com/en-us/azure/data-explorer/linked-server |

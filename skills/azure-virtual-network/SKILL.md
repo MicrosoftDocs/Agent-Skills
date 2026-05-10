@@ -3,7 +3,7 @@ name: azure-virtual-network
 description: Expert knowledge for Azure Virtual Network development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and deployment. Use when configuring VNets, peering, gateways/LBs/firewalls, NSGs/service endpoints, or VNet encryption policies, and other Azure Virtual Network related development tasks. Not for Azure Networking (use azure-networking), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-03"
+  generated_at: "2026-05-10"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Virtual Network Skill
@@ -28,10 +28,10 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L42-L53 | Network performance and connectivity guidance: VNet design, NSGs, service endpoints, outbound access, MTU/TCP tuning, and tools to test throughput and latency on Azure VMs. |
 | Decision Making | L54-L63 | Guidance on design choices: when to use accelerated networking, routing preferences, VNets vs appliances, IP upgrade paths, VNet integration options, and cost/performance trade-offs. |
 | Architecture & Design Patterns | L64-L73 | Designing VNet architectures: subnet extension for migrations, VNet peering, hybrid two-tier apps, traffic mirroring with TAP, topology planning, and custom routing options. |
-| Limits & Quotas | L74-L80 | VM networking limits: MANA support per VM size, static public IP assignment and quotas, and per-VM network throughput caps and constraints. |
-| Security | L81-L89 | Securing virtual networks with policies and encryption, including Kubernetes network policies, Azure Policy for VNets, VNet encryption, and restricting storage egress via service endpoint policies. |
-| Configuration | L90-L119 | Configuring Azure Virtual Network: IP addressing (public/private/custom prefixes, IPv4/IPv6), DNS, DHCP, subnet peering/delegation, monitoring, policies, and gateway/load balancer/firewall IP setup. |
-| Deployment | L120-L123 | Guidance for upgrading Azure Basic public IP addresses to Standard SKU, including requirements, steps, and considerations for network resources and downtime. |
+| Limits & Quotas | L74-L79 | VM networking limits: MANA support per VM size, static public IP assignment and quotas, and per-VM network throughput caps and constraints. |
+| Security | L80-L88 | Securing virtual networks with policies and encryption, including Kubernetes network policies, Azure Policy for VNets, VNet encryption, and restricting storage egress via service endpoint policies. |
+| Configuration | L89-L117 | Configuring Azure Virtual Network: IP addressing (public/private/custom prefixes, IPv4/IPv6), DNS, DHCP, subnet peering/delegation, monitoring, policies, and gateway/load balancer/firewall IP setup. |
+| Deployment | L118-L121 | Guidance for upgrading Azure Basic public IP addresses to Standard SKU, including requirements, steps, and considerations for network resources and downtime. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -74,7 +74,6 @@ This skill requires **network access** to fetch documentation content:
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
-| Check MANA support and constraints for existing VM sizes | https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-existing-sizes |
 | Create Azure VM with static public IP and understand IP limits | https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/virtual-network-static-public-ip |
 | Understand Azure VM network throughput limits | https://learn.microsoft.com/en-us/azure/virtual-network/virtual-machine-network-throughput |
 
@@ -90,7 +89,6 @@ This skill requires **network access** to fetch documentation content:
 ### Configuration
 | Topic | URL |
 |-------|-----|
-| Configure MANA behavior for NVA workloads with Azure Policy | https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-network-virtual-appliance-opt-out |
 | Configure subnet peering for Azure virtual networks | https://learn.microsoft.com/en-us/azure/virtual-network/how-to-configure-subnet-peering |
 | Create and configure an encrypted Azure virtual network | https://learn.microsoft.com/en-us/azure/virtual-network/how-to-create-encryption |
 | Deploy a DHCP server VM for on-premises clients | https://learn.microsoft.com/en-us/azure/virtual-network/how-to-dhcp-azure |

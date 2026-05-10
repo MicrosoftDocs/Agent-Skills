@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-03'
+generated_at: '2026-05-10'
 category_descriptions:
   limits-quotas: Customizing test run fields and understanding Azure Test Plans FAQs,
     data retention policies, and limits on test data storage and usage.
@@ -24,52 +24,38 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Boards (use a
 
 ## Summary
 
-- **Total Pages**: 33
-- **Fetched**: 33
+- **Total Pages**: 34
+- **Fetched**: 34
 - **Fetch Failed**: 0
 - **Classified**: 4
-- **Unclassified**: 29
+- **Unclassified**: 30
 
 ### Incremental Update
 - **New Pages**: 1
-- **Updated Pages**: 6
-- **Unchanged**: 26
-- **Deleted Pages**: 1
+- **Updated Pages**: 1
+- **Unchanged**: 32
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-test-plans/azure-test-plans.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| integrations | 1 | 3.0% |
-| limits-quotas | 2 | 6.1% |
-| security | 1 | 3.0% |
-| *(Unclassified)* | 29 | 87.9% |
+| integrations | 1 | 2.9% |
+| limits-quotas | 2 | 5.9% |
+| security | 1 | 2.9% |
+| *(Unclassified)* | 30 | 88.2% |
 
 ## Changes
 
 ### New Pages
 
-- [Navigate Test Plans](https://learn.microsoft.com/en-us/azure/devops/test/navigate-test-plans?view=azure-devops)
+- [Set up automated testing](https://learn.microsoft.com/en-us/azure/devops/test/automated-testing-overview?view=azure-devops)
 
 ### Updated Pages
 
-- [Create & manage test cases](https://learn.microsoft.com/en-us/azure/devops/test/create-test-cases?view=azure-devops)
-  - Updated: 2026-04-17T21:04:00.000Z → 2026-04-29T01:05:00.000Z
-- [Test different configurations](https://learn.microsoft.com/en-us/azure/devops/test/test-different-configurations?view=azure-devops)
-  - Updated: 2026-03-03T18:05:00.000Z → 2026-04-29T01:05:00.000Z
-- [Import and export test cases](https://learn.microsoft.com/en-us/azure/devops/test/bulk-import-export-test-cases?view=azure-devops)
-  - Updated: 2026-04-08T21:05:00.000Z → 2026-04-23T08:00:00.000Z
-- [Run manual tests](https://learn.microsoft.com/en-us/azure/devops/test/run-manual-tests?view=azure-devops)
-  - Updated: 2026-04-07T01:04:00.000Z → 2026-04-28T08:00:00.000Z
-- [Manage test runs](https://learn.microsoft.com/en-us/azure/devops/test/test-runs?view=azure-devops)
-  - Updated: 2026-03-18T21:04:00.000Z → 2026-04-30T01:06:00.000Z
-- [Manual testing FAQs](https://learn.microsoft.com/en-us/azure/devops/test/reference-qa?view=azure-devops)
-  - Updated: 2026-04-08T21:05:00Z → 2026-04-22T21:02:00Z
-
-### Deleted Pages
-
-- ~~Tour Test Plans~~ (https://learn.microsoft.com/en-us/azure/devops/test/navigate-test-plans?view=azure-devops)
+- [Copy or clone test items](https://learn.microsoft.com/en-us/azure/devops/test/copy-clone-test-items?view=azure-devops)
+  - Updated: 2026-03-18T21:04:00.000Z → 2026-05-07T08:00:00.000Z
 
 ## Classified Pages
 
@@ -100,7 +86,7 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Boards (use a
 | [Repeat a test with different data](https://learn.microsoft.com/en-us/azure/devops/test/repeat-test-with-different-data?view=azure-devops) | 0.25 | Shows how to parameterize manual tests and reuse data; procedural but lacks numeric limits, config tables, or troubleshooting mappings. |
 | [Run automated tests from test plans](https://learn.microsoft.com/en-us/azure/devops/test/run-automated-tests-from-test-hub?view=azure-devops) | 0.25 | Explains how to run automated tests from test plans; focused on triggering tests via UI/pipelines, not on quotas, configuration matrices, or error diagnostics. |
 | [Track test status](https://learn.microsoft.com/en-us/azure/devops/test/track-test-status?view=azure-devops) | 0.25 | Viewing test status and charts; reporting how-to without numeric system limits or config matrices. |
-| [Copy or clone test items](https://learn.microsoft.com/en-us/azure/devops/test/copy-clone-test-items?view=azure-devops) | 0.20 | Describes copy/clone/import operations for test artifacts; general feature usage without numeric limits, config matrices, or error mappings. |
+| [Copy or clone test items](https://learn.microsoft.com/en-us/azure/devops/test/copy-clone-test-items?view=azure-devops) | 0.20 | How-to guidance for copying/cloning test artifacts; no evidence of numeric limits, configuration parameter tables, error-code-based troubleshooting, or other product-specific expert details. |
 | [Create & manage test cases](https://learn.microsoft.com/en-us/azure/devops/test/create-test-cases?view=azure-devops) | 0.20 | How-to guide for creating manual test cases; lacks numeric limits, configuration parameter tables, or detailed troubleshooting mappings. |
 | [Create & manage test plans](https://learn.microsoft.com/en-us/azure/devops/test/create-a-test-plan?view=azure-devops) | 0.20 | How-to guide for creating/managing test plans; step-by-step UI usage without expert-only limits, configs, or decision matrices. |
 | [Create & manage test suites](https://learn.microsoft.com/en-us/azure/devops/test/create-test-suites?view=azure-devops) | 0.20 | Explains creating and managing test suites; procedural instructions but no numeric limits, configuration tables, or error diagnostics. |
@@ -110,6 +96,7 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Boards (use a
 | [Navigate Test Plans](https://learn.microsoft.com/en-us/azure/devops/test/navigate-test-plans?view=azure-devops) | 0.20 | Navigation and usage overview for Test Plans UI; no limits, config tables, error codes, or product-specific numeric thresholds. |
 | [Request & provide feedback](https://learn.microsoft.com/en-us/azure/devops/test/request-stakeholder-feedback?view=azure-devops) | 0.20 | Workflow for requesting and providing stakeholder feedback; platform/version selection but no detailed limits, configs, or troubleshooting mappings. |
 | [Run manual tests](https://learn.microsoft.com/en-us/azure/devops/test/run-manual-tests?view=azure-devops) | 0.20 | Explains running manual tests with Test Runner; no specific limits, configuration option tables, or structured troubleshooting content. |
+| [Set up automated testing](https://learn.microsoft.com/en-us/azure/devops/test/automated-testing-overview?view=azure-devops) | 0.20 | End-to-end workflow/overview for automated testing; appears conceptual and procedural without specific limits, configuration matrices, or detailed troubleshooting content. |
 | [Test different configurations](https://learn.microsoft.com/en-us/azure/devops/test/test-different-configurations?view=azure-devops) | 0.20 | Conceptual and procedural guidance on testing configurations; no explicit quotas, config parameter tables, or decision matrices with thresholds. |
 | [What is Azure Test Plans?](https://learn.microsoft.com/en-us/azure/devops/test/overview?view=azure-devops) | 0.20 | High-level overview of Azure Test Plans capabilities; no detailed limits, configs, or error mappings. |
 | [Key concepts](https://learn.microsoft.com/en-us/azure/devops/test/test-objects-overview?view=azure-devops) | 0.10 | Conceptual overview of test objects and terms; no concrete limits, configs, or troubleshooting mappings. |

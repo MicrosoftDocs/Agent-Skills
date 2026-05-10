@@ -49,8 +49,8 @@ confusable_not_for: Not for Azure Managed Redis (use azure-managed-redis), Azure
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 62
+- **Updated Pages**: 0
+- **Unchanged**: 63
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cache-redis/azure-cache-redis.csv`
 
@@ -69,11 +69,6 @@ confusable_not_for: Not for Azure Managed Redis (use azure-managed-redis), Azure
 | *(Unclassified)* | 6 | 9.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [What's new](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-whats-new)
-  - Updated: 2025-10-02T08:00:00.000Z → 2026-05-02T06:17:00.000Z
 
 ## Classified Pages
 

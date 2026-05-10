@@ -53,8 +53,8 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 31
-- **Unchanged**: 474
+- **Updated Pages**: 0
+- **Unchanged**: 505
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-factory/azure-data-factory.csv`
 
@@ -74,50 +74,6 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | *(Unclassified)* | 80 | 15.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [Mapping data flow overview](https://learn.microsoft.com/en-us/azure/data-factory/concepts-data-flow-overview)
-  - Updated: 2026-03-25T22:12:00.000Z → 2026-04-28T06:29:00.000Z
-- [Upgrade Azure Data Factory pipelines to Fabric](https://learn.microsoft.com/en-us/azure/data-factory/how-to-upgrade-your-azure-data-factory-pipelines-to-fabric-data-factory)
-  - Updated: 2026-03-04T23:27:00.000Z → 2026-04-30T17:19:00.000Z
-- [Create a data flow](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-create)
-  - Updated: 2025-09-07T11:48:00.000Z → 2026-04-28T06:29:00.000Z
-- [Amazon Redshift](https://learn.microsoft.com/en-us/azure/data-factory/connector-amazon-redshift)
-  - Updated: 2026-04-03T17:16:00.000Z → 2026-04-28T08:00:00.000Z
-- [Transformation overview](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-transformation-overview)
-  - Updated: 2026-03-25T22:12:00.000Z → 2026-04-28T06:29:00.000Z
-- [Aggregate](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-aggregate)
-  - Updated: 2026-03-25T22:12:00.000Z → 2026-04-27T08:00:00.000Z
-- [Alter row](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-alter-row)
-  - Updated: 2026-03-25T22:12:00.000Z → 2026-04-28T06:29:00.000Z
-- [Assert](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-assert)
-  - Updated: 2026-03-25T22:12:00.000Z → 2026-04-28T06:29:00.000Z
-- [Conditional split](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-conditional-split)
-  - Updated: 2026-02-26T18:46:00.000Z → 2026-04-28T06:29:00.000Z
-- [Cast](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-cast)
-  - Updated: 2026-03-25T22:12:00.000Z → 2026-04-28T06:29:00.000Z
-- [Derived column](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-derived-column)
-  - Updated: 2026-03-25T22:12:00.000Z → 2026-04-28T06:29:00.000Z
-- [External call](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-external-call)
-  - Updated: 2026-02-21T06:13:00.000Z → 2026-04-28T06:29:00.000Z
-- [Filter](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-filter)
-  - Updated: 2025-03-31T23:30:00.000Z → 2026-04-28T06:29:00.000Z
-- [Flatten](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-flatten)
-  - Updated: 2026-03-25T22:12:00.000Z → 2026-04-28T06:29:00.000Z
-- [Flowlet](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-flowlet)
-  - Updated: 2026-03-25T22:12:00.000Z → 2026-04-28T06:29:00.000Z
-- [Join](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-join)
-  - Updated: 2026-03-25T22:12:00.000Z → 2026-04-27T08:00:00.000Z
-- [Lookup](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-lookup)
-  - Updated: 2026-03-25T22:12:00.000Z → 2026-04-27T08:00:00.000Z
-- [New branch](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-new-branch)
-  - Updated: 2026-03-25T22:12:00.000Z → 2026-04-28T06:29:00.000Z
-- [Oracle](https://learn.microsoft.com/en-us/azure/data-factory/connector-oracle)
-  - Updated: 2026-04-02T08:00:00.000Z → 2026-04-09T08:00:00.000Z
-- [Parse](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-parse)
-  - Updated: 2026-02-24T06:10:00.000Z → 2026-04-27T08:00:00.000Z
-- *...and 11 more*
 
 ## Classified Pages
 

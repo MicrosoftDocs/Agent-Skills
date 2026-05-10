@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-03'
+generated_at: '2026-05-10'
 category_descriptions:
   deployment: 'Deploying and moving Azure resources with ARM/Bicep: CI/CD pipelines,
     template specs, deployment scripts, deployment stacks, and cross-subscription/region
@@ -16,9 +16,9 @@ category_descriptions:
   troubleshooting: Diagnosing and fixing ARM/Bicep deployment and syntax errors (BCP
     codes), template validation issues, policy/SKU/location/name failures, and enabling
     detailed deployment troubleshooting logs.
-  limits-quotas: 'ARM/Bicep limits and quotas: subscription/group caps, resources/params/variables/outputs,
-    tags and naming rules, deployment history, throttling, and quota‑related deployment
-    errors and fixes'
+  limits-quotas: 'ARM/Bicep limits and quotas: template size, parameters, resources,
+    outputs, tags, naming, deployment history, throttling, subscription/service quotas,
+    and how to diagnose/resolve related errors.'
   security: 'Securing ARM/Bicep deployments: handling secrets, secure parameters,
     RBAC, locks, Private Link, TLS, cross-tenant auth, policy mappings, and management
     group protection.'
@@ -34,12 +34,13 @@ skill_description: Expert knowledge for Azure Resource Manager development inclu
   Use when authoring Bicep/ARM templates, CI/CD deployments, template specs, deployment
   stacks, or ARM REST/CLI automations, and other Azure Resource Manager related development
   tasks. Not for Azure Blueprints (use azure-blueprints), Azure Policy (use azure-policy),
-  Azure Portal (use azure-portal), Azure Resource Graph (use azure-resource-graph).
+  Azure Resource Graph (use azure-resource-graph), Azure Portal (use azure-portal).
 use_when: Use when authoring Bicep/ARM templates, CI/CD deployments, template specs,
   deployment stacks, or ARM REST/CLI automations, and other Azure Resource Manager
   related development tasks.
 confusable_not_for: Not for Azure Blueprints (use azure-blueprints), Azure Policy
-  (use azure-policy), Azure Portal (use azure-portal), Azure Resource Graph (use azure-resource-graph).
+  (use azure-policy), Azure Resource Graph (use azure-resource-graph), Azure Portal
+  (use azure-portal).
 ---
 # Azure Resource Manager Crawl Report
 
@@ -66,9 +67,9 @@ confusable_not_for: Not for Azure Blueprints (use azure-blueprints), Azure Polic
 | best-practices | 42 | 9.1% |
 | configuration | 62 | 13.4% |
 | decision-making | 11 | 2.4% |
-| deployment | 54 | 11.6% |
+| deployment | 53 | 11.4% |
 | integrations | 48 | 10.3% |
-| limits-quotas | 22 | 4.7% |
+| limits-quotas | 23 | 5.0% |
 | security | 23 | 5.0% |
 | troubleshooting | 91 | 19.6% |
 | *(Unclassified)* | 107 | 23.1% |
@@ -77,8 +78,8 @@ confusable_not_for: Not for Azure Blueprints (use azure-blueprints), Azure Polic
 
 ### Updated Pages
 
-- [Create Bicep files - Visual Studio](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/quickstart-create-bicep-use-visual-studio)
-  - Updated: 2025-12-22T08:00:00.000Z → 2026-04-20T17:21:00.000Z
+- [Networking](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-limitations/networking-move-limitations)
+  - Updated: 2025-09-15T08:00:00.000Z → 2026-05-07T17:21:00.000Z
 
 ## Classified Pages
 
@@ -324,7 +325,7 @@ confusable_not_for: Not for Azure Blueprints (use azure-blueprints), Azure Polic
 | [Name generation](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/patterns-name-generation) | architecture-patterns | 0.70 | Provides a concrete pattern for generating deterministic, environment-specific resource names using Bicep functions; product-specific design pattern. |
 | [NetApp Files](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/relocation/relocation-netapp) | deployment | 0.70 | Provides service-specific guidance for moving NetApp Files volumes to another region, which is detailed deployment behavior. |
 | [Network Security Groups (NSG)](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/relocation/relocation-virtual-network-nsg) | deployment | 0.70 | Shows how to copy NSG configuration and rules to another region using ARM templates, a specific deployment/configuration pattern. |
-| [Networking](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-limitations/networking-move-limitations) | deployment | 0.70 | Provides networking-specific move guidance and guarantees about operation without interruption, which are concrete deployment characteristics. |
+| [Networking](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-limitations/networking-move-limitations) | limits-quotas | 0.70 | Move-limitation pages for Azure resources typically enumerate which specific networking resource types can or cannot be moved, along with detailed constraints (for example, dependencies that block moves, unsupported combinations, and conditional rules). These are product-specific behavioral limits that function like quotas/constraints and are not broadly known from training data, so they best fit the limits-quotas category. |
 | [No hardcoded environment URLs](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-no-hardcoded-environment-urls) | best-practices | 0.70 | The page documents a specific Bicep linter rule (no-hardcoded-environment-urls), including rule ID/name, what patterns it flags, and how to correctly parameterize or reference environment-specific URLs in Azure Resource Manager/Bicep templates. This is product-specific, actionable guidance (DO/DON'T patterns and code examples) that goes beyond generic best practices, but it does not focus on limits, configuration tables, deployment matrices, or error-code troubleshooting. |
 | [No hardcoded locations](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-no-hardcoded-location) | best-practices | 0.70 | Describes a rule that finds non-parameterized location values and how to enable it in bicepconfig.json, which is concrete Bicep guidance. |
 | [No location expressions outside of parameter default values](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-no-loc-expr-outside-params) | best-practices | 0.70 | Rule targets resourceGroup().location and deployment().location usage outside parameter defaults, a nuanced, product-specific gotcha. |

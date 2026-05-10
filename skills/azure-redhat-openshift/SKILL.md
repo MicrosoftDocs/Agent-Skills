@@ -1,9 +1,9 @@
 ---
 name: azure-redhat-openshift
-description: Expert knowledge for Azure Red Hat OpenShift development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when creating ARO clusters, configuring networking/storage, securing with Entra/NSGs, using GPUs/Key Vault, or upgrading, and other Azure Red Hat OpenShift related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Container Apps (use azure-container-apps), Azure Container Instances (use azure-container-instances), Azure VMware Solution (use azure-vmware-solution).
+description: Expert knowledge for Azure Red Hat OpenShift development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when creating ARO clusters, configuring networking/storage, securing with Entra/Key Vault, or integrating GPUs/NetApp, and other Azure Red Hat OpenShift related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Container Apps (use azure-container-apps), Azure VMware Solution (use azure-vmware-solution), Azure Virtual Machines (use azure-virtual-machines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-03"
+  generated_at: "2026-05-10"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Red Hat OpenShift Skill
@@ -29,7 +29,7 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L52-L56 | Defines the shared responsibility model for Azure Red Hat OpenShift, detailing which operational tasks are handled by Microsoft, Red Hat, and the customer. |
 | Limits & Quotas | L57-L61 | Scaling and capacity limits for ARO clusters, including configuring multiple load balancer IPs and understanding ARO versioning, support lifecycle, and upgrade constraints. |
 | Security | L62-L78 | Identity, auth, and network security for ARO: Entra/managed identities, workload identity, NSGs/egress control, disk encryption, FIPS, Front Door protection, Lockbox, and credential rotation. |
-| Configuration | L79-L97 | Configuring ARO clusters: networking (proxy, DNS, egress, MTU), storage (Azure Files, Prometheus), registry/pull secrets, node/subnet layout, Spot VMs, tagging, and health alerts. |
+| Configuration | L79-L97 | Configuring ARO clusters: networking (proxy, DNS, egress, MTU, endpoints), storage (Azure Files, Prometheus), registry, pull secrets, node subnets/Spot VMs, alerts, and resource tagging. |
 | Integrations & Coding Patterns | L98-L106 | Running ARO with external services: virtualization, NVIDIA GPUs, Azure NetApp Files, Prometheus→Azure Monitor, ACR auth, and Azure Key Vault secret integration. |
 | Deployment | L107-L118 | Deploying and operating ARO clusters and apps: cluster creation (private/ARM/Bicep), upgrades, networking migration, backups/restores, and app runtimes (JBoss, WebSphere, S2I, serverless). |
 
@@ -90,7 +90,7 @@ This skill requires **network access** to fetch documentation content:
 | Create Azure Files StorageClass for ARO 4 clusters | https://learn.microsoft.com/en-us/azure/openshift/howto-create-a-storageclass |
 | Configure custom DNS resolvers for ARO clusters | https://learn.microsoft.com/en-us/azure/openshift/howto-custom-dns |
 | Configure Azure Resource Health alerts for Azure Red Hat OpenShift | https://learn.microsoft.com/en-us/azure/openshift/howto-monitor-alerts |
-| Configure persistent storage for Prometheus on Azure Red Hat OpenShift | https://learn.microsoft.com/en-us/azure/openshift/howto-prometheus-persistence |
+| Configure Prometheus persistent storage on ARO clusters | https://learn.microsoft.com/en-us/azure/openshift/howto-prometheus-persistence |
 | Segregate ARO worker nodes into subnet groups | https://learn.microsoft.com/en-us/azure/openshift/howto-segregate-machinesets |
 | Configure Azure Spot VMs in ARO clusters | https://learn.microsoft.com/en-us/azure/openshift/howto-spot-nodes |
 | Tag ARO managed resources using Azure Policy | https://learn.microsoft.com/en-us/azure/openshift/howto-tag-resources |

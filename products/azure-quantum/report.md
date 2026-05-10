@@ -51,10 +51,10 @@ confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure Batch (
 - **Unclassified**: 99
 
 ### Incremental Update
-- **New Pages**: 7
-- **Updated Pages**: 5
-- **Unchanged**: 125
-- **Deleted Pages**: 5
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 137
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-quantum/azure-quantum.csv`
 
 ## Classification Statistics
@@ -73,37 +73,6 @@ confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure Batch (
 | *(Unclassified)* | 99 | 72.3% |
 
 ## Changes
-
-### New Pages
-
-- [VS Code reference for the QDK](https://learn.microsoft.com/en-us/azure/quantum/vscode-qdk-reference)
-- [QDK language support overview](https://learn.microsoft.com/en-us/azure/quantum/qdk-language-support-overview)
-- [OpenQASM in the QDK](https://learn.microsoft.com/en-us/azure/quantum/qdk-openqasm-integration)
-- [Submit a circuit with PennyLane](https://learn.microsoft.com/en-us/azure/quantum/quickstart-microsoft-pennylane)
-- [Overview of QDK simulators](https://learn.microsoft.com/en-us/azure/quantum/simulators-overview-qdk)
-- [Pasqal provider and targets](https://learn.microsoft.com/en-us/azure/quantum/provider-pasqal)
-- [Pasqal support policy](https://learn.microsoft.com/en-us/azure/quantum/provider-support-pasqal)
-
-### Updated Pages
-
-- [Backend simulators](https://learn.microsoft.com/en-us/azure/quantum/backend-simulators)
-  - Updated: 2025-10-15T23:23:00.000Z → 2026-04-23T15:34:00.000Z
-- [How to use the molecule visualizer](https://learn.microsoft.com/en-us/azure/quantum/how-to-use-molecule-visualizer)
-  - Updated: 2026-01-25T16:59:00.000Z → 2026-04-21T22:44:00.000Z
-- [List of quantum computing providers](https://learn.microsoft.com/en-us/azure/quantum/qc-target-list)
-  - Updated: 2025-10-15T23:11:00.000Z → 2026-04-23T15:34:00.000Z
-- [Quantum Development Kit overview](https://learn.microsoft.com/en-us/azure/quantum/qdk-main-overview)
-  - Updated: 2026-01-30T19:51:00.000Z → 2026-04-28T17:28:00.000Z
-- [Visual Studio Code agent mode](https://learn.microsoft.com/en-us/azure/quantum/qdk-vscode-agent-setup)
-  - Updated: 2025-06-16T16:59:00.000Z → 2026-04-28T15:50:00.000Z
-
-### Deleted Pages
-
-- ~~PASQAL provider and targets~~ (https://learn.microsoft.com/en-us/azure/quantum/provider-pasqal)
-- ~~PASQAL support policy~~ (https://learn.microsoft.com/en-us/azure/quantum/provider-support-pasqal)
-- ~~Overview of OpenQASM in the QDK~~ (https://learn.microsoft.com/en-us/azure/quantum/qdk-openqasm-integration)
-- ~~Python quantum language support in the QDK~~ (https://learn.microsoft.com/en-us/azure/quantum/qdk-qiskit-cirq-overview)
-- ~~VS Code reference for Q# programs~~ (https://learn.microsoft.com/en-us/azure/quantum/vscode-qsharp-reference)
 
 ## Classified Pages
 

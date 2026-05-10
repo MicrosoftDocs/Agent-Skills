@@ -41,8 +41,8 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 60
+- **Updated Pages**: 0
+- **Unchanged**: 63
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-connector/azure-service-connector.csv`
 
@@ -59,15 +59,6 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 | *(Unclassified)* | 25 | 39.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [Java JBoss EAP to MySQL](https://learn.microsoft.com/en-us/azure/service-connector/tutorial-java-jboss-connect-managed-identity-mysql-database)
-  - Updated: 2024-12-18T08:00:00.000Z → 2026-04-28T06:29:00.000Z
-- [Connect to Azure Storage using workload identity](https://learn.microsoft.com/en-us/azure/service-connector/tutorial-python-aks-storage-workload-identity)
-  - Updated: 2025-01-28T23:09:00.000Z → 2026-04-29T22:44:00.000Z
-- [Store configuration in App Configuration](https://learn.microsoft.com/en-us/azure/service-connector/tutorial-portal-app-configuration-store)
-  - Updated: 2024-04-16T11:19:00.000Z → 2026-04-28T22:22:00.000Z
 
 ## Classified Pages
 

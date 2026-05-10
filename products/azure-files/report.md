@@ -1,18 +1,18 @@
 ---
-generated_at: '2026-05-03'
+generated_at: '2026-05-10'
 category_descriptions:
-  configuration: Configuring Azure Files and Azure File Sync networking, VPN, endpoints,
-    redundancy, cloud tiering, monitoring/alerts, DFS integration, soft delete, and
-    tools for copying and managing shares.
-  decision-making: Guidance on planning Azure Files deployments, choosing tiers/redundancy/billing,
-    estimating and reducing costs, and selecting/migrating between SMB/NFS, File Sync,
-    and Azure NetApp Files.
+  configuration: 'Configuring Azure Files and Azure File Sync: networking/VPN and
+    endpoints, monitoring and metrics, cloud tiering and redundancy, DFS integration,
+    soft delete, and file copy tools.'
+  decision-making: 'Guidance for planning Azure Files deployments: choosing tiers,
+    redundancy, billing/cost models, migration paths (Windows/Linux/SMB/NFS), and
+    architecture/topology decisions.'
   best-practices: 'Best practices for Azure Files and File Sync: DR/failover planning,
     server/drive replacement and recovery, safe deprovisioning, and performance tuning
     for SMB, NFS, VDI, and FSLogix workloads'
-  security: 'Securing Azure Files with SMB/NFS: identity-based auth (AD DS, Entra,
-    Kerberos, managed identities), NTFS/share permissions, network/TLS hardening,
-    and hybrid/on-prem integration.'
+  security: 'Securing Azure Files: identity/AD/Entra auth over SMB/NFS, Kerberos,
+    NTFS/share permissions, encryption, TLS, firewalls/proxies, network perimeters,
+    and key/identity management.'
   deployment: Guides for migrating and syncing data to Azure Files/Azure File Sync
     from NAS, Linux, GlusterFS, SMB/NFS shares, and moving File Sync resources safely
     across scopes.
@@ -24,31 +24,29 @@ category_descriptions:
     integration and auth.
 skill_description: Expert knowledge for Azure Files development including best practices,
   decision making, limits & quotas, security, configuration, integrations & coding
-  patterns, and deployment. Use when using Azure Files/File Sync, SMB/NFS shares,
-  cloud tiering, DFS, or RAG apps over file shares, and other Azure Files related
+  patterns, and deployment. Use when using SMB/NFS shares, Azure File Sync, cloud
+  tiering, AD/Entra auth, or RAG apps over Azure Files, and other Azure Files related
   development tasks. Not for Azure Blob Storage (use azure-blob-storage), Azure NetApp
-  Files (use azure-netapp-files), Azure Managed Lustre (use azure-managed-lustre),
-  Azure HPC Cache (use azure-hpc-cache).
-use_when: Use when using Azure Files/File Sync, SMB/NFS shares, cloud tiering, DFS,
-  or RAG apps over file shares, and other Azure Files related development tasks.
+  Files (use azure-netapp-files).
+use_when: Use when using SMB/NFS shares, Azure File Sync, cloud tiering, AD/Entra
+  auth, or RAG apps over Azure Files, and other Azure Files related development tasks.
 confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure NetApp
-  Files (use azure-netapp-files), Azure Managed Lustre (use azure-managed-lustre),
-  Azure HPC Cache (use azure-hpc-cache).
+  Files (use azure-netapp-files).
 ---
 # Azure Files Crawl Report
 
 ## Summary
 
-- **Total Pages**: 127
-- **Fetched**: 127
+- **Total Pages**: 128
+- **Fetched**: 128
 - **Fetch Failed**: 0
-- **Classified**: 107
-- **Unclassified**: 20
+- **Classified**: 109
+- **Unclassified**: 19
 
 ### Incremental Update
 - **New Pages**: 1
-- **Updated Pages**: 18
-- **Unchanged**: 108
+- **Updated Pages**: 2
+- **Unchanged**: 125
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-files/azure-files.csv`
 
@@ -57,58 +55,26 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure N
 | Type | Count | Percentage |
 |------|-------|------------|
 | best-practices | 12 | 9.4% |
-| configuration | 23 | 18.1% |
-| decision-making | 17 | 13.4% |
-| deployment | 9 | 7.1% |
-| integrations | 19 | 15.0% |
+| configuration | 23 | 18.0% |
+| decision-making | 18 | 14.1% |
+| deployment | 9 | 7.0% |
+| integrations | 19 | 14.8% |
 | limits-quotas | 4 | 3.1% |
-| security | 23 | 18.1% |
-| *(Unclassified)* | 20 | 15.7% |
+| security | 24 | 18.8% |
+| *(Unclassified)* | 19 | 14.8% |
 
 ## Changes
 
 ### New Pages
 
-- [Build a RAG pipeline with Logic Apps and AI Search](https://learn.microsoft.com/en-us/azure/storage/files/artificial-intelligence/retrieval-augmented-generation/azure-native/tutorial-logic-apps-ai-search)
+- [Encryption at rest with customer-managed keys](https://learn.microsoft.com/en-us/azure/storage/files/customer-managed-keys)
 
 ### Updated Pages
 
-- [Use Haystack with Pinecone](https://learn.microsoft.com/en-us/azure/storage/files/artificial-intelligence/retrieval-augmented-generation/open-source-frameworks/tutorials/haystack-pinecone/tutorial-haystack-pinecone)
-  - Updated: 2026-04-10T22:10:00.000Z → 2026-04-23T22:13:00.000Z
-- [Use Haystack with Weaviate](https://learn.microsoft.com/en-us/azure/storage/files/artificial-intelligence/retrieval-augmented-generation/open-source-frameworks/tutorials/haystack-weaviate/tutorial-haystack-weaviate)
-  - Updated: 2026-04-10T22:10:00.000Z → 2026-04-23T22:13:00.000Z
-- [Use Haystack with Qdrant](https://learn.microsoft.com/en-us/azure/storage/files/artificial-intelligence/retrieval-augmented-generation/open-source-frameworks/tutorials/haystack-qdrant/tutorial-haystack-qdrant)
-  - Updated: 2026-04-10T22:10:00.000Z → 2026-04-23T22:13:00.000Z
-- [Plan for an Azure Files deployment](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-planning)
-  - Updated: 2025-09-18T08:00:00.000Z → 2026-05-01T17:27:00.000Z
-- [What's new in Azure Files?](https://learn.microsoft.com/en-us/azure/storage/files/files-whats-new)
-  - Updated: 2025-11-18T08:00:00.000Z → 2026-04-20T08:00:00.000Z
-- [AD DS overview](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-ad-ds-overview)
-  - Updated: 2026-02-20T08:00:00.000Z → 2026-04-30T06:12:00.000Z
-- [Managed identities with Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/storage/files/files-managed-identities)
-  - Updated: 2026-03-27T08:00:00.000Z → 2026-04-20T08:00:00.000Z
-- [Networking considerations for direct access](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-networking-overview)
-  - Updated: 2026-04-08T17:12:00.000Z → 2026-04-22T06:17:00.000Z
-- [Configure Site-to-Site VPN](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-configure-s2s-vpn)
-  - Updated: 2025-04-01T11:23:00.000Z → 2026-04-23T06:20:00.000Z
-- [Disaster recovery and failover](https://learn.microsoft.com/en-us/azure/storage/files/files-disaster-recovery)
-  - Updated: 2026-03-11T22:19:00.000Z → 2026-04-29T08:00:00.000Z
-- [What is retrieval-augmented generation?](https://learn.microsoft.com/en-us/azure/storage/files/artificial-intelligence/retrieval-augmented-generation/overview)
-  - Updated: 2026-04-10T22:10:00.000Z → 2026-04-23T22:13:00.000Z
-- [Get started](https://learn.microsoft.com/en-us/azure/storage/files/artificial-intelligence/retrieval-augmented-generation/open-source-frameworks/setup)
-  - Updated: 2026-04-10T22:10:00.000Z → 2026-04-23T22:13:00.000Z
-- [Use LangChain with Pinecone](https://learn.microsoft.com/en-us/azure/storage/files/artificial-intelligence/retrieval-augmented-generation/open-source-frameworks/tutorials/langchain-pinecone/tutorial-langchain-pinecone)
-  - Updated: 2026-04-10T22:10:00.000Z → 2026-04-23T22:13:00.000Z
-- [Use LangChain with Weaviate](https://learn.microsoft.com/en-us/azure/storage/files/artificial-intelligence/retrieval-augmented-generation/open-source-frameworks/tutorials/langchain-weaviate/tutorial-langchain-weaviate)
-  - Updated: 2026-04-10T22:10:00.000Z → 2026-04-23T22:13:00.000Z
-- [Use LangChain with Qdrant](https://learn.microsoft.com/en-us/azure/storage/files/artificial-intelligence/retrieval-augmented-generation/open-source-frameworks/tutorials/langchain-qdrant/tutorial-langchain-qdrant)
-  - Updated: 2026-04-10T22:10:00.000Z → 2026-04-23T22:13:00.000Z
-- [Use LlamaIndex with Pinecone](https://learn.microsoft.com/en-us/azure/storage/files/artificial-intelligence/retrieval-augmented-generation/open-source-frameworks/tutorials/llamaindex-pinecone/tutorial-llamaindex-pinecone)
-  - Updated: 2026-04-10T22:10:00.000Z → 2026-04-23T22:13:00.000Z
-- [Use LlamaIndex with Weaviate](https://learn.microsoft.com/en-us/azure/storage/files/artificial-intelligence/retrieval-augmented-generation/open-source-frameworks/tutorials/llamaindex-weaviate/tutorial-llamaindex-weaviate)
-  - Updated: 2026-04-10T22:10:00.000Z → 2026-04-23T22:13:00.000Z
-- [Use LlamaIndex with Qdrant](https://learn.microsoft.com/en-us/azure/storage/files/artificial-intelligence/retrieval-augmented-generation/open-source-frameworks/tutorials/llamaindex-qdrant/tutorial-llamaindex-qdrant)
-  - Updated: 2026-04-10T22:10:00.000Z → 2026-04-23T22:13:00.000Z
+- [Monitor Azure File Sync](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-monitoring)
+  - Updated: 2025-09-17T17:10:00.000Z → 2026-05-08T06:13:00.000Z
+- [Create a classic file share](https://learn.microsoft.com/en-us/azure/storage/files/create-classic-file-share)
+  - Updated: 2026-04-09T22:25:00.000Z → 2026-05-08T08:00:00.000Z
 
 ## Classified Pages
 
@@ -159,6 +125,7 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure N
 | [Create a file share (Microsoft.FileShares)](https://learn.microsoft.com/en-us/azure/storage/files/create-file-share) | decision-making | 0.70 | The article explicitly tells readers to review criteria before creating a share to decide if the Microsoft.FileShares resource provider is the right fit. This implies product-specific decision guidance between classic Microsoft.Storage file shares and the new Microsoft.FileShares model. While primarily a how-to, it embeds selection guidance unique to this preview provider, which qualifies as decision-making content more than generic configuration or overview. |
 | [Create alerts](https://learn.microsoft.com/en-us/azure/storage/files/files-monitoring-alerts) | configuration | 0.70 | Shows how to configure alerts on Azure Files metrics/logs (throttling, capacity, egress, server latency) with specific metric names and alert settings; these are concrete configuration patterns for monitoring this product. |
 | [Delete an Azure File Sync server endpoint](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-server-endpoint-delete) | best-practices | 0.70 | Focuses on preserving data integrity and availability when removing endpoints; scenario-based guidance and gotchas specific to Azure File Sync behavior. |
+| [Encryption at rest with customer-managed keys](https://learn.microsoft.com/en-us/azure/storage/files/customer-managed-keys) | security | 0.70 | Page provides product-specific steps and settings for configuring customer-managed keys with Azure Files and Azure Key Vault, including which resource providers and share types are supported and how encryption behavior changes. This is detailed security configuration guidance rather than a generic overview. |
 | [File share soft delete](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-prevent-file-share-deletion) | configuration | 0.70 | Feature-specific article for Azure Files soft delete; typically includes retention period settings, enable/disable behavior, and recovery behavior that are product-specific configuration details rather than just conceptual description. |
 | [Get started](https://learn.microsoft.com/en-us/azure/storage/files/artificial-intelligence/retrieval-augmented-generation/open-source-frameworks/setup) | integrations | 0.70 | Focuses on authenticating to Azure file shares with Microsoft Entra ID and implementing download logic used by multiple RAG tutorials. This likely includes specific SDK calls, auth parameters, and code patterns unique to Azure Files + Entra ID integration, matching integrations & coding patterns. |
 | [Install Azure File Sync agent extension on Arc-enabled Windows Servers](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-extension) | configuration | 0.70 | Describes installing/validating/uninstalling the agent extension; likely includes extension name, parameters, and portal/CLI configuration specifics. |
@@ -171,7 +138,7 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure N
 | [Migrate from on-premises NAS to a hybrid file server using Azure File Sync](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-migration-nas-hybrid) | deployment | 0.70 | Describes migrating NAS SMB shares into a hybrid Azure File Sync + Azure Files setup; product-specific migration/deployment workflow. |
 | [Migrate to SMB Azure file shares](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-migration-overview) | decision-making | 0.70 | Migration overview that includes a table of migration guides organized by tools (Storage Mover, Robocopy, Azure File Sync, etc.). This is explicitly about selecting between migration options for different scenarios, which fits decision-making. The table and guidance help users choose approaches based on workload characteristics. |
 | [Modify a file share](https://learn.microsoft.com/en-us/azure/storage/files/modify-file-share) | decision-making | 0.70 | The page explains how to modify size, cost, and performance characteristics for Azure file shares and distinguishes between classic Microsoft.Storage and Microsoft.FileShares-based shares. This is expert, product-specific guidance for choosing and adjusting performance/size characteristics across different provider models, helping users decide how to configure shares for their needs rather than just a conceptual overview. |
-| [Monitor Azure File Sync](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-monitoring) | configuration | 0.70 | Monitoring article likely details which logs/metrics are emitted, how to configure data collection and alert rules; product-specific configuration patterns. |
+| [Monitor Azure File Sync](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-monitoring) | configuration | 0.70 | Monitoring article for Azure File Sync typically includes product-specific Azure Monitor metrics, log categories, and recommended alert rules (with exact metric names, dimensions, and thresholds). These are configuration-level details (what to turn on, which metrics/logs to collect, and how to configure alerts) that go beyond generic monitoring concepts and are unique to this service. |
 | [Monitor Azure Files](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-monitoring) | configuration | 0.70 | Describes which Azure Monitor metrics/logs are available for Azure Files and how to configure them; includes product-specific metric names, dimensions, and logging options that function as configuration parameters. |
 | [Monitoring Files data reference](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-monitoring-reference) | configuration | 0.70 | A 'monitoring reference' page for Azure Files typically lists concrete metric names, dimensions, log categories, and schema fields used for monitoring. These are product-specific configuration and data contract details (e.g., metric IDs, log table names, property names) that an LLM is unlikely to know reliably from training and that are needed to correctly configure monitoring and analytics. This aligns best with the configuration sub-skill, as it describes specific monitoring settings and data structures rather than conceptual guidance. |
 | [Move resources to other resource groups, subscriptions, and Microsoft Entra tenants](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-resource-move) | deployment | 0.70 | Describes how to move sync resources across resource groups, subscriptions, and tenants; contains product-specific constraints and requirements for topology changes. |
@@ -200,6 +167,7 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure N
 | [Weaviate](https://learn.microsoft.com/en-us/azure/storage/files/artificial-intelligence/retrieval-augmented-generation/open-source-frameworks/vector-databases/weaviate) | integrations | 0.70 | Explains Weaviate hybrid search with Azure Files as source and orchestration frameworks. Likely includes Weaviate schema/config parameters and query patterns specific to this setup, fitting integrations criteria. |
 | [Zonal placement](https://learn.microsoft.com/en-us/azure/storage/files/zonal-placement) | decision-making | 0.70 | Explains how and when to choose specific availability zones for SSD Azure Files accounts, including constraints (LRS, SSD tier, supported regions) and latency considerations; this is concrete placement/architecture decision guidance. |
 | [Configure Point-to-Site VPN on Linux](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-configure-p2s-vpn-linux) | configuration | 0.68 | Details configuring P2S VPN on Linux specifically for Azure Files, including VPN settings, client configuration parameters, and Azure-side options that go beyond generic VPN knowledge. |
+| [Create a classic file share](https://learn.microsoft.com/en-us/azure/storage/files/create-classic-file-share) | decision-making | 0.65 | The page describes requirements and considerations for creating classic Azure file shares, including performance tiers (SSD vs HDD), redundancy options, and applicability to specific resource providers. This is used to decide when and how to use classic file shares and which tier/redundancy to choose, which aligns with decision-making guidance rather than just a basic tutorial. |
 | [Disable SMB on the Linux SMB client](https://learn.microsoft.com/en-us/azure/storage/files/files-remove-smb1-linux) | security | 0.65 | Provides concrete Linux configuration steps and commands to disable SMB1 in the context of Azure Files, including package/module settings. This is product- and protocol-specific security hardening guidance. |
 | [Disaster recovery and failover](https://learn.microsoft.com/en-us/azure/storage/files/files-disaster-recovery) | best-practices | 0.65 | Disaster recovery guidance for Azure Files typically includes product-specific recommendations on when and how to trigger storage account failover, how secondary endpoints behave, and sequencing/constraints unique to Azure Files. This goes beyond generic DR concepts and provides actionable, service-specific guidance, fitting best-practices. |
 | [Haystack](https://learn.microsoft.com/en-us/azure/storage/files/artificial-intelligence/retrieval-augmented-generation/open-source-frameworks/orchestrations/haystack) | integrations | 0.65 | Covers Haystack DAG-based pipelines wired to Azure Files as the document source. Likely includes concrete component wiring and configuration specific to this integration, not just generic Haystack concepts. |
@@ -229,7 +197,6 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure N
 | [Mount NFS file share on Linux](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-how-to-mount-nfs-shares) | 0.45 | Focuses on mounting NFS Azure file shares on Linux; mostly procedural without detailed configuration parameter tables or product-specific limits/roles that meet the expert-knowledge criteria. |
 | [Azure Kubernetes Service](https://learn.microsoft.com/en-us/azure/storage/files/azure-kubernetes-service-workloads) | 0.40 | Describes using Azure Files with AKS and the Azure Files CSI driver for RWX workloads. From the summary it appears to be an integration/usage overview without detailed config parameter tables, limits, or error-code mappings; more of a scenario/tutorial than expert reference content. |
 | [Build a RAG pipeline with Logic Apps and AI Search](https://learn.microsoft.com/en-us/azure/storage/files/artificial-intelligence/retrieval-augmented-generation/azure-native/tutorial-logic-apps-ai-search) | 0.40 | Step-by-step tutorial for building a RAG pipeline with Logic Apps and AI Search. It’s primarily procedural how-to content; the summary doesn’t indicate detailed configuration matrices, limits, or troubleshooting mappings that meet the expert-knowledge criteria. |
-| [Create a classic file share](https://learn.microsoft.com/en-us/azure/storage/files/create-classic-file-share) | 0.40 | Primarily a how-to tutorial for creating a classic file share via portal/PowerShell/CLI. While it mentions performance tiers and redundancy options, the summary does not indicate detailed configuration parameter tables, limits, or decision matrices; it looks like procedural guidance rather than expert configuration or limits content. |
 | [Deploy Azure File Sync](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-deployment-guide) | 0.40 | Deployment guide is likely procedural (portal/CLI/PowerShell) without tier matrices or deployment constraints by SKU. |
 | [Mount SMB file share on Linux](https://learn.microsoft.com/en-us/azure/storage/files/storage-how-to-use-files-linux) | 0.40 | Primarily a how-to mount guide using SMB on Linux with NTLMv2; lacks detailed configuration tables, security role definitions, or other expert-only parameters beyond generic mounting steps. |
 | [Share snapshots and restores](https://learn.microsoft.com/en-us/azure/storage/files/storage-snapshots-files) | 0.40 | Primarily a how-to/tutorial on creating and using Azure Files share snapshots via portal/PowerShell/CLI. The summary does not indicate specific numeric limits, configuration parameter tables, error-code-based troubleshooting, or other product-specific expert details; likely procedural rather than reference-style expert content. |

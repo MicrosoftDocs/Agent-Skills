@@ -1,9 +1,9 @@
 ---
 name: azure-well-architected
-description: Expert guidance for designing, assessing, and optimizing Azure workloads using Azure Well Architected. Covers design review checklists, recommendations, design principles, tradeoffs, service guides, workload patterns, and assessment questions. Use when designing AI, SAP, SaaS, HPC, or mission‑critical workloads and choosing regions/AZs or service configurations, and other Azure Well Architected related development tasks.
+description: Expert guidance for designing, assessing, and optimizing Azure workloads using Azure Well Architected. Covers design review checklists, recommendations, design principles, tradeoffs, service guides, workload patterns, and assessment questions. Use when designing AI, HPC, SAP, Oracle, AVS/AVD, SaaS, or mission‑critical workloads on Azure, and other Azure Well Architected related development tasks.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-03"
+  generated_at: "2026-05-10"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Well Architected Skill
@@ -24,13 +24,13 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Design Review Checklists | L35-L43 | Checklists to review Azure workloads for cost, operations, performance, reliability, and security best practices and identify design gaps or improvements. |
-| Recommendations | L44-L115 | Prescriptive best practices to design, run, and improve Azure workloads across cost, reliability, security, performance, operations, DevOps, and sustainability (how to optimize and govern end to end). |
+| Design Review Checklists | L35-L43 | Checklists to review Azure workloads for cost, operations, performance, reliability, and security best practices, with concrete questions and criteria to assess your architecture. |
+| Recommendations | L44-L115 | Guidance on cost optimization, reliability, performance, security, DevOps, and sustainability for Azure workloads, including design patterns, operations, automation, and governance practices. |
 | Design Principles | L116-L132 | Design principles and patterns for cost, reliability, security, performance, ops, and sustainability across Azure workloads like AI, SAP, Oracle, AVS, AVD, SaaS, HPC, and mission‑critical systems. |
 | Tradeoffs | L133-L142 | Guidance on weighing cost, reliability, performance, security, and operations tradeoffs in Azure architectures, including regions/AZ choices and cross-pillar design decisions. |
 | Service Guides | L143-L193 | End-to-end design, security, networking, operations, monitoring, and optimization guidance for specific Azure services, aligned to Well-Architected Framework best practices. |
-| Workload Patterns | L194-L246 | Designing, operating, and optimizing specialized Azure workloads (AI, HPC, mission‑critical, SaaS, SAP, sustainability) using Well‑Architected principles for architecture, data, ops, security, and cost. |
-| Assessment Questions | L247-L260 | Guided assessments and maturity models to evaluate AI, SaaS, AVD, AVS, and other Azure workloads against WAF pillars: cost, reliability, security, performance, and operations. |
+| Workload Patterns | L194-L247 | Designing, operating, and optimizing Azure workloads (AI, HPC, mission-critical, SaaS, sustainable) using Well-Architected principles, reference architectures, data/compute choices, and lifecycle practices. |
+| Assessment Questions | L248-L261 | Guided assessments and maturity models to evaluate AI, SaaS, AVD, AVS, and other Azure workloads against WAF pillars: cost, reliability, security, performance, and operations. |
 
 ### Design Review Checklists
 | Topic | URL |
@@ -83,7 +83,7 @@ This skill requires **network access** to fetch documentation content:
 | Optimize data performance in Azure workloads | https://learn.microsoft.com/en-us/azure/well-architected/performance-efficiency/optimize-data-performance |
 | Optimize operational tasks to protect workload performance | https://learn.microsoft.com/en-us/azure/well-architected/performance-efficiency/optimize-operational-tasks |
 | Define and expose performance targets for Azure workloads | https://learn.microsoft.com/en-us/azure/well-architected/performance-efficiency/performance-targets |
-| Plan and execute performance testing for Azure workloads | https://learn.microsoft.com/en-us/azure/well-architected/performance-efficiency/performance-test |
+| Implement performance testing strategies for Azure workloads | https://learn.microsoft.com/en-us/azure/well-architected/performance-efficiency/performance-test |
 | Prioritize performance of critical flows in Azure workloads | https://learn.microsoft.com/en-us/azure/well-architected/performance-efficiency/prioritize-critical-flows |
 | Respond to live performance issues in Azure workloads | https://learn.microsoft.com/en-us/azure/well-architected/performance-efficiency/respond-live-performance-issues |
 | Optimize scaling and partitioning for Azure workloads | https://learn.microsoft.com/en-us/azure/well-architected/performance-efficiency/scale-partition |
@@ -194,12 +194,13 @@ This skill requires **network access** to fetch documentation content:
 ### Workload Patterns
 | Topic | URL |
 |-------|-----|
-| Apply Well-Architected principles to Azure AI workloads | https://learn.microsoft.com/en-us/azure/well-architected/ai/ |
+| Apply Well-Architected principles to AI workloads | https://learn.microsoft.com/en-us/azure/well-architected/ai/ |
 | Design AI-enabled applications on Azure using WAF | https://learn.microsoft.com/en-us/azure/well-architected/ai/application-design |
 | Select application platforms for AI workloads on Azure | https://learn.microsoft.com/en-us/azure/well-architected/ai/application-platform |
+| Use reference architecture patterns for Azure AI workloads | https://learn.microsoft.com/en-us/azure/well-architected/ai/architecture-pattern |
 | Select and design data platforms for Azure AI | https://learn.microsoft.com/en-us/azure/well-architected/ai/data-platform |
 | Use a structured design methodology for AI workloads | https://learn.microsoft.com/en-us/azure/well-architected/ai/design-methodology |
-| Apply WAF to AI workloads on Azure | https://learn.microsoft.com/en-us/azure/well-architected/ai/get-started |
+| Apply Well-Architected principles to Azure AI workloads | https://learn.microsoft.com/en-us/azure/well-architected/ai/get-started |
 | Design grounding data for Azure AI applications | https://learn.microsoft.com/en-us/azure/well-architected/ai/grounding-data-design |
 | Implement MLOps and GenAIOps for Azure AI workloads | https://learn.microsoft.com/en-us/azure/well-architected/ai/mlops-genaiops |
 | Operate production AI workloads on Azure | https://learn.microsoft.com/en-us/azure/well-architected/ai/operations |

@@ -1,9 +1,9 @@
 ---
 name: azure-blob-storage
-description: Expert knowledge for Azure Blob Storage development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Data Lake features, static websites, NFS/SFTP/BlobFuse, SAS/RBAC auth, or SDK/CLI blob operations, and other Azure Blob Storage related development tasks. Not for Azure Files (use azure-files), Azure Table Storage (use azure-table-storage), Azure Queue Storage (use azure-queue-storage), Azure NetApp Files (use azure-netapp-files).
+description: Expert knowledge for Azure Blob Storage development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Blob/Data Lake SDKs, SAS/RBAC auth, lifecycle policies, static websites, or NFS/SFTP access, and other Azure Blob Storage related development tasks. Not for Azure Files (use azure-files), Azure Table Storage (use azure-table-storage), Azure Queue Storage (use azure-queue-storage), Azure NetApp Files (use azure-netapp-files).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-03"
+  generated_at: "2026-05-10"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Blob Storage Skill
@@ -26,12 +26,12 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L36-L45 | Diagnosing and fixing Azure Blob Storage issues: Storage Mover networking/job errors, support bundles, BlobFuse mount/I/O problems, and known NFS 3.0 behavior and error scenarios. |
 | Best Practices | L46-L79 | Performance, cost, resiliency, and monitoring best practices for Blob Storage: access tiers, lifecycle, concurrency, client tuning, retries, NFS/SFTP, events, backups, and language-specific optimizations |
-| Decision Making | L80-L105 | Cost and architecture decisions for Blob Storage: pricing, cost estimation/optimization, tiers, protocols (NFS/SFTP/BlobFuse), data protection, connectivity, and migration/upgrade tool choices. |
-| Limits & Quotas | L106-L126 | Blob Storage limits, quotas, performance and scale caps, protocol-specific constraints (NFS, SFTP, BlobFuse, ADLS), archive rules, replication SLAs, and cost/tier optimization rules. |
-| Security | L127-L184 | Configuring secure access to Blob Storage: RBAC/ABAC, Entra ID auth, SAS tokens, SFTP, ACLs, encryption (CSE, CPK, scopes), private networking, and preventing anonymous access. |
-| Configuration | L185-L251 | Configuring and operating Blob Storage: monitoring, lifecycle, immutability, soft delete, snapshots/restore, NFS/SFTP/BlobFuse, Data Lake, static sites, and third‑party backup/migration tools. |
+| Decision Making | L80-L105 | Cost planning and design choices for Blob Storage: pricing, migration and transfer costs, archive retrieval, multi-region access, connectivity, data protection, and when to use specific tiers/tools. |
+| Limits & Quotas | L106-L126 | Blob Storage limits, quotas, performance and scale caps, tiering/archival rules, protocol-specific constraints (NFS, SFTP, BlobFuse, ADLS), and related FAQs/known issues. |
+| Security | L127-L184 | Securing Blob Storage: RBAC/ABAC and Entra auth, ACLs, SAS tokens, SFTP security, encryption (server, client, CPK, scopes), private networking, and hardening/anonymous access controls. |
+| Configuration | L185-L251 | Configuring Blob Storage behavior and tools: lifecycle, immutability, soft delete, monitoring, inventory, SFTP, static sites, BlobFuse, Storage Mover, and third‑party backup/migration solutions. |
 | Integrations & Coding Patterns | L252-L387 | SDK, CLI, and tooling patterns for integrating with Blob/Data Lake: connect from various languages, mount/file-system access, copy/migrate data, manage containers/blobs, leases, tiers, tags, and events. |
-| Deployment | L388-L402 | Guides for deploying blob-based apps and sites, enabling static websites and Data Lake features, and migrating or integrating storage with CDN, HDFS/Hadoop, and third‑party tools. |
+| Deployment | L388-L401 | Guides for deploying blob-based apps and sites, enabling static websites and Data Lake features, and migrating or integrating storage with CDN, HDFS/Hadoop, and third‑party tools. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -87,6 +87,7 @@ This skill requires **network access** to fetch documentation content:
 | Plan Azure Storage Mover deployments and migrations | https://learn.microsoft.com/en-us/azure/storage-mover/deployment-planning |
 | Calculate archive tier storage and retrieval costs | https://learn.microsoft.com/en-us/azure/storage/blobs/archive-cost-estimation |
 | Estimate AzCopy data transfer costs for Blob Storage | https://learn.microsoft.com/en-us/azure/storage/blobs/azcopy-cost-estimation |
+| Choose Azure Blob cost optimization capabilities | https://learn.microsoft.com/en-us/azure/storage/blobs/blob-cost-optimization-services |
 | Estimate end-to-end costs for Azure Blob Storage usage | https://learn.microsoft.com/en-us/azure/storage/blobs/blob-storage-estimate-costs |
 | Compare BlobFuse behavior to native Linux file systems | https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-compare-linux-file-system |
 | Choose between BlobFuse streaming and caching modes | https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-streaming-versus-caching |
@@ -95,7 +96,6 @@ This skill requires **network access** to fetch documentation content:
 | Estimate multi-region data access costs for Blob Storage | https://learn.microsoft.com/en-us/azure/storage/blobs/cost-estimate-multi-region-access |
 | Choose Azure Blob data protection and recovery options | https://learn.microsoft.com/en-us/azure/storage/blobs/data-protection-overview |
 | Map Blob Storage REST operations to billing categories | https://learn.microsoft.com/en-us/azure/storage/blobs/map-rest-apis-transaction-categories |
-| Decide when to use the premium tier for Azure Data Lake Storage | https://learn.microsoft.com/en-us/azure/storage/blobs/premium-tier-for-data-lake-storage |
 | Choose between Blob soft delete and versioning | https://learn.microsoft.com/en-us/azure/storage/blobs/soft-delete-vs-versioning-options |
 | Decide when to use premium block blob storage | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-block-blob-premium |
 | Plan and purchase Blob Storage reserved capacity | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-reserved-capacity |
@@ -110,7 +110,7 @@ This skill requires **network access** to fetch documentation content:
 | Review Azure Storage Discovery FAQs and service limits | https://learn.microsoft.com/en-us/azure/storage-discovery/frequently-asked-questions |
 | Understand Azure Storage Mover scale and performance | https://learn.microsoft.com/en-us/azure/storage-mover/performance-targets |
 | Review Azure Storage Mover release changes and limitations | https://learn.microsoft.com/en-us/azure/storage-mover/release-notes |
-| Optimize Blob Storage costs with smart tier thresholds | https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-smart |
+| Use Azure Blob smart tier access transitions | https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-smart |
 | Archive tier usage rules and minimum retention period | https://learn.microsoft.com/en-us/azure/storage/blobs/archive-blob |
 | Blob archive rehydration time and priority limits | https://learn.microsoft.com/en-us/azure/storage/blobs/archive-rehydrate-to-online-tier |
 | Understand BlobFuse limitations and known issues | https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-known-issues |
@@ -135,7 +135,7 @@ This skill requires **network access** to fetch documentation content:
 | Remediate anonymous read access to Azure Blob data | https://learn.microsoft.com/en-us/azure/storage/blobs/anonymous-read-access-overview |
 | Prevent anonymous read access for ARM-based Blob accounts | https://learn.microsoft.com/en-us/azure/storage/blobs/anonymous-read-access-prevent |
 | Assign Azure RBAC roles for Blob data access | https://learn.microsoft.com/en-us/azure/storage/blobs/assign-azure-role-data-access |
-| Authorize Azure Blob access using Microsoft Entra ID | https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-access-azure-active-directory |
+| Authorize Azure Blob access with Microsoft Entra ID | https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-access-azure-active-directory |
 | Authorize Azure Blob data operations with Azure CLI | https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-data-operations-cli |
 | Authorize Blob data access in Azure portal using Entra or keys | https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-data-operations-portal |
 | Authorize Azure Blob data operations with PowerShell | https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-data-operations-powershell |
@@ -210,7 +210,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure logging levels and outputs for BlobFuse | https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-enable-logs |
 | Monitor BlobFuse mounts and resource usage | https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-health-monitor |
 | Mount Azure Blob containers on Linux with BlobFuse | https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-mount-container |
-| Configure a storage account for Azure Data Lake Storage | https://learn.microsoft.com/en-us/azure/storage/blobs/create-data-lake-storage-account |
+| Configure Azure Storage account for Data Lake | https://learn.microsoft.com/en-us/azure/storage/blobs/create-data-lake-storage-account |
 | Container-level WORM immutability policies for Blob data | https://learn.microsoft.com/en-us/azure/storage/blobs/immutable-container-level-worm-policies |
 | Configure container-scoped immutability policies for blobs | https://learn.microsoft.com/en-us/azure/storage/blobs/immutable-policy-configure-container-scope |
 | Configure immutability policies for Azure blob versions | https://learn.microsoft.com/en-us/azure/storage/blobs/immutable-policy-configure-version-scope |
@@ -388,7 +388,6 @@ This skill requires **network access** to fetch documentation content:
 ### Deployment
 | Topic | URL |
 |-------|-----|
-| Integrate Azure Storage with Azure CDN for blob delivery | https://learn.microsoft.com/en-us/azure/cdn/cdn-create-a-storage-account-with-cdn |
 | Move Storage Discovery workspaces across Azure scopes | https://learn.microsoft.com/en-us/azure/storage-discovery/resource-move |
 | Migrate on-premises HDFS data to Azure Storage using Data Box | https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster |
 | Migrate Hadoop data to Azure Data Lake Storage with WANdisco LiveData | https://learn.microsoft.com/en-us/azure/storage/blobs/migrate-gen2-wandisco-live-data-platform |

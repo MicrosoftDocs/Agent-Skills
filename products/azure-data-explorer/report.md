@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-03'
+generated_at: '2026-05-10'
 category_descriptions:
   security: 'Securing ADX clusters: auth/RBAC, managed identities, encryption/CMK,
     network isolation (private endpoints, outbound/public access), policies, locks,
@@ -10,9 +10,9 @@ category_descriptions:
   deployment: Provisioning and automating ADX environments, deploying schema via Azure
     DevOps, and migrating clusters to availability zones and from VNet injection to
     private endpoints.
-  integrations: 'Integrating ADX with tools and services: SQL/JDBC/ODBC, PowerShell,
-    Power Automate/Apps, Logic Apps, Functions, Grafana, Splunk, OpenTelemetry, Tableau,
-    Python, MATLAB, Sisense, and more.'
+  integrations: Integrating ADX with tools and services (SQL, ODBC/JDBC, Power Automate/Apps,
+    Functions, Grafana, Splunk, OpenTelemetry, Tableau, MATLAB, etc.) and coding/query
+    patterns for those connections.
   architecture-patterns: Designing ADX architectures for DR, regional replication,
     business continuity, cross-cluster access via follower DBs, and multi-tenant deployment
     patterns.
@@ -30,17 +30,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Data Explorer development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when securing ADX clusters, configuring ingestion/retention, integrating via
-  Kusto/SQL APIs, or optimizing cost/perf, and other Azure Data Explorer related development
-  tasks. Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure HDInsight
-  (use azure-hdinsight), Azure Databricks (use azure-databricks), Azure Stream Analytics
-  (use azure-stream-analytics).
-use_when: Use when securing ADX clusters, configuring ingestion/retention, integrating
-  via Kusto/SQL APIs, or optimizing cost/perf, and other Azure Data Explorer related
+  Use when securing clusters, configuring ingestion, integrating clients/BI tools,
+  tuning queries, or troubleshooting ADX, and other Azure Data Explorer related development
+  tasks. Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure Stream
+  Analytics (use azure-stream-analytics), Azure HDInsight (use azure-hdinsight), Azure
+  Databricks (use azure-databricks).
+use_when: Use when securing clusters, configuring ingestion, integrating clients/BI
+  tools, tuning queries, or troubleshooting ADX, and other Azure Data Explorer related
   development tasks.
 confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics),
-  Azure HDInsight (use azure-hdinsight), Azure Databricks (use azure-databricks),
-  Azure Stream Analytics (use azure-stream-analytics).
+  Azure Stream Analytics (use azure-stream-analytics), Azure HDInsight (use azure-hdinsight),
+  Azure Databricks (use azure-databricks).
 ---
 # Azure Data Explorer Crawl Report
 
@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 195
+- **Updated Pages**: 1
+- **Unchanged**: 196
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-explorer/azure-data-explorer.csv`
 
@@ -78,10 +78,8 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 
 ### Updated Pages
 
-- [Cross-tenant queries and commands](https://learn.microsoft.com/en-us/azure/data-explorer/cross-tenant-query-and-commands)
-  - Updated: 2024-08-12T12:18:00.000Z → 2026-04-30T17:03:00.000Z
-- [Use dashboards](https://learn.microsoft.com/en-us/azure/data-explorer/azure-data-explorer-dashboards)
-  - Updated: 2025-08-28T11:06:00.000Z → 2026-04-20T08:00:00.000Z
+- [Use MCP servers to build AI agents](https://learn.microsoft.com/en-us/azure/data-explorer/integrate-mcp-servers)
+  - Updated: 2025-09-14T08:00:00.000Z → 2026-05-06T05:03:00.000Z
 
 ## Classified Pages
 
@@ -110,7 +108,6 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | [Configure database using a KQL script](https://learn.microsoft.com/en-us/azure/data-explorer/database-script) | configuration | 0.75 | Defines which management commands are allowed in database scripts and how they’re structured. This is a configuration mechanism with specific command constraints. |
 | [Cost drivers](https://learn.microsoft.com/en-us/azure/data-explorer/pricing-cost-drivers) | decision-making | 0.75 | Explains how cost per GB is calculated and what drives it, with optimization guidance; this supports cost/performance trade-off decisions for cluster sizing and configuration. |
 | [Deal with duplicate data](https://learn.microsoft.com/en-us/azure/data-explorer/dealing-with-duplicates) | best-practices | 0.75 | Article explicitly outlines approaches to deal with duplicates in ADX; this is product-specific guidance and likely includes concrete KQL patterns and ingestion strategies that go beyond generic theory. |
-| [Use MCP servers to build AI agents](https://learn.microsoft.com/en-us/azure/data-explorer/integrate-mcp-servers) | integrations | 0.75 | MCP server integration with ADX will define tools, endpoints, and configuration for AI agents; these are product-specific integration patterns and parameters. |
 | [Telegraf](https://learn.microsoft.com/en-us/azure/data-explorer/ingest-data-telegraf) | integrations | 0.74 | Details Telegraf output plugin for Azure Data Explorer with plugin-specific configuration keys, parameter names, and constraints that are not generic knowledge. |
 | [Connect with JDBC](https://learn.microsoft.com/en-us/azure/data-explorer/connect-jdbc) | integrations | 0.72 | Details JDBC connection setup using TDS endpoint with supported versions and connection string parameters, which are product-specific integration details. |
 | [Connect with ODBC](https://learn.microsoft.com/en-us/azure/data-explorer/connect-odbc) | integrations | 0.72 | Explains using SQL Server ODBC driver with Azure Data Explorer, including DSN/connection string parameters and protocol specifics unique to this product. |
@@ -163,6 +160,7 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | [Manage cluster locks](https://learn.microsoft.com/en-us/azure/data-explorer/manage-cluster-locks) | security | 0.68 | Page gives product-specific security behavior for Azure Data Explorer cluster locks, including how Delete and Read-only locks interact with Azure Data Explorer RBAC and what operations are blocked. This is concrete, service-specific security configuration guidance rather than a generic overview. |
 | [Query data in Azure Storage external tables](https://learn.microsoft.com/en-us/azure/data-explorer/external-azure-storage-tables-query) | integrations | 0.68 | Covers KQL access to Azure Storage external tables with product-specific external table definitions and parameters, fitting integration/configuration patterns. |
 | [Query data using Python](https://learn.microsoft.com/en-us/azure/data-explorer/python-query-data) | integrations | 0.68 | Shows Python client library usage with specific classes, methods, and connection parameters unique to Azure Data Explorer. |
+| [Use MCP servers to build AI agents](https://learn.microsoft.com/en-us/azure/data-explorer/integrate-mcp-servers) | integrations | 0.68 | The page describes how to connect Model Context Protocol servers with Azure Data Explorer, including product-specific integration details and tool definitions for AI agents. This is an integration-focused document with configuration- and code-level patterns unique to ADX and MCP, rather than a generic overview. |
 | [Formats for data ingestion](https://learn.microsoft.com/en-us/azure/data-explorer/ingestion-supported-formats) | limits-quotas | 0.66 | Lists supported ingestion and compression formats in table form; while not numeric limits, it’s effectively a capability matrix of allowed formats that an LLM wouldn’t reliably know and is closest to limits/quotas category. |
 | [Query data in MATLAB](https://learn.microsoft.com/en-us/azure/data-explorer/query-matlab) | integrations | 0.66 | Explains how to obtain and use auth tokens in MATLAB to call Azure Data Explorer, with API endpoints and parameters specific to this product. |
 | [Check cluster health](https://learn.microsoft.com/en-us/azure/data-explorer/check-cluster-health) | troubleshooting | 0.65 | Shows commands and portal metrics (like Keep Alive) to assess health. This is symptom/metric → interpretation guidance, a troubleshooting-style diagnostic reference. |

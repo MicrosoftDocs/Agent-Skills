@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-03'
+generated_at: '2026-05-10'
 category_descriptions:
   configuration: 'Configuring Azure AI Search: data sources, indexers, skillsets,
     analyzers, vector/semantic settings, enrichment, monitoring, and knowledge bases
@@ -19,9 +19,9 @@ category_descriptions:
   best-practices: Design, scaling, and performance tuning of Azure AI Search indexing/querying,
     including enrichment pipelines, chunking/vectorization, data modeling, concurrency-safe
     updates, and vector optimization.
-  security: 'Securing Azure AI Search: RBAC/keyless auth, keys, CMK encryption, private
-    endpoints, firewalls, indexer access to data sources, ACL/Purview-based filtering,
-    and security best practices.'
+  security: 'Securing Azure AI Search: RBAC, keys, encryption, private networking,
+    firewalls, indexer auth (managed identity, ACLs, Purview labels), and policy/compliance
+    configuration.'
   architecture-patterns: 'Architectural guidance for Azure AI Search: RAG patterns,
     knowledge store design, multitenancy and tenant isolation, and multi-region/high-availability
     deployment designs.'
@@ -30,15 +30,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure AI Search development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  designing indexes, skillsets, indexers, semantic/vector search, or RAG/knowledge-store
+  building indexes, indexers, skillsets, semantic/vector search, or RAG/knowledge-store
   workloads, and other Azure AI Search related development tasks. Not for Azure Cosmos
-  DB (use azure-cosmos-db), Azure Table Storage (use azure-table-storage), Azure Data
-  Explorer (use azure-data-explorer).
-use_when: Use when designing indexes, skillsets, indexers, semantic/vector search,
+  DB (use azure-cosmos-db), Azure Data Explorer (use azure-data-explorer), Azure Synapse
+  Analytics (use azure-synapse-analytics), Azure Open Datasets (use azure-open-datasets).
+use_when: Use when building indexes, indexers, skillsets, semantic/vector search,
   or RAG/knowledge-store workloads, and other Azure AI Search related development
   tasks.
-confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure Table Storage
-  (use azure-table-storage), Azure Data Explorer (use azure-data-explorer).
+confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure Data Explorer
+  (use azure-data-explorer), Azure Synapse Analytics (use azure-synapse-analytics),
+  Azure Open Datasets (use azure-open-datasets).
 ---
 # Azure AI Search Crawl Report
 
@@ -51,9 +52,9 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure Table S
 - **Unclassified**: 72
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 26
-- **Unchanged**: 273
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 299
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cognitive-search/azure-cognitive-search.csv`
 
@@ -74,53 +75,10 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure Table S
 
 ## Changes
 
-### New Pages
-
-- [Handling regional capacity constraints](https://learn.microsoft.com/en-us/azure/search/search-region-capacity)
-
 ### Updated Pages
 
-- [Compress using binary or scalar quantization](https://learn.microsoft.com/en-us/azure/search/vector-search-how-to-quantization)
-  - Updated: 2025-09-28T22:01:00.000Z → 2026-04-27T08:00:00.000Z
-- [Eliminate redundant storage](https://learn.microsoft.com/en-us/azure/search/vector-search-how-to-storage-options)
-  - Updated: 2025-09-29T22:40:00.000Z → 2026-04-27T08:00:00.000Z
-- [Run or reset an indexer](https://learn.microsoft.com/en-us/azure/search/search-howto-run-reset-indexers)
-  - Updated: 2026-03-26T08:00:00.000Z → 2026-04-27T08:00:00.000Z
-- [Define field mappings](https://learn.microsoft.com/en-us/azure/search/search-indexer-field-mappings)
-  - Updated: 2025-09-23T08:00:00.000Z → 2026-04-27T08:00:00.000Z
-- [Query with Search Explorer](https://learn.microsoft.com/en-us/azure/search/search-explorer)
-  - Updated: 2025-12-04T08:00:00.000Z → 2026-04-27T08:00:00.000Z
-- [What is full-text search?](https://learn.microsoft.com/en-us/azure/search/search-lucene-query-architecture)
-  - Updated: 2025-03-07T08:00:00.000Z → 2026-04-27T08:00:00.000Z
-- [What is a filter?](https://learn.microsoft.com/en-us/azure/search/search-filters)
-  - Updated: 2025-03-11T08:00:00.000Z → 2026-04-27T08:00:00.000Z
-- [Create a vector query](https://learn.microsoft.com/en-us/azure/search/vector-search-how-to-query)
-  - Updated: 2025-09-29T08:00:00.000Z → 2026-04-27T08:00:00.000Z
-- [Filter a vector query](https://learn.microsoft.com/en-us/azure/search/vector-search-filters)
-  - Updated: 2025-09-16T22:13:00.000Z → 2026-04-27T08:00:00.000Z
-- [What is multimodal search?](https://learn.microsoft.com/en-us/azure/search/multimodal-search-overview)
-  - Updated: 2026-03-25T08:00:00.000Z → 2026-04-20T08:00:00.000Z
-- [OneLake](https://learn.microsoft.com/en-us/azure/search/search-how-to-index-onelake-files)
-  - Updated: 2026-02-17T08:00:00.000Z → 2026-04-23T08:00:00.000Z
-- [SharePoint in Microsoft 365](https://learn.microsoft.com/en-us/azure/search/search-how-to-index-sharepoint-online)
-  - Updated: 2026-04-16T08:00:00.000Z → 2026-04-23T08:00:00.000Z
-- [Index CSV](https://learn.microsoft.com/en-us/azure/search/search-how-to-index-azure-blob-csv)
-  - Updated: 2025-10-09T05:03:00.000Z → 2026-04-27T08:00:00.000Z
-- [Troubleshoot errors and warnings](https://learn.microsoft.com/en-us/azure/search/cognitive-search-common-errors-warnings)
-  - Updated: 2025-10-14T08:00:00.000Z → 2026-04-23T08:00:00.000Z
-- [Index at scale (Apache Spark)](https://learn.microsoft.com/en-us/azure/search/search-synapseml-cognitive-services)
-  - Updated: 2025-11-18T15:37:00.000Z → 2026-04-27T08:00:00.000Z
-- [Index JSON in Azure blobs](https://learn.microsoft.com/en-us/azure/search/search-semi-structured-data)
-  - Updated: 2025-11-21T23:11:00.000Z → 2026-04-27T08:00:00.000Z
-- [Debug a skillset (tutorial)](https://learn.microsoft.com/en-us/azure/search/cognitive-search-tutorial-debug-sessions)
-  - Updated: 2025-03-31T08:00:00.000Z → 2026-04-27T08:00:00.000Z
-- [Connect through a shared private link](https://learn.microsoft.com/en-us/azure/search/search-indexer-howto-access-private)
-  - Updated: 2026-04-10T08:00:00.000Z → 2026-04-22T08:00:00.000Z
-- [Index encrypted blobs](https://learn.microsoft.com/en-us/azure/search/search-how-to-index-azure-blob-encrypted)
-  - Updated: 2025-10-09T05:03:00.000Z → 2026-04-27T08:00:00.000Z
-- [Preview features](https://learn.microsoft.com/en-us/azure/search/search-api-preview)
-  - Updated: 2026-04-08T22:11:00.000Z → 2026-04-27T08:00:00.000Z
-- *...and 6 more*
+- [Query honoring sensitivity labels](https://learn.microsoft.com/en-us/azure/search/search-query-sensitivity-labels)
+  - Updated: 2026-03-05T08:00:00.000Z → 2026-05-05T11:04:00.000Z
 
 ## Classified Pages
 
@@ -219,7 +177,6 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure Table S
 | [Create a custom analyzer](https://learn.microsoft.com/en-us/azure/search/tutorial-create-custom-analyzer) | configuration | 0.76 | Details analyzer components, token filters, and configuration JSON for custom analyzers, including phone-number-specific patterns. |
 | [Develop in .NET](https://learn.microsoft.com/en-us/azure/search/search-how-to-dotnet-sdk) | integrations | 0.76 | Provides concrete C# patterns and client types (SearchIndexClient, SearchClient, etc.) with method usage specific to Azure AI Search, beyond generic SDK usage. |
 | [Index JSON](https://learn.microsoft.com/en-us/azure/search/search-how-to-index-azure-blob-json) | configuration | 0.76 | Describes JSON parsingMode options (e.g., jsonArray, jsonLines) and how they map to search documents; product-specific parameter behavior. |
-| [Query honoring sensitivity labels](https://learn.microsoft.com/en-us/azure/search/search-query-sensitivity-labels) | security | 0.76 | Describes query-time enforcement of Purview label policies and READ rights. Expected to include concrete query parameters, header/claim requirements, and enforcement rules that are specific to Azure AI Search and Purview integration. |
 | [What is a skillset?](https://learn.microsoft.com/en-us/azure/search/cognitive-search-working-with-skillsets) | configuration | 0.76 | Deep dive into skillset composition, inputs/outputs, and execution model with product-specific configuration patterns and constraints. |
 | [ADLS Gen2](https://learn.microsoft.com/en-us/azure/search/search-how-to-index-azure-data-lake-storage) | integrations | 0.75 | ADLS Gen2 indexer setup includes specific data source, index, and indexer configuration parameters unique to this integration. |
 | [Add a custom analyzer](https://learn.microsoft.com/en-us/azure/search/index-add-custom-analyzers) | configuration | 0.75 | Custom analyzer composition (tokenizers, token filters, character filters) and how to reference them on fields is detailed product-specific configuration. |
@@ -237,6 +194,7 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure Table S
 | [Index multiple Azure data sources](https://learn.microsoft.com/en-us/azure/search/tutorial-multiple-data-sources) | integrations | 0.74 | C# tutorial with concrete SDK usage to merge Cosmos DB and Blob data into a single index; product-specific patterns and configuration. |
 | [Index one-to-many](https://learn.microsoft.com/en-us/azure/search/search-how-to-index-azure-blob-one-to-many) | configuration | 0.74 | Details specific parsingMode values (delimitedText, jsonArray, jsonLines, markdown/oneToMany) and how they affect document projection; product-specific config. |
 | [OneLake](https://learn.microsoft.com/en-us/azure/search/search-how-to-index-onelake-files) | configuration | 0.74 | How-to article for setting up a OneLake files indexer using REST APIs. These indexer configuration steps (data source, indexer definition, connection details, parameters) are product-specific and include concrete configuration objects/fields that an LLM is unlikely to know exactly from training. This aligns best with configuration rather than generic tutorial content. |
+| [Query honoring sensitivity labels](https://learn.microsoft.com/en-us/azure/search/search-query-sensitivity-labels) | security | 0.74 | The page describes product-specific security behavior for query-time enforcement of Microsoft Purview sensitivity labels in Azure AI Search, including how EXTRACT usage rights and label metadata are evaluated at query time. This is detailed, service-specific security configuration/behavior that an LLM is unlikely to know from training and fits the security sub-skill type best. |
 | [Azure SQL Databases](https://learn.microsoft.com/en-us/azure/search/search-how-to-index-sql-database) | integrations | 0.72 | How-to for configuring Azure SQL/MI as a data source and indexer, including REST schema and product-specific parameters for indexers and data sources. |
 | [Azure SQL Server VMs](https://learn.microsoft.com/en-us/azure/search/search-how-to-index-sql-server) | security | 0.72 | Page gives product-specific steps for securing an Azure AI Search indexer connection to SQL Server on an Azure VM, including use of public internet endpoints, certificates for the SQL Server FQDN, and firewall configuration. These are concrete, service-specific security configuration details rather than generic concepts. |
 | [Compress using binary or scalar quantization](https://learn.microsoft.com/en-us/azure/search/vector-search-how-to-quantization) | configuration | 0.72 | Describes concrete, product-specific configuration of scalar and binary quantization, including options like oversampling and rescoring for Azure AI Search vector indexes. This is detailed configuration guidance rather than generic concepts. |

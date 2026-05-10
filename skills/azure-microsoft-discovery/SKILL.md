@@ -1,9 +1,9 @@
 ---
 name: azure-microsoft-discovery
-description: Expert knowledge for Azure Microsoft Discovery development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring Discovery workspaces, supercomputers, tools, Kusto queries, or REST-based Supercomputer jobs, and other Azure Microsoft Discovery related development tasks. Not for Azure Resource Graph (use azure-resource-graph), Azure Portal (use azure-portal), Azure Monitor (use azure-monitor), Azure Policy (use azure-policy).
+description: Expert knowledge for Azure Microsoft Discovery development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring Discovery workspaces, supercomputers, tools/agents, Kusto queries, or REST-based job submissions, and other Azure Microsoft Discovery related development tasks.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-03"
+  generated_at: "2026-05-10"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Microsoft Discovery Skill
@@ -32,7 +32,7 @@ This skill requires **network access** to fetch documentation content:
 | Security | L72-L83 | Security configuration for Discovery: encryption at rest, customer-managed keys, managed identities, RBAC, network/private access, and enabling/exporting audit logs. |
 | Configuration | L84-L105 | Configuring Discovery workspaces, supercomputers, storage, tools, agents, and log queries (Kusto/Log Analytics) for data handling, indexing, orchestration, and investigation lifecycle. |
 | Integrations & Coding Patterns | L106-L113 | Patterns and APIs for integrating tools/models into Discovery workflows, containerizing tools with Docker, writing action scripts, and submitting/monitoring Supercomputer jobs via REST |
-| Deployment | L114-L120 | Deploying Microsoft Discovery on Azure: hardened network setups, REST-based supercomputer provisioning, container image publishing, and Bicep-based infrastructure deployment. |
+| Deployment | L114-L120 | Deploying Microsoft Discovery: secure stack setup, provisioning supercomputer infra via REST, registering tools, and publishing tool images to Azure Container Registry. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -115,6 +115,6 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Deploy a fully network-hardened Microsoft Discovery stack | https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-deploy-network-hardened-stack |
+| Deploy and register tools to Microsoft Discovery | https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-deploy-tool-to-discovery |
 | Provision Discovery Supercomputer infrastructure via REST API | https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-manage-supercomputers-rest-api |
 | Publish Discovery tool images to Azure Container Registry | https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-publish-tool-to-acr |
-| Deploy Microsoft Discovery infrastructure with Bicep | https://learn.microsoft.com/en-us/azure/microsoft-discovery/quickstart-infrastructure-bicep |

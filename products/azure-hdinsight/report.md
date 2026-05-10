@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-03'
+generated_at: '2026-05-10'
 category_descriptions:
   configuration: 'Configuring and tuning HDInsight clusters: networking/VPN, Ambari/Hive/Spark/HBase
     settings, autoscale, monitoring/logging, SSH/Jupyter/VS Code access, and script-based
@@ -7,9 +7,9 @@ category_descriptions:
   integrations: Patterns and code samples for integrating HDInsight (Hive, Spark,
     Kafka, HBase, MapReduce, Sqoop) with tools, SDKs, REST/CLI, and external services
     like SQL, Cosmos DB, Power BI, IoT, and Synapse
-  architecture-patterns: HDInsight cluster architecture, security/VNet design, HA/DR
-    and business continuity patterns, migration from on-prem Hadoop, shared storage,
-    streaming (Spark/YARN), and Oozie-based pipelines.
+  architecture-patterns: HDInsight cluster architecture, security, networking, HA/DR,
+    migration from on-prem Hadoop, shared storage, streaming design, and operational
+    pipelines with Ambari/Oozie
   deployment: Creating, configuring, migrating, and automating HDInsight clusters
     (Hadoop, HBase, Kafka) using portal, CLI, PowerShell, ARM/REST, Data Factory,
     Marketplace, AMA, and runbooks
@@ -31,15 +31,15 @@ category_descriptions:
 skill_description: Expert knowledge for Azure HDInsight development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  working with HDInsight Spark/Hive/Kafka/HBase clusters, Ambari, VNet networking,
-  or Azure SQL/Cosmos DB integration, and other Azure HDInsight related development
-  tasks. Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure Databricks
-  (use azure-databricks), Azure Stream Analytics (use azure-stream-analytics).
-use_when: Use when working with HDInsight Spark/Hive/Kafka/HBase clusters, Ambari,
-  VNet networking, or Azure SQL/Cosmos DB integration, and other Azure HDInsight related
-  development tasks.
-confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics),
-  Azure Databricks (use azure-databricks), Azure Stream Analytics (use azure-stream-analytics).
+  working with HDInsight Spark/Hive/Kafka/HBase, Ambari/Oozie pipelines, Azure SQL/Cosmos
+  DB/Power BI, or secure VNET clusters, and other Azure HDInsight related development
+  tasks. Not for Azure Databricks (use azure-databricks), Azure Synapse Analytics
+  (use azure-synapse-analytics), Azure Stream Analytics (use azure-stream-analytics).
+use_when: Use when working with HDInsight Spark/Hive/Kafka/HBase, Ambari/Oozie pipelines,
+  Azure SQL/Cosmos DB/Power BI, or secure VNET clusters, and other Azure HDInsight
+  related development tasks.
+confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synapse
+  Analytics (use azure-synapse-analytics), Azure Stream Analytics (use azure-stream-analytics).
 ---
 # Azure HDInsight Crawl Report
 
@@ -48,12 +48,12 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 - **Total Pages**: 426
 - **Fetched**: 426
 - **Fetch Failed**: 0
-- **Classified**: 334
-- **Unclassified**: 92
+- **Classified**: 335
+- **Unclassified**: 91
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 0
+- **New Pages**: 0
+- **Updated Pages**: 1
 - **Unchanged**: 425
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-hdinsight/azure-hdinsight.csv`
@@ -62,7 +62,7 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 11 | 2.6% |
+| architecture-patterns | 12 | 2.8% |
 | best-practices | 38 | 8.9% |
 | configuration | 53 | 12.4% |
 | decision-making | 21 | 4.9% |
@@ -71,13 +71,14 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | limits-quotas | 4 | 0.9% |
 | security | 40 | 9.4% |
 | troubleshooting | 92 | 21.6% |
-| *(Unclassified)* | 92 | 21.6% |
+| *(Unclassified)* | 91 | 21.4% |
 
 ## Changes
 
-### New Pages
+### Updated Pages
 
-- [Reliability in HDInsight](https://learn.microsoft.com/en-us/azure/hdinsight/reliability-hdinsight)
+- [Plan VNETs for HDInsight](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-plan-virtual-network-deployment)
+  - Updated: 2025-07-19T11:09:00.000Z → 2026-05-08T06:13:00.000Z
 
 ## Classified Pages
 
@@ -355,6 +356,7 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | [Use with Microsoft Cognitive Toolkit](https://learn.microsoft.com/en-us/azure/hdinsight/spark/apache-spark-microsoft-cognitive-toolkit) | integrations | 0.70 | Shows how to install CNTK via custom script on HDInsight and use it from PySpark against Blob Storage, including product-specific integration steps. |
 | [What is enterprise security in HDInsight?](https://learn.microsoft.com/en-us/azure/hdinsight/domain-joined/hdinsight-security-overview) | security | 0.70 | Security overview but HDInsight-specific, describing concrete security solution combinations and how they apply; includes product-specific security modes and components. |
 | [Create service endpoint policies](https://learn.microsoft.com/en-us/azure/hdinsight/service-endpoint-policies) | configuration | 0.68 | Describes how to implement service endpoint policies specifically for HDInsight VNets, including required service endpoints and policy configuration details. |
+| [Plan VNETs for HDInsight](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-plan-virtual-network-deployment) | architecture-patterns | 0.68 | The article focuses on planning and design decisions for placing HDInsight clusters in Azure Virtual Networks and connecting to other cloud/on-premises resources. It discusses design and implementation decisions specific to HDInsight VNet deployments, which are product-specific architecture guidance rather than generic networking concepts. |
 | [Accelerated Writes](https://learn.microsoft.com/en-us/azure/hdinsight/hbase/apache-hbase-accelerated-writes) | best-practices | 0.65 | Explains how to effectively use Accelerated Writes with Premium SSD for HBase WAL; likely includes concrete configuration and usage recommendations specific to HDInsight. |
 | [Ambari user configs migration](https://learn.microsoft.com/en-us/azure/hdinsight/migrate-ambari-recent-version-hdinsight) | decision-making | 0.65 | Provides a script-based process and manual steps to compare and migrate Ambari configs between versions; supports migration decisions and concrete upgrade path. |
 | [Apache Phoenix with Apache Zeppelin](https://learn.microsoft.com/en-us/azure/hdinsight/hbase/apache-hbase-phoenix-zeppelin) | integrations | 0.65 | Describes using Phoenix over HBase with Zeppelin; likely includes JDBC connection strings, configuration options, and query execution patterns specific to this integration. |
@@ -486,7 +488,6 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | [Kafka FAQ](https://learn.microsoft.com/en-us/azure/hdinsight/kafka/kafka-faq) | 0.30 | FAQ format; summary suggests general Q&A without explicit mention of error codes, limits, or configuration tables. |
 | [Manage HDInsight clusters - Portal](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-administer-use-portal-linux) | 0.30 | Portal management walkthrough; mostly operational UI steps without detailed config tables or expert-only parameters. |
 | [Manage clusters using the Apache Ambari web UI](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-manage-ambari) | 0.30 | General Ambari UI usage for monitoring and configuration; likely step-by-step UI guide without detailed config parameter tables or limits. |
-| [Plan VNETs for HDInsight](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-plan-virtual-network-deployment) | 0.30 | Planning/overview for VNets with HDInsight; mostly conceptual design guidance without concrete config tables, limits, or product-specific numeric thresholds. |
 | [Run queries on an Apache Spark cluster](https://learn.microsoft.com/en-us/azure/hdinsight/spark/apache-spark-load-data-run-query) | 0.30 | Tutorial on loading data and running queries; focuses on basic Spark usage rather than HDInsight-specific expert configuration. |
 | [Run the MapReduce samples](https://learn.microsoft.com/en-us/azure/hdinsight/hadoop/apache-hadoop-run-samples-linux) | 0.30 | Primarily a how-to/tutorial for running bundled MapReduce samples via SSH and Hadoop commands; no detailed configuration tables, limits, or product-specific troubleshooting content. |
 | [Use Data Lake Storage Gen2 in the portal](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-use-data-lake-storage-gen2-portal) | 0.30 | Portal-based cluster creation tutorial; no indication of configuration parameter tables, limits, or troubleshooting content. |

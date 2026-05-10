@@ -52,8 +52,8 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 83
+- **Updated Pages**: 0
+- **Unchanged**: 85
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-firewall/azure-firewall.csv`
 
@@ -73,13 +73,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | *(Unclassified)* | 24 | 28.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [FQDN tags](https://learn.microsoft.com/en-us/azure/firewall/fqdn-tags)
-  - Updated: 2026-03-29T11:12:00.000Z → 2026-04-28T17:24:00.000Z
-- [TCP idle timeout behavior](https://learn.microsoft.com/en-us/azure/firewall/tcp-session-behavior)
-  - Updated: 2026-03-29T11:12:00.000Z → 2026-04-20T22:11:00.000Z
 
 ## Classified Pages
 

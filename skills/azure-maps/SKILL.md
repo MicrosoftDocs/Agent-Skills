@@ -3,7 +3,7 @@ name: azure-maps
 description: Expert knowledge for Azure Maps development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when using Azure Maps web SDK, search/geocoding, routing/traffic, weather APIs, or migrating from Bing/Google Maps, and other Azure Maps related development tasks. Not for Azure AI Search (use azure-cognitive-search), Azure Digital Twins (use azure-digital-twins), Azure IoT (use azure-iot), Azure IoT Hub (use azure-iot-hub).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-12"
+  generated_at: "2026-05-10"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Maps Skill

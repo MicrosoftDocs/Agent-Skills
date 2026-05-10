@@ -1,9 +1,9 @@
 ---
 name: azure-machine-learning
-description: Expert knowledge for Azure Machine Learning development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Azure ML workspaces, AutoML, online/batch endpoints, prompt flow, or feature store, and other Azure Machine Learning related development tasks. Not for Azure Databricks (use azure-databricks), Azure Synapse Analytics (use azure-synapse-analytics), Azure HDInsight (use azure-hdinsight), Azure Data Science Virtual Machines (use azure-data-science-vm).
+description: Expert knowledge for Azure Machine Learning development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Azure ML workspaces, pipelines, AutoML, online/batch endpoints, or prompt flow workloads, and other Azure Machine Learning related development tasks. Not for Azure Databricks (use azure-databricks), Azure Synapse Analytics (use azure-synapse-analytics), Azure HDInsight (use azure-hdinsight), Azure Data Science Virtual Machines (use azure-data-science-vm).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-03"
+  generated_at: "2026-05-10"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Machine Learning Skill
@@ -29,7 +29,7 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L96-L126 | Guidance on Azure ML design choices: algorithm selection, training and networking options, cost/DR planning, and detailed migration/upgrade paths from AML v1, Data Import, and prompt flow to newer services. |
 | Architecture & Design Patterns | L127-L133 | Designing Azure ML inference architectures: choosing endpoint types, planning real-time online endpoints, and structuring data movement and multistep pipeline components. |
 | Limits & Quotas | L134-L142 | Info on Azure ML regional/sovereign availability, VM SKUs, and service limits, plus how to view, plan, and manage quotas and capacity for model deployments and endpoints. |
-| Security | L143-L196 | Securing Azure ML workspaces, data, and endpoints with encryption, identity/RBAC, secrets, network isolation/VNets, on-prem access, and Azure Policy-based governance and compliance. |
+| Security | L143-L196 | Securing Azure ML: encryption, keys, auth/RBAC, identities, secrets, network isolation/VNets, data exfiltration, policy/compliance, and secure endpoints, training, workspaces, and prompt flows. |
 | Configuration | L197-L457 | How to configure Azure ML components, compute, networking, monitoring, AutoML, YAML specs, data/feature stores, deployments, and environments across the ML lifecycle. |
 | Integrations & Coding Patterns | L458-L513 | Patterns and how-tos for wiring Azure ML to data sources, Spark/Databricks/Synapse, MLflow, REST APIs, prompt flow, and external tools/services for training, deployment, and RAG. |
 | Deployment | L514-L556 | Deploying and operating models and prompt flows in Azure ML: online/batch endpoints, CI/CD and MLOps/GenAIOps pipelines, blue‑green rollouts, cross-workspace use, and production pipelines. |
@@ -152,7 +152,7 @@ This skill requires **network access** to fetch documentation content:
 | Understand secure network traffic flow in Azure ML VNets | https://learn.microsoft.com/en-us/azure/machine-learning/concept-secure-network-traffic-flow?view=azureml-api-2 |
 | Network isolation concepts for AML managed endpoints | https://learn.microsoft.com/en-us/azure/machine-learning/concept-secure-online-endpoint?view=azureml-api-2 |
 | Manage vulnerabilities for Azure ML images and components | https://learn.microsoft.com/en-us/azure/machine-learning/concept-vulnerability-management?view=azureml-api-2 |
-| Securely access on-premises resources from Azure ML | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-access-on-premises-resources?view=azureml-api-2 |
+| Configure Azure ML managed network to reach on-premises | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-access-on-premises-resources?view=azureml-api-2 |
 | Access Azure resources from AML endpoints via managed identity | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-access-resources-from-endpoints-managed-identities?view=azureml-api-2 |
 | Grant limited access to Azure ML labeling projects | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-add-users?view=azureml-api-2 |
 | Administer data access and authentication for Azure ML | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-administrate-data-authentication?view=azureml-api-2 |

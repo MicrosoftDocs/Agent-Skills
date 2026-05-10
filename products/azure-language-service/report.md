@@ -53,10 +53,10 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 - **Unclassified**: 93
 
 ### Incremental Update
-- **New Pages**: 6
-- **Updated Pages**: 8
-- **Unchanged**: 185
-- **Deleted Pages**: 4
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 199
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-language-service/azure-language-service.csv`
 
 ## Classification Statistics
@@ -75,41 +75,6 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | *(Unclassified)* | 93 | 46.7% |
 
 ## Changes
-
-### New Pages
-
-- [Overview](https://learn.microsoft.com/en-us/azure/ai-services/language-service/personally-identifiable-information/text-pii-overview)
-- [Detect and redact PII in text](https://learn.microsoft.com/en-us/azure/ai-services/language-service/personally-identifiable-information/how-to/redact-text-pii)
-- [Overview](https://learn.microsoft.com/en-us/azure/ai-services/language-service/personally-identifiable-information/conversation-pii-overview)
-- [Detect and redact PII in conversations](https://learn.microsoft.com/en-us/azure/ai-services/language-service/personally-identifiable-information/how-to/redact-conversation-pii)
-- [Overview](https://learn.microsoft.com/en-us/azure/ai-services/language-service/personally-identifiable-information/document-based-pii-overview)
-- [Detect and redact PII in native documents](https://learn.microsoft.com/en-us/azure/ai-services/language-service/personally-identifiable-information/how-to/redact-document-pii)
-
-### Updated Pages
-
-- [Overview](https://learn.microsoft.com/en-us/azure/ai-services/language-service/personally-identifiable-information/overview)
-  - Updated: 2026-03-30T08:00:00.000Z → 2026-04-21T16:56:00.000Z
-- [Quickstart](https://learn.microsoft.com/en-us/azure/ai-services/language-service/personally-identifiable-information/quickstart)
-  - Updated: 2026-02-06T08:00:00.000Z → 2026-04-27T17:23:00.000Z
-- [Language support](https://learn.microsoft.com/en-us/azure/ai-services/language-service/personally-identifiable-information/language-support)
-  - Updated: 2025-11-18T08:00:00.000Z → 2026-04-21T16:56:00.000Z
-- [Create, test, and deploy a knowledge base](https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/how-to/create-test-deploy)
-  - Updated: 2025-12-15T08:00:00.000Z → 2026-04-21T22:14:00.000Z
-- [Export/import/refresh](https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/how-to/export-import-refresh)
-  - Updated: 2025-12-13T06:19:00.000Z → 2026-04-20T08:00:00.000Z
-- [Authoring API](https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/how-to/authoring)
-  - Updated: 2025-12-13T06:19:00.000Z → 2025-12-15T08:00:00.000Z
-- [Limits](https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/concepts/limits)
-  - Updated: 2025-12-11T08:00:00.000Z → 2026-04-20T08:00:00.000Z
-- [Format guidelines](https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/reference/document-format-guidelines)
-  - Updated: 2025-12-15T08:00:00.000Z → 2026-04-21T22:14:00.000Z
-
-### Deleted Pages
-
-- ~~Native documents for language processing~~ (https://learn.microsoft.com/en-us/azure/ai-services/language-service/native-document-support/overview)
-- ~~Redact PII from conversations~~ (https://learn.microsoft.com/en-us/azure/ai-services/language-service/personally-identifiable-information/how-to/redact-conversation-pii)
-- ~~Redact PII from native documents~~ (https://learn.microsoft.com/en-us/azure/ai-services/language-service/personally-identifiable-information/how-to/redact-document-pii)
-- ~~Redact PII from text~~ (https://learn.microsoft.com/en-us/azure/ai-services/language-service/personally-identifiable-information/how-to/redact-text-pii)
 
 ## Classified Pages
 

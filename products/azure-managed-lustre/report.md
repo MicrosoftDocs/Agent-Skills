@@ -47,8 +47,8 @@ confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure NetApp 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 29
+- **Updated Pages**: 0
+- **Unchanged**: 30
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-managed-lustre/azure-managed-lustre.csv`
 
@@ -66,11 +66,6 @@ confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure NetApp 
 | *(Unclassified)* | 2 | 6.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [Troubleshoot cluster performance issues](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/troubleshoot-performance)
-  - Updated: 2026-02-27T18:05:00.000Z → 2026-04-24T17:07:00.000Z
 
 ## Classified Pages
 

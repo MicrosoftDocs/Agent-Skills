@@ -11,6 +11,7 @@
 | Migrate AKS nodes to Azure Linux with OS Guard | https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-os-guard-migration |
 | Upgrade Azure Linux with OS Guard node images | https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-os-guard-upgrade |
 | Upgrade Azure Linux Container Host node images in AKS | https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade |
+| Migrate Azure availability sets to VM scale sets | https://learn.microsoft.com/en-us/azure/virtual-machines/availability-set-migrate-to-scale-sets |
 | Copy incremental managed disk snapshots across regions | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-copy-incremental-snapshot-across-regions |
 | Export ARM templates for resource groups with VM extensions | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/export-templates |
 | Migrate Linux VMs from unmanaged to managed disks using CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/convert-unmanaged-to-managed-disks |

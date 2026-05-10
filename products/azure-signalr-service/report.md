@@ -50,10 +50,10 @@ confusable_not_for: Not for Azure Web PubSub (use azure-web-pubsub), Azure Relay
 - **Unclassified**: 13
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 71
-- **Deleted Pages**: 2
+- **Unchanged**: 72
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-signalr-service/azure-signalr-service.csv`
 
 ## Classification Statistics
@@ -72,15 +72,6 @@ confusable_not_for: Not for Azure Web PubSub (use azure-web-pubsub), Azure Relay
 | *(Unclassified)* | 13 | 18.1% |
 
 ## Changes
-
-### New Pages
-
-- [Disaster recovery](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-concept-disaster-recovery)
-
-### Deleted Pages
-
-- ~~Availability zones~~ (https://learn.microsoft.com/en-us/azure/azure-signalr/availability-zones)
-- ~~Resiliency and disaster recovery~~ (https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-concept-disaster-recovery)
 
 ## Classified Pages
 

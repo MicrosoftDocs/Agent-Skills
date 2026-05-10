@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-05-10'
 category_descriptions:
   architecture-patterns: Designing Azure Load Testing setups with virtual networks
     and private endpoints, including VNet-injected tests, network isolation, and testing
@@ -7,9 +7,9 @@ category_descriptions:
   best-practices: Guidance on load testing App Service apps, tuning high-scale tests,
     finding performance bottlenecks, and optimizing Playwright Workspace tests for
     reliability and low latency.
-  configuration: 'Configuring and running Azure Load Testing: test definitions/runs,
-    HTTP/JMeter/Playwright settings, baselines, auto-stop, scheduling, multi-region,
-    monitoring, exports, and CI/CD YAML.'
+  configuration: 'Configuring and running Azure Load Testing and Playwright Workspaces:
+    test definitions, HTTP/JMeter settings, secrets, monitoring, baselines, reporting/export,
+    CI/CD YAML, scheduling, and multi-region load.'
   troubleshooting: Diagnosing and fixing Azure Load Testing issues (failures, debug
     runs, private endpoints) and troubleshooting Playwright Workspaces errors and
     test run problems.
@@ -31,17 +31,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure App Testing development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  using Azure Load Testing with VNets/private endpoints, JMeter/Locust/Playwright,
-  CI/CD pipelines, or Playwright Workspaces, and other Azure App Testing related development
-  tasks. Not for Azure Test Plans (use azure-test-plans), Playwright Workspaces (use
-  azure-playwright-workspaces), Azure DevOps (use azure-devops), Azure App Service
-  (use azure-app-service).
-use_when: Use when using Azure Load Testing with VNets/private endpoints, JMeter/Locust/Playwright,
-  CI/CD pipelines, or Playwright Workspaces, and other Azure App Testing related development
-  tasks.
-confusable_not_for: Not for Azure Test Plans (use azure-test-plans), Playwright Workspaces
-  (use azure-playwright-workspaces), Azure DevOps (use azure-devops), Azure App Service
-  (use azure-app-service).
+  running Azure Load Testing, Playwright Workspaces, JMeter/Locust tests, VNet/private
+  endpoint tests, or CI/CD test pipelines, and other Azure App Testing related development
+  tasks. Not for Azure Test Plans (use azure-test-plans), Azure DevOps (use azure-devops),
+  Azure Pipelines (use azure-pipelines), Playwright Workspaces (use azure-playwright-workspaces).
+use_when: Use when running Azure Load Testing, Playwright Workspaces, JMeter/Locust
+  tests, VNet/private endpoint tests, or CI/CD test pipelines, and other Azure App
+  Testing related development tasks.
+confusable_not_for: Not for Azure Test Plans (use azure-test-plans), Azure DevOps
+  (use azure-devops), Azure Pipelines (use azure-pipelines), Playwright Workspaces
+  (use azure-playwright-workspaces).
 ---
 # Azure App Testing Crawl Report
 
@@ -55,8 +54,8 @@ confusable_not_for: Not for Azure Test Plans (use azure-test-plans), Playwright 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 72
+- **Updated Pages**: 1
+- **Unchanged**: 71
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-app-testing/azure-app-testing.csv`
 
@@ -76,6 +75,11 @@ confusable_not_for: Not for Azure Test Plans (use azure-test-plans), Playwright 
 | *(Unclassified)* | 15 | 20.8% |
 
 ## Changes
+
+### Updated Pages
+
+- [Supported Azure resource types](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/resource-supported-azure-resource-types)
+  - Updated: 2026-02-13T18:11:00.000Z → 2026-05-08T17:37:00.000Z
 
 ## Classified Pages
 
@@ -120,7 +124,7 @@ confusable_not_for: Not for Azure Test Plans (use azure-test-plans), Playwright 
 | [Run tests for local and private apps](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/how-to-test-local-applications) | integrations | 0.70 | Describes connecting cloud-hosted browsers to localhost/private networks; likely includes specific configuration patterns and parameters for network exposure in Playwright, which are integration patterns unique to this service. |
 | [Run tests in debug mode](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/how-to-run-tests-in-debug-mode) | troubleshooting | 0.70 | Explains debug mode constraints (single engine, 10 minutes) and how to use debug logs and request/response data to diagnose issues. |
 | [Secure Azure Load Testing with Azure Policy](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/how-to-use-azure-policy) | security | 0.70 | Shows how to apply Azure Policy definitions to enforce security and compliance on Load Testing resources. |
-| [Supported Azure resource types](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/resource-supported-azure-resource-types) | configuration | 0.70 | Reference for supported Azure resource types and metrics; likely includes tables of resource types and metric names, which are configuration/compatibility details not obvious from general knowledge. |
+| [Supported Azure resource types](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/resource-supported-azure-resource-types) | configuration | 0.70 | The page enumerates exactly which Azure resource types are supported for server-side monitoring in Azure Load Testing and how metrics can be selected per resource. This is product-specific configuration knowledge (what can be configured and monitored) that an LLM is unlikely to know from training. It is not about limits, troubleshooting, or architecture, but about supported resource-type configuration options. |
 | [Use JMeter user properties](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/how-to-configure-user-properties) | configuration | 0.70 | Describes how to upload and use JMeter user properties files and environment variables in Azure Load Testing, including supported behavior. |
 | [Automate load tests with Azure Pipelines](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/quickstart-add-load-test-cicd) | deployment | 0.65 | Shows how to wire Azure Load Testing into Azure Pipelines directly from the portal; product-specific CI/CD integration and constraints. |
 | [Compare test runs](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/how-to-compare-multiple-test-runs) | configuration | 0.65 | Explains how to select runs, mark baselines, and interpret trends metrics—product-specific analysis workflow. |

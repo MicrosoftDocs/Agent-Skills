@@ -1,9 +1,9 @@
 ---
 name: azure-cognitive-search
-description: Expert knowledge for Azure AI Search development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing indexes, skillsets, indexers, semantic/vector search, or RAG/knowledge-store workloads, and other Azure AI Search related development tasks. Not for Azure Cosmos DB (use azure-cosmos-db), Azure Table Storage (use azure-table-storage), Azure Data Explorer (use azure-data-explorer).
+description: Expert knowledge for Azure AI Search development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building indexes, indexers, skillsets, semantic/vector search, or RAG/knowledge-store workloads, and other Azure AI Search related development tasks. Not for Azure Cosmos DB (use azure-cosmos-db), Azure Data Explorer (use azure-data-explorer), Azure Synapse Analytics (use azure-synapse-analytics), Azure Open Datasets (use azure-open-datasets).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-03"
+  generated_at: "2026-05-10"
   generator: "docs2skills/1.0.0"
 ---
 # Azure AI Search Skill
@@ -29,7 +29,7 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L70-L83 | Guidance on choosing SKUs, tiers, regions, and SDKs, estimating and upgrading capacity, managing costs, and migrating code and skills across Azure AI Search API versions. |
 | Architecture & Design Patterns | L84-L90 | Architectural guidance for Azure AI Search: RAG patterns, knowledge store design, multitenancy and tenant isolation, and multi-region/high-availability deployment designs. |
 | Limits & Quotas | L91-L100 | Limits, quotas, and behaviors for Azure AI Search: service and index caps by tier, vector/index size limits, indexer scheduling windows, enrichment quotas, and related FAQs. |
-| Security | L101-L139 | Securing Azure AI Search: RBAC/keyless auth, keys, CMK encryption, private endpoints, firewalls, indexer access to data sources, ACL/Purview-based filtering, and security best practices. |
+| Security | L101-L139 | Securing Azure AI Search: RBAC, keys, encryption, private networking, firewalls, indexer auth (managed identity, ACLs, Purview labels), and policy/compliance configuration. |
 | Configuration | L140-L233 | Configuring Azure AI Search: data sources, indexers, skillsets, analyzers, vector/semantic settings, enrichment, monitoring, and knowledge bases for agentic retrieval and answer synthesis. |
 | Integrations & Coding Patterns | L234-L291 | Integrating Azure AI Search with data sources, vectorizers, and tools; building query/filter patterns, semantic/vector search, custom skills, and knowledge stores for apps and agents. |
 | Deployment | L292-L299 | Deploying and moving Azure AI Search services with ARM/Bicep/Terraform, plus guidance on cross-region moves and checking regional feature and SKU availability. |
@@ -122,7 +122,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure indexers to ingest Microsoft Purview sensitivity labels | https://learn.microsoft.com/en-us/azure/search/search-indexer-sensitivity-labels |
 | Configure security, access, and performance for Azure AI Search | https://learn.microsoft.com/en-us/azure/search/search-manage |
 | Enforce ACL and RBAC at query time in Azure AI Search | https://learn.microsoft.com/en-us/azure/search/search-query-access-control-rbac-enforcement |
-| Enforce Microsoft Purview sensitivity labels at Azure AI Search query time | https://learn.microsoft.com/en-us/azure/search/search-query-sensitivity-labels |
+| Enforce Purview sensitivity labels in Azure AI Search queries | https://learn.microsoft.com/en-us/azure/search/search-query-sensitivity-labels |
 | Manage Azure AI Search admin and query API keys | https://learn.microsoft.com/en-us/azure/search/search-security-api-keys |
 | Apply security best practices to Azure AI Search | https://learn.microsoft.com/en-us/azure/search/search-security-best-practices |
 | Enable RBAC for Azure AI Search data plane operations | https://learn.microsoft.com/en-us/azure/search/search-security-enable-roles |

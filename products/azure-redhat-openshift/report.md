@@ -1,11 +1,11 @@
 ---
-generated_at: '2026-05-03'
+generated_at: '2026-05-10'
 category_descriptions:
   best-practices: Guidance on sizing and deploying ARO clusters and infra nodes, optimizing
     OpenShift Virtualization VMs, and understanding ARO 4 support limits and policies
-  configuration: 'Configuring ARO clusters: networking (proxy, DNS, egress, MTU),
-    storage (Azure Files, Prometheus), registry/pull secrets, node/subnet layout,
-    Spot VMs, tagging, and health alerts.'
+  configuration: 'Configuring ARO clusters: networking (proxy, DNS, egress, MTU, endpoints),
+    storage (Azure Files, Prometheus), registry, pull secrets, node subnets/Spot VMs,
+    alerts, and resource tagging.'
   security: 'Identity, auth, and network security for ARO: Entra/managed identities,
     workload identity, NSGs/egress control, disk encryption, FIPS, Front Door protection,
     Lockbox, and credential rotation.'
@@ -26,17 +26,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Red Hat OpenShift development including
   troubleshooting, best practices, decision making, limits & quotas, security, configuration,
   integrations & coding patterns, and deployment. Use when creating ARO clusters,
-  configuring networking/storage, securing with Entra/NSGs, using GPUs/Key Vault,
-  or upgrading, and other Azure Red Hat OpenShift related development tasks. Not for
-  Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Container Apps
-  (use azure-container-apps), Azure Container Instances (use azure-container-instances),
-  Azure VMware Solution (use azure-vmware-solution).
+  configuring networking/storage, securing with Entra/Key Vault, or integrating GPUs/NetApp,
+  and other Azure Red Hat OpenShift related development tasks. Not for Azure Kubernetes
+  Service (AKS) (use azure-kubernetes-service), Azure Container Apps (use azure-container-apps),
+  Azure VMware Solution (use azure-vmware-solution), Azure Virtual Machines (use azure-virtual-machines).
 use_when: Use when creating ARO clusters, configuring networking/storage, securing
-  with Entra/NSGs, using GPUs/Key Vault, or upgrading, and other Azure Red Hat OpenShift
+  with Entra/Key Vault, or integrating GPUs/NetApp, and other Azure Red Hat OpenShift
   related development tasks.
 confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
-  Azure Container Apps (use azure-container-apps), Azure Container Instances (use
-  azure-container-instances), Azure VMware Solution (use azure-vmware-solution).
+  Azure Container Apps (use azure-container-apps), Azure VMware Solution (use azure-vmware-solution),
+  Azure Virtual Machines (use azure-virtual-machines).
 ---
 # Azure Red Hat OpenShift Crawl Report
 
@@ -50,8 +49,8 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 64
+- **Updated Pages**: 1
+- **Unchanged**: 65
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-redhat-openshift/azure-redhat-openshift.csv`
 
@@ -73,10 +72,8 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 
 ### Updated Pages
 
-- [Support lifecycle for Azure Red Hat OpenShift 4](https://learn.microsoft.com/en-us/azure/openshift/support-lifecycle)
-  - Updated: 2025-11-14T18:00:00.000Z → 2026-04-20T08:00:00.000Z
-- [What's new with Azure Red Hat OpenShift?](https://learn.microsoft.com/en-us/azure/openshift/azure-redhat-openshift-release-notes)
-  - Updated: 2026-02-25T08:00:00.000Z → 2026-04-20T08:00:00.000Z
+- [Configure Prometheus persistence](https://learn.microsoft.com/en-us/azure/openshift/howto-prometheus-persistence)
+  - Updated: 2025-11-25T18:15:00.000Z → 2026-04-06T08:00:00.000Z
 
 ## Classified Pages
 
@@ -103,7 +100,6 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Manage customer data access requests](https://learn.microsoft.com/en-us/azure/openshift/howto-use-lockbox) | security | 0.74 | Explains how Lockbox mediates support access to ARO resources, including approval flows and scopes; security/compliance configuration specific to this integration. |
 | [Use Azure Container registry](https://learn.microsoft.com/en-us/azure/openshift/howto-use-acr-with-aro) | integrations | 0.72 | How-to for using ACR from ARO with Kubernetes secrets and imagePullSecrets; contains product-specific integration steps and parameters beyond generic container registry usage. |
 | [Bring your own Network Security Group](https://learn.microsoft.com/en-us/azure/openshift/howto-bring-nsg) | security | 0.70 | Describes bringing your own NSG for ARO with specific rules, resource group relationships, and constraints; product-specific network security configuration. |
-| [Configure Prometheus persistence](https://learn.microsoft.com/en-us/azure/openshift/howto-prometheus-persistence) | configuration | 0.70 | Details how to enable persistence for the built-in Prometheus in ARO, including storage classes and configuration objects specific to this environment. |
 | [Configure Resource Health alerts](https://learn.microsoft.com/en-us/azure/openshift/howto-monitor-alerts) | configuration | 0.70 | Shows mapping of ARO cluster signals to Azure Monitor alerts with specific signal types and configuration steps; product-specific monitoring configuration. |
 | [Configure custom DNS](https://learn.microsoft.com/en-us/azure/openshift/howto-custom-dns) | configuration | 0.70 | DNS resolver configuration and cluster requirements are product-specific network configuration details. |
 | [Create a service principal](https://learn.microsoft.com/en-us/azure/openshift/howto-create-service-principal) | security | 0.70 | Step-by-step creation of Microsoft Entra service principal for ARO; includes specific role/permission requirements and CLI parameters unique to this deployment scenario. |
@@ -120,6 +116,7 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Support policies for Azure Red Hat OpenShift 4](https://learn.microsoft.com/en-us/azure/openshift/support-policies-v4) | best-practices | 0.70 | The page defines which specific configuration changes to internal Azure Red Hat OpenShift 4 components are supported vs unsupported, including explicit DO/DON'T guidance that directly affects cluster supportability. These are product-specific support and configuration rules that function as best-practice constraints and are not generic knowledge. |
 | [Tag resources using Azure Policy](https://learn.microsoft.com/en-us/azure/openshift/howto-tag-resources) | configuration | 0.70 | Involves creating JSON policy definitions/assignments and remediation for ARO-managed resource groups, with specific parameters and behavior. |
 | [Use Admin Kubeconfig](https://learn.microsoft.com/en-us/azure/openshift/howto-kubeconfig) | troubleshooting | 0.70 | Explicitly for regaining access when console/ingress/auth components fail; maps specific failure scenarios to using Admin Kubeconfig. |
+| [Configure Prometheus persistence](https://learn.microsoft.com/en-us/azure/openshift/howto-prometheus-persistence) | configuration | 0.68 | How-to for configuring Prometheus persistence on Azure Red Hat OpenShift is likely to include product-specific configuration objects (StorageClass, PVC specs, retention settings, operator config fields) and exact parameter names/values unique to ARO’s integrated monitoring stack, which qualifies as configuration expert knowledge rather than a generic tutorial. |
 | [Deploy an Open Liberty/WebSphere Liberty Java app](https://learn.microsoft.com/en-us/azure/openshift/howto-deploy-java-liberty-app) | deployment | 0.68 | Uses Azure Marketplace offer to provision ARO plus Liberty operators and images; includes product-specific deployment wiring and options. |
 | [Secure OpenShift with Azure Front Door](https://learn.microsoft.com/en-us/azure/openshift/howto-secure-openshift-with-front-door) | security | 0.68 | Describes securing ARO access via Azure Front Door Premium with product-specific configuration; likely includes concrete security settings and integration parameters. |
 | [Create a private Azure Red Hat OpenShift cluster](https://learn.microsoft.com/en-us/azure/openshift/howto-create-private-cluster-4x) | deployment | 0.65 | Private cluster creation has specific networking and access requirements; article includes environment preparation and versioned CLI requirements. |

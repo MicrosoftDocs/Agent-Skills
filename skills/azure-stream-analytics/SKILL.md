@@ -1,9 +1,9 @@
 ---
 name: azure-stream-analytics
-description: Expert knowledge for Azure Stream Analytics development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when wiring ASA with Event Hubs/Kafka, Cosmos/SQL/Delta outputs, ML/AML scoring, UDFs, or IoT Edge jobs, and other Azure Stream Analytics related development tasks. Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure Data Factory (use azure-data-factory), Azure Event Hubs (use azure-event-hubs), Azure HDInsight (use azure-hdinsight).
+description: Expert knowledge for Azure Stream Analytics development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building ASA jobs with Event Hubs/Kafka, Cosmos DB/SQL outputs, ML/AML scoring, UDFs, or IoT Edge, and other Azure Stream Analytics related development tasks. Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure Data Explorer (use azure-data-explorer), Azure Event Hubs (use azure-event-hubs), Azure Functions (use azure-functions).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-03"
+  generated_at: "2026-05-10"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Stream Analytics Skill
@@ -30,7 +30,7 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L84-L88 | Architectural patterns and best practices for designing resilient, geo-redundant Azure Stream Analytics solutions, including reference topologies and high-availability job designs. |
 | Limits & Quotas | L89-L94 | Configuring and tuning Stream Analytics streaming units and clusters, including how to resize, scale performance, and understand capacity limits and resource quotas. |
 | Security | L95-L114 | Securing Stream Analytics with managed identities, private endpoints, VNets, data protection, credential rotation, and Azure Policy for outputs like Event Hubs, SQL, Cosmos DB, Blob, Service Bus, Power BI. |
-| Configuration | L115-L148 | Configuring Stream Analytics jobs: inputs, outputs (SQL, Cosmos DB, Event Hubs, Kafka, Power BI, Delta Lake, etc.), autoscale, monitoring/alerts, event policies, error handling, and job compatibility. |
+| Configuration | L115-L148 | Configuring Stream Analytics jobs: inputs/outputs (SQL, Cosmos DB, Event Hubs, Kafka, Power BI, Delta Lake, etc.), partitioning, autoscale, compatibility, monitoring, and error/late-event policies. |
 | Integrations & Coding Patterns | L149-L168 | Integrating Stream Analytics with Kafka, Event Hubs, ML/AML, schema registry, and implementing UDFs/aggregates, .NET SDK management, JSON/Avro parsing, and ML/anomaly patterns. |
 | Deployment | L169-L182 | Deploying, starting/stopping, scaling, and moving Stream Analytics jobs and clusters, plus CI/CD automation via ARM/Bicep, GitHub Actions, Azure DevOps, npm/NuGet, and IoT Edge/Stack Hub. |
 
@@ -144,7 +144,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure Protobuf input deserialization in Stream Analytics | https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-parsing-protobuf |
 | Set up Azure Monitor alerts for Stream Analytics jobs | https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-set-up-alerts |
 | Set up Azure Table storage output for Stream Analytics | https://learn.microsoft.com/en-us/azure/stream-analytics/table-storage-output |
-| Configure Azure Stream Analytics to write to Delta Lake tables | https://learn.microsoft.com/en-us/azure/stream-analytics/write-to-delta-lake |
+| Configure Azure Stream Analytics output to Delta Lake | https://learn.microsoft.com/en-us/azure/stream-analytics/write-to-delta-lake |
 
 ### Integrations & Coding Patterns
 | Topic | URL |

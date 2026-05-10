@@ -1,9 +1,9 @@
 ---
 name: azure-operator-nexus
-description: Expert knowledge for Azure Operator Nexus development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring Nexus clusters/fabric, securing access, sizing SKUs/storage, upgrading fabric/VM images, or designing near-edge storage, and other Azure Operator Nexus related development tasks. Not for Azure Network Function Manager (use azure-network-function-manager), Azure Networking (use azure-networking), Azure Virtual Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan).
+description: Expert knowledge for Azure Operator Nexus development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring Nexus clusters/fabric, BGP/ACL/QoS, secure access/RBAC, NPB TAP rules, or near-edge storage, and other Azure Operator Nexus related development tasks. Not for Azure Network Function Manager (use azure-network-function-manager), Azure Networking (use azure-networking), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Operator Service Manager (use azure-operator-service-manager).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-03"
+  generated_at: "2026-05-10"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Operator Nexus Skill
@@ -26,13 +26,13 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L37-L82 | Diagnosing and fixing Nexus bare-metal, network, storage, and Kubernetes issues, including provisioning failures, connectivity, performance, pod/VM errors, and collecting diagnostic logs. |
 | Best Practices | L83-L88 | Guidance on Nexus bare metal lifecycle ops, ETCD maintenance in Nexus AKS, and procedures for repairing and maintaining Nexus storage appliance components. |
-| Decision Making | L89-L96 | Guidance on planning Nexus cluster placement, mapping Nexus versions to supported storage, and choosing the right Kubernetes VM and Nexus SKUs for capacity and performance needs. |
+| Decision Making | L89-L96 | Guidance on planning Nexus Kubernetes cluster placement and choosing compatible Nexus versions, VM SKUs, and platform SKUs based on workload, capacity, and storage support. |
 | Architecture & Design Patterns | L97-L101 | Designing near-edge storage for Azure Operator Nexus: architecture choices, data locality, performance, capacity planning, redundancy, and integration with Nexus network/compute. |
 | Limits & Quotas | L102-L114 | Limits, capacity planning, supported versions, and operational behaviors for Nexus clusters: quotas, storage sizing, node restarts, isolation domain requirements, upgrades, and log retention. |
 | Security | L115-L154 | Securing Nexus: identity/RBAC, managed identities, ACLs, SSH/serial access, break-glass, key/cert/secret rotation, Defender/Policy, and secure VM/cluster/network access configuration. |
-| Configuration | L155-L219 | Configuring Nexus clusters, Kubernetes, and network fabric: JSON templates, isolation domains, BGP/route policies, QoS, ACLs, maintenance, monitoring, and commit/AB-update workflows. |
-| Integrations & Coding Patterns | L220-L224 | Configuring Network Packet Broker TAP rules in Azure Operator Nexus, including rule creation, traffic mirroring, filtering, and integration patterns for network observability. |
-| Deployment | L225-L233 | Guides for upgrading and replacing Nexus fabric devices/terminal servers, running pre-validation and template-based fabric upgrades, and building/maintaining VM images for Operator Nexus. |
+| Configuration | L155-L221 | Configuring and operating Nexus clusters and network fabric: templates, isolation domains, BGP/route policies, ACLs, QoS, monitoring, commit workflows, and Kubernetes/node customization. |
+| Integrations & Coding Patterns | L222-L226 | Configuring Network Packet Broker TAP rules in Azure Operator Nexus, including rule creation, traffic mirroring, filtering, and integration patterns for network observability. |
+| Deployment | L227-L235 | Guides for upgrading and replacing Nexus fabric devices/terminal servers, running pre-validation and template-based fabric upgrades, and building/maintaining VM images for Operator Nexus. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -176,6 +176,7 @@ This skill requires **network access** to fetch documentation content:
 | Manage cluster metrics configurations in Nexus | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-cluster-metrics-configuration-management |
 | Configure BGP prefix limits on CE devices in Operator Nexus | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-configure-bgp-prefix-limit-on-customer-edge-devices |
 | Configure BYO storage and UAMI for Nexus Network Fabric | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-configure-bring-your-own-storage-network-fabric |
+| Configure and manage Azure Operator Nexus clusters with CLI | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-configure-cluster |
 | Configure diagnostic settings and config drift monitoring in Operator Nexus | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-configure-diagnostic-settings-monitor-configuration-differences |
 | Configure L2 and L3 isolation domains in Operator Nexus | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-configure-isolation-domain |
 | Configure VRF route prefix limits for IPv4/IPv6 on AON CE devices | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-configure-virtual-routing-forwarding-route-prefix-limits-on-devices |
@@ -212,9 +213,10 @@ This skill requires **network access** to fetch documentation content:
 | Configure Azure Operator Nexus cluster password via Key Vault URI | https://learn.microsoft.com/en-us/azure/operator-nexus/reference-key-vault-credential |
 | Assign near-edge BareMetal machine roles in Nexus | https://learn.microsoft.com/en-us/azure/operator-nexus/reference-near-edge-baremetal-machine-roles |
 | Configure neighbor groups in Azure Operator Nexus | https://learn.microsoft.com/en-us/azure/operator-nexus/reference-neighbor-group-configuration |
+| Use Network Fabric Controller internal service metrics | https://learn.microsoft.com/en-us/azure/operator-nexus/reference-network-fabric-controller-metrics |
 | Apply route policy configuration examples in Nexus | https://learn.microsoft.com/en-us/azure/operator-nexus/reference-nexus-route-policy-config-examples |
 | Manage route policy operations in Operator Nexus | https://learn.microsoft.com/en-us/azure/operator-nexus/reference-nexus-route-policy-operations |
-| Use Operator Nexus observability metrics for Ethernet monitoring | https://learn.microsoft.com/en-us/azure/operator-nexus/reference-operator-nexus-observability-metrics |
+| Monitor Azure Operator Nexus Ethernet metrics | https://learn.microsoft.com/en-us/azure/operator-nexus/reference-operator-nexus-observability-metrics |
 | Configure route policies in Azure Operator Nexus | https://learn.microsoft.com/en-us/azure/operator-nexus/reference-route-policy-configuration |
 
 ### Integrations & Coding Patterns

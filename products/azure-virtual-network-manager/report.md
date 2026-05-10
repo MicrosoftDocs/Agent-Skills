@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-03'
+generated_at: '2026-05-10'
 category_descriptions:
   configuration: 'Configuring AVNM: IPAM pools, network groups (static/dynamic via
     Policy), cross-tenant connections, event logs, and managing UDRs/topologies and
@@ -60,8 +60,8 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ### Updated Pages
 
-- [IP address management overview](https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-ip-address-management)
-  - Updated: 2026-01-09T08:00:00.000Z → 2026-04-27T22:14:00.000Z
+- [Create IP address pools with IPAM](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-manage-ip-addresses-network-manager)
+  - Updated: 2026-01-13T23:18:00.000Z → 2026-05-01T08:00:00.000Z
 
 ## Classified Pages
 
@@ -113,7 +113,7 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Create Virtual Network Manager - Terraform](https://learn.microsoft.com/en-us/azure/virtual-network-manager/create-virtual-network-manager-terraform) | 0.35 | Terraform quickstart; shows how to deploy a mesh topology, but summary indicates tutorial-style content rather than a full configuration reference. |
 | [Network groups overview](https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-network-groups) | 0.35 | Conceptual article on network groups and membership types; high-level behavior, not detailed configuration or limits. |
 | [Virtual Network Verifier overview](https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-virtual-network-verifier) | 0.35 | Conceptual 'what is network verifier' overview; summary focuses on purpose and scenarios, not on concrete configuration parameters, limits, or troubleshooting mappings. |
-| [Create IP address pools with IPAM](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-manage-ip-addresses-network-manager) | 0.30 | Describes managing IP addresses and pools; summary suggests step-by-step management, not detailed configuration parameter tables, limits, or error-code-based troubleshooting. |
+| [Create IP address pools with IPAM](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-manage-ip-addresses-network-manager) | 0.30 | The page appears to be a how-to guide for managing IP addresses and IPAM with Azure Virtual Network Manager (creating and assigning IP pools). The summary does not indicate detailed numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. It mainly describes availability and general capability, which is not expert-knowledge per the defined categories. |
 | [Create Virtual Network Manager - Bicep](https://learn.microsoft.com/en-us/azure/virtual-network-manager/create-virtual-network-manager-bicep) | 0.30 | Bicep quickstart; similar to other quickstarts, focused on basic deployment steps rather than detailed expert configuration or limits. |
 | [Create Virtual Network Manager - CLI](https://learn.microsoft.com/en-us/azure/virtual-network-manager/create-virtual-network-manager-cli) | 0.30 | Quickstart using Azure CLI; focused on initial setup, not exhaustive configuration or numeric constraints. |
 | [Create Virtual Network Manager - PowerShell](https://learn.microsoft.com/en-us/azure/virtual-network-manager/create-virtual-network-manager-powershell) | 0.30 | Quickstart using PowerShell; primarily walkthrough commands and basic configuration, not a reference of expert-only parameters or limits. |

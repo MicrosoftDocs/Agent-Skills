@@ -50,9 +50,9 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 - **Unclassified**: 34
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 2
-- **Unchanged**: 120
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 123
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-container-registry/azure-container-registry.csv`
 
@@ -72,17 +72,6 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | *(Unclassified)* | 34 | 27.6% |
 
 ## Changes
-
-### New Pages
-
-- [Enable artifact cache from another ACR registry](https://learn.microsoft.com/en-us/azure/container-registry/artifact-cache-acr-to-acr-cli)
-
-### Updated Pages
-
-- [Container registry tiers and limits](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-skus)
-  - Updated: 2026-03-25T08:00:00.000Z → 2026-03-26T06:03:00.000Z
-- [Restrict access using private endpoint](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-private-link)
-  - Updated: 2026-02-12T06:14:00.000Z → 2026-04-30T22:14:00.000Z
 
 ## Classified Pages
 

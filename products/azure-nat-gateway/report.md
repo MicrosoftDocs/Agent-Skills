@@ -43,10 +43,10 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 - **Unclassified**: 10
 
 ### Incremental Update
-- **New Pages**: 9
-- **Updated Pages**: 2
-- **Unchanged**: 13
-- **Deleted Pages**: 9
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 24
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-nat-gateway/azure-nat-gateway.csv`
 
 ## Classification Statistics
@@ -63,37 +63,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | *(Unclassified)* | 10 | 41.7% |
 
 ## Changes
-
-### New Pages
-
-- [Create and validate a Standard NAT gateway](https://learn.microsoft.com/en-us/azure/nat-gateway/quickstart-create-nat-gateway)
-- [Create and validate a Standard V2 NAT gateway](https://learn.microsoft.com/en-us/azure/nat-gateway/quickstart-create-nat-gateway-v2)
-- [Azure NAT Gateway SKUs](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-sku)
-- [Migrate Azure NAT Gateway to Standard V2](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-v2-migrate)
-- [Use a NAT gateway with a hub-and-spoke network](https://learn.microsoft.com/en-us/azure/nat-gateway/tutorial-hub-spoke-route-nat)
-- [Integrate a NAT gateway public load balancer](https://learn.microsoft.com/en-us/azure/nat-gateway/tutorial-nat-gateway-load-balancer-public-portal)
-- [Integrate a NAT gateway internal load balancer](https://learn.microsoft.com/en-us/azure/nat-gateway/tutorial-nat-gateway-load-balancer-internal-portal)
-- [Use deployment templates to create a StandardV2 NAT gateway](https://learn.microsoft.com/en-us/azure/nat-gateway/quickstart-create-nat-gateway-v2-templates)
-- [Create and configure a NAT gateway after a region move](https://learn.microsoft.com/en-us/azure/nat-gateway/region-move-nat-gateway)
-
-### Updated Pages
-
-- [What is Azure NAT Gateway?](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-overview)
-  - Updated: 2026-04-15T17:15:00.000Z → 2026-04-30T22:22:00.000Z
-- [NAT gateway resource](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-resource)
-  - Updated: 2025-11-18T18:43:00.000Z → 2026-04-30T22:22:00.000Z
-
-### Deleted Pages
-
-- ~~Migrate NAT Gateway to Standard V2~~ (https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-v2-migrate)
-- ~~NAT Gateway SKUs~~ (https://learn.microsoft.com/en-us/azure/nat-gateway/nat-sku)
-- ~~Create and validate a Standard Azure NAT Gateway~~ (https://learn.microsoft.com/en-us/azure/nat-gateway/quickstart-create-nat-gateway)
-- ~~Create and validate a Standard V2 Azure NAT Gateway~~ (https://learn.microsoft.com/en-us/azure/nat-gateway/quickstart-create-nat-gateway-v2)
-- ~~Use deployment templates to create StandardV2 NAT Gateway~~ (https://learn.microsoft.com/en-us/azure/nat-gateway/quickstart-create-nat-gateway-v2-templates)
-- ~~Create and configure NAT gateway after region move~~ (https://learn.microsoft.com/en-us/azure/nat-gateway/region-move-nat-gateway)
-- ~~Use a NAT gateway with a hub and spoke network~~ (https://learn.microsoft.com/en-us/azure/nat-gateway/tutorial-hub-spoke-route-nat)
-- ~~Integrate NAT gateway internal load balancer~~ (https://learn.microsoft.com/en-us/azure/nat-gateway/tutorial-nat-gateway-load-balancer-internal-portal)
-- ~~Integrate NAT gateway public load balancer~~ (https://learn.microsoft.com/en-us/azure/nat-gateway/tutorial-nat-gateway-load-balancer-public-portal)
 
 ## Classified Pages
 

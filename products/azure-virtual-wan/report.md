@@ -1,11 +1,11 @@
 ---
-generated_at: '2026-04-05'
+generated_at: '2026-05-10'
 category_descriptions:
   limits-quotas: P2S VPN client IP pool sizing, scale limits, and Virtual WAN hub
     routing capabilities, throughput caps, and performance constraints
-  architecture-patterns: 'Designing Virtual WAN hub-and-spoke, routing, and security
-    patterns: NVA/Azure Firewall paths, VNet/branch isolation, SD‑WAN/ExpressRoute/M365
-    connectivity, DR, and global transit architectures.'
+  architecture-patterns: 'Designing and routing complex Virtual WAN topologies: secure
+    hubs, NVAs, Azure Firewall, BGP, isolation, DR, global transit, SD‑WAN, M365/ExpressRoute,
+    and static/intent-based routing patterns.'
   configuration: Configuring Virtual WAN hubs, routing, BGP, NVAs, firewalls, IPsec/NAT,
     and setting up/issuing P2S/Always On VPN client profiles, certificates, and Entra
     ID-based VPN access
@@ -18,19 +18,18 @@ category_descriptions:
     ExpressRoute, SD-WAN/VPN CPEs, RADIUS user groups, and sharing services via Azure
     Private Link
   security: Configuring secure P2S VPN access in Virtual WAN using Microsoft Entra
-    ID (MFA, custom/segmented app registrations, Azure VPN Client) and managing hub
-    roles/permissions.
+    ID (MFA, OpenVPN, custom app IDs), Azure VPN Client setup/migration, and hub roles/permissions.
   decision-making: Guidance on when/how to upgrade Virtual WAN from Basic to Standard,
     and how to choose Virtual WAN partners and hub locations for your network design.
 skill_description: Expert knowledge for Azure Virtual WAN development including troubleshooting,
   decision making, architecture & design patterns, limits & quotas, security, configuration,
-  integrations & coding patterns, and deployment. Use when designing Virtual WAN hubs,
-  P2S VPN, ExpressRoute/SD‑WAN connectivity, NVAs/firewalls, or Entra ID VPN access,
-  and other Azure Virtual WAN related development tasks. Not for Azure Virtual Network
+  integrations & coding patterns, and deployment. Use when designing Virtual WAN hubs
+  with Azure Firewall/NVAs, P2S VPN, BGP routing, ExpressRoute, or SD‑WAN CPEs, and
+  other Azure Virtual WAN related development tasks. Not for Azure Virtual Network
   (use azure-virtual-network), Azure VPN Gateway (use azure-vpn-gateway), Azure ExpressRoute
   (use azure-expressroute), Azure Traffic Manager (use azure-traffic-manager).
-use_when: Use when designing Virtual WAN hubs, P2S VPN, ExpressRoute/SD‑WAN connectivity,
-  NVAs/firewalls, or Entra ID VPN access, and other Azure Virtual WAN related development
+use_when: Use when designing Virtual WAN hubs with Azure Firewall/NVAs, P2S VPN, BGP
+  routing, ExpressRoute, or SD‑WAN CPEs, and other Azure Virtual WAN related development
   tasks.
 confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), Azure
   VPN Gateway (use azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute),
@@ -40,34 +39,53 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ## Summary
 
-- **Total Pages**: 130
-- **Fetched**: 130
+- **Total Pages**: 133
+- **Fetched**: 133
 - **Fetch Failed**: 0
-- **Classified**: 91
+- **Classified**: 94
 - **Unclassified**: 39
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 8
 - **Updated Pages**: 0
-- **Unchanged**: 130
-- **Deleted Pages**: 0
+- **Unchanged**: 125
+- **Deleted Pages**: 5
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-wan/azure-virtual-wan.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 22 | 16.9% |
-| configuration | 48 | 36.9% |
+| architecture-patterns | 25 | 18.8% |
+| configuration | 48 | 36.1% |
 | decision-making | 2 | 1.5% |
 | deployment | 2 | 1.5% |
-| integrations | 4 | 3.1% |
+| integrations | 4 | 3.0% |
 | limits-quotas | 2 | 1.5% |
-| security | 9 | 6.9% |
+| security | 9 | 6.8% |
 | troubleshooting | 2 | 1.5% |
-| *(Unclassified)* | 39 | 30.0% |
+| *(Unclassified)* | 39 | 29.3% |
 
 ## Changes
+
+### New Pages
+
+- [Configure a tenant for multiple application registrations](https://learn.microsoft.com/en-us/azure/virtual-wan/openvpn-azure-ad-tenant-multi-app)
+- [Static routes overview](https://learn.microsoft.com/en-us/azure/virtual-wan/static-routes)
+- [Azure Firewall static routing basics](https://learn.microsoft.com/en-us/azure/virtual-wan/static-routes-firewall-basic)
+- [Selective Azure Firewall bypass](https://learn.microsoft.com/en-us/azure/virtual-wan/firewall-custom-bypass)
+- [Route traffic to spoke NVAs](https://learn.microsoft.com/en-us/azure/virtual-wan/indirect-spoke-architecture)
+- [Spoke NVA inspection](https://learn.microsoft.com/en-us/azure/virtual-wan/spoke-inspection-north-south)
+- [Combining Azure Firewall and spoke NVAs](https://learn.microsoft.com/en-us/azure/virtual-wan/hybrid-firewall-spoke-static)
+- [Routing intent with static routes](https://learn.microsoft.com/en-us/azure/virtual-wan/routing-intent-static-route)
+
+### Deleted Pages
+
+- ~~Configure a tenant for multiple application registration~~ (https://learn.microsoft.com/en-us/azure/virtual-wan/openvpn-azure-ad-tenant-multi-app)
+- ~~Isolating virtual networks and branches~~ (https://learn.microsoft.com/en-us/azure/virtual-wan/scenario-isolate-virtual-networks-branches)
+- ~~Azure Firewall - custom~~ (https://learn.microsoft.com/en-us/azure/virtual-wan/scenario-route-between-vnets-firewall)
+- ~~Route through an NVA~~ (https://learn.microsoft.com/en-us/azure/virtual-wan/scenario-route-through-nva)
+- ~~Route through an NVA - custom~~ (https://learn.microsoft.com/en-us/azure/virtual-wan/scenario-route-through-nvas-custom)
 
 ## Classified Pages
 
@@ -79,11 +97,12 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/virtual-wan/nat-rules-vpn-gateway-powershell) | configuration | 0.80 | PowerShell-based configuration of Virtual WAN NAT rules will reference specific cmdlets and parameters unique to this product’s NAT implementation. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/virtual-wan/nat-rules-vpn-gateway) | configuration | 0.80 | Describes static one-to-one NAT rules on Virtual WAN VPN gateways; likely includes rule parameters, address mapping constraints, and flow behavior specific to this service. |
 | [Change VPN client app to Microsoft-registered](https://learn.microsoft.com/en-us/azure/virtual-wan/point-to-site-entra-gateway-update) | security | 0.80 | Focuses on updating Audience values on both gateway and clients when moving to the Microsoft-registered app; these are precise security configuration details tied to Entra ID and Virtual WAN. |
-| [Configure a tenant for multiple application registration](https://learn.microsoft.com/en-us/azure/virtual-wan/openvpn-azure-ad-tenant-multi-app) | security | 0.80 | Shows how to register multiple Entra apps and link them to different gateways for different user groups; involves detailed security and access configuration unique to this scenario. |
+| [Combining Azure Firewall and spoke NVAs](https://learn.microsoft.com/en-us/azure/virtual-wan/hybrid-firewall-spoke-static) | architecture-patterns | 0.80 | Provides an advanced design pattern that combines Azure Firewall in the hub with spoke NVAs, defining different inspection paths and how static routes are arranged. This is clearly a product-specific architecture pattern with concrete routing behavior, so architecture-patterns applies. |
 | [Configure custom IPsec policy](https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-custom-ipsec-portal) | configuration | 0.80 | Custom IPsec policy configuration for Virtual WAN requires specific parameter names, allowed values, and constraints for IKE phases that are product-specific. |
 | [Configure optional settings](https://learn.microsoft.com/en-us/azure/virtual-wan/azure-vpn-client-optional-configurations) | configuration | 0.80 | Details optional client-side parameters (DNS suffixes, custom DNS servers, custom routes, forced tunneling) with specific setting names and usage unique to Azure VPN Client. |
 | [Create or modify custom audience app ID](https://learn.microsoft.com/en-us/azure/virtual-wan/point-to-site-entra-register-custom-app) | security | 0.80 | Describes creating/modifying custom audience App IDs for Microsoft Entra authentication; involves specific app registration fields and values used by Virtual WAN. |
 | [RADIUS - Configure NPS and user groups](https://learn.microsoft.com/en-us/azure/virtual-wan/user-groups-radius) | integrations | 0.80 | Shows how to configure Windows NPS/RADIUS with specific Vendor Specific Attributes for Virtual WAN user group support; includes attribute names/values unique to this integration. |
+| [Routing intent with static routes](https://learn.microsoft.com/en-us/azure/virtual-wan/routing-intent-static-route) | architecture-patterns | 0.80 | Details how to combine routing intent and routing policies with static routes, including specific configuration options (e.g., using static route configuration option 1 and that option 2 is unsupported with routing intent) and compatibility with different next-hop security solutions. This is a concrete design pattern and constraint set for Azure Virtual WAN routing, fitting architecture-patterns. |
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/virtual-wan/create-bgp-peering-hub-powershell) | configuration | 0.75 | PowerShell cmdlets and parameters for BGP peering between hub router and NVA; detailed configuration surface. |
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/virtual-wan/how-to-virtual-hub-routing-powershell) | configuration | 0.75 | PowerShell cmdlets and parameters for virtual hub routing; product-specific configuration surface. |
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-route-table-nva) | configuration | 0.75 | PowerShell-based configuration of hub route tables to NVAs with specific cmdlets and parameters. |
@@ -94,10 +113,14 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Configure Route-maps](https://learn.microsoft.com/en-us/azure/virtual-wan/route-maps-how-to) | configuration | 0.75 | Stepwise creation/editing of Route-maps with specific match/set actions and fields unique to Virtual WAN. |
 | [Configure a tenant](https://learn.microsoft.com/en-us/azure/virtual-wan/openvpn-azure-ad-tenant) | security | 0.75 | Guides Entra tenant configuration for P2S OpenVPN authentication, including app registration and protocol-specific authentication options; these are detailed security configuration steps. |
 | [Configure user groups for address pools](https://learn.microsoft.com/en-us/azure/virtual-wan/user-groups-create) | configuration | 0.75 | Stepwise configuration of user groups, membership, and priority for IP assignment; uses specific Azure Virtual WAN settings and options. |
+| [Route traffic to spoke NVAs](https://learn.microsoft.com/en-us/azure/virtual-wan/indirect-spoke-architecture) | architecture-patterns | 0.75 | Explains how to use Virtual WAN static routes to reach NVAs in spoke VNets for indirect spoke connectivity, internet egress, and VPN/SD-WAN tunnels. These are concrete routing topologies and patterns unique to Azure Virtual WAN, so architecture-patterns is the best fit. |
+| [Selective Azure Firewall bypass](https://learn.microsoft.com/en-us/azure/virtual-wan/firewall-custom-bypass) | architecture-patterns | 0.75 | Covers specific design scenarios where selected traffic bypasses Azure Firewall inspection in a secure Virtual WAN hub, including constraints like incompatibility with routing intent and reliance on static routes. This is detailed, product-specific routing and inspection pattern guidance, matching architecture-patterns. |
+| [Spoke NVA inspection](https://learn.microsoft.com/en-us/azure/virtual-wan/spoke-inspection-north-south) | architecture-patterns | 0.75 | Describes advanced Virtual WAN designs using spoke NVAs to inspect private and internet-bound traffic, detailing routing flows and inspection paths. This is specific architecture and routing pattern guidance for Azure Virtual WAN, aligning with architecture-patterns. |
 | [About user groups and client address pools](https://learn.microsoft.com/en-us/azure/virtual-wan/user-groups-about) | configuration | 0.70 | Describes how Virtual WAN P2S gateways interpret user group configuration and parameters to assign IPs; includes product-specific behavior and fields. |
 | [About virtual hub routing](https://learn.microsoft.com/en-us/azure/virtual-wan/about-virtual-hub-routing) | limits-quotas | 0.70 | Describes virtual hub router capabilities including a specific aggregate throughput limit (50 Gbps) and scope of routing; numeric limit qualifies as expert quota information. |
 | [Application Gateway and backend pools](https://learn.microsoft.com/en-us/azure/virtual-wan/scenario-secured-hub-app-gateway) | architecture-patterns | 0.70 | Scenario for inspecting traffic between Application Gateway and backend pools using Azure Firewall in a secured hub; includes distinct design patterns. |
 | [Automation guidelines for partners](https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-configure-automation-providers) | integrations | 0.70 | Guides providers on setting up automation to configure branch devices for Virtual WAN, including controller/dashboard integration patterns and likely specific API/config parameters. |
+| [Azure Firewall static routing basics](https://learn.microsoft.com/en-us/azure/virtual-wan/static-routes-firewall-basic) | architecture-patterns | 0.70 | Describes concrete routing scenarios that send Virtual WAN traffic to Azure Firewall in the hub, including how to structure static routes for different paths. This is product-specific routing design and pattern usage rather than generic concepts, so it fits architecture-patterns. |
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/virtual-wan/certificates-point-to-site) | configuration | 0.70 | Shows specific PowerShell cmdlets and parameters to generate root and client certificates for Virtual WAN P2S; these are concrete, product-relevant configuration steps. |
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/virtual-wan/how-to-virtual-hub-routing-preference-powershell) | configuration | 0.70 | PowerShell-based configuration of routing preference with concrete parameter names and values. |
 | [Azure VPN Client - macOS](https://learn.microsoft.com/en-us/azure/virtual-wan/point-to-site-entra-vpn-client-mac) | configuration | 0.70 | Client configuration article with product-specific parameters (App ID, audience, protocol support, regional availability) and stepwise settings that an LLM wouldn't reliably know from training. |
@@ -113,6 +136,7 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Configure Route-maps to summarize routes from an NVA](https://learn.microsoft.com/en-us/azure/virtual-wan/route-maps-summarize-from-device-spoke-vnet-nva) | configuration | 0.70 | Configuration for summarizing routes learned from an NVA in a spoke VNet; product-specific routing pattern and settings. |
 | [Configure Route-maps to summarize routes leaving your virtual WAN](https://learn.microsoft.com/en-us/azure/virtual-wan/route-maps-how-to-summarize-routes-leaving-your-virtual-wan) | configuration | 0.70 | Shows how to configure Route-maps for route summarization with concrete configuration steps and parameters. |
 | [Configure Route-maps to tag routes](https://learn.microsoft.com/en-us/azure/virtual-wan/route-maps-tag-routes) | configuration | 0.70 | Shows how to tag routes with Route-maps; uses specific tag-related settings unique to Virtual WAN. |
+| [Configure a tenant for multiple application registrations](https://learn.microsoft.com/en-us/azure/virtual-wan/openvpn-azure-ad-tenant-multi-app) | security | 0.70 | The article describes product-specific Microsoft Entra configuration for P2S OpenVPN authentication in Azure Virtual WAN, including how to register and link multiple Entra applications to different gateways for distinct user/group access. This is detailed, service-specific security and identity configuration rather than a generic overview. |
 | [Configure multifactor authentication (MFA)](https://learn.microsoft.com/en-us/azure/virtual-wan/openvpn-azure-ad-mfa) | security | 0.70 | Shows how to configure MFA and Conditional Access for VPN users via Entra ID; includes product-specific security configuration steps and policy settings. |
 | [Configure routing intent](https://learn.microsoft.com/en-us/azure/virtual-wan/how-to-routing-policies) | configuration | 0.70 | Shows how to set routing intent to send traffic to security services; includes specific policy options and configuration steps. |
 | [Device tunnel](https://learn.microsoft.com/en-us/azure/virtual-wan/howto-always-on-device-tunnel) | configuration | 0.70 | Similar to user tunnel article but for device tunnels; includes specific configuration parameters for Windows VPN client and Virtual WAN. |
@@ -121,7 +145,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Global transit network architecture](https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-global-transit-network-architecture) | architecture-patterns | 0.70 | Architecture article describing global transit patterns, hub-and-spoke usage, and any-to-any connectivity specifically for Azure Virtual WAN. |
 | [Interconnect with China](https://learn.microsoft.com/en-us/azure/virtual-wan/interconnect-china) | architecture-patterns | 0.70 | Scenario-specific architecture for interconnecting with China using Virtual WAN and secured hubs, including latency/bandwidth considerations and topology patterns. |
 | [Intune - Deploy VPN client profile](https://learn.microsoft.com/en-us/azure/virtual-wan/vpn-profile-intune) | configuration | 0.70 | Shows Intune custom OMA-URI/settings needed to deploy Virtual WAN VPN client profiles; includes concrete configuration fields and values specific to this integration. |
-| [Isolating virtual networks and branches](https://learn.microsoft.com/en-us/azure/virtual-wan/scenario-isolate-virtual-networks-branches) | architecture-patterns | 0.70 | Scenario combining VNet/branch isolation with Azure Firewall inspection; product-specific routing and security pattern. |
 | [Linux - OpenSSL](https://learn.microsoft.com/en-us/azure/virtual-wan/point-to-site-certificates-linux-openssl) | configuration | 0.70 | Contains specific OpenSSL commands and parameter usage to produce certificate files compatible with Virtual WAN P2S requirements. |
 | [Linux - strongSwan](https://learn.microsoft.com/en-us/azure/virtual-wan/point-to-site-certificates-linux-strongswan) | configuration | 0.70 | Shows strongSwan CLI commands and options to generate certificates for Virtual WAN P2S; these are detailed configuration steps tied to the product. |
 | [Manage IP configurations for NVAs](https://learn.microsoft.com/en-us/azure/virtual-wan/how-to-network-virtual-appliance-add-ip-configurations) | configuration | 0.70 | Managing IP configurations for integrated NVAs in a Virtual WAN hub is product-specific; likely includes IP config object names, constraints, and behaviors not generally known. |
@@ -129,9 +152,9 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Monitoring data reference](https://learn.microsoft.com/en-us/azure/virtual-wan/monitor-virtual-wan-reference) | configuration | 0.70 | A monitoring data reference article typically lists specific metric names, dimensions, log table schemas, and possibly default aggregation or retention details—product-specific configuration/telemetry schema that qualifies as expert knowledge under configuration. |
 | [Next hop IP support](https://learn.microsoft.com/en-us/azure/virtual-wan/next-hop-ip) | configuration | 0.70 | Explains next hop IP support, BGP peering behavior, and configuration between NVAs and the virtual hub router; product-specific routing configuration. |
 | [Roles and permissions](https://learn.microsoft.com/en-us/azure/virtual-wan/roles-permissions) | security | 0.70 | Describes required permissions on underlying resources for hub operations; likely includes specific RBAC roles and scopes. |
-| [Route through an NVA - custom](https://learn.microsoft.com/en-us/azure/virtual-wan/scenario-route-through-nvas-custom) | architecture-patterns | 0.70 | Scenario using different NVAs for internet-bound traffic with specific hub/spoke requirements; detailed Virtual WAN routing pattern. |
 | [Run Prerequisites Test](https://learn.microsoft.com/en-us/azure/virtual-wan/azure-vpn-client-prerequisites-check) | troubleshooting | 0.70 | Describes the Run Prerequisites Test feature, what it checks (specific Windows services, permissions, time sync) and how to mitigate failures—symptom-to-check mappings specific to Azure VPN Client. |
 | [SD-WAN connectivity architecture](https://learn.microsoft.com/en-us/azure/virtual-wan/sd-wan-connectivity-architecture) | architecture-patterns | 0.70 | Covers interconnection patterns between third-party SD-WAN and Virtual WAN, including product-specific design approaches. |
+| [Static routes overview](https://learn.microsoft.com/en-us/azure/virtual-wan/static-routes) | architecture-patterns | 0.70 | The page goes beyond concepts and describes specific static route types, their concrete use cases, and design-time best practices and limitations for Azure Virtual WAN routing. This is product-specific routing design guidance (when to use which static route option and associated constraints), fitting architecture-patterns more than generic best-practices. |
 | [Upgrade from Basic virtual WAN to Standard](https://learn.microsoft.com/en-us/azure/virtual-wan/upgrade-virtual-wan) | decision-making | 0.70 | Explains implications of upgrading SKU (features enabled, hub behavior) and guides the upgrade decision and process. |
 | [User tunnel](https://learn.microsoft.com/en-us/azure/virtual-wan/howto-always-on-user-tunnel) | configuration | 0.70 | Provides concrete configuration for Windows 10 VPN client Always On user tunnels targeting Virtual WAN, including profile settings and triggers. |
 | [Virtual WAN gateway settings](https://learn.microsoft.com/en-us/azure/virtual-wan/gateway-settings) | configuration | 0.70 | Answers detailed questions about gateway settings; likely includes specific parameters, allowed values, and behavior unique to Virtual WAN gateways. |
@@ -139,7 +162,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Virtual hub routing preference](https://learn.microsoft.com/en-us/azure/virtual-wan/about-virtual-hub-routing-preference) | architecture-patterns | 0.68 | The page describes how the virtual hub router makes routing decisions using a built-in route selection algorithm and advanced routing constructs (route propagation, association, custom route tables). This is product-specific routing/architecture guidance for Azure Virtual WAN rather than generic networking theory, and helps decide how to structure routing in a virtual hub. It does not focus on numeric limits, security, or deployment. |
 | [About Route-maps](https://learn.microsoft.com/en-us/azure/virtual-wan/route-maps-about) | configuration | 0.65 | Describes Route-maps feature, how it controls route advertisements, and the configuration model; product-specific routing control mechanism. |
 | [About branch IPsec connectivity automation](https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-locations-partners) | decision-making | 0.65 | Lists partners and available locations; used to decide which partner/region to use for connectivity into Virtual WAN hubs. |
-| [Azure Firewall - custom](https://learn.microsoft.com/en-us/azure/virtual-wan/scenario-route-between-vnets-firewall) | architecture-patterns | 0.65 | Scenario routing VNet-to-VNet directly while forcing other flows through Azure Firewall; specific Virtual WAN routing and security pattern. |
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/virtual-wan/expressroute-powershell) | integrations | 0.65 | PowerShell-based configuration of ExpressRoute association with specific cmdlets and parameter names/values unique to this product integration. |
 | [Azure VPN Client versions](https://learn.microsoft.com/en-us/azure/virtual-wan/azure-vpn-client-versions) | configuration | 0.65 | Version matrix listing client versions and associated features is time-sensitive expert data not inferable from general training. |
 | [BGP peering with virtual hub](https://learn.microsoft.com/en-us/azure/virtual-wan/scenario-bgp-peering-hub) | architecture-patterns | 0.65 | Explains how the hub router peers via BGP with NVAs/BGP endpoints and how routes are exchanged; product-specific routing pattern. |
@@ -152,7 +174,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Microsoft 365 - ExpressRoute private peering](https://learn.microsoft.com/en-us/azure/virtual-wan/scenario-365-expressroute-private) | architecture-patterns | 0.65 | Describes a specific connectivity pattern for Microsoft 365 using ExpressRoute private peering with Virtual WAN, including when this is recommended vs not. |
 | [Migrate to Virtual WAN](https://learn.microsoft.com/en-us/azure/virtual-wan/migrate-from-hub-spoke-topology) | architecture-patterns | 0.65 | Architecture migration article with product-specific topology guidance and patterns for moving from customer-managed hub-and-spoke to Virtual WAN hubs; contains concrete design steps and trade-offs. |
 | [Multiple ISP links - Azure path selection](https://learn.microsoft.com/en-us/azure/virtual-wan/path-selection-multiple-links) | configuration | 0.65 | Azure path selection is a Virtual WAN-specific feature; article likely details link attributes and configuration fields used to steer traffic across ISP links. |
-| [Route through an NVA](https://learn.microsoft.com/en-us/azure/virtual-wan/scenario-route-through-nva) | architecture-patterns | 0.65 | Scenario for routing traffic through NVAs for branch-to-VNet and VNet-to-branch; product-specific routing pattern. |
 | [Shared services VNets](https://learn.microsoft.com/en-us/azure/virtual-wan/scenario-shared-services-vnet) | architecture-patterns | 0.65 | Scenario for routing all VNets and branches to shared services VNets; describes a specific routing pattern. |
 | [Software-as-a-service(SaaS)](https://learn.microsoft.com/en-us/azure/virtual-wan/how-to-palo-alto-cloud-ngfw) | configuration | 0.65 | How-to for integrating Palo Alto Cloud NGFW as a bump-in-the-wire in Virtual WAN; includes product-specific configuration steps and parameters. |
 | [View virtual hub effective routes](https://learn.microsoft.com/en-us/azure/virtual-wan/effective-routes-virtual-hub) | configuration | 0.65 | Portal steps to inspect effective routes; includes specific UI elements and interpretation of route data for Virtual WAN. |

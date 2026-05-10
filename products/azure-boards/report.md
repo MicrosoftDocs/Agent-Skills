@@ -41,8 +41,8 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 7
-- **Unchanged**: 119
+- **Updated Pages**: 0
+- **Unchanged**: 126
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-boards/azure-boards.csv`
 
@@ -60,23 +60,6 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 | *(Unclassified)* | 92 | 73.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [Work item form caching](https://learn.microsoft.com/en-us/azure/devops/boards/faqs?view=azure-devops)
-  - Updated: 2025-12-19T16:00:00Z → 2026-04-22T21:02:00Z
-- [Query FAQs](https://learn.microsoft.com/en-us/azure/devops/boards/queries/query-faqs?view=azure-devops)
-  - Updated: 2025-09-29T22:02:00Z → 2026-04-22T21:02:00Z
-- [Delivery Plans FAQs](https://learn.microsoft.com/en-us/azure/devops/boards/plans/faqs?view=azure-devops)
-  - Updated: 2025-09-29T22:02:00Z → 2026-04-22T21:02:00Z
-- [Roadmap and features timeline](https://learn.microsoft.com/en-us/azure/devops/boards/github/features-timeline?view=azure-devops)
-  - Updated: 2026-01-22T22:02:00.000Z → 2026-04-22T17:59:00.000Z
-- [Excel FAQs](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/office/faqs?view=azure-devops)
-  - Updated: 2026-02-13T22:02:00Z → 2026-04-22T21:02:00Z
-- [FAQs](https://learn.microsoft.com/en-us/azure/devops/boards/faqs?view=azure-devops)
-  - Updated: 2025-12-19T16:00:00Z → 2026-04-22T21:02:00Z
-- [Fix reordering and nesting issues](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/resolve-backlog-reorder-issues?view=azure-devops)
-  - Updated: 2026-02-28T08:00:00.000Z → 2026-04-22T21:02:00.000Z
 
 ## Classified Pages
 

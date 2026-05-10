@@ -28,30 +28,34 @@ confusable_not_for: Not for Azure Key Vault (use azure-key-vault), Azure Securit
 
 ## Summary
 
-- **Total Pages**: 21
-- **Fetched**: 21
+- **Total Pages**: 20
+- **Fetched**: 20
 - **Fetch Failed**: 0
-- **Classified**: 16
+- **Classified**: 15
 - **Unclassified**: 5
 
 ### Incremental Update
 - **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 21
-- **Deleted Pages**: 0
+- **Unchanged**: 20
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-information-protection/azure-information-protection.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| best-practices | 1 | 4.8% |
-| configuration | 2 | 9.5% |
-| decision-making | 1 | 4.8% |
-| deployment | 12 | 57.1% |
-| *(Unclassified)* | 5 | 23.8% |
+| best-practices | 1 | 5.0% |
+| configuration | 1 | 5.0% |
+| decision-making | 1 | 5.0% |
+| deployment | 12 | 60.0% |
+| *(Unclassified)* | 5 | 25.0% |
 
 ## Changes
+
+### Deleted Pages
+
+- ~~RMS client deployment notes~~ (https://learn.microsoft.com/en-us/azure/information-protection/rms-client/client-deployment-notes)
 
 ## Classified Pages
 
@@ -68,7 +72,6 @@ confusable_not_for: Not for Azure Key Vault (use azure-key-vault), Azure Securit
 | [Phase 3 - Client-side configuration](https://learn.microsoft.com/en-us/azure/information-protection/migrate-from-ad-rms-phase3) | deployment | 0.70 | Phase 3 instructions (step 7) in the AD RMS to AIP migration sequence; contains specialized deployment steps not covered by generic knowledge. |
 | [Phase 4 - Supporting services configuration](https://learn.microsoft.com/en-us/azure/information-protection/migrate-from-ad-rms-phase4) | deployment | 0.70 | Phase 4 migration steps (8–9) for AD RMS to Azure RMS; detailed, product-specific deployment/migration operations. |
 | [Phase 5 - Post migration tasks](https://learn.microsoft.com/en-us/azure/information-protection/migrate-from-ad-rms-phase5) | deployment | 0.70 | Phase 5 instructions (steps 10–12) to complete AD RMS to AIP migration; specialized deployment and cutover guidance. |
-| [RMS client deployment notes](https://learn.microsoft.com/en-us/azure/information-protection/rms-client/client-deployment-notes) | configuration | 0.70 | Covers installation, supported OS matrix, registry settings, and service discovery for the RMS client; includes product-specific configuration parameters and environment details. |
 | [HSM key to HSM key](https://learn.microsoft.com/en-us/azure/information-protection/migrate-hsmkey-to-hsmkey) | deployment | 0.65 | Product-specific steps for migrating HSM-protected keys into Azure Key Vault for AIP; specialized deployment and migration configuration. |
 | [Software key to HSM key](https://learn.microsoft.com/en-us/azure/information-protection/migrate-softwarekey-to-hsmkey) | deployment | 0.65 | Four-part procedure for changing key protection model (software → HSM) during AD RMS to AIP migration; detailed deployment/migration guidance. |
 | [Software key to software key](https://learn.microsoft.com/en-us/azure/information-protection/migrate-softwarekey-to-softwarekey) | deployment | 0.65 | Detailed procedure for migrating a specific key protection type (software → software) as part of AD RMS to AIP migration; specialized deployment/migration configuration. |

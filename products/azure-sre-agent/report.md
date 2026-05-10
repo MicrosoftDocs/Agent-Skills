@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-03'
+generated_at: '2026-05-10'
 category_descriptions:
   integrations: Integrating Azure SRE Agent with DevOps, GitHub, Teams, ServiceNow,
     PagerDuty, Kusto, observability tools, and custom HTTP/Python/MCP tools for automation
@@ -9,8 +9,9 @@ category_descriptions:
     Code Interpreter via UI or REST API'
   security: 'Identity, auth, and RBAC for SRE Agent: managed identities, ADO and ServiceNow
     auth, roles, permissions, and subscription/resource access configuration.'
-  troubleshooting: Diagnosing Azure SRE Agent deployment/operation issues and using
-    KQL to query its telemetry, logs, and actions for troubleshooting.
+  troubleshooting: Diagnosing and fixing SRE Agent deployment/operation issues, querying
+    its telemetry and actions with KQL, and troubleshooting Java performance on AKS
+    using the agent
   decision-making: Guidance on when to use deep investigations, choose Log Analytics
     vs App Insights, understand pricing and regions, and interpret incident value
     metrics for Azure SRE Agent decisions.
@@ -19,13 +20,13 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Sre Agent development including troubleshooting,
   decision making, limits & quotas, security, configuration, and integrations & coding
   patterns. Use when wiring SRE Agent to DevOps/Teams/ServiceNow, configuring tools/subagents,
-  querying KQL logs, or tracking AI Unit usage, and other Azure Sre Agent related
-  development tasks. Not for Azure Monitor (use azure-monitor), Azure Reliability
+  securing RBAC, querying KQL, or tracking AI Unit usage, and other Azure Sre Agent
+  related development tasks. Not for Azure Monitor (use azure-monitor), Azure Reliability
   (use azure-reliability), Azure Resiliency (use azure-resiliency), Azure Service
   Health (use azure-service-health).
 use_when: Use when wiring SRE Agent to DevOps/Teams/ServiceNow, configuring tools/subagents,
-  querying KQL logs, or tracking AI Unit usage, and other Azure Sre Agent related
-  development tasks.
+  securing RBAC, querying KQL, or tracking AI Unit usage, and other Azure Sre Agent
+  related development tasks.
 confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability (use
   azure-reliability), Azure Resiliency (use azure-resiliency), Azure Service Health
   (use azure-service-health).
@@ -37,14 +38,14 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 - **Total Pages**: 103
 - **Fetched**: 103
 - **Fetch Failed**: 0
-- **Classified**: 35
-- **Unclassified**: 68
+- **Classified**: 36
+- **Unclassified**: 67
 
 ### Incremental Update
-- **New Pages**: 5
-- **Updated Pages**: 24
-- **Unchanged**: 74
-- **Deleted Pages**: 2
+- **New Pages**: 1
+- **Updated Pages**: 1
+- **Unchanged**: 101
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sre-agent/azure-sre-agent.csv`
 
 ## Classification Statistics
@@ -56,67 +57,23 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 | integrations | 12 | 11.7% |
 | limits-quotas | 1 | 1.0% |
 | security | 7 | 6.8% |
-| troubleshooting | 2 | 1.9% |
-| *(Unclassified)* | 68 | 66.0% |
+| troubleshooting | 3 | 2.9% |
+| *(Unclassified)* | 67 | 65.0% |
 
 ## Changes
 
 ### New Pages
 
-- [Subscription permission visibility](https://learn.microsoft.com/en-us/azure/sre-agent/subscription-permission-visibility)
-- [Security overview](https://learn.microsoft.com/en-us/azure/sre-agent/security-overview)
-- [Default agent override info](https://learn.microsoft.com/en-us/azure/sre-agent/default-agent-override-info)
-- [Log Analytics & App Insights](https://learn.microsoft.com/en-us/azure/sre-agent/log-analytics-app-insights)
-- [Set up Log Analytics connector](https://learn.microsoft.com/en-us/azure/sre-agent/setup-log-analytics-connector)
+- [Troubleshoot Java applications on AKS](https://learn.microsoft.com/en-us/azure/sre-agent/troubleshoot-java-aks)
 
 ### Updated Pages
 
-- [Create and set up](https://learn.microsoft.com/en-us/azure/sre-agent/create-and-set-up)
-  - Updated: 2026-04-07T17:12:00.000Z → 2026-04-22T17:34:00.000Z
-- [Automate workflows](https://learn.microsoft.com/en-us/azure/sre-agent/automate-workflows)
-  - Updated: 2026-03-27T15:55:00.000Z → 2026-04-24T18:40:00.000Z
-- [Connectors](https://learn.microsoft.com/en-us/azure/sre-agent/connectors)
-  - Updated: 2026-04-07T17:12:00.000Z → 2026-04-25T06:18:00.000Z
-- [Incident platforms](https://learn.microsoft.com/en-us/azure/sre-agent/incident-platforms)
-  - Updated: 2026-03-27T15:55:00.000Z → 2026-04-25T06:18:00.000Z
-- [Connect knowledge](https://learn.microsoft.com/en-us/azure/sre-agent/connect-knowledge)
-  - Updated: 2026-04-07T17:12:00.000Z → 2026-04-25T06:18:00.000Z
-- [Incident response plans](https://learn.microsoft.com/en-us/azure/sre-agent/incident-response-plans)
-  - Updated: 2026-03-27T15:55:00.000Z → 2026-04-25T06:18:00.000Z
-- [ServiceNow incident indexing](https://learn.microsoft.com/en-us/azure/sre-agent/servicenow-incidents)
-  - Updated: 2026-03-27T15:55:00.000Z → 2026-04-21T22:10:00.000Z
-- [Azure Monitor alerts](https://learn.microsoft.com/en-us/azure/sre-agent/azure-monitor-alerts)
-  - Updated: 2026-04-07T22:12:00.000Z → 2026-04-30T17:19:00.000Z
-- [Workflow automation](https://learn.microsoft.com/en-us/azure/sre-agent/workflow-automation)
-  - Updated: 2026-03-27T15:55:00.000Z → 2026-04-24T18:40:00.000Z
-- [Scheduled tasks](https://learn.microsoft.com/en-us/azure/sre-agent/scheduled-tasks)
-  - Updated: 2026-03-27T15:55:00.000Z → 2026-04-24T18:40:00.000Z
-- [HTTP triggers](https://learn.microsoft.com/en-us/azure/sre-agent/http-triggers)
-  - Updated: 2026-04-02T18:15:00.000Z → 2026-04-22T17:34:00.000Z
-- [Send notifications](https://learn.microsoft.com/en-us/azure/sre-agent/send-notifications)
-  - Updated: 2026-03-27T15:55:00.000Z → 2026-04-21T22:10:00.000Z
-- [Upload knowledge documents](https://learn.microsoft.com/en-us/azure/sre-agent/upload-knowledge-document)
-  - Updated: 2026-03-27T15:55:00.000Z → 2026-04-25T06:18:00.000Z
-- [MCP connectors](https://learn.microsoft.com/en-us/azure/sre-agent/mcp-connectors)
-  - Updated: 2026-03-27T15:55:00.000Z → 2026-04-25T06:18:00.000Z
-- [Track incident value](https://learn.microsoft.com/en-us/azure/sre-agent/track-incident-value)
-  - Updated: 2026-04-07T17:12:00.000Z → 2026-04-24T18:40:00.000Z
-- [Set up Teams connector](https://learn.microsoft.com/en-us/azure/sre-agent/set-up-teams-connector)
-  - Updated: 2026-03-27T15:55:00.000Z → 2026-04-21T22:10:00.000Z
-- [Set up an incident trigger](https://learn.microsoft.com/en-us/azure/sre-agent/response-plan)
-  - Updated: 2026-03-27T15:55:00.000Z → 2026-04-24T18:40:00.000Z
-- [Set up ServiceNow indexing](https://learn.microsoft.com/en-us/azure/sre-agent/setup-servicenow-indexing)
-  - Updated: 2026-03-27T15:55:00.000Z → 2026-04-21T22:10:00.000Z
-- [Connect to ServiceNow](https://learn.microsoft.com/en-us/azure/sre-agent/connect-servicenow)
-  - Updated: 2026-04-03T21:52:00.000Z → 2026-04-21T22:10:00.000Z
-- [Create scheduled tasks](https://learn.microsoft.com/en-us/azure/sre-agent/create-scheduled-task)
-  - Updated: 2026-04-07T17:12:00.000Z → 2026-04-24T18:40:00.000Z
-- *...and 4 more*
+- [Data privacy and residency](https://learn.microsoft.com/en-us/azure/sre-agent/data-privacy)
+  - Updated: 2026-04-06T17:23:00.000Z → 2026-05-08T06:13:00.000Z
 
 ### Deleted Pages
 
-- ~~Chat from your tools~~ (https://learn.microsoft.com/en-us/azure/sre-agent/chat-from-your-tools)
-- ~~Set up Teams bot~~ (https://learn.microsoft.com/en-us/azure/sre-agent/teams-bot)
+- ~~Anthropic subprocessor~~ (https://learn.microsoft.com/en-us/azure/sre-agent/anthropic-sub-processor)
 
 ## Classified Pages
 
@@ -124,6 +81,7 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 |-----------|------|------------|--------|
 | [Network requirements](https://learn.microsoft.com/en-us/azure/sre-agent/network-requirements) | configuration | 0.85 | Describes firewall allow-list domains, auth requirements, and network configuration. This typically includes specific hostnames, ports, and protocol requirements that are product-specific configuration details. |
 | [Troubleshooting](https://learn.microsoft.com/en-us/azure/sre-agent/faq-troubleshooting) | troubleshooting | 0.80 | Explicitly an operations troubleshooting FAQ; likely maps common symptoms (permissions, regional issues, deployment failures) to causes and resolutions specific to SRE Agent. |
+| [Troubleshoot Java applications on AKS](https://learn.microsoft.com/en-us/azure/sre-agent/troubleshoot-java-aks) | troubleshooting | 0.78 | The page focuses on diagnosing JVM performance issues for Java workloads on AKS using Azure SRE Agent and Azure Performance Diagnostics Tool for Java. It is troubleshooting-oriented (symptom → diagnosis → tool usage) and likely includes product-specific steps, findings, and interpretations unique to this tool and environment, which qualify as expert knowledge beyond generic Java or Kubernetes debugging. |
 | [Agent permissions](https://learn.microsoft.com/en-us/azure/sre-agent/permissions) | security | 0.75 | Explains how the agent’s user-assigned managed identity accesses Azure resources, including RBAC roles and permission levels; this is product-specific security configuration. |
 | [Connect Azure DevOps Wiki](https://learn.microsoft.com/en-us/azure/sre-agent/connect-devops-wiki) | integrations | 0.75 | Connecting a DevOps wiki as a knowledge source involves specific connector settings, permissions, and indexing behavior unique to this integration. |
 | [Agent identity](https://learn.microsoft.com/en-us/azure/sre-agent/agent-identity) | security | 0.70 | Details what identity resources are created, why two identities exist, and how connectors use them; this is specific managed identity and auth behavior. |
@@ -175,7 +133,6 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 | [Set up ServiceNow indexing](https://learn.microsoft.com/en-us/azure/sre-agent/setup-servicenow-indexing) | 0.35 | Tutorial for setting up ServiceNow incident indexing; summary mentions auth options and duration but not detailed config tables, limits, or error mappings. |
 | [Set up Teams connector](https://learn.microsoft.com/en-us/azure/sre-agent/set-up-teams-connector) | 0.35 | Tutorial-style connector setup; summary doesn’t show detailed parameter tables, RBAC roles, or constraints beyond generic connection steps. |
 | [Agent reasoning](https://learn.microsoft.com/en-us/azure/sre-agent/agent-reasoning) | 0.30 | Explains reasoning behavior and action classification; appears conceptual without concrete config values or error mappings. |
-| [Anthropic subprocessor](https://learn.microsoft.com/en-us/azure/sre-agent/anthropic-sub-processor) | 0.30 | Describes Anthropic as a subprocessor, contractual terms, and data residency controls at a high level; primarily legal/compliance overview without concrete security configuration parameters or numeric thresholds. |
 | [Automate incident response](https://learn.microsoft.com/en-us/azure/sre-agent/automate-incidents) | 0.30 | Tutorial for automating incident response; likely procedural steps, not a reference of specific parameters, limits, or error codes. |
 | [Automate workflows](https://learn.microsoft.com/en-us/azure/sre-agent/automate-workflows) | 0.30 | Workflow automation tutorial (scheduling checks, notifications, connectors) appears procedural rather than a catalog of configuration parameters, limits, or troubleshooting codes. |
 | [Connectors](https://learn.microsoft.com/en-us/azure/sre-agent/connectors) | 0.30 | Conceptual explanation of connectors and what they can reach; summary does not indicate detailed connector configuration tables, parameter defaults, or SDK-specific settings. |
@@ -183,7 +140,6 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 | [Create and set up](https://learn.microsoft.com/en-us/azure/sre-agent/create-and-set-up) | 0.30 | Tutorial-style onboarding and setup for Azure SRE Agent; description suggests step-by-step wizard usage without exposing detailed configuration tables, limits, or product-specific error mappings. |
 | [Create scheduled tasks](https://learn.microsoft.com/en-us/azure/sre-agent/create-scheduled-task) | 0.30 | Tutorial for creating and editing scheduled tasks; summary indicates basic usage rather than detailed configuration matrices, limits, or troubleshooting content. |
 | [Cross-account ADO access](https://learn.microsoft.com/en-us/azure/sre-agent/cross-account-azdo-oauth-authorization) | 0.30 | Cross-tenant Azure DevOps access tutorial; description suggests sign-in flow guidance rather than detailed security role mappings, limits, or troubleshooting content. |
-| [Data privacy and residency](https://learn.microsoft.com/en-us/azure/sre-agent/data-privacy) | 0.30 | Data residency and privacy overview; typically describes where and how data is stored/processed and general privacy measures, but not concrete RBAC roles, config parameters, or numeric limits. |
 | [Diagnose with Azure observability](https://learn.microsoft.com/en-us/azure/sre-agent/diagnose-azure-observability) | 0.30 | Describes how the agent automatically queries Azure observability services via managed identity and RBAC. Appears to be behavior/benefits rather than specific configuration parameters, error codes, or limits. |
 | [File attachments](https://learn.microsoft.com/en-us/azure/sre-agent/file-attachments) | 0.30 | Explains file attachments and automatic analysis; no evidence of specific limits, config options, or error codes. |
 | [HTTP triggers](https://learn.microsoft.com/en-us/azure/sre-agent/http-triggers) | 0.30 | Explains what HTTP triggers are and how they’re used; summary doesn’t show specific config tables, limits, or error mappings. |
@@ -209,6 +165,7 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 | [Add a web page knowledge source](https://learn.microsoft.com/en-us/azure/sre-agent/add-web-page) | 0.20 | Simple tutorial to add a web page as a knowledge source; appears to be basic UI steps without configuration tables or advanced patterns. |
 | [Azure Data Explorer connector](https://learn.microsoft.com/en-us/azure/sre-agent/kusto-cluster-grouping) | 0.20 | Describes connecting to Azure Data Explorer clusters and grouping; summary suggests conceptual connector behavior without specific configuration tables, limits, or error mappings. |
 | [Complete setup](https://learn.microsoft.com/en-us/azure/sre-agent/complete-setup) | 0.20 | Describes completing setup and connecting data sources; appears to be workflow guidance rather than detailed configuration reference. |
+| [Data privacy and residency](https://learn.microsoft.com/en-us/azure/sre-agent/data-privacy) | 0.20 | Primarily describes data handling, residency, and privacy posture for Azure SRE Agent and Anthropic as a non-Microsoft provider. It does not expose concrete configuration parameter tables, RBAC role lists, limits/quotas, or other detailed technical settings that meet the expert-knowledge criteria for any sub-skill type. |
 | [Deep context](https://learn.microsoft.com/en-us/azure/sre-agent/workspace-tools) | 0.20 | Explains the concept of Deep Context and mentions workspace tools enablement, but appears to be conceptual behavior/benefits rather than concrete configuration parameters, limits, or troubleshooting details. |
 | [Learn via Chat](https://learn.microsoft.com/en-us/azure/sre-agent/docsguide) | 0.20 | DocsGuide feature overview; no indication of detailed configuration parameters, limits, or troubleshooting mappings. |
 | [MCP connectors](https://learn.microsoft.com/en-us/azure/sre-agent/mcp-connectors) | 0.20 | High-level description of MCP connectors and tools; no evidence of detailed configuration parameters, limits, or troubleshooting mappings. |

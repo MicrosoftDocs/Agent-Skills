@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-03'
+generated_at: '2026-05-10'
 category_descriptions:
   scenarios: CAF-aligned landing zone, security, governance, networking, identity,
     automation, BCDR, and operations guidance for adopting AKS, ARO, AIS, AVD/Citrix,
@@ -42,17 +42,17 @@ use_when: Use when adopting AKS/AVS/AVD, migrating SAP or Oracle, designing land
 
 ## Summary
 
-- **Total Pages**: 355
-- **Fetched**: 355
+- **Total Pages**: 354
+- **Fetched**: 354
 - **Fetch Failed**: 0
-- **Classified**: 347
+- **Classified**: 346
 - **Unclassified**: 8
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 3
-- **Unchanged**: 351
-- **Deleted Pages**: 69
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 353
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cloud-adoption-framework/azure-cloud-adoption-framework.csv`
 
 ## Classification Statistics
@@ -60,54 +60,26 @@ use_when: Use when adopting AKS/AVS/AVD, migrating SAP or Oracle, designing land
 | Type | Count | Percentage |
 |------|-------|------------|
 | adoption-patterns | 21 | 5.9% |
-| governance | 28 | 7.9% |
+| governance | 27 | 7.6% |
 | operations | 38 | 10.7% |
 | organization | 15 | 4.2% |
 | planning | 24 | 6.8% |
-| readiness | 118 | 33.2% |
+| readiness | 118 | 33.3% |
 | scenarios | 62 | 17.5% |
 | security | 27 | 7.6% |
-| strategy | 14 | 3.9% |
+| strategy | 14 | 4.0% |
 | *(Unclassified)* | 8 | 2.3% |
 
 ## Changes
 
-### New Pages
-
-- [Data for AI and analytics](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/data/executive-strategy-unify-data-platform)
-
 ### Updated Pages
 
-- [Transition a single subscription with no management groups](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/align-scenario-single-subscription)
-  - Updated: 2025-12-19T21:03:00.000Z → 2026-04-23T18:04:00.000Z
-- [Transition by duplicating a landing zone management group](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/align-approach-duplicate-brownfield-audit-only)
-  - Updated: 2025-12-19T21:03:00.000Z → 2026-04-23T18:04:00.000Z
-- [SAP data integration with Azure - Generic architecture](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/sap/sap-lza-data-example-architecture)
-  - Updated: 2023-07-20T16:48:00.000Z → 2026-05-01T15:05:00.000Z
+- [What is the Cloud Adoption Framework?](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/overview)
+  - Updated: 2026-01-26T16:07:00.000Z → 2026-05-08T22:03:00.000Z
 
 ### Deleted Pages
 
-- ~~Data~~ (https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/data/executive-strategy-unify-data-platform)
-- ~~Cloud-scale analytics (deprecated)~~ (https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/)
-- ~~Common Data Models~~ (https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/common-industry-data-models)
-- ~~Connecting to environments privately~~ (https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/connect-to-environments-privately)
-- ~~Data application (source-aligned)~~ (https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/data-application-source-aligned)
-- ~~What are data domains?~~ (https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/data-domains)
-- ~~Data landing zone~~ (https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/data-landing-zone)
-- ~~Overview~~ (https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/data-landing-zone-data-products)
-- ~~Data management landing zone~~ (https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/data-management-landing-zone)
-- ~~Getting started checklist~~ (https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/data-mesh-checklist)
-- ~~Data marketplace~~ (https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/data-mesh-data-marketplace)
-- ~~Master data management in data mesh~~ (https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/data-mesh-master-data-management)
-- ~~Financial institution scenario for data mesh~~ (https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/data-mesh-scenario)
-- ~~Data application reference patterns~~ (https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/data-reference-patterns)
-- ~~Data standardization~~ (https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/data-standardization)
-- ~~Frequently asked questions~~ (https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/frequently-asked-questions)
-- ~~Operationalize data mesh for AI/ML~~ (https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/operationalize-data-mesh-for-ai-ml)
-- ~~Overview~~ (https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/overview-architectures)
-- ~~Single data landing zone~~ (https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/reference-architecture-adatum)
-- ~~Highly sensitive data landing zones~~ (https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/reference-architecture-lamna)
-- *...and 49 more*
+- ~~Advanced Azure Policy management~~ (https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/policy-management/enterprise-policy-as-code)
 
 ## Classified Pages
 
@@ -116,7 +88,6 @@ use_when: Use when adopting AKS/AVS/AVD, migrating SAP or Oracle, designing land
 | [Align the RACI matrix](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/organize/raci-alignment) | organization | 0.95 | Gives explicit RACI matrices aligned to CAF organizational structures, with detailed responsibility assignments across teams—highly specific org design content. |
 | [Set up identity](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-setup-guide/identity) | readiness | 0.95 | Concrete landing zone readiness guidance for identity: tenant setup, identity and access foundations, and best practices for Entra ID as the backbone of Azure access. |
 | [5. Document adoption plan](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/plan/document-cloud-adoption-plan) | planning | 0.90 | Provides concrete guidance and structure for documenting all components of a cloud adoption plan, including timelines and landing zone alignment. |
-| [Advanced Azure Policy management](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/policy-management/enterprise-policy-as-code) | governance | 0.90 | Deep, implementation-focused guidance on using EPAC and IaC to manage Azure Policy at scale, including testing and deployment patterns—highly specialized governance expertise. |
 | [Azure landing zones](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-vmware/ready) | readiness | 0.90 | Directly addresses how Azure VMware Solution affects landing zone design and environment readiness, including architecture and deployment considerations for the platform. |
 | [Core network design](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/oracle-on-azure/core-network-design) | readiness | 0.90 | Explains unique Oracle Database@Azure network architecture and VNet–OCI VCN relationships with concrete design patterns, clearly landing zone readiness guidance. |
 | [Design areas](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-areas) | readiness | 0.90 | Explains standard design areas and provides a reference architecture (including downloadable Visio) to define landing zones; deep environment design guidance. |
@@ -471,5 +442,5 @@ use_when: Use when adopting AKS/AVS/AVD, migrating SAP or Oracle, designing land
 | [Innovate in the cloud](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/innovate) | 0.40 | High-level innovation and value narrative for AVD; lacks detailed methodologies, architectures, or stepwise implementation guidance. |
 | [Tools](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/resources/tools-templates) | 0.40 | High-level catalog of tools, templates, and assessments across CAF phases; primarily navigational/overview without deep implementation detail. |
 | [Overview](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/resource-org) | 0.30 | High-level overview of the resource organization design area without deep implementation specifics; primarily conceptual framing. |
-| [What is the Cloud Adoption Framework?](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/overview) | 0.20 | High-level overview of the Cloud Adoption Framework; conceptual roadmap without detailed methodologies, templates, or implementation specifics. |
+| [What is the Cloud Adoption Framework?](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/overview) | 0.10 | High-level overview of the Microsoft Cloud Adoption Framework without deep implementation details, decision trees, or methodology-specific expert guidance; primarily conceptual and navigational content. |
 | [What's new](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/whats-new) | 0.10 | Page is a change log/updates overview for the Cloud Adoption Framework, summarizing new and deprecated content and navigation pointers. It does not itself contain deep implementation guidance, methodologies, or detailed frameworks that match any sub-skill detection hints. |

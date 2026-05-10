@@ -54,10 +54,10 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 - **Unclassified**: 72
 
 ### Incremental Update
-- **New Pages**: 9
-- **Updated Pages**: 4
-- **Unchanged**: 327
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 340
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-aks-edge-essentials/azure-aks-edge-essentials.csv`
 
 ## Classification Statistics
@@ -76,33 +76,6 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | *(Unclassified)* | 72 | 21.2% |
 
 ## Changes
-
-### New Pages
-
-- [Cluster architecture](https://learn.microsoft.com/en-us/azure/aks/aksarc/multi-rack/cluster-architecture)
-- [Networking concepts and requirements](https://learn.microsoft.com/en-us/azure/aks/aksarc/multi-rack/network-system-requirements)
-- [IP address planning](https://learn.microsoft.com/en-us/azure/aks/aksarc/multi-rack/plan-aks-ip-address)
-- [Access and identity](https://learn.microsoft.com/en-us/azure/aks/aksarc/multi-rack/concepts-security-access-identity)
-- [Supported SKU sizes and scale requirements](https://learn.microsoft.com/en-us/azure/aks/aksarc/multi-rack/scale-requirements)
-- [Create Kubernetes cluster with ARM template](https://learn.microsoft.com/en-us/azure/aks/aksarc/multi-rack/resource-manager-quickstart)
-- [Use MetalLB using Azure CLI](https://learn.microsoft.com/en-us/azure/aks/aksarc/multi-rack/deploy-load-balancer-cli)
-- [Upgrade Kubernetes cluster](https://learn.microsoft.com/en-us/azure/aks/aksarc/multi-rack/cluster-upgrade)
-- [Validate and troubleshoot secret encryption](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-edge-howto-secret-encryption)
-
-### Updated Pages
-
-- [Simplify outbound connectivity](https://learn.microsoft.com/en-us/azure/aks/aksarc/arc-gateway-aks-arc)
-  - Updated: 2026-03-20T22:06:00.000Z → 2026-04-23T17:08:00.000Z
-- [System requirements and support matrix](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-edge-system-requirements)
-  - Updated: 2025-10-24T22:03:00.000Z → 2026-04-17T08:00:00.000Z
-- [What's new in AKS Edge Essentials](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-edge-whats-new)
-  - Updated: 2025-10-24T08:00:00.000Z → 2026-04-22T22:07:00.000Z
-- [Set up machine](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-edge-howto-setup-machine)
-  - Updated: 2025-09-24T08:00:00.000Z → 2026-04-22T22:07:00.000Z
-
-### Deleted Pages
-
-- ~~Enable secret encryption with the KMS plugin~~ (https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-edge-howto-secret-encryption)
 
 ## Classified Pages
 

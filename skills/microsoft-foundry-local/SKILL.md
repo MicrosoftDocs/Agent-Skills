@@ -1,9 +1,9 @@
 ---
 name: microsoft-foundry-local
-description: Expert knowledge for Microsoft Foundry Local (aka Azure AI Foundry Local) development including best practices, decision making, configuration, and integrations & coding patterns. Use when compiling HF models with Olive, using Foundry Local CLI, chat/tools APIs, transcription/translation, or SDK migration, and other Microsoft Foundry Local related development tasks. Not for Microsoft Foundry (use microsoft-foundry), Microsoft Foundry Classic (use microsoft-foundry-classic), Microsoft Foundry Tools (use microsoft-foundry-tools), Azure Local (use azure-local).
+description: Expert knowledge for Microsoft Foundry Local (aka Azure AI Foundry Local) development including best practices, decision making, configuration, and integrations & coding patterns. Use when calling Foundry Local chat/tools APIs, compiling HF models with Olive, using the CLI, or migrating SDK versions, and other Microsoft Foundry Local related development tasks. Not for Microsoft Foundry (use microsoft-foundry), Microsoft Foundry Classic (use microsoft-foundry-classic), Microsoft Foundry Tools (use microsoft-foundry-tools), Azure Local (use azure-local).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-12"
+  generated_at: "2026-05-10"
   generator: "docs2skills/1.0.0"
 ---
 # Microsoft Foundry Local Skill
@@ -26,8 +26,8 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Best Practices | L32-L36 | Troubleshooting Foundry Local CLI issues, resolving common errors, and following recommended workflows and configuration practices for reliable local development. |
 | Decision Making | L37-L41 | Guidance for upgrading apps from the legacy Foundry Local SDK to the current one, including API changes, migration steps, and compatibility considerations. |
-| Configuration | L42-L48 | Compiling Hugging Face models with Olive for Foundry Local, and using the Foundry Local CLI commands/options to install, manage, and configure local models. |
-| Integrations & Coding Patterns | L49-L59 | Using Foundry Local APIs/SDKs for chat, tools, transcription, translation apps, and OpenAI-style or REST integrations in C#, JS, Python, and Rust, including legacy interfaces. |
+| Configuration | L42-L47 | Compiling Hugging Face models with Olive for Foundry Local, and using the Foundry Local CLI commands/options to install, manage, and configure local models. |
+| Integrations & Coding Patterns | L48-L59 | APIs, SDKs, and patterns for calling Foundry Local models: REST/OpenAI-style chat, tools, transcription, LangChain apps, and compiling Hugging Face models for local inference. |
 
 ### Best Practices
 | Topic | URL |
@@ -42,13 +42,13 @@ This skill requires **network access** to fetch documentation content:
 ### Configuration
 | Topic | URL |
 |-------|-----|
-| Compile Hugging Face models for Foundry Local with Olive | https://learn.microsoft.com/en-us/azure/foundry-local/how-to/how-to-compile-hugging-face-models |
 | Use Foundry Local CLI to manage local models | https://learn.microsoft.com/en-us/azure/foundry-local/how-to/how-to-use-foundry-local-cli |
 | Foundry Local CLI command and options reference | https://learn.microsoft.com/en-us/azure/foundry-local/reference/reference-cli |
 
 ### Integrations & Coding Patterns
 | Topic | URL |
 |-------|-----|
+| Compile Hugging Face models for Foundry Local | https://learn.microsoft.com/en-us/azure/foundry-local/how-to/how-to-compile-hugging-face-models |
 | Integrate Foundry Local with OpenAI-style inference SDKs | https://learn.microsoft.com/en-us/azure/foundry-local/how-to/how-to-integrate-with-inference-sdks |
 | Transcribe audio using Foundry Local transcription API | https://learn.microsoft.com/en-us/azure/foundry-local/how-to/how-to-transcribe-audio |
 | Build a LangChain translation app with Foundry Local | https://learn.microsoft.com/en-us/azure/foundry-local/how-to/how-to-use-langchain-with-foundry-local |

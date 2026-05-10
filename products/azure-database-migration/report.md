@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-05-10'
 category_descriptions:
   security: Security guidance for Azure DMS migrations, including SQL best practices
     (network, auth, encryption) and configuring custom RBAC roles for MySQL migration
@@ -7,26 +7,27 @@ category_descriptions:
   decision-making: Choosing the right Azure DMS tool and scenario for your source/target
     databases, plus FAQs on supported migrations, limitations, and how to use Azure
     Database Migration Service.
+  troubleshooting: 'Diagnosing and fixing Azure DMS issues: migration failures, classic
+    DMS problems, and source database connectivity errors, including common causes,
+    logs, and remediation steps.'
   deployment: Using Azure DMS to redeploy or migrate SSIS packages to Azure SQL Database
     or SQL Managed Instance, including configuration steps and migration considerations.
   limits-quotas: Migration-specific limits, unsupported features, and constraints
     when using Azure DMS to move MySQL, PostgreSQL, SQL Managed Instance, MongoDB,
     and hybrid deployments.
-  troubleshooting: Diagnosing and resolving Azure DMS classic migration failures and
-    source DB connectivity issues (network, auth, firewall, TLS) during database migrations.
   integrations: Automating MySQL-to-Azure Database for MySQL migrations using Azure
     Database Migration Service with PowerShell scripts, parameters, and end-to-end
     workflow examples.
 skill_description: Expert knowledge for Azure Database Migration service development
   including troubleshooting, decision making, limits & quotas, security, integrations
-  & coding patterns, and deployment. Use when planning Azure DMS migrations for MySQL,
-  PostgreSQL, SQL Server/SSIS, SQL MI, or MongoDB workloads, and other Azure Database
-  Migration service related development tasks. Not for Azure Migrate (use azure-migrate),
-  Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance),
-  SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines).
-use_when: Use when planning Azure DMS migrations for MySQL, PostgreSQL, SQL Server/SSIS,
-  SQL MI, or MongoDB workloads, and other Azure Database Migration service related
-  development tasks.
+  & coding patterns, and deployment. Use when migrating SQL/MySQL/PostgreSQL/MongoDB
+  with Azure DMS, SSIS to Azure SQL/MI, or automating via PowerShell, and other Azure
+  Database Migration service related development tasks. Not for Azure Migrate (use
+  azure-migrate), Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance
+  (use azure-sql-managed-instance), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines).
+use_when: Use when migrating SQL/MySQL/PostgreSQL/MongoDB with Azure DMS, SSIS to
+  Azure SQL/MI, or automating via PowerShell, and other Azure Database Migration service
+  related development tasks.
 confusable_not_for: Not for Azure Migrate (use azure-migrate), Azure SQL Database
   (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance),
   SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines).
@@ -43,8 +44,8 @@ confusable_not_for: Not for Azure Migrate (use azure-migrate), Azure SQL Databas
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 31
+- **Updated Pages**: 1
+- **Unchanged**: 30
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-database-migration/azure-database-migration.csv`
 
@@ -52,15 +53,20 @@ confusable_not_for: Not for Azure Migrate (use azure-migrate), Azure SQL Databas
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| decision-making | 3 | 9.7% |
+| decision-making | 2 | 6.5% |
 | deployment | 2 | 6.5% |
 | integrations | 1 | 3.2% |
 | limits-quotas | 5 | 16.1% |
 | security | 2 | 6.5% |
-| troubleshooting | 2 | 6.5% |
+| troubleshooting | 3 | 9.7% |
 | *(Unclassified)* | 16 | 51.6% |
 
 ## Changes
+
+### Updated Pages
+
+- [Frequently asked questions](https://learn.microsoft.com/en-us/azure/dms/faq)
+  - Updated: 2026-02-20T23:10:00Z → 2026-05-05T17:17:00Z
 
 ## Classified Pages
 
@@ -72,6 +78,7 @@ confusable_not_for: Not for Azure Migrate (use azure-migrate), Azure SQL Databas
 | [Services and tools available for data migration scenarios](https://learn.microsoft.com/en-us/azure/dms/dms-tools-matrix) | decision-making | 0.80 | Tools matrix with tables mapping scenarios/phases to specific tools is explicit decision guidance for technology selection. |
 | [DMS security best practices](https://learn.microsoft.com/en-us/azure/dms/dms-security-best-practices) | security | 0.70 | Security best practices for SQL Server to Azure SQL via DMS likely include product-specific settings (network, storage, Azure SQL security options). |
 | [Database migration scenario status](https://learn.microsoft.com/en-us/azure/dms/resource-scenario-status) | decision-making | 0.70 | Scenario support matrix (source/target pairs, online vs offline, preview vs GA) is concrete decision guidance unique to the service. |
+| [Frequently asked questions](https://learn.microsoft.com/en-us/azure/dms/faq) | troubleshooting | 0.70 | FAQ includes product-specific behaviors and constraints for Azure Database Migration Service, such as supported scenarios, service behavior, and likely error/issue explanations with corresponding guidance. This is organized around common user problems and resolutions, fitting troubleshooting more than other categories. |
 | [MongoDB to Azure Cosmos DB for MongoDB](https://learn.microsoft.com/en-us/azure/dms/known-issues-mongo-cosmos-db) | limits-quotas | 0.70 | Describes known issues and limitations for MongoDB to Cosmos DB migrations; these are concrete scenario constraints. |
 | [MySQL DB to Azure DB for MySQL](https://learn.microsoft.com/en-us/azure/dms/known-issues-azure-mysql-fs-online) | limits-quotas | 0.70 | Known issues associated with migrations to Azure Database for MySQL; enumerates scenario-specific constraints and unsupported behaviors. |
 | [PostgreSQL to Azure DB for PostgreSQL](https://learn.microsoft.com/en-us/azure/dms/known-issues-azure-postgresql-online) | limits-quotas | 0.70 | Lists known issues and migration limitations for this specific scenario, which are product-specific constraints. |
@@ -79,7 +86,6 @@ confusable_not_for: Not for Azure Migrate (use azure-migrate), Azure SQL Databas
 | [Using hybrid mode](https://learn.microsoft.com/en-us/azure/dms/known-issues-dms-hybrid-mode) | limits-quotas | 0.70 | Known issues/limitations for hybrid mode likely enumerate specific constraints and unsupported scenarios that function as product limits. |
 | [Azure SQL Database](https://learn.microsoft.com/en-us/azure/dms/how-to-migrate-ssis-packages) | deployment | 0.60 | Covers how to redeploy SSIS packages to Azure SQL Database via DMS, including deprecation timelines and likely DMS-specific deployment constraints. |
 | [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/dms/how-to-migrate-ssis-packages-managed-instance) | deployment | 0.60 | Similar to 20 but for SQL Managed Instance; focuses on DMS-based deployment/migration specifics and deprecation constraints. |
-| [Frequently asked questions](https://learn.microsoft.com/en-us/azure/dms/faq) | decision-making | 0.60 | DMS FAQ typically includes concrete behavioral details, support boundaries, and scenario guidance that help decide how/when to use DMS. |
 | [MySQL to Azure Database for MySQL (offline)](https://learn.microsoft.com/en-us/azure/dms/migrate-mysql-to-azure-mysql-powershell) | integrations | 0.60 | Collection of DMS PowerShell scripts for offline MySQL migration likely includes specific cmdlet parameters and required configuration values unique to DMS. |
 
 ## Unclassified Pages

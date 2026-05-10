@@ -1,14 +1,14 @@
 ---
-generated_at: '2026-05-03'
+generated_at: '2026-05-10'
 category_descriptions:
   configuration: Authoring, assigning, storing, and securing Machine Configuration
     (guest configuration) packages and policies, plus prerequisites, networking, remediation,
     and compliance result analysis.
   deployment: How to deploy and assign Machine Configuration packages via ARM/Bicep/Terraform/REST,
     publish packages to storage, and use safe deployment practices with Azure Policy.
-  security: Using Azure Policy and Machine Configuration for security baselines, package
-    signing, exemptions, and mapping/implementing many regulatory and industry standards
-    (CIS, NIST, PCI, ISO, FedRAMP, etc.)
+  security: Azure Policy security baselines, guest/machine configuration, and mappings
+    of built‑in policies/initiatives to many compliance frameworks (CIS, NIST, ISO,
+    PCI, FedRAMP, HIPAA, etc.).
   best-practices: 'Designing effective Azure Policy definitions: effects, logical/value
     operators, arrays, tags, initiatives, parameters, and testing/behavior of Machine/Guest
     Configuration.'
@@ -24,16 +24,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Policy development including troubleshooting,
   best practices, decision making, security, configuration, integrations & coding
   patterns, and deployment. Use when authoring Machine Configuration packages, deploying
-  via ARM/Bicep/Terraform, enforcing security baselines, migrating from DSC/Automanage,
+  via ARM/Bicep/Terraform, mapping to CIS/NIST baselines, migrating from DSC/Automanage,
   or querying compliance with Resource Graph, and other Azure Policy related development
-  tasks. Not for Azure Blueprints (use azure-blueprints), Azure Resource Manager (use
-  azure-resource-manager), Azure Role-based access control (use azure-rbac), Azure
+  tasks. Not for Azure Blueprints (use azure-blueprints), Azure Role-based access
+  control (use azure-rbac), Azure Resource Manager (use azure-resource-manager), Azure
   Security (use azure-security).
 use_when: Use when authoring Machine Configuration packages, deploying via ARM/Bicep/Terraform,
-  enforcing security baselines, migrating from DSC/Automanage, or querying compliance
+  mapping to CIS/NIST baselines, migrating from DSC/Automanage, or querying compliance
   with Resource Graph, and other Azure Policy related development tasks.
-confusable_not_for: Not for Azure Blueprints (use azure-blueprints), Azure Resource
-  Manager (use azure-resource-manager), Azure Role-based access control (use azure-rbac),
+confusable_not_for: Not for Azure Blueprints (use azure-blueprints), Azure Role-based
+  access control (use azure-rbac), Azure Resource Manager (use azure-resource-manager),
   Azure Security (use azure-security).
 ---
 # Azure Policy Crawl Report
@@ -48,8 +48,8 @@ confusable_not_for: Not for Azure Blueprints (use azure-blueprints), Azure Resou
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 23
-- **Unchanged**: 135
+- **Updated Pages**: 9
+- **Unchanged**: 149
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-policy/azure-policy.csv`
 
@@ -70,47 +70,24 @@ confusable_not_for: Not for Azure Blueprints (use azure-blueprints), Azure Resou
 
 ### Updated Pages
 
-- [Windows agent release notes](https://learn.microsoft.com/en-us/azure/governance/machine-configuration/whats-new/agent/windows)
-  - Updated: 2026-04-15T06:10:00.000Z → 2026-04-24T06:15:00.000Z
-- [Linux agent release notes](https://learn.microsoft.com/en-us/azure/governance/machine-configuration/whats-new/agent/linux)
-  - Updated: 2026-04-15T06:10:00.000Z → 2026-04-24T06:15:00.000Z
+- [Azure Policy for Kubernetes](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/policy-for-kubernetes)
+  - Updated: 2025-12-03T06:18:00.000Z → 2026-05-07T11:15:00.000Z
 - [FedRAMP High](https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-fedramp-high)
-  - Updated: 2025-10-20T08:00:00.000Z → 2026-04-18T08:00:00.000Z
+  - Updated: 2026-04-18T08:00:00.000Z → 2026-05-06T08:00:00.000Z
 - [FedRAMP Moderate](https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-fedramp-moderate)
-  - Updated: 2025-10-20T08:00:00.000Z → 2026-04-18T08:00:00.000Z
+  - Updated: 2026-04-18T08:00:00.000Z → 2026-05-06T08:00:00.000Z
 - [Microsoft cloud security benchmark](https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-azure-security-benchmark)
-  - Updated: 2025-10-31T08:00:00.000Z → 2026-04-18T08:00:00.000Z
+  - Updated: 2026-04-18T08:00:00.000Z → 2026-05-06T08:00:00.000Z
 - [NIST SP 800-53 Rev. 4](https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-nist-sp-800-53-r4)
-  - Updated: 2025-10-20T08:00:00.000Z → 2026-04-18T08:00:00.000Z
+  - Updated: 2026-04-18T08:00:00.000Z → 2026-05-06T08:00:00.000Z
 - [NIST SP 800-53 Rev. 5](https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-nist-sp-800-53-r5)
-  - Updated: 2025-10-20T08:00:00.000Z → 2026-04-18T08:00:00.000Z
+  - Updated: 2026-04-18T08:00:00.000Z → 2026-05-06T08:00:00.000Z
 - [NIST SP 800-171 R2](https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-nist-sp-800-171-r2)
-  - Updated: 2026-01-12T08:00:00.000Z → 2026-04-18T08:00:00.000Z
+  - Updated: 2026-04-18T08:00:00.000Z → 2026-05-06T08:00:00.000Z
 - [SOC 2 Type 2](https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-soc-2)
-  - Updated: 2026-03-19T08:00:00.000Z → 2026-04-18T08:00:00.000Z
-- [Built-in policies](https://learn.microsoft.com/en-us/azure/governance/policy/samples/built-in-policies)
-  - Updated: 2026-01-26T08:00:00.000Z → 2026-04-18T08:00:00.000Z
-- [Built-in initiatives](https://learn.microsoft.com/en-us/azure/governance/policy/samples/built-in-initiatives)
-  - Updated: 2025-11-18T08:00:00.000Z → 2026-04-19T11:06:00.000Z
-- [FedRAMP High](https://learn.microsoft.com/en-us/azure/governance/policy/samples/fedramp-high)
-  - Updated: 2026-02-19T08:00:00.000Z → 2026-04-18T08:00:00.000Z
-- [FedRAMP Moderate](https://learn.microsoft.com/en-us/azure/governance/policy/samples/fedramp-moderate)
-  - Updated: 2026-02-19T08:00:00.000Z → 2026-04-18T08:00:00.000Z
-- [Microsoft cloud security benchmark](https://learn.microsoft.com/en-us/azure/governance/policy/samples/azure-security-benchmark)
-  - Updated: 2026-02-24T08:00:00.000Z → 2026-04-18T08:00:00.000Z
-- [Microsoft Cloud for Sovereignty Confidential](https://learn.microsoft.com/en-us/azure/governance/policy/samples/mcfs-baseline-confidential)
-  - Updated: 2025-08-05T20:17:00.000Z → 2026-04-18T08:00:00.000Z
-- [Microsoft Cloud for Sovereignty Global](https://learn.microsoft.com/en-us/azure/governance/policy/samples/mcfs-baseline-global)
-  - Updated: 2025-08-05T20:17:00.000Z → 2026-04-18T08:00:00.000Z
-- [NIST SP 800-53 Rev. 4](https://learn.microsoft.com/en-us/azure/governance/policy/samples/nist-sp-800-53-r4)
-  - Updated: 2026-02-19T08:00:00.000Z → 2026-04-18T08:00:00.000Z
-- [NIST SP 800-53 Rev. 5](https://learn.microsoft.com/en-us/azure/governance/policy/samples/nist-sp-800-53-r5)
-  - Updated: 2026-02-19T08:00:00.000Z → 2026-04-18T08:00:00.000Z
-- [NIST SP 800-171 R2](https://learn.microsoft.com/en-us/azure/governance/policy/samples/nist-sp-800-171-r2)
-  - Updated: 2026-02-19T08:00:00.000Z → 2026-04-18T08:00:00.000Z
-- [NL BIO Cloud Theme](https://learn.microsoft.com/en-us/azure/governance/policy/samples/nl-bio-cloud-theme)
-  - Updated: 2026-01-12T08:00:00.000Z → 2026-04-18T08:00:00.000Z
-- *...and 3 more*
+  - Updated: 2026-04-18T08:00:00.000Z → 2026-05-06T08:00:00.000Z
+- [Policy rule](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/definition-structure-policy-rule)
+  - Updated: 2026-04-17T22:08:00.000Z → 2026-05-04T22:15:00.000Z
 
 ## Classified Pages
 
@@ -148,13 +125,13 @@ confusable_not_for: Not for Azure Blueprints (use azure-blueprints), Azure Resou
 | [CIS Microsoft Azure Foundations Benchmark 2.0.0](https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-azure-2-0-0) | security | 0.78 | Provides explicit mappings from CIS Microsoft Azure Foundations Benchmark 2.0.0 controls to Azure Policy definitions and initiatives. These mappings are concrete security/compliance configuration details unique to Azure Policy. |
 | [CMMC Level 3](https://learn.microsoft.com/en-us/azure/governance/policy/samples/cmmc-l3) | security | 0.78 | Lists how CMMC Level 3 controls map to specific Azure Policy definitions within a regulatory compliance initiative. This is detailed, product-specific security/compliance configuration information, matching the security sub-skill. |
 | [CMMC Level 3](https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-cmmc-l3) | security | 0.78 | Page details how CMMC Level 3 controls map to Azure Policy definitions and built-in initiatives for Azure Government. The exact control-to-policy mappings and initiative composition are specific, non-obvious configuration knowledge for securing and assessing environments against CMMC, fitting the security sub-skill. |
-| [FedRAMP High](https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-fedramp-high) | security | 0.78 | Regulatory Compliance detail pages list specific Azure Policy definitions mapped to individual FedRAMP High controls for Azure Government, including exact policy names/IDs and how they satisfy particular security controls. This is product-specific security configuration/compliance mapping that isn't generic knowledge. |
-| [FedRAMP Moderate](https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-fedramp-moderate) | security | 0.78 | Provides detailed mapping between FedRAMP Moderate controls and concrete Azure Policy initiative definitions in Azure Government, including specific policy artifacts used for assessment. This is product-specific security/compliance configuration information. |
-| [Microsoft cloud security benchmark](https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-azure-security-benchmark) | security | 0.78 | Details how Microsoft cloud security benchmark controls map to Azure Policy definitions in Azure Government, listing specific policies per control. These mappings are concrete security configuration details unique to Azure Policy. |
-| [NIST SP 800-171 R2](https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-nist-sp-800-171-r2) | security | 0.78 | Lists how each NIST SP 800-171 R2 control is implemented or assessed via specific Azure Policy initiative definitions in Azure Government. These mappings are detailed, product-specific security configuration information. |
-| [NIST SP 800-53 Rev. 4](https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-nist-sp-800-53-r4) | security | 0.78 | Contains a control-by-control mapping from NIST SP 800-53 Rev. 4 to Azure Policy initiative definitions, with specific policy identifiers and their compliance role. This is detailed, product-specific security/compliance configuration. |
-| [NIST SP 800-53 Rev. 5](https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-nist-sp-800-53-r5) | security | 0.78 | Similar to the R4 page, this provides explicit mappings from NIST SP 800-53 Rev. 5 controls to Azure Policy definitions in Azure Government, including concrete policy artifacts. This is expert-level security/compliance configuration data. |
-| [SOC 2 Type 2](https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-soc-2) | security | 0.78 | Provides detailed mappings between SOC 2 controls and Azure Policy definitions for Azure Government, including specific policy names/IDs per control. This is specialized security/compliance configuration knowledge. |
+| [FedRAMP High](https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-fedramp-high) | security | 0.78 | Page provides detailed mappings between specific FedRAMP High controls and concrete Azure Policy definitions/initiatives for Azure Government, including control IDs and policy names. This is product- and standard-specific security/compliance configuration knowledge that goes beyond generic concepts. |
+| [FedRAMP Moderate](https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-fedramp-moderate) | security | 0.78 | Contains a control-by-control mapping from FedRAMP Moderate requirements to specific Azure Policy definitions/initiatives in Azure Government. These mappings (control IDs ↔ policy names/IDs) are detailed, product-specific security/compliance configuration data. |
+| [Microsoft cloud security benchmark](https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-azure-security-benchmark) | security | 0.78 | Details how each Microsoft cloud security benchmark control maps to Azure Policy definitions/initiatives for Azure Government, including specific control identifiers and policy artifacts. This is concrete, product-specific security/compliance mapping information. |
+| [NIST SP 800-171 R2](https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-nist-sp-800-171-r2) | security | 0.78 | Contains a detailed mapping of NIST SP 800-171 R2 controls to Azure Policy definitions/initiatives in Azure Government, including specific control identifiers and policy artifacts, which is expert-level security/compliance configuration knowledge. |
+| [NIST SP 800-53 Rev. 4](https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-nist-sp-800-53-r4) | security | 0.78 | Provides explicit mappings between NIST SP 800-53 Rev. 4 controls and Azure Policy definitions/initiatives in Azure Government. These mappings (control IDs, policy names/IDs) are detailed security/compliance configuration knowledge unique to this product context. |
+| [NIST SP 800-53 Rev. 5](https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-nist-sp-800-53-r5) | security | 0.78 | Similar to other regulatory compliance pages, this one lists specific NIST SP 800-53 Rev. 5 controls and their corresponding Azure Policy definitions/initiatives for Azure Government, which is detailed, product-specific security/compliance configuration information. |
+| [SOC 2 Type 2](https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-soc-2) | security | 0.78 | Provides mappings between SOC 2 controls and Azure Policy definitions/initiatives for Azure Government, listing specific control IDs and policy references. This is detailed, product-specific security/compliance configuration information. |
 | [Assignments](https://learn.microsoft.com/en-us/azure/governance/machine-configuration/concepts/assignments) | configuration | 0.75 | Describes guest assignment resource model, including metadata and version constraints (for example minimum version 1.0.0); product-specific configuration schema. |
 | [CIS Security Benchmarks - AlmaLinux](https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-linux/alma-ado) | security | 0.75 | Provides supported CIS benchmarks, mismatched rules, and configurable parameters for AlmaLinux, which are detailed, product- and OS-specific security configuration references. |
 | [CIS Security Benchmarks - Debian Linux](https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-linux/debian-ado) | security | 0.75 | Similar to index 24 but for Debian; includes benchmark versions, rule mappings, and parameters that are detailed security configuration data. |
@@ -235,7 +212,6 @@ confusable_not_for: Not for Azure Blueprints (use azure-blueprints), Azure Resou
 | [Assign a policy - Bicep](https://learn.microsoft.com/en-us/azure/governance/policy/assign-policy-bicep) | 0.40 | Quickstart using Bicep; introductory deployment example, not detailed expert configuration guidance. |
 | [Assign a policy - REST](https://learn.microsoft.com/en-us/azure/governance/policy/assign-policy-rest-api) | 0.40 | Quickstart using REST API; basic example of assignment creation, not extensive configuration matrices or error mappings. |
 | [Assign a policy - Terraform](https://learn.microsoft.com/en-us/azure/governance/policy/assign-policy-terraform) | 0.40 | Quickstart using Terraform; basic policy assignment example, not deep product-specific constraints or matrices. |
-| [Azure Policy for Kubernetes](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/policy-for-kubernetes) | 0.40 | Conceptual overview of Azure Policy for Kubernetes; summary does not indicate detailed config tables, limits, or error codes. |
 | [Evaluate the impact of a new policy](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/evaluate-impact) | 0.40 | Guidance on evaluating impact of new policies; high-level process, not numeric decision thresholds or config tables. |
 | [Linux agent release notes](https://learn.microsoft.com/en-us/azure/governance/machine-configuration/whats-new/agent/linux) | 0.40 | Release notes for the Linux machine configuration agent generally describe changes, issues, and FAQs rather than detailed limits, configuration parameter tables, security role mappings, or formal troubleshooting flows. In absence of explicit structured expert content as defined by the sub-skill hints, it should not be classified into a sub-skill type. |
 | [Manual](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/effect-manual) | 0.40 | Explains manual effect and attestations at a conceptual level; no specific error codes, parameters, or numeric guidance. |
@@ -265,14 +241,15 @@ confusable_not_for: Not for Azure Blueprints (use azure-blueprints), Azure Resou
 | [Disallow resource types](https://learn.microsoft.com/en-us/azure/governance/policy/tutorials/disallowed-resources) | 0.30 | Tutorial applying built-in 'Not allowed resource types' policy; focuses on how to assign and manage, not on limits, decision matrices, or detailed configuration options. |
 | [Manage tag governance](https://learn.microsoft.com/en-us/azure/governance/policy/tutorials/govern-tags) | 0.30 | Tutorial on using Azure Policy modify effect for tag governance; mainly procedural guidance without deep configuration matrices, limits, or error-code-based troubleshooting. |
 | [Parameters](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/definition-structure-parameters) | 0.30 | Conceptual description of policy parameters and their purpose; lacks detailed parameter catalogs, default values, or numeric constraints that would constitute expert configuration knowledge. |
+| [Policy rule](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/definition-structure-policy-rule) | 0.30 | Describes the conceptual structure of Azure Policy rules (if/then, effects, logical operators). While product-specific, it is a general conceptual explanation without detailed configuration tables, numeric thresholds, or specialized mappings; it does not meet the expert-knowledge criteria for the defined sub-skill types. |
 | [Route policy state change events](https://learn.microsoft.com/en-us/azure/governance/policy/tutorials/route-state-change-events) | 0.30 | Tutorial wiring Azure Policy state change events to Event Grid via CLI; shows commands but not detailed parameter tables, limits, or diagnostic mappings. |
 | [Scope](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/scope) | 0.30 | Explains scope conceptually; no expert-only configuration tables, limits, or decision matrices. |
 | [Security baselines overview](https://learn.microsoft.com/en-us/azure/governance/machine-configuration/how-to/assign-security-baselines/overview-page) | 0.30 | High-level overview of security baselines; summary suggests conceptual description without detailed settings or parameters. |
 | [System Policy](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/systempolicy) | 0.30 | High-level guide to system policy capability; no detailed settings, limits, or troubleshooting mappings. |
 | [Virtual machine recommended policies](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/recommended-policies) | 0.30 | Describes recommended policies UI for VMs; no detailed technical configuration or numeric criteria in summary. |
 | [Compliance states](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/compliance-states) | 0.25 | Conceptual article on compliance states; summary shows no detailed configuration or numeric guidance. |
+| [Azure Policy for Kubernetes](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/policy-for-kubernetes) | 0.20 | Content is a conceptual explanation of how Azure Policy integrates with Kubernetes via OPA/Gatekeeper. The summary does not indicate specific limits, configuration parameter tables, error codes, or decision matrices. It describes capabilities and high-level behavior rather than product-specific numeric limits, configuration options, or troubleshooting mappings. |
 | [Overview](https://learn.microsoft.com/en-us/azure/governance/machine-configuration/whats-new/agent/) | 0.20 | High-level overview page that just links to platform-specific release notes; no concrete limits, configuration parameters, error codes, or decision matrices are evident in the summary. |
-| [Policy rule](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/definition-structure-policy-rule) | 0.20 | Primarily explains Azure Policy rule structure (if/then, logical operators, effects). No specific limits, configuration tables, error codes, or product-specific numeric thresholds; it's a conceptual/structural reference rather than expert-only operational details. |
 | [Remediation options](https://learn.microsoft.com/en-us/azure/governance/machine-configuration/concepts/remediation-options) | 0.20 | Content appears to describe remediation behavior and options for Azure Policy machine configuration at a conceptual level (continuous remediation, remediation tasks, Safe Deployment framework) without exposing concrete limits, configuration parameter tables, error codes, or decision matrices with quantified trade-offs. It reads more like a feature explanation/how-to than a detailed reference with expert-only specifics. |
 | [What is Azure Machine Configuration?](https://learn.microsoft.com/en-us/azure/governance/machine-configuration/overview/01-overview-concepts) | 0.20 | Conceptual overview of Azure Machine Configuration; no detailed limits, configs, or error mappings. |
 | [What is Azure Policy?](https://learn.microsoft.com/en-us/azure/governance/policy/overview) | 0.20 | High-level overview of Azure Policy; mostly conceptual service description without detailed limits or configs. |

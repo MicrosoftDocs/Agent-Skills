@@ -44,9 +44,9 @@ confusable_not_for: Not for Azure Maps (use azure-maps), Azure Open Datasets (us
 - **Unclassified**: 13
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 45
+- **Unchanged**: 46
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-planetary-computer-pro/azure-planetary-computer-pro.csv`
 
@@ -63,10 +63,6 @@ confusable_not_for: Not for Azure Maps (use azure-maps), Azure Open Datasets (us
 | *(Unclassified)* | 13 | 28.3% |
 
 ## Changes
-
-### New Pages
-
-- [Create an API Proxy for GeoCatalogs](https://learn.microsoft.com/en-us/azure/planetary-computer/create-api-proxy-geocatalog)
 
 ## Classified Pages
 

@@ -45,9 +45,9 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 104
-- **Deleted Pages**: 7
+- **Updated Pages**: 0
+- **Unchanged**: 105
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-partner-solutions/azure-partner-solutions.csv`
 
 ## Classification Statistics
@@ -63,21 +63,6 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 | *(Unclassified)* | 72 | 68.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/new-relic/faq)
-  - Updated: 2026-02-13T06:11:00Z → 2026-04-19T17:12:00Z
-
-### Deleted Pages
-
-- ~~Neon Serverless Postgres~~ (https://learn.microsoft.com/en-us/azure/partner-solutions/neon/)
-- ~~Create a resource~~ (https://learn.microsoft.com/en-us/azure/partner-solutions/neon/create)
-- ~~Connect to compute services~~ (https://learn.microsoft.com/en-us/azure/partner-solutions/neon/create-service-connection)
-- ~~FAQ~~ (https://learn.microsoft.com/en-us/azure/partner-solutions/neon/faq)
-- ~~Manage a resource~~ (https://learn.microsoft.com/en-us/azure/partner-solutions/neon/manage)
-- ~~What is Neon Serverless Postgres?~~ (https://learn.microsoft.com/en-us/azure/partner-solutions/neon/overview)
-- ~~Resources and developer tools~~ (https://learn.microsoft.com/en-us/azure/partner-solutions/neon/tools)
 
 ## Classified Pages
 

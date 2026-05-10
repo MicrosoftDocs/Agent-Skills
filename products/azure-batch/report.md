@@ -52,8 +52,8 @@ confusable_not_for: Not for Azure HDInsight (use azure-hdinsight), Azure Databri
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 110
+- **Updated Pages**: 0
+- **Unchanged**: 113
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-batch/azure-batch.csv`
 
@@ -73,15 +73,6 @@ confusable_not_for: Not for Azure HDInsight (use azure-hdinsight), Azure Databri
 | *(Unclassified)* | 31 | 27.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [Use simplified compute node communication](https://learn.microsoft.com/en-us/azure/batch/simplified-compute-node-communication)
-  - Updated: 2026-01-12T08:00:00.000Z → 2026-04-22T17:34:00.000Z
-- [Create a simplified node communication pool without public IP addresses](https://learn.microsoft.com/en-us/azure/batch/simplified-node-communication-pool-no-public-ip)
-  - Updated: 2026-01-12T08:00:00.000Z → 2026-04-21T08:00:00.000Z
-- [Classic compute node communication model](https://learn.microsoft.com/en-us/azure/batch/batch-pools-to-simplified-compute-node-communication-model-migration-guide)
-  - Updated: 2025-04-02T08:00:00.000Z → 2026-04-22T17:34:00.000Z
 
 ## Classified Pages
 

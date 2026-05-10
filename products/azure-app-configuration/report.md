@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-05'
+generated_at: '2026-05-10'
 category_descriptions:
   deployment: 'Using App Configuration in CI/CD: exporting/importing settings, creating
     snapshots, integrating with Azure Pipelines, GitHub Actions, and Helm/Kubernetes
@@ -41,16 +41,16 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Key
 
 ## Summary
 
-- **Total Pages**: 161
-- **Fetched**: 161
+- **Total Pages**: 162
+- **Fetched**: 162
 - **Fetch Failed**: 0
 - **Classified**: 132
-- **Unclassified**: 29
+- **Unclassified**: 30
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 161
+- **New Pages**: 1
+- **Updated Pages**: 1
+- **Unchanged**: 160
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-app-configuration/azure-app-configuration.csv`
 
@@ -62,13 +62,22 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Key
 | configuration | 15 | 9.3% |
 | decision-making | 2 | 1.2% |
 | deployment | 6 | 3.7% |
-| integrations | 85 | 52.8% |
+| integrations | 85 | 52.5% |
 | limits-quotas | 5 | 3.1% |
-| security | 17 | 10.6% |
+| security | 17 | 10.5% |
 | troubleshooting | 1 | 0.6% |
-| *(Unclassified)* | 29 | 18.0% |
+| *(Unclassified)* | 30 | 18.5% |
 
 ## Changes
+
+### New Pages
+
+- [Spring Boot](https://learn.microsoft.com/en-us/azure/azure-app-configuration/how-to-time-window-filter-spring-boot)
+
+### Updated Pages
+
+- [Feature management](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-feature-flag-spring-boot)
+  - Updated: 2026-03-16T08:00:00.000Z → 2026-05-07T06:30:00.000Z
 
 ## Classified Pages
 
@@ -228,13 +237,14 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Key
 | [Resiliency and disaster recovery](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-disaster-recovery) | 0.40 | Resiliency and disaster recovery overview for App Configuration; summary shows conceptual guidance about geo-replication and high availability without concrete numeric thresholds, configuration tables, or decision matrices. |
 | [ARM template](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-resource-manager) | 0.30 | ARM template quickstart; focuses on basic deployment example, not on exhaustive configuration options, limits, or troubleshooting. |
 | [Bicep](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-bicep) | 0.30 | Basic Bicep quickstart for creating a store; mostly generic IaC deployment steps without detailed configuration matrices or constraints. |
-| [Feature management](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-feature-flag-spring-boot) | 0.30 | This is a quickstart for adding feature flags to a Spring Boot app using Azure App Configuration. It mainly demonstrates end-to-end usage rather than providing detailed configuration tables, limits, or best-practice guidance. It doesn't clearly satisfy the expert-knowledge criteria for the defined sub-skill types. |
 | [Frequently asked questions](https://learn.microsoft.com/en-us/azure/azure-app-configuration/faq) | 0.30 | FAQ may contain some specifics but summary suggests conceptual Q&A (e.g., differences vs Key Vault) without clear limits, configs, or error mappings. |
+| [Spring Boot](https://learn.microsoft.com/en-us/azure/azure-app-configuration/how-to-time-window-filter-spring-boot) | 0.30 | How-to tutorial for using time window filters with feature flags in Spring Boot; focuses on step-by-step usage, not on detailed configuration tables, limits, error codes, or product-specific best-practice matrices. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/azure-app-configuration/cli-samples) | 0.20 | Index of CLI sample scripts; no detailed configuration tables, limits, or troubleshooting content indicated. |
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/azure-app-configuration/powershell-samples) | 0.20 | Index of PowerShell sample scripts; navigation content without product-specific limits, configs, or troubleshooting mappings. |
 | [Configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-java-spring-app) | 0.20 | This is a quickstart tutorial for wiring a Java Spring app to Azure App Configuration. It primarily shows basic integration steps rather than enumerating configuration matrices, limits, or product-specific best-practice patterns. It doesn't meet the thresholds for any expert-knowledge sub-skill type. |
 | [Create an App Configuration store](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-azure-app-configuration-create) | 0.20 | Quickstart for creating a store and key-values; primarily step-by-step tutorial without configuration matrices or expert-only details. |
 | [Create and manage feature flags](https://learn.microsoft.com/en-us/azure/azure-app-configuration/manage-feature-flags) | 0.20 | Feature flag management quickstart; focused on using portal UI and basic concepts, not deep configuration or limits. |
+| [Feature management](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-feature-flag-spring-boot) | 0.20 | Quickstart tutorial showing how to add feature flags to a Spring Boot app using Azure App Configuration. It is primarily step-by-step guidance and basic integration usage, without detailed configuration parameter tables, limits, error-code-based troubleshooting, or product-specific best-practice guidance with quantified impact. |
 | [Import or export configuration data](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-import-export-data) | 0.20 | How-to for import/export via portal/CLI; typical tutorial flow, no indication of detailed config tables or limits. |
 | [Monitor App Configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/monitor-app-configuration) | 0.20 | High-level overview of monitoring data and Azure Monitor integration for App Configuration; summary indicates conceptual guidance without specific limits, configuration tables, or error-code-based troubleshooting. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-key-value) | 0.20 | Conceptual explanation of key-value storage; no specific limits, configuration tables, or product-specific error/role details. |

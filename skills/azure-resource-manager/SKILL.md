@@ -1,9 +1,9 @@
 ---
 name: azure-resource-manager
-description: Expert knowledge for Azure Resource Manager development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when authoring Bicep/ARM templates, CI/CD deployments, template specs, deployment stacks, or ARM REST/CLI automations, and other Azure Resource Manager related development tasks. Not for Azure Blueprints (use azure-blueprints), Azure Policy (use azure-policy), Azure Portal (use azure-portal), Azure Resource Graph (use azure-resource-graph).
+description: Expert knowledge for Azure Resource Manager development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when authoring Bicep/ARM templates, CI/CD deployments, template specs, deployment stacks, or ARM REST/CLI automations, and other Azure Resource Manager related development tasks. Not for Azure Blueprints (use azure-blueprints), Azure Policy (use azure-policy), Azure Resource Graph (use azure-resource-graph), Azure Portal (use azure-portal).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-03"
+  generated_at: "2026-05-10"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Resource Manager Skill
@@ -28,11 +28,11 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L132-L177 | Best practices for authoring and linting Bicep/ARM templates: naming, parameters, locations, IDs, dependencies, API/module versions, test toolkit usage, and resilient tagging/endpoint design. |
 | Decision Making | L178-L192 | Guidance on choosing ARM deployment models and modes, migrating (ASM→ARM, JSON→Bicep, Blueprints→stacks), planning large-scale regional relocations, and understanding tags and delete behavior. |
 | Architecture & Design Patterns | L193-L200 | Bicep architecture patterns for reusable configs, flexible parameters, deterministic name generation, and sharing variables across templates for scalable ARM deployments. |
-| Limits & Quotas | L201-L226 | ARM/Bicep limits and quotas: subscription/group caps, resources/params/variables/outputs, tags and naming rules, deployment history, throttling, and quota‑related deployment errors and fixes |
-| Security | L227-L253 | Securing ARM/Bicep deployments: handling secrets, secure parameters, RBAC, locks, Private Link, TLS, cross-tenant auth, policy mappings, and management group protection. |
-| Configuration | L254-L319 | Authoring and configuring ARM/Bicep templates: syntax, parameters, types, loops, modules, functions, tags, networking/monitoring resources, policy/governance, and deployment/monitoring behavior. |
-| Integrations & Coding Patterns | L320-L371 | Bicep/ARM functions and operators, programmatic integrations (CLI, REST, SDKs), and patterns for deploying, querying, tagging, and automating Azure resources and Kubernetes. |
-| Deployment | L372-L428 | Deploying and moving Azure resources with ARM/Bicep: CI/CD pipelines, template specs, deployment scripts, deployment stacks, and cross-subscription/region relocation of many Azure services. |
+| Limits & Quotas | L201-L227 | ARM/Bicep limits and quotas: template size, parameters, resources, outputs, tags, naming, deployment history, throttling, subscription/service quotas, and how to diagnose/resolve related errors. |
+| Security | L228-L254 | Securing ARM/Bicep deployments: handling secrets, secure parameters, RBAC, locks, Private Link, TLS, cross-tenant auth, policy mappings, and management group protection. |
+| Configuration | L255-L320 | Authoring and configuring ARM/Bicep templates: syntax, parameters, types, loops, modules, functions, tags, networking/monitoring resources, policy/governance, and deployment/monitoring behavior. |
+| Integrations & Coding Patterns | L321-L372 | Bicep/ARM functions and operators, programmatic integrations (CLI, REST, SDKs), and patterns for deploying, querying, tagging, and automating Azure resources and Kubernetes. |
+| Deployment | L373-L428 | Deploying and moving Azure resources with ARM/Bicep: CI/CD pipelines, template specs, deployment scripts, deployment stacks, and cross-subscription/region relocation of many Azure services. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -211,6 +211,7 @@ This skill requires **network access** to fetch documentation content:
 | Define and manage parameters in Bicep templates | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/parameters |
 | Declare resources in Bicep and observe limits | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/resource-declaration |
 | Review Azure subscription and service limits and quotas | https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/azure-subscription-service-limits |
+| Networking resource move limitations across subscriptions | https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-limitations/networking-move-limitations |
 | Handle Azure Resource Manager request throttling limits | https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/request-limits-and-throttling |
 | Apply Azure resource naming rules and restrictions | https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/resource-name-rules |
 | Identify Azure resources exempt from 800-per-group limit | https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/resources-without-resource-group-limit |
@@ -387,7 +388,6 @@ This skill requires **network access** to fetch documentation content:
 | Move Azure App Service across subscriptions | https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-limitations/app-service-move-limitations |
 | Move classic Azure resources with ARM | https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-limitations/classic-model-move-limitations |
 | Move Cloud Services (extended support) resources | https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-limitations/cloud-services-extended-support |
-| Move Azure networking resources without downtime | https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-limitations/networking-move-limitations |
 | Handle special cases when moving Azure VMs | https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-limitations/virtual-machines-move-limitations |
 | Execute ARM move operations between subscriptions | https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-resource-group-and-subscription |
 | Check move support for Azure resource types | https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-support-resources |

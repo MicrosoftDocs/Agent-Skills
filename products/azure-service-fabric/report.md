@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 401
+- **Updated Pages**: 0
+- **Unchanged**: 404
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-fabric/azure-service-fabric.csv`
 
@@ -76,15 +76,6 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | *(Unclassified)* | 74 | 18.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [Overview of Azure clusters](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-azure-clusters-overview)
-  - Updated: 2026-03-22T08:00:00.000Z → 2026-04-27T17:05:00.000Z
-- [Patch cluster nodes (Windows)](https://learn.microsoft.com/en-us/azure/service-fabric/how-to-patch-cluster-nodes-windows)
-  - Updated: 2026-03-22T08:00:00.000Z → 2026-04-27T17:05:00.000Z
-- [Common questions](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-common-questions)
-  - Updated: 2026-03-22T08:00:00.000Z → 2026-04-27T17:05:00.000Z
 
 ## Classified Pages
 

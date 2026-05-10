@@ -1,9 +1,9 @@
 ---
 name: azure-deployment-environments
-description: Expert knowledge for Azure Deployment Environments development including troubleshooting, best practices, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when defining environment.yaml, ADE catalogs, managed identities/RBAC, custom images, or CI/CD pipelines, and other Azure Deployment Environments related development tasks. Not for Azure DevTest Labs (use azure-devtest-labs), Azure Dev Box (use azure-dev-box), Azure Integration Environments (use azure-integration-environments), Azure Managed Applications (use azure-managed-applications).
+description: Expert knowledge for Azure Deployment Environments development including troubleshooting, best practices, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when defining environment.yaml, configuring ADE catalogs, using ADE CLI, custom images, or CI/CD pipelines, and other Azure Deployment Environments related development tasks. Not for Azure DevTest Labs (use azure-devtest-labs), Azure Dev Box (use azure-dev-box), Azure Managed Applications (use azure-managed-applications), Azure Integration Environments (use azure-integration-environments).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-03"
+  generated_at: "2026-05-10"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Deployment Environments Skill
@@ -27,7 +27,7 @@ This skill requires **network access** to fetch documentation content:
 | Troubleshooting | L35-L39 | Diagnosing and resolving Azure Deployment Environments custom image deployment failures, including common error codes, validation issues, and configuration or image compatibility problems. |
 | Best Practices | L40-L45 | Guidance on structuring ADE catalogs (repos, templates, parameters) and designing resilient, highly available deployment environments with Azure best practices. |
 | Limits & Quotas | L46-L50 | How to view current Azure Deployment Environments quotas/capacity, understand default limits, and request increases for org, project, and environment resource usage. |
-| Security | L51-L58 | RBAC and role planning, secure API auth, configuring managed identities, and assigning ADE built-in roles/scopes for secure access control and deployments |
+| Security | L51-L58 | RBAC and role planning, secure REST API auth, configuring managed identities, and assigning ADE built-in roles/scopes for access control and secure deployments. |
 | Configuration | L59-L66 | Defining environment.yaml schemas, configuring ADE environment definitions, and building/using custom container images (including required CLI env vars) for Azure Deployment Environments. |
 | Integrations & Coding Patterns | L67-L71 | Using the ADE CLI to build, publish, and manage custom environment images, automate image pipelines, and integrate ADE image workflows into CI/CD and DevOps processes |
 | Deployment | L72-L76 | How to integrate Azure Deployment Environments with CI/CD tools like Azure Pipelines and GitHub Actions, including configuring pipelines to create, update, and delete ADE environments. |

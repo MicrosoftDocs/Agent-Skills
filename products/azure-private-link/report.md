@@ -1,11 +1,11 @@
 ---
-generated_at: '2026-05-03'
+generated_at: '2026-05-10'
 category_descriptions:
   limits-quotas: Info on Private Link service availability per resource type and how
     to raise per‑VNet Private Endpoint limits using High Scale configuration
-  configuration: Configuring and managing Private Endpoints/Link services, DNS, subnet/network
-    policies, SNAT, monitoring, and diagnostic logs for secure Azure Private Link
-    connectivity.
+  configuration: Configuring and managing Private Endpoints/Link services, DNS, SNAT,
+    NSGs, network security perimeters, and monitoring/logging settings for Azure Private
+    Link traffic.
   security: RBAC setup for Private Link/Endpoint and Network Security Perimeter operations,
     plus inspecting and controlling Private Endpoint traffic with Azure Firewall.
   decision-making: Guidance on choosing perimeter access modes and designing Azure
@@ -19,17 +19,17 @@ category_descriptions:
     with on-premises or hybrid networks
 skill_description: Expert knowledge for Azure Private Link development including best
   practices, decision making, architecture & design patterns, limits & quotas, security,
-  and configuration. Use when configuring Private Endpoints, DNS and Azure Private
-  Resolver, High Scale limits, RBAC, or Azure Firewall traffic control, and other
-  Azure Private Link related development tasks. Not for Azure Virtual Network (use
-  azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager),
-  Azure VPN Gateway (use azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute).
-use_when: Use when configuring Private Endpoints, DNS and Azure Private Resolver,
-  High Scale limits, RBAC, or Azure Firewall traffic control, and other Azure Private
+  and configuration. Use when configuring Private Endpoints, DNS/Private Resolver,
+  High Scale limits, Azure Firewall inspection, or NSP access modes, and other Azure
+  Private Link related development tasks. Not for Azure Virtual Network (use azure-virtual-network),
+  Azure VPN Gateway (use azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute),
+  Azure Virtual WAN (use azure-virtual-wan).
+use_when: Use when configuring Private Endpoints, DNS/Private Resolver, High Scale
+  limits, Azure Firewall inspection, or NSP access modes, and other Azure Private
   Link related development tasks.
 confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), Azure
-  Virtual Network Manager (use azure-virtual-network-manager), Azure VPN Gateway (use
-  azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute).
+  VPN Gateway (use azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute),
+  Azure Virtual WAN (use azure-virtual-wan).
 ---
 # Azure Private Link Crawl Report
 
@@ -43,8 +43,8 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 46
+- **Updated Pages**: 1
+- **Unchanged**: 47
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-private-link/azure-private-link.csv`
 
@@ -64,10 +64,8 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ### Updated Pages
 
-- [What is a network security perimeter?](https://learn.microsoft.com/en-us/azure/private-link/network-security-perimeter-concepts)
-  - Updated: 2025-08-01T08:00:00.000Z → 2026-04-20T11:11:00.000Z
-- [Transition to a network security perimeter](https://learn.microsoft.com/en-us/azure/private-link/network-security-perimeter-transition)
-  - Updated: 2025-08-15T08:00:00.000Z → 2026-04-28T22:22:00.000Z
+- [Private DNS zone values](https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-dns)
+  - Updated: 2026-04-17T08:00:00.000Z → 2026-05-05T08:00:00.000Z
 
 ## Classified Pages
 
@@ -75,7 +73,7 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 |-----------|------|------------|--------|
 | [Increase Private Endpoint virtual network limits](https://learn.microsoft.com/en-us/azure/private-link/increase-private-endpoint-vnet-limits) | limits-quotas | 0.95 | Explicitly discusses numeric limits (1,000 private endpoints per VNet, 4,000 across peered VNets) and how to increase them via High Scale Private Endpoints; this is precise quota information unique to the product. |
 | [RBAC permissions](https://learn.microsoft.com/en-us/azure/private-link/rbac-permissions) | security | 0.90 | Explicitly lists required Azure RBAC built-in roles and custom role permissions for creating private endpoints and Private Link services; this is product-specific security configuration detail. |
-| [Private DNS zone values](https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-dns) | configuration | 0.86 | The page lists precise private DNS zone names and record patterns required for each Azure service that supports private endpoints (for example, specific FQDN suffixes and zone names like privatelink.<service>.windows.net). These are product-specific configuration values that an LLM is unlikely to know reliably from training, and they are organized as concrete DNS settings rather than conceptual guidance. |
+| [Private DNS zone values](https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-dns) | configuration | 0.86 | The page lists product-specific private DNS zone names and FQDN patterns for multiple Azure services that support private endpoints. These are concrete configuration values (exact zone names, record formats) required to correctly resolve private endpoint IPs, which qualify as expert configuration knowledge beyond generic DNS concepts. |
 | [Role-based access control permissions](https://learn.microsoft.com/en-us/azure/private-link/network-security-perimeter-role-based-access-control-requirements) | security | 0.85 | Describes specific RBAC actions and permissions required for NSP profiles, rules, associations, and diagnostics, which is detailed security configuration guidance. |
 | [Availability](https://learn.microsoft.com/en-us/azure/private-link/availability) | limits-quotas | 0.70 | Describes which Azure services support Private Link; typically implemented as a service support/availability matrix, which is product-specific reference data not inferable from training. |
 | [Cost optimization](https://learn.microsoft.com/en-us/azure/private-link/private-link-cost-optimization) | decision-making | 0.70 | Cost optimization guidance for a specific service usually includes scenario-based recommendations and trade-offs between security and cost, qualifying as decision-making content. |

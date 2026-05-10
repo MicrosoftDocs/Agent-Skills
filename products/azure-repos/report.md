@@ -48,8 +48,8 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Artifacts (us
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 5
-- **Unchanged**: 201
+- **Updated Pages**: 0
+- **Unchanged**: 206
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-repos/azure-repos.csv`
 
@@ -68,19 +68,6 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Artifacts (us
 | *(Unclassified)* | 74 | 35.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [Go install using Azure Repos](https://learn.microsoft.com/en-us/azure/devops/repos/git/go-install?view=azure-devops)
-  - Updated: 2026-02-25T14:06:00.000Z → 2026-05-01T01:05:00.000Z
-- [Frequently asked questions](https://learn.microsoft.com/en-us/azure/devops/repos/git/howto?view=azure-devops)
-  - Updated: 2026-02-24T02:03:00Z → 2026-04-22T21:02:00Z
-- [Authenticate with SSH](https://learn.microsoft.com/en-us/azure/devops/repos/git/use-ssh-keys-to-authenticate?view=azure-devops)
-  - Updated: 2025-12-09T02:04:00.000Z → 2026-04-27T08:00:00.000Z
-- [Configure GitHub Advanced Security](https://learn.microsoft.com/en-us/azure/devops/repos/security/configure-github-advanced-security-features?view=azure-devops)
-  - Updated: 2026-04-14T13:04:00.000Z → 2026-05-01T17:06:00.000Z
-- [Configure code scanning](https://learn.microsoft.com/en-us/azure/devops/repos/security/github-advanced-security-code-scanning?view=azure-devops)
-  - Updated: 2026-04-14T13:04:00.000Z → 2026-05-01T17:06:00.000Z
 
 ## Classified Pages
 

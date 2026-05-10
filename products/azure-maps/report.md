@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-12'
+generated_at: '2026-05-10'
 category_descriptions:
   integrations: Patterns and code for integrating Azure Maps into web/mobile/Power
     BI apps, using REST/SDKs, layers, drawing, search/routing/weather, Spatial IO,
@@ -49,8 +49,8 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 147
+- **Updated Pages**: 1
+- **Unchanged**: 146
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-maps/azure-maps.csv`
 
@@ -69,6 +69,11 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | *(Unclassified)* | 32 | 21.8% |
 
 ## Changes
+
+### Updated Pages
+
+- [Map control](https://learn.microsoft.com/en-us/azure/azure-maps/release-notes-map-control)
+  - Updated: 2026-04-10T08:00:00.000Z → 2026-05-06T08:00:00.000Z
 
 ## Classified Pages
 
@@ -218,7 +223,6 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | [Create a store locator](https://learn.microsoft.com/en-us/azure/azure-maps/tutorial-create-store-locator) | 0.20 | Store locator tutorial; step-by-step app creation, not deep configuration, limits, or troubleshooting content. |
 | [Create a web app](https://learn.microsoft.com/en-us/azure/azure-maps/quick-demo-map-app) | 0.20 | Quickstart tutorial for building an interactive map; primarily step-by-step usage, not configuration matrices, limits, or troubleshooting. |
 | [Geographic coverage](https://learn.microsoft.com/en-us/azure/azure-maps/geographic-coverage) | 0.20 | Described as providing links to geographic coverage information. Likely a navigation/overview page pointing to external coverage details rather than containing concrete limits, configuration parameters, or decision matrices itself. Does not clearly match any expert-knowledge sub-skill type from the summary. |
-| [Map control](https://learn.microsoft.com/en-us/azure/azure-maps/release-notes-map-control) | 0.20 | Release notes describe feature additions and changes over time but typically do not provide stable, reusable expert knowledge such as limits, configuration matrices, error-code mappings, or decision criteria. The summary indicates it's a change log for the Azure Maps Web SDK Map Control, not a reference for quotas, configuration parameters, troubleshooting, or best-practice guidance. |
 | [Maps API](https://learn.microsoft.com/en-us/azure/azure-maps/rest-api-azure-maps) | 0.20 | Page is a navigational/overview index of Azure Maps REST APIs with service descriptions and links, but no concrete limits, configuration tables, error codes, or other product-specific expert details. |
 | [Multiple routes by mode of travel](https://learn.microsoft.com/en-us/azure/azure-maps/tutorial-prioritized-routes) | 0.20 | Tutorial for multiple travel modes; appears as example usage without detailed configuration matrices or limits. |
 | [On-object interaction](https://learn.microsoft.com/en-us/azure/azure-maps/power-bi-visual-on-object-interaction) | 0.20 | On-object interaction article describes UI formatting interactions; no indication of detailed configuration parameters or expert constraints. |
@@ -226,3 +230,4 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | [Search for point of interest](https://learn.microsoft.com/en-us/azure/azure-maps/tutorial-search-location) | 0.20 | Tutorial on searching locations; focuses on example usage rather than product-specific limits, configuration options, or error codes. |
 | [What is Azure Maps?](https://learn.microsoft.com/en-us/azure/azure-maps/about-azure-maps) | 0.20 | High-level product overview of Azure Maps services and capabilities without detailed limits, configuration tables, or error mappings. |
 | [Drawing Tools module](https://learn.microsoft.com/en-us/azure/azure-maps/release-notes-drawing-tools-module) | - | Release notes summary without exposed technical details, configuration parameters, limits, or troubleshooting information; no concrete expert knowledge per the defined categories. |
+| [Map control](https://learn.microsoft.com/en-us/azure/azure-maps/release-notes-map-control) | - | Release notes list feature changes and fixes but are not a stable source of reusable expert knowledge like limits, configuration matrices, or troubleshooting mappings as defined by the sub-skill types. |

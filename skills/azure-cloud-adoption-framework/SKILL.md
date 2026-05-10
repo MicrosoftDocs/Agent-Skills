@@ -3,7 +3,7 @@ name: azure-cloud-adoption-framework
 description: Expert guidance for planning and executing cloud adoption using Azure Cloud Adoption Framework. Covers strategy, planning, readiness & landing zones, adoption patterns, governance, security, operations & management, organization & teams, and adoption scenarios. Use when adopting AKS/AVS/AVD, migrating SAP or Oracle, designing landing zones, or governing AI agent workloads, and other Azure Cloud Adoption Framework related development tasks.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-03"
+  generated_at: "2026-05-10"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Cloud Adoption Framework Skill
@@ -28,11 +28,11 @@ This skill requires **network access** to fetch documentation content:
 | Planning | L55-L82 | Planning cloud adoption, migration waves, modernization roadmaps, cost/skills readiness, and detailed plans for workloads (AI, data, Oracle, SAP, AVS, AVD, analytics) on Azure. |
 | Readiness & Landing Zones | L83-L204 | Designing and operating Azure landing zones: network topology, identity, subscriptions, governance, automation/DevOps, multitenant setups, and workload‑specific patterns (SAP, AVS, Oracle, Arc, AVD, App Service, ACA, APIM). |
 | Adoption Patterns | L205-L229 | Patterns and step-by-step guides for planning, migrating, modernizing, and operating workloads on Azure (apps, data, AI agents, AVD, SAP, Oracle, VMware) using CAF best practices. |
-| Governance | L230-L261 | Cloud and data governance for Azure: policies, guardrails, cost control, tagging, compliance, responsible AI, landing zones, Arc, analytics, SAP, AKS, and API/App Service governance. |
-| Security | L262-L292 | Security design and governance for Azure landing zones, including Zero Trust, IAM, encryption, DevOps, AKS, analytics, SAP/Oracle, Arc, and ongoing security operations. |
-| Operations & Management | L293-L334 | Operating, monitoring, securing, and optimizing Azure environments and workloads (including AI, AKS, Arc, AVS, Oracle, SAP, analytics) plus BCDR, DevOps, and platform-level governance. |
-| Organization & Teams | L335-L353 | Designing org structures, roles, RACI, and team topologies (governance, ops, data/analytics, security, cost, DevOps, AI agents) needed to run and scale Azure cloud adoption. |
-| Adoption Scenarios | L354-L418 | CAF-aligned landing zone, security, governance, networking, identity, automation, BCDR, and operations guidance for adopting AKS, ARO, AIS, AVD/Citrix, AVS, Oracle, SAP, RHEL, and AI agents on Azure |
+| Governance | L230-L260 | Cloud and data governance for Azure: policies, guardrails, cost control, tagging, compliance, responsible AI, landing zones, Arc, analytics, SAP, AKS, and API/App Service governance. |
+| Security | L261-L291 | Security design and governance for Azure landing zones, including Zero Trust, IAM, encryption, DevOps, AKS, analytics, SAP/Oracle, Arc, and ongoing security operations. |
+| Operations & Management | L292-L333 | Operating, monitoring, securing, and optimizing Azure environments and workloads (including AI, AKS, Arc, AVS, Oracle, SAP, analytics) plus BCDR, DevOps, and platform-level governance. |
+| Organization & Teams | L334-L352 | Designing org structures, roles, RACI, and team topologies (governance, ops, data/analytics, security, cost, DevOps, AI agents) needed to run and scale Azure cloud adoption. |
+| Adoption Scenarios | L353-L417 | CAF-aligned landing zone, security, governance, networking, identity, automation, BCDR, and operations guidance for adopting AKS, ARO, AIS, AVD/Citrix, AVS, Oracle, SAP, RHEL, and AI agents on Azure |
 
 ### Strategy
 | Topic | URL |
@@ -247,7 +247,6 @@ This skill requires **network access** to fetch documentation content:
 | Migrate custom Azure landing zone policies to built-ins | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/migrate-azure-landing-zone-policies |
 | Adopt a service enablement framework for Azure services | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/service-enablement-framework |
 | Update Azure landing zone custom policies safely | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/update-custom-policies |
-| Manage Azure Policy at scale with Enterprise Policy as Code | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/policy-management/enterprise-policy-as-code |
 | Implement cost governance for AKS using Kubecost | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/aks/cost-governance-with-kubecost |
 | Establish governance for API Management landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/api-management/governance |
 | Define governance for App Service landing zone deployments | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/app-services/governance |

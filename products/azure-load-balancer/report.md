@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-03'
+generated_at: '2026-05-10'
 category_descriptions:
   configuration: 'Configuring Azure Load Balancer behavior: backends/frontends (incl.
     cross-subscription, IP-based, outbound-only), rules, health probes, traffic distribution,
@@ -76,8 +76,8 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 
 ### Updated Pages
 
-- [Migrate AWS Network Load Balancing](https://learn.microsoft.com/en-us/azure/load-balancer/network-load-balancing-aws-to-azure-how-to)
-  - Updated: 2025-10-02T22:32:00.000Z → 2026-04-03T08:00:00.000Z
+- [Multiple frontends](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-multivip-overview)
+  - Updated: 2024-04-14T11:33:00.000Z → 2026-05-04T22:15:00.000Z
 
 ## Classified Pages
 
@@ -137,7 +137,6 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Manage Load Balancer health status](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-manage-health-status) | 0.40 | Describes the health status feature and its purpose. Summary does not indicate detailed error codes, configuration tables, or numeric thresholds; it appears more like a feature explanation than expert-level troubleshooting or configuration reference. |
 | [Components](https://learn.microsoft.com/en-us/azure/load-balancer/components) | 0.35 | Explains key components (frontends, backend pools, rules) conceptually; not primarily a detailed configuration parameter reference. |
 | [Distribution modes](https://learn.microsoft.com/en-us/azure/load-balancer/distribution-mode-concepts) | 0.35 | Describes distribution modes and behavior; likely conceptual guidance without detailed numeric thresholds or config tables. |
-| [Multiple frontends](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-multivip-overview) | 0.35 | Conceptual description of multiple frontends; focuses on fundamentals rather than detailed configuration parameters or decision matrices. |
 | [Add multiple Virtual Machine Scale Set instances behind one Azure Load Balancer](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-multiple-virtual-machine-scale-set) | 0.30 | How-to for configuring multiple VM scale sets behind one load balancer; likely procedural without detailed config parameter tables or limits. |
 | [Administrative state](https://learn.microsoft.com/en-us/azure/load-balancer/admin-state-overview) | 0.30 | Explains the Admin State concept and scenarios; likely descriptive without detailed parameter tables or numeric ranges. |
 | [Azure Monitor Insights for Load Balancer](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-insights) | 0.30 | Describes insights visualizations and how they help with design decisions and fault localization, but summary suggests a conceptual/UX overview of Azure Monitor for networks rather than detailed error codes, limits, or configuration parameter tables. |
@@ -170,6 +169,7 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Global load balancer overview](https://learn.microsoft.com/en-us/azure/load-balancer/cross-region-overview) | 0.20 | Global load balancer overview describing capabilities and basic configuration rule; no detailed limits, decision matrices, or config tables. |
 | [Load balance VMs with multiple availability sets](https://learn.microsoft.com/en-us/azure/load-balancer/tutorial-multi-availability-sets-portal) | 0.20 | Tutorial for using multiple availability sets in a backend pool; appears to be a how-to without deep configuration tables or error mappings. |
 | [Load balance a VM within a specific availability zone](https://learn.microsoft.com/en-us/azure/load-balancer/tutorial-load-balancer-standard-public-zonal-portal) | 0.20 | Tutorial for creating a zonal Standard Load Balancer; primarily procedural steps without detailed configuration matrices or limits. |
+| [Multiple frontends](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-multivip-overview) | 0.20 | Content is an architectural/conceptual overview of using multiple frontends on Azure Load Balancer, describing when they are useful and general design considerations. It does not expose concrete limits, configuration parameter tables, error codes, or quantified decision matrices that go beyond what an LLM would already know. |
 | [Partners](https://learn.microsoft.com/en-us/azure/load-balancer/gateway-partners) | 0.20 | Partner listing for Gateway Load Balancer; essentially ecosystem/marketing content without technical configuration or limits. |
 | [What is Azure Load Balancer?](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-overview) | 0.20 | High-level overview of Azure Load Balancer features and scenarios; no detailed limits, configuration tables, or error mappings. |
 | [What's new?](https://learn.microsoft.com/en-us/azure/load-balancer/whats-new) | 0.20 | What's new / release notes index; mostly announcements and links, not structured limits, configuration, or troubleshooting guidance. |

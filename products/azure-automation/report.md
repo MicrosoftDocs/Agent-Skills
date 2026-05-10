@@ -51,8 +51,8 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 30
-- **Unchanged**: 85
+- **Updated Pages**: 0
+- **Unchanged**: 115
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-automation/azure-automation.csv`
 
@@ -71,50 +71,6 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 | *(Unclassified)* | 22 | 19.1% |
 
 ## Changes
-
-### Updated Pages
-
-- [Run runbooks on Hybrid Runbook Worker](https://learn.microsoft.com/en-us/azure/automation/automation-hrw-run-runbooks)
-  - Updated: 2025-07-29T08:00:00.000Z → 2026-04-15T08:00:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/automation/automation-dsc-overview)
-  - Updated: 2026-03-05T08:00:00.000Z → 2026-04-24T08:00:00.000Z
-- [Get started with State Configuration](https://learn.microsoft.com/en-us/azure/automation/automation-dsc-getting-started)
-  - Updated: 2025-11-17T08:00:00.000Z → 2026-04-15T08:00:00.000Z
-- [Enable State Configuration](https://learn.microsoft.com/en-us/azure/automation/automation-dsc-onboarding)
-  - Updated: 2025-04-01T08:00:00.000Z → 2026-04-15T08:00:00.000Z
-- [Configure servers to a desired state and manage drift](https://learn.microsoft.com/en-us/azure/automation/tutorial-configure-servers-desired-state)
-  - Updated: 2026-04-14T11:11:00.000Z → 2026-04-24T08:00:00.000Z
-- [Compile DSC configurations](https://learn.microsoft.com/en-us/azure/automation/automation-dsc-compile)
-  - Updated: 2025-11-17T08:00:00.000Z → 2026-04-15T08:00:00.000Z
-- [Work with State Configuration extension version history](https://learn.microsoft.com/en-us/azure/automation/automation-dsc-extension-history)
-  - Updated: 2026-03-05T08:00:00.000Z → 2026-04-24T08:00:00.000Z
-- [Troubleshoot Managed Identity Issues](https://learn.microsoft.com/en-us/azure/automation/troubleshoot/managed-identity)
-  - Updated: 2024-04-23T11:15:00.000Z → 2026-04-20T11:11:00.000Z
-- [Troubleshoot Shared Resources Issues](https://learn.microsoft.com/en-us/azure/automation/troubleshoot/shared-resources)
-  - Updated: 2023-10-03T22:21:00.000Z → 2026-04-20T11:11:00.000Z
-- [Troubleshoot Runbook Issues](https://learn.microsoft.com/en-us/azure/automation/troubleshoot/runbooks)
-  - Updated: 2024-05-09T08:00:00.000Z → 2026-04-20T11:11:00.000Z
-- [Troubleshoot Extension-based Hybrid Runbook Worker Issues](https://learn.microsoft.com/en-us/azure/automation/troubleshoot/extension-based-hybrid-runbook-worker)
-  - Updated: 2025-05-08T08:00:00.000Z → 2026-04-15T08:00:00.000Z
-- [Troubleshoot Agent-based Hybrid Runbook Worker Issues](https://learn.microsoft.com/en-us/azure/automation/troubleshoot/hybrid-runbook-worker)
-  - Updated: 2023-09-17T08:00:00.000Z → 2026-04-15T08:00:00.000Z
-- [Troubleshoot State Configuration Issues](https://learn.microsoft.com/en-us/azure/automation/troubleshoot/desired-state-configuration)
-  - Updated: 2024-10-22T08:00:00.000Z → 2026-04-15T08:00:00.000Z
-- [Move Automation account to another subscription](https://learn.microsoft.com/en-us/azure/automation/how-to/move-account)
-  - Updated: 2025-11-17T08:00:00.000Z → 2026-04-20T11:11:00.000Z
-- [Context switching in Azure Automation](https://learn.microsoft.com/en-us/azure/automation/context-switching)
-  - Updated: 2025-11-17T08:00:00.000Z → 2026-04-20T11:11:00.000Z
-- [Manage modules in Azure Automation](https://learn.microsoft.com/en-us/azure/automation/shared-resources/modules)
-  - Updated: 2025-05-27T08:00:00.000Z → 2026-04-15T08:00:00.000Z
-- [Update Azure PowerShell modules](https://learn.microsoft.com/en-us/azure/automation/automation-update-azure-modules)
-  - Updated: 2025-11-17T08:00:00.000Z → 2026-04-20T11:11:00.000Z
-- [Use existing runbooks and modules](https://learn.microsoft.com/en-us/azure/automation/automation-runbook-gallery)
-  - Updated: 2025-11-17T08:00:00.000Z → 2026-04-15T08:00:00.000Z
-- [Manage automation limits and quotas](https://learn.microsoft.com/en-us/azure/automation/automation-limits-quotas)
-  - Updated: 2025-01-28T12:10:00.000Z → 2026-04-15T08:00:00.000Z
-- [Start a runbook from a webhook](https://learn.microsoft.com/en-us/azure/automation/automation-webhooks)
-  - Updated: 2025-07-15T11:09:00.000Z → 2026-04-15T08:00:00.000Z
-- *...and 10 more*
 
 ## Classified Pages
 

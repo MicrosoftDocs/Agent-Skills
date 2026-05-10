@@ -1,9 +1,9 @@
 ---
 name: azure-managed-grafana
-description: Expert knowledge for Azure Managed Grafana development including troubleshooting, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when integrating Azure Monitor/App Insights, Prometheus/AKS, configuring plugins/alerts, or enabling zone-redundant workspaces, and other Azure Managed Grafana related development tasks. Not for Azure Monitor (use azure-monitor), Azure Data Explorer (use azure-data-explorer).
+description: Expert knowledge for Azure Managed Grafana development including troubleshooting, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when wiring Azure Monitor/Prometheus data, configuring workspaces, private endpoints, email alerts, or image/report rendering, and other Azure Managed Grafana related development tasks. Not for Azure Monitor (use azure-monitor), Azure Sre Agent (use azure-sre-agent).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-03"
+  generated_at: "2026-05-10"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Managed Grafana Skill
@@ -29,7 +29,7 @@ This skill requires **network access** to fetch documentation content:
 | Limits & Quotas | L49-L54 | Using image/report rendering features in Azure Managed Grafana and understanding its service limits, quotas, and operational constraints |
 | Security | L55-L68 | Securing Managed Grafana: auth/permissions, roles and team sync, private endpoints and outbound IPs, data encryption, service accounts/tokens, and security best practices. |
 | Configuration | L69-L77 | Configuring Managed Grafana workspaces: instance settings, plugins, metrics via Azure Monitor, diagnostic logs, and SMTP email alert setup. |
-| Integrations & Coding Patterns | L78-L92 | Patterns and how-tos for wiring Managed Grafana to Azure data/AI services: MCP and AI Foundry, Prometheus/AKS, Azure Monitor, App Insights, Data Explorer, alerts, and data source plugins. |
+| Integrations & Coding Patterns | L78-L92 | Integrating Managed Grafana with Azure/AKS Prometheus, Azure Monitor, App Insights, Azure Data Explorer, MCP/Azure AI Foundry, and managing data source plugins and alert flows. |
 | Deployment | L93-L96 | Designing highly available Azure Managed Grafana workspaces, including reliability features, SLAs, and enabling zone-redundant deployments for resiliency. |
 
 ### Troubleshooting
@@ -81,7 +81,7 @@ This skill requires **network access** to fetch documentation content:
 | Monitor Agent Framework workflows in Grafana | https://learn.microsoft.com/en-us/azure/managed-grafana/agent-framework-workflow-dashboard |
 | Build Azure AI Foundry monitoring dashboards in Grafana | https://learn.microsoft.com/en-us/azure/managed-grafana/azure-ai-foundry-dashboard |
 | Use the Azure Managed Grafana MCP server endpoint | https://learn.microsoft.com/en-us/azure/managed-grafana/grafana-mcp-server |
-| Ingest telemetry into App Insights for Grafana | https://learn.microsoft.com/en-us/azure/managed-grafana/grafana-opentelemetry-app-insights |
+| Ingest telemetry into App Insights via OpenTelemetry Collector | https://learn.microsoft.com/en-us/azure/managed-grafana/grafana-opentelemetry-app-insights |
 | Configure bundled Prometheus integration in Managed Grafana | https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-bundled-prometheus |
 | Integrate Azure Managed Grafana MCP with Azure AI Foundry agents | https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-configure-mcp-for-ai-foundry |
 | Add Azure Data Explorer as a Grafana data source | https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-connect-azure-data-explorer |

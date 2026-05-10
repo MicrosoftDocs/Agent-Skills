@@ -46,9 +46,9 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure F
 - **Unclassified**: 1
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 2
-- **Unchanged**: 20
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 23
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-elastic-san/azure-elastic-san.csv`
 
@@ -67,17 +67,6 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure F
 | *(Unclassified)* | 1 | 4.3% |
 
 ## Changes
-
-### New Pages
-
-- [Transition IQN Naming Authority on Connected Volumes](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-transition-iqn-naming-authority)
-
-### Updated Pages
-
-- [Best practices](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-best-practices)
-  - Updated: 2026-01-13T12:18:00.000Z → 2026-04-24T06:15:00.000Z
-- [Scale targets](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-scale-targets)
-  - Updated: 2026-01-09T23:14:00.000Z → 2026-04-24T06:15:00.000Z
 
 ## Classified Pages
 

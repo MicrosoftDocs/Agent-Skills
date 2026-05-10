@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Database for MariaDB (use azure-database-maria
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 177
+- **Updated Pages**: 0
+- **Unchanged**: 179
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-database-mysql/azure-database-mysql.csv`
 
@@ -75,13 +75,6 @@ confusable_not_for: Not for Azure Database for MariaDB (use azure-database-maria
 | *(Unclassified)* | 64 | 35.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [High availability](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-high-availability)
-  - Updated: 2026-03-30T22:08:00.000Z → 2026-04-22T08:00:00.000Z
-- [Version support policy](https://learn.microsoft.com/en-us/azure/mysql/concepts-version-policy)
-  - Updated: 2026-03-27T22:08:00.000Z → 2026-04-16T08:00:00.000Z
 
 ## Classified Pages
 

@@ -39,10 +39,10 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision).
 - **Unclassified**: 43
 
 ### Incremental Update
-- **New Pages**: 53
-- **Updated Pages**: 2
-- **Unchanged**: 12
-- **Deleted Pages**: 65
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 67
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-video-indexer/azure-video-indexer.csv`
 
 ## Classification Statistics
@@ -59,61 +59,6 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision).
 | *(Unclassified)* | 43 | 64.2% |
 
 ## Changes
-
-### New Pages
-
-- [Translate transcripts](https://learn.microsoft.com/en-us/azure/azure-video-indexer/transcription-translation-lid-insight)
-- [Summaries overview](https://learn.microsoft.com/en-us/azure/azure-video-indexer/text-summarization-overview)
-- [Generate summaries](https://learn.microsoft.com/en-us/azure/azure-video-indexer/text-summarization-task)
-- [Create prompts](https://learn.microsoft.com/en-us/azure/azure-video-indexer/prompt-overview)
-- [Connect to other AI models](https://learn.microsoft.com/en-us/azure/azure-video-indexer/generative_ai_with_vi)
-- [Bring your own model](https://learn.microsoft.com/en-us/azure/azure-video-indexer/bring-your-own-model-overview)
-- [Speech training best practices](https://learn.microsoft.com/en-us/azure/azure-video-indexer/speech-model-training-best-practices)
-- [Speech model](https://learn.microsoft.com/en-us/azure/azure-video-indexer/customize-speech-model-how-to)
-- [Language model](https://learn.microsoft.com/en-us/azure/azure-video-indexer/customize-language-model-how-to)
-- [Person model](https://learn.microsoft.com/en-us/azure/azure-video-indexer/customize-person-model-how-to)
-- [Brands model](https://learn.microsoft.com/en-us/azure/azure-video-indexer/customize-brands-model-how-to)
-- [Connect Azure OpenAI](https://learn.microsoft.com/en-us/azure/azure-video-indexer/connect-azure-open-ai-task)
-- [Connect Logic Apps](https://learn.microsoft.com/en-us/azure/azure-video-indexer/logic-apps-connector-arm-accounts)
-- [View logs](https://learn.microsoft.com/en-us/azure/azure-video-indexer/monitor-video-indexer)
-- [Manage account access](https://learn.microsoft.com/en-us/azure/azure-video-indexer/restricted-viewer-role)
-- [Plan multitenancy](https://learn.microsoft.com/en-us/azure/azure-video-indexer/manage-multiple-tenants)
-- [Switch tenants](https://learn.microsoft.com/en-us/azure/azure-video-indexer/switch-tenants-portal)
-- [Disaster recovery](https://learn.microsoft.com/en-us/azure/azure-video-indexer/video-indexer-disaster-recovery)
-- [Azure AI Video Indexer enabled by Azure Arc](https://learn.microsoft.com/en-us/azure/azure-video-indexer/arc/)
-- [Azure AI Video Indexer documentation](https://learn.microsoft.com/en-us/azure/azure-video-indexer/cloud/)
-- *...and 33 more*
-
-### Updated Pages
-
-- [Embed widgets](https://learn.microsoft.com/en-us/azure/azure-video-indexer/video-indexer-embed-widgets)
-  - Updated: 2025-10-06T08:00:00.000Z → 2026-04-29T17:11:00.000Z
-- [Release notes](https://learn.microsoft.com/en-us/azure/azure-video-indexer/release-notes)
-  - Updated: 2026-03-31T08:00:00.000Z → 2026-05-01T08:00:00.000Z
-
-### Deleted Pages
-
-- ~~AI Agents for detection~~ (https://learn.microsoft.com/en-us/azure/azure-video-indexer/agents-overview)
-- ~~VI enabled by Arc~~ (https://learn.microsoft.com/en-us/azure/azure-video-indexer/arc/azure-video-indexer-enabled-by-arc-overview)
-- ~~Try VI enabled by Arc~~ (https://learn.microsoft.com/en-us/azure/azure-video-indexer/arc/azure-video-indexer-enabled-by-arc-quickstart)
-- ~~VI enabled by Arc troubleshooting~~ (https://learn.microsoft.com/en-us/azure/azure-video-indexer/arc/azure-video-indexer-enabled-by-arc-troubleshooting)
-- ~~Audio effects detection insights~~ (https://learn.microsoft.com/en-us/azure/azure-video-indexer/audio-effects-detection-insight)
-- ~~Bring Your Own AI model~~ (https://learn.microsoft.com/en-us/azure/azure-video-indexer/bring-your-own-model-overview)
-- ~~Clapper board detection insights~~ (https://learn.microsoft.com/en-us/azure/azure-video-indexer/clapper-board-insight)
-- ~~Create an account connected to Azure OpenAI~~ (https://learn.microsoft.com/en-us/azure/azure-video-indexer/connect-azure-open-ai-task)
-- ~~Use at scale~~ (https://learn.microsoft.com/en-us/azure/azure-video-indexer/considerations-when-use-at-scale)
-- ~~Create an account~~ (https://learn.microsoft.com/en-us/azure/azure-video-indexer/create-account)
-- ~~Customize brands model~~ (https://learn.microsoft.com/en-us/azure/azure-video-indexer/customize-brands-model-how-to)
-- ~~Customize language model~~ (https://learn.microsoft.com/en-us/azure/azure-video-indexer/customize-language-model-how-to)
-- ~~Customize person model~~ (https://learn.microsoft.com/en-us/azure/azure-video-indexer/customize-person-model-how-to)
-- ~~Customize speech model~~ (https://learn.microsoft.com/en-us/azure/azure-video-indexer/customize-speech-model-how-to)
-- ~~Deploy using ARM template~~ (https://learn.microsoft.com/en-us/azure/azure-video-indexer/deploy-with-arm-template)
-- ~~Deploy using Bicep~~ (https://learn.microsoft.com/en-us/azure/azure-video-indexer/deploy-with-bicep)
-- ~~Detect textual logo~~ (https://learn.microsoft.com/en-us/azure/azure-video-indexer/detect-textual-logo)
-- ~~Color bar detection insights~~ (https://learn.microsoft.com/en-us/azure/azure-video-indexer/digital-patterns-color-bars-insight)
-- ~~View and update transcriptions~~ (https://learn.microsoft.com/en-us/azure/azure-video-indexer/edit-transcript-lines-portal)
-- ~~Faces detection insights~~ (https://learn.microsoft.com/en-us/azure/azure-video-indexer/face-detection-insight)
-- *...and 45 more*
 
 ## Classified Pages
 

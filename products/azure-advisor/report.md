@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-19'
+generated_at: '2026-05-10'
 category_descriptions:
   configuration: 'Setting up and customizing Azure Advisor: creating alerts (portal,
     ARM, Bicep), email digests, tag-based filtering, and using workbooks for monitoring
@@ -44,8 +44,8 @@ confusable_not_for: Not for Azure Cost Management (use azure-cost-management), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 32
+- **Updated Pages**: 1
+- **Unchanged**: 31
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-advisor/azure-advisor.csv`
 
@@ -62,6 +62,11 @@ confusable_not_for: Not for Azure Cost Management (use azure-cost-management), A
 | *(Unclassified)* | 7 | 21.9% |
 
 ## Changes
+
+### Updated Pages
+
+- [Advisor score](https://learn.microsoft.com/en-us/azure/advisor/advisor-score)
+  - Updated: 2025-03-20T22:01:00.000Z → 2026-05-07T12:04:00.000Z
 
 ## Classified Pages
 
@@ -97,9 +102,9 @@ confusable_not_for: Not for Azure Cost Management (use azure-cost-management), A
 
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
-| [Advisor score](https://learn.microsoft.com/en-us/azure/advisor/advisor-score) | 0.40 | Explains Advisor score and its logic conceptually; no clear indication of numeric thresholds, config parameters, or decision matrices. |
 | [Advisor portal basics](https://learn.microsoft.com/en-us/azure/advisor/advisor-get-started) | 0.30 | Portal getting-started guide; mostly navigation and basic usage. The 24-hour note is a single timing detail but not a structured limits/config reference. |
 | [Configuration](https://learn.microsoft.com/en-us/azure/advisor/view-recommendations) | 0.25 | Describes viewing and filtering recommendations to reduce noise; appears to be UI guidance without detailed config parameters or limits. |
+| [Advisor score](https://learn.microsoft.com/en-us/azure/advisor/advisor-score) | 0.20 | Page describes how Azure Advisor score measures optimization progress and category granularity but does not expose concrete limits, configuration tables, error codes, or decision matrices with quantified thresholds. It is primarily conceptual guidance, not detailed expert configuration, limits, or troubleshooting content. |
 | [Customize your view](https://learn.microsoft.com/en-us/azure/advisor/advisor-customize-view) | 0.20 | Page describes how to use UI filters and grouping in Azure Advisor. It is a usage/navigation guide without product-specific limits, configuration parameter tables, error codes, or decision matrices. |
 | [Use Service Upgrade and Retirement recommendations](https://learn.microsoft.com/en-us/azure/advisor/advisor-how-to-use-service-upgrade-retirement-recommendations) | 0.20 | Page explains how to view and act on Azure Advisor service upgrade/retirement recommendations but does not include numeric limits, configuration parameter tables, error-code-based troubleshooting, or detailed decision matrices with quantified trade-offs. It is primarily conceptual and procedural guidance rather than expert configuration, limits, or troubleshooting content. |
 | [What is Azure Advisor?](https://learn.microsoft.com/en-us/azure/advisor/advisor-overview) | 0.20 | High-level introduction and FAQ for Azure Advisor; primarily conceptual overview without detailed limits, configs, or error mappings. |

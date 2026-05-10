@@ -137,10 +137,12 @@
 | Node.js SDK usage and release notes for Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/sdk-nodejs |
 | Python SDK usage and release notes for Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/sdk-python |
 | Use Cosmos DB as ASP.NET session state and cache provider | https://learn.microsoft.com/en-us/azure/cosmos-db/session-state-and-caching-provider |
+| Use Azure Cosmos DB Shell command syntax and options | https://learn.microsoft.com/en-us/azure/cosmos-db/shell/command-reference |
 | Connect to Azure Cosmos DB for Table using the .NET SDK | https://learn.microsoft.com/en-us/azure/cosmos-db/table/how-to-dotnet-get-started |
 | Use transactional batch operations in Azure Cosmos DB SDKs | https://learn.microsoft.com/en-us/azure/cosmos-db/transactional-batch |
 | Integrate Vercel applications with Cosmos DB backends | https://learn.microsoft.com/en-us/azure/cosmos-db/vercel-integration |
-| Integrate Azure DocumentDB with LangChain and Semantic Kernel | https://learn.microsoft.com/en-us/azure/documentdb/ai-frameworks |
+| Use LangChain vector store with Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/build-rag-applications |
+| Build Haystack RAG pipelines with Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/build-rag-pipelines |
 | Index | https://learn.microsoft.com/en-us/azure/documentdb/commands/ |
 | Use the aggregate command in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/commands/aggregation/aggregate |
 | Use the count command in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/commands/aggregation/count |
@@ -266,6 +268,8 @@
 | Forward-fill values with $locf in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/window-operators/$locf |
 | Rank documents with $rank window operator in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/window-operators/$rank |
 | Shift windowed values with $shift in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/window-operators/$shift |
+| Persist LangGraph agent state in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/persist-agent-state |
+| Integrate LlamaIndex vector store with Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/query-knowledge-base |
 | Use the .NET/C# driver with Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-dotnet |
 | Use the Go driver with Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-go |
 | Use the Java driver with Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-java |

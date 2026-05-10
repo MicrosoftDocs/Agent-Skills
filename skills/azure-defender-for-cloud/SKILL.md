@@ -1,9 +1,9 @@
 ---
 name: azure-defender-for-cloud
-description: Expert knowledge for Azure Defender For Cloud development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when securing Azure VMs, AKS/containers, SQL/Storage, multi‑cloud connectors, or CI/CD DevOps integrations, and other Azure Defender For Cloud related development tasks. Not for Azure Defender For Iot (use azure-defender-for-iot), Azure DDos Protection (use azure-ddos-protection), Azure Firewall (use azure-firewall), Azure Security (use azure-security).
+description: Expert knowledge for Azure Defender For Cloud development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when enabling Defender for Servers/Containers, multicloud connectors, CI/CD integration, alerts, or vuln scanning, and other Azure Defender For Cloud related development tasks. Not for Azure Defender For Iot (use azure-defender-for-iot), Azure DDos Protection (use azure-ddos-protection), Azure External Attack Surface Management (use azure-external-attack-surface-management), Azure Security (use azure-security).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-03"
+  generated_at: "2026-05-10"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Defender For Cloud Skill
@@ -24,25 +24,24 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L65 | Diagnosing and fixing Defender for Cloud issues: alert validation/interpretation, connector/onboarding problems (AWS/GCP/APIs/SQL/K8s), deployment gaps, malware/vuln handling, and incident references. |
-| Best Practices | L66-L85 | Using Defender for Cloud to detect, prioritize, and remediate vulnerabilities, misconfigurations, secrets, and API/network/endpoint risks across VMs, containers, registries, CI/CD, and Kubernetes. |
-| Decision Making | L86-L104 | Guidance on choosing and planning Defender for Cloud plans, costs, portals, agents, and deployment options across servers, containers, storage, GCP, and regions, including migration decisions. |
-| Architecture & Design Patterns | L105-L113 | Architectural guidance for Defender for Servers/Containers: agentless scanning, malware/vuln detection on VMs/Kubernetes, data collection, residency, workspaces, and large-scale deployment. |
-| Limits & Quotas | L114-L123 | Limits, quotas, and prerequisites for Defender for Cloud features: free trials, data ingestion, APIs, DevOps, portal preview, alert export limits, and data collection extension changes. |
-| Security | L124-L202 | Security configuration, alerts, and recommendations for Defender for Cloud: threat detection, permissions/RBAC, CIEM, containers/Kubernetes, SQL/storage, APIs/AI, and multi-cloud connectors. |
-| Configuration | L203-L266 | Configuring Defender for Cloud features: onboarding, policies, alerts, exports, vulnerability/agentless scans, DevOps & container integrations, SQL/Storage settings, and cross-tenant/private link setup. |
-| Integrations & Coding Patterns | L267-L297 | Integrating Defender for Cloud with CI/CD, APIs, SIEM/ITSM, multi‑cloud logs, and partner tools, plus querying/exporting security data and automating tickets and deployments |
-| Deployment | L298-L325 | Deploying and managing Defender for Cloud protections (Containers, SQL, Storage, Servers) across AKS/EKS/GKE and hybrid environments using portal, CLI, IaC, policies, and support matrices. |
+| Troubleshooting | L37-L63 | Diagnosing, simulating, and fixing Defender for Cloud alerts, connectors, and deployments across Azure, AWS, GCP, Kubernetes, SQL, Storage, DNS, APIs, and endpoint coverage gaps. |
+| Best Practices | L64-L82 | Using Defender for Cloud to detect, prioritize, and remediate vulnerabilities, misconfigurations, secrets, and API/network/endpoint risks across VMs, containers, registries, CI/CD, and Kubernetes. |
+| Decision Making | L83-L102 | Guides for choosing and planning Defender for Cloud features, plans, costs, portals, agents, and migrations (Servers, Containers, Storage, GCP, regions, and chargeback). |
+| Architecture & Design Patterns | L103-L110 | Architectural guidance for Defender for Servers/Containers: agentless scanning, malware/vuln detection on VMs/Kubernetes, data collection, residency, workspaces, and large-scale deployment. |
+| Limits & Quotas | L111-L120 | Limits, quotas, and constraints for Defender for Cloud: data ingestion and free tiers, portal/DevOps support limits, alert export caps, trial restrictions, and data collection extension changes. |
+| Security | L121-L200 | Configuring and managing Defender for Cloud security: alerts, recommendations, permissions/RBAC, CIEM, storage/SQL/Kubernetes/container protection, AI/API security, and multi-cloud connectors. |
+| Configuration | L201-L263 | Configuring Defender for Cloud features: onboarding resources, setting policies, alerts, exports, vulnerability and malware scanning, DevOps/IaC integration, exemptions, and cross-tenant/private link setup. |
+| Integrations & Coding Patterns | L264-L293 | Integrating Defender for Cloud with CI/CD, APIs, SIEM/ITSM, multi‑cloud logs, and partner tools, plus querying/exporting security data and automating tickets and deployments |
+| Deployment | L294-L318 | How to deploy, enable, migrate, and scale Defender for Cloud plans (Servers, SQL, Storage, Containers, GHAS), including sensors, policies, IaC/CLI/PowerShell/REST, and support matrices. |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
 | Validate Defender for Cloud alert generation and coverage | https://learn.microsoft.com/en-us/azure/defender-for-cloud/alert-validation |
 | Interpret and respond to Defender for Cloud AI alerts | https://learn.microsoft.com/en-us/azure/defender-for-cloud/alerts-ai-workloads |
+| Diagnose and simulate Kubernetes alerts in Defender for Containers | https://learn.microsoft.com/en-us/azure/defender-for-cloud/alerts-containers |
 | Trigger and validate Defender for APIs alerts | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-apis-validation |
-| Verify Defender for Containers deployment on EKS | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-aws-verify |
-| Verify Defender for Containers deployment on AKS | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-azure-verify |
-| Verify Defender for Containers deployment on GKE | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-gcp-verify |
+| Troubleshoot Defender for Containers deployment and findings issues | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-troubleshoot |
 | Respond to Microsoft Defender for DNS security alerts | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-dns-alerts |
 | Investigate and respond to Defender for Resource Manager alerts | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-resource-manager-usage |
 | Reference deprecated Defender for Cloud alert IDs | https://learn.microsoft.com/en-us/azure/defender-for-cloud/deprecated-alerts |
@@ -50,7 +49,6 @@ This skill requires **network access** to fetch documentation content:
 | Resolve common issues in Endor Labs integration | https://learn.microsoft.com/en-us/azure/defender-for-cloud/faq-endor-labs |
 | Use Defender for Cloud incident reference catalog | https://learn.microsoft.com/en-us/azure/defender-for-cloud/incidents-reference |
 | Handle malware alerts on Kubernetes nodes in Defender | https://learn.microsoft.com/en-us/azure/defender-for-cloud/kubernetes-nodes-malware |
-| Investigate and fix Defender Kubernetes node vulnerabilities | https://learn.microsoft.com/en-us/azure/defender-for-cloud/kubernetes-nodes-va |
 | Resolve agentless disk scan errors for GCP in Defender | https://learn.microsoft.com/en-us/azure/defender-for-cloud/resolve-disk-scanning-error |
 | Fix GCP Domain Restricted Sharing issues for Defender connector | https://learn.microsoft.com/en-us/azure/defender-for-cloud/resolve-gcp-sharing-policy |
 | Resolve GCP VPC Service Controls issues for Defender scanning | https://learn.microsoft.com/en-us/azure/defender-for-cloud/resolve-vpc-service-controls-issues |
@@ -78,7 +76,6 @@ This skill requires **network access** to fetch documentation content:
 | Prioritize and remediate machine secrets findings in Defender | https://learn.microsoft.com/en-us/azure/defender-for-cloud/remediate-server-secrets |
 | Remediate machine vulnerability findings in Defender for Servers | https://learn.microsoft.com/en-us/azure/defender-for-cloud/remediate-vulnerability-findings-vm |
 | Review security annotations on pull requests in GitHub and Azure DevOps | https://learn.microsoft.com/en-us/azure/defender-for-cloud/review-pull-request-annotations |
-| Prioritize and fix vulnerabilities in AKS containers | https://learn.microsoft.com/en-us/azure/defender-for-cloud/view-and-remediate-vulnerabilities-containers |
 | Assess Kubernetes image vulnerabilities using Secure Score | https://learn.microsoft.com/en-us/azure/defender-for-cloud/view-and-remediate-vulnerabilities-for-images-secure-score |
 | Remediate registry image vulnerabilities using Secure Score | https://learn.microsoft.com/en-us/azure/defender-for-cloud/view-and-remediate-vulnerability-assessment-findings-secure-score |
 | View and remediate registry image vulnerabilities in Defender | https://learn.microsoft.com/en-us/azure/defender-for-cloud/view-and-remediate-vulnerability-registry-images |
@@ -91,7 +88,8 @@ This skill requires **network access** to fetch documentation content:
 | Allocate Defender for Cloud costs via chargeback | https://learn.microsoft.com/en-us/azure/defender-for-cloud/chargeback |
 | Select and configure Defender for Cloud plans for GCP | https://learn.microsoft.com/en-us/azure/defender-for-cloud/configure-google-plans |
 | Estimate Defender for Cloud costs with calculator | https://learn.microsoft.com/en-us/azure/defender-for-cloud/cost-calculator |
-| Choose Defender for Containers deployment options | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-deployment-overview |
+| Plan Defender for Containers deployment across clusters | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-deployment-planning |
+| Choose access patterns for Defender for Containers features | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-feature-access-patterns |
 | Decide between Defender for Storage classic and new plan | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-storage-classic |
 | Decide and migrate from Defender for Storage classic plan | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-storage-classic-migrate |
 | Use BYOL vulnerability assessment with Defender for Cloud | https://learn.microsoft.com/en-us/azure/defender-for-cloud/deploy-vulnerability-assessment-byol-vm |
@@ -106,7 +104,6 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Use agentless malware scanning for virtual machines | https://learn.microsoft.com/en-us/azure/defender-for-cloud/agentless-malware-scanning |
-| Understand Defender for Containers security architecture | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-architecture |
 | Design a Defender for Servers deployment architecture | https://learn.microsoft.com/en-us/azure/defender-for-cloud/plan-defender-for-servers |
 | Understand Defender for Servers data collection design | https://learn.microsoft.com/en-us/azure/defender-for-cloud/plan-defender-for-servers-agents |
 | Plan Defender for Servers data residency and workspaces | https://learn.microsoft.com/en-us/azure/defender-for-cloud/plan-defender-for-servers-data-workspace |
@@ -115,7 +112,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Use Defender for Servers data ingestion benefit and free quota | https://learn.microsoft.com/en-us/azure/defender-for-cloud/data-ingestion-benefit |
-| Understand current limitations of Defender portal preview | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-portal/known-limitations |
+| Understand current limitations of Defender portal experience | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-portal/known-limitations |
 | Review support scope and prerequisites for DevOps security | https://learn.microsoft.com/en-us/azure/defender-for-cloud/devops-support |
 | Export Defender for Cloud alerts to CSV with limits | https://learn.microsoft.com/en-us/azure/defender-for-cloud/export-alerts-to-csv |
 | Check and understand Defender for Cloud free trial limits | https://learn.microsoft.com/en-us/azure/defender-for-cloud/free-trial |
@@ -134,7 +131,6 @@ This skill requires **network access** to fetch documentation content:
 | Understand Defender for Cloud alerts for Azure network layer | https://learn.microsoft.com/en-us/azure/defender-for-cloud/alerts-azure-network-layer |
 | Understand Defender for Cloud alerts for Azure Storage | https://learn.microsoft.com/en-us/azure/defender-for-cloud/alerts-azure-storage |
 | Understand Defender for Cloud alerts for Azure VM extensions | https://learn.microsoft.com/en-us/azure/defender-for-cloud/alerts-azure-vm-extensions |
-| Understand Defender for Containers and Kubernetes alerts | https://learn.microsoft.com/en-us/azure/defender-for-cloud/alerts-containers |
 | Understand Defender for Cloud alerts for Defender for APIs | https://learn.microsoft.com/en-us/azure/defender-for-cloud/alerts-defender-for-apis |
 | Understand Defender for Cloud alerts for DNS | https://learn.microsoft.com/en-us/azure/defender-for-cloud/alerts-dns |
 | Understand Defender for Cloud alerts for Linux VMs | https://learn.microsoft.com/en-us/azure/defender-for-cloud/alerts-linux-machines |
@@ -151,10 +147,11 @@ This skill requires **network access** to fetch documentation content:
 | Understand AWS connector authentication architecture in Defender for Cloud | https://learn.microsoft.com/en-us/azure/defender-for-cloud/concept-authentication-architecture-aws |
 | Use classic configuration to manage SQL vulnerability findings | https://learn.microsoft.com/en-us/azure/defender-for-cloud/configure-vulnerability-findings-classic |
 | Use express configuration to manage SQL vulnerability findings | https://learn.microsoft.com/en-us/azure/defender-for-cloud/configure-vulnerability-findings-express |
-| Permissions required for Defender for Containers on EKS and GKE | https://learn.microsoft.com/en-us/azure/defender-for-cloud/containers-permissions |
+| Assign IAM roles for Defender for Containers on AWS and GCP | https://learn.microsoft.com/en-us/azure/defender-for-cloud/containers-permissions |
 | Monitor APIs for sensitive data exposure | https://learn.microsoft.com/en-us/azure/defender-for-cloud/data-classification |
 | Understand Defender for Cloud data handling and security | https://learn.microsoft.com/en-us/azure/defender-for-cloud/data-security |
 | Configure secure authentication for Defender for Cloud CLI | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-cli-authentication |
+| Configure network access and permissions for Defender for Containers | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-network-access |
 | Enable Microsoft Defender for Azure Cosmos DB | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-databases-enable-cosmos-protections |
 | Explore and investigate Defender for SQL security alerts | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-sql-alerts |
 | Use Defender VA scanner for SQL servers on machines | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-sql-on-machines-vulnerability-assessment |
@@ -168,7 +165,8 @@ This skill requires **network access** to fetch documentation content:
 | Configure governance rules to enforce Defender remediation | https://learn.microsoft.com/en-us/azure/defender-for-cloud/governance-rules |
 | Use Defender for Cloud attack path analysis | https://learn.microsoft.com/en-us/azure/defender-for-cloud/how-to-manage-attack-path |
 | Use Purview data sensitivity in Defender alerts | https://learn.microsoft.com/en-us/azure/defender-for-cloud/information-protection |
-| Apply Defender for Cloud Kubernetes data plane hardening | https://learn.microsoft.com/en-us/azure/defender-for-cloud/kubernetes-workload-protections |
+| Harden Kubernetes data plane with Azure Policy | https://learn.microsoft.com/en-us/azure/defender-for-cloud/kubernetes-workload-protections |
+| Configure on-demand malware scanning for Defender for Storage | https://learn.microsoft.com/en-us/azure/defender-for-cloud/on-demand-malware-scanning |
 | Configure on-upload malware scanning for Azure Storage | https://learn.microsoft.com/en-us/azure/defender-for-cloud/on-upload-malware-scanning |
 | Assign Defender for Cloud roles and permissions with Azure RBAC | https://learn.microsoft.com/en-us/azure/defender-for-cloud/permissions |
 | Configure CIEM capabilities in Defender for Cloud | https://learn.microsoft.com/en-us/azure/defender-for-cloud/permissions-management |
@@ -227,11 +225,10 @@ This skill requires **network access** to fetch documentation content:
 | Use Defender for Cloud CLI for security scanning | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-cli-overview |
 | Manage onboarding and offboarding for Defender for APIs | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-apis-manage |
 | Check prerequisites to deploy Defender for APIs | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-apis-prepare |
-| Programmatically enable Defender for Containers on Arc | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-arc-enable-programmatically |
-| Configure Defender for Containers settings on EKS | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-aws-configure |
-| Configure Defender for Containers settings on AKS | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-azure-configure |
 | Onboard Docker Hub registries to Defender for Containers | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-enable-external-registry-for-docker-hub |
-| Configure Defender for Containers settings on GKE | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-gcp-configure |
+| Enable Defender for Containers plan across cloud connectors | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-enable-plan |
+| Configure cluster exclusion tags for Defender sensor deployment | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-exclude-cluster |
+| Verify Defender for Containers sensor and extension status | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-verify-deployment |
 | Enable and configure Defender for Storage classic via templates | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-storage-classic-enable |
 | Set up automated malware remediation in Defender for Storage | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-storage-configure-malware-scan |
 | Enable vulnerability scanning with Defender Vulnerability Management | https://learn.microsoft.com/en-us/azure/defender-for-cloud/deploy-vulnerability-assessment-defender-vulnerability-management |
@@ -278,7 +275,6 @@ This skill requires **network access** to fetch documentation content:
 | Automate ServiceNow tickets with governance rules | https://learn.microsoft.com/en-us/azure/defender-for-cloud/create-governance-rule-servicenow |
 | Create and sync ServiceNow tickets from Defender | https://learn.microsoft.com/en-us/azure/defender-for-cloud/create-ticket-servicenow |
 | Use Defender for Cloud CLI to scan container images | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-cli-syntax |
-| Programmatically deploy Defender for Containers on AKS | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-azure-enable-programmatically |
 | Consume and export Defender for SQL scan results via ARG | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-sql-scan-results |
 | Use partner API security testing with Defender | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-partner-applications |
 | Enable Defender for Endpoint integration in Defender for Cloud | https://learn.microsoft.com/en-us/azure/defender-for-cloud/enable-defender-for-endpoint |
@@ -299,13 +295,8 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Integrate Defender for Cloud CLI into CI/CD pipelines | https://learn.microsoft.com/en-us/azure/defender-for-cloud/ci-cd-pipeline-scanning-with-defender-cli |
-| Enable Defender for Containers on EKS via portal | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-aws-enable-portal |
-| Programmatically deploy Defender for Containers on EKS | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-aws-enable-programmatically |
-| Remove Defender for Containers from EKS clusters | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-aws-remove |
-| Remove Defender for Containers from AKS clusters | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-azure-remove |
-| Enable Defender for Containers on GKE via portal | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-gcp-enable-portal |
-| Programmatically deploy Defender for Containers on GKE | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-gcp-enable-programmatically |
-| Remove Defender for Containers from GKE clusters | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-gcp-remove |
+| Deploy Defender sensor and policy via Azure CLI | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-deploy-azure-cli |
+| Disable and remove Defender for Containers components safely | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-remove |
 | Migrate Defender for SQL to AMA autoprovisioning | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-sql-autoprovisioning |
 | Enable Defender for SQL Servers on Machines across environments | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-sql-usage |
 | Enable Defender for Storage via Azure portal | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-storage-azure-portal-enablement |
@@ -313,13 +304,15 @@ This skill requires **network access** to fetch documentation content:
 | Enable Defender for Storage using Azure Policy | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-storage-policy-enablement |
 | Enable Defender for Storage with Azure PowerShell | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-storage-powershell-enablement |
 | Enable Defender for Storage using REST API | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-storage-rest-api-enablement |
-| Deploy Defender for Containers sensor via Helm | https://learn.microsoft.com/en-us/azure/defender-for-cloud/deploy-helm |
+| Install Defender for Containers sensor using Helm | https://learn.microsoft.com/en-us/azure/defender-for-cloud/deploy-helm |
 | Enable Defender for SQL on Machines at scale | https://learn.microsoft.com/en-us/azure/defender-for-cloud/enable-defender-sql-at-scale |
 | Deploy gated deployment agent via Infrastructure as Code | https://learn.microsoft.com/en-us/azure/defender-for-cloud/gated-deployment-infrastructure-as-code |
+| Deploy GitHub Advanced Security with Defender for Cloud | https://learn.microsoft.com/en-us/azure/defender-for-cloud/github-advanced-security-deploy |
+| Set up sandbox integration of GHAS with Defender for Cloud | https://learn.microsoft.com/en-us/azure/defender-for-cloud/github-advanced-security-deploy-sandbox |
 | Identify SQL Servers still protected by Microsoft Monitoring Agent | https://learn.microsoft.com/en-us/azure/defender-for-cloud/identify-sql-servers-protected-by-monitor-agent |
 | Migrate File Integrity Monitoring to Defender for Endpoint | https://learn.microsoft.com/en-us/azure/defender-for-cloud/migrate-file-integrity-monitoring |
 | Scale Microsoft Defender for Servers across environments | https://learn.microsoft.com/en-us/azure/defender-for-cloud/plan-defender-for-servers-scale |
-| Check Defender for Cloud interoperability and support matrix | https://learn.microsoft.com/en-us/azure/defender-for-cloud/support-matrix-defender-for-cloud |
+| Check Defender for Cloud interoperability and regional support | https://learn.microsoft.com/en-us/azure/defender-for-cloud/support-matrix-defender-for-cloud |
 | Review container support matrix for Defender for Cloud | https://learn.microsoft.com/en-us/azure/defender-for-cloud/support-matrix-defender-for-containers |
 | Review support matrix and requirements for Defender for Servers | https://learn.microsoft.com/en-us/azure/defender-for-cloud/support-matrix-defender-for-servers |
 | Verify Defender for SQL Servers on Machines protection status | https://learn.microsoft.com/en-us/azure/defender-for-cloud/verify-machine-protection |

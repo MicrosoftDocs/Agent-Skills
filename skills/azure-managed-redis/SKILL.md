@@ -1,9 +1,9 @@
 ---
 name: azure-managed-redis
-description: Expert knowledge for Azure Managed Redis development including troubleshooting, best practices, decision making, security, configuration, integrations & coding patterns, and deployment. Use when using Entra ID auth, geo-replication, keyspace notifications, Blob import/export, or ARM/Bicep deployments, and other Azure Managed Redis related development tasks. Not for Azure Cache for Redis (use azure-cache-redis).
+description: Expert knowledge for Azure Managed Redis development including troubleshooting, best practices, decision making, security, configuration, integrations & coding patterns, and deployment. Use when using Entra ID auth, geo-replication, persistence, keyspace notifications, or Blob-based import/export, and other Azure Managed Redis related development tasks. Not for Azure Cache for Redis (use azure-cache-redis).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-03"
+  generated_at: "2026-05-10"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Managed Redis Skill
@@ -30,7 +30,7 @@ This skill requires **network access** to fetch documentation content:
 | Security | L73-L82 | Securing Azure Managed Redis: Entra auth, disk encryption, Private Link, TLS config, security best practices, and enforcing compliance with Azure Policy. |
 | Configuration | L83-L97 | How to configure and operate Azure Managed Redis: instance settings, modules, persistence, geo-replication, monitoring/diagnostics, Grafana, CLI/PowerShell, migration, and data import/export. |
 | Integrations & Coding Patterns | L98-L110 | How to connect apps (ASP.NET Core, .NET, Node.js, Python, Go) to Azure Managed Redis, secure with Entra ID, use bindings, keyspace notifications, and import/export data via Blob. |
-| Deployment | L111-L121 | Scaling and upgrading Managed Redis, migrating from Basic/Standard/Premium or Redis Enterprise, deploying via ARM/Bicep, and configuring maintenance windows for updates. |
+| Deployment | L111-L121 | Scaling and upgrading Managed Redis, migrating from Basic/Standard/Premium or Redis Enterprise, deploying with ARM/Bicep, and configuring maintenance/update windows. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -115,7 +115,7 @@ This skill requires **network access** to fetch documentation content:
 | Plan and execute Azure Managed Redis version upgrades | https://learn.microsoft.com/en-us/azure/redis/how-to-upgrade |
 | Execute migration from Basic/Standard/Premium to Managed Redis | https://learn.microsoft.com/en-us/azure/redis/migrate/migrate-basic-standard-premium-self-service |
 | Execute Redis Enterprise to Azure Managed Redis migration | https://learn.microsoft.com/en-us/azure/redis/migrate/migrate-redis-enterprise-self-service |
-| Use Azure tooling to migrate Redis Enterprise to Managed Redis | https://learn.microsoft.com/en-us/azure/redis/migrate/migrate-redis-enterprise-with-tooling |
+| Use built-in tooling to migrate Redis Enterprise to Azure Managed Redis | https://learn.microsoft.com/en-us/azure/redis/migrate/migrate-redis-enterprise-with-tooling |
 | Deploy Azure Managed Redis using ARM templates | https://learn.microsoft.com/en-us/azure/redis/redis-cache-arm-provision |
 | Deploy Azure Managed Redis with Bicep templates | https://learn.microsoft.com/en-us/azure/redis/redis-cache-bicep-provision |
 | Configure maintenance windows for Azure Managed Redis updates | https://learn.microsoft.com/en-us/azure/redis/scheduled-maintenance |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-03'
+generated_at: '2026-05-10'
 category_descriptions:
   limits-quotas: Storage quotas, free allocation, and per-package size/count limits
     in Azure Artifacts, plus how to monitor, manage, and publish packages within those
@@ -42,8 +42,8 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 70
+- **Updated Pages**: 1
+- **Unchanged**: 72
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-artifacts/azure-artifacts.csv`
 
@@ -65,11 +65,7 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 ### Updated Pages
 
 - [Use upstream sources with public feeds](https://learn.microsoft.com/en-us/azure/devops/artifacts/how-to/public-feeds-upstream-sources?view=azure-devops)
-  - Updated: 2025-11-11T02:02:00.000Z → 2026-05-01T01:05:00.000Z
-- [Use packages from Google Maven Repository](https://learn.microsoft.com/en-us/azure/devops/artifacts/maven/google-maven?view=azure-devops)
-  - Updated: 2026-02-17T18:05:00.000Z → 2026-04-20T17:05:00.000Z
-- [Share packages publicly](https://learn.microsoft.com/en-us/azure/devops/artifacts/tutorials/share-packages-publicly?view=azure-devops)
-  - Updated: 2025-11-11T02:02:00.000Z → 2026-05-01T01:05:00.000Z
+  - Updated: 2026-05-01T01:05:00.000Z → 2026-05-05T21:06:00.000Z
 
 ## Classified Pages
 
@@ -149,7 +145,7 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 | [Universal Packages upstream sources](https://learn.microsoft.com/en-us/azure/devops/artifacts/universal-packages/universal-packages-upstream?view=azure-devops) | 0.20 | Page is a how-to for configuring upstream sources for Universal Packages. It describes steps and concepts but does not include numeric limits/quotas, detailed configuration parameter tables with defaults/ranges, error-code-based troubleshooting, or decision matrices. Content is primarily procedural/tutorial rather than expert reference data. |
 | [Use packages from Google Maven Repository](https://learn.microsoft.com/en-us/azure/devops/artifacts/maven/google-maven?view=azure-devops) | 0.20 | Describes consuming packages from Google Maven Repository via Azure Artifacts upstream sources; likely a step-by-step tutorial without configuration parameter tables, limits, or troubleshooting matrices. |
 | [Use packages from PyPI](https://learn.microsoft.com/en-us/azure/devops/artifacts/python/use-packages-from-pypi?view=azure-devops) | 0.20 | Primarily a how-to/tutorial for consuming PyPI packages via Azure Artifacts using upstream sources and command-line steps. It does not focus on limits, configuration matrices, security roles, or detailed troubleshooting with error codes. The content is procedural rather than reference-style expert knowledge as defined by the sub-skill types. |
-| [Use upstream sources with public feeds](https://learn.microsoft.com/en-us/azure/devops/artifacts/how-to/public-feeds-upstream-sources?view=azure-devops) | 0.20 | How-to guide for enabling and using upstream sources in a public Azure Artifacts feed; appears to be procedural without detailed config tables, limits, or product-specific error mappings. |
+| [Use upstream sources with public feeds](https://learn.microsoft.com/en-us/azure/devops/artifacts/how-to/public-feeds-upstream-sources?view=azure-devops) | 0.20 | Appears to be a how-to/tutorial on enabling and adding upstream sources to a public Azure Artifacts feed. From the summary, it focuses on setup steps and conceptual usage of upstream sources, without clear evidence of numeric limits, detailed configuration parameter tables, error-code-based troubleshooting, or decision matrices. Likely standard product usage guidance rather than expert-only configuration or limits. |
 | [Package notifications](https://learn.microsoft.com/en-us/azure/devops/artifacts/how-to/follow-package-notifications?view=azure-devops) | 0.15 | Explains notification behavior; summary shows no numeric limits, config tables, or error mappings. |
 | [What are feeds?](https://learn.microsoft.com/en-us/azure/devops/artifacts/concepts/feeds?view=azure-devops) | 0.15 | Conceptual explanation of feeds and types; no evidence of limits, config matrices, or troubleshooting. |
 | [Key concepts](https://learn.microsoft.com/en-us/azure/devops/artifacts/artifacts-key-concepts?view=azure-devops) | 0.10 | Key concepts/overview page; no indication of numeric limits, config parameters, or troubleshooting content. |

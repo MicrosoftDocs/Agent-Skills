@@ -1,14 +1,14 @@
 ---
 name: azure-reliability
-description: Expert knowledge for Azure Reliability development including best practices, decision making, architecture & design patterns, limits & quotas, and deployment. Use when designing zone/multi-region apps, AKS/DB HA, Azure Functions resiliency, or Queue Storage message limits, and other Azure Reliability related development tasks. Not for Azure Resiliency (use azure-resiliency), Azure Monitor (use azure-monitor), Azure Service Health (use azure-service-health), Azure Site Recovery (use azure-site-recovery).
+description: Expert knowledge for Azure Reliability development including best practices, decision making, architecture & design patterns, and limits & quotas. Use when designing zonal/multi-region apps, AKS/DB/network HA, backup/DR, or Azure Queue Storage message limits, and other Azure Reliability related development tasks. Not for Azure Resiliency (use azure-resiliency), Azure Monitor (use azure-monitor), Azure Service Health (use azure-service-health), Azure Sre Agent (use azure-sre-agent).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-03"
+  generated_at: "2026-05-10"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Reliability Skill
 
-This skill provides expert guidance for Azure Reliability. Covers best practices, decision making, architecture & design patterns, limits & quotas, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Reliability. Covers best practices, decision making, architecture & design patterns, and limits & quotas. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -24,11 +24,10 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Best Practices | L33-L73 | Patterns and guidance to design, configure, and harden Azure services (AKS, DBs, messaging, networking, apps) for high availability, failover, backup/DR, and resilient operations |
-| Decision Making | L74-L78 | Guidance on using availability zones, nonregional services, and resilient Azure Functions architectures to design highly available, fault-tolerant Azure solutions. |
-| Architecture & Design Patterns | L79-L85 | Designing Azure apps for high availability using zones and multi-region patterns, including planning zone-resilient workloads, hardening zonal deployments, and building in nonpaired regions. |
-| Limits & Quotas | L86-L90 | Details on Azure Queue Storage message size limits, including max message size, behavior when limits are exceeded, and best practices for handling large payloads. |
-| Deployment | L91-L94 | Guidance on deploying Azure services and MySQL Flexible Server with availability zones, including configuring zone-redundant high availability and migration to zone-resilient setups. |
+| Best Practices | L32-L74 | Patterns and guidance to design, configure, and harden Azure services (AKS, DBs, networking, messaging, analytics) for high availability, failover, backup/DR, and resilient operations. |
+| Decision Making | L75-L81 | Guidance on choosing Azure services by region type, availability zone support, and nonregional scope to meet reliability, redundancy, and resiliency requirements. |
+| Architecture & Design Patterns | L82-L88 | Designing Azure apps for high availability using zones and multi-region patterns, including zonal vs zone-redundant deployments, hardening strategies, and non-paired region failover. |
+| Limits & Quotas | L89-L92 | Details on Azure Queue Storage message size limits, including max message size, behavior when limits are exceeded, and best practices for handling large payloads. |
 
 ### Best Practices
 | Topic | URL |
@@ -42,7 +41,8 @@ This skill requires **network access** to fetch documentation content:
 | Design resilient backup strategies with Azure Backup | https://learn.microsoft.com/en-us/azure/reliability/reliability-backup |
 | Design resilient backup strategies with Azure Backup | https://learn.microsoft.com/en-us/azure/reliability/reliability-backup |
 | Plan reliability for Azure Bot Service | https://learn.microsoft.com/en-us/azure/reliability/reliability-bot |
-| Achieve high availability in Azure Cosmos DB NoSQL | https://learn.microsoft.com/en-us/azure/reliability/reliability-cosmos-db-nosql |
+| Design resilient Azure Cosmos DB deployments | https://learn.microsoft.com/en-us/azure/reliability/reliability-cosmos-db |
+| Design resilient Azure Cosmos DB deployments | https://learn.microsoft.com/en-us/azure/reliability/reliability-cosmos-db |
 | Design resilient Azure Data Explorer deployments | https://learn.microsoft.com/en-us/azure/reliability/reliability-data-explorer |
 | Harden Azure Data Factory for outages | https://learn.microsoft.com/en-us/azure/reliability/reliability-data-factory |
 | Design resilient Azure Database for MySQL deployments | https://learn.microsoft.com/en-us/azure/reliability/reliability-database-mysql |
@@ -52,10 +52,11 @@ This skill requires **network access** to fetch documentation content:
 | Ensure reliability for Azure Device Registry metadata | https://learn.microsoft.com/en-us/azure/reliability/reliability-device-registry |
 | Design high availability for Azure DocumentDB | https://learn.microsoft.com/en-us/azure/reliability/reliability-documentdb |
 | Design resilient architectures with Azure Elastic SAN | https://learn.microsoft.com/en-us/azure/reliability/reliability-elastic-san |
+| Design resilient architectures with Azure Elastic SAN | https://learn.microsoft.com/en-us/azure/reliability/reliability-elastic-san |
 | Build resilient architectures with Azure Event Grid | https://learn.microsoft.com/en-us/azure/reliability/reliability-event-grid |
 | Increase reliability of Azure Event Hubs streaming | https://learn.microsoft.com/en-us/azure/reliability/reliability-event-hubs |
 | Design reliable analytics with Microsoft Fabric | https://learn.microsoft.com/en-us/azure/reliability/reliability-fabric |
-| Design reliable and resilient Azure Functions workloads | https://learn.microsoft.com/en-us/azure/reliability/reliability-functions |
+| Implement resilient Azure Functions across failures | https://learn.microsoft.com/en-us/azure/reliability/reliability-functions |
 | Implement resilient Azure Functions across failures | https://learn.microsoft.com/en-us/azure/reliability/reliability-functions |
 | Implement disaster recovery for Azure Image Builder | https://learn.microsoft.com/en-us/azure/reliability/reliability-image-builder |
 | Design resilient architectures with Azure Load Balancer | https://learn.microsoft.com/en-us/azure/reliability/reliability-load-balancer |
@@ -74,6 +75,8 @@ This skill requires **network access** to fetch documentation content:
 ### Decision Making
 | Topic | URL |
 |-------|-----|
+| Choose Azure services by region type and category | https://learn.microsoft.com/en-us/azure/reliability/availability-service-by-category |
+| Select Azure services with availability zone support | https://learn.microsoft.com/en-us/azure/reliability/availability-zones-service-support |
 | Select and understand Azure nonregional services | https://learn.microsoft.com/en-us/azure/reliability/regions-nonregional-services |
 
 ### Architecture & Design Patterns
@@ -87,8 +90,3 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Understand Azure Queue Storage message size limits | https://learn.microsoft.com/en-us/azure/reliability/reliability-storage-queue |
-
-### Deployment
-| Topic | URL |
-|-------|-----|
-| Use Azure services with availability zone support | https://learn.microsoft.com/en-us/azure/reliability/availability-zones-service-support |

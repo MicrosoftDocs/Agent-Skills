@@ -1,9 +1,9 @@
 ---
 name: azure-event-grid
-description: Expert knowledge for Azure Event Grid development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when securing Event Grid endpoints, configuring topics/subscriptions, using MQTT, routing Azure events, or deploying on Arc Kubernetes, and other Azure Event Grid related development tasks. Not for Azure Service Bus (use azure-service-bus), Azure Event Hubs (use azure-event-hubs), Azure Notification Hubs (use azure-notification-hubs), Azure Logic Apps (use azure-logic-apps).
+description: Expert knowledge for Azure Event Grid development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when securing Event Grid/MQTT, configuring topics/subscriptions, integrating webhooks/MQTT, or deploying on Arc K8s, and other Azure Event Grid related development tasks. Not for Azure Service Bus (use azure-service-bus), Azure Event Hubs (use azure-event-hubs), Azure Notification Hubs (use azure-notification-hubs), Azure Logic Apps (use azure-logic-apps).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-12"
+  generated_at: "2026-05-10"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Event Grid Skill
@@ -28,11 +28,11 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L46-L50 | Guidance on designing client-side failover for Event Grid, including using multiple regions, retry logic, and resilient publishing patterns for high availability. |
 | Decision Making | L51-L58 | Guidance on choosing Event Grid tiers, matching event schemas, comparing Azure vs Kubernetes Event Grid, and migrating from Event Grid on IoT Edge to IoT Edge hub. |
 | Architecture & Design Patterns | L59-L64 | Patterns for routing events across Event Grid namespace topics and implementing MQTT-based request/response command workflows using Event Grid. |
-| Limits & Quotas | L65-L75 | Event Grid delivery/retry behavior, custom headers, event retention, MQTT protocol support, and regional quotas/service limits for topics, namespaces, and brokers |
-| Security | L76-L127 | Securing Event Grid: auth (keys, SAS, Entra ID, JWT, OAuth), RBAC, managed identities, webhooks/MQTT, TLS, IP firewalls, private endpoints, network perimeters, and Azure Policy controls. |
-| Configuration | L128-L205 | Configuring Event Grid and MQTT: topics, subscriptions, filters, routing, dead-lettering, monitoring/metrics, and detailed event schemas for many Azure and Microsoft services. |
-| Integrations & Coding Patterns | L206-L247 | Patterns for publishing, routing, and consuming Event Grid events with HTTP/webhooks, MQTT, Azure/M365/SaaS sources, and handlers like Event Hubs, Monitor, Relay, and custom endpoints. |
-| Deployment | L248-L251 | Guides for deploying Event Grid on Azure Arc-enabled Kubernetes, including installing and configuring the Event Grid extension on Arc clusters. |
+| Limits & Quotas | L65-L74 | Event Grid delivery/retry behavior, custom headers, event retention for namespace topics, and regional quotas/limits for throughput, subscriptions, and operations |
+| Security | L75-L126 | Securing Event Grid and MQTT: auth (keys, SAS, Entra ID, JWT, certs), RBAC, managed identities, webhooks, network/IP rules, private endpoints, TLS, and Azure Policy enforcement. |
+| Configuration | L127-L204 | Configuring Event Grid and MQTT: topics, subscriptions, filters, routing, dead-lettering, monitoring/metrics, and detailed event schemas for many Azure and Microsoft services. |
+| Integrations & Coding Patterns | L205-L246 | Patterns for publishing, routing, and consuming Event Grid events with HTTP/webhooks, MQTT, Azure/M365/SaaS sources, and handlers like Event Hubs, Monitor, Relay, and custom endpoints. |
+| Deployment | L247-L250 | Guides for deploying Event Grid on Azure Arc-enabled Kubernetes, including installing and configuring the Event Grid extension on Arc clusters. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -68,10 +68,9 @@ This skill requires **network access** to fetch documentation content:
 | Understand Azure Event Grid delivery and retry behavior | https://learn.microsoft.com/en-us/azure/event-grid/delivery-and-retry |
 | Configure custom delivery headers for Azure Event Grid events | https://learn.microsoft.com/en-us/azure/event-grid/delivery-properties |
 | Understand event retention for Event Grid namespace topics | https://learn.microsoft.com/en-us/azure/event-grid/event-retention |
-| MQTT feature and protocol support in Event Grid broker | https://learn.microsoft.com/en-us/azure/event-grid/mqtt-support |
 | Set custom delivery headers for Event Grid namespaces | https://learn.microsoft.com/en-us/azure/event-grid/namespace-delivery-properties |
 | Delivery and retry behavior for Event Grid namespace push | https://learn.microsoft.com/en-us/azure/event-grid/namespace-delivery-retry |
-| Azure Event Grid quotas and service limits by region | https://learn.microsoft.com/en-us/azure/event-grid/quotas-limits |
+| Review Azure Event Grid quotas and limits by region | https://learn.microsoft.com/en-us/azure/event-grid/quotas-limits |
 
 ### Security
 | Topic | URL |
@@ -81,7 +80,7 @@ This skill requires **network access** to fetch documentation content:
 | Authenticate Event Grid namespace publishers with Entra ID | https://learn.microsoft.com/en-us/azure/event-grid/authenticate-with-entra-id-namespaces |
 | Configure Microsoft Entra ID auth for Event Grid publishing | https://learn.microsoft.com/en-us/azure/event-grid/authenticate-with-microsoft-entra-id |
 | Configure JWT authentication for Event Grid namespaces | https://learn.microsoft.com/en-us/azure/event-grid/authenticate-with-namespaces-using-json-web-tokens |
-| Configure webhook authentication for Event Grid namespaces | https://learn.microsoft.com/en-us/azure/event-grid/authenticate-with-namespaces-using-webhook-authentication |
+| Configure webhook-based authentication for Event Grid namespaces | https://learn.microsoft.com/en-us/azure/event-grid/authenticate-with-namespaces-using-webhook-authentication |
 | Authenticate Event Grid publishers to topics and domains | https://learn.microsoft.com/en-us/azure/event-grid/authentication-overview |
 | Configure access, identity, and data residency for Event Grid topics | https://learn.microsoft.com/en-us/azure/event-grid/configure-custom-topic |
 | Configure IP firewall rules for Event Grid topics and domains | https://learn.microsoft.com/en-us/azure/event-grid/configure-firewall |

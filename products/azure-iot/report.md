@@ -34,9 +34,9 @@ confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Edge (u
 - **Unclassified**: 6
 
 ### Incremental Update
-- **New Pages**: 2
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 9
+- **Unchanged**: 11
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-iot/azure-iot.csv`
 
@@ -50,11 +50,6 @@ confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Edge (u
 | *(Unclassified)* | 6 | 54.5% |
 
 ## Changes
-
-### New Pages
-
-- [Best practices for namespaces](https://learn.microsoft.com/en-us/azure/iot/iot-device-registry-namespace-guidance)
-- [Best practices for schema registries](https://learn.microsoft.com/en-us/azure/iot/iot-device-registry-schema-registry-guidance)
 
 ## Classified Pages
 

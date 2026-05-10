@@ -1,9 +1,9 @@
 ---
 name: azure-sre-agent
-description: Expert knowledge for Azure Sre Agent development including troubleshooting, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when wiring SRE Agent to DevOps/Teams/ServiceNow, configuring tools/subagents, querying KQL logs, or tracking AI Unit usage, and other Azure Sre Agent related development tasks. Not for Azure Monitor (use azure-monitor), Azure Reliability (use azure-reliability), Azure Resiliency (use azure-resiliency), Azure Service Health (use azure-service-health).
+description: Expert knowledge for Azure Sre Agent development including troubleshooting, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when wiring SRE Agent to DevOps/Teams/ServiceNow, configuring tools/subagents, securing RBAC, querying KQL, or tracking AI Unit usage, and other Azure Sre Agent related development tasks. Not for Azure Monitor (use azure-monitor), Azure Reliability (use azure-reliability), Azure Resiliency (use azure-resiliency), Azure Service Health (use azure-service-health).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-03"
+  generated_at: "2026-05-10"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Sre Agent Skill
@@ -24,18 +24,19 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L34-L39 | Diagnosing Azure SRE Agent deployment/operation issues and using KQL to query its telemetry, logs, and actions for troubleshooting. |
-| Decision Making | L40-L48 | Guidance on when to use deep investigations, choose Log Analytics vs App Insights, understand pricing and regions, and interpret incident value metrics for Azure SRE Agent decisions. |
-| Limits & Quotas | L49-L53 | Tracking Azure SRE Agent usage, AI Unit consumption, limits, and understanding how pricing, billing units, and quotas affect your workloads. |
-| Security | L54-L64 | Identity, auth, and RBAC for SRE Agent: managed identities, ADO and ServiceNow auth, roles, permissions, and subscription/resource access configuration. |
-| Configuration | L65-L76 | Configuring SRE Agent behavior: hooks and governance, custom tools/skills, specialized subagents, network/firewall settings, and enabling/using the Python/shell Code Interpreter via UI or REST API |
-| Integrations & Coding Patterns | L77-L91 | Integrating Azure SRE Agent with DevOps, GitHub, Teams, ServiceNow, PagerDuty, Kusto, observability tools, and custom HTTP/Python/MCP tools for automation and incident workflows |
+| Troubleshooting | L34-L40 | Diagnosing and fixing SRE Agent deployment/operation issues, querying its telemetry and actions with KQL, and troubleshooting Java performance on AKS using the agent |
+| Decision Making | L41-L49 | Guidance on when to use deep investigations, choose Log Analytics vs App Insights, understand pricing and regions, and interpret incident value metrics for Azure SRE Agent decisions. |
+| Limits & Quotas | L50-L54 | Tracking Azure SRE Agent usage, AI Unit consumption, limits, and understanding how pricing, billing units, and quotas affect your workloads. |
+| Security | L55-L65 | Identity, auth, and RBAC for SRE Agent: managed identities, ADO and ServiceNow auth, roles, permissions, and subscription/resource access configuration. |
+| Configuration | L66-L77 | Configuring SRE Agent behavior: hooks and governance, custom tools/skills, specialized subagents, network/firewall settings, and enabling/using the Python/shell Code Interpreter via UI or REST API |
+| Integrations & Coding Patterns | L78-L92 | Integrating Azure SRE Agent with DevOps, GitHub, Teams, ServiceNow, PagerDuty, Kusto, observability tools, and custom HTTP/Python/MCP tools for automation and incident workflows |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
 | Query Azure SRE Agent telemetry and actions with KQL | https://learn.microsoft.com/en-us/azure/sre-agent/audit-agent-actions |
 | Troubleshoot Azure SRE Agent deployment and operations | https://learn.microsoft.com/en-us/azure/sre-agent/faq-troubleshooting |
+| Diagnose Java performance issues on AKS with SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/troubleshoot-java-aks |
 
 ### Decision Making
 | Topic | URL |

@@ -35,8 +35,8 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 22
-- **Unchanged**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 22
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-external-attack-surface-management/azure-external-attack-surface-management.csv`
 
@@ -45,50 +45,6 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 *No classified pages*
 
 ## Changes
-
-### Updated Pages
-
-- [Overview](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/overview)
-  - Updated: 2026-03-10T22:11:00.000Z → 2026-04-24T17:58:00.000Z
-- [Understanding inventory assets](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/understanding-inventory-assets)
-  - Updated: 2024-12-10T18:02:00.000Z → 2026-04-24T17:58:00.000Z
-- [What is Discovery?](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/what-is-discovery)
-  - Updated: 2024-12-10T18:02:00.000Z → 2026-04-24T17:58:00.000Z
-- [Understanding asset details](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/understanding-asset-details)
-  - Updated: 2024-09-26T22:04:00.000Z → 2026-04-24T17:58:00.000Z
-- [Understanding dashboards](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/understanding-dashboards)
-  - Updated: 2024-08-27T22:05:00.000Z → 2026-04-24T17:58:00.000Z
-- [Using and managing discovery](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/using-and-managing-discovery)
-  - Updated: 2023-12-18T23:04:00.000Z → 2026-04-24T17:58:00.000Z
-- [Modifying inventory assets](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/modifying-inventory-assets)
-  - Updated: 2024-09-26T22:04:00.000Z → 2026-04-24T17:58:00.000Z
-- [Policy engine automation](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/policy-engine)
-  - Updated: 2024-06-18T22:05:00.000Z → 2026-04-24T17:58:00.000Z
-- [Understand billable assets](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/understanding-billable-assets)
-  - Updated: 2023-04-18T17:34:00.000Z → 2026-04-24T17:58:00.000Z
-- [Leveraging data connections](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/data-connections)
-  - Updated: 2025-07-22T17:26:00.000Z → 2026-04-24T17:58:00.000Z
-- [Inventory filters overview](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/inventory-filters)
-  - Updated: 2023-07-11T22:03:00.000Z → 2026-04-24T17:58:00.000Z
-- [Domain asset filters](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/domain-asset-filters)
-  - Updated: 2023-04-17T23:20:00.000Z → 2026-04-24T17:58:00.000Z
-- [Host asset filters](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/host-asset-filters)
-  - Updated: 2023-08-02T11:22:00.000Z → 2026-04-24T17:58:00.000Z
-- [Page asset filters](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/page-asset-filters)
-  - Updated: 2023-07-19T17:27:00.000Z → 2026-04-24T17:58:00.000Z
-- [Contact asset filters](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/contact-asset-filters)
-  - Updated: 2023-04-17T23:20:00.000Z → 2026-04-24T17:58:00.000Z
-- [SSL certificate asset filters](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/ssl-certificate-asset-filters)
-  - Updated: 2023-04-17T23:20:00.000Z → 2026-04-24T17:58:00.000Z
-- [IP address asset filters](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/ip-address-asset-filters)
-  - Updated: 2023-07-19T17:27:00.000Z → 2026-04-24T17:58:00.000Z
-- [IP block asset filters](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/ip-block-asset-filters)
-  - Updated: 2023-04-17T23:20:00.000Z → 2026-04-24T17:58:00.000Z
-- [ASN asset filters](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/asn-asset-filters)
-  - Updated: 2023-04-17T23:20:00.000Z → 2026-04-24T17:58:00.000Z
-- [Deploying the Defender EASM Azure resource](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/deploying-the-defender-easm-azure-resource)
-  - Updated: 2023-10-11T22:21:00.000Z → 2026-04-24T17:58:00.000Z
-- *...and 2 more*
 
 ## Classified Pages
 

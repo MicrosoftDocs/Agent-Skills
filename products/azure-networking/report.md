@@ -38,10 +38,10 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 - **Unclassified**: 12
 
 ### Incremental Update
-- **New Pages**: 11
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 5
-- **Deleted Pages**: 23
+- **Unchanged**: 16
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-networking/azure-networking.csv`
 
 ## Classification Statistics
@@ -55,44 +55,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | *(Unclassified)* | 12 | 75.0% |
 
 ## Changes
-
-### New Pages
-
-- [Azure Networking overview](https://learn.microsoft.com/en-us/azure/networking/networking-overview)
-- [Network foundations overview](https://learn.microsoft.com/en-us/azure/networking/foundations/network-foundations-overview)
-- [Load balancing and content delivery overview](https://learn.microsoft.com/en-us/azure/networking/load-balancer-content-delivery/load-balancing-content-delivery-overview)
-- [Network security overview](https://learn.microsoft.com/en-us/azure/networking/security/network-security)
-- [Hybrid connectivity overview](https://learn.microsoft.com/en-us/azure/networking/hybrid-connectivity/hybrid-connectivity)
-- [Network monitoring and management overview](https://learn.microsoft.com/en-us/azure/networking/monitoring-management/)
-- [Architecture guides](https://learn.microsoft.com/en-us/azure/networking/architecture-guides)
-- [Working remotely](https://learn.microsoft.com/en-us/azure/networking/working-remotely-support)
-- [Overview](https://learn.microsoft.com/en-us/azure/networking/microsoft-global-network)
-- [Azure Resource Graph queries](https://learn.microsoft.com/en-us/azure/networking/resource-graph-samples)
-- [Lumenisity UoS Patents](https://learn.microsoft.com/en-us/azure/networking/lumenisity-patent-list)
-
-### Deleted Pages
-
-- ~~Check resource usage against Azure limits~~ (https://learn.microsoft.com/en-us/azure/networking/check-usage-against-limits)
-- ~~Control Plane Analysis~~ (https://learn.microsoft.com/en-us/azure/networking/connectivity-interoperability-control-plane)
-- ~~Data Plane Analysis~~ (https://learn.microsoft.com/en-us/azure/networking/connectivity-interoperability-data-plane)
-- ~~Preface and Test Setup~~ (https://learn.microsoft.com/en-us/azure/networking/connectivity-interoperability-preface)
-- ~~Create a Zero Trust network for web applications~~ (https://learn.microsoft.com/en-us/azure/networking/create-zero-trust-network-web-apps)
-- ~~Architecture guides~~ (https://learn.microsoft.com/en-us/azure/networking/fundamentals/architecture-guides)
-- ~~Lumenisity UoS Patents~~ (https://learn.microsoft.com/en-us/azure/networking/fundamentals/lumenisity-patent-list)
-- ~~About Azure networking~~ (https://learn.microsoft.com/en-us/azure/networking/fundamentals/networking-overview)
-- ~~Azure Resource Graph queries~~ (https://learn.microsoft.com/en-us/azure/networking/fundamentals/resource-graph-samples)
-- ~~Load balancing and content delivery~~ (https://learn.microsoft.com/en-us/azure/networking/load-balancer-content-delivery/)
-- ~~Microsoft global network~~ (https://learn.microsoft.com/en-us/azure/networking/microsoft-global-network)
-- ~~Network monitoring overview~~ (https://learn.microsoft.com/en-us/azure/networking/network-monitoring-overview)
-- ~~Providers~~ (https://learn.microsoft.com/en-us/azure/networking/networking-partners-msp)
-- ~~NVA accelerated connections~~ (https://learn.microsoft.com/en-us/azure/networking/nva-accelerated-connections)
-- ~~Azure Policy built-ins~~ (https://learn.microsoft.com/en-us/azure/networking/policy-reference)
-- ~~Choose a secure application delivery service~~ (https://learn.microsoft.com/en-us/azure/networking/secure-application-delivery)
-- ~~Choose a secure network topology~~ (https://learn.microsoft.com/en-us/azure/networking/secure-network-topology)
-- ~~Application Gateway WAF~~ (https://learn.microsoft.com/en-us/azure/networking/security/zero-trust-application-gateway-waf)
-- ~~Azure Firewall~~ (https://learn.microsoft.com/en-us/azure/networking/security/zero-trust-azure-firewall)
-- ~~Azure DDoS Protection~~ (https://learn.microsoft.com/en-us/azure/networking/security/zero-trust-ddos-protection)
-- *...and 3 more*
 
 ## Classified Pages
 

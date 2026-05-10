@@ -1,9 +1,9 @@
 ---
 name: azure-data-api-builder
-description: Expert knowledge for Azure Data Api Builder development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when defining DAB entities over SQL/Cosmos, exposing REST/GraphQL, securing auth/RLS, or deploying via Docker/Azure, and other Azure Data Api Builder related development tasks. Not for Azure API Management (use azure-api-management), Azure Functions (use azure-functions), Azure App Service (use azure-app-service), Azure Logic Apps (use azure-logic-apps).
+description: Expert knowledge for Azure Data Api Builder development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when exposing SQL/Cosmos via REST/GraphQL, tuning pagination/filters, securing JWT/Entra auth, or deploying DAB to Azure, and other Azure Data Api Builder related development tasks. Not for Azure API Management (use azure-api-management), Azure Functions (use azure-functions), Azure App Service (use azure-app-service), Azure Logic Apps (use azure-logic-apps).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-05"
+  generated_at: "2026-05-10"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Data Api Builder Skill
@@ -26,12 +26,12 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L36-L47 | Diagnosing and fixing DAB issues: config/CLI errors, SQL/Cosmos/MySQL/Postgres connection or query problems, GraphQL schema/auth, REST routing, and CORS/endpoint failures. |
 | Best Practices | L48-L54 | Configuring Data API builder for reliability and performance, securing endpoints and auth, and adding semantic descriptions/metadata to SQL MCP entities for better AI integration. |
-| Decision Making | L55-L60 | Guidance on where and how to deploy Data API builder, plus feature-by-feature comparisons and limitations across supported databases. |
-| Limits & Quotas | L61-L68 | Configuring SQL timeouts, setting REST/GraphQL pagination limits, and understanding database-specific capabilities and constraints in Data API builder. |
-| Security | L69-L82 | Configuring auth and security for DAB: JWT/Entra/EasyAuth/Simulator/anonymous, OBO SQL access, row-level security and policies, and SQL MCP Server authentication. |
-| Configuration | L83-L128 | Configuring Data API builder: CLI-based config, entities and autoentities, data sources (SQL/Cosmos), REST/GraphQL exposure, caching, security/secrets, logging/telemetry, and MCP SQL tools. |
-| Integrations & Coding Patterns | L129-L142 | GraphQL/REST usage patterns in DAB: exporting schemas, transactional mutations, pagination, filtering, sorting, and shaping/projecting fields for API responses. |
-| Deployment | L143-L151 | Deploying and running Data API builder or SQL MCP Server using Docker, source builds, and Azure services (Container Apps, Container Instances, AKS) including setup and configuration. |
+| Decision Making | L55-L59 | Guidance on where and how to deploy Data API builder, plus feature-by-feature comparisons and limitations across supported databases. |
+| Limits & Quotas | L60-L67 | Configuring SQL timeouts, setting REST/GraphQL pagination limits, and understanding database-specific capabilities and constraints in Data API builder. |
+| Security | L68-L81 | Configuring auth and security for DAB: JWT/Entra/EasyAuth/Simulator/anonymous, OBO SQL access, row-level security and policies, and SQL MCP Server authentication. |
+| Configuration | L82-L127 | Configuring Data API builder: CLI-based config, entities and autoentities, data sources (SQL/Cosmos), REST/GraphQL exposure, caching, security/secrets, logging/telemetry, and MCP SQL tools. |
+| Integrations & Coding Patterns | L128-L141 | GraphQL/REST usage patterns in DAB: exporting schemas, transactional mutations, pagination, filtering, sorting, and shaping/projecting fields for API responses. |
+| Deployment | L142-L148 | Deploying Data API builder and SQL MCP Server: compare Azure options, run via Docker or source builds, and deploy containers to Azure Container Apps. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -55,7 +55,6 @@ This skill requires **network access** to fetch documentation content:
 ### Decision Making
 | Topic | URL |
 |-------|-----|
-| Choose a deployment option for Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/deployment/ |
 | Compare Data API builder feature availability by database | https://learn.microsoft.com/en-us/azure/data-api-builder/feature-availability |
 
 ### Limits & Quotas
@@ -143,9 +142,7 @@ This skill requires **network access** to fetch documentation content:
 ### Deployment
 | Topic | URL |
 |-------|-----|
-| Deploy Data API builder to Azure Container Apps | https://learn.microsoft.com/en-us/azure/data-api-builder/deployment/azure-container-apps |
-| Deploy Data API builder to Azure Container Instances | https://learn.microsoft.com/en-us/azure/data-api-builder/deployment/azure-container-instances |
-| Deploy Data API builder to Azure Kubernetes Service | https://learn.microsoft.com/en-us/azure/data-api-builder/deployment/azure-kubernetes-service |
+| Compare Data API builder deployment options in Azure | https://learn.microsoft.com/en-us/azure/data-api-builder/deployment/ |
 | Run Data API builder in a Docker container | https://learn.microsoft.com/en-us/azure/data-api-builder/deployment/local-container |
 | Build and run Data API builder from source | https://learn.microsoft.com/en-us/azure/data-api-builder/deployment/run-from-source |
 | Deploy SQL MCP Server to Azure Container Apps | https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/quickstart-azure-container-apps |

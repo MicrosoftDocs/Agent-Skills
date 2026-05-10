@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 10
-- **Unchanged**: 70
+- **Updated Pages**: 0
+- **Unchanged**: 80
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-web-application-firewall/azure-web-application-firewall.csv`
 
@@ -75,29 +75,6 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | *(Unclassified)* | 16 | 20.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [Exclusion lists](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/waf-front-door-exclusion)
-  - Updated: 2025-12-16T18:11:00.000Z → 2026-04-30T08:00:00.000Z
-- [HTTP DDoS protection](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/http-ddos-ruleset)
-  - Updated: 2025-11-18T17:01:00.000Z → 2026-04-27T22:14:00.000Z
-- [Configure IP restrictions](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/waf-front-door-configure-ip-restriction)
-  - Updated: 2024-05-29T08:00:00.000Z → 2026-04-30T08:00:00.000Z
-- [CDN](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/waf-front-door-create-portal)
-  - Updated: 2024-07-15T08:00:00.000Z → 2026-05-01T06:12:00.000Z
-- [What is Azure Web Application Firewall?](https://learn.microsoft.com/en-us/azure/web-application-firewall/overview)
-  - Updated: 2025-11-10T08:00:00.000Z → 2026-04-28T22:22:00.000Z
-- [Web Application Firewall on Application Gateway](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/ag-overview)
-  - Updated: 2025-08-20T17:11:00.000Z → 2026-04-30T08:00:00.000Z
-- [Create WAF policy - portal](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/waf-front-door-create-portal)
-  - Updated: 2024-07-15T08:00:00.000Z → 2026-05-01T06:12:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/bot-protection-overview)
-  - Updated: 2025-09-08T22:37:00.000Z → 2026-04-29T06:37:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/custom-waf-rules-overview)
-  - Updated: 2025-03-30T23:13:00.000Z → 2026-05-01T11:12:00.000Z
-- [Geomatch custom rules](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/geomatch-custom-rules)
-  - Updated: 2025-05-12T22:03:00.000Z → 2026-04-29T06:37:00.000Z
 
 ## Classified Pages
 

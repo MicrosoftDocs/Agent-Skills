@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-03'
+generated_at: '2026-05-10'
 category_descriptions:
   configuration: Configuring IoT Edge devices, networking, gateways, provisioning
     (DPS, X.509, TPM, symmetric keys), EFLOW/VM settings, storage, proxies, and built-in/custom
@@ -78,8 +78,8 @@ confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Central
 
 ### Updated Pages
 
-- [Limits and restrictions](https://learn.microsoft.com/en-us/azure/iot-edge/iot-edge-limits-and-restrictions)
-  - Updated: 2026-04-13T22:10:00.000Z → 2026-05-01T11:12:00.000Z
+- [Version history and release notes](https://learn.microsoft.com/en-us/azure/iot-edge/version-history)
+  - Updated: 2026-03-12T08:00:00.000Z → 2026-05-07T06:30:00.000Z
 
 ## Classified Pages
 
@@ -181,7 +181,7 @@ confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Central
 | [Create hierarchies of IoT Edge devices](https://learn.microsoft.com/en-us/azure/iot-edge/tutorial-nested-iot-edge) | 0.20 | Tutorial on creating a nested hierarchy of IoT Edge devices. From the summary, it focuses on conceptual explanation and guided setup of hierarchical layers, without clear evidence of limits/quotas, decision matrices, security role tables, or other expert-knowledge-style configuration or troubleshooting content. |
 | [Develop modules with Visual Studio](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-visual-studio-develop-module) | 0.20 | Primarily a how-to/tutorial for developing and debugging IoT Edge modules in Visual Studio. From the summary, it focuses on using templates and supported architectures, without indicating detailed configuration tables, limits, error-code mappings, or product-specific settings that meet the expert-knowledge criteria for any sub-skill type. |
 | [IoT Edge runtime](https://learn.microsoft.com/en-us/azure/iot-edge/iot-edge-runtime) | 0.20 | Described as an explanation of runtime and architecture responsibilities; this is primarily conceptual architecture/overview content without clear decision matrices, limits, or configuration tables in the summary. |
-| [Version history and release notes](https://learn.microsoft.com/en-us/azure/iot-edge/version-history) | 0.20 | Release history and notes; summary does not indicate numeric limits, configuration tables, error-code mappings, or other structured expert details—primarily version/lifecycle info. |
+| [Version history and release notes](https://learn.microsoft.com/en-us/azure/iot-edge/version-history) | 0.20 | Release history and lifecycle note without detailed technical limits, configuration parameters, error codes, or decision matrices; primarily high-level version and support status information. |
 | [About Azure IoT Edge](https://learn.microsoft.com/en-us/azure/iot-edge/about-iot-edge) | 0.10 | High-level overview of Azure IoT Edge capabilities and concepts without product-specific limits, configuration parameters, or detailed operational guidance. |
 | [Benefits](https://learn.microsoft.com/en-us/azure/iot-edge/iot-edge-for-linux-on-windows-benefits) | 0.10 | Content is about benefits and high-level reasons to use IoT Edge for Linux on Windows. It is conceptual/marketing-style justification without detailed configuration, limits, or troubleshooting data. |
 | [Classify images with Custom Vision](https://learn.microsoft.com/en-us/azure/iot-edge/tutorial-deploy-custom-vision) | 0.10 | Tutorial for using Custom Vision with IoT Edge; focuses on example workflow rather than detailed configuration options, limits, or troubleshooting mappings. |

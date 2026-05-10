@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-03'
+generated_at: '2026-05-10'
 category_descriptions:
   security: 'Securing IoT Hub, DPS, and Device Update: auth (Entra ID, RBAC, SAS,
     X.509), certificates and revocation, TLS/ciphers, keys, network/IP controls, private
@@ -53,9 +53,9 @@ confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Central (use az
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 197
-- **Deleted Pages**: 3
+- **Updated Pages**: 3
+- **Unchanged**: 198
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-iot-hub/azure-iot-hub.csv`
 
 ## Classification Statistics
@@ -77,20 +77,12 @@ confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Central (use az
 
 ### Updated Pages
 
-- [Query language overview](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-query-language)
-  - Updated: 2025-03-28T08:00:00.000Z → 2026-04-30T06:12:00.000Z
-- [Troubleshoot device connectivity](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-troubleshoot-connectivity)
-  - Updated: 2024-07-30T22:08:00.000Z → 2026-04-30T06:12:00.000Z
-- [DPS FAQ](https://learn.microsoft.com/en-us/azure/iot-dps/dps-faq)
-  - Updated: 2025-12-18T23:12:00Z → 2026-04-24T22:19:00Z
-- [What is IoT Hub Device Provisioning Service?](https://learn.microsoft.com/en-us/azure/iot-dps/about-iot-dps)
-  - Updated: 2025-02-28T05:35:00.000Z → 2026-01-22T19:36:00.000Z
-
-### Deleted Pages
-
-- ~~Job queries~~ (https://learn.microsoft.com/en-us/azure/iot-hub/query-jobs)
-- ~~Device and module twin queries~~ (https://learn.microsoft.com/en-us/azure/iot-hub/query-twins)
-- ~~Test device connectivity~~ (https://learn.microsoft.com/en-us/azure/iot-hub/tutorial-connectivity)
+- [Microsoft certificate management (preview)](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-certificate-management-overview)
+  - Updated: 2026-04-15T22:11:00.000Z → 2026-05-06T11:15:00.000Z
+- [Key concepts for certificate management](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-certificate-management-concepts)
+  - Updated: 2025-11-18T17:01:00.000Z → 2026-05-06T06:11:00.000Z
+- [Device Update account and instance](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-resources)
+  - Updated: 2023-03-09T00:00:00.000Z → 2026-05-08T22:13:00.000Z
 
 ## Classified Pages
 
@@ -271,24 +263,24 @@ confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Central (use az
 | [Automate provisioning with GitHub Actions](https://learn.microsoft.com/en-us/azure/iot-dps/tutorial-automation-github-actions) | 0.30 | GitHub Actions GitOps tutorial; CI/CD example but no tier support matrix or deployment constraints by SKU. |
 | [Automatic device management at scale](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-automatic-device-management) | 0.30 | High-level description of automatic device management; no detailed limits, configs, or decision matrices beyond what an LLM likely knows. |
 | [Custom allocation policies](https://learn.microsoft.com/en-us/azure/iot-dps/concepts-custom-allocation) | 0.30 | Explains custom allocation policies conceptually; lacks decision matrices with thresholds or detailed integration parameter tables. |
-| [Device Update account and instance](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-resources) | 0.30 | Resource overview for Device Update accounts/instances; no detailed limits, configs, or patterns beyond what an LLM likely knows. |
 | [Device Update agent](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-agent-overview) | 0.30 | Agent conceptual structure overview; no indication of config parameters, limits, or troubleshooting mappings. |
 | [Frequently asked questions](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-faq) | 0.30 | FAQ about new features; likely conceptual and policy-focused rather than detailed technical limits or config parameters. |
-| [Microsoft certificate management (preview)](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-certificate-management-overview) | 0.30 | Described as a conceptual overview of certificate management; likely focuses on what the feature is and benefits, not detailed config parameters or limits. |
 | [Provision devices with X.509](https://learn.microsoft.com/en-us/azure/iot-dps/tutorial-custom-hsm-enrollment-group-x509) | 0.30 | Tutorial for X.509 enrollment groups; likely includes some DPS-specific steps but primarily procedural, not configuration or security reference. |
 | [Provision devices with symmetric keys](https://learn.microsoft.com/en-us/azure/iot-dps/how-to-legacy-device-symm-key) | 0.30 | Tutorial for symmetric key enrollment groups; mostly how-to steps without detailed security role mappings or config tables. |
 | [Provision for geolatency](https://learn.microsoft.com/en-us/azure/iot-dps/how-to-provision-multitenant) | 0.30 | Tutorial for geo-latency provisioning; scenario-focused guidance without quantified thresholds or configuration matrices. |
 | [Query language overview](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-query-language) | 0.30 | Primarily explains the IoT Hub SQL-like query language conceptually. While it likely includes syntax and examples, it doesn't fit any targeted sub-skill: no numeric limits, no decision matrices, no config parameter tables, no security roles, and not organized as troubleshooting. It’s more of a language reference/overview than expert configuration or limits content. |
 | [Roles and operations](https://learn.microsoft.com/en-us/azure/iot-dps/concepts-roles-operations) | 0.30 | Describes roles and operations conceptually; no detailed security roles, limits, or configuration parameters. |
 | [Use custom allocation policies](https://learn.microsoft.com/en-us/azure/iot-dps/tutorial-custom-allocation-policies) | 0.30 | Tutorial on custom allocation policies; describes using Azure Functions webhook but not as a decision matrix or best-practices reference. |
-| [Key concepts for certificate management](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-certificate-management-concepts) | 0.25 | Key concepts article; focuses on explaining certificate management ideas, not detailed configuration or limits. |
 | [ARM template](https://learn.microsoft.com/en-us/azure/iot-dps/quick-setup-auto-provision-rm) | 0.20 | ARM template quickstart; shows a sample template but not a full configuration reference or constraints. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/iot-dps/quick-setup-auto-provision-cli) | 0.20 | CLI quickstart for creating resources; mostly step-by-step commands without configuration tables or expert-only details. |
 | [Azure Device Registry integration (preview)](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-device-registry-overview) | 0.20 | Conceptual overview of ADR integration; background article without indication of numeric thresholds, config tables, or decision matrices. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/iot-dps/quick-setup-auto-provision) | 0.20 | Portal quickstart focused on basic setup steps; no detailed configuration matrices, limits, or product-specific best practices. |
 | [Bicep](https://learn.microsoft.com/en-us/azure/iot-dps/quick-setup-auto-provision-bicep) | 0.20 | Bicep deployment quickstart; shows one deployment pattern but not a constraints matrix or tier-specific deployment rules. |
 | [Create message routes and endpoints](https://learn.microsoft.com/en-us/azure/iot-hub/how-to-routing-portal) | 0.20 | Step-by-step portal tutorial for creating and deleting IoT Hub routes and endpoints; no indication of configuration tables, limits, error codes, or product-specific best-practice guidance beyond generic how-to instructions. |
+| [Device Update account and instance](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-resources) | 0.20 | Page is a conceptual/resources overview for Device Update for Azure IoT Hub (accounts, instances, basic resource relationships). It does not list numeric limits, configuration parameter tables, error codes, or decision matrices with quantified trade-offs, so it does not meet any sub-skill expert-knowledge criteria. |
+| [Key concepts for certificate management](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-certificate-management-concepts) | 0.20 | Page introduces key concepts for certificate management in Azure IoT Hub, focusing on fundamental ideas and preview disclaimers. The summary does not indicate specific numeric limits, configuration options with defaults, security role definitions, or error-code-based troubleshooting. It is conceptual documentation, not expert-level configuration, limits, or troubleshooting content. |
 | [Libraries and SDKs](https://learn.microsoft.com/en-us/azure/iot-dps/libraries-sdks) | 0.20 | Primarily a catalog/overview of available SDKs; no detailed configuration tables, limits, or product-specific troubleshooting content. |
+| [Microsoft certificate management (preview)](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-certificate-management-overview) | 0.20 | Page is an overview of Microsoft-backed X.509 certificate management for Azure IoT Hub/ADR, describing what the feature is and its high-level benefits. The summary shows no concrete limits, configuration parameter tables, RBAC role lists, or troubleshooting error mappings. Content is conceptual rather than detailed, product-specific expert guidance. |
 | [Send telemetry using CLI](https://learn.microsoft.com/en-us/azure/iot-hub/quickstart-send-telemetry-cli) | 0.20 | Quickstart tutorial for sending telemetry; focuses on basic workflow, not deep configuration, limits, or troubleshooting mappings. |
 | [Symmetric key sample](https://learn.microsoft.com/en-us/azure/iot-dps/quick-create-simulated-device-symm-key) | 0.20 | Tutorial for provisioning a simulated symmetric key device; mostly procedural without detailed config tables or limits. |
 | [TPM device sample](https://learn.microsoft.com/en-us/azure/iot-dps/quick-create-simulated-device-tpm) | 0.20 | Tutorial for provisioning a TPM simulated device; focused on example flow, not on limits, config matrices, or error mappings. |

@@ -1,9 +1,9 @@
 ---
 name: azure-database-migration
-description: Expert knowledge for Azure Database Migration service development including troubleshooting, decision making, limits & quotas, security, integrations & coding patterns, and deployment. Use when planning Azure DMS migrations for MySQL, PostgreSQL, SQL Server/SSIS, SQL MI, or MongoDB workloads, and other Azure Database Migration service related development tasks. Not for Azure Migrate (use azure-migrate), Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines).
+description: Expert knowledge for Azure Database Migration service development including troubleshooting, decision making, limits & quotas, security, integrations & coding patterns, and deployment. Use when migrating SQL/MySQL/PostgreSQL/MongoDB with Azure DMS, SSIS to Azure SQL/MI, or automating via PowerShell, and other Azure Database Migration service related development tasks. Not for Azure Migrate (use azure-migrate), Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-05-10"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Database Migration service Skill
@@ -24,8 +24,8 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L34-L39 | Diagnosing and resolving Azure DMS classic migration failures and source DB connectivity issues (network, auth, firewall, TLS) during database migrations. |
-| Decision Making | L40-L46 | Choosing the right Azure DMS tool and scenario for your source/target databases, plus FAQs on supported migrations, limitations, and how to use Azure Database Migration Service. |
+| Troubleshooting | L34-L40 | Diagnosing and fixing Azure DMS issues: migration failures, classic DMS problems, and source database connectivity errors, including common causes, logs, and remediation steps. |
+| Decision Making | L41-L46 | Choosing the right Azure DMS tool and scenario for your source/target databases, plus FAQs on supported migrations, limitations, and how to use Azure Database Migration Service. |
 | Limits & Quotas | L47-L55 | Migration-specific limits, unsupported features, and constraints when using Azure DMS to move MySQL, PostgreSQL, SQL Managed Instance, MongoDB, and hybrid deployments. |
 | Security | L56-L61 | Security guidance for Azure DMS migrations, including SQL best practices (network, auth, encryption) and configuring custom RBAC roles for MySQL migration scenarios. |
 | Integrations & Coding Patterns | L62-L66 | Automating MySQL-to-Azure Database for MySQL migrations using Azure Database Migration Service with PowerShell scripts, parameters, and end-to-end workflow examples. |
@@ -34,6 +34,7 @@ This skill requires **network access** to fetch documentation content:
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
+| Resolve common Azure Database Migration Service issues | https://learn.microsoft.com/en-us/azure/dms/faq |
 | Troubleshoot common Azure DMS classic migration issues | https://learn.microsoft.com/en-us/azure/dms/known-issues-troubleshooting-dms |
 | Fix Azure DMS source database connectivity problems | https://learn.microsoft.com/en-us/azure/dms/known-issues-troubleshooting-dms-source-connectivity |
 
@@ -41,7 +42,6 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Choose database migration tools with the Azure DMS matrix | https://learn.microsoft.com/en-us/azure/dms/dms-tools-matrix |
-| Answer common Azure Database Migration Service usage questions | https://learn.microsoft.com/en-us/azure/dms/faq |
 | Select supported Azure DMS migration scenarios | https://learn.microsoft.com/en-us/azure/dms/resource-scenario-status |
 
 ### Limits & Quotas

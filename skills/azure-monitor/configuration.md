@@ -8,7 +8,6 @@
 | Topic | URL |
 |-------|-----|
 | Configure Azure Monitor Agent settings via DCR | https://learn.microsoft.com/en-us/azure/azure-monitor/agents/agent-settings |
-| Azure Monitor Agent VM extension version reference | https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-extension-versions |
 | Configure Azure Monitor Agent network and proxy settings | https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-network-configuration |
 | Install and configure Azure Monitor Agent on Windows clients | https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-windows-client |
 | Configure ARM template to send Windows VM guest OS metrics | https://learn.microsoft.com/en-us/azure/azure-monitor/agents/collect-custom-metrics-guestos-resource-manager-vm |
@@ -36,7 +35,7 @@
 | Deploy Azure Monitor resource health alerts via ARM | https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/resource-manager-alerts-resource-health |
 | Deploy Azure Monitor service health alerts via ARM | https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/resource-manager-alerts-service-health |
 | Deploy simple log search alerts via ARM templates | https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/resource-manager-alerts-simple-log-search-alerts |
-| Configure Application Insights connection string settings | https://learn.microsoft.com/en-us/azure/azure-monitor/app/connection-strings |
+| Configure Application Insights connection strings securely | https://learn.microsoft.com/en-us/azure/azure-monitor/app/connection-strings |
 | Create and configure workspace-based Application Insights | https://learn.microsoft.com/en-us/azure/azure-monitor/app/create-workspace-resource |
 | Understand Application Insights telemetry schema and fields | https://learn.microsoft.com/en-us/azure/azure-monitor/app/data-model-complete |
 | Configure Application Insights for Java in containers | https://learn.microsoft.com/en-us/azure/azure-monitor/app/java-get-started-supplemental |
@@ -48,7 +47,6 @@
 | Configure OpenTelemetry settings in Application Insights | https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-configuration |
 | Enable Azure Monitor OpenTelemetry for Application Insights | https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-enable |
 | Filter OpenTelemetry telemetry in Application Insights | https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-filter |
-| Configure OpenTelemetry sampling for Azure Application Insights | https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-sampling |
 | Customize the Application Insights overview dashboard | https://learn.microsoft.com/en-us/azure/azure-monitor/app/overview-dashboard |
 | Configure autoscale using Application Insights custom metrics | https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-custom-metric |
 | Configure diagnostics logs and metrics for autoscale | https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-diagnostics |
@@ -70,6 +68,8 @@
 | Configure throttling parameters and monitor log loss in Container Insights | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-throttling |
 | Configure DCR transformations for Kubernetes container logs | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-transformations |
 | Configure workspace transformations for AKS control plane logs | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/control-plane-transformations |
+| Configure codeless Application Insights for AKS workloads | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/kubernetes-codeless |
+| Configure AKS autoinstrumentation for Python and .NET | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/kubernetes-codeless-python-net |
 | Configure Kubernetes ConfigMap for Azure Monitor log collection | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/kubernetes-data-collection-configmap |
 | Customize and filter Azure Monitor data collection for Kubernetes | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/kubernetes-data-collection-configure |
 | Enable recommended metric alert rules for Kubernetes clusters | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/kubernetes-metric-alerts |
@@ -125,7 +125,7 @@
 | Use standard columns in Azure Monitor log records | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-standard-columns |
 | Configure continuous data export from Log Analytics | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/logs-data-export |
 | Configure and manage tables in Log Analytics workspaces | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/manage-logs-tables |
-| Link customer-managed storage accounts to Log Analytics | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/private-storage |
+| Configure customer-managed storage for Azure Monitor Logs | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/private-storage |
 | Configure and interpret Azure Monitor log query audit logs | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/query-audit |
 | Configure and use query packs in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/query-packs |
 | Create Log Analytics workspaces for Azure Monitor Logs | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/quick-create-workspace |
@@ -451,7 +451,6 @@
 | Use AADDomainServicesDNSAuditsDynamicUpdates for DNS dynamic update tracking | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aaddomainservicesdnsauditsdynamicupdates |
 | Use AADDomainServicesDNSAuditsGeneral for DNS server audit events | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aaddomainservicesdnsauditsgeneral |
 | Understand AADGraphActivityLogs Azure Monitor schema and fields | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aadgraphactivitylogs |
-| Use AADManagedIdentitySignInLogs for managed identity sign-in analysis | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aadmanagedidentitysigninlogs |
 | Analyze non-interactive user sign-ins via AADNonInteractiveUserSignInLogs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aadnoninteractiveusersigninlogs |
 | Use AADProvisioningLogs for Azure AD provisioning diagnostics | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aadprovisioninglogs |
 | Understand AADRiskyAgents Azure Monitor log schema | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aadriskyagents |
@@ -497,19 +496,10 @@
 | Analyze ACSOptOutManagementOperations Azure Monitor logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/acsoptoutmanagementoperations |
 | Inspect ACS rooms incoming operations and summaries | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/acsroomsincomingoperations |
 | Analyze ACS SMS incoming operations logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/acssmsincomingoperations |
-| Query AD assessment recommendation log data | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/adassessmentrecommendation |
-| Query AddonAzureBackupAlerts for backup alert telemetry | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/addonazurebackupalerts |
-| Use AddonAzureBackupJobs table for backup job monitoring | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/addonazurebackupjobs |
-| Analyze AddonAzureBackupProtectedInstance backup instance logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/addonazurebackupprotectedinstance |
-| Query AddonAzureBackupStorage for backup storage usage | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/addonazurebackupstorage |
-| Use ADF activity run logs in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/adfactivityrun |
 | Inspect ADF Airflow scheduler logs schema | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/adfairflowschedulerlogs |
 | Use ADF Airflow task logs in monitoring | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/adfairflowtasklogs |
 | Analyze ADF Airflow web logs schema | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/adfairflowweblogs |
 | Inspect ADF Airflow worker logs schema | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/adfairflowworkerlogs |
-| Use ADF pipeline run logs in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/adfpipelinerun |
-| Use ADF sandbox activity run logs schema | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/adfsandboxactivityrun |
-| Use ADFSandboxPipelineRun Azure Monitor Logs schema | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/adfsandboxpipelinerun |
 | Query ADFS sign-in logs in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/adfssigninlogs |
 | Query ADF SSIS integration runtime logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/adfssisintegrationruntimelogs |
 | Inspect SSIS package event message context logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/adfssispackageeventmessagecontext |
@@ -517,9 +507,6 @@
 | Analyze SSIS package executable statistics logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/adfssispackageexecutablestatistics |
 | Inspect SSIS package execution component phase logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/adfssispackageexecutioncomponentphases |
 | Use SSIS package execution data statistics logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/adfssispackageexecutiondatastatistics |
-| Query ADFTriggerRun Azure Monitor Logs schema | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/adftriggerrun |
-| Analyze ADReplicationResult Azure Monitor Logs schema | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/adreplicationresult |
-| Use ADSecurityAssessmentRecommendation log table schema | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/adsecurityassessmentrecommendation |
 | Work with ADTDataHistoryOperation Azure Monitor schema | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/adtdatahistoryoperation |
 | Query ADTDigitalTwinsOperation logs in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/adtdigitaltwinsoperation |
 | Use ADTEventRoutesOperation Azure Monitor log schema | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/adteventroutesoperation |
@@ -571,16 +558,11 @@
 | Use AKSAuditAdmin schema for modifying API operations | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aksauditadmin |
 | Analyze AKSControlPlane diagnostic logs schema | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/akscontrolplane |
 | Use ALBHealthEvent Azure Monitor load balancer schema | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/albhealthevent |
-| Query legacy Alert table for older log search alerts | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/alert |
 | Use AlertEvidence table to inspect entities in alerts | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/alertevidence |
-| Query AlertHistory for historical alert state changes | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/alerthistory |
 | Use AlertInfo table for Defender alert metadata | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/alertinfo |
 | Understand AMAHealth Azure Monitor Logs table schema | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/amahealth |
-| Query AmlComputeClusterEvent for Azure ML cluster events | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/amlcomputeclusterevent |
-| Use AmlComputeClusterNodeEvent for node-level ML events | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/amlcomputeclusternodeevent |
 | Analyze AmlComputeCpuGpuUtilization for ML resource usage | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/amlcomputecpugpuutilization |
 | Query AmlComputeInstanceEvent for ML compute instance access | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/amlcomputeinstanceevent |
-| Use AmlComputeJobEvent to track Azure ML jobs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/amlcomputejobevent |
 | Query AmlDataLabelEvent for ML data labeling activity | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/amldatalabelevent |
 | Use AmlDataSetEvent for dataset access and changes | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/amldatasetevent |
 | Query AmlDataStoreEvent for ML datastore operations | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/amldatastoreevent |
@@ -598,7 +580,6 @@
 | Monitor ML run status via AmlRunStatusChangedEvent | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/amlrunstatuschangedevent |
 | Query Sentinel anomaly results from Anomalies table | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/anomalies |
 | Analyze LLM gateway activity with ApiManagementGatewayLlmLog | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/apimanagementgatewayllmlog |
-| Use ApiManagementGatewayLogs for API gateway diagnostics | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/apimanagementgatewaylogs |
 | Monitor MCP requests via ApiManagementGatewayMCPLog | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/apimanagementgatewaymcplog |
 | Track WebSocket connections with ApiManagementWebSocketConnectionLogs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/apimanagementwebsocketconnectionlogs |
 | Query availability test results via AppAvailabilityResults | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/appavailabilityresults |
@@ -633,8 +614,6 @@
 | Work with AppTraces Application Insights trace logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/apptraces |
 | Query ArcK8sControlPlane diagnostic logs in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/arck8scontrolplane |
 | Understand ASimAssetEntityLogs Azure Monitor schema and fields | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asimassetentitylogs |
-| Inspect AutoscaleEvaluationsLog autoscale evaluation records | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/autoscaleevaluationslog |
-| Review AutoscaleScaleActionsLog autoscale action logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/autoscalescaleactionslog |
 | Understand AWS ALB access log table schema in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/awsalbaccesslogs |
 | Understand AWS ELB flow log table schema in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/awselbflowlogs |
 | Understand AWS NLB access log table schema in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/awsnlbaccesslogs |
@@ -643,16 +622,10 @@
 | Use AZMSOperationalLogs for Event Hubs and Service Bus ops | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azmsoperationallogs |
 | Analyze AZMSRunTimeAuditLogs for Event Hubs and Service Bus | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azmsruntimeauditlogs |
 | Inspect AZMSVnetConnectionEvents for network filtering logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azmsvnetconnectionevents |
-| Query AzureActivity subscription and management group events | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azureactivity |
-| Use AzureAssessmentRecommendation scheduled assessment results | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azureassessmentrecommendation |
 | Query AzureBackupOperations backup operation details | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azurebackupoperations |
-| Work with AzureDiagnostics multi-service resource log schema | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azurediagnostics |
 | Monitor AzureLoadTestingOperation resource operations | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azureloadtestingoperation |
-| Query AzureMetrics platform metric data in Logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azuremetrics |
 | Use AzureMetricsV2 table schema in Azure Monitor Logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azuremetricsv2 |
 | Use AzureMonitorPipelineLogErrors table for pipeline error analysis | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azuremonitorpipelinelogerrors |
-| Inspect BlockchainApplicationLog Azure Monitor table schema | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/blockchainapplicationlog |
-| Use BlockchainProxyLog table for blockchain proxy diagnostics | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/blockchainproxylog |
 | Query CassandraLogs table schema in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/cassandralogs |
 | Query CCFApplicationLogs confidential consortium framework logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ccfapplicationlogs |
 | Analyze CDBCassandraRequests Cosmos DB Cassandra operations | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/cdbcassandrarequests |
@@ -678,21 +651,15 @@
 | Use CommunicationComplianceActivity logs for policy monitoring | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/communicationcomplianceactivity |
 | Query ComputerGroup table to scope Azure Monitor logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/computergroup |
 | Use ConfidentialWatchlist table in Microsoft Sentinel | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/confidentialwatchlist |
-| Analyze ConfigurationChange table for guest configuration drift | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/configurationchange |
-| Use ConfigurationData table for current guest state | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/configurationdata |
 | Query ContainerAppConsoleLogs for app container output | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/containerappconsolelogs |
 | Use ContainerAppSystemLogs for platform diagnostics | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/containerappsystemlogs |
 | Query ContainerEvent table for container events | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/containerevent |
-| Use ContainerImageInventory table for image tracking | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/containerimageinventory |
 | Analyze ContainerInstanceLog table for instance logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/containerinstancelog |
 | Use ContainerInventory table for container metadata | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/containerinventory |
 | Query ContainerLog table for container stdout/stderr | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/containerlog |
 | Use ContainerLogV2 table for Kubernetes container logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/containerlogv2 |
 | Use ContainerNetworkLogs table schema in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/containernetworklogs |
 | Use ContainerNodeInventory table for host information | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/containernodeinventory |
-| Query ContainerRegistryLoginEvents for ACR login auditing | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/containerregistryloginevents |
-| Use ContainerRegistryRepositoryEvents for ACR repository logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/containerregistryrepositoryevents |
-| Access ContainerServiceLog table reference for AKS logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/containerservicelog |
 | Query and interpret CopilotActivity Azure Monitor table | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/copilotactivity |
 | Use CrowdStrikeAlerts table for Sentinel alert ingestion | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/crowdstrikealerts |
 | Work with CrowdStrikeCases table in Microsoft Sentinel | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/crowdstrikecases |
@@ -780,13 +747,6 @@
 | Use DeviceTvmSoftwareInventory schema for software lists | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicetvmsoftwareinventory |
 | Query identity-related events with TVM vulnerabilities schema | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicetvmsoftwarevulnerabilities |
 | Use DeviceTvmSoftwareVulnerabilitiesKB schema for CVE data | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicetvmsoftwarevulnerabilitieskb |
-| Access DHAppReliability table for application reliability data | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/dhappreliability |
-| Access DHDriverReliability table for driver reliability logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/dhdriverreliability |
-| Access DHLogonFailures table for logon failure metrics | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/dhlogonfailures |
-| Access DHLogonMetrics table for logon performance data | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/dhlogonmetrics |
-| Access DHOSCrashData table for OS crash telemetry | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/dhoscrashdata |
-| Access DHOSReliability table for OS reliability metrics | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/dhosreliability |
-| Access DHWipAppLearning table for WIP app learning data | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/dhwipapplearning |
 | Query DNS server audit logs via DnsAuditEvents schema | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/dnsauditevents |
 | Use DNSQueryLogs table to monitor virtual network DNS | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/dnsquerylogs |
 | Query DSMAzureBlobStorageLogs schema in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/dsmazureblobstoragelogs |
@@ -868,7 +828,6 @@
 | Analyze HDInsightStormTopologyMetrics topology schema | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/hdinsightstormtopologymetrics |
 | Use HealthStateChangeEvent workload health schema | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/healthstatechangeevent |
 | Query Heartbeat table for agent health monitoring | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/heartbeat |
-| Use HuntingBookmark table for Sentinel bookmarks | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/huntingbookmark |
 | Use IdentityAccountInfo table in Azure Monitor Logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/identityaccountinfo |
 | Query IdentityDirectoryEvents for directory changes | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/identitydirectoryevents |
 | Use IdentityEvents table in Azure Monitor Logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/identityevents |
@@ -876,14 +835,8 @@
 | Analyze IdentityLogonEvents for on-prem AD auth | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/identitylogonevents |
 | Query IdentityQueryEvents for AD object access | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/identityqueryevents |
 | Use IlumioInsights Sentinel connector log schema | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ilumioinsights |
-| Use InsightsMetrics table for Azure Monitor metrics | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/insightsmetrics |
-| Query IntuneAuditLogs schema for Intune auditing | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/intuneauditlogs |
 | Use IntuneDeviceComplianceOrg specialist report schema | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/intunedevicecomplianceorg |
 | Query IntuneDevices specialist report table schema | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/intunedevices |
-| Use IntuneOperationalLogs schema for operations data | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/intuneoperationallogs |
-| Query KeyVaults Azure Monitor log table schema | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/keyvaults |
-| Use KubeEvents table for Kubernetes event schema | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/kubeevents |
-| Query KubeHealth table for Kubernetes health schema | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/kubehealth |
 | Use KubeMonAgentEvents table for Kubernetes monitoring | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/kubemonagentevents |
 | Query Kubernetes node data in KubeNodeInventory | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/kubenodeinventory |
 | Use KubePodInventory for pod and container logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/kubepodinventory |
@@ -896,7 +849,6 @@
 | Use LedgerUserDefinedLogs table in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ledgeruserdefinedlogs |
 | Track Logic Apps B2B messages in LIATrackingEvents | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/liatrackingevents |
 | Use LogicAppWorkflowRuntime logs for workflow diagnostics | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/logicappworkflowruntime |
-| Use McasShadowItReporting logs for Shadow IT analysis | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/mcasshadowitreporting |
 | Use MCCEventLogs for cache performance monitoring | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/mcceventlogs |
 | Audit MCVP service transactions via MCVPAuditLogs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/mcvpauditlogs |
 | Monitor MCVP operations with MCVPOperationLogs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/mcvpoperationlogs |
@@ -911,100 +863,181 @@
 | Use MessageEvents Azure Monitor logs schema | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/messageevents |
 | Use MessagePostDeliveryEvents logs schema | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/messagepostdeliveryevents |
 | Use MessageUrlInfo Azure Monitor logs schema | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/messageurlinfo |
-| Use Azure Monitor tables for Azure Spring Apps | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-appplatform_spring |
-| Interpret Azure Monitor logs for CDN Edge Actions | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-cdn_edgeactions |
-| Understand Azure Monitor tables for Databricks workspaces | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-databricks_workspaces |
-| Understand Azure Monitor tables for Data Factory factories | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-datafactory_factories |
-| Query ASRv2 replication vault health and job logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-datareplication_replicationvaults |
-| Use Azure Monitor tables for Data Share accounts | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-datashare_accounts |
-| Monitor Azure Database for MariaDB servers with tables | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-dbformariadb_servers |
-| Monitor MySQL Flexible Servers logs and metrics | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-dbformysql_flexibleservers |
-| Monitor Azure Database for MySQL servers with tables | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-dbformysql_servers |
-| Monitor PostgreSQL Flexible Servers with Azure Monitor tables | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-dbforpostgresql_flexibleservers |
-| Monitor Azure Database for PostgreSQL servers with tables | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-dbforpostgresql_servers |
-| Monitor Azure PostgreSQL servers v2 with tables | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-dbforpostgresql_serversv2 |
-| Use Azure Monitor tables for AVD application groups | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-desktopvirtualization_applicationgroups |
-| Monitor AVD host pools with Azure Monitor tables | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-desktopvirtualization_hostpools |
-| Use Azure Monitor tables for AVD workspaces | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-desktopvirtualization_workspaces |
-| Monitor Azure DevCenter dev boxes with tables | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-devcenter_devcenters |
-| Monitor Azure IoT Hubs with Azure Monitor tables | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-devices_iothubs |
-| Monitor IoT Hub provisioning services with tables | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-devices_provisioningservices |
-| Monitor Managed DevOps Pools provisioning with tables | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-devopsinfrastructure_pools |
-| Query Azure Digital Twins operational and data history logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-digitaltwins_digitaltwinsinstances |
-| Monitor Azure Cosmos DB Cassandra clusters with tables | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-documentdb_cassandraclusters |
-| Use Azure Monitor tables for Cosmos DB database accounts | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-documentdb_databaseaccounts |
-| Monitor Cosmos DB Mongo vCore clusters with tables | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-documentdb_mongoclusters |
-| Monitor Durable Task schedulers with Azure Monitor tables | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-durabletask_schedulers |
-| Monitor Azure Edge workload orchestration diagnostics | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-edge_diagnostics |
-| Monitor Event Grid domains with request and failure logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-eventgrid_domains |
-| Monitor Event Grid namespaces HTTP and MQTT failures | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-eventgrid_namespaces |
-| Monitor Event Grid partner namespaces with logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-eventgrid_partnernamespaces |
-| Monitor Event Grid partner topics delivery failures | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-eventgrid_partnertopics |
-| Monitor Event Grid system topics delivery failures | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-eventgrid_systemtopics |
-| Monitor Event Grid topics with request and failure logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-eventgrid_topics |
-| Use Azure Monitor tables for Event Hubs namespaces | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-eventhub_namespaces |
-| Monitor experimentation workspaces with Azure Monitor tables | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-experimentation_experimentworkspaces |
-| Monitor Microsoft Graph tenants with audit logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-graph_tenants |
-| Monitor Azure Cloud HSM clusters and commands | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-hardwaresecuritymodules_cloudhsmclusters |
-| Monitor HDInsight clusters with Azure Monitor tables | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-hdinsight_clusters |
-| Monitor Azure Healthcare APIs services with tables | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-healthcareapis_services |
-| Monitor Azure Health Data DICOM and MedTech logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-healthcareapis_workspaces |
-| Monitor Healthcare Interoperability workspaces with logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-healthcareinterop_workspaces |
-| Monitor Health Data AI de-identification service audits | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-healthdataaiservices_deidservices |
-| Monitor hybrid Kubernetes clusters and containers with tables | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-hybridcontainerservice_provisionedclusters |
-| Monitor autoscale settings with Azure Monitor tables | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-insights_autoscalesettings |
-| Use Azure Monitor tables for Application Insights telemetry | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-insights_components |
-| Monitor DCR-based data collection errors with tables | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-insights_datacollectionrules |
-| Use Azure Monitor tables for Azure Data Explorer clusters | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-kusto_clusters |
-| Use Azure Monitor tables for Log Analytics workspaces | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-operationalinsights_workspaces |
-| Use Azure Monitor table schema for Orbital geocatalogs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-orbital_geocatalogs |
-| Analyze Azure PlayFab title audit logs schema | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-playfab_titles |
-| Monitor Power BI tenant engine events in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-powerbi_tenants |
-| Monitor Power BI workspace engine events via Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-powerbi_tenants_workspaces |
-| Use Azure Monitor tables for Power BI Dedicated capacities | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-powerbidedicated_capacities |
-| Interpret Azure Monitor tables for Microsoft Purview accounts | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-purview_accounts |
-| Use Azure Monitor tables for Recovery Services vault jobs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-recoveryservices_vaults |
-| Analyze Azure Relay namespace and network logs schema | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-relay_namespaces |
-| Use Azure Monitor tables for SCVMM virtual machines | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-scvmm_virtualmachines |
-| Monitor Azure Cognitive Search services with table schema | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-search_searchservices |
-| Understand Defender for Storage settings log schema | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-security_defenderforstoragesettings |
-| Use Defender for Cloud attack path logs schema | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-security_security |
-| Work with Microsoft Sentinel normalized alert events table | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-securityinsights_alerteventnormalized |
-| Understand Microsoft Sentinel ASIM normalized tables schema | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-securityinsights_asimtables |
-| Use microsoft.securityinsights_assetentitynormalized Azure Monitor table | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-securityinsights_assetentitynormalized |
-| Use Microsoft Sentinel normalized audit events table | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-securityinsights_auditeventnormalized |
-| Use Microsoft Sentinel normalized authentication events table | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-securityinsights_authenticationevent |
-| Ingest and query CEF events in Microsoft Sentinel | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-securityinsights_cef |
-| Use Microsoft Sentinel normalized DNS activity table | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-securityinsights_dnsnormalized |
-| Use Microsoft Sentinel normalized network session table | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-securityinsights_networksessionnormalized |
-| Use Microsoft Sentinel normalized process events table | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-securityinsights_processeventnormalized |
-| Analyze Purview data sensitivity logs in Sentinel | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-securityinsights_purview |
-| Work with aggregated security and DNS audit logs in Sentinel | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-securityinsights_securityinsights |
-| Use Microsoft Sentinel threat intelligence tables schema | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-securityinsights_threatintelligence |
-| Use Microsoft Sentinel ASIM web session logs schema | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-securityinsights_websessionlogs |
-| Interpret Azure Monitor tables for Service Bus namespaces | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-servicebus_namespaces |
-| Use Azure Monitor tables for Service Fabric clusters | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-servicefabric_clusters |
-| Analyze Application Gateway for Containers logs schema | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-servicenetworking_trafficcontrollers |
-| Use Azure Monitor tables for Azure SignalR Service | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-signalrservice_signalr |
-| Use Azure Monitor tables for Web PubSub diagnostics | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-signalrservice_webpubsub |
-| Monitor Azure SQL Managed Instance with table schema | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-sql_managedinstances |
-| Monitor Azure SQL servers using Azure Monitor tables | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-sql_servers |
-| Monitor Azure SQL databases with Azure Monitor tables | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-sql_servers_databases |
-| Use logs schema for Standby container group pools | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-standbypool_standbycontainergrouppools |
-| Use logs schema for Standby virtual machine pools | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-standbypool_standbyvirtualmachinepools |
-| Understand Azure Storage accounts logs and metrics schema | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-storage_storageaccounts |
-| Use Azure Monitor tables for Azure Managed Lustre logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-storagecache_amlfilesytems |
-| Interpret Azure HPC Cache API and event logs schema | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-storagecache_caches |
-| Use Azure Monitor tables for Storage Mover logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-storagemover_storagemovers |
-| Monitor Stream Analytics jobs with Azure Monitor tables | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-streamanalytics_streamingjobs |
-| Use Azure Monitor tables for Synapse workspace logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-synapse_workspaces |
-| Use Azure Monitor tables for Time Series Insights environments | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-timeseriesinsights_environments |
-| Query Toolchain Orchestrator diagnostics in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-toolchainorchestrator_diagnostics |
-| Analyze Video Indexer account logs in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-videoindexer_accounts |
-| Work with App Service site logs via Azure Monitor tables | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-web_sites |
-| Use Azure Monitor tables for Workload Monitor resources | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-workloadmonitor_monitors |
-| Query Zero Trust Segmentation manager logs in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-zerotrustsegmentation_segmentationmanagers |
-| Analyze MicrosoftAzureBastionAuditLogs for Bastion access | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoftazurebastionauditlogs |
+| Use Azure Monitor tables for AAD Domain Services | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-aad-domainservices |
+| Use Azure Monitor tables for AAD IAM tenants | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-aadiam-tenants |
+| Use Azure Monitor tables for FarmBeats resources | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-agfoodplatform-farmbeats |
+| Use Azure Monitor tables for Analysis Services servers | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-analysisservices-servers |
+| Use Azure Monitor tables for API Management service | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-apimanagement-service |
+| Use Azure Monitor tables for Container Apps managed environments | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-app-managedenvironments |
+| Use Azure Monitor tables for App Configuration stores | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-appconfiguration-configurationstores |
+| Use Azure Monitor tables for App Links members | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-applink-applinks-applinksmembers |
+| Use Azure Monitor tables for Azure Spring Apps | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-appplatform-spring |
+| Use Azure Monitor tables for Attestation providers | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-attestation-attestationproviders |
+| Use Azure Monitor tables for Automation accounts | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-automation-automationaccounts |
+| Use Azure Monitor tables for AVS private clouds | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-avs-privateclouds |
+| Use Azure Monitor tables for Azure AD Graph tenants | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-azureadgraph-tenants |
+| Use Azure Monitor tables for Azure Data Transfer connections | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-azuredatatransfer-connections |
+| Use Azure Monitor tables for diagnostics agents data collection | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-azuremonitordiagnosticsagents-datacollection |
+| Use Azure Monitor tables for Azure Playwright Service accounts | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-azureplaywrightservice-accounts |
+| Use Azure Monitor tables for Azure Sphere catalogs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-azuresphere-catalogs |
+| Use Azure Monitor tables for Azure Stack HCI clusters | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-azurestackhci-clusters |
+| Use Azure Monitor tables for Azure Stack HCI VMs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-azurestackhci-virtualmachines |
+| Use Azure Monitor tables for Batch accounts | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-batch-batchaccounts |
+| Use Azure Monitor tables for Blockchain members | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-blockchain-blockchainmembers |
+| Use Azure Monitor tables for Bot Service resources | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-botservice-botservices |
+| Use Azure Monitor tables for Azure Cache for Redis | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-cache-redis |
+| Use Azure Monitor tables for Redis Enterprise cache | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-cache-redisenterprise |
+| Use Azure Monitor tables for CDN edge actions | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-cdn-edgeactions |
+| Use Azure Monitor tables for CDN profiles | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-cdn-profiles |
+| Use Azure Monitor tables for Chaos Studio experiments | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-chaos-experiments |
+| Use Azure Monitor tables for Cognitive Services accounts | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-cognitiveservices-accounts |
+| Use Azure Monitor tables for Communication Services | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-communication-communicationservices |
+| Use Azure Monitor tables for Azure VMs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-compute-virtualmachines |
+| Use Azure Monitor tables for VM scale sets | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-compute-virtualmachinescalesets |
+| Use Azure Monitor tables for Connected VMware VMs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-conenctedvmwarevsphere-virtualmachines |
+| Use Azure Monitor tables for Confidential Ledger ledgers | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-confidentialledger-ledgers |
+| Use Azure Monitor tables for Confidential Ledger managed CCFs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-confidentialledger-managedccfs |
+| Use Azure Monitor tables for Connected Cache nodes | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-connectedcache-cachenodes |
+| Use Azure Monitor tables for Connected Vehicle platform accounts | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-connectedvehicle-platformaccounts |
+| Use Azure Monitor tables for Container Instances | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-containerinstance-containergroups |
+| Use Azure Monitor tables for Container Registry | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-containerregistry-registries |
+| Use Azure Monitor tables for AKS managed clusters | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-containerservice-managedclusters |
+| Use Azure Monitor tables for Customer Insights instances | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-d365customerinsights-instances |
+| Use Azure Monitor tables for Azure dashboards | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-dashboard-dashboard |
+| Use Azure Monitor tables for Azure Managed Grafana | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-dashboard-grafana |
+| Use Azure Monitor tables for Databricks workspaces | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-databricks-workspaces |
+| Use Azure Monitor tables for Data Collaboration workspaces | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-datacollaboration-workspaces |
+| Use Azure Monitor tables for Data Factory | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-datafactory-factories |
+| Use Azure Monitor tables for Data Lake Analytics accounts | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-datalakeanalytics-accounts |
+| Use Azure Monitor tables for Data Lake Store accounts | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-datalakestore-accounts |
+| Use Azure Monitor tables for Data Replication vaults | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-datareplication-replicationvaults |
+| Use Azure Monitor tables for Data Share accounts | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-datashare-accounts |
+| Use Azure Monitor tables for Azure Database for MariaDB | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-dbformariadb-servers |
+| Use Azure Monitor tables for MySQL flexible servers | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-dbformysql-flexibleservers |
+| Use Azure Monitor tables for MySQL single servers | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-dbformysql-servers |
+| Use Azure Monitor tables for PostgreSQL flexible servers | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-dbforpostgresql-flexibleservers |
+| Use Azure Monitor tables for PostgreSQL single servers | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-dbforpostgresql-servers |
+| Use Azure Monitor tables for PostgreSQL servers v2 | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-dbforpostgresql-serversv2 |
+| Use Azure Monitor tables for Desktop Virtualization application groups | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-desktopvirtualization-applicationgroups |
+| Use Azure Monitor tables for Desktop Virtualization host pools | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-desktopvirtualization-hostpools |
+| Use Azure Monitor tables for Desktop Virtualization workspaces | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-desktopvirtualization-workspaces |
+| Use Azure Monitor tables for DevCenter devcenters | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-devcenter-devcenters |
+| Use Azure Monitor tables for IoT Hubs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-devices-iothubs |
+| Use Azure Monitor tables for IoT provisioning services | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-devices-provisioningservices |
+| Use Azure Monitor tables for DevOps Infrastructure pools | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-devopsinfrastructure-pools |
+| Use Azure Monitor tables for Digital Twins instances | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-digitaltwins-digitaltwinsinstances |
+| Use Azure Monitor tables for Cosmos DB Cassandra clusters | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-documentdb-cassandraclusters |
+| Use Azure Monitor tables for Cosmos DB database accounts | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-documentdb-databaseaccounts |
+| Use Azure Monitor tables for Cosmos DB Mongo clusters | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-documentdb-mongoclusters |
+| Use Azure Monitor tables for Durable Task schedulers | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-durabletask-schedulers |
+| Use Azure Monitor tables for Microsoft Edge diagnostics | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-edge-diagnostics |
+| Use Azure Monitor tables for Event Grid domains | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-eventgrid-domains |
+| Query Azure Monitor tables for Event Grid namespaces | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-eventgrid-namespaces |
+| Query Azure Monitor tables for Event Grid partner namespaces | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-eventgrid-partnernamespaces |
+| Query Azure Monitor tables for Event Grid partner topics | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-eventgrid-partnertopics |
+| Query Azure Monitor tables for Event Grid system topics | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-eventgrid-systemtopics |
+| Query Azure Monitor tables for Event Grid topics | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-eventgrid-topics |
+| Query Azure Monitor tables for Event Hubs namespaces | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-eventhub-namespaces |
+| Query Azure Monitor tables for Experimentation workspaces | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-experimentation-experimentworkspaces |
+| Query Azure Monitor tables for Microsoft Graph tenants | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-graph-tenants |
+| Query Azure Monitor tables for Cloud HSM clusters | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-hardwaresecuritymodules-cloudhsmclusters |
+| Query Azure Monitor tables for HDInsight clusters | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-hdinsight-clusters |
+| Query Azure Monitor tables for Healthcare APIs services | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-healthcareapis-services |
+| Query Azure Monitor tables for Healthcare APIs workspaces | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-healthcareapis-workspaces |
+| Query Azure Monitor tables for Healthcare Interop workspaces | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-healthcareinterop-workspaces |
+| Query Azure Monitor tables for Health Data AI de-id services | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-healthdataaiservices-deidservices |
+| Query Azure Monitor tables for Hybrid Container Service clusters | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-hybridcontainerservice-provisionedclusters |
+| Query Azure Monitor tables for autoscale settings | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-insights-autoscalesettings |
+| Query Azure Monitor tables for Application Insights components | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-insights-components |
+| Query Azure Monitor tables for data collection rules | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-insights-datacollectionrules |
+| Query Azure Monitor tables for workload monitoring | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-insights-workloadmonitoring |
+| Query Azure Monitor tables for Intune operations | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-intune-operations |
+| Query Azure Monitor tables for Key Vaults | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-keyvault-vaults |
+| Query Azure Monitor tables for connected Kubernetes clusters | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-kubernetes-connectedclusters |
+| Query Azure Monitor tables for Azure Data Explorer clusters | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-kusto-clusters |
+| Query Azure Monitor tables for Load Testing resources | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-loadtestservice-loadtests |
+| Query Azure Monitor tables for Logic Apps integration accounts | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-logic-integrationaccounts |
+| Query Azure Monitor tables for Logic Apps workflows | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-logic-workflows |
+| Query Azure Monitor tables for ML registries | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-machinelearningservices-registries |
+| Query Azure Monitor tables for ML workspaces | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-machinelearningservices-workspaces |
+| Query Azure Monitor tables for Managed Network Fabric devices | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-managednetworkfabric-networkdevices |
+| Query Azure Monitor tables for Media Services accounts | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-media-mediaservices |
+| Query Azure Monitor tables for Azure Monitor accounts | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-monitor-accounts |
+| Query Azure Monitor tables for pipeline groups | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-monitor-pipelinegroups |
+| Query Azure Monitor tables for Application Gateways | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-network-applicationgateways |
+| Query Azure Monitor tables for Azure Firewalls | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-network-azurefirewalls |
+| Query Azure Monitor tables for Bastion hosts | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-network-bastionhosts |
+| Query Azure Monitor tables for DNS resolver policies | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-network-dnsresolverpolicies |
+| Query Azure Monitor tables for ExpressRoute circuits | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-network-expressroutecircuits |
+| Query Azure Monitor tables for Front Door resources | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-network-frontdoors |
+| Query Azure Monitor tables for Load Balancers | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-network-loadbalancers |
+| Query Azure Monitor tables for network interfaces | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-network-networkinterfaces |
+| Query Azure Monitor table for Network Managers | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-network-networkmanagers |
+| Query Azure Monitor table for Network Security Groups | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-network-networksecuritygroups |
+| Query Azure Monitor table for Network Security Perimeters | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-network-networksecurityperimeters |
+| Query Azure Monitor table for Connection Monitors | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-network-networkwatchers-connectionmonitors |
+| Query Azure Monitor table for Public IP Addresses | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-network-publicipaddresses |
+| Query Azure Monitor table for Traffic Manager Profiles | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-network-trafficmanagerprofiles |
+| Query Azure Monitor table for Virtual Network Gateways | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-network-virtualnetworkgateways |
+| Query Azure Monitor table for Virtual Networks | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-network-virtualnetworks |
+| Query Azure Monitor table for VPN Gateways | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-network-vpngateways |
+| Query Azure Monitor table for Network Analytics Data Products | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-networkanalytics-dataproducts |
+| Query Azure Monitor table for Network Cloud Bare Metal Machines | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-networkcloud-baremetalmachines |
+| Query Azure Monitor table for Network Cloud Cluster Managers | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-networkcloud-clustermanagers |
+| Query Azure Monitor table for Network Cloud Clusters | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-networkcloud-clusters |
+| Query Azure Monitor table for Network Cloud Storage Appliances | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-networkcloud-storageappliances |
+| Query Azure Monitor table for Azure Traffic Collectors | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-networkfunction-azuretrafficcollectors |
+| Query Azure Monitor table for Online Experimentation Workspaces | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-onlineexperimentation-workspaces |
+| Query Azure Monitor table for Open Energy Platform Services | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-openenergyplatform-energyservices |
+| Query Azure Monitor table for Open Logistics Workspaces | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-openlogisticsplatform-workspaces |
+| Query Azure Monitor table for Log Analytics Workspaces | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-operationalinsights-workspaces |
+| Query Azure Monitor table for Azure Orbital Geo Catalogs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-orbital-geocatalogs |
+| Query Azure Monitor table for PlayFab Titles | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-playfab-titles |
+| Query Azure Monitor table for Power BI Tenants | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-powerbi-tenants |
+| Query Azure Monitor table for Power BI Tenant Workspaces | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-powerbi-tenants-workspaces |
+| Query Azure Monitor table for Power BI Dedicated Capacities | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-powerbidedicated-capacities |
+| Query Azure Monitor table for Microsoft Purview Accounts | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-purview-accounts |
+| Query Azure Monitor table for Recovery Services Vaults | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-recoveryservices-vaults |
+| Query Azure Monitor table for Relay Namespaces | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-relay-namespaces |
+| Query Azure Monitor table for SCVMM Virtual Machines | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-scvmm-virtualmachines |
+| Query Azure Monitor table for Azure Cognitive Search Services | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-search-searchservices |
+| Query Azure Monitor table for Defender for Storage Settings | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-security-defenderforstoragesettings |
+| Query Azure Monitor table for Microsoft Security Resources | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-security-security |
+| Query Azure Monitor table for Normalized Alert Events | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-securityinsights-alerteventnormalized |
+| Use ASIM tables in Microsoft Sentinel | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-securityinsights-asimtables |
+| Query Azure Monitor table for Normalized Asset Entities | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-securityinsights-assetentitynormalized |
+| Query Azure Monitor table for Normalized Audit Events | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-securityinsights-auditeventnormalized |
+| Query Azure Monitor table for Authentication Events | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-securityinsights-authenticationevent |
+| Ingest and query CEF data in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-securityinsights-cef |
+| Query Azure Monitor table for Normalized DNS Events | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-securityinsights-dnsnormalized |
+| Query Azure Monitor table for Normalized Network Sessions | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-securityinsights-networksessionnormalized |
+| Query Azure Monitor table for Normalized Process Events | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-securityinsights-processeventnormalized |
+| Understand Azure Monitor tables for Purview insights | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-securityinsights-purview |
+| Use Azure Monitor tables for Security Insights | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-securityinsights-securityinsights |
+| Query Azure Monitor tables for threat intelligence | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-securityinsights-threatintelligence |
+| Analyze web session logs with Azure Monitor tables | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-securityinsights-websessionlogs |
+| Inspect Azure Monitor tables for Service Bus namespaces | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-servicebus-namespaces |
+| Review Azure Monitor tables for Service Fabric clusters | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-servicefabric-clusters |
+| Use Azure Monitor tables for traffic controllers | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-servicenetworking-trafficcontrollers |
+| Work with Azure Monitor tables for SignalR | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-signalrservice-signalr |
+| Query Azure Monitor tables for Web PubSub | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-signalrservice-webpubsub |
+| Use Azure Monitor tables for SQL managed instances | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-sql-managedinstances |
+| Explore Azure Monitor tables for SQL servers | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-sql-servers |
+| Analyze Azure Monitor tables for SQL databases | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-sql-servers-databases |
+| Use Azure Monitor tables for standby container group pools | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-standbypool-standbycontainergrouppools |
+| Monitor standby virtual machine pools with Azure tables | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-standbypool-standbyvirtualmachinepools |
+| Review Azure Monitor tables for Storage accounts | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-storage-storageaccounts |
+| Use Azure Monitor tables for AML file systems cache | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-storagecache-amlfilesytems |
+| Inspect Azure Monitor tables for Storage Cache | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-storagecache-caches |
+| Use Azure Monitor tables for Storage Mover | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-storagemover-storagemovers |
+| Query Azure Monitor tables for Stream Analytics jobs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-streamanalytics-streamingjobs |
+| Explore Azure Monitor tables for Synapse workspaces | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-synapse-workspaces |
+| Use Azure Monitor tables for Time Series Insights environments | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-timeseriesinsights-environments |
+| Review Azure Monitor tables for Toolchain Orchestrator diagnostics | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-toolchainorchestrator-diagnostics |
+| Use Azure Monitor tables for Video Indexer accounts | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-videoindexer-accounts |
+| Analyze Azure Monitor tables for App Service sites | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-web-sites |
+| Use Azure Monitor tables for Workload Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-workloadmonitor-monitors |
+| Review Azure Monitor tables for Zero Trust segmentation managers | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-zerotrustsegmentation-segmentationmanagers |
 | Use MicrosoftDataShareReceivedSnapshotLog for consumer sync | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoftdatasharereceivedsnapshotlog |
 | Use MicrosoftDataShareSentSnapshotLog for provider sync | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoftdatasharesentsnapshotlog |
 | Query MicrosoftDataShareShareLog for share operations | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoftdatasharesharelog |
@@ -1037,7 +1070,7 @@
 | Analyze NetworkAccessGenerativeAIInsights interaction logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/networkaccessgenerativeaiinsights |
 | Understand Azure Monitor NetworkAccessTraffic table schema | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/networkaccesstraffic |
 | Use NetworkSessions table for session analytics | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/networksessions |
-| Analyze NGINXaaS deployment logs with Azure Monitor tables | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/nginx-nginxplus_nginxdeployments |
+| Use Azure Monitor tables for NGINX Plus deployments | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/nginx-nginxplus-nginxdeployments |
 | Query NginxUpstreamUpdateLogs from NGINXaaS | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/nginxupstreamupdatelogs |
 | Use NGXOperationLogs for NGINXaaS access and error logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ngxoperationlogs |
 | Analyze NGXSecurityLogs for NGINXaaS security events | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ngxsecuritylogs |
@@ -1068,7 +1101,7 @@
 | Use OLPSupplyChainEntityOperations for entity changes | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/olpsupplychainentityoperations |
 | Query OLPSupplyChainEvents for workspace events | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/olpsupplychainevents |
 | Query Operation table for workspace activities | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/operation |
-| Use Azure Monitor tables for Oracle cloud VM cluster logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/oracle-database_cloudvmclusters |
+| Inspect Azure Monitor tables for Oracle cloud VM clusters | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/oracle-database-cloudvmclusters |
 | Use OracleCloudDatabase table for Oracle events | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/oracleclouddatabase |
 | Use OTelEvents table for OpenTelemetry span events | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/otelevents |
 | Query OTelLogs for OpenTelemetry log records | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/otellogs |
@@ -1076,7 +1109,6 @@
 | Use OTelSpans table for distributed tracing spans | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/otelspans |
 | Query OTelTraces for OpenTelemetry trace data | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/oteltraces |
 | Use OTelTracesAgent for agent-based trace logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/oteltracesagent |
-| Query Perf table performance counters in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/perf |
 | Use PerfInsightsFindings Azure Monitor Logs table fields | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/perfinsightsfindings |
 | Use PerfInsightsImpactedResources Azure Monitor Logs table | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/perfinsightsimpactedresources |
 | Use PerfInsightsRun Azure Monitor Logs table schema | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/perfinsightsrun |
@@ -1098,7 +1130,6 @@
 | Use PowerPlatformConnectorActivity logs for connector auditing | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/powerplatformconnectoractivity |
 | Analyze PowerPlatformDlpActivity DLP admin logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/powerplatformdlpactivity |
 | Query ProjectActivity audit logs in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/projectactivity |
-| Use ProtectionStatus table for antimalware health monitoring | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/protectionstatus |
 | Query PurviewDataSensitivityLogs for classified data insights | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/purviewdatasensitivitylogs |
 | Monitor scan progress with PurviewScanStatusLogs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/purviewscanstatuslogs |
 | Audit Purview account changes with PurviewSecurityLogs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/purviewsecuritylogs |
@@ -1115,22 +1146,16 @@
 | Use RetinaNetworkFlowLogs for container network monitoring | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/retinanetworkflowlogs |
 | Use SalesforceAuditTrail table in Azure Monitor Logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/salesforceaudittrail |
 | Query SalesforceLoginHistory data in Azure Monitor Logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/salesforceloginhistory |
-| Query SCCMAssessmentRecommendation for SCCM health guidance | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/sccmassessmentrecommendation |
 | Use SCGPoolExecutionLog for StandbyContainerGroupPool auditing | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/scgpoolexecutionlog |
 | Analyze SCGPoolRequestLog for StandbyContainerGroupPool requests | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/scgpoolrequestlog |
-| Query SCOMAssessmentRecommendation for SCOM environment advice | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/scomassessmentrecommendation |
 | Query SecureScoreControls for control-level security posture | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securescorecontrols |
 | Use SecureScores table for subscription security scoring | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securescores |
 | Use SecurityAttackPathData table in Azure Monitor Logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securityattackpathdata |
-| Use SecurityBaseline table in Azure Monitor Logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securitybaseline |
-| Use SecurityBaselineSummary table in Azure Monitor Logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securitybaselinesummary |
 | Work with SecurityCaseEvent table in Azure Monitor Logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securitycaseevent |
-| Use SecurityDetection table in Azure Monitor Logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securitydetection |
 | Use SecurityEvent table in Azure Monitor Logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securityevent |
 | Use SecurityIncident table in Azure Monitor Logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securityincident |
 | Use SecurityIoTRawEvent table in Azure Monitor Logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securityiotrawevent |
 | Use SecurityNestedRecommendation table in Azure Monitor Logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securitynestedrecommendation |
-| Use SecurityRecommendation table in Azure Monitor Logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securityrecommendation |
 | Use SecurityRegulatoryCompliance table in Azure Monitor Logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securityregulatorycompliance |
 | Use SentinelAlibabaCloudAPIGatewayLogs table schema in KQL | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/sentinelalibabacloudapigatewaylogs |
 | Query SentinelAlibabaCloudVPCFlowLogs table fields | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/sentinelalibabacloudvpcflowlogs |
@@ -1140,19 +1165,9 @@
 | Use SentinelBehaviorInfo table in Azure Monitor Logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/sentinelbehaviorinfo |
 | Use SentinelHealth table in Azure Monitor Logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/sentinelhealth |
 | Analyze SentinelImpervaWAFCloudV2Logs table in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/sentinelimpervawafcloudv2logs |
-| Use ServiceFabricOperationalEvent table in Azure Monitor Logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/servicefabricoperationalevent |
-| Use ServiceFabricReliableActorEvent table in Azure Monitor Logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/servicefabricreliableactorevent |
-| Use ServiceFabricReliableServiceEvent table in Azure Monitor Logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/servicefabricreliableserviceevent |
-| Use SfBAssessmentRecommendation table in Azure Monitor Logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/sfbassessmentrecommendation |
-| Use SfBOnlineAssessmentRecommendation table in Azure Monitor Logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/sfbonlineassessmentrecommendation |
-| Use SharePointOnlineAssessmentRecommendation table in Azure Monitor Logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/sharepointonlineassessmentrecommendation |
 | Use SignalRServiceDiagnosticLogs table in Azure Monitor Logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/signalrservicediagnosticlogs |
-| Use SigninLogs table in Azure Monitor Logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/signinlogs |
-| Use SPAssessmentRecommendation logs for SharePoint assessments | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/spassessmentrecommendation |
-| Query SQLAssessmentRecommendation for SQL Server optimization | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/sqlassessmentrecommendation |
 | Use SqlAtpStatus table in Azure Monitor Logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/sqlatpstatus |
 | Use SQLSecurityAuditEvents for Synapse SQL auditing | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/sqlsecurityauditevents |
-| Use SqlVulnerabilityAssessmentResult table in Azure Monitor Logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/sqlvulnerabilityassessmentresult |
 | Use SqlVulnerabilityAssessmentScanStatus table in Azure Monitor Logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/sqlvulnerabilityassessmentscanstatus |
 | Use StorageBlobLogs table in Azure Monitor Logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/storagebloblogs |
 | Use StorageCacheOperationEvents table in Azure Monitor Logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/storagecacheoperationevents |
@@ -1166,7 +1181,6 @@
 | Use StorageMoverJobRunLogs table in Azure Monitor Logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/storagemoverjobrunlogs |
 | Use StorageQueueLogs table in Azure Monitor Logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/storagequeuelogs |
 | Use StorageTableLogs table in Azure Monitor Logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/storagetablelogs |
-| Use SucceededIngestion table in Azure Monitor Logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/succeededingestion |
 | Analyze SVMPoolExecutionLog for Standby VM pool operations | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/svmpoolexecutionlog |
 | Use SVMPoolRequestLog for Standby VM pool request tracking | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/svmpoolrequestlog |
 | Use SynapseBigDataPoolApplicationsEnded table in Azure Monitor Logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/synapsebigdatapoolapplicationsended |
@@ -1198,17 +1212,6 @@
 | Audit Toolchain orchestrator interactions with TOUserAudits logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/touseraudits |
 | Diagnose Toolchain orchestrator failures with TOUserDiagnostics logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/touserdiagnostics |
 | Monitor Time Series Insights ingress errors with TSIIngress logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/tsiingress |
-| Reference UAApp telemetry schema in Azure Monitor Logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/uaapp |
-| Reference UAComputer telemetry schema in Azure Monitor Logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/uacomputer |
-| Use UAComputerRank table schema for device ranking data | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/uacomputerrank |
-| Consult UADriver table schema for driver telemetry | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/uadriver |
-| Use UADriverProblemCodes schema for driver issue analysis | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/uadriverproblemcodes |
-| Reference UAFeedback table schema for feedback telemetry | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/uafeedback |
-| Use UAIESiteDiscovery schema for IE site discovery data | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/uaiesitediscovery |
-| Consult UAOfficeAddIn table schema for Office add-in data | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/uaofficeaddin |
-| Use UAProposedActionPlan schema for upgrade action plans | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/uaproposedactionplan |
-| Consult UASysReqIssue schema for system requirement issues | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/uasysreqissue |
-| Use UAUpgradedComputer schema for upgrade tracking data | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/uaupgradedcomputer |
 | Analyze Update Compliance device data with UCClient logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ucclient |
 | Check device readiness using UCClientReadinessStatus logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ucclientreadinessstatus |
 | Query UCClientUpdateStatus Azure Monitor logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ucclientupdatestatus |
@@ -1217,9 +1220,6 @@
 | Use UCDOStatus table for device bandwidth logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ucdostatus |
 | Use UCServiceUpdateStatus for service-side update logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ucserviceupdatestatus |
 | Query UCUpdateAlert for client and service alerts | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ucupdatealert |
-| Use Update table for Azure update schedule logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/update |
-| Analyze UpdateRunProgress for patch installation status | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/updaterunprogress |
-| Summarize update runs with UpdateSummary table | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/updatesummary |
 | Query UrlClickEvents for Defender for Office 365 | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/urlclickevents |
 | Use Usage table to analyze Azure Monitor workspace usage | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/usage |
 | Query UserAccessAnalytics for Azure resource access paths | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/useraccessanalytics |
@@ -1232,27 +1232,16 @@
 | Query VMConnection for VM network traffic logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/vmconnection |
 | Use VMProcess table for server process telemetry | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/vmprocess |
 | Query W3CIISLog for IIS web server logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/w3ciislog |
-| Query WaaSDeploymentStatus for Windows as a Service deployment logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/waasdeploymentstatus |
-| Use WaaSInsiderStatus Azure Monitor logs for update runs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/waasinsiderstatus |
-| Analyze WaaSUpdateStatus data in Azure Monitor Logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/waasupdatestatus |
 | Query Watchlist table data in Azure Monitor Logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/watchlist |
-| Use WDAVStatus table for Defender AV status logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/wdavstatus |
-| Query WDAVThreat for Defender AV threat logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/wdavthreat |
 | Use WebPubSubConnectivity logs for connection diagnostics | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/webpubsubconnectivity |
 | Inspect WebPubSubHttpRequest logs in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/webpubsubhttprequest |
 | Leverage WebPubSubMessaging logs for message tracing | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/webpubsubmessaging |
 | Work with Windows365AuditLogs table in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/windows365auditlogs |
-| Use WindowsClientAssessmentRecommendation logs for client health | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/windowsclientassessmentrecommendation |
 | Query WindowsEvent table for collected Windows events | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/windowsevent |
-| Use WindowsFirewall Azure Monitor Logs table fields | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/windowsfirewall |
-| Use WindowsServerAssessmentRecommendation logs for server health | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/windowsserverassessmentrecommendation |
 | Query WireData network telemetry in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/wiredata |
 | Use WorkloadDiagnosticLogs for monitoring VM diagnostics | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/workloaddiagnosticlogs |
-| Analyze WorkloadMonitoringPerf performance logs in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/workloadmonitoringperf |
 | Use WOUserAudits Azure Monitor Logs table for auditing | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/wouseraudits |
 | Use WOUserDiagnostics Azure Monitor Logs table for diagnostics | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/wouserdiagnostics |
-| Use WUDOAggregatedStatus for Windows update DO aggregation | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/wudoaggregatedstatus |
-| Query WUDOStatus for Windows update DO device logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/wudostatus |
 | Use WVDAgentHealthStatus for AVD agent health monitoring | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/wvdagenthealthstatus |
 | Analyze AVD autoscale evaluations with WVDAutoscaleEvaluationPooled | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/wvdautoscaleevaluationpooled |
 | Query WVDCheckpoints for Windows Virtual Desktop checkpoints | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/wvdcheckpoints |

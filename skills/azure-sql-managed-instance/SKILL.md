@@ -1,9 +1,9 @@
 ---
 name: azure-sql-managed-instance
-description: Expert knowledge for Azure SQL Managed Instance development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using MI Link, geo-replication, Entra/Kerberos auth, XEvents/Intelligent Insights, or Spark integration, and other Azure SQL Managed Instance related development tasks. Not for Azure SQL Database (use azure-sql-database), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Database for MySQL (use azure-database-mysql), Azure Database for PostgreSQL (use azure-database-postgresql).
+description: Expert knowledge for Azure SQL Managed Instance development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when planning MI vs SQL choices, configuring networking/HA, tuning performance, securing access, or integrating apps/tools, and other Azure SQL Managed Instance related development tasks. Not for Azure SQL Database (use azure-sql-database), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Database for MySQL (use azure-database-mysql), Azure Database for PostgreSQL (use azure-database-postgresql).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-03"
+  generated_at: "2026-05-10"
   generator: "docs2skills/1.0.0"
 ---
 # Azure SQL Managed Instance Skill
@@ -24,15 +24,15 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L54 | Diagnosing and fixing Azure SQL Managed Instance issues: performance, connectivity, capacity, memory, transaction logs, geo-replication, XTP, known bugs, and Entra Kerberos auth. |
+| Troubleshooting | L37-L54 | Diagnosing and fixing Azure SQL Managed Instance issues: performance, connectivity, capacity, geo‑replication, memory, transaction log full, XTP storage, deployment, and Entra Kerberos auth. |
 | Best Practices | L55-L76 | Performance, monitoring, and reliability best practices for Azure SQL Managed Instance: tuning queries/apps, monitoring with DMVs/KQL, alerts, HA/DR, failover, read scale-out, and migration guidance. |
 | Decision Making | L77-L90 | Guidance for choosing Azure SQL Managed Instance vs other Azure SQL options, tiers, pools, networking, HA/DR options, ML differences, and planning Db2/Oracle migrations. |
 | Architecture & Design Patterns | L91-L95 | Connectivity architecture, networking models, and connection options for Azure SQL Database, including gateways, endpoints, firewalls, and integration with VNets and private access. |
-| Limits & Quotas | L96-L105 | Limits, quotas, and performance caps for Azure SQL MI: DTUs, free-tier and memory limits, resource ceilings, monitoring behavior, and how to request quota increases. |
+| Limits & Quotas | L96-L105 | Limits, quotas, and capacity for Azure SQL Managed Instance: DTUs, free-tier caps, memory/OLTP limits, monitoring behavior, resource ceilings, and how to request quota increases. |
 | Security | L106-L160 | Configuring authentication, encryption, network, auditing, and policy-based protections for securing Azure SQL Managed Instance and related Azure SQL resources. |
-| Configuration | L161-L212 | Configuring and monitoring SQL Managed Instance: networking, backups/restore, maintenance windows, alerts, metrics/logs, Intelligent Insights, XEvents, auditing, and deployment options. |
-| Integrations & Coding Patterns | L213-L236 | Connecting apps and tools to SQL Managed Instance (.NET, Java, Python, etc.), automation, data import, DTC, XEvents, MI Link, backups, tracing, and Spark integration. |
-| Deployment | L237-L257 | Deploying, scaling, moving, and pausing Azure SQL Managed Instance; networking setup, regional availability, DR/replication, migrations, and BACPAC import/export. |
+| Configuration | L161-L211 | Configuring and operating SQL Managed Instance: deployment and networking, backup/restore and retention, maintenance and updates, monitoring/alerts, auditing, and feature behaviors vs SQL Server. |
+| Integrations & Coding Patterns | L212-L235 | Connecting apps and tools to SQL Managed Instance (.NET, Java, Python, etc.), automation, data import, DTC, XEvents, MI Link, backups, tracing, and Spark integration. |
+| Deployment | L236-L256 | Deploying, scaling, moving, and pausing Azure SQL Managed Instance; networking setup, regional availability, DR/replication, migrations, and BACPAC import/export. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -45,7 +45,7 @@ This skill requires **network access** to fetch documentation content:
 | Troubleshoot geo-replication and redo lag in Azure SQL Database | https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-geo-replication-redo?view=azuresql |
 | Investigate and fix memory issues in Azure SQL Database | https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-memory-errors-issues?view=azuresql |
 | Resolve transaction log full errors in Azure SQL Database | https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-transaction-log-errors-issues?view=azuresql-db |
-| Resolve known Azure SQL Managed Instance issues | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-known-issues?view=azuresql |
+| Resolve known issues in Azure SQL Managed Instance | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-known-issues?view=azuresql |
 | Monitor XTP in-memory storage and fix capacity error 41823 | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/in-memory-oltp-monitor-space?view=azuresql |
 | Troubleshoot Azure SQL Managed Instance link issues | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/managed-instance-link-troubleshoot-how-to?view=azuresql |
 | Use Azure Resource Health to diagnose SQL Managed Instance issues | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/resource-health-to-troubleshoot-connectivity?view=azuresql |
@@ -168,7 +168,7 @@ This skill requires **network access** to fetch documentation content:
 | Create a database watcher with Entra auth and private connectivity | https://learn.microsoft.com/en-us/azure/azure-sql/database-watcher-quickstart?view=azuresql |
 | Configure Intelligent Insights performance monitoring for Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/intelligent-insights-overview?view=azuresql |
 | Use Intelligent Insights diagnostics logs for Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/intelligent-insights-use-diagnostics-log?view=azuresql |
-| Configure long-term backup retention for Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/long-term-backup-retention-configure?view=azuresql |
+| Configure long-term backup retention for Azure SQL Database | https://learn.microsoft.com/en-us/azure/azure-sql/database/long-term-backup-retention-configure?view=azuresql |
 | Configure metrics and diagnostic log streaming for Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/metrics-diagnostic-telemetry-logging-streaming-export-configure?view=azuresql |
 | Reference monitoring metrics and logs for Azure SQL Database | https://learn.microsoft.com/en-us/azure/azure-sql/database/monitoring-sql-database-azure-monitor-reference?view=azuresql |
 | Configure temporal table retention in Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/temporal-tables-retention-policy?view=azuresql |
@@ -185,7 +185,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure Azure VM connectivity to SQL Managed Instance | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/connect-vm-instance-configure?view=azuresql |
 | Configure connection types for Azure SQL Managed Instance endpoints | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/connection-types-overview?view=azuresql |
 | Configure failover groups for Azure SQL Managed Instance | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/failover-group-configure-sql-mi?view=azuresql |
-| Configure long-term backup retention for SQL Managed Instance | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/long-term-backup-retention-configure?view=azuresql |
 | Configure maintenance windows for Azure SQL Managed Instance | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/maintenance-window-configure?view=azuresql |
 | Maintenance window FAQ for Azure SQL Managed Instance | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/maintenance-window-faq?view=azuresql |
 | Understand maintenance window behavior in SQL Managed Instance | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/maintenance-window?view=azuresql |

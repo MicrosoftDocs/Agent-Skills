@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-03'
+generated_at: '2026-05-10'
 category_descriptions:
   security: Security alerts, recommendations, roles, auth, and certificates for Defender
     for IoT/IoT Hub/OT sensors, including RBAC, SSO, PAM auditing, and Zero Trust
@@ -7,9 +7,9 @@ category_descriptions:
   limits-quotas: Data residency, retention limits, feature lifecycle, supported/archived
     OT sensors, virtual appliance requirements, and networking/port prerequisites
     for Defender for IoT.
-  configuration: Configuring Defender for IoT micro agents and OT sensors, including
-    OS dependencies, monitoring methods, networking/proxy/firewall, device enrichment,
-    maintenance, updates, and auditing.
+  configuration: 'Configuring Defender for IoT micro agents and OT sensors: setup,
+    OS dependencies, monitoring modes, networking/proxy/DNS/firewall, sensor management,
+    maintenance, and auditing activity.'
   best-practices: 'Best practices for OT/ICS: using CIS benchmarks, designing monitoring
     topology, planning sensor placement at sites, and optimizing alert triage and
     response workflows.'
@@ -25,23 +25,22 @@ category_descriptions:
   architecture-patterns: OT network architectures for connecting sensors to Azure,
     sample connectivity models, and mapping Defender for IoT components to Purdue
     OT network layers.
-  decision-making: Guidance on choosing OT traffic mirroring methods, licensing and
-    billing options, OT appliance sizing, and migrating Defender for IoT management
-    from on-premises to cloud.
+  decision-making: Guidance on choosing OT traffic mirroring methods, licenses, and
+    appliances, plus planning billing, console retirement, cloud transition, and tracking
+    Defender for IoT OT software versions.
 skill_description: Expert knowledge for Azure Defender For Iot development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when deploying OT sensors, mirroring OT traffic, tuning alerts, integrating
-  with Sentinel/SIEM, or sizing appliances, and other Azure Defender For Iot related
-  development tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud),
-  Azure External Attack Surface Management (use azure-external-attack-surface-management),
-  Azure Security (use azure-security), Azure Sentinel (use azure-sentinel).
-use_when: Use when deploying OT sensors, mirroring OT traffic, tuning alerts, integrating
-  with Sentinel/SIEM, or sizing appliances, and other Azure Defender For Iot related
-  development tasks.
+  Use when deploying OT sensors, configuring micro agents, mirroring OT traffic, integrating
+  with SIEM/Sentinel, or tuning alerts, and other Azure Defender For Iot related development
+  tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure IoT
+  (use azure-iot), Azure IoT Hub (use azure-iot-hub), Azure Security (use azure-security).
+use_when: Use when deploying OT sensors, configuring micro agents, mirroring OT traffic,
+  integrating with SIEM/Sentinel, or tuning alerts, and other Azure Defender For Iot
+  related development tasks.
 confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-cloud),
-  Azure External Attack Surface Management (use azure-external-attack-surface-management),
-  Azure Security (use azure-security), Azure Sentinel (use azure-sentinel).
+  Azure IoT (use azure-iot), Azure IoT Hub (use azure-iot-hub), Azure Security (use
+  azure-security).
 ---
 # Azure Defender For Iot Crawl Report
 
@@ -50,13 +49,13 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 - **Total Pages**: 180
 - **Fetched**: 180
 - **Fetch Failed**: 0
-- **Classified**: 117
-- **Unclassified**: 63
+- **Classified**: 118
+- **Unclassified**: 62
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 180
-- **Unchanged**: 0
+- **Updated Pages**: 3
+- **Unchanged**: 177
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-defender-for-iot/azure-defender-for-iot.csv`
 
@@ -67,59 +66,24 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | architecture-patterns | 3 | 1.7% |
 | best-practices | 4 | 2.2% |
 | configuration | 20 | 11.1% |
-| decision-making | 7 | 3.9% |
+| decision-making | 8 | 4.4% |
 | deployment | 20 | 11.1% |
 | integrations | 31 | 17.2% |
 | limits-quotas | 7 | 3.9% |
 | security | 20 | 11.1% |
 | troubleshooting | 5 | 2.8% |
-| *(Unclassified)* | 63 | 35.0% |
+| *(Unclassified)* | 62 | 34.4% |
 
 ## Changes
 
 ### Updated Pages
 
+- [OT monitoring software versions](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/release-notes)
+  - Updated: 2026-04-28T17:57:00.000Z → 2026-05-04T07:35:00.000Z
 - [Configure proxy settings](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/connect-sensors)
-  - Updated: 2023-05-23T17:21:00.000Z → 2026-04-28T17:57:00.000Z
-- [Control OT traffic monitoring](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-control-what-traffic-is-monitored)
-  - Updated: 2024-10-11T08:00:00.000Z → 2026-04-28T17:57:00.000Z
-- [Update detected device properties](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/ot-deploy/update-device-inventory)
-  - Updated: 2025-05-21T17:04:00.000Z → 2026-04-28T17:57:00.000Z
-- [Create a learned baseline of OT alerts](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/ot-deploy/create-learned-baseline)
-  - Updated: 2025-02-03T18:09:00.000Z → 2026-04-28T17:57:00.000Z
-- [Deploy hybrid or air-gapped](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/ot-deploy/air-gapped-deploy)
-  - Updated: 2024-12-18T18:03:00.000Z → 2026-04-28T17:57:00.000Z
-- [On-premises management console retirement](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/ot-deploy/on-premises-management-console-retirement)
-  - Updated: 2024-12-18T18:03:00.000Z → 2026-04-28T17:57:00.000Z
-- [Transition to the cloud](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/ot-deploy/transition-on-premises-management-console-to-cloud)
-  - Updated: 2024-12-18T18:03:00.000Z → 2026-04-28T17:57:00.000Z
-- [Onboard and activate a virtual OT sensor](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/tutorial-onboarding)
-  - Updated: 2023-12-19T08:00:00.000Z → 2026-04-28T17:57:00.000Z
-- [Investigate an OT network alert](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/respond-ot-alert)
-  - Updated: 2026-01-21T18:19:00.000Z → 2026-04-28T17:57:00.000Z
-- [Connect Defender for IoT cloud data to Microsoft Sentinel](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/iot-solution)
-  - Updated: 2023-03-08T00:00:00.000Z → 2026-04-28T17:57:00.000Z
-- [Investigate Defender for IoT incidents with Microsoft Sentinel](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/iot-advanced-threat-monitoring)
-  - Updated: 2023-03-12T00:00:00.000Z → 2026-04-28T17:57:00.000Z
-- [Set up automatic sensor disconnection notifications](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/automate-sensor-disconnection-alerts)
-  - Updated: 2025-01-29T12:19:00.000Z → 2026-04-28T17:57:00.000Z
-- [Monitor with Zero Trust principles](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/monitor-zero-trust)
-  - Updated: 2024-05-21T08:00:00.000Z → 2026-04-28T17:57:00.000Z
-- [Azure portal](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-manage-device-inventory-for-organizations)
-  - Updated: 2025-11-18T18:43:00.000Z → 2026-04-28T17:57:00.000Z
-- [OT sensor console](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-investigate-sensor-detections-in-a-device-inventory)
-  - Updated: 2023-12-21T12:15:00.000Z → 2026-04-28T17:57:00.000Z
-- [View OT device mapping](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-work-with-the-sensor-device-map)
-  - Updated: 2025-01-09T18:03:00.000Z → 2026-04-28T17:57:00.000Z
-- [Create data mining reports](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-create-data-mining-queries)
-  - Updated: 2025-01-09T18:03:00.000Z → 2026-04-28T17:57:00.000Z
-- [Azure portal](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-manage-cloud-alerts)
-  - Updated: 2025-01-15T18:04:00.000Z → 2026-04-28T17:57:00.000Z
-- [Sensor console](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-view-alerts)
-  - Updated: 2026-01-21T18:19:00.000Z → 2026-04-28T17:57:00.000Z
-- [Accelerate on-premises alert workflows](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-accelerate-alert-incident-response)
-  - Updated: 2026-03-02T12:12:00.000Z → 2026-04-28T17:57:00.000Z
-- *...and 160 more*
+  - Updated: 2026-04-28T17:57:00.000Z → 2026-05-04T12:34:00.000Z
+- [What's new in Defender for IoT](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/whats-new)
+  - Updated: 2026-04-28T17:57:00.000Z → 2026-05-04T07:35:00.000Z
 
 ## Classified Pages
 
@@ -185,11 +149,11 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | [Stream cloud alerts to a partner SIEM](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/integrations/send-cloud-data-to-partners) | integrations | 0.75 | Shows how to send cloud alerts to partner SIEM via Sentinel and Event Hubs; likely includes connector configuration, event schema, and hub settings. |
 | [Work with Defender-IoT-micro-agent for Eclipse ThreadX (Preview)](https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/how-to-threadx-security-module) | configuration | 0.75 | Explains configuring the ThreadX micro agent to meet network, bandwidth, and memory requirements, implying specific configuration parameters and ranges. |
 | [YS-techsystems YS-FIT2 (Rugged MIL-STD-810G)](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/appliance-catalog/ys-techsystems-ys-fit2) | deployment | 0.75 | Covers deployment and installation of a specific appliance model with hardware layout and usage for Defender for IoT. |
-| [Configure proxy settings](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/connect-sensors) | configuration | 0.72 | How-to for configuring proxy connections from OT sensors to Azure; likely includes specific sensor/agent configuration fields, allowed values, and connection parameters that are product-specific. |
 | [Forward on-premises alert data](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-forward-alert-information-to-partners) | integrations | 0.72 | Describes configuring alert forwarding to partners, syslog, email; likely includes specific connector types, protocol/port settings, and rule configuration parameters. |
 | [Configure ERSPAN mirroring (legacy)](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/traffic-mirroring/configure-mirror-erspan) | integrations | 0.70 | High-level guidance for configuring ERSPAN on Cisco switches, including GRE tunnel destination; product-specific integration configuration. |
 | [Configure a remote SPAN (RSPAN)](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/traffic-mirroring/configure-mirror-rspan) | integrations | 0.70 | Sample procedure for configuring RSPAN on Cisco switches; includes specific configuration commands and settings for integrating with Defender for IoT. |
 | [Configure a switch SPAN port](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/traffic-mirroring/configure-mirror-span) | integrations | 0.70 | Provides sample Cisco CLI/GUI configuration for SPAN on a specific switch model; includes concrete commands and parameters, a product-specific integration pattern. |
+| [Configure proxy settings](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/connect-sensors) | configuration | 0.70 | The page describes detailed, product-specific configuration steps for setting proxy settings on Defender for IoT OT sensors to connect to Azure. This is configuration-focused expert knowledge (specific settings and connection scenarios) rather than conceptual guidance, but not about limits, security roles, or deployment matrices. |
 | [Custom security alerts for IoT Hub](https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/concept-customizable-security-alerts) | security | 0.70 | Describes customizable alert types and conditions for IoT Hub, including product-specific alert definitions and behaviors. |
 | [Data processing and residency](https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/concept-data-processing) | limits-quotas | 0.70 | Provides explicit mapping of IoT Hub regions to Defender for IoT data storage regions (for Europe vs non-Europe), which is a concrete service constraint not generally known from training. |
 | [Defender-IoT-micro-agent for Eclipse ThreadX alerts and recommendations (Preview)](https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/concept-threadx-security-alerts-recommendations) | security | 0.70 | Lists built-in and customizable alerts and recommendations specific to the ThreadX micro agent, which are product-specific security behaviors. |
@@ -203,6 +167,7 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | [Maintain an OT sensor from the sensor console](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-manage-individual-sensors) | configuration | 0.70 | Maintenance activities and warnings about supported parameters indicate detailed, product-specific configuration options and constraints. |
 | [Maintain threat intelligence packages](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-work-with-threat-intelligence-packages) | configuration | 0.70 | Maintaining TI packages will involve update schedules, package types, and sensor-specific configuration steps unique to Defender for IoT. |
 | [Micro agent linux dependencies](https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/concept-micro-agent-linux-dependencies) | configuration | 0.70 | Linux dependency article typically lists specific packages, kernel versions, and capabilities required by the micro agent, which are product-specific configuration prerequisites. |
+| [OT monitoring software versions](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/release-notes) | decision-making | 0.70 | The page lists specific Defender for IoT OT sensor and on-premises management software versions with exact release and support dates and feature highlights. These version/support matrices are expert, time-sensitive product data not inferable from training. They help users decide which versions to deploy or upgrade to based on support status and features, fitting decision-making better than other categories. |
 | [OT sensor console](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/manage-users-sensor) | security | 0.70 | Describes local user management on OT sensors; likely includes role names, permission levels, and account constraints specific to the product. |
 | [On-premises management console retirement](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/ot-deploy/on-premises-management-console-retirement) | decision-making | 0.70 | Retirement notice with a specific end-of-support date (January 1, 2025); informs migration and upgrade decisions between legacy console and cloud management. |
 | [Onboard OT sensors to Azure](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/onboard-sensors) | configuration | 0.70 | Describes onboarding sensors into Azure; likely includes specific portal settings, resource associations, and configuration parameters unique to Defender for IoT. |
@@ -268,7 +233,6 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | [Investigate security recommendations](https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/tutorial-investigate-security-recommendations) | 0.40 | Tutorial on investigating security recommendations; likely workflow guidance but not product-specific error codes or config tables. |
 | [Microsoft Sentinel solution versions](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/release-notes-sentinel) | 0.40 | Solution version release notes; mainly change history without structured limits, config matrices, or troubleshooting mappings. |
 | [OT deployment path](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/ot-deploy/ot-deploy-path) | 0.40 | High-level deployment path overview; focuses on phases and responsibilities rather than detailed deployment constraints or matrices. |
-| [OT monitoring software versions](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/release-notes) | 0.40 | Release notes list versions, dates, and feature highlights but not configuration parameters, limits, or other reusable expert data per the defined categories. |
 | [OT sensor console](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-investigate-sensor-detections-in-a-device-inventory) | 0.40 | Managing device inventory from sensor console; appears operational/UI-focused without expert-only configuration or limits. |
 | [Supported protocols](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/concept-supported-protocols) | 0.40 | Lists supported protocols; while specific, it’s more of a capability catalog than configuration, limits, or troubleshooting guidance. |
 | [Track OT network and sensor activity](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-track-sensor-activity) | 0.40 | Event timeline usage; mainly operational UI description without specific configuration matrices or error-code mappings. |
@@ -283,7 +247,6 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | [Upgrade a Defender for IoT micro agent](https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/upgrade-micro-agent) | 0.35 | Upgrade procedure for micro agent; step-by-step process rather than reusable configuration or troubleshooting mappings. |
 | [View OT device mapping](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-work-with-the-sensor-device-map) | 0.35 | Using device map visualization; likely conceptual/operational without detailed config tables or numeric constraints. |
 | [Vulnerability management](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/vulnerability-management) | 0.35 | Conceptual description of vulnerability management and how data is surfaced; lacks specific configuration parameters, limits, or error-resolution mappings. |
-| [What's new in Defender for IoT](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/whats-new) | 0.35 | What's new article; change log style rather than reusable configuration, limits, or troubleshooting reference. |
 | [Add an OT plan to your Azure subscription](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/getting-started) | 0.30 | Quickstart for setting up a trial; largely procedural and licensing overview without detailed limits tables or config references beyond a single approximate device count. |
 | [Control OT traffic monitoring](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-control-what-traffic-is-monitored) | 0.30 | Describes how to control monitored traffic conceptually; summary doesn’t indicate detailed config tables, limits, or product-specific error codes. |
 | [Create a learned baseline of OT alerts](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/ot-deploy/create-learned-baseline) | 0.30 | Covers creating a learned baseline of traffic; appears procedural without specific numeric limits, config matrices, or error mappings. |
@@ -310,3 +273,4 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | [Enable Microsoft Defender for IoT on Azure IoT Hub](https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/quickstart-onboard-iot-hub) | 0.20 | Quickstart for enabling Defender on IoT Hub; step-by-step enablement without detailed configuration tables or limits. |
 | [Frequently asked questions](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/faqs-general) | 0.20 | General FAQ; likely high-level Q&A without detailed limits, configs, or troubleshooting mappings. |
 | [What is Defender for IoT for device builders?](https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/overview) | 0.20 | High-level product overview for Defender for IoT device builders without detailed configs, limits, or error mappings. |
+| [What's new in Defender for IoT](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/whats-new) | 0.20 | Release notes / what's-new page summarizing recent features; does not indicate detailed limits, configuration tables, error codes, or other structured expert knowledge as defined by the sub-skill types. |

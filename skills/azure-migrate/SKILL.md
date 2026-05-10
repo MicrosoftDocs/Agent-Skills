@@ -1,9 +1,9 @@
 ---
 name: azure-migrate
-description: Expert knowledge for Azure Migrate development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Azure Migrate appliances, Arc-based discovery, VMware/Hyper-V moves, Resource Mover, or AppCAT/CAST scans, and other Azure Migrate related development tasks. Not for Azure Database Migration service (use azure-database-migration), Azure Site Recovery (use azure-site-recovery), Azure Virtual Machines (use azure-virtual-machines), Azure VMware Solution (use azure-vmware-solution).
+description: Expert knowledge for Azure Migrate development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when planning VMware/Hyper-V discovery, Arc-based assessments, REST VMware migration, or cross-region/GCCH moves, and other Azure Migrate related development tasks. Not for Azure Database Migration service (use azure-database-migration), Azure Site Recovery (use azure-site-recovery), Azure Virtual Machines (use azure-virtual-machines), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-03"
+  generated_at: "2026-05-10"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Migrate Skill
@@ -25,14 +25,14 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L37-L54 | Diagnosing and fixing Azure Migrate issues: appliance setup, discovery/assessment errors, replication and migration failures, connectivity, performance, OS upgrade, and web app migration problems. |
-| Best Practices | L55-L65 | Best practices for preparing on-prem/VMware/legacy Windows workloads and PostgreSQL for Azure migration, securing the Azure Migrate appliance, and running/validating test VM migrations. |
-| Decision Making | L66-L106 | Guidance for assessing workloads, interpreting Azure Migrate reports, choosing sizing/tools/targets, planning migration waves and execution (incl. AWS/GCP/VMware), and evaluating readiness, cost, and risk. |
-| Architecture & Design Patterns | L107-L112 | Architecture and data flow for Azure Migrate using Arc-based discovery and Hyper-V, including components, connectivity, prerequisites, and how discovery/inventory works. |
-| Limits & Quotas | L113-L126 | Azure Migrate region support, appliance prerequisites/capacity, and support matrices/limits for VMware, Hyper-V, and physical server discovery and migration. |
-| Security | L127-L142 | Securing Azure Migrate: least-privilege roles/accounts, Private Link discovery/migration, encrypted VM moves, Trusted Launch, RBAC, and Entra ID app registration. |
-| Configuration | L143-L171 | Configuring Azure Migrate appliances, assessments, dependencies, Arc/agents, networking, and Resource Mover settings for discovering, assessing, and moving servers and databases. |
-| Integrations & Coding Patterns | L172-L179 | Patterns and tools for integrating code analysis and automation into Azure Migrate, including GitHub Copilot insights, AppCAT CLI, CAST Highlight scans, and REST-based VMware migration. |
-| Deployment | L180-L187 | Planning and executing migration waves, setting up Azure DevOps pipelines for containers, and checking support/matrix for cross-region moves of VMs and Azure SQL with Resource Mover |
+| Best Practices | L55-L64 | Best practices for preparing on-prem/VMware/legacy Windows workloads and PostgreSQL for Azure migration, securing the Azure Migrate appliance, and running/validating test VM migrations. |
+| Decision Making | L65-L105 | Guidance on assessing migration readiness, sizing and cost, choosing tools/services, planning migration waves, and executing workload moves from on-prem, AWS, GCP, or VMware to Azure. |
+| Architecture & Design Patterns | L106-L111 | Architecture and data flow for Azure Migrate using Arc-based discovery and Hyper-V, including components, connectivity, prerequisites, and how discovery/inventory works. |
+| Limits & Quotas | L112-L125 | Azure Migrate region support, appliance prerequisites/capacity, and support matrices/limits for VMware, Hyper-V, and physical server discovery and migration. |
+| Security | L126-L141 | Securing Azure Migrate: least-privilege roles/accounts, Private Link discovery/migration, encrypted VM moves, Trusted Launch, RBAC, and Entra ID app registration. |
+| Configuration | L142-L168 | Configuring Azure Migrate appliances, assessments, dependencies, Arc/agents, networking, and Resource Mover settings for discovering, assessing, and moving servers and databases. |
+| Integrations & Coding Patterns | L169-L176 | Patterns and tools for integrating code analysis and automation into Azure Migrate, including GitHub Copilot insights, AppCAT CLI, CAST Highlight scans, and REST-based VMware migration. |
+| Deployment | L177-L187 | Guides for deploying Azure Migrate appliances, preparing legacy servers, automating deployments with PowerShell/DevOps, and moving Azure/SQL resources between regions and governments. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -61,7 +61,6 @@ This skill requires **network access** to fetch documentation content:
 | Use Azure Migrate hydration process for VM configuration | https://learn.microsoft.com/en-us/azure/migrate/hydration-process?view=migrate |
 | Prepare VMware VMs for agentless migration to Azure | https://learn.microsoft.com/en-us/azure/migrate/prepare-for-agentless-migration?view=migrate |
 | Prepare on-premises machines for Azure migration | https://learn.microsoft.com/en-us/azure/migrate/prepare-for-migration?view=migrate |
-| Prepare Windows Server 2003 workloads for Azure migration | https://learn.microsoft.com/en-us/azure/migrate/prepare-windows-server-2003-migration?view=migrate |
 
 ### Decision Making
 | Topic | URL |
@@ -90,7 +89,7 @@ This skill requires **network access** to fetch documentation content:
 | Select Azure database services for AWS migrations | https://learn.microsoft.com/en-us/azure/migration/migrate-databases-from-aws |
 | Plan migration of GCP databases to Azure | https://learn.microsoft.com/en-us/azure/migration/migrate-databases-from-google-cloud |
 | Select Azure services when migrating from AWS | https://learn.microsoft.com/en-us/azure/migration/migrate-from-aws |
-| Select Azure services when migrating from GCP | https://learn.microsoft.com/en-us/azure/migration/migrate-from-google-cloud |
+| Choose Azure services when migrating from GCP | https://learn.microsoft.com/en-us/azure/migration/migrate-from-google-cloud |
 | Plan on-premises workload migration to Azure | https://learn.microsoft.com/en-us/azure/migration/migrate-from-on-premises |
 | Map AWS networking services to Azure networking | https://learn.microsoft.com/en-us/azure/migration/migrate-networking-from-aws |
 | Replatform AWS security services to Microsoft Azure | https://learn.microsoft.com/en-us/azure/migration/migrate-security-from-aws |
@@ -150,8 +149,6 @@ This skill requires **network access** to fetch documentation content:
 | Meet Azure Migrate assessment prerequisites and settings | https://learn.microsoft.com/en-us/azure/migrate/assessment-prerequisites?view=migrate |
 | Configure general assessment properties in Azure Migrate | https://learn.microsoft.com/en-us/azure/migrate/assessment-properties?view=migrate |
 | Migrate dependency analysis from MMA to Azure Monitor Agent | https://learn.microsoft.com/en-us/azure/migrate/azure-monitor-agent-migration?view=migrate |
-| Set up Azure Migrate appliance in Azure Government | https://learn.microsoft.com/en-us/azure/migrate/deploy-appliance-script-government?view=migrate |
-| Deploy Azure Migrate appliance via PowerShell script | https://learn.microsoft.com/en-us/azure/migrate/deploy-appliance-script?view=migrate |
 | Understand Azure Migrate discovered metadata fields | https://learn.microsoft.com/en-us/azure/migrate/discovered-metadata?view=migrate |
 | Enable Azure Arc for servers discovered by Azure Migrate | https://learn.microsoft.com/en-us/azure/migrate/how-to-arc-enable-inventory?view=migrate |
 | Configure agentless dependency analysis in Azure Migrate | https://learn.microsoft.com/en-us/azure/migrate/how-to-create-group-machine-dependencies-agentless?view=migrate |
@@ -180,8 +177,11 @@ This skill requires **network access** to fetch documentation content:
 ### Deployment
 | Topic | URL |
 |-------|-----|
+| Deploy Azure Migrate appliance in Azure Government | https://learn.microsoft.com/en-us/azure/migrate/deploy-appliance-script-government?view=migrate |
+| Deploy Azure Migrate appliance using PowerShell script | https://learn.microsoft.com/en-us/azure/migrate/deploy-appliance-script?view=migrate |
 | Execute and track migration waves in Azure Migrate | https://learn.microsoft.com/en-us/azure/migrate/how-to-execute-track-waves?view=migrate |
+| Prepare Windows Server 2003 for Azure Migrate | https://learn.microsoft.com/en-us/azure/migrate/prepare-windows-server-2003-migration?view=migrate |
 | Configure Azure DevOps pipelines for containerized apps | https://learn.microsoft.com/en-us/azure/migrate/tutorial-app-containerization-azure-pipeline?view=migrate |
 | Supported extension resource types in Azure Resource Mover | https://learn.microsoft.com/en-us/azure/resource-mover/support-matrix-extension-resource-types |
-| Check Azure VM regional move support with Resource Mover | https://learn.microsoft.com/en-us/azure/resource-mover/support-matrix-move-region-azure-vm |
+| Check regional move support for Azure VMs | https://learn.microsoft.com/en-us/azure/resource-mover/support-matrix-move-region-azure-vm |
 | Support matrix for moving Azure SQL resources between regions | https://learn.microsoft.com/en-us/azure/resource-mover/support-matrix-move-region-sql |
