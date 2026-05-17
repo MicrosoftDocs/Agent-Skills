@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-05-03'
+generated_at: '2026-05-17'
 category_descriptions:
-  security: 'Securing Azure Web PubSub: auth with Entra ID/managed identity/keys,
-    mTLS, network isolation (VNets, private endpoints, firewalls), policies, key rotation,
-    and client auth for WebSocket/Socket.IO/MQTT.'
+  security: 'Securing Web PubSub: auth with Entra ID/managed identity/keys, client
+    certs, network & private endpoints, firewalls, policies, key rotation, and per-client/group
+    permissions.'
   decision-making: Guidance on configuring Web PubSub for high availability with zones
     and understanding pricing, billing meters, and cost considerations
   architecture-patterns: 'Architectural patterns for Web PubSub: multi-region resiliency,
@@ -28,16 +28,15 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Web PubSub development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building WebSocket/Socket.IO/MQTT apps, configuring geo-replication, custom domains,
-  metrics/alerts, or Functions bindings, and other Azure Web PubSub related development
-  tasks. Not for Azure SignalR Service (use azure-signalr-service), Azure Event Hubs
-  (use azure-event-hubs), Azure Service Bus (use azure-service-bus), Azure Relay (use
-  azure-relay).
-use_when: Use when building WebSocket/Socket.IO/MQTT apps, configuring geo-replication,
-  custom domains, metrics/alerts, or Functions bindings, and other Azure Web PubSub
-  related development tasks.
+  securing Web PubSub, using MQTT/Socket.IO, configuring geo-replication, Functions
+  bindings, or Premium autoscale, and other Azure Web PubSub related development tasks.
+  Not for Azure SignalR Service (use azure-signalr-service), Azure Service Bus (use
+  azure-service-bus), Azure Event Hubs (use azure-event-hubs), Azure Relay (use azure-relay).
+use_when: Use when securing Web PubSub, using MQTT/Socket.IO, configuring geo-replication,
+  Functions bindings, or Premium autoscale, and other Azure Web PubSub related development
+  tasks.
 confusable_not_for: Not for Azure SignalR Service (use azure-signalr-service), Azure
-  Event Hubs (use azure-event-hubs), Azure Service Bus (use azure-service-bus), Azure
+  Service Bus (use azure-service-bus), Azure Event Hubs (use azure-event-hubs), Azure
   Relay (use azure-relay).
 ---
 # Azure Web PubSub Crawl Report
@@ -52,8 +51,8 @@ confusable_not_for: Not for Azure SignalR Service (use azure-signalr-service), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 111
+- **Updated Pages**: 1
+- **Unchanged**: 110
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-web-pubsub/azure-web-pubsub.csv`
 
@@ -73,6 +72,11 @@ confusable_not_for: Not for Azure SignalR Service (use azure-signalr-service), A
 | *(Unclassified)* | 31 | 27.9% |
 
 ## Changes
+
+### Updated Pages
+
+- [Use secure private endpoints](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-secure-private-endpoints)
+  - Updated: 2024-08-27T22:05:00.000Z → 2026-05-14T06:18:00.000Z
 
 ## Classified Pages
 
@@ -110,6 +114,7 @@ confusable_not_for: Not for Azure SignalR Service (use azure-signalr-service), A
 | [Unsupported Socket.IO server APIs](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/socketio-supported-server-apis) | limits-quotas | 0.78 | Lists which Socket.IO server APIs are partially or not supported; effectively a capability/behavior limit matrix specific to this service. |
 | [Disable local authentication](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-disable-local-auth) | security | 0.76 | Covers turning off local access key authentication and enforcing Entra ID; such articles typically list exact portal/ARM settings and side effects, which are product-specific security configuration details. |
 | [Web PubSub client specification](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/reference-client-specification) | integrations | 0.75 | Client specification summary will define required behaviors, headers, and protocol details for Web PubSub clients—product-specific integration contract. |
+| [Use secure private endpoints](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-secure-private-endpoints) | security | 0.74 | The page is a how-to for securing Azure Web PubSub using private endpoints from a VNet. It likely includes product-specific security configuration steps such as required subnet setup, DNS configuration, and possibly specific Azure role/permission requirements for managing private endpoints. This is concrete, product-specific security configuration rather than a conceptual overview, so it fits the security sub-skill. |
 | [Access a key vault through shared private endpoints](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-secure-shared-private-endpoints-key-vault) | security | 0.70 | Shows how Web PubSub uses shared private link resources to reach Key Vault; product-specific secure integration configuration. |
 | [Add a custom domain](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-custom-domain) | configuration | 0.70 | Custom domain setup generally involves specific resource settings (hostnames, TLS bindings, DNS records) and service-specific constraints that go beyond generic knowledge. |
 | [Authenticate and authorize MQTT client](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/tutorial-upstream-auth-mqtt-client) | security | 0.70 | Details how to authenticate and authorize MQTT clients using certificates, username, and password; product-specific security configuration and patterns. |
@@ -132,7 +137,6 @@ confusable_not_for: Not for Azure SignalR Service (use azure-signalr-service), A
 | [Secure outbound traffic to Functions through shared private endpoints](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-secure-shared-private-endpoints) | security | 0.70 | Shows how to configure outbound private endpoints from Web PubSub to Functions; product-specific secure networking configuration. |
 | [Secure outbound traffic to Private Link service through shared private endpoints](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-secure-shared-private-endpoints-private-link-service) | security | 0.70 | Configures outbound shared private endpoints to Private Link Service; detailed secure networking setup specific to Web PubSub. |
 | [Use a managed identity](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-use-managed-identity) | security | 0.70 | Explains managed identity support (only one identity, system- or user-assigned) and how to configure it; product-specific identity behavior. |
-| [Use secure private endpoints](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-secure-private-endpoints) | security | 0.70 | Guides configuration of private endpoints and private link for Web PubSub; product-specific secure networking patterns. |
 | [Wildcard group role patterns](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/concept-wildcard-group-roles) | security | 0.70 | Describes wildcard group role patterns for client authorization, which is product-specific security/authorization configuration. Likely includes concrete role string formats and pattern syntax unique to Azure Web PubSub. |
 | [Write an upstream server](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-web-pubsub-write-upstream-server) | integrations | 0.70 | Shows complete implementations in multiple languages and explains how the service calls upstream handlers; includes product-specific request formats and handler patterns. |
 | [Admin UI](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/socketio-troubleshoot-admin-ui) | configuration | 0.68 | Describes Azure-customized Admin UI; likely includes configuration options and behaviors specific to the Azure-hosted version. |

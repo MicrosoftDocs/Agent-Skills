@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-12'
+generated_at: '2026-05-17'
 category_descriptions:
   integrations: How to use Azure Bastion with AKS private clusters, VM scale sets,
     and native Windows/Linux clients, including SSH/RDP connectivity patterns and
@@ -46,8 +46,8 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 40
+- **Updated Pages**: 1
+- **Unchanged**: 39
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-bastion/azure-bastion.csv`
 
@@ -65,6 +65,11 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | *(Unclassified)* | 16 | 40.0% |
 
 ## Changes
+
+### Updated Pages
+
+- [Copy and paste](https://learn.microsoft.com/en-us/azure/bastion/bastion-vm-copy-paste)
+  - Updated: 2024-04-04T08:00:00.000Z → 2026-05-13T22:11:00.000Z
 
 ## Classified Pages
 
@@ -100,7 +105,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
 | [VM connections and features](https://learn.microsoft.com/en-us/azure/bastion/vm-about) | 0.40 | Describes VM connection features; summary suggests feature overview rather than deep config tables or limits. |
-| [Copy and paste](https://learn.microsoft.com/en-us/azure/bastion/bastion-vm-copy-paste) | 0.35 | How-to for copy/paste in sessions; mostly UX-level instructions, not deep configuration or limits. |
 | [Full screen view](https://learn.microsoft.com/en-us/azure/bastion/bastion-vm-full-screen) | 0.35 | How-to for full-screen view; UI usage, not expert configuration or troubleshooting. |
 | [Bastion FAQ](https://learn.microsoft.com/en-us/azure/bastion/bastion-faq) | 0.30 | FAQ description is generic; without explicit mention of error codes, limits, or configs, it’s likely high-level Q&A. |
 | [Deploy Bastion - Azure portal](https://learn.microsoft.com/en-us/azure/bastion/quickstart-host-portal) | 0.30 | Quickstart focuses on step-by-step deployment from the portal using default or simple custom settings; it does not indicate detailed configuration parameter tables, limits, or decision matrices beyond basic tutorial content. |
@@ -111,6 +115,7 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/bastion/bastion-create-host-powershell) | 0.25 | PowerShell deployment how-to; step-by-step deployment rather than config reference or troubleshooting. |
 | [Deploy Bastion - ARM template](https://learn.microsoft.com/en-us/azure/bastion/quickstart-host-arm-template) | 0.25 | ARM template quickstart; primarily a deployment tutorial without tier matrices or config tables. |
 | [Deploy Bastion - Terraform](https://learn.microsoft.com/en-us/azure/bastion/quickstart-deploy-terraform) | 0.25 | Terraform quickstart; shows how to deploy, but not focused on exhaustive configuration or limits. |
+| [Copy and paste](https://learn.microsoft.com/en-us/azure/bastion/bastion-vm-copy-paste) | 0.20 | Primarily a how-to/tutorial on using copy/paste with Azure Bastion and browser Clipboard API support. It does not present numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. The content is procedural rather than expert reference material. |
 | [RDP connection](https://learn.microsoft.com/en-us/azure/bastion/bastion-connect-vm-linux-rdp) | 0.20 | How-to guide for connecting to a Linux VM using RDP via Azure Bastion. It focuses on procedural steps and prerequisites (like xrdp) without detailed limits, configuration matrices, or error-code mappings that would qualify as expert knowledge. |
 | [SSH connection](https://learn.microsoft.com/en-us/azure/bastion/bastion-connect-vm-ssh-windows) | 0.20 | Task-focused how-to for connecting to a Windows VM over SSH via Azure Bastion. It describes steps in the Azure portal but does not expose product-specific limits, configuration parameter tables, error-code-based troubleshooting, or other expert-only details. |
 | [What is Azure Bastion?](https://learn.microsoft.com/en-us/azure/bastion/bastion-overview) | 0.20 | High-level product overview without concrete limits, configs, or error details. |

@@ -1,8 +1,9 @@
 ---
-generated_at: '2026-04-12'
+generated_at: '2026-05-17'
 category_descriptions:
-  security: 'Securing Azure Cloud HSM: auth methods, network hardening, user management,
-    and configuring, routing, and querying security/operation logs (incl. Event Hubs).'
+  security: 'Security, auth, and auditing for Cloud HSM: configuring auth methods,
+    hardening network access, managing users securely, and routing/querying HSM operation
+    logs via Event Hubs.'
   best-practices: Guidance on secure key lifecycle management, HSM partition/role
     design, access control, network and operational hardening, and compliance-oriented
     security practices for Azure Cloud HSM deployments.
@@ -15,16 +16,16 @@ category_descriptions:
     and operational faults.
 skill_description: Expert knowledge for Azure Cloud Hsm development including troubleshooting,
   best practices, limits & quotas, security, and integrations & coding patterns. Use
-  when configuring HSM auth/networking, PKCS#11 key storage, cert-backed apps, capacity
-  limits, or cluster issues, and other Azure Cloud Hsm related development tasks.
+  when configuring Cloud HSM auth/network, PKCS#11 app integration, key lifecycle,
+  quotas, or cluster issues, and other Azure Cloud Hsm related development tasks.
   Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure Payment Hsm (use azure-payment-hsm),
-  Azure Key Vault (use azure-key-vault), Azure Confidential Computing (use azure-confidential-computing).
-use_when: Use when configuring HSM auth/networking, PKCS#11 key storage, cert-backed
-  apps, capacity limits, or cluster issues, and other Azure Cloud Hsm related development
+  Azure Key Vault (use azure-key-vault), Azure Attestation (use azure-attestation).
+use_when: Use when configuring Cloud HSM auth/network, PKCS#11 app integration, key
+  lifecycle, quotas, or cluster issues, and other Azure Cloud Hsm related development
   tasks.
 confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure Payment
-  Hsm (use azure-payment-hsm), Azure Key Vault (use azure-key-vault), Azure Confidential
-  Computing (use azure-confidential-computing).
+  Hsm (use azure-payment-hsm), Azure Key Vault (use azure-key-vault), Azure Attestation
+  (use azure-attestation).
 ---
 # Azure Cloud Hsm Crawl Report
 
@@ -33,13 +34,13 @@ confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure
 - **Total Pages**: 20
 - **Fetched**: 20
 - **Fetch Failed**: 0
-- **Classified**: 13
-- **Unclassified**: 7
+- **Classified**: 14
+- **Unclassified**: 6
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 20
+- **Updated Pages**: 1
+- **Unchanged**: 19
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cloud-hsm/azure-cloud-hsm.csv`
 
@@ -50,11 +51,16 @@ confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure
 | best-practices | 2 | 10.0% |
 | integrations | 2 | 10.0% |
 | limits-quotas | 2 | 10.0% |
-| security | 5 | 25.0% |
+| security | 6 | 30.0% |
 | troubleshooting | 2 | 10.0% |
-| *(Unclassified)* | 7 | 35.0% |
+| *(Unclassified)* | 6 | 30.0% |
 
 ## Changes
+
+### Updated Pages
+
+- [Frequently asked questions](https://learn.microsoft.com/en-us/azure/cloud-hsm/faq)
+  - Updated: 2026-04-01T17:22:00Z → 2026-04-01T17:22:00.000Z
 
 ## Classified Pages
 
@@ -72,6 +78,7 @@ confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure
 | [Certificate storage](https://learn.microsoft.com/en-us/azure/cloud-hsm/tutorial-certificate-storage) | integrations | 0.70 | Covers configuring certificate storage using PKCS#11 plus Azure Blob Storage and Managed Identity; likely includes product-specific configuration parameters and integration patterns. |
 | [Network Security](https://learn.microsoft.com/en-us/azure/cloud-hsm/network-security) | security | 0.70 | Network security guidance for Cloud HSM likely includes specific NSG rules, private endpoint patterns, and other product-specific security configurations. |
 | [Operation event logging](https://learn.microsoft.com/en-us/azure/cloud-hsm/tutorial-operation-event-logging) | security | 0.70 | Tutorial shows product-specific configuration of operation event logging to Log Analytics, including concrete diagnostic setting options and log categories for Azure Cloud HSM. This is detailed security/auditing configuration rather than generic logging guidance. |
+| [Frequently asked questions](https://learn.microsoft.com/en-us/azure/cloud-hsm/faq) | security | 0.68 | FAQ content for a specialized HSM service typically includes product-specific security and compliance details (for example, supported standards, key isolation behavior, FIPS level, customer responsibility boundaries, and possibly role/permission models or access patterns) that go beyond generic concepts. These are expert, service-specific behaviors and constraints that an LLM is unlikely to infer from general training data, and they are primarily security- and compliance-focused rather than limits, deployment, or architecture guidance. |
 | [Configure Event Hub for logging](https://learn.microsoft.com/en-us/azure/cloud-hsm/tutorial-configure-event-hub) | security | 0.65 | Describes how to configure Azure Monitor diagnostic settings for Cloud HSM to add Event Hubs as a destination, including specific log category (HsmServiceOperations) and destination wiring. This is product-specific logging/security configuration rather than a generic tutorial. |
 
 ## Unclassified Pages
@@ -79,7 +86,6 @@ confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
 | [Backup and restore](https://learn.microsoft.com/en-us/azure/cloud-hsm/backup-restore) | 0.50 | Backup and restore tutorial; while important, it is described as a procedural guide without clear indication of detailed configuration tables, limits, or specialized troubleshooting mappings. |
-| [Frequently asked questions](https://learn.microsoft.com/en-us/azure/cloud-hsm/faq) | 0.50 | FAQ likely mixes general information, onboarding, billing, and high-level security/compliance; not clearly focused on limits, configuration tables, or structured troubleshooting. |
 | [Azure Cloud HSM Integration Guides](https://learn.microsoft.com/en-us/azure/cloud-hsm/integration-guides) | 0.40 | Integration guides index/overview; this page itself is navigational and does not expose the detailed configuration parameters or code patterns. |
 | [Azure Cloud HSM Onboarding Guide](https://learn.microsoft.com/en-us/azure/cloud-hsm/onboarding-guide) | 0.40 | Onboarding guide reference; description suggests broad getting-started content and best practices but not clearly exposing concrete limits, configs, or error mappings in this page. |
 | [PowerShell](https://learn.microsoft.com/en-us/azure/cloud-hsm/quickstart-powershell) | 0.40 | Quickstart deployment walkthrough using PowerShell; primarily step-by-step instructions without configuration matrices, limits, or product-specific best-practice tables. |

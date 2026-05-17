@@ -1,17 +1,17 @@
 ---
-generated_at: '2026-05-10'
+generated_at: '2026-05-17'
 category_descriptions:
   integrations: Patterns and code for integrating Event Hubs with .NET, Kafka (clients,
     Streams, Connect, Debezium), Flink, Spark, Akka, schema/JSON registry, and adding
     metadata or managing hubs programmatically
   troubleshooting: 'Diagnosing and fixing Event Hubs runtime issues: Kafka/AMQP errors,
     .NET/legacy exceptions, ARM failures, auth problems, connectivity, and Blob Storage
-    checkpoint store issues.'
+    checkpoint store errors.'
   decision-making: Guidance on migrating from Kafka, selecting the right Event Hubs
     tier, and deciding when/how to use Auto Inflate for scaling and cost optimization
-  security: 'Authentication, authorization, encryption, and network protection for
-    Event Hubs: Entra ID, SAS, RBAC, managed identities, TLS, firewalls, private endpoints,
-    NSGs, policies, and compliance.'
+  security: 'Securing Event Hubs: auth (Entra ID, SAS, RBAC, managed identity), encryption
+    and CMKs, network isolation (VNet, NSG, Private Link, NSP), TLS settings, and
+    compliance/governance via Azure Policy.'
   configuration: 'Configuring Event Hubs behavior: partitions, retention, geo-DR,
     replication, processing units, metrics/logs, app groups, log compaction, and Avro
     capture schema.'
@@ -21,21 +21,23 @@ category_descriptions:
   best-practices: Guidance on routing events between AMQP, Kafka, and HTTPS, and on
     designing/scaling Event Hubs with partitions and throughput units for performance
     and capacity.
-  limits-quotas: Event Hubs capacity, quotas, and throughput limits, plus auto-inflate,
-    geo-disaster recovery, and governance via application groups and FAQs on behavior
-    and scaling.
+  limits-quotas: Event Hubs capacity, throughput, and entity limits; quota rules and
+    enforcement; and using application groups to govern and throttle client access
+    and usage.
   deployment: Guides for deploying Event Hubs with Kafka mirroring (MirrorMaker 1/2),
     setting up geo-replication, and running/local-testing Event Hubs apps using the
     emulator.
 skill_description: Expert knowledge for Azure Event Hubs development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  using Kafka clients/Streams, .NET SDKs, Flink/Spark, geo-DR/replication, or Event
-  Hubs Capture, and other Azure Event Hubs related development tasks. Not for Azure
-  Service Bus (use azure-service-bus), Azure Event Grid (use azure-event-grid), Azure
-  Notification Hubs (use azure-notification-hubs), Azure Stream Analytics (use azure-stream-analytics).
-use_when: Use when using Kafka clients/Streams, .NET SDKs, Flink/Spark, geo-DR/replication,
-  or Event Hubs Capture, and other Azure Event Hubs related development tasks.
+  using Kafka clients/Streams, .NET SDK, Flink/Spark, geo-DR/replication, or Auto
+  Inflate scaling in Event Hubs, and other Azure Event Hubs related development tasks.
+  Not for Azure Service Bus (use azure-service-bus), Azure Event Grid (use azure-event-grid),
+  Azure Notification Hubs (use azure-notification-hubs), Azure Stream Analytics (use
+  azure-stream-analytics).
+use_when: Use when using Kafka clients/Streams, .NET SDK, Flink/Spark, geo-DR/replication,
+  or Auto Inflate scaling in Event Hubs, and other Azure Event Hubs related development
+  tasks.
 confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Event
   Grid (use azure-event-grid), Azure Notification Hubs (use azure-notification-hubs),
   Azure Stream Analytics (use azure-stream-analytics).
@@ -51,10 +53,10 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 - **Unclassified**: 42
 
 ### Incremental Update
-- **New Pages**: 3
-- **Updated Pages**: 9
-- **Unchanged**: 102
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 3
+- **Unchanged**: 111
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-event-hubs/azure-event-hubs.csv`
 
 ## Classification Statistics
@@ -74,36 +76,14 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 
 ## Changes
 
-### New Pages
-
-- [Auto inflate overview](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-auto-inflate)
-- [Enable Auto inflate](https://learn.microsoft.com/en-us/azure/event-hubs/enable-auto-inflate)
-- [Configure geo-disaster recovery](https://learn.microsoft.com/en-us/azure/event-hubs/configure-geo-disaster-recovery)
-
 ### Updated Pages
 
-- [Troubleshoot connectivity issues](https://learn.microsoft.com/en-us/azure/event-hubs/troubleshooting-guide)
-  - Updated: 2024-07-30T05:42:00.000Z → 2026-05-07T22:15:00.000Z
-- [Event processor](https://learn.microsoft.com/en-us/azure/event-hubs/event-processor-balance-partition-load)
-  - Updated: 2024-07-31T08:00:00.000Z → 2026-05-07T22:15:00.000Z
-- [Geo-replication](https://learn.microsoft.com/en-us/azure/event-hubs/geo-replication)
-  - Updated: 2025-07-17T05:09:00.000Z → 2026-05-05T06:13:00.000Z
-- [Metadata only geo-disaster recovery](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-geo-dr)
-  - Updated: 2024-07-30T05:42:00.000Z → 2026-05-07T22:15:00.000Z
-- [Authorize access with a shared access signature](https://learn.microsoft.com/en-us/azure/event-hubs/authorize-access-shared-access-signature)
-  - Updated: 2024-06-27T05:38:00.000Z → 2026-05-07T22:15:00.000Z
-- [.NET](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-dotnet-standard-getstarted-send)
-  - Updated: 2025-03-25T05:36:00.000Z → 2026-05-04T08:00:00.000Z
-- [Java](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-quickstart-kafka-enabled-event-hubs)
-  - Updated: 2025-03-06T08:00:00.000Z → 2026-05-05T06:13:00.000Z
-- [Use the Azure portal to enable Event Hubs Capture](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-capture-enable-through-portal)
-  - Updated: 2025-01-30T12:22:00.000Z → 2026-05-07T22:15:00.000Z
-- [Use Event Hubs Data Explorer to run data operations on Azure Event Hubs](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-data-explorer)
-  - Updated: 2025-02-18T23:02:00.000Z → 2026-05-05T06:13:00.000Z
-
-### Deleted Pages
-
-- ~~Automatically scale throughput units~~ (https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-auto-inflate)
+- [FAQ - Event Hubs for Kafka](https://learn.microsoft.com/en-us/azure/event-hubs/apache-kafka-frequently-asked-questions)
+  - Updated: 2025-03-06T23:16:00Z → 2025-03-06T23:16:00.000Z
+- [Encrypt data using customer-managed keys](https://learn.microsoft.com/en-us/azure/event-hubs/configure-customer-managed-key)
+  - Updated: 2024-05-22T22:11:00.000Z → 2026-05-11T22:24:00.000Z
+- [FAQ](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-faq)
+  - Updated: 2026-02-13T06:11:00Z → 2026-02-13T06:11:00.000Z
 
 ## Classified Pages
 
@@ -116,7 +96,6 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 | [Allow access from specific IP addresses](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-ip-filtering) | security | 0.90 | IP firewall configuration includes rule properties, allowed formats (IPv4/IPv6, CIDR), and behavior, which are concrete security configuration details. |
 | [Apache Kafka configurations](https://learn.microsoft.com/en-us/azure/event-hubs/apache-kafka-configurations) | integrations | 0.90 | Explicitly about Kafka client configurations when migrating to Event Hubs; contains parameter names, recommended values, and defaults unique to this integration. |
 | [Compare tiers](https://learn.microsoft.com/en-us/azure/event-hubs/compare-tiers) | decision-making | 0.90 | Explicitly compares Event Hubs tiers including features and quotas; likely includes comparison tables and tier-specific limits to guide SKU selection. |
-| [Encrypt data using customer-managed keys](https://learn.microsoft.com/en-us/azure/event-hubs/configure-customer-managed-key) | security | 0.90 | BYOK configuration includes key vault properties, key URIs, and Event Hubs-specific encryption settings, which are detailed security configuration items. |
 | [Resource Manager exceptions](https://learn.microsoft.com/en-us/azure/event-hubs/resource-manager-exceptions) | troubleshooting | 0.90 | Lists ARM-surfaced errors and recommended actions when managing Event Hubs, which is expert troubleshooting guidance. |
 | [Troubleshoot authentication and authorization issues](https://learn.microsoft.com/en-us/azure/event-hubs/troubleshoot-authentication-authorization) | troubleshooting | 0.90 | Dedicated troubleshooting article for auth issues; likely maps specific error messages/codes and causes to solutions, which is expert troubleshooting knowledge. |
 | [Allow access from specific virtual networks](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-service-endpoints) | security | 0.85 | VNet integration docs specify subnet configuration, endpoint settings, and access rules unique to Event Hubs, which are product-specific security configurations. |
@@ -127,6 +106,7 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 | [Configure minimum required TLS version](https://learn.microsoft.com/en-us/azure/event-hubs/transport-layer-security-configure-minimum-version) | security | 0.85 | TLS minimum version configuration exposes specific setting names and allowed values (for example, 1.0/1.1/1.2), which are product-specific security configuration details. |
 | [Configure properties for an event hub](https://learn.microsoft.com/en-us/azure/event-hubs/configure-event-hub-properties) | configuration | 0.85 | Explicitly about configuring status, partition count, cleanup policy, and retention; such pages usually list property names, allowed ranges, and defaults, which are expert configuration details. |
 | [Enable managed identity for a namespace](https://learn.microsoft.com/en-us/azure/event-hubs/enable-managed-identity) | security | 0.85 | Covers enabling system- and user-assigned managed identities with specific portal/ARM settings and role assignments, which are product-specific security configuration details. |
+| [Encrypt data using customer-managed keys](https://learn.microsoft.com/en-us/azure/event-hubs/configure-customer-managed-key) | security | 0.85 | Customer-managed key configuration for Event Hubs data-at-rest encryption is security-focused and usually includes specific Key Vault requirements, key types, RBAC roles, and configuration parameters unique to Event Hubs + SSE/BYOK. These are product-specific security settings that qualify as expert knowledge. |
 | [Monitor data reference](https://learn.microsoft.com/en-us/azure/event-hubs/monitor-event-hubs-reference) | configuration | 0.85 | Monitoring data reference typically enumerates metric names, dimensions, log categories, and schemas, which are detailed configuration/reference data. |
 | [Troubleshoot connectivity issues](https://learn.microsoft.com/en-us/azure/event-hubs/troubleshooting-guide) | troubleshooting | 0.85 | Organized around connectivity symptoms (permanent vs transient failures) and how to diagnose and resolve them. Likely includes specific checks (firewall, connection strings, network configuration) and symptom→cause→solution guidance unique to Event Hubs, matching the troubleshooting criteria. |
 | [Authenticate and authorize access to Event Hubs resources](https://learn.microsoft.com/en-us/azure/event-hubs/authorize-access-event-hubs) | security | 0.80 | Details Event Hubs-specific authorization mechanisms (SAS, Microsoft Entra, RBAC) and how they apply to Event Hubs and Kafka endpoints; includes product-specific security model. |
@@ -156,8 +136,8 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 | [Dynamically add partitions](https://learn.microsoft.com/en-us/azure/event-hubs/dynamically-add-partitions) | configuration | 0.70 | Shows how to change partition count at runtime with Event Hubs-specific constraints and API usage; concrete configuration behavior. |
 | [Event replication task patterns](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-federation-patterns) | architecture-patterns | 0.70 | Provides detailed implementation guidance for specific replication patterns unique to Event Hubs federation, going beyond conceptual overview into concrete pattern usage. |
 | [Explore captured Avro files](https://learn.microsoft.com/en-us/azure/event-hubs/explore-captured-avro-files) | configuration | 0.70 | Provides the exact Avro schema for captured files and tools to explore them; this is precise format/configuration information not inferable from general knowledge. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-faq) | limits-quotas | 0.70 | Service FAQ pages for Event Hubs typically include numeric limits, behavioral edge cases, and tier-specific constraints not obvious from general knowledge, which are expert details; best fit is limits/quotas given typical FAQ content. |
-| [FAQ - Event Hubs for Kafka](https://learn.microsoft.com/en-us/azure/event-hubs/apache-kafka-frequently-asked-questions) | troubleshooting | 0.70 | Kafka FAQ pages typically map specific Kafka behaviors, config differences, and error scenarios to Event Hubs, including product-specific caveats and resolutions that qualify as troubleshooting-style expert knowledge. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-faq) | limits-quotas | 0.70 | Event Hubs FAQ pages commonly document concrete service behaviors and numeric constraints (for example, partition limits, throughput units, retention behaviors, and feature-specific limits) that are not purely conceptual. These numeric and behavioral details align with limits/quotas-style expert knowledge even though they are presented in FAQ form. |
+| [FAQ - Event Hubs for Kafka](https://learn.microsoft.com/en-us/azure/event-hubs/apache-kafka-frequently-asked-questions) | troubleshooting | 0.70 | Kafka-specific FAQ for Event Hubs typically includes concrete interoperability details, protocol/version support, and error/symptom explanations when using Kafka clients against Event Hubs. These are product-specific behaviors and edge cases that function as troubleshooting guidance beyond generic concepts. |
 | [Get Event Hubs connection string](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-get-connection-string) | security | 0.70 | Details structure and components of Event Hubs connection strings and how they relate to access scopes; product-specific security/connection configuration. |
 | [JSON Schema with Apache Kafka applications](https://learn.microsoft.com/en-us/azure/event-hubs/schema-registry-json-schema-kafka) | integrations | 0.70 | Shows Kafka producer/consumer integration with Azure Schema Registry, including schema ID usage and client configuration parameters that are specific to this integration. |
 | [Kafka migration guide for Event Hubs](https://learn.microsoft.com/en-us/azure/event-hubs/apache-kafka-migration-guide) | decision-making | 0.70 | Migration guide with assessment, configuration changes, and validation; provides concrete guidance on when/how to move workloads and what to change. |

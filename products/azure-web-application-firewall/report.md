@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-03'
+generated_at: '2026-05-17'
 category_descriptions:
   integrations: 'Using WAF with other Azure services: integrating logs with Sentinel/Log
     Analytics, automating incident response, investigating events, and protecting
@@ -7,9 +7,9 @@ category_descriptions:
   configuration: 'Configuring Azure WAF (Front Door & App Gateway): policies, custom/managed
     rules, rate limiting, geo/IP filters, bot/CAPTCHA, exclusions, logging/scrubbing,
     and custom block responses.'
-  troubleshooting: Diagnosing and fixing common Azure WAF issues on Front Door and
-    Application Gateway, including false positives, blocked requests, rule tuning,
-    and investigating WAF logs.
+  troubleshooting: Diagnosing and fixing Azure WAF issues on Front Door and Application
+    Gateway, including rule matches, false positives, blocked requests, and configuration
+    or logging problems.
   best-practices: Best practices for configuring, tuning, and hardening Azure WAF
     on Front Door and Application Gateway, including rule tuning, exclusions, geomatch
     rules, and deployment security.
@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 80
+- **Updated Pages**: 2
+- **Unchanged**: 78
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-web-application-firewall/azure-web-application-firewall.csv`
 
@@ -75,6 +75,13 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | *(Unclassified)* | 16 | 20.0% |
 
 ## Changes
+
+### Updated Pages
+
+- [FAQ](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/application-gateway-waf-faq)
+  - Updated: 2026-03-06T23:15:00Z → 2026-03-06T23:15:00.000Z
+- [FAQ](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/waf-faq)
+  - Updated: 2025-10-01T22:16:00Z → 2025-10-01T22:16:00.000Z
 
 ## Classified Pages
 
@@ -110,7 +117,8 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Custom rule examples](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/create-custom-waf-rules) | configuration | 0.70 | Provides example custom rules and how to use them; includes product-specific rule fields, operators, and behaviors. |
 | [Detect new threats using Microsoft Sentinel](https://learn.microsoft.com/en-us/azure/web-application-firewall/waf-new-threat-detection) | integrations | 0.70 | Focuses on using Sentinel analytics with WAF to detect threats; includes specific queries, rules, or integration patterns unique to this combo. |
 | [Exclusion lists](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/waf-front-door-exclusion) | security | 0.70 | Page describes detailed, product-specific WAF exclusion configuration for Azure Front Door (e.g., which request attributes/fields can be excluded, how to tune rules for specific scenarios like Entra ID tokens). This is concrete security configuration guidance with specific setting names and behaviors that go beyond generic WAF concepts. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/application-gateway-waf-faq) | troubleshooting | 0.70 | FAQ pages for WAF on Application Gateway typically include concrete, product-specific Q&A such as how certain rules behave, what specific error messages mean, and how to address false positives or blocked requests. These are organized around symptoms and behaviors unique to this service, aligning best with troubleshooting. While it may also contain some conceptual content, the FAQ nature and product specificity indicate expert troubleshooting knowledge. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/waf-faq) | troubleshooting | 0.70 | The WAF on Azure Front Door FAQ commonly addresses concrete operational issues such as why certain traffic is blocked, how managed rules and specific rule IDs behave, and what to check in diagnostics. These are product-specific symptom → cause → solution mappings, which fit the troubleshooting category and represent expert knowledge beyond generic WAF concepts. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/application-gateway-waf-faq) | troubleshooting | 0.70 | FAQ pages for WAF on Application Gateway typically include concrete error behaviors (for example, why specific requests are blocked, how certain rule IDs behave, and how to interpret WAF logs) and map them to configuration changes or rule exclusions. This symptom → cause → fix guidance, often with product-specific rule IDs and behaviors, qualifies as troubleshooting-focused expert knowledge rather than just conceptual overview. |
 | [JavaScript challenge](https://learn.microsoft.com/en-us/azure/web-application-firewall/waf-javascript-challenge) | configuration | 0.70 | Explains JS challenge feature, availability by platform/tier, and how it is configured as an action; includes product-specific settings and constraints. |
 | [Log Analytics](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/log-analytics) | integrations | 0.70 | Shows how to use Log Analytics with WAF logs, including workspace setup and queries; integration-specific patterns and query usage. |
 | [Monitoring and logging](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/waf-front-door-monitor) | configuration | 0.70 | Details how to integrate WAF logs with Azure Monitor and configure diagnostics; includes specific settings and categories. |
@@ -124,7 +132,6 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Tuning](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/waf-front-door-tuning) | best-practices | 0.70 | Focuses on how to adjust managed rule sets and handle false positives; contains product-specific tuning recommendations and gotchas. |
 | [Upgrade ruleset version](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/upgrade-ruleset-version) | configuration | 0.70 | How-to for upgrading ruleset versions; includes configuration steps and versioning behavior specific to WAF managed rulesets. |
 | [Create Web Application Firewall v2 – Terraform](https://learn.microsoft.com/en-us/azure/web-application-firewall/quickstart-web-application-firewall-terraform) | deployment | 0.65 | Terraform quickstart defines WAF policy, autoscaling, and related resources; includes provider-specific configuration patterns that are deployment-focused and unique to this product. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/waf-faq) | troubleshooting | 0.65 | FAQ for WAF on Front Door is likely to contain concrete answers about behavior, configuration nuances, and operational gotchas that help diagnose and resolve issues. |
 | [Geo-filtering](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/waf-front-door-geo-filtering) | configuration | 0.65 | Shows how to define custom access rules by country/region; involves specific match variables and allowed values for geo-filtering in WAF policies. |
 | [HTTP DDoS protection](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/ddos-ruleset) | configuration | 0.65 | Describes HTTP DDoS ruleset behavior and likely its configuration options; preview feature with product-specific settings and constraints. |
 | [Managed ruleset support policy](https://learn.microsoft.com/en-us/azure/web-application-firewall/ruleset-support-policy) | decision-making | 0.65 | A managed ruleset support policy page for Azure WAF will describe which DRS/CRS/Bot/DDoS ruleset versions are supported, their lifecycle, and upgrade recommendations. This is expert guidance for deciding when to move between ruleset versions and understanding support timelines, which fits decision-making (version selection and upgrade path) rather than generic concepts. |

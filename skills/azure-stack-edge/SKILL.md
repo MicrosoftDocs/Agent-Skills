@@ -1,9 +1,9 @@
 ---
 name: azure-stack-edge
-description: Expert knowledge for Azure Stack Edge development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when running IoT Edge or GPU/Kubernetes apps, configuring VMs/storage/networking, or managing device updates, and other Azure Stack Edge related development tasks. Not for Azure Data Box (use azure-data-box-family), Azure IoT Edge (use azure-iot-edge), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Virtual Machines (use azure-virtual-machines).
+description: Expert knowledge for Azure Stack Edge development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when running IoT Edge or GPU/Kubernetes apps, managing VMs/storage, or integrating with ARM/Blob/Key Vault, and other Azure Stack Edge related development tasks. Not for Azure Data Box (use azure-data-box-family), Azure IoT Edge (use azure-iot-edge), Azure Kubernetes Service Edge Essentials (use azure-aks-edge-essentials), Azure Virtual Machines (use azure-virtual-machines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-05"
+  generated_at: "2026-05-17"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Stack Edge Skill
@@ -25,7 +25,7 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L36-L85 | Diagnosing and fixing Azure Stack Edge/Data Box Gateway issues: release-specific known problems, alerts, ordering/activation, certificates, ARM/Blob/IoT/VM/GPU errors, and using diagnostics/logs. |
-| Best Practices | L86-L92 | Best practices for Azure Stack Edge Pro: planning for and recovering from device failure, GPU sharing configuration, and day-to-day operational/maintenance guidelines. |
+| Best Practices | L86-L92 | Best practices for Azure Stack Edge Pro: device failure recovery, GPU sharing/partitioning guidance, and operational guidelines for deployment, monitoring, and maintenance. |
 | Decision Making | L93-L101 | Guidance on region and data-location choices, resiliency behavior, disconnected deployment planning, and processes for replacing Azure Stack Edge devices. |
 | Limits & Quotas | L102-L113 | Limits, capacities, performance, and system requirements for Azure Stack Edge and Data Box Gateway devices, including supported VM sizes and moving Edge resources across subscriptions. |
 | Security | L114-L140 | Security, identity, and compliance for Azure Stack Edge: user/RBAC access, TLS/certificates, Key Vault secrets, VPN, encryption, data erasure, Azure Policy, and device‑specific security features. |
@@ -88,7 +88,7 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Recover from Azure Stack Edge Pro device failure | https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-recover-device-failure |
 | Use GPU sharing options on Azure Stack Edge Pro GPU | https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-sharing |
-| Follow operational guidelines for Azure Stack Edge | https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-operational-guidelines-faq |
+| Apply operational guidelines for Azure Stack Edge | https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-operational-guidelines-faq |
 
 ### Decision Making
 | Topic | URL |

@@ -1,9 +1,9 @@
 ---
 name: azure-repos
-description: Expert knowledge for Azure Repos development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when managing Azure Repos/TFVC auth & policies, PR/branch rules, CodeQL/secret scans, or Git vs TFVC migration, and other Azure Repos related development tasks. Not for Azure DevOps (use azure-devops), Azure Artifacts (use azure-artifacts), Azure Pipelines (use azure-pipelines), Azure Boards (use azure-boards).
+description: Expert knowledge for Azure Repos development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when managing Azure Repos/TFVC auth & permissions, branch/PR policies, CodeQL/scanning, or Git vs TFVC migration, and other Azure Repos related development tasks. Not for Azure DevOps (use azure-devops), Azure Pipelines (use azure-pipelines), Azure Boards (use azure-boards), Azure Artifacts (use azure-artifacts).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-03"
+  generated_at: "2026-05-17"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Repos Skill
@@ -24,7 +24,7 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L36-L49 | Diagnosing and fixing Git/Azure Repos and TFVC issues: locks, merge/push errors, undo/recover changes, plus troubleshooting CodeQL, dependency, and secret scanning. |
+| Troubleshooting | L36-L49 | Diagnosing and fixing Git/TFVC issues (locks, merge conflicts, push/RPC failures, undo/recover changes) and troubleshooting CodeQL, dependency, and secret scanning in Azure DevOps/GitHub. |
 | Best Practices | L50-L65 | Git and TFVC best practices: branching, pull requests, merges, large binaries, .gitignore, cross‑platform compatibility, repo health, and workspace cleanup/optimization. |
 | Decision Making | L66-L74 | Guidance on choosing and migrating version control in Azure Repos: Git vs TFVC, SVN/TFVC-to-Git migration strategies, mixed Git+TFVC use, and local vs server TFVC workspaces. |
 | Architecture & Design Patterns | L75-L83 | Designing and choosing TFVC branching structures/strategies, planning strategic branches, implementing feature isolation, and managing branches for DevOps workflows in Azure Repos. |
@@ -37,7 +37,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Handle Git index.lock issues in Visual Studio and Azure Repos | https://learn.microsoft.com/en-us/azure/devops/repos/git/git-index-lock?view=azure-devops |
-| Troubleshoot Git usage issues in Azure Repos | https://learn.microsoft.com/en-us/azure/devops/repos/git/howto?view=azure-devops |
+| Troubleshoot Git issues in Azure Repos | https://learn.microsoft.com/en-us/azure/devops/repos/git/howto?view=azure-devops |
 | Troubleshoot and resolve Git merge conflicts in Azure Repos | https://learn.microsoft.com/en-us/azure/devops/repos/git/merging?view=azure-devops |
 | Fix RPC failure errors when pushing to Azure Repos | https://learn.microsoft.com/en-us/azure/devops/repos/git/rpc-failures-http-postbuffer?view=azure-devops |
 | Undo and recover Git changes in Azure Repos | https://learn.microsoft.com/en-us/azure/devops/repos/git/undo?view=azure-devops |

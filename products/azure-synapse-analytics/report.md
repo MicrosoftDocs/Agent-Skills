@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-10'
+generated_at: '2026-05-17'
 category_descriptions:
   security: 'Securing Synapse workspaces end-to-end: auth and RBAC, network and private
     endpoints, firewall and data exfiltration, encryption/TDE, policies, managed identities,
@@ -25,22 +25,22 @@ category_descriptions:
   integrations: Patterns and code to integrate Synapse (Spark, serverless, dedicated
     SQL) with storage, ML, monitoring, external tools, and other Azure services, plus
     querying external data formats.
-  limits-quotas: 'SQL and Synapse Link limits: memory/concurrency caps, dedicated
-    pool capacity/quotas, serverless SQL constraints for Delta Lake v1, and feature/known
-    issues for Synapse Link (Cosmos DB, SQL).'
+  limits-quotas: 'Synapse SQL and Synapse Link limits: memory/concurrency caps, capacity
+    and quotas, Delta Lake v1 query limits, and feature/known issues for Cosmos DB
+    and SQL Link integrations.'
 skill_description: Expert knowledge for Azure Synapse Analytics development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when designing Synapse SQL pools, Spark pools, serverless SQL, Synapse Link,
-  or ELT/PolyBase pipelines, and other Azure Synapse Analytics related development
+  Use when using Synapse SQL pools, Spark pools, serverless SQL, Synapse Link, or
+  PolyBase/ELT data loading, and other Azure Synapse Analytics related development
   tasks. Not for Azure Analysis Services (use azure-analysis-services), Azure Data
-  Explorer (use azure-data-explorer), Azure Data Factory (use azure-data-factory),
+  Factory (use azure-data-factory), Azure Data Explorer (use azure-data-explorer),
   Azure Databricks (use azure-databricks).
-use_when: Use when designing Synapse SQL pools, Spark pools, serverless SQL, Synapse
-  Link, or ELT/PolyBase pipelines, and other Azure Synapse Analytics related development
+use_when: Use when using Synapse SQL pools, Spark pools, serverless SQL, Synapse Link,
+  or PolyBase/ELT data loading, and other Azure Synapse Analytics related development
   tasks.
 confusable_not_for: Not for Azure Analysis Services (use azure-analysis-services),
-  Azure Data Explorer (use azure-data-explorer), Azure Data Factory (use azure-data-factory),
+  Azure Data Factory (use azure-data-factory), Azure Data Explorer (use azure-data-explorer),
   Azure Databricks (use azure-databricks).
 ---
 # Azure Synapse Analytics Crawl Report
@@ -50,13 +50,13 @@ confusable_not_for: Not for Azure Analysis Services (use azure-analysis-services
 - **Total Pages**: 447
 - **Fetched**: 447
 - **Fetch Failed**: 0
-- **Classified**: 275
-- **Unclassified**: 172
+- **Classified**: 276
+- **Unclassified**: 171
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 154
-- **Unchanged**: 293
+- **Updated Pages**: 3
+- **Unchanged**: 444
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-synapse-analytics/azure-synapse-analytics.csv`
 
@@ -70,56 +70,21 @@ confusable_not_for: Not for Azure Analysis Services (use azure-analysis-services
 | decision-making | 17 | 3.8% |
 | deployment | 5 | 1.1% |
 | integrations | 46 | 10.3% |
-| limits-quotas | 5 | 1.1% |
+| limits-quotas | 7 | 1.6% |
 | security | 57 | 12.8% |
-| troubleshooting | 26 | 5.8% |
-| *(Unclassified)* | 172 | 38.5% |
+| troubleshooting | 25 | 5.6% |
+| *(Unclassified)* | 171 | 38.3% |
 
 ## Changes
 
 ### Updated Pages
 
-- [CETAS](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-tables-cetas)
-  - Updated: 2024-10-14T17:05:00.000Z → 2026-05-03T11:12:00.000Z
-- [CTAS](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-develop-ctas)
-  - Updated: 2025-01-21T08:00:00.000Z → 2026-05-03T11:12:00.000Z
-- [Data types](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-tables-data-types)
-  - Updated: 2024-12-17T08:00:00.000Z → 2026-05-03T11:12:00.000Z
-- [Table constraints](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-table-constraints)
-  - Updated: 2025-02-23T12:11:00.000Z → 2026-05-03T11:12:00.000Z
-- [Identity](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-tables-identity)
-  - Updated: 2025-01-31T23:06:00.000Z → 2026-05-03T11:12:00.000Z
-- [Replicated tables](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/design-guidance-for-replicated-tables)
-  - Updated: 2024-01-09T23:06:00.000Z → 2026-05-03T11:12:00.000Z
-- [Statistics](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-tables-statistics)
-  - Updated: 2022-12-21T12:23:00.000Z → 2026-05-03T11:12:00.000Z
-- [Temporary](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-tables-temporary)
-  - Updated: 2022-02-18T12:06:00.000Z → 2026-05-03T11:12:00.000Z
-- [Loops](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-loops)
-  - Updated: 2022-02-18T12:06:00.000Z → 2026-05-03T11:12:00.000Z
-- [Stored procedures](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-stored-procedures)
-  - Updated: 2025-02-28T08:00:00.000Z → 2026-05-03T11:12:00.000Z
-- [Dedicated SQL pool transactions](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-transactions)
-  - Updated: 2022-05-25T11:05:00.000Z → 2026-05-03T11:12:00.000Z
-- [Dedicated SQL pool best practices transactions](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-transaction-best-practices)
-  - Updated: 2022-05-25T11:05:00.000Z → 2026-05-03T11:12:00.000Z
-- [User-defined schemas](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-user-defined-schemas)
-  - Updated: 2022-01-04T12:03:00.000Z → 2026-05-03T11:12:00.000Z
-- [Variable assignment](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-variable-assignment)
-  - Updated: 2022-02-18T12:06:00.000Z → 2026-05-03T11:12:00.000Z
-- [Views](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-views)
-  - Updated: 2022-02-18T12:06:00.000Z → 2026-05-03T11:12:00.000Z
-- [Dynamic SQL](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-dynamic-sql)
-  - Updated: 2022-02-18T12:06:00.000Z → 2026-05-03T11:12:00.000Z
-- [Group by options](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-group-by-options)
-  - Updated: 2022-02-18T12:06:00.000Z → 2026-05-03T11:12:00.000Z
-- [Labels](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-label)
-  - Updated: 2022-02-18T12:06:00.000Z → 2026-05-03T11:12:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-storage-files-overview)
-  - Updated: 2023-10-12T11:16:00.000Z → 2026-05-03T11:12:00.000Z
-- [Apache Spark for Azure Synapse external tables](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-storage-files-spark-tables)
-  - Updated: 2022-02-16T12:03:00.000Z → 2026-05-03T11:12:00.000Z
-- *...and 134 more*
+- [FAQ](https://learn.microsoft.com/en-us/azure/synapse-analytics/overview-faq)
+  - Updated: 2025-12-12T23:21:00Z → 2025-12-12T23:21:00.000Z
+- [SQL FAQ](https://learn.microsoft.com/en-us/azure/synapse-analytics/synapse-link/faq)
+  - Updated: 2025-11-03T22:11:00Z → 2025-11-03T22:11:00.000Z
+- [FAQ](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-overview-faq)
+  - Updated: 2025-10-08T22:11:00Z → 2025-10-08T22:11:00.000Z
 
 ## Classified Pages
 
@@ -183,6 +148,7 @@ confusable_not_for: Not for Azure Analysis Services (use azure-analysis-services
 | [System and user-assigned managed identity](https://learn.microsoft.com/en-us/azure/synapse-analytics/synapse-service-identity) | security | 0.80 | Explains Synapse-specific behavior and configuration of managed identities, including how they interact with Synapse resources. |
 | [Troubleshoot serverless SQL pools](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/resources-self-help-sql-on-demand) | troubleshooting | 0.80 | Explicitly a self-help troubleshooting article for serverless SQL pool; such pages typically list specific error messages, causes, and resolutions unique to the product. |
 | [Connect to Azure Synapse workspace with private endpoints](https://learn.microsoft.com/en-us/azure/synapse-analytics/security/how-to-connect-to-workspace-with-private-links) | security | 0.78 | How-to for configuring private links/endpoints to Synapse workspaces; includes security-related network configuration. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-overview-faq) | limits-quotas | 0.78 | FAQ for Azure Synapse dedicated SQL pool includes concrete, product-specific details such as maximum number of databases per server, DWU and storage constraints, and other numeric service limits that are not derivable from general knowledge. These are exact values and quotas that change over time and must be looked up. |
 | [Set up Managed private endpoints to data sources](https://learn.microsoft.com/en-us/azure/synapse-analytics/security/how-to-create-managed-private-endpoints) | security | 0.78 | Step-by-step configuration of managed private endpoints for secure data access; product-specific security connectivity details. |
 | [Statistics](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-tables-statistics) | best-practices | 0.78 | Provides concrete recommendations and examples for statistics management tailored to Synapse dedicated SQL pools, including product-specific behaviors and patterns not covered by generic SQL optimization knowledge. |
 | [Synapse workspace Managed private endpoints](https://learn.microsoft.com/en-us/azure/synapse-analytics/security/synapse-workspace-managed-private-endpoints) | security | 0.78 | How-to style security article for Synapse managed private endpoints; likely includes specific Synapse/Private Link configuration steps and parameters beyond generic concepts. |
@@ -309,6 +275,7 @@ confusable_not_for: Not for Azure Analysis Services (use azure-analysis-services
 | [Restore a deleted data warehouse](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-restore-deleted-dw) | configuration | 0.70 | Covers restoring a deleted pool via portal or PowerShell; involves specific restore operations, parameters, and constraints unique to Synapse backups. |
 | [Restore an existing data warehouse](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-restore-active-paused-dw) | configuration | 0.70 | How-to for restoring an existing pool; likely includes restore options, constraints, and portal/PowerShell parameters specific to the service. |
 | [Restore from a geo-backup](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-restore-from-geo-backup) | configuration | 0.70 | How-to for geo-restoring from a geo-backup; likely includes region constraints, options, and parameters specific to Synapse geo-backups. |
+| [SQL FAQ](https://learn.microsoft.com/en-us/azure/synapse-analytics/synapse-link/faq) | limits-quotas | 0.70 | FAQ content for a specific Azure service typically includes product-specific constraints such as supported scenarios, configuration constraints, and often explicit limits (for example, supported database types, maximum tables, or other numeric restrictions) that are not generally known from training data. Among the available categories, limits-quotas best fits because FAQs for data services commonly document concrete operational limits and constraints rather than deep configuration tables or error-code-based troubleshooting. |
 | [Scale, pause, and resume compute](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-manage-compute-overview) | configuration | 0.70 | Explains how to scale, pause, and resume compute for dedicated SQL pools, which involves specific configuration options and platform behaviors unique to Synapse. |
 | [Secure credentials using TokenLibrary](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-secure-credentials-with-tokenlibrary) | security | 0.70 | Describes using Linked Services and mssparkutils token library for credential handling; likely includes concrete auth flows, parameter names, and product-specific security patterns beyond generic concepts. |
 | [Security Controls by Azure Policy](https://learn.microsoft.com/en-us/azure/synapse-analytics/security-controls-policy) | security | 0.70 | Lists specific Azure Policy built-in definitions and controls for Synapse; these are product-specific security/compliance configurations. |
@@ -355,7 +322,6 @@ confusable_not_for: Not for Azure Analysis Services (use azure-analysis-services
 | [Dynamic SQL](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-dynamic-sql) | best-practices | 0.65 | Offers concrete tips and patterns for dynamic SQL in Synapse, including product-specific behaviors and recommended approaches. |
 | [Evaluate data integration design](https://learn.microsoft.com/en-us/azure/synapse-analytics/guidance/implementation-success-evaluate-data-integration-design) | architecture-patterns | 0.65 | Describes how to evaluate data integration components using Synapse’s built-in ADF engine; provides product-specific design guidance and patterns for ETL/ELT in Synapse. |
 | [Evaluate workspace design](https://learn.microsoft.com/en-us/azure/synapse-analytics/guidance/implementation-success-evaluate-workspace-design) | architecture-patterns | 0.65 | Guides evaluation of workspace design across multiple integrated services; this is product-specific architecture guidance on how to structure Synapse workspaces and components, going beyond generic architecture theory. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-overview-faq) | troubleshooting | 0.65 | FAQ for dedicated SQL pool typically includes product-specific behaviors, limitations, and resolutions to common problems beyond generic knowledge. |
 | [Labels](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-label) | best-practices | 0.65 | Explains Synapse-specific query label syntax, behavior, and monitoring integration, including serverless limitations. |
 | [Loops](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-loops) | best-practices | 0.65 | Provides Synapse-specific tips for loops and cursor replacement with performance-focused patterns unique to Synapse SQL execution model. |
 | [Manage Compute](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/manage-compute-with-azure-functions) | integrations | 0.65 | Tutorial on using Azure Functions to pause/resume or scale compute; likely includes function configuration, bindings, and API calls specific to Synapse management. |
@@ -408,7 +374,6 @@ confusable_not_for: Not for Azure Analysis Services (use azure-analysis-services
 | [Create and use external tables](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/create-use-external-tables) | 0.55 | Creating native external tables; summary emphasizes performance but doesn’t clearly indicate detailed config matrices or limits. |
 | [Move workspace to new region](https://learn.microsoft.com/en-us/azure/synapse-analytics/how-to-move-workspace-from-one-region-to-another) | 0.55 | Step-by-step migration-like guide for moving workspaces between regions; mostly procedural without clear config tables, limits, or troubleshooting mappings. |
 | [Query Parquet files and containers in Azure Synapse Link for Azure Cosmos DB](https://learn.microsoft.com/en-us/azure/synapse-analytics/how-to-analyze-complex-schema) | 0.50 | Analyzing complex schemas with Spark/SQL; appears conceptual/how-to, not focused on limits, security, or troubleshooting. |
-| [SQL FAQ](https://learn.microsoft.com/en-us/azure/synapse-analytics/synapse-link/faq) | 0.50 | FAQ may mix conceptual and some specific details, but summary is generic; without clear indication of error-code mappings or numeric limits, it’s treated as non-expert for this classification. |
 | [Anomaly detection wizard](https://learn.microsoft.com/en-us/azure/synapse-analytics/machine-learning/tutorial-cognitive-services-anomaly) | 0.45 | Anomaly detection tutorial; similar to 26, focused on usage of a Foundry Tool, not deep Synapse configuration. |
 | [Connect to Azure Synapse Link for Azure Cosmos DB](https://learn.microsoft.com/en-us/azure/synapse-analytics/synapse-link/how-to-connect-synapse-link-cosmos-db) | 0.45 | How-to connect Cosmos DB to Synapse Link; largely a connection walkthrough without strong signals of detailed config tables or error mappings. |
 | [Connect to Power BI Desktop](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/get-started-power-bi-professional) | 0.45 | Tutorial for connecting Power BI Desktop to serverless SQL; primarily a guided setup, not a detailed config matrix or troubleshooting guide. |
@@ -494,7 +459,6 @@ confusable_not_for: Not for Azure Analysis Services (use azure-analysis-services
 | [Data warehousing with dedicated SQL pool](https://learn.microsoft.com/en-us/azure/synapse-analytics/guidance/proof-of-concept-playbook-dedicated-sql-pool) | 0.30 | Described as a high-level methodology for a POC; likely process guidance without product-specific numeric limits, configs, or detailed troubleshooting. |
 | [Database templates overview](https://learn.microsoft.com/en-us/azure/synapse-analytics/database-designer/overview-database-templates) | 0.30 | Conceptual overview of database templates; no strong indication of detailed config, limits, or troubleshooting. |
 | [Dedicated SQL pool architecture](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/massively-parallel-processing-mpp-architecture) | 0.30 | Architecture overview of MPP dedicated SQL pool; largely conceptual without quantified thresholds, decision matrices, or product-specific config tables. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/synapse-analytics/overview-faq) | 0.30 | FAQ format but summary suggests general Q&A; no indication of detailed error codes, limits, or config tables. |
 | [Get started with Striim](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/striim-quickstart) | 0.30 | Quickstart for using Striim with Synapse; primarily a getting-started/tutorial flow without clear evidence of detailed limits, configuration tables, or product-specific troubleshooting content. |
 | [Learn about monitoring](https://learn.microsoft.com/en-us/azure/synapse-analytics/monitor-articles) | 0.30 | Monitoring overview/navigation page pointing to other docs; not itself containing detailed metrics tables or configuration. |
 | [Load data into SQL pools using copy activity](https://learn.microsoft.com/en-us/azure/synapse-analytics/quickstart-copy-activity-load-sql-pool) | 0.30 | Quickstart for copy activity into dedicated SQL pool; appears to be a basic tutorial without configuration matrices or product-specific constraints. |
@@ -541,6 +505,7 @@ confusable_not_for: Not for Azure Analysis Services (use azure-analysis-services
 | [Data visualization with Synapse Studio notebooks](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-data-visualization-tutorial) | 0.20 | Tutorial on exploratory analysis and visualization; code examples but no product-specific config tables or limits. |
 | [Delta Lake](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-what-is-delta-lake) | 0.20 | Conceptual overview of Delta Lake features; no detailed Synapse-specific configuration or limits. |
 | [Document Intelligence with Apache Spark (SynapseML)](https://learn.microsoft.com/en-us/azure/synapse-analytics/machine-learning/tutorial-form-recognizer-use-mmlspark) | 0.20 | Tutorial for using Azure Document Intelligence in Synapse; appears to be a step-by-step enrichment example without detailed limits, configuration matrices, or troubleshooting mappings. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/synapse-analytics/overview-faq) | 0.20 | FAQ page is primarily conceptual and descriptive (what Synapse is, billing, high-level capabilities). It does not systematically list numeric limits/quotas, configuration parameter tables, error-code-based troubleshooting, or decision matrices with quantified trade-offs. Any specifics are scattered and not in the structured, expert-knowledge forms defined for the sub-skill types. |
 | [Get started](https://learn.microsoft.com/en-us/azure/synapse-analytics/get-started) | 0.20 | Getting started tutorial; step-by-step usage, not configuration matrices, limits, or troubleshooting. |
 | [Install Visual Studio SSDT](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-install-visual-studio) | 0.20 | Explains how to install Visual Studio and SSDT; generic tooling setup without product-specific limits, security, or troubleshooting matrices. |
 | [Introduction](https://learn.microsoft.com/en-us/azure/synapse-analytics/guidance/security-white-paper-introduction) | 0.20 | Introduction/overview to a white paper series; summary-level content without concrete configurations, limits, or error details. |

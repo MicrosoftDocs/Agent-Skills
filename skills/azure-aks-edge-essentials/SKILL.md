@@ -3,7 +3,7 @@ name: azure-aks-edge-essentials
 description: Expert knowledge for Azure Kubernetes Service Edge Essentials development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing AKS Edge/Arc clusters, Arc connectivity, IoT/OPC/ONVIF workloads, TPM/AI deployments, or Key Vault secrets, and other Azure Kubernetes Service Edge Essentials related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure IoT Edge (use azure-iot-edge), Azure Stack Edge (use azure-stack-edge), Azure Container Apps (use azure-container-apps).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-03"
+  generated_at: "2026-05-17"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Kubernetes Service Edge Essentials Skill
@@ -24,7 +24,7 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L87 | Diagnosing and fixing AKS Edge/Arc cluster issues: creation/upgrade failures, networking, storage, security, certificates, logs/diagnostics, known issues, and VMware/Windows Server-specific problems. |
+| Troubleshooting | L37-L87 | Diagnosing and fixing AKS Edge/Arc cluster issues: creation/upgrade failures, networking, storage, security, certificates, logs/diagnostics, VMware/Windows Server problems, and known issues/workarounds |
 | Best Practices | L88-L95 | Best practices for AKS Edge/Arc: applying Azure Policy, recovering clusters after management VM loss, and safely upgrading Kubernetes/workload clusters via PowerShell or Admin Center |
 | Decision Making | L96-L108 | Guidance on choosing AKS Edge/Arc vs cloud/on-prem, supported versions/add-ons, monitoring, pricing/licensing, support, and planning migrations or retirement of older AKS/Windows Server setups |
 | Architecture & Design Patterns | L109-L115 | Designing AKS on Windows Server for Azure Local: high availability on two-node setups, SDN VNet architectures, and deployment patterns for AKS Arc target clusters. |
@@ -61,16 +61,16 @@ This skill requires **network access** to fetch documentation content:
 | Fix AKS Arc cluster create or scale failures due to VHD image issues | https://learn.microsoft.com/en-us/azure/aks/aksarc/gallery-image-not-usable |
 | Collect on-demand AKS Arc logs for Microsoft support | https://learn.microsoft.com/en-us/azure/aks/aksarc/get-on-demand-logs |
 | Fix AKS Arc cluster creation failures with GPU default node pools | https://learn.microsoft.com/en-us/azure/aks/aksarc/gpu-enabled-cluster-issue |
-| General known issues when running AKS on Windows Server | https://learn.microsoft.com/en-us/azure/aks/aksarc/known-issues |
-| Fix Arc connection errors for AKS workload clusters | https://learn.microsoft.com/en-us/azure/aks/aksarc/known-issues-arc |
-| Resolve installation errors for AKS on Windows Server | https://learn.microsoft.com/en-us/azure/aks/aksarc/known-issues-installation |
-| Troubleshoot networking problems in AKS Arc clusters | https://learn.microsoft.com/en-us/azure/aks/aksarc/known-issues-networking |
-| Troubleshoot security and identity issues in AKS Arc | https://learn.microsoft.com/en-us/azure/aks/aksarc/known-issues-security |
-| Troubleshoot storage issues in AKS on Windows Server | https://learn.microsoft.com/en-us/azure/aks/aksarc/known-issues-storage |
-| Fix uninstall problems for AKS on Windows Server | https://learn.microsoft.com/en-us/azure/aks/aksarc/known-issues-uninstall |
-| Resolve upgrade issues for AKS Arc deployments | https://learn.microsoft.com/en-us/azure/aks/aksarc/known-issues-upgrade |
-| Known Windows Admin Center issues for AKS Arc | https://learn.microsoft.com/en-us/azure/aks/aksarc/known-issues-windows-admin-center |
-| Troubleshoot AKS Arc management and workload clusters | https://learn.microsoft.com/en-us/azure/aks/aksarc/known-issues-workload-clusters |
+| Handle general known issues when running AKS on Windows Server | https://learn.microsoft.com/en-us/azure/aks/aksarc/known-issues |
+| Fix Azure Arc enable/disable errors on AKS workload clusters | https://learn.microsoft.com/en-us/azure/aks/aksarc/known-issues-arc |
+| Resolve installation errors for AKS on Windows Server (AKS Arc) | https://learn.microsoft.com/en-us/azure/aks/aksarc/known-issues-installation |
+| Diagnose and fix networking issues in AKS on Windows Server | https://learn.microsoft.com/en-us/azure/aks/aksarc/known-issues-networking |
+| Resolve security and identity errors in AKS Arc clusters | https://learn.microsoft.com/en-us/azure/aks/aksarc/known-issues-security |
+| Troubleshoot storage-related problems in AKS on Windows Server | https://learn.microsoft.com/en-us/azure/aks/aksarc/known-issues-storage |
+| Fix problems uninstalling AKS Arc on Windows Server | https://learn.microsoft.com/en-us/azure/aks/aksarc/known-issues-uninstall |
+| Address upgrade issues for AKS on Windows Server (AKS Arc) | https://learn.microsoft.com/en-us/azure/aks/aksarc/known-issues-upgrade |
+| Work around Windows Admin Center issues for AKS Arc | https://learn.microsoft.com/en-us/azure/aks/aksarc/known-issues-windows-admin-center |
+| Troubleshoot AKS Arc management and workload cluster failures | https://learn.microsoft.com/en-us/azure/aks/aksarc/known-issues-workload-clusters |
 | Troubleshoot kube-apiserver connectivity from Arc Resource Bridge | https://learn.microsoft.com/en-us/azure/aks/aksarc/kube-api-server-unreachable |
 | Resolve control plane disk exhaustion from kube-apiserver audit logs in AKS Arc | https://learn.microsoft.com/en-us/azure/aks/aksarc/kube-apiserver-log-overflow |
 | Monitor Kubernetes object events in AKS Arc | https://learn.microsoft.com/en-us/azure/aks/aksarc/kubernetes-monitor-object-events |

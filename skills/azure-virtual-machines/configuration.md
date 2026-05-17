@@ -34,7 +34,7 @@
 | Select OS images that support Azure remote NVMe | https://learn.microsoft.com/en-us/azure/virtual-machines/enable-nvme-interface |
 | Configure Azure Monitor Dependency agent extension for Linux | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/agent-dependency-linux |
 | Configure Azure Monitor Dependency agent extension for Windows | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/agent-dependency-windows |
-| Install and configure Azure Linux VM Agent | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/agent-linux |
+| Configure and manage Azure Linux VM Agent settings | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/agent-linux |
 | Install and manage Azure Windows VM Agent | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/agent-windows |
 | Configure Chef VM Extension on Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/chef |
 | Configure Custom Script Extension v2 on Linux VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/custom-script-linux |
@@ -54,7 +54,7 @@
 | Configure Microsoft Antimalware Extension for Windows VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/iaas-antimalware-windows |
 | Configure Azure Key Vault VM extension on Linux VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/key-vault-linux |
 | Configure Azure Key Vault VM extension on Windows | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/key-vault-windows |
-| Configure Qualys Cloud Agent VM Extension on Azure | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/qualys |
+| Configure Qualys Cloud Agent extension on Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/qualys |
 | Configure Salt Minion VM Extension for Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/salt-minion |
 | Configure Stackify Retrace Linux agent extension on Azure | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/stackify-retrace-linux |
 | Configure Tenable One-Click Nessus VM Extension | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/tenable |

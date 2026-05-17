@@ -1,9 +1,9 @@
 ---
 name: azure-service-bus
-description: Expert knowledge for Azure Service Bus development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using queues/topics, sessions, SQL filters/actions, JMS/RabbitMQ integration, or Premium scaling/DR, and other Azure Service Bus related development tasks. Not for Azure Event Hubs (use azure-event-hubs), Azure Relay (use azure-relay), Azure Queue Storage (use azure-queue-storage), Azure Notification Hubs (use azure-notification-hubs).
+description: Expert knowledge for Azure Service Bus development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using queues/topics, sessions, SQL filters, JMS/RabbitMQ bridges, or geo-replication/DR in Service Bus, and other Azure Service Bus related development tasks. Not for Azure Event Hubs (use azure-event-hubs), Azure Event Grid (use azure-event-grid), Azure Queue Storage (use azure-queue-storage), Azure Relay (use azure-relay).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-10"
+  generated_at: "2026-05-17"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Service Bus Skill
@@ -28,11 +28,11 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L47-L61 | Guidance on reliable Service Bus messaging: ordering, sessions, TTL/expiration, duplicate detection, dead-lettering, locks/settlement, serialization, and performance tuning (prefetch, throughput). |
 | Decision Making | L62-L73 | Guidance on choosing Service Bus vs other messaging options, selecting Standard vs Premium, using JMS vs Java SDK, and configuring autoforwarding, geo-replication, and disaster recovery. |
 | Architecture & Design Patterns | L74-L82 | Patterns for designing resilient, federated, multi-namespace Service Bus systems, including partitioning, replication, and using NServiceBus for message-driven architectures. |
-| Limits & Quotas | L83-L88 | Service Bus message, entity, and namespace quotas (size, connections, throughput) and how throttling works, including limits, behaviors under load, and mitigation strategies. |
-| Security | L89-L111 | Securing Service Bus with Entra ID, managed identities, SAS, keys, TLS, network isolation (VNet, Private Link, firewalls, NSPs), and applying Azure Policy/compliance settings. |
-| Configuration | L112-L135 | Configuring and managing Service Bus entities: forwarding, dead-lettering, sessions, partitioning, monitoring/metrics, SQL filters/actions, PowerShell/ARM management, and local emulation. |
-| Integrations & Coding Patterns | L136-L151 | Patterns and code for integrating Service Bus with JMS (1.1/2.0), RabbitMQ, Event Grid/Logic Apps/Functions, subscription filters/actions, replication tasks, and batch message deletion. |
-| Deployment | L152-L161 | Deploying and scaling Service Bus: autoscaling Premium messaging units and creating/moving namespaces, queues, topics, subscriptions, and rules using ARM templates or Bicep. |
+| Limits & Quotas | L83-L89 | Service Bus capacity rules: entity size/message limits, namespace quotas, throttling behaviors, and how throughput, connections, and operations are constrained or reduced under load. |
+| Security | L90-L112 | Securing Service Bus with Entra ID, managed identities, SAS, keys, TLS, network isolation (VNet, Private Link, firewalls, NSPs), and applying Azure Policy/compliance settings. |
+| Configuration | L113-L136 | Configuring and managing Service Bus entities: forwarding, dead-lettering, sessions, partitioning, monitoring/metrics, SQL filters/actions, PowerShell/ARM management, and local emulation. |
+| Integrations & Coding Patterns | L137-L152 | Patterns and code for integrating Service Bus with JMS (1.1/2.0), RabbitMQ, Event Grid/Logic Apps/Functions, subscription filters/actions, replication tasks, and batch message deletion. |
+| Deployment | L153-L162 | Deploying and scaling Service Bus: autoscaling Premium messaging units and creating/moving namespaces, queues, topics, subscriptions, and rules using ARM templates or Bicep. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -83,6 +83,7 @@ This skill requires **network access** to fetch documentation content:
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
+| Understand Azure Service Bus limits and behaviors | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-faq |
 | Reference Azure Service Bus quotas and limits | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-quotas |
 | Understand throttling limits in Azure Service Bus | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-throttling |
 

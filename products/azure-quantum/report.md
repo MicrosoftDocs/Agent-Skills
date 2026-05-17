@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-03'
+generated_at: '2026-05-17'
 category_descriptions:
   troubleshooting: 'Troubleshooting Azure Quantum provider issues: diagnosing job
     failures and understanding support/escalation policies and limits for IonQ, PASQAL,
@@ -44,17 +44,17 @@ confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure Batch (
 
 ## Summary
 
-- **Total Pages**: 137
-- **Fetched**: 137
+- **Total Pages**: 136
+- **Fetched**: 136
 - **Fetch Failed**: 0
-- **Classified**: 38
-- **Unclassified**: 99
+- **Classified**: 35
+- **Unclassified**: 101
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 137
-- **Deleted Pages**: 0
+- **New Pages**: 1
+- **Updated Pages**: 13
+- **Unchanged**: 122
+- **Deleted Pages**: 2
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-quantum/azure-quantum.csv`
 
 ## Classification Statistics
@@ -63,16 +63,54 @@ confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure Batch (
 |------|-------|------------|
 | architecture-patterns | 1 | 0.7% |
 | best-practices | 2 | 1.5% |
-| configuration | 10 | 7.3% |
-| decision-making | 5 | 3.6% |
+| configuration | 9 | 6.6% |
+| decision-making | 3 | 2.2% |
 | deployment | 2 | 1.5% |
 | integrations | 4 | 2.9% |
 | limits-quotas | 3 | 2.2% |
 | security | 7 | 5.1% |
 | troubleshooting | 4 | 2.9% |
-| *(Unclassified)* | 99 | 72.3% |
+| *(Unclassified)* | 101 | 74.3% |
 
 ## Changes
+
+### New Pages
+
+- [How to use the neutral atom device visualizer](https://learn.microsoft.com/en-us/azure/quantum/how-to-use-neutral-atom-visualizer)
+
+### Updated Pages
+
+- [What is Azure Quantum?](https://learn.microsoft.com/en-us/azure/quantum/overview-azure-quantum)
+  - Updated: 2025-10-30T15:25:00.000Z → 2026-05-15T22:10:00.000Z
+- [Create an Azure Quantum workspace](https://learn.microsoft.com/en-us/azure/quantum/how-to-create-workspace)
+  - Updated: 2025-10-17T17:03:00.000Z → 2026-05-15T22:10:00.000Z
+- [Quantinuum provider and targets](https://learn.microsoft.com/en-us/azure/quantum/provider-quantinuum)
+  - Updated: 2025-10-01T18:36:00.000Z → 2026-05-15T22:10:00.000Z
+- [Quantum random number generator](https://learn.microsoft.com/en-us/azure/quantum/tutorial-qdk-quantum-random-number-generator)
+  - Updated: 2026-01-29T17:24:00.000Z → 2026-05-15T22:10:00.000Z
+- [Quantum entanglement](https://learn.microsoft.com/en-us/azure/quantum/tutorial-qdk-explore-entanglement)
+  - Updated: 2025-12-03T21:59:00.000Z → 2026-05-15T22:10:00.000Z
+- [Grover's algorithm](https://learn.microsoft.com/en-us/azure/quantum/tutorial-qdk-grovers-search)
+  - Updated: 2026-02-25T20:38:00.000Z → 2026-05-15T22:10:00.000Z
+- [VS Code reference for the QDK](https://learn.microsoft.com/en-us/azure/quantum/vscode-qdk-reference)
+  - Updated: 2026-04-28T15:50:00.000Z → 2026-05-15T08:00:00.000Z
+- [Q#](https://learn.microsoft.com/en-us/azure/quantum/qsharp-overview)
+  - Updated: 2025-11-11T23:35:00.000Z → 2026-05-15T22:10:00.000Z
+- [Overview of QDK simulators](https://learn.microsoft.com/en-us/azure/quantum/simulators-overview-qdk)
+  - Updated: 2026-05-01T15:59:00.000Z → 2026-05-11T22:54:00.000Z
+- [Sparse simulator](https://learn.microsoft.com/en-us/azure/quantum/sparse-simulator)
+  - Updated: 2025-10-16T08:00:00.000Z → 2026-05-11T22:54:00.000Z
+- [Neutral atom simulator overview](https://learn.microsoft.com/en-us/azure/quantum/overview-qdk-neutral-atom-simulator)
+  - Updated: 2026-02-19T00:44:00.000Z → 2026-05-11T22:54:00.000Z
+- [Analyze cryptographic protocols](https://learn.microsoft.com/en-us/azure/quantum/resource-estimator-quantum-safe-planning)
+  - Updated: 2026-02-27T16:51:00.000Z → 2026-05-15T22:10:00.000Z
+- [Ways to run Q# programs](https://learn.microsoft.com/en-us/azure/quantum/qsharp-ways-to-work)
+  - Updated: 2026-01-29T17:24:00.000Z → 2026-05-15T22:10:00.000Z
+
+### Deleted Pages
+
+- ~~Explore with Copilot in Microsoft Quantum~~ (https://learn.microsoft.com/en-us/azure/quantum/get-started-azure-quantum)
+- ~~How to use the neutral atom device visualizers~~ (https://learn.microsoft.com/en-us/azure/quantum/how-to-use-neutral-atom-visualizer)
 
 ## Classified Pages
 
@@ -91,7 +129,6 @@ confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure Batch (
 | [Azure Quantum provider global availability](https://learn.microsoft.com/en-us/azure/quantum/provider-global-availability) | decision-making | 0.70 | Provides per-country/region availability tables for each provider; supports decisions on which provider can be used based on billing region. |
 | [IonQ provider and targets](https://learn.microsoft.com/en-us/azure/quantum/provider-ionq) | configuration | 0.70 | Technical details of IonQ provider and targets; likely includes target IDs, supported operations, and constraints specific to IonQ integration. |
 | [Protect Azure Quantum with resource locks](https://learn.microsoft.com/en-us/azure/quantum/how-to-set-resource-locks) | security | 0.70 | Shows how to apply ARM resource locks to workspaces and storage; product-specific security hardening guidance with concrete lock types and scenarios. |
-| [Quantinuum provider and targets](https://learn.microsoft.com/en-us/azure/quantum/provider-quantinuum) | configuration | 0.70 | Technical details of Quantinuum provider; likely includes target identifiers, mid-circuit measurement capabilities, and constraints. |
 | [Rigetti provider and targets](https://learn.microsoft.com/en-us/azure/quantum/provider-rigetti) | limits-quotas | 0.70 | Provider technical details pages for specific quantum hardware typically list device-specific characteristics such as qubit counts, connectivity, gate times, sampling rates, and other numeric constraints that function as practical limits/quotas for jobs and circuits. These are expert, provider-specific values not inferable from general training data. |
 | [Submit a circuit with Cirq](https://learn.microsoft.com/en-us/azure/quantum/quickstart-microsoft-cirq) | integrations | 0.70 | Shows how to use the qdk.azure.cirq submodule to submit Cirq circuits; contains product-specific module names and usage patterns for integration. |
 | [Work with Azure Quantum using the Azure CLI](https://learn.microsoft.com/en-us/azure/quantum/how-to-manage-quantum-workspaces-with-the-azure-cli) | configuration | 0.70 | CLI-focused how-to that likely includes specific Azure Quantum workspace-related parameters, required resource types, and command options (for resource groups, storage accounts, and workspace creation/deletion). These are product-specific configuration details rather than generic concepts. |
@@ -104,9 +141,7 @@ confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure Batch (
 | [Run hybrid QC jobs](https://learn.microsoft.com/en-us/azure/quantum/hybrid-computing-integrated) | integrations | 0.65 | Describes implementation of integrated hybrid computing and submitting jobs using the Adaptive RI target profile; includes target profile names and usage patterns unique to this product. |
 | [Set up the QDK](https://learn.microsoft.com/en-us/azure/quantum/install-overview-qdk) | configuration | 0.65 | Environment setup for QDK in VS Code with Python, Jupyter, and Azure CLI; likely includes specific extension IDs, settings, and configuration steps. |
 | [Use known estimates](https://learn.microsoft.com/en-us/azure/quantum/resource-estimator-known-estimates) | configuration | 0.65 | Explains how to pass pre-calculated estimates as input; involves specific input parameters and usage patterns unique to the resource estimator. |
-| [Ways to run Q# programs](https://learn.microsoft.com/en-us/azure/quantum/qsharp-ways-to-work) | decision-making | 0.65 | Compares different environment options and helps choose the right one; environment selection guidance with criteria is decision-making content. |
 | [Work with Azure Quantum using Bicep](https://learn.microsoft.com/en-us/azure/quantum/how-to-manage-quantum-workspaces-using-bicep) | deployment | 0.65 | Bicep-based infrastructure-as-code guide that likely defines Azure Quantum workspace resources with specific properties and schema fields. This is expert deployment/configuration knowledge for automating workspace provisioning, beyond generic Bicep usage. |
-| [Analyze cryptographic protocols](https://learn.microsoft.com/en-us/azure/quantum/resource-estimator-quantum-safe-planning) | decision-making | 0.60 | Guides using the estimator to analyze resources needed to break encryption; likely includes scenario-based guidance and criteria for assessing cryptographic strength and planning migration. |
 | [Debug and test your Q# code](https://learn.microsoft.com/en-us/azure/quantum/testing-debugging) | best-practices | 0.60 | Covers unit tests, assertions, and dump functions specific to Q# and QDK; these are product-specific debugging patterns and gotchas. |
 | [Install the neutral atom simulators](https://learn.microsoft.com/en-us/azure/quantum/install-qdk-neutral-atom-simulators) | configuration | 0.60 | Describes installing simulation Python modules and running simulations; likely includes package names, commands, and possibly configuration options specific to these simulators. |
 | [Introduction to hybrid QC](https://learn.microsoft.com/en-us/azure/quantum/hybrid-computing-overview) | architecture-patterns | 0.60 | Explains different hybrid implementation types and how to choose the best approach; this is explicit decision/architecture guidance specific to Azure Quantum hybrid models. |
@@ -124,26 +159,26 @@ confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure Batch (
 | [Get the output of the resource estimator](https://learn.microsoft.com/en-us/azure/quantum/overview-resource-estimator-output-data) | 0.55 | Focuses on interpreting output and accessing results; while useful, it is more about reading data than configuring the product or listing limits. |
 | [Get started with sessions](https://learn.microsoft.com/en-us/azure/quantum/hybrid-computing-interactive) | 0.50 | Explains sessions architecture and how to create them; mostly conceptual and procedural without clear evidence of numeric limits or detailed config tables in the summary. |
 | [Types of target profiles](https://learn.microsoft.com/en-us/azure/quantum/quantum-computing-target-profiles) | 0.50 | Overview of target profile types and capabilities; likely conceptual constraints rather than numeric limits or config tables. |
-| [How to use the neutral atom device visualizers](https://learn.microsoft.com/en-us/azure/quantum/how-to-use-neutral-atom-visualizer) | 0.45 | Explains how to use a visualizer UI and create diagrams; summary suggests usage guidance rather than detailed configuration or limits. |
 | [Program implementation](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/programstructure/) | 0.45 | Explains components of a simple Q# program and how to run it; more of a basic tutorial than a configuration or limits reference. |
 | [Run your first resource estimate](https://learn.microsoft.com/en-us/azure/quantum/quickstart-microsoft-resources-estimator) | 0.45 | Quickstart for submitting a sample to the resource estimator; likely step-by-step tutorial without comprehensive configuration tables or limits. |
-| [Create an Azure Quantum workspace](https://learn.microsoft.com/en-us/azure/quantum/how-to-create-workspace) | 0.40 | How-to create a workspace via portal; likely step-by-step UI instructions without detailed config tables or limits. |
 | [Create your first Q# program](https://learn.microsoft.com/en-us/azure/quantum/qsharp-quickstart) | 0.40 | Introductory quickstart to create a basic Q# program; primarily tutorial content without detailed configuration or limits. |
-| [Neutral atom simulator overview](https://learn.microsoft.com/en-us/azure/quantum/overview-qdk-neutral-atom-simulator) | 0.40 | Overview of neutral atom simulators and when to use them; no clear indication of detailed parameters, limits, or error codes. |
 | [Pasqal provider and targets](https://learn.microsoft.com/en-us/azure/quantum/provider-pasqal) | 0.40 | Described as technical details of Pasqal simulators and QPU, but the summary only shows high-level description and list of targets; no explicit evidence of numeric limits, configuration parameters, or error-code style troubleshooting in the provided text. |
-| [Sparse simulator](https://learn.microsoft.com/en-us/azure/quantum/sparse-simulator) | 0.40 | Describes the sparse simulator conceptually; summary does not indicate specific configuration parameters, limits, or error codes. |
 | [Work with jobs](https://learn.microsoft.com/en-us/azure/quantum/how-to-work-with-jobs) | 0.40 | Intro to jobs and lifecycle; summary suggests conceptual guidance without detailed limits, configs, or error mappings. |
 | [Get started with the resource estimator](https://learn.microsoft.com/en-us/azure/quantum/intro-to-resource-estimation) | 0.35 | Introduction to the resource estimator; mostly conceptual description of what it does and high-level capabilities. |
 | [Add or remove a provider](https://learn.microsoft.com/en-us/azure/quantum/how-to-add-a-provider) | 0.30 | How-to for adding/removing providers in a workspace; likely step-by-step UI/API instructions without detailed configuration parameter tables, limits, or troubleshooting mappings. |
+| [Analyze cryptographic protocols](https://learn.microsoft.com/en-us/azure/quantum/resource-estimator-quantum-safe-planning) | 0.30 | Describes using a resource estimator for cryptography impact; summary does not show specific numeric thresholds, configuration parameters, or decision matrices beyond generic tool usage. |
 | [Azure Quantum release notes](https://learn.microsoft.com/en-us/azure/quantum/release-notes) | 0.30 | Release notes; while detailed, they are temporal change logs rather than stable expert configuration or limits content for skills. |
 | [Billing and job costs in Azure Quantum](https://learn.microsoft.com/en-us/azure/quantum/azure-quantum-job-cost-billing) | 0.30 | Described as guidelines to understand costs and manage invoices; this is typically conceptual billing guidance without numeric service limits, configuration tables, or decision matrices with thresholds. |
 | [Conditional loops](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/expressions/conditionalloops) | 0.30 | Conditional loops and quantum hardware restrictions are described conceptually; no numeric hardware limits or configuration ranges. |
 | [Conjugations](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/expressions/conjugations) | 0.30 | Conjugations and quantum memory patterns are explained conceptually; no concrete limits, configs, or decision matrices. |
 | [Double-factorized chemistry with the resource estimator](https://learn.microsoft.com/en-us/azure/quantum/tutorial-resource-estimator-chemistry) | 0.30 | Resource estimator tutorial for quantum chemistry; shows how to use a tool but does not enumerate service limits, configs, or decision matrices. |
 | [How to use the molecule visualizer](https://learn.microsoft.com/en-us/azure/quantum/how-to-use-molecule-visualizer) | 0.30 | How-to for using the molecule visualizer with QDK chemistry; appears to be a usage tutorial without explicit configuration matrices, limits, or error-code mappings. |
+| [How to use the neutral atom device visualizer](https://learn.microsoft.com/en-us/azure/quantum/how-to-use-neutral-atom-visualizer) | 0.30 | How-to for using a visualizer UI; summary suggests interaction guidance but not detailed configuration tables, limits, or troubleshooting mappings. |
 | [Namespaces](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/programstructure/namespaces) | 0.30 | Language reference for namespaces in Q#; mostly syntax and semantics, which are general language knowledge rather than product operational expertise. |
 | [OpenQASM in the QDK](https://learn.microsoft.com/en-us/azure/quantum/qdk-openqasm-integration) | 0.30 | How-to article for running OpenQASM programs in QDK; summary suggests step-by-step environment setup and usage, but not configuration tables, limits, or error-code-based troubleshooting. |
+| [Quantinuum provider and targets](https://learn.microsoft.com/en-us/azure/quantum/provider-quantinuum) | 0.30 | Describes Quantinuum as a provider and its general capabilities; summary does not indicate presence of numeric limits, configuration tables, or troubleshooting/error details. |
 | [Quantum Intermediate Representation](https://learn.microsoft.com/en-us/azure/quantum/concepts-qir) | 0.30 | Describes Quantum Intermediate Representation (QIR) and its role; appears as a conceptual/standards overview without concrete config tables, limits, or decision matrices. |
+| [Sparse simulator](https://learn.microsoft.com/en-us/azure/quantum/sparse-simulator) | 0.30 | Explains sparse simulator conceptually and when it is efficient, but summary does not show concrete limits, configuration tables, or error/diagnosis mappings. |
 | [Submit a circuit with PennyLane](https://learn.microsoft.com/en-us/azure/quantum/quickstart-microsoft-pennylane) | 0.30 | Quickstart for submitting PennyLane circuits to Azure Quantum; primarily a tutorial flow without indication of detailed config matrices, limits, or specialized troubleshooting content. |
 | [T gates & T factories](https://learn.microsoft.com/en-us/azure/quantum/concepts-tfactories) | 0.30 | Describes T gates and T factories and mentions the resource estimator, but summary suggests high-level explanation rather than concrete config tables, limits, or decision guidance. |
 | [Type declarations](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/programstructure/typedeclarations) | 0.30 | Language reference for struct type declarations in Q#; describes syntax and behavior, which is core language knowledge rather than operational product configuration. |
@@ -171,26 +206,26 @@ confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure Batch (
 | [Callable declarations](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/programstructure/callabledeclarations) | 0.20 | Language reference for Q# callable declarations; no limits, configs, error codes, or product-specific operational details. |
 | [Concatenations](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/expressions/concatenation) | 0.20 | Concatenation rules for strings and arrays; language feature, not operational guidance. |
 | [Concepts for hybrid QC](https://learn.microsoft.com/en-us/azure/quantum/hybrid-computing-concepts) | 0.20 | Overview of hybrid quantum computing concepts (registers, mid-circuit measurement, error mitigation); no explicit product-specific configuration matrices or limits indicated. |
-| [Explore with Copilot in Microsoft Quantum](https://learn.microsoft.com/en-us/azure/quantum/get-started-azure-quantum) | 0.20 | Marketing-style getting started page for Copilot in Microsoft Quantum; primarily navigational and conceptual. |
+| [Create an Azure Quantum workspace](https://learn.microsoft.com/en-us/azure/quantum/how-to-create-workspace) | 0.20 | Primarily a how-to for creating a workspace and mentions subscription plans generically; lacks detailed limits, configuration tables, or decision criteria beyond standard portal usage. |
 | [Expressions in Q#](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/expressions/) | 0.20 | General description of Q# expressions and operators; language reference, not product configuration or limits. |
 | [Grover's algorithm](https://learn.microsoft.com/en-us/azure/quantum/concepts-grovers) | 0.20 | Detailed theory of Grover’s algorithm; mathematical explanation rather than product-specific best practices, limits, or configuration details. |
-| [Grover's algorithm](https://learn.microsoft.com/en-us/azure/quantum/tutorial-qdk-grovers-search) | 0.20 | Grover's algorithm tutorial; algorithm implementation guide, not limits, configs, or troubleshooting reference. |
+| [Grover's algorithm](https://learn.microsoft.com/en-us/azure/quantum/tutorial-qdk-grovers-search) | 0.20 | Tutorial implementing Grover's algorithm in Q#; contains algorithmic and coding guidance but no Azure-specific quotas, configuration tables, security roles, or decision-making matrices that meet the expert-knowledge criteria. |
 | [Item access expressions](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/expressions/itemaccessexpressions) | 0.20 | Item access and slicing semantics; standard language reference. |
 | [List of quantum computing providers](https://learn.microsoft.com/en-us/azure/quantum/qc-target-list) | 0.20 | Primarily a catalog/overview listing available quantum providers and brief descriptions; no indication of numeric limits, configuration tables, error codes, or decision matrices. |
-| [Overview of QDK simulators](https://learn.microsoft.com/en-us/azure/quantum/simulators-overview-qdk) | 0.20 | Overview of QDK quantum simulators; describes available simulators and their purpose, but summary does not show numeric limits, decision matrices, or configuration parameter tables. |
+| [Neutral atom simulator overview](https://learn.microsoft.com/en-us/azure/quantum/overview-qdk-neutral-atom-simulator) | 0.20 | Overview of neutral atom simulator tools and when to use them; no evidence of numeric thresholds, configuration parameters, or decision matrices in the summary. |
 | [Pasqal support policy](https://learn.microsoft.com/en-us/azure/quantum/provider-support-pasqal) | 0.20 | Support policy page is likely procedural/contractual (what Microsoft supports) rather than technical expert knowledge like limits, configuration, or troubleshooting mappings. |
 | [Pauli measurements](https://learn.microsoft.com/en-us/azure/quantum/concepts-pauli-measurements) | 0.20 | Describes Pauli measurements conceptually and in Q# context, but appears as theory/usage overview without concrete config tables, limits, or error mappings. |
 | [Quantum circuits conventions](https://learn.microsoft.com/en-us/azure/quantum/concepts-circuits) | 0.20 | Explains how to read quantum circuit diagrams and conventions; no product-specific configuration parameters, limits, or decision matrices. |
-| [Quantum entanglement](https://learn.microsoft.com/en-us/azure/quantum/tutorial-qdk-explore-entanglement) | 0.20 | Tutorial on entanglement with Q#; educational walkthrough, no expert-level operational details. |
+| [Quantum entanglement](https://learn.microsoft.com/en-us/azure/quantum/tutorial-qdk-explore-entanglement) | 0.20 | Tutorial demonstrating superposition and entanglement in Q#; focuses on quantum concepts and example code, not on Azure Quantum-specific limits, configuration parameters, troubleshooting codes, or deployment constraints. |
 | [Quantum error correction](https://learn.microsoft.com/en-us/azure/quantum/concepts-error-correction) | 0.20 | Explains quantum error correction codes conceptually with an example; lacks Azure/QDK-specific configuration, quotas, or error-code-based troubleshooting. |
 | [Quantum oracles](https://learn.microsoft.com/en-us/azure/quantum/concepts-oracles) | 0.20 | Conceptual explanation of quantum oracles and their mathematical form; no product-specific configuration parameters, limits, or troubleshooting mappings. |
-| [Quantum random number generator](https://learn.microsoft.com/en-us/azure/quantum/tutorial-qdk-quantum-random-number-generator) | 0.20 | Tutorial for a quantum random number generator; step-by-step learning content, not expert reference on limits/configs. |
+| [Quantum random number generator](https://learn.microsoft.com/en-us/azure/quantum/tutorial-qdk-quantum-random-number-generator) | 0.20 | Tutorial showing how to write a basic Q# quantum random number generator; primarily conceptual and step-by-step coding, without product-specific limits, configuration tables, error codes, or decision matrices. |
 | [Returns and termination](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/expressions/returnsandtermination) | 0.20 | Return and fail semantics; language-level behavior, no error code catalog or troubleshooting mapping. |
 | [Singleton tuple equivalence](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/typesystem/singletontupleequivalence) | 0.20 | Singleton tuple equivalence; language typing rule, not operational or configuration content. |
 | [Specialization declarations](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/programstructure/specializationdeclarations) | 0.20 | Explains Q# specialization declarations conceptually; no numeric thresholds, configs, or troubleshooting mappings. |
 | [Statements in Q#](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/statements/) | 0.20 | Overview of Q# statements; no product-specific limits, configs, or decision matrices. |
 | [Submit a circuit with Qiskit](https://learn.microsoft.com/en-us/azure/quantum/quickstart-microsoft-qiskit) | 0.20 | Quickstart/tutorial for submitting Qiskit programs via QDK; primarily step-by-step usage in VS Code with no indication of limits, quotas, configuration tables, error-code mappings, or other product-specific expert reference details. |
-| [VS Code reference for the QDK](https://learn.microsoft.com/en-us/azure/quantum/vscode-qdk-reference) | 0.20 | Reference list of QDK VS Code commands and features, but summary does not indicate product-specific limits, config tables, or error-code-based troubleshooting; appears to be general feature/command descriptions. |
+| [VS Code reference for the QDK](https://learn.microsoft.com/en-us/azure/quantum/vscode-qdk-reference) | 0.20 | Reference for QDK VS Code commands and features but summary indicates general feature listing without numeric limits, config tables, or product-specific error/diagnostic mappings. |
 | [Variable declaration and reassignment](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/statements/variabledeclarationsandreassignments) | 0.20 | Covers let/mutable and variable reassignment in Q#; no configuration tables or limits. |
 | [Visualize Q# circuit diagrams](https://learn.microsoft.com/en-us/azure/quantum/how-to-visualize-circuits) | 0.20 | Tutorial-style guidance on creating and viewing circuit diagrams in VS Code and Jupyter; does not indicate presence of limits, configuration parameter tables, or error-code-based troubleshooting. |
 | [Work with Q# projects](https://learn.microsoft.com/en-us/azure/quantum/how-to-work-with-qsharp-projects) | 0.20 | Explains how to create and manage Q# projects and libraries; likely a structural/how-to guide without numeric limits, decision matrices, or product-specific configuration tables. |
@@ -207,7 +242,8 @@ confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure Batch (
 | [Install QDK for chemistry](https://learn.microsoft.com/en-us/azure/quantum/install-qdk-chemistry) | 0.10 | Installation how-to for a Python library; likely step-by-step commands without detailed configuration matrices, limits, or specialized troubleshooting content. |
 | [Microsoft's quantum machine](https://learn.microsoft.com/en-us/azure/quantum/overview-microsoft-quantum-machine) | 0.10 | Describes Microsoft's research quantum machine at a high level; no concrete product limits, configs, or troubleshooting. |
 | [Multiple qubits](https://learn.microsoft.com/en-us/azure/quantum/concepts-multiple-qubits) | 0.10 | Conceptual treatment of multi-qubit states and gates; no Azure- or QDK-specific parameters, limits, or decision guidance. |
-| [Q#](https://learn.microsoft.com/en-us/azure/quantum/qsharp-overview) | 0.10 | High-level introduction to Q# and its role in Azure Quantum; no product-specific limits, configuration tables, or detailed patterns. |
+| [Overview of QDK simulators](https://learn.microsoft.com/en-us/azure/quantum/simulators-overview-qdk) | 0.10 | Overview of QDK quantum simulators; describes what simulators exist, not detailed limits, configs, or decision matrices. |
+| [Q#](https://learn.microsoft.com/en-us/azure/quantum/qsharp-overview) | 0.10 | High-level introduction to Q# and program structure; conceptual overview without detailed configuration, limits, or troubleshooting content. |
 | [QDK language support overview](https://learn.microsoft.com/en-us/azure/quantum/qdk-language-support-overview) | 0.10 | High-level overview of quantum language support in the QDK; describes supported languages and workflows without detailed configuration parameters, limits, or troubleshooting mappings. |
 | [Quantum Development Kit overview](https://learn.microsoft.com/en-us/azure/quantum/qdk-main-overview) | 0.10 | Main landing/overview page for the Quantum Development Kit; high-level description and navigation, not detailed technical limits, configuration, or troubleshooting. |
 | [Quantum entanglement](https://learn.microsoft.com/en-us/azure/quantum/concepts-entanglement) | 0.10 | Conceptual overview of entanglement and correlations; does not provide product-specific settings, limits, or troubleshooting flows. |
@@ -216,7 +252,8 @@ confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure Batch (
 | [The circuit visualizer](https://learn.microsoft.com/en-us/azure/quantum/circuit-diagrams-qdk-overview) | 0.10 | High-level overview of QDK circuit diagrams and interaction in VS Code; no numeric limits, configuration tables, error codes, or product-specific decision matrices. |
 | [The qubit](https://learn.microsoft.com/en-us/azure/quantum/concepts-the-qubit) | 0.10 | Conceptual explanation of qubits and single-qubit behavior; lacks product-specific configuration, limits, or troubleshooting content. |
 | [Vectors and matrices](https://learn.microsoft.com/en-us/azure/quantum/concepts-vectors-and-matrices) | 0.10 | Introductory linear algebra concepts (vectors, matrices) for quantum computing; no product-specific limits, configs, error codes, or decision matrices. |
-| [What is Azure Quantum?](https://learn.microsoft.com/en-us/azure/quantum/overview-azure-quantum) | 0.10 | High-level overview of Azure Quantum service; no detailed limits, configs, or error mappings. |
+| [Ways to run Q# programs](https://learn.microsoft.com/en-us/azure/quantum/qsharp-ways-to-work) | 0.10 | Describes development environment options for Q#; high-level choice overview without detailed limits, configuration tables, or quantified decision criteria. |
+| [What is Azure Quantum?](https://learn.microsoft.com/en-us/azure/quantum/overview-azure-quantum) | 0.10 | High-level overview of Azure Quantum capabilities and positioning; no concrete limits, configuration parameters, error codes, or decision matrices. |
 | [What is quantum computing?](https://learn.microsoft.com/en-us/azure/quantum/overview-understanding-quantum-computing) | 0.10 | Conceptual explanation of quantum computing principles; no product-specific expert configuration or limits. |
 | [Contributing to the Microsoft Quantum Development Kit](https://learn.microsoft.com/en-us/azure/quantum/contributing-overview) | 0.05 | Community contribution overview for the Quantum Development Kit; process/participation guidance, not technical expert knowledge per defined categories. |
 | [Further reading](https://learn.microsoft.com/en-us/azure/quantum/further-reading-qdk) | 0.05 | Curated list of external learning resources; navigation/reference content without product-specific limits, configuration, or troubleshooting details. |

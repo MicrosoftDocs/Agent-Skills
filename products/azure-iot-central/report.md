@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-10'
+generated_at: '2026-05-17'
 category_descriptions:
   architecture-patterns: Solution-level IoT Central architecture, using IoT Edge as
     a gateway, and designing data transformation flows from devices to downstream
@@ -22,23 +22,25 @@ category_descriptions:
   deployment: 'Guides for deploying and integrating IoT Central solutions: device
     bridge setup, CI/CD with Azure Pipelines, and managing IoT Edge deployments and
     jobs via UI and REST APIs.'
+  troubleshooting: 'Diagnosing and fixing IoT Central issues: common errors, device
+    connectivity/data export problems, and using audit logs to investigate configuration
+    or state changes.'
   decision-making: Guidance for planning and executing migration of devices and workloads
     from Azure IoT Central to Azure IoT Hub, including architecture, data, and operational
     considerations.
-  troubleshooting: Investigating IoT Central issues using audit logs, and diagnosing/fixing
-    device connectivity, telemetry, and data export problems.
 skill_description: Expert knowledge for Azure IoT Central development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  defining device templates, configuring data export targets, managing devices via
-  REST/CLI, or integrating IoT Edge, and other Azure IoT Central related development
-  tasks. Not for Azure IoT Hub (use azure-iot-hub), Azure IoT (use azure-iot), Azure
-  IoT Edge (use azure-iot-edge), Azure Defender For Iot (use azure-defender-for-iot).
-use_when: Use when defining device templates, configuring data export targets, managing
-  devices via REST/CLI, or integrating IoT Edge, and other Azure IoT Central related
+  designing device templates, data export, IoT Edge gateways, REST/CLI automation,
+  or IoT Central–to–IoT Hub migrations, and other Azure IoT Central related development
+  tasks. Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Edge (use azure-iot-edge),
+  Azure IoT Operations (use azure-iot-operations), Azure Digital Twins (use azure-digital-twins).
+use_when: Use when designing device templates, data export, IoT Edge gateways, REST/CLI
+  automation, or IoT Central–to–IoT Hub migrations, and other Azure IoT Central related
   development tasks.
-confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT (use azure-iot),
-  Azure IoT Edge (use azure-iot-edge), Azure Defender For Iot (use azure-defender-for-iot).
+confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Edge (use
+  azure-iot-edge), Azure IoT Operations (use azure-iot-operations), Azure Digital
+  Twins (use azure-digital-twins).
 ---
 # Azure IoT Central Crawl Report
 
@@ -47,13 +49,13 @@ confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT (use az
 - **Total Pages**: 89
 - **Fetched**: 89
 - **Fetch Failed**: 0
-- **Classified**: 55
-- **Unclassified**: 34
+- **Classified**: 56
+- **Unclassified**: 33
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 86
+- **Updated Pages**: 1
+- **Unchanged**: 88
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-iot-central/azure-iot-central.csv`
 
@@ -69,19 +71,15 @@ confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT (use az
 | integrations | 12 | 13.5% |
 | limits-quotas | 2 | 2.2% |
 | security | 12 | 13.5% |
-| troubleshooting | 2 | 2.2% |
-| *(Unclassified)* | 34 | 38.2% |
+| troubleshooting | 3 | 3.4% |
+| *(Unclassified)* | 33 | 37.1% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Troubleshooting](https://learn.microsoft.com/en-us/azure/iot-central/core/troubleshooting)
-  - Updated: 2025-08-07T08:00:00.000Z → 2026-05-06T11:15:00.000Z
-- [Configure rules](https://learn.microsoft.com/en-us/azure/iot-central/core/howto-configure-rules)
-  - Updated: 2025-04-25T08:00:00.000Z → 2026-05-06T11:15:00.000Z
-- [Export to a webhook](https://learn.microsoft.com/en-us/azure/iot-central/core/howto-export-to-webhook)
-  - Updated: 2024-10-14T08:00:00.000Z → 2026-05-06T11:15:00.000Z
+- [FAQ](https://learn.microsoft.com/en-us/azure/iot-central/core/howto-faq)
+  - Updated: 2025-09-24T22:10:00Z → 2025-09-24T22:10:00.000Z
 
 ## Classified Pages
 
@@ -117,6 +115,7 @@ confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT (use az
 | [Customize application UI](https://learn.microsoft.com/en-us/azure/iot-central/core/howto-customize-ui) | configuration | 0.70 | How-to page with concrete, product-specific UI customization options (themes, text, help links, favicon). Likely includes specific setting names/locations unique to IoT Central, which are configuration details beyond generic UI concepts. |
 | [Device implementation and best practices](https://learn.microsoft.com/en-us/azure/iot-central/core/concepts-device-implementation) | best-practices | 0.70 | Explicitly states it includes best practices for implementing devices; these are product-specific recommendations and gotchas for IoT Central device behavior. |
 | [Device templates](https://learn.microsoft.com/en-us/azure/iot-central/core/concepts-device-templates) | configuration | 0.70 | Explains modeled vs unmodeled telemetry and how templates define capabilities and UI; this is core configuration schema knowledge for IoT Central. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/iot-central/core/howto-faq) | troubleshooting | 0.70 | FAQ includes product-specific behaviors and resolutions (for example, what happens when a device is deleted, how data export behaves, specific portal behaviors, and other IoT Central–specific gotchas). These are organized as question → explanation/solution and represent troubleshooting-style expert knowledge beyond generic concepts. |
 | [Integrate with DevOps](https://learn.microsoft.com/en-us/azure/iot-central/core/howto-integrate-with-devops) | deployment | 0.70 | Describes integrating IoT Central into Azure Pipelines for CI/CD of application configuration. This is product-specific deployment automation guidance, likely including pipeline/task configuration details unique to IoT Central. |
 | [Manage applications](https://learn.microsoft.com/en-us/azure/iot-central/core/howto-manage-iot-central-with-rest-api) | configuration | 0.70 | Uses management.azure.com bearer tokens and control plane endpoints to manage applications, dashboards, and file uploads, which are specific configuration APIs. |
 | [Manage jobs](https://learn.microsoft.com/en-us/azure/iot-central/core/howto-manage-jobs-with-rest-api) | deployment | 0.70 | Details scheduled vs nonscheduled jobs, recurrence, and /jobs/{job_id} usage, which are product-specific bulk operation mechanics. |
@@ -152,7 +151,6 @@ confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT (use az
 | [Use location data](https://learn.microsoft.com/en-us/azure/iot-central/core/howto-use-location-data) | 0.45 | Using location data and geofencing appears to be feature usage; summary does not indicate detailed config tables or unique integration parameters. |
 | [Build analytics queries](https://learn.microsoft.com/en-us/azure/iot-central/core/howto-create-analytics) | 0.40 | Analytics and data explorer usage is mostly UI-driven and conceptual; no detailed config tables, limits, or product-specific code patterns are evident from the summary. |
 | [Device management guide](https://learn.microsoft.com/en-us/azure/iot-central/core/overview-iot-central-operator) | 0.40 | Device management guide overview; description lists tasks and tools but does not clearly indicate detailed configuration tables or limits. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/iot-central/core/howto-faq) | 0.40 | FAQ page; may contain various tips but description does not guarantee structured error codes, limits, or configuration tables required for expert classification. |
 | [Change application settings](https://learn.microsoft.com/en-us/azure/iot-central/core/howto-administer) | 0.35 | Changing application name, URL, logo, or deleting an app is straightforward admin UI usage; summary doesn’t indicate deep configuration or constraints. |
 | [Configure rules](https://learn.microsoft.com/en-us/azure/iot-central/core/howto-configure-rules) | 0.30 | How-to guide for configuring telemetry-based rules and actions (email, webhook, Azure Monitor) in IoT Central; appears procedural without specific limits, configuration parameter tables, or product-unique error/diagnostic details. |
 | [Create a continuous patient monitoring app](https://learn.microsoft.com/en-us/azure/iot-central/healthcare/tutorial-continuous-patient-monitoring) | 0.30 | Continuous patient monitoring tutorial; includes architecture and BLE gateway conceptually, but description does not indicate detailed config tables or limits. |

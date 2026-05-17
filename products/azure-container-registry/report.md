@@ -1,21 +1,21 @@
 ---
-generated_at: '2026-05-03'
+generated_at: '2026-05-17'
 category_descriptions:
   security: Securing ACR with auth, RBAC, network controls, encryption, image signing/verification,
     policies, and managed identities to prevent unauthorized access and data exfiltration.
   integrations: Integrating ACR with Kubernetes, ACI, GitHub Actions, ORAS, and ACR
     Transfer; configuring auth, pull secrets, webhooks, caching, Helm, buildpacks,
     and image signing/verification.
-  configuration: 'Configuring ACR behavior: caching, purge/retention/soft delete,
-    delete locks, tasks (YAML, timers, multi-step, patching, agent pools), webhooks,
-    wildcard cache rules, and monitoring.'
+  configuration: 'Configuring ACR behavior: caching, retention/soft delete, purge
+    and delete locks, tasks (YAML, timers, agent pools, patching), webhooks, wildcard
+    cache rules, and monitoring/logging.'
   decision-making: Guidance on choosing ACR auth for Kubernetes, planning geo-replication,
     and migrating image signing from Docker Content Trust to Notary Project.
   best-practices: 'Best practices for ACR operations: managing public image dependencies,
     safe image deletion and storage cleanup, and robust image tagging/versioning strategies.'
   troubleshooting: 'Diagnosing and fixing ACR issues: health checks, error codes,
-    login/auth, network and performance problems, transfer/streaming/cache failures,
-    logs, Arc/connected registry, and CMK encryption.'
+    login/auth, network, performance, transfer/streaming, task logs, artifact cache,
+    Arc/connected registry, and CMK problems.'
   limits-quotas: Details on ACR SKUs (Basic/Standard/Premium) feature differences,
     performance and throughput limits, and how image storage capacity and quotas are
     calculated and enforced.
@@ -27,14 +27,13 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Container Registry development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when using private endpoints/RBAC, geo-replication, connected registries, ACR
-  Tasks, or image signing/verification, and other Azure Container Registry related
-  development tasks. Not for Azure Container Apps (use azure-container-apps), Azure
-  Container Instances (use azure-container-instances), Azure Kubernetes Service (AKS)
-  (use azure-kubernetes-service), Azure Red Hat OpenShift (use azure-redhat-openshift).
-use_when: Use when using private endpoints/RBAC, geo-replication, connected registries,
-  ACR Tasks, or image signing/verification, and other Azure Container Registry related
-  development tasks.
+  Use when using ACR Tasks, geo-replication, connected registries, image signing/verification,
+  or Helm/ORAS artifacts, and other Azure Container Registry related development tasks.
+  Not for Azure Container Apps (use azure-container-apps), Azure Container Instances
+  (use azure-container-instances), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
+  Azure Red Hat OpenShift (use azure-redhat-openshift).
+use_when: Use when using ACR Tasks, geo-replication, connected registries, image signing/verification,
+  or Helm/ORAS artifacts, and other Azure Container Registry related development tasks.
 confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azure
   Container Instances (use azure-container-instances), Azure Kubernetes Service (AKS)
   (use azure-kubernetes-service), Azure Red Hat OpenShift (use azure-redhat-openshift).
@@ -51,8 +50,8 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 123
+- **Updated Pages**: 2
+- **Unchanged**: 121
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-container-registry/azure-container-registry.csv`
 
@@ -72,6 +71,13 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | *(Unclassified)* | 34 | 27.6% |
 
 ## Changes
+
+### Updated Pages
+
+- [FAQ](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-faq)
+  - Updated: 2026-02-10T12:03:00Z → 2026-02-10T12:03:00.000Z
+- [Automatically purge tags and manifests (preview)](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-auto-purge)
+  - Updated: 2026-03-02T23:17:00.000Z → 2026-05-14T17:20:00.000Z
 
 ## Classified Pages
 
@@ -125,10 +131,10 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | [Verify container images in GitHub workflow with Notation and Artifact Signing](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-tutorial-github-verify-notation-artifact-signing) | integrations | 0.75 | Shows GitHub workflow to verify images with Notation and Artifact Signing; includes configuration parameters and integration details. |
 | [Restrict access using private endpoint](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-private-link) | security | 0.74 | Page describes setting up private endpoints for ACR using Azure Private Link and virtual networks. This is product-specific security configuration for network isolation (private IPs, VNet usage, ExpressRoute/VPN connectivity). It focuses on secure access patterns and likely includes specific settings/steps for ACR, aligning with the security sub-skill. |
 | [Audit compliance using Azure Policy](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-azure-policy) | security | 0.70 | Shows how to assign built-in Azure Policy definitions to ACR; includes specific policy names/effects and compliance behavior, which are product-specific security/governance configurations. |
-| [Automatically purge tags and manifests (preview)](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-auto-purge) | configuration | 0.70 | The page describes the acr purge command with product-specific flags, parameter names, and usage patterns (such as age filters, tag filters, and scheduling via ACR Tasks). These are concrete configuration options and command parameters unique to Azure Container Registry, not generic container knowledge. |
 | [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/container-registry/policy-reference) | security | 0.70 | Index of ACR-specific Azure Policy built-ins with names and links to definitions; these are concrete security/governance configurations unique to the product. |
 | [Customer managed keys - Overview](https://learn.microsoft.com/en-us/azure/container-registry/tutorial-customer-managed-keys) | security | 0.70 | Tutorial on customer-managed keys for ACR Premium; likely includes Key Vault integration details and ACR-specific encryption settings. |
 | [Enable artifact cache - CLI](https://learn.microsoft.com/en-us/azure/container-registry/artifact-cache-cli) | configuration | 0.70 | CLI-focused article for enabling artifact cache with/without auth; likely includes specific parameters and allowed values for configuration. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-faq) | troubleshooting | 0.70 | FAQ for Azure Container Registry typically includes specific error messages, known issues, and their resolutions (for example, push/pull failures, authentication problems, SKU-specific behaviors). This is organized around concrete problems and fixes, which matches the troubleshooting pattern more than general overview content. |
 | [Geo-replication](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-geo-replication) | decision-making | 0.70 | Geo-replication guidance for ACR (Premium-only) usually includes when to use geo-replication, region selection considerations, and trade-offs around latency, availability, and cost across regions. It helps decide whether and how to use geo-replication for different scenarios, aligning with decision-making. While it mentions the Premium SKU requirement (a limit), the core value is guiding regional replication choices rather than listing numeric quotas. |
 | [Import container images](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-import-images) | integrations | 0.70 | Describes ACR-specific import operations via Azure APIs, including supported scenarios and parameters for copying images and artifacts. |
 | [Kubernetes authentication scenarios](https://learn.microsoft.com/en-us/azure/container-registry/authenticate-kubernetes-options) | decision-making | 0.70 | Compares multiple auth mechanisms for different Kubernetes environments and scenarios; helps choose between options with scenario-based guidance, fitting decision-making. |
@@ -147,6 +153,7 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | [Use ACR webhooks](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-webhook) | integrations | 0.70 | Webhooks require specific payload formats, event types, and configuration parameters unique to ACR; this is an integration pattern with external services. |
 | [Validate container image signatures in AKS with Ratify and Azure Policy](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-tutorial-verify-with-ratify-aks) | security | 0.70 | Shows concrete configuration of Ratify and Azure Policy on AKS clusters, including policy setup and verification behavior specific to ACR/AKS, which is product-specific security configuration. |
 | [Wildcard support](https://learn.microsoft.com/en-us/azure/container-registry/wildcards-artifact-cache) | configuration | 0.70 | Describes supported wildcard patterns for artifact cache rules, mapping target to source repositories. This is product-specific configuration behavior (which wildcard syntaxes are supported and how they apply), fitting configuration. |
+| [Automatically purge tags and manifests (preview)](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-auto-purge) | configuration | 0.68 | The page documents the acr purge command with product-specific flags and behavior (age filters, tag filters, scheduling via ACR Tasks). These are concrete configuration options and command parameters unique to Azure Container Registry, not generic container knowledge. It does not focus on limits, troubleshooting, or architecture, but on how to configure and use this preview purge capability. |
 | [Enable artifact cache from another ACR registry](https://learn.microsoft.com/en-us/azure/container-registry/artifact-cache-acr-to-acr-cli) | integrations | 0.68 | How-to article for enabling artifact cache between two Azure Container Registries using managed identity and Azure CLI/Bicep. While the summary doesn’t show tables, this scenario involves product-specific configuration (cache rule properties, upstream registry settings, identity usage) and CLI/Bicep parameters that are unique to ACR artifact caching, fitting the integrations & coding patterns category better than generic tutorials. |
 | [ACR Transfer with Az CLI](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-transfer-cli) | integrations | 0.65 | CLI-focused guide for ACR Transfer using the acrtransfer extension; likely documents specific CLI commands and parameters unique to this feature, matching integrations & coding patterns. |
 | [About connected registry](https://learn.microsoft.com/en-us/azure/container-registry/intro-connected-registry) | architecture-patterns | 0.65 | Describes connected registry feature, scenarios, and when to use on-prem/remote replicas; includes ACR-specific architectural pattern. |
@@ -162,7 +169,6 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | [4 - Build on a schedule](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-tasks-scheduled) | configuration | 0.60 | Describes timer trigger configuration for ACR Tasks, including schedule expressions and task properties, which are product-specific configuration details. |
 | [ACR Transfer with ARM templates](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-transfer-arm-template) | deployment | 0.60 | Shows how to use ARM templates for ACR Transfer; this is a deployment/automation pattern for moving artifacts, likely including template schema and constraints, fitting deployment. |
 | [Consume and maintain public content](https://learn.microsoft.com/en-us/azure/container-registry/tasks-consume-public-content) | architecture-patterns | 0.60 | Describes a concrete workflow pattern for managing public registry content in a private ACR, including steps and gating behavior specific to this service. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-faq) | troubleshooting | 0.60 | FAQ/known issues article likely includes specific edge cases, behaviors, and resolutions unique to ACR that function as troubleshooting knowledge. |
 | [Multi-step tasks](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-tasks-multi-step) | configuration | 0.60 | Intro/reference for multi-step tasks; describes step types and execution behavior, which are specific to ACR Tasks configuration. |
 | [Quick task run with Resource Manager template](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-task-run-template) | deployment | 0.60 | Provides ARM template schema and parameters for deploying task runs, which is a product-specific deployment pattern using Azure Resource Manager. |
 | [View task logs](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-tasks-logs) | troubleshooting | 0.60 | Explains how to access and interpret ACR Task run logs for diagnosing issues, including product-specific commands and log locations, fitting troubleshooting patterns. |

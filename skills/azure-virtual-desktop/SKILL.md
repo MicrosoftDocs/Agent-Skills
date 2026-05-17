@@ -1,9 +1,9 @@
 ---
 name: azure-virtual-desktop
-description: Expert knowledge for Azure Virtual Desktop development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing FSLogix profiles, autoscale/Start VM on Connect, MSIX App Attach, Teams redirection, or AVD APIs, and other Azure Virtual Desktop related development tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Dev Box (use azure-dev-box), Azure VMware Solution (use azure-vmware-solution), Azure Lab Services (use azure-lab-services).
+description: Expert knowledge for Azure Virtual Desktop development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing FSLogix profiles, autoscale, MSIX App Attach, Teams optimization, or AVD PowerShell/CLI automation, and other Azure Virtual Desktop related development tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Dev Box (use azure-dev-box), Azure VMware Solution (use azure-vmware-solution), Azure Data Science Virtual Machines (use azure-data-science-vm).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-10"
+  generated_at: "2026-05-17"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Virtual Desktop Skill
@@ -25,8 +25,8 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L37-L53 | Diagnosing and fixing AVD issues: agent and session host health, autoscale, connectivity/FQDN, connection quality logs, MSIX App Attach, Hybrid join, graphics, and Teams performance. |
-| Best Practices | L54-L64 | Operational best practices for AVD: autoscale, Start VM on Connect, Windows multi-session tuning, validation host pools, proxy/RDP Multipath guidance, and resolving Azure Advisor recommendations. |
-| Decision Making | L65-L80 | Planning and cost/licensing decisions for AVD: deployment models, autoscale, host pool and tool choices, storage/FSLogix, data locations, ESU, Local/Extended Zones, and Insights cost estimation |
+| Best Practices | L54-L64 | Guidance on AVD autoscale, Advisor recommendations, validation host pools, FAQs, proxy settings, Start VM on Connect, and Windows Enterprise multi-session configuration best practices |
+| Decision Making | L65-L80 | Planning and choosing AVD deployment models, autoscale, storage, licensing, locations, management tools, and estimating costs (including Insights and Windows 10 ESU). |
 | Architecture & Design Patterns | L81-L89 | Design patterns for AVD app delivery, stateless hosts, DR, FSLogix profile containers, and automated scaling with Automation/Logic Apps. |
 | Limits & Quotas | L90-L95 | Guidance on RDP bandwidth requirements and optimizing Microsoft Teams (audio/video, collaboration features) performance and configuration in Azure Virtual Desktop. |
 | Security | L96-L114 | Securing Azure Virtual Desktop: SSO, MFA, RBAC, delegated admin, external identities, clipboard/screen controls, watermarking, WebAuthn, Kerberos, Purview, and security best practices. |
@@ -54,18 +54,18 @@ This skill requires **network access** to fetch documentation content:
 ### Best Practices
 | Topic | URL |
 |-------|-----|
-| Autoscale FAQ and best practices for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/autoscale-faq |
+| Use Azure Virtual Desktop autoscale effectively | https://learn.microsoft.com/en-us/azure/virtual-desktop/autoscale-faq |
 | Resolve Azure Advisor recommendations for AVD | https://learn.microsoft.com/en-us/azure/virtual-desktop/azure-advisor-recommendations |
 | Configure Azure Virtual Desktop validation host pools | https://learn.microsoft.com/en-us/azure/virtual-desktop/configure-validation-environment |
-| Azure Virtual Desktop FAQ and operational best practices | https://learn.microsoft.com/en-us/azure/virtual-desktop/faq |
+| Apply Azure Virtual Desktop FAQ best practices | https://learn.microsoft.com/en-us/azure/virtual-desktop/faq |
 | Apply proxy server guidelines for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/proxy-server-support |
 | Start VM on Connect FAQ and usage best practices | https://learn.microsoft.com/en-us/azure/virtual-desktop/start-virtual-machine-connect-faq |
-| FAQ and best practices for Windows multi-session on AVD | https://learn.microsoft.com/en-us/azure/virtual-desktop/windows-multisession-faq |
+| Apply best practices for Windows Enterprise multi-session | https://learn.microsoft.com/en-us/azure/virtual-desktop/windows-multisession-faq |
 
 ### Decision Making
 | Topic | URL |
 |-------|-----|
-| Plan Azure Virtual Desktop autoscale using example scenarios | https://learn.microsoft.com/en-us/azure/virtual-desktop/autoscale-scenarios |
+| Choose and tune Azure Virtual Desktop autoscale plans | https://learn.microsoft.com/en-us/azure/virtual-desktop/autoscale-scenarios |
 | Use Azure Extended Zones with Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/azure-extended-zones |
 | Plan Azure Virtual Desktop on Azure Local | https://learn.microsoft.com/en-us/azure/virtual-desktop/azure-local-overview |
 | Understand Azure Virtual Desktop data locations | https://learn.microsoft.com/en-us/azure/virtual-desktop/data-locations |

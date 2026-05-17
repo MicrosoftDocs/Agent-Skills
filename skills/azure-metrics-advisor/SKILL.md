@@ -3,7 +3,7 @@ name: azure-metrics-advisor
 description: Expert knowledge for Azure AI Metrics Advisor development including decision making, security, configuration, and integrations & coding patterns. Use when configuring data feeds, tuning anomaly detection, managing alert hooks, securing creds, or calling Metrics Advisor APIs, and other Azure AI Metrics Advisor related development tasks. Not for Azure AI Anomaly Detector (use azure-anomaly-detector), Azure Monitor (use azure-monitor), Azure Stream Analytics (use azure-stream-analytics).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-12"
+  generated_at: "2026-05-17"
   generator: "docs2skills/1.0.0"
 ---
 # Azure AI Metrics Advisor Skill

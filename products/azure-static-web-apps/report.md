@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-05-17'
 category_descriptions:
   integrations: How to connect Static Web Apps APIs to Azure databases (Cosmos DB,
     SQL, MySQL, PostgreSQL), including Mongoose usage, connection strings, and typical
@@ -16,24 +16,23 @@ category_descriptions:
   deployment: Deploying Static Web Apps via GitHub/GitLab/Bitbucket/CLI/ARM/Bicep,
     configuring CI/CD, preview environments, traffic splitting, and optional Azure
     Front Door CDN setup
-  limits-quotas: Runtime versions and language support for Static Web Apps, plus plan-specific
-    quotas and limits (storage, bandwidth, functions, concurrency, and resource caps).
+  limits-quotas: Details on Static Web Apps plan quotas, resource and behavior limits,
+    supported languages/frameworks, and available runtime versions across tiers.
   troubleshooting: Diagnosing and fixing common Static Web Apps deployment and runtime
     issues, including build failures, configuration problems, and troubleshooting
     tools/logs.
 skill_description: Expert knowledge for Azure Static Web Apps development including
   troubleshooting, decision making, limits & quotas, security, configuration, integrations
   & coding patterns, and deployment. Use when wiring SWA APIs to Azure DBs, configuring
-  custom domains/auth, CI/CD, preview slots, or Front Door/CDN, and other Azure Static
-  Web Apps related development tasks. Not for Azure App Service (use azure-app-service),
+  custom domains/DNS, auth/roles, CI/CD, or plan limits, and other Azure Static Web
+  Apps related development tasks. Not for Azure App Service (use azure-app-service),
   Azure Functions (use azure-functions), Azure Container Apps (use azure-container-apps),
-  Azure Kubernetes Service (AKS) (use azure-kubernetes-service).
-use_when: Use when wiring SWA APIs to Azure DBs, configuring custom domains/auth,
-  CI/CD, preview slots, or Front Door/CDN, and other Azure Static Web Apps related
-  development tasks.
+  Azure Web PubSub (use azure-web-pubsub).
+use_when: Use when wiring SWA APIs to Azure DBs, configuring custom domains/DNS, auth/roles,
+  CI/CD, or plan limits, and other Azure Static Web Apps related development tasks.
 confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Functions
-  (use azure-functions), Azure Container Apps (use azure-container-apps), Azure Kubernetes
-  Service (AKS) (use azure-kubernetes-service).
+  (use azure-functions), Azure Container Apps (use azure-container-apps), Azure Web
+  PubSub (use azure-web-pubsub).
 ---
 # Azure Static Web Apps Crawl Report
 
@@ -42,13 +41,13 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 - **Total Pages**: 79
 - **Fetched**: 79
 - **Fetch Failed**: 0
-- **Classified**: 57
-- **Unclassified**: 22
+- **Classified**: 58
+- **Unclassified**: 21
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 79
+- **Updated Pages**: 2
+- **Unchanged**: 77
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-static-web-apps/azure-static-web-apps.csv`
 
@@ -60,12 +59,19 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | decision-making | 4 | 5.1% |
 | deployment | 14 | 17.7% |
 | integrations | 5 | 6.3% |
-| limits-quotas | 2 | 2.5% |
+| limits-quotas | 3 | 3.8% |
 | security | 8 | 10.1% |
 | troubleshooting | 1 | 1.3% |
-| *(Unclassified)* | 22 | 27.8% |
+| *(Unclassified)* | 21 | 26.6% |
 
 ## Changes
+
+### Updated Pages
+
+- [Frequently asked questions](https://learn.microsoft.com/en-us/azure/static-web-apps/faq)
+  - Updated: 2026-01-23T18:22:00Z → 2026-01-23T18:22:00.000Z
+- [Blazor](https://learn.microsoft.com/en-us/azure/static-web-apps/deploy-blazor)
+  - Updated: 2024-09-27T08:00:00.000Z → 2026-05-14T17:14:00.000Z
 
 ## Classified Pages
 
@@ -87,6 +93,7 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [Set up the apex domain](https://learn.microsoft.com/en-us/azure/static-web-apps/apex-domain-azure-dns) | configuration | 0.80 | Details using TXT and ALIAS records for apex domains; includes DNS record types and mapping behavior specific to Static Web Apps. |
 | [Set up the apex domain](https://learn.microsoft.com/en-us/azure/static-web-apps/apex-domain-external) | configuration | 0.80 | Discusses ALIAS/ANAME/CNAME flattening and A records for apex domains; these are concrete DNS configuration patterns tied to Static Web Apps behavior. |
 | [Troubleshoot errors](https://learn.microsoft.com/en-us/azure/static-web-apps/troubleshooting) | troubleshooting | 0.80 | Dedicated troubleshooting guide with step-by-step diagnosis for Static Web Apps; likely includes specific errors, causes, and resolutions. |
+| [Frequently asked questions](https://learn.microsoft.com/en-us/azure/static-web-apps/faq) | limits-quotas | 0.78 | FAQ includes product-specific numeric limits and behavioral constraints (for example, maximum sizes, supported regions/features, and other concrete service limits) that qualify as expert knowledge beyond generic conceptual information. |
 | [Access user information](https://learn.microsoft.com/en-us/azure/static-web-apps/user-information) | security | 0.75 | Describes the special user-info endpoint and how auth data is injected into API functions; includes endpoint paths and behavior specific to Static Web Apps. |
 | [App settings](https://learn.microsoft.com/en-us/azure/static-web-apps/application-settings) | configuration | 0.75 | Covers application settings and environment variables for backend APIs; likely includes setting names, scopes, and behavior specific to Static Web Apps. |
 | [Bitbucket](https://learn.microsoft.com/en-us/azure/static-web-apps/bitbucket) | deployment | 0.75 | Covers Bitbucket pipeline configuration and notes Linux-only task support; includes provider- and platform-specific deployment constraints. |
@@ -142,8 +149,7 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [Overview](https://learn.microsoft.com/en-us/azure/static-web-apps/apis-overview) | 0.30 | API overview; describes features like integrated security and routing conceptually without detailed configuration or limits. |
 | [Statically generated Next.js](https://learn.microsoft.com/en-us/azure/static-web-apps/deploy-nextjs-static-export) | 0.30 | Tutorial for static-export Next.js deployment; focuses on steps, not on detailed configuration matrices. |
 | [About Azure Static Web Apps](https://learn.microsoft.com/en-us/azure/static-web-apps/overview) | 0.20 | High-level service overview and feature description without detailed limits, configuration tables, or error mappings. |
-| [Blazor](https://learn.microsoft.com/en-us/azure/static-web-apps/deploy-blazor) | 0.20 | Blazor deployment tutorial; focuses on example app and GitHub workflow, not on configuration tables or limits. |
-| [Frequently asked questions](https://learn.microsoft.com/en-us/azure/static-web-apps/faq) | 0.20 | FAQ page likely mixes conceptual and high-level answers; without explicit view of detailed error codes, quotas, or configuration tables, it’s treated as non-expert overview. |
+| [Blazor](https://learn.microsoft.com/en-us/azure/static-web-apps/deploy-blazor) | 0.20 | Tutorial-style deployment walkthrough for a Blazor app to Azure Static Web Apps using GitHub/Visual Studio; does not emphasize tier-specific deployment matrices, constraints, or configuration tables with defaults. Primarily step-by-step instructions rather than expert reference details. |
 | [Gatsby](https://learn.microsoft.com/en-us/azure/static-web-apps/publish-gatsby) | 0.20 | Gatsby deployment tutorial; primarily step-by-step with GitHub Actions, not a catalog of settings or quotas. |
 | [Hugo](https://learn.microsoft.com/en-us/azure/static-web-apps/publish-hugo) | 0.20 | Hugo deployment tutorial; similar to other framework tutorials, not focused on expert configuration details. |
 | [Jekyll](https://learn.microsoft.com/en-us/azure/static-web-apps/publish-jekyll) | 0.20 | Jekyll deployment tutorial; procedural content without evidence of detailed configuration or limits. |

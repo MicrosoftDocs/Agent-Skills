@@ -1,9 +1,9 @@
 ---
 name: azure-virtual-wan
-description: Expert knowledge for Azure Virtual WAN development including troubleshooting, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing Virtual WAN hubs with Azure Firewall/NVAs, P2S VPN, BGP routing, ExpressRoute, or SD‑WAN CPEs, and other Azure Virtual WAN related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure VPN Gateway (use azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute), Azure Traffic Manager (use azure-traffic-manager).
+description: Expert knowledge for Azure Virtual WAN development including troubleshooting, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing Virtual WAN hubs, BGP routing, P2S/Always On VPN, Azure Firewall/NVAs, or ExpressRoute/SD‑WAN, and other Azure Virtual WAN related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure VPN Gateway (use azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute), Azure Traffic Manager (use azure-traffic-manager).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-10"
+  generated_at: "2026-05-17"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Virtual WAN Skill
@@ -29,7 +29,7 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L48-L76 | Designing and routing complex Virtual WAN topologies: secure hubs, NVAs, Azure Firewall, BGP, isolation, DR, global transit, SD‑WAN, M365/ExpressRoute, and static/intent-based routing patterns. |
 | Limits & Quotas | L77-L82 | P2S VPN client IP pool sizing, scale limits, and Virtual WAN hub routing capabilities, throughput caps, and performance constraints |
 | Security | L83-L95 | Configuring secure P2S VPN access in Virtual WAN using Microsoft Entra ID (MFA, OpenVPN, custom app IDs), Azure VPN Client setup/migration, and hub roles/permissions. |
-| Configuration | L96-L147 | Configuring Virtual WAN hubs, routing, BGP, NVAs, firewalls, IPsec/NAT, and setting up/issuing P2S/Always On VPN client profiles, certificates, and Entra ID-based VPN access |
+| Configuration | L96-L147 | Configuring Virtual WAN hubs, routing, BGP/NAT, NVAs, Azure Firewall, IPsec/ExpressRoute, and P2S/Always On VPN clients, certificates, and Entra ID integration across platforms. |
 | Integrations & Coding Patterns | L148-L155 | PowerShell and automation patterns for integrating Virtual WAN with ExpressRoute, SD-WAN/VPN CPEs, RADIUS user groups, and sharing services via Azure Private Link |
 | Deployment | L156-L160 | PowerShell-based deployment of cross-tenant VNet connections to Virtual WAN hubs and step-by-step setup of integrated NVAs inside Virtual WAN hubs. |
 
@@ -113,8 +113,8 @@ This skill requires **network access** to fetch documentation content:
 | Configure Azure Virtual WAN virtual hub routing | https://learn.microsoft.com/en-us/azure/virtual-wan/how-to-virtual-hub-routing |
 | Configure virtual hub routing with Azure PowerShell | https://learn.microsoft.com/en-us/azure/virtual-wan/how-to-virtual-hub-routing-powershell |
 | Set virtual hub routing preference with PowerShell | https://learn.microsoft.com/en-us/azure/virtual-wan/how-to-virtual-hub-routing-preference-powershell |
-| Configure Always On VPN device tunnels for Virtual WAN | https://learn.microsoft.com/en-us/azure/virtual-wan/howto-always-on-device-tunnel |
-| Configure Always On VPN user tunnels for Virtual WAN | https://learn.microsoft.com/en-us/azure/virtual-wan/howto-always-on-user-tunnel |
+| Configure Always On VPN device tunnel for Azure Virtual WAN | https://learn.microsoft.com/en-us/azure/virtual-wan/howto-always-on-device-tunnel |
+| Configure Always On VPN user tunnel for Azure Virtual WAN | https://learn.microsoft.com/en-us/azure/virtual-wan/howto-always-on-user-tunnel |
 | Configure Azure Firewall in a Virtual WAN secured hub | https://learn.microsoft.com/en-us/azure/virtual-wan/howto-firewall |
 | Set virtual hub routing preference in Azure portal | https://learn.microsoft.com/en-us/azure/virtual-wan/howto-virtual-hub-routing-preference |
 | Configure Azure Virtual WAN hub settings and scale units | https://learn.microsoft.com/en-us/azure/virtual-wan/hub-settings |

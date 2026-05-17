@@ -1,9 +1,9 @@
 ---
 name: azure-architecture
-description: Expert guidance for designing Azure solutions using Azure Architecture. Covers reference architectures, solution ideas, design patterns, technology choices, architecture styles, best practices, anti-patterns, example workloads, and migration guides. Use when designing AKS or data/ML platforms, hybrid/DR networks, GenAI apps, or migrating AWS/GCP workloads, and other Azure Architecture related development tasks.
+description: Expert guidance for designing Azure solutions using Azure Architecture. Covers reference architectures, solution ideas, design patterns, technology choices, architecture styles, best practices, anti-patterns, example workloads, and migration guides. Use when designing AKS or data/AI platforms, hybrid networking/identity, DR/security setups, or AWS/GCP-to-Azure migrations, and other Azure Architecture related development tasks.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-10"
+  generated_at: "2026-05-17"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Architecture Skill
@@ -24,19 +24,20 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Reference Architectures | L37-L93 | End-to-end Azure solution blueprints: mission-critical, data/ML, AKS, networking, hybrid/DR, security, and landing zone architectures with deployment and ops patterns. |
-| Solution Ideas | L94-L125 | End-to-end solution patterns for AI, analytics, IoT, security, SAP, and data platforms on Azure, including reference architectures, design choices, and implementation guidance. |
+| Reference Architectures | L37-L94 | End-to-end Azure solution blueprints: mission-critical, data/AI, AKS, networking, hybrid identity, security, and DR architectures you can copy or adapt for real deployments. |
+| Solution Ideas | L95-L125 | End-to-end solution patterns for AI, analytics, IoT, security, and DevOps on Azure, showing how to combine services into production architectures and workflows. |
 | Design Patterns | L126-L178 | Architecture design patterns for Azure apps: messaging, resiliency, transactions, gateways/OpenAI, integration, caching, data partitioning, security, and scaling microservices and distributed systems. |
 | Technology Choices | L179-L212 | Guides for choosing the right Azure/Fabric services (compute, storage, data, AI/ML, analytics, networking, messaging, search, vector) for specific workloads and architectures. |
 | Architecture Styles | L213-L224 | Guidance on choosing and designing Azure app architectures (big compute, big data, event-driven, microservices, N-tier, web-queue-worker) with patterns, components, and best practices. |
-| Best Practices | L225-L277 | Best-practice patterns for designing, securing, scaling, monitoring, and operating Azure apps and networks, including APIs, AKS, Event Hubs, IoT, SAP, data, DR, and multitenant/GenAI workloads |
-| Anti-patterns | L278-L292 | Diagnosing and fixing common Azure performance and scalability anti-patterns (busy DB/front end, chatty I/O, no caching, noisy neighbors, retry storms, sync I/O, monolithic persistence). |
-| Example Workloads | L293-L372 | End-to-end reference architectures for real-world Azure workloads: data/analytics, AI/ML, mainframe migration, hybrid networking, AKS/containers, security, DR/BCDR, and enterprise app platforms. |
-| Migration Guides | L373-L407 | Guides for migrating from AWS, GCP, on-prem Oracle, Kafka, and EKS to Azure, mapping equivalent services, architectures, identity, security, governance, and app modernization patterns. |
+| Best Practices | L225-L276 | Best-practice patterns for designing, securing, scaling, monitoring, and operating Azure apps and networks, including APIs, AKS, Event Hubs, IoT, SAP, data, DR, and multitenant/GenAI workloads |
+| Anti-patterns | L277-L291 | Diagnosing and fixing common Azure performance and scalability anti-patterns (busy DB/front end, chatty I/O, no caching, noisy neighbors, retry storms, sync I/O, monolithic persistence). |
+| Example Workloads | L292-L370 | End-to-end reference architectures for real-world Azure workloads: data/analytics, AI/ML, mainframe migration, hybrid networking, AKS/containers, security, DR/BCDR, and enterprise app platforms. |
+| Migration Guides | L371-L405 | Guides for mapping AWS/GCP/on-prem services to Azure, planning and executing migrations (including Oracle, Kafka, AKS/EKS, web apps), and securing/governing cloud workloads on Azure |
 
 ### Reference Architectures
 | Topic | URL |
 |-------|-----|
+| Implement durable document classification pipelines on Azure | https://learn.microsoft.com/en-us/azure/architecture/ai-ml/architecture/automate-document-classification-durable-functions |
 | Deploy a baseline Microsoft Foundry chat architecture on Azure | https://learn.microsoft.com/en-us/azure/architecture/ai-ml/architecture/baseline-microsoft-foundry-chat |
 | Run baseline Foundry chat in Azure landing zones | https://learn.microsoft.com/en-us/azure/architecture/ai-ml/architecture/baseline-microsoft-foundry-landing-zone |
 | Deploy MLOps v2 CI/CD and retraining architectures | https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/machine-learning-operations-v2 |
@@ -57,7 +58,7 @@ This skill requires **network access** to fetch documentation content:
 | Design Azure Virtual Desktop on Azure Local | https://learn.microsoft.com/en-us/azure/architecture/hybrid/azure-local-workload-virtual-desktop |
 | Extend file services with Azure File Sync in hybrid setups | https://learn.microsoft.com/en-us/azure/architecture/hybrid/hybrid-file-services |
 | Implement a hub-spoke network topology in Azure | https://learn.microsoft.com/en-us/azure/architecture/networking/architecture/hub-spoke |
-| Deploy a hub-spoke network topology with Azure Virtual WAN | https://learn.microsoft.com/en-us/azure/architecture/networking/architecture/hub-spoke-virtual-wan-architecture |
+| Implement hub-spoke networking with Azure Virtual WAN | https://learn.microsoft.com/en-us/azure/architecture/networking/architecture/hub-spoke-virtual-wan-architecture |
 | Implement TIC 3.0-compliant internet access on Azure | https://learn.microsoft.com/en-us/azure/architecture/networking/architecture/trusted-internet-connections |
 | Secure AWS accounts using Microsoft Entra ID | https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/aws/aws-azure-ad-security |
 | Host GPU-based ML and HPC workloads on AKS | https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks-gpu/gpu-aks |
@@ -95,7 +96,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Generate AI-assisted documents from enterprise data | https://learn.microsoft.com/en-us/azure/architecture/ai-ml/idea/generate-documents-from-your-data |
-| Design an Azure image classification solution architecture | https://learn.microsoft.com/en-us/azure/architecture/ai-ml/idea/intelligent-apps-image-processing |
+| Design an Azure image classification application | https://learn.microsoft.com/en-us/azure/architecture/ai-ml/idea/intelligent-apps-image-processing |
 | Scale many-models machine learning on Azure | https://learn.microsoft.com/en-us/azure/architecture/ai-ml/idea/many-models-machine-learning-azure-machine-learning |
 | Process multimodal content with Azure AI services | https://learn.microsoft.com/en-us/azure/architecture/ai-ml/idea/multi-modal-content-processing |
 | Design multi-agent workflow automation on Azure | https://learn.microsoft.com/en-us/azure/architecture/ai-ml/idea/multiple-agent-workflow-automation |
@@ -110,7 +111,7 @@ This skill requires **network access** to fetch documentation content:
 | Stream and process real-time data with AKS and Kafka | https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/data-streaming-scenario |
 | Design a DevSecOps IaC pipeline with GitHub and Azure | https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/devsecops-infrastructure-as-code |
 | Build batch and streaming ETL with Databricks and Delta Lake | https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/ingest-etl-stream-with-adb |
-| Analyze IoT telemetry with Azure Data Explorer and IoT Hub | https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/iot-azure-data-explorer |
+| Design IoT analytics with Azure Data Explorer and IoT Hub | https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/iot-azure-data-explorer |
 | Replicate and sync mainframe files to Azure storage | https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/mainframe-azure-file-replication |
 | Diagram IT environment and build Azure-based threat maps | https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/map-threats-it-environment |
 | Add second defense layer with Microsoft Defender XDR | https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/microsoft-365-defender-build-second-layer-defense |
@@ -118,7 +119,6 @@ This skill requires **network access** to fetch documentation content:
 | Automate security responses with Microsoft Sentinel playbooks | https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/microsoft-sentinel-automated-response |
 | Plan cross-tenant workload migrations between Entra tenants | https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/migrate-cloud-workloads-across-security-tenants |
 | Apply multilayered security to Azure virtual machines | https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/multilayered-protection-azure-vm |
-| Design SAP S/4HANA large-instance architecture on Azure | https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/sap-s4-hana-on-hli-with-ha-and-dr |
 | Automate SAP infrastructure on Azure with SUSE | https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/sap-workload-automation-suse |
 | Design cross-region TDE resiliency for SQL Managed Instance with Managed HSM | https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/secure-sql-managed-instance-managed-hardware-security-module |
 | Design a modern SMB data platform with Fabric and Databricks | https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/small-medium-modern-data-platform |
@@ -248,7 +248,6 @@ This skill requires **network access** to fetch documentation content:
 | Scale Azure IoT Hub solutions to millions of devices | https://learn.microsoft.com/en-us/azure/architecture/guide/iot/scale-iot-solution-azure |
 | Design multitenant architectures for Azure IoT Hub solutions | https://learn.microsoft.com/en-us/azure/architecture/guide/multitenant/approaches/iot |
 | Secure inbound and outbound internet access for SAP on Azure | https://learn.microsoft.com/en-us/azure/architecture/guide/sap/sap-internet-inbound-outbound |
-| Implement SAP S/4HANA on Azure Linux with HA/DR | https://learn.microsoft.com/en-us/azure/architecture/guide/sap/sap-s4hana |
 | Apply network best practices for SAP landscapes on Azure | https://learn.microsoft.com/en-us/azure/architecture/guide/sap/sap-whole-landscape |
 | Apply best practices for workloads on Azure Spot VMs | https://learn.microsoft.com/en-us/azure/architecture/guide/spot/spot-eviction |
 | Run continuous validation with Load Testing and Chaos Studio | https://learn.microsoft.com/en-us/azure/architecture/guide/testing/mission-critical-deployment-testing |
@@ -294,7 +293,6 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Automate video analysis with Azure ML and Vision | https://learn.microsoft.com/en-us/azure/architecture/ai-ml/architecture/analyze-video-computer-vision-machine-learning |
-| Automate document classification with Durable Functions | https://learn.microsoft.com/en-us/azure/architecture/ai-ml/architecture/automate-document-classification-durable-functions |
 | Implement automated PDF forms processing on Azure | https://learn.microsoft.com/en-us/azure/architecture/ai-ml/architecture/automate-pdf-forms-processing |
 | Build and deploy custom document models on Azure | https://learn.microsoft.com/en-us/azure/architecture/ai-ml/architecture/build-deploy-custom-models |
 | Index blob content and metadata with Azure AI Search | https://learn.microsoft.com/en-us/azure/architecture/ai-ml/architecture/search-blob-metadata |
@@ -375,9 +373,9 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Map AWS services and concepts to Azure for migration | https://learn.microsoft.com/en-us/azure/architecture/aws-professional/ |
 | Map AWS account structures to Azure subscriptions | https://learn.microsoft.com/en-us/azure/architecture/aws-professional/accounts |
-| Map and compare AWS compute services to Azure | https://learn.microsoft.com/en-us/azure/architecture/aws-professional/compute |
+| Map AWS compute services to Azure equivalents | https://learn.microsoft.com/en-us/azure/architecture/aws-professional/compute |
 | Map AWS data and AI services to Azure equivalents | https://learn.microsoft.com/en-us/azure/architecture/aws-professional/data-ai |
-| Compare AWS and Azure database technologies for migration | https://learn.microsoft.com/en-us/azure/architecture/aws-professional/databases |
+| Map AWS database services to Azure offerings | https://learn.microsoft.com/en-us/azure/architecture/aws-professional/databases |
 | Map Amazon EKS concepts and configs to Azure AKS | https://learn.microsoft.com/en-us/azure/architecture/aws-professional/eks-to-aks/ |
 | Manage and optimize AKS costs versus Amazon EKS | https://learn.microsoft.com/en-us/azure/architecture/aws-professional/eks-to-aks/cost-management |
 | Apply governance to AKS clusters versus EKS | https://learn.microsoft.com/en-us/azure/architecture/aws-professional/eks-to-aks/governance |
@@ -388,11 +386,11 @@ This skill requires **network access** to fetch documentation content:
 | Choose AKS storage options versus Amazon EKS | https://learn.microsoft.com/en-us/azure/architecture/aws-professional/eks-to-aks/storage |
 | Compare Kubernetes workload identity on EKS and AKS | https://learn.microsoft.com/en-us/azure/architecture/aws-professional/eks-to-aks/workload-identity |
 | Compare AWS and Azure messaging services | https://learn.microsoft.com/en-us/azure/architecture/aws-professional/messaging |
-| Compare AWS and Azure networking options for architects | https://learn.microsoft.com/en-us/azure/architecture/aws-professional/networking |
+| Compare AWS and Azure networking capabilities | https://learn.microsoft.com/en-us/azure/architecture/aws-professional/networking |
 | Understand AWS vs Azure regions and zones for resiliency | https://learn.microsoft.com/en-us/azure/architecture/aws-professional/regions-zones |
 | Compare AWS and Azure resource management models | https://learn.microsoft.com/en-us/azure/architecture/aws-professional/resources |
 | Map AWS identity solutions to Microsoft Entra ID | https://learn.microsoft.com/en-us/azure/architecture/aws-professional/security-identity |
-| Compare AWS and Azure storage services for migration | https://learn.microsoft.com/en-us/azure/architecture/aws-professional/storage |
+| Map AWS storage services to Azure storage options | https://learn.microsoft.com/en-us/azure/architecture/aws-professional/storage |
 | Migrate on-premises Oracle Database to Azure VMs | https://learn.microsoft.com/en-us/azure/architecture/databases/idea/migrate-oracle-azure-iaas |
 | Migrate Oracle Exadata workloads to Oracle Database@Azure | https://learn.microsoft.com/en-us/azure/architecture/databases/idea/migrate-oracle-odaa-exadata |
 | Migrate on-premises Oracle databases to Azure | https://learn.microsoft.com/en-us/azure/architecture/databases/idea/topic-migrate-oracle-azure |

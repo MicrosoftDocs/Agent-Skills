@@ -38,7 +38,7 @@ confusable_not_for: Not for Azure Key Vault (use azure-key-vault), Azure Securit
 - **New Pages**: 0
 - **Updated Pages**: 0
 - **Unchanged**: 20
-- **Deleted Pages**: 1
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-information-protection/azure-information-protection.csv`
 
 ## Classification Statistics
@@ -52,10 +52,6 @@ confusable_not_for: Not for Azure Key Vault (use azure-key-vault), Azure Securit
 | *(Unclassified)* | 5 | 25.0% |
 
 ## Changes
-
-### Deleted Pages
-
-- ~~RMS client deployment notes~~ (https://learn.microsoft.com/en-us/azure/information-protection/rms-client/client-deployment-notes)
 
 ## Classified Pages
 

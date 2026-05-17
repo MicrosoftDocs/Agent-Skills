@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-10'
+generated_at: '2026-05-17'
 category_descriptions:
   security: Security alerts, recommendations, roles, auth, and certificates for Defender
     for IoT/IoT Hub/OT sensors, including RBAC, SSO, PAM auditing, and Zero Trust
@@ -78,12 +78,12 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 
 ### Updated Pages
 
-- [OT monitoring software versions](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/release-notes)
-  - Updated: 2026-04-28T17:57:00.000Z → 2026-05-04T07:35:00.000Z
-- [Configure proxy settings](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/connect-sensors)
-  - Updated: 2026-04-28T17:57:00.000Z → 2026-05-04T12:34:00.000Z
-- [What's new in Defender for IoT](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/whats-new)
-  - Updated: 2026-04-28T17:57:00.000Z → 2026-05-04T07:35:00.000Z
+- [What's new?](https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/release-notes)
+  - Updated: 2026-04-28T17:57:00.000Z → 2026-05-12T22:43:00.000Z
+- [Defender for IoT and your SOC](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/concept-sentinel-integration)
+  - Updated: 2026-04-28T17:57:00.000Z → 2026-05-12T22:43:00.000Z
+- [Securing enterprise IoT devices](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/concept-enterprise)
+  - Updated: 2026-04-28T17:57:00.000Z → 2026-05-12T22:43:00.000Z
 
 ## Classified Pages
 
@@ -242,7 +242,6 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | [Install the Microsoft Defender for IoT micro agent](https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/tutorial-standalone-agent-binary-installation) | 0.35 | Installation tutorial for the micro agent; focuses on steps, not on structured configuration options or limits. |
 | [Investigate an OT network alert](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/respond-ot-alert) | 0.35 | Describes how to respond to alerts; summary doesn’t show specific error codes, diagnostic commands, or configuration tables. |
 | [Neousys Nuvo-5006LP (L100 Rugged)](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/appliance-catalog/neousys-nuvo-5006lp) | 0.35 | Shows hardware components and notes legacy support, but no explicit numeric limits, configuration parameters, or troubleshooting mappings. |
-| [Securing enterprise IoT devices](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/concept-enterprise) | 0.35 | Conceptual article on securing IoT devices via Defender for Endpoint and Defender for IoT; primarily high-level security posture discussion. |
 | [Update detected device properties](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/ot-deploy/update-device-inventory) | 0.35 | Focuses on reviewing and updating device inventory; likely UI-driven without detailed configuration parameter tables or numeric thresholds. |
 | [Upgrade a Defender for IoT micro agent](https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/upgrade-micro-agent) | 0.35 | Upgrade procedure for micro agent; step-by-step process rather than reusable configuration or troubleshooting mappings. |
 | [View OT device mapping](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-work-with-the-sensor-device-map) | 0.35 | Using device map visualization; likely conceptual/operational without detailed config tables or numeric constraints. |
@@ -250,7 +249,6 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | [Add an OT plan to your Azure subscription](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/getting-started) | 0.30 | Quickstart for setting up a trial; largely procedural and licensing overview without detailed limits tables or config references beyond a single approximate device count. |
 | [Control OT traffic monitoring](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-control-what-traffic-is-monitored) | 0.30 | Describes how to control monitored traffic conceptually; summary doesn’t indicate detailed config tables, limits, or product-specific error codes. |
 | [Create a learned baseline of OT alerts](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/ot-deploy/create-learned-baseline) | 0.30 | Covers creating a learned baseline of traffic; appears procedural without specific numeric limits, config matrices, or error mappings. |
-| [Defender for IoT and your SOC](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/concept-sentinel-integration) | 0.30 | Conceptual description of Sentinel integration and SOC challenges; no clear evidence of configuration matrices or error-resolution content. |
 | [Defender for IoT system components](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/architecture) | 0.30 | High-level architecture and data flow overview; does not indicate quantified thresholds, decision matrices, or detailed configuration parameters. |
 | [Dell Edge 5200 (Rugged MIL-STD-810G)](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/appliance-catalog/dell-edge-5200) | 0.30 | Legacy appliance description with hardware elements; no numeric limits, configuration tables, or error mappings. |
 | [Dell Edge Gateway 3200](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/appliance-catalog/dell-edge-3200) | 0.30 | Describes appliance and panels only; no specific Defender for IoT limits, configs, or troubleshooting content. |
@@ -262,15 +260,17 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | [Manage enterprise IoT security monitoring](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/manage-subscriptions-enterprise) | 0.30 | Explains licensing/support for Enterprise IoT monitoring; not focused on technical configuration, limits, or troubleshooting. |
 | [Understand the Defender-IoT-micro-agent for Eclipse ThreadX (Preview)](https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/concept-threadx-security-module) | 0.30 | Conceptual explanation of ThreadX micro agent basics and workflow; high-level without detailed settings or limits. |
 | [What's new archive](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/whats-new-archive) | 0.30 | What's new archive; primarily release/feature history without structured limits, configs, or troubleshooting guidance. |
-| [What's new?](https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/release-notes) | 0.30 | Release notes list new features but not in the structured, reusable form of limits, configs, or troubleshooting mappings required by the taxonomy. |
 | [Zero Trust and your OT/IoT networks](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/concept-zero-trust) | 0.30 | Zero Trust conceptual guidance for OT networks; high-level strategy without product-specific configuration parameters or limits. |
 | [Agent portfolio overview and OS support](https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/concept-agent-portfolio-overview-os-support) | 0.25 | Agent portfolio and OS support overview; likely a conceptual mapping of agent types to OSes, not detailed config or limits. |
 | [Onboard and activate a virtual OT sensor](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/tutorial-onboarding) | 0.25 | Tutorial for onboarding a virtual OT sensor; appears step-by-step without detailed configuration matrices or limits. |
 | [Standalone micro agent overview](https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/concept-standalone-micro-agent-overview) | 0.25 | Standalone micro agent overview; conceptual description of capabilities and deployment options without deep technical tables. |
 | [Welcome to Microsoft Defender for IoT](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/overview) | 0.25 | High-level overview of Defender for IoT for organizations; marketing and conceptual content without detailed technical tables. |
 | [Add a resource group to your IoT solution](https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/tutorial-configure-your-solution) | 0.20 | Tutorial for adding a resource group and wiring solution; procedural, not configuration-reference or troubleshooting content. |
+| [Defender for IoT and your SOC](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/concept-sentinel-integration) | 0.20 | Content is a conceptual overview of integrating Defender for IoT with Microsoft Sentinel for SOC operations, without concrete configuration parameters, error codes, limits, or decision matrices. It does not meet any sub-skill detection criteria. |
 | [Defender for IoT glossary](https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/references-defender-for-iot-glossary) | 0.20 | Glossary of terms; definitional, not expert procedural or configuration knowledge. |
 | [Enable Microsoft Defender for IoT on Azure IoT Hub](https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/quickstart-onboard-iot-hub) | 0.20 | Quickstart for enabling Defender on IoT Hub; step-by-step enablement without detailed configuration tables or limits. |
 | [Frequently asked questions](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/faqs-general) | 0.20 | General FAQ; likely high-level Q&A without detailed limits, configs, or troubleshooting mappings. |
+| [Securing enterprise IoT devices](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/concept-enterprise) | 0.20 | Page describes the security value of integrating Defender for Endpoint and Defender for IoT for unmanaged IoT devices at a conceptual level. It lacks specific RBAC roles, configuration tables, limits, or troubleshooting details, so it does not qualify for any sub-skill type. |
 | [What is Defender for IoT for device builders?](https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/overview) | 0.20 | High-level product overview for Defender for IoT device builders without detailed configs, limits, or error mappings. |
 | [What's new in Defender for IoT](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/whats-new) | 0.20 | Release notes / what's-new page summarizing recent features; does not indicate detailed limits, configuration tables, error codes, or other structured expert knowledge as defined by the sub-skill types. |
+| [What's new?](https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/release-notes) | 0.20 | Release notes listing new and updated features; does not primarily provide structured limits, configuration matrices, troubleshooting mappings, or other stable expert reference data as defined by the sub-skill types. |

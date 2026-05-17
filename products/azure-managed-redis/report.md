@@ -1,33 +1,35 @@
 ---
-generated_at: '2026-05-10'
+generated_at: '2026-05-17'
 category_descriptions:
   integrations: How to connect apps (ASP.NET Core, .NET, Node.js, Python, Go) to Azure
     Managed Redis, secure with Entra ID, use bindings, keyspace notifications, and
     import/export data via Blob.
   best-practices: Guidance on resilient client connections, scaling, memory and load
-    optimization, performance testing, Kubernetes hosting, and handling failover/patching
-    for Azure Managed Redis.
+    optimization, Kubernetes hosting, performance testing, failover/patching, and
+    resolving common Azure Managed Redis issues.
   configuration: 'How to configure and operate Azure Managed Redis: instance settings,
     modules, persistence, geo-replication, monitoring/diagnostics, Grafana, CLI/PowerShell,
     migration, and data import/export.'
   security: 'Securing Azure Managed Redis: Entra auth, disk encryption, Private Link,
     TLS config, security best practices, and enforcing compliance with Azure Policy.'
   troubleshooting: 'Diagnosing and fixing Azure Managed Redis issues: connectivity,
-    latency/timeouts, data loss, server resources, client performance, and using Redis
-    Insight/redis-cli for troubleshooting.'
-  deployment: Scaling and upgrading Managed Redis, migrating from Basic/Standard/Premium
-    or Redis Enterprise, deploying with ARM/Bicep, and configuring maintenance/update
-    windows.
-  decision-making: Guidance on choosing Managed Redis tiers, planning deployments,
-    comparing with Azure Cache/Redis Enterprise, and selecting/migrating/reserving
-    the right Managed Redis option.
+    latency/timeouts, data loss, server resources, client performance, common errors,
+    and using Redis Insight/redis-cli for troubleshooting.'
+  deployment: Scaling, version upgrades, migrations from Basic/Standard/Premium or
+    Redis Enterprise, ARM/Bicep deployment, and configuring maintenance windows for
+    Azure Managed Redis.
+  decision-making: Guidance on choosing Managed Redis vs other tiers, planning capacity
+    and reservations, and selecting/migrating from Basic/Standard/Premium or Redis
+    Enterprise to Azure Managed Redis
 skill_description: Expert knowledge for Azure Managed Redis development including
   troubleshooting, best practices, decision making, security, configuration, integrations
-  & coding patterns, and deployment. Use when using Entra ID auth, geo-replication,
-  persistence, keyspace notifications, or Blob-based import/export, and other Azure
-  Managed Redis related development tasks. Not for Azure Cache for Redis (use azure-cache-redis).
-use_when: Use when using Entra ID auth, geo-replication, persistence, keyspace notifications,
-  or Blob-based import/export, and other Azure Managed Redis related development tasks.
+  & coding patterns, and deployment. Use when connecting apps via Entra ID, configuring
+  persistence/geo-replication, Private Link/TLS, or scaling/migrating tiers, and other
+  Azure Managed Redis related development tasks. Not for Azure Cache for Redis (use
+  azure-cache-redis).
+use_when: Use when connecting apps via Entra ID, configuring persistence/geo-replication,
+  Private Link/TLS, or scaling/migrating tiers, and other Azure Managed Redis related
+  development tasks.
 confusable_not_for: Not for Azure Cache for Redis (use azure-cache-redis).
 ---
 # Azure Managed Redis Crawl Report
@@ -37,13 +39,13 @@ confusable_not_for: Not for Azure Cache for Redis (use azure-cache-redis).
 - **Total Pages**: 70
 - **Fetched**: 70
 - **Fetch Failed**: 0
-- **Classified**: 60
-- **Unclassified**: 10
+- **Classified**: 62
+- **Unclassified**: 8
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 69
+- **Updated Pages**: 7
+- **Unchanged**: 63
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-managed-redis/azure-managed-redis.csv`
 
@@ -51,26 +53,39 @@ confusable_not_for: Not for Azure Cache for Redis (use azure-cache-redis).
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| best-practices | 10 | 14.3% |
+| best-practices | 11 | 15.7% |
 | configuration | 11 | 15.7% |
 | decision-making | 9 | 12.9% |
 | deployment | 8 | 11.4% |
 | integrations | 9 | 12.9% |
 | security | 6 | 8.6% |
-| troubleshooting | 7 | 10.0% |
-| *(Unclassified)* | 10 | 14.3% |
+| troubleshooting | 8 | 11.4% |
+| *(Unclassified)* | 8 | 11.4% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Migration using tooling](https://learn.microsoft.com/en-us/azure/redis/migrate/migrate-redis-enterprise-with-tooling)
-  - Updated: 2026-05-02T06:17:00.000Z → 2026-05-04T22:15:00.000Z
+- [Management FAQs](https://learn.microsoft.com/en-us/azure/redis/management-faq)
+  - Updated: 2025-05-20T11:13:00Z → 2025-05-20T11:13:00.000Z
+- [Troubleshooting FAQs](https://learn.microsoft.com/en-us/azure/redis/monitor-troubleshoot-faq)
+  - Updated: 2025-05-20T11:13:00Z → 2025-05-20T11:13:00.000Z
+- [Azure Redis FAQ](https://learn.microsoft.com/en-us/azure/redis/faq)
+  - Updated: 2025-07-09T17:43:00Z → 2025-07-09T17:43:00.000Z
+- [Upgrade to a new version](https://learn.microsoft.com/en-us/azure/redis/how-to-upgrade)
+  - Updated: 2026-04-01T06:12:00.000Z → 2026-05-11T08:00:00.000Z
+- [Planning FAQs](https://learn.microsoft.com/en-us/azure/redis/planning-faq)
+  - Updated: 2025-05-20T11:13:00Z → 2025-05-20T11:13:00.000Z
+- [Development FAQs](https://learn.microsoft.com/en-us/azure/redis/development-faq)
+  - Updated: 2026-02-01T12:13:00Z → 2026-02-01T12:13:00.000Z
+- [Development best practice](https://learn.microsoft.com/en-us/azure/redis/best-practices-development)
+  - Updated: 2026-04-06T22:10:00.000Z → 2026-05-15T05:53:00.000Z
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
+| [Troubleshooting FAQs](https://learn.microsoft.com/en-us/azure/redis/monitor-troubleshoot-faq) | troubleshooting | 0.90 | A monitoring and troubleshooting FAQ for Azure Managed Redis is very likely organized around specific error messages, status conditions, and monitoring signals, with guidance on diagnosis and resolution. That matches the troubleshooting pattern (symptom → cause → solution) and will contain product-specific expert knowledge such as particular error codes, metrics, and recommended actions. |
 | [Troubleshoot connectivity issues](https://learn.microsoft.com/en-us/azure/redis/troubleshoot-connectivity) | troubleshooting | 0.85 | Connectivity troubleshooting guide; likely organized by symptom (intermittent vs continuous), with product-specific checks, commands, and possibly error messages. |
 | [Troubleshoot data loss](https://learn.microsoft.com/en-us/azure/redis/troubleshoot-data-loss) | troubleshooting | 0.85 | Explicitly about diagnosing actual or perceived data loss (partial/complete key loss, expiration) with Redis commands and metrics; clear symptom→diagnosis→resolution structure. |
 | [Troubleshoot latency and timeouts](https://learn.microsoft.com/en-us/azure/redis/troubleshoot-timeouts) | troubleshooting | 0.85 | Focused on latency and timeout exceptions; such docs map symptoms to causes (patching, client timeouts) and mitigations, often with specific timeout settings and commands. |
@@ -78,6 +93,7 @@ confusable_not_for: Not for Azure Cache for Redis (use azure-cache-redis).
 | [Configure disk encryption](https://learn.microsoft.com/en-us/azure/redis/how-to-encryption) | security | 0.80 | Explains PMK/CMK usage and disk encryption behavior specific to this service. |
 | [Configure in Azure portal](https://learn.microsoft.com/en-us/azure/redis/configure) | configuration | 0.80 | Central configuration article describing Redis and platform settings, including parameter names and allowed values. |
 | [Connect to cache using Private Link](https://learn.microsoft.com/en-us/azure/redis/private-link) | security | 0.80 | Private Link article includes VNet, private endpoint, and DNS configuration specific to Redis. |
+| [Development best practice](https://learn.microsoft.com/en-us/azure/redis/best-practices-development) | best-practices | 0.80 | The page explicitly focuses on best practices for developing against Azure Managed Redis, which is likely to include concrete DOs/DON’Ts, recommended code patterns, and service-specific guidance not covered by generic Redis or programming knowledge. |
 | [Explore migration options](https://learn.microsoft.com/en-us/azure/redis/migrate/migrate-basic-standard-premium-options) | decision-making | 0.80 | Describes available migration options, recommends one option for most customers, and compares two migration paths. This is concrete migration path selection guidance, clearly in the decision-making category. |
 | [Explore migration options](https://learn.microsoft.com/en-us/azure/redis/migrate/migrate-redis-enterprise-options) | decision-making | 0.80 | Explicitly describes available migration options and recommends one path for most customers; this is concrete migration option selection guidance with scenario-based recommendations, matching decision-making criteria. |
 | [Memory management best practice](https://learn.microsoft.com/en-us/azure/redis/best-practices-memory-management) | best-practices | 0.80 | The page focuses on effective memory management for Azure Managed Redis, which usually includes concrete, product-specific guidance such as eviction policy choices, key design, and memory usage patterns unique to the managed offering. This is actionable, service-specific advice rather than conceptual theory, so it fits the best-practices sub-skill. |
@@ -85,7 +101,6 @@ confusable_not_for: Not for Azure Cache for Redis (use azure-cache-redis).
 | [Secure your Azure Managed Redis deployment](https://learn.microsoft.com/en-us/azure/redis/secure-azure-managed-redis) | security | 0.80 | The page explicitly focuses on securing Azure Managed Redis with best practices. Such articles normally include product-specific security settings (network isolation, auth modes, RBAC roles, key management) and configuration guidance that goes beyond generic security theory, fitting the security sub-skill. |
 | [Troubleshoot Redis server](https://learn.microsoft.com/en-us/azure/redis/troubleshoot-server) | troubleshooting | 0.80 | Covers server-side memory pressure, high CPU, long-running commands, bandwidth limits; includes Redis commands and metrics, fitting the troubleshooting pattern. |
 | [Troubleshoot client](https://learn.microsoft.com/en-us/azure/redis/troubleshoot-client) | troubleshooting | 0.80 | Troubleshoots client memory pressure, traffic bursts, high CPU, bandwidth limits, large requests/responses; this is symptom→cause→solution content specific to Redis clients. |
-| [Development best practice](https://learn.microsoft.com/en-us/azure/redis/best-practices-development) | best-practices | 0.78 | The page is explicitly a best-practices guide for Azure Managed Redis development and typically includes product-specific recommendations (for example, connection management patterns, retry behavior, and usage patterns) that go beyond generic Redis knowledge. These are actionable DO/DON'T guidelines tied to this managed service, fitting the best-practices sub-skill. |
 | [Monitoring data reference](https://learn.microsoft.com/en-us/azure/redis/monitor-cache-reference) | configuration | 0.78 | A monitoring data reference for a specific Azure service typically lists all supported metrics, dimensions, and log categories with their exact names, units, and sometimes ranges or aggregation types. Those metric and log identifiers, along with their precise semantics, are product-specific configuration/telemetry details that an LLM is unlikely to know from training. This fits the configuration sub-skill because it serves as a parameter/field reference for monitoring configuration rather than general concepts or limits. |
 | [Server load management best practice](https://learn.microsoft.com/en-us/azure/redis/best-practices-server-load) | best-practices | 0.78 | The page is explicitly a best-practices guide for using and monitoring server load on Azure Managed Redis. These recommendations are product-specific (for this managed Redis offering), likely include concrete guidance on interpreting Redis-specific metrics, thresholds, and behaviors unique to Azure’s implementation. This fits the best-practices category rather than generic concepts, and the content is unlikely to be fully captured in pretraining. |
 | [Connection resilience best practices](https://learn.microsoft.com/en-us/azure/redis/best-practices-connection) | best-practices | 0.75 | Connection resilience best-practices are product-specific, covering retry patterns, timeouts, and failover behaviors. |
@@ -95,10 +110,12 @@ confusable_not_for: Not for Azure Cache for Redis (use azure-cache-redis).
 | [Using TLS with a managed cache](https://learn.microsoft.com/en-us/azure/redis/tls-configuration) | security | 0.75 | TLS article specifies supported protocol versions and likely cipher/config options for secure connections. |
 | [.NET app](https://learn.microsoft.com/en-us/azure/redis/dotnet) | integrations | 0.70 | Quickstart includes concrete .NET connection code and Entra ID auth parameters specific to Azure Managed Redis. |
 | [ASP.NET app](https://learn.microsoft.com/en-us/azure/redis/aspnet) | integrations | 0.70 | Shows ASP.NET Core integration using DefaultAzureCredential and Entra ID for Redis; includes product-specific auth and connection patterns. |
+| [Azure Redis FAQ](https://learn.microsoft.com/en-us/azure/redis/faq) | best-practices | 0.70 | An FAQ that explicitly mentions patterns and best practices for Azure Managed Redis and Azure Cache for Redis is likely to include concrete, product-specific recommendations (for example, connection management patterns, data partitioning approaches, or configuration choices) that go beyond generic Redis usage. These actionable DO/DON'T style recommendations align best with the best-practices sub-skill and represent expert operational knowledge. |
 | [Create Redis cache - ARM template](https://learn.microsoft.com/en-us/azure/redis/redis-cache-arm-provision) | deployment | 0.70 | Provides ARM template schemas and parameters for Redis deployment, including diagnostic settings; fits deployment patterns and constraints. |
 | [Create Redis cache - Bicep](https://learn.microsoft.com/en-us/azure/redis/redis-cache-bicep-provision) | deployment | 0.70 | Shows Bicep resource definitions and parameters for deploying Redis; this is product-specific IaC deployment configuration. |
 | [Go app](https://learn.microsoft.com/en-us/azure/redis/go-get-started) | integrations | 0.70 | Go quickstart shows concrete connection code and auth configuration for Azure Managed Redis, which is product-specific. |
 | [Kubernetes-hosted client applications best practices](https://learn.microsoft.com/en-us/azure/redis/best-practices-kubernetes) | best-practices | 0.70 | Kubernetes hosting guidance will include product-specific networking, connection, and scaling recommendations. |
+| [Management FAQs](https://learn.microsoft.com/en-us/azure/redis/management-faq) | troubleshooting | 0.70 | Management FAQs for a specific Azure service typically include concrete, product-specific behaviors (for example, what happens on scaling, failover, patching, backup/restore nuances, or management operation side effects). These are often symptom → cause → resolution style answers that go beyond generic knowledge. While not a formal troubleshooting guide, this FAQ is likely to contain expert operational details and edge cases best aligned with troubleshooting. |
 | [Monitor using diagnostic settings](https://learn.microsoft.com/en-us/azure/redis/monitor-diagnostic-settings) | configuration | 0.70 | Describes diagnostic categories and destinations for Redis resource logs, including specific setting names and options. |
 | [Node.js app](https://learn.microsoft.com/en-us/azure/redis/nodejs-get-started) | integrations | 0.70 | Node.js quickstart demonstrates concrete client configuration and Entra ID-based connection details unique to this service. |
 | [Persist your cache with Redis data persistence](https://learn.microsoft.com/en-us/azure/redis/how-to-persistence) | configuration | 0.70 | How-to for configuring Redis persistence; such articles typically include product-specific settings (AOF/RDB modes, frequency, parameters) and concrete configuration values unique to Azure Managed Redis. |
@@ -111,7 +128,6 @@ confusable_not_for: Not for Azure Cache for Redis (use azure-cache-redis).
 | [Set up active geo-replication](https://learn.microsoft.com/en-us/azure/redis/how-to-active-geo-replication) | configuration | 0.70 | Describes configuring active geo-replication groups (up to five instances) and portal settings; this is product-specific configuration with concrete limits and options. |
 | [Understand differences](https://learn.microsoft.com/en-us/azure/redis/migrate/migrate-basic-standard-premium-understand) | decision-making | 0.70 | Explicitly about understanding key differences between Azure Cache for Redis tiers and Azure Managed Redis before migrating. This is SKU/service comparison to inform migration and tier selection decisions, fitting decision-making. |
 | [Understand differences](https://learn.microsoft.com/en-us/azure/redis/migrate/migrate-redis-enterprise-understand) | decision-making | 0.70 | Focused on understanding key differences between Azure Cache for Redis Enterprise and Azure Managed Redis before migrating; this is migration-oriented comparison content that informs whether and how to move, fitting decision-making with product-specific criteria. |
-| [Upgrade to a new version](https://learn.microsoft.com/en-us/azure/redis/how-to-upgrade) | deployment | 0.70 | An upgrade article for Redis major versions is part of deployment/operations lifecycle. These pages usually include product-specific upgrade constraints, supported paths, timing/availability behavior, and possibly tier-specific requirements—details that are not generic and are critical for production deployment planning. |
 | [Using Azure Functions to create a write-behind cache](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-cache) | integrations | 0.70 | Describes using Azure Functions triggers/bindings with Azure Managed Redis/Azure Cache for Redis; such docs include binding configuration parameters and connection settings unique to this integration. |
 | [Failover and patching](https://learn.microsoft.com/en-us/azure/redis/failover) | best-practices | 0.68 | The page describes product-specific behavior of Azure Managed Redis during failover and patching, including how planned vs. unplanned failovers occur and how clients should behave to remain resilient. This is actionable, service-specific guidance on handling failover scenarios rather than generic concepts, fitting best under best-practices. It does not primarily focus on limits, configuration tables, or deployment matrices. |
 | [Change the size and tier of a cache](https://learn.microsoft.com/en-us/azure/redis/how-to-scale) | deployment | 0.65 | Scaling article includes product-specific scaling operations and constraints across SKUs and tiers. |
@@ -124,12 +140,12 @@ confusable_not_for: Not for Azure Cache for Redis (use azure-cache-redis).
 | [Migration using tooling](https://learn.microsoft.com/en-us/azure/redis/migrate/migrate-redis-enterprise-with-tooling) | deployment | 0.65 | The page describes a product-specific migration path from Azure Cache for Redis Enterprise tier to Azure Managed Redis, including how the hostname and access keys are handled and what clients must do post-migration. This is expert, product-specific deployment/migration guidance rather than a generic tutorial, fitting the deployment/migration sub-skill best. |
 | [Monitor Cache for Redis](https://learn.microsoft.com/en-us/azure/redis/monitor-cache) | configuration | 0.65 | Monitoring article details specific metrics, logs, and Azure Monitor configuration for this service. |
 | [Overview](https://learn.microsoft.com/en-us/azure/redis/migrate/migrate-basic-standard-premium-overview) | decision-making | 0.65 | Migration overview content that likely includes phase-based guidance, recommended approaches, and when to choose specific migration paths for Azure Cache for Redis to Azure Managed Redis. This is migration decision guidance rather than just conceptual overview. |
-| [Planning FAQs](https://learn.microsoft.com/en-us/azure/redis/planning-faq) | decision-making | 0.65 | Planning FAQ typically covers SKU/tier selection, sizing, and deployment considerations with scenario-based guidance. |
-| [Troubleshooting FAQs](https://learn.microsoft.com/en-us/azure/redis/monitor-troubleshoot-faq) | troubleshooting | 0.65 | FAQ focused on monitoring and troubleshooting; likely lists common error messages or conditions and their resolutions, which is product-specific troubleshooting knowledge. |
+| [Upgrade to a new version](https://learn.microsoft.com/en-us/azure/redis/how-to-upgrade) | deployment | 0.65 | An upgrade procedure for a managed service typically includes product-specific constraints (supported upgrade paths, allowed version jumps, timing/availability behavior, rollback behavior) that are not generic and affect how and when you can perform the upgrade, fitting deployment/migration-style guidance. |
 | [Dashboards with Grafana](https://learn.microsoft.com/en-us/azure/redis/grafana-dashboards) | configuration | 0.60 | Explains using the built-in Grafana experience in Azure Monitor specifically for Azure Managed Redis metrics and logs. Likely includes product-specific dashboard configuration options, metric/log selection, and panel settings, which fits configuration of monitoring/visualization rather than generic tutorial content. |
-| [Development FAQs](https://learn.microsoft.com/en-us/azure/redis/development-faq) | best-practices | 0.60 | Development FAQ likely includes product-specific coding recommendations, edge cases, and gotchas beyond generic Redis usage. |
+| [Development FAQs](https://learn.microsoft.com/en-us/azure/redis/development-faq) | best-practices | 0.60 | Development FAQs for a specific service generally contain product-specific gotchas, recommended patterns, and answers to edge-case questions that go beyond generic programming knowledge. |
 | [Migration using tooling](https://learn.microsoft.com/en-us/azure/redis/migrate/migrate-basic-standard-premium-with-tooling) | configuration | 0.60 | Describes built-in migration tooling that automates endpoint migration and hostname updates. Likely includes tool-specific parameters, options, and required settings unique to this product, fitting configuration of product-specific tooling. |
 | [Overview](https://learn.microsoft.com/en-us/azure/redis/migrate/migrate-redis-enterprise-overview) | decision-making | 0.60 | Overview of migrating from Redis Enterprise to Azure Managed Redis organized into phases likely includes guidance on when and how to migrate, trade-offs, and scenario-based recommendations, which aligns with decision-making for migration paths. |
+| [Planning FAQs](https://learn.microsoft.com/en-us/azure/redis/planning-faq) | decision-making | 0.60 | Planning FAQs for a specific managed service usually include concrete guidance on choosing SKUs, regions, and configurations for different scenarios, often with trade-offs and selection criteria that help decide how to deploy the service. |
 | [Redis modules](https://learn.microsoft.com/en-us/azure/redis/redis-modules) | configuration | 0.60 | Describes how to enable specific Redis modules at creation time, which is a product-specific configuration capability. |
 
 ## Unclassified Pages
@@ -138,8 +154,6 @@ confusable_not_for: Not for Azure Cache for Redis (use azure-cache-redis).
 |-----------|------------|--------|
 | [Connect an AKS application to a cache](https://learn.microsoft.com/en-us/azure/redis/tutorial-aks-get-started) | 0.45 | Tutorial for connecting an AKS app to Redis; likely step-by-step with sample code but not a comprehensive configuration reference or troubleshooting matrix. |
 | [Use active geo-replication with an AKS-hosted application](https://learn.microsoft.com/en-us/azure/redis/tutorial-active-replication) | 0.45 | Tutorial for using active geo-replication with AKS; primarily a guided example rather than a detailed configuration or troubleshooting reference. |
-| [Azure Redis FAQ](https://learn.microsoft.com/en-us/azure/redis/faq) | 0.40 | General FAQ with basic questions, patterns, and best practices; summary doesn’t indicate detailed numeric limits, config tables, or error mappings beyond conceptual guidance. |
-| [Management FAQs](https://learn.microsoft.com/en-us/azure/redis/management-faq) | 0.40 | General management FAQ; likely mixed conceptual and high-level operational Q&A without clear evidence of numeric limits, config tables, or detailed error mappings. |
 | [Create an Azure Managed Redis instance](https://learn.microsoft.com/en-us/azure/redis/quickstart-create-managed-redis) | 0.30 | Quickstart for creating a cache; mostly step-by-step portal usage without deep configuration tables or product-specific patterns. |
 | [List of Redis metrics](https://learn.microsoft.com/en-us/azure/redis/monitor-cache-reference) | 0.30 | The summary only states that it contains monitoring reference information, without indicating specific numeric limits, configuration parameter tables, or error-code-based troubleshooting. It likely lists metric names and descriptions, which are closer to general reference than the expert-knowledge sub-skill types defined here. |
 | [Vector Search](https://learn.microsoft.com/en-us/azure/redis/overview-vector-similarity) | 0.30 | High-level introduction to vector embeddings and Redis as a vector database; conceptual without detailed configs or limits. |

@@ -1,11 +1,11 @@
 ---
-generated_at: '2026-04-05'
+generated_at: '2026-05-17'
 category_descriptions:
+  best-practices: Guidance on DDoS Protection design, cost optimization, incident
+    response planning, and safely running/simulating DDoS tests in Azure environments
   decision-making: Guidance on when to enable Azure DDoS Protection, comparing Standard
     tiers and pricing, and choosing the best tier for your app’s scale, risk, and
     cost requirements.
-  best-practices: Guidance on DDoS Protection design, cost optimization, incident
-    response planning, and safely running/simulating DDoS tests in Azure environments
   architecture-patterns: Reference architectures and design patterns for deploying
     Azure DDoS Protection, including integrating inline L7 protection with network
     virtual appliances (NVAs).
@@ -38,13 +38,13 @@ confusable_not_for: Not for Azure Firewall (use azure-firewall), Azure Web Appli
 - **Total Pages**: 33
 - **Fetched**: 33
 - **Fetch Failed**: 0
-- **Classified**: 25
-- **Unclassified**: 8
+- **Classified**: 24
+- **Unclassified**: 9
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 33
+- **Updated Pages**: 1
+- **Unchanged**: 32
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-ddos-protection/azure-ddos-protection.csv`
 
@@ -55,12 +55,17 @@ confusable_not_for: Not for Azure Firewall (use azure-firewall), Azure Web Appli
 | architecture-patterns | 2 | 6.1% |
 | best-practices | 4 | 12.1% |
 | configuration | 6 | 18.2% |
-| decision-making | 3 | 9.1% |
+| decision-making | 2 | 6.1% |
 | security | 7 | 21.2% |
 | troubleshooting | 3 | 9.1% |
-| *(Unclassified)* | 8 | 24.2% |
+| *(Unclassified)* | 9 | 27.3% |
 
 ## Changes
+
+### Updated Pages
+
+- [FAQ](https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-faq)
+  - Updated: 2026-04-02T06:24:00Z → 2026-04-02T06:24:00.000Z
 
 ## Classified Pages
 
@@ -79,7 +84,6 @@ confusable_not_for: Not for Azure Firewall (use azure-firewall), Azure Web Appli
 | [CLI](https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-protection-cli) | security | 0.70 | CLI quickstart contains Azure DDoS–specific az command groups, flags, and parameter usage to create and attach a DDoS protection plan to a VNet, which are concrete security configuration details. |
 | [Cost optimization principles](https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-optimization-guide) | best-practices | 0.70 | Described as cost optimization principles with concrete strategies to balance security and cost; likely includes product-specific recommendations and trade-offs for configuring and using DDoS Protection, which are best-practices. |
 | [Engage DDoS Rapid Response (DRR)](https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-rapid-response) | troubleshooting | 0.70 | Describes how to engage the DDoS Rapid Response team during active attacks and for post-attack analysis; operational guidance for handling incidents, which is part of troubleshooting/incident response for this service. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-faq) | decision-making | 0.70 | The FAQ contains product-specific guidance on when to use Azure DDoS Protection, differences between Basic and Standard, and scenario-based recommendations (for example, which resources benefit, how it works with other Azure networking services, and billing/coverage nuances). This is decision-support content rather than pure concepts or marketing, helping users choose configurations and understand trade-offs, but it does not focus on numeric limits, configuration parameter tables, or error-code troubleshooting. |
 | [Inline L7 DDoS protection with Gateway Load Balancer and partner NVAs](https://learn.microsoft.com/en-us/azure/ddos-protection/inline-protection-glb) | architecture-patterns | 0.70 | Described as covering scenarios, architecture, deployment steps, and best practices for inline L7 protection using Gateway Load Balancer and partner NVAs; this is a product-specific architecture pattern for latency-sensitive workloads. |
 | [Monitor Azure DDoS Protection](https://learn.microsoft.com/en-us/azure/ddos-protection/monitor-ddos-protection) | configuration | 0.70 | Monitoring reference-style article describing types of metrics and logs available for DDoS Protection and how to collect/analyze them; typically includes metric names and log categories, which are configuration details for monitoring. |
 | [PowerShell](https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-protection-powershell) | security | 0.70 | PowerShell quickstart necessarily includes specific cmdlet names, parameter names, and required values to create and link a DDoS protection plan to a virtual network. These are product-specific security configuration details beyond generic knowledge. |
@@ -102,5 +106,6 @@ confusable_not_for: Not for Azure Firewall (use azure-firewall), Azure Web Appli
 | [Azure DDoS Protection features](https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-protection-features) | 0.30 | Feature overview of Azure DDoS Protection; summary suggests conceptual descriptions of capabilities without numeric limits, configuration tables, or detailed error/diagnostic mappings. |
 | [Terraform](https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-protection-terraform) | 0.30 | Terraform QuickStart tutorial; primarily step-by-step deployment/creation example rather than a comprehensive configuration reference with parameter tables or deployment constraints by tier. |
 | [Types of attacks](https://learn.microsoft.com/en-us/azure/ddos-protection/types-of-attacks) | 0.30 | Explains types of attacks mitigated (volumetric, protocol, resource) and common attack types; conceptual security/attack taxonomy rather than configuration, limits, or troubleshooting. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-faq) | 0.20 | FAQ content is primarily conceptual and explanatory (what the service is, how it works, billing, scenarios). It does not focus on detailed numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices with quantified trade-offs, so it doesn't meet the expert-knowledge criteria for any sub-skill type. |
 | [Onboard partners](https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-protection-partner-onboarding) | 0.20 | Partnering/BD-focused article describing value propositions and investment paths; marketing/business content rather than technical limits, configuration, or troubleshooting. |
 | [What is Azure DDoS Protection?](https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-protection-overview) | 0.20 | High-level overview of Azure DDoS Protection capabilities and concepts without concrete limits, configs, or error mappings. |

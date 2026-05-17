@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-03'
+generated_at: '2026-05-17'
 category_descriptions:
   security: 'Securing Azure Repos and TFVC: auth methods (Entra, PAT, SSH, GCM), branch/repo/TFVC
     permissions and policies, secure cloning/import, SSH key management, and GitHub
@@ -13,9 +13,9 @@ category_descriptions:
   integrations: Integrating Azure Repos with tools (Functions, Node.js, IDEs, Slack/Teams,
     scanners) and automating workflows via TFVC/tf.exe and Git-specific commands and
     permissions.
-  troubleshooting: 'Diagnosing and fixing Git/Azure Repos and TFVC issues: locks,
-    merge/push errors, undo/recover changes, plus troubleshooting CodeQL, dependency,
-    and secret scanning.'
+  troubleshooting: Diagnosing and fixing Git/TFVC issues (locks, merge conflicts,
+    push/RPC failures, undo/recover changes) and troubleshooting CodeQL, dependency,
+    and secret scanning in Azure DevOps/GitHub.
   decision-making: 'Guidance on choosing and migrating version control in Azure Repos:
     Git vs TFVC, SVN/TFVC-to-Git migration strategies, mixed Git+TFVC use, and local
     vs server TFVC workspaces.'
@@ -27,14 +27,15 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Repos development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, and integrations & coding patterns. Use when managing Azure
-  Repos/TFVC auth & policies, PR/branch rules, CodeQL/secret scans, or Git vs TFVC
+  Repos/TFVC auth & permissions, branch/PR policies, CodeQL/scanning, or Git vs TFVC
   migration, and other Azure Repos related development tasks. Not for Azure DevOps
-  (use azure-devops), Azure Artifacts (use azure-artifacts), Azure Pipelines (use
-  azure-pipelines), Azure Boards (use azure-boards).
-use_when: Use when managing Azure Repos/TFVC auth & policies, PR/branch rules, CodeQL/secret
-  scans, or Git vs TFVC migration, and other Azure Repos related development tasks.
-confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Artifacts (use
-  azure-artifacts), Azure Pipelines (use azure-pipelines), Azure Boards (use azure-boards).
+  (use azure-devops), Azure Pipelines (use azure-pipelines), Azure Boards (use azure-boards),
+  Azure Artifacts (use azure-artifacts).
+use_when: Use when managing Azure Repos/TFVC auth & permissions, branch/PR policies,
+  CodeQL/scanning, or Git vs TFVC migration, and other Azure Repos related development
+  tasks.
+confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (use
+  azure-pipelines), Azure Boards (use azure-boards), Azure Artifacts (use azure-artifacts).
 ---
 # Azure Repos Crawl Report
 
@@ -48,8 +49,8 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Artifacts (us
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 206
+- **Updated Pages**: 1
+- **Unchanged**: 205
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-repos/azure-repos.csv`
 
@@ -68,6 +69,11 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Artifacts (us
 | *(Unclassified)* | 74 | 35.9% |
 
 ## Changes
+
+### Updated Pages
+
+- [Frequently asked questions](https://learn.microsoft.com/en-us/azure/devops/repos/git/howto?view=azure-devops)
+  - Updated: 2026-04-22T21:02:00Z → 2026-04-22T21:02:00.000Z
 
 ## Classified Pages
 
@@ -110,6 +116,7 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Artifacts (us
 | [Extend pull request workflows with pull request status](https://learn.microsoft.com/en-us/azure/devops/repos/git/pull-request-status?view=azure-devops) | integrations | 0.70 | Describes PR workflow extensibility using status and policy; involves PR Status API and external integrations with specific parameters and behaviors. |
 | [Folder comparison filters](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/folder-comparison-filters?view=azure-devops) | configuration | 0.70 | Describes ordered list of comparison filters, default name filters, and use via UI and tf folderdiff; this is product-specific configuration behavior not generally known. |
 | [Folderdiff](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/folderdiff-command?view=azure-devops) | integrations | 0.70 | Command reference with product-specific syntax, options, and behaviors for tf folderdiff that an LLM won't reliably know from training. |
+| [Frequently asked questions](https://learn.microsoft.com/en-us/azure/devops/repos/git/howto?view=azure-devops) | troubleshooting | 0.70 | The FAQ includes Azure Repos–specific Git problems (clone/push failures, proxy and SSL issues, authentication problems) with concrete error messages and product-specific resolutions, which fits the symptom → cause → solution troubleshooting pattern rather than generic Git guidance. |
 | [Get](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/get-command?view=azure-devops) | integrations | 0.70 | Detailed CLI reference for tf get with parameters and behaviors specific to Azure DevOps TFVC. |
 | [Git commands](https://learn.microsoft.com/en-us/azure/devops/repos/git/command-prompt?view=azure-devops) | configuration | 0.70 | Command reference for common Git tasks in Visual Studio, including Azure DevOps-specific behaviors and options—effectively a configuration/command reference. |
 | [Git index.lock file](https://learn.microsoft.com/en-us/azure/devops/repos/git/git-index-lock?view=azure-devops) | troubleshooting | 0.70 | index.lock problems are a specific failure mode; article likely maps the lock-file symptom to causes and safe resolution steps in this environment. |
@@ -171,7 +178,6 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Artifacts (us
 | [Destroy](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/destroy-command-team-foundation-version-control?view=azure-devops) | integrations | 0.65 | tf destroy command semantics and constraints; detailed CLI behavior unique to TFVC. |
 | [Destroy version controlled files](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/destroy-version-controlled-files?view=azure-devops) | security | 0.65 | Covers permanent destruction of files, disk-space management, and possibly sensitive/virus-infected content; involves security/administrative controls specific to TFVC. |
 | [Difference](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/difference-command?view=azure-devops) | integrations | 0.65 | tf difference command options and usage; product-specific CLI parameters for diff operations. |
-| [Frequently asked questions](https://learn.microsoft.com/en-us/azure/devops/repos/git/howto?view=azure-devops) | troubleshooting | 0.65 | FAQ page explicitly covers troubleshooting clone, push, proxy, SSL, and authentication issues for Git in Azure Repos. Such FAQs typically map specific symptoms and error messages to causes and resolutions, which is product-specific troubleshooting knowledge beyond generic Git concepts. |
 | [Help](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/help-command-team-foundation-version-control?view=azure-devops) | integrations | 0.65 | Documents tf help command usage and syntax, which is product-specific command behavior. |
 | [Ignore files](https://learn.microsoft.com/en-us/azure/devops/repos/git/ignore-files?view=azure-devops) | best-practices | 0.65 | Provides concrete guidance on excluding files using .gitignore and related mechanisms; product-specific recommendations and patterns for managing tracked vs untracked files. |
 | [Import repo](https://learn.microsoft.com/en-us/azure/devops/repos/git/import-git-repository?view=azure-devops) | security | 0.65 | Shows how to import repos using specific authentication methods (Entra tokens, PATs, etc.); product-specific security configuration guidance. |

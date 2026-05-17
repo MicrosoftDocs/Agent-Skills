@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-10'
+generated_at: '2026-05-17'
 category_descriptions:
   architecture-patterns: Advanced investigation workflows in Microsoft Discovery,
     including complex search strategies, correlation techniques, and patterns for
@@ -10,9 +10,9 @@ category_descriptions:
   security: 'Security configuration for Discovery: encryption at rest, customer-managed
     keys, managed identities, RBAC, network/private access, and enabling/exporting
     audit logs.'
-  configuration: Configuring Discovery workspaces, supercomputers, storage, tools,
-    agents, and log queries (Kusto/Log Analytics) for data handling, indexing, orchestration,
-    and investigation lifecycle.
+  configuration: Configuring Discovery workspaces, storage, supercomputers, agents,
+    tools, and logging/monitoring (Log Analytics, Kusto) for investigations, indexing,
+    and data handling.
   best-practices: Best practices for structuring Discovery projects, running investigations
     with Discovery Engine, planning tool/compute usage, and applying responsible AI
     and governance in Microsoft Discovery
@@ -30,12 +30,12 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Microsoft Discovery development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when configuring Discovery workspaces, supercomputers, tools/agents, Kusto queries,
-  or REST-based job submissions, and other Azure Microsoft Discovery related development
+  Use when configuring Discovery workspaces, supercomputers, tools, REST job submissions,
+  or secure ACR deployments, and other Azure Microsoft Discovery related development
   tasks.
-use_when: Use when configuring Discovery workspaces, supercomputers, tools/agents,
-  Kusto queries, or REST-based job submissions, and other Azure Microsoft Discovery
-  related development tasks.
+use_when: Use when configuring Discovery workspaces, supercomputers, tools, REST job
+  submissions, or secure ACR deployments, and other Azure Microsoft Discovery related
+  development tasks.
 confusable_not_for: Not for Azure Resource Graph (use azure-resource-graph), Azure
   Portal (use azure-portal), Azure Monitor (use azure-monitor), Azure Policy (use
   azure-policy).
@@ -44,15 +44,15 @@ confusable_not_for: Not for Azure Resource Graph (use azure-resource-graph), Azu
 
 ## Summary
 
-- **Total Pages**: 68
-- **Fetched**: 68
+- **Total Pages**: 69
+- **Fetched**: 69
 - **Fetch Failed**: 0
 - **Classified**: 49
-- **Unclassified**: 19
+- **Unclassified**: 20
 
 ### Incremental Update
 - **New Pages**: 1
-- **Updated Pages**: 1
+- **Updated Pages**: 2
 - **Unchanged**: 66
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-microsoft-discovery/azure-microsoft-discovery.csv`
@@ -61,27 +61,29 @@ confusable_not_for: Not for Azure Resource Graph (use azure-resource-graph), Azu
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 1 | 1.5% |
-| best-practices | 4 | 5.9% |
-| configuration | 18 | 26.5% |
-| decision-making | 7 | 10.3% |
-| deployment | 4 | 5.9% |
-| integrations | 4 | 5.9% |
+| architecture-patterns | 1 | 1.4% |
+| best-practices | 4 | 5.8% |
+| configuration | 18 | 26.1% |
+| decision-making | 7 | 10.1% |
+| deployment | 4 | 5.8% |
+| integrations | 4 | 5.8% |
 | limits-quotas | 2 | 2.9% |
-| security | 8 | 11.8% |
-| troubleshooting | 1 | 1.5% |
-| *(Unclassified)* | 19 | 27.9% |
+| security | 8 | 11.6% |
+| troubleshooting | 1 | 1.4% |
+| *(Unclassified)* | 20 | 29.0% |
 
 ## Changes
 
 ### New Pages
 
-- [Deploy a tool to Microsoft Discovery](https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-deploy-tool-to-discovery)
+- [Transparency note](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-platform-card)
 
 ### Updated Pages
 
-- [Quickstart - Deploy infrastructure using Bicep](https://learn.microsoft.com/en-us/azure/microsoft-discovery/quickstart-infrastructure-bicep)
-  - Updated: 2026-04-27T17:22:00.000Z → 2026-05-03T22:14:00.000Z
+- [Data handling with tools and agents](https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-data-handling-with-tools-agents)
+  - Updated: 2026-04-20T15:52:00.000Z → 2026-05-14T17:14:00.000Z
+- [Quickstart - Deploy infrastructure using Azure portal](https://learn.microsoft.com/en-us/azure/microsoft-discovery/quickstart-infrastructure-portal)
+  - Updated: 2026-04-20T15:52:00.000Z → 2026-05-15T22:17:00.000Z
 
 ## Classified Pages
 
@@ -104,7 +106,6 @@ confusable_not_for: Not for Azure Resource Graph (use azure-resource-graph), Azu
 | [Query Bookshelf query logs](https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-query-bookshelf-logs) | configuration | 0.80 | Describes how bookshelf query logs are stored in DiscoveryLogs_CL within the bookshelf’s MRG and how to query them. This is product-specific log schema and placement information. |
 | [Write action scripts for a tool](https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-write-tool-action-scripts) | integrations | 0.80 | Describes entrypoint structure, input formats, batch processing, and output conventions for Discovery action-based and hybrid tools. These are concrete API/contract details and coding patterns unique to Discovery’s tool invocation model. |
 | [Advanced investigation patterns](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-advanced-investigation-patterns) | architecture-patterns | 0.75 | Describes distinct patterns (deterministic, guided, autonomous) and when to use each; product-specific architecture/pattern guidance for investigations. |
-| [Data handling with tools and agents](https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-data-handling-with-tools-agents) | configuration | 0.75 | Describes Discovery’s resource-based data model, resource URIs, built-in resource management tools, and input/output mounts for tools with an API-version qualifier. These are product-specific configuration concepts and parameters that an LLM wouldn’t reliably know without the doc. |
 | [End-to-end network-hardened deployment](https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-deploy-network-hardened-stack) | deployment | 0.75 | End-to-end guidance for deploying workspace, bookshelf, supercomputer, and storage with all traffic confined to private endpoints. This is a product-specific deployment pattern with concrete networking and resource constraints. |
 | [Manage Supercomputer using REST APIs](https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-manage-supercomputers-rest-api) | deployment | 0.75 | End-to-end REST-based setup of supercomputer infrastructure and node pools; includes product-specific deployment requirements and API parameters. |
 | [Run and manage jobs on Supercomputer using REST APIs](https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-run-jobs-supercomputer-rest-api) | integrations | 0.75 | Describes data-plane REST APIs, parameters, status polling, logs retrieval, and cancellation; product-specific API integration patterns. |
@@ -127,6 +128,7 @@ confusable_not_for: Not for Azure Resource Graph (use azure-resource-graph), Azu
 | [Storage containers and storage assets](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-storage-containers-assets) | configuration | 0.70 | Explains how storage containers map to Blob Storage or NetApp and how assets reference paths; product-specific data organization configuration. |
 | [Tools and model integration](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-tools-model-integration) | integrations | 0.70 | Covers tool types, deployment, and integration patterns for models; likely includes product-specific integration patterns and parameters. |
 | [v1 to v2 transition guidance](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-v1-to-v2-transition-guide) | decision-making | 0.70 | Transition guide describing which resources can be retained, which must be recreated, and what is deprecated; this is product-specific migration and decision guidance. |
+| [Data handling with tools and agents](https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-data-handling-with-tools-agents) | configuration | 0.68 | The article describes how to configure Microsoft Discovery agents to manage storage assets and resource URIs, including how tools handle inputs/outputs and resource management behavior. These are product-specific configuration behaviors and parameters for agents and tools, which qualify as expert configuration knowledge rather than generic concepts, even though the exact parameter tables are not visible in the summary. |
 | [Azure Container Registry](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-azure-container-registry) | decision-making | 0.65 | Discusses ACR SKU and networking options for Discovery and how to configure them; provides product-specific selection and configuration guidance. |
 | [Create a Dockerfile for a tool](https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-create-tool-docker-file) | integrations | 0.65 | Although Docker is generic, this article tailors Dockerfile structure and project layout to Discovery’s tool runtime and compute pools. It likely includes Discovery-specific entrypoints or environment expectations, making it an integration/coding pattern. |
 | [Deploy a tool to Microsoft Discovery](https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-deploy-tool-to-discovery) | deployment | 0.65 | The article describes how to deploy a tool as a Microsoft.Discovery/tools Azure resource, including converting YAML to JSON and using the Azure portal or REST API. This is product-specific deployment guidance for a particular resource type rather than a generic tutorial, so it fits the deployment sub-skill. It does not emphasize limits, security, or troubleshooting details. |
@@ -150,12 +152,13 @@ confusable_not_for: Not for Azure Resource Graph (use azure-resource-graph), Azu
 | [Bookshelf & Knowledge Bases](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-bookshelf-knowledge-bases) | 0.30 | Conceptual overview of Bookshelf and Knowledge Bases; no indication of detailed configuration or limits. |
 | [Observability overview](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-observability) | 0.30 | High-level observability overview; from the summary it doesn’t appear to include detailed table schemas, constraints, or configuration matrices beyond conceptual description. |
 | [Quickstart - Add agents using bundles](https://learn.microsoft.com/en-us/azure/microsoft-discovery/quickstart-agents-bundles) | 0.30 | Quickstart using agent bundles; likely a guided flow rather than detailed configuration reference. |
-| [Quickstart - Deploy infrastructure using Azure portal](https://learn.microsoft.com/en-us/azure/microsoft-discovery/quickstart-infrastructure-portal) | 0.30 | Quickstart for initial setup; step-by-step tutorial without detailed config matrices or limits. |
+| [Quickstart - Deploy infrastructure using Azure portal](https://learn.microsoft.com/en-us/azure/microsoft-discovery/quickstart-infrastructure-portal) | 0.30 | Quickstart for setting up Microsoft Discovery infrastructure; likely a step-by-step getting-started guide without detailed limits, configuration tables, or troubleshooting matrices. No clear indication of expert-only numeric limits, config parameter tables, or error mappings from the summary. |
 | [Quickstart - First set of Agent and investigation](https://learn.microsoft.com/en-us/azure/microsoft-discovery/quickstart-agents-studio) | 0.30 | Quickstart for agents and investigations; primarily procedural without deep config or limits. |
 | [Tutorial: Discovery Mode](https://learn.microsoft.com/en-us/azure/microsoft-discovery/tutorial-discovery-mode) | 0.30 | Tutorial for running a first investigation; primarily procedural and time-to-complete info, without clear evidence of configuration matrices, limits, or error-code mappings that would qualify as expert knowledge. |
 | [Microsoft Discovery Studio](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-studio) | 0.20 | Conceptual overview of Discovery Studio UI; no indication of detailed configuration tables or limits. |
 | [Quickstart - Deploy infrastructure using Bicep](https://learn.microsoft.com/en-us/azure/microsoft-discovery/quickstart-infrastructure-bicep) | 0.20 | Quickstart for deploying Microsoft Discovery infrastructure with Bicep; appears to be a step-by-step deployment/tutorial without tier matrices, limits, or detailed configuration parameter tables beyond generic IaC usage. |
 | [Service architecture overview](https://learn.microsoft.com/en-us/azure/microsoft-discovery/overview-service-architecture) | 0.20 | Service architecture overview; likely conceptual ARM object descriptions without detailed config matrices or limits. |
+| [Transparency note](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-platform-card) | 0.20 | Platform card describing intended uses, capabilities, limitations, and responsible-use best practices; this is conceptual/safety/marketing-style content rather than product-specific numeric limits, configuration parameters, or troubleshooting details. |
 | [Virtual Networks and Subnets](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-virtual-networks) | 0.20 | Explicitly described as high-level conceptual overview of VNets usage; not focused on concrete configuration parameters. |
 | [Write effective prompts for agents](https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-prompt-engineering) | 0.20 | Prompt engineering guidance is largely conceptual and transferable; unlikely to contain Discovery-specific configuration values, limits, or error mappings that qualify as expert product knowledge under the defined categories. |
 | [Key scenarios](https://learn.microsoft.com/en-us/azure/microsoft-discovery/overview-key-scenarios) | 0.10 | Key scenarios and use cases; primarily conceptual and marketing-style guidance. |

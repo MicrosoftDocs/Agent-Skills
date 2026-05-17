@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 166
+- **Updated Pages**: 0
+- **Unchanged**: 167
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-stream-analytics/azure-stream-analytics.csv`
 
@@ -76,11 +76,6 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | *(Unclassified)* | 56 | 33.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [Write data to Delta Lake](https://learn.microsoft.com/en-us/azure/stream-analytics/write-to-delta-lake)
-  - Updated: 2024-06-07T05:36:00.000Z → 2026-05-07T17:21:00.000Z
 
 ## Classified Pages
 

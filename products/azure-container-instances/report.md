@@ -1,8 +1,9 @@
 ---
-generated_at: '2026-04-12'
+generated_at: '2026-05-17'
 category_descriptions:
-  limits-quotas: ACI limits on CPU/memory, regional quotas, standby pool constraints,
-    and how virtual network integration affects capacity and resource availability.
+  limits-quotas: ACI limits on CPU/memory, quotas per region, standby pool constraints,
+    behavior FAQs, and networking/VNet considerations that affect container capacity
+    and availability
   architecture-patterns: Design patterns for giving ACI containers static inbound/outbound
     IPs using Application Gateway, firewalls, and NAT Gateway for controlled, predictable
     network egress/ingress.
@@ -27,16 +28,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Container Instances development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, and deployment. Use when configuring ACI
-  networking, standby pools, GitHub Actions deploys, Spot containers, or GPU workloads,
-  and other Azure Container Instances related development tasks. Not for Azure Container
-  Apps (use azure-container-apps), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
-  Azure Virtual Machines (use azure-virtual-machines), Azure App Service (use azure-app-service).
-use_when: Use when configuring ACI networking, standby pools, GitHub Actions deploys,
-  Spot containers, or GPU workloads, and other Azure Container Instances related development
-  tasks.
+  container groups, VNet/IP routing, standby pools, Spot containers, or GitHub Actions
+  deploys, and other Azure Container Instances related development tasks. Not for
+  Azure Container Apps (use azure-container-apps), Azure Kubernetes Service (AKS)
+  (use azure-kubernetes-service), Azure Virtual Machines (use azure-virtual-machines),
+  Azure Batch (use azure-batch).
+use_when: Use when configuring ACI container groups, VNet/IP routing, standby pools,
+  Spot containers, or GitHub Actions deploys, and other Azure Container Instances
+  related development tasks.
 confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azure
   Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Virtual Machines
-  (use azure-virtual-machines), Azure App Service (use azure-app-service).
+  (use azure-virtual-machines), Azure Batch (use azure-batch).
 ---
 # Azure Container Instances Crawl Report
 
@@ -45,13 +47,13 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 - **Total Pages**: 83
 - **Fetched**: 83
 - **Fetch Failed**: 0
-- **Classified**: 54
-- **Unclassified**: 29
+- **Classified**: 55
+- **Unclassified**: 28
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 83
+- **Updated Pages**: 1
+- **Unchanged**: 82
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-container-instances/azure-container-instances.csv`
 
@@ -64,12 +66,17 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | configuration | 29 | 34.9% |
 | decision-making | 2 | 2.4% |
 | deployment | 1 | 1.2% |
-| limits-quotas | 4 | 4.8% |
+| limits-quotas | 5 | 6.0% |
 | security | 11 | 13.3% |
 | troubleshooting | 3 | 3.6% |
-| *(Unclassified)* | 29 | 34.9% |
+| *(Unclassified)* | 28 | 33.7% |
 
 ## Changes
+
+### Updated Pages
+
+- [FAQ](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-faq)
+  - Updated: 2025-11-17T23:03:00Z → 2025-11-17T23:03:00.000Z
 
 ## Classified Pages
 
@@ -97,6 +104,7 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | [Enable SSL endpoint in sidecar](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-container-group-ssl) | security | 0.70 | Gives a concrete sidecar TLS pattern, including container group configuration, ports, and Nginx setup to terminate SSL for ACI workloads. |
 | [Enable automatic HTTPS with Caddy as reverse proxy](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-container-group-automatic-ssl) | security | 0.70 | Details a product-specific sidecar pattern with Caddy, ACME/Let’s Encrypt integration, and container group configuration for automatic HTTPS. |
 | [Encrypt deployment data](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-encrypt-data) | security | 0.70 | Explains ACI data encryption behavior and how to configure customer-managed keys; includes security configuration specific to ACI. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-faq) | limits-quotas | 0.70 | FAQ pages for Azure services typically include concrete, service-specific details such as maximum container group sizes, supported OS images, port and IP constraints, restart behavior, and other numeric or tightly scoped behavioral limits that are not purely conceptual. These details qualify as expert knowledge and align most closely with the limits-quotas category among the available options. |
 | [Frequently asked questions](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-standby-pool-faq) | limits-quotas | 0.70 | FAQ includes specific numeric constraints (for example, standby pool name length between 3 and 24 characters) and other product-specific limits. |
 | [Get container logs and events](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-get-logs) | troubleshooting | 0.70 | Provides ACI-specific commands (az container logs, az container attach) and portal locations to access logs/events for diagnosing container issues. |
 | [Logging with Azure Monitor logs](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-log-analytics) | configuration | 0.70 | Includes configuration parameters (workspace ID/key, diagnostic settings) and options for routing ACI logs/events to Azure Monitor Logs. |
@@ -161,5 +169,4 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | [About Azure Container Instances](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-overview) | 0.20 | High-level overview of Azure Container Instances; conceptual description of capabilities without numeric limits, config tables, or detailed patterns. |
 | [Deploy a container group - Resource Manager](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-multi-container-group) | 0.20 | Tutorial for deploying a multi-container group using an ARM template. Focuses on example template and CLI usage, not on exhaustive configuration options, limits, decision matrices, or troubleshooting mappings. Lacks the structured, product-specific expert details required for any sub-skill type. |
 | [Deploy a container group - YAML](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-multi-container-yaml) | 0.20 | Tutorial-style walkthrough for deploying a multi-container group via YAML. It primarily shows step-by-step commands and an example YAML, without configuration parameter tables, limits, quotas, or product-specific best-practice guidance with quantified impact. Does not meet thresholds for configuration, integrations, or other expert-knowledge categories. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-faq) | 0.20 | General FAQ page; while it may contain some service details, it is not organized as limits tables, configuration references, troubleshooting mappings, or other structured expert content per the defined categories. |
 | [Support and troubleshooting](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-support-help) | 0.10 | Support and help options page focused on where to get assistance, not on technical limits, configuration, troubleshooting, or other expert operational details. |

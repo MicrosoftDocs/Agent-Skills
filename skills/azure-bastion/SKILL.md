@@ -3,7 +3,7 @@ name: azure-bastion
 description: Expert knowledge for Azure Bastion development including best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when configuring Bastion for AKS private clusters, VM scale sets, Entra ID auth, hub/spoke VNets, or native SSH/RDP clients, and other Azure Bastion related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual Machines (use azure-virtual-machines), Azure VPN Gateway (use azure-vpn-gateway), Azure Firewall (use azure-firewall).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-12"
+  generated_at: "2026-05-17"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Bastion Skill

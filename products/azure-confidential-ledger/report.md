@@ -1,59 +1,84 @@
 ---
-generated_at: '2026-04-05'
+generated_at: '2026-05-17'
 category_descriptions:
-  security: 'Auth, attestation, RBAC, and security for Confidential Ledger: Entra
-    ID setup, client certs, user/role management, node quote verification, and best‑practice
-    hardening.'
+  security: 'Configuring secure access to Confidential Ledger: Entra ID auth, client
+    certs, RBAC/roles, access controls, node attestation/quote verification, and secure
+    app registration.'
   integrations: Patterns and code for integrating ACL with other services (Blob digests,
     Power Automate), querying/organizing data, using the .NET SDK, writing JavaScript
     UDFs, and verifying transaction receipts.
-  decision-making: Guidance on migrating from Managed CCF to Azure Confidential Ledger,
-    including compatibility, feature mapping, and steps to move existing apps and
-    data.
+  decision-making: Choosing between ACL Explorer tools for viewing/querying ledgers,
+    and guidance on migrating applications and data from Managed CCF to Azure Confidential
+    Ledger
   deployment: How to deploy and provision Azure Confidential Ledger instances using
     ARM templates or Terraform, including required parameters and configuration steps.
 skill_description: Expert knowledge for Azure Confidential Ledger development including
   decision making, security, integrations & coding patterns, and deployment. Use when
-  configuring Entra ID/RBAC, client certs, node attestation, .NET SDK, JavaScript
-  UDFs, or ARM/Terraform deployments, and other Azure Confidential Ledger related
-  development tasks. Not for Azure Confidential Computing (use azure-confidential-computing),
-  Azure Key Vault (use azure-key-vault), Azure Dedicated HSM (use azure-dedicated-hsm),
-  Azure Cloud Hsm (use azure-cloud-hsm).
-use_when: Use when configuring Entra ID/RBAC, client certs, node attestation, .NET
-  SDK, JavaScript UDFs, or ARM/Terraform deployments, and other Azure Confidential
-  Ledger related development tasks.
+  configuring Entra ID/cert auth, RBAC, node attestation, .NET SDK, UDFs, receipts,
+  or ARM/Terraform deploys, and other Azure Confidential Ledger related development
+  tasks. Not for Azure Confidential Computing (use azure-confidential-computing),
+  Azure Virtual Enclaves (use azure-virtual-enclaves), Azure Key Vault (use azure-key-vault),
+  Azure Attestation (use azure-attestation).
+use_when: Use when configuring Entra ID/cert auth, RBAC, node attestation, .NET SDK,
+  UDFs, receipts, or ARM/Terraform deploys, and other Azure Confidential Ledger related
+  development tasks.
 confusable_not_for: Not for Azure Confidential Computing (use azure-confidential-computing),
-  Azure Key Vault (use azure-key-vault), Azure Dedicated HSM (use azure-dedicated-hsm),
-  Azure Cloud Hsm (use azure-cloud-hsm).
+  Azure Virtual Enclaves (use azure-virtual-enclaves), Azure Key Vault (use azure-key-vault),
+  Azure Attestation (use azure-attestation).
 ---
 # Azure Confidential Ledger Crawl Report
 
 ## Summary
 
-- **Total Pages**: 30
-- **Fetched**: 30
+- **Total Pages**: 32
+- **Fetched**: 32
 - **Fetch Failed**: 0
-- **Classified**: 19
-- **Unclassified**: 11
+- **Classified**: 18
+- **Unclassified**: 14
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 30
-- **Deleted Pages**: 0
+- **New Pages**: 3
+- **Updated Pages**: 6
+- **Unchanged**: 23
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-confidential-ledger/azure-confidential-ledger.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| decision-making | 1 | 3.3% |
-| deployment | 2 | 6.7% |
-| integrations | 7 | 23.3% |
-| security | 9 | 30.0% |
-| *(Unclassified)* | 11 | 36.7% |
+| decision-making | 2 | 6.2% |
+| deployment | 2 | 6.2% |
+| integrations | 5 | 15.6% |
+| security | 9 | 28.1% |
+| *(Unclassified)* | 14 | 43.8% |
 
 ## Changes
+
+### New Pages
+
+- [Ledger Explorer concepts](https://learn.microsoft.com/en-us/azure/confidential-ledger/ledger-explorer-concepts)
+- [Use the Azure portal ledger explorer](https://learn.microsoft.com/en-us/azure/confidential-ledger/ledger-explorer)
+- [Inspect ledger data with Ledger Explorer (Offline)](https://learn.microsoft.com/en-us/azure/confidential-ledger/ledger-explorer-offline)
+
+### Updated Pages
+
+- [About Azure confidential ledger](https://learn.microsoft.com/en-us/azure/confidential-ledger/overview)
+  - Updated: 2026-03-25T06:03:00.000Z → 2026-04-23T08:00:00.000Z
+- [.NET](https://learn.microsoft.com/en-us/azure/confidential-ledger/quickstart-net)
+  - Updated: 2025-04-14T08:00:00.000Z → 2026-05-12T12:44:00.000Z
+- [Write transaction receipts](https://learn.microsoft.com/en-us/azure/confidential-ledger/write-transaction-receipts)
+  - Updated: 2024-08-07T16:44:00.000Z → 2026-04-23T08:00:00.000Z
+- [Verify write transaction receipts](https://learn.microsoft.com/en-us/azure/confidential-ledger/verify-write-transaction-receipts)
+  - Updated: 2024-08-07T16:44:00.000Z → 2026-04-23T08:00:00.000Z
+- [Secure your Confidential Ledger](https://learn.microsoft.com/en-us/azure/confidential-ledger/secure-confidential-ledger)
+  - Updated: 2026-04-01T22:14:00.000Z → 2026-04-23T08:00:00.000Z
+- [FAQ](https://learn.microsoft.com/en-us/azure/confidential-ledger/faq)
+  - Updated: 2025-11-17T23:03:00Z → 2026-05-12T12:44:00.000Z
+
+### Deleted Pages
+
+- ~~Upload, view and list ledger data with the Azure ledger explorer~~ (https://learn.microsoft.com/en-us/azure/confidential-ledger/quickstart-ledger-explorer)
 
 ## Classified Pages
 
@@ -67,15 +92,14 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 | [Create a client certificate](https://learn.microsoft.com/en-us/azure/confidential-ledger/create-client-certificate) | security | 0.75 | Details PEM certificate requirements, allowlisting behavior, and authentication constraints specific to confidential ledger APIs. |
 | [Create a managed application to store blob digests](https://learn.microsoft.com/en-us/azure/confidential-ledger/create-blob-managed-app) | integrations | 0.75 | Describes a managed application that tracks blobs and stores digests in the ledger, including product-specific configuration and integration behavior. |
 | [Data Ingress and Egress from Azure confidential ledger using Power Automate Connector](https://learn.microsoft.com/en-us/azure/confidential-ledger/create-power-automate-workflow) | integrations | 0.75 | Shows how to configure a Power Automate connector and workflow with confidential ledger and Cosmos DB, including connector actions and parameters. |
-| [Secure your Confidential Ledger](https://learn.microsoft.com/en-us/azure/confidential-ledger/secure-confidential-ledger) | security | 0.75 | Provides guidance on securing an Azure Confidential Ledger deployment, including authentication, data integrity, and access control recommendations. These are product-specific security best practices and configuration patterns rather than generic security concepts. |
 | [Advanced UDFs](https://learn.microsoft.com/en-us/azure/confidential-ledger/user-defined-endpoints) | security | 0.70 | Advanced UDFs include custom RBAC and TEE execution details, which are product-specific security and authorization configurations. |
 | [Migration from Managed CCF to Azure confidential ledger](https://learn.microsoft.com/en-us/azure/confidential-ledger/managed-confidential-consortium-framework-migration) | decision-making | 0.70 | Deprecation and migration guidance inherently compares Managed CCF and confidential ledger and provides recommendations for migration paths and scenarios. |
 | [Register an ACL app with Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/confidential-ledger/register-application) | security | 0.70 | Application registration for this service will include specific redirect URIs, scopes, and platform settings tied to confidential ledger’s security model. |
+| [Secure your Confidential Ledger](https://learn.microsoft.com/en-us/azure/confidential-ledger/secure-confidential-ledger) | security | 0.70 | Explicitly described as providing security guidance and best practices for authentication, data integrity, and access controls for Azure Confidential Ledger; likely includes product-specific security settings and RBAC guidance. |
 | [Simple UDFs](https://learn.microsoft.com/en-us/azure/confidential-ledger/user-defined-functions) | integrations | 0.70 | Covers built-in JavaScript API and execution model for simple UDFs, which are product-specific coding and integration patterns. |
 | [UDF overview](https://learn.microsoft.com/en-us/azure/confidential-ledger/server-side-programming) | integrations | 0.70 | Describes server-side programming model and how UDFs interact with ledger data, likely including specific APIs and execution patterns unique to this product. |
-| [.NET](https://learn.microsoft.com/en-us/azure/confidential-ledger/quickstart-net) | integrations | 0.65 | Shows how to call the confidential ledger via .NET client library with specific classes and methods, which are product-specific integration patterns. |
 | [Data organization](https://learn.microsoft.com/en-us/azure/confidential-ledger/data-organization) | integrations | 0.65 | Describes product-specific data organization concepts (transaction IDs, collection/subledger IDs) and shows concrete usage patterns for creating, retrieving, and managing ledger entries. These are service-specific coding and data-access patterns that go beyond generic concepts, fitting integrations & coding patterns best. |
-| [Verify write transaction receipts](https://learn.microsoft.com/en-us/azure/confidential-ledger/verify-write-transaction-receipts) | integrations | 0.65 | Focuses on how to obtain and verify Merkle proof receipts via APIs, which are product-specific verification and integration patterns. |
+| [Ledger Explorer concepts](https://learn.microsoft.com/en-us/azure/confidential-ledger/ledger-explorer-concepts) | decision-making | 0.65 | Explains when to use Azure portal Ledger Explorer vs Ledger Explorer (Offline) under different trust models and data exposure scenarios; provides product-specific guidance on tool selection, which fits decision-making. |
 | [ARM template](https://learn.microsoft.com/en-us/azure/confidential-ledger/quickstart-template) | deployment | 0.60 | ARM template quickstart will define resource types, properties, and constraints specific to confidential ledger deployments, which are product-specific deployment configuration details. |
 | [Terraform](https://learn.microsoft.com/en-us/azure/confidential-ledger/quickstart-terraform) | deployment | 0.60 | Terraform quickstart includes resource blocks and arguments specific to confidential ledger, representing deployment configuration patterns for this service. |
 
@@ -84,13 +108,16 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
 | [Data residency](https://learn.microsoft.com/en-us/azure/confidential-ledger/data-residency) | 0.50 | Data residency posture is largely policy/behavioral; summary doesn’t indicate detailed configuration or numeric limits. |
-| [Upload, view and list ledger data with the Azure ledger explorer](https://learn.microsoft.com/en-us/azure/confidential-ledger/quickstart-ledger-explorer) | 0.45 | Portal-based ledger explorer quickstart; likely UI-driven without deep configuration or error/limit details. |
-| [Write transaction receipts](https://learn.microsoft.com/en-us/azure/confidential-ledger/write-transaction-receipts) | 0.45 | Explains Merkle tree receipts conceptually; summary doesn’t show concrete APIs, parameters, or verification commands. |
 | [Architecture](https://learn.microsoft.com/en-us/azure/confidential-ledger/architecture) | 0.40 | Architecture description is conceptual (REST API, blockchain replicas, consensus) without quantified thresholds or decision matrices. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/confidential-ledger/faq) | 0.40 | FAQ likely mixes conceptual and basic usage answers; summary doesn’t show structured troubleshooting or configuration tables. |
 | [Register the confidential ledger resource provider](https://learn.microsoft.com/en-us/azure/confidential-ledger/register-ledger-resource-provider) | 0.40 | Resource provider registration is usually a short how-to without detailed configuration tables or constraints in the summary. |
+| [Verify write transaction receipts](https://learn.microsoft.com/en-us/azure/confidential-ledger/verify-write-transaction-receipts) | 0.40 | Covers verification of write transaction receipts but summary suggests a conceptual/how-to focus without explicit error codes, config tables, or quantified trade-offs. |
+| [Write transaction receipts](https://learn.microsoft.com/en-us/azure/confidential-ledger/write-transaction-receipts) | 0.40 | Describes Merkle tree–based transaction receipts conceptually; summary does not indicate concrete configuration parameters, limits, or error mappings—likely conceptual/introductory cryptographic explanation. |
 | [CLI](https://learn.microsoft.com/en-us/azure/confidential-ledger/quickstart-cli) | 0.30 | CLI quickstart for creating and managing a ledger; no detailed configuration matrices or limits. |
+| [Inspect ledger data with Ledger Explorer (Offline)](https://learn.microsoft.com/en-us/azure/confidential-ledger/ledger-explorer-offline) | 0.30 | How-to for using Ledger Explorer (Offline) to inspect data; summary indicates procedural steps, not configuration parameter tables, limits, or error-resolution mappings. |
 | [Portal](https://learn.microsoft.com/en-us/azure/confidential-ledger/quickstart-portal) | 0.30 | Portal quickstart focused on basic creation steps; lacks detailed settings tables or product-specific constraints. |
 | [PowerShell](https://learn.microsoft.com/en-us/azure/confidential-ledger/quickstart-powershell) | 0.30 | PowerShell quickstart for basic CRUD on ledger; no expert-only configuration or limits. |
 | [Python](https://learn.microsoft.com/en-us/azure/confidential-ledger/quickstart-python) | 0.30 | Quickstart with basic SDK usage and example code; appears to be a getting-started tutorial rather than a reference for configuration parameters, limits, or product-specific troubleshooting. |
-| [About Azure confidential ledger](https://learn.microsoft.com/en-us/azure/confidential-ledger/overview) | 0.10 | High-level product overview describing what Azure Confidential Ledger is and its benefits; no concrete limits, configuration parameters, security roles, or decision matrices. |
+| [Use the Azure portal ledger explorer](https://learn.microsoft.com/en-us/azure/confidential-ledger/ledger-explorer) | 0.30 | How-to guide for using Azure portal Ledger Explorer to view and verify transactions; appears to be a UI walkthrough rather than detailed configuration, limits, or troubleshooting content. |
+| [.NET](https://learn.microsoft.com/en-us/azure/confidential-ledger/quickstart-net) | 0.20 | Quickstart showing basic .NET client usage; appears to be a step-by-step tutorial without detailed configuration tables, limits, or product-specific troubleshooting. |
+| [About Azure confidential ledger](https://learn.microsoft.com/en-us/azure/confidential-ledger/overview) | 0.20 | High-level product overview describing what Azure Confidential Ledger is and its benefits; no concrete limits, configs, error codes, or decision matrices. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/confidential-ledger/faq) | 0.20 | FAQ page; summary does not indicate presence of detailed limits tables, config parameters, or error-code-based troubleshooting—likely general Q&A and conceptual clarifications. |

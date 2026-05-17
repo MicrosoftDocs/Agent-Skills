@@ -1,9 +1,9 @@
 ---
 name: azure-artifact-signing
-description: Expert knowledge for Azure Artifact Signing development including best practices, decision making, security, configuration, and integrations & coding patterns. Use when managing signing cert lifecycle, RBAC roles, DGSSv2 migration, diagnostic logs, or CI/CD signing workflows, and other Azure Artifact Signing related development tasks. Not for Azure Key Vault (use azure-key-vault), Azure Artifacts (use azure-artifacts), Azure Information Protection (use azure-information-protection).
+description: Expert knowledge for Azure Artifact Signing development including best practices, decision making, security, configuration, and integrations & coding patterns. Use when managing signing cert lifecycle, RBAC roles, DGSSv2 migration, diagnostic logs, or CI/CD signing integrations, and other Azure Artifact Signing related development tasks.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-10"
+  generated_at: "2026-05-17"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Artifact Signing Skill
@@ -26,9 +26,9 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Best Practices | L33-L37 | Guidance on managing signing certificates end-to-end: rotation, renewal, expiration handling, key protection, and lifecycle policies for Azure Artifact Signing. |
 | Decision Making | L38-L43 | Pricing and SKU selection for Azure Artifact Signing and guidance to migrate from DGSSv2, including plan changes and transition steps. |
-| Security | L44-L51 | RBAC roles, identities, and validations for Artifact Signing, plus secure signing of Windows code integrity policies and access control configuration. |
+| Security | L44-L51 | RBAC roles, identities, and validations for secure Artifact Signing, plus how to sign Windows code integrity policies and assign access permissions. |
 | Configuration | L52-L56 | Configuring diagnostic settings for Artifact Signing, enabling and routing logs to destinations like Log Analytics, Storage, and Event Hubs for monitoring and analysis. |
-| Integrations & Coding Patterns | L57-L60 | How to integrate Azure Artifact Signing with supported tools and CI/CD systems, configure signing workflows, and apply recommended coding and automation patterns. |
+| Integrations & Coding Patterns | L57-L60 | Configuring Artifact Signing with supported tools and workflows (e.g., CI/CD systems, package managers), including setup steps and patterns for integrating signing into build and release pipelines. |
 
 ### Best Practices
 | Topic | URL |
@@ -47,7 +47,7 @@ This skill requires **network access** to fetch documentation content:
 | Understand Artifact Signing resources and RBAC roles | https://learn.microsoft.com/en-us/azure/artifact-signing/concept-resources-roles |
 | Manage Artifact Signing identity validations securely | https://learn.microsoft.com/en-us/azure/artifact-signing/how-to-renew-identity-validation |
 | Sign Windows code integrity policies with Artifact Signing | https://learn.microsoft.com/en-us/azure/artifact-signing/how-to-sign-ci-policy |
-| Assign Azure RBAC roles for Artifact Signing resources | https://learn.microsoft.com/en-us/azure/artifact-signing/tutorial-assign-roles |
+| Assign Azure RBAC roles for Artifact Signing access | https://learn.microsoft.com/en-us/azure/artifact-signing/tutorial-assign-roles |
 
 ### Configuration
 | Topic | URL |
@@ -57,4 +57,4 @@ This skill requires **network access** to fetch documentation content:
 ### Integrations & Coding Patterns
 | Topic | URL |
 |-------|-----|
-| Configure Artifact Signing integrations for supported tools | https://learn.microsoft.com/en-us/azure/artifact-signing/how-to-signing-integrations |
+| Configure supported signing integrations for Artifact Signing | https://learn.microsoft.com/en-us/azure/artifact-signing/how-to-signing-integrations |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-05-17'
 category_descriptions:
   best-practices: Technical requirements and best practices for configuring Azure
     Peering Service prefixes, including routing, prefix validation, and connectivity
@@ -29,8 +29,8 @@ confusable_not_for: Not for Azure Internet Peering (use azure-internet-peering),
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 10
+- **Updated Pages**: 1
+- **Unchanged**: 9
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-peering-service/azure-peering-service.csv`
 
@@ -42,6 +42,11 @@ confusable_not_for: Not for Azure Internet Peering (use azure-internet-peering),
 | *(Unclassified)* | 9 | 90.0% |
 
 ## Changes
+
+### Updated Pages
+
+- [FAQ](https://learn.microsoft.com/en-us/azure/peering-service/faq)
+  - Updated: 2026-02-25T23:33:00Z → 2026-02-25T23:33:00.000Z
 
 ## Classified Pages
 
@@ -58,7 +63,7 @@ confusable_not_for: Not for Azure Internet Peering (use azure-internet-peering),
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/peering-service/powershell) | 0.40 | PowerShell how-to for managing connections; likely focused on example commands rather than exhaustive parameter reference tables or product-specific limits. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/peering-service/azure-portal) | 0.40 | Portal how-to for creating/changing/deleting a connection; primarily step-by-step UI instructions without indication of comprehensive configuration parameter tables or expert-only constraints. |
 | [Azure Peering Service customer walkthrough](https://learn.microsoft.com/en-us/azure/peering-service/customer-walkthrough) | 0.30 | Customer walkthrough for activation and optimization appears to be a procedural guide; summary does not indicate explicit limits, configuration tables, or decision matrices beyond general steps. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/peering-service/faq) | 0.30 | FAQ likely addresses common questions but description does not indicate detailed error codes, limits tables, or configuration parameters; appears mostly conceptual/clarificatory. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/peering-service/faq) | 0.30 | FAQ content is largely conceptual and descriptive (what the Peering Service is, general behavior, and high-level guidance). It does not prominently list concrete numeric limits/quotas, configuration parameter tables, error-code-based troubleshooting flows, or decision matrices with quantified trade-offs. As such, it does not meet the thresholds for any expert-knowledge sub-skill type. |
 | [Locations and partners](https://learn.microsoft.com/en-us/azure/peering-service/location-partners) | 0.30 | Lists locations and partners; while specific, it is catalog/reference data rather than expert configuration, limits, or troubleshooting guidance. |
 | [Peering Service connection](https://learn.microsoft.com/en-us/azure/peering-service/connection) | 0.30 | Explains what a Peering Service connection is and its attributes conceptually; no indication of parameter tables, limits, or detailed configuration semantics. |
 | [About Peering Service](https://learn.microsoft.com/en-us/azure/peering-service/about) | 0.20 | High-level overview of Azure Peering Service concepts and benefits without detailed limits, configuration parameters, or decision matrices. |

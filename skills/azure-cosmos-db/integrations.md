@@ -36,7 +36,7 @@
 | Integrate Cosmos DB Java SDK metrics with Micrometer and Prometheus | https://learn.microsoft.com/en-us/azure/cosmos-db/client-metrics-java |
 | Retrieve RU charge for Cosmos DB SQL queries | https://learn.microsoft.com/en-us/azure/cosmos-db/find-request-unit-charge |
 | Index external documents into Cosmos DB for semantic search | https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/document-indexer |
-| Integrate Cosmos DB with AI orchestration frameworks | https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/integrations |
+| Use Azure Cosmos DB connectors with AI frameworks | https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/integrations |
 | Integrate AI agents with Cosmos DB via MCP Toolkit | https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/model-context-protocol-toolkit |
 | Build a RAG chatbot with Cosmos DB and Python | https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/rag-chatbot |
 | Use Semantic Reranker with Cosmos DB queries | https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/semantic-reranker |
@@ -63,7 +63,7 @@
 | Connect to Cosmos DB for NoSQL using JavaScript | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-javascript-get-started |
 | Query Azure Cosmos DB items with JavaScript SDK | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-javascript-query-items |
 | Index and query vector data in Azure Cosmos DB with JavaScript | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-javascript-vector-index-query |
-| Migrate data to Cosmos DB using Data Migration Tool | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-migrate-desktop-tool |
+| Use Azure Cosmos DB Data Migration Tool for imports | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-migrate-desktop-tool |
 | Create Azure Cosmos DB containers with Python SDK | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-python-create-container |
 | Create Azure Cosmos DB databases with Python SDK | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-python-create-database |
 | Connect to Azure Cosmos DB for NoSQL with Python | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-python-get-started |
@@ -82,7 +82,6 @@
 | Use latest restorable timestamp API for Cosmos DB containers | https://learn.microsoft.com/en-us/azure/cosmos-db/latest-restore-timestamp-continuous-backup |
 | Connect MongoDB applications to Cosmos DB using connection strings | https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/connect-account |
 | Use Cosmos DB MongoDB extension commands | https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/custom-commands |
-| Use aggregation pipeline with Cosmos DB for MongoDB | https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/tutorial-aggregation |
 | Delete data in Cosmos DB for MongoDB collections | https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/tutorial-delete |
 | Connect Angular/Node app to Cosmos DB using Mongoose | https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/tutorial-develop-nodejs-part-5 |
 | Insert data into Cosmos DB for MongoDB collections | https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/tutorial-insert |
@@ -119,7 +118,6 @@
 | Implement Cosmos DB vector search with Node.js | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-vector-store-nodejs |
 | Implement Cosmos DB vector search with Python | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-vector-store-python |
 | Read Azure Cosmos DB change feed with push and pull models | https://learn.microsoft.com/en-us/azure/cosmos-db/read-change-feed |
-| Query Cosmos DB resources with Azure Resource Graph | https://learn.microsoft.com/en-us/azure/cosmos-db/resource-graph-samples |
 | Scale Cosmos DB throughput on a schedule with Functions | https://learn.microsoft.com/en-us/azure/cosmos-db/scale-on-schedule |
 | Bulk Executor .NET SDK reference for Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/sdk-dotnet-bulk-executor-v2 |
 | .NET Change Feed Processor SDK reference for Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/sdk-dotnet-change-feed-v2 |

@@ -1,45 +1,45 @@
 ---
-generated_at: '2026-05-10'
+generated_at: '2026-05-17'
 category_descriptions:
   configuration: 'Configuring AVNM: IPAM pools, network groups (static/dynamic via
     Policy), cross-tenant connections, event logs, and managing UDRs/topologies and
     reachability analysis.'
   troubleshooting: Diagnosing and fixing common Azure Virtual Network Manager issues,
-    including deployment/configuration failures and verifying that AVNM-applied network
+    including deployment/configuration errors and verifying that AVNM-applied network
     configurations work as intended.
-  security: Configuring and applying Azure Virtual Network Manager security admin
-    rules to block or protect traffic (incl. high‑risk ports) using network groups,
-    portal, and PowerShell.
+  security: 'Configuring and enforcing AVNM security admin rules: creating/applying
+    via network groups, blocking/simulating inbound/outbound traffic, and protecting
+    high‑risk ports using portal and PowerShell.'
   limits-quotas: IPAM features, supported regions, and key Azure Virtual Network Manager
     limits (scale, resources, configurations) that affect design and deployment decisions.
   integrations: Using Azure Resource Graph to query, filter, and report on Azure Virtual
     Network Manager resources, configurations, and deployments at scale across subscriptions
 skill_description: Expert knowledge for Azure Virtual Network Manager development
   including troubleshooting, limits & quotas, security, configuration, and integrations
-  & coding patterns. Use when managing AVNM IPAM pools, network groups, cross-tenant
-  connectivity, security admin rules, or ARG queries, and other Azure Virtual Network
-  Manager related development tasks. Not for Azure Virtual Network (use azure-virtual-network),
+  & coding patterns. Use when managing AVNM IPAM pools, network groups, security admin
+  rules, cross‑tenant connectivity, or Resource Graph queries, and other Azure Virtual
+  Network Manager related development tasks. Not for Azure Virtual Network (use azure-virtual-network),
   Azure Virtual WAN (use azure-virtual-wan), Azure Network Watcher (use azure-network-watcher),
-  Azure Networking (use azure-networking).
-use_when: Use when managing AVNM IPAM pools, network groups, cross-tenant connectivity,
-  security admin rules, or ARG queries, and other Azure Virtual Network Manager related
-  development tasks.
+  Azure Firewall Manager (use azure-firewall-manager).
+use_when: Use when managing AVNM IPAM pools, network groups, security admin rules,
+  cross‑tenant connectivity, or Resource Graph queries, and other Azure Virtual Network
+  Manager related development tasks.
 confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), Azure
   Virtual WAN (use azure-virtual-wan), Azure Network Watcher (use azure-network-watcher),
-  Azure Networking (use azure-networking).
+  Azure Firewall Manager (use azure-firewall-manager).
 ---
 # Azure Virtual Network Manager Crawl Report
 
 ## Summary
 
-- **Total Pages**: 52
-- **Fetched**: 52
+- **Total Pages**: 53
+- **Fetched**: 53
 - **Fetch Failed**: 0
-- **Classified**: 21
+- **Classified**: 22
 - **Unclassified**: 31
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 1
 - **Unchanged**: 51
 - **Deleted Pages**: 0
@@ -49,26 +49,30 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| configuration | 10 | 19.2% |
+| configuration | 10 | 18.9% |
 | integrations | 1 | 1.9% |
 | limits-quotas | 1 | 1.9% |
-| security | 7 | 13.5% |
+| security | 8 | 15.1% |
 | troubleshooting | 2 | 3.8% |
-| *(Unclassified)* | 31 | 59.6% |
+| *(Unclassified)* | 31 | 58.5% |
 
 ## Changes
 
+### New Pages
+
+- [Simulate security admin rule impact](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-simulate-security-admin-rules)
+
 ### Updated Pages
 
-- [Create IP address pools with IPAM](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-manage-ip-addresses-network-manager)
-  - Updated: 2026-01-13T23:18:00.000Z → 2026-05-01T08:00:00.000Z
+- [Common issues](https://learn.microsoft.com/en-us/azure/virtual-network-manager/common-issues)
+  - Updated: 2025-11-10T23:18:00.000Z → 2026-05-16T05:17:00.000Z
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
 | [Limitations](https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-limitations) | limits-quotas | 0.90 | Explicitly about current limitations such as maximum number of VNets per manager and evaluation cycles; these are numeric, product-specific limits that change over time. |
-| [Common issues](https://learn.microsoft.com/en-us/azure/virtual-network-manager/common-issues) | troubleshooting | 0.80 | Explicitly a common-issues article; such pages typically map specific AVNM symptoms and error messages to causes and resolutions, satisfying the troubleshooting criteria. |
+| [Common issues](https://learn.microsoft.com/en-us/azure/virtual-network-manager/common-issues) | troubleshooting | 0.86 | The page is explicitly a troubleshooting guide for Azure Virtual Network Manager, organized around common issues (configuration delays, connectivity errors, resource group creation failures) and their resolutions. This matches the troubleshooting pattern of symptom → cause → solution for a specific Azure service, which constitutes product-specific expert knowledge beyond generic debugging advice. |
 | [Automate IP address management](https://learn.microsoft.com/en-us/azure/virtual-network-manager/automate-ip-address-management-ipam-sample) | configuration | 0.70 | Provides a PowerShell script and describes IPAM pool usage; includes specific parameters, resource properties, and configuration patterns unique to AVNM IPAM. |
 | [Configure Event Logs for Azure Virtual Network Manager](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-configure-event-logs) | configuration | 0.70 | How-to for configuring event logs with Log Analytics and storage accounts; likely includes diagnostic setting names, categories, and destination parameters, which are product-specific configuration details. |
 | [Define dynamic network group membership with Azure Policy](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-define-network-group-membership-azure-policy) | configuration | 0.70 | Shows how to build conditional expressions and parameters in Azure Policy for AVNM; includes concrete policy parameter names, operators, and configuration patterns. |
@@ -76,6 +80,7 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Security admin rule overview](https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-security-admins) | security | 0.70 | Explains what security admin rules are and how they work; likely includes rule structure, fields (source, destination, ports, protocols), and evaluation behavior specific to AVNM. |
 | [Using network groups as source and destination](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-create-security-admin-rule-network-group) | security | 0.70 | Portal how-to for creating security admin configurations and rules; includes specific rule fields (ports, protocols, directions) and deployment behavior unique to AVNM. |
 | [Verify resource reachability with Virtual Network Verifier](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-verify-reachability-with-virtual-network-verifier) | configuration | 0.70 | Step-by-step portal guide for verifier workspaces and reachability intents; likely defines specific workspace settings, intent parameters, and delegation options, which are product-specific configuration details. |
+| [Simulate security admin rule impact](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-simulate-security-admin-rules) | security | 0.68 | The article describes a product-specific feature (rule impact analyzer) for Azure Virtual Network Manager security admin rules, including how it evaluates traffic flows and existing network rules before deployment. This is detailed, product-specific security configuration and behavior that goes beyond generic concepts, fitting the security sub-skill. It is not just a conceptual overview or marketing content. |
 | [Azure Policy integration with network groups](https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-azure-policy-integration) | configuration | 0.65 | Describes configuring network groups via Azure Policy; likely includes specific policy definitions, parameters, and assignment settings unique to AVNM integration. |
 | [Block network traffic - Portal](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-block-network-traffic-portal) | security | 0.65 | Shows creating a rule to block RDP on port 3389; includes concrete security rule configuration steps and parameters specific to AVNM. |
 | [Block network traffic -PowerShell](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-block-network-traffic-powershell) | security | 0.65 | PowerShell-based configuration of security rules blocking ports 80 and 443; includes AVNM-specific cmdlets and parameters for security admin rules. |

@@ -1,9 +1,9 @@
 ---
 name: azure-cache-redis
-description: Expert knowledge for Azure Cache for Redis development including troubleshooting, best practices, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when configuring geo-replication, persistence, Private Link/VNet access, Redis events/webhooks, or ARM/Bicep deployments, and other Azure Cache for Redis related development tasks. Not for Azure Managed Redis (use azure-managed-redis), Azure Cosmos DB (use azure-cosmos-db), Azure Table Storage (use azure-table-storage).
+description: Expert knowledge for Azure Cache for Redis development including troubleshooting, best practices, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when configuring geo-replication, persistence, VNet/Private Link, Azure Monitor metrics, or ARM/Bicep deployments, and other Azure Cache for Redis related development tasks. Not for Azure Managed Redis (use azure-managed-redis), Azure Cosmos DB (use azure-cosmos-db), Azure Table Storage (use azure-table-storage), Azure Blob Storage (use azure-blob-storage).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-03"
+  generated_at: "2026-05-17"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Cache for Redis Skill
@@ -24,9 +24,9 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L36-L46 | Diagnosing and fixing Azure Cache for Redis issues: client and connectivity errors, data loss, server-side problems, and performance, latency, and timeout troubleshooting. |
-| Best Practices | L47-L61 | Guidance on client usage, resilience, scaling, memory/CPU tuning, Kubernetes optimization, failover/patching, and performance testing for Azure Cache for Redis and Enterprise tiers |
-| Decision Making | L62-L71 | Guidance on sizing and capacity, choosing tiers and reservations, planning migrations (including VNet to Private Link), and selecting network isolation options for Azure Cache for Redis. |
+| Troubleshooting | L36-L47 | Diagnosing and fixing Azure Cache for Redis issues: client and server errors, connectivity, latency/timeouts, monitoring, data loss, and using redis-cli for debugging. |
+| Best Practices | L48-L61 | Guidance on client usage, resilience, scaling, memory/CPU tuning, Kubernetes optimization, performance testing, and handling failover/patching for Azure Cache for Redis and Enterprise tiers |
+| Decision Making | L62-L71 | Guidance on sizing and planning Redis deployments, migrations (including retirement and VNet→Private Link), network isolation choices, and purchasing/managing Azure Redis reservations |
 | Architecture & Design Patterns | L72-L76 | Guidance on designing highly available Azure Cache for Redis deployments, including redundancy options, failover behavior, and resilience best practices. |
 | Security | L77-L89 | Securing Azure Cache for Redis: auth (Entra, managed identity), network isolation (VNets, Private Link), TLS config, disk encryption, data access policies, and Azure Policy compliance. |
 | Configuration | L90-L103 | Configuring Azure Cache for Redis behavior: server settings, reboot/flush, geo-replication, replicas, persistence, zone redundancy, and monitoring/metrics via Azure Monitor and diagnostics. |
@@ -37,7 +37,8 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Use redis-cli to debug Azure Cache for Redis | https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-how-to-redis-cli-tool |
-| FAQ for monitoring and troubleshooting Azure Redis | https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-monitor-troubleshoot-faq |
+| Resolve common Azure Cache for Redis management issues | https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-management-faq |
+| Diagnose and fix Azure Cache for Redis monitoring issues | https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-monitor-troubleshoot-faq |
 | Troubleshoot Redis client issues for Azure Cache | https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-troubleshoot-client |
 | Troubleshoot connectivity issues with Azure Cache for Redis | https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-troubleshoot-connectivity |
 | Diagnose and fix Azure Cache for Redis data loss | https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-troubleshoot-data-loss |
@@ -49,14 +50,13 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Use Redis client libraries effectively with Azure Cache | https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-best-practices-client-libraries |
 | Improve Azure Redis connection resilience | https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-best-practices-connection |
-| Implement development best practices for Azure Redis | https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-best-practices-development |
+| Apply development best practices for Azure Cache for Redis | https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-best-practices-development |
 | Use Azure Redis Enterprise and Flash tiers effectively | https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-best-practices-enterprise-tiers |
 | Optimize Kubernetes-hosted clients for Azure Cache for Redis | https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-best-practices-kubernetes |
 | Optimize Azure Redis memory management | https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-best-practices-memory-management |
 | Run performance testing for Azure Cache for Redis | https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-best-practices-performance |
 | Scale Azure Cache for Redis effectively and safely | https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-best-practices-scale |
 | Monitor and manage CPU utilization for Azure Managed Redis | https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-best-practices-server-load |
-| Apply development best practices for Azure Redis | https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-development-faq |
 | Handle failover and patching in Azure Redis clients | https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-failover |
 
 ### Decision Making
@@ -64,10 +64,10 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Plan and execute migrations to Azure Cache for Redis | https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-migration-guide |
 | Choose Azure Redis network isolation options | https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-network-isolation |
-| Plan Azure Cache for Redis capacity and usage | https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-planning-faq |
+| Plan and size Azure Cache for Redis deployments | https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-planning-faq |
 | Choose and manage Azure Redis reservations | https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-reserved-pricing |
 | Migrate Azure Cache for Redis from VNet injection to Private Link | https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-vnet-migration |
-| Decide migration path for retiring Azure Cache for Redis tiers | https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/retirement-faq |
+| Plan migration for Azure Cache for Redis retirement | https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/retirement-faq |
 
 ### Architecture & Design Patterns
 | Topic | URL |

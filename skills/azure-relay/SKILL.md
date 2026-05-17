@@ -3,7 +3,7 @@ name: azure-relay
 description: Expert knowledge for Azure Relay development including troubleshooting, security, configuration, and integrations & coding patterns. Use when configuring Hybrid Connections, WCF relays, Entra ID/SAS auth, Private Link, or .NET/Node.js Relay clients, and other Azure Relay related development tasks. Not for Azure Service Bus (use azure-service-bus), Azure Event Hubs (use azure-event-hubs), Azure Web PubSub (use azure-web-pubsub), Azure Application Gateway (use azure-application-gateway).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-05-17"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Relay Skill

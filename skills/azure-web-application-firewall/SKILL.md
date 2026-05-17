@@ -3,7 +3,7 @@ name: azure-web-application-firewall
 description: Expert knowledge for Azure Web Application Firewall development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring Front Door/App Gateway WAF rules, rate limits, geo/IP filters, bot/CAPTCHA, or Sentinel logging, and other Azure Web Application Firewall related development tasks. Not for Azure Application Gateway (use azure-application-gateway), Azure Front Door (use azure-front-door), Azure Firewall (use azure-firewall), Azure DDos Protection (use azure-ddos-protection).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-03"
+  generated_at: "2026-05-17"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Web Application Firewall Skill
@@ -24,7 +24,7 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L42 | Diagnosing and fixing common Azure WAF issues on Front Door and Application Gateway, including false positives, blocked requests, rule tuning, and investigating WAF logs. |
+| Troubleshooting | L37-L42 | Diagnosing and fixing Azure WAF issues on Front Door and Application Gateway, including rule matches, false positives, blocked requests, and configuration or logging problems. |
 | Best Practices | L43-L51 | Best practices for configuring, tuning, and hardening Azure WAF on Front Door and Application Gateway, including rule tuning, exclusions, geomatch rules, and deployment security. |
 | Decision Making | L52-L58 | Guidance on planning and executing migration from legacy WAF configs to full WAF policies, and choosing/upgrading the appropriate Azure WAF managed rulesets. |
 | Architecture & Design Patterns | L59-L63 | Architectural guidance for designing DDoS-resistant web apps using Azure WAF with Front Door, including traffic flow, protection layers, and best-practice deployment patterns. |
@@ -37,7 +37,7 @@ This skill requires **network access** to fetch documentation content:
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
-| Resolve common Azure Front Door WAF questions | https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/waf-faq |
+| Troubleshoot Azure Front Door WAF behavior and rules | https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/waf-faq |
 | Resolve common Azure Application Gateway WAF issues | https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/application-gateway-waf-faq |
 
 ### Best Practices

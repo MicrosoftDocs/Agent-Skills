@@ -1,9 +1,9 @@
 ---
 name: azure-iot-operations
-description: Expert knowledge for Azure IoT Operations development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when deploying Azure IoT Operations with MQTT broker, OPC UA/ONVIF, WASM/ONNX transforms, data flow graphs, or Prometheus/Grafana, and other Azure IoT Operations related development tasks. Not for Azure IoT (use azure-iot), Azure IoT Hub (use azure-iot-hub), Azure IoT Central (use azure-iot-central), Azure IoT Edge (use azure-iot-edge).
+description: Expert knowledge for Azure IoT Operations development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when deploying Azure IoT Operations, OPC UA/ONVIF integrations, WASM/ONNX transforms, MQTT broker, or data flow graphs, and other Azure IoT Operations related development tasks. Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Edge (use azure-iot-edge), Azure IoT Central (use azure-iot-central), Azure Defender For Iot (use azure-defender-for-iot).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-10"
+  generated_at: "2026-05-17"
   generator: "docs2skills/1.0.0"
 ---
 # Azure IoT Operations Skill
@@ -24,14 +24,14 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L45 | Diagnosing and fixing Azure IoT Operations issues: deployment/runtime failures, health reason codes, private network connectivity, known component bugs, and debugging WASM modules in VS Code. |
-| Best Practices | L46-L50 | Guidance on testing and validating Azure IoT Operations WASM modules, and designing resilient, highly available edge applications using the Azure MQTT broker. |
-| Decision Making | L51-L56 | Guidance on choosing between data flows vs data flow graphs in Azure IoT Operations and sizing production deployments with concrete resource and capacity examples. |
-| Architecture & Design Patterns | L57-L61 | Designing IoT data processing pipelines with data flow graphs and applying Azure IoT Operations in layered/segmented industrial network topologies and architectures. |
-| Limits & Quotas | L62-L66 | Details on MQTT broker feature support, protocol limits, and control capabilities in Azure IoT Operations, including which MQTT functions and controls are available or restricted. |
-| Security | L67-L84 | Securing Azure IoT Operations: TLS/cert management, OPC UA trust, MQTT authz/authn and encryption, private connectivity, RBAC roles, secrets in Key Vault, and image validation. |
-| Configuration | L85-L126 | Configuring Azure IoT Operations data flows, endpoints, schemas, routing, transforms, persistence, MQTT broker settings, and using metrics/observability for monitoring and tuning. |
-| Integrations & Coding Patterns | L127-L143 | Patterns and code for integrating IoT Operations with Akri, HTTP/REST, OPC UA, ONVIF; building/using WASM transforms, ONNX inference, state store, schemas, and expression/mapping languages. |
+| Troubleshooting | L37-L46 | Diagnosing and fixing Azure IoT Operations issues: deployment/runtime failures, component known issues, health reason codes, private network connectivity, and debugging WASM modules in VS Code. |
+| Best Practices | L47-L51 | Guidance on testing and validating Azure IoT Operations WASM modules, and designing resilient, highly available edge applications using the Azure MQTT broker. |
+| Decision Making | L52-L57 | Guidance on choosing between data flows vs data flow graphs in Azure IoT Operations and sizing production deployments with concrete resource and capacity examples. |
+| Architecture & Design Patterns | L58-L62 | Designing IoT data processing pipelines with data flow graphs and applying Azure IoT Operations in layered/segmented industrial network topologies and architectures. |
+| Limits & Quotas | L63-L67 | Details on MQTT broker feature support, protocol limits, and control capabilities in Azure IoT Operations, including which MQTT functions and controls are available or restricted. |
+| Security | L68-L85 | Securing Azure IoT Operations: TLS/cert management, OPC UA trust, MQTT authz/authn and encryption, private connectivity, RBAC roles, secrets in Key Vault, and image validation. |
+| Configuration | L86-L127 | Configuring Azure IoT Operations data flows, endpoints, schemas, routing, transforms, persistence, MQTT broker settings, and using metrics/observability for monitoring and tuning. |
+| Integrations & Coding Patterns | L128-L143 | Patterns and code for integrating IoT Operations with Akri, HTTP/REST, OPC UA, ONVIF; building/using WASM transforms, ONNX inference, state store, schemas, and expression/mapping languages. |
 | Deployment | L144-L151 | Deploying, cloning, upgrading, and securing Azure IoT Operations in production (incl. private networks), plus deploying observability (Prometheus/Grafana) and WASM/graph workloads. |
 
 ### Troubleshooting
@@ -40,6 +40,7 @@ This skill requires **network access** to fetch documentation content:
 | Debug Azure IoT WASM modules in VS Code | https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/howto-debug-wasm-modules |
 | Troubleshoot private connectivity in Azure IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/manage-layered-network/howto-troubleshoot-private-connectivity |
 | Interpret Azure IoT Operations health reason codes | https://learn.microsoft.com/en-us/azure/iot-operations/reference/health-status-reason-codes |
+| Resolve common Azure IoT Operations issues and questions | https://learn.microsoft.com/en-us/azure/iot-operations/troubleshoot/iot-operations-faq |
 | Resolve known issues in Azure IoT Operations components | https://learn.microsoft.com/en-us/azure/iot-operations/troubleshoot/known-issues |
 | Troubleshoot Azure IoT Operations deployments and runtime | https://learn.microsoft.com/en-us/azure/iot-operations/troubleshoot/troubleshoot |
 
@@ -131,7 +132,6 @@ This skill requires **network access** to fetch documentation content:
 | Use expression language in Azure IoT Operations data flows and graphs | https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/concept-dataflow-graphs-expressions |
 | Use data flow mapping language to transform IoT Operations messages | https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/concept-dataflow-mapping |
 | Build and use WebAssembly transforms in Azure IoT Operations data flow graphs | https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/howto-dataflow-graph-wasm |
-| Build Akri connectors using the VS Code extension | https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/howto-build-akri-connectors-vscode |
 | Develop custom WASM modules for Azure IoT Operations data flows | https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/howto-build-wasm-modules |
 | Build and deploy Akri REST connectors for IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/howto-develop-akri-connectors |
 | Run ONNX inference inside IoT WebAssembly data flows | https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/howto-wasm-onnx-inference |

@@ -1,9 +1,9 @@
 ---
 name: azure-iot-edge
-description: Expert knowledge for Azure IoT Edge development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when provisioning IoT Edge/EFLOW, deploying modules via manifests/CI-CD, using DPS/X.509, or building gateway patterns, and other Azure IoT Edge related development tasks. Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Central (use azure-iot-central), Azure IoT Operations (use azure-iot-operations), Azure Stack Edge (use azure-stack-edge).
+description: Expert knowledge for Azure IoT Edge development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring IoT Edge/EFLOW provisioning, gateways, DPS/TPM/X.509 auth, CI/CD deployments, or EST/Private Link, and other Azure IoT Edge related development tasks. Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Central (use azure-iot-central), Azure IoT Operations (use azure-iot-operations), Azure Stack Edge (use azure-stack-edge).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-10"
+  generated_at: "2026-05-17"
   generator: "docs2skills/1.0.0"
 ---
 # Azure IoT Edge Skill
@@ -28,9 +28,9 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L48-L53 | Monitoring module twins for health/alerts and production-readiness guidance for IoT Edge solutions (deployment hardening, reliability, security, and operational best practices). |
 | Decision Making | L54-L60 | Guidance on choosing IoT Edge/EFLOW platforms, provisioning methods, networking setups, and nested virtualization options for different deployment scenarios. |
 | Architecture & Design Patterns | L61-L66 | Gateway design patterns for connecting downstream devices and patterns for handling offline/intermittent connectivity, local processing, and sync behavior in Azure IoT Edge setups. |
-| Limits & Quotas | L67-L71 | Azure IoT Edge resource limits and restrictions: max modules, routes, deployments, message sizes, and performance/scale constraints for edge devices and hub interactions. |
+| Limits & Quotas | L67-L71 | Azure IoT Edge resource limits and quotas, including module, deployment, message, and device constraints, plus scalability and performance-related restrictions. |
 | Security | L72-L84 | Securing IoT Edge with certificates, X.509 provisioning, confidential computing, downstream device auth, EST server setup, and network protection via Private Link/endpoints. |
-| Configuration | L85-L118 | Configuring IoT Edge devices, networking, gateways, provisioning (DPS, X.509, TPM, symmetric keys), EFLOW/VM settings, storage, proxies, and built-in/custom metrics and alerts. |
+| Configuration | L85-L118 | Configuring IoT Edge devices and EFLOW: networking, gateways, proxies, storage, GPU/USB access, metrics/monitoring, and provisioning (DPS, TPM, X.509, symmetric keys) for modules and runtime. |
 | Integrations & Coding Patterns | L119-L126 | Remote management and logging via direct methods, building and packaging custom IoT Edge modules, and managing IoT Edge on Windows with EFLOW PowerShell functions |
 | Deployment | L127-L136 | Deploying IoT Edge at scale: CI/CD pipelines, CLI/manifest-based module deployment, Kubernetes/KubeVirt installs, automatic deployments, and supported platform requirements. |
 

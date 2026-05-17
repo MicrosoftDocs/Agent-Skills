@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-10'
+generated_at: '2026-05-17'
 category_descriptions:
   integrations: 'Using Content Moderator and Content Understanding via REST/.NET:
     text/image/video moderation, term lists, multimodal analysis, and consuming Markdown/structured
@@ -46,9 +46,9 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 - **Unclassified**: 22
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 8
-- **Unchanged**: 43
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 51
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/microsoft-foundry-tools/microsoft-foundry-tools.csv`
 
@@ -67,28 +67,10 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 
 ## Changes
 
-### New Pages
-
-- [Bring your own cross-resource capacity](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/how-to/bring-your-own-cross-resource-capacity)
-
 ### Updated Pages
 
-- [Migration from CU Preview to GA](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/how-to/migration-preview-to-ga)
-  - Updated: 2026-04-13T17:17:00.000Z → 2026-05-08T22:11:00.000Z
-- [Choose the right tool for document processing](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/choosing-right-ai-tool)
-  - Updated: 2026-03-23T08:00:00.000Z → 2026-04-13T17:17:00.000Z
-- [What's new](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/whats-new)
-  - Updated: 2026-03-13T22:11:00.000Z → 2026-05-08T22:11:00.000Z
-- [Service quotas and limits](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/service-limits)
-  - Updated: 2026-04-21T11:03:00.000Z → 2026-05-08T22:11:00.000Z
 - [FAQ](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/faq)
-  - Updated: 2026-04-01T06:05:00Z → 2026-05-08T22:11:00Z
-- [Content Understanding Studio Quickstart](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/quickstart/content-understanding-studio)
-  - Updated: 2026-02-12T23:10:00.000Z → 2026-02-27T23:08:00.000Z
-- [Create CU Task in Foundry (classic) (Preview)](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/how-to/content-understanding-foundry-classic)
-  - Updated: 2026-01-29T08:00:00.000Z → 2026-04-13T17:17:00.000Z
-- [Foundry model deployments](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/models-deployments)
-  - Updated: 2026-04-21T11:03:00.000Z → 2026-05-08T06:08:00.000Z
+  - Updated: 2026-05-08T22:11:00Z → 2026-05-08T22:11:00.000Z
 
 ## Classified Pages
 
@@ -142,7 +124,6 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 | [Content Understanding Studio Quickstart](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/quickstart/content-understanding-studio) | 0.20 | Quickstart for trying the Studio/portal; these are typically step-by-step tutorials without comprehensive configuration tables, limits, or decision matrices, so it doesn't fit the expert-knowledge categories. |
 | [Copy and back up analyzers](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/how-to/copy-analyzers) | 0.20 | Describes scenarios for copying custom analyzers within and across resources; summary does not indicate presence of quotas, config parameter tables, security roles, or troubleshooting mappings. |
 | [Export or delete account data](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/export-delete-data) | 0.20 | Data export/delete overview; likely procedural and policy-focused without detailed limits, config tables, or error mappings. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/faq) | 0.20 | FAQ page; summary indicates generic Q&A. Without evidence of structured error codes, config tables, or numeric limits, it likely contains conceptual and usage FAQs rather than expert troubleshooting or configuration data. |
 | [Language and region support](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/language-region-support) | 0.20 | Region and language support is typically a capability/coverage listing, not a configuration, quota, or decision matrix; it lacks the kinds of numeric limits, config parameters, or troubleshooting mappings required by any sub-skill type. |
 | [Overview](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/document/overview) | 0.20 | Document overview describing capabilities and use cases for document analysis; no indication of limits, configuration parameters, or decision matrices. |
 | [Use customer-managed keys](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/encrypt-data-at-rest) | 0.20 | High-level statement that data is encrypted at rest; no indication of specific configuration parameters, roles, or algorithms. |
@@ -150,4 +131,5 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 | [What is Content Moderator?](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/overview) | 0.20 | Service overview and deprecation notice for Content Moderator; conceptual description without detailed technical parameters in the summary. |
 | [Image](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/image/overview) | 0.10 | High-level overview of Azure Content Understanding image capabilities; no numeric limits, configuration tables, error codes, or product-specific decision matrices. |
 | [What is Azure Content Understanding in Foundry Tools?](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/overview) | 0.10 | High-level overview of Azure Content Understanding capabilities, workflows, and use cases without concrete limits, configuration tables, or error/diagnostic details. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/faq) | - | FAQ page appears to provide general Q&A about Azure Content Understanding/Document Intelligence without clear evidence of detailed limits, configuration tables, error-code mappings, or other product-specific expert data as defined by the sub-skill types. |
 | [Glossary](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/glossary) | - | Glossary of terms; definitions are conceptual, not configuration, limits, or troubleshooting patterns. |

@@ -48,8 +48,8 @@ confusable_not_for: Not for Azure Active Directory B2C (use azure-active-directo
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 7
-- **Unchanged**: 97
+- **Updated Pages**: 0
+- **Unchanged**: 104
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-rbac/azure-rbac.csv`
 
@@ -67,23 +67,6 @@ confusable_not_for: Not for Azure Active Directory B2C (use azure-active-directo
 | *(Unclassified)* | 9 | 8.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [Understand the different roles](https://learn.microsoft.com/en-us/azure/role-based-access-control/rbac-and-directory-admin-roles)
-  - Updated: 2025-12-11T08:00:00.000Z → 2026-05-06T08:00:00.000Z
-- [What's new in docs](https://learn.microsoft.com/en-us/azure/role-based-access-control/whats-new)
-  - Updated: 2026-04-29T08:00:00.000Z → 2026-05-06T08:00:00.000Z
-- [PowerShell](https://learn.microsoft.com/en-us/azure/role-based-access-control/role-assignments-list-powershell)
-  - Updated: 2025-10-24T05:11:00.000Z → 2026-05-07T06:30:00.000Z
-- [External users](https://learn.microsoft.com/en-us/azure/role-based-access-control/role-assignments-external-users)
-  - Updated: 2025-03-30T08:00:00.000Z → 2026-05-06T08:00:00.000Z
-- [Remove role assignments](https://learn.microsoft.com/en-us/azure/role-based-access-control/role-assignments-remove)
-  - Updated: 2025-12-12T05:44:00.000Z → 2026-05-07T06:30:00.000Z
-- [Classic administrators](https://learn.microsoft.com/en-us/azure/role-based-access-control/classic-administrators)
-  - Updated: 2026-02-26T23:12:00.000Z → 2026-05-07T06:30:00.000Z
-- [Troubleshoot Azure RBAC](https://learn.microsoft.com/en-us/azure/role-based-access-control/troubleshooting)
-  - Updated: 2025-12-11T08:00:00.000Z → 2026-05-06T08:00:00.000Z
 
 ## Classified Pages
 

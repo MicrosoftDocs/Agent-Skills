@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-05-10'
+generated_at: '2026-05-17'
 category_descriptions:
   configuration: 'Configuring and governing Network Watcher logging: AMA for Connection
     Monitor, NSG/VNet flow logs setup, schemas, filtering, templates (Bicep/ARM),
     and Azure Policy enforcement.'
-  troubleshooting: Diagnosing and automating troubleshooting for outbound connectivity,
-    NSG/admin rules, and VPN gateway/on-premises VPN issues using Network Watcher,
-    Azure CLI, PowerShell, and Automation.
+  troubleshooting: 'Diagnosing and fixing Azure network issues: outbound connectivity,
+    NSG/admin rules, and VPN gateway/on-premises connectivity, including automation
+    and CLI/PowerShell-based troubleshooting.'
   integrations: 'Using Network Watcher data in tools and code: parsing NSG flow logs
     with PowerShell, visualizing in Power BI, triggering packet capture from Functions,
     querying Traffic Analytics with KQL, and integrating with Sentinel.'
@@ -24,14 +24,14 @@ skill_description: Expert knowledge for Azure Network Watcher development includ
   integrations & coding patterns. Use when configuring Connection Monitor, NSG/VNet
   flow logs, packet capture, Traffic Analytics, or Sentinel integrations, and other
   Azure Network Watcher related development tasks. Not for Azure Monitor (use azure-monitor),
-  Azure Networking (use azure-networking), Azure Virtual Network (use azure-virtual-network),
-  Azure Virtual Network Manager (use azure-virtual-network-manager).
+  Azure Virtual Network (use azure-virtual-network), Azure Virtual Network Manager
+  (use azure-virtual-network-manager), Azure Networking (use azure-networking).
 use_when: Use when configuring Connection Monitor, NSG/VNet flow logs, packet capture,
   Traffic Analytics, or Sentinel integrations, and other Azure Network Watcher related
   development tasks.
-confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Networking (use
-  azure-networking), Azure Virtual Network (use azure-virtual-network), Azure Virtual
-  Network Manager (use azure-virtual-network-manager).
+confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Virtual Network
+  (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager),
+  Azure Networking (use azure-networking).
 ---
 # Azure Network Watcher Crawl Report
 
@@ -40,8 +40,8 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Networking 
 - **Total Pages**: 64
 - **Fetched**: 64
 - **Fetch Failed**: 0
-- **Classified**: 27
-- **Unclassified**: 37
+- **Classified**: 28
+- **Unclassified**: 36
 
 ### Incremental Update
 - **New Pages**: 0
@@ -59,15 +59,15 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Networking 
 | integrations | 3 | 4.7% |
 | limits-quotas | 1 | 1.6% |
 | security | 3 | 4.7% |
-| troubleshooting | 6 | 9.4% |
-| *(Unclassified)* | 37 | 57.8% |
+| troubleshooting | 7 | 10.9% |
+| *(Unclassified)* | 36 | 56.2% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Audit and deploy using Azure Policy](https://learn.microsoft.com/en-us/azure/network-watcher/nsg-flow-logs-policy-portal)
-  - Updated: 2025-12-18T08:00:00.000Z → 2026-05-04T22:15:00.000Z
+- [FAQ](https://learn.microsoft.com/en-us/azure/network-watcher/frequently-asked-questions)
+  - Updated: 2026-01-27T23:11:00Z → 2026-01-27T23:11:00.000Z
 
 ## Classified Pages
 
@@ -84,6 +84,7 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Networking 
 | [ARM template](https://learn.microsoft.com/en-us/azure/network-watcher/nsg-flow-logs-template) | configuration | 0.70 | Quickstart using ARM templates and PowerShell to configure NSG flow logs; ARM templates expose explicit property names, structures, and allowed values, which are configuration parameters. |
 | [Bicep](https://learn.microsoft.com/en-us/azure/network-watcher/nsg-flow-logs-bicep) | configuration | 0.70 | Quickstart using Bicep to configure NSG flow logs; Bicep files define resource properties and settings explicitly, providing product-specific configuration schema. |
 | [Diagnose network security rules](https://learn.microsoft.com/en-us/azure/network-watcher/diagnose-network-security-rules) | troubleshooting | 0.70 | Shows how to use NSG diagnostics to determine why traffic is allowed/denied, including a misconfigured NSG example; this is a symptom→cause→solution troubleshooting guide specific to Network Watcher. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/network-watcher/frequently-asked-questions) | troubleshooting | 0.70 | FAQ pages for Azure services typically include product-specific error behaviors, limitations, and clarifications (for example, why a feature doesn't work in a given region, required prerequisites, or specific behaviors when certain settings are misconfigured). These map to symptom → cause → resolution style guidance that is unique to Network Watcher and not just conceptual. While it's an FAQ, such pages often encode troubleshooting knowledge (for example, what to check when flow logs don't appear, or why packet capture fails) rather than only marketing or conceptual content. |
 | [From Connection monitor (classic)](https://learn.microsoft.com/en-us/azure/network-watcher/migrate-to-connection-monitor-from-connection-monitor-classic) | decision-making | 0.70 | Migration article between classic and new versions; contains guidance on how and when to migrate with zero downtime, a product-specific decision/migration path. |
 | [From Network performance monitor](https://learn.microsoft.com/en-us/azure/network-watcher/migrate-to-connection-monitor-from-network-performance-monitor) | decision-making | 0.70 | Migration guidance between deprecated and new service; likely includes scenario-based recommendations and mapping of old tests to new constructs, which supports decision-making and migration choices. |
 | [Install Azure Monitor agent](https://learn.microsoft.com/en-us/azure/network-watcher/connection-monitor-install-azure-monitor-agent) | configuration | 0.70 | Covers installing, upgrading, and uninstalling Azure Monitor Agent on Arc-enabled servers; likely includes extension parameters and configuration options specific to this scenario. |
@@ -125,7 +126,6 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Networking 
 | [Topology](https://learn.microsoft.com/en-us/azure/network-watcher/network-insights-topology) | 0.40 | Describes topology visualization; summary does not indicate detailed configuration parameters, limits, or troubleshooting codes. |
 | [Windows](https://learn.microsoft.com/en-us/azure/network-watcher/network-watcher-agent-windows) | 0.40 | Agent install/uninstall steps; summary does not show parameter tables, limits, or product-specific troubleshooting. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/network-watcher/connection-monitor-create-using-portal) | 0.30 | How-to create a monitor via portal; appears procedural without deep config matrices or limits. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/network-watcher/frequently-asked-questions) | 0.30 | FAQ-style content; summary does not indicate specific error codes, limits, or configuration tables. |
 | [Log network traffic](https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-tutorial) | 0.30 | Tutorial for logging traffic using VNet flow logs; likely step-by-step but framed as a basic how-to, not a catalog of configuration options or limits. |
 | [Overview](https://learn.microsoft.com/en-us/azure/network-watcher/connection-monitor-overview) | 0.30 | Conceptual overview of Connection Monitor; no explicit limits, config tables, or decision matrices in summary. |
 | [PowerShell](https://learn.microsoft.com/en-us/azure/network-watcher/connection-monitor-create-using-powershell) | 0.30 | PowerShell creation tutorial; likely just command usage, not full configuration reference or troubleshooting mapping. |

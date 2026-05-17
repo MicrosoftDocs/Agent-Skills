@@ -3,7 +3,7 @@ name: azure-translator
 description: Expert knowledge for Azure Translator development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Translator text/document APIs, custom models, glossaries, Docker containers, or Power Automate flows, and other Azure Translator related development tasks. Not for Azure AI Language (use azure-language-service), Azure AI Speech (use azure-speech), Azure AI Immersive Reader (use azure-immersive-reader), Azure AI Search (use azure-cognitive-search).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-03"
+  generated_at: "2026-05-17"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Translator Skill
@@ -25,11 +25,11 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L36-L41 | Diagnosing and fixing Azure Translator/Foundry errors, including HTTP status codes, API error messages, and common runtime or configuration issues. |
-| Best Practices | L42-L51 | Best practices for custom translation: managing containers, glossaries, dataset splits, Foundry/custom models, and document translation usage, FAQs, and operational guidance. |
-| Decision Making | L52-L59 | Guidance on choosing standard vs Custom Translator, evaluating custom models with BLEU, and migrating apps between Translator API versions and platforms. |
-| Limits & Quotas | L60-L71 | Limits, formats, and data size requirements for Custom Translator training/documents, character and request quotas, and language/locale support for Translator and Document Translation. |
-| Security | L72-L84 | Configuring Azure Translator security: encryption, auth (keys, Entra ID, managed identities, SAS), VNets/firewalls, secure workspaces, and protecting data in document translation. |
-| Configuration | L85-L95 | Configuring Azure Translator behavior: resource setup, Docker/container settings, profanity filters, content exclusion, dynamic dictionaries, word alignment, and monitoring usage metrics. |
+| Best Practices | L42-L50 | Best practices for custom translation: managing containers, glossaries, dataset splits, Foundry/custom models, and document translation usage, FAQs, and operational guidance. |
+| Decision Making | L51-L58 | Guidance on choosing standard vs Custom Translator, evaluating custom models with BLEU, and migrating apps between Translator API versions and platforms. |
+| Limits & Quotas | L59-L70 | Limits, formats, and data size requirements for Custom Translator training/documents, character and request quotas, and language/locale support for Translator and Document Translation. |
+| Security | L71-L83 | Configuring Azure Translator security: encryption, auth (keys, Entra ID, managed identities, SAS), VNets/firewalls, secure workspaces, and protecting data in document translation. |
+| Configuration | L84-L95 | Configuring Translator resources/containers, controlling translation behavior (content exclusion, dictionaries, profanity, alignment), and monitoring usage/metrics. |
 | Integrations & Coding Patterns | L96-L135 | Using Translator REST/SDK/containers for text & document translation: endpoints, params, async jobs, status, formats, custom models, preview features, Power Automate, and dictionary/transliteration APIs. |
 | Deployment | L136-L141 | Running Translator in Docker containers and deploying or copying custom translation models across regions and Foundry projects for scalable, portable translation setups. |
 
@@ -43,7 +43,6 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Deploy and manage user glossaries in Translator containers | https://learn.microsoft.com/en-us/azure/ai-services/translator/containers/deploy-user-managed-glossary |
-| FAQ and operational guidance for Translator containers | https://learn.microsoft.com/en-us/azure/ai-services/translator/containers/faq |
 | FAQ and guidance for Foundry custom translation | https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/azure-ai-foundry/faq |
 | Train custom translation models with proper dataset splits | https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/azure-ai-foundry/how-to/train-model |
 | FAQ and usage tips for Translator document translation | https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/faq |
@@ -86,6 +85,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Configure Azure Translator containers with docker run settings | https://learn.microsoft.com/en-us/azure/ai-services/translator/containers/configuration |
+| Configure and operate Azure Translator containers | https://learn.microsoft.com/en-us/azure/ai-services/translator/containers/faq |
 | Create and configure Azure Translator resources | https://learn.microsoft.com/en-us/azure/ai-services/translator/how-to/create-translator-resource |
 | Prevent specific content from translation | https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/how-to/prevent-translation |
 | Use Translator dynamic dictionary markup | https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/how-to/use-dynamic-dictionary |

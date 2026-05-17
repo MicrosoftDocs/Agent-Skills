@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-05-17'
 category_descriptions:
   deployment: 'Deploying and managing Automanage/Update Manager at scale: onboarding
     VMs/Arc servers, upgrading/moving profiles and VMs across regions/tenants, and
@@ -49,8 +49,8 @@ confusable_not_for: Not for Azure Automation (use azure-automation), Azure Monit
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 84
+- **Updated Pages**: 1
+- **Unchanged**: 83
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-update-manager/azure-update-manager.csv`
 
@@ -69,6 +69,11 @@ confusable_not_for: Not for Azure Automation (use azure-automation), Azure Monit
 | *(Unclassified)* | 29 | 34.5% |
 
 ## Changes
+
+### Updated Pages
+
+- [FAQ](https://learn.microsoft.com/en-us/azure/automanage/faq)
+  - Updated: 2024-08-02T17:06:00Z → 2024-08-02T17:06:00.000Z
 
 ## Classified Pages
 
@@ -141,7 +146,6 @@ confusable_not_for: Not for Azure Automation (use azure-automation), Azure Monit
 | [Check and install on-demand updates](https://learn.microsoft.com/en-us/azure/update-manager/quickstart-on-demand) | 0.40 | Quickstart for manual assessment and updates is primarily step-by-step usage; description doesn’t indicate deep config tables or limits beyond generic portal actions. |
 | [Check update compliance](https://learn.microsoft.com/en-us/azure/update-manager/view-updates) | 0.40 | How-to for checking update compliance in the portal; likely UI-driven steps without detailed config tables or limits. |
 | [Create assignment with Python](https://learn.microsoft.com/en-us/azure/automanage/tutorial-create-assignment-python) | 0.40 | Tutorial to create VM and assign profile using Python; likely linear how-to without detailed config tables or error mappings. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/automanage/faq) | 0.40 | FAQ is likely mixed and high-level; summary doesn’t indicate detailed limits, config tables, or error-code mappings. |
 | [Manage updates on multiple machines](https://learn.microsoft.com/en-us/azure/update-manager/manage-multiple-machines) | 0.40 | Describes features to manage multiple machines and view compliance; appears to be usage guidance without deep config or limits. |
 | [Prerequisites](https://learn.microsoft.com/en-us/azure/update-manager/prerequisites) | 0.40 | Prerequisites and network planning are mostly conceptual and environmental; description doesn’t indicate detailed config tables, limits, or role mappings. |
 | [Disable Change Tracking and Inventory](https://learn.microsoft.com/en-us/azure/azure-change-tracking-inventory/disable-azure-change-tracking-inventory-monitoring-agent) | 0.35 | Describes disabling Change Tracking via AMA; mostly straightforward steps without deep configuration or troubleshooting mappings. |
@@ -162,4 +166,5 @@ confusable_not_for: Not for Azure Automation (use azure-automation), Azure Monit
 | [What's New](https://learn.microsoft.com/en-us/azure/update-manager/whats-new) | 0.30 | What's new/release notes; mostly feature announcements, not structured troubleshooting, limits, or configuration matrices. |
 | [About Azure Update Manager](https://learn.microsoft.com/en-us/azure/update-manager/overview) | 0.20 | Overview of Azure Update Manager features and benefits; conceptual without detailed limits or configuration tables. |
 | [Enable on VMs in the Azure portal](https://learn.microsoft.com/en-us/azure/automanage/quick-create-virtual-machines-portal) | 0.20 | Quickstart for enabling Automanage via portal; mostly step-by-step UI instructions without deep configuration matrices or limits. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/automanage/faq) | 0.20 | FAQ page description suggests general Q&A and support guidance without clear indication of numeric limits, configuration tables, error-code mappings, or other product-specific expert details as defined by the sub-skill types. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-change-tracking-inventory/overview-monitoring-agent) | 0.20 | Overview of Change Tracking and Inventory with AMA; primarily conceptual and feature-focused. |

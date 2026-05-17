@@ -1,9 +1,9 @@
 ---
 name: azure-container-apps
-description: Expert knowledge for Azure Container Apps development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring ingress/scale, Dapr or Functions, CI/CD pipelines, secure networking, or Java microservices on ACA, and other Azure Container Apps related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Container Instances (use azure-container-instances), Azure App Service (use azure-app-service), Azure Spring Apps (use azure-spring-apps).
+description: Expert knowledge for Azure Container Apps development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring ingress/scale, Dapr or Functions apps, CI/CD deployments, private networking, or Java microservices, and other Azure Container Apps related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure App Service (use azure-app-service), Azure Functions (use azure-functions), Azure Spring Apps (use azure-spring-apps).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-10"
+  generated_at: "2026-05-17"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Container Apps Skill
@@ -28,11 +28,11 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L52-L58 | Deployment, cold-start, and runtime tuning guidance: blue-green rollouts, reducing scale-out latency, and optimizing Java memory usage in Azure Container Apps. |
 | Decision Making | L59-L79 | Guidance on choosing Container Apps hosting/compute options, cost models, GPUs, and workload profiles, plus migration paths from Functions, Heroku, Java/Spring/Tomcat, and other Azure container services |
 | Architecture & Design Patterns | L80-L86 | Architectures and patterns for Java microservices on Azure Container Apps, including Eureka HA clusters, AI-enabled PetClinic, and end-to-end microservice design best practices. |
-| Limits & Quotas | L87-L92 | Quota and limit rules for Container Apps (CPU/memory, environments, revisions, scale) and how to request increases when you hit platform or subscription limits. |
-| Security | L93-L131 | Securing Container Apps: auth (Entra, social, OIDC, mTLS, certs), secrets/managed identity, private endpoints, firewalls/WAF, DNS/ingress controls, and security best practices. |
-| Configuration | L132-L175 | Configuring Container Apps runtime: networking/ingress, scaling, revisions/traffic, Dapr, Functions, Java, logging/monitoring, storage mounts, workload profiles, and maintenance. |
-| Integrations & Coding Patterns | L176-L198 | Patterns for connecting Container Apps to each other and to services (Dapr, Spring, Front Door, Service Connector) plus dynamic/shell/code-interpreter sessions and event-driven jobs. |
-| Deployment | L199-L207 | Deploying and automating Container Apps: CI/CD with GitHub Actions/Azure Pipelines, Docker Compose migration, self-hosted runners, and Arc-enabled Kubernetes integration. |
+| Limits & Quotas | L87-L94 | Limits, quotas, and default behaviors for Container Apps (including express preview), plus how to review current limits and request quota increases. |
+| Security | L95-L133 | Securing Container Apps: auth (Entra, social, OIDC, mTLS, certs), secrets/managed identity, private endpoints, firewalls/WAF, DNS/ingress controls, and security best practices. |
+| Configuration | L134-L176 | Configuring Container Apps runtime: networking/ingress, scaling, revisions/traffic, Dapr, Functions, Java, logging/monitoring, storage mounts, workload profiles, and maintenance. |
+| Integrations & Coding Patterns | L177-L199 | Patterns for connecting Container Apps to each other and to services (Dapr, Spring, Front Door, Service Connector) plus dynamic/shell/code-interpreter sessions and event-driven jobs. |
+| Deployment | L200-L208 | Deploying and automating Container Apps: CI/CD with GitHub Actions/Azure Pipelines, Docker Compose migration, self-hosted runners, and Arc-enabled Kubernetes integration. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -87,6 +87,8 @@ This skill requires **network access** to fetch documentation content:
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
+| Azure Container Apps express preview feature limits | https://learn.microsoft.com/en-us/azure/container-apps/express-faq |
+| Azure Container Apps platform limits and behaviors | https://learn.microsoft.com/en-us/azure/container-apps/faq |
 | Request quota increases for Azure Container Apps | https://learn.microsoft.com/en-us/azure/container-apps/quota-requests |
 | Review quotas and limits for Azure Container Apps | https://learn.microsoft.com/en-us/azure/container-apps/quotas |
 
@@ -164,7 +166,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure custom domains with rule-based routing | https://learn.microsoft.com/en-us/azure/container-apps/rule-based-routing-custom-domain |
 | Configure autoscaling rules in Azure Container Apps | https://learn.microsoft.com/en-us/azure/container-apps/scale-app |
 | Configure service discovery resiliency policies | https://learn.microsoft.com/en-us/azure/container-apps/service-discovery-resiliency |
-| Configure custom container sessions in Azure Container Apps | https://learn.microsoft.com/en-us/azure/container-apps/sessions-custom-container |
 | Enable session affinity (sticky sessions) in Container Apps | https://learn.microsoft.com/en-us/azure/container-apps/sticky-sessions |
 | Configure storage mounts for Azure Container Apps | https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts |
 | Create Azure Files volume mounts in Container Apps | https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts-azure-files |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-10'
+generated_at: '2026-05-17'
 category_descriptions:
   configuration: 'Configuring Azure Files and Azure File Sync: networking/VPN and
     endpoints, monitoring and metrics, cloud tiering and redundancy, DFS integration,
@@ -44,9 +44,9 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure N
 - **Unclassified**: 19
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 2
-- **Unchanged**: 125
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 127
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-files/azure-files.csv`
 
@@ -65,16 +65,10 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure N
 
 ## Changes
 
-### New Pages
-
-- [Encryption at rest with customer-managed keys](https://learn.microsoft.com/en-us/azure/storage/files/customer-managed-keys)
-
 ### Updated Pages
 
-- [Monitor Azure File Sync](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-monitoring)
-  - Updated: 2025-09-17T17:10:00.000Z → 2026-05-08T06:13:00.000Z
-- [Create a classic file share](https://learn.microsoft.com/en-us/azure/storage/files/create-classic-file-share)
-  - Updated: 2026-04-09T22:25:00.000Z → 2026-05-08T08:00:00.000Z
+- [Azure File Sync release notes](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-release-notes)
+  - Updated: 2026-01-22T08:00:00.000Z → 2026-05-12T08:00:00.000Z
 
 ## Classified Pages
 
@@ -202,10 +196,10 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure N
 | [Share snapshots and restores](https://learn.microsoft.com/en-us/azure/storage/files/storage-snapshots-files) | 0.40 | Primarily a how-to/tutorial on creating and using Azure Files share snapshots via portal/PowerShell/CLI. The summary does not indicate specific numeric limits, configuration parameter tables, error-code-based troubleshooting, or other product-specific expert details; likely procedural rather than reference-style expert content. |
 | [Mount SMB file share on macOS](https://learn.microsoft.com/en-us/azure/storage/files/storage-how-to-use-files-mac) | 0.35 | Basic instructions for mounting Azure file shares on macOS using Finder/Terminal; does not expose deep configuration options, roles, or limits beyond generic usage. |
 | [Register a server with Azure File Sync](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-server-registration) | 0.35 | How-to for registering/unregistering servers; mostly procedural without detailed configuration tables or limits. |
-| [Azure File Sync release notes](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-release-notes) | 0.30 | Release notes are version history and change log; useful but not a stable skill type like limits, configuration, or troubleshooting mappings. |
 | [Cloud tiering overview](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-cloud-tiering-overview) | 0.30 | Explains the concept of cloud tiering and how it works, but the summary does not show concrete numeric thresholds, configuration parameter tables, or troubleshooting details; appears conceptual rather than expert configuration or limits. |
 | [Data protection overview](https://learn.microsoft.com/en-us/azure/storage/files/files-data-protection-overview) | 0.30 | High-level overview of Azure Files data protection options (soft delete, snapshots, backup, sync) without detailed numeric limits, configuration tables, or error-code-based troubleshooting. |
 | [Extend Windows file servers with Azure File Sync](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-extend-servers) | 0.30 | Tutorial-style extension of Windows file servers; likely step-by-step but not focused on config matrices, limits, or error mappings. |
+| [Azure File Sync release notes](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-release-notes) | 0.20 | Release notes typically list changes, fixes, and new features by version but do not systematically present limits, configuration matrices, error-code mappings, or other structured expert knowledge as defined by the sub-skill types. The description suggests version history rather than detailed quotas, configuration tables, or troubleshooting mappings. |
 | [Customer case studies](https://learn.microsoft.com/en-us/azure/storage/files/azure-files-case-study) | 0.20 | Customer case studies are narrative/marketing-style usage stories, not technical reference with limits, configs, or error mappings. They don't provide reusable expert configuration or troubleshooting knowledge. |
 | [Mount SMB file share on Windows](https://learn.microsoft.com/en-us/azure/storage/files/storage-how-to-use-files-windows) | 0.20 | Primarily a how-to tutorial for mounting SMB Azure file shares on Windows. While it may show commands, it is generic usage guidance without configuration tables, limits, or product-specific diagnostic/security details that rise to expert-knowledge level per the defined categories. |
 | [Overview of authorization and access control](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-authorization-overview) | 0.20 | Authorization overview describing concepts (share-level, directory-level, file-level, RBAC) without detailed role lists, parameter tables, or other concrete configuration data; primarily conceptual. |

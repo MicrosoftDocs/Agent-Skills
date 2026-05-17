@@ -1,9 +1,9 @@
 ---
 name: azure-database-migration
-description: Expert knowledge for Azure Database Migration service development including troubleshooting, decision making, limits & quotas, security, integrations & coding patterns, and deployment. Use when migrating SQL/MySQL/PostgreSQL/MongoDB with Azure DMS, SSIS to Azure SQL/MI, or automating via PowerShell, and other Azure Database Migration service related development tasks. Not for Azure Migrate (use azure-migrate), Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines).
+description: Expert knowledge for Azure Database Migration service development including troubleshooting, decision making, limits & quotas, security, integrations & coding patterns, and deployment. Use when planning Azure DMS migrations for SQL/MySQL/PostgreSQL, SSIS to Azure SQL/MI, or scripted PowerShell workflows, and other Azure Database Migration service related development tasks. Not for Azure Migrate (use azure-migrate), Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-10"
+  generated_at: "2026-05-17"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Database Migration service Skill
@@ -24,7 +24,7 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L34-L40 | Diagnosing and fixing Azure DMS issues: migration failures, classic DMS problems, and source database connectivity errors, including common causes, logs, and remediation steps. |
+| Troubleshooting | L34-L40 | Diagnosing and fixing common Azure DMS and DMS classic migration failures, including connectivity to source databases, configuration issues, and typical error messages. |
 | Decision Making | L41-L46 | Choosing the right Azure DMS tool and scenario for your source/target databases, plus FAQs on supported migrations, limitations, and how to use Azure Database Migration Service. |
 | Limits & Quotas | L47-L55 | Migration-specific limits, unsupported features, and constraints when using Azure DMS to move MySQL, PostgreSQL, SQL Managed Instance, MongoDB, and hybrid deployments. |
 | Security | L56-L61 | Security guidance for Azure DMS migrations, including SQL best practices (network, auth, encryption) and configuring custom RBAC roles for MySQL migration scenarios. |

@@ -1,9 +1,9 @@
 ---
 name: azure-data-api-builder
-description: Expert knowledge for Azure Data Api Builder development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when exposing SQL/Cosmos via REST/GraphQL, tuning pagination/filters, securing JWT/Entra auth, or deploying DAB to Azure, and other Azure Data Api Builder related development tasks. Not for Azure API Management (use azure-api-management), Azure Functions (use azure-functions), Azure App Service (use azure-app-service), Azure Logic Apps (use azure-logic-apps).
+description: Expert knowledge for Azure Data Api Builder development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when exposing SQL/Cosmos via DAB REST/GraphQL, tuning auth/RLS, timeouts/limits, or deploying SQL MCP Server, and other Azure Data Api Builder related development tasks. Not for Azure API Management (use azure-api-management), Azure Functions (use azure-functions), Azure App Service (use azure-app-service), Azure Logic Apps (use azure-logic-apps).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-10"
+  generated_at: "2026-05-17"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Data Api Builder Skill
@@ -24,19 +24,20 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L36-L47 | Diagnosing and fixing DAB issues: config/CLI errors, SQL/Cosmos/MySQL/Postgres connection or query problems, GraphQL schema/auth, REST routing, and CORS/endpoint failures. |
-| Best Practices | L48-L54 | Configuring Data API builder for reliability and performance, securing endpoints and auth, and adding semantic descriptions/metadata to SQL MCP entities for better AI integration. |
-| Decision Making | L55-L59 | Guidance on where and how to deploy Data API builder, plus feature-by-feature comparisons and limitations across supported databases. |
-| Limits & Quotas | L60-L67 | Configuring SQL timeouts, setting REST/GraphQL pagination limits, and understanding database-specific capabilities and constraints in Data API builder. |
-| Security | L68-L81 | Configuring auth and security for DAB: JWT/Entra/EasyAuth/Simulator/anonymous, OBO SQL access, row-level security and policies, and SQL MCP Server authentication. |
-| Configuration | L82-L127 | Configuring Data API builder: CLI-based config, entities and autoentities, data sources (SQL/Cosmos), REST/GraphQL exposure, caching, security/secrets, logging/telemetry, and MCP SQL tools. |
-| Integrations & Coding Patterns | L128-L141 | GraphQL/REST usage patterns in DAB: exporting schemas, transactional mutations, pagination, filtering, sorting, and shaping/projecting fields for API responses. |
-| Deployment | L142-L148 | Deploying Data API builder and SQL MCP Server: compare Azure options, run via Docker or source builds, and deploy containers to Azure Container Apps. |
+| Troubleshooting | L36-L48 | Diagnosing and fixing DAB issues: config/CLI errors, REST/CORS, GraphQL/authorization, SQL MCP, and database-specific problems for SQL Server, MySQL, PostgreSQL, and Cosmos DB. |
+| Best Practices | L49-L56 | Best practices for configuring and securing Data API builder, plus using SQL MCP Server with semantic entity descriptions and connecting it to local LLMs via Ollama |
+| Decision Making | L57-L61 | Guidance on where and how to deploy Data API builder, plus feature-by-feature comparisons and limitations across supported databases. |
+| Limits & Quotas | L62-L69 | Configuring SQL timeouts, setting REST/GraphQL pagination limits, and understanding database-specific capabilities and constraints in Data API builder. |
+| Security | L70-L83 | Configuring auth for Data API builder: JWT, Entra ID, EasyAuth, OBO flows, simulator/anonymous access, plus database row-level security and SQL MCP auth setup. |
+| Configuration | L84-L128 | Configuring Data API builder: CLI config management, entities/autoentities, data sources (SQL/Cosmos), caching, security/roles, GraphQL/REST exposure, telemetry, logging, and runtime behavior. |
+| Integrations & Coding Patterns | L129-L143 | GraphQL/REST query patterns in DAB: filtering, sorting, pagination, field projection, transactional mutations, schema export, and using SQL MCP DML tools from AI agents. |
+| Deployment | L144-L150 | Deploying Data API builder: hosting options, air-gapped setup, building/running from source, and deploying the SQL MCP Server to Azure Container Apps. |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
 | Validate DAB configuration and interpret CLI exit codes | https://learn.microsoft.com/en-us/azure/data-api-builder/command-line/dab-validate |
+| Resolve common issues in Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/faq |
 | Troubleshoot Azure Cosmos DB issues in Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/troubleshooting/cosmos |
 | Troubleshoot GraphQL schema and authorization in DAB | https://learn.microsoft.com/en-us/azure/data-api-builder/troubleshooting/graphql |
 | Diagnose and fix SQL MCP Server issues in DAB | https://learn.microsoft.com/en-us/azure/data-api-builder/troubleshooting/mcp |
@@ -51,6 +52,7 @@ This skill requires **network access** to fetch documentation content:
 | Apply configuration best practices in Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/config/best-practices |
 | Apply security best practices for Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/security/best-practices |
 | Add semantic descriptions to SQL MCP Server entities | https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/how-to-add-descriptions |
+| Connect SQL MCP Server to local LLMs with Ollama | https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/use-local-models |
 
 ### Decision Making
 | Topic | URL |
@@ -69,8 +71,8 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Select and configure authentication models in Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/security/ |
-| Configure custom JWT providers for Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/security/authenticate-custom |
-| Configure Azure App Service EasyAuth with Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/security/authenticate-easy-auth |
+| Configure custom JWT authentication for Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/security/authenticate-custom |
+| Use Azure App Service EasyAuth with Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/security/authenticate-easy-auth |
 | Configure Microsoft Entra ID auth for Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/security/authenticate-entra |
 | Configure On-Behalf-Of authentication for DAB SQL access | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/security/authenticate-on-behalf-of |
 | Use Simulator authentication for local DAB testing | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/security/authenticate-simulator |
@@ -83,13 +85,13 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Use DAB CLI commands to manage configuration and runtime | https://learn.microsoft.com/en-us/azure/data-api-builder/command-line/ |
-| Add entity definitions using DAB CLI dab add | https://learn.microsoft.com/en-us/azure/data-api-builder/command-line/dab-add |
+| Add entity definitions to DAB config via CLI | https://learn.microsoft.com/en-us/azure/data-api-builder/command-line/dab-add |
 | Configure DAB telemetry with OpenTelemetry and App Insights | https://learn.microsoft.com/en-us/azure/data-api-builder/command-line/dab-add-telemetry |
 | Create and manage autoentities via dab auto-config | https://learn.microsoft.com/en-us/azure/data-api-builder/command-line/dab-auto-config |
 | Simulate autoentities matches with dab auto-config-simulate | https://learn.microsoft.com/en-us/azure/data-api-builder/command-line/dab-auto-config-simulate |
-| Configure DAB runtime and data source via CLI | https://learn.microsoft.com/en-us/azure/data-api-builder/command-line/dab-configure |
-| Initialize Data API builder config with dab init | https://learn.microsoft.com/en-us/azure/data-api-builder/command-line/dab-init |
-| Update DAB entity configuration with dab update | https://learn.microsoft.com/en-us/azure/data-api-builder/command-line/dab-update |
+| Configure DAB runtime and data source settings | https://learn.microsoft.com/en-us/azure/data-api-builder/command-line/dab-configure |
+| Initialize Data API builder config with DAB CLI | https://learn.microsoft.com/en-us/azure/data-api-builder/command-line/dab-init |
+| Update Data API builder entity configuration via CLI | https://learn.microsoft.com/en-us/azure/data-api-builder/command-line/dab-update |
 | Control Data API builder caching via HTTP headers | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/cache/http-headers |
 | Configure Redis-based level 2 cache in Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/cache/level-2 |
 | Use @akv function with Azure Key Vault in DAB | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/config/akv-function |
@@ -121,7 +123,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure Data API builder entity definitions | https://learn.microsoft.com/en-us/azure/data-api-builder/configuration/entities |
 | Configure runtime section of Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/configuration/runtime |
 | Configure Data API builder runtime behavior | https://learn.microsoft.com/en-us/azure/data-api-builder/configuration/runtime |
-| Use SQL MCP Server DML tools for CRUD operations | https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/data-manipulation-language-tools |
 | Configure custom MCP tools for stored procedures in SQL MCP Server | https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/how-to-configure-custom-tools |
 | Run SQL MCP Server in stdio transport mode | https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/stdio-transport |
 
@@ -138,11 +139,12 @@ This skill requires **network access** to fetch documentation content:
 | Sort REST results with $orderby in DAB | https://learn.microsoft.com/en-us/azure/data-api-builder/keywords/orderby-rest |
 | Shape GraphQL selections and internal columns in DAB | https://learn.microsoft.com/en-us/azure/data-api-builder/keywords/select-graphql |
 | Use $select to project REST fields in DAB | https://learn.microsoft.com/en-us/azure/data-api-builder/keywords/select-rest |
+| Use SQL MCP Server DML tools from AI agents | https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/data-manipulation-language-tools |
 
 ### Deployment
 | Topic | URL |
 |-------|-----|
-| Compare Data API builder deployment options in Azure | https://learn.microsoft.com/en-us/azure/data-api-builder/deployment/ |
-| Run Data API builder in a Docker container | https://learn.microsoft.com/en-us/azure/data-api-builder/deployment/local-container |
+| Choose deployment options for Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/deployment/ |
+| Deploy Data API builder in air-gapped environments | https://learn.microsoft.com/en-us/azure/data-api-builder/deployment/air-gapped |
 | Build and run Data API builder from source | https://learn.microsoft.com/en-us/azure/data-api-builder/deployment/run-from-source |
 | Deploy SQL MCP Server to Azure Container Apps | https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/quickstart-azure-container-apps |

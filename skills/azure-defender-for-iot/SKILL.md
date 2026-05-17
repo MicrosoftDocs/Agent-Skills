@@ -3,7 +3,7 @@ name: azure-defender-for-iot
 description: Expert knowledge for Azure Defender For Iot development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when deploying OT sensors, configuring micro agents, mirroring OT traffic, integrating with SIEM/Sentinel, or tuning alerts, and other Azure Defender For Iot related development tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure IoT (use azure-iot), Azure IoT Hub (use azure-iot-hub), Azure Security (use azure-security).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-10"
+  generated_at: "2026-05-17"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Defender For Iot Skill

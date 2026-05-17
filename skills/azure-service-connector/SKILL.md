@@ -1,9 +1,9 @@
 ---
 name: azure-service-connector
-description: Expert knowledge for Azure Service Connector development including troubleshooting, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when wiring Azure compute to databases, messaging, storage, AI services, or Key Vault via Service Connector, and other Azure Service Connector related development tasks. Not for Azure API Management (use azure-api-management), Azure App Service (use azure-app-service), Azure Functions (use azure-functions), Azure Logic Apps (use azure-logic-apps).
+description: Expert knowledge for Azure Service Connector development including troubleshooting, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when wiring Azure compute to DBs, storage, messaging, AI services, managing auth, regions, IaC, or connection limits, and other Azure Service Connector related development tasks. Not for Azure API Management (use azure-api-management), Azure App Service (use azure-app-service), Azure Functions (use azure-functions), Azure Logic Apps (use azure-logic-apps).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-03"
+  generated_at: "2026-05-17"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Service Connector Skill
@@ -24,16 +24,17 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L34-L38 | Diagnosing and resolving Azure Service Connector failures, including common error codes, connection issues, and step-by-step troubleshooting for misconfigurations. |
-| Limits & Quotas | L39-L43 | Limits on number/types of connections, supported scenarios, and guidance to mitigate Service Connector constraints or unsupported configurations. |
-| Security | L44-L50 | Service Connector security, required permissions and Microsoft Entra roles, and how to configure and choose authentication methods for connected services |
-| Configuration | L51-L57 | How to define and retrieve Service Connector connection settings, choose and configure auth methods, and supply correct CLI/IaC parameters for creating connections |
-| Integrations & Coding Patterns | L58-L90 | How to connect Azure compute to databases, messaging, storage, AI, and config services using Service Connector, including auth patterns, setup steps, and integration examples. |
-| Deployment | L91-L94 | Info on where Service Connector is regionally supported per compute service and how to create connections using infrastructure-as-code tools. |
+| Troubleshooting | L34-L39 | Diagnosing and resolving common Azure Service Connector errors, connection failures, auth/permission issues, and configuration problems across supported services and runtimes. |
+| Limits & Quotas | L40-L44 | Limits on number/types of connections, supported scenarios, and guidance to mitigate Service Connector constraints or unsupported configurations. |
+| Security | L45-L51 | Service Connector security, required permissions and Microsoft Entra roles, and how to configure and choose authentication methods for connected services |
+| Configuration | L52-L58 | How to define and retrieve Service Connector connection settings, choose and configure auth methods, and supply correct CLI/IaC parameters for creating connections |
+| Integrations & Coding Patterns | L59-L91 | How to connect Azure compute to databases, messaging, storage, AI, and config services using Service Connector, including auth patterns, setup steps, and integration examples. |
+| Deployment | L92-L95 | Info on where Service Connector is regionally supported per compute service and how to create connections using infrastructure-as-code tools. |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
+| Resolve common Azure Service Connector issues | https://learn.microsoft.com/en-us/azure/service-connector/faq |
 | Diagnose and fix Azure Service Connector errors | https://learn.microsoft.com/en-us/azure/service-connector/how-to-troubleshoot-front-end-error |
 
 ### Limits & Quotas

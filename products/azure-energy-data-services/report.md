@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-19'
+generated_at: '2026-05-17'
 category_descriptions:
   decision-making: Guidance on choosing ADME deployment tiers (Developer vs Standard)
     and checking which OSDU data/compute services and capabilities are available in
@@ -48,8 +48,8 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 52
+- **Updated Pages**: 1
+- **Unchanged**: 51
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-energy-data-services/azure-energy-data-services.csv`
 
@@ -67,6 +67,11 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 | *(Unclassified)* | 18 | 34.6% |
 
 ## Changes
+
+### Updated Pages
+
+- [FAQ](https://learn.microsoft.com/en-us/azure/energy-data-services/faq-energy-data-services)
+  - Updated: 2026-02-11T18:17:00Z → 2026-02-11T18:17:00.000Z
 
 ## Classified Pages
 
@@ -122,10 +127,10 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 | [Release notes](https://learn.microsoft.com/en-us/azure/energy-data-services/release-notes) | 0.40 | Release notes summary; underlying page may have expert details but summary provided does not indicate specific limits, configs, or error codes. |
 | [Create a Microsoft Azure Data Manager for Energy instance](https://learn.microsoft.com/en-us/azure/energy-data-services/quickstart-create-microsoft-energy-data-services-instance) | 0.30 | Quickstart creation guide; likely step-by-step portal usage without detailed configuration matrices or limits. |
 | [Domain Data Management Services (DDMS)](https://learn.microsoft.com/en-us/azure/energy-data-services/concepts-ddms) | 0.30 | DDMS concepts article; conceptual extension model, not concrete config or troubleshooting. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/energy-data-services/faq-energy-data-services) | 0.30 | FAQ pages are often high-level and mixed; the summary does not indicate detailed limits tables, configuration parameters, or error-code-based troubleshooting. Likely general Q&A rather than concentrated expert configuration/troubleshooting content. |
 | [Indexing and search](https://learn.microsoft.com/en-us/azure/energy-data-services/concepts-index-and-search) | 0.30 | Index and search workflow concepts; high-level behavior, not configuration or limits. |
 | [About Domain Data Management Services (DDMS)](https://learn.microsoft.com/en-us/azure/energy-data-services/overview-ddms) | 0.20 | Conceptual overview of domain data management services; no specific parameters, limits, or troubleshooting mappings. |
 | [About Microsoft Azure Data Manager for Energy](https://learn.microsoft.com/en-us/azure/energy-data-services/overview-microsoft-energy-data-services) | 0.20 | High-level product overview without concrete limits, configs, or error details. |
 | [Change tier for seismic workloads](https://learn.microsoft.com/en-us/azure/energy-data-services/tutorial-seismic-change-tier) | 0.20 | Tutorial-style guidance on changing storage tiers (Hot/Cool/Cold) for seismic datasets; no evidence of numeric limits, configuration parameter tables, error codes, or decision matrices with quantified trade-offs. Content appears conceptual/operational rather than detailed expert reference. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/energy-data-services/faq-energy-data-services) | 0.20 | FAQ content is primarily conceptual and descriptive about Azure Data Manager for Energy; it does not focus on numeric limits, detailed configuration parameters, error-code-based troubleshooting, or decision matrices with quantified trade-offs. |
 | [Syncing Reference data values](https://learn.microsoft.com/en-us/azure/energy-data-services/concepts-reference-data-values) | 0.20 | Described as an overview of reference data values and synchronization with OSDU standards; no indication of numeric limits, configuration parameter tables, error codes, or other product-specific expert details. |
 | [Partners](https://learn.microsoft.com/en-us/azure/energy-data-services/resources-partner-solutions) | 0.10 | Partner solutions listing is marketing/ecosystem content, not technical configuration, limits, or troubleshooting guidance. |

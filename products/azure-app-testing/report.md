@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Test Plans (use azure-test-plans), Azure DevOp
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 71
+- **Updated Pages**: 0
+- **Unchanged**: 72
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-app-testing/azure-app-testing.csv`
 
@@ -75,11 +75,6 @@ confusable_not_for: Not for Azure Test Plans (use azure-test-plans), Azure DevOp
 | *(Unclassified)* | 15 | 20.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [Supported Azure resource types](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/resource-supported-azure-resource-types)
-  - Updated: 2026-02-13T18:11:00.000Z → 2026-05-08T17:37:00.000Z
 
 ## Classified Pages
 

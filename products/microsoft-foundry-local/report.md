@@ -37,9 +37,9 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 - **Unclassified**: 10
 
 ### Incremental Update
-- **New Pages**: 3
-- **Updated Pages**: 1
-- **Unchanged**: 19
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 23
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/microsoft-foundry-local/microsoft-foundry-local.csv`
 
@@ -54,17 +54,6 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 | *(Unclassified)* | 10 | 43.5% |
 
 ## Changes
-
-### New Pages
-
-- [Build a RAG application](https://learn.microsoft.com/en-us/azure/foundry-local/tutorials/tutorial-build-rag-app)
-- [Generate text embeddings](https://learn.microsoft.com/en-us/azure/foundry-local/how-to/how-to-generate-embeddings)
-- [Live transcribe audio (speech-to-text) from a microphone](https://learn.microsoft.com/en-us/azure/foundry-local/how-to/how-to-live-transcribe-audio)
-
-### Updated Pages
-
-- [Compile Hugging Face models to run on Foundry Local](https://learn.microsoft.com/en-us/azure/foundry-local/how-to/how-to-compile-hugging-face-models)
-  - Updated: 2026-04-09T17:17:00.000Z → 2026-05-04T22:19:00.000Z
 
 ## Classified Pages
 

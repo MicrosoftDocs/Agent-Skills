@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-10'
+generated_at: '2026-05-17'
 category_descriptions:
   deployment: 'Using App Configuration in CI/CD: exporting/importing settings, creating
     snapshots, integrating with Azure Pipelines, GitHub Actions, and Helm/Kubernetes
@@ -7,8 +7,8 @@ category_descriptions:
   decision-making: Guidance on App Configuration client library support lifecycles
     and how to upgrade Spring Boot apps to use App Configuration library v6.
   integrations: Patterns and code samples for integrating Azure App Configuration
-    into apps (web, Functions, AKS, AI), using providers, dynamic refresh, feature
-    flags/filters, Key Vault, and REST APIs.
+    into .NET, Go, JavaScript, Python, AKS, Event Grid, and AI apps, including dynamic
+    config, feature flags, filters, and REST/Key Vault usage
   configuration: 'Configuring App Configuration behavior: feature flags, filters,
     snapshots, geo-replication, soft delete, Kubernetes provider, emulator, dynamic
     refresh, and AI/chat completion settings.'
@@ -28,29 +28,27 @@ skill_description: Expert knowledge for Azure App Configuration development incl
   integrations & coding patterns, and deployment. Use when using feature flags, dynamic
   refresh, snapshots, Key Vault integration, or App Configuration REST APIs, and other
   Azure App Configuration related development tasks. Not for Azure App Service (use
-  azure-app-service), Azure Key Vault (use azure-key-vault), Azure Automation (use
-  azure-automation), Azure Policy (use azure-policy).
+  azure-app-service), Azure Key Vault (use azure-key-vault), Azure Portal (use azure-portal).
 use_when: Use when using feature flags, dynamic refresh, snapshots, Key Vault integration,
   or App Configuration REST APIs, and other Azure App Configuration related development
   tasks.
 confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Key Vault
-  (use azure-key-vault), Azure Automation (use azure-automation), Azure Policy (use
-  azure-policy).
+  (use azure-key-vault), Azure Portal (use azure-portal).
 ---
 # Azure App Configuration Crawl Report
 
 ## Summary
 
-- **Total Pages**: 162
-- **Fetched**: 162
+- **Total Pages**: 163
+- **Fetched**: 163
 - **Fetch Failed**: 0
-- **Classified**: 132
+- **Classified**: 133
 - **Unclassified**: 30
 
 ### Incremental Update
 - **New Pages**: 1
 - **Updated Pages**: 1
-- **Unchanged**: 160
+- **Unchanged**: 161
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-app-configuration/azure-app-configuration.csv`
 
@@ -59,25 +57,25 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Key
 | Type | Count | Percentage |
 |------|-------|------------|
 | best-practices | 1 | 0.6% |
-| configuration | 15 | 9.3% |
+| configuration | 15 | 9.2% |
 | decision-making | 2 | 1.2% |
 | deployment | 6 | 3.7% |
-| integrations | 85 | 52.5% |
+| integrations | 86 | 52.8% |
 | limits-quotas | 5 | 3.1% |
-| security | 17 | 10.5% |
+| security | 17 | 10.4% |
 | troubleshooting | 1 | 0.6% |
-| *(Unclassified)* | 30 | 18.5% |
+| *(Unclassified)* | 30 | 18.4% |
 
 ## Changes
 
 ### New Pages
 
-- [Spring Boot](https://learn.microsoft.com/en-us/azure/azure-app-configuration/how-to-time-window-filter-spring-boot)
+- [.NET](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-ai-agent-config-dotnet)
 
 ### Updated Pages
 
-- [Feature management](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-feature-flag-spring-boot)
-  - Updated: 2026-03-16T08:00:00.000Z → 2026-05-07T06:30:00.000Z
+- [Frequently asked questions](https://learn.microsoft.com/en-us/azure/azure-app-configuration/faq)
+  - Updated: 2026-02-05T12:11:00Z → 2026-02-05T12:11:00.000Z
 
 ## Classified Pages
 
@@ -190,6 +188,7 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Key
 | [Upgrade guide to version 6](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-convert-to-the-new-spring-boot) | decision-making | 0.70 | Describes breaking changes and required actions to upgrade; provides concrete migration guidance and decisions between old and new setups. |
 | [Use Event Grid for data change notifications](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-app-configuration-event) | integrations | 0.70 | Step-by-step for event subscriptions to web endpoints; includes Event Grid subscription settings and endpoint configuration specific to App Configuration events. |
 | [Use configuration files](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-config-file) | configuration | 0.70 | Covers import tooling, KVSet, and file content profiles; these are product-specific configuration constructs and formats not generally known. |
+| [.NET](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-ai-agent-config-dotnet) | integrations | 0.68 | The page is a concrete how-to for wiring up the Agent Framework in a .NET console app using Azure App Configuration to load YAML agent specs. It includes product-specific code patterns and configuration usage (e.g., how to structure and load agent YAML, how to bind it into the Agent Framework, and how to connect App Configuration to the app). This is integration-focused, with detailed coding patterns unique to Azure App Configuration and the Agent Framework, rather than just a generic tutorial. |
 | [ASP.NET Core](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-targetingfilter-aspnet-core) | integrations | 0.65 | How-to for using the Azure App Configuration targeting filter in ASP.NET Core; likely includes SDK-specific options and parameter names for feature filters beyond generic concepts. |
 | [ASP.NET Core](https://learn.microsoft.com/en-us/azure/azure-app-configuration/use-key-vault-references-dotnet-core) | integrations | 0.65 | Tutorial for using Key Vault references via the App Configuration provider; typically includes provider options, connection settings, and integration-specific patterns beyond generic SDK usage. |
 | [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/azure-app-configuration/policy-reference) | security | 0.65 | Index of built-in policies for App Configuration; each policy encodes specific security/compliance rules and effects, which are product-specific. |
@@ -237,7 +236,7 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Key
 | [Resiliency and disaster recovery](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-disaster-recovery) | 0.40 | Resiliency and disaster recovery overview for App Configuration; summary shows conceptual guidance about geo-replication and high availability without concrete numeric thresholds, configuration tables, or decision matrices. |
 | [ARM template](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-resource-manager) | 0.30 | ARM template quickstart; focuses on basic deployment example, not on exhaustive configuration options, limits, or troubleshooting. |
 | [Bicep](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-bicep) | 0.30 | Basic Bicep quickstart for creating a store; mostly generic IaC deployment steps without detailed configuration matrices or constraints. |
-| [Frequently asked questions](https://learn.microsoft.com/en-us/azure/azure-app-configuration/faq) | 0.30 | FAQ may contain some specifics but summary suggests conceptual Q&A (e.g., differences vs Key Vault) without clear limits, configs, or error mappings. |
+| [Frequently asked questions](https://learn.microsoft.com/en-us/azure/azure-app-configuration/faq) | 0.30 | FAQ content is mostly conceptual and comparative (for example, differences from Key Vault) without detailed numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices that meet the expert-knowledge criteria. |
 | [Spring Boot](https://learn.microsoft.com/en-us/azure/azure-app-configuration/how-to-time-window-filter-spring-boot) | 0.30 | How-to tutorial for using time window filters with feature flags in Spring Boot; focuses on step-by-step usage, not on detailed configuration tables, limits, error codes, or product-specific best-practice matrices. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/azure-app-configuration/cli-samples) | 0.20 | Index of CLI sample scripts; no detailed configuration tables, limits, or troubleshooting content indicated. |
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/azure-app-configuration/powershell-samples) | 0.20 | Index of PowerShell sample scripts; navigation content without product-specific limits, configs, or troubleshooting mappings. |

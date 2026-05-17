@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-10'
+generated_at: '2026-05-17'
 category_descriptions:
   configuration: 'Configuring Azure Load Balancer behavior: backends/frontends (incl.
     cross-subscription, IP-based, outbound-only), rules, health probes, traffic distribution,
@@ -12,9 +12,9 @@ category_descriptions:
   decision-making: 'Guidance on choosing the right Load Balancer SKU and step‑by‑step
     migrations: Basic→Standard, NAT rules v1→v2, and moving workloads from AWS NLB
     to Azure Load Balancer'
-  limits-quotas: 'Limits, behaviors, and configuration of Load Balancer connections:
-    SNAT/flow limits, TCP idle timeout settings, and when/why TCP resets occur and
-    how to control them'
+  limits-quotas: Load Balancer connection limits, SNAT/port behaviors, TCP idle timeout
+    configuration, and how/when TCP resets occur for troubleshooting connectivity
+    issues.
   troubleshooting: 'Diagnosing and fixing Azure Load Balancer issues: deployment errors,
     health events/logs, probes, connectivity/backend traffic, SNAT/timeouts, IMDS
     errors, and resource health/availability.'
@@ -28,16 +28,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Load Balancer development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when configuring SNAT/outbound rules, health probes, VMSS backends, IMDS/Monitor
-  APIs, or Basic→Standard migrations, and other Azure Load Balancer related development
+  Use when configuring frontends/backends, SNAT/outbound rules, health probes, NAT
+  rules v2, or IMDS/Monitor integrations, and other Azure Load Balancer related development
   tasks. Not for Azure Application Gateway (use azure-application-gateway), Azure
-  Traffic Manager (use azure-traffic-manager), Azure Front Door (use azure-front-door),
+  Front Door (use azure-front-door), Azure Traffic Manager (use azure-traffic-manager),
   Azure Virtual Network (use azure-virtual-network).
-use_when: Use when configuring SNAT/outbound rules, health probes, VMSS backends,
-  IMDS/Monitor APIs, or Basic→Standard migrations, and other Azure Load Balancer related
+use_when: Use when configuring frontends/backends, SNAT/outbound rules, health probes,
+  NAT rules v2, or IMDS/Monitor integrations, and other Azure Load Balancer related
   development tasks.
 confusable_not_for: Not for Azure Application Gateway (use azure-application-gateway),
-  Azure Traffic Manager (use azure-traffic-manager), Azure Front Door (use azure-front-door),
+  Azure Front Door (use azure-front-door), Azure Traffic Manager (use azure-traffic-manager),
   Azure Virtual Network (use azure-virtual-network).
 ---
 # Azure Load Balancer Crawl Report
@@ -76,8 +76,8 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 
 ### Updated Pages
 
-- [Multiple frontends](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-multivip-overview)
-  - Updated: 2024-04-14T11:33:00.000Z → 2026-05-04T22:15:00.000Z
+- [FAQ](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-faqs)
+  - Updated: 2026-04-14T22:21:00Z → 2026-04-14T22:21:00.000Z
 
 ## Classified Pages
 
@@ -90,7 +90,7 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Manage health probes](https://learn.microsoft.com/en-us/azure/load-balancer/manage-probes-how-to) | configuration | 0.80 | Management article for health probes; includes probe types, properties, and the specific probe source IP 168.63.129.16 that must be allowed, which is product-specific configuration detail. |
 | [Secure your load balancer](https://learn.microsoft.com/en-us/azure/load-balancer/secure-load-balancer) | security | 0.80 | Explicitly a security hardening article for Azure Load Balancer; likely includes product-specific security settings, NSG guidance, and RBAC considerations. |
 | [Upgrade options and guidance](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-basic-upgrade-guidance) | decision-making | 0.80 | Upgrade guidance between SKUs with recommendations, differences, and migration considerations; helps decide how and when to move to Standard. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-faqs) | limits-quotas | 0.78 | The FAQ includes product-specific numeric limits and behaviors (for example, SNAT port counts, backend pool size limits, timeout values, and other concrete constraints) that qualify as limits-quotas expert knowledge beyond generic conceptual information. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-faqs) | limits-quotas | 0.78 | FAQ includes product-specific behaviors and several concrete limits (for example SNAT port counts, timeout durations, and other numeric constraints) that qualify as expert knowledge beyond generic concepts, fitting the limits-quotas category best. |
 | [Manage admin state](https://learn.microsoft.com/en-us/azure/load-balancer/manage-admin-state-how-to) | configuration | 0.75 | Describes Admin State feature with specific values (Up, Down, None) and how to set/update/remove via portal/CLI/PowerShell; clearly a product-specific configuration option. |
 | [Migrate Inbound NAT Pools to NAT Rules](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-nat-pool-migration) | decision-making | 0.75 | Migration guide between NAT rules versions with a retirement date and upgrade guidance; contains product-specific migration considerations and when/how to move. |
 | [Backend Pool management](https://learn.microsoft.com/en-us/azure/load-balancer/backend-pool-management) | configuration | 0.70 | Backend pool management article focusing on configuration by IP address and VNet ID; includes product-specific backend pool configuration options and behaviors. |

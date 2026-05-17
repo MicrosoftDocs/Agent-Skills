@@ -1,9 +1,9 @@
 ---
 name: azure-key-vault
-description: Expert knowledge for Azure Key Vault development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Key Vault/Managed HSM for keys, secrets, certs, BYOK, rotation, or Private Link–secured access, and other Azure Key Vault related development tasks. Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure Cloud Hsm (use azure-cloud-hsm), Azure Payment Hsm (use azure-payment-hsm), Azure Information Protection (use azure-information-protection).
+description: Expert knowledge for Azure Key Vault development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Key Vault with Event Grid, Private Link, Managed HSM, BYOK imports, or automated key/secret rotation, and other Azure Key Vault related development tasks. Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure Cloud Hsm (use azure-cloud-hsm), Azure Payment Hsm (use azure-payment-hsm), Azure Information Protection (use azure-information-protection).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-10"
+  generated_at: "2026-05-17"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Key Vault Skill
@@ -28,10 +28,10 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L45-L55 | Best practices for HSM/BYOK key generation and transfer, secure key management, disaster recovery for Managed HSM, and automating single/dual-credential secret rotation in Key Vault. |
 | Decision Making | L56-L62 | Guidance on planning key and HSM capacity, scaling, and migrating cryptographic workloads or Key Vault access control from access policies to RBAC |
 | Limits & Quotas | L63-L73 | Key Vault and Managed HSM limits: throttling, quotas, logging latency, secret size, soft-delete/recovery, and network/IP firewall configuration. |
-| Security | L74-L98 | Securing Key Vault and Managed HSM: auth, RBAC vs access policies, network/firewall/private endpoints, Zero Trust, backups/soft-delete, and hardening/security best practices. |
-| Configuration | L99-L122 | Configuring Key Vault and Managed HSM: monitoring, alerts, logging, policies, key types/rotation/secure release, BYOK imports, ARM templates, and special secret formats. |
-| Integrations & Coding Patterns | L123-L151 | How to integrate Key Vault with CAs, Event Grid, Private Link, Databricks, and use language SDKs (Go/.NET/Python/JS) for keys, secrets, certs, backup/restore, rotation, and crypto. |
-| Deployment | L152-L155 | How to deploy and provision Azure Key Vault and Managed HSM (vaults, keys, secrets) using ARM templates, Bicep, Terraform, Azure CLI, and PowerShell |
+| Security | L74-L98 | Securing Key Vault and Managed HSM: auth, RBAC vs access policies, network/firewall, private endpoints, backups, soft delete, Zero Trust, and security best practices for keys, secrets, and certs. |
+| Configuration | L99-L121 | Configuring Key Vault and Managed HSM: monitoring, alerts, logging, policies, key types/rotation/secure release, BYOK imports, ARM templates, and special secret formats. |
+| Integrations & Coding Patterns | L122-L146 | Integrating Key Vault with Event Grid, Private Link, DigiCert, Databricks, Managed HSM TLS offload, and JavaScript code samples for managing keys/secrets and crypto operations |
+| Deployment | L147-L150 | How to deploy and provision Azure Key Vault and Managed HSM (vaults, keys, secrets) using ARM templates, Bicep, Terraform, Azure CLI, and PowerShell |
 
 ### Troubleshooting
 | Topic | URL |
@@ -77,7 +77,7 @@ This skill requires **network access** to fetch documentation content:
 | Apply security best practices for Key Vault certificates | https://learn.microsoft.com/en-us/azure/key-vault/certificates/secure-certificates |
 | Allow Azure Key Vault access from clients behind firewalls | https://learn.microsoft.com/en-us/azure/key-vault/general/access-behind-firewall |
 | Prepare for Azure Key Vault RBAC default and API retirement | https://learn.microsoft.com/en-us/azure/key-vault/general/access-control-default |
-| Assign Key Vault access policies with Azure CLI | https://learn.microsoft.com/en-us/azure/key-vault/general/assign-access-policy |
+| Configure Azure Key Vault access policies with CLI | https://learn.microsoft.com/en-us/azure/key-vault/general/assign-access-policy |
 | Configure authentication to Azure Key Vault with Entra ID | https://learn.microsoft.com/en-us/azure/key-vault/general/authentication |
 | Configure network security options for Azure Key Vault | https://learn.microsoft.com/en-us/azure/key-vault/general/network-security |
 | Secure Key Vault access with virtual network service endpoints | https://learn.microsoft.com/en-us/azure/key-vault/general/overview-vnet-service-endpoints |
@@ -105,7 +105,6 @@ This skill requires **network access** to fetch documentation content:
 | Enable and configure Azure Key Vault diagnostic logging | https://learn.microsoft.com/en-us/azure/key-vault/general/howto-logging |
 | Configure monitoring for Azure Key Vault with Azure Monitor | https://learn.microsoft.com/en-us/azure/key-vault/general/monitor-key-vault |
 | Reference for Azure Key Vault monitoring metrics and logs | https://learn.microsoft.com/en-us/azure/key-vault/general/monitor-key-vault-reference |
-| Create Azure Key Vault using ARM template settings | https://learn.microsoft.com/en-us/azure/key-vault/general/vault-create-template |
 | Use supported key types and algorithms in Azure Key Vault | https://learn.microsoft.com/en-us/azure/key-vault/keys/about-keys-details |
 | Follow BYOK specification for importing HSM keys to Key Vault | https://learn.microsoft.com/en-us/azure/key-vault/keys/byok-specification |
 | Configure automatic cryptographic key rotation in Azure Key Vault | https://learn.microsoft.com/en-us/azure/key-vault/keys/how-to-configure-key-rotation |
@@ -124,9 +123,6 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Integrate Azure Key Vault with DigiCert CA | https://learn.microsoft.com/en-us/azure/key-vault/certificates/how-to-integrate-certificate-authority |
-| Use Go Key Vault certificates client library | https://learn.microsoft.com/en-us/azure/key-vault/certificates/quick-create-go |
-| Use .NET Key Vault certificates client library | https://learn.microsoft.com/en-us/azure/key-vault/certificates/quick-create-net |
-| Use Python Key Vault certificates client library | https://learn.microsoft.com/en-us/azure/key-vault/certificates/quick-create-python |
 | Trigger Logic Apps from Key Vault events via Event Grid | https://learn.microsoft.com/en-us/azure/key-vault/general/event-grid-logicapps |
 | Integrate Azure Key Vault events with Azure Event Grid | https://learn.microsoft.com/en-us/azure/key-vault/general/event-grid-overview |
 | Handle Azure Key Vault notifications with Event Grid and Automation | https://learn.microsoft.com/en-us/azure/key-vault/general/event-grid-tutorial |
@@ -144,7 +140,6 @@ This skill requires **network access** to fetch documentation content:
 | Back up and restore Key Vault secrets in JavaScript | https://learn.microsoft.com/en-us/azure/key-vault/secrets/javascript-developer-guide-backup-secrets |
 | Delete and purge Key Vault secrets with JavaScript | https://learn.microsoft.com/en-us/azure/key-vault/secrets/javascript-developer-guide-delete-secret |
 | Enable or disable Key Vault secrets using JavaScript | https://learn.microsoft.com/en-us/azure/key-vault/secrets/javascript-developer-guide-enable-disable-secret |
-| List and find Key Vault secrets using JavaScript | https://learn.microsoft.com/en-us/azure/key-vault/secrets/javascript-developer-guide-find-secret |
 | Retrieve Azure Key Vault secrets with JavaScript | https://learn.microsoft.com/en-us/azure/key-vault/secrets/javascript-developer-guide-get-secret |
 | Use Azure Key Vault secrets from JavaScript applications | https://learn.microsoft.com/en-us/azure/key-vault/secrets/javascript-developer-guide-get-started |
 | Create, update, and rotate Key Vault secrets with JavaScript | https://learn.microsoft.com/en-us/azure/key-vault/secrets/javascript-developer-guide-set-update-rotate-secret |

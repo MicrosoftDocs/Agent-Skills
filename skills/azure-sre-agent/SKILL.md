@@ -1,14 +1,14 @@
 ---
 name: azure-sre-agent
-description: Expert knowledge for Azure Sre Agent development including troubleshooting, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when wiring SRE Agent to DevOps/Teams/ServiceNow, configuring tools/subagents, securing RBAC, querying KQL, or tracking AI Unit usage, and other Azure Sre Agent related development tasks. Not for Azure Monitor (use azure-monitor), Azure Reliability (use azure-reliability), Azure Resiliency (use azure-resiliency), Azure Service Health (use azure-service-health).
+description: Expert knowledge for Azure Sre Agent development including troubleshooting, decision making, security, configuration, integrations & coding patterns, and deployment. Use when wiring SRE Agent to DevOps/GitHub/PagerDuty, configuring tools/subagents, KQL telemetry, IaC deploy, or RBAC, and other Azure Sre Agent related development tasks. Not for Azure Monitor (use azure-monitor), Azure Reliability (use azure-reliability), Azure Resiliency (use azure-resiliency), Azure Service Health (use azure-service-health).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-10"
+  generated_at: "2026-05-17"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Sre Agent Skill
 
-This skill provides expert guidance for Azure Sre Agent. Covers troubleshooting, decision making, limits & quotas, security, configuration, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Sre Agent. Covers troubleshooting, decision making, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -25,11 +25,11 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L34-L40 | Diagnosing and fixing SRE Agent deployment/operation issues, querying its telemetry and actions with KQL, and troubleshooting Java performance on AKS using the agent |
-| Decision Making | L41-L49 | Guidance on when to use deep investigations, choose Log Analytics vs App Insights, understand pricing and regions, and interpret incident value metrics for Azure SRE Agent decisions. |
-| Limits & Quotas | L50-L54 | Tracking Azure SRE Agent usage, AI Unit consumption, limits, and understanding how pricing, billing units, and quotas affect your workloads. |
-| Security | L55-L65 | Identity, auth, and RBAC for SRE Agent: managed identities, ADO and ServiceNow auth, roles, permissions, and subscription/resource access configuration. |
-| Configuration | L66-L77 | Configuring SRE Agent behavior: hooks and governance, custom tools/skills, specialized subagents, network/firewall settings, and enabling/using the Python/shell Code Interpreter via UI or REST API |
-| Integrations & Coding Patterns | L78-L92 | Integrating Azure SRE Agent with DevOps, GitHub, Teams, ServiceNow, PagerDuty, Kusto, observability tools, and custom HTTP/Python/MCP tools for automation and incident workflows |
+| Decision Making | L41-L48 | Guidance on when to run deep investigations, choose Log Analytics vs App Insights connectors, estimate and manage SRE Agent costs, and select supported Azure regions. |
+| Security | L49-L59 | Identity, auth, and RBAC for SRE Agent: managed identities, ADO and ServiceNow auth, roles, permissions, and subscription/resource access configuration. |
+| Configuration | L60-L71 | Configuring SRE Agent behavior: hooks and governance, custom tools/skills, specialized subagents, network/firewall settings, and enabling/using the Python/shell Code Interpreter via UI or REST API |
+| Integrations & Coding Patterns | L72-L88 | Connecting SRE Agent to DevOps, GitHub, PagerDuty, observability tools, and defining Python/Kusto tools and REST usage patterns for automated SRE workflows. |
+| Deployment | L89-L92 | How to deploy Azure SRE Agent using Infrastructure-as-Code templates, including required resources, parameters, and environment configuration steps. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -43,14 +43,8 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Decide when to use deep investigation in Azure SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/deep-investigation |
 | Decide when to use Log Analytics and App Insights connectors in SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/log-analytics-app-insights |
-| Understand Azure SRE Agent pricing and cost drivers | https://learn.microsoft.com/en-us/azure/sre-agent/pricing-billing |
+| Estimate and control Azure SRE Agent costs | https://learn.microsoft.com/en-us/azure/sre-agent/pricing-billing |
 | Select supported Azure regions for SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/supported-regions |
-| Analyze and interpret incident value metrics in SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/track-incident-value |
-
-### Limits & Quotas
-| Topic | URL |
-|-------|-----|
-| Monitor Azure SRE Agent usage and Azure AI Unit limits | https://learn.microsoft.com/en-us/azure/sre-agent/monitor-agent-usage |
 
 ### Security
 | Topic | URL |
@@ -79,6 +73,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Connect Azure DevOps to Azure SRE Agent for code and work items | https://learn.microsoft.com/en-us/azure/sre-agent/ado-connector |
+| Use Azure SRE Agent REST APIs securely | https://learn.microsoft.com/en-us/azure/sre-agent/api-reference |
 | Connect Azure DevOps wikis as knowledge sources for SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/azure-devops-wiki-knowledge |
 | Connect Azure DevOps wiki as SRE Agent knowledge source | https://learn.microsoft.com/en-us/azure/sre-agent/connect-devops-wiki |
 | Configure PagerDuty integration for Azure SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/connect-pagerduty |
@@ -90,3 +85,8 @@ This skill requires **network access** to fetch documentation content:
 | Integrate PagerDuty incidents with Azure SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/pagerduty-incidents |
 | Create and configure Python tools for Azure SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/python-code-execution |
 | Connect PagerDuty incidents to Azure SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/set-up-pagerduty-indexing |
+
+### Deployment
+| Topic | URL |
+|-------|-----|
+| Deploy Azure SRE Agent with IaC templates | https://learn.microsoft.com/en-us/azure/sre-agent/deploy-iac |

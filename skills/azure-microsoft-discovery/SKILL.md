@@ -1,9 +1,9 @@
 ---
 name: azure-microsoft-discovery
-description: Expert knowledge for Azure Microsoft Discovery development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring Discovery workspaces, supercomputers, tools/agents, Kusto queries, or REST-based job submissions, and other Azure Microsoft Discovery related development tasks.
+description: Expert knowledge for Azure Microsoft Discovery development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring Discovery workspaces, supercomputers, tools, REST job submissions, or secure ACR deployments, and other Azure Microsoft Discovery related development tasks.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-10"
+  generated_at: "2026-05-17"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Microsoft Discovery Skill
@@ -30,7 +30,7 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L61-L65 | Advanced investigation workflows in Microsoft Discovery, including complex search strategies, correlation techniques, and patterns for analyzing and triaging large sets of discovered data. |
 | Limits & Quotas | L66-L71 | Planning Discovery capacity with Azure quotas/reservations and applying required naming conventions for Microsoft Discovery resources |
 | Security | L72-L83 | Security configuration for Discovery: encryption at rest, customer-managed keys, managed identities, RBAC, network/private access, and enabling/exporting audit logs. |
-| Configuration | L84-L105 | Configuring Discovery workspaces, supercomputers, storage, tools, agents, and log queries (Kusto/Log Analytics) for data handling, indexing, orchestration, and investigation lifecycle. |
+| Configuration | L84-L105 | Configuring Discovery workspaces, storage, supercomputers, agents, tools, and logging/monitoring (Log Analytics, Kusto) for investigations, indexing, and data handling. |
 | Integrations & Coding Patterns | L106-L113 | Patterns and APIs for integrating tools/models into Discovery workflows, containerizing tools with Docker, writing action scripts, and submitting/monitoring Supercomputer jobs via REST |
 | Deployment | L114-L120 | Deploying Microsoft Discovery: secure stack setup, provisioning supercomputer infra via REST, registering tools, and publishing tool images to Azure Container Registry. |
 
@@ -91,7 +91,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure tasks and lifecycle in Microsoft Discovery investigations | https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-tasks-investigations |
 | Access Log Analytics workspaces for Discovery resources | https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-access-resource-logs |
 | Author tool definition YAML for Microsoft Discovery | https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-create-tool-definition |
-| Configure data handling and tool storage for Discovery agents | https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-data-handling-with-tools-agents |
+| Configure data handling for Microsoft Discovery agents | https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-data-handling-with-tools-agents |
 | Configure Bookshelf and index knowledgebases in Discovery | https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-index-bookshelf-knowledgebase |
 | Configure storage containers and assets in Discovery | https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-manage-storage-containers |
 | Create and manage Discovery Supercomputers and node pools | https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-manage-supercomputers |

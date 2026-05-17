@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-10'
+generated_at: '2026-05-17'
 category_descriptions:
   decision-making: 'Guidance on Azure ML design choices: algorithm selection, training
     and networking options, cost/DR planning, and detailed migration/upgrade paths
@@ -49,8 +49,8 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 - **Total Pages**: 627
 - **Fetched**: 627
 - **Fetch Failed**: 0
-- **Classified**: 485
-- **Unclassified**: 142
+- **Classified**: 484
+- **Unclassified**: 143
 
 ### Incremental Update
 - **New Pages**: 0
@@ -67,19 +67,19 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 | best-practices | 20 | 3.2% |
 | configuration | 257 | 41.0% |
 | decision-making | 27 | 4.3% |
-| deployment | 40 | 6.4% |
+| deployment | 39 | 6.2% |
 | integrations | 52 | 8.3% |
 | limits-quotas | 5 | 0.8% |
 | security | 50 | 8.0% |
 | troubleshooting | 31 | 4.9% |
-| *(Unclassified)* | 142 | 22.6% |
+| *(Unclassified)* | 143 | 22.8% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Securely use on-premises resources](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-access-on-premises-resources?view=azureml-api-2)
-  - Updated: 2025-02-27T08:00:00.000Z → 2026-05-08T17:31:00.000Z
+- [Intro to Azure Pipelines for CI/CD](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-devops-machine-learning?view=azureml-api-2)
+  - Updated: 2026-02-10T23:11:00.000Z → 2026-05-11T17:20:00.000Z
 
 ## Classified Pages
 
@@ -404,7 +404,6 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 | [Import Data](https://learn.microsoft.com/en-us/azure/machine-learning/component-reference/import-data?view=azureml-api-2) | configuration | 0.70 | Component reference for Import Data; describes supported sources and component parameters, which are product-specific configuration options. |
 | [Import data](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-import-data-assets?view=azureml-api-2) | configuration | 0.70 | Covers configuration of data imports and data connections from external sources into Azure ML, including preview feature behavior and migration notes. Contains product-specific configuration options and deprecation details beyond generic concepts. |
 | [Integrate prompt flow with LLM-based application DevOps](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/how-to-integrate-with-llm-app-devops?view=azureml-api-2) | deployment | 0.70 | Shows how to integrate prompt flow with DevOps workflows; includes CI/CD patterns and product-specific deployment pipeline configurations for LLM applications. |
-| [Intro to Azure Pipelines for CI/CD](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-devops-machine-learning?view=azureml-api-2) | deployment | 0.70 | Describes Azure DevOps pipeline configuration for training and deploying models to Azure ML with product-specific tasks, variables, and constraints. |
 | [Join Data](https://learn.microsoft.com/en-us/azure/machine-learning/component-reference/join-data?view=azureml-api-2) | configuration | 0.70 | Component reference for Join Data; includes join types and key selection options, which are configuration details. |
 | [Latent Dirichlet Allocation](https://learn.microsoft.com/en-us/azure/machine-learning/component-reference/latent-dirichlet-allocation?view=azureml-api-2) | configuration | 0.70 | Component reference for LDA in Azure ML designer, including topic count, iterations, and other parameters, which are detailed configuration settings. |
 | [Log MLflow models](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-log-mlflow-models?view=azureml-api-2) | configuration | 0.70 | Describes logging models as MLflow models in Azure ML, including options for custom models and autologging. Contains product-specific configuration and API usage patterns. |
@@ -650,6 +649,7 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 | [Get started with Azure Machine Learning](https://learn.microsoft.com/en-us/azure/machine-learning/tutorial-azure-ml-in-a-day?view=azureml-api-2) | 0.30 | End-to-end quickstart tutorial; shows basic usage but not expert-level limits, configs, or troubleshooting. |
 | [How to use pipeline components in pipeline](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-use-pipeline-component?view=azureml-api-2) | 0.30 | How-to for using pipeline components (nesting, authoring via CLI/SDK/Studio). It appears to be procedural/tutorial content without detailed config tables, limits, or product-specific error mappings that would qualify as expert knowledge under the defined categories. |
 | [Inference and evaluation](https://learn.microsoft.com/en-us/azure/machine-learning/concept-automl-forecasting-evaluation?view=azureml-api-2) | 0.30 | High-level overview of inference and evaluation for forecasting models; does not expose detailed error codes, limits, or config matrices. |
+| [Intro to Azure Pipelines for CI/CD](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-devops-machine-learning?view=azureml-api-2) | 0.30 | Tutorial-style CI/CD guidance for Azure Machine Learning using Azure DevOps pipelines; likely focuses on step-by-step usage of SDK/CLI and pipeline setup without detailed configuration tables, limits, error-code mappings, or decision matrices that meet the expert-knowledge criteria. |
 | [Jupyter Notebooks](https://learn.microsoft.com/en-us/azure/machine-learning/samples-notebooks?view=azureml-api-2) | 0.30 | Navigation page to example notebooks; does not itself contain configuration tables, limits, or troubleshooting mappings. |
 | [Lag features](https://learn.microsoft.com/en-us/azure/machine-learning/concept-automl-forecasting-lags?view=azureml-api-2) | 0.30 | Describes lag and rolling window features conceptually; no detailed product-specific configuration tables or limits. |
 | [Launch VS Code remote](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-launch-vs-code-remote?view=azureml-api-2) | 0.30 | How-to for starting VS Code connected to a compute instance. Primarily connection steps; no clear evidence of detailed configuration tables, limits, or troubleshooting mappings. |

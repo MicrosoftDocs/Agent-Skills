@@ -1,9 +1,9 @@
 ---
 name: azure-container-registry
-description: Expert knowledge for Azure Container Registry development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using private endpoints/RBAC, geo-replication, connected registries, ACR Tasks, or image signing/verification, and other Azure Container Registry related development tasks. Not for Azure Container Apps (use azure-container-apps), Azure Container Instances (use azure-container-instances), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Red Hat OpenShift (use azure-redhat-openshift).
+description: Expert knowledge for Azure Container Registry development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using ACR Tasks, geo-replication, connected registries, image signing/verification, or Helm/ORAS artifacts, and other Azure Container Registry related development tasks. Not for Azure Container Apps (use azure-container-apps), Azure Container Instances (use azure-container-instances), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Red Hat OpenShift (use azure-redhat-openshift).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-03"
+  generated_at: "2026-05-17"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Container Registry Skill
@@ -24,13 +24,13 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L52 | Diagnosing and fixing ACR issues: health checks, error codes, login/auth, network and performance problems, transfer/streaming/cache failures, logs, Arc/connected registry, and CMK encryption. |
+| Troubleshooting | L37-L52 | Diagnosing and fixing ACR issues: health checks, error codes, login/auth, network, performance, transfer/streaming, task logs, artifact cache, Arc/connected registry, and CMK problems. |
 | Best Practices | L53-L60 | Best practices for ACR operations: managing public image dependencies, safe image deletion and storage cleanup, and robust image tagging/versioning strategies. |
 | Decision Making | L61-L67 | Guidance on choosing ACR auth for Kubernetes, planning geo-replication, and migrating image signing from Docker Content Trust to Notary Project. |
 | Architecture & Design Patterns | L68-L73 | Patterns for ACR performance and governance: caching image pulls, geo-replication strategies, connected registries for edge/offline, and gated import workflows for public images. |
 | Limits & Quotas | L74-L79 | Details on ACR SKUs (Basic/Standard/Premium) feature differences, performance and throughput limits, and how image storage capacity and quotas are calculated and enforced. |
 | Security | L80-L119 | Securing ACR with auth, RBAC, network controls, encryption, image signing/verification, policies, and managed identities to prevent unauthorized access and data exfiltration. |
-| Configuration | L120-L137 | Configuring ACR behavior: caching, purge/retention/soft delete, delete locks, tasks (YAML, timers, multi-step, patching, agent pools), webhooks, wildcard cache rules, and monitoring. |
+| Configuration | L120-L137 | Configuring ACR behavior: caching, retention/soft delete, purge and delete locks, tasks (YAML, timers, agent pools, patching), webhooks, wildcard cache rules, and monitoring/logging. |
 | Integrations & Coding Patterns | L138-L154 | Integrating ACR with Kubernetes, ACI, GitHub Actions, ORAS, and ACR Transfer; configuring auth, pull secrets, webhooks, caching, Helm, buildpacks, and image signing/verification. |
 | Deployment | L155-L160 | Using ARM templates to automate ACR quick tasks and data transfer, and deploying/managing ACR connected registries via Azure Arc extension |
 
@@ -38,7 +38,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Run az acr check-health for quick ACR diagnostics | https://learn.microsoft.com/en-us/azure/container-registry/container-registry-check-health |
-| Azure Container Registry FAQ and known issues | https://learn.microsoft.com/en-us/azure/container-registry/container-registry-faq |
+| Resolve common Azure Container Registry issues | https://learn.microsoft.com/en-us/azure/container-registry/container-registry-faq |
 | Interpret az acr check-health error codes and fixes | https://learn.microsoft.com/en-us/azure/container-registry/container-registry-health-error-reference |
 | View and manage Azure Container Registry task run logs | https://learn.microsoft.com/en-us/azure/container-registry/container-registry-tasks-logs |
 | Troubleshoot Azure Container Registry Transfer failures | https://learn.microsoft.com/en-us/azure/container-registry/container-registry-transfer-troubleshooting |
@@ -121,7 +121,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Configure artifact cache in ACR using Azure CLI | https://learn.microsoft.com/en-us/azure/container-registry/artifact-cache-cli |
-| Configure and schedule ACR purge for tags and manifests | https://learn.microsoft.com/en-us/azure/container-registry/container-registry-auto-purge |
+| Configure and run acr purge for Azure Container Registry | https://learn.microsoft.com/en-us/azure/container-registry/container-registry-auto-purge |
 | Configure delete locks on ACR images and repositories | https://learn.microsoft.com/en-us/azure/container-registry/container-registry-image-lock |
 | Configure retention policy for untagged ACR manifests | https://learn.microsoft.com/en-us/azure/container-registry/container-registry-retention-policy |
 | Configure and use ACR soft delete retention policy | https://learn.microsoft.com/en-us/azure/container-registry/container-registry-soft-delete-policy |

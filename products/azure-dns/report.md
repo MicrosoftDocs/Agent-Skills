@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-04-12'
+generated_at: '2026-05-17'
 category_descriptions:
   integrations: Using Azure CLI, PowerShell, or portal to create/manage DNS zones
     and records, and to delegate subdomains or import/export DNS zone files for automation
     and integration.
-  limits-quotas: DNS record, zone, and query limits for public and private Azure DNS,
-    including quotas, scaling behaviors, and constraints when designing Private DNS
-    zones and usage.
+  limits-quotas: DNS record, zone, and query limits for Azure DNS and Private DNS,
+    including quotas, scaling behaviors, usage constraints, and how many zones/records
+    you can create and manage.
   security: Protecting DNS zones/records from deletion, configuring DNS security policies
     and logging, using DNSSEC for public zones, and securing Azure DNS with RBAC,
     alerts, and built-in protections.
@@ -20,16 +20,16 @@ category_descriptions:
     Private DNS zones for high availability.
 skill_description: Expert knowledge for Azure DNS development including decision making,
   architecture & design patterns, limits & quotas, security, configuration, and integrations
-  & coding patterns. Use when managing DNS zones/records, Private DNS/resolvers, DNSSEC,
+  & coding patterns. Use when managing DNS zones/records, DNSSEC, Private DNS/resolvers,
   reverse DNS, or migrating legacy Private DNS, and other Azure DNS related development
   tasks. Not for Azure Traffic Manager (use azure-traffic-manager), Azure Front Door
   (use azure-front-door), Azure Virtual Network (use azure-virtual-network), Azure
-  Virtual Network Manager (use azure-virtual-network-manager).
-use_when: Use when managing DNS zones/records, Private DNS/resolvers, DNSSEC, reverse
+  Private Link (use azure-private-link).
+use_when: Use when managing DNS zones/records, DNSSEC, Private DNS/resolvers, reverse
   DNS, or migrating legacy Private DNS, and other Azure DNS related development tasks.
 confusable_not_for: Not for Azure Traffic Manager (use azure-traffic-manager), Azure
   Front Door (use azure-front-door), Azure Virtual Network (use azure-virtual-network),
-  Azure Virtual Network Manager (use azure-virtual-network-manager).
+  Azure Private Link (use azure-private-link).
 ---
 # Azure DNS Crawl Report
 
@@ -43,8 +43,8 @@ confusable_not_for: Not for Azure Traffic Manager (use azure-traffic-manager), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 75
+- **Updated Pages**: 2
+- **Unchanged**: 73
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-dns/azure-dns.csv`
 
@@ -62,6 +62,13 @@ confusable_not_for: Not for Azure Traffic Manager (use azure-traffic-manager), A
 
 ## Changes
 
+### Updated Pages
+
+- [FAQ](https://learn.microsoft.com/en-us/azure/dns/dns-faq)
+  - Updated: 2026-03-25T22:12:00Z → 2026-03-25T22:12:00.000Z
+- [FAQ](https://learn.microsoft.com/en-us/azure/dns/dns-faq-private)
+  - Updated: 2026-04-01T17:25:00Z → 2026-04-01T17:25:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
@@ -74,8 +81,8 @@ confusable_not_for: Not for Azure Traffic Manager (use azure-traffic-manager), A
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/dns/private-dns-import-export) | configuration | 0.70 | CLI-focused guide for zone file import/export; includes command parameters and options specific to Azure DNS. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/dns/private-dns-import-export-portal) | configuration | 0.70 | How-to for importing/exporting zone files; likely includes specific options, constraints, and parameter usage for Azure Private DNS zone file operations. |
 | [Endpoints and rulesets](https://learn.microsoft.com/en-us/azure/dns/private-resolver-endpoints-rulesets) | configuration | 0.70 | Describes properties and settings of inbound/outbound endpoints and rulesets; likely includes parameter names, allowed values, and examples, which are product-specific configuration details. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/dns/dns-faq) | limits-quotas | 0.70 | FAQ pages for Azure DNS typically include concrete, product-specific details such as maximum number of record sets per zone, record size limits, propagation/TTL behaviors, and other numeric constraints that are not obvious from general knowledge. These are expert, service-specific limits and behaviors rather than conceptual explanations. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/dns/dns-faq-private) | limits-quotas | 0.70 | Azure Private DNS FAQ content commonly covers specific constraints such as maximum number of virtual networks links, record limits, zone limits per subscription, and other numeric or tightly-scoped behavioral details. These are expert, product-specific limits and operational behaviors beyond generic DNS knowledge. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/dns/dns-faq) | limits-quotas | 0.70 | FAQ pages for Azure DNS typically include concrete service behaviors and numeric constraints (for example, maximum number of record sets per zone, supported record types, propagation timings, and other service-specific limits) that are not obvious from general knowledge. These are expert, product-specific details that match the limits-quotas category better than the others. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/dns/dns-faq-private) | limits-quotas | 0.70 | Azure Private DNS FAQ content commonly documents specific numeric limits (such as maximum number of private zones, virtual network links, records per zone) and precise behavioral constraints unique to the service. These are expert details that align with the limits-quotas sub-skill more than other categories. |
 | [Monitor Azure DNS](https://learn.microsoft.com/en-us/azure/dns/monitor-dns) | configuration | 0.70 | Describes which metrics and logs are available for Azure DNS and how to collect/analyze them; monitoring data types and configuration steps are product-specific. |
 | [Private DNS zone migration guide](https://learn.microsoft.com/en-us/azure/dns/private-dns-migration-guide) | decision-making | 0.70 | Migration guide from legacy to GA resource model with a deadline; includes concrete migration steps and considerations, which are product-specific decision and upgrade guidance. |
 | [Protect private DNS zones and records](https://learn.microsoft.com/en-us/azure/dns/dns-protect-private-zones-recordsets) | security | 0.70 | Similar to public zones protection but for Private DNS; likely details product-specific mechanisms (locks, permissions) and how they apply to private zones. |

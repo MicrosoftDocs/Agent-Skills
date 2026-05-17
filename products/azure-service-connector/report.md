@@ -1,30 +1,31 @@
 ---
-generated_at: '2026-05-03'
+generated_at: '2026-05-17'
 category_descriptions:
   security: Service Connector security, required permissions and Microsoft Entra roles,
     and how to configure and choose authentication methods for connected services
   deployment: Info on where Service Connector is regionally supported per compute
     service and how to create connections using infrastructure-as-code tools.
+  troubleshooting: Diagnosing and resolving common Azure Service Connector errors,
+    connection failures, auth/permission issues, and configuration problems across
+    supported services and runtimes.
   configuration: How to define and retrieve Service Connector connection settings,
     choose and configure auth methods, and supply correct CLI/IaC parameters for creating
     connections
   integrations: How to connect Azure compute to databases, messaging, storage, AI,
     and config services using Service Connector, including auth patterns, setup steps,
     and integration examples.
-  troubleshooting: Diagnosing and resolving Azure Service Connector failures, including
-    common error codes, connection issues, and step-by-step troubleshooting for misconfigurations.
   limits-quotas: Limits on number/types of connections, supported scenarios, and guidance
     to mitigate Service Connector constraints or unsupported configurations.
 skill_description: Expert knowledge for Azure Service Connector development including
   troubleshooting, limits & quotas, security, configuration, integrations & coding
-  patterns, and deployment. Use when wiring Azure compute to databases, messaging,
-  storage, AI services, or Key Vault via Service Connector, and other Azure Service
-  Connector related development tasks. Not for Azure API Management (use azure-api-management),
+  patterns, and deployment. Use when wiring Azure compute to DBs, storage, messaging,
+  AI services, managing auth, regions, IaC, or connection limits, and other Azure
+  Service Connector related development tasks. Not for Azure API Management (use azure-api-management),
   Azure App Service (use azure-app-service), Azure Functions (use azure-functions),
   Azure Logic Apps (use azure-logic-apps).
-use_when: Use when wiring Azure compute to databases, messaging, storage, AI services,
-  or Key Vault via Service Connector, and other Azure Service Connector related development
-  tasks.
+use_when: Use when wiring Azure compute to DBs, storage, messaging, AI services, managing
+  auth, regions, IaC, or connection limits, and other Azure Service Connector related
+  development tasks.
 confusable_not_for: Not for Azure API Management (use azure-api-management), Azure
   App Service (use azure-app-service), Azure Functions (use azure-functions), Azure
   Logic Apps (use azure-logic-apps).
@@ -33,32 +34,44 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 
 ## Summary
 
-- **Total Pages**: 63
-- **Fetched**: 63
+- **Total Pages**: 61
+- **Fetched**: 61
 - **Fetch Failed**: 0
-- **Classified**: 38
-- **Unclassified**: 25
+- **Classified**: 39
+- **Unclassified**: 22
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 63
-- **Deleted Pages**: 0
+- **Updated Pages**: 2
+- **Unchanged**: 59
+- **Deleted Pages**: 2
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-connector/azure-service-connector.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| configuration | 3 | 4.8% |
+| configuration | 3 | 4.9% |
 | deployment | 1 | 1.6% |
-| integrations | 29 | 46.0% |
+| integrations | 29 | 47.5% |
 | limits-quotas | 1 | 1.6% |
-| security | 3 | 4.8% |
-| troubleshooting | 1 | 1.6% |
-| *(Unclassified)* | 25 | 39.7% |
+| security | 3 | 4.9% |
+| troubleshooting | 2 | 3.3% |
+| *(Unclassified)* | 22 | 36.1% |
 
 ## Changes
+
+### Updated Pages
+
+- [FAQ](https://learn.microsoft.com/en-us/azure/service-connector/faq)
+  - Updated: 2025-07-25T17:09:00Z → 2025-07-25T17:09:00.000Z
+- [Python function with Azure Table Storage as output](https://learn.microsoft.com/en-us/azure/service-connector/tutorial-python-functions-storage-table-as-output)
+  - Updated: 2024-12-19T12:13:00.000Z → 2026-05-11T22:24:00.000Z
+
+### Deleted Pages
+
+- ~~Spring Boot app to Kafka on Confluent Cloud~~ (https://learn.microsoft.com/en-us/azure/service-connector/tutorial-java-spring-confluent-kafka)
+- ~~Spring app to MySQL~~ (https://learn.microsoft.com/en-us/azure/service-connector/tutorial-java-spring-mysql)
 
 ## Classified Pages
 
@@ -101,6 +114,7 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 | [Region support](https://learn.microsoft.com/en-us/azure/service-connector/concept-region-support) | deployment | 0.70 | Region support matrix for Service Connector across App Service, Functions, Container Apps, AKS, and Spring Apps is deployment-specific metadata that changes over time and is not generally known to LLMs; it is effectively a platform support matrix. |
 | [Build connections with IaC tools](https://learn.microsoft.com/en-us/azure/service-connector/how-to-build-connections-with-iac-tools) | configuration | 0.68 | The article describes how to translate manually created Service Connector connections into IaC templates for CI/CD. This typically includes product-specific resource definitions and configuration parameters (for example, connection resource types, required properties, and their allowed values) that are unique to Azure Service Connector and not just generic IaC usage. While it’s framed as a how-to, the core value is enumerating the specific configuration fields and patterns needed to represent service connections as code, which aligns best with the configuration sub-skill. |
 | [Java JBoss EAP to MySQL](https://learn.microsoft.com/en-us/azure/service-connector/tutorial-java-jboss-connect-managed-identity-mysql-database) | integrations | 0.68 | Tutorial shows a concrete, product-specific integration pattern: Java JBoss EAP on Azure App Service connecting to Azure Database for MySQL using managed identity and Service Connector. It typically includes Azure CLI commands, connection configuration details, and environment-specific parameters that go beyond generic concepts. This aligns best with integrations & coding patterns rather than generic how-to content. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/service-connector/faq) | troubleshooting | 0.65 | FAQ pages for a specific Azure service typically include concrete, product-specific answers such as supported scenarios, specific error messages or codes, limitations of Service Connector vs ServiceLinker, and precise behavioral details that go beyond generic concepts. These map to symptom→cause→solution style guidance, fitting troubleshooting. Even if mixed with conceptual Q&A, the expert value is in the specific behaviors and constraints that an LLM is unlikely to know from training. |
 | [Store configuration in App Configuration](https://learn.microsoft.com/en-us/azure/service-connector/tutorial-portal-app-configuration-store) | integrations | 0.64 | Tutorial covers using Service Connector with Azure App Configuration as a backing store for connection configuration. It likely includes specific configuration keys, how Service Connector outputs are structured, and how they are stored/referenced in App Configuration, which is a concrete integration pattern between these services. |
 
 ## Unclassified Pages
@@ -117,9 +131,6 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 | [Connect to Azure SQL Database](https://learn.microsoft.com/en-us/azure/service-connector/tutorial-python-aks-sql-database-connection-string) | 0.35 | AKS app to Azure SQL Database tutorial; scenario-based instructions rather than general configuration or troubleshooting content. |
 | [Python function with Azure Blob Storage as input](https://learn.microsoft.com/en-us/azure/service-connector/tutorial-python-functions-storage-blob-as-input) | 0.35 | Python Functions with Blob input tutorial; similar to other tutorials, mainly step-by-step instructions rather than expert configuration tables. |
 | [Python function with Azure Queue Storage as trigger](https://learn.microsoft.com/en-us/azure/service-connector/tutorial-python-functions-storage-queue-as-trigger) | 0.35 | Python Functions with Queue trigger tutorial; scenario-focused with warnings about auth flows, but not a structured troubleshooting or configuration reference. |
-| [Python function with Azure Table Storage as output](https://learn.microsoft.com/en-us/azure/service-connector/tutorial-python-functions-storage-table-as-output) | 0.35 | Python Functions with Table Storage output tutorial; scenario walkthrough, not organized as troubleshooting or configuration catalog. |
-| [Spring Boot app to Kafka on Confluent Cloud](https://learn.microsoft.com/en-us/azure/service-connector/tutorial-java-spring-confluent-kafka) | 0.35 | Spring Boot + Confluent Kafka tutorial; includes warnings about auth but is primarily a scenario deployment guide. |
-| [Spring app to MySQL](https://learn.microsoft.com/en-us/azure/service-connector/tutorial-java-spring-mysql) | 0.35 | Spring Boot + MySQL Flexible Server tutorial; focused on stepwise deployment and connection, not on broad configuration or troubleshooting patterns. |
 | [Web app to MongoDB Atlas](https://learn.microsoft.com/en-us/azure/service-connector/howto-mongodb-atlas-service-connection) | 0.35 | How-to guide for MongoDB Atlas connection; likely procedural with some parameters but summary does not indicate full configuration tables or SDK parameter catalogs. |
 | [ASP.NET core app to App Configuration](https://learn.microsoft.com/en-us/azure/service-connector/tutorial-connect-web-app-app-configuration) | 0.30 | Tutorial for connecting Web App to App Configuration; appears as a scenario walkthrough rather than a configuration reference or troubleshooting guide. |
 | [ASP.NET core app to Blob Storage](https://learn.microsoft.com/en-us/azure/service-connector/tutorial-csharp-webapp-storage-cli) | 0.30 | Scenario tutorial for Blob Storage access; uses CLI and managed identity but not focused on exhaustive configuration or error code mappings. |
@@ -128,7 +139,7 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 | [Azure Functions](https://learn.microsoft.com/en-us/azure/service-connector/quickstart-portal-functions-connection) | 0.30 | Quickstart for Azure Functions; procedural connection steps rather than deep configuration or troubleshooting content. |
 | [Azure Kubernetes Service](https://learn.microsoft.com/en-us/azure/service-connector/quickstart-portal-aks-connection) | 0.30 | Quickstart for AKS; focuses on how to connect via portal/CLI, not on configuration parameter catalogs or error mappings. |
 | [Azure Spring Apps](https://learn.microsoft.com/en-us/azure/service-connector/quickstart-portal-spring-cloud-connection) | 0.30 | Quickstart for Azure Spring Apps; largely a getting-started walkthrough without detailed expert configuration references. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/service-connector/faq) | 0.30 | FAQ-style content; summary does not indicate detailed error codes, limits, or configuration tables, likely general Q&A and conceptual clarifications. |
 | [High availability](https://learn.microsoft.com/en-us/azure/service-connector/concept-availability) | 0.30 | High availability overview for Service Connector; summary indicates conceptual description of zones, redundancy, and failover without explicit configuration parameters, limits, or decision matrices. |
 | [Python app to PostgreSQL](https://learn.microsoft.com/en-us/azure/service-connector/tutorial-django-webapp-postgres-cli) | 0.30 | Primarily a step-by-step tutorial for deploying a Django app and wiring Service Connector; does not emphasize configuration tables, limits, or product-specific error mappings beyond generic tutorial usage. |
 | [About Service Connector](https://learn.microsoft.com/en-us/azure/service-connector/overview) | 0.20 | High-level overview of Service Connector use cases and benefits without detailed configuration parameters, limits, or product-specific patterns. |
+| [Python function with Azure Table Storage as output](https://learn.microsoft.com/en-us/azure/service-connector/tutorial-python-functions-storage-table-as-output) | 0.20 | This is a step-by-step tutorial for wiring a Python Azure Function to Azure Table Storage using Service Connector. It focuses on how to perform a single example configuration and deployment flow, not on enumerating configuration parameters, limits, error codes, or decision matrices. It lacks parameter tables, quotas, or structured troubleshooting content, so it does not meet the expert-knowledge criteria for any sub-skill type. |

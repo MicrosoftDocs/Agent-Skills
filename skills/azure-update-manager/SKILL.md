@@ -3,7 +3,7 @@ name: azure-update-manager
 description: Expert knowledge for Azure Update Manager development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing VM/Arc patching, Automanage profiles, hotpatch/ESU schedules, change tracking, or SDK/REST automation, and other Azure Update Manager related development tasks. Not for Azure Automation (use azure-automation), Azure Monitor (use azure-monitor), Azure Osconfig (use azure-osconfig), Azure Virtual Machines (use azure-virtual-machines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-05-17"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Update Manager Skill

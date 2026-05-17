@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-12'
+generated_at: '2026-05-17'
 category_descriptions:
   decision-making: Guidance on estimating, controlling, and optimizing Metrics Advisor
     costs and usage, including pricing factors, quotas, and cost-management best practices.
@@ -35,8 +35,8 @@ confusable_not_for: Not for Azure AI Anomaly Detector (use azure-anomaly-detecto
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 19
+- **Updated Pages**: 1
+- **Unchanged**: 18
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-metrics-advisor/azure-metrics-advisor.csv`
 
@@ -51,6 +51,11 @@ confusable_not_for: Not for Azure AI Anomaly Detector (use azure-anomaly-detecto
 | *(Unclassified)* | 13 | 68.4% |
 
 ## Changes
+
+### Updated Pages
+
+- [Metrics Advisor FAQ](https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/faq)
+  - Updated: 2025-11-18T19:04:00Z → 2026-05-12T11:11:00.000Z
 
 ## Classified Pages
 
@@ -71,7 +76,7 @@ confusable_not_for: Not for Azure AI Anomaly Detector (use azure-anomaly-detecto
 | [Adjust anomaly detection using feedback](https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/how-tos/anomaly-feedback) | 0.30 | Anomaly feedback tuning article; mainly conceptual and workflow-oriented, without clear indication of numeric limits or configuration matrices. |
 | [Diagnose an incident](https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/how-tos/diagnose-an-incident) | 0.30 | Diagnose incident how-to; focused on using UI views for anomalies, not explicit troubleshooting error-code mappings or config details. |
 | [Manage data feeds](https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/how-tos/manage-data-feeds) | 0.30 | Managing data feeds article; summary suggests operational guidance rather than detailed configuration parameter tables or limits. |
-| [Metrics Advisor FAQ](https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/faq) | 0.30 | FAQ for the service; description doesn’t mention error codes, config tables, or numeric limits, likely conceptual and usage questions. |
+| [Metrics Advisor FAQ](https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/faq) | 0.30 | FAQ page with general Q&A about Metrics Advisor; it does not primarily provide numeric limits, configuration parameter tables, error-code-to-solution mappings, or other structured expert details that match the defined sub-skill categories. |
 | [Onboard your data](https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/how-tos/onboard-your-data) | 0.30 | Onboarding data feeds how-to; likely procedural with examples, but summary shows no explicit limits, config tables, or error codes. |
 | [Write a valid query](https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/tutorials/write-a-valid-query) | 0.30 | Tutorial on writing a valid query for ingestion; likely example-driven without comprehensive configuration tables or numeric limits. |
 | [Build a metrics graph](https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/how-tos/metrics-graph) | 0.20 | Metrics graph visualization guidance; appears conceptual/UX-focused, not configuration/limits/troubleshooting heavy. |

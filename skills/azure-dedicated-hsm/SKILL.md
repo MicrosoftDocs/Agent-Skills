@@ -1,9 +1,9 @@
 ---
 name: azure-dedicated-hsm
-description: Expert knowledge for Azure Dedicated HSM development including troubleshooting, decision making, architecture & design patterns, security, and deployment. Use when sizing HSM clusters, configuring VNets/ExpressRoute, planning Managed HSM migration, or resolving vendor support issues, and other Azure Dedicated HSM related development tasks. Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Key Vault (use azure-key-vault), Azure Payment Hsm (use azure-payment-hsm).
+description: Expert knowledge for Azure Dedicated HSM development including troubleshooting, decision making, architecture & design patterns, security, and deployment. Use when designing HSM topologies, ExpressRoute IP configs, HA/failover, secure VNets, or migrating to Managed/Cloud HSM, and other Azure Dedicated HSM related development tasks. Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Key Vault (use azure-key-vault), Azure Payment Hsm (use azure-payment-hsm).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-16"
+  generated_at: "2026-05-17"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Dedicated HSM Skill
@@ -24,8 +24,8 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L37 | Support boundaries between Microsoft, HSM vendors, and customers, plus diagnosing and resolving deployment, networking, and configuration issues for Azure Dedicated HSM. |
-| Decision Making | L38-L44 | FAQs, retirement timelines, and guidance for deciding whether to stay on Dedicated HSM or migrate to Managed/Cloud HSM and how to plan that migration. |
+| Troubleshooting | L33-L38 | Diagnosing and fixing Azure Dedicated HSM deployment, networking, access, and configuration issues, plus guidance on resolving common operational and connectivity problems. |
+| Decision Making | L39-L44 | FAQs, retirement timelines, and guidance for deciding whether to stay on Dedicated HSM or migrate to Managed/Cloud HSM and how to plan that migration. |
 | Architecture & Design Patterns | L45-L51 | Guidance on designing Dedicated HSM deployments: sizing and topology, high availability and failover patterns, and secure networking (VNet, subnets, routing, and connectivity). |
 | Security | L52-L57 | Physical security controls for Dedicated HSM devices and best-practice guidance for securing, configuring, and operating Azure Dedicated HSM in production environments. |
 | Deployment | L58-L61 | Guidance for migrating Azure Dedicated HSM ExpressRoute Gateway IP configuration from Basic to Standard, including steps, requirements, and network considerations. |
@@ -33,12 +33,12 @@ This skill requires **network access** to fetch documentation content:
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
+| Resolve common issues with Azure Dedicated HSM | https://learn.microsoft.com/en-us/azure/dedicated-hsm/faq |
 | Troubleshoot Azure Dedicated HSM deployment and configuration issues | https://learn.microsoft.com/en-us/azure/dedicated-hsm/troubleshoot |
 
 ### Decision Making
 | Topic | URL |
 |-------|-----|
-| Review Azure Dedicated HSM FAQs for capabilities and support | https://learn.microsoft.com/en-us/azure/dedicated-hsm/faq |
 | Plan migration from Azure Dedicated HSM to Managed or Cloud HSM | https://learn.microsoft.com/en-us/azure/dedicated-hsm/migration-guide |
 | Understand Azure Dedicated HSM retirement and successors | https://learn.microsoft.com/en-us/azure/dedicated-hsm/overview |
 

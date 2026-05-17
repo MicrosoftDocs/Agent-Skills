@@ -1,9 +1,9 @@
 ---
 name: azure-hdinsight
-description: Expert knowledge for Azure HDInsight development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when working with HDInsight Spark/Hive/Kafka/HBase, Ambari/Oozie pipelines, Azure SQL/Cosmos DB/Power BI, or secure VNET clusters, and other Azure HDInsight related development tasks. Not for Azure Databricks (use azure-databricks), Azure Synapse Analytics (use azure-synapse-analytics), Azure Stream Analytics (use azure-stream-analytics).
+description: Expert knowledge for Azure HDInsight development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when working with HDInsight Spark/Hive/Kafka/HBase, Ambari/Oozie pipelines, autoscale, or secure VNet/private access, and other Azure HDInsight related development tasks. Not for Azure Databricks (use azure-databricks), Azure Synapse Analytics (use azure-synapse-analytics), Azure Stream Analytics (use azure-stream-analytics).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-10"
+  generated_at: "2026-05-17"
   generator: "docs2skills/1.0.0"
 ---
 # Azure HDInsight Skill
@@ -28,11 +28,11 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L133-L174 | Best practices for designing, securing, monitoring, scaling, and tuning HDInsight clusters and workloads (Hadoop, Spark, Hive, HBase, Kafka), including storage, migration, and performance optimization. |
 | Decision Making | L175-L199 | Planning and migration guidance for HDInsight: sizing and performance, choosing storage/VMs/tools, upgrading versions/components, and moving Hadoop, HBase, Kafka, and configs to newer clusters. |
 | Architecture & Design Patterns | L200-L215 | HDInsight cluster architecture, security, networking, HA/DR, migration from on-prem Hadoop, shared storage, streaming design, and operational pipelines with Ambari/Oozie |
-| Limits & Quotas | L216-L223 | Guidance on HDInsight capacity limits: log size/retention, supported cluster node sizes, external metastore constraints, and requesting/managing CPU core quota increases. |
-| Security | L224-L267 | Securing HDInsight clusters: identity and access (Entra, LDAP, Ranger, RBAC), network isolation (NSG, Private Link), TLS/encryption, Kafka/Hive/Spark security, and security best practices. |
-| Configuration | L268-L324 | Configuring and tuning HDInsight clusters: networking/VPN, Ambari/Hive/Spark/HBase settings, autoscale, monitoring/logging, SSH/Jupyter/VS Code access, and script-based customizations. |
-| Integrations & Coding Patterns | L325-L392 | Patterns and code samples for integrating HDInsight (Hive, Spark, Kafka, HBase, MapReduce, Sqoop) with tools, SDKs, REST/CLI, and external services like SQL, Cosmos DB, Power BI, IoT, and Synapse |
-| Deployment | L393-L406 | Creating, configuring, migrating, and automating HDInsight clusters (Hadoop, HBase, Kafka) using portal, CLI, PowerShell, ARM/REST, Data Factory, Marketplace, AMA, and runbooks |
+| Limits & Quotas | L216-L225 | HDInsight capacity limits, node configs, Kafka-specific limits, metastore constraints, log sizing/retention, and how to request/manage CPU core quota increases. |
+| Security | L226-L269 | Securing HDInsight clusters: identity and access (Entra, LDAP, Ranger, RBAC), network isolation (NSG, Private Link), TLS/encryption, Kafka/Hive/Spark security, and security best practices. |
+| Configuration | L270-L326 | Configuring and tuning HDInsight clusters: networking/VPN, Ambari/Hive/Spark/HBase settings, autoscale, monitoring/logging, SSH/Jupyter/VS Code access, and script-based customizations. |
+| Integrations & Coding Patterns | L327-L394 | Patterns and code samples for integrating HDInsight (Hive, Spark, Kafka, HBase, MapReduce, Sqoop) with tools, SDKs, REST/CLI, and external services like SQL, Cosmos DB, Power BI, IoT, and Synapse |
+| Deployment | L395-L408 | Creating, configuring, migrating, and automating HDInsight clusters (Hadoop, HBase, Kafka) using portal, CLI, PowerShell, ARM/REST, Data Factory, Marketplace, AMA, and runbooks |
 
 ### Troubleshooting
 | Topic | URL |
@@ -216,9 +216,11 @@ This skill requires **network access** to fetch documentation content:
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
+| Review Azure HDInsight service limits and behaviors | https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-faq |
 | Plan HDInsight log sizes and retention policies | https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-log-management |
 | Use supported node configurations for HDInsight clusters | https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-supported-node-configuration |
 | Use external metastores and understand HDInsight default metastore limits | https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-use-external-metadata-stores |
+| Kafka on HDInsight limits, configs, and behaviors | https://learn.microsoft.com/en-us/azure/hdinsight/kafka/kafka-faq |
 | Request and manage HDInsight CPU core quota increases | https://learn.microsoft.com/en-us/azure/hdinsight/quota-increase-request |
 
 ### Security

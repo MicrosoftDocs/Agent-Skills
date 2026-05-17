@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-05'
+generated_at: '2026-05-17'
 category_descriptions:
   limits-quotas: Limits, capacities, performance, and system requirements for Azure
     Stack Edge and Data Box Gateway devices, including supported VM sizes and moving
@@ -21,20 +21,21 @@ category_descriptions:
     devices.
   deployment: Installing and managing software, firmware, and Kubernetes updates on
     Azure Stack Edge Pro GPU devices, including update workflows and prerequisites
-  best-practices: 'Best practices for Azure Stack Edge Pro: planning for and recovering
-    from device failure, GPU sharing configuration, and day-to-day operational/maintenance
-    guidelines.'
+  best-practices: 'Best practices for Azure Stack Edge Pro: device failure recovery,
+    GPU sharing/partitioning guidance, and operational guidelines for deployment,
+    monitoring, and maintenance.'
 skill_description: Expert knowledge for Azure Stack Edge development including troubleshooting,
   best practices, decision making, limits & quotas, security, configuration, integrations
   & coding patterns, and deployment. Use when running IoT Edge or GPU/Kubernetes apps,
-  configuring VMs/storage/networking, or managing device updates, and other Azure
-  Stack Edge related development tasks. Not for Azure Data Box (use azure-data-box-family),
-  Azure IoT Edge (use azure-iot-edge), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
-  Azure Virtual Machines (use azure-virtual-machines).
-use_when: Use when running IoT Edge or GPU/Kubernetes apps, configuring VMs/storage/networking,
-  or managing device updates, and other Azure Stack Edge related development tasks.
+  managing VMs/storage, or integrating with ARM/Blob/Key Vault, and other Azure Stack
+  Edge related development tasks. Not for Azure Data Box (use azure-data-box-family),
+  Azure IoT Edge (use azure-iot-edge), Azure Kubernetes Service Edge Essentials (use
+  azure-aks-edge-essentials), Azure Virtual Machines (use azure-virtual-machines).
+use_when: Use when running IoT Edge or GPU/Kubernetes apps, managing VMs/storage,
+  or integrating with ARM/Blob/Key Vault, and other Azure Stack Edge related development
+  tasks.
 confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure IoT
-  Edge (use azure-iot-edge), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
+  Edge (use azure-iot-edge), Azure Kubernetes Service Edge Essentials (use azure-aks-edge-essentials),
   Azure Virtual Machines (use azure-virtual-machines).
 ---
 # Azure Stack Edge Crawl Report
@@ -49,8 +50,8 @@ confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure Io
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 237
+- **Updated Pages**: 3
+- **Unchanged**: 234
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-stack-edge/azure-stack-edge.csv`
 
@@ -69,6 +70,15 @@ confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure Io
 | *(Unclassified)* | 93 | 39.2% |
 
 ## Changes
+
+### Updated Pages
+
+- [FAQ - Billing model](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-faq-billing-model)
+  - Updated: 2024-10-14T05:40:00Z → 2024-10-14T05:40:00.000Z
+- [FAQ](https://learn.microsoft.com/en-us/azure/azure-edge-hardware-center/azure-edge-hardware-center-faq)
+  - Updated: 2024-11-19T23:02:00Z → 2024-11-19T23:02:00.000Z
+- [FAQ - Operational guidelines](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-operational-guidelines-faq)
+  - Updated: 2024-10-23T22:05:00Z → 2024-10-23T22:05:00.000Z
 
 ## Classified Pages
 
@@ -163,6 +173,7 @@ confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure Io
 | [Via PowerShell](https://learn.microsoft.com/en-us/azure/databox-gateway/data-box-gateway-connect-powershell-interface) | configuration | 0.70 | PowerShell management article will include specific cmdlets and parameters unique to this product, which are configuration/management interfaces. |
 | [Via PowerShell](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-connect-powershell-interface) | configuration | 0.70 | Shows how to connect to the device’s PowerShell interface and perform management tasks; includes device-specific cmdlets and parameters. |
 | [What are certificates?](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-certificates-overview) | security | 0.70 | Certificate overview for this product family will enumerate certificate types and their roles/endpoints, which are product-specific security details. |
+| [FAQ - Operational guidelines](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-operational-guidelines-faq) | best-practices | 0.68 | The FAQ contains product-specific operational guidance and do/don't style recommendations for running Azure Stack Edge as a hardware-as-a-service offering (for example, how to handle power, networking, maintenance, and operational constraints). These are concrete, service-specific practices rather than generic concepts, but the content is framed as guidance rather than strict numeric limits or configuration tables, so best-practices is the closest fit. |
 | [2101](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-2101-release-notes) | troubleshooting | 0.65 | Version 2101 release notes; maps known issues to resolutions, which is troubleshooting knowledge. |
 | [2103](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-2103-release-notes) | troubleshooting | 0.65 | Release notes for 2103 with critical open issues and resolutions; expert troubleshooting content. |
 | [2105](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-2105-release-notes) | troubleshooting | 0.65 | Same pattern: version-specific critical issues and workarounds for 2105. |
@@ -197,7 +208,6 @@ confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure Io
 | [Device specifications](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-technical-specifications-compliance) | configuration | 0.65 | Technical specs and compliance for a hardware SKU include exact storage, power, and environmental parameters, which are concrete configuration constraints. |
 | [Enable Arc on Kubernetes cluster](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-deploy-arc-kubernetes-cluster) | integrations | 0.65 | Describes enabling Azure Arc on an existing Kubernetes cluster on Azure Stack Edge; involves product-specific connection and configuration steps. |
 | [Enable compute network](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-extend-compute-access-modules) | configuration | 0.65 | Explains extending compute network and external IP access for modules; includes device-specific network configuration steps and parameters. |
-| [FAQ - Operational guidelines](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-operational-guidelines-faq) | best-practices | 0.65 | FAQ of operational guidelines; likely includes concrete do/don’t recommendations and edge-case behaviors specific to Azure Stack Edge operations. |
 | [Kubernetes cluster access](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-create-kubernetes-cluster) | configuration | 0.65 | Describes creating and managing the cluster via PowerShell and kubectl; likely includes cluster configuration commands, parameters, and environment-specific details. |
 | [Manage Wi-Fi](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-mini-r-manage-wifi) | configuration | 0.65 | Wi‑Fi management via local UI will include SSID, security type, and profile parameters specific to this device’s networking stack. |
 | [Monitor](https://learn.microsoft.com/en-us/azure/databox-gateway/data-box-gateway-monitor) | configuration | 0.65 | Monitoring article likely details specific metrics, alert types, and configuration options for monitoring this device. |
@@ -265,7 +275,6 @@ confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure Io
 | [Add, connect to storage accounts](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-deploy-add-storage-accounts) | 0.40 | Tutorial for adding storage accounts; primarily step-by-step instructions rather than detailed configuration reference or troubleshooting. |
 | [Contact Microsoft Support](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-contact-microsoft-support) | 0.40 | How to log a support request; procedural and portal-driven, not focused on technical configuration, limits, or error-code mappings. |
 | [Custom image from Azure VM](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-create-virtual-machine-image) | 0.40 | Step-by-step guide for creating custom VM images; likely mostly procedural without detailed config tables, limits, or product-specific error mappings. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/azure-edge-hardware-center/azure-edge-hardware-center-faq) | 0.40 | FAQ likely addresses common questions but description/summary do not indicate numeric limits, error codes, or deep config details. |
 | [Generalized image from ISO](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-prepare-windows-generalized-image-iso) | 0.40 | How-to for preparing a generalized Windows image from ISO; mostly imaging workflow, not detailed product-specific configuration or limits. |
 | [Get started](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-quickstart) | 0.40 | Quickstart deployment steps; procedural and high-level, not focused on enumerating configuration options or limits. |
 | [Kubernetes failover on clustered device](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-kubernetes-failover-scenarios) | 0.40 | Describes failover scenarios and device responses; likely conceptual behavior mapping without explicit error codes or diagnostic commands in the summary. |
@@ -296,7 +305,7 @@ confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure Io
 | [Azure Stack Edge Hardware Additional Terms](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-add-hardware-terms) | 0.30 | Documents additional hardware terms; legal/contractual content rather than technical limits, configuration, or troubleshooting details. |
 | [Cluster witness](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-cluster-witness-overview) | 0.30 | High-level overview of cluster witness; requirements and setup are mentioned but not clearly as detailed parameter tables or limits from the summary. |
 | [Create order](https://learn.microsoft.com/en-us/azure/azure-edge-hardware-center/azure-edge-hardware-center-create-order) | 0.30 | Step-by-step portal tutorial for creating an order; lacks detailed configuration tables or product-specific edge cases. |
-| [FAQ - Billing model](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-faq-billing-model) | 0.30 | Billing FAQ focuses on pricing model and charges; financial/contractual info is out of scope of the defined technical sub-skill categories. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/azure-edge-hardware-center/azure-edge-hardware-center-faq) | 0.30 | FAQ for Azure Edge Hardware Center appears to be general Q&A about ordering and using hardware, without detailed limits, configuration tables, error-code-based troubleshooting, or other product-specific numeric or configuration details that meet the expert knowledge criteria. |
 | [Open Support ticket](https://learn.microsoft.com/en-us/azure/azure-edge-hardware-center/azure-edge-hardware-center-contact-microsoft-support) | 0.30 | Describes how to open a support ticket; process guidance rather than technical troubleshooting or configuration. |
 | [Track, cancel, return order](https://learn.microsoft.com/en-us/azure/azure-edge-hardware-center/azure-edge-hardware-center-manage-order) | 0.30 | Covers managing and tracking orders in portal; appears procedural without expert-only configuration or limits. |
 | [View use cases](https://learn.microsoft.com/en-us/azure/databox-gateway/data-box-gateway-use-cases) | 0.30 | Use-case descriptions and scenarios; decision context is high-level without explicit matrices or numeric thresholds. |
@@ -305,6 +314,7 @@ confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure Io
 | [What is clustering?](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-clustering-overview) | 0.30 | High-level clustering overview; summary does not indicate numeric thresholds, decision matrices, or detailed configuration parameters. |
 | [What is local Azure Resource Manager?](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-local-resource-manager-overview) | 0.30 | Overview of local Azure Resource Manager; conceptual explanation of what it is, not detailed configuration or troubleshooting content. |
 | [2 - Install](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-deploy-install) | 0.20 | Physical unpacking, racking, and cabling instructions; not in scope of the defined technical sub-skill categories. |
+| [FAQ - Billing model](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-faq-billing-model) | 0.20 | FAQ focuses on billing model and high-level cost structure for Azure Stack Edge Pro GPU. It is primarily pricing and subscription explanation without technical limits, configuration parameters, error codes, or decision matrices with quantified technical trade-offs. Does not match any expert-knowledge sub-skill categories defined. |
 | [In English (en-us)](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-pro-2-safety) | 0.20 | General safety instructions and precautions; important but not in scope of the requested technical sub-skill types. |
 | [Ready safety](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-mini-r-safety) | 0.20 | Safety guide focuses on physical safety and handling; not configuration, limits, or troubleshooting knowledge for the AI skills context. |
 | [Ready safety](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-pro-r-safety) | 0.20 | Safety and health information; important but not within the requested technical sub-skill types. |

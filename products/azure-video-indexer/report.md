@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-03'
+generated_at: '2026-05-17'
 category_descriptions:
   decision-making: Guidance on selecting Azure Video Indexer account types and designing
     multi-tenant setups, including management, isolation, and scaling strategies.
@@ -13,20 +13,25 @@ category_descriptions:
   deployment: How to deploy and configure Azure Video Indexer using ARM templates,
     including required resources, parameters, and automation steps for setting up
     the service.
-  integrations: Using Video Indexer APIs and widgets to redact faces, embed video
-    insights in apps, and integrate with workflows via Logic Apps and Power Automate.
-  security: Securing Video Indexer with roles, NSGs, private endpoints, firewalls,
-    storage protection, and requesting access to restricted or advanced security-related
-    features.
+  integrations: Using Video Indexer APIs, widgets, and low-code tools to call the
+    service, embed insights, automate workflows, and programmatically redact faces
+    in videos
+  security: 'Security and access control for Video Indexer: roles/permissions, private
+    endpoints, NSG service tags, firewall-protected storage, security baselines, and
+    requesting access to restricted features.'
 skill_description: Expert knowledge for Azure AI Video Indexer development including
   best practices, decision making, limits & quotas, security, configuration, integrations
-  & coding patterns, and deployment. Use when indexing videos, using live camera summaries,
-  training custom speech, redacting faces, or embedding insights, and other Azure
-  AI Video Indexer related development tasks. Not for Azure AI Vision (use azure-ai-vision).
-use_when: Use when indexing videos, using live camera summaries, training custom speech,
-  redacting faces, or embedding insights, and other Azure AI Video Indexer related
-  development tasks.
-confusable_not_for: Not for Azure AI Vision (use azure-ai-vision).
+  & coding patterns, and deployment. Use when indexing videos, using live camera analysis,
+  calling Video Indexer APIs/widgets, or redacting faces, and other Azure AI Video
+  Indexer related development tasks. Not for Azure AI Vision (use azure-ai-vision),
+  Azure AI Custom Vision (use azure-custom-vision), Azure AI Speech (use azure-speech),
+  Azure AI Search (use azure-cognitive-search).
+use_when: Use when indexing videos, using live camera analysis, calling Video Indexer
+  APIs/widgets, or redacting faces, and other Azure AI Video Indexer related development
+  tasks.
+confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI Custom
+  Vision (use azure-custom-vision), Azure AI Speech (use azure-speech), Azure AI Search
+  (use azure-cognitive-search).
 ---
 # Azure AI Video Indexer Crawl Report
 
@@ -40,8 +45,8 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision).
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 67
+- **Updated Pages**: 4
+- **Unchanged**: 63
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-video-indexer/azure-video-indexer.csv`
 
@@ -50,15 +55,26 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision).
 | Type | Count | Percentage |
 |------|-------|------------|
 | best-practices | 3 | 4.5% |
-| configuration | 7 | 10.4% |
+| configuration | 6 | 9.0% |
 | decision-making | 2 | 3.0% |
 | deployment | 1 | 1.5% |
-| integrations | 3 | 4.5% |
+| integrations | 4 | 6.0% |
 | limits-quotas | 2 | 3.0% |
 | security | 6 | 9.0% |
 | *(Unclassified)* | 43 | 64.2% |
 
 ## Changes
+
+### Updated Pages
+
+- [FAQ](https://learn.microsoft.com/en-us/azure/azure-video-indexer/faq)
+  - Updated: 2025-12-18T23:08:00Z → 2025-12-18T23:08:00.000Z
+- [Call APIs](https://learn.microsoft.com/en-us/azure/azure-video-indexer/video-indexer-use-apis)
+  - Updated: 2025-10-06T08:00:00.000Z → 2026-05-11T17:14:00.000Z
+- [Firewall protected storage](https://learn.microsoft.com/en-us/azure/azure-video-indexer/storage-behind-firewall)
+  - Updated: 2025-10-06T08:00:00.000Z → 2026-05-11T17:14:00.000Z
+- [Upload and index media](https://learn.microsoft.com/en-us/azure/azure-video-indexer/upload-index-media)
+  - Updated: 2025-10-06T08:00:00.000Z → 2026-05-11T17:14:00.000Z
 
 ## Classified Pages
 
@@ -66,8 +82,8 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision).
 |-----------|------|------------|--------|
 | [Support matrix and limitations](https://learn.microsoft.com/en-us/azure/azure-video-indexer/avi-support-matrix) | limits-quotas | 0.95 | Support matrix and limitations article; contains detailed format support, file size/duration limits, and other numeric constraints. |
 | [Configure indexing](https://learn.microsoft.com/en-us/azure/azure-video-indexer/indexing-configuration-guide) | configuration | 0.80 | Explains each indexing option and their impact on cost and performance; likely includes concrete setting names and allowed values for language, models, and streaming. |
-| [Firewall protected storage](https://learn.microsoft.com/en-us/azure/azure-video-indexer/storage-behind-firewall) | security | 0.80 | Details trusted storage, required storage account type, and managed identity usage; product-specific security and access configuration. |
 | [Security baseline](https://learn.microsoft.com/en-us/azure/azure-video-indexer/security-baseline-video-indexer) | security | 0.80 | Security baseline article with configurations and best practices; likely lists specific security settings and controls for the service. |
+| [Firewall protected storage](https://learn.microsoft.com/en-us/azure/azure-video-indexer/storage-behind-firewall) | security | 0.78 | The page describes configuring Video Indexer with firewall-protected Azure Storage, including requirements like storage account type (Standard general-purpose v2) and use of user/system-assigned managed identities. These are product-specific security and access configuration details, matching the security sub-skill. |
 | [Manage account access](https://learn.microsoft.com/en-us/azure/azure-video-indexer/restricted-viewer-role) | security | 0.75 | Focuses on managing access and mentions the Restricted Viewer role; likely lists specific RBAC roles, permissions, and scopes unique to Video Indexer. |
 | [Choose regions](https://learn.microsoft.com/en-us/azure/azure-video-indexer/regions) | configuration | 0.70 | Describes the location parameter and supported regions; region-specific configuration is product-specific and not generic knowledge. |
 | [Configure private endpoint](https://learn.microsoft.com/en-us/azure/azure-video-indexer/private-endpoint-how-to) | security | 0.70 | How-to for private endpoints with region support constraints; contains product-specific security configuration and supported/unsupported cloud environments. |
@@ -77,6 +93,7 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision).
 | [Plan for scale](https://learn.microsoft.com/en-us/azure/azure-video-indexer/considerations-when-use-at-scale) | best-practices | 0.70 | Explicitly described as best practices for using the service at scale; likely includes product-specific recommendations and gotchas for large archives. |
 | [Redact faces](https://learn.microsoft.com/en-us/azure/azure-video-indexer/face-redaction-with-api) | integrations | 0.70 | Describes the Face Redaction preset and API usage, including how to specify which faces to blur; this is a concrete integration/coding pattern. |
 | [Speech training best practices](https://learn.microsoft.com/en-us/azure/azure-video-indexer/speech-model-training-best-practices) | best-practices | 0.70 | Explicitly a best-practices article for custom speech model training; likely includes product-specific guidance, data preparation tips, and edge cases unique to Video Indexer and its Speech integration. |
+| [Call APIs](https://learn.microsoft.com/en-us/azure/azure-video-indexer/video-indexer-use-apis) | integrations | 0.68 | An API usage article for a specific Azure service typically includes endpoint URLs, required headers, authentication flows, and parameter names unique to Azure AI Video Indexer. These are product-specific integration details that go beyond generic API knowledge, fitting the integrations sub-skill. |
 | [Disaster recovery](https://learn.microsoft.com/en-us/azure/azure-video-indexer/video-indexer-disaster-recovery) | best-practices | 0.65 | Describes how to configure failover and BCDR across regional pairs; likely includes product-specific recommendations and patterns for achieving availability with Video Indexer. |
 | [Limited access features](https://learn.microsoft.com/en-us/azure/azure-video-indexer/limited-access-features) | security | 0.65 | Describes product-specific access restrictions and eligibility for Face-related capabilities, including how to apply via specific intake forms, which is concrete security/permission behavior not inferable from general knowledge. |
 | [Monitor Video Indexer data reference](https://learn.microsoft.com/en-us/azure/azure-video-indexer/monitor-video-indexer-data-reference) | configuration | 0.65 | Data reference for Azure Monitor integration; likely lists metric and log schemas, categories, and fields specific to Video Indexer. |
@@ -86,7 +103,6 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision).
 | [Deploy with ARM](https://learn.microsoft.com/en-us/azure/azure-video-indexer/deploy-with-arm-template) | deployment | 0.60 | ARM template-based deployment for a specific service; typically includes resource types, required properties, and deployment constraints that are product-specific. |
 | [Edit speakers](https://learn.microsoft.com/en-us/azure/azure-video-indexer/edit-speakers) | configuration | 0.60 | Explains how to rename and manage speakers in transcripts, including how the system assigns speaker IDs; product-specific configuration workflow. |
 | [Embed widgets](https://learn.microsoft.com/en-us/azure/azure-video-indexer/video-indexer-embed-widgets) | integrations | 0.60 | Covers embedding Insights, Player, and Editor widgets; typically involves specific embed URLs, parameters, and configuration options unique to these widgets. |
-| [Upload and index media](https://learn.microsoft.com/en-us/azure/azure-video-indexer/upload-index-media) | configuration | 0.60 | Shows how to use advanced upload/index settings, which are concrete configuration options affecting behavior and cost. |
 | [View logs](https://learn.microsoft.com/en-us/azure/azure-video-indexer/monitor-video-indexer) | configuration | 0.60 | Monitoring article for Video Indexer using Azure Monitor; likely details specific metrics, logs, and categories emitted by the service, which are product-specific configuration/observability details. |
 
 ## Unclassified Pages
@@ -112,7 +128,6 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision).
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-video-indexer/private-endpoint-overview) | 0.40 | Overview of private endpoints; summary doesn’t show concrete NSG rules, role names, or parameter tables. |
 | [Person model](https://learn.microsoft.com/en-us/azure/azure-video-indexer/customize-person-model-how-to) | 0.40 | How-to for customizing a person model; summary focuses on eligibility and basic behavior, not on detailed configuration parameters or error-code-based troubleshooting. |
 | [Speech model](https://learn.microsoft.com/en-us/azure/azure-video-indexer/customize-speech-model-how-to) | 0.40 | Step-by-step how-to for customizing a speech model; summary does not show detailed config tables, limits, or error mappings—more of a procedural tutorial. |
-| [Call APIs](https://learn.microsoft.com/en-us/azure/azure-video-indexer/video-indexer-use-apis) | 0.30 | Getting-started API article; summary doesn’t indicate detailed parameter tables or limits. |
 | [Create account](https://learn.microsoft.com/en-us/azure/azure-video-indexer/create-account) | 0.30 | Account creation walkthrough; summary doesn’t show detailed configuration matrices or limits. |
 | [Create projects](https://learn.microsoft.com/en-us/azure/azure-video-indexer/use-editor-create-project) | 0.30 | Editor usage tutorial for creating projects and clips; no indication of deep configuration or limits. |
 | [Detect audio effects](https://learn.microsoft.com/en-us/azure/azure-video-indexer/audio-effects-detection-insight) | 0.30 | Audio effects detection insight description; appears conceptual/UX-level. |
@@ -120,11 +135,12 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision).
 | [Detect scenes, shots & keyframes](https://learn.microsoft.com/en-us/azure/azure-video-indexer/scene-shot-keyframe-detection-insight) | 0.30 | Scene/shot/keyframe detection insight overview; no clear indication of expert-level configuration or limits. |
 | [Edit transcript lines](https://learn.microsoft.com/en-us/azure/azure-video-indexer/edit-transcript-lines-portal) | 0.30 | Transcript editing UI how-to; generic feature usage without product-specific configuration tables or limits. |
 | [Extract entities](https://learn.microsoft.com/en-us/azure/azure-video-indexer/named-entities-insight) | 0.30 | Named entities extraction overview; summary doesn’t indicate detailed parameters or quotas. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/azure-video-indexer/faq) | 0.30 | FAQ page; typically mixed high-level answers without structured limits/configs; summary doesn’t indicate deep technical mappings. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/azure-video-indexer/faq) | 0.30 | FAQ pages often mix conceptual answers, pricing/availability notes, and light troubleshooting, but typically lack the structured, detailed error-code mappings, configuration tables, or numeric limits required by the defined sub-skill types. This page is described only as general Q&A about Azure AI Video Indexer without clear evidence of specific limits, configuration parameters, or decision matrices. |
 | [Identify labels](https://learn.microsoft.com/en-us/azure/azure-video-indexer/labels-identification-insight) | 0.30 | Labels identification insight description; mostly conceptual and UX-level behavior. |
 | [Search your content](https://learn.microsoft.com/en-us/azure/azure-video-indexer/video-indexer-search) | 0.30 | UI-based search how-to; no indication of config tables, limits, or error mappings. |
 | [Switch tenants](https://learn.microsoft.com/en-us/azure/azure-video-indexer/switch-tenants-portal) | 0.30 | Explains how to switch tenants in the portal; mostly UI navigation without detailed configuration parameters, limits, or troubleshooting mappings. |
 | [Translate transcripts](https://learn.microsoft.com/en-us/azure/azure-video-indexer/transcription-translation-lid-insight) | 0.30 | Appears to be a feature/how-to description for transcription and translation; summary doesn't indicate numeric limits, config tables, error codes, or other expert-only details. |
+| [Upload and index media](https://learn.microsoft.com/en-us/azure/azure-video-indexer/upload-index-media) | 0.30 | The article is described as a how-to for uploading and indexing media via the website using advanced settings, but the summary does not indicate detailed configuration tables, limits, or product-specific parameters. It appears more like a procedural tutorial than expert reference content. |
 | [Bring your own model](https://learn.microsoft.com/en-us/azure/azure-video-indexer/bring-your-own-model-overview) | 0.20 | Bring-your-own-model overview; summary indicates conceptual description, not detailed configuration parameters or quotas. |
 | [Create prompts](https://learn.microsoft.com/en-us/azure/azure-video-indexer/prompt-overview) | 0.20 | LLM prompts overview for Video Indexer; sounds like conceptual integration description without detailed parameters, limits, or decision matrices. |
 | [Insights overview](https://learn.microsoft.com/en-us/azure/azure-video-indexer/insights-overview) | 0.20 | Insights overview with links; conceptual description of insight types without detailed configs. |

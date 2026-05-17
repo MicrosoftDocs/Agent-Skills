@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-05-03'
+generated_at: '2026-05-17'
 category_descriptions:
-  configuration: 'Configuring Azure Translator behavior: resource setup, Docker/container
-    settings, profanity filters, content exclusion, dynamic dictionaries, word alignment,
-    and monitoring usage metrics.'
+  configuration: Configuring Translator resources/containers, controlling translation
+    behavior (content exclusion, dictionaries, profanity, alignment), and monitoring
+    usage/metrics.
   best-practices: 'Best practices for custom translation: managing containers, glossaries,
     dataset splits, Foundry/custom models, and document translation usage, FAQs, and
     operational guidance.'
@@ -50,8 +50,8 @@ confusable_not_for: Not for Azure AI Language (use azure-language-service), Azur
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 125
+- **Updated Pages**: 2
+- **Unchanged**: 123
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-translator/azure-translator.csv`
 
@@ -59,8 +59,8 @@ confusable_not_for: Not for Azure AI Language (use azure-language-service), Azur
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| best-practices | 6 | 4.8% |
-| configuration | 7 | 5.6% |
+| best-practices | 5 | 4.0% |
+| configuration | 8 | 6.4% |
 | decision-making | 4 | 3.2% |
 | deployment | 3 | 2.4% |
 | integrations | 36 | 28.8% |
@@ -70,6 +70,13 @@ confusable_not_for: Not for Azure AI Language (use azure-language-service), Azur
 | *(Unclassified)* | 50 | 40.0% |
 
 ## Changes
+
+### Updated Pages
+
+- [Translator container FAQ](https://learn.microsoft.com/en-us/azure/ai-services/translator/containers/faq)
+  - Updated: 2025-11-18T15:37:00Z → 2025-11-18T15:37:00.000Z
+- [Translator Pro FAQ](https://learn.microsoft.com/en-us/azure/ai-services/translator/solutions/translator-pro/faq)
+  - Updated: 2026-03-19T06:06:00Z → 2026-03-19T06:06:00.000Z
 
 ## Classified Pages
 
@@ -138,6 +145,7 @@ confusable_not_for: Not for Azure AI Language (use azure-language-service), Azur
 | [Use text translation APIs](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/how-to/use-rest-api) | integrations | 0.70 | How-to for REST APIs including core configuration options and examples, exposing product-specific parameters and patterns. |
 | [Use the neural dictionary feature](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/how-to/use-neural-dictionary) | integrations | 0.70 | Explains neural/dynamic/phrase dictionary behavior as API features; full article typically includes request parameters and behavior unique to this product. |
 | [Automate text translation (preview)](https://learn.microsoft.com/en-us/azure/ai-services/translator/solutions/connector/text-translator-flow) | integrations | 0.68 | Describes configuring the Microsoft Translator v3 connector in Power Automate, which typically includes connector-specific operations, parameters, and configuration details unique to this integration rather than generic tutorial content. |
+| [Translator container FAQ](https://learn.microsoft.com/en-us/azure/ai-services/translator/containers/faq) | configuration | 0.68 | The FAQ for Azure Translator containers includes product-specific operational and configuration details that go beyond generic knowledge. These FAQs typically cover container-only behaviors (such as required environment variables, how to pass the subscription key and region, mounting custom models or dictionaries, offline/air-gapped usage constraints, and licensing/telemetry flags) that are not broadly known from training data. While organized as FAQs rather than a formal settings table, the content describes concrete configuration parameters and container runtime requirements unique to Translator containers, which fits best under configuration. |
 | [Copy a Foundry Tools model](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/azure-ai-foundry/how-to/copy-model) | deployment | 0.65 | Describes model lifecycle management (dev → test → prod) via copying models; these are deployment and environment promotion patterns specific to this product. |
 | [Create and manage a portal workspace](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/how-to/create-manage-workspace) | security | 0.65 | Includes note about portal access only via public network and references enabling via Azure Virtual Network/private endpoints, which are product-specific security configuration details. |
 | [Create and use glossaries](https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/how-to-guides/create-use-glossaries) | best-practices | 0.65 | Glossary usage for document translation involves product-specific behaviors (one-to-one language support, how terms are applied, no-translation patterns) and likely includes concrete examples and constraints that qualify as service-specific best practices. |
@@ -149,7 +157,6 @@ confusable_not_for: Not for Azure AI Language (use azure-language-service), Azur
 | [Train a Foundry Tools custom model](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/azure-ai-foundry/how-to/train-model) | best-practices | 0.65 | Describes how training, tuning, and testing datasets are used and how the service auto-splits data; these are product-specific behaviors and recommendations for preparing data, fitting best practices. |
 | [Create and manage portal training documents](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/how-to/create-manage-training-documents) | limits-quotas | 0.60 | Document-building guidance for training typically includes supported file types, size/length constraints, and structure requirements; summary already mentions multiple input types, implying product-specific constraints beyond generic knowledge. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/azure-ai-foundry/faq) | best-practices | 0.60 | Custom translation FAQ will include service-specific behaviors, constraints, and recommended usage patterns, which are practical best practices. |
-| [Translator container FAQ](https://learn.microsoft.com/en-us/azure/ai-services/translator/containers/faq) | best-practices | 0.60 | Container FAQ typically includes service-specific behaviors, constraints, and recommended patterns for running containers, which are practical best practices beyond generic container knowledge. |
 
 ## Unclassified Pages
 
@@ -196,7 +203,6 @@ confusable_not_for: Not for Azure AI Language (use azure-language-service), Azur
 | [Overview](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/preview/overview) | 0.20 | High-level preview overview of Azure Translator in Foundry Tools; summary indicates marketing/positioning and capabilities, not concrete limits, configs, error codes, or decision matrices. |
 | [Parallel documents](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/concepts/parallel-documents) | 0.20 | Defines parallel documents; conceptual explanation without numeric constraints or configuration details. |
 | [Sentence alignment](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/azure-ai-foundry/concepts/sentence-alignment) | 0.20 | Describes sentence alignment conceptually; no indication of numeric thresholds, config parameters, or error mappings. |
-| [Translator Pro FAQ](https://learn.microsoft.com/en-us/azure/ai-services/translator/solutions/translator-pro/faq) | 0.20 | An FAQ for a mobile application is usually conceptual and usage-oriented (what it is, how to use, licensing, platforms) rather than containing numeric limits, configuration parameter tables, or structured troubleshooting content with error codes. The summary indicates general Q&A, not the expert-knowledge patterns required. |
 | [What are Azure Translator solutions?](https://learn.microsoft.com/en-us/azure/ai-services/translator/solutions/overview) | 0.20 | Overview of prebuilt solutions; marketing/introductory content without detailed limits, configs, or decision matrices. |
 | [What's new?](https://learn.microsoft.com/en-us/azure/ai-services/translator/whats-new) | 0.20 | Release notes/what's-new summary without exposed specific limits, configuration parameters, error codes, or decision matrices; primarily high-level feature and enhancement descriptions. |
 | [BLEU score](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/azure-ai-foundry/concepts/bleu-score) | 0.10 | Defines BLEU score conceptually; no product-specific configuration or numeric thresholds beyond generic knowledge. |
@@ -205,3 +211,4 @@ confusable_not_for: Not for Azure AI Language (use azure-language-service), Azur
 | [What is Translator text translation?](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/overview) | 0.10 | Text translation overview; describes capabilities and doc structure without detailed limits or configs. |
 | [What is the Custom Translator portal?](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/overview) | 0.10 | Service overview and capabilities; marketing/introductory content without detailed limits, configs, or patterns. |
 | [Custom translation key terms](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/azure-ai-foundry/key-terms) | - | Access-restricted key terms list; content not visible in summary and likely definitional rather than configuration/limits. |
+| [Translator Pro FAQ](https://learn.microsoft.com/en-us/azure/ai-services/translator/solutions/translator-pro/faq) | - | FAQ for a mobile app; likely high-level usage and feature questions without detailed limits, configuration tables, error-code mappings, or other product-specific expert data as defined by the sub-skill types. |

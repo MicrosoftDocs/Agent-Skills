@@ -1,7 +1,7 @@
 # Generation Summary
 
-**Generated**: 2026-05-10 02:02:32
-**Total Duration**: 0m 14s
+**Generated**: 2026-05-17 02:02:20
+**Total Duration**: 0m 20s
 
 ## Product Crawl Summary
 
@@ -9,7 +9,7 @@ Quick overview for reviewers. See individual product reports for details.
 
 | # | Product | Pages | Classified | New | Updated | Deleted | Status |
 |---|---------|-------|------------|-----|---------|---------|--------|
-| 1 | Azure Cloud Adoption Framework | 354 | 346 | 0 | 1 | 1 | OK |
+| 1 | Azure Cloud Adoption Framework | 354 | 346 | 0 | 2 | 0 | OK |
 
 ### Totals
 
@@ -17,8 +17,8 @@ Quick overview for reviewers. See individual product reports for details.
 - **Total Pages**: 354
 - **Total Classified**: 346
 - **Total New Pages**: 0
-- **Total Updated Pages**: 1
-- **Total Deleted Pages**: 1
+- **Total Updated Pages**: 2
+- **Total Deleted Pages**: 0
 
 ### Classification by Type (All Products)
 

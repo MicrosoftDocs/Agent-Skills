@@ -1,9 +1,9 @@
 ---
 name: azure-firewall
-description: Expert knowledge for Azure Firewall development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring DNAT/SNAT rules, TLS inspection, DNS proxy, hub-and-spoke routing, or SFTP to Azure Storage, and other Azure Firewall related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Networking (use azure-networking), Azure Web Application Firewall (use azure-web-application-firewall), Azure Firewall Manager (use azure-firewall-manager).
+description: Expert knowledge for Azure Firewall development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when choosing Firewall SKUs, designing hub‑and‑spoke/forced tunneling, configuring DNAT/SNAT rules, DNS proxy, or TLS inspection, and other Azure Firewall related development tasks. Not for Azure Firewall Manager (use azure-firewall-manager), Azure Web Application Firewall (use azure-web-application-firewall), Azure Virtual Network (use azure-virtual-network), Azure Networking (use azure-networking).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-03"
+  generated_at: "2026-05-17"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Firewall Skill
@@ -28,7 +28,7 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L43-L50 | Best practices for Azure Firewall DNS proxy/caching, performance tuning, rule optimization with Policy Analytics, and hardening/security configuration guidance. |
 | Decision Making | L51-L59 | Guidance on choosing Azure Firewall SKUs (Basic/Standard/Premium), comparing features and performance, and planning or changing deployments based on throughput and requirements. |
 | Architecture & Design Patterns | L60-L72 | Designing Azure Firewall network architectures: hub-and-spoke, forced tunneling, load balancer integration, hybrid/AVD/M365 protection, and DNAT for overlapping/private IP networks. |
-| Limits & Quotas | L73-L82 | Azure Firewall capacity, IP/port/session limits, SNAT scaling with NAT Gateway, prescaling options, and TCP idle timeout configuration and behaviors |
+| Limits & Quotas | L73-L82 | Azure Firewall capacity limits, SNAT port scaling (multi‑IP, NAT Gateway/V2), prescaling ranges, and configurable TCP session idle timeout behaviors |
 | Security | L83-L96 | Azure Firewall security setup: compliance, RBAC/permissions, Azure Policy, TLS inspection and CA chains, threat intel, DNAT, AKS and hybrid network protection, and portal deployment. |
 | Configuration | L97-L119 | Configuring Azure Firewall policies and rules (DNAT, SNAT, app/SQL/FQDN), IP Groups, DNS/proxy/FTP/explicit proxy, maintenance windows, monitoring/logging, and Premium features via portal/PowerShell. |
 | Integrations & Coding Patterns | L120-L124 | Configuring Azure Firewall to securely access Azure Storage via SFTP, including required rules, network paths, and integration patterns for SFTP traffic. |
@@ -74,7 +74,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Azure Firewall multi‑IP deployment limits and quotas | https://learn.microsoft.com/en-us/azure/firewall/deploy-multi-public-ip-powershell |
-| Azure Firewall FAQ limits and behaviors | https://learn.microsoft.com/en-us/azure/firewall/firewall-faq |
+| Review Azure Firewall limits and behaviors from FAQ | https://learn.microsoft.com/en-us/azure/firewall/firewall-faq |
 | Scale Azure Firewall SNAT ports with NAT Gateway | https://learn.microsoft.com/en-us/azure/firewall/integrate-with-nat-gateway |
 | Integrate Azure Firewall with NAT Gateway V2 for SNAT scaling | https://learn.microsoft.com/en-us/azure/firewall/integrate-with-nat-gateway-v2 |
 | Configure Azure Firewall prescaling capacity ranges | https://learn.microsoft.com/en-us/azure/firewall/prescaling |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-10'
+generated_at: '2026-05-17'
 category_descriptions:
   best-practices: 'Network performance and connectivity guidance: VNet design, NSGs,
     service endpoints, outbound access, MTU/TCP tuning, and tools to test throughput
@@ -17,25 +17,26 @@ category_descriptions:
     including requirements, steps, and considerations for network resources and downtime.
   limits-quotas: 'VM networking limits: MANA support per VM size, static public IP
     assignment and quotas, and per-VM network throughput caps and constraints.'
-  security: Securing virtual networks with policies and encryption, including Kubernetes
-    network policies, Azure Policy for VNets, VNet encryption, and restricting storage
-    egress via service endpoint policies.
+  security: 'Network security for VNets: Kubernetes network policies, layered controls,
+    Azure Policy for VNets, Virtual Network encryption concepts/config, and securing
+    storage egress with service endpoint policies.'
   architecture-patterns: 'Designing VNet architectures: subnet extension for migrations,
     VNet peering, hybrid two-tier apps, traffic mirroring with TAP, topology planning,
     and custom routing options.'
 skill_description: Expert knowledge for Azure Virtual Network development including
   troubleshooting, best practices, decision making, architecture & design patterns,
-  limits & quotas, security, configuration, and deployment. Use when configuring VNets,
-  peering, gateways/LBs/firewalls, NSGs/service endpoints, or VNet encryption policies,
-  and other Azure Virtual Network related development tasks. Not for Azure Networking
-  (use azure-networking), Azure Virtual Network Manager (use azure-virtual-network-manager),
-  Azure Virtual WAN (use azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway).
-use_when: Use when configuring VNets, peering, gateways/LBs/firewalls, NSGs/service
-  endpoints, or VNet encryption policies, and other Azure Virtual Network related
+  limits & quotas, security, configuration, and deployment. Use when designing VNets,
+  configuring peering and gateways, tuning NSGs/service endpoints, or troubleshooting
+  VM connectivity, and other Azure Virtual Network related development tasks. Not
+  for Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual
+  WAN (use azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway), Azure ExpressRoute
+  (use azure-expressroute).
+use_when: Use when designing VNets, configuring peering and gateways, tuning NSGs/service
+  endpoints, or troubleshooting VM connectivity, and other Azure Virtual Network related
   development tasks.
-confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtual
-  Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use azure-virtual-wan),
-  Azure VPN Gateway (use azure-vpn-gateway).
+confusable_not_for: Not for Azure Virtual Network Manager (use azure-virtual-network-manager),
+  Azure Virtual WAN (use azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway),
+  Azure ExpressRoute (use azure-expressroute).
 ---
 # Azure Virtual Network Crawl Report
 
@@ -49,8 +50,8 @@ confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtu
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 126
+- **Updated Pages**: 1
+- **Unchanged**: 128
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-network/azure-virtual-network.csv`
 
@@ -64,26 +65,23 @@ confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtu
 | decision-making | 6 | 4.7% |
 | deployment | 1 | 0.8% |
 | limits-quotas | 2 | 1.6% |
-| security | 5 | 3.9% |
-| troubleshooting | 2 | 1.6% |
+| security | 6 | 4.7% |
+| troubleshooting | 1 | 0.8% |
 | *(Unclassified)* | 74 | 57.4% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Overview](https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-overview)
-  - Updated: 2026-04-02T18:15:00.000Z → 2026-05-05T17:29:00.000Z
-- [MANA support for existing VM sizes](https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-existing-sizes)
-  - Updated: 2026-03-18T06:15:00.000Z → 2026-05-06T22:13:00.000Z
-- [MANA on Network Virtual Appliances (NVAs) for existing VM sizes](https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-network-virtual-appliance-opt-out)
-  - Updated: 2026-03-18T06:15:00.000Z → 2026-05-06T22:13:00.000Z
+- [FAQ](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-encryption-faq)
+  - Updated: 2025-09-23T05:17:00Z → 2025-09-23T05:17:00.000Z
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
 | [Network bandwidth](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-machine-network-throughput) | limits-quotas | 0.80 | Explains VM network throughput, flow limits, and bandwidth per size. Contains concrete Mbps values, flow limits, and possibly tables by VM SKU, which are specific limits/quotas not generally known. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-encryption-faq) | security | 0.72 | An FAQ for a specific Azure security feature typically includes product-specific details such as supported scenarios, required configurations, limitations, and interactions with other Azure security features. These are not generic security concepts and qualify as expert knowledge about how Virtual Network encryption behaves and should be configured. |
 | [Azure Policy Regulatory Compliance controls](https://learn.microsoft.com/en-us/azure/virtual-network/security-controls-policy) | security | 0.70 | Lists specific built-in policy definitions and compliance controls for VNets, which are product-specific security/compliance configurations. |
 | [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/virtual-network/policy-reference) | configuration | 0.70 | Index of built-in policy definitions; each policy has a specific name, effect, and conditions that are product-specific configuration artifacts. |
 | [Azure services network isolation](https://learn.microsoft.com/en-us/azure/virtual-network/vnet-integration-for-azure-services) | decision-making | 0.70 | Compares private endpoints, service endpoints, and dedicated deployments for isolation; helps decide which integration method to use for different services and scenarios. |
@@ -127,7 +125,6 @@ confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtu
 | [Manage public IP prefix](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/manage-public-ip-address-prefix) | configuration | 0.62 | Covers creating, modifying, deleting prefixes and creating IPs from them; involves Azure-specific resource properties and relationships beyond generic networking concepts. |
 | [Routing preference Unmetered](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/routing-preference-unmetered) | decision-making | 0.62 | Explains a specialized routing option for CDN providers with billing implications; helps decide when to use unmetered routing based on topology and cost, which is product-specific. |
 | [Accelerated Networking](https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-overview) | decision-making | 0.60 | Describes benefits, constraints, and supported configurations; used to decide when to enable Accelerated Networking for specific VM types and workloads. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-encryption-faq) | troubleshooting | 0.60 | FAQ for VNet encryption typically includes edge cases, limitations, and answers to specific operational issues, which are expert troubleshooting details. |
 | [How network security groups filter traffic](https://learn.microsoft.com/en-us/azure/virtual-network/network-security-group-how-it-works) | best-practices | 0.60 | Explains NSG rule processing and likely includes ordering, default behaviors, and best practices for secure traffic filtering specific to Azure. |
 | [Monitor Public IP addresses](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/monitor-public-ip) | configuration | 0.60 | Monitoring article for public IPs via Azure Monitor; such references list specific metrics, log categories, and alertable signals unique to this resource type. |
 | [Monitoring](https://learn.microsoft.com/en-us/azure/virtual-network/monitor-virtual-network) | configuration | 0.60 | Monitoring article typically lists specific metrics, logs, and configuration options for Azure Monitor integration, which are product-specific configuration details. |

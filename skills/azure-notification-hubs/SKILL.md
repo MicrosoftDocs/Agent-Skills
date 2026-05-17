@@ -1,9 +1,9 @@
 ---
 name: azure-notification-hubs
-description: Expert knowledge for Azure Notification Hubs development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when integrating FCM/APNS/WNS, targeting devices/users with tags/templates, scheduling pushes, or securing hubs with Private Link, and other Azure Notification Hubs related development tasks. Not for Azure Event Hubs (use azure-event-hubs), Azure Service Bus (use azure-service-bus), Azure Web PubSub (use azure-web-pubsub), Azure Communication Services (use azure-communication-services).
+description: Expert knowledge for Azure Notification Hubs development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when integrating FCM/APNS/WNS, configuring PNS creds, targeting devices/tags, scheduling pushes, or scaling multi-tenant hubs, and other Azure Notification Hubs related development tasks. Not for Azure Event Hubs (use azure-event-hubs), Azure Service Bus (use azure-service-bus), Azure Web PubSub (use azure-web-pubsub), Azure Communication Services (use azure-communication-services).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-05-17"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Notification Hubs Skill
@@ -24,8 +24,8 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L36-L40 | Diagnosing why push notifications are dropped or not delivered in Notification Hubs, including common causes, logging, and step-by-step troubleshooting and fixes. |
-| Best Practices | L41-L48 | Guidance on designing Notification Hubs apps: registration patterns, tags and routing, templates, and implementation FAQs for scalable, targeted push notifications. |
+| Troubleshooting | L36-L41 | Diagnosing and fixing common Notification Hubs issues, including delivery failures, dropped notifications, platform-specific errors, and steps to trace, test, and resolve send problems. |
+| Best Practices | L42-L48 | Guidance on designing Notification Hubs apps: registration patterns, tags and routing, templates, and implementation FAQs for scalable, targeted push notifications. |
 | Decision Making | L49-L53 | Guidance on choosing and switching Notification Hubs pricing tiers, comparing feature limits, scale, and cost implications for different workloads. |
 | Architecture & Design Patterns | L54-L58 | Guidance on designing large-scale, multi-tenant, and geo-distributed push notification architectures with Azure Notification Hubs, including patterns, best practices, and integration approaches. |
 | Limits & Quotas | L59-L63 | Scheduling push notifications in Azure Notification Hubs, including creating, managing, and sending time-based or recurring notifications across platforms |
@@ -36,12 +36,12 @@ This skill requires **network access** to fetch documentation content:
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
+| Diagnose and resolve common Azure Notification Hubs issues | https://learn.microsoft.com/en-us/azure/notification-hubs/notification-hubs-push-notification-faq |
 | Diagnose and fix dropped notifications in Notification Hubs | https://learn.microsoft.com/en-us/azure/notification-hubs/notification-hubs-push-notification-fixer |
 
 ### Best Practices
 | Topic | URL |
 |-------|-----|
-| Design and implementation FAQs for Azure Notification Hubs | https://learn.microsoft.com/en-us/azure/notification-hubs/notification-hubs-push-notification-faq |
 | Choose registration patterns for Azure Notification Hubs | https://learn.microsoft.com/en-us/azure/notification-hubs/notification-hubs-push-notification-registration-management |
 | Use tags and routing expressions in Azure Notification Hubs | https://learn.microsoft.com/en-us/azure/notification-hubs/notification-hubs-tags-segment-push-message |
 | Design and use Notification Hubs templates for push | https://learn.microsoft.com/en-us/azure/notification-hubs/notification-hubs-templates-cross-platform-push-messages |

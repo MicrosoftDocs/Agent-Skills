@@ -1,9 +1,9 @@
 ---
 name: azure-app-service
-description: Expert knowledge for Azure App Service development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when choosing App Service plans/ASE, configuring auth/TLS/domains, deploying via CI/CD/slots, or integrating VNet/NAT, and other Azure App Service related development tasks. Not for Azure Functions (use azure-functions), Azure Container Apps (use azure-container-apps), Azure Spring Apps (use azure-spring-apps), Azure Static Web Apps (use azure-static-web-apps).
+description: Expert knowledge for Azure App Service development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when choosing App Service plans, configuring auth/TLS, deploying via CI/CD or containers, or using ASE/VNet, and other Azure App Service related development tasks. Not for Azure Functions (use azure-functions), Azure Static Web Apps (use azure-static-web-apps), Azure Spring Apps (use azure-spring-apps), Azure Container Apps (use azure-container-apps).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-10"
+  generated_at: "2026-05-17"
   generator: "docs2skills/1.0.0"
 ---
 # Azure App Service Skill
@@ -24,13 +24,13 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L43 | Diagnosing and troubleshooting App Service apps using built-in diagnostics and Azure Monitor, plus fixing common WordPress-on-App-Service configuration and runtime issues. |
-| Best Practices | L44-L54 | Best practices for deploying and securing App Service apps, handling inbound/outbound and TLS IP changes, and using Traffic Manager for resilient, highly available endpoints |
-| Decision Making | L55-L75 | Guidance on choosing App Service tiers, plans, auth and networking, plus planning cost, TLS, domains, and migrations (Windows↔Linux, .NET, VNet, Docker Compose, Arc). |
-| Architecture & Design Patterns | L76-L80 | Architectural guidance for App Service: ASE geo-distribution, outbound traffic via NAT Gateway, and recommended Azure services/patterns for building scalable, secure apps. |
-| Limits & Quotas | L81-L85 | App Service resource limits (CPU, memory, connections), quota types, how they’re measured/monitored, and how to use metrics to detect and avoid hitting plan or app quotas. |
-| Security | L86-L132 | Securing App Service apps: auth (Entra, social, OIDC, MCP), TLS/certs, managed identities, network/IP restrictions, storage/SQL/Graph access, and encryption/compliance settings. |
-| Configuration | L133-L186 | Configuring App Service apps: runtime and language settings, networking/VNet, containers/sidecars, storage, domains/certs, auth, diagnostics, backups, and App Service Environment options. |
+| Troubleshooting | L37-L44 | Diagnosing and troubleshooting App Service apps using built-in diagnostics, logs, and Azure Monitor, plus fixes for common WordPress-on-App-Service issues. |
+| Best Practices | L45-L55 | Best practices for deploying and securing App Service apps, handling inbound/outbound and TLS IP changes, and using Traffic Manager for resilient, highly available endpoints |
+| Decision Making | L56-L76 | Guidance on choosing App Service tiers, plans, auth and networking, plus planning cost, TLS, domains, and migrations (Windows↔Linux, .NET, VNet, Docker Compose, Arc). |
+| Architecture & Design Patterns | L77-L81 | Architectural guidance for App Service: ASE geo-distribution, outbound traffic via NAT Gateway, and recommended Azure services/patterns for building scalable, secure apps. |
+| Limits & Quotas | L82-L86 | App Service resource limits (CPU, memory, connections), quota types, how they’re measured/monitored, and how to use metrics to detect and avoid hitting plan or app quotas. |
+| Security | L87-L133 | Securing App Service apps: auth (Entra, social, OIDC, MCP), TLS/certs, managed identities, network/IP restrictions, storage/SQL/Graph access, and encryption/compliance settings. |
+| Configuration | L134-L186 | Configuring App Service apps: runtime and language settings, containers, networking/VNet, domains/certs, storage, auth, health/monitoring, backups, and App Service Environment options. |
 | Integrations & Coding Patterns | L187-L197 | Patterns for integrating App Service apps with APM tools, TLS/SSL certs, Application Gateway, MCP, Azure OpenAI chatbots (Node/Flask), and event-driven jobs via WebJobs bindings. |
 | Deployment | L198-L222 | Deploying App Service apps using CI/CD (GitHub Actions, Azure Pipelines), ZIP/FTP/Git, containers, slots, scaling, ASE/Arc, DNS migration, and scripted automation (CLI/PowerShell). |
 
@@ -38,6 +38,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Use App Service diagnostics to troubleshoot apps | https://learn.microsoft.com/en-us/azure/app-service/overview-diagnostics |
+| Enable and access Azure App Service diagnostic logs | https://learn.microsoft.com/en-us/azure/app-service/troubleshoot-diagnostic-logs |
 | Troubleshoot App Service apps with Azure Monitor | https://learn.microsoft.com/en-us/azure/app-service/tutorial-troubleshoot-monitor |
 | Resolve common WordPress on Azure App Service issues | https://learn.microsoft.com/en-us/azure/app-service/wordpress-faq |
 
@@ -153,7 +154,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure PHP applications on Azure App Service | https://learn.microsoft.com/en-us/azure/app-service/configure-language-php |
 | Configure Python apps on Azure App Service Linux | https://learn.microsoft.com/en-us/azure/app-service/configure-language-python |
 | Open SSH sessions to App Service containers | https://learn.microsoft.com/en-us/azure/app-service/configure-linux-open-ssh-session |
-| Configure Managed Instance for Azure App Service | https://learn.microsoft.com/en-us/azure/app-service/configure-managed-instance |
+| Configure Azure App Service Managed Instance settings | https://learn.microsoft.com/en-us/azure/app-service/configure-managed-instance |
 | Configure sidecar containers for Azure App Service | https://learn.microsoft.com/en-us/azure/app-service/configure-sidecar |
 | Configure and manage Azure App Service certificates | https://learn.microsoft.com/en-us/azure/app-service/configure-ssl-app-service-certificate |
 | Configure VNet integration for Azure App Service | https://learn.microsoft.com/en-us/azure/app-service/configure-vnet-integration-enable |
@@ -179,7 +180,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure App Service virtual network integration options | https://learn.microsoft.com/en-us/azure/app-service/overview-vnet-integration |
 | Reference environment variables for Azure App Service | https://learn.microsoft.com/en-us/azure/app-service/reference-app-settings |
 | Reference environment variables for Azure App Service | https://learn.microsoft.com/en-us/azure/app-service/reference-app-settings |
-| Enable and use diagnostic logging in App Service | https://learn.microsoft.com/en-us/azure/app-service/troubleshoot-diagnostic-logs |
 | Configure sidecar containers for Linux custom apps in App Service | https://learn.microsoft.com/en-us/azure/app-service/tutorial-custom-container-sidecar |
 | Configure sidecar containers for Linux apps on App Service | https://learn.microsoft.com/en-us/azure/app-service/tutorial-sidecar |
 | Configure WebJobs execution behavior with Kudu settings | https://learn.microsoft.com/en-us/azure/app-service/webjobs-execution |

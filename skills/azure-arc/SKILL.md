@@ -1,9 +1,9 @@
 ---
 name: azure-arc
-description: Expert knowledge for Azure Arc development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing Arc-enabled Kubernetes, servers/VMs, SQL/data services, Edge RAG, or resource bridge deployments, and other Azure Arc related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Virtual Machines (use azure-virtual-machines), Azure Stack Edge (use azure-stack-edge), Azure Virtual Network (use azure-virtual-network).
+description: Expert knowledge for Azure Arc development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing Arc-enabled Kubernetes, servers/VMs, SQL MI, Edge RAG, resource bridge, or SCVMM/vSphere integrations, and other Azure Arc related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Stack Edge (use azure-stack-edge), Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Network (use azure-virtual-network).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-10"
+  generated_at: "2026-05-17"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Arc Skill
@@ -24,15 +24,15 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L72 | Diagnosing and fixing Azure Arc issues: connectivity, extensions, GitOps, Kubernetes, servers/VMs, SQL/Edge RAG, resource bridge, site manager, storage, networking, and licensing. |
-| Best Practices | L73-L80 | Best practices for Azure Arc storage and data services: filesystem behavior, avoiding out-of-space issues, static retain workflows for Edge Volumes, and common usage FAQs. |
-| Decision Making | L81-L101 | Guidance on planning, sizing, licensing, connectivity, platform selection, and migration decisions for Azure Arc servers, Kubernetes, data services, SQL, and Edge RAG workloads. |
-| Architecture & Design Patterns | L102-L110 | Patterns for Arc data/compute design: container storage data flow, Arc Edge Volumes, HA/DR for Arc SQL MI and failover groups, and advanced Edge RAG data parsing. |
-| Limits & Quotas | L111-L126 | Limits, quotas, versions, and requirements for Arc-enabled Kubernetes, Edge RAG, Arc data services, resource bridge, and billing/ESU behavior for connected machines and Windows Server. |
-| Security | L127-L185 | Security, identity, and access control for Azure Arc: AD/Entra auth, RBAC, keytabs, TDE, TLS, workload identity, network protection, Private Link, policies, and compliance for Arc resources. |
-| Configuration | L186-L285 | Configuring Azure Arc infrastructure and workloads: data services, container storage, Edge RAG, Kubernetes (GitOps, cert-manager, Key Vault), servers/agents, networking, monitoring, and extensions. |
-| Integrations & Coding Patterns | L286-L309 | Programmatic and automation patterns for Azure Arc: CLI/PowerShell/ARM/Ansible/Terraform usage, onboarding at scale, VM extensions, monitoring, Resource Graph, and integration SDKs. |
-| Deployment | L310-L341 | Deploying and upgrading Azure Arc components: data controllers, Edge RAG, resource bridge, agents (Kubernetes, VMs, SCVMM, vSphere), plus prerequisites, support matrices, and clean removal steps. |
+| Troubleshooting | L37-L72 | Diagnosing and fixing Azure Arc issues: connectivity, extensions, GitOps, Kubernetes, servers/VMs, SQL, storage, site manager, resource bridge, workload orchestration, and Edge RAG. |
+| Best Practices | L73-L79 | Best practices for Azure Arc storage and data services: filesystem behavior, avoiding out-of-space issues, static retain workflows for Edge Volumes, and common usage FAQs. |
+| Decision Making | L80-L100 | Guidance on planning, sizing, licensing, connectivity, platform selection, and migration decisions for Azure Arc servers, Kubernetes, data services, SQL, and Edge RAG workloads. |
+| Architecture & Design Patterns | L101-L109 | Patterns for Arc data/compute design: container storage data flow, Arc Edge Volumes, HA/DR for Arc SQL MI and failover groups, and advanced Edge RAG data parsing. |
+| Limits & Quotas | L110-L124 | Limits, quotas, versions, and requirements for Arc-enabled Kubernetes, Edge RAG, Arc data services, resource bridge, and billing/ESU behavior for connected machines and Windows Server. |
+| Security | L125-L184 | Security, identity, RBAC, network protection, encryption, certificates, and compliance for Azure Arc servers, Kubernetes, SQL MI, Edge RAG, SCVMM, and VMware resources. |
+| Configuration | L185-L281 | Configuring Azure Arc infrastructure and services: Kubernetes/servers onboarding, storage, data services, Edge RAG, networking, GitOps, monitoring, security, and agent/extension management. |
+| Integrations & Coding Patterns | L282-L303 | Programmatic and automation patterns for Azure Arc: CLI/PowerShell/ARM/Ansible/Terraform usage, onboarding servers/VMs/K8s at scale, managing extensions, monitoring, and security integrations. |
+| Deployment | L304-L334 | Deploying and upgrading Azure Arc components (data controllers, Edge RAG, resource bridge, agents, SCVMM/vSphere) including prerequisites, options, and orchestration from CLI, portal, or Git. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -76,7 +76,6 @@ This skill requires **network access** to fetch documentation content:
 | Handle Azure Arc container storage filesystem behaviors | https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/reference-filesystem-behavior |
 | Design for out-of-space conditions in Azure Arc storage | https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/reference-filesystem-out-of-space |
 | Use static retain workflows for Azure Arc Edge Volumes | https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/static-retain |
-| FAQ for Azure Arc-enabled data services usage | https://learn.microsoft.com/en-us/azure/azure-arc/data/faq |
 
 ### Decision Making
 | Topic | URL |
@@ -112,7 +111,6 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Disconnected operation behavior for Arc container storage | https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/disconnected-operations |
-| Version and component matrix for Arc data services | https://learn.microsoft.com/en-us/azure/azure-arc/data/version-log |
 | Understand data deletion behavior and limits in Edge RAG | https://learn.microsoft.com/en-us/azure/azure-arc/edge-rag/delete-data |
 | Release notes and changes for Edge RAG Preview | https://learn.microsoft.com/en-us/azure/azure-arc/edge-rag/release-notes |
 | Hardware, software, and network requirements for Edge RAG | https://learn.microsoft.com/en-us/azure/azure-arc/edge-rag/requirements |
@@ -130,6 +128,7 @@ This skill requires **network access** to fetch documentation content:
 | Secure Azure Arc access via Azure Firewall Explicit Proxy | https://learn.microsoft.com/en-us/azure/azure-arc/azure-firewall-explicit-proxy |
 | Configure OneLake identity for Azure Arc cloud subvolumes | https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/howto-configure-onelake-identity |
 | Configure workload identity for Arc container subvolumes | https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/howto-configure-workload-identity |
+| Configure localhost token endpoint for Arc container storage | https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/howto-enable-local-identity-access |
 | Understand AD authentication modes for Azure Arc data services | https://learn.microsoft.com/en-us/azure/azure-arc/data/active-directory-introduction |
 | Prepare Active Directory for Azure Arc data services | https://learn.microsoft.com/en-us/azure/azure-arc/data/active-directory-prerequisites |
 | Manually configure TDE for Arc SQL Managed Instance | https://learn.microsoft.com/en-us/azure/azure-arc/data/configure-transparent-data-encryption-manually |
@@ -278,10 +277,7 @@ This skill requires **network access** to fetch documentation content:
 | Enable SSH remoting to Arc-enabled servers | https://learn.microsoft.com/en-us/azure/azure-arc/servers/ssh-arc-overview |
 | Use PowerShell remoting over SSH with Arc servers | https://learn.microsoft.com/en-us/azure/azure-arc/servers/ssh-arc-powershell-remoting |
 | Configure Azure Monitor alerts for Azure Arc sites | https://learn.microsoft.com/en-us/azure/azure-arc/site-manager/how-to-configure-monitor-site |
-| Define configuration schemas for Arc workload orchestration | https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/configuring-schema |
-| Author configuration templates for Arc workload orchestration | https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/configuring-template |
-| Prepare environment and resources for Arc workload orchestration | https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/initial-setup-environment |
-| Configure service groups for Arc workload orchestration | https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/service-group |
+| Use onboarding scripts to configure Azure Arc workload orchestration | https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/onboarding-scripts |
 
 ### Integrations & Coding Patterns
 | Topic | URL |
@@ -303,9 +299,7 @@ This skill requires **network access** to fetch documentation content:
 | Run Azure Resource Graph queries for Arc-enabled servers | https://learn.microsoft.com/en-us/azure/azure-arc/servers/resource-graph-samples |
 | Onboard Arc-enabled servers to Microsoft Sentinel | https://learn.microsoft.com/en-us/azure/azure-arc/servers/scenario-onboard-azure-sentinel |
 | Manage SCVMM VMs with Terraform via Azure Arc | https://learn.microsoft.com/en-us/azure/azure-arc/system-center-virtual-machine-manager/terraform-vm-management |
-| Configure Event Grid external validation for Arc workloads | https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/external-validation |
-| Use external validation payload schema for Arc solutions | https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/external-validation-payload |
-| Use the Azure workload orchestration SDK for automation | https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/workload-orchestration-sdk |
+| Integrate external validation with Azure Arc workload orchestration | https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/external-validation |
 
 ### Deployment
 | Topic | URL |
@@ -337,5 +331,4 @@ This skill requires **network access** to fetch documentation content:
 | Upgrade the Azure Arc resource bridge for SCVMM | https://learn.microsoft.com/en-us/azure/azure-arc/system-center-virtual-machine-manager/upgrade-azure-arc-resource-bridge |
 | Review support matrix for Arc-enabled VMware vSphere | https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/support-matrix-for-arc-enabled-vmware-vsphere |
 | Switch existing Arc-enabled VMware vSphere to new version | https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/switch-to-new-version |
-| Use clean-up script to remove Arc orchestration resources | https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/clean-up-script |
-| Run migration script to upgrade Arc targets to GA | https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/migration-script |
+| Deploy Azure Arc workload orchestration resources from Git with Bicep | https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/workload-orchestration-multicluster-git |

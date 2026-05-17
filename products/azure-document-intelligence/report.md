@@ -1,14 +1,14 @@
 ---
-generated_at: '2026-05-10'
+generated_at: '2026-05-17'
 category_descriptions:
   security: 'Securing Document Intelligence: creating SAS tokens, configuring data-at-rest
     encryption, and using managed identities and VNets to lock down access to resources.'
   best-practices: Improving custom model accuracy and confidence, labeling and table-tagging
     best practices, training/classification workflows, and managing the full Document
     Intelligence model lifecycle
-  limits-quotas: Quotas, rate limits, capacity add-ons, batch processing scale, and
-    supported languages/locales for OCR, prebuilt, and custom Document Intelligence
-    models.
+  limits-quotas: Quotas, capacity add-ons, throttling behavior, batch scaling, and
+    language/OCR support limits for Document Intelligence (service, custom, and prebuilt
+    models).
   integrations: Using SDKs/REST to call Document Intelligence, handle AnalyzeDocument/Markdown
     outputs, and integrate with apps, Azure Functions, and Logic Apps for end‑to‑end
     document workflows
@@ -27,17 +27,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure AI Document Intelligence development
   including troubleshooting, best practices, decision making, architecture & design
   patterns, limits & quotas, security, configuration, integrations & coding patterns,
-  and deployment. Use when using AnalyzeDocument, prebuilt/custom models, OCR languages,
-  containers, or SDK/REST integrations, and other Azure AI Document Intelligence related
-  development tasks. Not for Azure AI Vision (use azure-ai-vision), Azure AI Search
-  (use azure-cognitive-search), Azure AI Custom Vision (use azure-custom-vision),
-  Azure AI Language (use azure-language-service).
-use_when: Use when using AnalyzeDocument, prebuilt/custom models, OCR languages, containers,
-  or SDK/REST integrations, and other Azure AI Document Intelligence related development
-  tasks.
+  and deployment. Use when using AnalyzeDocument, custom models, containers, SAS/managed
+  identity security, or Logic Apps/Functions workflows, and other Azure AI Document
+  Intelligence related development tasks. Not for Azure AI Vision (use azure-ai-vision),
+  Azure AI Search (use azure-cognitive-search), Azure AI Custom Vision (use azure-custom-vision),
+  Azure AI Video Indexer (use azure-video-indexer).
+use_when: Use when using AnalyzeDocument, custom models, containers, SAS/managed identity
+  security, or Logic Apps/Functions workflows, and other Azure AI Document Intelligence
+  related development tasks.
 confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI Search
   (use azure-cognitive-search), Azure AI Custom Vision (use azure-custom-vision),
-  Azure AI Language (use azure-language-service).
+  Azure AI Video Indexer (use azure-video-indexer).
 ---
 # Azure AI Document Intelligence Crawl Report
 
@@ -46,14 +46,14 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI Sear
 - **Total Pages**: 77
 - **Fetched**: 77
 - **Fetch Failed**: 0
-- **Classified**: 35
-- **Unclassified**: 42
+- **Classified**: 36
+- **Unclassified**: 41
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 5
-- **Unchanged**: 70
-- **Deleted Pages**: 2
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 76
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-document-intelligence/azure-document-intelligence.csv`
 
 ## Classification Statistics
@@ -66,35 +66,17 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI Sear
 | decision-making | 2 | 2.6% |
 | deployment | 4 | 5.2% |
 | integrations | 6 | 7.8% |
-| limits-quotas | 6 | 7.8% |
+| limits-quotas | 7 | 9.1% |
 | security | 4 | 5.2% |
 | troubleshooting | 3 | 3.9% |
-| *(Unclassified)* | 42 | 54.5% |
+| *(Unclassified)* | 41 | 53.2% |
 
 ## Changes
 
-### New Pages
-
-- [Migration guide overview](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/versioning/migration-guide-overview?view=doc-intel-4.0.0)
-- [Changelog](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/versioning/changelog-release-history?view=doc-intel-4.0.0)
-
 ### Updated Pages
 
-- [Project sharing with custom models](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/how-to-guides/project-share-custom-models?view=doc-intel-4.0.0)
-  - Updated: 2025-11-18T08:00:00.000Z → 2026-02-06T06:03:00.000Z
-- [What is Azure Document Intelligence in Foundry Tools?](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/overview?view=doc-intel-4.0.0)
-  - Updated: 2025-11-18T08:00:00.000Z → 2026-05-06T08:00:00.000Z
-- [What's new](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/whats-new?view=doc-intel-4.0.0)
-  - Updated: 2026-04-27T17:23:00.000Z → 2026-05-07T22:14:00.000Z
-- [SDK targets: REST API v4.0 2024-11-30 latest (GA)](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/versioning/sdk-overview-v4-0?view=doc-intel-4.0.0)
-  - Updated: 2025-11-18T08:00:00.000Z → 2026-05-06T08:00:00.000Z
-- [SDK targets: REST API 2022-08-31 (GA)](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/versioning/sdk-overview-v3-0?view=doc-intel-3.0.0)
-  - Updated: 2025-11-18T08:00:00.000Z → 2026-05-06T08:00:00.000Z
-
-### Deleted Pages
-
-- ~~Changelog and migration guide~~ (https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/versioning/changelog-release-history?view=doc-intel-4.0.0)
-- ~~Migration guide: 2023—07—31 latest (GA)~~ (https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/versioning/v3-1-migration-guide?view=doc-intel-4.0.0)
+- [Frequently asked questions (FAQ)](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/faq?view=doc-intel-4.0.0)
+  - Updated: 2026-01-31T06:05:00Z → 2026-01-31T06:05:00.000Z
 
 ## Classified Pages
 
@@ -125,6 +107,7 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI Sear
 | [Deploy the sample-labeling tool](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/v21/deploy-label-tool?view=doc-intel-2.1.0) | deployment | 0.70 | Explains different deployment options for the labeling tool, including cloud-hosted vs self-hosted; deployment-specific requirements and patterns for this product. |
 | [Document analysis models](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/language-support/ocr?view=doc-intel-4.0.0) | limits-quotas | 0.70 | Language-support pages typically contain explicit tables of supported languages/locales and modes, which are concrete capability limits not inferable from general training. |
 | [Enhanced capabilities](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/concept/add-on-capabilities?view=doc-intel-4.0.0) | limits-quotas | 0.70 | Add-on capabilities for service limits typically document concrete capacity increases and model exclusions (for example, which models support add-ons), which are numeric and SKU-specific details not known generically. |
+| [Frequently asked questions (FAQ)](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/faq?view=doc-intel-4.0.0) | limits-quotas | 0.70 | FAQ pages for Azure cognitive services typically include concrete, product-specific details such as maximum page counts per document, file size limits, supported file formats with constraints, rate limits, and model/version retirement timelines. These are numeric limits and behavioral specifics that qualify as expert knowledge under limits-quotas. |
 | [Get started with Document Intelligence client libraries](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/quickstarts/get-started-sdks-rest-api?view=doc-intel-4.0.0) | integrations | 0.70 | Client library quickstart for multiple API versions typically includes concrete API calls, parameters, and version-specific usage patterns—product-specific integration details. |
 | [Layout API markdown output elements](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/concept/markdown-elements?view=doc-intel-4.0.0) | integrations | 0.70 | Describes supported Markdown elements and how they are emitted by the Layout API, including parameter outputContentFormat=markdown and element mapping—product-specific response contract details. |
 | [Migration guide overview](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/versioning/migration-guide-overview?view=doc-intel-4.0.0) | decision-making | 0.70 | A migration guide between API versions typically includes version-specific behavioral differences, feature changes, and concrete guidance on when and how to move to v4.0 versus staying on earlier versions. This is expert, product-specific decision guidance about version selection and migration, fitting the decision-making category. |
@@ -163,7 +146,6 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI Sear
 | [Receipt](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/prebuilt/receipt?view=doc-intel-4.0.0) | 0.45 | Receipt model description; similar to other prebuilt model pages, mainly conceptual and field-level overview. |
 | [Tax documents (US)](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/prebuilt/tax-document?view=doc-intel-4.0.0) | 0.45 | US tax documents model description; lists supported forms and capabilities, but not detailed configuration or numeric limits. |
 | [Train a custom model with the sample-labeling tool](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/v21/label-tool?view=doc-intel-2.1.0) | 0.45 | How-to for using the sample tool with the REST API; largely procedural training/analysis steps rather than detailed config matrices or error mappings. |
-| [Frequently asked questions (FAQ)](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/faq?view=doc-intel-4.0.0) | 0.40 | FAQ likely mixes conceptual and minor specifics but not organized as limits, configuration tables, or troubleshooting with error codes. |
 | [Sample Labeling tool](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/v21/try-sample-label-tool?view=doc-intel-2.1.0) | 0.40 | Sample labeling tool quickstart; mostly workflow steps for labeling and training, not configuration tables, limits, or error-code mappings. |
 | [Check my usage and estimate the cost](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/how-to-guides/estimate-cost?view=doc-intel-4.0.0) | 0.35 | Covers checking usage and estimating cost via portal and pricing calculator; mostly procedural billing guidance without technical limits or config matrices. |
 | [Changelog](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/versioning/changelog-release-history?view=doc-intel-4.0.0) | 0.30 | Changelog and migration guide index page referencing SDK packages and samples; summary does not show concrete limits, decision matrices, or detailed migration thresholds. |

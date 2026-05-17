@@ -1,9 +1,9 @@
 ---
 name: azure-bot-service
-description: Expert knowledge for Azure AI Bot Service development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building Azure AI bots with Direct Line/Web Chat, Teams/SMS channels, OAuth/SSO, skills, or proactive messages, and other Azure AI Bot Service related development tasks. Not for Azure Health Bot (use azure-health-bot), Azure Functions (use azure-functions), Azure App Service (use azure-app-service), Azure Logic Apps (use azure-logic-apps).
+description: Expert knowledge for Azure AI Bot Service development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building Azure AI bots with Direct Line/Web Chat, Teams, OAuth/SSO, human handoff, or proactive messaging, and other Azure AI Bot Service related development tasks. Not for Azure Health Bot (use azure-health-bot), Azure Functions (use azure-functions), Azure App Service (use azure-app-service), Azure Logic Apps (use azure-logic-apps).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-05"
+  generated_at: "2026-05-17"
   generator: "docs2skills/1.0.0"
 ---
 # Azure AI Bot Service Skill
@@ -29,7 +29,7 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L67-L73 | Guidance on selecting the right Microsoft bot platform, choosing Azure channels vs adapters, and picking the best Direct Line option based on integration, control, and hosting needs. |
 | Architecture & Design Patterns | L74-L86 | Designing bot architectures: dialog modularization, branching/looping flows, multi-LUIS/QnA routing, embedding bots in apps/web, human handoff, knowledge bots, and reusable skills. |
 | Limits & Quotas | L87-L92 | Handling long-running bot operations (deferred replies, proactive messages) and checking which channels support specific features, attachments, and card types. |
-| Security | L93-L112 | Securing bots: auth & SSO (OAuth, Web Chat, skills), Direct Line security, network isolation/VNET, encryption, and privacy/security best practices for Azure Bot Service. |
+| Security | L93-L112 | Securing Azure bots: auth/SSO (OAuth, Web Chat, skills), Direct Line security, network isolation/VNET, encryption, privacy, and configuring bot/connector authentication. |
 | Configuration | L113-L157 | Configuring Azure AI bots: dialogs, language generation/understanding, memory/state, channels (Web Chat, Direct Line), telemetry/monitoring, skills, and environment-specific settings. |
 | Integrations & Coding Patterns | L158-L217 | Connecting bots to channels (Teams, SMS, web, social), using Direct Line/Web Chat, handling activities/messages, media, cards, prompts, OAuth, state, skills, and channel-specific features. |
 | Deployment | L218-L223 | Guides for provisioning App Service, deploying Bot Framework bots to Azure, and setting up CI/CD pipelines for automated bot deployment. |
@@ -103,7 +103,7 @@ This skill requires **network access** to fetch documentation content:
 | Implement single sign-on for Web Chat bots | https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-webchat-sso?view=azure-bot-service-4.0 |
 | Use Direct Line App Service extension in a VNET | https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-directline-extension-vnet?view=azure-bot-service-4.0 |
 | Understand Azure AI Bot Service data encryption | https://learn.microsoft.com/en-us/azure/bot-service/bot-service-encryption?view=azure-bot-service-4.0 |
-| Address security and privacy concerns in Bot Framework | https://learn.microsoft.com/en-us/azure/bot-service/bot-service-resources-faq-security?view=azure-bot-service-4.0 |
+| Configure security and privacy for Azure Bot Framework | https://learn.microsoft.com/en-us/azure/bot-service/bot-service-resources-faq-security?view=azure-bot-service-4.0 |
 | Network isolation concepts for Azure bots | https://learn.microsoft.com/en-us/azure/bot-service/dl-network-isolation-concept?view=azure-bot-service-4.0 |
 | Configure network isolation for Direct Line bots | https://learn.microsoft.com/en-us/azure/bot-service/dl-network-isolation-how-to?view=azure-bot-service-4.0 |
 | Configure authentication for Bot Connector and Bot State APIs | https://learn.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-connector-authentication?view=azure-bot-service-4.0 |

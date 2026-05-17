@@ -1,9 +1,9 @@
 ---
 name: azure-health-data-services
-description: Expert knowledge for Azure Health Data Services development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using FHIR/DICOM/MedTech, de-identification APIs, SMART on FHIR, Synapse/ADF pipelines, or CMK encryption, and other Azure Health Data Services related development tasks. Not for Azure Health Bot (use azure-health-bot), Azure Data Factory (use azure-data-factory), Azure Synapse Analytics (use azure-synapse-analytics), Azure Machine Learning (use azure-machine-learning).
+description: Expert knowledge for Azure Health Data Services development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using FHIR/DICOM APIs, bulk export/import, de-identification, SMART on FHIR, or Synapse integrations, and other Azure Health Data Services related development tasks. Not for Azure Health Bot (use azure-health-bot), Azure Data Factory (use azure-data-factory), Azure Synapse Analytics (use azure-synapse-analytics), Azure Data Explorer (use azure-data-explorer).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-10"
+  generated_at: "2026-05-17"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Health Data Services Skill
@@ -28,10 +28,10 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L46-L53 | Guidance on using customer-managed keys with FHIR/DICOM, optimizing FHIR performance, and safely running, monitoring, and managing FHIR reindex jobs. |
 | Decision Making | L54-L59 | Guidance on planning and executing migrations from Azure API for FHIR to FHIR service or Azure Health Data Services, including retirement timelines, architecture, and migration strategies. |
 | Architecture & Design Patterns | L60-L66 | Architectural patterns for FHIR, DICOM, and de-identification: disaster recovery setup, reliable anonymization services, DICOM + Data Lake integration, and digital pathology workflow design. |
-| Limits & Quotas | L67-L72 | Autoscaling and performance tuning for Azure API for FHIR/FHIR service, plus supported languages and limits for the Azure Health de-identification service. |
-| Security | L73-L113 | Configuring secure access to FHIR/DICOM/HDI: Entra app registration, auth flows and tokens, RBAC and policies, CMK encryption, network/Private Link, and SMART on FHIR. |
-| Configuration | L114-L169 | Configuring FHIR, DICOM, and MedTech services: bulk ops, profiles/validation, CORS, logging/metrics, de-identification, events, security (Private Link), and standards (CARIN, Da Vinci). |
-| Integrations & Coding Patterns | L170-L202 | Coding patterns and integration guides for FHIR, DICOM, MedTech, and de-identification APIs, including REST/SDK usage, bulk ops, data pipelines, and connections to Synapse, ADF, AML, Power BI, and Teams. |
+| Limits & Quotas | L67-L73 | Scaling and performance limits for Azure API for FHIR and DICOM: autoscale setup, throughput and request caps, storage and size constraints, and service-specific behavior under load. |
+| Security | L74-L114 | Configuring auth, RBAC, identities, tokens, encryption (CMK), network/private access, SMART on FHIR, and compliance policies for FHIR, DICOM, and de-identification services. |
+| Configuration | L115-L169 | Configuring FHIR and DICOM services: CORS, security, logging, bulk export/import/update, de-identification, custom search/validation, profiles, events, and Da Vinci/CARIN integrations. |
+| Integrations & Coding Patterns | L170-L202 | Code samples and patterns for calling FHIR/DICOM APIs, bulk export/import, de-identification, events, and integrating with tools like Synapse, ADF, Logic Apps, and VS Code. |
 | Deployment | L203-L219 | How to deploy and move Azure Health Data Services (FHIR, DICOM, de-identification, workspaces) using portal, ARM, Bicep, CLI, PowerShell, and check regional availability |
 
 ### Troubleshooting
@@ -68,7 +68,8 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Use autoscale with Azure API for FHIR | https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/autoscale-azure-api-fhir |
-| Use autoscale for FHIR service performance and capacity | https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/autoscale |
+| Understand Azure API for FHIR limits and behaviors | https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/fhir-faq |
+| Understand DICOM service requirements and limits | https://learn.microsoft.com/en-us/azure/healthcare-apis/dicom/dicom-services-faqs |
 
 ### Security
 | Topic | URL |
@@ -91,7 +92,7 @@ This skill requires **network access** to fetch documentation content:
 | Use built-in Azure Policies for Health Data Services compliance | https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-health-data-services-policy-reference |
 | Configure Azure RBAC for FHIR and DICOM services | https://learn.microsoft.com/en-us/azure/healthcare-apis/configure-azure-rbac |
 | Grant FHIR and DICOM access using CLI and REST | https://learn.microsoft.com/en-us/azure/healthcare-apis/configure-azure-rbac-using-scripts |
-| Configure Private Link for secure Health Data Services access | https://learn.microsoft.com/en-us/azure/healthcare-apis/configure-private-link |
+| Configure Private Link for Azure Health Data Services | https://learn.microsoft.com/en-us/azure/healthcare-apis/configure-private-link |
 | Configure private endpoint access for de-identification service | https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/configure-private-endpoints |
 | Manage de-identification service access with Azure RBAC | https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/manage-access-rbac |
 | Use managed identities with de-identification service | https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/managed-identities |
@@ -114,7 +115,7 @@ This skill requires **network access** to fetch documentation content:
 ### Configuration
 | Topic | URL |
 |-------|-----|
-| Bulk delete FHIR resources in Azure Health Data Services | https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/bulk-delete-operation |
+| Configure bulk delete operations for Azure FHIR | https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/bulk-delete-operation |
 | Configure Azure API for FHIR for CARIN Blue Button | https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/carin-implementation-guide-blue-button-tutorial |
 | Configure CORS for Azure API for FHIR | https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/configure-cross-origin-resource-sharing |
 | Configure database settings for Azure API for FHIR | https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/configure-database |
@@ -151,7 +152,6 @@ This skill requires **network access** to fetch documentation content:
 | Set up Da Vinci Plan-Net on FHIR service | https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/davinci-plan-net |
 | Configure de-identified FHIR data export | https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/deidentified-export |
 | Run bulk $export operations on FHIR data | https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/export-data |
-| Configure and use bulk delete in FHIR service | https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/fhir-bulk-delete |
 | Configure and run FHIR $bulk-update operations | https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/fhir-bulk-update |
 | Use $docref to fetch patient DocumentReferences | https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/fhir-docref |
 | Use $expand to resolve FHIR ValueSets | https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/fhir-expand |
@@ -196,7 +196,7 @@ This skill requires **network access** to fetch documentation content:
 | Consume FHIR events with Azure Logic Apps workflows | https://learn.microsoft.com/en-us/azure/healthcare-apis/events/events-consume-logic-apps |
 | Integrate ADF with FHIR $convert-data for HL7v2 | https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/convert-data-azure-data-factory |
 | Copy FHIR data to Azure Synapse Analytics | https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/copy-to-synapse |
-| Use FHIR REST API capabilities in Azure Health Data Services | https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/rest-api-capabilities |
+| Use FHIR bulk delete operations in Azure Health Data Services | https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/fhir-bulk-delete |
 | Access Azure Health Data Services APIs with cURL | https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/using-curl |
 | Access Azure Health Data Services using VS Code REST Client | https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/using-rest-client |
 

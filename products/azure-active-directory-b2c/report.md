@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-05'
+generated_at: '2026-05-17'
 category_descriptions:
   configuration: 'Configuring Azure AD B2C: custom policies, user flows, tokens, MFA,
     identity providers, claims/transformations, app/API registration, UI/localization,
@@ -8,11 +8,11 @@ category_descriptions:
     configuring identity providers, custom policies, fraud/risk tools, and securing
     traffic with proxies, WAFs, and monitoring.
   security: 'Security hardening for Azure AD B2C: MFA, Conditional Access, Identity
-    Protection, CAPTCHA, keys/certs, TLS/ciphers, admin roles, tenant control, API
-    connector security, and Sentinel logging.'
-  decision-making: Guidance on choosing B2C app types, understanding MAU billing/tiers,
-    planning regions and data residency, and deciding on usage, migration strategy,
-    and user migration approaches.
+    Protection, CAPTCHA, TLS/ciphers, policy keys, admin/tenant access control, API
+    security, and Sentinel-based monitoring.'
+  decision-making: 'Guidance on planning Azure AD B2C usage: choosing app types, understanding
+    MAU billing, regions/data residency, retirement impact, and selecting a user migration
+    strategy.'
   architecture-patterns: Global Azure AD B2C customer identity architectures, comparing
     funnel- vs region-based designs, and step-by-step proof-of-concept implementations
     for each pattern
@@ -31,17 +31,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Active Directory B2C development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when designing custom policies/user flows, MFA & IdP sign-in, app/API registration,
-  CI/CD deployments, or Sentinel logging, and other Azure Active Directory B2C related
-  development tasks. Not for Azure Information Protection (use azure-information-protection),
+  Use when designing user flows/custom policies, MFA/Conditional Access, identity
+  providers, CI/CD deployments, or monitoring, and other Azure Active Directory B2C
+  related development tasks. Not for Azure Information Protection (use azure-information-protection),
   Azure Role-based access control (use azure-rbac), Azure Security (use azure-security),
-  Azure Portal (use azure-portal).
-use_when: Use when designing custom policies/user flows, MFA & IdP sign-in, app/API
-  registration, CI/CD deployments, or Sentinel logging, and other Azure Active Directory
-  B2C related development tasks.
+  Azure Sentinel (use azure-sentinel).
+use_when: Use when designing user flows/custom policies, MFA/Conditional Access, identity
+  providers, CI/CD deployments, or monitoring, and other Azure Active Directory B2C
+  related development tasks.
 confusable_not_for: Not for Azure Information Protection (use azure-information-protection),
   Azure Role-based access control (use azure-rbac), Azure Security (use azure-security),
-  Azure Portal (use azure-portal).
+  Azure Sentinel (use azure-sentinel).
 ---
 # Azure Active Directory B2C Crawl Report
 
@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Information Protection (use azure-information-
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 289
+- **Updated Pages**: 2
+- **Unchanged**: 287
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-active-directory-b2c/azure-active-directory-b2c.csv`
 
@@ -76,6 +76,13 @@ confusable_not_for: Not for Azure Information Protection (use azure-information-
 | *(Unclassified)* | 32 | 11.1% |
 
 ## Changes
+
+### Updated Pages
+
+- [Frequently asked questions](https://learn.microsoft.com/en-us/azure/active-directory-b2c/faq)
+  - Updated: 2026-03-16T11:10:00Z → 2026-03-16T11:10:00.000Z
+- [TLS and cipher suite requirements](https://learn.microsoft.com/en-us/azure/active-directory-b2c/https-cipher-tls-requirements)
+  - Updated: 2025-05-01T11:17:00.000Z → 2026-05-14T08:00:00.000Z
 
 ## Classified Pages
 
@@ -106,6 +113,7 @@ confusable_not_for: Not for Azure Information Protection (use azure-information-
 | [SAML token issuer](https://learn.microsoft.com/en-us/azure/active-directory-b2c/saml-issuer-technical-profile) | configuration | 0.86 | Describes how Azure AD B2C issues SAML tokens and how to configure issuer technical profiles—detailed token and metadata configuration. |
 | [String](https://learn.microsoft.com/en-us/azure/active-directory-b2c/string-transformations) | configuration | 0.86 | Provides concrete examples of string transformation functions and their configuration, which are unique to Azure AD B2C. |
 | [StringCollection](https://learn.microsoft.com/en-us/azure/active-directory-b2c/stringcollection-transformations) | configuration | 0.86 | Contains specific transformation function names and parameter usage for string collections in the IEF schema. |
+| [TLS and cipher suite requirements](https://learn.microsoft.com/en-us/azure/active-directory-b2c/https-cipher-tls-requirements) | security | 0.86 | The page defines product-specific TLS and HTTPS cipher suite requirements for Azure AD B2C API connector and identity provider endpoints, including which protocol versions and cipher suites are required/allowed. These are concrete, service-specific security configuration details (what TLS versions/ciphers must be supported) that an LLM is unlikely to know from training and map directly to security configuration guidance. |
 | [UserJourneys](https://learn.microsoft.com/en-us/azure/active-directory-b2c/userjourneys) | configuration | 0.86 | Reference for UserJourneys element with orchestration steps, order, and attributes—core configuration of policy flow. |
 | [CAPTCHA](https://learn.microsoft.com/en-us/azure/active-directory-b2c/captcha-technical-profile) | configuration | 0.84 | Details CAPTCHA technical profile configuration, including provider settings and metadata—specific configuration schema. |
 | [CAPTCHA verification](https://learn.microsoft.com/en-us/azure/active-directory-b2c/display-control-captcha) | configuration | 0.84 | Explains CAPTCHA display control configuration including setting.enableCaptchaChallenge and related technical profile metadata—concrete config parameters. |
@@ -159,7 +167,6 @@ confusable_not_for: Not for Azure Information Protection (use azure-information-
 | [Secure API Management API](https://learn.microsoft.com/en-us/azure/active-directory-b2c/secure-api-management) | integrations | 0.80 | Describes creating and testing an inbound policy in API Management that validates Azure AD B2C-issued tokens; includes policy XML, claim checks, and configuration parameters unique to this integration. |
 | [Secure an API connector](https://learn.microsoft.com/en-us/azure/active-directory-b2c/secure-rest-api) | security | 0.80 | Covers authentication patterns for protecting REST endpoints called by B2C, including token validation, scopes, and configuration of app registrations and roles. |
 | [SendGrid](https://learn.microsoft.com/en-us/azure/active-directory-b2c/custom-email-sendgrid) | integrations | 0.80 | Provides SendGrid-specific configuration (API keys, templates) and B2C policy settings to send verification emails via SendGrid. |
-| [TLS and cipher suite requirements](https://learn.microsoft.com/en-us/azure/active-directory-b2c/https-cipher-tls-requirements) | security | 0.80 | Specifies required TLS versions and cipher suites for endpoints used by API connectors and identity providers—product-specific security configuration requirements. |
 | [UserInfo endpoint](https://learn.microsoft.com/en-us/azure/active-directory-b2c/userinfo-endpoint) | configuration | 0.80 | Describes policy elements and configuration parameters to implement an OpenID Connect UserInfo endpoint, including claim mappings and endpoint definitions. |
 | [itsme](https://learn.microsoft.com/en-us/azure/active-directory-b2c/partner-itsme) | integrations | 0.80 | Describes integrating itsme via OIDC using client_secret user flow; includes specific endpoints, scopes, and policy configuration unique to this partner integration. |
 | [Claims transformation](https://learn.microsoft.com/en-us/azure/active-directory-b2c/claims-transformation-technical-profile) | configuration | 0.79 | Explains how to configure claims transformation technical profiles and call transformation methods—product-specific configuration schema. |
@@ -283,6 +290,7 @@ confusable_not_for: Not for Azure Information Protection (use azure-information-
 | [Enable authentication in an SPA app](https://learn.microsoft.com/en-us/azure/active-directory-b2c/enable-authentication-spa-app) | integrations | 0.70 | Covers how to configure MSAL.js and B2C policies in a custom SPA with specific config object fields and API usage, which are detailed integration patterns. |
 | [Extensions app](https://learn.microsoft.com/en-us/azure/active-directory-b2c/extensions-app) | configuration | 0.70 | Describes the special b2c-extensions-app that Azure AD B2C auto-creates, its role in storing user/custom attribute data, and the impact if it is deleted. This is product-specific operational/configuration knowledge about a hidden/managed app that an LLM is unlikely to know without the docs. |
 | [File based configuration](https://learn.microsoft.com/en-us/azure/active-directory-b2c/configure-authentication-in-azure-web-app-file-based) | configuration | 0.70 | File-based configuration includes specific JSON/YAML fields and allowed values for B2C auth in App Service, which are detailed configuration parameters. |
+| [Frequently asked questions](https://learn.microsoft.com/en-us/azure/active-directory-b2c/faq) | decision-making | 0.70 | FAQ content for Azure AD B2C includes product-specific lifecycle details (for example, purchase/retirement dates, support implications, and migration guidance) that help users decide whether and how to adopt or migrate from the service. These are time-bound, non-generic details that an LLM is unlikely to know reliably from training and directly support decision-making about service usage. |
 | [Funnel-based design](https://learn.microsoft.com/en-us/azure/active-directory-b2c/b2c-global-identity-funnel-based-design) | architecture-patterns | 0.70 | Covers funnel-based design approach with capabilities and performance considerations, helping choose and apply a specific architecture pattern. |
 | [Grit IAM B2B2C](https://learn.microsoft.com/en-us/azure/active-directory-b2c/partner-grit-iam) | integrations | 0.70 | Describes concrete configuration steps and parameters to connect Grit IAM with Azure AD B2C, including endpoints and claims specific to this integration. |
 | [Grit IEF editor](https://learn.microsoft.com/en-us/azure/active-directory-b2c/partner-grit-editor) | configuration | 0.70 | Describes product-specific configuration workflow and options in the Grit Visual IEF Editor for Azure AD B2C custom policies, including unique settings and behaviors. |
@@ -309,7 +317,6 @@ confusable_not_for: Not for Azure Information Protection (use azure-information-
 | [Sign-in policy](https://learn.microsoft.com/en-us/azure/active-directory-b2c/add-sign-in-policy) | configuration | 0.70 | Similar to other user flow docs, this page defines specific policy configuration fields, identity providers, and settings that are detailed B2C configuration parameters. |
 | [User access](https://learn.microsoft.com/en-us/azure/active-directory-b2c/manage-user-access) | configuration | 0.70 | Covers concrete configuration of attributes (DOB, country), terms-of-use capture, and policy behavior for managing access, which are product-specific. |
 | [WhoIAM Rampart](https://learn.microsoft.com/en-us/azure/active-directory-b2c/partner-whoiam-rampart) | integrations | 0.70 | Covers detailed setup of Rampart with Azure AD B2C, including RBAC-related configuration, endpoints, and app settings unique to this integration. |
-| [Frequently asked questions](https://learn.microsoft.com/en-us/azure/active-directory-b2c/faq) | decision-making | 0.68 | FAQ content for Azure AD B2C typically includes product-specific, time-bound information (such as purchase/retirement dates, supported scenarios, and guidance on what to use instead after deprecation). This is expert knowledge not reliably known from training and is used to make decisions about whether and how to adopt or migrate from Azure AD B2C. While it’s an FAQ, the deprecation and replacement guidance aligns most closely with decision-making (service selection and migration considerations), rather than limits, configuration, or troubleshooting. |
 | [Migrate users](https://learn.microsoft.com/en-us/azure/active-directory-b2c/user-migration) | decision-making | 0.68 | Explains when to use pre-migration vs seamless migration, including trade-offs, flows, and requirements (e.g., Graph API usage) to guide migration decisions. |
 | [Add administrator (work account)](https://learn.microsoft.com/en-us/azure/active-directory-b2c/tenant-management-manage-administrator) | security | 0.65 | Covers how to add and invite admin/guest accounts with role-based access; includes product-specific admin role usage and security configuration steps. |
 | [Authentication options](https://learn.microsoft.com/en-us/azure/active-directory-b2c/enable-authentication-android-app-options) | configuration | 0.65 | Describes enabling and customizing authentication experience for Android; option pages usually enumerate specific configuration switches and policy settings. |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-05-17'
 category_descriptions:
   security: 'Authentication and network security for Azure Relay: Entra ID and SAS
     auth, managed identities, IP firewall, virtual network rules, and Private Link
@@ -37,8 +37,8 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 27
+- **Updated Pages**: 1
+- **Unchanged**: 26
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-relay/azure-relay.csv`
 
@@ -53,6 +53,11 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 | *(Unclassified)* | 16 | 59.3% |
 
 ## Changes
+
+### Updated Pages
+
+- [FAQ](https://learn.microsoft.com/en-us/azure/azure-relay/relay-faq)
+  - Updated: 2026-01-25T06:10:00Z → 2026-01-25T06:10:00.000Z
 
 ## Classified Pages
 
@@ -76,7 +81,6 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 |-----------|------------|--------|
 | [Monitor Azure Relay with Azure Monitoring](https://learn.microsoft.com/en-us/azure/azure-relay/relay-metrics-azure-monitor) | 0.50 | Metrics overview; while it may list metric names, the summary suggests general monitoring guidance rather than detailed configuration or limits tables. |
 | [Set up diagnostic logs](https://learn.microsoft.com/en-us/azure/azure-relay/diagnostic-logs) | 0.50 | Diagnostics logs overview; describes available logs but summary does not indicate detailed error-code mappings or config parameter tables. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/azure-relay/relay-faq) | 0.40 | FAQ page; likely mixes conceptual and support info but summary does not indicate structured limits, configs, or error mappings. |
 | [Move across regions](https://learn.microsoft.com/en-us/azure/azure-relay/move-across-regions) | 0.40 | Describes moving a namespace across regions; mostly procedural ARM template steps without clear limits, matrices, or config tables in the summary. |
 | [Available APIs](https://learn.microsoft.com/en-us/azure/azure-relay/relay-api-overview) | 0.30 | API overview page; high-level listing of available APIs, not detailed parameter tables or error mappings. |
 | [Create a namespace](https://learn.microsoft.com/en-us/azure/azure-relay/relay-create-namespace-portal) | 0.30 | Portal walkthrough to create a namespace; likely UI steps, not detailed configuration parameter reference. |
@@ -90,3 +94,4 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 | [Send and receive messages - Node WebSockets](https://learn.microsoft.com/en-us/azure/azure-relay/relay-hybrid-connections-node-get-started) | 0.20 | Node.js WebSockets quickstart; basic how-to without detailed configuration matrices or quotas. |
 | [Send and receive messages - Python WebSockets](https://learn.microsoft.com/en-us/azure/azure-relay/relay-hybrid-connections-python-get-started) | 0.20 | Python WebSocket quickstart; basic example, no expert configuration or troubleshooting content. |
 | [What is Relay?](https://learn.microsoft.com/en-us/azure/azure-relay/relay-what-is-it) | 0.10 | High-level overview of Azure Relay; no detailed limits, configs, or error mappings. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/azure-relay/relay-faq) | - | FAQ page description is high-level; no evidence of specific limits, error codes, configuration tables, or other detailed expert knowledge per the defined categories. |

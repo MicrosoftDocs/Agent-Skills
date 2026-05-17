@@ -1,9 +1,9 @@
 ---
 name: azure-operator-nexus
-description: Expert knowledge for Azure Operator Nexus development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring Nexus clusters/fabric, BGP/ACL/QoS, secure access/RBAC, NPB TAP rules, or near-edge storage, and other Azure Operator Nexus related development tasks. Not for Azure Network Function Manager (use azure-network-function-manager), Azure Networking (use azure-networking), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Operator Service Manager (use azure-operator-service-manager).
+description: Expert knowledge for Azure Operator Nexus development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing Nexus clusters, fabric upgrades, isolation domains, BGP/QoS policies, or near-edge storage, and other Azure Operator Nexus related development tasks. Not for Azure Network Function Manager (use azure-network-function-manager), Azure Networking (use azure-networking), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Operator Insights (use azure-operator-insights).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-10"
+  generated_at: "2026-05-17"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Operator Nexus Skill
@@ -30,7 +30,7 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L97-L101 | Designing near-edge storage for Azure Operator Nexus: architecture choices, data locality, performance, capacity planning, redundancy, and integration with Nexus network/compute. |
 | Limits & Quotas | L102-L114 | Limits, capacity planning, supported versions, and operational behaviors for Nexus clusters: quotas, storage sizing, node restarts, isolation domain requirements, upgrades, and log retention. |
 | Security | L115-L154 | Securing Nexus: identity/RBAC, managed identities, ACLs, SSH/serial access, break-glass, key/cert/secret rotation, Defender/Policy, and secure VM/cluster/network access configuration. |
-| Configuration | L155-L221 | Configuring and operating Nexus clusters and network fabric: templates, isolation domains, BGP/route policies, ACLs, QoS, monitoring, commit workflows, and Kubernetes/node customization. |
+| Configuration | L155-L221 | Designing, deploying, and updating Nexus clusters and network fabric: JSONC templates, isolation domains, BGP/route policies, QoS, monitoring, security, and Kubernetes/node configuration. |
 | Integrations & Coding Patterns | L222-L226 | Configuring Network Packet Broker TAP rules in Azure Operator Nexus, including rule creation, traffic mirroring, filtering, and integration patterns for network observability. |
 | Deployment | L227-L235 | Guides for upgrading and replacing Nexus fabric devices/terminal servers, running pre-validation and template-based fabric upgrades, and building/maintaining VM images for Operator Nexus. |
 

@@ -1,9 +1,9 @@
 ---
 name: azure-test-plans
-description: Expert knowledge for Azure Test Plans development including limits & quotas, security, and integrations & coding patterns. Use when customizing test run fields, managing retention limits, configuring permissions, or automating tests with tcm.exe, and other Azure Test Plans related development tasks. Not for Azure DevOps (use azure-devops), Azure Boards (use azure-boards), Azure Pipelines (use azure-pipelines), Azure App Testing (use azure-app-testing).
+description: Expert knowledge for Azure Test Plans development including limits & quotas, security, and integrations & coding patterns. Use when configuring test run custom fields, data retention, permissions, access levels, or tcm.exe automation, and other Azure Test Plans related development tasks. Not for Azure DevOps (use azure-devops), Azure Pipelines (use azure-pipelines), Azure App Testing (use azure-app-testing), Azure Boards (use azure-boards).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-10"
+  generated_at: "2026-05-17"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Test Plans Skill
@@ -24,7 +24,7 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Limits & Quotas | L31-L36 | Customizing test run fields and understanding Azure Test Plans FAQs, data retention policies, and limits on test data storage and usage. |
+| Limits & Quotas | L31-L36 | Managing custom fields on test runs and understanding data retention limits, default quotas, and how long Azure Test Plans data is kept or deleted |
 | Security | L37-L41 | Managing permissions, access levels, and security roles for users and groups in Azure Test Plans manual testing features. |
 | Integrations & Coding Patterns | L42-L45 | Using tcm.exe CLI to manage Azure Test Plans: create and run test suites, import/export test cases, manage test configurations, and automate test management tasks |
 
@@ -32,7 +32,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Use custom fields for Azure DevOps test runs | https://learn.microsoft.com/en-us/azure/devops/test/custom-fields?view=azure-devops |
-| Review Azure Test Plans FAQs and data retention limits | https://learn.microsoft.com/en-us/azure/devops/test/reference-qa?view=azure-devops |
+| Understand Azure Test Plans data retention limits | https://learn.microsoft.com/en-us/azure/devops/test/reference-qa?view=azure-devops |
 
 ### Security
 | Topic | URL |

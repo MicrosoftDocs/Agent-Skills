@@ -1,9 +1,9 @@
 ---
 name: azure-boards
-description: Expert knowledge for Azure Boards development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when managing work items, queries/charts, GitHub links, WIQL/badges, or Excel/Teams/Slack integrations, and other Azure Boards related development tasks. Not for Azure DevOps (use azure-devops), Azure Pipelines (use azure-pipelines), Azure Test Plans (use azure-test-plans), Azure Repos (use azure-repos).
+description: Expert knowledge for Azure Boards development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when managing work items, backlogs, queries/charts, GitHub links, or Excel/Slack/Teams integrations, and other Azure Boards related development tasks. Not for Azure DevOps (use azure-devops), Azure Test Plans (use azure-test-plans), Azure Pipelines (use azure-pipelines), Azure Repos (use azure-repos).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-03"
+  generated_at: "2026-05-17"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Boards Skill
@@ -24,7 +24,7 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L43 | Diagnosing and fixing Azure Boards issues with Office integration, backlog hierarchy/reordering problems, and query errors or unexpected query results. |
+| Troubleshooting | L35-L43 | Diagnosing and fixing Azure Boards issues with Office integration, backlog nesting/reordering, and common query problems (filters, clauses, results). |
 | Best Practices | L44-L51 | Best practices for using Azure Boards for Agile: product management, Kanban, Scrum/sprints, and scaling Agile across teams and projects. |
 | Decision Making | L52-L58 | Guidance on choosing Azure Boards processes, tools, and integrations, plus planning cross-team dependencies and migrations to get the right setup for your organization. |
 | Limits & Quotas | L59-L64 | Managing Azure Boards limits for test artifacts and work item attachments, including size/quantity constraints and how to restore deleted test-related items. |
@@ -39,7 +39,7 @@ This skill requires **network access** to fetch documentation content:
 | Troubleshoot Azure DevOps Office integration issues | https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/office/tfs-office-integration-issues?view=azure-devops |
 | Troubleshoot Azure DevOps Office integration issues | https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/office/tfs-office-integration-issues?view=azure-devops |
 | Troubleshoot Azure Boards backlog nesting and reordering | https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/resolve-backlog-reorder-issues?view=azure-devops |
-| Troubleshoot and resolve Azure Boards query issues | https://learn.microsoft.com/en-us/azure/devops/boards/queries/query-faqs?view=azure-devops |
+| Resolve common Azure Boards query issues | https://learn.microsoft.com/en-us/azure/devops/boards/queries/query-faqs?view=azure-devops |
 
 ### Best Practices
 | Topic | URL |

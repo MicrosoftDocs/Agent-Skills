@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-10'
+generated_at: '2026-05-17'
 category_descriptions:
   security: Securing Service Bus with Entra ID, managed identities, SAS, keys, TLS,
     network isolation (VNet, Private Link, firewalls, NSPs), and applying Azure Policy/compliance
@@ -25,22 +25,22 @@ category_descriptions:
   troubleshooting: 'Diagnosing and fixing Service Bus issues: AMQP errors, tracing
     requests end-to-end, handling deprecated/current SDK exceptions, ARM/Resource
     Manager errors, and common runtime problems.'
-  limits-quotas: Service Bus message, entity, and namespace quotas (size, connections,
-    throughput) and how throttling works, including limits, behaviors under load,
-    and mitigation strategies.
+  limits-quotas: 'Service Bus capacity rules: entity size/message limits, namespace
+    quotas, throttling behaviors, and how throughput, connections, and operations
+    are constrained or reduced under load.'
 skill_description: Expert knowledge for Azure Service Bus development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  using queues/topics, sessions, SQL filters/actions, JMS/RabbitMQ integration, or
-  Premium scaling/DR, and other Azure Service Bus related development tasks. Not for
-  Azure Event Hubs (use azure-event-hubs), Azure Relay (use azure-relay), Azure Queue
-  Storage (use azure-queue-storage), Azure Notification Hubs (use azure-notification-hubs).
-use_when: Use when using queues/topics, sessions, SQL filters/actions, JMS/RabbitMQ
-  integration, or Premium scaling/DR, and other Azure Service Bus related development
+  using queues/topics, sessions, SQL filters, JMS/RabbitMQ bridges, or geo-replication/DR
+  in Service Bus, and other Azure Service Bus related development tasks. Not for Azure
+  Event Hubs (use azure-event-hubs), Azure Event Grid (use azure-event-grid), Azure
+  Queue Storage (use azure-queue-storage), Azure Relay (use azure-relay).
+use_when: Use when using queues/topics, sessions, SQL filters, JMS/RabbitMQ bridges,
+  or geo-replication/DR in Service Bus, and other Azure Service Bus related development
   tasks.
-confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Relay (use
-  azure-relay), Azure Queue Storage (use azure-queue-storage), Azure Notification
-  Hubs (use azure-notification-hubs).
+confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Event Grid
+  (use azure-event-grid), Azure Queue Storage (use azure-queue-storage), Azure Relay
+  (use azure-relay).
 ---
 # Azure Service Bus Crawl Report
 
@@ -49,13 +49,13 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Relay
 - **Total Pages**: 124
 - **Fetched**: 124
 - **Fetch Failed**: 0
-- **Classified**: 90
-- **Unclassified**: 34
+- **Classified**: 91
+- **Unclassified**: 33
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 7
-- **Unchanged**: 116
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 123
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-bus/azure-service-bus.csv`
 
@@ -69,33 +69,17 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Relay
 | decision-making | 8 | 6.5% |
 | deployment | 7 | 5.6% |
 | integrations | 12 | 9.7% |
-| limits-quotas | 2 | 1.6% |
+| limits-quotas | 3 | 2.4% |
 | security | 19 | 15.3% |
 | troubleshooting | 6 | 4.8% |
-| *(Unclassified)* | 34 | 27.4% |
+| *(Unclassified)* | 33 | 26.6% |
 
 ## Changes
 
-### New Pages
-
-- [Choose between JMS and native SDK (Java)](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-jms-versus-native-sdk)
-
 ### Updated Pages
 
-- [Authentication and authorization](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-authentication-and-authorization)
-  - Updated: 2026-04-23T06:20:00.000Z → 2026-05-05T06:13:00.000Z
-- [Authentication with Shared Access Signatures](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-sas)
-  - Updated: 2026-04-23T06:20:00.000Z → 2026-05-02T08:00:00.000Z
-- [Authenticate with managed identities for Azure resources](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-managed-service-identity)
-  - Updated: 2026-04-23T06:20:00.000Z → 2026-05-05T06:13:00.000Z
-- [Java Message Service (JMS) Developer guide](https://learn.microsoft.com/en-us/azure/service-bus-messaging/jms-developer-guide)
-  - Updated: 2025-06-16T08:00:00.000Z → 2026-05-08T06:13:00.000Z
-- [Test locally with Service Bus emulator](https://learn.microsoft.com/en-us/azure/service-bus-messaging/test-locally-with-service-bus-emulator)
-  - Updated: 2026-01-16T12:11:00.000Z → 2026-05-08T17:37:00.000Z
-- [Allow access from specific IP addresses](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-ip-filtering)
-  - Updated: 2026-02-24T23:11:00.000Z → 2026-05-02T08:00:00.000Z
-- [Allow access via private endpoints](https://learn.microsoft.com/en-us/azure/service-bus-messaging/private-link-service)
-  - Updated: 2024-12-19T08:00:00.000Z → 2026-05-02T08:00:00.000Z
+- [FAQ](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-faq)
+  - Updated: 2025-06-05T17:04:00Z → 2025-06-05T17:04:00.000Z
 
 ## Classified Pages
 
@@ -155,6 +139,7 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Relay
 | [Duplicate message detection](https://learn.microsoft.com/en-us/azure/service-bus-messaging/duplicate-detection) | best-practices | 0.70 | Describes duplicate detection behavior and how to use it to handle failure scenarios; includes product-specific semantics and edge cases. |
 | [Enable duplicate detection for a queue or topic](https://learn.microsoft.com/en-us/azure/service-bus-messaging/enable-duplicate-detection) | configuration | 0.70 | Page focuses on how to enable duplicate detection via portal, CLI, PowerShell, and SDKs, which typically includes entity-specific property names (e.g., RequiresDuplicateDetection, DuplicateDetectionHistoryTimeWindow) and configuration patterns unique to Azure Service Bus rather than just conceptual description. |
 | [Enable partitions (basic / standard)](https://learn.microsoft.com/en-us/azure/service-bus-messaging/enable-partitions-basic-standard) | configuration | 0.70 | Page explains enabling partitioning using portal, CLI, PowerShell, and SDKs, which implies detailed configuration properties and flags specific to Service Bus entities (e.g., EnablePartitioning) and how to set them, going beyond generic concepts. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-faq) | limits-quotas | 0.70 | FAQ pages for Azure messaging services typically include concrete, product-specific details such as maximum message size, queue/topic size limits, lock durations, retry/timeout behaviors, and other numeric constraints that are not obvious from general training data. These are expressed as exact values and often differ by tier, matching the limits-quotas criteria more than other categories. |
 | [Geo-Disaster Recovery (metadata only)](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-geo-dr) | decision-making | 0.70 | Provides product-specific guidance on configuring Geo-DR, including Premium-only availability and namespace pairing behavior, which drives DR design decisions. |
 | [Geo-Replication](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-geo-replication) | decision-making | 0.70 | Covers how Geo-Replication works across regions and when to use it to protect against outages, including metadata/data replication behavior that informs architecture choices. |
 | [Get message counters](https://learn.microsoft.com/en-us/azure/service-bus-messaging/message-counters) | configuration | 0.70 | Provides exact API/ARM property names and patterns to query message counters, including performance considerations specific to Service Bus. |
@@ -229,4 +214,3 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Relay
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-tutorial-topics-subscriptions-powershell) | 0.20 | Primarily a step-by-step PowerShell quickstart for creating Service Bus topics, subscriptions, and filters. It shows example commands and basic usage but does not present configuration parameter tables, limits, error-code-based troubleshooting, or product-specific best-practice guidance beyond generic tutorial content. |
 | [Topic filters and actions](https://learn.microsoft.com/en-us/azure/service-bus-messaging/topic-filters) | 0.20 | Conceptual overview of topic filters and rules; summary does not indicate concrete limits, configuration tables, or error-based troubleshooting details. |
 | [What is Service Bus Messaging?](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview) | 0.10 | High-level introduction to Azure Service Bus messaging; no specific limits, configuration tables, error codes, or product-specific decision matrices. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-faq) | - | FAQ content is broad and mixed; based on the description it likely covers general questions, conceptual clarifications, and support/pricing pointers rather than detailed limits tables, configuration parameters, or error-code-based troubleshooting. Without clear evidence of specific numeric limits, config tables, or error mappings, it does not meet the expert-knowledge criteria for any sub-skill. |

@@ -1,14 +1,14 @@
 ---
 name: azure-elastic-san
-description: Expert knowledge for Azure Elastic SAN development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when creating iSCSI volumes, AVS datastores, AKS storage, CMK encryption, or clustered SQL/FCI workloads, and other Azure Elastic SAN related development tasks. Not for Azure Blob Storage (use azure-blob-storage), Azure Files (use azure-files), Azure NetApp Files (use azure-netapp-files), Azure Managed Lustre (use azure-managed-lustre).
+description: Expert knowledge for Azure Elastic SAN development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when creating Elastic SAN volumes via PowerShell, AVS datastores, AKS storage, iSCSI clients, or volume snapshots, and other Azure Elastic SAN related development tasks. Not for Azure Blob Storage (use azure-blob-storage), Azure Files (use azure-files), Azure NetApp Files (use azure-netapp-files), Azure Managed Lustre (use azure-managed-lustre).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-03"
+  generated_at: "2026-05-17"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Elastic SAN Skill
 
-This skill provides expert guidance for Azure Elastic SAN. Covers troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Elastic SAN. Covers troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -24,14 +24,15 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L36-L40 | Diagnosing and resolving common Azure Elastic SAN issues, including provisioning failures, connectivity/IO errors, performance problems, and typical error codes/logs. |
-| Best Practices | L41-L47 | Tuning Elastic SAN for performance, optimizing AVS datastores, and using volume snapshots for backup, recovery, and data protection best practices. |
-| Decision Making | L48-L52 | Guidance on sizing and configuring Elastic SAN (performance, capacity, architecture) and deciding how to integrate it with AKS workloads and storage patterns. |
-| Architecture & Design Patterns | L53-L57 | Patterns for running clustered apps (SQL, Failover Cluster, etc.) on Azure Elastic SAN, including shared volume setup, fencing, failover behavior, and high-availability design. |
-| Limits & Quotas | L58-L63 | Details on Elastic SAN capacity limits, max IOPS/throughput, and how VM sizes, volume groups, and workloads affect achievable performance and scaling. |
-| Security | L64-L73 | Encrypting Elastic SAN with customer-managed keys and configuring secure access via private endpoints, service endpoints, and other network security options for volumes and volume groups. |
-| Configuration | L74-L82 | Configuring, deploying, resizing, deleting, and monitoring Azure Elastic SAN resources/volumes, plus safely managing IQN naming authority transitions. |
-| Integrations & Coding Patterns | L83-L88 | Using PowerShell to batch-create Elastic SAN volumes and configuring Linux and Windows clients to connect, mount, and use those iSCSI-based volumes. |
+| Troubleshooting | L37-L41 | Diagnosing and resolving common Azure Elastic SAN issues, including provisioning failures, connectivity/IO errors, performance problems, and typical error codes/logs. |
+| Best Practices | L42-L48 | Tuning Elastic SAN for performance, optimizing AVS datastores, and using volume snapshots for backup, recovery, and data protection best practices. |
+| Decision Making | L49-L53 | Guidance on sizing and configuring Elastic SAN (performance, capacity, architecture) and deciding how to integrate it with AKS workloads and storage patterns. |
+| Architecture & Design Patterns | L54-L58 | Patterns for running clustered apps (SQL, Failover Cluster, etc.) on Azure Elastic SAN, including shared volume setup, fencing, failover behavior, and high-availability design. |
+| Limits & Quotas | L59-L64 | Details on Elastic SAN capacity limits, max IOPS/throughput, and how VM sizes, volume groups, and workloads affect achievable performance and scaling. |
+| Security | L65-L74 | Encrypting Elastic SAN with customer-managed keys and configuring secure access via private endpoints, service endpoints, and other network security options for volumes and volume groups. |
+| Configuration | L75-L83 | Configuring, deploying, resizing, deleting, and monitoring Azure Elastic SAN resources/volumes, plus safely managing IQN naming authority transitions. |
+| Integrations & Coding Patterns | L84-L90 | Using PowerShell to batch-create Elastic SAN volumes and configuring Linux and Windows clients to connect, mount, and use those iSCSI-based volumes. |
+| Deployment | L91-L94 | Guides for migrating Azure VMware Solution (AVS) datastores to Azure Elastic SAN, including configuring and using multiple private endpoints for secure connectivity. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -86,3 +87,8 @@ This skill requires **network access** to fetch documentation content:
 | Batch-create Azure Elastic SAN volumes with PowerShell | https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-batch-create-sample |
 | Connect Linux clients to Azure Elastic SAN volumes | https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-connect-linux |
 | Connect Windows clients to Azure Elastic SAN volumes | https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-connect-windows |
+
+### Deployment
+| Topic | URL |
+|-------|-----|
+| Migrate AVS datastores to Elastic SAN with more private endpoints | https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-increase-private-endpoints-azure-vmware-solutions |

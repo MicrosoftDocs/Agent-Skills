@@ -1,9 +1,9 @@
 ---
 name: azure-partner-solutions
-description: Expert knowledge for Azure Partner Solutions development including troubleshooting, decision making, architecture & design patterns, security, configuration, and integrations & coding patterns. Use when using Service Connector, Confluent Cloud, MongoDB Atlas, Dynatrace APM, or Palo Alto Cloud NGFW on Azure, and other Azure Partner Solutions related development tasks. Not for Azure Industry (use azure-industry), Azure Managed Applications (use azure-managed-applications), Azure Lighthouse (use azure-lighthouse), Azure Networking (use azure-networking).
+description: Expert knowledge for Azure Partner Solutions development including troubleshooting, decision making, architecture & design patterns, security, configuration, and integrations & coding patterns. Use when using Service Connector, Foundry Agents, Confluent Cloud RBAC, Dynatrace on Azure, or Palo Alto Cloud NGFW, and other Azure Partner Solutions related development tasks. Not for Azure Industry (use azure-industry), Azure Managed Applications (use azure-managed-applications), Azure Lighthouse (use azure-lighthouse).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-03"
+  generated_at: "2026-05-17"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Partner Solutions Skill
@@ -24,7 +24,7 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L34-L50 | Diagnosing and fixing onboarding, configuration, and runtime issues for Azure-native integrations with Confluent, Airflow, Datadog, Dynatrace, Elastic, Informatica, MongoDB, Neon, New Relic, NGINXaaS, and Palo Alto. |
+| Troubleshooting | L34-L50 | Diagnosing and fixing integration, setup, and runtime issues for third‑party SaaS/monitoring platforms (Datadog, Dynatrace, Elastic, MongoDB, New Relic, etc.) running on or connected to Azure |
 | Decision Making | L51-L55 | Guidance on evaluating Dynatrace APM on Azure, starting a free trial from the portal/Marketplace, setup steps, and considerations before adopting it for monitoring. |
 | Architecture & Design Patterns | L56-L60 | Architectural guidance for integrating Palo Alto Cloud NGFW with Azure Application Gateway, including network design, routing, security, and deployment patterns. |
 | Security | L61-L66 | Managing security for Azure partner services, including Confluent Cloud RBAC in Azure portal and configuring SSO/access control for Informatica IDMC Azure resources. |
@@ -38,15 +38,15 @@ This skill requires **network access** to fetch documentation content:
 | Resolve common Apache Airflow on Astro Azure issues | https://learn.microsoft.com/en-us/azure/partner-solutions/astronomer/faq |
 | Troubleshoot Datadog on Azure integration problems | https://learn.microsoft.com/en-us/azure/partner-solutions/datadog/faq |
 | Troubleshoot Datadog Azure Native Integration issues | https://learn.microsoft.com/en-us/azure/partner-solutions/datadog/troubleshoot |
-| Diagnose and fix Azure Native Dynatrace onboarding issues | https://learn.microsoft.com/en-us/azure/partner-solutions/dynatrace/faq |
+| Address common Dell PowerScale on Azure questions | https://learn.microsoft.com/en-us/azure/partner-solutions/dell/faq |
+| Troubleshoot Azure Native Dynatrace Service setup | https://learn.microsoft.com/en-us/azure/partner-solutions/dynatrace/faq |
 | Troubleshoot Azure Native Dynatrace Service problems | https://learn.microsoft.com/en-us/azure/partner-solutions/dynatrace/troubleshoot |
-| Troubleshoot Elastic Cloud integration with Azure | https://learn.microsoft.com/en-us/azure/partner-solutions/elastic/faq |
+| Resolve Elastic on Azure integration and usage issues | https://learn.microsoft.com/en-us/azure/partner-solutions/elastic/faq |
 | Troubleshoot Elastic Cloud Azure Native integration | https://learn.microsoft.com/en-us/azure/partner-solutions/elastic/troubleshoot |
-| Resolve Informatica IDMC Azure native integration issues | https://learn.microsoft.com/en-us/azure/partner-solutions/informatica/faq |
-| Resolve common MongoDB Atlas on Azure issues | https://learn.microsoft.com/en-us/azure/partner-solutions/mongo-db/faq |
+| Troubleshoot Informatica IDMC Azure Native integration | https://learn.microsoft.com/en-us/azure/partner-solutions/informatica/faq |
+| Fix common LambdaTest HyperExecute Azure issues | https://learn.microsoft.com/en-us/azure/partner-solutions/lambda-test/faq |
+| Troubleshoot MongoDB Atlas resources in Azure | https://learn.microsoft.com/en-us/azure/partner-solutions/mongo-db/faq |
 | Troubleshoot Azure Native New Relic Service issues | https://learn.microsoft.com/en-us/azure/partner-solutions/new-relic/troubleshoot |
-| Address common Azure Native NGINXaaS questions | https://learn.microsoft.com/en-us/azure/partner-solutions/nginx/faq |
-| Troubleshoot Cloud NGFW by Palo Alto on Azure | https://learn.microsoft.com/en-us/azure/partner-solutions/palo-alto/faq |
 
 ### Decision Making
 | Topic | URL |

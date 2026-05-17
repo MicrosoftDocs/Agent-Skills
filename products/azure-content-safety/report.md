@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-05'
+generated_at: '2026-05-17'
 category_descriptions:
   troubleshooting: Diagnosing and resolving Azure AI Content Safety API errors, including
     HTTP status codes, common failure causes, and recommended fixes or retries.
@@ -49,8 +49,8 @@ confusable_not_for: Not for Azure Information Protection (use azure-information-
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 34
+- **Updated Pages**: 1
+- **Unchanged**: 33
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-content-safety/azure-content-safety.csv`
 
@@ -70,6 +70,11 @@ confusable_not_for: Not for Azure Information Protection (use azure-information-
 | *(Unclassified)* | 19 | 55.9% |
 
 ## Changes
+
+### Updated Pages
+
+- [Azure AI Content Safety FAQ](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/faq)
+  - Updated: 2026-02-04T18:16:00Z → 2026-02-04T18:16:00.000Z
 
 ## Classified Pages
 
@@ -108,9 +113,9 @@ confusable_not_for: Not for Azure Information Protection (use azure-information-
 | [Multimodal moderation (preview)](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/quickstart-multimodal) | 0.35 | Quickstart for multimodal analysis; mentions region availability and input limits via links, but summary doesn’t show explicit numeric limits or configuration matrices. |
 | [Task adherence (preview)](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/quickstart-task-adherence) | 0.35 | Quickstart for Task Adherence; summary describes behavior and scenarios but not specific configuration parameters, limits, or error codes. |
 | [Text moderation](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/quickstart-text) | 0.35 | Quickstart for text analysis; references input limits elsewhere but doesn’t itself list numeric limits or detailed configuration tables. |
-| [Azure AI Content Safety FAQ](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/faq) | 0.30 | FAQ reference; summary doesn’t indicate specific error codes, configs, or numeric limits, likely general Q&A. |
 | [Prompt Shields](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/quickstart-jailbreak) | 0.30 | Quickstart tutorial for Prompt Shields; summary references API input limits elsewhere but doesn’t itself contain the numeric limits or detailed config tables. |
 | [Protected material detection for text](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/quickstart-protected-material) | 0.30 | Quickstart for protected material text; summary is conceptual and compliance-focused, not configuration/limits/troubleshooting-focused. |
 | [Use Content Safety in Foundry portal](https://learn.microsoft.com/en-us/azure/foundry-classic/ai-services/content-safety-overview) | 0.25 | Portal overview (classic) for Content Safety; primarily an interface/feature overview without detailed limits, configs, or troubleshooting mappings in summary. |
+| [Azure AI Content Safety FAQ](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/faq) | 0.20 | FAQ page likely contains general Q&A and pointers to community/support rather than detailed limits, configuration tables, error-code mappings, or other product-specific expert data as defined by the sub-skill types. |
 | [Azure AI Content Safety overview](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/overview) | 0.20 | High-level service overview and marketing-style description without concrete limits, configs, or error details. |
 | [What's new](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/whats-new) | 0.10 | Release notes/what’s new index without detailed technical tables or configs in the summary; treated as navigation/update listing. |

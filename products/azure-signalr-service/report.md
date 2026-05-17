@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-03'
+generated_at: '2026-05-17'
 category_descriptions:
   configuration: 'Configuring SignalR apps: connection strings, upstream endpoints,
     custom domains, monitoring/metrics, negotiation endpoints, Functions bindings,
@@ -7,7 +7,7 @@ category_descriptions:
   decision-making: Guidance on choosing the right SignalR Service mode (Default/Serverless/Classic)
     and configuring availability zones/zone redundancy for high availability and resilience.
   security: 'Securing Azure SignalR: auth with Entra ID/managed identities, keys and
-    rotation, network/private endpoints/NSGs, WAF, Key Vault, RBAC, cross-tenant access,
+    rotation, network/private endpoints/NSGs, WAF, Key Vault access, RBAC, cross-tenant,
     and Azure Policy compliance.'
   deployment: Deploying and managing Azure SignalR via CLI, ARM/Bicep templates, autoscale
     setup, regional moves, and end-to-end web app deployment (incl. GitHub auth)
@@ -22,22 +22,23 @@ category_descriptions:
     REST API references
   limits-quotas: Message/connection billing rules, capacity planning, throughput limits,
     and how to scale Azure SignalR instances within quota and performance constraints.
-  troubleshooting: Diagnosing and fixing SignalR issues using logs and live trace,
-    covering connectivity, message delivery, common errors, and FAQ-style troubleshooting
-    tips.
+  troubleshooting: 'Diagnosing and fixing SignalR issues: connectivity and message
+    delivery problems, live trace and Azure Monitor logs, common error patterns, and
+    best practices for reliable operation.'
 skill_description: Expert knowledge for Azure SignalR Service development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when configuring SignalR modes, Entra-secured hubs, multi-region scale-out,
-  autoscale/Bicep deploys, or REST/Event Grid integrations, and other Azure SignalR
-  Service related development tasks. Not for Azure Web PubSub (use azure-web-pubsub),
-  Azure Relay (use azure-relay), Azure Service Bus (use azure-service-bus), Azure
-  Event Hubs (use azure-event-hubs).
-use_when: Use when configuring SignalR modes, Entra-secured hubs, multi-region scale-out,
-  autoscale/Bicep deploys, or REST/Event Grid integrations, and other Azure SignalR
+  Use when configuring hubs/negotiation, choosing service modes, securing endpoints,
+  scaling multi-region, or debugging connectivity, and other Azure SignalR Service
+  related development tasks. Not for Azure Web PubSub (use azure-web-pubsub), Azure
+  Service Bus (use azure-service-bus), Azure Event Hubs (use azure-event-hubs), Azure
+  Relay (use azure-relay).
+use_when: Use when configuring hubs/negotiation, choosing service modes, securing
+  endpoints, scaling multi-region, or debugging connectivity, and other Azure SignalR
   Service related development tasks.
-confusable_not_for: Not for Azure Web PubSub (use azure-web-pubsub), Azure Relay (use
-  azure-relay), Azure Service Bus (use azure-service-bus), Azure Event Hubs (use azure-event-hubs).
+confusable_not_for: Not for Azure Web PubSub (use azure-web-pubsub), Azure Service
+  Bus (use azure-service-bus), Azure Event Hubs (use azure-event-hubs), Azure Relay
+  (use azure-relay).
 ---
 # Azure SignalR Service Crawl Report
 
@@ -51,8 +52,8 @@ confusable_not_for: Not for Azure Web PubSub (use azure-web-pubsub), Azure Relay
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 72
+- **Updated Pages**: 2
+- **Unchanged**: 70
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-signalr-service/azure-signalr-service.csv`
 
@@ -72,6 +73,13 @@ confusable_not_for: Not for Azure Web PubSub (use azure-web-pubsub), Azure Relay
 | *(Unclassified)* | 13 | 18.1% |
 
 ## Changes
+
+### Updated Pages
+
+- [Use Azure Private Endpoints](https://learn.microsoft.com/en-us/azure/azure-signalr/howto-private-endpoints)
+  - Updated: 2023-03-09T00:00:00.000Z → 2026-05-14T06:18:00.000Z
+- [FAQs](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-resource-faq)
+  - Updated: 2024-09-11T18:38:00Z → 2024-09-11T18:38:00.000Z
 
 ## Classified Pages
 
@@ -118,7 +126,7 @@ confusable_not_for: Not for Azure Web PubSub (use azure-web-pubsub), Azure Relay
 | [Security controls by Azure Policy](https://learn.microsoft.com/en-us/azure/azure-signalr/security-controls-policy) | security | 0.70 | Lists specific built-in policy definitions and compliance controls for SignalR; these are concrete security/compliance configuration artifacts. |
 | [Service mode](https://learn.microsoft.com/en-us/azure/azure-signalr/concept-service-mode) | decision-making | 0.70 | Explains Default, Serverless, and Classic modes and how to choose based on scenario; mode-selection guidance is product-specific decision-making content. |
 | [Single instance](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-howto-scale-signalr) | limits-quotas | 0.70 | Describes scale up/out behavior, timing (few minutes, up to ~30 minutes), and tier-change constraints; these are concrete operational limits. |
-| [Use Azure Private Endpoints](https://learn.microsoft.com/en-us/azure/azure-signalr/howto-private-endpoints) | security | 0.70 | Private endpoint usage for SignalR includes product-specific networking and security configuration (VNet address space, Private Link behavior) beyond generic Private Link concepts. |
+| [Use Azure Private Endpoints](https://learn.microsoft.com/en-us/azure/azure-signalr/howto-private-endpoints) | security | 0.70 | Private endpoints for Azure SignalR involve product-specific network security configuration (VNet integration, Private Link behavior, endpoint usage). These are concrete, service-specific security settings beyond generic concepts, so it fits the security sub-skill. The summary indicates configuration of private endpoints and traffic routing over the Microsoft backbone, which are implementation details an LLM is unlikely to fully infer without documentation. |
 | [Use Azure Service Tags](https://learn.microsoft.com/en-us/azure/azure-signalr/howto-service-tags) | security | 0.70 | Describes the AzureSignalR service tag for inbound/outbound traffic and how to use it in NSGs; this is product-specific network security configuration with named tags and usage patterns. |
 | [Use SignalR Service with API Management](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-howto-work-with-apim) | integrations | 0.70 | Shows how to add real-time capability via APIM and SignalR; includes product-specific configuration for connection strings, routes, and possibly policies. |
 | [Use SignalR Service with Application Gateway](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-howto-work-with-app-gateway) | integrations | 0.70 | Covers using SignalR behind Application Gateway; full article typically includes listener, routing, and header configuration specific to SignalR’s real-time connections. |
@@ -131,9 +139,9 @@ confusable_not_for: Not for Azure Web PubSub (use azure-web-pubsub), Azure Relay
 | [Build a serverless real-time app with authentication](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-tutorial-authenticate-azure-functions) | security | 0.65 | Focuses on authenticating SignalR clients via Functions bindings; contains product-specific auth configuration patterns beyond generic security concepts. |
 | [Client negotiation](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-concept-client-negotiation) | configuration | 0.65 | Describes negotiation protocols and ways to customize negotiation endpoints; these are product-specific configuration behaviors. |
 | [Custom domain](https://learn.microsoft.com/en-us/azure/azure-signalr/howto-custom-domain) | configuration | 0.65 | Custom domain setup for SignalR involves specific resource settings (hostnames, certificates, bindings) that are product-specific configuration details. |
+| [FAQs](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-resource-faq) | troubleshooting | 0.65 | An FAQ for Azure SignalR Service that explicitly includes troubleshooting and typical usage scenarios is likely to contain specific error messages, behaviors, and resolutions unique to the service. These symptom→cause→solution mappings and service-specific gotchas qualify as expert troubleshooting knowledge rather than generic concepts. |
 | [Monitor SignalR Service](https://learn.microsoft.com/en-us/azure/azure-signalr/monitor-signalr) | configuration | 0.65 | Monitoring article for a specific service usually lists SignalR-specific metrics, log categories, and configuration options in Azure Monitor, which are product-specific settings. |
 | [Performance considerations](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-concept-performance) | limits-quotas | 0.65 | Performance guide and benchmarks typically include concrete throughput, connection, and latency numbers used for capacity planning. |
-| [FAQs](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-resource-faq) | troubleshooting | 0.60 | FAQ for a specific service typically includes concrete answers to common issues and usage scenarios, often with product-specific behaviors and edge cases that function as troubleshooting/best-practice knowledge. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-reference-cli) | deployment | 0.60 | Collection of CLI scripts for creating and wiring SignalR with other Azure services; represents concrete deployment patterns and commands. |
 | [Scale ASP.NET Core SignalR](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-concept-scale-aspnet-core) | architecture-patterns | 0.60 | Covers how to use Azure SignalR to scale apps; likely includes product-specific scaling patterns and when to use them. |
 

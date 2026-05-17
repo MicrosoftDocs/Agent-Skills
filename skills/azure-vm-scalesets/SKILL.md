@@ -1,9 +1,9 @@
 ---
 name: azure-vm-scalesets
-description: Expert knowledge for Azure Virtual Machine Scale Sets development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring VMSS autoscale, zones/PPGs, Spot/standby pools, image/OS upgrades, or ADE with Key Vault, and other Azure Virtual Machine Scale Sets related development tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Service Fabric (use azure-service-fabric), Azure Batch (use azure-batch).
+description: Expert knowledge for Azure Virtual Machine Scale Sets development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring autoscale rules, upgrade modes, zones/PPGs, Spot/standby pools, or image/OS update flows, and other Azure Virtual Machine Scale Sets related development tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure App Service (use azure-app-service), Azure Red Hat OpenShift (use azure-redhat-openshift).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-10"
+  generated_at: "2026-05-17"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Virtual Machine Scale Sets Skill
@@ -28,11 +28,11 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L43-L47 | Guidance for configuring, enabling, and managing automatic OS image upgrades on VM scale sets, including policies, rollout behavior, and minimizing disruption. |
 | Decision Making | L48-L61 | Guidance on VM scale set design choices: cost vs availability, Spot/standby pools, instance mix, placement score, upgrade modes, hybrid benefit, and migrating to Flexible scale sets. |
 | Architecture & Design Patterns | L62-L70 | Designing resilient VM scale sets: zones, fault domains, zone balancing modes, proximity placement groups, and standby pools to optimize availability, latency, and scale-out behavior. |
-| Limits & Quotas | L71-L79 | VMSS capacity, instance and placement group limits, standby pool constraints, maintenance notification behavior, and FAQs on supported scale, features, and quotas |
+| Limits & Quotas | L71-L79 | Limits, capacities, and quotas for VM scale sets, including placement groups, standby pools, maintenance behavior, and FAQs on supported scale and operational constraints. |
 | Security | L80-L88 | Encrypting VM scale set disks (CLI, PowerShell, ARM), configuring Key Vault and extension sequencing for Azure Disk Encryption, and setting security policies/RBAC for VMSS. |
-| Configuration | L89-L135 | Configuring VM Scale Sets: scaling rules, upgrades, networking, disks, images, health/repair, standby pools, instance mix, protection, and automation via CLI, PowerShell, templates, and portal |
-| Integrations & Coding Patterns | L136-L145 | Using CLI/PowerShell/DSC/custom script to deploy apps, configure, and manage VM Scale Sets, plus integrating standby pools with Log Analytics for monitoring and automation. |
-| Deployment | L146-L155 | Creating and deploying VM scale sets with gallery/custom images and ARM templates, app deployment to instances, availability zone placement, and migrating flexible sets to zonal. |
+| Configuration | L89-L134 | Configuring VM Scale Sets: scaling rules, upgrades, networking, disks, images, health/repair, standby pools, instance mix, protection, and automation via CLI, PowerShell, templates, and portal |
+| Integrations & Coding Patterns | L135-L144 | Using CLI/PowerShell/DSC/custom script to deploy apps, configure, and manage VM Scale Sets, plus integrating standby pools with Log Analytics for monitoring and automation. |
+| Deployment | L145-L154 | Creating and deploying VM scale sets with gallery/custom images and ARM templates, app deployment to instances, availability zone placement, and migrating flexible sets to zonal. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -73,7 +73,7 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Understand VM Scale Sets overview limits and capacities | https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview |
 | Standby pools FAQ including support scope and limits | https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/standby-pools-faq |
-| Azure VM Scale Sets capacity and feature limits FAQ | https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-faq |
+| Azure VM Scale Sets FAQs on limits and behavior | https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-faq |
 | Handle maintenance notifications for VM scale sets | https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-maintenance-notifications |
 | Understand placement groups and capacity limits in scale sets | https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-placement-groups |
 
@@ -125,7 +125,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure guest-metric-based autoscale for Linux VM Scale Sets | https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-mvss-guest-based-autoscale-linux |
 | Configure advanced networking for Azure VM scale sets | https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-networking |
 | Perform manual instance upgrades in VM scale sets | https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-perform-manual-upgrades |
-| Reimage virtual machines within a scale set | https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-reimage-virtual-machine |
 | Configure custom health metrics for rolling upgrades | https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-rolling-upgrade-custom-metrics |
 | Configure scale-in policies for Azure VM Scale Sets | https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-scale-in-policy |
 | Define and manage scaling profiles for Azure VM Scale Sets | https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-scaling-profile |

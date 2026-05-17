@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-10'
+generated_at: '2026-05-17'
 category_descriptions:
   security: 'Securing Event Grid and MQTT: auth (keys, SAS, Entra ID, JWT, certs),
     RBAC, managed identities, webhooks, network/IP rules, private endpoints, TLS,
@@ -16,9 +16,9 @@ category_descriptions:
   best-practices: Guidance on designing client-side failover for Event Grid, including
     using multiple regions, retry logic, and resilient publishing patterns for high
     availability.
-  limits-quotas: Event Grid delivery/retry behavior, custom headers, event retention
-    for namespace topics, and regional quotas/limits for throughput, subscriptions,
-    and operations
+  limits-quotas: Event Grid delivery/retry behavior, custom headers, event retention,
+    and region-specific quotas/limits that affect throughput, reliability, and configuration
+    of topics and namespaces.
   architecture-patterns: Patterns for routing events across Event Grid namespace topics
     and implementing MQTT-based request/response command workflows using Event Grid.
   deployment: Guides for deploying Event Grid on Azure Arc-enabled Kubernetes, including
@@ -29,15 +29,15 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Event Grid development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  securing Event Grid/MQTT, configuring topics/subscriptions, integrating webhooks/MQTT,
-  or deploying on Arc K8s, and other Azure Event Grid related development tasks. Not
-  for Azure Service Bus (use azure-service-bus), Azure Event Hubs (use azure-event-hubs),
+  securing Event Grid/MQTT, configuring topics/subscriptions, routing events, deploying
+  on Arc, or debugging delivery, and other Azure Event Grid related development tasks.
+  Not for Azure Event Hubs (use azure-event-hubs), Azure Service Bus (use azure-service-bus),
   Azure Notification Hubs (use azure-notification-hubs), Azure Logic Apps (use azure-logic-apps).
-use_when: Use when securing Event Grid/MQTT, configuring topics/subscriptions, integrating
-  webhooks/MQTT, or deploying on Arc K8s, and other Azure Event Grid related development
-  tasks.
-confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Event
-  Hubs (use azure-event-hubs), Azure Notification Hubs (use azure-notification-hubs),
+use_when: Use when securing Event Grid/MQTT, configuring topics/subscriptions, routing
+  events, deploying on Arc, or debugging delivery, and other Azure Event Grid related
+  development tasks.
+confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Service
+  Bus (use azure-service-bus), Azure Notification Hubs (use azure-notification-hubs),
   Azure Logic Apps (use azure-logic-apps).
 ---
 # Azure Event Grid Crawl Report
@@ -47,13 +47,13 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 - **Total Pages**: 263
 - **Fetched**: 263
 - **Fetch Failed**: 0
-- **Classified**: 179
-- **Unclassified**: 84
+- **Classified**: 180
+- **Unclassified**: 83
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 6
-- **Unchanged**: 256
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 262
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-event-grid/azure-event-grid.csv`
 
@@ -67,31 +67,17 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 | decision-making | 4 | 1.5% |
 | deployment | 1 | 0.4% |
 | integrations | 38 | 14.4% |
-| limits-quotas | 6 | 2.3% |
+| limits-quotas | 7 | 2.7% |
 | security | 48 | 18.3% |
 | troubleshooting | 5 | 1.9% |
-| *(Unclassified)* | 84 | 31.9% |
+| *(Unclassified)* | 83 | 31.6% |
 
 ## Changes
 
-### New Pages
-
-- [Shared subscriptions](https://learn.microsoft.com/en-us/azure/event-grid/mqtt-shared-subscriptions)
-
 ### Updated Pages
 
-- [What is Event Grid?](https://learn.microsoft.com/en-us/azure/event-grid/overview)
-  - Updated: 2025-09-09T05:11:00.000Z → 2026-05-08T06:13:00.000Z
-- [What's new?](https://learn.microsoft.com/en-us/azure/event-grid/whats-new)
-  - Updated: 2025-09-09T05:11:00.000Z → 2026-05-08T06:13:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/event-grid/mqtt-overview)
-  - Updated: 2025-09-09T05:11:00.000Z → 2026-05-08T06:13:00.000Z
-- [MQTT features support](https://learn.microsoft.com/en-us/azure/event-grid/mqtt-support)
-  - Updated: 2025-09-09T05:11:00.000Z → 2026-05-08T06:13:00.000Z
-- [Authenticate with MQTT broker using webhook authentication](https://learn.microsoft.com/en-us/azure/event-grid/authenticate-with-namespaces-using-webhook-authentication)
-  - Updated: 2026-03-24T06:16:00.000Z → 2026-05-08T06:13:00.000Z
-- [Quotas and limits](https://learn.microsoft.com/en-us/azure/event-grid/quotas-limits)
-  - Updated: 2025-09-09T05:11:00.000Z → 2026-05-08T06:13:00.000Z
+- [FAQ](https://learn.microsoft.com/en-us/azure/event-grid/faq)
+  - Updated: 2026-01-22T19:36:00Z → 2026-01-22T19:36:00.000Z
 
 ## Classified Pages
 
@@ -222,6 +208,7 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 | [Event retention](https://learn.microsoft.com/en-us/azure/event-grid/event-retention) | limits-quotas | 0.70 | Retention behavior typically includes specific durations and storage rules for topics and subscriptions; these are numeric limits/constraints. |
 | [Event schema compatibility](https://learn.microsoft.com/en-us/azure/event-grid/event-schema-compatibility) | decision-making | 0.70 | Provides a compatibility table between input and output schemas when creating subscriptions, guiding decisions on schema selection with explicit matrix rules. |
 | [Event schemas](https://learn.microsoft.com/en-us/azure/event-grid/kubernetes/event-schemas) | configuration | 0.70 | Details supported event schemas (CloudEvents 1.0) and JSON format requirements for publishing events; these are product-specific schema and payload configuration requirements. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/event-grid/faq) | limits-quotas | 0.70 | FAQ includes concrete Event Grid limits and behaviors (for example, maximum event size, retry intervals, delivery duration, and other numeric constraints) that qualify as expert knowledge beyond generic conceptual information. |
 | [Features](https://learn.microsoft.com/en-us/azure/event-grid/kubernetes/features) | decision-making | 0.70 | Feature comparison between Event Grid on Kubernetes and Azure Event Grid; supports technology selection by detailing which capabilities exist in each edition, enabling product-specific decision-making. |
 | [HTTP Publish](https://learn.microsoft.com/en-us/azure/event-grid/mqtt-http-publish) | integrations | 0.70 | Covers HTTP Publish API for MQTT messages; likely includes request schema, parameters, and constraints unique to this API. |
 | [How to configure multiple sessions for an MQTT client](https://learn.microsoft.com/en-us/azure/event-grid/mqtt-establishing-multiple-sessions-per-client) | configuration | 0.70 | Explains how to configure a client to establish multiple sessions with the broker; behavior and settings are specific to Event Grid MQTT. |
@@ -315,7 +302,6 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 | [Event Domains](https://learn.microsoft.com/en-us/azure/event-grid/event-domains) | 0.30 | Conceptual description of event domains and usage; no detailed config tables, limits, or error mappings. |
 | [Event Grid on Kubernetes concepts](https://learn.microsoft.com/en-us/azure/event-grid/kubernetes/concepts) | 0.30 | Concepts article describing core ideas of Event Grid on Kubernetes; primarily definitional and conceptual rather than detailed configuration, limits, or troubleshooting content. |
 | [Event handlers](https://learn.microsoft.com/en-us/azure/event-grid/event-handlers) | 0.30 | High-level overview of supported handlers; lacks detailed configuration parameters, limits, or error codes. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/event-grid/faq) | 0.30 | FAQ page likely mixes conceptual Q&A and general guidance; summary does not indicate detailed error-code mappings, config tables, or numeric limits required for expert classification. |
 | [MQTT features support](https://learn.microsoft.com/en-us/azure/event-grid/mqtt-support) | 0.30 | Describes which MQTT versions and features are supported, but summary does not show detailed configuration parameters, limits, or decision matrices; appears to be a capability overview. |
 | [Overview](https://learn.microsoft.com/en-us/azure/event-grid/event-schema-resource-notifications) | 0.30 | Overview of Azure Resource Notifications benefits and concepts; summary does not indicate detailed schemas, limits, or configuration tables. |
 | [Partner Events overview (partners)](https://learn.microsoft.com/en-us/azure/event-grid/partner-events-overview-for-partners) | 0.30 | Partner Events overview for potential partners; summary indicates conceptual/marketing content rather than detailed technical contracts. |

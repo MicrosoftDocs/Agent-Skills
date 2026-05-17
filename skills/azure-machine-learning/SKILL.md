@@ -3,7 +3,7 @@ name: azure-machine-learning
 description: Expert knowledge for Azure Machine Learning development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Azure ML workspaces, pipelines, AutoML, online/batch endpoints, or prompt flow workloads, and other Azure Machine Learning related development tasks. Not for Azure Databricks (use azure-databricks), Azure Synapse Analytics (use azure-synapse-analytics), Azure HDInsight (use azure-hdinsight), Azure Data Science Virtual Machines (use azure-data-science-vm).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-10"
+  generated_at: "2026-05-17"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Machine Learning Skill
@@ -32,7 +32,7 @@ This skill requires **network access** to fetch documentation content:
 | Security | L143-L196 | Securing Azure ML: encryption, keys, auth/RBAC, identities, secrets, network isolation/VNets, data exfiltration, policy/compliance, and secure endpoints, training, workspaces, and prompt flows. |
 | Configuration | L197-L457 | How to configure Azure ML components, compute, networking, monitoring, AutoML, YAML specs, data/feature stores, deployments, and environments across the ML lifecycle. |
 | Integrations & Coding Patterns | L458-L513 | Patterns and how-tos for wiring Azure ML to data sources, Spark/Databricks/Synapse, MLflow, REST APIs, prompt flow, and external tools/services for training, deployment, and RAG. |
-| Deployment | L514-L556 | Deploying and operating models and prompt flows in Azure ML: online/batch endpoints, CI/CD and MLOps/GenAIOps pipelines, blue‑green rollouts, cross-workspace use, and production pipelines. |
+| Deployment | L514-L555 | Deploying and operating models and prompt flows in Azure ML: online/batch endpoints, CI/CD and MLOps/GenAIOps pipelines, blue‑green rollouts, cross-workspace use, and production pipelines. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -531,7 +531,6 @@ This skill requires **network access** to fetch documentation content:
 | Deploy models to Azure ML managed online endpoints | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-deploy-online-endpoints?view=azureml-api-2 |
 | Publish and run Azure ML pipelines in production | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-deploy-pipelines?view=azureml-api-1 |
 | Deploy ONNX models with Triton on Azure ML | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-deploy-with-triton?view=azureml-api-2 |
-| Build Azure ML CI/CD pipelines with Azure DevOps | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-devops-machine-learning?view=azureml-api-2 |
 | Create GitHub Actions CI/CD for Azure ML training | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-github-actions-machine-learning?view=azureml-api-2 |
 | Deploy image-processing models with AML batch endpoints | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-image-processing-batch?view=azureml-api-2 |
 | Deploy MLflow models to Azure ML batch endpoints | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-mlflow-batch?view=azureml-api-2 |

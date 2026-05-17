@@ -1,9 +1,9 @@
 ---
 name: azure-functions
-description: Expert knowledge for Azure Functions development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building HTTP/event-driven Functions, Durable workflows, Linux/container apps, VNet-secured endpoints, or CI/CD deployments, and other Azure Functions related development tasks. Not for Azure App Service (use azure-app-service), Azure Logic Apps (use azure-logic-apps), Azure Container Apps (use azure-container-apps).
+description: Expert knowledge for Azure Functions development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building HTTP/queue/event-driven Functions, Durable workflows, containerized Functions, CI/CD, or VNet-integrated apps, and other Azure Functions related development tasks. Not for Azure App Service (use azure-app-service), Azure Logic Apps (use azure-logic-apps), Azure Container Apps (use azure-container-apps), Azure Kubernetes Service (AKS) (use azure-kubernetes-service).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-10"
+  generated_at: "2026-05-17"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Functions Skill
@@ -24,15 +24,15 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L59 | Diagnosing and fixing Durable Functions/Task SDK issues, AZFD/AZFW error codes, storage and config problems, and runtime/deployment errors for Node.js, Python, and VM start/stop functions. |
-| Best Practices | L60-L78 | Patterns and guidance for robust, performant Azure Functions and Durable Functions: orchestration/entity design, versioning, error handling, DI, HTTP/connection usage, scaling, and language-specific best practices. |
-| Decision Making | L79-L100 | Guidance on choosing Functions hosting/runtime models, comparing costs and plans, and planning migrations (between runtimes, models, plans, and from AWS Lambda or Express APIs). |
-| Architecture & Design Patterns | L101-L106 | Running Functions in Linux containers, Durable Functions design with Azure Storage, and hosting Functions on Azure Container Apps for scalable, container-based architectures. |
-| Limits & Quotas | L107-L115 | Details on Functions hosting limits: legacy and Flex Consumption plans, scaling behavior, concurrency and target-based scaling settings, and supported languages/versions. |
-| Security | L116-L132 | Securing Functions apps: encryption at rest, storage hardening, keys and secrets, managed identity, SQL access, private endpoints, VNet/network access controls, and App Service security features. |
-| Configuration | L133-L168 | Configuring Azure Functions apps: bindings, triggers, host/app settings, monitoring/telemetry, runtime versions, networking/IP, local tools, and legacy C# models. |
-| Integrations & Coding Patterns | L169-L273 | Patterns and how-tos for wiring Functions to external systems (HTTP, data stores, messaging, AI/OpenAI, Dapr, MCP) using triggers/bindings, including language- and tool-specific setup. |
-| Deployment | L274-L303 | Deploying and hosting Azure Functions: provisioning plans (Consumption/Flex/Kubernetes), CI/CD (GitHub Actions, Azure Pipelines), containers, templates (Bicep/ARM/Terraform), and migration tasks. |
+| Troubleshooting | L37-L60 | Diagnosing and fixing Azure Functions runtime errors (AZFD/AZFW codes), storage/config issues, timers, networking, and language-specific (Node.js/Python) deployment and execution problems. |
+| Best Practices | L61-L79 | Patterns and guidance for robust, performant Azure Functions and Durable Functions: orchestration/entity design, versioning, error handling, DI, HTTP/connection usage, scaling, and language-specific best practices. |
+| Decision Making | L80-L101 | Guidance on choosing Functions hosting/runtime models, comparing costs and plans, and planning migrations (between runtimes, models, plans, and from AWS Lambda or Express APIs). |
+| Architecture & Design Patterns | L102-L107 | Running Functions in Linux containers, Durable Functions design with Azure Storage, and hosting Functions on Azure Container Apps for scalable, container-based architectures. |
+| Limits & Quotas | L108-L116 | Details on Functions hosting limits: legacy and Flex Consumption plans, scaling behavior, concurrency and target-based scaling settings, and supported languages/versions. |
+| Security | L117-L133 | Securing Functions apps: encryption at rest, storage hardening, keys and secrets, managed identity, SQL access, private endpoints, VNet/network access controls, and App Service security features. |
+| Configuration | L134-L169 | Configuring Azure Functions apps: bindings, triggers, host/app settings, runtime versions, networking, monitoring/telemetry, and local/Core Tools setup and management. |
+| Integrations & Coding Patterns | L170-L274 | Patterns and how-tos for wiring Functions to external systems (HTTP, data stores, messaging, AI/OpenAI, Dapr, MCP) using triggers/bindings, including language- and tool-specific setup. |
+| Deployment | L275-L304 | Deploying and hosting Azure Functions: provisioning plans (Consumption/Flex/Kubernetes), CI/CD (GitHub Actions, Azure Pipelines), containers, templates (Bicep/ARM/Terraform), and migration tasks. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -52,6 +52,7 @@ This skill requires **network access** to fetch documentation content:
 | Resolve AZFD0015 non-CRON timer trigger schedule | https://learn.microsoft.com/en-us/azure/azure-functions/errors-diagnostics/diagnostic-events/azfd0015 |
 | Fix AZFW0001 invalid binding attributes in Functions | https://learn.microsoft.com/en-us/azure/azure-functions/errors-diagnostics/net-worker-rules/azfw0001 |
 | Handle errors and configure retries in Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-error-pages |
+| Resolve common Azure Functions networking issues | https://learn.microsoft.com/en-us/azure/azure-functions/functions-networking-faq |
 | Troubleshoot Node.js Azure Functions deployment and runtime issues | https://learn.microsoft.com/en-us/azure/azure-functions/functions-node-troubleshoot |
 | Fix 'Azure Functions Runtime is unreachable' storage errors | https://learn.microsoft.com/en-us/azure/azure-functions/functions-recover-storage-account |
 | Troubleshoot common issues in Python Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/recover-python-functions |
@@ -137,7 +138,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure Application Insights monitoring for Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/configure-monitoring |
 | Disable and enable individual Azure Functions via settings | https://learn.microsoft.com/en-us/azure/azure-functions/disable-function |
 | Configure Azure Functions extension bundles for non-.NET apps | https://learn.microsoft.com/en-us/azure/azure-functions/extension-bundles |
-| Create and manage Flex Consumption plan function apps | https://learn.microsoft.com/en-us/azure/azure-functions/flex-consumption-how-to |
+| Configure and manage Azure Functions Flex Consumption apps | https://learn.microsoft.com/en-us/azure/azure-functions/flex-consumption-how-to |
 | Configure Azure Functions app settings and environment variables | https://learn.microsoft.com/en-us/azure/azure-functions/functions-app-settings |
 | Configure Azure SQL trigger for Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-azure-sql-trigger |
 | Configure Azure Cosmos DB output binding for Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-cosmosdb-v2-output |

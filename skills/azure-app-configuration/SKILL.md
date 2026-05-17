@@ -1,9 +1,9 @@
 ---
 name: azure-app-configuration
-description: Expert knowledge for Azure App Configuration development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using feature flags, dynamic refresh, snapshots, Key Vault integration, or App Configuration REST APIs, and other Azure App Configuration related development tasks. Not for Azure App Service (use azure-app-service), Azure Key Vault (use azure-key-vault), Azure Automation (use azure-automation), Azure Policy (use azure-policy).
+description: Expert knowledge for Azure App Configuration development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using feature flags, dynamic refresh, snapshots, Key Vault integration, or App Configuration REST APIs, and other Azure App Configuration related development tasks. Not for Azure App Service (use azure-app-service), Azure Key Vault (use azure-key-vault), Azure Portal (use azure-portal).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-10"
+  generated_at: "2026-05-17"
   generator: "docs2skills/1.0.0"
 ---
 # Azure App Configuration Skill
@@ -30,8 +30,8 @@ This skill requires **network access** to fetch documentation content:
 | Limits & Quotas | L52-L60 | Limits on key-value retention, point-in-time reads, soft delete behavior, preview API lifecycles, and REST API throttling/quotas for Azure App Configuration. |
 | Security | L61-L81 | Securing App Configuration: encryption, keys, RBAC/Entra ID, managed identities, private endpoints, network lockdown, REST auth (HMAC/Entra), roles/permissions, and Azure Policy compliance. |
 | Configuration | L82-L100 | Configuring App Configuration behavior: feature flags, filters, snapshots, geo-replication, soft delete, Kubernetes provider, emulator, dynamic refresh, and AI/chat completion settings. |
-| Integrations & Coding Patterns | L101-L189 | Patterns and code samples for integrating Azure App Configuration into apps (web, Functions, AKS, AI), using providers, dynamic refresh, feature flags/filters, Key Vault, and REST APIs. |
-| Deployment | L190-L198 | Using App Configuration in CI/CD: exporting/importing settings, creating snapshots, integrating with Azure Pipelines, GitHub Actions, and Helm/Kubernetes deployment workflows. |
+| Integrations & Coding Patterns | L101-L190 | Patterns and code samples for integrating Azure App Configuration into .NET, Go, JavaScript, Python, AKS, Event Grid, and AI apps, including dynamic config, feature flags, filters, and REST/Key Vault usage |
+| Deployment | L191-L199 | Using App Configuration in CI/CD: exporting/importing settings, creating snapshots, integrating with Azure Pipelines, GitHub Actions, and Helm/Kubernetes deployment workflows. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -126,6 +126,7 @@ This skill requires **network access** to fetch documentation content:
 | Use targeting filter in Python with App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/how-to-targeting-filter-python |
 | Use feature flag telemetry in ASP.NET Core with App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/how-to-telemetry-aspnet-core |
 | Use variant feature flags in Spring Boot with App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/how-to-variant-feature-flags-spring-boot |
+| Integrate .NET Agent Framework with Azure App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-ai-agent-config-dotnet |
 | Load Agent Framework YAML configs from App Configuration in Python | https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-ai-agent-config-python |
 | Configure App Configuration data change notifications with Event Grid | https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-app-configuration-event |
 | Implement custom feature filters in ASP.NET Core with App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-feature-filters-aspnet-core |

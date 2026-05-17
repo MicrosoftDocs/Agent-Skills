@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-10'
+generated_at: '2026-05-17'
 category_descriptions:
   configuration: 'Configuring and tuning HDInsight clusters: networking/VPN, Ambari/Hive/Spark/HBase
     settings, autoscale, monitoring/logging, SSH/Jupyter/VS Code access, and script-based
@@ -25,19 +25,18 @@ category_descriptions:
   decision-making: 'Planning and migration guidance for HDInsight: sizing and performance,
     choosing storage/VMs/tools, upgrading versions/components, and moving Hadoop,
     HBase, Kafka, and configs to newer clusters.'
-  limits-quotas: 'Guidance on HDInsight capacity limits: log size/retention, supported
-    cluster node sizes, external metastore constraints, and requesting/managing CPU
-    core quota increases.'
+  limits-quotas: HDInsight capacity limits, node configs, Kafka-specific limits, metastore
+    constraints, log sizing/retention, and how to request/manage CPU core quota increases.
 skill_description: Expert knowledge for Azure HDInsight development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  working with HDInsight Spark/Hive/Kafka/HBase, Ambari/Oozie pipelines, Azure SQL/Cosmos
-  DB/Power BI, or secure VNET clusters, and other Azure HDInsight related development
-  tasks. Not for Azure Databricks (use azure-databricks), Azure Synapse Analytics
-  (use azure-synapse-analytics), Azure Stream Analytics (use azure-stream-analytics).
+  working with HDInsight Spark/Hive/Kafka/HBase, Ambari/Oozie pipelines, autoscale,
+  or secure VNet/private access, and other Azure HDInsight related development tasks.
+  Not for Azure Databricks (use azure-databricks), Azure Synapse Analytics (use azure-synapse-analytics),
+  Azure Stream Analytics (use azure-stream-analytics).
 use_when: Use when working with HDInsight Spark/Hive/Kafka/HBase, Ambari/Oozie pipelines,
-  Azure SQL/Cosmos DB/Power BI, or secure VNET clusters, and other Azure HDInsight
-  related development tasks.
+  autoscale, or secure VNet/private access, and other Azure HDInsight related development
+  tasks.
 confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synapse
   Analytics (use azure-synapse-analytics), Azure Stream Analytics (use azure-stream-analytics).
 ---
@@ -48,13 +47,13 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 - **Total Pages**: 426
 - **Fetched**: 426
 - **Fetch Failed**: 0
-- **Classified**: 335
-- **Unclassified**: 91
+- **Classified**: 337
+- **Unclassified**: 89
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 425
+- **Updated Pages**: 2
+- **Unchanged**: 424
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-hdinsight/azure-hdinsight.csv`
 
@@ -68,17 +67,19 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 | decision-making | 21 | 4.9% |
 | deployment | 11 | 2.6% |
 | integrations | 64 | 15.0% |
-| limits-quotas | 4 | 0.9% |
+| limits-quotas | 6 | 1.4% |
 | security | 40 | 9.4% |
 | troubleshooting | 92 | 21.6% |
-| *(Unclassified)* | 91 | 21.4% |
+| *(Unclassified)* | 89 | 20.9% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Plan VNETs for HDInsight](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-plan-virtual-network-deployment)
-  - Updated: 2025-07-19T11:09:00.000Z → 2026-05-08T06:13:00.000Z
+- [Frequently asked questions (FAQ)](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-faq)
+  - Updated: 2025-03-26T17:06:00Z → 2025-03-26T17:06:00.000Z
+- [Kafka FAQ](https://learn.microsoft.com/en-us/azure/hdinsight/kafka/kafka-faq)
+  - Updated: 2025-03-26T17:06:00Z → 2025-03-26T17:06:00.000Z
 
 ## Classified Pages
 
@@ -284,6 +285,7 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 | [Enable new Azure Monitor integration](https://learn.microsoft.com/en-us/azure/hdinsight/log-analytics-migration) | best-practices | 0.70 | Migration-focused article with product-specific guidance and recommended usage patterns for new Azure Monitor/Log Analytics tables, likely including concrete query/table details that go beyond generic concepts. |
 | [Enterprise Security Package](https://learn.microsoft.com/en-us/azure/hdinsight/enterprise-security-package) | security | 0.70 | Describes ESP components, AD integration, and security behavior; includes product-specific security configuration patterns and constraints. |
 | [Enterprise security general guidelines](https://learn.microsoft.com/en-us/azure/hdinsight/domain-joined/general-guidelines) | best-practices | 0.70 | Explicitly labeled general guidelines and best practices for ESP deployment and management; includes concrete recommendations specific to HDInsight security. |
+| [Frequently asked questions (FAQ)](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-faq) | limits-quotas | 0.70 | The FAQ includes concrete, product-specific details such as maximum cluster lifetimes, supported region constraints, version support windows, and other numeric or tightly scoped behavioral limits that are not generic knowledge. These are effectively limits/constraints documentation surfaced via Q&A rather than a formal limits page. |
 | [HDInsight retirements and action required](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-component-retirements-and-action-required) | decision-making | 0.70 | Lists specific HDInsight cluster and component versions with their retirement timelines and required migration actions. This is time-sensitive, product-specific information not inferable from general training data and is used to decide when and how to migrate off deprecated versions. |
 | [HDInsight version 4.0](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-40-component-versioning) | configuration | 0.70 | Provides detailed component-version mapping for HDInsight 4.0, which is precise reference configuration information. |
 | [HDInsight version 5.x](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-5x-component-versioning) | configuration | 0.70 | Similar to 4.0 article; contains specific component version tables that are expert reference data. |
@@ -292,6 +294,7 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 | [High availability case study](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-high-availability-case-study) | architecture-patterns | 0.70 | Case study of HA/DR solution architecture with cost and design trade-offs; provides concrete architectural patterns for HDInsight. |
 | [Hive replication](https://learn.microsoft.com/en-us/azure/hdinsight/interactive-query/apache-hive-replication) | configuration | 0.70 | How-to for Hive replication of metastore and ADLS data; includes replication configuration parameters and operational details. |
 | [Information about using HDInsight on Linux](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-linux-information) | best-practices | 0.70 | Calls out concrete behavioral differences and gotchas between generic Hadoop-on-Linux and HDInsight’s implementation, which are product-specific best practices and edge cases. |
+| [Kafka FAQ](https://learn.microsoft.com/en-us/azure/hdinsight/kafka/kafka-faq) | limits-quotas | 0.70 | Kafka FAQ pages for HDInsight typically include concrete, product-specific details such as maximum broker counts per cluster type, partition/throughput guidance, retention and disk usage behaviors, and Azure-specific constraints (for example, supported versions, replication factors, and networking limitations). These are not generic Kafka concepts and often include exact numeric limits or tightly scoped behaviors unique to Kafka on HDInsight, which qualify as expert knowledge. Among the available categories, limits-quotas best fits because the FAQ is likely to document concrete service limits and constraints rather than stepwise configuration, troubleshooting flows, or architecture patterns. |
 | [Known issues](https://learn.microsoft.com/en-us/azure/hdinsight/spark/apache-spark-known-issues) | troubleshooting | 0.70 | Lists known product-specific Spark issues in HDInsight public preview and their workarounds, which is expert troubleshooting knowledge. |
 | [LDAP sync in Ranger and Apache Ambari](https://learn.microsoft.com/en-us/azure/hdinsight/domain-joined/ldap-sync) | security | 0.70 | Provides product-specific guidance on how Ranger and Ambari independently sync users/groups from LDAP, including configuration nuances unique to HDInsight ESP clusters. |
 | [Manage Apache Hadoop clusters in Entra Auth enabled clusters by using the .NET SDK](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-with-entra-authentication/manage-hadoop-cluster-dot-net-sdk) | integrations | 0.70 | Provides concrete .NET SDK usage for HDInsight cluster management with Entra auth, including specific client types, methods, and configuration parameters unique to this SDK. |
@@ -484,8 +487,6 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 | [Create Interactive Query cluster - ARM Template](https://learn.microsoft.com/en-us/azure/hdinsight/interactive-query/quickstart-resource-manager-template) | 0.30 | Quickstart ARM template deployment; mostly procedural without deep configuration option tables. |
 | [Create Interactive Query cluster - Bicep](https://learn.microsoft.com/en-us/azure/hdinsight/interactive-query/quickstart-bicep) | 0.30 | Quickstart using Bicep to create a cluster; likely step-by-step without detailed config matrices or constraints. |
 | [Develop Java MapReduce programs](https://learn.microsoft.com/en-us/azure/hdinsight/hadoop/apache-hadoop-develop-deploy-java-mapreduce-linux) | 0.30 | Maven-based Java MapReduce creation and execution tutorial; lacks structured configuration references, limits, or specialized troubleshooting content. |
-| [Frequently asked questions (FAQ)](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-faq) | 0.30 | FAQ content is typically high-level Q&A without detailed error codes, configuration tables, or numeric limits; more conceptual than expert configuration/troubleshooting guidance. |
-| [Kafka FAQ](https://learn.microsoft.com/en-us/azure/hdinsight/kafka/kafka-faq) | 0.30 | FAQ format; summary suggests general Q&A without explicit mention of error codes, limits, or configuration tables. |
 | [Manage HDInsight clusters - Portal](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-administer-use-portal-linux) | 0.30 | Portal management walkthrough; mostly operational UI steps without detailed config tables or expert-only parameters. |
 | [Manage clusters using the Apache Ambari web UI](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-manage-ambari) | 0.30 | General Ambari UI usage for monitoring and configuration; likely step-by-step UI guide without detailed config parameter tables or limits. |
 | [Run queries on an Apache Spark cluster](https://learn.microsoft.com/en-us/azure/hdinsight/spark/apache-spark-load-data-run-query) | 0.30 | Tutorial on loading data and running queries; focuses on basic Spark usage rather than HDInsight-specific expert configuration. |

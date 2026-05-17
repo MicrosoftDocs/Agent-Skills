@@ -8,10 +8,13 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Education Hub development including
   troubleshooting, and limits & quotas. Use when managing Azure for Students credits,
   yearly quotas, renewals, or Dev Tools for Teaching sign-in issues, and other Azure
-  Education Hub related development tasks.
+  Education Hub related development tasks. Not for Azure Lab Services (use azure-lab-services),
+  Azure DevTest Labs (use azure-devtest-labs), Azure Virtual Desktop (use azure-virtual-desktop).
 use_when: Use when managing Azure for Students credits, yearly quotas, renewals, or
   Dev Tools for Teaching sign-in issues, and other Azure Education Hub related development
   tasks.
+confusable_not_for: Not for Azure Lab Services (use azure-lab-services), Azure DevTest
+  Labs (use azure-devtest-labs), Azure Virtual Desktop (use azure-virtual-desktop).
 ---
 # Azure Education Hub Crawl Report
 

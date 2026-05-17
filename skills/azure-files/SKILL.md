@@ -3,7 +3,7 @@ name: azure-files
 description: Expert knowledge for Azure Files development including best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using SMB/NFS shares, Azure File Sync, cloud tiering, AD/Entra auth, or RAG apps over Azure Files, and other Azure Files related development tasks. Not for Azure Blob Storage (use azure-blob-storage), Azure NetApp Files (use azure-netapp-files).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-10"
+  generated_at: "2026-05-17"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Files Skill

@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-05-10'
+generated_at: '2026-05-17'
 category_descriptions:
   decision-making: Guidance for choosing Azure SQL vs SQL VMs, comparing pricing/licensing,
     selecting HADR options, and planning migrations (Db2, Oracle, SQL 2014) and regional
     feature availability.
-  troubleshooting: Diagnosing and fixing Azure SQL performance, connectivity, replication,
-    memory, and transaction log issues, plus SQL IaaS Agent and I/O throttling problems
-    on SQL Server VMs.
+  troubleshooting: 'Diagnosing and fixing Azure SQL and SQL Server on Azure VM issues:
+    connectivity, performance, capacity, memory, transaction log full, geo-replication,
+    I/O throttling, and extension/OS problems.'
   architecture-patterns: 'High-level designs and patterns for SQL Server on Azure
     VMs: connectivity, Always On availability groups, failover cluster instances,
     and Windows Server Failover Clustering setup.'
@@ -30,18 +30,17 @@ category_descriptions:
 skill_description: Expert knowledge for SQL Server on Azure Virtual Machines development
   including troubleshooting, best practices, decision making, architecture & design
   patterns, limits & quotas, security, configuration, integrations & coding patterns,
-  and deployment. Use when choosing SQL vs SQL VMs, configuring Always On/FCI, tuning
-  VM storage, securing with Key Vault/MI, or Blob backups, and other SQL Server on
-  Azure Virtual Machines related development tasks. Not for Azure SQL Database (use
-  azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance),
-  Azure Virtual Machines (use azure-virtual-machines), Azure Data Science Virtual
-  Machines (use azure-data-science-vm).
-use_when: Use when choosing SQL vs SQL VMs, configuring Always On/FCI, tuning VM storage,
-  securing with Key Vault/MI, or Blob backups, and other SQL Server on Azure Virtual
+  and deployment. Use when choosing Azure SQL vs SQL VMs, configuring Always On AG/FCI,
+  tuning storage/VM sizing, or using Blob backups, and other SQL Server on Azure Virtual
+  Machines related development tasks. Not for Azure SQL Database (use azure-sql-database),
+  Azure SQL Managed Instance (use azure-sql-managed-instance), Azure Virtual Machines
+  (use azure-virtual-machines), SAP HANA on Azure Large Instances (use azure-sap).
+use_when: Use when choosing Azure SQL vs SQL VMs, configuring Always On AG/FCI, tuning
+  storage/VM sizing, or using Blob backups, and other SQL Server on Azure Virtual
   Machines related development tasks.
 confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure SQL
   Managed Instance (use azure-sql-managed-instance), Azure Virtual Machines (use azure-virtual-machines),
-  Azure Data Science Virtual Machines (use azure-data-science-vm).
+  SAP HANA on Azure Large Instances (use azure-sap).
 ---
 # SQL Server on Azure Virtual Machines Crawl Report
 
@@ -50,13 +49,13 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 - **Total Pages**: 128
 - **Fetched**: 128
 - **Fetch Failed**: 0
-- **Classified**: 98
-- **Unclassified**: 30
+- **Classified**: 100
+- **Unclassified**: 28
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 125
+- **Updated Pages**: 2
+- **Unchanged**: 126
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sql-virtual-machines/azure-sql-virtual-machines.csv`
 
@@ -72,19 +71,17 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | integrations | 2 | 1.6% |
 | limits-quotas | 2 | 1.6% |
 | security | 7 | 5.5% |
-| troubleshooting | 11 | 8.6% |
-| *(Unclassified)* | 30 | 23.4% |
+| troubleshooting | 13 | 10.2% |
+| *(Unclassified)* | 28 | 21.9% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Known issues with Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-known-issues?view=azuresql)
-  - Updated: 2026-04-28T08:00:00.000Z → 2026-05-01T08:00:00.000Z
-- [SQL IaaS Agent extension](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/sql-server-iaas-agent-extension-automate-management?view=azuresql)
-  - Updated: 2026-04-01T17:39:00.000Z → 2026-05-06T08:00:00.000Z
-- [Known issues and troubleshooting](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/sql-agent-extension-troubleshoot-known-issues?view=azuresql)
-  - Updated: 2025-09-15T08:00:00.000Z → 2026-05-06T08:00:00.000Z
+- [FAQ](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/frequently-asked-questions-faq?view=azuresql)
+  - Updated: 2026-04-01T17:39:00Z → 2026-04-01T17:39:00.000Z
+- [FAQ](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/linux/frequently-asked-questions-faq?view=azuresql)
+  - Updated: 2025-10-28T22:34:00Z → 2025-10-28T22:34:00.000Z
 
 ## Classified Pages
 
@@ -164,6 +161,8 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | [VM vCore customization](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/vm-vcore-customization-for-sql?view=azuresql) | configuration | 0.70 | VM vCore customization (CCC, SMT) involves specific VM settings and allowed values; this is detailed configuration knowledge unique to Azure SQL VMs. |
 | [VNN listener](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/availability-group-vnn-azure-load-balancer-configure?view=azuresql) | configuration | 0.70 | Detailed configuration of Azure Load Balancer for an Always On availability group VNN listener on SQL Server VMs. This involves product-specific load balancer settings (frontend, backend pool, health probes, rules) and SQL AG listener configuration that constitute expert configuration knowledge. |
 | [on Azure confidential VMs](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/sql-vm-create-confidential-vm-how-to?view=azuresql) | security | 0.70 | Focuses on confidential VM deployment, which involves security-specific configuration and constraints. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/linux/frequently-asked-questions-faq?view=azuresql) | troubleshooting | 0.68 | Similar Linux VM FAQ content usually documents specific issues, error conditions, and environment-specific behaviors (e.g., storage, networking, licensing, backup/HA nuances) for SQL Server on Linux in Azure VMs, mapping concrete questions/symptoms to explanations or fixes. This is product-specific troubleshooting knowledge rather than generic concepts. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/frequently-asked-questions-faq?view=azuresql) | troubleshooting | 0.68 | FAQ pages for SQL Server on Azure VMs typically include concrete, product-specific Q&A such as exact error messages, configuration gotchas, and behavior differences between on-premises SQL Server and Azure VMs. These are organized by question/symptom with specific resolutions or clarifications that go beyond generic knowledge, fitting the troubleshooting pattern better than others. |
 | [Set up Azure RHEL VM availability group with fencing](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/linux/rhel-high-availability-fencing-tutorial?view=azuresql) | configuration | 0.68 | HA tutorial for RHEL with Pacemaker and fencing includes concrete cluster resource definitions and fencing parameters unique to this setup. |
 | [Set up Azure SLES VM availability group with fencing](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/linux/sles-high-availability-fencing-tutorial?view=azuresql) | configuration | 0.68 | SLES HA and STONITH setup requires specific Pacemaker/STONITH configuration values and Azure integration details. |
 | [Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/region-availability?view=azuresql) | decision-making | 0.65 | A centralized list of feature availability by Azure region is a product-specific matrix used to decide where to deploy databases; this is expert knowledge that changes over time and is not inferable from training data, and it directly supports deployment/region selection decisions. |
@@ -198,7 +197,6 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | [Create SQL VM - Portal](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/linux/sql-vm-create-portal-quickstart?view=azuresql) | 0.45 | Quickstart for creating a VM is a basic tutorial; typically shows one path rather than enumerating configuration matrices or expert-only details. |
 | [Automated patching](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/automated-patching?view=azuresql) | 0.40 | Describes enabling automated patching and maintenance windows; mostly procedural guidance without detailed numeric limits, config parameter tables, or error-code-based troubleshooting. |
 | [Azure Update Manager](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/azure-update-manager-sql-vm?view=azuresql) | 0.40 | Primarily a how-to for wiring Azure Update Manager to SQL VMs; likely step-by-step portal/PowerShell instructions without detailed config tables, limits, or product-specific troubleshooting matrices. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/linux/frequently-asked-questions-faq?view=azuresql) | 0.40 | Linux VM FAQ is likely mixed-level guidance; summary doesn’t indicate detailed error codes, limits, or config tables. |
 | [Updating SQL Server](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/servicing-updates-guidelines?view=azuresql) | 0.40 | Overview of supported update methods (Azure Update Manager, automated patching, etc.) for SQL Server on Azure VMs; primarily conceptual without detailed configuration matrices, limits, or error-resolution mappings. |
 | [ARM template](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/create-sql-vm-resource-manager-template?view=azuresql) | 0.35 | ARM template quickstart; demonstrates a deployment but not a full configuration or limits reference. |
 | [Bicep](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/create-sql-vm-bicep?view=azuresql) | 0.35 | Quickstart Bicep template usage; likely shows one deployment example rather than full configuration reference. |
@@ -209,7 +207,6 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | [Public data sets](https://learn.microsoft.com/en-us/azure/azure-sql/public-data-sets?view=azuresql) | 0.30 | Catalog of public datasets is informational; does not focus on Azure SQL-specific configuration, limits, or troubleshooting. |
 | [SQL IaaS Agent extension](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/sql-server-iaas-agent-extension-automate-management?view=azuresql) | 0.30 | Page is primarily an overview of the SQL Server IaaS Agent extension and its capabilities (automated backup, patching, Key Vault integration, licensing, storage configuration). The summary does not indicate detailed limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. It reads as conceptual/feature overview rather than expert configuration, limits, or troubleshooting guidance. |
 | [Connect to the Query editor (Classic)](https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-portal-classic?view=azuresql) | 0.20 | Quickstart tutorial for connecting to Azure SQL Database using the classic portal query editor. It is step-by-step guidance without product-specific limits, configuration matrices, or troubleshooting mappings that would qualify as expert knowledge. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/frequently-asked-questions-faq?view=azuresql) | 0.20 | FAQ pages often mix conceptual and support information; based on the summary this one appears general (forums, support, common questions) without clear indication of detailed error-code mappings, config tables, or numeric limits required for expert classification. |
 | [Portal](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/sql-vm-create-portal-quickstart?view=azuresql) | 0.20 | Quickstart tutorial for creating a SQL Server VM in the Azure portal. These typically show step-by-step UI usage without detailed configuration matrices, limits, or error-code-based troubleshooting. |
 | [Query editor (Classic)](https://learn.microsoft.com/en-us/azure/azure-sql/database/query-editor-classic?view=azuresql) | 0.20 | Describes the classic Azure portal query editor experience and how to run T-SQL in the browser. It is a tool/UX overview without detailed configuration tables, limits, error-code mappings, or other expert-only specifics. |
 | [Unified inventory (preview)](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/unified-inventory-sql-vm?view=azuresql) | 0.20 | Preview feature overview for unified inventory; describes the concept and resource type but no detailed configuration parameters, limits, or troubleshooting content. |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-19'
+generated_at: '2026-05-17'
 category_descriptions:
   limits-quotas: VM instance size limits/capacities and timelines, impacts, and constraints
     related to Guest OS family retirements for Azure Cloud Services.
@@ -41,13 +41,13 @@ confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtu
 - **Total Pages**: 45
 - **Fetched**: 45
 - **Fetch Failed**: 0
-- **Classified**: 31
-- **Unclassified**: 14
+- **Classified**: 30
+- **Unclassified**: 15
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 45
+- **Updated Pages**: 1
+- **Unchanged**: 44
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cloud-services/azure-cloud-services.csv`
 
@@ -57,14 +57,19 @@ confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtu
 |------|-------|------------|
 | best-practices | 1 | 2.2% |
 | configuration | 15 | 33.3% |
-| decision-making | 6 | 13.3% |
+| decision-making | 5 | 11.1% |
 | integrations | 3 | 6.7% |
 | limits-quotas | 3 | 6.7% |
 | security | 2 | 4.4% |
 | troubleshooting | 1 | 2.2% |
-| *(Unclassified)* | 14 | 31.1% |
+| *(Unclassified)* | 15 | 33.3% |
 
 ## Changes
+
+### Updated Pages
+
+- [Frequently asked questions](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/faq)
+  - Updated: 2026-03-17T22:33:00Z → 2026-03-17T22:33:00.000Z
 
 ## Classified Pages
 
@@ -96,7 +101,6 @@ confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtu
 | [Migration overview](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/in-place-migration-overview) | decision-making | 0.70 | Migration overview that likely includes when/how to move, benefits, and scenario-based guidance; helps decide migration approach between models. |
 | [Migration technical details](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/in-place-migration-technical-details) | decision-making | 0.70 | Technical details and requirements for migration tool; includes constraints and conditions that drive migration decisions and planning. |
 | [Reset a cloud service](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/sample-reset-cloud-service) | integrations | 0.70 | Reset samples will show exact PowerShell cmdlets and parameter combinations for resetting Cloud Services (extended support) deployments, which are specific integration patterns with Azure APIs. This is expert, product-specific scripting guidance, best classified as integrations. |
-| [Frequently asked questions](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/faq) | decision-making | 0.68 | FAQ includes product-specific guidance on when to choose Cloud Services (extended support), migration/upgrade considerations from classic Cloud Services, and comparisons with other Azure options. This is concrete decision guidance rather than just conceptual overview, but it doesn't focus on numeric limits, configs, or error codes. |
 | [Extensions](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/extensions) | configuration | 0.65 | Explains Cloud Services extensions (RDP, diagnostics, etc.) as post-deployment configuration; typically includes extension names and settings unique to this product. |
 | [Migrate non-vnet installation to a virtual network](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/non-vnet-migration) | decision-making | 0.65 | Discusses considerations before migrating non-VNet services and walks through process; contains scenario-based guidance and constraints influencing migration decisions. |
 | [Retirement policy](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/cloud-services-guestos-retirement-policy) | security | 0.65 | Details supportability and retirement policy implementation for Guest OS families; includes policy thresholds and constraints relevant to secure operations. |
@@ -119,4 +123,5 @@ confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtu
 | [Prerequisites for deployment](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/deploy-prerequisite) | 0.30 | Prerequisites are likely procedural (resource creation, permissions) without detailed config parameter tables or numeric limits. |
 | [About Cloud Services (extended support)](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/overview) | 0.20 | High-level overview of Cloud Services (extended support) and deprecation; no detailed limits, configuration tables, or error mappings. |
 | [Support and troubleshooting](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/support-help) | 0.20 | A support/help options page typically lists channels like docs, forums, and support plans without technical configuration, limits, or error-code-based troubleshooting. It is more navigational/assistive than expert technical content, so no sub-skill type applies. |
+| [Frequently asked questions](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/faq) | - | FAQ page appears to be general Q&A about Azure Cloud Services (extended support) without clear indication of detailed limits, configuration tables, error-code mappings, or other product-specific expert data as defined by the sub-skill types. |
 | [Guest OS patches](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/cloud-services-guestos-microsoft-security-response-center-releases) | - | Primarily a listing of MSRC updates applied to Azure Guest OS images; it’s version/update history, not limits, configuration parameters, error codes, or decision matrices. No numeric limits, quotas, config tables, or troubleshooting mappings that fit the defined sub-skill types. |

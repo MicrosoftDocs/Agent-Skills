@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-12'
+generated_at: '2026-05-17'
 category_descriptions:
   troubleshooting: 'Diagnosing and fixing Data Box/Disk issues: validation, unlock
     tool, SMB/REST copy, upload errors, time sync, and using audit/logs to track and
@@ -13,25 +13,25 @@ category_descriptions:
   integrations: Patterns and tools for integrating Data Box with apps and backup products
     (REST APIs, VHD to managed disks, file share to SharePoint, Commvault, OpenText,
     Veeam migrations).
+  limits-quotas: Device capacities, disk/file size limits, and connection constraints
+    for Azure Data Box, Data Box Disk, and Data Box Heavy, including usage rules and
+    FAQs on quotas.
   best-practices: Guidance on preserving NTFS ACLs, file permissions, and metadata
     when copying data to Azure Data Box and Data Box Disk using supported tools and
     settings
-  limits-quotas: Device capacities, disk/file size limits, and connection constraints
-    for Azure Data Box, Data Box Disk, and Data Box Heavy, plus guidance on planning
-    usage within those limits.
 skill_description: Expert knowledge for Azure Data Box development including troubleshooting,
   best practices, limits & quotas, security, configuration, and integrations & coding
-  patterns. Use when using Data Box/Disk/Heavy for bulk imports, SMB/NFS copy, Key
-  Vault CMKs, Customer Lockbox, or VHD-to-managed-disk, and other Azure Data Box related
-  development tasks. Not for Azure Import Export (use azure-import-export), Azure
-  Stack Edge (use azure-stack-edge), Azure Blob Storage (use azure-blob-storage),
-  Azure Files (use azure-files).
-use_when: Use when using Data Box/Disk/Heavy for bulk imports, SMB/NFS copy, Key Vault
-  CMKs, Customer Lockbox, or VHD-to-managed-disk, and other Azure Data Box related
-  development tasks.
+  patterns. Use when handling Data Box/Disk imports, SMB/NFS copies, Key Vault CMKs,
+  REST APIs, or VHD‑to‑managed‑disk flows, and other Azure Data Box related development
+  tasks. Not for Azure Import Export (use azure-import-export), Azure Stack Edge (use
+  azure-stack-edge), Azure Virtual Machines (use azure-virtual-machines), Azure Blob
+  Storage (use azure-blob-storage).
+use_when: Use when handling Data Box/Disk imports, SMB/NFS copies, Key Vault CMKs,
+  REST APIs, or VHD‑to‑managed‑disk flows, and other Azure Data Box related development
+  tasks.
 confusable_not_for: Not for Azure Import Export (use azure-import-export), Azure Stack
-  Edge (use azure-stack-edge), Azure Blob Storage (use azure-blob-storage), Azure
-  Files (use azure-files).
+  Edge (use azure-stack-edge), Azure Virtual Machines (use azure-virtual-machines),
+  Azure Blob Storage (use azure-blob-storage).
 ---
 # Azure Data Box Crawl Report
 
@@ -40,13 +40,13 @@ confusable_not_for: Not for Azure Import Export (use azure-import-export), Azure
 - **Total Pages**: 79
 - **Fetched**: 79
 - **Fetch Failed**: 0
-- **Classified**: 49
-- **Unclassified**: 30
+- **Classified**: 51
+- **Unclassified**: 28
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 79
+- **Updated Pages**: 2
+- **Unchanged**: 77
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-box-family/azure-data-box-family.csv`
 
@@ -57,12 +57,19 @@ confusable_not_for: Not for Azure Import Export (use azure-import-export), Azure
 | best-practices | 2 | 2.5% |
 | configuration | 16 | 20.3% |
 | integrations | 7 | 8.9% |
-| limits-quotas | 4 | 5.1% |
+| limits-quotas | 6 | 7.6% |
 | security | 7 | 8.9% |
 | troubleshooting | 13 | 16.5% |
-| *(Unclassified)* | 30 | 38.0% |
+| *(Unclassified)* | 28 | 35.4% |
 
 ## Changes
+
+### Updated Pages
+
+- [FAQ](https://learn.microsoft.com/en-us/azure/databox/data-box-faq)
+  - Updated: 2025-03-24T11:11:00Z → 2025-03-24T11:11:00.000Z
+- [FAQ](https://learn.microsoft.com/en-us/azure/databox/data-box-disk-faq)
+  - Updated: 2026-01-22T19:36:00Z → 2026-01-22T19:36:00.000Z
 
 ## Classified Pages
 
@@ -86,10 +93,12 @@ confusable_not_for: Not for Azure Import Export (use azure-import-export), Azure
 | [For Data Box Blob storage](https://learn.microsoft.com/en-us/azure/databox/data-box-system-requirements-rest) | configuration | 0.80 | Lists supported API versions, SDKs, and differences from Azure Storage; these are precise compatibility details and constraints. |
 | [Use Customer Lockbox](https://learn.microsoft.com/en-us/azure/databox/data-box-customer-lockbox) | security | 0.80 | Describes how Lockbox requests are initiated and tracked for Data Box orders, including access flows and approval steps, which are product-specific security behaviors. |
 | [Validation issues](https://learn.microsoft.com/en-us/azure/databox/data-box-disk-troubleshoot) | troubleshooting | 0.80 | Focused on using logs to troubleshoot validation issues during deployment; log-based diagnosis is product-specific troubleshooting knowledge. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/databox/data-box-disk-faq) | limits-quotas | 0.78 | FAQ for Azure Data Box Disk typically includes concrete device and order limits (for example, max number of disks per order, per subscription, supported data sizes, region-specific constraints, and time windows for shipping/returns). These are numeric, product-specific limits and operational constraints that change over time and are not reliably known from model pretraining, fitting the limits-quotas category. |
 | [Review requirements](https://learn.microsoft.com/en-us/azure/databox/data-box-disk-system-requirements) | configuration | 0.78 | System requirements pages typically list OS versions, network ports, and other concrete parameters; this is product-specific configuration knowledge not inferable from general training. |
 | [Review requirements](https://learn.microsoft.com/en-us/azure/databox/data-box-heavy-system-requirements) | configuration | 0.78 | System requirements page will list supported OS versions, network ports, and other concrete parameters for clients and device; product-specific configuration knowledge. |
 | [Manage via local web UI](https://learn.microsoft.com/en-us/azure/databox/data-box-local-web-ui-admin) | configuration | 0.75 | Focuses on local web UI tasks such as diagnostics, software updates, and device operations; these involve specific UI options and settings. |
 | [View audit logs](https://learn.microsoft.com/en-us/azure/databox/data-box-audit-logs) | troubleshooting | 0.75 | Details audit log types, collected fields, and locations; this is product-specific diagnostic information not generally known. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/databox/data-box-faq) | limits-quotas | 0.74 | FAQ for Azure Data Box, Data Box Next Gen, and Data Box Heavy typically includes device-specific capacities, per-order limits, supported data sizes, shipping and transfer constraints, and other numeric limits that are not inferable from general knowledge. These concrete values (for example, maximum TB per device, number of devices per order, supported file sizes, and throughput expectations) qualify as expert knowledge under the limits-quotas category. |
 | [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/databox/policy-reference) | security | 0.70 | Lists built-in Azure Policy definitions for Data Box; includes specific policy names, effects, and scopes, which are product-specific security/governance configurations. |
 | [For export orders](https://learn.microsoft.com/en-us/azure/databox/data-box-export-logs) | troubleshooting | 0.70 | Similar to import logs article but for export; includes Data Box–specific log types, locations, and tracking mechanisms. |
 | [For import orders](https://learn.microsoft.com/en-us/azure/databox/data-box-logs) | troubleshooting | 0.70 | Describes tools and logs for each import step; likely includes specific log locations, event types, and how to interpret them, which are product-specific diagnostic details. |
@@ -128,9 +137,7 @@ confusable_not_for: Not for Azure Import Export (use azure-import-export), Azure
 | [Via SMB](https://learn.microsoft.com/en-us/azure/databox/data-box-heavy-deploy-copy-data) | 0.45 | SMB copy tutorial via local web UI; likely procedural without extensive configuration tables or troubleshooting mappings. |
 | [Via data copy service](https://learn.microsoft.com/en-us/azure/databox/data-box-heavy-deploy-copy-data-via-copy-service) | 0.45 | Data copy service tutorial describes usage but summary does not indicate detailed configuration matrices or limits; appears more procedural. |
 | [2 - Set up](https://learn.microsoft.com/en-us/azure/databox/data-box-heavy-deploy-set-up) | 0.40 | Set-up tutorial (cabling, connecting, turning on); mostly hardware steps, not detailed configuration parameters or limits. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/databox/data-box-faq) | 0.40 | FAQ likely mixes general and specific info but is not organized as limits, configs, or troubleshooting; summary doesn’t show strong expert-knowledge patterns. |
 | [Use self-managed shipping](https://learn.microsoft.com/en-us/azure/databox/data-box-portal-customer-managed-shipping) | 0.40 | Self-managed shipping workflow is mostly logistical; summary doesn’t indicate technical limits, configuration parameters, or troubleshooting content. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/databox/data-box-disk-faq) | 0.35 | FAQ likely mixes conceptual and minor specifics; summary does not indicate structured limits, configs, or troubleshooting mappings required for expert classification. |
 | [1 - Order](https://learn.microsoft.com/en-us/azure/databox/data-box-deploy-export-ordered) | 0.30 | Export order tutorial; primarily workflow-focused, no clear evidence of limits tables or config parameter references in summary. |
 | [4 - Prepare to ship](https://learn.microsoft.com/en-us/azure/databox/data-box-deploy-prepare-to-ship) | 0.30 | Shipping preparation tutorial; likely procedural without detailed limits, configs, or troubleshooting mappings. |
 | [4 - Return](https://learn.microsoft.com/en-us/azure/databox/data-box-deploy-export-picked-up) | 0.30 | Export return tutorial; summary suggests logistics and high-level erasure behavior, not detailed technical configuration. |

@@ -3,7 +3,7 @@ name: azure-service-fabric
 description: Expert knowledge for Azure Service Fabric development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when working with Service Fabric clusters, Reliable Services/Actors, reverse proxy, sfctl/PowerShell, or EventStore APIs, and other Azure Service Fabric related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure App Service (use azure-app-service), Azure Container Apps (use azure-container-apps), Azure Virtual Machines (use azure-virtual-machines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-03"
+  generated_at: "2026-05-17"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Service Fabric Skill

@@ -1,9 +1,9 @@
 ---
 name: azure-video-indexer
-description: Expert knowledge for Azure AI Video Indexer development including best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when indexing videos, using live camera summaries, training custom speech, redacting faces, or embedding insights, and other Azure AI Video Indexer related development tasks. Not for Azure AI Vision (use azure-ai-vision).
+description: Expert knowledge for Azure AI Video Indexer development including best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when indexing videos, using live camera analysis, calling Video Indexer APIs/widgets, or redacting faces, and other Azure AI Video Indexer related development tasks. Not for Azure AI Vision (use azure-ai-vision), Azure AI Custom Vision (use azure-custom-vision), Azure AI Speech (use azure-speech), Azure AI Search (use azure-cognitive-search).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-03"
+  generated_at: "2026-05-17"
   generator: "docs2skills/1.0.0"
 ---
 # Azure AI Video Indexer Skill
@@ -27,9 +27,9 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L35-L41 | Guidance on scaling Video Indexer, training custom speech models effectively, and designing disaster recovery and failover for resilient deployments. |
 | Decision Making | L42-L47 | Guidance on selecting Azure Video Indexer account types and designing multi-tenant setups, including management, isolation, and scaling strategies. |
 | Limits & Quotas | L48-L53 | Service limits, supported languages/capabilities, and how to use live camera indexing features like event summaries and viewing live recordings. |
-| Security | L54-L63 | Securing Video Indexer with roles, NSGs, private endpoints, firewalls, storage protection, and requesting access to restricted or advanced security-related features. |
-| Configuration | L64-L74 | Configuring Video Indexer behavior: OpenAI connections, indexing options, regions, upload settings, speaker editing, and monitoring/diagnostics metrics and logs. |
-| Integrations & Coding Patterns | L75-L81 | Using Video Indexer APIs and widgets to redact faces, embed video insights in apps, and integrate with workflows via Logic Apps and Power Automate. |
+| Security | L54-L63 | Security and access control for Video Indexer: roles/permissions, private endpoints, NSG service tags, firewall-protected storage, security baselines, and requesting access to restricted features. |
+| Configuration | L64-L73 | Configuring Video Indexer behavior: OpenAI connections, indexing options, regions, upload settings, speaker editing, and monitoring/diagnostics metrics and logs. |
+| Integrations & Coding Patterns | L74-L81 | Using Video Indexer APIs, widgets, and low-code tools to call the service, embed insights, automate workflows, and programmatically redact faces in videos |
 | Deployment | L82-L85 | How to deploy and configure Azure Video Indexer using ARM templates, including required resources, parameters, and automation steps for setting up the service. |
 
 ### Best Practices
@@ -59,7 +59,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure private endpoints for Azure Video Indexer | https://learn.microsoft.com/en-us/azure/azure-video-indexer/private-endpoint-how-to |
 | Manage Azure Video Indexer access with built-in roles | https://learn.microsoft.com/en-us/azure/azure-video-indexer/restricted-viewer-role |
 | Implement security baseline and best practices for Video Indexer | https://learn.microsoft.com/en-us/azure/azure-video-indexer/security-baseline-video-indexer |
-| Secure Video Indexer with firewall-protected storage | https://learn.microsoft.com/en-us/azure/azure-video-indexer/storage-behind-firewall |
+| Secure Azure AI Video Indexer with firewall-protected storage | https://learn.microsoft.com/en-us/azure/azure-video-indexer/storage-behind-firewall |
 
 ### Configuration
 | Topic | URL |
@@ -70,7 +70,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure monitoring and diagnostics for Azure Video Indexer | https://learn.microsoft.com/en-us/azure/azure-video-indexer/monitor-video-indexer |
 | Reference for Azure Video Indexer monitoring data | https://learn.microsoft.com/en-us/azure/azure-video-indexer/monitor-video-indexer-data-reference |
 | Set Azure region parameters for Video Indexer APIs | https://learn.microsoft.com/en-us/azure/azure-video-indexer/regions |
-| Upload and index media with advanced Video Indexer settings | https://learn.microsoft.com/en-us/azure/azure-video-indexer/upload-index-media |
 
 ### Integrations & Coding Patterns
 | Topic | URL |
@@ -78,6 +77,7 @@ This skill requires **network access** to fetch documentation content:
 | Redact faces in videos using Video Indexer API | https://learn.microsoft.com/en-us/azure/azure-video-indexer/face-redaction-with-api |
 | Integrate Video Indexer with Logic Apps and Power Automate | https://learn.microsoft.com/en-us/azure/azure-video-indexer/logic-apps-connector-arm-accounts |
 | Embed Azure Video Indexer widgets into applications | https://learn.microsoft.com/en-us/azure/azure-video-indexer/video-indexer-embed-widgets |
+| Call Azure AI Video Indexer APIs from applications | https://learn.microsoft.com/en-us/azure/azure-video-indexer/video-indexer-use-apis |
 
 ### Deployment
 | Topic | URL |

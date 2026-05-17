@@ -1,9 +1,9 @@
 ---
 name: azure-static-web-apps
-description: Expert knowledge for Azure Static Web Apps development including troubleshooting, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when wiring SWA APIs to Azure DBs, configuring custom domains/auth, CI/CD, preview slots, or Front Door/CDN, and other Azure Static Web Apps related development tasks. Not for Azure App Service (use azure-app-service), Azure Functions (use azure-functions), Azure Container Apps (use azure-container-apps), Azure Kubernetes Service (AKS) (use azure-kubernetes-service).
+description: Expert knowledge for Azure Static Web Apps development including troubleshooting, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when wiring SWA APIs to Azure DBs, configuring custom domains/DNS, auth/roles, CI/CD, or plan limits, and other Azure Static Web Apps related development tasks. Not for Azure App Service (use azure-app-service), Azure Functions (use azure-functions), Azure Container Apps (use azure-container-apps), Azure Web PubSub (use azure-web-pubsub).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-05-17"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Static Web Apps Skill
@@ -26,11 +26,11 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L35-L39 | Diagnosing and fixing common Static Web Apps deployment and runtime issues, including build failures, configuration problems, and troubleshooting tools/logs. |
 | Decision Making | L40-L47 | Guidance on key architecture choices: Functions hosting model, using Front Door/CDN edge, Next.js deployment options, and comparing Free vs Standard Static Web Apps plans. |
-| Limits & Quotas | L48-L53 | Runtime versions and language support for Static Web Apps, plus plan-specific quotas and limits (storage, bandwidth, functions, concurrency, and resource caps). |
-| Security | L54-L65 | Configuring auth, roles, secrets, and access: Entra ID/Graph roles, auth providers, user info, deployment tokens, Key Vault/managed identity, password protection, and private endpoints. |
-| Configuration | L66-L92 | Configuring domains, DNS, backends (Functions, App Service, Container Apps, APIM), build/runtime settings, local emulation (SWA CLI), monitoring, and database/network for Static Web Apps. |
-| Integrations & Coding Patterns | L93-L101 | How to connect Static Web Apps APIs to Azure databases (Cosmos DB, SQL, MySQL, PostgreSQL), including Mongoose usage, connection strings, and typical integration patterns. |
-| Deployment | L102-L118 | Deploying Static Web Apps via GitHub/GitLab/Bitbucket/CLI/ARM/Bicep, configuring CI/CD, preview environments, traffic splitting, and optional Azure Front Door CDN setup |
+| Limits & Quotas | L48-L54 | Details on Static Web Apps plan quotas, resource and behavior limits, supported languages/frameworks, and available runtime versions across tiers. |
+| Security | L55-L66 | Configuring auth, roles, secrets, and access: Entra ID/Graph roles, auth providers, user info, deployment tokens, Key Vault/managed identity, password protection, and private endpoints. |
+| Configuration | L67-L93 | Configuring domains, DNS, backends (Functions, App Service, Container Apps, APIM), build/runtime settings, local emulation (SWA CLI), monitoring, and database/network for Static Web Apps. |
+| Integrations & Coding Patterns | L94-L102 | How to connect Static Web Apps APIs to Azure databases (Cosmos DB, SQL, MySQL, PostgreSQL), including Mongoose usage, connection strings, and typical integration patterns. |
+| Deployment | L103-L119 | Deploying Static Web Apps via GitHub/GitLab/Bitbucket/CLI/ARM/Bicep, configuring CI/CD, preview environments, traffic splitting, and optional Azure Front Door CDN setup |
 
 ### Troubleshooting
 | Topic | URL |
@@ -48,6 +48,7 @@ This skill requires **network access** to fetch documentation content:
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
+| Azure Static Web Apps limits and behavioral specifics | https://learn.microsoft.com/en-us/azure/static-web-apps/faq |
 | Supported languages and runtime versions for Azure Static Web Apps | https://learn.microsoft.com/en-us/azure/static-web-apps/languages-runtimes |
 | Quotas and limits for Azure Static Web Apps plans | https://learn.microsoft.com/en-us/azure/static-web-apps/quotas |
 

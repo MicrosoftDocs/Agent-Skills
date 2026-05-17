@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-10'
+generated_at: '2026-05-17'
 category_descriptions:
   integrations: Patterns and tools for integrating code analysis and automation into
     Azure Migrate, including GitHub Copilot insights, AppCAT CLI, CAST Highlight scans,
@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Database Migration service (use azure-database
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 6
-- **Unchanged**: 204
+- **Updated Pages**: 3
+- **Unchanged**: 207
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-migrate/azure-migrate.csv`
 
@@ -79,18 +79,12 @@ confusable_not_for: Not for Azure Database Migration service (use azure-database
 
 ### Updated Pages
 
-- [Deploy appliance using script](https://learn.microsoft.com/en-us/azure/migrate/deploy-appliance-script?view=migrate)
-  - Updated: 2025-12-12T12:11:00.000Z → 2026-05-07T22:15:00.000Z
-- [Deploy appliance in Azure Government](https://learn.microsoft.com/en-us/azure/migrate/deploy-appliance-script-government?view=migrate)
-  - Updated: 2025-12-12T12:11:00.000Z → 2026-05-07T22:15:00.000Z
-- [Prepare Windows 2003 servers for migration](https://learn.microsoft.com/en-us/azure/migrate/prepare-windows-server-2003-migration?view=migrate)
-  - Updated: 2025-07-31T17:19:00.000Z → 2026-05-05T17:29:00.000Z
-- [Define and manage applications](https://learn.microsoft.com/en-us/azure/migrate/define-manage-applications?view=migrate)
-  - Updated: 2026-03-19T17:35:00.000Z → 2026-05-08T11:22:00.000Z
-- [Getting started](https://learn.microsoft.com/en-us/azure/migration/migrate-from-google-cloud)
-  - Updated: 2026-04-30T17:19:00Z → 2026-05-07T13:18:00Z
-- [Support-Move Azure VMs across regions](https://learn.microsoft.com/en-us/azure/resource-mover/support-matrix-move-region-azure-vm)
-  - Updated: 2026-03-05T08:00:00.000Z → 2026-04-30T08:00:00.000Z
+- [What's new](https://learn.microsoft.com/en-us/azure/migrate/whats-new?view=migrate)
+  - Updated: 2026-04-10T17:11:00.000Z → 2026-05-07T08:00:00.000Z
+- [Software and Insights](https://learn.microsoft.com/en-us/azure/migrate/software-insights-faq?view=migrate)
+  - Updated: 2025-10-30T17:12:00Z → 2025-10-30T17:12:00.000Z
+- [FAQ](https://learn.microsoft.com/en-us/azure/migrate/appcat/faq?view=migrate)
+  - Updated: 2024-07-26T22:05:00Z → 2024-07-26T22:05:00.000Z
 
 ## Classified Pages
 
@@ -257,9 +251,7 @@ confusable_not_for: Not for Azure Database Migration service (use azure-database
 | [Move Azure VMs to availability zones](https://learn.microsoft.com/en-us/azure/resource-mover/move-region-availability-zone) | 0.40 | How-to article for moving VMs to availability zones; appears to be a procedural tutorial rather than a support matrix or configuration reference with detailed parameters or limits. |
 | [Redeploy servers using IaC](https://learn.microsoft.com/en-us/azure/migrate/server-redeploy?view=migrate) | 0.40 | IaC redeployment walkthrough; mostly process guidance, not config matrices or quantified best practices. |
 | [Remove resources from a move collection](https://learn.microsoft.com/en-us/azure/resource-mover/remove-move-resources) | 0.40 | Describes how to remove resources from a move collection; operational procedure without indication of detailed configuration parameters, limits, or decision matrices. |
-| [Software and Insights](https://learn.microsoft.com/en-us/azure/migrate/software-insights-faq?view=migrate) | 0.40 | Software and Insights FAQ; appears conceptual/usage Q&A without clear evidence of numeric limits or config tables in the summary. |
 | [Wave planning](https://learn.microsoft.com/en-us/azure/migrate/common-questions-wave-planning?view=migrate) | 0.40 | FAQ-style content about wave planning; likely conceptual clarifications without detailed config tables or numeric thresholds. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/migrate/appcat/faq?view=migrate) | 0.35 | FAQ page for Azure Migrate application and code assessment; summary doesn’t indicate structured error-code mappings or detailed configuration tables, so it doesn’t clearly fit troubleshooting or other expert categories. |
 | [Move Azure VMs to another region](https://learn.microsoft.com/en-us/azure/resource-mover/tutorial-move-region-virtual-machines) | 0.35 | Step-by-step tutorial for moving VMs with Resource Mover; tutorials typically show a single path with defaults, not comprehensive config matrices or limits. No indication of expert-only tables or error mappings. |
 | [Move SQL resources to another region](https://learn.microsoft.com/en-us/azure/resource-mover/tutorial-move-region-sql) | 0.35 | Tutorial for moving Azure SQL resources; summary suggests a guided scenario using defaults, not a support matrix or detailed configuration reference. |
 | [Move across regions (from resource group)](https://learn.microsoft.com/en-us/azure/resource-mover/move-region-within-resource-group) | 0.35 | How-to article for moving resources in a resource group; summary suggests step-by-step instructions, not detailed matrices, limits, or configuration parameter tables. |
@@ -305,9 +297,11 @@ confusable_not_for: Not for Azure Database Migration service (use azure-database
 | [Responsible AI FAQ for Azure Copilot Migration Agent](https://learn.microsoft.com/en-us/azure/migrate/common-questions-azure-copilot-migration-agent?view=migrate) | 0.20 | Common questions about Azure Copilot migration agent, with emphasis on Responsible AI principles. The summary suggests high-level FAQ/assurance content rather than concrete limits, configuration parameters, or troubleshooting mappings. Lacks the specific numeric limits, config tables, or error-code-based guidance required for expert-knowledge classification. |
 | [Review assessment report](https://learn.microsoft.com/en-us/azure/migrate/review-application-assessment?view=migrate) | 0.20 | Conceptual explanation of application/cross-workload assessments and migration strategies; no indication of numeric thresholds, configuration values, or detailed decision matrices. |
 | [Review assessment report](https://learn.microsoft.com/en-us/azure/migrate/review-file-share-assessment?view=migrate) | 0.20 | Describes components of an Azure Files assessment and how to review results; appears conceptual and procedural without expert-level numeric limits, config tables, or error-code mappings. |
+| [Software and Insights](https://learn.microsoft.com/en-us/azure/migrate/software-insights-faq?view=migrate) | 0.20 | FAQ-style page about Azure Migrate Software and Insights; description suggests general Q&A and pointers to other resources, without clear indication of numeric limits, configuration tables, error-code mappings, or other product-specific expert details. |
 | [Tags in Azure Migrate](https://learn.microsoft.com/en-us/azure/migrate/resource-tagging?view=migrate) | 0.20 | High-level overview of tagging concepts in Azure Migrate without detailed configuration parameters, limits, or product-specific decision matrices. |
 | [What is Azure Copilot Migration Agent?](https://learn.microsoft.com/en-us/azure/migrate/azure-copilot-migration-agent?view=migrate) | 0.20 | Planning-focused overview of Azure Copilot migration agent capabilities; no detailed limits, configuration tables, error codes, or product-specific numeric thresholds. |
 | [What is Azure Migrate?](https://learn.microsoft.com/en-us/azure/migrate/migrate-services-overview?view=migrate) | 0.20 | High-level service overview of Azure Migrate without detailed limits, configs, or decision matrices. |
 | [What's new](https://learn.microsoft.com/en-us/azure/resource-mover/whats-new) | 0.20 | What's new / release notes style content; describes new features and capabilities but not in the structured, parameterized way required for these sub-skill types. |
-| [What's new](https://learn.microsoft.com/en-us/azure/migrate/whats-new?view=migrate) | 0.10 | A 'what's new' changelog-style page summarizing recent features and updates; it typically does not provide detailed limits, configuration tables, error mappings, or decision matrices, but rather high-level release notes. |
+| [What's new](https://learn.microsoft.com/en-us/azure/migrate/whats-new?view=migrate) | 0.10 | Release notes / what's new summary for Azure Migrate; primarily high-level feature announcements and updates without detailed limits, configuration tables, error codes, or decision matrices that meet the expert-knowledge criteria. |
 | [Work with previous version of Azure Migrate](https://learn.microsoft.com/en-us/azure/migrate/migrate-services-overview?view=migrate) | 0.10 | Service overview/marketing-style description of Azure Migrate without detailed limits, configs, or troubleshooting mappings. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/migrate/appcat/faq?view=migrate) | - | FAQ description is high-level and support-oriented; no evidence of specific limits, configuration parameters, error codes, or other product-specific expert details. |

@@ -1,9 +1,9 @@
 ---
 name: azure-active-directory-b2c
-description: Expert knowledge for Azure Active Directory B2C development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing custom policies/user flows, MFA & IdP sign-in, app/API registration, CI/CD deployments, or Sentinel logging, and other Azure Active Directory B2C related development tasks. Not for Azure Information Protection (use azure-information-protection), Azure Role-based access control (use azure-rbac), Azure Security (use azure-security), Azure Portal (use azure-portal).
+description: Expert knowledge for Azure Active Directory B2C development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing user flows/custom policies, MFA/Conditional Access, identity providers, CI/CD deployments, or monitoring, and other Azure Active Directory B2C related development tasks. Not for Azure Information Protection (use azure-information-protection), Azure Role-based access control (use azure-rbac), Azure Security (use azure-security), Azure Sentinel (use azure-sentinel).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-05"
+  generated_at: "2026-05-17"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Active Directory B2C Skill
@@ -26,10 +26,10 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L37-L43 | Diagnosing and fixing Azure AD B2C errors, debugging custom policies and user flows, and using Application Insights to trace and troubleshoot policy execution. |
 | Best Practices | L44-L52 | Best practices for configuring Azure AD B2C, designing user flows/custom policies, securing MFA and architecture, and detecting/mitigating credential and account attacks. |
-| Decision Making | L53-L61 | Guidance on choosing B2C app types, understanding MAU billing/tiers, planning regions and data residency, and deciding on usage, migration strategy, and user migration approaches. |
+| Decision Making | L53-L61 | Guidance on planning Azure AD B2C usage: choosing app types, understanding MAU billing, regions/data residency, retirement impact, and selecting a user migration strategy. |
 | Architecture & Design Patterns | L62-L70 | Global Azure AD B2C customer identity architectures, comparing funnel- vs region-based designs, and step-by-step proof-of-concept implementations for each pattern |
 | Limits & Quotas | L71-L78 | Service limits, quotas, and restrictions for Azure AD B2C tenants, including directory size, token formats/constraints, and tenant creation and scaling limits. |
-| Security | L79-L95 | Security hardening for Azure AD B2C: MFA, Conditional Access, Identity Protection, CAPTCHA, keys/certs, TLS/ciphers, admin roles, tenant control, API connector security, and Sentinel logging. |
+| Security | L79-L95 | Security hardening for Azure AD B2C: MFA, Conditional Access, Identity Protection, CAPTCHA, TLS/ciphers, policy keys, admin/tenant access control, API security, and Sentinel-based monitoring. |
 | Configuration | L96-L210 | Configuring Azure AD B2C: custom policies, user flows, tokens, MFA, identity providers, claims/transformations, app/API registration, UI/localization, SSO, security, and advanced auth options. |
 | Integrations & Coding Patterns | L211-L323 | End-to-end patterns for integrating Azure AD B2C into apps and APIs, configuring identity providers, custom policies, fraud/risk tools, and securing traffic with proxies, WAFs, and monitoring. |
 | Deployment | L324-L328 | Automating deployment of Azure AD B2C custom policies using CI/CD pipelines, including setup steps, YAML examples, and best practices for Azure Pipelines and GitHub Actions. |
@@ -56,7 +56,7 @@ This skill requires **network access** to fetch documentation content:
 | Choose appropriate application types for Azure AD B2C | https://learn.microsoft.com/en-us/azure/active-directory-b2c/application-types |
 | Understand Azure AD B2C MAU billing and tier selection | https://learn.microsoft.com/en-us/azure/active-directory-b2c/billing |
 | Plan Azure AD B2C region availability and data residency | https://learn.microsoft.com/en-us/azure/active-directory-b2c/data-residency |
-| Plan Azure AD B2C usage and migration decisions | https://learn.microsoft.com/en-us/azure/active-directory-b2c/faq |
+| Plan Azure AD B2C usage and retirement impact | https://learn.microsoft.com/en-us/azure/active-directory-b2c/faq |
 | Choose a user migration approach to Azure AD B2C | https://learn.microsoft.com/en-us/azure/active-directory-b2c/user-migration |
 
 ### Architecture & Design Patterns
@@ -83,7 +83,7 @@ This skill requires **network access** to fetch documentation content:
 | Use Identity Protection and Conditional Access with Azure AD B2C | https://learn.microsoft.com/en-us/azure/active-directory-b2c/conditional-access-identity-protection-overview |
 | Add Conditional Access and MFA to Azure AD B2C user flows | https://learn.microsoft.com/en-us/azure/active-directory-b2c/conditional-access-user-flow |
 | Configure Microsoft Sentinel analytics for Azure AD B2C logs | https://learn.microsoft.com/en-us/azure/active-directory-b2c/configure-security-analytics-sentinel |
-| TLS and cipher suite requirements for Azure AD B2C integrations | https://learn.microsoft.com/en-us/azure/active-directory-b2c/https-cipher-tls-requirements |
+| Configure TLS and cipher suite requirements for Azure AD B2C endpoints | https://learn.microsoft.com/en-us/azure/active-directory-b2c/https-cipher-tls-requirements |
 | Investigate and remediate identity risk in Azure AD B2C | https://learn.microsoft.com/en-us/azure/active-directory-b2c/identity-protection-investigate-risk |
 | Enable and configure multifactor authentication in Azure AD B2C | https://learn.microsoft.com/en-us/azure/active-directory-b2c/multi-factor-authentication |
 | Manage Azure AD B2C policy keys for secure token signing | https://learn.microsoft.com/en-us/azure/active-directory-b2c/policy-keys-overview |

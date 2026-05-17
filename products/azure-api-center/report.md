@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-10'
+generated_at: '2026-05-17'
 category_descriptions:
   security: Configuring API authorization schemes for APIs in API Center and managing
     who can access the API Center portal via the VS Code extension
@@ -36,10 +36,10 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 - **Unclassified**: 22
 
 ### Incremental Update
-- **New Pages**: 3
-- **Updated Pages**: 3
-- **Unchanged**: 31
-- **Deleted Pages**: 2
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 36
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-api-center/azure-api-center.csv`
 
 ## Classification Statistics
@@ -55,25 +55,10 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 
 ## Changes
 
-### New Pages
-
-- [Synchronize assets from API Management](https://learn.microsoft.com/en-us/azure/api-center/synchronize-api-management-apis)
-- [Synchronize assets from Amazon API Gateway](https://learn.microsoft.com/en-us/azure/api-center/synchronize-aws-gateway-apis)
-- [Synchronize assets from a Git repository](https://learn.microsoft.com/en-us/azure/api-center/synchronize-assets-git)
-
 ### Updated Pages
 
-- [Register and discover skills](https://learn.microsoft.com/en-us/azure/api-center/register-discover-skills)
-  - Updated: 2026-04-29T17:11:00.000Z → 2026-05-07T06:30:00.000Z
-- [Enable and customize API Center portal](https://learn.microsoft.com/en-us/azure/api-center/set-up-api-center-portal)
-  - Updated: 2026-04-02T08:00:00.000Z → 2026-05-01T08:00:00.000Z
-- [Self-host Azure API Center portal](https://learn.microsoft.com/en-us/azure/api-center/self-host-api-center-portal)
-  - Updated: 2026-01-28T23:12:00.000Z → 2026-05-01T08:00:00.000Z
-
-### Deleted Pages
-
-- ~~Synchronize APIs from API Management~~ (https://learn.microsoft.com/en-us/azure/api-center/synchronize-api-management-apis)
-- ~~Synchronize APIs from Amazon API Gateway~~ (https://learn.microsoft.com/en-us/azure/api-center/synchronize-aws-gateway-apis)
+- [Frequently asked questions](https://learn.microsoft.com/en-us/azure/api-center/frequently-asked-questions)
+  - Updated: 2026-01-28T23:12:00Z → 2026-01-28T23:12:00.000Z
 
 ## Classified Pages
 
@@ -115,9 +100,9 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 | [Design and develop  APIs - GitHub Copilot for Azure](https://learn.microsoft.com/en-us/azure/api-center/design-api-github-copilot-azure) | 0.20 | Describes using the API Center plugin for GitHub Copilot for Azure to design APIs from natural language; appears to be a workflow/tutorial without numeric limits, decision matrices, or detailed configuration parameters. |
 | [Enable plugin marketplace](https://learn.microsoft.com/en-us/azure/api-center/enable-api-center-plugin-marketplace) | 0.20 | From the summary, the page is a how-to for enabling a plugin marketplace endpoint and integrating it with tools like GitHub Copilot or Claude Code. It does not clearly indicate the presence of configuration parameter tables, limits, error codes, or other detailed product-specific settings that meet the expert-knowledge criteria for any sub-skill type. It appears to be a feature enablement/tutorial-style article rather than a deep configuration, limits, or troubleshooting reference. |
 | [Export API from API Center to Copilot Studio](https://learn.microsoft.com/en-us/azure/api-center/export-to-copilot-studio) | 0.20 | Explains exporting an API definition from API Center to Copilot Studio as a connector; likely a step-by-step integration tutorial without parameter tables, constraints, or error-code-based troubleshooting. |
-| [Frequently asked questions](https://learn.microsoft.com/en-us/azure/api-center/frequently-asked-questions) | 0.20 | FAQ-style content; summary suggests general Q&A without detailed error codes, limits, or configuration tables. |
 | [Register and discover MCP servers](https://learn.microsoft.com/en-us/azure/api-center/register-discover-mcp-server) | 0.20 | Describes registering and discovering MCP servers in API Center; appears to be conceptual/how-to guidance without specific limits, configuration matrices, or detailed troubleshooting mappings. |
 | [Register and discover skills](https://learn.microsoft.com/en-us/azure/api-center/register-discover-skills) | 0.20 | Procedural how-to for registering skills in API Center; summary shows no numeric limits, config tables, error codes, or product-specific best-practice details. |
 | [Samples and labs](https://learn.microsoft.com/en-us/azure/api-center/resources) | 0.20 | Resource index linking to external samples and labs; not itself a technical reference or configuration document. |
 | [Key concepts](https://learn.microsoft.com/en-us/azure/api-center/key-concepts) | 0.10 | Key concepts/terminology description without product-specific numeric limits, configs, or troubleshooting content. |
 | [What is Azure API Center?](https://learn.microsoft.com/en-us/azure/api-center/overview) | 0.10 | High-level overview of Azure API Center capabilities and scenarios without concrete limits, configuration parameters, error codes, or decision matrices. |
+| [Frequently asked questions](https://learn.microsoft.com/en-us/azure/api-center/frequently-asked-questions) | - | FAQ page appears to be high-level Q&A about Azure API Center without clear evidence of numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. Lacking concrete expert details as defined by the sub-skill criteria. |

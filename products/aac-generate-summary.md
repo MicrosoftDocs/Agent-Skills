@@ -1,7 +1,7 @@
 # Generation Summary
 
-**Generated**: 2026-05-10 02:02:47
-**Total Duration**: 0m 28s
+**Generated**: 2026-05-17 02:02:41
+**Total Duration**: 0m 30s
 
 ## Product Crawl Summary
 
@@ -9,16 +9,16 @@ Quick overview for reviewers. See individual product reports for details.
 
 | # | Product | Pages | Classified | New | Updated | Deleted | Status |
 |---|---------|-------|------------|-----|---------|---------|--------|
-| 1 | Azure Architecture | 446 | 336 | 1 | 9 | 5 | OK |
+| 1 | Azure Architecture | 445 | 334 | 0 | 12 | 1 | OK |
 
 ### Totals
 
 - **Products Processed**: 1 success, 0 failed
-- **Total Pages**: 446
-- **Total Classified**: 336
-- **Total New Pages**: 1
-- **Total Updated Pages**: 9
-- **Total Deleted Pages**: 5
+- **Total Pages**: 445
+- **Total Classified**: 334
+- **Total New Pages**: 0
+- **Total Updated Pages**: 12
+- **Total Deleted Pages**: 1
 
 ### Classification by Type (All Products)
 
@@ -26,12 +26,12 @@ Quick overview for reviewers. See individual product reports for details.
 |------|-------|
 | anti-patterns | 11 |
 | architecture-styles | 8 |
-| best-practices | 49 |
+| best-practices | 48 |
 | design-patterns | 49 |
-| example-workloads | 76 |
+| example-workloads | 75 |
 | migration-guides | 32 |
-| reference-architectures | 53 |
-| solution-ideas | 28 |
+| reference-architectures | 54 |
+| solution-ideas | 27 |
 | technology-choices | 30 |
 
 ---
