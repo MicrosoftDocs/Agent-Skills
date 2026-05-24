@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-17'
+generated_at: '2026-05-24'
 category_descriptions:
   integrations: Connecting SRE Agent to DevOps, GitHub, PagerDuty, observability tools,
     and defining Python/Kusto tools and REST usage patterns for automated SRE workflows.
@@ -33,16 +33,16 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 
 ## Summary
 
-- **Total Pages**: 106
-- **Fetched**: 106
+- **Total Pages**: 107
+- **Fetched**: 107
 - **Fetch Failed**: 0
 - **Classified**: 36
-- **Unclassified**: 70
+- **Unclassified**: 71
 
 ### Incremental Update
-- **New Pages**: 3
-- **Updated Pages**: 3
-- **Unchanged**: 100
+- **New Pages**: 1
+- **Updated Pages**: 0
+- **Unchanged**: 106
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sre-agent/azure-sre-agent.csv`
 
@@ -51,29 +51,18 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 | Type | Count | Percentage |
 |------|-------|------------|
 | configuration | 8 | 7.5% |
-| decision-making | 4 | 3.8% |
+| decision-making | 4 | 3.7% |
 | deployment | 1 | 0.9% |
-| integrations | 13 | 12.3% |
-| security | 7 | 6.6% |
+| integrations | 13 | 12.1% |
+| security | 7 | 6.5% |
 | troubleshooting | 3 | 2.8% |
-| *(Unclassified)* | 70 | 66.0% |
+| *(Unclassified)* | 71 | 66.4% |
 
 ## Changes
 
 ### New Pages
 
-- [API reference](https://learn.microsoft.com/en-us/azure/sre-agent/api-reference)
-- [Deploy with Infrastructure as Code](https://learn.microsoft.com/en-us/azure/sre-agent/deploy-iac)
-- [Review agent insights](https://learn.microsoft.com/en-us/azure/sre-agent/review-agent-insights)
-
-### Updated Pages
-
-- [Pricing and billing](https://learn.microsoft.com/en-us/azure/sre-agent/pricing-billing)
-  - Updated: 2026-04-22T17:34:00.000Z → 2026-05-14T11:14:00.000Z
-- [Track incident value](https://learn.microsoft.com/en-us/azure/sre-agent/track-incident-value)
-  - Updated: 2026-04-24T18:40:00.000Z → 2026-05-14T11:14:00.000Z
-- [Monitor agent usage](https://learn.microsoft.com/en-us/azure/sre-agent/monitor-agent-usage)
-  - Updated: 2026-03-10T04:29:00.000Z → 2026-05-14T11:14:00.000Z
+- [Operations Hub overview](https://learn.microsoft.com/en-us/azure/sre-agent/operations-hub-overview)
 
 ## Classified Pages
 
@@ -171,6 +160,7 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 | [Learn via Chat](https://learn.microsoft.com/en-us/azure/sre-agent/docsguide) | 0.20 | DocsGuide feature overview; no indication of detailed configuration parameters, limits, or troubleshooting mappings. |
 | [MCP connectors](https://learn.microsoft.com/en-us/azure/sre-agent/mcp-connectors) | 0.20 | High-level description of MCP connectors and tools; no evidence of detailed configuration parameters, limits, or troubleshooting mappings. |
 | [Manage global tools](https://learn.microsoft.com/en-us/azure/sre-agent/manage-global-tools) | 0.20 | Tutorial on browsing and toggling tools at space level; appears to be basic feature usage with one date-based note, but no detailed configuration matrices, limits, or troubleshooting content. |
+| [Operations Hub overview](https://learn.microsoft.com/en-us/azure/sre-agent/operations-hub-overview) | 0.20 | Page is an overview of the Azure SRE Agent operations hub, describing high-level capabilities and benefits (real-time visibility, unified signals) without specific limits, configuration parameters, error codes, or detailed decision matrices. It does not meet any sub-skill detection criteria for expert, product-specific numeric or configuration knowledge. |
 | [Review agent insights](https://learn.microsoft.com/en-us/azure/sre-agent/review-agent-insights) | 0.20 | The content is about reviewing session insights and qualitative evaluations of agent conversations. The summary does not suggest specific configuration options, error codes, limits, or decision matrices. It appears to be conceptual/analytical guidance without the kind of product-specific expert details required for any sub-skill type. |
 | [Run a deep investigation](https://learn.microsoft.com/en-us/azure/sre-agent/tutorial-deep-investigation) | 0.20 | Tutorial on using deep investigation from chat and response plans; appears to be step-by-step usage guidance without detailed config tables, limits, or error mappings. |
 | [Run your first investigation](https://learn.microsoft.com/en-us/azure/sre-agent/first-investigation) | 0.20 | Quickstart-style tutorial for first investigation; no evidence of expert-only limits, configs, or troubleshooting mappings. |

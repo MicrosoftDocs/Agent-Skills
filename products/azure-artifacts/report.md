@@ -42,8 +42,8 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 10
-- **Unchanged**: 63
+- **Updated Pages**: 0
+- **Unchanged**: 73
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-artifacts/azure-artifacts.csv`
 
@@ -61,29 +61,6 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 | *(Unclassified)* | 17 | 23.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [Use packages from NuGet.org](https://learn.microsoft.com/en-us/azure/devops/artifacts/nuget/upstream-sources?view=azure-devops)
-  - Updated: 2025-09-08T22:55:00.000Z → 2026-05-12T17:04:00.000Z
-- [NuGet](https://learn.microsoft.com/en-us/azure/devops/artifacts/get-started-nuget?view=azure-devops)
-  - Updated: 2026-02-26T02:05:00.000Z → 2026-05-12T17:04:00.000Z
-- [Publish your first package](https://learn.microsoft.com/en-us/azure/devops/artifacts/get-started-artifacts-ai?view=azure-devops)
-  - Updated: 2025-09-22T18:33:00.000Z → 2026-05-12T17:04:00.000Z
-- [Project setup (dotnet)](https://learn.microsoft.com/en-us/azure/devops/artifacts/nuget/dotnet-setup?view=azure-devops)
-  - Updated: 2025-06-23T23:47:00.000Z → 2026-05-12T17:04:00.000Z
-- [Publish NuGet packages (dotnet)](https://learn.microsoft.com/en-us/azure/devops/artifacts/nuget/dotnet-exe?view=azure-devops)
-  - Updated: 2025-09-24T16:13:00.000Z → 2026-05-12T17:04:00.000Z
-- [Project setup (NuGet.exe)](https://learn.microsoft.com/en-us/azure/devops/artifacts/nuget/nuget-exe?view=azure-devops)
-  - Updated: 2025-06-23T23:47:00.000Z → 2026-05-12T17:04:00.000Z
-- [Publish NuGet packages (NuGet.exe)](https://learn.microsoft.com/en-us/azure/devops/artifacts/nuget/publish?view=azure-devops)
-  - Updated: 2026-02-26T02:05:00.000Z → 2026-05-12T17:04:00.000Z
-- [Publish packages to NuGet.org](https://learn.microsoft.com/en-us/azure/devops/artifacts/nuget/publish-to-nuget-org?view=azure-devops)
-  - Updated: 2025-08-15T18:39:00.000Z → 2026-05-15T01:05:00.000Z
-- [Restore NuGet packages (dotnet)](https://learn.microsoft.com/en-us/azure/devops/artifacts/nuget/restore-nuget-packages-dotnet?view=azure-devops)
-  - Updated: 2025-06-23T23:47:00.000Z → 2026-05-12T17:04:00.000Z
-- [Restore NuGet packages (NuGet.exe)](https://learn.microsoft.com/en-us/azure/devops/artifacts/nuget/restore-nuget-packages-nuget-exe?view=azure-devops)
-  - Updated: 2025-12-19T16:56:00.000Z → 2026-05-12T17:04:00.000Z
 
 ## Classified Pages
 

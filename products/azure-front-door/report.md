@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 99
+- **Updated Pages**: 0
+- **Unchanged**: 102
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-front-door/azure-front-door.csv`
 
@@ -76,15 +76,6 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | *(Unclassified)* | 32 | 31.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [FAQ](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-faq)
-  - Updated: 2026-04-29T11:12:00Z → 2026-04-29T11:12:00.000Z
-- [Front Door TLS policy](https://learn.microsoft.com/en-us/azure/frontdoor/standard-premium/tls-policy)
-  - Updated: 2026-01-08T06:12:00.000Z → 2026-05-13T11:10:00.000Z
-- [Configure TLS policy](https://learn.microsoft.com/en-us/azure/frontdoor/standard-premium/tls-policy-configure)
-  - Updated: 2026-01-15T08:00:00.000Z → 2026-05-14T22:12:00.000Z
 
 ## Classified Pages
 

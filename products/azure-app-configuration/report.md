@@ -39,17 +39,17 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Key
 
 ## Summary
 
-- **Total Pages**: 163
-- **Fetched**: 163
+- **Total Pages**: 162
+- **Fetched**: 162
 - **Fetch Failed**: 0
 - **Classified**: 133
-- **Unclassified**: 30
+- **Unclassified**: 29
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 1
-- **Unchanged**: 161
-- **Deleted Pages**: 0
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 162
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-app-configuration/azure-app-configuration.csv`
 
 ## Classification Statistics
@@ -57,25 +57,20 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Key
 | Type | Count | Percentage |
 |------|-------|------------|
 | best-practices | 1 | 0.6% |
-| configuration | 15 | 9.2% |
+| configuration | 15 | 9.3% |
 | decision-making | 2 | 1.2% |
 | deployment | 6 | 3.7% |
-| integrations | 86 | 52.8% |
+| integrations | 86 | 53.1% |
 | limits-quotas | 5 | 3.1% |
-| security | 17 | 10.4% |
+| security | 17 | 10.5% |
 | troubleshooting | 1 | 0.6% |
-| *(Unclassified)* | 30 | 18.4% |
+| *(Unclassified)* | 29 | 17.9% |
 
 ## Changes
 
-### New Pages
+### Deleted Pages
 
-- [.NET](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-ai-agent-config-dotnet)
-
-### Updated Pages
-
-- [Frequently asked questions](https://learn.microsoft.com/en-us/azure/azure-app-configuration/faq)
-  - Updated: 2026-02-05T12:11:00Z → 2026-02-05T12:11:00.000Z
+- ~~Experimentation~~ (https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-experimentation)
 
 ## Classified Pages
 
@@ -223,7 +218,6 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Key
 | [Move a resource between Azure regions](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-move-resource-between-regions) | 0.50 | Describes manual process to move a store between regions; summary suggests procedural steps without detailed configuration tables or limits. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-geo-replication) | 0.50 | Conceptual explanation of geo-replication and resiliency; summary does not indicate detailed configuration tables or numeric thresholds. |
 | [Move a resource between subscriptions or resource groups](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-move-resource-between-subscriptions-resource-groups) | 0.45 | How-to for moving a store between subscriptions/resource groups; appears to be portal/CLI navigation steps rather than deep configuration or limits. |
-| [Experimentation](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-experimentation) | 0.40 | High-level experimentation concept article; focuses on definitions and process, not on concrete configuration values or decision matrices. |
 | [Feature management](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-feature-flag-azure-kubernetes-service) | 0.40 | Quickstart tutorial for using feature flags with AKS; primarily step-by-step code and setup without configuration tables, limits, or product-specific edge-case guidance. |
 | [JSON content-type](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-leverage-json-content-type) | 0.40 | Describes using JSON content type for key-values; mostly conceptual and basic usage, not deep configuration matrices or limits. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-ai-configuration) | 0.40 | Introductory AI configuration concept article; mostly benefits and high-level description without detailed parameters or limits. |

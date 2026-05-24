@@ -44,8 +44,8 @@ confusable_not_for: Not for Azure Cache for Redis (use azure-cache-redis).
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 7
-- **Unchanged**: 63
+- **Updated Pages**: 0
+- **Unchanged**: 70
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-managed-redis/azure-managed-redis.csv`
 
@@ -63,23 +63,6 @@ confusable_not_for: Not for Azure Cache for Redis (use azure-cache-redis).
 | *(Unclassified)* | 8 | 11.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [Management FAQs](https://learn.microsoft.com/en-us/azure/redis/management-faq)
-  - Updated: 2025-05-20T11:13:00Z → 2025-05-20T11:13:00.000Z
-- [Troubleshooting FAQs](https://learn.microsoft.com/en-us/azure/redis/monitor-troubleshoot-faq)
-  - Updated: 2025-05-20T11:13:00Z → 2025-05-20T11:13:00.000Z
-- [Azure Redis FAQ](https://learn.microsoft.com/en-us/azure/redis/faq)
-  - Updated: 2025-07-09T17:43:00Z → 2025-07-09T17:43:00.000Z
-- [Upgrade to a new version](https://learn.microsoft.com/en-us/azure/redis/how-to-upgrade)
-  - Updated: 2026-04-01T06:12:00.000Z → 2026-05-11T08:00:00.000Z
-- [Planning FAQs](https://learn.microsoft.com/en-us/azure/redis/planning-faq)
-  - Updated: 2025-05-20T11:13:00Z → 2025-05-20T11:13:00.000Z
-- [Development FAQs](https://learn.microsoft.com/en-us/azure/redis/development-faq)
-  - Updated: 2026-02-01T12:13:00Z → 2026-02-01T12:13:00.000Z
-- [Development best practice](https://learn.microsoft.com/en-us/azure/redis/best-practices-development)
-  - Updated: 2026-04-06T22:10:00.000Z → 2026-05-15T05:53:00.000Z
 
 ## Classified Pages
 

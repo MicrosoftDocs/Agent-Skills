@@ -3,7 +3,7 @@ name: azure-boards
 description: Expert knowledge for Azure Boards development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when managing work items, backlogs, queries/charts, GitHub links, or Excel/Slack/Teams integrations, and other Azure Boards related development tasks. Not for Azure DevOps (use azure-devops), Azure Test Plans (use azure-test-plans), Azure Pipelines (use azure-pipelines), Azure Repos (use azure-repos).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-17"
+  generated_at: "2026-05-24"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Boards Skill
@@ -30,7 +30,7 @@ This skill requires **network access** to fetch documentation content:
 | Limits & Quotas | L59-L64 | Managing Azure Boards limits for test artifacts and work item attachments, including size/quantity constraints and how to restore deleted test-related items. |
 | Security | L65-L71 | Managing Azure Boards security: default permissions, configuring query/folder access, and setting access controls and policies for teams and users. |
 | Configuration | L72-L84 | Configuring Azure Boards processes, fields, and boards; integrating with GitHub; and using queries, charts, and work item field references for Agile/Scrum/CMMI tracking |
-| Integrations & Coding Patterns | L85-L95 | Connecting Azure Boards to external tools (Excel, GitHub, Copilot, Slack, Teams) and using WIQL, badges, and integrations to sync work items and development artifacts. |
+| Integrations & Coding Patterns | L85-L94 | Connecting Azure Boards to external tools (Excel, GitHub, Copilot, Slack, Teams) and using WIQL, badges, and integrations to sync work items and development artifacts. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -89,7 +89,6 @@ This skill requires **network access** to fetch documentation content:
 | Add Azure Boards status badges to GitHub repos | https://learn.microsoft.com/en-us/azure/devops/boards/github/configure-status-badges?view=azure-devops |
 | Integrate Azure Boards projects with GitHub repositories | https://learn.microsoft.com/en-us/azure/devops/boards/github/connect-to-github?view=azure-devops |
 | Integrate Azure Boards work items with GitHub artifacts | https://learn.microsoft.com/en-us/azure/devops/boards/github/link-to-from-github?view=azure-devops |
-| Integrate GitHub Copilot with Azure Boards work items | https://learn.microsoft.com/en-us/azure/devops/boards/github/work-item-integration-github-copilot?view=azure-devops |
 | Integrate Azure Boards with Slack channels | https://learn.microsoft.com/en-us/azure/devops/boards/integrations/boards-slack?view=azure-devops |
 | Use Azure Boards with Microsoft Teams channels | https://learn.microsoft.com/en-us/azure/devops/boards/integrations/boards-teams?view=azure-devops |
 | Use WIQL syntax for Azure Boards queries | https://learn.microsoft.com/en-us/azure/devops/boards/queries/wiql-syntax?view=azure-devops |

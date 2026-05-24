@@ -52,8 +52,8 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Servi
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 262
+- **Updated Pages**: 0
+- **Unchanged**: 263
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-event-grid/azure-event-grid.csv`
 
@@ -73,11 +73,6 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Servi
 | *(Unclassified)* | 83 | 31.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [FAQ](https://learn.microsoft.com/en-us/azure/event-grid/faq)
-  - Updated: 2026-01-22T19:36:00Z → 2026-01-22T19:36:00.000Z
 
 ## Classified Pages
 

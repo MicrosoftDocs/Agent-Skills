@@ -53,8 +53,8 @@ confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Central
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 96
+- **Updated Pages**: 0
+- **Unchanged**: 98
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-iot-edge/azure-iot-edge.csv`
 
@@ -74,13 +74,6 @@ confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Central
 | *(Unclassified)* | 33 | 33.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [IoT Edge agent and hub properties](https://learn.microsoft.com/en-us/azure/iot-edge/module-edgeagent-edgehub)
-  - Updated: 2026-03-04T08:00:00.000Z → 2026-05-13T22:11:00.000Z
-- [Limits and restrictions](https://learn.microsoft.com/en-us/azure/iot-edge/iot-edge-limits-and-restrictions)
-  - Updated: 2026-05-01T11:12:00.000Z → 2026-05-13T22:11:00.000Z
 
 ## Classified Pages
 

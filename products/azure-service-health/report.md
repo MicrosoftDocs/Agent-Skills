@@ -39,8 +39,8 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 44
+- **Updated Pages**: 0
+- **Unchanged**: 47
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-health/azure-service-health.csv`
 
@@ -56,15 +56,6 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 | *(Unclassified)* | 28 | 59.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [Resource Health FAQ](https://learn.microsoft.com/en-us/azure/service-health/resource-health-faq)
-  - Updated: 2026-01-15T23:08:00Z → 2026-01-15T23:08:00.000Z
-- [Service Health FAQ](https://learn.microsoft.com/en-us/azure/service-health/service-health-faq)
-  - Updated: 2026-04-24T22:11:00Z → 2026-04-24T22:11:00.000Z
-- [Azure Service Health Portal](https://learn.microsoft.com/en-us/azure/service-health/service-health-portal-update)
-  - Updated: 2026-03-25T08:00:00.000Z → 2026-05-12T08:00:00.000Z
 
 ## Classified Pages
 

@@ -46,8 +46,8 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 77
+- **Updated Pages**: 0
+- **Unchanged**: 79
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-static-web-apps/azure-static-web-apps.csv`
 
@@ -65,13 +65,6 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | *(Unclassified)* | 21 | 26.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [Frequently asked questions](https://learn.microsoft.com/en-us/azure/static-web-apps/faq)
-  - Updated: 2026-01-23T18:22:00Z → 2026-01-23T18:22:00.000Z
-- [Blazor](https://learn.microsoft.com/en-us/azure/static-web-apps/deploy-blazor)
-  - Updated: 2024-09-27T08:00:00.000Z → 2026-05-14T17:14:00.000Z
 
 ## Classified Pages
 

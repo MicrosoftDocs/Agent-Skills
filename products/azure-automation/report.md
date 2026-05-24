@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-05-03'
+generated_at: '2026-05-24'
 category_descriptions:
   security: 'Securing Automation accounts: identities (system/user-assigned), RBAC,
     auth methods, encryption, certificates/credentials, Private Link, Azure Policy,
     and Terraform-based secure provisioning.'
-  configuration: Configuring and running Azure Automation runbooks and DSC/State Configuration
-    at scale, including alerts, hybrid workers, schedules, source control, policies,
-    and package/runtime management.
+  configuration: Configuring Azure Automation runbooks, DSC/State Configuration, Hybrid
+    Runbook Workers, schedules, modules/packages, alerts, policies, and integrations
+    (VS Code, source control, ARM, Azure Monitor).
   deployment: Guides for deploying resilient Automation accounts, setting up disaster
     recovery, and installing/configuring Hybrid Runbook Workers (Windows/Linux, agent-
     and extension-based) plus DSC/Chocolatey CI/CD.
@@ -27,14 +27,14 @@ category_descriptions:
     and collecting logs for support.'
 skill_description: Expert knowledge for Azure Automation development including troubleshooting,
   best practices, decision making, limits & quotas, security, configuration, integrations
-  & coding patterns, and deployment. Use when managing runbooks/DSC, Hybrid Runbook
-  Workers, managed identities, webhooks/SendGrid, or AMA Change Tracking, and other
-  Azure Automation related development tasks. Not for Azure Functions (use azure-functions),
-  Azure Logic Apps (use azure-logic-apps), Azure Scheduler (use azure-scheduler),
-  Azure Update Manager (use azure-update-manager).
-use_when: Use when managing runbooks/DSC, Hybrid Runbook Workers, managed identities,
-  webhooks/SendGrid, or AMA Change Tracking, and other Azure Automation related development
-  tasks.
+  & coding patterns, and deployment. Use when building Azure Automation runbooks,
+  DSC/State Configuration, Hybrid Runbook Workers, Private Link, or AMA-based Change
+  Tracking, and other Azure Automation related development tasks. Not for Azure Functions
+  (use azure-functions), Azure Logic Apps (use azure-logic-apps), Azure Scheduler
+  (use azure-scheduler), Azure Update Manager (use azure-update-manager).
+use_when: Use when building Azure Automation runbooks, DSC/State Configuration, Hybrid
+  Runbook Workers, Private Link, or AMA-based Change Tracking, and other Azure Automation
+  related development tasks.
 confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic Apps
   (use azure-logic-apps), Azure Scheduler (use azure-scheduler), Azure Update Manager
   (use azure-update-manager).
@@ -51,8 +51,8 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 115
+- **Updated Pages**: 1
+- **Unchanged**: 114
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-automation/azure-automation.csv`
 
@@ -61,8 +61,8 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 | Type | Count | Percentage |
 |------|-------|------------|
 | best-practices | 6 | 5.2% |
-| configuration | 39 | 33.9% |
-| decision-making | 6 | 5.2% |
+| configuration | 40 | 34.8% |
+| decision-making | 5 | 4.3% |
 | deployment | 6 | 5.2% |
 | integrations | 9 | 7.8% |
 | limits-quotas | 3 | 2.6% |
@@ -71,6 +71,11 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 | *(Unclassified)* | 22 | 19.1% |
 
 ## Changes
+
+### Updated Pages
+
+- [Manage modules in Azure Automation](https://learn.microsoft.com/en-us/azure/automation/shared-resources/modules)
+  - Updated: 2026-04-15T08:00:00.000Z → 2026-05-18T08:00:00.000Z
 
 ## Classified Pages
 
@@ -139,6 +144,7 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 | [Start a runbook from a webhook](https://learn.microsoft.com/en-us/azure/automation/automation-webhooks) | integrations | 0.70 | Describes starting runbooks via HTTP webhooks from external services and references TLS 1.2+ client requirements, implying specific endpoint, security, and payload patterns for this integration. |
 | [Update Azure PowerShell modules](https://learn.microsoft.com/en-us/azure/automation/automation-update-azure-modules) | configuration | 0.70 | Describes managing default/global modules and the new runtime environment experience, implying specific module configuration behaviors and constraints unique to Azure Automation. |
 | [Use source control integration](https://learn.microsoft.com/en-us/azure/automation/source-control-integration) | configuration | 0.70 | Covers one-way sync setup with GitHub/Azure DevOps; likely includes specific configuration fields, connection settings, and schedules unique to Automation source control. |
+| [Manage modules in Azure Automation](https://learn.microsoft.com/en-us/azure/automation/shared-resources/modules) | configuration | 0.68 | Page describes detailed handling of PowerShell modules in Azure Automation (runbooks/DSC), including product-specific module management behavior and deprecation/migration details for AzureRM vs Az modules, which are not generic knowledge and map best to configuration of shared resources. |
 | [At scale using Azure portal - Machines blade (New)](https://learn.microsoft.com/en-us/azure/azure-change-tracking-inventory/enable-change-tracking-at-scale-machines-blade) | configuration | 0.65 | Portal-based scale enablement; likely includes specific configuration options, data sources, and parameter values for enabling the feature on many VMs. |
 | [Configure data at scale](https://learn.microsoft.com/en-us/azure/automation/automation-dsc-config-data-at-scale) | configuration | 0.65 | Focuses on configuring data at scale for State Configuration, likely including specific configuration patterns and structures. |
 | [Configure data based on STIG](https://learn.microsoft.com/en-us/azure/automation/automation-dsc-configuration-based-on-stig) | configuration | 0.65 | STIG-based configuration data for State Configuration implies detailed configuration structures and parameters unique to this feature. |
@@ -152,7 +158,6 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 | [Edit textual runbooks](https://learn.microsoft.com/en-us/azure/automation/automation-edit-textual-runbook) | configuration | 0.65 | Describes editor features like inserting cmdlets/assets/child runbooks and how they map to Automation resources; product-specific authoring configuration. |
 | [Get started with State Configuration](https://learn.microsoft.com/en-us/azure/automation/automation-dsc-getting-started) | configuration | 0.65 | A 'get started' article for State Configuration commonly walks through enabling features, setting node configurations, and assigning configurations to machines with specific parameter names and values. This is product-specific configuration guidance rather than generic DSC concepts. |
 | [Manage Office 365 services](https://learn.microsoft.com/en-us/azure/automation/manage-office-365) | integrations | 0.65 | Covers Automation integration with Office 365 via Entra ID; likely includes connection setup, permissions, and cmdlet usage specific to this integration. |
-| [Manage modules in Azure Automation](https://learn.microsoft.com/en-us/azure/automation/shared-resources/modules) | decision-making | 0.65 | Contains concrete deprecation and retirement dates for AzureRM modules and prescriptive guidance to migrate to Az modules, which informs upgrade and migration decisions specific to Azure Automation. |
 | [Migrate Run As account to managed identity](https://learn.microsoft.com/en-us/azure/automation/migrate-run-as-accounts-managed-identity) | decision-making | 0.65 | Migration-focused article with cadence, support timelines, and concrete guidance on when/how to move from Run As accounts to managed identities; fits decision-making around authentication model migration. |
 | [Migration from Log Analytics to Azure Monitoring Agent version](https://learn.microsoft.com/en-us/azure/automation/change-tracking/guidance-migration-log-analytics-monitoring-agent) | decision-making | 0.65 | Migration guidance between LA and AMA; likely includes comparison of behaviors, supported scenarios, and recommended migration paths, aiding technology selection and transition. |
 | [Monitor runbooks with metric alert](https://learn.microsoft.com/en-us/azure/automation/automation-alert-metric) | configuration | 0.65 | Describes setting up metric alerts based on runbook completion; likely includes metric names, dimensions, and threshold settings unique to Automation. |

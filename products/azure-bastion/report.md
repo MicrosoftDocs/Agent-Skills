@@ -46,8 +46,8 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 39
+- **Updated Pages**: 0
+- **Unchanged**: 40
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-bastion/azure-bastion.csv`
 
@@ -65,11 +65,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | *(Unclassified)* | 16 | 40.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [Copy and paste](https://learn.microsoft.com/en-us/azure/bastion/bastion-vm-copy-paste)
-  - Updated: 2024-04-04T08:00:00.000Z → 2026-05-13T22:11:00.000Z
 
 ## Classified Pages
 

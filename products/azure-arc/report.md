@@ -54,10 +54,10 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 - **Unclassified**: 150
 
 ### Incremental Update
-- **New Pages**: 12
-- **Updated Pages**: 10
-- **Unchanged**: 391
-- **Deleted Pages**: 24
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 413
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-arc/azure-arc.csv`
 
 ## Classification Statistics
@@ -76,68 +76,6 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | *(Unclassified)* | 150 | 36.3% |
 
 ## Changes
-
-### New Pages
-
-- [Enable local identity access](https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/howto-enable-local-identity-access)
-- [Create a solution with dependency](https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/solution-shared-adapter-dependency)
-- [SDK](https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/workload-orchestration-sdk)
-- [Diagnose edge logs](https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/diagnose-problems)
-- [Architecture](https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/architecture)
-- [Resource model](https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/resource-model)
-- [Configuration model](https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/configuration-model)
-- [Set up workload orchestration](https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/set-up-workload-orchestration)
-- [Deploy a basic solution](https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/solution-without-common-configuration)
-- [Deploy a solution with common configuration](https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/solution-with-common-configuration)
-- [Enable external validation](https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/external-validation)
-- [Git-based resource management](https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/workload-orchestration-multicluster-git)
-
-### Updated Pages
-
-- [FAQ](https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/faq)
-  - Updated: 2026-03-18T17:34:00Z → 2026-03-18T17:34:00.000Z
-- [Release notes](https://learn.microsoft.com/en-us/azure/azure-arc/data/release-notes)
-  - Updated: 2026-03-31T17:22:00.000Z → 2026-04-20T08:00:00.000Z
-- [Release version log](https://learn.microsoft.com/en-us/azure/azure-arc/data/version-log)
-  - Updated: 2026-02-27T23:07:00.000Z → 2026-05-11T22:11:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/azure-arc/data/faq)
-  - Updated: 2025-07-24T22:07:00Z → 2025-07-24T22:07:00.000Z
-- [Release notes](https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/release-notes)
-  - Updated: 2026-02-25T23:08:00.000Z → 2026-05-12T17:25:00.000Z
-- [What's new with Connected Machine agent?](https://learn.microsoft.com/en-us/azure/azure-arc/servers/agent-release-notes)
-  - Updated: 2026-04-28T22:11:00.000Z → 2026-05-14T11:09:00.000Z
-- [Onboard using scripts](https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/onboarding-scripts)
-  - Updated: 2026-04-12T11:04:00.000Z → 2026-05-13T11:03:00.000Z
-- [Delete resources](https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/delete-resources)
-  - Updated: 2026-04-12T11:04:00.000Z → 2026-05-13T11:03:00.000Z
-- [Release notes](https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/release-notes)
-  - Updated: 2026-04-12T11:04:00.000Z → 2026-05-13T11:03:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/overview)
-  - Updated: 2026-04-12T11:04:00.000Z → 2026-05-13T11:03:00.000Z
-
-### Deleted Pages
-
-- ~~Observability in Azure portal~~ (https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/azure-portal-monitoring)
-- ~~Clean-up script~~ (https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/clean-up-script)
-- ~~Configuration schema~~ (https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/configuring-schema)
-- ~~Configuration template~~ (https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/configuring-template)
-- ~~Diagnose edge-related errors~~ (https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/diagnose-problems)
-- ~~Enable external validation with Event Grid~~ (https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/external-validation)
-- ~~External validation payloads~~ (https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/external-validation-payload)
-- ~~Set up workload orchestration~~ (https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/initial-setup-configuration)
-- ~~Prepare the environment~~ (https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/initial-setup-environment)
-- ~~Migration script for GA~~ (https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/migration-script)
-- ~~Create multiple instances of a solution in the same K8s~~ (https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/quickstart-solution-multiple-instances-k8s)
-- ~~Create a solution with multiple shared adapter dependencies~~ (https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/quickstart-solution-multiple-shared-adapter-dependency)
-- ~~Create a solution with shared adapter dependency~~ (https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/quickstart-solution-shared-adapter-dependency)
-- ~~Create solution with common configurations~~ (https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/quickstart-solution-with-common-configuration)
-- ~~Create a basic solution~~ (https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/quickstart-solution-without-common-configuration)
-- ~~Upgrade a shared application~~ (https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/quickstart-upgrade-shared-application)
-- ~~Use service groups~~ (https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/service-group)
-- ~~Create a solution with a leaf target~~ (https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/tutorial-service-group-scenario-1)
-- ~~Create a solution with a non-leaf target~~ (https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/tutorial-service-group-scenario-2)
-- ~~Create a solution with shared dependencies at different levels~~ (https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/tutorial-service-group-scenario-3)
-- *...and 4 more*
 
 ## Classified Pages
 

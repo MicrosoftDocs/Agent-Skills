@@ -45,8 +45,8 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 123
+- **Updated Pages**: 0
+- **Unchanged**: 126
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-security/azure-security.csv`
 
@@ -63,15 +63,6 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | *(Unclassified)* | 71 | 56.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [Pen testing](https://learn.microsoft.com/en-us/azure/security/fundamentals/pen-testing)
-  - Updated: 2026-01-07T06:10:00.000Z → 2026-05-15T22:17:00.000Z
-- [Introduction to Azure security](https://learn.microsoft.com/en-us/azure/security/fundamentals/overview)
-  - Updated: 2026-05-05T08:00:00.000Z → 2026-05-15T08:00:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/security/fundamentals/customer-lockbox-faq)
-  - Updated: 2026-01-22T06:12:00Z → 2026-01-22T06:12:00.000Z
 
 ## Classified Pages
 

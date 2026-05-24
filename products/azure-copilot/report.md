@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-19'
+generated_at: '2026-05-24'
 category_descriptions:
   decision-making: 'Using Copilot to compare options and make cost‑efficient Azure
     decisions: VM sizing, workload templates, Marketplace offers, storage estate insights,
@@ -36,17 +36,17 @@ confusable_not_for: Not for Azure AI services (use microsoft-foundry-tools), Azu
 
 ## Summary
 
-- **Total Pages**: 39
-- **Fetched**: 39
+- **Total Pages**: 38
+- **Fetched**: 38
 - **Fetch Failed**: 0
-- **Classified**: 19
-- **Unclassified**: 20
+- **Classified**: 17
+- **Unclassified**: 21
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 39
-- **Deleted Pages**: 0
+- **Updated Pages**: 3
+- **Unchanged**: 35
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-copilot/azure-copilot.csv`
 
 ## Classification Statistics
@@ -55,13 +55,26 @@ confusable_not_for: Not for Azure AI services (use microsoft-foundry-tools), Azu
 |------|-------|------------|
 | architecture-patterns | 1 | 2.6% |
 | configuration | 1 | 2.6% |
-| decision-making | 5 | 12.8% |
-| integrations | 5 | 12.8% |
-| security | 5 | 12.8% |
-| troubleshooting | 2 | 5.1% |
-| *(Unclassified)* | 20 | 51.3% |
+| decision-making | 5 | 13.2% |
+| integrations | 3 | 7.9% |
+| security | 5 | 13.2% |
+| troubleshooting | 2 | 5.3% |
+| *(Unclassified)* | 21 | 55.3% |
 
 ## Changes
+
+### Updated Pages
+
+- [Execute commands](https://learn.microsoft.com/en-us/azure/copilot/execute-commands)
+  - Updated: 2025-11-18T16:11:00.000Z → 2026-05-18T22:10:00.000Z
+- [Generate Azure CLI scripts](https://learn.microsoft.com/en-us/azure/copilot/generate-cli-scripts)
+  - Updated: 2025-11-22T06:03:00.000Z → 2026-05-18T22:10:00.000Z
+- [Generate PowerShell scripts](https://learn.microsoft.com/en-us/azure/copilot/generate-powershell-scripts)
+  - Updated: 2025-11-24T08:00:00.000Z → 2026-05-18T22:10:00.000Z
+
+### Deleted Pages
+
+- ~~Use Azure Copilot with AI Shell~~ (https://learn.microsoft.com/en-us/azure/copilot/ai-shell-overview)
 
 ## Classified Pages
 
@@ -75,9 +88,7 @@ confusable_not_for: Not for Azure AI services (use microsoft-foundry-tools), Azu
 | [Author API Management policies](https://learn.microsoft.com/en-us/azure/copilot/author-api-management-policies) | integrations | 0.70 | Shows how to generate APIM policies from requirements; involves product-specific policy syntax and configuration patterns. |
 | [Deploy and manage VMs](https://learn.microsoft.com/en-us/azure/copilot/deploy-vms-effectively) | decision-making | 0.70 | Focuses on selecting right VM sizes and cost-saving options; likely includes product-specific recommendations and trade-offs for VM deployment decisions. |
 | [Discover Azure Marketplace solutions](https://learn.microsoft.com/en-us/azure/copilot/discover-marketplace) | decision-making | 0.70 | Guides users to select Marketplace offers based on described needs; supports technology selection decisions using product-specific search behavior. |
-| [Generate Azure CLI scripts](https://learn.microsoft.com/en-us/azure/copilot/generate-cli-scripts) | integrations | 0.70 | Focuses on generating CLI scripts with placeholders and commands specific to Azure; represents a coding/integration pattern for automating Azure via CLI. |
 | [Generate Kubernetes YAML files](https://learn.microsoft.com/en-us/azure/copilot/generate-kubernetes-yaml) | integrations | 0.70 | Covers generating and editing Kubernetes YAML for AKS with best practices; represents a concrete coding/config pattern for AKS integration. |
-| [Generate PowerShell scripts](https://learn.microsoft.com/en-us/azure/copilot/generate-powershell-scripts) | integrations | 0.70 | Provides patterns for generating Azure PowerShell scripts; product-specific cmdlet usage and script structure for integrating with Azure. |
 | [Manage and migrate storage accounts](https://learn.microsoft.com/en-us/azure/copilot/improve-storage-accounts) | security | 0.70 | Focuses on hardening security posture, data resiliency, and migration solutions for storage accounts; includes product-specific security and migration guidance. |
 | [Manage conversation storage](https://learn.microsoft.com/en-us/azure/copilot/bring-your-own-storage) | configuration | 0.70 | Explains how to use a tenant-managed Azure Cosmos DB instance for Azure Copilot conversation history. This is product-specific configuration, likely including required settings, resource types, and possibly parameter details for enabling 'bring your own storage'. |
 | [Query attack surface](https://learn.microsoft.com/en-us/azure/copilot/query-attack-surface) | security | 0.70 | Security-focused integration with Defender EASM and SCUs; includes product-specific security compute unit requirements and usage context. |
@@ -94,7 +105,6 @@ confusable_not_for: Not for Azure AI services (use microsoft-foundry-tools), Azu
 | [Troubleshooting](https://learn.microsoft.com/en-us/azure/copilot/troubleshooting-agent) | 0.35 | Troubleshooting agent page describes capabilities but does not enumerate specific error codes, log locations, or symptom→cause→solution mappings. |
 | [Work with AKS clusters](https://learn.microsoft.com/en-us/azure/copilot/work-aks-clusters) | 0.35 | AKS efficiency scenarios; summary does not show concrete configuration parameters, limits, or troubleshooting error mappings. |
 | [Deployment](https://learn.microsoft.com/en-us/azure/copilot/deployment-agent) | 0.30 | Describes deployment agent conceptually and references Well-Architected best practices but does not list concrete product-specific configs or numeric thresholds. |
-| [Execute commands](https://learn.microsoft.com/en-us/azure/copilot/execute-commands) | 0.30 | Describes executing commands via Copilot; no explicit configuration tables, limits, or troubleshooting mappings in the summary. |
 | [Get monitoring information](https://learn.microsoft.com/en-us/azure/copilot/get-monitoring-information) | 0.30 | Describes getting metrics/logs info; appears scenario-based without detailed configuration or numeric constraints. |
 | [Observability](https://learn.microsoft.com/en-us/azure/copilot/observability-agent) | 0.30 | Explains observability agent behavior at a high level; no specific error codes, configuration tables, or limits. |
 | [Optimization](https://learn.microsoft.com/en-us/azure/copilot/optimization-agent) | 0.30 | Optimization agent article is scenario/benefit focused; lacks concrete quotas, config parameters, or detailed troubleshooting flows. |
@@ -103,8 +113,10 @@ confusable_not_for: Not for Azure AI services (use microsoft-foundry-tools), Azu
 | [Work smarter with Azure Local](https://learn.microsoft.com/en-us/azure/copilot/work-smarter-edge) | 0.30 | Hybrid/edge scenarios overview; no explicit expert-level configuration or limits indicated. |
 | [Get resource information](https://learn.microsoft.com/en-us/azure/copilot/get-information-resource-graph) | 0.25 | Describes scenarios where Copilot helps with Azure Resource Graph; appears scenario-focused without detailed config tables or limits. |
 | [Understand service health](https://learn.microsoft.com/en-us/azure/copilot/understand-service-health) | 0.25 | Service health usage scenarios; no indication of specific configuration parameters, limits, or troubleshooting mappings. |
-| [Use Azure Copilot with AI Shell](https://learn.microsoft.com/en-us/azure/copilot/ai-shell-overview) | 0.25 | Overview of using Copilot via AI Shell; summary does not indicate detailed parameter tables or constraints beyond generic CLI usage. |
 | [Capabilities](https://learn.microsoft.com/en-us/azure/copilot/capabilities) | 0.20 | Capabilities overview and how to open Copilot; no detailed configs, limits, or troubleshooting content. |
+| [Execute commands](https://learn.microsoft.com/en-us/azure/copilot/execute-commands) | 0.20 | Scenario/overview page describing how Azure Copilot can execute commands via natural language; no detailed limits, configuration tables, error codes, or product-specific parameters. |
+| [Generate Azure CLI scripts](https://learn.microsoft.com/en-us/azure/copilot/generate-cli-scripts) | 0.20 | High-level description of using Azure Copilot to generate Azure CLI scripts with sample prompts; lacks numeric limits, configuration matrices, or detailed troubleshooting or security content. |
+| [Generate PowerShell scripts](https://learn.microsoft.com/en-us/azure/copilot/generate-powershell-scripts) | 0.20 | Similar to the CLI page but for PowerShell; focuses on scenarios and sample prompts without expert-level configuration details, limits, or diagnostic guidance. |
 | [Migration](https://learn.microsoft.com/en-us/azure/copilot/migration-agent) | 0.20 | Summary describes high-level capabilities of Azure Copilot migration agents (planning, assessing, strategizing, moving workloads, creating business cases and assessments, setting up landing zones) without exposing concrete limits, configuration parameters, error codes, or decision matrices. Content appears conceptual/marketing rather than detailed technical guidance, so no sub-skill type applies. |
 | [Overview](https://learn.microsoft.com/en-us/azure/copilot/agents-preview) | 0.20 | High-level overview of Agents (preview) in Azure Copilot describing capabilities and value; no concrete limits, configuration parameters, error codes, or decision matrices. |
 | [Write effective prompts](https://learn.microsoft.com/en-us/azure/copilot/write-effective-prompts) | 0.15 | Prompt engineering guidance is conceptual and broadly known; not specific to Azure Copilot configuration or limits. |

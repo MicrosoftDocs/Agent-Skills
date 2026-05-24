@@ -44,8 +44,8 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 5
-- **Unchanged**: 19
+- **Updated Pages**: 0
+- **Unchanged**: 24
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-nat-gateway/azure-nat-gateway.csv`
 
@@ -63,19 +63,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | *(Unclassified)* | 9 | 37.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [What is Azure NAT Gateway?](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-overview)
-  - Updated: 2026-04-30T22:22:00.000Z → 2026-05-15T08:00:00.000Z
-- [Azure NAT Gateway SKUs](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-sku)
-  - Updated: 2026-04-30T22:22:00.000Z → 2026-05-16T05:17:00.000Z
-- [Migrate Azure NAT Gateway to Standard V2](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-v2-migrate)
-  - Updated: 2026-04-30T22:22:00.000Z → 2026-05-16T05:17:00.000Z
-- [NAT gateway design guidance](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-design)
-  - Updated: 2025-11-18T17:01:00.000Z → 2026-05-15T08:00:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/nat-gateway/faq)
-  - Updated: 2026-04-16T17:19:00Z → 2026-04-16T17:19:00.000Z
 
 ## Classified Pages
 

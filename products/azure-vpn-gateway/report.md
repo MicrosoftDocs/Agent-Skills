@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-05-17'
+generated_at: '2026-05-24'
 category_descriptions:
   architecture-patterns: Design patterns and guidance for choosing VPN Gateway topologies,
     configuring active-active gateways, and building highly available, resilient site-to-site
     connectivity.
   decision-making: Guidance on choosing VPN Gateway SKUs, planning/migrating gateways
-    (Basic→Standard, Classic→ARM, SKU mapping), shifting P2S protocols (SSTP→IKEv2/OpenVPN),
-    and planning remote work P2S setups
+    and public IPs, and designing/transitioning P2S/remote access (SSTP to IKEv2/OpenVPN,
+    Classic to ARM) setups
   security: 'Securing Azure VPN Gateway: IPsec/IKE policies, forced tunneling, cert/RADIUS
     auth, Entra ID & MFA for P2S, client config (Win/macOS/Linux), access control,
     roles, and crypto best practices.'
@@ -30,15 +30,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure VPN Gateway development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  configuring S2S/P2S VPNs, BGP routing, IPsec/IKE policies, active-active gateways,
-  or NVA integrations, and other Azure VPN Gateway related development tasks. Not
-  for Azure Virtual Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan),
-  Azure ExpressRoute (use azure-expressroute), Azure Application Gateway (use azure-application-gateway).
-use_when: Use when configuring S2S/P2S VPNs, BGP routing, IPsec/IKE policies, active-active
-  gateways, or NVA integrations, and other Azure VPN Gateway related development tasks.
+  configuring S2S/P2S VPNs, BGP routing, IPsec/IKE policies, Entra ID/MFA auth, or
+  ExpressRoute VPNs, and other Azure VPN Gateway related development tasks. Not for
+  Azure Virtual Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan),
+  Azure ExpressRoute (use azure-expressroute), Azure NAT Gateway (use azure-nat-gateway).
+use_when: Use when configuring S2S/P2S VPNs, BGP routing, IPsec/IKE policies, Entra
+  ID/MFA auth, or ExpressRoute VPNs, and other Azure VPN Gateway related development
+  tasks.
 confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), Azure
   Virtual WAN (use azure-virtual-wan), Azure ExpressRoute (use azure-expressroute),
-  Azure Application Gateway (use azure-application-gateway).
+  Azure NAT Gateway (use azure-nat-gateway).
 ---
 # Azure VPN Gateway Crawl Report
 
@@ -51,10 +52,10 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 - **Unclassified**: 22
 
 ### Incremental Update
-- **New Pages**: 3
-- **Updated Pages**: 4
-- **Unchanged**: 118
-- **Deleted Pages**: 2
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 124
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-vpn-gateway/azure-vpn-gateway.csv`
 
 ## Classification Statistics
@@ -74,27 +75,10 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ## Changes
 
-### New Pages
-
-- [Device tunnel - Windows clients](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-always-on-device-tunnel)
-- [Device tunnel - macOS clients](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-always-on-device-tunnel-macos)
-- [User tunnel - Windows clients](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-always-on-user-tunnel)
-
 ### Updated Pages
 
-- [What's new?](https://learn.microsoft.com/en-us/azure/vpn-gateway/whats-new)
-  - Updated: 2026-05-08T22:13:00.000Z → 2026-05-12T17:16:00.000Z
-- [VPN Gateway FAQ](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-vpn-faq)
-  - Updated: 2025-09-09T08:00:00.000Z → 2026-05-13T08:00:00.000Z
-- [About gateway SKUs](https://learn.microsoft.com/en-us/azure/vpn-gateway/about-gateway-skus)
-  - Updated: 2025-09-09T22:10:00.000Z → 2026-05-14T08:00:00.000Z
-- [About gateway SKU consolidation & migration](https://learn.microsoft.com/en-us/azure/vpn-gateway/gateway-sku-consolidation)
-  - Updated: 2026-03-25T08:00:00.000Z → 2026-05-13T08:00:00.000Z
-
-### Deleted Pages
-
-- ~~Device tunnel~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-always-on-device-tunnel)
-- ~~User tunnel~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-always-on-user-tunnel)
+- [About Basic SKU public IP address migration](https://learn.microsoft.com/en-us/azure/vpn-gateway/basic-public-ip-migrate-about)
+  - Updated: 2026-05-01T17:27:00.000Z → 2026-05-20T22:22:00.000Z
 
 ## Classified Pages
 
@@ -175,7 +159,7 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [VPN Gateway FAQ](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-vpn-faq) | configuration | 0.70 | A detailed FAQ for VPN Gateway configuration is likely to contain product-specific settings, protocol combinations, and precise behavioral details (e.g., supported IPsec/IKE parameters, tunnel behaviors, and edge cases). These are configuration-focused expert details beyond generic VPN knowledge. |
 | [VPN over private peering](https://learn.microsoft.com/en-us/azure/vpn-gateway/site-to-site-vpn-private-peering) | integrations | 0.70 | Integration pattern combining VPN Gateway with ExpressRoute, including configuration constraints and supported scenarios. |
 | [What's new?](https://learn.microsoft.com/en-us/azure/vpn-gateway/whats-new) | troubleshooting | 0.70 | A 'what's new' page for a specific Azure service typically includes concrete bug fixes, known issues, and deprecations with product-specific behaviors and sometimes error conditions or edge cases that are not captured in general training data, fitting the troubleshooting pattern of symptom/issue → fix/change. |
-| [About Basic SKU public IP address migration](https://learn.microsoft.com/en-us/azure/vpn-gateway/basic-public-ip-migrate-about) | decision-making | 0.68 | The article is focused on migrating from Basic SKU public IP to Standard SKU for Azure VPN Gateway, with SKU-specific migration timelines and conditions. This is migration/upgrade guidance between SKUs, which fits the decision-making category (migration considerations and upgrade paths). It goes beyond a conceptual overview by giving product- and SKU-specific migration guidance, but it is not primarily about limits, configuration tables, or troubleshooting. |
+| [About Basic SKU public IP address migration](https://learn.microsoft.com/en-us/azure/vpn-gateway/basic-public-ip-migrate-about) | decision-making | 0.68 | Page focuses on how and when to migrate VPN Gateway public IPs from Basic to Standard SKU, including SKU-specific migration timelines and conditions. This is migration/upgrade guidance between SKUs, which fits decision-making. It goes beyond a generic overview by giving product-specific migration considerations, but does not primarily list numeric limits, configs, or error codes. |
 | [Install VPN client certificates](https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-how-to-vpn-client-install-azure-cert) | configuration | 0.68 | Details OS-specific certificate import steps and required certificate stores/locations for Azure P2S client authentication. |
 | [About active-active mode gateways](https://learn.microsoft.com/en-us/azure/vpn-gateway/about-active-active-gateways) | architecture-patterns | 0.65 | Explains when and how to use active-active mode, including design benefits and trade-offs specific to VPN Gateway. |
 | [Add or remove a site-to-site connection](https://learn.microsoft.com/en-us/azure/vpn-gateway/add-remove-site-to-site-connections) | configuration | 0.65 | Describes how to manage multiple S2S connections, including limitations and prerequisites specific to VPN Gateway. |

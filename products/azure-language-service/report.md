@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 5
-- **Unchanged**: 194
+- **Updated Pages**: 0
+- **Unchanged**: 199
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-language-service/azure-language-service.csv`
 
@@ -76,19 +76,6 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | *(Unclassified)* | 92 | 46.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [Create a fine-tuning task project](https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/how-to/create-project)
-  - Updated: 2025-11-18T15:37:00.000Z → 2026-05-15T17:11:00.000Z
-- [Create, test, and deploy a knowledge base](https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/how-to/create-test-deploy)
-  - Updated: 2026-04-21T22:14:00.000Z → 2026-05-15T17:11:00.000Z
-- [Deploy a CQA agent](https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/how-to/deploy-agent)
-  - Updated: 2025-11-18T15:37:00.000Z → 2026-05-15T17:11:00.000Z
-- [Configure your environment and Azure resources](https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/how-to/configure-azure-resources)
-  - Updated: 2025-11-18T15:37:00.000Z → 2026-05-15T17:11:00.000Z
-- [Configure Azure resources](https://learn.microsoft.com/en-us/azure/ai-services/language-service/concepts/configure-azure-resources)
-  - Updated: 2025-11-18T15:37:00.000Z → 2026-05-15T17:11:00.000Z
 
 ## Classified Pages
 

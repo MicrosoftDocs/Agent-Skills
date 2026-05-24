@@ -3,7 +3,7 @@ name: azure-cognitive-search
 description: Expert knowledge for Azure AI Search development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing indexes, indexers, skillsets, vectors, semantic ranking, or secure RAG architectures, and other Azure AI Search related development tasks. Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Database (use azure-sql-database), Azure Table Storage (use azure-table-storage), Azure Data Explorer (use azure-data-explorer).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-17"
+  generated_at: "2026-05-24"
   generator: "docs2skills/1.0.0"
 ---
 # Azure AI Search Skill
@@ -31,8 +31,8 @@ This skill requires **network access** to fetch documentation content:
 | Limits & Quotas | L91-L99 | Limits, quotas, and scheduling for Azure AI Search: billing/free enrichment, service and index count limits by tier, vector index size constraints, and indexer run windows. |
 | Security | L100-L140 | Securing Azure AI Search: RBAC/keyless auth, keys, encryption, network isolation, private endpoints, indexer access to data sources, ACL/Purview-based filtering, and policy/compliance settings. |
 | Configuration | L141-L232 | Configuring Azure AI Search for agentic retrieval: knowledge bases, data sources, indexers, enrichment skillsets, analyzers, vectors, semantic ranking, monitoring, and billing settings. |
-| Integrations & Coding Patterns | L233-L288 | Patterns and code for integrating Azure AI Search with data sources, vectorization, OData/Lucene queries, semantic ranking, custom skills, and knowledge stores across SDKs and REST. |
-| Deployment | L289-L296 | Deploying and moving Azure AI Search services with ARM/Bicep/Terraform, plus guidance on cross-region moves and checking regional feature and SKU availability. |
+| Integrations & Coding Patterns | L233-L287 | Patterns and code for integrating Azure AI Search with data sources, vectorization, OData/Lucene queries, semantic ranking, custom skills, and knowledge stores across SDKs and REST. |
+| Deployment | L288-L295 | Deploying and moving Azure AI Search services with ARM/Bicep/Terraform, plus guidance on cross-region moves and checking regional feature and SKU availability. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -239,7 +239,6 @@ This skill requires **network access** to fetch documentation content:
 | Implement Azure AI Search custom skill with Bing Entity Search | https://learn.microsoft.com/en-us/azure/search/cognitive-search-create-custom-skill-example |
 | Implement custom skill interface for Azure AI Search enrichment | https://learn.microsoft.com/en-us/azure/search/cognitive-search-custom-skill-interface |
 | Implement Custom Web API skill for enrichment | https://learn.microsoft.com/en-us/azure/search/cognitive-search-custom-skill-web-api |
-| Build hybrid keyword and vector queries in Azure AI Search | https://learn.microsoft.com/en-us/azure/search/hybrid-search-how-to-query |
 | Connect Azure AI Search knowledge stores to Power BI | https://learn.microsoft.com/en-us/azure/search/knowledge-store-connect-power-bi |
 | Create Azure AI Search knowledge stores via REST APIs | https://learn.microsoft.com/en-us/azure/search/knowledge-store-create-rest |
 | Implement complex projection shapes for knowledge stores | https://learn.microsoft.com/en-us/azure/search/knowledge-store-projection-example-long |

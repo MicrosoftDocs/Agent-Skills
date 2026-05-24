@@ -35,8 +35,8 @@ confusable_not_for: Not for Azure AI Anomaly Detector (use azure-anomaly-detecto
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 18
+- **Updated Pages**: 0
+- **Unchanged**: 19
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-metrics-advisor/azure-metrics-advisor.csv`
 
@@ -51,11 +51,6 @@ confusable_not_for: Not for Azure AI Anomaly Detector (use azure-anomaly-detecto
 | *(Unclassified)* | 13 | 68.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [Metrics Advisor FAQ](https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/faq)
-  - Updated: 2025-11-18T19:04:00Z → 2026-05-12T11:11:00.000Z
 
 ## Classified Pages
 

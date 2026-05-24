@@ -1,13 +1,14 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-05-24'
 category_descriptions:
   security: Managing access to Azure Table data using Microsoft Entra ID and Azure
     RBAC, including assigning roles and configuring identity-based authorization.
   configuration: 'Configuring Azure Table Storage monitoring: enabling metrics and
     logs, understanding available telemetry, and setting up alerts for performance,
     availability, and diagnostics.'
-  limits-quotas: Scalability limits, throughput targets, partition/key design, and
-    performance best practices for Azure Table storage workloads.
+  limits-quotas: Scalability limits, throughput targets, and performance constraints
+    for Azure Table Storage, including partition key design, request rates, and capacity
+    planning.
   best-practices: Guidance on designing scalable table schemas, partition/row key
     strategies, throughput optimization, and performance tuning patterns for Azure
     Table storage.
@@ -18,14 +19,14 @@ category_descriptions:
     insert/query/update/delete entities, and script common data operations.'
 skill_description: Expert knowledge for Azure Table Storage development including
   best practices, architecture & design patterns, limits & quotas, security, configuration,
-  and integrations & coding patterns. Use when managing Entra ID/RBAC access, monitoring
-  metrics/logs, tuning partitions/keys, or scripting tables via PowerShell, and other
+  and integrations & coding patterns. Use when designing partition/row keys, tuning
+  throughput, configuring metrics/logs, or scripting tables via PowerShell, and other
   Azure Table Storage related development tasks. Not for Azure Cosmos DB (use azure-cosmos-db),
   Azure Blob Storage (use azure-blob-storage), Azure Queue Storage (use azure-queue-storage),
   Azure Files (use azure-files).
-use_when: Use when managing Entra ID/RBAC access, monitoring metrics/logs, tuning
-  partitions/keys, or scripting tables via PowerShell, and other Azure Table Storage
-  related development tasks.
+use_when: Use when designing partition/row keys, tuning throughput, configuring metrics/logs,
+  or scripting tables via PowerShell, and other Azure Table Storage related development
+  tasks.
 confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure Blob Storage
   (use azure-blob-storage), Azure Queue Storage (use azure-queue-storage), Azure Files
   (use azure-files).
@@ -42,8 +43,8 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure Blob St
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 15
+- **Updated Pages**: 1
+- **Unchanged**: 14
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-table-storage/azure-table-storage.csv`
 
@@ -61,11 +62,16 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure Blob St
 
 ## Changes
 
+### Updated Pages
+
+- [Table storage](https://learn.microsoft.com/en-us/azure/storage/tables/scalability-targets)
+  - Updated: 2023-08-25T21:58:00.000Z → 2025-07-02T22:09:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
-| [Table storage](https://learn.microsoft.com/en-us/azure/storage/tables/scalability-targets) | limits-quotas | 0.95 | Explicit scalability and performance targets (request rates, bandwidth, capacity) with concrete numeric limits; matches limits-quotas criteria. |
+| [Table storage](https://learn.microsoft.com/en-us/azure/storage/tables/scalability-targets) | limits-quotas | 0.95 | Page documents specific scalability and performance targets for Azure Table storage, including exact request rate, bandwidth, and partition/account-level limits that are not generally known from training data. |
 | [Manage access rights with Azure RBAC](https://learn.microsoft.com/en-us/azure/storage/tables/assign-azure-role-data-access) | security | 0.90 | Details assigning built-in and custom Azure roles for table data, including specific RBAC role names and scopes; matches security criteria. |
 | [Authenticate and authorize with Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/storage/tables/authorize-access-azure-active-directory) | security | 0.85 | Covers Entra ID authorization for table data, including Azure RBAC usage and likely specific role/permission scopes; matches security criteria. |
 | [Table design patterns](https://learn.microsoft.com/en-us/azure/storage/tables/table-storage-design-patterns) | architecture-patterns | 0.85 | Explicit catalog of patterns and anti-patterns for Table service with trade-offs; strongly aligned with architecture-patterns. |

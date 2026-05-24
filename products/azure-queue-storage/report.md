@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-05-24'
 category_descriptions:
   security: Using Entra ID/RBAC/ABAC for queue data access, configuring auth in CLI/Portal/PowerShell,
     client-side encryption, and migrating Queue apps to passwordless authentication
@@ -8,21 +8,21 @@ category_descriptions:
     monitoring data fields.
   best-practices: 'Monitoring, securing, and tuning Azure Queue Storage: metrics/logging,
     alerts, encryption, access control, and performance/scalability patterns and checklists.'
-  limits-quotas: Queue throughput, scalability targets, and limits on queue size,
-    message size, and capacity planning for Azure Queue Storage
+  limits-quotas: Scalability and size limits for Azure Queue Storage, including max
+    queues/messages, throughput, message size, and total storage constraints.
   integrations: Client library how-tos for using Azure Queue Storage with .NET, Java,
     JavaScript, Python, and PowerShell, including setup, auth, CRUD operations, and
     common coding patterns.
 skill_description: Expert knowledge for Azure Queue Storage development including
   best practices, limits & quotas, security, configuration, and integrations & coding
-  patterns. Use when managing queue auth (Entra ID/RBAC), monitoring metrics/logs,
-  tuning throughput/limits, or coding with SDKs, and other Azure Queue Storage related
+  patterns. Use when using queue client SDKs, Entra ID auth, client-side encryption,
+  monitoring metrics/logs, or scaling queues, and other Azure Queue Storage related
   development tasks. Not for Azure Blob Storage (use azure-blob-storage), Azure Table
   Storage (use azure-table-storage), Azure Service Bus (use azure-service-bus), Azure
   Event Hubs (use azure-event-hubs).
-use_when: Use when managing queue auth (Entra ID/RBAC), monitoring metrics/logs, tuning
-  throughput/limits, or coding with SDKs, and other Azure Queue Storage related development
-  tasks.
+use_when: Use when using queue client SDKs, Entra ID auth, client-side encryption,
+  monitoring metrics/logs, or scaling queues, and other Azure Queue Storage related
+  development tasks.
 confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure Table
   Storage (use azure-table-storage), Azure Service Bus (use azure-service-bus), Azure
   Event Hubs (use azure-event-hubs).
@@ -39,8 +39,8 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure T
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 24
+- **Updated Pages**: 1
+- **Unchanged**: 23
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-queue-storage/azure-queue-storage.csv`
 
@@ -57,11 +57,16 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure T
 
 ## Changes
 
+### Updated Pages
+
+- [Queue storage](https://learn.microsoft.com/en-us/azure/storage/queues/scalability-targets)
+  - Updated: 2023-04-03T00:00:00.000Z → 2025-07-02T22:09:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
-| [Queue storage](https://learn.microsoft.com/en-us/azure/storage/queues/scalability-targets) | limits-quotas | 0.95 | Reference page of specific throughput, bandwidth, and scalability limits (requests/sec, ingress/egress caps, etc.) for Queue Storage; classic limits/quotas content. |
+| [Queue storage](https://learn.microsoft.com/en-us/azure/storage/queues/scalability-targets) | limits-quotas | 0.95 | This page documents precise scalability and performance targets for Azure Queue Storage (for example, maximum requests per second, bandwidth per storage account, and other numeric throughput constraints). These are product-specific limits and quotas that depend on tiers and are unlikely to be fully known from training data, matching the limits-quotas sub-skill definition. |
 | [Actions and attributes for conditions](https://learn.microsoft.com/en-us/azure/storage/queues/queues-auth-abac-attributes) | security | 0.90 | Reference for supported DataActions and attribute dictionaries for Queue Storage role assignment conditions; includes specific action names and attribute keys. |
 | [Example conditions](https://learn.microsoft.com/en-us/azure/storage/queues/queues-auth-abac-examples) | security | 0.90 | Provides concrete example expressions for role assignment conditions using request/resource/principal attributes, which are product-specific security patterns. |
 | [Manage access rights with Azure RBAC](https://learn.microsoft.com/en-us/azure/storage/queues/assign-azure-role-data-access) | security | 0.90 | Covers assigning built-in/custom Azure roles for Queue Storage, including specific role names and their permissions over queue data. |

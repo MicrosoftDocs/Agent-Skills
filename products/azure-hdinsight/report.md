@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-17'
+generated_at: '2026-05-24'
 category_descriptions:
   configuration: 'Configuring and tuning HDInsight clusters: networking/VPN, Ambari/Hive/Spark/HBase
     settings, autoscale, monitoring/logging, SSH/Jupyter/VS Code access, and script-based
@@ -22,23 +22,22 @@ category_descriptions:
   security: 'Securing HDInsight clusters: identity and access (Entra, LDAP, Ranger,
     RBAC), network isolation (NSG, Private Link), TLS/encryption, Kafka/Hive/Spark
     security, and security best practices.'
-  decision-making: 'Planning and migration guidance for HDInsight: sizing and performance,
-    choosing storage/VMs/tools, upgrading versions/components, and moving Hadoop,
-    HBase, Kafka, and configs to newer clusters.'
+  decision-making: 'Planning and migration guidance for HDInsight: cluster sizing,
+    storage and VM selection, HBase/Kafka upgrades, version moves, and retiring or
+    reconfiguring existing deployments.'
   limits-quotas: HDInsight capacity limits, node configs, Kafka-specific limits, metastore
     constraints, log sizing/retention, and how to request/manage CPU core quota increases.
 skill_description: Expert knowledge for Azure HDInsight development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  working with HDInsight Spark/Hive/Kafka/HBase, Ambari/Oozie pipelines, autoscale,
-  or secure VNet/private access, and other Azure HDInsight related development tasks.
-  Not for Azure Databricks (use azure-databricks), Azure Synapse Analytics (use azure-synapse-analytics),
-  Azure Stream Analytics (use azure-stream-analytics).
-use_when: Use when working with HDInsight Spark/Hive/Kafka/HBase, Ambari/Oozie pipelines,
-  autoscale, or secure VNet/private access, and other Azure HDInsight related development
-  tasks.
+  building Hive/Spark/Kafka/HBase jobs, tuning clusters, securing access, or integrating
+  SQL, Cosmos DB, or Synapse, and other Azure HDInsight related development tasks.
+  Not for Azure Databricks (use azure-databricks), Azure Synapse Analytics (use azure-synapse-analytics).
+use_when: Use when building Hive/Spark/Kafka/HBase jobs, tuning clusters, securing
+  access, or integrating SQL, Cosmos DB, or Synapse, and other Azure HDInsight related
+  development tasks.
 confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synapse
-  Analytics (use azure-synapse-analytics), Azure Stream Analytics (use azure-stream-analytics).
+  Analytics (use azure-synapse-analytics).
 ---
 # Azure HDInsight Crawl Report
 
@@ -52,8 +51,8 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 424
+- **Updated Pages**: 1
+- **Unchanged**: 425
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-hdinsight/azure-hdinsight.csv`
 
@@ -76,10 +75,8 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 
 ### Updated Pages
 
-- [Frequently asked questions (FAQ)](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-faq)
-  - Updated: 2025-03-26T17:06:00Z → 2025-03-26T17:06:00.000Z
-- [Kafka FAQ](https://learn.microsoft.com/en-us/azure/hdinsight/kafka/kafka-faq)
-  - Updated: 2025-03-26T17:06:00Z → 2025-03-26T17:06:00.000Z
+- [HDInsight retirements and action required](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-component-retirements-and-action-required)
+  - Updated: 2026-03-23T17:14:00.000Z → 2026-05-21T17:14:00.000Z
 
 ## Classified Pages
 
@@ -286,7 +283,7 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 | [Enterprise Security Package](https://learn.microsoft.com/en-us/azure/hdinsight/enterprise-security-package) | security | 0.70 | Describes ESP components, AD integration, and security behavior; includes product-specific security configuration patterns and constraints. |
 | [Enterprise security general guidelines](https://learn.microsoft.com/en-us/azure/hdinsight/domain-joined/general-guidelines) | best-practices | 0.70 | Explicitly labeled general guidelines and best practices for ESP deployment and management; includes concrete recommendations specific to HDInsight security. |
 | [Frequently asked questions (FAQ)](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-faq) | limits-quotas | 0.70 | The FAQ includes concrete, product-specific details such as maximum cluster lifetimes, supported region constraints, version support windows, and other numeric or tightly scoped behavioral limits that are not generic knowledge. These are effectively limits/constraints documentation surfaced via Q&A rather than a formal limits page. |
-| [HDInsight retirements and action required](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-component-retirements-and-action-required) | decision-making | 0.70 | Lists specific HDInsight cluster and component versions with their retirement timelines and required migration actions. This is time-sensitive, product-specific information not inferable from general training data and is used to decide when and how to migrate off deprecated versions. |
+| [HDInsight retirements and action required](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-component-retirements-and-action-required) | decision-making | 0.70 | Page lists specific HDInsight cluster and component versions with announced retirement timelines and required migration actions. This is expert, time-sensitive product knowledge used to decide when and how to migrate off deprecated versions, fitting decision-making around version/support lifecycle. |
 | [HDInsight version 4.0](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-40-component-versioning) | configuration | 0.70 | Provides detailed component-version mapping for HDInsight 4.0, which is precise reference configuration information. |
 | [HDInsight version 5.x](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-5x-component-versioning) | configuration | 0.70 | Similar to 4.0 article; contains specific component version tables that are expert reference data. |
 | [HDInsight versions](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-component-versioning) | configuration | 0.70 | Lists specific OSS components and their versions; version matrices are expert configuration/reference data not generally known. |

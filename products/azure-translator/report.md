@@ -50,8 +50,8 @@ confusable_not_for: Not for Azure AI Language (use azure-language-service), Azur
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 123
+- **Updated Pages**: 0
+- **Unchanged**: 125
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-translator/azure-translator.csv`
 
@@ -70,13 +70,6 @@ confusable_not_for: Not for Azure AI Language (use azure-language-service), Azur
 | *(Unclassified)* | 50 | 40.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [Translator container FAQ](https://learn.microsoft.com/en-us/azure/ai-services/translator/containers/faq)
-  - Updated: 2025-11-18T15:37:00Z → 2025-11-18T15:37:00.000Z
-- [Translator Pro FAQ](https://learn.microsoft.com/en-us/azure/ai-services/translator/solutions/translator-pro/faq)
-  - Updated: 2026-03-19T06:06:00Z → 2026-03-19T06:06:00.000Z
 
 ## Classified Pages
 

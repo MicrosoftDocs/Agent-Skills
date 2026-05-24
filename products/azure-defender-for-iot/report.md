@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-17'
+generated_at: '2026-05-24'
 category_descriptions:
   security: Security alerts, recommendations, roles, auth, and certificates for Defender
     for IoT/IoT Hub/OT sensors, including RBAC, SSO, PAM auditing, and Zero Trust
@@ -16,9 +16,9 @@ category_descriptions:
   integrations: Integrating Defender for IoT with SIEMs, firewalls, ServiceNow, Sentinel,
     and partner tools, plus APIs, micro agent provisioning, traffic mirroring, and
     automation patterns.
-  troubleshooting: Troubleshooting Defender for IoT micro agents and OT sensors, validating
-    sensor installs, interpreting sensor health messages, and understanding built‑in
-    sensor alert types.
+  troubleshooting: Diagnosing and fixing Defender for IoT micro agent and OT sensor
+    issues, validating sensor installs, interpreting sensor health messages, and understanding
+    built-in alert types.
   deployment: Hardware/VM requirements and step-by-step guides to deploy, configure,
     mirror traffic, back up, restore, and update Defender for IoT OT sensor appliances
     and VMs.
@@ -32,15 +32,16 @@ skill_description: Expert knowledge for Azure Defender For Iot development inclu
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
   Use when deploying OT sensors, configuring micro agents, mirroring OT traffic, integrating
-  with SIEM/Sentinel, or tuning alerts, and other Azure Defender For Iot related development
-  tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure IoT
-  (use azure-iot), Azure IoT Hub (use azure-iot-hub), Azure Security (use azure-security).
+  with SIEM/Sentinel, or managing alerts, and other Azure Defender For Iot related
+  development tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud),
+  Azure Security (use azure-security), Azure External Attack Surface Management (use
+  azure-external-attack-surface-management), Azure IoT (use azure-iot).
 use_when: Use when deploying OT sensors, configuring micro agents, mirroring OT traffic,
-  integrating with SIEM/Sentinel, or tuning alerts, and other Azure Defender For Iot
-  related development tasks.
+  integrating with SIEM/Sentinel, or managing alerts, and other Azure Defender For
+  Iot related development tasks.
 confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-cloud),
-  Azure IoT (use azure-iot), Azure IoT Hub (use azure-iot-hub), Azure Security (use
-  azure-security).
+  Azure Security (use azure-security), Azure External Attack Surface Management (use
+  azure-external-attack-surface-management), Azure IoT (use azure-iot).
 ---
 # Azure Defender For Iot Crawl Report
 
@@ -54,8 +55,8 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 177
+- **Updated Pages**: 1
+- **Unchanged**: 179
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-defender-for-iot/azure-defender-for-iot.csv`
 
@@ -78,12 +79,8 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 
 ### Updated Pages
 
-- [What's new?](https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/release-notes)
-  - Updated: 2026-04-28T17:57:00.000Z → 2026-05-12T22:43:00.000Z
-- [Defender for IoT and your SOC](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/concept-sentinel-integration)
-  - Updated: 2026-04-28T17:57:00.000Z → 2026-05-12T22:43:00.000Z
-- [Securing enterprise IoT devices](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/concept-enterprise)
-  - Updated: 2026-04-28T17:57:00.000Z → 2026-05-12T22:43:00.000Z
+- [Alert reference](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/alert-engine-messages)
+  - Updated: 2026-04-28T17:57:00.000Z → 2026-05-20T07:34:00.000Z
 
 ## Classified Pages
 
@@ -97,7 +94,6 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | [Inventory management](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/api/sensor-inventory-apis) | integrations | 0.85 | Device inventory management API reference; includes specific REST endpoints and parameters for inventory operations, fitting integrations & coding patterns. |
 | [Troubleshoot OT sensors](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-troubleshoot-sensor) | troubleshooting | 0.85 | Dedicated troubleshooting article; likely organized by symptoms and includes specific diagnostic commands, logs, and resolutions unique to the sensor. |
 | [Vulnerability management](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/api/sensor-vulnerability-apis) | integrations | 0.85 | Vulnerability management API reference; defines endpoints and response fields that mirror sensor vulnerability reports, a product-specific integration surface. |
-| [Alert reference](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/alert-engine-messages) | troubleshooting | 0.80 | Alert reference with alert IDs/types and learnable status; used for mapping alerts to playbooks and rules, containing detailed, product-specific alert semantics. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/manage-users-portal) | security | 0.80 | Focuses on user permissions with Azure RBAC; likely lists specific built-in roles and scopes unique to Defender for IoT. |
 | [Configure PAM to audit sign-in events](https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/configure-pam-to-audit-sign-in-events) | security | 0.80 | Provides a sample PAM configuration for auditing SSH/Telnet/terminal sign-ins on specific Ubuntu versions, including concrete security configuration snippets. |
 | [Configure SNMP monitoring](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-set-up-snmp-mib-monitoring) | configuration | 0.80 | Includes SNMP polling rate (50 times/second), port 161, and likely specific OIDs/MIB usage; these are concrete configuration and limit details. |
@@ -121,6 +117,7 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | [Sensor health message reference](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/sensor-health-messages) | troubleshooting | 0.80 | A reference of sensor health messages for the portal; likely lists specific message texts and meanings, forming a symptom-to-diagnosis mapping unique to Defender for IoT. |
 | [Which appliances do I need?](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/ot-appliance-sizing) | decision-making | 0.80 | Helps choose between physical and virtual appliances and hardware profiles based on monitoring needs; product-specific sizing and appliance selection guidance. |
 | [Working with Defender for IoT APIs](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/references-work-with-defender-for-iot-apis) | integrations | 0.80 | Public API reference for Defender for IoT; will include endpoints, parameters, and request/response schemas, which are product-specific integration details. |
+| [Alert reference](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/alert-engine-messages) | troubleshooting | 0.78 | Page is a detailed reference of all Defender for IoT network sensor alerts, including specific alert names, categories, and learnable/triage status. These alert definitions and classifications are product-specific expert knowledge used for mapping alerts to playbooks and forwarding rules, fitting the troubleshooting category as they map symptoms (alerts) to meanings and handling guidance. |
 | [CyberArk](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/tutorial-cyberark) | integrations | 0.78 | Integration tutorial; expected to contain CyberArk-specific configuration fields, API endpoints, and Defender for IoT connector settings. |
 | [Forescout](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/tutorial-forescout) | integrations | 0.78 | Describes integration with Forescout; likely includes connector configuration parameters, event formats, and product-specific settings. |
 | [Fortinet](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/tutorial-fortinet) | integrations | 0.78 | Integration with Fortinet; expected to detail configuration of blocking actions, connector parameters, and communication settings unique to this pairing. |

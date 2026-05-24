@@ -44,8 +44,8 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 16
-- **Unchanged**: 89
+- **Updated Pages**: 0
+- **Unchanged**: 105
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-partner-solutions/azure-partner-solutions.csv`
 
@@ -62,41 +62,6 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 | *(Unclassified)* | 72 | 68.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/new-relic/faq)
-  - Updated: 2026-04-19T17:12:00Z → 2026-04-19T17:12:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/nginx/faq)
-  - Updated: 2026-03-17T22:33:00Z → 2026-03-17T22:33:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/palo-alto/faq)
-  - Updated: 2026-03-17T22:33:00Z → 2026-03-17T22:33:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/pure-storage/faq)
-  - Updated: 2026-01-07T06:10:00Z → 2026-01-07T06:10:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/qumulo/faq)
-  - Updated: 2025-05-29T22:04:00Z → 2025-05-29T22:04:00.000Z
-- [Frequently asked questions](https://learn.microsoft.com/en-us/azure/partner-solutions/faq)
-  - Updated: 2025-08-06T11:14:00Z → 2025-08-06T11:14:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/faq)
-  - Updated: 2026-03-17T22:33:00Z → 2026-03-17T22:33:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/arize-ai/faq)
-  - Updated: 2026-02-13T06:11:00Z → 2026-02-13T06:11:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/astronomer/faq)
-  - Updated: 2026-03-17T22:33:00Z → 2026-03-17T22:33:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/datadog/faq)
-  - Updated: 2026-03-17T22:33:00Z → 2026-03-17T22:33:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/dell/faq)
-  - Updated: 2026-03-30T20:20:00Z → 2026-03-30T20:20:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/dynatrace/faq)
-  - Updated: 2026-03-17T22:33:00Z → 2026-03-17T22:33:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/elastic/faq)
-  - Updated: 2026-03-17T22:33:00Z → 2026-03-17T22:33:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/informatica/faq)
-  - Updated: 2026-03-17T22:33:00Z → 2026-03-17T22:33:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/lambda-test/faq)
-  - Updated: 2026-02-13T06:11:00Z → 2026-02-13T06:11:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/mongo-db/faq)
-  - Updated: 2026-03-17T22:33:00Z → 2026-03-17T22:33:00.000Z
 
 ## Classified Pages
 

@@ -1,9 +1,9 @@
 ---
 name: azure-data-api-builder
-description: Expert knowledge for Azure Data Api Builder development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when exposing SQL/Cosmos via DAB REST/GraphQL, tuning auth/RLS, timeouts/limits, or deploying SQL MCP Server, and other Azure Data Api Builder related development tasks. Not for Azure API Management (use azure-api-management), Azure Functions (use azure-functions), Azure App Service (use azure-app-service), Azure Logic Apps (use azure-logic-apps).
+description: Expert knowledge for Azure Data Api Builder development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when exposing SQL/Cosmos via REST/GraphQL, tuning filters/pagination, configuring JWT/Entra auth, or deploying DAB, and other Azure Data Api Builder related development tasks. Not for Azure App Service (use azure-app-service), Azure Functions (use azure-functions), Azure API Management (use azure-api-management), Azure Logic Apps (use azure-logic-apps).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-17"
+  generated_at: "2026-05-24"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Data Api Builder Skill
@@ -24,7 +24,7 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L36-L48 | Diagnosing and fixing DAB issues: config/CLI errors, REST/CORS, GraphQL/authorization, SQL MCP, and database-specific problems for SQL Server, MySQL, PostgreSQL, and Cosmos DB. |
+| Troubleshooting | L36-L48 | Diagnosing and fixing DAB issues: config/CLI errors, REST/CORS problems, GraphQL schema/auth, and database-specific troubles for Cosmos DB, SQL (incl. MCP), MySQL, and PostgreSQL. |
 | Best Practices | L49-L56 | Best practices for configuring and securing Data API builder, plus using SQL MCP Server with semantic entity descriptions and connecting it to local LLMs via Ollama |
 | Decision Making | L57-L61 | Guidance on where and how to deploy Data API builder, plus feature-by-feature comparisons and limitations across supported databases. |
 | Limits & Quotas | L62-L69 | Configuring SQL timeouts, setting REST/GraphQL pagination limits, and understanding database-specific capabilities and constraints in Data API builder. |
@@ -40,7 +40,7 @@ This skill requires **network access** to fetch documentation content:
 | Resolve common issues in Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/faq |
 | Troubleshoot Azure Cosmos DB issues in Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/troubleshooting/cosmos |
 | Troubleshoot GraphQL schema and authorization in DAB | https://learn.microsoft.com/en-us/azure/data-api-builder/troubleshooting/graphql |
-| Diagnose and fix SQL MCP Server issues in DAB | https://learn.microsoft.com/en-us/azure/data-api-builder/troubleshooting/mcp |
+| Troubleshoot SQL MCP Server issues in Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/troubleshooting/mcp |
 | Troubleshoot SQL Server issues in Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/troubleshooting/mssql |
 | Troubleshoot MySQL issues in Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/troubleshooting/mysql |
 | Troubleshoot PostgreSQL issues in Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/troubleshooting/postgresql |

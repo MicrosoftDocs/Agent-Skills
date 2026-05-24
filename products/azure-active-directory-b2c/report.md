@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Information Protection (use azure-information-
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 287
+- **Updated Pages**: 0
+- **Unchanged**: 289
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-active-directory-b2c/azure-active-directory-b2c.csv`
 
@@ -76,13 +76,6 @@ confusable_not_for: Not for Azure Information Protection (use azure-information-
 | *(Unclassified)* | 32 | 11.1% |
 
 ## Changes
-
-### Updated Pages
-
-- [Frequently asked questions](https://learn.microsoft.com/en-us/azure/active-directory-b2c/faq)
-  - Updated: 2026-03-16T11:10:00Z → 2026-03-16T11:10:00.000Z
-- [TLS and cipher suite requirements](https://learn.microsoft.com/en-us/azure/active-directory-b2c/https-cipher-tls-requirements)
-  - Updated: 2025-05-01T11:17:00.000Z → 2026-05-14T08:00:00.000Z
 
 ## Classified Pages
 

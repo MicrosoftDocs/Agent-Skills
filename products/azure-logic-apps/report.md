@@ -53,8 +53,8 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Data Fa
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 233
+- **Updated Pages**: 0
+- **Unchanged**: 237
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-logic-apps/azure-logic-apps.csv`
 
@@ -74,17 +74,6 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Data Fa
 | *(Unclassified)* | 49 | 20.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [Create MCP servers and tools from connectors](https://learn.microsoft.com/en-us/azure/logic-apps/create-mcp-server-api-center)
-  - Updated: 2025-11-18T18:43:00.000Z → 2026-05-11T08:00:00.000Z
-- [DevOps deployment](https://learn.microsoft.com/en-us/azure/logic-apps/devops-deployment-single-tenant-azure-logic-apps)
-  - Updated: 2025-05-23T08:00:00.000Z → 2026-05-12T06:12:00.000Z
-- [Portal](https://learn.microsoft.com/en-us/azure/logic-apps/quickstart-create-example-consumption-workflow)
-  - Updated: 2025-11-18T18:43:00.000Z → 2026-05-11T08:00:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/logic-apps/single-tenant-overview-compare)
-  - Updated: 2025-09-03T08:00:00.000Z → 2026-05-07T08:00:00.000Z
 
 ## Classified Pages
 

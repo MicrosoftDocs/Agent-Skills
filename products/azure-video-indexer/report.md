@@ -45,8 +45,8 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI Cust
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 63
+- **Updated Pages**: 0
+- **Unchanged**: 67
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-video-indexer/azure-video-indexer.csv`
 
@@ -64,17 +64,6 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI Cust
 | *(Unclassified)* | 43 | 64.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [FAQ](https://learn.microsoft.com/en-us/azure/azure-video-indexer/faq)
-  - Updated: 2025-12-18T23:08:00Z → 2025-12-18T23:08:00.000Z
-- [Call APIs](https://learn.microsoft.com/en-us/azure/azure-video-indexer/video-indexer-use-apis)
-  - Updated: 2025-10-06T08:00:00.000Z → 2026-05-11T17:14:00.000Z
-- [Firewall protected storage](https://learn.microsoft.com/en-us/azure/azure-video-indexer/storage-behind-firewall)
-  - Updated: 2025-10-06T08:00:00.000Z → 2026-05-11T17:14:00.000Z
-- [Upload and index media](https://learn.microsoft.com/en-us/azure/azure-video-indexer/upload-index-media)
-  - Updated: 2025-10-06T08:00:00.000Z → 2026-05-11T17:14:00.000Z
 
 ## Classified Pages
 

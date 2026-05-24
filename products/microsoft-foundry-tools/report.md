@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-17'
+generated_at: '2026-05-24'
 category_descriptions:
   integrations: 'Using Content Moderator and Content Understanding via REST/.NET:
     text/image/video moderation, term lists, multimodal analysis, and consuming Markdown/structured
@@ -39,16 +39,16 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 
 ## Summary
 
-- **Total Pages**: 52
-- **Fetched**: 52
+- **Total Pages**: 53
+- **Fetched**: 53
 - **Fetch Failed**: 0
 - **Classified**: 30
-- **Unclassified**: 22
+- **Unclassified**: 23
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 51
+- **New Pages**: 1
+- **Updated Pages**: 0
+- **Unchanged**: 52
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/microsoft-foundry-tools/microsoft-foundry-tools.csv`
 
@@ -58,19 +58,18 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 |------|-------|------------|
 | architecture-patterns | 1 | 1.9% |
 | best-practices | 2 | 3.8% |
-| configuration | 6 | 11.5% |
-| decision-making | 4 | 7.7% |
-| integrations | 12 | 23.1% |
-| limits-quotas | 4 | 7.7% |
+| configuration | 6 | 11.3% |
+| decision-making | 4 | 7.5% |
+| integrations | 12 | 22.6% |
+| limits-quotas | 4 | 7.5% |
 | security | 1 | 1.9% |
-| *(Unclassified)* | 22 | 42.3% |
+| *(Unclassified)* | 23 | 43.4% |
 
 ## Changes
 
-### Updated Pages
+### New Pages
 
-- [FAQ](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/faq)
-  - Updated: 2026-05-08T22:11:00Z → 2026-05-08T22:11:00.000Z
+- [Create a Logic Apps workflow](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/tutorial/logic-apps)
 
 ## Classified Pages
 
@@ -123,6 +122,7 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 | [Classifier tutorial - Split and route](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/how-to/classification-content-understanding-studio) | 0.20 | How-to guide for creating classification workflows and routing in Content Understanding Studio; likely procedural without detailed limits, config tables, error-code mappings, or decision matrices. |
 | [Content Understanding Studio Quickstart](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/quickstart/content-understanding-studio) | 0.20 | Quickstart for trying the Studio/portal; these are typically step-by-step tutorials without comprehensive configuration tables, limits, or decision matrices, so it doesn't fit the expert-knowledge categories. |
 | [Copy and back up analyzers](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/how-to/copy-analyzers) | 0.20 | Describes scenarios for copying custom analyzers within and across resources; summary does not indicate presence of quotas, config parameter tables, security roles, or troubleshooting mappings. |
+| [Create a Logic Apps workflow](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/tutorial/logic-apps) | 0.20 | Tutorial-style Logic Apps + Content Understanding workflow; likely step-by-step guidance without detailed limits, configuration matrices, or product-specific troubleshooting/error code mappings. |
 | [Export or delete account data](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/export-delete-data) | 0.20 | Data export/delete overview; likely procedural and policy-focused without detailed limits, config tables, or error mappings. |
 | [Language and region support](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/language-region-support) | 0.20 | Region and language support is typically a capability/coverage listing, not a configuration, quota, or decision matrix; it lacks the kinds of numeric limits, config parameters, or troubleshooting mappings required by any sub-skill type. |
 | [Overview](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/document/overview) | 0.20 | Document overview describing capabilities and use cases for document analysis; no indication of limits, configuration parameters, or decision matrices. |

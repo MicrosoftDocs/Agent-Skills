@@ -3,7 +3,7 @@ name: azure-advisor
 description: Expert knowledge for Azure Advisor development including best practices, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when creating Advisor alerts/digests, using workbooks, bulk-remediating savings, or querying via Resource Graph, and other Azure Advisor related development tasks. Not for Azure Cost Management (use azure-cost-management), Azure Monitor (use azure-monitor), Azure Policy (use azure-policy), Azure Service Health (use azure-service-health).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-17"
+  generated_at: "2026-05-24"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Advisor Skill
@@ -24,12 +24,12 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Best Practices | L34-L47 | Using Advisor to assess architectures and apply cost, performance, operational excellence, and reliability best practices, including bulk remediation and estimating/exporting savings |
-| Decision Making | L48-L56 | Using Advisor workbooks and critical risk views to evaluate reliability, assess and optimize costs, and plan migrations based on service retirement and recommendation impact |
-| Limits & Quotas | L57-L61 | Advisor feature availability, limits, and differences when running in Azure sovereign clouds (e.g., Azure Government, China), including which recommendations are supported. |
-| Security | L62-L66 | Managing who can view and configure Azure Advisor recommendations using Azure RBAC roles, permissions, and access control best practices |
-| Configuration | L67-L76 | Setting up and customizing Azure Advisor: creating alerts (portal, ARM, Bicep), email digests, tag-based filtering, and using workbooks for monitoring and insights. |
-| Integrations & Coding Patterns | L77-L81 | Querying Azure Advisor recommendations via Azure Resource Graph, using Kusto sample queries, filtering/grouping results, and integrating Advisor data into custom tools or reports |
+| Best Practices | L34-L46 | Using Advisor to assess architectures and apply cost, performance, operational excellence, and reliability best practices, including bulk remediation and estimating/exporting savings |
+| Decision Making | L47-L55 | Using Advisor workbooks and critical risk views to evaluate reliability, assess and optimize costs, and plan migrations based on service retirement and recommendation impact |
+| Limits & Quotas | L56-L60 | Advisor feature availability, limits, and differences when running in Azure sovereign clouds (e.g., Azure Government, China), including which recommendations are supported. |
+| Security | L61-L65 | Managing who can view and configure Azure Advisor recommendations using Azure RBAC roles, permissions, and access control best practices |
+| Configuration | L66-L75 | Setting up and customizing Azure Advisor: creating alerts (portal, ARM, Bicep), email digests, tag-based filtering, and using workbooks for monitoring and insights. |
+| Integrations & Coding Patterns | L76-L80 | Querying Azure Advisor recommendations via Azure Resource Graph, using Kusto sample queries, filtering/grouping results, and integrating Advisor data into custom tools or reports |
 
 ### Best Practices
 | Topic | URL |
@@ -43,7 +43,6 @@ This skill requires **network access** to fetch documentation content:
 | Apply Azure Advisor operational excellence recommendations | https://learn.microsoft.com/en-us/azure/advisor/advisor-reference-operational-excellence-recommendations |
 | Leverage Azure Advisor performance recommendations | https://learn.microsoft.com/en-us/azure/advisor/advisor-reference-performance-recommendations |
 | Apply Azure Advisor reliability recommendations | https://learn.microsoft.com/en-us/azure/advisor/advisor-reference-reliability-recommendations |
-| Use Azure Advisor resiliency reviews to improve reliability | https://learn.microsoft.com/en-us/azure/advisor/advisor-resiliency-reviews |
 
 ### Decision Making
 | Topic | URL |

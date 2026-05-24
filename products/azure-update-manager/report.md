@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-05-17'
+generated_at: '2026-05-24'
 category_descriptions:
   deployment: 'Deploying and managing Automanage/Update Manager at scale: onboarding
-    VMs/Arc servers, upgrading/moving profiles and VMs across regions/tenants, and
-    using Policy plus extension release/issue tracking.'
+    VMs and Arc servers, moving/repairing configs across regions/tenants, policies,
+    extension versions, and supported OS/features.'
   best-practices: Best practices for configuring Automanage and guest patching on
     Windows/Linux/Arc VMs, handling SQL Server and Ubuntu/Ubuntu Pro updates, and
     managing SMB over QUIC in Update Manager.
@@ -25,17 +25,17 @@ category_descriptions:
     migrating patch management from Configuration Manager to Azure Update Manager
 skill_description: Expert knowledge for Azure Update Manager development including
   troubleshooting, best practices, decision making, limits & quotas, security, configuration,
-  integrations & coding patterns, and deployment. Use when managing VM/Arc patching,
-  Automanage profiles, hotpatch/ESU schedules, change tracking, or SDK/REST automation,
-  and other Azure Update Manager related development tasks. Not for Azure Automation
-  (use azure-automation), Azure Monitor (use azure-monitor), Azure Osconfig (use azure-osconfig),
-  Azure Virtual Machines (use azure-virtual-machines).
-use_when: Use when managing VM/Arc patching, Automanage profiles, hotpatch/ESU schedules,
-  change tracking, or SDK/REST automation, and other Azure Update Manager related
-  development tasks.
-confusable_not_for: Not for Azure Automation (use azure-automation), Azure Monitor
-  (use azure-monitor), Azure Osconfig (use azure-osconfig), Azure Virtual Machines
-  (use azure-virtual-machines).
+  integrations & coding patterns, and deployment. Use when onboarding VMs/Arc servers,
+  configuring schedules/ESU/hotpatch, using SDK/REST APIs, or planning cross-subscription
+  patching, and other Azure Update Manager related development tasks. Not for Azure
+  Automation (use azure-automation), Azure Policy (use azure-policy), Azure Monitor
+  (use azure-monitor), Azure Resource Manager (use azure-resource-manager).
+use_when: Use when onboarding VMs/Arc servers, configuring schedules/ESU/hotpatch,
+  using SDK/REST APIs, or planning cross-subscription patching, and other Azure Update
+  Manager related development tasks.
+confusable_not_for: Not for Azure Automation (use azure-automation), Azure Policy
+  (use azure-policy), Azure Monitor (use azure-monitor), Azure Resource Manager (use
+  azure-resource-manager).
 ---
 # Azure Update Manager Crawl Report
 
@@ -44,13 +44,13 @@ confusable_not_for: Not for Azure Automation (use azure-automation), Azure Monit
 - **Total Pages**: 84
 - **Fetched**: 84
 - **Fetch Failed**: 0
-- **Classified**: 55
-- **Unclassified**: 29
+- **Classified**: 54
+- **Unclassified**: 30
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 83
+- **Updated Pages**: 2
+- **Unchanged**: 82
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-update-manager/azure-update-manager.csv`
 
@@ -59,21 +59,23 @@ confusable_not_for: Not for Azure Automation (use azure-automation), Azure Monit
 | Type | Count | Percentage |
 |------|-------|------------|
 | best-practices | 7 | 8.3% |
-| configuration | 17 | 20.2% |
+| configuration | 16 | 19.0% |
 | decision-making | 2 | 2.4% |
-| deployment | 10 | 11.9% |
+| deployment | 11 | 13.1% |
 | integrations | 9 | 10.7% |
-| limits-quotas | 6 | 7.1% |
+| limits-quotas | 5 | 6.0% |
 | security | 2 | 2.4% |
 | troubleshooting | 2 | 2.4% |
-| *(Unclassified)* | 29 | 34.5% |
+| *(Unclassified)* | 30 | 35.7% |
 
 ## Changes
 
 ### Updated Pages
 
-- [FAQ](https://learn.microsoft.com/en-us/azure/automanage/faq)
-  - Updated: 2024-08-02T17:06:00Z → 2024-08-02T17:06:00.000Z
+- [Check for Updates, One time update, Periodic assessment and Customer managed Schedules](https://learn.microsoft.com/en-us/azure/update-manager/support-matrix-updates)
+  - Updated: 2025-09-19T05:15:00.000Z → 2026-05-19T17:12:00.000Z
+- [Manage Hotpatches on Arc-Enabled Machines (preview)](https://learn.microsoft.com/en-us/azure/update-manager/manage-hot-patching-arc-machines)
+  - Updated: 2025-12-11T18:27:00.000Z → 2026-05-18T22:17:00.000Z
 
 ## Classified Pages
 
@@ -92,7 +94,7 @@ confusable_not_for: Not for Azure Automation (use azure-automation), Azure Monit
 | [Access Azure Update Manager operations data using Azure Resource Graph](https://learn.microsoft.com/en-us/azure/update-manager/query-logs) | configuration | 0.70 | Explains how operations data is stored and accessed in Resource Graph, likely including specific resource types, properties, and query patterns unique to Update Manager. |
 | [Automate assessment at scale using Policy](https://learn.microsoft.com/en-us/azure/update-manager/periodic-assessment-at-scale) | configuration | 0.70 | Describes a specific machine setting and its behavior (fetches updates every 24 hours) and how to configure it at scale via policy—product-specific configuration detail. |
 | [Change a workspace and configure Data Collection Rule](https://learn.microsoft.com/en-us/azure/azure-change-tracking-inventory/tutorial-change-workspace-configure-data-collection-rule) | configuration | 0.70 | Changing workspace and configuring DCRs involves specific rule settings and parameters, fitting configuration criteria. |
-| [Check for Updates, One time update, Periodic assessment and Customer managed Schedules](https://learn.microsoft.com/en-us/azure/update-manager/support-matrix-updates) | limits-quotas | 0.70 | Support matrix for updates and system requirements will include specific OS versions and constraints, which are detailed product support limits. |
+| [Check for Updates, One time update, Periodic assessment and Customer managed Schedules](https://learn.microsoft.com/en-us/azure/update-manager/support-matrix-updates) | deployment | 0.70 | Support matrix pages list exactly which OS versions, environments, and features (one-time updates, periodic assessments, scheduled patching) are supported or unsupported. This is product- and version-specific expert knowledge that changes over time and is not reliably known from training. It functions as a deployment/supportability matrix for where Update Manager can be used. |
 | [Create alerts (preview)](https://learn.microsoft.com/en-us/azure/update-manager/manage-alerts) | configuration | 0.70 | Explains how to enable alerts (preview) based on updates data; likely includes specific alert rules, conditions, and configuration parameters. |
 | [Create custom profile](https://learn.microsoft.com/en-us/azure/automanage/virtual-machines-custom-profile) | configuration | 0.70 | Creating custom profiles involves selecting services and settings; article likely lists specific configuration options and allowed values. |
 | [Create pre and post events](https://learn.microsoft.com/en-us/azure/update-manager/pre-post-events-schedule-maintenance-configuration) | configuration | 0.70 | Provides concrete steps and settings to define pre/post events tied to maintenance configurations, which are specific configuration options. |
@@ -104,7 +106,6 @@ confusable_not_for: Not for Azure Automation (use azure-automation), Azure Monit
 | [GO](https://learn.microsoft.com/en-us/azure/automanage/quick-go-sdk) | integrations | 0.70 | Quickstart for Go SDK will include Automanage-specific client types, method names, and parameters that qualify as integration patterns. |
 | [Java](https://learn.microsoft.com/en-us/azure/automanage/quick-java-sdk) | integrations | 0.70 | Java SDK quickstart contains concrete Automanage client classes and configuration parameters, fitting integrations & coding patterns. |
 | [JavaScript](https://learn.microsoft.com/en-us/azure/automanage/quick-javascript-sdk) | integrations | 0.70 | JavaScript SDK quickstart will show Automanage-specific API usage and options, which are integration-focused expert details. |
-| [Manage Hotpatches on Arc-Enabled Machines (preview)](https://learn.microsoft.com/en-us/azure/update-manager/manage-hot-patching-arc-machines) | configuration | 0.70 | Explains how to install hotpatches on compatible Arc machines and create faster schedules; includes product-specific compatibility and configuration details. |
 | [Manage cross-subscription patching](https://learn.microsoft.com/en-us/azure/update-manager/enable-cross-subscription-patching) | configuration | 0.70 | Includes steps to register resource providers, assign roles, and schedule updates across subscriptions; contains specific configuration and security settings. |
 | [Manage dynamic scope](https://learn.microsoft.com/en-us/azure/update-manager/manage-dynamic-scoping) | configuration | 0.70 | Describes how to view, add, edit, and delete dynamic scopes, including constraints like mandatory subscription/resource group and non-editable properties—product-specific config rules. |
 | [Manage pre and post events](https://learn.microsoft.com/en-us/azure/update-manager/manage-pre-post-events) | configuration | 0.70 | Focuses on managing pre/post events, including editing and operational constraints, which are product-specific configuration behaviors. |
@@ -162,6 +163,7 @@ confusable_not_for: Not for Azure Automation (use azure-automation), Azure Monit
 | [Disable Azure Automanage](https://learn.microsoft.com/en-us/azure/automanage/how-to-disable-automanage) | 0.30 | How-to disable Automanage; mostly procedural without detailed configuration matrices, limits, or troubleshooting codes. |
 | [Enable Azure Change Tracking and Inventory](https://learn.microsoft.com/en-us/azure/azure-change-tracking-inventory/quickstart-monitor-changes-collect-inventory-azure-change-tracking-inventory) | 0.30 | Quickstart for enabling Change Tracking; mostly procedural without detailed configuration parameter tables or limits. |
 | [July 2025](https://learn.microsoft.com/en-us/azure/update-manager/arc-enabled-vm-extensions) | 0.30 | Release notes and known issues are product-specific but typically list changes, fixes, and OS support without structured limits, configs, or error-code troubleshooting mappings. |
+| [Manage Hotpatches on Arc-Enabled Machines (preview)](https://learn.microsoft.com/en-us/azure/update-manager/manage-hot-patching-arc-machines) | 0.30 | The hotpatching article appears to be a how-to/tutorial style guide on managing hotpatches on Arc-enabled machines, without clear indication of detailed configuration tables, limits, or error-code-based troubleshooting. From the summary, it focuses on explaining how to install hotpatches and create schedules, which is generic procedural content rather than expert-knowledge configuration matrices or constraints. |
 | [Update options and orchestration](https://learn.microsoft.com/en-us/azure/update-manager/updates-maintenance-schedules) | 0.30 | Marked as an overview of update and maintenance options; likely conceptual orchestration explanation without detailed config or limits. |
 | [What's New](https://learn.microsoft.com/en-us/azure/update-manager/whats-new) | 0.30 | What's new/release notes; mostly feature announcements, not structured troubleshooting, limits, or configuration matrices. |
 | [About Azure Update Manager](https://learn.microsoft.com/en-us/azure/update-manager/overview) | 0.20 | Overview of Azure Update Manager features and benefits; conceptual without detailed limits or configuration tables. |

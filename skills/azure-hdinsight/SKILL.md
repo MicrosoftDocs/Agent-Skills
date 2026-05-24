@@ -1,9 +1,9 @@
 ---
 name: azure-hdinsight
-description: Expert knowledge for Azure HDInsight development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when working with HDInsight Spark/Hive/Kafka/HBase, Ambari/Oozie pipelines, autoscale, or secure VNet/private access, and other Azure HDInsight related development tasks. Not for Azure Databricks (use azure-databricks), Azure Synapse Analytics (use azure-synapse-analytics), Azure Stream Analytics (use azure-stream-analytics).
+description: Expert knowledge for Azure HDInsight development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building Hive/Spark/Kafka/HBase jobs, tuning clusters, securing access, or integrating SQL, Cosmos DB, or Synapse, and other Azure HDInsight related development tasks. Not for Azure Databricks (use azure-databricks), Azure Synapse Analytics (use azure-synapse-analytics).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-17"
+  generated_at: "2026-05-24"
   generator: "docs2skills/1.0.0"
 ---
 # Azure HDInsight Skill
@@ -26,7 +26,7 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L37-L132 | Diagnosing and fixing HDInsight cluster issues: creation/auth, networking, storage, Ambari/HDFS/Hive/HBase/Kafka/Spark/YARN problems, performance, disk/CPU, and known error codes/workarounds. |
 | Best Practices | L133-L174 | Best practices for designing, securing, monitoring, scaling, and tuning HDInsight clusters and workloads (Hadoop, Spark, Hive, HBase, Kafka), including storage, migration, and performance optimization. |
-| Decision Making | L175-L199 | Planning and migration guidance for HDInsight: sizing and performance, choosing storage/VMs/tools, upgrading versions/components, and moving Hadoop, HBase, Kafka, and configs to newer clusters. |
+| Decision Making | L175-L199 | Planning and migration guidance for HDInsight: cluster sizing, storage and VM selection, HBase/Kafka upgrades, version moves, and retiring or reconfiguring existing deployments. |
 | Architecture & Design Patterns | L200-L215 | HDInsight cluster architecture, security, networking, HA/DR, migration from on-prem Hadoop, shared storage, streaming design, and operational pipelines with Ambari/Oozie |
 | Limits & Quotas | L216-L225 | HDInsight capacity limits, node configs, Kafka-specific limits, metastore constraints, log sizing/retention, and how to request/manage CPU core quota increases. |
 | Security | L226-L269 | Securing HDInsight clusters: identity and access (Entra, LDAP, Ranger, RBAC), network isolation (NSG, Private Link), TLS/encryption, Kafka/Hive/Spark security, and security best practices. |
@@ -184,7 +184,7 @@ This skill requires **network access** to fetch documentation content:
 | Migrate Apache HBase clusters to a newer HDInsight version | https://learn.microsoft.com/en-us/azure/hdinsight/hbase/apache-hbase-migrate-new-version |
 | Migrate HBase to new HDInsight version and storage account | https://learn.microsoft.com/en-us/azure/hdinsight/hbase/apache-hbase-migrate-new-version-new-storage-account |
 | Plan HDInsight cluster capacity and performance | https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-capacity-planning |
-| Plan migrations for retiring Azure HDInsight components | https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-component-retirements-and-action-required |
+| Plan migrations for retiring HDInsight components | https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-component-retirements-and-action-required |
 | Compare storage services for Azure HDInsight clusters | https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-compare-storage-options |
 | Upgrade Azure HDInsight to Apache Ranger 2.3.0 | https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-ranger-5-1-migration |
 | Assess and migrate from retired HDInsight versions | https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-retired-versions |

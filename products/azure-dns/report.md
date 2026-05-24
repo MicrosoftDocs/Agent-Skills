@@ -43,8 +43,8 @@ confusable_not_for: Not for Azure Traffic Manager (use azure-traffic-manager), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 73
+- **Updated Pages**: 0
+- **Unchanged**: 75
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-dns/azure-dns.csv`
 
@@ -61,13 +61,6 @@ confusable_not_for: Not for Azure Traffic Manager (use azure-traffic-manager), A
 | *(Unclassified)* | 46 | 61.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [FAQ](https://learn.microsoft.com/en-us/azure/dns/dns-faq)
-  - Updated: 2026-03-25T22:12:00Z → 2026-03-25T22:12:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/dns/dns-faq-private)
-  - Updated: 2026-04-01T17:25:00Z → 2026-04-01T17:25:00.000Z
 
 ## Classified Pages
 

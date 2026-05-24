@@ -41,8 +41,8 @@ confusable_not_for: Not for Azure Machine Learning (use azure-machine-learning),
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 34
+- **Updated Pages**: 0
+- **Unchanged**: 35
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-personalizer/azure-personalizer.csv`
 
@@ -58,11 +58,6 @@ confusable_not_for: Not for Azure Machine Learning (use azure-machine-learning),
 | *(Unclassified)* | 26 | 74.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [Personalizer FAQ](https://learn.microsoft.com/en-us/azure/ai-services/personalizer/frequently-asked-questions)
-  - Updated: 2025-01-08T05:31:00Z → 2025-01-08T05:31:00.000Z
 
 ## Classified Pages
 

@@ -1,9 +1,9 @@
 ---
 name: azure-virtual-machines
-description: Expert knowledge for Azure Virtual Machines development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when choosing VM sizes, configuring disks/GPU/HPC, enabling encryption/Trusted Launch, or automating via CLI/REST, and other Azure Virtual Machines related development tasks. Not for Azure Virtual Machine Scale Sets (use azure-vm-scalesets), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Data Science Virtual Machines (use azure-data-science-vm), Azure Cloud Services (use azure-cloud-services).
+description: Expert knowledge for Azure Virtual Machines development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing VM fleets/HPC, configuring disks/GPU/InfiniBand, securing with ADE/CMK, or automating via CLI/REST, and other Azure Virtual Machines related development tasks. Not for Azure Data Science Virtual Machines (use azure-data-science-vm), Azure Virtual Machine Scale Sets (use azure-vm-scalesets), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Cloud Services (use azure-cloud-services).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-17"
+  generated_at: "2026-05-24"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Virtual Machines Skill
@@ -28,7 +28,7 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L64-L90 | Performance, scaling, HA, and cost-optimization best practices for Azure VMs, including HPC/InfiniBand tuning, disks/snapshots, OS-specific tweaks, and Image Builder/boot-time optimization. |
 | Decision Making | L91-L162 | Guidance for choosing VM sizes, disks, costs, images, and licensing, plus planning and executing migrations, retirements, DR/backup, and Oracle/Linux workload strategies on Azure VMs |
 | Architecture & Design Patterns | L163-L178 | Design patterns for Azure VM workloads: multi-region and fleet strategies, low-latency/NUMA-aware HPC, clustered/shared-disk setups, and Oracle/OpenShift architectures and DR. |
-| Limits & Quotas | L179-L383 | VM size specs, disk and storage performance limits, quotas, lifecycle and state behaviors, and hardware constraints for Azure VMs, Dedicated Hosts, GPU/HPC, and Linux/Windows workloads. |
+| Limits & Quotas | L179-L383 | VM size specs, disk and storage performance limits, GPU/HPC capabilities, quotas, lifecycle/support, and operational constraints for running and scaling Azure Virtual Machines. |
 | Security | L384-L459 | Securing Azure VMs and disks: encryption (ADE, CMK, host/double), Trusted Launch/OS Guard, Key Vault, TLS certs, metadata protection, RBAC/Policy, and secure image/gallery sharing. |
 | Configuration | [configuration.md](configuration.md) | Configuring Azure VMs/scale sets: disks, images, extensions, GPU/InfiniBand, monitoring/telemetry, maintenance, restore points, SSH/WinRM, and OS-specific setup (Linux/Windows/Oracle). |
 | Integrations & Coding Patterns | [integrations.md](integrations.md) | CLI/PowerShell/REST patterns for VM backup, disk/snapshot/VHD operations, maintenance & availability monitoring, metadata/scheduled events, networking, encryption, and Oracle DB integration. |
@@ -204,7 +204,7 @@ This skill requires **network access** to fetch documentation content:
 | Reference Ev3 and Esv3 Azure VM specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/ev3-esv3-series |
 | Expand unmanaged Azure VM disks and understand size limits | https://learn.microsoft.com/en-us/azure/virtual-machines/expand-unmanaged-disks |
 | Azure VM disk limits, sizes, and performance FAQs | https://learn.microsoft.com/en-us/azure/virtual-machines/faq-for-disks |
-| Understand HBv3 VM architecture and resource characteristics | https://learn.microsoft.com/en-us/azure/virtual-machines/hbv3-series-overview |
+| Understand Azure HBv3 VM hardware specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/hbv3-series-overview |
 | Review HBv4 VM architecture and hardware limits | https://learn.microsoft.com/en-us/azure/virtual-machines/hbv4-series-overview |
 | Review HC-series VM performance benchmarks | https://learn.microsoft.com/en-us/azure/virtual-machines/hc-series-performance |
 | Review HX-series VM performance and scalability | https://learn.microsoft.com/en-us/azure/virtual-machines/hx-performance |

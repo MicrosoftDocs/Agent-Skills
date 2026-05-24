@@ -38,8 +38,8 @@ confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Monit
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 103
+- **Updated Pages**: 0
+- **Unchanged**: 104
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-reliability/azure-reliability.csv`
 
@@ -54,11 +54,6 @@ confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Monit
 | *(Unclassified)* | 57 | 54.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [Azure Traffic Manager](https://learn.microsoft.com/en-us/azure/reliability/reliability-traffic-manager)
-  - Updated: 2026-01-22T23:17:00.000Z → 2026-05-12T11:03:00.000Z
 
 ## Classified Pages
 

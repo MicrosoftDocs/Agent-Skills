@@ -1,60 +1,59 @@
 ---
-generated_at: '2026-05-17'
+generated_at: '2026-05-24'
 category_descriptions:
   security: 'Securing IoT Hub, DPS, and Device Update: auth (Entra ID, RBAC, SAS,
-    X.509), certificates and revocation, TLS/ciphers, keys, network/IP controls, private
-    endpoints, and Azure Policy compliance.'
+    X.509), cert lifecycle, key rotation, TLS/ciphers, IP/VNet/private endpoints,
+    encryption, and Azure Policy compliance.'
   best-practices: 'Best practices for secure, scalable IoT Hub/DPS deployments: device
     provisioning at scale, OEM security, cert renewal/ADR, resilient reconnection,
     auto device config, and IoT Hub hardening.'
   architecture-patterns: Design patterns for DPS lifecycle/HA/DR, VNet connectivity,
     secure device streams, and reliably persisting ordered IoT Hub events with Cosmos
     DB.
-  limits-quotas: Numeric limits, quotas, and throttling behaviors for IoT Hub, Device
-    Provisioning Service (DPS), and Device Update, plus FAQs on capacity and scaling
-    constraints.
-  configuration: 'Configuring IoT Hub and DPS: enroll devices, manage certificates
-    and ADR, set twins, jobs, routing, endpoints, file upload, message enrichments,
-    queries, and monitoring/metrics/logs.'
-  integrations: Patterns and code samples for connecting devices/DPS to IoT Hub (MQTT/HTTPS/AMQP),
-    managing identities/twins/files, direct methods, C2D messages, bulk ops, and message
-    formats.
+  limits-quotas: Limits, quotas, and throttling for IoT Hub, Device Provisioning Service,
+    and Device Update, including per‑service caps, scaling behavior, and what happens
+    when limits are exceeded.
+  configuration: 'Configuring IoT Hub, DPS, and Device Update: enroll devices, set
+    allocation/IP policies, manage twins, jobs, routing, endpoints, file upload, certificates,
+    and monitor via metrics/logs and VS Code.'
+  integrations: Patterns and code samples for connecting devices/DPUs to IoT Hub/DPS
+    (MQTT/HTTPS/AMQP), managing identities, twins, methods, jobs, file upload, and
+    message formats/endpoints.
   troubleshooting: 'Diagnosing and fixing IoT Hub and DPS issues: device connectivity,
     routing, error codes, Device Update/import/storage/proxy problems, and collecting/using
     diagnostic and debug logs.'
-  deployment: 'Deploying and updating IoT Hubs and devices: region/SKU migration,
-    failover, ARM/Bicep deployments, Device Update (image/package, proxy, OS support),
-    and scheduling jobs via CLI.'
-  decision-making: Guidance for choosing IoT Hub vs alternatives, tiers/scale, pricing,
-    routing, comms patterns (C2D/D2C), monitoring methods, and when to use or disable
-    disaster recovery.
+  deployment: 'Deploying and updating IoT devices and hubs: Device Update setup (image/package/delta/proxy),
+    platform support, regional failover, and IoT Hub migration and job scheduling.'
+  decision-making: Guidance for choosing IoT Hub vs alternatives, DR usage, routing
+    options, C2D/D2C patterns, pricing and tiers, and methods for monitoring device
+    connections.
 skill_description: Expert knowledge for Azure IoT Hub development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  working with IoT Hub/DPS provisioning, device twins/jobs, routing/endpoints, Device
-  Update, or C2D/D2C methods, and other Azure IoT Hub related development tasks. Not
+  using IoT Hub/DPS provisioning, device twins/jobs, message routing/endpoints, Device
+  Update, or Cosmos DB sinks, and other Azure IoT Hub related development tasks. Not
   for Azure IoT (use azure-iot), Azure IoT Central (use azure-iot-central), Azure
-  IoT Edge (use azure-iot-edge), Azure Defender For Iot (use azure-defender-for-iot).
-use_when: Use when working with IoT Hub/DPS provisioning, device twins/jobs, routing/endpoints,
-  Device Update, or C2D/D2C methods, and other Azure IoT Hub related development tasks.
+  IoT Edge (use azure-iot-edge), Azure IoT Operations (use azure-iot-operations).
+use_when: Use when using IoT Hub/DPS provisioning, device twins/jobs, message routing/endpoints,
+  Device Update, or Cosmos DB sinks, and other Azure IoT Hub related development tasks.
 confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Central (use azure-iot-central),
-  Azure IoT Edge (use azure-iot-edge), Azure Defender For Iot (use azure-defender-for-iot).
+  Azure IoT Edge (use azure-iot-edge), Azure IoT Operations (use azure-iot-operations).
 ---
 # Azure IoT Hub Crawl Report
 
 ## Summary
 
-- **Total Pages**: 201
-- **Fetched**: 201
+- **Total Pages**: 203
+- **Fetched**: 203
 - **Fetch Failed**: 0
-- **Classified**: 131
-- **Unclassified**: 70
+- **Classified**: 134
+- **Unclassified**: 69
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 6
-- **Unchanged**: 195
-- **Deleted Pages**: 0
+- **New Pages**: 3
+- **Updated Pages**: 11
+- **Unchanged**: 189
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-iot-hub/azure-iot-hub.csv`
 
 ## Classification Statistics
@@ -63,31 +62,51 @@ confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Central (use az
 |------|-------|------------|
 | architecture-patterns | 3 | 1.5% |
 | best-practices | 6 | 3.0% |
-| configuration | 34 | 16.9% |
-| decision-making | 9 | 4.5% |
-| deployment | 8 | 4.0% |
-| integrations | 21 | 10.4% |
+| configuration | 34 | 16.7% |
+| decision-making | 9 | 4.4% |
+| deployment | 10 | 4.9% |
+| integrations | 22 | 10.8% |
 | limits-quotas | 3 | 1.5% |
-| security | 35 | 17.4% |
-| troubleshooting | 12 | 6.0% |
-| *(Unclassified)* | 70 | 34.8% |
+| security | 35 | 17.2% |
+| troubleshooting | 12 | 5.9% |
+| *(Unclassified)* | 69 | 34.0% |
 
 ## Changes
 
+### New Pages
+
+- [Agent status API](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-agent-status)
+- [Delta updates](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/delta-updates)
+- [Deploy delta updates](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/deploy-delta-updates)
+
 ### Updated Pages
 
-- [Azure portal](https://learn.microsoft.com/en-us/azure/iot-dps/quick-setup-auto-provision)
-  - Updated: 2024-08-16T08:00:00.000Z → 2025-12-18T23:12:00.000Z
 - [DPS FAQ](https://learn.microsoft.com/en-us/azure/iot-dps/dps-faq)
-  - Updated: 2026-04-24T22:19:00Z → 2026-04-24T22:19:00.000Z
-- [Get started (ADR integration)](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-device-registry-setup)
-  - Updated: 2026-04-15T22:11:00.000Z → 2026-05-16T05:17:00.000Z
-- [Create an IoT hub (no ADR integration)](https://learn.microsoft.com/en-us/azure/iot-hub/create-hub)
-  - Updated: 2025-06-25T08:00:00.000Z → 2026-05-16T05:17:00.000Z
-- [Send telemetry using CLI](https://learn.microsoft.com/en-us/azure/iot-hub/quickstart-send-telemetry-cli)
-  - Updated: 2025-01-10T08:00:00.000Z → 2026-05-16T05:17:00.000Z
-- [Perform manual failover](https://learn.microsoft.com/en-us/azure/iot-hub/tutorial-manual-failover)
-  - Updated: 2022-11-18T00:00:00.000Z → 2026-05-06T06:11:00.000Z
+  - Updated: 2026-04-24T22:19:00.000Z → 2026-05-21T19:52:00.000Z
+- [What is IoT Hub?](https://learn.microsoft.com/en-us/azure/iot-hub/iot-concepts-and-iot-hub)
+  - Updated: 2025-11-18T17:01:00.000Z → 2026-05-21T22:10:00.000Z
+- [What's new?](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-what-is-new)
+  - Updated: 2026-02-24T06:10:00.000Z → 2026-05-15T08:00:00.000Z
+- [Frequently asked questions](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-faq)
+  - Updated: 2026-02-24T06:10:00.000Z → 2026-05-15T08:00:00.000Z
+- [Compare IoT Hub and Event Hubs](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-compare-event-hubs)
+  - Updated: 2025-03-28T08:00:00.000Z → 2026-05-15T08:00:00.000Z
+- [Release notes and version history](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-changelog)
+  - Updated: 2023-03-20T00:00:00.000Z → 2026-05-21T19:52:00.000Z
+- [Device Update agent](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-agent-overview)
+  - Updated: 2024-12-19T23:02:00.000Z → 2026-05-21T19:52:00.000Z
+- [Configuration file](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-configuration-file)
+  - Updated: 2025-01-03T23:01:00.000Z → 2026-05-21T19:52:00.000Z
+- [Device Update Supported Platforms](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/support)
+  - Updated: 2025-05-23T17:03:00.000Z → 2026-05-21T19:52:00.000Z
+- [Provisioning device update agent](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-agent-provisioning)
+  - Updated: 2024-12-30T23:05:00.000Z → 2026-05-21T19:52:00.000Z
+- [Prepare for root key rotation](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-rootkey)
+  - Updated: 2025-06-05T05:17:00.000Z → 2026-05-21T19:52:00.000Z
+
+### Deleted Pages
+
+- ~~Use delta updates~~ (https://learn.microsoft.com/en-us/azure/iot-hub-device-update/delta-updates)
 
 ## Classified Pages
 
@@ -97,19 +116,19 @@ confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Central (use az
 | [Error messages](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-error-codes) | troubleshooting | 0.95 | The page is a catalog of Device Update error codes from multiple components (agent, Delivery Optimization, content service). It provides specific error codes and their meanings, which is core troubleshooting knowledge unique to this product. |
 | [Quotas and throttling](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-quotas-throttling) | limits-quotas | 0.95 | Explicitly about limits and throttling; this dev guide contains numeric quotas, per-SKU limits, and throttling rules that are not generally known without the doc. |
 | [Troubleshoot proxy updates](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-proxy-update-troubleshooting) | troubleshooting | 0.95 | The article focuses on troubleshooting errors when importing proxy updates, and the summary states it includes a table of error messages with troubleshooting steps. This matches the troubleshooting pattern of error message → cause → resolution with product-specific details. |
-| [Configuration file](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-configuration-file) | configuration | 0.90 | Focused on the du-config.json configuration file; will contain specific fields, allowed values, and how they’re reported to the service. |
 | [Import manifest](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/import-schema) | configuration | 0.90 | Describes the JSON schema for import manifests; will include field names, types, and constraints—classic configuration reference. |
 | [Troubleshoot device updates](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/troubleshoot-device-update) | troubleshooting | 0.90 | The page is explicitly a troubleshooting guide for Device Update for Azure IoT Hub, organized around common issues and their resolutions. It likely maps specific symptoms and product-specific behaviors to causes and fixes, which are not generally known from training data. |
 | [Troubleshoot error codes](https://learn.microsoft.com/en-us/azure/iot-hub/troubleshoot-error-codes) | troubleshooting | 0.90 | Maps specific IoT Hub error codes to causes and fixes, which is classic symptom→cause→solution troubleshooting content. |
 | [Troubleshoot storage-related errors when importing updates](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/troubleshoot-storage) | troubleshooting | 0.90 | Centered on a specific error message and step-by-step resolution using Storage Blob Data Contributor role; clear symptom → cause → solution mapping. |
 | [Choose the right IoT Hub tier](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-scaling) | decision-making | 0.85 | Scaling article for choosing tier and size; typically includes throughput limits, message quotas, and feature availability per SKU, guiding capacity and tier selection decisions. |
+| [Configuration file](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-configuration-file) | configuration | 0.85 | Configuration-file article for adu-config.json will list specific setting names, allowed values, and possibly defaults that the agent reads and reports; this is product-specific configuration detail not generally known from training. |
 | [Network security](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/network-security) | security | 0.85 | Explains service tags and private endpoints usage; includes product-specific network security settings and constraints (like public access requirement). |
 | [Troubleshooting DPS](https://learn.microsoft.com/en-us/azure/iot-dps/how-to-troubleshoot-dps) | troubleshooting | 0.85 | Explicit troubleshooting article for DPS provisioning; such pages list specific error codes/messages (attestation, registration failures) and map them to causes and resolutions, which is product-specific troubleshooting knowledge. |
 | [Update manifest](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/update-manifest) | configuration | 0.85 | Describes update manifest data structure sent to devices; includes JSON fields and semantics specific to Device Update. |
 | [Add queries to message routes](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-routing-query-syntax) | configuration | 0.80 | Defines IoT Hub-specific query syntax and patterns for routing; includes operators, fields, and examples that are product-specific configuration knowledge. |
 | [Apt manifest](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-apt-manifest) | configuration | 0.80 | Describes apt manifest JSON for the apt update handler; includes required fields and structure unique to this handler. |
 | [Best practices for large-scale IoT device deployments](https://learn.microsoft.com/en-us/azure/iot-dps/concepts-deploy-at-scale) | best-practices | 0.80 | Explicitly a best-practices article with DPS- and IoT Hub–specific patterns and sample code for scaling to millions of devices, tied to service and subscription limits. |
-| [Compare IoT Hub and Event Hubs](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-compare-event-hubs) | decision-making | 0.80 | Explicit comparison article; usually includes feature comparison tables, supported protocols, and scenario-based recommendations to help select the right service. |
+| [Compare IoT Hub and Event Hubs](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-compare-event-hubs) | decision-making | 0.80 | Comparison article explicitly focuses on when to use IoT Hub vs Event Hubs, including functional differences, supported protocols, and use cases; such guidance helps choose between services and typically includes decision criteria beyond generic concepts. |
 | [Compare message and event routing](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-event-grid-routing-comparison) | decision-making | 0.80 | Explicit comparison of IoT Hub routing vs Event Grid for integrating events; provides scenario-based recommendations and trade-offs for choosing one or both. |
 | [Configure IP filtering](https://learn.microsoft.com/en-us/azure/iot-dps/iot-dps-ip-filtering) | security | 0.80 | IP filter feature is a security control; such pages typically list rule formats, priority behavior, allow/deny semantics, and configuration parameters unique to DPS, matching product-specific security settings. |
 | [Configure IP filtering](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-ip-filtering) | security | 0.80 | Covers IP filter rule semantics and behavior for allowing/denying IPv4 ranges, which are concrete security configuration details. |
@@ -152,6 +171,7 @@ confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Central (use az
 | [Understand module twins](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-module-twins) | configuration | 0.75 | Explains module twin limits (up to 50 per device) and structure; product-specific configuration and behavior for module-level state management. |
 | [Monitoring data reference](https://learn.microsoft.com/en-us/azure/iot-hub/monitor-iot-hub-reference) | configuration | 0.74 | The monitoring reference page for Azure IoT Hub typically enumerates all available metrics, dimensions, and diagnostic log categories with their exact names, units, and sometimes value ranges. These are product-specific configuration and telemetry surface details (for example, metric names, dimensions, and log categories used when configuring alerts, dashboards, and diagnostics) that an LLM is unlikely to know reliably from training. This fits the configuration category best because it is essentially a catalog of monitoring-related configuration surfaces rather than general best practices or conceptual guidance. |
 | [AMQP support](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-amqp-support) | integrations | 0.70 | AMQP support article typically details connection strings, endpoint URIs, SAS token usage, and AMQP-specific settings for IoT Hub, which are product-specific integration patterns. |
+| [Agent status API](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-agent-status) | integrations | 0.70 | Describes a device-side status API with specific states, likely function signatures and parameters for on-device coordination; this is a product-specific API/integration pattern rather than generic concepts. |
 | [Automatically migrate an IoT hub using CLI](https://learn.microsoft.com/en-us/azure/iot-hub/migrate-hub-state-cli) | deployment | 0.70 | Describes product-specific migration flow (regions, tiers, configurations) using IoT Hub state CLI; includes constraints and steps unique to IoT Hub deployment/migration. |
 | [Azure IoT Hub extension for Visual Studio Code](https://learn.microsoft.com/en-us/azure/iot-hub/reference-iot-hub-extension) | configuration | 0.70 | Reference for extension commands, settings, and capabilities, which are concrete configuration/integration details for development tooling. |
 | [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/iot-hub/policy-reference) | security | 0.70 | Lists specific policy definitions, names, and versions for IoT Hub, which are detailed security/compliance configuration references. |
@@ -166,8 +186,9 @@ confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Central (use az
 | [Create an X.509 enrollment group with DPS service SDK](https://learn.microsoft.com/en-us/azure/iot-dps/quick-enroll-device-x509) | integrations | 0.70 | Shows using Azure IoT service SDK to create X.509 enrollment groups; includes DPS-specific API/SDK parameters and configuration. |
 | [Create and read IoT Hub messages](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-messages-construct) | integrations | 0.70 | Defines exact IoT Hub message structure, system properties, and headers for C2D and D2C messages; these are product-specific schema and protocol details that function as integration contract knowledge. |
 | [Create and upload certificates for testing](https://learn.microsoft.com/en-us/azure/iot-hub/tutorial-x509-test-certs) | security | 0.70 | Step-by-step creation of root/subordinate/client certs and upload to IoT Hub, with concrete commands and formats that are product-specific security configuration. |
-| [DPS FAQ](https://learn.microsoft.com/en-us/azure/iot-dps/dps-faq) | limits-quotas | 0.70 | FAQ pages for Azure services typically include concrete, product-specific details such as maximum enrollments, rate limits, supported regions, and other numeric constraints or edge-case behaviors that aren't obvious from general training data. As an FAQ, it likely enumerates specific limits and behaviors (for example, per-hub or per-subscription constraints) rather than just conceptual descriptions. |
-| [Device Update Supported Platforms](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/support) | deployment | 0.70 | Supported platforms article will list specific OS versions and components supported/preview, which are deployment constraints. |
+| [DPS FAQ](https://learn.microsoft.com/en-us/azure/iot-dps/dps-faq) | limits-quotas | 0.70 | FAQ pages for Azure services typically include concrete service behaviors and numeric constraints (for example, enrollment limits, throttling rates, regional constraints) that are not obvious from general training data; DPS FAQs are known to document such limits and edge-case behaviors. |
+| [Deploy delta updates](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/deploy-delta-updates) | deployment | 0.70 | Covers generating delta files with DiffGen or Yocto, importing, and deploying via Device Update; includes product-specific deployment workflow and tooling details that qualify as deployment expertise. |
+| [Device Update Supported Platforms](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/support) | deployment | 0.70 | Supported platforms article typically includes matrices of operating systems, versions, and support states (GA/preview), which are product-specific deployment/support constraints not inferable from general knowledge. |
 | [Disable or enable a device](https://learn.microsoft.com/en-us/azure/iot-hub/how-to-disable-enable-device) | configuration | 0.70 | Operational guide for toggling device state in ADR; likely includes specific API/portal fields and state values that control device behavior in IoT Hub preview deployments. |
 | [Get started with device management](https://learn.microsoft.com/en-us/azure/iot-hub/how-to-device-management) | integrations | 0.70 | Shows backend and device app working together with direct methods; includes method names, payload schemas, and call patterns specific to IoT Hub device management. |
 | [Invoke direct methods on a device](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-direct-methods) | configuration | 0.70 | Dev guide for direct methods including request/response semantics and constraints; contains IoT Hub-specific behavior and configuration details. |
@@ -180,7 +201,7 @@ confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Central (use az
 | [Manually migrate an IoT hub using ARM](https://learn.microsoft.com/en-us/azure/iot-hub/migrate-hub-arm) | deployment | 0.70 | Covers manual migration using portal, ARM templates, and SDKs with IoT Hub-specific constraints (naming, subscriptions, regions); deployment/migration-focused expert guidance. |
 | [Monitor device connection status](https://learn.microsoft.com/en-us/azure/iot-hub/monitor-device-connection-state) | decision-making | 0.70 | Compares Event Grid, heartbeat, and other options with concrete pros/cons and limitations to help select an approach; product-specific decision guidance rather than generic concepts. |
 | [Multi-step updates](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-multi-step-updates) | configuration | 0.70 | Explains inline and reference steps in manifest schema v4; implies specific manifest fields and step configuration details. |
-| [Prepare for root key rotation](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-rootkey) | security | 0.70 | Describes root key rotation behavior and required customer actions; product-specific security lifecycle guidance. |
+| [Prepare for root key rotation](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-rootkey) | security | 0.70 | Root key rotation guidance is security-specific and likely includes product-specific procedures, timing, and configuration requirements for Device Update keys, which are not generic security concepts. |
 | [Read device-to-cloud messages from the built-in endpoint](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-messages-read-builtin) | integrations | 0.70 | Explains using the Event Hubs-compatible messages/events endpoint with specific behaviors and routing interactions, which are product-specific integration patterns. |
 | [Region mapping for scan and failover](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-region-mapping) | deployment | 0.70 | Region mapping for BCDR; will contain specific region-to-region mappings and processing behavior for imports, which are deployment-specific constraints. |
 | [Regulatory compliance controls by Azure Policy](https://learn.microsoft.com/en-us/azure/iot-hub/security-controls-policy) | security | 0.70 | Lists built-in Azure Policy definitions and control mappings for IoT Hub, which are detailed compliance/security configuration references. |
@@ -208,6 +229,7 @@ confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Central (use az
 | [How to send additional data from devices](https://learn.microsoft.com/en-us/azure/iot-dps/how-to-send-additional-data) | integrations | 0.65 | Describes how to transfer extra payload data in DPS registration flows; involves DPS-specific request/response fields and patterns used by custom allocation policies. |
 | [Manage deprovisioning](https://learn.microsoft.com/en-us/azure/iot-dps/how-to-unprovision-devices) | security | 0.65 | Describes deprovisioning steps including disenrollment and disabling/deleting devices; these are product-specific identity and access control operations for DPS and IoT Hub, qualifying as security configuration guidance. |
 | [Networking requirements](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-networking) | security | 0.65 | Network requirements article will list specific ports, endpoints, and protocols needed for Device Update, which are product-specific security/network details. |
+| [Provisioning device update agent](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-agent-provisioning) | deployment | 0.65 | Provisioning the agent as a module identity involves product-specific deployment steps, identities, and constraints tied to IoT Hub/IoT Edge; these are concrete deployment patterns beyond generic tutorials. |
 | [Regenerate access keys](https://learn.microsoft.com/en-us/azure/iot-hub/regenerate-keys) | security | 0.65 | Provides concrete procedures via portal/CLI/REST for rotating IoT Hub SAS keys, which are product-specific security operations. |
 | [Renewal of device certificates](https://learn.microsoft.com/en-us/azure/iot-hub/concept-certificate-renewal) | best-practices | 0.65 | Explains when to renew, available renewal paths, and how devices track expiration; this is lifecycle guidance with product-specific recommendations and edge cases around renewal timing and flows. |
 | [Send cloud-to-device messages from IoT Hub](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-messages-c2d) | configuration | 0.65 | Developer guide with lifecycle and configuration options for C2D messages, including product-specific settings and behaviors that go beyond conceptual messaging knowledge. |
@@ -232,8 +254,6 @@ confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Central (use az
 | [Create an update](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/create-update) | 0.55 | How-to prepare an update and create an import manifest; likely references the schema article for details rather than containing the schema itself. |
 | [Manage device groups](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/create-update-group) | 0.55 | How-to manage device groups using tags; summary doesn’t show numeric limits or detailed configuration matrices. |
 | [Data privacy](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-data-privacy) | 0.50 | Data privacy description and telemetry fields; more policy/behavioral than actionable security configuration or troubleshooting. |
-| [Provisioning device update agent](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-agent-provisioning) | 0.50 | Provisioning how-to for the agent; summary doesn’t clearly indicate detailed config tables or unique patterns beyond standard module provisioning. |
-| [Release notes and version history](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-changelog) | 0.50 | Release notes and version history; while specific, they are not a stable skill-type reference (no configs, limits, or troubleshooting flows). |
 | [Use TLS downloads](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-tls-download) | 0.50 | TLS download capability overview and preview status; likely conceptual without detailed configuration parameters or limits. |
 | [What is Device Update for IoT Hub?](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/understand-device-update) | 0.50 | High-level introduction to Device Update for IoT Hub; mostly conceptual overview without detailed configuration tables or error mappings. |
 | [Compliance](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-compliance) | 0.45 | Explains compliance concept with examples, but appears conceptual without configuration tables or numeric thresholds. |
@@ -245,7 +265,6 @@ confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Central (use az
 | [Overview of device management](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-device-management-overview) | 0.45 | Device management overview; focuses on patterns and concepts (reboot, firmware update, etc.) rather than detailed configuration parameters or limits. |
 | [Proxy updates](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-proxy-updates) | 0.45 | Proxy updates overview and use cases; summary doesn’t indicate detailed configuration parameters or code patterns. |
 | [React to IoT Hub events with Event Grid](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-event-grid) | 0.45 | Integration overview between IoT Hub and Event Grid; describes capabilities and scenarios but not detailed parameter tables or decision matrices. |
-| [What's new?](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-what-is-new) | 0.45 | Overview of new preview features; summary doesn’t indicate detailed config tables, limits, or decision matrices—more feature announcement style. |
 | [Deployments](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-deployments) | 0.40 | Deployment concept overview (what a deployment is, association with groups); summary doesn’t show detailed constraints or matrices. |
 | [How Device Update uses Plug and Play](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-plug-and-play) | 0.40 | Explains how Device Update uses IoT Plug and Play interfaces conceptually; summary doesn’t show detailed schemas or parameter tables. |
 | [IoT Service SDKs](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-sdks) | 0.40 | Duplicate of index 29; SDK index/overview without deep parameter or pattern details. |
@@ -255,7 +274,6 @@ confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Central (use az
 | [Monitor IoT Hub](https://learn.microsoft.com/en-us/azure/iot-hub/monitor-iot-hub) | 0.40 | General monitoring overview for IoT Hub with Azure Monitor; mostly conceptual description of data types and analysis paths, not detailed limits or configs. |
 | [Reprovision devices](https://learn.microsoft.com/en-us/azure/iot-dps/how-to-reprovision) | 0.40 | How-to for configuring reprovisioning policies but likely procedural without detailed config tables, limits, or product-specific gotchas; summary doesn't indicate concrete parameters or edge-case mappings. |
 | [Resource Manager template](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-sdks) | 0.40 | Primarily an index/overview of SDKs with links; lacks detailed parameter tables or product-specific patterns itself. |
-| [Use delta updates](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/delta-updates) | 0.40 | Conceptual explanation of delta updates and preview status; summary doesn’t indicate detailed configuration or numeric thresholds. |
 | [Use metrics and logs to monitor IoT Hub](https://learn.microsoft.com/en-us/azure/iot-hub/tutorial-use-metrics-and-diags) | 0.40 | Tutorial-style setup of metrics and logs; mostly step-by-step UI usage without deep config matrices or error-code mappings. |
 | [X.509 certificates](https://learn.microsoft.com/en-us/azure/iot-hub/reference-x509-certificates) | 0.40 | General X.509 certificate reference (fields, extensions) aligned with RFC 5280; largely generic PKI knowledge rather than IoT Hub–specific configuration. |
 | [Choose an IoT Hub SDK](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-sdks) | 0.35 | SDK overview and links; not focused on detailed parameter references or integration patterns, more of a navigation page. |
@@ -265,13 +283,14 @@ confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Central (use az
 | [Automate provisioning with GitHub Actions](https://learn.microsoft.com/en-us/azure/iot-dps/tutorial-automation-github-actions) | 0.30 | GitHub Actions GitOps tutorial; CI/CD example but no tier support matrix or deployment constraints by SKU. |
 | [Automatic device management at scale](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-automatic-device-management) | 0.30 | High-level description of automatic device management; no detailed limits, configs, or decision matrices beyond what an LLM likely knows. |
 | [Custom allocation policies](https://learn.microsoft.com/en-us/azure/iot-dps/concepts-custom-allocation) | 0.30 | Explains custom allocation policies conceptually; lacks decision matrices with thresholds or detailed integration parameter tables. |
-| [Device Update agent](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-agent-overview) | 0.30 | Agent conceptual structure overview; no indication of config parameters, limits, or troubleshooting mappings. |
-| [Frequently asked questions](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-faq) | 0.30 | FAQ about new features; likely conceptual and policy-focused rather than detailed technical limits or config parameters. |
+| [Delta updates](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/delta-updates) | 0.30 | Delta updates overview focuses on conceptual explanation of differential updates and benefits; no clear indication of numeric thresholds, configuration tables, or detailed patterns. |
+| [Frequently asked questions](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-faq) | 0.30 | FAQ about new generation of IoT Hub is likely to be conceptual and feature-focused; summary does not indicate numeric limits, configuration parameter tables, or error-code-based troubleshooting. |
 | [Perform manual failover](https://learn.microsoft.com/en-us/azure/iot-hub/tutorial-manual-failover) | 0.30 | Tutorial-style walkthrough of manually failing over an Azure IoT hub; based on the summary it focuses on how to perform the operation and high-level notes (geo-paired region, no additional cost, disaster recovery use) rather than detailed limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. Lacks the specific numeric limits, config tables, or error mappings required for any sub-skill type. |
 | [Provision devices with X.509](https://learn.microsoft.com/en-us/azure/iot-dps/tutorial-custom-hsm-enrollment-group-x509) | 0.30 | Tutorial for X.509 enrollment groups; likely includes some DPS-specific steps but primarily procedural, not configuration or security reference. |
 | [Provision devices with symmetric keys](https://learn.microsoft.com/en-us/azure/iot-dps/how-to-legacy-device-symm-key) | 0.30 | Tutorial for symmetric key enrollment groups; mostly how-to steps without detailed security role mappings or config tables. |
 | [Provision for geolatency](https://learn.microsoft.com/en-us/azure/iot-dps/how-to-provision-multitenant) | 0.30 | Tutorial for geo-latency provisioning; scenario-focused guidance without quantified thresholds or configuration matrices. |
 | [Query language overview](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-query-language) | 0.30 | Primarily explains the IoT Hub SQL-like query language conceptually. While it likely includes syntax and examples, it doesn't fit any targeted sub-skill: no numeric limits, no decision matrices, no config parameter tables, no security roles, and not organized as troubleshooting. It’s more of a language reference/overview than expert configuration or limits content. |
+| [Release notes and version history](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-changelog) | 0.30 | Release notes and version history typically list changes and features but not the structured limits, configs, or troubleshooting mappings required by the defined sub-skill types. The summary does not indicate presence of numeric limits, configuration tables, error-code mappings, or decision matrices. |
 | [Roles and operations](https://learn.microsoft.com/en-us/azure/iot-dps/concepts-roles-operations) | 0.30 | Describes roles and operations conceptually; no detailed security roles, limits, or configuration parameters. |
 | [Use custom allocation policies](https://learn.microsoft.com/en-us/azure/iot-dps/tutorial-custom-allocation-policies) | 0.30 | Tutorial on custom allocation policies; describes using Azure Functions webhook but not as a decision matrix or best-practices reference. |
 | [ARM template](https://learn.microsoft.com/en-us/azure/iot-dps/quick-setup-auto-provision-rm) | 0.20 | ARM template quickstart; shows a sample template but not a full configuration reference or constraints. |
@@ -282,6 +301,7 @@ confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Central (use az
 | [Create an IoT hub (no ADR integration)](https://learn.microsoft.com/en-us/azure/iot-hub/create-hub) | 0.20 | This article explains how to create, manage, and delete IoT hubs via portal/CLI/PowerShell and retrieve a connection string. That is standard procedural content without mention of specific limits, configuration parameter tables, or decision matrices. It does not appear to contain expert-only reference information. |
 | [Create message routes and endpoints](https://learn.microsoft.com/en-us/azure/iot-hub/how-to-routing-portal) | 0.20 | Step-by-step portal tutorial for creating and deleting IoT Hub routes and endpoints; no indication of configuration tables, limits, error codes, or product-specific best-practice guidance beyond generic how-to instructions. |
 | [Device Update account and instance](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-resources) | 0.20 | Page is a conceptual/resources overview for Device Update for Azure IoT Hub (accounts, instances, basic resource relationships). It does not list numeric limits, configuration parameter tables, error codes, or decision matrices with quantified trade-offs, so it does not meet any sub-skill expert-knowledge criteria. |
+| [Device Update agent](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-agent-overview) | 0.20 | Agent overview is primarily conceptual (structure, capabilities, actions) without detailed configuration parameters, limits, or product-specific troubleshooting mappings. |
 | [Get started (ADR integration)](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-device-registry-setup) | 0.20 | This is a preview deployment/how-to article for creating an IoT Hub with Device Registry integration and certificate management. The summary indicates step-by-step deployment guidance, not configuration matrices, limits, or detailed deployment constraints by tier/plan. It reads as a tutorial rather than a reference of expert-only details. |
 | [Key concepts for certificate management](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-certificate-management-concepts) | 0.20 | Page introduces key concepts for certificate management in Azure IoT Hub, focusing on fundamental ideas and preview disclaimers. The summary does not indicate specific numeric limits, configuration options with defaults, security role definitions, or error-code-based troubleshooting. It is conceptual documentation, not expert-level configuration, limits, or troubleshooting content. |
 | [Libraries and SDKs](https://learn.microsoft.com/en-us/azure/iot-dps/libraries-sdks) | 0.20 | Primarily a catalog/overview of available SDKs; no detailed configuration tables, limits, or product-specific troubleshooting content. |
@@ -290,11 +310,12 @@ confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Central (use az
 | [TPM device sample](https://learn.microsoft.com/en-us/azure/iot-dps/quick-create-simulated-device-tpm) | 0.20 | Tutorial for provisioning a TPM simulated device; focused on example flow, not on limits, config matrices, or error mappings. |
 | [Terraform](https://learn.microsoft.com/en-us/azure/iot-dps/quick-setup-auto-provision-terraform) | 0.20 | Terraform quickstart; focuses on example configuration, not exhaustive configuration options or limits. |
 | [Tutorial - Route device messages to storage](https://learn.microsoft.com/en-us/azure/iot-hub/tutorial-routing) | 0.20 | Tutorial for configuring IoT Hub message routing using CLI and portal; appears to be a walkthrough without detailed limits, configuration matrices, or troubleshooting/error-code mappings. |
+| [What's new?](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-what-is-new) | 0.20 | What's New article is primarily a feature and preview overview; it describes new capabilities but not detailed configuration matrices, limits, or troubleshooting mappings. |
 | [X.509 certificate sample](https://learn.microsoft.com/en-us/azure/iot-dps/quick-create-simulated-device-x509) | 0.20 | Tutorial for provisioning an X.509 simulated device; step-by-step example rather than reference-style expert details. |
 | [IoT Device SDKs](https://learn.microsoft.com/en-us/azure/iot-hub/iot-sdks) | 0.10 | Page is primarily a catalog/list of available IoT SDKs and related APIs with links. It does not contain detailed configuration parameters, limits, error codes, or product-specific decision matrices; it’s more of a navigational/overview reference. |
 | [Send telemetry using CLI](https://learn.microsoft.com/en-us/azure/iot-hub/quickstart-send-telemetry-cli) | 0.10 | This is a quickstart tutorial for sending telemetry using the Azure CLI. Quickstarts focus on basic usage and sample flows, not on detailed limits, configuration matrices, or troubleshooting mappings with error codes. It is unlikely to contain the kind of expert reference knowledge described in the sub-skill types. |
 | [What is IoT Hub Device Provisioning Service?](https://learn.microsoft.com/en-us/azure/iot-dps/about-iot-dps) | 0.10 | High-level overview of Azure IoT Hub Device Provisioning Service describing purpose and benefits without specific limits, configuration parameters, error codes, or decision matrices. |
-| [What is IoT Hub?](https://learn.microsoft.com/en-us/azure/iot-hub/iot-concepts-and-iot-hub) | 0.10 | Conceptual 'What is IoT Hub?' overview; marketing/introductory content without detailed limits, configs, or troubleshooting. |
+| [What is IoT Hub?](https://learn.microsoft.com/en-us/azure/iot-hub/iot-concepts-and-iot-hub) | 0.10 | High-level conceptual overview of Azure IoT Hub and its role; describes what the service is and basic concepts without detailed limits, configuration tables, or product-specific troubleshooting. |
 | [DPS terminology](https://learn.microsoft.com/en-us/azure/iot-dps/concepts-service) | 0.05 | Terminology and glossary; conceptual definitions only. |
 | [Symmetric key attestation](https://learn.microsoft.com/en-us/azure/iot-dps/concepts-symmetric-key-attestation) | 0.05 | Conceptual overview of symmetric key attestation; no numeric limits, config tables, or security role details. |
 | [TPM attestation](https://learn.microsoft.com/en-us/azure/iot-dps/concepts-tpm-attestation) | 0.05 | Conceptual TPM attestation overview; no expert-only numeric or configuration reference content. |

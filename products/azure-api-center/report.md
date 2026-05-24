@@ -37,8 +37,8 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 36
+- **Updated Pages**: 0
+- **Unchanged**: 37
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-api-center/azure-api-center.csv`
 
@@ -54,11 +54,6 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 | *(Unclassified)* | 22 | 59.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [Frequently asked questions](https://learn.microsoft.com/en-us/azure/api-center/frequently-asked-questions)
-  - Updated: 2026-01-28T23:12:00Z → 2026-01-28T23:12:00.000Z
 
 ## Classified Pages
 

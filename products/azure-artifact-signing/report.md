@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-17'
+generated_at: '2026-05-24'
 category_descriptions:
   best-practices: 'Guidance on managing signing certificates end-to-end: rotation,
     renewal, expiration handling, key protection, and lifecycle policies for Azure
@@ -18,7 +18,8 @@ skill_description: Expert knowledge for Azure Artifact Signing development inclu
   best practices, decision making, security, configuration, and integrations & coding
   patterns. Use when managing signing cert lifecycle, RBAC roles, DGSSv2 migration,
   diagnostic logs, or CI/CD signing integrations, and other Azure Artifact Signing
-  related development tasks.
+  related development tasks. Not for Azure Key Vault (use azure-key-vault), Azure
+  Artifacts (use azure-artifacts), Azure Information Protection (use azure-information-protection).
 use_when: Use when managing signing cert lifecycle, RBAC roles, DGSSv2 migration,
   diagnostic logs, or CI/CD signing integrations, and other Azure Artifact Signing
   related development tasks.
@@ -37,8 +38,8 @@ confusable_not_for: Not for Azure Key Vault (use azure-key-vault), Azure Artifac
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 10
+- **Updated Pages**: 1
+- **Unchanged**: 13
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-artifact-signing/azure-artifact-signing.csv`
 
@@ -57,14 +58,8 @@ confusable_not_for: Not for Azure Key Vault (use azure-key-vault), Azure Artifac
 
 ### Updated Pages
 
-- [What is the Artifact Signing service?](https://learn.microsoft.com/en-us/azure/artifact-signing/overview)
-  - Updated: 2026-01-08T18:12:00.000Z → 2026-05-12T22:14:00.000Z
-- [Set up signing integrations to use Artifact Signing](https://learn.microsoft.com/en-us/azure/artifact-signing/how-to-signing-integrations)
-  - Updated: 2026-01-14T06:10:00.000Z → 2026-05-16T05:17:00.000Z
-- [Assign roles in Artifact Signing](https://learn.microsoft.com/en-us/azure/artifact-signing/tutorial-assign-roles)
-  - Updated: 2026-01-08T18:12:00.000Z → 2026-05-15T11:43:00.000Z
-- [Frequently asked questions about Artifact Signing](https://learn.microsoft.com/en-us/azure/artifact-signing/faq)
-  - Updated: 2026-05-08T22:13:00Z → 2026-05-16T05:17:00.000Z
+- [Set up Artifact Signing](https://learn.microsoft.com/en-us/azure/artifact-signing/quickstart)
+  - Updated: 2026-04-28T18:47:00.000Z → 2026-05-21T08:00:00.000Z
 
 ## Classified Pages
 
@@ -87,5 +82,5 @@ confusable_not_for: Not for Azure Key Vault (use azure-key-vault), Azure Artifac
 | [Revoke a certificate profile in Artifact Signing](https://learn.microsoft.com/en-us/azure/artifact-signing/how-to-cert-revocation) | 0.45 | Covers revoking certificate profiles and implications; mainly procedural and conceptual without detailed config tables or error-code-based troubleshooting. |
 | [Artifact Signing trust models](https://learn.microsoft.com/en-us/azure/artifact-signing/concept-trust-models) | 0.30 | Conceptual explanation of trust models and scenarios; appears architectural/conceptual without quantified thresholds, matrices, or config tables. |
 | [Frequently asked questions about Artifact Signing](https://learn.microsoft.com/en-us/azure/artifact-signing/faq) | 0.30 | FAQ page likely addresses common questions at a conceptual or usage level. The description does not indicate presence of detailed limits, configuration tables, error codes, or other structured expert knowledge required by the defined sub-skill types. |
-| [Set up Artifact Signing](https://learn.microsoft.com/en-us/azure/artifact-signing/quickstart) | 0.30 | Quickstart focuses on creating Artifact Signing resources via portal/CLI and completing identity validation. From the summary, it appears to be a step-by-step getting-started guide without detailed limits, configuration parameter tables, error-code-based troubleshooting, or security role/permission specifics. Lacks the structured expert details required for any sub-skill type. |
+| [Set up Artifact Signing](https://learn.microsoft.com/en-us/azure/artifact-signing/quickstart) | 0.20 | Quickstart for setting up Artifact Signing focuses on step-by-step creation of resources via portal/CLI; description indicates a basic getting-started guide without detailed limits, configuration parameter tables, security role lists, or troubleshooting error mappings. |
 | [What is the Artifact Signing service?](https://learn.microsoft.com/en-us/azure/artifact-signing/overview) | 0.20 | High-level overview of Artifact Signing; describes purpose and benefits but does not include concrete limits, configuration parameters, roles, or other product-specific technical details. |

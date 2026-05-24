@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-12'
+generated_at: '2026-05-24'
 category_descriptions:
   integrations: APIs, CLI, and Python client for automating CycleCloud, plus patterns
     to integrate schedulers (Slurm, Grid Engine, HTCondor, LSF, OpenPBS, HPC Pack),
@@ -39,14 +39,14 @@ confusable_not_for: Not for Azure Batch (use azure-batch), Azure HPC Cache (use 
 
 ## Summary
 
-- **Total Pages**: 114
-- **Fetched**: 114
+- **Total Pages**: 115
+- **Fetched**: 115
 - **Fetch Failed**: 0
 - **Classified**: 87
-- **Unclassified**: 27
+- **Unclassified**: 28
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
 - **Unchanged**: 114
 - **Deleted Pages**: 0
@@ -58,15 +58,19 @@ confusable_not_for: Not for Azure Batch (use azure-batch), Azure HPC Cache (use 
 |------|-------|------------|
 | architecture-patterns | 1 | 0.9% |
 | best-practices | 1 | 0.9% |
-| configuration | 41 | 36.0% |
+| configuration | 41 | 35.7% |
 | decision-making | 4 | 3.5% |
-| deployment | 9 | 7.9% |
-| integrations | 17 | 14.9% |
+| deployment | 9 | 7.8% |
+| integrations | 17 | 14.8% |
 | security | 11 | 9.6% |
 | troubleshooting | 3 | 2.6% |
-| *(Unclassified)* | 27 | 23.7% |
+| *(Unclassified)* | 28 | 24.3% |
 
 ## Changes
+
+### New Pages
+
+- [8.9.0 Release Notes](https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/8-9-0?view=cyclecloud-8)
 
 ## Classified Pages
 
@@ -167,6 +171,7 @@ confusable_not_for: Not for Azure Batch (use azure-batch), Azure HPC Cache (use 
 | [8.8.0 Release Notes](https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/8-8-0?view=cyclecloud-8) | 0.40 | Release notes for v8.8.0; change log style information, not structured expert guidance per the defined sub-skill types. |
 | [8.8.1 Release Notes](https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/8-8-1?view=cyclecloud-8) | 0.40 | Version-specific release notes focused on stability; not a structured reference for limits, configuration, or troubleshooting. |
 | [8.8.2 Release Notes](https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/8-8-2?view=cyclecloud-8) | 0.40 | Version-specific release notes; mostly change log content rather than reusable expert configuration or troubleshooting reference. |
+| [8.9.0 Release Notes](https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/8-9-0?view=cyclecloud-8) | 0.40 | Release notes typically list new features and bug fixes but are not organized as limits, configuration references, troubleshooting guides, or other defined sub-skill types. Without evidence of structured limits, config tables, error-code mappings, or decision matrices, this page does not fit the specified expert-knowledge categories. |
 | [Monitoring](https://learn.microsoft.com/en-us/azure/cyclecloud/concepts/monitoring?view=cyclecloud-8) | 0.40 | Service monitoring description; mentions enabling monitoring but not specific metrics schemas, config parameters, or limits. |
 | [Submit job on CycleCloud with Slurm](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/ccws/submit-job-with-slurm?view=cyclecloud-8) | 0.40 | Job submission tutorial for Slurm on CycleCloud; mostly basic usage steps without detailed config matrices or limits. |
 | [User Management](https://learn.microsoft.com/en-us/azure/cyclecloud/concepts/user-management?view=cyclecloud-8) | 0.40 | User management overview; likely lists roles but summary doesn’t indicate detailed RBAC names or config parameters. |

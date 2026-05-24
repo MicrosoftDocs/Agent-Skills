@@ -38,8 +38,8 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 10
+- **Updated Pages**: 0
+- **Unchanged**: 11
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-oracle/azure-oracle.csv`
 
@@ -54,11 +54,6 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | *(Unclassified)* | 7 | 63.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [Network planning](https://learn.microsoft.com/en-us/azure/oracle/oracle-db/oracle-database-network-plan)
-  - Updated: 2026-04-15T22:11:00.000Z → 2026-05-12T17:16:00.000Z
 
 ## Classified Pages
 

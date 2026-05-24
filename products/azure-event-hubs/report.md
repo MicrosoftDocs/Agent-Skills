@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 111
+- **Updated Pages**: 0
+- **Unchanged**: 114
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-event-hubs/azure-event-hubs.csv`
 
@@ -75,15 +75,6 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 | *(Unclassified)* | 42 | 36.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [FAQ - Event Hubs for Kafka](https://learn.microsoft.com/en-us/azure/event-hubs/apache-kafka-frequently-asked-questions)
-  - Updated: 2025-03-06T23:16:00Z → 2025-03-06T23:16:00.000Z
-- [Encrypt data using customer-managed keys](https://learn.microsoft.com/en-us/azure/event-hubs/configure-customer-managed-key)
-  - Updated: 2024-05-22T22:11:00.000Z → 2026-05-11T22:24:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-faq)
-  - Updated: 2026-02-13T06:11:00Z → 2026-02-13T06:11:00.000Z
 
 ## Classified Pages
 

@@ -1,9 +1,9 @@
 ---
 name: azure-automation
-description: Expert knowledge for Azure Automation development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing runbooks/DSC, Hybrid Runbook Workers, managed identities, webhooks/SendGrid, or AMA Change Tracking, and other Azure Automation related development tasks. Not for Azure Functions (use azure-functions), Azure Logic Apps (use azure-logic-apps), Azure Scheduler (use azure-scheduler), Azure Update Manager (use azure-update-manager).
+description: Expert knowledge for Azure Automation development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building Azure Automation runbooks, DSC/State Configuration, Hybrid Runbook Workers, Private Link, or AMA-based Change Tracking, and other Azure Automation related development tasks. Not for Azure Functions (use azure-functions), Azure Logic Apps (use azure-logic-apps), Azure Scheduler (use azure-scheduler), Azure Update Manager (use azure-update-manager).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-03"
+  generated_at: "2026-05-24"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Automation Skill
@@ -26,10 +26,10 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L36-L46 | Diagnosing and fixing Azure Automation issues: runbook failures, DSC/State Configuration, Hybrid Runbook Workers, managed identities, shared resources, and collecting logs for support. |
 | Best Practices | L47-L56 | Best practices for structuring and running Automation runbooks: modular parent-child design, execution patterns, error handling, stream/output usage, and avoiding context/locking issues. |
-| Decision Making | L57-L66 | Guidance for planning and migrating Azure Automation: runbook types, Orchestrator/runbook/agent/Hybrid Worker migrations, Run As → managed identity, and module/AzureRM to Az updates. |
-| Limits & Quotas | L67-L73 | Azure Automation capacity limits, quotas, and supported configurations, plus Change Tracking & Inventory support details when using the Azure Monitor Agent (AMA). |
-| Security | L74-L94 | Securing Automation accounts: identities (system/user-assigned), RBAC, auth methods, encryption, certificates/credentials, Private Link, Azure Policy, and Terraform-based secure provisioning. |
-| Configuration | L95-L137 | Configuring and running Azure Automation runbooks and DSC/State Configuration at scale, including alerts, hybrid workers, schedules, source control, policies, and package/runtime management. |
+| Decision Making | L57-L65 | Guidance for planning and migrating Azure Automation: runbook types, Orchestrator/runbook/agent/Hybrid Worker migrations, Run As → managed identity, and module/AzureRM to Az updates. |
+| Limits & Quotas | L66-L72 | Azure Automation capacity limits, quotas, and supported configurations, plus Change Tracking & Inventory support details when using the Azure Monitor Agent (AMA). |
+| Security | L73-L93 | Securing Automation accounts: identities (system/user-assigned), RBAC, auth methods, encryption, certificates/credentials, Private Link, Azure Policy, and Terraform-based secure provisioning. |
+| Configuration | L94-L137 | Configuring Azure Automation runbooks, DSC/State Configuration, Hybrid Runbook Workers, schedules, modules/packages, alerts, policies, and integrations (VS Code, source control, ARM, Azure Monitor). |
 | Integrations & Coding Patterns | L138-L150 | Patterns for integrating runbooks with AWS, ARM/SQL/Office 365, webhooks, email (SendGrid), Azure Monitor logging, and using the graphical runbook SDK with managed identities |
 | Deployment | L151-L159 | Guides for deploying resilient Automation accounts, setting up disaster recovery, and installing/configuring Hybrid Runbook Workers (Windows/Linux, agent- and extension-based) plus DSC/Chocolatey CI/CD. |
 
@@ -62,7 +62,6 @@ This skill requires **network access** to fetch documentation content:
 | Migrate Change Tracking from Log Analytics agent to AMA | https://learn.microsoft.com/en-us/azure/automation/change-tracking/guidance-migration-log-analytics-monitoring-agent |
 | Migrate agent-based Hybrid Workers to extension-based workers | https://learn.microsoft.com/en-us/azure/automation/migrate-existing-agent-based-hybrid-worker-to-extension-based-workers |
 | Plan and execute migration from Run As to managed identities | https://learn.microsoft.com/en-us/azure/automation/migrate-run-as-accounts-managed-identity |
-| Plan Azure Automation module management and AzureRM migration | https://learn.microsoft.com/en-us/azure/automation/shared-resources/modules |
 
 ### Limits & Quotas
 | Topic | URL |
@@ -126,6 +125,7 @@ This skill requires **network access** to fetch documentation content:
 | Deploy Azure Automation account via ARM template | https://learn.microsoft.com/en-us/azure/automation/quickstart-create-automation-account-template |
 | Configure input parameters for Azure Automation runbooks | https://learn.microsoft.com/en-us/azure/automation/runbook-input-parameters |
 | Understand and configure Azure Automation runtime environments | https://learn.microsoft.com/en-us/azure/automation/runtime-environment-overview |
+| Configure and manage PowerShell modules in Azure Automation | https://learn.microsoft.com/en-us/azure/automation/shared-resources/modules |
 | Configure schedules for Azure Automation runbooks | https://learn.microsoft.com/en-us/azure/automation/shared-resources/schedules |
 | Define and use variable assets in Azure Automation | https://learn.microsoft.com/en-us/azure/automation/shared-resources/variables |
 | Configure Azure Automation source control integration | https://learn.microsoft.com/en-us/azure/automation/source-control-integration |

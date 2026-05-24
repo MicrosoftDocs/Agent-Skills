@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Analysis Services (use azure-analysis-services
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 444
+- **Updated Pages**: 0
+- **Unchanged**: 447
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-synapse-analytics/azure-synapse-analytics.csv`
 
@@ -76,15 +76,6 @@ confusable_not_for: Not for Azure Analysis Services (use azure-analysis-services
 | *(Unclassified)* | 171 | 38.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [FAQ](https://learn.microsoft.com/en-us/azure/synapse-analytics/overview-faq)
-  - Updated: 2025-12-12T23:21:00Z → 2025-12-12T23:21:00.000Z
-- [SQL FAQ](https://learn.microsoft.com/en-us/azure/synapse-analytics/synapse-link/faq)
-  - Updated: 2025-11-03T22:11:00Z → 2025-11-03T22:11:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-overview-faq)
-  - Updated: 2025-10-08T22:11:00Z → 2025-10-08T22:11:00.000Z
 
 ## Classified Pages
 

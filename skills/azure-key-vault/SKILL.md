@@ -1,9 +1,9 @@
 ---
 name: azure-key-vault
-description: Expert knowledge for Azure Key Vault development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Key Vault with Event Grid, Private Link, Managed HSM, BYOK imports, or automated key/secret rotation, and other Azure Key Vault related development tasks. Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure Cloud Hsm (use azure-cloud-hsm), Azure Payment Hsm (use azure-payment-hsm), Azure Information Protection (use azure-information-protection).
+description: Expert knowledge for Azure Key Vault development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Key Vault with Event Grid, Private Link, Managed HSM, RBAC, or IaC tools like Bicep/Terraform, and other Azure Key Vault related development tasks. Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure Cloud Hsm (use azure-cloud-hsm), Azure Payment Hsm (use azure-payment-hsm), Azure Information Protection (use azure-information-protection).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-17"
+  generated_at: "2026-05-24"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Key Vault Skill
@@ -29,9 +29,9 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L56-L62 | Guidance on planning key and HSM capacity, scaling, and migrating cryptographic workloads or Key Vault access control from access policies to RBAC |
 | Limits & Quotas | L63-L73 | Key Vault and Managed HSM limits: throttling, quotas, logging latency, secret size, soft-delete/recovery, and network/IP firewall configuration. |
 | Security | L74-L98 | Securing Key Vault and Managed HSM: auth, RBAC vs access policies, network/firewall, private endpoints, backups, soft delete, Zero Trust, and security best practices for keys, secrets, and certs. |
-| Configuration | L99-L121 | Configuring Key Vault and Managed HSM: monitoring, alerts, logging, policies, key types/rotation/secure release, BYOK imports, ARM templates, and special secret formats. |
-| Integrations & Coding Patterns | L122-L146 | Integrating Key Vault with Event Grid, Private Link, DigiCert, Databricks, Managed HSM TLS offload, and JavaScript code samples for managing keys/secrets and crypto operations |
-| Deployment | L147-L150 | How to deploy and provision Azure Key Vault and Managed HSM (vaults, keys, secrets) using ARM templates, Bicep, Terraform, Azure CLI, and PowerShell |
+| Configuration | L99-L122 | Configuring Key Vault and Managed HSM: monitoring, alerts, logging, metrics, policies, key types/algorithms, key rotation, secure key release, replication, and special secret formats. |
+| Integrations & Coding Patterns | L123-L147 | Integrating Key Vault with Event Grid, Private Link, DigiCert, Databricks, Managed HSM TLS offload, and JavaScript code samples for managing keys/secrets and crypto operations |
+| Deployment | L148-L151 | How to deploy and provision Azure Key Vault and Managed HSM (vaults, keys, secrets) using ARM templates, Bicep, Terraform, Azure CLI, and PowerShell |
 
 ### Troubleshooting
 | Topic | URL |
@@ -105,10 +105,11 @@ This skill requires **network access** to fetch documentation content:
 | Enable and configure Azure Key Vault diagnostic logging | https://learn.microsoft.com/en-us/azure/key-vault/general/howto-logging |
 | Configure monitoring for Azure Key Vault with Azure Monitor | https://learn.microsoft.com/en-us/azure/key-vault/general/monitor-key-vault |
 | Reference for Azure Key Vault monitoring metrics and logs | https://learn.microsoft.com/en-us/azure/key-vault/general/monitor-key-vault-reference |
-| Use supported key types and algorithms in Azure Key Vault | https://learn.microsoft.com/en-us/azure/key-vault/keys/about-keys-details |
+| Configure Azure Key Vault key types and algorithms | https://learn.microsoft.com/en-us/azure/key-vault/keys/about-keys-details |
 | Follow BYOK specification for importing HSM keys to Key Vault | https://learn.microsoft.com/en-us/azure/key-vault/keys/byok-specification |
 | Configure automatic cryptographic key rotation in Azure Key Vault | https://learn.microsoft.com/en-us/azure/key-vault/keys/how-to-configure-key-rotation |
 | Author secure key release policies in Key Vault | https://learn.microsoft.com/en-us/azure/key-vault/keys/policy-grammar |
+| Configure key types and algorithms in Managed HSM | https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/about-keys-details |
 | Configure health and performance alerts for Managed HSM | https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/configure-alerts |
 | Configure automated key rotation in Azure Managed HSM | https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/key-rotation |
 | Configure logging and audit events for Azure Managed HSM | https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/logging |

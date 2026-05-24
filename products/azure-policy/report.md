@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-17'
+generated_at: '2026-05-24'
 category_descriptions:
   configuration: Authoring, assigning, storing, and securing Machine Configuration
     (guest configuration) packages and policies, plus prerequisites, networking, remediation,
@@ -40,44 +40,53 @@ confusable_not_for: Not for Azure Blueprints (use azure-blueprints), Azure Role-
 
 ## Summary
 
-- **Total Pages**: 158
-- **Fetched**: 158
+- **Total Pages**: 148
+- **Fetched**: 148
 - **Fetch Failed**: 0
-- **Classified**: 98
-- **Unclassified**: 60
+- **Classified**: 89
+- **Unclassified**: 59
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 154
-- **Deleted Pages**: 0
+- **New Pages**: 2
+- **Updated Pages**: 0
+- **Unchanged**: 146
+- **Deleted Pages**: 12
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-policy/azure-policy.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| best-practices | 12 | 7.6% |
-| configuration | 11 | 7.0% |
-| decision-making | 3 | 1.9% |
-| deployment | 7 | 4.4% |
-| integrations | 2 | 1.3% |
-| security | 60 | 38.0% |
-| troubleshooting | 3 | 1.9% |
-| *(Unclassified)* | 60 | 38.0% |
+| best-practices | 12 | 8.1% |
+| configuration | 11 | 7.4% |
+| decision-making | 3 | 2.0% |
+| deployment | 7 | 4.7% |
+| integrations | 2 | 1.4% |
+| security | 51 | 34.5% |
+| troubleshooting | 3 | 2.0% |
+| *(Unclassified)* | 59 | 39.9% |
 
 ## Changes
 
-### Updated Pages
+### New Pages
 
-- [CIS Microsoft Azure Foundations Benchmark 2.0.0](https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-azure-2-0-0)
-  - Updated: 2026-03-19T08:00:00.000Z → 2026-05-12T08:00:00.000Z
-- [Microsoft cloud security benchmark](https://learn.microsoft.com/en-us/azure/governance/policy/samples/azure-security-benchmark)
-  - Updated: 2026-04-18T08:00:00.000Z → 2026-05-12T08:00:00.000Z
-- [RBI ITF Banks v2016](https://learn.microsoft.com/en-us/azure/governance/policy/samples/rbi-itf-banks-2016)
-  - Updated: 2026-02-19T08:00:00.000Z → 2026-05-12T08:00:00.000Z
-- [Spain ENS](https://learn.microsoft.com/en-us/azure/governance/policy/samples/spain-ens)
-  - Updated: 2026-02-24T08:00:00.000Z → 2026-05-12T08:00:00.000Z
+- [Mutate (preview)](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/effect-mutate)
+- [Azure Policy documentation](https://learn.microsoft.com/en-us/azure/governance/policy/)
+
+### Deleted Pages
+
+- ~~Mutate~~ (https://learn.microsoft.com/en-us/azure/governance/policy/concepts/effect-mutate)
+- ~~System Policy~~ (https://learn.microsoft.com/en-us/azure/governance/policy/concepts/systempolicy)
+- ~~CIS Security Benchmarks - AlmaLinux~~ (https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-linux/alma-ado)
+- ~~CIS Security Benchmarks - Debian Linux~~ (https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-linux/debian-ado)
+- ~~CIS Security Benchmarks - Oracle Linux~~ (https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-linux/oracle-ado)
+- ~~CIS Security Benchmarks - Red Hat Enterprise Linux~~ (https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-linux/rhel-ado)
+- ~~CIS Security Benchmarks - Rocky Linux~~ (https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-linux/rocky-ado)
+- ~~CIS Security Benchmarks - SUSE Linux Enterprise~~ (https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-linux/suse-ado)
+- ~~CIS Security Benchmarks - Ubuntu Linux~~ (https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-linux/ubuntu-ado)
+- ~~CIS Security Benchmarks for Linux Workloads - Overview~~ (https://learn.microsoft.com/en-us/azure/governance/policy/samples/guest-configuration-baseline-cis-linux)
+- ~~Windows security 2025 baseline~~ (https://learn.microsoft.com/en-us/azure/governance/policy/samples/guest-configuration-baseline-windows-server-2025)
+- ~~Apply MFA self-enforcement through Azure Policy~~ (https://learn.microsoft.com/en-us/azure/governance/policy/tutorials/mfa-enforcement)
 
 ## Classified Pages
 
@@ -121,20 +130,12 @@ confusable_not_for: Not for Azure Blueprints (use azure-blueprints), Azure Role-
 | [NIST SP 800-53 Rev. 5](https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-nist-sp-800-53-r5) | security | 0.78 | Similar to other regulatory compliance pages, this one lists specific NIST SP 800-53 Rev. 5 controls and their corresponding Azure Policy definitions/initiatives for Azure Government, which is detailed, product-specific security/compliance configuration information. |
 | [SOC 2 Type 2](https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-soc-2) | security | 0.78 | Provides mappings between SOC 2 controls and Azure Policy definitions/initiatives for Azure Government, listing specific control IDs and policy references. This is detailed, product-specific security/compliance configuration information. |
 | [Assignments](https://learn.microsoft.com/en-us/azure/governance/machine-configuration/concepts/assignments) | configuration | 0.75 | Describes guest assignment resource model, including metadata and version constraints (for example minimum version 1.0.0); product-specific configuration schema. |
-| [CIS Security Benchmarks - AlmaLinux](https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-linux/alma-ado) | security | 0.75 | Provides supported CIS benchmarks, mismatched rules, and configurable parameters for AlmaLinux, which are detailed, product- and OS-specific security configuration references. |
-| [CIS Security Benchmarks - Debian Linux](https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-linux/debian-ado) | security | 0.75 | Similar to index 24 but for Debian; includes benchmark versions, rule mappings, and parameters that are detailed security configuration data. |
-| [CIS Security Benchmarks - Oracle Linux](https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-linux/oracle-ado) | security | 0.75 | Reference for Oracle Linux CIS benchmarks with supported versions and configurable parameters, providing detailed security baseline configuration. |
-| [CIS Security Benchmarks - Red Hat Enterprise Linux](https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-linux/rhel-ado) | security | 0.75 | Detailed mapping of CIS benchmarks to Machine Configuration for RHEL, including mismatched rules and parameters, which is expert security configuration content. |
-| [CIS Security Benchmarks - Rocky Linux](https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-linux/rocky-ado) | security | 0.75 | Provides Rocky Linux-specific CIS benchmark support details and parameters, which are concrete security configuration references. |
-| [CIS Security Benchmarks - SUSE Linux Enterprise](https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-linux/suse-ado) | security | 0.75 | SUSE-specific CIS benchmark reference with supported benchmarks and configurable parameters, representing detailed security baseline guidance. |
-| [CIS Security Benchmarks - Ubuntu Linux](https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-linux/ubuntu-ado) | security | 0.75 | Ubuntu-specific CIS benchmark details, including supported versions and parameters, which are expert security configuration data. |
 | [Network Requirements](https://learn.microsoft.com/en-us/azure/governance/machine-configuration/overview/03-network-requirements) | configuration | 0.75 | Network requirements page usually lists specific endpoints, ports, and Private Link settings; these are concrete configuration parameters. |
 | [PCI DSS 3.2.1](https://learn.microsoft.com/en-us/azure/governance/policy/samples/pci-dss-3-2-1) | security | 0.75 | Control-by-control mapping for PCI DSS 3.2.1 to Azure Policy definitions; detailed security/compliance configuration. |
 | [PCI DSS 4.0](https://learn.microsoft.com/en-us/azure/governance/policy/samples/pci-dss-4-0) | security | 0.75 | Similar to 3.2.1 but for PCI DSS v4.0; Azure-specific mapping of controls to policy initiatives. |
 | [SWIFT CSP-CSCF 2022](https://learn.microsoft.com/en-us/azure/governance/policy/samples/swift-csp-cscf-2022) | security | 0.75 | Updated mapping for SWIFT CSP-CSCF 2022; detailed Azure Policy-based implementation of SWIFT security controls. |
 | [Specify custom parameters for baseline policy](https://learn.microsoft.com/en-us/azure/governance/machine-configuration/how-to/assign-security-baselines/specify-custom-parameters-for-baseline-policy) | security | 0.75 | Focuses on customizing security baseline parameters; likely includes specific parameter names and allowed values for security controls. |
 | [Using Terraform](https://learn.microsoft.com/en-us/azure/governance/machine-configuration/how-to/assign-configuration/terraform) | deployment | 0.75 | Terraform-based deployment of assignments; includes resource blocks and arguments specific to Machine Configuration. |
-| [Windows security 2025 baseline](https://learn.microsoft.com/en-us/azure/governance/policy/samples/guest-configuration-baseline-windows-server-2025) | security | 0.75 | Similar to index 33 but specific to Windows Server 2025 with customizable baseline content; includes detailed configuration settings and values. |
 | [Windows security baseline](https://learn.microsoft.com/en-us/azure/governance/policy/samples/guest-configuration-baseline-windows) | security | 0.75 | Details configuration settings for Windows Server 2012–2022 baselines, including rules and values, which are concrete security configuration details. |
 | [CIS Microsoft Azure Foundations Benchmark 2.0.0](https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-azure-2-0-0) | security | 0.72 | Page lists detailed mappings from specific CIS Microsoft Azure Foundations Benchmark 2.0.0 controls to concrete Azure Policy definitions and initiative details. These mappings (policy names, control IDs, and how they relate) are product- and standard-specific configuration/compliance knowledge that an LLM is unlikely to know from training and are directly tied to security and governance configuration. |
 | [Microsoft cloud security benchmark](https://learn.microsoft.com/en-us/azure/governance/policy/samples/azure-security-benchmark) | security | 0.72 | Contains a control-by-control mapping between Microsoft cloud security benchmark requirements and specific Azure Policy definitions within a built-in regulatory compliance initiative. The exact control IDs, policy names, and their relationships are specialized security/compliance configuration knowledge. |
@@ -146,7 +147,6 @@ confusable_not_for: Not for Azure Blueprints (use azure-blueprints), Azure Role-
 | [Built-in initiatives](https://learn.microsoft.com/en-us/azure/governance/policy/samples/built-in-initiatives) | security | 0.70 | Index of all built-in Azure Policy initiatives with initiative names and categories; provides concrete, product-specific compliance/security configuration artifacts beyond generic knowledge. |
 | [Built-in packages for guest configuration](https://learn.microsoft.com/en-us/azure/governance/policy/samples/built-in-packages) | configuration | 0.70 | Index of built-in guest configuration packages mapped to policy definitions and PowerShell modules. Contains concrete package names and mappings that are configuration reference data. |
 | [Built-in policies](https://learn.microsoft.com/en-us/azure/governance/policy/samples/built-in-policies) | security | 0.70 | Index of all Azure Policy built-in definitions with exact policy names and categories; this is product-specific configuration/security governance data that an LLM is unlikely to know exhaustively from training. |
-| [CIS Security Benchmarks for Linux Workloads - Overview](https://learn.microsoft.com/en-us/azure/governance/policy/samples/guest-configuration-baseline-cis-linux) | security | 0.70 | Reference for built-in CIS security benchmarks for Linux workloads via Machine Configuration, including detailed rules and configuration parameters, which are security baseline specifics. |
 | [Canada Federal PBMM](https://learn.microsoft.com/en-us/azure/governance/policy/samples/canada-federal-pbmm) | security | 0.70 | Provides control-to-policy mappings for Canada Federal PBMM; this is concrete, product-specific security/compliance configuration guidance not derivable from generic knowledge. |
 | [Deploy a baseline policy assignment](https://learn.microsoft.com/en-us/azure/governance/machine-configuration/how-to/assign-security-baselines/deploy-a-baseline-policy-assignment) | security | 0.70 | Describes specific policy definitions for Windows and Linux baselines and how to assign them; security-focused configuration guidance. |
 | [Determine causes of non-compliance](https://learn.microsoft.com/en-us/azure/governance/policy/how-to/determine-non-compliance) | troubleshooting | 0.70 | Focused on determining what caused non-compliance and which rule segment failed; this is symptom-to-cause diagnostic guidance specific to Azure Policy behavior. |
@@ -210,7 +210,6 @@ confusable_not_for: Not for Azure Blueprints (use azure-blueprints), Azure Role-
 | [Windows agent release notes](https://learn.microsoft.com/en-us/azure/governance/machine-configuration/whats-new/agent/windows) | 0.40 | Release notes for the Windows machine configuration agent typically list version changes, fixes, and known issues but not structured limits, configuration matrices, security role definitions, or troubleshooting mappings with error codes. Without clear evidence of such structured expert data (tables of settings, quotas, or error-code-to-solution mappings), it doesn't fit any defined sub-skill type. |
 | [Add user assign identities to virtual machines](https://learn.microsoft.com/en-us/azure/governance/policy/tutorials/modify-virtual-machine-identity) | 0.35 | Tutorial assigning user-assigned managed identities to VMs via Azure Policy; mostly procedural with one note about enforcement mode but no structured security/RBAC tables or config matrices. |
 | [Aliases](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/definition-structure-alias) | 0.35 | Describes alias conceptually and how to discover aliases using tools; the detailed alias list is external, so this page itself is more conceptual than reference. |
-| [Apply MFA self-enforcement through Azure Policy](https://learn.microsoft.com/en-us/azure/governance/policy/tutorials/mfa-enforcement) | 0.35 | Guide to self-enforce MFA using Azure Policy; high-level enforcement flow without specific RBAC role tables, auth parameters, or compliance configuration details. |
 | [Assignment structure](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/assignment-structure) | 0.35 | Explains policy assignment structure; mostly schema/JSON example, not a catalog of config options with defaults. |
 | [Basics](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/effect-basics) | 0.35 | High-level overview of Azure Policy effects and their behavior; detailed effect properties and examples are referenced elsewhere, so this page is primarily conceptual. |
 | [Deny action](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/effect-deny-action) | 0.35 | Explains denyAction effect and that DELETE is supported; still conceptual without detailed config or limits. |
@@ -218,7 +217,6 @@ confusable_not_for: Not for Azure Blueprints (use azure-blueprints), Azure Role-
 | [Disabled](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/effect-disabled) | 0.35 | Conceptual description of disabled effect and enforcementMode; lacks concrete configuration matrices or limits. |
 | [Implement Azure Policy with Azure DevOps](https://learn.microsoft.com/en-us/azure/governance/policy/tutorials/policy-devops-pipelines) | 0.35 | Tutorial integrating Azure Policy with Azure DevOps pipelines; describes a CI/CD scenario but lacks deployment matrices, tier constraints, or quantified trade-offs. |
 | [Initiative structure](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/initiative-definition-structure) | 0.35 | Describes initiative definition structure conceptually; likely JSON schema examples but not configuration catalogs or limits. |
-| [Mutate](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/effect-mutate) | 0.35 | Conceptual description of mutate effect for AKS; no detailed parameters, limits, or troubleshooting mappings. |
 | [React to policy state change events](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/event-overview) | 0.35 | Overview of reacting to Policy events via Event Grid; more integration concept than detailed config catalog. |
 | [Regulatory Compliance](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/regulatory-compliance) | 0.35 | Explains regulatory compliance initiatives conceptually; no specific numeric thresholds or config matrices in summary. |
 | [Append](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/effect-append) | 0.30 | High-level description of append effect; lacks product-specific configuration tables or quantified guidance. |
@@ -235,14 +233,15 @@ confusable_not_for: Not for Azure Blueprints (use azure-blueprints), Azure Role-
 | [Route policy state change events](https://learn.microsoft.com/en-us/azure/governance/policy/tutorials/route-state-change-events) | 0.30 | Tutorial wiring Azure Policy state change events to Event Grid via CLI; shows commands but not detailed parameter tables, limits, or diagnostic mappings. |
 | [Scope](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/scope) | 0.30 | Explains scope conceptually; no expert-only configuration tables, limits, or decision matrices. |
 | [Security baselines overview](https://learn.microsoft.com/en-us/azure/governance/machine-configuration/how-to/assign-security-baselines/overview-page) | 0.30 | High-level overview of security baselines; summary suggests conceptual description without detailed settings or parameters. |
-| [System Policy](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/systempolicy) | 0.30 | High-level guide to system policy capability; no detailed settings, limits, or troubleshooting mappings. |
 | [Virtual machine recommended policies](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/recommended-policies) | 0.30 | Describes recommended policies UI for VMs; no detailed technical configuration or numeric criteria in summary. |
 | [Compliance states](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/compliance-states) | 0.25 | Conceptual article on compliance states; summary shows no detailed configuration or numeric guidance. |
 | [Azure Policy for Kubernetes](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/policy-for-kubernetes) | 0.20 | Content is a conceptual explanation of how Azure Policy integrates with Kubernetes via OPA/Gatekeeper. The summary does not indicate specific limits, configuration parameter tables, error codes, or decision matrices. It describes capabilities and high-level behavior rather than product-specific numeric limits, configuration options, or troubleshooting mappings. |
+| [Mutate (preview)](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/effect-mutate) | 0.20 | Appears to be a conceptual explanation of the Azure Policy 'mutate' effect for Kubernetes/AKS, without clear evidence of numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. Likely describes behavior and usage conceptually rather than providing detailed configuration schemas or quantified trade-offs. |
 | [Overview](https://learn.microsoft.com/en-us/azure/governance/machine-configuration/whats-new/agent/) | 0.20 | High-level overview page that just links to platform-specific release notes; no concrete limits, configuration parameters, error codes, or decision matrices are evident in the summary. |
 | [Remediation options](https://learn.microsoft.com/en-us/azure/governance/machine-configuration/concepts/remediation-options) | 0.20 | Content appears to describe remediation behavior and options for Azure Policy machine configuration at a conceptual level (continuous remediation, remediation tasks, Safe Deployment framework) without exposing concrete limits, configuration parameter tables, error codes, or decision matrices with quantified trade-offs. It reads more like a feature explanation/how-to than a detailed reference with expert-only specifics. |
 | [What is Azure Machine Configuration?](https://learn.microsoft.com/en-us/azure/governance/machine-configuration/overview/01-overview-concepts) | 0.20 | Conceptual overview of Azure Machine Configuration; no detailed limits, configs, or error mappings. |
 | [What is Azure Policy?](https://learn.microsoft.com/en-us/azure/governance/policy/overview) | 0.20 | High-level overview of Azure Policy; mostly conceptual service description without detailed limits or configs. |
+| [Azure Policy documentation](https://learn.microsoft.com/en-us/azure/governance/policy/) | 0.10 | Landing/overview page for Azure Policy documentation; description indicates high-level conceptual content without specific limits, configuration tables, error codes, or decision matrices. |
 | [Azure Policy glossary](https://learn.microsoft.com/en-us/azure/governance/policy/policy-glossary) | 0.10 | Glossary of terms; definitions but no configuration, limits, or troubleshooting mappings. |
 | [Index](https://learn.microsoft.com/en-us/azure/governance/policy/samples/) | 0.10 | Index/navigation page listing Azure Policy built-in definitions and initiatives; no substantive technical content itself. |
 | [What's new in docs](https://learn.microsoft.com/en-us/azure/governance/machine-configuration/whats-new/docs) | 0.10 | Documentation change log; meta-information about docs, not product behavior or configuration. |

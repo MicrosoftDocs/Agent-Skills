@@ -37,8 +37,8 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 26
+- **Updated Pages**: 0
+- **Unchanged**: 27
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-relay/azure-relay.csv`
 
@@ -53,11 +53,6 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 | *(Unclassified)* | 16 | 59.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [FAQ](https://learn.microsoft.com/en-us/azure/azure-relay/relay-faq)
-  - Updated: 2026-01-25T06:10:00Z → 2026-01-25T06:10:00.000Z
 
 ## Classified Pages
 

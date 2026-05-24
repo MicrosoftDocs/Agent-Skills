@@ -53,8 +53,8 @@ confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Funct
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 6
-- **Unchanged**: 184
+- **Updated Pages**: 0
+- **Unchanged**: 190
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-bot-service/azure-bot-service.csv`
 
@@ -74,21 +74,6 @@ confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Funct
 | *(Unclassified)* | 38 | 20.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [Index](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-resources-bot-framework-faq?view=azure-bot-service-4.0)
-  - Updated: 2025-01-02T13:00:00Z → 2025-01-02T13:00:00.000Z
-- [Availability](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-resources-faq-availability?view=azure-bot-service-4.0)
-  - Updated: 2025-01-02T13:00:00Z → 2025-01-02T13:00:00.000Z
-- [General](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-resources-faq-general?view=azure-bot-service-4.0)
-  - Updated: 2025-01-02T13:00:00Z → 2025-01-02T13:00:00.000Z
-- [Ecosystem](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-resources-faq-ecosystem?view=azure-bot-service-4.0)
-  - Updated: 2025-01-02T13:00:00Z → 2025-01-02T13:00:00.000Z
-- [Security](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-resources-faq-security?view=azure-bot-service-4.0)
-  - Updated: 2025-01-02T13:00:00Z → 2025-01-02T13:00:00.000Z
-- [Azure](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-resources-faq-azure?view=azure-bot-service-4.0)
-  - Updated: 2025-10-30T01:01:00Z → 2025-10-30T01:01:00.000Z
 
 ## Classified Pages
 

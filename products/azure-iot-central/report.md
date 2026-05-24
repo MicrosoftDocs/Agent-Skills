@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Edge (u
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 88
+- **Updated Pages**: 0
+- **Unchanged**: 89
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-iot-central/azure-iot-central.csv`
 
@@ -75,11 +75,6 @@ confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Edge (u
 | *(Unclassified)* | 33 | 37.1% |
 
 ## Changes
-
-### Updated Pages
-
-- [FAQ](https://learn.microsoft.com/en-us/azure/iot-central/core/howto-faq)
-  - Updated: 2025-09-24T22:10:00Z → 2025-09-24T22:10:00.000Z
 
 ## Classified Pages
 

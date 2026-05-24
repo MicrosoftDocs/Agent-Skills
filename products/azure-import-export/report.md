@@ -33,8 +33,8 @@ confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure Bl
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 13
+- **Updated Pages**: 0
+- **Unchanged**: 14
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-import-export/azure-import-export.csv`
 
@@ -48,11 +48,6 @@ confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure Bl
 | *(Unclassified)* | 7 | 50.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [FAQ](https://learn.microsoft.com/en-us/azure/import-export/storage-import-export-service-faq)
-  - Updated: 2024-08-23T11:21:00Z → 2024-08-23T11:21:00.000Z
 
 ## Classified Pages
 

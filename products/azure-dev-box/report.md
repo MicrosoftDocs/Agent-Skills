@@ -48,8 +48,8 @@ confusable_not_for: Not for Azure DevTest Labs (use azure-devtest-labs), Azure V
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 64
+- **Updated Pages**: 0
+- **Unchanged**: 65
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-dev-box/azure-dev-box.csv`
 
@@ -68,11 +68,6 @@ confusable_not_for: Not for Azure DevTest Labs (use azure-devtest-labs), Azure V
 | *(Unclassified)* | 18 | 27.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [FAQ](https://learn.microsoft.com/en-us/azure/dev-box/dev-box-faq)
-  - Updated: 2025-08-14T22:10:00Z → 2025-08-14T22:10:00.000Z
 
 ## Classified Pages
 

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-17'
+generated_at: '2026-05-24'
 category_descriptions:
   configuration: 'Configuring Azure AI Search for agentic retrieval: knowledge bases,
     data sources, indexers, enrichment skillsets, analyzers, vectors, semantic ranking,
@@ -46,14 +46,14 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Dat
 - **Total Pages**: 301
 - **Fetched**: 301
 - **Fetch Failed**: 0
-- **Classified**: 225
-- **Unclassified**: 76
+- **Classified**: 224
+- **Unclassified**: 77
 
 ### Incremental Update
-- **New Pages**: 7
-- **Updated Pages**: 46
-- **Unchanged**: 248
-- **Deleted Pages**: 6
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 300
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cognitive-search/azure-cognitive-search.csv`
 
 ## Classification Statistics
@@ -65,76 +65,18 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Dat
 | configuration | 88 | 29.2% |
 | decision-making | 10 | 3.3% |
 | deployment | 5 | 1.7% |
-| integrations | 52 | 17.3% |
+| integrations | 51 | 16.9% |
 | limits-quotas | 5 | 1.7% |
 | security | 37 | 12.3% |
 | troubleshooting | 8 | 2.7% |
-| *(Unclassified)* | 76 | 25.2% |
+| *(Unclassified)* | 77 | 25.6% |
 
 ## Changes
 
-### New Pages
-
-- [Enable or disable semantic ranker billing](https://learn.microsoft.com/en-us/azure/search/semantic-how-to-enable-disable)
-- [Enable or disable agentic retrieval billing](https://learn.microsoft.com/en-us/azure/search/agentic-retrieval-how-to-enable-disable)
-- [SharePoint (preview)](https://learn.microsoft.com/en-us/azure/search/agentic-knowledge-source-how-to-sharepoint-indexed)
-- [SharePoint (preview)](https://learn.microsoft.com/en-us/azure/search/agentic-knowledge-source-how-to-sharepoint-remote)
-- [Enable answer synthesis (preview)](https://learn.microsoft.com/en-us/azure/search/agentic-retrieval-how-to-answer-synthesis)
-- [Set retrieval reasoning effort (preview)](https://learn.microsoft.com/en-us/azure/search/agentic-retrieval-how-to-set-retrieval-reasoning-effort)
-- [Query a knowledge base via APIs or MCP](https://learn.microsoft.com/en-us/azure/search/agentic-retrieval-how-to-retrieve)
-
 ### Updated Pages
 
-- [Add AI-generated content (GenAI Prompt skill)](https://learn.microsoft.com/en-us/azure/search/chat-completion-skill-example-usage)
-  - Updated: 2026-02-28T06:12:00.000Z → 2026-04-22T08:00:00.000Z
 - [Create a hybrid query](https://learn.microsoft.com/en-us/azure/search/hybrid-search-how-to-query)
-  - Updated: 2026-02-27T23:08:00.000Z → 2026-04-24T08:00:00.000Z
-- [Tutorial (REST)](https://learn.microsoft.com/en-us/azure/search/tutorial-multimodal)
-  - Updated: 2026-02-26T06:06:00.000Z → 2026-04-17T08:00:00.000Z
-- [Alias an index](https://learn.microsoft.com/en-us/azure/search/search-how-to-alias)
-  - Updated: 2026-03-26T22:23:00.000Z → 2026-05-12T06:04:00.000Z
-- [What's Azure AI Search?](https://learn.microsoft.com/en-us/azure/search/search-what-is-azure-search)
-  - Updated: 2025-12-10T08:00:00.000Z → 2026-05-05T08:00:00.000Z
-- [What's new](https://learn.microsoft.com/en-us/azure/search/whats-new)
-  - Updated: 2026-04-08T22:11:00.000Z → 2026-05-12T06:04:00.000Z
-- [Features](https://learn.microsoft.com/en-us/azure/search/search-features-list)
-  - Updated: 2026-01-26T23:15:00.000Z → 2026-04-22T08:00:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/search/search-faq-frequently-asked-questions)
-  - Updated: 2026-04-15T22:09:00Z → 2026-05-12T06:04:00.000Z
-- [Portal](https://learn.microsoft.com/en-us/azure/search/get-started-portal-agentic-retrieval)
-  - Updated: 2026-02-24T23:08:00.000Z → 2026-05-12T06:04:00.000Z
-- [Programmatic](https://learn.microsoft.com/en-us/azure/search/search-get-started-agentic-retrieval)
-  - Updated: 2026-02-24T23:08:00.000Z → 2026-03-12T17:22:00.000Z
-- [Configure a search service](https://learn.microsoft.com/en-us/azure/search/search-manage)
-  - Updated: 2025-11-18T15:37:00.000Z → 2026-05-12T06:04:00.000Z
-- [REST](https://learn.microsoft.com/en-us/azure/search/search-manage-rest)
-  - Updated: 2025-12-04T23:14:00.000Z → 2026-05-12T06:04:00.000Z
-- [Index Markdown](https://learn.microsoft.com/en-us/azure/search/search-how-to-index-azure-blob-markdown)
-  - Updated: 2026-03-25T08:00:00.000Z → 2026-05-12T06:04:00.000Z
-- [Index Markdown in Azure blobs](https://learn.microsoft.com/en-us/azure/search/search-markdown-data-tutorial)
-  - Updated: 2025-11-21T23:11:00.000Z → 2026-04-27T08:00:00.000Z
-- [Attach a billable resource](https://learn.microsoft.com/en-us/azure/search/cognitive-search-attach-cognitive-services)
-  - Updated: 2025-11-18T15:37:00.000Z → 2026-04-24T08:00:00.000Z
-- [Azure OpenAI Embedding](https://learn.microsoft.com/en-us/azure/search/cognitive-search-skill-azure-openai-embedding)
-  - Updated: 2025-11-18T15:37:00.000Z → 2026-05-10T11:04:00.000Z
-- [GenAI Prompt](https://learn.microsoft.com/en-us/azure/search/cognitive-search-skill-genai-prompt)
-  - Updated: 2026-02-26T08:00:00.000Z → 2026-05-15T17:11:00.000Z
-- [Azure OpenAI](https://learn.microsoft.com/en-us/azure/search/vector-search-vectorizer-azure-open-ai)
-  - Updated: 2025-11-18T15:37:00.000Z → 2026-05-10T11:04:00.000Z
-- [Azure Storage](https://learn.microsoft.com/en-us/azure/search/search-howto-managed-identities-storage)
-  - Updated: 2025-08-27T08:00:00.000Z → 2026-04-24T08:00:00.000Z
-- [Azure Cosmos DB](https://learn.microsoft.com/en-us/azure/search/search-howto-managed-identities-cosmos-db)
-  - Updated: 2025-08-27T08:00:00.000Z → 2026-04-24T08:00:00.000Z
-- *...and 26 more*
-
-### Deleted Pages
-
-- ~~SharePoint~~ (https://learn.microsoft.com/en-us/azure/search/agentic-knowledge-source-how-to-sharepoint-indexed)
-- ~~SharePoint~~ (https://learn.microsoft.com/en-us/azure/search/agentic-knowledge-source-how-to-sharepoint-remote)
-- ~~Enable answer synthesis~~ (https://learn.microsoft.com/en-us/azure/search/agentic-retrieval-how-to-answer-synthesis)
-- ~~Query a knowledge base (APIs or MCP)~~ (https://learn.microsoft.com/en-us/azure/search/agentic-retrieval-how-to-retrieve)
-- ~~Set retrieval reasoning effort~~ (https://learn.microsoft.com/en-us/azure/search/agentic-retrieval-how-to-set-retrieval-reasoning-effort)
-- ~~Enable or disable semantic ranker~~ (https://learn.microsoft.com/en-us/azure/search/semantic-how-to-enable-disable)
+  - Updated: 2026-04-24T08:00:00.000Z → 2026-05-19T06:08:00.000Z
 
 ## Classified Pages
 
@@ -341,7 +283,6 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Dat
 | [Sample custom skill (Bing Entity Search)](https://learn.microsoft.com/en-us/azure/search/cognitive-search-create-custom-skill-example) | integrations | 0.68 | The page shows a concrete, product-specific pattern for wrapping the Bing Entity Search API in an Azure Function that implements the Azure AI Search custom skill interface. It includes request/response schema details and code-level integration specifics that go beyond generic tutorial content, fitting the integrations & coding patterns category. |
 | [Security controls by Azure Policy](https://learn.microsoft.com/en-us/azure/search/security-controls-policy) | security | 0.68 | Page lists Azure Policy Regulatory Compliance controls specific to Azure AI Search, including at least one built-in policy definition that can be used in policy assignments. These are product-specific security/compliance configurations (policy definitions and how they apply to the service), which fits the security category. |
 | [Add semantic ranking to queries](https://learn.microsoft.com/en-us/azure/search/semantic-how-to-query-request) | integrations | 0.65 | Covers how to attach semantic ranker to text, hybrid, and vector queries using specific query parameters and API behaviors unique to Azure AI Search, fitting integration/coding patterns. |
-| [Create a hybrid query](https://learn.microsoft.com/en-us/azure/search/hybrid-search-how-to-query) | integrations | 0.65 | A 'how to query' article for hybrid search typically includes concrete request structures, query parameters, and configuration options (for example, how to combine vector and text queries, parameter names, and allowed values) that are specific to Azure AI Search’s APIs. This fits the integrations & coding patterns category, as it likely documents product-specific query parameters and patterns rather than just conceptual search theory. |
 | [Create a knowledge store](https://learn.microsoft.com/en-us/azure/search/knowledge-store-create-rest) | integrations | 0.65 | Describes creating a knowledge store using REST, tied to indexers and skillsets and specifying Azure Storage as the output. This implies detailed REST payload structure and parameters specific to Azure AI Search–Azure Storage integration, matching the integrations & coding patterns category. |
 | [Create a search index](https://learn.microsoft.com/en-us/azure/search/search-how-to-create-search-index) | configuration | 0.65 | Covers schema definition and index creation via portal, REST, or SDK with product-specific field and index settings. |
 | [Define a projection](https://learn.microsoft.com/en-us/azure/search/knowledge-store-projections-examples) | integrations | 0.65 | Covers syntax and examples for table, object, and file projections; this is product-specific configuration of how enrichment outputs integrate with Azure Storage, with concrete schema and parameter usage. |
@@ -392,6 +333,7 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Dat
 | [Use fuzzy search](https://learn.microsoft.com/en-us/azure/search/search-query-fuzzy) | 0.35 | Explains fuzzy search and its usage; examples but no config tables, limits, or troubleshooting mappings. |
 | [What is relevance?](https://learn.microsoft.com/en-us/azure/search/search-relevance-overview) | 0.35 | Relevance overview and strategies; conceptual explanation of scoring and ranking, not specific numeric thresholds or configs. |
 | [API versions](https://learn.microsoft.com/en-us/azure/search/search-api-versions) | 0.30 | API version policy overview. Typically describes versioning strategy and timelines rather than detailed configuration parameters, limits, or decision matrices with quantified trade-offs. |
+| [Create a hybrid query](https://learn.microsoft.com/en-us/azure/search/hybrid-search-how-to-query) | 0.30 | Page appears to be a how-to/tutorial on composing hybrid (keyword + vector + semantic) queries in Azure AI Search. From the summary, it focuses on conceptual explanation of hybrid search behavior and general guidance, without evidence of numeric limits, configuration parameter tables, error-code-based troubleshooting, or tier comparison matrices. It likely shows example queries but not product-specific configuration tables or constraints that would qualify as expert knowledge under the defined categories. |
 | [Deploy static web app](https://learn.microsoft.com/en-us/azure/search/tutorial-csharp-deploy-static-web-app) | 0.30 | Deployment tutorial for a sample app to Azure Static Web Apps. It describes a basic deployment flow (GitHub repo, Static Web Apps) rather than product-specific deployment constraints, matrices, or configuration parameters. It doesn’t meet the deployment sub-skill criteria for expert knowledge. |
 | [Design a multilingual index](https://learn.microsoft.com/en-us/azure/search/search-language-support) | 0.30 | Appears to describe language analyzers and multilingual indexing conceptually. Summary does not indicate detailed configuration tables, numeric thresholds, or product-specific limits/quotas, nor concrete best-practice gotchas; more of a capability/feature overview. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/search/search-faq-frequently-asked-questions) | 0.30 | FAQ page description is generic; without explicit mention of error codes, configuration tables, or numeric limits, it is likely conceptual Q&A rather than deep troubleshooting or configuration guidance. |

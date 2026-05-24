@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Network Function Manager (use azure-network-fu
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 215
+- **Updated Pages**: 0
+- **Unchanged**: 216
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-operator-nexus/azure-operator-nexus.csv`
 
@@ -76,11 +76,6 @@ confusable_not_for: Not for Azure Network Function Manager (use azure-network-fu
 | *(Unclassified)* | 52 | 24.1% |
 
 ## Changes
-
-### Updated Pages
-
-- [Cluster](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-configure-cluster)
-  - Updated: 2026-05-04T17:07:00.000Z → 2026-05-15T22:06:00.000Z
 
 ## Classified Pages
 

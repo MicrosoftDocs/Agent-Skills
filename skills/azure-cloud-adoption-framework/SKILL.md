@@ -1,9 +1,9 @@
 ---
 name: azure-cloud-adoption-framework
-description: Expert guidance for planning and executing cloud adoption using Azure Cloud Adoption Framework. Covers strategy, planning, readiness & landing zones, adoption patterns, governance, security, operations & management, organization & teams, and adoption scenarios. Use when adopting AKS/ARO, SAP/Oracle, AVS/VMware, AVD/Citrix, AI agents, or Azure landing zones, and other Azure Cloud Adoption Framework related development tasks.
+description: Expert guidance for planning and executing cloud adoption using Azure Cloud Adoption Framework. Covers strategy, planning, readiness & landing zones, adoption patterns, governance, security, operations & management, organization & teams, and adoption scenarios. Use when adopting AKS/ARO, AVS/VMware, SAP/Oracle, AVD/Citrix, or AI agent workloads on Azure, and other Azure Cloud Adoption Framework related development tasks.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-17"
+  generated_at: "2026-05-24"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Cloud Adoption Framework Skill
@@ -24,15 +24,15 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Strategy | L37-L54 | Strategic planning for cloud and AI: defining business goals, exec strategy, cost, resiliency, security, sustainability, and workload-specific (SAP, Oracle, AVD, VMware, hybrid/multicloud) adoption. |
+| Strategy | L37-L54 | Strategic guidance for planning cloud and AI adoption: business cases, exec strategy, cost, resiliency, security, sustainability, and workload-specific plans (SAP, Oracle, AVD, VMware, hybrid/multicloud). |
 | Planning | L55-L82 | Planning cloud adoption, migration waves, modernization roadmaps, cost/skills readiness, and detailed plans for workloads (AI, data, Oracle, SAP, AVS, AVD, analytics) on Azure. |
 | Readiness & Landing Zones | L83-L204 | Designing and operating Azure landing zones: network topology, identity, subscriptions, governance, automation/DevOps, multitenant setups, and workload-specific patterns (SAP, AVS, Oracle, API, App Service, containers). |
 | Adoption Patterns | L205-L229 | Patterns and step-by-step guides for planning, migrating, modernizing, and operating workloads on Azure (apps, data, AI agents, AVD, SAP, Oracle, VMware) using CAF best practices. |
 | Governance | L230-L260 | Cloud and data governance for Azure: policies, guardrails, cost control, tagging, compliance, responsible AI, landing zones, Arc, analytics, SAP, AKS, and API/App Service governance. |
 | Security | L261-L291 | Security design and governance for Azure landing zones, including Zero Trust, IAM, encryption, DevOps, AKS, analytics, SAP/Oracle, Arc, and ongoing security operations. |
 | Operations & Management | L292-L333 | Operating, monitoring, securing, and optimizing Azure environments and workloads (including AI, AKS, Arc, AVS, Oracle, SAP, analytics) plus BCDR, DevOps, and platform-level governance. |
-| Organization & Teams | L334-L352 | Designing org structures, roles, RACI, and team topologies (governance, ops, data/analytics, security, cost, DevOps, AI agents) needed to run and scale Azure cloud adoption. |
-| Adoption Scenarios | L353-L417 | CAF-aligned landing zone, security, governance, networking, identity, automation, BCDR, and operations guidance for adopting AKS, ARO, AIS, AVD/Citrix, AVS, Oracle, SAP, RHEL, and AI agents on Azure |
+| Organization & Teams | L334-L351 | Designing cloud org structures, roles, and RACI: governance, CCoE, DevOps, security, operations, data/analytics, cost management, and breaking silos for Azure adoption and operations |
+| Adoption Scenarios | L352-L416 | CAF-aligned landing zone, security, governance, networking, identity, automation, BCDR, and operations guidance for adopting AKS, ARO, AIS, AVD/Citrix, AVS, Oracle, SAP, RHEL, and AI agents on Azure |
 
 ### Strategy
 | Topic | URL |
@@ -44,13 +44,13 @@ This skill requires **network access** to fetch documentation content:
 | Define unified hybrid and multicloud operations strategy with Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/hybrid/strategy |
 | Align Oracle on Azure migration with cloud strategy | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/oracle-on-azure/oracle-landing-zone-strategy |
 | Define cloud strategy for SAP workloads on Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/sap/strategy |
-| Define a cloud adoption strategy aligned to business goals | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/ |
-| Assess and improve your cloud adoption strategy | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/assessment |
+| Develop a measurable cloud adoption strategy | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/ |
+| Establish and structure a cloud strategy team | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/define-your-team |
 | Incorporate cost efficiency into cloud strategy | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/inform/cost-efficiency |
 | Plan resiliency as part of cloud strategy | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/inform/resiliency |
 | Integrate security considerations into cloud strategy | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/inform/security |
 | Incorporate sustainability objectives into cloud strategy | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/inform/sustainability |
-| Define motivations, mission, and objectives for cloud | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/motivations |
+| Define cloud motivations, mission, and objectives | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/motivations |
 
 ### Planning
 | Topic | URL |
@@ -347,7 +347,6 @@ This skill requires **network access** to fetch documentation content:
 | Create cross-team RACI for cloud responsibilities | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/organize/raci-alignment |
 | Design DevOps team topologies for Azure platforms | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/considerations/devops-teams-topologies |
 | Define security teams, roles, and functions for Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/secure/teams-roles |
-| Define and structure your cloud strategy team | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/define-your-team |
 | Prepare organizational alignment for cloud adoption | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/prepare-organizational-alignment |
 
 ### Adoption Scenarios

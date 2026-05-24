@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-17'
+generated_at: '2026-05-24'
 category_descriptions:
   configuration: 'Configuring Data API builder: CLI config management, entities/autoentities,
     data sources (SQL/Cosmos), caching, security/roles, GraphQL/REST exposure, telemetry,
@@ -7,9 +7,9 @@ category_descriptions:
   integrations: 'GraphQL/REST query patterns in DAB: filtering, sorting, pagination,
     field projection, transactional mutations, schema export, and using SQL MCP DML
     tools from AI agents.'
-  troubleshooting: 'Diagnosing and fixing DAB issues: config/CLI errors, REST/CORS,
-    GraphQL/authorization, SQL MCP, and database-specific problems for SQL Server,
-    MySQL, PostgreSQL, and Cosmos DB.'
+  troubleshooting: 'Diagnosing and fixing DAB issues: config/CLI errors, REST/CORS
+    problems, GraphQL schema/auth, and database-specific troubles for Cosmos DB, SQL
+    (incl. MCP), MySQL, and PostgreSQL.'
   best-practices: Best practices for configuring and securing Data API builder, plus
     using SQL MCP Server with semantic entity descriptions and connecting it to local
     LLMs via Ollama
@@ -25,16 +25,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Data Api Builder development including
   troubleshooting, best practices, decision making, limits & quotas, security, configuration,
   integrations & coding patterns, and deployment. Use when exposing SQL/Cosmos via
-  DAB REST/GraphQL, tuning auth/RLS, timeouts/limits, or deploying SQL MCP Server,
-  and other Azure Data Api Builder related development tasks. Not for Azure API Management
-  (use azure-api-management), Azure Functions (use azure-functions), Azure App Service
-  (use azure-app-service), Azure Logic Apps (use azure-logic-apps).
-use_when: Use when exposing SQL/Cosmos via DAB REST/GraphQL, tuning auth/RLS, timeouts/limits,
-  or deploying SQL MCP Server, and other Azure Data Api Builder related development
-  tasks.
-confusable_not_for: Not for Azure API Management (use azure-api-management), Azure
-  Functions (use azure-functions), Azure App Service (use azure-app-service), Azure
-  Logic Apps (use azure-logic-apps).
+  REST/GraphQL, tuning filters/pagination, configuring JWT/Entra auth, or deploying
+  DAB, and other Azure Data Api Builder related development tasks. Not for Azure App
+  Service (use azure-app-service), Azure Functions (use azure-functions), Azure API
+  Management (use azure-api-management), Azure Logic Apps (use azure-logic-apps).
+use_when: Use when exposing SQL/Cosmos via REST/GraphQL, tuning filters/pagination,
+  configuring JWT/Entra auth, or deploying DAB, and other Azure Data Api Builder related
+  development tasks.
+confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Functions
+  (use azure-functions), Azure API Management (use azure-api-management), Azure Logic
+  Apps (use azure-logic-apps).
 ---
 # Azure Data Api Builder Crawl Report
 
@@ -47,10 +47,10 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 - **Unclassified**: 44
 
 ### Incremental Update
-- **New Pages**: 6
-- **Updated Pages**: 13
-- **Unchanged**: 109
-- **Deleted Pages**: 4
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 127
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-api-builder/azure-data-api-builder.csv`
 
 ## Classification Statistics
@@ -69,50 +69,10 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 
 ## Changes
 
-### New Pages
-
-- [Local Models](https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/use-local-models)
-- [Air-gapped environments](https://learn.microsoft.com/en-us/azure/data-api-builder/deployment/air-gapped)
-- [Visual Studio Code](https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/quickstart-visual-studio-code)
-- [Azure AI Foundry](https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/quickstart-azure-ai-foundry)
-- [.NET Aspire](https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/quickstart-dotnet-aspire)
-- [Azure Container Apps](https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/quickstart-azure-container-apps)
-
 ### Updated Pages
 
-- [FAQ](https://learn.microsoft.com/en-us/azure/data-api-builder/faq)
-  - Updated: 2026-04-01T23:07:00Z → 2026-04-01T23:07:00.000Z
-- [Data Manipulation Tools](https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/data-manipulation-language-tools)
-  - Updated: 2026-04-01T23:07:00.000Z → 2026-05-15T17:03:00.000Z
-- [dab init](https://learn.microsoft.com/en-us/azure/data-api-builder/command-line/dab-init)
-  - Updated: 2026-04-01T23:07:00.000Z → 2026-05-11T08:00:00.000Z
-- [dab add](https://learn.microsoft.com/en-us/azure/data-api-builder/command-line/dab-add)
-  - Updated: 2026-04-01T23:07:00.000Z → 2026-05-12T17:16:00.000Z
-- [dab configure](https://learn.microsoft.com/en-us/azure/data-api-builder/command-line/dab-configure)
-  - Updated: 2026-04-03T17:03:00.000Z → 2026-05-12T17:16:00.000Z
-- [dab update](https://learn.microsoft.com/en-us/azure/data-api-builder/command-line/dab-update)
-  - Updated: 2026-04-01T23:07:00.000Z → 2026-04-03T17:03:00.000Z
-- [Authenticated (OAuth)](https://learn.microsoft.com/en-us/azure/data-api-builder/concept/security/authenticate-custom)
-  - Updated: 2026-04-01T23:07:00.000Z → 2026-05-14T05:03:00.000Z
-- [Easy Auth (App Services)](https://learn.microsoft.com/en-us/azure/data-api-builder/concept/security/authenticate-easy-auth)
-  - Updated: 2026-04-01T23:07:00.000Z → 2026-05-15T17:03:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/data-api-builder/deployment/)
-  - Updated: 2026-05-05T17:11:00Z → 2026-05-15T17:03:00Z
-- [Run locally (container)](https://learn.microsoft.com/en-us/azure/data-api-builder/deployment/local-container)
-  - Updated: 2026-04-01T23:07:00.000Z → 2026-05-15T17:03:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/)
-  - Updated: 2026-01-12T18:08:00Z → 2026-05-15T17:03:00Z
-- [What is SQL MCP Server?](https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/overview)
-  - Updated: 2026-04-01T23:07:00.000Z → 2026-05-15T17:03:00.000Z
-- [Semantic Descriptions](https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/how-to-add-descriptions)
-  - Updated: 2026-04-01T23:07:00.000Z → 2026-05-15T17:03:00.000Z
-
-### Deleted Pages
-
-- ~~Get Started: Azure AI Foundry~~ (https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/quickstart-azure-ai-foundry)
-- ~~Get Started: Azure Container Apps~~ (https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/quickstart-azure-container-apps)
-- ~~Get Started: .NET Aspire~~ (https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/quickstart-dotnet-aspire)
-- ~~Get Started: Visual Studio Code~~ (https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/quickstart-visual-studio-code)
+- [Troubleshooting](https://learn.microsoft.com/en-us/azure/data-api-builder/troubleshooting/mcp)
+  - Updated: 2026-04-01T23:07:00.000Z → 2026-05-22T23:03:00.000Z
 
 ## Classified Pages
 
@@ -135,7 +95,7 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 | [Authentication](https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/how-to-configure-authentication) | security | 0.86 | Details inbound/outbound auth for SQL MCP Server, including JWT-based options, AI Foundry setup, and matching DAB configuration properties—product-specific security configuration. |
 | [Easy Auth (App Services)](https://learn.microsoft.com/en-us/azure/data-api-builder/concept/security/authenticate-easy-auth) | security | 0.86 | Describes how Data API builder reads identity headers injected by Azure App Service authentication (EasyAuth), including use of X-MS-CLIENT-PRINCIPAL and warnings about bypassing EasyAuth. This is product-specific security configuration with concrete header names and provider behavior. |
 | [Troubleshooting](https://learn.microsoft.com/en-us/azure/data-api-builder/troubleshooting/graphql) | troubleshooting | 0.86 | Explicit troubleshooting page for GraphQL schema generation, authorization, introspection, and relationships. Implies mappings from specific issues to causes and fixes. |
-| [Troubleshooting](https://learn.microsoft.com/en-us/azure/data-api-builder/troubleshooting/mcp) | troubleshooting | 0.86 | Troubleshooting page specifically for SQL MCP Server in Data API builder; described as covering transport configuration, permission, and AI client integration issues, which implies concrete symptom → cause → resolution guidance and likely product-specific error messages and configuration steps. |
+| [Troubleshooting](https://learn.microsoft.com/en-us/azure/data-api-builder/troubleshooting/mcp) | troubleshooting | 0.86 | Page focuses on diagnosing and resolving SQL MCP Server transport, permission, and AI client integration issues with specific, product-focused symptom-to-solution guidance, which qualifies as troubleshooting expert knowledge. |
 | [Troubleshooting](https://learn.microsoft.com/en-us/azure/data-api-builder/troubleshooting/rest) | troubleshooting | 0.86 | Explicitly a troubleshooting page for REST endpoint availability, HTTP methods, OData filters, and CORS. This implies mappings from specific symptoms and errors to causes and resolutions. |
 | [Pass-through (OBO)](https://learn.microsoft.com/en-us/azure/data-api-builder/concept/security/authenticate-on-behalf-of) | security | 0.84 | Explains DAB 2.0 OBO flow with specific configuration for exchanging tokens and connecting to SQL as the user, including product-specific flags/sections and behavior differences vs standard auth. |
 | [Feature Availability](https://learn.microsoft.com/en-us/azure/data-api-builder/feature-availability) | decision-making | 0.82 | Provides cross-database feature comparison tables indicating which features are supported where, guiding decisions on database/platform choice and capabilities. |

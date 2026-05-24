@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-05-17'
+generated_at: '2026-05-24'
 category_descriptions:
-  security: 'Securing AKS Edge/Arc/hybrid clusters: auth (Entra ID, AD, gMSA, workload
-    identity), RBAC, SSH hardening, cert and key management, and encrypting/securing
-    secrets and container workloads.'
+  security: 'Auth, RBAC, SSH, cert, and key management for AKS Edge/Arc/hybrid: Entra/AD
+    SSO, gMSA, workload identity, etcd encryption, image signing, and security hardening
+    guidance.'
   configuration: 'Configuring AKS Edge/Arc/hybrid clusters: networking, storage, load
     balancers, autoscaling, Arc connectivity, monitoring, Windows/Linux nodes, offline
     installs, and PowerShell-based cluster settings.'
@@ -31,14 +31,14 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Kubernetes Service Edge Essentials development
   including troubleshooting, best practices, decision making, architecture & design
   patterns, limits & quotas, security, configuration, integrations & coding patterns,
-  and deployment. Use when managing AKS Edge/Arc clusters, Arc connectivity, IoT/OPC/ONVIF
-  workloads, TPM/AI deployments, or Key Vault secrets, and other Azure Kubernetes
-  Service Edge Essentials related development tasks. Not for Azure Kubernetes Service
-  (AKS) (use azure-kubernetes-service), Azure IoT Edge (use azure-iot-edge), Azure
-  Stack Edge (use azure-stack-edge), Azure Container Apps (use azure-container-apps).
-use_when: Use when managing AKS Edge/Arc clusters, Arc connectivity, IoT/OPC/ONVIF
-  workloads, TPM/AI deployments, or Key Vault secrets, and other Azure Kubernetes
-  Service Edge Essentials related development tasks.
+  and deployment. Use when managing AKS Edge/Arc clusters, Arc connectivity, SDN VNets,
+  IoT/OPC/ONVIF workloads, or AI model deploys, and other Azure Kubernetes Service
+  Edge Essentials related development tasks. Not for Azure Kubernetes Service (AKS)
+  (use azure-kubernetes-service), Azure IoT Edge (use azure-iot-edge), Azure Stack
+  Edge (use azure-stack-edge), Azure Container Apps (use azure-container-apps).
+use_when: Use when managing AKS Edge/Arc clusters, Arc connectivity, SDN VNets, IoT/OPC/ONVIF
+  workloads, or AI model deploys, and other Azure Kubernetes Service Edge Essentials
+  related development tasks.
 confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
   Azure IoT Edge (use azure-iot-edge), Azure Stack Edge (use azure-stack-edge), Azure
   Container Apps (use azure-container-apps).
@@ -47,16 +47,16 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 
 ## Summary
 
-- **Total Pages**: 340
-- **Fetched**: 340
+- **Total Pages**: 341
+- **Fetched**: 341
 - **Fetch Failed**: 0
-- **Classified**: 268
+- **Classified**: 269
 - **Unclassified**: 72
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 10
-- **Unchanged**: 330
+- **New Pages**: 1
+- **Updated Pages**: 0
+- **Unchanged**: 340
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-aks-edge-essentials/azure-aks-edge-essentials.csv`
 
@@ -69,36 +69,17 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | configuration | 78 | 22.9% |
 | decision-making | 9 | 2.6% |
 | deployment | 33 | 9.7% |
-| integrations | 55 | 16.2% |
+| integrations | 55 | 16.1% |
 | limits-quotas | 10 | 2.9% |
-| security | 29 | 8.5% |
+| security | 30 | 8.8% |
 | troubleshooting | 47 | 13.8% |
-| *(Unclassified)* | 72 | 21.2% |
+| *(Unclassified)* | 72 | 21.1% |
 
 ## Changes
 
-### Updated Pages
+### New Pages
 
-- [Azure Arc-enabled Kubernetes](https://learn.microsoft.com/en-us/azure/aks/aksarc/known-issues-arc)
-  - Updated: 2026-01-07T23:02:00Z → 2026-01-07T23:02:00.000Z
-- [Install](https://learn.microsoft.com/en-us/azure/aks/aksarc/known-issues-installation)
-  - Updated: 2026-01-07T23:02:00Z → 2026-01-07T23:02:00.000Z
-- [Upgrade](https://learn.microsoft.com/en-us/azure/aks/aksarc/known-issues-upgrade)
-  - Updated: 2026-01-07T23:02:00Z → 2026-01-07T23:02:00.000Z
-- [Kubernetes clusters](https://learn.microsoft.com/en-us/azure/aks/aksarc/known-issues-workload-clusters)
-  - Updated: 2026-01-07T23:02:00Z → 2026-01-07T23:02:00.000Z
-- [Networking](https://learn.microsoft.com/en-us/azure/aks/aksarc/known-issues-networking)
-  - Updated: 2026-01-07T23:02:00Z → 2026-01-07T23:02:00.000Z
-- [Security](https://learn.microsoft.com/en-us/azure/aks/aksarc/known-issues-security)
-  - Updated: 2026-01-07T23:02:00Z → 2026-01-07T23:02:00.000Z
-- [Storage](https://learn.microsoft.com/en-us/azure/aks/aksarc/known-issues-storage)
-  - Updated: 2026-01-07T23:02:00Z → 2026-01-07T23:02:00.000Z
-- [Windows Admin Center](https://learn.microsoft.com/en-us/azure/aks/aksarc/known-issues-windows-admin-center)
-  - Updated: 2026-01-07T23:02:00Z → 2026-01-07T23:02:00.000Z
-- [Uninstall](https://learn.microsoft.com/en-us/azure/aks/aksarc/known-issues-uninstall)
-  - Updated: 2026-01-07T23:02:00Z → 2026-01-07T23:02:00.000Z
-- [Other](https://learn.microsoft.com/en-us/azure/aks/aksarc/known-issues)
-  - Updated: 2026-01-07T23:02:00Z → 2026-01-07T23:02:00.000Z
+- [Security bulletins](https://learn.microsoft.com/en-us/azure/aks/aksarc/security-bulletins)
 
 ## Classified Pages
 
@@ -291,6 +272,7 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Repair-AksEdgeKms](https://learn.microsoft.com/en-us/azure/aks/aksarc/reference/aks-edge-ps/repair-aksedgekms) | troubleshooting | 0.70 | Describes a repair cmdlet for the KMS plugin, used specifically to fix cluster issues; this is troubleshooting-focused expert guidance. |
 | [Retrieve certificate-based admin kubeconfig](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-vmware-retrieve-kubeconfig) | configuration | 0.70 | Describes how to obtain certificate-based admin kubeconfig, which involves product-specific commands, parameters, and paths. |
 | [Secrets Store CSI Driver configuration](https://learn.microsoft.com/en-us/azure/aks/aksarc/secrets-store-csi-driver) | integrations | 0.70 | Describes concrete configuration for the Secrets Store CSI driver and Azure Key Vault provider on AKS on Windows Server, including product-specific integration steps. |
+| [Security bulletins](https://learn.microsoft.com/en-us/azure/aks/aksarc/security-bulletins) | security | 0.70 | Security bulletin pages typically contain product-specific vulnerability IDs, affected versions, and concrete mitigation steps unique to AKS enabled by Azure Arc, which qualify as expert knowledge under the security category. |
 | [Security overview](https://learn.microsoft.com/en-us/azure/aks/aksarc/concepts-security) | security | 0.70 | Security-hardening measures and built-in security features for this product; likely includes specific settings and roles beyond generic security theory. |
 | [Set up machine](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-edge-howto-setup-machine) | configuration | 0.70 | Machine preparation for AKS Edge Essentials likely includes specific configuration steps and settings (BIOS/virtualization options, networking, OS settings) that are product-specific configuration knowledge. |
 | [Set-AksEdgeUpgrade](https://learn.microsoft.com/en-us/azure/aks/aksarc/reference/aks-edge-ps/set-aksedgeupgrade) | configuration | 0.70 | Cmdlet sets whether AKS Edge can upgrade Kubernetes on update; page will document configuration parameters and allowed values. |

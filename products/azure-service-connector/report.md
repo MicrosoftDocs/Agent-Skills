@@ -42,9 +42,9 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 59
-- **Deleted Pages**: 2
+- **Updated Pages**: 0
+- **Unchanged**: 61
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-connector/azure-service-connector.csv`
 
 ## Classification Statistics
@@ -60,18 +60,6 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 | *(Unclassified)* | 22 | 36.1% |
 
 ## Changes
-
-### Updated Pages
-
-- [FAQ](https://learn.microsoft.com/en-us/azure/service-connector/faq)
-  - Updated: 2025-07-25T17:09:00Z → 2025-07-25T17:09:00.000Z
-- [Python function with Azure Table Storage as output](https://learn.microsoft.com/en-us/azure/service-connector/tutorial-python-functions-storage-table-as-output)
-  - Updated: 2024-12-19T12:13:00.000Z → 2026-05-11T22:24:00.000Z
-
-### Deleted Pages
-
-- ~~Spring Boot app to Kafka on Confluent Cloud~~ (https://learn.microsoft.com/en-us/azure/service-connector/tutorial-java-spring-confluent-kafka)
-- ~~Spring app to MySQL~~ (https://learn.microsoft.com/en-us/azure/service-connector/tutorial-java-spring-mysql)
 
 ## Classified Pages
 

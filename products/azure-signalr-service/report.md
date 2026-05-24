@@ -52,8 +52,8 @@ confusable_not_for: Not for Azure Web PubSub (use azure-web-pubsub), Azure Servi
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 70
+- **Updated Pages**: 0
+- **Unchanged**: 72
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-signalr-service/azure-signalr-service.csv`
 
@@ -73,13 +73,6 @@ confusable_not_for: Not for Azure Web PubSub (use azure-web-pubsub), Azure Servi
 | *(Unclassified)* | 13 | 18.1% |
 
 ## Changes
-
-### Updated Pages
-
-- [Use Azure Private Endpoints](https://learn.microsoft.com/en-us/azure/azure-signalr/howto-private-endpoints)
-  - Updated: 2023-03-09T00:00:00.000Z → 2026-05-14T06:18:00.000Z
-- [FAQs](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-resource-faq)
-  - Updated: 2024-09-11T18:38:00Z → 2024-09-11T18:38:00.000Z
 
 ## Classified Pages
 

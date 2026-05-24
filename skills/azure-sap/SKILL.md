@@ -1,9 +1,9 @@
 ---
 name: azure-sap
-description: Expert knowledge for SAP HANA on Azure Large Instances development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when deploying SAP HANA on Azure Large Instances, HA/DR clusters, RISE connectivity, Terraform/SDAF, or VIS automation, and other SAP HANA on Azure Large Instances related development tasks. Not for Azure Large Instances (use azure-large-instances), Azure Virtual Machines (use azure-virtual-machines), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines).
+description: Expert knowledge for SAP HANA on Azure Large Instances development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when deploying SAP HANA on Azure Large Instances, S/4HANA, NetWeaver, RISE connectivity, or Copilot–SAP integrations, and other SAP HANA on Azure Large Instances related development tasks. Not for Azure Large Instances (use azure-large-instances), Azure Virtual Machines (use azure-virtual-machines), Azure VMware Solution (use azure-vmware-solution).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-17"
+  generated_at: "2026-05-24"
   generator: "docs2skills/1.0.0"
 ---
 # SAP HANA on Azure Large Instances Skill
@@ -24,15 +24,15 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L50 | Diagnosing and fixing SAP on Azure issues: deployment automation, data extraction pipelines, monitoring/Insights, VM scale sets, VM extensions, and SAP Joule–M365 Copilot integration. |
+| Troubleshooting | L37-L50 | Diagnosing and fixing SAP-on-Azure issues: deployment automation, data extraction pipelines, SAP Joule–M365 Copilot, SAP Insights/AMS, Azure Monitor, VM scale sets, and VM extensions. |
 | Best Practices | L51-L62 | Best practices for testing, validating, and optimizing SAP on Azure: HA/DR design, automated test frameworks, Quality Insights checks, Azure Files/DFS-N tuning, and VM scale set deployment. |
 | Decision Making | L63-L76 | Guidance on planning SAP on Azure: choosing infra, VM/storage options, DR, data models and tiering, SAP version support, data extraction, and app/network architecture decisions. |
-| Architecture & Design Patterns | L77-L110 | Architecting SAP on Azure: HA/DR patterns, HANA/DBMS designs, RISE connectivity, low-latency/zone layouts, and Copilot/AI integrations via API Management, gateways, and SAP BTP. |
-| Limits & Quotas | L111-L115 | SAP on Azure limits: supported platforms/features for SAP testing automation, Azure Monitor for SAP quotas/behavior, and sizing/HA deployment constraints using Azure Files SMB. |
-| Security | L116-L131 | Security, identity, and access design for SAP on Azure: RBAC, Entra ID/SPNs, TLS, private endpoints, encrypted storage, and secure monitoring providers (Azure Monitor, Db2, SQL Server, RISE). |
-| Configuration | L132-L208 | Configuring SAP on Azure: automation (Terraform/SDAF), networking, storage, HA/DR clusters, monitoring, Azure Center registration, and integrations (BPS, ADF, LaMa, Salesforce). |
-| Integrations & Coding Patterns | L209-L221 | Automating SAP on Azure with VIS (CLI, PowerShell, REST), integrating monitoring, email, printing, OData/Power Query, and connecting SAP/RISE to Azure services. |
-| Deployment | L222-L248 | Deploying and tearing down SAP landscapes on Azure: automation scripts, DevOps pipelines, HA/DR patterns, VM/ANF/WSFC setups, and workload-specific guides (S/4HANA, B1, BO, NetWeaver, HANA). |
+| Architecture & Design Patterns | L77-L108 | Architecting SAP on Azure: HA/DR patterns, HANA/DBMS designs, NetWeaver/BW/BOBJ layouts, RISE connectivity, Copilot–SAP integrations, zoning, latency, and secure network exposure. |
+| Limits & Quotas | L109-L113 | SAP on Azure limits: supported platforms/features for SAP testing automation, Azure Monitor for SAP quotas/behavior, and sizing/HA deployment constraints using Azure Files SMB. |
+| Security | L114-L129 | Security, identity, and access design for SAP on Azure: RBAC, Entra ID/SPNs, TLS, private endpoints, encrypted storage, and secure monitoring providers (Azure Monitor, Db2, SQL Server, RISE). |
+| Configuration | L130-L206 | Configuring SAP on Azure: automation (Terraform/SDAF), networking, storage, HA/DR clusters, monitoring, Azure Center registration, and integrations (BPS, ADF, LaMa, Salesforce). |
+| Integrations & Coding Patterns | L207-L219 | Automating SAP on Azure with VIS (CLI, PowerShell, REST), integrating monitoring, email, printing, OData/Power Query, and connecting SAP/RISE to Azure services. |
+| Deployment | L220-L246 | Deploying and tearing down SAP landscapes on Azure: automation scripts, DevOps pipelines, HA/DR patterns, VM/ANF/WSFC setups, and workload-specific guides (S/4HANA, B1, BO, NetWeaver, HANA). |
 
 ### Troubleshooting
 | Topic | URL |
@@ -40,7 +40,7 @@ This skill requires **network access** to fetch documentation content:
 | Troubleshoot SAP Deployment Automation Framework issues on Azure | https://learn.microsoft.com/en-us/azure/sap/automation/troubleshooting |
 | Monitor and troubleshoot Azure Data Factory extraction | https://learn.microsoft.com/en-us/azure/sap/business-process-solutions/monitor-data-extraction |
 | Monitor and troubleshoot Fabric data extraction pipelines | https://learn.microsoft.com/en-us/azure/sap/business-process-solutions/monitor-fabric-data-extraction-processing |
-| Diagnose and fix common Business Process Solutions issues | https://learn.microsoft.com/en-us/azure/sap/business-process-solutions/troubleshooting |
+| Troubleshoot Azure SAP Business Process Solutions issues | https://learn.microsoft.com/en-us/azure/sap/business-process-solutions/troubleshooting |
 | Resolve common Azure Center for SAP solutions issues | https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/faq |
 | Set up and troubleshoot SAP Joule–Microsoft 365 Copilot integration | https://learn.microsoft.com/en-us/azure/sap/microsoft-ai/joule/joule-copilot-overview |
 | Enable SAP Insights for workload troubleshooting in AMS | https://learn.microsoft.com/en-us/azure/sap/monitor/enable-sap-insights |
@@ -79,12 +79,10 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Design SAP workload zones in the automation framework | https://learn.microsoft.com/en-us/azure/sap/automation/configure-workload-zone |
 | Understand resiliency patterns in Azure Center for SAP solutions | https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/compliance-bcdr-reliabilty |
-| Design Copilot–SAP integration with Azure API Management and VNet peering | https://learn.microsoft.com/en-us/azure/sap/microsoft-ai/copilot-studio/architecture-apim-virtual-network |
-| Integrate Copilot Studio with SAP BTP, API Management, and Cloud Connector | https://learn.microsoft.com/en-us/azure/sap/microsoft-ai/copilot-studio/architecture-business-technology-platform-api |
-| Use demo architecture for Copilot Studio–SAP quick-start integration | https://learn.microsoft.com/en-us/azure/sap/microsoft-ai/copilot-studio/architecture-demo |
-| Implement Copilot–SAP integration via on-premises Data Gateway | https://learn.microsoft.com/en-us/azure/sap/microsoft-ai/copilot-studio/architecture-on-premises-data-gateway |
-| Choose Copilot Studio architectures for SAP data integration | https://learn.microsoft.com/en-us/azure/sap/microsoft-ai/copilot-studio/copilot-with-sap-overview |
-| Architect Azure AI Foundry solutions with SAP backends | https://learn.microsoft.com/en-us/azure/sap/microsoft-ai/foundry/foundry-ai-sap |
+| Design Copilot–SAP integration via Azure API Management and VNet peering | https://learn.microsoft.com/en-us/azure/sap/microsoft-ai/copilot-studio/architecture-apim-virtual-network |
+| Architect Copilot–SAP integration via SAP BTP and Cloud Connector | https://learn.microsoft.com/en-us/azure/sap/microsoft-ai/copilot-studio/architecture-business-technology-platform-api |
+| Implement demo architecture for Copilot Studio with public SAP system | https://learn.microsoft.com/en-us/azure/sap/microsoft-ai/copilot-studio/architecture-demo |
+| Architect Copilot–SAP integration using On-Premises Data Gateway | https://learn.microsoft.com/en-us/azure/sap/microsoft-ai/copilot-studio/architecture-on-premises-data-gateway |
 | Plan SAP BusinessObjects BI architecture on Azure | https://learn.microsoft.com/en-us/azure/sap/workloads/businessobjects-deployment-guide |
 | Architect DBMS deployments for SAP on Azure VMs | https://learn.microsoft.com/en-us/azure/sap/workloads/dbms-guide-general |
 | Run SAP on IBM Db2 LUW in Azure VMs | https://learn.microsoft.com/en-us/azure/sap/workloads/dbms-guide-ibm |

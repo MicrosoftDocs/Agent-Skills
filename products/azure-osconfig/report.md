@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-05'
+generated_at: '2026-05-24'
 category_descriptions:
   integrations: Patterns for using OSConfig with Azure IoT to run custom commands,
     manage Linux networking, firewall, packages, hostnames, reboots, and report device/OS
@@ -9,16 +9,18 @@ category_descriptions:
   troubleshooting: Diagnosing OSConfig agent status and connectivity issues when using
     Azure IoT Hub, including checking logs, health, and troubleshooting deployment
     or reporting problems.
-  security: 'Configuring Windows security via OSConfig: App Control for Business,
-    Windows Server 2025 security baselines, and Windows LAPS with Azure Arc and Policy.'
+  security: 'Configuring Windows security with OSConfig: App Control for Business
+    policies, Windows Server 2025 security baselines, and applying CIS benchmarks
+    to Azure Windows Server.'
 skill_description: Expert knowledge for Azure Osconfig development including troubleshooting,
   security, configuration, and integrations & coding patterns. Use when running OSConfig
-  via IoT Hub for commands, SSH posture, agent health, Windows baselines, or LAPS,
-  and other Azure Osconfig related development tasks. Not for Azure Update Manager
-  (use azure-update-manager), Azure Automation (use azure-automation), Azure Policy
-  (use azure-policy).
-use_when: Use when running OSConfig via IoT Hub for commands, SSH posture, agent health,
-  Windows baselines, or LAPS, and other Azure Osconfig related development tasks.
+  via IoT for commands/networking, SSH Posture Control, agent health, or Windows security
+  baselines, and other Azure Osconfig related development tasks. Not for Azure Update
+  Manager (use azure-update-manager), Azure Automation (use azure-automation), Azure
+  Policy (use azure-policy).
+use_when: Use when running OSConfig via IoT for commands/networking, SSH Posture Control,
+  agent health, or Windows security baselines, and other Azure Osconfig related development
+  tasks.
 confusable_not_for: Not for Azure Update Manager (use azure-update-manager), Azure
   Automation (use azure-automation), Azure Policy (use azure-policy).
 ---
@@ -26,14 +28,14 @@ confusable_not_for: Not for Azure Update Manager (use azure-update-manager), Azu
 
 ## Summary
 
-- **Total Pages**: 31
-- **Fetched**: 31
+- **Total Pages**: 32
+- **Fetched**: 32
 - **Fetch Failed**: 0
-- **Classified**: 15
+- **Classified**: 16
 - **Unclassified**: 16
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
 - **Unchanged**: 31
 - **Deleted Pages**: 0
@@ -43,13 +45,17 @@ confusable_not_for: Not for Azure Update Manager (use azure-update-manager), Azu
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| configuration | 2 | 6.5% |
-| integrations | 10 | 32.3% |
-| security | 2 | 6.5% |
-| troubleshooting | 1 | 3.2% |
-| *(Unclassified)* | 16 | 51.6% |
+| configuration | 2 | 6.2% |
+| integrations | 10 | 31.2% |
+| security | 3 | 9.4% |
+| troubleshooting | 1 | 3.1% |
+| *(Unclassified)* | 16 | 50.0% |
 
 ## Changes
+
+### New Pages
+
+- [CIS Security Benchmarks for Windows Server (Preview)](https://learn.microsoft.com/en-us/azure/osconfig/overview-cis-benchmarks-windows-server)
 
 ## Classified Pages
 
@@ -61,6 +67,7 @@ confusable_not_for: Not for Azure Update Manager (use azure-update-manager), Azu
 | [Custom config and reporting](https://learn.microsoft.com/en-us/azure/osconfig/howto-customconfigreport) | integrations | 0.70 | Describes CommandRunner and custom configuration/reporting; includes product-specific behaviors, property names, and trade-offs, plus versioned naming changes. |
 | [Example queries for reporting scenarios](https://learn.microsoft.com/en-us/azure/osconfig/quickstart-useful-queries) | integrations | 0.70 | Provides concrete Azure IoT Hub query examples using Azure CLI, including query syntax and output formatting; these are product-specific integration patterns and parameter usages that go beyond generic knowledge. |
 | [Quickstart: How to configure security baselines for Windows Server](https://learn.microsoft.com/en-us/azure/osconfig/osconfig-how-to-configure-security-baselines) | security | 0.70 | How-to for deploying Windows Server 2025 security baselines via OSConfig; likely includes concrete security settings, scenario definitions, and PowerShell/WAC configuration details specific to this product. |
+| [CIS Security Benchmarks for Windows Server (Preview)](https://learn.microsoft.com/en-us/azure/osconfig/overview-cis-benchmarks-windows-server) | security | 0.65 | Page is about CIS Benchmarks for Windows Server delivered via Azure Policy and Machine Configuration, which is product-specific security guidance with concrete configuration/policy details rather than a generic overview. |
 | [Device info (OS, CPU, etc.)](https://learn.microsoft.com/en-us/azure/osconfig/howto-deviceinfo) | integrations | 0.65 | Reporting hardware/OS info via Azure IoT and OSConfig will involve specific reported property schemas and field names, including versioned naming changes. |
 | [Firewall](https://learn.microsoft.com/en-us/azure/osconfig/howto-firewall) | integrations | 0.65 | Firewall management via OSConfig likely documents specific twin properties, rule representations, and behavior that are product-specific integration details. |
 | [Host names](https://learn.microsoft.com/en-us/azure/osconfig/howto-hostname) | integrations | 0.65 | Covers getting and setting OS-level hostnames via Azure IoT and OSConfig; likely documents specific twin properties, payload formats, and version-specific naming changes. |

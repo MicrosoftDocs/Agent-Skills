@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-17'
+generated_at: '2026-05-24'
 category_descriptions:
   integrations: How to connect Managed Grafana to Azure/AKS Prometheus, Azure Monitor,
     Azure Data Explorer, MCP and AI Foundry, manage data source plugins, and build
@@ -7,8 +7,9 @@ category_descriptions:
   security: 'Securing Managed Grafana: auth/permissions, roles and team sync, private
     endpoints and outbound IPs, data encryption, service accounts/tokens, and security
     best practices.'
-  configuration: 'Configuring Managed Grafana workspaces: instance settings, plugins,
-    metrics via Azure Monitor, diagnostic logs, and SMTP email alert setup.'
+  configuration: 'Configuring Managed Grafana workspaces: instance settings, bundled
+    Prometheus, plugins, metrics via Azure Monitor, diagnostic logs, and SMTP email
+    alert setup.'
   deployment: Designing highly available Azure Managed Grafana workspaces, including
     reliability features, SLAs, and enabling zone-redundant deployments for resiliency.
   decision-making: Guidance on choosing and managing Grafana Enterprise plans, migrating
@@ -20,16 +21,17 @@ category_descriptions:
     access, configuration, and private endpoint connectivity and DNS problems.
 skill_description: Expert knowledge for Azure Managed Grafana development including
   troubleshooting, decision making, limits & quotas, security, configuration, integrations
-  & coding patterns, and deployment. Use when wiring AMG to Azure Monitor/Prometheus,
-  configuring workspaces, securing access, HA deployment, or fixing PE/DNS issues,
-  and other Azure Managed Grafana related development tasks. Not for Azure Monitor
-  (use azure-monitor), Azure Data Explorer (use azure-data-explorer), Azure Synapse
-  Analytics (use azure-synapse-analytics).
-use_when: Use when wiring AMG to Azure Monitor/Prometheus, configuring workspaces,
-  securing access, HA deployment, or fixing PE/DNS issues, and other Azure Managed
-  Grafana related development tasks.
-confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Data Explorer
-  (use azure-data-explorer), Azure Synapse Analytics (use azure-synapse-analytics).
+  & coding patterns, and deployment. Use when connecting Azure Monitor/Prometheus,
+  configuring workspaces, securing access, setting alerts, or troubleshooting, and
+  other Azure Managed Grafana related development tasks. Not for Azure Monitor (use
+  azure-monitor), Azure App Service (use azure-app-service), Azure Kubernetes Service
+  (AKS) (use azure-kubernetes-service), Azure Virtual Machines (use azure-virtual-machines).
+use_when: Use when connecting Azure Monitor/Prometheus, configuring workspaces, securing
+  access, setting alerts, or troubleshooting, and other Azure Managed Grafana related
+  development tasks.
+confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure App Service (use
+  azure-app-service), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
+  Azure Virtual Machines (use azure-virtual-machines).
 ---
 # Azure Managed Grafana Crawl Report
 
@@ -43,8 +45,8 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Data Explor
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 42
+- **Updated Pages**: 1
+- **Unchanged**: 43
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-managed-grafana/azure-managed-grafana.csv`
 
@@ -52,10 +54,10 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Data Explor
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| configuration | 5 | 11.4% |
+| configuration | 6 | 13.6% |
 | decision-making | 4 | 9.1% |
 | deployment | 1 | 2.3% |
-| integrations | 10 | 22.7% |
+| integrations | 9 | 20.5% |
 | limits-quotas | 2 | 4.5% |
 | security | 10 | 22.7% |
 | troubleshooting | 2 | 4.5% |
@@ -65,10 +67,8 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Data Explor
 
 ### Updated Pages
 
-- [Remote MCP server](https://learn.microsoft.com/en-us/azure/managed-grafana/grafana-mcp-server)
-  - Updated: 2026-04-23T17:12:00.000Z → 2026-05-14T17:14:00.000Z
-- [Ingest data via OpenTelemetry Collector](https://learn.microsoft.com/en-us/azure/managed-grafana/grafana-opentelemetry-app-insights)
-  - Updated: 2026-05-04T22:15:00.000Z → 2026-05-11T17:19:00.000Z
+- [Configure bundled Prometheus](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-bundled-prometheus)
+  - Updated: 2025-07-18T11:10:00.000Z → 2026-05-22T11:42:00.000Z
 
 ## Classified Pages
 
@@ -82,7 +82,6 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Data Explor
 | [Secure Azure Managed Grafana](https://learn.microsoft.com/en-us/azure/managed-grafana/secure-azure-managed-grafana) | security | 0.85 | Security hardening guidance with product-specific recommendations and configurations aligned to Zero Trust; beyond generic security theory. |
 | [Add Azure Data Explorer](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-connect-azure-data-explorer) | integrations | 0.80 | Details ADX data source configuration and authentication options; includes specific parameters and auth flows unique to this integration. |
 | [Configure SMTP settings](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-smtp-settings) | configuration | 0.80 | Details SMTP server settings and how to enable email alerts via portal/CLI; includes specific configuration parameters and constraints (e.g., not available at creation time). |
-| [Configure bundled Prometheus](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-bundled-prometheus) | integrations | 0.80 | Describes preview bundled Prometheus integration, Grafana-managed recording rules, and remote-write backend configuration; includes product-specific settings and behavior. |
 | [Migrate from Essential service tier](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-migrate-essential-service-tier) | decision-making | 0.80 | Describes retirement timeline for Essential tier and two migration paths with guidance; tier-selection and migration decision content. |
 | [Set up private access](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-set-up-private-access) | security | 0.80 | Covers disabling public access and configuring private endpoints; product-specific network security configuration. |
 | [Use Grafana Team Sync](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-sync-teams-with-entra-groups) | security | 0.80 | Describes mapping Microsoft Entra groups to Grafana Teams and interaction with Azure RBAC roles; product-specific permission configuration. |
@@ -94,6 +93,7 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Data Explor
 | [Add an Azure Monitor workspace](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-connect-azure-monitor-workspace) | integrations | 0.70 | Product-specific integration between Azure Monitor workspace (managed Prometheus) and Managed Grafana with configuration steps and parameters. |
 | [Agent Framework Workflow dashboard](https://learn.microsoft.com/en-us/azure/managed-grafana/agent-framework-workflow-dashboard) | integrations | 0.70 | Prebuilt dashboard for multi-agent workflows with OpenTelemetry and Application Insights; product-specific metrics and visualization patterns. |
 | [Configure MCP for AI Foundry agents](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-configure-mcp-for-ai-foundry) | integrations | 0.70 | Covers how to wire the Azure Managed Grafana MCP endpoint into Azure AI Foundry agents so they can query Azure resources, metrics, logs, and dashboards. This is a product-specific integration pattern between two Azure services with concrete configuration steps and parameters. |
+| [Configure bundled Prometheus](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-bundled-prometheus) | configuration | 0.70 | Page describes how to enable and configure the bundled Prometheus integration for Azure Managed Grafana, including product-specific setup steps and configuration options for using an Azure Monitor workspace as read and remote-write backends. This is concrete, product-specific configuration guidance rather than a conceptual overview. |
 | [Connect to self-hosted Prometheus through managed private endpoint](https://learn.microsoft.com/en-us/azure/managed-grafana/tutorial-mpe-oss-prometheus) | integrations | 0.70 | Product-specific integration pattern between AKS-hosted Prometheus and Azure Managed Grafana via managed private endpoint, likely with concrete endpoint settings and constraints. |
 | [Enable Grafana Enterprise](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-grafana-enterprise) | decision-making | 0.70 | Describes prerequisites (Standard plan), plan options, and how to update plans; supports decision-making about Enterprise add-on usage and access to plugins. |
 | [Enable zone redundancy](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-enable-zone-redundancy) | deployment | 0.70 | Describes zone redundancy option, availability zone usage, and billing implications; product-specific deployment/reliability configuration. |

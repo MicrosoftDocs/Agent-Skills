@@ -53,10 +53,10 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 - **Unclassified**: 91
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 4
-- **Unchanged**: 192
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 197
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-explorer/azure-data-explorer.csv`
 
 ## Classification Statistics
@@ -75,25 +75,6 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | *(Unclassified)* | 91 | 46.2% |
 
 ## Changes
-
-### New Pages
-
-- [Multitenant solutions](https://learn.microsoft.com/en-us/azure/data-explorer/multi-tenant)
-
-### Updated Pages
-
-- [Manage cluster locks](https://learn.microsoft.com/en-us/azure/data-explorer/manage-cluster-locks)
-  - Updated: 2026-03-15T22:03:00.000Z → 2026-05-11T22:03:00.000Z
-- [Create a cluster and database using SDKs](https://learn.microsoft.com/en-us/azure/data-explorer/create-cluster-database)
-  - Updated: 2025-09-28T08:00:00.000Z → 2026-05-13T17:03:00.000Z
-- [Business continuity overview](https://learn.microsoft.com/en-us/azure/data-explorer/business-continuity-overview)
-  - Updated: 2026-04-09T22:03:00.000Z → 2026-05-11T22:03:00.000Z
-- [Ingestion FAQ](https://learn.microsoft.com/en-us/azure/data-explorer/ingestion-faq)
-  - Updated: 2024-10-15T11:07:00Z → 2024-10-15T11:07:00.000Z
-
-### Deleted Pages
-
-- ~~Multi-tenant solutions~~ (https://learn.microsoft.com/en-us/azure/data-explorer/multi-tenant)
 
 ## Classified Pages
 

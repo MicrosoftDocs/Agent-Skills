@@ -1,9 +1,9 @@
 ---
 name: azure-sentinel
-description: Expert knowledge for Azure Sentinel development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring Sentinel connectors/ASIM, KQL analytics rules, Logic Apps playbooks, SAP/AWS/GCP ingestion, or CI/CD content, and other Azure Sentinel related development tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure Security (use azure-security), Azure Monitor (use azure-monitor), Azure Network Watcher (use azure-network-watcher).
+description: Expert knowledge for Azure Sentinel development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring data connectors, KQL analytics, Logic Apps playbooks, ASIM schemas, or multi-tenant Sentinel setups, and other Azure Sentinel related development tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure Security (use azure-security), Azure Monitor (use azure-monitor), Azure Network Watcher (use azure-network-watcher).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-17"
+  generated_at: "2026-05-24"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Sentinel Skill
@@ -26,8 +26,8 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L37-L51 | Diagnosing and fixing Sentinel data ingestion, connectors, analytics rules, KQL/jobs, notebooks, ASIM, and MCP tool issues, including SAP, AWS S3, Syslog/CEF, and Storage Blob. |
 | Best Practices | L52-L78 | Best practices for Sentinel SOCs: workspace/data design, detections & tuning, automation/playbooks, incident handling & metrics, UEBA/ASIM/ML use, SAP optimization, and solution lifecycle quality. |
-| Decision Making | L79-L119 | Guidance for SIEM/SOAR migration to Sentinel, choosing data tiers/connectors, managing and optimizing costs, and deciding between Sentinel rule, retention, and automation options. |
-| Architecture & Design Patterns | L120-L133 | Designing Sentinel architectures: multi-workspace/tenant layouts, MSSP/Lighthouse patterns, BCDR, coexisting with other SIEMs, SAP scenarios, and integration patterns across portals. |
+| Decision Making | L79-L119 | Guidance for planning, cost optimization, data tiers, connectors, and migrating SIEMs, automations, and detections to Microsoft Sentinel and the Defender portal. |
+| Architecture & Design Patterns | L120-L133 | Designing Sentinel architectures: multi-workspace/tenant layouts, MSSP/Lighthouse patterns, BCDR, coexistence with other SIEMs, SAP setups, and integration patterns across portals. |
 | Limits & Quotas | L134-L145 | Service limits, quotas, pricing/availability, and SLAs for Microsoft Sentinel core service, data lake, long-term search jobs, and watchlists, plus implications of disabling/removing Sentinel. |
 | Security | L146-L159 | Securing Sentinel: auth for playbooks, RBAC/roles, access restrictions, CMK & data residency, MSSP IP protection, SAP auth, AWS identity disruption, and network perimeter settings. |
 | Configuration | L160-L293 | Configuring Microsoft Sentinel and data lake: connectors, ingestion, schemas (ASIM, alerts, UEBA), analytics/automation rules, MCP tools, health monitoring, SAP, AWS/GCP, and workbook/solution setup. |
@@ -87,11 +87,11 @@ This skill requires **network access** to fetch documentation content:
 | Use Sentinel prepurchase plans to optimize analytics costs | https://learn.microsoft.com/en-us/azure/sentinel/billing-pre-purchase-plan |
 | Reduce and optimize Microsoft Sentinel costs | https://learn.microsoft.com/en-us/azure/sentinel/billing-reduce-costs |
 | Choose and configure Sentinel connectors for Cisco firewalls | https://learn.microsoft.com/en-us/azure/sentinel/cisco-ftd-firewall |
-| Decide between Sentinel analytics rules and custom detections | https://learn.microsoft.com/en-us/azure/sentinel/compare-analytics-rules-custom-detections |
+| Choose between Sentinel analytics rules and Defender custom detections | https://learn.microsoft.com/en-us/azure/sentinel/compare-analytics-rules-custom-detections |
 | Configure Sentinel interactive and long-term retention | https://learn.microsoft.com/en-us/azure/sentinel/configure-data-retention-archive |
 | Assess Sentinel connector support across clouds | https://learn.microsoft.com/en-us/azure/sentinel/data-type-cloud-support |
 | Choose between KQL jobs, summary rules, and search jobs in Sentinel | https://learn.microsoft.com/en-us/azure/sentinel/datalake/kql-jobs-summary-rules-search-jobs |
-| Decide which logs to ingest into Sentinel data lake | https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-lake-log-ingestion-guidance |
+| Choose which logs to ingest into Sentinel data lake | https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-lake-log-ingestion-guidance |
 | Enroll workspaces in Sentinel simplified pricing tiers | https://learn.microsoft.com/en-us/azure/sentinel/enroll-simplified-pricing-tier |
 | Decide when to use search jobs and restore data in Sentinel | https://learn.microsoft.com/en-us/azure/sentinel/investigate-large-datasets |
 | Choose Microsoft Sentinel log retention tiers | https://learn.microsoft.com/en-us/azure/sentinel/log-plans |
@@ -126,7 +126,7 @@ This skill requires **network access** to fetch documentation content:
 | Architect multi-tenant Sentinel for MSSPs with Azure Lighthouse | https://learn.microsoft.com/en-us/azure/sentinel/multiple-tenants-service-providers |
 | Design integration patterns for Microsoft Sentinel solutions | https://learn.microsoft.com/en-us/azure/sentinel/partner-integrations |
 | Plan multi-workspace and multi-tenant Sentinel layouts | https://learn.microsoft.com/en-us/azure/sentinel/prepare-multiple-workspaces |
-| Choose Microsoft Sentinel workspace architecture patterns | https://learn.microsoft.com/en-us/azure/sentinel/sample-workspace-designs |
+| Choose Microsoft Sentinel workspace designs by scenario | https://learn.microsoft.com/en-us/azure/sentinel/sample-workspace-designs |
 | Design multi-workspace architecture for Sentinel SAP | https://learn.microsoft.com/en-us/azure/sentinel/sap/cross-workspace |
 | Implement multi-workspace and multi-tenant Sentinel setup | https://learn.microsoft.com/en-us/azure/sentinel/use-multiple-workspaces |
 | Use multiple Sentinel workspaces in Defender portal | https://learn.microsoft.com/en-us/azure/sentinel/workspaces-defender-portal |

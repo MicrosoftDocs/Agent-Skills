@@ -10,7 +10,7 @@
 | Use Azure CLI samples for Cosmos DB Cassandra management | https://github.com/azure-samples/azure-cli-samples/tree/master/cosmosdb/cassandra |
 | Use PowerShell samples to manage Cosmos DB Cassandra resources | https://github.com/azure/azure-docs-powershell-samples/tree/master/cosmosdb/cassandra |
 | Use Cosmos DB .NET bulk executor library for bulk operations | https://learn.microsoft.com/en-us/azure/cosmos-db/bulk-executor-dotnet |
-| Use Cosmos DB Java V4 bulk support for import and update | https://learn.microsoft.com/en-us/azure/cosmos-db/bulk-executor-java |
+| Implement bulk import with Azure Cosmos DB Java SDK | https://learn.microsoft.com/en-us/azure/cosmos-db/bulk-executor-java |
 | Perform Cosmos DB bulk operations with JavaScript SDK | https://learn.microsoft.com/en-us/azure/cosmos-db/bulk-executor-nodejs |
 | Integrate Spring Data Cassandra with Cosmos DB Cassandra | https://learn.microsoft.com/en-us/azure/cosmos-db/cassandra/access-data-spring-data-app |
 | Configure Spark integration with Cosmos DB Cassandra | https://learn.microsoft.com/en-us/azure/cosmos-db/cassandra/connect-spark-configuration |
@@ -71,7 +71,6 @@
 | Call Cosmos DB stored procedures and triggers from SDKs | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-use-stored-procedures-triggers-udfs |
 | Write Cosmos DB stored procedures using JavaScript query API | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-write-javascript-query-api |
 | Implement Cosmos DB stored procedures, triggers, and UDFs | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-write-stored-procedures-triggers-udfs |
-| Use integrated Power BI with Synapse Link-enabled Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/integrated-power-bi-synapse-link |
 | Use JavaScript query API inside Cosmos DB server-side code | https://learn.microsoft.com/en-us/azure/cosmos-db/javascript-query-api |
 | Integrate Azure Cosmos DB with Kafka Connect | https://learn.microsoft.com/en-us/azure/cosmos-db/kafka-connector |
 | Configure Cosmos DB Kafka sink connector for topic ingestion | https://learn.microsoft.com/en-us/azure/cosmos-db/kafka-connector-sink |
@@ -112,7 +111,7 @@
 | Use Azure Cosmos DB with Node.js SDK | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-nodejs |
 | Use Azure Cosmos DB with Python SDK | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-python |
 | Use Azure Cosmos DB with Rust SDK | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-rust |
-| Implement Cosmos DB vector search with .NET | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-vector-store-dotnet |
+| Use .NET client for Cosmos DB vector search | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-vector-store-dotnet |
 | Implement Cosmos DB vector search with Go | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-vector-store-go |
 | Implement Cosmos DB vector search with Java | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-vector-store-java |
 | Implement Cosmos DB vector search with Node.js | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-vector-store-nodejs |
@@ -141,138 +140,18 @@
 | Integrate Vercel applications with Cosmos DB backends | https://learn.microsoft.com/en-us/azure/cosmos-db/vercel-integration |
 | Use LangChain vector store with Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/build-rag-applications |
 | Build Haystack RAG pipelines with Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/build-rag-pipelines |
-| Index | https://learn.microsoft.com/en-us/azure/documentdb/commands/ |
-| Use the aggregate command in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/commands/aggregation/aggregate |
-| Use the count command in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/commands/aggregation/count |
-| Use the distinct command in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/commands/aggregation/distinct |
-| Delete documents with delete in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/commands/query-and-write/delete |
-| Query documents with find() in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/commands/query-and-write/find |
-| Use findAndModify command in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/commands/query-and-write/findandmodify |
-| Use getMore cursor command in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/commands/query-and-write/getmore |
-| Insert documents with insert() in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/commands/query-and-write/insert |
-| Update documents with update() in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/commands/query-and-write/update |
 | Connect Azure Databricks to Azure DocumentDB with Spark | https://learn.microsoft.com/en-us/azure/documentdb/how-to-connect-from-databricks |
-| Apply $avg accumulator in Azure DocumentDB queries | https://learn.microsoft.com/en-us/azure/documentdb/operators/accumulators/$avg |
-| Use $bottom accumulator in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/accumulators/$bottom |
-| Use $bottomN accumulator in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/accumulators/$bottomn |
-| Use $count accumulator in Azure DocumentDB aggregations | https://learn.microsoft.com/en-us/azure/documentdb/operators/accumulators/$count |
-| Use $first accumulator in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/accumulators/$first |
-| Use $firstN accumulator in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/accumulators/$firstn |
-| Use $last accumulator in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/accumulators/$last |
-| Use $lastN accumulator in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/accumulators/$lastn |
-| Use $max accumulator and update in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/accumulators/$max |
-| Use $maxN accumulator in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/accumulators/$maxn |
-| Calculate medians with $median in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/accumulators/$median |
-| Use $min accumulator and update in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/accumulators/$min |
-| Use $minN accumulator in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/accumulators/$minn |
-| Use $stddevPop accumulator in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/accumulators/$stddevpop |
-| Use $stddevSamp accumulator in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/accumulators/$stddevsamp |
-| Use $sum accumulator in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/accumulators/$sum |
-| Use $top accumulator in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/accumulators/$top |
-| Use $topN accumulator in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/accumulators/$topn |
-| Add or modify fields with $addFields in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/aggregation/$addfields |
-| Group documents into ranges with $bucket in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/aggregation/$bucket |
-| Track real-time changes with $changeStream in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/aggregation/$changestream |
-| Get collection statistics with $collStats in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/aggregation/$collstats |
-| Fill missing sequence values with $densify in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/aggregation/$densify |
-| Create pipelines from literals with $documents in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/aggregation/$documents |
-| Run parallel aggregations with $facet in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/aggregation/$facet |
-| Fill missing or null values with $fill in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/aggregation/$fill |
-| Run geospatial proximity queries with $geoNear in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/aggregation/$geonear |
-| Convert types with $convert in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/aggregation/type-expression/$convert |
-| Check numeric types with $isNumber in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/aggregation/type-expression/$isnumber |
-| Convert values to Boolean with $toBool in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/aggregation/type-expression/$tobool |
-| Convert values to Date with $toDate in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/aggregation/type-expression/$todate |
-| Convert values to Decimal with $toDecimal in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/aggregation/type-expression/$todecimal |
-| Convert values to Double with $toDouble in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/aggregation/type-expression/$todouble |
-| Convert values to Integer with $toInt in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/aggregation/type-expression/$toint |
-| Convert values to Long with $toLong in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/aggregation/type-expression/$tolong |
-| Convert values to ObjectId with $toObjectId in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/aggregation/type-expression/$toobjectid |
-| Convert values to String with $toString in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/aggregation/type-expression/$tostring |
-| Measure binary field size with $binarySize | https://learn.microsoft.com/en-us/azure/documentdb/operators/data-size/$binarysize |
-| Measure document BSON size with $bsonSize | https://learn.microsoft.com/en-us/azure/documentdb/operators/data-size/$bsonsize |
-| Use $dateAdd aggregation operator in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/date-expression/$dateadd |
-| Use $dateDiff aggregation operator in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/date-expression/$datediff |
-| Construct dates with $dateFromParts in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/date-expression/$datefromparts |
-| Convert strings to dates with $dateFromString | https://learn.microsoft.com/en-us/azure/documentdb/operators/date-expression/$datefromstring |
-| Use $dateSubtract operator in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/date-expression/$datesubtract |
-| Decompose dates with $dateToParts in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/date-expression/$datetoparts |
-| Format dates as strings with $dateToString | https://learn.microsoft.com/en-us/azure/documentdb/operators/date-expression/$datetostring |
-| Truncate dates with $dateTrunc in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/date-expression/$datetrunc |
-| Extract day of month with $dayOfMonth | https://learn.microsoft.com/en-us/azure/documentdb/operators/date-expression/$dayofmonth |
-| Extract weekday with $dayOfWeek in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/date-expression/$dayofweek |
-| Extract day of year with $dayOfYear | https://learn.microsoft.com/en-us/azure/documentdb/operators/date-expression/$dayofyear |
-| Get hour component with $hour in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/date-expression/$hour |
-| Use $isoDayOfWeek for ISO weekdays in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/date-expression/$isodayofweek |
-| Get ISO week number with $isoWeek in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/date-expression/$isoweek |
-| Get ISO week year with $isoWeekYear in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/date-expression/$isoweekyear |
-| Extract milliseconds with $millisecond in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/date-expression/$millisecond |
-| Extract minutes with $minute in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/date-expression/$minute |
-| Extract month with $month in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/date-expression/$month |
-| Extract seconds with $second in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/date-expression/$second |
-| Get week number with $week in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/date-expression/$week |
-| Extract year with $year in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/date-expression/$year |
-| Filter by field existence with $exists in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/element-query/$exists |
-| Filter by field type with $type in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/element-query/$type |
-| Use $expr for computed conditions in DocumentDB queries | https://learn.microsoft.com/en-us/azure/documentdb/operators/evaluation-query/$expr |
-| Validate documents with $jsonSchema in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/evaluation-query/$jsonschema |
-| Pattern match strings with $regex in DocumentDB queries | https://learn.microsoft.com/en-us/azure/documentdb/operators/evaluation-query/$regex |
-| Perform full-text search with $text in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/evaluation-query/$text |
-| Set current date fields with $currentDate in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/field-update/$currentdate |
-| Increment fields with $inc in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/field-update/$inc |
-| Multiply field values with $mul in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/field-update/$mul |
-| Rename document fields with $rename in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/field-update/$rename |
-| Set insert-only fields with $setOnInsert in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/field-update/$setoninsert |
-| Define rectangular geospatial areas with $box in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/geospatial/$box |
-| Define circular geospatial areas with $center in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/geospatial/$center |
-| Use spherical geospatial circles with $centerSphere | https://learn.microsoft.com/en-us/azure/documentdb/operators/geospatial/$centersphere |
-| Query intersecting geospatial shapes with $geoIntersects | https://learn.microsoft.com/en-us/azure/documentdb/operators/geospatial/$geointersects |
-| Specify GeoJSON geometries with $geometry in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/geospatial/$geometry |
-| Query contained geospatial areas with $geoWithin in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/geospatial/$geowithin |
-| Use $maxDistance for Azure DocumentDB geospatial queries | https://learn.microsoft.com/en-us/azure/documentdb/operators/geospatial/$maxdistance |
-| Use $minDistance in Azure DocumentDB geospatial queries | https://learn.microsoft.com/en-us/azure/documentdb/operators/geospatial/$mindistance |
-| Run $near geospatial queries in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/geospatial/$near |
-| Use $nearSphere for spherical geospatial queries in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/geospatial/$nearsphere |
-| Define geospatial polygons with $polygon in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/geospatial/$polygon |
-| Use $literal in Azure DocumentDB aggregation pipelines | https://learn.microsoft.com/en-us/azure/documentdb/operators/literal-expression/$literal |
-| Apply $nor logical queries in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/logical-query/$nor |
-| Annotate queries with $comment in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/miscellaneous-query/$comment |
-| Control natural sort order with $natural in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/miscellaneous-query/$natural |
-| Generate random values with $rand in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/miscellaneous-query/$rand |
-| Retrieve dynamic fields with $getField in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/miscellaneous/$getfield |
-| Randomly sample documents with $sampleRate in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/miscellaneous/$samplerate |
-| Merge documents with $mergeObjects in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/object-expression/$mergeobjects |
-| Transform documents to arrays with $objectToArray in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/object-expression/$objecttoarray |
-| Modify embedded fields with $setField in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/object-expression/$setfield |
-| Return query metadata with $meta in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/projection/$meta |
-| Evaluate arrays with $allElementsTrue in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/set-expression/$allelementstrue |
-| Test array truthiness with $anyElementTrue in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/set-expression/$anyelementtrue |
-| Compute set differences with $setDifference in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/set-expression/$setdifference |
-| Compare sets with $setEquals in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/set-expression/$setequals |
-| Find common elements with $setIntersection in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/set-expression/$setintersection |
-| Check subset relationships with $setIsSubset in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/set-expression/$setissubset |
-| Unify arrays with $setUnion in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/set-expression/$setunion |
-| Extract timestamp increments with $tsIncrement in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/timestamp-expression/$tsincrement |
-| Extract seconds from timestamps with $tsSecond in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/timestamp-expression/$tssecond |
-| Define aggregation variables with $let in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/variable-expression/$let |
-| Calculate population covariance with $covariancePop in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/window-operators/$covariancepop |
-| Calculate sample covariance with $covarianceSamp in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/window-operators/$covariancesamp |
-| Assign dense rankings with $denseRank in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/window-operators/$denserank |
-| Compute rate of change with $derivative in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/window-operators/$derivative |
-| Number documents with $documentNumber in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/window-operators/$documentnumber |
-| Compute exponential moving averages with $expMovingAvg in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/window-operators/$expmovingavg |
-| Integrate values over windows with $integral in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/window-operators/$integral |
-| Fill missing data with $linearFill in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/window-operators/$linearfill |
-| Forward-fill values with $locf in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/window-operators/$locf |
-| Rank documents with $rank window operator in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/window-operators/$rank |
-| Shift windowed values with $shift in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/window-operators/$shift |
 | Persist LangGraph agent state in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/persist-agent-state |
 | Integrate LlamaIndex vector store with Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/query-knowledge-base |
 | Use the .NET/C# driver with Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-dotnet |
+| Use .NET MongoDB driver for DocumentDB vector search | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-dotnet-vector-search |
 | Use the Go driver with Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-go |
+| Implement Go vector search with Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-go-vector-search |
 | Use the Java driver with Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-java |
 | Use the Node.js driver with Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-nodejs |
+| Implement Node.js vector search with Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-nodejs-vector-search |
 | Use the Python driver with Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-python |
+| Implement Python vector search with Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-python-vector-search |
 | Use the Rust driver with Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-rust |
 | Integrate Jaeger tracing with Cassandra managed instances for monitoring | https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/jaeger |
 | Integrate Lucene Index search with Cassandra managed instances | https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/search-lucene-index |

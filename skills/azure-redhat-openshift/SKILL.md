@@ -1,9 +1,9 @@
 ---
 name: azure-redhat-openshift
-description: Expert knowledge for Azure Red Hat OpenShift development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when creating ARO clusters, configuring networking/storage, securing with Entra/Key Vault, or integrating GPUs/NetApp, and other Azure Red Hat OpenShift related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Container Apps (use azure-container-apps), Azure Container Instances (use azure-container-instances), Azure VMware Solution (use azure-vmware-solution).
+description: Expert knowledge for Azure Red Hat OpenShift development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when creating ARO clusters, configuring networking/storage, securing Entra auth, using GPUs/virtualization, or integrating Key Vault, and other Azure Red Hat OpenShift related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Container Apps (use azure-container-apps), Azure Virtual Machines (use azure-virtual-machines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-17"
+  generated_at: "2026-05-24"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Red Hat OpenShift Skill
@@ -25,13 +25,13 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L36-L42 | Fixing common ARO cluster issues, restoring cluster access, and manually updating or troubleshooting cluster certificates and connectivity via CLI |
-| Best Practices | L43-L50 | Guidance on sizing and deploying ARO clusters and infra nodes, optimizing OpenShift Virtualization VMs, and understanding ARO 4 support limits and policies |
+| Best Practices | L43-L50 | Guidance on sizing and deploying ARO infra/VMs, optimizing OpenShift Virtualization, scaling large clusters, and understanding ARO 4 support and lifecycle policies. |
 | Decision Making | L51-L55 | Defines the shared responsibility model for Azure Red Hat OpenShift, detailing which operational tasks are handled by Microsoft, Red Hat, and the customer. |
 | Limits & Quotas | L56-L61 | Scaling ARO clusters with multiple load balancer IPs, plus hard/soft service limits, quotas, and key terms that constrain cluster size and usage. |
-| Security | L62-L78 | Identity, auth, and network security for ARO: Entra/managed identities, workload identity, NSGs/egress control, disk encryption, FIPS, Front Door protection, Lockbox, and credential rotation. |
-| Configuration | L79-L97 | Configuring ARO clusters: networking (proxy, DNS, egress, MTU, endpoints), storage (Azure Files, Prometheus), registry, pull secrets, node subnets/Spot VMs, alerts, and resource tagging. |
-| Integrations & Coding Patterns | L98-L106 | Running ARO with external services: virtualization, NVIDIA GPUs, Azure NetApp Files, Prometheus→Azure Monitor, ACR auth, and Azure Key Vault secret integration. |
-| Deployment | L107-L117 | Deploying and operating ARO clusters and apps: cluster creation (private/ARM/Bicep), upgrades, networking migration, backups/restores, and app runtimes (JBoss, WebSphere, S2I, serverless). |
+| Security | L62-L78 | Securing ARO clusters: identity/auth (Entra, service principals, workload identity), disk encryption, NSGs/egress control, FIPS, Front Door protection, Lockbox, and credential/identity rotation. |
+| Configuration | L79-L96 | Configuring ARO clusters: networking (proxy, DNS, egress, MTU, endpoints), storage (Azure Files, Prometheus), registry, pull secrets, node subnets/Spot VMs, alerts, and resource tagging. |
+| Integrations & Coding Patterns | L97-L105 | Running ARO with external services: virtualization, NVIDIA GPUs, Azure NetApp Files, Prometheus→Azure Monitor, ACR auth, and Azure Key Vault secret integration. |
+| Deployment | L106-L116 | Deploying and operating ARO clusters and apps: cluster creation (private/ARM/Bicep), upgrades, networking migration, backups/restores, and app runtimes (JBoss, WebSphere, S2I, serverless). |
 
 ### Troubleshooting
 | Topic | URL |
@@ -73,7 +73,7 @@ This skill requires **network access** to fetch documentation content:
 | Replace Azure Red Hat OpenShift cluster identities | https://learn.microsoft.com/en-us/azure/openshift/howto-replace-cluster-identity |
 | Restrict and allow egress traffic for ARO clusters | https://learn.microsoft.com/en-us/azure/openshift/howto-restrict-egress |
 | Secure Azure Red Hat OpenShift apps with Azure Front Door | https://learn.microsoft.com/en-us/azure/openshift/howto-secure-openshift-with-front-door |
-| Rotate service principal credentials for Azure Red Hat OpenShift | https://learn.microsoft.com/en-us/azure/openshift/howto-service-principal-credential-rotation |
+| Rotate Microsoft Entra service principal credentials for ARO | https://learn.microsoft.com/en-us/azure/openshift/howto-service-principal-credential-rotation |
 | Control Microsoft support access to ARO with Azure Lockbox | https://learn.microsoft.com/en-us/azure/openshift/howto-use-lockbox |
 
 ### Configuration
@@ -81,7 +81,6 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Configure built-in container registry on ARO 4 | https://learn.microsoft.com/en-us/azure/openshift/built-in-container-registry |
 | Configure cluster-wide HTTP/HTTPS proxy in ARO | https://learn.microsoft.com/en-us/azure/openshift/cluster-wide-proxy-configure |
-| Configure egress lockdown endpoints for Azure Red Hat OpenShift | https://learn.microsoft.com/en-us/azure/openshift/concepts-egress-lockdown |
 | Understand networking layout and endpoints for Azure Red Hat OpenShift | https://learn.microsoft.com/en-us/azure/openshift/concepts-networking |
 | Set up DNS forwarding for Azure Red Hat OpenShift 4 | https://learn.microsoft.com/en-us/azure/openshift/dns-forwarding |
 | Update Red Hat pull secret on Azure Red Hat OpenShift | https://learn.microsoft.com/en-us/azure/openshift/howto-add-update-pull-secret |

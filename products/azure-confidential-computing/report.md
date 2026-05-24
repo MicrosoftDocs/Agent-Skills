@@ -48,8 +48,8 @@ confusable_not_for: Not for Azure Virtual Enclaves (use azure-virtual-enclaves),
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 67
+- **Updated Pages**: 0
+- **Unchanged**: 70
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-confidential-computing/azure-confidential-computing.csv`
 
@@ -67,15 +67,6 @@ confusable_not_for: Not for Azure Virtual Enclaves (use azure-virtual-enclaves),
 | *(Unclassified)* | 18 | 25.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [Application enclave VM FAQ](https://learn.microsoft.com/en-us/azure/confidential-computing/faq-application-enclaves)
-  - Updated: 2024-09-19T18:07:00Z → 2024-09-19T18:07:00.000Z
-- [Confidential enclave nodes FAQ](https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-nodes-aks-faq)
-  - Updated: 2026-04-30T11:20:00Z → 2026-04-30T11:20:00.000Z
-- [FAQ for confidential VMs](https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-vm-faq)
-  - Updated: 2025-04-16T22:02:00Z → 2025-04-16T22:02:00.000Z
 
 ## Classified Pages
 

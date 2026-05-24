@@ -1,14 +1,15 @@
 ---
-generated_at: '2026-05-17'
+generated_at: '2026-05-24'
 category_descriptions:
-  best-practices: Guidance on sizing and deploying ARO clusters and infra nodes, optimizing
-    OpenShift Virtualization VMs, and understanding ARO 4 support limits and policies
+  best-practices: Guidance on sizing and deploying ARO infra/VMs, optimizing OpenShift
+    Virtualization, scaling large clusters, and understanding ARO 4 support and lifecycle
+    policies.
   configuration: 'Configuring ARO clusters: networking (proxy, DNS, egress, MTU, endpoints),
     storage (Azure Files, Prometheus), registry, pull secrets, node subnets/Spot VMs,
     alerts, and resource tagging.'
-  security: 'Identity, auth, and network security for ARO: Entra/managed identities,
-    workload identity, NSGs/egress control, disk encryption, FIPS, Front Door protection,
-    Lockbox, and credential rotation.'
+  security: 'Securing ARO clusters: identity/auth (Entra, service principals, workload
+    identity), disk encryption, NSGs/egress control, FIPS, Front Door protection,
+    Lockbox, and credential/identity rotation.'
   deployment: 'Deploying and operating ARO clusters and apps: cluster creation (private/ARM/Bicep),
     upgrades, networking migration, backups/restores, and app runtimes (JBoss, WebSphere,
     S2I, serverless).'
@@ -25,17 +26,15 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Red Hat OpenShift development including
   troubleshooting, best practices, decision making, limits & quotas, security, configuration,
   integrations & coding patterns, and deployment. Use when creating ARO clusters,
-  configuring networking/storage, securing with Entra/Key Vault, or integrating GPUs/NetApp,
-  and other Azure Red Hat OpenShift related development tasks. Not for Azure Kubernetes
-  Service (AKS) (use azure-kubernetes-service), Azure Container Apps (use azure-container-apps),
-  Azure Container Instances (use azure-container-instances), Azure VMware Solution
-  (use azure-vmware-solution).
+  configuring networking/storage, securing Entra auth, using GPUs/virtualization,
+  or integrating Key Vault, and other Azure Red Hat OpenShift related development
+  tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure
+  Container Apps (use azure-container-apps), Azure Virtual Machines (use azure-virtual-machines).
 use_when: Use when creating ARO clusters, configuring networking/storage, securing
-  with Entra/Key Vault, or integrating GPUs/NetApp, and other Azure Red Hat OpenShift
-  related development tasks.
+  Entra auth, using GPUs/virtualization, or integrating Key Vault, and other Azure
+  Red Hat OpenShift related development tasks.
 confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
-  Azure Container Apps (use azure-container-apps), Azure Container Instances (use
-  azure-container-instances), Azure VMware Solution (use azure-vmware-solution).
+  Azure Container Apps (use azure-container-apps), Azure Virtual Machines (use azure-virtual-machines).
 ---
 # Azure Red Hat OpenShift Crawl Report
 
@@ -44,13 +43,13 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 - **Total Pages**: 66
 - **Fetched**: 66
 - **Fetch Failed**: 0
-- **Classified**: 51
-- **Unclassified**: 15
+- **Classified**: 50
+- **Unclassified**: 16
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 64
+- **Updated Pages**: 4
+- **Unchanged**: 62
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-redhat-openshift/azure-redhat-openshift.csv`
 
@@ -59,23 +58,27 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | Type | Count | Percentage |
 |------|-------|------------|
 | best-practices | 4 | 6.1% |
-| configuration | 15 | 22.7% |
+| configuration | 14 | 21.2% |
 | decision-making | 1 | 1.5% |
 | deployment | 8 | 12.1% |
 | integrations | 5 | 7.6% |
 | limits-quotas | 2 | 3.0% |
 | security | 13 | 19.7% |
 | troubleshooting | 3 | 4.5% |
-| *(Unclassified)* | 15 | 22.7% |
+| *(Unclassified)* | 16 | 24.2% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Azure Red Hat OpenShift service definition](https://learn.microsoft.com/en-us/azure/openshift/openshift-service-definitions)
-  - Updated: 2025-11-25T08:00:00.000Z → 2026-04-20T08:00:00.000Z
-- [Frequently asked questions](https://learn.microsoft.com/en-us/azure/openshift/openshift-faq)
-  - Updated: 2026-03-09T22:14:00Z → 2026-03-09T22:14:00.000Z
+- [Rotate service principal credentials](https://learn.microsoft.com/en-us/azure/openshift/howto-service-principal-credential-rotation)
+  - Updated: 2025-07-17T08:00:00.000Z → 2026-05-15T08:00:00.000Z
+- [Overview of egress lockdown](https://learn.microsoft.com/en-us/azure/openshift/concepts-egress-lockdown)
+  - Updated: 2025-02-25T18:01:00.000Z → 2026-05-20T22:09:00.000Z
+- [Support policies for Azure Red Hat OpenShift 4](https://learn.microsoft.com/en-us/azure/openshift/support-policies-v4)
+  - Updated: 2026-03-17T17:14:00.000Z → 2026-05-06T08:00:00.000Z
+- [Upgrade an Azure Red Hat OpenShift cluster](https://learn.microsoft.com/en-us/azure/openshift/howto-upgrade)
+  - Updated: 2025-11-14T18:00:00.000Z → 2026-05-20T22:09:00.000Z
 
 ## Classified Pages
 
@@ -114,9 +117,9 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Enable FIPS on a cluster](https://learn.microsoft.com/en-us/azure/openshift/howto-enable-fips-openshift) | security | 0.70 | Explains enabling FIPS mode at cluster creation with ARO-specific flags and constraints; security configuration tied to compliance requirements. |
 | [Manually update cluster certificates](https://learn.microsoft.com/en-us/azure/openshift/howto-update-certificates) | troubleshooting | 0.70 | Targets certificate issues and uses az aro update to resolve them; symptom (cert problems) to solution mapping is product-specific troubleshooting. |
 | [Migrate from OpenShift SDN to OVN-Kubernetes](https://learn.microsoft.com/en-us/azure/openshift/howto-sdn-to-ovn) | deployment | 0.70 | Describes migration path due to SDN deprecation, including version constraints and steps; deployment/migration decision and process. |
-| [Rotate service principal credentials](https://learn.microsoft.com/en-us/azure/openshift/howto-service-principal-credential-rotation) | security | 0.70 | Details rotation of Entra service principal credentials for ARO using Azure CLI; includes product-specific identity and permission handling steps. |
+| [Rotate service principal credentials](https://learn.microsoft.com/en-us/azure/openshift/howto-service-principal-credential-rotation) | security | 0.70 | Contains product-specific steps and Azure CLI commands for rotating Microsoft Entra ID service principal credentials tied to Azure Red Hat OpenShift clusters, including required parameters and sequence of operations that are not generic knowledge. |
 | [Segregate worker nodes into subnets](https://learn.microsoft.com/en-us/azure/openshift/howto-segregate-machinesets) | configuration | 0.70 | Network-level configuration of worker machine sets into different private subnets with access control implications is product-specific configuration. |
-| [Support policies for Azure Red Hat OpenShift 4](https://learn.microsoft.com/en-us/azure/openshift/support-policies-v4) | best-practices | 0.70 | The page defines which specific configuration changes to internal Azure Red Hat OpenShift 4 components are supported vs unsupported, including explicit DO/DON'T guidance that directly affects cluster supportability. These are product-specific support and configuration rules that function as best-practice constraints and are not generic knowledge. |
+| [Support policies for Azure Red Hat OpenShift 4](https://learn.microsoft.com/en-us/azure/openshift/support-policies-v4) | best-practices | 0.70 | Support policy pages for managed services typically contain product-specific DO/DON'T guidance (which cluster modifications are supported vs. unsupported, technology preview feature restrictions, and configuration changes that void support). These are concrete, vendor-specific best-practice rules that an LLM is unlikely to infer from general training data, but they are not primarily limits/quotas or decision matrices. |
 | [Tag resources using Azure Policy](https://learn.microsoft.com/en-us/azure/openshift/howto-tag-resources) | configuration | 0.70 | Involves creating JSON policy definitions/assignments and remediation for ARO-managed resource groups, with specific parameters and behavior. |
 | [Use Admin Kubeconfig](https://learn.microsoft.com/en-us/azure/openshift/howto-kubeconfig) | troubleshooting | 0.70 | Explicitly for regaining access when console/ingress/auth components fail; maps specific failure scenarios to using Admin Kubeconfig. |
 | [Configure Prometheus persistence](https://learn.microsoft.com/en-us/azure/openshift/howto-prometheus-persistence) | configuration | 0.68 | How-to for configuring Prometheus persistence on Azure Red Hat OpenShift is likely to include product-specific configuration objects (StorageClass, PVC specs, retention settings, operator config fields) and exact parameter names/values unique to ARO’s integrated monitoring stack, which qualifies as configuration expert knowledge rather than a generic tutorial. |
@@ -129,7 +132,6 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Use spot nodes](https://learn.microsoft.com/en-us/azure/openshift/howto-spot-nodes) | configuration | 0.65 | Describes how to configure ARO to use Spot VMs, which will involve product-specific settings and parameters beyond generic Spot VM usage. |
 | [Create a backup of a cluster application with Velero](https://learn.microsoft.com/en-us/azure/openshift/howto-create-a-backup) | deployment | 0.64 | Product-specific backup procedure using Velero on ARO, including required components and configuration; oriented to operational deployment/DR patterns. |
 | [Create a restore of a cluster application with Velero](https://learn.microsoft.com/en-us/azure/openshift/howto-create-a-restore) | deployment | 0.64 | Companion to backup article, detailing restore operations for ARO apps with Velero; includes environment preparation and product-specific restore steps. |
-| [Overview of egress lockdown](https://learn.microsoft.com/en-us/azure/openshift/concepts-egress-lockdown) | configuration | 0.64 | Describes required domains/URLs for ARO to function under egress restrictions; the curated endpoint set is expert, product-specific configuration data. |
 | [Networking](https://learn.microsoft.com/en-us/azure/openshift/concepts-networking) | configuration | 0.62 | Networking diagram and list of important endpoints for ARO 4; endpoint lists and network structure are product-specific configuration knowledge. |
 | [Use GPU workloads](https://learn.microsoft.com/en-us/azure/openshift/howto-gpu-workloads) | integrations | 0.60 | GPU workload enablement requires specific driver, node, and scheduling configuration parameters unique to ARO/OpenShift. |
 
@@ -139,13 +141,14 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 |-----------|------------|--------|
 | [Overview of OVN-Kubernetes](https://learn.microsoft.com/en-us/azure/openshift/concepts-ovn-kubernetes) | 0.45 | High-level overview of OVN-Kubernetes as network provider; likely conceptual without detailed parameter tables or numeric thresholds. |
 | [Understand managed identities](https://learn.microsoft.com/en-us/azure/openshift/howto-understand-managed-identities) | 0.45 | Conceptual article about managed identities; summary does not show concrete RBAC roles, scopes, or config tables. |
-| [Upgrade an Azure Red Hat OpenShift cluster](https://learn.microsoft.com/en-us/azure/openshift/howto-upgrade) | 0.45 | Update procedure via console/CLI/MUO; summary does not show version matrices, limits, or config tables that meet expert criteria. |
 | [Use Confidential Containers to protect sensitive data](https://learn.microsoft.com/en-us/azure/openshift/confidential-containers-overview) | 0.40 | Primarily an overview of confidential containers benefits and concepts; no clear indication of concrete configuration parameters, limits, or error mappings. |
 | [Create an Azure Red Hat OpenShift cluster](https://learn.microsoft.com/en-us/azure/openshift/create-cluster) | 0.30 | Quickstart for creating a cluster; summary does not show detailed config tables, limits, or security roles beyond generic how-to. |
 | [Deploy a JBoss EAP Java app](https://learn.microsoft.com/en-us/azure/openshift/howto-deploy-java-jboss-enterprise-application-platform-app) | 0.30 | Quickstart/tutorial for deploying JBoss EAP on Azure Red Hat OpenShift via the portal. It focuses on step-by-step setup using a Marketplace offer, not on limits, configuration matrices, error codes, or product-specific parameter tables. No clear expert-only limits, quotas, or specialized configuration references are indicated. |
+| [Overview of egress lockdown](https://learn.microsoft.com/en-us/azure/openshift/concepts-egress-lockdown) | 0.30 | Described as an overview of egress lockdown; based on the summary it focuses on conceptual explanation of required access/URLs rather than detailed endpoint lists, configuration tables, or numeric constraints. |
 | [Set up OpenShift Virtualization](https://learn.microsoft.com/en-us/azure/openshift/howto-create-openshift-virtualization) | 0.30 | Appears to be a how-to/overview for using OpenShift Virtualization on Azure Red Hat OpenShift, focused on describing capabilities and basic usage. The summary does not indicate detailed configuration tables, limits, error codes, or product-specific decision matrices; it reads as conceptual and procedural rather than expert reference content. |
 | [Support lifecycle for Azure Red Hat OpenShift 4](https://learn.microsoft.com/en-us/azure/openshift/support-lifecycle) | 0.30 | Support lifecycle and version-support policy information is high-level policy/maintenance guidance, not one of the targeted sub-skill types (no numeric limits/quotas, configuration parameters, error codes, or decision matrices with thresholds). While it may contain specific version dates, those are lifecycle details rather than limits, configuration, or troubleshooting content as defined. |
 | [Upgrade a cluster with managed identities enabled](https://learn.microsoft.com/en-us/azure/openshift/howto-upgrade-aro-openshift-cluster) | 0.30 | This is an upgrade how-to for clusters with managed identities. It is likely a procedural tutorial (using web console or MUO) without configuration matrices, limits, or detailed diagnostic mappings. It describes lifecycle operations rather than expert-only configuration parameters or troubleshooting details. |
+| [Upgrade an Azure Red Hat OpenShift cluster](https://learn.microsoft.com/en-us/azure/openshift/howto-upgrade) | 0.30 | The summary indicates a procedural how-to for updating Azure Red Hat OpenShift clusters via console, CLI, or MUO. It reads as a lifecycle/update tutorial without mention of specific limits, configuration matrices, error-code troubleshooting, or policy-style best practices; likely standard step-by-step instructions rather than expert-only reference data. |
 | [Connect to an Azure Red Hat OpenShift cluster](https://learn.microsoft.com/en-us/azure/openshift/connect-cluster) | 0.20 | Basic connection instructions using kubeadmin; no indication of detailed configuration parameters or troubleshooting mappings. |
 | [Create cluster with managed identities](https://learn.microsoft.com/en-us/azure/openshift/howto-create-openshift-cluster) | 0.20 | Primarily a how-to deployment guide for creating an Azure Red Hat OpenShift cluster with managed identities using CLI/Portal/Bicep/ARM. It does not clearly indicate detailed configuration tables, limits, error-code-based troubleshooting, or product-specific decision matrices; it appears to be procedural tutorial content rather than expert reference material. |
 | [Delete an Azure Red Hat OpenShift cluster](https://learn.microsoft.com/en-us/azure/openshift/delete-cluster) | 0.20 | Quickstart for deleting a cluster; operational but not configuration/limits-focused and lacks expert-only details in summary. |

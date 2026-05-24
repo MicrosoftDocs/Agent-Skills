@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-17'
+generated_at: '2026-05-24'
 category_descriptions:
   architecture-patterns: Advanced investigation workflows in Microsoft Discovery,
     including complex search strategies, correlation techniques, and patterns for
@@ -32,7 +32,8 @@ skill_description: Expert knowledge for Azure Microsoft Discovery development in
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
   Use when configuring Discovery workspaces, supercomputers, tools, REST job submissions,
   or secure ACR deployments, and other Azure Microsoft Discovery related development
-  tasks.
+  tasks. Not for Azure Resource Graph (use azure-resource-graph), Azure Portal (use
+  azure-portal), Azure Monitor (use azure-monitor), Azure Policy (use azure-policy).
 use_when: Use when configuring Discovery workspaces, supercomputers, tools, REST job
   submissions, or secure ACR deployments, and other Azure Microsoft Discovery related
   development tasks.
@@ -44,16 +45,16 @@ confusable_not_for: Not for Azure Resource Graph (use azure-resource-graph), Azu
 
 ## Summary
 
-- **Total Pages**: 69
-- **Fetched**: 69
+- **Total Pages**: 70
+- **Fetched**: 70
 - **Fetch Failed**: 0
 - **Classified**: 49
-- **Unclassified**: 20
+- **Unclassified**: 21
 
 ### Incremental Update
 - **New Pages**: 1
-- **Updated Pages**: 2
-- **Unchanged**: 66
+- **Updated Pages**: 0
+- **Unchanged**: 69
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-microsoft-discovery/azure-microsoft-discovery.csv`
 
@@ -62,28 +63,21 @@ confusable_not_for: Not for Azure Resource Graph (use azure-resource-graph), Azu
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 1 | 1.4% |
-| best-practices | 4 | 5.8% |
-| configuration | 18 | 26.1% |
-| decision-making | 7 | 10.1% |
-| deployment | 4 | 5.8% |
-| integrations | 4 | 5.8% |
+| best-practices | 4 | 5.7% |
+| configuration | 18 | 25.7% |
+| decision-making | 7 | 10.0% |
+| deployment | 4 | 5.7% |
+| integrations | 4 | 5.7% |
 | limits-quotas | 2 | 2.9% |
-| security | 8 | 11.6% |
+| security | 8 | 11.4% |
 | troubleshooting | 1 | 1.4% |
-| *(Unclassified)* | 20 | 29.0% |
+| *(Unclassified)* | 21 | 30.0% |
 
 ## Changes
 
 ### New Pages
 
-- [Transparency note](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-platform-card)
-
-### Updated Pages
-
-- [Data handling with tools and agents](https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-data-handling-with-tools-agents)
-  - Updated: 2026-04-20T15:52:00.000Z → 2026-05-14T17:14:00.000Z
-- [Quickstart - Deploy infrastructure using Azure portal](https://learn.microsoft.com/en-us/azure/microsoft-discovery/quickstart-infrastructure-portal)
-  - Updated: 2026-04-20T15:52:00.000Z → 2026-05-15T22:17:00.000Z
+- [Discovery Supercomputer and model execution](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-supercomputer)
 
 ## Classified Pages
 
@@ -161,5 +155,6 @@ confusable_not_for: Not for Azure Resource Graph (use azure-resource-graph), Azu
 | [Transparency note](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-platform-card) | 0.20 | Platform card describing intended uses, capabilities, limitations, and responsible-use best practices; this is conceptual/safety/marketing-style content rather than product-specific numeric limits, configuration parameters, or troubleshooting details. |
 | [Virtual Networks and Subnets](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-virtual-networks) | 0.20 | Explicitly described as high-level conceptual overview of VNets usage; not focused on concrete configuration parameters. |
 | [Write effective prompts for agents](https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-prompt-engineering) | 0.20 | Prompt engineering guidance is largely conceptual and transferable; unlikely to contain Discovery-specific configuration values, limits, or error mappings that qualify as expert product knowledge under the defined categories. |
+| [Discovery Supercomputer and model execution](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-supercomputer) | 0.10 | Page is a conceptual overview of the Microsoft Discovery Supercomputer and HPC layer without specific limits, configuration parameters, error codes, or decision matrices; it does not meet any sub-skill expert-knowledge criteria. |
 | [Key scenarios](https://learn.microsoft.com/en-us/azure/microsoft-discovery/overview-key-scenarios) | 0.10 | Key scenarios and use cases; primarily conceptual and marketing-style guidance. |
 | [What is Microsoft Discovery?](https://learn.microsoft.com/en-us/azure/microsoft-discovery/overview-what-is-microsoft-discovery) | 0.10 | High-level product overview without numeric limits, configuration tables, or concrete patterns. |

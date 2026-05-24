@@ -46,10 +46,10 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 - **Unclassified**: 39
 
 ### Incremental Update
-- **New Pages**: 2
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 131
-- **Deleted Pages**: 2
+- **Unchanged**: 133
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-wan/azure-virtual-wan.csv`
 
 ## Classification Statistics
@@ -67,16 +67,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | *(Unclassified)* | 39 | 29.3% |
 
 ## Changes
-
-### New Pages
-
-- [User tunnel - Windows clients](https://learn.microsoft.com/en-us/azure/virtual-wan/howto-always-on-user-tunnel)
-- [Device tunnel - Windows clients](https://learn.microsoft.com/en-us/azure/virtual-wan/howto-always-on-device-tunnel)
-
-### Deleted Pages
-
-- ~~Device tunnel~~ (https://learn.microsoft.com/en-us/azure/virtual-wan/howto-always-on-device-tunnel)
-- ~~User tunnel~~ (https://learn.microsoft.com/en-us/azure/virtual-wan/howto-always-on-user-tunnel)
 
 ## Classified Pages
 

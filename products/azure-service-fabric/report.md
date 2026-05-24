@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 403
+- **Updated Pages**: 0
+- **Unchanged**: 404
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-fabric/azure-service-fabric.csv`
 
@@ -76,11 +76,6 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | *(Unclassified)* | 74 | 18.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [Service Fabric managed clusters FAQ](https://learn.microsoft.com/en-us/azure/service-fabric/faq-managed-cluster)
-  - Updated: 2026-03-22T22:03:00Z → 2026-03-22T22:03:00.000Z
 
 ## Classified Pages
 

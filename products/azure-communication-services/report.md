@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-04-12'
+generated_at: '2026-05-24'
 category_descriptions:
   configuration: Monitoring, logging, metrics, and diagnostics for ACS (chat, voice/video,
     SMS, email, calling, routing), plus configuration for Teams interop, domains,
     routing, UI library, and SMS/email compliance.
   security: 'Security, auth, and compliance for ACS: encryption, identities, HMAC,
-    webhooks, Teams interop controls, captions/RTT/transcription data, caller ID,
-    WhatsApp/email, and emergency calling.'
+    caller ID, email/SMTP, Teams interop, captions/transcription, emergency calling,
+    and secure webhooks/Rooms.'
   decision-making: 'Guidance on ACS/Teams design decisions: PSTN options and pricing,
     phone numbers, Teams interop and licensing, gov cloud usage, and migrating from
     Twilio Video/Chat to ACS.'
@@ -31,17 +31,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Communication Services development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when building ACS calling/chat apps, PSTN/phone numbers, SMS/email, Teams interop,
-  or Job Router workloads, and other Azure Communication Services related development
-  tasks. Not for Azure AI Bot Service (use azure-bot-service), Azure Notification
-  Hubs (use azure-notification-hubs), Azure Web PubSub (use azure-web-pubsub), Azure
-  SignalR Service (use azure-signalr-service).
-use_when: Use when building ACS calling/chat apps, PSTN/phone numbers, SMS/email,
-  Teams interop, or Job Router workloads, and other Azure Communication Services related
-  development tasks.
-confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure Notification
-  Hubs (use azure-notification-hubs), Azure Web PubSub (use azure-web-pubsub), Azure
-  SignalR Service (use azure-signalr-service).
+  Use when building ACS calling, chat, SMS, email, Teams interop, or contact center/Job
+  Router solutions, and other Azure Communication Services related development tasks.
+  Not for Azure Notification Hubs (use azure-notification-hubs), Azure Web PubSub
+  (use azure-web-pubsub), Azure SignalR Service (use azure-signalr-service), Azure
+  AI Bot Service (use azure-bot-service).
+use_when: Use when building ACS calling, chat, SMS, email, Teams interop, or contact
+  center/Job Router solutions, and other Azure Communication Services related development
+  tasks.
+confusable_not_for: Not for Azure Notification Hubs (use azure-notification-hubs),
+  Azure Web PubSub (use azure-web-pubsub), Azure SignalR Service (use azure-signalr-service),
+  Azure AI Bot Service (use azure-bot-service).
 ---
 # Azure Communication Services Crawl Report
 
@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 517
+- **Updated Pages**: 1
+- **Unchanged**: 516
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-communication-services/azure-communication-services.csv`
 
@@ -76,6 +76,11 @@ confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure 
 | *(Unclassified)* | 102 | 19.7% |
 
 ## Changes
+
+### Updated Pages
+
+- [Azure Government](https://learn.microsoft.com/en-us/azure/communication-services/concepts/government)
+  - Updated: 2026-03-26T22:23:00.000Z → 2026-05-22T17:10:00.000Z
 
 ## Classified Pages
 
@@ -243,7 +248,7 @@ confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure 
 | [Archive chats](https://learn.microsoft.com/en-us/azure/communication-services/how-tos/chat-sdk/archive-chat-threads) | integrations | 0.70 | How-to for moving chat messages to own storage in real time; implies concrete integration patterns and configuration with storage or other services. |
 | [Authentication overview](https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/custom-teams-endpoint-authentication-overview) | security | 0.70 | Explains authentication flows and artifacts for single-tenant/multitenant Entra apps using ACS Calling SDK, which involves product-specific auth configuration details. |
 | [Authentication service hero sample](https://learn.microsoft.com/en-us/azure/communication-services/samples/trusted-auth-sample) | best-practices | 0.70 | Hero sample for authentication service; described as using best practices to build a trusted backend, implying concrete patterns and configurations specific to ACS. |
-| [Azure Government](https://learn.microsoft.com/en-us/azure/communication-services/concepts/government) | security | 0.70 | Page is specific to Azure Government, describing compliance posture (FedRAMP High, GCC High) and government-region–specific behavior and capabilities. These are product- and environment-specific security/compliance details that go beyond generic knowledge, fitting the security sub-skill focused on configuration/compliance requirements. |
+| [Azure Government](https://learn.microsoft.com/en-us/azure/communication-services/concepts/government) | security | 0.70 | Page focuses on Azure Communication Services in Azure Government, including FedRAMP High accreditation and government-specific compliance/region details. This is product- and cloud-specific security/compliance configuration knowledge that goes beyond generic concepts, fitting the security sub-skill best. |
 | [Azure Metrics](https://learn.microsoft.com/en-us/azure/communication-services/concepts/metrics) | configuration | 0.70 | Defines ACS metrics available in Azure Metrics Explorer; likely includes metric names, dimensions, and meanings, which are product-specific configuration/monitoring details. |
 | [Benefits of migrating voice and video from Twilio Video to Azure Communication Services](https://learn.microsoft.com/en-us/azure/communication-services/concepts/migrate-to-azure-communication-services) | decision-making | 0.70 | Conceptual migration article compares Twilio Video and ACS Calling SDK, highlighting key differences and advantages; this is explicit technology selection and migration decision guidance. |
 | [Best practices for sender authentication support](https://learn.microsoft.com/en-us/azure/communication-services/concepts/email/email-authentication-best-practice) | security | 0.70 | Explicitly about DNS records and sender authentication methods for Azure email; likely includes concrete record types/values and product-specific guidance. |

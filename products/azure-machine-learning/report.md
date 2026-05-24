@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-05-17'
+generated_at: '2026-05-24'
 category_descriptions:
   decision-making: 'Guidance on Azure ML design choices: algorithm selection, training
     and networking options, cost/DR planning, and detailed migration/upgrade paths
     from AML v1, Data Import, and prompt flow to newer services.'
-  configuration: How to configure Azure ML components, compute, networking, monitoring,
-    AutoML, YAML specs, data/feature stores, deployments, and environments across
-    the ML lifecycle.
+  configuration: 'Configuring Azure ML: designer components, AutoML, compute, networking,
+    data/feature stores, monitoring, registries, and full CLI/SDK/YAML setup for training,
+    deployment, and governance.'
   troubleshooting: 'Diagnosing and fixing Azure ML issues: pipelines, AutoML, endpoints
     (online/batch), networking (VNet/private/Kubernetes), environments/images, prompt
     flow, feature store, and known bugs.'
@@ -25,19 +25,20 @@ category_descriptions:
   integrations: Patterns and how-tos for wiring Azure ML to data sources, Spark/Databricks/Synapse,
     MLflow, REST APIs, prompt flow, and external tools/services for training, deployment,
     and RAG.
-  deployment: 'Deploying and operating models and prompt flows in Azure ML: online/batch
-    endpoints, CI/CD and MLOps/GenAIOps pipelines, blue‑green rollouts, cross-workspace
-    use, and production pipelines.'
+  deployment: 'Deploying and operationalizing ML and LLM workloads on Azure ML: online/batch
+    endpoints, CI/CD & MLOps, blue‑green rollouts, pipelines, prompt flow/GenAIOps,
+    and cross-workspace model consumption.'
 skill_description: Expert knowledge for Azure Machine Learning development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when using Azure ML workspaces, pipelines, AutoML, online/batch endpoints, or
-  prompt flow workloads, and other Azure Machine Learning related development tasks.
+  Use when using Azure ML AutoML, pipelines, online/batch endpoints, prompt flow/LLM
+  apps, or feature store, and other Azure Machine Learning related development tasks.
   Not for Azure Databricks (use azure-databricks), Azure Synapse Analytics (use azure-synapse-analytics),
   Azure HDInsight (use azure-hdinsight), Azure Data Science Virtual Machines (use
   azure-data-science-vm).
-use_when: Use when using Azure ML workspaces, pipelines, AutoML, online/batch endpoints,
-  or prompt flow workloads, and other Azure Machine Learning related development tasks.
+use_when: Use when using Azure ML AutoML, pipelines, online/batch endpoints, prompt
+  flow/LLM apps, or feature store, and other Azure Machine Learning related development
+  tasks.
 confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synapse
   Analytics (use azure-synapse-analytics), Azure HDInsight (use azure-hdinsight),
   Azure Data Science Virtual Machines (use azure-data-science-vm).
@@ -54,8 +55,8 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 626
+- **Updated Pages**: 3
+- **Unchanged**: 624
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-machine-learning/azure-machine-learning.csv`
 
@@ -78,8 +79,12 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 
 ### Updated Pages
 
-- [Intro to Azure Pipelines for CI/CD](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-devops-machine-learning?view=azureml-api-2)
-  - Updated: 2026-02-10T23:11:00.000Z → 2026-05-11T17:20:00.000Z
+- [Training with CLI and SDK](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-train-model?view=azureml-api-2)
+  - Updated: 2026-01-28T23:10:00.000Z → 2026-05-20T22:10:00.000Z
+- [Train with SDK v1](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-train-model?view=azureml-api-2)
+  - Updated: 2026-01-28T23:10:00.000Z → 2026-05-20T22:10:00.000Z
+- [Deploy and cut over](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/how-to-deploy-migrated-agent-framework-workflow?view=azureml-api-2)
+  - Updated: 2026-04-21T16:56:00.000Z → 2026-05-20T17:10:00.000Z
 
 ## Classified Pages
 
@@ -192,7 +197,6 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 | [Custom policy to allow specific models](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-custom-policy-model-deployment?view=azureml-api-2) | security | 0.80 | Shows how to define and assign custom Azure Policies for Foundry Tools and Azure OpenAI; involves policy JSON, parameters, and scopes that are concrete security configuration details. |
 | [Customer-managed keys](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-setup-customer-managed-keys?view=azureml-api-2) | security | 0.80 | Explains CMK setup across dependent services (Cosmos DB, AI Search, Storage, AKS) with Azure ML–specific encryption configuration. |
 | [Customize compute instance with a script](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-customize-compute-instance?view=azureml-api-2) | configuration | 0.80 | Shows how to inject setup scripts and environment configuration at provisioning time—product-specific configuration pattern. |
-| [Deploy and cut over](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/how-to-deploy-migrated-agent-framework-workflow?view=azureml-api-2) | deployment | 0.80 | Covers product-specific deployment and operations: OpenTelemetry tracing setup, deployment of Agent Framework workflows to Azure Container Apps, CI/CD quality gates, and production cutover from Prompt Flow. These are concrete deployment patterns and constraints unique to this stack. |
 | [Deploy models with safe rollout strategy](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-safely-rollout-online-endpoints?view=azureml-api-2) | deployment | 0.80 | Describes blue-green rollout strategy implemented via Azure ML online endpoints, including traffic-splitting behavior; deployment-focused with product-specific details. |
 | [Deploy serverless API endpoints](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-deploy-models-serverless?view=azureml-api-2) | deployment | 0.80 | Details how to deploy models as standard (serverless-like) deployments, including billing model and quota behavior; clearly a product-specific deployment method. |
 | [Deploy to online endpoints with secret injection](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-deploy-online-endpoint-with-secret-injection?view=azureml-api-2) | security | 0.80 | Provides concrete configuration for secret injection with AML online endpoints, including how to reference secrets and wire them into containers. |
@@ -315,6 +319,7 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 | [Configure network isolation with v2](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-configure-network-isolation-with-v2?view=azureml-api-2) | configuration | 0.72 | Explains network isolation changes on the v2 API platform and how to adjust existing setups; likely includes specific resource providers, endpoint names, and configuration changes required, which are detailed, version-specific configuration instructions. |
 | [Convert Word to Vector](https://learn.microsoft.com/en-us/azure/machine-learning/component-reference/convert-word-to-vector?view=azureml-api-2) | configuration | 0.72 | Describes Azure ML’s Convert Word to Vector component, including selectable Word2Vec models, parameters, and outputs, which are detailed configuration options. |
 | [Decision Forest Regression](https://learn.microsoft.com/en-us/azure/machine-learning/component-reference/decision-forest-regression?view=azureml-api-2) | configuration | 0.72 | Component reference pages for Azure ML designer typically list all hyperparameters, their allowed ranges, defaults, and behavior specific to this service. Those parameter tables and option descriptions are product-specific configuration knowledge beyond generic ML theory. |
+| [Deploy and cut over](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/how-to-deploy-migrated-agent-framework-workflow?view=azureml-api-2) | deployment | 0.72 | The article describes product-specific deployment of migrated Prompt Flow/Agent Framework workflows to Azure Container Apps, including operational steps like setting up OpenTelemetry tracing, configuring CI/CD quality gates, and managing production cutover. These are concrete deployment and operations patterns tied to this service rather than generic guidance. |
 | [Fast Forest Quantile Regression](https://learn.microsoft.com/en-us/azure/machine-learning/component-reference/fast-forest-quantile-regression?view=azureml-api-2) | configuration | 0.72 | Describes a specific Azure ML designer module with its tunable options and parameters (quantiles, tree settings, etc.). These are concrete component configuration details, not just conceptual ML content. |
 | [Init Image Transformation](https://learn.microsoft.com/en-us/azure/machine-learning/component-reference/init-image-transformation?view=azureml-api-2) | configuration | 0.72 | Component reference pages for designer components typically list all input/output ports and parameter names, allowed values, and defaults (for example resize modes, interpolation options, normalization settings). These are product-specific configuration details that qualify as expert knowledge. |
 | [K-Means Clustering](https://learn.microsoft.com/en-us/azure/machine-learning/component-reference/k-means-clustering?view=azureml-api-2) | configuration | 0.72 | Describes how to configure the K-Means component, including hyperparameters and their allowed settings in Azure ML designer, which is product-specific configuration knowledge. |
@@ -459,10 +464,8 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 | [Track experiments with MLflow](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-use-mlflow-cli-runs?view=azureml-api-2) | configuration | 0.70 | Shows how to use MLflow tracking in Azure ML, including supported/unsupported operations and possibly workspace-specific parameters. These are product-specific API/behavior details that go beyond generic MLflow knowledge. |
 | [Train PyTorch Model](https://learn.microsoft.com/en-us/azure/machine-learning/component-reference/train-pytorch-model?view=azureml-api-2) | configuration | 0.70 | Covers Azure ML’s Train PyTorch Model component, including configuration for single-node vs distributed training and component-specific parameters. |
 | [Train with MLflow Projects](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-train-mlflow-projects?view=azureml-api-2) | configuration | 0.70 | How-to for submitting MLflow Projects to Azure ML compute and tracking. Likely includes project file fields, CLI/SDK parameters, and Azure ML–specific configuration details. |
-| [Train with SDK v1](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-train-model?view=azureml-api-2) | configuration | 0.70 | Same URL and description as index 24; configuration-focused article on job submission via SDK/CLI. |
 | [Train with custom Docker image](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-train-with-custom-image?view=azureml-api-1) | configuration | 0.70 | Explains how to configure training with custom or curated Docker images; includes image and environment configuration details. |
 | [Train with datasets](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-read-write-data-v2?view=azureml-api-2) | integrations | 0.70 | Same URL and description as index 0; provides concrete patterns and SDK/CLI parameters for accessing data from Azure ML jobs, which is product-specific integration knowledge. |
-| [Training with CLI and SDK](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-train-model?view=azureml-api-2) | configuration | 0.70 | Covers how to configure and submit jobs via SDK/CLI; includes job configuration parameters and options. |
 | [Trigger a pipeline](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-trigger-published-pipeline?view=azureml-api-1) | deployment | 0.70 | Covers mechanisms to trigger pipelines (schedules, events, REST) for automation; this is deployment/operations guidance specific to Azure ML pipelines. |
 | [Tune Model Hyperparameters](https://learn.microsoft.com/en-us/azure/machine-learning/component-reference/tune-model-hyperparameters?view=azureml-api-2) | configuration | 0.70 | Describes the Tune Model Hyperparameters component with its parameter sweep settings, search options, and configuration fields unique to Azure ML. |
 | [Tune prompts using variants](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/how-to-tune-prompts-using-variants?view=azureml-api-2) | best-practices | 0.70 | Provides concrete techniques for using variants to test model behavior under different conditions; these are product-specific prompt-tuning practices and gotchas. |
@@ -508,6 +511,8 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 | [Score Image Model](https://learn.microsoft.com/en-us/azure/machine-learning/component-reference/score-image-model?view=azureml-api-2) | configuration | 0.68 | Explains configuration of the Score Image Model component, including required input formats and options for scoring image models in Azure ML designer. |
 | [Score Model](https://learn.microsoft.com/en-us/azure/machine-learning/component-reference/score-model?view=azureml-api-2) | configuration | 0.68 | Component reference for Score Model, detailing how to wire trained models and datasets and any scoring options, which are Azure ML–specific configuration details. |
 | [Train Anomaly Detection Model](https://learn.microsoft.com/en-us/azure/machine-learning/component-reference/train-anomaly-detection-model?view=azureml-api-2) | configuration | 0.68 | Describes how to pass algorithm parameters and unlabeled data into the training component, with explicit parameter names and accepted values, which are configuration details beyond generic anomaly detection concepts. |
+| [Train with SDK v1](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-train-model?view=azureml-api-2) | configuration | 0.68 | Same page as index 0; contains detailed Azure ML job configuration via SDK/CLI with specific parameter names and structures, which qualifies as product-specific configuration knowledge. |
+| [Training with CLI and SDK](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-train-model?view=azureml-api-2) | configuration | 0.68 | The article shows concrete Azure Machine Learning job configuration using the CLI and Python SDK (azure-ai-ml v2), including specific field names (like compute, environment, code, command, inputs/outputs) and how to structure job YAML/SDK objects. These are product-specific configuration patterns and parameter names that go beyond generic ML training knowledge, fitting the configuration sub-skill. |
 | [Tutorial: Create a secure workspace with a VNet](https://learn.microsoft.com/en-us/azure/machine-learning/tutorial-create-secure-workspace-vnet?view=azureml-api-2) | security | 0.68 | Tutorial shows product-specific steps and settings to secure an Azure Machine Learning workspace inside an Azure Virtual Network, including required dependent services, network configuration, and access patterns that are unique to Azure ML and not just generic VNet guidance. |
 | [Attach and Manage a Synapse Spark pool](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-manage-synapse-spark-pool?view=azureml-api-2) | configuration | 0.65 | Operational guide for attaching Synapse Spark pools; typically includes required configuration fields, resource identifiers, and Azure ML-specific parameters. |
 | [Auto-train computer vision models (Python)](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-auto-train-image-models?view=azureml-api-2) | configuration | 0.65 | How-to for setting up AutoML for computer vision via CLI/SDK; typically includes task-specific parameters and options unique to this feature. |

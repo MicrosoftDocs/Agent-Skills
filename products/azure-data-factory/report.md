@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 7
-- **Unchanged**: 498
+- **Updated Pages**: 0
+- **Unchanged**: 505
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-factory/azure-data-factory.csv`
 
@@ -75,23 +75,6 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | *(Unclassified)* | 81 | 16.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [Use custom parameters with a Resource Manager template](https://learn.microsoft.com/en-us/azure/data-factory/continuous-integration-delivery-resource-manager-custom-parameters)
-  - Updated: 2026-03-25T22:12:00.000Z → 2026-05-11T17:19:00.000Z
-- [Linked Resource Manager templates](https://learn.microsoft.com/en-us/azure/data-factory/continuous-integration-delivery-linked-templates)
-  - Updated: 2026-03-25T22:12:00.000Z → 2026-05-11T17:19:00.000Z
-- [Connector release stages and timelines](https://learn.microsoft.com/en-us/azure/data-factory/connector-release-stages-and-timelines)
-  - Updated: 2026-04-03T17:16:00.000Z → 2026-05-12T06:12:00.000Z
-- [Amazon Redshift](https://learn.microsoft.com/en-us/azure/data-factory/connector-amazon-redshift)
-  - Updated: 2026-04-28T08:00:00.000Z → 2026-05-12T08:00:00.000Z
-- [Xero](https://learn.microsoft.com/en-us/azure/data-factory/connector-xero)
-  - Updated: 2026-04-03T08:00:00.000Z → 2026-05-12T08:00:00.000Z
-- [Jira](https://learn.microsoft.com/en-us/azure/data-factory/connector-jira)
-  - Updated: 2026-04-03T08:00:00.000Z → 2026-05-12T06:12:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/data-factory/frequently-asked-questions)
-  - Updated: 2025-03-05T23:04:00Z → 2025-03-05T23:04:00.000Z
 
 ## Classified Pages
 

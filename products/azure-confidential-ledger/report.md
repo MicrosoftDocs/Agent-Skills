@@ -37,10 +37,10 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 - **Unclassified**: 14
 
 ### Incremental Update
-- **New Pages**: 3
-- **Updated Pages**: 6
-- **Unchanged**: 23
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 32
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-confidential-ledger/azure-confidential-ledger.csv`
 
 ## Classification Statistics
@@ -54,31 +54,6 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 | *(Unclassified)* | 14 | 43.8% |
 
 ## Changes
-
-### New Pages
-
-- [Ledger Explorer concepts](https://learn.microsoft.com/en-us/azure/confidential-ledger/ledger-explorer-concepts)
-- [Use the Azure portal ledger explorer](https://learn.microsoft.com/en-us/azure/confidential-ledger/ledger-explorer)
-- [Inspect ledger data with Ledger Explorer (Offline)](https://learn.microsoft.com/en-us/azure/confidential-ledger/ledger-explorer-offline)
-
-### Updated Pages
-
-- [About Azure confidential ledger](https://learn.microsoft.com/en-us/azure/confidential-ledger/overview)
-  - Updated: 2026-03-25T06:03:00.000Z → 2026-04-23T08:00:00.000Z
-- [.NET](https://learn.microsoft.com/en-us/azure/confidential-ledger/quickstart-net)
-  - Updated: 2025-04-14T08:00:00.000Z → 2026-05-12T12:44:00.000Z
-- [Write transaction receipts](https://learn.microsoft.com/en-us/azure/confidential-ledger/write-transaction-receipts)
-  - Updated: 2024-08-07T16:44:00.000Z → 2026-04-23T08:00:00.000Z
-- [Verify write transaction receipts](https://learn.microsoft.com/en-us/azure/confidential-ledger/verify-write-transaction-receipts)
-  - Updated: 2024-08-07T16:44:00.000Z → 2026-04-23T08:00:00.000Z
-- [Secure your Confidential Ledger](https://learn.microsoft.com/en-us/azure/confidential-ledger/secure-confidential-ledger)
-  - Updated: 2026-04-01T22:14:00.000Z → 2026-04-23T08:00:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/confidential-ledger/faq)
-  - Updated: 2025-11-17T23:03:00Z → 2026-05-12T12:44:00.000Z
-
-### Deleted Pages
-
-- ~~Upload, view and list ledger data with the Azure ledger explorer~~ (https://learn.microsoft.com/en-us/azure/confidential-ledger/quickstart-ledger-explorer)
 
 ## Classified Pages
 

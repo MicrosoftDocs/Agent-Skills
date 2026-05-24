@@ -1,9 +1,9 @@
 ---
 name: azure-defender-for-iot
-description: Expert knowledge for Azure Defender For Iot development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when deploying OT sensors, configuring micro agents, mirroring OT traffic, integrating with SIEM/Sentinel, or tuning alerts, and other Azure Defender For Iot related development tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure IoT (use azure-iot), Azure IoT Hub (use azure-iot-hub), Azure Security (use azure-security).
+description: Expert knowledge for Azure Defender For Iot development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when deploying OT sensors, configuring micro agents, mirroring OT traffic, integrating with SIEM/Sentinel, or managing alerts, and other Azure Defender For Iot related development tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure Security (use azure-security), Azure External Attack Surface Management (use azure-external-attack-surface-management), Azure IoT (use azure-iot).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-17"
+  generated_at: "2026-05-24"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Defender For Iot Skill
@@ -24,7 +24,7 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L45 | Troubleshooting Defender for IoT micro agents and OT sensors, validating sensor installs, interpreting sensor health messages, and understanding built‑in sensor alert types. |
+| Troubleshooting | L37-L45 | Diagnosing and fixing Defender for IoT micro agent and OT sensor issues, validating sensor installs, interpreting sensor health messages, and understanding built-in alert types. |
 | Best Practices | L46-L53 | Best practices for OT/ICS: using CIS benchmarks, designing monitoring topology, planning sensor placement at sites, and optimizing alert triage and response workflows. |
 | Decision Making | L54-L65 | Guidance on choosing OT traffic mirroring methods, licenses, and appliances, plus planning billing, console retirement, cloud transition, and tracking Defender for IoT OT software versions. |
 | Architecture & Design Patterns | L66-L72 | OT network architectures for connecting sensors to Azure, sample connectivity models, and mapping Defender for IoT components to Purdue OT network layers. |
@@ -38,7 +38,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Troubleshoot Defender for IoT micro agent issues | https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/troubleshoot-defender-micro-agent |
-| Reference for Defender for IoT sensor alert types | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/alert-engine-messages |
+| Reference Microsoft Defender for IoT alert types | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/alert-engine-messages |
 | Troubleshoot Microsoft Defender for IoT OT sensors | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-troubleshoot-sensor |
 | Validate Defender for IoT OT sensor software installation | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/ot-deploy/post-install-validation-ot-software |
 | Interpret Defender for IoT sensor health messages | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/sensor-health-messages |

@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 78
+- **Updated Pages**: 0
+- **Unchanged**: 80
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-web-application-firewall/azure-web-application-firewall.csv`
 
@@ -75,13 +75,6 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | *(Unclassified)* | 16 | 20.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [FAQ](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/application-gateway-waf-faq)
-  - Updated: 2026-03-06T23:15:00Z → 2026-03-06T23:15:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/waf-faq)
-  - Updated: 2025-10-01T22:16:00Z → 2025-10-01T22:16:00.000Z
 
 ## Classified Pages
 

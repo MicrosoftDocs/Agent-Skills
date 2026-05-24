@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-17'
+generated_at: '2026-05-24'
 category_descriptions:
   integrations: Patterns and samples for integrating API Management with external
     services (LLMs, Event Hubs, Service Bus, Graph, GitHub, Dapr), importing APIs
@@ -13,9 +13,9 @@ category_descriptions:
   decision-making: Guidance on choosing APIM tiers/networking, scaling and cost planning,
     DevOps/CI/CD, migrations (portals, workspaces, APIs, Amazon API Gateway), and
     monetization strategy.
-  configuration: Configuring Azure API Management services, gateways, networks, caching,
-    logging/monitoring, domains, policies (incl. LLM/GraphQL), subscriptions, users,
-    and deployment templates.
+  configuration: Configuring Azure API Management services, gateways, networks, logging/monitoring,
+    caching, domains, policies (rate limits, CORS, LLM, GraphQL), and managing users,
+    subscriptions, and workspaces.
   troubleshooting: 'Diagnosing and fixing APIM issues: policies and error handling,
     request tracing/debugging, custom domain/Key Vault cert failures, SNAT timeouts,
     portal problems, and using Diagnose and Solve.'
@@ -31,16 +31,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure API Management development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when integrating APIM with LLMs/Event Hubs, configuring policies, securing with
-  OAuth2/mTLS, or scaling gateways, and other Azure API Management related development
-  tasks. Not for Azure App Service (use azure-app-service), Azure Functions (use azure-functions),
-  Azure Logic Apps (use azure-logic-apps), Azure Service Bus (use azure-service-bus).
-use_when: Use when integrating APIM with LLMs/Event Hubs, configuring policies, securing
-  with OAuth2/mTLS, or scaling gateways, and other Azure API Management related development
-  tasks.
-confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Functions
-  (use azure-functions), Azure Logic Apps (use azure-logic-apps), Azure Service Bus
-  (use azure-service-bus).
+  Use when integrating APIM with Event Hubs/Service Bus/LLMs, configuring policies,
+  securing gateways, or scaling deployments, and other Azure API Management related
+  development tasks. Not for Azure Application Gateway (use azure-application-gateway),
+  Azure Front Door (use azure-front-door), Azure Web Application Firewall (use azure-web-application-firewall),
+  Azure Functions (use azure-functions).
+use_when: Use when integrating APIM with Event Hubs/Service Bus/LLMs, configuring
+  policies, securing gateways, or scaling deployments, and other Azure API Management
+  related development tasks.
+confusable_not_for: Not for Azure Application Gateway (use azure-application-gateway),
+  Azure Front Door (use azure-front-door), Azure Web Application Firewall (use azure-web-application-firewall),
+  Azure Functions (use azure-functions).
 ---
 # Azure API Management Crawl Report
 
@@ -54,8 +55,8 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 12
-- **Unchanged**: 259
+- **Updated Pages**: 2
+- **Unchanged**: 269
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-api-management/azure-api-management.csv`
 
@@ -65,8 +66,8 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 |------|-------|------------|
 | architecture-patterns | 3 | 1.1% |
 | best-practices | 6 | 2.2% |
-| configuration | 92 | 33.9% |
-| decision-making | 17 | 6.3% |
+| configuration | 93 | 34.3% |
+| decision-making | 16 | 5.9% |
 | deployment | 17 | 6.3% |
 | integrations | 28 | 10.3% |
 | limits-quotas | 14 | 5.2% |
@@ -78,30 +79,10 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 
 ### Updated Pages
 
-- [API Management gateways](https://learn.microsoft.com/en-us/azure/api-management/api-management-gateways-overview)
-  - Updated: 2026-05-07T08:00:00.000Z → 2026-05-15T05:53:00.000Z
-- [AI Gateway capabilities](https://learn.microsoft.com/en-us/azure/api-management/genai-gateway-capabilities)
-  - Updated: 2026-05-06T08:00:00.000Z → 2026-05-13T08:00:00.000Z
-- [API Management policies overview](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-policies)
-  - Updated: 2025-09-08T22:37:00.000Z → 2026-05-14T08:00:00.000Z
-- [Manage secrets using named values](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-properties)
-  - Updated: 2025-10-02T22:32:00.000Z → 2026-05-12T22:14:00.000Z
-- [Use capacity for scaling decisions](https://learn.microsoft.com/en-us/azure/api-management/api-management-capacity)
-  - Updated: 2025-07-17T05:09:00.000Z → 2026-05-14T08:00:00.000Z
-- [Use role-based access control](https://learn.microsoft.com/en-us/azure/api-management/api-management-role-based-access-control)
-  - Updated: 2025-08-08T08:00:00.000Z → 2026-05-12T17:16:00.000Z
-- [Deploy to virtual network - internal](https://learn.microsoft.com/en-us/azure/api-management/api-management-using-with-internal-vnet)
-  - Updated: 2025-05-08T05:10:00.000Z → 2026-05-15T17:20:00.000Z
-- [Security controls by Azure Policy](https://learn.microsoft.com/en-us/azure/api-management/security-controls-policy)
-  - Updated: 2025-10-17T08:00:00.000Z → 2026-05-14T08:00:00.000Z
-- [llm-emit-token-metric](https://learn.microsoft.com/en-us/azure/api-management/llm-emit-token-metric-policy)
-  - Updated: 2026-05-04T22:15:00.000Z → 2026-05-15T05:53:00.000Z
-- [Regional availability](https://learn.microsoft.com/en-us/azure/api-management/api-management-region-availability)
-  - Updated: 2026-04-25T17:14:00.000Z → 2026-05-12T17:16:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/api-management/api-management-faq)
-  - Updated: 2026-01-13T23:18:00Z → 2026-01-13T23:18:00.000Z
-- [Email notifications and templates](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-configure-notifications)
-  - Updated: 2025-10-09T22:11:00.000Z → 2026-05-14T22:12:00.000Z
+- [Configure backends](https://learn.microsoft.com/en-us/azure/api-management/backends)
+  - Updated: 2026-01-15T08:00:00.000Z → 2026-05-20T08:00:00.000Z
+- [Alternative approaches to self-hosting](https://learn.microsoft.com/en-us/azure/api-management/developer-portal-alternative-processes-self-host)
+  - Updated: 2026-02-06T18:19:00.000Z → 2026-05-20T08:00:00.000Z
 
 ## Classified Pages
 
@@ -231,6 +212,7 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [Configure Front Door](https://learn.microsoft.com/en-us/azure/api-management/front-door-api-management) | architecture-patterns | 0.70 | Describes a concrete pattern using Front Door for global load balancing, TLS offload, caching, and WAF in front of API Management, with product-specific behavior. |
 | [Configure a GraphQL resolver](https://learn.microsoft.com/en-us/azure/api-management/configure-graphql-resolver) | integrations | 0.70 | Details resolver configuration and supported data sources for GraphQL fields; product-specific integration and configuration pattern. |
 | [Configure a custom domain](https://learn.microsoft.com/en-us/azure/api-management/configure-custom-domain) | configuration | 0.70 | Explains how to map custom DNS names and choose certificates for API Management endpoints, including product-specific constraints such as accepted Host header values. This is concrete configuration guidance tied to specific endpoint and domain settings. |
+| [Configure backends](https://learn.microsoft.com/en-us/azure/api-management/backends) | configuration | 0.70 | Backend entities, policies, and settings for API Management backends are product-specific configuration details (e.g., how to define and reuse backend services, configure credentials, and reference Azure resources) that go beyond generic API gateway knowledge. |
 | [Configure common credential providers](https://learn.microsoft.com/en-us/azure/api-management/credentials-configure-common-providers) | security | 0.70 | Covers configuring identity/credential providers (Microsoft Entra, generic OAuth) in the API Management credential manager with provider-specific settings. This is product-specific security/identity configuration rather than a generic overview. |
 | [Configure credential manager - GitHub API](https://learn.microsoft.com/en-us/azure/api-management/credentials-how-to-github) | integrations | 0.70 | The article describes creating a managed connection from Azure API Management to the GitHub API using OAuth 2.0 authorization code grant. This involves product-specific integration steps, including configuration of connection/credential manager settings and OAuth parameters unique to APIM↔GitHub integration, which qualifies as expert integration knowledge rather than a generic tutorial. |
 | [Configure credential manager - user-delegated permissions](https://learn.microsoft.com/en-us/azure/api-management/credentials-how-to-user-delegated) | integrations | 0.70 | Guides configuring managed connections with user-delegated permissions to backend OAuth 2.0 APIs; likely details APIM credential manager settings and Entra/user delegation parameters not generally known. |
@@ -315,7 +297,6 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [Built-in analytics dashboard retirement (March 2027)](https://learn.microsoft.com/en-us/azure/api-management/breaking-changes/analytics-dashboard-retirement-march-2027) | decision-making | 0.64 | Specifies retirement date for the built-in analytics dashboard and points to the Azure Monitor-based replacement, guiding monitoring solution choices and migration. |
 | [CAPTCHA endpoint update (September 2025)](https://learn.microsoft.com/en-us/azure/api-management/breaking-changes/captcha-endpoint-change-sep-2025) | configuration | 0.64 | Provides a specific date and new CAPTCHA endpoint, requiring VNet/network configuration updates to keep the developer portal working—expert configuration detail. |
 | [Workspaces preview breaking changes (June 2024)](https://learn.microsoft.com/en-us/azure/api-management/breaking-changes/workspaces-breaking-changes-june-2024) | decision-making | 0.64 | Describes specific breaking changes, dates, and which workspace configurations are affected, guiding users on when and how to update or recreate workspaces—migration/decision-focused expert guidance. |
-| [Alternative approaches to self-hosting](https://learn.microsoft.com/en-us/azure/api-management/developer-portal-alternative-processes-self-host) | decision-making | 0.62 | Discusses several alternative approaches for self-hosting the developer portal, providing guidance on options and when to use them; supports implementation decisions. |
 | [Deprecated (legacy) developer portal (October 2023)](https://learn.microsoft.com/en-us/azure/api-management/breaking-changes/legacy-portal-retirement-oct-2023) | decision-making | 0.62 | Explains retirement of the legacy portal and migration requirements. While not numeric, it provides concrete migration decisions and paths between portal versions, which is decision-making guidance. |
 | [Frequently asked questions - developer portal](https://learn.microsoft.com/en-us/azure/api-management/developer-portal-faq) | troubleshooting | 0.62 | FAQ for developer portal typically includes common issues, error symptoms, and resolutions specific to APIM portal behavior. |
 | [Azure PowerShell samples](https://github.com/Azure/azure-docs-powershell-samples) | integrations | 0.60 | Repository of concrete PowerShell code samples used in Azure docs; contains API/SDK parameter usage and patterns that are product-specific integration examples. |
@@ -346,7 +327,7 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [1 - Import your first API](https://learn.microsoft.com/en-us/azure/api-management/import-and-publish) | 0.35 | Tutorial on importing and testing an API; mostly procedural without detailed config tables or limits. |
 | [2 - Create and publish a product](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-add-products) | 0.35 | Tutorial for creating and publishing a product; summary doesn’t show numeric quotas or detailed configuration tables, just conceptual usage quota mention. |
 | [9 - Customize developer portal](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-developer-portal-customize) | 0.35 | Developer portal customization tutorial; mostly UI-driven steps without deep configuration tables or security/limits details. |
-| [Configure backends](https://learn.microsoft.com/en-us/azure/api-management/backends) | 0.35 | Backends overview; mostly conceptual with examples, not a configuration or limits reference. |
+| [Alternative approaches to self-hosting](https://learn.microsoft.com/en-us/azure/api-management/developer-portal-alternative-processes-self-host) | 0.30 | Appears to describe alternative approaches for self-hosting the API Management developer portal, likely more of a conceptual/approach overview without detailed configuration tables, limits, or error-code-based troubleshooting. No clear evidence of numeric limits, config parameter matrices, or decision matrices from the summary. |
 | [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/api-management/policy-reference) | 0.30 | This is an index of Azure Policy built-in definitions for API Management, primarily navigational. It links out to definitions but does not itself contain detailed configuration tables or numeric thresholds. |
 | [Create an instance - CLI](https://learn.microsoft.com/en-us/azure/api-management/get-started-create-service-instance-cli) | 0.30 | Quickstart showing CLI commands to create an instance; lacks parameter tables, limits, or advanced configuration beyond basic provisioning. |
 | [Create an instance - PowerShell](https://learn.microsoft.com/en-us/azure/api-management/powershell-create-service-instance) | 0.30 | PowerShell quickstart for instance creation; focuses on basic provisioning commands, not detailed configuration options or quotas. |
