@@ -1,9 +1,9 @@
 ---
 name: azure-backup
-description: Expert knowledge for Azure Backup development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when protecting Azure VMs/AKS/databases, configuring vaults/policies, scripting via CLI/PowerShell/REST, or securing with MUA/immutability, and other Azure Backup related development tasks. Not for Azure Site Recovery (use azure-site-recovery), Azure Virtual Machines (use azure-virtual-machines), Azure Blob Storage (use azure-blob-storage), Azure Files (use azure-files).
+description: Expert knowledge for Azure Backup development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when protecting Azure VMs/AKS, SQL/SAP HANA, Files/Blobs, MARS/MABS/DPM workloads, or automating via CLI/PowerShell, and other Azure Backup related development tasks. Not for Azure Site Recovery (use azure-site-recovery), Azure Virtual Machines (use azure-virtual-machines), Azure Blob Storage (use azure-blob-storage).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-24"
+  generated_at: "2026-05-31"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Backup Skill
@@ -28,11 +28,11 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L71-L82 | Best practices for configuring and optimizing Azure Backup/MABS/DPM for Hyper‑V VMs, SQL (incl. Always On), Exchange, TRIM-aware backups, VM protection, and cross-vault recovery. |
 | Decision Making | L83-L90 | Guidance on planning Azure Backup costs, checking supported VM SKUs, choosing reserved capacity for savings, and migrating classic backup alerts to Azure Monitor. |
 | Architecture & Design Patterns | L91-L95 | Azure Backup’s architecture for protecting SAP HANA: components, data flow, backup/restore process, scalability, security, and integration with Azure storage and recovery services. |
-| Limits & Quotas | L96-L132 | Backup limits, quotas, regional support, retention, and support matrices for Azure Backup workloads (VMs, disks, files, databases, SAP, AKS, MARS/MABS/DPM) and related metrics/reporting. |
+| Limits & Quotas | L96-L132 | Limits, support matrices, regions, performance, and retention constraints for Azure Backup across VMs, databases, files, disks, blobs, AKS, and SAP workloads |
 | Security | L133-L174 | Securing Azure Backup with encryption, RBAC, managed identities, private endpoints, soft delete, immutability, MUA/Resource Guard, and policies for ransomware protection and compliant restores. |
-| Configuration | L175-L249 | Configuring Azure Backup and restore: vaults, policies, agents, scripts/APIs, monitoring/alerts, and workload-specific setup for VMs, AKS, Files, Blobs, disks, SQL, SAP HANA, PostgreSQL, and AD. |
-| Integrations & Coding Patterns | L250-L305 | End-to-end scripting patterns for configuring, running, monitoring, and restoring Azure Backup across VMs, SQL, PostgreSQL, SAP HANA, Files, Blobs, Disks, and on-premises using CLI, PowerShell, REST, and Logic Apps. |
-| Deployment | L306-L312 | MABS v3/v4 deployment details: supported workload/protection matrices and how to automate unattended/silent installation of Azure Backup Server v4. |
+| Configuration | L175-L253 | Configuring Azure Backup and policies for VMs, AKS, SQL, SAP HANA, Files, Blobs, Disks, AD, and on-prem agents, plus monitoring, diagnostics, reporting, and Backup Center governance. |
+| Integrations & Coding Patterns | L254-L310 | Automating Azure Backup via CLI, PowerShell, REST, and scripts for VMs, SQL, PostgreSQL, Files, Blobs, Disks, MARS/on-prem, plus policies, vaults, jobs, restores, and security/reporting integrations. |
+| Deployment | L311-L317 | MABS v3/v4 deployment details: supported workload/protection matrices and how to automate unattended/silent installation of Azure Backup Server v4. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -127,7 +127,7 @@ This skill requires **network access** to fetch documentation content:
 | Review Azure Backup support limits for SAP HANA | https://learn.microsoft.com/en-us/azure/backup/sap-hana-backup-support-matrix |
 | Azure Backup limits for SAP HANA on Azure VMs | https://learn.microsoft.com/en-us/azure/backup/sap-hana-faq-backup-azure-vm |
 | Protect Azure file shares with soft delete | https://learn.microsoft.com/en-us/azure/backup/soft-delete-azure-file-share |
-| Check SQL Server backup support limits on Azure VMs | https://learn.microsoft.com/en-us/azure/backup/sql-support-matrix |
+| Azure Backup support limits for SQL Server on VMs | https://learn.microsoft.com/en-us/azure/backup/sql-support-matrix |
 | View Azure Backup reports and workspace limits | https://learn.microsoft.com/en-us/azure/backup/view-reports |
 
 ### Security
@@ -185,6 +185,8 @@ This skill requires **network access** to fetch documentation content:
 | Configure AKS backup extension and trusted access | https://learn.microsoft.com/en-us/azure/backup/azure-kubernetes-service-cluster-manage-backups |
 | Restore AKS clusters and volumes using Azure Backup | https://learn.microsoft.com/en-us/azure/backup/azure-kubernetes-service-cluster-restore |
 | Configure Azure Backup vault diagnostics via Azure Policy | https://learn.microsoft.com/en-us/azure/backup/azure-policy-configure-diagnostics |
+| Configure SQL Server instance snapshot backups on Azure VMs | https://learn.microsoft.com/en-us/azure/backup/back-up-sql-server-instance-snapshot |
+| Restore SQL instance or database from snapshot backups | https://learn.microsoft.com/en-us/azure/backup/back-up-sql-server-instance-snapshot-restore |
 | Auto-enable VM backups using Azure Policy | https://learn.microsoft.com/en-us/azure/backup/backup-azure-auto-enable-backup |
 | Configure MARS offline seeding with Azure Import/Export | https://learn.microsoft.com/en-us/azure/backup/backup-azure-backup-import-export |
 | Configure DPM and MABS offline seeding with Import/Export | https://learn.microsoft.com/en-us/azure/backup/backup-azure-backup-server-import-export |
@@ -206,6 +208,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure built-in monitoring for Azure Backup workloads | https://learn.microsoft.com/en-us/azure/backup/backup-azure-monitoring-built-in-monitor |
 | Configure Azure Monitor Logs and custom alerts for Azure Backup | https://learn.microsoft.com/en-us/azure/backup/backup-azure-monitoring-use-azuremonitor |
 | Use resource-specific diagnostic data model for Azure Backup | https://learn.microsoft.com/en-us/azure/backup/backup-azure-reports-data-model |
+| Configure Azure Backup for SQL Server on VMs | https://learn.microsoft.com/en-us/azure/backup/backup-azure-sql-database |
 | Configure agentless multidisk crash-consistent backups for Azure VMs | https://learn.microsoft.com/en-us/azure/backup/backup-azure-vms-agentless-multi-disk-crash-consistent |
 | Configure agentless crash-consistent backups for Azure VMs | https://learn.microsoft.com/en-us/azure/backup/backup-azure-vms-agentless-multi-disk-crash-consistent-overview |
 | Configure Enhanced policy for Azure VM backups | https://learn.microsoft.com/en-us/azure/backup/backup-azure-vms-enhanced-policy |
@@ -229,15 +232,16 @@ This skill requires **network access** to fetch documentation content:
 | Manage and monitor Azure Files backups in Azure Backup | https://learn.microsoft.com/en-us/azure/backup/manage-afs-backup |
 | Manage backup lifecycle for Azure Managed Disks | https://learn.microsoft.com/en-us/azure/backup/manage-azure-managed-disks |
 | Manage Azure Backup vault settings and operations | https://learn.microsoft.com/en-us/azure/backup/manage-backup-vault |
-| Manage and monitor Azure Backup for SQL Server VMs | https://learn.microsoft.com/en-us/azure/backup/manage-monitor-sql-database-backup |
+| Manage and monitor Azure Backup for SQL on VMs | https://learn.microsoft.com/en-us/azure/backup/manage-monitor-sql-database-backup |
 | Configure telemetry and diagnostics for Azure Backup Server | https://learn.microsoft.com/en-us/azure/backup/manage-telemetry |
 | Modify Azure VM backup policies using CLI and JSON | https://learn.microsoft.com/en-us/azure/backup/modify-vm-policy-cli |
 | Monitor Azure Backup estate using Backup Explorer workbook | https://learn.microsoft.com/en-us/azure/backup/monitor-azure-backup-with-backup-explorer |
 | Configure Azure Monitor collection for Azure Backup | https://learn.microsoft.com/en-us/azure/backup/monitor-backup |
-| Reference monitoring metrics and logs for Azure Backup | https://learn.microsoft.com/en-us/azure/backup/monitor-backup-reference |
+| Reference Azure Backup monitoring metrics and logs | https://learn.microsoft.com/en-us/azure/backup/monitor-backup-reference |
 | Set up Azure Data Box offline backup for DPM and MABS | https://learn.microsoft.com/en-us/azure/backup/offline-backup-azure-data-box-dpm-mabs |
 | Offline backup workflow for legacy DPM and MABS versions | https://learn.microsoft.com/en-us/azure/backup/offline-backup-server-previous-versions |
 | Configure pre-backup and post-backup scripts in MABS | https://learn.microsoft.com/en-us/azure/backup/pre-backup-post-backup-scripts |
+| Restore Azure VM SQL Server databases with Azure Backup | https://learn.microsoft.com/en-us/azure/backup/restore-sql-database-azure-vm |
 | Configure Azure Backup for SAP HANA System Replication on VMs | https://learn.microsoft.com/en-us/azure/backup/sap-hana-database-with-hana-system-replication-backup |
 | Use selective disk backup and restore for Azure VMs | https://learn.microsoft.com/en-us/azure/backup/selective-disk-backup-restore |
 | Recover Windows Server files from Azure using MARS | https://learn.microsoft.com/en-us/azure/backup/tutorial-backup-restore-files-windows-server |
@@ -269,6 +273,7 @@ This skill requires **network access** to fetch documentation content:
 | Restore Azure Disks using Data Protection REST API | https://learn.microsoft.com/en-us/azure/backup/backup-azure-dataprotection-use-rest-api-restore-disks |
 | Configure Azure Files backup via Azure Backup REST API | https://learn.microsoft.com/en-us/azure/backup/backup-azure-file-share-rest-api |
 | Integrate Defender ransomware alerts with Azure Backup | https://learn.microsoft.com/en-us/azure/backup/backup-azure-integrate-microsoft-defender-using-logic-apps |
+| Automate Azure VM SQL backup with PowerShell | https://learn.microsoft.com/en-us/azure/backup/backup-azure-sql-automation |
 | Back up SQL Server in Azure VMs using Azure CLI | https://learn.microsoft.com/en-us/azure/backup/backup-azure-sql-backup-cli |
 | Manage Azure Backup for SQL Server VMs using CLI | https://learn.microsoft.com/en-us/azure/backup/backup-azure-sql-manage-cli |
 | Restore SQL Server databases in Azure VMs via CLI | https://learn.microsoft.com/en-us/azure/backup/backup-azure-sql-restore-cli |

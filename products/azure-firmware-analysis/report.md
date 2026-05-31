@@ -1,11 +1,8 @@
 ---
-generated_at: '2026-04-19'
+generated_at: '2026-05-31'
 category_descriptions:
   security: Managing secure access to Azure Firmware Analysis using service principals
     and configuring role-based access control (RBAC) permissions for users and apps
-  troubleshooting: Diagnosing and fixing common Azure Firmware Analysis issues, including
-    upload/scan failures, unsupported firmware formats, permission/config problems,
-    and how to interpret error messages.
   best-practices: Using Azure Firmware Analysis to scan firmware images, interpret
     SBOM extractor paths, and prioritize discovered vulnerabilities and weaknesses
     for remediation
@@ -19,18 +16,17 @@ category_descriptions:
     Firmware Analysis, including supported features, scanning limits, and resource/usage
     quotas.
 skill_description: Expert knowledge for Azure Firmware Analysis development including
-  troubleshooting, best practices, limits & quotas, security, integrations & coding
-  patterns, and deployment. Use when scanning firmware images, interpreting SBOM paths,
-  using UEFI analysis, or automating uploads via CLI/PowerShell/Python, and other
-  Azure Firmware Analysis related development tasks. Not for Azure Defender For Iot
-  (use azure-defender-for-iot), Azure IoT Edge (use azure-iot-edge), Azure IoT Hub
-  (use azure-iot-hub), Azure Confidential Computing (use azure-confidential-computing).
-use_when: Use when scanning firmware images, interpreting SBOM paths, using UEFI analysis,
-  or automating uploads via CLI/PowerShell/Python, and other Azure Firmware Analysis
-  related development tasks.
+  best practices, limits & quotas, security, integrations & coding patterns, and deployment.
+  Use when scanning firmware images, interpreting SBOM paths, deploying workspaces
+  via IaC, or automating uploads via CLI/SDK, and other Azure Firmware Analysis related
+  development tasks. Not for Azure Defender For Iot (use azure-defender-for-iot),
+  Azure IoT (use azure-iot), Azure IoT Edge (use azure-iot-edge), Azure IoT Hub (use
+  azure-iot-hub).
+use_when: Use when scanning firmware images, interpreting SBOM paths, deploying workspaces
+  via IaC, or automating uploads via CLI/SDK, and other Azure Firmware Analysis related
+  development tasks.
 confusable_not_for: Not for Azure Defender For Iot (use azure-defender-for-iot), Azure
-  IoT Edge (use azure-iot-edge), Azure IoT Hub (use azure-iot-hub), Azure Confidential
-  Computing (use azure-confidential-computing).
+  IoT (use azure-iot), Azure IoT Edge (use azure-iot-edge), Azure IoT Hub (use azure-iot-hub).
 ---
 # Azure Firmware Analysis Crawl Report
 
@@ -39,13 +35,13 @@ confusable_not_for: Not for Azure Defender For Iot (use azure-defender-for-iot),
 - **Total Pages**: 16
 - **Fetched**: 16
 - **Fetch Failed**: 0
-- **Classified**: 13
-- **Unclassified**: 3
+- **Classified**: 12
+- **Unclassified**: 4
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 16
+- **Updated Pages**: 2
+- **Unchanged**: 14
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-firmware-analysis/azure-firmware-analysis.csv`
 
@@ -58,10 +54,16 @@ confusable_not_for: Not for Azure Defender For Iot (use azure-defender-for-iot),
 | integrations | 3 | 18.8% |
 | limits-quotas | 1 | 6.2% |
 | security | 2 | 12.5% |
-| troubleshooting | 1 | 6.2% |
-| *(Unclassified)* | 3 | 18.8% |
+| *(Unclassified)* | 4 | 25.0% |
 
 ## Changes
+
+### Updated Pages
+
+- [FAQ](https://learn.microsoft.com/en-us/azure/firmware-analysis/firmware-analysis-faq)
+  - Updated: 2026-03-31T22:19:00.000Z → 2026-05-27T16:50:00.000Z
+- [What's new?](https://learn.microsoft.com/en-us/azure/firmware-analysis/release-notes)
+  - Updated: 2026-04-14T22:21:00.000Z → 2026-05-26T08:00:00.000Z
 
 ## Classified Pages
 
@@ -74,7 +76,6 @@ confusable_not_for: Not for Azure Defender For Iot (use azure-defender-for-iot),
 | [Understanding and prioritizing weaknesses data in firmware analysis](https://learn.microsoft.com/en-us/azure/firmware-analysis/understand-weaknesses-data) | best-practices | 0.70 | The page explains how to interpret multiple weakness-related fields in firmware analysis results and how to evaluate them together to prioritize risk. That is product-specific guidance on how to use this service’s data correctly (how to read CVE view, how to weigh signals), which fits best-practices rather than generic security theory. |
 | [Analyze firmware images using Azure CLI](https://learn.microsoft.com/en-us/azure/firmware-analysis/quickstart-upload-firmware-using-azure-command-line-interface) | integrations | 0.65 | Quickstart for Azure CLI typically includes specific command parameters, flags, and required values unique to the firmware analysis service, matching integration & coding pattern criteria. |
 | [Analyze firmware images using Azure PowerShell](https://learn.microsoft.com/en-us/azure/firmware-analysis/quickstart-upload-firmware-using-powershell) | integrations | 0.65 | PowerShell quickstart will contain cmdlet names and parameter sets specific to firmware analysis, which are concrete integration details beyond generic SDK usage. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/firmware-analysis/firmware-analysis-faq) | troubleshooting | 0.65 | FAQ pages for a niche service typically include product-specific behaviors, limitations, and answers to concrete operational questions (for example, what certain results mean, supported formats, or how long analysis takes). These are troubleshooting-style symptom→explanation mappings that go beyond generic concepts, so they qualify as expert knowledge even though the summary doesn’t list specific error codes. |
 | [Create a firmware workspace using ARM templates](https://learn.microsoft.com/en-us/azure/firmware-analysis/quickstart-firmware-analysis-arm) | deployment | 0.60 | ARM template quickstart defines resource schemas and required properties for firmware analysis workspaces, which are product-specific deployment details. |
 | [Create a firmware workspace using Bicep files](https://learn.microsoft.com/en-us/azure/firmware-analysis/quickstart-firmware-analysis-bicep) | deployment | 0.60 | Bicep-based workspace creation will include resource types, properties, and deployment constraints specific to firmware analysis, aligning with deployment patterns for this service. |
 | [Create a firmware workspace using Terraform](https://learn.microsoft.com/en-us/azure/firmware-analysis/quickstart-firmware-analysis-terraform) | deployment | 0.60 | Terraform quickstart will show resource blocks, arguments, and provider-specific constraints for firmware analysis, representing deployment-focused expert configuration. |
@@ -86,5 +87,6 @@ confusable_not_for: Not for Azure Defender For Iot (use azure-defender-for-iot),
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
 | [Firmware analysis integration with Azure Device Registry](https://learn.microsoft.com/en-us/azure/firmware-analysis/firmware-analysis-integration-with-azure-device-registry) | 0.30 | Describes conceptual integration between Firmware analysis and Azure Device Registry; summary does not indicate specific configuration parameters, code, limits, or troubleshooting details required for any sub-skill type. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/firmware-analysis/firmware-analysis-faq) | 0.20 | FAQ page likely addresses common conceptual and usage questions about firmware analysis without detailed limits, configuration tables, or error-code-based troubleshooting mappings. |
 | [Overview](https://learn.microsoft.com/en-us/azure/firmware-analysis/overview-firmware-analysis) | 0.20 | High-level overview of firmware analysis and IoT security concerns without product-specific limits, configs, or detailed procedures. |
-| [What's new?](https://learn.microsoft.com/en-us/azure/firmware-analysis/release-notes) | 0.20 | Release notes listing new features and enhancements; no clear indication of detailed limits, configuration tables, error codes, or other structured expert data per the defined categories. |
+| [What's new?](https://learn.microsoft.com/en-us/azure/firmware-analysis/release-notes) | 0.10 | Release notes page lists new features and enhancements; typically change-log style without structured limits, configuration parameters, or decision matrices. |

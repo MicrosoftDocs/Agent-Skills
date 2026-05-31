@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-05-24'
+generated_at: '2026-05-31'
 category_descriptions:
   configuration: 'Setting up and customizing Azure Advisor: creating alerts (portal,
     ARM, Bicep), email digests, tag-based filtering, and using workbooks for monitoring
     and insights.'
-  best-practices: Using Advisor to assess architectures and apply cost, performance,
-    operational excellence, and reliability best practices, including bulk remediation
-    and estimating/exporting savings
+  best-practices: Guidance on using Azure Advisor for Well-Architected assessments
+    and bulk fixes to optimize cost, performance, reliability, and operational excellence
+    across VMs and other services.
   integrations: Querying Azure Advisor recommendations via Azure Resource Graph, using
     Kusto sample queries, filtering/grouping results, and integrating Advisor data
     into custom tools or reports
@@ -20,17 +20,15 @@ category_descriptions:
     Azure RBAC roles, permissions, and access control best practices
 skill_description: Expert knowledge for Azure Advisor development including best practices,
   decision making, limits & quotas, security, configuration, and integrations & coding
-  patterns. Use when creating Advisor alerts/digests, using workbooks, bulk-remediating
-  savings, or querying via Resource Graph, and other Azure Advisor related development
-  tasks. Not for Azure Cost Management (use azure-cost-management), Azure Monitor
-  (use azure-monitor), Azure Policy (use azure-policy), Azure Service Health (use
-  azure-service-health).
-use_when: Use when creating Advisor alerts/digests, using workbooks, bulk-remediating
-  savings, or querying via Resource Graph, and other Azure Advisor related development
-  tasks.
+  patterns. Use when creating Advisor alerts, email digests, workbooks, Resource Graph
+  queries, or RBAC access controls, and other Azure Advisor related development tasks.
+  Not for Azure Cost Management (use azure-cost-management), Azure Monitor (use azure-monitor),
+  Azure Policy (use azure-policy), Azure Security (use azure-security).
+use_when: Use when creating Advisor alerts, email digests, workbooks, Resource Graph
+  queries, or RBAC access controls, and other Azure Advisor related development tasks.
 confusable_not_for: Not for Azure Cost Management (use azure-cost-management), Azure
-  Monitor (use azure-monitor), Azure Policy (use azure-policy), Azure Service Health
-  (use azure-service-health).
+  Monitor (use azure-monitor), Azure Policy (use azure-policy), Azure Security (use
+  azure-security).
 ---
 # Azure Advisor Crawl Report
 
@@ -43,9 +41,9 @@ confusable_not_for: Not for Azure Cost Management (use azure-cost-management), A
 - **Unclassified**: 9
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 3
-- **Unchanged**: 29
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 32
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-advisor/azure-advisor.csv`
 
@@ -63,18 +61,10 @@ confusable_not_for: Not for Azure Cost Management (use azure-cost-management), A
 
 ## Changes
 
-### New Pages
-
-- [Recommendation state management](https://learn.microsoft.com/en-us/azure/advisor/advisor-azure-state-management)
-
 ### Updated Pages
 
-- [What is Azure Advisor?](https://learn.microsoft.com/en-us/azure/advisor/advisor-overview)
-  - Updated: 2025-01-13T23:00:00.000Z → 2026-05-18T22:10:00.000Z
-- [Advisor portal basics](https://learn.microsoft.com/en-us/azure/advisor/advisor-get-started)
-  - Updated: 2025-01-13T23:00:00.000Z → 2026-05-18T22:10:00.000Z
-- [Use Azure Advisor resiliency reviews](https://learn.microsoft.com/en-us/azure/advisor/advisor-resiliency-reviews)
-  - Updated: 2025-04-22T17:02:00.000Z → 2026-05-17T12:07:00.000Z
+- [Reliability](https://learn.microsoft.com/en-us/azure/advisor/advisor-reference-reliability-recommendations)
+  - Updated: 2026-05-12T08:00:00.000Z → 2026-05-26T08:00:00.000Z
 
 ## Classified Pages
 
@@ -87,6 +77,7 @@ confusable_not_for: Not for Azure Cost Management (use azure-cost-management), A
 | [Azure portal](https://learn.microsoft.com/en-us/azure/advisor/advisor-alerts-portal) | configuration | 0.70 | Shows how to create Advisor alerts based on activity log events with subscription/resource group scoping and alert configuration options; likely includes specific alert rule parameters and settings. |
 | [Cost](https://learn.microsoft.com/en-us/azure/advisor/advisor-reference-cost-recommendations) | best-practices | 0.70 | Full list of cost recommendations with service-specific actions; provides concrete, product-specific cost optimization practices. |
 | [Optimize virtual machine spend by resizing or shutting down underutilized instances](https://learn.microsoft.com/en-us/azure/advisor/advisor-cost-recommendations) | best-practices | 0.70 | Details how Advisor uses ML to detect underutilized VMs/VMSS and recommends resize/shutdown actions; includes product-specific cost optimization behavior and patterns. |
+| [Reliability](https://learn.microsoft.com/en-us/azure/advisor/advisor-reference-reliability-recommendations) | best-practices | 0.70 | Page lists specific, product-focused reliability recommendations (DO/DON'T style guidance) for Azure Advisor, including concrete actions to improve reliability for particular Azure resources. This is actionable, service-specific best-practice guidance rather than generic concepts. |
 | [Roles and permissions](https://learn.microsoft.com/en-us/azure/advisor/permissions) | security | 0.70 | A roles and permissions page for a specific Azure service usually lists concrete RBAC role names, scopes, and what each can do with Advisor recommendations. This matches the security category’s requirement for product-specific RBAC details and permission scopes. |
 | [Service Retirement workbook](https://learn.microsoft.com/en-us/azure/advisor/advisor-workbook-service-retirement) | decision-making | 0.70 | Describes how to use the Service Retirement workbook in Azure Advisor to identify impacted resources and plan migrations when services/features are retired. This is product-specific decision support for migration and service selection, including how to interpret workbook outputs to decide what to move and when. |
 | [Sovereign clouds](https://learn.microsoft.com/en-us/azure/advisor/advisor-sovereign-clouds) | limits-quotas | 0.70 | Explicitly described as listing feature variations and usage limitations for sovereign clouds; likely includes per-cloud constraints and disabled features, which are limit/usage details. |
@@ -96,7 +87,6 @@ confusable_not_for: Not for Azure Cost Management (use azure-cost-management), A
 | [Cost Optimization workbook](https://learn.microsoft.com/en-us/azure/advisor/advisor-workbook-cost-optimization) | decision-making | 0.65 | Cost Optimization workbook provides cost insights and recommendations aligned to Well-Architected cost pillar, helping choose optimization actions based on quantified data. |
 | [Digests](https://learn.microsoft.com/en-us/azure/advisor/advisor-recommendations-digest) | configuration | 0.65 | Covers setting up scheduled digests for recommendations; likely includes specific configuration options (frequency, scope, channels) that are product-specific. |
 | [Performance](https://learn.microsoft.com/en-us/azure/advisor/advisor-reference-performance-recommendations) | best-practices | 0.65 | Full list of performance recommendations with specific actions to improve responsiveness; product-specific tuning guidance. |
-| [Reliability](https://learn.microsoft.com/en-us/azure/advisor/advisor-reference-reliability-recommendations) | best-practices | 0.65 | A full list of reliability recommendations for Advisor generally includes concrete, product-specific guidance (for example, required configurations, redundancy patterns, or specific Azure settings to change). These are actionable DO/DON’T recommendations tied to this service, aligning with best-practices. |
 | [Use Azure Well Architected Framework Assessments](https://learn.microsoft.com/en-us/azure/advisor/advisor-assessments) | best-practices | 0.65 | Advisor-specific implementation of Well-Architected Framework assessments with how recommendations surface per subscription/workload; product-specific optimization workflow. |
 | [Bulk remediation for recommendations](https://learn.microsoft.com/en-us/azure/advisor/advisor-quick-fix) | best-practices | 0.60 | Explains Quick Fix bulk remediation behavior and constraints for specific recommendations; contains product-specific remediation patterns and gotchas. |
 | [Evaluate cost implications of recommendations](https://learn.microsoft.com/en-us/azure/advisor/advisor-how-to-evaluate-cost-implications-of-recommendations) | decision-making | 0.60 | Focuses on evaluating cost implications of recommendations; likely includes guidance on comparing options and understanding cost trade-offs for decisions. |

@@ -54,10 +54,10 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), SQL Ser
 - **Unclassified**: 59
 
 ### Incremental Update
-- **New Pages**: 9
-- **Updated Pages**: 2
-- **Unchanged**: 231
-- **Deleted Pages**: 9
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 242
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sql-managed-instance/azure-sql-managed-instance.csv`
 
 ## Classification Statistics
@@ -76,37 +76,6 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), SQL Ser
 | *(Unclassified)* | 59 | 24.4% |
 
 ## Changes
-
-### New Pages
-
-- [Security overview](https://learn.microsoft.com/en-us/azure/azure-sql/database/security-overview?view=azuresql)
-- [Transparent data encryption (TDE) in Azure SQL](https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-tde-overview?view=azuresql)
-- [Monitoring and tuning in SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/monitor-tune-overview?view=azuresql)
-- [Database watcher overview](https://learn.microsoft.com/en-us/azure/azure-sql/database-watcher-overview?view=azuresql)
-- [Windows Authentication for Microsoft Entra Principals with Kerberos Overview](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-overview?view=azuresql)
-- [Business continuity in SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/business-continuity-high-availability-disaster-recover-hadr-overview?view=azuresql)
-- [Machine Learning Services in SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/machine-learning-services-overview?view=azuresql)
-- [Application development overview](https://learn.microsoft.com/en-us/azure/azure-sql/database/develop-overview?view=azuresql)
-- [Log Replay Service (LRS) Overview](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/log-replay-service-overview?view=azuresql)
-
-### Updated Pages
-
-- [Use Next-gen General Purpose tier](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/service-tiers-next-gen-general-purpose-use?view=azuresql)
-  - Updated: 2025-11-21T08:00:00.000Z → 2026-05-22T17:39:00.000Z
-- [Request quota increases](https://learn.microsoft.com/en-us/azure/azure-sql/database/quota-increase-request?view=azuresql)
-  - Updated: 2024-08-26T17:37:00.000Z → 2026-05-21T22:36:00.000Z
-
-### Deleted Pages
-
-- ~~Overview~~ (https://learn.microsoft.com/en-us/azure/azure-sql/database-watcher-overview?view=azuresql)
-- ~~Overview~~ (https://learn.microsoft.com/en-us/azure/azure-sql/database/develop-overview?view=azuresql)
-- ~~Overview~~ (https://learn.microsoft.com/en-us/azure/azure-sql/database/monitor-tune-overview?view=azuresql)
-- ~~Overview~~ (https://learn.microsoft.com/en-us/azure/azure-sql/database/security-overview?view=azuresql)
-- ~~Overview~~ (https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-tde-overview?view=azuresql)
-- ~~Overview~~ (https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/business-continuity-high-availability-disaster-recover-hadr-overview?view=azuresql)
-- ~~Overview~~ (https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/log-replay-service-overview?view=azuresql)
-- ~~Overview~~ (https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/machine-learning-services-overview?view=azuresql)
-- ~~Overview~~ (https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-overview?view=azuresql)
 
 ## Classified Pages
 

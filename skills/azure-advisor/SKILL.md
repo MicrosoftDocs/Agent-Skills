@@ -1,9 +1,9 @@
 ---
 name: azure-advisor
-description: Expert knowledge for Azure Advisor development including best practices, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when creating Advisor alerts/digests, using workbooks, bulk-remediating savings, or querying via Resource Graph, and other Azure Advisor related development tasks. Not for Azure Cost Management (use azure-cost-management), Azure Monitor (use azure-monitor), Azure Policy (use azure-policy), Azure Service Health (use azure-service-health).
+description: Expert knowledge for Azure Advisor development including best practices, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when creating Advisor alerts, email digests, workbooks, Resource Graph queries, or RBAC access controls, and other Azure Advisor related development tasks. Not for Azure Cost Management (use azure-cost-management), Azure Monitor (use azure-monitor), Azure Policy (use azure-policy), Azure Security (use azure-security).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-24"
+  generated_at: "2026-05-31"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Advisor Skill
@@ -24,7 +24,7 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Best Practices | L34-L46 | Using Advisor to assess architectures and apply cost, performance, operational excellence, and reliability best practices, including bulk remediation and estimating/exporting savings |
+| Best Practices | L34-L46 | Guidance on using Azure Advisor for Well-Architected assessments and bulk fixes to optimize cost, performance, reliability, and operational excellence across VMs and other services. |
 | Decision Making | L47-L55 | Using Advisor workbooks and critical risk views to evaluate reliability, assess and optimize costs, and plan migrations based on service retirement and recommendation impact |
 | Limits & Quotas | L56-L60 | Advisor feature availability, limits, and differences when running in Azure sovereign clouds (e.g., Azure Government, China), including which recommendations are supported. |
 | Security | L61-L65 | Managing who can view and configure Azure Advisor recommendations using Azure RBAC roles, permissions, and access control best practices |

@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 7
-- **Unchanged**: 128
+- **Updated Pages**: 0
+- **Unchanged**: 135
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-vmware-solution/azure-vmware-solution.csv`
 
@@ -75,23 +75,6 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | *(Unclassified)* | 44 | 32.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [Configure VMware Aria Operations](https://learn.microsoft.com/en-us/azure/azure-vmware/vrealize-operations-for-azure-vmware-solution)
-  - Updated: 2025-01-09T08:00:00.000Z → 2026-05-14T08:00:00.000Z
-- [What's new](https://learn.microsoft.com/en-us/azure/azure-vmware/azure-vmware-solution-platform-updates)
-  - Updated: 2026-03-30T08:00:00.000Z → 2026-05-21T08:00:00.000Z
-- [Configure DHCP server or relay](https://learn.microsoft.com/en-us/azure/azure-vmware/configure-dhcp-azure-vmware-solution)
-  - Updated: 2025-01-22T08:00:00.000Z → 2026-05-13T08:00:00.000Z
-- [Azure VMware Solution private cloud maintenance](https://learn.microsoft.com/en-us/azure/azure-vmware/azure-vmware-solution-private-cloud-maintenance)
-  - Updated: 2026-01-19T18:12:00.000Z → 2026-05-22T22:13:00.000Z
-- [Create a placement policy](https://learn.microsoft.com/en-us/azure/azure-vmware/create-placement-policy)
-  - Updated: 2025-01-06T08:00:00.000Z → 2026-05-15T08:00:00.000Z
-- [Configure Windows Server Failover Cluster](https://learn.microsoft.com/en-us/azure/azure-vmware/configure-windows-server-failover-cluster)
-  - Updated: 2025-01-06T08:00:00.000Z → 2026-05-14T08:00:00.000Z
-- [Deploy VMware SRM for disaster recovery](https://learn.microsoft.com/en-us/azure/azure-vmware/disaster-recovery-using-vmware-site-recovery-manager)
-  - Updated: 2026-04-21T22:10:00.000Z → 2026-05-22T22:13:00.000Z
 
 ## Classified Pages
 

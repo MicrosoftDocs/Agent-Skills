@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-24'
+generated_at: '2026-05-31'
 category_descriptions:
   decision-making: 'Cost planning and design choices for Blob Storage: pricing, migration
     and transfer costs, archive retrieval, multi-region access, connectivity, data
@@ -25,19 +25,21 @@ category_descriptions:
   integrations: 'SDK, CLI, and tooling patterns for integrating with Blob/Data Lake:
     connect from various languages, mount/file-system access, copy/migrate data, manage
     containers/blobs, leases, tiers, tags, and events.'
+  architecture-patterns: Guidance on when and why to enable Data Lake Storage Gen2
+    hierarchical namespace in Blob Storage, including tradeoffs, performance, and
+    compatibility impacts.
 skill_description: Expert knowledge for Azure Blob Storage development including troubleshooting,
-  best practices, decision making, limits & quotas, security, configuration, integrations
-  & coding patterns, and deployment. Use when using Blob tiers, lifecycle/immutability,
-  SAS/RBAC auth, BlobFuse/NFS/SFTP access, or SDK-based data ops, and other Azure
-  Blob Storage related development tasks. Not for Azure Files (use azure-files), Azure
-  Table Storage (use azure-table-storage), Azure Queue Storage (use azure-queue-storage),
+  best practices, decision making, architecture & design patterns, limits & quotas,
+  security, configuration, integrations & coding patterns, and deployment. Use when
+  tuning access tiers, lifecycle/immutability, SAS/RBAC auth, BlobFuse/NFS mounts,
+  or static website hosting, and other Azure Blob Storage related development tasks.
+  Not for Azure Files (use azure-files), Azure Table Storage (use azure-table-storage),
   Azure NetApp Files (use azure-netapp-files).
-use_when: Use when using Blob tiers, lifecycle/immutability, SAS/RBAC auth, BlobFuse/NFS/SFTP
-  access, or SDK-based data ops, and other Azure Blob Storage related development
+use_when: Use when tuning access tiers, lifecycle/immutability, SAS/RBAC auth, BlobFuse/NFS
+  mounts, or static website hosting, and other Azure Blob Storage related development
   tasks.
 confusable_not_for: Not for Azure Files (use azure-files), Azure Table Storage (use
-  azure-table-storage), Azure Queue Storage (use azure-queue-storage), Azure NetApp
-  Files (use azure-netapp-files).
+  azure-table-storage), Azure NetApp Files (use azure-netapp-files).
 ---
 # Azure Blob Storage Crawl Report
 
@@ -46,13 +48,13 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Table Storage (
 - **Total Pages**: 413
 - **Fetched**: 413
 - **Fetch Failed**: 0
-- **Classified**: 333
-- **Unclassified**: 80
+- **Classified**: 334
+- **Unclassified**: 79
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 11
-- **Unchanged**: 401
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 412
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-blob-storage/azure-blob-storage.csv`
 
@@ -60,6 +62,7 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Table Storage (
 
 | Type | Count | Percentage |
 |------|-------|------------|
+| architecture-patterns | 1 | 0.2% |
 | best-practices | 30 | 7.3% |
 | configuration | 61 | 14.8% |
 | decision-making | 22 | 5.3% |
@@ -68,38 +71,14 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Table Storage (
 | limits-quotas | 17 | 4.1% |
 | security | 55 | 13.3% |
 | troubleshooting | 7 | 1.7% |
-| *(Unclassified)* | 80 | 19.4% |
+| *(Unclassified)* | 79 | 19.1% |
 
 ## Changes
 
-### New Pages
-
-- [Schedule a migration job](https://learn.microsoft.com/en-us/azure/storage-mover/job-scheduling)
-
 ### Updated Pages
 
-- [Enable or disable SFTP](https://learn.microsoft.com/en-us/azure/storage/blobs/secure-file-transfer-protocol-support-how-to)
-  - Updated: 2024-05-01T11:18:00.000Z → 2026-05-19T05:18:00.000Z
-- [Security recommendations](https://learn.microsoft.com/en-us/azure/storage/blobs/security-recommendations)
-  - Updated: 2025-03-04T08:00:00.000Z → 2026-05-18T08:00:00.000Z
-- [Transfer from Azure Blob to Blob](https://learn.microsoft.com/en-us/azure/storage-mover/azure-to-azure-migration)
-  - Updated: 2026-04-16T06:12:00.000Z → 2026-05-19T08:00:00.000Z
-- [Define and start a migration job](https://learn.microsoft.com/en-us/azure/storage-mover/job-definition-create)
-  - Updated: 2026-04-07T06:20:00.000Z → 2026-05-20T05:21:00.000Z
-- [What is Azure Blob Storage?](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-overview)
-  - Updated: 2022-11-21T00:00:00.000Z → 2026-05-19T05:18:00.000Z
-- [Blob Storage feature support](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-feature-support-in-storage-accounts)
-  - Updated: 2026-03-05T12:13:00.000Z → 2026-05-18T08:00:00.000Z
-- [.NET](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-dotnet)
-  - Updated: 2024-09-13T08:00:00.000Z → 2026-05-18T08:00:00.000Z
-- [Blob storage](https://learn.microsoft.com/en-us/azure/storage/blobs/scalability-targets)
-  - Updated: 2025-06-26T22:19:00.000Z → 2026-05-19T05:18:00.000Z
-- [Premium page blob storage accounts](https://learn.microsoft.com/en-us/azure/storage/blobs/scalability-targets-premium-page-blobs)
-  - Updated: 2023-04-03T00:00:00.000Z → 2025-06-26T22:19:00.000Z
-- [Access control lists](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-access-control)
-  - Updated: 2024-12-03T08:00:00.000Z → 2026-05-18T08:00:00.000Z
-- [Monitoring Blob Storage data reference](https://learn.microsoft.com/en-us/azure/storage/blobs/monitor-blob-storage-reference)
-  - Updated: 2025-02-27T08:00:00.000Z → 2026-05-18T08:00:00.000Z
+- [About hierarchical namespaces](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-namespace)
+  - Updated: 2024-11-15T08:00:00.000Z → 2026-05-26T22:16:00.000Z
 
 ## Classified Pages
 
@@ -365,6 +344,7 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Table Storage (
 | [User delegation SAS](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-create-user-delegation-sas-javascript) | security | 0.70 | Shows JavaScript APIs and required permissions to obtain user delegation keys and sign SAS tokens; security-focused configuration. |
 | [Version-level policies](https://learn.microsoft.com/en-us/azure/storage/blobs/immutable-version-level-worm-policies) | configuration | 0.70 | Describes version-scoped WORM policies at account/container/version levels; product-specific configuration semantics. |
 | [Versioning](https://learn.microsoft.com/en-us/azure/storage/blobs/versioning-overview) | configuration | 0.70 | Explains how Blob versioning maintains previous versions and how they can be accessed; product-specific feature semantics. |
+| [About hierarchical namespaces](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-namespace) | architecture-patterns | 0.68 | Page focuses on when to enable Azure Data Lake Storage hierarchical namespace, describing its impact on directory operations, analytics performance, and TCO. It provides product-specific architectural guidance about using hierarchical namespace versus flat blob storage, which is decision-oriented and unique to this service, but does not emphasize numeric limits or configuration tables. |
 | [NetApp Data Migrator getting started guide](https://learn.microsoft.com/en-us/azure/storage/solution-integration/validated-partners/data-management/netapp-data-migrator-guide) | deployment | 0.68 | The guide includes Azure-specific deployment steps, file-server configuration, and operational guidance for NetApp Data Migrator targeting Azure NetApp Files. This is product- and scenario-specific deployment knowledge (how to deploy and run NDM for ANF, including environment and platform requirements) that goes beyond generic migration concepts. |
 | [Snapshots](https://learn.microsoft.com/en-us/azure/storage/blobs/snapshots-overview) | configuration | 0.68 | Describes snapshot semantics and billing specifics for Blob Storage; product-specific feature behavior beyond generic snapshot concepts. |
 | [.NET](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-directory-file-acl-dotnet) | integrations | 0.65 | .NET client library methods and options for directory/file operations in HNS accounts are integration/coding patterns specific to this product. |
@@ -451,7 +431,6 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Table Storage (
 | [List containers](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-containers-list) | 0.45 | Shows listing containers with options; likely mostly SDK usage patterns without detailed configuration matrices or numeric constraints. |
 | [1 - Make your application highly available](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-create-geo-redundant-storage) | 0.40 | Tutorial on using RA-GZRS with a console app; mostly step-by-step usage without detailed limits, configuration matrices, or specialized patterns. |
 | [2 - Simulate a failure in reading data from the primary region](https://learn.microsoft.com/en-us/azure/storage/blobs/simulate-primary-region-failure) | 0.40 | Tutorial for simulating primary region failure; focuses on using tools like static routing/Fiddler rather than product-specific limits or configuration surfaces. |
-| [About hierarchical namespaces](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-namespace) | 0.40 | Conceptual explanation of hierarchical namespace; mostly architecture/behavior description without numeric limits, config tables, or troubleshooting mappings. |
 | [Analyze storage task runs](https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-runs) | 0.40 | Explains how to view and interpret run reports; more usage guidance than deep config, limits, or troubleshooting mappings. |
 | [Blob rehydration overview](https://learn.microsoft.com/en-us/azure/storage/blobs/archive-rehydrate-overview) | 0.40 | Conceptual explanation of archive rehydration options; summary doesn’t show specific SLAs, limits, or detailed config parameters. |
 | [Change a blob's access tier](https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-online-manage) | 0.40 | How-to for setting a blob’s access tier; likely procedural without comprehensive configuration tables or numeric ranges beyond what’s in general docs. |

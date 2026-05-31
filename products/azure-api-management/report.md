@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 269
+- **Updated Pages**: 0
+- **Unchanged**: 271
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-api-management/azure-api-management.csv`
 
@@ -76,13 +76,6 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | *(Unclassified)* | 52 | 19.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [Configure backends](https://learn.microsoft.com/en-us/azure/api-management/backends)
-  - Updated: 2026-01-15T08:00:00.000Z → 2026-05-20T08:00:00.000Z
-- [Alternative approaches to self-hosting](https://learn.microsoft.com/en-us/azure/api-management/developer-portal-alternative-processes-self-host)
-  - Updated: 2026-02-06T18:19:00.000Z → 2026-05-20T08:00:00.000Z
 
 ## Classified Pages
 

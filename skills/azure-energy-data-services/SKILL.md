@@ -1,9 +1,9 @@
 ---
 name: azure-energy-data-services
-description: Expert knowledge for Azure Energy Data Services development including troubleshooting, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when configuring ADME tiers, partitions/zones, DDMS/EDS APIs, Geospatial CZ on AKS, or ADME security controls, and other Azure Energy Data Services related development tasks. Not for Azure Data Explorer (use azure-data-explorer), Azure Synapse Analytics (use azure-synapse-analytics), Azure Databricks (use azure-databricks), Azure Data Factory (use azure-data-factory).
+description: Expert knowledge for Azure Energy Data Services development including troubleshooting, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when configuring ADME partitions/zones, legal tags & ACLs, Petrel/seismic integrations, or Geospatial CZ on AKS, and other Azure Energy Data Services related development tasks. Not for Azure Data Explorer (use azure-data-explorer), Azure Synapse Analytics (use azure-synapse-analytics), Azure Data Factory (use azure-data-factory), Azure Databricks (use azure-databricks).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-24"
+  generated_at: "2026-05-31"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Energy Data Services Skill
@@ -27,9 +27,9 @@ This skill requires **network access** to fetch documentation content:
 | Troubleshooting | L35-L39 | Diagnosing and fixing manifest ingestion failures in Azure Data Manager for Energy using Airflow logs, including log analysis steps and common error patterns. |
 | Decision Making | L40-L45 | Guidance on choosing ADME deployment tiers (Developer vs Standard) and checking which OSDU data/compute services and capabilities are available in each tier. |
 | Architecture & Design Patterns | L46-L50 | Guidance on architecting resilient ADME deployments in Azure Energy Data Services, including zone redundancy, disaster recovery strategies, and high-availability design patterns. |
-| Security | L51-L64 | Securing ADME: auth tokens, ACLs, encryption, legal tags, user/group entitlements, API protection, private endpoints, managed identities, and support access control. |
-| Configuration | L65-L73 | Configuring Azure Energy Data Manager environments: partitions, analytics zones, CORS, audit logging, and milestone upgrade settings for governance and performance. |
-| Integrations & Coding Patterns | L74-L94 | Patterns and examples for integrating ADME/ACZ with external systems (Databricks, Fabric, Azure Monitor) and using DDMS/EDS APIs and tools to access, upload, and manage subsurface data. |
+| Security | L51-L65 | Securing ADME: auth tokens, ACLs, encryption, legal tags, user/group entitlements, managed identities, private endpoints, API Management, and support access controls. |
+| Configuration | L66-L73 | Configuring Azure Energy Data Manager environments: partitions, analytics zones, CORS, audit logging, and milestone upgrade settings for governance and performance. |
+| Integrations & Coding Patterns | L74-L94 | Patterns and APIs for integrating Azure Energy Data Services with analytics platforms, external data sources, logs/monitoring, and domain data stores (Petrel, seismic, wells, reservoirs). |
 | Deployment | L95-L99 | Guides for deploying Azure Energy Data Services components, including Geospatial Consumption Zone on AKS and the OSDU Admin UI for Azure Data Manager for Energy administration |
 
 ### Troubleshooting
@@ -52,6 +52,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Use Customer Lockbox to control ADME support access | https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-create-lockbox |
+| Enable ACZ with managed identity and storage permissions | https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-enable-analytics-consumption-zone |
 | Enable legal tags for restricted origin data in Azure Energy | https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-enable-legal-tags-restricted-country-of-origin |
 | Generate auth and refresh tokens for Azure Data Manager for Energy | https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-generate-auth-token |
 | Configure and update ACLs on ADME data records | https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-manage-acls |
@@ -66,7 +67,6 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Add and manage data partitions in ADME | https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-add-more-data-partitions |
-| Configure Analytics Consumption Zone for Azure Energy | https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-enable-analytics-consumption-zone |
 | Configure CORS policies for Azure Data Manager for Energy | https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-enable-cors |
 | Configure and use audit logs in Azure Data Manager for Energy | https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-manage-audit-logs |
 | Configure milestone upgrade settings for Azure Data Manager for Energy | https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-manage-upgrade-settings |
@@ -74,15 +74,15 @@ This skill requires **network access** to fetch documentation content:
 ### Integrations & Coding Patterns
 | Topic | URL |
 |-------|-----|
-| Export ACZ data from Azure Data Manager for Energy to Databricks | https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-connect-analytics-consumption-zone-to-databricks |
-| Connect ACZ data in ADLS Gen2 to Microsoft Fabric | https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-connect-analytics-consumption-zone-to-fabric |
+| Integrate Azure Energy ACZ with Azure Databricks | https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-connect-analytics-consumption-zone-to-databricks |
+| Connect Azure Energy ACZ data to Microsoft Fabric | https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-connect-analytics-consumption-zone-to-fabric |
 | Enable External Data Services and Key Vault access | https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-enable-external-data-services |
 | Integrate Airflow task logs from ADME with Azure Monitor | https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-integrate-airflow-logs-with-azure-monitor |
 | Send ADME Elasticsearch logs to Azure Monitor | https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-integrate-elastic-logs-with-azure-monitor |
 | Export OSDU service logs from ADME to Azure Monitor | https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-integrate-osdu-service-logs-with-azure-monitor |
 | Register external data sources with ADME EDS | https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-register-external-data-services |
 | Upload large files via Azure Data Manager for Energy File service API | https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-upload-large-files-using-file-service |
-| Call Azure Energy ACZ management APIs with cURL | https://learn.microsoft.com/en-us/azure/energy-data-services/tutorial-analytics-consumption-zone-apis |
+| Manage Analytics Consumption Zones via ACZ REST APIs | https://learn.microsoft.com/en-us/azure/energy-data-services/tutorial-analytics-consumption-zone-apis |
 | Work with Petrel data via Petrel DDMS APIs | https://learn.microsoft.com/en-us/azure/energy-data-services/tutorial-petrel-ddms |
 | Read reservoir data using Reservoir DDMS REST APIs | https://learn.microsoft.com/en-us/azure/energy-data-services/tutorial-reservoir-ddms-apis |
 | Use Reservoir DDMS websocket endpoints for data | https://learn.microsoft.com/en-us/azure/energy-data-services/tutorial-reservoir-ddms-websocket |

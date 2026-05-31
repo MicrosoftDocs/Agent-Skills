@@ -1,9 +1,9 @@
 ---
 name: azure-health-data-services
-description: Expert knowledge for Azure Health Data Services development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using FHIR/DICOM APIs, bulk export/import, de-identification, events, or Synapse/ADF integrations, and other Azure Health Data Services related development tasks. Not for Azure Health Bot (use azure-health-bot), Azure Data Factory (use azure-data-factory), Azure Synapse Analytics (use azure-synapse-analytics), Azure Machine Learning (use azure-machine-learning).
+description: Expert knowledge for Azure Health Data Services development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using FHIR/DICOM APIs, bulk export/import, de-identification, SMART on FHIR, or Synapse/ADF integrations, and other Azure Health Data Services related development tasks. Not for Azure Health Bot (use azure-health-bot), Azure Data Factory (use azure-data-factory), Azure Synapse Analytics (use azure-synapse-analytics), Azure Machine Learning (use azure-machine-learning).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-24"
+  generated_at: "2026-05-31"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Health Data Services Skill
@@ -26,7 +26,7 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L37-L46 | Diagnosing and fixing token/auth issues, event delivery problems, FHIR $convert-data failures, identity provider misconfigurations, and known platform bugs in Azure Health Data Services. |
 | Best Practices | L47-L54 | Guidance on securing FHIR/DICOM with customer-managed keys, tuning FHIR performance, and safely running, monitoring, and managing FHIR reindex jobs. |
-| Decision Making | L55-L60 | Guidance on planning and executing migrations from Azure API for FHIR to FHIR service or Azure Health Data Services, including retirement timelines, architecture, and migration strategies. |
+| Decision Making | L55-L60 | Planning and executing migrations from Azure API for FHIR to the FHIR service or broader Azure Health Data Services, including architecture, data, and configuration considerations. |
 | Architecture & Design Patterns | L61-L67 | Architectural patterns for FHIR, DICOM, and de-identification: disaster recovery setup, reliable anonymization services, DICOM + Data Lake integration, and digital pathology workflow design. |
 | Limits & Quotas | L68-L74 | Scaling and performance limits for Azure API for FHIR and DICOM: autoscale setup, throughput and request caps, storage and size constraints, and service-specific behavior under load. |
 | Security | L75-L115 | Configuring auth, RBAC, identities, tokens, encryption (CMK), network/private access, SMART on FHIR, and compliance policies for FHIR, DICOM, and de-identification services. |

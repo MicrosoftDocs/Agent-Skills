@@ -50,8 +50,8 @@ confusable_not_for: Not for Azure Advisor (use azure-advisor), Azure Monitor (us
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 264
+- **Updated Pages**: 0
+- **Unchanged**: 268
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cost-management/azure-cost-management.csv`
 
@@ -71,17 +71,6 @@ confusable_not_for: Not for Azure Advisor (use azure-advisor), Azure Monitor (us
 | *(Unclassified)* | 88 | 32.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [Transfer Microsoft Partner Agreement ownership](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/mpa-request-ownership)
-  - Updated: 2026-03-31T08:00:00.000Z → 2026-05-19T08:00:00.000Z
-- [Manage billing across tenants](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/manage-billing-across-tenants)
-  - Updated: 2026-01-19T08:00:00.000Z → 2026-05-21T22:10:00.000Z
-- [Add, update, or delete payment method](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/change-credit-card)
-  - Updated: 2026-03-12T08:00:00.000Z → 2026-04-19T08:00:00.000Z
-- [Checklist for billing migration](https://learn.microsoft.com/en-us/azure/cost-management-billing/microsoft-customer-agreement/checklist-microsoft-customer-agreement-billing-migration)
-  - Updated: 2026-04-15T11:11:00.000Z → 2026-05-18T22:17:00.000Z
 
 ## Classified Pages
 

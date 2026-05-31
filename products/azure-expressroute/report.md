@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Internet Peering (use azure-internet-peering),
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 93
+- **Updated Pages**: 0
+- **Unchanged**: 95
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-expressroute/azure-expressroute.csv`
 
@@ -75,13 +75,6 @@ confusable_not_for: Not for Azure Internet Peering (use azure-internet-peering),
 | *(Unclassified)* | 26 | 27.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [Overview](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-about-virtual-network-gateways)
-  - Updated: 2025-11-18T17:01:00.000Z → 2026-05-20T05:21:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-faqs)
-  - Updated: 2025-01-10T08:00:00.000Z → 2026-03-31T08:00:00.000Z
 
 ## Classified Pages
 

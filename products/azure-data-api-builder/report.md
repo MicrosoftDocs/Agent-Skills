@@ -48,8 +48,8 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 127
+- **Updated Pages**: 0
+- **Unchanged**: 128
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-api-builder/azure-data-api-builder.csv`
 
@@ -68,11 +68,6 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | *(Unclassified)* | 44 | 34.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [Troubleshooting](https://learn.microsoft.com/en-us/azure/data-api-builder/troubleshooting/mcp)
-  - Updated: 2026-04-01T23:07:00.000Z → 2026-05-22T23:03:00.000Z
 
 ## Classified Pages
 

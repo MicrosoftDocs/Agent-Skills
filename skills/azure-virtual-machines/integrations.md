@@ -8,7 +8,7 @@
 | Topic | URL |
 |-------|-----|
 | Move Azure Marketplace VM to another subscription via CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/azure-cli-change-subscription-marketplace |
-| Create Azure VM restore points using REST APIs | https://learn.microsoft.com/en-us/azure/virtual-machines/create-restore-points |
+| Create Azure VM restore points via REST APIs | https://learn.microsoft.com/en-us/azure/virtual-machines/create-restore-points |
 | Configure Azure Backup extension for SQL Server on Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/backup-azure-sql-server-running-azure-vm |
 | Monitor Azure VM availability with Project Flash via Azure Monitor metric | https://learn.microsoft.com/en-us/azure/virtual-machines/flash-azure-monitor |
 | Monitor Azure VM availability with Project Flash via Azure Resource Graph | https://learn.microsoft.com/en-us/azure/virtual-machines/flash-azure-resource-graph |
@@ -43,6 +43,7 @@
 | PowerShell script to create snapshots from VHDs for multiple managed disks | https://learn.microsoft.com/en-us/azure/virtual-machines/scripts/virtual-machines-powershell-sample-create-snapshot-from-vhd |
 | Create Azure VM disk snapshots for backup and debugging | https://learn.microsoft.com/en-us/azure/virtual-machines/snapshot-copy-managed-disk |
 | Author ARM templates for Azure VM managed disks | https://learn.microsoft.com/en-us/azure/virtual-machines/using-managed-disks-template-deployments |
+| Create Azure VM restore points using Azure CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/virtual-machines-create-restore-points-cli |
 | Create and encrypt Windows VM using Azure CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/disk-encryption-cli-quickstart |
 | Create and encrypt Windows VM with PowerShell | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/disk-encryption-powershell-quickstart |
 | Azure Disk Encryption sample scripts for Windows | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/disk-encryption-sample-scripts |

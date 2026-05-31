@@ -45,8 +45,8 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure App Service
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 43
+- **Updated Pages**: 0
+- **Unchanged**: 44
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-managed-grafana/azure-managed-grafana.csv`
 
@@ -64,11 +64,6 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure App Service
 | *(Unclassified)* | 10 | 22.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [Configure bundled Prometheus](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-bundled-prometheus)
-  - Updated: 2025-07-18T11:10:00.000Z → 2026-05-22T11:42:00.000Z
 
 ## Classified Pages
 

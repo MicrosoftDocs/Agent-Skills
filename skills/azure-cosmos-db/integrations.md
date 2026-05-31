@@ -144,14 +144,10 @@
 | Persist LangGraph agent state in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/persist-agent-state |
 | Integrate LlamaIndex vector store with Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/query-knowledge-base |
 | Use the .NET/C# driver with Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-dotnet |
-| Use .NET MongoDB driver for DocumentDB vector search | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-dotnet-vector-search |
 | Use the Go driver with Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-go |
-| Implement Go vector search with Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-go-vector-search |
 | Use the Java driver with Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-java |
 | Use the Node.js driver with Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-nodejs |
-| Implement Node.js vector search with Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-nodejs-vector-search |
 | Use the Python driver with Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-python |
-| Implement Python vector search with Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-python-vector-search |
 | Use the Rust driver with Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-rust |
 | Integrate Jaeger tracing with Cassandra managed instances for monitoring | https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/jaeger |
 | Integrate Lucene Index search with Cassandra managed instances | https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/search-lucene-index |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-24'
+generated_at: '2026-05-31'
 category_descriptions:
   security: 'Auth, RBAC, SSH, cert, and key management for AKS Edge/Arc/hybrid: Entra/AD
     SSO, gMSA, workload identity, etcd encryption, image signing, and security hardening
@@ -11,8 +11,8 @@ category_descriptions:
     monitoring, pricing/licensing, support, and planning migrations or retirement
     of older AKS/Windows Server setups
   troubleshooting: 'Diagnosing and fixing AKS Edge/Arc cluster issues: creation/upgrade
-    failures, networking, storage, security, certificates, logs/diagnostics, VMware/Windows
-    Server problems, and known issues/workarounds'
+    failures, networking, storage, security, logging, certificates, secret encryption,
+    and known issues/workarounds.'
   limits-quotas: Capacity planning, system requirements, scale limits, and support
     policies for AKS Edge/Arc on Azure Local, Windows Server, and VMware, including
     IP planning and tested VM sizes.
@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 - **Unclassified**: 72
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 0
+- **New Pages**: 0
+- **Updated Pages**: 1
 - **Unchanged**: 340
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-aks-edge-essentials/azure-aks-edge-essentials.csv`
@@ -77,9 +77,10 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 
 ## Changes
 
-### New Pages
+### Updated Pages
 
-- [Security bulletins](https://learn.microsoft.com/en-us/azure/aks/aksarc/security-bulletins)
+- [Can't create AKS cluster with GPU-enabled default node pool](https://learn.microsoft.com/en-us/azure/aks/aksarc/gpu-enabled-cluster-issue)
+  - Updated: 2025-12-17T00:31:00.000Z → 2026-05-27T08:00:00.000Z
 
 ## Classified Pages
 
@@ -89,6 +90,7 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [AKS Edge Essentials PowerShell](https://learn.microsoft.com/en-us/azure/aks/aksarc/reference/aks-edge-ps/) | configuration | 0.90 | Reference for PowerShell commands, including parameter lists and behaviors; this is core configuration/management API knowledge unique to AKS Edge Essentials. |
 | [Supported scale requirements](https://learn.microsoft.com/en-us/azure/aks/aksarc/scale-requirements) | limits-quotas | 0.90 | The article explicitly describes the maximum and minimum supported scale counts for AKS on Azure Local clusters and node pools, which are product-specific numerical limits that an LLM would not reliably know from training. This matches the limits-quotas criteria of concrete numeric limits and constraints. |
 | [Azure Arc-enabled Kubernetes](https://learn.microsoft.com/en-us/azure/aks/aksarc/known-issues-arc) | troubleshooting | 0.86 | A 'known issues' article focused on specific errors when running Enable-AksHciArcConnection and Disable-AksHciArcConnection, with symptom-specific workarounds. This is product- and command-specific troubleshooting knowledge unlikely to be fully captured in training data. |
+| [Can't create AKS cluster with GPU-enabled default node pool](https://learn.microsoft.com/en-us/azure/aks/aksarc/gpu-enabled-cluster-issue) | troubleshooting | 0.86 | The page describes a specific failure scenario when creating AKS enabled by Azure Arc clusters with NVIDIA L-series GPUs as the default node pool, including concrete symptoms, causes, and mitigation steps unique to this product configuration, fitting the troubleshooting pattern of symptom → cause → resolution. |
 | [Cluster status stuck during upgrade](https://learn.microsoft.com/en-us/azure/aks/aksarc/cluster-upgrade-status) | troubleshooting | 0.86 | Troubleshooting article for a specific AKS Edge/Arc issue (cluster stuck in Upgrading after certain Azure Local versions), with concrete symptom → cause → mitigation steps that are product- and version-specific. |
 | [Known issues overview](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-arc-known-issues) | troubleshooting | 0.86 | The page documents specific known issues and their workarounds for AKS enabled by Azure Arc. These are product- and version-specific troubleshooting details that change over time and are unlikely to be fully captured in model training. The structure is symptom/issue → workaround/solution, which aligns with troubleshooting guidance. |
 | [Kubernetes clusters](https://learn.microsoft.com/en-us/azure/aks/aksarc/known-issues-workload-clusters) | troubleshooting | 0.86 | Explicitly a troubleshooting guide for management and workload clusters, likely listing specific symptoms, causes, and resolutions for AKS Arc cluster issues, which is expert troubleshooting knowledge. |
@@ -150,7 +152,6 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Use proxy settings](https://learn.microsoft.com/en-us/azure/aks/aksarc/set-proxy-settings) | configuration | 0.80 | Proxy setup using AksHciPowerShell with different flows for authenticated proxies; likely includes specific parameter names and required URL lists—detailed configuration. |
 | [Validate and troubleshoot secret encryption](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-edge-howto-secret-encryption) | troubleshooting | 0.80 | The article explicitly focuses on validating and troubleshooting KMS-based secret encryption, which typically includes specific error symptoms, diagnostic steps, and resolutions unique to AKS Edge Essentials. |
 | [Windows Admin Center](https://learn.microsoft.com/en-us/azure/aks/aksarc/known-issues-windows-admin-center) | troubleshooting | 0.80 | Lists known issues in Windows Admin Center for AKS Arc and likely provides workarounds or mitigation steps, which are concrete troubleshooting patterns tied to specific UI/behavior. |
-| [Can't create AKS cluster with GPU-enabled default node pool](https://learn.microsoft.com/en-us/azure/aks/aksarc/gpu-enabled-cluster-issue) | troubleshooting | 0.79 | Documents a failure when using NVIDIA L-series GPUs as default node pool and provides mitigation steps. |
 | [Entra authentication prompts when running kubectl](https://learn.microsoft.com/en-us/azure/aks/aksarc/entra-prompts) | troubleshooting | 0.79 | Targets a specific symptom (repeated auth prompts) with diagnosis and configuration fixes involving Entra and Kubernetes RBAC. |
 | [Storage provisioning issue in cluster and node pool creation](https://learn.microsoft.com/en-us/azure/aks/aksarc/storage-provision-issue) | troubleshooting | 0.79 | Describes a specific storage path/volume imbalance causing disk exhaustion and deployment failures, with remediation steps. |
 | [Add NFS storage binding](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-edge-howto-use-storage-nfs) | configuration | 0.78 | Shows how to set up NFS external provisioner and sample claims; includes product-specific storage configuration patterns. |

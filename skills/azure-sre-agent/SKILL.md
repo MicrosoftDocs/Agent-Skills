@@ -1,9 +1,9 @@
 ---
 name: azure-sre-agent
-description: Expert knowledge for Azure Sre Agent development including troubleshooting, decision making, security, configuration, integrations & coding patterns, and deployment. Use when wiring SRE Agent to DevOps/GitHub/PagerDuty, configuring tools/subagents, KQL telemetry, IaC deploy, or RBAC, and other Azure Sre Agent related development tasks. Not for Azure Monitor (use azure-monitor), Azure Reliability (use azure-reliability), Azure Resiliency (use azure-resiliency), Azure Service Health (use azure-service-health).
+description: Expert knowledge for Azure Sre Agent development including troubleshooting, decision making, security, configuration, integrations & coding patterns, and deployment. Use when wiring SRE Agent to DevOps/PagerDuty, configuring tools/subagents, securing identities/RBAC, querying KQL telemetry, or deploying via IaC, and other Azure Sre Agent related development tasks. Not for Azure Monitor (use azure-monitor), Azure Reliability (use azure-reliability), Azure Resiliency (use azure-resiliency), Azure Service Health (use azure-service-health).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-24"
+  generated_at: "2026-05-31"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Sre Agent Skill
@@ -25,11 +25,11 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L34-L40 | Diagnosing and fixing SRE Agent deployment/operation issues, querying its telemetry and actions with KQL, and troubleshooting Java performance on AKS using the agent |
-| Decision Making | L41-L48 | Guidance on when to run deep investigations, choose Log Analytics vs App Insights connectors, estimate and manage SRE Agent costs, and select supported Azure regions. |
-| Security | L49-L59 | Identity, auth, and RBAC for SRE Agent: managed identities, ADO and ServiceNow auth, roles, permissions, and subscription/resource access configuration. |
-| Configuration | L60-L71 | Configuring SRE Agent behavior: hooks and governance, custom tools/skills, specialized subagents, network/firewall settings, and enabling/using the Python/shell Code Interpreter via UI or REST API |
-| Integrations & Coding Patterns | L72-L88 | Connecting SRE Agent to DevOps, GitHub, PagerDuty, observability tools, and defining Python/Kusto tools and REST usage patterns for automated SRE workflows. |
-| Deployment | L89-L92 | How to deploy Azure SRE Agent using Infrastructure-as-Code templates, including required resources, parameters, and environment configuration steps. |
+| Decision Making | L41-L48 | Guidance on when to run deep investigations, choosing Log Analytics vs App Insights connectors, estimating/controlling SRE Agent costs, and selecting supported Azure regions. |
+| Security | L49-L60 | Managing SRE Agent identities, RBAC roles, permissions, secure auth (ADO, ServiceNow), subscription visibility, and network security (VNet integration) |
+| Configuration | L61-L72 | Configuring SRE Agent behavior: hooks and governance, custom tools/skills, specialized subagents, network/firewall settings, and enabling/using the Python/shell Code Interpreter via UI or REST API |
+| Integrations & Coding Patterns | L73-L89 | Connecting SRE Agent to DevOps, GitHub, PagerDuty, observability tools, and defining Python/Kusto tools and REST usage patterns for automated SRE workflows. |
+| Deployment | L90-L93 | How to deploy Azure SRE Agent using Infrastructure-as-Code templates, including required resources, parameters, and environment configuration steps. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -53,6 +53,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure managed identity access to ADO repos in SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/connect-ado-repo-managed-identity |
 | Configure secure ServiceNow authentication for Azure SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/connect-servicenow |
 | Manage Azure SRE Agent permissions and resource access | https://learn.microsoft.com/en-us/azure/sre-agent/manage-permissions |
+| Secure Azure SRE Agent with VNet integration | https://learn.microsoft.com/en-us/azure/sre-agent/network-integration |
 | Configure Azure SRE Agent permissions and RBAC access | https://learn.microsoft.com/en-us/azure/sre-agent/permissions |
 | Understand subscription visibility and permissions in Azure SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/subscription-permission-visibility |
 | Configure Azure SRE Agent roles and permissions | https://learn.microsoft.com/en-us/azure/sre-agent/user-roles |

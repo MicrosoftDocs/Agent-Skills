@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-24'
+generated_at: '2026-05-31'
 category_descriptions:
   integrations: Patterns and tools for integrating code analysis and automation into
     Azure Migrate, including GitHub Copilot insights, AppCAT CLI, CAST Highlight scans,
@@ -50,13 +50,13 @@ confusable_not_for: Not for Azure Database Migration service (use azure-database
 - **Total Pages**: 210
 - **Fetched**: 210
 - **Fetch Failed**: 0
-- **Classified**: 117
-- **Unclassified**: 93
+- **Classified**: 116
+- **Unclassified**: 94
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 206
+- **Updated Pages**: 2
+- **Unchanged**: 208
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-migrate/azure-migrate.csv`
 
@@ -66,27 +66,23 @@ confusable_not_for: Not for Azure Database Migration service (use azure-database
 |------|-------|------------|
 | architecture-patterns | 2 | 1.0% |
 | best-practices | 6 | 2.9% |
-| configuration | 24 | 11.4% |
+| configuration | 23 | 11.0% |
 | decision-making | 37 | 17.6% |
 | deployment | 8 | 3.8% |
 | integrations | 4 | 1.9% |
 | limits-quotas | 10 | 4.8% |
 | security | 12 | 5.7% |
 | troubleshooting | 14 | 6.7% |
-| *(Unclassified)* | 93 | 44.3% |
+| *(Unclassified)* | 94 | 44.8% |
 
 ## Changes
 
 ### Updated Pages
 
-- [What is Azure Migrate?](https://learn.microsoft.com/en-us/azure/migrate/migrate-services-overview?view=migrate)
-  - Updated: 2026-02-16T12:13:00.000Z → 2026-05-19T05:18:00.000Z
-- [Create a project - Portal](https://learn.microsoft.com/en-us/azure/migrate/quickstart-create-project?view=migrate)
-  - Updated: 2025-12-15T12:12:00.000Z → 2026-05-20T05:21:00.000Z
+- [Discover MySQL database instances](https://learn.microsoft.com/en-us/azure/migrate/tutorial-discover-mysql-database-instances?view=migrate)
+  - Updated: 2025-10-08T11:21:00.000Z → 2026-05-26T12:00:00.000Z
 - [Discovery using collector](https://learn.microsoft.com/en-us/azure/migrate/how-to-discover-using-collector?view=migrate)
-  - Updated: 2026-02-12T12:10:00.000Z → 2026-05-20T11:44:00.000Z
-- [Work with previous version of Azure Migrate](https://learn.microsoft.com/en-us/azure/migrate/migrate-services-overview?view=migrate)
-  - Updated: 2026-02-16T12:13:00.000Z → 2026-05-19T05:18:00.000Z
+  - Updated: 2026-05-20T11:44:00.000Z → 2026-05-26T08:00:00.000Z
 
 ## Classified Pages
 
@@ -175,7 +171,6 @@ confusable_not_for: Not for Azure Database Migration service (use azure-database
 | [CI/CD for Day 2 operations](https://learn.microsoft.com/en-us/azure/migrate/tutorial-app-containerization-azure-pipeline?view=migrate) | deployment | 0.65 | Continuous deployment tutorial for AKS/App Service with Azure DevOps likely includes product-specific pipeline YAML, task parameters, and registry/deployment constraints. |
 | [Complete a wave plan](https://learn.microsoft.com/en-us/azure/migrate/how-to-complete-wave-plan?view=migrate) | decision-making | 0.65 | Explains defining targets, tools, tasks, and prerequisites for predictable modernization; product-specific planning details for execution decisions. |
 | [Discover SQL servers](https://learn.microsoft.com/en-us/azure/migrate/how-to-discover-sql-existing-project?view=migrate) | configuration | 0.65 | Describes discovery of SQL instances/web apps in existing projects using specific credential types and flows; includes product-specific discovery configuration details. |
-| [Discovery using collector](https://learn.microsoft.com/en-us/azure/migrate/how-to-discover-using-collector?view=migrate) | configuration | 0.65 | How-to article for deploying and using Azure Migrate Collector to discover VMware and server workloads; typically includes product-specific configuration steps, parameters, and environment requirements that go beyond generic knowledge. |
 | [Enable Arc on discovered items](https://learn.microsoft.com/en-us/azure/migrate/how-to-arc-enable-inventory?view=migrate) | configuration | 0.65 | Describes how to view Arc status and enable Arc; likely includes specific portal options, resource types, and configuration parameters. |
 | [Hyper-V migration architecture](https://learn.microsoft.com/en-us/azure/migrate/hyper-v-migration-architecture?view=migrate) | architecture-patterns | 0.65 | Architecture and process overview for Hyper-V migration using Migration and modernization tool; likely includes Azure Migrate–specific architectural patterns and flows. |
 | [Manage resources created during move](https://learn.microsoft.com/en-us/azure/resource-mover/manage-resources-created-move-process) | configuration | 0.65 | Explains resources explicitly created by Resource Mover and how to clean them up. This is product-specific behavior and configuration/management guidance for those auxiliary resources. |
@@ -232,7 +227,6 @@ confusable_not_for: Not for Azure Database Migration service (use azure-database
 | [Create and Review MySQL assessment](https://learn.microsoft.com/en-us/azure/migrate/create-mysql-assessment?view=migrate) | 0.45 | Tutorial for creating MySQL assessments; largely step-by-step without detailed config parameter catalogs or numeric thresholds. |
 | [Discover AWS inventory](https://learn.microsoft.com/en-us/azure/migrate/tutorial-discover-aws?view=migrate) | 0.45 | AWS discovery tutorial; describes appliance deployment and discovery steps, not detailed config matrices. |
 | [Discover GCP inventory](https://learn.microsoft.com/en-us/azure/migrate/tutorial-discover-gcp?view=migrate) | 0.45 | GCP discovery tutorial; similar procedural content without numeric limits or parameter tables. |
-| [Discover MySQL database instances](https://learn.microsoft.com/en-us/azure/migrate/tutorial-discover-mysql-database-instances?view=migrate) | 0.45 | Tutorial for discovering MySQL instances using a Kubernetes-based appliance; summary suggests procedural steps rather than detailed config matrices or limits. |
 | [Discover physical servers and servers running in AWS and GCP](https://learn.microsoft.com/en-us/azure/migrate/tutorial-discover-physical?view=migrate) | 0.45 | Tutorial for discovering physical servers and other clouds; summary doesn’t indicate detailed config parameter tables or limits beyond generic steps. |
 | [Discovery and dependency analysis](https://learn.microsoft.com/en-us/azure/migrate/common-questions-discovery-dependency-analysis?view=migrate) | 0.45 | Discovery and dependency analysis FAQ; summary doesn’t clearly indicate structured troubleshooting or config parameter tables. |
 | [Migrate AWS EC2 to Azure](https://learn.microsoft.com/en-us/azure/migrate/tutorial-migrate-aws-virtual-machines?view=migrate) | 0.45 | AWS EC2 migration tutorial; end-to-end workflow, not focused on limits, configs, or troubleshooting mappings. |
@@ -273,6 +267,8 @@ confusable_not_for: Not for Azure Database Migration service (use azure-database
 | [Create a project](https://learn.microsoft.com/en-us/azure/migrate/create-project?view=migrate) | 0.30 | How-to create a project; mostly procedural portal steps without detailed configuration tables or limits. |
 | [Create a project - Portal](https://learn.microsoft.com/en-us/azure/migrate/quickstart-create-project?view=migrate) | 0.30 | Quickstart walkthrough for creating a project; focuses on portal steps rather than detailed configuration parameters, limits, or troubleshooting mappings. |
 | [Create and manage tags](https://learn.microsoft.com/en-us/azure/migrate/how-to-create-manage-tags?view=migrate) | 0.30 | How-to guide for creating and managing tags; likely step-by-step UI usage without detailed configuration tables, limits, or product-specific best-practice rules with quantified impact. |
+| [Discover MySQL database instances](https://learn.microsoft.com/en-us/azure/migrate/tutorial-discover-mysql-database-instances?view=migrate) | 0.30 | Tutorial-style, step-by-step discovery of MySQL instances with Azure Migrate appliance; likely procedural instructions without detailed config parameter tables, limits, or product-specific troubleshooting matrices as defined by the sub-skill types. |
+| [Discovery using collector](https://learn.microsoft.com/en-us/azure/migrate/how-to-discover-using-collector?view=migrate) | 0.30 | How-to article on using Azure Migrate Collector to discover VMware servers; primarily workflow and usage guidance, not focused on explicit limits, configuration parameter tables, security roles, or structured troubleshooting content required by the sub-skill categories. |
 | [Enable application and code assessment](https://learn.microsoft.com/en-us/azure/migrate/appcat/?view=migrate) | 0.30 | High-level entry page for application and code assessment tools; summary suggests conceptual overview rather than detailed config or limits. |
 | [How to automate VMware migration](https://learn.microsoft.com/en-us/azure/migrate/how-to-automate-migration?view=migrate) | 0.30 | Covers automation scripts for agentless VMware migrations; summary doesn’t show detailed config parameters, limits, or troubleshooting content. |
 | [Migrate Physical servers to Azure](https://learn.microsoft.com/en-us/azure/migrate/tutorial-migrate-physical-virtual-machines?view=migrate) | 0.30 | Tutorial for migrating physical machines as servers to Azure; framed as a basic proof-of-concept walkthrough. The description does not suggest detailed configuration references, limits, or troubleshooting matrices beyond generic tutorial content. |

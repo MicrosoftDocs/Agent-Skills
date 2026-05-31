@@ -3,7 +3,7 @@ name: azure-quotas
 description: Expert knowledge for Azure Quotas development including limits & quotas. Use when requesting per-region Storage account quota increases, checking limits, or filing Azure support requests, and other Azure Quotas related development tasks. Not for Azure Cost Management (use azure-cost-management), Azure Monitor (use azure-monitor), Azure Policy (use azure-policy), Azure Resource Manager (use azure-resource-manager).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-05-31"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Quotas Skill

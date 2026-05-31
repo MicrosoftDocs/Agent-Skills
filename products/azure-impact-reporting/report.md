@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-24'
+generated_at: '2026-05-31'
 category_descriptions:
   integrations: Patterns and examples for integrating Impact Reporting with Azure
     Monitor alerts, Logic Apps, diagnostic logs, Service Health, and APIs (sending,
@@ -28,13 +28,13 @@ confusable_not_for: Not for Azure Carbon Optimization (use azure-carbon-optimiza
 - **Total Pages**: 15
 - **Fetched**: 15
 - **Fetch Failed**: 0
-- **Classified**: 9
-- **Unclassified**: 6
+- **Classified**: 8
+- **Unclassified**: 7
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 12
+- **Updated Pages**: 1
+- **Unchanged**: 14
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-impact-reporting/azure-impact-reporting.csv`
 
@@ -43,20 +43,16 @@ confusable_not_for: Not for Azure Carbon Optimization (use azure-carbon-optimiza
 | Type | Count | Percentage |
 |------|-------|------------|
 | configuration | 3 | 20.0% |
-| integrations | 5 | 33.3% |
+| integrations | 4 | 26.7% |
 | troubleshooting | 1 | 6.7% |
-| *(Unclassified)* | 6 | 40.0% |
+| *(Unclassified)* | 7 | 46.7% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Overview](https://learn.microsoft.com/en-us/azure/azure-impact-reporting/guest-health-overview)
-  - Updated: 2026-02-24T18:03:00.000Z → 2026-05-21T06:04:00.000Z
-- [FAQ for Guest Health Reporting](https://learn.microsoft.com/en-us/azure/azure-impact-reporting/guest-health-faq)
-  - Updated: 2026-04-14T22:03:00.000Z → 2026-05-21T06:04:00.000Z
-- [Log Upload for Guest Health Reporting](https://learn.microsoft.com/en-us/azure/azure-impact-reporting/guest-health-log-upload)
-  - Updated: 2026-04-14T22:03:00.000Z → 2026-05-21T06:04:00.000Z
+- [View reported impacts](https://learn.microsoft.com/en-us/azure/azure-impact-reporting/view-impact-insights)
+  - Updated: 2025-10-20T22:03:00.000Z → 2026-05-26T22:10:00.000Z
 
 ## Classified Pages
 
@@ -70,7 +66,6 @@ confusable_not_for: Not for Azure Carbon Optimization (use azure-carbon-optimiza
 | [Report impacts by using a logic app](https://learn.microsoft.com/en-us/azure/azure-impact-reporting/creating-logic-app) | integrations | 0.70 | Explains using a Logic App as a REST client for impact reporting. This typically includes connector/action configuration, request body schema, and product-specific integration patterns. |
 | [Report a resource impact](https://learn.microsoft.com/en-us/azure/azure-impact-reporting/report-impact) | integrations | 0.65 | Describes using Azure Service Health 'Report an issue' pane, REST API, and Azure Monitor connector to submit impact reports. Likely includes request schema, parameters, and integration-specific details beyond generic tutorials. |
 | [View allowed impact categories](https://learn.microsoft.com/en-us/azure/azure-impact-reporting/view-impact-categories) | configuration | 0.60 | Focuses on obtaining a valid list of impact categories via REST API. This implies specific category identifiers/values and how they must be used when configuring impact reports. |
-| [View reported impacts](https://learn.microsoft.com/en-us/azure/azure-impact-reporting/view-impact-insights) | integrations | 0.60 | Covers viewing impact reports through REST API, Azure Resource Graph Explorer, and portal. Likely documents specific API/query parameters and resource graph usage patterns unique to this service. |
 
 ## Unclassified Pages
 
@@ -82,3 +77,4 @@ confusable_not_for: Not for Azure Carbon Optimization (use azure-carbon-optimiza
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-impact-reporting/guest-health-overview) | 0.20 | Overview of Guest Health Reporting without visible concrete limits, configs, or error mappings; appears conceptual/introductory rather than detailed expert guidance. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-impact-reporting/overview) | 0.20 | High-level overview of Azure Impact Reporting; summary indicates conceptual description of service and preview notice without concrete limits, configs, or error mappings. |
 | [Report node health](https://learn.microsoft.com/en-us/azure/azure-impact-reporting/guest-health-impact-report) | 0.20 | From the summary, the page appears to be a how-to/tutorial style description of using Guest Health Reporting for Azure HPC VMs, without clear evidence of numeric limits, detailed configuration parameter tables, error-code-based troubleshooting, or decision matrices. It likely explains usage rather than providing the kind of product-specific limits, configuration catalogs, or troubleshooting mappings required for expert-knowledge classification. |
+| [View reported impacts](https://learn.microsoft.com/en-us/azure/azure-impact-reporting/view-impact-insights) | 0.20 | Page appears to describe how to view impact reports and insights via REST API, Resource Graph, and Azure portal, but the provided summary does not indicate specific limits, configuration parameter tables, error-code-based troubleshooting, or other detailed expert-only data. It reads as a usage/overview guide rather than containing product-specific numeric limits, configuration matrices, or decision criteria. |

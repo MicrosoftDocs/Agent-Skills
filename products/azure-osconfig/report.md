@@ -35,9 +35,9 @@ confusable_not_for: Not for Azure Update Manager (use azure-update-manager), Azu
 - **Unclassified**: 16
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 31
+- **Unchanged**: 32
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-osconfig/azure-osconfig.csv`
 
@@ -52,10 +52,6 @@ confusable_not_for: Not for Azure Update Manager (use azure-update-manager), Azu
 | *(Unclassified)* | 16 | 50.0% |
 
 ## Changes
-
-### New Pages
-
-- [CIS Security Benchmarks for Windows Server (Preview)](https://learn.microsoft.com/en-us/azure/osconfig/overview-cis-benchmarks-windows-server)
 
 ## Classified Pages
 

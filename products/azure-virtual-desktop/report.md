@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-24'
+generated_at: '2026-05-31'
 category_descriptions:
   deployment: 'Deploying and migrating Azure Virtual Desktop: adding session hosts,
     moving from classic AVD, hybrid/on-prem setups, cross-region moves, regional host
@@ -13,9 +13,8 @@ category_descriptions:
   best-practices: Guidance on AVD autoscale, Advisor recommendations, validation host
     pools, FAQs, proxy settings, Start VM on Connect, and Windows Enterprise multi-session
     configuration best practices
-  decision-making: Planning and choosing AVD deployment models, autoscale, storage,
-    licensing, locations, management tools, and estimating costs (including Insights
-    and Windows 10 ESU).
+  decision-making: Guidance for planning and choosing AVD deployment models, autoscale,
+    storage, licensing, host/session management, data locations, and cost/ESU strategies.
   integrations: Managing AVD via CLI/PowerShell, integrating partner App Attach delivery,
     enabling WebRTC multimedia redirection, and launching resources using custom URI
     schemes.
@@ -30,16 +29,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Virtual Desktop development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when managing FSLogix profiles, autoscale, MSIX App Attach, Teams optimization,
-  or Entra ID SSO in AVD, and other Azure Virtual Desktop related development tasks.
-  Not for Azure Virtual Machines (use azure-virtual-machines), Azure Dev Box (use
-  azure-dev-box), Azure Lab Services (use azure-lab-services), Azure VMware Solution
-  (use azure-vmware-solution).
-use_when: Use when managing FSLogix profiles, autoscale, MSIX App Attach, Teams optimization,
-  or Entra ID SSO in AVD, and other Azure Virtual Desktop related development tasks.
+  Use when working with host pools, FSLogix profiles, MSIX app attach, autoscale,
+  or Teams optimization in AVD, and other Azure Virtual Desktop related development
+  tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Dev Box
+  (use azure-dev-box), Azure Virtual Machine Scale Sets (use azure-vm-scalesets),
+  SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines).
+use_when: Use when working with host pools, FSLogix profiles, MSIX app attach, autoscale,
+  or Teams optimization in AVD, and other Azure Virtual Desktop related development
+  tasks.
 confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines), Azure
-  Dev Box (use azure-dev-box), Azure Lab Services (use azure-lab-services), Azure
-  VMware Solution (use azure-vmware-solution).
+  Dev Box (use azure-dev-box), Azure Virtual Machine Scale Sets (use azure-vm-scalesets),
+  SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines).
 ---
 # Azure Virtual Desktop Crawl Report
 
@@ -48,13 +48,13 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 - **Total Pages**: 153
 - **Fetched**: 153
 - **Fetch Failed**: 0
-- **Classified**: 120
-- **Unclassified**: 33
+- **Classified**: 119
+- **Unclassified**: 34
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 5
-- **Unchanged**: 148
+- **Updated Pages**: 2
+- **Unchanged**: 151
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-desktop/azure-virtual-desktop.csv`
 
@@ -64,29 +64,23 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 |------|-------|------------|
 | architecture-patterns | 4 | 2.6% |
 | best-practices | 7 | 4.6% |
-| configuration | 57 | 37.3% |
+| configuration | 56 | 36.6% |
 | decision-making | 12 | 7.8% |
 | deployment | 7 | 4.6% |
 | integrations | 3 | 2.0% |
 | limits-quotas | 2 | 1.3% |
 | security | 15 | 9.8% |
 | troubleshooting | 13 | 8.5% |
-| *(Unclassified)* | 33 | 21.6% |
+| *(Unclassified)* | 34 | 22.2% |
 
 ## Changes
 
 ### Updated Pages
 
-- [App Attach overview](https://learn.microsoft.com/en-us/azure/virtual-desktop/app-attach-overview)
-  - Updated: 2025-06-20T03:01:00.000Z → 2026-04-22T08:00:00.000Z
-- [Create an MSIX image](https://learn.microsoft.com/en-us/azure/virtual-desktop/app-attach-create-msix-image)
-  - Updated: 2025-08-29T17:35:00.000Z → 2026-04-22T08:00:00.000Z
-- [Add and manage App Attach applications](https://learn.microsoft.com/en-us/azure/virtual-desktop/app-attach-setup)
-  - Updated: 2025-06-20T03:01:00.000Z → 2026-04-22T08:00:00.000Z
-- [Test MSIX packages](https://learn.microsoft.com/en-us/azure/virtual-desktop/app-attach-test-msix-packages)
-  - Updated: 2025-06-20T03:01:00.000Z → 2026-04-22T08:00:00.000Z
-- [Provide access to external identities](https://learn.microsoft.com/en-us/azure/virtual-desktop/provide-access-external-identities)
-  - Updated: 2025-11-18T16:00:00.000Z → 2026-05-19T17:03:00.000Z
+- [Host pool management approaches](https://learn.microsoft.com/en-us/azure/virtual-desktop/host-pool-management-approaches)
+  - Updated: 2025-08-14T20:36:00.000Z → 2026-05-26T18:16:00.000Z
+- [Session host update overview](https://learn.microsoft.com/en-us/azure/virtual-desktop/session-host-update)
+  - Updated: 2025-08-14T20:36:00.000Z → 2026-05-26T18:16:00.000Z
 
 ## Classified Pages
 
@@ -159,7 +153,6 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Enable Insights](https://learn.microsoft.com/en-us/azure/virtual-desktop/insights) | configuration | 0.70 | Walkthrough for enabling Insights and wiring diagnostic data to Log Analytics, including workspace selection and diagnostic settings—product-specific configuration steps and options. |
 | [Estimate Azure Monitor costs](https://learn.microsoft.com/en-us/azure/virtual-desktop/insights-costs) | decision-making | 0.70 | Discusses pricing based on data ingestion, retention, and plan selection; likely includes concrete GB/day, retention, and plan cost considerations to guide cost planning decisions. |
 | [Extended Security Updates Guidance](https://learn.microsoft.com/en-us/azure/virtual-desktop/understanding-extended-security-updates) | decision-making | 0.70 | Explains ESU entitlement, activation, supported models, and policies; helps admins decide how to handle lifecycle and ESU in AVD with technical implementation details. |
-| [Host pool management approaches](https://learn.microsoft.com/en-us/azure/virtual-desktop/host-pool-management-approaches) | decision-making | 0.70 | Compares session host configuration management vs standard management, including preview constraints and deadlines, guiding management model selection. |
 | [Install Office on a VHD image](https://learn.microsoft.com/en-us/azure/virtual-desktop/install-office-on-wvd-master-image) | configuration | 0.70 | Office installation on AVD images typically requires specific configuration options (shared computer activation, update channels, registry/ODT settings) that are product-specific. |
 | [Install the Remote Desktop client for Windows on a per-user basis](https://learn.microsoft.com/en-us/azure/virtual-desktop/remote-desktop-client/install-windows-client-per-user) | deployment | 0.70 | Covers per-user vs per-system MSI installation with msiexec options; includes specific deployment parameters and behavior. |
 | [Internal and external commercial purposes](https://learn.microsoft.com/en-us/azure/virtual-desktop/organization-internal-external-commercial-purposes-recommendations) | decision-making | 0.70 | Provides structured guidance and recommendations for internal vs external/commercial deployments with scenario-based choices, fitting decision-making criteria. |
@@ -175,7 +168,6 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Regional Host Pools](https://learn.microsoft.com/en-us/azure/virtual-desktop/regional-host-pools) | deployment | 0.70 | Describes preview constraints (unsupported features, logging gaps) specific to regional host pools, which are deployment-specific requirements. |
 | [Schedule Agent updates](https://learn.microsoft.com/en-us/azure/virtual-desktop/scheduled-agent-updates) | configuration | 0.70 | Explains Scheduled Agent Updates feature and how to set maintenance windows; likely includes specific configuration options and parameters for update timing. |
 | [Security recommendations](https://learn.microsoft.com/en-us/azure/virtual-desktop/security-recommendations) | security | 0.70 | Security recommendations for this specific service likely include concrete settings and patterns (for example Reverse Connect usage) beyond generic security advice. |
-| [Session host update overview](https://learn.microsoft.com/en-us/azure/virtual-desktop/session-host-update) | configuration | 0.70 | Describes session host update feature, image/config update behavior, and managed identity requirement with a specific date; includes product-specific configuration behavior and constraints. |
 | [Set up diagnostics for Autoscale](https://learn.microsoft.com/en-us/azure/virtual-desktop/autoscale-diagnostics) | configuration | 0.70 | Describes sending autoscale logs to Storage or Event Hubs and region constraints; includes specific diagnostic settings and configuration options. |
 | [Start VM on Connect FAQ](https://learn.microsoft.com/en-us/azure/virtual-desktop/start-virtual-machine-connect-faq) | best-practices | 0.70 | FAQ plus best practices for Start VM on Connect; likely includes concrete recommendations, edge cases, and configuration guidance. |
 | [Storage options for FSLogix profile container](https://learn.microsoft.com/en-us/azure/virtual-desktop/store-fslogix-profile) | decision-making | 0.70 | Compares Azure Files and other storage solutions for FSLogix with recommendations; likely includes decision criteria (performance, cost, features) and guidance on when to choose each. |
@@ -186,6 +178,7 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Windows 10 multi-session images](https://learn.microsoft.com/en-us/azure/virtual-desktop/language-packs) | configuration | 0.70 | How-to article for installing and configuring Windows 10 Enterprise multi-session language packs in Azure Virtual Desktop; likely includes specific commands, package names, and configuration steps unique to this product scenario rather than just conceptual guidance. |
 | [Windows 11 Enterprise images](https://learn.microsoft.com/en-us/azure/virtual-desktop/windows-11-language-packs) | configuration | 0.70 | Describes customizing Windows 11 Enterprise images for Azure Virtual Desktop with language packs and features, including behavior changes (non-admin installation) and product-specific configuration steps, which go beyond generic knowledge. |
 | [Windows Enterprise multi-session FAQ](https://learn.microsoft.com/en-us/azure/virtual-desktop/windows-multisession-faq) | best-practices | 0.70 | FAQ includes product-specific guidance and gotchas for Windows 10/11 Enterprise multi-session on Azure Virtual Desktop (for example, supported/unsupported scenarios, configuration recommendations, and behavior differences versus single-session), which are concrete, service-unique best practices rather than generic concepts. |
+| [Host pool management approaches](https://learn.microsoft.com/en-us/azure/virtual-desktop/host-pool-management-approaches) | decision-making | 0.68 | Page compares session host configuration management vs standard management for Azure Virtual Desktop host pools, providing product-specific guidance on when to choose each approach and their trade-offs. This is concrete decision guidance rather than a generic overview, fitting the decision-making sub-skill. |
 | [Provide access to external identities](https://learn.microsoft.com/en-us/azure/virtual-desktop/provide-access-external-identities) | security | 0.68 | The article provides product-specific steps and configuration details for granting Azure Virtual Desktop host pool access to external identities (such as Entra B2B/B2C), including required roles/permissions and access configuration patterns. This is security-focused identity and access configuration rather than a generic overview. |
 | [Publish applications with RemoteApp](https://learn.microsoft.com/en-us/azure/virtual-desktop/publish-applications-stream-remoteapp) | configuration | 0.68 | How-to for publishing apps via application groups will include specific portal/PowerShell parameters and constraints for AVD RemoteApp configuration. |
 | [Set preferred application group type](https://learn.microsoft.com/en-us/azure/virtual-desktop/set-preferred-application-group-type) | configuration | 0.68 | How-to article for setting the preferred type will include concrete portal/PowerShell parameters and property values unique to AVD host pools. |
@@ -230,6 +223,7 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Azure Virtual Desktop Agent](https://learn.microsoft.com/en-us/azure/virtual-desktop/agent-overview) | 0.30 | Described as an overview of the agent and update processes; likely conceptual with minimal concrete configuration or troubleshooting matrices in the summary. |
 | [RDP Multipath](https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-multipath) | 0.30 | Explains how RDP Multipath improves Azure Virtual Desktop connections and its benefits; summary suggests conceptual behavior and advantages, not detailed configuration parameters, limits, or troubleshooting mappings. |
 | [Service architecture and resilience](https://learn.microsoft.com/en-us/azure/virtual-desktop/service-architecture-resilience) | 0.30 | Architecture and resilience overview appears conceptual; no indication of quantified thresholds, decision matrices, or config tables. |
+| [Session host update overview](https://learn.microsoft.com/en-us/azure/virtual-desktop/session-host-update) | 0.30 | Page appears to describe a preview feature and how session host update works conceptually (updating VM disk type, OS image, and configuration). From the available summary, there is no clear evidence of detailed limits, configuration parameter tables, error-code-based troubleshooting, or other expert-only specifics as defined by the sub-skill types. |
 | [Use cases for Azure Virtual Desktop Insights](https://learn.microsoft.com/en-us/azure/virtual-desktop/insights-use-cases) | 0.30 | Describes use cases and scenarios for Insights at a conceptual level; does not emphasize specific parameters, limits, or decision matrices with quantified trade-offs. |
 | [Insights](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-insights) | 0.25 | Insights release notes; summary does not indicate detailed config tables or troubleshooting mappings. |
 | [MSIXMGR tool](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-msixmgr) | 0.25 | MSIXMGR tool release notes; likely version changes, not structured configuration or limits content. |

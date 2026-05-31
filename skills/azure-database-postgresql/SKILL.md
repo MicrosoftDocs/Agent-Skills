@@ -1,9 +1,9 @@
 ---
 name: azure-database-postgresql
-description: Expert knowledge for Azure Database for PostgreSQL development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using pgvector/DiskANN, HA/replicas, VNet/Private Link, AI/ML integrations, or CI/CD deployments, and other Azure Database for PostgreSQL related development tasks. Not for Azure Database for MySQL (use azure-database-mysql), Azure Database for MariaDB (use azure-database-mariadb), Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance).
+description: Expert knowledge for Azure Database for PostgreSQL development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using pgvector/DiskANN, HA/replicas, Private Link/VNet, CI/CD/Bicep deploys, or AI/ML app integrations, and other Azure Database for PostgreSQL related development tasks. Not for Azure Database for MySQL (use azure-database-mysql), Azure Database for MariaDB (use azure-database-mariadb), Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-24"
+  generated_at: "2026-05-31"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Database for PostgreSQL Skill
@@ -29,7 +29,7 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L79-L94 | Guidance on sizing, scaling, and geo-replicating Azure PostgreSQL, choosing compute tiers and hosting options, and planning version selection, upgrades, reserved capacity, and pre-migration checks. |
 | Architecture & Design Patterns | L95-L105 | Patterns for using Azure PostgreSQL (often with OpenAI) to build recommendation/semantic search apps, microservices, multitenancy, real-time dashboards, and sharded/elastic data architectures. |
 | Limits & Quotas | L106-L125 | Backup/restore behavior, geo-restore and dropped server recovery, storage types/limits and performance tuning, quotas and capacity limits, read replicas, and known migration tool limitations. |
-| Security | L126-L158 | Securing Azure Database for PostgreSQL: identity and auth (Entra, managed identities, SCRAM), network isolation (VNet, Private Link, firewalls, TLS), encryption, auditing, roles, and Defender/Policy compliance. |
+| Security | L126-L158 | Securing Azure Database for PostgreSQL: identity/auth (Entra, managed identities, SCRAM), network (firewall, VNet, Private Link), TLS/SSL, encryption, auditing, RBAC, Defender, and compliance. |
 | Configuration | L159-L238 | Configuring Azure Database for PostgreSQL servers and extensions: server parameters, HA, networking, logging/monitoring, tuning (autovacuum, planner, WAL), and managing pgvector, DiskANN, and other extensions. |
 | Integrations & Coding Patterns | L239-L264 | Patterns and code to integrate Azure PostgreSQL with AI/ML (Language, AML, LangChain, Foundry), app SDKs (C#, Java, Python, Go, PHP), VS Code/Copilot, Storage, Data Factory, and migration tools. |
 | Deployment | L265-L275 | CI/CD deployment to Azure PostgreSQL, app integration (AKS/Django, Web Apps + VNet), flexible server Bicep provisioning, major upgrades, network migration, and point-in-time restore. |
@@ -133,7 +133,7 @@ This skill requires **network access** to fetch documentation content:
 | Assign required permissions to run PostgreSQL migrations | https://learn.microsoft.com/en-us/azure/postgresql/migrate/migration-service/concepts-required-user-permissions |
 | Create PostgreSQL server and firewall via CLI | https://learn.microsoft.com/en-us/azure/postgresql/samples/sample-create-server-and-firewall-rule |
 | Create PostgreSQL VNet rule with Azure CLI | https://learn.microsoft.com/en-us/azure/postgresql/samples/sample-create-server-with-vnet-rule |
-| Configure access control and roles for Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/security/security-access-control |
+| Configure role-based access for Azure Database for PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/security/security-access-control |
 | Configure pgaudit-based audit logging in Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/security/security-audit |
 | Apply Azure Policy to secure Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/security/security-azure-policy |
 | Review security and compliance certifications for Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/security/security-compliance |

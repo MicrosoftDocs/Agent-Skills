@@ -49,8 +49,8 @@ confusable_not_for: Not for Azure SignalR Service (use azure-signalr-service), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 109
+- **Updated Pages**: 0
+- **Unchanged**: 111
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-web-pubsub/azure-web-pubsub.csv`
 
@@ -70,13 +70,6 @@ confusable_not_for: Not for Azure SignalR Service (use azure-signalr-service), A
 | *(Unclassified)* | 31 | 27.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [Service internals](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/concept-service-internals)
-  - Updated: 2026-04-01T08:46:00.000Z → 2026-05-21T08:00:00.000Z
-- [Send client events to Event Hubs](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-develop-event-listener)
-  - Updated: 2024-11-20T08:00:00.000Z → 2026-05-21T08:00:00.000Z
 
 ## Classified Pages
 

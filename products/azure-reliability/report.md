@@ -1,9 +1,8 @@
 ---
-generated_at: '2026-05-17'
+generated_at: '2026-05-31'
 category_descriptions:
-  decision-making: Guidance on choosing Azure services by region type, availability
-    zone support, and nonregional scope to meet reliability, redundancy, and resiliency
-    requirements.
+  decision-making: Guidance on choosing Azure regions, region types, availability
+    zones, and nonregional services based on geography, pairing, and reliability support.
   architecture-patterns: Designing Azure apps for high availability using zones and
     multi-region patterns, including zonal vs zone-redundant deployments, hardening
     strategies, and non-paired region failover.
@@ -15,16 +14,16 @@ category_descriptions:
     large payloads.
 skill_description: Expert knowledge for Azure Reliability development including best
   practices, decision making, architecture & design patterns, and limits & quotas.
-  Use when designing zonal/multi-region apps, AKS or DB HA, messaging/network failover,
-  or Queue Storage limits, and other Azure Reliability related development tasks.
-  Not for Azure Resiliency (use azure-resiliency), Azure Monitor (use azure-monitor),
-  Azure Service Health (use azure-service-health), Azure Site Recovery (use azure-site-recovery).
-use_when: Use when designing zonal/multi-region apps, AKS or DB HA, messaging/network
-  failover, or Queue Storage limits, and other Azure Reliability related development
+  Use when choosing regions/AZs, designing multi-region HA, hardening AKS/DB/messaging,
+  or handling Queue Storage limits, and other Azure Reliability related development
+  tasks. Not for Azure Resiliency (use azure-resiliency), Azure Monitor (use azure-monitor),
+  Azure Service Health (use azure-service-health), Azure Sre Agent (use azure-sre-agent).
+use_when: Use when choosing regions/AZs, designing multi-region HA, hardening AKS/DB/messaging,
+  or handling Queue Storage limits, and other Azure Reliability related development
   tasks.
 confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Monitor
-  (use azure-monitor), Azure Service Health (use azure-service-health), Azure Site
-  Recovery (use azure-site-recovery).
+  (use azure-monitor), Azure Service Health (use azure-service-health), Azure Sre
+  Agent (use azure-sre-agent).
 ---
 # Azure Reliability Crawl Report
 
@@ -38,8 +37,8 @@ confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Monit
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 104
+- **Updated Pages**: 2
+- **Unchanged**: 102
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-reliability/azure-reliability.csv`
 
@@ -48,12 +47,19 @@ confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Monit
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 3 | 2.9% |
-| best-practices | 40 | 38.5% |
-| decision-making | 3 | 2.9% |
+| best-practices | 39 | 37.5% |
+| decision-making | 4 | 3.8% |
 | limits-quotas | 1 | 1.0% |
 | *(Unclassified)* | 57 | 54.8% |
 
 ## Changes
+
+### Updated Pages
+
+- [Azure regions list](https://learn.microsoft.com/en-us/azure/reliability/regions-list)
+  - Updated: 2026-03-02T23:14:00.000Z → 2026-05-29T11:02:00.000Z
+- [Azure SQL Database](https://learn.microsoft.com/en-us/azure/reliability/reliability-sql-database)
+  - Updated: 2026-01-22T18:34:00.000Z → 2026-05-27T08:00:00.000Z
 
 ## Classified Pages
 
@@ -68,8 +74,8 @@ confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Monit
 | [Azure Managed Grafana](https://learn.microsoft.com/en-us/azure/reliability/reliability-managed-grafana) | best-practices | 0.70 | Reliability content for Azure Managed Grafana generally includes concrete guidance on handling zone/region outages, maintenance, and backup/restore for this specific managed service. These are product-specific DO/DON'T recommendations and patterns, so it fits best-practices rather than generic concepts. |
 | [Azure Queue Storage](https://learn.microsoft.com/en-us/azure/reliability/reliability-storage-queue) | limits-quotas | 0.70 | Explicitly states a queue message can be up to 64 KB and queues can contain millions of messages up to the storage account capacity; these are concrete numeric limits. |
 | [Azure VMware Solution](https://learn.microsoft.com/en-us/azure/reliability/reliability-vmware-solution) | best-practices | 0.70 | Service-specific reliability guidance for Azure VMware Solution. These reliability articles typically include concrete deployment recommendations (for example, how to distribute clusters, use availability zones/regions, and handle transient faults) and product-specific gotchas. This fits best under best-practices because it focuses on how to configure and operate the service for resiliency rather than just conceptual reliability theory. |
+| [Azure regions list](https://learn.microsoft.com/en-us/azure/reliability/regions-list) | decision-making | 0.70 | Page lists all Azure public regions with their physical locations, geographies, availability zone support, and paired regions. This is up-to-date, provider-specific data that changes over time and isn't reliably known from model training. It supports region selection and placement decisions based on concrete attributes, fitting decision-making best. |
 | [Services with availability zone support](https://learn.microsoft.com/en-us/azure/reliability/availability-zones-service-support) | decision-making | 0.70 | The article lists which Azure services support availability zones and in what form (zonal vs zone-redundant vs nonregional). This functions as a decision aid for choosing services and deployment options based on zone support, with a service-by-service matrix that is specific, current-state knowledge not reliably known from training. |
-| [Azure SQL Database](https://learn.microsoft.com/en-us/azure/reliability/reliability-sql-database) | best-practices | 0.69 | SQL Database–specific handling of transient faults, AZ failures, regional failures, maintenance, backup/restore, and SLAs; detailed reliability guidance. |
 | [Azure Backup](https://learn.microsoft.com/en-us/azure/reliability/reliability-backup) | best-practices | 0.68 | The page focuses on making Azure Backup resilient to specific outage types (transient faults, zone and region outages) and provides product-specific reliability guidance and patterns. This is actionable, scenario-based advice tailored to Azure Backup rather than generic reliability theory, fitting best under best-practices. It does not primarily present numeric limits, decision matrices, or configuration parameter tables. |
 | [Azure Backup](https://learn.microsoft.com/en-us/azure/reliability/reliability-backup) | best-practices | 0.68 | The page focuses on making Azure Backup resilient to specific outage types (transient faults, zone and region outages) and provides product-specific reliability guidance and patterns. This is actionable, scenario-based advice tailored to Azure Backup rather than generic reliability theory, fitting best under best-practices. It does not primarily present numeric limits, decision matrices, or configuration parameter tables. |
 | [Azure Cosmos DB](https://learn.microsoft.com/en-us/azure/reliability/reliability-cosmos-db) | best-practices | 0.68 | The page focuses on making Azure Cosmos DB resilient to specific outage scenarios (transient faults, zone/region outages, service maintenance) and discusses backup/restore options. This is product-specific reliability guidance with concrete recommendations and patterns for Cosmos DB rather than generic theory, fitting best-practices. It does not primarily enumerate numeric limits/quotas or provide decision matrices, so other categories are less appropriate. |
@@ -142,6 +148,7 @@ confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Monit
 | [Azure Container Registry](https://learn.microsoft.com/en-us/azure/reliability/reliability-container-registry) | 0.30 | Reliability overview for Azure Container Registry; summary suggests conceptual shared-responsibility and resiliency patterns without concrete limits, configs, or error-code style troubleshooting. |
 | [Azure Container Registry](https://learn.microsoft.com/en-us/azure/reliability/reliability-container-registry) | 0.30 | Reliability overview for Azure Container Registry; summary suggests conceptual shared-responsibility and resiliency patterns without concrete limits, configs, or error-code style troubleshooting. |
 | [Azure Key Vault Managed HSM](https://learn.microsoft.com/en-us/azure/reliability/reliability-managed-hsm) | 0.30 | Reliability in Azure Key Vault Managed HSM; mentions backup/restore, recovery, and SLA conceptually but summary does not indicate specific numeric SLAs, configuration tables, or error-code-based troubleshooting. |
+| [Azure SQL Database](https://learn.microsoft.com/en-us/azure/reliability/reliability-sql-database) | 0.30 | Page appears to be a conceptual reliability overview for Azure SQL Database (shared responsibility, resiliency concepts, backup/restore, SLAs) without clear evidence of specific numeric limits, configuration tables, error-code-based troubleshooting, or detailed decision matrices. Likely high-level guidance rather than expert-only configuration or pattern details. |
 | [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/reliability/reliability-sql-managed-instance) | 0.30 | Reliability overview for Azure SQL Managed Instance; focuses on high availability, backups, and shared responsibility conceptually, not on numeric limits or configuration parameter tables. |
 | [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/reliability/reliability-sql-managed-instance) | 0.30 | Reliability overview for Azure SQL Managed Instance; focuses on high availability, backups, and shared responsibility conceptually, not on numeric limits or configuration parameter tables. |
 | [Azure Service Bus](https://learn.microsoft.com/en-us/azure/reliability/reliability-service-bus) | 0.30 | Reliability in Azure Service Bus; summary highlights built-in reliability features and shared responsibility at a conceptual level, without specific limits, configs, or troubleshooting details. |
@@ -166,5 +173,4 @@ confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Monit
 | [Failover and failback](https://learn.microsoft.com/en-us/azure/reliability/concept-failover-failback) | 0.10 | Overview of failover and failback concepts; no indication of product-specific limits, configs, or troubleshooting mappings. |
 | [Redundancy, replication, and backup](https://learn.microsoft.com/en-us/azure/reliability/concept-redundancy-replication-backup) | 0.10 | General introduction to redundancy, replication, and backup; high-level reliability concepts, not product-specific expert knowledge. |
 | [Shared responsibility for reliability](https://learn.microsoft.com/en-us/azure/reliability/concept-shared-responsibility) | 0.10 | Shared responsibility model for reliability; conceptual explanation without detailed service-specific parameters or numeric thresholds. |
-| [Azure regions list](https://learn.microsoft.com/en-us/azure/reliability/regions-list) | - | A list of Azure regions, locations, and paired regions is reference/marketing-style catalog information, not a skill-oriented troubleshooting, configuration, or decision matrix with thresholds or limits. It does not match any of the expert-knowledge sub-skill patterns defined. |
 | [How to read a service-level agreement (SLA)](https://learn.microsoft.com/en-us/azure/reliability/concept-service-level-agreements) | - | This article explains how to interpret SLAs conceptually and contractually. It is general guidance on reading SLAs, without product-specific numeric limits, configuration parameters, or decision matrices with quantified thresholds. It does not meet the expert-knowledge criteria for any sub-skill type. |

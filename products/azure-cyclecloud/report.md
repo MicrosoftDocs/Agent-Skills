@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-24'
+generated_at: '2026-05-31'
 category_descriptions:
   integrations: APIs, CLI, and Python client for automating CycleCloud, plus patterns
     to integrate schedulers (Slurm, Grid Engine, HTCondor, LSF, OpenPBS, HPC Pack),
@@ -46,10 +46,10 @@ confusable_not_for: Not for Azure Batch (use azure-batch), Azure HPC Cache (use 
 - **Unclassified**: 28
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 0
-- **Unchanged**: 114
-- **Deleted Pages**: 0
+- **New Pages**: 2
+- **Updated Pages**: 1
+- **Unchanged**: 112
+- **Deleted Pages**: 2
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cyclecloud/azure-cyclecloud.csv`
 
 ## Classification Statistics
@@ -70,7 +70,18 @@ confusable_not_for: Not for Azure Batch (use azure-batch), Azure HPC Cache (use 
 
 ### New Pages
 
-- [8.9.0 Release Notes](https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/8-9-0?view=cyclecloud-8)
+- [Current Release - 2026.05.22](https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/ccws/2026-05-22?view=cyclecloud-8)
+- [Previous Release - 2026.04.08](https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/ccws/2026-04-08?view=cyclecloud-8)
+
+### Updated Pages
+
+- [All Releases](https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/ccws/release-notes?view=cyclecloud-8)
+  - Updated: 2026-04-09T11:14:00.000Z → 2026-05-26T17:19:00.000Z
+
+### Deleted Pages
+
+- ~~Previous Release - 2026.03.10~~ (https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/ccws/2026-03-10?view=cyclecloud-8)
+- ~~Current Release - 2026.04.08~~ (https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/ccws/2026-04-08?view=cyclecloud-8)
 
 ## Classified Pages
 
@@ -179,20 +190,20 @@ confusable_not_for: Not for Azure Batch (use azure-batch), Azure HPC Cache (use 
 | [8.8.3 Release Notes](https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/8-8-3?view=cyclecloud-8) | 0.30 | Version-specific release notes describing fixes and issues; does not present structured limits, configuration parameters, decision matrices, or troubleshooting mappings as required by the sub-skill definitions. |
 | [Cost & Usage Tracking](https://learn.microsoft.com/en-us/azure/cyclecloud/concepts/usage-tracking?view=cyclecloud-8) | 0.30 | Cost and usage tracking conceptually described; no numeric thresholds, config tables, or alerts matrices in summary. |
 | [Create a Cluster](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/create-cluster?view=cyclecloud-8) | 0.30 | How-to for creating clusters via UI/CLI; mostly procedural without detailed configuration tables, limits, or product-specific edge cases. |
+| [Current Release - 2026.05.22](https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/ccws/2026-05-22?view=cyclecloud-8) | 0.30 | Release notes summary; underlying page likely lists changes and known issues but not clearly aligned to any specified sub-skill types (no explicit limits, configs, error-code mappings, or decision matrices indicated in the summary). |
 | [CycleCloud Packages](https://learn.microsoft.com/en-us/azure/cyclecloud/packages?view=cyclecloud-8) | 0.30 | Release package download listing; primarily distribution links and version info, not configuration, limits, or troubleshooting guidance. |
 | [Data Usage Policy](https://learn.microsoft.com/en-us/azure/cyclecloud/data-policy?view=cyclecloud-8) | 0.30 | Data usage and telemetry policy; privacy and governance information rather than technical expert knowledge per the defined categories. |
 | [Deploy CycleCloud Workspace for Slurm](https://learn.microsoft.com/en-us/azure/cyclecloud/qs-deploy-ccws?view=cyclecloud-8) | 0.30 | Quickstart deployment guide; procedural steps, no detailed constraints or config tables. |
 | [Install - via Marketplace](https://learn.microsoft.com/en-us/azure/cyclecloud/qs-install-marketplace?view=cyclecloud-8) | 0.30 | Quickstart install via Marketplace; step-by-step tutorial without config matrices or limits. |
 | [Licensing Information](https://learn.microsoft.com/en-us/azure/cyclecloud/licensing?view=cyclecloud-8) | 0.30 | Licensing information and terms of use; legal/contractual content, not technical configuration, limits, or troubleshooting. |
+| [Previous Release - 2026.04.08](https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/ccws/2026-04-08?view=cyclecloud-8) | 0.30 | Another release notes summary; similar to index 0, content is about new features and bug fixes without clear evidence of structured limits, configuration tables, troubleshooting mappings, or decision guidance as defined by the sub-skill types. |
 | [Service Policy](https://learn.microsoft.com/en-us/azure/cyclecloud/service-policy?view=cyclecloud-8) | 0.30 | Service policy describing support lifecycle and cadence; policy/marketing style content, not technical configuration or troubleshooting. |
 | [Start a Cluster](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/start-cluster?view=cyclecloud-8) | 0.30 | Describes starting clusters and orchestration sequence at a high level; no specific error codes, limits, or configuration parameter references. |
+| [All Releases](https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/ccws/release-notes?view=cyclecloud-8) | 0.20 | Current release notes index/landing page; primarily navigation to specific release notes, not a technical reference with the structured expert details required by any sub-skill type. |
 | [Clusters & Nodes](https://learn.microsoft.com/en-us/azure/cyclecloud/concepts/clusters?view=cyclecloud-8) | 0.20 | Explains clusters/nodes conceptually; lacks numeric limits, config tables, or error mappings. |
 | [Core](https://learn.microsoft.com/en-us/azure/cyclecloud/concepts/core?view=cyclecloud-8) | 0.20 | Architecture concepts are conceptual; no quantified thresholds, decision matrices, or configs. |
-| [Current Release - 2026.04.08](https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/ccws/2026-04-08?view=cyclecloud-8) | 0.20 | Release notes summary page; description does not indicate detailed limits, configuration tables, error codes, or other structured expert knowledge. Likely lists features/bug fixes and known issues at a high level. |
 | [Current Release - v8.x](https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes?view=cyclecloud-8) | 0.20 | High-level aggregated release notes across versions; primarily change logs without structured limits, configuration matrices, or decision/troubleshooting content that fits the defined sub-skill types. |
-| [Previous Release - 2026.03.10](https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/ccws/2026-03-10?view=cyclecloud-8) | 0.20 | Release notes summary page; description suggests general feature and issue listing without structured limits, configuration parameters, or troubleshooting mappings required for expert-knowledge classification. |
 | [Scheduling](https://learn.microsoft.com/en-us/azure/cyclecloud/concepts/scheduling?view=cyclecloud-8) | 0.20 | Scheduling concepts overview; no product-specific numeric thresholds or decision matrices. |
 | [What is Azure CycleCloud Workspace for Slurm?](https://learn.microsoft.com/en-us/azure/cyclecloud/overview-ccws?view=cyclecloud-8) | 0.20 | Overview of CycleCloud Workspace for Slurm; conceptual and marketing-style content. |
 | [What is Azure CycleCloud?](https://learn.microsoft.com/en-us/azure/cyclecloud/overview?view=cyclecloud-8) | 0.20 | High-level product overview without detailed limits, configs, or error mappings. |
-| [All Releases](https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/ccws/release-notes?view=cyclecloud-8) | 0.10 | Navigation-style page indicating current release version only; no indication of detailed technical content such as limits, configuration, or troubleshooting guidance. |
 | [Create a Cluster](https://learn.microsoft.com/en-us/azure/cyclecloud/tutorials/tutorial?view=cyclecloud-8) | 0.10 | Tutorial entry point; mostly navigation to learn modules, not detailed technical content. |

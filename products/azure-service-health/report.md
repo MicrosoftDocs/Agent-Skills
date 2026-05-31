@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-17'
+generated_at: '2026-05-31'
 category_descriptions:
   integrations: Using APIs, Resource Graph, webhooks, and connectors (OpsGenie, PagerDuty,
     ServiceNow) to query, route, and integrate Azure Service Health and Security advisories
@@ -39,8 +39,8 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 47
+- **Updated Pages**: 2
+- **Unchanged**: 45
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-health/azure-service-health.csv`
 
@@ -56,6 +56,13 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 | *(Unclassified)* | 28 | 59.6% |
 
 ## Changes
+
+### Updated Pages
+
+- [Azure Status page overview](https://learn.microsoft.com/en-us/azure/service-health/azure-status-overview)
+  - Updated: 2026-03-17T08:00:00.000Z → 2026-05-26T08:00:00.000Z
+- [What's new](https://learn.microsoft.com/en-us/azure/service-health/whats-new)
+  - Updated: 2026-03-11T05:07:00.000Z → 2026-03-11T08:00:00.000Z
 
 ## Classified Pages
 
@@ -107,9 +114,9 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 | [Service Health event tags](https://learn.microsoft.com/en-us/azure/service-health/service-health-event-tags) | 0.20 | Describes event tags, levels, and subtypes conceptually; no specific configuration values, limits, or decision matrices with thresholds. |
 | [Service Health notifications overview](https://learn.microsoft.com/en-us/azure/service-health/service-health-notifications-properties) | 0.20 | High-level overview of Azure Service Health notifications and where they appear; no specific limits, configuration parameters, error codes, or decision matrices. |
 | [Azure Service Health overview](https://learn.microsoft.com/en-us/azure/service-health/overview) | 0.10 | High-level overview of Azure Service Health; no detailed limits, configs, roles, or error mappings. |
-| [Azure Status page overview](https://learn.microsoft.com/en-us/azure/service-health/azure-status-overview) | 0.10 | High-level overview of Azure Status page; no numeric limits, configuration tables, error codes, or product-specific settings. |
+| [Azure Status page overview](https://learn.microsoft.com/en-us/azure/service-health/azure-status-overview) | 0.10 | High-level overview of the Azure Status page and its purpose; no numeric limits, configuration tables, error codes, or product-specific configuration details. |
 | [Health advisories overview](https://learn.microsoft.com/en-us/azure/service-health/service-health-advisories) | 0.10 | Describes the Health advisories pane and types of information it shows; appears to be conceptual guidance without detailed configuration, limits, or troubleshooting content. |
 | [Planned maintenance overview](https://learn.microsoft.com/en-us/azure/service-health/service-health-planned-maintenance) | 0.10 | Planned maintenance pane overview describing purpose and information shown; no specific numeric limits, configuration options, or decision criteria are indicated. |
 | [Resource Health overview](https://learn.microsoft.com/en-us/azure/service-health/resource-health-overview) | 0.10 | Conceptual overview of Resource Health; no specific error codes, configs, or limits. |
 | [Service issues overview](https://learn.microsoft.com/en-us/azure/service-health/service-issues-blade) | 0.10 | Explains how to view and interpret the Service issues pane; appears to be a conceptual/UX overview without product-specific limits, configuration tables, or troubleshooting mappings. |
-| [What's new](https://learn.microsoft.com/en-us/azure/service-health/whats-new) | 0.10 | What's New page with high-level feature announcements; no detailed limits, configs, error codes, or decision matrices. |
+| [What's new](https://learn.microsoft.com/en-us/azure/service-health/whats-new) | 0.10 | What's new/change log style content describing new features; lacks detailed configuration parameters, limits, error codes, or decision matrices. |

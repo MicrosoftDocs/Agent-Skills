@@ -1,9 +1,9 @@
 ---
 name: microsoft-foundry-classic
-description: Expert knowledge for Microsoft Foundry Classic (aka Azure AI Foundry classic) development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring Foundry agents, RAG/vector indexes, OpenAI integrations, multi-agent routing, or CI/CD deployments, and other Microsoft Foundry Classic related development tasks. Not for Microsoft Foundry (use microsoft-foundry), Microsoft Foundry Local (use microsoft-foundry-local), Microsoft Foundry Tools (use microsoft-foundry-tools).
+description: Expert knowledge for Microsoft Foundry Classic (aka Azure AI Foundry classic) development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building Foundry agents, configuring model routing, securing VNets/Private Link, integrating tools/SDKs, or deploying hubs, and other Microsoft Foundry Classic related development tasks. Not for Microsoft Foundry (use microsoft-foundry), Microsoft Foundry Local (use microsoft-foundry-local), Microsoft Foundry Tools (use microsoft-foundry-tools).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-24"
+  generated_at: "2026-05-31"
   generator: "docs2skills/1.0.0"
 ---
 # Microsoft Foundry Classic Skill
@@ -25,14 +25,14 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L37-L47 | Diagnosing and fixing Foundry classic issues: prompt flow compute, deployments/monitoring, private endpoints, Azure OpenAI (incl. fine-tuning), risks & safety alerts, and known portal bugs. |
-| Best Practices | L48-L61 | Best practices for prompts, safety messages, latency/throughput, On Your Data, DeepSeek-R1, GPT‑4V fine-tuning, and evaluating/improving Foundry chat apps |
-| Decision Making | L62-L91 | Guidance for choosing models, regions, deployments, costs, and lifecycle plans in Foundry, including fine-tuning, migrations, throughput, and model retirement/versioning decisions. |
-| Architecture & Design Patterns | L92-L100 | Designing multi-agent architectures, configuring Foundry Agent Service for resilience, and understanding model router behavior, failover, and disaster recovery strategies. |
-| Limits & Quotas | L101-L114 | Quotas, limits, and rate caps for Foundry agents, models, and Azure OpenAI (deployments, batch, dynamic quota, fine-tuning), plus how to monitor, manage, and request increases. |
-| Security | L115-L162 | Security, privacy, and compliance for Foundry: auth/RBAC, encryption and CMK, network isolation (VNets, Private Link, perimeters), Azure Policy guardrails, content filters, and data handling for models and tools. |
-| Configuration | L163-L214 | Configuring and operating Foundry Classic: agent hosts, networking, monitoring, evaluators, model deployments, storage, RAG/vector indexes, OpenAI integration, and continuous evaluation. |
-| Integrations & Coding Patterns | L215-L335 | Patterns and code for integrating Foundry and Azure OpenAI with tools, data sources, and SDKs—search, files, SharePoint, MCP, LangChain, Logic Apps, embeddings, fine-tuning, and realtime/audio. |
-| Deployment | L336-L356 | Deploying and managing Foundry models and hubs (Bicep, Terraform, CLI/portal), including serverless/managed endpoints, region availability, CI/CD pipelines, and Azure OpenAI/Hugging Face integrations. |
+| Best Practices | L48-L62 | Best practices for designing system/safety prompts, fine-tuning and using GPT/DeepSeek models, optimizing latency/throughput, and evaluating/operating Foundry chat apps in production |
+| Decision Making | L63-L92 | Guidance on choosing and configuring Foundry/Azure OpenAI models, regions, deployment types, costs, lifecycle, migrations, PTU sizing, and when to fine-tune or use specific GPT/reasoning models. |
+| Architecture & Design Patterns | L93-L101 | Designing multi-agent architectures, configuring Foundry Agent Service for resilience, and understanding model router behavior, failover, and disaster recovery strategies. |
+| Limits & Quotas | L102-L116 | Quotas, rate limits, and capacity management for Foundry agents, models, Azure OpenAI (incl. batch, dynamic quota, fine-tuning), and how to request or increase limits. |
+| Security | L117-L164 | Security, privacy, and compliance for Foundry: auth/RBAC, encryption and CMK, network isolation (VNets, Private Link, perimeters), Azure Policy guardrails, content filters, and data handling for models and tools. |
+| Configuration | L165-L216 | Configuring and operating Foundry classic: agents, models, evaluators, networking, monitoring/observability, storage, vector indexes, OpenAI integrations, and continuous evaluation/quality. |
+| Integrations & Coding Patterns | L217-L337 | Patterns and code for integrating Foundry and Azure OpenAI with tools, data sources, and SDKs—search, files, SharePoint, MCP, LangChain, Logic Apps, embeddings, fine-tuning, and realtime/audio. |
+| Deployment | L338-L358 | Deploying and managing Foundry models and hubs (Bicep, Terraform, CLI/portal), including serverless/managed endpoints, region availability, CI/CD pipelines, and Azure OpenAI/Hugging Face integrations. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -57,6 +57,7 @@ This skill requires **network access** to fetch documentation content:
 | Optimize Azure OpenAI latency and throughput in Foundry | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/latency |
 | Apply best practices for Azure OpenAI On Your Data | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/on-your-data-best-practices |
 | Optimize Azure OpenAI predicted outputs for latency | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/predicted-outputs |
+| Operate Foundry provisioned throughput in production | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/provisioned-get-started |
 | Evaluate and improve Foundry-based chat apps with SDK | https://learn.microsoft.com/en-us/azure/foundry-classic/tutorials/copilot-sdk-evaluate |
 
 ### Decision Making
@@ -82,10 +83,10 @@ This skill requires **network access** to fetch documentation content:
 | Plan around Foundry model lifecycle and support | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/model-retirements |
 | Enable and monitor priority processing for Foundry models | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/priority-processing |
 | Evaluate 2024 Azure OpenAI provisioned throughput updates | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/provisioned-migration |
-| Use provisioned throughput for Foundry model deployments | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/provisioned-throughput |
+| Choose billing options for Foundry PTU deployments | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/provisioned-throughput-billing |
 | Handle retired Foundry models and alternatives | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/retired-models |
 | Plan using your data with Azure OpenAI deployments | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/use-your-data |
-| Plan and cost provisioned throughput units in Foundry | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/provisioned-throughput-onboarding |
+| Determine PTU sizing for Foundry workloads | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/provisioned-throughput-sizing |
 | Migrate from preview to GA Realtime API protocol | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/realtime-audio-preview-api-migration-guide |
 | Use Azure OpenAI reasoning models effectively | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/reasoning |
 
@@ -106,6 +107,7 @@ This skill requires **network access** to fetch documentation content:
 | Reference quotas and limits for Foundry Models | https://learn.microsoft.com/en-us/azure/foundry-classic/foundry-models/quotas-limits |
 | Manage and request quotas for Microsoft Foundry hub resources | https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/hub-quota |
 | Manage and increase model deployment quotas in Foundry | https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/quota |
+| Understand Foundry provisioned throughput limits and quotas | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/provisioned-throughput |
 | Use Azure OpenAI global batch processing | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/batch |
 | Use dynamic quota for Azure OpenAI deployments | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/dynamic-quota |
 | Manage Azure OpenAI quota and rate limits in Foundry | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/quota |
@@ -191,6 +193,7 @@ This skill requires **network access** to fetch documentation content:
 | Add and manage data in Foundry hub-based projects | https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/data-add |
 | Configure cross-project access to serverless model APIs | https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/deploy-models-serverless-connect |
 | Create a Foundry hub via Azure ML SDK and CLI | https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/develop/create-hub-project-sdk |
+| Configure tools and SDKs for Foundry classic development | https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/develop/install-cli-sdk |
 | Generate synthetic and simulated data for Foundry evaluation | https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/develop/simulator-interaction-data |
 | Trace and observe Foundry agents with OpenTelemetry | https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/develop/trace-agents-sdk |
 | Enable tracing and feedback for prompt flow deployments | https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/develop/trace-production-sdk |
@@ -207,9 +210,8 @@ This skill requires **network access** to fetch documentation content:
 | Configure monitoring and logging for Azure OpenAI | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/monitor-openai |
 | Configure network and access for On Your Data | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/on-your-data-configuration |
 | Configure prompt caching for Azure OpenAI requests | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/prompt-caching |
-| Create and tune provisioned deployments in Foundry | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/provisioned-get-started |
 | Configure reproducible output for Azure OpenAI chats | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/reproducible-output |
-| Configure spillover traffic management for provisioned deployments | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/spillover-traffic-management |
+| Configure spillover traffic for Foundry provisioned deployments | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/spillover-traffic-management |
 | Reference Azure OpenAI monitoring metrics and logs | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/monitor-openai-reference |
 
 ### Integrations & Coding Patterns

@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Front Door (use azure-front-door), Azure Load 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 171
+- **Updated Pages**: 0
+- **Unchanged**: 175
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-application-gateway/azure-application-gateway.csv`
 
@@ -75,17 +75,6 @@ confusable_not_for: Not for Azure Front Door (use azure-front-door), Azure Load 
 | *(Unclassified)* | 47 | 26.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [Deploy Application Gateway for Containers ALB Controller - Helm](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/quickstart-deploy-application-gateway-for-containers-alb-controller-helm)
-  - Updated: 2026-05-07T08:00:00.000Z → 2026-05-18T08:00:00.000Z
-- [Application Gateway for Containers components](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/application-gateway-for-containers-components)
-  - Updated: 2026-04-27T17:22:00.000Z → 2026-05-20T22:22:00.000Z
-- [Service mesh integration](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/service-mesh-integration)
-  - Updated: 2026-04-29T08:00:00.000Z → 2026-05-18T08:00:00.000Z
-- [ALB Controller release notes](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/alb-controller-release-notes)
-  - Updated: 2026-05-07T08:00:00.000Z → 2026-05-18T08:00:00.000Z
 
 ## Classified Pages
 

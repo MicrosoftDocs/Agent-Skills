@@ -1,9 +1,9 @@
 ---
 name: azure-functions
-description: Expert knowledge for Azure Functions development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building Functions with HTTP/queue/Event Hub triggers, Durable workflows, Linux containers, CI/CD, or Flex/Consumption plans, and other Azure Functions related development tasks. Not for Azure App Service (use azure-app-service), Azure Logic Apps (use azure-logic-apps), Azure Container Apps (use azure-container-apps), Azure Kubernetes Service (AKS) (use azure-kubernetes-service).
+description: Expert knowledge for Azure Functions development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building Functions with HTTP/queue triggers, Durable workflows, container hosting, CI/CD, or VNet‑secured endpoints, and other Azure Functions related development tasks. Not for Azure App Service (use azure-app-service), Azure Logic Apps (use azure-logic-apps), Azure Container Apps (use azure-container-apps), Azure Kubernetes Service (AKS) (use azure-kubernetes-service).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-24"
+  generated_at: "2026-05-31"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Functions Skill
@@ -25,7 +25,7 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L37-L60 | Diagnosing and fixing Azure Functions runtime errors (AZFD/AZFW codes), storage/config issues, timers, networking, and language-specific (Node.js/Python) deployment and execution problems. |
-| Best Practices | L61-L78 | Patterns and guidance for robust, performant Azure Functions and Durable Functions: orchestration/entity design, versioning, error handling, DI, HTTP/connection usage, scaling, and language-specific best practices. |
+| Best Practices | L61-L78 | Best practices for coding, performance, reliability, error handling, DI, idempotency, connections, and language-specific (C#, Java, Node.js, Python) patterns in Azure Functions. |
 | Decision Making | L79-L99 | Guidance on choosing Functions hosting/runtime models, estimating costs, and planning or executing migrations (plans, runtimes, languages, platforms like AWS Lambda or Express) and key extensions. |
 | Architecture & Design Patterns | L100-L105 | Running Functions in Linux containers, Durable Functions design with Azure Storage, and hosting Functions on Azure Container Apps for scalable, container-based architectures. |
 | Limits & Quotas | L106-L114 | Details on Functions hosting limits: legacy and Flex Consumption plans, scaling behavior, concurrency and target-based scaling settings, and supported languages/versions. |
@@ -69,7 +69,7 @@ This skill requires **network access** to fetch documentation content:
 | Design idempotent Azure Functions for duplicate events | https://learn.microsoft.com/en-us/azure/azure-functions/functions-idempotent |
 | Apply core development guidance across Azure Functions languages | https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference |
 | Develop Java-based Azure Functions with triggers and bindings | https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-java |
-| Develop Node.js Azure Functions with triggers, bindings, and patterns | https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-node |
+| Apply Node.js-specific patterns in Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-node |
 | Implement reliable event processing with Event Hubs and Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-reliable-event-processing |
 | Manage connection usage efficiently in Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/manage-connections |
 | Optimize Azure Functions performance and reliability | https://learn.microsoft.com/en-us/azure/azure-functions/performance-reliability |

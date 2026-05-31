@@ -30,10 +30,10 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 - **Unclassified**: 11
 
 ### Incremental Update
-- **New Pages**: 8
-- **Updated Pages**: 12
-- **Unchanged**: 2
-- **Deleted Pages**: 8
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 22
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-external-attack-surface-management/azure-external-attack-surface-management.csv`
 
 ## Classification Statistics
@@ -45,55 +45,6 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | *(Unclassified)* | 11 | 50.0% |
 
 ## Changes
-
-### New Pages
-
-- [Understand inventory assets](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/understanding-inventory-assets)
-- [Understand asset details](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/understanding-asset-details)
-- [Understand dashboards](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/understanding-dashboards)
-- [Use and manage discovery](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/using-and-managing-discovery)
-- [Modify inventory assets](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/modifying-inventory-assets)
-- [Leverage data connections](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/data-connections)
-- [Deploy the Defender EASM Azure resource](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/deploying-the-defender-easm-azure-resource)
-- [Discover your attack surface](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/discovering-your-attack-surface)
-
-### Updated Pages
-
-- [What is Discovery?](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/what-is-discovery)
-  - Updated: 2026-04-24T17:58:00.000Z → 2026-05-18T17:39:00.000Z
-- [Policy engine automation](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/policy-engine)
-  - Updated: 2026-04-24T17:58:00.000Z → 2026-05-18T17:39:00.000Z
-- [Understand billable assets](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/understanding-billable-assets)
-  - Updated: 2026-04-24T17:58:00.000Z → 2026-05-18T17:39:00.000Z
-- [Inventory filters overview](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/inventory-filters)
-  - Updated: 2026-04-24T17:58:00.000Z → 2026-05-18T17:39:00.000Z
-- [Domain asset filters](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/domain-asset-filters)
-  - Updated: 2026-04-24T17:58:00.000Z → 2026-05-18T17:39:00.000Z
-- [Host asset filters](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/host-asset-filters)
-  - Updated: 2026-04-24T17:58:00.000Z → 2026-05-18T17:39:00.000Z
-- [Page asset filters](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/page-asset-filters)
-  - Updated: 2026-04-24T17:58:00.000Z → 2026-05-18T17:39:00.000Z
-- [Contact asset filters](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/contact-asset-filters)
-  - Updated: 2026-04-24T17:58:00.000Z → 2026-05-18T17:39:00.000Z
-- [SSL certificate asset filters](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/ssl-certificate-asset-filters)
-  - Updated: 2026-04-24T17:58:00.000Z → 2026-05-18T17:39:00.000Z
-- [IP address asset filters](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/ip-address-asset-filters)
-  - Updated: 2026-04-24T17:58:00.000Z → 2026-05-18T17:39:00.000Z
-- [IP block asset filters](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/ip-block-asset-filters)
-  - Updated: 2026-04-24T17:58:00.000Z → 2026-05-18T17:39:00.000Z
-- [ASN asset filters](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/asn-asset-filters)
-  - Updated: 2026-04-24T17:58:00.000Z → 2026-05-18T17:39:00.000Z
-
-### Deleted Pages
-
-- ~~Leveraging data connections~~ (https://learn.microsoft.com/en-us/azure/external-attack-surface-management/data-connections)
-- ~~Deploying the Defender EASM Azure resource~~ (https://learn.microsoft.com/en-us/azure/external-attack-surface-management/deploying-the-defender-easm-azure-resource)
-- ~~Discovering your attack surface~~ (https://learn.microsoft.com/en-us/azure/external-attack-surface-management/discovering-your-attack-surface)
-- ~~Modifying inventory assets~~ (https://learn.microsoft.com/en-us/azure/external-attack-surface-management/modifying-inventory-assets)
-- ~~Understanding asset details~~ (https://learn.microsoft.com/en-us/azure/external-attack-surface-management/understanding-asset-details)
-- ~~Understanding dashboards~~ (https://learn.microsoft.com/en-us/azure/external-attack-surface-management/understanding-dashboards)
-- ~~Understanding inventory assets~~ (https://learn.microsoft.com/en-us/azure/external-attack-surface-management/understanding-inventory-assets)
-- ~~Using and managing discovery~~ (https://learn.microsoft.com/en-us/azure/external-attack-surface-management/using-and-managing-discovery)
 
 ## Classified Pages
 

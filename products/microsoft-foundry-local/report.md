@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-10'
+generated_at: '2026-05-31'
 category_descriptions:
   integrations: 'APIs, SDKs, and patterns for calling Foundry Local models: REST/OpenAI-style
     chat, tools, transcription, LangChain apps, and compiling Hugging Face models
@@ -7,21 +7,21 @@ category_descriptions:
   configuration: Compiling Hugging Face models with Olive for Foundry Local, and using
     the Foundry Local CLI commands/options to install, manage, and configure local
     models.
-  best-practices: Troubleshooting Foundry Local CLI issues, resolving common errors,
-    and following recommended workflows and configuration practices for reliable local
-    development.
+  troubleshooting: Diagnosing and fixing common Foundry Local CLI issues, including
+    setup problems, command failures, environment/config errors, and applying recommended
+    best practices.
   decision-making: Guidance for upgrading apps from the legacy Foundry Local SDK to
     the current one, including API changes, migration steps, and compatibility considerations.
 skill_description: Expert knowledge for Microsoft Foundry Local (aka Azure AI Foundry
-  Local) development including best practices, decision making, configuration, and
-  integrations & coding patterns. Use when calling Foundry Local chat/tools APIs,
-  compiling HF models with Olive, using the CLI, or migrating SDK versions, and other
-  Microsoft Foundry Local related development tasks. Not for Microsoft Foundry (use
-  microsoft-foundry), Microsoft Foundry Classic (use microsoft-foundry-classic), Microsoft
-  Foundry Tools (use microsoft-foundry-tools), Azure Local (use azure-local).
-use_when: Use when calling Foundry Local chat/tools APIs, compiling HF models with
-  Olive, using the CLI, or migrating SDK versions, and other Microsoft Foundry Local
-  related development tasks.
+  Local) development including troubleshooting, decision making, configuration, and
+  integrations & coding patterns. Use when calling Foundry Local REST/chat APIs, tools,
+  transcription, LangChain apps, Olive HF compilation, or CLI, and other Microsoft
+  Foundry Local related development tasks. Not for Microsoft Foundry (use microsoft-foundry),
+  Microsoft Foundry Classic (use microsoft-foundry-classic), Microsoft Foundry Tools
+  (use microsoft-foundry-tools), Azure Local (use azure-local).
+use_when: Use when calling Foundry Local REST/chat APIs, tools, transcription, LangChain
+  apps, Olive HF compilation, or CLI, and other Microsoft Foundry Local related development
+  tasks.
 confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft Foundry
   Classic (use microsoft-foundry-classic), Microsoft Foundry Tools (use microsoft-foundry-tools),
   Azure Local (use azure-local).
@@ -38,8 +38,8 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 23
+- **Updated Pages**: 1
+- **Unchanged**: 22
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/microsoft-foundry-local/microsoft-foundry-local.csv`
 
@@ -47,13 +47,18 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| best-practices | 1 | 4.3% |
 | configuration | 2 | 8.7% |
 | decision-making | 1 | 4.3% |
 | integrations | 9 | 39.1% |
+| troubleshooting | 1 | 4.3% |
 | *(Unclassified)* | 10 | 43.5% |
 
 ## Changes
+
+### Updated Pages
+
+- [CLI (preview) best practice and troubleshooting](https://learn.microsoft.com/en-us/azure/foundry-local/reference/reference-best-practice)
+  - Updated: 2026-04-09T17:17:00.000Z → 2026-05-28T06:17:00.000Z
 
 ## Classified Pages
 
@@ -62,7 +67,7 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 | [CLI (preview) guide](https://learn.microsoft.com/en-us/azure/foundry-local/reference/reference-cli) | configuration | 0.80 | Comprehensive CLI reference; expected to list commands, arguments, defaults, and behaviors—core configuration surface for the tool. |
 | [CLI REST (preview) API](https://learn.microsoft.com/en-us/azure/foundry-local/reference/reference-rest) | integrations | 0.80 | REST API reference; will contain endpoints, parameters, request/response schemas, and constraints unique to Foundry Local, fitting integrations. |
 | [SDK guide](https://learn.microsoft.com/en-us/azure/foundry-local/reference/reference-sdk-current) | integrations | 0.80 | SDK reference documenting classes, methods, and parameters; clearly an integration & coding pattern surface with product-specific API details. |
-| [CLI (preview) best practice and troubleshooting](https://learn.microsoft.com/en-us/azure/foundry-local/reference/reference-best-practice) | best-practices | 0.75 | Explicitly a best practices and troubleshooting guide; likely includes product-specific DOs/DON’Ts, edge cases, and error-resolution mappings. |
+| [CLI (preview) best practice and troubleshooting](https://learn.microsoft.com/en-us/azure/foundry-local/reference/reference-best-practice) | troubleshooting | 0.78 | The page explicitly combines best practices and troubleshooting for the Foundry Local CLI, including product-specific guidance and symptom-to-solution tips that go beyond generic CLI usage. This aligns most closely with the troubleshooting sub-skill, as it focuses on resolving issues and providing concrete operational guidance for this specific tool. |
 | [Legacy SDK](https://learn.microsoft.com/en-us/azure/foundry-local/reference/reference-sdk-legacy) | integrations | 0.75 | Reference for older SDK versions tied to CLI; contains detailed API signatures and version-specific behavior, fitting integrations. |
 | [Use chat completions via REST server](https://learn.microsoft.com/en-us/azure/foundry-local/how-to/how-to-integrate-with-inference-sdks) | integrations | 0.75 | Shows how to connect via local REST server to OpenAI-compatible SDKs; likely includes endpoint URLs, headers, and SDK-specific configuration parameters, matching integrations. |
 | [Guidance for migrating from the legacy SDK](https://learn.microsoft.com/en-us/azure/foundry-local/reference/reference-sdk-migration) | decision-making | 0.70 | Migration guide between SDK generations; likely includes comparison of APIs, behavior changes, and recommendations on when/how to move, matching decision-making/migration guidance. |

@@ -50,9 +50,9 @@ confusable_not_for: Not for Azure NetApp Files (use azure-netapp-files), Azure M
 - **Unclassified**: 1
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 24
+- **Unchanged**: 25
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-elastic-san/azure-elastic-san.csv`
 
@@ -72,10 +72,6 @@ confusable_not_for: Not for Azure NetApp Files (use azure-netapp-files), Azure M
 | *(Unclassified)* | 1 | 4.0% |
 
 ## Changes
-
-### New Pages
-
-- [Benchmarking performance](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-benchmarking)
 
 ## Classified Pages
 

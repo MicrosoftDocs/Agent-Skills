@@ -53,10 +53,10 @@ confusable_not_for: Not for Azure Database for MariaDB (use azure-database-maria
 - **Unclassified**: 121
 
 ### Incremental Update
-- **New Pages**: 12
-- **Updated Pages**: 6
-- **Unchanged**: 344
-- **Deleted Pages**: 12
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 362
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sql-database/azure-sql-database.csv`
 
 ## Classification Statistics
@@ -75,51 +75,6 @@ confusable_not_for: Not for Azure Database for MariaDB (use azure-database-maria
 | *(Unclassified)* | 121 | 33.4% |
 
 ## Changes
-
-### New Pages
-
-- [Application development overview](https://learn.microsoft.com/en-us/azure/azure-sql/database/develop-overview?view=azuresql)
-- [Copilot with Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/copilot/copilot-azure-sql-overview?view=azuresql)
-- [Copilot with Azure SQL Database FAQ](https://learn.microsoft.com/en-us/azure/azure-sql/copilot/copilot-azure-sql-faq?view=azuresql)
-- [Hyperscale service tier](https://learn.microsoft.com/en-us/azure/azure-sql/database/service-tier-hyperscale?view=azuresql)
-- [Purchasing models](https://learn.microsoft.com/en-us/azure/azure-sql/database/purchasing-models?view=azuresql)
-- [Serverless compute tier](https://learn.microsoft.com/en-us/azure/azure-sql/database/serverless-tier-overview?view=azuresql)
-- [Security overview](https://learn.microsoft.com/en-us/azure/azure-sql/database/security-overview?view=azuresql)
-- [Transparent data encryption (TDE) in Azure SQL](https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-tde-overview?view=azuresql)
-- [Monitoring and tuning in SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/monitor-tune-overview?view=azuresql)
-- [Database watcher overview](https://learn.microsoft.com/en-us/azure/azure-sql/database-watcher-overview?view=azuresql)
-- [Business Continuity](https://learn.microsoft.com/en-us/azure/azure-sql/database/business-continuity-high-availability-disaster-recover-hadr-overview?view=azuresql)
-- [SQL Data Sync Overview](https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-data-sync-data-sql-server-sql-database?view=azuresql)
-
-### Updated Pages
-
-- [What is SQL Database?](https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview?view=azuresql)
-  - Updated: 2025-06-17T08:00:00.000Z → 2026-05-19T08:00:00.000Z
-- [What's new?](https://learn.microsoft.com/en-us/azure/azure-sql/database/doc-changes-updates-release-notes-whats-new?view=azuresql)
-  - Updated: 2026-04-13T22:36:00.000Z → 2026-05-20T22:39:00.000Z
-- [Hyperscale architecture](https://learn.microsoft.com/en-us/azure/azure-sql/database/hyperscale-architecture?view=azuresql)
-  - Updated: 2025-06-04T22:36:00.000Z → 2026-05-18T17:39:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/azure-sql/database/service-tier-hyperscale-frequently-asked-questions-faq?view=azuresql)
-  - Updated: 2026-03-18T11:48:00.000Z → 2026-05-20T22:39:00.000Z
-- [Convert to Hyperscale](https://learn.microsoft.com/en-us/azure/azure-sql/database/convert-to-hyperscale?view=azuresql)
-  - Updated: 2025-10-22T22:36:00.000Z → 2026-05-18T08:00:00.000Z
-- [Request quota increases](https://learn.microsoft.com/en-us/azure/azure-sql/database/quota-increase-request?view=azuresql)
-  - Updated: 2024-08-26T17:37:00.000Z → 2026-05-21T22:36:00.000Z
-
-### Deleted Pages
-
-- ~~Copilot in Azure with Azure SQL Database FAQ~~ (https://learn.microsoft.com/en-us/azure/azure-sql/copilot/copilot-azure-sql-faq?view=azuresql)
-- ~~Copilot in Azure with Azure SQL Database~~ (https://learn.microsoft.com/en-us/azure/azure-sql/copilot/copilot-azure-sql-overview?view=azuresql)
-- ~~Overview~~ (https://learn.microsoft.com/en-us/azure/azure-sql/database-watcher-overview?view=azuresql)
-- ~~Overview~~ (https://learn.microsoft.com/en-us/azure/azure-sql/database/business-continuity-high-availability-disaster-recover-hadr-overview?view=azuresql)
-- ~~Overview~~ (https://learn.microsoft.com/en-us/azure/azure-sql/database/develop-overview?view=azuresql)
-- ~~Overview~~ (https://learn.microsoft.com/en-us/azure/azure-sql/database/monitor-tune-overview?view=azuresql)
-- ~~Overview~~ (https://learn.microsoft.com/en-us/azure/azure-sql/database/purchasing-models?view=azuresql)
-- ~~Overview~~ (https://learn.microsoft.com/en-us/azure/azure-sql/database/security-overview?view=azuresql)
-- ~~Serverless~~ (https://learn.microsoft.com/en-us/azure/azure-sql/database/serverless-tier-overview?view=azuresql)
-- ~~Overview~~ (https://learn.microsoft.com/en-us/azure/azure-sql/database/service-tier-hyperscale?view=azuresql)
-- ~~Overview~~ (https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-data-sync-data-sql-server-sql-database?view=azuresql)
-- ~~Overview~~ (https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-tde-overview?view=azuresql)
 
 ## Classified Pages
 

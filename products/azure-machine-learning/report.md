@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 624
+- **Updated Pages**: 0
+- **Unchanged**: 627
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-machine-learning/azure-machine-learning.csv`
 
@@ -76,15 +76,6 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 | *(Unclassified)* | 143 | 22.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [Training with CLI and SDK](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-train-model?view=azureml-api-2)
-  - Updated: 2026-01-28T23:10:00.000Z → 2026-05-20T22:10:00.000Z
-- [Train with SDK v1](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-train-model?view=azureml-api-2)
-  - Updated: 2026-01-28T23:10:00.000Z → 2026-05-20T22:10:00.000Z
-- [Deploy and cut over](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/how-to-deploy-migrated-agent-framework-workflow?view=azureml-api-2)
-  - Updated: 2026-04-21T16:56:00.000Z → 2026-05-20T17:10:00.000Z
 
 ## Classified Pages
 

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-24'
+generated_at: '2026-05-31'
 category_descriptions:
   integrations: 'SDK usage, integrations, and patterns for Cosmos DB (NoSQL, Mongo,
     Cassandra, Gremlin, PostgreSQL, DocumentDB): bulk ops, change feed, Kafka/Spark,
@@ -13,9 +13,9 @@ category_descriptions:
   configuration: 'Configuring Cosmos DB and related services: throughput, indexing,
     backup/restore, monitoring, search/vector, SDK tuning, Cassandra/Mongo/PostgreSQL
     setups, fleets, and emulator/infra provisioning.'
-  decision-making: Guidance on choosing Cosmos DB and Cosmos DB for PostgreSQL/MongoDB
-    options, including scaling, throughput, consistency, networking, pricing, and
-    migration/upgrade paths from related services.
+  decision-making: 'Guidance for choosing Cosmos DB and DocumentDB options: consistency,
+    throughput, scaling, regions, pricing, analytics, backups, migrations, SDK upgrades,
+    and PostgreSQL/MongoDB integrations.'
   best-practices: Performance, cost, resiliency, and SDK best practices for Cosmos
     DB (NoSQL, Mongo, Cassandra, PostgreSQL), including partitioning, RU optimization,
     indexing, DR, and client/driver tuning.
@@ -31,125 +31,74 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Cosmos DB development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  using Cosmos NoSQL/Mongo/Cassandra APIs, change feed, vector search/RAG, Private
-  Link, or RU/throughput tuning, and other Azure Cosmos DB related development tasks.
+  using Cosmos DB NoSQL/Mongo/Cassandra APIs, change feed, bulk ops, vector search,
+  or Cosmos DB for PostgreSQL, and other Azure Cosmos DB related development tasks.
   Not for Azure Table Storage (use azure-table-storage), Azure SQL Database (use azure-sql-database),
-  Azure Database for MySQL (use azure-database-mysql), Azure Database for PostgreSQL
-  (use azure-database-postgresql).
-use_when: Use when using Cosmos NoSQL/Mongo/Cassandra APIs, change feed, vector search/RAG,
-  Private Link, or RU/throughput tuning, and other Azure Cosmos DB related development
+  Azure SQL Managed Instance (use azure-sql-managed-instance), Azure Data Explorer
+  (use azure-data-explorer).
+use_when: Use when using Cosmos DB NoSQL/Mongo/Cassandra APIs, change feed, bulk ops,
+  vector search, or Cosmos DB for PostgreSQL, and other Azure Cosmos DB related development
   tasks.
 confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure SQL
-  Database (use azure-sql-database), Azure Database for MySQL (use azure-database-mysql),
-  Azure Database for PostgreSQL (use azure-database-postgresql).
+  Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance),
+  Azure Data Explorer (use azure-data-explorer).
 ---
 # Azure Cosmos DB Crawl Report
 
 ## Summary
 
-- **Total Pages**: 811
-- **Fetched**: 811
+- **Total Pages**: 816
+- **Fetched**: 816
 - **Fetch Failed**: 0
-- **Classified**: 611
-- **Unclassified**: 200
+- **Classified**: 612
+- **Unclassified**: 204
 
 ### Incremental Update
-- **New Pages**: 3
-- **Updated Pages**: 36
-- **Unchanged**: 772
-- **Deleted Pages**: 208
+- **New Pages**: 5
+- **Updated Pages**: 6
+- **Unchanged**: 805
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cosmos-db/azure-cosmos-db.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 28 | 3.5% |
-| best-practices | 59 | 7.3% |
-| configuration | 128 | 15.8% |
-| decision-making | 51 | 6.3% |
+| architecture-patterns | 28 | 3.4% |
+| best-practices | 59 | 7.2% |
+| configuration | 128 | 15.7% |
+| decision-making | 56 | 6.9% |
 | deployment | 30 | 3.7% |
-| integrations | 149 | 18.4% |
+| integrations | 145 | 17.8% |
 | limits-quotas | 38 | 4.7% |
-| security | 77 | 9.5% |
-| troubleshooting | 51 | 6.3% |
-| *(Unclassified)* | 200 | 24.7% |
+| security | 77 | 9.4% |
+| troubleshooting | 51 | 6.2% |
+| *(Unclassified)* | 204 | 25.0% |
 
 ## Changes
 
 ### New Pages
 
-- [Visual Studio Code extension](https://learn.microsoft.com/en-us/azure/cosmos-db/shell/visual-studio-code)
-- [Configure Azure Synapse Link](https://learn.microsoft.com/en-us/azure/cosmos-db/configure-synapse-link)
-- [Power BI with Azure Synapse Link](https://learn.microsoft.com/en-us/azure/cosmos-db/integrated-power-bi-synapse-link)
+- [Select algorithm with Python](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-python-select-algorithm)
+- [Select algorithm with TypeScript](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-nodejs-select-algorithm)
+- [Select algorithm with .NET](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-dotnet-select-algorithm)
+- [Select algorithm with Go](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-go-select-algorithm)
+- [Select algorithm with Java](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-java-select-algorithm)
 
 ### Updated Pages
 
-- [Query a vector store with a Node.js app](https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-vector-store-nodejs)
-  - Updated: 2026-04-27T13:06:00.000Z → 2026-05-22T08:00:00.000Z
-- [Query a vector store with a .NET app](https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-vector-store-dotnet)
-  - Updated: 2026-04-27T13:06:00.000Z → 2026-05-22T08:00:00.000Z
-- [Query a vector store with a Go app](https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-vector-store-go)
-  - Updated: 2026-04-27T13:06:00.000Z → 2026-05-22T08:00:00.000Z
-- [Query a vector store with a Python app](https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-vector-store-python)
-  - Updated: 2026-04-27T13:06:00.000Z → 2026-05-22T08:00:00.000Z
-- [Query a vector store with a Java app](https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-vector-store-java)
-  - Updated: 2026-04-27T13:06:00.000Z → 2026-05-22T08:00:00.000Z
-- [Create a vector index with a Node.js app](https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-create-vector-index-typescript)
-  - Updated: 2026-04-27T13:06:00.000Z → 2026-05-22T08:00:00.000Z
-- [Stopwords list](https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/stopwords)
-  - Updated: 2026-04-27T13:06:00.000Z → 2026-05-22T08:00:00.000Z
-- [Vector databases](https://learn.microsoft.com/en-us/azure/cosmos-db/vector-database)
-  - Updated: 2026-04-27T13:06:00.000Z → 2026-05-22T08:00:00.000Z
-- [Use role-based access control](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-connect-role-based-access-control)
-  - Updated: 2026-04-27T13:06:00.000Z → 2026-04-29T23:11:00.000Z
-- [Partitioning overview](https://learn.microsoft.com/en-us/azure/cosmos-db/partitioning)
-  - Updated: 2026-04-27T13:06:00.000Z → 2026-05-21T17:17:00.000Z
-- [Bulk executor - Java library](https://learn.microsoft.com/en-us/azure/cosmos-db/bulk-executor-java)
-  - Updated: 2026-04-27T13:06:00.000Z → 2026-05-21T22:12:00.000Z
-- [Create AI vector search app with Python](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-python-vector-search)
-  - Updated: 2026-04-29T23:11:00.000Z → 2026-05-22T08:00:00.000Z
-- [Create AI vector search app with TypeScript](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-nodejs-vector-search)
-  - Updated: 2026-04-29T23:11:00.000Z → 2026-05-22T08:00:00.000Z
-- [Create AI vector search app with .NET](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-dotnet-vector-search)
-  - Updated: 2026-04-29T23:11:00.000Z → 2026-05-22T08:00:00.000Z
-- [Create AI vector search app with Go](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-go-vector-search)
-  - Updated: 2026-04-29T23:11:00.000Z → 2026-05-22T08:00:00.000Z
 - [Create AI vector search app with Java](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-java-vector-search)
-  - Updated: 2026-04-29T23:11:00.000Z → 2026-05-22T08:00:00.000Z
-- [Create AI agent with vector search in TypeScript](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-agent-nodejs)
-  - Updated: 2026-04-29T23:11:00.000Z → 2026-05-22T08:00:00.000Z
+  - Updated: 2026-05-22T08:00:00.000Z → 2026-05-28T12:14:00.000Z
 - [Create AI agent with vector search in Go](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-agent-go)
-  - Updated: 2026-04-29T23:11:00.000Z → 2026-05-22T08:00:00.000Z
-- [Exact Nearest Neighbor (ENN) Vector Search](https://learn.microsoft.com/en-us/azure/documentdb/enn-vector-search)
-  - Updated: 2026-04-27T13:06:00.000Z → 2026-05-22T08:00:00.000Z
-- [Regional availability](https://learn.microsoft.com/en-us/azure/documentdb/regional-availability)
-  - Updated: 2026-04-27T13:06:00.000Z → 2026-05-19T17:11:00.000Z
-- *...and 16 more*
-
-### Deleted Pages
-
-- ~~Configure Synapse Link~~ (https://learn.microsoft.com/en-us/azure/cosmos-db/configure-synapse-link)
-- ~~Power BI with Synapse Link~~ (https://learn.microsoft.com/en-us/azure/cosmos-db/integrated-power-bi-synapse-link)
-- ~~VS Code extension~~ (https://learn.microsoft.com/en-us/azure/cosmos-db/shell/visual-studio-code)
-- ~~Index~~ (https://learn.microsoft.com/en-us/azure/documentdb/commands/)
-- ~~aggregate~~ (https://learn.microsoft.com/en-us/azure/documentdb/commands/aggregation/aggregate)
-- ~~count~~ (https://learn.microsoft.com/en-us/azure/documentdb/commands/aggregation/count)
-- ~~distinct~~ (https://learn.microsoft.com/en-us/azure/documentdb/commands/aggregation/distinct)
-- ~~delete~~ (https://learn.microsoft.com/en-us/azure/documentdb/commands/query-and-write/delete)
-- ~~find~~ (https://learn.microsoft.com/en-us/azure/documentdb/commands/query-and-write/find)
-- ~~findAndModify~~ (https://learn.microsoft.com/en-us/azure/documentdb/commands/query-and-write/findandmodify)
-- ~~getMore~~ (https://learn.microsoft.com/en-us/azure/documentdb/commands/query-and-write/getmore)
-- ~~insert~~ (https://learn.microsoft.com/en-us/azure/documentdb/commands/query-and-write/insert)
-- ~~update~~ (https://learn.microsoft.com/en-us/azure/documentdb/commands/query-and-write/update)
-- ~~Index~~ (https://learn.microsoft.com/en-us/azure/documentdb/operators/)
-- ~~$avg~~ (https://learn.microsoft.com/en-us/azure/documentdb/operators/accumulators/$avg)
-- ~~$bottom~~ (https://learn.microsoft.com/en-us/azure/documentdb/operators/accumulators/$bottom)
-- ~~$bottomN~~ (https://learn.microsoft.com/en-us/azure/documentdb/operators/accumulators/$bottomn)
-- ~~$count~~ (https://learn.microsoft.com/en-us/azure/documentdb/operators/accumulators/$count)
-- ~~$first~~ (https://learn.microsoft.com/en-us/azure/documentdb/operators/accumulators/$first)
-- ~~$firstN~~ (https://learn.microsoft.com/en-us/azure/documentdb/operators/accumulators/$firstn)
-- *...and 188 more*
+  - Updated: 2026-05-22T08:00:00.000Z → 2026-05-28T12:14:00.000Z
+- [Create AI vector search app with Python](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-python-vector-search)
+  - Updated: 2026-05-22T08:00:00.000Z → 2026-05-28T12:14:00.000Z
+- [Create AI vector search app with TypeScript](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-nodejs-vector-search)
+  - Updated: 2026-05-22T08:00:00.000Z → 2026-05-28T12:14:00.000Z
+- [Create AI vector search app with .NET](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-dotnet-vector-search)
+  - Updated: 2026-05-22T08:00:00.000Z → 2026-05-28T12:14:00.000Z
+- [Create AI vector search app with Go](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-go-vector-search)
+  - Updated: 2026-05-22T08:00:00.000Z → 2026-05-28T12:14:00.000Z
 
 ## Classified Pages
 
@@ -431,7 +380,6 @@ confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure
 | [Convert session token format](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-convert-session-token) | integrations | 0.70 | Explains conversion between specific session token formats across SDK versions; includes API usage patterns unique to Cosmos DB .NET SDK. |
 | [Convert vCores to request units](https://learn.microsoft.com/en-us/azure/cosmos-db/convert-vcore-to-request-unit) | decision-making | 0.70 | Provides formulas/heuristics to translate existing vCore/vCPU capacity into Cosmos DB RU/s, including replication and sharding assumptions—specialized migration decision guidance with quantitative mapping. |
 | [Copy table data](https://learn.microsoft.com/en-us/azure/cosmos-db/cassandra/spark-table-copy-operations) | integrations | 0.70 | Describes detailed Spark-based table copy operations for Cosmos DB Cassandra, including connector commands and options that are specific to this integration. |
-| [Create AI vector search app with .NET](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-dotnet-vector-search) | integrations | 0.70 | Page explicitly focuses on using the .NET MongoDB driver with Azure DocumentDB for vector search, which is a product-specific integration pattern with concrete API usage details. |
 | [Create a collection](https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/how-to-create-container) | configuration | 0.70 | Explains collection creation via portal and SDKs; likely includes parameters like shard keys, throughput settings, and options with allowed values. |
 | [Create a container](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-dotnet-create-container) | integrations | 0.70 | Includes SDK-specific parameters such as partition key paths, indexing policy options, and throughput settings—detailed API usage for this product. |
 | [Create a container](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-javascript-create-container) | integrations | 0.70 | How-to page for container creation via JavaScript SDK; typically includes SDK method names, required parameters (partition key path, throughput options, indexing policy snippets) and request options that are product-specific integration details rather than generic concepts. |
@@ -554,6 +502,7 @@ confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure
 | [Security](https://learn.microsoft.com/en-us/azure/cosmos-db/gremlin/security) | security | 0.70 | Security-focused page for Cosmos DB Gremlin. While the summary is high level, this type of article typically includes product-specific security settings (networking options, encryption, keys, firewall, private endpoints) and concrete configuration guidance that goes beyond generic security concepts. |
 | [Security](https://learn.microsoft.com/en-us/azure/cosmos-db/table/security) | security | 0.70 | Security fundamentals page for this service will describe specific security features, configuration options, and possibly network/security settings unique to Cosmos DB for Table. |
 | [Security overview](https://learn.microsoft.com/en-us/azure/cosmos-db/security) | security | 0.70 | Security guidance for Cosmos DB for NoSQL; full article is likely to include product-specific security features and recommendations beyond generic security concepts. |
+| [Select algorithm with .NET](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-dotnet-select-algorithm) | decision-making | 0.70 | Article explicitly explains how to compare all three vector search algorithms with different similarity functions to choose the right configuration. This is concrete technology selection guidance for Azure DocumentDB vector search, matching decision-making criteria. |
 | [Serverless overview](https://learn.microsoft.com/en-us/azure/cosmos-db/serverless) | decision-making | 0.70 | Compares serverless and provisioned modes with scenario-based recommendations and billing/performance trade-offs to guide capacity-mode selection. |
 | [Set up CI/CD with Azure Pipelines](https://learn.microsoft.com/en-us/azure/cosmos-db/tutorial-setup-ci-cd) | deployment | 0.70 | CI/CD tutorial with emulator build task; includes product-specific constraints (agent types, OS support) and deployment workflow details. |
 | [Set up private access](https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/tutorial-private-access) | security | 0.70 | Tutorial uses Azure CLI to configure VNet, private endpoints, and possibly NSG rules specific to Cosmos DB for PostgreSQL, which are concrete security/network settings. |
@@ -620,9 +569,6 @@ confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure
 | [Configure a hybrid cluster - CLI](https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/configure-hybrid-cluster-cli) | configuration | 0.65 | Hybrid cluster setup via CLI will require specific network, datacenter, and cluster parameters; these are product-specific configuration details. |
 | [Configure high availability](https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/howto-high-availability) | configuration | 0.65 | HA configuration docs expose specific toggles, modes, and constraints for enabling/disabling HA in this service. |
 | [Connect](https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/quickstart-connect-psql) | integrations | 0.65 | Page is about connecting via psql and likely includes product-specific connection strings, host formats, ports, and SSL parameters unique to Azure Cosmos DB for PostgreSQL. |
-| [Create AI vector search app with Go](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-go-vector-search) | integrations | 0.65 | Quickstart likely contains Go client library setup and vector query code specific to DocumentDB, representing an integration pattern with concrete configuration and API usage. |
-| [Create AI vector search app with Python](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-python-vector-search) | integrations | 0.65 | Quickstart likely includes product-specific Python client usage, method names, and query patterns for vector search in DocumentDB that go beyond generic knowledge, fitting integrations & coding patterns. |
-| [Create AI vector search app with TypeScript](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-nodejs-vector-search) | integrations | 0.65 | Quickstart likely shows Node.js client configuration and API usage for DocumentDB vector search, including specific methods and parameters, which aligns with integrations & coding patterns. |
 | [Create a container](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-create-container) | integrations | 0.65 | Multi-tool how-to that shows specific CLI/PowerShell/SDK commands and parameters (partition key, throughput, indexing) that are product-specific configuration/integration details. |
 | [Create a database](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-dotnet-create-database) | integrations | 0.65 | Provides specific .NET SDK calls and parameters for database creation (throughput options, consistency-related settings) unique to Cosmos DB. |
 | [Create a knowledge graph](https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/cosmos-ai-graph) | architecture-patterns | 0.65 | Describes CosmosAIGraph patterns for modeling and querying relationships; includes product-specific graph-plus-vector design guidance. |
@@ -681,6 +627,10 @@ confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure
 | [Schedule maintenance](https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/howto-maintenance) | configuration | 0.65 | Scheduled maintenance docs typically expose specific settings (maintenance window, allowed times, behavior during maintenance) that are product-specific configuration options. |
 | [Search and query text](https://learn.microsoft.com/en-us/azure/documentdb/how-to-create-text-index) | limits-quotas | 0.65 | States that DocumentDB implements version 2 text indexes and clarifies capabilities (case sensitivity but not diacritic sensitivity); this is a concrete versioned capability/limitation specific to the service. |
 | [Security overview](https://learn.microsoft.com/en-us/azure/documentdb/security) | best-practices | 0.65 | Security article is explicitly about best practices for securing clusters, likely including product-specific recommendations and gotchas beyond generic security advice. |
+| [Select algorithm with Go](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-go-select-algorithm) | decision-making | 0.65 | Quickstart walks through comparing DiskANN, HNSW, and IVF with different similarity functions to help choose the best configuration. This is product-specific selection guidance for index algorithms, aligning with decision-making. |
+| [Select algorithm with Java](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-java-select-algorithm) | decision-making | 0.65 | Focuses on comparing vector index algorithms and similarity functions in Java to select the best configuration for a vector search workload, which is explicit decision-making guidance for algorithm choice in Azure DocumentDB. |
+| [Select algorithm with Python](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-python-select-algorithm) | decision-making | 0.65 | Compares three specific vector index algorithms and similarity functions to choose the optimal configuration for a workload. Although framed as a quickstart, it is explicitly about comparing options to select the best configuration, which aligns with decision-making guidance for algorithm and similarity function selection. |
+| [Select algorithm with TypeScript](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-nodejs-select-algorithm) | decision-making | 0.65 | Guides comparison of DiskANN, HNSW, and IVF plus similarity functions using TypeScript to optimize search performance. This is focused on helping users decide which algorithm/similarity combination to use for their workload, fitting the decision-making category. |
 | [Semantic Reranker (Preview)](https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/semantic-reranker) | integrations | 0.65 | Describes integrating Semantic Reranker with Cosmos DB SDKs, including parameters and usage patterns for reranking query results. |
 | [Serverless Performance](https://learn.microsoft.com/en-us/azure/cosmos-db/serverless-performance) | limits-quotas | 0.65 | Describes serverless performance characteristics and capacity determination rules, including maximum capacity tied to data size—service-specific constraints not generally known. |
 | [Shard data on worker nodes](https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/tutorial-shard) | integrations | 0.65 | Tutorial on sharding includes specific SQL functions, options, and patterns for distributing data across worker nodes, which are product-specific integration/coding patterns. |
@@ -867,9 +817,7 @@ confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure
 | [Connect using Azure Cloud Shell](https://learn.microsoft.com/en-us/azure/documentdb/how-to-connect-cloud-shell) | 0.30 | Azure Cloud Shell connection guide; mostly step-by-step usage, not configuration tables, limits, or troubleshooting mappings. |
 | [Connect using MongoDB Shell](https://learn.microsoft.com/en-us/azure/documentdb/how-to-connect-mongo-shell) | 0.30 | MongoDB shell connection tutorial; likely basic connection string usage and sample queries, not deep configuration or limits. |
 | [Connect using Studio 3T](https://learn.microsoft.com/en-us/azure/documentdb/how-to-connect-studio-3t) | 0.30 | How-to connect with Studio 3T; primarily a connection walkthrough without detailed configuration matrices, limits, or error-code-based troubleshooting. |
-| [Create AI agent with vector search in Go](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-agent-go) | 0.30 | Quickstart for building an AI agent in Go with a custom agent architecture; likely focuses on example code and patterns rather than expert-only configuration, limits, or diagnostic details. |
 | [Create AI agent with vector search in TypeScript](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-agent-nodejs) | 0.30 | Quickstart for building an AI agent with TypeScript and LangChain; appears to be a tutorial showing architecture and usage, not detailed limits, configuration matrices, or troubleshooting content. |
-| [Create AI vector search app with Java](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-java-vector-search) | 0.30 | Quickstart tutorial for Java vector search; primarily step-by-step usage with sample app. No evidence of detailed configuration tables, limits, error-code mappings, or product-specific parameter defaults beyond what an LLM would generally know. |
 | [Create account](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-create-account) | 0.30 | Basic how-to for creating an account; mostly UI steps without detailed configuration tables, limits, or advanced patterns. |
 | [Deploy Spark Cluster with Databricks](https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/deploy-cluster-databricks) | 0.30 | Databricks Spark cluster deployment quickstart; likely standard portal steps without tier matrices or deployment constraints specific enough for expert classification. |
 | [Deploy a cluster using Terraform](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-terraform) | 0.30 | Quickstart Terraform deployment is primarily step-by-step tutorial; no indication of config matrices, limits, or product-specific parameters beyond generic provisioning. |
@@ -920,6 +868,12 @@ confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure
 | [Build an AI Agent](https://learn.microsoft.com/en-us/azure/documentdb/tutorial-ai-agent) | 0.20 | End-to-end AI agent tutorial; likely code and flow but not focused on product-specific limits, configs, or troubleshooting matrices. |
 | [Common use cases](https://learn.microsoft.com/en-us/azure/cosmos-db/use-cases) | 0.20 | Overview of common use cases and scenarios; conceptual guidance and starting-point recommendations, but no indication of specific configuration values, limits, or decision matrices. |
 | [Configure Azure Synapse Link](https://learn.microsoft.com/en-us/azure/cosmos-db/configure-synapse-link) | 0.20 | Page is about enabling and using Synapse Link with Cosmos DB, but the summary suggests a deprecation notice and general how-to. No evidence of detailed limits, configuration parameter tables, or troubleshooting mappings in the provided summary. |
+| [Create AI agent with vector search in Go](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-agent-go) | 0.20 | Quickstart for building an AI agent in Go with vector search; focuses on demonstrating an example two-agent architecture rather than detailed configuration options, limits, or troubleshooting specifics. |
+| [Create AI vector search app with .NET](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-dotnet-vector-search) | 0.20 | Quickstart for using vector search with .NET and MongoDB driver; describes a guided tour and sample app. No evidence of detailed configuration options, quotas, or error mappings beyond standard tutorial content. |
+| [Create AI vector search app with Go](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-go-vector-search) | 0.20 | Quickstart for using vector search with Go in Azure DocumentDB; similar to other language quickstarts, focused on sample dataset and GitHub code without product-specific limits, configuration tables, or troubleshooting guidance. |
+| [Create AI vector search app with Java](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-java-vector-search) | 0.20 | Quickstart showing how to use vector search with Java and Azure DocumentDB; description suggests a basic sample app and dataset usage without exposing detailed configuration tables, limits, or product-specific parameters beyond standard SDK usage. |
+| [Create AI vector search app with Python](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-python-vector-search) | 0.20 | Quickstart for using vector search with Python in Azure DocumentDB; primarily a tutorial showing sample dataset and GitHub code. No indication of configuration tables, limits, error codes, or product-specific parameters beyond generic SDK usage. |
+| [Create AI vector search app with TypeScript](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-nodejs-vector-search) | 0.20 | Quickstart for using vector search with Node.js in Azure DocumentDB; focuses on sample dataset and GitHub sample. Lacks detailed limits, configuration matrices, or troubleshooting content that would qualify as expert knowledge. |
 | [Create a cluster - portal](https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/create-cluster-portal) | 0.20 | Portal quickstart for creating a cluster; primarily step-by-step UI guidance without deep configuration matrices or limits. |
 | [Develop app - .NET](https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/quickstart-dotnet) | 0.20 | Quickstart tutorial for .NET; basic getting-started content, not deep expert knowledge per the defined categories. |
 | [Develop app - Node.js](https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/quickstart-nodejs) | 0.20 | Quickstart tutorial for Node.js; primarily step-by-step sample app, not configuration tables, limits, or deep product-specific patterns. |

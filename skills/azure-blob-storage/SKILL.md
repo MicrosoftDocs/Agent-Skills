@@ -1,14 +1,14 @@
 ---
 name: azure-blob-storage
-description: Expert knowledge for Azure Blob Storage development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Blob tiers, lifecycle/immutability, SAS/RBAC auth, BlobFuse/NFS/SFTP access, or SDK-based data ops, and other Azure Blob Storage related development tasks. Not for Azure Files (use azure-files), Azure Table Storage (use azure-table-storage), Azure Queue Storage (use azure-queue-storage), Azure NetApp Files (use azure-netapp-files).
+description: Expert knowledge for Azure Blob Storage development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when tuning access tiers, lifecycle/immutability, SAS/RBAC auth, BlobFuse/NFS mounts, or static website hosting, and other Azure Blob Storage related development tasks. Not for Azure Files (use azure-files), Azure Table Storage (use azure-table-storage), Azure NetApp Files (use azure-netapp-files).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-24"
+  generated_at: "2026-05-31"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Blob Storage Skill
 
-This skill provides expert guidance for Azure Blob Storage. Covers troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Blob Storage. Covers troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -24,14 +24,15 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L36-L46 | Diagnosing and fixing Azure Blob Storage issues: Storage Mover job/network errors, support bundles, BlobFuse/BlobFuse2 mount & I/O problems, and known NFS 3.0 limitations. |
-| Best Practices | L47-L80 | Performance, cost, reliability, and monitoring best practices for Blob/Data Lake: upload/download tuning per SDK, access tiers, lifecycle, naming/partitions, retries, concurrency, NFS/SFTP, events, and backups. |
-| Decision Making | L81-L106 | Cost planning and design choices for Blob Storage: pricing, migration and transfer costs, archive retrieval, multi-region access, connectivity, data protection, and when to use specific tiers/tools. |
-| Limits & Quotas | L107-L127 | Limits, quotas, and known issues for Blob Storage: scalability targets, performance, archive/rehydration rules, smart tiering, NFS/SFTP/BlobFuse/Data Lake limits, and static website constraints. |
-| Security | L128-L186 | Configuring secure access to Blob and Data Lake Storage using RBAC/ABAC, SAS, Entra ID, SFTP, ACLs, and encryption (CSE, CPK, scopes), plus hardening guidance and anonymous access controls. |
-| Configuration | L187-L251 | Configuring Azure Blob Storage and related tools: monitoring, lifecycle, immutability, soft delete, versioning, static websites, BlobFuse, Storage Mover, and third‑party backup/migration integrations. |
-| Integrations & Coding Patterns | L252-L385 | SDK, CLI, and tooling patterns for integrating with Blob/Data Lake: connect from various languages, mount/file-system access, copy/migrate data, manage containers/blobs, leases, tiers, tags, and events. |
-| Deployment | L386-L399 | Guides for deploying static websites on Blob Storage, enabling Data Lake features, and migrating or integrating data from HDFS, Hadoop, NAS, and hybrid solutions into Azure Storage. |
+| Troubleshooting | L37-L47 | Diagnosing and fixing Azure Blob Storage issues: Storage Mover job/network errors, support bundles, BlobFuse/BlobFuse2 mount & I/O problems, and known NFS 3.0 limitations. |
+| Best Practices | L48-L81 | Performance, cost, reliability, and monitoring best practices for Blob/Data Lake: upload/download tuning per SDK, access tiers, lifecycle, naming/partitions, retries, concurrency, NFS/SFTP, events, and backups. |
+| Decision Making | L82-L107 | Cost planning and design choices for Blob Storage: pricing, migration and transfer costs, archive retrieval, multi-region access, connectivity, data protection, and when to use specific tiers/tools. |
+| Architecture & Design Patterns | L108-L112 | Guidance on when and why to enable Data Lake Storage Gen2 hierarchical namespace in Blob Storage, including tradeoffs, performance, and compatibility impacts. |
+| Limits & Quotas | L113-L133 | Limits, quotas, and known issues for Blob Storage: scalability targets, performance, archive/rehydration rules, smart tiering, NFS/SFTP/BlobFuse/Data Lake limits, and static website constraints. |
+| Security | L134-L192 | Configuring secure access to Blob and Data Lake Storage using RBAC/ABAC, SAS, Entra ID, SFTP, ACLs, and encryption (CSE, CPK, scopes), plus hardening guidance and anonymous access controls. |
+| Configuration | L193-L257 | Configuring Azure Blob Storage and related tools: monitoring, lifecycle, immutability, soft delete, versioning, static websites, BlobFuse, Storage Mover, and third‑party backup/migration integrations. |
+| Integrations & Coding Patterns | L258-L391 | SDK, CLI, and tooling patterns for integrating with Blob/Data Lake: connect from various languages, mount/file-system access, copy/migrate data, manage containers/blobs, leases, tiers, tags, and events. |
+| Deployment | L392-L405 | Guides for deploying static websites on Blob Storage, enabling Data Lake features, and migrating or integrating data from HDFS, Hadoop, NAS, and hybrid solutions into Azure Storage. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -103,6 +104,11 @@ This skill requires **network access** to fetch documentation content:
 | Plan upgrade from Blob Storage to Data Lake Storage | https://learn.microsoft.com/en-us/azure/storage/blobs/upgrade-to-data-lake-storage-gen2 |
 | Choose Azure unstructured data migration tools | https://learn.microsoft.com/en-us/azure/storage/solution-integration/validated-partners/data-management/migration-tools-comparison |
 | Choose ISV file services options in Azure | https://learn.microsoft.com/en-us/azure/storage/solution-integration/validated-partners/primary-secondary-storage/isv-file-services |
+
+### Architecture & Design Patterns
+| Topic | URL |
+|-------|-----|
+| Decide when to enable Data Lake hierarchical namespace | https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-namespace |
 
 ### Limits & Quotas
 | Topic | URL |

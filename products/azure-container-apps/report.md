@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-24'
+generated_at: '2026-05-31'
 category_descriptions:
   configuration: 'Configuring Container Apps runtime: networking, ingress, revisions,
     scaling (KEDA/Dapr/Functions), workload profiles, storage, logging/monitoring,
@@ -53,10 +53,10 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 - **Unclassified**: 83
 
 ### Incremental Update
-- **New Pages**: 5
-- **Updated Pages**: 9
-- **Unchanged**: 206
-- **Deleted Pages**: 2
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 219
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-container-apps/azure-container-apps.csv`
 
 ## Classification Statistics
@@ -76,39 +76,10 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 
 ## Changes
 
-### New Pages
-
-- [Override auto-generated KEDA scale rules](https://learn.microsoft.com/en-us/azure/container-apps/functions-scale-rule-override)
-- [Overview](https://learn.microsoft.com/en-us/azure/container-apps/express-overview)
-- [Deploy with the CLI](https://learn.microsoft.com/en-us/azure/container-apps/deploy-express-cli)
-- [Local testing](https://learn.microsoft.com/en-us/azure/container-apps/express-local-testing)
-- [Confidential compute](https://learn.microsoft.com/en-us/azure/container-apps/confidential-compute)
-
 ### Updated Pages
 
-- [Functions](https://learn.microsoft.com/en-us/azure/container-apps/functions-overview)
-  - Updated: 2026-03-31T08:00:00.000Z → 2026-05-20T05:21:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/container-apps/scale-app)
-  - Updated: 2025-06-26T08:00:00.000Z → 2026-05-20T05:21:00.000Z
-- [Azure portal](https://learn.microsoft.com/en-us/azure/container-apps/functions-usage)
-  - Updated: 2026-01-13T23:18:00.000Z → 2026-05-19T08:00:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/container-apps/networking)
-  - Updated: 2025-07-01T22:25:00.000Z → 2026-05-19T22:14:00.000Z
 - [Express frequently asked questions](https://learn.microsoft.com/en-us/azure/container-apps/express-faq)
-  - Updated: 2026-05-13T17:28:00.000Z → 2026-05-21T05:13:00.000Z
-- [Virtual network configuration](https://learn.microsoft.com/en-us/azure/container-apps/custom-virtual-networks)
-  - Updated: 2025-07-01T22:25:00.000Z → 2026-05-19T22:14:00.000Z
-- [Managing outbound connections with Azure Firewall](https://learn.microsoft.com/en-us/azure/container-apps/use-azure-firewall)
-  - Updated: 2026-05-06T22:13:00.000Z → 2026-05-19T22:14:00.000Z
-- [Private endpoints and DNS](https://learn.microsoft.com/en-us/azure/container-apps/private-endpoints-with-dns)
-  - Updated: 2026-03-06T17:59:00.000Z → 2026-05-19T22:14:00.000Z
-- [Securing a custom VNET with an NSG](https://learn.microsoft.com/en-us/azure/container-apps/firewall-integration)
-  - Updated: 2026-04-01T08:00:00.000Z → 2026-05-19T22:14:00.000Z
-
-### Deleted Pages
-
-- ~~Deploy an express container app~~ (https://learn.microsoft.com/en-us/azure/container-apps/deploy-express-cli)
-- ~~Express overview~~ (https://learn.microsoft.com/en-us/azure/container-apps/express-overview)
+  - Updated: 2026-05-21T05:13:00.000Z → 2026-05-27T05:15:00.000Z
 
 ## Classified Pages
 
@@ -338,4 +309,4 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [Use serverless containers](https://learn.microsoft.com/en-us/azure/container-apps/start-serverless-containers) | 0.10 | Conceptual overview of serverless containers and scaling; lacks specific configuration parameters or numeric thresholds. |
 | [What's new](https://learn.microsoft.com/en-us/azure/container-apps/whats-new) | 0.10 | What's new page is a changelog/announcements; not a stable expert-knowledge reference for configuration, limits, or troubleshooting. |
 | [Azure Container Apps extension release notes](https://learn.microsoft.com/en-us/azure/container-apps/container-apps-extension-release-notes) | - | Extension release notes behind authorization; even if detailed, they are versioned change logs, not core skill reference content. |
-| [Express frequently asked questions](https://learn.microsoft.com/en-us/azure/container-apps/express-faq) | - | FAQ/preview overview for Azure Container Apps express; based on description it likely contains general Q&A and preview caveats, not detailed limits, configuration tables, error-code troubleshooting, or decision matrices with quantified trade-offs. |
+| [Express frequently asked questions](https://learn.microsoft.com/en-us/azure/container-apps/express-faq) | - | FAQ/preview overview for Azure Container Apps express; based on description it does not clearly indicate presence of numeric limits, configuration tables, error-code mappings, or other detailed expert-only data required by any sub-skill type. |

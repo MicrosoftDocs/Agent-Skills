@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-05-17'
+generated_at: '2026-05-31'
 category_descriptions:
-  security: 'Securing Azure Repos and TFVC: auth methods (Entra, PAT, SSH, GCM), branch/repo/TFVC
-    permissions and policies, secure cloning/import, SSH key management, and GitHub
-    Advanced Security setup.'
-  configuration: 'Configuring Azure Repos and TFVC: branch and PR policies, notifications,
-    templates, repo settings, GitHub Advanced Security (CodeQL, dependency/secret
-    scanning), and TFVC check-in/workspace options.'
+  security: 'Securing Azure Repos and TFVC: auth methods (Entra, PAT, SSH), branch/repo
+    permissions and policies, secure cloning/import, GitHub Advanced Security, and
+    safe file/ACL management.'
+  configuration: Configuring Azure Repos and Visual Studio Git/TFVC settings, including
+    branch policies, PR templates/notifications, check-in policies, and GitHub Advanced
+    Security scanning options.
   best-practices: 'Git and TFVC best practices: branching, pull requests, merges,
     large binaries, .gitignore, cross‑platform compatibility, repo health, and workspace
     cleanup/optimization.'
@@ -27,12 +27,12 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Repos development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, and integrations & coding patterns. Use when managing Azure
-  Repos/TFVC auth & permissions, branch/PR policies, CodeQL/scanning, or Git vs TFVC
-  migration, and other Azure Repos related development tasks. Not for Azure DevOps
-  (use azure-devops), Azure Pipelines (use azure-pipelines), Azure Boards (use azure-boards),
-  Azure Artifacts (use azure-artifacts).
-use_when: Use when managing Azure Repos/TFVC auth & permissions, branch/PR policies,
-  CodeQL/scanning, or Git vs TFVC migration, and other Azure Repos related development
+  Repos Git/TFVC, branch policies/PRs, GitHub Advanced Security, CodeQL, or TFVC migrations,
+  and other Azure Repos related development tasks. Not for Azure DevOps (use azure-devops),
+  Azure Pipelines (use azure-pipelines), Azure Boards (use azure-boards), Azure Artifacts
+  (use azure-artifacts).
+use_when: Use when managing Azure Repos Git/TFVC, branch policies/PRs, GitHub Advanced
+  Security, CodeQL, or TFVC migrations, and other Azure Repos related development
   tasks.
 confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (use
   azure-pipelines), Azure Boards (use azure-boards), Azure Artifacts (use azure-artifacts).
@@ -49,8 +49,8 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 206
+- **Updated Pages**: 3
+- **Unchanged**: 203
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-repos/azure-repos.csv`
 
@@ -69,6 +69,15 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 | *(Unclassified)* | 74 | 35.9% |
 
 ## Changes
+
+### Updated Pages
+
+- [Configure GitHub Advanced Security](https://learn.microsoft.com/en-us/azure/devops/repos/security/configure-github-advanced-security-features?view=azure-devops)
+  - Updated: 2026-05-01T17:06:00.000Z → 2026-05-26T21:06:00.000Z
+- [Security Overview for GitHub Advanced Security](https://learn.microsoft.com/en-us/azure/devops/repos/security/github-advanced-security-security-overview?view=azure-devops)
+  - Updated: 2025-04-02T23:09:00.000Z → 2026-05-26T21:06:00.000Z
+- [Configure code scanning](https://learn.microsoft.com/en-us/azure/devops/repos/security/github-advanced-security-code-scanning?view=azure-devops)
+  - Updated: 2026-05-01T17:06:00.000Z → 2026-05-26T21:06:00.000Z
 
 ## Classified Pages
 
@@ -94,14 +103,13 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 | [Configure branch policy for an external service](https://learn.microsoft.com/en-us/azure/devops/repos/git/pr-status-policy?view=azure-devops) | configuration | 0.75 | Guides configuring branch policy to require status from external PR status servers; includes policy options and PR Status API usage. |
 | [Control access to TFVC](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/control-access-team-foundation-version-control?view=azure-devops) | security | 0.75 | Details TFVC permission model (Allow/Deny, inheritance, groups); includes product-specific permission semantics that qualify as security configuration. |
 | [Local and server workspaces](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/decide-between-using-local-server-workspace?view=azure-devops) | decision-making | 0.75 | Directly guides users in selecting local vs server workspace types, explaining trade-offs and scenarios, which is product-specific decision-making guidance. |
+| [Configure GitHub Advanced Security](https://learn.microsoft.com/en-us/azure/devops/repos/security/configure-github-advanced-security-features?view=azure-devops) | security | 0.72 | Configuration-focused page for enabling GitHub Advanced Security features in Azure DevOps, likely listing specific feature toggles, scope options, and security-related settings (e.g., which repos/projects, secret scanning modes). This is product-specific security configuration rather than a conceptual overview. |
 | [Add check-in policies](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/add-check-policies?view=azure-devops) | configuration | 0.70 | Describes how to add check-in policies and what they enforce (e.g., associating work items), which are TFVC-specific configuration options. |
 | [Authenticate with SSH](https://learn.microsoft.com/en-us/azure/devops/repos/git/use-ssh-keys-to-authenticate?view=azure-devops) | security | 0.70 | Page contains product-specific SSH configuration details, including the exact SSH URL formats for Azure DevOps (ssh.dev.azure.com vs vs-ssh.visualstudio.com), how to update remotes, and platform-specific setup steps. These are concrete, service-unique security/authentication settings rather than generic Git/SSH concepts. |
 | [Compare Git and TFVC](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/comparison-git-tfvc?view=azure-devops) | decision-making | 0.70 | Explicitly positioned as guidance to choose version control type; likely includes comparison of Git vs TFVC with criteria and trade-offs specific to Azure Repos. |
 | [Configure](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/configure-command?view=azure-devops) | configuration | 0.70 | Admin command to view/change project source control settings; likely lists specific configuration options and allowed values. |
-| [Configure GitHub Advanced Security](https://learn.microsoft.com/en-us/azure/devops/repos/security/configure-github-advanced-security-features?view=azure-devops) | security | 0.70 | Configuration-focused page for enabling GitHub Advanced Security features in Azure DevOps Repos, including product-specific security feature toggles and settings. Contains concrete, product-specific security configuration steps and options rather than just conceptual guidance. |
 | [Configure check-in notes](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/configure-check-notes?view=azure-devops) | configuration | 0.70 | Describes adding and configuring check-in notes via Visual Studio settings, including required fields, which is TFVC-specific configuration. |
 | [Configure check-out settings](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/configure-check-out-settings?view=azure-devops) | configuration | 0.70 | Admin-focused configuration of check-out settings; likely includes specific options and allowed values for concurrent editing, fitting configuration sub-skill. |
-| [Configure code scanning](https://learn.microsoft.com/en-us/azure/devops/repos/security/github-advanced-security-code-scanning?view=azure-devops) | configuration | 0.70 | Describes how to set up code scanning using GitHub Advanced Security for Azure DevOps, including product-specific configuration of CodeQL/code scanning behavior. Focuses on concrete setup parameters and options rather than generic concepts, fitting configuration best. |
 | [Configure dependency scanning](https://learn.microsoft.com/en-us/azure/devops/repos/security/github-advanced-security-dependency-scanning?view=azure-devops) | configuration | 0.70 | Product-specific setup instructions and required pipeline configuration for dependency scanning. |
 | [Configure secret scanning](https://learn.microsoft.com/en-us/azure/devops/repos/security/github-advanced-security-secret-scanning?view=azure-devops) | configuration | 0.70 | Step-by-step setup with product-specific options and configuration values for enabling secret scanning and push protection. |
 | [Create and work with workspaces](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/create-work-workspaces?view=azure-devops) | configuration | 0.70 | Explains workspace behavior and options (e.g., multiple workspaces, mappings) in TFVC, which are product-specific configuration details. |
@@ -156,6 +164,7 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 | [Workspace](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/workspace-command?view=azure-devops) | integrations | 0.70 | Product-specific command syntax and behaviors for creating and modifying TFVC workspaces. |
 | [Workspaces](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/workspaces-command?view=azure-devops) | integrations | 0.70 | Documents tf workspaces command and its handling of cached username/computer changes, which is TFVC-specific. |
 | [tf git permission](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/git-permission-command?view=azure-devops) | integrations | 0.70 | Documents the tf git permission command, including parameters and ACL behavior—product-specific command/API integration details. |
+| [Configure code scanning](https://learn.microsoft.com/en-us/azure/devops/repos/security/github-advanced-security-code-scanning?view=azure-devops) | configuration | 0.68 | Set-up guide for code scanning using CodeQL in Azure DevOps; such pages typically include product-specific configuration options (e.g., pipeline/task parameters, analysis modes, schedules) and required settings for enabling scanning, which qualify as configuration details beyond generic knowledge. |
 | [About branching strategies](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/branching-strategies-with-tfvc?view=azure-devops) | architecture-patterns | 0.65 | Provides TFVC-specific branching strategies and when to use them for different team sizes and structures, which is design-pattern guidance tailored to this product. |
 | [About pull requests](https://learn.microsoft.com/en-us/azure/devops/repos/git/about-pull-requests?view=azure-devops) | security | 0.65 | Discusses pull request permissions and guidelines; includes Azure DevOps-specific permission behaviors and policy interactions. |
 | [Add](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/add-command?view=azure-devops) | integrations | 0.65 | Documents tf add behavior and parameters; product-specific CLI usage that underpins automated integrations and scripts. |
@@ -226,7 +235,6 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 | [Rename a repo](https://learn.microsoft.com/en-us/azure/devops/repos/git/repo-rename?view=azure-devops) | 0.40 | Step-by-step instructions for renaming a Git repo and updating local clones. This is task guidance rather than detailed configuration tables, limits, or security role definitions. |
 | [Request a code review](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/get-code-reviewed-vs?view=azure-devops) | 0.40 | Explains how to request and respond to TFVC code reviews in Visual Studio; operational how-to without deep configuration matrices or error-resolution mappings. |
 | [Roll back changesets](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/roll-back-changesets?view=azure-devops) | 0.40 | Rollback of changesets; describes capability and basic usage, but not detailed limits, config matrices, or error-code mappings. |
-| [Security Overview for GitHub Advanced Security](https://learn.microsoft.com/en-us/azure/devops/repos/security/github-advanced-security-security-overview?view=azure-devops) | 0.40 | High-level security overview dashboard description; lacks detailed configuration parameters or error/limit specifics. |
 | [Set up TFVC](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/set-up-team-foundation-version-control-your-dev-machine?view=azure-devops) | 0.40 | Basic setup guide for TFVC on a dev machine (create workspace, add code); lacks detailed configuration parameter tables or limits. |
 | [Use Source Control Explorer to manage files](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/use-source-control-explorer-manage-files-under-version-control?view=azure-devops) | 0.40 | Source Control Explorer usage and FAQ; primarily UI navigation and basic operations, not deep config tables or troubleshooting mappings. |
 | [View branch hierarchies](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/view-branch-hierarchy-team-project?view=azure-devops) | 0.40 | Shows how to view branch hierarchy and properties; primarily UI operations, not configuration matrices, limits, or troubleshooting. |
@@ -276,6 +284,7 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 | [Develop an app](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/develop-your-app-team-foundation-version-control?view=azure-devops) | 0.20 | Aggregates resources on developing with TFVC; largely conceptual and navigational rather than detailed expert guidance. |
 | [Find a file](https://learn.microsoft.com/en-us/azure/devops/repos/git/find-a-file?view=azure-devops) | 0.20 | Explains how to find a file in a Git repo via the Azure DevOps UI. This is basic usage guidance without product-specific configuration parameters, limits, or troubleshooting details. |
 | [Restore a deleted branch](https://learn.microsoft.com/en-us/azure/devops/repos/git/restore-deleted-branch?view=azure-devops) | 0.20 | How-to restore a deleted branch; lacks expert-only configuration or diagnostic details. |
+| [Security Overview for GitHub Advanced Security](https://learn.microsoft.com/en-us/azure/devops/repos/security/github-advanced-security-security-overview?view=azure-devops) | 0.20 | Described as a security overview and summary of risk and enablement status; sounds like a conceptual/UX overview of the Security overview tab rather than detailed configuration parameters, limits, or error codes. |
 | [Use Azure Repos](https://learn.microsoft.com/en-us/azure/devops/repos/get-started/?view=azure-devops) | 0.20 | Getting-started guide and overview; no detailed configuration tables, limits, or troubleshooting content. |
 | [Use Visual Studio with Git](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/use-visual-studio-git?view=azure-devops) | 0.20 | Resource pointer/overview for using Visual Studio with Git; lacks detailed configuration tables or troubleshooting mappings. |
 | [What is Azure Repos?](https://learn.microsoft.com/en-us/azure/devops/repos/get-started/what-is-repos?view=azure-devops) | 0.20 | High-level overview of Azure Repos and version control concepts without product-specific limits, configs, or detailed patterns. |

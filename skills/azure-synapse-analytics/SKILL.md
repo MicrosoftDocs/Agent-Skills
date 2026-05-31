@@ -3,7 +3,7 @@ name: azure-synapse-analytics
 description: Expert knowledge for Azure Synapse Analytics development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Synapse SQL pools, Spark pools, serverless SQL, Synapse Link, or PolyBase/ELT data loading, and other Azure Synapse Analytics related development tasks. Not for Azure Analysis Services (use azure-analysis-services), Azure Data Factory (use azure-data-factory), Azure Data Explorer (use azure-data-explorer), Azure Databricks (use azure-databricks).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-17"
+  generated_at: "2026-05-31"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Synapse Analytics Skill
@@ -30,9 +30,9 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L149-L168 | Architecture and design guidance for Synapse workspaces, SQL/serverless/Spark pools, data warehouse migrations, table/distribution/partition strategies, ELT/PolyBase loading, and workload management. |
 | Limits & Quotas | L169-L179 | Synapse SQL and Synapse Link limits: memory/concurrency caps, capacity and quotas, Delta Lake v1 query limits, and feature/known issues for Cosmos DB and SQL Link integrations. |
 | Security | L180-L240 | Securing Synapse workspaces end-to-end: auth and RBAC, network and private endpoints, firewall and data exfiltration, encryption/TDE, policies, managed identities, and secure data access/migration. |
-| Configuration | L241-L289 | Configuring Synapse workspaces, Spark pools, and SQL pools: runtimes, scaling, libraries, monitoring/metrics, backups/restore, workload management, and integrations (Purview, AML). |
-| Integrations & Coding Patterns | L290-L339 | Patterns and code to integrate Synapse (Spark, serverless, dedicated SQL) with storage, ML, monitoring, external tools, and other Azure services, plus querying external data formats. |
-| Deployment | L340-L347 | Guides for deploying Synapse workspaces and dedicated SQL pools with CI/CD and ARM templates, plus operational readiness checks and configuring SQL pool maintenance windows. |
+| Configuration | L241-L288 | Configuring Synapse workspaces, Spark pools, and SQL pools: runtimes, scaling, libraries, monitoring/metrics, backups/restore, workload management, and integrations (Purview, AML). |
+| Integrations & Coding Patterns | L289-L338 | Patterns and code to integrate Synapse (Spark, serverless, dedicated SQL) with storage, ML, monitoring, external tools, and other Azure services, plus querying external data formats. |
+| Deployment | L339-L346 | Guides for deploying Synapse workspaces and dedicated SQL pools with CI/CD and ARM templates, plus operational readiness checks and configuring SQL pool maintenance windows. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -249,7 +249,6 @@ This skill requires **network access** to fetch documentation content:
 | Reference monitoring metrics and logs for Synapse Analytics | https://learn.microsoft.com/en-us/azure/synapse-analytics/monitor-synapse-analytics-reference |
 | Monitor Apache Spark applications in Synapse Studio | https://learn.microsoft.com/en-us/azure/synapse-analytics/monitoring/how-to-monitor-spark-applications |
 | Runtime components for Synapse Spark 3.3 | https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-33-runtime |
-| Review component versions in Synapse Spark 3.4 runtime | https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-34-runtime |
 | Runtime components for Synapse Spark 3.5 | https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-35-runtime |
 | Configure autoscale for Apache Spark pools | https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-autoscale |
 | Manage Apache Spark configuration in Synapse Studio | https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-azure-create-spark-configuration |

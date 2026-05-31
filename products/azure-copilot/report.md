@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-24'
+generated_at: '2026-05-31'
 category_descriptions:
   decision-making: 'Using Copilot to compare options and make cost‑efficient Azure
     decisions: VM sizing, workload templates, Marketplace offers, storage estate insights,
@@ -44,9 +44,9 @@ confusable_not_for: Not for Azure AI services (use microsoft-foundry-tools), Azu
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 35
-- **Deleted Pages**: 1
+- **Updated Pages**: 1
+- **Unchanged**: 37
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-copilot/azure-copilot.csv`
 
 ## Classification Statistics
@@ -65,16 +65,8 @@ confusable_not_for: Not for Azure AI services (use microsoft-foundry-tools), Azu
 
 ### Updated Pages
 
-- [Execute commands](https://learn.microsoft.com/en-us/azure/copilot/execute-commands)
-  - Updated: 2025-11-18T16:11:00.000Z → 2026-05-18T22:10:00.000Z
-- [Generate Azure CLI scripts](https://learn.microsoft.com/en-us/azure/copilot/generate-cli-scripts)
-  - Updated: 2025-11-22T06:03:00.000Z → 2026-05-18T22:10:00.000Z
-- [Generate PowerShell scripts](https://learn.microsoft.com/en-us/azure/copilot/generate-powershell-scripts)
-  - Updated: 2025-11-24T08:00:00.000Z → 2026-05-18T22:10:00.000Z
-
-### Deleted Pages
-
-- ~~Use Azure Copilot with AI Shell~~ (https://learn.microsoft.com/en-us/azure/copilot/ai-shell-overview)
+- [Overview](https://learn.microsoft.com/en-us/azure/copilot/overview)
+  - Updated: 2025-11-18T16:11:00.000Z → 2026-05-27T22:15:00.000Z
 
 ## Classified Pages
 
@@ -122,4 +114,4 @@ confusable_not_for: Not for Azure AI services (use microsoft-foundry-tools), Azu
 | [Write effective prompts](https://learn.microsoft.com/en-us/azure/copilot/write-effective-prompts) | 0.15 | Prompt engineering guidance is conceptual and broadly known; not specific to Azure Copilot configuration or limits. |
 | [Discover storage insights](https://learn.microsoft.com/en-us/azure/copilot/discover-storage-estate-insights) | 0.10 | Page appears to be a conceptual/marketing-style overview of Azure Storage Discovery with Copilot, describing visibility, cost optimization, and security posture at a high level. The summary does not indicate presence of numeric limits, configuration parameter tables, error codes, or detailed decision matrices. It focuses on what the service does, not specific expert configuration, limits, or troubleshooting details. |
 | [Example prompts](https://learn.microsoft.com/en-us/azure/copilot/example-prompts) | 0.10 | Example prompts are usage samples, not product-specific configuration, limits, or troubleshooting knowledge. |
-| [Overview](https://learn.microsoft.com/en-us/azure/copilot/overview) | 0.10 | High-level marketing/overview of Azure Copilot capabilities without concrete limits, configs, or error details. |
+| [Overview](https://learn.microsoft.com/en-us/azure/copilot/overview) | 0.10 | High-level marketing/overview of Azure Copilot without numeric limits, configuration tables, error codes, or product-specific decision matrices; no expert-only details beyond general conceptual description. |

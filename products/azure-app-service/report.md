@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-24'
+generated_at: '2026-05-31'
 category_descriptions:
   decision-making: Guidance on choosing App Service tiers, plans, auth and networking,
     plus planning cost, TLS, domains, and migrations (Windows↔Linux, .NET, VNet, Docker
@@ -54,9 +54,9 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Spring 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 7
-- **Unchanged**: 237
-- **Deleted Pages**: 4
+- **Updated Pages**: 1
+- **Unchanged**: 243
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-app-service/azure-app-service.csv`
 
 ## Classification Statistics
@@ -78,27 +78,8 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Spring 
 
 ### Updated Pages
 
-- [Industry-wide certificate changes](https://learn.microsoft.com/en-us/azure/app-service/industry-wide-certificate-changes)
-  - Updated: 2026-02-17T23:12:00.000Z → 2026-05-19T05:18:00.000Z
-- [Managed identity overview](https://learn.microsoft.com/en-us/azure/app-service/overview-managed-identity)
-  - Updated: 2025-03-27T08:00:00.000Z → 2026-04-14T08:00:00.000Z
-- [Enable built-in authentication quickstart](https://learn.microsoft.com/en-us/azure/app-service/scenario-secure-app-authentication-app-service)
-  - Updated: 2026-03-17T08:00:00.000Z → 2026-04-17T08:00:00.000Z
-- [Configure common settings](https://learn.microsoft.com/en-us/azure/app-service/configure-common)
-  - Updated: 2025-03-27T08:00:00.000Z → 2026-04-13T08:00:00.000Z
-- [Minimum TLS version](https://learn.microsoft.com/en-us/azure/app-service/tls-minimum-version)
-  - Updated: 2026-04-02T06:24:00.000Z → 2026-05-20T22:22:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/app-service/overview-sidecar)
-  - Updated: 2025-07-16T22:08:00.000Z → 2026-05-21T19:52:00.000Z
-- [Configure sidecars](https://learn.microsoft.com/en-us/azure/app-service/configure-sidecar)
-  - Updated: 2025-08-11T17:11:00.000Z → 2026-05-21T19:52:00.000Z
-
-### Deleted Pages
-
-- ~~Enable App Service on Azure Arc~~ (https://learn.microsoft.com/en-us/azure/app-service/manage-create-arc-environment)
-- ~~Migrate from App Service on Arc-enabled Kubernetes to Container Apps on Arc-enabled Kubernetes~~ (https://learn.microsoft.com/en-us/azure/app-service/migrate-app-service-arc)
-- ~~Azure Arc hosting overview~~ (https://learn.microsoft.com/en-us/azure/app-service/overview-arc-integration)
-- ~~Create app on Azure Arc~~ (https://learn.microsoft.com/en-us/azure/app-service/quickstart-arc)
+- [Routine maintenance](https://learn.microsoft.com/en-us/azure/app-service/routine-maintenance)
+  - Updated: 2025-12-09T23:13:00.000Z → 2026-05-26T17:19:00.000Z
 
 ## Classified Pages
 
@@ -298,7 +279,6 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Spring 
 | [RAG with Azure OpenAI and your data](https://learn.microsoft.com/en-us/azure/app-service/tutorial-ai-openai-search-python) | 0.30 | Python RAG tutorial; scenario-focused, not a detailed configuration or troubleshooting guide. |
 | [RAG with Azure OpenAI with your data](https://learn.microsoft.com/en-us/azure/app-service/tutorial-ai-openai-search-java) | 0.30 | RAG app tutorial with OpenAI and AI Search; scenario walkthrough, not a configuration or limits reference. |
 | [Restore deleted app](https://learn.microsoft.com/en-us/azure/app-service/app-service-undelete) | 0.30 | Describes the ability and conditions to restore deleted apps, but from the summary it appears to be a procedural how-to without detailed limits, configuration parameters, or error mappings. |
-| [Routine maintenance](https://learn.microsoft.com/en-us/azure/app-service/routine-maintenance) | 0.30 | Describes routine maintenance conceptually; does not emphasize specific limits, configs, or troubleshooting mappings. |
 | [Scale out automatically](https://learn.microsoft.com/en-us/azure/app-service/manage-automatic-scaling) | 0.30 | Primarily explains what automatic scaling is and how to enable it; summary does not indicate detailed limits, configuration tables, or decision matrices—more of a feature/how-to overview. |
 | [Spring Boot with MongoDB](https://learn.microsoft.com/en-us/azure/app-service/tutorial-java-spring-cosmosdb) | 0.30 | Tutorial for Spring Boot app with Cosmos DB (Mongo API); primarily procedural, not a configuration or limits reference. |
 | [Upgrade preference for planned maintenance](https://learn.microsoft.com/en-us/azure/app-service/environment/how-to-upgrade-preference) | 0.30 | Page appears to be a how-to for setting upgrade preference for App Service Environment planned maintenance (portal/CLI). From the summary, it focuses on configuration steps and conceptual explanation of planned maintenance, without clear evidence of detailed configuration parameter tables, limits/quotas, error codes, or decision matrices. Lacking strong indicators of product-specific expert knowledge as defined by the sub-skill types. |
@@ -337,6 +317,7 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Spring 
 | [Quickstart](https://learn.microsoft.com/en-us/azure/app-service/quickstart-java) | 0.20 | Java quickstart using Maven plugin; basic deployment tutorial without detailed configuration matrices. |
 | [Quickstart](https://learn.microsoft.com/en-us/azure/app-service/quickstart-nodejs) | 0.20 | Node.js quickstart; basic deployment steps, no expert-level limits, config matrices, or troubleshooting. |
 | [RAG Azure OpenAI and Azure SQL](https://learn.microsoft.com/en-us/azure/app-service/deploy-intelligent-apps-dotnet-to-azure-sql) | 0.20 | Tutorial-style deployment and integration walkthrough for a Blazor RAG app using Azure SQL and Azure OpenAI. It primarily shows how to build and deploy the sample, not detailed configuration matrices, limits, or product-specific troubleshooting/error-code mappings. Lacks tables of config parameters, tier-specific deployment constraints, or quantified best-practice guidance, so it does not meet the expert-knowledge criteria for any sub-skill type. |
+| [Routine maintenance](https://learn.microsoft.com/en-us/azure/app-service/routine-maintenance) | 0.20 | Page appears to describe high-level routine maintenance behavior and assurances for Azure App Service without detailed numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. It is primarily conceptual/behavioral guidance about planned maintenance and service guarantees, not expert-level configuration, limits, or troubleshooting content. |
 | [Secure AI applications](https://learn.microsoft.com/en-us/azure/app-service/scenario-ai-authentication) | 0.20 | Security scenario overview for AI apps; summary lacks specific RBAC role names, auth parameters, or config tables. |
 | [Terraform](https://learn.microsoft.com/en-us/azure/app-service/samples-terraform) | 0.20 | Page is primarily a link index to Terraform sample scripts without inlined configuration tables, limits, or product-specific parameter documentation; it’s a navigation/resource listing rather than embedded expert guidance. |
 | [Tomcat with MySQL](https://learn.microsoft.com/en-us/azure/app-service/tutorial-java-tomcat-mysql-app) | 0.20 | Tomcat + MySQL deployment tutorial; mostly walkthrough, no detailed limits, config matrices, or troubleshooting content. |

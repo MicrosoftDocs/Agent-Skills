@@ -45,8 +45,8 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Virtual Net
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 63
+- **Updated Pages**: 0
+- **Unchanged**: 64
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-network-watcher/azure-network-watcher.csv`
 
@@ -63,11 +63,6 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Virtual Net
 | *(Unclassified)* | 36 | 56.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [Rules impact analyzer](https://learn.microsoft.com/en-us/azure/network-watcher/traffic-analytics-rule-impact-analyzer)
-  - Updated: 2026-04-07T22:12:00.000Z → 2026-05-20T11:44:00.000Z
 
 ## Classified Pages
 

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-24'
+generated_at: '2026-05-31'
 category_descriptions:
   security: Security alerts, recommendations, roles, auth, and certificates for Defender
     for IoT/IoT Hub/OT sensors, including RBAC, SSO, PAM auditing, and Zero Trust
@@ -50,8 +50,8 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 - **Total Pages**: 180
 - **Fetched**: 180
 - **Fetch Failed**: 0
-- **Classified**: 118
-- **Unclassified**: 62
+- **Classified**: 117
+- **Unclassified**: 63
 
 ### Incremental Update
 - **New Pages**: 0
@@ -71,16 +71,16 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | deployment | 20 | 11.1% |
 | integrations | 31 | 17.2% |
 | limits-quotas | 7 | 3.9% |
-| security | 20 | 11.1% |
+| security | 19 | 10.6% |
 | troubleshooting | 5 | 2.8% |
-| *(Unclassified)* | 62 | 34.4% |
+| *(Unclassified)* | 63 | 35.0% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Alert reference](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/alert-engine-messages)
-  - Updated: 2026-04-28T17:57:00.000Z → 2026-05-20T07:34:00.000Z
+- [Compliance resources](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/compliance)
+  - Updated: 2026-04-28T17:57:00.000Z → 2026-05-28T22:38:00.000Z
 
 ## Classified Pages
 
@@ -200,7 +200,6 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | [Enhance security posture](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/recommendations) | security | 0.62 | Security recommendations feature; likely includes product-specific recommendation categories, severities, and remediation patterns tied to Defender for IoT. |
 | [Monitor with Zero Trust principles](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/monitor-zero-trust) | security | 0.62 | Maps Zero Trust principles to Defender for IoT constructs like sites and zones; likely includes product-specific security configuration guidance. |
 | [Accelerate on-premises alert workflows](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-accelerate-alert-incident-response) | best-practices | 0.60 | Focuses on improving alert workflows; likely includes product-specific recommendations, configuration options, and edge-case handling for alert management. |
-| [Compliance resources](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/compliance) | security | 0.60 | Compliance resource page tied to Azure infrastructure; likely lists specific standards and certifications (e.g., ISO, SOC, FedRAMP) that are product-specific security/compliance details. |
 | [Create custom alerts](https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/quickstart-create-custom-alerts) | security | 0.60 | Covers defining and assigning custom device alerts, which are product-specific security alert configurations and behaviors. |
 | [Defender for IoT and your network architecture](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/best-practices/understand-network-architecture) | architecture-patterns | 0.60 | Relates Defender for IoT deployment to the Purdue reference model; provides product-specific architectural placement guidance for sensors and components. |
 | [Licenses and the trial license](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/license-and-trial-license-extention) | decision-making | 0.60 | Explains license and trial options and how to extend trials; this is product-specific licensing decision guidance with concrete steps, fitting decision-making for evaluation and POC continuation. |
@@ -271,3 +270,4 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | [What is Defender for IoT for device builders?](https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/overview) | 0.20 | High-level product overview for Defender for IoT device builders without detailed configs, limits, or error mappings. |
 | [What's new in Defender for IoT](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/whats-new) | 0.20 | Release notes / what's-new page summarizing recent features; does not indicate detailed limits, configuration tables, error codes, or other structured expert knowledge as defined by the sub-skill types. |
 | [What's new?](https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/release-notes) | 0.20 | Release notes listing new and updated features; does not primarily provide structured limits, configuration matrices, troubleshooting mappings, or other stable expert reference data as defined by the sub-skill types. |
+| [Compliance resources](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/compliance) | 0.10 | Page focuses on high-level compliance and certification information for Defender for IoT based on Azure’s existing compliance posture. It does not include product-specific configuration parameters, limits, error codes, or detailed technical guidance that would qualify as expert knowledge under the defined sub-skill types. |

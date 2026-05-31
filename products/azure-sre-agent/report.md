@@ -1,30 +1,31 @@
 ---
-generated_at: '2026-05-24'
+generated_at: '2026-05-31'
 category_descriptions:
   integrations: Connecting SRE Agent to DevOps, GitHub, PagerDuty, observability tools,
     and defining Python/Kusto tools and REST usage patterns for automated SRE workflows.
   configuration: 'Configuring SRE Agent behavior: hooks and governance, custom tools/skills,
     specialized subagents, network/firewall settings, and enabling/using the Python/shell
     Code Interpreter via UI or REST API'
-  security: 'Identity, auth, and RBAC for SRE Agent: managed identities, ADO and ServiceNow
-    auth, roles, permissions, and subscription/resource access configuration.'
+  security: Managing SRE Agent identities, RBAC roles, permissions, secure auth (ADO,
+    ServiceNow), subscription visibility, and network security (VNet integration)
   troubleshooting: Diagnosing and fixing SRE Agent deployment/operation issues, querying
     its telemetry and actions with KQL, and troubleshooting Java performance on AKS
     using the agent
-  decision-making: Guidance on when to run deep investigations, choose Log Analytics
-    vs App Insights connectors, estimate and manage SRE Agent costs, and select supported
-    Azure regions.
+  decision-making: Guidance on when to run deep investigations, choosing Log Analytics
+    vs App Insights connectors, estimating/controlling SRE Agent costs, and selecting
+    supported Azure regions.
   deployment: How to deploy Azure SRE Agent using Infrastructure-as-Code templates,
     including required resources, parameters, and environment configuration steps.
 skill_description: Expert knowledge for Azure Sre Agent development including troubleshooting,
   decision making, security, configuration, integrations & coding patterns, and deployment.
-  Use when wiring SRE Agent to DevOps/GitHub/PagerDuty, configuring tools/subagents,
-  KQL telemetry, IaC deploy, or RBAC, and other Azure Sre Agent related development
-  tasks. Not for Azure Monitor (use azure-monitor), Azure Reliability (use azure-reliability),
-  Azure Resiliency (use azure-resiliency), Azure Service Health (use azure-service-health).
-use_when: Use when wiring SRE Agent to DevOps/GitHub/PagerDuty, configuring tools/subagents,
-  KQL telemetry, IaC deploy, or RBAC, and other Azure Sre Agent related development
-  tasks.
+  Use when wiring SRE Agent to DevOps/PagerDuty, configuring tools/subagents, securing
+  identities/RBAC, querying KQL telemetry, or deploying via IaC, and other Azure Sre
+  Agent related development tasks. Not for Azure Monitor (use azure-monitor), Azure
+  Reliability (use azure-reliability), Azure Resiliency (use azure-resiliency), Azure
+  Service Health (use azure-service-health).
+use_when: Use when wiring SRE Agent to DevOps/PagerDuty, configuring tools/subagents,
+  securing identities/RBAC, querying KQL telemetry, or deploying via IaC, and other
+  Azure Sre Agent related development tasks.
 confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability (use
   azure-reliability), Azure Resiliency (use azure-resiliency), Azure Service Health
   (use azure-service-health).
@@ -33,15 +34,15 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 
 ## Summary
 
-- **Total Pages**: 107
-- **Fetched**: 107
+- **Total Pages**: 109
+- **Fetched**: 109
 - **Fetch Failed**: 0
-- **Classified**: 36
-- **Unclassified**: 71
+- **Classified**: 37
+- **Unclassified**: 72
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 0
+- **New Pages**: 2
+- **Updated Pages**: 1
 - **Unchanged**: 106
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sre-agent/azure-sre-agent.csv`
@@ -50,19 +51,25 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| configuration | 8 | 7.5% |
+| configuration | 8 | 7.3% |
 | decision-making | 4 | 3.7% |
 | deployment | 1 | 0.9% |
-| integrations | 13 | 12.1% |
-| security | 7 | 6.5% |
+| integrations | 13 | 11.9% |
+| security | 8 | 7.3% |
 | troubleshooting | 3 | 2.8% |
-| *(Unclassified)* | 71 | 66.4% |
+| *(Unclassified)* | 72 | 66.1% |
 
 ## Changes
 
 ### New Pages
 
-- [Operations Hub overview](https://learn.microsoft.com/en-us/azure/sre-agent/operations-hub-overview)
+- [Network integration](https://learn.microsoft.com/en-us/azure/sre-agent/network-integration)
+- [MCP server](https://learn.microsoft.com/en-us/azure/sre-agent/mcp-server-overview)
+
+### Updated Pages
+
+- [Supported regions](https://learn.microsoft.com/en-us/azure/sre-agent/supported-regions)
+  - Updated: 2026-03-27T15:55:00.000Z → 2026-05-26T22:16:00.000Z
 
 ## Classified Pages
 
@@ -81,7 +88,9 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 | [Kusto tools](https://learn.microsoft.com/en-us/azure/sre-agent/kusto-tools) | integrations | 0.70 | Kusto tools are deterministic query tools with parameterization; page likely documents tool schema, parameter names, and constraints specific to Azure Data Explorer integration, matching integrations. |
 | [Manage permissions](https://learn.microsoft.com/en-us/azure/sre-agent/manage-permissions) | security | 0.70 | Managing permissions and access levels to resource groups and subscriptions is security/IAM; page likely lists specific permission levels, scopes, and possibly RBAC roles. |
 | [Pricing and billing](https://learn.microsoft.com/en-us/azure/sre-agent/pricing-billing) | decision-making | 0.70 | A pricing and billing page for a specific Azure service typically includes concrete AAU/token rates, cost formulas, and worked cost examples that help choose usage patterns and manage spend. These quantified trade-offs and recommendations for cost control map to the decision-making sub-skill. |
+| [Supported regions](https://learn.microsoft.com/en-us/azure/sre-agent/supported-regions) | decision-making | 0.70 | Page lists the exact Azure regions where Azure SRE Agent is available and provides guidance on choosing a region for deployment. Region availability is time-sensitive expert knowledge not reliably known from training data, and the content helps users decide which region to use based on availability and subscription constraints. |
 | [User roles and permissions](https://learn.microsoft.com/en-us/azure/sre-agent/user-roles) | security | 0.70 | Focuses on controlling who can view, interact with, and administer the agent using Azure RBAC and layered access control. This implies specific role names/permissions and access scopes unique to the product, which fits the security sub-skill. |
+| [Network integration](https://learn.microsoft.com/en-us/azure/sre-agent/network-integration) | security | 0.68 | Page focuses on how VNet integration controls outbound access for the SRE Agent, in conjunction with RBAC. This is product-specific security guidance about network isolation and access control for the agent. While the summary doesn't show exact parameter tables, the topic inherently covers concrete security configuration for SRE Agent networking, which is specialized and not generic conceptual content. |
 | [Azure DevOps connector](https://learn.microsoft.com/en-us/azure/sre-agent/ado-connector) | integrations | 0.65 | Azure DevOps connector with OAuth/managed identity; likely documents specific configuration parameters and auth settings for this integration. |
 | [Code interpreter](https://learn.microsoft.com/en-us/azure/sre-agent/code-interpreter) | configuration | 0.65 | Describes executing Python and shell commands in a sandbox; likely includes product-specific capabilities, constraints, and parameters for the interpreter environment. |
 | [Connect ADO repo with managed identity](https://learn.microsoft.com/en-us/azure/sre-agent/connect-ado-repo-managed-identity) | security | 0.65 | Connects Azure DevOps repositories using managed identity; likely includes specific identity/permission configuration steps (service principal or managed identity setup, scopes, and ADO permissions) that are product-specific security configuration details. |
@@ -94,7 +103,6 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 | [Python tools](https://learn.microsoft.com/en-us/azure/sre-agent/python-code-execution) | integrations | 0.65 | Python tools are a product-specific integration mechanism to reach internal APIs and systems. Page likely includes tool definition schema, parameters, and execution behavior unique to SRE Agent, fitting integrations & coding patterns. |
 | [Set up PagerDuty indexing](https://learn.microsoft.com/en-us/azure/sre-agent/set-up-pagerduty-indexing) | integrations | 0.65 | PagerDuty incident indexing requires product-specific connector configuration (API keys, endpoints, filters); this is an integration pattern. |
 | [Subscription permission visibility](https://learn.microsoft.com/en-us/azure/sre-agent/subscription-permission-visibility) | security | 0.65 | Explains how subscription visibility in the assignment picker relates to specific Azure RBAC roles (Owner, User Access Administrator, Reader) and how elevated access affects what appears; this is product-specific IAM behavior and mapping between roles and UI visibility. |
-| [Supported regions](https://learn.microsoft.com/en-us/azure/sre-agent/supported-regions) | decision-making | 0.65 | Region support is time- and product-specific expert knowledge. Page likely lists exact supported regions and provides guidance on choosing a region, which is concrete decision-making content not inferable from general training. |
 | [Use code interpreter](https://learn.microsoft.com/en-us/azure/sre-agent/use-code-interpreter) | configuration | 0.65 | Enabling Code Interpreter for the agent likely involves specific configuration switches, allowed operations, and possibly limits for file handling and analysis, which are product-specific configuration details. |
 | [Agent hooks](https://learn.microsoft.com/en-us/azure/sre-agent/agent-hooks) | configuration | 0.60 | Hooks are custom checkpoints with specific types (for example Stop, PostToolUse) and likely have structured configuration fields and allowed values, which are product-specific configuration details. |
 | [Audit agent actions](https://learn.microsoft.com/en-us/azure/sre-agent/audit-agent-actions) | troubleshooting | 0.60 | Describes querying customEvents in Application Insights with KQL to see agent actions; likely includes specific event names, properties, and query patterns unique to SRE Agent, which are troubleshooting/diagnostic details. |
@@ -159,6 +167,7 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 | [Deep context](https://learn.microsoft.com/en-us/azure/sre-agent/workspace-tools) | 0.20 | Explains the concept of Deep Context and mentions workspace tools enablement, but appears to be conceptual behavior/benefits rather than concrete configuration parameters, limits, or troubleshooting details. |
 | [Learn via Chat](https://learn.microsoft.com/en-us/azure/sre-agent/docsguide) | 0.20 | DocsGuide feature overview; no indication of detailed configuration parameters, limits, or troubleshooting mappings. |
 | [MCP connectors](https://learn.microsoft.com/en-us/azure/sre-agent/mcp-connectors) | 0.20 | High-level description of MCP connectors and tools; no evidence of detailed configuration parameters, limits, or troubleshooting mappings. |
+| [MCP server](https://learn.microsoft.com/en-us/azure/sre-agent/mcp-server-overview) | 0.20 | Described content is an overview of Azure SRE Agent MCP Server capabilities (discover resources, open investigation threads, manage configuration) and how it fits with MCP-capable clients. It reads as conceptual/introductory documentation without clear evidence of detailed configuration parameters, limits, or troubleshooting mappings, so it doesn't meet the expert-knowledge criteria for any sub-skill type. |
 | [Manage global tools](https://learn.microsoft.com/en-us/azure/sre-agent/manage-global-tools) | 0.20 | Tutorial on browsing and toggling tools at space level; appears to be basic feature usage with one date-based note, but no detailed configuration matrices, limits, or troubleshooting content. |
 | [Operations Hub overview](https://learn.microsoft.com/en-us/azure/sre-agent/operations-hub-overview) | 0.20 | Page is an overview of the Azure SRE Agent operations hub, describing high-level capabilities and benefits (real-time visibility, unified signals) without specific limits, configuration parameters, error codes, or detailed decision matrices. It does not meet any sub-skill detection criteria for expert, product-specific numeric or configuration knowledge. |
 | [Review agent insights](https://learn.microsoft.com/en-us/azure/sre-agent/review-agent-insights) | 0.20 | The content is about reviewing session insights and qualitative evaluations of agent conversations. The summary does not suggest specific configuration options, error codes, limits, or decision matrices. It appears to be conceptual/analytical guidance without the kind of product-specific expert details required for any sub-skill type. |

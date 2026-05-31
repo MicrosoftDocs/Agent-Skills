@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-24'
+generated_at: '2026-05-31'
 category_descriptions:
   troubleshooting: 'Troubleshooting Azure Quantum provider issues: diagnosing job
     failures and understanding support/escalation policies and limits for IonQ, PASQAL,
@@ -48,14 +48,14 @@ confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure Databri
 - **Total Pages**: 136
 - **Fetched**: 136
 - **Fetch Failed**: 0
-- **Classified**: 36
-- **Unclassified**: 100
+- **Classified**: 34
+- **Unclassified**: 102
 
 ### Incremental Update
-- **New Pages**: 3
-- **Updated Pages**: 1
-- **Unchanged**: 132
-- **Deleted Pages**: 3
+- **New Pages**: 0
+- **Updated Pages**: 3
+- **Unchanged**: 133
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-quantum/azure-quantum.csv`
 
 ## Classification Statistics
@@ -63,34 +63,26 @@ confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure Databri
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 1 | 0.7% |
-| best-practices | 2 | 1.5% |
-| configuration | 9 | 6.6% |
+| best-practices | 1 | 0.7% |
+| configuration | 8 | 5.9% |
 | decision-making | 3 | 2.2% |
 | deployment | 2 | 1.5% |
 | integrations | 5 | 3.7% |
 | limits-quotas | 3 | 2.2% |
 | security | 7 | 5.1% |
 | troubleshooting | 4 | 2.9% |
-| *(Unclassified)* | 100 | 73.5% |
+| *(Unclassified)* | 102 | 75.0% |
 
 ## Changes
 
-### New Pages
-
-- [Install and run the QDK quantum simulators](https://learn.microsoft.com/en-us/azure/quantum/install-qdk-quantum-simulators)
-- [Build noise models for simulations](https://learn.microsoft.com/en-us/azure/quantum/qdk-simulator-noise-models)
-- [Neutral atom device simulation in the QDK](https://learn.microsoft.com/en-us/azure/quantum/overview-qdk-neutral-atom-simulator)
-
 ### Updated Pages
 
-- [How to use the neutral atom device visualizer](https://learn.microsoft.com/en-us/azure/quantum/how-to-use-neutral-atom-visualizer)
-  - Updated: 2026-02-27T16:51:00.000Z → 2026-05-22T18:34:00.000Z
-
-### Deleted Pages
-
-- ~~Install the neutral atom simulators~~ (https://learn.microsoft.com/en-us/azure/quantum/install-qdk-neutral-atom-simulators)
-- ~~Neutral atom simulator overview~~ (https://learn.microsoft.com/en-us/azure/quantum/overview-qdk-neutral-atom-simulator)
-- ~~Build noise models for neutral atom simulations~~ (https://learn.microsoft.com/en-us/azure/quantum/qdk-simulator-noise-models)
+- [Compare multiple configurations](https://learn.microsoft.com/en-us/azure/quantum/resource-estimator-batching)
+  - Updated: 2026-02-27T16:51:00.000Z → 2026-05-28T00:28:00.000Z
+- [Optimize large programs](https://learn.microsoft.com/en-us/azure/quantum/resource-estimator-handle-large-programs)
+  - Updated: 2026-02-27T16:51:00.000Z → 2026-05-28T00:28:00.000Z
+- [Analyze cryptographic protocols](https://learn.microsoft.com/en-us/azure/quantum/resource-estimator-quantum-safe-planning)
+  - Updated: 2026-05-15T22:10:00.000Z → 2026-05-28T00:28:00.000Z
 
 ## Classified Pages
 
@@ -112,7 +104,6 @@ confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure Databri
 | [Rigetti provider and targets](https://learn.microsoft.com/en-us/azure/quantum/provider-rigetti) | limits-quotas | 0.70 | Provider technical details pages for specific quantum hardware typically list device-specific characteristics such as qubit counts, connectivity, gate times, sampling rates, and other numeric constraints that function as practical limits/quotas for jobs and circuits. These are expert, provider-specific values not inferable from general training data. |
 | [Submit a circuit with Cirq](https://learn.microsoft.com/en-us/azure/quantum/quickstart-microsoft-cirq) | integrations | 0.70 | Shows how to use the qdk.azure.cirq submodule to submit Cirq circuits; contains product-specific module names and usage patterns for integration. |
 | [Work with Azure Quantum using the Azure CLI](https://learn.microsoft.com/en-us/azure/quantum/how-to-manage-quantum-workspaces-with-the-azure-cli) | configuration | 0.70 | CLI-focused how-to that likely includes specific Azure Quantum workspace-related parameters, required resource types, and command options (for resource groups, storage accounts, and workspace creation/deletion). These are product-specific configuration details rather than generic concepts. |
-| [Compare multiple configurations](https://learn.microsoft.com/en-us/azure/quantum/resource-estimator-batching) | configuration | 0.65 | Describes running estimates for multiple configurations and comparing them; likely includes specific API options or parameters for batching. |
 | [Connect to your Azure Quantum workspace](https://learn.microsoft.com/en-us/azure/quantum/how-to-connect-workspace) | integrations | 0.65 | Describes using qdk.azure Workspace class and connection strings; likely includes workspace parameter names and connection configuration details specific to Azure Quantum. |
 | [Different ways to run the resource estimator](https://learn.microsoft.com/en-us/azure/quantum/how-to-submit-re-jobs) | configuration | 0.65 | Explains how to work with the resource estimator across SDKs and IDEs; likely includes specific commands, options, and environment settings unique to this tool. |
 | [Install and run the QDK quantum simulators](https://learn.microsoft.com/en-us/azure/quantum/install-qdk-quantum-simulators) | configuration | 0.65 | An install-and-run article for QDK simulators is likely to include concrete commands, environment setup details, and simulator selection/configuration parameters (e.g., how to invoke specific simulators from VS Code or Python), which are product-specific configuration details not generally known from training. |
@@ -127,7 +118,6 @@ confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure Databri
 | [How to use the neutral atom device visualizer](https://learn.microsoft.com/en-us/azure/quantum/how-to-use-neutral-atom-visualizer) | configuration | 0.60 | Explains how to access and use the neutral atom visualizer from the QDK Python library in Jupyter; this likely includes specific function calls, parameters, and usage patterns for configuring the visualizer, which are product-specific configuration/integration details. |
 | [Introduction to hybrid QC](https://learn.microsoft.com/en-us/azure/quantum/hybrid-computing-overview) | architecture-patterns | 0.60 | Explains different hybrid implementation types and how to choose the best approach; this is explicit decision/architecture guidance specific to Azure Quantum hybrid models. |
 | [IonQ support policy](https://learn.microsoft.com/en-us/azure/quantum/provider-support-ionq) | troubleshooting | 0.60 | Describes when Azure vs IonQ support handles issues; includes product-specific guidance on troubleshooting and escalation paths. |
-| [Optimize large programs](https://learn.microsoft.com/en-us/azure/quantum/resource-estimator-handle-large-programs) | best-practices | 0.60 | Focuses on optimizing execution time for large programs; likely includes concrete recommendations and patterns specific to this tool (for example, how to structure code or configuration to reduce runtime). |
 | [Quantinuum support policy](https://learn.microsoft.com/en-us/azure/quantum/provider-support-quantinuum) | troubleshooting | 0.60 | Describes support boundaries and escalation for Quantinuum targets; specific to Azure Quantum–Quantinuum integration. |
 | [Rigetti support policy](https://learn.microsoft.com/en-us/azure/quantum/provider-support-rigetti) | troubleshooting | 0.60 | Defines how issues with Rigetti targets are handled between Azure and Rigetti support; unique troubleshooting and escalation guidance. |
 | [Submit a circuit in provider-specific format](https://learn.microsoft.com/en-us/azure/quantum/quickstart-microsoft-provider-format) | integrations | 0.60 | The article explains how to use the qdk.azure Python module to submit quantum circuits in specific formats (QIR, OpenQASM, Pulser SDK) to the Azure Quantum service. This is a product-specific coding and integration pattern for circuit submission, not just a conceptual overview, and aligns best with integrations & coding patterns. |
@@ -147,7 +137,6 @@ confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure Databri
 | [Work with jobs](https://learn.microsoft.com/en-us/azure/quantum/how-to-work-with-jobs) | 0.40 | Intro to jobs and lifecycle; summary suggests conceptual guidance without detailed limits, configs, or error mappings. |
 | [Get started with the resource estimator](https://learn.microsoft.com/en-us/azure/quantum/intro-to-resource-estimation) | 0.35 | Introduction to the resource estimator; mostly conceptual description of what it does and high-level capabilities. |
 | [Add or remove a provider](https://learn.microsoft.com/en-us/azure/quantum/how-to-add-a-provider) | 0.30 | How-to for adding/removing providers in a workspace; likely step-by-step UI/API instructions without detailed configuration parameter tables, limits, or troubleshooting mappings. |
-| [Analyze cryptographic protocols](https://learn.microsoft.com/en-us/azure/quantum/resource-estimator-quantum-safe-planning) | 0.30 | Describes using a resource estimator for cryptography impact; summary does not show specific numeric thresholds, configuration parameters, or decision matrices beyond generic tool usage. |
 | [Azure Quantum release notes](https://learn.microsoft.com/en-us/azure/quantum/release-notes) | 0.30 | Release notes; while detailed, they are temporal change logs rather than stable expert configuration or limits content for skills. |
 | [Billing and job costs in Azure Quantum](https://learn.microsoft.com/en-us/azure/quantum/azure-quantum-job-cost-billing) | 0.30 | Described as guidelines to understand costs and manage invoices; this is typically conceptual billing guidance without numeric service limits, configuration tables, or decision matrices with thresholds. |
 | [Conditional loops](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/expressions/conditionalloops) | 0.30 | Conditional loops and quantum hardware restrictions are described conceptually; no numeric hardware limits or configuration ranges. |
@@ -237,3 +226,6 @@ confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure Databri
 | [What is quantum computing?](https://learn.microsoft.com/en-us/azure/quantum/overview-understanding-quantum-computing) | 0.10 | Conceptual explanation of quantum computing principles; no product-specific expert configuration or limits. |
 | [Contributing to the Microsoft Quantum Development Kit](https://learn.microsoft.com/en-us/azure/quantum/contributing-overview) | 0.05 | Community contribution overview for the Quantum Development Kit; process/participation guidance, not technical expert knowledge per defined categories. |
 | [Further reading](https://learn.microsoft.com/en-us/azure/quantum/further-reading-qdk) | 0.05 | Curated list of external learning resources; navigation/reference content without product-specific limits, configuration, or troubleshooting details. |
+| [Analyze cryptographic protocols](https://learn.microsoft.com/en-us/azure/quantum/resource-estimator-quantum-safe-planning) | - | Parse error: Expecting value: line 20 column 13 (char 991) |
+| [Compare multiple configurations](https://learn.microsoft.com/en-us/azure/quantum/resource-estimator-batching) | - | Parse error: Expecting value: line 20 column 13 (char 991) |
+| [Optimize large programs](https://learn.microsoft.com/en-us/azure/quantum/resource-estimator-handle-large-programs) | - | Parse error: Expecting value: line 20 column 13 (char 991) |

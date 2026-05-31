@@ -39,8 +39,8 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure T
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 23
+- **Updated Pages**: 0
+- **Unchanged**: 24
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-queue-storage/azure-queue-storage.csv`
 
@@ -56,11 +56,6 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure T
 | *(Unclassified)* | 1 | 4.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [Queue storage](https://learn.microsoft.com/en-us/azure/storage/queues/scalability-targets)
-  - Updated: 2023-04-03T00:00:00.000Z → 2025-07-02T22:09:00.000Z
 
 ## Classified Pages
 

@@ -38,8 +38,8 @@ confusable_not_for: Not for Azure Key Vault (use azure-key-vault), Azure Artifac
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 13
+- **Updated Pages**: 0
+- **Unchanged**: 14
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-artifact-signing/azure-artifact-signing.csv`
 
@@ -55,11 +55,6 @@ confusable_not_for: Not for Azure Key Vault (use azure-key-vault), Azure Artifac
 | *(Unclassified)* | 5 | 35.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [Set up Artifact Signing](https://learn.microsoft.com/en-us/azure/artifact-signing/quickstart)
-  - Updated: 2026-04-28T18:47:00.000Z → 2026-05-21T08:00:00.000Z
 
 ## Classified Pages
 

@@ -53,9 +53,9 @@ confusable_not_for: Not for Azure Container Instances (use azure-container-insta
 - **Unclassified**: 32
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 22
-- **Unchanged**: 91
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 114
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-batch/azure-batch.csv`
 
@@ -75,54 +75,6 @@ confusable_not_for: Not for Azure Container Instances (use azure-container-insta
 | *(Unclassified)* | 32 | 28.1% |
 
 ## Changes
-
-### New Pages
-
-- [Use temporary NVMe disks](https://learn.microsoft.com/en-us/azure/batch/batch-nvme-temporary)
-
-### Updated Pages
-
-- [User accounts for running tasks](https://learn.microsoft.com/en-us/azure/batch/batch-user-accounts)
-  - Updated: 2025-03-04T18:02:00.000Z → 2026-05-20T08:00:00.000Z
-- [Submit a large number of tasks](https://learn.microsoft.com/en-us/azure/batch/large-number-tasks)
-  - Updated: 2024-06-13T08:00:00.000Z → 2026-05-21T05:13:00.000Z
-- [Monitor Azure Batch](https://learn.microsoft.com/en-us/azure/batch/monitor-batch)
-  - Updated: 2026-01-12T08:00:00.000Z → 2026-05-19T08:00:00.000Z
-- [Create efficient query lists](https://learn.microsoft.com/en-us/azure/batch/batch-efficient-list-queries)
-  - Updated: 2026-01-05T08:00:00.000Z → 2026-05-21T05:13:00.000Z
-- [Count resources by state](https://learn.microsoft.com/en-us/azure/batch/batch-get-resource-counts)
-  - Updated: 2026-01-05T08:00:00.000Z → 2026-05-19T08:00:00.000Z
-- [MPI](https://learn.microsoft.com/en-us/azure/batch/batch-mpi)
-  - Updated: 2025-04-02T08:00:00.000Z → 2026-05-20T08:00:00.000Z
-- [Container workloads](https://learn.microsoft.com/en-us/azure/batch/batch-docker-container-workloads)
-  - Updated: 2024-06-10T08:00:00.000Z → 2026-05-19T08:00:00.000Z
-- [Error handling and detection](https://learn.microsoft.com/en-us/azure/batch/error-handling)
-  - Updated: 2026-01-12T08:00:00.000Z → 2026-05-20T05:21:00.000Z
-- [Best practices](https://learn.microsoft.com/en-us/azure/batch/best-practices)
-  - Updated: 2026-01-06T08:00:00.000Z → 2026-05-19T08:00:00.000Z
-- [Task runtime environment variables](https://learn.microsoft.com/en-us/azure/batch/batch-compute-node-environment-variables)
-  - Updated: 2026-01-05T08:00:00.000Z → 2026-05-20T05:21:00.000Z
-- [Manage Batch accounts with Batch Management .NET](https://learn.microsoft.com/en-us/azure/batch/batch-management-dotnet)
-  - Updated: 2025-05-09T08:00:00.000Z → 2026-05-20T08:00:00.000Z
-- [Create resource files](https://learn.microsoft.com/en-us/azure/batch/resource-files)
-  - Updated: 2025-02-07T08:00:00.000Z → 2026-05-19T08:00:00.000Z
-- [Autoscale compute nodes](https://learn.microsoft.com/en-us/azure/batch/batch-automatic-scaling)
-  - Updated: 2025-06-05T08:00:00.000Z → 2026-05-19T08:00:00.000Z
-- [Configure access to compute nodes](https://learn.microsoft.com/en-us/azure/batch/pool-endpoint-configuration)
-  - Updated: 2026-03-06T08:00:00.000Z → 2026-05-19T08:00:00.000Z
-- [Create a pool with Azure Compute Gallery](https://learn.microsoft.com/en-us/azure/batch/batch-sig-images)
-  - Updated: 2025-07-01T08:00:00.000Z → 2026-05-19T08:00:00.000Z
-- [Create a pool with a managed image resource](https://learn.microsoft.com/en-us/azure/batch/batch-custom-images)
-  - Updated: 2026-01-05T08:00:00.000Z → 2026-05-19T08:00:00.000Z
-- [Create a pool with ephemeral OS disk nodes](https://learn.microsoft.com/en-us/azure/batch/create-pool-ephemeral-os-disk)
-  - Updated: 2026-03-06T08:00:00.000Z → 2026-05-19T08:00:00.000Z
-- [Create an Azure Batch pool with Auto OS Upgrade](https://learn.microsoft.com/en-us/azure/batch/batch-upgrade-policy)
-  - Updated: 2024-12-20T12:09:00.000Z → 2026-05-19T08:00:00.000Z
-- [Configure managed identities](https://learn.microsoft.com/en-us/azure/batch/managed-identity-pools)
-  - Updated: 2025-07-08T08:00:00.000Z → 2026-05-19T08:00:00.000Z
-- [Use Linux compute nodes](https://learn.microsoft.com/en-us/azure/batch/batch-linux-nodes)
-  - Updated: 2026-01-05T08:00:00.000Z → 2026-05-21T05:13:00.000Z
-- *...and 2 more*
 
 ## Classified Pages
 

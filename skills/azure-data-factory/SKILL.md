@@ -1,9 +1,9 @@
 ---
 name: azure-data-factory
-description: Expert knowledge for Azure Data Factory development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing ADF pipelines, mapping data flows, SHIR/SSIS IR, SAP CDC, or CI/CD with ARM/DevOps, and other Azure Data Factory related development tasks. Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure Databricks (use azure-databricks), Azure Stream Analytics (use azure-stream-analytics), Azure Data Explorer (use azure-data-explorer).
+description: Expert knowledge for Azure Data Factory development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building ADF pipelines with data flows, SHIR/SSIS IR, SAP CDC, Key Vault, or VNets/Private Link, and other Azure Data Factory related development tasks. Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure Databricks (use azure-databricks), Azure Stream Analytics (use azure-stream-analytics), Azure Data Explorer (use azure-data-explorer).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-17"
+  generated_at: "2026-05-31"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Data Factory Skill
@@ -27,12 +27,12 @@ This skill requires **network access** to fetch documentation content:
 | Troubleshooting | L37-L90 | Diagnosing and fixing ADF issues: connector/format errors, copy & data flow performance, pipelines/triggers, SHIR/SSIS IR problems, security/access, and interpreting failure logs. |
 | Best Practices | L91-L113 | Performance, DataOps, and reliability best practices for ADF: tuning data flows/copy, optimizing sources/sinks/IR, handling schema drift/errors, and migrating data (HDFS, Netezza, S3) to Azure. |
 | Decision Making | L114-L132 | Guidance for architectural and cost decisions in ADF: choosing runtimes/compute/connectors, planning upgrades/migrations (SSIS, Synapse, Fabric), and optimizing pricing and reserved capacity. |
-| Architecture & Design Patterns | L133-L143 | Patterns and architectures for ADF: efficient mapping data flows, metadata‑driven copy, SSIS IR with SQL MI/failover/VNet, Cosmos DB migration, and SAP CDC design. |
-| Limits & Quotas | L144-L149 | Covers ADF data flow reservation discounts plus common limits, quotas, throttling behaviors, and frequently asked questions about Azure Data Factory capacity and usage. |
-| Security | L150-L180 | Securing Data Factory with identity, encryption, Key Vault, and Azure Policy, plus network controls like VNets, Private Link, firewalls, private endpoints, and secure runtimes (Azure-SSIS, self-hosted). |
-| Configuration | L181-L305 | Configuring ADF: datasets, linked services, runtimes, triggers, activities, data flows, formats, monitoring, DevOps/CI/CD, SAP CDC, SSIS IR, and global/trigger parameters. |
-| Integrations & Coding Patterns | L306-L481 | Patterns and how-tos for integrating ADF with many data sources, using connectors, mapping data flow functions, activities, templates, and orchestrating Databricks, Synapse, SSIS, and ML jobs. |
-| Deployment | L482-L495 | CI/CD and deployment for ADF: ARM/linked templates, Azure DevOps pipelines, hotfix flows, pre/post scripts, IR automation, SSIS job migration, and runtime network migration. |
+| Architecture & Design Patterns | L133-L142 | Patterns and architectures for ADF: efficient mapping data flows, metadata‑driven copy, SSIS IR with SQL MI/failover/VNet, Cosmos DB migration, and SAP CDC design. |
+| Limits & Quotas | L143-L148 | ADF data flow reservation discounts, pricing behavior, and the official limits/quotas (throughput, activities, pipelines, data flows) documented in the FAQ. |
+| Security | L149-L179 | Securing Data Factory with identity, encryption, Key Vault, and Azure Policy, plus network controls like VNets, Private Link, firewalls, private endpoints, and secure runtimes (Azure-SSIS, self-hosted). |
+| Configuration | L180-L304 | Configuring ADF: datasets, linked services, runtimes, triggers, activities, data flows, formats, monitoring, DevOps/CI/CD, SAP CDC, SSIS IR, and global/trigger parameters. |
+| Integrations & Coding Patterns | L305-L480 | Patterns and how-tos for integrating ADF with many data sources, using connectors, mapping data flow functions, activities, templates, and orchestrating Databricks, Synapse, SSIS, and ML jobs. |
+| Deployment | L481-L494 | CI/CD and deployment for ADF: ARM/linked templates, Azure DevOps pipelines, hotfix flows, pre/post scripts, IR automation, SSIS job migration, and runtime network migration. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -139,13 +139,12 @@ This skill requires **network access** to fetch documentation content:
 | Migrate Azure SQL schemas to Azure Cosmos DB with ADF | https://learn.microsoft.com/en-us/azure/data-factory/how-to-sqldb-to-cosmosdb |
 | Use Azure SQL Managed Instance with Azure-SSIS IR | https://learn.microsoft.com/en-us/azure/data-factory/how-to-use-sql-managed-instance-with-ir |
 | Decide when and how to join Azure-SSIS integration runtime to a virtual network | https://learn.microsoft.com/en-us/azure/data-factory/join-azure-ssis-integration-runtime-virtual-network |
-| Understand architecture of SAP CDC in Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/sap-change-data-capture-introduction-architecture |
 
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
 | Understand reservation discounts for ADF data flows | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-understand-reservation-charges |
-| Azure Data Factory FAQ with limits and behaviors | https://learn.microsoft.com/en-us/azure/data-factory/frequently-asked-questions |
+| Review Azure Data Factory limits and quotas from FAQ | https://learn.microsoft.com/en-us/azure/data-factory/frequently-asked-questions |
 
 ### Security
 | Topic | URL |

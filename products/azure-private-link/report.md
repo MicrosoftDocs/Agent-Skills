@@ -44,8 +44,8 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 45
+- **Updated Pages**: 0
+- **Unchanged**: 48
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-private-link/azure-private-link.csv`
 
@@ -62,15 +62,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | *(Unclassified)* | 29 | 60.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [What is a network security perimeter?](https://learn.microsoft.com/en-us/azure/private-link/network-security-perimeter-concepts)
-  - Updated: 2026-04-20T11:11:00.000Z → 2026-05-20T05:21:00.000Z
-- [Configure Private Link service Direct Connect](https://learn.microsoft.com/en-us/azure/private-link/configure-private-link-service-direct-connect)
-  - Updated: 2025-12-12T05:44:00.000Z → 2026-05-20T22:22:00.000Z
-- [Create a network security perimeter - Bicep](https://learn.microsoft.com/en-us/azure/private-link/create-network-security-perimeter-bicep)
-  - Updated: 2025-08-05T16:10:00.000Z → 2025-10-08T22:11:00.000Z
 
 ## Classified Pages
 

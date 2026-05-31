@@ -51,8 +51,8 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Dat
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 300
+- **Updated Pages**: 0
+- **Unchanged**: 301
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cognitive-search/azure-cognitive-search.csv`
 
@@ -72,11 +72,6 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Dat
 | *(Unclassified)* | 77 | 25.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [Create a hybrid query](https://learn.microsoft.com/en-us/azure/search/hybrid-search-how-to-query)
-  - Updated: 2026-04-24T08:00:00.000Z → 2026-05-19T06:08:00.000Z
 
 ## Classified Pages
 

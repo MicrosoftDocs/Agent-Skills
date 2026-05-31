@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-24'
+generated_at: '2026-05-31'
 category_descriptions:
   best-practices: 'Performance, migration, and security best practices for Azure PostgreSQL:
     tuning queries/extensions, pooling, bulk load, HA, schema/app/Oracle migration,
@@ -7,9 +7,9 @@ category_descriptions:
   integrations: Patterns and code to integrate Azure PostgreSQL with AI/ML (Language,
     AML, LangChain, Foundry), app SDKs (C#, Java, Python, Go, PHP), VS Code/Copilot,
     Storage, Data Factory, and migration tools.
-  security: 'Securing Azure Database for PostgreSQL: identity and auth (Entra, managed
-    identities, SCRAM), network isolation (VNet, Private Link, firewalls, TLS), encryption,
-    auditing, roles, and Defender/Policy compliance.'
+  security: 'Securing Azure Database for PostgreSQL: identity/auth (Entra, managed
+    identities, SCRAM), network (firewall, VNet, Private Link), TLS/SSL, encryption,
+    auditing, RBAC, Defender, and compliance.'
   architecture-patterns: Patterns for using Azure PostgreSQL (often with OpenAI) to
     build recommendation/semantic search apps, microservices, multitenancy, real-time
     dashboards, and sharded/elastic data architectures.
@@ -31,14 +31,14 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Database for PostgreSQL development
   including troubleshooting, best practices, decision making, architecture & design
   patterns, limits & quotas, security, configuration, integrations & coding patterns,
-  and deployment. Use when using pgvector/DiskANN, HA/replicas, VNet/Private Link,
-  AI/ML integrations, or CI/CD deployments, and other Azure Database for PostgreSQL
+  and deployment. Use when using pgvector/DiskANN, HA/replicas, Private Link/VNet,
+  CI/CD/Bicep deploys, or AI/ML app integrations, and other Azure Database for PostgreSQL
   related development tasks. Not for Azure Database for MySQL (use azure-database-mysql),
   Azure Database for MariaDB (use azure-database-mariadb), Azure SQL Database (use
   azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance).
-use_when: Use when using pgvector/DiskANN, HA/replicas, VNet/Private Link, AI/ML integrations,
-  or CI/CD deployments, and other Azure Database for PostgreSQL related development
-  tasks.
+use_when: Use when using pgvector/DiskANN, HA/replicas, Private Link/VNet, CI/CD/Bicep
+  deploys, or AI/ML app integrations, and other Azure Database for PostgreSQL related
+  development tasks.
 confusable_not_for: Not for Azure Database for MySQL (use azure-database-mysql), Azure
   Database for MariaDB (use azure-database-mariadb), Azure SQL Database (use azure-sql-database),
   Azure SQL Managed Instance (use azure-sql-managed-instance).
@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Database for MySQL (use azure-database-mysql),
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 9
-- **Unchanged**: 319
+- **Updated Pages**: 1
+- **Unchanged**: 327
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-database-postgresql/azure-database-postgresql.csv`
 
@@ -79,24 +79,8 @@ confusable_not_for: Not for Azure Database for MySQL (use azure-database-mysql),
 
 ### Updated Pages
 
-- [Migrate from Premium SSD to Premium SSD v2 using PITR](https://learn.microsoft.com/en-us/azure/postgresql/compute-storage/concepts-storage-migrate-ssd-to-ssd-v2)
-  - Updated: 2026-04-07T17:14:00.000Z → 2026-05-20T22:09:00.000Z
-- [Secure your Azure Database for PostgreSQL](https://learn.microsoft.com/en-us/azure/postgresql/security/security-overview)
-  - Updated: 2025-12-22T23:02:00.000Z → 2026-05-05T08:00:00.000Z
-- [Configure extension](https://learn.microsoft.com/en-us/azure/postgresql/extensions/how-to-configure-azure-storage-extension)
-  - Updated: 2026-05-11T17:19:00.000Z → 2026-05-22T06:05:00.000Z
-- [Scheduled maintenance](https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/concepts-maintenance)
-  - Updated: 2026-04-22T17:15:00.000Z → 2026-05-21T06:04:00.000Z
-- [Self-hosted vs. managed service](https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/overview-postgres-choose-server-options)
-  - Updated: 2025-12-22T23:02:00.000Z → 2026-05-05T08:00:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/postgresql/developer/vs-code-extension/vs-code-overview)
-  - Updated: 2026-05-01T22:07:00.000Z → 2026-05-05T08:00:00.000Z
-- [Configure GitHub Copilot](https://learn.microsoft.com/en-us/azure/postgresql/developer/vs-code-extension/vs-code-github-copilot)
-  - Updated: 2026-01-09T23:09:00.000Z → 2026-05-05T08:00:00.000Z
-- [Use Azure Monitor dashboards with Grafana](https://learn.microsoft.com/en-us/azure/postgresql/monitor/how-to-use-dashboards-with-grafana)
-  - Updated: 2026-04-24T17:20:00.000Z → 2026-05-22T06:05:00.000Z
-- [Query Store](https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/param-query-store)
-  - Updated: 2026-05-12T06:04:00.000Z → 2026-05-19T22:12:00.000Z
+- [Access control](https://learn.microsoft.com/en-us/azure/postgresql/security/security-access-control)
+  - Updated: 2025-12-22T23:02:00.000Z → 2026-05-21T08:00:00.000Z
 
 ## Classified Pages
 
@@ -170,8 +154,8 @@ confusable_not_for: Not for Azure Database for MySQL (use azure-database-mysql),
 | [Vector search using pgvector](https://learn.microsoft.com/en-us/azure/postgresql/extensions/how-to-use-pgvector) | configuration | 0.75 | Describes enabling pgvector extension and configuring tables/indexes; includes extension-specific SQL and configuration details. |
 | [Write-Ahead Log / Checkpoints](https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/param-write-ahead-log-checkpoints) | configuration | 0.75 | Write-Ahead Log / Checkpoints server parameters; summary mentions how max_wal_size default is computed from compute product and how to adjust it with disk size changes. This is detailed, product-specific configuration guidance. |
 | [Write-Ahead Log / Settings](https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/param-write-ahead-log-settings) | configuration | 0.75 | Write-Ahead Log / Settings server parameters; summary explains how wal_buffers default is computed from compute product and how to adjust wal_ parameters when changing product, which is detailed configuration behavior unique to the service. |
+| [Access control](https://learn.microsoft.com/en-us/azure/postgresql/security/security-access-control) | security | 0.72 | Page focuses on concrete access control for Azure Database for PostgreSQL using PostgreSQL roles and Azure-specific features. It likely includes specific role names, permission scopes, and product-specific access management patterns that go beyond generic security concepts, fitting the security sub-skill definition. |
 | [Build an agent with Microsoft Foundry](https://learn.microsoft.com/en-us/azure/postgresql/azure-ai/generative-ai-foundry-integration) | integrations | 0.72 | The page describes a product-specific integration between Azure Database for PostgreSQL and Microsoft Foundry using the Model Context Protocol, including concrete configuration details for the MCP server and how agents interact with the database. This is an integration/coding pattern unique to this product combination rather than a generic tutorial or conceptual overview. |
-| [Access control](https://learn.microsoft.com/en-us/azure/postgresql/security/security-access-control) | security | 0.70 | Access management using roles; likely lists PostgreSQL roles, Azure RBAC interactions, and permission scopes specific to this service. |
 | [Allow extensions](https://learn.microsoft.com/en-us/azure/postgresql/extensions/how-to-allow-extensions) | configuration | 0.70 | Describes how to allow/allowlist extensions; likely includes specific commands, parameters, and Azure-specific configuration steps for enabling extensions. |
 | [Application conversion best practices](https://learn.microsoft.com/en-us/azure/postgresql/migrate/oracle-application-conversions/app-conversions-best-practices) | best-practices | 0.70 | Explicitly labeled as best practices for a specific migration feature; likely includes concrete DO/DON'T guidance and product-specific recommendations for using the VS Code PostgreSQL extension during conversion. |
 | [Audit logs](https://learn.microsoft.com/en-us/azure/postgresql/security/security-audit) | security | 0.70 | Describes pgaudit usage in this managed service; likely includes extension parameters, configuration values, and which actions are logged, which are product-specific security/audit settings. |

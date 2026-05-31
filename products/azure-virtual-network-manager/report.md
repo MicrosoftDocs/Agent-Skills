@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-24'
+generated_at: '2026-05-31'
 category_descriptions:
   configuration: 'Configuring AVNM: IPAM pools, network groups (static/dynamic via
     Policy), cross-tenant connections, event logs, and managing UDRs/topologies and
@@ -32,16 +32,16 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ## Summary
 
-- **Total Pages**: 53
-- **Fetched**: 53
+- **Total Pages**: 54
+- **Fetched**: 54
 - **Fetch Failed**: 0
 - **Classified**: 22
-- **Unclassified**: 31
+- **Unclassified**: 32
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 52
+- **New Pages**: 1
+- **Updated Pages**: 2
+- **Unchanged**: 51
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-network-manager/azure-virtual-network-manager.csv`
 
@@ -49,19 +49,25 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| configuration | 10 | 18.9% |
+| configuration | 10 | 18.5% |
 | integrations | 1 | 1.9% |
 | limits-quotas | 1 | 1.9% |
-| security | 8 | 15.1% |
-| troubleshooting | 2 | 3.8% |
-| *(Unclassified)* | 31 | 58.5% |
+| security | 8 | 14.8% |
+| troubleshooting | 2 | 3.7% |
+| *(Unclassified)* | 32 | 59.3% |
 
 ## Changes
 
+### New Pages
+
+- [Configure Virtual WAN hub in Hub and Spoke Topology](https://learn.microsoft.com/en-us/azure/virtual-network-manager/configure-virtual-wan-hub-for-network-manager)
+
 ### Updated Pages
 
-- [FAQ](https://learn.microsoft.com/en-us/azure/virtual-network-manager/faq)
-  - Updated: 2026-03-02T18:31:00.000Z → 2026-05-19T05:18:00.000Z
+- [Azure portal](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-create-hub-and-spoke)
+  - Updated: 2025-08-05T22:11:00.000Z → 2026-05-26T17:35:00.000Z
+- [Connectivity configuration overview](https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-connectivity-configuration)
+  - Updated: 2026-01-09T08:00:00.000Z → 2026-05-26T17:35:00.000Z
 
 ## Classified Pages
 
@@ -98,9 +104,7 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Remove or update network manager components](https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-remove-components-checklist) | 0.50 | Checklist for removing components; procedural steps but not clearly a configuration catalog, limits reference, or troubleshooting mapping from the summary. |
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-create-hub-and-spoke-powershell) | 0.45 | PowerShell how-to for hub-and-spoke; similar to other topology tutorials, focused on steps rather than exhaustive config or limits. |
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-create-mesh-network-powershell) | 0.45 | PowerShell mesh topology how-to; similar to other topology tutorials, primarily step-by-step commands. |
-| [Azure portal](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-create-hub-and-spoke) | 0.45 | Portal how-to for hub-and-spoke topology; mostly procedural with conceptual description of connectivity, not a detailed configuration reference with parameter tables. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-create-mesh-network) | 0.45 | How-to for mesh topology; describes enabling global mesh but summary doesn’t show detailed config tables or numeric thresholds. |
-| [Connectivity configuration overview](https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-connectivity-configuration) | 0.45 | Conceptual article on connectivity configurations and topologies; describes features and settings at a high level without detailed numeric thresholds or config tables in the summary. |
 | [Create a secured hub and spoke](https://learn.microsoft.com/en-us/azure/virtual-network-manager/tutorial-create-secured-hub-and-spoke) | 0.45 | Tutorial for secured hub-and-spoke; includes specific ports (80, 443) but mainly as example values in a scenario, not as a general best-practices catalog or config reference. |
 | [Deploy hub and spoke topology with Azure Firewall](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-deploy-hub-spoke-topology-with-azure-firewall) | 0.45 | Scenario tutorial integrating Azure Firewall with hub-and-spoke; integration-focused but framed as a walkthrough, not a parameter/limits reference. |
 | [Event Log Options for Azure Virtual Network Manager](https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-event-logs) | 0.45 | Conceptual overview of event log options; summary does not indicate detailed configuration parameters, role mappings, or error-code-based troubleshooting. |
@@ -114,6 +118,9 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Create Virtual Network Manager - Terraform](https://learn.microsoft.com/en-us/azure/virtual-network-manager/create-virtual-network-manager-terraform) | 0.35 | Terraform quickstart; shows how to deploy a mesh topology, but summary indicates tutorial-style content rather than a full configuration reference. |
 | [Network groups overview](https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-network-groups) | 0.35 | Conceptual article on network groups and membership types; high-level behavior, not detailed configuration or limits. |
 | [Virtual Network Verifier overview](https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-virtual-network-verifier) | 0.35 | Conceptual 'what is network verifier' overview; summary focuses on purpose and scenarios, not on concrete configuration parameters, limits, or troubleshooting mappings. |
+| [Azure portal](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-create-hub-and-spoke) | 0.30 | Step-by-step portal tutorial for creating a hub-and-spoke topology; no evidence of numeric limits, configuration parameter tables, error codes, or product-specific best-practice gotchas. Primarily procedural guidance rather than expert-only reference data. |
+| [Configure Virtual WAN hub in Hub and Spoke Topology](https://learn.microsoft.com/en-us/azure/virtual-network-manager/configure-virtual-wan-hub-for-network-manager) | 0.30 | How-to guide for specifying a Virtual WAN hub as the hub in a topology; appears to be procedural configuration steps without detailed limits, decision matrices, or troubleshooting mappings. |
+| [Connectivity configuration overview](https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-connectivity-configuration) | 0.30 | Conceptual explanation of connectivity configurations (mesh and hub-and-spoke) and their use cases; no clear indication of numeric thresholds, decision matrices, or detailed configuration tables that would qualify as expert knowledge. |
 | [Create IP address pools with IPAM](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-manage-ip-addresses-network-manager) | 0.30 | The page appears to be a how-to guide for managing IP addresses and IPAM with Azure Virtual Network Manager (creating and assigning IP pools). The summary does not indicate detailed numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. It mainly describes availability and general capability, which is not expert-knowledge per the defined categories. |
 | [Create Virtual Network Manager - Bicep](https://learn.microsoft.com/en-us/azure/virtual-network-manager/create-virtual-network-manager-bicep) | 0.30 | Bicep quickstart; similar to other quickstarts, focused on basic deployment steps rather than detailed expert configuration or limits. |
 | [Create Virtual Network Manager - CLI](https://learn.microsoft.com/en-us/azure/virtual-network-manager/create-virtual-network-manager-cli) | 0.30 | Quickstart using Azure CLI; focused on initial setup, not exhaustive configuration or numeric constraints. |

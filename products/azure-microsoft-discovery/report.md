@@ -52,9 +52,9 @@ confusable_not_for: Not for Azure Resource Graph (use azure-resource-graph), Azu
 - **Unclassified**: 21
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 69
+- **Unchanged**: 70
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-microsoft-discovery/azure-microsoft-discovery.csv`
 
@@ -74,10 +74,6 @@ confusable_not_for: Not for Azure Resource Graph (use azure-resource-graph), Azu
 | *(Unclassified)* | 21 | 30.0% |
 
 ## Changes
-
-### New Pages
-
-- [Discovery Supercomputer and model execution](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-supercomputer)
 
 ## Classified Pages
 

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-17'
+generated_at: '2026-05-31'
 category_descriptions:
   security: 'Securing Synapse workspaces end-to-end: auth and RBAC, network and private
     endpoints, firewall and data exfiltration, encryption/TDE, policies, managed identities,
@@ -50,13 +50,13 @@ confusable_not_for: Not for Azure Analysis Services (use azure-analysis-services
 - **Total Pages**: 447
 - **Fetched**: 447
 - **Fetch Failed**: 0
-- **Classified**: 276
-- **Unclassified**: 171
+- **Classified**: 275
+- **Unclassified**: 172
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 447
+- **Updated Pages**: 1
+- **Unchanged**: 446
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-synapse-analytics/azure-synapse-analytics.csv`
 
@@ -66,16 +66,21 @@ confusable_not_for: Not for Azure Analysis Services (use azure-analysis-services
 |------|-------|------------|
 | architecture-patterns | 16 | 3.6% |
 | best-practices | 58 | 13.0% |
-| configuration | 45 | 10.1% |
+| configuration | 44 | 9.8% |
 | decision-making | 17 | 3.8% |
 | deployment | 5 | 1.1% |
 | integrations | 46 | 10.3% |
 | limits-quotas | 7 | 1.6% |
 | security | 57 | 12.8% |
 | troubleshooting | 25 | 5.6% |
-| *(Unclassified)* | 171 | 38.3% |
+| *(Unclassified)* | 172 | 38.5% |
 
 ## Changes
+
+### Updated Pages
+
+- [Azure Synapse Apache Spark 3.4 runtime (EOSA)](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-34-runtime)
+  - Updated: 2026-03-09T23:18:00.000Z → 2026-05-27T16:50:00.000Z
 
 ## Classified Pages
 
@@ -201,7 +206,6 @@ confusable_not_for: Not for Azure Analysis Services (use azure-analysis-services
 | [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/synapse-analytics/policy-reference) | security | 0.70 | Lists Synapse-specific built-in Azure Policy definitions; these include concrete policy names and enforcement scopes relevant to security and governance. |
 | [Azure Spark CDM Connector](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/data-sources/apache-spark-cdm-connector) | integrations | 0.70 | Connector-specific article; expected to list schema handling, folder structure requirements, and connector options for CDM in Synapse. |
 | [Azure Synapse Analytics known issues](https://learn.microsoft.com/en-us/azure/synapse-analytics/known-issues) | troubleshooting | 0.70 | Lists current product-specific issues with resolutions/workarounds; effectively a troubleshooting reference keyed by symptom/issue. |
-| [Azure Synapse Apache Spark 3.4 runtime (EOSA)](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-34-runtime) | configuration | 0.70 | The page enumerates the exact runtime components and their versions (Spark 3.4.1, Python 3.10, Delta Lake 2.4, and other library/runtime version details). These are product-specific configuration/runtime details that change over time and are not reliably known from pretraining. It does not focus on limits, patterns, or troubleshooting, but on the precise stack configuration for this specific Synapse Spark runtime. |
 | [Browse an ADLS Gen2 folder with ACLs](https://learn.microsoft.com/en-us/azure/synapse-analytics/how-to-access-container-with-access-control-lists) | security | 0.70 | Focuses on using ACLs instead of account-level roles; likely includes specific RBAC roles, ACL entries, and security configuration details. |
 | [CETAS](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-tables-cetas) | integrations | 0.70 | Covers Synapse-specific CETAS syntax and options for external tables, including product-specific behaviors and parameters that go beyond generic SQL knowledge. |
 | [Cheat sheet](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/cheat-sheet) | best-practices | 0.70 | Cheat sheet explicitly described as tips and best practices; such pages typically include product-specific DOs/DON’Ts (e.g., distribution choices, table design, resource class usage) that are concrete and tuned to this service. |
@@ -443,6 +447,7 @@ confusable_not_for: Not for Azure Analysis Services (use azure-analysis-services
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/synapse-analytics/quickstart-create-workspace-cli) | 0.30 | CLI quickstart; mostly commands to create workspace, not a comprehensive config/limits reference. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/create-data-warehouse-azure-cli) | 0.30 | Quickstart for creating a SQL pool via Azure CLI; mostly step-by-step commands without broader configuration matrices or limits. |
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/synapse-analytics/quickstart-create-workspace-powershell) | 0.30 | PowerShell quickstart; procedural creation steps, not detailed configuration options or constraints. |
+| [Azure Synapse Apache Spark 3.4 runtime (EOSA)](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-34-runtime) | 0.30 | Page appears to be a runtime/version overview and deprecation notice for Azure Synapse Runtime for Apache Spark 3.4 (e.g., EOS date, supported Spark/Python/Delta versions). Based on the summary, it doesn't clearly expose detailed limits, configuration tables, error codes, or other product-specific expert data as defined by the sub-skill types. |
 | [Big data analytics with Apache Spark pool](https://learn.microsoft.com/en-us/azure/synapse-analytics/guidance/proof-of-concept-playbook-spark-pool) | 0.30 | High-level POC methodology for Spark pool; focused on project approach, not detailed product-specific settings or limits. |
 | [Big data analytics with Data Explorer pool](https://learn.microsoft.com/en-us/azure/synapse-analytics/guidance/proof-of-concept-playbook-data-explorer-pool) | 0.30 | High-level POC methodology for Data Explorer pool; no indication of numeric thresholds, config tables, or error mappings. |
 | [Clone a lake database](https://learn.microsoft.com/en-us/azure/synapse-analytics/database-designer/clone-lake-database) | 0.30 | Tutorial for cloning a lake database; focuses on how-to steps rather than limits, configuration matrices, or deep troubleshooting. |

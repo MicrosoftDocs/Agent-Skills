@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-05-31'
 category_descriptions:
   limits-quotas: How to request and manage per-region Azure Storage account quota
     increases, including limits, prerequisites, and support request steps.
@@ -28,8 +28,8 @@ confusable_not_for: Not for Azure Cost Management (use azure-cost-management), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 15
+- **Updated Pages**: 1
+- **Unchanged**: 14
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-quotas/azure-quotas.csv`
 
@@ -41,6 +41,11 @@ confusable_not_for: Not for Azure Cost Management (use azure-cost-management), A
 | *(Unclassified)* | 14 | 93.3% |
 
 ## Changes
+
+### Updated Pages
+
+- [Request a quota increase](https://learn.microsoft.com/en-us/azure/quotas/quickstart-increase-quota-portal)
+  - Updated: 2024-11-19T18:01:00.000Z → 2026-05-27T06:06:00.000Z
 
 ## Classified Pages
 
@@ -64,5 +69,5 @@ confusable_not_for: Not for Azure Cost Management (use azure-cost-management), A
 | [Add or remove subscriptions](https://learn.microsoft.com/en-us/azure/quotas/add-remove-subscriptions-quota-group) | 0.20 | Simple add/remove subscriptions operation for Quota Groups; no indication of expert-level numeric limits or specialized configuration details. |
 | [Create and manage alerts](https://learn.microsoft.com/en-us/azure/quotas/how-to-guide-monitoring-alerting) | 0.20 | Generic guidance on creating alerts for quotas; summary lacks specific threshold values, parameter tables, or product-unique configuration details. |
 | [Monitoring and alerts](https://learn.microsoft.com/en-us/azure/quotas/monitoring-alerting) | 0.20 | Describes monitoring and alerting conceptually; summary lacks specific thresholds, configuration parameters, or numeric guidance. |
-| [Request a quota increase](https://learn.microsoft.com/en-us/azure/quotas/quickstart-increase-quota-portal) | 0.20 | Quickstart for requesting quota increases; appears to be step-by-step portal usage without numeric limits or advanced configuration details. |
+| [Request a quota increase](https://learn.microsoft.com/en-us/azure/quotas/quickstart-increase-quota-portal) | 0.20 | Quickstart focuses on the process of requesting a quota increase in the Azure portal, not on listing specific numerical limits, tier-based quotas, or detailed configuration parameters. It is primarily a procedural UI guide without expert-only numeric or configuration details. |
 | [View quotas](https://learn.microsoft.com/en-us/azure/quotas/view-quotas) | 0.20 | Portal navigation and viewing quotas; no indication of specific numeric limits, configuration parameters, or product-specific constraints. |

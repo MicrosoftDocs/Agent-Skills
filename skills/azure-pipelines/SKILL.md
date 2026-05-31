@@ -1,9 +1,9 @@
 ---
 name: azure-pipelines
-description: Expert knowledge for Azure Pipelines development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring YAML pipelines, service connections, Key Vault secrets, self-hosted agents, or Kubernetes/VM deployments, and other Azure Pipelines related development tasks. Not for Azure DevOps (use azure-devops), Azure Boards (use azure-boards), Azure Repos (use azure-repos), Azure Test Plans (use azure-test-plans).
+description: Expert knowledge for Azure Pipelines development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring YAML pipelines, service connections, Key Vault secrets, deployment agents, or Kubernetes/VM releases, and other Azure Pipelines related development tasks. Not for Azure DevOps (use azure-devops), Azure Boards (use azure-boards), Azure Repos (use azure-repos), Azure Test Plans (use azure-test-plans).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-24"
+  generated_at: "2026-05-31"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Pipelines Skill
@@ -30,9 +30,9 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L66-L73 | Guidance on end-to-end CI/CD and DevOps architectures for Azure: baseline pipeline patterns, Web App deployment design, and IaaS/VM-focused DevTest and production pipelines. |
 | Limits & Quotas | L74-L83 | Limits, quotas, and capacity planning for Azure Pipelines: hosted agent limits, image deprecation, parallel jobs, agent pool concurrency, run retention, and handling large Universal Packages. |
 | Security | L84-L134 | Securing Azure Pipelines: auth for agents, service connections, secrets/Key Vault, permissions and approvals, secure variables, artifact/repo protection, and security scanning/compliance tasks. |
-| Configuration | L135-L495 | Configuring Azure Pipelines: agents, triggers, variables, YAML schema, environments, deployment strategies, and detailed setup for built-in tasks, artifacts, tests, and language/tool-specific tasks. |
-| Integrations & Coding Patterns | L496-L523 | Patterns and examples for integrating Azure Pipelines with languages, tools, and services (Git, Key Vault, ServiceNow, Slack, ARM, Selenium), plus scripting, variables, and package caching. |
-| Deployment | L524-L585 | End-to-end deployment with Azure Pipelines: agent setup (self-hosted/scale set/deployment groups), CI/CD for apps/containers/DBs, and using built-in tasks for IIS, Kubernetes, VMs, and Azure services. |
+| Configuration | L135-L496 | Configuring Azure Pipelines: agents, triggers, variables, YAML schema, environments, deployment strategies, artifacts, and detailed setup for built-in tasks and test/analytics features. |
+| Integrations & Coding Patterns | L497-L524 | Patterns and examples for integrating Azure Pipelines with languages, tools, and services (Git, Key Vault, ServiceNow, Slack, ARM, Selenium), plus scripting, variables, and package caching. |
+| Deployment | L525-L586 | End-to-end deployment with Azure Pipelines: agent setup (self-hosted/scale set/deployment groups), CI/CD for apps/containers/DBs, and using built-in tasks for IIS, Kubernetes, VMs, and Azure services. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -396,6 +396,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure TwineAuthenticate@0 legacy task | https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/twine-authenticate-v0?view=azure-pipelines |
 | Configure TwineAuthenticate@1 for Python uploads | https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/twine-authenticate-v1?view=azure-pipelines |
 | Configure UniversalPackages@0 download and publish | https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/universal-packages-v0?view=azure-pipelines |
+| Configure UniversalPackages@1 Azure Pipelines task | https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/universal-packages-v1?view=azure-pipelines |
 | Configure UseDotNet@2 to select .NET SDK | https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/use-dotnet-v2?view=azure-pipelines |
 | Configure UseNode@1 Node.js environment | https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/use-node-v1?view=azure-pipelines |
 | Configure UsePythonVersion@0 in pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/use-python-version-v0?view=azure-pipelines |

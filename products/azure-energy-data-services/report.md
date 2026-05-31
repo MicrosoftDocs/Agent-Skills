@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-24'
+generated_at: '2026-05-31'
 category_descriptions:
   decision-making: Guidance on choosing ADME deployment tiers (Developer vs Standard)
     and checking which OSDU data/compute services and capabilities are available in
@@ -7,12 +7,12 @@ category_descriptions:
   configuration: 'Configuring Azure Energy Data Manager environments: partitions,
     analytics zones, CORS, audit logging, and milestone upgrade settings for governance
     and performance.'
-  integrations: Patterns and examples for integrating ADME/ACZ with external systems
-    (Databricks, Fabric, Azure Monitor) and using DDMS/EDS APIs and tools to access,
-    upload, and manage subsurface data.
+  integrations: Patterns and APIs for integrating Azure Energy Data Services with
+    analytics platforms, external data sources, logs/monitoring, and domain data stores
+    (Petrel, seismic, wells, reservoirs).
   security: 'Securing ADME: auth tokens, ACLs, encryption, legal tags, user/group
-    entitlements, API protection, private endpoints, managed identities, and support
-    access control.'
+    entitlements, managed identities, private endpoints, API Management, and support
+    access controls.'
   deployment: Guides for deploying Azure Energy Data Services components, including
     Geospatial Consumption Zone on AKS and the OSDU Admin UI for Azure Data Manager
     for Energy administration
@@ -24,17 +24,17 @@ category_descriptions:
     error patterns.
 skill_description: Expert knowledge for Azure Energy Data Services development including
   troubleshooting, decision making, architecture & design patterns, security, configuration,
-  integrations & coding patterns, and deployment. Use when configuring ADME tiers,
-  partitions/zones, DDMS/EDS APIs, Geospatial CZ on AKS, or ADME security controls,
-  and other Azure Energy Data Services related development tasks. Not for Azure Data
-  Explorer (use azure-data-explorer), Azure Synapse Analytics (use azure-synapse-analytics),
-  Azure Databricks (use azure-databricks), Azure Data Factory (use azure-data-factory).
-use_when: Use when configuring ADME tiers, partitions/zones, DDMS/EDS APIs, Geospatial
-  CZ on AKS, or ADME security controls, and other Azure Energy Data Services related
+  integrations & coding patterns, and deployment. Use when configuring ADME partitions/zones,
+  legal tags & ACLs, Petrel/seismic integrations, or Geospatial CZ on AKS, and other
+  Azure Energy Data Services related development tasks. Not for Azure Data Explorer
+  (use azure-data-explorer), Azure Synapse Analytics (use azure-synapse-analytics),
+  Azure Data Factory (use azure-data-factory), Azure Databricks (use azure-databricks).
+use_when: Use when configuring ADME partitions/zones, legal tags & ACLs, Petrel/seismic
+  integrations, or Geospatial CZ on AKS, and other Azure Energy Data Services related
   development tasks.
 confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure Synapse
-  Analytics (use azure-synapse-analytics), Azure Databricks (use azure-databricks),
-  Azure Data Factory (use azure-data-factory).
+  Analytics (use azure-synapse-analytics), Azure Data Factory (use azure-data-factory),
+  Azure Databricks (use azure-databricks).
 ---
 # Azure Energy Data Services Crawl Report
 
@@ -47,10 +47,10 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 - **Unclassified**: 19
 
 ### Incremental Update
-- **New Pages**: 7
-- **Updated Pages**: 2
-- **Unchanged**: 48
-- **Deleted Pages**: 2
+- **New Pages**: 3
+- **Updated Pages**: 1
+- **Unchanged**: 53
+- **Deleted Pages**: 3
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-energy-data-services/azure-energy-data-services.csv`
 
 ## Classification Statistics
@@ -58,11 +58,11 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 1 | 1.8% |
-| configuration | 5 | 8.8% |
+| configuration | 4 | 7.0% |
 | decision-making | 2 | 3.5% |
 | deployment | 2 | 3.5% |
 | integrations | 17 | 29.8% |
-| security | 10 | 17.5% |
+| security | 11 | 19.3% |
 | troubleshooting | 1 | 1.8% |
 | *(Unclassified)* | 19 | 33.3% |
 
@@ -70,25 +70,20 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 
 ### New Pages
 
-- [Connect ACZ to Microsoft Fabric](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-connect-analytics-consumption-zone-to-fabric)
-- [Connect ACZ to Azure Databricks](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-connect-analytics-consumption-zone-to-databricks)
-- [Use analytics consumption zone APIs](https://learn.microsoft.com/en-us/azure/energy-data-services/tutorial-analytics-consumption-zone-apis)
-- [Syncing reference data values](https://learn.microsoft.com/en-us/azure/energy-data-services/concepts-reference-data-values)
-- [Analytics consumption zone (ACZ)](https://learn.microsoft.com/en-us/azure/energy-data-services/concepts-analytics-consumption-zone)
-- [How to enable legal tags restricted COO](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-enable-legal-tags-restricted-country-of-origin)
-- [How to enable the Analytics Consumption Zone (ACZ)](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-enable-analytics-consumption-zone)
+- [Connect Analytics Consumption Zone (ACZ) to Microsoft Fabric](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-connect-analytics-consumption-zone-to-fabric)
+- [Connect Analytics Consumption Zone (ACZ) to Azure Databricks](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-connect-analytics-consumption-zone-to-databricks)
+- [Use Analytics Consumption Zone (ACZ) APIs](https://learn.microsoft.com/en-us/azure/energy-data-services/tutorial-analytics-consumption-zone-apis)
 
 ### Updated Pages
 
-- [FAQ](https://learn.microsoft.com/en-us/azure/energy-data-services/faq-energy-data-services)
-  - Updated: 2026-02-11T18:17:00.000Z → 2026-05-19T11:41:00.000Z
-- [Release notes](https://learn.microsoft.com/en-us/azure/energy-data-services/release-notes)
-  - Updated: 2026-01-29T06:14:00.000Z → 2026-05-22T17:10:00.000Z
+- [How to enable the Analytics Consumption Zone (ACZ)](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-enable-analytics-consumption-zone)
+  - Updated: 2026-05-19T11:41:00.000Z → 2026-05-27T12:06:00.000Z
 
 ### Deleted Pages
 
-- ~~Syncing Reference data values~~ (https://learn.microsoft.com/en-us/azure/energy-data-services/concepts-reference-data-values)
-- ~~How to enable legal tags restricted COO (Country of Origin)~~ (https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-enable-legal-tags-restricted-country-of-origin)
+- ~~Connect ACZ to Azure Databricks~~ (https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-connect-analytics-consumption-zone-to-databricks)
+- ~~Connect ACZ to Microsoft Fabric~~ (https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-connect-analytics-consumption-zone-to-fabric)
+- ~~Use analytics consumption zone APIs~~ (https://learn.microsoft.com/en-us/azure/energy-data-services/tutorial-analytics-consumption-zone-apis)
 
 ## Classified Pages
 
@@ -100,13 +95,13 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 | [Integrate OSDU Service Logs with Azure Monitor](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-integrate-osdu-service-logs-with-azure-monitor) | integrations | 0.75 | Integration of OSDU service logs with Azure Monitor via diagnostic settings; includes product-specific log categories and configuration parameters. |
 | [Publish Microsoft Azure Data Manager for Energy APIs to a secured API gateway](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-secure-apis) | security | 0.75 | Describes publishing APIs through Azure API Management with Private Link and removing public access. Likely includes specific security configuration steps, policies, and network/security settings unique to this integration. |
 | [Set up Private Links](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-set-up-private-links) | security | 0.75 | Private endpoint setup for ADME; includes specific resource types, endpoint configuration, and network security settings. |
-| [Connect ACZ to Azure Databricks](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-connect-analytics-consumption-zone-to-databricks) | integrations | 0.70 | Describes configuring Analytics Consumption Zone to export Azure Data Manager for Energy data to Azure Databricks using external tables and Delta Lake. This is a product-specific integration pattern with Databricks SQL/notebooks and ACZ, likely including configuration details (external table definitions, storage paths, Delta settings) that qualify as expert integration knowledge. |
+| [Connect Analytics Consumption Zone (ACZ) to Azure Databricks](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-connect-analytics-consumption-zone-to-databricks) | integrations | 0.70 | Describes configuring Analytics Consumption Zone to export Azure Data Manager for Energy data to Azure Databricks using external tables and Delta Lake. This is a product-specific integration pattern that likely includes configuration parameters, table definitions, and Databricks/Delta specifics that go beyond generic knowledge, fitting the integrations sub-skill. |
 | [Deploy Geospatial Consumption Zone (GCZ)](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-deploy-gcz) | deployment | 0.70 | Describes how to deploy the OSDU Geospatial Consumption Zone on AKS on top of Azure Data Manager for Energy. This is a product-specific deployment scenario that likely includes required components, versions, and constraints unique to this stack, which qualifies as deployment-focused expert knowledge beyond generic AKS deployment steps. |
 | [Deploy OSDU Admin UI](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-deploy-osdu-admin-ui) | deployment | 0.70 | Shows how to deploy Admin UI on ADME; includes product-specific deployment steps and possibly constraints. |
 | [Generate auth token](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-generate-auth-token) | security | 0.70 | Token generation for service principals and users is security/auth configuration. Likely includes specific endpoints, scopes, request parameters, and token lifetimes unique to this product, which are expert-level details. |
 | [How to enable External Data Services (EDS)](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-enable-external-data-services) | integrations | 0.70 | Describes enabling EDS with managed identity and Key Vault; includes specific configuration parameters and identity settings. |
 | [How to enable legal tags restricted COO](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-enable-legal-tags-restricted-country-of-origin) | security | 0.70 | How-to for enabling legal tag creation for restricted country-of-origin data likely includes specific security/authorization steps, role or permission requirements, and product-specific legal tag configuration details. |
-| [How to enable the Analytics Consumption Zone (ACZ)](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-enable-analytics-consumption-zone) | configuration | 0.70 | Describes one-time enablement of ACZ including managed identity, storage account, and permissions; this typically involves specific configuration parameters, identities, and settings unique to this product. |
+| [How to enable the Analytics Consumption Zone (ACZ)](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-enable-analytics-consumption-zone) | security | 0.70 | The article describes enabling ACZ by configuring a user-assigned managed identity, storage account, and permissions. This typically includes specific role assignments (RBAC role names), identity configuration steps, and storage access settings unique to ACZ in Azure Data Manager for Energy, which aligns with the security sub-skill focused on IAM and product-specific security configuration. |
 | [How to manage upgrade settings](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-manage-upgrade-settings) | configuration | 0.70 | Page is about viewing and managing upgrade settings, which implies specific configuration options controlling how milestone upgrades are applied. This is product-specific configuration behavior rather than a generic overview, fitting the configuration sub-skill. |
 | [How to register External Data Services (EDS)](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-register-external-data-services) | integrations | 0.70 | How-to for registering external data services; likely includes configuration fields, endpoints, and constraints for EDS registrations. |
 | [Manage ACLs](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-manage-acls) | security | 0.70 | How-to for managing ACLs on data records; involves product-specific ACL fields and allowed values. |
@@ -120,7 +115,8 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 | [Use Reservoir DDMS websocket APIs](https://learn.microsoft.com/en-us/azure/energy-data-services/tutorial-reservoir-ddms-websocket) | integrations | 0.70 | Websocket API usage is highly product-specific; likely includes endpoint URLs, message formats, and connection parameters. |
 | [Use Rock and Fluid Samples DDMS APIs](https://learn.microsoft.com/en-us/azure/energy-data-services/tutorial-rock-and-fluid-samples-ddms) | integrations | 0.70 | End-to-end cURL interactions with RAFS DDMS endpoints; includes concrete API paths and request/response structures. |
 | [Use Seismic Store DDMS sdutil](https://learn.microsoft.com/en-us/azure/energy-data-services/tutorial-seismic-ddms-sdutil) | integrations | 0.70 | Command-line tool usage for Seismic Store is product-specific integration; likely includes concrete CLI parameters, options, and patterns unique to this service. |
-| [Connect ACZ to Microsoft Fabric](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-connect-analytics-consumption-zone-to-fabric) | integrations | 0.65 | How-to article for wiring Analytics Consumption Zone data stored in ADLS Gen2 into Microsoft Fabric via OneLake shortcuts. This is a concrete integration pattern between Azure Data Manager for Energy and Fabric, likely including product-specific configuration steps and parameters for shortcuts and lakehouses that go beyond generic knowledge. |
+| [Connect Analytics Consumption Zone (ACZ) to Microsoft Fabric](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-connect-analytics-consumption-zone-to-fabric) | integrations | 0.68 | How-to guide for wiring Analytics Consumption Zone data in ADLS Gen2 into Microsoft Fabric via OneLake shortcuts. Likely includes product-specific connection steps, endpoint/URI patterns, and configuration details unique to Azure Data Manager for Energy and Fabric integration, which qualify as integration-focused expert knowledge rather than generic tutorial content. |
+| [Use Analytics Consumption Zone (ACZ) APIs](https://learn.microsoft.com/en-us/azure/energy-data-services/tutorial-analytics-consumption-zone-apis) | integrations | 0.68 | The tutorial uses cURL against ACZ management APIs and likely documents product-specific REST endpoints, request/response schemas, and required parameters for creating, listing, getting, and deleting ACZ instances. These API details (paths, methods, required headers, body fields) are integration-specific patterns that go beyond generic knowledge and fit the integrations category. |
 | [Manage data partitions](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-add-more-data-partitions) | configuration | 0.65 | How-to for managing data partitions; likely includes specific partition configuration fields and constraints. |
 | [Set up Resource sharing (CORS)](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-enable-cors) | configuration | 0.65 | CORS setup guides typically include specific configuration parameters (allowed origins, methods, headers) and how to apply them for this product. This is product-specific configuration detail beyond generic CORS concepts. |
 | [Set up audit logs](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-manage-audit-logs) | configuration | 0.65 | Managing audit logs usually involves product-specific settings (log categories, destinations, schemas, enabling/disabling options). These are concrete configuration details unique to this service rather than generic logging concepts. |
@@ -129,7 +125,6 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 | [Use Seismic Store DDMS APIs](https://learn.microsoft.com/en-us/azure/energy-data-services/tutorial-seismic-ddms) | integrations | 0.65 | Tutorial for Seismic DDMS APIs with cURL implies specific REST endpoints, parameters, and request patterns unique to this product. |
 | [Use Well Delivery DDMS APIs](https://learn.microsoft.com/en-us/azure/energy-data-services/tutorial-well-delivery-ddms) | integrations | 0.65 | API-focused tutorial (Well Delivery DDMS) using Postman/cURL; contains concrete endpoints and request schemas specific to this service. |
 | [Use Wellbore DDMS APIs](https://learn.microsoft.com/en-us/azure/energy-data-services/tutorial-wellbore-ddms) | integrations | 0.65 | Shows how to work with Wellbore DDMS APIs via cURL; likely includes product-specific API paths and parameters. |
-| [Use analytics consumption zone APIs](https://learn.microsoft.com/en-us/azure/energy-data-services/tutorial-analytics-consumption-zone-apis) | integrations | 0.65 | Tutorial for ACZ management APIs likely includes concrete REST endpoints, parameters, and example cURL requests specific to Azure Data Manager for Energy, which fits product-specific integration and coding patterns. |
 | [OSDU® services available on Azure Data Manager for Energy](https://learn.microsoft.com/en-us/azure/energy-data-services/osdu-services-on-adme) | decision-making | 0.60 | Service availability matrix between Azure Data Manager for Energy and community OSDU; helps decide which services/features can be used where. |
 | [Reliability overview](https://learn.microsoft.com/en-us/azure/energy-data-services/reliability-energy-data-services) | architecture-patterns | 0.60 | Covers regional and cross-region resiliency patterns (zone-redundant instances, active-passive DR) specific to this service; likely includes concrete guidance on when to use each pattern. |
 

@@ -46,9 +46,9 @@ confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure
 - **Unclassified**: 83
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 2
-- **Unchanged**: 164
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 168
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-key-vault/azure-key-vault.csv`
 
@@ -67,18 +67,6 @@ confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure
 | *(Unclassified)* | 83 | 49.4% |
 
 ## Changes
-
-### New Pages
-
-- [About keys](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/about-keys)
-- [Key types, algorithms, and operations](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/about-keys-details)
-
-### Updated Pages
-
-- [About Key Vault keys](https://learn.microsoft.com/en-us/azure/key-vault/keys/about-keys)
-  - Updated: 2026-03-26T08:00:00.000Z → 2026-05-22T06:11:00.000Z
-- [Key types, algorithms, and operations](https://learn.microsoft.com/en-us/azure/key-vault/keys/about-keys-details)
-  - Updated: 2026-04-09T08:00:00.000Z → 2026-05-22T06:11:00.000Z
 
 ## Classified Pages
 

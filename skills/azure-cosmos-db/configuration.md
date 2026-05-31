@@ -13,7 +13,6 @@
 | Configure provisioned and autoscale throughput for Cosmos DB Cassandra | https://learn.microsoft.com/en-us/azure/cosmos-db/cassandra/how-to-provision-throughput |
 | Configure monitoring insights for Cosmos DB Cassandra | https://learn.microsoft.com/en-us/azure/cosmos-db/cassandra/monitor-insights |
 | Change the partition key for a Cosmos DB container | https://learn.microsoft.com/en-us/azure/cosmos-db/change-partition-key |
-| Configure Azure Synapse Link for Azure Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/configure-synapse-link |
 | Configure Azure Cosmos DB container copy jobs | https://learn.microsoft.com/en-us/azure/cosmos-db/container-copy |
 | Configure resource model for Cosmos DB point-in-time restore | https://learn.microsoft.com/en-us/azure/cosmos-db/continuous-backup-restore-resource-model |
 | Configure Azure Monitor alerts for Cosmos DB metrics and logs | https://learn.microsoft.com/en-us/azure/cosmos-db/create-alerts |
@@ -24,7 +23,6 @@
 | Configure and use Cosmos DB full-text search | https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/full-text-search |
 | Configure hybrid vector and full-text search in Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/hybrid-search |
 | Configure Sharded DiskANN vector indexes in Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/sharded-diskann |
-| Reference stopwords for Cosmos DB full-text search | https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/stopwords |
 | Configure and run vector similarity search in Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/vector-search-overview |
 | Enable and use CDC in Cosmos DB analytical store | https://learn.microsoft.com/en-us/azure/cosmos-db/get-started-change-data-capture |
 | Access and use system properties in Cosmos DB Gremlin | https://learn.microsoft.com/en-us/azure/cosmos-db/gremlin/access-system-properties |
@@ -104,7 +102,7 @@
 | Use Cosmos DB SQL query metrics for performance analysis | https://learn.microsoft.com/en-us/azure/cosmos-db/query-metrics |
 | Retrieve Cosmos DB SQL query performance metrics with .NET SDK | https://learn.microsoft.com/en-us/azure/cosmos-db/query-metrics-performance |
 | Retrieve Cosmos DB query execution metrics with Python SDK | https://learn.microsoft.com/en-us/azure/cosmos-db/query-metrics-performance-python |
-| Create Cosmos DB vector index with TypeScript | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-create-vector-index-typescript |
+| Create and configure Cosmos DB vector index with TypeScript | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-create-vector-index-typescript |
 | Configure Cosmos DB account, database, and container | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-portal |
 | Provision Cosmos DB resources using Bicep | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-template-bicep |
 | Provision Cosmos DB with ARM templates | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-template-json |
@@ -113,7 +111,6 @@
 | Configure resource model for Cosmos DB same-account restore | https://learn.microsoft.com/en-us/azure/cosmos-db/restore-in-account-continuous-backup-resource-model |
 | Configure Cosmos DB SDK observability with OpenTelemetry and App Insights | https://learn.microsoft.com/en-us/azure/cosmos-db/sdk-observability |
 | Set up Model Context Protocol server for Cosmos DB Shell | https://learn.microsoft.com/en-us/azure/cosmos-db/shell/model-context-protocol-setup |
-| Configure and use the Cosmos DB Shell VS Code extension | https://learn.microsoft.com/en-us/azure/cosmos-db/shell/visual-studio-code |
 | Find RU charges for Azure Cosmos DB for Table operations | https://learn.microsoft.com/en-us/azure/cosmos-db/table/find-request-unit-charge |
 | Create and configure containers in Azure Cosmos DB for Table | https://learn.microsoft.com/en-us/azure/cosmos-db/table/how-to-create-container |
 | Configure throughput buckets for shared Cosmos DB containers | https://learn.microsoft.com/en-us/azure/cosmos-db/throughput-buckets |

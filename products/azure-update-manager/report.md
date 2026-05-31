@@ -49,8 +49,8 @@ confusable_not_for: Not for Azure Automation (use azure-automation), Azure Polic
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 82
+- **Updated Pages**: 0
+- **Unchanged**: 84
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-update-manager/azure-update-manager.csv`
 
@@ -69,13 +69,6 @@ confusable_not_for: Not for Azure Automation (use azure-automation), Azure Polic
 | *(Unclassified)* | 30 | 35.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [Check for Updates, One time update, Periodic assessment and Customer managed Schedules](https://learn.microsoft.com/en-us/azure/update-manager/support-matrix-updates)
-  - Updated: 2025-09-19T05:15:00.000Z → 2026-05-19T17:12:00.000Z
-- [Manage Hotpatches on Arc-Enabled Machines (preview)](https://learn.microsoft.com/en-us/azure/update-manager/manage-hot-patching-arc-machines)
-  - Updated: 2025-12-11T18:27:00.000Z → 2026-05-18T22:17:00.000Z
 
 ## Classified Pages
 

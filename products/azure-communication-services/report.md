@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Notification Hubs (use azure-notification-hubs
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 516
+- **Updated Pages**: 0
+- **Unchanged**: 517
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-communication-services/azure-communication-services.csv`
 
@@ -76,11 +76,6 @@ confusable_not_for: Not for Azure Notification Hubs (use azure-notification-hubs
 | *(Unclassified)* | 102 | 19.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [Azure Government](https://learn.microsoft.com/en-us/azure/communication-services/concepts/government)
-  - Updated: 2026-03-26T22:23:00.000Z → 2026-05-22T17:10:00.000Z
 
 ## Classified Pages
 

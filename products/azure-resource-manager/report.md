@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-24'
+generated_at: '2026-05-31'
 category_descriptions:
   deployment: 'Deploying and moving Azure resources with ARM/Bicep: CI/CD pipelines,
     template specs, deployment scripts, deployment stacks, and cross-subscription/region
@@ -22,9 +22,9 @@ category_descriptions:
   security: 'Securing ARM/Bicep deployments: handling secrets, secure parameters,
     RBAC, locks, Private Link, TLS, cross-tenant auth, policy mappings, and management
     group protection.'
-  decision-making: Guidance on choosing ARM deployment models and modes, migrating
-    (ASM→ARM, JSON→Bicep, Blueprints→stacks), planning large-scale regional relocations,
-    and understanding tags and delete behavior.
+  decision-making: Guidance on choosing ARM deployment modes, planning and executing
+    migrations (ASM, ARM JSON, Blueprints), and deciding move/relocation/tagging support
+    for Azure resources.
   architecture-patterns: Bicep architecture patterns for reusable configs, flexible
     parameters, deterministic name generation, and sharing variables across templates
     for scalable ARM deployments.
@@ -32,15 +32,14 @@ skill_description: Expert knowledge for Azure Resource Manager development inclu
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
   Use when using Bicep/ARM templates, deployment stacks, template specs, CI/CD pipelines,
-  or cross-region resource moves, and other Azure Resource Manager related development
+  or CLI/PowerShell/REST deployments, and other Azure Resource Manager related development
   tasks. Not for Azure Blueprints (use azure-blueprints), Azure Policy (use azure-policy),
-  Azure Resource Graph (use azure-resource-graph), Azure Portal (use azure-portal).
+  Azure Portal (use azure-portal), Azure Resource Graph (use azure-resource-graph).
 use_when: Use when using Bicep/ARM templates, deployment stacks, template specs, CI/CD
-  pipelines, or cross-region resource moves, and other Azure Resource Manager related
-  development tasks.
+  pipelines, or CLI/PowerShell/REST deployments, and other Azure Resource Manager
+  related development tasks.
 confusable_not_for: Not for Azure Blueprints (use azure-blueprints), Azure Policy
-  (use azure-policy), Azure Resource Graph (use azure-resource-graph), Azure Portal
-  (use azure-portal).
+  (use azure-policy), Azure Portal (use azure-portal), Azure Resource Graph (use azure-resource-graph).
 ---
 # Azure Resource Manager Crawl Report
 
@@ -66,8 +65,8 @@ confusable_not_for: Not for Azure Blueprints (use azure-blueprints), Azure Polic
 | architecture-patterns | 4 | 0.9% |
 | best-practices | 43 | 9.3% |
 | configuration | 61 | 13.1% |
-| decision-making | 11 | 2.4% |
-| deployment | 53 | 11.4% |
+| decision-making | 12 | 2.6% |
+| deployment | 52 | 11.2% |
 | integrations | 49 | 10.6% |
 | limits-quotas | 23 | 5.0% |
 | security | 23 | 5.0% |
@@ -78,10 +77,10 @@ confusable_not_for: Not for Azure Blueprints (use azure-blueprints), Azure Polic
 
 ### Updated Pages
 
-- [BCP033](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/diagnostics/bcp033)
-  - Updated: 2025-10-30T08:00:00.000Z → 2026-05-20T22:22:00.000Z
-- [Add service group members with REST API](https://learn.microsoft.com/en-us/azure/governance/service-groups/create-service-group-member-rest-api)
-  - Updated: 2026-04-09T22:25:00.000Z → 2026-05-20T17:14:00.000Z
+- [Resources supported for move](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-support-resources)
+  - Updated: 2025-10-26T08:00:00.000Z → 2026-05-26T08:00:00.000Z
+- [What are Azure Service Groups?](https://learn.microsoft.com/en-us/azure/governance/service-groups/overview)
+  - Updated: 2026-04-09T22:25:00.000Z → 2026-05-26T22:16:00.000Z
 
 ## Classified Pages
 
@@ -350,7 +349,7 @@ confusable_not_for: Not for Azure Blueprints (use azure-blueprints), Azure Polic
 | [Resource group](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deploy-to-resource-group) | deployment | 0.70 | Describes how to set deployment scope to resource groups and target multiple groups; product-specific deployment behavior and scope configuration. |
 | [Resource providers and types](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/resource-providers-and-types) | configuration | 0.70 | Explains provider registration, resource type schemas, API version lists, and region availability; these are concrete configuration capabilities for ARM resources. |
 | [Resource quota exceeded](https://learn.microsoft.com/en-us/azure/azure-resource-manager/troubleshooting/error-resource-quota) | limits-quotas | 0.70 | Focuses on quota-related deployment failures and how to address them, involving specific platform quota behaviors and error patterns. |
-| [Resources supported for move](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-support-resources) | deployment | 0.70 | Lists which resource types support move operations and special considerations, a product-specific deployment capability matrix. |
+| [Resources supported for move](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-support-resources) | decision-making | 0.70 | Page provides a detailed, product-specific matrix of which Azure resource types can be moved between resource groups, subscriptions, or regions, along with special considerations and constraints. This is expert knowledge not inferable from general training data and directly supports decision-making about whether and how to move particular resources. |
 | [Scope functions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-functions-scope) | integrations | 0.70 | Describes Bicep functions for scope handling (subscription, resource group, etc.), which are specific to ARM/Bicep. |
 | [Secrets](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/scenarios-secrets) | security | 0.70 | Describes product-specific patterns for handling secrets with Bicep and Azure Key Vault, including secure parameter handling and secret propagation, which are security-focused and configuration-specific. |
 | [Security controls by Azure Policy](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/security-controls-policy) | security | 0.70 | Lists concrete built-in Azure Policy definitions mapped to specific regulatory controls and standards for Azure Resource Manager, including policy names and control IDs that are product-specific security configuration knowledge. |
@@ -553,6 +552,6 @@ confusable_not_for: Not for Azure Blueprints (use azure-blueprints), Azure Polic
 | [Frequently asked questions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/frequently-asked-questions) | 0.20 | FAQ-style overview about Azure Resource Manager usage; primarily conceptual Q&A without detailed numeric limits, configuration parameter tables, error-code-based troubleshooting flows, or decision matrices. Does not meet thresholds for any expert-knowledge sub-skill type. |
 | [Introduction to move](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-resources-overview) | 0.20 | High-level overview of moving resources; no detailed limits, configs, or decision matrices. |
 | [Management groups](https://learn.microsoft.com/en-us/azure/governance/management-groups/overview) | 0.20 | High-level overview of management groups and inheritance; no detailed limits, configs, or decision matrices. |
-| [What are Azure Service Groups?](https://learn.microsoft.com/en-us/azure/governance/service-groups/overview) | 0.20 | High-level overview of Azure Service Groups; describes concepts and scenarios but no specific limits, configuration parameter tables, error codes, or decision matrices. |
+| [What are Azure Service Groups?](https://learn.microsoft.com/en-us/azure/governance/service-groups/overview) | 0.20 | Overview of Azure Service Groups describing conceptual usage and benefits; no detailed limits, configuration tables, error codes, or product-specific numeric thresholds or decision matrices. |
 | [What is Resource Manager?](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/overview) | 0.20 | High-level overview of Azure Resource Manager; conceptual description without detailed limits, configs, or troubleshooting content. |
 | [What is Bicep?](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview) | 0.10 | High-level overview of Bicep language; conceptual description without product-specific limits, configuration tables, or decision matrices. |

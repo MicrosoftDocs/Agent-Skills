@@ -1,9 +1,9 @@
 ---
 name: azure-confidential-computing
-description: Expert knowledge for Azure Confidential Computing development including decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building SGX/SEV-SNP apps, guest attestation/SKR flows, AKS confidential nodes, Fortanix/Key Vault, or SGX sizing, and other Azure Confidential Computing related development tasks. Not for Azure Virtual Enclaves (use azure-virtual-enclaves), Azure Dedicated HSM (use azure-dedicated-hsm), Azure Cloud Hsm (use azure-cloud-hsm), Azure Payment Hsm (use azure-payment-hsm).
+description: Expert knowledge for Azure Confidential Computing development including decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using SGX/SEV-SNP enclaves, AKS confidential containers, vTPM, SKR with Key Vault/Fortanix, or CVMs, and other Azure Confidential Computing related development tasks. Not for Azure Virtual Enclaves (use azure-virtual-enclaves), Azure Virtual Machines (use azure-virtual-machines), Azure Key Vault (use azure-key-vault), Azure Dedicated HSM (use azure-dedicated-hsm).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-17"
+  generated_at: "2026-05-31"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Confidential Computing Skill
@@ -26,11 +26,11 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Decision Making | L35-L47 | Guidance on choosing Azure confidential computing options: VMs (AMD/Intel), containers, GPUs, deployment models, capabilities, products, and use cases for secure workloads. |
 | Architecture & Design Patterns | L48-L57 | Architectural patterns and design guidance for using Azure confidential VMs, SGX enclaves, AKS, and multi-party analytics to build secure AI and containerized workloads. |
-| Limits & Quotas | L58-L64 | Intel SGX capacity, quotas, and sizing for Azure confidential computing: AKS confidential node limits, SGX VM sizing guidance, and FAQ on SGX resource constraints. |
-| Security | L65-L81 | Security and attestation for confidential VMs/containers/SGX, including guest attestation, vTPM, key/secrets management, AKS security model, and hardening Linux images. |
-| Configuration | L82-L91 | Configuring Azure confidential VMs and AKS: SGX/device plugins, confidential containers, VMMD blob opt-out, key rotation, secure key release policies, and Virtual Machine Metablob Disk. |
-| Integrations & Coding Patterns | L92-L102 | Coding patterns and samples for building, running, and attesting Intel SGX/AMD SEV-SNP confidential apps and containers, including SKR flows, tools, and Fortanix/Key Vault integrations. |
-| Deployment | L103-L113 | How to deploy and migrate Azure confidential VMs/VMSS and AKS (SGX and confidential node pools), create custom images, and set up Fortanix CCM using CLI and ARM templates. |
+| Limits & Quotas | L58-L63 | Intel SGX capacity, quotas, and sizing for Azure confidential computing: AKS confidential node limits, SGX VM sizing guidance, and FAQ on SGX resource constraints. |
+| Security | L64-L80 | Security, attestation, and key/secrets management for Azure confidential workloads: SGX enclaves, CVMs, vTPM, AKS confidential containers, clean rooms, and hardening Linux images. |
+| Configuration | L81-L90 | Configuring Azure confidential VMs and AKS: SGX/device plugins, confidential containers, VMMD blob opt-out, key rotation, secure key release policies, and Virtual Machine Metablob Disk. |
+| Integrations & Coding Patterns | L91-L101 | Coding patterns and samples for building, running, and attesting Intel SGX/AMD SEV-SNP confidential apps and containers, including SKR flows, tools, and Fortanix/Key Vault integrations. |
+| Deployment | L102-L112 | How to deploy and migrate Azure confidential VMs/VMSS and AKS (SGX and confidential node pools), create custom images, and set up Fortanix CCM using CLI and ARM templates. |
 
 ### Decision Making
 | Topic | URL |
@@ -59,7 +59,6 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | AKS confidential nodes Intel SGX capacity details | https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-nodes-aks-faq |
-| Azure confidential computing Intel SGX limits FAQ | https://learn.microsoft.com/en-us/azure/confidential-computing/faq-application-enclaves |
 | Deploy and size Intel SGX VMs on Azure | https://learn.microsoft.com/en-us/azure/confidential-computing/virtual-machine-solutions-sgx |
 
 ### Security
@@ -70,7 +69,7 @@ This skill requires **network access** to fetch documentation content:
 | Use Secure Key Release with Azure Key Vault and confidential computing | https://learn.microsoft.com/en-us/azure/confidential-computing/concept-skr-attestation |
 | Use Azure Confidential Clean Rooms for secure collaboration | https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-clean-rooms |
 | Security model for AKS Confidential Containers | https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-containers-aks-security-policy |
-| Understand security and usage of Azure confidential VMs | https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-vm-faq |
+| Understand security details for Azure confidential VMs | https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-vm-faq |
 | Configure guest attestation for Azure confidential VMs | https://learn.microsoft.com/en-us/azure/confidential-computing/guest-attestation-confidential-vms |
 | Secure confidential VMs with Defender for Cloud and guest attestation | https://learn.microsoft.com/en-us/azure/confidential-computing/guest-attestation-defender-for-cloud |
 | Harden Linux images by removing Azure guest agent | https://learn.microsoft.com/en-us/azure/confidential-computing/harden-a-linux-image-to-remove-azure-guest-agent |

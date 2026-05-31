@@ -47,9 +47,9 @@ confusable_not_for: Not for Azure Virtual Network Manager (use azure-virtual-net
 - **Unclassified**: 76
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 3
-- **Unchanged**: 126
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 130
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-network/azure-virtual-network.csv`
 
@@ -68,19 +68,6 @@ confusable_not_for: Not for Azure Virtual Network Manager (use azure-virtual-net
 | *(Unclassified)* | 76 | 58.5% |
 
 ## Changes
-
-### New Pages
-
-- [Advertised gateway prefixes](https://learn.microsoft.com/en-us/azure/virtual-network/advertised-gateway-prefixes-overview)
-
-### Updated Pages
-
-- [Traffic routing](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-udr-overview)
-  - Updated: 2025-05-21T22:04:00.000Z → 2026-03-31T08:00:00.000Z
-- [Virtual network peering](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview)
-  - Updated: 2025-07-17T17:23:00.000Z → 2026-05-20T05:21:00.000Z
-- [MANA on Network Virtual Appliances (NVAs) for existing VM sizes](https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-network-virtual-appliance-opt-out)
-  - Updated: 2026-05-06T22:13:00.000Z → 2026-05-22T17:10:00.000Z
 
 ## Classified Pages
 

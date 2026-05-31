@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-17'
+generated_at: '2026-05-31'
 category_descriptions:
   best-practices: 'Performance, DataOps, and reliability best practices for ADF: tuning
     data flows/copy, optimizing sources/sinks/IR, handling schema drift/errors, and
@@ -25,18 +25,18 @@ category_descriptions:
   deployment: 'CI/CD and deployment for ADF: ARM/linked templates, Azure DevOps pipelines,
     hotfix flows, pre/post scripts, IR automation, SSIS job migration, and runtime
     network migration.'
-  limits-quotas: Covers ADF data flow reservation discounts plus common limits, quotas,
-    throttling behaviors, and frequently asked questions about Azure Data Factory
-    capacity and usage.
+  limits-quotas: ADF data flow reservation discounts, pricing behavior, and the official
+    limits/quotas (throughput, activities, pipelines, data flows) documented in the
+    FAQ.
 skill_description: Expert knowledge for Azure Data Factory development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  designing ADF pipelines, mapping data flows, SHIR/SSIS IR, SAP CDC, or CI/CD with
-  ARM/DevOps, and other Azure Data Factory related development tasks. Not for Azure
-  Synapse Analytics (use azure-synapse-analytics), Azure Databricks (use azure-databricks),
+  building ADF pipelines with data flows, SHIR/SSIS IR, SAP CDC, Key Vault, or VNets/Private
+  Link, and other Azure Data Factory related development tasks. Not for Azure Synapse
+  Analytics (use azure-synapse-analytics), Azure Databricks (use azure-databricks),
   Azure Stream Analytics (use azure-stream-analytics), Azure Data Explorer (use azure-data-explorer).
-use_when: Use when designing ADF pipelines, mapping data flows, SHIR/SSIS IR, SAP
-  CDC, or CI/CD with ARM/DevOps, and other Azure Data Factory related development
+use_when: Use when building ADF pipelines with data flows, SHIR/SSIS IR, SAP CDC,
+  Key Vault, or VNets/Private Link, and other Azure Data Factory related development
   tasks.
 confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics),
   Azure Databricks (use azure-databricks), Azure Stream Analytics (use azure-stream-analytics),
@@ -49,13 +49,13 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 - **Total Pages**: 505
 - **Fetched**: 505
 - **Fetch Failed**: 0
-- **Classified**: 424
-- **Unclassified**: 81
+- **Classified**: 423
+- **Unclassified**: 82
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 505
+- **Updated Pages**: 2
+- **Unchanged**: 503
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-factory/azure-data-factory.csv`
 
@@ -63,7 +63,7 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 7 | 1.4% |
+| architecture-patterns | 6 | 1.2% |
 | best-practices | 19 | 3.8% |
 | configuration | 121 | 24.0% |
 | decision-making | 15 | 3.0% |
@@ -72,9 +72,16 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | limits-quotas | 2 | 0.4% |
 | security | 27 | 5.3% |
 | troubleshooting | 50 | 9.9% |
-| *(Unclassified)* | 81 | 16.0% |
+| *(Unclassified)* | 82 | 16.2% |
 
 ## Changes
+
+### Updated Pages
+
+- [Overview and architecture](https://learn.microsoft.com/en-us/azure/data-factory/sap-change-data-capture-introduction-architecture)
+  - Updated: 2026-03-25T22:12:00.000Z → 2026-05-27T12:06:00.000Z
+- [FAQ](https://learn.microsoft.com/en-us/azure/data-factory/frequently-asked-questions)
+  - Updated: 2025-03-05T23:04:00.000Z → 2026-05-24T11:44:00.000Z
 
 ## Classified Pages
 
@@ -375,7 +382,7 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | [Expression builder](https://learn.microsoft.com/en-us/azure/data-factory/concepts-data-flow-expression-builder) | integrations | 0.70 | Expression builder docs enumerate product-specific expression syntax, operators, and usage patterns unique to ADF/Synapse mapping data flows, including function signatures and behaviors that go beyond generic LLM knowledge. |
 | [Expression language](https://learn.microsoft.com/en-us/azure/data-factory/data-transformation-functions) | integrations | 0.70 | Catalog of ADF/Synapse mapping data flow expression functions with product-specific syntax and parameter patterns; effectively an API surface for the expression language. |
 | [Extract data from PDF source](https://learn.microsoft.com/en-us/azure/data-factory/solution-template-extract-data-from-pdf) | integrations | 0.70 | Provides a solution template for extracting data from PDF sources with ADF, including connector and activity configuration. This is a non-trivial, product-specific integration pattern. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/data-factory/frequently-asked-questions) | limits-quotas | 0.70 | The Azure Data Factory FAQ typically includes concrete, product-specific details such as maximum numbers of integration runtimes, pipelines, activities per pipeline, concurrency behaviors, and other numeric constraints that qualify as limits and quotas beyond generic conceptual knowledge. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/data-factory/frequently-asked-questions) | limits-quotas | 0.70 | Azure Data Factory FAQ pages typically include concrete service limits (e.g., maximum pipelines, activities, integration runtime nodes, concurrency) and other numeric constraints that are not generally known from training. FAQs often consolidate exact values and plan-specific limits, which fits the limits-quotas sub-skill type. |
 | [Filter](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-filter) | configuration | 0.70 | Filter transformation docs usually specify expression configuration, null handling, and performance-related options; these are product-specific configuration settings rather than generic filtering concepts. |
 | [Flatten](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-flatten) | configuration | 0.70 | Flatten transformation is specific to ADF/Synapse; docs typically define array selection, unroll behavior, and mapping options, which are detailed configuration parameters. |
 | [Flowlet](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-flowlet) | configuration | 0.70 | Flowlet docs generally describe how to configure inputs/outputs, parameterization, and invocation within data flows, which are concrete configuration patterns unique to this product feature. |
@@ -478,7 +485,6 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | [Monitor visually](https://learn.microsoft.com/en-us/azure/data-factory/monitor-visually) | configuration | 0.65 | Shows specific monitoring views, filters, and actions in ADF Studio, including UI elements and behaviors unique to ADF monitoring. |
 | [New branch](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-new-branch) | configuration | 0.65 | Multiple branches article likely details how to configure branch creation, sink behavior, and shared transformations, which are concrete configuration patterns specific to ADF/Synapse data flows. |
 | [Overview](https://learn.microsoft.com/en-us/azure/data-factory/join-azure-ssis-integration-runtime-virtual-network) | architecture-patterns | 0.65 | Explains scenarios where vNet-joining Azure-SSIS IR is required and likely compares patterns (on-prem access, private endpoints) with trade-offs, providing product-specific architectural guidance. |
-| [Overview and architecture](https://learn.microsoft.com/en-us/azure/data-factory/sap-change-data-capture-introduction-architecture) | architecture-patterns | 0.65 | Explains SAP CDC capabilities and architecture; for this product, CDC architecture (components, flows, when to use CDC vs other ingestion, and SAP-specific constraints) is a product-specific pattern. Likely includes guidance on when to use this CDC approach and trade-offs versus alternatives. |
 | [Process fixed-width text files](https://learn.microsoft.com/en-us/azure/data-factory/how-to-fixed-width) | integrations | 0.65 | Gives concrete configuration details for defining fixed-length column layouts and using mapping data flows to parse and transform fixed-width files. These are product-specific transformation and schema settings. |
 | [Schema drift](https://learn.microsoft.com/en-us/azure/data-factory/concepts-data-flow-schema-drift) | best-practices | 0.65 | Discusses building resilient data flows under changing schemas; likely includes product-specific recommendations and patterns (e.g., how to configure drift options and transformations) that go beyond generic ETL theory. |
 | [Set Pipeline Return Value](https://learn.microsoft.com/en-us/azure/data-factory/tutorial-pipeline-return-value) | configuration | 0.65 | Tutorial but includes specific pattern and configuration for using Set Variable and pipeline return values between parent/child pipelines; product-specific configuration pattern. |
@@ -559,6 +565,7 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | [From SAP BW to Azure Data Lake Storage Gen2](https://learn.microsoft.com/en-us/azure/data-factory/load-sap-bw-data) | 0.30 | Article on copying data from SAP BW; likely a connector tutorial with steps, not a deep configuration reference or troubleshooting guide with error codes. |
 | [Manage data flow canvas](https://learn.microsoft.com/en-us/azure/data-factory/concepts-data-flow-manage-graph) | 0.30 | UI/how-to guidance for managing the mapping data flow graph; no config tables, limits, or product-specific error/decision matrices. |
 | [New files by last modified data](https://learn.microsoft.com/en-us/azure/data-factory/tutorial-incremental-copy-lastmodified-copy-data-tool) | 0.30 | Tutorial using Copy Data tool for incremental loads; focuses on using the wizard, not on detailed configuration tables, limits, or error-resolution mappings. |
+| [Overview and architecture](https://learn.microsoft.com/en-us/azure/data-factory/sap-change-data-capture-introduction-architecture) | 0.30 | The page is an overview/architecture description of SAP CDC capabilities in Azure Data Factory. The summary indicates high-level architecture and a security note reference, but no evidence of detailed limits, configuration parameter tables, error-code-based troubleshooting, or other product-specific numeric or configuration details that meet the expert-knowledge criteria. |
 | [Overview of templates](https://learn.microsoft.com/en-us/azure/data-factory/solution-templates-introduction) | 0.30 | High-level overview of ADF templates and how they help you get started. Primarily conceptual/introductory without deep product-specific configuration tables or limits. |
 | [Prepare data with wrangling](https://learn.microsoft.com/en-us/azure/data-factory/wrangling-tutorial) | 0.30 | Wrangling data flow getting-started tutorial; focuses on how-to steps, not on limits, tuning, or detailed configuration parameters. |
 | [Run Data Pipelines with Service Level Agreements](https://learn.microsoft.com/en-us/azure/data-factory/tutorial-operationalize-pipelines) | 0.30 | Tutorial on operationalizing pipelines is likely procedural/SLA guidance without detailed limits, configs, or error-code mappings; more conceptual and process-focused. |

@@ -47,10 +47,10 @@ confusable_not_for: Not for Azure Blueprints (use azure-blueprints), Azure Role-
 - **Unclassified**: 59
 
 ### Incremental Update
-- **New Pages**: 2
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 146
-- **Deleted Pages**: 12
+- **Unchanged**: 148
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-policy/azure-policy.csv`
 
 ## Classification Statistics
@@ -67,26 +67,6 @@ confusable_not_for: Not for Azure Blueprints (use azure-blueprints), Azure Role-
 | *(Unclassified)* | 59 | 39.9% |
 
 ## Changes
-
-### New Pages
-
-- [Mutate (preview)](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/effect-mutate)
-- [Azure Policy documentation](https://learn.microsoft.com/en-us/azure/governance/policy/)
-
-### Deleted Pages
-
-- ~~Mutate~~ (https://learn.microsoft.com/en-us/azure/governance/policy/concepts/effect-mutate)
-- ~~System Policy~~ (https://learn.microsoft.com/en-us/azure/governance/policy/concepts/systempolicy)
-- ~~CIS Security Benchmarks - AlmaLinux~~ (https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-linux/alma-ado)
-- ~~CIS Security Benchmarks - Debian Linux~~ (https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-linux/debian-ado)
-- ~~CIS Security Benchmarks - Oracle Linux~~ (https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-linux/oracle-ado)
-- ~~CIS Security Benchmarks - Red Hat Enterprise Linux~~ (https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-linux/rhel-ado)
-- ~~CIS Security Benchmarks - Rocky Linux~~ (https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-linux/rocky-ado)
-- ~~CIS Security Benchmarks - SUSE Linux Enterprise~~ (https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-linux/suse-ado)
-- ~~CIS Security Benchmarks - Ubuntu Linux~~ (https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-linux/ubuntu-ado)
-- ~~CIS Security Benchmarks for Linux Workloads - Overview~~ (https://learn.microsoft.com/en-us/azure/governance/policy/samples/guest-configuration-baseline-cis-linux)
-- ~~Windows security 2025 baseline~~ (https://learn.microsoft.com/en-us/azure/governance/policy/samples/guest-configuration-baseline-windows-server-2025)
-- ~~Apply MFA self-enforcement through Azure Policy~~ (https://learn.microsoft.com/en-us/azure/governance/policy/tutorials/mfa-enforcement)
 
 ## Classified Pages
 

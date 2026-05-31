@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-05-24'
+generated_at: '2026-05-31'
 category_descriptions:
   security: 'Securing Azure Pipelines: auth for agents, service connections, secrets/Key
     Vault, permissions and approvals, secure variables, artifact/repo protection,
     and security scanning/compliance tasks.'
   configuration: 'Configuring Azure Pipelines: agents, triggers, variables, YAML schema,
-    environments, deployment strategies, and detailed setup for built-in tasks, artifacts,
-    tests, and language/tool-specific tasks.'
+    environments, deployment strategies, artifacts, and detailed setup for built-in
+    tasks and test/analytics features.'
   deployment: 'End-to-end deployment with Azure Pipelines: agent setup (self-hosted/scale
     set/deployment groups), CI/CD for apps/containers/DBs, and using built-in tasks
     for IIS, Kubernetes, VMs, and Azure services.'
@@ -31,12 +31,12 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Pipelines development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  configuring YAML pipelines, service connections, Key Vault secrets, self-hosted
-  agents, or Kubernetes/VM deployments, and other Azure Pipelines related development
-  tasks. Not for Azure DevOps (use azure-devops), Azure Boards (use azure-boards),
-  Azure Repos (use azure-repos), Azure Test Plans (use azure-test-plans).
+  configuring YAML pipelines, service connections, Key Vault secrets, deployment agents,
+  or Kubernetes/VM releases, and other Azure Pipelines related development tasks.
+  Not for Azure DevOps (use azure-devops), Azure Boards (use azure-boards), Azure
+  Repos (use azure-repos), Azure Test Plans (use azure-test-plans).
 use_when: Use when configuring YAML pipelines, service connections, Key Vault secrets,
-  self-hosted agents, or Kubernetes/VM deployments, and other Azure Pipelines related
+  deployment agents, or Kubernetes/VM releases, and other Azure Pipelines related
   development tasks.
 confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Boards (use azure-boards),
   Azure Repos (use azure-repos), Azure Test Plans (use azure-test-plans).
@@ -45,16 +45,16 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Boards (use a
 
 ## Summary
 
-- **Total Pages**: 573
-- **Fetched**: 573
+- **Total Pages**: 574
+- **Fetched**: 574
 - **Fetch Failed**: 0
-- **Classified**: 514
+- **Classified**: 515
 - **Unclassified**: 59
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 570
+- **New Pages**: 1
+- **Updated Pages**: 0
+- **Unchanged**: 573
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-pipelines/azure-pipelines.csv`
 
@@ -64,7 +64,7 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Boards (use a
 |------|-------|------------|
 | architecture-patterns | 4 | 0.7% |
 | best-practices | 7 | 1.2% |
-| configuration | 357 | 62.3% |
+| configuration | 358 | 62.4% |
 | decision-making | 3 | 0.5% |
 | deployment | 59 | 10.3% |
 | integrations | 24 | 4.2% |
@@ -75,14 +75,9 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Boards (use a
 
 ## Changes
 
-### Updated Pages
+### New Pages
 
-- [Cache NuGet packages](https://learn.microsoft.com/en-us/azure/devops/pipelines/artifacts/caching-nuget?view=azure-devops)
-  - Updated: 2025-03-10T23:08:00.000Z → 2026-05-19T01:06:00.000Z
-- [Types of triggers](https://learn.microsoft.com/en-us/azure/devops/pipelines/build/triggers?view=azure-devops)
-  - Updated: 2025-10-27T22:02:00.000Z → 2026-05-19T01:06:00.000Z
-- [Access private key vaults from your pipeline](https://learn.microsoft.com/en-us/azure/devops/pipelines/release/key-vault-access?view=azure-devops)
-  - Updated: 2026-05-12T01:02:00.000Z → 2026-05-21T17:06:00.000Z
+- [UniversalPackages@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/universal-packages-v1?view=azure-pipelines)
 
 ## Classified Pages
 
@@ -221,6 +216,7 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Boards (use a
 | [ServiceFabricDeploy@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/service-fabric-deploy-v1?view=azure-pipelines) | configuration | 0.86 | Task reference includes inputs like publishProfilePath, overrideParameters, connectionEndpoint, and their allowed values, which are configuration parameters. |
 | [SqlAzureDacpacDeployment@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/sql-azure-dacpac-deployment-v1?view=azure-pipelines) | configuration | 0.86 | SqlAzureDacpacDeployment@1 reference documents inputs like deploymentAction, DacpacFile, SqlUsername, SqlPassword, and SQLCMD options with specific allowed values. |
 | [TwineAuthenticate@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/twine-authenticate-v1?view=azure-pipelines) | configuration | 0.86 | Provides exact task inputs and environment variables (like PYPIRC_PATH) and how to wire them into twine commands, which is configuration-focused. |
+| [UniversalPackages@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/universal-packages-v1?view=azure-pipelines) | configuration | 0.86 | Task reference pages for Azure Pipelines list task-specific inputs, parameter names, allowed values, defaults, and behavior unique to this task (for example, feed, packageName, versioning options, publish vs download modes, authentication options like WIF vs PAT). These are concrete configuration parameters and options that an LLM wouldn't reliably infer from training, fitting the configuration sub-skill type. |
 | [UsePythonVersion@0](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/use-python-version-v0?view=azure-pipelines) | configuration | 0.86 | Includes inputs like versionSpec, addToPath, architecture, and their defaults, which are configuration parameters. |
 | [VSTest@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/vstest-v1?view=azure-pipelines) | configuration | 0.86 | Azure Pipelines task reference pages list all task inputs, allowed values, defaults, and behavior (for example, specific flags for test selection, diagnostics, and execution). These are product-specific configuration parameters that function as an authoritative schema for the VSTest@1 task, which qualifies as configuration expert knowledge. |
 | [VisualStudioTestPlatformInstaller@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/visual-studio-test-platform-installer-v1?view=azure-pipelines) | configuration | 0.86 | The Visual Studio test platform installer task reference will enumerate inputs such as package feed, version selection, and cache behavior with explicit parameter names and allowed values. This is expert configuration knowledge for this specific task. |

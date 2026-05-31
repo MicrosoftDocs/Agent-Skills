@@ -43,8 +43,8 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure Blob St
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 14
+- **Updated Pages**: 0
+- **Unchanged**: 15
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-table-storage/azure-table-storage.csv`
 
@@ -61,11 +61,6 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure Blob St
 | *(Unclassified)* | 2 | 13.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [Table storage](https://learn.microsoft.com/en-us/azure/storage/tables/scalability-targets)
-  - Updated: 2023-08-25T21:58:00.000Z → 2025-07-02T22:09:00.000Z
 
 ## Classified Pages
 

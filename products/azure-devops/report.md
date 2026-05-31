@@ -52,10 +52,10 @@ confusable_not_for: Not for Azure Boards (use azure-boards), Azure Pipelines (us
 - **Unclassified**: 711
 
 ### Incremental Update
-- **New Pages**: 6
-- **Updated Pages**: 4
-- **Unchanged**: 957
-- **Deleted Pages**: 2
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 967
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-devops/azure-devops.csv`
 
 ## Classification Statistics
@@ -74,31 +74,6 @@ confusable_not_for: Not for Azure Boards (use azure-boards), Azure Pipelines (us
 | *(Unclassified)* | 711 | 73.5% |
 
 ## Changes
-
-### New Pages
-
-- [May 21](https://learn.microsoft.com/en-us/azure/devops/release-notes/2026/boards/sprint-274-update)
-- [May 21](https://learn.microsoft.com/en-us/azure/devops/release-notes/2026/sprint-274-update)
-- [May 21](https://learn.microsoft.com/en-us/azure/devops/release-notes/2026/pipelines/sprint-274-update)
-- [May 21](https://learn.microsoft.com/en-us/azure/devops/release-notes/2026/wiki/sprint-274-update)
-- [April 2026](https://learn.microsoft.com/en-us/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new)
-- [February 2026](https://learn.microsoft.com/en-us/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new)
-
-### Updated Pages
-
-- [Roadmap and features timeline](https://learn.microsoft.com/en-us/azure/devops/managed-devops-pools/features-timeline?view=azure-devops)
-  - Updated: 2026-04-03T21:03:00.000Z → 2026-05-18T17:09:00.000Z
-- [Released features](https://learn.microsoft.com/en-us/azure/devops/release-notes/features-timeline-released)
-  - Updated: 2026-05-05T08:00:00.000Z → 2026-05-21T08:00:00.000Z
-- [What's new](https://learn.microsoft.com/en-us/azure/devops/release-notes/docswhatsnew/)
-  - Updated: 2026-04-09T17:06:00Z → 2026-05-18T17:09:00Z
-- [March 2026](https://learn.microsoft.com/en-us/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new)
-  - Updated: 2026-04-09T17:06:00.000Z → 2026-05-18T17:09:00.000Z
-
-### Deleted Pages
-
-- ~~January 2026~~ (https://learn.microsoft.com/en-us/azure/devops/release-notes/docswhatsnew/azure-devops-docs-2026-01)
-- ~~February 2026~~ (https://learn.microsoft.com/en-us/azure/devops/release-notes/docswhatsnew/azure-devops-docs-2026-02)
 
 ## Classified Pages
 
