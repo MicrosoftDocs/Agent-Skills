@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-05-24'
+generated_at: '2026-06-07'
 category_descriptions:
-  configuration: 'Configuring Data API builder: CLI config management, entities/autoentities,
-    data sources (SQL/Cosmos), caching, security/roles, GraphQL/REST exposure, telemetry,
-    logging, and runtime behavior.'
+  configuration: 'Configuring Data API builder: CLI-based setup, entities/autoentities,
+    data sources (SQL, Cosmos), REST/GraphQL exposure, caching, secrets, telemetry,
+    logging, health, and MCP/SQL tools.'
   integrations: 'GraphQL/REST query patterns in DAB: filtering, sorting, pagination,
     field projection, transactional mutations, schema export, and using SQL MCP DML
     tools from AI agents.'
@@ -15,59 +15,84 @@ category_descriptions:
     LLMs via Ollama
   limits-quotas: Configuring SQL timeouts, setting REST/GraphQL pagination limits,
     and understanding database-specific capabilities and constraints in Data API builder.
-  security: 'Configuring auth for Data API builder: JWT, Entra ID, EasyAuth, OBO flows,
-    simulator/anonymous access, plus database row-level security and SQL MCP auth
-    setup.'
-  deployment: 'Deploying Data API builder: hosting options, air-gapped setup, building/running
-    from source, and deploying the SQL MCP Server to Azure Container Apps.'
-  decision-making: Guidance on where and how to deploy Data API builder, plus feature-by-feature
-    comparisons and limitations across supported databases.
+  security: 'Configuring authentication/authorization for DAB: Entra ID, EasyAuth,
+    JWT, simulator/unauth, managed identity, on‑behalf‑of, SQL auth, and row-level
+    security policies.'
+  deployment: 'Guides for deploying Data API builder: options (cloud/local), Docker/source
+    builds, air-gapped setups, and step-by-step deployments to Azure (SQL, Cosmos
+    DB, SQL MCP Server).'
+  decision-making: Comparisons of Data API builder features across supported databases
+    and guidance on selecting secure Microsoft SQL authentication/authorization patterns.
 skill_description: Expert knowledge for Azure Data Api Builder development including
   troubleshooting, best practices, decision making, limits & quotas, security, configuration,
   integrations & coding patterns, and deployment. Use when exposing SQL/Cosmos via
-  REST/GraphQL, tuning filters/pagination, configuring JWT/Entra auth, or deploying
-  DAB, and other Azure Data Api Builder related development tasks. Not for Azure App
-  Service (use azure-app-service), Azure Functions (use azure-functions), Azure API
-  Management (use azure-api-management), Azure Logic Apps (use azure-logic-apps).
-use_when: Use when exposing SQL/Cosmos via REST/GraphQL, tuning filters/pagination,
-  configuring JWT/Entra auth, or deploying DAB, and other Azure Data Api Builder related
+  REST/GraphQL, tuning filters/paging, securing with Entra/JWT, or deploying to Azure,
+  and other Azure Data Api Builder related development tasks. Not for Azure API Management
+  (use azure-api-management), Azure Functions (use azure-functions), Azure App Service
+  (use azure-app-service), Azure Logic Apps (use azure-logic-apps).
+use_when: Use when exposing SQL/Cosmos via REST/GraphQL, tuning filters/paging, securing
+  with Entra/JWT, or deploying to Azure, and other Azure Data Api Builder related
   development tasks.
-confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Functions
-  (use azure-functions), Azure API Management (use azure-api-management), Azure Logic
-  Apps (use azure-logic-apps).
+confusable_not_for: Not for Azure API Management (use azure-api-management), Azure
+  Functions (use azure-functions), Azure App Service (use azure-app-service), Azure
+  Logic Apps (use azure-logic-apps).
 ---
 # Azure Data Api Builder Crawl Report
 
 ## Summary
 
-- **Total Pages**: 128
-- **Fetched**: 128
+- **Total Pages**: 135
+- **Fetched**: 135
 - **Fetch Failed**: 0
-- **Classified**: 84
-- **Unclassified**: 44
+- **Classified**: 93
+- **Unclassified**: 42
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 128
-- **Deleted Pages**: 0
+- **New Pages**: 9
+- **Updated Pages**: 2
+- **Unchanged**: 124
+- **Deleted Pages**: 2
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-api-builder/azure-data-api-builder.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| best-practices | 4 | 3.1% |
-| configuration | 41 | 32.0% |
-| decision-making | 1 | 0.8% |
-| deployment | 4 | 3.1% |
-| integrations | 11 | 8.6% |
-| limits-quotas | 4 | 3.1% |
-| security | 10 | 7.8% |
-| troubleshooting | 9 | 7.0% |
-| *(Unclassified)* | 44 | 34.4% |
+| best-practices | 4 | 3.0% |
+| configuration | 41 | 30.4% |
+| decision-making | 2 | 1.5% |
+| deployment | 6 | 4.4% |
+| integrations | 11 | 8.1% |
+| limits-quotas | 4 | 3.0% |
+| security | 16 | 11.9% |
+| troubleshooting | 9 | 6.7% |
+| *(Unclassified)* | 42 | 31.1% |
 
 ## Changes
+
+### New Pages
+
+- [Basic SQL](https://learn.microsoft.com/en-us/azure/data-api-builder/quickstart/basic-sql)
+- [Basic NoSQL](https://learn.microsoft.com/en-us/azure/data-api-builder/quickstart/basic-nosql)
+- [Overview](https://learn.microsoft.com/en-us/azure/data-api-builder/quickstart/microsoft-sql-security)
+- [Username/password](https://learn.microsoft.com/en-us/azure/data-api-builder/quickstart/authentication-sql-credentials)
+- [Managed identity](https://learn.microsoft.com/en-us/azure/data-api-builder/quickstart/authentication-managed-identity)
+- [Microsoft Entra](https://learn.microsoft.com/en-us/azure/data-api-builder/quickstart/authentication-microsoft-entra-provider)
+- [DAB policies](https://learn.microsoft.com/en-us/azure/data-api-builder/quickstart/authorization-database-policies)
+- [SQL row-level security](https://learn.microsoft.com/en-us/azure/data-api-builder/quickstart/authorization-sql-row-level-security)
+- [On-behalf-of to Azure SQL](https://learn.microsoft.com/en-us/azure/data-api-builder/quickstart/authentication-on-behalf-of)
+
+### Updated Pages
+
+- [Overview](https://learn.microsoft.com/en-us/azure/data-api-builder/quickstart/)
+  - Updated: 2026-04-01T23:07:00Z → 2026-06-04T17:04:00Z
+- [Property: Data Source](https://learn.microsoft.com/en-us/azure/data-api-builder/configuration/data-source)
+  - Updated: 2026-04-01T23:07:00.000Z → 2026-06-04T17:04:00.000Z
+
+### Deleted Pages
+
+- ~~NoSQL Databases~~ (https://learn.microsoft.com/en-us/azure/data-api-builder/quickstart/basic-nosql)
+- ~~SQL Databases~~ (https://learn.microsoft.com/en-us/azure/data-api-builder/quickstart/basic-sql)
 
 ## Classified Pages
 
@@ -77,7 +102,6 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [Configuration](https://learn.microsoft.com/en-us/azure/data-api-builder/configuration/runtime) | configuration | 0.90 | Reference for runtime configuration schema with property names, types, and defaults. These exact keys and allowed values are product-specific and not inferable from general knowledge. |
 | [Data source files](https://learn.microsoft.com/en-us/azure/data-api-builder/configuration/) | configuration | 0.90 | Duplicate of the configuration schema reference; contains detailed schema properties and allowed values. |
 | [Property: Autoentities](https://learn.microsoft.com/en-us/azure/data-api-builder/configuration/autoentities) | configuration | 0.90 | Autoentities section reference; defines pattern-based configuration properties and their behavior, which are product-specific. |
-| [Property: Data Source](https://learn.microsoft.com/en-us/azure/data-api-builder/configuration/data-source) | configuration | 0.90 | Focuses on the data-source section with details for each property; this is a parameter-level configuration reference with product-specific options. |
 | [Property: Entities](https://learn.microsoft.com/en-us/azure/data-api-builder/configuration/entities) | configuration | 0.90 | Entities section reference with configuration settings for database entities; contains property names and constraints unique to DAB. |
 | [Property: Runtime](https://learn.microsoft.com/en-us/azure/data-api-builder/configuration/runtime) | configuration | 0.90 | Described as configuration settings that determine runtime behavior; likely includes specific setting names and allowed values. |
 | [Schema overview](https://learn.microsoft.com/en-us/azure/data-api-builder/configuration/) | configuration | 0.90 | Described as the full schema for the configuration file with details for each property; this implies parameter names, allowed values, and defaults that are product-specific. |
@@ -92,6 +116,7 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [Troubleshooting](https://learn.microsoft.com/en-us/azure/data-api-builder/troubleshooting/graphql) | troubleshooting | 0.86 | Explicit troubleshooting page for GraphQL schema generation, authorization, introspection, and relationships. Implies mappings from specific issues to causes and fixes. |
 | [Troubleshooting](https://learn.microsoft.com/en-us/azure/data-api-builder/troubleshooting/mcp) | troubleshooting | 0.86 | Page focuses on diagnosing and resolving SQL MCP Server transport, permission, and AI client integration issues with specific, product-focused symptom-to-solution guidance, which qualifies as troubleshooting expert knowledge. |
 | [Troubleshooting](https://learn.microsoft.com/en-us/azure/data-api-builder/troubleshooting/rest) | troubleshooting | 0.86 | Explicitly a troubleshooting page for REST endpoint availability, HTTP methods, OData filters, and CORS. This implies mappings from specific symptoms and errors to causes and resolutions. |
+| [Property: Data Source](https://learn.microsoft.com/en-us/azure/data-api-builder/configuration/data-source) | configuration | 0.85 | Configuration schema reference for the data-source section with detailed property descriptions and options; matches configuration skill type with parameter-level expert knowledge. |
 | [Pass-through (OBO)](https://learn.microsoft.com/en-us/azure/data-api-builder/concept/security/authenticate-on-behalf-of) | security | 0.84 | Explains DAB 2.0 OBO flow with specific configuration for exchanging tokens and connecting to SQL as the user, including product-specific flags/sections and behavior differences vs standard auth. |
 | [Feature Availability](https://learn.microsoft.com/en-us/azure/data-api-builder/feature-availability) | decision-making | 0.82 | Provides cross-database feature comparison tables indicating which features are supported where, guiding decisions on database/platform choice and capabilities. |
 | [dab configure](https://learn.microsoft.com/en-us/azure/data-api-builder/command-line/dab-configure) | configuration | 0.82 | A CLI reference for `dab configure` that adjusts non-entity runtime and data source properties in the DAB config. It likely includes specific option names, flags, and behaviors (all-or-nothing update semantics, TTL, JWT, MCP, DCR/DCE-related settings), which are detailed configuration parameters unique to Data API builder. |
@@ -111,6 +136,9 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [Log levels](https://learn.microsoft.com/en-us/azure/data-api-builder/concept/monitor/log-levels) | configuration | 0.78 | Page describes the runtime.telemetry.log-level configuration section, including how to set global and per-namespace/class log levels. This is product-specific configuration with named settings and allowed values, which an LLM is unlikely to know from training. |
 | [dab add](https://learn.microsoft.com/en-us/azure/data-api-builder/command-line/dab-add) | configuration | 0.78 | Describes how `dab add` mutates the Data API builder configuration file with new entity definitions, including entity-specific configuration fields (permissions, exposure, mappings). These are product-specific config structures and option names, not generic tutorial content. |
 | [dab init](https://learn.microsoft.com/en-us/azure/data-api-builder/command-line/dab-init) | configuration | 0.78 | A DAB CLI reference page that defines the structure and fields of the generated JSON configuration (data source details, endpoint toggles, authentication, runtime behaviors). This is product-specific configuration knowledge with concrete option names and behaviors (for example, what init writes, how endpoints are represented) that go beyond generic CLI usage. |
+| [DAB policies](https://learn.microsoft.com/en-us/azure/data-api-builder/quickstart/authorization-database-policies) | security | 0.75 | Uses Entra ID, MSAL, and DAB policies to enforce per-user data access; includes a specific policy expression (@item.Owner eq @claims.preferred_username) and role usage, which is product-specific security configuration. |
+| [On-behalf-of to Azure SQL](https://learn.microsoft.com/en-us/azure/data-api-builder/quickstart/authentication-on-behalf-of) | security | 0.75 | Explains OBO flow where DAB exchanges user tokens for Azure SQL tokens, including constraints like Azure-only and proof via SELECT SUSER_NAME(); this is advanced, product-specific security/auth configuration. |
+| [SQL row-level security](https://learn.microsoft.com/en-us/azure/data-api-builder/quickstart/authorization-sql-row-level-security) | security | 0.75 | Describes using Entra ID, MSAL, and SQL Server row-level security with predicate functions and security policies in conjunction with DAB; this is detailed, product-specific security configuration. |
 | [Unauthenticated](https://learn.microsoft.com/en-us/azure/data-api-builder/concept/security/authenticate-unauthenticated) | security | 0.75 | Explains the Unauthenticated provider, how every request runs as the anonymous role, and when to use it; includes provider name and behavior specific to DAB security. |
 | [Health checks](https://learn.microsoft.com/en-us/azure/data-api-builder/concept/monitor/health-checks) | configuration | 0.72 | Describes the /health endpoint, how it checks data sources and entities, and how to set thresholds. These are concrete configuration parameters and behavior for health monitoring. |
 | [API Policies](https://learn.microsoft.com/en-us/azure/data-api-builder/concept/security/database-policies) | security | 0.70 | Shows DAB-specific database policy syntax (for example policy expressions referencing @claims and @item) and how they map to WHERE clauses, which are product-specific security configuration details. |
@@ -128,10 +156,13 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [Level 2 cache (distributed)](https://learn.microsoft.com/en-us/azure/data-api-builder/concept/cache/level-2) | configuration | 0.70 | Described as configuring distributed L2 cache with Redis and entity-level cache settings. This implies specific configuration options and parameters for enabling Redis and tuning entity cache behavior, which fits the configuration sub-skill. |
 | [Local Models](https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/use-local-models) | best-practices | 0.70 | The page gives product-specific guidance for using SQL MCP Server with local LLMs (for example via Ollama) including schema preinjection, response discipline, and field metadata practices tailored to small models. These are concrete, implementation-focused recommendations unique to this product rather than generic LLM advice. |
 | [Log Analytics](https://learn.microsoft.com/en-us/azure/data-api-builder/concept/monitor/log-analytics) | configuration | 0.70 | Explains how to integrate DAB with Log Analytics for centralized logging and how it differs from Application Insights. This is concrete configuration guidance for a specific integration. |
+| [Managed identity](https://learn.microsoft.com/en-us/azure/data-api-builder/quickstart/authentication-managed-identity) | security | 0.70 | Describes configuring DAB with system-assigned managed identity for passwordless Azure SQL access; includes product-specific security configuration and flow details. |
+| [Microsoft Entra](https://learn.microsoft.com/en-us/azure/data-api-builder/quickstart/authentication-microsoft-entra-provider) | security | 0.70 | Shows how to configure a Microsoft Entra app registration and DAB EntraId provider with audience and issuer while keeping anonymous access; contains concrete security configuration parameters. |
 | [Multiple data sources](https://learn.microsoft.com/en-us/azure/data-api-builder/concept/config/multi-config) | configuration | 0.70 | Covers using multiple data source files and how entities are defined across them; product-specific configuration behavior for hybrid endpoints. |
 | [OpenTelemetry](https://learn.microsoft.com/en-us/azure/data-api-builder/concept/monitor/open-telemetry) | configuration | 0.70 | Details how to configure OpenTelemetry for DAB’s REST, GraphQL, database operations, and middleware. These are specific configuration options for telemetry integration. |
 | [Overview](https://learn.microsoft.com/en-us/azure/data-api-builder/command-line/) | configuration | 0.70 | CLI reference for configuring and running DAB; includes command options and parameters that map directly to configuration and runtime behavior. |
 | [Overview](https://learn.microsoft.com/en-us/azure/data-api-builder/deployment/) | deployment | 0.70 | Compares deployment options across Azure App Service, Container Apps, Container Instances, AKS, local Docker, air-gapped, and source-based hosting. As a deployment options page, it likely includes which methods are supported where and constraints per environment, which is product-specific deployment knowledge. |
+| [Overview](https://learn.microsoft.com/en-us/azure/data-api-builder/quickstart/microsoft-sql-security) | decision-making | 0.70 | Compares multiple Microsoft SQL security quickstarts and helps choose between credentials, managed identity, Entra, policies, RLS, and OBO; this is explicit decision guidance across options with scenario-based recommendations. |
 | [Query Timeout](https://learn.microsoft.com/en-us/azure/data-api-builder/concept/database/timeout) | limits-quotas | 0.70 | Explains how DAB uses database connection string parameters or MCP settings for timeouts, including default/behavioral constraints and lack of a runtime.query-timeout setting—product-specific timeout behavior. |
 | [Relationships](https://learn.microsoft.com/en-us/azure/data-api-builder/concept/graphql/relationships) | configuration | 0.70 | Covers how to define relationships in the configuration file so GraphQL queries can traverse related entities. This is detailed, product-specific configuration of relationships. |
 | [Semantic Descriptions](https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/how-to-add-descriptions) | best-practices | 0.70 | Explains how to add descriptions to entities, fields, and parameters with CLI examples and explicitly mentions best practices. This is product-specific guidance for improving AI agent accuracy, including concrete configuration patterns and recommendations unique to SQL MCP Server. |
@@ -140,12 +171,15 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [Stdio Transport](https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/stdio-transport) | configuration | 0.70 | Explains the --mcp-stdio flag, process model, and configuration for stdio transport, which are specific operational settings for SQL MCP Server. |
 | [Stored Procedures](https://learn.microsoft.com/en-us/azure/data-api-builder/concept/rest/stored-procedures) | configuration | 0.70 | Covers DAB-specific configuration for mapping stored procedures to REST endpoints, including entity configuration options and parameter handling unique to DAB. |
 | [Tables & Views](https://learn.microsoft.com/en-us/azure/data-api-builder/concept/rest/views) | configuration | 0.70 | Describes how to configure views as entities in DAB with specific configuration properties and constraints for read/write behavior, which are product-specific settings. |
+| [Username/password](https://learn.microsoft.com/en-us/azure/data-api-builder/quickstart/authentication-sql-credentials) | security | 0.70 | Details using SQL authentication with DAB, including how the web app and DAB authenticate and connect; includes product-specific security configuration patterns and cautions about stored credentials. |
 | [dab auto-config-simulate](https://learn.microsoft.com/en-us/azure/data-api-builder/command-line/dab-auto-config-simulate) | configuration | 0.70 | Describes how the command resolves patterns against the database and prints matched objects; product-specific behavior for configuration validation. |
 | [dab validate](https://learn.microsoft.com/en-us/azure/data-api-builder/command-line/dab-validate) | troubleshooting | 0.70 | dab validate runs checks and returns specific exit codes (0 vs nonzero) for success/failure; this is symptom→diagnosis style guidance useful for troubleshooting configs. |
 | [Cache-Control headers](https://learn.microsoft.com/en-us/azure/data-api-builder/concept/cache/http-headers) | configuration | 0.68 | Details how Cache-Control request headers (no-store, no-cache, only-if-cached) interact with DAB’s internal cache. This is product-specific behavior mapping standard headers to DAB caching, effectively configuration via HTTP, which an LLM would not reliably know. |
 | [Test with OpenAPI](https://learn.microsoft.com/en-us/azure/data-api-builder/concept/rest/openapi) | configuration | 0.68 | Covers how DAB generates OpenAPI metadata, hosts Swagger UI, and handles permission-aware schema and role-specific paths. These are concrete configuration behaviors and options specific to DAB. |
 | [Multiple mutations](https://learn.microsoft.com/en-us/azure/data-api-builder/concept/graphql/multiple-mutations) | integrations | 0.66 | Describes DAB’s support for batching multiple mutations into a single transaction, including scenarios for related entities. This is a DAB-specific GraphQL mutation pattern and behavior. |
 | [Azure Container Apps](https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/quickstart-azure-container-apps) | deployment | 0.65 | Step-by-step deployment of SQL MCP Server to Azure Container Apps using Azure CLI. While a quickstart, it is deployment-specific and likely includes product-specific deployment requirements (environment variables, ports, resource configuration) that are not generic knowledge. |
+| [Basic NoSQL](https://learn.microsoft.com/en-us/azure/data-api-builder/quickstart/basic-nosql) | deployment | 0.65 | Quickstart for running DAB with the Cosmos DB for NoSQL emulator; likely includes emulator configuration, connection strings, and DAB setup details that are specific deployment/integration knowledge. |
+| [Basic SQL](https://learn.microsoft.com/en-us/azure/data-api-builder/quickstart/basic-sql) | deployment | 0.65 | Quickstart for running DAB against a local Docker-hosted SQL database; likely includes concrete Docker commands, connection settings, and environment specifics that are product- and scenario-specific deployment knowledge. |
 | [Keyword $select](https://learn.microsoft.com/en-us/azure/data-api-builder/keywords/select-rest) | integrations | 0.65 | Describes DAB-specific behavior of $select including how internal columns are handled and interactions with ordering, pagination, security, and configuration. This is product-specific query behavior and edge cases that go beyond generic REST knowledge. |
 | [Role Inheritance](https://learn.microsoft.com/en-us/azure/data-api-builder/concept/security/role-inheritance) | configuration | 0.65 | Describes DAB 2.0 role inheritance with concrete configuration patterns (role names, inheritance structure) that are specific to DAB’s authorization model, beyond generic RBAC concepts. |
 | [Security landing](https://learn.microsoft.com/en-us/azure/data-api-builder/concept/security/) | security | 0.65 | Security and authentication hub that compares providers and links to configuration; likely includes provider names and mapping to configuration/CLI options. |
@@ -192,11 +226,10 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [DAB Visualize](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/visualize) | 0.25 | Explains generating Mermaid ER diagrams; appears to be a feature walkthrough, not a configuration or best-practices reference. |
 | [What is GraphQL Endpoint?](https://learn.microsoft.com/en-us/azure/data-api-builder/concept/graphql/overview) | 0.25 | “How to call GraphQL endpoints” is primarily usage guidance; summary doesn’t mention specific configuration tables, limits, or error mappings. |
 | [DAB Start](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/start) | 0.20 | Focuses on running `dab start` from VS Code; appears to be a basic usage guide rather than configuration reference or deployment constraints. |
-| [NoSQL Databases](https://learn.microsoft.com/en-us/azure/data-api-builder/quickstart/basic-nosql) | 0.20 | Quickstart for NoSQL emulator; tutorial-style content, not structured expert guidance or configuration reference. |
 | [Overview](https://learn.microsoft.com/en-us/azure/data-api-builder/concept/graphql/) | 0.20 | High-level description of GraphQL API capabilities (queries, mutations, relationships, aggregation). No indication of detailed config, limits, or troubleshooting content. |
 | [Overview](https://learn.microsoft.com/en-us/azure/data-api-builder/concept/rest/) | 0.20 | Conceptual overview of REST API capabilities (CRUD, filtering, sorting, pagination, OpenAPI). No indication of detailed configuration tables, limits, or error mappings. |
+| [Overview](https://learn.microsoft.com/en-us/azure/data-api-builder/quickstart/) | 0.20 | High-level quickstart hub listing multiple scenarios; no indication of detailed limits, configuration schemas, or error mappings beyond what an LLM likely knows. |
 | [Overview](https://learn.microsoft.com/en-us/azure/data-api-builder/whats-new/) | 0.20 | Landing page for release notes; no detailed technical content itself. |
-| [SQL Databases](https://learn.microsoft.com/en-us/azure/data-api-builder/quickstart/basic-sql) | 0.20 | Step-by-step quickstart for SQL; primarily tutorial flow without configuration tables, limits, or deep product-specific patterns. |
 | [What is Data API builder (DAB)?](https://learn.microsoft.com/en-us/azure/data-api-builder/overview) | 0.20 | High-level product overview of Data API builder; no detailed configuration tables, limits, or product-specific patterns. |
 | [What is REST Endpoint?](https://learn.microsoft.com/en-us/azure/data-api-builder/concept/rest/overview) | 0.20 | “How to call REST endpoints” sounds like general usage/tutorial content without explicit mention of limits, config matrices, or troubleshooting details. |
 | [DAB 1.1 (GA)](https://learn.microsoft.com/en-us/azure/data-api-builder/whats-new/version-1-1) | 0.10 | Release notes for version 1.1; GA announcement and feature list, not expert configuration or diagnostic content. |
@@ -205,4 +238,3 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [DAB 1.4 (Stability release)](https://learn.microsoft.com/en-us/azure/data-api-builder/whats-new/version-1-4) | 0.10 | Release notes for version 1.4; incremental update notes, not deep configuration or troubleshooting content. |
 | [DAB 1.5 (Feature release)](https://learn.microsoft.com/en-us/azure/data-api-builder/whats-new/version-1-5) | 0.10 | Release notes for version 1.5; mostly feature and bug-fix descriptions without structured expert configuration or limits. |
 | [DAB 1.6 (Stability release)](https://learn.microsoft.com/en-us/azure/data-api-builder/whats-new/version-1-6) | 0.10 | Release notes for version 1.6; typically change summaries and bug fixes, not structured expert patterns or configs. |
-| [Overview](https://learn.microsoft.com/en-us/azure/data-api-builder/quickstart/) | 0.10 | Quickstart landing page; links to tutorials but contains no detailed configuration or limits itself. |

@@ -54,9 +54,9 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Kub
 - **Unclassified**: 74
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 2
-- **Unchanged**: 402
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 405
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-fabric/azure-service-fabric.csv`
 
@@ -76,17 +76,6 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Kub
 | *(Unclassified)* | 74 | 18.3% |
 
 ## Changes
-
-### New Pages
-
-- [Advanced Fault Tolerance for Availability Zone Rings](https://learn.microsoft.com/en-us/azure/service-fabric/advanced-fault-tolerance-availability-zone-rings)
-
-### Updated Pages
-
-- [Reliable Collection guidelines & recommendations](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-reliable-services-reliable-collections-guidelines)
-  - Updated: 2026-03-23T11:03:00.000Z → 2026-05-28T22:05:00.000Z
-- [Configure autoscaling on a managed cluster](https://learn.microsoft.com/en-us/azure/service-fabric/how-to-managed-cluster-autoscale)
-  - Updated: 2026-03-22T08:00:00.000Z → 2026-05-28T17:14:00.000Z
 
 ## Classified Pages
 

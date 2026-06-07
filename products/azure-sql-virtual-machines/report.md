@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 125
+- **Updated Pages**: 0
+- **Unchanged**: 128
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sql-virtual-machines/azure-sql-virtual-machines.csv`
 
@@ -75,15 +75,6 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | *(Unclassified)* | 29 | 22.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [What's new?](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/doc-changes-updates-release-notes-whats-new?view=azuresql)
-  - Updated: 2026-04-17T17:37:00.000Z → 2026-05-27T17:43:00.000Z
-- [VM size](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/performance-guidelines-best-practices-vm-size?view=azuresql)
-  - Updated: 2026-02-12T23:35:00.000Z → 2026-05-27T08:00:00.000Z
-- [VM vCore customization](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/vm-vcore-customization-for-sql?view=azuresql)
-  - Updated: 2026-01-27T18:35:00.000Z → 2026-05-27T08:00:00.000Z
 
 ## Classified Pages
 

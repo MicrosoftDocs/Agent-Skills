@@ -1,9 +1,12 @@
 ---
-generated_at: '2026-04-12'
+generated_at: '2026-06-07'
 category_descriptions:
   configuration: Configuring Traffic Manager profiles, endpoints, routing methods
     (weighted, geographic, subnet, multivalue), DNS/IPv6, monitoring/logs, and using
     ARM, Bicep, Terraform, CLI, and PowerShell.
+  security: Best practices for securely configuring Traffic Manager profiles, endpoints,
+    access controls, and monitoring to protect traffic routing and DNS-based load
+    balancing.
   integrations: Using Traffic Manager Real User Measurements (RUM) in apps and web
     pages, including integrating with Visual Studio App Center and adding the RUM
     JavaScript to collect user latency data.
@@ -19,30 +22,30 @@ category_descriptions:
     and diagnosing/fixing degraded profiles, misconfigurations, and routing issues.
 skill_description: Expert knowledge for Azure Traffic Manager development including
   troubleshooting, best practices, decision making, architecture & design patterns,
-  configuration, and integrations & coding patterns. Use when configuring profiles/endpoints,
-  routing methods, RUM JS, nested designs, or Traffic View–based tuning, and other
-  Azure Traffic Manager related development tasks. Not for Azure Front Door (use azure-front-door),
-  Azure Load Balancer (use azure-load-balancer), Azure Virtual WAN (use azure-virtual-wan),
-  Azure Application Gateway (use azure-application-gateway).
-use_when: Use when configuring profiles/endpoints, routing methods, RUM JS, nested
-  designs, or Traffic View–based tuning, and other Azure Traffic Manager related development
+  security, configuration, and integrations & coding patterns. Use when configuring
+  profiles/endpoints, routing methods, RUM scripts, nested profiles, or Traffic View
+  analytics, and other Azure Traffic Manager related development tasks. Not for Azure
+  Front Door (use azure-front-door), Azure Load Balancer (use azure-load-balancer),
+  Azure Virtual Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan).
+use_when: Use when configuring profiles/endpoints, routing methods, RUM scripts, nested
+  profiles, or Traffic View analytics, and other Azure Traffic Manager related development
   tasks.
 confusable_not_for: Not for Azure Front Door (use azure-front-door), Azure Load Balancer
-  (use azure-load-balancer), Azure Virtual WAN (use azure-virtual-wan), Azure Application
-  Gateway (use azure-application-gateway).
+  (use azure-load-balancer), Azure Virtual Network (use azure-virtual-network), Azure
+  Virtual WAN (use azure-virtual-wan).
 ---
 # Azure Traffic Manager Crawl Report
 
 ## Summary
 
-- **Total Pages**: 44
-- **Fetched**: 44
+- **Total Pages**: 45
+- **Fetched**: 45
 - **Fetch Failed**: 0
-- **Classified**: 28
+- **Classified**: 29
 - **Unclassified**: 16
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
 - **Unchanged**: 44
 - **Deleted Pages**: 0
@@ -52,15 +55,20 @@ confusable_not_for: Not for Azure Front Door (use azure-front-door), Azure Load 
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 4 | 9.1% |
-| best-practices | 1 | 2.3% |
-| configuration | 18 | 40.9% |
-| decision-making | 2 | 4.5% |
-| integrations | 2 | 4.5% |
-| troubleshooting | 1 | 2.3% |
-| *(Unclassified)* | 16 | 36.4% |
+| architecture-patterns | 4 | 8.9% |
+| best-practices | 1 | 2.2% |
+| configuration | 18 | 40.0% |
+| decision-making | 2 | 4.4% |
+| integrations | 2 | 4.4% |
+| security | 1 | 2.2% |
+| troubleshooting | 1 | 2.2% |
+| *(Unclassified)* | 16 | 35.6% |
 
 ## Changes
+
+### New Pages
+
+- [Secure Traffic Manager deployment](https://learn.microsoft.com/en-us/azure/traffic-manager/secure-traffic-manager)
 
 ## Classified Pages
 
@@ -76,6 +84,7 @@ confusable_not_for: Not for Azure Front Door (use azure-front-door), Azure Load 
 | [Metrics and alerts](https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-metrics-alerts) | configuration | 0.70 | Metrics/alerts article typically lists metric names, dimensions, and alertable conditions specific to Traffic Manager, which are product-specific configuration details. |
 | [Portal](https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-configure-multivalue-routing-method) | configuration | 0.70 | Describes MultiValue routing behavior and constraints (e.g., requirement that all endpoints be IP-based); includes product-specific configuration rules. |
 | [Routing methods](https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-routing-methods) | decision-making | 0.70 | Compares six routing methods with guidance on when to use each; functions as a decision guide between options, even if mostly qualitative. |
+| [Secure Traffic Manager deployment](https://learn.microsoft.com/en-us/azure/traffic-manager/secure-traffic-manager) | security | 0.70 | The article focuses on securing Azure Traffic Manager with product-specific recommendations (for example, how to protect configuration changes, secure monitoring endpoints, and control access). These are concrete, service-specific security practices rather than generic security concepts, matching the security sub-skill type. |
 | [Using Visual Studio SDK](https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-create-rum-visual-studio) | integrations | 0.70 | Shows how to obtain and use a RUM key and instrument Android apps; includes integration-specific parameters and code snippets unique to this product combination. |
 | [Using web pages](https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-create-rum-web-pages) | integrations | 0.70 | Describes embedding generated RUM code and using a RUM key; product-specific integration pattern with concrete parameters. |
 | [Configure subnet routing in Traffic Manager](https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-configure-subnet-routing-method) | configuration | 0.65 | Details mapping IP ranges to endpoints for subnet routing; includes product-specific configuration patterns and constraints on IP range definitions. |

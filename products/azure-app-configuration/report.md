@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-31'
+generated_at: '2026-06-07'
 category_descriptions:
   deployment: 'Using App Configuration in CI/CD: exporting/importing settings, creating
     snapshots, integrating with Azure Pipelines, GitHub Actions, and Helm/Kubernetes
@@ -12,9 +12,9 @@ category_descriptions:
   configuration: 'Configuring App Configuration behavior: feature flags, filters,
     snapshots, geo-replication, soft delete, Kubernetes provider, emulator, dynamic
     refresh, and AI/chat completion settings.'
-  security: 'Securing App Configuration: encryption, keys, RBAC/Entra ID, managed
-    identities, private endpoints, network lockdown, REST auth (HMAC/Entra), roles/permissions,
-    and Azure Policy compliance.'
+  security: Securing App Configuration using encryption, RBAC, managed identities,
+    keys/HMAC, REST auth/authorization models, network perimeters, and Azure Policy
+    compliance controls.
   limits-quotas: Limits on key-value retention, point-in-time reads, soft delete behavior,
     preview API lifecycles, and REST API throttling/quotas for Azure App Configuration.
   best-practices: 'Guidance on designing and using App Configuration efficiently:
@@ -26,15 +26,15 @@ category_descriptions:
 skill_description: Expert knowledge for Azure App Configuration development including
   troubleshooting, best practices, decision making, limits & quotas, security, configuration,
   integrations & coding patterns, and deployment. Use when using feature flags, dynamic
-  refresh, snapshots, Key Vault integration, or CI/CD export/import APIs, and other
+  refresh, snapshots, geo-replication, or Key Vault–backed configurations, and other
   Azure App Configuration related development tasks. Not for Azure App Service (use
-  azure-app-service), Azure Functions (use azure-functions), Azure Key Vault (use
-  azure-key-vault).
-use_when: Use when using feature flags, dynamic refresh, snapshots, Key Vault integration,
-  or CI/CD export/import APIs, and other Azure App Configuration related development
+  azure-app-service), Azure Key Vault (use azure-key-vault), Azure Automation (use
+  azure-automation).
+use_when: Use when using feature flags, dynamic refresh, snapshots, geo-replication,
+  or Key Vault–backed configurations, and other Azure App Configuration related development
   tasks.
-confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Functions
-  (use azure-functions), Azure Key Vault (use azure-key-vault).
+confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Key Vault
+  (use azure-key-vault), Azure Automation (use azure-automation).
 ---
 # Azure App Configuration Crawl Report
 
@@ -43,14 +43,14 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 - **Total Pages**: 165
 - **Fetched**: 165
 - **Fetch Failed**: 0
-- **Classified**: 130
-- **Unclassified**: 35
+- **Classified**: 131
+- **Unclassified**: 34
 
 ### Incremental Update
-- **New Pages**: 5
-- **Updated Pages**: 2
-- **Unchanged**: 158
-- **Deleted Pages**: 2
+- **New Pages**: 0
+- **Updated Pages**: 3
+- **Unchanged**: 162
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-app-configuration/azure-app-configuration.csv`
 
 ## Classification Statistics
@@ -63,31 +63,20 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | deployment | 6 | 3.6% |
 | integrations | 86 | 52.1% |
 | limits-quotas | 5 | 3.0% |
-| security | 14 | 8.5% |
+| security | 15 | 9.1% |
 | troubleshooting | 1 | 0.6% |
-| *(Unclassified)* | 35 | 21.2% |
+| *(Unclassified)* | 34 | 20.6% |
 
 ## Changes
 
-### New Pages
-
-- [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-network-security)
-- [Private endpoints](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-private-endpoint)
-- [Set up private endpoints](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-set-up-private-access)
-- [Network security perimeter](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-network-security-perimeter)
-- [Associate with a network security perimeter](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-set-up-network-security-perimeter)
-
 ### Updated Pages
 
+- [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-network-security)
+  - Updated: 2026-05-26T17:19:00.000Z → 2026-06-02T19:32:00.000Z
+- [Network security perimeter](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-network-security-perimeter)
+  - Updated: 2026-05-26T17:19:00.000Z → 2026-06-02T19:32:00.000Z
 - [Disable public network access](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-disable-public-access)
-  - Updated: 2025-03-24T08:00:00.000Z → 2026-05-26T17:19:00.000Z
-- [Network access errors](https://learn.microsoft.com/en-us/azure/azure-app-configuration/network-access-errors)
-  - Updated: 2026-01-06T06:10:00.000Z → 2026-05-26T17:19:00.000Z
-
-### Deleted Pages
-
-- ~~Overview~~ (https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-private-endpoint)
-- ~~Set up Private Endpoints~~ (https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-set-up-private-access)
+  - Updated: 2026-05-26T17:19:00.000Z → 2026-06-02T19:32:00.000Z
 
 ## Classified Pages
 
@@ -173,6 +162,7 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [JavaScript SDK](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-javascript) | integrations | 0.70 | Quickstart shows concrete SDK usage patterns and provider behavior (Map-like access, composition, Key Vault resolution) that are product-specific integration details beyond generic SDK knowledge. |
 | [Load Configuration from Azure Front Door](https://learn.microsoft.com/en-us/azure/azure-app-configuration/how-to-load-azure-front-door-configuration-provider) | integrations | 0.70 | Describes how client applications load configuration from Azure App Configuration through Azure Front Door, which implies SDK or configuration provider usage, specific connection parameters, and product-specific integration patterns beyond generic tutorials. |
 | [Managed identities](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-integrate-azure-managed-service-identity) | security | 0.70 | Details managed identity support in App Configuration and client libraries; includes product-specific authentication configuration patterns. |
+| [Network security perimeter](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-network-security-perimeter) | security | 0.70 | Focuses on using Azure Network Security Perimeter with App Configuration, including how to associate a store with a perimeter and configure explicit inbound/outbound access rules. This is product-specific security configuration that an LLM is unlikely to fully infer without the documentation. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-app-configuration-event) | integrations | 0.70 | Describes App Configuration events via Event Grid; typically includes event types, schema, and subscription configuration parameters, which are integration-specific. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-soft-delete) | limits-quotas | 0.70 | Soft delete feature description for Standard and Premium tiers; typically includes retention duration and behavior constraints, which are numeric and tier-specific. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-feature-filters) | configuration | 0.70 | How-to for feature filters; includes filter types, parameters, and configuration patterns specific to App Configuration feature management. |
@@ -232,13 +222,12 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [Move a resource between Azure regions](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-move-resource-between-regions) | 0.50 | Describes manual process to move a store between regions; summary suggests procedural steps without detailed configuration tables or limits. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-geo-replication) | 0.50 | Conceptual explanation of geo-replication and resiliency; summary does not indicate detailed configuration tables or numeric thresholds. |
 | [Move a resource between subscriptions or resource groups](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-move-resource-between-subscriptions-resource-groups) | 0.45 | How-to for moving a store between subscriptions/resource groups; appears to be portal/CLI navigation steps rather than deep configuration or limits. |
+| [Disable public network access](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-disable-public-access) | 0.40 | Appears to be a how-to guide for disabling public access and setting up private access, but summary suggests step-by-step tutorial rather than detailed configuration parameter tables or security role definitions; likely more procedural than expert configuration reference. |
 | [Feature management](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-feature-flag-azure-kubernetes-service) | 0.40 | Quickstart tutorial for using feature flags with AKS; primarily step-by-step code and setup without configuration tables, limits, or product-specific edge-case guidance. |
 | [JSON content-type](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-leverage-json-content-type) | 0.40 | Describes using JSON content type for key-values; mostly conceptual and basic usage, not deep configuration matrices or limits. |
-| [Network security perimeter](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-network-security-perimeter) | 0.40 | Conceptual explanation of network security perimeters and how they restrict public access with configurable rules; summary does not show specific RBAC roles, parameter names, or detailed configuration matrices that would constitute expert security guidance. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-ai-configuration) | 0.40 | Introductory AI configuration concept article; mostly benefits and high-level description without detailed parameters or limits. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-feature-management) | 0.40 | Conceptual feature management overview; explains practice and terminology without detailed configuration parameters or limits. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-hyperscale-client-configuration) | 0.40 | Conceptual overview of hyperscale configuration delivery via Azure Front Door; summary suggests high-level explanation without detailed config tables or limits. |
-| [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-network-security) | 0.40 | High-level overview of network security options (public access controls, private endpoints, NSP) without detailed RBAC role names, specific configuration parameters, or security setting tables; primarily conceptual and descriptive. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-snapshots) | 0.40 | Conceptual overview of snapshots; description of what they are without detailed configuration tables, limits, or decision matrices. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/configuration-provider-overview) | 0.40 | High-level overview of configuration provider libraries; summary does not show detailed parameter tables or numeric guidance. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/feature-management-overview) | 0.40 | Feature management overview across languages; conceptual description of feature flags without detailed configuration or numeric guidance in the summary. |
@@ -249,8 +238,8 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [ARM template](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-resource-manager) | 0.30 | ARM template quickstart; focuses on basic deployment example, not on exhaustive configuration options, limits, or troubleshooting. |
 | [Associate with a network security perimeter](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-set-up-network-security-perimeter) | 0.30 | How-to article for associating an App Configuration store with a network security perimeter via portal/CLI; appears to be procedural guidance without detailed configuration tables or product-specific constraints beyond standard steps. |
 | [Bicep](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-bicep) | 0.30 | Basic Bicep quickstart for creating a store; mostly generic IaC deployment steps without detailed configuration matrices or constraints. |
-| [Disable public network access](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-disable-public-access) | 0.30 | Short how-to on disabling public access; likely basic portal/CLI steps without detailed security configuration parameters or advanced constraints, so it does not rise to the level of expert security or configuration reference. |
 | [Frequently asked questions](https://learn.microsoft.com/en-us/azure/azure-app-configuration/faq) | 0.30 | FAQ content is mostly conceptual and comparative (for example, differences from Key Vault) without detailed numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices that meet the expert-knowledge criteria. |
+| [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-network-security) | 0.30 | Described as a network security overview for Azure App Configuration; likely explains options like public access controls, private endpoints, and NSP conceptually rather than listing specific RBAC roles, parameter names, or detailed configuration tables. |
 | [Spring Boot](https://learn.microsoft.com/en-us/azure/azure-app-configuration/how-to-time-window-filter-spring-boot) | 0.30 | How-to tutorial for using time window filters with feature flags in Spring Boot; focuses on step-by-step usage, not on detailed configuration tables, limits, error codes, or product-specific best-practice matrices. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/azure-app-configuration/cli-samples) | 0.20 | Index of CLI sample scripts; no detailed configuration tables, limits, or troubleshooting content indicated. |
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/azure-app-configuration/powershell-samples) | 0.20 | Index of PowerShell sample scripts; navigation content without product-specific limits, configs, or troubleshooting mappings. |

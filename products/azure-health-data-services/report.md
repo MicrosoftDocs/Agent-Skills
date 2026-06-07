@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-31'
+generated_at: '2026-06-07'
 category_descriptions:
   integrations: Code samples and patterns for calling FHIR/DICOM APIs, bulk export/import,
     de-identification, events, and integrating with tools like Synapse, ADF, Logic
@@ -48,8 +48,8 @@ confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Data 
 - **Total Pages**: 202
 - **Fetched**: 202
 - **Fetch Failed**: 0
-- **Classified**: 149
-- **Unclassified**: 53
+- **Classified**: 148
+- **Unclassified**: 54
 
 ### Incremental Update
 - **New Pages**: 0
@@ -66,19 +66,19 @@ confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Data 
 | best-practices | 4 | 2.0% |
 | configuration | 51 | 25.2% |
 | decision-making | 2 | 1.0% |
-| deployment | 14 | 6.9% |
+| deployment | 13 | 6.4% |
 | integrations | 29 | 14.4% |
 | limits-quotas | 3 | 1.5% |
 | security | 37 | 18.3% |
 | troubleshooting | 6 | 3.0% |
-| *(Unclassified)* | 53 | 26.2% |
+| *(Unclassified)* | 54 | 26.7% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Migration from Azure API for FHIR](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/migration-strategies)
-  - Updated: 2026-02-25T08:00:00.000Z → 2026-05-27T20:49:00.000Z
+- [ARM template](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/fhir-service-resource-manager-template)
+  - Updated: 2025-10-09T08:00:00.000Z → 2026-06-02T20:30:00.000Z
 
 ## Classified Pages
 
@@ -157,7 +157,6 @@ confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Data 
 | [$member-match](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/tutorial-member-match) | configuration | 0.70 | Tutorial on $member-match with concrete request/response patterns and configuration details for this service’s implementation of the HRex operation. |
 | [2. Register public client application](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/tutorial-web-app-public-app-reg) | security | 0.70 | Covers Microsoft Entra app registration for a public client with product-specific redirect URIs, scopes, and permissions required to access Azure API for FHIR. |
 | [ARM template](https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/quickstart-arm) | deployment | 0.70 | Shows ARM template schema and parameterization for this service, including resource types and properties, which are deployment-specific configuration details. |
-| [ARM template](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/fhir-service-resource-manager-template) | deployment | 0.70 | Includes ARM template schema, resource types, and properties specific to this FHIR service deployment. |
 | [Access using REST Client](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/using-rest-client) | integrations | 0.70 | Shows how to configure and use the REST Client extension with this service, including environment variables, auth headers, and request templates specific to the APIs. |
 | [Access using cURL](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/using-curl) | integrations | 0.70 | Provides concrete cURL command patterns, authentication headers, and endpoint usage specific to Azure Health Data Services, beyond generic HTTP usage. |
 | [Autoscale](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/autoscale-azure-api-fhir) | limits-quotas | 0.70 | Autoscale article typically includes specific scale thresholds, instance limits, and configuration ranges for this managed service. |
@@ -262,6 +261,7 @@ confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Data 
 | [2023](https://learn.microsoft.com/en-us/azure/healthcare-apis/release-notes-2023) | 0.30 | Release notes for 2023; change log content rather than structured expert-knowledge reference material. |
 | [2024](https://learn.microsoft.com/en-us/azure/healthcare-apis/release-notes-2024) | 0.30 | Release notes for 2024; similar to other release notes, not a stable reference for limits, configuration, or troubleshooting. |
 | [2025](https://learn.microsoft.com/en-us/azure/healthcare-apis/release-notes-2025) | 0.30 | Release notes for 2025; primarily feature and bug-fix history, not structured limits, configuration, or troubleshooting guidance. |
+| [ARM template](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/fhir-service-resource-manager-template) | 0.30 | Page appears to be a how-to guide for deploying an Azure Health Data Services FHIR service using an ARM template with PowerShell or Azure CLI. From the summary, it does not clearly indicate detailed configuration parameter tables, deployment matrices, limits, or other product-specific expert details; it mainly explains using ARM templates and basic deployment steps, which are generic patterns an LLM likely already knows. |
 | [Availability zones](https://learn.microsoft.com/en-us/azure/healthcare-apis/availability-zones) | 0.30 | Availability Zones overview; describes high availability conceptually without specific numeric thresholds or configuration parameter tables. |
 | [Business continuity & disaster recovery](https://learn.microsoft.com/en-us/azure/healthcare-apis/business-continuity-disaster-recovery) | 0.30 | BCDR article appears conceptual from summary; no explicit RPO/RTO numbers, tier matrices, or configuration tables are shown. |
 | [De-identification service](https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/overview) | 0.30 | Describes de-identification service conceptually (entities, HIPAA alignment); summary does not show concrete config tables or numeric thresholds. |

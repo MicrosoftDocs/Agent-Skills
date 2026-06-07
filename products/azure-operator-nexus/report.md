@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-05-17'
+generated_at: '2026-06-07'
 category_descriptions:
-  configuration: 'Designing, deploying, and updating Nexus clusters and network fabric:
-    JSONC templates, isolation domains, BGP/route policies, QoS, monitoring, security,
-    and Kubernetes/node configuration.'
-  security: 'Securing Nexus: identity/RBAC, managed identities, ACLs, SSH/serial access,
-    break-glass, key/cert/secret rotation, Defender/Policy, and secure VM/cluster/network
-    access configuration.'
+  configuration: 'Configuring and operating Azure Operator Nexus clusters and network
+    fabric: JSON templates, isolation domains, BGP/VRF/route policies, QoS, monitoring,
+    maintenance, and Kubernetes/node settings.'
+  security: 'Securing Nexus: identity and RBAC, ACLs and traffic policies, SSH and
+    break-glass access, credential/cert/key rotation, Defender/Policy, and managed
+    identity/Key Vault integrations.'
   troubleshooting: Diagnosing and fixing Nexus bare-metal, network, storage, and Kubernetes
     issues, including provisioning failures, connectivity, performance, pod/VM errors,
     and collecting diagnostic logs.
@@ -31,14 +31,14 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Operator Nexus development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when designing Nexus clusters, fabric upgrades, isolation domains, BGP/QoS policies,
-  or near-edge storage, and other Azure Operator Nexus related development tasks.
-  Not for Azure Network Function Manager (use azure-network-function-manager), Azure
-  Networking (use azure-networking), Azure Virtual Network Manager (use azure-virtual-network-manager),
+  Use when configuring Nexus fabric/BGP, securing RBAC/Key Vault, troubleshooting
+  bare metal, planning SKUs, or upgrading fabric, and other Azure Operator Nexus related
+  development tasks. Not for Azure Network Function Manager (use azure-network-function-manager),
+  Azure Networking (use azure-networking), Azure Virtual Network Manager (use azure-virtual-network-manager),
   Azure Operator Insights (use azure-operator-insights).
-use_when: Use when designing Nexus clusters, fabric upgrades, isolation domains, BGP/QoS
-  policies, or near-edge storage, and other Azure Operator Nexus related development
-  tasks.
+use_when: Use when configuring Nexus fabric/BGP, securing RBAC/Key Vault, troubleshooting
+  bare metal, planning SKUs, or upgrading fabric, and other Azure Operator Nexus related
+  development tasks.
 confusable_not_for: Not for Azure Network Function Manager (use azure-network-function-manager),
   Azure Networking (use azure-networking), Azure Virtual Network Manager (use azure-virtual-network-manager),
   Azure Operator Insights (use azure-operator-insights).
@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Network Function Manager (use azure-network-fu
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 216
+- **Updated Pages**: 2
+- **Unchanged**: 214
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-operator-nexus/azure-operator-nexus.csv`
 
@@ -76,6 +76,13 @@ confusable_not_for: Not for Azure Network Function Manager (use azure-network-fu
 | *(Unclassified)* | 52 | 24.1% |
 
 ## Changes
+
+### Updated Pages
+
+- [Cluster](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-configure-cluster)
+  - Updated: 2026-05-15T22:06:00.000Z → 2026-06-01T22:04:00.000Z
+- [Certificate Rotation](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-certificate-rotation)
+  - Updated: 2026-04-22T17:03:00.000Z → 2026-06-04T17:03:00.000Z
 
 ## Classified Pages
 
@@ -165,6 +172,7 @@ confusable_not_for: Not for Azure Network Function Manager (use azure-network-fu
 | [Storage Appliance Run-Read Commands](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-storage-run-read) | troubleshooting | 0.75 | Documents az networkcloud storageappliance run-read-command usage, parameters, and output handling for vendor diagnostics. |
 | [Use Azure Policy with Operator Nexus resources](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-use-azure-policy) | security | 0.75 | Shows specific built-in policies, assignment scopes, and custom policy patterns tailored to Operator Nexus resources. |
 | [How to use Commit Workflow v2 in Azure Operator Nexus](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-use-commit-workflow-v2) | configuration | 0.74 | Describes staging, reviewing, committing, and discarding changes across resources using Commit V2; includes product-specific workflow operations and states. |
+| [Cluster](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-configure-cluster) | configuration | 0.72 | A 'how to configure cluster deployment' article for Operator Nexus is likely to include product-specific AzCLI commands, required/optional parameter names, and configuration options (for example, cluster properties, allowed values, and defaults) that are unique to this service and not generally known. This fits the configuration sub-skill, as it focuses on concrete settings rather than generic deployment concepts. |
 | [Set up Defender for Cloud security](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-set-up-defender-for-cloud-security) | security | 0.72 | How-to guide for enabling and configuring Microsoft Defender for Cloud specifically on Azure Operator Nexus subscriptions. Likely includes product-specific security configuration steps, plan/feature enablement details, and required settings unique to Operator Nexus and its bare metal compute servers, which qualify as expert security configuration knowledge rather than generic concepts. |
 | [Access Control List configuration examples](https://learn.microsoft.com/en-us/azure/operator-nexus/reference-acl-examples) | security | 0.70 | Provides concrete ACL examples with specific match criteria and actions, representing product-specific security configuration patterns and edge cases. |
 | [Access Control Lists](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-access-control-lists) | configuration | 0.70 | Describes API-based ACL configuration for NNIs and ISD external networks with rule/action semantics; product-specific configuration model. |
@@ -172,7 +180,6 @@ confusable_not_for: Not for Azure Network Function Manager (use azure-network-fu
 | [Azure Operator Nexus Network Fabric Configuration Monitoring](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-network-fabric-configuration-monitoring) | configuration | 0.70 | Describes configuration monitoring and reporting of differences across devices; product-specific monitoring behavior and possibly states/fields. |
 | [Bare Metal Machine Platform Commands](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-baremetal-functions) | troubleshooting | 0.70 | Covers lifecycle management operations on Bare Metal Machines for recovery and maintenance, with disruptive vs non-disruptive actions. This is framed as troubleshooting/recovery guidance and likely includes specific commands and when to use them, mapping actions to failure/maintenance scenarios. |
 | [BareMetal Machine roles](https://learn.microsoft.com/en-us/azure/operator-nexus/reference-near-edge-baremetal-machine-roles) | configuration | 0.70 | A reference for 'machineRoles' on BareMetal Machines will define specific role names, allowed combinations, and their semantics, which are product-specific configuration parameters. |
-| [Certificate Rotation](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-certificate-rotation) | security | 0.70 | Certificate rotation process for Nexus Network Fabric is a security operation; the full article is likely to include product-specific API operations, parameters, and safeguards for managing certificates, fitting the security configuration category. |
 | [Check runtime version](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-check-runtime-version) | configuration | 0.70 | Provides specific commands and resource paths to retrieve runtime versions of key Nexus components. |
 | [Collect debug logs for support ticket](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-kubernetes-cluster-log-collector-script) | troubleshooting | 0.70 | Describes a product-specific log collector script for Azure Operator Nexus Kubernetes nodes, including when and where to run it to support issue diagnosis. This is concrete troubleshooting guidance tied to a specific diagnostic tool rather than generic debugging advice. |
 | [Configure service load balancer](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-kubernetes-service-load-balancer) | configuration | 0.70 | Provides Nexus-specific load balancer configuration fields, annotations, and examples that are not generic Kubernetes knowledge. |
@@ -217,7 +224,7 @@ confusable_not_for: Not for Azure Network Function Manager (use azure-network-fu
 | [Updating ExpressRoute Gateway Authorization Key in Azure Operator Nexus](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-update-expressroute-authorization-key) | security | 0.70 | Describes updating ExpressRoute gateway authorization keys; involves secure connectivity configuration and likely specific resource/parameter usage. |
 | [Virtual machine console service](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-use-vm-console-service) | security | 0.70 | Details configuration of VM Console Service, including Private Link Service usage and Nexus-specific access patterns. |
 | [Virtual machine placement hints](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-virtual-machine-placement-hints) | configuration | 0.70 | Defines concrete affinity/anti-affinity rules and hint syntax for VM, bare-metal, and rack placement in Nexus. |
-| [Cluster](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-configure-cluster) | configuration | 0.68 | The page is a how-to for configuring Azure Operator Nexus Cluster deployments via Azure CLI, including specific resource/parameter names and command patterns that are product-specific configuration knowledge rather than generic deployment steps. It focuses on how to set and update cluster configuration rather than conceptual overviews, fitting the configuration sub-skill best. |
+| [Certificate Rotation](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-certificate-rotation) | security | 0.68 | Certificate rotation for Nexus Network Fabric is a security-focused lifecycle operation. An API-driven rotation guide will typically include specific API endpoints, request parameters, required roles/permissions, and operational safeguards unique to this product. That aligns with the security sub-skill, as it covers concrete security configuration and certificate management details rather than generic certificate concepts. |
 | [How to disable or enable network interface](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-disable-enable-network-interface) | configuration | 0.68 | Explains admin state control for interfaces and how to toggle it via Nexus APIs; product-specific operational configuration. |
 | [List supported Kubernetes versions](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-list-supported-kubernetes-versions) | configuration | 0.68 | Describes the product-specific kubernetesVersions catalog resource (Microsoft.NetworkCloud/kubernetesVersions named 'default'), how it is anchored to the cluster’s custom location, and how to query it via API. This is detailed, product-specific configuration/metadata usage rather than a generic concept, fitting the configuration category best. |
 | [MDE Runtime Protection](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-use-mde-runtime-protection) | configuration | 0.68 | The page describes using Azure CLI to configure Microsoft Defender for Endpoint runtime protection on Azure Operator Nexus clusters, including specific setting names such as Enforcement Level, Definition Update Mode, and triggering MDE Scan on all nodes. These are product-specific configuration options and commands that constitute expert knowledge beyond generic security or CLI usage. |

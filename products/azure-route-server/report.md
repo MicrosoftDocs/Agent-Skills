@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-06-07'
 category_descriptions:
   architecture-patterns: Design patterns for using Route Server in hub-spoke, dual-homed,
     anycast, multi-region, ExpressRoute/VPN integrations, NVA next-hop designs, and
@@ -9,22 +9,24 @@ category_descriptions:
   best-practices: Configuring Azure Route Server routing preferences, BGP path selection,
     and custom routing policies to control traffic flow and route advertisement to
     your NVA or on-premises routers.
-  security: Configuring Azure RBAC roles and permissions needed to securely manage
-    Azure Route Server resources and operations.
+  security: Configuring least-privilege RBAC roles and secure deployment practices
+    for Azure Route Server, including access control, hardening, and compliance-focused
+    settings.
   limits-quotas: Guidance on Route Server capacity planning, scale units, connection
     limits, and how many peers/routes each deployment can support.
   troubleshooting: Diagnosing and fixing common Azure Route Server connectivity problems,
     including BGP peering issues, route propagation, and troubleshooting steps/logs.
 skill_description: Expert knowledge for Azure Route Server development including troubleshooting,
   best practices, architecture & design patterns, limits & quotas, security, and configuration.
-  Use when designing hub-spoke or multi-region topologies, BGP peering with NVAs/on-prem,
-  tuning routing policies, or fixing route propagation issues, and other Azure Route
-  Server related development tasks. Not for Azure Virtual Network (use azure-virtual-network),
-  Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual
-  WAN (use azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway).
-use_when: Use when designing hub-spoke or multi-region topologies, BGP peering with
-  NVAs/on-prem, tuning routing policies, or fixing route propagation issues, and other
-  Azure Route Server related development tasks.
+  Use when designing hub-spoke or dual-homed topologies, configuring BGP peers/policies,
+  tuning routing preferences, planning Route Server scale, or troubleshooting BGP/route
+  propagation, and other Azure Route Server related development tasks. Not for Azure
+  Virtual Network (use azure-virtual-network), Azure Virtual Network Manager (use
+  azure-virtual-network-manager), Azure Virtual WAN (use azure-virtual-wan), Azure
+  VPN Gateway (use azure-vpn-gateway).
+use_when: Use when designing hub-spoke or dual-homed topologies, configuring BGP peers/policies,
+  tuning routing preferences, planning Route Server scale, or troubleshooting BGP/route
+  propagation, and other Azure Route Server related development tasks.
 confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), Azure
   Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use
   azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway).
@@ -33,14 +35,14 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ## Summary
 
-- **Total Pages**: 21
-- **Fetched**: 21
+- **Total Pages**: 22
+- **Fetched**: 22
 - **Fetch Failed**: 0
-- **Classified**: 13
+- **Classified**: 14
 - **Unclassified**: 8
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
 - **Unchanged**: 21
 - **Deleted Pages**: 0
@@ -50,15 +52,19 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 6 | 28.6% |
-| best-practices | 2 | 9.5% |
-| configuration | 2 | 9.5% |
-| limits-quotas | 1 | 4.8% |
-| security | 1 | 4.8% |
-| troubleshooting | 1 | 4.8% |
-| *(Unclassified)* | 8 | 38.1% |
+| architecture-patterns | 6 | 27.3% |
+| best-practices | 2 | 9.1% |
+| configuration | 2 | 9.1% |
+| limits-quotas | 1 | 4.5% |
+| security | 2 | 9.1% |
+| troubleshooting | 1 | 4.5% |
+| *(Unclassified)* | 8 | 36.4% |
 
 ## Changes
+
+### New Pages
+
+- [Secure Route Server deployment](https://learn.microsoft.com/en-us/azure/route-server/secure-route-server)
 
 ## Classified Pages
 
@@ -74,6 +80,7 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Path selection](https://learn.microsoft.com/en-us/azure/route-server/path-selection) | best-practices | 0.70 | Explains how to configure routing preferences for performance/cost/resilience with product-specific guidance on path selection. |
 | [Roles and permissions](https://learn.microsoft.com/en-us/azure/route-server/roles-permissions) | security | 0.70 | Focuses on RBAC roles and permissions required for Route Server, likely listing specific role names and scopes. |
 | [Route injection in spoke virtual networks](https://learn.microsoft.com/en-us/azure/route-server/route-injection-in-spokes) | architecture-patterns | 0.70 | Describes a hub-and-spoke design pattern where Route Server automatically injects routes, replacing manual UDR patterns. |
+| [Secure Route Server deployment](https://learn.microsoft.com/en-us/azure/route-server/secure-route-server) | security | 0.70 | The page is explicitly about securing Azure Route Server and likely includes product-specific security guidance such as recommended RBAC roles, network security configurations, and other concrete security settings unique to Route Server. This aligns with the security sub-skill type, as it focuses on how to protect a specific Azure networking service rather than generic security concepts. |
 | [Azure Route Server support for ExpressRoute and Azure VPN](https://learn.microsoft.com/en-us/azure/route-server/expressroute-vpn-support) | architecture-patterns | 0.65 | Covers hybrid topology patterns and how Route Server interacts with ExpressRoute/VPN gateways in specific architectures. |
 | [Monitor Route Server](https://learn.microsoft.com/en-us/azure/route-server/monitor-route-server) | configuration | 0.65 | Details specific metrics (e.g., BGP peer status, route counts) and how to configure monitoring for Route Server in Azure Monitor. |
 | [Routing preference](https://learn.microsoft.com/en-us/azure/route-server/hub-routing-preference) | best-practices | 0.65 | Explains how routing preference works with concrete configuration options and implementation best practices specific to Azure Route Server. |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-17'
+generated_at: '2026-06-07'
 category_descriptions:
   best-practices: Guidance on DDoS Protection design, cost optimization, incident
     response planning, and safely running/simulating DDoS tests in Azure environments
@@ -12,37 +12,36 @@ category_descriptions:
   troubleshooting: 'Handling and investigating DDoS attacks: engaging Rapid Response,
     reading Defender for Cloud DDoS alerts, and analyzing DDoS Protection logs in
     Log Analytics for root cause and mitigation.'
-  security: How to deploy, enable, and manage Azure DDoS IP/Network Protection plans
-    via portal, CLI, or PowerShell, including required permissions and configuration
-    steps.
+  security: Configuring and securing Azure DDoS IP/Network Protection using portal,
+    CLI, and PowerShell, including permissions setup and hardening best practices.
   configuration: Deploying and configuring Azure DDoS IP/Network Protection via ARM/Bicep,
     enabling monitoring and metrics, and enforcing protection using Azure Policy definitions.
 skill_description: Expert knowledge for Azure DDos Protection development including
   troubleshooting, best practices, decision making, architecture & design patterns,
-  security, and configuration. Use when enabling DDoS IP/Network Protection plans,
-  parsing DDoS logs, using Rapid Response, or enforcing Azure Policy, and other Azure
+  security, and configuration. Use when enabling DDoS IP/Network Protection, tuning
+  policies, analyzing logs, simulating attacks, or using Azure Policy, and other Azure
   DDos Protection related development tasks. Not for Azure Firewall (use azure-firewall),
-  Azure Web Application Firewall (use azure-web-application-firewall), Azure Virtual
-  Network (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager).
-use_when: Use when enabling DDoS IP/Network Protection plans, parsing DDoS logs, using
-  Rapid Response, or enforcing Azure Policy, and other Azure DDos Protection related
-  development tasks.
+  Azure Web Application Firewall (use azure-web-application-firewall), Azure Front
+  Door (use azure-front-door), Azure Virtual Network (use azure-virtual-network).
+use_when: Use when enabling DDoS IP/Network Protection, tuning policies, analyzing
+  logs, simulating attacks, or using Azure Policy, and other Azure DDos Protection
+  related development tasks.
 confusable_not_for: Not for Azure Firewall (use azure-firewall), Azure Web Application
-  Firewall (use azure-web-application-firewall), Azure Virtual Network (use azure-virtual-network),
-  Azure Virtual Network Manager (use azure-virtual-network-manager).
+  Firewall (use azure-web-application-firewall), Azure Front Door (use azure-front-door),
+  Azure Virtual Network (use azure-virtual-network).
 ---
 # Azure DDos Protection Crawl Report
 
 ## Summary
 
-- **Total Pages**: 33
-- **Fetched**: 33
+- **Total Pages**: 34
+- **Fetched**: 34
 - **Fetch Failed**: 0
-- **Classified**: 24
+- **Classified**: 25
 - **Unclassified**: 9
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
 - **Unchanged**: 33
 - **Deleted Pages**: 0
@@ -52,15 +51,19 @@ confusable_not_for: Not for Azure Firewall (use azure-firewall), Azure Web Appli
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 2 | 6.1% |
-| best-practices | 4 | 12.1% |
-| configuration | 6 | 18.2% |
-| decision-making | 2 | 6.1% |
-| security | 7 | 21.2% |
-| troubleshooting | 3 | 9.1% |
-| *(Unclassified)* | 9 | 27.3% |
+| architecture-patterns | 2 | 5.9% |
+| best-practices | 4 | 11.8% |
+| configuration | 6 | 17.6% |
+| decision-making | 2 | 5.9% |
+| security | 8 | 23.5% |
+| troubleshooting | 3 | 8.8% |
+| *(Unclassified)* | 9 | 26.5% |
 
 ## Changes
+
+### New Pages
+
+- [Secure DDoS Protection deployment](https://learn.microsoft.com/en-us/azure/ddos-protection/secure-ddos-protection)
 
 ## Classified Pages
 
@@ -71,6 +74,7 @@ confusable_not_for: Not for Azure Firewall (use azure-firewall), Azure Web Appli
 | [Monitoring data reference](https://learn.microsoft.com/en-us/azure/ddos-protection/monitor-ddos-protection-reference) | configuration | 0.80 | Monitoring data reference for DDoS Protection; such pages list metric names, dimensions, and log categories, which are detailed configuration/telemetry reference not generally known from training. |
 | [Price comparison](https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-pricing-guide) | decision-making | 0.80 | Explicitly about comparing pricing between Network Protection and IP Protection tiers and performing cost analysis with detailed scenarios; this is tier selection and cost trade-off guidance, fitting decision-making. |
 | [Reference architectures](https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-protection-reference-architectures) | architecture-patterns | 0.80 | Explicitly about reference architectures arranged by scenarios with grouped architecture patterns for services in virtual networks; these are product-specific architecture patterns and guidance on when to use them. |
+| [Secure DDoS Protection deployment](https://learn.microsoft.com/en-us/azure/ddos-protection/secure-ddos-protection) | security | 0.78 | The page provides product-specific security recommendations for Azure DDoS Protection, including concrete guidance on how to configure and secure the service (for example, which Azure security features and configurations to combine with DDoS Protection, and how to structure protection for specific resource types). This is actionable, deployment-focused security guidance rather than generic concepts, fitting the security sub-skill type. |
 | [Manage permissions and restrictions](https://learn.microsoft.com/en-us/azure/ddos-protection/manage-permissions) | security | 0.75 | Focused on managing permissions for DDoS Protection plans; such pages typically list specific RBAC roles and scopes required to link plans across subscriptions, which is product-specific security/identity configuration. |
 | [ARM template](https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-ip-protection-template) | configuration | 0.70 | ARM template quickstart defines the JSON configuration for a public IP and DDoS IP Protection, including resource types and properties, which is detailed configuration knowledge. |
 | [ARM template](https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-protection-template) | configuration | 0.70 | ARM template quickstart includes JSON schema for DDoS protection resources (types, apiVersions, properties) and how to link them to VNets. This is detailed configuration reference information. |

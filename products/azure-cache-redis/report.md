@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-05-17'
+generated_at: '2026-06-07'
 category_descriptions:
-  configuration: 'Configuring Azure Cache for Redis behavior: server settings, reboot/flush,
-    geo-replication, replicas, persistence, zone redundancy, and monitoring/metrics
-    via Azure Monitor and diagnostics.'
+  configuration: 'Configuring Redis caches: server settings, reboots/flushes, geo-replication,
+    replicas, persistence, zone redundancy, and monitoring via Azure Monitor, diagnostics,
+    and metrics.'
   security: 'Securing Azure Cache for Redis: auth (Entra, managed identity), network
     isolation (VNets, Private Link), TLS config, disk encryption, data access policies,
     and Azure Policy compliance.'
@@ -27,16 +27,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Cache for Redis development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  configuring geo-replication, persistence, VNet/Private Link, Azure Monitor metrics,
-  or ARM/Bicep deployments, and other Azure Cache for Redis related development tasks.
-  Not for Azure Managed Redis (use azure-managed-redis), Azure Cosmos DB (use azure-cosmos-db),
-  Azure Table Storage (use azure-table-storage), Azure Blob Storage (use azure-blob-storage).
-use_when: Use when configuring geo-replication, persistence, VNet/Private Link, Azure
-  Monitor metrics, or ARM/Bicep deployments, and other Azure Cache for Redis related
-  development tasks.
-confusable_not_for: Not for Azure Managed Redis (use azure-managed-redis), Azure Cosmos
-  DB (use azure-cosmos-db), Azure Table Storage (use azure-table-storage), Azure Blob
-  Storage (use azure-blob-storage).
+  configuring geo-replicated caches, Private Link access, persistence, CLI/PowerShell
+  automation, or ARM/Bicep deployments, and other Azure Cache for Redis related development
+  tasks. Not for Azure Managed Redis (use azure-managed-redis), Azure HPC Cache (use
+  azure-hpc-cache), Azure Blob Storage (use azure-blob-storage), Azure Table Storage
+  (use azure-table-storage).
+use_when: Use when configuring geo-replicated caches, Private Link access, persistence,
+  CLI/PowerShell automation, or ARM/Bicep deployments, and other Azure Cache for Redis
+  related development tasks.
+confusable_not_for: Not for Azure Managed Redis (use azure-managed-redis), Azure HPC
+  Cache (use azure-hpc-cache), Azure Blob Storage (use azure-blob-storage), Azure
+  Table Storage (use azure-table-storage).
 ---
 # Azure Cache for Redis Crawl Report
 
@@ -50,8 +51,8 @@ confusable_not_for: Not for Azure Managed Redis (use azure-managed-redis), Azure
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 63
+- **Updated Pages**: 1
+- **Unchanged**: 62
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cache-redis/azure-cache-redis.csv`
 
@@ -70,6 +71,11 @@ confusable_not_for: Not for Azure Managed Redis (use azure-managed-redis), Azure
 | *(Unclassified)* | 6 | 9.5% |
 
 ## Changes
+
+### Updated Pages
+
+- [Set up Enterprise active geo-replication](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-how-to-active-geo-replication)
+  - Updated: 2026-01-15T08:00:00.000Z → 2026-05-21T08:00:00.000Z
 
 ## Classified Pages
 
@@ -118,9 +124,9 @@ confusable_not_for: Not for Azure Managed Redis (use azure-managed-redis), Azure
 | [Scaling best practices](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-best-practices-scale) | best-practices | 0.70 | Scaling best-practices content for this service typically includes concrete guidance such as when to scale up vs out, specific SKU-related behaviors, data persistence considerations during scaling, and configuration patterns, which are actionable product-specific recommendations. |
 | [Secure your cache with a virtual network](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-how-to-premium-vnet) | security | 0.70 | VNet configuration for Premium tier includes subnet, access policies, and isolation settings that are security-focused and product-specific. |
 | [Server load management best practice](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-best-practices-server-load) | best-practices | 0.70 | A CPU utilization and server load article generally contains specific thresholds, metric names, and recommended actions (for example, what CPU percentage is acceptable, when to scale, which metrics to watch), which are concrete DO/DON'T guidelines unique to this product. |
-| [Set up Enterprise active geo-replication](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-how-to-active-geo-replication) | configuration | 0.70 | Active geo-replication for Enterprise tier (up to five instances, group behavior) is a product-specific configuration scenario with unique parameters and limits. |
 | [Set up passive geo-replication](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-how-to-geo-replication) | configuration | 0.70 | Passive geo-replication setup uses Azure-specific configuration steps and constraints (pairing rules, failover behavior) that qualify as expert configuration knowledge. |
 | [Troubleshoot client](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-troubleshoot-client) | troubleshooting | 0.70 | Aggregates troubleshooting links for client-side issues; by definition organized around diagnosing and resolving product-specific client problems. |
+| [Set up Enterprise active geo-replication](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-how-to-active-geo-replication) | configuration | 0.68 | The article provides product-specific configuration steps and settings for setting up active geo-replication groups (e.g., number of instances per group, region pairing behavior, portal options, and required configuration choices). These are concrete, service-specific configuration details rather than generic concepts, but it does not focus on numeric limits tables or troubleshooting error codes. |
 | [Change the size and tier of a cache](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-how-to-scale) | deployment | 0.65 | Scaling article covers how to change size/tier/node count and likely includes constraints and timing behavior specific to Redis scaling operations. |
 | [Create and manage with Azure PowerShell](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/how-to-manage-redis-cache-powershell) | integrations | 0.65 | PowerShell management article likely lists specific cmdlets, parameters, and required values unique to Azure Cache for Redis administration, matching integrations & coding patterns. |
 | [Monitor using insights](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-insights-overview) | configuration | 0.65 | Insights article describes specific monitoring views, metrics, and configuration options for Azure Monitor integration with Redis, including product-specific settings. |

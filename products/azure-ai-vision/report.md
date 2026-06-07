@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-17'
+generated_at: '2026-06-07'
 category_descriptions:
   limits-quotas: 'Limits, thresholds, and taxonomies for Image Analysis: category
     lists, adult content scores, object/people detection constraints, smart-crop behavior,
@@ -42,8 +42,8 @@ confusable_not_for: Not for Azure AI Custom Vision (use azure-custom-vision), Az
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 45
+- **Updated Pages**: 1
+- **Unchanged**: 44
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-ai-vision/azure-ai-vision.csv`
 
@@ -59,6 +59,11 @@ confusable_not_for: Not for Azure AI Custom Vision (use azure-custom-vision), Az
 | *(Unclassified)* | 25 | 55.6% |
 
 ## Changes
+
+### Updated Pages
+
+- [Azure Vision FAQ](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/faq)
+  - Updated: 2025-11-18T15:37:00.000Z → 2026-06-05T22:11:00.000Z
 
 ## Classified Pages
 
@@ -106,7 +111,7 @@ confusable_not_for: Not for Azure AI Custom Vision (use azure-custom-vision), Az
 | [OCR overview](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/overview-ocr) | 0.25 | High-level OCR overview and deprecation warning; lacks evidence of numeric limits, configuration parameters, or decision matrices. |
 | [Version 3.2 quickstart](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/quickstarts-sdk/image-analysis-client-library) | 0.25 | Quickstart for tagging images; primarily tutorial code and basic configuration, not a reference of expert-only parameters or limits. |
 | [Version 4.0 quickstart](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/quickstarts-sdk/image-analysis-client-library-40) | 0.25 | Quickstart for Image Analysis 4.0; focuses on basic usage, not on exhaustive configuration, limits, or troubleshooting mappings. |
-| [Azure Vision FAQ](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/faq) | 0.20 | FAQ page description suggests general Q&A and support pointers without clear evidence of numeric limits, configuration tables, error-code mappings, or other product-specific expert details as defined by the sub-skill types. |
+| [Azure Vision FAQ](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/faq) | 0.20 | FAQ page description appears high-level and support-oriented without clear evidence of numeric limits, configuration tables, error-code mappings, or other detailed expert-only content as defined by the sub-skill types. |
 | [Call the Background removal API (preview)](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/how-to/background-removal) | 0.20 | How-to/tutorial style description of a now-retired background removal feature; summary shows no specific configuration parameters, limits, or error-code-based troubleshooting. |
 | [Generate alt text for images](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/use-case-alt-text) | 0.20 | Primarily an overview/use-case page for generating image alt text with deprecation notice; no evidence of numeric limits, configuration tables, error codes, or product-specific parameters. |
 | [Install the SDK](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/sdk/install-sdk) | 0.20 | Install guide for SDK; typically step-by-step commands without comprehensive configuration option tables or product-specific limits. |

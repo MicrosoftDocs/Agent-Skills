@@ -1,9 +1,9 @@
 ---
 name: azure-application-gateway
-description: Expert knowledge for Azure Application Gateway development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring listeners/routing, WAF/TLS, autoscale v2 gateways, AKS/AGIC or Containers, or high-traffic workloads, and other Azure Application Gateway related development tasks. Not for Azure Front Door (use azure-front-door), Azure Load Balancer (use azure-load-balancer), Azure Traffic Manager (use azure-traffic-manager), Azure Web Application Firewall (use azure-web-application-firewall).
+description: Expert knowledge for Azure Application Gateway development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring listeners/routing, TLS/mTLS and WAF, autoscale v2 gateways, AKS/AGIC ingress, or AppGW for Containers, and other Azure Application Gateway related development tasks. Not for Azure Front Door (use azure-front-door), Azure Load Balancer (use azure-load-balancer), Azure Traffic Manager (use azure-traffic-manager), Azure Virtual Network (use azure-virtual-network).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-24"
+  generated_at: "2026-06-07"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Application Gateway Skill
@@ -28,7 +28,7 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L43-L47 | Guidance on designing Application Gateway for very high traffic: sizing, autoscaling, performance tuning, capacity planning, and configuration patterns to handle large loads reliably. |
 | Decision Making | L48-L59 | Guidance on pricing, billing, and migration decisions for Application Gateway (V1→V2, AGIC→Containers, classic→ARM VMs) and choosing networking for Application Gateway for Containers |
 | Architecture & Design Patterns | L60-L64 | Guidance on choosing and designing load-balancing strategies and traffic distribution patterns when using Azure Application Gateway for Containers. |
-| Limits & Quotas | L65-L70 | Autoscaling, zone redundancy, capacity and configuration limits, performance behaviors, and FAQs for sizing and scaling Azure Application Gateway v2. |
+| Limits & Quotas | L65-L70 | Autoscaling, zone redundancy setup, and detailed limits/behavioral constraints (throughput, listeners, rules, connections) for Azure Application Gateway v2. |
 | Security | L71-L112 | TLS/mTLS, certificates (Key Vault, Let’s Encrypt, cert-manager), cipher/TLS policies, SSL offload, WAF, DDoS, HSTS, and secure listener/backend configs for Application Gateway and Containers |
 | Configuration | L113-L178 | Configuring Azure Application Gateway and Application Gateway for Containers: listeners, routing, health probes, header/URL rewrites, diagnostics, monitoring, session affinity, and AKS/Ingress integration. |
 | Integrations & Coding Patterns | L179-L186 | Patterns for integrating App Gateway for Containers with monitoring, security, and scaling tools: Prometheus/Grafana, Istio, Sentinel/Defender, and AKS pod autoscaling via gateway metrics. |
@@ -66,7 +66,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Configure autoscaling and zone redundancy for Application Gateway v2 | https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-autoscaling-zone-redundant |
-| Application Gateway limits, behaviors, and FAQs | https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-faq |
+| Azure Application Gateway limits and behavioral constraints | https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-faq |
 
 ### Security
 | Topic | URL |

@@ -1,9 +1,9 @@
 ---
 name: azure-files
-description: Expert knowledge for Azure Files development including best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Azure Files shares, Azure File Sync, private endpoints, identity-based SMB/NFS, or RAG app integrations, and other Azure Files related development tasks. Not for Azure Blob Storage (use azure-blob-storage), Azure NetApp Files (use azure-netapp-files), Azure Managed Lustre (use azure-managed-lustre), Azure Container Storage (use azure-container-storage).
+description: Expert knowledge for Azure Files development including best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Azure Files shares, Azure File Sync, private endpoints/VPN, identity-based SMB/NFS, or RAG app integrations, and other Azure Files related development tasks. Not for Azure Blob Storage (use azure-blob-storage), Azure NetApp Files (use azure-netapp-files), Azure Managed Lustre (use azure-managed-lustre), Azure Container Storage (use azure-container-storage).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-31"
+  generated_at: "2026-06-07"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Files Skill
@@ -28,7 +28,7 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L51-L71 | Guidance on planning Azure Files and File Sync deployments, choosing tiers, redundancy, billing/cost models, and selecting or migrating to the right file share and application approach. |
 | Limits & Quotas | L72-L79 | Scalability, performance, and quota limits for Azure Files and File Sync, including tiers, API throttling behavior, and FAQs on supported sizes, IOPS, and throughput. |
 | Security | L80-L108 | Securing Azure Files: identity-based SMB/NFS auth, Kerberos/AD/Entra integration, encryption, TLS, firewalls, endpoints, permissions, and network security configuration. |
-| Configuration | L109-L135 | Configuring Azure Files and Azure File Sync: networking/VPN and private endpoints, performance and redundancy, cloud tiering, DFS integration, monitoring/alerts, and file copy/soft delete settings. |
+| Configuration | L109-L135 | Configuring Azure Files and Azure File Sync: networking/VPN and private endpoints, performance and redundancy, cloud tiering, DFS integration, monitoring/alerts, and management via PowerShell/Arc. |
 | Integrations & Coding Patterns | L136-L158 | Patterns and code to build RAG apps over Azure Files using Haystack, LangChain, LlamaIndex, and vector DBs (Pinecone/Qdrant/Weaviate), plus .NET/Java/Python integration and auth. |
 | Deployment | L159-L170 | Guides for migrating and syncing data to Azure Files/Azure File Sync from NAS, Linux, GlusterFS, SMB/NFS shares, and moving File Sync resources safely across scopes. |
 
@@ -128,7 +128,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure Windows P2S VPN access to Azure Files | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-configure-p2s-vpn-windows |
 | Set up site-to-site VPN connectivity for Azure Files | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-configure-s2s-vpn |
 | Configure Azure Monitor metrics and logs for Azure Files | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-monitoring |
-| Use Azure Files monitoring metrics and logs | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-monitoring-reference |
+| Reference monitoring metrics and logs for Azure Files | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-monitoring-reference |
 | Configure DNS forwarding to Azure Files private endpoints | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-networking-dns |
 | Configure networking and endpoints for Azure Files access | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-networking-overview |
 | Configure and use soft delete for Azure file shares | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-prevent-file-share-deletion |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-31'
+generated_at: '2026-06-07'
 category_descriptions:
   decision-making: 'Planning MySQL on Azure: version lifecycle, capacity and tier
     selection, HA/BCDR, performance features, and migration/upgrade strategies and
@@ -13,15 +13,15 @@ category_descriptions:
   architecture-patterns: Patterns for connecting AKS to MySQL Flexible Server, designing
     backup/restore, data-in/out replication, high availability (zone-redundant), and
     read-replica-based scaling.
-  configuration: 'Configuring MySQL Flexible Server: parameters, HA, networking (VNet/firewall),
-    replication, logs/slow queries, monitoring/metrics, alerts, scaling, maintenance,
-    backups, and read replicas.'
+  configuration: 'Configuring MySQL Flexible Server: HA, networking, replication,
+    maintenance windows, monitoring/alerts, logging, server parameters, scaling, and
+    point-in-time restore via portal and CLI.'
   troubleshooting: 'Diagnosing and fixing MySQL Flexible Server issues: connectivity,
     performance (CPU/memory/queries), errors, corruption, capacity, replication lag,
     CLI problems, and using logs/self-heal tools'
   limits-quotas: 'Limits, quotas, and performance caps for MySQL Flexible Server:
-    compute/storage/IOPS limits, quota increase process, restore retention limits,
-    and stop/start duration constraints.'
+    max connections/cores/IOPS, storage IOPS behavior, quota increase requests, restart/stop
+    limits, and delete/restore time limits.'
   security: 'Securing Azure Database for MySQL Flexible Server: network isolation
     (Private Link, firewalls), TLS and cert rotation, encryption, Entra auth, users,
     and audit logging before/after migration.'
@@ -31,17 +31,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Database for MySQL development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when deploying MySQL Flexible Server, configuring HA/networking, managing backups/replicas,
-  or tuning performance, and other Azure Database for MySQL related development tasks.
-  Not for Azure Database for MariaDB (use azure-database-mariadb), Azure Database
-  for PostgreSQL (use azure-database-postgresql), Azure SQL Database (use azure-sql-database),
+  Use when using MySQL Flexible Server HA/replication, backups/PITR, AKS connectivity,
+  Entra auth, or migration tools, and other Azure Database for MySQL related development
+  tasks. Not for Azure Database for PostgreSQL (use azure-database-postgresql), Azure
+  Database for MariaDB (use azure-database-mariadb), Azure SQL Database (use azure-sql-database),
   Azure SQL Managed Instance (use azure-sql-managed-instance).
-use_when: Use when deploying MySQL Flexible Server, configuring HA/networking, managing
-  backups/replicas, or tuning performance, and other Azure Database for MySQL related
-  development tasks.
-confusable_not_for: Not for Azure Database for MariaDB (use azure-database-mariadb),
-  Azure Database for PostgreSQL (use azure-database-postgresql), Azure SQL Database
-  (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance).
+use_when: Use when using MySQL Flexible Server HA/replication, backups/PITR, AKS connectivity,
+  Entra auth, or migration tools, and other Azure Database for MySQL related development
+  tasks.
+confusable_not_for: Not for Azure Database for PostgreSQL (use azure-database-postgresql),
+  Azure Database for MariaDB (use azure-database-mariadb), Azure SQL Database (use
+  azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance).
 ---
 # Azure Database for MySQL Crawl Report
 
@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Database for MariaDB (use azure-database-maria
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 179
+- **Updated Pages**: 2
+- **Unchanged**: 178
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-database-mysql/azure-database-mysql.csv`
 
@@ -79,8 +79,10 @@ confusable_not_for: Not for Azure Database for MariaDB (use azure-database-maria
 
 ### Updated Pages
 
-- [Major version upgrade FAQ](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/how-to-upgrade-faq)
-  - Updated: 2026-05-21T22:09:00.000Z → 2026-05-27T06:03:00.000Z
+- [Request quota increase](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/how-to-request-quota-increase)
+  - Updated: 2025-08-21T08:00:00.000Z → 2026-06-03T06:03:00.000Z
+- [Server parameters](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-server-parameters)
+  - Updated: 2025-11-25T08:00:00.000Z → 2026-06-03T22:14:00.000Z
 
 ## Classified Pages
 
@@ -97,7 +99,6 @@ confusable_not_for: Not for Azure Database for MariaDB (use azure-database-maria
 | [Change server parameters](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/scripts/sample-cli-change-server-parameters) | configuration | 0.80 | Script lists all server parameters and allowable values and changes specific ones (max_connections, time_zone), which are product-specific configuration details. |
 | [Configure Microsoft Entra authentication](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/security-how-to-entra) | security | 0.80 | Step-by-step Entra auth setup with specific settings, scopes, and commands unique to this integration. |
 | [Microsoft Entra authentication](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/security-entra-authentication) | security | 0.80 | Covers Entra-based auth model, including roles, token behavior, and mapping to MySQL users—service-specific security configuration. |
-| [Request quota increase](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/how-to-request-quota-increase) | limits-quotas | 0.80 | Discusses default quotas/limits and how to request increases; such pages typically list concrete resource limits and SKU-specific quotas. |
 | [Restart, stop, start a server](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/scripts/sample-cli-restart-stop-start) | limits-quotas | 0.80 | States that when you stop the server it can remain stopped for a maximum of 30 consecutive days before auto-start, which is a precise time limit/constraint. |
 | [Troubleshoot CLI errors](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/how-to-troubleshoot-cli-errors) | troubleshooting | 0.80 | Guides diagnosis of Azure CLI errors when managing MySQL Flexible Server, mapping CLI-specific issues to causes and fixes. |
 | [Troubleshoot common errors](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/how-to-troubleshoot-common-errors) | troubleshooting | 0.80 | Explicit troubleshooting article for common errors when migrating to or developing on Azure Database for MySQL Flexible Server, mapping issues to causes and fixes. |
@@ -107,6 +108,8 @@ confusable_not_for: Not for Azure Database for MariaDB (use azure-database-maria
 | [Data encryption with Azure CLI](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/security-how-to-data-encryption-cli) | security | 0.78 | CLI commands and parameters for enabling CMK encryption are product-specific security configuration. |
 | [Data encryption with Azure portal](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/security-how-to-data-encryption-portal) | security | 0.78 | Portal-based setup of encryption with CMK; includes specific UI fields and constraints for this product. |
 | [Private Link](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-networking-private-link) | security | 0.78 | Private Link article typically includes required DNS zones, endpoint configuration, and scope details unique to this product. |
+| [Request quota increase](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/how-to-request-quota-increase) | limits-quotas | 0.78 | Page is specifically about quota increases for Azure Database for MySQL Flexible Server, which presupposes and typically lists concrete default quotas/limits and how to extend them. This is product- and tier-specific numeric information that an LLM wouldn't reliably know from training, fitting the limits-quotas category. |
+| [Server parameters](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-server-parameters) | configuration | 0.78 | The article provides product-specific guidance on configuring MySQL server parameters in Azure Database for MySQL Flexible Server, including which parameters are exposed, how they behave in this managed service, and constraints on their values. This is configuration-focused expert knowledge that goes beyond generic MySQL documentation and includes Azure-specific parameter handling and recommendations. |
 | [TLS overview](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/security-tls) | security | 0.78 | TLS overview for this service; includes supported protocol versions and enforcement behavior specific to Azure MySQL. |
 | [Connect using TLS/SSL](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/security-tls-how-to-connect) | security | 0.76 | How-to for TLS/SSL connectivity; likely includes connection string parameters and certificate usage specific to this service. |
 | [Create databases and users](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/security-how-to-create-users) | security | 0.76 | How-to for creating users on Azure Database for MySQL; likely includes specific permission patterns and Azure-specific admin behavior beyond generic MySQL user creation. |
@@ -147,7 +150,6 @@ confusable_not_for: Not for Azure Database for MariaDB (use azure-database-maria
 | [Resolve capacity errors](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/resolve-capacity-errors) | troubleshooting | 0.70 | Focuses on diagnosing and resolving capacity-related deployment/scale errors, likely with specific error messages and remediation steps. |
 | [Restore a deleted server](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/how-to-restore-dropped-server) | limits-quotas | 0.70 | Describes that backups for deleted servers are retained for up to five days and can only be restored from the original subscription, which is a concrete time-bound service limit. |
 | [Secure your Azure Database for MySQL](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/security-overview) | security | 0.70 | Security overview with best practices for this specific service; likely includes RBAC roles, network settings, and encryption options. |
-| [Server parameters](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-server-parameters) | configuration | 0.70 | Guidelines for configuring server parameters; likely includes specific parameter names and recommended values unique to Azure MySQL Flexible Server. |
 | [Server self heal](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/how-to-self-heal) | troubleshooting | 0.70 | Describes a product-specific self-heal mechanism for resolving server issues, including when and how to trigger it to restore service health. |
 | [Service tiers](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-service-tiers-storage) | decision-making | 0.70 | Service tiers article typically includes vCore/memory/storage characteristics per tier and guidance on when to choose Burstable, General Purpose, or Memory-Optimized, which is SKU/tier selection decision-making. |
 | [Troubleshooting best practices](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-troubleshooting-best-practices) | best-practices | 0.70 | Offers specific recommendations to keep databases running smoothly and design schemas for performance, tailored to Azure Database for MySQL Flexible Server. |

@@ -1,9 +1,9 @@
 ---
 name: azure-virtual-machines
-description: Expert knowledge for Azure Virtual Machines development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using VM scale sets, Trusted Launch, disk encryption, GPU/InfiniBand, or VM Image Builder, and other Azure Virtual Machines related development tasks. Not for Azure Virtual Machine Scale Sets (use azure-vm-scalesets), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Data Science Virtual Machines (use azure-data-science-vm), Azure Cloud Services (use azure-cloud-services).
+description: Expert knowledge for Azure Virtual Machines development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when choosing VM sizes/disks, configuring scale sets, Trusted Launch, Spot/Reserved VMs, or Oracle/HPC workloads, and other Azure Virtual Machines related development tasks. Not for Azure Data Science Virtual Machines (use azure-data-science-vm), Azure Virtual Machine Scale Sets (use azure-vm-scalesets), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Cloud Services (use azure-cloud-services).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-31"
+  generated_at: "2026-06-07"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Virtual Machines Skill
@@ -24,21 +24,23 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Location | Description |
 |----------|----------|-------------|
-| Troubleshooting | L37-L63 | Diagnosing and fixing Azure VM issues: extensions, disk encryption, hibernation, NSG traffic blocks, Spot/scale set errors, Image Builder, kernel/packages, and Trusted Launch. |
-| Best Practices | L64-L90 | Performance, scaling, HA, and cost-optimization best practices for Azure VMs, including HPC/InfiniBand tuning, disks/snapshots, OS-specific tweaks, and Image Builder/boot-time optimization. |
-| Decision Making | L91-L161 | Planning and cost-optimization guidance for Azure VMs and disks, including sizing, migrations/retirements, licensing, backup/DR, GPU/HPC choices, Oracle workloads, and image/OS lifecycle decisions. |
-| Architecture & Design Patterns | L162-L177 | Design patterns for Azure VM workloads: multi-region and fleet strategies, low-latency/NUMA-aware HPC, clustered/shared-disk setups, and Oracle/OpenShift architectures and DR. |
-| Limits & Quotas | L178-L382 | VM size specs, disk and storage performance limits, GPU/HPC capabilities, quotas, lifecycle/support, and operational constraints for running and scaling Azure Virtual Machines. |
-| Security | L383-L458 | Securing Azure VMs and disks: encryption (ADE, CMK, host), Trusted Launch, MSP/metadata hardening, TLS/Key Vault integration, RBAC/Policy controls, and secure image/gallery sharing. |
-| Configuration | [configuration.md](configuration.md) | Configuring Azure VMs and scale sets: disks, images, extensions, GPU/InfiniBand, maintenance, monitoring/telemetry, OS/agent settings, SSH/WinRM, Oracle workloads, and VM Image Builder. |
-| Integrations & Coding Patterns | [integrations.md](integrations.md) | Automation patterns for managing VMs: CLI/PowerShell/REST scripts for disks, snapshots, backups, encryption, maintenance/scheduled events, monitoring, metadata, and Oracle DB on Azure VMs. |
-| Deployment | [deployment.md](deployment.md) | Guides for migrating and upgrading Azure VMs/AKS nodes, disks, and OS images, plus deployment patterns (rolling, blue‑green), cross-region moves, and DevOps-based image/artifact workflows. |
+| Troubleshooting | L37-L65 | Diagnosing and fixing Azure VM issues: kernel/AKS problems, package/extension failures, disk encryption, hibernation, NSG/traffic, restore/maintenance, Trusted Launch, and Image Builder errors. |
+| Best Practices | L66-L97 | Best practices for operating, updating, scaling, tuning, and cost-optimizing Azure VMs (Linux/Windows, HPC, InfiniBand, disks, images) and improving performance, HA, and boot times. |
+| Decision Making | L98-L170 | Guidance for choosing VM, disk, and image options; planning costs, reservations, and Spot; and designing or migrating Linux, GPU, Oracle, and AKS workloads, especially around retirements. |
+| Architecture & Design Patterns | L171-L186 | Design patterns for Azure VM workloads: multi-region and fleet strategies, low-latency/NUMA-aware HPC, clustered/shared-disk setups, and Oracle/OpenShift architectures and DR. |
+| Limits & Quotas | L187-L390 | VM size specs, disk and storage performance limits, quotas, and hardware constraints for Azure VMs, including GPU/HPC families, confidential VMs, and Linux/Windows operational behaviors. |
+| Security | L391-L468 | Securing Azure VMs and disks: encryption (ADE, CMK, encryption at host, double encryption), Key Vault/PKI, Trusted Launch, MSP/metadata hardening, TLS, RBAC, and security policies. |
+| Configuration | [configuration.md](configuration.md) | Configuring Azure VMs and scale sets: disks, images, networking, maintenance, monitoring, extensions (agents, GPUs, security, backup), Linux/Windows guest settings, HPC, Oracle workloads, and AKS hosts. |
+| Integrations & Coding Patterns | [integrations.md](integrations.md) | Scripts and patterns for managing Azure VMs: backups, restore points, disk and VHD operations, maintenance/scheduled events, monitoring, encryption, and Oracle/SQL integrations via CLI, PowerShell, REST, and ARM. |
+| Deployment | [deployment.md](deployment.md) | Deploying and migrating Azure VMs and disks: image customization, blue-green/rolling deployments, in-place OS upgrades, and moving/migrating VMs, disks, and maintenance configs across regions. |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
-| Troubleshoot Azure Linux Container Host kernel version issues | https://learn.microsoft.com/en-us/azure/azure-linux/troubleshoot-kernel |
-| Troubleshoot Azure Linux Container Host package upgrade failures | https://learn.microsoft.com/en-us/azure/azure-linux/troubleshoot-packages |
+| Manage and debug Azure Linux kernel issues | https://learn.microsoft.com/en-us/azure/azure-linux/faq-kernel |
+| Troubleshoot AKS ACL workloads by toggling SELinux | https://learn.microsoft.com/en-us/azure/azure-linux/selinux-toggle-troubleshoot |
+| Resolve outdated kernel versions on Azure Linux AKS nodes | https://learn.microsoft.com/en-us/azure/azure-linux/troubleshoot-kernel-version |
+| Troubleshoot automatic package upgrade failures on Azure Linux AKS | https://learn.microsoft.com/en-us/azure/azure-linux/troubleshoot-package-upgrade-aks |
 | Resolve Azure Spot VM and scale set error codes | https://learn.microsoft.com/en-us/azure/virtual-machines/error-codes-spot |
 | Troubleshoot Azure Windows VM extension failures | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/troubleshoot |
 | Diagnose and fix issues on Azure HB/HBv and N-series VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/hb-hc-known-issues |
@@ -64,6 +66,11 @@ This skill requires **network access** to fetch documentation content:
 ### Best Practices
 | Topic | URL |
 |-------|-----|
+| Operate and support Azure Linux distributions | https://learn.microsoft.com/en-us/azure/azure-linux/faq-general |
+| Manage Azure Linux packages and upgrades | https://learn.microsoft.com/en-us/azure/azure-linux/faq-packages |
+| Perform common developer tasks on Azure Linux | https://learn.microsoft.com/en-us/azure/azure-linux/get-started-developer |
+| Apply best practices for upgrading Azure Linux AKS nodes | https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-upgrade-azure-linux-nodes |
+| Choose and configure Azure Linux VM update strategy | https://learn.microsoft.com/en-us/azure/azure-linux/update-vm-azure-linux |
 | Apply scaling best practices for Azure HPC apps | https://learn.microsoft.com/en-us/azure/virtual-machines/compiling-scaling-applications |
 | Scale and tune HPC applications on Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/compiling-scaling-applications |
 | Optimize InfiniBand-enabled H-series and N-series VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/configure |
@@ -91,7 +98,11 @@ This skill requires **network access** to fetch documentation content:
 ### Decision Making
 | Topic | URL |
 |-------|-----|
-| Plan migration from Azure Linux 2.0 AKS node images | https://learn.microsoft.com/en-us/azure/azure-linux/support-help |
+| Plan AKS support lifecycle for Azure Linux hosts | https://learn.microsoft.com/en-us/azure/azure-linux/aks-support-cycle |
+| Choose the right Azure Linux deployment option | https://learn.microsoft.com/en-us/azure/azure-linux/deployment-options |
+| Use Azure Linux as AKS node OS effectively | https://learn.microsoft.com/en-us/azure/azure-linux/faq-aks |
+| Select Azure Linux or ACL for AKS workloads | https://learn.microsoft.com/en-us/azure/azure-linux/get-started-aks |
+| Decide and execute AKS node migration to Azure Linux | https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-migrate-azure-linux-aks |
 | Choose Azure HPC/AI VM images for InfiniBand | https://learn.microsoft.com/en-us/azure/virtual-machines/azure-hpc-vm-images |
 | Decide when to use Azure VMs without temp disks | https://learn.microsoft.com/en-us/azure/virtual-machines/azure-vms-no-temp-disk |
 | Plan backup and disaster recovery for managed disks | https://learn.microsoft.com/en-us/azure/virtual-machines/backup-and-disaster-recovery-for-azure-iaas-disks |
@@ -101,13 +112,11 @@ This skill requires **network access** to fetch documentation content:
 | Monitor and control Azure VM spending with Cost Management | https://learn.microsoft.com/en-us/azure/virtual-machines/cost-optimization-monitor-costs |
 | Plan and estimate Azure VM costs using Cost Management | https://learn.microsoft.com/en-us/azure/virtual-machines/cost-optimization-plan-to-manage-costs |
 | Understand impact of deprecated Azure Marketplace images | https://learn.microsoft.com/en-us/azure/virtual-machines/deprecated-images |
-| Plan migration from Azure Disk Encryption to encryption at host | https://learn.microsoft.com/en-us/azure/virtual-machines/disk-encryption-migrate |
 | Plan migration from Standard HDD OS disks before retirement | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-hdd-os-retirement |
 | Choose options to improve Azure disk performance | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-performance-options |
 | Select redundancy options for Azure managed disks | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-redundancy |
 | Plan and purchase Azure Disk Storage reservations | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-reserved-capacity |
 | Choose the right Azure managed disk type | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-types |
-| Understand and optimize Azure Disk Storage billing | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-understand-billing |
 | Estimate Azure VM costs using portal cost card | https://learn.microsoft.com/en-us/azure/virtual-machines/estimated-vm-create-cost-card |
 | Decide between Azure Generation 1 and 2 VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/generation-2 |
 | Choose DNS name resolution options for Linux Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/azure-dns |
@@ -129,7 +138,7 @@ This skill requires **network access** to fetch documentation content:
 | Plan for Azure NV-series GPU VM retirement and migration | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nv-series |
 | Prepare for Azure NVv3 GPU VM retirement and options | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nvv3-series |
 | Plan migration from retiring NVv3 GPU VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nvv3-series-retirement |
-| Handle NVv4 GPU VM retirement and migration | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nvv4-retirement |
+| Plan migration for Azure NVv4 VM retirement | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nvv4-retirement |
 | Review previous-generation Azure VM size series | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/previous-gen-sizes-list |
 | Plan migration from Av1 to Av2 Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/retirement/av1-series-retirement |
 | Plan migration from DCsv2 to newer Azure VM series | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/retirement/dcsv2-series-retirement |
@@ -178,7 +187,7 @@ This skill requires **network access** to fetch documentation content:
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
-| Plan around Azure Linux Container Host support lifecycle | https://learn.microsoft.com/en-us/azure/azure-linux/support-cycle |
+| Understand CVE handling SLAs for Azure Linux and ACL | https://learn.microsoft.com/en-us/azure/azure-linux/manage-cves |
 | Understand Azure VM compute throttling limits | https://learn.microsoft.com/en-us/azure/virtual-machines/compute-throttling-limits |
 | Check support matrix and limits for Azure VM restore points | https://learn.microsoft.com/en-us/azure/virtual-machines/concepts-restore-points |
 | Compute optimized Dedicated Host SKU capacities and packing | https://learn.microsoft.com/en-us/azure/virtual-machines/dedicated-host-compute-optimized-skus |
@@ -188,7 +197,6 @@ This skill requires **network access** to fetch documentation content:
 | Storage optimized Dedicated Host SKU capacities and packing | https://learn.microsoft.com/en-us/azure/virtual-machines/dedicated-host-storage-optimized-skus |
 | Use Azure VM managed disk bursting performance limits | https://learn.microsoft.com/en-us/azure/virtual-machines/disk-bursting |
 | Understand performance tiers for Azure Managed Disks | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-change-performance |
-| Configure and deploy Azure Premium SSD v2 disks | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-deploy-premium-v2 |
 | Enable performance plus for Azure SSD and HDD disks | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-enable-performance |
 | Scalability and performance targets for Azure VM disks | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-scalability-targets |
 | Reference Ebsv5 and Ebdsv5 VM storage performance limits | https://learn.microsoft.com/en-us/azure/virtual-machines/ebdsv5-ebsv5-series |
@@ -383,9 +391,11 @@ This skill requires **network access** to fetch documentation content:
 ### Security
 | Topic | URL |
 |-------|-----|
-| Understand Azure Linux with OS Guard security model | https://learn.microsoft.com/en-us/azure/azure-linux/intro-azure-linux-os-guard |
+| Manage trusted root and custom certificates on Azure Linux | https://learn.microsoft.com/en-us/azure/azure-linux/certificate-management |
+| Install custom root CAs on Azure Linux AKS hosts | https://learn.microsoft.com/en-us/azure/azure-linux/install-certificates-aks |
 | Configure boot integrity monitoring and guest attestation for Trusted Launch VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/boot-integrity-monitoring-overview |
 | Configure server-side encryption for Azure managed disks | https://learn.microsoft.com/en-us/azure/virtual-machines/disk-encryption |
+| Migrate from Azure Disk Encryption to encryption at host | https://learn.microsoft.com/en-us/azure/virtual-machines/disk-encryption-migrate |
 | Understand encryption options for Azure managed disks | https://learn.microsoft.com/en-us/azure/virtual-machines/disk-encryption-overview |
 | Use disk encryption sets across Entra tenants | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-cross-tenant-customer-managed-keys |
 | Enable customer-managed keys for disks in Azure portal | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-enable-customer-managed-keys-portal |

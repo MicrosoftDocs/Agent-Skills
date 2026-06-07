@@ -1,9 +1,9 @@
 ---
 name: azure-pipelines
-description: Expert knowledge for Azure Pipelines development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring YAML pipelines, service connections, Key Vault secrets, deployment agents, or Kubernetes/VM releases, and other Azure Pipelines related development tasks. Not for Azure DevOps (use azure-devops), Azure Boards (use azure-boards), Azure Repos (use azure-repos), Azure Test Plans (use azure-test-plans).
+description: Expert knowledge for Azure Pipelines development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring YAML pipelines, service connections, Key Vault secrets, deployment agents, or Azure app/AKS releases, and other Azure Pipelines related development tasks. Not for Azure DevOps (use azure-devops), Azure Boards (use azure-boards), Azure Repos (use azure-repos), Azure Test Plans (use azure-test-plans).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-31"
+  generated_at: "2026-06-07"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Pipelines Skill
@@ -24,15 +24,15 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L47 | Diagnosing and fixing Azure Pipelines issues: service connections (ARM/workload identity), web app deployments, triggers, queued-but-not-starting runs, and analyzing logs/run failures. |
+| Troubleshooting | L37-L47 | Diagnosing and fixing Azure Pipelines issues: service connections (ARM/workload identity), web app deployments, triggers, queued runs, and analyzing logs to resolve run failures. |
 | Best Practices | L48-L58 | Best practices for faster, reliable pipelines: caching, cross-platform scripts, handling flaky tests, parallel test execution (incl. VSTest), Test Impact Analysis, and UI test configuration. |
 | Decision Making | L59-L65 | Guides for migrating CI/CD pipelines to Azure Pipelines, including from Jenkins/Travis and from classic UI pipelines to YAML, with patterns, pitfalls, and safe migration steps. |
 | Architecture & Design Patterns | L66-L73 | Guidance on end-to-end CI/CD and DevOps architectures for Azure: baseline pipeline patterns, Web App deployment design, and IaaS/VM-focused DevTest and production pipelines. |
-| Limits & Quotas | L74-L83 | Limits, quotas, and capacity planning for Azure Pipelines: hosted agent limits, image deprecation, parallel jobs, agent pool concurrency, run retention, and handling large Universal Packages. |
-| Security | L84-L134 | Securing Azure Pipelines: auth for agents, service connections, secrets/Key Vault, permissions and approvals, secure variables, artifact/repo protection, and security scanning/compliance tasks. |
-| Configuration | L135-L496 | Configuring Azure Pipelines: agents, triggers, variables, YAML schema, environments, deployment strategies, artifacts, and detailed setup for built-in tasks and test/analytics features. |
-| Integrations & Coding Patterns | L497-L524 | Patterns and examples for integrating Azure Pipelines with languages, tools, and services (Git, Key Vault, ServiceNow, Slack, ARM, Selenium), plus scripting, variables, and package caching. |
-| Deployment | L525-L586 | End-to-end deployment with Azure Pipelines: agent setup (self-hosted/scale set/deployment groups), CI/CD for apps/containers/DBs, and using built-in tasks for IIS, Kubernetes, VMs, and Azure services. |
+| Limits & Quotas | L74-L85 | Limits, quotas, and planning for Microsoft/GitHub-hosted agents, parallel jobs, concurrency, image deprecations, run retention, and handling large Universal Packages in Azure Pipelines. |
+| Security | L86-L136 | Securing Azure Pipelines: auth for agents, service connections, secrets/Key Vault, permissions and approvals, secure variables, artifact/repo protection, and security scanning/compliance tasks. |
+| Configuration | L137-L499 | Configuring Azure Pipelines: agents, triggers, variables, YAML schema, environments, deployment strategies, and detailed setup for built-in tasks, test/coverage, artifacts, and external tool integrations. |
+| Integrations & Coding Patterns | L500-L527 | Patterns and examples for integrating Azure Pipelines with languages, tools, and services (Git, Key Vault, ServiceNow, Slack, ARM, Selenium), plus scripting, variables, and package caching. |
+| Deployment | L528-L588 | End-to-end deployment with Azure Pipelines: agent setup (self-hosted/scale set/deployment groups), CI/CD for apps/containers/DBs, and using built-in tasks for IIS, Kubernetes, VMs, and Azure services. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -74,6 +74,8 @@ This skill requires **network access** to fetch documentation content:
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
+| Review GitHub-hosted agents quotas and FAQs for Pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/github-hosted-faq?view=azure-devops |
+| Plan usage and limits for GitHub-hosted agents in Pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/github-hosted?view=azure-devops |
 | Track deprecation schedule for hosted build images | https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/hosted-deprecation-schedule?view=azure-devops |
 | Understand Microsoft-hosted agent limits in Azure Pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/hosted?view=azure-devops |
 | Analyze Azure Pipelines agent pool concurrency | https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/pool-consumption-report?view=azure-devops |
@@ -299,6 +301,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure HelmDeploy@1 for Kubernetes deployments | https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/helm-deploy-v1?view=azure-pipelines |
 | Configure deprecated HelmInstaller@0 Helm/Kubernetes task | https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/helm-installer-v0?view=azure-pipelines |
 | Configure HelmInstaller@1 Helm tool installer task | https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/helm-installer-v1?view=azure-pipelines |
+| Configure IIS web app management Azure Pipelines task | https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/iisweb-app-management-on-machine-group-v0?view=azure-pipelines |
 | Configure InstallAppleCertificate@0 legacy macOS certificate task | https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/install-apple-certificate-v0?view=azure-pipelines |
 | Configure InstallAppleCertificate@1 legacy certificate install task | https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/install-apple-certificate-v1?view=azure-pipelines |
 | Configure InstallAppleCertificate@2 for macOS build signing | https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/install-apple-certificate-v2?view=azure-pipelines |
@@ -579,7 +582,6 @@ This skill requires **network access** to fetch documentation content:
 | Build and manage containers with Docker@2 task | https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/docker-v2?view=azure-pipelines |
 | Configure IISWebAppDeploymentOnMachineGroup@0 web deploy task | https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/iisweb-app-deployment-on-machine-group-v0?view=azure-pipelines |
 | Configure IISWebAppDeployment@1 deprecated IIS deployment task | https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/iisweb-app-deployment-v1?view=azure-pipelines |
-| Configure IISWebAppManagementOnMachineGroup@0 IIS management task | https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/iisweb-app-management-on-machine-group-v0?view=azure-pipelines |
 | Deploy to Kubernetes using KubernetesManifest@0 | https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/kubernetes-manifest-v0?view=azure-pipelines |
 | Deploy to Kubernetes using KubernetesManifest@1 | https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/kubernetes-manifest-v1?view=azure-pipelines |
 | Configure Kubernetes@0 legacy Kubectl deployment task | https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/kubernetes-v0?view=azure-pipelines |

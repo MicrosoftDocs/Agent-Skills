@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-31'
+generated_at: '2026-06-07'
 category_descriptions:
   workload-patterns: Design patterns, reference architectures, and end-to-end guidance
     for AI, HPC, mission-critical, SaaS, and sustainable workloads on Azure, including
@@ -39,14 +39,14 @@ use_when: Use when designing AI, HPC, SaaS, AVD, or mission-critical workloads w
 - **Total Pages**: 219
 - **Fetched**: 219
 - **Fetch Failed**: 0
-- **Classified**: 190
-- **Unclassified**: 29
+- **Classified**: 189
+- **Unclassified**: 30
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 15
-- **Unchanged**: 203
-- **Deleted Pages**: 13
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 218
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-well-architected/azure-well-architected.csv`
 
 ## Classification Statistics
@@ -56,66 +56,18 @@ use_when: Use when designing AI, HPC, SaaS, AVD, or mission-critical workloads w
 | assessments | 10 | 4.6% |
 | checklists | 5 | 2.3% |
 | design-principles | 12 | 5.5% |
-| recommendations | 68 | 31.1% |
+| recommendations | 67 | 30.6% |
 | service-guides | 40 | 18.3% |
 | tradeoffs | 6 | 2.7% |
 | workload-patterns | 49 | 22.4% |
-| *(Unclassified)* | 29 | 13.2% |
+| *(Unclassified)* | 30 | 13.7% |
 
 ## Changes
 
-### New Pages
-
-- [RE:08 Testing](https://learn.microsoft.com/en-us/azure/well-architected/reliability/reliability-test)
-
 ### Updated Pages
 
-- [Quick links](https://learn.microsoft.com/en-us/azure/well-architected/reliability/)
-  - Updated: 2026-04-23T22:02:00Z → 2026-05-29T17:09:00Z
-- [Checklist](https://learn.microsoft.com/en-us/azure/well-architected/reliability/checklist)
-  - Updated: 2026-04-23T22:02:00.000Z → 2026-05-29T17:09:00.000Z
-- [OE:06 Supply chain for workload development](https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/workload-supply-chain)
-  - Updated: 2026-02-11T19:15:00.000Z → 2026-05-30T17:03:00.000Z
-- [Mission-critical](https://learn.microsoft.com/en-us/azure/well-architected/mission-critical/)
-  - Updated: 2026-04-06T22:03:00Z → 2026-05-28T17:04:00Z
-- [Log Analytics](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-log-analytics)
-  - Updated: 2025-08-11T22:05:00.000Z → 2026-05-27T08:00:00.000Z
-- [Get started](https://learn.microsoft.com/en-us/azure/well-architected/mission-critical/mission-critical-overview)
-  - Updated: 2025-09-19T17:04:00.000Z → 2026-05-27T08:00:00.000Z
-- [Design methodology](https://learn.microsoft.com/en-us/azure/well-architected/mission-critical/mission-critical-design-methodology)
-  - Updated: 2025-06-21T17:02:00.000Z → 2026-05-28T17:04:00.000Z
-- [Design principles](https://learn.microsoft.com/en-us/azure/well-architected/mission-critical/mission-critical-design-principles)
-  - Updated: 2025-06-21T17:02:00.000Z → 2026-05-27T08:00:00.000Z
-- [Architecture pattern](https://learn.microsoft.com/en-us/azure/well-architected/mission-critical/mission-critical-architecture-pattern)
-  - Updated: 2025-05-06T17:00:00.000Z → 2026-05-28T17:04:00.000Z
-- [Application design](https://learn.microsoft.com/en-us/azure/well-architected/mission-critical/mission-critical-application-design)
-  - Updated: 2025-09-19T17:04:00.000Z → 2026-05-28T17:04:00.000Z
-- [Application platform](https://learn.microsoft.com/en-us/azure/well-architected/mission-critical/mission-critical-application-platform)
-  - Updated: 2024-07-30T08:00:00.000Z → 2026-05-28T17:04:00.000Z
-- [Data platform](https://learn.microsoft.com/en-us/azure/well-architected/mission-critical/mission-critical-data-platform)
-  - Updated: 2023-02-01T23:00:00.000Z → 2026-05-28T17:04:00.000Z
-- [Networking and connectivity](https://learn.microsoft.com/en-us/azure/well-architected/mission-critical/mission-critical-networking-connectivity)
-  - Updated: 2023-02-01T23:00:00.000Z → 2026-05-28T17:04:00.000Z
-- [Security](https://learn.microsoft.com/en-us/azure/well-architected/mission-critical/mission-critical-security)
-  - Updated: 2023-03-15T08:00:00.000Z → 2026-05-28T17:04:00.000Z
-- [Operational procedures](https://learn.microsoft.com/en-us/azure/well-architected/mission-critical/mission-critical-operational-procedures)
-  - Updated: 2023-02-01T23:00:00.000Z → 2026-05-28T17:04:00.000Z
-
-### Deleted Pages
-
-- ~~Azure VMware Solution~~ (https://learn.microsoft.com/en-us/azure/well-architected/azure-vmware/)
-- ~~Applications~~ (https://learn.microsoft.com/en-us/azure/well-architected/azure-vmware/application-platform)
-- ~~Assessment~~ (https://learn.microsoft.com/en-us/azure/well-architected/azure-vmware/assessment)
-- ~~Design principles~~ (https://learn.microsoft.com/en-us/azure/well-architected/azure-vmware/design-principles)
-- ~~Infrastructure~~ (https://learn.microsoft.com/en-us/azure/well-architected/azure-vmware/infrastructure)
-- ~~Azure landing zone integration~~ (https://learn.microsoft.com/en-us/azure/well-architected/azure-vmware/landing-zone-integration)
-- ~~Monitoring~~ (https://learn.microsoft.com/en-us/azure/well-architected/azure-vmware/monitoring)
-- ~~Networking~~ (https://learn.microsoft.com/en-us/azure/well-architected/azure-vmware/networking)
-- ~~Operations~~ (https://learn.microsoft.com/en-us/azure/well-architected/azure-vmware/operations)
-- ~~Get started~~ (https://learn.microsoft.com/en-us/azure/well-architected/azure-vmware/overview)
-- ~~Security~~ (https://learn.microsoft.com/en-us/azure/well-architected/azure-vmware/security)
-- ~~Health modeling~~ (https://learn.microsoft.com/en-us/azure/well-architected/mission-critical/mission-critical-health-modeling)
-- ~~RE:08 Testing~~ (https://learn.microsoft.com/en-us/azure/well-architected/reliability/testing-strategy)
+- [OE:01 DevOps culture](https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/devops-culture)
+  - Updated: 2026-02-11T19:15:00.000Z → 2026-06-05T17:07:00.000Z
 
 ## Classified Pages
 
@@ -179,7 +131,6 @@ use_when: Use when designing AI, HPC, SaaS, AVD, or mission-critical workloads w
 | [Design principles](https://learn.microsoft.com/en-us/azure/well-architected/performance-efficiency/principles) | design-principles | 0.90 | Explicitly a design principles page for the Performance Efficiency pillar, with named principles, rationale, and pillar-specific high-level recommendations, matching the design-principles definition. |
 | [Design principles](https://learn.microsoft.com/en-us/azure/well-architected/reliability/principles) | design-principles | 0.90 | Reliability pillar page explicitly defines reliability-specific principles (resilient, recoverable, available), explains why they matter, and ties them to high-level recommendations for reliability. |
 | [Design principles](https://learn.microsoft.com/en-us/azure/well-architected/security/principles) | design-principles | 0.90 | Security pillar page defines security-specific principles (zero trust, CIA triad, resilience to attacks), explains their importance, and ties them to high-level security strategy. |
-| [OE:01 DevOps culture](https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/devops-culture) | recommendations | 0.90 | Explicitly tied to an Operational Excellence checklist recommendation and provides concrete steps for implementing DevOps culture and execution practices. Detailed how-to guidance. |
 | [OE:02 Task execution process](https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/formalize-operations-tasks) | recommendations | 0.90 | Supports an Operational Excellence checklist recommendation and gives prescriptive guidance on defining, documenting, and automating routine and non-routine tasks across pillars. Implementation-focused. |
 | [OE:03 Software development practices](https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/formalize-development-practices) | recommendations | 0.90 | Tied to an Operational Excellence checklist recommendation and provides detailed guidance on standardizing development workflows, visibility, and risk management. Concrete how-to content. |
 | [OE:05 Infrastructure as code](https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/infrastructure-as-code-design) | recommendations | 0.90 | Explicitly tied to an Operational Excellence checklist recommendation and provides detailed guidance on using IaC as the standard for infrastructure deployments. Implementation-level advice. |
@@ -329,6 +280,7 @@ use_when: Use when designing AI, HPC, SaaS, AVD, or mission-critical workloads w
 | [Get started](https://learn.microsoft.com/en-us/azure/well-architected/saas/get-started) | 0.40 | High-level overview of SaaS workloads and business context; largely conceptual without deep, non-obvious implementation details. |
 | [Optimize using flows](https://learn.microsoft.com/en-us/azure/well-architected/design-guides/optimize-workload-using-flows) | 0.40 | Describes a three-step, flow-based optimization process at a conceptual/design-method level. It doesn't map to WAF checklist IDs, pillar-specific principles, or service/workload domains, and lacks detailed implementation guidance tied to specific WAF artifacts. More of a general design guide than expert, WAF-structured knowledge. |
 | [Create design diagrams](https://learn.microsoft.com/en-us/azure/well-architected/architect-role/design-diagrams) | 0.30 | General diagramming practices and communication guidance; not tied to WAF pillars, checklists, or recommendations. |
+| [OE:01 DevOps culture](https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/devops-culture) | 0.30 | The page focuses on cultural and conceptual aspects of DevOps within the Operational Excellence pillar, without checklist IDs, implementation steps tied to specific recommendations, or service/workload-specific configurations. It reads as general guidance on DevOps culture rather than detailed, WAF-specific expert knowledge such as checklists, recommendations, or service guides. |
 | [Overview](https://learn.microsoft.com/en-us/azure/well-architected/design) | 0.30 | High-level overview of design guides; primarily navigational and conceptual without deep implementation detail. |
 | [Provide consultative support](https://learn.microsoft.com/en-us/azure/well-architected/architect-role/ongoing-support) | 0.30 | Describes ongoing consultative role of architects post-implementation; generic practice, not WAF pillar-specific expert content. |
 | [Collaborate with implementors](https://learn.microsoft.com/en-us/azure/well-architected/architect-role/collaboration) | 0.20 | Article describes collaboration practices between architects and workload teams; it does not provide WAF pillar checklists, recommendations tied to checklist IDs, service-specific guidance, or trade-off analysis. |

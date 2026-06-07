@@ -1,9 +1,9 @@
 ---
 name: azure-data-factory
-description: Expert knowledge for Azure Data Factory development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building ADF pipelines with data flows, SHIR/SSIS IR, SAP CDC, Key Vault, or VNets/Private Link, and other Azure Data Factory related development tasks. Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure Databricks (use azure-databricks), Azure Stream Analytics (use azure-stream-analytics), Azure Data Explorer (use azure-data-explorer).
+description: Expert knowledge for Azure Data Factory development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building ADF pipelines, mapping data flows, integration runtimes, SAP CDC, or SSIS-to-Azure migrations, and other Azure Data Factory related development tasks. Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure Databricks (use azure-databricks), Azure Stream Analytics (use azure-stream-analytics), Azure Data Explorer (use azure-data-explorer).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-31"
+  generated_at: "2026-06-07"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Data Factory Skill
@@ -30,9 +30,9 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L133-L142 | Patterns and architectures for ADF: efficient mapping data flows, metadata‑driven copy, SSIS IR with SQL MI/failover/VNet, Cosmos DB migration, and SAP CDC design. |
 | Limits & Quotas | L143-L148 | ADF data flow reservation discounts, pricing behavior, and the official limits/quotas (throughput, activities, pipelines, data flows) documented in the FAQ. |
 | Security | L149-L179 | Securing Data Factory with identity, encryption, Key Vault, and Azure Policy, plus network controls like VNets, Private Link, firewalls, private endpoints, and secure runtimes (Azure-SSIS, self-hosted). |
-| Configuration | L180-L304 | Configuring ADF: datasets, linked services, runtimes, triggers, activities, data flows, formats, monitoring, DevOps/CI/CD, SAP CDC, SSIS IR, and global/trigger parameters. |
-| Integrations & Coding Patterns | L305-L480 | Patterns and how-tos for integrating ADF with many data sources, using connectors, mapping data flow functions, activities, templates, and orchestrating Databricks, Synapse, SSIS, and ML jobs. |
-| Deployment | L481-L494 | CI/CD and deployment for ADF: ARM/linked templates, Azure DevOps pipelines, hotfix flows, pre/post scripts, IR automation, SSIS job migration, and runtime network migration. |
+| Configuration | L180-L304 | Configuring Azure Data Factory: pipelines, activities, triggers, data flows, copy behavior, formats, integration runtimes (Azure/self-hosted/SSIS), monitoring, parameters, and SAP CDC settings. |
+| Integrations & Coding Patterns | L305-L479 | Patterns and how-tos for integrating ADF with many data sources, using connectors, mapping data flow functions, activities, templates, and orchestrating Databricks, Synapse, SSIS, and ML jobs. |
+| Deployment | L480-L493 | CI/CD and deployment for ADF: ARM/linked templates, Azure DevOps pipelines, hotfix flows, pre/post scripts, IR automation, SSIS job migration, and runtime network migration. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -182,7 +182,7 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Define and use global parameters in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/author-global-parameters |
 | Configure connections and global settings in ADF management hub | https://learn.microsoft.com/en-us/azure/data-factory/author-management-hub |
-| Configure express virtual network injection for Azure-SSIS integration runtime | https://learn.microsoft.com/en-us/azure/data-factory/azure-ssis-integration-runtime-express-virtual-network-injection |
+| Configure express virtual network injection for Azure-SSIS IR | https://learn.microsoft.com/en-us/azure/data-factory/azure-ssis-integration-runtime-express-virtual-network-injection |
 | Manage SSIS packages with Azure-SSIS package store | https://learn.microsoft.com/en-us/azure/data-factory/azure-ssis-integration-runtime-package-store |
 | Configure standard virtual network injection for Azure-SSIS integration runtime | https://learn.microsoft.com/en-us/azure/data-factory/azure-ssis-integration-runtime-standard-virtual-network-injection |
 | Reference built-in and preinstalled components on Azure-SSIS integration runtime | https://learn.microsoft.com/en-us/azure/data-factory/built-in-preinstalled-components-ssis-integration-runtime |
@@ -468,7 +468,6 @@ This skill requires **network access** to fetch documentation content:
 | Run Synapse notebooks from Data Factory pipelines | https://learn.microsoft.com/en-us/azure/data-factory/transform-data-synapse-notebook |
 | Trigger Synapse Spark job definitions in Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/transform-data-synapse-spark-job-definition |
 | Use custom .NET activities in Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/transform-data-using-custom-activity |
-| Run U-SQL scripts with Data Lake Analytics activity | https://learn.microsoft.com/en-us/azure/data-factory/transform-data-using-data-lake-analytics |
 | Run Hive queries with ADF HDInsight activity | https://learn.microsoft.com/en-us/azure/data-factory/transform-data-using-hadoop-hive |
 | Run Hadoop MapReduce jobs with ADF HDInsight activity | https://learn.microsoft.com/en-us/azure/data-factory/transform-data-using-hadoop-map-reduce |
 | Configure Hadoop Pig activity in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/transform-data-using-hadoop-pig |

@@ -1,9 +1,9 @@
 ---
 name: azure-rbac
-description: Expert knowledge for Azure Role-based access control development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when managing Azure RBAC roles, ABAC conditions, PIM, custom role definitions, or role assignments via CLI/ARM, and other Azure Role-based access control related development tasks. Not for Azure Active Directory B2C (use azure-active-directory-b2c), Azure Information Protection (use azure-information-protection), Azure Policy (use azure-policy), Azure Security (use azure-security).
+description: Expert knowledge for Azure Role-based access control development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when defining roles, ABAC conditions, PIM, deny assignments, or automating RBAC via CLI/PowerShell/ARM, and other Azure Role-based access control related development tasks. Not for Azure Policy (use azure-policy), Azure Security (use azure-security), Azure Portal (use azure-portal), Azure Resource Manager (use azure-resource-manager).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-10"
+  generated_at: "2026-06-07"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Role-based access control Skill
@@ -28,7 +28,7 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L44-L50 | Security-focused guidance on designing Azure RBAC: choosing scopes, delegating access with ABAC conditions, and applying least privilege and separation-of-duties best practices. |
 | Decision Making | L51-L56 | Guidance on choosing and migrating role models: moving from classic admins to RBAC, scaling with ABAC, selecting Azure vs Entra vs classic roles, and transferring subscriptions between directories. |
 | Limits & Quotas | L57-L62 | Designing and managing Azure RBAC custom roles, including understanding role structure, permissions, and step-by-step creation using the Azure portal |
-| Security | L63-L129 | Azure RBAC roles, permissions, ABAC conditions, custom roles, and PIM: how to assign, secure, scope, and audit access to Azure resources across all service categories. |
+| Security | L63-L129 | Azure RBAC roles, permissions, ABAC conditions, custom roles, PIM, deny assignments, and security/monitoring policies for securing and delegating access to Azure resources |
 | Configuration | L130-L140 | Configuring Azure RBAC/ABAC: prerequisites, condition syntax, role assignments, built‑in vs custom roles, and creating/inspecting custom role definitions via CLI and PowerShell |
 | Integrations & Coding Patterns | L141-L156 | How to assign, list, and query Azure RBAC role assignments using CLI, PowerShell, portal, REST, ARM/Bicep templates, including managed identities and group-based access. |
 
@@ -64,25 +64,25 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Reference Azure RBAC built-in roles and permissions | https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles |
-| Use AI and machine learning Azure RBAC roles | https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/ai-machine-learning |
-| Assign analytics Azure RBAC built-in roles and permissions | https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/analytics |
-| Assign compute-focused Azure RBAC built-in roles | https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/compute |
-| Control container workloads with Azure RBAC roles | https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/containers |
-| Secure database resources using Azure RBAC roles | https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/databases |
-| Apply DevOps Azure RBAC built-in roles and permissions | https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/devops |
-| Apply general-purpose Azure RBAC built-in roles | https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/general |
-| Use RBAC roles for hybrid and multicloud | https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/hybrid-multicloud |
-| Reference identity-focused Azure RBAC built-in roles | https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/identity |
-| Configure integration workloads with Azure RBAC roles | https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/integration |
-| Manage IoT access with Azure RBAC built-in roles | https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/internet-of-things |
-| Use RBAC roles for management and governance | https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/management-and-governance |
-| Use Azure RBAC built-in migration roles | https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/migration |
-| Use Azure RBAC built-in monitor roles | https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/monitor |
-| Use networking Azure RBAC built-in roles and scopes | https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/networking |
-| Use privileged Azure RBAC built-in roles securely | https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/privileged |
-| Use security-category Azure RBAC built-in roles safely | https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/security |
-| Configure storage access with Azure RBAC roles | https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/storage |
-| Manage web and mobile access via Azure RBAC roles | https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/web-and-mobile |
+| Use AI and ML Azure RBAC built-in roles | https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/ai-machine-learning |
+| Use analytics Azure RBAC built-in roles | https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/analytics |
+| Apply compute-related Azure RBAC built-in roles | https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/compute |
+| Use container-related Azure RBAC built-in roles | https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/containers |
+| Use database Azure RBAC built-in roles | https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/databases |
+| Use DevOps Azure RBAC built-in roles | https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/devops |
+| Use general-purpose Azure RBAC built-in roles | https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/general |
+| Use hybrid and multicloud Azure RBAC roles | https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/hybrid-multicloud |
+| Use identity Azure RBAC built-in roles | https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/identity |
+| Use integration Azure RBAC built-in roles | https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/integration |
+| Use IoT Azure RBAC built-in roles | https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/internet-of-things |
+| Apply management and governance RBAC built-in roles | https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/management-and-governance |
+| Use Azure built-in RBAC roles for migration tasks | https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/migration |
+| Assign Azure Monitor built-in RBAC roles | https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/monitor |
+| Apply networking Azure RBAC built-in roles | https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/networking |
+| Use privileged Azure RBAC built-in roles | https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/privileged |
+| Use security Azure RBAC built-in roles | https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/security |
+| Apply storage Azure RBAC built-in roles | https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/storage |
+| Use web and mobile Azure RBAC roles | https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/web-and-mobile |
 | Use authorization actions and attributes in Azure ABAC | https://learn.microsoft.com/en-us/azure/role-based-access-control/conditions-authorization-actions-attributes |
 | Restrict blob read access using tags and ABAC | https://learn.microsoft.com/en-us/azure/role-based-access-control/conditions-custom-security-attributes |
 | Manage Azure RBAC conditions using Azure CLI | https://learn.microsoft.com/en-us/azure/role-based-access-control/conditions-role-assignments-cli |
@@ -98,28 +98,28 @@ This skill requires **network access** to fetch documentation content:
 | Delegate Azure role assignments with ABAC conditions | https://learn.microsoft.com/en-us/azure/role-based-access-control/delegate-role-assignments-portal |
 | List and understand Azure RBAC deny assignments | https://learn.microsoft.com/en-us/azure/role-based-access-control/deny-assignments |
 | Elevate Global Administrator access to all subscriptions | https://learn.microsoft.com/en-us/azure/role-based-access-control/elevate-access-global-admin |
-| Use AI and ML permissions in Azure RBAC | https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/ai-machine-learning |
-| Use analytics permissions in Azure RBAC | https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/analytics |
-| Use compute permissions in Azure RBAC | https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/compute |
-| Use container permissions in Azure RBAC | https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/containers |
-| Use database permissions in Azure RBAC | https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/databases |
-| Use DevOps permissions in Azure RBAC | https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/devops |
-| Use general-category Azure RBAC permissions | https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/general |
-| Use hybrid and multicloud permissions in RBAC | https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/hybrid-multicloud |
-| Use identity permissions in Azure RBAC | https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/identity |
-| Use integration permissions in Azure RBAC | https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/integration |
-| Use IoT permissions in Azure RBAC | https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/internet-of-things |
-| Use management and governance permissions in RBAC | https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/management-and-governance |
-| Use migration permissions in Azure RBAC | https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/migration |
-| Use monitor permissions in Azure RBAC | https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/monitor |
-| Use networking permissions in Azure RBAC | https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/networking |
-| Use security-category permissions in Azure RBAC | https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/security |
-| Use storage permissions in Azure RBAC | https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/storage |
-| Use web and mobile permissions in RBAC | https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/web-and-mobile |
+| Apply AI and ML permissions in Azure RBAC | https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/ai-machine-learning |
+| Use analytics provider permissions in Azure RBAC | https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/analytics |
+| Apply compute resource permissions in Azure RBAC | https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/compute |
+| Configure container permissions in Azure RBAC | https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/containers |
+| Set database permissions using Azure RBAC | https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/databases |
+| Use DevOps provider permissions in Azure RBAC | https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/devops |
+| Use general Azure RBAC permission strings | https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/general |
+| Configure hybrid and multicloud permissions in Azure RBAC | https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/hybrid-multicloud |
+| Manage identity provider permissions in Azure RBAC | https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/identity |
+| Use integration service permissions in Azure RBAC | https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/integration |
+| Configure IoT permissions with Azure RBAC | https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/internet-of-things |
+| Use management and governance permissions in Azure RBAC | https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/management-and-governance |
+| Configure migration permissions in Azure RBAC | https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/migration |
+| Apply monitoring provider permissions in Azure RBAC | https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/monitor |
+| Configure networking permissions for Azure RBAC | https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/networking |
+| Reference security provider permissions for Azure RBAC | https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/security |
+| Manage storage permissions with Azure RBAC | https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/storage |
+| Use web and mobile Azure RBAC permissions | https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/web-and-mobile |
 | Use PIM for eligible and time-bound Azure RBAC roles | https://learn.microsoft.com/en-us/azure/role-based-access-control/pim-integration |
 | Apply Azure RBAC built-in policy definitions | https://learn.microsoft.com/en-us/azure/role-based-access-control/policy-reference |
 | Choose between Azure RBAC, Entra, and classic admin roles | https://learn.microsoft.com/en-us/azure/role-based-access-control/rbac-and-directory-admin-roles |
-| Reference Azure resource provider permissions for RBAC | https://learn.microsoft.com/en-us/azure/role-based-access-control/resource-provider-operations |
+| Reference Azure resource provider permission operations | https://learn.microsoft.com/en-us/azure/role-based-access-control/resource-provider-operations |
 | Alert on privileged Azure RBAC role assignments | https://learn.microsoft.com/en-us/azure/role-based-access-control/role-assignments-alert |
 | Activate eligible Azure RBAC roles in the portal | https://learn.microsoft.com/en-us/azure/role-based-access-control/role-assignments-eligible-activate |
 | Assign Azure RBAC roles to external B2B users | https://learn.microsoft.com/en-us/azure/role-based-access-control/role-assignments-external-users |

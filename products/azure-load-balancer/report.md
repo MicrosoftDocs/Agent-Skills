@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-24'
+generated_at: '2026-06-07'
 category_descriptions:
   configuration: 'Configuring Azure Load Balancer behavior: backends/frontends (incl.
     cross-subscription, IP-based, outbound-only), rules, health probes, traffic distribution,
@@ -22,19 +22,18 @@ category_descriptions:
     errors, and resource health/availability.'
   deployment: 'Guides for deploying Load Balancers: replicating configurations across
     regions and automating upgrades from Basic to Standard using PowerShell.'
-  security: 'Securing Azure Load Balancer: hardening configs, network/security best
-    practices, and using Azure DDoS Protection to mitigate volumetric and protocol
-    attacks.'
+  security: Securing Azure Load Balancer with NSGs and other controls, and enabling/configuring
+    Azure DDoS Protection to defend against volumetric and protocol attacks.
 skill_description: Expert knowledge for Azure Load Balancer development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when configuring frontends/backends, health probes, SNAT/outbound rules, IMDS/Monitor
-  APIs, or DDoS protection, and other Azure Load Balancer related development tasks.
-  Not for Azure Application Gateway (use azure-application-gateway), Azure Front Door
-  (use azure-front-door), Azure Traffic Manager (use azure-traffic-manager), Azure
-  Virtual Network (use azure-virtual-network).
-use_when: Use when configuring frontends/backends, health probes, SNAT/outbound rules,
-  IMDS/Monitor APIs, or DDoS protection, and other Azure Load Balancer related development
+  Use when configuring LB rules/probes, SNAT/outbound, VMSS backends, IMDS/Monitor
+  APIs, or DDoS/NSG protection, and other Azure Load Balancer related development
+  tasks. Not for Azure Application Gateway (use azure-application-gateway), Azure
+  Front Door (use azure-front-door), Azure Traffic Manager (use azure-traffic-manager),
+  Azure Virtual Network (use azure-virtual-network).
+use_when: Use when configuring LB rules/probes, SNAT/outbound, VMSS backends, IMDS/Monitor
+  APIs, or DDoS/NSG protection, and other Azure Load Balancer related development
   tasks.
 confusable_not_for: Not for Azure Application Gateway (use azure-application-gateway),
   Azure Front Door (use azure-front-door), Azure Traffic Manager (use azure-traffic-manager),
@@ -52,8 +51,8 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 87
+- **Updated Pages**: 1
+- **Unchanged**: 86
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-load-balancer/azure-load-balancer.csv`
 
@@ -74,6 +73,11 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 
 ## Changes
 
+### Updated Pages
+
+- [Secure your load balancer](https://learn.microsoft.com/en-us/azure/load-balancer/secure-load-balancer)
+  - Updated: 2026-05-21T22:10:00.000Z → 2026-06-03T22:23:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
@@ -86,7 +90,6 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Upgrade options and guidance](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-basic-upgrade-guidance) | decision-making | 0.80 | Upgrade guidance between SKUs with recommendations, differences, and migration considerations; helps decide how and when to move to Standard. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-faqs) | limits-quotas | 0.78 | FAQ includes product-specific behaviors and several concrete limits (for example SNAT port counts, timeout durations, and other numeric constraints) that qualify as expert knowledge beyond generic concepts, fitting the limits-quotas category best. |
 | [Manage admin state](https://learn.microsoft.com/en-us/azure/load-balancer/manage-admin-state-how-to) | configuration | 0.75 | Describes Admin State feature with specific values (Up, Down, None) and how to set/update/remove via portal/CLI/PowerShell; clearly a product-specific configuration option. |
-| [Secure your load balancer](https://learn.microsoft.com/en-us/azure/load-balancer/secure-load-balancer) | security | 0.72 | The article provides concrete, product-specific security recommendations for Azure Load Balancer (for example, how to combine it with specific network and identity controls, monitoring, and encryption). These are actionable security configuration and hardening patterns tied to this service rather than generic security concepts. |
 | [Backend Pool management](https://learn.microsoft.com/en-us/azure/load-balancer/backend-pool-management) | configuration | 0.70 | Backend pool management article focusing on configuration by IP address and VNet ID; includes product-specific backend pool configuration options and behaviors. |
 | [Configuring outbound rules](https://learn.microsoft.com/en-us/azure/load-balancer/outbound-rules) | configuration | 0.70 | Outbound rules article describes explicit SNAT configuration and tuning; likely includes rule parameters and behavior, which are product-specific configuration details. |
 | [Distribution modes](https://learn.microsoft.com/en-us/azure/load-balancer/distribution-mode-concepts) | architecture-patterns | 0.70 | Explains product-specific distribution modes, how each routes traffic, and when to switch between them; this is detailed, service-specific routing/architecture guidance beyond generic load balancing concepts. |
@@ -98,6 +101,7 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Retrieve information using the Azure Instance Metadata Service](https://learn.microsoft.com/en-us/azure/load-balancer/instance-metadata-service-load-balancer) | integrations | 0.70 | Describes using Azure Instance Metadata Service to retrieve load balancer and VM IP information, which generally includes specific REST paths, query structure, and metadata schema fields. These are concrete, product-specific API usage details that fit the integrations sub-skill type rather than a conceptual overview. |
 | [Retrieve metadata using the Azure IMDS](https://learn.microsoft.com/en-us/azure/load-balancer/howto-load-balancer-imds) | integrations | 0.70 | A 'how-to' for retrieving load balancer and VM IP metadata via Azure Instance Metadata Service typically includes the exact IMDS endpoint (169.254.169.254), REST paths, required headers, and example requests/responses. These are product-specific API integration details and configuration parameters that qualify as expert knowledge under the integrations category. |
 | [SKUs](https://learn.microsoft.com/en-us/azure/load-balancer/skus) | decision-making | 0.70 | SKU overview pages typically include comparison tables of Basic, Standard, and Gateway with capabilities and constraints to guide selection, which is product-specific decision guidance. |
+| [Secure your load balancer](https://learn.microsoft.com/en-us/azure/load-balancer/secure-load-balancer) | security | 0.70 | The article is explicitly about security recommendations for Azure Load Balancer. Microsoft Learn security guidance for a specific service typically includes concrete, product-specific configurations such as required NSG rules, recommended RBAC roles, and monitoring settings. These are security-focused, service-specific configurations that go beyond generic concepts, fitting the 'security' sub-skill. While the summary is high level, the page purpose and phrasing ('security recommendations') indicate detailed, actionable security configuration guidance rather than just conceptual overview. |
 | [TCP reset on idle timeout](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-tcp-reset) | limits-quotas | 0.70 | Explains TCP reset on idle timeout; likely includes specific idle timeout behavior and packet handling details that are product-specific and not generic knowledge. |
 | [Testing inbound frontend IP address reachability](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-test-frontend-reachability) | troubleshooting | 0.70 | Shows how to use ping and traceroute for diagnosing inbound connectivity issues to Standard Public Load Balancer frontends. While somewhat procedural, it is clearly framed as a troubleshooting technique for a specific product scenario. |
 | [Migrate AWS Network Load Balancing](https://learn.microsoft.com/en-us/azure/load-balancer/network-load-balancing-aws-to-azure-how-to) | decision-making | 0.68 | The page focuses on migrating from AWS NLB to Azure Load Balancer with feature mappings and migration planning. This is expert, product-specific guidance that helps users decide how to map AWS capabilities to Azure equivalents and plan the transition. It goes beyond conceptual comparison by providing concrete migration steps and mapping of features, which fits the decision-making category better than generic tutorials, even though the summary doesn't show numeric thresholds. |

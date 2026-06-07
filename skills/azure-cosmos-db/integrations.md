@@ -30,22 +30,21 @@
 | Copy tables with Spark to Cosmos DB Cassandra | https://learn.microsoft.com/en-us/azure/cosmos-db/cassandra/spark-table-copy-operations |
 | Upsert data into Cosmos DB Cassandra from Spark | https://learn.microsoft.com/en-us/azure/cosmos-db/cassandra/spark-upsert-operations |
 | Trigger Azure Functions from Azure Cosmos DB change feed | https://learn.microsoft.com/en-us/azure/cosmos-db/change-feed-functions |
-| Use the Azure Cosmos DB change feed processor | https://learn.microsoft.com/en-us/azure/cosmos-db/change-feed-processor |
-| Use Azure Cosmos DB change feed pull model | https://learn.microsoft.com/en-us/azure/cosmos-db/change-feed-pull-model |
+| Use Azure Cosmos DB change feed processor with SDKs | https://learn.microsoft.com/en-us/azure/cosmos-db/change-feed-processor |
+| Implement Azure Cosmos DB change feed pull model | https://learn.microsoft.com/en-us/azure/cosmos-db/change-feed-pull-model |
 | Process Azure Cosmos DB change feed with Apache Spark | https://learn.microsoft.com/en-us/azure/cosmos-db/change-feed-spark |
 | Integrate Cosmos DB Java SDK metrics with Micrometer and Prometheus | https://learn.microsoft.com/en-us/azure/cosmos-db/client-metrics-java |
 | Retrieve RU charge for Cosmos DB SQL queries | https://learn.microsoft.com/en-us/azure/cosmos-db/find-request-unit-charge |
 | Index external documents into Cosmos DB for semantic search | https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/document-indexer |
 | Use Azure Cosmos DB connectors with AI frameworks | https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/integrations |
-| Integrate AI agents with Cosmos DB via MCP Toolkit | https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/model-context-protocol-toolkit |
 | Build a RAG chatbot with Cosmos DB and Python | https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/rag-chatbot |
-| Use Semantic Reranker with Cosmos DB queries | https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/semantic-reranker |
 | Get latest restorable timestamp via PowerShell and CLI | https://learn.microsoft.com/en-us/azure/cosmos-db/get-latest-restore-timestamp |
 | Execute Gremlin graph queries on Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/gremlin/how-to-write-queries |
 | Use partner tools with Cosmos DB Gremlin graphs | https://learn.microsoft.com/en-us/azure/cosmos-db/gremlin/partner-tools-services |
 | Quickstart: Connect .NET Gremlin client to Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/gremlin/quickstart-dotnet |
 | Quickstart: Connect Node.js Gremlin client to Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/gremlin/quickstart-nodejs |
 | Quickstart: Connect Python Gremlin client to Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/gremlin/quickstart-python |
+| Use distributed transactions with Azure Cosmos DB .NET SDK | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-configure-and-use-distributed-transactions |
 | Convert Cosmos DB .NET SDK session token formats | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-convert-session-token |
 | Create Azure Cosmos DB containers via portal, CLI, and SDKs | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-create-container |
 | Delete Azure Cosmos DB items by partition key value | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-delete-by-partition-key |
@@ -140,6 +139,9 @@
 | Integrate Vercel applications with Cosmos DB backends | https://learn.microsoft.com/en-us/azure/cosmos-db/vercel-integration |
 | Use LangChain vector store with Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/build-rag-applications |
 | Build Haystack RAG pipelines with Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/build-rag-pipelines |
+| Configure fuzzy typo-tolerant search in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/full-text-search-fuzzy |
+| Implement BM25 keyword search in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/full-text-search-keyword |
+| Use phrase and proximity search in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/full-text-search-phrase-proximity |
 | Connect Azure Databricks to Azure DocumentDB with Spark | https://learn.microsoft.com/en-us/azure/documentdb/how-to-connect-from-databricks |
 | Persist LangGraph agent state in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/persist-agent-state |
 | Integrate LlamaIndex vector store with Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/query-knowledge-base |

@@ -1,9 +1,9 @@
 ---
 name: azure-personalizer
-description: Expert knowledge for Azure AI Personalizer development including troubleshooting, decision making, security, configuration, and integrations & coding patterns. Use when choosing single vs multi-slot, tuning learning/exploration, enabling CMK encryption, or using local inference SDK, and other Azure AI Personalizer related development tasks. Not for Azure Machine Learning (use azure-machine-learning), Azure AI Metrics Advisor (use azure-metrics-advisor), Azure AI Anomaly Detector (use azure-anomaly-detector), Azure AI Search (use azure-cognitive-search).
+description: Expert knowledge for Azure AI Personalizer development including troubleshooting, decision making, security, configuration, and integrations & coding patterns. Use when choosing single vs multi-slot, tuning exploration policies, configuring CMK encryption, debugging low rewards, or using local inference SDK, and other Azure AI Personalizer related development tasks. Not for Azure AI Metrics Advisor (use azure-metrics-advisor), Azure AI Anomaly Detector (use azure-anomaly-detector), Azure Machine Learning (use azure-machine-learning).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-17"
+  generated_at: "2026-06-07"
   generator: "docs2skills/1.0.0"
 ---
 # Azure AI Personalizer Skill
@@ -24,7 +24,7 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L37 | Diagnosing and resolving common Azure Personalizer issues, including API errors, configuration problems, learning/loop issues, and guidance on logs, metrics, and support escalation. |
+| Troubleshooting | L33-L37 | Diagnosing and fixing common Azure Personalizer problems: configuration and training issues, API/latency errors, low reward performance, and steps to debug and resolve service failures. |
 | Decision Making | L38-L42 | Guidance on when to use single-slot vs multi-slot Personalizer, comparing scenarios, behavior, and design tradeoffs for different personalization needs. |
 | Security | L43-L48 | Configuring encryption at rest (including customer-managed keys) and controlling data collection, storage, and privacy settings for Azure Personalizer. |
 | Configuration | L49-L56 | Configuring Personalizer’s learning behavior: policies, hyperparameters, exploration, apprentice mode, explainability, model export, and learning loop settings. |
@@ -33,7 +33,7 @@ This skill requires **network access** to fetch documentation content:
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
-| Troubleshoot common Azure Personalizer issues and errors | https://learn.microsoft.com/en-us/azure/ai-services/personalizer/frequently-asked-questions |
+| Diagnose and resolve common Azure Personalizer issues | https://learn.microsoft.com/en-us/azure/ai-services/personalizer/frequently-asked-questions |
 
 ### Decision Making
 | Topic | URL |

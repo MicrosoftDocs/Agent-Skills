@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-24'
+generated_at: '2026-06-07'
 category_descriptions:
   integrations: 'Using Content Moderator and Content Understanding via REST/.NET:
     text/image/video moderation, term lists, multimodal analysis, and consuming Markdown/structured
@@ -7,9 +7,8 @@ category_descriptions:
   limits-quotas: Quotas, limits, and supported languages for Content Moderator image/list
     APIs and Content Understanding, plus .NET samples showing how to stay within list
     and usage limits.
-  decision-making: Guidance on choosing Foundry vs Content Understanding tools, selecting
-    Azure AI document processing options, migrating preview to GA APIs, and estimating
-    Content Understanding costs.
+  decision-making: Guidance on choosing and migrating Azure AI/Foundry document processing
+    and Content Understanding tools, plus estimating and planning their pricing.
   configuration: Configuring and customizing Content Understanding analyzers (prebuilt
     and custom), document layout, face detection, and cross-resource capacity settings.
   best-practices: Guidance on improving Content Understanding accuracy, grounding
@@ -18,19 +17,22 @@ category_descriptions:
   architecture-patterns: Guidance on choosing and configuring deployment options (serverless,
     managed, custom) for Content Understanding models, including trade-offs, scalability,
     and integration patterns.
-  security: 'Securing Foundry: auth methods, Entra-only access, keys/Key Vault, CMK
-    encryption, DLP, VNet rules, API key rotation, Azure Policy and regulatory compliance
-    configuration'
+  security: 'Securing Azure Content Understanding analyzers and data: auth options,
+    network isolation, encryption, access control, and best practices for protecting
+    analyzer inputs/outputs.'
+  troubleshooting: Troubleshooting steps and FAQs for Content Understanding features,
+    including diagnosing model issues, configuration problems, and resolving common
+    errors in content analysis workflows.
 skill_description: Expert knowledge for Microsoft Foundry Tools (aka Azure AI services,
-  Azure Cognitive Services) development including best practices, decision making,
-  architecture & design patterns, limits & quotas, security, configuration, and integrations
-  & coding patterns. Use when using Content Moderator, Content Understanding analyzers,
-  Azure AI document processing, quotas, or Foundry security, and other Microsoft Foundry
-  Tools related development tasks. Not for Microsoft Foundry (use microsoft-foundry),
-  Microsoft Foundry Classic (use microsoft-foundry-classic), Microsoft Foundry Local
-  (use microsoft-foundry-local).
-use_when: Use when using Content Moderator, Content Understanding analyzers, Azure
-  AI document processing, quotas, or Foundry security, and other Microsoft Foundry
+  Azure Cognitive Services) development including troubleshooting, best practices,
+  decision making, architecture & design patterns, limits & quotas, security, configuration,
+  and integrations & coding patterns. Use when using Content Moderator, Content Understanding
+  analyzers, document layout extraction, face detection, or REST/.NET APIs, and other
+  Microsoft Foundry Tools related development tasks. Not for Microsoft Foundry (use
+  microsoft-foundry), Microsoft Foundry Classic (use microsoft-foundry-classic), Microsoft
+  Foundry Local (use microsoft-foundry-local).
+use_when: Use when using Content Moderator, Content Understanding analyzers, document
+  layout extraction, face detection, or REST/.NET APIs, and other Microsoft Foundry
   Tools related development tasks.
 confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft Foundry
   Classic (use microsoft-foundry-classic), Microsoft Foundry Local (use microsoft-foundry-local).
@@ -42,13 +44,13 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 - **Total Pages**: 53
 - **Fetched**: 53
 - **Fetch Failed**: 0
-- **Classified**: 30
-- **Unclassified**: 23
+- **Classified**: 31
+- **Unclassified**: 22
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 53
+- **Updated Pages**: 4
+- **Unchanged**: 49
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/microsoft-foundry-tools/microsoft-foundry-tools.csv`
 
@@ -63,9 +65,21 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 | integrations | 12 | 22.6% |
 | limits-quotas | 4 | 7.5% |
 | security | 1 | 1.9% |
-| *(Unclassified)* | 23 | 43.4% |
+| troubleshooting | 1 | 1.9% |
+| *(Unclassified)* | 22 | 41.5% |
 
 ## Changes
+
+### Updated Pages
+
+- [Choose the right tool for document processing](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/choosing-right-ai-tool)
+  - Updated: 2026-04-13T17:17:00.000Z → 2026-06-02T19:00:00.000Z
+- [Security features](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/secure-communications)
+  - Updated: 2026-02-25T02:49:00.000Z → 2026-06-04T06:05:00.000Z
+- [FAQ](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/faq)
+  - Updated: 2026-05-08T22:11:00.000Z → 2026-06-05T22:11:00.000Z
+- [Overview](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/document/overview)
+  - Updated: 2026-03-27T06:03:00.000Z → 2026-06-02T19:00:00.000Z
 
 ## Classified Pages
 
@@ -83,20 +97,21 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 | [Analyzer Improvement](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/document/analyzer-improvement) | best-practices | 0.70 | Focuses on improving extraction quality and performance using specific features (confidence, grounding, labeled samples); likely includes concrete usage patterns and recommendations. |
 | [Bring your own cross-resource capacity](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/how-to/bring-your-own-cross-resource-capacity) | configuration | 0.70 | Describes how to connect Azure OpenAI or Foundry resources to Content Understanding and route model usage through them, which implies product-specific configuration steps and parameters for cross-resource capacity. These are concrete configuration patterns unique to this service. |
 | [Check video content](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/video-moderation-api) | integrations | 0.70 | Provides code and parameter usage for video moderation APIs, which are product-specific integration patterns. |
-| [Choose the right tool for document processing](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/choosing-right-ai-tool) | decision-making | 0.70 | Compares Azure Content Understanding, Azure Document Intelligence, and LLM-based solutions for document processing with scenario-based guidance on which to use for specific workflows and field extraction needs, which is product-specific decision guidance beyond generic knowledge. |
+| [Choose the right tool for document processing](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/choosing-right-ai-tool) | decision-making | 0.70 | Compares Azure Content Understanding, Document Intelligence, and LLM-based solutions for document processing, providing concrete guidance on which tool to use for specific workflows and use cases. This is product-specific decision guidance beyond generic knowledge, including migration/upgrade notes about API versions. |
 | [Create a custom analyzer with Content Understanding Studio](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/how-to/customize-analyzer-content-understanding-studio) | configuration | 0.70 | How-to for creating and improving custom analyzers; involves setting schemas, fields, and options, which are concrete configuration steps. |
 | [Foundry and Content Understanding Studio comparison](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/foundry-vs-content-understanding-studio) | decision-making | 0.70 | A feature comparison page between Foundry and Content Understanding Studio will contain a comparison table of capabilities by option, guiding users on which environment to choose for different needs, which fits the decision-making category. |
 | [Language support](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/language-support) | limits-quotas | 0.70 | Language support page lists supported languages and ISO codes; these are concrete capability constraints and parameter values. |
 | [Migration from CU Preview to GA](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/how-to/migration-preview-to-ga) | decision-making | 0.70 | Contains concrete, time-bound migration guidance with specific API version numbers and retirement dates, helping decide when and how to move from preview to GA. This is product- and version-specific knowledge not inferable from general training data. |
 | [Prebuilt analyzers](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/prebuilt-analyzers) | configuration | 0.70 | Describes prebuilt analyzers and how to customize them; likely includes analyzer names, options, and configuration fields specific to this service. |
 | [Pricing model details and examples](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/pricing-explainer) | decision-making | 0.70 | Pricing explainer with cost breakdowns and examples; supports cost-based decision making and capacity planning for workloads. |
-| [Security features](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/secure-communications) | security | 0.70 | Describes configuring customer-managed keys and managed identities; these involve specific security configuration parameters and scopes unique to the service. |
+| [Security features](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/secure-communications) | security | 0.70 | Describes how to configure customer-managed keys, managed identities, and other Foundry-specific security features for Content Understanding. Contains product-specific security configuration patterns and settings rather than generic security concepts. |
 | [Try Content Understanding REST API and SDKs](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/quickstart/use-rest-api) | integrations | 0.70 | REST API quickstart with concrete request examples and parameters for documents, images, audio, and video; these are product-specific integration patterns. |
 | [Check text against custom terms](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/term-lists-quickstart-dotnet) | integrations | 0.65 | Quickstart shows concrete C# SDK usage for custom term lists, including specific API operations and parameters unique to Content Moderator, which are product-specific integration details beyond generic SDK knowledge. |
 | [Create a custom analyzer](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/tutorial/create-custom-analyzer) | integrations | 0.65 | Tutorial for creating a custom analyzer using the Content Understanding REST API. Likely includes request/response schemas, parameter names, and product-specific API usage patterns, which qualify as integration and coding patterns beyond generic knowledge. |
 | [Foundry model deployments](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/models-deployments) | architecture-patterns | 0.65 | Explains how Content Understanding maps analyzers to Foundry deployments, how defaults and request-level overrides interact, and how to choose models for price/latency. This is product-specific architectural guidance on deployment patterns and trade-offs for this service. |
 | [Using the client library or REST API](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/client-libraries) | integrations | 0.65 | Client library quickstart typically shows SDK methods, parameters, and configuration patterns specific to Content Moderator. |
 | [Elements](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/document/elements) | configuration | 0.60 | Document layout analysis and extraction capabilities typically involve specifying schemas and options; likely includes configuration fields for document analyzers. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/faq) | troubleshooting | 0.60 | FAQ pages for Azure services typically include specific error behaviors, limitations, and service-specific clarifications that help diagnose and resolve issues. These are product-specific Q&A details not captured by generic training data. |
 | [Image moderation](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/image-moderation-api) | integrations | 0.60 | Image Moderation API article typically includes request/response schemas and parameter names specific to this service, which are product-specific integration details. |
 | [REST API samples in C#](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/samples-rest) | integrations | 0.60 | REST samples show concrete request formats, endpoints, and parameters specific to Content Moderator. |
 | [Text moderation](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/text-moderation-api) | integrations | 0.60 | Text Moderation API page is an operational reference that usually documents endpoints, parameters, and options unique to this service, fitting integrations & coding patterns. |
@@ -121,11 +136,10 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 | [Create a Logic Apps workflow](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/tutorial/logic-apps) | 0.20 | Tutorial-style Logic Apps + Content Understanding workflow; likely step-by-step guidance without detailed limits, configuration matrices, or product-specific troubleshooting/error code mappings. |
 | [Export or delete account data](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/export-delete-data) | 0.20 | Data export/delete overview; likely procedural and policy-focused without detailed limits, config tables, or error mappings. |
 | [Language and region support](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/language-region-support) | 0.20 | Region and language support is typically a capability/coverage listing, not a configuration, quota, or decision matrix; it lacks the kinds of numeric limits, config parameters, or troubleshooting mappings required by any sub-skill type. |
-| [Overview](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/document/overview) | 0.20 | Document overview describing capabilities and use cases for document analysis; no indication of limits, configuration parameters, or decision matrices. |
+| [Overview](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/document/overview) | 0.20 | Described as a general document solution overview explaining capabilities and use cases of Content Understanding. No indication of detailed limits, configuration tables, or error-resolution mappings; primarily conceptual overview. |
 | [Use customer-managed keys](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/encrypt-data-at-rest) | 0.20 | High-level statement that data is encrypted at rest; no indication of specific configuration parameters, roles, or algorithms. |
 | [Video Overview](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/video/overview) | 0.20 | Video overview describing what the pre-built video analyzer does and typical use cases; appears as conceptual capability description without expert-level numeric limits, configuration tables, or troubleshooting content. |
 | [What is Content Moderator?](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/overview) | 0.20 | Service overview and deprecation notice for Content Moderator; conceptual description without detailed technical parameters in the summary. |
 | [Image](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/image/overview) | 0.10 | High-level overview of Azure Content Understanding image capabilities; no numeric limits, configuration tables, error codes, or product-specific decision matrices. |
 | [What is Azure Content Understanding in Foundry Tools?](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/overview) | 0.10 | High-level overview of Azure Content Understanding capabilities, workflows, and use cases without concrete limits, configuration tables, or error/diagnostic details. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/faq) | - | FAQ page appears to provide general Q&A about Azure Content Understanding/Document Intelligence without clear evidence of detailed limits, configuration tables, error-code mappings, or other product-specific expert data as defined by the sub-skill types. |
 | [Glossary](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/glossary) | - | Glossary of terms; definitions are conceptual, not configuration, limits, or troubleshooting patterns. |

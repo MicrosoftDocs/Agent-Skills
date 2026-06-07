@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 92
-- **Unchanged**: 2
+- **Updated Pages**: 0
+- **Unchanged**: 94
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-vm-scalesets/azure-vm-scalesets.csv`
 
@@ -75,50 +75,6 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | *(Unclassified)* | 19 | 20.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [Overview](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-maintenance-notifications)
-  - Updated: 2024-08-22T17:37:00.000Z → 2026-05-19T08:00:00.000Z
-- [Use data disks with scale sets](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-attached-disks)
-  - Updated: 2024-08-22T17:37:00.000Z → 2026-05-19T08:00:00.000Z
-- [Use PowerShell](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/disk-encryption-powershell)
-  - Updated: 2025-12-02T06:02:00.000Z → 2026-05-19T08:00:00.000Z
-- [Use the Azure CLI](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/disk-encryption-cli)
-  - Updated: 2025-09-23T08:00:00.000Z → 2026-05-19T08:00:00.000Z
-- [Use Azure Resource Manager templates](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/disk-encryption-azure-resource-manager)
-  - Updated: 2025-12-05T06:07:00.000Z → 2026-05-19T08:00:00.000Z
-- [Extension sequencing](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/disk-encryption-extension-sequencing)
-  - Updated: 2025-12-05T06:07:00.000Z → 2026-05-19T08:00:00.000Z
-- [Key vault for Azure Disk Encryption](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/disk-encryption-key-vault)
-  - Updated: 2025-12-02T06:02:00.000Z → 2026-05-19T08:00:00.000Z
-- [Azure Disk Encryption](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/disk-encryption-overview)
-  - Updated: 2025-12-05T06:07:00.000Z → 2026-05-19T08:00:00.000Z
-- [Networking for scale sets](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-networking)
-  - Updated: 2024-08-22T17:37:00.000Z → 2026-05-19T08:00:00.000Z
-- [Use an existing virtual network](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-mvss-existing-vnet)
-  - Updated: 2024-08-23T16:58:00.000Z → 2026-05-19T08:00:00.000Z
-- [Policy definitions](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/policy-reference)
-  - Updated: 2024-08-22T17:37:00.000Z → 2026-05-19T08:00:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-automatic-upgrade)
-  - Updated: 2026-04-21T22:04:00.000Z → 2026-05-19T08:00:00.000Z
-- [API comparison](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/orchestration-modes-api-comparison)
-  - Updated: 2024-08-22T17:37:00.000Z → 2026-05-19T08:00:00.000Z
-- [Support and troubleshooting](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/vmss-support-help)
-  - Updated: 2024-08-22T17:37:00.000Z → 2026-05-19T08:00:00.000Z
-- [What are Virtual Machine Scale Sets?](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview)
-  - Updated: 2025-03-21T22:00:00.000Z → 2026-05-19T08:00:00.000Z
-- [Orchestration modes](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-orchestration-modes)
-  - Updated: 2026-01-26T23:04:00.000Z → 2026-05-19T08:00:00.000Z
-- [Create in the Azure portal](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/flexible-virtual-machine-scale-sets-portal)
-  - Updated: 2025-04-28T22:04:00.000Z → 2026-05-19T08:00:00.000Z
-- [Create with the Azure CLI](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/flexible-virtual-machine-scale-sets-cli)
-  - Updated: 2024-09-19T22:00:00.000Z → 2026-05-19T08:00:00.000Z
-- [Create with Azure PowerShell](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/flexible-virtual-machine-scale-sets-powershell)
-  - Updated: 2024-08-22T17:37:00.000Z → 2026-05-19T08:00:00.000Z
-- [Create with Bicep](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/quick-create-bicep-windows)
-  - Updated: 2024-08-22T17:37:00.000Z → 2026-05-19T08:00:00.000Z
-- *...and 72 more*
 
 ## Classified Pages
 

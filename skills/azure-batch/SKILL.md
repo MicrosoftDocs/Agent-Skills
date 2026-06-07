@@ -3,7 +3,7 @@ name: azure-batch
 description: Expert knowledge for Azure Batch development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring Batch pools, autoscale, containers, MPI jobs, Application Insights monitoring, or render workloads, and other Azure Batch related development tasks. Not for Azure Container Instances (use azure-container-instances), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Functions (use azure-functions), Azure HDInsight (use azure-hdinsight).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-24"
+  generated_at: "2026-06-07"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Batch Skill
@@ -30,9 +30,9 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L70-L75 | Architectures and best practices for bursting on-prem render farms to Azure Batch, including storage layout, data movement patterns, and performance-optimized rendering workflows. |
 | Limits & Quotas | L76-L81 | Azure Batch account-level limits, default and adjustable quotas, and how to view, manage, and request quota increases using .NET and the Azure portal. |
 | Security | L82-L100 | Securing Batch accounts and pools: identity (Entra ID, managed identities, RBAC), keys/certs rotation, encryption, private endpoints/network perimeters, Key Vault, and Azure Policy governance. |
-| Configuration | L101-L134 | Configuring Azure Batch pools, nodes, and tasks: autoscale, OS upgrades, networking, storage mounts, containers, diagnostics events, metrics/logs, and secure task/user environments. |
-| Integrations & Coding Patterns | L135-L148 | Client SDKs, CLIs, and patterns for integrating with Azure Batch: managing pools/tasks, containers, MPI, storing task output, and monitoring with Application Insights. |
-| Deployment | L149-L153 | Deploying Azure Batch workloads using Azure Pipelines and CLI templates, including end-to-end job setup, automation, and integration into CI/CD workflows. |
+| Configuration | L101-L133 | Configuring Azure Batch pools, nodes, and tasks: autoscale, OS upgrades, networking, storage mounts, containers, diagnostics events, metrics/logs, and secure task/user environments. |
+| Integrations & Coding Patterns | L134-L147 | Client SDKs, CLIs, and patterns for integrating with Azure Batch: managing pools/tasks, containers, MPI, storing task output, and monitoring with Application Insights. |
+| Deployment | L148-L152 | Deploying Azure Batch workloads using Azure Pipelines and CLI templates, including end-to-end job setup, automation, and integration into CI/CD workflows. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -102,7 +102,6 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Reference for Azure Batch analytics events and alerts | https://learn.microsoft.com/en-us/azure/batch/batch-analytics |
-| Configure Azure Batch application packages on compute nodes | https://learn.microsoft.com/en-us/azure/batch/batch-application-packages |
 | Configure autoscale formulas for Azure Batch pools | https://learn.microsoft.com/en-us/azure/batch/batch-automatic-scaling |
 | Use Azure Batch task runtime environment variables | https://learn.microsoft.com/en-us/azure/batch/batch-compute-node-environment-variables |
 | Configure task-level container isolation in Azure Batch | https://learn.microsoft.com/en-us/azure/batch/batch-container-isolation-task |

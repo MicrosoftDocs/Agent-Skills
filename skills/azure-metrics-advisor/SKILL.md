@@ -1,14 +1,14 @@
 ---
 name: azure-metrics-advisor
-description: Expert knowledge for Azure AI Metrics Advisor development including decision making, security, configuration, and integrations & coding patterns. Use when configuring data feeds, tuning anomaly detection, managing alert hooks, securing creds, or calling Metrics Advisor APIs, and other Azure AI Metrics Advisor related development tasks. Not for Azure AI Anomaly Detector (use azure-anomaly-detector), Azure Monitor (use azure-monitor), Azure Stream Analytics (use azure-stream-analytics).
+description: Expert knowledge for Azure AI Metrics Advisor development including decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when configuring data feeds, alert hooks, detection settings, REST/SDK integrations, or cost/usage controls, and other Azure AI Metrics Advisor related development tasks. Not for Azure AI Anomaly Detector (use azure-anomaly-detector), Azure Monitor (use azure-monitor), Azure Stream Analytics (use azure-stream-analytics).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-17"
+  generated_at: "2026-06-07"
   generator: "docs2skills/1.0.0"
 ---
 # Azure AI Metrics Advisor Skill
 
-This skill provides expert guidance for Azure AI Metrics Advisor. Covers decision making, security, configuration, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure AI Metrics Advisor. Covers decision making, limits & quotas, security, configuration, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -24,15 +24,21 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Decision Making | L32-L36 | Guidance on estimating, controlling, and optimizing Metrics Advisor costs and usage, including pricing factors, quotas, and cost-management best practices. |
-| Security | L37-L42 | Encrypting Metrics Advisor data, configuring auth, and securely creating, storing, and managing data source credentials and keys for anomaly detection. |
-| Configuration | L43-L47 | Setting up Metrics Advisor: configuring alert hooks (email/webhook), alerting rules, data feed and detection settings, and tuning anomaly detection behavior for your instance. |
-| Integrations & Coding Patterns | L48-L52 | Connecting Metrics Advisor to various data sources, crafting valid ingestion queries, and using its REST API/SDKs to integrate anomaly detection into applications |
+| Decision Making | L33-L37 | Guidance on estimating, controlling, and optimizing Metrics Advisor costs and usage, including pricing factors, quotas, and cost-management best practices. |
+| Limits & Quotas | L38-L42 | Service limits for Metrics Advisor: max metrics, dimensions, alerts, data ingestion rates, detection constraints, and guidance on scaling within quotas. |
+| Security | L43-L48 | Encrypting Metrics Advisor data, configuring auth, and securely creating, storing, and managing data source credentials and keys for anomaly detection. |
+| Configuration | L49-L53 | Setting up Metrics Advisor: configuring alert hooks (email/webhook), alerting rules, data feed and detection settings, and tuning anomaly detection behavior for your instance. |
+| Integrations & Coding Patterns | L54-L58 | Connecting Metrics Advisor to various data sources, crafting valid ingestion queries, and using its REST API/SDKs to integrate anomaly detection into applications |
 
 ### Decision Making
 | Topic | URL |
 |-------|-----|
 | Plan and manage Azure Metrics Advisor costs and usage | https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/cost-management |
+
+### Limits & Quotas
+| Topic | URL |
+|-------|-----|
+| Understand Metrics Advisor limits and constraints | https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/faq |
 
 ### Security
 | Topic | URL |

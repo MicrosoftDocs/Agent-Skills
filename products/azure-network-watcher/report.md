@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-24'
+generated_at: '2026-06-07'
 category_descriptions:
   configuration: 'Configuring and governing Network Watcher logging: AMA for Connection
     Monitor, NSG/VNet flow logs setup, schemas, filtering, templates (Bicep/ARM),
@@ -16,35 +16,35 @@ category_descriptions:
   limits-quotas: How to configure and run Network Watcher packet capture, storage
     and filtering options, and the key limits/quotas (size, duration, concurrency)
     that apply to captures
-  security: Configuring secure access to Network Watcher with RBAC, using Traffic
-    Analytics for Zero Trust segmentation, and protecting VNet flow logs with managed
-    identities.
+  security: 'Securing Network Watcher: RBAC setup, hardening deployments and data
+    access, Zero Trust segmentation with Traffic Analytics, and protecting VNet flow
+    logs using managed identities.'
 skill_description: Expert knowledge for Azure Network Watcher development including
   troubleshooting, decision making, limits & quotas, security, configuration, and
   integrations & coding patterns. Use when configuring Connection Monitor, NSG/VNet
-  flow logs, packet capture, Traffic Analytics, or Sentinel integrations, and other
-  Azure Network Watcher related development tasks. Not for Azure Monitor (use azure-monitor),
-  Azure Virtual Network (use azure-virtual-network), Azure Virtual Network Manager
-  (use azure-virtual-network-manager), Azure Networking (use azure-networking).
+  flow logs, packet capture, Traffic Analytics/KQL, or Sentinel integrations, and
+  other Azure Network Watcher related development tasks. Not for Azure Monitor (use
+  azure-monitor), Azure Virtual Network (use azure-virtual-network), Azure Networking
+  (use azure-networking), Azure Virtual Network Manager (use azure-virtual-network-manager).
 use_when: Use when configuring Connection Monitor, NSG/VNet flow logs, packet capture,
-  Traffic Analytics, or Sentinel integrations, and other Azure Network Watcher related
-  development tasks.
+  Traffic Analytics/KQL, or Sentinel integrations, and other Azure Network Watcher
+  related development tasks.
 confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Virtual Network
-  (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager),
-  Azure Networking (use azure-networking).
+  (use azure-virtual-network), Azure Networking (use azure-networking), Azure Virtual
+  Network Manager (use azure-virtual-network-manager).
 ---
 # Azure Network Watcher Crawl Report
 
 ## Summary
 
-- **Total Pages**: 64
-- **Fetched**: 64
+- **Total Pages**: 65
+- **Fetched**: 65
 - **Fetch Failed**: 0
-- **Classified**: 28
+- **Classified**: 29
 - **Unclassified**: 36
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
 - **Unchanged**: 64
 - **Deleted Pages**: 0
@@ -54,15 +54,19 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Virtual Net
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| configuration | 11 | 17.2% |
-| decision-making | 3 | 4.7% |
-| integrations | 3 | 4.7% |
-| limits-quotas | 1 | 1.6% |
-| security | 3 | 4.7% |
-| troubleshooting | 7 | 10.9% |
-| *(Unclassified)* | 36 | 56.2% |
+| configuration | 11 | 16.9% |
+| decision-making | 3 | 4.6% |
+| integrations | 3 | 4.6% |
+| limits-quotas | 1 | 1.5% |
+| security | 4 | 6.2% |
+| troubleshooting | 7 | 10.8% |
+| *(Unclassified)* | 36 | 55.4% |
 
 ## Changes
+
+### New Pages
+
+- [Secure Network Watcher deployment](https://learn.microsoft.com/en-us/azure/network-watcher/secure-network-watcher)
 
 ## Classified Pages
 
@@ -71,6 +75,7 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Virtual Net
 | [RBAC permissions](https://learn.microsoft.com/en-us/azure/network-watcher/required-rbac-permissions) | security | 0.90 | Describes required RBAC roles and specific action permissions for each Network Watcher capability, which are product-specific security configurations. |
 | [Overview](https://learn.microsoft.com/en-us/azure/network-watcher/packet-capture-overview) | limits-quotas | 0.80 | Overview explicitly mentions available configurations, limits, and considerations; likely includes numeric constraints (session counts, sizes, durations) that qualify as limits & quotas. |
 | [Schema](https://learn.microsoft.com/en-us/azure/network-watcher/connection-monitor-schema) | configuration | 0.80 | Describes fields in test and path data schemas; likely includes tables of column names, types, and meanings, which are product-specific configuration/data contract details. |
+| [Secure Network Watcher deployment](https://learn.microsoft.com/en-us/azure/network-watcher/secure-network-watcher) | security | 0.78 | The page provides product-specific security recommendations for Azure Network Watcher, including how to secure its deployment, data outputs, and identities that access it. This aligns with the security sub-skill type, as it focuses on securing a particular Azure service with concrete, service-specific guidance rather than generic security concepts. |
 | [Troubleshoot outbound connections](https://learn.microsoft.com/en-us/azure/network-watcher/connection-troubleshoot-manage) | troubleshooting | 0.78 | How-to article for the connection troubleshoot feature; likely includes specific test statuses, result fields, and stepwise diagnosis for failed outbound connections, which are product-specific troubleshooting details. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/network-watcher/vpn-troubleshoot-cli) | troubleshooting | 0.75 | CLI-focused guide for VPN troubleshoot; provides symptom→diagnosis→resolution steps and log handling specific to Network Watcher VPN troubleshoot. |
 | [Diagnose on-premises connectivity via VPN gateway](https://learn.microsoft.com/en-us/azure/network-watcher/network-watcher-diagnose-on-premises-connectivity) | troubleshooting | 0.75 | Focused on diagnosing VPN gateway and on-premises device connectivity; uses VPN troubleshoot outputs and logs, mapping common issues to diagnostics. |

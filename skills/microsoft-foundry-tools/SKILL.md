@@ -1,14 +1,14 @@
 ---
 name: microsoft-foundry-tools
-description: Expert knowledge for Microsoft Foundry Tools (aka Azure AI services, Azure Cognitive Services) development including best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when using Content Moderator, Content Understanding analyzers, Azure AI document processing, quotas, or Foundry security, and other Microsoft Foundry Tools related development tasks. Not for Microsoft Foundry (use microsoft-foundry), Microsoft Foundry Classic (use microsoft-foundry-classic), Microsoft Foundry Local (use microsoft-foundry-local).
+description: Expert knowledge for Microsoft Foundry Tools (aka Azure AI services, Azure Cognitive Services) development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when using Content Moderator, Content Understanding analyzers, document layout extraction, face detection, or REST/.NET APIs, and other Microsoft Foundry Tools related development tasks. Not for Microsoft Foundry (use microsoft-foundry), Microsoft Foundry Classic (use microsoft-foundry-classic), Microsoft Foundry Local (use microsoft-foundry-local).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-24"
+  generated_at: "2026-06-07"
   generator: "docs2skills/1.0.0"
 ---
 # Microsoft Foundry Tools Skill
 
-This skill provides expert guidance for Microsoft Foundry Tools. Covers best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Microsoft Foundry Tools. Covers troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -24,13 +24,19 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Best Practices | L35-L40 | Guidance on improving Content Understanding accuracy, grounding and confidence in document extraction, and migrating from preview to GA Content Understanding APIs. |
-| Decision Making | L41-L48 | Guidance on choosing Foundry vs Content Understanding tools, selecting Azure AI document processing options, migrating preview to GA APIs, and estimating Content Understanding costs. |
-| Architecture & Design Patterns | L49-L53 | Guidance on choosing and configuring deployment options (serverless, managed, custom) for Content Understanding models, including trade-offs, scalability, and integration patterns. |
-| Limits & Quotas | L54-L61 | Quotas, limits, and supported languages for Content Moderator image/list APIs and Content Understanding, plus .NET samples showing how to stay within list and usage limits. |
-| Security | L62-L66 | Securing Foundry: auth methods, Entra-only access, keys/Key Vault, CMK encryption, DLP, VNet rules, API key rotation, Azure Policy and regulatory compliance configuration |
-| Configuration | L67-L76 | Configuring and customizing Content Understanding analyzers (prebuilt and custom), document layout, face detection, and cross-resource capacity settings. |
-| Integrations & Coding Patterns | L77-L91 | Using Content Moderator and Content Understanding via REST/.NET: text/image/video moderation, term lists, multimodal analysis, and consuming Markdown/structured outputs |
+| Troubleshooting | L36-L40 | Troubleshooting steps and FAQs for Content Understanding features, including diagnosing model issues, configuration problems, and resolving common errors in content analysis workflows. |
+| Best Practices | L41-L46 | Guidance on improving Content Understanding accuracy, grounding and confidence in document extraction, and migrating from preview to GA Content Understanding APIs. |
+| Decision Making | L47-L54 | Guidance on choosing and migrating Azure AI/Foundry document processing and Content Understanding tools, plus estimating and planning their pricing. |
+| Architecture & Design Patterns | L55-L59 | Guidance on choosing and configuring deployment options (serverless, managed, custom) for Content Understanding models, including trade-offs, scalability, and integration patterns. |
+| Limits & Quotas | L60-L67 | Quotas, limits, and supported languages for Content Moderator image/list APIs and Content Understanding, plus .NET samples showing how to stay within list and usage limits. |
+| Security | L68-L72 | Securing Azure Content Understanding analyzers and data: auth options, network isolation, encryption, access control, and best practices for protecting analyzer inputs/outputs. |
+| Configuration | L73-L82 | Configuring and customizing Content Understanding analyzers (prebuilt and custom), document layout, face detection, and cross-resource capacity settings. |
+| Integrations & Coding Patterns | L83-L97 | Using Content Moderator and Content Understanding via REST/.NET: text/image/video moderation, term lists, multimodal analysis, and consuming Markdown/structured outputs |
+
+### Troubleshooting
+| Topic | URL |
+|-------|-----|
+| Troubleshoot and answer FAQs for Content Understanding | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/faq |
 
 ### Best Practices
 | Topic | URL |
@@ -41,7 +47,7 @@ This skill requires **network access** to fetch documentation content:
 ### Decision Making
 | Topic | URL |
 |-------|-----|
-| Choose Azure AI tool for document processing | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/choosing-right-ai-tool |
+| Choose Azure AI tools for document processing | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/choosing-right-ai-tool |
 | Choose between Foundry and Content Understanding Studio features | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/foundry-vs-content-understanding-studio |
 | Migrate Content Understanding from preview to GA APIs | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/how-to/migration-preview-to-ga |
 | Estimate and plan Content Understanding pricing | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/pricing-explainer |
@@ -62,7 +68,7 @@ This skill requires **network access** to fetch documentation content:
 ### Security
 | Topic | URL |
 |-------|-----|
-| Secure Content Understanding with keys and identities | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/secure-communications |
+| Secure Azure Content Understanding analyzers and data | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/secure-communications |
 
 ### Configuration
 | Topic | URL |

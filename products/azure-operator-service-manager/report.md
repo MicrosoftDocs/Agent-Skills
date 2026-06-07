@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-06-07'
 category_descriptions:
   best-practices: Best practices for AOSM onboarding, config group design, Helm chart
     usage, artifact cleanup, and controlling CNF upgrade behavior and failure handling
@@ -40,8 +40,8 @@ confusable_not_for: Not for Azure Operator Insights (use azure-operator-insights
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 47
+- **Updated Pages**: 1
+- **Unchanged**: 46
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-operator-service-manager/azure-operator-service-manager.csv`
 
@@ -57,6 +57,11 @@ confusable_not_for: Not for Azure Operator Insights (use azure-operator-insights
 | *(Unclassified)* | 23 | 48.9% |
 
 ## Changes
+
+### Updated Pages
+
+- [Azure Operator Service Manager Release Notes](https://learn.microsoft.com/en-us/azure/operator-service-manager/release-notes)
+  - Updated: 2026-02-03T23:16:00.000Z → 2026-06-04T22:19:00.000Z
 
 ## Classified Pages
 
@@ -105,12 +110,12 @@ confusable_not_for: Not for Azure Operator Insights (use azure-operator-insights
 | [Create a site](https://learn.microsoft.com/en-us/azure/operator-service-manager/quickstart-containerized-network-function-create-site) | 0.40 | Portal-based site creation tutorial; likely UI steps without detailed parameter tables. |
 | [Create a site](https://learn.microsoft.com/en-us/azure/operator-service-manager/quickstart-virtualized-network-function-create-site) | 0.40 | Portal-based site creation tutorial; lacks evidence of detailed expert parameters or limits. |
 | [About the Azure Operator Service Manager CLI extension](https://learn.microsoft.com/en-us/azure/operator-service-manager/concepts-about-azure-operator-service-manager-cli) | 0.35 | Conceptual description of the CLI extension and workflows; summary does not show detailed parameter tables or error mappings. |
+| [Azure Operator Service Manager Release Notes](https://learn.microsoft.com/en-us/azure/operator-service-manager/release-notes) | 0.30 | Release notes typically list version changes and region availability but not the structured limits, configs, or troubleshooting mappings required by the defined sub-skill types. The summary indicates high-level release tracking rather than detailed limits, configuration parameters, or error diagnostics. |
 | [Get Started with Safe Upgrade Practices](https://learn.microsoft.com/en-us/azure/operator-service-manager/safe-upgrade-practices) | 0.30 | Described as an introduction to safe upgrade practices and basic upgrade concepts, with advanced capabilities in other articles. This sounds more like conceptual guidance than detailed, product-specific procedures, limits, or error handling, so it doesn’t clearly meet any expert-knowledge sub-skill criteria from the summary alone. |
 | [Tenants, Subscriptions and Regions](https://learn.microsoft.com/en-us/azure/operator-service-manager/publisher-resource-preview-management) | 0.30 | Feature overview for preview management; summary does not show concrete parameters, limits, or error codes. |
 | [Create a site](https://learn.microsoft.com/en-us/azure/operator-service-manager/how-to-create-site) | 0.20 | Basic how-to for creating a site; description suggests step-by-step UI/CLI usage without detailed configuration tables, limits, or product-specific diagnostic content. |
 | [Create site network service](https://learn.microsoft.com/en-us/azure/operator-service-manager/how-to-create-site-network-service) | 0.20 | How-to for creating a Site Network Service; summary indicates procedural guidance rather than detailed configuration parameters, limits, or troubleshooting mappings. |
 | [Delete operator resources](https://learn.microsoft.com/en-us/azure/operator-service-manager/how-to-delete-operator-resources) | 0.20 | Deletion order guidance is important but appears as high-level process steps, not detailed error mappings, configuration tables, or numeric constraints. |
 | [What is Azure Operator Service Manager?](https://learn.microsoft.com/en-us/azure/operator-service-manager/azure-operator-service-manager-overview) | 0.20 | High-level service overview without concrete limits, configs, or error mappings. |
-| [Azure Operator Service Manager Release Notes](https://learn.microsoft.com/en-us/azure/operator-service-manager/release-notes) | 0.10 | Release notes/regions listing; no detailed limits, configs, or troubleshooting mappings. |
 | [Role-Based Persona Model](https://learn.microsoft.com/en-us/azure/operator-service-manager/roles-interfaces) | 0.10 | Describes roles and interfaces conceptually; lacks concrete configuration or quotas. |
 | [Glossary](https://learn.microsoft.com/en-us/azure/operator-service-manager/glossary) | - | Glossary/terminology reference; definitional content rather than expert configuration, limits, troubleshooting, or decision-making guidance. |

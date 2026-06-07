@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-31'
+generated_at: '2026-06-07'
 category_descriptions:
   integrations: 'APIs, SDKs, and patterns for calling Foundry Local models: REST/OpenAI-style
     chat, tools, transcription, LangChain apps, and compiling Hugging Face models
@@ -57,8 +57,8 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 
 ### Updated Pages
 
-- [CLI (preview) best practice and troubleshooting](https://learn.microsoft.com/en-us/azure/foundry-local/reference/reference-best-practice)
-  - Updated: 2026-04-09T17:17:00.000Z → 2026-05-28T06:17:00.000Z
+- [What is Foundry Local?](https://learn.microsoft.com/en-us/azure/foundry-local/what-is-foundry-local)
+  - Updated: 2026-04-09T17:17:00.000Z → 2026-06-02T20:14:00.000Z
 
 ## Classified Pages
 
@@ -91,4 +91,4 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 | [Live transcribe audio (speech-to-text) from a microphone](https://learn.microsoft.com/en-us/azure/foundry-local/how-to/how-to-live-transcribe-audio) | 0.30 | Live transcription how-to; appears to be a tutorial with example code rather than detailed configuration parameters, limits, or troubleshooting mappings. |
 | [Build a RAG application](https://learn.microsoft.com/en-us/azure/foundry-local/tutorials/tutorial-build-rag-app) | 0.20 | Tutorial-style RAG app walkthrough; likely general coding steps and concepts without product-specific limits, configuration matrices, or error-code-based troubleshooting. |
 | [Foundry Local Architecture](https://learn.microsoft.com/en-us/azure/foundry-local/concepts/foundry-local-architecture) | 0.20 | Architecture overview article; conceptual explanation of components without quantified thresholds, decision matrices, or detailed configuration. |
-| [What is Foundry Local?](https://learn.microsoft.com/en-us/azure/foundry-local/what-is-foundry-local) | 0.20 | High-level product overview of Foundry Local; no numeric limits, configuration tables, error codes, or detailed SDK/CLI parameters. |
+| [What is Foundry Local?](https://learn.microsoft.com/en-us/azure/foundry-local/what-is-foundry-local) | 0.20 | Page is a high-level overview of Foundry Local describing what it is, benefits, and general capabilities. No specific limits, configuration parameters, error codes, or detailed patterns with quantified trade-offs are evident from the summary. |

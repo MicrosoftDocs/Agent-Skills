@@ -1,25 +1,26 @@
 ---
-generated_at: '2026-05-31'
+generated_at: '2026-06-07'
 category_descriptions:
-  security: Tenant-wide portal security policies, RBAC-based dashboard sharing, and
-    managing/protecting access to Azure via Intune MAM and the Azure mobile app.
+  security: Tenant-wide admin/security policies, RBAC-based dashboard sharing, mobile
+    app protection and user management with Intune/Entra ID, and roles needed to manage
+    Azure support requests.
   configuration: 'Configuring Azure portal behavior: dashboard JSON/templates, keyboard
     shortcuts, URL allowlists, mobile app alerts, and built-in Azure Policy definitions
     for portal governance.'
   troubleshooting: How to collect browser network traces, console logs, HAR files,
     and diagnostics to investigate and report Azure portal performance or UI issues
 skill_description: Expert knowledge for Azure Portal development including troubleshooting,
-  security, and configuration. Use when managing portal RBAC dashboard sharing, JSON
-  dashboards, URL allowlists, mobile app access/alerts, or HAR diagnostics, and other
-  Azure Portal related development tasks. Not for Azure Cloud Shell (use azure-cloud-shell),
+  security, and configuration. Use when managing portal RBAC sharing, Intune/Entra
+  mobile access, dashboard JSON, portal policies, or HAR diagnostics, and other Azure
+  Portal related development tasks. Not for Azure Cloud Shell (use azure-cloud-shell),
   Azure Resource Manager (use azure-resource-manager), Azure Monitor (use azure-monitor),
-  Azure Policy (use azure-policy).
-use_when: Use when managing portal RBAC dashboard sharing, JSON dashboards, URL allowlists,
-  mobile app access/alerts, or HAR diagnostics, and other Azure Portal related development
+  Azure Security (use azure-security).
+use_when: Use when managing portal RBAC sharing, Intune/Entra mobile access, dashboard
+  JSON, portal policies, or HAR diagnostics, and other Azure Portal related development
   tasks.
 confusable_not_for: Not for Azure Cloud Shell (use azure-cloud-shell), Azure Resource
-  Manager (use azure-resource-manager), Azure Monitor (use azure-monitor), Azure Policy
-  (use azure-policy).
+  Manager (use azure-resource-manager), Azure Monitor (use azure-monitor), Azure Security
+  (use azure-security).
 ---
 # Azure Portal Crawl Report
 
@@ -28,14 +29,14 @@ confusable_not_for: Not for Azure Cloud Shell (use azure-cloud-shell), Azure Res
 - **Total Pages**: 29
 - **Fetched**: 29
 - **Fetch Failed**: 0
-- **Classified**: 11
-- **Unclassified**: 18
+- **Classified**: 12
+- **Unclassified**: 17
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 27
-- **Deleted Pages**: 1
+- **Updated Pages**: 1
+- **Unchanged**: 28
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-portal/azure-portal.csv`
 
 ## Classification Statistics
@@ -43,22 +44,16 @@ confusable_not_for: Not for Azure Cloud Shell (use azure-cloud-shell), Azure Res
 | Type | Count | Percentage |
 |------|-------|------------|
 | configuration | 6 | 20.7% |
-| security | 4 | 13.8% |
+| security | 5 | 17.2% |
 | troubleshooting | 1 | 3.4% |
-| *(Unclassified)* | 18 | 62.1% |
+| *(Unclassified)* | 17 | 58.6% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Create an Azure dashboard](https://learn.microsoft.com/en-us/azure/azure-portal/azure-portal-dashboards)
-  - Updated: 2025-12-17T06:05:00.000Z → 2026-05-27T17:14:00.000Z
-- [Azure mobile app Home](https://learn.microsoft.com/en-us/azure/azure-portal/mobile-app/home)
-  - Updated: 2026-01-21T23:12:00.000Z → 2026-05-27T17:14:00.000Z
-
-### Deleted Pages
-
-- ~~Create and manage dashboards in Dashboard hub~~ (https://learn.microsoft.com/en-us/azure/azure-portal/dashboard-hub)
+- [Manage an Azure support request](https://learn.microsoft.com/en-us/azure/azure-portal/supportability/how-to-manage-azure-support-request)
+  - Updated: 2026-02-03T06:08:00.000Z → 2026-06-03T06:03:00.000Z
 
 ## Classified Pages
 
@@ -74,13 +69,13 @@ confusable_not_for: Not for Azure Cloud Shell (use azure-cloud-shell), Azure Res
 | [Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/azure-portal/mobile-app/microsoft-entra-id) | security | 0.70 | Covers managing users and groups with Entra ID and mentions required roles/permissions; contains product-specific RBAC/permission details. |
 | [Share an Azure dashboard](https://learn.microsoft.com/en-us/azure/azure-portal/azure-portal-dashboard-share-access) | security | 0.70 | Explains sharing dashboards via Azure RBAC and mentions role selection; likely lists specific RBAC roles and access scopes, which are product-specific security details. |
 | [Alerts and notifications](https://learn.microsoft.com/en-us/azure/azure-portal/mobile-app/alerts-notifications) | configuration | 0.65 | Explains different options for configuring notifications; likely includes specific notification settings and options unique to the mobile app. |
+| [Manage an Azure support request](https://learn.microsoft.com/en-us/azure/azure-portal/supportability/how-to-manage-azure-support-request) | security | 0.65 | Contains product-specific RBAC role requirements (Owner, Contributor, Support Request Contributor at subscription level; Admin for non-subscription requests) needed to manage Azure support tickets, which are concrete security/permission details not generally known from training. |
 | [Set admin policies for the Azure portal](https://learn.microsoft.com/en-us/azure/azure-portal/admin-policies) | security | 0.65 | Targets portal-wide policies set by Global Administrator; likely includes specific policy options and their security impact, fitting product-specific security configuration. |
 
 ## Unclassified Pages
 
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
-| [Manage an Azure support request](https://learn.microsoft.com/en-us/azure/azure-portal/supportability/how-to-manage-azure-support-request) | 0.45 | Managing support requests with role requirements; mentions specific roles but mainly as prerequisites, not as a security configuration guide. |
 | [Cloud Shell](https://learn.microsoft.com/en-us/azure/azure-portal/mobile-app/cloud-shell) | 0.40 | Using Cloud Shell in the mobile app; likely basic usage of Bash/PowerShell, which is generic and not deeply product-specific configuration. |
 | [Create an Azure support request](https://learn.microsoft.com/en-us/azure/azure-portal/supportability/how-to-create-azure-support-request) | 0.40 | How-to for creating support requests; while it mentions support ticket REST API, summary does not indicate detailed parameter tables or error mappings. |
 | [Azure Copilot](https://learn.microsoft.com/en-us/azure/azure-portal/mobile-app/azure-copilot) | 0.35 | Overview of using Azure Copilot in the mobile app; summary does not indicate detailed configuration parameters or limits. |

@@ -10,10 +10,16 @@
 | Configure attribute-based VM selection in Compute Fleet | https://learn.microsoft.com/en-us/azure/azure-compute-fleet/attribute-based-vm-selection |
 | Modify capacity and VM sizes in Azure Compute Fleet | https://learn.microsoft.com/en-us/azure/azure-compute-fleet/modify-fleet |
 | Configure Spot VM behavior in Azure Compute Fleet | https://learn.microsoft.com/en-us/azure/azure-compute-fleet/spot-vm-configuration |
-| Enable Azure Linux 3.0 for AKS clusters and node pools | https://learn.microsoft.com/en-us/azure/azure-linux/how-to-enable-azure-linux-3 |
-| Install and manage certificates on Azure Linux Container Host | https://learn.microsoft.com/en-us/azure/azure-linux/how-to-install-certs |
-| Enable telemetry and monitoring for Azure Linux with OS Guard | https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-os-guard-telemetry-monitor |
-| Configure telemetry and monitoring for Azure Linux Container Host | https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-telemetry-monitor |
+| Inspect and manage Azure Linux AKS host packages | https://learn.microsoft.com/en-us/azure/azure-linux/aks-packages |
+| Configure networking on Azure Linux with systemd-networkd | https://learn.microsoft.com/en-us/azure/azure-linux/configure-networking |
+| Enable debuginfo repositories on Azure Linux | https://learn.microsoft.com/en-us/azure/azure-linux/install-debug-symbol-packages |
+| Inspect and configure Azure Linux kernel parameters | https://learn.microsoft.com/en-us/azure/azure-linux/kernel-management |
+| View logs and monitor system health on Azure Linux | https://learn.microsoft.com/en-us/azure/azure-linux/logging-monitoring |
+| Manage Azure Linux packages using DNF5 | https://learn.microsoft.com/en-us/azure/azure-linux/manage-packages |
+| Discover and use Azure Linux package repositories | https://learn.microsoft.com/en-us/azure/azure-linux/package-repositories |
+| Configure and deploy AKS pod sandboxing on Azure Linux | https://learn.microsoft.com/en-us/azure/azure-linux/pod-sandboxing-aks |
+| Manage storage and filesystems on Azure Linux VMs | https://learn.microsoft.com/en-us/azure/azure-linux/storage-file-system-management |
+| Configure telemetry and monitoring for Azure Linux AKS clusters | https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-monitor-azure-linux-aks |
 | Enable automatic extension upgrades for Azure VMs and scale sets | https://learn.microsoft.com/en-us/azure/virtual-machines/automatic-extension-upgrade |
 | Configure automatic guest patching for Azure VMs and scale sets | https://learn.microsoft.com/en-us/azure/virtual-machines/automatic-vm-guest-patching |
 | Use Azure VM watch to collect in-VM health signals | https://learn.microsoft.com/en-us/azure/virtual-machines/azure-vm-watch |
@@ -97,7 +103,8 @@
 | Configure Marketplace purchase plans for gallery images | https://learn.microsoft.com/en-us/azure/virtual-machines/marketplace-images |
 | Configure monitoring and alerts for Azure VMs and scale sets | https://learn.microsoft.com/en-us/azure/virtual-machines/monitor-vm |
 | Reference for Azure VM monitoring metrics, logs, and dimensions | https://learn.microsoft.com/en-us/azure/virtual-machines/monitor-vm-reference |
-| Convert Azure Linux VMs from SCSI to NVMe | https://learn.microsoft.com/en-us/azure/virtual-machines/nvme-linux |
+| Convert Azure VM disks from SCSI to NVMe on Linux | https://learn.microsoft.com/en-us/azure/virtual-machines/nvme-linux |
+| Configure and enable NVMe on Azure virtual machines | https://learn.microsoft.com/en-us/azure/virtual-machines/nvme-overview |
 | Configure InfiniBand networking on Azure HPC VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/setup-infiniband |
 | Configure MPI for RDMA-enabled Azure HPC VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/setup-mpi |
 | Configure MPI for RDMA-capable Azure HPC VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/setup-mpi |

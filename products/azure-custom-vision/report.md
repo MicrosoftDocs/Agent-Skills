@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-17'
+generated_at: '2026-06-07'
 category_descriptions:
   deployment: 'Deploying Custom Vision models: copying/backing up projects across
     regions and exporting models for offline, edge, and mobile (TensorFlow, ONNX,
@@ -43,8 +43,8 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI serv
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 23
+- **Updated Pages**: 1
+- **Unchanged**: 22
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-custom-vision/azure-custom-vision.csv`
 
@@ -61,6 +61,11 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI serv
 | *(Unclassified)* | 6 | 26.1% |
 
 ## Changes
+
+### Updated Pages
+
+- [Custom Vision FAQ](https://learn.microsoft.com/en-us/azure/ai-services/custom-vision-service/faq)
+  - Updated: 2025-11-18T19:04:00.000Z → 2026-06-05T22:11:00.000Z
 
 ## Classified Pages
 
@@ -89,8 +94,8 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI serv
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
 | [Test your model](https://learn.microsoft.com/en-us/azure/ai-services/custom-vision-service/test-your-model) | 0.40 | Covers testing and retraining workflow; summary does not indicate numeric thresholds, config tables, or explicit best-practice gotchas beyond general ML concepts. |
+| [Custom Vision FAQ](https://learn.microsoft.com/en-us/azure/ai-services/custom-vision-service/faq) | 0.30 | FAQ page description suggests general Q&A and support links without clear evidence of specific numeric limits, configuration tables, error-code mappings, or other detailed expert-only data required by any sub-skill type. |
 | [Using the web portal](https://learn.microsoft.com/en-us/azure/ai-services/custom-vision-service/get-started-build-detector) | 0.30 | Portal-based quickstart for object detection; mostly UI workflow without detailed API parameters or config tables. |
 | [Using the web portal](https://learn.microsoft.com/en-us/azure/ai-services/custom-vision-service/getting-started-build-a-classifier) | 0.30 | Quickstart for building a classifier via portal; primarily step-by-step UI guidance, not configuration matrices, limits, or troubleshooting mappings. |
 | [What is Custom Vision?](https://learn.microsoft.com/en-us/azure/ai-services/custom-vision-service/overview) | 0.20 | High-level overview and retirement notice for Custom Vision; no detailed limits, configs, or error mappings. |
 | [What's new](https://learn.microsoft.com/en-us/azure/ai-services/custom-vision-service/whats-new) | 0.10 | What's new/change log content; typically version and feature announcements, not structured limits, configs, or troubleshooting mappings. |
-| [Custom Vision FAQ](https://learn.microsoft.com/en-us/azure/ai-services/custom-vision-service/faq) | - | FAQ page description is generic and does not indicate presence of specific limits, configuration tables, error-code mappings, or other detailed expert-only data per the defined categories. |

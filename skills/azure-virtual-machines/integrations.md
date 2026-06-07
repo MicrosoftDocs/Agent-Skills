@@ -7,6 +7,7 @@
 ### Integrations & Coding Patterns
 | Topic | URL |
 |-------|-----|
+| Build and integrate custom RPMs for Azure Linux | https://learn.microsoft.com/en-us/azure/azure-linux/build-rpm-packages |
 | Move Azure Marketplace VM to another subscription via CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/azure-cli-change-subscription-marketplace |
 | Create Azure VM restore points via REST APIs | https://learn.microsoft.com/en-us/azure/virtual-machines/create-restore-points |
 | Configure Azure Backup extension for SQL Server on Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/backup-azure-sql-server-running-azure-vm |

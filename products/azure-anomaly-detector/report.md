@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-17'
+generated_at: '2026-06-07'
 category_descriptions:
   configuration: How to configure and tune Anomaly Detector Docker containers, including
     environment variables, resource limits, logging, networking, and runtime behavior
@@ -10,18 +10,18 @@ category_descriptions:
     and designing workflows for effective use of univariate and multivariate Azure
     Anomaly Detector APIs.
   troubleshooting: Diagnosing and fixing Azure Anomaly Detector issues, including
-    multivariate API error codes, configuration problems, data/format issues, and
-    common service or performance failures.
+    multivariate error codes, common failures, configuration problems, and step-by-step
+    troubleshooting guidance.
   limits-quotas: 'Service limits for Anomaly Detector: max data points, series length,
     request rates, model constraints, and how quotas affect API usage and scaling.'
 skill_description: Expert knowledge for Azure AI Anomaly Detector development including
   troubleshooting, best practices, limits & quotas, configuration, and deployment.
-  Use when running Anomaly Detector in containers, tuning uni/multivariate APIs, handling
-  data limits, or fixing API errors, and other Azure AI Anomaly Detector related development
+  Use when tuning Docker-based Anomaly Detector, ACI or IoT Edge deployments, univariate/multivariate
+  APIs, or service limits, and other Azure AI Anomaly Detector related development
   tasks. Not for Azure AI Metrics Advisor (use azure-metrics-advisor), Azure Monitor
   (use azure-monitor), Azure Machine Learning (use azure-machine-learning).
-use_when: Use when running Anomaly Detector in containers, tuning uni/multivariate
-  APIs, handling data limits, or fixing API errors, and other Azure AI Anomaly Detector
+use_when: Use when tuning Docker-based Anomaly Detector, ACI or IoT Edge deployments,
+  univariate/multivariate APIs, or service limits, and other Azure AI Anomaly Detector
   related development tasks.
 confusable_not_for: Not for Azure AI Metrics Advisor (use azure-metrics-advisor),
   Azure Monitor (use azure-monitor), Azure Machine Learning (use azure-machine-learning).
@@ -38,8 +38,8 @@ confusable_not_for: Not for Azure AI Metrics Advisor (use azure-metrics-advisor)
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 24
+- **Updated Pages**: 1
+- **Unchanged**: 23
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-anomaly-detector/azure-anomaly-detector.csv`
 
@@ -56,6 +56,11 @@ confusable_not_for: Not for Azure AI Metrics Advisor (use azure-metrics-advisor)
 
 ## Changes
 
+### Updated Pages
+
+- [FAQ](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/faq)
+  - Updated: 2025-11-18T19:04:00.000Z → 2026-06-05T22:11:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
@@ -65,7 +70,7 @@ confusable_not_for: Not for Azure AI Metrics Advisor (use azure-metrics-advisor)
 | [Service limits](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/service-limits) | limits-quotas | 0.95 | Explicitly described as a quotas and limits article for all pricing tiers; these numeric limits and tier-specific constraints are expert knowledge not reliably known from training. |
 | [Anomaly Detector API best practices (multivariate)](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/concepts/best-practices-multivariate) | best-practices | 0.90 | Best-practices guidance for multivariate APIs; includes recommended practices and likely product-specific gotchas and configuration guidance. |
 | [Anomaly Detector API best practices (univariate)](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/concepts/anomaly-detection-best-practices) | best-practices | 0.90 | Explicit best-practices article for the univariate API; contains product-specific DOs/DON’Ts and guidance to improve accuracy and performance. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/faq) | troubleshooting | 0.78 | The FAQ is explicitly described as containing answers to frequently asked troubleshooting questions for the Anomaly Detector service. Such FAQs typically map specific symptoms and service-specific behaviors to causes and resolutions (for example, particular error messages, data requirements, or model behavior explanations) that go beyond generic debugging advice, fitting the troubleshooting sub-skill definition. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/faq) | troubleshooting | 0.78 | The FAQ is described as containing answers to frequently asked troubleshooting questions for the Anomaly Detector service, which typically includes symptom-to-solution mappings and product-specific guidance beyond generic concepts. |
 | [Install and run containers](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/anomaly-detector-container-howto) | deployment | 0.70 | Covers installing and running Anomaly Detector as Docker containers on-premises; includes container image locations and runtime requirements, which are deployment-specific. |
 
 ## Unclassified Pages

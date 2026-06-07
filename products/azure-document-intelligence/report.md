@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-17'
+generated_at: '2026-06-07'
 category_descriptions:
   security: 'Securing Document Intelligence: creating SAS tokens, configuring data-at-rest
     encryption, and using managed identities and VNets to lock down access to resources.'
@@ -12,8 +12,8 @@ category_descriptions:
   integrations: Using SDKs/REST to call Document Intelligence, handle AnalyzeDocument/Markdown
     outputs, and integrate with apps, Azure Functions, and Logic Apps for end‑to‑end
     document workflows
-  decision-making: Choosing which Document Intelligence model and API version to use,
-    and how to migrate workflows between different API versions and capabilities
+  decision-making: Choosing the right Document Intelligence model for your scenario
+    and guidance on upgrading or migrating between different API versions and features.
   troubleshooting: 'Diagnosing and fixing Document Intelligence issues: latency/performance
     problems, service error codes and meanings, and known Foundry-specific bugs and
     workarounds.'
@@ -27,13 +27,13 @@ category_descriptions:
 skill_description: Expert knowledge for Azure AI Document Intelligence development
   including troubleshooting, best practices, decision making, architecture & design
   patterns, limits & quotas, security, configuration, integrations & coding patterns,
-  and deployment. Use when using AnalyzeDocument, custom models, containers, SAS/managed
-  identity security, or Logic Apps/Functions workflows, and other Azure AI Document
+  and deployment. Use when using AnalyzeDocument APIs, custom models, containers,
+  SAS-secured endpoints, or Logic Apps/Functions workflows, and other Azure AI Document
   Intelligence related development tasks. Not for Azure AI Vision (use azure-ai-vision),
   Azure AI Search (use azure-cognitive-search), Azure AI Custom Vision (use azure-custom-vision),
   Azure AI Video Indexer (use azure-video-indexer).
-use_when: Use when using AnalyzeDocument, custom models, containers, SAS/managed identity
-  security, or Logic Apps/Functions workflows, and other Azure AI Document Intelligence
+use_when: Use when using AnalyzeDocument APIs, custom models, containers, SAS-secured
+  endpoints, or Logic Apps/Functions workflows, and other Azure AI Document Intelligence
   related development tasks.
 confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI Search
   (use azure-cognitive-search), Azure AI Custom Vision (use azure-custom-vision),
@@ -46,13 +46,13 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI Sear
 - **Total Pages**: 77
 - **Fetched**: 77
 - **Fetch Failed**: 0
-- **Classified**: 36
-- **Unclassified**: 41
+- **Classified**: 35
+- **Unclassified**: 42
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 77
+- **Updated Pages**: 3
+- **Unchanged**: 74
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-document-intelligence/azure-document-intelligence.csv`
 
@@ -66,12 +66,21 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI Sear
 | decision-making | 2 | 2.6% |
 | deployment | 4 | 5.2% |
 | integrations | 6 | 7.8% |
-| limits-quotas | 7 | 9.1% |
+| limits-quotas | 6 | 7.8% |
 | security | 4 | 5.2% |
 | troubleshooting | 3 | 3.9% |
-| *(Unclassified)* | 41 | 53.2% |
+| *(Unclassified)* | 42 | 54.5% |
 
 ## Changes
+
+### Updated Pages
+
+- [What is Azure Document Intelligence in Foundry Tools?](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/overview?view=doc-intel-4.0.0)
+  - Updated: 2026-05-06T08:00:00.000Z → 2026-06-05T06:04:00.000Z
+- [Which model should I choose?](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/concept/choose-model-feature?view=doc-intel-4.0.0)
+  - Updated: 2025-11-18T08:00:00.000Z → 2026-06-02T19:00:00.000Z
+- [Frequently asked questions (FAQ)](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/faq?view=doc-intel-4.0.0)
+  - Updated: 2026-01-31T06:05:00.000Z → 2026-06-05T22:11:00.000Z
 
 ## Classified Pages
 
@@ -102,13 +111,12 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI Sear
 | [Deploy the sample-labeling tool](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/v21/deploy-label-tool?view=doc-intel-2.1.0) | deployment | 0.70 | Explains different deployment options for the labeling tool, including cloud-hosted vs self-hosted; deployment-specific requirements and patterns for this product. |
 | [Document analysis models](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/language-support/ocr?view=doc-intel-4.0.0) | limits-quotas | 0.70 | Language-support pages typically contain explicit tables of supported languages/locales and modes, which are concrete capability limits not inferable from general training. |
 | [Enhanced capabilities](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/concept/add-on-capabilities?view=doc-intel-4.0.0) | limits-quotas | 0.70 | Add-on capabilities for service limits typically document concrete capacity increases and model exclusions (for example, which models support add-ons), which are numeric and SKU-specific details not known generically. |
-| [Frequently asked questions (FAQ)](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/faq?view=doc-intel-4.0.0) | limits-quotas | 0.70 | FAQ pages for Azure cognitive services typically include concrete, product-specific details such as maximum page counts per document, file size limits, supported file formats with constraints, rate limits, and model/version retirement timelines. These are numeric limits and behavioral specifics that qualify as expert knowledge under limits-quotas. |
 | [Get started with Document Intelligence client libraries](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/quickstarts/get-started-sdks-rest-api?view=doc-intel-4.0.0) | integrations | 0.70 | Client library quickstart for multiple API versions typically includes concrete API calls, parameters, and version-specific usage patterns—product-specific integration details. |
 | [Layout API markdown output elements](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/concept/markdown-elements?view=doc-intel-4.0.0) | integrations | 0.70 | Describes supported Markdown elements and how they are emitted by the Layout API, including parameter outputContentFormat=markdown and element mapping—product-specific response contract details. |
 | [Migration guide overview](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/versioning/migration-guide-overview?view=doc-intel-4.0.0) | decision-making | 0.70 | A migration guide between API versions typically includes version-specific behavioral differences, feature changes, and concrete guidance on when and how to move to v4.0 versus staying on earlier versions. This is expert, product-specific decision guidance about version selection and migration, fitting the decision-making category. |
 | [Prebuilt models](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/language-support/prebuilt?view=doc-intel-4.0.0) | limits-quotas | 0.70 | Documents exact language and locale coverage for each prebuilt model, which are product-specific capability limits akin to quotas. |
 | [Use Azure Document Intelligence with Azure Functions](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/tutorial/azure-function?view=doc-intel-4.0.0) | integrations | 0.70 | Shows how to wire Azure Functions, Blob Storage, and the layout model, including triggers and bindings—concrete cross-service integration pattern. |
-| [Which model should I choose?](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/concept/choose-model-feature?view=doc-intel-4.0.0) | decision-making | 0.70 | Explicitly provides guidance and decision charts for choosing between multiple Document Intelligence models for different scenarios, which is product-specific decision-making content. |
+| [Which model should I choose?](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/concept/choose-model-feature?view=doc-intel-4.0.0) | decision-making | 0.70 | Page is explicitly about choosing the best model for applications and workflows; it compares available Document Intelligence models and how they complement Azure Content Understanding, providing selection guidance and trade-offs, which fits decision-making. This kind of model-selection matrix and scenario guidance is product-specific expert knowledge. |
 | [Analyze document API response](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/concept/analyze-document-response?view=doc-intel-4.0.0) | integrations | 0.65 | Deep response-shape documentation for AnalyzeDocument typically includes field names, types, and constraints—SDK/REST response contract details that are product-specific integration knowledge. |
 | [Back up and recover models](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/how-to-guides/disaster-recovery?view=doc-intel-4.0.0) | architecture-patterns | 0.65 | Guidance on using copy model API for DR across regions; includes product-specific DR pattern and constraints tied to resource regions and model management. |
 | [Compose custom extraction models](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/how-to-guides/compose-custom-models?view=doc-intel-4.0.0) | configuration | 0.65 | Covers custom and composed models with version-specific compose behavior; likely includes API parameters and behavior differences—product-specific configuration semantics. |
@@ -147,6 +155,7 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI Sear
 | [Create a Document Intelligence resource](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/how-to-guides/create-document-intelligence-resource?view=doc-intel-4.0.0) | 0.30 | How-to create a resource in the Azure portal; likely step-by-step UI instructions without detailed configuration parameter tables or limits. |
 | [Document Intelligence Studio](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/studio-overview?view=doc-intel-4.0.0) | 0.30 | Studio overview and basic usage; describes capabilities and experimentation, not detailed configuration, limits, or troubleshooting. |
 | [Document Intelligence release history](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/reference/release-history?view=doc-intel-4.0.0) | 0.30 | Release history/what’s new overview; mostly chronological feature notes without detailed limits, configuration tables, or troubleshooting mappings. |
+| [Frequently asked questions (FAQ)](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/faq?view=doc-intel-4.0.0) | 0.30 | FAQ page appears to provide general Q&A about the service and its use cases; the summary does not indicate presence of specific limits, configuration parameters, error codes, or other detailed expert content required for the defined sub-skill types. |
 | [Model overview](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/model-overview?view=doc-intel-4.0.0) | 0.30 | Model overview describing available models; primarily conceptual and catalog-style without detailed decision matrices or configs. |
 | [Query field extraction](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/concept/query-fields?view=doc-intel-4.0.0) | 0.30 | Conceptual description of query field extraction and availability; summary doesn’t indicate numeric limits, config tables, or error mappings. |
 | [Retrieval-Augmented Generation (RAG)](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/concept/retrieval-augmented-generation?view=doc-intel-4.0.0) | 0.30 | Introduction to RAG and semantic chunking with this model; summary suggests conceptual guidance without numeric thresholds, config tables, or error mappings. |
@@ -157,5 +166,5 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI Sear
 | [SDK targets: REST API 2023-7-31 (GA)](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/versioning/sdk-overview-v3-1?view=doc-intel-3.1.0) | 0.20 | SDK overview for v3.1; similar high-level content without deep configuration or troubleshooting details. |
 | [SDK targets: REST API v2.1 (GA)](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/v21/sdk-overview-v2-1?view=doc-intel-2.1.0) | 0.20 | SDK overview for v2.1; similar to other SDK overview pages, not focused on limits, configuration matrices, or troubleshooting. |
 | [SDK targets: REST API v4.0 2024-11-30 latest (GA)](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/versioning/sdk-overview-v4-0?view=doc-intel-4.0.0) | 0.20 | SDK overview for REST API v4.0 describing languages and general capabilities; no indication of detailed configuration tables, limits, or error mappings. |
-| [What is Azure Document Intelligence in Foundry Tools?](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/overview?view=doc-intel-4.0.0) | 0.10 | High-level service overview of Azure Document Intelligence in Foundry Tools without specific limits, configuration parameters, error codes, or decision matrices. |
+| [What is Azure Document Intelligence in Foundry Tools?](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/overview?view=doc-intel-4.0.0) | 0.20 | Overview of Azure Document Intelligence in Foundry Tools describing what the service is and high-level capabilities; no detailed limits, configuration tables, error codes, or product-specific best-practice guidance. |
 | [What's new](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/whats-new?view=doc-intel-4.0.0) | 0.10 | Release notes/what's-new summary; likely lists features and dates but not detailed limits, configuration tables, or troubleshooting mappings. |

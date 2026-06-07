@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-31'
+generated_at: '2026-06-07'
 category_descriptions:
   decision-making: 'Planning and sizing Azure Site Recovery: choosing tools vs Azure
     Migrate, VMware/Hyper-V DR capacity and cost estimation, managed disk pricing,
@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Backup (use azure-backup), Azure Migrate (use 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 198
+- **Updated Pages**: 2
+- **Unchanged**: 200
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-site-recovery/azure-site-recovery.csv`
 
@@ -78,14 +78,10 @@ confusable_not_for: Not for Azure Backup (use azure-backup), Azure Migrate (use 
 
 ### Updated Pages
 
-- [Azure to Azure](https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-support-matrix)
-  - Updated: 2026-05-05T08:00:00.000Z → 2026-05-25T08:00:00.000Z
-- [Azure to Azure shared disks](https://learn.microsoft.com/en-us/azure/site-recovery/shared-disk-support-matrix)
-  - Updated: 2025-12-08T08:00:00.000Z → 2026-05-26T17:19:00.000Z
+- [About Site Recovery](https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-overview)
+  - Updated: 2026-05-13T08:00:00.000Z → 2026-06-04T08:00:00.000Z
 - [Feature releases](https://learn.microsoft.com/en-us/azure/site-recovery/feature-updates-whats-new)
-  - Updated: 2026-04-14T08:00:00.000Z → 2026-05-26T12:00:00.000Z
-- [Set up disaster recovery of VMware VMs to Azure using PowerShell](https://learn.microsoft.com/en-us/azure/site-recovery/vmware-azure-disaster-recovery-powershell)
-  - Updated: 2025-12-08T08:00:00.000Z → 2026-05-25T08:00:00.000Z
+  - Updated: 2026-05-26T12:00:00.000Z → 2026-06-03T08:00:00.000Z
 
 ## Classified Pages
 
@@ -285,7 +281,6 @@ confusable_not_for: Not for Azure Backup (use azure-backup), Azure Migrate (use 
 | [ARM Templates](https://learn.microsoft.com/en-us/azure/site-recovery/asr-arm-templates) | 0.20 | Index of ARM templates; mostly links, not in-page expert configuration or troubleshooting content. |
 | [Classic to modernized VMware disaster recovery](https://learn.microsoft.com/en-us/azure/site-recovery/move-from-classic-to-modernized-vmware-disaster-recovery) | 0.20 | Described as architecture, infrastructure, and FAQs for moving from classic to modernized VMware disaster recovery. This is primarily conceptual/architectural migration guidance without clear evidence of numeric limits, detailed config tables, or error-code-based troubleshooting in the provided summary. |
 | [Configure on-premise disks for Azure through Hydration](https://learn.microsoft.com/en-us/azure/site-recovery/hydration-process) | 0.20 | The hydration process article appears to be a procedural/configuration-change overview for preparing VMs before failover, without clear indication of parameter tables, numeric limits, or detailed configuration matrices. It reads more like a conceptual/how-to explanation than a source of specific expert-only limits, quotas, or configuration reference. |
-| [Feature releases](https://learn.microsoft.com/en-us/azure/site-recovery/feature-updates-whats-new) | 0.20 | Release notes / what's-new summary page; primarily high-level feature announcements without detailed limits, configuration parameters, error codes, or decision matrices that meet the expert-knowledge criteria. |
 | [Manage Site Recovery updates](https://learn.microsoft.com/en-us/azure/site-recovery/service-updates-how-to) | 0.20 | Overview of update process and component upgrades; likely procedural without detailed config tables, limits, or troubleshooting mappings. |
 | [Multitenant support for VMware disaster recovery](https://learn.microsoft.com/en-us/azure/site-recovery/vmware-azure-multi-tenant-overview) | 0.20 | High-level overview of multitenant VMware-to-Azure disaster recovery; summary indicates conceptual description of support and implementation, but no evidence of numeric limits, configuration tables, error codes, or decision matrices. |
 | [Remove servers and disable protection](https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-manage-registration-and-protection) | 0.20 | Covers unregistering servers and disabling protection; likely a basic operational guide without expert-level limits, configuration matrices, or error-code-based troubleshooting. |
@@ -294,7 +289,8 @@ confusable_not_for: Not for Azure Backup (use azure-backup), Azure Migrate (use 
 | [Site Recovery - FAQ](https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-faq) | 0.20 | General FAQ page; description suggests high-level questions and pointers to scenario articles, without clear evidence of detailed limits, configuration parameters, or troubleshooting mappings. |
 | [Walkthrough-Set up disaster recovery](https://learn.microsoft.com/en-us/azure/site-recovery/physical-azure-disaster-recovery) | 0.20 | Tutorial-style walkthrough for setting up disaster recovery of physical servers to Azure Site Recovery; based on the summary, it focuses on step-by-step setup rather than detailed limits, configuration parameter tables, error codes, or decision matrices. Lacks clear evidence of product-specific numeric limits, RBAC role lists, or troubleshooting mappings required for expert-knowledge classification. |
 | [What's new - Archive](https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-whats-new-archive) | 0.20 | Archive of 'what's new' release notes for Azure Site Recovery; primarily chronological feature/update descriptions without structured limits, configuration tables, error-code mappings, or decision matrices that meet the expert-knowledge criteria. |
-| [About Site Recovery](https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-overview) | 0.10 | Service overview of Azure Site Recovery and BCDR scenarios; no indication of numeric limits, configuration tables, error codes, or other detailed expert-only data. |
+| [About Site Recovery](https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-overview) | 0.10 | High-level overview of Azure Site Recovery and BCDR scenarios without specific limits, configurations, error codes, or decision matrices. |
 | [Active Directory and DNS](https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-active-directory) | 0.10 | Describes how to implement DR for Active Directory/DNS conceptually and procedurally; summary shows no specific limits, configuration parameter tables, or error-code-based troubleshooting, so it does not meet expert-knowledge criteria. |
+| [Feature releases](https://learn.microsoft.com/en-us/azure/site-recovery/feature-updates-whats-new) | 0.10 | Feature updates/what's-new summary; does not present detailed limits, configuration parameters, troubleshooting mappings, or decision criteria. |
 | [Release notes](https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-whats-new) | 0.10 | What's new summary page; mostly release notes and marketing-style feature announcements without deep technical limits or configs. |
 | [Walkthrough-Set up disaster recovery for Azure Stack Hub](https://learn.microsoft.com/en-us/azure/site-recovery/azure-stack-site-recovery) | 0.10 | Step-by-step disaster recovery setup for Azure Stack Hub VMs but no visible numeric limits, configuration tables, error codes, or product-specific decision matrices; primarily a procedural/tutorial article. |

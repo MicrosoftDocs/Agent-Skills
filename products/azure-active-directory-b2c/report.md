@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-05-17'
+generated_at: '2026-06-07'
 category_descriptions:
   configuration: 'Configuring Azure AD B2C: custom policies, user flows, tokens, MFA,
     identity providers, claims/transformations, app/API registration, UI/localization,
     SSO, security, and advanced auth options.'
-  integrations: End-to-end patterns for integrating Azure AD B2C into apps and APIs,
-    configuring identity providers, custom policies, fraud/risk tools, and securing
-    traffic with proxies, WAFs, and monitoring.
+  integrations: Patterns and step-by-step guides for integrating Azure AD B2C into
+    apps, securing APIs, configuring IdPs/social logins, custom policies, fraud/risk
+    tools, and routing logs/monitoring.
   security: 'Security hardening for Azure AD B2C: MFA, Conditional Access, Identity
     Protection, CAPTCHA, TLS/ciphers, policy keys, admin/tenant access control, API
     security, and Sentinel-based monitoring.'
@@ -31,16 +31,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Active Directory B2C development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when designing user flows/custom policies, MFA/Conditional Access, identity
-  providers, CI/CD deployments, or monitoring, and other Azure Active Directory B2C
-  related development tasks. Not for Azure Information Protection (use azure-information-protection),
-  Azure Role-based access control (use azure-rbac), Azure Security (use azure-security),
-  Azure Sentinel (use azure-sentinel).
-use_when: Use when designing user flows/custom policies, MFA/Conditional Access, identity
-  providers, CI/CD deployments, or monitoring, and other Azure Active Directory B2C
-  related development tasks.
-confusable_not_for: Not for Azure Information Protection (use azure-information-protection),
-  Azure Role-based access control (use azure-rbac), Azure Security (use azure-security),
+  Use when building B2C user flows/custom policies, configuring IdPs/MFA, securing
+  APIs, automating CI/CD, or monitoring with Sentinel, and other Azure Active Directory
+  B2C related development tasks. Not for Azure Role-based access control (use azure-rbac),
+  Azure Information Protection (use azure-information-protection), Azure Security
+  (use azure-security), Azure Sentinel (use azure-sentinel).
+use_when: Use when building B2C user flows/custom policies, configuring IdPs/MFA,
+  securing APIs, automating CI/CD, or monitoring with Sentinel, and other Azure Active
+  Directory B2C related development tasks.
+confusable_not_for: Not for Azure Role-based access control (use azure-rbac), Azure
+  Information Protection (use azure-information-protection), Azure Security (use azure-security),
   Azure Sentinel (use azure-sentinel).
 ---
 # Azure Active Directory B2C Crawl Report
@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Information Protection (use azure-information-
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 289
+- **Updated Pages**: 1
+- **Unchanged**: 288
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-active-directory-b2c/azure-active-directory-b2c.csv`
 
@@ -76,6 +76,11 @@ confusable_not_for: Not for Azure Information Protection (use azure-information-
 | *(Unclassified)* | 32 | 11.1% |
 
 ## Changes
+
+### Updated Pages
+
+- [itsme](https://learn.microsoft.com/en-us/azure/active-directory-b2c/partner-itsme)
+  - Updated: 2024-10-11T08:00:00.000Z → 2026-06-02T08:00:00.000Z
 
 ## Classified Pages
 
@@ -161,7 +166,6 @@ confusable_not_for: Not for Azure Information Protection (use azure-information-
 | [Secure an API connector](https://learn.microsoft.com/en-us/azure/active-directory-b2c/secure-rest-api) | security | 0.80 | Covers authentication patterns for protecting REST endpoints called by B2C, including token validation, scopes, and configuration of app registrations and roles. |
 | [SendGrid](https://learn.microsoft.com/en-us/azure/active-directory-b2c/custom-email-sendgrid) | integrations | 0.80 | Provides SendGrid-specific configuration (API keys, templates) and B2C policy settings to send verification emails via SendGrid. |
 | [UserInfo endpoint](https://learn.microsoft.com/en-us/azure/active-directory-b2c/userinfo-endpoint) | configuration | 0.80 | Describes policy elements and configuration parameters to implement an OpenID Connect UserInfo endpoint, including claim mappings and endpoint definitions. |
-| [itsme](https://learn.microsoft.com/en-us/azure/active-directory-b2c/partner-itsme) | integrations | 0.80 | Describes integrating itsme via OIDC using client_secret user flow; includes specific endpoints, scopes, and policy configuration unique to this partner integration. |
 | [Claims transformation](https://learn.microsoft.com/en-us/azure/active-directory-b2c/claims-transformation-technical-profile) | configuration | 0.79 | Explains how to configure claims transformation technical profiles and call transformation methods—product-specific configuration schema. |
 | [10 - Sign up and sign in (social account)](https://learn.microsoft.com/en-us/azure/active-directory-b2c/custom-policies-series-sign-up-or-sign-in-federation) | integrations | 0.78 | Provides concrete steps and XML configuration to federate with Facebook (or similar) as an IdP in B2C custom policies. Contains provider-specific technical profile settings and claims handling. |
 | [Configure user input](https://learn.microsoft.com/en-us/azure/active-directory-b2c/configure-user-input) | configuration | 0.78 | Describes configuration of user input fields and attribute collection in policies/user flows, including setting names and options unique to Azure AD B2C. |
@@ -310,6 +314,7 @@ confusable_not_for: Not for Azure Information Protection (use azure-information-
 | [Sign-in policy](https://learn.microsoft.com/en-us/azure/active-directory-b2c/add-sign-in-policy) | configuration | 0.70 | Similar to other user flow docs, this page defines specific policy configuration fields, identity providers, and settings that are detailed B2C configuration parameters. |
 | [User access](https://learn.microsoft.com/en-us/azure/active-directory-b2c/manage-user-access) | configuration | 0.70 | Covers concrete configuration of attributes (DOB, country), terms-of-use capture, and policy behavior for managing access, which are product-specific. |
 | [WhoIAM Rampart](https://learn.microsoft.com/en-us/azure/active-directory-b2c/partner-whoiam-rampart) | integrations | 0.70 | Covers detailed setup of Rampart with Azure AD B2C, including RBAC-related configuration, endpoints, and app settings unique to this integration. |
+| [itsme](https://learn.microsoft.com/en-us/azure/active-directory-b2c/partner-itsme) | integrations | 0.70 | Page describes a product-specific OIDC integration between itsme and Azure AD B2C using a client_secret user flow policy, including concrete configuration steps and parameters unique to this integration, which qualifies as an integrations & coding pattern rather than a generic tutorial. |
 | [Migrate users](https://learn.microsoft.com/en-us/azure/active-directory-b2c/user-migration) | decision-making | 0.68 | Explains when to use pre-migration vs seamless migration, including trade-offs, flows, and requirements (e.g., Graph API usage) to guide migration decisions. |
 | [Add administrator (work account)](https://learn.microsoft.com/en-us/azure/active-directory-b2c/tenant-management-manage-administrator) | security | 0.65 | Covers how to add and invite admin/guest accounts with role-based access; includes product-specific admin role usage and security configuration steps. |
 | [Authentication options](https://learn.microsoft.com/en-us/azure/active-directory-b2c/enable-authentication-android-app-options) | configuration | 0.65 | Describes enabling and customizing authentication experience for Android; option pages usually enumerate specific configuration switches and policy settings. |

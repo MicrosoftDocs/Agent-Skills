@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-10'
+generated_at: '2026-06-07'
 category_descriptions:
   configuration: 'Configuring Stream Analytics jobs: inputs/outputs (SQL, Cosmos DB,
     Event Hubs, Kafka, Power BI, Delta Lake, etc.), partitioning, autoscale, compatibility,
@@ -13,35 +13,35 @@ category_descriptions:
   troubleshooting: 'Diagnosing and fixing Stream Analytics job issues: error codes
     (config/data/external/internal), input/output connection failures, query/UDF bugs,
     and using diagrams, metrics, and resource logs to debug.'
-  integrations: Integrating Stream Analytics with Kafka, Event Hubs, ML/AML, schema
-    registry, and implementing UDFs/aggregates, .NET SDK management, JSON/Avro parsing,
-    and ML/anomaly patterns.
+  integrations: Patterns for integrating Stream Analytics with Kafka, Event Hubs,
+    ML/AML, schema registry, and custom code (C#/JS UDFs/aggregates), plus JSON/Avro
+    parsing and advanced scenarios like HFT.
   best-practices: Best practices for Stream Analytics job design, query patterns,
     performance tuning, scaling, reliability, time handling, geospatial logic, ML/Cosmos/SQL
     outputs, and alerting.
   decision-making: Guidance on choosing tools, migration paths, autoscaling options,
     and comparing Azure real-time/stream processing services for designing Stream
     Analytics solutions.
-  architecture-patterns: Architectural patterns and best practices for designing resilient,
-    geo-redundant Azure Stream Analytics solutions, including reference topologies
-    and high-availability job designs.
-  limits-quotas: Configuring and tuning Stream Analytics streaming units and clusters,
-    including how to resize, scale performance, and understand capacity limits and
-    resource quotas.
+  architecture-patterns: Designing resilient, geo-redundant Stream Analytics topologies
+    and scaling jobs using Streaming Units, input/output partitioning, and performance
+    tuning patterns.
+  limits-quotas: Info on Stream Analytics capacity limits, streaming units (SUs),
+    how to size/resize clusters, performance tuning, and specific constraints for
+    Azure Stream Analytics on IoT Edge.
 skill_description: Expert knowledge for Azure Stream Analytics development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when building ASA jobs with Event Hubs/Kafka, Cosmos DB/SQL outputs, ML/AML
-  scoring, UDFs, or IoT Edge, and other Azure Stream Analytics related development
+  Use when building jobs with Event Hubs/Kafka, Cosmos DB/SQL outputs, ML/AML integration,
+  IoT Edge, or geospatial logic, and other Azure Stream Analytics related development
   tasks. Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure Data
-  Explorer (use azure-data-explorer), Azure Event Hubs (use azure-event-hubs), Azure
-  Functions (use azure-functions).
-use_when: Use when building ASA jobs with Event Hubs/Kafka, Cosmos DB/SQL outputs,
-  ML/AML scoring, UDFs, or IoT Edge, and other Azure Stream Analytics related development
-  tasks.
+  Factory (use azure-data-factory), Azure Databricks (use azure-databricks), Azure
+  Event Hubs (use azure-event-hubs).
+use_when: Use when building jobs with Event Hubs/Kafka, Cosmos DB/SQL outputs, ML/AML
+  integration, IoT Edge, or geospatial logic, and other Azure Stream Analytics related
+  development tasks.
 confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics),
-  Azure Data Explorer (use azure-data-explorer), Azure Event Hubs (use azure-event-hubs),
-  Azure Functions (use azure-functions).
+  Azure Data Factory (use azure-data-factory), Azure Databricks (use azure-databricks),
+  Azure Event Hubs (use azure-event-hubs).
 ---
 # Azure Stream Analytics Crawl Report
 
@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 167
+- **Updated Pages**: 3
+- **Unchanged**: 164
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-stream-analytics/azure-stream-analytics.csv`
 
@@ -64,18 +64,27 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 1 | 0.6% |
-| best-practices | 15 | 9.0% |
+| architecture-patterns | 2 | 1.2% |
+| best-practices | 14 | 8.4% |
 | configuration | 30 | 18.0% |
 | decision-making | 4 | 2.4% |
-| deployment | 11 | 6.6% |
+| deployment | 10 | 6.0% |
 | integrations | 16 | 9.6% |
-| limits-quotas | 2 | 1.2% |
+| limits-quotas | 3 | 1.8% |
 | security | 16 | 9.6% |
 | troubleshooting | 16 | 9.6% |
 | *(Unclassified)* | 56 | 33.5% |
 
 ## Changes
+
+### Updated Pages
+
+- [Increase throughput of your job](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-scale-jobs)
+  - Updated: 2024-02-28T05:47:00.000Z → 2026-06-02T20:30:00.000Z
+- [IoT Edge](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-edge)
+  - Updated: 2021-01-07T22:58:00.000Z → 2026-06-02T20:30:00.000Z
+- [High-frequency trading](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-high-frequency-trading)
+  - Updated: 2024-04-16T18:43:00.000Z → 2026-06-02T20:30:00.000Z
 
 ## Classified Pages
 
@@ -138,7 +147,9 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | [Error policy](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-output-error-policy) | configuration | 0.70 | Explains Retry vs Drop policies and how to set them; these are explicit configuration options with defined behavior for this product. |
 | [Event ordering overview](https://learn.microsoft.com/en-us/azure/stream-analytics/event-ordering) | configuration | 0.70 | Describes configuring event ordering policies; such pages usually include specific parameter names and allowed ranges (lateness thresholds, out-of-order windows) that are configuration details. |
 | [Geo-redundancy](https://learn.microsoft.com/en-us/azure/stream-analytics/geo-redundancy) | architecture-patterns | 0.70 | Describes how to achieve geo-redundancy by deploying identical jobs in multiple regions and wiring inputs/outputs; this is a product-specific architecture pattern with trade-offs. |
+| [High-frequency trading](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-high-frequency-trading) | integrations | 0.70 | The article describes a concrete, product-specific pattern for integrating Azure Stream Analytics SQL with JavaScript UDFs/UDAs and Power BI to implement online linear regression training and scoring in a high-frequency trading scenario. It focuses on how to wire up and use these integration points (SQL, JavaScript aggregates, and output to Power BI) with code and configuration details that are specific to Azure Stream Analytics, which fits the integrations & coding patterns category better than generic best practices or architecture guidance. |
 | [Integrate with Schema Registry](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-schema-registry-integration) | integrations | 0.70 | Describes how to add and use Event Hubs Schema Registry from Stream Analytics, including schema retrieval and deserialization; involves product-specific integration configuration. |
+| [IoT Edge](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-edge) | limits-quotas | 0.70 | The page covers Azure Stream Analytics on IoT Edge scenarios along with edge job limitations, supported inputs/outputs, and runtime requirements. These are product-specific constraints and capabilities (for example, which inputs/outputs and runtimes are supported on edge) that constitute expert knowledge about limits and support boundaries. |
 | [JavaScript UDA](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-javascript-user-defined-aggregates) | integrations | 0.70 | Describes two UDA interfaces and steps to create them; this is detailed coding pattern guidance specific to Stream Analytics’ JS UDA API. |
 | [Kafka output](https://learn.microsoft.com/en-us/azure/stream-analytics/kafka-output) | configuration | 0.70 | Covers connecting to Kafka clusters with specific client version support and VNet/public endpoint configuration, implying adapter-specific settings and constraints. |
 | [Machine learning UDF](https://learn.microsoft.com/en-us/azure/stream-analytics/machine-learning-udf) | integrations | 0.70 | Describes wiring AML-deployed models into Stream Analytics via UDFs; this integration requires specific endpoint, schema, and invocation patterns that are product-specific. |
@@ -163,6 +174,7 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | [Write data to Delta Lake](https://learn.microsoft.com/en-us/azure/stream-analytics/write-to-delta-lake) | configuration | 0.70 | The page describes how to configure the native Delta Lake output connector for Azure Stream Analytics, including product-specific output settings and behaviors (such as append mode to Delta tables in ADLS Gen2). These are concrete, service-specific configuration details rather than just conceptual guidance. |
 | [Anomaly detection](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-machine-learning-anomaly-detection) | integrations | 0.68 | The page describes product-specific built-in ML functions (AnomalyDetection_SpikeAndDip and AnomalyDetection_ChangePoint) for Azure Stream Analytics, including how to apply them directly in Stream Analytics jobs. These are concrete, service-specific function patterns and parameters for integrating Azure Stream Analytics with ML-based anomaly detection, which go beyond generic ML or anomaly detection concepts. |
 | [Improve query performance](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-parallelization) | best-practices | 0.68 | Describes product-specific guidance on scaling Stream Analytics jobs via input partitioning, query tuning, and streaming unit configuration. This is actionable, service-specific performance/scaling advice rather than generic concepts, fitting best-practices. Not clearly focused on numeric limits/quotas or deployment matrices. |
+| [Increase throughput of your job](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-scale-jobs) | architecture-patterns | 0.68 | The page describes concrete scaling patterns for Azure Stream Analytics jobs (partitioning inputs, tuning queries, and configuring streaming units) and when to use them to increase throughput. This is product-specific architecture and scaling guidance beyond generic concepts, but not focused on explicit numeric limits/quotas. |
 | [Set up CI/CD pipeline](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-tools-for-visual-studio-cicd) | deployment | 0.68 | Describes a NuGet package that adds MSBuild, local run, and deployment tooling; includes product-specific build/deploy configuration for CI/CD. |
 | [Time handling considerations](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-time-handling) | best-practices | 0.68 | The article provides product-specific guidance on choosing event vs. arrival time, configuring start times, and handling late/early events in Azure Stream Analytics jobs. It includes concrete, scenario-based recommendations and gotchas unique to Stream Analytics time semantics (watermarks, out-of-order handling, and time handling metrics), going beyond generic streaming concepts. While it is design-focused, it does not center on numeric limits/quotas or decision matrices with quantified thresholds, so best-practices is the closest fit. |
 | [Using API for IoT Edge jobs](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-cicd-api) | deployment | 0.68 | Focuses on using specific REST APIs to build CI/CD for Stream Analytics on IoT Edge; includes product-specific deployment API usage rather than generic tutorial content. |
@@ -173,7 +185,6 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | [Azure Functions](https://learn.microsoft.com/en-us/azure/stream-analytics/azure-functions-output) | configuration | 0.65 | Describes an output adapter to Functions; such pages usually define binding parameters, payload formats, and configuration fields unique to this integration. |
 | [C# UDF](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-edge-csharp-udf-methods) | integrations | 0.65 | Covers writing C# UDFs with Stream Analytics’ .NET Standard interface; such content includes method signatures, attribute usage, and deployment specifics unique to this product. |
 | [Geospatial scenarios](https://learn.microsoft.com/en-us/azure/stream-analytics/geospatial-scenarios) | best-practices | 0.65 | Uses built-in geospatial functions for specific scenarios; likely includes concrete query patterns and product-specific function usage that serve as best-practice patterns. |
-| [Increase throughput of your job](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-scale-jobs) | best-practices | 0.65 | Covers tuning queries, partitioning, and SU settings to increase throughput; these are actionable, product-specific performance recommendations. |
 | [Parse JSON and AVRO data](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-parsing-json) | integrations | 0.65 | The page explains how Azure Stream Analytics specifically parses JSON/Avro/CSV and complex types (nested objects, arrays), which involves product-specific query syntax and handling rules. This is expert, integration-oriented knowledge about how to work with these formats in this service, aligning best with integrations & coding patterns. |
 | [Power BI](https://learn.microsoft.com/en-us/azure/stream-analytics/power-bi-output) | configuration | 0.65 | Power BI output integration typically includes product-specific settings (workspace, dataset, authentication, region availability) and constraints (e.g., deprecation notes, unsupported clouds). These are configuration details and constraints unique to this integration that go beyond generic SDK usage. |
 | [Run job in your virtual network](https://learn.microsoft.com/en-us/azure/stream-analytics/run-job-in-virtual-network) | security | 0.65 | Describes how to run Stream Analytics jobs in an Azure virtual network, which typically includes product-specific network/security configuration (subnets, private endpoints, access requirements) beyond generic concepts. |
@@ -186,8 +197,6 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | [Run a C# UDF](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-edge-csharp-udf) | integrations | 0.63 | Covers C# UDF integration including how to reference DLLs and function signatures; product-specific coding patterns and configuration for UDFs. |
 | [Migrate to VS Code](https://learn.microsoft.com/en-us/azure/stream-analytics/migrate-to-vscode) | decision-making | 0.62 | Migration guidance between tooling environments; likely includes concrete steps, mapping of project structures, and recommendations for when/how to migrate. |
 | [Compatibility level](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-compatibility-level) | configuration | 0.60 | Describes setting compatibility levels and behavioral changes; such pages usually enumerate level values and their effects, which are product-specific configuration options. |
-| [High-frequency trading](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-high-frequency-trading) | integrations | 0.60 | Shows advanced analytics with SQL plus JavaScript UDFs/UDAs for high-frequency trading; includes product-specific coding patterns and integration of UDFs that go beyond generic knowledge. |
-| [IoT Edge](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-edge) | deployment | 0.60 | Describes creating edge jobs and deploying to IoT Edge; such pages usually include supported runtimes, module configuration, and deployment constraints specific to this scenario. |
 | [JavaScript UDF](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-javascript-user-defined-functions) | integrations | 0.60 | Introduces JavaScript UDFs; such pages typically include function signatures, supported types, and runtime constraints specific to Stream Analytics’ JS engine, which are integration/coding-pattern details. |
 | [Job diagram](https://learn.microsoft.com/en-us/azure/stream-analytics/job-diagram-with-metrics) | troubleshooting | 0.60 | Describes using job diagrams and metrics to identify problem sources; this is a product-specific troubleshooting workflow mapping symptoms (metric anomalies) to investigation steps. |
 | [Start a job](https://learn.microsoft.com/en-us/azure/stream-analytics/start-job) | deployment | 0.60 | Describes starting jobs with different start-time semantics per tool; these are product-specific operational/deployment behaviors and parameters. |

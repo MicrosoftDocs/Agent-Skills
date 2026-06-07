@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-05-24'
+generated_at: '2026-06-07'
 category_descriptions:
-  integrations: How to connect Managed Grafana to Azure/AKS Prometheus, Azure Monitor,
-    Azure Data Explorer, MCP and AI Foundry, manage data source plugins, and build
-    monitoring dashboards and alerts.
+  integrations: Integrating Azure Managed Grafana with AI agents, MCP servers, Azure
+    Monitor/Prometheus/AKS, and data sources like Azure Data Explorer, plus patterns
+    for AI-driven monitoring dashboards.
   security: 'Securing Managed Grafana: auth/permissions, roles and team sync, private
     endpoints and outbound IPs, data encryption, service accounts/tokens, and security
     best practices.'
@@ -21,17 +21,17 @@ category_descriptions:
     access, configuration, and private endpoint connectivity and DNS problems.
 skill_description: Expert knowledge for Azure Managed Grafana development including
   troubleshooting, decision making, limits & quotas, security, configuration, integrations
-  & coding patterns, and deployment. Use when connecting Azure Monitor/Prometheus,
-  configuring workspaces, securing access, setting alerts, or troubleshooting, and
-  other Azure Managed Grafana related development tasks. Not for Azure Monitor (use
-  azure-monitor), Azure App Service (use azure-app-service), Azure Kubernetes Service
-  (AKS) (use azure-kubernetes-service), Azure Virtual Machines (use azure-virtual-machines).
-use_when: Use when connecting Azure Monitor/Prometheus, configuring workspaces, securing
-  access, setting alerts, or troubleshooting, and other Azure Managed Grafana related
-  development tasks.
+  & coding patterns, and deployment. Use when integrating Azure Monitor/Prometheus,
+  configuring workspaces/plugins, securing access, HA deployment, or image/report
+  rendering, and other Azure Managed Grafana related development tasks. Not for Azure
+  Monitor (use azure-monitor), Azure App Service (use azure-app-service), Azure Container
+  Apps (use azure-container-apps), Azure Kubernetes Service (AKS) (use azure-kubernetes-service).
+use_when: Use when integrating Azure Monitor/Prometheus, configuring workspaces/plugins,
+  securing access, HA deployment, or image/report rendering, and other Azure Managed
+  Grafana related development tasks.
 confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure App Service (use
-  azure-app-service), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
-  Azure Virtual Machines (use azure-virtual-machines).
+  azure-app-service), Azure Container Apps (use azure-container-apps), Azure Kubernetes
+  Service (AKS) (use azure-kubernetes-service).
 ---
 # Azure Managed Grafana Crawl Report
 
@@ -40,13 +40,13 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure App Service
 - **Total Pages**: 44
 - **Fetched**: 44
 - **Fetch Failed**: 0
-- **Classified**: 34
-- **Unclassified**: 10
+- **Classified**: 35
+- **Unclassified**: 9
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 44
+- **Updated Pages**: 1
+- **Unchanged**: 43
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-managed-grafana/azure-managed-grafana.csv`
 
@@ -57,13 +57,18 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure App Service
 | configuration | 6 | 13.6% |
 | decision-making | 4 | 9.1% |
 | deployment | 1 | 2.3% |
-| integrations | 9 | 20.5% |
+| integrations | 10 | 22.7% |
 | limits-quotas | 2 | 4.5% |
 | security | 10 | 22.7% |
 | troubleshooting | 2 | 4.5% |
-| *(Unclassified)* | 10 | 22.7% |
+| *(Unclassified)* | 9 | 20.5% |
 
 ## Changes
+
+### Updated Pages
+
+- [Ingest data via OpenTelemetry Collector](https://learn.microsoft.com/en-us/azure/managed-grafana/grafana-opentelemetry-app-insights)
+  - Updated: 2026-05-11T17:19:00.000Z → 2026-06-02T19:32:00.000Z
 
 ## Classified Pages
 
@@ -98,6 +103,7 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure App Service
 | [Migrate to Azure Managed Grafana](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-migrate) | decision-making | 0.70 | Migration guide with what can be migrated automatically and how; supports decision-making and concrete migration steps between environments. |
 | [Use Azure Monitor alerts with Grafana](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-use-azure-monitor-alerts) | integrations | 0.70 | Explains how Azure Monitor and Grafana alerts interact, including plan-specific availability (Essential lacks Grafana alerts) and shared compute/query throttling limits. |
 | [Use service accounts](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-service-accounts) | security | 0.70 | Explains enabling service accounts and creating tokens for API access; product-specific identity and access configuration. |
+| [Ingest data via OpenTelemetry Collector](https://learn.microsoft.com/en-us/azure/managed-grafana/grafana-opentelemetry-app-insights) | integrations | 0.68 | The page describes an end-to-end setup of a telemetry pipeline using OpenTelemetry and Azure Application Insights specifically for multiple AI coding agents (GitHub Copilot, Claude Code, Codex, OpenClaw, OpenCode, Gemini CLI). This likely includes product-specific configuration details such as telemetry endpoints, instrumentation keys/connection strings, and OpenTelemetry exporter settings unique to this scenario, which qualify as expert integration knowledge beyond generic concepts. |
 | [Remote MCP server](https://learn.microsoft.com/en-us/azure/managed-grafana/grafana-mcp-server) | integrations | 0.68 | Describes a product-specific MCP server endpoint for Azure Managed Grafana, including how tools and applications interact with it and the supported authentication mechanisms (Microsoft Entra ID and Grafana service account token). This is an integration-focused, product-unique pattern rather than a generic concept. |
 | [Monitor using diagnostic settings](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-monitor-managed-grafana-workspace) | configuration | 0.65 | Details diagnostic settings and event log categories for the service; product-specific logging configuration. |
 | [Monitor using metrics](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-monitor-managed-grafana-metrics) | configuration | 0.65 | Shows which workspace metrics are exposed and how to configure metric charts; includes specific metric names and usage patterns. |
@@ -114,7 +120,6 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure App Service
 | [Grafana UI](https://learn.microsoft.com/en-us/azure/managed-grafana/grafana-app-ui) | 0.30 | Reference for Grafana UI components linking to upstream Grafana docs; mostly conceptual UI overview without Azure-specific expert configuration or limits. |
 | [About Azure Managed Grafana](https://learn.microsoft.com/en-us/azure/managed-grafana/overview) | 0.20 | High-level product overview and benefits; no concrete limits, configs, or decision matrices. |
 | [Agent Framework dashboard](https://learn.microsoft.com/en-us/azure/managed-grafana/agent-framework-dashboard) | 0.20 | From the summary, the page is a how-to guide for creating and customizing an Agent Framework dashboard in Azure Managed Grafana. It describes using a prebuilt dashboard to visualize performance, token usage, costs, and errors, but there is no indication of specific limits, configuration parameter tables, error-code mappings, or other product-specific expert details as defined in the sub-skill types. It appears to be primarily tutorial/usage content rather than expert reference material. |
-| [Ingest data via OpenTelemetry Collector](https://learn.microsoft.com/en-us/azure/managed-grafana/grafana-opentelemetry-app-insights) | 0.20 | High-level guide about monitoring AI coding agents with Grafana and OpenTelemetry. From the summary, it appears to be an end-to-end setup/tutorial without clear evidence of detailed configuration tables, limits, or product-specific error codes; likely more conceptual and procedural than expert reference content. |
 | [Create a workspace - Azure CLI](https://learn.microsoft.com/en-us/azure/managed-grafana/quickstart-managed-grafana-cli) | 0.10 | Quickstart for creating a workspace via CLI; procedural tutorial, not configuration reference or limits. |
 | [Create a workspace - Portal](https://learn.microsoft.com/en-us/azure/managed-grafana/quickstart-managed-grafana-portal) | 0.10 | Quickstart for creating a workspace via portal; step-by-step tutorial without detailed limits, configs, or troubleshooting matrices. |
 | [Support](https://learn.microsoft.com/en-us/azure/managed-grafana/find-help-open-support-ticket) | 0.10 | This page describes how to find help and open a support ticket, which is process/navigation content. It doesn't contain product-specific limits, configuration parameters, error-code mappings, or decision matrices, so it doesn't qualify as expert knowledge for any sub-skill type. |

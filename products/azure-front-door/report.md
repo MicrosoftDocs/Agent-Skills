@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 100
+- **Updated Pages**: 0
+- **Unchanged**: 102
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-front-door/azure-front-door.csv`
 
@@ -75,13 +75,6 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | *(Unclassified)* | 33 | 32.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [Front Door and CDN comparison](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-cdn-comparison)
-  - Updated: 2026-05-04T08:00:00.000Z → 2026-05-26T17:19:00.000Z
-- [Wildcard domains](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-wildcard-domain)
-  - Updated: 2024-03-31T08:00:00.000Z → 2026-05-26T22:16:00.000Z
 
 ## Classified Pages
 

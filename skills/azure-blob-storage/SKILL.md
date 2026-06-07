@@ -1,9 +1,9 @@
 ---
 name: azure-blob-storage
-description: Expert knowledge for Azure Blob Storage development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when tuning access tiers, lifecycle/immutability, SAS/RBAC auth, BlobFuse/NFS mounts, or static website hosting, and other Azure Blob Storage related development tasks. Not for Azure Files (use azure-files), Azure Table Storage (use azure-table-storage), Azure NetApp Files (use azure-netapp-files).
+description: Expert knowledge for Azure Blob Storage development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring tiers, lifecycle, immutability, Data Lake Gen2, SFTP/NFS, or BlobFuse/Storage Mover workloads, and other Azure Blob Storage related development tasks. Not for Azure Files (use azure-files), Azure Table Storage (use azure-table-storage), Azure Queue Storage (use azure-queue-storage), Azure NetApp Files (use azure-netapp-files).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-31"
+  generated_at: "2026-06-07"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Blob Storage Skill
@@ -28,8 +28,8 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L48-L81 | Performance, cost, reliability, and monitoring best practices for Blob/Data Lake: upload/download tuning per SDK, access tiers, lifecycle, naming/partitions, retries, concurrency, NFS/SFTP, events, and backups. |
 | Decision Making | L82-L107 | Cost planning and design choices for Blob Storage: pricing, migration and transfer costs, archive retrieval, multi-region access, connectivity, data protection, and when to use specific tiers/tools. |
 | Architecture & Design Patterns | L108-L112 | Guidance on when and why to enable Data Lake Storage Gen2 hierarchical namespace in Blob Storage, including tradeoffs, performance, and compatibility impacts. |
-| Limits & Quotas | L113-L133 | Limits, quotas, and known issues for Blob Storage: scalability targets, performance, archive/rehydration rules, smart tiering, NFS/SFTP/BlobFuse/Data Lake limits, and static website constraints. |
-| Security | L134-L192 | Configuring secure access to Blob and Data Lake Storage using RBAC/ABAC, SAS, Entra ID, SFTP, ACLs, and encryption (CSE, CPK, scopes), plus hardening guidance and anonymous access controls. |
+| Limits & Quotas | L113-L133 | Limits, quotas, performance, and known issues for Azure Blob Storage features (tiers, scalability, protocols, SFTP, websites, Data Lake, BlobFuse, Storage Mover, and replication). |
+| Security | L134-L192 | Securing Blob Storage: identity-based auth (Entra, RBAC, ABAC), SAS tokens, SFTP, ACLs, encryption (CSE, CPK, scopes), private networking, and controlling anonymous/public access. |
 | Configuration | L193-L257 | Configuring Azure Blob Storage and related tools: monitoring, lifecycle, immutability, soft delete, versioning, static websites, BlobFuse, Storage Mover, and third‑party backup/migration integrations. |
 | Integrations & Coding Patterns | L258-L391 | SDK, CLI, and tooling patterns for integrating with Blob/Data Lake: connect from various languages, mount/file-system access, copy/migrate data, manage containers/blobs, leases, tiers, tags, and events. |
 | Deployment | L392-L405 | Guides for deploying static websites on Blob Storage, enabling Data Lake features, and migrating or integrating data from HDFS, Hadoop, NAS, and hybrid solutions into Azure Storage. |
@@ -124,7 +124,7 @@ This skill requires **network access** to fetch documentation content:
 | Understand limitations and known issues for Azure Data Lake Storage | https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-known-issues |
 | Protocol limits for NFS 3.0 on Azure Blob | https://learn.microsoft.com/en-us/azure/storage/blobs/network-file-system-protocol-support |
 | Object replication priority replication latency guarantees | https://learn.microsoft.com/en-us/azure/storage/blobs/object-replication-priority-replication |
-| Plan for Azure Blob Storage scalability limits | https://learn.microsoft.com/en-us/azure/storage/blobs/scalability-targets |
+| Understand Azure Blob Storage scalability limits | https://learn.microsoft.com/en-us/azure/storage/blobs/scalability-targets |
 | Premium block blob storage scalability limits | https://learn.microsoft.com/en-us/azure/storage/blobs/scalability-targets-premium-block-blobs |
 | Use premium page blob storage scalability targets | https://learn.microsoft.com/en-us/azure/storage/blobs/scalability-targets-premium-page-blobs |
 | Limitations and known issues for SFTP on Azure Blob Storage | https://learn.microsoft.com/en-us/azure/storage/blobs/secure-file-transfer-protocol-known-issues |
@@ -134,8 +134,8 @@ This skill requires **network access** to fetch documentation content:
 ### Security
 | Topic | URL |
 |-------|-----|
-| Assign Azure RBAC roles for storage tasks | https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-authorization-roles |
-| Configure roles to assign and run storage tasks | https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-authorization-roles-assign |
+| Use Azure RBAC roles for Storage Tasks access | https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-authorization-roles |
+| Assign Storage Tasks with correct Azure roles | https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-authorization-roles-assign |
 | Securely register Azure Storage Mover agents | https://learn.microsoft.com/en-us/azure/storage-mover/agent-register |
 | Configure private networking for Azure Storage Mover migrations | https://learn.microsoft.com/en-us/azure/storage-mover/migrations-requiring-private-connections |
 | Configure anonymous read access for Blob containers | https://learn.microsoft.com/en-us/azure/storage/blobs/anonymous-read-access-configure |
@@ -170,7 +170,7 @@ This skill requires **network access** to fetch documentation content:
 | Create service SAS for blobs with JavaScript | https://learn.microsoft.com/en-us/azure/storage/blobs/sas-service-create-javascript |
 | Create service SAS for Azure blobs using Python | https://learn.microsoft.com/en-us/azure/storage/blobs/sas-service-create-python |
 | Validate SFTP host keys for Azure Blob Storage connections | https://learn.microsoft.com/en-us/azure/storage/blobs/secure-file-transfer-protocol-host-keys |
-| Authorize SFTP client access to Azure Blob Storage | https://learn.microsoft.com/en-us/azure/storage/blobs/secure-file-transfer-protocol-support-authorize-access |
+| Authorize SFTP access to Azure Blob Storage | https://learn.microsoft.com/en-us/azure/storage/blobs/secure-file-transfer-protocol-support-authorize-access |
 | Configure Entra ID-based SFTP authorization for Azure Blob Storage | https://learn.microsoft.com/en-us/azure/storage/blobs/secure-file-transfer-protocol-support-entra-id-based-access |
 | Configure SFTP access for Azure Blob Storage accounts | https://learn.microsoft.com/en-us/azure/storage/blobs/secure-file-transfer-protocol-support-how-to |
 | Apply security recommendations for Azure Blob Storage | https://learn.microsoft.com/en-us/azure/storage/blobs/security-recommendations |

@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-05-31'
+generated_at: '2026-06-07'
 category_descriptions:
   best-practices: 'Performance, DataOps, and reliability best practices for ADF: tuning
     data flows/copy, optimizing sources/sinks/IR, handling schema drift/errors, and
     migrating data (HDFS, Netezza, S3) to Azure.'
-  configuration: 'Configuring ADF: datasets, linked services, runtimes, triggers,
-    activities, data flows, formats, monitoring, DevOps/CI/CD, SAP CDC, SSIS IR, and
-    global/trigger parameters.'
+  configuration: 'Configuring Azure Data Factory: pipelines, activities, triggers,
+    data flows, copy behavior, formats, integration runtimes (Azure/self-hosted/SSIS),
+    monitoring, parameters, and SAP CDC settings.'
   decision-making: 'Guidance for architectural and cost decisions in ADF: choosing
     runtimes/compute/connectors, planning upgrades/migrations (SSIS, Synapse, Fabric),
     and optimizing pricing and reserved capacity.'
@@ -31,12 +31,12 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Data Factory development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building ADF pipelines with data flows, SHIR/SSIS IR, SAP CDC, Key Vault, or VNets/Private
-  Link, and other Azure Data Factory related development tasks. Not for Azure Synapse
-  Analytics (use azure-synapse-analytics), Azure Databricks (use azure-databricks),
+  building ADF pipelines, mapping data flows, integration runtimes, SAP CDC, or SSIS-to-Azure
+  migrations, and other Azure Data Factory related development tasks. Not for Azure
+  Synapse Analytics (use azure-synapse-analytics), Azure Databricks (use azure-databricks),
   Azure Stream Analytics (use azure-stream-analytics), Azure Data Explorer (use azure-data-explorer).
-use_when: Use when building ADF pipelines with data flows, SHIR/SSIS IR, SAP CDC,
-  Key Vault, or VNets/Private Link, and other Azure Data Factory related development
+use_when: Use when building ADF pipelines, mapping data flows, integration runtimes,
+  SAP CDC, or SSIS-to-Azure migrations, and other Azure Data Factory related development
   tasks.
 confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics),
   Azure Databricks (use azure-databricks), Azure Stream Analytics (use azure-stream-analytics),
@@ -46,17 +46,17 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 
 ## Summary
 
-- **Total Pages**: 505
-- **Fetched**: 505
+- **Total Pages**: 504
+- **Fetched**: 504
 - **Fetch Failed**: 0
-- **Classified**: 423
+- **Classified**: 422
 - **Unclassified**: 82
 
 ### Incremental Update
 - **New Pages**: 0
 - **Updated Pages**: 2
-- **Unchanged**: 503
-- **Deleted Pages**: 0
+- **Unchanged**: 502
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-factory/azure-data-factory.csv`
 
 ## Classification Statistics
@@ -68,20 +68,24 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | configuration | 121 | 24.0% |
 | decision-making | 15 | 3.0% |
 | deployment | 11 | 2.2% |
-| integrations | 172 | 34.1% |
+| integrations | 171 | 33.9% |
 | limits-quotas | 2 | 0.4% |
-| security | 27 | 5.3% |
+| security | 27 | 5.4% |
 | troubleshooting | 50 | 9.9% |
-| *(Unclassified)* | 82 | 16.2% |
+| *(Unclassified)* | 82 | 16.3% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Overview and architecture](https://learn.microsoft.com/en-us/azure/data-factory/sap-change-data-capture-introduction-architecture)
-  - Updated: 2026-03-25T22:12:00.000Z → 2026-05-27T12:06:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/data-factory/frequently-asked-questions)
-  - Updated: 2025-03-05T23:04:00.000Z → 2026-05-24T11:44:00.000Z
+- [Transform data](https://learn.microsoft.com/en-us/azure/data-factory/transform-data)
+  - Updated: 2025-02-13T08:00:00.000Z → 2026-06-02T19:32:00.000Z
+- [Express virtual network injection](https://learn.microsoft.com/en-us/azure/data-factory/azure-ssis-integration-runtime-express-virtual-network-injection)
+  - Updated: 2025-01-08T08:00:00.000Z → 2026-06-03T08:00:00.000Z
+
+### Deleted Pages
+
+- ~~Data Lake U-SQL activity~~ (https://learn.microsoft.com/en-us/azure/data-factory/transform-data-using-data-lake-analytics)
 
 ## Classified Pages
 
@@ -248,14 +252,12 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | [Connect to Azure DevOps in another tenant](https://learn.microsoft.com/en-us/azure/data-factory/cross-tenant-connections-to-azure-devops) | configuration | 0.80 | Provides step-by-step configuration for connecting ADF to Azure DevOps in another tenant, including specific settings and constraints. |
 | [Copy activity log](https://learn.microsoft.com/en-us/azure/data-factory/copy-activity-log) | configuration | 0.80 | Session log article documents how to enable logging of copied file names, including specific activity properties and log schema/columns, which are detailed configuration and telemetry settings. |
 | [Custom activity](https://learn.microsoft.com/en-us/azure/data-factory/transform-data-using-custom-activity) | integrations | 0.80 | Custom activity article describes how to package and configure .NET code as an activity, including linked service to compute, folder paths, and activity JSON schema, which are product-specific integration/configuration patterns. |
-| [Data Lake U-SQL activity](https://learn.microsoft.com/en-us/azure/data-factory/transform-data-using-data-lake-analytics) | integrations | 0.80 | U-SQL/Data Lake Analytics activity article defines linked service and activity properties (scriptPath, degreeOfParallelism, priority) in tables, which are detailed integration/configuration parameters. |
 | [Databricks Jar activity](https://learn.microsoft.com/en-us/azure/data-factory/transform-data-databricks-jar) | integrations | 0.80 | Databricks JAR activity docs specify activity schema, cluster options, libraries, and parameter passing conventions, including property names and allowed values, which are detailed integration settings between ADF and Databricks. |
 | [Databricks Notebook activity](https://learn.microsoft.com/en-us/azure/data-factory/transform-data-databricks-notebook) | integrations | 0.80 | Notebook activity documentation includes JSON schema fields (notebookPath, baseParameters, etc.), execution behavior, and constraints, which are concrete integration parameters unique to ADF–Databricks integration. |
 | [Databricks Python activity](https://learn.microsoft.com/en-us/azure/data-factory/transform-data-databricks-python) | integrations | 0.80 | Databricks Python activity docs define how to reference Python files, pass arguments, configure clusters, and handle outputs via specific activity properties, which are product-specific integration details. |
 | [Delete files using Delete activity](https://learn.microsoft.com/en-us/azure/data-factory/delete-activity) | configuration | 0.80 | Delete Activity page defines activity JSON schema and property tables (e.g., recursive, maxConcurrentConnections, wildcard patterns) with allowed values, which are detailed configuration parameters. |
 | [Encrypt credentials for self-hosted integration runtime](https://learn.microsoft.com/en-us/azure/data-factory/encrypt-credentials-self-hosted-integration-runtime) | security | 0.80 | The article covers how credentials are encrypted and stored for on-premises data stores, including specific configuration steps, encryption mechanisms, and runtime behavior that are product-specific security details. |
 | [Execute Data Flow activity](https://learn.microsoft.com/en-us/azure/data-factory/control-flow-execute-data-flow-activity) | configuration | 0.80 | Data Flow activity article defines activity JSON schema and properties (e.g., compute, timeouts, traceLevel) in tables with allowed values, which are product-specific configuration parameters. |
-| [Express virtual network injection](https://learn.microsoft.com/en-us/azure/data-factory/azure-ssis-integration-runtime-express-virtual-network-injection) | configuration | 0.80 | Express injection article includes region support constraints and specific vNet/subnet settings, making it detailed configuration and also implicitly includes some limits (supported regions). |
 | [Google Sheets](https://learn.microsoft.com/en-us/azure/data-factory/connector-google-sheets) | integrations | 0.80 | Google Sheets transformation article describes configuring data flows with this connector, including sheet/range selection and connector-specific properties, which are integration configuration details. |
 | [HDInsight Hive activity](https://learn.microsoft.com/en-us/azure/data-factory/transform-data-using-hadoop-hive) | integrations | 0.80 | Hive activity docs typically list activity JSON schema, script location options, arguments, and HDInsight-specific settings, which are detailed integration and configuration parameters for this activity type. |
 | [HDInsight MapReduce activity](https://learn.microsoft.com/en-us/azure/data-factory/transform-data-using-hadoop-map-reduce) | integrations | 0.80 | MapReduce activity documentation describes how to specify JARs, class names, arguments, and HDInsight cluster settings via explicit activity properties and constraints, which are product-specific integration patterns. |
@@ -338,6 +340,7 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | [Self-hosted integration runtime auto-update and expire notification](https://learn.microsoft.com/en-us/azure/data-factory/self-hosted-integration-runtime-auto-update) | configuration | 0.75 | Autoupdate and expiry notification behavior usually includes registry keys, config flags, versioning behavior, and possibly schedule parameters, which are concrete configuration settings. |
 | [Set up diagnostics logs via the Azure Monitor REST API](https://learn.microsoft.com/en-us/azure/data-factory/monitor-logs-rest) | configuration | 0.75 | Includes REST API payload schemas, resource IDs, and category names for configuring ADF diagnostics programmatically. |
 | [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/data-factory/policy-reference) | security | 0.74 | Lists Azure Policy built-in definitions for Data Factory; these include specific policy names, effects, and scopes that control security/compliance posture, which are product-specific security configuration artifacts. |
+| [Express virtual network injection](https://learn.microsoft.com/en-us/azure/data-factory/azure-ssis-integration-runtime-express-virtual-network-injection) | configuration | 0.74 | Page describes how to configure express virtual network injection for Azure-SSIS integration runtime, including product-specific network configuration steps and settings (subnets, VNets, supported/unsupported regions). These are detailed configuration instructions unique to Azure Data Factory/Azure-SSIS rather than generic networking concepts. |
 | [Quickbase](https://learn.microsoft.com/en-us/azure/data-factory/connector-quickbase) | integrations | 0.74 | Quickbase transformation connector docs describe dataset and source/sink properties, supported operations, and connector-specific behaviors in data flows, which are detailed integration and configuration patterns. |
 | [Smartsheet](https://learn.microsoft.com/en-us/azure/data-factory/connector-smartsheet) | integrations | 0.74 | Smartsheet transformation connector docs describe dataset/source properties, supported sheet/row operations, and connector-specific behaviors in data flows, which are concrete integration and configuration details. |
 | [Access a secured Microsoft Purview account](https://learn.microsoft.com/en-us/azure/data-factory/how-to-access-secured-purview-account) | security | 0.70 | Covers firewall, private endpoint, and network configuration details for Purview–ADF integration, including security-specific settings and scopes. |
@@ -538,7 +541,6 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | [Nested activities](https://learn.microsoft.com/en-us/azure/data-factory/concepts-nested-activities) | 0.40 | Conceptual article on nested activities; focuses on how they work and when to use them, without numeric limits, configuration tables, or troubleshooting mappings. |
 | [Pipeline parameters and variables](https://learn.microsoft.com/en-us/azure/data-factory/concepts-parameters-variables) | 0.40 | Conceptual explanation of pipeline parameters and variables; mostly describes behavior and usage, not detailed configuration tables, limits, or troubleshooting mappings. |
 | [Push Data Factory lineage data to Microsoft Purview](https://learn.microsoft.com/en-us/azure/data-factory/tutorial-push-lineage-to-purview) | 0.40 | Tutorial to push lineage to Microsoft Purview; mainly pipeline steps and UI usage, with limited evidence of detailed configuration tables or error/limit references. |
-| [Transform data](https://learn.microsoft.com/en-us/azure/data-factory/transform-data) | 0.40 | High-level overview of transformation options (Hadoop, ML Studio, Data Lake Analytics) without detailed configuration tables or error mappings; primarily conceptual/navigation content. |
 | [Transform data with mapping data flows](https://learn.microsoft.com/en-us/azure/data-factory/tutorial-data-flow) | 0.40 | Step-by-step tutorial for creating a mapping data flow pipeline; mostly UI-driven instructions without detailed limits, configs tables, or product-specific tuning guidance. |
 | [User defined functions](https://learn.microsoft.com/en-us/azure/data-factory/concepts-data-flow-udf) | 0.40 | Conceptual overview of user-defined functions in mapping data flows; likely describes what UDFs are and high-level usage, not detailed API/config tables. |
 | [User interface (UI)](https://learn.microsoft.com/en-us/azure/data-factory/tutorial-incremental-copy-multiple-tables-portal) | 0.40 | Portal tutorial for incremental copy of multiple tables; still a scenario walkthrough, not a structured expert-knowledge reference. |
@@ -589,6 +591,7 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | [Overview](https://learn.microsoft.com/en-us/azure/data-factory/industry-sap-overview) | 0.20 | Described as an overview of the SAP Knowledge Center and IP; likely high-level and navigational without detailed limits, configs, or troubleshooting matrices. |
 | [SAP connectors](https://learn.microsoft.com/en-us/azure/data-factory/industry-sap-connectors) | 0.20 | Overview of SAP connectors; summary suggests a catalog/overview of connector types rather than detailed configuration tables, limits, or troubleshooting mappings. |
 | [SAP templates](https://learn.microsoft.com/en-us/azure/data-factory/industry-sap-templates) | 0.20 | Overview of SAP templates; appears to be descriptive and introductory, not focused on detailed configuration parameters, limits, or error-resolution content. |
+| [Transform data](https://learn.microsoft.com/en-us/azure/data-factory/transform-data) | 0.20 | Page appears to be a conceptual/overview guide on data transformation options in Azure Data Factory and Synapse (Hadoop, ML Studio classic, Data Lake Analytics) without clear evidence of detailed limits, configuration tables, error-code-based troubleshooting, or other product-specific expert details as defined in the sub-skill types. |
 | [Whitepapers](https://learn.microsoft.com/en-us/azure/data-factory/whitepapers) | 0.15 | Index of whitepapers; acts as a navigation/listing page rather than containing the detailed technical content itself, so it does not directly provide expert configuration, limits, or troubleshooting knowledge. |
 | [Introduction to Data Factory](https://learn.microsoft.com/en-us/azure/data-factory/introduction) | 0.10 | High-level introduction to Azure Data Factory; conceptual overview without detailed limits, configs, or error mappings. |
 | [Mapping data flow overview](https://learn.microsoft.com/en-us/azure/data-factory/concepts-data-flow-overview) | 0.10 | The page is an overview of mapping data flows in Azure Data Factory/Synapse. It describes concepts and capabilities but does not list numeric limits, configuration parameter tables, error codes, or decision matrices. Content is high-level and not the kind of detailed expert knowledge specified in the sub-skill types. |

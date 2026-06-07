@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-24'
+generated_at: '2026-06-07'
 category_descriptions:
   security: 'Securing Batch accounts and pools: identity (Entra ID, managed identities,
     RBAC), keys/certs rotation, encryption, private endpoints/network perimeters,
@@ -49,13 +49,13 @@ confusable_not_for: Not for Azure Container Instances (use azure-container-insta
 - **Total Pages**: 114
 - **Fetched**: 114
 - **Fetch Failed**: 0
-- **Classified**: 82
-- **Unclassified**: 32
+- **Classified**: 81
+- **Unclassified**: 33
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 114
+- **Updated Pages**: 1
+- **Unchanged**: 113
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-batch/azure-batch.csv`
 
@@ -65,16 +65,21 @@ confusable_not_for: Not for Azure Container Instances (use azure-container-insta
 |------|-------|------------|
 | architecture-patterns | 2 | 1.8% |
 | best-practices | 10 | 8.8% |
-| configuration | 30 | 26.3% |
+| configuration | 29 | 25.4% |
 | decision-making | 8 | 7.0% |
 | deployment | 2 | 1.8% |
 | integrations | 10 | 8.8% |
 | limits-quotas | 2 | 1.8% |
 | security | 15 | 13.2% |
 | troubleshooting | 3 | 2.6% |
-| *(Unclassified)* | 32 | 28.1% |
+| *(Unclassified)* | 33 | 28.9% |
 
 ## Changes
+
+### Updated Pages
+
+- [Using application packages](https://learn.microsoft.com/en-us/azure/batch/batch-application-packages)
+  - Updated: 2026-01-12T08:00:00.000Z → 2026-06-02T20:30:00.000Z
 
 ## Classified Pages
 
@@ -152,7 +157,6 @@ confusable_not_for: Not for Azure Container Instances (use azure-container-insta
 | [Submit a large number of tasks](https://learn.microsoft.com/en-us/azure/batch/large-number-tasks) | best-practices | 0.65 | Focuses on how to efficiently submit tens or hundreds of thousands of tasks to a single job, with product-specific guidance on batching submissions, throughput considerations, and API usage patterns that are unique to Azure Batch at scale. |
 | [Use Batch CLI templates](https://learn.microsoft.com/en-us/azure/batch/batch-cli-templates) | deployment | 0.65 | Shows how to orchestrate full Batch job lifecycles (pool creation, data upload, tasks, output download) via CLI templates and extension commands, representing a deployment/orchestration pattern specific to Batch. |
 | [Use Batch JavaScript SDK](https://learn.microsoft.com/en-us/azure/batch/batch-js-get-started) | integrations | 0.65 | A get-started article for the Azure Batch JavaScript client library typically includes product-specific SDK usage, such as client initialization patterns, required configuration parameters (account URL, keys, pool/job IDs), and code snippets that show how to call Batch APIs. These are integration-focused coding patterns unique to the Azure Batch JS SDK rather than generic JavaScript concepts. |
-| [Using application packages](https://learn.microsoft.com/en-us/azure/batch/batch-application-packages) | configuration | 0.65 | Covers Batch application package configuration via Management and Service APIs, including versioning and deployment behavior specific to Batch. |
 | [Job preparation and completion tasks](https://learn.microsoft.com/en-us/azure/batch/batch-job-prep-release) | best-practices | 0.64 | Explains how to use job preparation and release tasks to minimize data transfer and perform cleanup on Batch compute nodes, with concrete patterns (when and how to download/upload data, cleanup strategies). These are actionable, product-specific DO/DON'T style recommendations for efficient job lifecycle management, matching best-practices. |
 | [Batch rendering capabilities](https://learn.microsoft.com/en-us/azure/batch/batch-rendering-functionality) | best-practices | 0.60 | Discusses Batch features tailored for rendering workloads and how to use them, which are scenario-specific usage patterns beyond generic Batch concepts. |
 | [Count resources by state](https://learn.microsoft.com/en-us/azure/batch/batch-get-resource-counts) | integrations | 0.60 | Describes specific Batch operations (like Get Task Counts) with their semantics for aggregating task and node states. This is API-surface knowledge (operations, parameters, and behavior) that goes beyond generic concepts and is needed for integrating monitoring logic with Batch. |
@@ -192,6 +196,7 @@ confusable_not_for: Not for Azure Container Instances (use azure-container-insta
 | [Python scripts with Data Factory](https://learn.microsoft.com/en-us/azure/batch/tutorial-run-python-batch-azure-data-factory) | 0.30 | Tutorial running Batch via Data Factory; scenario walkthrough without detailed config tables or error mappings. |
 | [Rendering using Azure](https://learn.microsoft.com/en-us/azure/batch/batch-rendering-service) | 0.30 | High-level rendering overview describing what rendering is and Batch rendering capabilities; lacks detailed configuration, limits, or troubleshooting specifics. |
 | [Run a job and tasks](https://learn.microsoft.com/en-us/azure/batch/scripts/batch-cli-sample-run-job) | 0.30 | CLI script to run a Batch job; procedural script without structured expert knowledge like limits or error code mappings. |
+| [Using application packages](https://learn.microsoft.com/en-us/azure/batch/batch-application-packages) | 0.30 | Page appears to be a how-to/tutorial on using Azure Batch application packages, focused on conceptual usage and basic deployment steps rather than detailed configuration tables, limits, or product-specific troubleshooting. The summary does not indicate presence of numeric limits, configuration parameter tables, error-code mappings, or decision matrices, so it likely does not contain the kind of expert-only reference data required for classification. |
 | [APIs and tools](https://learn.microsoft.com/en-us/azure/batch/batch-apis-tools) | 0.20 | Overview of APIs and tools; navigation/selection content rather than deep technical reference. |
 | [Create a Batch account and run a job - Azure CLI](https://learn.microsoft.com/en-us/azure/batch/quick-create-cli) | 0.20 | Quickstart using Azure CLI to create resources; step-by-step tutorial without configuration tables, limits, or product-specific edge cases. |
 | [Create a Batch account and run a job - Azure portal](https://learn.microsoft.com/en-us/azure/batch/quick-create-portal) | 0.20 | Portal-based quickstart; focuses on basic creation and running a job, not on detailed configuration options or quotas. |

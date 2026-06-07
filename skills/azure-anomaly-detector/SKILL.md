@@ -1,9 +1,9 @@
 ---
 name: azure-anomaly-detector
-description: Expert knowledge for Azure AI Anomaly Detector development including troubleshooting, best practices, limits & quotas, configuration, and deployment. Use when running Anomaly Detector in containers, tuning uni/multivariate APIs, handling data limits, or fixing API errors, and other Azure AI Anomaly Detector related development tasks. Not for Azure AI Metrics Advisor (use azure-metrics-advisor), Azure Monitor (use azure-monitor), Azure Machine Learning (use azure-machine-learning).
+description: Expert knowledge for Azure AI Anomaly Detector development including troubleshooting, best practices, limits & quotas, configuration, and deployment. Use when tuning Docker-based Anomaly Detector, ACI or IoT Edge deployments, univariate/multivariate APIs, or service limits, and other Azure AI Anomaly Detector related development tasks. Not for Azure AI Metrics Advisor (use azure-metrics-advisor), Azure Monitor (use azure-monitor), Azure Machine Learning (use azure-machine-learning).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-17"
+  generated_at: "2026-06-07"
   generator: "docs2skills/1.0.0"
 ---
 # Azure AI Anomaly Detector Skill
@@ -24,7 +24,7 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L38 | Diagnosing and fixing Azure Anomaly Detector issues, including multivariate API error codes, configuration problems, data/format issues, and common service or performance failures. |
+| Troubleshooting | L33-L38 | Diagnosing and fixing Azure Anomaly Detector issues, including multivariate error codes, common failures, configuration problems, and step-by-step troubleshooting guidance. |
 | Best Practices | L39-L44 | Guidance on preparing data, tuning parameters, interpreting results, and designing workflows for effective use of univariate and multivariate Azure Anomaly Detector APIs. |
 | Limits & Quotas | L45-L49 | Service limits for Anomaly Detector: max data points, series length, request rates, model constraints, and how quotas affect API usage and scaling. |
 | Configuration | L50-L54 | How to configure and tune Anomaly Detector Docker containers, including environment variables, resource limits, logging, networking, and runtime behavior settings. |

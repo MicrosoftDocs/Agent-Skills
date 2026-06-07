@@ -1,11 +1,12 @@
 ---
-generated_at: '2026-05-31'
+generated_at: '2026-06-07'
 category_descriptions:
   configuration: Configuring Azure Backup and policies for VMs, AKS, SQL, SAP HANA,
     Files, Blobs, Disks, AD, and on-prem agents, plus monitoring, diagnostics, reporting,
     and Backup Center governance.
-  limits-quotas: Limits, support matrices, regions, performance, and retention constraints
-    for Azure Backup across VMs, databases, files, disks, blobs, AKS, and SAP workloads
+  limits-quotas: Backup limits, quotas, support matrices, and regional constraints
+    for Azure workloads (VMs, databases, files, disks, AKS, SAP, etc.), plus monitoring
+    metrics and reporting boundaries.
   architecture-patterns: 'Azure Backup’s architecture for protecting SAP HANA: components,
     data flow, backup/restore process, scalability, security, and integration with
     Azure storage and recovery services.'
@@ -21,20 +22,20 @@ category_descriptions:
   integrations: Automating Azure Backup via CLI, PowerShell, REST, and scripts for
     VMs, SQL, PostgreSQL, Files, Blobs, Disks, MARS/on-prem, plus policies, vaults,
     jobs, restores, and security/reporting integrations.
-  best-practices: Best practices for configuring and optimizing Azure Backup/MABS/DPM
-    for Hyper‑V VMs, SQL (incl. Always On), Exchange, TRIM-aware backups, VM protection,
-    and cross-vault recovery.
+  best-practices: Best practices for backing up and restoring Hyper-V VMs, SQL Server
+    (including Always On), Exchange, and Azure VMs using DPM/MABS and Azure Backup,
+    with TRIM and safety considerations.
   deployment: 'MABS v3/v4 deployment details: supported workload/protection matrices
     and how to automate unattended/silent installation of Azure Backup Server v4.'
 skill_description: Expert knowledge for Azure Backup development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  protecting Azure VMs/AKS, SQL/SAP HANA, Files/Blobs, MARS/MABS/DPM workloads, or
-  automating via CLI/PowerShell, and other Azure Backup related development tasks.
-  Not for Azure Site Recovery (use azure-site-recovery), Azure Virtual Machines (use
-  azure-virtual-machines), Azure Blob Storage (use azure-blob-storage).
-use_when: Use when protecting Azure VMs/AKS, SQL/SAP HANA, Files/Blobs, MARS/MABS/DPM
-  workloads, or automating via CLI/PowerShell, and other Azure Backup related development
+  protecting Azure VMs, SQL/SAP HANA, AKS, Files/Blobs, or automating Azure Backup
+  via CLI/PowerShell/REST, and other Azure Backup related development tasks. Not for
+  Azure Site Recovery (use azure-site-recovery), Azure Virtual Machines (use azure-virtual-machines),
+  Azure Blob Storage (use azure-blob-storage).
+use_when: Use when protecting Azure VMs, SQL/SAP HANA, AKS, Files/Blobs, or automating
+  Azure Backup via CLI/PowerShell/REST, and other Azure Backup related development
   tasks.
 confusable_not_for: Not for Azure Site Recovery (use azure-site-recovery), Azure Virtual
   Machines (use azure-virtual-machines), Azure Blob Storage (use azure-blob-storage).
@@ -50,10 +51,10 @@ confusable_not_for: Not for Azure Site Recovery (use azure-site-recovery), Azure
 - **Unclassified**: 158
 
 ### Incremental Update
-- **New Pages**: 3
-- **Updated Pages**: 8
-- **Unchanged**: 393
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 3
+- **Unchanged**: 401
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-backup/azure-backup.csv`
 
 ## Classification Statistics
@@ -73,34 +74,14 @@ confusable_not_for: Not for Azure Site Recovery (use azure-site-recovery), Azure
 
 ## Changes
 
-### New Pages
-
-- [Back up SQL Server instance snapshot](https://learn.microsoft.com/en-us/azure/backup/back-up-sql-server-instance-snapshot)
-- [Restore SQL Server database from the vault](https://learn.microsoft.com/en-us/azure/backup/restore-sql-database-azure-vm)
-- [Restore SQL Server instance](https://learn.microsoft.com/en-us/azure/backup/back-up-sql-server-instance-snapshot-restore)
-
 ### Updated Pages
 
-- [Restore Azure VMs in the portal](https://learn.microsoft.com/en-us/azure/backup/backup-azure-arm-restore-vms)
-  - Updated: 2026-05-04T08:00:00.000Z → 2026-05-27T08:00:00.000Z
-- [What's new in Azure Backup](https://learn.microsoft.com/en-us/azure/backup/whats-new)
-  - Updated: 2026-05-04T11:13:00.000Z → 2026-05-25T08:00:00.000Z
-- [Support matrix](https://learn.microsoft.com/en-us/azure/backup/backup-azure-cosmos-db-support-matrix)
-  - Updated: 2026-05-22T11:42:00.000Z → 2026-05-25T11:45:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/backup/backup-azure-sql-database)
-  - Updated: 2026-02-13T08:00:00.000Z → 2026-05-25T06:18:00.000Z
-- [Support matrix](https://learn.microsoft.com/en-us/azure/backup/sql-support-matrix)
-  - Updated: 2026-03-31T11:59:00.000Z → 2026-05-25T06:18:00.000Z
-- [Manage](https://learn.microsoft.com/en-us/azure/backup/manage-monitor-sql-database-backup)
-  - Updated: 2026-02-24T18:11:00.000Z → 2026-05-25T06:18:00.000Z
-- [Monitoring data reference](https://learn.microsoft.com/en-us/azure/backup/monitor-backup-reference)
-  - Updated: 2025-03-31T17:03:00.000Z → 2025-07-02T22:09:00.000Z
-- [SQL in Azure VM backups](https://learn.microsoft.com/en-us/azure/backup/backup-azure-sql-automation)
-  - Updated: 2025-11-12T08:00:00.000Z → 2026-04-06T08:00:00.000Z
-
-### Deleted Pages
-
-- ~~Restore~~ (https://learn.microsoft.com/en-us/azure/backup/restore-sql-database-azure-vm)
+- [FAQ-Back up Azure Files](https://learn.microsoft.com/en-us/azure/backup/backup-azure-files-faq)
+  - Updated: 2026-02-17T12:16:00.000Z → 2026-06-04T11:42:00.000Z
+- [What's New in MABS](https://learn.microsoft.com/en-us/azure/backup/backup-mabs-whats-new-mabs)
+  - Updated: 2026-04-24T08:00:00.000Z → 2026-06-02T08:00:00.000Z
+- [Azure Backup guidance and best practices](https://learn.microsoft.com/en-us/azure/backup/guidance-best-practices)
+  - Updated: 2026-01-30T08:00:00.000Z → 2026-06-03T08:00:00.000Z
 
 ## Classified Pages
 
@@ -172,7 +153,7 @@ confusable_not_for: Not for Azure Site Recovery (use azure-site-recovery), Azure
 | [System Functions](https://learn.microsoft.com/en-us/azure/backup/backup-reports-system-functions) | configuration | 0.80 | Documents system/solution functions available in Log Analytics for Azure Backup, including parameterized function names and usage patterns—service-specific query configuration. |
 | [Using Azure VM backup for database consistent snapshots](https://learn.microsoft.com/en-us/azure/backup/backup-azure-linux-database-consistent-enhanced-pre-post) | configuration | 0.80 | Provides ready-to-use prescripts/postscripts for specific databases and explains how Azure Backup invokes them—detailed, product-specific configuration and scripting patterns. |
 | [View Report](https://learn.microsoft.com/en-us/azure/backup/view-reports) | limits-quotas | 0.80 | Explicitly states a numeric limit: reports can show data from up to 100 workspaces but recommends queries be limited to 30 workspaces for reliability; this is a concrete service-specific limit/constraint. |
-| [Azure Backup guidance and best practices](https://learn.microsoft.com/en-us/azure/backup/guidance-best-practices) | best-practices | 0.78 | The page is explicitly framed as guidance and best practices for Azure Backup, aimed at implementers. Such guidance typically includes Azure Backup–specific DOs and DON'Ts, configuration recommendations, and edge-case considerations (for example, workload-specific backup strategies, retention configurations, and operational gotchas) that go beyond generic backup theory and are unique to this product. |
+| [Azure Backup guidance and best practices](https://learn.microsoft.com/en-us/azure/backup/guidance-best-practices) | best-practices | 0.78 | The page is explicitly framed as guidance and best practices for Azure Backup, targeted at IT and application administrators. It contains product-specific recommendations on how to configure and operate Azure Backup for cloud and on-premises workloads, including concrete DO/DON'T style guidance and implementation-focused advice that goes beyond generic backup concepts. |
 | [Azure role-based access control](https://learn.microsoft.com/en-us/azure/backup/backup-rbac-rs-vault) | security | 0.78 | RBAC-focused article for Azure Backup/Recovery Services vault; likely lists specific built-in role names, scopes, and allowed actions for backup operations, which are product-specific security configuration details. |
 | [Back up and restore Azure VMs with Azure Backup Instant Restore](https://learn.microsoft.com/en-us/azure/backup/backup-instant-restore-capability) | limits-quotas | 0.78 | The Instant Restore capability article describes improved backup/restore performance and typically documents concrete operational constraints such as how many snapshots are kept, how long snapshots are retained, time windows for instant restore, and I/O or performance characteristics tied to specific configurations. These are numeric, product-specific limits and behaviors that fit the limits-quotas category. |
 | [Configure Backup for on-premises Windows server](https://learn.microsoft.com/en-us/azure/backup/scripts/microsoft-azure-recovery-services-powershell-all) | integrations | 0.78 | End-to-end PowerShell script using Azure Backup/Recovery Services cmdlets and configuration parameters to create vaults and policies. |
@@ -249,7 +230,7 @@ confusable_not_for: Not for Azure Site Recovery (use azure-site-recovery), Azure
 | [FAQ-Azure Blob Backup](https://learn.microsoft.com/en-us/azure/backup/blob-backup-faq) | troubleshooting | 0.70 | As with the Disk Backup FAQ, a Blob Backup FAQ page will contain detailed, product-specific answers about behavior, constraints, and how to handle particular situations or problems that users encounter. This is expert knowledge in a symptom → explanation/solution style, which fits the troubleshooting category better than the others, even though it may also reference limits and support matrices indirectly. |
 | [FAQ-Azure Disk Backup](https://learn.microsoft.com/en-us/azure/backup/disk-backup-faq) | troubleshooting | 0.70 | FAQ pages for specific Azure backup features typically include concrete, product-specific behaviors, edge cases, and answers to error or limitation questions (for example, what happens in certain failure scenarios, how specific backup/restore operations behave, and constraints not obvious from general docs). These are organized around user questions (symptoms) and product-specific responses, which aligns best with troubleshooting. While it may also touch on limits, the primary structure is FAQ-style diagnosis/clarification rather than a pure limits table. |
 | [FAQ-Back up Azure Database for PostgreSQL server](https://learn.microsoft.com/en-us/azure/backup/backup-azure-database-postgresql-server-faq) | limits-quotas | 0.70 | FAQ pages for specific Azure Backup workloads typically document concrete backup/restore limits (number of databases per vault, retention ranges, maximum backup size, supported frequencies) and workload-specific constraints that aren’t inferable from general knowledge. These are numeric, product-specific limits and behaviors that qualify as expert knowledge. |
-| [FAQ-Back up Azure Files](https://learn.microsoft.com/en-us/azure/backup/backup-azure-files-faq) | limits-quotas | 0.70 | FAQ pages for Azure Backup typically include product-specific constraints such as maximum number of file shares per policy, retention constraints, backup frequency limits, and other numeric behaviors that are not obvious from general knowledge. These are expert, implementation-specific details that align best with limits-quotas. |
+| [FAQ-Back up Azure Files](https://learn.microsoft.com/en-us/azure/backup/backup-azure-files-faq) | limits-quotas | 0.70 | FAQ for Azure Files backup typically includes detailed service-specific constraints such as supported scenarios, region availability, and limitations; these often enumerate exact limits (for example, number of shares per vault, retention constraints, supported sizes), which qualify as expert knowledge on limits and quotas beyond generic conceptual information. |
 | [FAQ-Back up SAP HANA databases on Azure VMs](https://learn.microsoft.com/en-us/azure/backup/sap-hana-faq-backup-azure-vm) | limits-quotas | 0.70 | SAP HANA backup FAQ for Azure VMs typically contains precise constraints such as supported DB sizes, number of databases per VM, retention and schedule limits, and other numeric workload-specific limitations. These are concrete, service-specific limits that fit the limits-quotas sub-skill. |
 | [FAQ-Back up SQL Server databases on Azure VMs](https://learn.microsoft.com/en-us/azure/backup/faq-backup-sql-server) | limits-quotas | 0.70 | Workload-specific Azure Backup FAQ for SQL Server on Azure VMs generally includes exact limits (max databases per VM, retention ranges, backup frequency constraints, supported sizes, concurrency limits) and other numeric constraints. These are detailed, product-specific limits that match the limits-quotas criteria. |
 | [Find Vault for Storage Account PowerShell Script](https://learn.microsoft.com/en-us/azure/backup/scripts/backup-powershell-script-find-recovery-services-vault) | integrations | 0.70 | Provides a concrete PowerShell script using Azure Backup/Recovery Services cmdlets and parameters to locate the associated vault. |
@@ -467,6 +448,7 @@ confusable_not_for: Not for Azure Site Recovery (use azure-site-recovery), Azure
 | [Tutorial - Back up Azure Files using Azure portal](https://learn.microsoft.com/en-us/azure/backup/tutorial-backup-azure-files-vault-tier-portal) | 0.30 | Portal tutorial for configuring Azure Files backup; primarily procedural without detailed configuration parameter tables, limits, or error-code-based troubleshooting. |
 | [Tutorial for SAP ASE database on Azure VMs backup](https://learn.microsoft.com/en-us/azure/backup/sap-ase-database-backup-tutorial) | 0.30 | Tutorial for backing up SAP ASE using Resiliency; appears focused on walkthrough steps. The reference to supported configurations is likely a pointer to another matrix article rather than containing the matrix itself. |
 | [Using the Azure portal](https://learn.microsoft.com/en-us/azure/backup/quick-cross-region-restore) | 0.30 | Quickstart for cross-region restore via portal; shows how to enable and use feature, not detailed limits or decision matrices. |
+| [What's New in MABS](https://learn.microsoft.com/en-us/azure/backup/backup-mabs-whats-new-mabs) | 0.30 | A 'what's new' change log for Microsoft Azure Backup Server typically lists feature additions and version history without detailed limits, configuration tables, error-code-based troubleshooting, or decision matrices; it reads as release/marketing-style updates rather than expert configuration, limits, or troubleshooting guidance. |
 | [Windows Server using the MARS agent](https://learn.microsoft.com/en-us/azure/backup/backup-client-automation) | 0.30 | PowerShell how-to for MARS/Windows Server backup; likely step-by-step commands rather than structured configuration or troubleshooting reference. |
 | [With Azure CLI](https://learn.microsoft.com/en-us/azure/backup/quick-kubernetes-backup-cli) | 0.30 | AKS vaulted backup via CLI quickstart; procedural CLI usage, not a catalog of configuration options or quotas. |
 | [With Azure PowerShell](https://learn.microsoft.com/en-us/azure/backup/quick-secondary-region-restore-postgresql-powershell) | 0.30 | Quickstart for cross-region restore with PowerShell; example commands, not a full troubleshooting or configuration reference. |
@@ -494,7 +476,6 @@ confusable_not_for: Not for Azure Site Recovery (use azure-site-recovery), Azure
 | [Restore a VM with Azure CLI](https://learn.microsoft.com/en-us/azure/backup/tutorial-restore-disk) | 0.20 | Tutorial on restoring a VM with Azure CLI is primarily step-by-step procedural guidance. It may show example commands and parameters, but not organized configuration matrices, limits, or product-specific error mappings. It reads as a how-to tutorial rather than a reference of expert-only constraints or configurations. |
 | [Restore individual files](https://learn.microsoft.com/en-us/azure/backup/tutorial-restore-files) | 0.20 | File-level restore tutorial; high-level steps without product-specific limits, configuration tables, or troubleshooting flows. |
 | [Set up a vault and enable backup for Azure VMs](https://learn.microsoft.com/en-us/azure/backup/backup-azure-arm-vms-prepare) | 0.20 | How-to article for backing up Azure VMs in a Recovery Services vault; appears to be procedural guidance without explicit mention of numeric limits, configuration parameter tables, or error-code-based troubleshooting. |
-| [What's New in MABS](https://learn.microsoft.com/en-us/azure/backup/backup-mabs-whats-new-mabs) | 0.15 | “What’s new” page is typically release highlights and marketing-style feature descriptions, not detailed limits, configuration matrices, or troubleshooting mappings. |
 | [Azure Backup architecture](https://learn.microsoft.com/en-us/azure/backup/backup-architecture) | 0.10 | High-level architecture overview of Azure Backup components and flows; no detailed limits, configs, or error mappings. |
 | [Azure Backup terminology](https://learn.microsoft.com/en-us/azure/backup/azure-backup-glossary) | 0.10 | A glossary defines terminology and concepts but does not typically contain limits, configuration parameters, error codes, or prescriptive patterns; it is reference/overview content rather than expert operational knowledge. |
 | [Back up HANA System Replication database](https://learn.microsoft.com/en-us/azure/backup/quick-backup-hana-cli) | 0.10 | Quickstart for backing up SAP HANA with Azure CLI; focuses on how to run commands and create a vault, not on detailed limits, configuration matrices, or troubleshooting mappings. |

@@ -51,8 +51,8 @@ confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Central (use az
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 200
+- **Updated Pages**: 0
+- **Unchanged**: 203
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-iot-hub/azure-iot-hub.csv`
 
@@ -72,15 +72,6 @@ confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Central (use az
 | *(Unclassified)* | 70 | 34.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [Understand IoT Hub endpoints](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-endpoints)
-  - Updated: 2026-02-20T06:21:00.000Z → 2026-05-26T22:16:00.000Z
-- [Transport Layer Security (TLS) support](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-tls-support)
-  - Updated: 2025-08-26T11:22:00.000Z → 2026-05-26T22:16:00.000Z
-- [Virtual networks support with Azure Private Link](https://learn.microsoft.com/en-us/azure/iot-hub/virtual-network-support)
-  - Updated: 2025-07-03T22:17:00.000Z → 2026-05-26T22:16:00.000Z
 
 ## Classified Pages
 

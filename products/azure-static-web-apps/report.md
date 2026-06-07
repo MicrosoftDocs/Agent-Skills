@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-17'
+generated_at: '2026-06-07'
 category_descriptions:
   integrations: How to connect Static Web Apps APIs to Azure databases (Cosmos DB,
     SQL, MySQL, PostgreSQL), including Mongoose usage, connection strings, and typical
@@ -46,8 +46,8 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 79
+- **Updated Pages**: 1
+- **Unchanged**: 78
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-static-web-apps/azure-static-web-apps.csv`
 
@@ -65,6 +65,11 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | *(Unclassified)* | 21 | 26.6% |
 
 ## Changes
+
+### Updated Pages
+
+- [Add an API](https://learn.microsoft.com/en-us/azure/static-web-apps/add-api)
+  - Updated: 2024-11-25T08:00:00.000Z → 2026-06-02T22:37:00.000Z
 
 ## Classified Pages
 
@@ -134,7 +139,6 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
 | [2 - Add authentication](https://learn.microsoft.com/en-us/azure/static-web-apps/add-authentication) | 0.40 | Tutorial for adding authentication; summary suggests a walkthrough rather than detailed RBAC role tables or auth configuration parameters. |
-| [Add an API](https://learn.microsoft.com/en-us/azure/static-web-apps/add-api) | 0.40 | Getting-started article for adding an API; mostly procedural, with only a brief note on default functions behavior. |
 | [Overview](https://learn.microsoft.com/en-us/azure/static-web-apps/configuration-overview) | 0.40 | Configuration overview; conceptual description of configuration types without explicit mention of parameter tables or allowed values. |
 | [Overview](https://learn.microsoft.com/en-us/azure/static-web-apps/database-overview) | 0.40 | Database connections overview with retirement notice; conceptual description of capabilities, not detailed configuration parameters. |
 | [Hybrid Next.js application (preview)](https://learn.microsoft.com/en-us/azure/static-web-apps/deploy-nextjs-hybrid) | 0.30 | Tutorial for deploying hybrid Next.js; mainly procedural, preview note but no clear indication of config tables or limits. |
@@ -142,6 +146,7 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [Overview](https://learn.microsoft.com/en-us/azure/static-web-apps/apis-overview) | 0.30 | API overview; describes features like integrated security and routing conceptually without detailed configuration or limits. |
 | [Statically generated Next.js](https://learn.microsoft.com/en-us/azure/static-web-apps/deploy-nextjs-static-export) | 0.30 | Tutorial for static-export Next.js deployment; focuses on steps, not on detailed configuration matrices. |
 | [About Azure Static Web Apps](https://learn.microsoft.com/en-us/azure/static-web-apps/overview) | 0.20 | High-level service overview and feature description without detailed limits, configuration tables, or error mappings. |
+| [Add an API](https://learn.microsoft.com/en-us/azure/static-web-apps/add-api) | 0.20 | The page is a getting-started tutorial for adding an Azure Functions API to Azure Static Web Apps. It focuses on step-by-step instructions and basic concepts, without detailed limits, configuration parameter tables, error-code-based troubleshooting, or product-specific decision matrices. It does not meet the criteria for any expert-knowledge sub-skill type. |
 | [Blazor](https://learn.microsoft.com/en-us/azure/static-web-apps/deploy-blazor) | 0.20 | Tutorial-style deployment walkthrough for a Blazor app to Azure Static Web Apps using GitHub/Visual Studio; does not emphasize tier-specific deployment matrices, constraints, or configuration tables with defaults. Primarily step-by-step instructions rather than expert reference details. |
 | [Gatsby](https://learn.microsoft.com/en-us/azure/static-web-apps/publish-gatsby) | 0.20 | Gatsby deployment tutorial; primarily step-by-step with GitHub Actions, not a catalog of settings or quotas. |
 | [Hugo](https://learn.microsoft.com/en-us/azure/static-web-apps/publish-hugo) | 0.20 | Hugo deployment tutorial; similar to other framework tutorials, not focused on expert configuration details. |

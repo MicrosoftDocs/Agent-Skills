@@ -1,9 +1,9 @@
 ---
 name: azure-database-mysql
-description: Expert knowledge for Azure Database for MySQL development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when deploying MySQL Flexible Server, configuring HA/networking, managing backups/replicas, or tuning performance, and other Azure Database for MySQL related development tasks. Not for Azure Database for MariaDB (use azure-database-mariadb), Azure Database for PostgreSQL (use azure-database-postgresql), Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance).
+description: Expert knowledge for Azure Database for MySQL development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using MySQL Flexible Server HA/replication, backups/PITR, AKS connectivity, Entra auth, or migration tools, and other Azure Database for MySQL related development tasks. Not for Azure Database for PostgreSQL (use azure-database-postgresql), Azure Database for MariaDB (use azure-database-mariadb), Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-31"
+  generated_at: "2026-06-07"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Database for MySQL Skill
@@ -28,9 +28,9 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L54-L71 | Best practices for monitoring, performance tuning, troubleshooting, safe operations, BCDR, and end-to-end migration/optimization for Azure Database for MySQL Flexible Server |
 | Decision Making | L72-L90 | Planning MySQL on Azure: version lifecycle, capacity and tier selection, HA/BCDR, performance features, and migration/upgrade strategies and tools from on-prem or other MySQL. |
 | Architecture & Design Patterns | L91-L98 | Patterns for connecting AKS to MySQL Flexible Server, designing backup/restore, data-in/out replication, high availability (zone-redundant), and read-replica-based scaling. |
-| Limits & Quotas | L99-L107 | Limits, quotas, and performance caps for MySQL Flexible Server: compute/storage/IOPS limits, quota increase process, restore retention limits, and stop/start duration constraints. |
+| Limits & Quotas | L99-L107 | Limits, quotas, and performance caps for MySQL Flexible Server: max connections/cores/IOPS, storage IOPS behavior, quota increase requests, restart/stop limits, and delete/restore time limits. |
 | Security | L108-L134 | Securing Azure Database for MySQL Flexible Server: network isolation (Private Link, firewalls), TLS and cert rotation, encryption, Entra auth, users, and audit logging before/after migration. |
-| Configuration | L135-L165 | Configuring MySQL Flexible Server: parameters, HA, networking (VNet/firewall), replication, logs/slow queries, monitoring/metrics, alerts, scaling, maintenance, backups, and read replicas. |
+| Configuration | L135-L165 | Configuring MySQL Flexible Server: HA, networking, replication, maintenance windows, monitoring/alerts, logging, server parameters, scaling, and point-in-time restore via portal and CLI. |
 | Integrations & Coding Patterns | L166-L176 | Connecting to Azure Database for MySQL Flexible Server via CLI, Java/JDBC, Power BI, managing connection strings with Key Vault, and migrating data from RDS, on-prem, VMs, or Workbench |
 | Deployment | L177-L186 | Automating MySQL Flexible Server deployments and changes (Azure Pipelines, GitHub Actions, Automation), handling backups, geo-restore, version upgrades, and scheduled maintenance. |
 
@@ -101,7 +101,7 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Service limitations for Azure MySQL Flexible Server | https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-limitations |
 | Storage IOPS performance characteristics for MySQL Flexible Server | https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-storage-iops |
-| Request quota increases for Azure MySQL flexible server resources | https://learn.microsoft.com/en-us/azure/mysql/flexible-server/how-to-request-quota-increase |
+| Request quota increases for Azure MySQL Flexible Server | https://learn.microsoft.com/en-us/azure/mysql/flexible-server/how-to-request-quota-increase |
 | Restore deleted Azure MySQL flexible servers within retention limits | https://learn.microsoft.com/en-us/azure/mysql/flexible-server/how-to-restore-dropped-server |
 | Restart, stop, and start MySQL flexible server with stop-duration limits | https://learn.microsoft.com/en-us/azure/mysql/flexible-server/scripts/sample-cli-restart-stop-start |
 
@@ -138,7 +138,7 @@ This skill requires **network access** to fetch documentation content:
 | Use built-in stored procedures in MySQL Flexible Server | https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-built-in-store-procedure |
 | Configure monitoring and alerts for MySQL Flexible Server | https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-monitor-mysql |
 | Monitoring metrics and logs reference for MySQL Flexible Server | https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-monitor-mysql-reference |
-| Configure MySQL Flexible Server parameters effectively | https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-server-parameters |
+| Configure server parameters for Azure MySQL Flexible Server | https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-server-parameters |
 | Set up metric-based alerts for Azure MySQL | https://learn.microsoft.com/en-us/azure/mysql/flexible-server/how-to-alert-on-metric |
 | Enable or disable zone redundant high availability via portal | https://learn.microsoft.com/en-us/azure/mysql/flexible-server/how-to-configure-high-availability |
 | Configure zone redundant high availability for Azure MySQL via CLI | https://learn.microsoft.com/en-us/azure/mysql/flexible-server/how-to-configure-high-availability-cli |

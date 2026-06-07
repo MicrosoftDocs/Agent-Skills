@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-17'
+generated_at: '2026-06-07'
 category_descriptions:
   limits-quotas: 'NAT Gateway limits, quotas, and behaviors: SNAT port allocation,
     connection scaling, IP/VM limits, per-subscription caps, and FAQs on throughput
@@ -18,32 +18,35 @@ category_descriptions:
     NAT Gateway.
   deployment: Guides for redeploying NAT Gateway after cross-region moves and migrating
     VM outbound traffic from public IPs to use NAT Gateway
+  security: 'Security best practices for NAT Gateway: hardening design, minimizing
+    exposure, managing outbound IPs, monitoring traffic, and integrating with NSGs,
+    firewalls, and other Azure security controls.'
 skill_description: Expert knowledge for Azure NAT Gateway development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
-  configuration, and deployment. Use when sizing SNAT ports, configuring NAT Gateway
-  V2 via IaC, analyzing flow logs, or migrating outbound IPs, and other Azure NAT
-  Gateway related development tasks. Not for Azure Virtual Network (use azure-virtual-network),
-  Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Load Balancer
-  (use azure-load-balancer), Azure Firewall (use azure-firewall).
-use_when: Use when sizing SNAT ports, configuring NAT Gateway V2 via IaC, analyzing
-  flow logs, or migrating outbound IPs, and other Azure NAT Gateway related development
+  security, configuration, and deployment. Use when managing SNAT ports, outbound
+  IPs, NAT Gateway V2 deployments, flow logs, or Azure Firewall integration, and other
+  Azure NAT Gateway related development tasks. Not for Azure Virtual Network (use
+  azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager),
+  Azure Virtual WAN (use azure-virtual-wan), Azure Load Balancer (use azure-load-balancer).
+use_when: Use when managing SNAT ports, outbound IPs, NAT Gateway V2 deployments,
+  flow logs, or Azure Firewall integration, and other Azure NAT Gateway related development
   tasks.
 confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), Azure
-  Virtual Network Manager (use azure-virtual-network-manager), Azure Load Balancer
-  (use azure-load-balancer), Azure Firewall (use azure-firewall).
+  Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use
+  azure-virtual-wan), Azure Load Balancer (use azure-load-balancer).
 ---
 # Azure NAT Gateway Crawl Report
 
 ## Summary
 
-- **Total Pages**: 24
-- **Fetched**: 24
+- **Total Pages**: 25
+- **Fetched**: 25
 - **Fetch Failed**: 0
-- **Classified**: 15
+- **Classified**: 16
 - **Unclassified**: 9
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
 - **Unchanged**: 24
 - **Deleted Pages**: 0
@@ -53,21 +56,27 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 2 | 8.3% |
-| best-practices | 1 | 4.2% |
-| configuration | 5 | 20.8% |
-| decision-making | 3 | 12.5% |
-| deployment | 2 | 8.3% |
-| limits-quotas | 1 | 4.2% |
-| troubleshooting | 1 | 4.2% |
-| *(Unclassified)* | 9 | 37.5% |
+| architecture-patterns | 2 | 8.0% |
+| best-practices | 1 | 4.0% |
+| configuration | 5 | 20.0% |
+| decision-making | 3 | 12.0% |
+| deployment | 2 | 8.0% |
+| limits-quotas | 1 | 4.0% |
+| security | 1 | 4.0% |
+| troubleshooting | 1 | 4.0% |
+| *(Unclassified)* | 9 | 36.0% |
 
 ## Changes
+
+### New Pages
+
+- [Secure NAT Gateway deployment](https://learn.microsoft.com/en-us/azure/nat-gateway/secure-nat-gateway)
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
+| [Secure NAT Gateway deployment](https://learn.microsoft.com/en-us/azure/nat-gateway/secure-nat-gateway) | security | 0.78 | The article focuses on securing Azure NAT Gateway and provides product-specific security recommendations and best practices (for example, how to structure outbound connectivity, combine with other Azure network security services, and configure NAT Gateway securely). It includes concrete, service-specific guidance rather than just conceptual security overviews, fitting the 'security' sub-skill type. |
 | [Azure NAT Gateway SKUs](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-sku) | decision-making | 0.70 | SKU comparison article that explains differences between Standard and StandardV2. Likely includes comparison tables and concrete criteria (data processing, availability, capabilities) to help select a SKU, which fits decision-making guidance. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/nat-gateway/faq) | limits-quotas | 0.70 | NAT Gateway FAQs typically include concrete numeric details such as SNAT port counts, connection limits, and other behavioral constraints. These are specific limits/quotas and behaviors that qualify as expert knowledge beyond conceptual overview. |
 | [Manage a Standard NAT gateway](https://learn.microsoft.com/en-us/azure/nat-gateway/manage-nat-gateway) | configuration | 0.70 | Explains how to create/remove NAT gateway, associate subnets, and manage public IPs/prefixes; contains concrete configuration operations and parameters. |

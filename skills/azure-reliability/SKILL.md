@@ -1,9 +1,9 @@
 ---
 name: azure-reliability
-description: Expert knowledge for Azure Reliability development including best practices, decision making, architecture & design patterns, and limits & quotas. Use when choosing regions/AZs, designing multi-region HA, hardening AKS/DB/messaging, or handling Queue Storage limits, and other Azure Reliability related development tasks. Not for Azure Resiliency (use azure-resiliency), Azure Monitor (use azure-monitor), Azure Service Health (use azure-service-health), Azure Sre Agent (use azure-sre-agent).
+description: Expert knowledge for Azure Reliability development including best practices, decision making, architecture & design patterns, and limits & quotas. Use when planning regions/zones, AKS HA, database failover, messaging/network resilience, or Queue Storage limits, and other Azure Reliability related development tasks. Not for Azure Resiliency (use azure-resiliency), Azure Monitor (use azure-monitor), Azure Service Health (use azure-service-health), Azure Site Recovery (use azure-site-recovery).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-31"
+  generated_at: "2026-06-07"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Reliability Skill
@@ -25,9 +25,9 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Best Practices | L32-L74 | Patterns and checklists for designing, configuring, and hardening highly available, disaster‑resilient architectures for specific Azure services (AKS, DBs, messaging, networking, monitoring). |
-| Decision Making | L75-L82 | Guidance on choosing Azure regions, region types, availability zones, and nonregional services based on geography, pairing, and reliability support. |
-| Architecture & Design Patterns | L83-L89 | Designing Azure apps for high availability using zones and multi-region patterns, including zonal vs zone-redundant deployments, hardening strategies, and non-paired region failover. |
-| Limits & Quotas | L90-L93 | Details on Azure Queue Storage message size limits, including max message size, behavior when limits are exceeded, and best practices for handling large payloads. |
+| Decision Making | L75-L84 | Guidance on choosing Azure regions and services by region type, zone and multiregion support, geography/pairing, and when to use nonregional or built-in multiregion services. |
+| Architecture & Design Patterns | L85-L90 | Designing Azure apps for high availability using zones and multi-region patterns, including zonal vs zone-redundant deployments, hardening strategies, and non-paired region failover. |
+| Limits & Quotas | L91-L94 | Details on Azure Queue Storage message size limits, including max message size, behavior when limits are exceeded, and best practices for handling large payloads. |
 
 ### Best Practices
 | Topic | URL |
@@ -76,8 +76,10 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Choose Azure services by region type and category | https://learn.microsoft.com/en-us/azure/reliability/availability-service-by-category |
-| Select Azure services with availability zone support | https://learn.microsoft.com/en-us/azure/reliability/availability-zones-service-support |
+| Choose Azure services with availability zone support | https://learn.microsoft.com/en-us/azure/reliability/availability-zones-service-support |
 | Select Azure regions with geography and pairing data | https://learn.microsoft.com/en-us/azure/reliability/regions-list |
+| Design multi-region solutions in nonpaired Azure regions | https://learn.microsoft.com/en-us/azure/reliability/regions-multi-region-nonpaired |
+| Select Azure services with built-in multiregion support | https://learn.microsoft.com/en-us/azure/reliability/regions-multiregion-support |
 | Select and understand Azure nonregional services | https://learn.microsoft.com/en-us/azure/reliability/regions-nonregional-services |
 
 ### Architecture & Design Patterns
@@ -85,7 +87,6 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Enable and plan zone-resilient Azure workloads | https://learn.microsoft.com/en-us/azure/reliability/availability-zones-enable-zone-resiliency |
 | Design and harden zonal Azure resource deployments | https://learn.microsoft.com/en-us/azure/reliability/availability-zones-zonal-resource-resiliency |
-| Design multi-region solutions in nonpaired Azure regions | https://learn.microsoft.com/en-us/azure/reliability/regions-multi-region-nonpaired |
 
 ### Limits & Quotas
 | Topic | URL |

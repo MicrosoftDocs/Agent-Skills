@@ -1,9 +1,9 @@
 ---
 name: azure-virtual-desktop
-description: Expert knowledge for Azure Virtual Desktop development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when working with host pools, FSLogix profiles, MSIX app attach, autoscale, or Teams optimization in AVD, and other Azure Virtual Desktop related development tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Dev Box (use azure-dev-box), Azure Virtual Machine Scale Sets (use azure-vm-scalesets), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines).
+description: Expert knowledge for Azure Virtual Desktop development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing FSLogix profiles, app attach, autoscale, Teams optimization, or AVD WebRTC redirection, and other Azure Virtual Desktop related development tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Dev Box (use azure-dev-box), Azure VMware Solution (use azure-vmware-solution).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-31"
+  generated_at: "2026-06-07"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Virtual Desktop Skill
@@ -29,10 +29,10 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L65-L80 | Guidance for planning and choosing AVD deployment models, autoscale, storage, licensing, host/session management, data locations, and cost/ESU strategies. |
 | Architecture & Design Patterns | L81-L88 | Design patterns for AVD app delivery, stateless hosts, DR, FSLogix profile containers, and automated scaling with Automation/Logic Apps. |
 | Limits & Quotas | L89-L94 | Guidance on RDP bandwidth requirements and optimizing Microsoft Teams (audio/video, collaboration features) performance and configuration in Azure Virtual Desktop. |
-| Security | L95-L113 | Securing Azure Virtual Desktop: SSO (Entra ID/AD FS), MFA/Conditional Access, RBAC/roles, external identities, clipboard/screen controls, watermarking, WebAuthn, Kerberos, and Purview forensic integration. |
-| Configuration | L114-L173 | Configuring AVD environments: host images, autoscale, networking, RDP/peripheral redirection, app attach, licensing, updates, monitoring, Teams/Office, and client/RemoteApp behavior. |
-| Integrations & Coding Patterns | L174-L180 | Managing AVD via CLI/PowerShell, integrating partner App Attach delivery, enabling WebRTC multimedia redirection, and launching resources using custom URI schemes. |
-| Deployment | L181-L190 | Deploying and migrating Azure Virtual Desktop: adding session hosts, moving from classic AVD, hybrid/on-prem setups, cross-region moves, regional host pools, and per-user client deployment via Intune/ConfigMgr |
+| Security | L95-L114 | Securing Azure Virtual Desktop: SSO (Entra ID/AD FS), MFA/Conditional Access, RBAC, external identities, clipboard/redirect policies, screen capture/watermarking, WebAuthn, Kerberos, and Purview. |
+| Configuration | L115-L174 | Configuring AVD environments: host images, autoscale, networking, RDP/peripheral redirection, app attach, licensing, updates, monitoring, Teams/Office, and client/RemoteApp behavior. |
+| Integrations & Coding Patterns | L175-L181 | Managing AVD via CLI/PowerShell, integrating partner App Attach delivery, enabling WebRTC multimedia redirection, and launching resources using custom URI schemes. |
+| Deployment | L182-L191 | Deploying and migrating Azure Virtual Desktop: adding session hosts, moving from classic AVD, hybrid/on-prem setups, cross-region moves, regional host pools, and per-user client deployment via Intune/ConfigMgr |
 
 ### Troubleshooting
 | Topic | URL |
@@ -99,6 +99,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure AD FS single sign-on for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/configure-adfs-sso |
 | Configure managed identities and permissions for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/configure-managed-identity |
 | Configure Entra ID single sign-on for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/configure-single-sign-on |
+| Configure context-based redirection policies in Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/context-based-redirections-avd |
 | Implement delegated administrative access in Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/delegated-access-virtual-desktop |
 | Set up Kerberos KDC proxy for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/key-distribution-center-proxy |
 | Configure Azure Virtual Desktop access for external identities | https://learn.microsoft.com/en-us/azure/virtual-desktop/provide-access-external-identities |

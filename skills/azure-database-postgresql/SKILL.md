@@ -1,9 +1,9 @@
 ---
 name: azure-database-postgresql
-description: Expert knowledge for Azure Database for PostgreSQL development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using pgvector/DiskANN, HA/replicas, Private Link/VNet, CI/CD/Bicep deploys, or AI/ML app integrations, and other Azure Database for PostgreSQL related development tasks. Not for Azure Database for MySQL (use azure-database-mysql), Azure Database for MariaDB (use azure-database-mariadb), Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance).
+description: Expert knowledge for Azure Database for PostgreSQL development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using pgvector, read replicas, Private Link, query store, or AI/semantic search workloads on Azure PostgreSQL, and other Azure Database for PostgreSQL related development tasks. Not for Azure Database for MariaDB (use azure-database-mariadb), Azure Database for MySQL (use azure-database-mysql), Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-31"
+  generated_at: "2026-06-07"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Database for PostgreSQL Skill
@@ -24,22 +24,25 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L60 | Diagnosing and fixing Azure PostgreSQL issues: connectivity/TLS/auth, HA health, migration validation, autovacuum, high CPU/IOPS/memory, slow queries, replicas, CLI/storage/extension errors. |
-| Best Practices | L61-L78 | Performance, migration, and security best practices for Azure PostgreSQL: tuning queries/extensions, pooling, bulk load, HA, schema/app/Oracle migration, and operational optimization. |
-| Decision Making | L79-L94 | Guidance on sizing, scaling, and geo-replicating Azure PostgreSQL, choosing compute tiers and hosting options, and planning version selection, upgrades, reserved capacity, and pre-migration checks. |
-| Architecture & Design Patterns | L95-L105 | Patterns for using Azure PostgreSQL (often with OpenAI) to build recommendation/semantic search apps, microservices, multitenancy, real-time dashboards, and sharded/elastic data architectures. |
-| Limits & Quotas | L106-L125 | Backup/restore behavior, geo-restore and dropped server recovery, storage types/limits and performance tuning, quotas and capacity limits, read replicas, and known migration tool limitations. |
-| Security | L126-L158 | Securing Azure Database for PostgreSQL: identity/auth (Entra, managed identities, SCRAM), network (firewall, VNet, Private Link), TLS/SSL, encryption, auditing, RBAC, Defender, and compliance. |
-| Configuration | L159-L238 | Configuring Azure Database for PostgreSQL servers and extensions: server parameters, HA, networking, logging/monitoring, tuning (autovacuum, planner, WAL), and managing pgvector, DiskANN, and other extensions. |
-| Integrations & Coding Patterns | L239-L264 | Patterns and code to integrate Azure PostgreSQL with AI/ML (Language, AML, LangChain, Foundry), app SDKs (C#, Java, Python, Go, PHP), VS Code/Copilot, Storage, Data Factory, and migration tools. |
-| Deployment | L265-L275 | CI/CD deployment to Azure PostgreSQL, app integration (AKS/Django, Web Apps + VNet), flexible server Bicep provisioning, major upgrades, network migration, and point-in-time restore. |
+| Troubleshooting | L37-L63 | Diagnosing and fixing PostgreSQL issues on Azure: connectivity, TLS, HA, performance (CPU/IOPS/memory/slow queries), autovacuum, extensions, migrations, CLI errors, and auth problems. |
+| Best Practices | L64-L80 | Performance and migration best practices for Azure PostgreSQL: partitioning, pooling, pgvector, query store, bulk load, bloat cleanup, pg_dump/restore, and Oracle-to-PostgreSQL conversion. |
+| Decision Making | L81-L96 | Guidance on sizing and scaling compute/storage, choosing deployment and PostgreSQL versions, planning upgrades, geo-replication, reserved capacity, and pre-migration checks. |
+| Architecture & Design Patterns | L97-L107 | Patterns for using Azure PostgreSQL (often with OpenAI) to build recommendation/semantic search apps, microservices, multitenancy, real-time dashboards, and sharded/elastic data architectures. |
+| Limits & Quotas | L108-L128 | Backup/restore behavior, geo-restore and dropped server recovery, storage types/limits and performance tuning, quotas and capacity limits, read replicas, and known migration limitations. |
+| Security | L129-L159 | Securing Azure Database for PostgreSQL: identity/auth (Entra, managed identities, SCRAM), network (VNet, Private Link, firewall), TLS/SSL, encryption, RBAC, auditing, and security policies/compliance. |
+| Configuration | L160-L211 | Configuring Azure Database for PostgreSQL servers: parameters, extensions, HA, networking, logging/monitoring, tuning (autovacuum, memory, WAL, connections), and scaling via portal, CLI, ARM/Bicep. |
+| Integrations & Coding Patterns | L212-L239 | Patterns and code samples for integrating Azure PostgreSQL with AI services, SDKs, programming languages, VS Code, Data Factory, storage, and Oracle migrations. |
+| Deployment | L240-L250 | CI/CD deployment to Azure PostgreSQL, app integration (AKS/Django, Web Apps + VNet), flexible server Bicep provisioning, major upgrades, network migration, and point-in-time restore. |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
+| Run pre-upgrade validation checks for Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/how-to-run-upgrade-validation-checks |
 | Troubleshoot PostgreSQL extension management errors on Azure | https://learn.microsoft.com/en-us/azure/postgresql/extensions/errors-extensions |
 | Interpret HA health states for Azure PostgreSQL servers | https://learn.microsoft.com/en-us/azure/postgresql/high-availability/how-to-monitor-high-availability |
 | Resolve premigration validation error codes for PostgreSQL migration | https://learn.microsoft.com/en-us/azure/postgresql/migrate/migration-service/troubleshoot-error-codes |
+| Use application conversion reports for validation | https://learn.microsoft.com/en-us/azure/postgresql/migrate/oracle-conversions-application/app-conversions-reports |
+| Interpret Oracle-to-PostgreSQL schema conversion reports | https://learn.microsoft.com/en-us/azure/postgresql/migrate/oracle-conversions-schema/schema-conversions-reports |
 | Interpret and apply autonomous tuning recommendations | https://learn.microsoft.com/en-us/azure/postgresql/monitor/how-to-get-apply-recommendations-from-autonomous-tuning |
 | Troubleshoot TLS connection failures in Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/security/security-tls-troubleshoot |
 | Diagnose transient connectivity errors in Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/troubleshoot/concepts-connectivity |
@@ -48,7 +51,7 @@ This skill requires **network access** to fetch documentation content:
 | Diagnose and mitigate high CPU in PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/troubleshoot/how-to-high-cpu-utilization |
 | Troubleshoot high CPU in PostgreSQL elastic clusters | https://learn.microsoft.com/en-us/azure/postgresql/troubleshoot/how-to-high-cpu-utilization-elastic-clusters |
 | Investigate and reduce high IOPS in PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/troubleshoot/how-to-high-io-utilization |
-| Diagnose and fix high memory usage in PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/troubleshoot/how-to-high-memory-utilization |
+| Troubleshoot high memory usage in Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/troubleshoot/how-to-high-memory-utilization |
 | Diagnose slow queries on Azure PostgreSQL flexible server | https://learn.microsoft.com/en-us/azure/postgresql/troubleshoot/how-to-identify-slow-queries |
 | Diagnose slow-running queries on PostgreSQL elastic clusters | https://learn.microsoft.com/en-us/azure/postgresql/troubleshoot/how-to-identify-slow-queries-elastic-clusters |
 | Resolve capacity errors when deploying or scaling Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/troubleshoot/how-to-resolve-capacity-errors |
@@ -65,12 +68,11 @@ This skill requires **network access** to fetch documentation content:
 | Use pg_partman to partition large tables on Azure | https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/how-to-use-pg-partman |
 | Apply connection pooling best practices for Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/connectivity/concepts-connection-pooling-best-practices |
 | Optimize pgvector performance on Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/extensions/how-to-optimize-performance-pgvector |
-| Use best practices for Oracle-to-Azure PostgreSQL migrations | https://learn.microsoft.com/en-us/azure/postgresql/migrate/best-practices-oracle-to-postgresql |
 | Apply best practices for migrating to Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/migrate/migration-service/best-practices-migration-service-postgresql |
-| Apply best practices for Oracle-to-PostgreSQL app conversion | https://learn.microsoft.com/en-us/azure/postgresql/migrate/oracle-application-conversions/app-conversions-best-practices |
-| Apply best practices for Oracle-to-PostgreSQL schema conversion | https://learn.microsoft.com/en-us/azure/postgresql/migrate/oracle-schema-conversions/schema-conversions-best-practices |
+| Follow best practices for Oracle app conversion | https://learn.microsoft.com/en-us/azure/postgresql/migrate/oracle-conversions-application/app-conversions-best-practices |
+| Apply best practices for Oracle schema conversion | https://learn.microsoft.com/en-us/azure/postgresql/migrate/oracle-conversions-schema/schema-conversions-best-practices |
+| Apply Oracle-to-Azure PostgreSQL migration best practices | https://learn.microsoft.com/en-us/azure/postgresql/migrate/oracle-migration/best-practices-oracle-to-postgresql |
 | Apply query store best practices in PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/monitor/concepts-query-store-best-practices |
-| Configure max_replication_slots for Azure PostgreSQL HA | https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/param-replication-sending-servers |
 | Bulk load data into Azure PostgreSQL flexible server | https://learn.microsoft.com/en-us/azure/postgresql/troubleshoot/how-to-bulk-load-data |
 | Optimize pg_stat_statements query stats on Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/troubleshoot/how-to-optimize-query-stats-collection |
 | Use pg_repack to remove bloat on Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/troubleshoot/how-to-perform-fullvacuum-pg-repack |
@@ -81,14 +83,14 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Choose compute tiers for Azure PostgreSQL flexible server | https://learn.microsoft.com/en-us/azure/postgresql/compute-storage/concepts-compute |
 | Plan Azure PostgreSQL compute and storage for performance | https://learn.microsoft.com/en-us/azure/postgresql/compute-storage/concepts-optimal-performance |
-| Plan and execute PostgreSQL major version upgrades | https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/concepts-major-version-upgrade |
+| Plan and execute major version upgrades for Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/concepts-major-version-upgrade |
 | Decide on reserved capacity purchases for Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/concepts-reserved-pricing |
 | Select supported PostgreSQL versions on Azure Flexible Server | https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/concepts-supported-versions |
 | Apply Azure Database for PostgreSQL version policy | https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/concepts-version-policy |
 | Use extended support for Azure PostgreSQL versions | https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/extended-support |
 | Select Azure PostgreSQL hosting and deployment option | https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/overview-postgres-choose-server-options |
-| Use pre-migration checklist to size Azure PostgreSQL targets | https://learn.microsoft.com/en-us/azure/postgresql/migrate/best-practices-oracle-to-postgresql-checklist |
 | Use premigration validations for Azure PostgreSQL migrations | https://learn.microsoft.com/en-us/azure/postgresql/migrate/migration-service/concepts-premigration-migration-service |
+| Use pre-migration checklist for Oracle to Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/migrate/oracle-migration/best-practices-oracle-to-postgresql-checklist |
 | Plan geo-replication for Azure PostgreSQL flexible server | https://learn.microsoft.com/en-us/azure/postgresql/read-replica/concepts-read-replicas-geo |
 | Scale compute tiers for Azure PostgreSQL flexible server | https://learn.microsoft.com/en-us/azure/postgresql/scale/how-to-scale-compute |
 
@@ -115,10 +117,11 @@ This skill requires **network access** to fetch documentation content:
 | Tune Premium SSD v2 storage performance limits | https://learn.microsoft.com/en-us/azure/postgresql/compute-storage/concepts-storage-premium-ssd-v2 |
 | Review capacity and functional limits for Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/concepts-limits |
 | Request quota increases for Azure PostgreSQL flexible server | https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/how-to-request-quota-increase |
-| Review elastic cluster capacity and functional limits | https://learn.microsoft.com/en-us/azure/postgresql/elastic-clusters/concepts-elastic-clusters-limitations |
+| Review elastic cluster limits for Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/elastic-clusters/concepts-elastic-clusters-limitations |
 | Understand max client connections in PostgreSQL elastic clusters | https://learn.microsoft.com/en-us/azure/postgresql/elastic-clusters/how-to-network-elastic-clusters-default-maximum-connections |
 | Review known issues and limitations of PostgreSQL migration service | https://learn.microsoft.com/en-us/azure/postgresql/migrate/migration-service/concepts-known-issues-migration-service |
-| Understand limitations of Oracle-to-PostgreSQL schema conversion tool | https://learn.microsoft.com/en-us/azure/postgresql/migrate/oracle-schema-conversions/schema-conversions-limitations |
+| Review limitations of Oracle application conversion | https://learn.microsoft.com/en-us/azure/postgresql/migrate/oracle-conversions-application/app-conversions-limitations |
+| Understand limitations of Oracle schema conversion tool | https://learn.microsoft.com/en-us/azure/postgresql/migrate/oracle-conversions-schema/schema-conversions-limitations |
 | Use read replicas in Azure PostgreSQL flexible server | https://learn.microsoft.com/en-us/azure/postgresql/read-replica/concepts-read-replicas |
 | Configure storage autogrow thresholds for Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/scale/how-to-auto-grow-storage |
 | Adjust storage performance for Azure PostgreSQL flexible server | https://learn.microsoft.com/en-us/azure/postgresql/scale/how-to-scale-storage-performance |
@@ -131,6 +134,8 @@ This skill requires **network access** to fetch documentation content:
 | Configure private access and VNet for Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/connectivity/quickstart-create-connect-server-vnet |
 | Secure Data Factory–PostgreSQL connectivity via Private Link | https://learn.microsoft.com/en-us/azure/postgresql/integration/how-to-connect-data-factory-private-endpoint |
 | Assign required permissions to run PostgreSQL migrations | https://learn.microsoft.com/en-us/azure/postgresql/migrate/migration-service/concepts-required-user-permissions |
+| Configure authentication parameters in Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/parameters/parameters-connections-authentication-authentication |
+| Manage SSL connection parameters in Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/parameters/parameters-connections-authentication-ssl |
 | Create PostgreSQL server and firewall via CLI | https://learn.microsoft.com/en-us/azure/postgresql/samples/sample-create-server-and-firewall-rule |
 | Create PostgreSQL VNet rule with Azure CLI | https://learn.microsoft.com/en-us/azure/postgresql/samples/sample-create-server-with-vnet-rule |
 | Configure role-based access for Azure Database for PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/security/security-access-control |
@@ -140,10 +145,9 @@ This skill requires **network access** to fetch documentation content:
 | Configure data encryption keys for Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/security/security-configure-data-encryption |
 | Enable system-assigned managed identity for Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/security/security-configure-managed-identities-system-assigned |
 | Configure user-assigned managed identities for Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/security/security-configure-managed-identities-user-assigned |
-| Configure SCRAM authentication for Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/security/security-connect-scram |
+| Configure SCRAM connectivity for Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/security/security-connect-scram |
 | Connect to Azure PostgreSQL using managed identities | https://learn.microsoft.com/en-us/azure/postgresql/security/security-connect-with-managed-identity |
-| Understand data encryption at rest in Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/security/security-data-encryption |
-| Use Defender for Cloud with Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/security/security-defender-for-cloud |
+| Understand data encryption for Azure PostgreSQL Flexible Server | https://learn.microsoft.com/en-us/azure/postgresql/security/security-data-encryption |
 | Configure Microsoft Entra authentication for Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/security/security-entra-configure |
 | Configure firewall rules for Azure PostgreSQL public access | https://learn.microsoft.com/en-us/azure/postgresql/security/security-firewall-rules |
 | Manage PostgreSQL database users on Azure flexible server | https://learn.microsoft.com/en-us/azure/postgresql/security/security-manage-database-users |
@@ -152,31 +156,28 @@ This skill requires **network access** to fetch documentation content:
 | Configure TLS requirements for Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/security/security-tls |
 | Configure TLS/SSL connections to Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/security/security-tls-how-to-connect |
 | Update Java client certificates for Azure PostgreSQL TLS | https://learn.microsoft.com/en-us/azure/postgresql/security/security-update-trusted-root-java |
-| Configure authentication parameters on Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/param-connections-authentication-authentication |
-| Manage SSL connection parameters on Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/param-connections-authentication-ssl |
-| Configure TLS server parameters for Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/param-tls |
 
 ### Configuration
 | Topic | URL |
 |-------|-----|
 | Apply server configuration concepts for Azure PostgreSQL flexible server | https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/concepts-servers |
-| Schedule maintenance windows for Azure PostgreSQL flexible server | https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/how-to-configure-scheduled-maintenance |
 | Deploy PostgreSQL elastic clusters using ARM templates | https://learn.microsoft.com/en-us/azure/postgresql/elastic-clusters/quickstart-create-elastic-cluster-arm-template |
 | Deploy PostgreSQL elastic clusters using Bicep templates | https://learn.microsoft.com/en-us/azure/postgresql/elastic-clusters/quickstart-create-elastic-cluster-bicep |
 | Configure retired azure_local_ai extension for in-database embeddings | https://learn.microsoft.com/en-us/azure/postgresql/extensions/azure-local-ai |
-| Check which PostgreSQL extensions Azure Flexible Server supports | https://learn.microsoft.com/en-us/azure/postgresql/extensions/concepts-extensions-by-engine |
-| Allow and allowlist PostgreSQL extensions on Azure | https://learn.microsoft.com/en-us/azure/postgresql/extensions/how-to-allow-extensions |
+| Check available PostgreSQL extensions on Azure Flexible Server | https://learn.microsoft.com/en-us/azure/postgresql/extensions/concepts-extensions-by-engine |
+| Allow and manage PostgreSQL extensions on Azure Flexible Server | https://learn.microsoft.com/en-us/azure/postgresql/extensions/how-to-allow-extensions |
 | Configure Azure Storage extension for PostgreSQL flexible server | https://learn.microsoft.com/en-us/azure/postgresql/extensions/how-to-configure-azure-storage-extension |
 | Create PostgreSQL extensions on Azure flexible server | https://learn.microsoft.com/en-us/azure/postgresql/extensions/how-to-create-extensions |
 | Drop PostgreSQL extensions on Azure flexible server | https://learn.microsoft.com/en-us/azure/postgresql/extensions/how-to-drop-extensions |
-| Configure shared_preload_libraries for Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/extensions/how-to-load-libraries |
+| Configure shared_preload_libraries on Azure PostgreSQL Flexible Server | https://learn.microsoft.com/en-us/azure/postgresql/extensions/how-to-load-libraries |
 | Update PostgreSQL extensions on Azure flexible server | https://learn.microsoft.com/en-us/azure/postgresql/extensions/how-to-update-extensions |
 | Configure and use DiskANN vector indexing in PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/extensions/how-to-use-pgdiskann |
 | Enable and use pgvector for vector search in PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/extensions/how-to-use-pgvector |
 | View installed PostgreSQL extensions and versions on Azure | https://learn.microsoft.com/en-us/azure/postgresql/extensions/how-to-view-installed-extensions |
 | Configure high availability for Azure PostgreSQL flexible server | https://learn.microsoft.com/en-us/azure/postgresql/high-availability/how-to-configure-high-availability |
-| Configure migration server parameters for Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/migrate/migration-service/concepts-migration-server-parameters |
+| Configure migration parameters for Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/migrate/migration-service/concepts-migration-parameters |
 | Configure networking scenarios for PostgreSQL migration service | https://learn.microsoft.com/en-us/azure/postgresql/migrate/migration-service/how-to-network-setup-migration-service |
+| Review and manage schema conversion output artifacts | https://learn.microsoft.com/en-us/azure/postgresql/migrate/oracle-conversions-schema/schema-conversions-review-tasks-artifacts |
 | Configure and access server logs in Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/monitor/concepts-logging |
 | Configure Azure Monitor workbooks for PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/monitor/concepts-workbooks |
 | Set up metric alerts for PostgreSQL in Azure | https://learn.microsoft.com/en-us/azure/postgresql/monitor/how-to-alert-on-metrics |
@@ -184,57 +185,29 @@ This skill requires **network access** to fetch documentation content:
 | Configure autonomous tuning parameters for PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/monitor/how-to-configure-autonomous-tuning |
 | Configure and download PostgreSQL and upgrade logs | https://learn.microsoft.com/en-us/azure/postgresql/monitor/how-to-configure-server-logs |
 | Manage intelligent tuning settings with Azure CLI | https://learn.microsoft.com/en-us/azure/postgresql/monitor/how-to-enable-intelligent-performance-cli |
-| Configure intelligent tuning via Azure portal | https://learn.microsoft.com/en-us/azure/postgresql/monitor/how-to-enable-intelligent-performance-portal |
+| Configure intelligent tuning in Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/monitor/how-to-enable-intelligent-performance-portal |
+| Understand configurable parameters in Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/parameters/concepts-parameters |
+| Reset all Azure PostgreSQL parameters to defaults | https://learn.microsoft.com/en-us/azure/postgresql/parameters/how-to-parameters-revert-all-default |
+| Revert a single Azure PostgreSQL parameter to default | https://learn.microsoft.com/en-us/azure/postgresql/parameters/how-to-parameters-revert-one-default |
+| Set Azure PostgreSQL flexible server parameters | https://learn.microsoft.com/en-us/azure/postgresql/parameters/how-to-parameters-set-value |
+| Configure autonomous tuning parameters in Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/parameters/parameters-autonomous-tuning |
+| Tune autovacuum parameters in Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/parameters/parameters-autovacuum |
+| Configure other client default parameters in Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/parameters/parameters-client-connection-defaults-defaults |
+| Set locale and formatting defaults in Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/parameters/parameters-client-connection-defaults-locale-formatting |
+| Configure shared library preloading in Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/parameters/parameters-client-connection-defaults-shared-library-preloading |
+| Control client statement behavior in Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/parameters/parameters-client-connection-defaults-statement-behavior |
+| Configure connection settings and max_connections in Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/parameters/parameters-connections-authentication-connection-settings |
+| Tune TCP connection settings in Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/parameters/parameters-connections-authentication-tcp-settings |
+| Configure customized PostgreSQL options on Azure flexible server | https://learn.microsoft.com/en-us/azure/postgresql/parameters/parameters-customized-options |
+| Configure PgBouncer parameters on Azure PostgreSQL flexible server | https://learn.microsoft.com/en-us/azure/postgresql/parameters/parameters-pgbouncer |
+| Tune planner cost constants on Azure PostgreSQL flexible server | https://learn.microsoft.com/en-us/azure/postgresql/parameters/parameters-query-tuning-planner-cost-constants |
+| Configure replication sending server slots on Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/parameters/parameters-replication-sending-servers |
+| Configure memory and huge pages for Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/parameters/parameters-resource-usage-memory |
+| Configure WAL checkpoint size on Azure PostgreSQL flexible server | https://learn.microsoft.com/en-us/azure/postgresql/parameters/parameters-write-ahead-log-checkpoints |
+| Configure WAL settings parameters for Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/parameters/parameters-write-ahead-log-settings |
 | List and change PostgreSQL server configuration via CLI | https://learn.microsoft.com/en-us/azure/postgresql/samples/sample-change-server-configuration |
 | Scale PostgreSQL server compute and storage via CLI | https://learn.microsoft.com/en-us/azure/postgresql/samples/sample-scale-server-up-or-down |
 | Enable and download PostgreSQL server logs via CLI | https://learn.microsoft.com/en-us/azure/postgresql/samples/sample-server-logs |
-| Understand server parameters for Azure PostgreSQL flexible server | https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/concepts-server-parameters |
-| List all server parameters for Azure PostgreSQL flexible server | https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/how-to-server-parameters-list-all |
-| List Azure PostgreSQL parameters with modified defaults | https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/how-to-server-parameters-list-modified |
-| List read-only dynamic parameters on Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/how-to-server-parameters-list-read-only |
-| List read-write dynamic parameters on Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/how-to-server-parameters-list-read-write-dynamic |
-| List read-write static parameters on Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/how-to-server-parameters-list-read-write-static |
-| Revert all Azure PostgreSQL parameters to defaults | https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/how-to-server-parameters-revert-all-default |
-| Revert a single Azure PostgreSQL parameter to default | https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/how-to-server-parameters-revert-one-default |
-| Set Azure PostgreSQL server parameter values safely | https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/how-to-server-parameters-set-value |
-| Configure autovacuum parameters on Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/param-autovacuum |
-| Configure client connection default options on Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/param-client-connection-defaults-defaults |
-| Set locale and formatting defaults on Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/param-client-connection-defaults-locale-formatting |
-| Preload shared libraries via client defaults on Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/param-client-connection-defaults-shared-library-preloading |
-| Control statement behavior defaults on Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/param-client-connection-defaults-statement-behavior |
-| Tune connection settings and max_connections on Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/param-connections-authentication-connection-settings |
-| Configure TCP settings for Azure PostgreSQL connections | https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/param-connections-authentication-tcp-settings |
-| Use customized server options like azure_storage.blob_block_size_mb | https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/param-customized-options |
-| Developer options server parameters on Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/param-developer-options |
-| Configure error handling parameters on Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/param-error-handling |
-| File location server parameters for Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/param-file-locations |
-| Lock management server parameters on Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/param-lock-management |
-| Configure log files and metrics parameters for Azure Database for PostgreSQL flexible server | https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/param-log-files-metrics |
-| Migration-related server parameters on Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/param-migration |
-| Configure PgBouncer parameters and tier support on Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/param-pgbouncer |
-| Preset options server parameters on Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/param-preset-options |
-| Process title server parameters on Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/param-process-title |
-| Genetic query optimizer parameters on Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/param-query-tuning-genetic-query-optimizer |
-| Tune planner cost constants like effective_cache_size | https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/param-query-tuning-planner-cost-constants |
-| Planner method configuration parameters on Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/param-query-tuning-planner-method-configuration |
-| Other planner options for query tuning on Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/param-query-tuning-planner-options |
-| Tune asynchronous behavior parameters for Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/param-resource-usage-asynchronous-behavior |
-| Configure background writer parameters on Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/param-resource-usage-background-writer |
-| Adjust cost-based vacuum delay on Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/param-resource-usage-cost-based-vacuum-delay |
-| Configure disk-related resource usage for Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/param-resource-usage-disk |
-| Configure kernel resource usage for Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/param-resource-usage-kernel-resources |
-| Configure memory and huge pages for Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/param-resource-usage-memory |
-| Configure cumulative query and index stats in Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/param-statistics-cumulative-query-index-statistics |
-| Configure monitoring statistics parameters for Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/param-statistics-monitoring |
-| Understand query and index stats collector parameters by version | https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/param-statistics-query-index-statistics-collector |
-| Set compatibility parameters for other clients on Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/param-version-platform-compatibility-platforms-clients |
-| Configure compatibility with previous PostgreSQL versions in Azure | https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/param-version-platform-compatibility-postgresql-versions |
-| Check archive recovery parameters availability by Azure PostgreSQL version | https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/param-write-ahead-log-archive-recovery |
-| Configure WAL archiving parameters on Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/param-write-ahead-log-archiving |
-| Tune WAL checkpoint parameters for Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/param-write-ahead-log-checkpoints |
-| Check WAL recovery parameters availability across Azure PostgreSQL versions | https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/param-write-ahead-log-recovery |
-| Check WAL recovery target parameters availability by version | https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/param-write-ahead-log-recovery-target |
-| Configure WAL settings and buffers on Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/param-write-ahead-log-settings |
 
 ### Integrations & Coding Patterns
 | Topic | URL |
@@ -258,9 +231,11 @@ This skill requires **network access** to fetch documentation content:
 | Configure Azure Data Factory connector for PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/integration/how-to-connect-data-factory |
 | Use Data Factory copy activity with PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/integration/how-to-data-factory-copy-activity-azure |
 | Run PostgreSQL script activity in Data Factory | https://learn.microsoft.com/en-us/azure/postgresql/integration/how-to-data-factory-script-activity-azure |
-| Migrate Oracle schemas to Azure PostgreSQL using Ora2Pg | https://learn.microsoft.com/en-us/azure/postgresql/migrate/how-to-migrate-oracle-ora2pg |
 | Use pg_dump and pg_restore with Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/migrate/how-to-migrate-using-dump-and-restore |
 | Set up Azure CLI integration for PostgreSQL migration service | https://learn.microsoft.com/en-us/azure/postgresql/migrate/migration-service/how-to-setup-azure-cli-commands-postgresql |
+| Convert Oracle application code to Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/migrate/oracle-conversions-application/app-conversions-tutorial |
+| Run Oracle schema conversion with VS Code PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/migrate/oracle-conversions-schema/schema-conversions-tutorial |
+| Migrate Oracle schemas to Azure PostgreSQL with Ora2Pg | https://learn.microsoft.com/en-us/azure/postgresql/migrate/oracle-migration/how-to-migrate-oracle-ora2pg |
 
 ### Deployment
 | Topic | URL |

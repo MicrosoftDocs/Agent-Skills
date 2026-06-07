@@ -1,9 +1,9 @@
 ---
 name: azure-signalr-service
-description: Expert knowledge for Azure SignalR Service development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring hubs/negotiation, choosing service modes, securing endpoints, scaling multi-region, or debugging connectivity, and other Azure SignalR Service related development tasks. Not for Azure Web PubSub (use azure-web-pubsub), Azure Service Bus (use azure-service-bus), Azure Event Hubs (use azure-event-hubs), Azure Relay (use azure-relay).
+description: Expert knowledge for Azure SignalR Service development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring SignalR modes, upstreams, private endpoints, autoscale, multi-region topologies, or Event Grid integration, and other Azure SignalR Service related development tasks. Not for Azure Web PubSub (use azure-web-pubsub), Azure Service Bus (use azure-service-bus), Azure Event Hubs (use azure-event-hubs).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-17"
+  generated_at: "2026-06-07"
   generator: "docs2skills/1.0.0"
 ---
 # Azure SignalR Service Skill
@@ -31,8 +31,8 @@ This skill requires **network access** to fetch documentation content:
 | Limits & Quotas | L64-L70 | Message/connection billing rules, capacity planning, throughput limits, and how to scale Azure SignalR instances within quota and performance constraints. |
 | Security | L71-L92 | Securing Azure SignalR: auth with Entra ID/managed identities, keys and rotation, network/private endpoints/NSGs, WAF, Key Vault access, RBAC, cross-tenant, and Azure Policy compliance. |
 | Configuration | L93-L104 | Configuring SignalR apps: connection strings, upstream endpoints, custom domains, monitoring/metrics, negotiation endpoints, Functions bindings, and using the local emulator. |
-| Integrations & Coding Patterns | L105-L119 | Using SignalR from servers and REST, managing clients, integrating with Event Grid, API Management, Application Gateway, and detailed data-plane REST API references |
-| Deployment | L120-L130 | Deploying and managing Azure SignalR via CLI, ARM/Bicep templates, autoscale setup, regional moves, and end-to-end web app deployment (incl. GitHub auth) |
+| Integrations & Coding Patterns | L105-L120 | Patterns and APIs for integrating SignalR with servers and gateways: SDK usage, client management, REST data-plane versions, and wiring events through Event Grid, API Management, and Application Gateway. |
+| Deployment | L121-L131 | Deploying and managing Azure SignalR via CLI, ARM/Bicep templates, autoscale setup, regional moves, and end-to-end web app deployment (incl. GitHub auth) |
 
 ### Troubleshooting
 | Topic | URL |
@@ -111,11 +111,12 @@ This skill requires **network access** to fetch documentation content:
 | Manage Azure SignalR clients using the Management SDK | https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-howto-use-management-sdk |
 | Use Azure SignalR with API Management | https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-howto-work-with-apim |
 | Use Azure SignalR with Application Gateway | https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-howto-work-with-app-gateway |
-| Use Azure SignalR Service REST API for broadcasting | https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-quickstart-rest-api |
-| Use Azure SignalR data-plane REST APIs for messaging | https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-reference-data-plane-rest-api |
-| Azure SignalR data-plane REST API reference v1 | https://learn.microsoft.com/en-us/azure/azure-signalr/swagger/signalr-data-plane-rest-v1 |
-| Azure SignalR data-plane REST API reference v1-preview | https://learn.microsoft.com/en-us/azure/azure-signalr/swagger/signalr-data-plane-rest-v1-preview |
-| Azure SignalR data-plane REST API reference v20220601 | https://learn.microsoft.com/en-us/azure/azure-signalr/swagger/signalr-data-plane-rest-v20220601 |
+| Use Azure SignalR REST API for server-to-client messaging | https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-quickstart-rest-api |
+| Use Azure SignalR data-plane REST APIs | https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-reference-data-plane-rest-api |
+| Integrate with Azure SignalR REST API v1 | https://learn.microsoft.com/en-us/azure/azure-signalr/swagger/signalr-data-plane-rest-v1 |
+| Integrate with Azure SignalR REST API v1-preview | https://learn.microsoft.com/en-us/azure/azure-signalr/swagger/signalr-data-plane-rest-v1-preview |
+| Integrate with Azure SignalR REST API v20220601 | https://learn.microsoft.com/en-us/azure/azure-signalr/swagger/signalr-data-plane-rest-v20220601 |
+| Integrate with Azure SignalR REST API v20241201 | https://learn.microsoft.com/en-us/azure/azure-signalr/swagger/signalr-data-plane-rest-v20241201 |
 
 ### Deployment
 | Topic | URL |

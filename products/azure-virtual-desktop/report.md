@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-31'
+generated_at: '2026-06-07'
 category_descriptions:
   deployment: 'Deploying and migrating Azure Virtual Desktop: adding session hosts,
     moving from classic AVD, hybrid/on-prem setups, cross-region moves, regional host
@@ -19,8 +19,8 @@ category_descriptions:
     enabling WebRTC multimedia redirection, and launching resources using custom URI
     schemes.
   security: 'Securing Azure Virtual Desktop: SSO (Entra ID/AD FS), MFA/Conditional
-    Access, RBAC/roles, external identities, clipboard/screen controls, watermarking,
-    WebAuthn, Kerberos, and Purview forensic integration.'
+    Access, RBAC, external identities, clipboard/redirect policies, screen capture/watermarking,
+    WebAuthn, Kerberos, and Purview.'
   architecture-patterns: Design patterns for AVD app delivery, stateless hosts, DR,
     FSLogix profile containers, and automated scaling with Automation/Logic Apps.
   limits-quotas: Guidance on RDP bandwidth requirements and optimizing Microsoft Teams
@@ -29,32 +29,29 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Virtual Desktop development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when working with host pools, FSLogix profiles, MSIX app attach, autoscale,
-  or Teams optimization in AVD, and other Azure Virtual Desktop related development
-  tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Dev Box
-  (use azure-dev-box), Azure Virtual Machine Scale Sets (use azure-vm-scalesets),
-  SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines).
-use_when: Use when working with host pools, FSLogix profiles, MSIX app attach, autoscale,
-  or Teams optimization in AVD, and other Azure Virtual Desktop related development
-  tasks.
+  Use when managing FSLogix profiles, app attach, autoscale, Teams optimization, or
+  AVD WebRTC redirection, and other Azure Virtual Desktop related development tasks.
+  Not for Azure Virtual Machines (use azure-virtual-machines), Azure Dev Box (use
+  azure-dev-box), Azure VMware Solution (use azure-vmware-solution).
+use_when: Use when managing FSLogix profiles, app attach, autoscale, Teams optimization,
+  or AVD WebRTC redirection, and other Azure Virtual Desktop related development tasks.
 confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines), Azure
-  Dev Box (use azure-dev-box), Azure Virtual Machine Scale Sets (use azure-vm-scalesets),
-  SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines).
+  Dev Box (use azure-dev-box), Azure VMware Solution (use azure-vmware-solution).
 ---
 # Azure Virtual Desktop Crawl Report
 
 ## Summary
 
-- **Total Pages**: 153
-- **Fetched**: 153
+- **Total Pages**: 154
+- **Fetched**: 154
 - **Fetch Failed**: 0
-- **Classified**: 119
+- **Classified**: 120
 - **Unclassified**: 34
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 151
+- **New Pages**: 1
+- **Updated Pages**: 0
+- **Unchanged**: 153
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-desktop/azure-virtual-desktop.csv`
 
@@ -63,24 +60,21 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 4 | 2.6% |
-| best-practices | 7 | 4.6% |
-| configuration | 56 | 36.6% |
+| best-practices | 7 | 4.5% |
+| configuration | 56 | 36.4% |
 | decision-making | 12 | 7.8% |
-| deployment | 7 | 4.6% |
-| integrations | 3 | 2.0% |
+| deployment | 7 | 4.5% |
+| integrations | 3 | 1.9% |
 | limits-quotas | 2 | 1.3% |
-| security | 15 | 9.8% |
-| troubleshooting | 13 | 8.5% |
-| *(Unclassified)* | 34 | 22.2% |
+| security | 16 | 10.4% |
+| troubleshooting | 13 | 8.4% |
+| *(Unclassified)* | 34 | 22.1% |
 
 ## Changes
 
-### Updated Pages
+### New Pages
 
-- [Host pool management approaches](https://learn.microsoft.com/en-us/azure/virtual-desktop/host-pool-management-approaches)
-  - Updated: 2025-08-14T20:36:00.000Z → 2026-05-26T18:16:00.000Z
-- [Session host update overview](https://learn.microsoft.com/en-us/azure/virtual-desktop/session-host-update)
-  - Updated: 2025-08-14T20:36:00.000Z → 2026-05-26T18:16:00.000Z
+- [Context-based redirections (Preview)](https://learn.microsoft.com/en-us/azure/virtual-desktop/context-based-redirections-avd)
 
 ## Classified Pages
 
@@ -178,6 +172,7 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Windows 10 multi-session images](https://learn.microsoft.com/en-us/azure/virtual-desktop/language-packs) | configuration | 0.70 | How-to article for installing and configuring Windows 10 Enterprise multi-session language packs in Azure Virtual Desktop; likely includes specific commands, package names, and configuration steps unique to this product scenario rather than just conceptual guidance. |
 | [Windows 11 Enterprise images](https://learn.microsoft.com/en-us/azure/virtual-desktop/windows-11-language-packs) | configuration | 0.70 | Describes customizing Windows 11 Enterprise images for Azure Virtual Desktop with language packs and features, including behavior changes (non-admin installation) and product-specific configuration steps, which go beyond generic knowledge. |
 | [Windows Enterprise multi-session FAQ](https://learn.microsoft.com/en-us/azure/virtual-desktop/windows-multisession-faq) | best-practices | 0.70 | FAQ includes product-specific guidance and gotchas for Windows 10/11 Enterprise multi-session on Azure Virtual Desktop (for example, supported/unsupported scenarios, configuration recommendations, and behavior differences versus single-session), which are concrete, service-unique best practices rather than generic concepts. |
+| [Context-based redirections (Preview)](https://learn.microsoft.com/en-us/azure/virtual-desktop/context-based-redirections-avd) | security | 0.68 | Page describes configuring granular redirection policies (clipboard, drive, printer, USB) based on authentication context and session conditions, including product-specific security settings and policy parameters for Azure Virtual Desktop. This is security-focused configuration guidance rather than generic concepts. |
 | [Host pool management approaches](https://learn.microsoft.com/en-us/azure/virtual-desktop/host-pool-management-approaches) | decision-making | 0.68 | Page compares session host configuration management vs standard management for Azure Virtual Desktop host pools, providing product-specific guidance on when to choose each approach and their trade-offs. This is concrete decision guidance rather than a generic overview, fitting the decision-making sub-skill. |
 | [Provide access to external identities](https://learn.microsoft.com/en-us/azure/virtual-desktop/provide-access-external-identities) | security | 0.68 | The article provides product-specific steps and configuration details for granting Azure Virtual Desktop host pool access to external identities (such as Entra B2B/B2C), including required roles/permissions and access configuration patterns. This is security-focused identity and access configuration rather than a generic overview. |
 | [Publish applications with RemoteApp](https://learn.microsoft.com/en-us/azure/virtual-desktop/publish-applications-stream-remoteapp) | configuration | 0.68 | How-to for publishing apps via application groups will include specific portal/PowerShell parameters and constraints for AVD RemoteApp configuration. |

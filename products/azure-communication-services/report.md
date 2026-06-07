@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-24'
+generated_at: '2026-06-07'
 category_descriptions:
   configuration: Monitoring, logging, metrics, and diagnostics for ACS (chat, voice/video,
     SMS, email, calling, routing), plus configuration for Teams interop, domains,
@@ -50,13 +50,13 @@ confusable_not_for: Not for Azure Notification Hubs (use azure-notification-hubs
 - **Total Pages**: 517
 - **Fetched**: 517
 - **Fetch Failed**: 0
-- **Classified**: 415
-- **Unclassified**: 102
+- **Classified**: 414
+- **Unclassified**: 103
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 517
+- **Updated Pages**: 2
+- **Unchanged**: 515
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-communication-services/azure-communication-services.csv`
 
@@ -66,16 +66,23 @@ confusable_not_for: Not for Azure Notification Hubs (use azure-notification-hubs
 |------|-------|------------|
 | architecture-patterns | 2 | 0.4% |
 | best-practices | 22 | 4.3% |
-| configuration | 76 | 14.7% |
+| configuration | 75 | 14.5% |
 | decision-making | 12 | 2.3% |
 | deployment | 2 | 0.4% |
 | integrations | 143 | 27.7% |
 | limits-quotas | 64 | 12.4% |
 | security | 23 | 4.4% |
 | troubleshooting | 71 | 13.7% |
-| *(Unclassified)* | 102 | 19.7% |
+| *(Unclassified)* | 103 | 19.9% |
 
 ## Changes
+
+### Updated Pages
+
+- [Overview](https://learn.microsoft.com/en-us/azure/communication-services/concepts/call-automation/call-automation)
+  - Updated: 2024-10-25T22:04:00.000Z → 2026-06-02T20:30:00.000Z
+- [Call recording overview](https://learn.microsoft.com/en-us/azure/communication-services/concepts/voice-video-calling/call-recording)
+  - Updated: 2026-02-17T23:12:00.000Z → 2026-06-02T20:30:00.000Z
 
 ## Classified Pages
 
@@ -453,7 +460,6 @@ confusable_not_for: Not for Azure Notification Hubs (use azure-notification-hubs
 | [Call Automation insights](https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/insights/call-automation-insights) | configuration | 0.60 | Insights article outlines specific workbook visualizations, metrics, and log fields for Call Automation, which are product-specific monitoring configuration details. |
 | [Call flow topologies](https://learn.microsoft.com/en-us/azure/communication-services/concepts/detailed-call-flows) | security | 0.60 | Focuses on how calling traffic is encrypted across different topologies, which is product-specific security and transport behavior. |
 | [Call recording insights](https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/insights/call-recording-insights) | configuration | 0.60 | Insights article outlines specific dashboards and metrics for Call Recording, which are service-specific monitoring configurations. |
-| [Call recording overview](https://learn.microsoft.com/en-us/azure/communication-services/concepts/voice-video-calling/call-recording) | configuration | 0.60 | Call recording overview typically includes recording modes, supported scenarios, and API behavior (start/stop/pause/resume) with product-specific options and constraints. |
 | [Calling capabilities](https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/guest/calling-capabilities) | configuration | 0.60 | Capabilities article typically includes feature matrices by scenario/platform for Teams users in ACS calls, which are product-specific capability configurations. |
 | [Closed captions](https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/enable-closed-captions) | security | 0.60 | Describes how captions are exposed and not stored, and how users toggle them; likely includes ACS-specific APIs or settings for enabling captions, which are security/compliance-relevant configuration details. |
 | [Collect user feedback with end of call survey](https://learn.microsoft.com/en-us/azure/communication-services/tutorials/end-of-call-survey-tutorial) | integrations | 0.60 | Tutorial for using End of Call Survey likely includes specific SDK calls, configuration options, and data handling patterns unique to ACS. |
@@ -573,6 +579,7 @@ confusable_not_for: Not for Azure Notification Hubs (use azure-notification-hubs
 | [UI Library use cases](https://learn.microsoft.com/en-us/azure/communication-services/concepts/ui-library/ui-library-use-cases) | 0.25 | UI Library use cases article explains scenarios and patterns conceptually; not focused on specific configuration values or troubleshooting. |
 | [Add Teams meeting calling to your app](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/voice-video-calling/get-started-teams-interop) | 0.20 | Quickstart tutorial for joining a Teams meeting with ACS Calling SDK; step-by-step example rather than a catalog of configuration options, limits, or troubleshooting mappings. |
 | [Build intelligent, AI-powered chat experiences](https://learn.microsoft.com/en-us/azure/communication-services/concepts/chat/concepts) | 0.20 | Duplicate of chat concepts overview; same reasoning as index 21. |
+| [Call recording overview](https://learn.microsoft.com/en-us/azure/communication-services/concepts/voice-video-calling/call-recording) | 0.20 | Overview of Call Recording feature and APIs; description suggests conceptual explanation of scenarios and basic API actions (start/stop/pause/resume) without detailed limits, configuration parameters, or troubleshooting mappings required for expert-knowledge classification. |
 | [Chat architecture](https://learn.microsoft.com/en-us/azure/communication-services/concepts/chat/concepts) | 0.20 | Duplicate of chat concepts overview; same reasoning as index 21. |
 | [Create calling widget for Teams voice apps using JavaScript](https://learn.microsoft.com/en-us/azure/communication-services/tutorials/calling-widget/calling-widget-js-tutorial) | 0.20 | Tutorial for using JavaScript bundles with Teams Call Queues/Auto Attendants; preview note plus implementation steps, not a configuration or troubleshooting catalog. |
 | [Create calling widget for Teams voice apps using React](https://learn.microsoft.com/en-us/azure/communication-services/tutorials/calling-widget/calling-widget-tutorial) | 0.20 | Step-by-step tutorial for creating a calling widget; focuses on implementation steps, not on enumerating configuration options, limits, or error mappings. |
@@ -583,7 +590,7 @@ confusable_not_for: Not for Azure Notification Hubs (use azure-notification-hubs
 | [Message types](https://learn.microsoft.com/en-us/azure/communication-services/concepts/chat/concepts) | 0.20 | Duplicate of chat concepts overview; same reasoning as index 21. |
 | [Messaging Connect](https://learn.microsoft.com/en-us/azure/communication-services/concepts/sms/messaging-connect) | 0.20 | Messaging Connect overview; appears conceptual/preview overview without detailed configuration tables or error mappings. |
 | [Overview](https://learn.microsoft.com/en-us/azure/communication-services/concepts/advanced-messaging/whatsapp/whatsapp-overview) | 0.20 | High-level overview of Azure Communication Services Advanced Messaging for WhatsApp; summary indicates conceptual description of capabilities and scenarios without specific limits, configuration parameters, error codes, or decision matrices. |
-| [Overview](https://learn.microsoft.com/en-us/azure/communication-services/concepts/call-automation/call-automation) | 0.20 | High-level Call Automation overview; conceptual description of capabilities without concrete limits, configs, or decision matrices. |
+| [Overview](https://learn.microsoft.com/en-us/azure/communication-services/concepts/call-automation/call-automation) | 0.20 | High-level conceptual overview of Call Automation; summary indicates general description of capabilities and action-event model without specific limits, configuration tables, error codes, or detailed patterns that meet the expert-knowledge criteria. |
 | [Overview](https://learn.microsoft.com/en-us/azure/communication-services/concepts/chat/concepts) | 0.20 | Chat concepts overview; conceptual description of features, not detailed limits, configs, or troubleshooting. |
 | [Overview](https://learn.microsoft.com/en-us/azure/communication-services/concepts/email/email-overview) | 0.20 | High-level overview of ACS email; primarily conceptual and marketing-style without detailed limits, configs, or error mappings. |
 | [Overview](https://learn.microsoft.com/en-us/azure/communication-services/concepts/reference) | 0.20 | Reference documentation overview page; navigational and descriptive without detailed technical configuration or limits. |

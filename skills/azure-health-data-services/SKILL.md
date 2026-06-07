@@ -3,7 +3,7 @@ name: azure-health-data-services
 description: Expert knowledge for Azure Health Data Services development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using FHIR/DICOM APIs, bulk export/import, de-identification, SMART on FHIR, or Synapse/ADF integrations, and other Azure Health Data Services related development tasks. Not for Azure Health Bot (use azure-health-bot), Azure Data Factory (use azure-data-factory), Azure Synapse Analytics (use azure-synapse-analytics), Azure Machine Learning (use azure-machine-learning).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-31"
+  generated_at: "2026-06-07"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Health Data Services Skill
@@ -32,7 +32,7 @@ This skill requires **network access** to fetch documentation content:
 | Security | L75-L115 | Configuring auth, RBAC, identities, tokens, encryption (CMK), network/private access, SMART on FHIR, and compliance policies for FHIR, DICOM, and de-identification services. |
 | Configuration | L116-L170 | Configuring Azure Health Data Services (FHIR and DICOM): CORS, logging, events, bulk export/import/update, de-identification, profiles/validation, search parameters, history/versioning, and Da Vinci/CARIN setups. |
 | Integrations & Coding Patterns | L171-L203 | Code samples and patterns for calling FHIR/DICOM APIs, bulk export/import, de-identification, events, and integrating with tools like Synapse, ADF, Logic Apps, and VS Code. |
-| Deployment | L204-L220 | How to deploy and move Azure Health Data Services (FHIR, DICOM, de-identification, workspaces) using portal, ARM, Bicep, CLI, PowerShell, and check regional availability |
+| Deployment | L204-L219 | How to deploy and move Azure Health Data Services (FHIR, DICOM, de-identification, workspaces) using portal, ARM, Bicep, CLI, PowerShell, and check regional availability |
 
 ### Troubleshooting
 | Topic | URL |
@@ -216,5 +216,4 @@ This skill requires **network access** to fetch documentation content:
 | Deploy DICOM service backed by Azure Data Lake Storage | https://learn.microsoft.com/en-us/azure/healthcare-apis/dicom/deploy-dicom-services-in-azure-data-lake |
 | Deploy FHIR service via Azure portal | https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/deploy-azure-portal |
 | Deploy FHIR service using Bicep templates | https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/fhir-service-bicep |
-| Deploy FHIR service using ARM templates | https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/fhir-service-resource-manager-template |
 | Check Azure Health Data Services regional availability | https://learn.microsoft.com/en-us/azure/healthcare-apis/services-features-regional-availability |

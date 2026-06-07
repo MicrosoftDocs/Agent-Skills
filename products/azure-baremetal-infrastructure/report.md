@@ -34,7 +34,7 @@ confusable_not_for: Not for Azure Large Instances (use azure-large-instances), A
 - **New Pages**: 0
 - **Updated Pages**: 0
 - **Unchanged**: 3
-- **Deleted Pages**: 5
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-baremetal-infrastructure/azure-baremetal-infrastructure.csv`
 
 ## Classification Statistics
@@ -42,14 +42,6 @@ confusable_not_for: Not for Azure Large Instances (use azure-large-instances), A
 *No classified pages*
 
 ## Changes
-
-### Deleted Pages
-
-- ~~About Nutanix Cloud Clusters on Azure~~ (https://learn.microsoft.com/en-us/azure/baremetal-infrastructure/workloads/nc2-on-azure/about-nc2-on-azure)
-- ~~Architecture~~ (https://learn.microsoft.com/en-us/azure/baremetal-infrastructure/workloads/nc2-on-azure/architecture)
-- ~~Available Regions and SKUs~~ (https://learn.microsoft.com/en-us/azure/baremetal-infrastructure/workloads/nc2-on-azure/available-regions-skus)
-- ~~FAQ~~ (https://learn.microsoft.com/en-us/azure/baremetal-infrastructure/workloads/nc2-on-azure/faq)
-- ~~Get started~~ (https://learn.microsoft.com/en-us/azure/baremetal-infrastructure/workloads/nc2-on-azure/get-started)
 
 ## Classified Pages
 

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-31'
+generated_at: '2026-06-07'
 category_descriptions:
   integrations: Coding patterns and samples for building, running, and attesting Intel
     SGX/AMD SEV-SNP confidential apps and containers, including SKR flows, tools,
@@ -43,13 +43,13 @@ confusable_not_for: Not for Azure Virtual Enclaves (use azure-virtual-enclaves),
 - **Total Pages**: 70
 - **Fetched**: 70
 - **Fetch Failed**: 0
-- **Classified**: 51
-- **Unclassified**: 19
+- **Classified**: 50
+- **Unclassified**: 20
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 68
+- **Updated Pages**: 1
+- **Unchanged**: 69
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-confidential-computing/azure-confidential-computing.csv`
 
@@ -63,17 +63,15 @@ confusable_not_for: Not for Azure Virtual Enclaves (use azure-virtual-enclaves),
 | deployment | 8 | 11.4% |
 | integrations | 7 | 10.0% |
 | limits-quotas | 2 | 2.9% |
-| security | 13 | 18.6% |
-| *(Unclassified)* | 19 | 27.1% |
+| security | 12 | 17.1% |
+| *(Unclassified)* | 20 | 28.6% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Application enclave VM FAQ](https://learn.microsoft.com/en-us/azure/confidential-computing/faq-application-enclaves)
-  - Updated: 2024-09-19T18:07:00.000Z → 2026-05-25T05:26:00.000Z
-- [FAQ for confidential VMs](https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-vm-faq)
-  - Updated: 2025-04-16T22:02:00.000Z → 2026-05-25T05:26:00.000Z
+- [Azure Confidential Clean Room](https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-clean-rooms)
+  - Updated: 2025-01-16T18:03:00.000Z → 2026-06-03T17:25:00.000Z
 
 ## Classified Pages
 
@@ -98,7 +96,6 @@ confusable_not_for: Not for Azure Virtual Enclaves (use azure-virtual-enclaves),
 | [About Azure confidential VMs](https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-vm-overview) | decision-making | 0.70 | Explains protection levels, key ownership options, and when to use confidential VMs for migrations; supports configuration and tier choice decisions. |
 | [App enclaves overview](https://learn.microsoft.com/en-us/azure/confidential-computing/application-development) | integrations | 0.70 | Discusses SDKs/frameworks and how to structure applications for SGX enclaves on Azure; product-specific coding and integration patterns. |
 | [Attesting application enclaves](https://learn.microsoft.com/en-us/azure/confidential-computing/attestation) | security | 0.70 | Describes how to verify SGX enclave security via attestation in Azure; product-specific security/attestation configuration and flows. |
-| [Azure Confidential Clean Room](https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-clean-rooms) | security | 0.70 | Describes a specific Azure service with privacy-enhancing features, controlled access, and governance mechanisms; contains product-specific secure usage patterns. |
 | [Building confidential computing solutions](https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-computing-solutions) | architecture-patterns | 0.70 | Covers spectrum from lift-and-shift to fully controlled security features, with guidance on choosing patterns based on access levels and threat models. |
 | [Confidential computing on Azure](https://learn.microsoft.com/en-us/azure/confidential-computing/overview-azure-products) | decision-making | 0.70 | Catalogs Azure confidential computing offerings and helps map scenarios to specific products and SKUs, supporting technology selection decisions. |
 | [Confidential containers AKS security policy](https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-containers-aks-security-policy) | security | 0.70 | Explains the security policy and self-protection model for AKS Confidential Containers, tied to AMD SEV-SNP and pod isolation. This is product-specific security behavior and policy detail. |
@@ -143,6 +140,7 @@ confusable_not_for: Not for Azure Virtual Enclaves (use azure-virtual-enclaves),
 | [Acompany](https://learn.microsoft.com/en-us/azure/confidential-computing/partner-pages/acompany) | 0.20 | Partner solution marketing page; description suggests high-level product info without detailed Azure-specific configuration or limits. |
 | [Anjuna](https://learn.microsoft.com/en-us/azure/confidential-computing/partner-pages/anjuna) | 0.20 | Partner solution marketing page for Anjuna; likely conceptual and sales-focused rather than detailed technical guidance. |
 | [Application enclave VM FAQ](https://learn.microsoft.com/en-us/azure/confidential-computing/faq-application-enclaves) | 0.20 | Only a high-level FAQ description is provided; no evidence of specific limits, configuration parameters, error codes, or other detailed expert-only data. Likely general Q&A and conceptual guidance rather than numeric limits, configuration tables, or troubleshooting mappings. |
+| [Azure Confidential Clean Room](https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-clean-rooms) | 0.20 | Page appears to be a conceptual/overview description of Azure Confidential Clean Rooms and scenarios; no clear indication of numeric limits, detailed configuration tables, error-code-based troubleshooting, or other product-specific expert details per the defined categories. |
 | [BeeKeeperAI](https://learn.microsoft.com/en-us/azure/confidential-computing/partner-pages/beekeeperai) | 0.20 | Partner solution marketing page for BeeKeeper AI; summary indicates high-level description only. |
 | [Decentriq](https://learn.microsoft.com/en-us/azure/confidential-computing/partner-pages/decentriq) | 0.20 | Partner solution marketing page for Decentriq; no evidence of detailed Azure configuration or limits. |
 | [Edgeless](https://learn.microsoft.com/en-us/azure/confidential-computing/partner-pages/edgeless) | 0.20 | Partner solution marketing page for Edgeless; appears to be high-level solution description. |

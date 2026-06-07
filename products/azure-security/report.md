@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-17'
+generated_at: '2026-06-07'
 category_descriptions:
   integrations: Guidance on generating signed SBOMs for container images, attaching
     them in CI/CD, and integrating software supply chain security into deployment
@@ -13,24 +13,24 @@ category_descriptions:
   security: 'Securing Azure workloads: threat modeling mitigations, auth/crypto/logging
     best practices, AKS image validation, ransomware defense, Customer Lockbox, firewall/antimalware,
     and data protection.'
-  best-practices: 'Security hardening checklists and patterns for Azure IaaS/PaaS:
-    identity, network, data encryption, secrets, ransomware defense, incident response,
-    and app/database protection.'
+  best-practices: 'End-to-end Azure security hardening guidance: identity, network,
+    data, PaaS/IaaS apps, secrets, ransomware defenses, incident response, and service-specific
+    security checklists.'
   decision-making: Guidance on choosing Azure key management options (Key Vault, managed
     HSM, app-managed keys), including security, compliance, performance, and integration
     trade-offs.
 skill_description: Expert knowledge for Azure Security development including best
   practices, decision making, security, configuration, integrations & coding patterns,
-  and deployment. Use when securing AKS workloads, container SBOM/signing, Key Vault/HSM
-  keys, Customer Lockbox, or Azure firewall rules, and other Azure Security related
+  and deployment. Use when signing/verifying container images, generating SBOMs, configuring
+  AKS image policies, or using Customer Lockbox, and other Azure Security related
   development tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud),
-  Azure Defender For Iot (use azure-defender-for-iot), Azure Firewall (use azure-firewall),
+  Azure Sentinel (use azure-sentinel), Azure DDos Protection (use azure-ddos-protection),
   Azure Web Application Firewall (use azure-web-application-firewall).
-use_when: Use when securing AKS workloads, container SBOM/signing, Key Vault/HSM keys,
-  Customer Lockbox, or Azure firewall rules, and other Azure Security related development
-  tasks.
+use_when: Use when signing/verifying container images, generating SBOMs, configuring
+  AKS image policies, or using Customer Lockbox, and other Azure Security related
+  development tasks.
 confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-cloud),
-  Azure Defender For Iot (use azure-defender-for-iot), Azure Firewall (use azure-firewall),
+  Azure Sentinel (use azure-sentinel), Azure DDos Protection (use azure-ddos-protection),
   Azure Web Application Firewall (use azure-web-application-firewall).
 ---
 # Azure Security Crawl Report
@@ -45,8 +45,8 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 126
+- **Updated Pages**: 1
+- **Unchanged**: 125
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-security/azure-security.csv`
 
@@ -63,6 +63,11 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | *(Unclassified)* | 71 | 56.3% |
 
 ## Changes
+
+### Updated Pages
+
+- [Best practices](https://learn.microsoft.com/en-us/azure/security/fundamentals/network-best-practices)
+  - Updated: 2026-05-05T08:00:00.000Z → 2026-06-03T22:23:00.000Z
 
 ## Classified Pages
 
@@ -84,7 +89,7 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | [Azure Storage for PaaS](https://learn.microsoft.com/en-us/azure/security/fundamentals/paas-applications-using-storage) | best-practices | 0.70 | Explicitly a set of Azure Storage security best practices for PaaS apps, derived from Azure and customer experience. Contains product-specific recommendations and patterns. |
 | [Best practices](https://learn.microsoft.com/en-us/azure/security/fundamentals/data-encryption-best-practices) | best-practices | 0.70 | Explicit best-practices article for data security and encryption aligned with Azure capabilities and Zero Trust. Likely includes Azure-specific recommendations and patterns. |
 | [Best practices](https://learn.microsoft.com/en-us/azure/security/fundamentals/identity-management-best-practices) | best-practices | 0.70 | Explicitly a best-practices article for Azure identity and access control. While summary is high-level, this type of page typically contains concrete Entra ID recommendations, product-specific patterns, and gotchas beyond generic security advice. |
-| [Best practices](https://learn.microsoft.com/en-us/azure/security/fundamentals/network-best-practices) | best-practices | 0.70 | Described as a collection of Azure network security best practices derived from field experience. Such pages usually include concrete Azure-specific recommendations and configurations, fitting the best-practices sub-skill. |
+| [Best practices](https://learn.microsoft.com/en-us/azure/security/fundamentals/network-best-practices) | best-practices | 0.70 | The page is explicitly a set of Azure-specific network security best practices, derived from platform and customer experience. It provides concrete, product-specific DO and DON'T guidance for securing Azure networking using built-in capabilities, which qualifies as expert knowledge beyond generic security concepts. |
 | [Best practices](https://learn.microsoft.com/en-us/azure/security/fundamentals/operational-best-practices) | best-practices | 0.70 | Operational best practices for protecting Azure data, apps, and assets; includes Azure-specific recommendations and controls aligned to Zero Trust. |
 | [Best practices for protecting secrets](https://learn.microsoft.com/en-us/azure/security/fundamentals/secrets-best-practices) | best-practices | 0.70 | Guidance on protecting secrets across code, repos, logs, and CI/CD, compiled from multiple Azure services and MCSB. This is prescriptive, product-specific best-practices content. |
 | [Choosing a key management solution](https://learn.microsoft.com/en-us/azure/security/fundamentals/key-management-choose) | decision-making | 0.70 | Article explicitly aims to help choose between Azure Key Vault, Managed HSM, Cloud HSM, and Payment HSM based on scenarios and requirements. This is product-specific technology selection guidance. While the summary doesn’t show numbers, such comparison/flowchart content typically includes concrete decision criteria and scenario-based recommendations unique to these services, fitting the decision-making sub-skill. |

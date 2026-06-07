@@ -1,9 +1,9 @@
 ---
 name: azure-speech
-description: Expert knowledge for Azure AI Speech development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using STT/TTS containers, custom speech or voice models, Voice Live, batch jobs, or avatars with Azure Speech, and other Azure AI Speech related development tasks. Not for Azure Communication Services (use azure-communication-services), Azure AI Bot Service (use azure-bot-service), Azure Notification Hubs (use azure-notification-hubs).
+description: Expert knowledge for Azure AI Speech development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using STT/TTS, custom speech models, Voice Live agents, SSML/avatars, or telephony/LLM integrations, and other Azure AI Speech related development tasks. Not for Azure Communication Services (use azure-communication-services), Azure AI Bot Service (use azure-bot-service), Azure Notification Hubs (use azure-notification-hubs), Azure AI Immersive Reader (use azure-immersive-reader).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-31"
+  generated_at: "2026-06-07"
   generator: "docs2skills/1.0.0"
 ---
 # Azure AI Speech Skill
@@ -24,14 +24,14 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L36-L43 | Troubleshooting Azure AI Speech: finding session/transcription IDs, fixing Foundry integration issues, resolving SDK CRL/SSL problems, and diagnosing common Speech SDK errors. |
-| Best Practices | L44-L60 | Best practices for audio/video prep, custom voice/avatars, latency and memory tuning, phrase/keyword optimization, and handling real-time Voice Live interactions and interruptions |
-| Decision Making | L61-L78 | Guides for planning large-scale/batch speech jobs, choosing embedded/custom/personal voice options, checking language/voice availability, and migrating between Speech APIs and retired features. |
-| Limits & Quotas | L79-L90 | Limits, quotas, and throttling for Azure AI Speech (STT, TTS, Voice Live), including REST limits, model training/deployment constraints, and managing custom/professional voice endpoints. |
-| Security | L91-L103 | Configuring Azure AI Speech security: auth (Entra, RBAC), consent for Personal/Professional Voice, BYOS and encryption keys, sovereign cloud setup, and network isolation via VNet and Private Link. |
-| Configuration | L104-L134 | Configuring Azure AI Speech behavior: SDK/CLI settings, audio I/O, logging, containers, SSML, pronunciation, batch TTS/STT, Voice Live API, and custom speech/voice training. |
-| Integrations & Coding Patterns | L135-L159 | Patterns and code for integrating Azure Speech (STT, TTS, avatars, Voice Live) with apps, call centers, OpenAI, Foundry, Power Automate, and using REST/SDK/SSML APIs. |
-| Deployment | L160-L171 | Deploying and scaling Azure AI Speech: Docker/Kubernetes containers, on-prem STT/TTS, custom speech models/endpoints, language ID, and batch/long-form synthesis workflows. |
+| Troubleshooting | L36-L44 | Diagnosing and resolving Azure AI Speech issues: session/ID lookup, Foundry integration errors, SDK CRL/compatibility problems, container deployment failures, and common SDK runtime bugs. |
+| Best Practices | L45-L61 | Best practices for collecting and labeling audio/video, training custom voices/avatars, tuning recognition (phrases/keywords), optimizing latency/memory, and handling Voice Live agent behavior. |
+| Decision Making | L62-L79 | Guidance on planning large-scale speech workloads, choosing embedded/offline or personal voice options, and migrating between Speech/Voice REST APIs, models, and regions. |
+| Limits & Quotas | L80-L89 | Speech service limits, quotas, and throttling, plus lifecycle, training, deployment, and usage constraints for custom/professional voice and short-audio speech-to-text APIs. |
+| Security | L90-L103 | Securing Azure AI Speech: auth (Entra, RBAC), network isolation (VNet, Private Link, sovereign clouds), encryption/BYOK, BYOS storage, and consent/ID flows for personal and professional voice. |
+| Configuration | L104-L136 | Configuring Azure AI Speech behavior: audio inputs, logging, storage, SSML, pronunciation, batch TTS/STT, Voice Live settings, containers, and SDK/CLI connection and tracing options. |
+| Integrations & Coding Patterns | L137-L165 | Patterns and code to integrate Azure Speech/Voice Live with apps and telephony: SDK/REST usage, TTS/STT/translation, avatars, SSML, LLM/Foundry/Power Automate, and real-time agent flows. |
+| Deployment | L166-L177 | Deploying and scaling Azure AI Speech: Docker/Kubernetes containers, on-prem STT/TTS, custom speech models/endpoints, language ID, and batch/long-form synthesis workflows. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -39,6 +39,7 @@ This skill requires **network access** to fetch documentation content:
 | Retrieve Speech to text session and transcription IDs for support | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-get-speech-session-id |
 | Resolve common Azure Speech in Foundry issues | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/known-issues |
 | Resolve Azure AI Speech SDK CRL compatibility issues | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/migrate-to-sdk-1-48-2 |
+| Troubleshoot Azure Speech containers deployment issues | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-container-faq |
 | Diagnose and fix common Azure Speech SDK issues | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/troubleshooting |
 
 ### Best Practices
@@ -49,9 +50,9 @@ This skill requires **network access** to fetch documentation content:
 | Prepare training data for professional custom voice | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-custom-voice-training-data |
 | Apply best practices to reduce Speech synthesis latency | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-lower-speech-synthesis-latency |
 | Track and manage Azure Speech SDK memory usage | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-track-speech-sdk-memory-usage |
-| Handle user interruptions and chat truncation in Voice Live | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-voice-live-auto-truncation |
-| Use interim responses in Voice Live to reduce latency gaps | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-voice-live-interim-response |
-| Improve speech recognition with phrase lists | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/improve-accuracy-phrase-list |
+| Handle interrupted responses in Voice Live chat history | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-voice-live-auto-truncation |
+| Evaluate and benchmark Voice Live voice agents | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-voice-live-evaluate |
+| Use phrase lists to improve Azure Speech recognition | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/improve-accuracy-phrase-list |
 | Apply keyword recognition design and accuracy guidelines | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/keyword-recognition-guidelines |
 | Record high-quality samples for custom voice training | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/record-custom-voice-samples |
 | Back up and recover custom Speech and Voice resources | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/resiliency-and-recovery-plan |
@@ -65,7 +66,6 @@ This skill requires **network access** to fetch documentation content:
 | Evaluate custom voice lite before professional voice | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/custom-neural-voice-lite |
 | Choose Embedded Speech for offline and hybrid scenarios | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/embedded-speech |
 | Evaluate device suitability for embedded speech models | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/embedded-speech-performance-evaluations |
-| Evaluate and compare custom speech model accuracy | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-custom-speech-inspect-data |
 | Check Azure Speech language and voice availability | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/language-support |
 | Migrate Speech to text REST API from v3.2 to 2024-11-15 | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/migrate-2024-11-15 |
 | Migrate Speech to text REST API from 2024-11-15 to 2025-10-15 | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/migrate-2025-10-15 |
@@ -75,26 +75,26 @@ This skill requires **network access** to fetch documentation content:
 | Migrate Speech-to-text REST from v3.0 to v3.1 | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/migrate-v3-0-to-v3-1 |
 | Migrate Speech to text REST API v3.1 to v3.2 | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/migrate-v3-1-to-v3-2 |
 | Assess capabilities and regions for personal voice | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/personal-voice-overview |
+| Select models and pricing for Voice Live API | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live |
 
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
-| Speech to text limits and behaviors in Foundry Tools | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/faq-stt |
-| Text to speech service limits and behaviors FAQ | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/faq-tts |
+| Text to speech FAQs including limits and behavior | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/faq-tts |
 | Manage custom speech model and endpoint lifecycle | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-custom-speech-model-and-endpoint-lifecycle |
 | Deploy professional voice models to custom endpoints | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/professional-voice-deploy-endpoint |
 | Train professional voice models and understand duration | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/professional-voice-train-voice |
 | Use Speech to text REST API for short audio | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/rest-speech-to-text-short |
 | Apply Azure Speech quotas, limits, and throttling guidance | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-services-quotas-and-limits |
-| Operational limits and behaviors for Voice Live API | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live-faq |
 
 ### Security
 | Topic | URL |
 |-------|-----|
 | Configure BYOS storage for Azure Speech resources | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/bring-your-own-storage-speech-resource |
 | Configure Microsoft Entra authentication for Speech SDK | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-configure-azure-ad-auth |
-| Configure consent requirements for Personal Voice projects | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/personal-voice-create-consent |
-| Manage voice talent consent for professional voice | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/professional-voice-create-consent |
+| Configure consent requirements for personal voice projects | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/personal-voice-create-consent |
+| Create personal voice projects with consent and IDs | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/personal-voice-create-project |
+| Add and manage voice talent consent for professional voice | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/professional-voice-create-consent |
 | Assign Azure RBAC roles for Speech resources | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/role-based-access-control |
 | Configure Speech service in Azure sovereign clouds | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/sovereign-clouds |
 | Manage Speech service data-at-rest encryption and keys | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-encryption-of-data-at-rest |
@@ -110,18 +110,18 @@ This skill requires **network access** to fetch documentation content:
 | Define UPS phonetic pronunciations for Speech to text | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/customize-pronunciation |
 | Configure OpenSSL on Linux for Azure Speech SDK | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-configure-openssl-linux |
 | Control and monitor Speech SDK service connections | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-control-connections |
-| Create and manage custom speech fine-tuning projects | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-custom-speech-create-project |
-| Prepare and upload datasets for custom speech training | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-custom-speech-upload-data |
 | Select and configure audio input devices in Speech SDK | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-select-audio-input-devices |
 | Use visemes for facial animation with Speech service | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-speech-synthesis-viseme |
 | Configure Speech SDK audio input streams | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-use-audio-input-streams |
 | Configure compressed audio input for Speech SDK and CLI | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-use-codec-compressed-audio-input-streams |
 | Enable and configure Speech SDK diagnostic logging | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-use-logging |
+| Configure interim responses for Voice Live latency | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-voice-live-interim-response |
+| Configure OpenTelemetry tracing for Voice Live | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-voice-live-telemetry |
 | Configure audio and transcription logging for Speech recognition | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/logging-audio-transcription |
+| Create and manage personal voice speaker profiles | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/personal-voice-create-voice |
 | Upload and validate training datasets for professional voice | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/professional-voice-create-training-set |
-| Use correct Azure Speech regional endpoints and IDs | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/regions |
+| Use correct Azure Speech regional endpoints | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/regions |
 | Configure Speech containers storage, logging, and security | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-container-configuration |
-| Configure and operate Azure Speech service containers | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-container-faq |
 | Control speech output using SSML configuration | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-synthesis-markup |
 | Configure pronunciation with SSML phonemes and lexicons | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-synthesis-markup-pronunciation |
 | Structure SSML documents and events for Speech | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-synthesis-markup-structure |
@@ -130,7 +130,9 @@ This skill requires **network access** to fetch documentation content:
 | Configure batch synthesis properties for TTS avatars | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/text-to-speech-avatar/batch-synthesis-avatar-properties |
 | Reference Voice Live API events, models, and settings (2025-10-01) | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live-api-reference-2025-10-01 |
 | Reference Voice Live API events and settings (2026-01-01-preview) | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live-api-reference-2026-01-01-preview |
-| Configure language and locale for Voice Live API | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live-language-support |
+| Configure Voice Live WebSocket events and settings | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live-how-to |
+| Customize models and settings in Voice Live | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live-how-to-customize |
+| Configure language and locale support in Voice Live | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live-language-support |
 
 ### Integrations & Coding Patterns
 | Topic | URL |
@@ -141,11 +143,14 @@ This skill requires **network access** to fetch documentation content:
 | Integrate custom models with Voice Live API (BYOM) | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-bring-your-own-model |
 | Implement text-to-speech synthesis with Speech SDK | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-speech-synthesis |
 | Implement speech translation with Azure Speech SDK | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-translate-speech |
-| Connect MCP servers to Azure Voice Live sessions | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-voice-live-mcp-server |
-| Add proactive greetings to Voice Live agents | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-voice-live-proactive-messages |
+| Integrate Voice Live with Foundry Agent Service | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-voice-agent-integration |
+| Implement function calling in Voice Live sessions | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-voice-live-function-calling |
+| Integrate Voice Live with Foundry hosted agents | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-voice-live-hosted-agent-integration |
+| Connect MCP servers to Voice Live sessions | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-voice-live-mcp-server |
+| Add proactive greeting messages to Voice Live agents | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-voice-live-proactive-messages |
 | Use Azure LLM Speech API for transcription | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/llm-speech |
+| Use MAI-Transcribe with LLM Speech API | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/mai-transcribe |
 | Integrate Azure Speech with Azure OpenAI chat | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/openai-speech |
-| Create personal voice projects via Custom Voice API | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/personal-voice-create-project |
 | Integrate Azure Personal Voice into applications | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/personal-voice-how-to-use |
 | Use Power Automate connector for Speech batch transcription | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/power-automate-batch-transcription |
 | Use Speech to text REST API endpoints and parameters | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/rest-speech-to-text |
@@ -155,7 +160,8 @@ This skill requires **network access** to fetch documentation content:
 | Generate Speech service REST clients from Swagger | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/swagger-documentation |
 | Control text to speech avatar gestures with SSML | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/text-to-speech-avatar/avatar-gestures-with-ssml |
 | Implement real-time text-to-speech avatar streaming | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/text-to-speech-avatar/real-time-synthesis-avatar |
-| Use Voice Live WebSocket API for real-time agents | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live-how-to |
+| Use Voice Live WebSocket API events and models | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live-api-reference-2026-04-10 |
+| Integrate with Voice Live preview WebSocket API | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live-api-reference-2026-06-01-preview |
 
 ### Deployment
 | Topic | URL |

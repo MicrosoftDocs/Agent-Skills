@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-17'
+generated_at: '2026-06-07'
 category_descriptions:
   configuration: 'Configuring SignalR apps: connection strings, upstream endpoints,
     custom domains, monitoring/metrics, negotiation endpoints, Functions bindings,
@@ -17,9 +17,9 @@ category_descriptions:
   architecture-patterns: Patterns for scaling and sharding SignalR, designing resilient
     multi-region topologies, and architecting high-availability, high-throughput ASP.NET
     Core SignalR apps with Azure SignalR.
-  integrations: Using SignalR from servers and REST, managing clients, integrating
-    with Event Grid, API Management, Application Gateway, and detailed data-plane
-    REST API references
+  integrations: 'Patterns and APIs for integrating SignalR with servers and gateways:
+    SDK usage, client management, REST data-plane versions, and wiring events through
+    Event Grid, API Management, and Application Gateway.'
   limits-quotas: Message/connection billing rules, capacity planning, throughput limits,
     and how to scale Azure SignalR instances within quota and performance constraints.
   troubleshooting: 'Diagnosing and fixing SignalR issues: connectivity and message
@@ -28,32 +28,30 @@ category_descriptions:
 skill_description: Expert knowledge for Azure SignalR Service development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when configuring hubs/negotiation, choosing service modes, securing endpoints,
-  scaling multi-region, or debugging connectivity, and other Azure SignalR Service
-  related development tasks. Not for Azure Web PubSub (use azure-web-pubsub), Azure
-  Service Bus (use azure-service-bus), Azure Event Hubs (use azure-event-hubs), Azure
-  Relay (use azure-relay).
-use_when: Use when configuring hubs/negotiation, choosing service modes, securing
-  endpoints, scaling multi-region, or debugging connectivity, and other Azure SignalR
-  Service related development tasks.
+  Use when configuring SignalR modes, upstreams, private endpoints, autoscale, multi-region
+  topologies, or Event Grid integration, and other Azure SignalR Service related development
+  tasks. Not for Azure Web PubSub (use azure-web-pubsub), Azure Service Bus (use azure-service-bus),
+  Azure Event Hubs (use azure-event-hubs).
+use_when: Use when configuring SignalR modes, upstreams, private endpoints, autoscale,
+  multi-region topologies, or Event Grid integration, and other Azure SignalR Service
+  related development tasks.
 confusable_not_for: Not for Azure Web PubSub (use azure-web-pubsub), Azure Service
-  Bus (use azure-service-bus), Azure Event Hubs (use azure-event-hubs), Azure Relay
-  (use azure-relay).
+  Bus (use azure-service-bus), Azure Event Hubs (use azure-event-hubs).
 ---
 # Azure SignalR Service Crawl Report
 
 ## Summary
 
-- **Total Pages**: 72
-- **Fetched**: 72
+- **Total Pages**: 73
+- **Fetched**: 73
 - **Fetch Failed**: 0
-- **Classified**: 59
+- **Classified**: 60
 - **Unclassified**: 13
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 72
+- **New Pages**: 1
+- **Updated Pages**: 5
+- **Unchanged**: 67
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-signalr-service/azure-signalr-service.csv`
 
@@ -61,32 +59,50 @@ confusable_not_for: Not for Azure Web PubSub (use azure-web-pubsub), Azure Servi
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 3 | 4.2% |
-| best-practices | 2 | 2.8% |
-| configuration | 8 | 11.1% |
+| architecture-patterns | 3 | 4.1% |
+| best-practices | 2 | 2.7% |
+| configuration | 8 | 11.0% |
 | decision-making | 1 | 1.4% |
-| deployment | 8 | 11.1% |
-| integrations | 11 | 15.3% |
-| limits-quotas | 3 | 4.2% |
-| security | 18 | 25.0% |
-| troubleshooting | 5 | 6.9% |
-| *(Unclassified)* | 13 | 18.1% |
+| deployment | 8 | 11.0% |
+| integrations | 12 | 16.4% |
+| limits-quotas | 3 | 4.1% |
+| security | 18 | 24.7% |
+| troubleshooting | 5 | 6.8% |
+| *(Unclassified)* | 13 | 17.8% |
 
 ## Changes
+
+### New Pages
+
+- [v20241201](https://learn.microsoft.com/en-us/azure/azure-signalr/swagger/signalr-data-plane-rest-v20241201)
+
+### Updated Pages
+
+- [Data plane](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-reference-data-plane-rest-api)
+  - Updated: 2024-08-02T08:00:00.000Z → 2026-06-05T11:44:00.000Z
+- [v20220601](https://learn.microsoft.com/en-us/azure/azure-signalr/swagger/signalr-data-plane-rest-v20220601)
+  - Updated: 2023-04-03T00:00:00.000Z → 2026-06-04T08:00:00.000Z
+- [v1](https://learn.microsoft.com/en-us/azure/azure-signalr/swagger/signalr-data-plane-rest-v1)
+  - Updated: 2022-06-20T11:05:00.000Z → 2026-06-04T08:00:00.000Z
+- [v1-preview](https://learn.microsoft.com/en-us/azure/azure-signalr/swagger/signalr-data-plane-rest-v1-preview)
+  - Updated: 2022-06-20T11:05:00.000Z → 2026-06-04T08:00:00.000Z
+- [REST API](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-quickstart-rest-api)
+  - Updated: 2024-12-11T23:02:00.000Z → 2026-06-05T11:44:00.000Z
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
+| [v1](https://learn.microsoft.com/en-us/azure/azure-signalr/swagger/signalr-data-plane-rest-v1) | integrations | 0.90 | Data-plane REST API v1 reference containing specific routes, query/body parameters, and response formats, representing detailed integration and coding patterns. |
+| [v20220601](https://learn.microsoft.com/en-us/azure/azure-signalr/swagger/signalr-data-plane-rest-v20220601) | integrations | 0.90 | Versioned Swagger REST reference with concrete endpoint definitions, parameters, and schemas for Azure SignalR data plane, which is expert-level integration configuration detail. |
+| [v20241201](https://learn.microsoft.com/en-us/azure/azure-signalr/swagger/signalr-data-plane-rest-v20241201) | integrations | 0.90 | Swagger-based REST API reference for a specific API version, including endpoints, parameter names, types, and request/response contracts. This is detailed, product-specific integration knowledge. |
+| [v1-preview](https://learn.microsoft.com/en-us/azure/azure-signalr/swagger/signalr-data-plane-rest-v1-preview) | integrations | 0.88 | Obsoleted but still detailed v1-preview REST API reference with concrete endpoint and parameter definitions, which are product-specific integration details beyond generic knowledge. |
+| [Data plane](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-reference-data-plane-rest-api) | integrations | 0.86 | REST API reference for Azure SignalR data plane with operation-specific paths, parameters, and request/response schemas. Contains product-specific API shapes and constraints that qualify as integration-focused expert knowledge. |
 | [Troubleshooting guides](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-howto-troubleshoot-guide) | troubleshooting | 0.85 | Explicit troubleshooting guide; full article is expected to map common symptoms to causes and resolutions, possibly with error codes and diagnostic steps unique to SignalR. |
 | [Troubleshooting methods](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-howto-troubleshoot-method) | troubleshooting | 0.85 | Describes self-diagnosis methods by service mode (Default, Serverless, Classic); this is structured troubleshooting guidance specific to SignalR modes and behaviors. |
-| [v1](https://learn.microsoft.com/en-us/azure/azure-signalr/swagger/signalr-data-plane-rest-v1) | integrations | 0.85 | Another versioned REST API reference with detailed endpoint and parameter definitions unique to SignalR. |
-| [v1-preview](https://learn.microsoft.com/en-us/azure/azure-signalr/swagger/signalr-data-plane-rest-v1-preview) | integrations | 0.85 | Obsoleted but still detailed REST API reference; includes version-specific endpoints and parameters that are expert integration knowledge. |
-| [v20220601](https://learn.microsoft.com/en-us/azure/azure-signalr/swagger/signalr-data-plane-rest-v20220601) | integrations | 0.85 | Swagger-style reference with full parameter lists, types, and constraints for a specific API version—detailed integration configuration data. |
 | [Authorize from Azure application](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-howto-authorize-application) | security | 0.80 | Details how to configure Entra applications and code to authorize requests to SignalR; includes specific scopes, roles, and auth parameters unique to this product. |
 | [Authorize from managed identity](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-howto-authorize-managed-identity) | security | 0.80 | Provides product-specific instructions for using Entra managed identities with SignalR, including resource configuration and code patterns for authorization. |
 | [Configure cross tenant authorization](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-howto-authorize-cross-tenant) | security | 0.80 | Describes multi-tenant auth where server and SignalR are in different tenants, including app registration and enterprise app setup; these are detailed, product-specific security patterns. |
-| [Data plane](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-reference-data-plane-rest-api) | integrations | 0.80 | REST API reference for managing connections and sending messages; includes endpoints, parameters, and constraints unique to SignalR’s data plane. |
 | [Disable local authentication](https://learn.microsoft.com/en-us/azure/azure-signalr/howto-disable-local-auth) | security | 0.80 | Explains how to disable local key authentication and rely solely on Entra ID, including implications and configuration steps; this is a product-specific security configuration. |
 | [Overview of Microsoft Entra ID for Azure SignalR Service](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-concept-authorize-azure-active-directory) | security | 0.80 | Describes using Entra ID and RBAC roles to authorize SignalR requests; includes role names and scope usage specific to this service. |
 | [Use managed identity](https://learn.microsoft.com/en-us/azure/azure-signalr/howto-use-managed-identity) | security | 0.80 | Explains managed identity support (only one identity, system vs user-assigned) and how to configure it in SignalR serverless scenarios; includes product-specific identity configuration behavior. |
@@ -114,7 +130,7 @@ confusable_not_for: Not for Azure Web PubSub (use azure-web-pubsub), Azure Servi
 | [Gracefully shut down your app server](https://learn.microsoft.com/en-us/azure/azure-signalr/server-graceful-shutdown) | best-practices | 0.70 | Explains two modes for graceful shutdown in Default mode and how to avoid connection drops; this is a product-specific operational best-practice pattern. |
 | [Messages and connections](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-concept-messages-and-connections) | limits-quotas | 0.70 | Defines how messages and connections are counted for billing; includes precise counting rules that function as quantitative limits/quotas. |
 | [Multiple instances](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-howto-scale-multi-instances) | architecture-patterns | 0.70 | Explains multi-endpoint support, cross-region messaging, and sharding scenarios; these are product-specific scaling architecture patterns. |
-| [REST API](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-quickstart-rest-api) | integrations | 0.70 | Describes REST API usage and specification for SignalR broadcasting; REST endpoints and parameters are product-specific integration details. |
+| [REST API](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-quickstart-rest-api) | integrations | 0.70 | Quickstart includes concrete REST API usage details (endpoints, payload formats, headers, and connection string usage) specific to Azure SignalR Service, which are product-specific integration patterns beyond generic REST knowledge. |
 | [Secure outbound traffic through Shared Private Endpoints](https://learn.microsoft.com/en-us/azure/azure-signalr/howto-shared-private-endpoints) | security | 0.70 | Describes outbound private endpoint connections from SignalR in serverless mode with specific requirements; this is a product-specific secure networking pattern. |
 | [Security controls by Azure Policy](https://learn.microsoft.com/en-us/azure/azure-signalr/security-controls-policy) | security | 0.70 | Lists specific built-in policy definitions and compliance controls for SignalR; these are concrete security/compliance configuration artifacts. |
 | [Service mode](https://learn.microsoft.com/en-us/azure/azure-signalr/concept-service-mode) | decision-making | 0.70 | Explains Default, Serverless, and Classic modes and how to choose based on scenario; mode-selection guidance is product-specific decision-making content. |

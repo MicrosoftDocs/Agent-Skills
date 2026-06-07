@@ -39,9 +39,9 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 - **Unclassified**: 32
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 2
-- **Unchanged**: 51
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 54
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-network-manager/azure-virtual-network-manager.csv`
 
@@ -57,17 +57,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | *(Unclassified)* | 32 | 59.3% |
 
 ## Changes
-
-### New Pages
-
-- [Configure Virtual WAN hub in Hub and Spoke Topology](https://learn.microsoft.com/en-us/azure/virtual-network-manager/configure-virtual-wan-hub-for-network-manager)
-
-### Updated Pages
-
-- [Azure portal](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-create-hub-and-spoke)
-  - Updated: 2025-08-05T22:11:00.000Z → 2026-05-26T17:35:00.000Z
-- [Connectivity configuration overview](https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-connectivity-configuration)
-  - Updated: 2026-01-09T08:00:00.000Z → 2026-05-26T17:35:00.000Z
 
 ## Classified Pages
 

@@ -1,14 +1,14 @@
 ---
 name: azure-firmware-analysis
-description: Expert knowledge for Azure Firmware Analysis development including best practices, limits & quotas, security, integrations & coding patterns, and deployment. Use when scanning firmware images, interpreting SBOM paths, deploying workspaces via IaC, or automating uploads via CLI/SDK, and other Azure Firmware Analysis related development tasks. Not for Azure Defender For Iot (use azure-defender-for-iot), Azure IoT (use azure-iot), Azure IoT Edge (use azure-iot-edge), Azure IoT Hub (use azure-iot-hub).
+description: Expert knowledge for Azure Firmware Analysis development including best practices, security, integrations & coding patterns, and deployment. Use when configuring RBAC access, deploying workspaces via ARM/Bicep/Terraform, or automating firmware uploads via CLI/PowerShell/Python, and other Azure Firmware Analysis related development tasks. Not for Azure Defender For Iot (use azure-defender-for-iot), Azure IoT Edge (use azure-iot-edge), Azure IoT Hub (use azure-iot-hub), Azure Confidential Computing (use azure-confidential-computing).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-31"
+  generated_at: "2026-06-07"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Firmware Analysis Skill
 
-This skill provides expert guidance for Azure Firmware Analysis. Covers best practices, limits & quotas, security, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Firmware Analysis. Covers best practices, security, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -24,23 +24,17 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Best Practices | L33-L39 | Using Azure Firmware Analysis to scan firmware images, interpret SBOM extractor paths, and prioritize discovered vulnerabilities and weaknesses for remediation |
-| Limits & Quotas | L40-L44 | Details on what UEFI firmware analysis can and cannot do in Azure Firmware Analysis, including supported features, scanning limits, and resource/usage quotas. |
-| Security | L45-L50 | Managing secure access to Azure Firmware Analysis using service principals and configuring role-based access control (RBAC) permissions for users and apps |
-| Integrations & Coding Patterns | L51-L57 | How to programmatically upload firmware for analysis in Azure using CLI, PowerShell, or Python, including auth, commands/scripts, and basic automation patterns. |
-| Deployment | L58-L63 | How to provision and deploy an Azure Firmware Analysis workspace using infrastructure-as-code tools: ARM templates, Bicep, and Terraform configuration and setup. |
+| Best Practices | L32-L38 | Guidance on running Azure firmware analysis, reading SBOM extractor paths, and interpreting/prioritizing detected firmware vulnerabilities and weaknesses. |
+| Security | L39-L44 | Managing secure access to Azure Firmware Analysis using service principals and configuring role-based access control (RBAC) permissions for users and apps |
+| Integrations & Coding Patterns | L45-L51 | How to programmatically upload firmware for analysis in Azure using CLI, PowerShell, or Python, including auth, commands/scripts, and basic automation patterns. |
+| Deployment | L52-L57 | How to provision and deploy an Azure Firmware Analysis workspace using infrastructure-as-code tools: ARM templates, Bicep, and Terraform configuration and setup. |
 
 ### Best Practices
 | Topic | URL |
 |-------|-----|
 | Interpret SBOM extractor paths in firmware analysis | https://learn.microsoft.com/en-us/azure/firmware-analysis/interpreting-extractor-paths |
 | Analyze firmware images with Azure firmware analysis | https://learn.microsoft.com/en-us/azure/firmware-analysis/tutorial-analyze-firmware |
-| Prioritize firmware weaknesses using analysis results | https://learn.microsoft.com/en-us/azure/firmware-analysis/understand-weaknesses-data |
-
-### Limits & Quotas
-| Topic | URL |
-|-------|-----|
-| Understand UEFI analysis capabilities and limits in firmware analysis | https://learn.microsoft.com/en-us/azure/firmware-analysis/unified-extensible-firmware-interface-firmware-analysis |
+| Interpret and prioritize firmware weaknesses data | https://learn.microsoft.com/en-us/azure/firmware-analysis/understand-weaknesses-data |
 
 ### Security
 | Topic | URL |

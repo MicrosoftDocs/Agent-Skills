@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 179
+- **Updated Pages**: 0
+- **Unchanged**: 180
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-defender-for-iot/azure-defender-for-iot.csv`
 
@@ -76,11 +76,6 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | *(Unclassified)* | 63 | 35.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [Compliance resources](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/compliance)
-  - Updated: 2026-04-28T17:57:00.000Z → 2026-05-28T22:38:00.000Z
 
 ## Classified Pages
 

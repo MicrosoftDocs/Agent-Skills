@@ -1,9 +1,9 @@
 ---
 name: azure-portal
-description: Expert knowledge for Azure Portal development including troubleshooting, security, and configuration. Use when managing portal RBAC dashboard sharing, JSON dashboards, URL allowlists, mobile app access/alerts, or HAR diagnostics, and other Azure Portal related development tasks. Not for Azure Cloud Shell (use azure-cloud-shell), Azure Resource Manager (use azure-resource-manager), Azure Monitor (use azure-monitor), Azure Policy (use azure-policy).
+description: Expert knowledge for Azure Portal development including troubleshooting, security, and configuration. Use when managing portal RBAC sharing, Intune/Entra mobile access, dashboard JSON, portal policies, or HAR diagnostics, and other Azure Portal related development tasks. Not for Azure Cloud Shell (use azure-cloud-shell), Azure Resource Manager (use azure-resource-manager), Azure Monitor (use azure-monitor), Azure Security (use azure-security).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-31"
+  generated_at: "2026-06-07"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Portal Skill
@@ -25,8 +25,8 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L31-L35 | How to collect browser network traces, console logs, HAR files, and diagnostics to investigate and report Azure portal performance or UI issues |
-| Security | L36-L43 | Tenant-wide portal security policies, RBAC-based dashboard sharing, and managing/protecting access to Azure via Intune MAM and the Azure mobile app. |
-| Configuration | L44-L52 | Configuring Azure portal behavior: dashboard JSON/templates, keyboard shortcuts, URL allowlists, mobile app alerts, and built-in Azure Policy definitions for portal governance. |
+| Security | L36-L44 | Tenant-wide admin/security policies, RBAC-based dashboard sharing, mobile app protection and user management with Intune/Entra ID, and roles needed to manage Azure support requests. |
+| Configuration | L45-L53 | Configuring Azure portal behavior: dashboard JSON/templates, keyboard shortcuts, URL allowlists, mobile app alerts, and built-in Azure Policy definitions for portal governance. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -40,6 +40,7 @@ This skill requires **network access** to fetch documentation content:
 | Share Azure dashboards using Azure RBAC roles | https://learn.microsoft.com/en-us/azure/azure-portal/azure-portal-dashboard-share-access |
 | Apply Intune MAM app protection policies to Azure mobile app | https://learn.microsoft.com/en-us/azure/azure-portal/mobile-app/intune-management |
 | Manage Microsoft Entra ID users via Azure mobile app | https://learn.microsoft.com/en-us/azure/azure-portal/mobile-app/microsoft-entra-id |
+| Manage Azure support requests and required roles | https://learn.microsoft.com/en-us/azure/azure-portal/supportability/how-to-manage-azure-support-request |
 
 ### Configuration
 | Topic | URL |

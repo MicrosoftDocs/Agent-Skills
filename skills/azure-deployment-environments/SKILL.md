@@ -1,9 +1,9 @@
 ---
 name: azure-deployment-environments
-description: Expert knowledge for Azure Deployment Environments development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring ADE catalogs, RBAC/identities, env types & Git schemas, custom images, or CI/CD deployments, and other Azure Deployment Environments related development tasks. Not for Azure DevTest Labs (use azure-devtest-labs), Azure Dev Box (use azure-dev-box), Azure Integration Environments (use azure-integration-environments), Microsoft Foundry (use microsoft-foundry).
+description: Expert knowledge for Azure Deployment Environments development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring ADE catalogs, Git schemas, RBAC/managed identities, custom image workflows, or CI/CD deployments, and other Azure Deployment Environments related development tasks. Not for Azure DevTest Labs (use azure-devtest-labs), Azure Dev Box (use azure-dev-box), Azure Integration Environments (use azure-integration-environments), Azure Managed Applications (use azure-managed-applications).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-31"
+  generated_at: "2026-06-07"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Deployment Environments Skill
@@ -24,7 +24,7 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L41 | Diagnosing and resolving Azure Deployment Environments custom image deployment failures, including common error codes, validation issues, and configuration or image compatibility problems. |
+| Troubleshooting | L37-L41 | Diagnosing and resolving custom image deployment failures in Azure Deployment Environments, including common error patterns, logs to inspect, and remediation steps. |
 | Best Practices | L42-L46 | Guidance on organizing and structuring Azure Deployment Environments catalogs, including repo layout, template grouping, naming, and governance for scalable, maintainable catalogs. |
 | Decision Making | L47-L51 | Guidance on planning for Azure Deployment Environments entering maintenance mode, including impact, timelines, alternatives, and migration/transition considerations. |
 | Architecture & Design Patterns | L52-L56 | Guidance on designing resilient, scalable Azure Deployment Environments architectures, including fault tolerance, high availability, redundancy, and best practices for robust environment design. |
@@ -37,7 +37,7 @@ This skill requires **network access** to fetch documentation content:
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
-| Troubleshoot ADE custom image deployment errors | https://learn.microsoft.com/en-us/azure/deployment-environments/troubleshoot-custom-image-logs-errors |
+| Diagnose custom image deployment failures in Azure Deployment Environments | https://learn.microsoft.com/en-us/azure/deployment-environments/troubleshoot-custom-image-logs-errors |
 
 ### Best Practices
 | Topic | URL |

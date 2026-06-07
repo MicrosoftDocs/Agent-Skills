@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-17'
+generated_at: '2026-06-07'
 category_descriptions:
   decision-making: Guidance on estimating, controlling, and optimizing Metrics Advisor
     costs and usage, including pricing factors, quotas, and cost-management best practices.
@@ -8,18 +8,20 @@ category_descriptions:
     into applications
   security: Encrypting Metrics Advisor data, configuring auth, and securely creating,
     storing, and managing data source credentials and keys for anomaly detection.
+  limits-quotas: 'Service limits for Metrics Advisor: max metrics, dimensions, alerts,
+    data ingestion rates, detection constraints, and guidance on scaling within quotas.'
   configuration: 'Setting up Metrics Advisor: configuring alert hooks (email/webhook),
     alerting rules, data feed and detection settings, and tuning anomaly detection
     behavior for your instance.'
 skill_description: Expert knowledge for Azure AI Metrics Advisor development including
-  decision making, security, configuration, and integrations & coding patterns. Use
-  when configuring data feeds, tuning anomaly detection, managing alert hooks, securing
-  creds, or calling Metrics Advisor APIs, and other Azure AI Metrics Advisor related
+  decision making, limits & quotas, security, configuration, and integrations & coding
+  patterns. Use when configuring data feeds, alert hooks, detection settings, REST/SDK
+  integrations, or cost/usage controls, and other Azure AI Metrics Advisor related
   development tasks. Not for Azure AI Anomaly Detector (use azure-anomaly-detector),
   Azure Monitor (use azure-monitor), Azure Stream Analytics (use azure-stream-analytics).
-use_when: Use when configuring data feeds, tuning anomaly detection, managing alert
-  hooks, securing creds, or calling Metrics Advisor APIs, and other Azure AI Metrics
-  Advisor related development tasks.
+use_when: Use when configuring data feeds, alert hooks, detection settings, REST/SDK
+  integrations, or cost/usage controls, and other Azure AI Metrics Advisor related
+  development tasks.
 confusable_not_for: Not for Azure AI Anomaly Detector (use azure-anomaly-detector),
   Azure Monitor (use azure-monitor), Azure Stream Analytics (use azure-stream-analytics).
 ---
@@ -30,13 +32,13 @@ confusable_not_for: Not for Azure AI Anomaly Detector (use azure-anomaly-detecto
 - **Total Pages**: 19
 - **Fetched**: 19
 - **Fetch Failed**: 0
-- **Classified**: 6
-- **Unclassified**: 13
+- **Classified**: 7
+- **Unclassified**: 12
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 19
+- **Updated Pages**: 1
+- **Unchanged**: 18
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-metrics-advisor/azure-metrics-advisor.csv`
 
@@ -47,15 +49,22 @@ confusable_not_for: Not for Azure AI Anomaly Detector (use azure-anomaly-detecto
 | configuration | 1 | 5.3% |
 | decision-making | 1 | 5.3% |
 | integrations | 2 | 10.5% |
+| limits-quotas | 1 | 5.3% |
 | security | 2 | 10.5% |
-| *(Unclassified)* | 13 | 68.4% |
+| *(Unclassified)* | 12 | 63.2% |
 
 ## Changes
+
+### Updated Pages
+
+- [Metrics Advisor FAQ](https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/faq)
+  - Updated: 2026-05-12T11:11:00.000Z → 2026-06-05T22:11:00.000Z
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
+| [Metrics Advisor FAQ](https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/faq) | limits-quotas | 0.78 | The FAQ includes concrete, product-specific limits such as maximum number of metrics, series, and alerts per resource, as well as constraints on ingestion frequency and data latency. These are exact numerical limits and quotas that are unlikely to be reliably known from training data and match the limits-quotas criteria. |
 | [Use customer-managed keys](https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/encryption) | security | 0.75 | Encryption article for data at rest and authentication flows; likely includes specific encryption behavior, key usage, and authentication configuration details unique to Metrics Advisor, matching security sub-skill criteria. |
 | [Configure metrics and fine tune detection configuration](https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/how-tos/configure-metrics) | configuration | 0.70 | Explicitly about configuring the instance and fine-tuning anomaly detection; such pages usually expose named settings, thresholds, and allowed values, matching configuration. |
 | [Connect different data sources](https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/data-feeds-from-different-sources) | integrations | 0.70 | Describes connecting different data sources with multiple authentication flows; such pages typically list connection string formats and auth parameters per source, fitting integrations & coding patterns. |
@@ -71,7 +80,6 @@ confusable_not_for: Not for Azure AI Anomaly Detector (use azure-anomaly-detecto
 | [Adjust anomaly detection using feedback](https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/how-tos/anomaly-feedback) | 0.30 | Anomaly feedback tuning article; mainly conceptual and workflow-oriented, without clear indication of numeric limits or configuration matrices. |
 | [Diagnose an incident](https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/how-tos/diagnose-an-incident) | 0.30 | Diagnose incident how-to; focused on using UI views for anomalies, not explicit troubleshooting error-code mappings or config details. |
 | [Manage data feeds](https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/how-tos/manage-data-feeds) | 0.30 | Managing data feeds article; summary suggests operational guidance rather than detailed configuration parameter tables or limits. |
-| [Metrics Advisor FAQ](https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/faq) | 0.30 | FAQ page with general Q&A about Metrics Advisor; it does not primarily provide numeric limits, configuration parameter tables, error-code-to-solution mappings, or other structured expert details that match the defined sub-skill categories. |
 | [Onboard your data](https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/how-tos/onboard-your-data) | 0.30 | Onboarding data feeds how-to; likely procedural with examples, but summary shows no explicit limits, config tables, or error codes. |
 | [Write a valid query](https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/tutorials/write-a-valid-query) | 0.30 | Tutorial on writing a valid query for ingestion; likely example-driven without comprehensive configuration tables or numeric limits. |
 | [Build a metrics graph](https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/how-tos/metrics-graph) | 0.20 | Metrics graph visualization guidance; appears conceptual/UX-focused, not configuration/limits/troubleshooting heavy. |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-24'
+generated_at: '2026-06-07'
 category_descriptions:
   deployment: 'Deploying and managing Automanage/Update Manager at scale: onboarding
     VMs and Arc servers, moving/repairing configs across regions/tenants, policies,
@@ -49,8 +49,8 @@ confusable_not_for: Not for Azure Automation (use azure-automation), Azure Polic
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 84
+- **Updated Pages**: 1
+- **Unchanged**: 83
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-update-manager/azure-update-manager.csv`
 
@@ -69,6 +69,11 @@ confusable_not_for: Not for Azure Automation (use azure-automation), Azure Polic
 | *(Unclassified)* | 30 | 35.7% |
 
 ## Changes
+
+### Updated Pages
+
+- [Enable Azure Change Tracking and Inventory](https://learn.microsoft.com/en-us/azure/azure-change-tracking-inventory/quickstart-monitor-changes-collect-inventory-azure-change-tracking-inventory)
+  - Updated: 2026-01-10T06:10:00.000Z → 2026-06-04T08:00:00.000Z
 
 ## Classified Pages
 
@@ -154,12 +159,12 @@ confusable_not_for: Not for Azure Automation (use azure-automation), Azure Polic
 | [Check VM status](https://learn.microsoft.com/en-us/azure/automanage/overview-vm-status) | 0.30 | Explains VM status concepts; likely procedural UI steps without expert-only limits, configs, or troubleshooting mappings. |
 | [Configuration profiles](https://learn.microsoft.com/en-us/azure/automanage/overview-configuration-profiles) | 0.30 | Conceptual description of configuration profiles; summary doesn’t indicate detailed settings tables or product-specific patterns. |
 | [Disable Azure Automanage](https://learn.microsoft.com/en-us/azure/automanage/how-to-disable-automanage) | 0.30 | How-to disable Automanage; mostly procedural without detailed configuration matrices, limits, or troubleshooting codes. |
-| [Enable Azure Change Tracking and Inventory](https://learn.microsoft.com/en-us/azure/azure-change-tracking-inventory/quickstart-monitor-changes-collect-inventory-azure-change-tracking-inventory) | 0.30 | Quickstart for enabling Change Tracking; mostly procedural without detailed configuration parameter tables or limits. |
 | [July 2025](https://learn.microsoft.com/en-us/azure/update-manager/arc-enabled-vm-extensions) | 0.30 | Release notes and known issues are product-specific but typically list changes, fixes, and OS support without structured limits, configs, or error-code troubleshooting mappings. |
 | [Manage Hotpatches on Arc-Enabled Machines (preview)](https://learn.microsoft.com/en-us/azure/update-manager/manage-hot-patching-arc-machines) | 0.30 | The hotpatching article appears to be a how-to/tutorial style guide on managing hotpatches on Arc-enabled machines, without clear indication of detailed configuration tables, limits, or error-code-based troubleshooting. From the summary, it focuses on explaining how to install hotpatches and create schedules, which is generic procedural content rather than expert-knowledge configuration matrices or constraints. |
 | [Update options and orchestration](https://learn.microsoft.com/en-us/azure/update-manager/updates-maintenance-schedules) | 0.30 | Marked as an overview of update and maintenance options; likely conceptual orchestration explanation without detailed config or limits. |
 | [What's New](https://learn.microsoft.com/en-us/azure/update-manager/whats-new) | 0.30 | What's new/release notes; mostly feature announcements, not structured troubleshooting, limits, or configuration matrices. |
 | [About Azure Update Manager](https://learn.microsoft.com/en-us/azure/update-manager/overview) | 0.20 | Overview of Azure Update Manager features and benefits; conceptual without detailed limits or configuration tables. |
+| [Enable Azure Change Tracking and Inventory](https://learn.microsoft.com/en-us/azure/azure-change-tracking-inventory/quickstart-monitor-changes-collect-inventory-azure-change-tracking-inventory) | 0.20 | Quickstart focused on enabling Change Tracking and Inventory via the Azure portal; primarily step-by-step UI instructions without detailed configuration parameter tables, limits, error codes, or product-specific best-practice guidance. Does not meet thresholds for limits, configuration, troubleshooting, or other expert sub-skill types. |
 | [Enable on VMs in the Azure portal](https://learn.microsoft.com/en-us/azure/automanage/quick-create-virtual-machines-portal) | 0.20 | Quickstart for enabling Automanage via portal; mostly step-by-step UI instructions without deep configuration matrices or limits. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/automanage/faq) | 0.20 | FAQ page description suggests general Q&A and support guidance without clear indication of numeric limits, configuration tables, error-code mappings, or other product-specific expert details as defined by the sub-skill types. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-change-tracking-inventory/overview-monitoring-agent) | 0.20 | Overview of Change Tracking and Inventory with AMA; primarily conceptual and feature-focused. |
