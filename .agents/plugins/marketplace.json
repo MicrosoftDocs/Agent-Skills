@@ -1,0 +1,22 @@
+{
+  "name": "microsoft-agent-skills",
+  "interface": {
+    "displayName": "Azure Agent Skills"
+  },
+  "plugins": [
+    {
+      "name": "azure-agent-skills",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/MicrosoftDocs/agent-skills.git"
+      },
+      "description": "193+ production-ready Azure skills covering compute, data, AI/ML, networking, security, and management. Built from Microsoft Learn and following the Agent Skills open standard.",
+      "version": "1.0.0",
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

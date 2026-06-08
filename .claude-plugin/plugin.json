@@ -1,0 +1,10 @@
+{
+  "name": "azure-agent-skills",
+  "description": "A curated collection of production-ready agentic skills for Microsoft Azure development. Installs 193+ skills covering Azure compute, data, AI/ML, networking, security, and management services. Built from Microsoft Learn documentation and following the Agent Skills open standard.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Microsoft",
+    "url": "https://github.com/MicrosoftDocs/agent-skills"
+  },
+  "skills": "skills/"
+}

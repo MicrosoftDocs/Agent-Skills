@@ -31,6 +31,7 @@ Azure Agent Skills is a curated collection of **high-quality agentic skills** sp
 ## 📍 Table of Contents
 
 - [🚀 New Here? Start Here!](#-new-here-start-here)
+- [⚡ One-Click Plugin Install](#-one-click-plugin-install)
 - [🔌 Compatibility & Invocation](#-compatibility--invocation)
 - [📦 Features & Categories](#-features--categories)
 - [🎁 Curated Collections (Bundles)](#-curated-collections-bundles)
@@ -81,6 +82,16 @@ Each skill provides:
 
 A short path to getting started — full installation details are in the [🛠️ Installation](#️-installation) section below.
 
+**� Plugin install (recommended):** VS Code, Claude Code, and Codex can install everything as a single agent plugin — no cloning or copying.
+
+- **VS Code:** Command Palette → **Chat: Install Plugin From Source** → paste `https://github.com/MicrosoftDocs/agent-skills`
+- **Claude Code:** `/plugin marketplace add MicrosoftDocs/agent-skills`, then `/plugin install azure-agent-skills@microsoft-agent-skills`
+- **Codex:** `codex plugin marketplace add MicrosoftDocs/agent-skills`, then install **azure-agent-skills** from `/plugins`
+
+> 👉 See [⚡ One-Click Plugin Install](#-one-click-plugin-install) for full steps and the marketplace options.
+
+**🛠️ Other assistants (manual):**
+
 1. Clone the repo:
    ```bash
    git clone https://github.com/MicrosoftDocs/agent-skills.git
@@ -88,7 +99,7 @@ A short path to getting started — full installation details are in the [🛠�
 
 2. Copy the contents of the `skills/` folder to your AI assistant's skills path (see [🛠️ Installation](#️-installation) for the destination table and important notes).
 
-3. VS Code users: enable `chat.agent.skills` in Settings so the editor will load skills.
+3. VS Code users (manual mode): enable `chat.agent.skills` in Settings so the editor will load skills.
 
 4. Start coding — your AI assistant will automatically discover and use the installed skills.
 
@@ -109,6 +120,70 @@ Once installed, just ask your AI assistant naturally:
 > "How do I configure Azure API Management?"
 
 The skills will automatically provide context from official Microsoft documentation.
+
+---
+
+## ⚡ One-Click Plugin Install
+
+> 🚀 **Recommended.** This repository ships as a ready-to-use **[agent plugin](https://code.visualstudio.com/docs/agent-customization/agent-plugins)** with native manifests for every major assistant. Install once and **all 193+ skills** are available — no cloning, no copying, no manual `skills/` setup.
+
+### 🟦 VS Code
+
+**Option 1 — Install directly from source**
+
+1. Open the Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`).
+2. Run **Chat: Install Plugin From Source**.
+3. Paste the repository URL:
+   ```
+   https://github.com/MicrosoftDocs/agent-skills
+   ```
+4. VS Code clones and installs the plugin. All skills now appear in **Chat: Configure Skills**.
+
+**Option 2 — Add it as a plugin marketplace**
+
+Register this repo as a marketplace to browse and install (and get updates) from the Extensions view.
+
+1. Add the repository to your `chat.plugins.marketplaces` setting:
+   ```jsonc
+   // settings.json
+   "chat.plugins.marketplaces": [
+     "MicrosoftDocs/agent-skills"
+   ]
+   ```
+2. Open the **Extensions** view (`Ctrl+Shift+X`) and search `@agentPlugins`.
+3. Find **azure-agent-skills** and select **Install**.
+
+> ⚠️ **Preview feature.** Agent plugins require `chat.plugins.enabled` to be set to `true`. This setting may be managed by your organization. If you don't see the option, ask your administrator or use the [manual installation](#️-installation) below.
+
+### 🟣 Claude Code
+
+Claude Code installs this repo as a plugin through its marketplace. From within Claude Code:
+
+1. Add this repository as a marketplace:
+   ```
+   /plugin marketplace add MicrosoftDocs/agent-skills
+   ```
+2. Install the plugin:
+   ```
+   /plugin install azure-agent-skills@microsoft-agent-skills
+   ```
+3. Run `/reload-plugins` (or restart Claude Code) to activate. All skills are now available.
+
+### 🟢 OpenAI Codex
+
+Codex installs this repo as a plugin through its plugin browser. From the Codex CLI:
+
+1. Add this repository as a marketplace:
+   ```
+   codex plugin marketplace add MicrosoftDocs/agent-skills
+   ```
+2. Open the plugin browser and install **azure-agent-skills** from the **microsoft-agent-skills** marketplace:
+   ```
+   /plugins
+   ```
+3. Restart Codex if the skills don't appear immediately.
+
+> 💡 **One repo, every tool.** The same repository ships native plugin manifests for each ecosystem — [`plugin.json`](plugin.json) (VS Code / Copilot CLI), [`.claude-plugin/`](.claude-plugin/) (Claude Code), and [`.codex-plugin/`](.codex-plugin/) + [`.agents/plugins/`](.agents/plugins/) (Codex) — so a single install gets you all skills wherever you work.
 
 ---
 
@@ -196,9 +271,14 @@ We've moved the complete skill registry to a dedicated catalog to keep this READ
 
 ### 📂 Repository Structure
 
-| Directory | Purpose |
+| Path | Purpose |
 |-----------|---------|
 | `skills/` | Production-ready skills for AI agents to consume |
+| `plugin.json` | Agent plugin manifest — one-click install in VS Code & GitHub Copilot CLI |
+| `.github/plugin/marketplace.json` | Plugin marketplace catalog for VS Code (`chat.plugins.marketplaces`) |
+| `.claude-plugin/` | Claude Code plugin + marketplace manifests (`/plugin marketplace add`) |
+| `.codex-plugin/plugin.json` | OpenAI Codex plugin manifest |
+| `.agents/plugins/marketplace.json` | OpenAI Codex marketplace catalog (`codex plugin marketplace add`) |
 | `products/` | Scan results, raw data, and reporting artifacts |
 
 #### About the `products/` Directory
@@ -217,9 +297,24 @@ The `products/` folder stores **scan pipeline outputs** and is used for:
 
 Choose the installation path based on your preferred AI coding assistant.
 
+### ⚡ Option A: Install as an Agent Plugin (Recommended)
+
+The fastest, zero-maintenance path — install once and get all skills, with built-in updates. Works in **VS Code**, **Claude Code**, and **OpenAI Codex**. See [⚡ One-Click Plugin Install](#-one-click-plugin-install) for full details.
+
+- **VS Code (from source):** Command Palette → **Chat: Install Plugin From Source** → paste `https://github.com/MicrosoftDocs/agent-skills`.
+- **VS Code (marketplace):** add `"MicrosoftDocs/agent-skills"` to `chat.plugins.marketplaces`, then install **azure-agent-skills** from the Extensions view (`@agentPlugins`).
+- **Claude Code:** `/plugin marketplace add MicrosoftDocs/agent-skills`, then `/plugin install azure-agent-skills@microsoft-agent-skills`.
+- **OpenAI Codex:** `codex plugin marketplace add MicrosoftDocs/agent-skills`, then install **azure-agent-skills** from `/plugins`.
+
+> ⚠️ In VS Code, this requires the agent plugins preview (`chat.plugins.enabled` set to `true`). If unavailable, use Option B below.
+
+---
+
+### 📋 Option B: Manual Install (All Assistants)
+
 > ⚠️ **Note:** This repository contains skills in the `skills/` subdirectory. Clone the repo first, then copy the skills to your target location.
 
-### Step 1: Clone the Repository
+#### Step 1: Clone the Repository
 
 First, clone this repository to a location on your machine (e.g., your home folder or a temp directory):
 
@@ -227,7 +322,7 @@ First, clone this repository to a location on your machine (e.g., your home fold
 git clone https://github.com/MicrosoftDocs/agent-skills.git
 ```
 
-### Step 2: Copy Skills to Your Destination
+#### Step 2: Copy Skills to Your Destination
 
 Copy the **contents** inside the `skills/` folder to your target location based on your AI assistant:
 
@@ -251,9 +346,11 @@ Copy the **contents** inside the `skills/` folder to your target location based 
 > - **Windows:** `C:\Users\yourname` (use `$HOME` in PowerShell)
 > - **macOS/Linux:** `/Users/yourname` or `/home/yourname`
 
-**Enable Agent Skills in VS Code** (Required for VS Code users):
+**Enable Agent Skills in VS Code** (Required for the manual install above):
 
-Agent Skills is currently an **experimental feature**. You must enable it manually:
+> 💡 Using the [agent plugin](#-one-click-plugin-install) (Option A)? You can skip this — the plugin loads its skills automatically once `chat.plugins.enabled` is on.
+
+Agent Skills is currently an **experimental feature**. For the manual copy method, you must enable it manually:
 
 1. Open VS Code Settings (`Ctrl`+`,` on Windows/Linux, `Cmd`+`,` on macOS)
 2. Search for `chat.agent.skills`
@@ -264,7 +361,7 @@ Agent Skills is currently an **experimental feature**. You must enable it manual
 
 ---
 
-### Step 3: Cleanup (Optional)
+#### Step 3: Cleanup (Optional)
 
 After copying, you can delete the cloned `agent-skills` repository if you no longer need it.
 
@@ -369,7 +466,7 @@ This project uses a dual license:
 
 ## 🏷️ Topics
 
-`azure` `azure-functions` `azure-container-apps` `agent-skills` `ai-coding` `github-copilot` `claude-code` `cursor` `openai-codex` `agentic-skills` `llm-tools` `microsoft-learn` `SKILL.md`
+`azure` `azure-functions` `azure-container-apps` `agent-skills` `agent-plugin` `vscode` `ai-coding` `github-copilot` `claude-code` `cursor` `openai-codex` `agentic-skills` `llm-tools` `microsoft-learn` `SKILL.md`
 
 ---
  

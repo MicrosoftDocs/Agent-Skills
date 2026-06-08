@@ -1,0 +1,31 @@
+{
+  "name": "microsoft-agent-skills",
+  "metadata": {
+    "description": "Azure Agent Skills — a curated marketplace of production-ready agentic skills for Microsoft Azure development.",
+    "version": "1.0.0"
+  },
+  "owner": {
+    "name": "Microsoft"
+  },
+  "plugins": [
+    {
+      "name": "azure-agent-skills",
+      "source": "./",
+      "description": "193+ production-ready Azure skills covering compute, data, AI/ML, networking, security, and management. Built from Microsoft Learn and following the Agent Skills open standard.",
+      "version": "1.0.0",
+      "skills": [
+        "./skills"
+      ],
+      "repository": "https://github.com/MicrosoftDocs/agent-skills",
+      "license": "MIT",
+      "keywords": [
+        "azure",
+        "microsoft",
+        "agent-skills",
+        "cloud",
+        "devops",
+        "ai"
+      ]
+    }
+  ]
+}
