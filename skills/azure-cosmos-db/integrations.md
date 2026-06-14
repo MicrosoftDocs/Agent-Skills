@@ -133,7 +133,7 @@
 | Node.js SDK usage and release notes for Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/sdk-nodejs |
 | Python SDK usage and release notes for Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/sdk-python |
 | Use Cosmos DB as ASP.NET session state and cache provider | https://learn.microsoft.com/en-us/azure/cosmos-db/session-state-and-caching-provider |
-| Use Azure Cosmos DB Shell command syntax and options | https://learn.microsoft.com/en-us/azure/cosmos-db/shell/command-reference |
+| Use Azure Cosmos DB Shell command reference effectively | https://learn.microsoft.com/en-us/azure/cosmos-db/shell/command-reference |
 | Connect to Azure Cosmos DB for Table using the .NET SDK | https://learn.microsoft.com/en-us/azure/cosmos-db/table/how-to-dotnet-get-started |
 | Use transactional batch operations in Azure Cosmos DB SDKs | https://learn.microsoft.com/en-us/azure/cosmos-db/transactional-batch |
 | Integrate Vercel applications with Cosmos DB backends | https://learn.microsoft.com/en-us/azure/cosmos-db/vercel-integration |
@@ -145,12 +145,17 @@
 | Connect Azure Databricks to Azure DocumentDB with Spark | https://learn.microsoft.com/en-us/azure/documentdb/how-to-connect-from-databricks |
 | Persist LangGraph agent state in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/persist-agent-state |
 | Integrate LlamaIndex vector store with Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/query-knowledge-base |
-| Use the .NET/C# driver with Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-dotnet |
-| Use the Go driver with Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-go |
-| Use the Java driver with Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-java |
-| Use the Node.js driver with Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-nodejs |
-| Use the Python driver with Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-python |
-| Use the Rust driver with Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-rust |
+| Integrate .NET/C# applications with Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-dotnet |
+| Use .NET MongoDB driver for vector search in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-dotnet-vector-search |
+| Connect Go applications to Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-go |
+| Implement vector search in Azure DocumentDB with Go | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-go-vector-search |
+| Use Java MongoDB driver with Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-java |
+| Use Java driver for vector search in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-java-vector-search |
+| Connect Node.js apps to Azure DocumentDB via MongoDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-nodejs |
+| Implement vector search in Azure DocumentDB with Node.js | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-nodejs-vector-search |
+| Use Python MongoDB driver with Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-python |
+| Implement vector search in Azure DocumentDB with Python | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-python-vector-search |
+| Use Rust MongoDB driver with Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-rust |
 | Integrate Jaeger tracing with Cassandra managed instances for monitoring | https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/jaeger |
 | Integrate Lucene Index search with Cassandra managed instances | https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/search-lucene-index |
 | Integrate Prometheus and Grafana with Cassandra managed instance metrics | https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/visualize-prometheus-grafana |

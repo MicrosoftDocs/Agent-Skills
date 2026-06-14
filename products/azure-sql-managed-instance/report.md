@@ -54,10 +54,10 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), SQL Ser
 - **Unclassified**: 59
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 10
-- **Unchanged**: 231
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 242
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sql-managed-instance/azure-sql-managed-instance.csv`
 
 ## Classification Statistics
@@ -76,37 +76,6 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), SQL Ser
 | *(Unclassified)* | 59 | 24.4% |
 
 ## Changes
-
-### New Pages
-
-- [Logins, user accounts, roles, and permissions](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/logins-create-manage?view=azuresql)
-
-### Updated Pages
-
-- [Microsoft Entra authentication](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-configure?view=azuresql)
-  - Updated: 2026-03-03T08:00:00.000Z → 2026-05-15T08:00:00.000Z
-- [Server principals (logins)](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-azure-ad-logins?view=azuresql)
-  - Updated: 2025-05-29T08:00:00.000Z → 2026-05-15T08:00:00.000Z
-- [Microsoft Entra server logins](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-azure-ad-logins-tutorial?view=azuresql)
-  - Updated: 2025-09-18T17:34:00.000Z → 2026-05-15T08:00:00.000Z
-- [Configure TDE with BYOK](https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-configure?view=azuresql)
-  - Updated: 2026-03-18T11:48:00.000Z → 2026-06-03T17:37:00.000Z
-- [Application development overview](https://learn.microsoft.com/en-us/azure/azure-sql/database/develop-overview?view=azuresql)
-  - Updated: 2025-06-11T22:31:00.000Z → 2026-05-26T08:00:00.000Z
-- [Feature comparison](https://learn.microsoft.com/en-us/azure/azure-sql/database/features-comparison?view=azuresql)
-  - Updated: 2026-02-19T08:00:00.000Z → 2026-05-26T08:00:00.000Z
-- [Best practices](https://learn.microsoft.com/en-us/azure/azure-sql/database/security-best-practice?view=azuresql)
-  - Updated: 2025-06-13T08:00:00.000Z → 2026-06-02T08:00:00.000Z
-- [Microsoft Entra authentication overview](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-overview?view=azuresql)
-  - Updated: 2025-09-11T08:00:00.000Z → 2026-05-15T08:00:00.000Z
-- [Bring Your Own Key (BYOK)](https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-overview?view=azuresql)
-  - Updated: 2026-04-22T08:00:00.000Z → 2026-06-03T17:37:00.000Z
-- [Long-term backup retention](https://learn.microsoft.com/en-us/azure/azure-sql/database/long-term-retention-overview?view=azuresql)
-  - Updated: 2026-03-06T08:00:00.000Z → 2026-06-05T17:38:00.000Z
-
-### Deleted Pages
-
-- ~~Logins, user accounts, roles, and permissions~~ (https://learn.microsoft.com/en-us/azure/azure-sql/database/logins-create-manage?view=azuresql)
 
 ## Classified Pages
 

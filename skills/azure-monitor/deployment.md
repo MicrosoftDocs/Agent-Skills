@@ -11,7 +11,6 @@
 | Deploy Azure Monitor and Log Analytics agents with ARM templates | https://learn.microsoft.com/en-us/azure/azure-monitor/agents/resource-manager-agent |
 | Deploy Azure Monitor alert rules via CLI, PowerShell, and ARM | https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-create-rule-cli-powershell-arm |
 | Migrate Application Insights smart detection to alerts | https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-smart-detections-migration |
-| Deploy Azure Monitor resources with ARM templates | https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/resource-manager-samples |
 | Move Log Analytics workspaces across subscriptions and resource groups | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/move-workspace |
 | Configure and operate Log Analytics workspace replication | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/workspace-replication |
 | Create custom Azure policies to deploy diagnostic settings at scale | https://learn.microsoft.com/en-us/azure/azure-monitor/platform/diagnostic-settings-policy |

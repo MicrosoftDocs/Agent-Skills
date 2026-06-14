@@ -1,9 +1,9 @@
 ---
 name: azure-sentinel
-description: Expert knowledge for Azure Sentinel development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring data connectors, KQL analytics, Logic Apps playbooks, UEBA/ASIM, or multi-tenant MSSP setups, and other Azure Sentinel related development tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure Monitor (use azure-monitor), Azure Security (use azure-security), Azure External Attack Surface Management (use azure-external-attack-surface-management).
+description: Expert knowledge for Azure Sentinel development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring Sentinel data connectors, KQL/ASIM, Logic Apps playbooks, UEBA, or multi-tenant MSSP setups, and other Azure Sentinel related development tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure Security (use azure-security), Azure Monitor (use azure-monitor), Azure Network Watcher (use azure-network-watcher).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-07"
+  generated_at: "2026-06-14"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Sentinel Skill
@@ -29,10 +29,10 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L77-L117 | Planning Sentinel deployments and migrations (MMA/legacy SIEMs), choosing data tiers/connectors, and optimizing automation, retention, and costs across Azure and Defender portals |
 | Architecture & Design Patterns | L118-L130 | Designing Sentinel architectures: multi-workspace/tenant layouts, MSSP/Lighthouse patterns, BCDR, coexistence with other SIEMs, SAP setups, and integration patterns across portals. |
 | Limits & Quotas | L131-L143 | Limits, quotas, pricing, availability, and known issues for Microsoft Sentinel data, features, long-term search, and watchlists, including implications of disabling or removing the service. |
-| Security | L144-L158 | Configuring Sentinel security: auth for playbooks, RBAC/roles, access policies, CMK & data residency, network perimeters, MSSP IP protection, AWS attack disruption, and SAP security content. |
-| Configuration | L159-L291 | Configuring Microsoft Sentinel: data connectors, analytics and automation rules, ASIM schemas, data lake/KQL jobs, UEBA, health/auditing, SAP/AWS/GCP integrations, and MCP/AI tooling. |
-| Integrations & Coding Patterns | L292-L339 | Patterns and code samples for integrating Microsoft Sentinel with Logic Apps, data connectors, threat intel feeds, MCP tools, KQL/graph APIs, and external services like Teams, XDR, Purview, and Power BI. |
-| Deployment | L340-L360 | Deploying and managing Sentinel content and solutions: CI/CD, repo-based deployments, playbooks, rules as code, marketplace/content hub solutions, and SAP/Dynamics/Power Platform connectors. |
+| Security | L144-L158 | Configuring Sentinel security: auth for playbooks, RBAC and roles, CMK and data residency, network perimeters, SAP and MSSP protections, and AWS identity disruption actions. |
+| Configuration | L159-L290 | Configuring Microsoft Sentinel: data connectors, analytics and automation rules, ASIM schemas, data lake/KQL jobs, UEBA, health/auditing, SAP/AWS/GCP integrations, and MCP/AI tooling. |
+| Integrations & Coding Patterns | L291-L338 | Patterns and code samples for integrating Microsoft Sentinel with Logic Apps, data connectors, threat intel feeds, MCP tools, KQL/graph APIs, and external services like Teams, XDR, Purview, and Power BI. |
+| Deployment | L339-L359 | Deploying and managing Sentinel content and solutions: CI/CD, repo-based deployments, playbooks, rules as code, marketplace/content hub solutions, and SAP/Dynamics/Power Platform connectors. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -149,7 +149,7 @@ This skill requires **network access** to fetch documentation content:
 | Enable Sentinel attack disruption actions on AWS identities | https://learn.microsoft.com/en-us/azure/sentinel/aws-disruption |
 | Configure customer-managed keys for Microsoft Sentinel | https://learn.microsoft.com/en-us/azure/sentinel/customer-managed-keys |
 | Enable network security perimeters for Sentinel Storage connectors | https://learn.microsoft.com/en-us/azure/sentinel/enable-storage-network-security |
-| Plan Sentinel data residency and compliance | https://learn.microsoft.com/en-us/azure/sentinel/geographical-availability-data-residency |
+| Understand Sentinel geographic availability and data residency | https://learn.microsoft.com/en-us/azure/sentinel/geographical-availability-data-residency |
 | Protect MSSP intellectual property in Sentinel deployments | https://learn.microsoft.com/en-us/azure/sentinel/mssp-protect-intellectual-property |
 | Configure resource-context RBAC for Sentinel data access | https://learn.microsoft.com/en-us/azure/sentinel/resource-context-rbac |
 | Configure Microsoft Sentinel roles and permissions | https://learn.microsoft.com/en-us/azure/sentinel/roles |
@@ -205,7 +205,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure federated data connectors in Sentinel data lake | https://learn.microsoft.com/en-us/azure/sentinel/datalake/data-federation-setup |
 | Create and schedule KQL jobs in Sentinel data lake | https://learn.microsoft.com/en-us/azure/sentinel/datalake/kql-jobs |
 | Configure and schedule KQL jobs in Sentinel data lake | https://learn.microsoft.com/en-us/azure/sentinel/datalake/kql-jobs |
-| Configure and manage KQL jobs in Sentinel data lake | https://learn.microsoft.com/en-us/azure/sentinel/datalake/kql-manage-jobs |
 | Run and manage KQL queries in Sentinel data lake UI | https://learn.microsoft.com/en-us/azure/sentinel/datalake/kql-queries |
 | Schedule and manage Sentinel notebook jobs for data processing | https://learn.microsoft.com/en-us/azure/sentinel/datalake/notebook-jobs |
 | Run and configure Jupyter notebooks on Sentinel data lake | https://learn.microsoft.com/en-us/azure/sentinel/datalake/notebooks |

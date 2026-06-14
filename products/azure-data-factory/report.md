@@ -1,9 +1,6 @@
 ---
-generated_at: '2026-06-07'
+generated_at: '2026-06-14'
 category_descriptions:
-  best-practices: 'Performance, DataOps, and reliability best practices for ADF: tuning
-    data flows/copy, optimizing sources/sinks/IR, handling schema drift/errors, and
-    migrating data (HDFS, Netezza, S3) to Azure.'
   configuration: 'Configuring Azure Data Factory: pipelines, activities, triggers,
     data flows, copy behavior, formats, integration runtimes (Azure/self-hosted/SSIS),
     monitoring, parameters, and SAP CDC settings.'
@@ -19,6 +16,9 @@ category_descriptions:
   troubleshooting: 'Diagnosing and fixing ADF issues: connector/format errors, copy
     & data flow performance, pipelines/triggers, SHIR/SSIS IR problems, security/access,
     and interpreting failure logs.'
+  best-practices: 'Performance, DataOps, and reliability best practices for ADF: tuning
+    data flows/copy, optimizing sources/sinks/IR, handling schema drift/errors, and
+    migrating data (HDFS, Netezza, S3) to Azure.'
   architecture-patterns: 'Patterns and architectures for ADF: efficient mapping data
     flows, metadata‑driven copy, SSIS IR with SQL MI/failover/VNet, Cosmos DB migration,
     and SAP CDC design.'
@@ -49,14 +49,14 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 - **Total Pages**: 504
 - **Fetched**: 504
 - **Fetch Failed**: 0
-- **Classified**: 422
-- **Unclassified**: 82
+- **Classified**: 421
+- **Unclassified**: 83
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 502
-- **Deleted Pages**: 1
+- **Updated Pages**: 1
+- **Unchanged**: 503
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-factory/azure-data-factory.csv`
 
 ## Classification Statistics
@@ -64,7 +64,7 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 6 | 1.2% |
-| best-practices | 19 | 3.8% |
+| best-practices | 18 | 3.6% |
 | configuration | 121 | 24.0% |
 | decision-making | 15 | 3.0% |
 | deployment | 11 | 2.2% |
@@ -72,20 +72,14 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | limits-quotas | 2 | 0.4% |
 | security | 27 | 5.4% |
 | troubleshooting | 50 | 9.9% |
-| *(Unclassified)* | 82 | 16.3% |
+| *(Unclassified)* | 83 | 16.5% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Transform data](https://learn.microsoft.com/en-us/azure/data-factory/transform-data)
-  - Updated: 2025-02-13T08:00:00.000Z → 2026-06-02T19:32:00.000Z
-- [Express virtual network injection](https://learn.microsoft.com/en-us/azure/data-factory/azure-ssis-integration-runtime-express-virtual-network-injection)
-  - Updated: 2025-01-08T08:00:00.000Z → 2026-06-03T08:00:00.000Z
-
-### Deleted Pages
-
-- ~~Data Lake U-SQL activity~~ (https://learn.microsoft.com/en-us/azure/data-factory/transform-data-using-data-lake-analytics)
+- [Manage your environment with DataOps](https://learn.microsoft.com/en-us/azure/data-factory/apply-dataops)
+  - Updated: 2024-01-05T08:00:00.000Z → 2024-01-06T08:00:00.000Z
 
 ## Classified Pages
 
@@ -403,7 +397,6 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | [Lookup activity](https://learn.microsoft.com/en-us/azure/data-factory/control-flow-lookup-activity) | configuration | 0.70 | Provides property tables (source, dataset, firstRowOnly) and output schema behavior; product-specific configuration and edge cases (single vs multiple rows). |
 | [Machine Learning Execute Pipeline activity](https://learn.microsoft.com/en-us/azure/data-factory/transform-data-machine-learning-service) | integrations | 0.70 | Shows how to call Azure ML pipelines from ADF/Synapse with activity type, mlPipelineId, experimentName, mlWorkspace, and parameter passing; product-specific cross-service integration contract. |
 | [Manage packages with Azure-SSIS IR package store](https://learn.microsoft.com/en-us/azure/data-factory/azure-ssis-integration-runtime-package-store) | configuration | 0.70 | Explains Azure-SSIS IR package store behavior and configuration, including specific settings and management patterns unique to this feature. |
-| [Manage your environment with DataOps](https://learn.microsoft.com/en-us/azure/data-factory/apply-dataops) | best-practices | 0.70 | Guidance paper with ADF-specific DataOps recommendations (branching, environments, automation) that go beyond generic best practices. |
 | [Map functions](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-map-functions) | integrations | 0.70 | Reference for map functions in ADF/Synapse mapping data flows with concrete function names and parameter usage; constitutes product-specific expression API. |
 | [Metadata driven copy data](https://learn.microsoft.com/en-us/azure/data-factory/copy-data-tool-metadata-driven) | architecture-patterns | 0.70 | Metadata-driven copy tool article describes a specific pattern for large-scale ingestion using control tables and parameterized pipelines, including structure of metadata tables and how they drive execution, which is a product-specific design pattern. |
 | [Metafunctions](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-metafunctions) | integrations | 0.70 | Describes metafunctions available in ADF/Synapse mapping data flows, including names and usage patterns; these are specific to the product’s expression language. |
@@ -588,6 +581,7 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | [Get started with Azure Data Factory](https://learn.microsoft.com/en-us/azure/data-factory/quickstart-get-started) | 0.20 | Intro quickstart for creating a first pipeline; primarily step-by-step tutorial without detailed limits, configs, or troubleshooting matrices. |
 | [Hello World - How to copy data](https://learn.microsoft.com/en-us/azure/data-factory/quickstart-hello-world-copy-data-tool) | 0.20 | Quickstart tutorial for using the Copy Data tool; focuses on step-by-step creation of a simple pipeline without detailed limits, configuration matrices, or troubleshooting content. |
 | [Incrementally load data](https://learn.microsoft.com/en-us/azure/data-factory/tutorial-incremental-copy-overview) | 0.20 | Tutorial overview for incremental copy scenarios; describes the concept and links to tutorials, but the summary indicates scenario explanation rather than detailed configuration tables, limits, or error-resolution mappings. |
+| [Manage your environment with DataOps](https://learn.microsoft.com/en-us/azure/data-factory/apply-dataops) | 0.20 | Appears to be high-level guidance on applying DataOps practices to Azure Data Factory/Synapse without clear indication of numeric limits, configuration parameter tables, error-code-based troubleshooting, or concrete product-specific decision matrices. Likely conceptual best-practice style content rather than detailed expert configuration or limits. |
 | [Overview](https://learn.microsoft.com/en-us/azure/data-factory/industry-sap-overview) | 0.20 | Described as an overview of the SAP Knowledge Center and IP; likely high-level and navigational without detailed limits, configs, or troubleshooting matrices. |
 | [SAP connectors](https://learn.microsoft.com/en-us/azure/data-factory/industry-sap-connectors) | 0.20 | Overview of SAP connectors; summary suggests a catalog/overview of connector types rather than detailed configuration tables, limits, or troubleshooting mappings. |
 | [SAP templates](https://learn.microsoft.com/en-us/azure/data-factory/industry-sap-templates) | 0.20 | Overview of SAP templates; appears to be descriptive and introductory, not focused on detailed configuration parameters, limits, or error-resolution content. |

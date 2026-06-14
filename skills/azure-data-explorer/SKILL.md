@@ -1,9 +1,9 @@
 ---
 name: azure-data-explorer
-description: Expert knowledge for Azure Data Explorer development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring ADX clusters, private endpoints, follower DBs, streaming ingestion, or Power BI integration, and other Azure Data Explorer related development tasks. Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure Stream Analytics (use azure-stream-analytics), Azure HDInsight (use azure-hdinsight), Azure Databricks (use azure-databricks).
+description: Expert knowledge for Azure Data Explorer development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring ADX clusters, KQL/T-SQL queries, ingestion pipelines, follower DBs, or Power BI integration, and other Azure Data Explorer related development tasks. Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure HDInsight (use azure-hdinsight), Azure Databricks (use azure-databricks), Azure Stream Analytics (use azure-stream-analytics).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-17"
+  generated_at: "2026-06-14"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Data Explorer Skill
@@ -28,11 +28,11 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L49-L59 | Guidance on ADX performance and reliability: schema design, handling duplicates, JSON ingestion, monitoring queued ingestion, hot/cold data querying, high concurrency, and Power BI integration. |
 | Decision Making | L60-L74 | Guidance on ADX cluster sizing and SKUs, cost and reservations, business continuity, confidential/isolated compute, streaming ingestion choices, and migrating from Elasticsearch. |
 | Architecture & Design Patterns | L75-L81 | Patterns for ADX deployment: regional DR and replication, cross-cluster access via follower DBs, and multitenant cluster/database design choices. |
-| Limits & Quotas | L82-L92 | Cluster limits and behaviors: free cluster quotas, auto-stop, safe delete/recover, ingestion file size and invalid data handling, and supported data/compression formats. |
-| Security | L93-L120 | Configuring ADX security: auth/RBAC, managed identities, encryption/CMK, network isolation (private endpoints, outbound/public access), policies, compliance, and data privacy (purge). |
-| Configuration | L121-L136 | Configuring ADX clusters, schemas, policies, plugins, and data connections, plus emulator setup, KQL/T-SQL use, monitoring refs, and web UI settings/profiles/shortcuts. |
-| Integrations & Coding Patterns | L137-L170 | Integrating ADX with tools and services (SQL, ODBC/JDBC, Power Automate/Apps, Functions, Grafana, Splunk, OpenTelemetry, Tableau, MATLAB, etc.) and coding/query patterns for those connections. |
-| Deployment | L171-L177 | Provisioning and automating ADX environments, deploying schema via Azure DevOps, and migrating clusters to availability zones and from VNet injection to private endpoints. |
+| Limits & Quotas | L82-L91 | Cluster limits and behaviors: free cluster quotas, auto-stop, safe delete/recover, ingestion file size and invalid data handling, and supported data/compression formats. |
+| Security | L92-L119 | Configuring ADX security: auth/RBAC, managed identities, encryption/CMK, network isolation (private endpoints, outbound/public access), policies, compliance, and data privacy (purge). |
+| Configuration | L120-L134 | Configuring ADX clusters, schemas, policies, plugins, and data connections, plus emulator setup, KQL/T-SQL use, monitoring refs, and web UI settings/profiles/shortcuts. |
+| Integrations & Coding Patterns | L135-L168 | Integrating ADX with tools and services (SQL, ODBC/JDBC, Power Automate/Apps, Functions, Grafana, Splunk, OpenTelemetry, Tableau, MATLAB, etc.) and managing/automating queries and ingestion. |
+| Deployment | L169-L175 | Provisioning and automating ADX environments, deploying schema via Azure DevOps, and migrating clusters to availability zones and from VNet injection to private endpoints. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -87,7 +87,6 @@ This skill requires **network access** to fetch documentation content:
 | Delete and recover Azure Data Explorer clusters safely | https://learn.microsoft.com/en-us/azure/data-explorer/delete-cluster |
 | Understand invalid data behavior during ADX ingestion | https://learn.microsoft.com/en-us/azure/data-explorer/ingest-invalid-data |
 | Supported data and compression formats for Azure Data Explorer ingestion | https://learn.microsoft.com/en-us/azure/data-explorer/ingestion-supported-formats |
-| Use Azure Data Explorer free cluster limits | https://learn.microsoft.com/en-us/azure/data-explorer/start-for-free |
 | Upgrade free Azure Data Explorer clusters and remove limits | https://learn.microsoft.com/en-us/azure/data-explorer/start-for-free-upgrade |
 
 ### Security
@@ -121,7 +120,6 @@ This skill requires **network access** to fetch documentation content:
 ### Configuration
 | Topic | URL |
 |-------|-----|
-| Clone Azure Data Explorer database schemas with management commands | https://learn.microsoft.com/en-us/azure/data-explorer/clone-database-schema |
 | Use KQL database scripts in ARM deployments | https://learn.microsoft.com/en-us/azure/data-explorer/database-script |
 | Programmatically create Azure Data Explorer database and table policies | https://learn.microsoft.com/en-us/azure/data-explorer/database-table-policies |
 | Create cross-tenant Event Hubs data connections for Azure Data Explorer | https://learn.microsoft.com/en-us/azure/data-explorer/ingest-data-cross-tenant |
@@ -138,6 +136,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Manage ADX with Azure PowerShell Kusto cmdlets | https://learn.microsoft.com/en-us/azure/data-explorer/azure-powershell |
+| Clone Azure Data Explorer database schema via commands | https://learn.microsoft.com/en-us/azure/data-explorer/clone-database-schema |
 | Connect common SQL tools to Azure Data Explorer via emulation | https://learn.microsoft.com/en-us/azure/data-explorer/connect-common-apps |
 | Configure JDBC connectivity to Azure Data Explorer | https://learn.microsoft.com/en-us/azure/data-explorer/connect-jdbc |
 | Set up ODBC connections to Azure Data Explorer | https://learn.microsoft.com/en-us/azure/data-explorer/connect-odbc |
@@ -145,7 +144,7 @@ This skill requires **network access** to fetch documentation content:
 | Use ADX connector in Power Automate flows | https://learn.microsoft.com/en-us/azure/data-explorer/flow |
 | Automate ADX queries with Power Automate examples | https://learn.microsoft.com/en-us/azure/data-explorer/flow-usage |
 | Configure Grafana integration with Azure Data Explorer | https://learn.microsoft.com/en-us/azure/data-explorer/grafana |
-| Connect Splunk Enterprise to Azure Data Explorer for ingestion | https://learn.microsoft.com/en-us/azure/data-explorer/ingest-data-splunk |
+| Ingest Splunk Enterprise data into Azure Data Explorer | https://learn.microsoft.com/en-us/azure/data-explorer/ingest-data-splunk |
 | Ingest data from Splunk Universal Forwarder into Azure Data Explorer | https://learn.microsoft.com/en-us/azure/data-explorer/ingest-data-splunk-uf |
 | Configure Telegraf Azure Data Explorer output plugin | https://learn.microsoft.com/en-us/azure/data-explorer/ingest-data-telegraf |
 | Use ADX input/output bindings in Azure Functions | https://learn.microsoft.com/en-us/azure/data-explorer/integrate-azure-functions |
@@ -159,7 +158,6 @@ This skill requires **network access** to fetch documentation content:
 | Integrate Azure Data Explorer with Microsoft Purview | https://learn.microsoft.com/en-us/azure/data-explorer/purview |
 | Query Azure Data Explorer using the Python data client library | https://learn.microsoft.com/en-us/azure/data-explorer/python-query-data |
 | Query Azure Data Explorer from MATLAB using authorization tokens | https://learn.microsoft.com/en-us/azure/data-explorer/query-matlab |
-| Run cross-service queries between Azure Data Explorer and Azure Monitor | https://learn.microsoft.com/en-us/azure/data-explorer/query-monitor-data |
 | Use Redash native connector with Azure Data Explorer | https://learn.microsoft.com/en-us/azure/data-explorer/redash |
 | Use Serilog sink to stream logs into Azure Data Explorer | https://learn.microsoft.com/en-us/azure/data-explorer/serilog-sink |
 | Set up Sisense integration with Azure Data Explorer | https://learn.microsoft.com/en-us/azure/data-explorer/sisense |

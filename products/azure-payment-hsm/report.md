@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-17'
+generated_at: '2026-06-14'
 category_descriptions:
   configuration: 'Configuring Azure Payment HSM networking and access: VNets/peering,
     FastPath, ARM/CLI deployment, IP layout (split/reused VNets), provider registration,
@@ -45,8 +45,8 @@ confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 28
+- **Updated Pages**: 1
+- **Unchanged**: 27
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-payment-hsm/azure-payment-hsm.csv`
 
@@ -63,6 +63,11 @@ confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure
 | *(Unclassified)* | 10 | 35.7% |
 
 ## Changes
+
+### Updated Pages
+
+- [Frequently asked questions](https://learn.microsoft.com/en-us/azure/payment-hsm/faq)
+  - Updated: 2026-01-23T23:18:00.000Z → 2026-06-12T22:35:00.000Z
 
 ## Classified Pages
 
@@ -96,8 +101,8 @@ confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure
 | [PowerShell](https://learn.microsoft.com/en-us/azure/payment-hsm/quickstart-powershell) | 0.40 | PowerShell quickstart; similar to CLI quickstart, focused on basic operations rather than deep configuration or troubleshooting. |
 | [2. View your payment HSMs](https://learn.microsoft.com/en-us/azure/payment-hsm/view-payment-hsms) | 0.30 | Viewing resources via CLI/PowerShell/portal is standard usage; unlikely to contain detailed configuration tables or product-specific troubleshooting. |
 | [4. Delete a commissioned payment HSM](https://learn.microsoft.com/en-us/azure/payment-hsm/remove-payment-hsm) | 0.20 | Page is about decommissioning/removing a Payment HSM and appears to be a procedural tutorial; description/summary do not indicate specific limits, error codes, configuration tables, or other expert-only details. |
+| [Frequently asked questions](https://learn.microsoft.com/en-us/azure/payment-hsm/faq) | 0.20 | FAQ page appears to be high-level Q&A about Azure Payment HSM (basic info, getting started, support). The description and summary do not indicate presence of numeric limits, configuration parameter tables, error-code-based troubleshooting, or detailed security role/permission mappings. Without evidence of such specifics, it is likely conceptual/overview FAQ rather than expert-knowledge content as defined. |
 | [Getting started with Azure Payment HSM](https://learn.microsoft.com/en-us/azure/payment-hsm/getting-started) | 0.20 | Getting started/onboarding article; likely step-by-step enablement without deep configuration tables or product-specific edge cases. |
 | [Lifecycle management](https://learn.microsoft.com/en-us/azure/payment-hsm/lifecycle-management) | 0.20 | Lifecycle overview of Azure Payment HSM with high-level description of service characteristics and responsibilities; no specific limits, configuration parameters, error codes, or decision matrices are evident from the summary. |
 | [Payment HSM overview](https://learn.microsoft.com/en-us/azure/payment-hsm/overview) | 0.20 | High-level service overview and positioning; no detailed limits, configs, or patterns beyond generic description. |
 | [What's new](https://learn.microsoft.com/en-us/azure/payment-hsm/whats-new) | 0.10 | What's new/change log style content; typically announcements rather than detailed technical guidance. |
-| [Frequently asked questions](https://learn.microsoft.com/en-us/azure/payment-hsm/faq) | - | FAQ content is primarily conceptual and introductory (what the service is, basic getting started, support). It does not focus on detailed limits, configuration tables, error-code-based troubleshooting, or other product-specific expert details as defined by the sub-skill types. |

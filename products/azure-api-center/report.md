@@ -36,10 +36,10 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 - **Unclassified**: 24
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 7
-- **Unchanged**: 29
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 38
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-api-center/azure-api-center.csv`
 
 ## Classification Statistics
@@ -54,32 +54,6 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 | *(Unclassified)* | 24 | 63.2% |
 
 ## Changes
-
-### New Pages
-
-- [Register and discover plugins](https://learn.microsoft.com/en-us/azure/api-center/register-discover-plugins)
-- [Enable API Center MCP server](https://learn.microsoft.com/en-us/azure/api-center/discover-catalog-mcp-server)
-
-### Updated Pages
-
-- [What is Azure API Center?](https://learn.microsoft.com/en-us/azure/api-center/overview)
-  - Updated: 2026-03-10T04:29:00.000Z → 2026-06-02T20:30:00.000Z
-- [Register and manage agents](https://learn.microsoft.com/en-us/azure/api-center/register-manage-agents)
-  - Updated: 2026-02-25T23:33:00.000Z → 2026-06-03T05:14:00.000Z
-- [Register and discover MCP servers](https://learn.microsoft.com/en-us/azure/api-center/register-discover-mcp-server)
-  - Updated: 2026-04-21T08:00:00.000Z → 2026-06-02T20:30:00.000Z
-- [Register and discover skills](https://learn.microsoft.com/en-us/azure/api-center/register-discover-skills)
-  - Updated: 2026-05-07T06:30:00.000Z → 2026-06-02T20:30:00.000Z
-- [Synchronize assets from a Git repository](https://learn.microsoft.com/en-us/azure/api-center/synchronize-assets-git)
-  - Updated: 2026-05-07T06:30:00.000Z → 2026-06-01T08:00:00.000Z
-- [Enable and customize API Center portal](https://learn.microsoft.com/en-us/azure/api-center/set-up-api-center-portal)
-  - Updated: 2026-05-01T08:00:00.000Z → 2026-06-02T08:00:00.000Z
-- [Enable plugin marketplace](https://learn.microsoft.com/en-us/azure/api-center/enable-api-center-plugin-marketplace)
-  - Updated: 2026-04-16T06:12:00.000Z → 2026-06-02T20:30:00.000Z
-
-### Deleted Pages
-
-- ~~Overview~~ (https://learn.microsoft.com/en-us/azure/api-center/agent-to-agent-overview)
 
 ## Classified Pages
 

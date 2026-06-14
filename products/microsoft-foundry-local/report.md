@@ -38,8 +38,8 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 22
+- **Updated Pages**: 0
+- **Unchanged**: 23
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/microsoft-foundry-local/microsoft-foundry-local.csv`
 
@@ -54,11 +54,6 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 | *(Unclassified)* | 10 | 43.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [What is Foundry Local?](https://learn.microsoft.com/en-us/azure/foundry-local/what-is-foundry-local)
-  - Updated: 2026-04-09T17:17:00.000Z → 2026-06-02T20:14:00.000Z
 
 ## Classified Pages
 

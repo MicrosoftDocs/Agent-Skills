@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-07'
+generated_at: '2026-06-14'
 category_descriptions:
   configuration: 'Configuring Azure AD B2C: custom policies, user flows, tokens, MFA,
     identity providers, claims/transformations, app/API registration, UI/localization,
@@ -50,13 +50,13 @@ confusable_not_for: Not for Azure Role-based access control (use azure-rbac), Az
 - **Total Pages**: 289
 - **Fetched**: 289
 - **Fetch Failed**: 0
-- **Classified**: 257
-- **Unclassified**: 32
+- **Classified**: 256
+- **Unclassified**: 33
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 288
+- **Updated Pages**: 6
+- **Unchanged**: 283
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-active-directory-b2c/azure-active-directory-b2c.csv`
 
@@ -67,20 +67,30 @@ confusable_not_for: Not for Azure Role-based access control (use azure-rbac), Az
 | architecture-patterns | 5 | 1.7% |
 | best-practices | 5 | 1.7% |
 | configuration | 111 | 38.4% |
-| decision-making | 5 | 1.7% |
+| decision-making | 4 | 1.4% |
 | deployment | 2 | 0.7% |
 | integrations | 109 | 37.7% |
 | limits-quotas | 4 | 1.4% |
 | security | 13 | 4.5% |
 | troubleshooting | 3 | 1.0% |
-| *(Unclassified)* | 32 | 11.1% |
+| *(Unclassified)* | 33 | 11.4% |
 
 ## Changes
 
 ### Updated Pages
 
-- [itsme](https://learn.microsoft.com/en-us/azure/active-directory-b2c/partner-itsme)
-  - Updated: 2024-10-11T08:00:00.000Z → 2026-06-02T08:00:00.000Z
+- [SPA authentication documentation](https://learn.microsoft.com/en-us/azure/active-directory-b2c/index-spa)
+  - Updated: 2024-10-08T05:34:00Z → 2026-06-11T06:13:00Z
+- [Web app authentication documentation](https://learn.microsoft.com/en-us/azure/active-directory-b2c/index-web-app)
+  - Updated: 2024-10-08T05:34:00Z → 2026-06-11T06:13:00Z
+- [Web API authentication documentation](https://learn.microsoft.com/en-us/azure/active-directory-b2c/index-web-api)
+  - Updated: 2024-10-08T05:34:00Z → 2026-06-11T06:13:00Z
+- [Mobile app authentication documentation](https://learn.microsoft.com/en-us/azure/active-directory-b2c/index-mobile)
+  - Updated: 2025-03-13T11:18:00Z → 2026-06-11T06:13:00Z
+- [Desktop app authentication documentation](https://learn.microsoft.com/en-us/azure/active-directory-b2c/index-desktop)
+  - Updated: 2024-10-08T05:34:00Z → 2026-06-11T06:13:00Z
+- [Frequently asked questions](https://learn.microsoft.com/en-us/azure/active-directory-b2c/faq)
+  - Updated: 2026-03-16T11:10:00.000Z → 2026-06-11T06:13:00.000Z
 
 ## Classified Pages
 
@@ -287,7 +297,6 @@ confusable_not_for: Not for Azure Role-based access control (use azure-rbac), Az
 | [Enable authentication in an SPA app](https://learn.microsoft.com/en-us/azure/active-directory-b2c/enable-authentication-spa-app) | integrations | 0.70 | Covers how to configure MSAL.js and B2C policies in a custom SPA with specific config object fields and API usage, which are detailed integration patterns. |
 | [Extensions app](https://learn.microsoft.com/en-us/azure/active-directory-b2c/extensions-app) | configuration | 0.70 | Describes the special b2c-extensions-app that Azure AD B2C auto-creates, its role in storing user/custom attribute data, and the impact if it is deleted. This is product-specific operational/configuration knowledge about a hidden/managed app that an LLM is unlikely to know without the docs. |
 | [File based configuration](https://learn.microsoft.com/en-us/azure/active-directory-b2c/configure-authentication-in-azure-web-app-file-based) | configuration | 0.70 | File-based configuration includes specific JSON/YAML fields and allowed values for B2C auth in App Service, which are detailed configuration parameters. |
-| [Frequently asked questions](https://learn.microsoft.com/en-us/azure/active-directory-b2c/faq) | decision-making | 0.70 | FAQ content for Azure AD B2C includes product-specific lifecycle details (for example, purchase/retirement dates, support implications, and migration guidance) that help users decide whether and how to adopt or migrate from the service. These are time-bound, non-generic details that an LLM is unlikely to know reliably from training and directly support decision-making about service usage. |
 | [Funnel-based design](https://learn.microsoft.com/en-us/azure/active-directory-b2c/b2c-global-identity-funnel-based-design) | architecture-patterns | 0.70 | Covers funnel-based design approach with capabilities and performance considerations, helping choose and apply a specific architecture pattern. |
 | [Grit IAM B2B2C](https://learn.microsoft.com/en-us/azure/active-directory-b2c/partner-grit-iam) | integrations | 0.70 | Describes concrete configuration steps and parameters to connect Grit IAM with Azure AD B2C, including endpoints and claims specific to this integration. |
 | [Grit IEF editor](https://learn.microsoft.com/en-us/azure/active-directory-b2c/partner-grit-editor) | configuration | 0.70 | Describes product-specific configuration workflow and options in the Grit Visual IEF Editor for Azure AD B2C custom policies, including unique settings and behaviors. |
@@ -364,19 +373,20 @@ confusable_not_for: Not for Azure Role-based access control (use azure-rbac), Az
 | [3 - Create user flows and custom policies](https://learn.microsoft.com/en-us/azure/active-directory-b2c/tutorial-create-user-flows) | 0.20 | Explains how to create user flows/custom policies via portal; procedural, not a structured best-practices or configuration reference. |
 | [5 - Clean up and delete tenant](https://learn.microsoft.com/en-us/azure/active-directory-b2c/tutorial-delete-tenant) | 0.20 | Cleanup and delete tenant tutorial; operational steps without detailed limits, security roles, or config matrices. |
 | [Customize the UI with HTML template](https://learn.microsoft.com/en-us/azure/active-directory-b2c/customize-ui-with-html) | 0.20 | Page is a how-to/tutorial for customizing Azure AD B2C UI with HTML templates. From the available summary, it does not show configuration parameter tables, limits, error-code-based troubleshooting, or product-specific decision matrices. It appears to be step-by-step guidance rather than reference-style expert knowledge with detailed configs or constraints. |
-| [Desktop app authentication documentation](https://learn.microsoft.com/en-us/azure/active-directory-b2c/index-desktop) | 0.20 | High-level desktop app documentation index; no detailed settings or troubleshooting indicated. |
+| [Frequently asked questions](https://learn.microsoft.com/en-us/azure/active-directory-b2c/faq) | 0.20 | FAQ page likely mixes conceptual, licensing, and high-level usage questions without structured limits, configuration tables, error-code mappings, or other detailed expert-only data as defined by the sub-skill types. |
 | [Identity verification and proofing partners](https://learn.microsoft.com/en-us/azure/active-directory-b2c/identity-verification-proofing) | 0.20 | Page describes partner-based identity proofing options and product retirement notices for Azure AD B2C, but from the summary it appears to be a conceptual/marketing-style overview of partner integrations rather than containing concrete configuration parameters, limits, error codes, or decision matrices with quantified trade-offs. |
-| [Mobile app authentication documentation](https://learn.microsoft.com/en-us/azure/active-directory-b2c/index-mobile) | 0.20 | Navigation page for mobile app docs; no specific settings, limits, or troubleshooting content indicated. |
 | [Support](https://learn.microsoft.com/en-us/azure/active-directory-b2c/find-help-open-support-ticket) | 0.20 | Describes how to obtain support (technical, billing, subscription) and open tickets. This is process/support information, not product configuration, limits, or troubleshooting content with error codes and resolutions. |
 | [Supported Microsoft Entra ID features](https://learn.microsoft.com/en-us/azure/active-directory-b2c/supported-azure-ad-features) | 0.20 | Appears to be a feature-support/retirement and high-level capability mapping page for Azure AD B2C vs Microsoft Entra ID, without clear evidence of numeric limits, configuration parameter tables, error-code troubleshooting, or detailed decision matrices. Based on the summary, it mainly announces retirement timelines and explains tenant relationships, which is conceptual/announcement content rather than the expert-knowledge patterns defined. |
 | [Technical overview](https://learn.microsoft.com/en-us/azure/active-directory-b2c/technical-overview) | 0.20 | Technical/feature overview but still conceptual; no detailed configuration tables, limits, or troubleshooting mappings. |
-| [Web API authentication documentation](https://learn.microsoft.com/en-us/azure/active-directory-b2c/index-web-api) | 0.20 | Index page that routes to web API how-to guides; summary shows no concrete settings, limits, or error details. |
 | [Find tenant name and ID](https://learn.microsoft.com/en-us/azure/active-directory-b2c/tenant-management-read-tenant-name) | 0.15 | Simple how-to for finding tenant name and ID; no advanced configuration, limits, or security role details. |
 | [About Azure AD B2C](https://learn.microsoft.com/en-us/azure/active-directory-b2c/overview) | 0.10 | High-level product overview and positioning of Azure AD B2C without concrete limits, configs, or error details. |
+| [Desktop app authentication documentation](https://learn.microsoft.com/en-us/azure/active-directory-b2c/index-desktop) | 0.10 | Index page for Azure AD B2C desktop app authentication docs; navigation/overview content without concrete limits, configuration matrices, or troubleshooting mappings. |
 | [Integrate Azure AD B2C with your applications](https://learn.microsoft.com/en-us/azure/active-directory-b2c/integrate-with-app-code-samples) | 0.10 | Index of sample apps; navigation to code samples rather than containing the configuration or integration details itself. |
-| [SPA authentication documentation](https://learn.microsoft.com/en-us/azure/active-directory-b2c/index-spa) | 0.10 | Index page that routes to language-specific SPA docs; primarily navigation without detailed configuration tables or parameters. |
+| [Mobile app authentication documentation](https://learn.microsoft.com/en-us/azure/active-directory-b2c/index-mobile) | 0.10 | Index page for Azure AD B2C mobile app authentication docs; primarily a language/quickstart chooser, not detailed technical guidance with expert-only specifics. |
+| [SPA authentication documentation](https://learn.microsoft.com/en-us/azure/active-directory-b2c/index-spa) | 0.10 | Landing/navigation page that routes to language-specific SPA auth guides; no visible limits, configuration tables, error codes, or other expert-only details. |
 | [Solutions and training](https://learn.microsoft.com/en-us/azure/active-directory-b2c/solution-articles) | 0.10 | Acts as a navigation hub linking to solution guides and training. It does not itself contain technical details, configuration parameters, or decision matrices. |
 | [Use API connectors to modify your user flows](https://learn.microsoft.com/en-us/azure/active-directory-b2c/api-connector-samples) | 0.10 | Index of API connector samples; links out to code, but page itself is a catalog, not a detailed integration reference. |
 | [Videos](https://learn.microsoft.com/en-us/azure/active-directory-b2c/external-identities-videos) | 0.10 | Landing page for a video series about external identities. It is an overview/navigation resource, not a detailed technical reference with configuration parameters or decision matrices. |
-| [Web app authentication documentation](https://learn.microsoft.com/en-us/azure/active-directory-b2c/index-web-app) | 0.10 | High-level index for web app docs; primarily navigation without detailed configuration or integration specifics. |
+| [Web API authentication documentation](https://learn.microsoft.com/en-us/azure/active-directory-b2c/index-web-api) | 0.10 | Index page for Azure AD B2C web API docs; high-level navigation/overview without visible limits, configuration tables, error codes, or other expert-only details. |
+| [Web app authentication documentation](https://learn.microsoft.com/en-us/azure/active-directory-b2c/index-web-app) | 0.10 | Landing/navigation page for Azure AD B2C web app auth quickstarts; contains no specific quotas, configuration parameters, or troubleshooting mappings. |
 | [What's new in docs?](https://learn.microsoft.com/en-us/azure/active-directory-b2c/whats-new-docs) | 0.10 | Change-log style list of new/updated docs; navigation content, not deep technical guidance. |

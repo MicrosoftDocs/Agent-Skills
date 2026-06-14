@@ -1,9 +1,9 @@
 ---
 name: azure-translator
-description: Expert knowledge for Azure Translator development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Translator REST/SDK APIs, Document Translation, Custom Translator models, containers, or async jobs, and other Azure Translator related development tasks. Not for Azure AI Language (use azure-language-service), Azure AI Speech (use azure-speech), Azure AI Immersive Reader (use azure-immersive-reader), Azure AI Document Intelligence (use azure-document-intelligence).
+description: Expert knowledge for Azure Translator development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using text/document translation APIs, Custom Translator models, containers, glossaries, or Azure AD/keys auth, and other Azure Translator related development tasks. Not for Azure AI Language (use azure-language-service), Azure AI Speech (use azure-speech), Azure AI Immersive Reader (use azure-immersive-reader), Azure AI Search (use azure-cognitive-search).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-07"
+  generated_at: "2026-06-14"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Translator Skill
@@ -29,8 +29,8 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L54-L62 | Guidance on choosing custom vs baseline models, planning upgrades, selecting Document Translation infrastructure, and migrating apps between Translator API versions. |
 | Limits & Quotas | L63-L68 | Limits, formats, and data size requirements for Custom Translator training/documents, character and request quotas, and language/locale support for Translator and Document Translation. |
 | Security | L69-L80 | Configuring Azure Translator security: auth (keys, Entra ID, SAS, managed identities), network/firewall/VNet settings, customer-managed keys, and securing data and deployments. |
-| Configuration | L81-L106 | Configuring Azure Translator services, APIs, containers, and Custom Translator (projects, models, workspaces), including translation options (profanity, alignment, tagging, dictionaries, transliteration) and monitoring. |
-| Integrations & Coding Patterns | L107-L142 | Implementing Translator REST/SDK integrations, containers, and Power Automate flows for text/document translation, including async jobs, status APIs, formats, and custom/adaptive models. |
+| Configuration | L81-L104 | Configuring Azure Translator services, APIs, containers, and Custom Translator (projects, models, workspaces), including translation options (profanity, alignment, tagging, dictionaries, transliteration) and monitoring. |
+| Integrations & Coding Patterns | L105-L142 | Implementing Translator via REST/SDK: text and document translation, containers, async jobs, status/format APIs, Blob Storage, Custom/Adaptive models, transliteration, neural dictionary, Power Automate. |
 | Deployment | L143-L146 | Running Translator in Docker containers and deploying or copying custom translation models across regions and Foundry projects for scalable, portable translation setups. |
 
 ### Troubleshooting
@@ -88,9 +88,7 @@ This skill requires **network access** to fetch documentation content:
 | Publish Custom Translator models to regions | https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/how-to/publish-model |
 | Configure Document Translation REST API 2026-03-01 operations | https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/latest/rest-api/guide-overview |
 | Create and configure Azure Translator resources | https://learn.microsoft.com/en-us/azure/ai-services/translator/how-to/create-translator-resource |
-| Configure text translation REST API 2026-06-06 | https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/2026-06-06/rest-api-guide |
 | Use Translator 2026-06-06 translate API parameters | https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/2026-06-06/translate-api |
-| Configure transliteration with Translator 2026-06-06 API | https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/2026-06-06/transliterate-api |
 | Tag content to prevent translation in Azure Translator | https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/how-to/prevent-translation |
 | Use dynamic dictionary markup in Azure Translator | https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/how-to/use-dynamic-dictionary |
 | Configure profanity filtering in Azure Translator | https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/how-to/use-profanity-filtering |
@@ -135,6 +133,8 @@ This skill requires **network access** to fetch documentation content:
 | Integrate with adaptive custom translation (AdaptCT) API | https://learn.microsoft.com/en-us/azure/ai-services/translator/foundry/adaptive-custom-translation |
 | Build Power Automate flows with Translator v3 connector | https://learn.microsoft.com/en-us/azure/ai-services/translator/solutions/connector/document-translation-flow |
 | Configure Power Automate flows with Translator v3 connector | https://learn.microsoft.com/en-us/azure/ai-services/translator/solutions/connector/text-translator-flow |
+| Use Azure Translator text translation REST APIs | https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/2026-06-06/rest-api-guide |
+| Call Azure Translator transliterate REST method | https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/2026-06-06/transliterate-api |
 | Use Azure Translator neural dictionary in apps | https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/how-to/use-neural-dictionary |
 | Use Azure Translator REST APIs with code examples | https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/how-to/use-rest-api |
 | Integrate Azure Translator via SDK client libraries | https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/quickstart/client-library-sdk |

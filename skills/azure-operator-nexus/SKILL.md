@@ -3,7 +3,7 @@ name: azure-operator-nexus
 description: Expert knowledge for Azure Operator Nexus development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring Nexus fabric/BGP, securing RBAC/Key Vault, troubleshooting bare metal, planning SKUs, or upgrading fabric, and other Azure Operator Nexus related development tasks. Not for Azure Network Function Manager (use azure-network-function-manager), Azure Networking (use azure-networking), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Operator Insights (use azure-operator-insights).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-07"
+  generated_at: "2026-06-14"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Operator Nexus Skill
@@ -30,9 +30,9 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L97-L101 | Designing near-edge storage for Azure Operator Nexus: architecture choices, data locality, performance, capacity planning, redundancy, and integration with Nexus network/compute. |
 | Limits & Quotas | L102-L114 | Limits, capacity planning, supported versions, and operational behaviors for Nexus clusters: quotas, storage sizing, node restarts, isolation domain requirements, upgrades, and log retention. |
 | Security | L115-L154 | Securing Nexus: identity and RBAC, ACLs and traffic policies, SSH and break-glass access, credential/cert/key rotation, Defender/Policy, and managed identity/Key Vault integrations. |
-| Configuration | L155-L221 | Configuring and operating Azure Operator Nexus clusters and network fabric: JSON templates, isolation domains, BGP/VRF/route policies, QoS, monitoring, maintenance, and Kubernetes/node settings. |
-| Integrations & Coding Patterns | L222-L226 | Configuring Network Packet Broker TAP rules in Azure Operator Nexus, including rule creation, traffic mirroring, filtering, and integration patterns for network observability. |
-| Deployment | L227-L235 | Guides for upgrading and replacing Nexus fabric devices/terminal servers, running pre-validation and template-based fabric upgrades, and building/maintaining VM images for Operator Nexus. |
+| Configuration | L155-L220 | Configuring and operating Azure Operator Nexus clusters and network fabric: JSON templates, isolation domains, BGP/VRF/route policies, QoS, monitoring, maintenance, and Kubernetes/node settings. |
+| Integrations & Coding Patterns | L221-L225 | Configuring Network Packet Broker TAP rules in Azure Operator Nexus, including rule creation, traffic mirroring, filtering, and integration patterns for network observability. |
+| Deployment | L226-L233 | Guides for upgrading and replacing Nexus fabric devices/terminal servers, running pre-validation and template-based fabric upgrades, and building/maintaining VM images for Operator Nexus. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -199,7 +199,6 @@ This skill requires **network access** to fetch documentation content:
 | Monitor VNF virtual machines on Operator Nexus | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-monitor-virtualized-network-functions-virtual-machines |
 | Configure Quality of Service for Nexus Network Fabric via Azure CLI | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-network-fabric-quality-of-service |
 | Deploy Azure Operator Nexus instance via template | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-nexus-instance-deployment-template |
-| Put Nexus network devices into maintenance mode | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-put-device-in-maintenance-mode |
 | Reboot Nexus network devices using graceful and ungraceful modes | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-reboot-network-device |
 | Configure administrative lock for Nexus Network Fabric | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-set-administrative-lock-or-unlock-for-network-fabric |
 | Track Nexus asynchronous operations via Azure CLI | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-track-async-operations-cli |
@@ -227,7 +226,6 @@ This skill requires **network access** to fetch documentation content:
 ### Deployment
 | Topic | URL |
 |-------|-----|
-| Replace Nexus fabric network devices using RMA process | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-replace-network-devices |
 | Replace a terminal server in Azure Operator Nexus Network Fabric | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-replace-terminal-server |
 | Pre-validate and upgrade Azure Operator Nexus fabric | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-upgrade-nexus-fabric |
 | Use template to upgrade Azure Operator Nexus fabric | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-upgrade-nexus-fabric-template |

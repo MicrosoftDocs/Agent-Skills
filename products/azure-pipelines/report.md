@@ -52,10 +52,10 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Boards (use a
 - **Unclassified**: 59
 
 ### Incremental Update
-- **New Pages**: 3
-- **Updated Pages**: 2
-- **Unchanged**: 571
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 576
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-pipelines/azure-pipelines.csv`
 
 ## Classification Statistics
@@ -74,23 +74,6 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Boards (use a
 | *(Unclassified)* | 59 | 10.2% |
 
 ## Changes
-
-### New Pages
-
-- [Microsoft-hosted agents](https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/hosted?view=azure-devops)
-- [GitHub-hosted agents (PAYG)](https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/github-hosted?view=azure-devops)
-- [FAQ](https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/github-hosted-faq?view=azure-devops)
-
-### Updated Pages
-
-- [Troubleshoot pipeline runs](https://learn.microsoft.com/en-us/azure/devops/pipelines/troubleshooting/troubleshooting?view=azure-devops)
-  - Updated: 2026-04-20T08:00:00.000Z → 2026-06-03T20:26:00.000Z
-- [IISWebAppManagementOnMachineGroup@0](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/iisweb-app-management-on-machine-group-v0?view=azure-pipelines)
-  - Updated: 2026-04-27T08:00:00.000Z → 2026-06-01T22:02:00.000Z
-
-### Deleted Pages
-
-- ~~Hosted agents~~ (https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/hosted?view=azure-devops)
 
 ## Classified Pages
 

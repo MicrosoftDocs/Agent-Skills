@@ -3,7 +3,7 @@ name: azure-data-factory
 description: Expert knowledge for Azure Data Factory development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building ADF pipelines, mapping data flows, integration runtimes, SAP CDC, or SSIS-to-Azure migrations, and other Azure Data Factory related development tasks. Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure Databricks (use azure-databricks), Azure Stream Analytics (use azure-stream-analytics), Azure Data Explorer (use azure-data-explorer).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-07"
+  generated_at: "2026-06-14"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Data Factory Skill
@@ -25,14 +25,14 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L37-L90 | Diagnosing and fixing ADF issues: connector/format errors, copy & data flow performance, pipelines/triggers, SHIR/SSIS IR problems, security/access, and interpreting failure logs. |
-| Best Practices | L91-L113 | Performance, DataOps, and reliability best practices for ADF: tuning data flows/copy, optimizing sources/sinks/IR, handling schema drift/errors, and migrating data (HDFS, Netezza, S3) to Azure. |
-| Decision Making | L114-L132 | Guidance for architectural and cost decisions in ADF: choosing runtimes/compute/connectors, planning upgrades/migrations (SSIS, Synapse, Fabric), and optimizing pricing and reserved capacity. |
-| Architecture & Design Patterns | L133-L142 | Patterns and architectures for ADF: efficient mapping data flows, metadata‑driven copy, SSIS IR with SQL MI/failover/VNet, Cosmos DB migration, and SAP CDC design. |
-| Limits & Quotas | L143-L148 | ADF data flow reservation discounts, pricing behavior, and the official limits/quotas (throughput, activities, pipelines, data flows) documented in the FAQ. |
-| Security | L149-L179 | Securing Data Factory with identity, encryption, Key Vault, and Azure Policy, plus network controls like VNets, Private Link, firewalls, private endpoints, and secure runtimes (Azure-SSIS, self-hosted). |
-| Configuration | L180-L304 | Configuring Azure Data Factory: pipelines, activities, triggers, data flows, copy behavior, formats, integration runtimes (Azure/self-hosted/SSIS), monitoring, parameters, and SAP CDC settings. |
-| Integrations & Coding Patterns | L305-L479 | Patterns and how-tos for integrating ADF with many data sources, using connectors, mapping data flow functions, activities, templates, and orchestrating Databricks, Synapse, SSIS, and ML jobs. |
-| Deployment | L480-L493 | CI/CD and deployment for ADF: ARM/linked templates, Azure DevOps pipelines, hotfix flows, pre/post scripts, IR automation, SSIS job migration, and runtime network migration. |
+| Best Practices | L91-L112 | Performance, DataOps, and reliability best practices for ADF: tuning data flows/copy, optimizing sources/sinks/IR, handling schema drift/errors, and migrating data (HDFS, Netezza, S3) to Azure. |
+| Decision Making | L113-L131 | Guidance for architectural and cost decisions in ADF: choosing runtimes/compute/connectors, planning upgrades/migrations (SSIS, Synapse, Fabric), and optimizing pricing and reserved capacity. |
+| Architecture & Design Patterns | L132-L141 | Patterns and architectures for ADF: efficient mapping data flows, metadata‑driven copy, SSIS IR with SQL MI/failover/VNet, Cosmos DB migration, and SAP CDC design. |
+| Limits & Quotas | L142-L147 | ADF data flow reservation discounts, pricing behavior, and the official limits/quotas (throughput, activities, pipelines, data flows) documented in the FAQ. |
+| Security | L148-L178 | Securing Data Factory with identity, encryption, Key Vault, and Azure Policy, plus network controls like VNets, Private Link, firewalls, private endpoints, and secure runtimes (Azure-SSIS, self-hosted). |
+| Configuration | L179-L303 | Configuring Azure Data Factory: pipelines, activities, triggers, data flows, copy behavior, formats, integration runtimes (Azure/self-hosted/SSIS), monitoring, parameters, and SAP CDC settings. |
+| Integrations & Coding Patterns | L304-L478 | Patterns and how-tos for integrating ADF with many data sources, using connectors, mapping data flow functions, activities, templates, and orchestrating Databricks, Synapse, SSIS, and ML jobs. |
+| Deployment | L479-L492 | CI/CD and deployment for ADF: ARM/linked templates, Azure DevOps pipelines, hotfix flows, pre/post scripts, IR automation, SSIS job migration, and runtime network migration. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -91,7 +91,6 @@ This skill requires **network access** to fetch documentation content:
 ### Best Practices
 | Topic | URL |
 |-------|-----|
-| Apply DataOps practices to Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/apply-dataops |
 | Use column patterns in mapping data flows | https://learn.microsoft.com/en-us/azure/data-factory/concepts-data-flow-column-pattern |
 | Reuse logic with flowlets in mapping data flows | https://learn.microsoft.com/en-us/azure/data-factory/concepts-data-flow-flowlet |
 | Tune mapping data flow performance in Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/concepts-data-flow-performance |

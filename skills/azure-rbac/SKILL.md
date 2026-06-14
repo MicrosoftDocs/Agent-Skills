@@ -1,9 +1,9 @@
 ---
 name: azure-rbac
-description: Expert knowledge for Azure Role-based access control development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when defining roles, ABAC conditions, PIM, deny assignments, or automating RBAC via CLI/PowerShell/ARM, and other Azure Role-based access control related development tasks. Not for Azure Policy (use azure-policy), Azure Security (use azure-security), Azure Portal (use azure-portal), Azure Resource Manager (use azure-resource-manager).
+description: Expert knowledge for Azure Role-based access control development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when configuring roles, ABAC conditions, PIM, deny assignments, or ARM/Bicep/CLI/PowerShell role automation, and other Azure Role-based access control related development tasks. Not for Azure Active Directory B2C (use azure-active-directory-b2c), Azure Information Protection (use azure-information-protection), Azure Policy (use azure-policy), Azure Security (use azure-security).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-07"
+  generated_at: "2026-06-14"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Role-based access control Skill
@@ -24,7 +24,7 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L43 | Diagnosing and fixing Azure RBAC problems: activity log auditing, role/condition errors, assignment condition troubleshooting, and limits for built‑in and custom roles. |
+| Troubleshooting | L35-L43 | Diagnosing and fixing Azure RBAC problems: auditing role changes, resolving role/custom role limits, and troubleshooting role assignment condition and common access issues. |
 | Best Practices | L44-L50 | Security-focused guidance on designing Azure RBAC: choosing scopes, delegating access with ABAC conditions, and applying least privilege and separation-of-duties best practices. |
 | Decision Making | L51-L56 | Guidance on choosing and migrating role models: moving from classic admins to RBAC, scaling with ABAC, selecting Azure vs Entra vs classic roles, and transferring subscriptions between directories. |
 | Limits & Quotas | L57-L62 | Designing and managing Azure RBAC custom roles, including understanding role structure, permissions, and step-by-step creation using the Azure portal |
@@ -37,7 +37,7 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Audit Azure RBAC changes using Activity Log | https://learn.microsoft.com/en-us/azure/role-based-access-control/change-history-report |
 | Resolve common issues with Azure RBAC conditions | https://learn.microsoft.com/en-us/azure/role-based-access-control/conditions-faq |
-| Troubleshoot Azure RBAC role assignment conditions | https://learn.microsoft.com/en-us/azure/role-based-access-control/conditions-troubleshoot |
+| Diagnose and fix Azure role assignment condition issues | https://learn.microsoft.com/en-us/azure/role-based-access-control/conditions-troubleshoot |
 | Resolve Azure RBAC role and custom role limit issues | https://learn.microsoft.com/en-us/azure/role-based-access-control/troubleshoot-limits |
 | Diagnose and resolve common Azure RBAC issues | https://learn.microsoft.com/en-us/azure/role-based-access-control/troubleshooting |
 

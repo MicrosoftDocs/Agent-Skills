@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-07'
+generated_at: '2026-06-14'
 category_descriptions:
   deployment: 'Using App Configuration in CI/CD: exporting/importing settings, creating
     snapshots, integrating with Azure Pipelines, GitHub Actions, and Helm/Kubernetes
@@ -7,8 +7,8 @@ category_descriptions:
   decision-making: Guidance on App Configuration client library support lifecycles
     and how to upgrade Spring Boot apps to use App Configuration library v6.
   integrations: Patterns and code samples for integrating Azure App Configuration
-    into .NET, Go, JavaScript, Python, AKS, Event Grid, and AI apps, including dynamic
-    config, feature flags, filters, and REST/Key Vault usage
+    into .NET, Go, JavaScript, Python, AKS, Front Door, and AI apps, including dynamic
+    config, feature flags, filters, and REST usage.
   configuration: 'Configuring App Configuration behavior: feature flags, filters,
     snapshots, geo-replication, soft delete, Kubernetes provider, emulator, dynamic
     refresh, and AI/chat completion settings.'
@@ -25,16 +25,17 @@ category_descriptions:
     and common error patterns.
 skill_description: Expert knowledge for Azure App Configuration development including
   troubleshooting, best practices, decision making, limits & quotas, security, configuration,
-  integrations & coding patterns, and deployment. Use when using feature flags, dynamic
-  refresh, snapshots, geo-replication, or Key Vault–backed configurations, and other
-  Azure App Configuration related development tasks. Not for Azure App Service (use
-  azure-app-service), Azure Key Vault (use azure-key-vault), Azure Automation (use
-  azure-automation).
-use_when: Use when using feature flags, dynamic refresh, snapshots, geo-replication,
-  or Key Vault–backed configurations, and other Azure App Configuration related development
-  tasks.
-confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Key Vault
+  integrations & coding patterns, and deployment. Use when using App Configuration
+  feature flags, dynamic refresh, snapshots, REST API auth, or CI/CD export/import,
+  and other Azure App Configuration related development tasks. Not for Azure App Service
+  (use azure-app-service), Azure Functions (use azure-functions), Azure Key Vault
   (use azure-key-vault), Azure Automation (use azure-automation).
+use_when: Use when using App Configuration feature flags, dynamic refresh, snapshots,
+  REST API auth, or CI/CD export/import, and other Azure App Configuration related
+  development tasks.
+confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Functions
+  (use azure-functions), Azure Key Vault (use azure-key-vault), Azure Automation (use
+  azure-automation).
 ---
 # Azure App Configuration Crawl Report
 
@@ -48,8 +49,8 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Key
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 162
+- **Updated Pages**: 2
+- **Unchanged**: 163
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-app-configuration/azure-app-configuration.csv`
 
@@ -71,12 +72,10 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Key
 
 ### Updated Pages
 
-- [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-network-security)
-  - Updated: 2026-05-26T17:19:00.000Z → 2026-06-02T19:32:00.000Z
-- [Network security perimeter](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-network-security-perimeter)
-  - Updated: 2026-05-26T17:19:00.000Z → 2026-06-02T19:32:00.000Z
-- [Disable public network access](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-disable-public-access)
-  - Updated: 2026-05-26T17:19:00.000Z → 2026-06-02T19:32:00.000Z
+- [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/configuration-provider-overview)
+  - Updated: 2026-02-23T08:00:00.000Z → 2026-06-11T17:23:00.000Z
+- [Feature reference](https://learn.microsoft.com/en-us/azure/azure-app-configuration/reference-python-provider)
+  - Updated: 2026-02-06T06:10:00.000Z → 2026-06-11T17:23:00.000Z
 
 ## Classified Pages
 
@@ -111,7 +110,6 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Key
 | [Encrypt data using customer-managed keys](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-customer-managed-keys) | security | 0.75 | Describes using Key Vault keys for encryption; likely includes key configuration, identity requirements, and rotation behavior specific to App Configuration. |
 | [Feature reference](https://learn.microsoft.com/en-us/azure/azure-app-configuration/reference-dotnet-provider) | integrations | 0.75 | Reference for .NET provider library with managed loading and extra functionality; contains product-specific API patterns and options. |
 | [Feature reference](https://learn.microsoft.com/en-us/azure/azure-app-configuration/reference-javascript-provider) | integrations | 0.75 | Reference for JavaScript provider library with managed loading and extra features; product-specific integration details. |
-| [Feature reference](https://learn.microsoft.com/en-us/azure/azure-app-configuration/reference-python-provider) | integrations | 0.75 | Reference for Python provider library with managed loading and added functionality; includes product-specific integration patterns. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-chat-completion-config) | configuration | 0.75 | Describes model selection, prompts, temperature, token limits, etc.; likely includes concrete configuration schema and parameter names for chat completion. |
 | [Feature reference](https://learn.microsoft.com/en-us/azure/azure-app-configuration/reference-go-provider) | integrations | 0.74 | Reference page for the Go configuration provider that describes product-specific integration patterns, including provider APIs, options, and parameters for loading configurations and feature flags from Azure App Configuration. This is concrete SDK/config usage unique to this service, beyond generic Go or configuration concepts. |
 | [.NET](https://learn.microsoft.com/en-us/azure/azure-app-configuration/enable-dynamic-configuration-dotnet-core-push-refresh) | integrations | 0.70 | Push refresh model using App Configuration events; involves client library options, refresh triggers, and configuration parameters unique to this integration. |
@@ -148,6 +146,7 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Key
 | [Feature reference](https://learn.microsoft.com/en-us/azure/azure-app-configuration/feature-management-go-reference) | integrations | 0.70 | Go feature management reference describing library usage and integration with App Configuration; product-specific APIs and patterns. |
 | [Feature reference](https://learn.microsoft.com/en-us/azure/azure-app-configuration/feature-management-javascript-reference) | integrations | 0.70 | JavaScript feature management reference with concrete library usage and integration patterns; product-specific code-level behavior. |
 | [Feature reference](https://learn.microsoft.com/en-us/azure/azure-app-configuration/feature-management-python-reference) | integrations | 0.70 | Python feature management reference describing how to define and evaluate flags with App Configuration; product-specific APIs and patterns. |
+| [Feature reference](https://learn.microsoft.com/en-us/azure/azure-app-configuration/reference-python-provider) | integrations | 0.70 | Python configuration provider reference typically includes product-specific integration details such as provider options, parameter names, and usage patterns on top of the base Azure SDK, which qualify as integration & coding patterns beyond generic SDK usage. |
 | [Get started](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-ai-agent-config) | configuration | 0.70 | Page focuses on defining agent instructions and toolsets via Azure App Configuration, likely including specific key structures, schemas, and configuration patterns unique to the Agent framework + App Configuration integration. This is product-specific configuration guidance rather than a generic overview. |
 | [Go](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-chat-completion-go) | integrations | 0.70 | Go integration quickstart; shows how to load and apply chat completion configuration from App Configuration with product-specific code patterns. |
 | [Go Gin](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-feature-filters-go) | integrations | 0.70 | Go Gin web app integration; shows how to use App Configuration feature filters with Go-specific APIs and configuration. |
@@ -229,7 +228,6 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Key
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-feature-management) | 0.40 | Conceptual feature management overview; explains practice and terminology without detailed configuration parameters or limits. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-hyperscale-client-configuration) | 0.40 | Conceptual overview of hyperscale configuration delivery via Azure Front Door; summary suggests high-level explanation without detailed config tables or limits. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-snapshots) | 0.40 | Conceptual overview of snapshots; description of what they are without detailed configuration tables, limits, or decision matrices. |
-| [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/configuration-provider-overview) | 0.40 | High-level overview of configuration provider libraries; summary does not show detailed parameter tables or numeric guidance. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/feature-management-overview) | 0.40 | Feature management overview across languages; conceptual description of feature flags without detailed configuration or numeric guidance in the summary. |
 | [Per-environment configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-labels-aspnet-core) | 0.40 | How-to for labels per environment; likely shows usage patterns but not detailed configuration parameter tables or numeric constraints. |
 | [Private endpoints](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-private-endpoint) | 0.40 | Explains what private endpoints are and how they work conceptually for App Configuration; summary does not indicate detailed configuration parameters, role names, or security setting tables that would qualify as product-specific security or configuration expert knowledge. |
@@ -252,3 +250,4 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Key
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-key-value) | 0.20 | Conceptual explanation of key-value storage; no specific limits, configuration tables, or product-specific error/role details. |
 | [Snapshot references](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-snapshot-references) | 0.20 | Conceptual explanation of snapshot references and their purpose (immutable configuration plus dynamic updates). The summary indicates high-level behavior without listing configuration parameters, limits, decision matrices, or error mappings, so it does not meet the expert-knowledge criteria for any sub-skill type. |
 | [About Azure App Configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/overview) | 0.10 | High-level overview of Azure App Configuration; no detailed limits, configs, or error mappings. |
+| [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/configuration-provider-overview) | 0.10 | High-level overview of Azure App Configuration provider libraries; describes purpose and concepts without detailed limits, configuration parameter tables, error codes, or product-specific decision matrices. |

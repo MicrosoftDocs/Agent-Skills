@@ -1,9 +1,9 @@
 ---
 name: azure-container-registry
-description: Expert knowledge for Azure Container Registry development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using ACR Tasks, geo-replication, connected registries, image signing/verification, or caching pulls, and other Azure Container Registry related development tasks. Not for Azure Container Apps (use azure-container-apps), Azure Container Instances (use azure-container-instances), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Red Hat OpenShift (use azure-redhat-openshift).
+description: Expert knowledge for Azure Container Registry development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring ACR auth, geo-replication, image signing, tasks/webhooks, or connected registries via Arc, and other Azure Container Registry related development tasks. Not for Azure Container Apps (use azure-container-apps), Azure Container Instances (use azure-container-instances), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Red Hat OpenShift (use azure-redhat-openshift).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-07"
+  generated_at: "2026-06-14"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Container Registry Skill
@@ -24,7 +24,7 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L52 | Diagnosing and fixing ACR issues: health checks, error codes, login/auth, networking, performance, transfers, logs, artifact cache/streaming, Arc connected registries, and customer-managed keys. |
+| Troubleshooting | L37-L52 | Diagnosing and fixing ACR issues: health checks, error codes, login/auth, network, performance, transfer, logs, artifact cache/streaming, Arc extension, and customer-managed keys. |
 | Best Practices | L53-L60 | Best practices for ACR operations: managing public image dependencies, safe image deletion and storage cleanup, and robust image tagging/versioning strategies. |
 | Decision Making | L61-L67 | Guidance on choosing ACR auth for Kubernetes, migrating image signing from Docker Content Trust to Notary, and planning/configuring geo-replication for multi-region registries. |
 | Architecture & Design Patterns | L68-L73 | Patterns for ACR performance and governance: caching image pulls, geo-replication strategies, connected registries for edge/offline, and gated import workflows for public images. |
@@ -38,7 +38,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Run az acr check-health for quick ACR diagnostics | https://learn.microsoft.com/en-us/azure/container-registry/container-registry-check-health |
-| Resolve common Azure Container Registry issues | https://learn.microsoft.com/en-us/azure/container-registry/container-registry-faq |
+| Troubleshoot common Azure Container Registry issues | https://learn.microsoft.com/en-us/azure/container-registry/container-registry-faq |
 | Interpret az acr check-health error codes and fixes | https://learn.microsoft.com/en-us/azure/container-registry/container-registry-health-error-reference |
 | View and manage Azure Container Registry task run logs | https://learn.microsoft.com/en-us/azure/container-registry/container-registry-tasks-logs |
 | Troubleshoot Azure Container Registry Transfer issues | https://learn.microsoft.com/en-us/azure/container-registry/container-registry-transfer-troubleshooting |

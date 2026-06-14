@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-06-07'
+generated_at: '2026-06-14'
 category_descriptions:
-  deployment: 'Deploying and migrating Azure Virtual Desktop: adding session hosts,
-    moving from classic AVD, hybrid/on-prem setups, cross-region moves, regional host
-    pools, and per-user client deployment via Intune/ConfigMgr'
+  deployment: 'Deploying and migrating AVD environments: adding session hosts, moving
+    from classic, hybrid/on-prem setups, regional host pools, region moves, and client/MMR
+    deployment via Intune/ConfigMgr'
   configuration: 'Configuring AVD environments: host images, autoscale, networking,
     RDP/peripheral redirection, app attach, licensing, updates, monitoring, Teams/Office,
     and client/RemoteApp behavior.'
@@ -18,9 +18,9 @@ category_descriptions:
   integrations: Managing AVD via CLI/PowerShell, integrating partner App Attach delivery,
     enabling WebRTC multimedia redirection, and launching resources using custom URI
     schemes.
-  security: 'Securing Azure Virtual Desktop: SSO (Entra ID/AD FS), MFA/Conditional
-    Access, RBAC, external identities, clipboard/redirect policies, screen capture/watermarking,
-    WebAuthn, Kerberos, and Purview.'
+  security: 'Securing Azure Virtual Desktop: auth/SSO (Entra ID, AD FS, Kerberos,
+    MFA), RBAC/roles, external identities, clipboard/screen controls, watermarking,
+    WebAuthn, redirection, and Purview forensic onboarding'
   architecture-patterns: Design patterns for AVD app delivery, stateless hosts, DR,
     FSLogix profile containers, and automated scaling with Automation/Logic Apps.
   limits-quotas: Guidance on RDP bandwidth requirements and optimizing Microsoft Teams
@@ -29,30 +29,30 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Virtual Desktop development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when managing FSLogix profiles, app attach, autoscale, Teams optimization, or
-  AVD WebRTC redirection, and other Azure Virtual Desktop related development tasks.
+  Use when managing FSLogix profiles, autoscale, MSIX app attach, Teams optimization,
+  or Entra ID-based access, and other Azure Virtual Desktop related development tasks.
   Not for Azure Virtual Machines (use azure-virtual-machines), Azure Dev Box (use
-  azure-dev-box), Azure VMware Solution (use azure-vmware-solution).
-use_when: Use when managing FSLogix profiles, app attach, autoscale, Teams optimization,
-  or AVD WebRTC redirection, and other Azure Virtual Desktop related development tasks.
+  azure-dev-box), Azure Data Science Virtual Machines (use azure-data-science-vm).
+use_when: Use when managing FSLogix profiles, autoscale, MSIX app attach, Teams optimization,
+  or Entra ID-based access, and other Azure Virtual Desktop related development tasks.
 confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines), Azure
-  Dev Box (use azure-dev-box), Azure VMware Solution (use azure-vmware-solution).
+  Dev Box (use azure-dev-box), Azure Data Science Virtual Machines (use azure-data-science-vm).
 ---
 # Azure Virtual Desktop Crawl Report
 
 ## Summary
 
-- **Total Pages**: 154
-- **Fetched**: 154
+- **Total Pages**: 156
+- **Fetched**: 156
 - **Fetch Failed**: 0
-- **Classified**: 120
+- **Classified**: 122
 - **Unclassified**: 34
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 4
 - **Updated Pages**: 0
-- **Unchanged**: 153
-- **Deleted Pages**: 0
+- **Unchanged**: 152
+- **Deleted Pages**: 2
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-desktop/azure-virtual-desktop.csv`
 
 ## Classification Statistics
@@ -61,20 +61,28 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 |------|-------|------------|
 | architecture-patterns | 4 | 2.6% |
 | best-practices | 7 | 4.5% |
-| configuration | 56 | 36.4% |
-| decision-making | 12 | 7.8% |
-| deployment | 7 | 4.5% |
+| configuration | 56 | 35.9% |
+| decision-making | 12 | 7.7% |
+| deployment | 8 | 5.1% |
 | integrations | 3 | 1.9% |
 | limits-quotas | 2 | 1.3% |
-| security | 16 | 10.4% |
-| troubleshooting | 13 | 8.4% |
-| *(Unclassified)* | 34 | 22.1% |
+| security | 17 | 10.9% |
+| troubleshooting | 13 | 8.3% |
+| *(Unclassified)* | 34 | 21.8% |
 
 ## Changes
 
 ### New Pages
 
-- [Context-based redirections (Preview)](https://learn.microsoft.com/en-us/azure/virtual-desktop/context-based-redirections-avd)
+- [Deploy the MMR Insider Extension](https://learn.microsoft.com/en-us/azure/virtual-desktop/deploy-insider-extension)
+- [Require single sign-on using Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/virtual-desktop/require-authentication-using-microsoft-entra-id)
+- [Host Component](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-multimedia-redirection)
+- [Browser Extension](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-multimedia-redirection-extension)
+
+### Deleted Pages
+
+- ~~Deploy the MMR Preview Extension~~ (https://learn.microsoft.com/en-us/azure/virtual-desktop/deploy-preview-extension)
+- ~~Multimedia redirection~~ (https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-multimedia-redirection)
 
 ## Classified Pages
 
@@ -112,6 +120,7 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [MSIXMGR tool parameters](https://learn.microsoft.com/en-us/azure/virtual-desktop/msixmgr-tool-syntax-description) | configuration | 0.78 | Contains command-line parameter reference and syntax for MSIXMGR, including parameter names, allowed values, and behavior—classic configuration reference content. |
 | [MTP and PTP](https://learn.microsoft.com/en-us/azure/virtual-desktop/redirection-configure-plug-play-mtp-ptp) | configuration | 0.78 | Explains how to configure redirection for MTP/PTP devices using specific RDP/Group Policy settings and flags, which are product-specific configuration parameters. |
 | [Printers](https://learn.microsoft.com/en-us/azure/virtual-desktop/redirection-configure-printers) | configuration | 0.78 | Printer redirection setup uses concrete RDP properties and policy names to control which printers are redirected, representing detailed configuration knowledge. |
+| [Require single sign-on using Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/virtual-desktop/require-authentication-using-microsoft-entra-id) | security | 0.78 | The page describes how to enforce Microsoft Entra ID authentication for RDP-based connections in Azure Virtual Desktop, including product-specific security configuration steps and settings (for example, how to require Entra ID regardless of client and how it interacts with single sign-on). This is concrete, service-specific security configuration guidance rather than a conceptual overview. |
 | [Send diagnostic data to Log Analytics](https://learn.microsoft.com/en-us/azure/virtual-desktop/diagnostics-log-analytics) | troubleshooting | 0.78 | Describes AVD diagnostics categories and how to use Log Analytics to identify connection issues, including specific log categories and queries—symptom-to-diagnosis troubleshooting content. |
 | [Serial/COM ports](https://learn.microsoft.com/en-us/azure/virtual-desktop/redirection-configure-serial-com-ports) | configuration | 0.78 | Serial/COM redirection requires specific RDP property names and policy settings, which are product-specific configuration details not captured by generic knowledge. |
 | [Smart cards](https://learn.microsoft.com/en-us/azure/virtual-desktop/redirection-configure-smart-cards) | configuration | 0.78 | Smart card redirection involves concrete RDP/Group Policy settings and possibly flags for enabling/disabling, which are detailed configuration parameters. |
@@ -173,6 +182,7 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Windows 11 Enterprise images](https://learn.microsoft.com/en-us/azure/virtual-desktop/windows-11-language-packs) | configuration | 0.70 | Describes customizing Windows 11 Enterprise images for Azure Virtual Desktop with language packs and features, including behavior changes (non-admin installation) and product-specific configuration steps, which go beyond generic knowledge. |
 | [Windows Enterprise multi-session FAQ](https://learn.microsoft.com/en-us/azure/virtual-desktop/windows-multisession-faq) | best-practices | 0.70 | FAQ includes product-specific guidance and gotchas for Windows 10/11 Enterprise multi-session on Azure Virtual Desktop (for example, supported/unsupported scenarios, configuration recommendations, and behavior differences versus single-session), which are concrete, service-unique best practices rather than generic concepts. |
 | [Context-based redirections (Preview)](https://learn.microsoft.com/en-us/azure/virtual-desktop/context-based-redirections-avd) | security | 0.68 | Page describes configuring granular redirection policies (clipboard, drive, printer, USB) based on authentication context and session conditions, including product-specific security settings and policy parameters for Azure Virtual Desktop. This is security-focused configuration guidance rather than generic concepts. |
+| [Deploy the MMR Insider Extension](https://learn.microsoft.com/en-us/azure/virtual-desktop/deploy-insider-extension) | deployment | 0.68 | Page describes a specific, product-focused deployment process for switching Cloud PCs from the production MMR extension to the Insider extension using Intune policies and manual installation steps. This is deployment-oriented guidance with concrete, Azure Virtual Desktop–specific procedures that go beyond generic knowledge. |
 | [Host pool management approaches](https://learn.microsoft.com/en-us/azure/virtual-desktop/host-pool-management-approaches) | decision-making | 0.68 | Page compares session host configuration management vs standard management for Azure Virtual Desktop host pools, providing product-specific guidance on when to choose each approach and their trade-offs. This is concrete decision guidance rather than a generic overview, fitting the decision-making sub-skill. |
 | [Provide access to external identities](https://learn.microsoft.com/en-us/azure/virtual-desktop/provide-access-external-identities) | security | 0.68 | The article provides product-specific steps and configuration details for granting Azure Virtual Desktop host pool access to external identities (such as Entra B2B/B2C), including required roles/permissions and access configuration patterns. This is security-focused identity and access configuration rather than a generic overview. |
 | [Publish applications with RemoteApp](https://learn.microsoft.com/en-us/azure/virtual-desktop/publish-applications-stream-remoteapp) | configuration | 0.68 | How-to for publishing apps via application groups will include specific portal/PowerShell parameters and constraints for AVD RemoteApp configuration. |
@@ -210,7 +220,6 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Configure personal desktop assignment](https://learn.microsoft.com/en-us/azure/virtual-desktop/configure-host-pool-personal-desktop-assignment-type) | 0.40 | Primarily conceptual and procedural assignment guidance for personal desktops; summary doesn’t indicate detailed config tables, numeric thresholds, or product-specific edge cases. |
 | [Connect to Azure Virtual Desktop](https://learn.microsoft.com/en-us/azure/virtual-desktop/connect-azure-virtual-desktop) | 0.40 | Connection overview for clients; mostly conceptual and basic usage without detailed config tables or product-specific limits. |
 | [Delete a host pool](https://learn.microsoft.com/en-us/azure/virtual-desktop/delete-host-pool) | 0.40 | Procedural deletion steps; summary doesn’t show detailed configuration parameters, limits, or troubleshooting mappings. |
-| [Deploy the MMR Preview Extension](https://learn.microsoft.com/en-us/azure/virtual-desktop/deploy-preview-extension) | 0.40 | The page is a step-by-step deployment/configuration tutorial for switching to the preview MMR extension via Intune. It does not expose structured configuration parameter tables, limits, quotas, error-code-based troubleshooting, or product-specific decision matrices. It mainly describes a process workflow rather than expert reference data that an LLM would lack. |
 | [Graphics encoding overview](https://learn.microsoft.com/en-us/azure/virtual-desktop/graphics-encoding) | 0.40 | Described as explaining how graphics data is encoded and transmitted; likely conceptual without concrete configuration parameters or limits. |
 | [Prerequisites](https://learn.microsoft.com/en-us/azure/virtual-desktop/prerequisites) | 0.40 | Prerequisites overview; likely lists requirements but summary does not indicate detailed config tables or numeric constraints. |
 | [Tag resources](https://learn.microsoft.com/en-us/azure/virtual-desktop/tag-virtual-desktop-resources) | 0.40 | Tagging usage is generic across Azure; summary suggests high-level cost organization without AVD-specific configuration parameters. |
@@ -222,11 +231,12 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Use cases for Azure Virtual Desktop Insights](https://learn.microsoft.com/en-us/azure/virtual-desktop/insights-use-cases) | 0.30 | Describes use cases and scenarios for Insights at a conceptual level; does not emphasize specific parameters, limits, or decision matrices with quantified trade-offs. |
 | [Insights](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-insights) | 0.25 | Insights release notes; summary does not indicate detailed config tables or troubleshooting mappings. |
 | [MSIXMGR tool](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-msixmgr) | 0.25 | MSIXMGR tool release notes; likely version changes, not structured configuration or limits content. |
-| [Multimedia redirection](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-multimedia-redirection) | 0.25 | Multimedia redirection updates; appears as changelog without detailed config matrices or error-resolution flows. |
 | [WebRTC Redirector Service](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-webrtc) | 0.25 | WebRTC Redirector Service release notes; summary suggests version info, not reusable expert configuration or limits. |
 | [Agent](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-agent) | 0.20 | Release notes/what's-new summary for the Azure Virtual Desktop Agent; based on the description it focuses on update behavior and high-level rollout (flighting) rather than concrete limits, configuration tables, error codes, or decision matrices. |
 | [App Attach overview](https://learn.microsoft.com/en-us/azure/virtual-desktop/app-attach-overview) | 0.20 | High-level overview of App Attach; no specific limits, configuration parameter tables, error codes, or detailed decision matrices. Primarily conceptual description of what App Attach is and its benefits. |
 | [Azure Virtual Desktop](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new) | 0.20 | A 'what's new' changelog-style page listing recent Azure Virtual Desktop updates; primarily release notes and marketing/overview of new features without structured limits, configuration tables, decision matrices, or troubleshooting mappings. |
+| [Browser Extension](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-multimedia-redirection-extension) | 0.20 | A 'what's new' changelog for the multimedia redirection browser extension; similar to index 0, it focuses on feature updates rather than limits, configuration matrices, or decision/troubleshooting content required by the sub-skill types. |
+| [Host Component](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-multimedia-redirection) | 0.20 | A 'what's new' changelog for multimedia redirection host; likely lists feature updates and fixes but not structured limits, configs, or troubleshooting mappings as defined. No clear evidence of numeric limits, configuration tables, or error-code-based troubleshooting from the description. |
 | [Private Link with Azure Virtual Desktop](https://learn.microsoft.com/en-us/azure/virtual-desktop/private-link-overview) | 0.20 | High-level overview of using Private Link with Azure Virtual Desktop; summary indicates conceptual benefits without detailed configuration tables or limits. |
 | [SxS Network Stack](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-sxs) | 0.20 | Describes new features and updates for the Azure Virtual Desktop SxS Network Stack; functions as release notes rather than detailed configuration, limits, or troubleshooting guidance with structured expert data. |
 | [Thin client partners](https://learn.microsoft.com/en-us/azure/virtual-desktop/thin-clients) | 0.20 | Primarily a link-out/navigation page to partner thin client vendors and a generic note about using a browser; no detailed configuration tables or product-specific parameters. |

@@ -41,9 +41,9 @@ confusable_not_for: Not for Azure Cost Management (use azure-cost-management), A
 - **Unclassified**: 9
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 4
-- **Unchanged**: 29
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 34
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-advisor/azure-advisor.csv`
 
@@ -60,21 +60,6 @@ confusable_not_for: Not for Azure Cost Management (use azure-cost-management), A
 | *(Unclassified)* | 9 | 26.5% |
 
 ## Changes
-
-### New Pages
-
-- [Advisor MCP Tools](https://learn.microsoft.com/en-us/azure/advisor/advisor-mcp-tools)
-
-### Updated Pages
-
-- [Roles and permissions](https://learn.microsoft.com/en-us/azure/advisor/permissions)
-  - Updated: 2026-05-15T22:14:00.000Z → 2026-06-02T22:21:00.000Z
-- [Recommendation state management](https://learn.microsoft.com/en-us/azure/advisor/advisor-azure-state-management)
-  - Updated: 2026-05-19T08:00:00.000Z → 2026-06-01T08:00:00.000Z
-- [Use Azure Advisor resiliency reviews](https://learn.microsoft.com/en-us/azure/advisor/advisor-resiliency-reviews)
-  - Updated: 2026-05-17T12:07:00.000Z → 2026-06-05T17:13:00.000Z
-- [Use Critical Risks](https://learn.microsoft.com/en-us/azure/advisor/advisor-critical-risks)
-  - Updated: 2026-02-17T18:14:00.000Z → 2026-06-01T08:00:00.000Z
 
 ## Classified Pages
 

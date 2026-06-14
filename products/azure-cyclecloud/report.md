@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-06-07'
+generated_at: '2026-06-14'
 category_descriptions:
   integrations: APIs, CLI, and Python client for automating CycleCloud, plus patterns
     to integrate schedulers (Slurm, Grid Engine, HTCondor, LSF, OpenPBS, HPC Pack),
     NFS, OOD, Prometheus/Grafana, and Event Grid
-  configuration: 'Designing and tuning CycleCloud clusters: template structure, nodes,
-    networking, storage, autoscaling, security, proxies, events, CLI, and node initialization
-    (cluster-init/cloud-init/Jetpack).'
+  configuration: 'Designing, installing, and tuning CycleCloud clusters: templates,
+    networking, storage, autoscaling, security/SSH, proxies, events, CLI/server setup,
+    and node/volume configuration.'
   architecture-patterns: Architectural guidance for designing, deploying, and operating
     resilient, scalable multi‑region Azure HPC clusters with CycleCloud, including
     networking, failover, and regional topology patterns.
@@ -26,14 +26,15 @@ category_descriptions:
 skill_description: Expert knowledge for Azure CycleCloud development including troubleshooting,
   best practices, decision making, architecture & design patterns, security, configuration,
   integrations & coding patterns, and deployment. Use when automating CycleCloud via
-  API/CLI, managing Slurm/HPC clusters, tuning autoscaling, or securing access/SSL,
+  API/CLI, integrating Slurm/LSF/HTCondor, tuning autoscaling, or securing SSH/SSL,
   and other Azure CycleCloud related development tasks. Not for Azure Batch (use azure-batch),
-  Azure HPC Cache (use azure-hpc-cache), Azure Virtual Machines (use azure-virtual-machines).
-use_when: Use when automating CycleCloud via API/CLI, managing Slurm/HPC clusters,
-  tuning autoscaling, or securing access/SSL, and other Azure CycleCloud related development
+  Azure HPC Cache (use azure-hpc-cache), Azure Virtual Machines (use azure-virtual-machines),
+  Azure Managed Lustre (use azure-managed-lustre).
+use_when: Use when automating CycleCloud via API/CLI, integrating Slurm/LSF/HTCondor,
+  tuning autoscaling, or securing SSH/SSL, and other Azure CycleCloud related development
   tasks.
 confusable_not_for: Not for Azure Batch (use azure-batch), Azure HPC Cache (use azure-hpc-cache),
-  Azure Virtual Machines (use azure-virtual-machines).
+  Azure Virtual Machines (use azure-virtual-machines), Azure Managed Lustre (use azure-managed-lustre).
 ---
 # Azure CycleCloud Crawl Report
 
@@ -46,10 +47,10 @@ confusable_not_for: Not for Azure Batch (use azure-batch), Azure HPC Cache (use 
 - **Unclassified**: 28
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 1
-- **Unchanged**: 112
-- **Deleted Pages**: 2
+- **New Pages**: 0
+- **Updated Pages**: 2
+- **Unchanged**: 113
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cyclecloud/azure-cyclecloud.csv`
 
 ## Classification Statistics
@@ -58,9 +59,9 @@ confusable_not_for: Not for Azure Batch (use azure-batch), Azure HPC Cache (use 
 |------|-------|------------|
 | architecture-patterns | 1 | 0.9% |
 | best-practices | 1 | 0.9% |
-| configuration | 41 | 35.7% |
+| configuration | 42 | 36.5% |
 | decision-making | 4 | 3.5% |
-| deployment | 9 | 7.8% |
+| deployment | 8 | 7.0% |
 | integrations | 17 | 14.8% |
 | security | 11 | 9.6% |
 | troubleshooting | 3 | 2.6% |
@@ -68,20 +69,12 @@ confusable_not_for: Not for Azure Batch (use azure-batch), Azure HPC Cache (use 
 
 ## Changes
 
-### New Pages
-
-- [Current Release - 2026.06.02](https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/ccws/2026-06-02?view=cyclecloud-8)
-- [Previous Release - 2026.05.22](https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/ccws/2026-05-22?view=cyclecloud-8)
-
 ### Updated Pages
 
-- [All Releases](https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/ccws/release-notes?view=cyclecloud-8)
-  - Updated: 2026-05-26T17:19:00.000Z → 2026-06-02T19:32:00.000Z
-
-### Deleted Pages
-
-- ~~Previous Release - 2026.04.08~~ (https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/ccws/2026-04-08?view=cyclecloud-8)
-- ~~Current Release - 2026.05.22~~ (https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/ccws/2026-05-22?view=cyclecloud-8)
+- [Manually Install Application](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/install-manual?view=cyclecloud-8)
+  - Updated: 2025-12-10T23:18:00.000Z → 2026-05-28T08:00:00.000Z
+- [Add a Disk](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/add-disk?view=cyclecloud-8)
+  - Updated: 2026-02-26T23:12:00.000Z → 2026-05-29T08:00:00.000Z
 
 ## Classified Pages
 
@@ -98,7 +91,6 @@ confusable_not_for: Not for Azure Batch (use azure-batch), Azure HPC Cache (use 
 | [Node and Nodearray](https://learn.microsoft.com/en-us/azure/cyclecloud/cluster-references/node-nodearray-reference?view=cyclecloud-8) | configuration | 0.85 | Reference for node and nodearray attributes; includes specific configuration fields and behaviors unique to CycleCloud. |
 | [Volume](https://learn.microsoft.com/en-us/azure/cyclecloud/cluster-references/volume-reference?view=cyclecloud-8) | configuration | 0.85 | Reference for volume object attributes and how they map to Azure Disks; detailed configuration schema. |
 | [Log Locations](https://learn.microsoft.com/en-us/azure/cyclecloud/log-locations?view=cyclecloud-8) | troubleshooting | 0.82 | Log locations page lists specific file paths and log names for different components, which are key troubleshooting details unique to the product. |
-| [Add a Disk](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/add-disk?view=cyclecloud-8) | configuration | 0.80 | Includes specific disk types, capacity limits (up to 64 TiB), and template code for defining volumes (for example, 100 GB); clear configuration parameters and limits. |
 | [Cluster Template Overview](https://learn.microsoft.com/en-us/azure/cyclecloud/cluster-references/cluster-template-reference?view=cyclecloud-8) | configuration | 0.80 | Reference for template hierarchy, object attributes, and parameters; includes detailed configuration schema not generally known. |
 | [Enable Return Proxy](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/return-proxy?view=cyclecloud-8) | configuration | 0.80 | Explains how nodes communicate over HTTPS on private port 9443 and how to designate a return proxy with forwarded ports; includes specific port and tunnel configuration. |
 | [Environment](https://learn.microsoft.com/en-us/azure/cyclecloud/cluster-references/environment-reference?view=cyclecloud-8) | configuration | 0.80 | Environment reference for cluster templates; as a rank-1 object it likely lists environment attributes and parameters that map to ARM deployments, with specific field names and usage. |
@@ -125,7 +117,9 @@ confusable_not_for: Not for Azure Batch (use azure-batch), Azure HPC Cache (use 
 | [Mount a Network Fileserver](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/mount-fileserver?view=cyclecloud-8) | configuration | 0.75 | Details default shares, how to mount/disable NFS, and options for managed vs external NFS; includes product-specific mount configuration. |
 | [Run Multiple CycleCloud Installs](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/multiple-installs?view=cyclecloud-8) | configuration | 0.75 | Explains using flags and editing cycle_server.properties with specific port changes; highly product-specific configuration details. |
 | [Use Flex Scale Set Orchestration](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/flex-scalesets?view=cyclecloud-8) | configuration | 0.75 | Explains how to bind nodes to externally created Flex scale sets and credential constraints; includes product-specific orchestration configuration. |
+| [Manually Install Application](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/install-manual?view=cyclecloud-8) | configuration | 0.74 | The manual installation guide includes product-specific system requirements, package names, service setup steps, and configuration details (for example, required OS packages, service users, directories, and configuration commands) that go beyond generic installation knowledge and are unique to Azure CycleCloud. These are concrete configuration instructions rather than just conceptual guidance. |
 | [Microsoft HPC Pack](https://learn.microsoft.com/en-us/azure/cyclecloud/hpcpack?view=cyclecloud-8) | integrations | 0.74 | Describes capabilities and configuration details for HPC Pack integration, which are product-specific integration settings and patterns. |
+| [Add a Disk](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/add-disk?view=cyclecloud-8) | configuration | 0.70 | Page describes how to define and attach Azure managed disk volumes in CycleCloud cluster templates, including specific template code snippets and disk type options. This is product-specific configuration detail (template element names and structure) rather than just conceptual storage info, fitting the configuration category. |
 | [Add a Node Array](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/add-node-array?view=cyclecloud-8) | configuration | 0.70 | Describes node array attributes such as limits, placement groups, and scale set configuration; these are concrete template settings. |
 | [Backup and Restore](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/backup-and-restore?view=cyclecloud-8) | configuration | 0.70 | Details backup locations, directory structure, and restore requirements; product-specific configuration and operational guidance. |
 | [Cluster Parameter Special Parsing](https://learn.microsoft.com/en-us/azure/cyclecloud/cluster-references/special-parsing?view=cyclecloud-8) | configuration | 0.70 | Describes how CycleCloud resolves parameter values and evaluates functions; likely documents specific function names, syntax, and evaluation rules, which are product-specific configuration semantics. |
@@ -159,7 +153,6 @@ confusable_not_for: Not for Azure Batch (use azure-batch), Azure HPC Cache (use 
 | [Configure Proxies](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/running-behind-proxy?view=cyclecloud-8) | configuration | 0.65 | Proxy configuration for HTTP/HTTPS traffic; likely includes specific config properties and environment variables unique to CycleCloud. |
 | [Connect to a Node](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/connect-to-node?view=cyclecloud-8) | configuration | 0.65 | Provides concrete connection strings and usage of the Connect button/CLI for SSH and RDP; these are product-specific connection patterns and parameters beyond generic SSH/RDP knowledge. |
 | [Create Network Fileserver](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/create-fileserver?view=cyclecloud-8) | integrations | 0.65 | Describes how to configure a network file server for use with CycleCloud; likely includes specific configuration snippets and parameters for NFS integration. |
-| [Manually Install Application](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/install-manual?view=cyclecloud-8) | deployment | 0.65 | Manual installation guide with system requirements and component details; contains product-specific deployment requirements and configuration nuances. |
 | [Monitor Clusters](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/monitor-clusters?view=cyclecloud-8) | configuration | 0.65 | Discusses customizing alerts, notifications, event logs, and logging levels; these are product-specific monitoring configuration options. |
 | [Run CycleCloud using ARM Template](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/install-arm?view=cyclecloud-8) | deployment | 0.65 | ARM-template-based installation with product-specific deployment parameters and requirements. |
 | [Run in a Container Instance](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/run-in-container?view=cyclecloud-8) | deployment | 0.65 | Describes running CycleCloud in a container instance with product-specific deployment pattern and constraints for intermittent usage. |

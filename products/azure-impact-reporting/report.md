@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-31'
+generated_at: '2026-06-14'
 category_descriptions:
   integrations: Patterns and examples for integrating Impact Reporting with Azure
     Monitor alerts, Logic Apps, diagnostic logs, Service Health, and APIs (sending,
@@ -33,8 +33,8 @@ confusable_not_for: Not for Azure Carbon Optimization (use azure-carbon-optimiza
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 15
+- **Updated Pages**: 2
+- **Unchanged**: 13
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-impact-reporting/azure-impact-reporting.csv`
 
@@ -48,6 +48,13 @@ confusable_not_for: Not for Azure Carbon Optimization (use azure-carbon-optimiza
 | *(Unclassified)* | 7 | 46.7% |
 
 ## Changes
+
+### Updated Pages
+
+- [Report node health](https://learn.microsoft.com/en-us/azure/azure-impact-reporting/guest-health-impact-report)
+  - Updated: 2026-04-09T11:11:00.000Z → 2026-06-11T17:06:00.000Z
+- [FAQ for Guest Health Reporting](https://learn.microsoft.com/en-us/azure/azure-impact-reporting/guest-health-faq)
+  - Updated: 2026-05-21T06:04:00.000Z → 2026-06-11T17:06:00.000Z
 
 ## Classified Pages
 
@@ -68,8 +75,8 @@ confusable_not_for: Not for Azure Carbon Optimization (use azure-carbon-optimiza
 |-----------|------------|--------|
 | [FAQ for Azure Impact Reporting](https://learn.microsoft.com/en-us/azure/azure-impact-reporting/faq) | 0.40 | Azure Impact Reporting FAQ; likely general questions and answers without structured troubleshooting, configuration parameter tables, or numeric limits. |
 | [FAQ for impact connectors](https://learn.microsoft.com/en-us/azure/azure-impact-reporting/connectors-faq) | 0.40 | FAQ for connectors; summary does not indicate detailed error codes, config tables, or numeric limits. Likely conceptual Q&A rather than deep technical reference. |
-| [FAQ for Guest Health Reporting](https://learn.microsoft.com/en-us/azure/azure-impact-reporting/guest-health-faq) | 0.30 | FAQ may contain some specifics, but summary shows only general preview/legal info and common questions; no clear evidence of numeric limits, configs, or error-code-based troubleshooting. |
+| [FAQ for Guest Health Reporting](https://learn.microsoft.com/en-us/azure/azure-impact-reporting/guest-health-faq) | 0.20 | FAQ pages often mix conceptual and basic usage questions; from the description there is no indication of specific limits, configuration tables, error codes, or decision matrices. It likely does not meet the expert-knowledge criteria for any sub-skill type. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-impact-reporting/guest-health-overview) | 0.20 | Overview of Guest Health Reporting without visible concrete limits, configs, or error mappings; appears conceptual/introductory rather than detailed expert guidance. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-impact-reporting/overview) | 0.20 | High-level overview of Azure Impact Reporting; summary indicates conceptual description of service and preview notice without concrete limits, configs, or error mappings. |
-| [Report node health](https://learn.microsoft.com/en-us/azure/azure-impact-reporting/guest-health-impact-report) | 0.20 | From the summary, the page appears to be a how-to/tutorial style description of using Guest Health Reporting for Azure HPC VMs, without clear evidence of numeric limits, detailed configuration parameter tables, error-code-based troubleshooting, or decision matrices. It likely explains usage rather than providing the kind of product-specific limits, configuration catalogs, or troubleshooting mappings required for expert-knowledge classification. |
+| [Report node health](https://learn.microsoft.com/en-us/azure/azure-impact-reporting/guest-health-impact-report) | 0.20 | Appears to be a how-to/tutorial style page for using Guest Health Reporting, without clear evidence of numeric limits, configuration parameter tables, error-code-based troubleshooting, or other structured expert details as defined. Likely procedural guidance rather than expert reference content. |
 | [View reported impacts](https://learn.microsoft.com/en-us/azure/azure-impact-reporting/view-impact-insights) | 0.20 | Page appears to describe how to view impact reports and insights via REST API, Resource Graph, and Azure portal, but the provided summary does not indicate specific limits, configuration parameter tables, error-code-based troubleshooting, or other detailed expert-only data. It reads as a usage/overview guide rather than containing product-specific numeric limits, configuration matrices, or decision criteria. |

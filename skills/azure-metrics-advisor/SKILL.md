@@ -1,9 +1,9 @@
 ---
 name: azure-metrics-advisor
-description: Expert knowledge for Azure AI Metrics Advisor development including decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when configuring data feeds, alert hooks, detection settings, REST/SDK integrations, or cost/usage controls, and other Azure AI Metrics Advisor related development tasks. Not for Azure AI Anomaly Detector (use azure-anomaly-detector), Azure Monitor (use azure-monitor), Azure Stream Analytics (use azure-stream-analytics).
+description: Expert knowledge for Azure AI Metrics Advisor development including decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when configuring data feeds, tuning anomaly detection, managing alerts/hooks, or calling Metrics Advisor REST/SDKs, and other Azure AI Metrics Advisor related development tasks. Not for Azure AI Anomaly Detector (use azure-anomaly-detector), Azure Monitor (use azure-monitor), Azure Stream Analytics (use azure-stream-analytics).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-07"
+  generated_at: "2026-06-14"
   generator: "docs2skills/1.0.0"
 ---
 # Azure AI Metrics Advisor Skill
@@ -26,7 +26,7 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Decision Making | L33-L37 | Guidance on estimating, controlling, and optimizing Metrics Advisor costs and usage, including pricing factors, quotas, and cost-management best practices. |
 | Limits & Quotas | L38-L42 | Service limits for Metrics Advisor: max metrics, dimensions, alerts, data ingestion rates, detection constraints, and guidance on scaling within quotas. |
-| Security | L43-L48 | Encrypting Metrics Advisor data, configuring auth, and securely creating, storing, and managing data source credentials and keys for anomaly detection. |
+| Security | L43-L48 | Configuring Metrics Advisor security: data encryption, auth options (keys, AAD), and creating/managing secure credential entities for data sources and monitoring. |
 | Configuration | L49-L53 | Setting up Metrics Advisor: configuring alert hooks (email/webhook), alerting rules, data feed and detection settings, and tuning anomaly detection behavior for your instance. |
 | Integrations & Coding Patterns | L54-L58 | Connecting Metrics Advisor to various data sources, crafting valid ingestion queries, and using its REST API/SDKs to integrate anomaly detection into applications |
 
@@ -43,7 +43,7 @@ This skill requires **network access** to fetch documentation content:
 ### Security
 | Topic | URL |
 |-------|-----|
-| Configure Metrics Advisor data encryption and authentication | https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/encryption |
+| Configure encryption and authentication for Metrics Advisor | https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/encryption |
 | Create and manage Metrics Advisor credential entities securely | https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/how-tos/credential-entity |
 
 ### Configuration

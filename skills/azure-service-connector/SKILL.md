@@ -1,9 +1,9 @@
 ---
 name: azure-service-connector
-description: Expert knowledge for Azure Service Connector development including troubleshooting, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when wiring Azure compute to DBs, storage, messaging, AI services, managing auth, regions, IaC, or connection limits, and other Azure Service Connector related development tasks. Not for Azure API Management (use azure-api-management), Azure App Service (use azure-app-service), Azure Functions (use azure-functions), Azure Logic Apps (use azure-logic-apps).
+description: Expert knowledge for Azure Service Connector development including troubleshooting, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when wiring Azure compute to DBs, storage, messaging, AI services, or managing auth via managed identity/SPN/keys, and other Azure Service Connector related development tasks. Not for Azure App Service (use azure-app-service), Azure Functions (use azure-functions), Azure Logic Apps (use azure-logic-apps), Azure API Management (use azure-api-management).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-17"
+  generated_at: "2026-06-14"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Service Connector Skill
@@ -25,9 +25,9 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L34-L39 | Diagnosing and resolving common Azure Service Connector errors, connection failures, auth/permission issues, and configuration problems across supported services and runtimes. |
-| Limits & Quotas | L40-L44 | Limits on number/types of connections, supported scenarios, and guidance to mitigate Service Connector constraints or unsupported configurations. |
-| Security | L45-L51 | Service Connector security, required permissions and Microsoft Entra roles, and how to configure and choose authentication methods for connected services |
-| Configuration | L52-L58 | How to define and retrieve Service Connector connection settings, choose and configure auth methods, and supply correct CLI/IaC parameters for creating connections |
+| Limits & Quotas | L40-L44 | Known limitations of Azure Service Connector, unsupported scenarios, and suggested workarounds or alternatives for common connection and configuration issues. |
+| Security | L45-L51 | Managing Service Connector security: required permissions, Microsoft Entra role assignments, and configuring auth methods (managed identity, service principal, key-based). |
+| Configuration | L52-L58 | How to define and retrieve Service Connector connection settings via IaC and CLI, including required parameters and generated configuration details. |
 | Integrations & Coding Patterns | L59-L91 | How to connect Azure compute to databases, messaging, storage, AI, and config services using Service Connector, including auth patterns, setup steps, and integration examples. |
 | Deployment | L92-L95 | Info on where Service Connector is regionally supported per compute service and how to create connections using infrastructure-as-code tools. |
 
@@ -40,20 +40,20 @@ This skill requires **network access** to fetch documentation content:
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
-| Service Connector limitations and mitigation guidance | https://learn.microsoft.com/en-us/azure/service-connector/known-limitations |
+| Service Connector known limitations and workarounds | https://learn.microsoft.com/en-us/azure/service-connector/known-limitations |
 
 ### Security
 | Topic | URL |
 |-------|-----|
 | Review Microsoft Entra roles assigned by Service Connector | https://learn.microsoft.com/en-us/azure/service-connector/concept-microsoft-entra-roles |
-| Understand Service Connector permission requirements in Azure | https://learn.microsoft.com/en-us/azure/service-connector/concept-permission |
+| Configure required permissions for Azure Service Connector | https://learn.microsoft.com/en-us/azure/service-connector/concept-permission |
 | Configure authentication options for Azure Service Connector | https://learn.microsoft.com/en-us/azure/service-connector/how-to-manage-authentication |
 
 ### Configuration
 | Topic | URL |
 |-------|-----|
 | Define Azure Service Connector IaC connection settings | https://learn.microsoft.com/en-us/azure/service-connector/how-to-build-connections-with-iac-tools |
-| Retrieve Service Connector-added connection configurations | https://learn.microsoft.com/en-us/azure/service-connector/how-to-get-configurations |
+| Retrieve Service Connector-generated connection configurations | https://learn.microsoft.com/en-us/azure/service-connector/how-to-get-configurations |
 | Provide correct CLI parameters to Service Connector | https://learn.microsoft.com/en-us/azure/service-connector/how-to-provide-correct-parameters |
 
 ### Integrations & Coding Patterns

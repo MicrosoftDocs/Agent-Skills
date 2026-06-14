@@ -1,9 +1,9 @@
 ---
 name: azure-deployment-environments
-description: Expert knowledge for Azure Deployment Environments development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring ADE catalogs, Git schemas, RBAC/managed identities, custom image workflows, or CI/CD deployments, and other Azure Deployment Environments related development tasks. Not for Azure DevTest Labs (use azure-devtest-labs), Azure Dev Box (use azure-dev-box), Azure Integration Environments (use azure-integration-environments), Azure Managed Applications (use azure-managed-applications).
+description: Expert knowledge for Azure Deployment Environments development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring ADE catalogs, RBAC/managed identities, Git/ARM catalogs, custom images, or CI/CD environment automation, and other Azure Deployment Environments related development tasks. Not for Azure DevTest Labs (use azure-devtest-labs), Azure Dev Box (use azure-dev-box), Azure Integration Environments (use azure-integration-environments), Azure Managed Applications (use azure-managed-applications).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-07"
+  generated_at: "2026-06-14"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Deployment Environments Skill
@@ -30,9 +30,9 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L52-L56 | Guidance on designing resilient, scalable Azure Deployment Environments architectures, including fault tolerance, high availability, redundancy, and best practices for robust environment design. |
 | Limits & Quotas | L57-L61 | Requesting and managing quota increases for Azure Deployment Environments resource limits, including how to handle capacity constraints and raise support requests. |
 | Security | L62-L69 | RBAC and identity setup for Deployment Environments: planning and assigning roles, configuring managed identities, and authenticating to the REST APIs. |
-| Configuration | L70-L82 | Configuring ADE environments: schemas, environment types, Git catalogs, CLI/ARM setup, auto-deletion, and using environment variables for custom images. |
-| Integrations & Coding Patterns | L83-L89 | Using Azure Developer CLI and ADE CLI to create environments, build custom container images, and manage custom image workflows for Azure Deployment Environments |
-| Deployment | L90-L94 | Using Azure Deployment Environments with CI/CD tools (Azure Pipelines, GitHub Actions) to automate environment creation, updates, and deployments from templates. |
+| Configuration | L70-L81 | Defining ADE environments and types, configuring Git catalogs and ARM provisioning, using the devcenter CLI, auto-deletion, and environment variables for custom images. |
+| Integrations & Coding Patterns | L82-L88 | Using Azure Developer CLI and ADE CLI to create environments, build custom container images, and manage custom image workflows for Azure Deployment Environments |
+| Deployment | L89-L93 | Using Azure Deployment Environments with CI/CD tools (Azure Pipelines, GitHub Actions) to automate environment creation, updates, and deployments from templates. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -70,8 +70,7 @@ This skill requires **network access** to fetch documentation content:
 ### Configuration
 | Topic | URL |
 |-------|-----|
-| Configure environment.yaml schema for Azure Deployment Environments | https://learn.microsoft.com/en-us/azure/deployment-environments/concept-environment-yaml |
-| Configure environment definitions in ADE catalogs | https://learn.microsoft.com/en-us/azure/deployment-environments/configure-environment-definition |
+| Define Azure Deployment Environments with environment.yaml schema | https://learn.microsoft.com/en-us/azure/deployment-environments/concept-environment-yaml |
 | Configure Git-based catalogs for Azure Deployment Environments | https://learn.microsoft.com/en-us/azure/deployment-environments/how-to-configure-catalog |
 | Configure dev center environment types in Azure Deployment Environments | https://learn.microsoft.com/en-us/azure/deployment-environments/how-to-configure-devcenter-environment-types |
 | Configure project-level environment types in Azure Deployment Environments | https://learn.microsoft.com/en-us/azure/deployment-environments/how-to-configure-project-environment-types |

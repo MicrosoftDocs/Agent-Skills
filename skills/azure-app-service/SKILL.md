@@ -1,9 +1,9 @@
 ---
 name: azure-app-service
-description: Expert knowledge for Azure App Service development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when choosing App Service plans, configuring VNet/ASE, setting auth/TLS, deploying via CI/CD/slots, or using WebJobs, and other Azure App Service related development tasks. Not for Azure Functions (use azure-functions), Azure Container Apps (use azure-container-apps), Azure Spring Apps (use azure-spring-apps), Azure Static Web Apps (use azure-static-web-apps).
+description: Expert knowledge for Azure App Service development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when choosing App Service plans/ASE, configuring VNet/custom domains/certs, CI/CD slots, or managed identity access, and other Azure App Service related development tasks. Not for Azure Functions (use azure-functions), Azure Spring Apps (use azure-spring-apps), Azure Static Web Apps (use azure-static-web-apps), Azure Service Fabric (use azure-service-fabric).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-07"
+  generated_at: "2026-06-14"
   generator: "docs2skills/1.0.0"
 ---
 # Azure App Service Skill
@@ -30,9 +30,9 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L75-L79 | Architectural guidance for App Service: ASE geo-distribution, outbound traffic via NAT Gateway, and recommended Azure services/patterns for building scalable, secure apps. |
 | Limits & Quotas | L80-L84 | App Service resource limits (CPU, memory, connections), quota types, how they’re measured/monitored, and how to use metrics to detect and avoid hitting plan or app quotas. |
 | Security | L85-L132 | Securing App Service apps: auth (Entra, social, OIDC, MCP), managed identities, certs/TLS, IP/VNet/firewall, storage/SQL/Graph access, and policy/compliance controls. |
-| Configuration | L133-L186 | Configuring App Service apps: runtime and language settings, containers, networking/VNet, auth, storage, domains/certs, health/monitoring, backups, and App Service Environment options. |
+| Configuration | L133-L186 | Configuring App Service apps: runtime and language settings, containers, networking/VNet/ASE, domains/certs, storage, auth, health/monitoring, backups, and environment variables. |
 | Integrations & Coding Patterns | L187-L196 | Patterns for integrating App Service apps with APM tools, TLS/SSL certs, Application Gateway, MCP, Azure OpenAI chatbots (Node/Flask), and event-driven jobs via WebJobs bindings. |
-| Deployment | L197-L220 | Deploying and scaling App Service apps: CI/CD (GitHub Actions, Azure Pipelines), ZIP/FTP/local Git deploy, custom containers, deployment slots, ASE setup/scaling, DNS migration, and automation scripts. |
+| Deployment | L197-L219 | Deploying and scaling App Service apps: CI/CD (GitHub Actions, Azure Pipelines), ZIP/FTP/local Git deploy, custom containers, deployment slots, ASE setup/scaling, DNS migration, and automation scripts. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -213,7 +213,6 @@ This skill requires **network access** to fetch documentation content:
 | Create an App Service Environment in a virtual network | https://learn.microsoft.com/en-us/azure/app-service/environment/creation |
 | Provision App Service Environment v3 using Terraform | https://learn.microsoft.com/en-us/azure/app-service/environment/creation-terraform |
 | Migrate active DNS domains to Azure App Service | https://learn.microsoft.com/en-us/azure/app-service/manage-custom-dns-migrate-domain |
-| Configure per-app scaling for high-density App Service hosting | https://learn.microsoft.com/en-us/azure/app-service/manage-scale-per-app |
 | Scale up Azure App Service plans and capacities | https://learn.microsoft.com/en-us/azure/app-service/manage-scale-up |
 | Plan for App Service maintenance restarts and downtime | https://learn.microsoft.com/en-us/azure/app-service/routine-maintenance-downtime |
 | Automate App Service deployment with Azure CLI scripts | https://learn.microsoft.com/en-us/azure/app-service/samples-cli |

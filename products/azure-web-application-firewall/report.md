@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 78
+- **Updated Pages**: 0
+- **Unchanged**: 80
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-web-application-firewall/azure-web-application-firewall.csv`
 
@@ -75,13 +75,6 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | *(Unclassified)* | 17 | 21.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [Managed ruleset support policy](https://learn.microsoft.com/en-us/azure/web-application-firewall/ruleset-support-policy)
-  - Updated: 2026-02-26T08:00:00.000Z → 2026-06-02T20:30:00.000Z
-- [Custom rule examples](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/create-custom-waf-rules)
-  - Updated: 2025-05-01T05:13:00.000Z → 2026-06-04T22:19:00.000Z
 
 ## Classified Pages
 

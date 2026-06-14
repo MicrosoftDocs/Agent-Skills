@@ -1,9 +1,9 @@
 ---
 name: azure-well-architected
-description: Expert guidance for designing, assessing, and optimizing Azure workloads using Azure Well Architected. Covers design review checklists, recommendations, design principles, tradeoffs, service guides, workload patterns, and assessment questions. Use when designing AI, HPC, SaaS, AVD, or mission-critical workloads with WAF-aligned Azure patterns and guidance, and other Azure Well Architected related development tasks.
+description: Expert guidance for designing, assessing, and optimizing Azure workloads using Azure Well Architected. Covers design review checklists, recommendations, design principles, tradeoffs, service guides, workload patterns, and assessment questions. Use when designing AI, HPC, SaaS, AVD, or mission-critical workloads with Azure WAF-aligned patterns and guidance, and other Azure Well Architected related development tasks.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-07"
+  generated_at: "2026-06-14"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Well Architected Skill
@@ -24,8 +24,8 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Design Review Checklists | L35-L43 | Checklists to review Azure workloads for cost, operations, performance, reliability, and security best practices, with questions and recommendations for each pillar. |
-| Recommendations | L44-L114 | Prescriptive best practices for Azure workloads across cost, operations, performance, reliability, security, and sustainability—covering design, automation, monitoring, testing, and governance. |
+| Design Review Checklists | L35-L43 | Checklists to review Azure workloads for cost, operations, performance, reliability, and security best practices and identify gaps against Well-Architected guidance. |
+| Recommendations | L44-L114 | Prescriptive best practices to design, operate, and optimize Azure workloads across cost, reliability, performance, security, and sustainability, including monitoring, automation, CI/CD, and incident processes. |
 | Design Principles | L115-L130 | Design patterns and best practices for applying Azure Well-Architected (WAF) principles—cost, reliability, security, performance, ops, sustainability—to AI, SaaS, AVD, HPC, and mission-critical workloads. |
 | Tradeoffs | L131-L140 | Guidance on weighing cost, reliability, performance, security, and operations tradeoffs in Azure architectures, including regions/AZ choices and cross-pillar design decisions. |
 | Service Guides | L141-L184 | Service-specific Azure Well-Architected guidance: design, secure, operate, and optimize AVD, networking, databases, storage, containers, and PaaS services using WAF-aligned best practices. |
@@ -66,11 +66,11 @@ This skill requires **network access** to fetch documentation content:
 | Design data partitioning for reliable Azure workloads | https://learn.microsoft.com/en-us/azure/well-architected/design-guides/partition-data |
 | Implement continuous integration for Azure release engineering | https://learn.microsoft.com/en-us/azure/well-architected/design-guides/release-engineering-continuous-integration |
 | Design and implement automation in Azure workloads | https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/enable-automation |
-| Formalize software development practices for Azure workloads | https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/formalize-development-practices |
-| Standardize and automate Azure operations tasks | https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/formalize-operations-tasks |
+| Formalize development practices for Azure workloads | https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/formalize-development-practices |
+| Standardize Azure operations with formalized tasks | https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/formalize-operations-tasks |
 | Design and run an incident management process for Azure | https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/incident-response |
 | Adopt infrastructure as code for Azure deployments | https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/infrastructure-as-code-design |
-| Implement observability and monitoring for Azure workloads | https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/observability |
+| Design an observability and monitoring system in Azure | https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/observability |
 | Apply safe deployment practices in Azure workloads | https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/safe-deployments |
 | Apply testing strategies for operational excellence | https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/testing |
 | Standardize development tools and processes for Azure teams | https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/tools-processes |

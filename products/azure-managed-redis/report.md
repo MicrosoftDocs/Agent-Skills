@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-07'
+generated_at: '2026-06-14'
 category_descriptions:
   integrations: How to connect apps (ASP.NET Core, .NET, Node.js, Python, Go) to Azure
     Managed Redis, secure with Entra ID, use bindings, keyspace notifications, and
@@ -13,8 +13,8 @@ category_descriptions:
   configuration: 'How to configure and operate Azure Managed Redis: instance settings,
     modules, persistence, geo-replication, monitoring/diagnostics, Grafana, CLI/PowerShell,
     migration, and data import/export.'
-  security: 'Securing Azure Managed Redis: TLS and disk encryption, Entra auth, ACLs,
-    Private Link, security best practices, and enforcing compliance with Azure Policy.'
+  security: 'Securing Azure Managed Redis: TLS, Entra auth, ACLs, disk encryption,
+    Private Link, security best practices, and applying Azure Policy compliance controls.'
   troubleshooting: 'Diagnosing and fixing Azure Managed Redis issues: connectivity,
     latency/timeouts, data loss, server resources, client performance, common errors,
     and using Redis Insight/redis-cli for troubleshooting.'
@@ -27,12 +27,12 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Managed Redis development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building Entra-secured clients, tuning clustering/sharding, configuring persistence/geo-replication,
-  or scaling Azure Managed Redis deployments, and other Azure Managed Redis related
-  development tasks. Not for Azure Cache for Redis (use azure-cache-redis).
-use_when: Use when building Entra-secured clients, tuning clustering/sharding, configuring
-  persistence/geo-replication, or scaling Azure Managed Redis deployments, and other
-  Azure Managed Redis related development tasks.
+  using Entra-auth clients, cluster/sharding, geo-replication, persistence, or Redis
+  Insight diagnostics, and other Azure Managed Redis related development tasks. Not
+  for Azure Cache for Redis (use azure-cache-redis).
+use_when: Use when using Entra-auth clients, cluster/sharding, geo-replication, persistence,
+  or Redis Insight diagnostics, and other Azure Managed Redis related development
+  tasks.
 confusable_not_for: Not for Azure Cache for Redis (use azure-cache-redis).
 ---
 # Azure Managed Redis Crawl Report
@@ -46,9 +46,9 @@ confusable_not_for: Not for Azure Cache for Redis (use azure-cache-redis).
 - **Unclassified**: 8
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 6
-- **Unchanged**: 64
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 71
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-managed-redis/azure-managed-redis.csv`
 
@@ -68,25 +68,10 @@ confusable_not_for: Not for Azure Cache for Redis (use azure-cache-redis).
 
 ## Changes
 
-### New Pages
-
-- [Best practices for the Flash Optimized tier](https://learn.microsoft.com/en-us/azure/redis/best-practices-flash-optimized)
-- [Custom data access permissions](https://learn.microsoft.com/en-us/azure/redis/configure-access-permissions)
-
 ### Updated Pages
 
-- [What's new](https://learn.microsoft.com/en-us/azure/redis/whats-new)
-  - Updated: 2026-04-15T22:11:00.000Z → 2026-06-03T05:14:00.000Z
-- [Create an Azure Managed Redis instance](https://learn.microsoft.com/en-us/azure/redis/quickstart-create-managed-redis)
-  - Updated: 2025-09-05T22:09:00.000Z → 2026-01-10T06:10:00.000Z
-- [About Azure Managed Redis](https://learn.microsoft.com/en-us/azure/redis/overview)
-  - Updated: 2026-03-11T08:00:00.000Z → 2026-06-02T20:30:00.000Z
-- [Azure Managed Redis architecture](https://learn.microsoft.com/en-us/azure/redis/architecture)
-  - Updated: 2026-03-11T08:00:00.000Z → 2026-06-03T17:25:00.000Z
-- [Change the size and tier of a cache](https://learn.microsoft.com/en-us/azure/redis/how-to-scale)
-  - Updated: 2025-11-10T08:00:00.000Z → 2026-05-28T08:00:00.000Z
-- [Microsoft Entra ID for authentication](https://learn.microsoft.com/en-us/azure/redis/entra-for-authentication)
-  - Updated: 2026-02-14T06:11:00.000Z → 2026-06-03T05:14:00.000Z
+- [Configure disk encryption](https://learn.microsoft.com/en-us/azure/redis/how-to-encryption)
+  - Updated: 2025-05-18T08:00:00.000Z → 2026-06-12T05:19:00.000Z
 
 ## Classified Pages
 
@@ -99,7 +84,6 @@ confusable_not_for: Not for Azure Cache for Redis (use azure-cache-redis).
 | [Troubleshoot data loss](https://learn.microsoft.com/en-us/azure/redis/troubleshoot-data-loss) | troubleshooting | 0.85 | Explicitly about diagnosing actual or perceived data loss (partial/complete key loss, expiration) with Redis commands and metrics; clear symptom→diagnosis→resolution structure. |
 | [Troubleshoot latency and timeouts](https://learn.microsoft.com/en-us/azure/redis/troubleshoot-timeouts) | troubleshooting | 0.85 | Focused on latency and timeout exceptions; such docs map symptoms to causes (patching, client timeouts) and mitigations, often with specific timeout settings and commands. |
 | [Client libraries best practices](https://learn.microsoft.com/en-us/azure/redis/best-practices-client-libraries) | best-practices | 0.80 | Explicit best-practices article with guidance on library choice, clustering policies, and avoiding connection issues; highly product-specific. |
-| [Configure disk encryption](https://learn.microsoft.com/en-us/azure/redis/how-to-encryption) | security | 0.80 | Explains PMK/CMK usage and disk encryption behavior specific to this service. |
 | [Configure in Azure portal](https://learn.microsoft.com/en-us/azure/redis/configure) | configuration | 0.80 | Central configuration article describing Redis and platform settings, including parameter names and allowed values. |
 | [Connect to cache using Private Link](https://learn.microsoft.com/en-us/azure/redis/private-link) | security | 0.80 | Private Link article includes VNet, private endpoint, and DNS configuration specific to Redis. |
 | [Development best practice](https://learn.microsoft.com/en-us/azure/redis/best-practices-development) | best-practices | 0.80 | The page explicitly focuses on best practices for developing against Azure Managed Redis, which is likely to include concrete DOs/DON’Ts, recommended code patterns, and service-specific guidance not covered by generic Redis or programming knowledge. |
@@ -117,6 +101,7 @@ confusable_not_for: Not for Azure Cache for Redis (use azure-cache-redis).
 | [Self-service migration](https://learn.microsoft.com/en-us/azure/redis/migrate/migrate-redis-enterprise-self-service) | deployment | 0.75 | Provides step-by-step instructions for both migration paths and discusses operational timing (off-business hours, connectivity blip), which are product-specific deployment/migration execution details. |
 | [Use ASP.NET core output cache](https://learn.microsoft.com/en-us/azure/redis/aspnet-core-output-cache-provider) | integrations | 0.75 | Explains configuring Redis output caching middleware in ASP.NET Core; likely includes middleware options, configuration keys, and Redis-specific settings—an integration/coding pattern. |
 | [Using TLS with a managed cache](https://learn.microsoft.com/en-us/azure/redis/tls-configuration) | security | 0.75 | TLS article specifies supported protocol versions and likely cipher/config options for secure connections. |
+| [Configure disk encryption](https://learn.microsoft.com/en-us/azure/redis/how-to-encryption) | security | 0.74 | How-to guide for configuring disk encryption with customer-managed keys and Azure Key Vault for Azure Managed Redis. This is product-specific security configuration (CMK vs PMK, Key Vault usage) rather than generic encryption theory, so it fits the security sub-skill. It likely includes concrete settings/steps unique to this service, but not limits tables or decision matrices. |
 | [.NET app](https://learn.microsoft.com/en-us/azure/redis/dotnet) | integrations | 0.70 | Quickstart includes concrete .NET connection code and Entra ID auth parameters specific to Azure Managed Redis. |
 | [ASP.NET app](https://learn.microsoft.com/en-us/azure/redis/aspnet) | integrations | 0.70 | Shows ASP.NET Core integration using DefaultAzureCredential and Entra ID for Redis; includes product-specific auth and connection patterns. |
 | [Azure Redis FAQ](https://learn.microsoft.com/en-us/azure/redis/faq) | best-practices | 0.70 | An FAQ that explicitly mentions patterns and best practices for Azure Managed Redis and Azure Cache for Redis is likely to include concrete, product-specific recommendations (for example, connection management patterns, data partitioning approaches, or configuration choices) that go beyond generic Redis usage. These actionable DO/DON'T style recommendations align best with the best-practices sub-skill and represent expert operational knowledge. |

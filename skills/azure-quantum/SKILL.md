@@ -3,7 +3,7 @@ name: azure-quantum
 description: Expert knowledge for Azure Quantum development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when running IonQ/Rigetti jobs, managing quotas, securing workspaces, using QDK/VS Code, or hybrid quantum workflows, and other Azure Quantum related development tasks. Not for Azure HPC Cache (use azure-hpc-cache), Azure Databricks (use azure-databricks), Azure Synapse Analytics (use azure-synapse-analytics), Azure Machine Learning (use azure-machine-learning).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-31"
+  generated_at: "2026-06-14"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Quantum Skill

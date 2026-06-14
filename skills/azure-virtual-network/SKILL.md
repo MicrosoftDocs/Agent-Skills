@@ -3,7 +3,7 @@ name: azure-virtual-network
 description: Expert knowledge for Azure Virtual Network development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and deployment. Use when configuring VNets, NSGs, service endpoints, VNet peering, VPN/ExpressRoute gateways, or Azure Firewall, and other Azure Virtual Network related development tasks. Not for Azure Networking (use azure-networking), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-07"
+  generated_at: "2026-06-14"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Virtual Network Skill
@@ -27,11 +27,11 @@ This skill requires **network access** to fetch documentation content:
 | Troubleshooting | L36-L40 | Diagnosing and fixing Azure VM/VNet connectivity issues: routing and NSG problems, NVAs and routing appliances, SMTP blocking, VNet peering, encryption, and VNet deletion errors. |
 | Best Practices | L41-L52 | Network performance and connectivity guidance: VNet design, NSGs, service endpoints, outbound access, MTU/TCP tuning, and tools to test throughput and latency on Azure VMs. |
 | Decision Making | L53-L62 | Guidance on design choices: when to use accelerated networking, routing preferences, VNets vs appliances, IP upgrade paths, VNet integration options, and cost/performance trade-offs. |
-| Architecture & Design Patterns | L63-L70 | Designing VNet architectures: subnet extension for migrations, VNet peering, hybrid two-tier apps, traffic mirroring with TAP, topology planning, and custom routing options. |
-| Limits & Quotas | L71-L76 | VM networking limits: MANA support per VM size, static public IP assignment and quotas, and per-VM network throughput caps and constraints. |
-| Security | L77-L86 | Network security for VNets: Kubernetes network policies, layered controls, Azure Policy for VNets, Virtual Network encryption concepts/config, and securing storage egress with service endpoint policies. |
-| Configuration | L87-L118 | Configuring Azure Virtual Network components: IPs (public/private/custom), DNS, encryption, monitoring, policies, subnet features, gateways, NAT, firewalls, and VM networking options. |
-| Deployment | L119-L122 | Guidance for upgrading Azure Basic public IP addresses to Standard SKU, including requirements, steps, and considerations for network resources and downtime. |
+| Architecture & Design Patterns | L63-L69 | Designing VNet architectures: subnet extension for migrations, VNet peering, hybrid two-tier apps, traffic mirroring with TAP, topology planning, and custom routing options. |
+| Limits & Quotas | L70-L75 | VM networking limits: MANA support per VM size, static public IP assignment and quotas, and per-VM network throughput caps and constraints. |
+| Security | L76-L85 | Network security for VNets: Kubernetes network policies, layered controls, Azure Policy for VNets, Virtual Network encryption concepts/config, and securing storage egress with service endpoint policies. |
+| Configuration | L86-L117 | Configuring Azure Virtual Network components: IPs (public/private/custom), DNS, encryption, monitoring, policies, subnet features, gateways, NAT, firewalls, and VM networking options. |
+| Deployment | L118-L121 | Guidance for upgrading Azure Basic public IP addresses to Standard SKU, including requirements, steps, and considerations for network resources and downtime. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -65,7 +65,6 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Design subnet extension strategies for Azure migrations | https://learn.microsoft.com/en-us/azure/virtual-network/subnet-extension |
 | Implement hybrid two-tier application with Azure VNets | https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-scenario-udr-gw-nva |
-| Use Azure virtual network TAP for traffic mirroring | https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-tap-overview |
 | Plan Azure virtual network topology and connectivity | https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-vnet-plan-design-arm |
 
 ### Limits & Quotas

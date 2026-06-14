@@ -1,9 +1,9 @@
 ---
 name: azure-managed-redis
-description: Expert knowledge for Azure Managed Redis development including troubleshooting, best practices, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when building Entra-secured clients, tuning clustering/sharding, configuring persistence/geo-replication, or scaling Azure Managed Redis deployments, and other Azure Managed Redis related development tasks. Not for Azure Cache for Redis (use azure-cache-redis).
+description: Expert knowledge for Azure Managed Redis development including troubleshooting, best practices, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when using Entra-auth clients, cluster/sharding, geo-replication, persistence, or Redis Insight diagnostics, and other Azure Managed Redis related development tasks. Not for Azure Cache for Redis (use azure-cache-redis).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-07"
+  generated_at: "2026-06-14"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Managed Redis Skill
@@ -28,7 +28,7 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L48-L63 | Guidance on client and app design, connections, scaling, memory, performance, Kubernetes hosting, monitoring, failover, and troubleshooting best practices for Azure Managed Redis. |
 | Decision Making | L64-L76 | Guidance on choosing Managed Redis vs other tiers, planning capacity and reservations, and selecting/migrating from Basic/Standard/Premium or Redis Enterprise to Azure Managed Redis |
 | Architecture & Design Patterns | L77-L81 | Details of Azure Managed Redis internals: cluster architecture, sharding, high availability, persistence, networking, scaling behavior, and how these design choices affect performance and reliability. |
-| Security | L82-L92 | Securing Azure Managed Redis: TLS and disk encryption, Entra auth, ACLs, Private Link, security best practices, and enforcing compliance with Azure Policy. |
+| Security | L82-L92 | Securing Azure Managed Redis: TLS, Entra auth, ACLs, disk encryption, Private Link, security best practices, and applying Azure Policy compliance controls. |
 | Configuration | L93-L107 | How to configure and operate Azure Managed Redis: instance settings, modules, persistence, geo-replication, monitoring/diagnostics, Grafana, CLI/PowerShell, migration, and data import/export. |
 | Integrations & Coding Patterns | L108-L120 | How to connect apps (ASP.NET Core, .NET, Node.js, Python, Go) to Azure Managed Redis, secure with Entra ID, use bindings, keyspace notifications, and import/export data via Blob. |
 | Deployment | L121-L130 | Scaling, version upgrades, migrations from Basic/Standard/Premium or Redis Enterprise, ARM/Bicep deployment, and configuring maintenance windows for Azure Managed Redis. |
@@ -84,7 +84,7 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Configure custom Redis ACL permissions in Azure Managed Redis | https://learn.microsoft.com/en-us/azure/redis/configure-access-permissions |
 | Configure Microsoft Entra authentication for Azure Managed Redis | https://learn.microsoft.com/en-us/azure/redis/entra-for-authentication |
-| Configure disk encryption for Azure Managed Redis data | https://learn.microsoft.com/en-us/azure/redis/how-to-encryption |
+| Configure customer-managed disk encryption for Azure Managed Redis | https://learn.microsoft.com/en-us/azure/redis/how-to-encryption |
 | Secure Azure Managed Redis with Private Link endpoints | https://learn.microsoft.com/en-us/azure/redis/private-link |
 | Apply security best practices to Azure Managed Redis | https://learn.microsoft.com/en-us/azure/redis/secure-azure-managed-redis |
 | Apply Azure Policy compliance controls to Azure Managed Redis | https://learn.microsoft.com/en-us/azure/redis/security-controls-policy |

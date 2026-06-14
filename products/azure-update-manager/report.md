@@ -49,8 +49,8 @@ confusable_not_for: Not for Azure Automation (use azure-automation), Azure Polic
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 83
+- **Updated Pages**: 0
+- **Unchanged**: 84
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-update-manager/azure-update-manager.csv`
 
@@ -69,11 +69,6 @@ confusable_not_for: Not for Azure Automation (use azure-automation), Azure Polic
 | *(Unclassified)* | 30 | 35.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [Enable Azure Change Tracking and Inventory](https://learn.microsoft.com/en-us/azure/azure-change-tracking-inventory/quickstart-monitor-changes-collect-inventory-azure-change-tracking-inventory)
-  - Updated: 2026-01-10T06:10:00.000Z → 2026-06-04T08:00:00.000Z
 
 ## Classified Pages
 

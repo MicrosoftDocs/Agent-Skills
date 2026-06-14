@@ -1,9 +1,9 @@
 ---
 name: azure-cyclecloud
-description: Expert knowledge for Azure CycleCloud development including troubleshooting, best practices, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when automating CycleCloud via API/CLI, managing Slurm/HPC clusters, tuning autoscaling, or securing access/SSL, and other Azure CycleCloud related development tasks. Not for Azure Batch (use azure-batch), Azure HPC Cache (use azure-hpc-cache), Azure Virtual Machines (use azure-virtual-machines).
+description: Expert knowledge for Azure CycleCloud development including troubleshooting, best practices, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when automating CycleCloud via API/CLI, integrating Slurm/LSF/HTCondor, tuning autoscaling, or securing SSH/SSL, and other Azure CycleCloud related development tasks. Not for Azure Batch (use azure-batch), Azure HPC Cache (use azure-hpc-cache), Azure Virtual Machines (use azure-virtual-machines), Azure Managed Lustre (use azure-managed-lustre).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-07"
+  generated_at: "2026-06-14"
   generator: "docs2skills/1.0.0"
 ---
 # Azure CycleCloud Skill
@@ -29,9 +29,9 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L48-L55 | Guidance on VM placement/availability sets, choosing custom images, planning migration from CycleCloud 7, and using Spot VMs for cost-effective, resilient CycleCloud clusters. |
 | Architecture & Design Patterns | L56-L60 | Architectural guidance for designing, deploying, and operating resilient, scalable multi‑region Azure HPC clusters with CycleCloud, including networking, failover, and regional topology patterns. |
 | Security | L61-L75 | Securing CycleCloud: auth methods (Entra, service principals, managed identities), SSL, SSH/Bastion access, SELinux, and network security for clusters, nodes, and the web portal |
-| Configuration | L76-L120 | Designing and tuning CycleCloud clusters: template structure, nodes, networking, storage, autoscaling, security, proxies, events, CLI, and node initialization (cluster-init/cloud-init/Jetpack). |
-| Integrations & Coding Patterns | L121-L141 | APIs, CLI, and Python client for automating CycleCloud, plus patterns to integrate schedulers (Slurm, Grid Engine, HTCondor, LSF, OpenPBS, HPC Pack), NFS, OOD, Prometheus/Grafana, and Event Grid |
-| Deployment | L142-L153 | Installing, upgrading, and deploying Azure CycleCloud and Slurm workspaces (CLI/ARM/containers), plus planning production setups and moving cluster resources between resource groups. |
+| Configuration | L76-L121 | Designing, installing, and tuning CycleCloud clusters: templates, networking, storage, autoscaling, security/SSH, proxies, events, CLI/server setup, and node/volume configuration. |
+| Integrations & Coding Patterns | L122-L142 | APIs, CLI, and Python client for automating CycleCloud, plus patterns to integrate schedulers (Slurm, Grid Engine, HTCondor, LSF, OpenPBS, HPC Pack), NFS, OOD, Prometheus/Grafana, and Event Grid |
+| Deployment | L143-L153 | Installing, upgrading, and deploying Azure CycleCloud and Slurm workspaces (CLI/ARM/containers), plus planning production setups and moving cluster resources between resource groups. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -90,7 +90,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure volume objects in Azure CycleCloud templates | https://learn.microsoft.com/en-us/azure/cyclecloud/cluster-references/volume-reference?view=cyclecloud-8 |
 | Configure cycle_server.properties for Azure CycleCloud | https://learn.microsoft.com/en-us/azure/cyclecloud/cycleserver-configuration-reference?view=cyclecloud-8 |
 | Configure CycleCloud node events and Event Grid routing | https://learn.microsoft.com/en-us/azure/cyclecloud/events?view=cyclecloud-8 |
-| Configure managed disk volumes in Azure CycleCloud templates | https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/add-disk?view=cyclecloud-8 |
+| Configure Azure CycleCloud managed disk volumes | https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/add-disk?view=cyclecloud-8 |
 | Configure node arrays and scaling behavior in CycleCloud | https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/add-node-array?view=cyclecloud-8 |
 | Backup and restore Azure CycleCloud application data | https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/backup-and-restore?view=cyclecloud-8 |
 | Use cloud-init scripts in Azure CycleCloud templates | https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/cloud-init?view=cyclecloud-8 |
@@ -103,6 +103,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure VM health checks and remediation in CycleCloud | https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/healthcheck?view=cyclecloud-8 |
 | Install and configure the Azure CycleCloud CLI | https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/install-cyclecloud-cli?view=cyclecloud-8 |
 | Manually install Jetpack on Azure CycleCloud VMs | https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/install-jetpack?view=cyclecloud-8 |
+| Manually install and configure Azure CycleCloud server | https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/install-manual?view=cyclecloud-8 |
 | Configure keep-alive settings to prevent node termination | https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/keep-alive?view=cyclecloud-8 |
 | Configure alerts and logging for Azure CycleCloud clusters | https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/monitor-clusters?view=cyclecloud-8 |
 | Configure automatic volume mountpoints in CycleCloud nodes | https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/mount-disk?view=cyclecloud-8 |
@@ -146,7 +147,6 @@ This skill requires **network access** to fetch documentation content:
 | Deploy CycleCloud Workspace for Slurm using Azure CLI | https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/ccws/deploy-with-cli?view=cyclecloud-8 |
 | Plan CycleCloud Workspace for Slurm deployment | https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/ccws/plan-your-deployment?view=cyclecloud-8 |
 | Deploy Azure CycleCloud using ARM templates | https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/install-arm?view=cyclecloud-8 |
-| Manually install and upgrade Azure CycleCloud | https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/install-manual?view=cyclecloud-8 |
 | Move Azure CycleCloud cluster resources between groups | https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/move-resource-group?view=cyclecloud-8 |
 | Plan a production-ready Azure CycleCloud deployment | https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/plan-prod-deployment?view=cyclecloud-8 |
 | Run Azure CycleCloud in Azure Container Instances | https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/run-in-container?view=cyclecloud-8 |

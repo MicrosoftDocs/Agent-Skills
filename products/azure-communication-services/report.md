@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Notification Hubs (use azure-notification-hubs
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 515
+- **Updated Pages**: 0
+- **Unchanged**: 517
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-communication-services/azure-communication-services.csv`
 
@@ -76,13 +76,6 @@ confusable_not_for: Not for Azure Notification Hubs (use azure-notification-hubs
 | *(Unclassified)* | 103 | 19.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [Overview](https://learn.microsoft.com/en-us/azure/communication-services/concepts/call-automation/call-automation)
-  - Updated: 2024-10-25T22:04:00.000Z → 2026-06-02T20:30:00.000Z
-- [Call recording overview](https://learn.microsoft.com/en-us/azure/communication-services/concepts/voice-video-calling/call-recording)
-  - Updated: 2026-02-17T23:12:00.000Z → 2026-06-02T20:30:00.000Z
 
 ## Classified Pages
 

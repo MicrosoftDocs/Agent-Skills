@@ -1,9 +1,9 @@
 ---
 name: azure-expressroute
-description: Expert knowledge for Azure ExpressRoute development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing ExpressRoute circuits, BGP routing, Global Reach, S2S VPN coexistence, or encrypted (IPsec/MACsec) links, and other Azure ExpressRoute related development tasks. Not for Azure Internet Peering (use azure-internet-peering), Azure Peering Service (use azure-peering-service), Azure Virtual WAN (use azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway).
+description: Expert knowledge for Azure ExpressRoute development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing ExpressRoute circuits, gateways, BGP/peering, Global Reach, or S2S VPN over ExpressRoute, and other Azure ExpressRoute related development tasks. Not for Azure Internet Peering (use azure-internet-peering), Azure Peering Service (use azure-peering-service), Azure Virtual WAN (use azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-24"
+  generated_at: "2026-06-14"
   generator: "docs2skills/1.0.0"
 ---
 # Azure ExpressRoute Skill
@@ -32,7 +32,7 @@ This skill requires **network access** to fetch documentation content:
 | Security | L80-L89 | Encryption (IPsec, MACsec), NAT rules, RBAC roles, and security best practices for protecting ExpressRoute circuits and traffic |
 | Configuration | L90-L126 | Configuring and managing ExpressRoute circuits, gateways, routing/peering (IPv4/IPv6, BGP, NAT, filters), Global Reach, monitoring, resiliency, and linking VNets via portal, PowerShell, or CLI |
 | Integrations & Coding Patterns | L127-L133 | Automating ExpressRoute circuit creation/management with PowerShell or Azure CLI, and configuring a site-to-site VPN that runs over ExpressRoute Microsoft peering. |
-| Deployment | L134-L140 | Guides for deploying and migrating ExpressRoute circuits/gateways, understanding Direct SKUs, testing multi-site resiliency, and automating setup with ARM templates, PowerShell, and Terraform. |
+| Deployment | L134-L141 | Guides for deploying and migrating ExpressRoute circuits/gateways, including ARM/Terraform provisioning, Direct SKUs, and moving to zone-redundant or new production circuits. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -137,4 +137,5 @@ This skill requires **network access** to fetch documentation content:
 | Migrate production workloads to a new ExpressRoute circuit | https://learn.microsoft.com/en-us/azure/expressroute/circuit-migration |
 | Understand ExpressRoute Direct SKUs and technical requirements | https://learn.microsoft.com/en-us/azure/expressroute/expressroute-erdirect-about |
 | Deploy an Azure ExpressRoute circuit via ARM template | https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-circuit-resource-manager-template |
+| Migrate to zone-redundant ExpressRoute gateway SKUs | https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-gateway-migration-portal |
 | Provision ExpressRoute circuit and gateway using Terraform | https://learn.microsoft.com/en-us/azure/expressroute/quickstart-create-expressroute-vnet-terraform |

@@ -45,9 +45,9 @@ confusable_not_for: Not for Azure Front Door (use azure-front-door), Azure Load 
 - **Unclassified**: 16
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 44
+- **Unchanged**: 45
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-traffic-manager/azure-traffic-manager.csv`
 
@@ -65,10 +65,6 @@ confusable_not_for: Not for Azure Front Door (use azure-front-door), Azure Load 
 | *(Unclassified)* | 16 | 35.6% |
 
 ## Changes
-
-### New Pages
-
-- [Secure Traffic Manager deployment](https://learn.microsoft.com/en-us/azure/traffic-manager/secure-traffic-manager)
 
 ## Classified Pages
 

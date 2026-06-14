@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-31'
+generated_at: '2026-06-14'
 category_descriptions:
   troubleshooting: 'Troubleshooting Azure Quantum provider issues: diagnosing job
     failures and understanding support/escalation policies and limits for IonQ, PASQAL,
@@ -53,8 +53,8 @@ confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure Databri
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 136
+- **Updated Pages**: 1
+- **Unchanged**: 135
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-quantum/azure-quantum.csv`
 
@@ -74,6 +74,11 @@ confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure Databri
 | *(Unclassified)* | 102 | 75.0% |
 
 ## Changes
+
+### Updated Pages
+
+- [Analyze cryptographic protocols](https://learn.microsoft.com/en-us/azure/quantum/resource-estimator-quantum-safe-planning)
+  - Updated: 2026-05-28T00:28:00.000Z → 2026-06-12T22:08:00.000Z
 
 ## Classified Pages
 
@@ -159,6 +164,7 @@ confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure Databri
 | [Type inference](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/typesystem/typeinference) | 0.25 | Type inference algorithm description; conceptual language feature, no configuration matrices. |
 | [Type parameterizations](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/typesystem/typeparameterizations) | 0.25 | Type-parameterized operations/functions; generic type system feature, no product-specific limits or configs. |
 | [Type system in Q#](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/typesystem/) | 0.25 | Overview of Q# data types and type system; conceptual, no configuration tables or limits. |
+| [Analyze cryptographic protocols](https://learn.microsoft.com/en-us/azure/quantum/resource-estimator-quantum-safe-planning) | 0.20 | Page appears to describe using the Microsoft Quantum resource estimator for quantum-safe cryptography planning at a conceptual/usage level. The summary does not indicate presence of concrete limits, configuration parameter tables, error-code-based troubleshooting, or quantified decision matrices. It reads as a feature/usage overview rather than detailed expert configuration, limits, or troubleshooting guidance. |
 | [Backend simulators](https://learn.microsoft.com/en-us/azure/quantum/backend-simulators) | 0.20 | Describes backend simulators from quantum providers at a conceptual level; no evidence of quotas, config tables, or detailed troubleshooting guidance in the summary. |
 | [Binding scopes](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/statements/bindingscopes) | 0.20 | Describes variable scope rules in Q#; standard language semantics without product-specific operational details. |
 | [Bitwise expressions](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/expressions/bitwiseexpressions) | 0.20 | Bitwise operators and shifts; language syntax, no product-specific constraints. |
@@ -217,6 +223,5 @@ confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure Databri
 | [What is quantum computing?](https://learn.microsoft.com/en-us/azure/quantum/overview-understanding-quantum-computing) | 0.10 | Conceptual explanation of quantum computing principles; no product-specific expert configuration or limits. |
 | [Contributing to the Microsoft Quantum Development Kit](https://learn.microsoft.com/en-us/azure/quantum/contributing-overview) | 0.05 | Community contribution overview for the Quantum Development Kit; process/participation guidance, not technical expert knowledge per defined categories. |
 | [Further reading](https://learn.microsoft.com/en-us/azure/quantum/further-reading-qdk) | 0.05 | Curated list of external learning resources; navigation/reference content without product-specific limits, configuration, or troubleshooting details. |
-| [Analyze cryptographic protocols](https://learn.microsoft.com/en-us/azure/quantum/resource-estimator-quantum-safe-planning) | - | Parse error: Expecting value: line 20 column 13 (char 991) |
 | [Compare multiple configurations](https://learn.microsoft.com/en-us/azure/quantum/resource-estimator-batching) | - | Parse error: Expecting value: line 20 column 13 (char 991) |
 | [Optimize large programs](https://learn.microsoft.com/en-us/azure/quantum/resource-estimator-handle-large-programs) | - | Parse error: Expecting value: line 20 column 13 (char 991) |

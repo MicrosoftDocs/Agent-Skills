@@ -1,9 +1,9 @@
 ---
 name: azure-machine-learning
-description: Expert knowledge for Azure Machine Learning development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building Azure ML pipelines, AutoML jobs, online/batch endpoints, Prompt Flow apps, or MLflow-based deployments, and other Azure Machine Learning related development tasks. Not for Azure Databricks (use azure-databricks), Azure Synapse Analytics (use azure-synapse-analytics), Azure Data Science Virtual Machines (use azure-data-science-vm), Azure HDInsight (use azure-hdinsight).
+description: Expert knowledge for Azure Machine Learning development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building Azure ML pipelines, AutoML jobs, online/batch endpoints, Prompt Flow apps, or MLOps/CI-CD, and other Azure Machine Learning related development tasks. Not for Azure Databricks (use azure-databricks), Azure Synapse Analytics (use azure-synapse-analytics), Azure Data Science Virtual Machines (use azure-data-science-vm), Azure HDInsight (use azure-hdinsight).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-07"
+  generated_at: "2026-06-14"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Machine Learning Skill
@@ -28,7 +28,7 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L72-L93 | Best practices for Azure ML experiments: model tuning, monitoring, cost and compute optimization, data prep, deployment scripts, GPU/distributed training, and prompt/model performance. |
 | Decision Making | L94-L124 | Guidance for architectural and migration decisions in Azure ML: choosing algorithms, training and networking options, cost/DR strategies, and upgrading/migrating from AML v1, Prompt Flow, and legacy features. |
 | Architecture & Design Patterns | L125-L131 | Designing Azure ML inference architectures: choosing endpoint types, planning real-time online endpoints, and structuring data movement and multistep pipeline components. |
-| Limits & Quotas | L132-L140 | Info on Azure ML regional/sovereign availability, VM SKUs, and service limits, plus how to view, plan, and manage quotas and capacity for model deployments and endpoints. |
+| Limits & Quotas | L132-L140 | Info on Azure ML regional/sovereign availability, quotas and service limits, supported VM SKUs, and how to plan deployment capacity within those constraints |
 | Security | L141-L194 | Securing Azure ML: encryption, keys, identity/RBAC, auth, secrets, network isolation/VNets, data exfil prevention, policy compliance, and securing endpoints, training, RAG, and prompt flows. |
 | Configuration | L195-L454 | Configuring Azure ML components, pipelines, compute, networking, monitoring, AutoML, YAML schemas, and data/model management for training, deployment, and responsible/production ML. |
 | Integrations & Coding Patterns | L455-L512 | Patterns and how-tos for wiring Azure ML to data/compute (Synapse, Databricks, Fabric, ADF), using MLflow, REST/HTTP, Spark, Prompt Flow, and integrating LLMs, events, and external apps. |

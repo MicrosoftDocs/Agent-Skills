@@ -1,14 +1,14 @@
 ---
 name: azure-event-grid
-description: Expert knowledge for Azure Event Grid development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when securing Event Grid/MQTT, configuring topics/subscriptions, routing events, deploying on Arc, or debugging delivery, and other Azure Event Grid related development tasks. Not for Azure Event Hubs (use azure-event-hubs), Azure Service Bus (use azure-service-bus), Azure Notification Hubs (use azure-notification-hubs), Azure Logic Apps (use azure-logic-apps).
+description: Expert knowledge for Azure Event Grid development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when securing Event Grid/MQTT, configuring topics/subscriptions, routing webhooks, or integrating Azure event sources, and other Azure Event Grid related development tasks. Not for Azure Service Bus (use azure-service-bus), Azure Event Hubs (use azure-event-hubs), Azure Notification Hubs (use azure-notification-hubs), Azure Logic Apps (use azure-logic-apps).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-17"
+  generated_at: "2026-06-14"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Event Grid Skill
 
-This skill provides expert guidance for Azure Event Grid. Covers troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Event Grid. Covers troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -24,15 +24,14 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L45 | Diagnosing and fixing Event Grid issues: MQTT broker problems, error codes, common failures, network connectivity, and event subscription validation errors. |
-| Best Practices | L46-L50 | Guidance on designing client-side failover for Event Grid, including using multiple regions, retry logic, and resilient publishing patterns for high availability. |
-| Decision Making | L51-L58 | Guidance on choosing Event Grid tiers, matching event schemas, comparing Azure vs Kubernetes Event Grid, and migrating from Event Grid on IoT Edge to IoT Edge hub. |
-| Architecture & Design Patterns | L59-L64 | Patterns for routing events across Event Grid namespace topics and implementing MQTT-based request/response command workflows using Event Grid. |
-| Limits & Quotas | L65-L75 | Event Grid delivery/retry behavior, custom headers, event retention, and region-specific quotas/limits that affect throughput, reliability, and configuration of topics and namespaces. |
+| Troubleshooting | L36-L44 | Diagnosing and fixing Event Grid issues: MQTT broker problems, error codes, common failures, network connectivity, and event subscription validation errors. |
+| Best Practices | L45-L49 | Guidance on designing client-side failover for Event Grid, including using multiple regions, retry logic, and resilient publishing patterns for high availability. |
+| Decision Making | L50-L57 | Guidance on selecting Event Grid tiers, choosing compatible event schemas, comparing Azure vs Kubernetes hosting, and migrating from IoT Edge Event Grid to IoT Edge hub. |
+| Architecture & Design Patterns | L58-L63 | Patterns for routing events across Event Grid namespace topics and implementing MQTT-based request/response command workflows using Event Grid. |
+| Limits & Quotas | L64-L75 | Event Grid delivery/retry behavior, custom headers, event retention, and region-specific quotas/limits for topics, namespaces, and Kubernetes-based Event Grid |
 | Security | L76-L127 | Securing Event Grid and MQTT: auth (keys, SAS, Entra ID, JWT, certs), RBAC, managed identities, webhooks, network/IP rules, private endpoints, TLS, and Azure Policy enforcement. |
-| Configuration | L128-L205 | Configuring Event Grid and MQTT: topics, subscriptions, filters, routing, dead-lettering, monitoring/metrics, and detailed event schemas for many Azure and Microsoft services. |
-| Integrations & Coding Patterns | L206-L247 | Patterns for publishing, routing, and consuming Event Grid events with HTTP/webhooks, MQTT, Azure/M365/SaaS sources, and handlers like Event Hubs, Monitor, Relay, and custom endpoints. |
-| Deployment | L248-L251 | Guides for deploying Event Grid on Azure Arc-enabled Kubernetes, including installing and configuring the Event Grid extension on Arc clusters. |
+| Configuration | L128-L203 | Configuring Event Grid: topics, namespaces, subscriptions, filters, dead-lettering, monitoring/metrics, MQTT broker and routing, and detailed event schemas for many Azure and Microsoft services. |
+| Integrations & Coding Patterns | L204-L244 | Patterns for publishing, routing, and consuming Event Grid events with HTTP/webhooks, MQTT, Azure/M365/SaaS sources, and handlers like Event Hubs, Monitor, Relay, and custom endpoints. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -53,7 +52,7 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Choose the correct Azure Event Grid tier | https://learn.microsoft.com/en-us/azure/event-grid/choose-right-tier |
 | Choose compatible event schemas for Azure Event Grid subscriptions | https://learn.microsoft.com/en-us/azure/event-grid/event-schema-compatibility |
-| Compare Event Grid on Kubernetes vs Azure Event Grid features | https://learn.microsoft.com/en-us/azure/event-grid/kubernetes/features |
+| Compare Event Grid on Kubernetes vs Azure features | https://learn.microsoft.com/en-us/azure/event-grid/kubernetes/features |
 | Migrate from Event Grid on IoT Edge to IoT Edge hub | https://learn.microsoft.com/en-us/azure/event-grid/transition |
 
 ### Architecture & Design Patterns
@@ -69,6 +68,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure custom delivery headers for Azure Event Grid events | https://learn.microsoft.com/en-us/azure/event-grid/delivery-properties |
 | Understand event retention for Event Grid namespace topics | https://learn.microsoft.com/en-us/azure/event-grid/event-retention |
 | Azure Event Grid FAQs on limits and behavior | https://learn.microsoft.com/en-us/azure/event-grid/faq |
+| Understand Event Grid on Kubernetes delivery and retry behavior | https://learn.microsoft.com/en-us/azure/event-grid/kubernetes/delivery-retry |
 | Set custom delivery headers for Event Grid namespaces | https://learn.microsoft.com/en-us/azure/event-grid/namespace-delivery-properties |
 | Delivery and retry behavior for Event Grid namespace push | https://learn.microsoft.com/en-us/azure/event-grid/namespace-delivery-retry |
 | Review Azure Event Grid quotas and limits by region | https://learn.microsoft.com/en-us/azure/event-grid/quotas-limits |
@@ -167,10 +167,8 @@ This skill requires **network access** to fetch documentation content:
 | Configure event filters on Azure Event Grid subscriptions | https://learn.microsoft.com/en-us/azure/event-grid/how-to-filter-events |
 | Map custom event schemas to Azure Event Grid schema | https://learn.microsoft.com/en-us/azure/event-grid/input-mappings |
 | Configure batch event delivery for Event Grid on Kubernetes | https://learn.microsoft.com/en-us/azure/event-grid/kubernetes/batch-event-delivery |
-| Configure event delivery and retry policies in Event Grid on Kubernetes | https://learn.microsoft.com/en-us/azure/event-grid/kubernetes/delivery-retry |
-| Configure event handlers and destinations for Event Grid on Kubernetes | https://learn.microsoft.com/en-us/azure/event-grid/kubernetes/event-handlers |
-| Use supported event schemas in Event Grid on Kubernetes | https://learn.microsoft.com/en-us/azure/event-grid/kubernetes/event-schemas |
-| Define event filters for Event Grid on Kubernetes subscriptions | https://learn.microsoft.com/en-us/azure/event-grid/kubernetes/filter-events |
+| Configure advanced event filtering in Event Grid on Kubernetes | https://learn.microsoft.com/en-us/azure/event-grid/kubernetes/filter-events |
+| Install and configure Event Grid extension on Arc-enabled Kubernetes | https://learn.microsoft.com/en-us/azure/event-grid/kubernetes/install-k8s-extension |
 | Configure Event Grid dead-lettering and retry policies | https://learn.microsoft.com/en-us/azure/event-grid/manage-event-delivery |
 | Microsoft Entra events schema via Microsoft Graph in Event Grid | https://learn.microsoft.com/en-us/azure/event-grid/microsoft-entra-events |
 | View Event Grid metrics and configure alerts in Azure portal | https://learn.microsoft.com/en-us/azure/event-grid/monitor-event-delivery |
@@ -244,8 +242,3 @@ This skill requires **network access** to fetch documentation content:
 | Use HTTP subscriber operations for Event Grid namespace topics | https://learn.microsoft.com/en-us/azure/event-grid/subscriber-operations |
 | Use Microsoft Teams events with Azure Event Grid | https://learn.microsoft.com/en-us/azure/event-grid/teams-events |
 | Use Microsoft To Do task events with Event Grid | https://learn.microsoft.com/en-us/azure/event-grid/to-do-events |
-
-### Deployment
-| Topic | URL |
-|-------|-----|
-| Install Event Grid extension on Azure Arc-enabled Kubernetes | https://learn.microsoft.com/en-us/azure/event-grid/kubernetes/install-k8s-extension |

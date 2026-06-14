@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-10'
+generated_at: '2026-06-14'
 category_descriptions:
   configuration: 'Configuring Extended Zones access and governance: registering subscriptions,
     creating custom Azure Policy, and deploying Azure Firewall within Extended Zones.'
@@ -35,8 +35,8 @@ confusable_not_for: Not for Azure Reliability (use azure-reliability), Azure Res
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 18
+- **Updated Pages**: 2
+- **Unchanged**: 16
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-extended-zones/azure-extended-zones.csv`
 
@@ -51,6 +51,13 @@ confusable_not_for: Not for Azure Reliability (use azure-reliability), Azure Res
 | *(Unclassified)* | 12 | 66.7% |
 
 ## Changes
+
+### Updated Pages
+
+- [What is Azure Extended Zones?](https://learn.microsoft.com/en-us/azure/extended-zones/overview)
+  - Updated: 2026-03-31T06:10:00.000Z → 2026-06-11T22:20:00.000Z
+- [Deploy an AKS cluster in an Extended Zone](https://learn.microsoft.com/en-us/azure/extended-zones/deploy-aks-cluster)
+  - Updated: 2026-03-31T06:10:00.000Z → 2026-06-12T05:19:00.000Z
 
 ## Classified Pages
 
@@ -68,7 +75,7 @@ confusable_not_for: Not for Azure Reliability (use azure-reliability), Azure Res
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
 | [Deploy a storage account in an Extended Zone](https://learn.microsoft.com/en-us/azure/extended-zones/create-storage-account) | 0.40 | Tutorial for creating a storage account in an extended zone; likely basic wizard steps without configuration matrices or quotas specific enough to qualify. |
-| [Deploy an AKS cluster in an Extended Zone](https://learn.microsoft.com/en-us/azure/extended-zones/deploy-aks-cluster) | 0.40 | Tutorial for creating an AKS cluster in an extended zone via portal; summary suggests step-by-step guidance without detailed config tables, limits, or specialized patterns. |
+| [Deploy an AKS cluster in an Extended Zone](https://learn.microsoft.com/en-us/azure/extended-zones/deploy-aks-cluster) | 0.30 | Appears to be a step-by-step tutorial for deploying AKS in Extended Zones via the portal; summary does not indicate presence of configuration parameter tables, limits, decision matrices, or error-code-based troubleshooting. Likely standard how-to content rather than expert reference details. |
 | [Extended Zones FAQ](https://learn.microsoft.com/en-us/azure/extended-zones/faq) | 0.30 | FAQ-style content but summary does not indicate specific error codes, limits, or configuration tables; likely conceptual and eligibility/usage Q&A. |
 | [Replicate images with Azure Compute Gallery](https://learn.microsoft.com/en-us/azure/extended-zones/replicate-azure-compute-gallery) | 0.30 | Tutorial for replicating 3rd-party images; while it mentions a special workflow and support contact, it does not clearly indicate detailed configuration parameters, limits, or decision matrices. |
 | [Back up a virtual machine](https://learn.microsoft.com/en-us/azure/extended-zones/backup-virtual-machine) | 0.20 | Tutorial for backing up a VM; summary suggests procedural portal steps without specific backup limits, quotas, or detailed configuration parameter tables. |
@@ -78,4 +85,4 @@ confusable_not_for: Not for Azure Reliability (use azure-reliability), Azure Res
 | [Deploy a VM in an Extended Zone - Azure CLI](https://learn.microsoft.com/en-us/azure/extended-zones/deploy-vm-cli) | 0.20 | Quickstart for deploying a VM using CLI/ARM; primarily tutorial content, not a catalog of configuration options, limits, or decision criteria. |
 | [Deploy a VM in an Extended Zone - Portal](https://learn.microsoft.com/en-us/azure/extended-zones/deploy-vm-portal) | 0.20 | Quickstart for deploying a VM via portal; likely step-by-step UI instructions without detailed configuration parameter tables, limits, or product-specific troubleshooting mappings. |
 | [ManagedSQL](https://learn.microsoft.com/en-us/azure/extended-zones/arc-enabled-workloads-managed-sql) | 0.20 | How-to article for deploying Arc-enabled Managed SQL Instance in an Extended Zone; likely a guided workflow without explicit limits, configuration parameter tables, or error-code mappings, so it doesn’t clearly fall into any expert-knowledge sub-skill category. |
-| [What is Azure Extended Zones?](https://learn.microsoft.com/en-us/azure/extended-zones/overview) | 0.20 | High-level overview of Azure Extended Zones capabilities and scenarios; no concrete limits, configuration parameters, or decision matrices. |
+| [What is Azure Extended Zones?](https://learn.microsoft.com/en-us/azure/extended-zones/overview) | 0.20 | High-level overview of Azure Extended Zones; summary indicates conceptual description of what the service is and its benefits, without specific limits, configuration parameters, decision matrices, or troubleshooting details. |

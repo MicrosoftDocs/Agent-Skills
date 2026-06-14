@@ -1,9 +1,9 @@
 ---
 name: azure-planetary-computer-pro
-description: Expert knowledge for Microsoft Planetary Computer Pro development including troubleshooting, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when working with GeoCatalog/STAC APIs, QGIS/ArcGIS Pro, Entra ID/RBAC auth, ingestion pipelines, or tiles/mosaics, and other Microsoft Planetary Computer Pro related development tasks. Not for Azure Maps (use azure-maps), Azure Open Datasets (use azure-open-datasets), Azure Data Explorer (use azure-data-explorer).
+description: Expert knowledge for Microsoft Planetary Computer Pro development including troubleshooting, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using GeoCatalog/STAC APIs, QGIS/ArcGIS Pro integrations, Entra ID/RBAC access, tiles/mosaics, or ingestion, and other Microsoft Planetary Computer Pro related development tasks. Not for Azure Maps (use azure-maps), Azure Open Datasets (use azure-open-datasets), Azure Data Explorer (use azure-data-explorer).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-07"
+  generated_at: "2026-06-14"
   generator: "docs2skills/1.0.0"
 ---
 # Microsoft Planetary Computer Pro Skill
@@ -27,7 +27,7 @@ This skill requires **network access** to fetch documentation content:
 | Troubleshooting | L35-L40 | Diagnosing and resolving Planetary Computer Pro GeoCatalog ingestion failures, including error code meanings, common causes, and step-by-step remediation guidance. |
 | Decision Making | L41-L45 | Guidance on selecting how to access Planetary Computer Pro data, including connection options, integrations with tools/services, and choosing the best method for your workflow. |
 | Limits & Quotas | L46-L50 | Supported file formats, data types, and size/usage limits for datasets and computations in Planetary Computer Pro, including quotas that affect how you process and store data. |
-| Security | L51-L62 | Configuring secure access to Planetary Computer Pro and GeoCatalogs using Entra ID, RBAC, managed identities, SAS tokens, cross-tenant auth, and Azure API Management. |
+| Security | L51-L62 | Configuring secure access to Planetary Computer Pro/GeoCatalog using Entra ID, RBAC, managed identities, cross-tenant auth, API Management, and SAS tokens for collections. |
 | Configuration | L63-L77 | Configuring Planetary Computer Pro data collections: visualization/render settings, colormaps, tiles/mosaics, queryable filters, ingestion sources/credentials, and US Gov cloud endpoints. |
 | Integrations & Coding Patterns | L78-L91 | Using GeoCatalog/STAC with code and tools: ingest and bulk-load data, build apps, create collections/items, and integrate with QGIS, ArcGIS Pro, Azure Batch, and other geospatial clients. |
 | Deployment | L92-L96 | Deploying and safely deleting Planetary Computer GeoCatalog resources, including deployment steps, best practices, and cleanup to avoid data loss or orphaned assets. |
@@ -52,12 +52,12 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Configure application authentication to Planetary Computer Pro with Entra ID | https://learn.microsoft.com/en-us/azure/planetary-computer/application-authentication |
-| Assign managed identity to GeoCatalog via CLI | https://learn.microsoft.com/en-us/azure/planetary-computer/assign-managed-identity-geocatalog-resource |
+| Use managed identities with Planetary Computer GeoCatalog | https://learn.microsoft.com/en-us/azure/planetary-computer/assign-managed-identity-geocatalog-resource |
 | Authorize cross-tenant partner applications to access Planetary Computer Pro GeoCatalogs | https://learn.microsoft.com/en-us/azure/planetary-computer/authorize-cross-tenant-partner-applications |
 | Configure cross-tenant app access to Planetary Computer Pro | https://learn.microsoft.com/en-us/azure/planetary-computer/configure-cross-tenant-application |
 | Secure GeoCatalog access via Azure API Management | https://learn.microsoft.com/en-us/azure/planetary-computer/create-api-proxy-geocatalog |
 | Generate collection-level SAS tokens for GeoCatalog assets | https://learn.microsoft.com/en-us/azure/planetary-computer/get-collection-sas-token |
-| Configure RBAC access for Planetary Computer Pro GeoCatalogs | https://learn.microsoft.com/en-us/azure/planetary-computer/manage-access |
+| Configure RBAC access for Planetary Computer GeoCatalog | https://learn.microsoft.com/en-us/azure/planetary-computer/manage-access |
 | Configure managed identity credentials for Planetary Computer Pro ingestion | https://learn.microsoft.com/en-us/azure/planetary-computer/set-up-ingestion-credentials-managed-identity |
 
 ### Configuration

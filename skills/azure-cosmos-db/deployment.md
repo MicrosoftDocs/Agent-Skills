@@ -33,6 +33,4 @@
 | Set up Azure DevOps CI/CD with Cosmos DB emulator | https://learn.microsoft.com/en-us/azure/cosmos-db/tutorial-setup-ci-cd |
 | Deploy Spring Boot app with Cosmos DB on AKS | https://learn.microsoft.com/en-us/azure/cosmos-db/tutorial-springboot-azure-kubernetes-service |
 | Enable diagnostic logging for DocumentDB with Azure Monitor | https://learn.microsoft.com/en-us/azure/documentdb/how-to-monitor-diagnostics-logs |
-| Deploy an Azure DocumentDB cluster using Bicep | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-bicep |
-| Create a new Azure DocumentDB cluster in the portal | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-portal |
 | Track Azure DocumentDB feature and engine release changes | https://learn.microsoft.com/en-us/azure/documentdb/release-notes |

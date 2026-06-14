@@ -1,13 +1,14 @@
 ---
-generated_at: '2026-06-07'
+generated_at: '2026-06-14'
 category_descriptions:
   best-practices: Guidance on organizing and structuring Azure Deployment Environments
     catalogs, including repo layout, template grouping, naming, and governance for
     scalable, maintainable catalogs.
   security: 'RBAC and identity setup for Deployment Environments: planning and assigning
     roles, configuring managed identities, and authenticating to the REST APIs.'
-  configuration: 'Configuring ADE environments: schemas, environment types, Git catalogs,
-    CLI/ARM setup, auto-deletion, and using environment variables for custom images.'
+  configuration: Defining ADE environments and types, configuring Git catalogs and
+    ARM provisioning, using the devcenter CLI, auto-deletion, and environment variables
+    for custom images.
   architecture-patterns: Guidance on designing resilient, scalable Azure Deployment
     Environments architectures, including fault tolerance, high availability, redundancy,
     and best practices for robust environment design.
@@ -29,13 +30,13 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Deployment Environments development
   including troubleshooting, best practices, decision making, architecture & design
   patterns, limits & quotas, security, configuration, integrations & coding patterns,
-  and deployment. Use when configuring ADE catalogs, Git schemas, RBAC/managed identities,
-  custom image workflows, or CI/CD deployments, and other Azure Deployment Environments
-  related development tasks. Not for Azure DevTest Labs (use azure-devtest-labs),
+  and deployment. Use when configuring ADE catalogs, RBAC/managed identities, Git/ARM
+  catalogs, custom images, or CI/CD environment automation, and other Azure Deployment
+  Environments related development tasks. Not for Azure DevTest Labs (use azure-devtest-labs),
   Azure Dev Box (use azure-dev-box), Azure Integration Environments (use azure-integration-environments),
   Azure Managed Applications (use azure-managed-applications).
-use_when: Use when configuring ADE catalogs, Git schemas, RBAC/managed identities,
-  custom image workflows, or CI/CD deployments, and other Azure Deployment Environments
+use_when: Use when configuring ADE catalogs, RBAC/managed identities, Git/ARM catalogs,
+  custom images, or CI/CD environment automation, and other Azure Deployment Environments
   related development tasks.
 confusable_not_for: Not for Azure DevTest Labs (use azure-devtest-labs), Azure Dev
   Box (use azure-dev-box), Azure Integration Environments (use azure-integration-environments),
@@ -48,13 +49,13 @@ confusable_not_for: Not for Azure DevTest Labs (use azure-devtest-labs), Azure D
 - **Total Pages**: 33
 - **Fetched**: 33
 - **Fetch Failed**: 0
-- **Classified**: 23
-- **Unclassified**: 10
+- **Classified**: 22
+- **Unclassified**: 11
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 32
+- **Updated Pages**: 2
+- **Unchanged**: 31
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-deployment-environments/azure-deployment-environments.csv`
 
@@ -64,21 +65,23 @@ confusable_not_for: Not for Azure DevTest Labs (use azure-devtest-labs), Azure D
 |------|-------|------------|
 | architecture-patterns | 1 | 3.0% |
 | best-practices | 1 | 3.0% |
-| configuration | 9 | 27.3% |
+| configuration | 8 | 24.2% |
 | decision-making | 1 | 3.0% |
 | deployment | 2 | 6.1% |
 | integrations | 3 | 9.1% |
 | limits-quotas | 1 | 3.0% |
 | security | 4 | 12.1% |
 | troubleshooting | 1 | 3.0% |
-| *(Unclassified)* | 10 | 30.3% |
+| *(Unclassified)* | 11 | 33.3% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Troubleshoot custom image errors and warnings](https://learn.microsoft.com/en-us/azure/deployment-environments/troubleshoot-custom-image-logs-errors)
-  - Updated: 2024-09-29T23:22:00.000Z → 2026-06-02T20:30:00.000Z
+- [Parameters and data types in environment.yaml](https://learn.microsoft.com/en-us/azure/deployment-environments/concept-environment-yaml)
+  - Updated: 2026-05-04T22:15:00.000Z → 2026-06-04T08:00:00.000Z
+- [Add & configure an environment definition](https://learn.microsoft.com/en-us/azure/deployment-environments/configure-environment-definition)
+  - Updated: 2026-05-22T22:13:00.000Z → 2026-06-04T08:00:00.000Z
 
 ## Classified Pages
 
@@ -86,13 +89,12 @@ confusable_not_for: Not for Azure DevTest Labs (use azure-devtest-labs), Azure D
 |-----------|------|------------|--------|
 | [ADE CLI variables](https://learn.microsoft.com/en-us/azure/deployment-environments/reference-deployment-environment-variables) | configuration | 0.90 | Lists ADE-specific environment variables, names, and usage constraints for custom image scripts—core configuration reference. |
 | [Grant and manage access](https://learn.microsoft.com/en-us/azure/deployment-environments/how-to-manage-deployment-environments-access) | security | 0.90 | Details specific built-in RBAC roles (DevCenter Project Admin, Deployment Environments User, DevCenter Owner) and scope usage; this is product-specific security configuration. |
-| [Add & configure an environment definition](https://learn.microsoft.com/en-us/azure/deployment-environments/configure-environment-definition) | configuration | 0.85 | Explains environment definition files, required structure, and how to reference container images; includes product-specific config file elements and parameters. |
 | [Authenticate to REST APIs](https://learn.microsoft.com/en-us/azure/deployment-environments/how-to-authenticate) | security | 0.85 | Explains how to obtain and use access tokens for ADE REST APIs, including token structure and validity; contains product-specific authentication steps and parameters. |
 | [Azure role-based access control](https://learn.microsoft.com/en-us/azure/deployment-environments/concept-deployment-environments-role-based-access-control) | security | 0.80 | Focuses on Azure RBAC integration for ADE with built-in role definitions and how they map to organizational roles; such pages usually list specific role names and permission scopes, which are product-specific security configuration details. |
 | [Best practices for designing catalogs](https://learn.microsoft.com/en-us/azure/deployment-environments/best-practice-catalog-structure) | best-practices | 0.80 | Explicit best-practices article with product-specific guidance on catalog structure and caching behavior; contains actionable DO/DON'T patterns unique to ADE. |
-| [Parameters and data types in environment.yaml](https://learn.microsoft.com/en-us/azure/deployment-environments/concept-environment-yaml) | configuration | 0.80 | Describes the environment.yaml schema used to define parameters and resource types in ADE environment definitions; schema pages typically include parameter names, allowed values, and structure, which are product-specific configuration details not reliably known from training. |
 | [Request a quota limit increase](https://learn.microsoft.com/en-us/azure/deployment-environments/how-to-request-quota-increase) | limits-quotas | 0.80 | Quota-increase article; while focused on process, it is directly tied to subscription resource limits and how to extend them, which is limits/quotas-related expert knowledge. |
 | [Configure a managed identity](https://learn.microsoft.com/en-us/azure/deployment-environments/how-to-configure-managed-identity) | security | 0.78 | How-to guide for configuring a managed identity on an ADE dev center, including product-specific identity setup steps and RBAC/permission configuration details tied to Azure Deployment Environments and Microsoft Entra. This is concrete security configuration rather than conceptual identity guidance. |
+| [Parameters and data types in environment.yaml](https://learn.microsoft.com/en-us/azure/deployment-environments/concept-environment-yaml) | configuration | 0.78 | A schema page for environment.yaml is likely to list specific schema fields, allowed values, and possibly defaults for Azure Deployment Environments environment definitions. Those parameter names and constraints are product-specific configuration details that qualify as expert knowledge beyond generic IaC concepts. |
 | [Troubleshoot custom image errors and warnings](https://learn.microsoft.com/en-us/azure/deployment-environments/troubleshoot-custom-image-logs-errors) | troubleshooting | 0.78 | Page focuses on resolving failed custom image deployments, referencing specific log file names ($ADE_ERROR_LOG), Azure CLI commands, and environment operation logs, which are product-specific symptom → diagnosis → resolution details. |
 | [Install Azure CLI extension](https://learn.microsoft.com/en-us/azure/deployment-environments/how-to-install-devcenter-cli-extension) | configuration | 0.75 | Describes installing and configuring the devcenter CLI extension used by ADE and Dev Box; includes extension name and possibly commands and parameters unique to this product. |
 | [ADE CLI reference](https://learn.microsoft.com/en-us/azure/deployment-environments/reference-deployment-environment-cli) | integrations | 0.70 | CLI reference for ADE custom image commands; includes command parameters and behavior—product-specific API/CLI integration details. |
@@ -120,5 +122,6 @@ confusable_not_for: Not for Azure DevTest Labs (use azure-devtest-labs), Azure D
 | [Create and configure a dev center from the CLI](https://learn.microsoft.com/en-us/azure/deployment-environments/how-to-create-configure-dev-center) | 0.30 | Quickstart for creating and configuring a dev center via Azure CLI; primarily step-by-step tutorial without matrices of deployment constraints, detailed config tables, or other expert-only reference content. |
 | [Manage environments in the developer portal](https://learn.microsoft.com/en-us/azure/deployment-environments/how-to-manage-environments) | 0.30 | Focuses on managing environments via portal/CLI with permissions and access concepts; summary does not indicate detailed configuration tables, error codes, or numeric limits. Appears more like a usage/tutorial guide than expert reference content. |
 | [What is the ADE Extensibility Model?](https://learn.microsoft.com/en-us/azure/deployment-environments/concept-extensibility-model) | 0.30 | Conceptual description of the ADE extensibility model and workflow; explains how catalogs, IaC templates, and container images interact but does not emphasize detailed configuration parameters, limits, or decision matrices. |
+| [Add & configure an environment definition](https://learn.microsoft.com/en-us/azure/deployment-environments/configure-environment-definition) | 0.20 | Described as a how-to article on adding and configuring an environment definition in a catalog. It sounds procedural (add/update/delete, reference a container image) without clear indication of detailed parameter tables, limits, or product-specific configuration schemas; more of a workflow/tutorial than expert reference content. |
 | [Key concepts](https://learn.microsoft.com/en-us/azure/deployment-environments/concept-environments-key-concepts) | 0.20 | Conceptual key concepts and roles; primarily terminology and roles, not detailed configs, limits, or troubleshooting. |
 | [What is Azure Deployment Environments?](https://learn.microsoft.com/en-us/azure/deployment-environments/overview-what-is-azure-deployment-environments) | 0.20 | High-level overview of Azure Deployment Environments; no detailed limits, configs, or error mappings. |

@@ -53,9 +53,9 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 - **Unclassified**: 100
 
 ### Incremental Update
-- **New Pages**: 3
-- **Updated Pages**: 16
-- **Unchanged**: 183
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 202
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-language-service/azure-language-service.csv`
 
@@ -75,47 +75,6 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | *(Unclassified)* | 100 | 49.5% |
 
 ## Changes
-
-### New Pages
-
-- [Quickstart](https://learn.microsoft.com/en-us/azure/ai-services/language-service/personally-identifiable-information/text-pii-playground)
-- [Quickstart](https://learn.microsoft.com/en-us/azure/ai-services/language-service/personally-identifiable-information/conversation-pii-playground)
-- [Quickstart](https://learn.microsoft.com/en-us/azure/ai-services/language-service/personally-identifiable-information/document-based-pii-playground)
-
-### Updated Pages
-
-- [Quickstart](https://learn.microsoft.com/en-us/azure/ai-services/language-service/text-analytics-for-health/quickstart)
-  - Updated: 2025-12-15T08:00:00.000Z → 2026-01-07T23:09:00.000Z
-- [Use smart URL refresh](https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/how-to/smart-url-refresh)
-  - Updated: 2025-12-13T06:19:00.000Z → 2025-12-15T08:00:00.000Z
-- [Change default answer](https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/how-to/change-default-answer)
-  - Updated: 2025-12-13T06:19:00.000Z → 2025-12-15T08:00:00.000Z
-- [Troubleshooting](https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/how-to/troubleshooting)
-  - Updated: 2025-12-13T06:19:00.000Z → 2025-12-15T08:00:00.000Z
-- [What's new](https://learn.microsoft.com/en-us/azure/ai-services/language-service/whats-new)
-  - Updated: 2026-03-17T08:00:00.000Z → 2026-06-02T19:00:00.000Z
-- [Configure Azure resources](https://learn.microsoft.com/en-us/azure/ai-services/language-service/concepts/configure-azure-resources)
-  - Updated: 2026-05-15T17:11:00.000Z → 2026-06-02T08:00:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/ai-services/language-service/personally-identifiable-information/overview)
-  - Updated: 2026-04-21T16:56:00.000Z → 2026-06-02T19:00:00.000Z
-- [Detect and redact PII in text](https://learn.microsoft.com/en-us/azure/ai-services/language-service/personally-identifiable-information/how-to/redact-text-pii)
-  - Updated: 2026-03-17T08:00:00.000Z → 2026-06-02T19:00:00.000Z
-- [Extended format](https://learn.microsoft.com/en-us/azure/ai-services/language-service/personally-identifiable-information/concepts/entity-categories)
-  - Updated: 2025-11-18T15:37:00.000Z → 2026-06-02T08:00:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/ai-services/language-service/personally-identifiable-information/conversation-pii-overview)
-  - Updated: 2026-04-21T16:56:00.000Z → 2026-06-02T19:00:00.000Z
-- [Detect and redact PII in conversations](https://learn.microsoft.com/en-us/azure/ai-services/language-service/personally-identifiable-information/how-to/redact-conversation-pii)
-  - Updated: 2026-04-04T06:03:00.000Z → 2026-06-02T19:00:00.000Z
-- [Extended format](https://learn.microsoft.com/en-us/azure/ai-services/language-service/personally-identifiable-information/concepts/conversations-entity-categories)
-  - Updated: 2026-02-21T06:16:00.000Z → 2026-06-02T08:00:00.000Z
-- [Development lifecycle](https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/concepts/project-development-lifecycle)
-  - Updated: 2025-12-13T06:19:00.000Z → 2025-12-15T08:00:00.000Z
-- [App planning](https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/concepts/plan)
-  - Updated: 2025-12-13T06:19:00.000Z → 2025-12-15T08:00:00.000Z
-- [Precise answering](https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/concepts/precise-answering)
-  - Updated: 2025-12-13T06:19:00.000Z → 2025-12-15T08:00:00.000Z
-- [Create projects](https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-text-classification/how-to/create-project)
-  - Updated: 2025-12-17T12:03:00.000Z → 2025-12-18T08:00:00.000Z
 
 ## Classified Pages
 

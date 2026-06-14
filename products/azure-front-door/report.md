@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-31'
+generated_at: '2026-06-14'
 category_descriptions:
   architecture-patterns: 'Architectural patterns for Azure Front Door: apex domain
     setup, blue/green deployments, manual failover with Traffic Manager, static blob
@@ -19,7 +19,7 @@ category_descriptions:
     identity and origin auth, private link/direct access protection, and log scrubbing/sensitive
     data protection.
   limits-quotas: POP codes and locations, regional POP lists, Front Door limits/quotas
-    and behaviors, composite routing limits, and subscription-level bandwidth throttling
+    and behaviors, routing composite limits, and subscription-level bandwidth throttling
     details.
   configuration: 'Configuring Azure Front Door behavior: caching, rules/rewrite, headers/protocols,
     compression, Private Link backends, WebSockets, monitoring, and cache purge via
@@ -30,13 +30,13 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Front Door development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  configuring apex domains, rules engine/CDN, Standard vs Premium tiers, DevOps IaC,
-  or TLS/Private Link, and other Azure Front Door related development tasks. Not for
-  Azure Application Gateway (use azure-application-gateway), Azure Traffic Manager
+  configuring Front Door routing/caching, rules engine, TLS/origin auth, CDN video
+  delivery, or POP limits, and other Azure Front Door related development tasks. Not
+  for Azure Application Gateway (use azure-application-gateway), Azure Traffic Manager
   (use azure-traffic-manager), Azure Load Balancer (use azure-load-balancer), Azure
   Web Application Firewall (use azure-web-application-firewall).
-use_when: Use when configuring apex domains, rules engine/CDN, Standard vs Premium
-  tiers, DevOps IaC, or TLS/Private Link, and other Azure Front Door related development
+use_when: Use when configuring Front Door routing/caching, rules engine, TLS/origin
+  auth, CDN video delivery, or POP limits, and other Azure Front Door related development
   tasks.
 confusable_not_for: Not for Azure Application Gateway (use azure-application-gateway),
   Azure Traffic Manager (use azure-traffic-manager), Azure Load Balancer (use azure-load-balancer),
@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 102
+- **Updated Pages**: 1
+- **Unchanged**: 101
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-front-door/azure-front-door.csv`
 
@@ -75,6 +75,11 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | *(Unclassified)* | 33 | 32.4% |
 
 ## Changes
+
+### Updated Pages
+
+- [FAQ](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-faq)
+  - Updated: 2026-04-29T11:12:00.000Z → 2026-06-11T06:13:00.000Z
 
 ## Classified Pages
 
@@ -106,7 +111,7 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Configure TLS policy](https://learn.microsoft.com/en-us/azure/frontdoor/standard-premium/tls-policy-configure) | security | 0.70 | Page describes how to configure TLS policies for Azure Front Door, including predefined vs custom policies and minimum TLS versions for different Front Door/CDN offerings, which are product-specific security configuration details. |
 | [Configure delivery rules](https://learn.microsoft.com/en-us/azure/frontdoor/standard-premium/front-door-add-rules-cli) | integrations | 0.70 | CLI-focused tutorial that includes specific commands and parameters to add delivery rules; product-specific integration pattern with Azure CLI. |
 | [DHE Cipher FAQ](https://learn.microsoft.com/en-us/azure/frontdoor/diffie-hellman-ciphers) | security | 0.70 | Lists specific cipher suites and deprecation date; provides product-specific TLS/cipher configuration and compliance guidance. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-faq) | limits-quotas | 0.70 | FAQ pages for Azure networking services typically include concrete, product-specific behaviors and numeric details (for example, propagation times, header size limits, WAF rule limits, caching behaviors, and SKU-specific constraints) that qualify as expert knowledge beyond generic conceptual info. These align best with limits-quotas because such FAQs often document exact values and constraints not inferable from general training. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-faq) | limits-quotas | 0.70 | FAQ pages for Azure networking services typically include concrete, product-specific details such as maximum endpoints, routing rules, backend pool limits, header size limits, and other numeric constraints that are not obvious from general training data. These are expert, implementation-level facts rather than conceptual explanations, so they best align with limits-quotas. |
 | [Front Door monitoring data reference](https://learn.microsoft.com/en-us/azure/frontdoor/monitor-front-door-reference) | configuration | 0.70 | A monitoring data reference typically lists concrete metric names, dimensions, log categories, and schema fields specific to Azure Front Door and Azure Monitor, which are product-specific configuration/telemetry details not inferable from general training. |
 | [Rules engine scenarios](https://learn.microsoft.com/en-us/azure/frontdoor/rules-engine-scenarios) | best-practices | 0.70 | Scenario-based guidance on configuring rules engine for caching, forwarding, header manipulation; includes concrete configuration patterns and gotchas. |
 | [Terraform](https://learn.microsoft.com/en-us/azure/frontdoor/terraform-samples) | deployment | 0.70 | Terraform samples expose provider-specific resource blocks, arguments, and supported values for Front Door, representing concrete deployment configuration patterns. |

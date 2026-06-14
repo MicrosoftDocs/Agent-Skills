@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-07'
+generated_at: '2026-06-14'
 category_descriptions:
   best-practices: 'Security-focused guidance on designing Azure RBAC: choosing scopes,
     delegating access with ABAC conditions, and applying least privilege and separation-of-duties
@@ -7,9 +7,9 @@ category_descriptions:
   security: Azure RBAC roles, permissions, ABAC conditions, custom roles, PIM, deny
     assignments, and security/monitoring policies for securing and delegating access
     to Azure resources
-  troubleshooting: 'Diagnosing and fixing Azure RBAC problems: activity log auditing,
-    role/condition errors, assignment condition troubleshooting, and limits for built‑in
-    and custom roles.'
+  troubleshooting: 'Diagnosing and fixing Azure RBAC problems: auditing role changes,
+    resolving role/custom role limits, and troubleshooting role assignment condition
+    and common access issues.'
   decision-making: 'Guidance on choosing and migrating role models: moving from classic
     admins to RBAC, scaling with ABAC, selecting Azure vs Entra vs classic roles,
     and transferring subscriptions between directories.'
@@ -23,16 +23,17 @@ category_descriptions:
     group-based access.
 skill_description: Expert knowledge for Azure Role-based access control development
   including troubleshooting, best practices, decision making, limits & quotas, security,
-  configuration, and integrations & coding patterns. Use when defining roles, ABAC
-  conditions, PIM, deny assignments, or automating RBAC via CLI/PowerShell/ARM, and
-  other Azure Role-based access control related development tasks. Not for Azure Policy
-  (use azure-policy), Azure Security (use azure-security), Azure Portal (use azure-portal),
-  Azure Resource Manager (use azure-resource-manager).
-use_when: Use when defining roles, ABAC conditions, PIM, deny assignments, or automating
-  RBAC via CLI/PowerShell/ARM, and other Azure Role-based access control related development
-  tasks.
-confusable_not_for: Not for Azure Policy (use azure-policy), Azure Security (use azure-security),
-  Azure Portal (use azure-portal), Azure Resource Manager (use azure-resource-manager).
+  configuration, and integrations & coding patterns. Use when configuring roles, ABAC
+  conditions, PIM, deny assignments, or ARM/Bicep/CLI/PowerShell role automation,
+  and other Azure Role-based access control related development tasks. Not for Azure
+  Active Directory B2C (use azure-active-directory-b2c), Azure Information Protection
+  (use azure-information-protection), Azure Policy (use azure-policy), Azure Security
+  (use azure-security).
+use_when: Use when configuring roles, ABAC conditions, PIM, deny assignments, or ARM/Bicep/CLI/PowerShell
+  role automation, and other Azure Role-based access control related development tasks.
+confusable_not_for: Not for Azure Active Directory B2C (use azure-active-directory-b2c),
+  Azure Information Protection (use azure-information-protection), Azure Policy (use
+  azure-policy), Azure Security (use azure-security).
 ---
 # Azure Role-based access control Crawl Report
 
@@ -46,8 +47,8 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Security (use
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 40
-- **Unchanged**: 64
+- **Updated Pages**: 1
+- **Unchanged**: 103
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-rbac/azure-rbac.csv`
 
@@ -68,47 +69,8 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Security (use
 
 ### Updated Pages
 
-- [Migration](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/migration)
-  - Updated: 2026-04-09T08:00:00.000Z → 2026-05-25T08:00:00.000Z
-- [Monitor](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/monitor)
-  - Updated: 2026-04-09T08:00:00.000Z → 2026-05-25T08:00:00.000Z
-- [Management and governance](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/management-and-governance)
-  - Updated: 2026-04-09T08:00:00.000Z → 2026-05-25T08:00:00.000Z
-- [Hybrid + multicloud](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/hybrid-multicloud)
-  - Updated: 2026-04-09T08:00:00.000Z → 2026-05-25T08:00:00.000Z
-- [Permissions](https://learn.microsoft.com/en-us/azure/role-based-access-control/resource-provider-operations)
-  - Updated: 2026-04-09T08:00:00.000Z → 2026-05-25T08:00:00.000Z
-- [General](https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/general)
-  - Updated: 2026-04-09T08:00:00.000Z → 2026-05-25T08:00:00.000Z
-- [Compute](https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/compute)
-  - Updated: 2026-04-09T22:25:00.000Z → 2026-06-02T22:37:00.000Z
-- [Networking](https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/networking)
-  - Updated: 2026-04-09T08:00:00.000Z → 2026-05-25T08:00:00.000Z
-- [Storage](https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/storage)
-  - Updated: 2026-04-09T08:00:00.000Z → 2026-05-25T08:00:00.000Z
-- [Web and Mobile](https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/web-and-mobile)
-  - Updated: 2026-04-09T08:00:00.000Z → 2026-05-25T08:00:00.000Z
-- [Containers](https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/containers)
-  - Updated: 2026-04-09T08:00:00.000Z → 2026-06-02T22:37:00.000Z
-- [Databases](https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/databases)
-  - Updated: 2026-04-09T08:00:00.000Z → 2026-05-25T08:00:00.000Z
-- [Analytics](https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/analytics)
-  - Updated: 2026-04-09T08:00:00.000Z → 2026-05-25T08:00:00.000Z
-- [AI + machine learning](https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/ai-machine-learning)
-  - Updated: 2026-04-09T08:00:00.000Z → 2026-05-25T08:00:00.000Z
-- [Internet of Things](https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/internet-of-things)
-  - Updated: 2026-04-10T06:11:00.000Z → 2026-05-25T08:00:00.000Z
-- [Integration](https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/integration)
-  - Updated: 2026-04-09T08:00:00.000Z → 2026-05-25T08:00:00.000Z
-- [Identity](https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/identity)
-  - Updated: 2026-04-09T08:00:00.000Z → 2026-05-25T08:00:00.000Z
-- [Security](https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/security)
-  - Updated: 2026-04-09T08:00:00.000Z → 2026-05-25T08:00:00.000Z
-- [DevOps](https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/devops)
-  - Updated: 2026-04-09T08:00:00.000Z → 2026-06-02T22:37:00.000Z
-- [Migration](https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/migration)
-  - Updated: 2026-04-09T08:00:00.000Z → 2026-05-25T08:00:00.000Z
-- *...and 20 more*
+- [Troubleshoot ABAC conditions](https://learn.microsoft.com/en-us/azure/role-based-access-control/conditions-troubleshoot)
+  - Updated: 2025-05-29T08:00:00.000Z → 2026-06-07T08:00:00.000Z
 
 ## Classified Pages
 
@@ -155,7 +117,7 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Security (use
 | [Monitor](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/monitor) | security | 0.90 | Provides detailed Azure Monitor built-in roles and their permission sets (Actions/NotActions/DataActions), which are specific RBAC definitions; this is security-focused configuration data. |
 | [Troubleshoot Azure RBAC limits](https://learn.microsoft.com/en-us/azure/role-based-access-control/troubleshoot-limits) | troubleshooting | 0.88 | Focused on exceeding RBAC limits and using Azure Resource Graph to reduce assignments/custom roles; combines limit-specific behavior with concrete remediation steps, matching troubleshooting for limits. |
 | [Overview](https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles) | limits-quotas | 0.86 | Includes explicit numeric limits on custom roles per tenant (5,000 and 2,000 for 21Vianet) plus detailed role definition structure; the limits are expert knowledge fitting limits-quotas. |
-| [Troubleshoot ABAC conditions](https://learn.microsoft.com/en-us/azure/role-based-access-control/conditions-troubleshoot) | troubleshooting | 0.86 | Dedicated troubleshooting guide for ABAC conditions; likely maps specific condition failures or error messages to causes and fixes, which is expert troubleshooting content. |
+| [Troubleshoot ABAC conditions](https://learn.microsoft.com/en-us/azure/role-based-access-control/conditions-troubleshoot) | troubleshooting | 0.86 | The page is explicitly a troubleshooting guide for Azure ABAC role assignment conditions. It maps specific symptoms and error messages to causes and resolutions, including product-specific behaviors and steps (for example, how certain condition formats or properties cause particular failures). This symptom→cause→solution structure with Azure RBAC/ABAC–specific details qualifies as expert troubleshooting knowledge beyond generic debugging advice. |
 | [Best practices](https://learn.microsoft.com/en-us/azure/role-based-access-control/best-practices) | best-practices | 0.85 | Explicit best-practices article with DO/DON'T guidance for Azure RBAC usage, including product-specific recommendations and pitfalls. |
 | [Condition format](https://learn.microsoft.com/en-us/azure/role-based-access-control/conditions-format) | configuration | 0.85 | Describes format and syntax of role assignment conditions; includes operators, structure, and allowed values—core configuration reference. |
 | [CLI](https://learn.microsoft.com/en-us/azure/role-based-access-control/conditions-role-assignments-cli) | security | 0.84 | Provides Azure CLI commands and flags for ABAC conditions; these are concrete, product-specific security configuration patterns and parameter usages. |

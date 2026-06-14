@@ -1,18 +1,18 @@
 ---
-generated_at: '2026-06-07'
+generated_at: '2026-06-14'
 category_descriptions:
   deployment: 'Deploying and moving Azure resources with ARM/Bicep: CI/CD pipelines,
     template specs, deployment scripts, deployment stacks, and cross-subscription/region
     relocation of many Azure services.'
   best-practices: 'Best practices for authoring and validating Bicep/ARM templates:
-    linting, naming, parameters, locations, dependencies, API versions, test toolkit
-    usage, and resilient tagging/endpoint design.'
-  integrations: Bicep/ARM integration patterns, functions, and operators, plus CLI/PowerShell/Python/REST
-    examples for deploying, tagging, querying, and programmatically managing Azure
+    linting, naming, parameters, locations, resource IDs, reusability, test toolkit
+    usage, and custom endpoint/resiliency guidance.'
+  integrations: Bicep and ARM template functions, operators, and tooling, plus CLI/PowerShell/Python/REST
+    patterns for deploying, tagging, querying, and programmatically managing Azure
     resources.
-  configuration: 'Configuring and authoring ARM/Bicep templates: file structure, parameters,
-    types, modules, loops, dependencies, tags, policies, monitoring, custom providers,
-    and ARM governance/preview features.'
+  configuration: 'Configuring ARM and Bicep templates: structure, types, parameters,
+    loops, dependencies, tags, policy, monitoring, custom providers, Form view UI,
+    and tooling for deployments and governance'
   troubleshooting: Diagnosing and fixing Bicep/ARM template compile and deployment
     errors (BCP codes, syntax/type issues, decorators, scopes, resource names, policies,
     SKUs, and provider/region constraints).
@@ -31,31 +31,32 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Resource Manager development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when using Bicep/ARM templates, deployment stacks, template specs, deployment
-  scripts, or ARM CLI/PowerShell/REST, and other Azure Resource Manager related development
-  tasks. Not for Azure Policy (use azure-policy), Azure Blueprints (use azure-blueprints),
-  Azure Resource Graph (use azure-resource-graph), Azure Portal (use azure-portal).
-use_when: Use when using Bicep/ARM templates, deployment stacks, template specs, deployment
-  scripts, or ARM CLI/PowerShell/REST, and other Azure Resource Manager related development
-  tasks.
-confusable_not_for: Not for Azure Policy (use azure-policy), Azure Blueprints (use
-  azure-blueprints), Azure Resource Graph (use azure-resource-graph), Azure Portal
+  Use when authoring Bicep/ARM templates, deployment stacks, template specs, CI/CD
+  pipelines, or ARM CLI/REST automations, and other Azure Resource Manager related
+  development tasks. Not for Azure Blueprints (use azure-blueprints), Azure Policy
+  (use azure-policy), Azure Resource Graph (use azure-resource-graph), Azure Portal
+  (use azure-portal).
+use_when: Use when authoring Bicep/ARM templates, deployment stacks, template specs,
+  CI/CD pipelines, or ARM CLI/REST automations, and other Azure Resource Manager related
+  development tasks.
+confusable_not_for: Not for Azure Blueprints (use azure-blueprints), Azure Policy
+  (use azure-policy), Azure Resource Graph (use azure-resource-graph), Azure Portal
   (use azure-portal).
 ---
 # Azure Resource Manager Crawl Report
 
 ## Summary
 
-- **Total Pages**: 464
-- **Fetched**: 464
+- **Total Pages**: 476
+- **Fetched**: 476
 - **Fetch Failed**: 0
-- **Classified**: 359
-- **Unclassified**: 105
+- **Classified**: 369
+- **Unclassified**: 107
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 6
-- **Unchanged**: 458
+- **New Pages**: 12
+- **Updated Pages**: 10
+- **Unchanged**: 454
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-resource-manager/azure-resource-manager.csv`
 
@@ -63,33 +64,56 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Blueprints (u
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 4 | 0.9% |
-| best-practices | 43 | 9.3% |
-| configuration | 62 | 13.4% |
-| decision-making | 12 | 2.6% |
-| deployment | 52 | 11.2% |
-| integrations | 48 | 10.3% |
-| limits-quotas | 23 | 5.0% |
-| security | 23 | 5.0% |
-| troubleshooting | 92 | 19.8% |
-| *(Unclassified)* | 105 | 22.6% |
+| architecture-patterns | 4 | 0.8% |
+| best-practices | 45 | 9.5% |
+| configuration | 68 | 14.3% |
+| decision-making | 12 | 2.5% |
+| deployment | 52 | 10.9% |
+| integrations | 50 | 10.5% |
+| limits-quotas | 23 | 4.8% |
+| security | 23 | 4.8% |
+| troubleshooting | 92 | 19.3% |
+| *(Unclassified)* | 107 | 22.5% |
 
 ## Changes
 
+### New Pages
+
+- [No module name](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-no-module-name)
+- [Use user-defined-types for complex objects](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-use-user-defined-types)
+- [Overview](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/form-view-overview)
+- [Elements](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/form-view-elements)
+- [BladeInvokeControl](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/form-view-microsoft-solutions-bladeinvokecontrol)
+- [Grid](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/form-view-microsoft-common-grid)
+- [LocationSelector](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/form-view-microsoft-common-locationselector)
+- [ManagementGroupSelector](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/form-view-microsoft-common-managementgroupselector)
+- [ResourceGroupSelector](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/form-view-microsoft-common-resourcegroupselector)
+- [ResourceScope](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/form-view-microsoft-common-resourcescope)
+- [SubscriptionSelector](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/form-view-microsoft-common-subscriptionselector)
+- [TenantSelector](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/form-view-microsoft-common-tenantselector)
+
 ### Updated Pages
 
-- [Visual Studio Code](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/visual-studio-code)
-  - Updated: 2026-02-09T18:26:00.000Z → 2026-05-27T08:00:00.000Z
-- [Extension (extension)](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-extension)
-  - Updated: 2025-12-22T08:00:00.000Z → 2026-06-03T05:14:00.000Z
-- [Parameters file](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/parameter-files)
-  - Updated: 2025-12-03T08:00:00.000Z → 2026-06-02T19:32:00.000Z
-- [Deploy - CLI](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deploy-cli)
-  - Updated: 2025-10-30T08:00:00.000Z → 2026-05-27T08:00:00.000Z
-- [Deploy - PowerShell](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deploy-powershell)
-  - Updated: 2025-10-30T08:00:00.000Z → 2026-05-27T08:00:00.000Z
-- [Monitoring](https://learn.microsoft.com/en-us/azure/governance/service-groups/monitoring)
-  - Updated: 2025-12-02T23:11:00.000Z → 2026-06-04T17:12:00.000Z
+- [Modules (module)](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/modules)
+  - Updated: 2025-12-10T08:00:00.000Z → 2026-06-12T22:22:00.000Z
+- [User-defined data types (type)](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/user-defined-data-types)
+  - Updated: 2025-12-22T08:00:00.000Z → 2026-06-02T08:00:00.000Z
+- [Linter](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter)
+  - Updated: 2026-01-30T23:12:00.000Z → 2026-06-12T22:22:00.000Z
+- [Use recent API versions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-use-recent-api-versions)
+  - Updated: 2025-10-30T08:00:00.000Z → 2026-06-12T22:22:00.000Z
+- [Linter settings](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-config-linter)
+  - Updated: 2026-03-12T08:00:00.000Z → 2026-06-12T22:22:00.000Z
+- [Array functions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-functions-array)
+  - Updated: 2025-10-30T08:00:00.000Z → 2026-06-03T08:00:00.000Z
+- [String functions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-functions-string)
+  - Updated: 2025-12-22T08:00:00.000Z → 2026-06-03T08:00:00.000Z
+- [Array functions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-functions-array)
+  - Updated: 2025-08-01T08:00:00.000Z → 2026-06-03T08:00:00.000Z
+- [String functions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-functions-string)
+  - Updated: 2025-08-01T08:00:00.000Z → 2026-06-03T08:00:00.000Z
+- [Create portal form](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-specs-create-portal-forms)
+  - Updated: 2025-10-29T08:00:00.000Z → 2026-06-12T05:19:00.000Z
 
 ## Classified Pages
 
@@ -100,15 +124,17 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Blueprints (u
 | [Subscription and service limits](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/azure-subscription-service-limits) | limits-quotas | 0.92 | Explicitly lists common Azure limits/quotas with maximum values and guidance on increasing them—canonical limits-quotas reference. |
 | [Deployment history deletions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deployment-history-deletions) | limits-quotas | 0.90 | States the exact limit of 800 deployments per scope and describes automatic deletion behavior and date of change; this is precise quota information. |
 | [Resource instance limit](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/resources-without-resource-group-limit) | limits-quotas | 0.90 | Specifically about the 800-instance-per-resource-group limit and lists resource types that exceed it, including notes on support exceptions—clear limits-quotas content. |
+| [ResourceScope](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/form-view-microsoft-common-resourcescope) | configuration | 0.88 | Covers Microsoft.Common.ResourceScope, a composite element for subscription, resource group, and location selection. This is a detailed configuration construct specific to Form view with defined behavior and usage constraints. |
 | [BCP071](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/diagnostics/bcp071) | troubleshooting | 0.86 | Page documents a specific Bicep diagnostic code (BCP071), its exact compiler message, cause, and how to resolve it when functions are called with an incorrect number of arguments. This is product-specific symptom → cause → fix guidance. |
 | [BCP072](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/diagnostics/bcp072) | troubleshooting | 0.86 | Describes Bicep diagnostic BCP072, including the exact error text, what construct triggers it (referencing variables in parameter defaults), and how to correct it. This is concrete, product-specific error resolution. |
 | [BCP082](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/diagnostics/bcp082) | troubleshooting | 0.86 | Documents BCP082 with the exact message and behavior (name not in context, compiler suggests similar symbol). This is detailed, product-specific diagnostic behavior and fix. |
 | [BCP083](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/diagnostics/bcp083) | troubleshooting | 0.86 | Covers BCP083, including the exact error text and that it’s raised when a property name appears to be a typo. This is a clear symptom → cause mapping for a specific compiler error. |
 | [BCP088](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/diagnostics/bcp088) | troubleshooting | 0.86 | Describes BCP088 with its precise message and the scenario (property value type mismatch that looks like a typo). This is specific diagnostic guidance. |
 | [BCP089](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/diagnostics/bcp089) | troubleshooting | 0.86 | Explains BCP089, including the exact error and that it occurs when a property isn’t allowed on a type, often due to a typo. This is product-specific error resolution. |
+| [BladeInvokeControl](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/form-view-microsoft-solutions-bladeinvokecontrol) | configuration | 0.86 | Describes the Microsoft.Solutions.BladeInvokeControl UI element, including how to invoke Azure portal blades and store returned data. This is a product-specific UI element with configuration parameters and usage constraints, matching configuration expert knowledge. |
+| [Elements](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/form-view-elements) | configuration | 0.86 | Reference list of supported Form view (uiFormDefinition.json) elements with their properties such as name, type, label, defaultValue, constraints, options, and visible. This is a product-specific configuration reference with parameter names and behaviors, fitting the configuration sub-skill. |
 | [Invalid template](https://learn.microsoft.com/en-us/azure/azure-resource-manager/troubleshooting/error-invalid-template) | troubleshooting | 0.86 | The article maps specific Azure Resource Manager deployment error messages (invalid template variants) to their causes and resolutions, including product-specific behaviors like circular dependencies and parameter validation. It is organized as symptom → cause → fix for ARM/Bicep deployments, which matches the troubleshooting sub-skill definition and contains expert, product-specific diagnostic guidance beyond generic debugging advice. |
 | [Resource name rules](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/resource-name-rules) | limits-quotas | 0.86 | Summarizes naming rules and restrictions per resource type, including allowed characters, lengths, and case-sensitivity—effectively numeric and pattern limits. |
-| [Array functions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-functions-array) | configuration | 0.85 | Lists specific array function names, behaviors, and usage patterns in ARM templates, which are detailed product-specific function references. |
 | [BCP007](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/diagnostics/bcp007) | troubleshooting | 0.85 | Maps a specific diagnostic code (BCP007) to its cause and resolution; classic symptom → cause → fix troubleshooting content. |
 | [BCP009](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/diagnostics/bcp009) | troubleshooting | 0.85 | Explains error BCP009, its cause (incomplete declaration), and how to correct it; product-specific error guidance. |
 | [BCP018](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/diagnostics/bcp018) | troubleshooting | 0.85 | Documents BCP018 diagnostic and its typical cause (missing bracket/character); direct error-to-solution mapping. |
@@ -137,6 +163,11 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Blueprints (u
 | [BCP091](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/diagnostics/bcp091) | troubleshooting | 0.84 | Documents BCP091 with the exact message and the common causes (missing module or type file at path). This is concrete troubleshooting for Bicep file resolution. |
 | [BCP130](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/diagnostics/bcp130) | troubleshooting | 0.84 | Documents BCP130, including the exact message and the rule that decorators aren’t allowed in .bicepparam files. This is specific compiler behavior and how to correct it. |
 | [BCP226](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/diagnostics/bcp226) | troubleshooting | 0.84 | Explains BCP226 with its precise message and the rule that #disable-next-line must include at least one diagnostic code. This is detailed, product-specific compiler directive behavior. |
+| [LocationSelector](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/form-view-microsoft-common-locationselector) | configuration | 0.84 | Describes Microsoft.Common.LocationSelector, a region picker with specific behavior and properties in Form view. These element-specific settings and usage patterns are product-specific configuration details. |
+| [ManagementGroupSelector](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/form-view-microsoft-common-managementgroupselector) | configuration | 0.84 | Defines Microsoft.Common.ManagementGroupSelector for management-group-scope deployments. The element’s contract and usage are configuration details unique to Azure portal Form view. |
+| [ResourceGroupSelector](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/form-view-microsoft-common-resourcegroupselector) | configuration | 0.84 | Describes Microsoft.Common.ResourceGroupSelector for selecting or creating resource groups. The element’s properties and behavior are product-specific configuration parameters. |
+| [SubscriptionSelector](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/form-view-microsoft-common-subscriptionselector) | configuration | 0.84 | Describes Microsoft.Common.SubscriptionSelector, a standalone subscription picker. The element’s schema and usage are product-specific configuration knowledge. |
+| [TenantSelector](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/form-view-microsoft-common-tenantselector) | configuration | 0.84 | Defines Microsoft.Common.TenantSelector, including how it displays the current Microsoft Entra tenant and when to use it. This is a specific configuration element with product-specific behavior. |
 | [BCP135](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/diagnostics/bcp135) | troubleshooting | 0.83 | Describes BCP135, including the exact error and the rule about permitted scopes (resource group, management group, subscription, tenant). This is product-specific scope validation behavior. |
 | [BCP138](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/diagnostics/bcp138) | troubleshooting | 0.83 | Documents BCP138 with the precise message and enumerates where for-expressions are allowed vs disallowed. This is detailed, product-specific syntax troubleshooting. |
 | [BCP139](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/diagnostics/bcp139) | troubleshooting | 0.83 | Explains BCP139, including the exact error and the rule that resources must match the Bicep file scope, using modules for cross-scope deployments. This is specific error-resolution guidance. |
@@ -181,10 +212,11 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Blueprints (u
 | [Date functions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-functions-date) | configuration | 0.80 | Lists and explains ARM template date functions and their usage, which is specific to the ARM template language. |
 | [Deployment functions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-functions-deployment) | configuration | 0.80 | Describes deployment-related functions (e.g., retrieving deployment metadata) with exact names and behaviors, which are ARM-specific configuration tools. |
 | [Functions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/relocation/relocation-functions) | deployment | 0.80 | Documents that hosting resources are region-specific and must be recreated, with redeployment of function code, a product-specific deployment pattern. |
+| [Grid](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/form-view-microsoft-common-grid) | configuration | 0.80 | Covers Microsoft.Common.Grid element behavior for tabular rows and blade-based editing. This is a specific UI element contract with configuration properties and expected behavior, which is expert configuration knowledge. |
 | [Job size exceeded](https://learn.microsoft.com/en-us/azure/azure-resource-manager/troubleshooting/error-job-size-exceeded) | limits-quotas | 0.80 | Focuses on JobSizeExceededException and DeploymentJobSizeExceededException, which are quota-like constraints on template/job size with specific error codes. |
 | [Key Vault](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/relocation/relocation-key-vault) | deployment | 0.80 | States that Key Vault doesn’t support regional relocation and prescribes alternative steps, a critical deployment limitation and pattern. |
 | [Lambda functions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-functions-lambda) | configuration | 0.80 | Explains ARM/Bicep lambda function syntax and constraints, including expression format and limitations, which is detailed language configuration. |
-| [Linter settings](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-config-linter) | configuration | 0.80 | Describes concrete linter configuration options in bicepconfig.json, including specific setting names and allowed values that are product-specific and not generally known from training. |
+| [Linter settings](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-config-linter) | configuration | 0.80 | Explains Bicep linter configuration options in bicepconfig.json, which are product-specific settings. Likely includes parameter names and allowed values for linter behavior, fitting the configuration category. |
 | [Logical functions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-functions-logical) | configuration | 0.80 | Documents logical function names and semantics in ARM templates, which are specific to the template language. |
 | [Module settings](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-config-modules) | configuration | 0.80 | Details module-related settings (aliases, profile/credential precedence) in bicepconfig.json; product-specific configuration options. |
 | [Monitor - Log Analytics Workspace](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/relocation/relocation-log-analytics) | deployment | 0.80 | Explains that workspace data can’t be migrated regionally and requires creating a new workspace and reconfiguring devices/settings, a product-specific deployment limitation. |
@@ -213,11 +245,9 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Blueprints (u
 | [Sensitive values](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/key-vault-parameter) | security | 0.80 | Details the use of getSecret, secure: true modifiers, and Key Vault IDs in Bicep deployments, which are concrete, product-specific security and configuration patterns. |
 | [Site Recovery (Recovery Services vaults)](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/relocation/relocation-site-recovery) | deployment | 0.80 | Clarifies there’s no first-class way to move vault configuration and provides a workaround process, which is nuanced deployment/operations guidance. |
 | [Storage account name invalid](https://learn.microsoft.com/en-us/azure/azure-resource-manager/troubleshooting/error-storage-account-name) | troubleshooting | 0.80 | Describes specific storage account name validation rules and related deployment errors, mapping them to concrete fixes. |
-| [String functions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-functions-string) | configuration | 0.80 | Lists string function names and behaviors in ARM templates, which is detailed language configuration. |
 | [Template best practices](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/best-practices) | best-practices | 0.80 | Explicitly a best-practices article with recommended approaches and ways to avoid common problems; contains product-specific guidance and gotchas for ARM templates. |
 | [Template test cases](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-test-cases) | best-practices | 0.80 | Lists specific template tests with pass/fail examples and test names, encoding concrete product-specific best-practice rules and edge cases. |
 | [Use parent property](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-use-parent-property) | best-practices | 0.80 | Explains using the parent property instead of full resource names with slashes, a concrete pattern unique to Bicep resource declarations. |
-| [Use recent API versions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-use-recent-api-versions) | best-practices | 0.80 | Rule defines a specific threshold (older than 730 days) and how to enable it, giving quantified, product-specific guidance on API version selection. |
 | [Use secure value for secure inputs](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-use-secure-value-for-secure-inputs) | security | 0.80 | Security-focused linter rule targeting specific resource types and property path (properties.osProfile.adminPassword) to ensure secure values; product-specific security configuration guidance. |
 | [Virtual Machines](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-limitations/virtual-machines-move-limitations) | deployment | 0.80 | Documents VM move edge cases (disk encryption, Marketplace plans, Backup) and required workarounds, which are product-specific deployment gotchas. |
 | [Virtual Network](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/relocation/relocation-virtual-network) | deployment | 0.80 | Describes redeploying VNets, changing private IP ranges, and considerations when using Azure Resource Mover, which are concrete deployment patterns and constraints. |
@@ -257,10 +287,10 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Blueprints (u
 | [Subscription](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deploy-to-subscription) | limits-quotas | 0.75 | Subscription-scope deployment reference that includes a specific limit of 800 different resource groups per deployment, which is a concrete quota. |
 | [Use recent module versions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-use-recent-module-versions) | best-practices | 0.75 | Rule detects old public module versions and recommends updating, including configuration details (off by default, enable via bicepconfig.json), which is concrete best-practice guidance. |
 | [Use safe access](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-use-safe-access) | best-practices | 0.75 | Explains exact code patterns the linter detects and how to replace contains() checks with .? operator; includes concrete before/after patterns unique to Bicep. |
-| [User-defined data types (type)](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/user-defined-data-types) | configuration | 0.75 | Explains how to declare custom types, required Bicep CLI versions, and language version behavior; these are detailed configuration and compatibility rules. |
 | [User-defined functions (func)](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/user-defined-functions) | configuration | 0.75 | Describes syntax and constraints for user-defined functions, required CLI versions, and compile-time behavior; product-specific configuration of language features. |
 | [Using (using/using none)](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-using) | configuration | 0.75 | Reference for using/using none statements in Bicep parameter files, including linkage behavior to templates; these are specific configuration constructs. |
 | [BCP416](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/diagnostics/bcp416) | troubleshooting | 0.74 | Explains BCP416, raised when a string doesn’t match an expected pattern, including the diagnostic’s message and context—product-specific validation behavior. |
+| [Overview](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/form-view-overview) | configuration | 0.72 | Describes the uiFormDefinition.json authoring model for Azure portal Create experiences, which is a product-specific configuration schema. While the summary is high level, this page in full typically includes concrete JSON structure, required/optional properties, and schema-specific behaviors that qualify as expert configuration knowledge not generally known from training. |
 | [3 - Create a pipeline](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deployment-tutorial-pipeline) | deployment | 0.70 | Describes continuous integration and deployment of ARM templates using Azure Pipelines, a product-specific CI/CD deployment pattern with configuration details unique to ARM + Azure DevOps. |
 | [ARM templates](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources-templates) | configuration | 0.70 | Shows how to define tags in ARM templates, including schema properties and behavior (template-applied tags overwrite existing tags); this is concrete configuration behavior unique to ARM. |
 | [Access private virtual networks](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deployment-script-vnet) | security | 0.70 | Describes configuration for private VNet access, managed identities, and storage accounts; includes security-related network and identity configuration details. |
@@ -270,7 +300,7 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Blueprints (u
 | [All functions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-functions) | integrations | 0.70 | The page enumerates all built-in Bicep/ARM template functions with product-specific syntax, parameter names, and behaviors that are not obvious from general knowledge. It is effectively an API surface reference for Bicep functions (string, numeric, deployment, resource, etc.), which fits the integrations/coding-patterns category because it documents concrete function signatures and usage details rather than just concepts. |
 | [All operators](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/operators) | integrations | 0.70 | Catalogs all Bicep operators, their precedence, and semantics; language reference not generally known from generic training. |
 | [App Service](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-limitations/app-service-move-limitations) | deployment | 0.70 | Describes App Service–specific requirements and constraints for moving between resource groups/subscriptions, which are product-specific deployment rules. |
-| [Array functions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-functions-array) | integrations | 0.70 | Lists product-specific Bicep array functions with signatures and behaviors that are not generally known; effectively an API surface reference. |
+| [Array functions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-functions-array) | integrations | 0.70 | Reference for ARM template array functions (such as split and others) with exact function names, signatures, and behaviors. These are SDK/template API details unique to ARM templates, fitting integrations & coding patterns as they define how to programmatically interact with the ARM deployment engine. |
 | [Authenticate across tenants](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/authenticate-multi-tenant) | security | 0.70 | Explains use of auxiliary tokens header and cross-tenant authentication behavior; these are specific security/auth configuration details. |
 | [Automation](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/relocation/relocation-automation) | deployment | 0.70 | Gives relocation guidance and notes when simple redeployment is sufficient, which is product-specific deployment guidance. |
 | [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/policy-reference) | configuration | 0.70 | Lists specific built-in policy definitions, names, and versions for ARM; these are concrete configuration artifacts for governance. |
@@ -321,7 +351,6 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Blueprints (u
 | [JSON structure](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/syntax) | configuration | 0.70 | Detailed reference of template sections and properties; effectively a configuration schema for ARM templates with specific field names and allowed structures. |
 | [Kubernetes Service](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/relocation/relocation-kubernetes-service) | deployment | 0.70 | Provides AKS-specific relocation guidance and suggests CI/CD-based alternatives, which are concrete deployment patterns. |
 | [Kubernetes extension](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-kubernetes-extension) | integrations | 0.70 | Documents the Bicep Kubernetes extension, its capabilities, and limitations (e.g., not supported for private clusters); integration-specific behavior. |
-| [Linter](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter) | best-practices | 0.70 | Describes how to configure the Bicep linter, including rule levels and customization, providing concrete product-specific best-practice enforcement patterns. |
 | [Location ineligible](https://learn.microsoft.com/en-us/azure/azure-resource-manager/troubleshooting/error-region-access-policy) | troubleshooting | 0.70 | Explains the location ineligible error and steps to determine allowed regions or adjust configuration, which is a specific error-resolution guide. |
 | [Lock resources](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources) | security | 0.70 | Documents specific lock types (CanNotDelete, ReadOnly) and their behavior overriding RBAC; these are concrete security configuration mechanisms. |
 | [Logical parameter](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/patterns-logical-parameter) | architecture-patterns | 0.70 | Describes a Bicep-specific pattern separating logical and physical resource definitions; architecture/design guidance unique to Bicep. |
@@ -332,7 +361,6 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Blueprints (u
 | [Max parameters](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-max-parameters) | limits-quotas | 0.70 | Checks that parameter count does not exceed ARM template limits, which are specific numeric quotas enforced by the platform. |
 | [Max resources](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-max-resources) | limits-quotas | 0.70 | Validates that the number of resources stays within ARM template limits, which are platform-specific numeric constraints. |
 | [Max variables](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-max-variables) | limits-quotas | 0.70 | Rule is tied to ARM template variable count limits, which are numeric quotas not generally known without documentation. |
-| [Modules (module)](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/modules) | configuration | 0.70 | Describes module definitions, scopes, and how to reference template specs and registries; provides product-specific configuration patterns for modular Bicep design. |
 | [Monitoring](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/scenarios-monitoring) | configuration | 0.70 | Scenario article shows concrete Bicep resource definitions for alerts, diagnostic settings, and monitoring rules. These include product-specific resource types, properties, and configuration patterns that go beyond generic knowledge. |
 | [Monitoring data reference](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/monitor-resource-manager-reference) | configuration | 0.70 | Monitoring data reference includes metric names, dimensions, log categories, and schemas; these are detailed configuration/reference values unique to ARM monitoring. |
 | [Name generation](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/patterns-name-generation) | architecture-patterns | 0.70 | Provides a concrete pattern for generating deterministic, environment-specific resource names using Bicep functions; product-specific design pattern. |
@@ -342,6 +370,7 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Blueprints (u
 | [No hardcoded environment URLs](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-no-hardcoded-environment-urls) | best-practices | 0.70 | The page documents a specific Bicep linter rule (no-hardcoded-environment-urls), including rule ID/name, what patterns it flags, and how to correctly parameterize or reference environment-specific URLs in Azure Resource Manager/Bicep templates. This is product-specific, actionable guidance (DO/DON'T patterns and code examples) that goes beyond generic best practices, but it does not focus on limits, configuration tables, deployment matrices, or error-code troubleshooting. |
 | [No hardcoded locations](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-no-hardcoded-location) | best-practices | 0.70 | Describes a rule that finds non-parameterized location values and how to enable it in bicepconfig.json, which is concrete Bicep guidance. |
 | [No location expressions outside of parameter default values](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-no-loc-expr-outside-params) | best-practices | 0.70 | Rule targets resourceGroup().location and deployment().location usage outside parameter defaults, a nuanced, product-specific gotcha. |
+| [No module name](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-no-module-name) | best-practices | 0.70 | Documents a specific Bicep linter rule (no-module-name), including its behavior, default state, and how to enable/adjust it, which is product-specific best-practice guidance and configuration detail. |
 | [No unused imports](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-no-unused-imports) | best-practices | 0.70 | Describes how the linter finds unused import aliases, which is a concrete, tool-specific best-practice rule. |
 | [No unused parameters](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-no-unused-parameters) | best-practices | 0.70 | Rule flags parameters not referenced in the file, a specific Bicep hygiene and best-practice pattern. |
 | [No unused variables](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-no-unused-variables) | best-practices | 0.70 | Similar to unused parameters, this is a concrete rule for unused variables, tied to Bicep tooling behavior. |
@@ -365,7 +394,7 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Blueprints (u
 | [Shared variable file](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/patterns-shared-variable-file) | architecture-patterns | 0.70 | Describes loading shared values from JSON and combining with deployment-specific values; a Bicep-specific configuration/architecture pattern. |
 | [Simplify JSON null](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-simplify-json-null) | best-practices | 0.70 | Rule flags json('null') usage, pointing to a simpler pattern, which is a Bicep-specific best-practice detail. |
 | [Static Web Apps](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/relocation/relocation-static-web-apps) | deployment | 0.70 | Provides service-specific steps and constraints for moving Static Web Apps to another region, which are deployment behaviors not generically known. |
-| [String functions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-functions-string) | integrations | 0.70 | Lists Bicep string functions and their exact behavior; language-specific API reference. |
+| [String functions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-functions-string) | integrations | 0.70 | Lists ARM template string functions with their exact names and usage semantics. This is product-specific API surface for ARM templates, which is expert coding/integration knowledge rather than generic string handling. |
 | [Subscription](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-to-subscription) | limits-quotas | 0.70 | Covers subscription-scope deployments and explicitly states a numeric limit of deploying to 800 different resource groups in a subscription, which is a concrete quota. |
 | [Supported resource types](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/tag-support) | decision-making | 0.70 | The page contains a comprehensive, product-specific matrix listing each Azure resource type and whether it supports tags and passes tags to cost reports. This is detailed reference data not inferable from general training and is used to decide tagging strategies and which resources can be used for tag-based cost reporting, fitting the decision-making category best. |
 | [TLS support](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/tls-support) | security | 0.70 | Details deprecation of TLS versions prior to 1.2 for ARM, including compliance and support behavior—product-specific security protocol configuration and requirements. |
@@ -374,6 +403,7 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Blueprints (u
 | [Test toolkit](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/test-toolkit) | best-practices | 0.70 | Describes using the test toolkit to enforce recommended ARM template practices, including specific tests and suggested changes, which are product-specific best-practice rules. |
 | [Use deployment script resource](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deployment-script-bicep) | deployment | 0.70 | Explains deploymentScripts resource behavior, region availability tied to ACI, and supporting resources; includes product-specific deployment constraints. |
 | [Use over private Endpoint](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deployment-script-vnet-private-endpoint) | security | 0.70 | Focuses on running deployment scripts privately over private endpoints in ACI; contains network security configuration details specific to this resource. |
+| [Use recent API versions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-use-recent-api-versions) | best-practices | 0.70 | Defines a concrete Bicep linter rule that flags API versions older than 730 days and explains how to enable it via bicepconfig.json, providing product-specific rule thresholds and configuration guidance. |
 | [Use resource ID functions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-use-resource-id-functions) | best-practices | 0.70 | Product-specific linter rule describing when and how to use resourceId() and symbolic names instead of manual string concatenation; concrete guidance unique to Bicep. |
 | [Use resource symbol reference](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-use-resource-symbol-reference) | best-practices | 0.70 | Details a specific Bicep linter rule with concrete recommendations on replacing reference/list calls with resource symbol references; product-specific coding guidance. |
 | [Use stable VM image](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-use-stable-vm-image) | best-practices | 0.70 | Rule checks specific imageReference properties for the string 'preview'; product-specific best practice to avoid unstable VM images. |
@@ -386,12 +416,14 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Blueprints (u
 | [What-if short-circuiting](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-what-if-short-circuiting) | best-practices | 0.70 | Explains a linter rule about passing runtime values into modules that affect resource IDs and what-if behavior; nuanced, product-specific guidance. |
 | [Write template expressions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-expressions) | limits-quotas | 0.70 | Describes expression syntax and explicitly states a maximum template expression length of 24,576 characters, which is a specific limit/constraint. |
 | [All functions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-functions) | integrations | 0.68 | Lists all ARM template functions with their exact names, signatures, and behavior, which are product-specific API details. This is expert integration knowledge about how to programmatically interact with Azure Resource Manager templates rather than a conceptual overview. |
+| [Create portal form](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-specs-create-portal-forms) | configuration | 0.68 | The page describes how to define Form view JSON for ARM template specs, including specific JSON schema elements and configuration properties that the Azure portal interprets at runtime. These are product-specific configuration details (field names, structure, and behavior) that go beyond generic knowledge and match the configuration sub-skill definition. |
 | [Programmatic Bicep usage with JSON-RPC](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-cli-jsonrpc) | integrations | 0.68 | The page documents the Bicep CLI `jsonrpc` command, including version-specific introduction details and a stable, backward-compatible JSON-RPC interface. It describes structured request/response formats and fields that external tools must use to integrate programmatically with Bicep. These are product-specific API/CLI parameters and payload structures that qualify as integration-focused expert knowledge rather than general concepts. |
 | [Service tag](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/service-tags) | security | 0.68 | Explains how to use the AzureResourceManager service tag to define network access; includes product-specific security configuration behavior for NSG rules. |
 | [Custom resource provider RESTful endpoint reference](https://learn.microsoft.com/en-us/azure/azure-resource-manager/custom-providers/reference-custom-providers-csharp-endpoint) | integrations | 0.66 | C# RESTful endpoint reference for custom providers via Azure Functions; likely includes function signatures, request/response schemas, and parameters specific to this integration. |
 | [1 - Deploy a local template](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deployment-tutorial-local-template) | deployment | 0.65 | Tutorial series focused on deployment patterns (local template deployment, linked templates, DevOps pipeline). Contains product-specific deployment steps and likely constraints around where templates can be stored and how they are referenced, which is deployment-focused expert knowledge. |
 | [2 - Deploy a linked template](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deployment-tutorial-linked-template) | deployment | 0.65 | Shows how to deploy a main template that references linked templates, including storage and SAS token usage. This is a product-specific deployment pattern for complex solutions, fitting deployment sub-skill. |
 | [ARM templates with pipelines](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/add-template-to-azure-pipelines) | deployment | 0.65 | Covers advanced deployment patterns for ARM templates with Azure Pipelines, including pipeline configuration and staging/deployment flows that are product-specific deployment knowledge. |
+| [Array functions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-functions-array) | integrations | 0.65 | Page documents product-specific Bicep array functions with exact function names, parameter signatures, and behavior details that are effectively API/DSL integration patterns. These are concrete, code-focused patterns unique to Bicep rather than generic programming concepts. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-cli) | integrations | 0.65 | Uses specific az group commands and parameters to manage resource groups; these CLI patterns and options are product-specific integration details. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resources-cli) | integrations | 0.65 | Uses az resource/az deployment commands with specific parameters; these are concrete CLI integration patterns with ARM. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources-cli) | integrations | 0.65 | CLI tagging article typically documents specific az command names, parameters, and request patterns for tags; these SDK/CLI parameter details are product-specific integration patterns. |
@@ -415,6 +447,7 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Blueprints (u
 | [Deploy as linked template](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-specs-deploy-linked-template) | deployment | 0.65 | Covers deploying template specs via linked deployments using PowerShell/CLI; this is a product-specific deployment method and pattern. |
 | [Deployment complete mode deletion](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deployment-complete-mode-deletion) | decision-making | 0.65 | Provides a per-resource-type table indicating whether resources are deleted in complete mode; helps decide how to structure templates and when to use complete mode. |
 | [Flow-control functions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-functions-flow-control) | integrations | 0.65 | Explains the Bicep fail function, its behavior, and usage with specific operators; product-specific language semantics. |
+| [Linter](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter) | best-practices | 0.65 | Describes specific Bicep linter rules and how to configure/customize them, which are product-specific best-practice checks and configurations beyond generic linting concepts. |
 | [Logical functions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-functions-logical) | integrations | 0.65 | Documents Bicep logical function(s) and how they map from ARM template functions; product-specific behavior. |
 | [Logical operators](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/operators-logical) | integrations | 0.65 | Details logical operators (&&, ||, ??, ?: etc.) and their behavior in Bicep; specific to this DSL. |
 | [Manage - Commands](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-private-link-access-commands) | security | 0.65 | Documents specific API operations for getting and deleting ARM private link resources; these are security-related management operations unique to this feature. |
@@ -426,9 +459,11 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Blueprints (u
 | [Python](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-python) | integrations | 0.65 | Shows Python SDK classes/methods for resource group operations; these API signatures and usage patterns are product-specific integration knowledge. |
 | [Python](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resources-python) | integrations | 0.65 | Uses Azure Python SDK clients and methods to deploy and delete resources; these API patterns are product-specific integration knowledge. |
 | [Recommended workflow](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/migrate) | decision-making | 0.65 | Provides a recommended five-phase workflow and migration strategy; product-specific decision and migration guidance. |
+| [String functions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-functions-string) | integrations | 0.65 | Page lists and defines Bicep string functions with specific names, parameters, and behaviors unique to the Bicep language, which function as SDK/DSL API references. This is detailed, product-specific function-level knowledge rather than a conceptual overview. |
 | [Templates for cloud consistency](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-cloud-consistency) | best-practices | 0.65 | Focuses on making templates consistent across different cloud environments and Azure Stack; contains product-specific recommendations and patterns for cross-cloud reuse. |
 | [Track asynchronous operations](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/async-operations) | configuration | 0.65 | Describes specific headers, URLs, and status values for async operations; these are concrete protocol/configuration details for ARM. |
 | [Update VS deployment script to Az module](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/update-visual-studio-deployment-script) | configuration | 0.65 | Details how to modify the generated deployment script from AzureRM to Az modules, including specific cmdlet and module usage, which is product-specific configuration. |
+| [Use user-defined-types for complex objects](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-use-user-defined-types) | best-practices | 0.65 | Describes a specific Bicep linter rule with concrete guidance on preferring user-defined types over generic object/array types, including how to enable it via configuration. This is product-specific best-practices style guidance rather than generic programming advice. |
 | [Add custom actions to Azure](https://learn.microsoft.com/en-us/azure/azure-resource-manager/custom-providers/custom-providers-action-endpoint-how-to) | best-practices | 0.64 | Explicitly states it covers requirements and best practices for endpoints implementing custom actions; these are product-specific DO/DON'T guidelines for Azure Custom Providers. |
 | [Add custom resources to Azure](https://learn.microsoft.com/en-us/azure/azure-resource-manager/custom-providers/custom-providers-resources-endpoint-how-to) | best-practices | 0.64 | Focuses on requirements and best practices for endpoints implementing custom resources, which are product-specific actionable recommendations. |
 | [Custom resource cache reference](https://learn.microsoft.com/en-us/azure/azure-resource-manager/custom-providers/proxy-cache-resource-endpoint-reference) | configuration | 0.62 | Reference for cache custom resources with endpoint requirements; defines configuration contract details unique to this feature. |
@@ -439,7 +474,6 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Blueprints (u
 | [Blueprint to deployment stack](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/migrate-blueprint) | decision-making | 0.60 | Explains how to convert Blueprint definitions/assignments to deployment stacks; migration-focused decision and process guidance. |
 | [Classic deployment](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-limitations/classic-model-move-limitations) | deployment | 0.60 | Covers special steps and constraints for moving classic deployment model resources, which are specific to Azure’s deployment system. |
 | [Cloud Services (extended support)](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-limitations/cloud-services-extended-support) | deployment | 0.60 | Describes model-specific steps and constraints for moving Cloud Services (extended support) deployments, which are product-specific deployment behaviors. |
-| [Create portal form](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-specs-create-portal-forms) | configuration | 0.60 | Describes how to define forms that map to template spec parameters and are packaged with the template; involves specific configuration schema for portal forms, fitting configuration. |
 | [Cut over traffic](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/relocate-cutover) | deployment | 0.60 | Details the cutover process (traffic redirection, validation, decommissioning) with ordered steps, which is concrete deployment/transition guidance. |
 | [Decompile](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/decompile) | integrations | 0.60 | Describes specific Bicep CLI commands and behavior for decompiling templates; includes product-specific command usage patterns. |
 | [Delete resource groups and resources](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/delete-resource-group) | troubleshooting | 0.60 | Describes deletion ordering, response codes, and how ARM interprets them to determine success; this is symptom→behavior mapping and operational nuance useful for troubleshooting deletions. |
@@ -559,7 +593,9 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Blueprints (u
 | [Frequently asked questions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/frequently-asked-questions) | 0.20 | FAQ-style overview about Azure Resource Manager usage; primarily conceptual Q&A without detailed numeric limits, configuration parameter tables, error-code-based troubleshooting flows, or decision matrices. Does not meet thresholds for any expert-knowledge sub-skill type. |
 | [Introduction to move](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-resources-overview) | 0.20 | High-level overview of moving resources; no detailed limits, configs, or decision matrices. |
 | [Management groups](https://learn.microsoft.com/en-us/azure/governance/management-groups/overview) | 0.20 | High-level overview of management groups and inheritance; no detailed limits, configs, or decision matrices. |
+| [Modules (module)](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/modules) | 0.20 | Primarily explains how to structure and use Bicep modules and scopes. It appears to be a conceptual/how-to article without tables of configuration parameters, numeric limits, error-code mappings, or decision matrices with quantified trade-offs. No strong evidence of product-specific limits, quotas, or configuration reference content. |
 | [Monitoring](https://learn.microsoft.com/en-us/azure/governance/service-groups/monitoring) | 0.20 | From the available summary, the page appears to be a conceptual/how-to overview of using Azure Monitor with Azure Service Groups, without clear evidence of numeric limits, detailed configuration parameter tables, error-code-based troubleshooting, or decision matrices. Lacking those concrete expert details, it does not meet the thresholds for any specified sub-skill type. |
+| [User-defined data types (type)](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/user-defined-data-types) | 0.20 | Describes how to define and use user-defined data types in Bicep, including required CLI and language versions, but this is mainly feature usage guidance. It does not present detailed configuration parameter tables, limits/quotas, error-code mappings, or decision matrices. Thus it lacks the kind of expert reference knowledge targeted by the sub-skill types. |
 | [Visual Studio Code](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/visual-studio-code) | 0.20 | How-to article for using Visual Studio Code with Bicep; focuses on editor usage and basic workflow without product-specific limits, configuration tables, error-code troubleshooting, or decision matrices. |
 | [What are Azure Service Groups?](https://learn.microsoft.com/en-us/azure/governance/service-groups/overview) | 0.20 | Overview of Azure Service Groups describing conceptual usage and benefits; no detailed limits, configuration tables, error codes, or product-specific numeric thresholds or decision matrices. |
 | [What is Resource Manager?](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/overview) | 0.20 | High-level overview of Azure Resource Manager; conceptual description without detailed limits, configs, or troubleshooting content. |

@@ -1,6 +1,6 @@
 ---
 name: azure-partner-solutions
-description: Expert knowledge for Azure Partner Solutions development including troubleshooting, decision making, architecture & design patterns, security, configuration, and integrations & coding patterns. Use when using Service Connector, Foundry Agents, Confluent RBAC, Dynatrace APM on Azure, or Cloud NGFW with App Gateway, and other Azure Partner Solutions related development tasks.
+description: Expert knowledge for Azure Partner Solutions development including troubleshooting, decision making, architecture & design patterns, security, configuration, and integrations & coding patterns. Use when using Service Connector, Foundry Agents, Confluent RBAC, Dynatrace APM on Azure, or Cloud NGFW with App Gateway, and other Azure Partner Solutions related development tasks. Not for Azure Industry (use azure-industry), Azure Managed Applications (use azure-managed-applications), Azure Lighthouse (use azure-lighthouse), Azure DevOps (use azure-devops).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-06-07"

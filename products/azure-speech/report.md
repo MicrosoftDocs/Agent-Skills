@@ -49,10 +49,10 @@ confusable_not_for: Not for Azure Communication Services (use azure-communicatio
 - **Unclassified**: 80
 
 ### Incremental Update
-- **New Pages**: 11
-- **Updated Pages**: 28
-- **Unchanged**: 152
-- **Deleted Pages**: 6
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 191
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-speech/azure-speech.csv`
 
 ## Classification Statistics
@@ -70,73 +70,6 @@ confusable_not_for: Not for Azure Communication Services (use azure-communicatio
 | *(Unclassified)* | 80 | 41.9% |
 
 ## Changes
-
-### New Pages
-
-- [Use MAI-Transcribe](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/mai-transcribe)
-- [How to build a voice agent](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-voice-agent-integration)
-- [How to add proactive messages](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-voice-live-proactive-messages)
-- [Handle voice interruptions in chat history](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-voice-live-auto-truncation)
-- [Improve tool calling and latency wait times](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-voice-live-interim-response)
-- [Use Voice Live with hosted agents](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-voice-live-hosted-agent-integration)
-- [Add an MCP server](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-voice-live-mcp-server)
-- [Enable telemetry and tracing](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-voice-live-telemetry)
-- [How to evaluate Voice Live agents (preview)](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-voice-live-evaluate)
-- [2026-04-10](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live-api-reference-2026-04-10)
-- [2026-06-01-preview](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live-api-reference-2026-06-01-preview)
-
-### Updated Pages
-
-- [What's new](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/releasenotes)
-  - Updated: 2025-11-21T08:00:00.000Z → 2026-05-22T08:00:00.000Z
-- [Region support](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/regions)
-  - Updated: 2026-05-21T08:00:00.000Z → 2026-05-25T08:00:00.000Z
-- [Speech tools documentation](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/index-speech-tools)
-  - Updated: 2026-03-23T17:19:00Z → 2026-06-05T22:11:00Z
-- [Voice Live SDK](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live-sdk)
-  - Updated: 2026-01-29T23:08:00.000Z → 2026-06-02T19:00:00.000Z
-- [Speech to text documentation](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/index-speech-to-text)
-  - Updated: 2026-02-28T06:12:00Z → 2026-06-05T22:11:00Z
-- [Part 1: Create a project](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-custom-speech-create-project)
-  - Updated: 2025-11-18T15:37:00.000Z → 2026-06-02T19:00:00.000Z
-- [Part 2: Upload training and testing datasets](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-custom-speech-upload-data)
-  - Updated: 2025-12-29T08:00:00.000Z → 2026-06-02T19:00:00.000Z
-- [Part 3: Train a model](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-custom-speech-train-model)
-  - Updated: 2026-05-18T22:09:00.000Z → 2026-06-02T08:00:00.000Z
-- [Part 4: Test recognition quality](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-custom-speech-inspect-data)
-  - Updated: 2025-12-29T08:00:00.000Z → 2026-06-02T19:00:00.000Z
-- [Improve recognition with phrase list](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/improve-accuracy-phrase-list)
-  - Updated: 2025-11-05T18:22:00.000Z → 2026-06-03T17:17:00.000Z
-- [Speech to text FAQ](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/faq-stt)
-  - Updated: 2026-02-28T06:12:00.000Z → 2026-06-05T22:11:00.000Z
-- [Text to speech documentation](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/index-text-to-speech)
-  - Updated: 2026-02-28T06:12:00Z → 2026-06-05T22:11:00Z
-- [Part 2: Add voice talent consent to your project](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/professional-voice-create-consent)
-  - Updated: 2025-12-29T08:00:00.000Z → 2025-12-29T23:03:00.000Z
-- [Part 5: Deploy and use your voice model](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/professional-voice-deploy-endpoint)
-  - Updated: 2025-12-29T08:00:00.000Z → 2025-12-29T23:03:00.000Z
-- [Part 1: Create a personal voice project](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/personal-voice-create-project)
-  - Updated: 2026-02-25T08:00:00.000Z → 2026-06-02T19:00:00.000Z
-- [Part 2: Add user consent to your project](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/personal-voice-create-consent)
-  - Updated: 2026-05-18T22:09:00.000Z → 2026-06-02T19:00:00.000Z
-- [Part 3: Get a speaker profile ID](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/personal-voice-create-voice)
-  - Updated: 2026-05-18T22:09:00.000Z → 2026-06-02T19:00:00.000Z
-- [Batch synthesis properties](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/text-to-speech-avatar/batch-synthesis-avatar-properties)
-  - Updated: 2026-02-25T08:00:00.000Z → 2026-06-02T19:00:00.000Z
-- [Create a custom photo avatar](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/text-to-speech-avatar/custom-photo-avatar-create)
-  - Updated: 2025-12-10T23:10:00.000Z → 2026-06-02T19:00:00.000Z
-- [MAI-Voice](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/mai-voices)
-  - Updated: 2026-04-28T06:32:00.000Z → 2026-06-03T06:09:00.000Z
-- *...and 8 more*
-
-### Deleted Pages
-
-- ~~How to build a voice agent (preview)~~ (https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-voice-agent-integration)
-- ~~Handle voice interruptions in chat history (preview)~~ (https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-voice-live-auto-truncation)
-- ~~Improve tool calling and latency wait times (preview)~~ (https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-voice-live-interim-response)
-- ~~Add an MCP server (preview)~~ (https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-voice-live-mcp-server)
-- ~~How to add proactive messages (preview)~~ (https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-voice-live-proactive-messages)
-- ~~Use MAI-Transcribe-1~~ (https://learn.microsoft.com/en-us/azure/ai-services/speech-service/mai-transcribe)
 
 ## Classified Pages
 

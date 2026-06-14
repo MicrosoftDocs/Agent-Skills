@@ -48,10 +48,10 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 - **Unclassified**: 42
 
 ### Incremental Update
-- **New Pages**: 9
-- **Updated Pages**: 2
-- **Unchanged**: 124
-- **Deleted Pages**: 2
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 135
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-api-builder/azure-data-api-builder.csv`
 
 ## Classification Statistics
@@ -69,30 +69,6 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 | *(Unclassified)* | 42 | 31.1% |
 
 ## Changes
-
-### New Pages
-
-- [Basic SQL](https://learn.microsoft.com/en-us/azure/data-api-builder/quickstart/basic-sql)
-- [Basic NoSQL](https://learn.microsoft.com/en-us/azure/data-api-builder/quickstart/basic-nosql)
-- [Overview](https://learn.microsoft.com/en-us/azure/data-api-builder/quickstart/microsoft-sql-security)
-- [Username/password](https://learn.microsoft.com/en-us/azure/data-api-builder/quickstart/authentication-sql-credentials)
-- [Managed identity](https://learn.microsoft.com/en-us/azure/data-api-builder/quickstart/authentication-managed-identity)
-- [Microsoft Entra](https://learn.microsoft.com/en-us/azure/data-api-builder/quickstart/authentication-microsoft-entra-provider)
-- [DAB policies](https://learn.microsoft.com/en-us/azure/data-api-builder/quickstart/authorization-database-policies)
-- [SQL row-level security](https://learn.microsoft.com/en-us/azure/data-api-builder/quickstart/authorization-sql-row-level-security)
-- [On-behalf-of to Azure SQL](https://learn.microsoft.com/en-us/azure/data-api-builder/quickstart/authentication-on-behalf-of)
-
-### Updated Pages
-
-- [Overview](https://learn.microsoft.com/en-us/azure/data-api-builder/quickstart/)
-  - Updated: 2026-04-01T23:07:00Z → 2026-06-04T17:04:00Z
-- [Property: Data Source](https://learn.microsoft.com/en-us/azure/data-api-builder/configuration/data-source)
-  - Updated: 2026-04-01T23:07:00.000Z → 2026-06-04T17:04:00.000Z
-
-### Deleted Pages
-
-- ~~NoSQL Databases~~ (https://learn.microsoft.com/en-us/azure/data-api-builder/quickstart/basic-nosql)
-- ~~SQL Databases~~ (https://learn.microsoft.com/en-us/azure/data-api-builder/quickstart/basic-sql)
 
 ## Classified Pages
 

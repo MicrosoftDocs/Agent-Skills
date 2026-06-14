@@ -48,8 +48,8 @@ confusable_not_for: Not for Azure Virtual Enclaves (use azure-virtual-enclaves),
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 69
+- **Updated Pages**: 0
+- **Unchanged**: 70
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-confidential-computing/azure-confidential-computing.csv`
 
@@ -67,11 +67,6 @@ confusable_not_for: Not for Azure Virtual Enclaves (use azure-virtual-enclaves),
 | *(Unclassified)* | 20 | 28.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [Azure Confidential Clean Room](https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-clean-rooms)
-  - Updated: 2025-01-16T18:03:00.000Z → 2026-06-03T17:25:00.000Z
 
 ## Classified Pages
 

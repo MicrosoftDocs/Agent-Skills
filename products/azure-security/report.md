@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-07'
+generated_at: '2026-06-14'
 category_descriptions:
   integrations: Guidance on generating signed SBOMs for container images, attaching
     them in CI/CD, and integrating software supply chain security into deployment
@@ -16,21 +16,21 @@ category_descriptions:
   best-practices: 'End-to-end Azure security hardening guidance: identity, network,
     data, PaaS/IaaS apps, secrets, ransomware defenses, incident response, and service-specific
     security checklists.'
-  decision-making: Guidance on choosing Azure key management options (Key Vault, managed
-    HSM, app-managed keys), including security, compliance, performance, and integration
-    trade-offs.
+  decision-making: Guidance on which Azure services support customer-managed keys
+    and how to choose the right key management approach (Key Vault, managed HSM, encryption
+    options) for your workloads.
 skill_description: Expert knowledge for Azure Security development including best
   practices, decision making, security, configuration, integrations & coding patterns,
-  and deployment. Use when signing/verifying container images, generating SBOMs, configuring
-  AKS image policies, or using Customer Lockbox, and other Azure Security related
-  development tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud),
-  Azure Sentinel (use azure-sentinel), Azure DDos Protection (use azure-ddos-protection),
-  Azure Web Application Firewall (use azure-web-application-firewall).
-use_when: Use when signing/verifying container images, generating SBOMs, configuring
-  AKS image policies, or using Customer Lockbox, and other Azure Security related
-  development tasks.
+  and deployment. Use when securing AKS images, CMK/Key Vault encryption, Notation
+  signing, SBOM workflows, or Customer Lockbox, and other Azure Security related development
+  tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure Firewall
+  (use azure-firewall), Azure DDos Protection (use azure-ddos-protection), Azure Web
+  Application Firewall (use azure-web-application-firewall).
+use_when: Use when securing AKS images, CMK/Key Vault encryption, Notation signing,
+  SBOM workflows, or Customer Lockbox, and other Azure Security related development
+  tasks.
 confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-cloud),
-  Azure Sentinel (use azure-sentinel), Azure DDos Protection (use azure-ddos-protection),
+  Azure Firewall (use azure-firewall), Azure DDos Protection (use azure-ddos-protection),
   Azure Web Application Firewall (use azure-web-application-firewall).
 ---
 # Azure Security Crawl Report
@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | Type | Count | Percentage |
 |------|-------|------------|
 | best-practices | 18 | 14.3% |
-| configuration | 5 | 4.0% |
-| decision-making | 1 | 0.8% |
+| configuration | 4 | 3.2% |
+| decision-making | 2 | 1.6% |
 | deployment | 4 | 3.2% |
 | integrations | 1 | 0.8% |
 | security | 26 | 20.6% |
@@ -66,8 +66,8 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 
 ### Updated Pages
 
-- [Best practices](https://learn.microsoft.com/en-us/azure/security/fundamentals/network-best-practices)
-  - Updated: 2026-05-05T08:00:00.000Z → 2026-06-03T22:23:00.000Z
+- [Services supporting CMKs](https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-customer-managed-keys-support)
+  - Updated: 2026-05-05T08:00:00.000Z → 2026-05-15T08:00:00.000Z
 
 ## Classified Pages
 
@@ -106,6 +106,7 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | [Security checklist](https://learn.microsoft.com/en-us/azure/security/fundamentals/operational-checklist) | security | 0.70 | Checklist-style page with concrete, product-specific operational security actions and configurations for Azure environments, going beyond generic concepts into actionable guidance. |
 | [Security checklist](https://learn.microsoft.com/en-us/azure/security/fundamentals/steps-secure-identity) | best-practices | 0.70 | Actionable checklist for securing Microsoft Entra identity infrastructure; contains concrete steps and product-specific controls rather than just concepts. |
 | [Sensitive data](https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool-sensitive-data) | security | 0.70 | Sensitive-data mitigation guidance and examples are mapped to Threat Modeling Tool threats, representing concrete, Azure/Microsoft-specific security practices. |
+| [Services supporting CMKs](https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-customer-managed-keys-support) | decision-making | 0.70 | The page is essentially a service support matrix listing which specific Azure services integrate with customer-managed keys via Key Vault or Managed HSM. This is product-specific, up-to-date expert knowledge that an LLM is unlikely to know reliably from training and is used to decide which services can meet CMK requirements. It aligns best with decision-making because it helps choose services based on CMK support, even though it doesn't include numeric limits. |
 | [Session management](https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool-session-management) | security | 0.70 | Session-management mitigation instructions and code examples are specific to threats exposed by the Threat Modeling Tool, making them specialized security configuration patterns. |
 | [Alternate email notifications](https://learn.microsoft.com/en-us/azure/security/fundamentals/customer-lockbox-alternative-email) | security | 0.65 | Describes alternate email notification feature for Customer Lockbox, including constraints (support plan, account types); specific security-related configuration behavior. |
 | [Azure features & resources that help you protect, detect, and respond](https://learn.microsoft.com/en-us/azure/security/fundamentals/ransomware-features-resources) | security | 0.65 | Enumerates Azure-native capabilities for ransomware defense; these mappings between features and attack techniques are product-specific security guidance. |
@@ -118,7 +119,6 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | [PaaS](https://learn.microsoft.com/en-us/azure/security/fundamentals/paas-deployments) | best-practices | 0.65 | Described as guidance for designing, building, and managing secure cloud applications on Azure PaaS. This is prescriptive, product-specific best-practices content. |
 | [Ransomware protection in Azure](https://learn.microsoft.com/en-us/azure/security/fundamentals/ransomware-protection) | best-practices | 0.65 | Azure-focused ransomware protection guidance is likely to include concrete, product-specific recommendations (for example, particular backup configurations, Defender for Cloud settings, or storage features) and gotchas unique to Azure, fitting the best-practices category. |
 | [Ransomware protection with Azure Firewall Premium](https://learn.microsoft.com/en-us/azure/security/fundamentals/ransomware-protection-with-azure-firewall) | security | 0.65 | Describes how to use Azure Firewall Premium specifically for ransomware protection, including product-specific rules and capabilities. |
-| [Services supporting CMKs](https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-customer-managed-keys-support) | configuration | 0.65 | Lists which Azure services support CMK with Key Vault or Managed HSM. This is effectively a capability/configuration matrix unique to Azure services, useful for configuration and planning. |
 | [Sign an image with Notation using GitHub Actions](https://learn.microsoft.com/en-us/azure/security/container-secure-supply-chain/articles/notation-sign-gha) | deployment | 0.65 | GitHub Actions workflow for signing images; likely includes workflow YAML, action inputs, and registry-related settings that are concrete deployment/integration configuration details. |
 | [Sign and verify a container image with Notation in Azure Pipeline](https://learn.microsoft.com/en-us/azure/security/container-secure-supply-chain/articles/notation-ado-task-sign) | deployment | 0.65 | Shows how to use the Notation Azure DevOps task in pipelines; expected to include task YAML schema, input parameters, and pipeline-specific constraints that are product-specific deployment details. |
 | [Stay up to date with container image dependencies using Dependabot](https://learn.microsoft.com/en-us/azure/security/container-secure-supply-chain/articles/container-secure-supply-chain-implementation/cssc-depenadabot-quickstart) | configuration | 0.65 | Quickstart for configuring Dependabot and Copacetic; likely contains repo-level configuration files, parameter names, and option values specific to these tools in a secure supply chain context. |

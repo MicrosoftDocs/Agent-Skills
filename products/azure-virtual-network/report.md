@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-07'
+generated_at: '2026-06-14'
 category_descriptions:
   best-practices: 'Network performance and connectivity guidance: VNet design, NSGs,
     service endpoints, outbound access, MTU/TCP tuning, and tools to test throughput
@@ -44,13 +44,13 @@ confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtu
 - **Total Pages**: 131
 - **Fetched**: 131
 - **Fetch Failed**: 0
-- **Classified**: 56
-- **Unclassified**: 75
+- **Classified**: 55
+- **Unclassified**: 76
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 2
-- **Unchanged**: 128
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 130
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-network/azure-virtual-network.csv`
 
@@ -58,7 +58,7 @@ confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtu
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 4 | 3.1% |
+| architecture-patterns | 3 | 2.3% |
 | best-practices | 8 | 6.1% |
 | configuration | 28 | 21.4% |
 | decision-making | 6 | 4.6% |
@@ -66,20 +66,14 @@ confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtu
 | limits-quotas | 2 | 1.5% |
 | security | 6 | 4.6% |
 | troubleshooting | 1 | 0.8% |
-| *(Unclassified)* | 75 | 57.3% |
+| *(Unclassified)* | 76 | 58.0% |
 
 ## Changes
 
-### New Pages
-
-- [Configure advertised gateway prefixes](https://learn.microsoft.com/en-us/azure/virtual-network/how-to-advertised-gateway-prefixes)
-
 ### Updated Pages
 
-- [Linux VMs](https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-linux)
-  - Updated: 2026-02-03T18:20:00.000Z → 2026-06-02T20:30:00.000Z
-- [MANA on Network Virtual Appliances (NVAs) for existing VM sizes](https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-network-virtual-appliance-opt-out)
-  - Updated: 2026-05-22T17:10:00.000Z → 2026-06-02T22:37:00.000Z
+- [Overview](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-tap-overview)
+  - Updated: 2025-09-09T05:11:00.000Z → 2026-06-11T17:23:00.000Z
 
 ## Classified Pages
 
@@ -136,7 +130,6 @@ confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtu
 | [Monitor Public IP addresses](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/monitor-public-ip) | configuration | 0.60 | Monitoring article for public IPs via Azure Monitor; such references list specific metrics, log categories, and alertable signals unique to this resource type. |
 | [Monitoring](https://learn.microsoft.com/en-us/azure/virtual-network/monitor-virtual-network) | configuration | 0.60 | Monitoring article typically lists specific metrics, logs, and configuration options for Azure Monitor integration, which are product-specific configuration details. |
 | [Overview](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-encryption-overview) | security | 0.60 | Explains how VNet encryption works (DTLS tunnels, supported scenarios); Azure-specific security feature behavior beyond generic encryption concepts. |
-| [Overview](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-tap-overview) | architecture-patterns | 0.60 | Explains how VNet TAP streams traffic to collectors and supported scenarios; Azure-specific pattern for traffic inspection and monitoring. |
 | [Public IP prefix](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-address-prefix) | configuration | 0.60 | Explains how to create public IP prefixes with region, subscription, prefix size, IPv4/IPv6, and zone options; these are concrete Azure-specific configuration properties and behaviors. |
 | [Service endpoints](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoints-overview) | best-practices | 0.60 | Covers how to configure service endpoints and includes best practices; likely contains product-specific guidance and gotchas for endpoint usage. |
 | [Subnet delegation](https://learn.microsoft.com/en-us/azure/virtual-network/subnet-delegation-overview) | configuration | 0.60 | Explains how to delegate subnets to specific PaaS services and the resulting configuration rules; Azure-specific configuration behavior. |
@@ -216,6 +209,7 @@ confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtu
 | [Manage a virtual network](https://learn.microsoft.com/en-us/azure/virtual-network/manage-virtual-network) | 0.25 | Basic management article for creating/changing/deleting VNets; generic portal/CLI operations without expert-level configuration or troubleshooting content. |
 | [Create public IP address - Terraform](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/create-public-ip-terraform) | 0.20 | Quickstart Terraform tutorial for creating a public IP; primarily step-by-step resource creation with no detailed limits, quotas, configuration matrices, or product-specific best practices beyond generic Terraform usage. |
 | [Create public IP prefix - Terraform](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/create-public-ip-prefix-terraform) | 0.20 | Quickstart Terraform tutorial for creating a public IP prefix; focuses on basic creation/change/delete workflow without detailed configuration parameter tables, limits, or troubleshooting content. |
+| [Overview](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-tap-overview) | 0.20 | Page is an overview of Azure virtual network TAP functionality and preview status. Based on the summary, it does not surface concrete limits, configuration parameter tables, error codes, or decision matrices; it primarily explains what TAP is and mentions partner solutions and supported regions at a high level. |
 | [Virtual network routing appliance](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-routing-appliance-overview) | 0.20 | Page is an overview of Azure Virtual Network routing appliances with conceptual description of what they are and their benefits. From the provided summary, it does not list numeric limits, configuration parameter tables, error codes, decision matrices, or other detailed product-specific settings. It reads as a high-level introduction rather than expert, configuration, or troubleshooting guidance. |
 | [What is Azure Virtual Network IP Services?](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/ip-services-overview) | 0.20 | High-level overview of IP services; no indication of numeric limits, detailed settings tables, or troubleshooting content. |
 | [What is Azure Virtual Network?](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview) | 0.20 | High-level overview of Azure Virtual Network concepts and capabilities without detailed limits, configs, or error mappings. |

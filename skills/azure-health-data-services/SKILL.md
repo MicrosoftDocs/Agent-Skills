@@ -1,9 +1,9 @@
 ---
 name: azure-health-data-services
-description: Expert knowledge for Azure Health Data Services development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using FHIR/DICOM APIs, bulk export/import, de-identification, SMART on FHIR, or Synapse/ADF integrations, and other Azure Health Data Services related development tasks. Not for Azure Health Bot (use azure-health-bot), Azure Data Factory (use azure-data-factory), Azure Synapse Analytics (use azure-synapse-analytics), Azure Machine Learning (use azure-machine-learning).
+description: Expert knowledge for Azure Health Data Services development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when working with FHIR/DICOM APIs, bulk export/import, de-identification, events, or Synapse/ADF integrations, and other Azure Health Data Services related development tasks. Not for Azure Health Bot (use azure-health-bot), Azure Data Factory (use azure-data-factory), Azure Synapse Analytics (use azure-synapse-analytics), Azure Machine Learning (use azure-machine-learning).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-07"
+  generated_at: "2026-06-14"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Health Data Services Skill
@@ -25,14 +25,14 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L37-L46 | Diagnosing and fixing token/auth issues, event delivery problems, FHIR $convert-data failures, identity provider misconfigurations, and known platform bugs in Azure Health Data Services. |
-| Best Practices | L47-L54 | Guidance on securing FHIR/DICOM with customer-managed keys, tuning FHIR performance, and safely running, monitoring, and managing FHIR reindex jobs. |
-| Decision Making | L55-L60 | Planning and executing migrations from Azure API for FHIR to the FHIR service or broader Azure Health Data Services, including architecture, data, and configuration considerations. |
-| Architecture & Design Patterns | L61-L67 | Architectural patterns for FHIR, DICOM, and de-identification: disaster recovery setup, reliable anonymization services, DICOM + Data Lake integration, and digital pathology workflow design. |
-| Limits & Quotas | L68-L74 | Scaling and performance limits for Azure API for FHIR and DICOM: autoscale setup, throughput and request caps, storage and size constraints, and service-specific behavior under load. |
-| Security | L75-L115 | Configuring auth, RBAC, identities, tokens, encryption (CMK), network/private access, SMART on FHIR, and compliance policies for FHIR, DICOM, and de-identification services. |
-| Configuration | L116-L170 | Configuring Azure Health Data Services (FHIR and DICOM): CORS, logging, events, bulk export/import/update, de-identification, profiles/validation, search parameters, history/versioning, and Da Vinci/CARIN setups. |
-| Integrations & Coding Patterns | L171-L203 | Code samples and patterns for calling FHIR/DICOM APIs, bulk export/import, de-identification, events, and integrating with tools like Synapse, ADF, Logic Apps, and VS Code. |
-| Deployment | L204-L219 | How to deploy and move Azure Health Data Services (FHIR, DICOM, de-identification, workspaces) using portal, ARM, Bicep, CLI, PowerShell, and check regional availability |
+| Best Practices | L47-L55 | Guidance on BCDR planning, CMK security for FHIR/DICOM, FHIR performance tuning, and safely running/managing FHIR reindex jobs for Azure Health Data Services. |
+| Decision Making | L56-L61 | Planning and executing migrations from Azure API for FHIR to the FHIR service or broader Azure Health Data Services, including architecture, data, and configuration considerations. |
+| Architecture & Design Patterns | L62-L68 | Architectural patterns for FHIR, DICOM, and de-identification: disaster recovery setup, reliable anonymization services, DICOM + Data Lake integration, and digital pathology workflow design. |
+| Limits & Quotas | L69-L75 | Scaling and performance limits for Azure API for FHIR and DICOM: autoscale setup, throughput and request caps, storage and size constraints, and service-specific behavior under load. |
+| Security | L76-L116 | Configuring security for Azure Health Data Services: Entra auth, RBAC, app registration, tokens, CMK encryption, network/Private Link, policies, SMART on FHIR, and secure import/export. |
+| Configuration | L117-L171 | Configuring Azure Health Data Services (FHIR and DICOM): CORS, logging, events, bulk export/import/update, de-identification, profiles/validation, search parameters, history/versioning, and Da Vinci/CARIN setups. |
+| Integrations & Coding Patterns | L172-L204 | Code samples and patterns for calling FHIR/DICOM APIs, bulk export/import, de-identification, events, and integrating with tools like Synapse, ADF, Logic Apps, and VS Code. |
+| Deployment | L205-L220 | How to deploy and move Azure Health Data Services (FHIR, DICOM, de-identification, workspaces) using portal, ARM, Bicep, CLI, PowerShell, and check regional availability |
 
 ### Troubleshooting
 | Topic | URL |
@@ -47,6 +47,7 @@ This skill requires **network access** to fetch documentation content:
 ### Best Practices
 | Topic | URL |
 |-------|-----|
+| Plan BCDR for Azure Health Data Services workloads | https://learn.microsoft.com/en-us/azure/healthcare-apis/business-continuity-disaster-recovery |
 | Apply customer-managed key best practices to DICOM service | https://learn.microsoft.com/en-us/azure/healthcare-apis/dicom/customer-managed-keys |
 | Best practices for CMK in FHIR service | https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/customer-managed-keys |
 | Apply performance best practices for Azure FHIR service | https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/fhir-best-practices |

@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-06-07'
+generated_at: '2026-06-14'
 category_descriptions:
   integrations: 'Using GeoCatalog/STAC with code and tools: ingest and bulk-load data,
     build apps, create collections/items, and integrate with QGIS, ArcGIS Pro, Azure
     Batch, and other geospatial clients.'
-  security: Configuring secure access to Planetary Computer Pro and GeoCatalogs using
-    Entra ID, RBAC, managed identities, SAS tokens, cross-tenant auth, and Azure API
-    Management.
+  security: Configuring secure access to Planetary Computer Pro/GeoCatalog using Entra
+    ID, RBAC, managed identities, cross-tenant auth, API Management, and SAS tokens
+    for collections.
   decision-making: Guidance on selecting how to access Planetary Computer Pro data,
     including connection options, integrations with tools/services, and choosing the
     best method for your workflow.
@@ -24,13 +24,13 @@ category_descriptions:
     process and store data.
 skill_description: Expert knowledge for Microsoft Planetary Computer Pro development
   including troubleshooting, decision making, limits & quotas, security, configuration,
-  integrations & coding patterns, and deployment. Use when working with GeoCatalog/STAC
-  APIs, QGIS/ArcGIS Pro, Entra ID/RBAC auth, ingestion pipelines, or tiles/mosaics,
+  integrations & coding patterns, and deployment. Use when using GeoCatalog/STAC APIs,
+  QGIS/ArcGIS Pro integrations, Entra ID/RBAC access, tiles/mosaics, or ingestion,
   and other Microsoft Planetary Computer Pro related development tasks. Not for Azure
   Maps (use azure-maps), Azure Open Datasets (use azure-open-datasets), Azure Data
   Explorer (use azure-data-explorer).
-use_when: Use when working with GeoCatalog/STAC APIs, QGIS/ArcGIS Pro, Entra ID/RBAC
-  auth, ingestion pipelines, or tiles/mosaics, and other Microsoft Planetary Computer
+use_when: Use when using GeoCatalog/STAC APIs, QGIS/ArcGIS Pro integrations, Entra
+  ID/RBAC access, tiles/mosaics, or ingestion, and other Microsoft Planetary Computer
   Pro related development tasks.
 confusable_not_for: Not for Azure Maps (use azure-maps), Azure Open Datasets (use
   azure-open-datasets), Azure Data Explorer (use azure-data-explorer).
@@ -46,10 +46,10 @@ confusable_not_for: Not for Azure Maps (use azure-maps), Azure Open Datasets (us
 - **Unclassified**: 11
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 13
-- **Unchanged**: 33
-- **Deleted Pages**: 0
+- **New Pages**: 2
+- **Updated Pages**: 0
+- **Unchanged**: 44
+- **Deleted Pages**: 2
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-planetary-computer-pro/azure-planetary-computer-pro.csv`
 
 ## Classification Statistics
@@ -67,34 +67,15 @@ confusable_not_for: Not for Azure Maps (use azure-maps), Azure Open Datasets (us
 
 ## Changes
 
-### Updated Pages
+### New Pages
 
-- [Create an API Proxy for GeoCatalogs](https://learn.microsoft.com/en-us/azure/planetary-computer/create-api-proxy-geocatalog)
-  - Updated: 2026-04-24T06:15:00.000Z → 2026-05-27T08:00:00.000Z
-- [Get a collection SAS token](https://learn.microsoft.com/en-us/azure/planetary-computer/get-collection-sas-token)
-  - Updated: 2025-05-19T15:23:00.000Z → 2026-06-03T05:14:00.000Z
-- [Deploy a GeoCatalog resource](https://learn.microsoft.com/en-us/azure/planetary-computer/deploy-geocatalog-resource)
-  - Updated: 2025-11-18T18:43:00.000Z → 2026-06-03T05:14:00.000Z
-- [Assign a user-assigned managed identity to a GeoCatalog resource](https://learn.microsoft.com/en-us/azure/planetary-computer/assign-managed-identity-geocatalog-resource)
-  - Updated: 2025-05-19T15:23:00.000Z → 2026-06-03T05:14:00.000Z
-- [Using the Microsoft Planetary Computer Pro APIs](https://learn.microsoft.com/en-us/azure/planetary-computer/api-tutorial)
-  - Updated: 2025-05-19T15:23:00.000Z → 2026-06-03T05:14:00.000Z
-- [Delete a Geocatalog resource](https://learn.microsoft.com/en-us/azure/planetary-computer/delete-geocatalog-resource)
-  - Updated: 2025-12-01T18:18:00.000Z → 2026-06-03T05:14:00.000Z
-- [Create a STAC collection (API)](https://learn.microsoft.com/en-us/azure/planetary-computer/create-stac-collection)
-  - Updated: 2025-05-19T15:23:00.000Z → 2026-06-03T05:14:00.000Z
-- [Set up ingestion source using SAS tokens](https://learn.microsoft.com/en-us/azure/planetary-computer/set-up-ingestion-credentials-sas-tokens)
-  - Updated: 2025-05-19T15:23:00.000Z → 2026-06-03T05:14:00.000Z
-- [Add a STAC item to a collection](https://learn.microsoft.com/en-us/azure/planetary-computer/add-stac-item-to-collection)
-  - Updated: 2025-06-24T22:35:00.000Z → 2026-06-03T05:14:00.000Z
-- [Bulk ingestion](https://learn.microsoft.com/en-us/azure/planetary-computer/bulk-ingestion-api)
-  - Updated: 2025-05-19T15:23:00.000Z → 2026-06-03T05:14:00.000Z
-- [Render configuration](https://learn.microsoft.com/en-us/azure/planetary-computer/render-configuration)
-  - Updated: 2025-11-25T23:25:00.000Z → 2026-05-27T08:00:00.000Z
-- [Build a web application](https://learn.microsoft.com/en-us/azure/planetary-computer/build-web-application)
-  - Updated: 2026-01-09T23:14:00.000Z → 2026-05-27T08:00:00.000Z
-- [Connect to ArcGIS Pro](https://learn.microsoft.com/en-us/azure/planetary-computer/create-connection-arc-gis-pro)
-  - Updated: 2026-01-09T08:00:00.000Z → 2026-05-27T08:00:00.000Z
+- [Manage access for Microsoft Planetary Computer Pro](https://learn.microsoft.com/en-us/azure/planetary-computer/manage-access)
+- [Using managed identities with GeoCatalog resource](https://learn.microsoft.com/en-us/azure/planetary-computer/assign-managed-identity-geocatalog-resource)
+
+### Deleted Pages
+
+- ~~Assign a user-assigned managed identity to a GeoCatalog resource~~ (https://learn.microsoft.com/en-us/azure/planetary-computer/assign-managed-identity-geocatalog-resource)
+- ~~Manage access~~ (https://learn.microsoft.com/en-us/azure/planetary-computer/manage-access)
 
 ## Classified Pages
 
@@ -105,12 +86,12 @@ confusable_not_for: Not for Azure Maps (use azure-maps), Azure Open Datasets (us
 | [Application authentication](https://learn.microsoft.com/en-us/azure/planetary-computer/application-authentication) | security | 0.80 | Step-by-step application auth setup including Entra ID, managed identities, RBAC, and scopes—product-specific security configuration. |
 | [Authorizing Partner Cross-Tenant Application Access](https://learn.microsoft.com/en-us/azure/planetary-computer/authorize-cross-tenant-partner-applications) | security | 0.80 | Guides admins through authorization of partner apps, including permissions and access scopes—product-specific security and access configuration. |
 | [Data visualization sample gallery](https://learn.microsoft.com/en-us/azure/planetary-computer/data-visualization-samples) | configuration | 0.80 | Provides ready-to-use JSON configurations for mosaics, render options, tile settings, and STAC metadata—detailed configuration examples. |
-| [Manage access](https://learn.microsoft.com/en-us/azure/planetary-computer/manage-access) | security | 0.80 | Manages identities and RBAC for GeoCatalog resources; likely lists specific roles/permissions and scope patterns—product-specific security configuration. |
+| [Manage access for Microsoft Planetary Computer Pro](https://learn.microsoft.com/en-us/azure/planetary-computer/manage-access) | security | 0.78 | The page is focused on configuring role-based access control for Microsoft Planetary Computer Pro GeoCatalog resources using Microsoft Entra ID. It likely lists specific RBAC roles, scopes, and resource types unique to this service, which are product-specific security configuration details rather than generic concepts. |
 | [Connect to QGIS](https://learn.microsoft.com/en-us/azure/planetary-computer/configure-qgis) | integrations | 0.75 | Explains QGIS configuration and Entra ID auth to access GeoCatalog datasets; includes integration-specific settings and constraints. |
 | [Mosaic configuration](https://learn.microsoft.com/en-us/azure/planetary-computer/mosaic-configurations-for-collections) | configuration | 0.75 | Explains mosaic configuration JSON for STAC collections, including search criteria like date ranges and cloud cover thresholds—product-specific config. |
 | [Set up an ingestion source using managed identity through the UI](https://learn.microsoft.com/en-us/azure/planetary-computer/set-up-ingestion-credentials-managed-identity) | security | 0.75 | Step-by-step guide to grant GeoCatalog access to external data via managed identities; includes security/auth configuration details and required steps. |
 | [Supported color maps](https://learn.microsoft.com/en-us/azure/planetary-computer/supported-colormaps) | configuration | 0.75 | Lists the complete set of named colormaps supported by Explorer and how to reference them in render configurations—product-specific configuration values. |
-| [Assign a user-assigned managed identity to a GeoCatalog resource](https://learn.microsoft.com/en-us/azure/planetary-computer/assign-managed-identity-geocatalog-resource) | security | 0.70 | Shows how to assign a user-assigned managed identity to a GeoCatalog using Azure CLI. Likely includes exact CLI commands, parameter names, and resource-type-specific identity configuration, which are product-specific security/identity details. |
+| [Using managed identities with GeoCatalog resource](https://learn.microsoft.com/en-us/azure/planetary-computer/assign-managed-identity-geocatalog-resource) | security | 0.72 | The article describes how to add, update, or remove a user-assigned managed identity for GeoCatalog resources via Azure CLI/SDKs. This implies specific identity configuration steps, parameter names, and resource bindings that are product-specific security/identity configuration details rather than generic managed identity concepts. |
 | [Authoring and Configuring a Partner Application](https://learn.microsoft.com/en-us/azure/planetary-computer/configure-cross-tenant-application) | security | 0.70 | Quickstart for configuring a multitenant Azure application to read/write GeoCatalogs will necessarily include product-specific AAD app settings, permission scopes, and possibly role assignments unique to Planetary Computer Pro. This is concrete security/identity configuration rather than generic auth theory. |
 | [Azure Batch and Microsoft Planetary Computer Pro](https://learn.microsoft.com/en-us/azure/planetary-computer/azure-batch) | integrations | 0.70 | Describes using a GeoCatalog resource in Azure Batch with a user-assigned managed identity and configuring permissions. This is a product-specific integration pattern between Planetary Computer Pro and Azure Batch, likely including specific configuration parameters and identity wiring details. |
 | [Bulk ingestion](https://learn.microsoft.com/en-us/azure/planetary-computer/bulk-ingestion-api) | integrations | 0.70 | Describes using the Bulk Ingestion API, including creating ingestion sources and collections. This likely has detailed API usage, configuration of ingestion sources, and request formats specific to Planetary Computer Pro, which are expert integration patterns. |

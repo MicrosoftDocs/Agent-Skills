@@ -1,9 +1,9 @@
 ---
 name: azure-backup
-description: Expert knowledge for Azure Backup development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when protecting Azure VMs, SQL/SAP HANA, AKS, Files/Blobs, or automating Azure Backup via CLI/PowerShell/REST, and other Azure Backup related development tasks. Not for Azure Site Recovery (use azure-site-recovery), Azure Virtual Machines (use azure-virtual-machines), Azure Blob Storage (use azure-blob-storage).
+description: Expert knowledge for Azure Backup development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when protecting Azure VMs/AKS/SQL/SAP, using MARS/MABS/DPM, automating via CLI/PowerShell/REST, or enabling immutability, and other Azure Backup related development tasks. Not for Azure Site Recovery (use azure-site-recovery), Azure Virtual Machines (use azure-virtual-machines), Azure Blob Storage (use azure-blob-storage), Azure Files (use azure-files).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-07"
+  generated_at: "2026-06-14"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Backup Skill
@@ -32,7 +32,7 @@ This skill requires **network access** to fetch documentation content:
 | Security | L133-L174 | Securing Azure Backup with encryption, RBAC, managed identities, private endpoints, soft delete, immutability, MUA/Resource Guard, and policies for ransomware protection and compliant restores. |
 | Configuration | L175-L253 | Configuring Azure Backup and policies for VMs, AKS, SQL, SAP HANA, Files, Blobs, Disks, AD, and on-prem agents, plus monitoring, diagnostics, reporting, and Backup Center governance. |
 | Integrations & Coding Patterns | L254-L310 | Automating Azure Backup via CLI, PowerShell, REST, and scripts for VMs, SQL, PostgreSQL, Files, Blobs, Disks, MARS/on-prem, plus policies, vaults, jobs, restores, and security/reporting integrations. |
-| Deployment | L311-L317 | MABS v3/v4 deployment details: supported workload/protection matrices and how to automate unattended/silent installation of Azure Backup Server v4. |
+| Deployment | L311-L319 | Deploying and managing Microsoft Azure Backup Server (MABS): backup of Azure VMs, supported workload matrices (v3/v4), silent install automation, and stopping protection for workloads. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -311,7 +311,9 @@ This skill requires **network access** to fetch documentation content:
 ### Deployment
 | Topic | URL |
 |-------|-----|
+| Back up Azure Local VMs with MABS | https://learn.microsoft.com/en-us/azure/backup/back-up-azure-stack-hyperconverged-infrastructure-virtual-machines |
 | Use MABS v4 protection matrix for supported workloads | https://learn.microsoft.com/en-us/azure/backup/backup-mabs-protection-matrix |
 | Automate silent installation of Azure Backup Server v4 | https://learn.microsoft.com/en-us/azure/backup/backup-mabs-unattended-install |
+| Stop protection for workloads in MABS | https://learn.microsoft.com/en-us/azure/backup/backup-server-stop-protection |
 | Use MABS v3 RTM protection matrix for supported workloads | https://learn.microsoft.com/en-us/azure/backup/microsoft-azure-backup-server-protection-v3 |
 | Use MABS v3 UR1 protection matrix for supported workloads | https://learn.microsoft.com/en-us/azure/backup/microsoft-azure-backup-server-protection-v3-ur1 |

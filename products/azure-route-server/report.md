@@ -42,9 +42,9 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 - **Unclassified**: 8
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 21
+- **Unchanged**: 22
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-route-server/azure-route-server.csv`
 
@@ -61,10 +61,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | *(Unclassified)* | 8 | 36.4% |
 
 ## Changes
-
-### New Pages
-
-- [Secure Route Server deployment](https://learn.microsoft.com/en-us/azure/route-server/secure-route-server)
 
 ## Classified Pages
 

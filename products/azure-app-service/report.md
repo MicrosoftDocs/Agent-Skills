@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-07'
+generated_at: '2026-06-14'
 category_descriptions:
   decision-making: Guidance on choosing App Service tiers, plans, auth and networking
     options, and planning migrations (Windows→Linux, .NET, Docker, VNet, ASE) plus
@@ -8,8 +8,8 @@ category_descriptions:
     inbound/outbound and TLS IP changes, and using Traffic Manager for resilient,
     highly available endpoints
   configuration: 'Configuring App Service apps: runtime and language settings, containers,
-    networking/VNet, auth, storage, domains/certs, health/monitoring, backups, and
-    App Service Environment options.'
+    networking/VNet/ASE, domains/certs, storage, auth, health/monitoring, backups,
+    and environment variables.'
   security: 'Securing App Service apps: auth (Entra, social, OIDC, MCP), managed identities,
     certs/TLS, IP/VNet/firewall, storage/SQL/Graph access, and policy/compliance controls.'
   deployment: 'Deploying and scaling App Service apps: CI/CD (GitHub Actions, Azure
@@ -30,16 +30,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure App Service development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  choosing App Service plans, configuring VNet/ASE, setting auth/TLS, deploying via
-  CI/CD/slots, or using WebJobs, and other Azure App Service related development tasks.
-  Not for Azure Functions (use azure-functions), Azure Container Apps (use azure-container-apps),
-  Azure Spring Apps (use azure-spring-apps), Azure Static Web Apps (use azure-static-web-apps).
-use_when: Use when choosing App Service plans, configuring VNet/ASE, setting auth/TLS,
-  deploying via CI/CD/slots, or using WebJobs, and other Azure App Service related
-  development tasks.
-confusable_not_for: Not for Azure Functions (use azure-functions), Azure Container
-  Apps (use azure-container-apps), Azure Spring Apps (use azure-spring-apps), Azure
-  Static Web Apps (use azure-static-web-apps).
+  choosing App Service plans/ASE, configuring VNet/custom domains/certs, CI/CD slots,
+  or managed identity access, and other Azure App Service related development tasks.
+  Not for Azure Functions (use azure-functions), Azure Spring Apps (use azure-spring-apps),
+  Azure Static Web Apps (use azure-static-web-apps), Azure Service Fabric (use azure-service-fabric).
+use_when: Use when choosing App Service plans/ASE, configuring VNet/custom domains/certs,
+  CI/CD slots, or managed identity access, and other Azure App Service related development
+  tasks.
+confusable_not_for: Not for Azure Functions (use azure-functions), Azure Spring Apps
+  (use azure-spring-apps), Azure Static Web Apps (use azure-static-web-apps), Azure
+  Service Fabric (use azure-service-fabric).
 ---
 # Azure App Service Crawl Report
 
@@ -48,14 +48,14 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Contain
 - **Total Pages**: 247
 - **Fetched**: 247
 - **Fetch Failed**: 0
-- **Classified**: 149
-- **Unclassified**: 98
+- **Classified**: 148
+- **Unclassified**: 99
 
 ### Incremental Update
-- **New Pages**: 3
-- **Updated Pages**: 5
-- **Unchanged**: 239
-- **Deleted Pages**: 0
+- **New Pages**: 1
+- **Updated Pages**: 1
+- **Unchanged**: 245
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-app-service/azure-app-service.csv`
 
 ## Classification Statistics
@@ -66,33 +66,27 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Contain
 | best-practices | 7 | 2.8% |
 | configuration | 50 | 20.2% |
 | decision-making | 15 | 6.1% |
-| deployment | 21 | 8.5% |
+| deployment | 20 | 8.1% |
 | integrations | 6 | 2.4% |
 | limits-quotas | 1 | 0.4% |
 | security | 44 | 17.8% |
 | troubleshooting | 4 | 1.6% |
-| *(Unclassified)* | 98 | 39.7% |
+| *(Unclassified)* | 99 | 40.1% |
 
 ## Changes
 
 ### New Pages
 
-- [Built-in MCP (Preview)](https://learn.microsoft.com/en-us/azure/app-service/configure-mcp-built-in)
-- [Monitor agents with OpenTelemetry](https://learn.microsoft.com/en-us/azure/app-service/tutorial-ai-agent-monitoring-dotnet)
-- [Configure Isolated v4 tier](https://learn.microsoft.com/en-us/azure/app-service/environment/app-service-configure-isolated-v4-tier)
+- [Buy and manage App Service certificates](https://learn.microsoft.com/en-us/azure/app-service/configure-ssl-app-service-certificate)
 
 ### Updated Pages
 
-- [Add and manage TLS/SSL certificates](https://learn.microsoft.com/en-us/azure/app-service/configure-ssl-certificate)
-  - Updated: 2026-05-07T22:15:00.000Z → 2026-06-04T08:00:00.000Z
-- [Agentic web applications](https://learn.microsoft.com/en-us/azure/app-service/scenario-ai-agentic-web-apps)
-  - Updated: 2026-02-02T18:12:00.000Z → 2026-06-02T20:30:00.000Z
-- [Model Context Protocol servers](https://learn.microsoft.com/en-us/azure/app-service/scenario-ai-model-context-protocol-server)
-  - Updated: 2026-04-10T17:11:00.000Z → 2026-06-02T20:30:00.000Z
-- [Migrate .NET](https://learn.microsoft.com/en-us/azure/app-service/app-service-asp-net-migration)
-  - Updated: 2025-05-01T22:41:00.000Z → 2026-06-02T08:00:00.000Z
-- [About subdomain takeover](https://learn.microsoft.com/en-us/azure/app-service/reference-dangling-subdomain-prevention)
-  - Updated: 2025-12-16T23:42:00.000Z → 2026-06-02T20:30:00.000Z
+- [About high density hosting](https://learn.microsoft.com/en-us/azure/app-service/manage-scale-per-app)
+  - Updated: 2025-06-05T05:17:00.000Z → 2026-06-11T17:23:00.000Z
+
+### Deleted Pages
+
+- ~~Create and Manage App Service certificates~~ (https://learn.microsoft.com/en-us/azure/app-service/configure-ssl-app-service-certificate)
 
 ## Classified Pages
 
@@ -165,7 +159,6 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Contain
 | [Minimum TLS version](https://learn.microsoft.com/en-us/azure/app-service/tls-minimum-version) | security | 0.72 | The article provides product-specific security configuration for TLS on App Service, Functions, Logic Apps (Standard), and ASEs, including the minimum TLS version setting, how to audit and change it, and a concrete retirement date for TLS 1.0/1.1. It focuses on secure configuration parameters and enforcement of TLS 1.2+, which aligns with the security sub-skill. The retirement date and exact behavior are time- and product-specific details that qualify as expert knowledge. |
 | [ASP.NET](https://learn.microsoft.com/en-us/azure/app-service/configure-language-dotnet-framework) | configuration | 0.70 | Article is explicitly about configuration of ASP.NET apps on App Service and typically includes product-specific settings, connection strings, and configuration options beyond generic knowledge. |
 | [ASP.NET Core](https://learn.microsoft.com/en-us/azure/app-service/configure-language-dotnetcore) | configuration | 0.70 | Focuses on configuring ASP.NET Core apps in App Service, likely with specific app settings, environment variables, and platform behaviors unique to the service. |
-| [About high density hosting](https://learn.microsoft.com/en-us/azure/app-service/manage-scale-per-app) | deployment | 0.70 | Explains per-app scaling behavior, plan-level settings, and PowerShell/ARM configuration for App Service, which are specific deployment patterns and constraints. |
 | [About name resolution (DNS)](https://learn.microsoft.com/en-us/azure/app-service/overview-name-resolution) | configuration | 0.70 | Explains how App Service chooses DNS servers and exposes settings to configure DNS resolution; likely includes specific setting names and behaviors unique to App Service. |
 | [About subdomain takeover](https://learn.microsoft.com/en-us/azure/app-service/reference-dangling-subdomain-prevention) | security | 0.70 | Page focuses on a specific security threat (dangling DNS / subdomain takeover) and provides product-specific mitigation steps and configurations for Azure App Service, including how to manage DNS records and resource lifecycle to avoid exploitable states. This is concrete, service-specific security guidance rather than generic concepts. |
 | [Access restriction overview](https://learn.microsoft.com/en-us/azure/app-service/overview-access-restrictions) | security | 0.70 | Describes access restriction behavior, interaction with private endpoints, and default exposure; product-specific security configuration guidance. |
@@ -177,6 +170,7 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Contain
 | [Built-in MCP (Preview)](https://learn.microsoft.com/en-us/azure/app-service/configure-mcp-built-in) | configuration | 0.70 | Configuration-focused page for built-in MCP: describes how App Service reads OpenAPI specs, generates MCP tools per operation, and exposes MCP endpoints over streamable HTTP on configurable paths. This is product- and feature-specific configuration knowledge that isn’t generally known from training. |
 | [Built-in authentication overview](https://learn.microsoft.com/en-us/azure/app-service/overview-authentication-authorization) | security | 0.70 | This article describes App Service/Functions built-in auth (Easy Auth) with product-specific security configuration: identity providers, callback URLs, and likely concrete settings and role/permission implications. It focuses on how to configure secure authentication/authorization for these services, matching the security sub-skill. |
 | [Buy and configure App Service domain](https://learn.microsoft.com/en-us/azure/app-service/manage-custom-dns-buy-domain) | configuration | 0.70 | The page describes detailed, product-specific steps and settings for purchasing and configuring App Service domains, including DNS and certificate behavior changes tied to a specific date. These are concrete configuration behaviors and platform-specific nuances that go beyond generic domain setup knowledge, fitting the configuration sub-skill best. |
+| [Buy and manage App Service certificates](https://learn.microsoft.com/en-us/azure/app-service/configure-ssl-app-service-certificate) | configuration | 0.70 | Certificate management for App Service typically includes product-specific configuration steps and parameters (certificate types, bindings, renewal behaviors, key vault integration, and possibly limits like validity periods or supported key types). These are concrete configuration details unique to Azure App Service rather than generic SSL concepts. |
 | [Certificates](https://learn.microsoft.com/en-us/azure/app-service/environment/overview-certificates) | configuration | 0.70 | Covers product-specific certificate usage and binding behavior for single-tenant ASE apps, including concrete configuration details unique to ASE rather than generic TLS concepts. |
 | [Chatbot with OpenAI](https://learn.microsoft.com/en-us/azure/app-service/tutorial-ai-openai-chatbot-node) | integrations | 0.70 | Page shows a working Node.js (Express) chatbot that calls Azure OpenAI using managed identity from Azure App Service. It likely contains specific API/SDK usage, request parameters, and configuration patterns for this integration, which qualify as product-specific integration knowledge. |
 | [Chatbot with OpenAI](https://learn.microsoft.com/en-us/azure/app-service/tutorial-ai-openai-chatbot-python) | integrations | 0.70 | Page demonstrates a Python (Flask) web app calling Azure OpenAI using managed identity from Azure App Service. It likely includes concrete SDK calls, parameter usage, and configuration details specific to this integration scenario, fitting the integrations sub-skill. |
@@ -194,7 +188,6 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Contain
 | [Connectivity scenarios overview](https://learn.microsoft.com/en-us/azure/app-service/tutorial-connect-overview) | decision-making | 0.70 | Overview focused on when to use different secure connectivity approaches between App Service and other Azure resources; contains product-specific guidance on selecting methods based on security/secret management rather than generic concepts. |
 | [Create an App Service Environment from template](https://learn.microsoft.com/en-us/azure/app-service/environment/how-to-create-from-template) | configuration | 0.70 | Describes creating external or ILB App Service Environment v3 via ARM template with specific resource and parameter configuration (VNet, subnet, resource group, region). This is product-specific configuration detail beyond generic deployment concepts. |
 | [Create an App Service Environment using Terraform](https://learn.microsoft.com/en-us/azure/app-service/environment/creation-terraform) | deployment | 0.70 | Terraform-based quickstart for ASE v3; includes resource definitions and constraints (dedicated subnet, etc.) specific to ASE deployment. |
-| [Create and Manage App Service certificates](https://learn.microsoft.com/en-us/azure/app-service/configure-ssl-app-service-certificate) | configuration | 0.70 | The page covers detailed, product-specific steps and options for purchasing, renewing, synchronizing, and deleting App Service Certificates for custom domains. While not focused on limits or security roles, it contains concrete configuration procedures and settings unique to Azure App Service certificate management that go beyond generic SSL knowledge. |
 | [Custom domain suffix](https://learn.microsoft.com/en-us/azure/app-service/environment/how-to-custom-domain-suffix) | configuration | 0.70 | Page describes product-specific configuration steps and required settings (DNS, certificates, ARM template properties) for enabling a custom domain suffix on an internal load balancer App Service Environment. This is concrete configuration knowledge (specific setting names and how they must be set together) rather than conceptual overview, but does not focus on limits, security roles, or deployment matrices. |
 | [Deploy an N-tier app (tutorial)](https://learn.microsoft.com/en-us/azure/app-service/tutorial-secure-ntier-app) | security | 0.70 | Tutorial for securing an N-tier web app using virtual networks, subnets, private DNS zones, and private endpoints. This typically includes concrete Azure security configurations (VNet integration settings, subnet usage, private endpoint setup) that are product-specific and go beyond generic security concepts. |
 | [Deploy continuously](https://learn.microsoft.com/en-us/azure/app-service/deploy-continuous-deployment) | deployment | 0.70 | Explains App Service–specific continuous deployment integration with various repos and build pipelines, including supported mechanisms and behaviors. |
@@ -269,6 +262,7 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Contain
 | [Foundry agent calling web app](https://learn.microsoft.com/en-us/azure/app-service/tutorial-ai-integrate-azure-ai-agent-python) | 0.35 | Foundry Agent Service + OpenAPI (Python) tutorial; procedural, not a configuration or limits reference. |
 | [Use Bicep](https://learn.microsoft.com/en-us/azure/app-service/provision-resource-bicep) | 0.35 | Quickstart using Bicep to create an app; primarily a basic deployment example without deep configuration references or limits. |
 | [Use Terraform](https://learn.microsoft.com/en-us/azure/app-service/provision-resource-terraform) | 0.35 | Quickstart using Terraform to create an app; mostly generic IaC usage rather than detailed App Service–specific configuration tables or troubleshooting. |
+| [About high density hosting](https://learn.microsoft.com/en-us/azure/app-service/manage-scale-per-app) | 0.30 | The summary focuses on explaining per-app scaling conceptually and how it differs from plan-level scaling. Without explicit mention of numeric limits, configuration parameter tables, or tier-specific constraints, it appears to be primarily conceptual guidance rather than expert-knowledge configuration, limits, or decision matrices. |
 | [Add MCP server to app](https://learn.microsoft.com/en-us/azure/app-service/tutorial-ai-model-context-protocol-server-dotnet) | 0.30 | Tutorial for exposing an app as MCP server; likely code-focused and procedural without configuration tables or limits. |
 | [Agentic web app (.NET)](https://learn.microsoft.com/en-us/azure/app-service/tutorial-ai-agent-web-app-semantic-kernel-foundry-dotnet) | 0.30 | Agentic app tutorial; focuses on adding agent capabilities, not on detailed product configuration or limits. |
 | [Chatbot with OpenAI](https://learn.microsoft.com/en-us/azure/app-service/tutorial-ai-openai-chatbot-dotnet) | 0.30 | Tutorial for building a chatbot with Azure OpenAI and Blazor; primarily step-by-step, not a reusable configuration or limits reference. |

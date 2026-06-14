@@ -51,8 +51,8 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 86
+- **Updated Pages**: 0
+- **Unchanged**: 87
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-load-balancer/azure-load-balancer.csv`
 
@@ -72,11 +72,6 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | *(Unclassified)* | 45 | 51.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [Secure your load balancer](https://learn.microsoft.com/en-us/azure/load-balancer/secure-load-balancer)
-  - Updated: 2026-05-21T22:10:00.000Z → 2026-06-03T22:23:00.000Z
 
 ## Classified Pages
 

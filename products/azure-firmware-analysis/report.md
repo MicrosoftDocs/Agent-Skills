@@ -37,8 +37,8 @@ confusable_not_for: Not for Azure Defender For Iot (use azure-defender-for-iot),
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 14
+- **Updated Pages**: 0
+- **Unchanged**: 16
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-firmware-analysis/azure-firmware-analysis.csv`
 
@@ -53,13 +53,6 @@ confusable_not_for: Not for Azure Defender For Iot (use azure-defender-for-iot),
 | *(Unclassified)* | 5 | 31.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [Understanding and prioritizing weaknesses data in firmware analysis](https://learn.microsoft.com/en-us/azure/firmware-analysis/understand-weaknesses-data)
-  - Updated: 2026-03-31T22:19:00.000Z → 2026-06-02T19:32:00.000Z
-- [UEFI firmware analysis capabilities](https://learn.microsoft.com/en-us/azure/firmware-analysis/unified-extensible-firmware-interface-firmware-analysis)
-  - Updated: 2026-03-31T22:19:00.000Z → 2026-06-02T19:32:00.000Z
 
 ## Classified Pages
 

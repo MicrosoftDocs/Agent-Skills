@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-07'
+generated_at: '2026-06-14'
 category_descriptions:
   configuration: 'Configuring Azure Managed Lustre clients and file systems: network/storage
     prerequisites, fstab auto-mounts, client install/upgrade, ARM/Bicep deployment,
@@ -43,13 +43,13 @@ confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure NetApp 
 - **Total Pages**: 31
 - **Fetched**: 31
 - **Fetch Failed**: 0
-- **Classified**: 29
-- **Unclassified**: 2
+- **Classified**: 28
+- **Unclassified**: 3
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 4
-- **Unchanged**: 26
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 30
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-managed-lustre/azure-managed-lustre.csv`
 
@@ -59,30 +59,20 @@ confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure NetApp 
 |------|-------|------------|
 | architecture-patterns | 1 | 3.2% |
 | best-practices | 2 | 6.5% |
-| configuration | 7 | 22.6% |
+| configuration | 6 | 19.4% |
 | deployment | 1 | 3.2% |
 | integrations | 9 | 29.0% |
 | limits-quotas | 1 | 3.2% |
 | security | 6 | 19.4% |
 | troubleshooting | 2 | 6.5% |
-| *(Unclassified)* | 2 | 6.5% |
+| *(Unclassified)* | 3 | 9.7% |
 
 ## Changes
-
-### New Pages
-
-- [Plan your client install](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/client-install-plan)
 
 ### Updated Pages
 
 - [Install Lustre client](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/client-install)
-  - Updated: 2025-12-11T08:00:00.000Z → 2026-06-03T22:09:00.000Z
-- [Upgrade Lustre client](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/client-upgrade)
-  - Updated: 2026-02-17T23:07:00.000Z → 2026-06-03T22:09:00.000Z
-- [Connect client to the file system](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/connect-clients)
-  - Updated: 2025-04-30T08:00:00.000Z → 2026-06-03T22:09:00.000Z
-- [Use Azure Managed Lustre with Secure Boot](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/client-secure-boot)
-  - Updated: 2025-12-18T18:04:00.000Z → 2026-06-03T22:09:00.000Z
+  - Updated: 2026-06-03T22:09:00.000Z → 2026-06-11T22:13:00.000Z
 
 ## Classified Pages
 
@@ -102,7 +92,6 @@ confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure NetApp 
 | [Automount Lustre clients with fstab](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/automount-clients-fstab) | configuration | 0.70 | Provides specific fstab entry formats and options for Lustre mounts, which are concrete configuration details. |
 | [Configure root squash settings](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/root-squash-configure-settings) | security | 0.70 | Describes nodemap-based root squash options and how to set them via REST or other APIs; these are product-specific security configuration details. |
 | [Create file system using Azure Resource Manager](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/create-file-system-resource-manager) | configuration | 0.70 | ARM/Bicep template examples expose full schema: property names, allowed values, and defaults for the Managed Lustre resource, which are detailed configuration references. |
-| [Install Lustre client](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/client-install) | configuration | 0.70 | Provides OS-specific instructions and parameters for installing Lustre client packages (prebuilt kmod vs DKMS) tied to this service; these are concrete configuration/installation steps beyond generic knowledge. |
 | [Migrate data from on-premises POSIX file systems](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/migrate-data-from-linux) | integrations | 0.70 | The migration article describes a concrete integration pattern between on-premises POSIX file systems, Azure Blob Storage, and Azure Managed Lustre using AzCopy. Such guidance typically includes AzCopy command parameters, flags to preserve POSIX properties, container and path conventions, and service-specific options, which are product-specific integration and coding patterns rather than generic tutorial content. |
 | [Monitor a file system](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/monitor-file-system) | configuration | 0.70 | Describes which metrics/logs are emitted and how to configure collection and alerts; includes product-specific monitoring configuration steps. |
 | [Optimize file and directory layouts](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/optimize-file-layouts) | best-practices | 0.70 | Focuses on scaling file/directory layouts for performance; likely includes concrete recommendations (stripe counts, directory structures) specific to this product. |
@@ -122,5 +111,6 @@ confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure NetApp 
 
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
+| [Install Lustre client](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/client-install) | 0.30 | Primarily a step-by-step client installation guide for Azure Managed Lustre with OS-specific instructions; no clear indication of configuration parameter tables, limits, quotas, or other structured expert details as defined by the sub-skill types. |
 | [Create file system in Azure portal](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/create-file-system-portal) | 0.20 | The page is a step-by-step portal creation guide for an Azure Managed Lustre file system. From the description/summary, it appears to focus on how to create the resource via the portal, without indicating detailed limits, configuration parameter tables, error codes, or other expert-only reference data. It reads as a basic tutorial rather than reference documentation with expert knowledge. |
 | [Introduction to Azure Managed Lustre](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/amlfs-overview) | 0.20 | High-level service overview and benefits; no detailed limits, configs, or error mappings. |

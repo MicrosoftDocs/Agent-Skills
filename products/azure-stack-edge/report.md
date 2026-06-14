@@ -47,10 +47,10 @@ confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure Io
 - **Unclassified**: 95
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 5
-- **Unchanged**: 231
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 238
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-stack-edge/azure-stack-edge.csv`
 
 ## Classification Statistics
@@ -67,28 +67,6 @@ confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure Io
 | *(Unclassified)* | 95 | 39.9% |
 
 ## Changes
-
-### New Pages
-
-- [2604 - Current](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-2604-release-notes)
-- [2510](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-2510-release-notes)
-
-### Updated Pages
-
-- [FAQ - Billing model](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-faq-billing-model)
-  - Updated: 2024-10-14T05:40:00.000Z → 2026-06-03T22:23:00.000Z
-- [Configure client TLS settings](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-configure-tls-settings)
-  - Updated: 2025-04-28T22:06:00.000Z → 2026-06-03T22:23:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/azure-edge-hardware-center/azure-edge-hardware-center-faq)
-  - Updated: 2024-11-19T23:02:00.000Z → 2026-06-03T05:14:00.000Z
-- [Apply updates](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-install-update)
-  - Updated: 2025-07-17T08:00:00.000Z → 2026-05-28T08:00:00.000Z
-- [Reset, reactivate device](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-reset-reactivate-device)
-  - Updated: 2024-10-14T05:40:00.000Z → 2026-06-03T22:23:00.000Z
-
-### Deleted Pages
-
-- ~~2510 - Current~~ (https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-2510-release-notes)
 
 ## Classified Pages
 

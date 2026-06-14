@@ -1,15 +1,14 @@
 ---
-generated_at: '2026-05-31'
+generated_at: '2026-06-14'
 category_descriptions:
-  best-practices: Guidance on sizing and deploying ARO infra/VMs, optimizing OpenShift
-    Virtualization, scaling large clusters, and understanding ARO 4 support and lifecycle
-    policies.
+  best-practices: 'Guidance on sizing and configuring ARO clusters: infra nodes, large-cluster
+    design, supported configs, and optimizing OpenShift Virtualization VM deployments.'
   configuration: 'Configuring ARO clusters: networking (proxy, DNS, egress, MTU, endpoints),
     storage (Azure Files, Prometheus), registry, pull secrets, node subnets/Spot VMs,
     alerts, and resource tagging.'
-  security: 'Securing ARO clusters: identity/auth (Entra, service principals, workload
-    identity), disk encryption, NSGs/egress control, FIPS, Front Door protection,
-    Lockbox, and credential/identity rotation.'
+  security: 'Identity, auth, and network security for ARO: Entra/managed identities,
+    workload identity, NSGs/egress control, disk encryption, FIPS, Front Door, Lockbox,
+    and credential/identity rotation'
   deployment: 'Deploying and operating ARO clusters and apps: cluster creation (private/ARM/Bicep),
     upgrades, networking migration, backups/restores, and app runtimes (JBoss, WebSphere,
     S2I, serverless).'
@@ -26,15 +25,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Red Hat OpenShift development including
   troubleshooting, best practices, decision making, limits & quotas, security, configuration,
   integrations & coding patterns, and deployment. Use when creating ARO clusters,
-  configuring networking/storage, securing Entra auth, using GPUs/virtualization,
-  or integrating Key Vault, and other Azure Red Hat OpenShift related development
-  tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure
-  Container Apps (use azure-container-apps), Azure Virtual Machines (use azure-virtual-machines).
+  configuring networking/storage, securing with Entra/Key Vault, or integrating GPUs/NetApp,
+  and other Azure Red Hat OpenShift related development tasks. Not for Azure Kubernetes
+  Service (AKS) (use azure-kubernetes-service), Azure Container Apps (use azure-container-apps),
+  Azure VMware Solution (use azure-vmware-solution), Azure Virtual Machines (use azure-virtual-machines).
 use_when: Use when creating ARO clusters, configuring networking/storage, securing
-  Entra auth, using GPUs/virtualization, or integrating Key Vault, and other Azure
-  Red Hat OpenShift related development tasks.
+  with Entra/Key Vault, or integrating GPUs/NetApp, and other Azure Red Hat OpenShift
+  related development tasks.
 confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
-  Azure Container Apps (use azure-container-apps), Azure Virtual Machines (use azure-virtual-machines).
+  Azure Container Apps (use azure-container-apps), Azure VMware Solution (use azure-vmware-solution),
+  Azure Virtual Machines (use azure-virtual-machines).
 ---
 # Azure Red Hat OpenShift Crawl Report
 
@@ -43,13 +43,13 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 - **Total Pages**: 66
 - **Fetched**: 66
 - **Fetch Failed**: 0
-- **Classified**: 50
-- **Unclassified**: 16
+- **Classified**: 51
+- **Unclassified**: 15
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 66
+- **Updated Pages**: 3
+- **Unchanged**: 63
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-redhat-openshift/azure-redhat-openshift.csv`
 
@@ -63,11 +63,20 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | deployment | 8 | 12.1% |
 | integrations | 5 | 7.6% |
 | limits-quotas | 2 | 3.0% |
-| security | 13 | 19.7% |
+| security | 14 | 21.2% |
 | troubleshooting | 3 | 4.5% |
-| *(Unclassified)* | 16 | 24.2% |
+| *(Unclassified)* | 15 | 22.7% |
 
 ## Changes
+
+### Updated Pages
+
+- [Support policies for Azure Red Hat OpenShift 4](https://learn.microsoft.com/en-us/azure/openshift/support-policies-v4)
+  - Updated: 2026-05-06T08:00:00.000Z → 2026-06-02T08:00:00.000Z
+- [Understand managed identities](https://learn.microsoft.com/en-us/azure/openshift/howto-understand-managed-identities)
+  - Updated: 2026-02-02T06:43:00.000Z → 2026-06-09T08:00:00.000Z
+- [Encrypt cluster data with customer-managed key](https://learn.microsoft.com/en-us/azure/openshift/howto-byok)
+  - Updated: 2025-02-25T18:01:00.000Z → 2026-06-11T17:32:00.000Z
 
 ## Classified Pages
 
@@ -81,7 +90,7 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Configure an Azure File StorageClass](https://learn.microsoft.com/en-us/azure/openshift/howto-configure-azure-file-storageclass) | configuration | 0.80 | Details StorageClass configuration, CSI driver dependency on shared keys, and behavior when managed identity is enabled; includes specific storage config parameters. |
 | [Configure cluster-wide proxy](https://learn.microsoft.com/en-us/azure/openshift/cluster-wide-proxy-configure) | configuration | 0.80 | Details proxy configuration for ARO clusters, including specific settings and behavior; product-specific network configuration. |
 | [Deploy large Azure Red Hat OpenShift clusters](https://learn.microsoft.com/en-us/azure/openshift/howto-large-clusters) | best-practices | 0.80 | Explicitly labeled best practices with concrete recommendations for up to 250 worker nodes and cautions about >120 nodes; includes numeric thresholds and product-specific guidance. |
-| [Encrypt cluster data with customer-managed key](https://learn.microsoft.com/en-us/azure/openshift/howto-byok) | security | 0.80 | Explains switching from platform-managed to customer-managed keys, default storage class behavior, and key usage; security and encryption configuration. |
+| [Encrypt cluster data with customer-managed key](https://learn.microsoft.com/en-us/azure/openshift/howto-byok) | security | 0.80 | BYOK/CMK encryption for ARO OS disks requires specific Azure Disk Encryption and Key Vault configuration: key types, key vault access policies or RBAC roles, parameter names, and how ARO clusters bind storage classes to CMKs. These are detailed, product-specific security configuration steps and constraints that qualify as expert knowledge under the security category. |
 | [Replace cluster identity](https://learn.microsoft.com/en-us/azure/openshift/howto-replace-cluster-identity) | security | 0.80 | The article is focused on replacing platform workload identities and the cluster identity, which is identity and access management. Such content typically includes specific Azure identity resource types, role assignments, and configuration steps unique to ARO clusters, matching the security sub-skill (RBAC/identity configuration). |
 | [Restrict egress traffic](https://learn.microsoft.com/en-us/azure/openshift/howto-restrict-egress) | security | 0.80 | Lists required ports and addresses and describes Egress Lockdown feature; outbound control is a security configuration with specific endpoints. |
 | [Use Azure Key Vault secrets](https://learn.microsoft.com/en-us/azure/openshift/howto-use-key-vault-secrets) | integrations | 0.80 | Shows using Azure Key Vault Provider for Secrets Store CSI Driver on ARO; includes driver configuration, parameters, and mounting patterns unique to this integration. |
@@ -108,8 +117,9 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Migrate from OpenShift SDN to OVN-Kubernetes](https://learn.microsoft.com/en-us/azure/openshift/howto-sdn-to-ovn) | deployment | 0.70 | Describes migration path due to SDN deprecation, including version constraints and steps; deployment/migration decision and process. |
 | [Rotate service principal credentials](https://learn.microsoft.com/en-us/azure/openshift/howto-service-principal-credential-rotation) | security | 0.70 | Contains product-specific steps and Azure CLI commands for rotating Microsoft Entra ID service principal credentials tied to Azure Red Hat OpenShift clusters, including required parameters and sequence of operations that are not generic knowledge. |
 | [Segregate worker nodes into subnets](https://learn.microsoft.com/en-us/azure/openshift/howto-segregate-machinesets) | configuration | 0.70 | Network-level configuration of worker machine sets into different private subnets with access control implications is product-specific configuration. |
-| [Support policies for Azure Red Hat OpenShift 4](https://learn.microsoft.com/en-us/azure/openshift/support-policies-v4) | best-practices | 0.70 | Support policy pages for managed services typically contain product-specific DO/DON'T guidance (which cluster modifications are supported vs. unsupported, technology preview feature restrictions, and configuration changes that void support). These are concrete, vendor-specific best-practice rules that an LLM is unlikely to infer from general training data, but they are not primarily limits/quotas or decision matrices. |
+| [Support policies for Azure Red Hat OpenShift 4](https://learn.microsoft.com/en-us/azure/openshift/support-policies-v4) | best-practices | 0.70 | Support policy pages typically enumerate specific allowed and disallowed configuration changes (for example, which internal components you may or may not modify) that directly affect supportability. These are product-specific DO/DON'T guidelines and edge cases unique to Azure Red Hat OpenShift, which an LLM is unlikely to know from training. This aligns with best-practices as concrete, support-enforced recommendations rather than generic concepts. |
 | [Tag resources using Azure Policy](https://learn.microsoft.com/en-us/azure/openshift/howto-tag-resources) | configuration | 0.70 | Involves creating JSON policy definitions/assignments and remediation for ARO-managed resource groups, with specific parameters and behavior. |
+| [Understand managed identities](https://learn.microsoft.com/en-us/azure/openshift/howto-understand-managed-identities) | security | 0.70 | An article on understanding managed identities in ARO is likely to include product-specific security configuration details: which managed identities are created, how they are scoped, required role assignments, and how ARO components use them to access Azure resources. These are concrete IAM patterns and role/scope configurations unique to ARO, fitting the security sub-skill. This goes beyond generic managed identity concepts. |
 | [Use Admin Kubeconfig](https://learn.microsoft.com/en-us/azure/openshift/howto-kubeconfig) | troubleshooting | 0.70 | Explicitly for regaining access when console/ingress/auth components fail; maps specific failure scenarios to using Admin Kubeconfig. |
 | [Configure Prometheus persistence](https://learn.microsoft.com/en-us/azure/openshift/howto-prometheus-persistence) | configuration | 0.68 | How-to for configuring Prometheus persistence on Azure Red Hat OpenShift is likely to include product-specific configuration objects (StorageClass, PVC specs, retention settings, operator config fields) and exact parameter names/values unique to ARO’s integrated monitoring stack, which qualifies as configuration expert knowledge rather than a generic tutorial. |
 | [Deploy an Open Liberty/WebSphere Liberty Java app](https://learn.microsoft.com/en-us/azure/openshift/howto-deploy-java-liberty-app) | deployment | 0.68 | Uses Azure Marketplace offer to provision ARO plus Liberty operators and images; includes product-specific deployment wiring and options. |
@@ -129,7 +139,6 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
 | [Overview of OVN-Kubernetes](https://learn.microsoft.com/en-us/azure/openshift/concepts-ovn-kubernetes) | 0.45 | High-level overview of OVN-Kubernetes as network provider; likely conceptual without detailed parameter tables or numeric thresholds. |
-| [Understand managed identities](https://learn.microsoft.com/en-us/azure/openshift/howto-understand-managed-identities) | 0.45 | Conceptual article about managed identities; summary does not show concrete RBAC roles, scopes, or config tables. |
 | [Use Confidential Containers to protect sensitive data](https://learn.microsoft.com/en-us/azure/openshift/confidential-containers-overview) | 0.40 | Primarily an overview of confidential containers benefits and concepts; no clear indication of concrete configuration parameters, limits, or error mappings. |
 | [Create an Azure Red Hat OpenShift cluster](https://learn.microsoft.com/en-us/azure/openshift/create-cluster) | 0.30 | Quickstart for creating a cluster; summary does not show detailed config tables, limits, or security roles beyond generic how-to. |
 | [Deploy a JBoss EAP Java app](https://learn.microsoft.com/en-us/azure/openshift/howto-deploy-java-jboss-enterprise-application-platform-app) | 0.30 | Quickstart/tutorial for deploying JBoss EAP on Azure Red Hat OpenShift via the portal. It focuses on step-by-step setup using a Marketplace offer, not on limits, configuration matrices, error codes, or product-specific parameter tables. No clear expert-only limits, quotas, or specialized configuration references are indicated. |

@@ -39,8 +39,8 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 5
-- **Unchanged**: 42
+- **Updated Pages**: 0
+- **Unchanged**: 47
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-health/azure-service-health.csv`
 
@@ -56,19 +56,6 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 | *(Unclassified)* | 28 | 59.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [Sample queries for Service Health](https://learn.microsoft.com/en-us/azure/service-health/resource-graph-samples)
-  - Updated: 2025-10-01T08:00:00.000Z → 2025-10-01T22:15:00.000Z
-- [Azure Status page overview](https://learn.microsoft.com/en-us/azure/service-health/azure-status-overview)
-  - Updated: 2026-05-26T08:00:00.000Z → 2026-06-02T08:00:00.000Z
-- [Filter Service Health notifications by event level](https://learn.microsoft.com/en-us/azure/service-health/metadata-filter)
-  - Updated: 2026-03-04T08:00:00.000Z → 2026-05-29T08:00:00.000Z
-- [Impacted Resources from Azure retirements](https://learn.microsoft.com/en-us/azure/service-health/impacted-resources-retirements)
-  - Updated: 2026-03-11T08:00:00.000Z → 2026-06-02T22:21:00.000Z
-- [Health history overview](https://learn.microsoft.com/en-us/azure/service-health/health-history-overview)
-  - Updated: 2026-04-06T22:09:00.000Z → 2026-06-04T08:00:00.000Z
 
 ## Classified Pages
 

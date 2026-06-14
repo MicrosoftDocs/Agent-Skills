@@ -1,9 +1,9 @@
 ---
 name: azure-kubernetes-service
-description: Expert knowledge for Azure Kubernetes Service (AKS) development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when securing AKS with Entra/RBAC, configuring Istio/Fleet, running GPU or PCI apps, or CI/CD-based upgrades, and other Azure Kubernetes Service (AKS) related development tasks. Not for Azure Container Apps (use azure-container-apps), Azure Container Instances (use azure-container-instances), Azure Red Hat OpenShift (use azure-redhat-openshift).
+description: Expert knowledge for Azure Kubernetes Service (AKS) development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing AKS clusters, Fleet/multi-cluster, Istio/service mesh, GPU/AI workloads, or PCI-compliant setups, and other Azure Kubernetes Service (AKS) related development tasks. Not for Azure Container Apps (use azure-container-apps), Azure Container Instances (use azure-container-instances), Azure Red Hat OpenShift (use azure-redhat-openshift), Azure Virtual Machine Scale Sets (use azure-vm-scalesets).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-07"
+  generated_at: "2026-06-14"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Kubernetes Service (AKS) Skill
@@ -25,14 +25,14 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L37-L60 | Diagnosing and fixing AKS cluster issues: networking, DNS, kubelet, GPUs, encryption, upgrades, Windows nodes, Fleet, and add-ons using logs, metrics, events, and troubleshooting tools. |
-| Best Practices | L61-L105 | Best practices for AKS design, operations, security, performance, cost optimization, upgrades, and workload resiliency (GPU, databases, PCI, Windows, networking, storage, and scheduling). |
-| Decision Making | L106-L155 | Guidance for planning and decision-making on AKS: migrations, networking, upgrades, pricing/tiers, node/VM choices, cost optimization, compliance, and comparisons with other platforms/services. |
-| Architecture & Design Patterns | L156-L179 | Designing AKS architectures and patterns for HA/DR, upgrades, networking/ingress, PCI workloads, multi-region, GPU and node pool strategies, and multi-cluster/Fleet rollout control. |
-| Limits & Quotas | L180-L205 | AKS capacity, limits, and lifecycle: quotas, SKUs, node/pod/network caps, Istio and egress limits, version/support timelines, and scaling patterns (Automatic, Fleet, SLBs, identities). |
-| Security | L206-L288 | Securing AKS clusters: authn/z (Entra, RBAC/ABAC, workload identity), node hardening, encryption, network policies, Istio, PCI controls, Azure Policy, and secure access to external services. |
-| Configuration | L289-L440 | Configuring AKS clusters, networking, storage, security, autoscaling, cost controls, add-ons (Istio, Dapr, App Config, ACNS), GPUs, databases, and multi-cluster/Fleet features. |
+| Best Practices | L61-L105 | AKS operational best practices: performance, scaling, reliability, security, cost optimization, GPU/MLOps, storage/backup, upgrades, and resiliency patterns for workloads and data services. |
+| Decision Making | L106-L156 | Guidance for planning and decision-making on AKS: migrations, upgrades, networking, node pools/VM sizes, pricing tiers, cost optimization, compliance (PCI), and comparing AKS with other platforms. |
+| Architecture & Design Patterns | L157-L180 | Designing AKS architectures and patterns for HA/DR, upgrades, networking/ingress, PCI workloads, multi-region, GPU and node pool strategies, and multi-cluster/Fleet rollout control. |
+| Limits & Quotas | L181-L205 | AKS and Fleet limits, quotas, and lifecycles: Kubernetes version support, API deprecation, node/VM/SKU caps, Istio and egress scaling, identity/NAT/load balancer limits, and capacity behavior |
+| Security | L206-L287 | Securing AKS clusters: authn/z (Entra, RBAC/ABAC, workload identity), node hardening, encryption, network policies, Istio, PCI controls, Azure Policy, and secure access to external services. |
+| Configuration | L288-L440 | Configuring AKS clusters, networking, storage, autoscaling, security, cost, and service-mesh features, plus setting up databases, ingress, GPU/AI, and multi-cluster Fleet management. |
 | Integrations & Coding Patterns | L441-L466 | Patterns and examples for integrating AKS with AI/agent tooling, storage, security, monitoring, scaling, CI/CD, and external services (Azure and OSS) in real applications. |
-| Deployment | L467-L523 | Deploying and upgrading AKS clusters and apps, including CI/CD, AI/ML and Wasm workloads, service meshes, autoscaling, storage/network migrations, and production-ready infrastructure setup. |
+| Deployment | L467-L521 | Deploying and upgrading AKS clusters and apps, including CI/CD, AI/ML and Wasm workloads, service meshes, autoscaling, storage/network migrations, and production-ready infrastructure setup. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -75,6 +75,7 @@ This skill requires **network access** to fetch documentation content:
 | Enforce AKS deployment safeguards and best practices | https://learn.microsoft.com/en-us/azure/aks/deployment-safeguards |
 | Implement pod security best practices on AKS | https://learn.microsoft.com/en-us/azure/aks/developer-best-practices-pod-security |
 | Optimize AKS workload resource management practices | https://learn.microsoft.com/en-us/azure/aks/developer-best-practices-resource-management |
+| Profile and optimize GPU workloads on AKS | https://learn.microsoft.com/en-us/azure/aks/gpu-profiling |
 | Use TCP keepalive to improve AKS network resilience | https://learn.microsoft.com/en-us/azure/aks/improve-network-fault-tolerance-in-aks-using-tcp-keepalive |
 | Apply AKS network policy security best practices | https://learn.microsoft.com/en-us/azure/aks/network-policy-best-practices |
 | Plan node image updates for NAP in AKS | https://learn.microsoft.com/en-us/azure/aks/node-auto-provisioning-upgrade-image |
@@ -100,7 +101,6 @@ This skill requires **network access** to fetch documentation content:
 | Validate and operate PostgreSQL HA deployments on AKS | https://learn.microsoft.com/en-us/azure/aks/validate-postgresql-ha |
 | Load test and validate Valkey cluster resiliency on AKS | https://learn.microsoft.com/en-us/azure/aks/validate-valkey-cluster |
 | Apply best practices for AKS Windows containers | https://learn.microsoft.com/en-us/azure/aks/windows-best-practices |
-| Migrate AKS pods from pod identity to Entra Workload ID | https://learn.microsoft.com/en-us/azure/aks/workload-identity-migrate-from-pod-identity |
 | Control eviction and disruption budgets for Fleet Manager workloads | https://learn.microsoft.com/en-us/azure/kubernetes-fleet/concepts-eviction-disruption |
 
 ### Decision Making
@@ -126,7 +126,7 @@ This skill requires **network access** to fetch documentation content:
 | Plan and execute migration from NPM to Cilium in AKS | https://learn.microsoft.com/en-us/azure/aks/migrate-from-npm-to-cilium-network-policy |
 | Migrate from open source Istio to AKS Istio add-on using canary strategy | https://learn.microsoft.com/en-us/azure/aks/migration-from-open-source-istio-to-addon |
 | Choose and manage AKS node images | https://learn.microsoft.com/en-us/azure/aks/node-images |
-| Map Open Service Mesh policies to Istio equivalents for migration | https://learn.microsoft.com/en-us/azure/aks/open-service-mesh-istio-migration-guidance |
+| Map AKS Open Service Mesh policies to Istio add-on | https://learn.microsoft.com/en-us/azure/aks/open-service-mesh-istio-migration-guidance |
 | Choose strategies to optimize AKS usage and costs | https://learn.microsoft.com/en-us/azure/aks/optimize-aks-costs |
 | Apply PCI customized approach controls in AKS | https://learn.microsoft.com/en-us/azure/aks/pci-customized-approach-guidance |
 | Map AKS controls to PCI DSS 4.0.1 requirements | https://learn.microsoft.com/en-us/azure/aks/pci-requirement-mapping-matrix |
@@ -149,6 +149,7 @@ This skill requires **network access** to fetch documentation content:
 | Choose between AKS Automatic and Standard clusters | https://learn.microsoft.com/en-us/azure/aks/what-is-aks |
 | Use and migrate from Windows Server Annual Channel on AKS | https://learn.microsoft.com/en-us/azure/aks/windows-annual-channel |
 | Plan Windows vs. Linux containers on AKS | https://learn.microsoft.com/en-us/azure/aks/windows-vs-linux-containers |
+| Choose a migration path to AKS Workload ID | https://learn.microsoft.com/en-us/azure/aks/workload-identity-migrate-from-pod-identity |
 | Choose the right Azure Kubernetes Fleet Manager configuration | https://learn.microsoft.com/en-us/azure/kubernetes-fleet/concepts-choosing-fleet |
 | Migrate Kubernetes update workflows from Terragrunt/Terraform to Azure Kubernetes Fleet Manager | https://learn.microsoft.com/en-us/azure/kubernetes-fleet/howto-migrate-updates-from-terraform |
 | Upgrade Azure Kubernetes Fleet Manager from hubless to hubful | https://learn.microsoft.com/en-us/azure/kubernetes-fleet/upgrade-hub-cluster-type |
@@ -195,7 +196,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure AKS egress with NAT gateway limits | https://learn.microsoft.com/en-us/azure/aks/nat-gateway |
 | Understand AKS node resource reservations and capacity | https://learn.microsoft.com/en-us/azure/aks/node-resource-reservations |
 | Review AKS regional quotas and VM SKU limits | https://learn.microsoft.com/en-us/azure/aks/quotas-skus-regions |
-| AKS support policies and platform limitations | https://learn.microsoft.com/en-us/azure/aks/support-policies |
 | AKS supported Kubernetes versions and lifecycle rules | https://learn.microsoft.com/en-us/azure/aks/supported-kubernetes-versions |
 | Scale AKS with multiple Standard Load Balancers | https://learn.microsoft.com/en-us/azure/aks/use-multiple-standard-load-balancer |
 | Configure and manage AKS system node pools | https://learn.microsoft.com/en-us/azure/aks/use-system-pools |
@@ -282,7 +282,6 @@ This skill requires **network access** to fetch documentation content:
 | Enable user-assigned managed identity for AKS clusters | https://learn.microsoft.com/en-us/azure/aks/user-assigned-managed-identity |
 | Configure cross-tenant workload identity for AKS | https://learn.microsoft.com/en-us/azure/aks/workload-identity-cross-tenant |
 | Configure AKS cluster with Entra Workload ID | https://learn.microsoft.com/en-us/azure/aks/workload-identity-deploy-cluster |
-| Use Microsoft Entra Workload ID with AKS workloads | https://learn.microsoft.com/en-us/azure/aks/workload-identity-overview |
 | Assign Azure RBAC roles for Kubernetes Fleet Manager | https://learn.microsoft.com/en-us/azure/kubernetes-fleet/concepts-rbac |
 | Use managed identities securely with Azure Kubernetes Fleet Manager | https://learn.microsoft.com/en-us/azure/kubernetes-fleet/use-managed-identity |
 
@@ -296,11 +295,13 @@ This skill requires **network access** to fetch documentation content:
 | Configure AKS Communication Manager for maintenance notifications | https://learn.microsoft.com/en-us/azure/aks/aks-communication-manager |
 | Manage AKS component versioning and patching strategy | https://learn.microsoft.com/en-us/azure/aks/aks-component-versioning |
 | Configure AKS clusters for AKS Desktop compatibility | https://learn.microsoft.com/en-us/azure/aks/aks-desktop-install-cluster-setup |
+| Configure AKS Kubernetes end-of-support notifications | https://learn.microsoft.com/en-us/azure/aks/aks-end-of-support-notifications |
 | List and filter AKS-supported VM SKUs by region | https://learn.microsoft.com/en-us/azure/aks/aks-list-skus |
 | Configure AKS-managed GPU node pools with NVIDIA stack | https://learn.microsoft.com/en-us/azure/aks/aks-managed-gpu-nodes |
 | Set up custom domains and SSL for AKS application routing | https://learn.microsoft.com/en-us/azure/aks/app-routing-dns-ssl |
 | Configure multiple NGINX ingress controllers and annotations in AKS | https://learn.microsoft.com/en-us/azure/aks/app-routing-nginx-configuration |
 | Monitor AKS NGINX ingress metrics with Prometheus | https://learn.microsoft.com/en-us/azure/aks/app-routing-nginx-prometheus |
+| Configure automatic Pod Disruption Budget management in AKS | https://learn.microsoft.com/en-us/azure/aks/automatic-pod-disruption-budget-management |
 | Install and manage Azure App Configuration extension on AKS | https://learn.microsoft.com/en-us/azure/aks/azure-app-configuration |
 | Configure AKS workloads with App Configuration provider | https://learn.microsoft.com/en-us/azure/aks/azure-app-configuration-quickstart |
 | Tune Azure App Configuration extension settings for AKS | https://learn.microsoft.com/en-us/azure/aks/azure-app-configuration-settings |
@@ -390,14 +391,13 @@ This skill requires **network access** to fetch documentation content:
 | Configure planned maintenance windows for AKS upgrades | https://learn.microsoft.com/en-us/azure/aks/planned-maintenance |
 | Configure AKS private API server access across VNets | https://learn.microsoft.com/en-us/azure/aks/private-apiserver-vnet-integration-cluster |
 | Configure and deploy private AKS clusters with CLI/Terraform | https://learn.microsoft.com/en-us/azure/aks/private-clusters |
-| Resize AKS node pools using cordon and drain | https://learn.microsoft.com/en-us/azure/aks/resize-node-pool |
 | Manually and automatically scale AKS node pools | https://learn.microsoft.com/en-us/azure/aks/scale-node-pools |
 | Enable shared health probes for AKS Services | https://learn.microsoft.com/en-us/azure/aks/shared-health-probes |
 | Start and stop AKS node pools to optimize costs | https://learn.microsoft.com/en-us/azure/aks/start-stop-nodepools |
 | Use static public IPs with AKS load balancers | https://learn.microsoft.com/en-us/azure/aks/static-ip |
 | Configure AKS upgrades to stop on API breaking changes | https://learn.microsoft.com/en-us/azure/aks/stop-cluster-upgrade-api-breaking-changes |
 | Update Key Vault mode for AKS KMS encryption | https://learn.microsoft.com/en-us/azure/aks/update-kms-key-vault |
-| Configure AKS node pool rolling upgrade settings | https://learn.microsoft.com/en-us/azure/aks/upgrade-aks-node-pools-rolling |
+| Configure rolling upgrade settings for AKS node pools | https://learn.microsoft.com/en-us/azure/aks/upgrade-aks-node-pools-rolling |
 | Configure Advanced Container Networking Services on AKS | https://learn.microsoft.com/en-us/azure/aks/use-advanced-container-networking-services |
 | Configure AMD GPU node pools on AKS | https://learn.microsoft.com/en-us/azure/aks/use-amd-gpus |
 | Run AKS node pools on Azure Dedicated Hosts | https://learn.microsoft.com/en-us/azure/aks/use-azure-dedicated-hosts |
@@ -494,7 +494,6 @@ This skill requires **network access** to fetch documentation content:
 | Prepare production-ready AKS infrastructure for web apps | https://learn.microsoft.com/en-us/azure/aks/eks-web-prepare |
 | Migrate Yelb web application from EKS to AKS | https://learn.microsoft.com/en-us/azure/aks/eks-web-refactor |
 | Enable KEDA add-on on existing AKS clusters | https://learn.microsoft.com/en-us/azure/aks/enable-keda-existing-cluster |
-| Deploy AKS clusters in Azure Extended Zones | https://learn.microsoft.com/en-us/azure/aks/extended-zones |
 | Deploy highly available GitHub Actions runners on AKS | https://learn.microsoft.com/en-us/azure/aks/github-actions-azure-files-deploy-test |
 | Deploy Istio-based service mesh add-on on AKS clusters | https://learn.microsoft.com/en-us/azure/aks/istio-deploy-addon |
 | Uninstall Istio-based service mesh add-on and clean AKS resources | https://learn.microsoft.com/en-us/azure/aks/istio-uninstall-addon |
@@ -507,7 +506,6 @@ This skill requires **network access** to fetch documentation content:
 | Migrate AKS KMS v2 to infrastructure encryption | https://learn.microsoft.com/en-us/azure/aks/migrate-key-management-service-platform-managed-key-customer-managed-key |
 | Migrate AKS node pools to Azure Container Linux | https://learn.microsoft.com/en-us/azure/aks/migrate-nodes-azure-container-linux |
 | Deploy OpenAI-based applications on AKS | https://learn.microsoft.com/en-us/azure/aks/open-ai-quickstart |
-| Install Open Service Mesh add-on on AKS using Azure CLI | https://learn.microsoft.com/en-us/azure/aks/open-service-mesh-deploy-addon-az-cli |
 | Deploy Open Service Mesh add-on on AKS using Bicep templates | https://learn.microsoft.com/en-us/azure/aks/open-service-mesh-deploy-addon-bicep |
 | Uninstall Open Service Mesh add-on and clean up AKS resources | https://learn.microsoft.com/en-us/azure/aks/open-service-mesh-uninstall-add-on |
 | Deploy and use OpenFaaS on Azure Kubernetes Service | https://learn.microsoft.com/en-us/azure/aks/openfaas |

@@ -49,8 +49,8 @@ use_when: Use when planning AI/AKS landing zones, AVD/AVS setups, or SAP/Oracle 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 324
+- **Updated Pages**: 0
+- **Unchanged**: 328
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cloud-adoption-framework/azure-cloud-adoption-framework.csv`
 
@@ -70,17 +70,6 @@ use_when: Use when planning AI/AKS landing zones, AVD/AVS setups, or SAP/Oracle 
 | *(Unclassified)* | 8 | 2.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [Plan for traffic inspection](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/plan-for-traffic-inspection)
-  - Updated: 2026-01-28T16:03:00.000Z → 2026-06-02T18:12:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/management)
-  - Updated: 2026-01-09T19:03:00.000Z → 2026-06-01T22:05:00.000Z
-- [Inventory and visibility](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/management-platform)
-  - Updated: 2025-12-19T21:03:00.000Z → 2026-06-02T18:12:00.000Z
-- [Select regions](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-setup-guide/regions)
-  - Updated: 2025-10-03T18:06:00.000Z → 2026-06-02T22:10:00.000Z
 
 ## Classified Pages
 

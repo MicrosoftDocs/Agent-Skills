@@ -49,8 +49,8 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 49
+- **Updated Pages**: 0
+- **Unchanged**: 53
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/microsoft-foundry-tools/microsoft-foundry-tools.csv`
 
@@ -69,17 +69,6 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 | *(Unclassified)* | 22 | 41.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [Choose the right tool for document processing](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/choosing-right-ai-tool)
-  - Updated: 2026-04-13T17:17:00.000Z → 2026-06-02T19:00:00.000Z
-- [Security features](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/secure-communications)
-  - Updated: 2026-02-25T02:49:00.000Z → 2026-06-04T06:05:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/faq)
-  - Updated: 2026-05-08T22:11:00.000Z → 2026-06-05T22:11:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/document/overview)
-  - Updated: 2026-03-27T06:03:00.000Z → 2026-06-02T19:00:00.000Z
 
 ## Classified Pages
 

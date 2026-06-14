@@ -51,8 +51,8 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI Sear
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 74
+- **Updated Pages**: 0
+- **Unchanged**: 77
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-document-intelligence/azure-document-intelligence.csv`
 
@@ -72,15 +72,6 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI Sear
 | *(Unclassified)* | 42 | 54.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [What is Azure Document Intelligence in Foundry Tools?](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/overview?view=doc-intel-4.0.0)
-  - Updated: 2026-05-06T08:00:00.000Z → 2026-06-05T06:04:00.000Z
-- [Which model should I choose?](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/concept/choose-model-feature?view=doc-intel-4.0.0)
-  - Updated: 2025-11-18T08:00:00.000Z → 2026-06-02T19:00:00.000Z
-- [Frequently asked questions (FAQ)](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/faq?view=doc-intel-4.0.0)
-  - Updated: 2026-01-31T06:05:00.000Z → 2026-06-05T22:11:00.000Z
 
 ## Classified Pages
 

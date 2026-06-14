@@ -48,9 +48,9 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 - **Unclassified**: 77
 
 ### Incremental Update
-- **New Pages**: 10
-- **Updated Pages**: 1
-- **Unchanged**: 205
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 216
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-repos/azure-repos.csv`
 
@@ -69,24 +69,6 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 | *(Unclassified)* | 77 | 35.6% |
 
 ## Changes
-
-### New Pages
-
-- [Copilot Code Reviews](https://learn.microsoft.com/en-us/azure/devops/repos/git/copilot-code-reviews?view=azure-devops)
-- [1. Learn about Enterprise Live Migrations](https://learn.microsoft.com/en-us/azure/devops/repos/enterprise-live-migrations/overview?view=azure-devops)
-- [2. Complete prerequisites](https://learn.microsoft.com/en-us/azure/devops/repos/enterprise-live-migrations/prerequisites?view=azure-devops)
-- [3. Start the migration](https://learn.microsoft.com/en-us/azure/devops/repos/enterprise-live-migrations/start-migration?view=azure-devops)
-- [4. Monitor the migration](https://learn.microsoft.com/en-us/azure/devops/repos/enterprise-live-migrations/monitor-migration?view=azure-devops)
-- [5. Cutover to GitHub](https://learn.microsoft.com/en-us/azure/devops/repos/enterprise-live-migrations/cut-over-to-github?view=azure-devops)
-- [6. Complete post-migration tasks](https://learn.microsoft.com/en-us/azure/devops/repos/enterprise-live-migrations/post-migration?view=azure-devops)
-- [ELM CLI reference](https://learn.microsoft.com/en-us/azure/devops/repos/enterprise-live-migrations/elm-cli-reference?view=azure-devops)
-- [Troubleshoot ELM](https://learn.microsoft.com/en-us/azure/devops/repos/enterprise-live-migrations/troubleshoot?view=azure-devops)
-- [Copilot Autofix for code scanning](https://learn.microsoft.com/en-us/azure/devops/repos/security/github-advanced-security-code-scanning-autofix?view=azure-devops)
-
-### Updated Pages
-
-- [Review pull requests](https://learn.microsoft.com/en-us/azure/devops/repos/git/review-pull-requests?view=azure-devops)
-  - Updated: 2025-12-17T18:06:00.000Z → 2026-06-02T20:25:00.000Z
 
 ## Classified Pages
 

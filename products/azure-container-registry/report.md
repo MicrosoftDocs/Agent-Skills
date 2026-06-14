@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-07'
+generated_at: '2026-06-14'
 category_descriptions:
   security: 'Securing Azure Container Registry: auth methods (Entra, managed identity,
     tokens), RBAC/ABAC, network/firewall/VNet rules, encryption keys, image signing/verification,
@@ -16,8 +16,8 @@ category_descriptions:
   best-practices: 'Best practices for ACR operations: managing public image dependencies,
     safe image deletion and storage cleanup, and robust image tagging/versioning strategies.'
   troubleshooting: 'Diagnosing and fixing ACR issues: health checks, error codes,
-    login/auth, networking, performance, transfers, logs, artifact cache/streaming,
-    Arc connected registries, and customer-managed keys.'
+    login/auth, network, performance, transfer, logs, artifact cache/streaming, Arc
+    extension, and customer-managed keys.'
   limits-quotas: Choosing an ACR SKU based on limits (storage, throughput, webhooks)
     and understanding image storage caps, quotas, and how many images/manifests you
     can store.
@@ -29,13 +29,14 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Container Registry development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when using ACR Tasks, geo-replication, connected registries, image signing/verification,
-  or caching pulls, and other Azure Container Registry related development tasks.
-  Not for Azure Container Apps (use azure-container-apps), Azure Container Instances
-  (use azure-container-instances), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
+  Use when configuring ACR auth, geo-replication, image signing, tasks/webhooks, or
+  connected registries via Arc, and other Azure Container Registry related development
+  tasks. Not for Azure Container Apps (use azure-container-apps), Azure Container
+  Instances (use azure-container-instances), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
   Azure Red Hat OpenShift (use azure-redhat-openshift).
-use_when: Use when using ACR Tasks, geo-replication, connected registries, image signing/verification,
-  or caching pulls, and other Azure Container Registry related development tasks.
+use_when: Use when configuring ACR auth, geo-replication, image signing, tasks/webhooks,
+  or connected registries via Arc, and other Azure Container Registry related development
+  tasks.
 confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azure
   Container Instances (use azure-container-instances), Azure Kubernetes Service (AKS)
   (use azure-kubernetes-service), Azure Red Hat OpenShift (use azure-redhat-openshift).
@@ -51,10 +52,10 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 - **Unclassified**: 35
 
 ### Incremental Update
-- **New Pages**: 14
-- **Updated Pages**: 2
-- **Unchanged**: 108
-- **Deleted Pages**: 13
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 123
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-container-registry/azure-container-registry.csv`
 
 ## Classification Statistics
@@ -74,45 +75,10 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 
 ## Changes
 
-### New Pages
-
-- [SKU features and limits](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-skus)
-- [Artifact cache overview](https://learn.microsoft.com/en-us/azure/container-registry/artifact-cache-overview)
-- [Artifact cache wildcard support](https://learn.microsoft.com/en-us/azure/container-registry/wildcards-artifact-cache)
-- [Transfer artifacts - Overview (preview)](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-transfer-prerequisites)
-- [Transfer artifacts with Az CLI](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-transfer-cli)
-- [Transfer artifacts with ARM templates](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-transfer-arm-template)
-- [Troubleshoot transfer artifacts](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-transfer-troubleshooting)
-- [RBAC overview](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-rbac-built-in-roles-overview)
-- [Restrict access using private endpoint](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-private-endpoints)
-- [Access behind a firewall](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-firewall-rules)
-- [Dedicated data endpoints](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-dedicated-data-endpoints)
-- [Endpoint reference](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-endpoint-reference)
-- [Troubleshoot customer managed keys](https://learn.microsoft.com/en-us/azure/container-registry/tutorial-troubleshoot-customer-managed-keys)
-- [Signing and verification overview](https://learn.microsoft.com/en-us/azure/container-registry/overview-sign-verify-artifacts)
-
 ### Updated Pages
 
-- [Registries, repositories, and images](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-concepts)
-  - Updated: 2026-03-25T06:03:00.000Z → 2026-03-25T08:00:00.000Z
-- [Geo-replication](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-geo-replication)
-  - Updated: 2026-03-20T22:12:00.000Z → 2026-06-02T20:13:00.000Z
-
-### Deleted Pages
-
-- ~~Overview~~ (https://learn.microsoft.com/en-us/azure/container-registry/artifact-cache-overview)
-- ~~Mitigate data exfiltration~~ (https://learn.microsoft.com/en-us/azure/container-registry/container-registry-dedicated-data-endpoints)
-- ~~Access behind a firewall~~ (https://learn.microsoft.com/en-us/azure/container-registry/container-registry-firewall-access-rules)
-- ~~Restrict access using private endpoint~~ (https://learn.microsoft.com/en-us/azure/container-registry/container-registry-private-link)
-- ~~Overview~~ (https://learn.microsoft.com/en-us/azure/container-registry/container-registry-rbac-built-in-roles-overview)
-- ~~Container registry tiers and limits~~ (https://learn.microsoft.com/en-us/azure/container-registry/container-registry-skus)
-- ~~ACR Transfer with ARM templates~~ (https://learn.microsoft.com/en-us/azure/container-registry/container-registry-transfer-arm-template)
-- ~~ACR Transfer with Az CLI~~ (https://learn.microsoft.com/en-us/azure/container-registry/container-registry-transfer-cli)
-- ~~Overview and prerequisites~~ (https://learn.microsoft.com/en-us/azure/container-registry/container-registry-transfer-prerequisites)
-- ~~Troubleshooting~~ (https://learn.microsoft.com/en-us/azure/container-registry/container-registry-transfer-troubleshooting)
-- ~~Overview of Ensuring Integrity and Authenticity for Container Images and OCI Artifacts~~ (https://learn.microsoft.com/en-us/azure/container-registry/overview-sign-verify-artifacts)
-- ~~Troubleshoot~~ (https://learn.microsoft.com/en-us/azure/container-registry/tutorial-troubleshoot-customer-managed-keys)
-- ~~Wildcard support~~ (https://learn.microsoft.com/en-us/azure/container-registry/wildcards-artifact-cache)
+- [FAQ](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-faq)
+  - Updated: 2026-02-10T12:03:00.000Z → 2026-06-12T06:03:00.000Z
 
 ## Classified Pages
 
@@ -170,7 +136,7 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/container-registry/policy-reference) | security | 0.70 | Index of ACR-specific Azure Policy built-ins with names and links to definitions; these are concrete security/governance configurations unique to the product. |
 | [Customer managed keys - Overview](https://learn.microsoft.com/en-us/azure/container-registry/tutorial-customer-managed-keys) | security | 0.70 | Tutorial on customer-managed keys for ACR Premium; likely includes Key Vault integration details and ACR-specific encryption settings. |
 | [Enable artifact cache - CLI](https://learn.microsoft.com/en-us/azure/container-registry/artifact-cache-cli) | configuration | 0.70 | CLI-focused article for enabling artifact cache with/without auth; likely includes specific parameters and allowed values for configuration. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-faq) | troubleshooting | 0.70 | FAQ for Azure Container Registry typically includes specific error messages, known issues, and their resolutions (for example, push/pull failures, authentication problems, SKU-specific behaviors). This is organized around concrete problems and fixes, which matches the troubleshooting pattern more than general overview content. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-faq) | troubleshooting | 0.70 | FAQ for Azure Container Registry typically includes specific error messages, known issues, and their resolutions (for example, login/pull/push failures, permission errors, region/replication issues). The summary explicitly mentions known issues and points to troubleshooting guidance, indicating symptom → cause → solution style content that is product-specific rather than conceptual. |
 | [Import container images](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-import-images) | integrations | 0.70 | Describes ACR-specific import operations via Azure APIs, including supported scenarios and parameters for copying images and artifacts. |
 | [Kubernetes authentication scenarios](https://learn.microsoft.com/en-us/azure/container-registry/authenticate-kubernetes-options) | decision-making | 0.70 | Compares multiple auth mechanisms for different Kubernetes environments and scenarios; helps choose between options with scenario-based guidance, fitting decision-making. |
 | [Lock container images](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-image-lock) | configuration | 0.70 | Describes using az acr repository update to set attributes that prevent deletion/overwrite; involves specific CLI parameters and behavior unique to ACR, fitting configuration. |

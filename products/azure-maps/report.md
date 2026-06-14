@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-17'
+generated_at: '2026-06-14'
 category_descriptions:
   integrations: Patterns and code for integrating Azure Maps into web/mobile/Power
     BI apps, using REST/SDKs, layers, drawing, search/routing/weather, Spatial IO,
@@ -49,8 +49,8 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 147
+- **Updated Pages**: 1
+- **Unchanged**: 146
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-maps/azure-maps.csv`
 
@@ -69,6 +69,11 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | *(Unclassified)* | 32 | 21.8% |
 
 ## Changes
+
+### Updated Pages
+
+- [Add a reference layer](https://learn.microsoft.com/en-us/azure/azure-maps/power-bi-visual-add-reference-layer)
+  - Updated: 2025-01-17T08:00:00.000Z → 2026-06-12T05:19:00.000Z
 
 ## Classified Pages
 
@@ -214,7 +219,7 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | [Weather service concepts](https://learn.microsoft.com/en-us/azure/azure-maps/weather-services-concepts) | 0.30 | Conceptual introduction to weather service; likely high-level concepts rather than detailed configuration or limits. |
 | [Azure Maps glossary](https://learn.microsoft.com/en-us/azure/azure-maps/glossary) | 0.25 | Glossary of terms; definitional, not expert configuration, limits, or troubleshooting content. |
 | [Provide data feedback](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-use-feedback-tool) | 0.25 | Feedback tool article is about reporting map data issues; process-oriented, not about configuration, limits, or troubleshooting of the platform itself. |
-| [Add a reference layer](https://learn.microsoft.com/en-us/azure/azure-maps/power-bi-visual-add-reference-layer) | 0.20 | Reference layer usage description is high-level and focused on formats; no detailed configuration tables, limits, or troubleshooting mappings indicated. |
+| [Add a reference layer](https://learn.microsoft.com/en-us/azure/azure-maps/power-bi-visual-add-reference-layer) | 0.20 | Page describes how to add and use a reference layer in the Azure Maps Power BI visual, but based on the summary it appears to be a feature-usage/how-to article without numeric limits, configuration parameter tables, error-code troubleshooting, or decision matrices. It does not match any expert-knowledge sub-skill criteria. |
 | [Create a store locator](https://learn.microsoft.com/en-us/azure/azure-maps/tutorial-create-store-locator) | 0.20 | Store locator tutorial; step-by-step app creation, not deep configuration, limits, or troubleshooting content. |
 | [Create a web app](https://learn.microsoft.com/en-us/azure/azure-maps/quick-demo-map-app) | 0.20 | Quickstart tutorial for building an interactive map; primarily step-by-step usage, not configuration matrices, limits, or troubleshooting. |
 | [Geographic coverage](https://learn.microsoft.com/en-us/azure/azure-maps/geographic-coverage) | 0.20 | Described as providing links to geographic coverage information. Likely a navigation/overview page pointing to external coverage details rather than containing concrete limits, configuration parameters, or decision matrices itself. Does not clearly match any expert-knowledge sub-skill type from the summary. |

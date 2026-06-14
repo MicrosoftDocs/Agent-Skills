@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Backup (use azure-backup), Azure Migrate (use 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 200
+- **Updated Pages**: 0
+- **Unchanged**: 202
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-site-recovery/azure-site-recovery.csv`
 
@@ -75,13 +75,6 @@ confusable_not_for: Not for Azure Backup (use azure-backup), Azure Migrate (use 
 | *(Unclassified)* | 72 | 35.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [About Site Recovery](https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-overview)
-  - Updated: 2026-05-13T08:00:00.000Z → 2026-06-04T08:00:00.000Z
-- [Feature releases](https://learn.microsoft.com/en-us/azure/site-recovery/feature-updates-whats-new)
-  - Updated: 2026-05-26T12:00:00.000Z → 2026-06-03T08:00:00.000Z
 
 ## Classified Pages
 

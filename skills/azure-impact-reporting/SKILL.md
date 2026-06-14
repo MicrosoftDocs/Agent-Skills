@@ -3,7 +3,7 @@ name: azure-impact-reporting
 description: Expert knowledge for Azure Impact Reporting development including troubleshooting, configuration, and integrations & coding patterns. Use when wiring Impact Reporting to Monitor alerts, Logic Apps, Service Health, HPC Guest Health, or impact categories, and other Azure Impact Reporting related development tasks. Not for Azure Carbon Optimization (use azure-carbon-optimization), Azure Cost Management (use azure-cost-management), Azure Monitor (use azure-monitor).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-31"
+  generated_at: "2026-06-14"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Impact Reporting Skill

@@ -1,9 +1,9 @@
 ---
 name: azure-managed-applications
-description: Expert knowledge for Azure Managed Applications development including limits & quotas, security, configuration, and deployment. Use when designing createUiDefinition UIs, JIT access, managed identities, Key Vault/CMK, StorageAccountSelector, or Bicep-based catalog deployments, and other Azure Managed Applications related development tasks. Not for Azure Lighthouse (use azure-lighthouse), Azure Partner Solutions (use azure-partner-solutions), Azure Resource Manager (use azure-resource-manager), Azure Blueprints (use azure-blueprints).
+description: Expert knowledge for Azure Managed Applications development including limits & quotas, security, configuration, and deployment. Use when designing createUiDefinition UIs, JIT access, managed identities, StorageAccountSelector, or Bicep-based catalog publishing, and other Azure Managed Applications related development tasks. Not for Azure Blueprints (use azure-blueprints), Azure Resource Manager (use azure-resource-manager), Azure Lighthouse (use azure-lighthouse), Azure Partner Solutions (use azure-partner-solutions).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-06-14"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Managed Applications Skill
@@ -26,7 +26,7 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Limits & Quotas | L32-L37 | Guidance on storage-related limits: using StorageAccountSelector with naming rules and configuring external storage for large managed application definition packages. |
 | Security | L38-L49 | Security and access control for managed apps: JIT access, Azure Policy associations, managed identities (incl. cross-tenant), Key Vault/CMK use, and avoiding hardcoded credentials. |
-| Configuration | L50-L94 | Designing and configuring managed application UI and deployment: createUiDefinition.json, UI elements, functions, parameters, networking, policies, webhooks, and template/view references. |
+| Configuration | L50-L94 | Designing and configuring managed app deployments: createUiDefinition UI schema, functions, built-in controls, networking/VNet use, policies, webhooks, and ARM template/view references. |
 | Deployment | L95-L99 | Creating and publishing Azure Managed Application definitions using Bicep and deploying them into an internal service catalog for reuse. |
 
 ### Limits & Quotas
@@ -58,9 +58,9 @@ This skill requires **network access** to fetch documentation content:
 | Use math functions in UI definitions | https://learn.microsoft.com/en-us/azure/azure-resource-manager/managed-applications/create-ui-definition-math-functions |
 | Use referencing functions in UI definitions | https://learn.microsoft.com/en-us/azure/azure-resource-manager/managed-applications/create-ui-definition-referencing-functions |
 | Use string functions in UI definitions | https://learn.microsoft.com/en-us/azure/azure-resource-manager/managed-applications/create-ui-definition-string-functions |
-| Configure elements in createUiDefinition.json | https://learn.microsoft.com/en-us/azure/azure-resource-manager/managed-applications/create-uidefinition-elements |
+| Use CreateUiDefinition elements in Azure portal UIs | https://learn.microsoft.com/en-us/azure/azure-resource-manager/managed-applications/create-uidefinition-elements |
 | Use functions in createUiDefinition.json | https://learn.microsoft.com/en-us/azure/azure-resource-manager/managed-applications/create-uidefinition-functions |
-| Author createUiDefinition.json for managed apps | https://learn.microsoft.com/en-us/azure/azure-resource-manager/managed-applications/create-uidefinition-overview |
+| Author createUiDefinition.json for Azure managed apps | https://learn.microsoft.com/en-us/azure/azure-resource-manager/managed-applications/create-uidefinition-overview |
 | Configure managed apps to use existing virtual networks | https://learn.microsoft.com/en-us/azure/azure-resource-manager/managed-applications/existing-vnet-integration |
 | Configure Microsoft.Common.CheckBox UI element | https://learn.microsoft.com/en-us/azure/azure-resource-manager/managed-applications/microsoft-common-checkbox |
 | Configure Microsoft.Common.DropDown UI element | https://learn.microsoft.com/en-us/azure/azure-resource-manager/managed-applications/microsoft-common-dropdown |

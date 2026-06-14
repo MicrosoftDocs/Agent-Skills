@@ -1,9 +1,9 @@
 ---
 name: azure-files
-description: Expert knowledge for Azure Files development including best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Azure Files shares, Azure File Sync, private endpoints/VPN, identity-based SMB/NFS, or RAG app integrations, and other Azure Files related development tasks. Not for Azure Blob Storage (use azure-blob-storage), Azure NetApp Files (use azure-netapp-files), Azure Managed Lustre (use azure-managed-lustre), Azure Container Storage (use azure-container-storage).
+description: Expert knowledge for Azure Files development including best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Azure Files/File Sync, private endpoints/VPN, AD/Kerberos auth, SMB/NFS shares, or RAG over file data, and other Azure Files related development tasks. Not for Azure Blob Storage (use azure-blob-storage), Azure NetApp Files (use azure-netapp-files).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-07"
+  generated_at: "2026-06-14"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Files Skill
@@ -25,12 +25,12 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Best Practices | L35-L50 | Disaster recovery, lifecycle, and performance best practices for Azure Files and Azure File Sync, including failover planning, server replacement, large directory handling, and VDI/FSLogix tuning |
-| Decision Making | L51-L71 | Guidance on planning Azure Files and File Sync deployments, choosing tiers, redundancy, billing/cost models, and selecting or migrating to the right file share and application approach. |
+| Decision Making | L51-L71 | Guidance on planning Azure Files deployments, choosing tiers, redundancy, billing/cost models, and migration/Sync strategies (Windows, Linux, SMB/NFS, NetApp Files) for optimal design and pricing |
 | Limits & Quotas | L72-L79 | Scalability, performance, and quota limits for Azure Files and File Sync, including tiers, API throttling behavior, and FAQs on supported sizes, IOPS, and throughput. |
-| Security | L80-L108 | Securing Azure Files: identity-based SMB/NFS auth, Kerberos/AD/Entra integration, encryption, TLS, firewalls, endpoints, permissions, and network security configuration. |
-| Configuration | L109-L135 | Configuring Azure Files and Azure File Sync: networking/VPN and private endpoints, performance and redundancy, cloud tiering, DFS integration, monitoring/alerts, and management via PowerShell/Arc. |
-| Integrations & Coding Patterns | L136-L158 | Patterns and code to build RAG apps over Azure Files using Haystack, LangChain, LlamaIndex, and vector DBs (Pinecone/Qdrant/Weaviate), plus .NET/Java/Python integration and auth. |
-| Deployment | L159-L170 | Guides for migrating and syncing data to Azure Files/Azure File Sync from NAS, Linux, GlusterFS, SMB/NFS shares, and moving File Sync resources safely across scopes. |
+| Security | L80-L108 | Securing Azure Files: identity/Kerberos/AD auth (SMB/NFS), NTFS/share permissions, encryption, TLS, endpoints, firewalls/proxies, and network perimeter configuration. |
+| Configuration | L109-L134 | Configuring Azure Files and Azure File Sync: networking/VPN and private endpoints, performance and redundancy, cloud tiering, DFS integration, monitoring/alerts, and management via PowerShell/Arc. |
+| Integrations & Coding Patterns | L135-L157 | Patterns and code to build RAG apps over Azure Files using Haystack, LangChain, LlamaIndex, and vector DBs (Pinecone/Qdrant/Weaviate), plus .NET/Java/Python integration and auth. |
+| Deployment | L158-L169 | Guides for migrating and syncing data to Azure Files/Azure File Sync from NAS, Linux, GlusterFS, SMB/NFS shares, and moving File Sync resources safely across scopes. |
 
 ### Best Practices
 | Topic | URL |
@@ -55,7 +55,7 @@ This skill requires **network access** to fetch documentation content:
 | Plan and choose an Azure File Sync deployment | https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-planning |
 | Choose and configure Azure File Sync server endpoints | https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-server-endpoint-create |
 | Choose and create Azure classic file shares by tier | https://learn.microsoft.com/en-us/azure/storage/files/create-classic-file-share |
-| Decide when to use Microsoft.FileShares for Azure Files | https://learn.microsoft.com/en-us/azure/storage/files/create-file-share |
+| Decide when to use Microsoft.FileShares file shares | https://learn.microsoft.com/en-us/azure/storage/files/create-file-share |
 | Estimate Azure Files costs across billing models | https://learn.microsoft.com/en-us/azure/storage/files/file-estimate-cost |
 | Choose Azure Files redundancy options for durability | https://learn.microsoft.com/en-us/azure/storage/files/files-redundancy |
 | Reduce Azure Files costs using reservations | https://learn.microsoft.com/en-us/azure/storage/files/files-reserve-capacity |
@@ -100,7 +100,7 @@ This skill requires **network access** to fetch documentation content:
 | Assign share-level permissions for Azure Files SMB | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-assign-share-level-permissions |
 | Use Entra Domain Services auth with Azure Files | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-auth-domain-services-enable |
 | Configure cloud trust between AD DS and Entra ID for Azure Files | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-auth-hybrid-cloud-trust |
-| Enable Microsoft Entra Kerberos for Azure Files | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-auth-hybrid-identities-enable |
+| Configure Entra Kerberos authentication for Azure Files | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-auth-hybrid-identities-enable |
 | Configure Kerberos auth for Linux Azure Files clients | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-auth-linux-kerberos-enable |
 | Configure NTFS ACL permissions for Azure file shares | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-configure-file-level-permissions |
 | Configure Azure Files with multiple AD DS forests | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-multiple-forests |
@@ -121,7 +121,6 @@ This skill requires **network access** to fetch documentation content:
 | Analyze Azure Files performance metrics with Azure Monitor | https://learn.microsoft.com/en-us/azure/storage/files/analyze-files-metrics |
 | Change redundancy configuration for Azure Files accounts | https://learn.microsoft.com/en-us/azure/storage/files/files-change-redundancy-configuration |
 | Integrate DFS Namespaces with Azure file shares | https://learn.microsoft.com/en-us/azure/storage/files/files-manage-namespaces |
-| Create Azure Monitor alerts for Azure Files health | https://learn.microsoft.com/en-us/azure/storage/files/files-monitoring-alerts |
 | Copy files between Azure file shares with tools | https://learn.microsoft.com/en-us/azure/storage/files/migrate-files-between-shares |
 | Configure size and performance of Azure file shares | https://learn.microsoft.com/en-us/azure/storage/files/modify-file-share |
 | Configure Linux point-to-site VPN for Azure Files access | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-configure-p2s-vpn-linux |

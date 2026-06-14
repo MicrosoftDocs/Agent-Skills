@@ -1,9 +1,9 @@
 ---
 name: azure-iot-operations
-description: Expert knowledge for Azure IoT Operations development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building MQTT/Kafka data flows, WASM/ONNX transforms, OPC UA connectors, ADX/Fabric sinks, or Arc deployments, and other Azure IoT Operations related development tasks. Not for Azure IoT (use azure-iot), Azure IoT Hub (use azure-iot-hub), Azure IoT Edge (use azure-iot-edge), Azure IoT Central (use azure-iot-central).
+description: Expert knowledge for Azure IoT Operations development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building MQTT data flows, WASM/ONNX transforms, OPC UA connectors, state store usage, or Arc-based deployments, and other Azure IoT Operations related development tasks. Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Central (use azure-iot-central), Azure IoT Edge (use azure-iot-edge), Azure Defender For Iot (use azure-defender-for-iot).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-07"
+  generated_at: "2026-06-14"
   generator: "docs2skills/1.0.0"
 ---
 # Azure IoT Operations Skill
@@ -24,14 +24,14 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L36-L44 | Diagnosing and fixing Azure IoT Operations issues: deployment/config errors, private networking problems, module debugging in VS Code, health reason codes, and known issues/workarounds. |
-| Best Practices | L45-L50 | Guidance for production-ready Azure IoT Operations deployments and patterns for building highly available, resilient edge applications using the Azure MQTT broker. |
-| Decision Making | L51-L61 | Guidance on choosing data flow models, sizing and topology for production deployments, and planning MQTT broker diagnostics, buffering, persistence, and advanced client options. |
-| Limits & Quotas | L62-L67 | Planning baseline resource and capacity needs for Azure IoT Operations, and reviewing supported MQTT features, limits, and control capabilities in the broker. |
-| Security | L68-L85 | Securing Azure IoT Operations: TLS/mutual TLS, MQTT authz/authn, OPC UA certs, private networking, RBAC/ABAC, secret and cert management, and image validation. |
-| Configuration | L86-L128 | Configuring and managing Azure IoT Operations data flows, endpoints, routing, schemas, persistence, connectors, and observability/metrics for MQTT, Kafka, ADX, Fabric, storage, and media. |
-| Integrations & Coding Patterns | L129-L143 | Patterns for building IoT data flows: WASM transforms, ONNX inference, schema validation, state store usage, OPC UA/Akri connectors, and windowed aggregations. |
-| Deployment | L144-L155 | Deploying, upgrading, cloning, and removing Azure IoT Operations on Arc-enabled Kubernetes, including secure production/test setups, private networks, WASM/graph deployment, and lifecycle management. |
+| Troubleshooting | L36-L44 | Diagnosing and fixing Azure IoT Operations issues: WASM module debugging, private network connectivity, health reason codes, known bugs/workarounds, and deployment/runtime failures. |
+| Best Practices | L45-L51 | Production-ready guidance for Azure IoT Operations: deployment patterns, high availability design for the MQTT broker, and using the state store for durable, persistent edge data. |
+| Decision Making | L52-L63 | Guidance on designing Azure IoT Operations deployments: choosing data flows vs graphs, sizing and topology, and planning MQTT broker endpoints, buffering, persistence, and diagnostics. |
+| Limits & Quotas | L64-L69 | Planning baseline resource and capacity needs for Azure IoT Operations, and reviewing supported MQTT features, limits, and control capabilities in the broker. |
+| Security | L70-L87 | Securing Azure IoT Operations: TLS/cert management, MQTT authz/authn and encryption, OPC UA trust, private connectivity, RBAC, secrets handling, and image validation. |
+| Configuration | L88-L127 | Configuring IoT Operations data flows, endpoints, routing, transforms, schemas, connectors, storage, and observability/metrics for MQTT, Kafka, ADX, Fabric, Data Lake, and more. |
+| Integrations & Coding Patterns | L128-L142 | Patterns for building IoT data flows: WASM transforms, ONNX inference, schema validation, state store usage, OPC UA/Akri connectors, and windowed aggregations. |
+| Deployment | L143-L154 | Installing, configuring, upgrading, cloning, and removing Azure IoT Operations on Arc-enabled Kubernetes, including secure production, test, private-network, and WASM/graph deployments. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -40,17 +40,19 @@ This skill requires **network access** to fetch documentation content:
 | Troubleshoot private connectivity in Azure IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/manage-layered-network/howto-troubleshoot-private-connectivity |
 | Interpret Azure IoT Operations health reason codes | https://learn.microsoft.com/en-us/azure/iot-operations/reference/health-status-reason-codes |
 | Known issues and workarounds for Azure IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/troubleshoot/known-issues |
-| Troubleshoot Azure IoT Operations deployments and configuration | https://learn.microsoft.com/en-us/azure/iot-operations/troubleshoot/troubleshoot |
+| Troubleshoot deployment and runtime issues in Azure IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/troubleshoot/troubleshoot |
 
 ### Best Practices
 | Topic | URL |
 |-------|-----|
-| Apply production deployment guidelines for IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/deploy-iot-ops/concept-production-guidelines |
-| Design highly available edge apps with Azure MQTT broker | https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/overview-edge-apps |
+| Apply production deployment guidelines for Azure IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/deploy-iot-ops/concept-production-guidelines |
+| Design highly available edge apps with Azure IoT Operations MQTT broker | https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/overview-edge-apps |
+| Use Azure IoT Operations state store for persistent edge data | https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/overview-state-store |
 
 ### Decision Making
 | Topic | URL |
 |-------|-----|
+| Choose and configure Azure IoT Operations data flow endpoints | https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/howto-configure-dataflow-endpoint |
 | Choose between data flows and data flow graphs in Azure IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/overview-dataflow-comparison |
 | Use Azure IoT Operations production deployment sizing examples | https://learn.microsoft.com/en-us/azure/iot-operations/deploy-iot-ops/concept-production-examples |
 | Plan Azure IoT Operations deployment topology and sizing | https://learn.microsoft.com/en-us/azure/iot-operations/deployment-plan/deployment-planning |
@@ -71,10 +73,10 @@ This skill requires **network access** to fetch documentation content:
 | Configure custom certificate issuer for IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/deploy-iot-ops/howto-bring-your-own-issuer |
 | Plan internal traffic encryption for MQTT broker pods | https://learn.microsoft.com/en-us/azure/iot-operations/deployment-plan/deployment-planning-encryption |
 | Configure OPC UA certificate trust for IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/howto-configure-opc-ua-certificates-infrastructure |
-| Manage OPC UA application certificates for Azure IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/overview-opc-ua-connector-certificates-management |
+| Configure OPC UA certificate trust for Azure IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/overview-opc-ua-connector-certificates-management |
 | Configure private connectivity for Azure IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/manage-layered-network/howto-private-connectivity |
 | Configure MQTT broker authentication in Azure IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/manage-mqtt-broker/howto-configure-authentication |
-| Configure MQTT broker authorization policies in Azure IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/manage-mqtt-broker/howto-configure-authorization |
+| Configure MQTT broker authorization in Azure IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/manage-mqtt-broker/howto-configure-authorization |
 | Secure MQTT broker endpoints with BrokerListener configuration | https://learn.microsoft.com/en-us/azure/iot-operations/manage-mqtt-broker/howto-configure-brokerlistener |
 | Configure TLS, X.509 auth, and ABAC for IoT MQTT | https://learn.microsoft.com/en-us/azure/iot-operations/manage-mqtt-broker/tutorial-tls-x509 |
 | Define custom RBAC roles for IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/reference/custom-rbac |
@@ -88,30 +90,27 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Configure input and output schemas on data flow graph node connections | https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/concept-dataflow-graphs-schema |
 | Use Azure IoT Operations schema registry with data flows | https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/concept-schema-registry |
-| Configure Azure Data Lake Gen2 endpoints for IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/howto-configure-adlsv2-endpoint |
-| Configure Azure Data Explorer endpoints for IoT Operations data flows | https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/howto-configure-adx-endpoint |
+| Configure Azure Data Lake Gen2 endpoints for IoT Operations data flows | https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/howto-configure-adlsv2-endpoint |
+| Configure Azure Data Explorer endpoints for Azure IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/howto-configure-adx-endpoint |
 | Configure destinations and dynamic routing for Azure IoT Operations data flows | https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/howto-configure-dataflow-destination |
-| Configure Azure IoT Operations data flow endpoints | https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/howto-configure-dataflow-endpoint |
-| Configure data flow profiles in Azure IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/howto-configure-dataflow-profile |
+| Configure data flow profiles for Azure IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/howto-configure-dataflow-profile |
 | Configure data flow sources and topic subscriptions in IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/howto-configure-dataflow-source |
 | Configure buffering and disk persistence for IoT data flows | https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/howto-configure-disk-persistence |
-| Configure Microsoft Fabric OneLake data flow endpoints | https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/howto-configure-fabric-endpoint |
-| Configure Fabric Real-Time Intelligence endpoints for IoT data | https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/howto-configure-fabric-real-time-intelligence |
-| Configure Kafka and Event Hubs data flow endpoints | https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/howto-configure-kafka-endpoint |
-| Configure local storage data flow endpoints in IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/howto-configure-local-storage-endpoint |
+| Configure Microsoft Fabric OneLake endpoints in Azure IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/howto-configure-fabric-endpoint |
+| Configure Fabric Real-Time Intelligence endpoints for IoT data flows | https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/howto-configure-fabric-real-time-intelligence |
+| Configure Kafka and Event Hubs endpoints for Azure IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/howto-configure-kafka-endpoint |
+| Configure local storage data flow endpoints in Azure IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/howto-configure-local-storage-endpoint |
 | Configure MQTT data flow endpoints in Azure IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/howto-configure-mqtt-endpoint |
-| Create and configure data flows in Azure IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/howto-create-dataflow |
 | Create and configure data flow graphs in Azure IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/howto-create-dataflow-graph |
 | Configure filter stages in Azure IoT Operations data flows | https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/howto-dataflow-filter |
 | Configure enrichment with external datasets in data flow graphs | https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/howto-dataflow-graphs-enrich |
 | Configure map transforms in Azure IoT Operations data flow graphs | https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/howto-dataflow-graphs-map |
 | Configure dynamic MQTT topic routing in data flow graphs | https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/howto-dataflow-graphs-topic-routing |
-| Configure OpenTelemetry endpoints for Azure IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/open-telemetry |
+| Configure OpenTelemetry endpoints for metrics and logs in Azure IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/open-telemetry |
 | Configure unified health status reporting to Azure | https://learn.microsoft.com/en-us/azure/iot-operations/deploy-iot-ops/health-status-reporting |
 | Deploy and configure observability for IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/deploy-iot-ops/howto-configure-observability |
-| Configure container registry endpoints for IoT data flows | https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/howto-configure-registry-endpoint |
+| Configure container registry endpoints for Azure IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/howto-configure-registry-endpoint |
 | Configure WebAssembly graph definitions for IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/howto-configure-wasm-graph-definitions |
-| Use MQTT broker state store for data persistence | https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/overview-state-store |
 | Configure and manage Azure IoT connector templates | https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/howto-manage-connector-templates |
 | Configure HTTP/REST connector assets and devices | https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/howto-use-http-connector |
 | Configure media connector assets and devices in Azure IoT | https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/howto-use-media-connector |
@@ -148,7 +147,7 @@ This skill requires **network access** to fetch documentation content:
 | Deploy Azure IoT Operations securely to production clusters | https://learn.microsoft.com/en-us/azure/iot-operations/deploy-iot-ops/howto-deploy-iot-operations |
 | Deploy Azure IoT Operations to a test cluster | https://learn.microsoft.com/en-us/azure/iot-operations/deploy-iot-ops/howto-deploy-iot-test-operations |
 | Prepare Arc-enabled Kubernetes clusters for IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/deploy-iot-ops/howto-prepare-cluster |
-| Deploy WASM modules and graph definitions in IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/howto-deploy-wasm-graph-definitions |
+| Deploy WASM modules and graph definitions in Azure IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/howto-deploy-wasm-graph-definitions |
 | Deploy Azure IoT Operations in layered private networks | https://learn.microsoft.com/en-us/azure/iot-operations/end-to-end-tutorials/tutorial-layered-network-private-connectivity |
 | Clone Azure IoT Operations instances using CLI | https://learn.microsoft.com/en-us/azure/iot-operations/manage-iot-ops/howto-clone-instance |
 | Manage, update, and uninstall Azure IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/manage-iot-ops/howto-manage-update-uninstall |

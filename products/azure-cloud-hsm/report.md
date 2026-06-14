@@ -1,9 +1,8 @@
 ---
-generated_at: '2026-05-17'
+generated_at: '2026-06-14'
 category_descriptions:
-  security: 'Security, auth, and auditing for Cloud HSM: configuring auth methods,
-    hardening network access, managing users securely, and routing/querying HSM operation
-    logs via Event Hubs.'
+  security: 'Security best practices for Azure Cloud HSM: auth methods, user management,
+    network hardening, and configuring/using operation logs and Event Hubs log routing.'
   best-practices: Guidance on secure key lifecycle management, HSM partition/role
     design, access control, network and operational hardening, and compliance-oriented
     security practices for Azure Cloud HSM deployments.
@@ -16,13 +15,12 @@ category_descriptions:
     and operational faults.
 skill_description: Expert knowledge for Azure Cloud Hsm development including troubleshooting,
   best practices, limits & quotas, security, and integrations & coding patterns. Use
-  when configuring Cloud HSM auth/network, PKCS#11 app integration, key lifecycle,
-  quotas, or cluster issues, and other Azure Cloud Hsm related development tasks.
-  Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure Payment Hsm (use azure-payment-hsm),
+  when configuring auth, key lifecycle, PKCS#11 cert storage, Event Hubs logging,
+  or checking HSM limits, and other Azure Cloud Hsm related development tasks. Not
+  for Azure Dedicated HSM (use azure-dedicated-hsm), Azure Payment Hsm (use azure-payment-hsm),
   Azure Key Vault (use azure-key-vault), Azure Attestation (use azure-attestation).
-use_when: Use when configuring Cloud HSM auth/network, PKCS#11 app integration, key
-  lifecycle, quotas, or cluster issues, and other Azure Cloud Hsm related development
-  tasks.
+use_when: Use when configuring auth, key lifecycle, PKCS#11 cert storage, Event Hubs
+  logging, or checking HSM limits, and other Azure Cloud Hsm related development tasks.
 confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure Payment
   Hsm (use azure-payment-hsm), Azure Key Vault (use azure-key-vault), Azure Attestation
   (use azure-attestation).
@@ -39,8 +37,8 @@ confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 20
+- **Updated Pages**: 1
+- **Unchanged**: 19
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cloud-hsm/azure-cloud-hsm.csv`
 
@@ -57,6 +55,11 @@ confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure
 
 ## Changes
 
+### Updated Pages
+
+- [Frequently asked questions](https://learn.microsoft.com/en-us/azure/cloud-hsm/faq)
+  - Updated: 2026-04-01T17:22:00.000Z → 2026-06-12T22:35:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
@@ -71,9 +74,9 @@ confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure
 | [Authentication](https://learn.microsoft.com/en-us/azure/cloud-hsm/authentication) | security | 0.75 | Describes authentication methods (CLI, PKCS#11, JCE, OpenSSL) and best practices, implying product-specific auth configuration and secure session handling guidance. |
 | [Synchronize users and keys across nodes](https://learn.microsoft.com/en-us/azure/cloud-hsm/synchronize-users-keys) | troubleshooting | 0.75 | Explicitly focuses on identifying and resolving synchronization issues for users/keys across cluster nodes, implying symptom-to-cause-to-solution guidance specific to Cloud HSM. |
 | [Certificate storage](https://learn.microsoft.com/en-us/azure/cloud-hsm/tutorial-certificate-storage) | integrations | 0.70 | Covers configuring certificate storage using PKCS#11 plus Azure Blob Storage and Managed Identity; likely includes product-specific configuration parameters and integration patterns. |
+| [Frequently asked questions](https://learn.microsoft.com/en-us/azure/cloud-hsm/faq) | security | 0.70 | FAQ for a security-focused service (Cloud HSM) typically includes product-specific security and compliance details, such as supported standards, key isolation guarantees, operational boundaries, and possibly role/permission behaviors that go beyond generic concepts. While it’s an FAQ (and may mix conceptual and billing info), Cloud HSM usage and security/compliance answers are likely to contain expert, product-specific security knowledge not inferable from general training. |
 | [Network Security](https://learn.microsoft.com/en-us/azure/cloud-hsm/network-security) | security | 0.70 | Network security guidance for Cloud HSM likely includes specific NSG rules, private endpoint patterns, and other product-specific security configurations. |
 | [Operation event logging](https://learn.microsoft.com/en-us/azure/cloud-hsm/tutorial-operation-event-logging) | security | 0.70 | Tutorial shows product-specific configuration of operation event logging to Log Analytics, including concrete diagnostic setting options and log categories for Azure Cloud HSM. This is detailed security/auditing configuration rather than generic logging guidance. |
-| [Frequently asked questions](https://learn.microsoft.com/en-us/azure/cloud-hsm/faq) | security | 0.68 | FAQ content for a specialized HSM service typically includes product-specific security and compliance details (for example, supported standards, key isolation behavior, FIPS level, customer responsibility boundaries, and possibly role/permission models or access patterns) that go beyond generic concepts. These are expert, service-specific behaviors and constraints that an LLM is unlikely to infer from general training data, and they are primarily security- and compliance-focused rather than limits, deployment, or architecture guidance. |
 | [Configure Event Hub for logging](https://learn.microsoft.com/en-us/azure/cloud-hsm/tutorial-configure-event-hub) | security | 0.65 | Describes how to configure Azure Monitor diagnostic settings for Cloud HSM to add Event Hubs as a destination, including specific log category (HsmServiceOperations) and destination wiring. This is product-specific logging/security configuration rather than a generic tutorial. |
 
 ## Unclassified Pages

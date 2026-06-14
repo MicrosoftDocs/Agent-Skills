@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-07'
+generated_at: '2026-06-14'
 category_descriptions:
   decision-making: 'Guidance for architectural and migration decisions in Azure ML:
     choosing algorithms, training and networking options, cost/DR strategies, and
@@ -13,9 +13,8 @@ category_descriptions:
   security: 'Securing Azure ML: encryption, keys, identity/RBAC, auth, secrets, network
     isolation/VNets, data exfil prevention, policy compliance, and securing endpoints,
     training, RAG, and prompt flows.'
-  limits-quotas: Info on Azure ML regional/sovereign availability, VM SKUs, and service
-    limits, plus how to view, plan, and manage quotas and capacity for model deployments
-    and endpoints.
+  limits-quotas: Info on Azure ML regional/sovereign availability, quotas and service
+    limits, supported VM SKUs, and how to plan deployment capacity within those constraints
   architecture-patterns: 'Designing Azure ML inference architectures: choosing endpoint
     types, planning real-time online endpoints, and structuring data movement and
     multistep pipeline components.'
@@ -32,13 +31,13 @@ skill_description: Expert knowledge for Azure Machine Learning development inclu
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
   Use when building Azure ML pipelines, AutoML jobs, online/batch endpoints, Prompt
-  Flow apps, or MLflow-based deployments, and other Azure Machine Learning related
-  development tasks. Not for Azure Databricks (use azure-databricks), Azure Synapse
-  Analytics (use azure-synapse-analytics), Azure Data Science Virtual Machines (use
-  azure-data-science-vm), Azure HDInsight (use azure-hdinsight).
+  Flow apps, or MLOps/CI-CD, and other Azure Machine Learning related development
+  tasks. Not for Azure Databricks (use azure-databricks), Azure Synapse Analytics
+  (use azure-synapse-analytics), Azure Data Science Virtual Machines (use azure-data-science-vm),
+  Azure HDInsight (use azure-hdinsight).
 use_when: Use when building Azure ML pipelines, AutoML jobs, online/batch endpoints,
-  Prompt Flow apps, or MLflow-based deployments, and other Azure Machine Learning
-  related development tasks.
+  Prompt Flow apps, or MLOps/CI-CD, and other Azure Machine Learning related development
+  tasks.
 confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synapse
   Analytics (use azure-synapse-analytics), Azure Data Science Virtual Machines (use
   azure-data-science-vm), Azure HDInsight (use azure-hdinsight).
@@ -55,8 +54,8 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 23
-- **Unchanged**: 604
+- **Updated Pages**: 1
+- **Unchanged**: 626
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-machine-learning/azure-machine-learning.csv`
 
@@ -79,47 +78,8 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 
 ### Updated Pages
 
-- [Set up end-to-end GenAIOps with prompt flow and GitHub](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/how-to-end-to-end-llmops-with-prompt-flow?view=azureml-api-2)
-  - Updated: 2026-01-13T23:15:00.000Z → 2026-04-21T16:56:00.000Z
-- [Advance your maturity level](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/concept-llmops-maturity?view=azureml-api-2)
-  - Updated: 2026-04-21T16:56:00.000Z → 2026-05-24T22:07:00.000Z
-- [Monitor generative AI applications in production](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/how-to-monitor-generative-ai-applications?view=azureml-api-2)
-  - Updated: 2025-08-26T05:08:00.000Z → 2026-04-21T16:56:00.000Z
-- [Troubleshoot prompt flow](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/troubleshoot-guidance?view=azureml-api-2)
-  - Updated: 2024-08-28T16:59:00.000Z → 2026-04-21T16:56:00.000Z
-- [Transparency note](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/transparency-note?view=azureml-api-2)
-  - Updated: 2025-11-24T08:00:00.000Z → 2026-04-21T16:56:00.000Z
-- [Troubleshoot Guidance](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/troubleshoot-guidance?view=azureml-api-2)
-  - Updated: 2024-08-28T16:59:00.000Z → 2026-04-21T16:56:00.000Z
-- [Migration overview](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/migrate-prompt-flow-to-agent-framework?view=azureml-api-2)
-  - Updated: 2026-04-21T16:56:00.000Z → 2026-05-20T17:10:00.000Z
-- [Evaluation monitoring metrics](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/concept-model-monitoring-generative-ai-evaluation-metrics?view=azureml-api-2)
-  - Updated: 2025-08-25T08:00:00.000Z → 2026-04-21T16:56:00.000Z
-- [Get started in prompt flow](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/get-started-prompt-flow?view=azureml-api-2)
-  - Updated: 2025-07-17T08:00:00.000Z → 2026-04-21T16:56:00.000Z
-- [Manage compute_session](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/how-to-manage-compute-session?view=azureml-api-2)
-  - Updated: 2025-08-26T05:08:00.000Z → 2026-04-21T16:56:00.000Z
-- [Network isolation in prompt flow](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/how-to-secure-prompt-flow?view=azureml-api-2)
-  - Updated: 2025-07-10T22:11:00.000Z → 2026-04-21T16:56:00.000Z
-- [Develop a flow](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/how-to-develop-flow?view=azureml-api-2)
-  - Updated: 2025-09-22T08:00:00.000Z → 2026-04-21T16:56:00.000Z
-- [Tune prompts using variants](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/how-to-tune-prompts-using-variants?view=azureml-api-2)
-  - Updated: 2024-08-28T16:59:00.000Z → 2026-04-21T16:56:00.000Z
-- [Incorporate images into prompt flow](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/how-to-process-image?view=azureml-api-2)
-  - Updated: 2024-08-28T16:59:00.000Z → 2026-04-21T16:56:00.000Z
-- [Submit batch run and evaluate a flow](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/how-to-bulk-test-evaluate-flow?view=azureml-api-2)
-  - Updated: 2026-02-28T08:00:00.000Z → 2026-04-21T16:56:00.000Z
-- [Customize evaluation flow and metrics](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/how-to-develop-an-evaluation-flow?view=azureml-api-2)
-  - Updated: 2026-01-13T08:00:00.000Z → 2026-04-21T16:56:00.000Z
-- [Deploy a flow to online endpoint for real-time inference with CLI](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/how-to-deploy-to-code?view=azureml-api-2)
-  - Updated: 2024-08-28T16:59:00.000Z → 2026-04-21T16:56:00.000Z
-- [Enable trace and collect feedback for a flow deployment](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/how-to-enable-trace-feedback-for-deployment?view=azureml-api-2)
-  - Updated: 2024-08-28T16:59:00.000Z → 2026-04-21T16:56:00.000Z
-- [How to use streaming endpoints deployed from prompt flow](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/how-to-enable-streaming-mode?view=azureml-api-2)
-  - Updated: 2024-08-28T16:59:00.000Z → 2026-04-21T16:56:00.000Z
-- [Git integration](https://learn.microsoft.com/en-us/azure/machine-learning/concept-train-model-git-integration?view=azureml-api-2)
-  - Updated: 2025-06-13T08:00:00.000Z → 2026-06-04T08:00:00.000Z
-- *...and 3 more*
+- [Region availability for models in Serverless API endpoints](https://learn.microsoft.com/en-us/azure/machine-learning/concept-endpoint-serverless-availability?view=azureml-api-2)
+  - Updated: 2026-03-23T08:00:00.000Z → 2026-03-24T06:06:00.000Z
 
 ## Classified Pages
 
@@ -474,7 +434,7 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 | [Query & compare experiments and runs with MLflow](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-track-experiments-mlflow?view=azureml-api-2) | configuration | 0.70 | Explains how to query and compare experiments/runs via MLflow SDK against Azure ML. Likely includes specific query patterns and workspace integration details that are product-specific. |
 | [RAG cloud to local](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-retrieval-augmented-generation-cloud-to-local?view=azureml-api-2) | deployment | 0.70 | Describes how to transition flows from cloud to local, including environment and tooling requirements—deployment/execution pattern specific to this product. |
 | [Regenerate storage access keys](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-change-storage-access-key?view=azureml-api-2) | security | 0.70 | Gives product-specific steps and considerations for changing storage keys used by Azure ML workspaces, including impact on services. |
-| [Region availability for models in Serverless API endpoints](https://learn.microsoft.com/en-us/azure/machine-learning/concept-endpoint-serverless-availability?view=azureml-api-2) | limits-quotas | 0.70 | Region availability per model is effectively a constraints matrix unique to Azure ML standard deployments. This is expert knowledge akin to a limits/availability table that an LLM would not reliably know from training and must be looked up. |
+| [Region availability for models in Serverless API endpoints](https://learn.microsoft.com/en-us/azure/machine-learning/concept-endpoint-serverless-availability?view=azureml-api-2) | limits-quotas | 0.70 | The page enumerates which specific models are available in which Azure regions for standard (serverless) deployments. This is product- and region-specific availability data that changes over time and isn't inferable from general training. While framed as availability, it effectively defines deployment constraints per region/model, which aligns best with limits-quotas among the given categories. |
 | [Regression](https://learn.microsoft.com/en-us/azure/machine-learning/component-reference-v2/regression?view=azureml-api-2) | configuration | 0.70 | Describes how to configure AutoML Regression via component parameters (primary metric, training limits, featurization options), which are specific configuration options for Azure ML. |
 | [Remove Duplicate Rows](https://learn.microsoft.com/en-us/azure/machine-learning/component-reference/remove-duplicate-rows?view=azureml-api-2) | configuration | 0.70 | Explains how to select columns and rules for identifying duplicates; product-specific configuration behavior. |
 | [Run Azure OpenAI models in batch endpoints to compute embeddings](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-use-batch-model-openai-embeddings?view=azureml-api-2) | deployment | 0.70 | Describes how to deploy Azure OpenAI models (text-embedding-ada-002) as AML batch endpoints with MLflow, including auth and endpoint configuration details. |

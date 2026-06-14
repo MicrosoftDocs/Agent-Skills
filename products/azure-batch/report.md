@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Container Instances (use azure-container-insta
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 113
+- **Updated Pages**: 0
+- **Unchanged**: 114
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-batch/azure-batch.csv`
 
@@ -75,11 +75,6 @@ confusable_not_for: Not for Azure Container Instances (use azure-container-insta
 | *(Unclassified)* | 33 | 28.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [Using application packages](https://learn.microsoft.com/en-us/azure/batch/batch-application-packages)
-  - Updated: 2026-01-12T08:00:00.000Z → 2026-06-02T20:30:00.000Z
 
 ## Classified Pages
 

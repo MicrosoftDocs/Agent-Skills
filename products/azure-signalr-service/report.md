@@ -49,9 +49,9 @@ confusable_not_for: Not for Azure Web PubSub (use azure-web-pubsub), Azure Servi
 - **Unclassified**: 13
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 5
-- **Unchanged**: 67
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 73
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-signalr-service/azure-signalr-service.csv`
 
@@ -71,23 +71,6 @@ confusable_not_for: Not for Azure Web PubSub (use azure-web-pubsub), Azure Servi
 | *(Unclassified)* | 13 | 17.8% |
 
 ## Changes
-
-### New Pages
-
-- [v20241201](https://learn.microsoft.com/en-us/azure/azure-signalr/swagger/signalr-data-plane-rest-v20241201)
-
-### Updated Pages
-
-- [Data plane](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-reference-data-plane-rest-api)
-  - Updated: 2024-08-02T08:00:00.000Z → 2026-06-05T11:44:00.000Z
-- [v20220601](https://learn.microsoft.com/en-us/azure/azure-signalr/swagger/signalr-data-plane-rest-v20220601)
-  - Updated: 2023-04-03T00:00:00.000Z → 2026-06-04T08:00:00.000Z
-- [v1](https://learn.microsoft.com/en-us/azure/azure-signalr/swagger/signalr-data-plane-rest-v1)
-  - Updated: 2022-06-20T11:05:00.000Z → 2026-06-04T08:00:00.000Z
-- [v1-preview](https://learn.microsoft.com/en-us/azure/azure-signalr/swagger/signalr-data-plane-rest-v1-preview)
-  - Updated: 2022-06-20T11:05:00.000Z → 2026-06-04T08:00:00.000Z
-- [REST API](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-quickstart-rest-api)
-  - Updated: 2024-12-11T23:02:00.000Z → 2026-06-05T11:44:00.000Z
 
 ## Classified Pages
 

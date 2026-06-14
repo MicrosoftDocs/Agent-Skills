@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-07'
+generated_at: '2026-06-14'
 category_descriptions:
   architecture-patterns: 'Architectural guidance for Azure DevOps/Server: pool architecture,
     reliability/DR, SQL/database dependencies, and design patterns for simple to complex
@@ -53,8 +53,8 @@ confusable_not_for: Not for Azure Boards (use azure-boards), Azure Pipelines (us
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 5
-- **Unchanged**: 962
+- **Updated Pages**: 3
+- **Unchanged**: 964
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-devops/azure-devops.csv`
 
@@ -77,16 +77,12 @@ confusable_not_for: Not for Azure Boards (use azure-boards), Azure Pipelines (us
 
 ### Updated Pages
 
-- [Markdown guidance](https://learn.microsoft.com/en-us/azure/devops/project/wiki/markdown-guidance?view=azure-devops)
-  - Updated: 2026-02-18T08:00:00.000Z → 2026-06-03T20:26:00.000Z
-- [Remote MCP Server](https://learn.microsoft.com/en-us/azure/devops/mcp-server/remote-mcp-server?view=azure-devops)
-  - Updated: 2026-05-13T21:07:00.000Z → 2026-06-05T17:07:00.000Z
-- [Azure Repos >>](https://learn.microsoft.com/en-us/azure/devops/repos/?view=azure-devops)
-  - Updated: 2026-02-20T22:03:00Z → 2026-06-02T18:05:00Z
-- [Configure pool settings](https://learn.microsoft.com/en-us/azure/devops/managed-devops-pools/configure-pool-settings?view=azure-devops)
-  - Updated: 2026-01-29T08:00:00.000Z → 2026-06-02T16:12:00.000Z
-- [Configure images](https://learn.microsoft.com/en-us/azure/devops/managed-devops-pools/configure-images?view=azure-devops)
-  - Updated: 2026-04-03T21:03:00.000Z → 2026-06-01T08:00:00.000Z
+- [RTW Release Notes](https://learn.microsoft.com/en-us/azure/devops/server/release-notes/azuredevopsserver?view=azure-devops)
+  - Updated: 2026-05-14T08:00:00.000Z → 2026-06-11T08:00:00.000Z
+- [SHA-256 Values](https://learn.microsoft.com/en-us/azure/devops/server/release-notes/azuredevopsserver-sha?view=azure-devops)
+  - Updated: 2026-05-14T16:26:00.000Z → 2026-06-11T21:22:00.000Z
+- [SHA-256 Values](https://learn.microsoft.com/en-us/azure/devops/server/release-notes/azuredevops2022-sha?view=azure-devops)
+  - Updated: 2026-05-14T08:00:00.000Z → 2026-06-11T08:00:00.000Z
 
 ## Classified Pages
 
@@ -372,8 +368,8 @@ confusable_not_for: Not for Azure Boards (use azure-boards), Azure Pipelines (us
 | [Rollup](https://learn.microsoft.com/en-us/azure/devops/report/powerbi/sample-boards-rollup?view=azure-devops) | 0.40 | Shows how to roll up child work item values in Power BI; provides examples but not detailed configuration parameter tables or quantified best practices. |
 | [SHA-256 Values](https://learn.microsoft.com/en-us/azure/devops/server/release-notes/azuredevops2019-sha?view=azure-devops) | 0.40 | Contains SHA-1 hashes for 2019 ISO files; these are file integrity values, not reusable expert knowledge such as limits, configuration options, or troubleshooting procedures. |
 | [SHA-256 Values](https://learn.microsoft.com/en-us/azure/devops/server/release-notes/azuredevops2020-sha?view=azure-devops) | 0.40 | Page provides SHA-1 hashes for 2020 ISO downloads; while specific, these are static checksums and do not fit any expert-knowledge sub-skill categories like limits, configuration, or troubleshooting. |
-| [SHA-256 Values](https://learn.microsoft.com/en-us/azure/devops/server/release-notes/azuredevops2022-sha?view=azure-devops) | 0.40 | Lists SHA-1/SHA-256 hashes for Azure DevOps Server 2022 media; these are file integrity values, not expert operational guidance such as limits, configuration, or error handling. |
-| [SHA-256 Values](https://learn.microsoft.com/en-us/azure/devops/server/release-notes/azuredevopsserver-sha?view=azure-devops) | 0.40 | Page primarily lists SHA-256 hashes for ISO downloads; while values are specific, they are static file checksums rather than reusable product knowledge like limits, configuration, or troubleshooting patterns. |
+| [SHA-256 Values](https://learn.microsoft.com/en-us/azure/devops/server/release-notes/azuredevops2022-sha?view=azure-devops) | 0.40 | Similar to index 1, this page lists SHA-1/SHA-256 hash values for Azure DevOps Server 2022 downloads. These are file integrity constants, not expert operational knowledge such as limits, configuration options, security roles, or troubleshooting mappings, and they do not match any sub-skill type. |
+| [SHA-256 Values](https://learn.microsoft.com/en-us/azure/devops/server/release-notes/azuredevopsserver-sha?view=azure-devops) | 0.40 | Page provides SHA-256 hash values for specific Azure DevOps Server download artifacts. While the hashes are highly specific, they are static file integrity values rather than product behavior, configuration, limits, or troubleshooting guidance. They do not fit any defined sub-skill category (no limits, configs, security roles, or decision criteria). |
 | [Security Best Practices](https://learn.microsoft.com/en-us/azure/devops/organizations/security/security-overview?view=azure-devops) | 0.40 | High-level security overview for Azure DevOps; mostly conceptual guidance on Zero Trust and network protection without detailed role names or config parameters in the summary. |
 | [Sprint burndown](https://learn.microsoft.com/en-us/azure/devops/report/powerbi/sample-boards-sprintburndown?view=azure-devops) | 0.40 | Sprint burndown sample report; includes example queries and charts but no product-specific limits, configuration parameter tables, or troubleshooting mappings. |
 | [View wiki history and revert](https://learn.microsoft.com/en-us/azure/devops/project/wiki/wiki-view-history?view=azure-devops) | 0.40 | Covers viewing wiki page history and reverting changes; mostly UI-driven without detailed error codes, limits, or configuration matrices. |
@@ -948,7 +944,7 @@ confusable_not_for: Not for Azure Boards (use azure-boards), Azure Pipelines (us
 | [Process templates](https://learn.microsoft.com/en-us/azure/devops/reference/process-templates/?view=azure-devops) | 0.20 | Overview of process templates and models; largely conceptual and navigational without detailed parameter tables or limits. |
 | [Project summary](https://learn.microsoft.com/en-us/azure/devops/organizations/projects/project-vision-status?view=azure-devops) | 0.20 | Explains the project summary page and its uses; largely conceptual and UI usage guidance without expert-level configuration, limits, or security details. |
 | [Quick reference](https://learn.microsoft.com/en-us/azure/devops/server/admin/admin-quick-ref?view=azure-devops-server) | 0.20 | Quick-reference index of admin tasks; primarily navigation without detailed limits, configs, or error mappings. |
-| [RTW Release Notes](https://learn.microsoft.com/en-us/azure/devops/server/release-notes/azuredevopsserver?view=azure-devops) | 0.20 | High-level release notes landing page; summary shows navigation links and upgrade statement but no concrete limits, configuration tables, error codes, or decision matrices. |
+| [RTW Release Notes](https://learn.microsoft.com/en-us/azure/devops/server/release-notes/azuredevopsserver?view=azure-devops) | 0.20 | Release notes landing/overview page that primarily links to other resources (system requirements, downloads, blog). The summary does not indicate concrete limits, configuration parameters, error codes, or decision matrices; it is mostly navigational and high-level information. |
 | [Released features](https://learn.microsoft.com/en-us/azure/devops/release-notes/features-timeline-released) | 0.20 | High-level release notes and feature timeline; no detailed limits, configuration tables, error codes, or product-specific decision matrices. |
 | [Rename organization](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/rename-organization?view=azure-devops) | 0.20 | Procedural guide for renaming an Azure DevOps organization; lacks numeric limits, configuration tables, security roles, or decision matrices with quantified trade-offs. |
 | [Restore a project](https://learn.microsoft.com/en-us/azure/devops/organizations/projects/delete-project?view=azure-devops) | 0.20 | Task-focused how-to for deleting and restoring Azure DevOps projects; no numeric limits, configuration tables, error-code-based troubleshooting, or product-specific best-practice details beyond generic UI steps. |

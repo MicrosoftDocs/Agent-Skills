@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-06-07'
+generated_at: '2026-06-14'
 category_descriptions:
-  troubleshooting: Diagnosing and fixing Azure Monitor data/agent issues (AMA, Log
-    Analytics, pipelines, DCRs), alerts, workbooks, Application Insights, containers,
-    and VM performance/health problems.
-  configuration: 'Configuring Azure Monitor end to end: agents, DCRs, pipelines, alerts,
-    autoscale, networking/Private Link, Application Insights, Kubernetes/Prometheus,
-    and detailed logs/metrics schemas for Azure and partner services.'
+  troubleshooting: 'Diagnosing and fixing Azure Monitor issues: agents (AMA/Log Analytics/Diagnostics),
+    data collection and pipelines, alerts/metrics/logs, Application Insights, containers/Prometheus,
+    ITSM, and VM performance.'
+  configuration: 'Configuring Azure Monitor end to end: agents, DCRs, diagnostics,
+    alerts, autoscale, networking/Private Link, Kubernetes/Prometheus, Application
+    Insights, logs/metrics schemas, and workbooks.'
   decision-making: Guidance for planning, choosing, and migrating Azure Monitor agents,
     alerts, workspaces, costs, pipelines, and integrations (OpenTelemetry, Prometheus,
     Grafana, SCOM, Splunk, diagnostics).
@@ -22,42 +22,42 @@ category_descriptions:
   best-practices: 'Designing performant, reliable, and cost‑efficient Azure Monitor
     setups: alerts, autoscale, AKS/VM monitoring, logs/PromQL queries, workbooks,
     multicloud, and data collection best practices.'
-  security: 'Securing Azure Monitor: auth (Entra, RBAC, keys), network (NSP, firewalls,
-    Private Link, TLS), secure ITSM/Grafana/workbooks, and analyzing security/audit
-    logs from Azure and third‑party services.'
+  security: 'Securing Azure Monitor: auth, RBAC, network/firewall/NSP/Private Link,
+    TLS and keys, secure ITSM/Grafana/App Insights/Container Insights, and querying/analyzing
+    security and audit logs.'
   architecture-patterns: 'Designing Azure Monitor architectures: enterprise-wide layouts,
     Private Link network patterns, choosing single vs multiple workspaces, and using
     workspace replication for resilience.'
 skill_description: Expert knowledge for Azure Monitor development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  configuring AMA/DCR pipelines, Log Analytics workspaces, Application Insights, autoscale
-  alerts, or Prometheus/Grafana, and other Azure Monitor related development tasks.
-  Not for Azure Network Watcher (use azure-network-watcher), Azure Service Health
-  (use azure-service-health), Azure Defender For Cloud (use azure-defender-for-cloud),
-  Azure Application Gateway (use azure-application-gateway).
-use_when: Use when configuring AMA/DCR pipelines, Log Analytics workspaces, Application
-  Insights, autoscale alerts, or Prometheus/Grafana, and other Azure Monitor related
+  working with Log Analytics workspaces, AMA/DCRs, Application Insights, Prometheus/Container
+  Insights, or KQL/Logs API, and other Azure Monitor related development tasks. Not
+  for Azure Network Watcher (use azure-network-watcher), Azure Service Health (use
+  azure-service-health), Azure Defender For Cloud (use azure-defender-for-cloud),
+  Azure Security (use azure-security).
+use_when: Use when working with Log Analytics workspaces, AMA/DCRs, Application Insights,
+  Prometheus/Container Insights, or KQL/Logs API, and other Azure Monitor related
   development tasks.
 confusable_not_for: Not for Azure Network Watcher (use azure-network-watcher), Azure
   Service Health (use azure-service-health), Azure Defender For Cloud (use azure-defender-for-cloud),
-  Azure Application Gateway (use azure-application-gateway).
+  Azure Security (use azure-security).
 ---
 # Azure Monitor Crawl Report
 
 ## Summary
 
-- **Total Pages**: 2325
-- **Fetched**: 2325
+- **Total Pages**: 2326
+- **Fetched**: 2326
 - **Fetch Failed**: 0
-- **Classified**: 1814
-- **Unclassified**: 511
+- **Classified**: 1810
+- **Unclassified**: 516
 
 ### Incremental Update
-- **New Pages**: 14
-- **Updated Pages**: 26
-- **Unchanged**: 2285
-- **Deleted Pages**: 8
+- **New Pages**: 1
+- **Updated Pages**: 12
+- **Unchanged**: 2313
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-monitor/azure-monitor.csv`
 
 ## Classification Statistics
@@ -67,87 +67,46 @@ confusable_not_for: Not for Azure Network Watcher (use azure-network-watcher), A
 | architecture-patterns | 2 | 0.1% |
 | best-practices | 32 | 1.4% |
 | configuration | 1247 | 53.6% |
-| decision-making | 37 | 1.6% |
-| deployment | 15 | 0.6% |
-| integrations | 313 | 13.5% |
-| limits-quotas | 65 | 2.8% |
+| decision-making | 35 | 1.5% |
+| deployment | 14 | 0.6% |
+| integrations | 312 | 13.4% |
+| limits-quotas | 64 | 2.8% |
 | security | 52 | 2.2% |
-| troubleshooting | 51 | 2.2% |
-| *(Unclassified)* | 511 | 22.0% |
+| troubleshooting | 52 | 2.2% |
+| *(Unclassified)* | 516 | 22.2% |
 
 ## Changes
 
 ### New Pages
 
-- [Enable monitoring](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/kubernetes-monitoring-tutorial)
-- [OpenTelemetry Protocol ingestion overview](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/opentelemetry-summary)
-- [Monitor AKS applications with OpenTelemetry Protocol](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/kubernetes-open-protocol)
-- [Supported resources and regions](https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/metrics-export-reference)
-- [Collect logs using DCRs](https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/platform-logs-collect)
-- [Supported resources and regions](https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/platform-logs-reference)
-- [OpenTelemetry with Azure Monitor](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/opentelemetry-options)
-- [Collect and analyze OpenTelemetry data](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/collect-use-observability-data)
-- [Ingest OTLP signals with OTel Collector](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/opentelemetry-protocol-ingestion)
-- [Azure Monitor dashboards with Grafana](https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/visualize-use-grafana-dashboards)
-- [Azure Managed Grafana](https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/visualize-use-managed-grafana-how-to)
-- [Server timeouts](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/api/timeouts)
-- [Errors](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/api/timeouts)
-- [Get the Activity log using the REST API](https://learn.microsoft.com/en-us/azure/azure-monitor/platform/activity-log)
+- [Azure Monitor overview page](https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/overview-page)
 
 ### Updated Pages
 
-- [Enable monitoring](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/tutorial-enable-monitoring)
-  - Updated: 2026-03-20T07:26:00.000Z → 2026-06-02T17:17:00.000Z
-- [Enable recommended alerts](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/tutorial-alerts)
-  - Updated: 2026-03-20T07:26:00.000Z → 2026-06-02T17:17:00.000Z
-- [Enable monitoring](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/tutorial-scale-set-enable-monitoring)
-  - Updated: 2026-03-20T07:26:00.000Z → 2026-05-28T08:00:00.000Z
-- [Enable recommended alerts](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/tutorial-scale-set-alerts)
-  - Updated: 2026-03-20T07:26:00.000Z → 2026-05-28T08:00:00.000Z
-- [Collect guest logs](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/tutorial-collect-logs)
-  - Updated: 2026-03-20T07:26:00.000Z → 2026-06-02T17:17:00.000Z
-- [Enable from command line](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/vm-enable-monitoring)
-  - Updated: 2026-03-20T07:26:00.000Z → 2026-06-02T17:17:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/metrics-opentelemetry-guest)
-  - Updated: 2026-03-20T07:26:00.000Z → 2026-06-02T17:17:00.000Z
-- [Customize](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/metrics-opentelemetry-guest-modify)
-  - Updated: 2026-03-20T07:26:00.000Z → 2026-06-02T17:17:00.000Z
-- [Migrate](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/vm-opentelemetry-migrate)
-  - Updated: 2026-03-20T07:26:00.000Z → 2026-05-28T08:00:00.000Z
-- [Customize configuration](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/prometheus-metrics-scrape-configuration)
-  - Updated: 2026-04-30T06:05:00.000Z → 2026-06-06T06:05:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/monitor-vm)
-  - Updated: 2026-03-20T07:26:00.000Z → 2026-06-02T17:17:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/data-collection-rule-overview)
-  - Updated: 2026-02-03T23:12:00.000Z → 2026-06-03T06:05:00.000Z
-- [DCR structure](https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/data-collection-rule-structure)
-  - Updated: 2026-04-27T08:00:00.000Z → 2026-06-03T06:05:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/data-collection-transformations)
-  - Updated: 2026-02-03T23:12:00.000Z → 2026-06-03T06:05:00.000Z
-- [Create](https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/data-collection-transformations-create)
-  - Updated: 2026-04-22T08:00:00.000Z → 2026-06-03T06:05:00.000Z
-- [Supported KQL](https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/data-collection-transformations-kql)
-  - Updated: 2026-01-20T08:00:00.000Z → 2026-06-03T06:05:00.000Z
-- [Best practices and samples](https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/data-collection-transformations-samples)
-  - Updated: 2026-01-20T08:00:00.000Z → 2026-06-03T06:05:00.000Z
-- [Metrics export using DCRs](https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/metrics-export-create)
-  - Updated: 2026-05-16T06:04:00.000Z → 2026-06-02T12:06:00.000Z
-- [Ingest OTLP signals with AMA (Preview)](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/opentelemetry-ingest-agent)
-  - Updated: 2026-05-25T22:05:00.000Z → 2026-05-31T12:07:00.000Z
-- [Supported operating systems](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-supported-operating-systems)
-  - Updated: 2026-05-15T22:14:00.000Z → 2026-06-05T08:00:00.000Z
-- *...and 6 more*
-
-### Deleted Pages
-
-- ~~Collect and analyze OpenTelemetry data (Preview)~~ (https://learn.microsoft.com/en-us/azure/azure-monitor/containers/collect-use-observability-data)
-- ~~Enable monitoring for a cluster~~ (https://learn.microsoft.com/en-us/azure/azure-monitor/containers/kubernetes-monitoring-tutorial)
-- ~~Monitor AKS applications with OpenTelemetry Protocol (Preview)~~ (https://learn.microsoft.com/en-us/azure/azure-monitor/containers/kubernetes-open-protocol)
-- ~~OpenTelemetry with Azure Monitor (Preview)~~ (https://learn.microsoft.com/en-us/azure/azure-monitor/containers/opentelemetry-options)
-- ~~Ingest OTLP signals with OTel Collector (Preview)~~ (https://learn.microsoft.com/en-us/azure/azure-monitor/containers/opentelemetry-protocol-ingestion)
-- ~~OpenTelemetry Protocol ingestion overview (Preview)~~ (https://learn.microsoft.com/en-us/azure/azure-monitor/containers/opentelemetry-summary)
-- ~~Server timeouts and errors~~ (https://learn.microsoft.com/en-us/azure/azure-monitor/logs/api/timeouts)
-- ~~Use Grafana dashboards~~ (https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/visualize-use-grafana-dashboards)
+- [Geolocation and IP address handling](https://learn.microsoft.com/en-us/azure/azure-monitor/app/ip-collection)
+  - Updated: 2026-03-15T17:05:00.000Z → 2026-06-11T17:35:00.000Z
+- [What's new?](https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/whats-new)
+  - Updated: 2026-05-12T08:00:00.000Z → 2026-06-08T08:00:00.000Z
+- [Create and configure a resource](https://learn.microsoft.com/en-us/azure/azure-monitor/app/create-workspace-resource)
+  - Updated: 2026-02-27T08:00:00.000Z → 2026-06-11T17:35:00.000Z
+- [Windows clients](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-windows-client)
+  - Updated: 2026-04-09T08:00:00.000Z → 2026-06-11T17:35:00.000Z
+- [Resource-scoped queries](https://learn.microsoft.com/en-us/azure/azure-monitor/metrics/prometheus-resource-scoped-queries)
+  - Updated: 2026-05-26T22:17:00.000Z → 2026-06-12T06:07:00.000Z
+- [Query Basic and Auxiliary logs](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/basic-logs-query)
+  - Updated: 2025-07-30T22:10:00.000Z → 2026-06-11T17:35:00.000Z
+- [Delete and recover a workspace](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/delete-workspace)
+  - Updated: 2024-10-31T08:00:00.000Z → 2026-06-11T17:35:00.000Z
+- [Manage data retention](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/data-retention-configure)
+  - Updated: 2025-09-09T08:00:00.000Z → 2026-06-11T17:35:00.000Z
+- [Customer-managed keys](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/customer-managed-keys)
+  - Updated: 2026-04-09T08:00:00.000Z → 2026-06-11T17:35:00.000Z
+- [Query alerts using ARG](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/migrate-from-alerts-summary-api)
+  - Updated: 2026-04-24T08:00:00.000Z → 2026-06-11T17:35:00.000Z
+- [Upgrade from the legacy Log Analytics alerts API](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-log-api-switch)
+  - Updated: 2026-04-24T08:00:00.000Z → 2026-06-11T17:35:00.000Z
+- [Overview](https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/resource-manager-samples)
+  - Updated: 2025-05-21T08:00:00.000Z → 2026-06-11T17:35:00.000Z
 
 ## Classified Pages
 
@@ -252,6 +211,7 @@ confusable_not_for: Not for Azure Network Watcher (use azure-network-watcher), A
 | [Configure JavaScript SDK](https://learn.microsoft.com/en-us/azure/azure-monitor/app/javascript-sdk-configuration) | configuration | 0.85 | A dedicated configuration page for the JavaScript SDK will list specific configuration parameters, their names, allowed values, and defaults (for tracking, monitoring, and debugging). This matches the configuration sub-skill definition with parameter-level details that are product-specific. |
 | [Configure OpenTelemetry](https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-configuration) | configuration | 0.85 | Explicitly about configuring OTel in Application Insights, likely listing settings such as connection string keys, sampling configuration options, environment variables, and their allowed values. This matches configuration: product-specific parameters and options, not just conceptual guidance. |
 | [Connection strings](https://learn.microsoft.com/en-us/azure/azure-monitor/app/connection-strings) | configuration | 0.85 | Page defines the exact schema and key names for Application Insights connection strings, including required/optional settings and examples. These are product-specific configuration parameters (key-value names, structure, and usage) that qualify as configuration expert knowledge. |
+| [Customer-managed keys](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/customer-managed-keys) | security | 0.85 | The article provides detailed, product-specific steps and parameters for configuring customer-managed keys with Azure Monitor Log Analytics workspaces, including use of Azure Key Vault / Managed HSM and workspace linkage. It focuses on encryption configuration and key lifecycle control, which fits the security sub-skill and contains expert configuration details not captured by generic knowledge. |
 | [Customize configuration](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/prometheus-metrics-scrape-configuration) | configuration | 0.85 | Describes customizing Prometheus metrics scraping in Azure Monitor using Kubernetes ConfigMap. This typically includes specific configuration keys, allowed values, and patterns for scrape configuration that are product-specific and not generic knowledge. |
 | [Enable Snapshot Debugger for a Function App](https://learn.microsoft.com/en-us/azure/azure-monitor/snapshot-debugger/snapshot-debugger-function-app) | configuration | 0.85 | Requires editing host.json and possibly adding specific configuration keys/values; also includes tier recommendations (Basic or higher), which are concrete product-specific settings. |
 | [Heartbeat](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/heartbeat) | integrations | 0.85 | Includes multiple Kusto queries over Heartbeat for counts, last heartbeat, latency spikes, and stopped resources, using detailed schema fields and time filters. |
@@ -271,7 +231,6 @@ confusable_not_for: Not for Azure Network Watcher (use azure-network-watcher), A
 | [Troubleshoot Copilot for Workbooks](https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/workbooks-copilot-troubleshoot) | troubleshooting | 0.85 | Provides resolutions for common Copilot errors and known limitations; product-specific troubleshooting mappings. |
 | [Troubleshoot insights](https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/troubleshoot-workbooks) | troubleshooting | 0.85 | Explicit troubleshooting guide for workbook-based insights with symptom/diagnosis/resolution patterns for specific services. |
 | [Troubleshoot metric alerts](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-troubleshoot-metric) | troubleshooting | 0.85 | Dedicated to common questions and troubleshooting for metric alerts; expected to map specific behaviors/errors to causes and fixes. |
-| [Upgrade from the legacy Log Analytics alerts API](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-log-api-switch) | decision-making | 0.85 | Migration guidance from legacy Log Analytics Alert API to ScheduledQueryRules API, including hard retirement date (Oct 1, 2025), workspace creation cutoff (after June 1, 2019), and one-way migration note; this is concrete, product-specific decision and migration information. |
 | [Connect Grafana](https://learn.microsoft.com/en-us/azure/azure-monitor/metrics/prometheus-grafana) | integrations | 0.84 | Describes configuring Azure Monitor managed Prometheus as a Grafana data source, which involves specific endpoint URLs, auth settings, and parameter fields unique to this integration. |
 | [Cost details](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/cost-logs) | decision-making | 0.84 | Cost article will include pricing tiers, data size calculations, and configuration options with quantified trade-offs, helping choose tiers and retention settings. |
 | [Onboard hybrid cluster](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-hybrid-setup) | configuration | 0.84 | Provides concrete steps and settings to onboard non-Azure clusters (Azure Stack/other environments) to Container Insights, including extension/agent configuration. |
@@ -396,7 +355,6 @@ confusable_not_for: Not for Azure Network Watcher (use azure-network-watcher), A
 | [Create or edit](https://learn.microsoft.com/en-us/azure/azure-monitor/platform/diagnostic-settings) | configuration | 0.80 | Details diagnostic settings options, including specific setting names, selectable categories, and destination behaviors for Azure Monitor, which are product-specific configuration details. |
 | [Cross-resource queries](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/api/cross-workspace-queries) | limits-quotas | 0.80 | Describes implicit vs explicit cross-workspace queries and states a hard limit of 10 resources per cross-resource query. |
 | [Customer-managed certificates (BYOC)](https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/pipeline-tls-custom) | security | 0.80 | Describes bring-your-own-certificate (BYOC) setup, including certificate requirements and configuration details that are product-specific security knowledge. |
-| [Customer-managed keys](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/customer-managed-keys) | security | 0.80 | Customer-managed keys for Azure Monitor involve specific security configuration steps: using Azure Key Vault or Managed HSM, linking keys to Log Analytics workspaces, and controlling encryption key lifecycle and access. These are product-specific security settings and IAM-related configurations, matching the security sub-skill. |
 | [Customize](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/metrics-opentelemetry-guest-modify) | configuration | 0.80 | Focuses on modifying DCRs to add/remove specific OpenTelemetry metrics (per-process, logical disk, filesystem, etc.). This implies detailed configuration parameters, metric names, and allowed options, which are product-specific configuration details not captured by generic knowledge. |
 | [DatabricksAccounts](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/databricksaccounts) | configuration | 0.80 | DatabricksAccounts Azure Monitor table reference provides the exact schema for accounts audit logs, which is product-specific configuration/reference information. |
 | [DatabricksApps](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/databricksapps) | configuration | 0.80 | Defines the DatabricksApps table structure and fields for lakehouse app audit logs, which is detailed schema knowledge. |
@@ -458,6 +416,7 @@ confusable_not_for: Not for Azure Network Watcher (use azure-network-watcher), A
 | [MCVPAuditLogs](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/mcvpauditlogs) | configuration | 0.80 | MCVPAuditLogs reference defines audit log columns for MCVP transactions, representing expert, product-specific log schema knowledge. |
 | [MCVPOperationLogs](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/mcvpoperationlogs) | configuration | 0.80 | MCVPOperationLogs table reference documents fields for vehicle provisioning, connections, and telemetry, which is detailed configuration/schema information unique to this service. |
 | [Manage access](https://learn.microsoft.com/en-us/azure/azure-monitor/metrics/azure-monitor-workspace-manage-access) | security | 0.80 | Access management articles typically list specific RBAC roles, scopes, and permission models for this resource type, which are product-specific security configurations. |
+| [Manage data retention](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/data-retention-configure) | configuration | 0.80 | The page describes how to configure data retention at workspace and table level, including concrete retention settings and operational behavior of the two retention states. It contains product-specific configuration options and behaviors (such as how retention is applied and managed per table) that qualify as expert configuration knowledge. |
 | [Manage smart detection rules](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/proactive-arm-config) | configuration | 0.80 | Focuses on automating smart detection rule settings with ARM; expected to include ARM schema, property names, and allowed values—concrete configuration parameters. |
 | [Microsoft Entra authentication](https://learn.microsoft.com/en-us/azure/azure-monitor/app/azure-ad-authentication) | security | 0.80 | Describes opting out of local auth, using managed identities, and Entra ID for telemetry ingestion; likely includes specific configuration switches and auth behaviors unique to Application Insights. |
 | [Microsoft.App/managedEnvironments](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-logs/microsoft-app-managedenvironments-logs) | configuration | 0.80 | Page lists the exact log categories available for Microsoft.App/managedEnvironments and what each category contains; these are concrete, product-specific configuration options (category names and meanings) that qualify as expert knowledge. |
@@ -1493,7 +1452,6 @@ confusable_not_for: Not for Azure Network Watcher (use azure-network-watcher), A
 | [Container monitoring solution](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-transition-solution) | decision-making | 0.70 | Migration-focused guidance with timelines and steps to move from a legacy solution to Container Insights; helps decide and plan migration paths. |
 | [ContainerNetworkLogs](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/containernetworklogs) | integrations | 0.70 | Shows queries for dropped network flows and top IPs by bytes, which are specific to ContainerNetworkLogs fields. |
 | [Convert ITSM ServiceNow actions to secure webhook actions](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/itsm-convert-servicenow-to-webhook) | integrations | 0.70 | Describes converting ITSM actions to Secure Webhook actions for ServiceNow; migration/integration guidance with specific steps and configuration details for the new webhook-based integration. |
-| [Create and configure a resource](https://learn.microsoft.com/en-us/azure/azure-monitor/app/create-workspace-resource) | configuration | 0.70 | Covers creating and configuring Application Insights resources, including workspace linkage and RBAC; likely includes specific settings and options. |
 | [Create custom policy](https://learn.microsoft.com/en-us/azure/azure-monitor/platform/diagnostic-settings-policy) | deployment | 0.70 | Guides creating custom policies/initiatives to roll out diagnostic settings across resources, a deployment/management pattern specific to Azure Monitor. |
 | [Create discoveries](https://learn.microsoft.com/en-us/azure/azure-monitor/health-models/discoveries) | configuration | 0.70 | Describes discovery kinds, recommended configuration, and parent entity assignment; this implies specific discovery configuration options and recommended settings that are product-specific configuration knowledge. |
 | [Criteria](https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/workbooks-criteria) | best-practices | 0.70 | Addresses performance issues from parameter queries and introduces criteria parameters to avoid unnecessary network calls; includes product-specific guidance and gotchas. |
@@ -1509,7 +1467,7 @@ confusable_not_for: Not for Azure Network Watcher (use azure-network-watcher), A
 | [DatabricksSSH](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/databricksssh) | security | 0.70 | SSH audit logs capture secure access events; the detailed table schema is product-specific security and logging knowledge. |
 | [DataverseActivity](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/dataverseactivity) | integrations | 0.70 | Contains specific Kusto queries over DataverseActivity with table/column usage that is product-specific and serves as concrete integration/query patterns. |
 | [Dedicated clusters](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/logs-dedicated-clusters) | decision-making | 0.70 | Dedicated clusters for Azure Monitor Logs typically include commitment-tier thresholds, region/feature support details, and specific conditions for when you must or should use a dedicated cluster (for example, minimum commitment tiers, workspace-linking behavior, and cost/security trade-offs). These are product-specific decision criteria and constraints that go beyond generic knowledge, fitting the decision-making sub-skill. |
-| [Delete and recover a workspace](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/delete-workspace) | configuration | 0.70 | Explains soft-delete behavior, recovery windows, and permanent deletion options, which are product-specific configuration and lifecycle details. |
+| [Delete and recover a workspace](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/delete-workspace) | configuration | 0.70 | The article goes beyond concepts and includes product-specific behavior and steps for soft-delete, permanent delete, and recovery of Log Analytics workspaces. It describes specific workspace states and required configuration/operations (for example, how to bypass soft-delete and conditions for recovery), which are implementation details not generally known from training. |
 | [Deploy agents](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/monitor-virtual-machine-agent) | deployment | 0.70 | Describes deploying AMA across environments as part of a monitoring guide; includes product-specific deployment requirements and patterns. |
 | [Deployment guidance](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/monitor-kubernetes) | best-practices | 0.70 | Explicitly described as best practices for monitoring different Kubernetes layers with Azure Monitor and cloud-native tools; likely includes concrete, product-specific recommendations and patterns. |
 | [Design](https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/private-link-design) | architecture-patterns | 0.70 | Provides design guidance and considerations for AMPLS topology and connectivity; product-specific network architecture patterns and trade-offs. |
@@ -1545,7 +1503,7 @@ confusable_not_for: Not for Azure Network Watcher (use azure-network-watcher), A
 | [GKEControllerManager](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/gkecontrollermanager) | configuration | 0.70 | Documents the GKEControllerManager table fields for controller manager logs, which is specific schema for this integration. |
 | [GKEHPADecision](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/gkehpadecision) | configuration | 0.70 | Provides the GKEHPADecision table schema capturing Horizontal Pod Autoscaler decisions, which is detailed, product-specific telemetry configuration. |
 | [GKEScheduler](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/gkescheduler) | configuration | 0.70 | Defines the GKEScheduler table schema for scheduler logs from GKE, which is expert knowledge about how these logs are represented in Sentinel. |
-| [Geolocation and IP address handling](https://learn.microsoft.com/en-us/azure/azure-monitor/app/ip-collection) | security | 0.70 | IP address collection and geolocation handling for Application Insights is security- and privacy-related behavior that is product-specific. This page typically includes concrete details on how IPs are stored or masked, what configuration options exist, and how to control collection, which aligns with security-focused configuration and compliance requirements. |
+| [Geolocation and IP address handling](https://learn.microsoft.com/en-us/azure/azure-monitor/app/ip-collection) | security | 0.70 | The page contains product-specific behavior and configuration details for how Application Insights collects, stores, and masks IP addresses and performs geolocation lookup. It includes concrete settings and behaviors (for example, how client IP is truncated, what is stored, and how to configure collection), which are security/privacy-related configuration details that are unlikely to be fully known from generic training data. This aligns best with the security sub-skill, as it governs data collection and privacy controls rather than general concepts. |
 | [Get Started with JavaScript SDK](https://learn.microsoft.com/en-us/azure/azure-monitor/app/javascript-sdk) | integrations | 0.70 | SDK setup docs typically include product-specific initialization patterns, configuration options, and code snippets for tracking page views, clicks, and custom events that go beyond generic knowledge. This is an integration-focused page describing how to wire a web app to Azure Monitor Application Insights. |
 | [GoogleWorkspaceReports](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/googleworkspacereports) | configuration | 0.70 | Documents the GoogleWorkspaceReports table schema for Google Workspace activity events, which is detailed configuration for this data connector. |
 | [Grid](https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/workbooks-grid-visualizations) | configuration | 0.70 | Explains styling options (icons, heatmaps, spark bars, sorting, search) for workbook grids; these are detailed, product-specific configuration behaviors. |
@@ -1563,7 +1521,6 @@ confusable_not_for: Not for Azure Network Watcher (use azure-network-watcher), A
 | [Log search alert](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-create-log-alert-rule) | configuration | 0.70 | Explains creating and editing log search alert rules, including payload structure and rule parameters, which are concrete configuration details. |
 | [Log search alert rule queries with ADX and ARG](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-log-alert-query-samples) | integrations | 0.70 | Provides concrete KQL query samples for log search alert rules including Azure Data Explorer and Resource Graph usage, which are product-specific query patterns for alert integrations. |
 | [Manage alert instances](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-manage-alert-instances) | limits-quotas | 0.70 | Explicitly states alerts are stored for 30 days and automatically deleted; describes special handling of stateful alerts beyond that period. These are concrete retention limits and behavior details that qualify as limits/quotas. |
-| [Manage data retention](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/data-retention-configure) | configuration | 0.70 | How-to for configuring retention per table; typically includes specific retention settings, ranges, and configuration parameters unique to Log Analytics. |
 | [Metric alerts](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-create-metric-alert-rule) | configuration | 0.70 | Shows how to create and edit metric alert rules, combining resources, metrics, and conditions, which includes concrete configuration parameters for alerts. |
 | [Metrics REST API Walkthrough](https://learn.microsoft.com/en-us/azure/azure-monitor/platform/rest-api-walkthrough) | integrations | 0.70 | Describes product-specific REST endpoints and authentication details for Azure Monitor (metrics, metric definitions, activity logs, alert rules). These are concrete API integration patterns and parameters unique to Azure Monitor, not just conceptual guidance. |
 | [Microsoft.AAD/DomainServices](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-logs/microsoft-aad-domainservices-logs) | configuration | 0.70 | Lists specific log categories and their meanings for Microsoft.AAD/DomainServices (for example DNS server audit events). These category names and mappings are product-specific logging configuration details. |
@@ -1686,7 +1643,6 @@ confusable_not_for: Not for Azure Network Watcher (use azure-network-watcher), A
 | [WOUserDiagnostics](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/wouserdiagnostics) | integrations | 0.70 | Shows example queries over WOUserDiagnostics to list provider and solution deployment failures, using product-specific fields. |
 | [WOUserDiagnostics](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/wouserdiagnostics) | configuration | 0.70 | As with other Azure Monitor Logs reference pages, this table reference will enumerate columns, data types, and meanings for WOUserDiagnostics. Those schema details are specific to this product and are used to configure queries and diagnostics, fitting the configuration category. |
 | [WVDCheckpoints](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/wvdcheckpoints) | integrations | 0.70 | Includes a concrete query to produce bar charts of published resources by user count using WVDCheckpoints fields. |
-| [Windows clients](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-windows-client) | configuration | 0.70 | Covers installing AMA on Windows 10/11, associating DCRs, and troubleshooting; likely includes specific installer options, command-line flags, and configuration steps unique to this scenario. |
 | [WorkloadDiagnosticLogs](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/workloaddiagnosticlogs) | integrations | 0.70 | Provides example queries to retrieve warning and error logs from WorkloadDiagnosticLogs, using product-specific fields and filters. |
 | [Workspace transformation in Azure portal](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/tutorial-workspace-transformations-portal) | configuration | 0.70 | Tutorial that walks through configuring workspace-level DCR transformations; includes concrete configuration steps and fields for this feature. |
 | [microsoft.avs/privateClouds](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-logs/microsoft-avs-privateclouds-logs) | configuration | 0.70 | Describes system log categories (vCenter, NSX, etc.) for microsoft.avs/privateClouds, a concrete mapping of logs to this resource. |
@@ -1724,7 +1680,9 @@ confusable_not_for: Not for Azure Network Watcher (use azure-network-watcher), A
 | [NCCKubernetesAPIAuditLogs](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/ncckubernetesapiauditlogs) | integrations | 0.68 | Page provides concrete Kusto query patterns tailored to the NCCKubernetesAPIAuditLogs table (specific column usage, filters, and aggregations for Nexus clusters, IPs, users, status codes). These are product-specific integration/query patterns rather than generic KQL examples, fitting the integrations & coding patterns category best. |
 | [OEWExperimentScorecardMetricPairs](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/oewexperimentscorecardmetricpairs) | integrations | 0.68 | Shows Kusto query over OEWExperimentScorecardMetricPairs to get latest experiment scorecard results for a feature, using product-specific metric pair schema. |
 | [PGSQLDbTransactionsStats](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/pgsqldbtransactionsstats) | integrations | 0.68 | Provides Kusto query over PGSQLDbTransactionsStats to get remaining transactions and multixacts per database, using PostgreSQL-specific stats fields. |
+| [Resource-scoped queries](https://learn.microsoft.com/en-us/azure/azure-monitor/metrics/prometheus-resource-scoped-queries) | troubleshooting | 0.68 | The page goes beyond conceptual querying and includes product-specific error handling for resource-scoped PromQL in Azure Monitor workspace, mapping specific error conditions (for example, missing permissions or mis-scoped resources) to causes and resolutions. This symptom → cause → fix guidance for Azure Monitor Prometheus queries is unlikely to be fully captured in generic LLM training data and aligns best with the troubleshooting sub-skill. |
 | [Tables that support transformations](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/tables-feature-support) | limits-quotas | 0.68 | Provides a definitive list of which Azure Monitor Logs tables support ingestion-time transformations. This is a product-specific capability matrix (which tables support a feature), effectively a constraint/limit reference. |
+| [Windows clients](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-windows-client) | configuration | 0.68 | The page goes beyond a simple tutorial and includes product-specific configuration details for Azure Monitor Agent on Windows 10/11 clients, such as how to associate data collection rules (DCRs), manage the agent, and troubleshoot it. These are concrete, implementation-focused settings and behaviors that are unlikely to be fully captured in generic LLM training data, fitting best under configuration. |
 | [microsoft.healthcareinterop/workspaces](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-healthcareinterop-workspaces) | configuration | 0.68 | Identifies the tables that store actionable logs from interoperability applications, which is specific monitoring configuration. |
 | [microsoft.network/expressroutecircuits](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-network-expressroutecircuits) | configuration | 0.68 | Specifies activity and metrics tables for microsoft.network/expressroutecircuits, which is product-specific monitoring configuration. |
 | [microsoft.network/frontdoors](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-network-frontdoors) | configuration | 0.68 | Defines which tables store activity and metrics for microsoft.network/frontdoors, a specific Azure Monitor table mapping. |
@@ -1778,6 +1736,7 @@ confusable_not_for: Not for Azure Network Watcher (use azure-network-watcher), A
 | [Copy Azure Monitor dashboard](https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/visualize-copy-to-managed-grafana) | decision-making | 0.65 | The article explains how and when to copy dashboards from Azure Monitor dashboards with Grafana to Azure Managed Grafana, including scenarios where Managed Grafana is recommended (alerts, scheduled reports, external data sources, private access). This is migration/selection guidance between two related services, with explicit capability-based trade-offs and recommendations, fitting the decision-making sub-skill. While it also contains procedural steps, the key expert value is in the migration/feature comparison and when to move. |
 | [Create](https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/data-collection-transformations-create) | configuration | 0.65 | Step-by-step guidance on creating and testing transformation queries and adding them to DCRs; likely includes specific configuration fields and patterns unique to Azure Monitor transformations. |
 | [Create alerts](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/monitor-virtual-machine-alerts) | best-practices | 0.65 | The article goes beyond concepts and provides product-specific guidance on which Azure Monitor alert rules to create for virtual machines and guest workloads, including concrete examples of metrics/log signals and recommended alert configurations that are specific to Azure Monitor + Azure VMs. This is actionable, scenario-based guidance rather than just conceptual overview, fitting best under best-practices. |
+| [Create and configure a resource](https://learn.microsoft.com/en-us/azure/azure-monitor/app/create-workspace-resource) | configuration | 0.65 | How-to for creating and configuring workspace-based Application Insights resources, including integration with Log Analytics and Azure RBAC; likely contains product-specific configuration options and settings rather than just conceptual overview. |
 | [CrowdStrikeAlerts](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/crowdstrikealerts) | integrations | 0.65 | Provides a concrete aggregation query over CrowdStrikeAlerts grouped by MITRE ATT&CK tactic, which is specific to this integration. |
 | [DNSQueryLogs](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/dnsquerylogs) | integrations | 0.65 | Provides a concrete aggregation query summarizing DNS queries by virtual network and return code, specific to DNSQueryLogs. |
 | [Data Synced From Your ITSM Product](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/itsmc-synced-data) | integrations | 0.65 | Explains which incidents and change requests are synced from ServiceNow to Log Analytics and how the Sync Data field controls this, which is detailed integration behavior. |
@@ -1852,10 +1811,8 @@ confusable_not_for: Not for Azure Network Watcher (use azure-network-watcher), A
 | [PowerPlatformDlpActivity](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/powerplatformdlpactivity) | integrations | 0.65 | Shows Kusto queries over PowerPlatformDlpActivity (CreateDlpPolicy, grouping by user, policy name/type), using product-specific columns. |
 | [ProjectActivity](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/projectactivity) | integrations | 0.65 | Includes Kusto queries for ProjectActivity (filter by organization ID, summarize by user and result status), which depend on this table’s schema. |
 | [Prometheus alerts](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/prometheus-alerts) | configuration | 0.65 | Describes Prometheus alert rules using PromQL on metrics in an Azure Monitor workspace, including pending/active behavior and timing, which are product-specific alert configuration semantics. |
-| [Query Basic and Auxiliary logs](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/basic-logs-query) | limits-quotas | 0.65 | Explains how to query Basic/Auxiliary tables and their query limitations; includes product-specific constraints on access and tooling. |
 | [Query-based metric alerts](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-create-query-based-metric-alerts) | configuration | 0.65 | Describes rule configuration options, managed identity requirements, and deployment methods for query-based metric alerts, which typically include specific setting names and allowed values unique to this preview feature. |
 | [Requirements](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-requirements) | limits-quotas | 0.65 | A requirements page typically lists specific OS versions, resource minimums, and other numeric prerequisites; these are concrete constraints that function as limits/requirements not generally known to an LLM. |
-| [Resource-scoped queries](https://learn.microsoft.com/en-us/azure/azure-monitor/metrics/prometheus-resource-scoped-queries) | integrations | 0.65 | Explains resource-scoped PromQL queries including setup, authentication, and error handling for Azure Monitor workspaces. This implies product-specific API/SDK usage, auth scopes, and error patterns for integrating Prometheus-style queries with Azure resources, which fits integrations & coding patterns. |
 | [ResourceManagementPublicAccessLogs](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/resourcemanagementpublicaccesslogs) | integrations | 0.65 | Shows Kusto queries counting and charting public access requests by IP, URI, operation, and object ID, tied to this specific log table. |
 | [Restore logs](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/restore) | configuration | 0.65 | Explains restore operations, including constraints (for example, Auxiliary plan not supported) and billing behavior; product-specific operational details. |
 | [RetinaNetworkFlowLogs](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/retinanetworkflowlogs) | integrations | 0.65 | Provides Kusto queries for dropped network flows and top IPs by bytes, using RetinaNetworkFlowLogs-specific fields. |
@@ -1945,10 +1902,8 @@ confusable_not_for: Not for Azure Network Watcher (use azure-network-watcher), A
 | [Monitor Syslog](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-syslog) | configuration | 0.60 | Covers how Syslog events from Linux nodes are collected and accessed; likely includes workspace/table names and collection settings, which are product-specific configuration details. |
 | [OpenTelemetry with Azure Monitor](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/opentelemetry-options) | decision-making | 0.60 | Central guide comparing native OTLP ingestion vs Microsoft OpenTelemetry Distro and experiences; likely includes scenario-based recommendations and trade-offs for which approach to use, fitting decision-making. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-livedata-overview) | troubleshooting | 0.60 | Live Data feature exposes kubectl-equivalent commands and log locations (/var/log/containers); used specifically for real-time troubleshooting, mapping symptoms to logs and metrics. |
-| [Overview](https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/resource-manager-samples) | deployment | 0.60 | Catalog of ARM template samples for deploying/configuring Azure Monitor features; while sample-focused, it supports deployment automation patterns specific to Azure Monitor. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/workbooks-visualizations) | limits-quotas | 0.60 | Mentions that each visualization and data source might have its own limits; full article likely enumerates visualization-specific constraints and behaviors that are product-specific. |
 | [PurviewSecurityLogs](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/purviewsecuritylogs) | integrations | 0.60 | Shows Kusto query patterns for PurviewSecurityLogs focused on collection delete audit events, tied to Purview’s log schema. |
-| [Query alerts using ARG](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/migrate-from-alerts-summary-api) | decision-making | 0.60 | Guides migration from deprecated alertsSummary API to ARG queries, including deprecation date (Sept 30, 2026) and how to obtain equivalent/expanded data; this is product-specific migration and selection guidance between APIs. |
 | [Query packs](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/query-packs) | configuration | 0.60 | Describes how to save and share queries via query packs; involves Azure Monitor–specific resource configuration and usage patterns. |
 | [Retirement guidance](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/vminsights-maps-retirement) | decision-making | 0.60 | Retirement guidance with key dates and impacted functionality; helps decide migration/offboarding paths and timelines, which is decision-focused. |
 | [Run a search job](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/search-jobs) | configuration | 0.60 | Describes creating long-running search jobs and querying their result tables; includes product-specific parameters and behavior for asynchronous queries. |
@@ -2342,11 +2297,14 @@ confusable_not_for: Not for Azure Network Watcher (use azure-network-watcher), A
 | [Oracle.Database/dbSystems](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-logs/oracle-database-dbsystems-logs) | 0.30 | Catalog of Oracle Cloud Event logs for dbSystems; no configuration or troubleshooting mappings. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/data-collection-rule-overview) | 0.30 | High-level overview of data collection rules; primarily conceptual description of ETL-like process and usage, without detailed configuration tables, limits, or product-specific troubleshooting. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-monitor/optimization-insights/code-optimizations-profiler-overview) | 0.30 | Appears to be an overview of Code Optimizations and Profiler capabilities and benefits; summary does not indicate concrete configuration tables, limits, or troubleshooting mappings. |
+| [Query Basic and Auxiliary logs](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/basic-logs-query) | 0.30 | The page explains how to query Basic and Auxiliary logs tables and notes a limitation about API-based tools like Power BI, but the summary does not indicate presence of numeric limits, configuration parameter tables, error-code-based troubleshooting, or other product-specific expert details as defined. It appears to be a how-to/query-usage article rather than a limits, configuration, or troubleshooting reference. |
+| [Query alerts using ARG](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/migrate-from-alerts-summary-api) | 0.30 | Primarily a migration/how-to article explaining how to replace the deprecated alertsSummary API with Azure Resource Graph queries. The summary does not indicate presence of numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. It appears to be procedural guidance rather than expert reference data. |
 | [Query scope](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/scope) | 0.30 | Describes query scope and time range conceptually; no evidence of numeric limits or product-specific config parameters. |
 | [StorageMoverCopyLogsTransferred](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/storagemovercopylogstransferred) | 0.30 | Page provides example Kusto queries for a specific log table but is primarily usage examples, not structured troubleshooting mappings, configuration parameter tables, limits, or decision matrices. It lacks error-code-based diagnosis, config defaults, or product-specific constraints that meet the expert-knowledge criteria for any sub-skill type. |
 | [Supported metrics](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/metrics-index) | 0.30 | Primarily a catalog of supported metrics by resource type. It lists what metrics exist but not configuration parameters, limits, or decision matrices; it’s reference data rather than a skill pattern. |
 | [Supported resource log categories](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/logs-index) | 0.30 | Index of resource log categories and schemas. It’s a reference list, not focused on configuration options, limits, troubleshooting, or decision guidance as defined by the sub-skill types. |
 | [Tables overview](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/logs-table-overview) | 0.30 | Summary indicates a conceptual explanation of how tables work in Azure Monitor Logs (types, retention, transformations, schema concepts) without evidence of specific numeric limits, configuration parameter tables, or product-specific error codes. Appears to be an overview rather than detailed configuration, limits, or troubleshooting content. |
+| [Upgrade from the legacy Log Analytics alerts API](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-log-api-switch) | 0.30 | Describes retirement timeline for the Log Analytics Alert API and how to switch to the Scheduled Query Rules API. The content is migration guidance and deprecation notice without detailed limits, configuration tables, error mappings, or quantified decision criteria, so it does not meet the expert-knowledge thresholds for any sub-skill type. |
 | [Use issues](https://learn.microsoft.com/en-us/azure/azure-monitor/aiops/aiops-issue-and-investigation-how-to) | 0.30 | How-to article for creating and managing Azure Monitor issues; appears procedural without strong signals of detailed configuration matrices, limits, or error-code-based troubleshooting. |
 | [View .NET Profiler data](https://learn.microsoft.com/en-us/azure/azure-monitor/profiler/profiler-data) | 0.30 | Describes generating load and viewing Profiler data; appears to be procedural usage guidance without product-specific configuration tables or error/limit details. |
 | [View and manage table properties](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/manage-logs-tables) | 0.30 | Described as guidance on managing table settings in a Log Analytics workspace for data model, access, and cost. The summary does not show specific numeric limits, parameter tables with defaults, or detailed troubleshooting. Likely a how-to/overview for managing tables rather than expert-level configuration reference. |
@@ -2416,6 +2374,7 @@ confusable_not_for: Not for Azure Network Watcher (use azure-network-watcher), A
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-overview) | 0.20 | Autoscale overview and benefits; high-level conceptual content without detailed settings, limits, or troubleshooting. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/kubernetes-monitoring-overview) | 0.20 | High-level overview of Kubernetes monitoring options (Container Insights, Managed Prometheus) without detailed limits, configs, or decision matrices. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/pipeline-overview) | 0.20 | Content is an overview of Azure Monitor pipeline, explaining what it is, when to use it, and general setup sequence. No evidence of numeric limits, configuration parameter tables, error codes, or detailed decision matrices with quantified trade-offs. Primarily conceptual guidance rather than expert-level, product-specific reference details. |
+| [Overview](https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/resource-manager-samples) | 0.20 | Page is a catalog of sample ARM templates for Azure Monitor without detailed parameter tables, limits, or configuration matrices; it primarily links to examples rather than documenting specific expert-only constraints or settings. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-monitor/health-models/overview) | 0.20 | High-level overview of Azure Monitor health models; describes purpose and benefits without concrete configuration parameters, limits, or product-specific decision matrices. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/api/overview) | 0.20 | Page is an overview of the Azure Monitor Logs Query REST API describing what it is and high-level usage. It does not prominently feature numeric limits/quotas, detailed configuration parameter tables, error-code-based troubleshooting, or decision matrices. Content is primarily conceptual and introductory, which an LLM is likely to know from training. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/data-platform-logs) | 0.20 | The page is an architectural/conceptual overview of Azure Monitor Logs as a centralized SaaS logging platform and how different users can use it. The summary indicates no specific numeric limits, configuration parameter tables, error codes, or decision matrices. It describes how the service works and its capabilities, which is general product knowledge rather than expert, configuration, or troubleshooting details. |
@@ -2434,6 +2393,7 @@ confusable_not_for: Not for Azure Network Watcher (use azure-network-watcher), A
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-monitor/metrics/azure-monitor-workspace-overview) | 0.15 | Workspace overview; primarily conceptual description of what an Azure Monitor workspace is, not detailed configuration or limits. |
 | [AIOps and machine learning](https://learn.microsoft.com/en-us/azure/azure-monitor/aiops/aiops-machine-learning) | 0.10 | Conceptual description of AIOps and ML in Azure Monitor; no specific error codes, limits, or config parameters. |
 | [Azure Monitor overview](https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/overview) | 0.10 | High-level overview of Azure Monitor capabilities and components without specific limits, configuration tables, error codes, or decision matrices. |
+| [Azure Monitor overview page](https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/overview-page) | 0.10 | Portal overview/navigation page describing sections and links; no specific configuration parameters, limits, or troubleshooting details. |
 | [Get started](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/get-started-queries) | 0.10 | Introductory tutorial on writing log queries using KQL and Simple mode; focuses on fundamentals and examples rather than detailed configuration, limits, or error-resolution content. |
 | [Insights and curated visualizations](https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/insights-overview) | 0.10 | High-level overview of Azure Monitor Insights and curated visualizations without concrete limits, configuration tables, error codes, or decision matrices. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-monitor/aiops/observability-agent-overview) | 0.10 | Overview of the Azure Copilot observability agent, describing what it is and how it helps. This is conceptual/introductory content without clear evidence of detailed limits, configuration tables, error codes, or decision matrices. |
@@ -2443,7 +2403,7 @@ confusable_not_for: Not for Azure Network Watcher (use azure-network-watcher), A
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-monitor/metrics/prometheus-metrics-overview) | 0.10 | Overview of managed Prometheus service; summary is conceptual without detailed configuration or limits. |
 | [Overview of Azure Monitor Metrics](https://learn.microsoft.com/en-us/azure/azure-monitor/metrics/data-platform-metrics) | 0.10 | Conceptual overview of metrics in Azure Monitor; summary does not suggest detailed limits, configuration tables, or error handling. |
 | [Tutorial](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-analytics-tutorial) | 0.10 | Tutorial on using Log Analytics and KQL in the Azure portal with sample data. It is primarily a step-by-step learning guide without product-specific limits, configuration tables, error codes, or decision matrices. Content is conceptual and procedural rather than expert reference material. |
-| [What's new?](https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/whats-new) | 0.10 | Change log for documentation updates; does not contain technical limits, configuration parameters, troubleshooting mappings, or decision criteria. |
+| [What's new?](https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/whats-new) | 0.10 | Change log for documentation; lists updates but not technical limits, configs, error codes, or decision matrices. |
 | [ASimAgentEventLogs](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/asimagenteventlogs) | - | Page provides example Kusto queries for a specific log table; it is usage/tutorial-style content without limits, configuration tables, decision matrices, troubleshooting mappings, or other structured expert-knowledge patterns defined in the sub-skill types. |
 | [ASimAssetEntityLogs](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/asimassetentitylogs) | - | Page provides example Kusto queries for ASimAssetEntityLogs but no limits, configuration tables, error-code troubleshooting, or decision matrices; it's usage examples rather than structured expert reference per the defined sub-skill types. |
 | [microsoft.network/networkinterfaces](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-network-networkinterfaces) | - | Azure Monitor table reference pages list schema/columns for logs and metrics; the summary indicates log types only, with no limits, configs, error codes, or decision matrices. |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-07'
+generated_at: '2026-06-14'
 category_descriptions:
   security: 'Securing Synapse workspaces end-to-end: auth and RBAC, network and private
     endpoints, firewall and data exfiltration, encryption/TDE, policies, managed identities,
@@ -54,10 +54,10 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure D
 - **Unclassified**: 173
 
 ### Incremental Update
-- **New Pages**: 6
-- **Updated Pages**: 1
-- **Unchanged**: 443
-- **Deleted Pages**: 3
+- **New Pages**: 0
+- **Updated Pages**: 2
+- **Unchanged**: 448
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-synapse-analytics/azure-synapse-analytics.csv`
 
 ## Classification Statistics
@@ -77,25 +77,12 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure D
 
 ## Changes
 
-### New Pages
-
-- [Create Logical Data Warehouse on Cosmos DB and Azure Storage](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/tutorial-logical-data-warehouse)
-- [Azure Synapse Apache Spark 3.4 runtime (unsupported)](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-34-runtime)
-- [Collect logs and metrics with Azure Log Analytics](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/data-collector-api-to-log-ingestion-api)
-- [Legacy HTTP Data Collector API path for Azure Log Analytics](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-azure-log-analytics)
-- [Create DNS alias with PowerShell or Azure CLI](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/dns-alias-powershell-create)
-- [DNS alias](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/dns-alias-overview)
-
 ### Updated Pages
 
-- [What's the difference between Azure Synapse (formerly SQL DW) and Azure Synapse Analytics workspaces?](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/overview-difference-between-formerly-sql-dw-workspace)
-  - Updated: 2026-05-03T11:12:00.000Z → 2026-06-02T19:32:00.000Z
-
-### Deleted Pages
-
-- ~~Azure Synapse Apache Spark 3.4 runtime (EOSA)~~ (https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-34-runtime)
-- ~~Monitor your Apache Spark applications with Azure Log Analytics~~ (https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-azure-log-analytics)
-- ~~Create Logical Data Warehouse with serverless SQL pool~~ (https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/tutorial-logical-data-warehouse)
+- [Restore a dedicated SQL pool](https://learn.microsoft.com/en-us/azure/synapse-analytics/backuprestore/restore-sql-pool)
+  - Updated: 2026-05-03T11:12:00.000Z → 2026-06-11T17:23:00.000Z
+- [Restore a SQL pool from a deleted workspace](https://learn.microsoft.com/en-us/azure/synapse-analytics/backuprestore/restore-sql-pool-from-deleted-workspace)
+  - Updated: 2026-05-03T11:12:00.000Z → 2026-06-11T17:23:00.000Z
 
 ## Classified Pages
 
@@ -435,8 +422,6 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure D
 | [Portal](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/quickstart-create-a-workload-classifier-portal) | 0.40 | Quickstart to create a workload classifier via portal; largely procedural with minimal deep configuration tables or best-practice trade-offs. |
 | [R for Apache Spark](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-r-language) | 0.40 | How-to for using R with Spark in Synapse; mostly language usage and examples, not a structured configuration or troubleshooting reference. |
 | [Recent Release](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/release-notes-10-0-10106-0) | 0.40 | Release notes summarize new features and improvements; useful but not a stable expert skill pattern (no configs, limits, or troubleshooting matrices). |
-| [Restore a SQL pool from a deleted workspace](https://learn.microsoft.com/en-us/azure/synapse-analytics/backuprestore/restore-sql-pool-from-deleted-workspace) | 0.40 | How-to restore a SQL pool from a dropped workspace; likely step-by-step portal/PowerShell flow without detailed limits tables, config matrices, or error-code-based troubleshooting. |
-| [Restore a dedicated SQL pool](https://learn.microsoft.com/en-us/azure/synapse-analytics/backuprestore/restore-sql-pool) | 0.40 | How-to guide for restoring a SQL pool using portal/PowerShell; mostly procedural without deep configuration matrices or limits. |
 | [Synapse Link for SQL](https://learn.microsoft.com/en-us/azure/synapse-analytics/synapse-link/sql-synapse-link-overview) | 0.40 | Overview of Synapse Link for SQL with benefits and pricing; summary does not indicate detailed limits, configs, or troubleshooting content. |
 | [SynapseML library](https://learn.microsoft.com/en-us/azure/synapse-analytics/machine-learning/synapse-machine-learning-library) | 0.40 | Overview of SynapseML library; mostly conceptual description of capabilities, not Synapse-specific configuration or limits. |
 | [With the copy activity](https://learn.microsoft.com/en-us/azure/synapse-analytics/data-integration/data-integration-data-lake) | 0.40 | Ingest into ADLS Gen2; appears to be a general how-to without expert-only configuration or troubleshooting content. |
@@ -528,6 +513,7 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure D
 | [Overview](https://learn.microsoft.com/en-us/azure/synapse-analytics/guidance/proof-of-concept-playbook-overview) | 0.20 | High-level overview of a proof-of-concept playbook; methodology and framing only, no concrete limits, configs, error codes, or quantified decision criteria. |
 | [Overview](https://learn.microsoft.com/en-us/azure/synapse-analytics/metadata/overview) | 0.20 | Primarily a conceptual overview of the shared metadata model between Spark and serverless SQL in Synapse. The summary does not indicate detailed configuration tables, limits with exact values, error codes, or decision matrices. The mention of 1,024 columns appears as an isolated note rather than a structured limits/quotas section, and there is no evidence of broader expert-only configuration or troubleshooting content. |
 | [Partner solutions](https://learn.microsoft.com/en-us/azure/synapse-analytics/partner/browse-partners) | 0.20 | Partner discovery page; primarily navigation/marketplace-style content, not technical reference. |
+| [Restore a dedicated SQL pool](https://learn.microsoft.com/en-us/azure/synapse-analytics/backuprestore/restore-sql-pool) | 0.20 | Appears to be a step-by-step how-to for restoring a dedicated SQL pool via the Azure portal without clear indication of numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. Based on the summary, it is primarily procedural guidance rather than detailed expert reference content. |
 | [SQL script](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/author-sql-script) | 0.20 | Introductory page about SQL scripts in Synapse Studio; appears to be a basic usage/authoring overview without detailed configuration tables, quotas, or troubleshooting mappings. |
 | [Serverless SQL pool](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/on-demand-workspace-overview) | 0.20 | High-level overview of serverless SQL pool capabilities; no detailed limits, configuration tables, or best-practice specifics. |
 | [Synapse SQL T-SQL language elements](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-reference-tsql-language-elements) | 0.20 | Navigation/index page linking to T‑SQL language element docs; does not itself contain detailed product-specific parameters or limits. |
@@ -556,3 +542,4 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure D
 | [What is Azure Synapse?](https://learn.microsoft.com/en-us/azure/synapse-analytics/overview-what-is) | 0.10 | General overview of Azure Synapse Analytics; marketing/positioning content without concrete technical parameters. |
 | [What is machine learning in Azure Synapse?](https://learn.microsoft.com/en-us/azure/synapse-analytics/machine-learning/what-is-machine-learning) | 0.10 | High-level overview of machine learning capabilities; conceptual content without product-specific numeric or configuration detail. |
 | [DNS alias](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/dns-alias-overview) | - | Appears to be a conceptual overview of DNS aliases for Azure Synapse / SQL DW without clear evidence of numeric limits, detailed configuration parameter tables, or troubleshooting mappings. Likely explains what DNS aliases are and how they can be used, but not in the structured, expert-knowledge forms defined (limits, config tables, error codes, etc.). |
+| [Restore a SQL pool from a deleted workspace](https://learn.microsoft.com/en-us/azure/synapse-analytics/backuprestore/restore-sql-pool-from-deleted-workspace) | - | How-to guide for restoring a dedicated SQL pool from a dropped workspace; based on the summary, it describes the restore process but does not indicate presence of numeric limits, configuration parameter tables, error-code-based troubleshooting, or other expert-only details as defined in the sub-skill types. |

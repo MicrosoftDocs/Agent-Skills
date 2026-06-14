@@ -44,9 +44,9 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 - **Unclassified**: 29
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 48
+- **Unchanged**: 49
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-private-link/azure-private-link.csv`
 
@@ -63,10 +63,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | *(Unclassified)* | 29 | 59.2% |
 
 ## Changes
-
-### New Pages
-
-- [Secure Private Link deployment](https://learn.microsoft.com/en-us/azure/private-link/secure-private-link)
 
 ## Classified Pages
 

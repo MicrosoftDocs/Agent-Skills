@@ -3,7 +3,7 @@ name: azure-extended-zones
 description: Expert knowledge for Azure Extended Zones development including decision making, limits & quotas, security, and configuration. Use when setting up Extended Zones access, Azure Policy, Firewall, CMK disk encryption, or quota increase workflows, and other Azure Extended Zones related development tasks. Not for Azure Reliability (use azure-reliability), Azure Resiliency (use azure-resiliency), Azure Virtual Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-10"
+  generated_at: "2026-06-14"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Extended Zones Skill

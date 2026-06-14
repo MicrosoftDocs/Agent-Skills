@@ -41,8 +41,8 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Test Plans (u
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 6
-- **Unchanged**: 120
+- **Updated Pages**: 0
+- **Unchanged**: 126
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-boards/azure-boards.csv`
 
@@ -60,21 +60,6 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Test Plans (u
 | *(Unclassified)* | 94 | 74.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [About boards](https://learn.microsoft.com/en-us/azure/devops/boards/boards/kanban-overview?view=azure-devops)
-  - Updated: 2025-07-24T08:00:00.000Z → 2026-05-07T21:03:00.000Z
-- [Manage issues](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/manage-issues-impediments?view=azure-devops)
-  - Updated: 2026-03-27T21:05:00.000Z → 2026-05-07T21:03:00.000Z
-- [Move work items from one team to another](https://learn.microsoft.com/en-us/azure/devops/boards/work-items/move-work-items?view=azure-devops)
-  - Updated: 2026-03-02T14:06:00.000Z → 2026-06-04T21:08:00.000Z
-- [About backlogs](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/backlogs-overview?view=azure-devops)
-  - Updated: 2025-12-22T08:00:00.000Z → 2026-06-03T20:26:00.000Z
-- [Define features & epics](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/define-features-epics?view=azure-devops)
-  - Updated: 2026-03-02T14:06:00.000Z → 2026-05-08T17:05:00.000Z
-- [Organize your backlog (map or reparent)](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/organize-backlog?view=azure-devops)
-  - Updated: 2026-03-04T02:02:00.000Z → 2026-05-07T21:03:00.000Z
 
 ## Classified Pages
 

@@ -3,7 +3,7 @@ name: azure-managed-lustre
 description: Expert knowledge for Azure Managed Lustre development including troubleshooting, best practices, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Blob sync, AKS CSI, Terraform, AzCopy pipelines, HA/DR layouts, or quota-tuned HPC workloads, and other Azure Managed Lustre related development tasks. Not for Azure HPC Cache (use azure-hpc-cache), Azure NetApp Files (use azure-netapp-files), Azure Virtual Machines (use azure-virtual-machines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-07"
+  generated_at: "2026-06-14"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Managed Lustre Skill
@@ -29,9 +29,9 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L48-L52 | Designing Azure Managed Lustre for high availability, regional redundancy, disaster recovery, and failover strategies across regions or zones |
 | Limits & Quotas | L53-L57 | Configuring and managing user, group, and project storage quotas in Azure Managed Lustre, including setup steps, commands, and best practices for capacity control. |
 | Security | L58-L67 | Securing Azure Managed Lustre: secure boot, firewalls/NSGs, CMK encryption, root squash access controls, and virtual network encryption configuration and validation. |
-| Configuration | L68-L78 | Configuring Azure Managed Lustre clients and file systems: network/storage prerequisites, fstab auto-mounts, client install/upgrade, ARM/Bicep deployment, and monitoring/metrics with Azure Monitor. |
-| Integrations & Coding Patterns | L79-L91 | Integrating Azure Managed Lustre with Blob Storage, Linux/AKS clients, Terraform, and AzCopy, including import/export pipelines, auto-sync, and CSI driver-based Kubernetes usage. |
-| Deployment | L92-L95 | Planning how to install and configure Azure Managed Lustre clients on compute nodes, including supported methods, prerequisites, and deployment considerations. |
+| Configuration | L68-L77 | Configuring Azure Managed Lustre clients and file systems: network/storage prerequisites, fstab auto-mounts, client install/upgrade, ARM/Bicep deployment, and monitoring/metrics with Azure Monitor. |
+| Integrations & Coding Patterns | L78-L90 | Integrating Azure Managed Lustre with Blob Storage, Linux/AKS clients, Terraform, and AzCopy, including import/export pipelines, auto-sync, and CSI driver-based Kubernetes usage. |
+| Deployment | L91-L94 | Planning how to install and configure Azure Managed Lustre clients on compute nodes, including supported methods, prerequisites, and deployment considerations. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -70,7 +70,6 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Configure network and storage prerequisites for Azure Managed Lustre | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/amlfs-prerequisites |
 | Configure fstab for automatic Azure Managed Lustre mounts | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/automount-clients-fstab |
-| Install Azure Managed Lustre client packages | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/client-install |
 | Upgrade Azure Managed Lustre client software | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/client-upgrade |
 | Define ARM/Bicep templates for Azure Managed Lustre file systems | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/create-file-system-resource-manager |
 | Configure monitoring and alerts for Azure Managed Lustre with Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/monitor-file-system |

@@ -44,9 +44,9 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Virtual Net
 - **Unclassified**: 36
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 64
+- **Unchanged**: 65
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-network-watcher/azure-network-watcher.csv`
 
@@ -63,10 +63,6 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Virtual Net
 | *(Unclassified)* | 36 | 55.4% |
 
 ## Changes
-
-### New Pages
-
-- [Secure Network Watcher deployment](https://learn.microsoft.com/en-us/azure/network-watcher/secure-network-watcher)
 
 ## Classified Pages
 

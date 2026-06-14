@@ -1,9 +1,9 @@
 ---
 name: azure-cosmos-db
-description: Expert knowledge for Azure Cosmos DB development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building Cosmos DB NoSQL/Mongo/Cassandra apps, using change feed, multi-region, vector search, or AI/RAG, and other Azure Cosmos DB related development tasks. Not for Azure Table Storage (use azure-table-storage), Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance), Azure Data Explorer (use azure-data-explorer).
+description: Expert knowledge for Azure Cosmos DB development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Cosmos DB NoSQL/Mongo/Cassandra APIs, change feed, vector search, multi-region, or AI/RAG workloads, and other Azure Cosmos DB related development tasks. Not for Azure Table Storage (use azure-table-storage), Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance), Azure Data Explorer (use azure-data-explorer).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-07"
+  generated_at: "2026-06-14"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Cosmos DB Skill
@@ -25,13 +25,13 @@ This skill requires **network access** to fetch documentation content:
 | Category | Location | Description |
 |----------|----------|-------------|
 | Troubleshooting | L37-L90 | Diagnosing and fixing Cosmos DB issues across APIs (Cassandra, Gremlin, MongoDB, PostgreSQL, SQL), including errors, timeouts, performance, encryption/CMK, connectivity, and SDK/client problems. |
-| Best Practices | L91-L154 | Best practices for performance, cost, partitioning, indexing, consistency, SDK usage, change feed, DR/HA, and workload tuning across Cosmos DB APIs (NoSQL, Mongo, Cassandra, PostgreSQL, DocumentDB). |
-| Decision Making | L155-L216 | Guidance on choosing Cosmos/DocumentDB/PostgreSQL options (consistency, throughput, regions, pricing), and planning migrations, upgrades, scaling, analytics, and backup/restore strategies. |
-| Architecture & Design Patterns | L217-L249 | Architectural patterns for AI/RAG, agent memory, knowledge graphs, multi-tenant and microservice designs, high availability, change feed, analytics, and vector search on Cosmos DB and PostgreSQL. |
-| Limits & Quotas | L250-L291 | Limits, quotas, and behaviors for Cosmos DB (and DocumentDB): throughput, autoscale, burst capacity, partitions, backups/restore, serverless, indexing, free tier, and PostgreSQL/Cassandra limits. |
-| Security | L292-L363 | Securing Cosmos DB across all APIs: identity/RBAC, network isolation (firewall, Private Link, vnets), encryption/CMK, auditing, data masking, TLS, governance/Policy, and Defender integration. |
-| Configuration | L364-L496 | Configuring Cosmos DB and related services: throughput, indexing, backup/restore, monitoring, emulators, vector/search, multi-region, Cassandra/Mongo/PostgreSQL/Table APIs, and SDK performance/observability. |
-| Integrations & Coding Patterns | [integrations.md](integrations.md) | SDK patterns, bulk ops, change feed, Kafka/Spark/BI integrations, vector search, RAG/AI patterns, and language-specific samples for Cosmos DB (NoSQL, Mongo, Cassandra, PostgreSQL, Gremlin). |
+| Best Practices | L91-L157 | Performance, cost, resiliency, and SDK best practices for Cosmos DB (NoSQL, Mongo, Cassandra, PostgreSQL), including partitioning, indexing, RU optimization, change feed, HA/DR, and scaling. |
+| Decision Making | L158-L219 | Guides for choosing Cosmos DB/DocumentDB/PostgreSQL options (throughput, consistency, regions, pricing) and planning migrations, upgrades, analytics, and vector index strategies. |
+| Architecture & Design Patterns | L220-L252 | Architectural patterns for AI/RAG, agent memory, knowledge graphs, multi-tenant and microservice designs, high availability, change feed, analytics, and vector search on Cosmos DB and PostgreSQL. |
+| Limits & Quotas | L253-L293 | Limits, quotas, and behaviors for Cosmos DB (and DocumentDB): throughput, autoscale, burst, partitions, backups/restore, serverless, free tier, indexing, Gremlin, PostgreSQL, and Cassandra. |
+| Security | L294-L365 | Securing Cosmos DB: identity/RBAC, network isolation, encryption/CMK, auditing, data masking, TLS, governance/Policy, and best practices across NoSQL, MongoDB, Cassandra, Gremlin, PostgreSQL, and DocumentDB. |
+| Configuration | L366-L498 | Configuring Cosmos DB and related services: throughput, indexing, backup/restore, monitoring, emulators, vector/search, multi-region, Cassandra/Mongo/PostgreSQL/Table APIs, and SDK performance/observability. |
+| Integrations & Coding Patterns | [integrations.md](integrations.md) | SDK usage, bulk ops, change feed, vector search, Kafka/Spark/AI integrations, and migration patterns for Cosmos DB (NoSQL, Mongo, Cassandra, Gremlin, PostgreSQL, DocumentDB). |
 | Deployment | [deployment.md](deployment.md) | Deploying and managing Cosmos DB (NoSQL, Mongo, Cassandra, PostgreSQL, Table, DocumentDB) with Bicep/ARM/Terraform, CI/CD, emulator, migrations, upgrades, and maintenance. |
 
 ### Troubleshooting
@@ -114,7 +114,7 @@ This skill requires **network access** to fetch documentation content:
 | Choose IoT partition keys for Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/design-partitioning-iot |
 | Apply disaster recovery strategies for Azure Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/disaster-recovery-guidance |
 | Optimize vector indexing and search in Azure Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/vector-search-performance-tips |
-| Apply Cosmos DB best practices with GitHub Copilot in VS Code | https://learn.microsoft.com/en-us/azure/cosmos-db/github-copilot-visual-studio-code-best-practices |
+| Apply GitHub Copilot best practices for Azure Cosmos DB in VS Code | https://learn.microsoft.com/en-us/azure/cosmos-db/github-copilot-visual-studio-code-best-practices |
 | Use hierarchical partition keys for scalable Cosmos DB data | https://learn.microsoft.com/en-us/azure/cosmos-db/hierarchical-partition-keys |
 | Enable autoscale throughput for Cosmos DB resources | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-provision-autoscale-throughput |
 | Use shared database throughput safely in Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-provision-database-throughput |
@@ -145,6 +145,9 @@ This skill requires **network access** to fetch documentation content:
 | Apply cross-region replication best practices in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/cross-region-replication |
 | Implement HA and cross-region replication best practices in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/high-availability-replication-best-practices |
 | Follow indexing best practices for DocumentDB collections | https://learn.microsoft.com/en-us/azure/documentdb/how-to-create-indexes |
+| Configure and tune text indexes in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/how-to-create-text-index |
+| Design and use wildcard indexes in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/how-to-create-wildcard-indexes |
+| Migrate safely to ordered indexes in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/how-to-migrate-ordered-indexes |
 | Optimize Azure DocumentDB queries using Index Advisor | https://learn.microsoft.com/en-us/azure/documentdb/index-advisor |
 | Design sharding strategy for scalable Azure DocumentDB collections | https://learn.microsoft.com/en-us/azure/documentdb/partitioning |
 | Apply security best practices for Azure DocumentDB clusters | https://learn.microsoft.com/en-us/azure/documentdb/security |
@@ -203,15 +206,15 @@ This skill requires **network access** to fetch documentation content:
 | Evaluate MongoDB feature compatibility in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/compatibility-features |
 | Assess MongoDB Query Language compatibility in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/compatibility-query-language |
 | Choose Azure DocumentDB cross-region failover modes | https://learn.microsoft.com/en-us/azure/documentdb/failover-modes |
-| Assess MongoDB readiness for DocumentDB migration | https://learn.microsoft.com/en-us/azure/documentdb/how-to-assess-plan-migration-readiness |
+| Assess MongoDB workloads for migration to Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/how-to-assess-plan-migration-readiness |
 | Evaluate MongoDB compatibility for managed DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/managed-service-compatibility |
 | Choose migration options from MongoDB to DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/migration-options |
 | Plan MongoDB to DocumentDB migration strategies | https://learn.microsoft.com/en-us/azure/documentdb/migration-options |
-| Evaluate vector index algorithms with .NET in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-dotnet-select-algorithm |
-| Compare vector index options with Go in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-go-select-algorithm |
-| Test and select vector indexes with Java in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-java-select-algorithm |
-| Choose vector index algorithms with TypeScript | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-nodejs-select-algorithm |
-| Select optimal vector index with Python in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-python-select-algorithm |
+| Compare vector search algorithms in DocumentDB using .NET | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-dotnet-select-algorithm |
+| Compare and tune DocumentDB vector index algorithms in Go | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-go-select-algorithm |
+| Evaluate DocumentDB vector index algorithms using Java | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-java-select-algorithm |
+| Select vector index algorithm in DocumentDB with TypeScript | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-nodejs-select-algorithm |
+| Choose optimal vector index and similarity in DocumentDB (Python) | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-python-select-algorithm |
 | Select Azure DocumentDB regions for deployment | https://learn.microsoft.com/en-us/azure/documentdb/regional-availability |
 
 ### Architecture & Design Patterns
@@ -283,8 +286,7 @@ This skill requires **network access** to fetch documentation content:
 | Azure DocumentDB FAQ with limits and behaviors | https://learn.microsoft.com/en-us/azure/documentdb/faq |
 | Understand Azure DocumentDB Free Tier limits | https://learn.microsoft.com/en-us/azure/documentdb/free-tier |
 | Configure Premium SSD v2 performance for Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/high-performance-storage |
-| Configure and tune text indexes in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/how-to-create-text-index |
-| Understand indexing defaults and limits in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/indexing |
+| Understand and configure indexes in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/indexing |
 | Reference Azure DocumentDB service limits and quotas | https://learn.microsoft.com/en-us/azure/documentdb/limitations |
 | Understand document size and batch write limits in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/max-document-size |
 | Review limits and configuration FAQs for Cassandra managed instances | https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/faq |
@@ -351,14 +353,14 @@ This skill requires **network access** to fetch documentation content:
 | Secure Azure Cosmos DB for Table accounts and data | https://learn.microsoft.com/en-us/azure/cosmos-db/table/security |
 | Prepare Cosmos DB workloads for TLS 1.3 support | https://learn.microsoft.com/en-us/azure/cosmos-db/tls-support |
 | Configure Azure DocumentDB firewall rules for secure access | https://learn.microsoft.com/en-us/azure/documentdb/how-to-configure-firewall |
-| Configure Entra ID RBAC authentication for Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/how-to-connect-role-based-access-control |
+| Configure Entra ID RBAC access for Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/how-to-connect-role-based-access-control |
 | Configure customer-managed key encryption for Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/how-to-data-encryption |
 | Use Azure Private Link with Azure DocumentDB securely | https://learn.microsoft.com/en-us/azure/documentdb/how-to-private-link |
 | Manage public network access to Azure DocumentDB clusters | https://learn.microsoft.com/en-us/azure/documentdb/how-to-public-access |
 | Manage secondary native users and privileges in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/secondary-users |
 | Assign Cosmos DB service principal roles for Cassandra managed instances | https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/add-service-principal |
 | Configure customer-managed keys for Cassandra managed instances | https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/customer-managed-keys |
-| Enable LDAP authentication for Cassandra managed instance clusters | https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/ldap |
+| Configure LDAP authentication for Azure Cassandra MI | https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/ldap |
 | Secure Cassandra managed instances with VPN and routing rules | https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/use-vpn |
 
 ### Configuration

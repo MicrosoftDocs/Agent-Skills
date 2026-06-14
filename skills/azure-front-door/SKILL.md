@@ -1,9 +1,9 @@
 ---
 name: azure-front-door
-description: Expert knowledge for Azure Front Door development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring apex domains, rules engine/CDN, Standard vs Premium tiers, DevOps IaC, or TLS/Private Link, and other Azure Front Door related development tasks. Not for Azure Application Gateway (use azure-application-gateway), Azure Traffic Manager (use azure-traffic-manager), Azure Load Balancer (use azure-load-balancer), Azure Web Application Firewall (use azure-web-application-firewall).
+description: Expert knowledge for Azure Front Door development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring Front Door routing/caching, rules engine, TLS/origin auth, CDN video delivery, or POP limits, and other Azure Front Door related development tasks. Not for Azure Application Gateway (use azure-application-gateway), Azure Traffic Manager (use azure-traffic-manager), Azure Load Balancer (use azure-load-balancer), Azure Web Application Firewall (use azure-web-application-firewall).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-31"
+  generated_at: "2026-06-14"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Front Door Skill
@@ -28,7 +28,7 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L42-L48 | Designing optimal Front Door configs, rules engine patterns, and CDN tuning for video-on-demand/live streaming performance, reliability, and cost efficiency. |
 | Decision Making | L49-L60 | Guidance on Front Door pricing and billing, comparing Standard/Premium/Classic and CDN tiers, and planning or executing migrations and upgrades between them. |
 | Architecture & Design Patterns | L61-L69 | Architectural patterns for Azure Front Door: apex domain setup, blue/green deployments, manual failover with Traffic Manager, static blob hosting, reliable uploads, and well-architected design guidance. |
-| Limits & Quotas | L70-L78 | POP codes and locations, regional POP lists, Front Door limits/quotas and behaviors, composite routing limits, and subscription-level bandwidth throttling details. |
+| Limits & Quotas | L70-L78 | POP codes and locations, regional POP lists, Front Door limits/quotas and behaviors, routing composite limits, and subscription-level bandwidth throttling details. |
 | Security | L79-L95 | TLS/HTTPS setup, cipher/TLS policy control, security headers, managed identity and origin auth, private link/direct access protection, and log scrubbing/sensitive data protection. |
 | Configuration | L96-L123 | Configuring Azure Front Door behavior: caching, rules/rewrite, headers/protocols, compression, Private Link backends, WebSockets, monitoring, and cache purge via portal/CLI/PowerShell. |
 | Integrations & Coding Patterns | L124-L129 | Automating Azure Front Door setup with Azure CLI/PowerShell, including creating profiles, endpoints, and delivery rules via scripts and command-line workflows. |
@@ -72,7 +72,7 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Map Azure Front Door POP abbreviations to locations | https://learn.microsoft.com/en-us/azure/frontdoor/edge-locations-by-abbreviation |
 | Review Azure Front Door POP locations by region | https://learn.microsoft.com/en-us/azure/frontdoor/edge-locations-by-region |
-| Azure Front Door FAQs with limits and behaviors | https://learn.microsoft.com/en-us/azure/frontdoor/front-door-faq |
+| Azure Front Door FAQs on limits and behavior | https://learn.microsoft.com/en-us/azure/frontdoor/front-door-faq |
 | Understand Azure Front Door routing composite limits | https://learn.microsoft.com/en-us/azure/frontdoor/front-door-routing-limits |
 | Understand Front Door Standard/Premium bandwidth throttling by subscription | https://learn.microsoft.com/en-us/azure/frontdoor/standard-premium/subscription-offers |
 

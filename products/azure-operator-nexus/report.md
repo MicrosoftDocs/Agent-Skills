@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-07'
+generated_at: '2026-06-14'
 category_descriptions:
   configuration: 'Configuring and operating Azure Operator Nexus clusters and network
     fabric: JSON templates, isolation domains, BGP/VRF/route policies, QoS, monitoring,
@@ -47,16 +47,16 @@ confusable_not_for: Not for Azure Network Function Manager (use azure-network-fu
 
 ## Summary
 
-- **Total Pages**: 216
-- **Fetched**: 216
+- **Total Pages**: 218
+- **Fetched**: 218
 - **Fetch Failed**: 0
-- **Classified**: 164
-- **Unclassified**: 52
+- **Classified**: 162
+- **Unclassified**: 56
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 214
+- **New Pages**: 2
+- **Updated Pages**: 4
+- **Unchanged**: 212
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-operator-nexus/azure-operator-nexus.csv`
 
@@ -66,23 +66,32 @@ confusable_not_for: Not for Azure Network Function Manager (use azure-network-fu
 |------|-------|------------|
 | architecture-patterns | 1 | 0.5% |
 | best-practices | 2 | 0.9% |
-| configuration | 63 | 29.2% |
-| decision-making | 4 | 1.9% |
-| deployment | 6 | 2.8% |
+| configuration | 62 | 28.4% |
+| decision-making | 4 | 1.8% |
+| deployment | 5 | 2.3% |
 | integrations | 1 | 0.5% |
-| limits-quotas | 9 | 4.2% |
-| security | 36 | 16.7% |
-| troubleshooting | 42 | 19.4% |
-| *(Unclassified)* | 52 | 24.1% |
+| limits-quotas | 9 | 4.1% |
+| security | 36 | 16.5% |
+| troubleshooting | 42 | 19.3% |
+| *(Unclassified)* | 56 | 25.7% |
 
 ## Changes
 
+### New Pages
+
+- [Network-to-Network Interconnect (NNI)](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-network-to-network-interconnect)
+- [How to update a Network-to-Network Interconnect (NNI)](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-update-network-to-network-interconnect)
+
 ### Updated Pages
 
-- [Cluster](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-configure-cluster)
-  - Updated: 2026-05-15T22:06:00.000Z → 2026-06-01T22:04:00.000Z
-- [Certificate Rotation](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-certificate-rotation)
-  - Updated: 2026-04-22T17:03:00.000Z → 2026-06-04T17:03:00.000Z
+- [Cluster deployment](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-cluster-deployment-overview)
+  - Updated: 2026-02-27T23:05:00.000Z → 2026-06-11T22:13:00.000Z
+- [Cluster Runtime upgrade](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-cluster-upgrade-overview)
+  - Updated: 2026-01-20T23:02:00.000Z → 2026-06-11T22:13:00.000Z
+- [How to put a device into maintenance mode](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-put-device-in-maintenance-mode)
+  - Updated: 2025-09-17T16:51:00.000Z → 2026-06-11T17:12:00.000Z
+- [How to replace network devices in Azure Operator Nexus Network Fabric](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-replace-network-devices)
+  - Updated: 2025-09-22T17:03:00.000Z → 2026-06-11T17:12:00.000Z
 
 ## Classified Pages
 
@@ -196,9 +205,7 @@ confusable_not_for: Not for Azure Network Function Manager (use azure-network-fu
 | [How to enable / disable BMP log streaming Azure Operator Nexus](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-enable-log-streaming) | configuration | 0.70 | How-to for toggling BMP log streaming on specific Nexus resources; likely includes resource types, flags, and configuration fields unique to this product. |
 | [How to enable-Micro-BFD on CE and PE devices](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-enable-micro-bfd) | configuration | 0.70 | Step-by-step enabling of Micro-BFD with Nexus-specific device roles and configuration commands/parameters. |
 | [How to perform A / B staged configuration update - commit workflow in Azure Operator Nexus](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-use-ab-staged-commit-configuration-update-commit-workflow) | configuration | 0.70 | Describes A/B staged commit pattern for configuration updates; Nexus-specific workflow semantics and steps. |
-| [How to put a device into maintenance mode](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-put-device-in-maintenance-mode) | configuration | 0.70 | Describes maintenance mode behavior (process shutdown, port disable, traffic redirection) and how to invoke it via Nexus APIs; product-specific operational configuration. |
 | [How to reboot Network Device in Azure Operator Nexus Network Fabric](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-reboot-network-device) | configuration | 0.70 | Describes new POST action on device resource, reboot modes, and monitoring via configuration state; Nexus-specific API behavior. |
-| [How to replace network devices in Azure Operator Nexus Network Fabric](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-replace-network-devices) | deployment | 0.70 | Details replacement workflow for TOR, CE, NPB, and management switches via RMA with minimal disruption; product-specific operational/deployment pattern. |
 | [How to restrict serial port access and set timeout on terminal-server](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-restrict-serial-port-access-and-set-timeout-on-terminal-server) | security | 0.70 | Configures session limits and timeout values for serial ports on terminal servers; includes specific security-related settings and parameters. |
 | [How to set administrative lock or unlock for Network fabric](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-set-administrative-lock-or-unlock-for-network-fabric) | configuration | 0.70 | How-to for a product-specific feature (Administrative Lock in NNF 8.2) that controls write/update operations on fabric resources. Likely includes specific commands/parameters and allowed operations when locked, which are configuration details unique to Azure Operator Nexus rather than generic concepts. |
 | [How to use Password Rotation v1 in Azure Operator Nexus](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-use-password-rotation-v1) | security | 0.70 | Explains prerequisites and process for rotating passwords in Nexus; security-focused configuration with product-specific mechanisms. |
@@ -274,13 +281,14 @@ confusable_not_for: Not for Azure Network Function Manager (use azure-network-fu
 | [BMP log streaming in Azure Operator Nexus Network Fabric](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-bmp-log-streaming) | 0.40 | Conceptual overview of BMP log streaming and its importance; no clear evidence of detailed configuration parameters or error mappings. |
 | [Before you start deployment](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-azure-operator-nexus-prerequisites) | 0.40 | Prerequisites for NFC and CM; mentions quotas but not specific numeric values or detailed configuration parameters in summary. |
 | [Before you start workload deployment](https://learn.microsoft.com/en-us/azure/operator-nexus/quickstarts-tenant-workload-prerequisites) | 0.40 | Prerequisites quickstart; likely lists basic requirements but summary does not show detailed config tables or limits. |
+| [How to put a device into maintenance mode](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-put-device-in-maintenance-mode) | 0.40 | Procedural how-to for putting a Nexus Network Fabric device into maintenance mode; summary does not indicate specific configuration parameters, limits, error codes, or product-specific settings tables. Appears to be step-by-step operational guidance rather than expert reference data as defined. |
+| [How to replace network devices in Azure Operator Nexus Network Fabric](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-replace-network-devices) | 0.40 | Describes RMA-based replacement of network devices in Azure Operator Nexus Network Fabric. From the summary, it is a process guide without explicit limits, configuration tables, error codes, or decision matrices; thus it does not meet the expert-knowledge criteria for any sub-skill type. |
+| [How to update a Network-to-Network Interconnect (NNI)](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-update-network-to-network-interconnect) | 0.40 | Explains how to update an NNI resource and mentions prerequisites and commit workflow, but the summary does not show concrete limits, configuration parameter tables, or troubleshooting mappings. It appears to be a procedural update guide rather than expert reference content per the defined categories. |
 | [Network Fabric OptionA and OptionB](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-network-fabric-optiona-optionb) | 0.40 | Option A/B article appears to be conceptual BGP peering models; summary lacks concrete decision matrices or numeric thresholds. |
 | [Network Packet Broker](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-nexus-network-packet-broker) | 0.40 | Network Packet Broker overview; summary mentions capabilities but not detailed config parameters or limits. |
 | [Overview](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-nexus-kubernetes-cluster) | 0.40 | Nexus Kubernetes Cluster Service introduction; conceptual overview of managed AKS on Nexus. |
 | [Site decommission checklist](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-decommission-nexus-instance-checklist) | 0.40 | Described as a high-level decommissioning checklist; summary doesn’t indicate detailed commands, limits, or configuration parameters. |
 | [Baseboard Management Controller Credential Rotation Overview](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-baseboard-management-controller-credential-rotation) | 0.35 | Describes BMC credential rotation states conceptually; no specific Key Vault, identity, or rotation interval parameters exposed in summary. |
-| [Cluster Runtime upgrade](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-cluster-upgrade-overview) | 0.35 | Runtime upgrade overview; disruptive vs non-disruptive explanation but no specific error codes or config values in summary. |
-| [Cluster deployment](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-cluster-deployment-overview) | 0.35 | Cluster deployment overview; likely conceptual lifecycle description without detailed matrices or limits. |
 | [Cluster management upgrade](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-cluster-management-upgrade) | 0.35 | Cluster management upgrade overview; high-level description of automatic upgrades without detailed parameters. |
 | [Network Fabric Controller](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-network-fabric-controller) | 0.35 | Network Fabric Controller overview; conceptual description of role and capabilities. |
 | [Network Fabric Services](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-network-fabric-services) | 0.35 | Network Fabric Services overview; describes ExpressRoute-based connectivity conceptually. |
@@ -298,12 +306,15 @@ confusable_not_for: Not for Azure Network Function Manager (use azure-network-fu
 | [Compute overview](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-compute) | 0.30 | Compute overview; lacks specific configuration parameters, limits, or troubleshooting content. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/operator-nexus/azure-operator-nexus-faq) | 0.30 | FAQ content is typically high-level Q&A without detailed numeric limits, configuration tables, or structured troubleshooting mappings. |
 | [List of metrics collected](https://learn.microsoft.com/en-us/azure/operator-nexus/list-of-metrics-collected) | 0.30 | A list of metrics names is largely descriptive/telemetry catalog; summary does not indicate configuration parameters, limits, or error mappings. Likely just metric names and dimensions without deep product-specific behavior or thresholds. |
+| [Network-to-Network Interconnect (NNI)](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-network-to-network-interconnect) | 0.30 | Explains what Network-to-Network Interconnect is and its role in Nexus Network Fabric, but does not expose numeric limits, configuration tables, or detailed integration parameters. |
 | [PKI implementation](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-pki-implementation) | 0.30 | Describes PKI architecture conceptually; no specific certificate parameters, config tables, or role mappings. |
 | [Resource Types](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-resource-types) | 0.30 | Conceptual overview of resource types; no detailed configuration tables or limits. |
 | [Storage overview](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-storage) | 0.30 | Storage appliance overview; no explicit limits, config tables, or error mappings in summary. |
 | [Telco Input Template](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-telco-input-template) | 0.30 | Concept article about representing a Nexus instance in a template; summary suggests conceptual only. |
 | [Upgrade Nexus Kubernetes cluster](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-kubernetes-cluster-upgrade) | 0.30 | Describes how to upgrade an Operator Nexus Kubernetes cluster and why upgrades are important. From the summary, it seems like a step-by-step lifecycle/operations guide without explicit limits, configuration matrices, or detailed error-code troubleshooting, so it likely does not contain the kind of expert reference data required. |
 | [Availability](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-nexus-availability) | 0.25 | Availability overview and planning topics; no explicit limits, thresholds, or configuration tables indicated. |
+| [Cluster Runtime upgrade](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-cluster-upgrade-overview) | 0.20 | Conceptual description of disruptive vs non-disruptive cluster runtime upgrades; lacks concrete configuration values, error codes, or quantified decision criteria. |
+| [Cluster deployment](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-cluster-deployment-overview) | 0.20 | High-level overview of Azure Operator Nexus cluster deployment lifecycle without specific limits, configuration parameters, decision matrices, or troubleshooting details. |
 | [Control Plane Resiliency](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-rack-resiliency) | 0.20 | Rack resiliency overview; no quantified thresholds, decision matrices, or configuration parameters. |
 | [Hardware Validation](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-hardware-validation-overview) | 0.20 | High-level overview of hardware validation and BMC/iDRAC context without specific limits, configuration parameters, error codes, or decision matrices. |
 | [Near-edge Compute](https://learn.microsoft.com/en-us/azure/operator-nexus/reference-near-edge-compute) | 0.20 | Described as an overview of near-edge compute SKUs and resources; sounds conceptual/architectural without explicit limits, configuration tables, or decision matrices. |

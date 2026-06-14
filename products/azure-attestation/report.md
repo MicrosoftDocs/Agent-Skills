@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-17'
+generated_at: '2026-06-14'
 category_descriptions:
   best-practices: Guidance on validating attestation tokens, writing secure attestation
     policies, and configuring/enforcing SGX and TPM attestation baselines using sample
@@ -7,14 +7,14 @@ category_descriptions:
   configuration: Configuring Azure Attestation policies (grammar, versions, claim
     rules), policy signer certs, and monitoring/logging via Azure Monitor, CLI, PowerShell,
     and log schema.
-  troubleshooting: Diagnosing and fixing common Azure Attestation failures, error
-    codes, policy/quote validation issues, configuration mistakes, and connectivity
-    or runtime problems.
   security: Using Azure Policy to govern attestation providers, and securing Azure
     Attestation with private endpoints, firewalls, managed identities, and access
     control settings
   deployment: How to create and configure a private endpoint for Azure Attestation
     using PowerShell, including network setup and secure access to attestation resources.
+  troubleshooting: Diagnosing and fixing common Azure Attestation failures, error
+    codes, policy/quote validation issues, configuration mistakes, and connectivity
+    or runtime problems.
 skill_description: Expert knowledge for Azure Attestation development including troubleshooting,
   best practices, security, configuration, and deployment. Use when validating attestation
   tokens, authoring policies, managing SGX/TPM baselines, or securing private endpoints,
@@ -35,13 +35,13 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 - **Total Pages**: 33
 - **Fetched**: 33
 - **Fetch Failed**: 0
-- **Classified**: 23
-- **Unclassified**: 10
+- **Classified**: 22
+- **Unclassified**: 11
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 33
+- **Updated Pages**: 1
+- **Unchanged**: 32
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-attestation/azure-attestation.csv`
 
@@ -53,10 +53,15 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 | configuration | 13 | 39.4% |
 | deployment | 1 | 3.0% |
 | security | 2 | 6.1% |
-| troubleshooting | 2 | 6.1% |
-| *(Unclassified)* | 10 | 30.3% |
+| troubleshooting | 1 | 3.0% |
+| *(Unclassified)* | 11 | 33.3% |
 
 ## Changes
+
+### Updated Pages
+
+- [FAQ](https://learn.microsoft.com/en-us/azure/attestation/faq)
+  - Updated: 2024-08-07T16:44:00.000Z → 2026-06-12T22:35:00.000Z
 
 ## Classified Pages
 
@@ -78,7 +83,6 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 | [Enforce custom TCB baseline for SGX attestation](https://learn.microsoft.com/en-us/azure/attestation/custom-tcb-baseline-enforcement) | best-practices | 0.70 | Describes how Azure Attestation validates SGX evidence against default TCB baseline and how to customize it; contains product-specific behavior and configuration steps that are nuanced and not generic. |
 | [How to interpret Azure Attestation logs](https://learn.microsoft.com/en-us/azure/attestation/view-logs) | configuration | 0.70 | Describes full logs collected, timing (up to 10 minutes), and how they are stored; likely includes schema details and field meanings, which are product-specific monitoring configuration/reference. |
 | [Policy signer certificate](https://learn.microsoft.com/en-us/azure/attestation/policy-signer-examples) | configuration | 0.70 | Describes certificate content and file formats for create/add/delete signer flows; includes specific format requirements and usage patterns unique to Azure Attestation. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/attestation/faq) | troubleshooting | 0.68 | FAQ pages for security services typically include product-specific behaviors, constraints, and clarifications (for example, supported enclave types, policy evaluation nuances, region/tenant behaviors, and error or scenario-specific guidance) that go beyond generic concepts. While organized as FAQs rather than a formal troubleshooting guide, such content effectively maps concrete questions/symptoms to causes and resolutions unique to Azure Attestation, which fits the troubleshooting sub-skill better than the other categories. |
 | [Attestation token](https://learn.microsoft.com/en-us/azure/attestation/attestation-token-examples) | best-practices | 0.65 | Shows example attestation tokens produced by policies; provides concrete token structure and claim patterns that help implementers correctly consume tokens. |
 | [Claim sets](https://learn.microsoft.com/en-us/azure/attestation/claim-sets) | configuration | 0.65 | Describes categories of claims generated during attestation; likely enumerates specific claim names and meanings, which are product-specific reference details. |
 | [Monitor Azure Attestation](https://learn.microsoft.com/en-us/azure/attestation/monitor-logs) | configuration | 0.65 | Monitoring article for a specific service typically lists metrics, log categories, and example queries; these are configuration/usage details for monitoring rather than generic concepts. |
@@ -100,3 +104,4 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 | [TPM attestation overview](https://learn.microsoft.com/en-us/azure/attestation/tpm-attestation-concepts) | 0.25 | TPM attestation overview and capabilities; mostly conceptual description of measured boot and attestation scenarios, not detailed config or error handling. |
 | [About Microsoft Azure Attestation](https://learn.microsoft.com/en-us/azure/attestation/overview) | 0.20 | High-level service overview without numeric limits, configuration tables, or detailed patterns; mostly conceptual description of Azure Attestation capabilities. |
 | [Basic concepts](https://learn.microsoft.com/en-us/azure/attestation/basic-concepts) | 0.20 | Basic concepts article; primarily definitions and conceptual explanations without detailed configuration, limits, or troubleshooting mappings. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/attestation/faq) | 0.20 | FAQ page description suggests general Q&A without clear indication of specific limits, configuration tables, error-code mappings, or other detailed expert-only data. Lacking evidence of structured troubleshooting, limits, or configuration parameters as defined by the sub-skill criteria. |

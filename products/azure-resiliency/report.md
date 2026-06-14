@@ -34,10 +34,10 @@ confusable_not_for: Not for Azure Reliability (use azure-reliability), Azure Sit
 - **Unclassified**: 24
 
 ### Incremental Update
-- **New Pages**: 15
-- **Updated Pages**: 1
-- **Unchanged**: 18
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 34
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-resiliency/azure-resiliency.csv`
 
 ## Classification Statistics
@@ -50,33 +50,6 @@ confusable_not_for: Not for Azure Reliability (use azure-reliability), Azure Sit
 | *(Unclassified)* | 24 | 70.6% |
 
 ## Changes
-
-### New Pages
-
-- [What's new](https://learn.microsoft.com/en-us/azure/resiliency/resiliency-whats-new)
-- [Availability Zone Down Drills](https://learn.microsoft.com/en-us/azure/resiliency/availability-zone-down-drills-about)
-- [Goals and recommendations](https://learn.microsoft.com/en-us/azure/resiliency/goals-recommendations-about)
-- [Recovery orchestration plan](https://learn.microsoft.com/en-us/azure/resiliency/recovery-orchestration-plan-about)
-- [Resiliency support matrix](https://learn.microsoft.com/en-us/azure/resiliency/resiliency-support-matrix)
-- [Availability zone down drills](https://learn.microsoft.com/en-us/azure/resiliency/availability-zone-down-drills-support-matrix)
-- [Goals and recommendations](https://learn.microsoft.com/en-us/azure/resiliency/goals-recommendations-support-matrix)
-- [Recovery orchestration plan](https://learn.microsoft.com/en-us/azure/resiliency/recovery-orchestration-plan-support-matrix)
-- [Define](https://learn.microsoft.com/en-us/azure/resiliency/availability-zone-down-drill-define)
-- [Execute](https://learn.microsoft.com/en-us/azure/resiliency/availability-zone-down-drill-execute)
-- [Assign goals and view resiliency posture](https://learn.microsoft.com/en-us/azure/resiliency/goals-recommendations-assign-goals-view-posture)
-- [Review recommendations](https://learn.microsoft.com/en-us/azure/resiliency/goals-recommendations-review-recommendations)
-- [Use the Resiliency agent](https://learn.microsoft.com/en-us/azure/resiliency/goals-recommendations-use-agent)
-- [Create and configure](https://learn.microsoft.com/en-us/azure/resiliency/recovery-orchestration-plan-create-configure)
-- [Execute](https://learn.microsoft.com/en-us/azure/resiliency/recovery-orchestration-plan-execute)
-
-### Updated Pages
-
-- [Overview](https://learn.microsoft.com/en-us/azure/resiliency/resiliency-overview)
-  - Updated: 2025-11-19T08:00:00.000Z → 2026-06-02T18:53:00.000Z
-
-### Deleted Pages
-
-- ~~Support matrices~~ (https://learn.microsoft.com/en-us/azure/resiliency/resiliency-support-matrix)
 
 ## Classified Pages
 

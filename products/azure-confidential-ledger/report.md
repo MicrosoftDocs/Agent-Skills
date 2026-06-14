@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-17'
+generated_at: '2026-06-14'
 category_descriptions:
   security: 'Configuring secure access to Confidential Ledger: Entra ID auth, client
     certs, RBAC/roles, access controls, node attestation/quote verification, and secure
@@ -38,8 +38,8 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 32
+- **Updated Pages**: 1
+- **Unchanged**: 31
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-confidential-ledger/azure-confidential-ledger.csv`
 
@@ -54,6 +54,11 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 | *(Unclassified)* | 14 | 43.8% |
 
 ## Changes
+
+### Updated Pages
+
+- [FAQ](https://learn.microsoft.com/en-us/azure/confidential-ledger/faq)
+  - Updated: 2026-05-12T12:44:00.000Z → 2026-06-12T22:35:00.000Z
 
 ## Classified Pages
 
@@ -95,4 +100,4 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 | [Use the Azure portal ledger explorer](https://learn.microsoft.com/en-us/azure/confidential-ledger/ledger-explorer) | 0.30 | How-to guide for using Azure portal Ledger Explorer to view and verify transactions; appears to be a UI walkthrough rather than detailed configuration, limits, or troubleshooting content. |
 | [.NET](https://learn.microsoft.com/en-us/azure/confidential-ledger/quickstart-net) | 0.20 | Quickstart showing basic .NET client usage; appears to be a step-by-step tutorial without detailed configuration tables, limits, or product-specific troubleshooting. |
 | [About Azure confidential ledger](https://learn.microsoft.com/en-us/azure/confidential-ledger/overview) | 0.20 | High-level product overview describing what Azure Confidential Ledger is and its benefits; no concrete limits, configs, error codes, or decision matrices. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/confidential-ledger/faq) | 0.20 | FAQ page; summary does not indicate presence of detailed limits tables, config parameters, or error-code-based troubleshooting—likely general Q&A and conceptual clarifications. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/confidential-ledger/faq) | - | FAQ description suggests general Q&A; no evidence of specific limits, configuration tables, error-code mappings, or other detailed expert-only data per the defined categories. |

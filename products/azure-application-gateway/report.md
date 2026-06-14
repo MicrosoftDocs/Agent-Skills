@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-06-07'
+generated_at: '2026-06-14'
 category_descriptions:
   configuration: 'Configuring Azure Application Gateway and Application Gateway for
-    Containers: listeners, routing, health probes, header/URL rewrites, diagnostics,
-    monitoring, session affinity, and AKS/Ingress integration.'
+    Containers: listeners, routing, probes, health, headers/URL rewrite, session affinity,
+    networking, monitoring, diagnostics, and AKS ingress.'
   limits-quotas: Autoscaling, zone redundancy setup, and detailed limits/behavioral
     constraints (throughput, listeners, rules, connections) for Azure Application
     Gateway v2.
@@ -30,17 +30,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Application Gateway development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when configuring listeners/routing, TLS/mTLS and WAF, autoscale v2 gateways,
-  AKS/AGIC ingress, or AppGW for Containers, and other Azure Application Gateway related
-  development tasks. Not for Azure Front Door (use azure-front-door), Azure Load Balancer
-  (use azure-load-balancer), Azure Traffic Manager (use azure-traffic-manager), Azure
-  Virtual Network (use azure-virtual-network).
-use_when: Use when configuring listeners/routing, TLS/mTLS and WAF, autoscale v2 gateways,
-  AKS/AGIC ingress, or AppGW for Containers, and other Azure Application Gateway related
-  development tasks.
+  Use when configuring listeners/routing, WAF/TLS, autoscale v2 gateways, AKS ingress/AGIC,
+  or App Gateway for Containers, and other Azure Application Gateway related development
+  tasks. Not for Azure Front Door (use azure-front-door), Azure Load Balancer (use
+  azure-load-balancer), Azure Traffic Manager (use azure-traffic-manager), Azure Firewall
+  (use azure-firewall).
+use_when: Use when configuring listeners/routing, WAF/TLS, autoscale v2 gateways,
+  AKS ingress/AGIC, or App Gateway for Containers, and other Azure Application Gateway
+  related development tasks.
 confusable_not_for: Not for Azure Front Door (use azure-front-door), Azure Load Balancer
   (use azure-load-balancer), Azure Traffic Manager (use azure-traffic-manager), Azure
-  Virtual Network (use azure-virtual-network).
+  Firewall (use azure-firewall).
 ---
 # Azure Application Gateway Crawl Report
 
@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Front Door (use azure-front-door), Azure Load 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 174
+- **Updated Pages**: 2
+- **Unchanged**: 173
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-application-gateway/azure-application-gateway.csv`
 
@@ -78,8 +78,10 @@ confusable_not_for: Not for Azure Front Door (use azure-front-door), Azure Load 
 
 ### Updated Pages
 
-- [FAQ](https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-faq)
-  - Updated: 2026-05-01T06:12:00.000Z → 2026-06-02T22:37:00.000Z
+- [Application Gateway for Containers components](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/application-gateway-for-containers-components)
+  - Updated: 2026-05-20T22:22:00.000Z → 2026-06-05T08:00:00.000Z
+- [Application Gateway for Containers](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/overview)
+  - Updated: 2026-04-24T11:19:00.000Z → 2026-06-12T08:00:00.000Z
 
 ## Classified Pages
 
@@ -123,7 +125,6 @@ confusable_not_for: Not for Azure Front Door (use azure-front-door), Azure Load 
 | [Portal](https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-create-probe-portal) | configuration | 0.72 | Covers configuring custom health probes with specific probe settings (path, interval, timeout, thresholds) in the portal; product-specific configuration options. |
 | [About v1 retirement](https://learn.microsoft.com/en-us/azure/application-gateway/v1-retirement) | decision-making | 0.70 | Contains concrete retirement dates, SLA impact, and decommissioning behavior that affect service availability and require migration decisions; this is time-sensitive expert knowledge not inferable from training data. |
 | [Add health probes to AKS pods](https://learn.microsoft.com/en-us/azure/application-gateway/ingress-controller-add-health-probes) | configuration | 0.70 | Shows how AGIC provisions default HTTP GET probes and how to customize them via readiness/liveness probes; includes probe properties and mappings, which are product-specific configuration details. |
-| [Application Gateway for Containers components](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/application-gateway-for-containers-components) | configuration | 0.70 | Described as providing detailed descriptions and requirements for components and how requests are routed; such component articles typically include product-specific configuration fields, constraints, and required settings that qualify as expert configuration knowledge beyond generic concepts. |
 | [Autoscaling v2 SKU](https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-autoscaling-zone-redundant) | limits-quotas | 0.70 | Describes autoscaling modes and behavior when changing maximum instance counts; includes product-specific scaling constraints and timing behavior, which are effectively limits/quotas. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/application-gateway/parameter-based-path-selection-portal) | configuration | 0.70 | Explains combining URL Rewrite with path-based routing to select backend pools based on headers, URL parts, or query strings; product-specific routing configuration. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/application-gateway/rewrite-url-portal) | configuration | 0.70 | Documents URL Rewrite feature availability (Standard_v2/WAF_v2 only) and behavior with WAF evaluation; includes SKU constraints and configuration behavior specific to this product. |
@@ -169,6 +170,7 @@ confusable_not_for: Not for Azure Front Door (use azure-front-door), Azure Load 
 | [Web Application Firewall (WAF)](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/how-to-waf-gateway-api) | security | 0.70 | WAF example scenario will include specific WAF policy settings, rule IDs/modes, and configuration fields for this product, which are detailed security configurations. |
 | [Web Application Firewall (WAF)](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/web-application-firewall) | security | 0.70 | Describes WAF policy configuration, limitations, and pricing specifics for AGC, including product-specific security settings. |
 | [gRPC](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/grpc) | configuration | 0.70 | Describes specific settings and routing configuration required for gRPC over AGC, which are product-specific integration/config details. |
+| [Application Gateway for Containers components](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/application-gateway-for-containers-components) | configuration | 0.68 | The page describes concrete, product-specific components and how they must be configured for Application Gateway for Containers to accept and route traffic. It goes beyond conceptual overview by detailing required objects/associations and their relationships, which are configuration-specific expert knowledge. It does not focus on numeric limits, troubleshooting, or architecture trade-offs, so configuration is the best fit. |
 | [Autoscale AKS pods with Application Gateway metrics](https://learn.microsoft.com/en-us/azure/application-gateway/ingress-controller-autoscale-pods) | integrations | 0.68 | Describes using the specific AvgRequestCountPerHealthyHost metric with Azure Kubernetes Metrics Adapter to drive AKS pod autoscaling, including product-specific metric names and integration behavior that go beyond generic autoscaling concepts. |
 | [Classic PowerShell](https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-create-probe-classic-ps) | configuration | 0.68 | Classic deployment model custom probe configuration with specific probe parameters; product- and model-specific configuration details. |
 | [Classic to Resource Manager](https://learn.microsoft.com/en-us/previous-versions/azure/virtual-machines/migration/migration-classic-resource-manager-faq) | decision-making | 0.68 | FAQ about migrating classic VMs to Azure Resource Manager includes product- and era-specific retirement dates, migration implications, and guidance on what to do in different migration scenarios. This is specialized, time-bound knowledge that an LLM is unlikely to infer from training data and helps users decide how and when to migrate, fitting the decision-making category better than others. |
@@ -232,7 +234,7 @@ confusable_not_for: Not for Azure Front Door (use azure-front-door), Azure Load 
 | [How Application Gateway works](https://learn.microsoft.com/en-us/azure/application-gateway/how-application-gateway-works) | 0.30 | Explains request flow conceptually; lacks specific configuration values, limits, or troubleshooting mappings. |
 | [Redirect web traffic using Azure PowerShell](https://learn.microsoft.com/en-us/azure/application-gateway/tutorial-url-redirect-powershell) | 0.22 | PowerShell tutorial for URL path-based redirection; despite mentioning 'production-ready', summary indicates a standard routing tutorial without explicit config matrices or limits. |
 | [Application Gateway features](https://learn.microsoft.com/en-us/azure/application-gateway/features) | 0.20 | Feature overview of Azure Application Gateway; summary indicates conceptual description and security recommendations without specific limits, configuration tables, or error mappings. |
-| [Application Gateway for Containers](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/overview) | 0.20 | High-level overview of Application Gateway for Containers features and architecture; no indication of numeric limits, config tables, or detailed settings. |
+| [Application Gateway for Containers](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/overview) | 0.20 | High-level overview of Application Gateway for Containers features and architecture without specific limits, configuration tables, error codes, or decision matrices. Content is conceptual and introductory rather than detailed expert guidance. |
 | [Application Gateway overview](https://learn.microsoft.com/en-us/azure/application-gateway/overview) | 0.20 | High-level product overview of Azure Application Gateway without detailed limits, configuration tables, or product-specific troubleshooting or security settings. |
 | [Application Gateway v2](https://learn.microsoft.com/en-us/azure/application-gateway/overview-v2) | 0.20 | High-level overview of Application Gateway v2 and deprecation notice for v1; no detailed limits, configuration parameters, error codes, or decision matrices with quantified trade-offs. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/application-gateway/tutorial-multiple-sites-cli) | 0.20 | CLI tutorial for hosting multiple sites; mostly procedural without expert-level configuration details. |

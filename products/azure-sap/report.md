@@ -54,9 +54,9 @@ confusable_not_for: Not for Azure Large Instances (use azure-large-instances), A
 - **Unclassified**: 41
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 1
-- **Unchanged**: 215
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 218
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sap/azure-sap.csv`
 
@@ -76,16 +76,6 @@ confusable_not_for: Not for Azure Large Instances (use azure-large-instances), A
 | *(Unclassified)* | 41 | 18.8% |
 
 ## Changes
-
-### New Pages
-
-- [Performance optimization](https://learn.microsoft.com/en-us/azure/sap/business-process-solutions/performance-optimization)
-- [Update artifacts](https://learn.microsoft.com/en-us/azure/sap/business-process-solutions/update-artifacts)
-
-### Updated Pages
-
-- [Data Models](https://learn.microsoft.com/en-us/azure/sap/business-process-solutions/data-models-business-process-solutions)
-  - Updated: 2026-05-01T06:12:00.000Z → 2026-06-04T11:42:00.000Z
 
 ## Classified Pages
 

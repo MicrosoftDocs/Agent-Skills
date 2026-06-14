@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-06-14'
 category_descriptions:
   security: 'Security and access control for managed apps: JIT access, Azure Policy
     associations, managed identities (incl. cross-tenant), Key Vault/CMK use, and
     avoiding hardcoded credentials.'
-  configuration: 'Designing and configuring managed application UI and deployment:
-    createUiDefinition.json, UI elements, functions, parameters, networking, policies,
-    webhooks, and template/view references.'
+  configuration: 'Designing and configuring managed app deployments: createUiDefinition
+    UI schema, functions, built-in controls, networking/VNet use, policies, webhooks,
+    and ARM template/view references.'
   limits-quotas: 'Guidance on storage-related limits: using StorageAccountSelector
     with naming rules and configuring external storage for large managed application
     definition packages.'
@@ -14,16 +14,16 @@ category_descriptions:
     Bicep and deploying them into an internal service catalog for reuse.
 skill_description: Expert knowledge for Azure Managed Applications development including
   limits & quotas, security, configuration, and deployment. Use when designing createUiDefinition
-  UIs, JIT access, managed identities, Key Vault/CMK, StorageAccountSelector, or Bicep-based
-  catalog deployments, and other Azure Managed Applications related development tasks.
-  Not for Azure Lighthouse (use azure-lighthouse), Azure Partner Solutions (use azure-partner-solutions),
-  Azure Resource Manager (use azure-resource-manager), Azure Blueprints (use azure-blueprints).
+  UIs, JIT access, managed identities, StorageAccountSelector, or Bicep-based catalog
+  publishing, and other Azure Managed Applications related development tasks. Not
+  for Azure Blueprints (use azure-blueprints), Azure Resource Manager (use azure-resource-manager),
+  Azure Lighthouse (use azure-lighthouse), Azure Partner Solutions (use azure-partner-solutions).
 use_when: Use when designing createUiDefinition UIs, JIT access, managed identities,
-  Key Vault/CMK, StorageAccountSelector, or Bicep-based catalog deployments, and other
-  Azure Managed Applications related development tasks.
-confusable_not_for: Not for Azure Lighthouse (use azure-lighthouse), Azure Partner
-  Solutions (use azure-partner-solutions), Azure Resource Manager (use azure-resource-manager),
-  Azure Blueprints (use azure-blueprints).
+  StorageAccountSelector, or Bicep-based catalog publishing, and other Azure Managed
+  Applications related development tasks.
+confusable_not_for: Not for Azure Blueprints (use azure-blueprints), Azure Resource
+  Manager (use azure-resource-manager), Azure Lighthouse (use azure-lighthouse), Azure
+  Partner Solutions (use azure-partner-solutions).
 ---
 # Azure Managed Applications Crawl Report
 
@@ -37,8 +37,8 @@ confusable_not_for: Not for Azure Lighthouse (use azure-lighthouse), Azure Partn
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 62
+- **Updated Pages**: 2
+- **Unchanged**: 60
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-managed-applications/azure-managed-applications.csv`
 
@@ -54,21 +54,27 @@ confusable_not_for: Not for Azure Lighthouse (use azure-lighthouse), Azure Partn
 
 ## Changes
 
+### Updated Pages
+
+- [Create portal interface](https://learn.microsoft.com/en-us/azure/azure-resource-manager/managed-applications/create-uidefinition-overview)
+  - Updated: 2024-06-24T08:00:00.000Z → 2026-05-29T08:00:00.000Z
+- [User interface elements](https://learn.microsoft.com/en-us/azure/azure-resource-manager/managed-applications/create-uidefinition-elements)
+  - Updated: 2024-06-24T22:06:00.000Z → 2026-06-12T05:19:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
+| [User interface elements](https://learn.microsoft.com/en-us/azure/azure-resource-manager/managed-applications/create-uidefinition-elements) | configuration | 0.90 | Element reference for createUiDefinition.json, listing supported elements and their schemas. This is detailed configuration knowledge (specific element names, properties, and supported options) that an LLM wouldn't reliably know from training, matching the configuration category. |
 | [StorageAccountSelector](https://learn.microsoft.com/en-us/azure/azure-resource-manager/managed-applications/microsoft-storage-storageaccountselector) | limits-quotas | 0.86 | Includes explicit numeric and format constraints for storage account names (3–24 characters, lowercase letters or numbers, globally unique), which are concrete limits/quotas plus configuration usage. |
 | [Restrictions on hardcoded credentials](https://learn.microsoft.com/en-us/azure/azure-resource-manager/managed-applications/hardcoded-credentials-restrictions) | security | 0.85 | Documents strict security policies and Marketplace Certification Policy 300.4.4 regarding credentials; includes product-specific compliance requirements and restrictions. |
 | [Use secret from Key Vault](https://learn.microsoft.com/en-us/azure/azure-resource-manager/managed-applications/key-vault-access) | security | 0.85 | Explains granting access to the Appliance Resource Provider service principal and required permissions to retrieve secrets; product-specific identity and access configuration. |
-| [User interface elements](https://learn.microsoft.com/en-us/azure/azure-resource-manager/managed-applications/create-uidefinition-elements) | configuration | 0.85 | Describes schema and properties for all supported UI elements; includes element names, property names, and allowed values, which are configuration parameters. |
 | [User interface elements](https://learn.microsoft.com/en-us/azure/azure-resource-manager/managed-applications/reference-createuidefinition-artifact) | configuration | 0.85 | Reference for createUiDefinition.json artifact; includes element/property names and allowed values, which are detailed configuration parameters. |
 | [ArmApiControl](https://learn.microsoft.com/en-us/azure/azure-resource-manager/managed-applications/microsoft-solutions-armapicontrol) | configuration | 0.84 | Details how to configure ArmApiControl to call ARM GET/POST operations and use results in other controls, including specific JSON properties and behaviors. |
 | [ResourceSelector](https://learn.microsoft.com/en-us/azure/azure-resource-manager/managed-applications/microsoft-solutions-resourceselector) | configuration | 0.84 | Provides JSON configuration for ResourceSelector including provider namespace, resource type, and filtering options, which are specific configuration details. |
 | [CredentialsCombo](https://learn.microsoft.com/en-us/azure/azure-resource-manager/managed-applications/microsoft-compute-credentialscombo) | configuration | 0.82 | Describes a composite control with built-in validation rules for Windows/Linux credentials and SSH keys, including its JSON configuration, which is detailed product-specific configuration. |
 | [ServicePrincipalSelector](https://learn.microsoft.com/en-us/azure/azure-resource-manager/managed-applications/microsoft-common-serviceprincipalselector) | configuration | 0.82 | Explains the ServicePrincipalSelector control, including JSON properties and behavior for selecting or creating service principals, which are detailed configuration options. |
 | [CheckBox](https://learn.microsoft.com/en-us/azure/azure-resource-manager/managed-applications/microsoft-common-checkbox) | configuration | 0.80 | Details the CheckBox element’s schema, properties, and return values (true/false); product-specific UI configuration. |
-| [Create portal interface](https://learn.microsoft.com/en-us/azure/azure-resource-manager/managed-applications/create-uidefinition-overview) | configuration | 0.80 | Describes handler name, version (0.1.2-preview), and schema for createUiDefinition.json; includes specific property names and allowed values, which are configuration details. |
 | [Deploy with managed identity](https://learn.microsoft.com/en-us/azure/azure-resource-manager/managed-applications/publish-managed-identity) | security | 0.80 | Describes configuring managed identity for managed apps, including required API version (2018-09-01-preview) and identity usage; product-specific security configuration. |
 | [Deployment template](https://learn.microsoft.com/en-us/azure/azure-resource-manager/managed-applications/reference-main-template-artifact) | configuration | 0.80 | Template artifact reference with example structure and parameter usage; contains specific ARM template properties for managed apps. |
 | [DropDown](https://learn.microsoft.com/en-us/azure/azure-resource-manager/managed-applications/microsoft-common-dropdown) | configuration | 0.80 | Describes DropDown element properties (single/multi-select, descriptions); includes specific configuration options for this UI element. |
@@ -104,6 +110,7 @@ confusable_not_for: Not for Azure Lighthouse (use azure-lighthouse), Azure Partn
 | [TextBlock](https://learn.microsoft.com/en-us/azure/azure-resource-manager/managed-applications/microsoft-common-textblock) | configuration | 0.74 | Defines the TextBlock control and its JSON properties for adding text in the portal, which are concrete configuration options. |
 | [Approve just-in-time access](https://learn.microsoft.com/en-us/azure/azure-resource-manager/managed-applications/approve-just-in-time-access) | security | 0.70 | Covers consumer-side approval of JIT access, including duration and scope of access; product-specific access control workflow. |
 | [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/azure-resource-manager/managed-applications/policy-reference) | configuration | 0.70 | Acts as an index into specific built-in policy definitions for Azure Managed Applications, which are concrete configuration/compliance artifacts, even though the page itself is primarily a reference list. |
+| [Create portal interface](https://learn.microsoft.com/en-us/azure/azure-resource-manager/managed-applications/create-uidefinition-overview) | configuration | 0.70 | Reference-style overview of the createUiDefinition.json schema and its usage in the Azure portal. While partially conceptual, it contains product-specific JSON schema details and structure (handler, version, parameters, view wrapper) that function as configuration contract knowledge not generally known, fitting configuration more than other categories. |
 | [Delegated managed identity resource ID](https://learn.microsoft.com/en-us/azure/azure-resource-manager/managed-applications/concepts-delegated-managed-identity-resource-id) | security | 0.70 | Covers delegatedManagedIdentityResourceId property semantics for cross-tenant managed identities; this is product-specific identity configuration detail. |
 | [Deploy with notifications](https://learn.microsoft.com/en-us/azure/azure-resource-manager/managed-applications/publish-notifications) | configuration | 0.70 | Describes configuring notification webhook endpoints for lifecycle events; includes product-specific event types and endpoint configuration. |
 | [Request just-in-time access](https://learn.microsoft.com/en-us/azure/azure-resource-manager/managed-applications/request-just-in-time-access) | security | 0.70 | Describes JIT access feature, including time-bounded elevated access; likely includes specific role assignments and scopes, which are product-specific security patterns. |

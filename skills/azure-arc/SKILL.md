@@ -3,7 +3,7 @@ name: azure-arc
 description: Expert knowledge for Azure Arc development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing Arc-enabled Kubernetes, servers/VMs, data services, resource bridge, or Edge RAG workloads, and other Azure Arc related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Virtual Machines (use azure-virtual-machines), Azure Stack Edge (use azure-stack-edge), Azure VMware Solution (use azure-vmware-solution).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-07"
+  generated_at: "2026-06-14"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Arc Skill
@@ -24,20 +24,21 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L70 | Diagnosing and fixing Azure Arc issues: connectivity, extensions, GitOps, Kubernetes, servers/VMs, SQL, storage, site manager, resource bridge, workload orchestration, and Edge RAG. |
-| Best Practices | L71-L77 | Best practices for Azure Arc storage and data services: filesystem behavior, avoiding out-of-space issues, static retain workflows for Edge Volumes, and common usage FAQs. |
-| Decision Making | L78-L96 | Guidance on planning, sizing, licensing, connectivity, platform selection, and migration decisions for Azure Arc servers, Kubernetes, data services, SQL, and Edge RAG workloads. |
-| Architecture & Design Patterns | L97-L104 | Patterns for Arc data/compute design: container storage data flow, Arc Edge Volumes, HA/DR for Arc SQL MI and failover groups, and advanced Edge RAG data parsing. |
-| Limits & Quotas | L105-L115 | Limits, quotas, versions, and requirements for Arc-enabled Kubernetes, Edge RAG, Arc data services, resource bridge, and billing/ESU behavior for connected machines and Windows Server. |
-| Security | L116-L172 | Security, identity, and access control for Azure Arc: AD auth, TDE, keytabs/credential rotation, RBAC, network protection, Private Link, policies, and hardening for servers, Kubernetes, and SCVMM/vSphere. |
-| Configuration | L173-L257 | Configuring and operating Azure Arc: data services, container storage, GitOps, networking, agents, monitoring, extensions, and onboarding/management of Arc-enabled servers and Kubernetes. |
-| Integrations & Coding Patterns | L258-L279 | Programmatic and automation patterns for Azure Arc: CLI/PowerShell/ARM/Ansible/Terraform usage, onboarding servers/VMs/K8s at scale, managing extensions, monitoring, and security integrations. |
-| Deployment | L280-L308 | Deploying and managing Azure Arc components: data controllers, Kubernetes extensions, resource bridge, SCVMM/VMware onboarding, monitoring agents, upgrades, DR/failover, and multicloud connectors. |
+| Troubleshooting | L37-L71 | Diagnosing and fixing Azure Arc issues: connectivity, extensions, Kubernetes/GitOps, storage, SQL, servers/VMs, site manager, resource bridge, workload orchestration, and licensing. |
+| Best Practices | L72-L78 | Best practices for Azure Arc storage and data services: filesystem behavior, avoiding out-of-space issues, static retain workflows for Edge Volumes, and common usage FAQs. |
+| Decision Making | L79-L98 | Guidance on planning, sizing, licensing, and migrating Azure Arc servers and data services, including Kubernetes platform choices, ESU/SQL licensing, and moving from legacy tools/agents. |
+| Architecture & Design Patterns | L99-L106 | Patterns for Arc data/compute design: container storage data flow, Arc Edge Volumes, HA/DR for Arc SQL MI and failover groups, and advanced Edge RAG data parsing. |
+| Limits & Quotas | L107-L116 | Limits, quotas, versions, and requirements for Arc-enabled Kubernetes, Edge RAG, Arc data services, resource bridge, and billing/ESU behavior for connected machines and Windows Server. |
+| Security | L117-L173 | Security, identity, and access control for Azure Arc: AD auth, TDE, keytabs/credential rotation, RBAC, network protection, Private Link, policies, and hardening for servers, Kubernetes, and SCVMM/vSphere. |
+| Configuration | L174-L259 | Configuring Azure Arc infrastructure: storage, data services, Kubernetes (GitOps, TLS, extensions), Connected Machine agent, networking, monitoring, logging, and VM/server onboarding and management. |
+| Integrations & Coding Patterns | L260-L281 | Programmatic and automation patterns for Azure Arc: CLI/PowerShell/ARM/Ansible/Terraform usage, onboarding servers/VMs/K8s at scale, managing extensions, monitoring, and security integrations. |
+| Deployment | L282-L310 | Deploying and managing Azure Arc components: data controllers, Kubernetes extensions, resource bridge, SCVMM/VMware onboarding, monitoring agents, upgrades, DR/failover, and multicloud connectors. |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
 | Fix blob upload and mirroring issues with managed identity | https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/blobs-not-uploaded |
+| Resolve common issues for Azure Container Storage enabled by Arc | https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/faq |
 | Troubleshoot Azure Arc container storage deployments | https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/troubleshooting |
 | Troubleshoot failover group connection issues in Arc SQL | https://learn.microsoft.com/en-us/azure/azure-arc/data/troubleshoot-managed-instance |
 | Troubleshoot configuration files for Arc SQL Managed Instance | https://learn.microsoft.com/en-us/azure/azure-arc/data/troubleshoot-managed-instance-configuration |
@@ -85,6 +86,7 @@ This skill requires **network access** to fetch documentation content:
 | Choose SQL Managed Instance Azure Arc service tiers | https://learn.microsoft.com/en-us/azure/azure-arc/data/service-tiers |
 | Size Azure Arc-enabled data services deployments | https://learn.microsoft.com/en-us/azure/azure-arc/data/sizing-guidance |
 | Select validated Kubernetes platforms for Azure Arc data | https://learn.microsoft.com/en-us/azure/azure-arc/data/validation-program |
+| Plan and execute migration to Secret Store extension | https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/secret-store-extension-migration |
 | Use validated Kubernetes distributions for Arc-enabled Kubernetes | https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/validation-program |
 | Choose cloud-native licensing and cost options for Arc servers | https://learn.microsoft.com/en-us/azure/azure-arc/servers/cloud-native/licensing-cost-management |
 | Plan and provision Azure Arc ESU licenses for WS2012 | https://learn.microsoft.com/en-us/azure/azure-arc/servers/license-extended-security-updates |
@@ -106,7 +108,6 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Disconnected operation behavior for Arc container storage | https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/disconnected-operations |
-| Meet network requirements for Azure Arc-enabled Kubernetes connectivity | https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/network-requirements |
 | Review system requirements and constraints for Arc-enabled Kubernetes | https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/system-requirements |
 | Maintain Azure Arc resource bridge health and uptime | https://learn.microsoft.com/en-us/azure/azure-arc/resource-bridge/maintenance |
 | Understand Azure Arc ESU billing rules and timing | https://learn.microsoft.com/en-us/azure/azure-arc/servers/billing-extended-security-updates |
@@ -216,6 +217,7 @@ This skill requires **network access** to fetch documentation content:
 | Use Azure portal Kubernetes resource view for Arc-enabled clusters | https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/kubernetes-resource-view |
 | Use version-managed extensions on Arc-enabled Kubernetes | https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/managed-extensions |
 | Monitor Flux v2 GitOps status on Arc and AKS | https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/monitor-gitops-flux-2 |
+| Configure network endpoints for Azure Arc-enabled Kubernetes | https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/network-requirements |
 | Configure Azure Key Vault Secret Store extension for Arc Kubernetes | https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/secret-store-extension |
 | Configure Azure Key Vault Secret Store Extension on Arc Kubernetes | https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/secret-store-extension-reference |
 | Configure AKV Secrets Provider extension on Arc Kubernetes | https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/tutorial-akv-secrets-provider |

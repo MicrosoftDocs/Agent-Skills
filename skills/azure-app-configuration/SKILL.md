@@ -1,9 +1,9 @@
 ---
 name: azure-app-configuration
-description: Expert knowledge for Azure App Configuration development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using feature flags, dynamic refresh, snapshots, geo-replication, or Key Vault–backed configurations, and other Azure App Configuration related development tasks. Not for Azure App Service (use azure-app-service), Azure Key Vault (use azure-key-vault), Azure Automation (use azure-automation).
+description: Expert knowledge for Azure App Configuration development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using App Configuration feature flags, dynamic refresh, snapshots, REST API auth, or CI/CD export/import, and other Azure App Configuration related development tasks. Not for Azure App Service (use azure-app-service), Azure Functions (use azure-functions), Azure Key Vault (use azure-key-vault), Azure Automation (use azure-automation).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-07"
+  generated_at: "2026-06-14"
   generator: "docs2skills/1.0.0"
 ---
 # Azure App Configuration Skill
@@ -30,7 +30,7 @@ This skill requires **network access** to fetch documentation content:
 | Limits & Quotas | L52-L60 | Limits on key-value retention, point-in-time reads, soft delete behavior, preview API lifecycles, and REST API throttling/quotas for Azure App Configuration. |
 | Security | L61-L79 | Securing App Configuration using encryption, RBAC, managed identities, keys/HMAC, REST auth/authorization models, network perimeters, and Azure Policy compliance controls. |
 | Configuration | L80-L98 | Configuring App Configuration behavior: feature flags, filters, snapshots, geo-replication, soft delete, Kubernetes provider, emulator, dynamic refresh, and AI/chat completion settings. |
-| Integrations & Coding Patterns | L99-L188 | Patterns and code samples for integrating Azure App Configuration into .NET, Go, JavaScript, Python, AKS, Event Grid, and AI apps, including dynamic config, feature flags, filters, and REST/Key Vault usage |
+| Integrations & Coding Patterns | L99-L188 | Patterns and code samples for integrating Azure App Configuration into .NET, Go, JavaScript, Python, AKS, Front Door, and AI apps, including dynamic config, feature flags, filters, and REST usage. |
 | Deployment | L189-L197 | Using App Configuration in CI/CD: exporting/importing settings, creating snapshots, integrating with Azure Pipelines, GitHub Actions, and Helm/Kubernetes deployment workflows. |
 
 ### Troubleshooting
@@ -171,7 +171,7 @@ This skill requires **network access** to fetch documentation content:
 | Use .NET configuration provider for App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/reference-dotnet-provider |
 | Use Go provider with Azure App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/reference-go-provider |
 | Use JavaScript configuration provider for App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/reference-javascript-provider |
-| Use Python configuration provider for App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/reference-python-provider |
+| Use Azure App Configuration Python provider for centralized settings | https://learn.microsoft.com/en-us/azure/azure-app-configuration/reference-python-provider |
 | Automatically reload Key Vault secrets via App Configuration in .NET | https://learn.microsoft.com/en-us/azure/azure-app-configuration/reload-key-vault-secrets-dotnet |
 | Call Azure App Configuration data-plane REST APIs | https://learn.microsoft.com/en-us/azure/azure-app-configuration/rest-api |
 | Ensure consistency using App Configuration REST sync tokens | https://learn.microsoft.com/en-us/azure/azure-app-configuration/rest-api-consistency |

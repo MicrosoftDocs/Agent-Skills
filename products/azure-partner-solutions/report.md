@@ -23,7 +23,9 @@ skill_description: Expert knowledge for Azure Partner Solutions development incl
   troubleshooting, decision making, architecture & design patterns, security, configuration,
   and integrations & coding patterns. Use when using Service Connector, Foundry Agents,
   Confluent RBAC, Dynatrace APM on Azure, or Cloud NGFW with App Gateway, and other
-  Azure Partner Solutions related development tasks.
+  Azure Partner Solutions related development tasks. Not for Azure Industry (use azure-industry),
+  Azure Managed Applications (use azure-managed-applications), Azure Lighthouse (use
+  azure-lighthouse), Azure DevOps (use azure-devops).
 use_when: Use when using Service Connector, Foundry Agents, Confluent RBAC, Dynatrace
   APM on Azure, or Cloud NGFW with App Gateway, and other Azure Partner Solutions
   related development tasks.
@@ -42,10 +44,10 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 - **Unclassified**: 82
 
 ### Incremental Update
-- **New Pages**: 5
-- **Updated Pages**: 6
-- **Unchanged**: 95
-- **Deleted Pages**: 5
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 106
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-partner-solutions/azure-partner-solutions.csv`
 
 ## Classification Statistics
@@ -61,37 +63,6 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 | *(Unclassified)* | 82 | 77.4% |
 
 ## Changes
-
-### New Pages
-
-- [Create new Datadog organization](https://learn.microsoft.com/en-us/azure/partner-solutions/datadog/create)
-- [Link to an existing Datadog organization](https://learn.microsoft.com/en-us/azure/partner-solutions/datadog/link-to-existing-organization)
-- [What is Elastic on Azure?](https://learn.microsoft.com/en-us/azure/partner-solutions/elastic/overview)
-- [Create an Elastic resource](https://learn.microsoft.com/en-us/azure/partner-solutions/elastic/create)
-- [Manage](https://learn.microsoft.com/en-us/azure/partner-solutions/elastic/manage)
-
-### Updated Pages
-
-- [Metrics and logs](https://learn.microsoft.com/en-us/azure/partner-solutions/metrics-logs)
-  - Updated: 2025-12-10T23:18:00.000Z → 2026-06-03T11:36:00.000Z
-- [What is Datadog?](https://learn.microsoft.com/en-us/azure/partner-solutions/datadog/overview)
-  - Updated: 2025-12-10T23:18:00.000Z → 2026-06-03T11:36:00.000Z
-- [Configure pre-deployment](https://learn.microsoft.com/en-us/azure/partner-solutions/datadog/prerequisites)
-  - Updated: 2026-02-26T18:46:00.000Z → 2026-06-03T11:36:00.000Z
-- [Manage](https://learn.microsoft.com/en-us/azure/partner-solutions/datadog/manage)
-  - Updated: 2025-12-22T18:15:00.000Z → 2026-06-03T11:36:00.000Z
-- [Fix common errors](https://learn.microsoft.com/en-us/azure/partner-solutions/datadog/troubleshoot)
-  - Updated: 2026-02-18T18:42:00.000Z → 2026-06-03T11:36:00.000Z
-- [Fix common errors](https://learn.microsoft.com/en-us/azure/partner-solutions/elastic/troubleshoot)
-  - Updated: 2026-02-18T18:42:00.000Z → 2026-06-03T11:36:00.000Z
-
-### Deleted Pages
-
-- ~~Create new Datadog org~~ (https://learn.microsoft.com/en-us/azure/partner-solutions/datadog/create)
-- ~~Link to an existing Datadog org~~ (https://learn.microsoft.com/en-us/azure/partner-solutions/datadog/link-to-existing-organization)
-- ~~Create Elastic resource~~ (https://learn.microsoft.com/en-us/azure/partner-solutions/elastic/create)
-- ~~Manage Elastic resource~~ (https://learn.microsoft.com/en-us/azure/partner-solutions/elastic/manage)
-- ~~What is Elastic?~~ (https://learn.microsoft.com/en-us/azure/partner-solutions/elastic/overview)
 
 ## Classified Pages
 

@@ -47,17 +47,17 @@ confusable_not_for: Not for Azure Database for PostgreSQL (use azure-database-po
 
 ## Summary
 
-- **Total Pages**: 180
-- **Fetched**: 180
+- **Total Pages**: 179
+- **Fetched**: 179
 - **Fetch Failed**: 0
 - **Classified**: 115
-- **Unclassified**: 65
+- **Unclassified**: 64
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 178
-- **Deleted Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 179
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-database-mysql/azure-database-mysql.csv`
 
 ## Classification Statistics
@@ -66,23 +66,20 @@ confusable_not_for: Not for Azure Database for PostgreSQL (use azure-database-po
 |------|-------|------------|
 | architecture-patterns | 4 | 2.2% |
 | best-practices | 14 | 7.8% |
-| configuration | 27 | 15.0% |
-| decision-making | 15 | 8.3% |
+| configuration | 27 | 15.1% |
+| decision-making | 15 | 8.4% |
 | deployment | 7 | 3.9% |
 | integrations | 7 | 3.9% |
 | limits-quotas | 5 | 2.8% |
 | security | 23 | 12.8% |
-| troubleshooting | 13 | 7.2% |
-| *(Unclassified)* | 65 | 36.1% |
+| troubleshooting | 13 | 7.3% |
+| *(Unclassified)* | 64 | 35.8% |
 
 ## Changes
 
-### Updated Pages
+### Deleted Pages
 
-- [Request quota increase](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/how-to-request-quota-increase)
-  - Updated: 2025-08-21T08:00:00.000Z → 2026-06-03T06:03:00.000Z
-- [Server parameters](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-server-parameters)
-  - Updated: 2025-11-25T08:00:00.000Z → 2026-06-03T22:14:00.000Z
+- ~~Azure Cache for Redis~~ (https://learn.microsoft.com/en-us/azure/mysql/flexible-server/tutorial-add-redis-to-mysql)
 
 ## Classified Pages
 
@@ -222,7 +219,6 @@ confusable_not_for: Not for Azure Database for PostgreSQL (use azure-database-po
 | [WordPress on Azure Kubernetes](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/tutorial-deploy-wordpress-on-aks) | 0.45 | End-to-end tutorial deploying WordPress on AKS with MySQL; largely procedural DevOps steps, not focused on reusable deployment matrices or tier-specific constraints. |
 | [Azure Advisor](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-azure-advisor-recommendations) | 0.40 | Azure Advisor overview and FAQ for MySQL; primarily conceptual recommendations without quantified thresholds, limits, or detailed configuration parameters. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/how-to-restart-stop-start-server-cli) | 0.40 | CLI instructions for restart/stop/start; procedural commands without expert-level configuration or troubleshooting mappings. |
-| [Azure Cache for Redis](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/tutorial-add-redis-to-mysql) | 0.40 | Tutorial on adding Azure Cache for Redis to MySQL for performance; likely conceptual and procedural without detailed limits, config tables, or error mappings. |
 | [Migrate data with MySQL Workbench](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-migrate-import-export) | 0.40 | Explains common import/export approaches with MySQL Workbench; appears more like conceptual/tutorial content without detailed product-specific limits or configs. |
 | [Migrate data with mysqldump or phpmyadmin](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-migrate-dump-restore) | 0.40 | Conceptual explanation of dump/restore approaches; summary does not indicate detailed limits, configs, or troubleshooting mappings beyond generic tooling usage. |
 | [Test Plans](https://learn.microsoft.com/en-us/azure/mysql/migrate/mysql-on-premises-azure-db/06-test-plans) | 0.40 | Test plans article is likely procedural and conceptual (what to test) rather than containing product-specific error codes, configs, or quantified criteria; not clearly in any expert-knowledge category. |

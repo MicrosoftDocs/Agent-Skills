@@ -34,8 +34,8 @@ confusable_not_for: Not for Azure Cloud Shell (use azure-cloud-shell), Azure Res
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 28
+- **Updated Pages**: 0
+- **Unchanged**: 29
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-portal/azure-portal.csv`
 
@@ -49,11 +49,6 @@ confusable_not_for: Not for Azure Cloud Shell (use azure-cloud-shell), Azure Res
 | *(Unclassified)* | 17 | 58.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [Manage an Azure support request](https://learn.microsoft.com/en-us/azure/azure-portal/supportability/how-to-manage-azure-support-request)
-  - Updated: 2026-02-03T06:08:00.000Z → 2026-06-03T06:03:00.000Z
 
 ## Classified Pages
 

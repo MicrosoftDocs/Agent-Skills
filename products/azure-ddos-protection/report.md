@@ -41,9 +41,9 @@ confusable_not_for: Not for Azure Firewall (use azure-firewall), Azure Web Appli
 - **Unclassified**: 9
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 33
+- **Unchanged**: 34
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-ddos-protection/azure-ddos-protection.csv`
 
@@ -60,10 +60,6 @@ confusable_not_for: Not for Azure Firewall (use azure-firewall), Azure Web Appli
 | *(Unclassified)* | 9 | 26.5% |
 
 ## Changes
-
-### New Pages
-
-- [Secure DDoS Protection deployment](https://learn.microsoft.com/en-us/azure/ddos-protection/secure-ddos-protection)
 
 ## Classified Pages
 

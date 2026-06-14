@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-07'
+generated_at: '2026-06-14'
 category_descriptions:
   limits-quotas: 'Limits, thresholds, and taxonomies for Image Analysis: category
     lists, adult content scores, object/people detection constraints, smart-crop behavior,
@@ -13,9 +13,9 @@ category_descriptions:
   integrations: How to call and configure Azure Vision/Read APIs and SDKs for OCR,
     embeddings, thumbnails, background removal, domain models, and live video frame
     analysis.
-  decision-making: Guides for planning and executing migrations and upgrades between
-    Azure Vision Image Analysis and Read OCR versions/containers, including breaking
-    changes and app update steps.
+  decision-making: Guidance on migrating and upgrading Azure Vision Image Analysis
+    and Read OCR apps/containers, including choosing migration paths and moving from
+    v2.x to v3.x APIs.
 skill_description: Expert knowledge for Azure AI Vision development including decision
   making, limits & quotas, configuration, integrations & coding patterns, and deployment.
   Use when using Image Analysis, Read OCR containers, smart-crop thumbnails, background
@@ -62,8 +62,8 @@ confusable_not_for: Not for Azure AI Custom Vision (use azure-custom-vision), Az
 
 ### Updated Pages
 
-- [Azure Vision FAQ](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/faq)
-  - Updated: 2025-11-18T15:37:00.000Z → 2026-06-05T22:11:00.000Z
+- [Migrate from Image Analysis](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/migration-options)
+  - Updated: 2026-01-29T23:08:00.000Z → 2026-06-11T22:32:00.000Z
 
 ## Classified Pages
 
@@ -71,8 +71,8 @@ confusable_not_for: Not for Azure AI Custom Vision (use azure-custom-vision), Az
 |-----------|------|------------|--------|
 | [Category taxonomy](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/category-taxonomy) | limits-quotas | 0.85 | Provides the full list of 86 category identifiers; this is a definitive capability reference (enumerated set) that functions as a limit/coverage catalog. |
 | [Configure containers](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/computer-vision-resource-container-config) | configuration | 0.85 | Explicitly about configuring required and optional container settings via docker run arguments; such pages normally list environment variables, billing settings, and their allowed values/defaults, which are product-specific configuration parameters. |
-| [Migrate from Image Analysis](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/migration-options) | decision-making | 0.80 | Explicit migration guidance to alternative services; such articles typically compare options, outline trade-offs, and provide scenario-based recommendations, which fits decision-making. |
 | [Language support](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/language-support) | limits-quotas | 0.75 | Language support pages typically enumerate exact supported languages and sometimes feature-specific coverage; this is concrete capability data not inferable from training and functions as a limits/coverage reference. |
+| [Migrate from Image Analysis](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/migration-options) | decision-making | 0.72 | The page provides product-specific migration guidance from the retiring Azure Vision in Foundry Tools Image Analysis API to alternative services, including scenario-based recommendations and selection guidance to ensure business continuity. This is expert decision-making content about when and how to choose replacement services rather than generic conceptual information. |
 | [Call the Analyze API](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/how-to/call-analyze-image) | integrations | 0.70 | How-to for calling the 3.2 API and parsing responses; such articles enumerate query parameters, feature flags, and request formats, which are concrete integration details. |
 | [Call the Multimodal embeddings APIs](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/how-to/image-retrieval) | integrations | 0.70 | Describes using the image retrieval API, including vectorization behavior and likely request parameters and options for the 2024-02-01 API version; this is concrete integration/config detail. |
 | [Call the Read API](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/how-to/call-read-api) | integrations | 0.70 | How-to for calling the Read v3.2 API that typically includes request/response schemas, operation IDs, query/body parameters, and configuration options (like language, pages, features) that are product-specific integration details beyond generic HTTP usage. |

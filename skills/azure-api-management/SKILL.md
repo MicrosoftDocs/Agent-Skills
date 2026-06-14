@@ -1,9 +1,9 @@
 ---
 name: azure-api-management
-description: Expert knowledge for Azure API Management development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when integrating APIM with Event Hubs/Service Bus/LLMs, configuring policies, securing with Entra ID/OAuth2, or deploying self-hosted gateways, and other Azure API Management related development tasks. Not for Azure Application Gateway (use azure-application-gateway), Azure Front Door (use azure-front-door), Azure Web Application Firewall (use azure-web-application-firewall), Azure Service Bus (use azure-service-bus).
+description: Expert knowledge for Azure API Management development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when securing and scaling Azure API Management with policies, self-hosted gateways, VNet/App Gateway/Front Door, and CI/CD, and other Azure API Management related development tasks. Not for Azure Application Gateway (use azure-application-gateway), Azure Front Door (use azure-front-door), Azure Load Balancer (use azure-load-balancer), Azure Api Center (use azure-api-center).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-07"
+  generated_at: "2026-06-14"
   generator: "docs2skills/1.0.0"
 ---
 # Azure API Management Skill
@@ -30,7 +30,7 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L75-L81 | Patterns for placing API Management behind App Gateway/WAF, Azure Front Door, or AKS, including routing, security, and high‑availability reference architectures. |
 | Limits & Quotas | L82-L99 | Limits, quotas, and validation rules in API Management: request/concurrency caps, per-key and bandwidth quotas, LLM token limits, SOAP/WSDL/WebSocket constraints, and validate-* policies. |
 | Security | L100-L141 | Securing APIs and APIM: authN/Z (Entra ID, B2C, OAuth2, JWT, mTLS, basic), managed identities/RBAC, secure portals/self-hosted gateways, security policies, and DDoS/Defender protections. |
-| Configuration | L142-L236 | Configuring Azure API Management services: networking, domains, gateways, monitoring/logging, caching, policies (rate limits, CORS, transforms, LLM), backends, subscriptions, users, and deployment templates. |
+| Configuration | L142-L236 | Configuring Azure API Management services, gateways, networks, caching, monitoring, and detailed policy behaviors (rate limits, CORS, headers, LLM/GraphQL, backends, domains, and developer portal). |
 | Integrations & Coding Patterns | L237-L268 | Patterns and samples for integrating API Management with external services (LLMs, Event Hubs, Service Bus, Graph, GitHub, Dapr), importing APIs (OpenAPI, SAP, web apps), and using policies/callouts. |
 | Deployment | L269-L288 | Deploying and scaling API Management: autoscale, multi-region, DR/backup, VNet and zone deployment, self-hosted gateways (AKS/Kubernetes/Docker/Arc), automation, and certificate planning. |
 

@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-06-07'
+generated_at: '2026-06-14'
 category_descriptions:
-  configuration: 'Configuring Azure VMware Solution environments: networking, storage,
-    backup, monitoring, DNS, HCX, vSAN, Cloud Director, Arc/Run Command, and related
-    integration and high availability settings.'
+  configuration: 'Configuring and managing AVS infrastructure: networking, DNS/DHCP,
+    storage/datastores, backup, monitoring/metrics, Arc/Run Command, HCX, Cloud Director,
+    and high availability settings.'
   architecture-patterns: 'Network, storage, and private cloud design for AVS: hub-spoke
     patterns, vSAN/stretched clusters, Horizon and GitHub Enterprise sizing, Cloud
     Director networking, and Gen 2 architecture.'
@@ -30,16 +30,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure VMware Solution development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when deploying AVS with HCX, vSAN, NSX, Horizon/Citrix VDI, or integrating with
-  Azure storage/backup, and other Azure VMware Solution related development tasks.
-  Not for Azure Virtual Machines (use azure-virtual-machines), Azure Stack Edge (use
-  azure-stack-edge), Azure Baremetal Infrastructure (use azure-baremetal-infrastructure),
-  Azure Large Instances (use azure-large-instances).
-use_when: Use when deploying AVS with HCX, vSAN, NSX, Horizon/Citrix VDI, or integrating
-  with Azure storage/backup, and other Azure VMware Solution related development tasks.
+  Use when designing AVS private clouds, NSX/HCX networking, vSAN clusters, Horizon
+  VDI, or Cloud Director setups, and other Azure VMware Solution related development
+  tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Migrate
+  (use azure-migrate), Azure Site Recovery (use azure-site-recovery), Azure Baremetal
+  Infrastructure (use azure-baremetal-infrastructure).
+use_when: Use when designing AVS private clouds, NSX/HCX networking, vSAN clusters,
+  Horizon VDI, or Cloud Director setups, and other Azure VMware Solution related development
+  tasks.
 confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines), Azure
-  Stack Edge (use azure-stack-edge), Azure Baremetal Infrastructure (use azure-baremetal-infrastructure),
-  Azure Large Instances (use azure-large-instances).
+  Migrate (use azure-migrate), Azure Site Recovery (use azure-site-recovery), Azure
+  Baremetal Infrastructure (use azure-baremetal-infrastructure).
 ---
 # Azure VMware Solution Crawl Report
 
@@ -53,8 +54,8 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 14
-- **Unchanged**: 121
+- **Updated Pages**: 1
+- **Unchanged**: 134
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-vmware-solution/azure-vmware-solution.csv`
 
@@ -64,10 +65,10 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 |------|-------|------------|
 | architecture-patterns | 9 | 6.7% |
 | best-practices | 3 | 2.2% |
-| configuration | 33 | 24.4% |
+| configuration | 34 | 25.2% |
 | decision-making | 9 | 6.7% |
 | deployment | 8 | 5.9% |
-| integrations | 8 | 5.9% |
+| integrations | 7 | 5.2% |
 | limits-quotas | 9 | 6.7% |
 | security | 13 | 9.6% |
 | troubleshooting | 3 | 2.2% |
@@ -77,34 +78,8 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 
 ### Updated Pages
 
-- [FAQ](https://learn.microsoft.com/en-us/azure/azure-vmware/faq)
-  - Updated: 2026-04-23T17:12:00.000Z → 2026-06-02T20:30:00.000Z
-- [Migrate a SQL Server standalone instance to Azure VMware Solution](https://learn.microsoft.com/en-us/azure/azure-vmware/migrate-sql-server-standalone-cluster)
-  - Updated: 2025-01-08T08:00:00.000Z → 2026-05-28T08:00:00.000Z
-- [Migrate SQL Server failover cluster to Azure VMware Solution](https://learn.microsoft.com/en-us/azure/azure-vmware/migrate-sql-server-failover-cluster)
-  - Updated: 2025-01-08T08:00:00.000Z → 2026-05-28T08:00:00.000Z
-- [Migrate Microsoft SQL Server Always On Availability Group to Azure VMware Solution](https://learn.microsoft.com/en-us/azure/azure-vmware/migrate-sql-server-always-on-availability-group)
-  - Updated: 2025-01-08T08:00:00.000Z → 2026-05-28T08:00:00.000Z
-- [Enable VMware Cloud Director with Azure VMware Solution](https://learn.microsoft.com/en-us/azure/azure-vmware/enable-vmware-vcd-with-azure)
-  - Updated: 2025-05-27T17:04:00.000Z → 2026-05-27T08:00:00.000Z
-- [Deploy VMware Cloud Director Availability in Azure VMware Solution](https://learn.microsoft.com/en-us/azure/azure-vmware/deploy-vmware-cloud-director-availability-in-azure-vmware-solution)
-  - Updated: 2025-01-09T08:00:00.000Z → 2026-05-26T08:00:00.000Z
-- [Operating system support for VMs](https://learn.microsoft.com/en-us/azure/azure-vmware/ecosystem-os-vms)
-  - Updated: 2025-07-21T22:12:00.000Z → 2026-06-03T05:14:00.000Z
-- [Deploy Horizon on Azure VMware Solution](https://learn.microsoft.com/en-us/azure/azure-vmware/azure-vmware-solution-horizon)
-  - Updated: 2025-01-09T08:00:00.000Z → 2026-05-22T08:00:00.000Z
-- [1 - Plan the deployment](https://learn.microsoft.com/en-us/azure/azure-vmware/plan-private-cloud-deployment)
-  - Updated: 2025-07-02T22:09:00.000Z → 2026-05-29T08:00:00.000Z
-- [6 - Uninstall VMware HCX in Azure VMware Solution](https://learn.microsoft.com/en-us/azure/azure-vmware/uninstall-vmware-hcx)
-  - Updated: 2025-02-26T08:00:00.000Z → 2026-06-02T08:00:00.000Z
-- [Enable public IP on the NSX Edge for Azure VMware Solution](https://learn.microsoft.com/en-us/azure/azure-vmware/enable-public-ip-nsx-edge)
-  - Updated: 2025-02-04T08:00:00.000Z → 2026-06-01T08:00:00.000Z
-- [Move Azure VMware Solution resources across regions](https://learn.microsoft.com/en-us/azure/azure-vmware/move-azure-vmware-solution-across-regions)
-  - Updated: 2025-01-10T08:00:00.000Z → 2026-05-28T08:00:00.000Z
-- [Security recommendations](https://learn.microsoft.com/en-us/azure/azure-vmware/security-recommendations)
-  - Updated: 2025-02-26T08:00:00.000Z → 2026-06-03T05:14:00.000Z
-- [Enable VMware HCX access over the internet](https://learn.microsoft.com/en-us/azure/azure-vmware/enable-hcx-access-over-internet)
-  - Updated: 2025-02-26T08:00:00.000Z → 2026-05-27T08:00:00.000Z
+- [Use Set-ToolsRepo Run Command](https://learn.microsoft.com/en-us/azure/azure-vmware/use-set-toolsrepo-run-command)
+  - Updated: 2026-05-08T06:13:00.000Z → 2026-06-12T22:22:00.000Z
 
 ## Classified Pages
 
@@ -168,7 +143,7 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Security recommendations](https://learn.microsoft.com/en-us/azure/azure-vmware/security-recommendations) | security | 0.70 | Security recommendations for a specific service usually include concrete RBAC roles, network/security configuration settings, and product-specific hardening steps. These are service-specific security configurations and best practices that go beyond generic security concepts. |
 | [Send syslogs to log management solutions via Azure Logic Apps](https://learn.microsoft.com/en-us/azure/azure-vmware/logs-via-logic-app) | integrations | 0.70 | Shows how to configure an Azure Logic Apps workflow to collect and forward VMware syslogs from AVS to external log management services. This is a concrete integration pattern between AVS syslogs and Logic Apps, likely including trigger/action configuration and parameters unique to this scenario. |
 | [Set an external identity source for vCenter Server](https://learn.microsoft.com/en-us/azure/azure-vmware/configure-identity-source-vcenter) | security | 0.70 | Describes product-specific identity and role configuration for Azure VMware Solution vCenter, including the special CloudAdmin account and role behavior that differs from other VMware and on-premises deployments, which is security-focused expert knowledge about RBAC and identity integration. |
-| [Use Set-ToolsRepo Run Command](https://learn.microsoft.com/en-us/azure/azure-vmware/use-set-toolsrepo-run-command) | integrations | 0.70 | Explains end-to-end use of the Set-ToolsRepo Run Command, including downloading/hosting the correct GuestStore VMware Tools zip and validating success. This is a product-specific command/integration pattern between AVS run commands and VMware Tools, with concrete parameters and steps not covered by generic knowledge. |
+| [Use Set-ToolsRepo Run Command](https://learn.microsoft.com/en-us/azure/azure-vmware/use-set-toolsrepo-run-command) | configuration | 0.70 | The article describes end-to-end use of the Set-ToolsRepo Run Command in Azure VMware Solution, including how to download and host the correct GuestStore version of the VMware Tools ZIP and how to run and validate the AVS Run Command. This implies product-specific command usage, parameters, and configuration steps unique to Azure VMware Solution rather than generic concepts, fitting the configuration sub-skill best. |
 | [VMware Cloud Foundations (VCF) license portability on Azure VMware Solution](https://learn.microsoft.com/en-us/azure/azure-vmware/vmware-cloud-foundations-license-portability) | decision-making | 0.70 | Explains Broadcom VCF licensing changes, dates, and how to bring your own VCF subscription; contains time-bound, product-specific decision guidance. |
 | [VMware HCX Mobility Optimized Networking (MON) guidance](https://learn.microsoft.com/en-us/azure/azure-vmware/vmware-hcx-mon-guidance) | best-practices | 0.70 | Provides recommended configurations to mitigate NSX data path constraints and improve HCX migration performance—product-specific best practices. |
 | [Attach Azure NetApp Files datastores to Azure VMware Solution hosts](https://learn.microsoft.com/en-us/azure/azure-vmware/attach-azure-netapp-files-to-azure-vmware-solution-hosts) | configuration | 0.68 | The page is a how-to for attaching Azure NetApp Files NFS datastores to Azure VMware Solution hosts and typically includes product-specific configuration steps and parameters (such as required network settings, datastore/volume properties, and AVS-side configuration). This is concrete, service-specific configuration knowledge rather than a conceptual overview, but it does not primarily focus on limits, troubleshooting, or architecture patterns. |
