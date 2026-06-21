@@ -1,9 +1,9 @@
 ---
 name: azure-key-vault
-description: Expert knowledge for Azure Key Vault development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Key Vault/Managed HSM with Private Link, Event Grid, Databricks, DigiCert, RBAC, or ARM/Bicep/Terraform, and other Azure Key Vault related development tasks. Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure Cloud Hsm (use azure-cloud-hsm), Azure Payment Hsm (use azure-payment-hsm), Azure Information Protection (use azure-information-protection).
+description: Expert knowledge for Azure Key Vault development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing vault/HSM keys & secrets, Private Link, Event Grid, key rotation, or RBAC vs access policies, and other Azure Key Vault related development tasks. Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure Cloud Hsm (use azure-cloud-hsm), Azure Payment Hsm (use azure-payment-hsm), Azure Information Protection (use azure-information-protection).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-14"
+  generated_at: "2026-06-21"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Key Vault Skill
@@ -28,7 +28,7 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L45-L55 | Best practices for HSM/BYOK key generation and transfer, secure key management, disaster recovery for Managed HSM, and automating single/dual-credential secret rotation in Key Vault. |
 | Decision Making | L56-L62 | Guidance on planning key and HSM capacity, scaling, and migrating cryptographic workloads or Key Vault access control from access policies to RBAC |
 | Limits & Quotas | L63-L74 | Key Vault and Managed HSM limits, quotas, throttling, logging latency, certificate/secret size behaviors, soft-delete/recovery, and network/IP firewall configuration. |
-| Security | L75-L99 | Securing Key Vault and Managed HSM: auth, RBAC vs access policies, network/firewall/private endpoints, Zero Trust, soft-delete, backup/restore, and hardening best practices. |
+| Security | L75-L99 | Securing Key Vault and Managed HSM: auth/RBAC vs access policies, network/firewall/private endpoints, soft-delete/backup-restore, and hardening/best practices for keys, secrets, and certificates. |
 | Configuration | L100-L121 | Configuring Key Vault and Managed HSM: monitoring, alerts, logging, metrics, policies, key types/algorithms, key rotation, secure key release, replication, and special secret formats. |
 | Integrations & Coding Patterns | L122-L146 | Integrating Key Vault with Event Grid, Private Link, DigiCert, Databricks, Managed HSM TLS offload, and JavaScript code samples for managing keys/secrets and crypto operations |
 | Deployment | L147-L150 | How to deploy and provision Azure Key Vault and Managed HSM (vaults, keys, secrets) using ARM templates, Bicep, Terraform, Azure CLI, and PowerShell |
@@ -81,10 +81,10 @@ This skill requires **network access** to fetch documentation content:
 | Configure Azure Key Vault access policies with CLI | https://learn.microsoft.com/en-us/azure/key-vault/general/assign-access-policy |
 | Configure authentication to Azure Key Vault with Entra ID | https://learn.microsoft.com/en-us/azure/key-vault/general/authentication |
 | Configure network security options for Azure Key Vault | https://learn.microsoft.com/en-us/azure/key-vault/general/network-security |
-| Secure Key Vault access with virtual network service endpoints | https://learn.microsoft.com/en-us/azure/key-vault/general/overview-vnet-service-endpoints |
+| Restrict Azure Key Vault access with VNet service endpoints | https://learn.microsoft.com/en-us/azure/key-vault/general/overview-vnet-service-endpoints |
 | Choose Azure RBAC vs access policies for Key Vault | https://learn.microsoft.com/en-us/azure/key-vault/general/rbac-access-policy |
-| Configure Azure RBAC permissions for Key Vault access | https://learn.microsoft.com/en-us/azure/key-vault/general/rbac-guide |
-| Apply Zero Trust security practices to Azure Key Vault | https://learn.microsoft.com/en-us/azure/key-vault/general/secure-key-vault |
+| Configure Azure RBAC permissions for Azure Key Vault | https://learn.microsoft.com/en-us/azure/key-vault/general/rbac-guide |
+| Apply security best practices to Azure Key Vault | https://learn.microsoft.com/en-us/azure/key-vault/general/secure-key-vault |
 | Configure and use Azure Key Vault soft-delete safely | https://learn.microsoft.com/en-us/azure/key-vault/general/soft-delete-overview |
 | Manage access control and authorization for Managed HSM | https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/access-control |
 | Configure ARM access for Managed HSM key management | https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/authorize-azure-resource-manager |

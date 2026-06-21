@@ -50,8 +50,8 @@ confusable_not_for: Not for Azure AI Language (use azure-language-service), Azur
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 113
+- **Updated Pages**: 0
+- **Unchanged**: 115
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-translator/azure-translator.csv`
 
@@ -70,13 +70,6 @@ confusable_not_for: Not for Azure AI Language (use azure-language-service), Azur
 | *(Unclassified)* | 35 | 30.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [REST API guide](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/2026-06-06/rest-api-guide)
-  - Updated: 2026-06-02T19:00:00.000Z → 2026-06-11T16:45:00.000Z
-- [Transliterate](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/2026-06-06/transliterate-api)
-  - Updated: 2026-06-02T19:00:00.000Z → 2026-06-11T16:45:00.000Z
 
 ## Classified Pages
 

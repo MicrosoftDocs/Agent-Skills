@@ -37,8 +37,8 @@ confusable_not_for: Not for Azure Blueprints (use azure-blueprints), Azure Resou
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 60
+- **Updated Pages**: 0
+- **Unchanged**: 62
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-managed-applications/azure-managed-applications.csv`
 
@@ -53,13 +53,6 @@ confusable_not_for: Not for Azure Blueprints (use azure-blueprints), Azure Resou
 | *(Unclassified)* | 9 | 14.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [Create portal interface](https://learn.microsoft.com/en-us/azure/azure-resource-manager/managed-applications/create-uidefinition-overview)
-  - Updated: 2024-06-24T08:00:00.000Z → 2026-05-29T08:00:00.000Z
-- [User interface elements](https://learn.microsoft.com/en-us/azure/azure-resource-manager/managed-applications/create-uidefinition-elements)
-  - Updated: 2024-06-24T22:06:00.000Z → 2026-06-12T05:19:00.000Z
 
 ## Classified Pages
 

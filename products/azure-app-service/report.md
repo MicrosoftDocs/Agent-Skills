@@ -52,10 +52,10 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Spring 
 - **Unclassified**: 99
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 1
-- **Unchanged**: 245
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 247
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-app-service/azure-app-service.csv`
 
 ## Classification Statistics
@@ -74,19 +74,6 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Spring 
 | *(Unclassified)* | 99 | 40.1% |
 
 ## Changes
-
-### New Pages
-
-- [Buy and manage App Service certificates](https://learn.microsoft.com/en-us/azure/app-service/configure-ssl-app-service-certificate)
-
-### Updated Pages
-
-- [About high density hosting](https://learn.microsoft.com/en-us/azure/app-service/manage-scale-per-app)
-  - Updated: 2025-06-05T05:17:00.000Z → 2026-06-11T17:23:00.000Z
-
-### Deleted Pages
-
-- ~~Create and Manage App Service certificates~~ (https://learn.microsoft.com/en-us/azure/app-service/configure-ssl-app-service-certificate)
 
 ## Classified Pages
 

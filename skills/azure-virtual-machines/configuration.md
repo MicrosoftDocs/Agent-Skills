@@ -37,7 +37,7 @@
 | Change performance tiers for Azure Managed Disks | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-performance-tiers |
 | Enable and configure Azure shared managed disks | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-shared-enable |
 | Configure torn-write prevention on Linux managed disks | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-torn-write-prevention |
-| Select OS images that support Azure remote NVMe | https://learn.microsoft.com/en-us/azure/virtual-machines/enable-nvme-interface |
+| Check supported OS images for Azure NVMe | https://learn.microsoft.com/en-us/azure/virtual-machines/enable-nvme-interface |
 | Configure Azure Monitor Dependency agent extension for Linux | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/agent-dependency-linux |
 | Configure Azure Monitor Dependency agent extension for Windows | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/agent-dependency-windows |
 | Configure and manage Azure Linux VM Agent settings | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/agent-linux |
@@ -69,6 +69,7 @@
 | Configure VM Snapshot Linux extension for Azure Backup | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/vmsnapshot-linux |
 | Configure VM Snapshot Windows extension for Azure Backup | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/vmsnapshot-windows |
 | Use Azure FPGA Attestation service for NP-series VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/field-programmable-gate-arrays-attestation |
+| Configure Azure Monitor VM availability metric with Flash | https://learn.microsoft.com/en-us/azure/virtual-machines/flash-azure-monitor |
 | Enable and configure Azure Write Accelerator | https://learn.microsoft.com/en-us/azure/virtual-machines/how-to-enable-write-accelerator |
 | Understand HX-series VM architecture and topology | https://learn.microsoft.com/en-us/azure/virtual-machines/hx-series-overview |
 | Install Azure VM watch via ARM, PowerShell, or CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/install-vm-watch |
@@ -101,8 +102,7 @@
 | Manage and restore Azure VMs from restore points | https://learn.microsoft.com/en-us/azure/virtual-machines/manage-restore-points |
 | Export Compute Gallery image versions to managed disks | https://learn.microsoft.com/en-us/azure/virtual-machines/managed-disk-from-image-version |
 | Configure Marketplace purchase plans for gallery images | https://learn.microsoft.com/en-us/azure/virtual-machines/marketplace-images |
-| Configure monitoring and alerts for Azure VMs and scale sets | https://learn.microsoft.com/en-us/azure/virtual-machines/monitor-vm |
-| Reference for Azure VM monitoring metrics, logs, and dimensions | https://learn.microsoft.com/en-us/azure/virtual-machines/monitor-vm-reference |
+| Reference monitoring data for Azure Virtual Machines | https://learn.microsoft.com/en-us/azure/virtual-machines/monitor-vm-reference |
 | Convert Azure VM disks from SCSI to NVMe on Linux | https://learn.microsoft.com/en-us/azure/virtual-machines/nvme-linux |
 | Configure and enable NVMe on Azure virtual machines | https://learn.microsoft.com/en-us/azure/virtual-machines/nvme-overview |
 | Configure InfiniBand networking on Azure HPC VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/setup-infiniband |
@@ -110,7 +110,6 @@
 | Configure MPI for RDMA-capable Azure HPC VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/setup-mpi |
 | Create and store SSH keys with Azure CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/ssh-keys-azure-cli |
 | Configure and manage SSH keys in Azure portal | https://learn.microsoft.com/en-us/azure/virtual-machines/ssh-keys-portal |
-| Upgrade Azure Gen1 VMs to Trusted launch Gen2 | https://learn.microsoft.com/en-us/azure/virtual-machines/trusted-launch-existing-vm-gen-1 |
 | List, update, and delete Compute Gallery resources | https://learn.microsoft.com/en-us/azure/virtual-machines/update-image-resources |
 | Configure user data scripts for Azure VMs at provisioning | https://learn.microsoft.com/en-us/azure/virtual-machines/user-data |
 | Control OS image upgrades on VM scale sets with Maintenance control | https://learn.microsoft.com/en-us/azure/virtual-machines/virtual-machine-scale-sets-maintenance-control |

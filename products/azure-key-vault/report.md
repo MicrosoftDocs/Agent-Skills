@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-14'
+generated_at: '2026-06-21'
 category_descriptions:
   limits-quotas: Key Vault and Managed HSM limits, quotas, throttling, logging latency,
     certificate/secret size behaviors, soft-delete/recovery, and network/IP firewall
@@ -7,8 +7,9 @@ category_descriptions:
   integrations: Integrating Key Vault with Event Grid, Private Link, DigiCert, Databricks,
     Managed HSM TLS offload, and JavaScript code samples for managing keys/secrets
     and crypto operations
-  security: 'Securing Key Vault and Managed HSM: auth, RBAC vs access policies, network/firewall/private
-    endpoints, Zero Trust, soft-delete, backup/restore, and hardening best practices.'
+  security: 'Securing Key Vault and Managed HSM: auth/RBAC vs access policies, network/firewall/private
+    endpoints, soft-delete/backup-restore, and hardening/best practices for keys,
+    secrets, and certificates.'
   configuration: 'Configuring Key Vault and Managed HSM: monitoring, alerts, logging,
     metrics, policies, key types/algorithms, key rotation, secure key release, replication,
     and special secret formats.'
@@ -23,13 +24,13 @@ category_descriptions:
     keys, secrets) using ARM templates, Bicep, Terraform, Azure CLI, and PowerShell
 skill_description: Expert knowledge for Azure Key Vault development including troubleshooting,
   best practices, decision making, limits & quotas, security, configuration, integrations
-  & coding patterns, and deployment. Use when using Key Vault/Managed HSM with Private
-  Link, Event Grid, Databricks, DigiCert, RBAC, or ARM/Bicep/Terraform, and other
-  Azure Key Vault related development tasks. Not for Azure Dedicated HSM (use azure-dedicated-hsm),
+  & coding patterns, and deployment. Use when managing vault/HSM keys & secrets, Private
+  Link, Event Grid, key rotation, or RBAC vs access policies, and other Azure Key
+  Vault related development tasks. Not for Azure Dedicated HSM (use azure-dedicated-hsm),
   Azure Cloud Hsm (use azure-cloud-hsm), Azure Payment Hsm (use azure-payment-hsm),
   Azure Information Protection (use azure-information-protection).
-use_when: Use when using Key Vault/Managed HSM with Private Link, Event Grid, Databricks,
-  DigiCert, RBAC, or ARM/Bicep/Terraform, and other Azure Key Vault related development
+use_when: Use when managing vault/HSM keys & secrets, Private Link, Event Grid, key
+  rotation, or RBAC vs access policies, and other Azure Key Vault related development
   tasks.
 confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure Cloud
   Hsm (use azure-cloud-hsm), Azure Payment Hsm (use azure-payment-hsm), Azure Information
@@ -46,10 +47,10 @@ confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure
 - **Unclassified**: 84
 
 ### Incremental Update
-- **New Pages**: 3
-- **Updated Pages**: 3
-- **Unchanged**: 162
-- **Deleted Pages**: 3
+- **New Pages**: 0
+- **Updated Pages**: 5
+- **Unchanged**: 163
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-key-vault/azure-key-vault.csv`
 
 ## Classification Statistics
@@ -68,26 +69,18 @@ confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure
 
 ## Changes
 
-### New Pages
-
-- [Monitor Azure Key Vault Managed HSM](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/logging-azure-monitor)
-- [Setting up Sentinel for Azure Key Vault Managed HSM](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/sentinel)
-- [Validate Azure Key Vault Managed HSM keys with key Attestation](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/key-attestation)
-
 ### Updated Pages
 
-- [Frequently asked questions](https://learn.microsoft.com/en-us/azure/key-vault/certificates/faq)
-  - Updated: 2026-04-10T22:07:00.000Z → 2026-06-12T22:35:00.000Z
-- [Authorize Azure Resource Manager](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/authorize-azure-resource-manager)
-  - Updated: 2026-03-26T08:00:00.000Z → 2026-06-11T17:55:00.000Z
-- [Firmware updates](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/firmware-update)
-  - Updated: 2025-10-24T17:12:00.000Z → 2026-06-11T17:55:00.000Z
-
-### Deleted Pages
-
-- ~~Validate Azure Managed HSM keys with key Attestation~~ (https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/key-attestation)
-- ~~Monitor Azure Managed HSM~~ (https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/logging-azure-monitor)
-- ~~Setting up Sentinel for Azure Managed HSM~~ (https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/sentinel)
+- [Virtual network service endpoints for Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/general/overview-vnet-service-endpoints)
+  - Updated: 2026-04-10T08:00:00.000Z → 2026-06-16T17:39:00.000Z
+- [Use an Azure RBAC for managing access](https://learn.microsoft.com/en-us/azure/key-vault/general/rbac-guide)
+  - Updated: 2026-04-10T08:00:00.000Z → 2026-06-16T08:00:00.000Z
+- [Secure your Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/general/secure-key-vault)
+  - Updated: 2026-05-04T08:00:00.000Z → 2026-06-16T08:00:00.000Z
+- [Configure network security](https://learn.microsoft.com/en-us/azure/key-vault/general/network-security)
+  - Updated: 2026-05-04T08:00:00.000Z → 2026-06-16T08:00:00.000Z
+- [About Managed HSM](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/overview)
+  - Updated: 2025-11-19T08:00:00.000Z → 2026-06-15T22:34:00.000Z
 
 ## Classified Pages
 
@@ -106,24 +99,23 @@ confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure
 | [Troubleshoot issues with implementing Azure Key Vault with Azure Policy](https://learn.microsoft.com/en-us/azure/key-vault/general/troubleshoot-azure-policy-for-key-vault) | troubleshooting | 0.85 | Explicit troubleshooting guide for Azure Policy with Key Vault, likely mapping specific policy errors/symptoms to causes and resolutions, which is product-specific diagnostic knowledge. |
 | [About secrets](https://learn.microsoft.com/en-us/azure/key-vault/secrets/about-secrets) | limits-quotas | 0.80 | Contains a specific numerical constraint: secrets are stored as octet sequences with a maximum size of 25 KB each. This is an exact product limit that qualifies as expert knowledge under limits-quotas. |
 | [Bring your own key specification](https://learn.microsoft.com/en-us/azure/key-vault/keys/byok-specification) | configuration | 0.80 | A formal BYOK specification typically defines exact formats, parameter names, key sizes, wrapping algorithms, and file structures required for import, which are detailed configuration constraints not derivable from general knowledge. |
+| [Configure network security](https://learn.microsoft.com/en-us/azure/key-vault/general/network-security) | security | 0.80 | Details how to configure Key Vault network security, including firewall settings, Private Link, and Network Security Perimeter. These are product-specific security configuration steps and options, matching the security sub-skill. |
 | [Configure network security](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/configure-network-security) | limits-quotas | 0.80 | Networking configuration article with explicit limit of 10 IP address or IP range rules and step-by-step firewall settings; includes concrete numerical limits and configuration parameters. |
 | [Key types, algorithms, and operations](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/about-keys-details) | configuration | 0.80 | Reference page summarizing supported RSA, EC, and AES key types and algorithms in Managed HSM. This is product-specific configuration knowledge (which key types/algorithms are allowed and how they’re categorized), typically presented in tables, and goes beyond generic cryptography concepts. |
 | [Managed HSM role management](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/role-management) | security | 0.80 | Focuses on managing roles and role assignments for Managed HSM using built-in roles; this is product-specific RBAC configuration and access control guidance. |
 | [Prepare for Azure RBAC as default](https://learn.microsoft.com/en-us/azure/key-vault/general/access-control-default) | security | 0.80 | Explains change to Azure RBAC as default access control, specific API version (2026-02-01), and retirement date for earlier versions. Contains product-specific security model details and version timelines relevant to secure configuration. |
 | [Secure access to your Managed HSM](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/how-to-secure-access) | security | 0.80 | Tutorial on securing access with Azure RBAC and local RBAC; likely includes specific role names, assignment patterns, and separation-of-duties configurations unique to Managed HSM. |
 | [Secure key release policy grammar](https://learn.microsoft.com/en-us/azure/key-vault/keys/policy-grammar) | configuration | 0.80 | Documents an EBNF grammar for secure key release policy, including specific fields and operators, which is detailed configuration syntax. |
+| [Use an Azure RBAC for managing access](https://learn.microsoft.com/en-us/azure/key-vault/general/rbac-guide) | security | 0.80 | Covers how to grant applications access to Key Vault using Azure RBAC, including resource types, API version behavior, and role-based access patterns. Contains product-specific RBAC usage and configuration details that qualify as expert security knowledge. |
 | [Use private endpoints](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/private-link) | security | 0.80 | Provides specific steps and parameters to integrate Managed HSM with Private Link, which are product-specific network security configurations. |
-| [Virtual network service endpoints for Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/general/overview-vnet-service-endpoints) | security | 0.80 | Describes restricting access via VNets, IPv4 ranges, and exceptions for trusted Microsoft services. This is product-specific network security configuration, including special-case behavior, fitting the security category. |
 | [Access Key Vault behind a firewall](https://learn.microsoft.com/en-us/azure/key-vault/general/access-behind-firewall) | security | 0.78 | Article specifies ports, hosts, and IP ranges required for Key Vault access from restricted networks, which are concrete, product-specific security/network configuration values. |
-| [Configure network security](https://learn.microsoft.com/en-us/azure/key-vault/general/network-security) | security | 0.78 | The page focuses on configuring network security for Azure Key Vault, including firewall settings, Private Link, and Network Security Perimeter. Such content necessarily involves product-specific security configuration parameters (for example, firewall rule settings, allowed networks, endpoint configuration) and step-by-step configuration guidance. This matches the 'security' sub-skill definition (service-specific security settings and IAM-related configuration) and constitutes expert knowledge beyond generic networking concepts. |
 | [Key types, algorithms, and operations](https://learn.microsoft.com/en-us/azure/key-vault/keys/about-keys-details) | configuration | 0.78 | Page is a detailed reference of supported key types, algorithms, attributes, and operations for Azure Key Vault. It likely includes exact algorithm names, key type identifiers, and operation flags in tabular form, which are product-specific configuration details rather than generic concepts. |
 | [Secure your Key Vault keys](https://learn.microsoft.com/en-us/azure/key-vault/keys/secure-keys) | best-practices | 0.78 | Described as providing security recommendations and best practices specific to cryptographic key management in Azure Key Vault keys; this is product-specific guidance beyond generic crypto concepts. |
-| [Use an Azure RBAC for managing access](https://learn.microsoft.com/en-us/azure/key-vault/general/rbac-guide) | security | 0.78 | RBAC guide necessarily lists specific built-in role names, scopes, and how they map to Key Vault data-plane permissions, which are product-specific security details beyond generic RBAC concepts. |
 | [Configure automated key rotation](https://learn.microsoft.com/en-us/azure/key-vault/keys/how-to-configure-key-rotation) | configuration | 0.75 | Key rotation policy configuration generally includes specific policy parameters (lifetime actions, time intervals, triggers) and allowed ranges; these are concrete configuration options unique to Key Vault key rotation. |
 | [Enable logging](https://learn.microsoft.com/en-us/azure/key-vault/general/howto-logging) | configuration | 0.75 | Logging article will specify diagnostic settings categories, log types, and configuration parameters (e.g., storage account, retention), which are product-specific configuration options. |
 | [Key Vault authentication](https://learn.microsoft.com/en-us/azure/key-vault/general/authentication) | security | 0.75 | Details how Key Vault uses Microsoft Entra ID, including security principal types and object IDs; likely includes specific auth flows and configuration parameters. |
 | [Network security](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/network-security) | security | 0.75 | Covers Managed HSM firewall configurations and networking options, which are concrete security configuration details specific to the service. |
-| [Secure your Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/general/secure-key-vault) | security | 0.74 | The article is explicitly about securing Azure Key Vault and is described as containing security recommendations and best practices. For this product, such guidance typically includes concrete, service-specific security configurations (for example, recommended RBAC roles, access policy patterns, logging settings, and network restrictions) that go beyond generic security concepts. That aligns best with the 'security' sub-skill, and the content is product-specific enough to be considered expert knowledge rather than a generic overview. |
+| [Secure your Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/general/secure-key-vault) | security | 0.75 | Provides concrete security recommendations for protecting keys, secrets, and certificates in Key Vault, framed around Zero Trust principles. While summarized as best practices, they are specific to Key Vault security configuration and usage, fitting the security sub-skill. |
 | [Access control](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/access-control) | security | 0.70 | Covers Managed HSM-specific authentication and authorization models and how to secure access. This implies concrete RBAC/permission patterns unique to Managed HSM, fitting the security category rather than a generic overview. |
 | [Assign an access policy (legacy)](https://learn.microsoft.com/en-us/azure/key-vault/general/assign-access-policy) | security | 0.70 | CLI-focused how-to for assigning Key Vault access policies to principals. Contains product-specific security configuration details (access policy model vs RBAC, role implications, and exact CLI commands/parameters) that go beyond generic security concepts. |
 | [Authorize Azure Resource Manager](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/authorize-azure-resource-manager) | security | 0.70 | Page is about allowing key management operations via Azure Resource Manager for Managed HSM, which typically involves specific access policies, role names, and trust configuration unique to this product; this is product-specific security/authorization configuration. |
@@ -154,6 +146,7 @@ confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure
 | [Secure your managed HSM](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/secure-managed-hsm) | security | 0.70 | Explicitly a security hardening article for Managed HSM. Likely includes product-specific recommendations (network isolation, identity setup, access control patterns) and possibly role names or configuration settings, which qualify as expert security best practices. |
 | [Sign and verify with key](https://learn.microsoft.com/en-us/azure/key-vault/keys/javascript-developer-guide-sign-verify-key) | integrations | 0.70 | Provides concrete signing/verifying method usage and parameters in the JS client library, which are specific integration patterns. |
 | [Vault access policies to Azure RBAC migration guide](https://learn.microsoft.com/en-us/azure/key-vault/general/rbac-migration) | decision-making | 0.70 | Migration guidance between access policies and RBAC for Key Vault includes product-specific steps, caveats, and decision points about when/how to switch models that go beyond conceptual overview. |
+| [Virtual network service endpoints for Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/general/overview-vnet-service-endpoints) | security | 0.70 | Describes product-specific network access controls for Key Vault, including how virtual network service endpoints and IP range restrictions interact with the firewall and the special handling of trusted Microsoft services. This is concrete, service-specific security configuration guidance rather than a generic overview. |
 | [Enable and disable key](https://learn.microsoft.com/en-us/azure/key-vault/keys/javascript-developer-guide-enable-disable-key) | integrations | 0.68 | Uses updateKeyProperties and related SDK calls, which are concrete API patterns unique to the Key Vault JavaScript client. |
 | [Get key](https://learn.microsoft.com/en-us/azure/key-vault/keys/javascript-developer-guide-get-key) | integrations | 0.68 | Includes specific JavaScript client methods and patterns to get latest or specific key versions, which are SDK-specific integration details. |
 | [Import key](https://learn.microsoft.com/en-us/azure/key-vault/keys/javascript-developer-guide-import-key) | integrations | 0.68 | Contains concrete JavaScript SDK usage for key import, including method names and parameters unique to this product. |
@@ -199,7 +192,6 @@ confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure
 | [ARM template](https://learn.microsoft.com/en-us/azure/key-vault/general/quick-create-template) | 0.30 | ARM template quickstart to create a key vault; shows a single template example rather than a comprehensive configuration parameter reference or limits/quotas information. |
 | [ARM template](https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-template) | 0.30 | ARM template quickstart to deploy a Key Vault and secret; provides a basic template example without detailed configuration options, quotas, or troubleshooting mappings. |
 | [About Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/general/overview) | 0.30 | General Key Vault overview and tier description; no detailed limits, configs, or decision matrices in the summary. |
-| [About Managed HSM](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/overview) | 0.30 | High-level service overview and marketing-style description without detailed configuration, limits, or patterns. |
 | [About certificates](https://learn.microsoft.com/en-us/azure/key-vault/certificates/about-certificates) | 0.30 | High-level overview of Key Vault certificates and behaviors; no detailed limits, configuration tables, error codes, or product-specific numeric thresholds. |
 | [Apps, API keys, and Key Vault secrets](https://learn.microsoft.com/en-us/azure/key-vault/general/apps-api-keys-secrets) | 0.30 | Article is an overview/tutorial on using Key Vault for API keys; description suggests step-by-step usage rather than detailed configuration matrices or error/limit specifics. |
 | [Bicep](https://learn.microsoft.com/en-us/azure/key-vault/certificates/quick-create-bicep) | 0.30 | Bicep quickstart for creating a key vault and certificate; demonstrates one deployment pattern rather than detailed configuration options, limits, or decision matrices. |
@@ -266,3 +258,4 @@ confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure
 | [Setting up Sentinel for Azure Key Vault Managed HSM](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/sentinel) | 0.20 | Describes using Microsoft Sentinel with Managed HSM but summary shows no specific error codes, rule IDs, configuration parameter tables, or product-specific thresholds. |
 | [Third party solutions](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/third-party-solutions) | 0.20 | Lists third-party solutions and marketplace links; primarily catalog/marketing content without deep technical configuration or limits. |
 | [What's new](https://learn.microsoft.com/en-us/azure/key-vault/general/whats-new) | 0.20 | What’s new page is a changelog/updates feed; it’s not structured as limits, configuration matrices, or troubleshooting guidance and is largely temporal/marketing information. |
+| [About Managed HSM](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/overview) | - | High-level service overview of Azure Key Vault Managed HSM without visible specific limits, configuration parameters, error codes, or decision matrices; primarily conceptual/marketing content. |

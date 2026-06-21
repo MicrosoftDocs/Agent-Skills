@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-06-14'
+generated_at: '2026-06-21'
 category_descriptions:
-  integrations: How to connect apps (ASP.NET Core, .NET, Node.js, Python, Go) to Azure
-    Managed Redis, secure with Entra ID, use bindings, keyspace notifications, and
-    import/export data via Blob.
+  integrations: Patterns and code samples for connecting apps (ASP.NET, Go, Node.js,
+    Python, Functions) to Azure Managed Redis, securing with Entra ID, caching, keyspace
+    notifications, and data import/export.
   architecture-patterns: 'Details of Azure Managed Redis internals: cluster architecture,
     sharding, high availability, persistence, networking, scaling behavior, and how
     these design choices affect performance and reliability.'
@@ -27,12 +27,11 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Managed Redis development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  using Entra-auth clients, cluster/sharding, geo-replication, persistence, or Redis
-  Insight diagnostics, and other Azure Managed Redis related development tasks. Not
-  for Azure Cache for Redis (use azure-cache-redis).
-use_when: Use when using Entra-auth clients, cluster/sharding, geo-replication, persistence,
-  or Redis Insight diagnostics, and other Azure Managed Redis related development
-  tasks.
+  using Azure Managed Redis clustering, sharding, persistence, geo-replication, Entra
+  auth, or Private Link, and other Azure Managed Redis related development tasks.
+  Not for Azure Cache for Redis (use azure-cache-redis).
+use_when: Use when using Azure Managed Redis clustering, sharding, persistence, geo-replication,
+  Entra auth, or Private Link, and other Azure Managed Redis related development tasks.
 confusable_not_for: Not for Azure Cache for Redis (use azure-cache-redis).
 ---
 # Azure Managed Redis Crawl Report
@@ -70,8 +69,8 @@ confusable_not_for: Not for Azure Cache for Redis (use azure-cache-redis).
 
 ### Updated Pages
 
-- [Configure disk encryption](https://learn.microsoft.com/en-us/azure/redis/how-to-encryption)
-  - Updated: 2025-05-18T08:00:00.000Z → 2026-06-12T05:19:00.000Z
+- [Enable Redis keyspace notifications](https://learn.microsoft.com/en-us/azure/redis/enable-redis-keyspace-notifications)
+  - Updated: 2026-04-15T22:11:00.000Z → 2026-06-17T05:11:00.000Z
 
 ## Classified Pages
 
@@ -123,11 +122,11 @@ confusable_not_for: Not for Azure Cache for Redis (use azure-cache-redis).
 | [Understand differences](https://learn.microsoft.com/en-us/azure/redis/migrate/migrate-basic-standard-premium-understand) | decision-making | 0.70 | Explicitly about understanding key differences between Azure Cache for Redis tiers and Azure Managed Redis before migrating. This is SKU/service comparison to inform migration and tier selection decisions, fitting decision-making. |
 | [Understand differences](https://learn.microsoft.com/en-us/azure/redis/migrate/migrate-redis-enterprise-understand) | decision-making | 0.70 | Focused on understanding key differences between Azure Cache for Redis Enterprise and Azure Managed Redis before migrating; this is migration-oriented comparison content that informs whether and how to move, fitting decision-making with product-specific criteria. |
 | [Using Azure Functions to create a write-behind cache](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-cache) | integrations | 0.70 | Describes using Azure Functions triggers/bindings with Azure Managed Redis/Azure Cache for Redis; such docs include binding configuration parameters and connection settings unique to this integration. |
+| [Enable Redis keyspace notifications](https://learn.microsoft.com/en-us/azure/redis/enable-redis-keyspace-notifications) | integrations | 0.68 | The article goes beyond concepts and shows product-specific Redis command usage and configuration for keyspace notifications in Azure Managed Redis (preview). It describes how to deploy a cache with this feature enabled and how clients should subscribe to specific Pub/Sub channels and test events, which are concrete integration and coding patterns unique to this managed service setup. |
 | [Failover and patching](https://learn.microsoft.com/en-us/azure/redis/failover) | best-practices | 0.68 | The page describes product-specific behavior of Azure Managed Redis during failover and patching, including how planned vs. unplanned failovers occur and how clients should behave to remain resilient. This is actionable, service-specific guidance on handling failover scenarios rather than generic concepts, fitting best under best-practices. It does not primarily focus on limits, configuration tables, or deployment matrices. |
 | [Azure Managed Redis architecture](https://learn.microsoft.com/en-us/azure/redis/architecture) | architecture-patterns | 0.65 | Architecture article for a specific managed service typically includes product-specific architectural patterns, deployment topology details, and design trade-offs unique to Azure Managed Redis that go beyond generic Redis knowledge. |
 | [Create and manage with Azure CLI](https://learn.microsoft.com/en-us/azure/redis/scripts/create-manage-cache) | configuration | 0.65 | CLI script article exposes concrete az redis commands and flags for creating, querying, and deleting caches, which are product-specific configuration parameters. |
 | [Create and manage with Azure PowerShell](https://learn.microsoft.com/en-us/azure/redis/how-to-manage-redis-cache-powershell) | configuration | 0.65 | PowerShell management article typically documents specific cmdlets and parameters for creating and managing Redis instances, which are product-specific configuration interfaces. |
-| [Enable Redis keyspace notifications](https://learn.microsoft.com/en-us/azure/redis/enable-redis-keyspace-notifications) | integrations | 0.65 | Describes enabling and using Redis keyspace notifications in Azure Managed Redis with Redis commands and subscription patterns. This is a product-specific integration/coding pattern (Pub/Sub channels, notification channels, client commands) rather than a generic concept, and likely includes concrete command usage and configuration flags. |
 | [Import/Export data](https://learn.microsoft.com/en-us/azure/redis/how-to-import-export-data) | integrations | 0.65 | How-to for import/export using RDB snapshots and Azure Blob Storage likely includes product-specific commands, parameters, and configuration details (storage account/container, blob paths, Redis snapshot handling) that go beyond generic knowledge, fitting integrations & coding patterns. |
 | [Manage data with client tools](https://learn.microsoft.com/en-us/azure/redis/how-to-redis-access-data) | troubleshooting | 0.65 | Page focuses on using Redis Insight and redis-cli specifically with Azure Managed Redis for accessing data and for debugging/troubleshooting. This is product-specific, tool-based guidance that likely includes concrete commands, connection details, and diagnostic usage patterns that go beyond generic Redis knowledge, fitting the troubleshooting sub-skill best among the available categories. |
 | [Migrate to Azure Managed Redis from other caches](https://learn.microsoft.com/en-us/azure/redis/migrate/migration-guide) | decision-making | 0.65 | Describes a number of approaches to migrate from on-premises or other clouds to Azure Managed Redis. Multiple approaches with guidance on choosing among them aligns with decision-making for migration strategy. |

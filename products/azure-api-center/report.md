@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-07'
+generated_at: '2026-06-21'
 category_descriptions:
   security: Configuring API authorization schemes for APIs in API Center and managing
     who can access the API Center portal via the VS Code extension
@@ -37,8 +37,8 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 38
+- **Updated Pages**: 2
+- **Unchanged**: 36
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-api-center/azure-api-center.csv`
 
@@ -54,6 +54,13 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 | *(Unclassified)* | 24 | 63.2% |
 
 ## Changes
+
+### Updated Pages
+
+- [Export API from API Center to Copilot Studio](https://learn.microsoft.com/en-us/azure/api-center/export-to-copilot-studio)
+  - Updated: 2026-05-01T17:27:00.000Z → 2026-06-18T17:32:00.000Z
+- [Track API dependencies](https://learn.microsoft.com/en-us/azure/api-center/track-resource-dependencies)
+  - Updated: 2026-02-24T08:00:00.000Z → 2026-06-18T17:32:00.000Z
 
 ## Classified Pages
 
@@ -79,7 +86,6 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
 | [Discover and consume APIs - VS Code extension](https://learn.microsoft.com/en-us/azure/api-center/discover-apis-vscode-extension) | 0.45 | Describes discovery and consumption features in VS Code; likely usage-level guidance without deep configuration or limits. |
-| [Track API dependencies](https://learn.microsoft.com/en-us/azure/api-center/track-resource-dependencies) | 0.45 | Explains dependency tracking concept and usage; summary does not indicate detailed config tables or numeric constraints. |
 | [2 - Add APIs to the inventory](https://learn.microsoft.com/en-us/azure/api-center/tutorials/register-apis) | 0.40 | Tutorial on registering APIs via portal; likely procedural without detailed parameter tables or numeric constraints. |
 | [3 - Add environments and deployments](https://learn.microsoft.com/en-us/azure/api-center/tutorials/configure-environments-deployments) | 0.40 | Tutorial for adding environments and deployments; appears task-focused rather than a structured configuration reference. |
 | [Enable API Center MCP server](https://learn.microsoft.com/en-us/azure/api-center/discover-catalog-mcp-server) | 0.40 | Describes enabling the Azure API Center MCP server and its tools; appears as an enablement/how-to article without explicit expert-only limits, configs, or troubleshooting mappings. |
@@ -97,8 +103,9 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 | [Synchronize assets from Amazon API Gateway](https://learn.microsoft.com/en-us/azure/api-center/synchronize-aws-gateway-apis) | 0.30 | How-to for synchronizing Amazon API Gateway with API Center; summary suggests basic integration steps, not detailed configuration options, limits, or error-resolution mappings. |
 | [Build and register APIs - VS Code extension](https://learn.microsoft.com/en-us/azure/api-center/build-register-apis-vscode-extension) | 0.20 | Task-focused how-to for using the Azure API Center VS Code extension to build and register APIs; no configuration tables, limits, error-code mappings, or product-specific best-practice details beyond generic workflow steps. |
 | [Design and develop  APIs - GitHub Copilot for Azure](https://learn.microsoft.com/en-us/azure/api-center/design-api-github-copilot-azure) | 0.20 | Describes using the API Center plugin for GitHub Copilot for Azure to design APIs from natural language; appears to be a workflow/tutorial without numeric limits, decision matrices, or detailed configuration parameters. |
-| [Export API from API Center to Copilot Studio](https://learn.microsoft.com/en-us/azure/api-center/export-to-copilot-studio) | 0.20 | Explains exporting an API definition from API Center to Copilot Studio as a connector; likely a step-by-step integration tutorial without parameter tables, constraints, or error-code-based troubleshooting. |
+| [Export API from API Center to Copilot Studio](https://learn.microsoft.com/en-us/azure/api-center/export-to-copilot-studio) | 0.20 | Procedural how-to for exporting an API definition from Azure API Center to Copilot Studio as a custom connector; no detailed configuration tables, limits, error codes, or product-specific decision matrices. |
 | [Samples and labs](https://learn.microsoft.com/en-us/azure/api-center/resources) | 0.20 | Resource index linking to external samples and labs; not itself a technical reference or configuration document. |
+| [Track API dependencies](https://learn.microsoft.com/en-us/azure/api-center/track-resource-dependencies) | 0.20 | Describes using dependency tracking in Azure API Center at a conceptual/how-to level; lacks numeric limits, configuration parameter tables, security role details, or troubleshooting mappings. |
 | [Key concepts](https://learn.microsoft.com/en-us/azure/api-center/key-concepts) | 0.10 | Key concepts/terminology description without product-specific numeric limits, configs, or troubleshooting content. |
 | [What is Azure API Center?](https://learn.microsoft.com/en-us/azure/api-center/overview) | 0.10 | High-level overview of Azure API Center capabilities and scenarios without numeric limits, configuration tables, error codes, or product-specific decision matrices. |
 | [Frequently asked questions](https://learn.microsoft.com/en-us/azure/api-center/frequently-asked-questions) | - | FAQ page appears to be high-level Q&A about Azure API Center without clear evidence of numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. Lacking concrete expert details as defined by the sub-skill criteria. |

@@ -9,9 +9,8 @@
 |-------|-----|
 | Use Azure CLI samples for Cosmos DB Cassandra management | https://github.com/azure-samples/azure-cli-samples/tree/master/cosmosdb/cassandra |
 | Use PowerShell samples to manage Cosmos DB Cassandra resources | https://github.com/azure/azure-docs-powershell-samples/tree/master/cosmosdb/cassandra |
-| Use Cosmos DB .NET bulk executor library for bulk operations | https://learn.microsoft.com/en-us/azure/cosmos-db/bulk-executor-dotnet |
+| Use .NET bulk executor library for Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/bulk-executor-dotnet |
 | Implement bulk import with Azure Cosmos DB Java SDK | https://learn.microsoft.com/en-us/azure/cosmos-db/bulk-executor-java |
-| Perform Cosmos DB bulk operations with JavaScript SDK | https://learn.microsoft.com/en-us/azure/cosmos-db/bulk-executor-nodejs |
 | Integrate Spring Data Cassandra with Cosmos DB Cassandra | https://learn.microsoft.com/en-us/azure/cosmos-db/cassandra/access-data-spring-data-app |
 | Configure Spark integration with Cosmos DB Cassandra | https://learn.microsoft.com/en-us/azure/cosmos-db/cassandra/connect-spark-configuration |
 | Run Glowroot APM with Cosmos DB Cassandra | https://learn.microsoft.com/en-us/azure/cosmos-db/cassandra/glowroot |
@@ -29,15 +28,12 @@
 | Read Cosmos DB Cassandra table data with Spark | https://learn.microsoft.com/en-us/azure/cosmos-db/cassandra/spark-read-operation |
 | Copy tables with Spark to Cosmos DB Cassandra | https://learn.microsoft.com/en-us/azure/cosmos-db/cassandra/spark-table-copy-operations |
 | Upsert data into Cosmos DB Cassandra from Spark | https://learn.microsoft.com/en-us/azure/cosmos-db/cassandra/spark-upsert-operations |
-| Trigger Azure Functions from Azure Cosmos DB change feed | https://learn.microsoft.com/en-us/azure/cosmos-db/change-feed-functions |
 | Use Azure Cosmos DB change feed processor with SDKs | https://learn.microsoft.com/en-us/azure/cosmos-db/change-feed-processor |
 | Implement Azure Cosmos DB change feed pull model | https://learn.microsoft.com/en-us/azure/cosmos-db/change-feed-pull-model |
 | Process Azure Cosmos DB change feed with Apache Spark | https://learn.microsoft.com/en-us/azure/cosmos-db/change-feed-spark |
 | Integrate Cosmos DB Java SDK metrics with Micrometer and Prometheus | https://learn.microsoft.com/en-us/azure/cosmos-db/client-metrics-java |
 | Retrieve RU charge for Cosmos DB SQL queries | https://learn.microsoft.com/en-us/azure/cosmos-db/find-request-unit-charge |
 | Index external documents into Cosmos DB for semantic search | https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/document-indexer |
-| Use Azure Cosmos DB connectors with AI frameworks | https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/integrations |
-| Build a RAG chatbot with Cosmos DB and Python | https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/rag-chatbot |
 | Get latest restorable timestamp via PowerShell and CLI | https://learn.microsoft.com/en-us/azure/cosmos-db/get-latest-restore-timestamp |
 | Execute Gremlin graph queries on Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/gremlin/how-to-write-queries |
 | Use partner tools with Cosmos DB Gremlin graphs | https://learn.microsoft.com/en-us/azure/cosmos-db/gremlin/partner-tools-services |
@@ -105,11 +101,9 @@
 | Use pg_azure_storage extension with Azure Cosmos DB for PostgreSQL | https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/reference-pg-azure-storage |
 | Shard data using distributed tables in Cosmos DB for PostgreSQL | https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/tutorial-shard |
 | Use Azure Cosmos DB with .NET SDK | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-dotnet |
-| Use Azure Cosmos DB with Go SDK | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-go |
 | Use Azure Cosmos DB with Java SDK | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-java |
 | Use Azure Cosmos DB with Node.js SDK | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-nodejs |
 | Use Azure Cosmos DB with Python SDK | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-python |
-| Use Azure Cosmos DB with Rust SDK | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-rust |
 | Use .NET client for Cosmos DB vector search | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-vector-store-dotnet |
 | Implement Cosmos DB vector search with Go | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-vector-store-go |
 | Implement Cosmos DB vector search with Java | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-vector-store-java |

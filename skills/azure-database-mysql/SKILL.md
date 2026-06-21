@@ -1,9 +1,9 @@
 ---
 name: azure-database-mysql
-description: Expert knowledge for Azure Database for MySQL development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using MySQL Flexible Server HA/replication, backups/PITR, AKS connectivity, Entra auth, or migration tools, and other Azure Database for MySQL related development tasks. Not for Azure Database for PostgreSQL (use azure-database-postgresql), Azure Database for MariaDB (use azure-database-mariadb), Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance).
+description: Expert knowledge for Azure Database for MySQL development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when deploying MySQL Flexible Server, configuring HA/networking, tuning performance, securing access, or integrating apps, and other Azure Database for MySQL related development tasks. Not for Azure Database for MariaDB (use azure-database-mariadb), Azure Database for PostgreSQL (use azure-database-postgresql), Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-07"
+  generated_at: "2026-06-21"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Database for MySQL Skill
@@ -24,7 +24,7 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L53 | Diagnosing and fixing MySQL Flexible Server issues: connectivity, performance (CPU/memory/queries), errors, corruption, capacity, replication lag, CLI problems, and using logs/self-heal tools |
+| Troubleshooting | L37-L53 | Diagnosing and fixing MySQL Flexible Server issues: connectivity, performance (CPU/memory/queries), capacity, corruption, replication latency, CLI errors, and using logs/self-heal tools. |
 | Best Practices | L54-L71 | Best practices for monitoring, performance tuning, troubleshooting, safe operations, BCDR, and end-to-end migration/optimization for Azure Database for MySQL Flexible Server |
 | Decision Making | L72-L90 | Planning MySQL on Azure: version lifecycle, capacity and tier selection, HA/BCDR, performance features, and migration/upgrade strategies and tools from on-prem or other MySQL. |
 | Architecture & Design Patterns | L91-L98 | Patterns for connecting AKS to MySQL Flexible Server, designing backup/restore, data-in/out replication, high availability (zone-redundant), and read-replica-based scaling. |
@@ -47,7 +47,7 @@ This skill requires **network access** to fetch documentation content:
 | Troubleshoot high CPU utilization in MySQL flexible server | https://learn.microsoft.com/en-us/azure/mysql/flexible-server/how-to-troubleshoot-high-cpu-utilization |
 | Troubleshoot low memory issues in MySQL flexible server | https://learn.microsoft.com/en-us/azure/mysql/flexible-server/how-to-troubleshoot-low-memory-issues |
 | Troubleshoot query performance issues in MySQL flexible server | https://learn.microsoft.com/en-us/azure/mysql/flexible-server/how-to-troubleshoot-query-performance-new |
-| Resolve capacity errors when deploying or scaling MySQL flexible server | https://learn.microsoft.com/en-us/azure/mysql/flexible-server/resolve-capacity-errors |
+| Diagnose and fix MySQL flexible server capacity errors | https://learn.microsoft.com/en-us/azure/mysql/flexible-server/resolve-capacity-errors |
 | Use Query Performance Insight to diagnose Azure MySQL queries | https://learn.microsoft.com/en-us/azure/mysql/flexible-server/tutorial-query-performance-insights |
 | Troubleshoot replication latency on MySQL flexible server read replicas | https://learn.microsoft.com/en-us/azure/mysql/how-to-troubleshoot-replication-latency |
 

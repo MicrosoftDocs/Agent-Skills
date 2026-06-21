@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-14'
+generated_at: '2026-06-21'
 category_descriptions:
   security: Securing Service Bus with Entra ID, managed identities, SAS, keys, TLS,
     network isolation (VNet, Private Link, firewalls, NSPs), and applying Azure Policy/compliance
@@ -16,9 +16,9 @@ category_descriptions:
   configuration: Configuring and managing Service Bus entities (queues, topics, subscriptions),
     including forwarding, sessions, partitioning, TTL, monitoring, filters/actions,
     local emulation, and management via ARM/PowerShell.
-  best-practices: 'Best practices for reliable, ordered, and fast Service Bus messaging:
-    sessions, locks/settlement, dead-lettering, duplicate detection, serialization,
-    prefetch, and client/protocol tuning.'
+  best-practices: 'Best practices for reliable, ordered, and performant messaging:
+    sessions, FIFO, locks/settlement, duplicate detection, dead-lettering, serialization,
+    prefetch, and maintenance tuning.'
   deployment: Deploying Service Bus namespaces and entities (queues, topics, subscriptions,
     rules) using ARM/Bicep templates, and moving namespaces across Azure regions.
   troubleshooting: 'Diagnosing and fixing Service Bus errors: AMQP issues, tracing,
@@ -29,16 +29,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Service Bus development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  securing Service Bus with Entra ID/VNet, configuring queues/topics, using JMS/RabbitMQ,
-  or tuning sessions/locks, and other Azure Service Bus related development tasks.
-  Not for Azure Event Hubs (use azure-event-hubs), Azure Relay (use azure-relay),
-  Azure Queue Storage (use azure-queue-storage), Azure Notification Hubs (use azure-notification-hubs).
-use_when: Use when securing Service Bus with Entra ID/VNet, configuring queues/topics,
-  using JMS/RabbitMQ, or tuning sessions/locks, and other Azure Service Bus related
-  development tasks.
-confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Relay (use
-  azure-relay), Azure Queue Storage (use azure-queue-storage), Azure Notification
-  Hubs (use azure-notification-hubs).
+  securing namespaces, configuring queues/topics, using JMS clients, geo-DR/replication,
+  or NServiceBus, and other Azure Service Bus related development tasks. Not for Azure
+  Event Hubs (use azure-event-hubs), Azure Event Grid (use azure-event-grid), Azure
+  Queue Storage (use azure-queue-storage), Azure Relay (use azure-relay).
+use_when: Use when securing namespaces, configuring queues/topics, using JMS clients,
+  geo-DR/replication, or NServiceBus, and other Azure Service Bus related development
+  tasks.
+confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Event Grid
+  (use azure-event-grid), Azure Queue Storage (use azure-queue-storage), Azure Relay
+  (use azure-relay).
 ---
 # Azure Service Bus Crawl Report
 
@@ -52,8 +52,8 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Relay
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 120
+- **Updated Pages**: 1
+- **Unchanged**: 123
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-bus/azure-service-bus.csv`
 
@@ -76,14 +76,8 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Relay
 
 ### Updated Pages
 
-- [Compare messaging services](https://learn.microsoft.com/en-us/azure/service-bus-messaging/compare-messaging-services)
-  - Updated: 2025-04-29T08:00:00.000Z → 2026-06-12T22:22:00.000Z
-- [Service Bus exceptions (deprecated)](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-exceptions)
-  - Updated: 2025-04-29T08:00:00.000Z → 2026-06-12T08:00:00.000Z
-- [Message deferral](https://learn.microsoft.com/en-us/azure/service-bus-messaging/message-deferral)
-  - Updated: 2024-07-25T08:00:00.000Z → 2026-06-12T22:22:00.000Z
-- [Optimize performance](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-performance-improvements)
-  - Updated: 2025-04-29T08:00:00.000Z → 2026-06-12T08:00:00.000Z
+- [Dead-letter queues](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-dead-letter-queues)
+  - Updated: 2025-05-15T08:00:00.000Z → 2026-06-15T22:19:00.000Z
 
 ## Classified Pages
 
@@ -141,7 +135,6 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Relay
 | [Configured replication tasks](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-federation-configuration) | configuration | 0.70 | Focuses on configuration-only replication tasks using pre-built helpers; likely includes configuration parameters and settings specific to this scenario. |
 | [Create a namespace](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-resource-manager-namespace) | deployment | 0.70 | Includes a concrete ARM template and parameter definitions for namespace creation, which are deployment configuration details. |
 | [Create a namespace with topic, subscription, and rule](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-resource-manager-namespace-topic-with-rule) | deployment | 0.70 | Provides a full ARM template with topic, subscription, and rule resources and parameters, which are deployment-specific configurations. |
-| [Dead-letter queues](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-dead-letter-queues) | best-practices | 0.70 | Explains DLQ behavior and how messages are moved/handled; product-specific semantics and patterns for error handling. |
 | [Disable local or SAS authentication](https://learn.microsoft.com/en-us/azure/service-bus-messaging/disable-local-authentication) | security | 0.70 | Page is focused on configuring authentication for Azure Service Bus by disabling local/SAS key auth in favor of Microsoft Entra ID. This is product-specific security configuration, likely including exact setting names, portal/ARM options, and required permissions. It does not fit limits, deployment, or generic best practices as closely as security. |
 | [Enable duplicate detection for a queue or topic](https://learn.microsoft.com/en-us/azure/service-bus-messaging/enable-duplicate-detection) | configuration | 0.70 | Page focuses on how to enable duplicate detection via portal, CLI, PowerShell, and SDKs, which typically includes entity-specific property names (e.g., RequiresDuplicateDetection, DuplicateDetectionHistoryTimeWindow) and configuration patterns unique to Azure Service Bus rather than just conceptual description. |
 | [Enable partitions (basic / standard)](https://learn.microsoft.com/en-us/azure/service-bus-messaging/enable-partitions-basic-standard) | configuration | 0.70 | Page explains enabling partitioning using portal, CLI, PowerShell, and SDKs, which implies detailed configuration properties and flags specific to Service Bus entities (e.g., EnablePartitioning) and how to set them, going beyond generic concepts. |
@@ -168,6 +161,7 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Relay
 | [Use ARM templates](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-resource-manager-overview) | deployment | 0.70 | Gives template structure, resource types, and parameterization details for deploying Service Bus via ARM, which are deployment-specific configurations. |
 | [Use Azure PowerShell to provision entities](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-manage-with-ps) | configuration | 0.70 | Contains concrete cmdlets, parameters, and patterns for creating/managing namespaces, queues, topics, and subscriptions via PowerShell. |
 | [Use Service Bus with Java Message Service (JMS) 2.0](https://learn.microsoft.com/en-us/azure/service-bus-messaging/how-to-use-java-message-service-20) | integrations | 0.70 | How-to for using JMS 2.0 over AMQP with Azure Service Bus; likely includes product-specific API usage, configuration parameters, and integration patterns beyond generic JMS knowledge. |
+| [Dead-letter queues](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-dead-letter-queues) | best-practices | 0.68 | The article goes beyond conceptual description and includes product-specific behavior and guidance for Azure Service Bus DLQs (for example, how and when messages are dead-lettered, how the DLQ subqueue behaves, and how to work with it). These are concrete, service-specific usage patterns and gotchas rather than generic messaging concepts, fitting best under best-practices. It does not primarily focus on numeric limits, configuration tables, or error-code-based troubleshooting. |
 | [Duplicate message detection](https://learn.microsoft.com/en-us/azure/service-bus-messaging/duplicate-detection) | best-practices | 0.68 | A duplicate detection article for Service Bus typically includes product-specific guidance such as how to set the DuplicateDetectionHistoryTimeWindow, how message IDs are used, and how to configure or use this feature to avoid duplicate processing in concrete failure scenarios. The summary already describes specific failure patterns (acknowledgment not returned, client retries) and how the system handles duplicates, which are product-specific gotchas and usage recommendations rather than just conceptual theory, fitting best-practices. |
 | [Bicep](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-resource-manager-namespace-queue-bicep) | deployment | 0.65 | Shows a reusable Bicep template with parameters and resource definitions; while a quickstart, it exposes concrete deployment resource schema and parameterization useful for production deployments. |
 | [Delete messages in Service Bus](https://learn.microsoft.com/en-us/azure/service-bus-messaging/batch-delete) | integrations | 0.65 | Shows how to delete messages via code, likely including SDK methods, parameters, and constraints specific to Service Bus batch deletion. |

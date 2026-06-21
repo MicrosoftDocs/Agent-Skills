@@ -1,9 +1,9 @@
 ---
 name: azure-well-architected
-description: Expert guidance for designing, assessing, and optimizing Azure workloads using Azure Well Architected. Covers design review checklists, recommendations, design principles, tradeoffs, service guides, workload patterns, and assessment questions. Use when designing AI, HPC, SaaS, AVD, or mission-critical workloads with Azure WAF-aligned patterns and guidance, and other Azure Well Architected related development tasks.
+description: Expert guidance for designing, assessing, and optimizing Azure workloads using Azure Well Architected. Covers design review checklists, recommendations, design principles, tradeoffs, service guides, workload patterns, and assessment questions. Use when designing AI, HPC, SaaS, AVD, or mission-critical workloads with WAF-aligned patterns, guides, and tradeoffs, and other Azure Well Architected related development tasks.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-14"
+  generated_at: "2026-06-21"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Well Architected Skill
@@ -25,10 +25,10 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Design Review Checklists | L35-L43 | Checklists to review Azure workloads for cost, operations, performance, reliability, and security best practices and identify gaps against Well-Architected guidance. |
-| Recommendations | L44-L114 | Prescriptive best practices to design, operate, and optimize Azure workloads across cost, reliability, performance, security, and sustainability, including monitoring, automation, CI/CD, and incident processes. |
+| Recommendations | L44-L114 | Guidance on cost, reliability, performance, security, and sustainability best practices for Azure workloads, including design patterns, operations, automation, and governance recommendations. |
 | Design Principles | L115-L130 | Design patterns and best practices for applying Azure Well-Architected (WAF) principles—cost, reliability, security, performance, ops, sustainability—to AI, SaaS, AVD, HPC, and mission-critical workloads. |
 | Tradeoffs | L131-L140 | Guidance on weighing cost, reliability, performance, security, and operations tradeoffs in Azure architectures, including regions/AZ choices and cross-pillar design decisions. |
-| Service Guides | L141-L184 | Service-specific Azure Well-Architected guidance: design, secure, operate, and optimize AVD, networking, databases, storage, containers, and PaaS services using WAF-aligned best practices. |
+| Service Guides | L141-L184 | End-to-end Well-Architected (WAF) guidance for specific Azure services—covering design, networking, security/IAM, monitoring, BCDR, performance, and cost optimization patterns. |
 | Workload Patterns | L185-L237 | Design patterns, reference architectures, and end-to-end guidance for AI, HPC, mission-critical, SaaS, and sustainable workloads on Azure, including platforms, data, ops, security, and governance. |
 | Assessment Questions | L238-L250 | Guided assessments and maturity models to evaluate AI, SaaS, AVD, AVS, and other Azure workloads against WAF pillars: cost, reliability, security, performance, and operations. |
 
@@ -71,7 +71,7 @@ This skill requires **network access** to fetch documentation content:
 | Design and run an incident management process for Azure | https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/incident-response |
 | Adopt infrastructure as code for Azure deployments | https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/infrastructure-as-code-design |
 | Design an observability and monitoring system in Azure | https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/observability |
-| Apply safe deployment practices in Azure workloads | https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/safe-deployments |
+| Implement safe deployment practices for Azure workloads | https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/safe-deployments |
 | Apply testing strategies for operational excellence | https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/testing |
 | Standardize development tools and processes for Azure teams | https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/tools-processes |
 | Implement CI/CD-based workload development supply chains | https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/workload-supply-chain |
@@ -150,10 +150,10 @@ This skill requires **network access** to fetch documentation content:
 | Secure Azure Virtual Desktop and manage IAM | https://learn.microsoft.com/en-us/azure/well-architected/azure-virtual-desktop/security |
 | Optimize storage for Azure Virtual Desktop workloads | https://learn.microsoft.com/en-us/azure/well-architected/azure-virtual-desktop/storage |
 | Apply WAF best practices to Azure App Service Web Apps | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/app-service-web-apps |
-| Use WAF-aligned best practices for Azure Application Insights | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/application-insights |
+| Configure Azure Monitor Application Insights using WAF guidance | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/application-insights |
 | Apply WAF best practices to Azure API Management | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-api-management |
-| Configure Azure Application Gateway v2 with WAF guidance | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-application-gateway |
-| Configure Azure Blob Storage using WAF best practices | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-blob-storage |
+| Apply WAF best practices to Azure Application Gateway v2 | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-application-gateway |
+| Design and configure Azure Blob Storage with WAF best practices | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-blob-storage |
 | Apply Well-Architected best practices to Azure Container Apps | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-container-apps |
 | Apply WAF best practices to Azure Database for MySQL | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-database-for-mysql |
 | Use WAF-aligned architecture for Azure Databricks | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-databricks |
@@ -161,11 +161,11 @@ This skill requires **network access** to fetch documentation content:
 | Design Event Grid architectures with WAF best practices | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-event-grid |
 | Implement Azure Event Hubs using WAF-aligned patterns | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-event-hubs |
 | Architect Azure ExpressRoute connectivity with WAF | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-expressroute |
-| Apply WAF guidance to Azure Files and File Sync | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-files |
+| Apply Well-Architected best practices to Azure Files | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-files |
 | Secure and scale Azure Firewall with WAF practices | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-firewall |
 | Design Azure Front Door for global reliability and performance | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-front-door |
 | Configure Azure Functions using WAF-aligned best practices | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-functions |
-| Architect Azure Kubernetes Service clusters with WAF | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-kubernetes-service |
+| Optimize Azure Kubernetes Service using WAF guidance | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-kubernetes-service |
 | Design Azure Load Balancer deployments with WAF guidance | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-load-balancer |
 | Deploy Azure Local with WAF-aligned architecture patterns | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-local |
 | Apply Well-Architected practices to Azure Log Analytics | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-log-analytics |
@@ -180,7 +180,7 @@ This skill requires **network access** to fetch documentation content:
 | Apply WAF best practices to Azure Cosmos DB for NoSQL | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/cosmos-db |
 | Apply WAF best practices to Azure Database for PostgreSQL | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/postgresql |
 | Design Azure Virtual Machines and scale sets with WAF | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/virtual-machines |
-| Apply WAF best practices to Azure Virtual Network design | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/virtual-network |
+| Design Azure Virtual Network with Well-Architected best practices | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/virtual-network |
 
 ### Workload Patterns
 | Topic | URL |

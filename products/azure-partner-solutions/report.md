@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-07'
+generated_at: '2026-06-21'
 category_descriptions:
   integrations: Patterns and setup guides for connecting Azure services to external
     data platforms (Confluent Cloud, MongoDB Atlas, Neon Postgres) using Service Connector
@@ -8,8 +8,8 @@ category_descriptions:
     RBAC in Azure portal and configuring SSO/access control for Informatica IDMC Azure
     resources.
   troubleshooting: Diagnosing and fixing setup, integration, and runtime issues for
-    Azure partner services Confluent, Datadog, Dynatrace, Elastic, and New Relic,
-    including common errors and misconfigurations.
+    Confluent Kafka/Flink, Datadog, Dynatrace, Elastic Cloud, and New Relic (incl.
+    log forwarding) on Azure
   configuration: Configuring and managing Azure-integrated partner resources (Datadog,
     Dynatrace, Elastic, MongoDB Atlas, New Relic, NGINXaaS, etc.), including prerequisites,
     settings, and integrations.
@@ -21,32 +21,32 @@ category_descriptions:
     deployment patterns.
 skill_description: Expert knowledge for Azure Partner Solutions development including
   troubleshooting, decision making, architecture & design patterns, security, configuration,
-  and integrations & coding patterns. Use when using Service Connector, Foundry Agents,
-  Confluent RBAC, Dynatrace APM on Azure, or Cloud NGFW with App Gateway, and other
-  Azure Partner Solutions related development tasks. Not for Azure Industry (use azure-industry),
-  Azure Managed Applications (use azure-managed-applications), Azure Lighthouse (use
-  azure-lighthouse), Azure DevOps (use azure-devops).
-use_when: Use when using Service Connector, Foundry Agents, Confluent RBAC, Dynatrace
-  APM on Azure, or Cloud NGFW with App Gateway, and other Azure Partner Solutions
-  related development tasks.
+  and integrations & coding patterns. Use when using Service Connector to Confluent/MongoDB/Neon,
+  Dynatrace/Datadog/Elastic/New Relic on Azure, or Palo Alto Cloud NGFW with App Gateway,
+  and other Azure Partner Solutions related development tasks. Not for Azure Industry
+  (use azure-industry), Azure Managed Applications (use azure-managed-applications),
+  Azure Lighthouse (use azure-lighthouse), Azure Oracle (use azure-oracle).
+use_when: Use when using Service Connector to Confluent/MongoDB/Neon, Dynatrace/Datadog/Elastic/New
+  Relic on Azure, or Palo Alto Cloud NGFW with App Gateway, and other Azure Partner
+  Solutions related development tasks.
 confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed Applications
   (use azure-managed-applications), Azure Lighthouse (use azure-lighthouse), Azure
-  DevOps (use azure-devops).
+  Oracle (use azure-oracle).
 ---
 # Azure Partner Solutions Crawl Report
 
 ## Summary
 
-- **Total Pages**: 106
-- **Fetched**: 106
+- **Total Pages**: 107
+- **Fetched**: 107
 - **Fetch Failed**: 0
-- **Classified**: 24
+- **Classified**: 25
 - **Unclassified**: 82
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 106
+- **New Pages**: 1
+- **Updated Pages**: 1
+- **Unchanged**: 105
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-partner-solutions/azure-partner-solutions.csv`
 
@@ -55,14 +55,23 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 1 | 0.9% |
-| configuration | 11 | 10.4% |
+| configuration | 11 | 10.3% |
 | decision-making | 1 | 0.9% |
 | integrations | 2 | 1.9% |
 | security | 2 | 1.9% |
-| troubleshooting | 7 | 6.6% |
-| *(Unclassified)* | 82 | 77.4% |
+| troubleshooting | 8 | 7.5% |
+| *(Unclassified)* | 82 | 76.6% |
 
 ## Changes
+
+### New Pages
+
+- [Troubleshoot log forwarding with Copilot](https://learn.microsoft.com/en-us/azure/partner-solutions/new-relic/troubleshoot-logs-copilot)
+
+### Updated Pages
+
+- [Napster Companion API](https://learn.microsoft.com/en-us/azure/partner-solutions/napster/)
+  - Updated: 2026-05-27T20:49:00Z → 2026-06-16T11:54:00Z
 
 ## Classified Pages
 
@@ -75,6 +84,7 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 | [Fix common errors](https://learn.microsoft.com/en-us/azure/partner-solutions/elastic/troubleshoot) | troubleshooting | 0.80 | Dedicated troubleshooting guide for Elastic Cloud on Azure with a quick reference table of scenarios, indicating symptom-to-cause-to-solution mappings and likely specific error conditions. |
 | [Manage your NGINXaaS resource](https://learn.microsoft.com/en-us/azure/partner-solutions/nginx/manage) | configuration | 0.80 | Managing NGINXaaS includes configuring managed identities, certificates, and metrics export; these involve specific setting names, scopes, and Azure Monitor integration parameters that are product-specific configuration knowledge. |
 | [Manage your resource](https://learn.microsoft.com/en-us/azure/partner-solutions/palo-alto/manage) | configuration | 0.80 | Managing networking, NAT, rulestack, logging, DNS proxy, and billing plans implies detailed product-specific configuration options and parameter values unique to this Azure Native integration. |
+| [Troubleshoot log forwarding with Copilot](https://learn.microsoft.com/en-us/azure/partner-solutions/new-relic/troubleshoot-logs-copilot) | troubleshooting | 0.78 | The page focuses on diagnosing and resolving log forwarding issues for Azure Native New Relic Service using Microsoft Copilot in Azure. It is organized around specific symptoms and how to use Copilot to identify causes and remediation steps, which is product- and integration-specific troubleshooting guidance that goes beyond generic debugging advice. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/dynatrace/faq) | troubleshooting | 0.75 | FAQ explicitly lists troubleshooting among topics (onboarding, linking environments, configuring metrics/logs, SSO, billing, data residency, free trial); such content typically includes specific error messages, configuration pitfalls, and resolution steps unique to Azure Native Dynatrace, fitting the troubleshooting sub-skill. |
 | [Manage your resource](https://learn.microsoft.com/en-us/azure/partner-solutions/pure-storage/manage) | configuration | 0.75 | Managing settings, metrics/logs, and AVS connectivity implies product-specific configuration parameters (for example, logging endpoints, metrics namespaces, connection properties) that constitute expert configuration knowledge. |
 | [Configure prerequisites](https://learn.microsoft.com/en-us/azure/partner-solutions/dynatrace/configure-prerequisites) | configuration | 0.70 | Pre-deployment prerequisites for Dynatrace in Azure/Entra ID will include specific roles, permissions, and configuration steps unique to this integration, fitting configuration expert knowledge. |
@@ -158,6 +168,7 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 | [Manage your Apache Airflow on Astro resource](https://learn.microsoft.com/en-us/azure/partner-solutions/astronomer/manage) | 0.20 | Management article for Astro resources appears to be general portal operations; no indication of detailed configuration parameters, limits, or error mappings. |
 | [Metrics and logs](https://learn.microsoft.com/en-us/azure/partner-solutions/metrics-logs) | 0.20 | Page is described as an overview of metrics and logs for Azure Native Integrations with key operational considerations, but no evidence of specific numeric limits, configuration parameter tables, error-code-based troubleshooting, or detailed decision matrices. It appears to be conceptual monitoring/observability guidance rather than expert, product-specific reference data. |
 | [MongoDB Atlas](https://learn.microsoft.com/en-us/azure/partner-solutions/mongo-db/) | 0.20 | MongoDB Atlas integration overview; description highlights capabilities (managed document DB, vector search) without expert numeric/config details. |
+| [Napster Companion API](https://learn.microsoft.com/en-us/azure/partner-solutions/napster/) | 0.20 | Page appears to be a high-level overview/marketing-style description of the Napster Companion API Azure Native Integration. No indication of numeric limits, configuration parameter tables, error-code-based troubleshooting, or detailed decision matrices; therefore it does not meet the expert-knowledge criteria for any sub-skill type. |
 | [New Relic](https://learn.microsoft.com/en-us/azure/partner-solutions/new-relic/) | 0.20 | Overview for Azure Native New Relic Service; description indicates a general integrated experience, not detailed limits/config/troubleshooting. |
 | [Pure Storage Cloud](https://learn.microsoft.com/en-us/azure/partner-solutions/pure-storage/) | 0.20 | Azure Native Pure Storage Cloud overview; summary is conceptual (secure, efficient block storage) with no explicit expert content. |
 | [Qumulo](https://learn.microsoft.com/en-us/azure/partner-solutions/qumulo/) | 0.20 | Landing page for Azure Native Qumulo Scalable File Service; focuses on portal experience, not detailed limits/config/troubleshooting. |
@@ -167,7 +178,6 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 | [What is MongoDB Atlas?](https://learn.microsoft.com/en-us/azure/partner-solutions/mongo-db/overview) | 0.15 | MongoDB Atlas overview is conceptual; no explicit expert-level configuration, limits, or troubleshooting content indicated. |
 | [Arize AI](https://learn.microsoft.com/en-us/azure/partner-solutions/arize-ai/) | 0.10 | Marketing-style integration overview for Arize AI; no indication of numeric limits, configuration tables, or troubleshooting details. |
 | [LambdaTest - HyperExecute](https://learn.microsoft.com/en-us/azure/partner-solutions/lambda-test/) | 0.10 | Marketing/overview description of LambdaTest HyperExecute integration; lacks evidence of expert-level configuration or limits. |
-| [Napster Companion API](https://learn.microsoft.com/en-us/azure/partner-solutions/napster/) | 0.10 | Overview of Napster Companion API integration and capabilities; no specific quotas, configs, or troubleshooting content indicated. |
 | [Overview](https://learn.microsoft.com/en-us/azure/partner-solutions/overview) | 0.10 | High-level overview of Azure Native Integrations; no concrete limits, configs, or error details. |
 | [Palo Alto Network](https://learn.microsoft.com/en-us/azure/partner-solutions/palo-alto/) | 0.10 | Cloud NGFW by Palo Alto Networks overview; summary is marketplace/benefits oriented without detailed technical guidance. |
 | [Partner services](https://learn.microsoft.com/en-us/azure/partner-solutions/partners) | 0.10 | High-level listing/overview of Azure Native Integrations partner solutions; no detailed limits, configs, or troubleshooting content. |

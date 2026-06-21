@@ -3,7 +3,7 @@ name: azure-artifacts
 description: Expert knowledge for Azure Artifacts development including best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing feeds, upstream sources, views/promotion, retention, GitHub Actions CI/CD, or npm/.npmrc config, and other Azure Artifacts related development tasks. Not for Azure DevOps (use azure-devops), Azure Pipelines (use azure-pipelines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-17"
+  generated_at: "2026-06-21"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Artifacts Skill
@@ -78,7 +78,7 @@ This skill requires **network access** to fetch documentation content:
 | Restore Cargo packages from Azure Artifacts feeds | https://learn.microsoft.com/en-us/azure/devops/artifacts/cargo/cargo-restore?view=azure-devops |
 | Consume Cargo crates from Crates.io via Azure Artifacts | https://learn.microsoft.com/en-us/azure/devops/artifacts/cargo/cargo-upstream-source?view=azure-devops |
 | Connect Cargo projects to Azure Artifacts feeds | https://learn.microsoft.com/en-us/azure/devops/artifacts/cargo/project-setup-cargo?view=azure-devops |
-| Publish and download Cargo packages with Azure Artifacts | https://learn.microsoft.com/en-us/azure/devops/artifacts/get-started-cargo?view=azure-devops |
+| Publish and restore Rust Cargo packages with Azure Artifacts | https://learn.microsoft.com/en-us/azure/devops/artifacts/get-started-cargo?view=azure-devops |
 | Publish and restore Maven packages with Azure Artifacts | https://learn.microsoft.com/en-us/azure/devops/artifacts/get-started-maven?view=azure-devops |
 | Publish and consume npm packages using Azure Artifacts | https://learn.microsoft.com/en-us/azure/devops/artifacts/get-started-npm?view=azure-devops |
 | Add Gradle Plugins repository as Azure Artifacts upstream | https://learn.microsoft.com/en-us/azure/devops/artifacts/maven/gradle-plugins?view=azure-devops |

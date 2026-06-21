@@ -31,7 +31,8 @@ skill_description: Expert knowledge for Azure Microsoft Discovery development in
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
   Use when building Discovery workspaces, shared sessions, supercomputer jobs, Docker
   tools, or Log Analytics queries, and other Azure Microsoft Discovery related development
-  tasks.
+  tasks. Not for Azure Resource Graph (use azure-resource-graph), Azure Portal (use
+  azure-portal), Azure Monitor (use azure-monitor), Azure Policy (use azure-policy).
 use_when: Use when building Discovery workspaces, shared sessions, supercomputer jobs,
   Docker tools, or Log Analytics queries, and other Azure Microsoft Discovery related
   development tasks.
@@ -50,9 +51,9 @@ confusable_not_for: Not for Azure Resource Graph (use azure-resource-graph), Azu
 - **Unclassified**: 23
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 2
-- **Unchanged**: 67
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 70
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-microsoft-discovery/azure-microsoft-discovery.csv`
 
@@ -72,17 +73,6 @@ confusable_not_for: Not for Azure Resource Graph (use azure-resource-graph), Azu
 | *(Unclassified)* | 23 | 32.9% |
 
 ## Changes
-
-### New Pages
-
-- [Assign persona roles with a PowerShell script](https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-assign-persona-roles)
-
-### Updated Pages
-
-- [Quickstart - First set of Agent and investigation](https://learn.microsoft.com/en-us/azure/microsoft-discovery/quickstart-agents-studio)
-  - Updated: 2026-06-02T20:30:00.000Z → 2026-06-12T11:47:00.000Z
-- [Discovery Supercomputer and model execution](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-supercomputer)
-  - Updated: 2026-05-17T11:48:00.000Z → 2026-06-12T22:22:00.000Z
 
 ## Classified Pages
 

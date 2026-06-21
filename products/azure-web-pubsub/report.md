@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-24'
+generated_at: '2026-06-21'
 category_descriptions:
   security: 'Securing Web PubSub: auth with Entra ID/managed identity/keys, client
     certs, network & private endpoints, firewalls, policies, key rotation, and per-client/group
@@ -14,9 +14,9 @@ category_descriptions:
     local tunneling, and OData filters.'
   limits-quotas: Capacity and performance limits for Web PubSub (connections, messages,
     scaling) and which Socket.IO server APIs aren’t supported or behave differently.
-  integrations: Client and server integration patterns for Azure Web PubSub and Web
-    PubSub for Socket.IO, including SDK usage, protocols, REST/MQTT semantics, authentication,
-    and event handling via HTTP, AMQP, and Functions.
+  integrations: 'Client/server integration patterns for Web PubSub: SDK usage, WebSocket/MQTT,
+    REST, auth, CloudEvents, Functions bindings, Socket.IO, and reliable JSON/protobuf
+    subprotocols.'
   best-practices: Guidance on building resilient WebSocket clients for Azure Web PubSub,
     including reconnection strategies, handling disconnects, error handling, and connection
     lifecycle best practices.
@@ -28,14 +28,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Web PubSub development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  using WebSockets, Socket.IO, MQTT, geo-replication, or Azure Functions/HTTP/AMQP
-  event handlers, and other Azure Web PubSub related development tasks. Not for Azure
-  SignalR Service (use azure-signalr-service), Azure Event Hubs (use azure-event-hubs),
-  Azure Service Bus (use azure-service-bus).
-use_when: Use when using WebSockets, Socket.IO, MQTT, geo-replication, or Azure Functions/HTTP/AMQP
-  event handlers, and other Azure Web PubSub related development tasks.
+  using WebSockets/MQTT, Socket.IO, Functions bindings, geo-replication, or Premium
+  autoscale in Web PubSub, and other Azure Web PubSub related development tasks. Not
+  for Azure SignalR Service (use azure-signalr-service), Azure Event Hubs (use azure-event-hubs),
+  Azure Service Bus (use azure-service-bus), Azure Relay (use azure-relay).
+use_when: Use when using WebSockets/MQTT, Socket.IO, Functions bindings, geo-replication,
+  or Premium autoscale in Web PubSub, and other Azure Web PubSub related development
+  tasks.
 confusable_not_for: Not for Azure SignalR Service (use azure-signalr-service), Azure
-  Event Hubs (use azure-event-hubs), Azure Service Bus (use azure-service-bus).
+  Event Hubs (use azure-event-hubs), Azure Service Bus (use azure-service-bus), Azure
+  Relay (use azure-relay).
 ---
 # Azure Web PubSub Crawl Report
 
@@ -49,8 +51,8 @@ confusable_not_for: Not for Azure SignalR Service (use azure-signalr-service), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 111
+- **Updated Pages**: 4
+- **Unchanged**: 107
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-web-pubsub/azure-web-pubsub.csv`
 
@@ -71,12 +73,22 @@ confusable_not_for: Not for Azure SignalR Service (use azure-signalr-service), A
 
 ## Changes
 
+### Updated Pages
+
+- [JSON WebSocket subprotocol](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/reference-json-webpubsub-subprotocol)
+  - Updated: 2024-11-27T12:14:00.000Z → 2026-06-17T05:11:00.000Z
+- [Protobuf WebSocket subprotocol](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/reference-protobuf-webpubsub-subprotocol)
+  - Updated: 2026-03-25T22:12:00.000Z → 2026-06-17T05:11:00.000Z
+- [Reliable JSON WebSocket subprotocol](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/reference-json-reliable-webpubsub-subprotocol)
+  - Updated: 2026-03-25T22:12:00.000Z → 2026-06-17T05:11:00.000Z
+- [Reliable Protobuf WebSocket subprotocol](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/reference-protobuf-reliable-webpubsub-subprotocol)
+  - Updated: 2026-03-25T22:12:00.000Z → 2026-06-17T05:11:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
 | [Common issues](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-troubleshoot-common-issues) | troubleshooting | 0.90 | Explicit troubleshooting guide with listed errors; likely maps specific error codes/messages to causes and resolutions, which fits the troubleshooting criteria. |
-| [JSON WebSocket subprotocol](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/reference-json-webpubsub-subprotocol) | integrations | 0.90 | Subprotocol reference defines message schemas, operation names, and fields for json.webpubsub.azure.v1, which are protocol-level integration details. |
 | [OData filter syntax reference](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/reference-odata-filter) | configuration | 0.90 | OData filter syntax reference defines supported operators, fields, and expression rules for Web PubSub filter parameter—detailed configuration semantics. |
 | [REST API](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/reference-rest-api-data-plane) | integrations | 0.90 | REST API reference for managing connections and sending messages includes endpoint paths, query parameters, and request/response schemas unique to Web PubSub. |
 | [Common issues](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/socketio-troubleshoot-common-issues) | troubleshooting | 0.86 | Explicit troubleshooting guide; likely maps specific symptoms and errors to causes and fixes for the combined Socket.IO/Web PubSub environment. |
@@ -96,14 +108,15 @@ confusable_not_for: Not for Azure SignalR Service (use azure-signalr-service), A
 | [Socket.IO Serverless Mode Specification](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/socket-io-serverless-protocol) | configuration | 0.84 | Formal specification of Serverless Mode; will define protocol details, message formats, and configuration requirements unique to this product. |
 | [Azure Function Bindings for Socket.IO](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/socket-io-serverless-function-binding) | integrations | 0.82 | Explains Function triggers/bindings for Socket.IO; will list binding names, direction, and configuration properties, which are detailed integration parameters. |
 | [Configure client certificate authentication](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-client-certificate) | security | 0.82 | Describes enabling client certificate/TLS mutual auth and validating certs in event handlers; this requires concrete configuration flags, header fields, and validation behavior unique to Web PubSub. |
+| [Reliable JSON WebSocket subprotocol](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/reference-json-reliable-webpubsub-subprotocol) | integrations | 0.82 | The json.reliable.webpubsub.azure.v1 reference will describe reliability-specific message flows (ack IDs, sequence numbers, resume tokens, etc.) and exact JSON payload structures for Azure Web PubSub’s reliable mode. These are detailed, product-specific protocol and configuration semantics used when coding against the service, fitting integrations and constituting expert knowledge. |
+| [Reliable Protobuf WebSocket subprotocol](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/reference-protobuf-reliable-webpubsub-subprotocol) | integrations | 0.82 | The protobuf.reliable.webpubsub.azure.v1 reference will specify protobuf message definitions, reliability-related fields, and frame expectations for Azure Web PubSub’s reliable subprotocol. These low-level protocol contracts are unique to this product and are used directly in client integrations, so they fall under integrations and contain expert knowledge. |
 | [Authentication](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/socketio-authentication) | security | 0.80 | Authentication article will detail supported auth flows, tokens, and configuration parameters specific to Web PubSub for Socket.IO. |
 | [Capture resource logs](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-troubleshoot-resource-logs) | troubleshooting | 0.80 | Explains Web PubSub resource log categories and how to use them for issue diagnosis; log schema and usage are product-specific troubleshooting knowledge. |
 | [Functions trigger and bindings](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/reference-functions-bindings) | integrations | 0.80 | Functions binding reference includes binding types, direction, configuration properties, and trigger metadata specific to Web PubSub. |
-| [Protobuf WebSocket subprotocol](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/reference-protobuf-webpubsub-subprotocol) | integrations | 0.80 | Reference for a specific protobuf WebSocket subprotocol, likely including message schemas, field names, and protocol-specific parameters that are product-specific integration details. |
-| [Reliable JSON WebSocket subprotocol](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/reference-json-reliable-webpubsub-subprotocol) | integrations | 0.80 | Reference for a JSON reliable WebSocket subprotocol with product-specific message formats, sequencing/ack parameters, and behavior for reliable pub/sub, which are detailed integration patterns. |
-| [Reliable Protobuf WebSocket subprotocol](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/reference-protobuf-reliable-webpubsub-subprotocol) | integrations | 0.80 | Reference for a protobuf-based reliable WebSocket subprotocol, likely defining concrete protobuf message types, fields, and protocol behaviors unique to Azure Web PubSub. |
 | [Authorize from a managed identity](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-authorize-from-managed-identity) | security | 0.78 | How-to for configuring Microsoft Entra/managed identity auth to Web PubSub, likely includes specific role assignments, scopes, and endpoint/claim details that are product-specific security configuration. |
 | [Debug event handlers](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-local-debug-event-handler) | troubleshooting | 0.78 | Focused on troubleshooting/debugging event handlers; likely includes specific HTTP behaviors, headers, and diagnostic steps unique to Web PubSub CloudEvents handling. |
+| [JSON WebSocket subprotocol](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/reference-json-webpubsub-subprotocol) | integrations | 0.78 | A protocol reference page for the json.webpubsub.azure.v1 subprotocol will enumerate message schemas, operation names, required/optional fields, and exact JSON payload formats unique to Azure Web PubSub. These are product-specific wire-level integration details and API contracts that qualify as expert knowledge and fit the integrations & coding patterns category. |
+| [Protobuf WebSocket subprotocol](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/reference-protobuf-webpubsub-subprotocol) | integrations | 0.78 | A reference for protobuf.webpubsub.azure.v1 will define protobuf message types, field names, numeric tags, and frame formats required to interoperate with Azure Web PubSub. These protocol-level details are product-specific integration contracts, matching the integrations sub-skill and representing expert knowledge beyond generic LLM training. |
 | [Unsupported Socket.IO server APIs](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/socketio-supported-server-apis) | limits-quotas | 0.78 | Lists which Socket.IO server APIs are partially or not supported; effectively a capability/behavior limit matrix specific to this service. |
 | [Disable local authentication](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-disable-local-auth) | security | 0.76 | Covers turning off local access key authentication and enforcing Entra ID; such articles typically list exact portal/ARM settings and side effects, which are product-specific security configuration details. |
 | [Web PubSub client specification](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/reference-client-specification) | integrations | 0.75 | Client specification summary will define required behaviors, headers, and protocol details for Web PubSub clients—product-specific integration contract. |

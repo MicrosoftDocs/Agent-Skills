@@ -1,9 +1,9 @@
 ---
 name: azure-devtest-labs
-description: Expert knowledge for Azure DevTest Labs development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing DevTest Labs VMs, images/artifacts, ARM/CLI automation, RBAC/Key Vault security, or hub-spoke lab setups, and other Azure DevTest Labs related development tasks. Not for Azure Dev Box (use azure-dev-box), Azure Lab Services (use azure-lab-services), Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Desktop (use azure-virtual-desktop).
+description: Expert knowledge for Azure DevTest Labs development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing DevTest Labs images, artifacts, ARM/REST automation, VM start/stop, or hub-spoke lab networks, and other Azure DevTest Labs related development tasks. Not for Azure Lab Services (use azure-lab-services), Azure Dev Box (use azure-dev-box), Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Desktop (use azure-virtual-desktop).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-06-21"
   generator: "docs2skills/1.0.0"
 ---
 # Azure DevTest Labs Skill
@@ -24,22 +24,21 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L45 | Diagnosing and fixing DevTest Labs VM and environment creation/deployment issues, artifact application failures, connectivity problems, and handling Defender for Cloud security alerts. |
-| Best Practices | L46-L50 | Guidance on organizing and collaborating on DevTest Labs infrastructure as code across teams, including branching, environments, and distributed resource development workflows |
-| Decision Making | L51-L59 | Guidance on planning PoCs and enterprise-scale deployments, choosing images and Gen1 vs Gen2 VMs, and setting governance for organization-wide DevTest Labs use. |
-| Architecture & Design Patterns | L60-L64 | Enterprise-scale DevTest Labs architectures: hub-spoke design, network/security layout, governance, cost management, and best practices for large org lab deployments. |
-| Limits & Quotas | L65-L69 | Managing DevTest Labs limits and quotas, viewing current usage, and requesting or configuring quota increases for labs, VMs, and related resources. |
-| Security | L70-L86 | Securing DevTest Labs: identities, RBAC and granular policy permissions, secrets/Key Vault, encrypted storage/disks, Trusted Launch, and secure VM access via Bastion, RD Gateway, or browser |
-| Configuration | L87-L111 | Configuring DevTest Labs environments and VMs: images, networks, policies, costs, tags, ARM templates, artifacts, activity logs, alerts, IPs, and resource groups. |
-| Integrations & Coding Patterns | L112-L131 | Automating DevTest Labs with ARM, PowerShell, CLI, REST, and Functions: user/VM management, VHD/custom image workflows, cross-lab import, reporting, and VM start/stop/start-order control. |
-| Deployment | L132-L139 | Guides for deploying and migrating DevTest Labs: ARM templates, CI/CD and Azure Pipelines integration, region moves, and handling Azure Basic Load Balancer retirement. |
+| Troubleshooting | L37-L44 | Diagnosing and fixing DevTest Labs VM and environment creation/deployment issues, artifact application failures, connectivity problems, and handling Defender for Cloud security alerts. |
+| Best Practices | L45-L49 | Guidance on organizing and collaborating on DevTest Labs infrastructure as code across teams, including branching, environments, and distributed resource development workflows |
+| Decision Making | L50-L58 | Guidance on planning PoCs and enterprise-scale deployments, choosing images and Gen1 vs Gen2 VMs, and setting governance for organization-wide DevTest Labs use. |
+| Architecture & Design Patterns | L59-L63 | Enterprise-scale DevTest Labs architectures: hub-spoke design, network/security layout, governance, cost management, and best practices for large org lab deployments. |
+| Limits & Quotas | L64-L68 | Managing DevTest Labs limits and quotas, viewing current usage, and requesting or configuring quota increases for labs, VMs, and related resources. |
+| Security | L69-L86 | Securing DevTest Labs: identities, RBAC and granular policy permissions, secrets/Key Vault, disk/storage encryption, secure VM access (RDP Gateway, Bastion, browser), Trusted Launch, and security alerts. |
+| Configuration | L87-L109 | Configuring DevTest Labs environments and VMs: images, networks, policies, costs, tags, ARM templates, artifacts, activity logs, alerts, IPs, and resource groups. |
+| Integrations & Coding Patterns | L110-L128 | Automating DevTest Labs with ARM, PowerShell, CLI, REST, and Functions: user/VM management, VHD/custom image workflows, cross-lab import, reporting, and VM start/stop/start-order control. |
+| Deployment | L129-L136 | Guides for deploying and migrating DevTest Labs: ARM templates, CI/CD and Azure Pipelines integration, region moves, and handling Azure Basic Load Balancer retirement. |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
 | Fix DevTest Labs VM connectivity by redeploying | https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-redeploy-vm |
 | Troubleshoot DevTest Labs artifact application failures | https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-troubleshoot-apply-artifacts |
-| Handle Defender for Cloud security alerts in DevTest Labs environments | https://learn.microsoft.com/en-us/azure/devtest-labs/environment-security-alerts |
 | Troubleshoot DevTest Labs VM deployment failures | https://learn.microsoft.com/en-us/azure/devtest-labs/troubleshoot-vm-deployment-failures |
 | Troubleshoot DevTest Labs VM and environment creation failures | https://learn.microsoft.com/en-us/azure/devtest-labs/troubleshoot-vm-environment-creation-failures |
 
@@ -82,7 +81,8 @@ This skill requires **network access** to fetch documentation content:
 | Enable user-assigned managed identities on DevTest Labs VMs | https://learn.microsoft.com/en-us/azure/devtest-labs/enable-managed-identities-lab-vms |
 | Configure customer-managed key disk encryption in DevTest Labs | https://learn.microsoft.com/en-us/azure/devtest-labs/encrypt-disks-customer-managed-keys |
 | Manage DevTest Labs storage accounts and encryption settings | https://learn.microsoft.com/en-us/azure/devtest-labs/encrypt-storage |
-| Use managed identities to deploy DevTest Labs environments | https://learn.microsoft.com/en-us/azure/devtest-labs/use-managed-identities-environments |
+| View and respond to DevTest Labs environment security alerts | https://learn.microsoft.com/en-us/azure/devtest-labs/environment-security-alerts |
+| Configure managed identities for DevTest Labs environments | https://learn.microsoft.com/en-us/azure/devtest-labs/use-managed-identities-environments |
 
 ### Configuration
 | Topic | URL |
@@ -90,9 +90,7 @@ This skill requires **network access** to fetch documentation content:
 | View and interpret DevTest Labs activity logs | https://learn.microsoft.com/en-us/azure/devtest-labs/activity-logs |
 | Add and configure artifacts on DevTest Labs VMs | https://learn.microsoft.com/en-us/azure/devtest-labs/add-artifact-vm |
 | Configure Azure Compute Gallery for DevTest Labs images | https://learn.microsoft.com/en-us/azure/devtest-labs/configure-shared-image-gallery |
-| Connect DevTest Labs environments to lab virtual networks | https://learn.microsoft.com/en-us/azure/devtest-labs/connect-environment-lab-virtual-network |
 | Configure activity log alerts for DevTest Labs events | https://learn.microsoft.com/en-us/azure/devtest-labs/create-alerts |
-| Use nested ARM templates for DevTest Labs environments | https://learn.microsoft.com/en-us/azure/devtest-labs/deploy-nested-template-environments |
 | Add and manage tags on Azure DevTest Labs resources | https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-add-tag |
 | Author custom DevTest Labs VM artifact definitions | https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-artifact-author |
 | Configure autoshutdown policies for DevTest Labs VMs | https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-auto-shutdown |
@@ -113,7 +111,6 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Automate adding DevTest Labs users via ARM, PowerShell, and CLI | https://learn.microsoft.com/en-us/azure/devtest-labs/automate-add-lab-user |
-| Provision Service Fabric cluster environments in DevTest Labs | https://learn.microsoft.com/en-us/azure/devtest-labs/create-environment-service-fabric-cluster |
 | Create DevTest Labs custom images from VHD with PowerShell | https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-create-custom-image-from-vhd-using-powershell |
 | Upload VHDs to DevTest Labs storage using AzCopy | https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-upload-vhd-using-azcopy |
 | Upload VHDs to DevTest Labs with PowerShell | https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-upload-vhd-using-powershell |

@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Front Door (use azure-front-door), Azure Load 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 173
+- **Updated Pages**: 0
+- **Unchanged**: 175
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-application-gateway/azure-application-gateway.csv`
 
@@ -75,13 +75,6 @@ confusable_not_for: Not for Azure Front Door (use azure-front-door), Azure Load 
 | *(Unclassified)* | 47 | 26.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [Application Gateway for Containers components](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/application-gateway-for-containers-components)
-  - Updated: 2026-05-20T22:22:00.000Z → 2026-06-05T08:00:00.000Z
-- [Application Gateway for Containers](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/overview)
-  - Updated: 2026-04-24T11:19:00.000Z → 2026-06-12T08:00:00.000Z
 
 ## Classified Pages
 

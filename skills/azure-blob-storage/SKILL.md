@@ -1,9 +1,9 @@
 ---
 name: azure-blob-storage
-description: Expert knowledge for Azure Blob Storage development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Data Lake Gen2, BlobFuse, NFS/SFTP, SAS/RBAC auth, or static websites on Blob Storage, and other Azure Blob Storage related development tasks. Not for Azure Files (use azure-files), Azure Table Storage (use azure-table-storage), Azure Queue Storage (use azure-queue-storage), Azure NetApp Files (use azure-netapp-files).
+description: Expert knowledge for Azure Blob Storage development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Blob tiers, lifecycle/immutability, Data Lake Gen2, SAS/RBAC auth, or NFS/BlobFuse mounts, and other Azure Blob Storage related development tasks. Not for Azure Files (use azure-files), Azure Table Storage (use azure-table-storage), Azure Queue Storage (use azure-queue-storage), Azure NetApp Files (use azure-netapp-files).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-14"
+  generated_at: "2026-06-21"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Blob Storage Skill
@@ -25,14 +25,14 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L37-L47 | Diagnosing and fixing Azure Blob Storage issues: Storage Mover job/network errors, support bundles, BlobFuse/BlobFuse2 mount & I/O problems, and known NFS 3.0 limitations. |
-| Best Practices | L48-L81 | Performance, cost, reliability, and monitoring best practices for Blob/Data Lake: tuning uploads/downloads, tiers, lifecycle, NFS/SFTP, concurrency, retries, events, and backup/migration patterns. |
-| Decision Making | L82-L107 | Cost planning and design choices for Blob Storage: pricing, migration and transfer costs, archive retrieval, multi-region access, connectivity, data protection, and when to use specific tiers/tools. |
-| Architecture & Design Patterns | L108-L112 | Guidance on when and why to enable Data Lake Storage Gen2 hierarchical namespace in Blob Storage, including tradeoffs, performance, and compatibility impacts. |
-| Limits & Quotas | L113-L133 | Limits, quotas, performance, and known issues for Azure Blob (including premium, archive, NFS, SFTP, static sites, replication, BlobFuse, and Data Lake Storage) |
-| Security | L134-L192 | Securing Blob and Data Lake Storage: identity-based auth (Entra, RBAC/ABAC), SAS tokens, SFTP, ACLs, encryption (server/client, scopes, keys), and hardening/anonymous access settings. |
-| Configuration | L193-L256 | Configuring and monitoring Azure Blob Storage: lifecycle, immutability, soft delete, PITR, inventory, networking, BlobFuse, Storage Mover, migrations, and third‑party backup/move tools. |
-| Integrations & Coding Patterns | L257-L389 | SDK, CLI, and tooling patterns for integrating with Blob/Data Lake: connect from various languages, mount/file-system access, copy/migrate data, manage containers/blobs, leases, tiers, tags, and events. |
-| Deployment | L390-L403 | Guides for deploying static websites on Blob Storage, enabling Data Lake features, and migrating or integrating data from HDFS, Hadoop, NAS, and hybrid solutions into Azure Storage. |
+| Best Practices | L48-L81 | Performance, cost, reliability, and monitoring best practices for Azure Blob/Data Lake: access tiers, lifecycle, concurrency, client tuning, retries, NFS/SFTP, events, and backup/migration guidance. |
+| Decision Making | L82-L108 | Cost and architecture choices for Blob Storage: pricing, tiers, migration tools, private connectivity, data protection, reserved capacity, and detailed cost estimation for storage, access, and archive. |
+| Architecture & Design Patterns | L109-L113 | Guidance on when and why to enable Data Lake Storage Gen2 hierarchical namespace in Blob Storage, including tradeoffs, performance, and compatibility impacts. |
+| Limits & Quotas | L114-L134 | Limits, quotas, and performance/scalability behavior for Blob Storage (tiers, archive/rehydration, NFS/SFTP, BlobFuse, Data Lake, static sites, replication) and related known issues. |
+| Security | L135-L193 | Securing Blob and Data Lake access: RBAC/ABAC, Entra ID auth, SAS tokens, SFTP, ACLs, Storage Mover, anonymous access controls, and encryption (CSE, scopes, keys, BlobFuse2). |
+| Configuration | L194-L257 | Configuring and monitoring Azure Blob Storage: lifecycle, immutability, soft delete, PITR, inventory, networking, BlobFuse, Storage Mover, migrations, and third‑party backup/move tools. |
+| Integrations & Coding Patterns | L258-L387 | SDK and CLI patterns for integrating Blob/Data Lake with apps: CRUD, copy/move, leases, metadata, tiers, SAS, events, NFS/BlobFuse mounts, analytics, and cross-cloud/Hadoop access. |
+| Deployment | L388-L401 | Guides for deploying static websites on Blob Storage, enabling Data Lake features, and migrating or integrating data from HDFS, Hadoop, NAS, and hybrid solutions into Azure Storage. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -64,10 +64,10 @@ This skill requires **network access** to fetch documentation content:
 | Delete and restore blob containers using .NET with soft delete | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-container-delete |
 | React to Blob Storage events with Event Grid | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-event-overview |
 | Design low-latency applications with Azure Blob Storage | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-latency |
-| Tune .NET Azure Blob uploads and downloads | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-tune-upload-download |
+| Tune Azure Blob .NET uploads and downloads | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-tune-upload-download |
 | Tune Azure Storage Go client uploads and downloads | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-tune-upload-download-go |
 | Tune Java Azure Blob upload and download performance | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-tune-upload-download-java |
-| Tune Azure blob upload and download performance in JavaScript | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-tune-upload-download-javascript |
+| Tune Azure Blob JS client upload and download performance | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-tune-upload-download-javascript |
 | Tune Azure blob upload and download performance in Python | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-tune-upload-download-python |
 | Optimize Azure Blob partitions with naming strategies | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-performance-blob-partitions |
 | Performance optimization checklist for Azure Blob Storage | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-performance-checklist |
@@ -87,6 +87,7 @@ This skill requires **network access** to fetch documentation content:
 | Estimate and understand Azure Storage Mover migration costs | https://learn.microsoft.com/en-us/azure/storage-mover/billing |
 | Choose Azure private connectivity for Storage Mover | https://learn.microsoft.com/en-us/azure/storage-mover/cloud-to-cloud-private-network-configs |
 | Plan Azure Storage Mover deployments and migrations | https://learn.microsoft.com/en-us/azure/storage-mover/deployment-planning |
+| Choose Azure Blob Storage access tiers by usage | https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview |
 | Calculate archive tier storage and retrieval costs | https://learn.microsoft.com/en-us/azure/storage/blobs/archive-cost-estimation |
 | Estimate AzCopy data transfer costs for Blob Storage | https://learn.microsoft.com/en-us/azure/storage/blobs/azcopy-cost-estimation |
 | Choose Azure Blob cost optimization capabilities | https://learn.microsoft.com/en-us/azure/storage/blobs/blob-cost-optimization-services |
@@ -125,11 +126,11 @@ This skill requires **network access** to fetch documentation content:
 | Protocol limits for NFS 3.0 on Azure Blob | https://learn.microsoft.com/en-us/azure/storage/blobs/network-file-system-protocol-support |
 | Object replication priority replication latency guarantees | https://learn.microsoft.com/en-us/azure/storage/blobs/object-replication-priority-replication |
 | Understand Azure Blob Storage scalability limits | https://learn.microsoft.com/en-us/azure/storage/blobs/scalability-targets |
-| Premium block blob storage scalability limits | https://learn.microsoft.com/en-us/azure/storage/blobs/scalability-targets-premium-block-blobs |
+| Scalability limits for premium block blob storage accounts | https://learn.microsoft.com/en-us/azure/storage/blobs/scalability-targets-premium-block-blobs |
 | Use premium page blob storage scalability targets | https://learn.microsoft.com/en-us/azure/storage/blobs/scalability-targets-premium-page-blobs |
 | Limitations and known issues for SFTP on Azure Blob Storage | https://learn.microsoft.com/en-us/azure/storage/blobs/secure-file-transfer-protocol-known-issues |
 | Azure Blob Storage FAQs on limits and behavior | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-faq |
-| Static website hosting capabilities and limits in Blob Storage | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-static-website |
+| Static website hosting limits in Azure Blob Storage | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-static-website |
 
 ### Security
 | Topic | URL |
@@ -271,7 +272,6 @@ This skill requires **network access** to fetch documentation content:
 | Mount Blob Storage containers as Linux file systems with blobfuse2 | https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-commands-mount |
 | Mount all containers in a storage account using blobfuse2 | https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-commands-mount-all |
 | List BlobFuse2 mount points with mount list command | https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-commands-mount-list |
-| Unmount BlobFuse2 mount points using unmount command | https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-commands-unmount |
 | Unmount all BlobFuse2 mount points in a storage account | https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-commands-unmount-all |
 | Calculate blob count and size using inventory and Synapse | https://learn.microsoft.com/en-us/azure/storage/blobs/calculate-blob-count-size |
 | Convert append and page blobs to block blobs | https://learn.microsoft.com/en-us/azure/storage/blobs/convert-append-and-page-blobs-to-block-blobs |
@@ -335,10 +335,9 @@ This skill requires **network access** to fetch documentation content:
 | Delete and restore Azure blobs with Java | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-delete-java |
 | Delete and restore Azure blobs in JavaScript | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-delete-javascript |
 | Delete and restore Azure blobs using Python | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-delete-python |
-| Download blobs with .NET using Azure Storage SDK | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-download |
 | Download blobs using Azure Storage Go SDK | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-download-go |
 | Download Azure blobs using Java client library | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-download-java |
-| Download Azure blobs using JavaScript SDK | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-download-javascript |
+| Download Azure Blob Storage data with JavaScript SDK | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-download-javascript |
 | Download Azure blobs with Python SDK | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-download-python |
 | Send Blob Storage events to web endpoint using Azure CLI | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-event-quickstart |
 | Get Azure container and blob URLs in JavaScript | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-get-url-javascript |
@@ -361,16 +360,15 @@ This skill requires **network access** to fetch documentation content:
 | Use blob index tags with Java for data discovery | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-tags-java |
 | Use blob index tags with JavaScript for search | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-tags-javascript |
 | Use blob index tags with Python for data discovery | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-tags-python |
-| Upload blobs with .NET using Azure Storage SDK | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-upload |
 | Upload blobs with Azure Storage Go client | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-upload-go |
 | Upload Azure blobs using Java client library | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-upload-java |
-| Upload Azure blobs with JavaScript client library | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-upload-javascript |
+| Upload Azure Blob Storage data with JavaScript SDK | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-upload-javascript |
 | Upload Azure blobs using Python client library | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-upload-python |
 | Set or change Azure blob access tier in .NET | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-use-access-tier-dotnet |
 | Set or change blob access tier with Java | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-use-access-tier-java |
 | Set Azure blob access tiers with JavaScript | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-use-access-tier-javascript |
 | Set Azure blob access tiers with Python | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-use-access-tier-python |
-| Create user delegation SAS for blobs using .NET SDK | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-user-delegation-sas-create-dotnet |
+| Create user delegation SAS with .NET for Azure Storage | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-user-delegation-sas-create-dotnet |
 | List blobs with .NET using flat and hierarchical listings | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-list |
 | List blobs flat or hierarchically using Go | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-list-go |
 | List blobs in Azure Storage using Java | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-list-java |

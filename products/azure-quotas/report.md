@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-31'
+generated_at: '2026-06-21'
 category_descriptions:
   limits-quotas: How to request and manage per-region Azure Storage account quota
     increases, including limits, prerequisites, and support request steps.
@@ -28,8 +28,8 @@ confusable_not_for: Not for Azure Cost Management (use azure-cost-management), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 15
+- **Updated Pages**: 1
+- **Unchanged**: 14
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-quotas/azure-quotas.csv`
 
@@ -41,6 +41,11 @@ confusable_not_for: Not for Azure Cost Management (use azure-cost-management), A
 | *(Unclassified)* | 14 | 93.3% |
 
 ## Changes
+
+### Updated Pages
+
+- [About Azure Quotas](https://learn.microsoft.com/en-us/azure/quotas/quotas-overview)
+  - Updated: 2025-03-25T08:00:00.000Z → 2026-06-16T06:14:00.000Z
 
 ## Classified Pages
 
@@ -55,12 +60,12 @@ confusable_not_for: Not for Azure Cost Management (use azure-cost-management), A
 | [Increase regional vCPU family quotas](https://learn.microsoft.com/en-us/azure/quotas/regional-quota-requests) | 0.40 | Covers requesting regional vCPU quota increases; summary does not expose concrete numeric quotas or configuration ranges. |
 | [Increase spot vCPU family quotas](https://learn.microsoft.com/en-us/azure/quotas/spot-quota) | 0.40 | Describes spot vCPU quota type and how to request increases; no explicit numeric limits or detailed configuration parameters in the summary. |
 | [Increase vCPU family quotas](https://learn.microsoft.com/en-us/azure/quotas/per-vm-quota-requests) | 0.40 | Focuses on how to request VM-family vCPU quota increases; summary references quota types but not specific numeric limits, ranges, or tier tables. |
-| [About Azure Quotas](https://learn.microsoft.com/en-us/azure/quotas/quotas-overview) | 0.30 | High-level conceptual overview of quotas and how they work; summary does not show concrete numeric limits, tier tables, or timeout ranges. |
 | [Create and delete Quota Groups](https://learn.microsoft.com/en-us/azure/quotas/create-quota-groups) | 0.30 | How-to for creating/deleting Quota Group ARM objects; appears procedural without exposing specific numeric limits or configuration ranges. |
 | [Increase networking quotas](https://learn.microsoft.com/en-us/azure/quotas/networking-quota-requests) | 0.30 | How-to for requesting networking quota increases via portal; appears procedural without listing specific numeric networking limits. |
 | [Overview](https://learn.microsoft.com/en-us/azure/quotas/quota-groups) | 0.30 | Conceptual description of Azure Quota Groups and sharing quota; no numeric limits, decision matrices, or detailed configuration parameters evident from summary. |
 | [Quota Group limit increase request](https://learn.microsoft.com/en-us/azure/quotas/quota-group-limit-increase) | 0.30 | Explains submitting Quota Group limit increase requests; appears focused on process rather than listing specific numeric limits or tiered quotas. |
 | [Transfer quota with a Quota Group](https://learn.microsoft.com/en-us/azure/quotas/transfer-quota-groups) | 0.30 | Describes transferring quota within a group; summary does not show concrete numeric constraints, ranges, or advanced configuration parameters. |
+| [About Azure Quotas](https://learn.microsoft.com/en-us/azure/quotas/quotas-overview) | 0.20 | High-level overview of Azure quotas and how to view/request increases; does not list specific numeric limits, tier-specific quotas, or timeout values, so it lacks the expert numeric details required for the limits-quotas category. |
 | [Add or remove subscriptions](https://learn.microsoft.com/en-us/azure/quotas/add-remove-subscriptions-quota-group) | 0.20 | Simple add/remove subscriptions operation for Quota Groups; no indication of expert-level numeric limits or specialized configuration details. |
 | [Create and manage alerts](https://learn.microsoft.com/en-us/azure/quotas/how-to-guide-monitoring-alerting) | 0.20 | Generic guidance on creating alerts for quotas; summary lacks specific threshold values, parameter tables, or product-unique configuration details. |
 | [Monitoring and alerts](https://learn.microsoft.com/en-us/azure/quotas/monitoring-alerting) | 0.20 | Describes monitoring and alerting conceptually; summary lacks specific thresholds, configuration parameters, or numeric guidance. |

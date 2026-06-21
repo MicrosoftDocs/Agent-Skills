@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-07'
+generated_at: '2026-06-21'
 category_descriptions:
   integrations: Using APIs, Resource Graph, webhooks, and connectors to query Azure
     Service Health/Security data and route alerts into tools like OpsGenie, PagerDuty,
@@ -39,8 +39,8 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 47
+- **Updated Pages**: 1
+- **Unchanged**: 46
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-health/azure-service-health.csv`
 
@@ -56,6 +56,11 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 | *(Unclassified)* | 28 | 59.6% |
 
 ## Changes
+
+### Updated Pages
+
+- [Resource Health FAQ](https://learn.microsoft.com/en-us/azure/service-health/resource-health-faq)
+  - Updated: 2026-01-15T23:08:00.000Z → 2026-06-15T17:13:00.000Z
 
 ## Classified Pages
 
@@ -103,7 +108,7 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 | [Impacted Resources from Azure security advisories](https://learn.microsoft.com/en-us/azure/service-health/impacted-resources-security) | 0.20 | Describes feature for viewing impacted resources from security advisories and phased rollout; no detailed security configuration, limits, or troubleshooting mappings. |
 | [Impacted Resources from Service issues](https://learn.microsoft.com/en-us/azure/service-health/impacted-resources-outage) | 0.20 | Explains where to see impacted resources during service issues; appears procedural/UX-focused without numeric limits, config parameters, or error codes. |
 | [Impacted Resources from planned maintenance events](https://learn.microsoft.com/en-us/azure/service-health/impacted-resources-planned-maintenance) | 0.20 | Describes where to view impacted resources for planned maintenance; appears to be UI/experience explanation without expert-only numeric or config details. |
-| [Resource Health FAQ](https://learn.microsoft.com/en-us/azure/service-health/resource-health-faq) | 0.20 | FAQ-style overview for Azure Resource Health; primarily conceptual Q&A about what the service is and how it works, without specific limits, configuration parameter tables, error-code-to-solution mappings, or other product-specific expert details as defined in the sub-skill types. |
+| [Resource Health FAQ](https://learn.microsoft.com/en-us/azure/service-health/resource-health-faq) | 0.20 | FAQ-style overview about Azure Resource Health; primarily conceptual explanations of statuses and behavior without detailed limits, configuration tables, error-code mappings, or other product-specific expert data that meet the defined sub-skill criteria. |
 | [Service Health FAQ](https://learn.microsoft.com/en-us/azure/service-health/service-health-faq) | 0.20 | FAQ-style overview for Azure Service Health; focuses on general behavior and usage, not on numeric limits, configuration matrices, detailed troubleshooting mappings, or other expert-only data required by the sub-skill categories. |
 | [Service Health event tags](https://learn.microsoft.com/en-us/azure/service-health/service-health-event-tags) | 0.20 | Describes event tags, levels, and subtypes conceptually; no specific configuration values, limits, or decision matrices with thresholds. |
 | [Service Health notifications overview](https://learn.microsoft.com/en-us/azure/service-health/service-health-notifications-properties) | 0.20 | High-level overview of Azure Service Health notifications and where they appear; no specific limits, configuration parameters, error codes, or decision matrices. |

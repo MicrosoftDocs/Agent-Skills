@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-14'
+generated_at: '2026-06-21'
 category_descriptions:
   workload-patterns: Design patterns, reference architectures, and end-to-end guidance
     for AI, HPC, mission-critical, SaaS, and sustainable workloads on Azure, including
@@ -10,12 +10,12 @@ category_descriptions:
   design-principles: Design patterns and best practices for applying Azure Well-Architected
     (WAF) principles—cost, reliability, security, performance, ops, sustainability—to
     AI, SaaS, AVD, HPC, and mission-critical workloads.
-  service-guides: 'Service-specific Azure Well-Architected guidance: design, secure,
-    operate, and optimize AVD, networking, databases, storage, containers, and PaaS
-    services using WAF-aligned best practices.'
-  recommendations: Prescriptive best practices to design, operate, and optimize Azure
-    workloads across cost, reliability, performance, security, and sustainability,
-    including monitoring, automation, CI/CD, and incident processes.
+  service-guides: End-to-end Well-Architected (WAF) guidance for specific Azure services—covering
+    design, networking, security/IAM, monitoring, BCDR, performance, and cost optimization
+    patterns.
+  recommendations: Guidance on cost, reliability, performance, security, and sustainability
+    best practices for Azure workloads, including design patterns, operations, automation,
+    and governance recommendations.
   checklists: Checklists to review Azure workloads for cost, operations, performance,
     reliability, and security best practices and identify gaps against Well-Architected
     guidance.
@@ -26,10 +26,10 @@ skill_description: Expert guidance for designing, assessing, and optimizing Azur
   workloads using Azure Well Architected. Covers design review checklists, recommendations,
   design principles, tradeoffs, service guides, workload patterns, and assessment
   questions. Use when designing AI, HPC, SaaS, AVD, or mission-critical workloads
-  with Azure WAF-aligned patterns and guidance, and other Azure Well Architected related
-  development tasks.
+  with WAF-aligned patterns, guides, and tradeoffs, and other Azure Well Architected
+  related development tasks.
 use_when: Use when designing AI, HPC, SaaS, AVD, or mission-critical workloads with
-  Azure WAF-aligned patterns and guidance, and other Azure Well Architected related
+  WAF-aligned patterns, guides, and tradeoffs, and other Azure Well Architected related
   development tasks.
 ---
 # Azure Well Architected Crawl Report
@@ -43,9 +43,9 @@ use_when: Use when designing AI, HPC, SaaS, AVD, or mission-critical workloads w
 - **Unclassified**: 31
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 4
-- **Unchanged**: 215
+- **New Pages**: 0
+- **Updated Pages**: 7
+- **Unchanged**: 213
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-well-architected/azure-well-architected.csv`
 
@@ -64,20 +64,22 @@ use_when: Use when designing AI, HPC, SaaS, AVD, or mission-critical workloads w
 
 ## Changes
 
-### New Pages
-
-- [Throttling](https://learn.microsoft.com/en-us/azure/well-architected/design-guides/throttling)
-
 ### Updated Pages
 
-- [Checklist](https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/checklist)
-  - Updated: 2026-03-31T22:07:00.000Z → 2026-06-11T17:23:00.000Z
-- [OE:02 Task execution process](https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/formalize-operations-tasks)
-  - Updated: 2026-02-11T19:15:00.000Z → 2026-06-11T17:23:00.000Z
-- [OE:03 Software development practices](https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/formalize-development-practices)
-  - Updated: 2026-02-11T19:15:00.000Z → 2026-06-11T17:23:00.000Z
-- [OE:07 Monitoring system](https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/observability)
-  - Updated: 2026-05-13T22:08:00.000Z → 2026-06-11T17:23:00.000Z
+- [Azure Files](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-files)
+  - Updated: 2025-09-08T08:00:00.000Z → 2026-06-04T08:00:00.000Z
+- [Azure Kubernetes Service](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-kubernetes-service)
+  - Updated: 2025-11-21T08:00:00.000Z → 2026-06-16T08:00:00.000Z
+- [Azure Virtual Network](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/virtual-network)
+  - Updated: 2025-08-17T08:00:00.000Z → 2026-06-16T08:00:00.000Z
+- [OE:11 Safe deployment practices](https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/safe-deployments)
+  - Updated: 2026-02-11T08:00:00.000Z → 2026-06-17T22:07:00.000Z
+- [Azure Application Gateway](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-application-gateway)
+  - Updated: 2025-09-22T08:00:00.000Z → 2026-06-26T08:00:00.000Z
+- [Application Insights](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/application-insights)
+  - Updated: 2024-11-27T17:59:00.000Z → 2026-06-04T08:00:00.000Z
+- [Azure Blob Storage](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-blob-storage)
+  - Updated: 2025-11-26T08:00:00.000Z → 2026-06-04T08:00:00.000Z
 
 ## Classified Pages
 
@@ -99,12 +101,12 @@ use_when: Use when designing AI, HPC, SaaS, AVD, or mission-critical workloads w
 | [SE:05 Identity and access management](https://learn.microsoft.com/en-us/azure/well-architected/security/identity-access) | recommendations | 0.95 | Explicitly tied to a Security checklist recommendation and provides concrete recommendations for authenticating and authorizing human and workload identities. |
 | [SE:06 Network controls](https://learn.microsoft.com/en-us/azure/well-architected/security/networking) | recommendations | 0.95 | Applies to a Security checklist recommendation and details network security controls (filtering, blocking, detection) and their use alongside identity controls. |
 | [SE:07 Encryption](https://learn.microsoft.com/en-us/azure/well-architected/security/encryption) | recommendations | 0.95 | Linked to a Security checklist recommendation and provides detailed guidance on encryption mechanisms, keys, algorithms, hashes, and secret management—implementation-focused. |
-| [Application Insights](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/application-insights) | service-guides | 0.90 | Provides WAF-mapped design considerations and configuration recommendations for Application Insights across pillars, fitting the service-guides category. |
+| [Application Insights](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/application-insights) | service-guides | 0.90 | The article is an architecture guide for Application Insights framed around the five Well-Architected pillars, with design considerations and configuration recommendations specific to this service. It clearly fits the 'service-guides' category and includes expert, service-specific implementation details. |
 | [Assessment](https://learn.microsoft.com/en-us/azure/well-architected/azure-virtual-desktop/assessment) | assessments | 0.90 | Explains a structured self-assessment for Azure Virtual Desktop workloads aligned to WAF pillars, matching the assessment questions pattern. |
 | [Azure API Management](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-api-management) | service-guides | 0.90 | A Well-Architected service guide for Azure API Management with design considerations and configuration recommendations mapped to WAF pillars, matching the service-guides definition. |
 | [Azure App Service](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/app-service-web-apps) | service-guides | 0.90 | Service-specific WAF guidance for App Service Web Apps, covering design and configuration across pillars, matching service-guides. |
-| [Azure Application Gateway](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-application-gateway) | service-guides | 0.90 | Service-specific architectural best practices for Application Gateway v2 and WAF, mapped to WAF considerations across pillars, clearly a service-guides page. |
-| [Azure Blob Storage](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-blob-storage) | service-guides | 0.90 | A WAF service guide for Blob Storage with design considerations and configuration recommendations mapped to pillars, fitting service-guides. |
+| [Azure Application Gateway](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-application-gateway) | service-guides | 0.90 | This is a Well-Architected service guide for Azure Application Gateway v2 and WAF on Application Gateway. It provides service-specific architectural best practices and configuration guidance across multiple pillars (security, reliability, performance, etc.), matching the 'service-guides' criteria and containing detailed, expert configuration knowledge. |
+| [Azure Blob Storage](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-blob-storage) | service-guides | 0.90 | This page provides Azure Well-Architected design considerations and configuration recommendations specifically for Azure Blob Storage, mapped to the WAF pillars. It is a classic service guide with detailed, service-specific guidance, so it matches the 'service-guides' type and contains expert knowledge beyond generic concepts. |
 | [Azure Cosmos DB](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/cosmos-db) | service-guides | 0.90 | Service guide for Cosmos DB for NoSQL with architectural recommendations mapped to WAF pillars, clearly a service-guides page. |
 | [Azure Database for PostgreSQL](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/postgresql) | service-guides | 0.90 | Service-specific WAF guide with detailed configuration and design recommendations for PostgreSQL across multiple pillars. |
 | [Azure Databricks](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-databricks) | service-guides | 0.90 | Service-specific WAF guidance for Azure Databricks, covering common considerations and best practices across pillars, fitting service-guides. |
@@ -112,17 +114,15 @@ use_when: Use when designing AI, HPC, SaaS, AVD, or mission-critical workloads w
 | [Azure Event Grid](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-event-grid) | service-guides | 0.90 | Event Grid–specific architectural and configuration guidance organized by WAF pillars, beyond generic messaging concepts. |
 | [Azure Event Hubs](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-event-hubs) | service-guides | 0.90 | Deep, service-focused recommendations for Event Hubs reliability, security, cost, operations, and performance. |
 | [Azure ExpressRoute](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-expressroute) | service-guides | 0.90 | ExpressRoute-specific architectural best practices and configuration details aligned to WAF pillars. |
-| [Azure Files](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-files) | service-guides | 0.90 | Service guide with Azure Files–specific design considerations and configuration recommendations across pillars. |
 | [Azure Firewall](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-firewall) | service-guides | 0.90 | Azure Firewall–focused WAF guide with concrete configuration and design recommendations per pillar. |
 | [Azure Front Door](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-front-door) | service-guides | 0.90 | Front Door–specific WAF-aligned guidance for multi-region deployments and configuration choices. |
 | [Azure Functions](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-functions) | service-guides | 0.90 | Service guide mapping Azure Functions features and configurations to WAF pillars with detailed recommendations. |
-| [Azure Kubernetes Service](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-kubernetes-service) | service-guides | 0.90 | AKS-specific architectural and configuration guidance across reliability, security, cost, operations, and performance. |
+| [Azure Kubernetes Service](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-kubernetes-service) | service-guides | 0.90 | The page is explicitly an Architecture Best Practices guide for Azure Kubernetes Service from the Well-Architected perspective. It discusses how to use AKS features to improve reliability, security, scalability, operations, and cost, with service-specific recommendations. This aligns directly with the service-guides category and contains detailed, AKS-specific expert guidance beyond generic concepts. |
 | [Azure Load Balancer](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-load-balancer) | service-guides | 0.90 | Azure Load Balancer–specific best practices mapped to WAF pillars, including configuration-level advice. |
 | [Azure SQL Database](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-sql-database) | service-guides | 0.90 | Azure SQL Database–specific design considerations and configuration guidance across WAF pillars. |
 | [Azure Service Bus](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-service-bus) | service-guides | 0.90 | Service Bus–specific WAF-aligned recommendations for queues, topics, and advanced messaging features. |
 | [Azure Traffic Manager](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-traffic-manager) | service-guides | 0.90 | Traffic Manager–specific WAF guidance on feature usage and configuration across pillars. |
 | [Azure Virtual Machines](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/virtual-machines) | service-guides | 0.90 | VM/VMSS-specific architectural and configuration recommendations mapped to WAF pillars. |
-| [Azure Virtual Network](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/virtual-network) | service-guides | 0.90 | Virtual Network–specific design and configuration guidance aligned with WAF pillars. |
 | [Azure Virtual WAN](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-virtual-wan) | service-guides | 0.90 | Virtual WAN–focused WAF service guide covering connectivity, security, and routing across pillars. |
 | [CO:01 Financial responsibility](https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/create-culture-financial-responsibility) | recommendations | 0.90 | Explicitly tied to a Cost Optimization checklist recommendation and gives prescriptive steps for building financial responsibility culture. This is detailed how-to guidance behind checklist items. |
 | [CO:02 Cost model](https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/cost-model) | recommendations | 0.90 | Supports a Cost Optimization checklist recommendation and provides concrete practices for estimating and forecasting workload costs. This is implementation guidance for a specific checklist item. |
@@ -159,6 +159,7 @@ use_when: Use when designing AI, HPC, SaaS, AVD, or mission-critical workloads w
 | [SE:09 Application secrets](https://learn.microsoft.com/en-us/azure/well-architected/security/application-secrets) | recommendations | 0.90 | Maps to a Security checklist recommendation and gives detailed implementation guidance for creating, storing, and distributing secrets (keys, tokens, credentials). This is specific how-to guidance behind checklist items. |
 | [Tradeoffs](https://learn.microsoft.com/en-us/azure/well-architected/performance-efficiency/tradeoffs) | tradeoffs | 0.90 | Described as performance efficiency tradeoffs when designing workload architectures. These WAF tradeoff articles analyze how performance decisions affect other pillars (cost, reliability, etc.), providing cross-pillar impact guidance that is not generic Azure documentation. |
 | [Assessment](https://learn.microsoft.com/en-us/azure/well-architected/saas/assessment) | assessments | 0.88 | Explicitly a Well-Architected SaaS assessment tool to self-assess design against WAF pillars; matches assessment definition. |
+| [Azure Virtual Network](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/virtual-network) | service-guides | 0.88 | This article is a Well-Architected service guide for Azure Virtual Network, covering design considerations and configuration recommendations for VNet and its features (connectivity, filtering, integration with on-premises) across multiple pillars. The service-specific, pillar-aware configuration guidance constitutes expert knowledge and fits the service-guides definition. |
 | [CO:05 Rate optimization](https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/get-best-rates) | recommendations | 0.88 | Supports a Cost Optimization checklist recommendation and gives concrete strategies for optimizing pricing without changing architecture. This is prescriptive, actionable guidance. |
 | [CO:13 Personnel time](https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/optimize-personnel-time) | recommendations | 0.88 | Tied to a Cost Optimization checklist recommendation and describes how to align skills, tasks, and time to maximize productivity. Prescriptive, step-oriented guidance. |
 | [CO:14 Consolidation](https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/consolidation) | recommendations | 0.88 | Supports a Cost Optimization checklist recommendation and provides detailed guidance on consolidating servers, databases, applications, and responsibilities. Implementation-level cost guidance. |
@@ -172,13 +173,14 @@ use_when: Use when designing AI, HPC, SaaS, AVD, or mission-critical workloads w
 | [Assessment tool](https://learn.microsoft.com/en-us/azure/well-architected/mission-critical/mission-critical-assessment) | assessments | 0.86 | Describes a self-assessment review tool for mission-critical workloads, organized around resiliency and reliability best practices; clearly an assessment artifact. |
 | [Azure Container Apps](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-container-apps) | service-guides | 0.86 | The page is a Well-Architected Framework guide focused on Azure Container Apps, providing service-specific design considerations and configuration recommendations across multiple pillars (for example, reliability, security, cost, performance, operations). This aligns with the definition of a service-guide. It goes beyond generic concepts and includes concrete, Azure-Container-Apps-specific guidance that an LLM is unlikely to fully infer from general training data. |
 | [Azure Database for MySQL](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-database-for-mysql) | service-guides | 0.86 | The page is a Well-Architected Framework guide focused on Azure Database for MySQL, providing service-specific design considerations and configuration recommendations (for availability, backups, scaling, etc.). It maps WAF pillar guidance to this particular Azure service, which matches the definition of a service-guide. The content goes beyond generic concepts and includes concrete, service-specific configuration advice that an LLM is unlikely to infer without the documentation. |
+| [Azure Files](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-files) | service-guides | 0.86 | This is a Well-Architected service guide specifically for Azure Files and Azure File Sync. It provides WAF-aligned design considerations and configuration recommendations for this service across multiple pillars (for example, reliability, security, performance, cost). That combination of service-specific, pillar-based guidance and concrete configuration details qualifies as expert knowledge and matches the service-guides definition. |
 | [Azure Local](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-local) | service-guides | 0.86 | Service-focused guidance for Azure Local/Arc deployments with WAF-related design and configuration considerations. |
 | [Azure Machine Learning](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-machine-learning) | service-guides | 0.86 | Azure ML–specific architectural recommendations and configuration options aligned to WAF pillars. |
 | [Azure NetApp Files](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-netapp-files) | service-guides | 0.86 | Service guide with NetApp Files–specific design and configuration recommendations across multiple pillars. |
 | [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-sql-managed-instance) | service-guides | 0.86 | This is a Well-Architected service guide focused on Azure SQL Managed Instance. It provides WAF-aligned, service-specific guidance (resilience, security, efficiency, etc.) for configuring and operating SQL Managed Instance. The content goes beyond generic concepts and includes concrete, service-focused best practices that are unlikely to be fully captured as general training data, fitting the 'service-guides' category. |
 | [Azure Service Fabric](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-service-fabric) | service-guides | 0.86 | Service Fabric–focused architectural recommendations mapped to WAF pillars with implementation detail. |
 | [Log Analytics](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-log-analytics) | service-guides | 0.86 | The page is a Well-Architected service guide focused on Log Analytics workspaces, providing Azure Monitor–specific best practices across multiple pillars (for example, how to structure workspaces, configure data collection, retention, access, and performance). This is detailed, service-specific implementation guidance that goes beyond generic concepts and would not be fully captured in general LLM training data, fitting the 'service-guides' category. |
-| [OE:11 Safe deployment practices](https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/safe-deployments) | recommendations | 0.86 | Described as recommendations for using safe deployment practices tied to an Operational Excellence checklist recommendation, with concrete process and risk-management guidance. This is detailed implementation guidance, not just principles. |
+| [OE:11 Safe deployment practices](https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/safe-deployments) | recommendations | 0.86 | The page is explicitly a guide for an Operational Excellence checklist recommendation and provides detailed, prescriptive guidance on how to implement safe deployment practices (SDP) to reduce risk of changes. It maps to a specific checklist item in the OpEx pillar and contains concrete implementation steps and patterns, which aligns with the 'recommendations' definition. |
 | [PE:04 Performance monitoring](https://learn.microsoft.com/en-us/azure/well-architected/performance-efficiency/monitoring) | recommendations | 0.86 | The summary explicitly states this article maps to a specific Performance Efficiency checklist recommendation and describes concrete design strategies for implementing multi-layer performance measurement (latency, throughput, resource behavior). That aligns with detailed implementation guidance behind a checklist item, which matches the 'recommendations' definition. It is not just conceptual; it provides how-to strategies tied to a checklist recommendation. |
 | [SE:08 Hardening resources](https://learn.microsoft.com/en-us/azure/well-architected/security/harden-resources) | recommendations | 0.86 | Explicitly tied to a Security checklist recommendation and provides detailed, prescriptive guidance on hardening resources (localized controls, repeated-attack resilience). This is concrete how-to implementation advice behind checklist items, not just principles. |
 | [SE:11 Testing and validation](https://learn.microsoft.com/en-us/azure/well-architected/security/test) | recommendations | 0.86 | Tied to a Security checklist recommendation and describes concrete tools, methodologies, and testing cadences. This is prescriptive how-to guidance rather than high-level principles. |

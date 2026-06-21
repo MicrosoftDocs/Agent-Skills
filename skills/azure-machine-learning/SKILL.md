@@ -1,9 +1,9 @@
 ---
 name: azure-machine-learning
-description: Expert knowledge for Azure Machine Learning development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building Azure ML pipelines, AutoML jobs, online/batch endpoints, Prompt Flow apps, or MLOps/CI-CD, and other Azure Machine Learning related development tasks. Not for Azure Databricks (use azure-databricks), Azure Synapse Analytics (use azure-synapse-analytics), Azure Data Science Virtual Machines (use azure-data-science-vm), Azure HDInsight (use azure-hdinsight).
+description: Expert knowledge for Azure Machine Learning development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Azure ML workspaces, compute clusters, pipelines, AutoML, online/batch endpoints, or Prompt Flow, and other Azure Machine Learning related development tasks. Not for Azure Databricks (use azure-databricks), Azure Synapse Analytics (use azure-synapse-analytics), Azure HDInsight (use azure-hdinsight), Azure Data Science Virtual Machines (use azure-data-science-vm).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-14"
+  generated_at: "2026-06-21"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Machine Learning Skill
@@ -30,9 +30,9 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L125-L131 | Designing Azure ML inference architectures: choosing endpoint types, planning real-time online endpoints, and structuring data movement and multistep pipeline components. |
 | Limits & Quotas | L132-L140 | Info on Azure ML regional/sovereign availability, quotas and service limits, supported VM SKUs, and how to plan deployment capacity within those constraints |
 | Security | L141-L194 | Securing Azure ML: encryption, keys, identity/RBAC, auth, secrets, network isolation/VNets, data exfil prevention, policy compliance, and securing endpoints, training, RAG, and prompt flows. |
-| Configuration | L195-L454 | Configuring Azure ML components, pipelines, compute, networking, monitoring, AutoML, YAML schemas, and data/model management for training, deployment, and responsible/production ML. |
-| Integrations & Coding Patterns | L455-L512 | Patterns and how-tos for wiring Azure ML to data/compute (Synapse, Databricks, Fabric, ADF), using MLflow, REST/HTTP, Spark, Prompt Flow, and integrating LLMs, events, and external apps. |
-| Deployment | L513-L553 | Deploying and operationalizing models and prompt flows: online/batch endpoints, CI/CD (GitHub/Azure DevOps), blue‑green rollouts, MLOps/GenAIOps, pipelines, and cross-workspace consumption. |
+| Configuration | L195-L455 | How to configure Azure ML components, compute, networking, data, monitoring, AutoML, Prompt Flow, and all CLI/YAML schemas for jobs, deployments, feature stores, and connections. |
+| Integrations & Coding Patterns | L456-L513 | Patterns and how-tos for wiring Azure ML to data/compute (Synapse, Databricks, Fabric, ADF), using MLflow, REST/HTTP, Spark, Prompt Flow, and integrating LLMs, events, and external apps. |
+| Deployment | L514-L555 | Deploying and operationalizing models and pipelines on Azure ML (online/batch endpoints, AKS/ACI, registries), plus CI/CD, blue‑green rollouts, and MLOps/GenAIOps with GitHub/DevOps and prompt flow. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -343,6 +343,7 @@ This skill requires **network access** to fetch documentation content:
 | Manage component and pipeline inputs/outputs in Azure ML | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-manage-inputs-outputs-pipeline?view=azureml-api-2 |
 | Create and manage Azure ML Kubernetes instance types | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-manage-kubernetes-instance-types?view=azureml-api-2 |
 | Administer and export Azure ML labeling projects | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-manage-labeling-projects?view=azureml-api-2 |
+| Configure and publish Azure ML deployment templates | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-manage-models-deployment-templates?view=azureml-api-2 |
 | Manage Azure ML model registry using MLflow | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-manage-models-mlflow?view=azureml-api-2 |
 | Register and manage models with Azure ML CLI and SDK | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-manage-models?view=azureml-api-2 |
 | Create and manage Azure ML registries | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-manage-registries?view=azureml-api-2 |
@@ -522,6 +523,7 @@ This skill requires **network access** to fetch documentation content:
 | Progressively deploy MLflow models to Azure ML online endpoints | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-deploy-mlflow-models-online-progressive?view=azureml-api-2 |
 | Deploy MLflow models to Azure ML endpoints | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-deploy-mlflow-models?view=azureml-api-2 |
 | Customize batch deployment outputs in Azure ML | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-deploy-model-custom-output?view=azureml-api-2 |
+| Deploy Azure ML registry models using deployment templates | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-deploy-models-deployment-template?view=azureml-api-2 |
 | Deploy catalog models as standard deployments in Azure ML | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-deploy-models-serverless?view=azureml-api-2 |
 | Deploy models to Azure ML managed online endpoints | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-deploy-online-endpoints?view=azureml-api-2 |
 | Deploy models to Azure ML managed online endpoints | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-deploy-online-endpoints?view=azureml-api-2 |

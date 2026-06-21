@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-06-14'
+generated_at: '2026-06-21'
 category_descriptions:
-  security: 'Auth, RBAC, SSH, cert, and key management for AKS Edge/Arc/hybrid: Entra/AD
-    SSO, gMSA, workload identity, etcd encryption, image signing, and security hardening
-    guidance.'
-  configuration: Configuring, networking, storage, scaling, monitoring, and updating
-    AKS Edge/Arc/hybrid clusters, including Windows/Linux nodes, load balancers, GPUs,
-    offline installs, and Azure Arc integration.
+  security: Auth, RBAC, SSH, certs, keys, gMSA, and container security for AKS Edge/Arc/Hybrid,
+    including Entra/AD SSO, workload identity, image signing, and secure node/etcd
+    communication.
+  configuration: 'Configuring and operating AKS Edge/Arc/hybrid clusters: networking,
+    storage, load balancers, autoscaling, monitoring, Arc connectivity, offline/upgrade
+    flows, and Windows/Linux node settings.'
   decision-making: Guidance on choosing AKS Edge/Arc vs cloud/on-prem, supported versions/add-ons,
     monitoring, pricing/licensing, support, and planning migrations or retirement
     of older AKS/Windows Server setups
@@ -31,31 +31,31 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Kubernetes Service Edge Essentials development
   including troubleshooting, best practices, decision making, architecture & design
   patterns, limits & quotas, security, configuration, integrations & coding patterns,
-  and deployment. Use when managing AKS Edge/Arc clusters, Arc onboarding, Windows/GPU
-  nodes, offline installs, or IoT/AI edge workloads, and other Azure Kubernetes Service
-  Edge Essentials related development tasks. Not for Azure Kubernetes Service (AKS)
-  (use azure-kubernetes-service), Azure Stack Edge (use azure-stack-edge), Azure Container
-  Apps (use azure-container-apps), Azure Container Instances (use azure-container-instances).
-use_when: Use when managing AKS Edge/Arc clusters, Arc onboarding, Windows/GPU nodes,
-  offline installs, or IoT/AI edge workloads, and other Azure Kubernetes Service Edge
+  and deployment. Use when managing AKS Edge/Arc clusters, Arc onboarding, IoT/AI
+  edge workloads, TPM/camera access, or OPC UA discovery, and other Azure Kubernetes
+  Service Edge Essentials related development tasks. Not for Azure Kubernetes Service
+  (AKS) (use azure-kubernetes-service), Azure IoT Edge (use azure-iot-edge), Azure
+  Stack Edge (use azure-stack-edge), Azure Container Apps (use azure-container-apps).
+use_when: Use when managing AKS Edge/Arc clusters, Arc onboarding, IoT/AI edge workloads,
+  TPM/camera access, or OPC UA discovery, and other Azure Kubernetes Service Edge
   Essentials related development tasks.
 confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
-  Azure Stack Edge (use azure-stack-edge), Azure Container Apps (use azure-container-apps),
-  Azure Container Instances (use azure-container-instances).
+  Azure IoT Edge (use azure-iot-edge), Azure Stack Edge (use azure-stack-edge), Azure
+  Container Apps (use azure-container-apps).
 ---
 # Azure Kubernetes Service Edge Essentials Crawl Report
 
 ## Summary
 
-- **Total Pages**: 351
-- **Fetched**: 351
+- **Total Pages**: 352
+- **Fetched**: 352
 - **Fetch Failed**: 0
-- **Classified**: 274
+- **Classified**: 275
 - **Unclassified**: 77
 
 ### Incremental Update
 - **New Pages**: 1
-- **Updated Pages**: 1
+- **Updated Pages**: 2
 - **Unchanged**: 349
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-aks-edge-essentials/azure-aks-edge-essentials.csv`
@@ -66,12 +66,12 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 |------|-------|------------|
 | architecture-patterns | 3 | 0.9% |
 | best-practices | 4 | 1.1% |
-| configuration | 81 | 23.1% |
+| configuration | 81 | 23.0% |
 | decision-making | 9 | 2.6% |
 | deployment | 33 | 9.4% |
-| integrations | 56 | 16.0% |
+| integrations | 56 | 15.9% |
 | limits-quotas | 11 | 3.1% |
-| security | 30 | 8.5% |
+| security | 31 | 8.8% |
 | troubleshooting | 47 | 13.4% |
 | *(Unclassified)* | 77 | 21.9% |
 
@@ -79,12 +79,14 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 
 ### New Pages
 
-- [Create a cluster - ARM template](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-bare-metal-create-cluster-arm-template)
+- [Use Azure RBAC](https://learn.microsoft.com/en-us/azure/aks/aksarc/multi-rack/use-azure-rbac)
 
 ### Updated Pages
 
 - [Create a cluster - Azure portal](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-bare-metal-create-cluster-portal)
-  - Updated: 2026-06-04T22:04:00.000Z → 2026-06-11T17:12:00.000Z
+  - Updated: 2026-06-11T17:12:00.000Z → 2026-06-19T22:04:00.000Z
+- [Create a cluster - Bicep](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-bare-metal-create-cluster-bicep)
+  - Updated: 2026-06-04T22:04:00.000Z → 2026-06-19T22:04:00.000Z
 
 ## Classified Pages
 
@@ -165,6 +167,7 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Deleted AKS Arc cluster still visible on Azure portal](https://learn.microsoft.com/en-us/azure/aks/aksarc/deleted-cluster-visible) | troubleshooting | 0.78 | Explains why a deleted cluster remains as a connectedCluster resource and how to clean it up; symptom→cause→solution. |
 | [Deploy Azure IoT Operations](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-edge-howto-deploy-azure-iot) | integrations | 0.78 | Describes a script and required cluster configuration to run Azure IoT Operations on AKS Edge; includes product-specific integration parameters and constraints. |
 | [Other](https://learn.microsoft.com/en-us/azure/aks/aksarc/known-issues) | troubleshooting | 0.78 | A general 'known issues' page for AKS on Windows Server that aggregates specific problems and their workarounds. These are concrete, product-specific troubleshooting cases rather than conceptual guidance. |
+| [Use Azure RBAC](https://learn.microsoft.com/en-us/azure/aks/aksarc/multi-rack/use-azure-rbac) | security | 0.78 | The page is focused on enabling and using Azure RBAC with Microsoft Entra ID to authorize Kubernetes API requests for AKS on Azure Local multi-rack deployments. This is product-specific security configuration, likely including concrete RBAC role names, scope details, and how they map to kubeconfig access and kubectl permissions, which qualifies as expert security configuration knowledge rather than a generic overview. |
 | [Use diagnostic checker](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-arc-diagnostic-checker) | troubleshooting | 0.78 | Tool-based troubleshooting for cluster creation failures with specific checks, outputs, and remediation steps unique to AKS Arc. |
 | [Access TPM secrets](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-edge-howto-access-tpm) | integrations | 0.76 | Shows how to enable TPM passthrough and includes sample C# code and configuration to use host TPM from the VM; this is a concrete integration pattern. |
 | [Configure Workload Identity](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-edge-workload-identity) | security | 0.76 | How-to configuration for workload identity on AKS Edge Essentials/Arc-enabled clusters, likely including Azure AD/Entra app registrations, federated credential setup, Kubernetes service account annotations, and product-specific identity/security settings. This is concrete security configuration rather than conceptual overview. |
@@ -230,6 +233,7 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Connect to Windows or Linux worker nodes with SSH](https://learn.microsoft.com/en-us/azure/aks/aksarc/ssh-connect-to-windows-and-linux-worker-nodes) | security | 0.70 | Explains secure SSH access to nodes, including commands and node IP usage; product-specific operational security pattern. |
 | [Connect to nodes with SSH](https://learn.microsoft.com/en-us/azure/aks/aksarc/ssh-connection) | security | 0.70 | Details SSH access patterns, IP usage, and security considerations specific to AKS on Windows Server worker nodes. |
 | [Create a cluster - ARM template](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-bare-metal-create-cluster-arm-template) | configuration | 0.70 | ARM template-based cluster creation typically documents specific resource properties, parameter names, allowed values, and sometimes defaults for AKS on bare metal. These are product-specific configuration details that qualify as expert knowledge beyond generic ARM usage. |
+| [Create a cluster - Bicep](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-bare-metal-create-cluster-bicep) | configuration | 0.70 | A Bicep-based cluster creation article typically includes resource definitions, parameter names, allowed values, and sometimes defaults for AKS on bare metal, which are product-specific configuration details. This aligns with the configuration sub-skill, as it likely documents specific template parameters and their usage rather than just conceptual guidance. |
 | [Create logical networks](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-networks) | configuration | 0.70 | Describes creating logical networks and IP assignment for AKS clusters; likely includes specific network resource names and configuration parameters. |
 | [Deploy a container image from Azure Container Registry](https://learn.microsoft.com/en-us/azure/aks/aksarc/deploy-azure-container-registry) | integrations | 0.70 | Describes integration between ACR and on-prem AKS; likely includes registry configuration, authentication parameters, and deployment patterns specific to this scenario. |
 | [Deploy an AI model with the AI toolchain operator](https://learn.microsoft.com/en-us/azure/aks/aksarc/deploy-ai-model) | integrations | 0.70 | Integration with Kubernetes AI toolchain operator; article likely includes CRD fields, extension parameters, and model deployment configs unique to this integration. |
@@ -323,7 +327,6 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Configure SSH keys for a cluster](https://learn.microsoft.com/en-us/azure/aks/aksarc/configure-ssh-keys) | security | 0.65 | Describes SSH key requirements and configuration for AKS Arc; includes specific parameters for key usage during cluster deployment, which are security-related. |
 | [Connect to Azure Arc for Kubernetes](https://learn.microsoft.com/en-us/azure/aks/aksarc/connect-to-arc) | integrations | 0.65 | Describes attaching clusters to Azure Arc with agents; typically involves specific agent configuration, resource IDs, and parameters—product-specific integration pattern. |
 | [Connect to your cluster](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-bare-metal-connect-to-cluster) | integrations | 0.65 | Describes connecting to AKS on bare metal using Azure Arc proxy and kubectl, which likely includes specific connection commands, endpoint URLs, and configuration flags unique to this integration path. This is a product-specific integration/coding pattern rather than a generic tutorial. |
-| [Create a cluster - Bicep](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-bare-metal-create-cluster-bicep) | configuration | 0.65 | Bicep-based cluster creation articles typically include resource definitions with specific property names, allowed values, and sometimes defaults (e.g., SKU names, node counts, feature flags). These are product-specific configuration parameters for AKS on bare metal, aligning with the configuration sub-skill. |
 | [Deploy SDN](https://learn.microsoft.com/en-us/azure/aks/aksarc/software-defined-networking) | architecture-patterns | 0.65 | Describes specific architecture for deploying AKS infrastructure and workloads on SDN VNet with SDN Software Load Balancer—product-specific networking pattern. |
 | [Deploy application clusters on different SDN virtual networks](https://learn.microsoft.com/en-us/azure/aks/aksarc/deploy-target-clusters-virtual-networks) | architecture-patterns | 0.65 | Explains pattern of placing management and target clusters on different SDN VNets for security and scalability—service-specific architecture guidance. |
 | [Disable-AksHciOfflinedownload](https://learn.microsoft.com/en-us/azure/aks/aksarc/reference/ps/disable-akshciofflinedownload) | deployment | 0.65 | Cmdlet controls offline image download behavior, a deployment/distribution configuration specific to AKS hybrid. |
@@ -423,7 +426,7 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Azure Hybrid Benefit](https://learn.microsoft.com/en-us/azure/aks/aksarc/azure-hybrid-benefit-22h2) | 0.30 | High-level Azure Hybrid Benefit description; summary doesn’t show SKU mappings, percentages, or concrete licensing rules. |
 | [Cluster architecture](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-vmware-cluster-architecture) | 0.30 | Cluster architecture overview; mostly conceptual Kubernetes components, not product-specific decision matrices or limits. |
 | [Cluster architecture](https://learn.microsoft.com/en-us/azure/aks/aksarc/multi-rack/cluster-architecture) | 0.30 | Cluster architecture description appears conceptual (how clusters are deployed, managed, and connected) without clear indication of configuration tables, limits, or decision matrices. |
-| [Create a cluster - Azure portal](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-bare-metal-create-cluster-portal) | 0.30 | Step-by-step portal-based cluster creation tutorial; likely focuses on UI flows and basic parameters without detailed configuration tables, limits, or product-specific best practices beyond generic deployment steps. |
+| [Create a cluster - Azure portal](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-bare-metal-create-cluster-portal) | 0.30 | From the summary, this is a step-by-step portal-based creation guide for AKS on bare metal. It does not indicate presence of configuration parameter tables, limits, error-code mappings, or decision matrices; it appears to be a procedural tutorial rather than reference-style expert knowledge. |
 | [Deploy an AKS cluster](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-vmware-quickstart-deploy) | 0.30 | Quickstart deployment tutorial; likely step-by-step commands without matrices, limits, or advanced configuration tables. |
 | [Deploy application](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-edge-howto-deploy-app) | 0.30 | Generic application deployment to Kubernetes; likely uses standard kubectl manifests without AKS Edge–specific configuration matrices. |
 | [Deploy applications with Helm](https://learn.microsoft.com/en-us/azure/aks/aksarc/helm-deploy) | 0.30 | Helm deployment tutorial; summary doesn’t indicate AKS Arc–specific configuration parameters or constraints beyond generic Helm usage. |

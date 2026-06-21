@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-17'
+generated_at: '2026-06-21'
 category_descriptions:
   limits-quotas: Storage quotas, free allocation, and per-package size/count limits
     in Azure Artifacts, plus how to monitor, manage, and publish packages within those
@@ -42,8 +42,8 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 73
+- **Updated Pages**: 1
+- **Unchanged**: 72
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-artifacts/azure-artifacts.csv`
 
@@ -61,6 +61,11 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 | *(Unclassified)* | 17 | 23.3% |
 
 ## Changes
+
+### Updated Pages
+
+- [Cargo](https://learn.microsoft.com/en-us/azure/devops/artifacts/get-started-cargo?view=azure-devops)
+  - Updated: 2025-03-28T20:53:00.000Z → 2026-06-20T01:06:00.000Z
 
 ## Classified Pages
 
@@ -97,7 +102,7 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 | [Use packages from JitPack](https://learn.microsoft.com/en-us/azure/devops/artifacts/maven/jitpack-upstream?view=azure-devops) | integrations | 0.70 | Integration-focused article for JitPack; includes Azure Artifacts feed settings and Maven/Gradle configuration details. |
 | [Use packages from Maven Central](https://learn.microsoft.com/en-us/azure/devops/artifacts/maven/upstream-sources?view=azure-devops) | integrations | 0.70 | Covers Maven settings for using Maven Central through Azure Artifacts; includes repository IDs, URLs, and snapshot behavior specific to the service. |
 | [Use packages from the npm registry](https://learn.microsoft.com/en-us/azure/devops/artifacts/npm/upstream-sources?view=azure-devops) | integrations | 0.70 | Documents npmrc configuration, registry URLs, and scope handling for Azure Artifacts; these are product-specific integration details. |
-| [Cargo](https://learn.microsoft.com/en-us/azure/devops/artifacts/get-started-cargo?view=azure-devops) | integrations | 0.65 | Get-started article that configures Cargo to use Azure Artifacts; includes registry configuration and Azure-specific URLs. |
+| [Cargo](https://learn.microsoft.com/en-us/azure/devops/artifacts/get-started-cargo?view=azure-devops) | integrations | 0.68 | Quickstart likely includes Azure Artifacts–specific Cargo configuration (registry URLs, auth setup, feed endpoints) and concrete parameter values unique to integrating Cargo with Azure DevOps feeds, which qualifies as product-specific integration and coding patterns rather than a generic tutorial. |
 | [Debug with Visual Studio](https://learn.microsoft.com/en-us/azure/devops/artifacts/symbols/debug-with-symbols-visual-studio?view=azure-devops) | integrations | 0.65 | Shows how to configure Visual Studio symbol settings to use Azure Artifacts symbol server; includes server URLs and configuration options unique to this integration. |
 | [Debug with WinDbg](https://learn.microsoft.com/en-us/azure/devops/artifacts/symbols/debug-with-symbols-windbg?view=azure-devops) | integrations | 0.65 | Explains configuring WinDbg to consume symbols from Azure Artifacts; includes .sympath settings and server URLs specific to Azure Artifacts. |
 | [Delete and recover packages](https://learn.microsoft.com/en-us/azure/devops/artifacts/how-to/delete-and-recover-packages?view=azure-devops) | configuration | 0.65 | Covers retention policies and recycle bin behavior, which typically involve specific settings and ranges for package retention. |

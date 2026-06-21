@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-14'
+generated_at: '2026-06-21'
 category_descriptions:
   integrations: 'Using GeoCatalog/STAC with code and tools: ingest and bulk-load data,
     build apps, create collections/items, and integrate with QGIS, ArcGIS Pro, Azure
@@ -46,10 +46,10 @@ confusable_not_for: Not for Azure Maps (use azure-maps), Azure Open Datasets (us
 - **Unclassified**: 11
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 0
-- **Unchanged**: 44
-- **Deleted Pages**: 2
+- **New Pages**: 1
+- **Updated Pages**: 3
+- **Unchanged**: 42
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-planetary-computer-pro/azure-planetary-computer-pro.csv`
 
 ## Classification Statistics
@@ -69,13 +69,20 @@ confusable_not_for: Not for Azure Maps (use azure-maps), Azure Open Datasets (us
 
 ### New Pages
 
-- [Manage access for Microsoft Planetary Computer Pro](https://learn.microsoft.com/en-us/azure/planetary-computer/manage-access)
-- [Using managed identities with GeoCatalog resource](https://learn.microsoft.com/en-us/azure/planetary-computer/assign-managed-identity-geocatalog-resource)
+- [Service usage metrics](https://learn.microsoft.com/en-us/azure/planetary-computer/service-usage-meters)
+
+### Updated Pages
+
+- [Get Started with data cubes](https://learn.microsoft.com/en-us/azure/planetary-computer/data-cube-quickstart)
+  - Updated: 2026-04-01T06:12:00.000Z → 2026-06-19T22:18:00.000Z
+- [What's new in Microsoft Planetary Computer Pro](https://learn.microsoft.com/en-us/azure/planetary-computer/whats-new)
+  - Updated: 2025-05-19T15:23:00.000Z → 2026-06-19T22:18:00.000Z
+- [STAC overview](https://learn.microsoft.com/en-us/azure/planetary-computer/stac-overview)
+  - Updated: 2025-12-01T23:10:00.000Z → 2026-06-19T22:18:00.000Z
 
 ### Deleted Pages
 
-- ~~Assign a user-assigned managed identity to a GeoCatalog resource~~ (https://learn.microsoft.com/en-us/azure/planetary-computer/assign-managed-identity-geocatalog-resource)
-- ~~Manage access~~ (https://learn.microsoft.com/en-us/azure/planetary-computer/manage-access)
+- ~~Service usage meters~~ (https://learn.microsoft.com/en-us/azure/planetary-computer/service-usage-meters)
 
 ## Classified Pages
 
@@ -122,13 +129,13 @@ confusable_not_for: Not for Azure Maps (use azure-maps), Azure Open Datasets (us
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
 | [Ingestion overview](https://learn.microsoft.com/en-us/azure/planetary-computer/ingestion-overview) | 0.30 | Ingestion fundamentals overview with a diagram; conceptual description of ingestion pipeline rather than detailed configs or limits. |
-| [Service usage meters](https://learn.microsoft.com/en-us/azure/planetary-computer/service-usage-meters) | 0.30 | Explains usage meters and pricing model conceptually; summary doesn’t indicate concrete meter names, units, or tier tables. |
+| [Service usage metrics](https://learn.microsoft.com/en-us/azure/planetary-computer/service-usage-meters) | 0.30 | Describes usage metrics and pay-as-you-go model; likely focuses on billing dimensions rather than hard service limits, configuration parameters, or decision matrices. Without explicit mention of numeric limits or config tables, it doesn't meet any expert-knowledge sub-skill criteria. |
 | [Use the explorer](https://learn.microsoft.com/en-us/azure/planetary-computer/use-explorer) | 0.30 | Quickstart on using Explorer UI; likely procedural navigation without deep configuration or troubleshooting reference. |
 | [Create a STAC collection (Web Interface)](https://learn.microsoft.com/en-us/azure/planetary-computer/create-collection-web-interface) | 0.25 | Quickstart for creating collections via web UI; likely procedural without deep configuration reference. |
 | [Ingest data using the web interface](https://learn.microsoft.com/en-us/azure/planetary-computer/ingest-via-web-interface) | 0.25 | Quickstart for ingesting data via web interface; likely UI-driven steps without detailed config references. |
 | [Data cube overview](https://learn.microsoft.com/en-us/azure/planetary-computer/data-cube-overview) | 0.20 | Overview of data cube concepts and enrichment; described as explaining concepts and enabling/disabling enrichment. This is primarily conceptual and high-level feature explanation without clear indication of detailed configuration tables, limits, or error mappings. |
+| [Get Started with data cubes](https://learn.microsoft.com/en-us/azure/planetary-computer/data-cube-quickstart) | 0.20 | Quickstart for working with data cubes in Planetary Computer Pro; appears to be a step-by-step usage guide without detailed limits, configuration tables, error-code mappings, or decision matrices that meet the expert-knowledge criteria. |
 | [Get started with Microsoft Planetary Computer Pro](https://learn.microsoft.com/en-us/azure/planetary-computer/get-started-planetary-computer) | 0.20 | Getting started tutorial; likely step-by-step but not a reference of configs, limits, or error codes. |
 | [What is Microsoft Planetary Computer Pro?](https://learn.microsoft.com/en-us/azure/planetary-computer/microsoft-planetary-computer-pro-overview) | 0.20 | High-level product overview of Planetary Computer Pro and GeoCatalog; no detailed limits, configs, or error mappings. |
-| [What's new in Microsoft Planetary Computer Pro](https://learn.microsoft.com/en-us/azure/planetary-computer/whats-new) | 0.20 | What's new/change log style summary; no concrete limits, configs, or troubleshooting details indicated. |
-| [STAC overview](https://learn.microsoft.com/en-us/azure/planetary-computer/stac-overview) | 0.10 | Overview of STAC and how it’s used; conceptual, not configuration- or error-focused. |
-| [Get Started with data cubes](https://learn.microsoft.com/en-us/azure/planetary-computer/data-cube-quickstart) | - | Quickstart for working with data cubes in Planetary Computer Pro; primarily a how-to/tutorial without detailed limits, configuration tables, error-code mappings, or other expert-only reference content. |
+| [STAC overview](https://learn.microsoft.com/en-us/azure/planetary-computer/stac-overview) | 0.10 | Conceptual overview of STAC and how Planetary Computer Pro uses it; no indication of numeric limits, configuration parameter tables, or error-code-based troubleshooting. |
+| [What's new in Microsoft Planetary Computer Pro](https://learn.microsoft.com/en-us/azure/planetary-computer/whats-new) | 0.10 | What's-new/update page; likely lists new features and changes but not structured limits, configuration tables, or troubleshooting mappings. Primarily informational/marketing-style updates rather than expert reference data. |

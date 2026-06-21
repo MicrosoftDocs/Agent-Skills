@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-17'
+generated_at: '2026-06-21'
 category_descriptions:
   decision-making: Guidance on selecting Azure Video Indexer account types and designing
     multi-tenant setups, including management, isolation, and scaling strategies.
@@ -45,8 +45,8 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI Cust
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 67
+- **Updated Pages**: 2
+- **Unchanged**: 65
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-video-indexer/azure-video-indexer.csv`
 
@@ -64,6 +64,13 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI Cust
 | *(Unclassified)* | 43 | 64.2% |
 
 ## Changes
+
+### Updated Pages
+
+- [Azure AI Video Indexer enabled by Azure Arc](https://learn.microsoft.com/en-us/azure/azure-video-indexer/arc/)
+  - Updated: 2026-04-30T22:11:00Z → 2026-06-16T17:09:00Z
+- [Azure AI Video Indexer documentation](https://learn.microsoft.com/en-us/azure/azure-video-indexer/cloud/)
+  - Updated: 2026-04-30T22:11:00Z → 2026-06-16T17:09:00Z
 
 ## Classified Pages
 
@@ -130,14 +137,14 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI Cust
 | [Switch tenants](https://learn.microsoft.com/en-us/azure/azure-video-indexer/switch-tenants-portal) | 0.30 | Explains how to switch tenants in the portal; mostly UI navigation without detailed configuration parameters, limits, or troubleshooting mappings. |
 | [Translate transcripts](https://learn.microsoft.com/en-us/azure/azure-video-indexer/transcription-translation-lid-insight) | 0.30 | Appears to be a feature/how-to description for transcription and translation; summary doesn't indicate numeric limits, config tables, error codes, or other expert-only details. |
 | [Upload and index media](https://learn.microsoft.com/en-us/azure/azure-video-indexer/upload-index-media) | 0.30 | The article is described as a how-to for uploading and indexing media via the website using advanced settings, but the summary does not indicate detailed configuration tables, limits, or product-specific parameters. It appears more like a procedural tutorial than expert reference content. |
+| [Azure AI Video Indexer enabled by Azure Arc](https://learn.microsoft.com/en-us/azure/azure-video-indexer/arc/) | 0.20 | The page description indicates a high-level overview of Azure AI Video Indexer enabled by Azure Arc, without evidence of numeric limits, configuration tables, error-code-based troubleshooting, or decision matrices. It appears to be conceptual/introductory documentation rather than detailed expert guidance. |
 | [Bring your own model](https://learn.microsoft.com/en-us/azure/azure-video-indexer/bring-your-own-model-overview) | 0.20 | Bring-your-own-model overview; summary indicates conceptual description, not detailed configuration parameters or quotas. |
 | [Create prompts](https://learn.microsoft.com/en-us/azure/azure-video-indexer/prompt-overview) | 0.20 | LLM prompts overview for Video Indexer; sounds like conceptual integration description without detailed parameters, limits, or decision matrices. |
 | [Insights overview](https://learn.microsoft.com/en-us/azure/azure-video-indexer/insights-overview) | 0.20 | Insights overview with links; conceptual description of insight types without detailed configs. |
 | [Try web portal](https://learn.microsoft.com/en-us/azure/azure-video-indexer/try-vi-web-portal-quickstart) | 0.20 | Quickstart UI walkthrough; no config tables, limits, or product-specific troubleshooting. |
 | [View closed captions](https://learn.microsoft.com/en-us/azure/azure-video-indexer/view-closed-captions) | 0.20 | How-to UI usage for viewing captions; no product-specific limits, configs, or error mappings. |
 | [What is Azure AI Video Indexer (VI)?](https://learn.microsoft.com/en-us/azure/azure-video-indexer/video-indexer-overview) | 0.20 | High-level service overview without numeric limits, configuration tables, or detailed API/error references. |
-| [Azure AI Video Indexer documentation](https://learn.microsoft.com/en-us/azure/azure-video-indexer/cloud/) | 0.10 | High-level product overview/landing page without detailed limits, configs, or error mappings. |
-| [Azure AI Video Indexer enabled by Azure Arc](https://learn.microsoft.com/en-us/azure/azure-video-indexer/arc/) | 0.10 | Arc-enabled Video Indexer documentation landing page; high-level description without specific expert configuration, limits, or troubleshooting content. |
+| [Azure AI Video Indexer documentation](https://learn.microsoft.com/en-us/azure/azure-video-indexer/cloud/) | 0.10 | Landing/overview page for Azure AI Video Indexer; describes what the service is and high-level capabilities without specific limits, configuration parameters, error codes, or decision matrices. |
 | [Connect to other AI models](https://learn.microsoft.com/en-us/azure/azure-video-indexer/generative_ai_with_vi) | 0.10 | High-level discussion of generative AI with Video Indexer; likely conceptual/marketing content rather than detailed expert configuration or limits. |
 | [Release notes](https://learn.microsoft.com/en-us/azure/azure-video-indexer/release-notes) | 0.10 | Release notes index/landing page; summary indicates it just links to updates rather than containing detailed technical guidance itself. |
 | [Summaries overview](https://learn.microsoft.com/en-us/azure/azure-video-indexer/text-summarization-overview) | 0.10 | Text summarization overview; likely conceptual and marketing-style without detailed configs, limits, or troubleshooting mappings. |

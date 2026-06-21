@@ -37,8 +37,8 @@ confusable_not_for: Not for Azure AI Anomaly Detector (use azure-anomaly-detecto
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 7
-- **Unchanged**: 12
+- **Updated Pages**: 0
+- **Unchanged**: 19
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-metrics-advisor/azure-metrics-advisor.csv`
 
@@ -54,23 +54,6 @@ confusable_not_for: Not for Azure AI Anomaly Detector (use azure-anomaly-detecto
 | *(Unclassified)* | 12 | 63.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [What is Metrics Advisor?](https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/overview)
-  - Updated: 2025-06-13T05:29:00.000Z → 2026-06-05T22:11:00.000Z
-- [What's new?](https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/whats-new)
-  - Updated: 2026-02-24T23:08:00.000Z → 2026-06-11T22:32:00.000Z
-- [Manage data feeds](https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/how-tos/manage-data-feeds)
-  - Updated: 2025-06-13T05:29:00.000Z → 2026-06-05T22:11:00.000Z
-- [Configure alerts and get notifications using a hook](https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/how-tos/alerts)
-  - Updated: 2026-04-09T17:17:00.000Z → 2026-06-05T22:11:00.000Z
-- [Build a metrics graph](https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/how-tos/metrics-graph)
-  - Updated: 2025-06-13T05:29:00.000Z → 2026-06-05T22:11:00.000Z
-- [Use customer-managed keys](https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/encryption)
-  - Updated: 2025-06-13T05:29:00.000Z → 2026-06-05T22:11:00.000Z
-- [Metrics Advisor key terms](https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/glossary)
-  - Updated: 2025-06-12T08:00:00.000Z → 2026-06-05T22:11:00.000Z
 
 ## Classified Pages
 

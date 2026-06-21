@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Role-based access control (use azure-rbac), Az
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 6
-- **Unchanged**: 283
+- **Updated Pages**: 0
+- **Unchanged**: 289
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-active-directory-b2c/azure-active-directory-b2c.csv`
 
@@ -76,21 +76,6 @@ confusable_not_for: Not for Azure Role-based access control (use azure-rbac), Az
 | *(Unclassified)* | 33 | 11.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [SPA authentication documentation](https://learn.microsoft.com/en-us/azure/active-directory-b2c/index-spa)
-  - Updated: 2024-10-08T05:34:00Z → 2026-06-11T06:13:00Z
-- [Web app authentication documentation](https://learn.microsoft.com/en-us/azure/active-directory-b2c/index-web-app)
-  - Updated: 2024-10-08T05:34:00Z → 2026-06-11T06:13:00Z
-- [Web API authentication documentation](https://learn.microsoft.com/en-us/azure/active-directory-b2c/index-web-api)
-  - Updated: 2024-10-08T05:34:00Z → 2026-06-11T06:13:00Z
-- [Mobile app authentication documentation](https://learn.microsoft.com/en-us/azure/active-directory-b2c/index-mobile)
-  - Updated: 2025-03-13T11:18:00Z → 2026-06-11T06:13:00Z
-- [Desktop app authentication documentation](https://learn.microsoft.com/en-us/azure/active-directory-b2c/index-desktop)
-  - Updated: 2024-10-08T05:34:00Z → 2026-06-11T06:13:00Z
-- [Frequently asked questions](https://learn.microsoft.com/en-us/azure/active-directory-b2c/faq)
-  - Updated: 2026-03-16T11:10:00.000Z → 2026-06-11T06:13:00.000Z
 
 ## Classified Pages
 

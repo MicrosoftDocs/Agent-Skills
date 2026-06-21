@@ -1,9 +1,9 @@
 ---
 name: microsoft-foundry-classic
-description: Expert knowledge for Microsoft Foundry Classic (aka Azure AI Foundry classic) development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building Foundry agents, configuring Azure OpenAI deployments, RAG/search, model routing, or secure VNets/Private Link, and other Microsoft Foundry Classic related development tasks. Not for Microsoft Foundry (use microsoft-foundry), Microsoft Foundry Local (use microsoft-foundry-local), Microsoft Foundry Tools (use microsoft-foundry-tools).
+description: Expert knowledge for Microsoft Foundry Classic (aka Azure AI Foundry classic) development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building Foundry agents, configuring RAG/search, using tools (Functions/OpenAPI/MCP), routing models, or deploying hubs, and other Microsoft Foundry Classic related development tasks. Not for Microsoft Foundry (use microsoft-foundry), Microsoft Foundry Local (use microsoft-foundry-local), Microsoft Foundry Tools (use microsoft-foundry-tools).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-14"
+  generated_at: "2026-06-21"
   generator: "docs2skills/1.0.0"
 ---
 # Microsoft Foundry Classic Skill
@@ -28,11 +28,11 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L47-L61 | Best practices for designing system/safety prompts, fine-tuning and using GPT/DeepSeek models, optimizing latency/throughput, and evaluating/operating Foundry chat apps in production |
 | Decision Making | L62-L90 | Guidance on choosing models, regions, deployments, billing, and lifecycle strategies for Foundry and Azure OpenAI, including migration, PTU sizing, and cost/performance tradeoffs. |
 | Architecture & Design Patterns | L91-L99 | Designing multi-agent architectures, configuring Foundry Agent Service for resilience, and understanding model router behavior, failover, and disaster recovery strategies. |
-| Limits & Quotas | L100-L115 | Quotas, rate limits, and throughput for Foundry and Azure OpenAI (agents, models, Claude, regions), plus how to view, manage, and request or increase deployment capacity. |
+| Limits & Quotas | L100-L115 | Quotas, rate limits, and capacity for Foundry and Azure OpenAI (agents, models, deployments, regions), plus how to monitor, compare, request, and increase these limits. |
 | Security | L116-L162 | Security, privacy, and compliance for Foundry: auth/RBAC, encryption and CMK, network isolation (VNets, Private Link, perimeters), Azure Policy guardrails, content filters, and data handling for models and tools. |
 | Configuration | L163-L215 | Configuring, monitoring, and evaluating Foundry Classic/Models and Azure OpenAI resources, including agents, networking, storage, compute, RAG, safety, tracing, and continuous quality monitoring. |
-| Integrations & Coding Patterns | L216-L336 | Patterns and code to integrate Foundry and Azure OpenAI with tools, data sources, SDKs, search/grounding, function calling, realtime/audio, fine-tuning, and external services. |
-| Deployment | L337-L359 | Deploying Foundry hubs/models (CLI, portal, Bicep, Terraform), managed/serverless endpoints, region/feature availability, and integrating deployments/evaluations with DevOps and GitHub. |
+| Integrations & Coding Patterns | L216-L335 | Integrating Foundry and Azure OpenAI with external data, tools, and SDKs: RAG with Search/SharePoint/files, tools (Functions, OpenAPI, MCP, browser, code), model routing, fine-tuning, realtime, and app frameworks. |
+| Deployment | L336-L357 | Deploying Foundry hubs/models (CLI, portal, Bicep, Terraform), managed/serverless endpoints, region/feature availability, and integrating deployments/evaluations with DevOps and GitHub. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -101,7 +101,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Review quotas and limits for Foundry Agent Service | https://learn.microsoft.com/en-us/azure/foundry-classic/agents/quotas-limits |
-| Evaluate Foundry (classic) rate limits and region support | https://learn.microsoft.com/en-us/azure/foundry-classic/concepts/evaluation-regions-limits-virtual-network |
+| Evaluate Foundry classic with regional limits and quotas | https://learn.microsoft.com/en-us/azure/foundry-classic/concepts/evaluation-regions-limits-virtual-network |
 | Select and compare Claude models in Microsoft Foundry | https://learn.microsoft.com/en-us/azure/foundry-classic/foundry-models/concepts/claude-models |
 | Reference quotas and limits for Foundry Models | https://learn.microsoft.com/en-us/azure/foundry-classic/foundry-models/quotas-limits |
 | Manage and request quotas for Microsoft Foundry hub resources | https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/hub-quota |
@@ -293,7 +293,6 @@ This skill requires **network access** to fetch documentation content:
 | Migrate Azure OpenAI apps to OpenAI Python v1.x | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/migration |
 | Migrate Azure OpenAI apps to OpenAI JavaScript v4 | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/migration-javascript |
 | Integrate and call the Foundry model router | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/model-router |
-| Use GPT Realtime API for low-latency audio | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/realtime-audio |
 | Connect to GPT Realtime API via SIP | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/realtime-audio-sip |
 | Use Azure OpenAI GPT Realtime via WebRTC | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/realtime-audio-webrtc |
 | Connect to GPT Realtime API via WebSockets | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/realtime-audio-websockets |
@@ -324,10 +323,10 @@ This skill requires **network access** to fetch documentation content:
 | Use Azure OpenAI v1 preview REST API in Foundry | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/reference-preview-latest |
 | Call Azure OpenAI on Azure Search data via API | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/references/azure-search |
 | Use Azure OpenAI with Azure Cosmos DB data APIs | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/references/cosmos-db |
-| Use Azure OpenAI with Elasticsearch data via API | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/references/elasticsearch |
-| Use Azure OpenAI with MongoDB Atlas data APIs | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/references/mongo-db |
+| Integrate Azure OpenAI with Elasticsearch data via API | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/references/elasticsearch |
+| Use Azure OpenAI with MongoDB Atlas via API | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/references/mongo-db |
 | Call Azure OpenAI On Your Data via Python and REST | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/references/on-your-data |
-| Use Azure OpenAI with Pinecone vector data APIs | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/references/pinecone |
+| Integrate Azure OpenAI with Pinecone vector data | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/references/pinecone |
 | Convert text to speech with Azure OpenAI voices | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/text-to-speech-quickstart |
 | Fine-tune gpt-4o-mini on Azure OpenAI in Foundry | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/tutorials/fine-tune |
 | Transcribe speech with Azure OpenAI Whisper | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/whisper-quickstart |
@@ -346,7 +345,6 @@ This skill requires **network access** to fetch documentation content:
 | Provision Microsoft Foundry classic resources with Terraform | https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/create-resource-terraform |
 | Deploy models with managed compute in Foundry | https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/deploy-models-managed |
 | Deploy Hugging Face Hub models to Foundry managed endpoints | https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/deploy-models-managed-hugging-face |
-| Deploy Foundry Models to managed compute pay-as-you-go | https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/deploy-models-managed-pay-go |
 | Deploy models as serverless APIs in Foundry | https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/deploy-models-serverless |
 | Check region availability for serverless models | https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/deploy-models-serverless-availability |
 | Run Foundry evaluations in Azure DevOps pipelines | https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/evaluation-azure-devops |

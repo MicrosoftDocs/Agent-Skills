@@ -1,9 +1,9 @@
 ---
 name: azure-batch
-description: Expert knowledge for Azure Batch development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring Batch pools, autoscale, containers, MPI jobs, Application Insights monitoring, or render workloads, and other Azure Batch related development tasks. Not for Azure Container Instances (use azure-container-instances), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Functions (use azure-functions), Azure HDInsight (use azure-hdinsight).
+description: Expert knowledge for Azure Batch development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring Batch pools/tasks, autoscale, containers/MPI, storage mounts, or CI/CD for HPC/render workloads, and other Azure Batch related development tasks. Not for Azure HDInsight (use azure-hdinsight), Azure Databricks (use azure-databricks), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Virtual Machines (use azure-virtual-machines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-07"
+  generated_at: "2026-06-21"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Batch Skill
@@ -25,14 +25,14 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L37-L43 | Diagnosing and fixing Azure Batch job, task, pool, and node errors, including failure patterns, error codes, and best practices for handling and recovering from failures. |
-| Best Practices | L44-L57 | Guidance on designing efficient, secure, and performant Azure Batch solutions, including scheduling, dependencies, concurrency, output persistence, rendering workloads, and large-scale job/task optimization. |
-| Decision Making | L58-L69 | Guidance on choosing VM sizes, images, Spot and ephemeral disks, and planning/migrating pools (custom images, Compute Gallery, comms model) to optimize Azure Batch performance and cost. |
-| Architecture & Design Patterns | L70-L75 | Architectures and best practices for bursting on-prem render farms to Azure Batch, including storage layout, data movement patterns, and performance-optimized rendering workflows. |
-| Limits & Quotas | L76-L81 | Azure Batch account-level limits, default and adjustable quotas, and how to view, manage, and request quota increases using .NET and the Azure portal. |
-| Security | L82-L100 | Securing Batch accounts and pools: identity (Entra ID, managed identities, RBAC), keys/certs rotation, encryption, private endpoints/network perimeters, Key Vault, and Azure Policy governance. |
-| Configuration | L101-L133 | Configuring Azure Batch pools, nodes, and tasks: autoscale, OS upgrades, networking, storage mounts, containers, diagnostics events, metrics/logs, and secure task/user environments. |
-| Integrations & Coding Patterns | L134-L147 | Client SDKs, CLIs, and patterns for integrating with Azure Batch: managing pools/tasks, containers, MPI, storing task output, and monitoring with Application Insights. |
-| Deployment | L148-L152 | Deploying Azure Batch workloads using Azure Pipelines and CLI templates, including end-to-end job setup, automation, and integration into CI/CD workflows. |
+| Best Practices | L44-L54 | Guidance on tuning Batch performance, scaling large jobs, running concurrent/rendering tasks, securing pools, and using list queries plus job prep/release tasks efficiently. |
+| Decision Making | L55-L67 | Guidance on choosing Batch VM sizes, images, Spot/ephemeral disks, capacity and quotas, cost planning, and migration decisions for pools, images, and communication models. |
+| Architecture & Design Patterns | L68-L73 | Architectural guidance for burst rendering with Azure Batch, including choosing batch/topology patterns and designing storage, caching, and data movement for large render workloads. |
+| Limits & Quotas | L74-L79 | Managing Batch account quotas via .NET and understanding core Azure Batch limits (pools, cores, jobs, tasks) and how to monitor, plan for, and request quota increases. |
+| Security | L80-L96 | Securing Batch accounts and pools: auth with Entra ID/managed identities, keys and disk encryption, RBAC, private endpoints/network perimeters, public access, and Azure Policy governance. |
+| Configuration | L97-L128 | Configuring Batch pools, tasks, networking, scaling, diagnostics, and security: autoscale, OS/cert rotation, VNet/IP, containers, disks, metrics/logs, events, and task runtime settings. |
+| Integrations & Coding Patterns | L129-L144 | Client SDK patterns, task/node APIs, containers, MPI, output persistence, Key Vault, monitoring, and mounting storage/virtual file systems for Azure Batch workloads |
+| Deployment | L145-L149 | Guides for moving Azure Batch accounts across regions with ARM templates and setting up CI/CD pipelines for Batch HPC workloads using Azure Pipelines. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -45,12 +45,9 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Design efficient Azure Batch list queries | https://learn.microsoft.com/en-us/azure/batch/batch-efficient-list-queries |
-| Use job prep and release tasks in Azure Batch | https://learn.microsoft.com/en-us/azure/batch/batch-job-prep-release |
-| Schedule Azure Batch jobs for efficiency and priority | https://learn.microsoft.com/en-us/azure/batch/batch-job-schedule |
+| Use job preparation and release tasks in Azure Batch | https://learn.microsoft.com/en-us/azure/batch/batch-job-prep-release |
 | Run concurrent tasks on Azure Batch nodes | https://learn.microsoft.com/en-us/azure/batch/batch-parallel-node-tasks |
 | Use Azure Batch capabilities for rendering workloads | https://learn.microsoft.com/en-us/azure/batch/batch-rendering-functionality |
-| Configure task dependencies for Azure Batch jobs | https://learn.microsoft.com/en-us/azure/batch/batch-task-dependencies |
-| Persist Azure Batch task and job output data safely | https://learn.microsoft.com/en-us/azure/batch/batch-task-output |
 | Apply performance best practices for Azure Batch | https://learn.microsoft.com/en-us/azure/batch/best-practices |
 | Optimize Azure Batch jobs with large task counts | https://learn.microsoft.com/en-us/azure/batch/large-number-tasks |
 | Apply security best practices to Azure Batch | https://learn.microsoft.com/en-us/azure/batch/security-best-practices |
@@ -58,19 +55,20 @@ This skill requires **network access** to fetch documentation content:
 ### Decision Making
 | Topic | URL |
 |-------|-----|
+| Plan Azure Batch capacity and quota strategy | https://learn.microsoft.com/en-us/azure/batch/batch-capacity-planning |
 | Migrate Batch custom image pools to Compute Gallery | https://learn.microsoft.com/en-us/azure/batch/batch-custom-image-pools-to-azure-compute-gallery-migration-guide |
 | Choose and migrate custom images for Azure Batch pools | https://learn.microsoft.com/en-us/azure/batch/batch-custom-images |
-| Select compute-intensive and GPU VM sizes for Batch | https://learn.microsoft.com/en-us/azure/batch/batch-pool-compute-intensive-sizes |
+| Choose compute-intensive VM sizes for Azure Batch workloads | https://learn.microsoft.com/en-us/azure/batch/batch-pool-compute-intensive-sizes |
 | Choose Azure Batch VM sizes and images | https://learn.microsoft.com/en-us/azure/batch/batch-pool-vm-sizes |
 | Plan and migrate Azure Batch pools to new node communication model | https://learn.microsoft.com/en-us/azure/batch/batch-pools-to-simplified-compute-node-communication-model-migration-guide |
 | Decide when to run Azure Batch workloads on Spot VMs | https://learn.microsoft.com/en-us/azure/batch/batch-spot-vms |
 | Decide when to use ephemeral OS disks in Azure Batch | https://learn.microsoft.com/en-us/azure/batch/create-pool-ephemeral-os-disk |
-| Plan and manage Azure Batch costs effectively | https://learn.microsoft.com/en-us/azure/batch/plan-to-manage-costs |
+| Plan and manage Azure Batch workload costs | https://learn.microsoft.com/en-us/azure/batch/plan-to-manage-costs |
 
 ### Architecture & Design Patterns
 | Topic | URL |
 |-------|-----|
-| Reference architectures for bursting render farms to Azure Batch | https://learn.microsoft.com/en-us/azure/batch/batch-rendering-architectures |
+| Choose Azure architectures for cloud rendering burst | https://learn.microsoft.com/en-us/azure/batch/batch-rendering-architectures |
 | Design storage and data movement for Azure Batch rendering | https://learn.microsoft.com/en-us/azure/batch/batch-rendering-storage-data-movement |
 
 ### Limits & Quotas
@@ -82,25 +80,24 @@ This skill requires **network access** to fetch documentation content:
 ### Security
 | Topic | URL |
 |-------|-----|
-| Rotate shared keys for Azure Batch accounts | https://learn.microsoft.com/en-us/azure/batch/account-key-rotation |
-| Enable automatic certificate rotation in Azure Batch pools | https://learn.microsoft.com/en-us/azure/batch/automatic-certificate-rotation |
+| Rotate Azure Batch account shared keys securely | https://learn.microsoft.com/en-us/azure/batch/account-key-rotation |
 | Authenticate Azure Batch apps with Entra ID | https://learn.microsoft.com/en-us/azure/batch/batch-aad-auth |
 | Secure Azure Batch Management with Entra ID | https://learn.microsoft.com/en-us/azure/batch/batch-aad-auth-management |
 | Encrypt Azure Batch data with customer-managed keys | https://learn.microsoft.com/en-us/azure/batch/batch-customer-managed-key |
-| Configure Azure RBAC roles for Azure Batch | https://learn.microsoft.com/en-us/azure/batch/batch-role-based-access-control |
-| Securely access Azure Key Vault from Batch pools | https://learn.microsoft.com/en-us/azure/batch/credential-access-key-vault |
+| Configure Azure RBAC roles for Azure Batch accounts | https://learn.microsoft.com/en-us/azure/batch/batch-role-based-access-control |
 | Configure disk encryption for Azure Batch pools | https://learn.microsoft.com/en-us/azure/batch/disk-encryption |
-| Manage Azure Batch private endpoint connections | https://learn.microsoft.com/en-us/azure/batch/manage-private-endpoint-connections |
+| Manage Azure Batch private endpoint connections securely | https://learn.microsoft.com/en-us/azure/batch/manage-private-endpoint-connections |
 | Configure user-assigned managed identities on Azure Batch pools | https://learn.microsoft.com/en-us/azure/batch/managed-identity-pools |
 | Associate Azure Batch accounts with network security perimeters | https://learn.microsoft.com/en-us/azure/batch/network-security-perimeter |
 | Use built-in Azure Policy definitions for Azure Batch governance | https://learn.microsoft.com/en-us/azure/batch/policy-reference |
 | Configure Azure Batch private endpoints with Private Link | https://learn.microsoft.com/en-us/azure/batch/private-connectivity |
 | Configure public network access for Azure Batch accounts | https://learn.microsoft.com/en-us/azure/batch/public-network-access |
-| Use Azure Policy compliance controls for Batch | https://learn.microsoft.com/en-us/azure/batch/security-controls-policy |
+| Apply Azure Policy compliance controls to Batch | https://learn.microsoft.com/en-us/azure/batch/security-controls-policy |
 
 ### Configuration
 | Topic | URL |
 |-------|-----|
+| Enable automatic certificate rotation in Azure Batch pools | https://learn.microsoft.com/en-us/azure/batch/automatic-certificate-rotation |
 | Reference for Azure Batch analytics events and alerts | https://learn.microsoft.com/en-us/azure/batch/batch-analytics |
 | Configure autoscale formulas for Azure Batch pools | https://learn.microsoft.com/en-us/azure/batch/batch-automatic-scaling |
 | Use Azure Batch task runtime environment variables | https://learn.microsoft.com/en-us/azure/batch/batch-compute-node-environment-variables |
@@ -119,17 +116,15 @@ This skill requires **network access** to fetch documentation content:
 | Understand Azure Batch task start diagnostic event | https://learn.microsoft.com/en-us/azure/batch/batch-task-start-event |
 | Configure Auto OS Upgrade for Azure Batch pools | https://learn.microsoft.com/en-us/azure/batch/batch-upgrade-policy |
 | Configure Azure Batch task user accounts securely | https://learn.microsoft.com/en-us/azure/batch/batch-user-accounts |
-| Provision Azure Batch pools in virtual networks | https://learn.microsoft.com/en-us/azure/batch/batch-virtual-network |
-| Create Azure Batch pools across availability zones | https://learn.microsoft.com/en-us/azure/batch/create-pool-availability-zones |
+| Configure Azure Batch pools in virtual networks | https://learn.microsoft.com/en-us/azure/batch/batch-virtual-network |
+| Configure Azure Batch pools across availability zones | https://learn.microsoft.com/en-us/azure/batch/create-pool-availability-zones |
 | Configure and monitor extensions on Azure Batch pools | https://learn.microsoft.com/en-us/azure/batch/create-pool-extensions |
 | Create Azure Batch pools with static public IP addresses | https://learn.microsoft.com/en-us/azure/batch/create-pool-public-ip |
 | Reference monitoring metrics and logs for Azure Batch | https://learn.microsoft.com/en-us/azure/batch/monitor-batch-reference |
 | Configure external node endpoints for Azure Batch pools | https://learn.microsoft.com/en-us/azure/batch/pool-endpoint-configuration |
-| Mount Azure Files shares on Azure Batch compute nodes | https://learn.microsoft.com/en-us/azure/batch/pool-file-shares |
 | Configure and use Azure Batch task resource files | https://learn.microsoft.com/en-us/azure/batch/resource-files |
 | Configure simplified compute node communication in Azure Batch | https://learn.microsoft.com/en-us/azure/batch/simplified-compute-node-communication |
 | Create Azure Batch pools without public IP addresses | https://learn.microsoft.com/en-us/azure/batch/simplified-node-communication-pool-no-public-ip |
-| Configure virtual file system mounts for Batch pools | https://learn.microsoft.com/en-us/azure/batch/virtual-file-mount |
 
 ### Integrations & Coding Patterns
 | Topic | URL |
@@ -140,13 +135,15 @@ This skill requires **network access** to fetch documentation content:
 | Build Azure Batch clients with JavaScript SDK | https://learn.microsoft.com/en-us/azure/batch/batch-js-get-started |
 | Use Azure Batch Python and .NET clients for Linux pools | https://learn.microsoft.com/en-us/azure/batch/batch-linux-nodes |
 | Run MPI workloads with Azure Batch multi-instance tasks | https://learn.microsoft.com/en-us/azure/batch/batch-mpi |
-| Manage Azure Batch resources using PowerShell cmdlets | https://learn.microsoft.com/en-us/azure/batch/batch-powershell-cmdlets-get-started |
-| Persist Batch output using .NET File Conventions library | https://learn.microsoft.com/en-us/azure/batch/batch-task-output-file-conventions |
-| Use Batch service API to store task output in Azure Storage | https://learn.microsoft.com/en-us/azure/batch/batch-task-output-files |
-| Instrument Azure Batch .NET apps with Application Insights | https://learn.microsoft.com/en-us/azure/batch/monitor-application-insights |
+| Use .NET File Conventions to store Batch output | https://learn.microsoft.com/en-us/azure/batch/batch-task-output-file-conventions |
+| Persist Azure Batch task output via service API | https://learn.microsoft.com/en-us/azure/batch/batch-task-output-files |
+| Access Azure Key Vault from Batch pools using managed identity | https://learn.microsoft.com/en-us/azure/batch/credential-access-key-vault |
+| Instrument Azure Batch apps with Application Insights | https://learn.microsoft.com/en-us/azure/batch/monitor-application-insights |
+| Mount Azure Files shares on Azure Batch pools | https://learn.microsoft.com/en-us/azure/batch/pool-file-shares |
+| Mount virtual file systems on Azure Batch pool nodes | https://learn.microsoft.com/en-us/azure/batch/virtual-file-mount |
 
 ### Deployment
 | Topic | URL |
 |-------|-----|
-| Deploy Azure Batch HPC solutions with Azure Pipelines | https://learn.microsoft.com/en-us/azure/batch/batch-ci-cd |
-| Run Azure Batch jobs end-to-end using CLI templates | https://learn.microsoft.com/en-us/azure/batch/batch-cli-templates |
+| Move Azure Batch accounts between regions with ARM | https://learn.microsoft.com/en-us/azure/batch/account-move |
+| Implement CI/CD for Azure Batch HPC with Azure Pipelines | https://learn.microsoft.com/en-us/azure/batch/batch-ci-cd |

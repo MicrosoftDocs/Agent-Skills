@@ -1,9 +1,9 @@
 ---
 name: azure-aks-edge-essentials
-description: Expert knowledge for Azure Kubernetes Service Edge Essentials development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing AKS Edge/Arc clusters, Arc onboarding, Windows/GPU nodes, offline installs, or IoT/AI edge workloads, and other Azure Kubernetes Service Edge Essentials related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Stack Edge (use azure-stack-edge), Azure Container Apps (use azure-container-apps), Azure Container Instances (use azure-container-instances).
+description: Expert knowledge for Azure Kubernetes Service Edge Essentials development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing AKS Edge/Arc clusters, Arc onboarding, IoT/AI edge workloads, TPM/camera access, or OPC UA discovery, and other Azure Kubernetes Service Edge Essentials related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure IoT Edge (use azure-iot-edge), Azure Stack Edge (use azure-stack-edge), Azure Container Apps (use azure-container-apps).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-14"
+  generated_at: "2026-06-21"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Kubernetes Service Edge Essentials Skill
@@ -29,10 +29,10 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L96-L108 | Guidance on choosing AKS Edge/Arc vs cloud/on-prem, supported versions/add-ons, monitoring, pricing/licensing, support, and planning migrations or retirement of older AKS/Windows Server setups |
 | Architecture & Design Patterns | L109-L115 | Designing AKS on Windows Server for Azure Local: high availability on two-node setups, SDN VNet architectures, and deployment patterns for AKS Arc target clusters. |
 | Limits & Quotas | L116-L130 | Scale limits, system/storage requirements, IP capacity planning, and support policies for AKS Edge/Arc on Azure Local, bare metal, VMware, and Windows Server environments. |
-| Security | L131-L164 | Auth, RBAC, SSH, cert, and key management for AKS Edge/Arc/hybrid: Entra/AD SSO, gMSA, workload identity, etcd encryption, image signing, and security hardening guidance. |
-| Configuration | L165-L249 | Configuring, networking, storage, scaling, monitoring, and updating AKS Edge/Arc/hybrid clusters, including Windows/Linux nodes, load balancers, GPUs, offline installs, and Azure Arc integration. |
-| Integrations & Coding Patterns | L250-L309 | Managing and integrating AKS Edge/AKS Arc/hybrid clusters: Arc onboarding, CLI/PowerShell cmdlets, storage/CSI, networking, logging/backup, IoT/AI workloads, TPM access, and camera/OPC UA discovery. |
-| Deployment | L310-L345 | Deploying, upgrading, and managing AKS Edge/AKS hybrid/AKS Arc clusters and node pools (Linux/Windows/GPU), including installs, updates, removals, offline/disconnected ops, and system requirements |
+| Security | L131-L165 | Auth, RBAC, SSH, certs, keys, gMSA, and container security for AKS Edge/Arc/Hybrid, including Entra/AD SSO, workload identity, image signing, and secure node/etcd communication. |
+| Configuration | L166-L250 | Configuring and operating AKS Edge/Arc/hybrid clusters: networking, storage, load balancers, autoscaling, monitoring, Arc connectivity, offline/upgrade flows, and Windows/Linux node settings. |
+| Integrations & Coding Patterns | L251-L310 | Managing and integrating AKS Edge/AKS Arc/hybrid clusters: Arc onboarding, CLI/PowerShell cmdlets, storage/CSI, networking, logging/backup, IoT/AI workloads, TPM access, and camera/OPC UA discovery. |
+| Deployment | L311-L346 | Deploying, upgrading, and managing AKS Edge/AKS hybrid/AKS Arc clusters and node pools (Linux/Windows/GPU), including installs, updates, removals, offline/disconnected ops, and system requirements |
 
 ### Troubleshooting
 | Topic | URL |
@@ -144,6 +144,7 @@ This skill requires **network access** to fetch documentation content:
 | Encrypt Kubernetes etcd secrets in AKS on Azure Local | https://learn.microsoft.com/en-us/azure/aks/aksarc/encrypt-etcd-secrets |
 | Control AKS Arc access with Entra ID and Kubernetes RBAC | https://learn.microsoft.com/en-us/azure/aks/aksarc/kubernetes-rbac-entra-id |
 | Configure Kubernetes RBAC with Microsoft Entra ID in AKS Arc | https://learn.microsoft.com/en-us/azure/aks/aksarc/kubernetes-rbac-local |
+| Configure Azure RBAC for AKS on Azure Local multi-rack | https://learn.microsoft.com/en-us/azure/aks/aksarc/multi-rack/use-azure-rbac |
 | Configure gMSA-based AD authentication for AKS Windows containers | https://learn.microsoft.com/en-us/azure/aks/aksarc/prepare-windows-nodes-gmsa |
 | Add gMSA credential spec for AKS hybrid | https://learn.microsoft.com/en-us/azure/aks/aksarc/reference/ps/add-akshcigmsacredentialspec |
 | Enable AKS hybrid Active Directory auth with Install-AksHciAdAuth | https://learn.microsoft.com/en-us/azure/aks/aksarc/reference/ps/install-akshciadauth |
@@ -168,7 +169,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure scheduling for mixed Linux/Windows AKS Arc clusters | https://learn.microsoft.com/en-us/azure/aks/aksarc/adapt-apps-mixed-os-clusters |
 | Configure node taints for AKS Arc clusters | https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-arc-use-node-taints |
 | Configure AKS on bare metal cluster via ARM template | https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-bare-metal-create-cluster-arm-template |
-| Define AKS on bare metal clusters with Bicep | https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-bare-metal-create-cluster-bicep |
+| Define AKS on bare metal clusters using Bicep | https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-bare-metal-create-cluster-bicep |
 | Review system requirements for AKS on bare metal | https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-bare-metal-system-requirements |
 | Configure networking for AKS Edge Essentials clusters | https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-edge-concept-networking |
 | Configure AKS Edge Essentials via aksedge-config.json | https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-edge-deployment-config-json |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-14'
+generated_at: '2026-06-21'
 category_descriptions:
   integrations: Integrating SRE Agent with Azure DevOps, GitHub, observability and
     incident tools, defining REST/Kusto/Python tools, cross-tenant access, and secure
@@ -46,10 +46,10 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 - **Unclassified**: 68
 
 ### Incremental Update
-- **New Pages**: 4
-- **Updated Pages**: 11
-- **Unchanged**: 104
-- **Deleted Pages**: 5
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 118
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sre-agent/azure-sre-agent.csv`
 
 ## Classification Statistics
@@ -67,45 +67,10 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 
 ## Changes
 
-### New Pages
-
-- [Configure network controls](https://learn.microsoft.com/en-us/azure/sre-agent/configure-network-controls)
-- [Allow list Key Vault firewall](https://learn.microsoft.com/en-us/azure/sre-agent/allow-list-key-vault-firewall)
-- [Tool access policies](https://learn.microsoft.com/en-us/azure/sre-agent/tool-access-policies)
-- [MCP server](https://learn.microsoft.com/en-us/azure/sre-agent/mcp-server)
-
 ### Updated Pages
 
-- [Operations Hub](https://learn.microsoft.com/en-us/azure/sre-agent/operations-hub)
-  - Updated: 2026-06-04T22:19:00.000Z → 2026-06-12T11:47:00.000Z
-- [Set up an incident trigger](https://learn.microsoft.com/en-us/azure/sre-agent/response-plan)
-  - Updated: 2026-06-06T00:22:00.000Z → 2026-06-12T22:22:00.000Z
-- [Set up PagerDuty indexing](https://learn.microsoft.com/en-us/azure/sre-agent/set-up-pagerduty-indexing)
-  - Updated: 2026-04-03T21:52:00.000Z → 2026-06-12T22:22:00.000Z
-- [Set up ServiceNow indexing](https://learn.microsoft.com/en-us/azure/sre-agent/setup-servicenow-indexing)
-  - Updated: 2026-04-21T22:10:00.000Z → 2026-06-12T22:22:00.000Z
-- [Set up incident response](https://learn.microsoft.com/en-us/azure/sre-agent/tutorial-incident-response)
-  - Updated: 2026-03-10T04:29:00.000Z → 2026-06-12T22:22:00.000Z
-- [Network integration](https://learn.microsoft.com/en-us/azure/sre-agent/network-integration)
-  - Updated: 2026-05-27T16:50:00.000Z → 2026-06-11T22:20:00.000Z
-- [Run modes](https://learn.microsoft.com/en-us/azure/sre-agent/run-modes)
-  - Updated: 2026-03-27T15:55:00.000Z → 2026-06-11T17:23:00.000Z
-- [Connectors](https://learn.microsoft.com/en-us/azure/sre-agent/connectors)
-  - Updated: 2026-04-25T06:18:00.000Z → 2026-06-11T22:20:00.000Z
-- [Incident platforms](https://learn.microsoft.com/en-us/azure/sre-agent/incident-platforms)
-  - Updated: 2026-06-06T00:22:00.000Z → 2026-06-11T22:20:00.000Z
-- [Cross-account ADO access](https://learn.microsoft.com/en-us/azure/sre-agent/cross-account-ado-oauth)
-  - Updated: 2026-04-03T21:52:00.000Z → 2026-06-11T22:20:00.000Z
-- [Incident response plans](https://learn.microsoft.com/en-us/azure/sre-agent/incident-response-plans)
-  - Updated: 2026-06-06T00:22:00.000Z → 2026-06-08T08:00:00.000Z
-
-### Deleted Pages
-
-- ~~Connect to PagerDuty~~ (https://learn.microsoft.com/en-us/azure/sre-agent/connect-pagerduty)
-- ~~Connect to ServiceNow~~ (https://learn.microsoft.com/en-us/azure/sre-agent/connect-servicenow)
-- ~~SRE Agent MCP server~~ (https://learn.microsoft.com/en-us/azure/sre-agent/mcp-server)
-- ~~MCP server~~ (https://learn.microsoft.com/en-us/azure/sre-agent/mcp-server-overview)
-- ~~Operations Hub overview~~ (https://learn.microsoft.com/en-us/azure/sre-agent/operations-hub-overview)
+- [What is SRE Agent?](https://learn.microsoft.com/en-us/azure/sre-agent/overview)
+  - Updated: 2026-03-27T15:55:00.000Z → 2026-06-19T22:18:00.000Z
 
 ## Classified Pages
 
@@ -228,10 +193,10 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 | [Threads](https://learn.microsoft.com/en-us/azure/sre-agent/threads) | 0.20 | Defines threads and conversation organization; conceptual usage guidance without detailed technical parameters. |
 | [Tools and skills](https://learn.microsoft.com/en-us/azure/sre-agent/global-tools-page) | 0.20 | High-level description of viewing and toggling tools/skills at space level; no indication of numeric limits, config parameter tables, error codes, or other expert-only details. |
 | [Upload knowledge documents](https://learn.microsoft.com/en-us/azure/sre-agent/tutorial-upload-knowledge-document) | 0.20 | Tutorial for uploading knowledge documents via chat and portal UI; no indication of configuration tables, limits, or specialized troubleshooting content beyond generic workflow steps. |
-| [What is SRE Agent?](https://learn.microsoft.com/en-us/azure/sre-agent/overview) | 0.20 | High-level product overview and value proposition without concrete limits, configs, or error details. |
 | [Workflow automation](https://learn.microsoft.com/en-us/azure/sre-agent/workflow-automation) | 0.20 | Appears to be a conceptual/feature overview of workflow automation with no indication of numeric limits, config tables, error codes, or product-specific settings. |
 | [Share files and screenshots](https://learn.microsoft.com/en-us/azure/sre-agent/file-attachments-tutorial) | 0.15 | Tutorial on sharing files and screenshots; appears to be step-by-step usage without detailed configuration or limits. |
 | [Agent playground](https://learn.microsoft.com/en-us/azure/sre-agent/agent-playground) | 0.10 | Agent Playground page sounds like a feature overview (split-screen editor, AI scoring) without product-specific config tables or limits. |
 | [Favorites and Mine filter](https://learn.microsoft.com/en-us/azure/sre-agent/favorites-mine-filter) | 0.10 | Covers using favorites and a filter in the UI; purely organizational UX feature with no product-specific limits, configs, or troubleshooting content. |
 | [General](https://learn.microsoft.com/en-us/azure/sre-agent/faq) | 0.10 | General FAQ about service overview, pricing, and availability; primarily conceptual and commercial information without detailed technical limits, configuration, or troubleshooting content. |
 | [Starter prompts](https://learn.microsoft.com/en-us/azure/sre-agent/starter-prompts) | 0.10 | Starter prompts are usage examples; they don’t represent configuration, limits, or troubleshooting knowledge and are not critical expert reference data. |
+| [What is SRE Agent?](https://learn.microsoft.com/en-us/azure/sre-agent/overview) | - | Overview/marketing-style description of Azure SRE Agent capabilities and value; no concrete limits, configuration tables, error codes, or decision matrices with quantified criteria. |

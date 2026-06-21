@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-05-17'
+generated_at: '2026-06-21'
 category_descriptions:
-  troubleshooting: 'Diagnosing and fixing Data Box/Disk issues: validation, unlock
-    tool, SMB/REST copy, upload errors, time sync, and using audit/logs to track and
-    troubleshoot import/export orders.'
+  troubleshooting: 'Diagnosing and fixing Azure Data Box and Data Box Disk issues:
+    audit/order logs, validation and unlock errors, SMB/REST/upload copy failures,
+    and time sync or connection problems.'
   security: 'Securing Azure Data Box: certificates, CMKs in Key Vault, Customer Lockbox,
     built‑in protections, and applying Azure Policy (including regulatory controls)
     to Data Box and Data Box Disk.'
@@ -21,17 +21,17 @@ category_descriptions:
     settings
 skill_description: Expert knowledge for Azure Data Box development including troubleshooting,
   best practices, limits & quotas, security, configuration, and integrations & coding
-  patterns. Use when handling Data Box/Disk imports, SMB/NFS copies, Key Vault CMKs,
-  REST APIs, or VHD‑to‑managed‑disk flows, and other Azure Data Box related development
+  patterns. Use when using Data Box/Heavy/Disk for bulk uploads, SMB/NFS copy, REST
+  APIs, Key Vault CMKs, or VHD-to-managed-disk, and other Azure Data Box related development
   tasks. Not for Azure Import Export (use azure-import-export), Azure Stack Edge (use
-  azure-stack-edge), Azure Virtual Machines (use azure-virtual-machines), Azure Blob
-  Storage (use azure-blob-storage).
-use_when: Use when handling Data Box/Disk imports, SMB/NFS copies, Key Vault CMKs,
-  REST APIs, or VHD‑to‑managed‑disk flows, and other Azure Data Box related development
+  azure-stack-edge), Azure Blob Storage (use azure-blob-storage), Azure Files (use
+  azure-files).
+use_when: Use when using Data Box/Heavy/Disk for bulk uploads, SMB/NFS copy, REST
+  APIs, Key Vault CMKs, or VHD-to-managed-disk, and other Azure Data Box related development
   tasks.
 confusable_not_for: Not for Azure Import Export (use azure-import-export), Azure Stack
-  Edge (use azure-stack-edge), Azure Virtual Machines (use azure-virtual-machines),
-  Azure Blob Storage (use azure-blob-storage).
+  Edge (use azure-stack-edge), Azure Blob Storage (use azure-blob-storage), Azure
+  Files (use azure-files).
 ---
 # Azure Data Box Crawl Report
 
@@ -45,8 +45,8 @@ confusable_not_for: Not for Azure Import Export (use azure-import-export), Azure
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 79
+- **Updated Pages**: 1
+- **Unchanged**: 78
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-box-family/azure-data-box-family.csv`
 
@@ -64,6 +64,11 @@ confusable_not_for: Not for Azure Import Export (use azure-import-export), Azure
 
 ## Changes
 
+### Updated Pages
+
+- [Data Box upload issues](https://learn.microsoft.com/en-us/azure/databox/data-box-troubleshoot-data-upload)
+  - Updated: 2025-03-06T08:00:00.000Z → 2026-06-17T11:41:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
@@ -75,7 +80,7 @@ confusable_not_for: Not for Azure Import Export (use azure-import-export), Azure
 | [Unlock issues](https://learn.microsoft.com/en-us/azure/databox/data-box-disk-troubleshoot-unlock) | troubleshooting | 0.88 | Explicit troubleshooting for unlock tool issues; likely includes specific error messages and workflows to resolve them, matching symptom → cause → solution. |
 | [Data Box Blob storage issues](https://learn.microsoft.com/en-us/azure/databox/data-box-troubleshoot-rest) | troubleshooting | 0.86 | Explicit troubleshooting for REST interface usage with Data Box Blob storage and client tools; likely includes specific error messages and resolutions unique to this product integration. |
 | [Data Box copy issues](https://learn.microsoft.com/en-us/azure/databox/data-box-troubleshoot) | troubleshooting | 0.86 | Described as a troubleshooting article listing possible errors when copying/uploading data to Data Box devices, with error-specific guidance that maps symptoms to causes and resolutions. |
-| [Data Box upload issues](https://learn.microsoft.com/en-us/azure/databox/data-box-troubleshoot-data-upload) | troubleshooting | 0.86 | Focuses on reviewing and following up on specific upload errors, including retryable vs non-retryable cases and concrete examples (e.g., Large File Shares not enabled), which is symptom → cause → fix guidance. |
+| [Data Box upload issues](https://learn.microsoft.com/en-us/azure/databox/data-box-troubleshoot-data-upload) | troubleshooting | 0.86 | The article focuses on diagnosing and resolving upload failures from Azure Data Box and Data Box Heavy to Azure. It distinguishes retryable vs non-retryable errors, references specific product behaviors (for example, errors when Large File Shares aren't enabled), and provides guidance on how to resume or handle failed uploads. This is symptom → cause → resolution content specific to Azure Data Box, which qualifies as troubleshooting expert knowledge. |
 | [Data copy issues](https://learn.microsoft.com/en-us/azure/databox/data-box-disk-troubleshoot-data-copy) | troubleshooting | 0.86 | Describes using logs to troubleshoot copy issues, including split copy tool problems; this is product-specific diagnostic guidance. |
 | [Data upload issues](https://learn.microsoft.com/en-us/azure/databox/data-box-disk-troubleshoot-data-upload) | troubleshooting | 0.86 | Covers review and follow-up for upload errors, including retryable vs non-retryable and specific scenarios like Large File Shares not enabled; clear troubleshooting content. |
 | [Upload logs](https://learn.microsoft.com/en-us/azure/databox/data-box-disk-troubleshoot-upload) | troubleshooting | 0.86 | Explicitly about using copy/error logs to troubleshoot upload issues in the datacenter; product-specific error analysis and resolution. |

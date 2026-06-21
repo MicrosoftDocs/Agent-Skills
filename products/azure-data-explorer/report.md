@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-14'
+generated_at: '2026-06-21'
 category_descriptions:
   security: 'Configuring ADX security: auth/RBAC, managed identities, encryption/CMK,
     network isolation (private endpoints, outbound/public access), policies, compliance,
@@ -11,8 +11,8 @@ category_descriptions:
     DevOps, and migrating clusters to availability zones and from VNet injection to
     private endpoints.
   integrations: Integrating ADX with tools and services (SQL, ODBC/JDBC, Power Automate/Apps,
-    Functions, Grafana, Splunk, OpenTelemetry, Tableau, MATLAB, etc.) and managing/automating
-    queries and ingestion.
+    Logic Apps, Grafana, Splunk, OpenTelemetry, Functions, Purview) and coding/query
+    patterns for these connectors.
   architecture-patterns: 'Patterns for ADX deployment: regional DR and replication,
     cross-cluster access via follower DBs, and multitenant cluster/database design
     choices.'
@@ -30,13 +30,13 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Data Explorer development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when configuring ADX clusters, KQL/T-SQL queries, ingestion pipelines, follower
-  DBs, or Power BI integration, and other Azure Data Explorer related development
-  tasks. Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure HDInsight
-  (use azure-hdinsight), Azure Databricks (use azure-databricks), Azure Stream Analytics
+  Use when configuring ADX clusters, private endpoints, follower DBs, streaming ingestion,
+  or Power BI integration, and other Azure Data Explorer related development tasks.
+  Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure HDInsight (use
+  azure-hdinsight), Azure Databricks (use azure-databricks), Azure Stream Analytics
   (use azure-stream-analytics).
-use_when: Use when configuring ADX clusters, KQL/T-SQL queries, ingestion pipelines,
-  follower DBs, or Power BI integration, and other Azure Data Explorer related development
+use_when: Use when configuring ADX clusters, private endpoints, follower DBs, streaming
+  ingestion, or Power BI integration, and other Azure Data Explorer related development
   tasks.
 confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics),
   Azure HDInsight (use azure-hdinsight), Azure Databricks (use azure-databricks),
@@ -49,13 +49,13 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 - **Total Pages**: 197
 - **Fetched**: 197
 - **Fetch Failed**: 0
-- **Classified**: 104
-- **Unclassified**: 93
+- **Classified**: 103
+- **Unclassified**: 94
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 5
-- **Unchanged**: 192
+- **Updated Pages**: 3
+- **Unchanged**: 194
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-explorer/azure-data-explorer.csv`
 
@@ -65,29 +65,25 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 |------|-------|------------|
 | architecture-patterns | 3 | 1.5% |
 | best-practices | 7 | 3.6% |
-| configuration | 11 | 5.6% |
+| configuration | 10 | 5.1% |
 | decision-making | 11 | 5.6% |
 | deployment | 4 | 2.0% |
 | integrations | 30 | 15.2% |
 | limits-quotas | 6 | 3.0% |
 | security | 24 | 12.2% |
 | troubleshooting | 8 | 4.1% |
-| *(Unclassified)* | 93 | 47.2% |
+| *(Unclassified)* | 94 | 47.7% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Clone database schema](https://learn.microsoft.com/en-us/azure/data-explorer/clone-database-schema)
-  - Updated: 2023-09-26T11:08:00.000Z → 2026-06-11T22:03:00.000Z
-- [Get started for free](https://learn.microsoft.com/en-us/azure/data-explorer/start-for-free)
-  - Updated: 2026-02-04T23:02:00.000Z → 2026-06-11T11:03:00.000Z
-- [Splunk](https://learn.microsoft.com/en-us/azure/data-explorer/ingest-data-splunk)
-  - Updated: 2024-01-16T17:53:00.000Z → 2026-06-10T08:00:00.000Z
-- [Query data in Azure Monitor](https://learn.microsoft.com/en-us/azure/data-explorer/query-monitor-data)
-  - Updated: 2025-05-28T08:00:00.000Z → 2026-06-07T08:00:00.000Z
+- [Access the web UI anywhere](https://learn.microsoft.com/en-us/azure/data-explorer/web-sync)
+  - Updated: 2026-01-05T12:03:00.000Z → 2026-06-16T22:03:00.000Z
 - [Use MCP servers to build AI agents](https://learn.microsoft.com/en-us/azure/data-explorer/integrate-mcp-servers)
-  - Updated: 2026-05-06T05:03:00.000Z → 2026-06-11T22:03:00.000Z
+  - Updated: 2026-06-11T22:03:00.000Z → 2026-06-18T22:03:00.000Z
+- [Find a partner](https://learn.microsoft.com/en-us/azure/data-explorer/find-my-partner)
+  - Updated: 2024-06-19T11:09:00.000Z → 2026-06-14T11:03:00.000Z
 
 ## Classified Pages
 
@@ -168,7 +164,7 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | [Cross-tenant data connection](https://learn.microsoft.com/en-us/azure/data-explorer/ingest-data-cross-tenant) | configuration | 0.68 | Uses Create Data Connections API and auxiliary tokens with specific parameter names and authentication settings for cross-tenant scenarios, which are product-specific configuration details. |
 | [Query data in Azure Storage external tables](https://learn.microsoft.com/en-us/azure/data-explorer/external-azure-storage-tables-query) | integrations | 0.68 | Covers KQL access to Azure Storage external tables with product-specific external table definitions and parameters, fitting integration/configuration patterns. |
 | [Query data using Python](https://learn.microsoft.com/en-us/azure/data-explorer/python-query-data) | integrations | 0.68 | Shows Python client library usage with specific classes, methods, and connection parameters unique to Azure Data Explorer. |
-| [Use MCP servers to build AI agents](https://learn.microsoft.com/en-us/azure/data-explorer/integrate-mcp-servers) | integrations | 0.68 | The page describes how to use the Model Context Protocol server with Azure Data Explorer, which is a product-specific integration pattern. It likely includes concrete configuration details (MCP server setup, connection parameters, tool definitions) that are unique to this integration and not broadly known from training data. It is not just a conceptual overview of MCP or ADX, but a how-to for wiring them together, so it best fits the integrations sub-skill. |
+| [Use MCP servers to build AI agents](https://learn.microsoft.com/en-us/azure/data-explorer/integrate-mcp-servers) | integrations | 0.68 | Page describes using Model Context Protocol servers with Azure Data Explorer clusters for AI agents. This is a product-specific integration pattern between MCP and Azure Data Explorer, likely including concrete tool definitions, connection details, and usage patterns that go beyond generic knowledge. It is not just conceptual marketing, but a how-to for a specific integration, fitting the integrations category best. |
 | [Formats for data ingestion](https://learn.microsoft.com/en-us/azure/data-explorer/ingestion-supported-formats) | limits-quotas | 0.66 | Lists supported ingestion and compression formats in table form; while not numeric limits, it’s effectively a capability matrix of allowed formats that an LLM wouldn’t reliably know and is closest to limits/quotas category. |
 | [Query data in MATLAB](https://learn.microsoft.com/en-us/azure/data-explorer/query-matlab) | integrations | 0.66 | Explains how to obtain and use auth tokens in MATLAB to call Azure Data Explorer, with API endpoints and parameters specific to this product. |
 | [Business continuity overview](https://learn.microsoft.com/en-us/azure/data-explorer/business-continuity-overview) | decision-making | 0.65 | The page discusses multiple disaster recovery configurations for Azure Data Explorer based on RPO, RTO, effort, and cost. That indicates decision guidance between options rather than just conceptual DR theory. While the summary is high-level, this type of article typically includes concrete guidance on when to choose each configuration, which is product-specific decision-making knowledge. |
@@ -190,7 +186,6 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | [Understand reservation charges](https://learn.microsoft.com/en-us/azure/data-explorer/pricing-reservation-discount) | decision-making | 0.65 | Explains how reservation discounts apply to markup meters and what’s included/excluded, guiding purchasing and cost allocation decisions. |
 | [Use Kusto cmdlets in Azure PowerShell](https://learn.microsoft.com/en-us/azure/data-explorer/azure-powershell) | integrations | 0.65 | Cmdlet article documents specific Az.Kusto cmdlets, parameters, and usage patterns, which are API/SDK-level integration details for ADX management. |
 | [Use resource health to monitor cluster health](https://learn.microsoft.com/en-us/azure/data-explorer/monitor-with-resource-health) | troubleshooting | 0.65 | Resource Health article for ADX likely maps health states and checks to causes and recommended actions, providing symptom→cause→solution guidance specific to this service. |
-| [Access the web UI anywhere](https://learn.microsoft.com/en-us/azure/data-explorer/web-sync) | configuration | 0.64 | Explains how profile sync stores settings, tabs, and connections; likely includes specific toggles and account-scoped configuration options unique to this product. |
 | [Customize settings in the web UI](https://learn.microsoft.com/en-us/azure/data-explorer/web-customize-settings) | configuration | 0.62 | Describes exporting/importing environment settings, error highlighting, and timezone options; likely includes specific setting names and allowed values, fitting configuration category. |
 | [Automated provisioning](https://learn.microsoft.com/en-us/azure/data-explorer/automated-deploy-overview) | deployment | 0.60 | Overview of automated provisioning mechanisms tied to DevOps/DataOps; describes product-specific deployment options and constraints. |
 | [Confidential compute](https://learn.microsoft.com/en-us/azure/data-explorer/confidential-compute) | decision-making | 0.60 | Explains when to use confidential compute SKUs and how to configure them for sensitive workloads; SKU-specific guidance. |
@@ -270,7 +265,6 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | [Delete a database](https://learn.microsoft.com/en-us/azure/data-explorer/delete-database) | 0.30 | Simple how-to for deleting a database; summary doesn’t indicate special limits, soft-delete behavior, or complex configuration. |
 | [Excel](https://learn.microsoft.com/en-us/azure/data-explorer/excel) | 0.30 | Tutorial for exporting/importing queries into Excel; no indication of detailed config parameters, limits, or troubleshooting. |
 | [Explore data in dashboard tiles](https://learn.microsoft.com/en-us/azure/data-explorer/dashboard-explore-data) | 0.30 | How-to UI feature usage for exploring dashboard tiles; no product-specific limits, configs, or error mappings. |
-| [Find a partner](https://learn.microsoft.com/en-us/azure/data-explorer/find-my-partner) | 0.30 | Partner listing and program description; primarily marketing/contacts, not technical configuration, limits, or troubleshooting content. |
 | [Get data from Amazon S3](https://learn.microsoft.com/en-us/azure/data-explorer/get-data-amazon-s3) | 0.30 | Appears to be a step-by-step ingestion tutorial for pulling data from Amazon S3 into Azure Data Explorer. The summary suggests procedural guidance rather than detailed configuration tables, limits, or product-specific error mappings. No indication of numeric limits, config parameter matrices, or error-code-based troubleshooting. |
 | [Get data from local file](https://learn.microsoft.com/en-us/azure/data-explorer/get-data-file) | 0.30 | Wizard-style how-to for local file ingestion; no config tables, limits, or product-specific edge cases. |
 | [POC playbook: Big data analytics with Azure Data Explorer](https://learn.microsoft.com/en-us/azure/data-explorer/proof-of-concept-playbook) | 0.30 | High-level POC methodology; lacks product-specific numeric thresholds, configs, or error mappings. |
@@ -280,6 +274,7 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | [Access the data profile of a table](https://learn.microsoft.com/en-us/azure/data-explorer/data-profile) | 0.25 | Explains data profile feature usage; mostly UI guidance without detailed config matrices or error mappings. |
 | [Share queries](https://learn.microsoft.com/en-us/azure/data-explorer/web-share-queries) | 0.25 | Shows how to share queries and export results; mostly UI and workflow, not expert configuration or limits. |
 | [Visualization integrations overview](https://learn.microsoft.com/en-us/azure/data-explorer/integrate-visualize-overview) | 0.25 | Visualization integrations overview is primarily a catalog/marketing-style summary without deep configuration tables or limits. |
+| [Access the web UI anywhere](https://learn.microsoft.com/en-us/azure/data-explorer/web-sync) | 0.20 | Primarily a how-to/tutorial for enabling sync of Azure Data Explorer web UI profile; does not list numeric limits, configuration parameter tables, error codes, or product-specific decision matrices. Content is procedural rather than expert reference material. |
 | [Add a query visualization](https://learn.microsoft.com/en-us/azure/data-explorer/add-query-visualization) | 0.20 | How-to UI guide for creating visualizations from query results; no limits, config tables, error codes, or product-specific thresholds. Primarily step-by-step usage, not expert reference content. |
 | [Create a cluster and database using SDKs](https://learn.microsoft.com/en-us/azure/data-explorer/create-cluster-database) | 0.20 | Primarily a how-to/tutorial for creating a cluster and database using various tools. It doesn’t focus on limits, decision matrices, configuration tables, or troubleshooting mappings with error codes, so it doesn’t meet the expert-knowledge criteria for any sub-skill type. |
 | [Explore the results grid](https://learn.microsoft.com/en-us/azure/data-explorer/web-results-grid) | 0.20 | Describes how to work with the results grid in the web UI; lacks numeric limits, configuration parameter tables, or troubleshooting mappings. General feature-usage instructions rather than expert reference. |
@@ -293,5 +288,6 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | [Solution architectures](https://learn.microsoft.com/en-us/azure/data-explorer/solution-architectures) | 0.20 | Points to Azure Architecture Center; no product-specific decision matrices or quantified thresholds in this summary. |
 | [Use dashboards](https://learn.microsoft.com/en-us/azure/data-explorer/azure-data-explorer-dashboards) | 0.20 | Primarily a how-to/overview for creating and using Azure Data Explorer dashboards; based on the summary, it doesn't mention numeric limits, configuration tables, error codes, or product-specific decision matrices that meet the expert-knowledge criteria. |
 | [Visualize sample data dashboards](https://learn.microsoft.com/en-us/azure/data-explorer/web-ui-samples-dashboards) | 0.20 | Quickstart for sample dashboards; primarily step-by-step usage, no deep config, limits, or troubleshooting mappings. |
+| [Find a partner](https://learn.microsoft.com/en-us/azure/data-explorer/find-my-partner) | 0.10 | Describes a partner program and how to find consulting/training partners. This is program/marketing/navigation content without technical limits, configuration, troubleshooting, or other expert implementation details. |
 | [What is Azure Data Explorer?](https://learn.microsoft.com/en-us/azure/data-explorer/data-explorer-overview) | 0.10 | High-level product overview without concrete limits, configs, or error details. |
 | [What's new](https://learn.microsoft.com/en-us/azure/data-explorer/whats-new) | 0.10 | Documentation change log; no technical limits, configs, or troubleshooting content. |

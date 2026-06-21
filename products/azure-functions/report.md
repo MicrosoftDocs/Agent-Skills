@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-14'
+generated_at: '2026-06-21'
 category_descriptions:
   integrations: Configuring Azure Functions triggers/bindings to integrate with databases,
     messaging, storage, OpenAI, MCP, Dapr, SignalR, Web PubSub, Logic Apps, and other
@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Log
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 286
+- **Updated Pages**: 1
+- **Unchanged**: 287
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-functions/azure-functions.csv`
 
@@ -79,10 +79,8 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Log
 
 ### Updated Pages
 
-- [Deployment slots](https://learn.microsoft.com/en-us/azure/azure-functions/functions-deployment-slots)
-  - Updated: 2025-05-07T08:00:00.000Z → 2026-06-11T17:23:00.000Z
-- [Azure Functions CLI (v5)](https://learn.microsoft.com/en-us/azure/azure-functions/functions-cli-develop-local)
-  - Updated: 2026-06-03T05:14:00.000Z → 2026-06-09T08:00:00.000Z
+- [IntelliJ IDEA](https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-maven-intellij)
+  - Updated: 2024-05-29T11:30:00.000Z → 2026-06-18T08:00:00.000Z
 
 ## Classified Pages
 
@@ -359,7 +357,6 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Log
 | [Eclipse](https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-maven-eclipse) | 0.30 | Java + Eclipse how-to; basic creation and deployment tutorial without detailed product-specific reference content. |
 | [Gradle](https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-first-java-gradle) | 0.30 | Java + Gradle publishing tutorial; procedural steps rather than expert configuration or limits. |
 | [Image classification with PyTorch](https://learn.microsoft.com/en-us/azure/azure-functions/machine-learning-pytorch) | 0.30 | Local PyTorch + Functions tutorial; focuses on ML model usage, not Azure-specific limits, configuration matrices, or troubleshooting content. |
-| [IntelliJ IDEA](https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-maven-intellij) | 0.30 | IntelliJ Java function creation tutorial; no evidence of detailed configuration tables or troubleshooting content. |
 | [MCP Apps](https://learn.microsoft.com/en-us/azure/azure-functions/scenario-mcp-apps) | 0.30 | Quickstart for building an MCP Apps server with Azure Functions; describes using templates and deployment flow, not deep product-specific configuration, limits, or troubleshooting content. |
 | [Machine learning with TensorFlow](https://learn.microsoft.com/en-us/azure/azure-functions/functions-machine-learning-tensorflow) | 0.30 | Local-only ML tutorial combining TensorFlow and Functions; mostly generic coding and no product-specific configuration tables, limits, or security/diagnostic details. |
 | [Monitor function executions](https://learn.microsoft.com/en-us/azure/azure-functions/functions-monitoring) | 0.30 | Monitoring article is described as an overview of capabilities and exporter choice; no indication of specific error codes, configuration tables, or parameter defaults unique to this product. Likely conceptual/how-to monitoring guidance rather than detailed troubleshooting, configuration, or limits. |
@@ -381,3 +378,4 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Log
 | [About triggers and bindings](https://learn.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings) | 0.10 | Page is a high-level conceptual overview of Azure Functions triggers and bindings without detailed limits, configuration tables, error codes, or product-specific numeric thresholds. |
 | [Functions overview](https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview) | 0.10 | High-level overview of Azure Functions; no specific limits, configuration tables, error codes, or product-specific decision matrices. |
 | [Get started](https://learn.microsoft.com/en-us/azure/azure-functions/functions-get-started) | 0.10 | Getting-started navigation article pointing to other content; no indication of specific limits, configs, or troubleshooting details. |
+| [IntelliJ IDEA](https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-maven-intellij) | 0.10 | Tutorial-style guide for creating and running a Java HTTP-triggered Azure Function using IntelliJ. It focuses on step-by-step creation and deployment, not on limits, configuration matrices, error-code troubleshooting, or product-specific quotas/thresholds. No detailed tables of settings, limits, or decision criteria are indicated, so it doesn't meet the expert-knowledge criteria for any sub-skill type. |

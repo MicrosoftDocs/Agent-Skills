@@ -1,8 +1,9 @@
 ---
-generated_at: '2026-06-07'
+generated_at: '2026-06-21'
 category_descriptions:
   best-practices: Guidance on DDoS Protection design, cost optimization, incident
-    response planning, and safely running/simulating DDoS tests in Azure environments
+    response planning, and running/evaluating attack simulations to validate and improve
+    your protection strategy.
   decision-making: Guidance on when to enable Azure DDoS Protection, comparing Standard
     tiers and pricing, and choosing the best tier for your app’s scale, risk, and
     cost requirements.
@@ -19,16 +20,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure DDos Protection development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   security, and configuration. Use when enabling DDoS IP/Network Protection, tuning
-  policies, analyzing logs, simulating attacks, or using Azure Policy, and other Azure
+  policies, analyzing logs/alerts, or running attack simulations, and other Azure
   DDos Protection related development tasks. Not for Azure Firewall (use azure-firewall),
-  Azure Web Application Firewall (use azure-web-application-firewall), Azure Front
-  Door (use azure-front-door), Azure Virtual Network (use azure-virtual-network).
+  Azure Web Application Firewall (use azure-web-application-firewall), Azure Virtual
+  Network (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager).
 use_when: Use when enabling DDoS IP/Network Protection, tuning policies, analyzing
-  logs, simulating attacks, or using Azure Policy, and other Azure DDos Protection
-  related development tasks.
+  logs/alerts, or running attack simulations, and other Azure DDos Protection related
+  development tasks.
 confusable_not_for: Not for Azure Firewall (use azure-firewall), Azure Web Application
-  Firewall (use azure-web-application-firewall), Azure Front Door (use azure-front-door),
-  Azure Virtual Network (use azure-virtual-network).
+  Firewall (use azure-web-application-firewall), Azure Virtual Network (use azure-virtual-network),
+  Azure Virtual Network Manager (use azure-virtual-network-manager).
 ---
 # Azure DDos Protection Crawl Report
 
@@ -42,8 +43,8 @@ confusable_not_for: Not for Azure Firewall (use azure-firewall), Azure Web Appli
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 34
+- **Updated Pages**: 1
+- **Unchanged**: 33
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-ddos-protection/azure-ddos-protection.csv`
 
@@ -60,6 +61,11 @@ confusable_not_for: Not for Azure Firewall (use azure-firewall), Azure Web Appli
 | *(Unclassified)* | 9 | 26.5% |
 
 ## Changes
+
+### Updated Pages
+
+- [Test with simulation partners](https://learn.microsoft.com/en-us/azure/ddos-protection/test-through-simulations)
+  - Updated: 2026-03-17T08:00:00.000Z → 2026-06-17T22:15:00.000Z
 
 ## Classified Pages
 
@@ -83,11 +89,11 @@ confusable_not_for: Not for Azure Firewall (use azure-firewall), Azure Web Appli
 | [Monitor Azure DDoS Protection](https://learn.microsoft.com/en-us/azure/ddos-protection/monitor-ddos-protection) | configuration | 0.70 | Monitoring reference-style article describing types of metrics and logs available for DDoS Protection and how to collect/analyze them; typically includes metric names and log categories, which are configuration details for monitoring. |
 | [PowerShell](https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-protection-powershell) | security | 0.70 | PowerShell quickstart necessarily includes specific cmdlet names, parameter names, and required values to create and link a DDoS protection plan to a virtual network. These are product-specific security configuration details beyond generic knowledge. |
 | [PowerShell](https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-protection-powershell-ip) | security | 0.70 | PowerShell quickstart uses specific DDoS IP Protection cmdlets and parameters to attach protection to a public IP, representing detailed security configuration patterns. |
-| [Test with simulation partners](https://learn.microsoft.com/en-us/azure/ddos-protection/test-through-simulations) | best-practices | 0.70 | Guidance on how and when to run DDoS simulations (staging vs nonpeak, validating behavior, identifying gaps); these are concrete, product-specific operational recommendations, fitting best-practices. |
 | [Tier comparison](https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-protection-sku-comparison) | decision-making | 0.70 | Tier comparison article for DDoS Protection; such pages typically include comparison tables of capabilities and constraints between Network Protection and IP Protection tiers to guide selection, which is product-specific decision guidance. |
 | [Components of a DDoS response strategy](https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-response-strategy) | best-practices | 0.65 | Covers components of a DDoS response strategy using Azure DDoS Protection; likely includes concrete, product-specific recommendations and steps to incorporate DDoS mitigation into incident response, fitting best-practices. |
 | [Portal](https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-ip-protection-portal) | security | 0.65 | Portal quickstart for IP Protection shows exact steps and settings to enable DDoS IP Protection on a public IP resource, which are concrete, product-specific security configuration details. |
 | [Portal](https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-protection) | security | 0.65 | Quickstart shows concrete, product-specific configuration steps for enabling DDoS Network Protection on virtual networks and linking plans across subscriptions/tenants. While it’s a tutorial, it encodes exact resource types, required relationships, and portal configuration paths that are specific to Azure DDoS security setup. |
+| [Test with simulation partners](https://learn.microsoft.com/en-us/azure/ddos-protection/test-through-simulations) | best-practices | 0.65 | The page provides product-specific, actionable guidance on how and when to run DDoS simulation tests (for example, using staging environments or non-peak hours, validating application behavior, and feeding findings into a DDoS response strategy). This is concrete, Azure DDoS–specific operational advice rather than generic security concepts, fitting best under best-practices even though it doesn’t focus on numeric limits or configuration tables. |
 | [View alerts in Microsoft Defender for Cloud](https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-view-alerts-defender-for-cloud) | troubleshooting | 0.65 | Describes specific DDoS-related security alerts in Defender for Cloud and actions to mitigate attacks; this is symptom (alert) → recommended actions mapping, fitting troubleshooting for this integration. |
 | [View diagnostic logs in Log Analytics workspace](https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-view-diagnostic-logs) | troubleshooting | 0.65 | Explains how to view DDoS notifications, mitigation reports, and flow logs, including when reports are generated during attacks; provides product-specific diagnostic data usage, fitting troubleshooting/diagnostics. |
 

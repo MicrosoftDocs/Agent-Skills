@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure S
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 10
-- **Unchanged**: 157
+- **Updated Pages**: 0
+- **Unchanged**: 167
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-stream-analytics/azure-stream-analytics.csv`
 
@@ -76,29 +76,6 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure S
 | *(Unclassified)* | 56 | 33.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [X sentiment analysis](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-twitter-sentiment-analysis-trends)
-  - Updated: 2024-08-09T05:35:00.000Z → 2026-06-10T08:00:00.000Z
-- [Use activity and resource logs](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-job-diagnostic-logs)
-  - Updated: 2024-07-16T17:03:00.000Z → 2026-06-11T17:23:00.000Z
-- [Build an End-to-End streaming application](https://learn.microsoft.com/en-us/azure/stream-analytics/quick-start-build-application)
-  - Updated: 2023-03-17T00:00:00.000Z → 2026-06-11T17:23:00.000Z
-- [Custom path patterns](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-custom-path-patterns-blob-storage-output)
-  - Updated: 2024-06-07T05:36:00.000Z → 2026-06-11T17:23:00.000Z
-- [Input](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-troubleshoot-input)
-  - Updated: 2024-03-01T18:05:00.000Z → 2026-06-11T17:23:00.000Z
-- [Output](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-troubleshoot-output)
-  - Updated: 2023-12-17T12:33:00.000Z → 2026-06-10T08:00:00.000Z
-- [Event ordering overview](https://learn.microsoft.com/en-us/azure/stream-analytics/event-ordering)
-  - Updated: 2022-12-01T12:18:00.000Z → 2026-06-11T17:23:00.000Z
-- [Error policy](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-output-error-policy)
-  - Updated: 2021-12-01T12:04:00.000Z → 2026-06-11T17:23:00.000Z
-- [Test query](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-test-query)
-  - Updated: 2022-01-04T12:03:00.000Z → 2026-06-11T17:23:00.000Z
-- [Run job in your virtual network](https://learn.microsoft.com/en-us/azure/stream-analytics/run-job-in-virtual-network)
-  - Updated: 2025-05-09T17:03:00.000Z → 2026-06-11T17:23:00.000Z
 
 ## Classified Pages
 

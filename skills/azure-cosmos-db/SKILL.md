@@ -1,9 +1,9 @@
 ---
 name: azure-cosmos-db
-description: Expert knowledge for Azure Cosmos DB development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Cosmos DB NoSQL/Mongo/Cassandra APIs, change feed, vector search, multi-region, or AI/RAG workloads, and other Azure Cosmos DB related development tasks. Not for Azure Table Storage (use azure-table-storage), Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance), Azure Data Explorer (use azure-data-explorer).
+description: Expert knowledge for Azure Cosmos DB development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Cosmos DB NoSQL/Mongo/Cassandra/PostgreSQL APIs, change feed, vector search, multi-region, or AI/RAG workloads, and other Azure Cosmos DB related development tasks. Not for Azure Table Storage (use azure-table-storage), Azure SQL Database (use azure-sql-database), Azure Database for MySQL (use azure-database-mysql), Azure Database for PostgreSQL (use azure-database-postgresql).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-14"
+  generated_at: "2026-06-21"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Cosmos DB Skill
@@ -25,13 +25,13 @@ This skill requires **network access** to fetch documentation content:
 | Category | Location | Description |
 |----------|----------|-------------|
 | Troubleshooting | L37-L90 | Diagnosing and fixing Cosmos DB issues across APIs (Cassandra, Gremlin, MongoDB, PostgreSQL, SQL), including errors, timeouts, performance, encryption/CMK, connectivity, and SDK/client problems. |
-| Best Practices | L91-L157 | Performance, cost, resiliency, and SDK best practices for Cosmos DB (NoSQL, Mongo, Cassandra, PostgreSQL), including partitioning, indexing, RU optimization, change feed, HA/DR, and scaling. |
+| Best Practices | L91-L157 | Performance, cost, resiliency, and SDK best practices for Cosmos DB (NoSQL, Mongo, Cassandra, PostgreSQL), including partitioning, indexing, RU optimization, change feed, DR, and HA. |
 | Decision Making | L158-L219 | Guides for choosing Cosmos DB/DocumentDB/PostgreSQL options (throughput, consistency, regions, pricing) and planning migrations, upgrades, analytics, and vector index strategies. |
-| Architecture & Design Patterns | L220-L252 | Architectural patterns for AI/RAG, agent memory, knowledge graphs, multi-tenant and microservice designs, high availability, change feed, analytics, and vector search on Cosmos DB and PostgreSQL. |
-| Limits & Quotas | L253-L293 | Limits, quotas, and behaviors for Cosmos DB (and DocumentDB): throughput, autoscale, burst, partitions, backups/restore, serverless, free tier, indexing, Gremlin, PostgreSQL, and Cassandra. |
-| Security | L294-L365 | Securing Cosmos DB: identity/RBAC, network isolation, encryption/CMK, auditing, data masking, TLS, governance/Policy, and best practices across NoSQL, MongoDB, Cassandra, Gremlin, PostgreSQL, and DocumentDB. |
-| Configuration | L366-L498 | Configuring Cosmos DB and related services: throughput, indexing, backup/restore, monitoring, emulators, vector/search, multi-region, Cassandra/Mongo/PostgreSQL/Table APIs, and SDK performance/observability. |
-| Integrations & Coding Patterns | [integrations.md](integrations.md) | SDK usage, bulk ops, change feed, vector search, Kafka/Spark/AI integrations, and migration patterns for Cosmos DB (NoSQL, Mongo, Cassandra, Gremlin, PostgreSQL, DocumentDB). |
+| Architecture & Design Patterns | L220-L251 | Architectural patterns for AI/RAG, agent memory, knowledge graphs, multi-tenant and microservice designs, high availability, change feed, analytics, and vector search on Cosmos DB and PostgreSQL. |
+| Limits & Quotas | L252-L292 | Limits, quotas, and behaviors for Cosmos DB (and DocumentDB): throughput, autoscale, burst, partitions, backups/restore, serverless, free tier, indexing, Gremlin, PostgreSQL, and Cassandra. |
+| Security | L293-L365 | Securing Cosmos DB across all APIs: identity/RBAC, network isolation, encryption/CMK, auditing, firewall/TLS, data masking, Defender/Policy governance, and PostgreSQL/Cassandra/Mongo-specific hardening. |
+| Configuration | L366-L495 | Configuring Cosmos DB and related services: throughput, indexing, backup/restore, monitoring, emulators, vector/search, multi-region, Cassandra/Mongo/PostgreSQL/Table APIs, and SDK performance/observability. |
+| Integrations & Coding Patterns | [integrations.md](integrations.md) | SDK usage patterns, bulk ops, change feed, vector search, Kafka/Spark/BI integrations, and language-specific samples for connecting, migrating, and querying all Cosmos DB APIs. |
 | Deployment | [deployment.md](deployment.md) | Deploying and managing Cosmos DB (NoSQL, Mongo, Cassandra, PostgreSQL, Table, DocumentDB) with Bicep/ARM/Terraform, CI/CD, emulator, migrations, upgrades, and maintenance. |
 
 ### Troubleshooting
@@ -95,8 +95,8 @@ This skill requires **network access** to fetch documentation content:
 | Benchmark Cosmos DB for NoSQL with YCSB | https://learn.microsoft.com/en-us/azure/cosmos-db/benchmarking-framework |
 | Follow best practices for Cosmos DB .NET SDK v3 | https://learn.microsoft.com/en-us/azure/cosmos-db/best-practice-dotnet |
 | Apply Java v4 Cosmos DB SDK best practices | https://learn.microsoft.com/en-us/azure/cosmos-db/best-practice-java |
-| Use Python Cosmos DB SDK with best practices | https://learn.microsoft.com/en-us/azure/cosmos-db/best-practice-python |
-| Apply JavaScript Cosmos DB SDK best practices | https://learn.microsoft.com/en-us/azure/cosmos-db/best-practices-javascript |
+| Optimize Azure Cosmos DB with Python SDK best practices | https://learn.microsoft.com/en-us/azure/cosmos-db/best-practice-python |
+| Optimize Azure Cosmos DB with JavaScript SDK best practices | https://learn.microsoft.com/en-us/azure/cosmos-db/best-practices-javascript |
 | Adapt Apache Cassandra apps to Cosmos DB Cassandra | https://learn.microsoft.com/en-us/azure/cosmos-db/cassandra/adoption |
 | Consume change feed from Cosmos DB Cassandra | https://learn.microsoft.com/en-us/azure/cosmos-db/cassandra/change-feed |
 | Map Cassandra consistency levels to Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/cassandra/consistency-mapping |
@@ -226,7 +226,6 @@ This skill requires **network access** to fetch documentation content:
 | Use Cosmos DB change feed for real-time analytics | https://learn.microsoft.com/en-us/azure/cosmos-db/changefeed-ecommerce-solution |
 | Design agent memory patterns with Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/agentic-memories |
 | Design AI knowledge graphs with Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/cosmos-ai-graph |
-| Design RAG architectures with Cosmos DB vector search | https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/rag |
 | Supply chain traceability solution with Cosmos DB Gremlin | https://learn.microsoft.com/en-us/azure/cosmos-db/gremlin/solution-supply-chain-traceability |
 | Configure multiple Azure Functions triggers for Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-create-multiple-cosmos-db-triggers |
 | Design Azure Cosmos DB multi-region write strategies | https://learn.microsoft.com/en-us/azure/cosmos-db/multi-region-writes |
@@ -312,7 +311,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure Azure Private Link for Cosmos DB access | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-configure-private-endpoints |
 | Set up virtual network service endpoints for Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-configure-vnet-service-endpoint |
 | Configure RBAC and Entra ID for Cosmos DB access | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-connect-role-based-access-control |
-| Rotate Azure Cosmos DB keys securely with Entra ID | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-rotate-keys |
+| Rotate primary and secondary keys in Azure Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-rotate-keys |
 | Set up cross-tenant customer-managed keys for Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-setup-cross-tenant-customer-managed-keys |
 | Configure customer-managed keys with Azure Key Vault for Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-setup-customer-managed-keys |
 | Enable customer-managed keys on existing Cosmos DB accounts | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-setup-customer-managed-keys-existing-accounts |
@@ -361,6 +360,7 @@ This skill requires **network access** to fetch documentation content:
 | Assign Cosmos DB service principal roles for Cassandra managed instances | https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/add-service-principal |
 | Configure customer-managed keys for Cassandra managed instances | https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/customer-managed-keys |
 | Configure LDAP authentication for Azure Cassandra MI | https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/ldap |
+| Configure outbound network rules for Cassandra managed instances | https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/network-rules |
 | Secure Cassandra managed instances with VPN and routing rules | https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/use-vpn |
 
 ### Configuration
@@ -383,7 +383,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure and use Cosmos DB full-text search | https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/full-text-search |
 | Configure hybrid vector and full-text search in Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/hybrid-search |
 | Configure Sharded DiskANN vector indexes in Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/sharded-diskann |
-| Configure and run vector similarity search in Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/vector-search-overview |
 | Enable and use CDC in Cosmos DB analytical store | https://learn.microsoft.com/en-us/azure/cosmos-db/get-started-change-data-capture |
 | Access and use system properties in Cosmos DB Gremlin | https://learn.microsoft.com/en-us/azure/cosmos-db/gremlin/access-system-properties |
 | Interpret execution profile metrics in Cosmos DB Gremlin | https://learn.microsoft.com/en-us/azure/cosmos-db/gremlin/reference-execution-profile |
@@ -461,7 +460,6 @@ This skill requires **network access** to fetch documentation content:
 | Use Cosmos DB SQL query metrics for performance analysis | https://learn.microsoft.com/en-us/azure/cosmos-db/query-metrics |
 | Retrieve Cosmos DB SQL query performance metrics with .NET SDK | https://learn.microsoft.com/en-us/azure/cosmos-db/query-metrics-performance |
 | Retrieve Cosmos DB query execution metrics with Python SDK | https://learn.microsoft.com/en-us/azure/cosmos-db/query-metrics-performance-python |
-| Create and configure Cosmos DB vector index with TypeScript | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-create-vector-index-typescript |
 | Configure Cosmos DB account, database, and container | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-portal |
 | Provision Cosmos DB resources using Bicep | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-template-bicep |
 | Provision Cosmos DB with ARM templates | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-template-json |
@@ -494,4 +492,3 @@ This skill requires **network access** to fetch documentation content:
 | Automate Cassandra managed instance resource management with CLI | https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/manage-resources-cli |
 | Enable and configure materialized views in Cassandra managed instances | https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/materialized-views |
 | Configure Azure Monitor metrics and logs for Cassandra managed instances | https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/monitor-clusters |
-| Configure required outbound network rules for Cassandra managed instances | https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/network-rules |

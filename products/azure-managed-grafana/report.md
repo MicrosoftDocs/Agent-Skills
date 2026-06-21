@@ -1,11 +1,11 @@
 ---
-generated_at: '2026-06-14'
+generated_at: '2026-06-21'
 category_descriptions:
   integrations: Connecting Grafana to Azure/AKS/Prometheus data, configuring data
     source plugins, MCP endpoints, AI agents, and setting up monitoring dashboards
     and alert integrations.
-  security: 'Securing Managed Grafana: auth and RBAC, data encryption, private endpoints,
-    outbound IPs, service accounts/tokens, Entra team sync, Azure Monitor access,
+  security: 'Securing Managed Grafana: auth and RBAC, Entra/Team Sync, service accounts/tokens,
+    private endpoints and outbound IPs, data encryption/storage, Azure Monitor access,
     and security best practices.'
   limits-quotas: Limits, quotas, regions, and support for Azure Managed Grafana, plus
     constraints and how to use/report on image rendering and reporting features.
@@ -21,17 +21,15 @@ category_descriptions:
     access, configuration, and private endpoint connectivity and DNS problems.
 skill_description: Expert knowledge for Azure Managed Grafana development including
   troubleshooting, decision making, limits & quotas, security, configuration, integrations
-  & coding patterns, and deployment. Use when wiring Azure data sources, securing
-  workspaces, configuring plugins/alerts, HA deployment, or private endpoints, and
-  other Azure Managed Grafana related development tasks. Not for Azure Monitor (use
-  azure-monitor), Azure Application Gateway (use azure-application-gateway), Azure
-  Load Balancer (use azure-load-balancer), Azure Traffic Manager (use azure-traffic-manager).
-use_when: Use when wiring Azure data sources, securing workspaces, configuring plugins/alerts,
-  HA deployment, or private endpoints, and other Azure Managed Grafana related development
-  tasks.
-confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Application Gateway
-  (use azure-application-gateway), Azure Load Balancer (use azure-load-balancer),
-  Azure Traffic Manager (use azure-traffic-manager).
+  & coding patterns, and deployment. Use when configuring Azure data sources, Entra/RBAC
+  access, private endpoints, HA workspaces, or alert/reporting setup, and other Azure
+  Managed Grafana related development tasks. Not for Azure Monitor (use azure-monitor),
+  Azure Data Explorer (use azure-data-explorer).
+use_when: Use when configuring Azure data sources, Entra/RBAC access, private endpoints,
+  HA workspaces, or alert/reporting setup, and other Azure Managed Grafana related
+  development tasks.
+confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Data Explorer
+  (use azure-data-explorer).
 ---
 # Azure Managed Grafana Crawl Report
 
@@ -44,9 +42,9 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Application
 - **Unclassified**: 8
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 6
-- **Unchanged**: 38
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 44
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-managed-grafana/azure-managed-grafana.csv`
 
@@ -65,24 +63,10 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Application
 
 ## Changes
 
-### New Pages
-
-- [Authenticate data plane APIs with Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-authenticate-data-plane-api)
-
 ### Updated Pages
 
-- [FAQ](https://learn.microsoft.com/en-us/azure/managed-grafana/faq)
-  - Updated: 2025-05-19T15:23:00.000Z → 2026-06-11T11:42:00.000Z
-- [Remote MCP server](https://learn.microsoft.com/en-us/azure/managed-grafana/grafana-mcp-server)
-  - Updated: 2026-05-14T17:14:00.000Z → 2026-05-28T08:00:00.000Z
-- [Configure Grafana resource authentication and permissions](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-authentication-permissions)
-  - Updated: 2025-10-01T11:10:00.000Z → 2026-06-11T11:42:00.000Z
-- [Use service accounts](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-service-accounts)
-  - Updated: 2025-10-30T08:00:00.000Z → 2026-05-28T08:00:00.000Z
-- [Configure MCP for AI Foundry agents](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-configure-mcp-for-ai-foundry)
-  - Updated: 2026-03-10T22:11:00.000Z → 2026-06-11T11:42:00.000Z
-- [Troubleshoot common issues](https://learn.microsoft.com/en-us/azure/managed-grafana/troubleshoot-managed-grafana)
-  - Updated: 2025-04-16T08:00:00.000Z → 2026-05-28T08:00:00.000Z
+- [Authenticate data plane APIs with Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-authenticate-data-plane-api)
+  - Updated: 2026-06-11T11:42:00.000Z → 2026-06-15T11:43:00.000Z
 
 ## Classified Pages
 
@@ -98,9 +82,9 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Application
 | [Set up private access](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-set-up-private-access) | security | 0.80 | Covers disabling public access and configuring private endpoints; product-specific network security configuration. |
 | [Troubleshoot common issues](https://learn.microsoft.com/en-us/azure/managed-grafana/troubleshoot-managed-grafana) | troubleshooting | 0.80 | Described as a troubleshooting guide for errors related to data fetching, dashboards, and performance, which typically includes symptom-to-cause-to-solution mappings and possibly specific error messages unique to Azure Managed Grafana. |
 | [Use Grafana Team Sync](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-sync-teams-with-entra-groups) | security | 0.80 | Describes mapping Microsoft Entra groups to Grafana Teams and interaction with Azure RBAC roles; product-specific permission configuration. |
+| [Authenticate data plane APIs with Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-authenticate-data-plane-api) | security | 0.78 | Contains product-specific authentication details, including the exact Microsoft Entra audience/application ID (6f2d169c-08f3-4a4c-a982-bcaf2d038c45) required to obtain tokens for Azure Managed Grafana data plane APIs and guidance on which token acquisition methods to use. These are concrete, service-unique security configuration parameters that an LLM is unlikely to know from training. |
 | [Grafana settings](https://learn.microsoft.com/en-us/azure/managed-grafana/grafana-settings) | configuration | 0.78 | A Grafana settings page for a managed service typically enumerates concrete configuration keys, allowed values, and defaults that differ from generic Grafana. These product-specific parameters and how they behave in Azure Managed Grafana qualify as configuration expert knowledge. |
 | [Manage access and permissions for users and identities](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-manage-access-permissions-users-identities) | security | 0.76 | A guide on assigning roles to users, groups, service principals, and managed identities in Azure Managed Grafana will include specific role names, permission scopes, and IAM configuration steps, which are product-specific security details. |
-| [Authenticate data plane APIs with Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-authenticate-data-plane-api) | security | 0.75 | Explains how to obtain Microsoft Entra ID tokens for Grafana data plane APIs and specifies the required audience value (https://dashboard.azure.com). This is precise, product-specific authentication configuration detail. |
 | [Configure MCP for AI Foundry agents](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-configure-mcp-for-ai-foundry) | integrations | 0.75 | Shows how to wire the Azure Managed Grafana MCP endpoint into Azure AI Foundry agents so they can query Azure resources, metrics, logs, and dashboards. This is a concrete cross-service integration pattern with product-specific configuration steps. |
 | [Configure data sources](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-data-source-plugins-managed-identity) | integrations | 0.75 | Covers supported data sources per plan and how to add/configure/remove them; includes plan-specific support matrix and data source configuration details. |
 | [Connect to a data source privately](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-connect-to-data-source-privately) | security | 0.75 | Explains managed private endpoints in a managed VNet and how they link to Azure data sources; product-specific private connectivity configuration. |

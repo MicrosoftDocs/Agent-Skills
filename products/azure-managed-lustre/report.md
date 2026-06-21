@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-14'
+generated_at: '2026-06-21'
 category_descriptions:
   configuration: 'Configuring Azure Managed Lustre clients and file systems: network/storage
     prerequisites, fstab auto-mounts, client install/upgrade, ARM/Bicep deployment,
@@ -9,8 +9,8 @@ category_descriptions:
   integrations: Integrating Azure Managed Lustre with Blob Storage, Linux/AKS clients,
     Terraform, and AzCopy, including import/export pipelines, auto-sync, and CSI driver-based
     Kubernetes usage.
-  deployment: Planning how to install and configure Azure Managed Lustre clients on
-    compute nodes, including supported methods, prerequisites, and deployment considerations.
+  deployment: Guidance on planning and choosing Azure Managed Lustre client installation
+    methods, including supported client types, prerequisites, and deployment considerations.
   security: 'Securing Azure Managed Lustre: secure boot, firewalls/NSGs, CMK encryption,
     root squash access controls, and virtual network encryption configuration and
     validation.'
@@ -26,15 +26,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Managed Lustre development including
   troubleshooting, best practices, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  using Blob sync, AKS CSI, Terraform, AzCopy pipelines, HA/DR layouts, or quota-tuned
-  HPC workloads, and other Azure Managed Lustre related development tasks. Not for
-  Azure HPC Cache (use azure-hpc-cache), Azure NetApp Files (use azure-netapp-files),
-  Azure Virtual Machines (use azure-virtual-machines).
-use_when: Use when using Blob sync, AKS CSI, Terraform, AzCopy pipelines, HA/DR layouts,
-  or quota-tuned HPC workloads, and other Azure Managed Lustre related development
+  mounting AML clients, linking Blob, using CSI on AKS, setting quotas, or tuning
+  Lustre performance, and other Azure Managed Lustre related development tasks. Not
+  for Azure HPC Cache (use azure-hpc-cache), Azure NetApp Files (use azure-netapp-files),
+  Azure Blob Storage (use azure-blob-storage), Azure Elastic SAN (use azure-elastic-san).
+use_when: Use when mounting AML clients, linking Blob, using CSI on AKS, setting quotas,
+  or tuning Lustre performance, and other Azure Managed Lustre related development
   tasks.
 confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure NetApp Files
-  (use azure-netapp-files), Azure Virtual Machines (use azure-virtual-machines).
+  (use azure-netapp-files), Azure Blob Storage (use azure-blob-storage), Azure Elastic
+  SAN (use azure-elastic-san).
 ---
 # Azure Managed Lustre Crawl Report
 
@@ -43,13 +44,13 @@ confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure NetApp 
 - **Total Pages**: 31
 - **Fetched**: 31
 - **Fetch Failed**: 0
-- **Classified**: 28
-- **Unclassified**: 3
+- **Classified**: 27
+- **Unclassified**: 4
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 30
+- **Updated Pages**: 2
+- **Unchanged**: 29
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-managed-lustre/azure-managed-lustre.csv`
 
@@ -59,20 +60,22 @@ confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure NetApp 
 |------|-------|------------|
 | architecture-patterns | 1 | 3.2% |
 | best-practices | 2 | 6.5% |
-| configuration | 6 | 19.4% |
+| configuration | 5 | 16.1% |
 | deployment | 1 | 3.2% |
 | integrations | 9 | 29.0% |
 | limits-quotas | 1 | 3.2% |
 | security | 6 | 19.4% |
 | troubleshooting | 2 | 6.5% |
-| *(Unclassified)* | 3 | 9.7% |
+| *(Unclassified)* | 4 | 12.9% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Install Lustre client](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/client-install)
-  - Updated: 2026-06-03T22:09:00.000Z → 2026-06-11T22:13:00.000Z
+- [Plan your client install](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/client-install-plan)
+  - Updated: 2026-06-03T22:09:00.000Z → 2026-06-19T22:04:00.000Z
+- [Upgrade Lustre client](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/client-upgrade)
+  - Updated: 2026-06-03T22:09:00.000Z → 2026-06-19T08:00:00.000Z
 
 ## Classified Pages
 
@@ -95,7 +98,7 @@ confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure NetApp 
 | [Migrate data from on-premises POSIX file systems](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/migrate-data-from-linux) | integrations | 0.70 | The migration article describes a concrete integration pattern between on-premises POSIX file systems, Azure Blob Storage, and Azure Managed Lustre using AzCopy. Such guidance typically includes AzCopy command parameters, flags to preserve POSIX properties, container and path conventions, and service-specific options, which are product-specific integration and coding patterns rather than generic tutorial content. |
 | [Monitor a file system](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/monitor-file-system) | configuration | 0.70 | Describes which metrics/logs are emitted and how to configure collection and alerts; includes product-specific monitoring configuration steps. |
 | [Optimize file and directory layouts](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/optimize-file-layouts) | best-practices | 0.70 | Focuses on scaling file/directory layouts for performance; likely includes concrete recommendations (stripe counts, directory structures) specific to this product. |
-| [Plan your client install](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/client-install-plan) | deployment | 0.70 | Describes a support matrix for distributions, architectures, and kernels plus how to choose between prebuilt kmod and DKMS based on environment and Secure Boot; this is deployment-method selection guidance with product-specific constraints. |
+| [Plan your client install](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/client-install-plan) | deployment | 0.70 | The page includes a support matrix for distributions, architectures, and kernels, and guides choosing between prebuilt kmod and DKMS methods based on environment and Secure Boot requirements. This is product-specific deployment/installation decision guidance with matrix-style constraints, fitting deployment best. |
 | [Use Azure Blob Storage with Azure Managed Lustre](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/blob-integration) | integrations | 0.70 | Explains blob integration requirements and configuration for containers and file systems; includes product-specific parameters and behaviors for this integration. |
 | [Use Azure Firewall with Azure Managed Lustre](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/configure-firewall) | security | 0.70 | Provides firewall rule and topology guidance specific to Managed Lustre traffic patterns, which are product-specific security/network configuration practices. |
 | [Connect client to the file system](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/connect-clients) | integrations | 0.65 | Explains how to prepare Linux clients and mount the Azure Managed Lustre file system, likely including mount options and parameters specific to this service, which are integration patterns between clients and AML. |
@@ -105,7 +108,6 @@ confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure NetApp 
 | [Import data using auto-import jobs](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/auto-import) | integrations | 0.65 | Auto-import feature requires specific configuration options and behavior (sync semantics, triggers) that are unique integration details. |
 | [Import data using manual import jobs](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/create-import-job) | integrations | 0.65 | Covers configuration of import jobs between Blob and Lustre, including job parameters and behavior unique to this integration. |
 | [Recover from a regional outage](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/amlfs-region-recovery) | architecture-patterns | 0.65 | Describes a specific DR pattern using multi-region Blob and clusters; includes product-specific architectural guidance and trade-offs for failover. |
-| [Upgrade Lustre client](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/client-upgrade) | configuration | 0.65 | Covers product-specific steps and requirements to upgrade existing Lustre client packages to the current version so they can connect to Azure Managed Lustre; this is concrete upgrade/configuration guidance. |
 
 ## Unclassified Pages
 
@@ -114,3 +116,4 @@ confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure NetApp 
 | [Install Lustre client](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/client-install) | 0.30 | Primarily a step-by-step client installation guide for Azure Managed Lustre with OS-specific instructions; no clear indication of configuration parameter tables, limits, quotas, or other structured expert details as defined by the sub-skill types. |
 | [Create file system in Azure portal](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/create-file-system-portal) | 0.20 | The page is a step-by-step portal creation guide for an Azure Managed Lustre file system. From the description/summary, it appears to focus on how to create the resource via the portal, without indicating detailed limits, configuration parameter tables, error codes, or other expert-only reference data. It reads as a basic tutorial rather than reference documentation with expert knowledge. |
 | [Introduction to Azure Managed Lustre](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/amlfs-overview) | 0.20 | High-level service overview and benefits; no detailed limits, configs, or error mappings. |
+| [Upgrade Lustre client](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/client-upgrade) | 0.20 | The summary indicates a procedural upgrade guide referencing other pages for matrices and installation choices, but does not itself mention specific limits, configuration tables, error codes, or decision matrices. It appears to be a straightforward how-to without the expert-knowledge patterns defined. |

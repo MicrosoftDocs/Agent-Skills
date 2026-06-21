@@ -1,9 +1,9 @@
 ---
 name: azure-energy-data-services
-description: Expert knowledge for Azure Energy Data Services development including troubleshooting, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when configuring ADME tiers, partitions, CORS, Databricks/Fabric links, or DDMS/RAFS/Seismic/Well APIs, and other Azure Energy Data Services related development tasks. Not for Azure Data Explorer (use azure-data-explorer), Azure Synapse Analytics (use azure-synapse-analytics), Azure Databricks (use azure-databricks), Azure Data Factory (use azure-data-factory).
+description: Expert knowledge for Azure Energy Data Services development including troubleshooting, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when configuring ADME tiers, partitions & zones, DDMS/ACZ/EDS APIs, security controls, or Geospatial CZ on AKS, and other Azure Energy Data Services related development tasks. Not for Azure Data Explorer (use azure-data-explorer), Azure Synapse Analytics (use azure-synapse-analytics), Azure Data Factory (use azure-data-factory), Azure Databricks (use azure-databricks).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-14"
+  generated_at: "2026-06-21"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Energy Data Services Skill
@@ -29,7 +29,7 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L46-L50 | Guidance on architecting resilient ADME deployments in Azure Energy Data Services, including zone redundancy, disaster recovery strategies, and high-availability design patterns. |
 | Security | L51-L64 | Securing ADME: auth tokens, ACLs, encryption, legal tags, user/group entitlements, managed identities, private endpoints, API Management, and support access controls. |
 | Configuration | L65-L73 | Configuring Azure Data Manager for Energy: data partitions, analytics zone setup, CORS, audit logging, and milestone upgrade settings. |
-| Integrations & Coding Patterns | L74-L94 | Integrating Energy Data Services with Databricks, Fabric, external data sources, logs/monitoring, large file upload, and using DDMS/RAFS/Seismic/Well APIs and CLI for subsurface data. |
+| Integrations & Coding Patterns | L74-L94 | Integrating Azure Energy Data Services with Databricks/Fabric, configuring external data/log export, and using DDMS/ACZ/EDS APIs and tools to read, write, and manage subsurface and well data. |
 | Deployment | L95-L99 | Guides for deploying Azure Energy Data Services components, including Geospatial Consumption Zone on AKS and the OSDU Admin UI for Azure Data Manager for Energy administration |
 
 ### Troubleshooting

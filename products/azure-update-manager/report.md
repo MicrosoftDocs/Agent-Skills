@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-07'
+generated_at: '2026-06-21'
 category_descriptions:
   deployment: 'Deploying and managing Automanage/Update Manager at scale: onboarding
     VMs and Arc servers, moving/repairing configs across regions/tenants, policies,
@@ -7,17 +7,16 @@ category_descriptions:
   best-practices: Best practices for configuring Automanage and guest patching on
     Windows/Linux/Arc VMs, handling SQL Server and Ubuntu/Ubuntu Pro updates, and
     managing SMB over QUIC in Update Manager.
-  troubleshooting: Diagnosing and fixing Azure Update Manager and Automanage onboarding
-    issues, including common error codes, connectivity problems, and remediation steps
-    for failed update operations.
+  troubleshooting: Diagnosing and fixing onboarding failures, extension/agent issues,
+    and common errors when using Azure Update Manager, Automanage, and Change Tracking.
   security: Configuring disk encryption for Automanaged VMs and setting up RBAC roles/permissions
     to securely manage and control access to Azure Update Manager.
   integrations: Using SDKs (Go/Java/JS/Python) and REST APIs to assign Automanage
     profiles, manage VM/Arc server updates, and implement pre/post maintenance with
     Functions, webhooks, and runbooks
-  configuration: 'Configuring Update Manager: update schedules, scopes, alerts, policies,
-    ESU, hotpatching, change tracking, workspaces/DCRs, reports, Resource Graph, and
-    cross-subscription patching.'
+  configuration: 'Configuring Update Manager behavior: update schedules, scopes, alerts,
+    ESU, Automanage profiles, Change Tracking, Resource Graph queries, and policy-based
+    or cross-subscription patching.'
   limits-quotas: OS, region, image, and workload support limits for Update Manager,
     including supported update sources/types, change tracking matrix, and unsupported
     scenarios.
@@ -26,16 +25,14 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Update Manager development including
   troubleshooting, best practices, decision making, limits & quotas, security, configuration,
   integrations & coding patterns, and deployment. Use when onboarding VMs/Arc servers,
-  configuring schedules/ESU/hotpatch, using SDK/REST APIs, or planning cross-subscription
-  patching, and other Azure Update Manager related development tasks. Not for Azure
-  Automation (use azure-automation), Azure Policy (use azure-policy), Azure Monitor
-  (use azure-monitor), Azure Resource Manager (use azure-resource-manager).
-use_when: Use when onboarding VMs/Arc servers, configuring schedules/ESU/hotpatch,
-  using SDK/REST APIs, or planning cross-subscription patching, and other Azure Update
-  Manager related development tasks.
+  configuring patch schedules/ESU, using Change Tracking, or calling Update Manager
+  APIs, and other Azure Update Manager related development tasks. Not for Azure Automation
+  (use azure-automation), Azure Policy (use azure-policy), Azure Monitor (use azure-monitor).
+use_when: Use when onboarding VMs/Arc servers, configuring patch schedules/ESU, using
+  Change Tracking, or calling Update Manager APIs, and other Azure Update Manager
+  related development tasks.
 confusable_not_for: Not for Azure Automation (use azure-automation), Azure Policy
-  (use azure-policy), Azure Monitor (use azure-monitor), Azure Resource Manager (use
-  azure-resource-manager).
+  (use azure-policy), Azure Monitor (use azure-monitor).
 ---
 # Azure Update Manager Crawl Report
 
@@ -49,8 +46,8 @@ confusable_not_for: Not for Azure Automation (use azure-automation), Azure Polic
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 84
+- **Updated Pages**: 2
+- **Unchanged**: 82
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-update-manager/azure-update-manager.csv`
 
@@ -61,14 +58,21 @@ confusable_not_for: Not for Azure Automation (use azure-automation), Azure Polic
 | best-practices | 7 | 8.3% |
 | configuration | 16 | 19.0% |
 | decision-making | 2 | 2.4% |
-| deployment | 11 | 13.1% |
+| deployment | 10 | 11.9% |
 | integrations | 9 | 10.7% |
 | limits-quotas | 5 | 6.0% |
 | security | 2 | 2.4% |
-| troubleshooting | 2 | 2.4% |
+| troubleshooting | 3 | 3.6% |
 | *(Unclassified)* | 30 | 35.7% |
 
 ## Changes
+
+### Updated Pages
+
+- [Configure Windows Update client](https://learn.microsoft.com/en-us/azure/update-manager/configure-wu-agent)
+  - Updated: 2025-11-18T18:43:00.000Z → 2026-06-15T11:43:00.000Z
+- [Azure Change Tracking and Inventory release notes](https://learn.microsoft.com/en-us/azure/azure-change-tracking-inventory/extension-version-details)
+  - Updated: 2026-01-10T06:10:00.000Z → 2026-06-18T17:32:00.000Z
 
 ## Classified Pages
 
@@ -76,16 +80,17 @@ confusable_not_for: Not for Azure Automation (use azure-automation), Azure Polic
 |-----------|------|------------|--------|
 | [Troubleshoot issues](https://learn.microsoft.com/en-us/azure/update-manager/troubleshoot) | troubleshooting | 0.90 | The page is a troubleshooting guide for Azure Update Manager, describing specific errors that can occur during deployment or use, along with how to resolve them and known issues/limitations. This matches the troubleshooting category, which is defined by symptom → cause → solution mappings and product-specific error details. |
 | [Troubleshoot onboarding errors](https://learn.microsoft.com/en-us/azure/automanage/common-errors) | troubleshooting | 0.85 | Explicit troubleshooting article for onboarding; will map specific errors and causes to mitigation steps, matching troubleshooting criteria. |
-| [Configure Windows Update client](https://learn.microsoft.com/en-us/azure/update-manager/configure-wu-agent) | configuration | 0.80 | Explains exact Windows Update settings, what Update Manager modifies, and how to avoid Group Policy conflicts—product-specific configuration parameters and behaviors. |
 | [Roles and Permissions](https://learn.microsoft.com/en-us/azure/update-manager/roles-permissions) | security | 0.80 | Roles and permissions article will list specific Azure RBAC role names and required actions/scopes for Update Manager, which is product-specific security configuration. |
 | [Support matrix for Azure Change Tracking and Inventory](https://learn.microsoft.com/en-us/azure/azure-change-tracking-inventory/change-tracking-inventory-support-matrix) | limits-quotas | 0.80 | Support matrix and limitations article will list supported regions, OS versions, and specific constraints, matching limits-quotas criteria. |
 | [Create Data Collection Rule](https://learn.microsoft.com/en-us/azure/azure-change-tracking-inventory/create-data-collection-rule) | configuration | 0.75 | Creating DCRs includes parameter names, formats, and allowed values for Change Tracking, which are detailed configuration options. |
 | [Manage update settings](https://learn.microsoft.com/en-us/azure/update-manager/manage-update-settings) | configuration | 0.75 | Focuses on managing update settings for machines; likely includes specific setting names, allowed values, and behavior unique to Update Manager. |
 | [Manage updates for Arc-enabled servers using REST API](https://learn.microsoft.com/en-us/azure/update-manager/manage-arc-enabled-servers-programmatically) | integrations | 0.75 | Covers REST API usage for Arc-enabled servers with Update Manager, including product-specific endpoints and parameters. |
 | [Manage updates for Azure VMs using REST API](https://learn.microsoft.com/en-us/azure/update-manager/manage-vms-programmatically) | integrations | 0.75 | Shows how to call Update Manager via REST for Azure VMs, including specific API endpoints, parameters, and request/response schemas unique to this service. |
+| [Configure Windows Update client](https://learn.microsoft.com/en-us/azure/update-manager/configure-wu-agent) | configuration | 0.72 | The article focuses on how Azure Update Manager interacts with the native Windows Update client and what settings it changes or must not conflict with (for Azure VMs vs Arc-enabled servers). This is product-specific configuration guidance, likely including concrete policy/registry settings and options that control behavior. It is not just conceptual; it describes what Update Manager modifies and how to configure update settings to avoid conflicts, which fits the configuration sub-skill. |
 | [ARG queries to access Azure Update Manager operations data](https://learn.microsoft.com/en-us/azure/update-manager/sample-query-logs) | configuration | 0.70 | Provides concrete sample queries and result structures for Update Manager logs, which are product-specific query patterns and schema details. |
 | [Access Azure Update Manager operations data using Azure Resource Graph](https://learn.microsoft.com/en-us/azure/update-manager/query-logs) | configuration | 0.70 | Explains how operations data is stored and accessed in Resource Graph, likely including specific resource types, properties, and query patterns unique to Update Manager. |
 | [Automate assessment at scale using Policy](https://learn.microsoft.com/en-us/azure/update-manager/periodic-assessment-at-scale) | configuration | 0.70 | Describes a specific machine setting and its behavior (fetches updates every 24 hours) and how to configure it at scale via policy—product-specific configuration detail. |
+| [Azure Change Tracking and Inventory release notes](https://learn.microsoft.com/en-us/azure/azure-change-tracking-inventory/extension-version-details) | troubleshooting | 0.70 | Release notes and known issues for the Change Tracking extension typically include version-specific bugs, symptoms, and workarounds unique to this product, which qualify as expert troubleshooting knowledge beyond generic debugging guidance. |
 | [Change a workspace and configure Data Collection Rule](https://learn.microsoft.com/en-us/azure/azure-change-tracking-inventory/tutorial-change-workspace-configure-data-collection-rule) | configuration | 0.70 | Changing workspace and configuring DCRs involves specific rule settings and parameters, fitting configuration criteria. |
 | [Check for Updates, One time update, Periodic assessment and Customer managed Schedules](https://learn.microsoft.com/en-us/azure/update-manager/support-matrix-updates) | deployment | 0.70 | Support matrix pages list exactly which OS versions, environments, and features (one-time updates, periodic assessments, scheduled patching) are supported or unsupported. This is product- and version-specific expert knowledge that changes over time and is not reliably known from training. It functions as a deployment/supportability matrix for where Update Manager can be used. |
 | [Create alerts (preview)](https://learn.microsoft.com/en-us/azure/update-manager/manage-alerts) | configuration | 0.70 | Explains how to enable alerts (preview) based on updates data; likely includes specific alert rules, conditions, and configuration parameters. |
@@ -112,7 +117,6 @@ confusable_not_for: Not for Azure Automation (use azure-automation), Azure Polic
 | [Automanage for Linux](https://learn.microsoft.com/en-us/azure/automanage/automanage-linux) | best-practices | 0.65 | Describes specific services and configurations Automanage applies to Linux VMs; these are product-specific best-practice settings. |
 | [Automanage for Windows Server](https://learn.microsoft.com/en-us/azure/automanage/automanage-windows-server) | best-practices | 0.65 | Lists concrete services and configuration behaviors Automanage enforces on Windows Server, which are product-specific best practices. |
 | [Automatic VM Guest Patching](https://learn.microsoft.com/en-us/azure/update-manager/support-matrix-automatic-guest-patching) | best-practices | 0.65 | Covers configuration steps and best practices for automatic guest patching, likely including product-specific settings and recommendations for compliance. |
-| [Azure Change Tracking and Inventory release notes](https://learn.microsoft.com/en-us/azure/azure-change-tracking-inventory/extension-version-details) | deployment | 0.65 | Release notes and known issues for extensions include version-specific behaviors and constraints important for deployment/operations. |
 | [Azure disk encryption](https://learn.microsoft.com/en-us/azure/automanage/overview-azure-disk-encryption) | security | 0.65 | Disk encryption on Automanaged VMs is security-specific and typically includes product-specific settings (Key Vault use, encryption types, required roles). |
 | [Create reports using workbooks](https://learn.microsoft.com/en-us/azure/update-manager/manage-workbooks) | configuration | 0.65 | Describes creating and editing workbooks for Update Manager, including product-specific queries, parameters, and visualization configuration. |
 | [Cross-subscription patching](https://learn.microsoft.com/en-us/azure/update-manager/cross-subscription-patching) | decision-making | 0.65 | Covers overview, key benefits, and limitations of cross-subscription patching; likely includes constraints and scenarios guiding when/how to use this capability. |

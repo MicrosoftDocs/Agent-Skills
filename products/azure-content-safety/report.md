@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-14'
+generated_at: '2026-06-21'
 category_descriptions:
   troubleshooting: Diagnosing and resolving Azure AI Content Safety API errors, including
     HTTP status codes, common failure causes, and recommended fixes or retries.
@@ -72,8 +72,8 @@ confusable_not_for: Not for Azure Information Protection (use azure-information-
 
 ### Updated Pages
 
-- [Install and run containers](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/how-to/containers/install-run-container)
-  - Updated: 2025-09-16T08:00:00.000Z → 2026-06-11T22:32:00.000Z
+- [Azure AI Content Safety FAQ](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/faq)
+  - Updated: 2026-06-05T22:11:00.000Z → 2026-06-15T17:17:00.000Z
 
 ## Classified Pages
 
@@ -115,6 +115,6 @@ confusable_not_for: Not for Azure Information Protection (use azure-information-
 | [Prompt Shields](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/quickstart-jailbreak) | 0.30 | Quickstart tutorial for Prompt Shields; summary references API input limits elsewhere but doesn’t itself contain the numeric limits or detailed config tables. |
 | [Protected material detection for text](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/quickstart-protected-material) | 0.30 | Quickstart for protected material text; summary is conceptual and compliance-focused, not configuration/limits/troubleshooting-focused. |
 | [Use Content Safety in Foundry portal](https://learn.microsoft.com/en-us/azure/foundry-classic/ai-services/content-safety-overview) | 0.25 | Portal overview (classic) for Content Safety; primarily an interface/feature overview without detailed limits, configs, or troubleshooting mappings in summary. |
-| [Azure AI Content Safety FAQ](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/faq) | 0.20 | FAQ page appears to provide general Q&A about Azure AI Content Safety without clear evidence of detailed numeric limits, configuration tables, error-code mappings, or other product-specific expert data as defined by the sub-skill types. |
 | [Azure AI Content Safety overview](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/overview) | 0.20 | High-level service overview and marketing-style description without concrete limits, configs, or error details. |
 | [What's new](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/whats-new) | 0.10 | Release notes/what’s new index without detailed technical tables or configs in the summary; treated as navigation/update listing. |
+| [Azure AI Content Safety FAQ](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/faq) | - | FAQ page description suggests general Q&A and support pointers without evidence of numeric limits, configuration tables, error-code mappings, or other product-specific expert details required by any sub-skill type. |

@@ -53,9 +53,9 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 - **Unclassified**: 143
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 5
-- **Unchanged**: 376
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 382
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-arc/azure-arc.csv`
 
@@ -75,23 +75,6 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | *(Unclassified)* | 143 | 37.4% |
 
 ## Changes
-
-### New Pages
-
-- [Migrate from AKV Secrets Provider](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/secret-store-extension-migration)
-
-### Updated Pages
-
-- [Network requirements](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/network-requirements)
-  - Updated: 2025-04-15T08:00:00.000Z → 2026-06-11T08:00:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/faq)
-  - Updated: 2026-03-18T17:34:00.000Z → 2026-06-11T06:04:00.000Z
-- [Network requirements](https://learn.microsoft.com/en-us/azure/azure-arc/network-requirements-consolidated)
-  - Updated: 2026-04-01T08:00:00.000Z → 2026-06-11T08:00:00.000Z
-- [What's new with Connected Machine agent?](https://learn.microsoft.com/en-us/azure/azure-arc/servers/agent-release-notes)
-  - Updated: 2026-05-14T11:09:00.000Z → 2026-06-11T17:37:00.000Z
-- [GitOps (Flux) Release notes](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/flux-gitops-release-notes)
-  - Updated: 2026-05-27T06:06:00.000Z → 2026-06-12T17:24:00.000Z
 
 ## Classified Pages
 

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-07'
+generated_at: '2026-06-21'
 category_descriptions:
   configuration: Monitoring, logging, metrics, and diagnostics for ACS (chat, voice/video,
     SMS, email, calling, routing), plus configuration for Teams interop, domains,
@@ -47,16 +47,16 @@ confusable_not_for: Not for Azure Notification Hubs (use azure-notification-hubs
 
 ## Summary
 
-- **Total Pages**: 517
-- **Fetched**: 517
+- **Total Pages**: 518
+- **Fetched**: 518
 - **Fetch Failed**: 0
 - **Classified**: 414
-- **Unclassified**: 103
+- **Unclassified**: 104
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 517
+- **New Pages**: 1
+- **Updated Pages**: 1
+- **Unchanged**: 516
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-communication-services/azure-communication-services.csv`
 
@@ -65,17 +65,26 @@ confusable_not_for: Not for Azure Notification Hubs (use azure-notification-hubs
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 2 | 0.4% |
-| best-practices | 22 | 4.3% |
+| best-practices | 22 | 4.2% |
 | configuration | 75 | 14.5% |
 | decision-making | 12 | 2.3% |
 | deployment | 2 | 0.4% |
-| integrations | 143 | 27.7% |
+| integrations | 143 | 27.6% |
 | limits-quotas | 64 | 12.4% |
 | security | 23 | 4.4% |
 | troubleshooting | 71 | 13.7% |
-| *(Unclassified)* | 103 | 19.9% |
+| *(Unclassified)* | 104 | 20.1% |
 
 ## Changes
+
+### New Pages
+
+- [Build an IVR Bot for Teams Auto Attendant](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/tpe/teams-phone-extensibility-interactive-voice-response)
+
+### Updated Pages
+
+- [Overview](https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/tpe/teams-phone-extensibility-overview)
+  - Updated: 2025-06-02T22:13:00.000Z → 2026-06-17T22:15:00.000Z
 
 ## Classified Pages
 
@@ -535,7 +544,6 @@ confusable_not_for: Not for Azure Notification Hubs (use azure-notification-hubs
 | [Insights dashboard](https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/insights/insights-dashboard) | 0.30 | Insights dashboard description of visualizations; summary suggests conceptual monitoring/observability overview without specific config parameters, limits, or error mappings. |
 | [Managed applications](https://learn.microsoft.com/en-us/azure/communication-services/concepts/managed-apps) | 0.30 | Conceptual explanation of Azure managed applications usage; no indication of detailed configuration parameters or quotas specific to Communication Services. |
 | [Overview](https://learn.microsoft.com/en-us/azure/communication-services/concepts/ai) | 0.30 | AI in ACS article is a conceptual overview of AI scenarios and availability; no clear evidence of detailed configs, limits, or troubleshooting mappings. |
-| [Overview](https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/tpe/teams-phone-extensibility-overview) | 0.30 | High-level overview of Teams Phone extensibility features; conceptual description without clear evidence of detailed configuration, limits, or troubleshooting mappings. |
 | [Overview](https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/virtual-visits/overview) | 0.30 | Conceptual overview of virtual appointments; describes patterns and scenarios without detailed configuration, limits, or decision matrices. |
 | [Overview](https://learn.microsoft.com/en-us/azure/communication-services/concepts/teams-endpoint) | 0.30 | Conceptual overview of integrating communication as a Microsoft 365/Teams user with ACS and Graph; no clear indication of detailed configuration tables, limits, or troubleshooting content. |
 | [Overview](https://learn.microsoft.com/en-us/azure/communication-services/concepts/teams-interop) | 0.30 | Teams interoperability overview is conceptual; summary does not indicate detailed configuration tables, limits, or error mappings. |
@@ -571,6 +579,7 @@ confusable_not_for: Not for Azure Notification Hubs (use azure-notification-hubs
 | [Set exception policies](https://learn.microsoft.com/en-us/azure/communication-services/concepts/router/exception-policy) | 0.25 | Exception Policy article is conceptual about rules and actions; summary doesn’t indicate detailed error codes, limits, or config parameter tables. |
 | [UI Library use cases](https://learn.microsoft.com/en-us/azure/communication-services/concepts/ui-library/ui-library-use-cases) | 0.25 | UI Library use cases article explains scenarios and patterns conceptually; not focused on specific configuration values or troubleshooting. |
 | [Add Teams meeting calling to your app](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/voice-video-calling/get-started-teams-interop) | 0.20 | Quickstart tutorial for joining a Teams meeting with ACS Calling SDK; step-by-step example rather than a catalog of configuration options, limits, or troubleshooting mappings. |
+| [Build an IVR Bot for Teams Auto Attendant](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/tpe/teams-phone-extensibility-interactive-voice-response) | 0.20 | Quickstart tutorial for building an IVR bot with Teams Auto Attendant; primarily step-by-step integration and sample code, without configuration tables, limits, error-code mappings, or other structured expert reference details. |
 | [Build intelligent, AI-powered chat experiences](https://learn.microsoft.com/en-us/azure/communication-services/concepts/chat/concepts) | 0.20 | Duplicate of chat concepts overview; same reasoning as index 21. |
 | [Call recording overview](https://learn.microsoft.com/en-us/azure/communication-services/concepts/voice-video-calling/call-recording) | 0.20 | Overview of Call Recording feature and APIs; description suggests conceptual explanation of scenarios and basic API actions (start/stop/pause/resume) without detailed limits, configuration parameters, or troubleshooting mappings required for expert-knowledge classification. |
 | [Chat architecture](https://learn.microsoft.com/en-us/azure/communication-services/concepts/chat/concepts) | 0.20 | Duplicate of chat concepts overview; same reasoning as index 21. |
@@ -600,6 +609,7 @@ confusable_not_for: Not for Azure Notification Hubs (use azure-notification-hubs
 | [Set up for Node.JS app](https://learn.microsoft.com/en-us/azure/communication-services/tutorials/building-app-start) | 0.20 | Introductory tutorial for building a baseline web app; focuses on getting started rather than detailed configuration matrices, limits, or troubleshooting. |
 | [Use cases](https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/custom-teams-endpoint-use-cases) | 0.20 | Describes use cases and scenarios for ACS support of Teams identities; appears conceptual without specific configuration parameters, limits, or error mappings. |
 | [Voice and video terminology](https://learn.microsoft.com/en-us/azure/communication-services/concepts/voice-video-calling/about-call-types) | 0.20 | Conceptual explanation of call types and scenarios; no detailed limits, configuration tables, or troubleshooting mappings indicated. |
+| [Overview](https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/tpe/teams-phone-extensibility-overview) | 0.10 | High-level overview of Teams Phone extensibility features without concrete limits, configuration tables, error codes, or decision matrices. Content is conceptual/marketing-style, not detailed enough to qualify as any expert sub-skill type. |
 | [Services](https://learn.microsoft.com/en-us/azure/communication-services/concepts/services) | 0.10 | Conceptual list of services and capabilities; no specific numeric limits, configs, or decision matrices indicated. |
 | [What is Azure Communication Services?](https://learn.microsoft.com/en-us/azure/communication-services/overview) | 0.10 | High-level product overview of Azure Communication Services without concrete limits, configs, or error details. |
 | [What's new](https://learn.microsoft.com/en-us/azure/communication-services/whats-new) | 0.10 | What's new changelog-style page; typically feature announcements without detailed limits, configs, or troubleshooting matrices. |

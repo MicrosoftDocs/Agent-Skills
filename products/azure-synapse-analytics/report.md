@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure D
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 448
+- **Updated Pages**: 0
+- **Unchanged**: 450
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-synapse-analytics/azure-synapse-analytics.csv`
 
@@ -76,13 +76,6 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure D
 | *(Unclassified)* | 173 | 38.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [Restore a dedicated SQL pool](https://learn.microsoft.com/en-us/azure/synapse-analytics/backuprestore/restore-sql-pool)
-  - Updated: 2026-05-03T11:12:00.000Z → 2026-06-11T17:23:00.000Z
-- [Restore a SQL pool from a deleted workspace](https://learn.microsoft.com/en-us/azure/synapse-analytics/backuprestore/restore-sql-pool-from-deleted-workspace)
-  - Updated: 2026-05-03T11:12:00.000Z → 2026-06-11T17:23:00.000Z
 
 ## Classified Pages
 

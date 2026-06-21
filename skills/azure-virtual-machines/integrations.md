@@ -11,7 +11,6 @@
 | Move Azure Marketplace VM to another subscription via CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/azure-cli-change-subscription-marketplace |
 | Create Azure VM restore points via REST APIs | https://learn.microsoft.com/en-us/azure/virtual-machines/create-restore-points |
 | Configure Azure Backup extension for SQL Server on Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/backup-azure-sql-server-running-azure-vm |
-| Monitor Azure VM availability with Project Flash via Azure Monitor metric | https://learn.microsoft.com/en-us/azure/virtual-machines/flash-azure-monitor |
 | Monitor Azure VM availability with Project Flash via Azure Resource Graph | https://learn.microsoft.com/en-us/azure/virtual-machines/flash-azure-resource-graph |
 | Monitor Azure VM availability with Project Flash via Resource Health | https://learn.microsoft.com/en-us/azure/virtual-machines/flash-azure-resource-health |
 | Monitor Azure VM availability with Project Flash via Event Grid | https://learn.microsoft.com/en-us/azure/virtual-machines/flash-event-grid-system-topic |

@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-06-14'
+generated_at: '2026-06-21'
 category_descriptions:
   deployment: 'Deploying and migrating AVD environments: adding session hosts, moving
     from classic, hybrid/on-prem setups, regional host pools, region moves, and client/MMR
     deployment via Intune/ConfigMgr'
-  configuration: 'Configuring AVD environments: host images, autoscale, networking,
-    RDP/peripheral redirection, app attach, licensing, updates, monitoring, Teams/Office,
-    and client/RemoteApp behavior.'
+  configuration: Configuring AVD host pools, images, autoscale, networking, RDP/peripheral
+    redirection, Teams/OneDrive/M365 optimizations, licensing, monitoring, and client/RemoteApp
+    behavior.
   troubleshooting: 'Diagnosing and fixing AVD issues: agent updates, MSIX App Attach,
     autoscale, FQDN/connectivity, connection quality, graphics, session host health/updates,
     hybrid onboarding, and Teams.'
@@ -29,14 +29,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Virtual Desktop development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when managing FSLogix profiles, autoscale, MSIX app attach, Teams optimization,
-  or Entra ID-based access, and other Azure Virtual Desktop related development tasks.
+  Use when managing AVD host pools, autoscale, FSLogix profiles, MSIX App Attach,
+  or Teams optimization, and other Azure Virtual Desktop related development tasks.
   Not for Azure Virtual Machines (use azure-virtual-machines), Azure Dev Box (use
-  azure-dev-box), Azure Data Science Virtual Machines (use azure-data-science-vm).
-use_when: Use when managing FSLogix profiles, autoscale, MSIX app attach, Teams optimization,
-  or Entra ID-based access, and other Azure Virtual Desktop related development tasks.
+  azure-dev-box), Azure VMware Solution (use azure-vmware-solution), Azure Data Science
+  Virtual Machines (use azure-data-science-vm).
+use_when: Use when managing AVD host pools, autoscale, FSLogix profiles, MSIX App
+  Attach, or Teams optimization, and other Azure Virtual Desktop related development
+  tasks.
 confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines), Azure
-  Dev Box (use azure-dev-box), Azure Data Science Virtual Machines (use azure-data-science-vm).
+  Dev Box (use azure-dev-box), Azure VMware Solution (use azure-vmware-solution),
+  Azure Data Science Virtual Machines (use azure-data-science-vm).
 ---
 # Azure Virtual Desktop Crawl Report
 
@@ -49,10 +52,10 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 - **Unclassified**: 34
 
 ### Incremental Update
-- **New Pages**: 4
-- **Updated Pages**: 0
-- **Unchanged**: 152
-- **Deleted Pages**: 2
+- **New Pages**: 0
+- **Updated Pages**: 2
+- **Unchanged**: 154
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-desktop/azure-virtual-desktop.csv`
 
 ## Classification Statistics
@@ -72,17 +75,12 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 
 ## Changes
 
-### New Pages
+### Updated Pages
 
-- [Deploy the MMR Insider Extension](https://learn.microsoft.com/en-us/azure/virtual-desktop/deploy-insider-extension)
-- [Require single sign-on using Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/virtual-desktop/require-authentication-using-microsoft-entra-id)
-- [Host Component](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-multimedia-redirection)
-- [Browser Extension](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-multimedia-redirection-extension)
-
-### Deleted Pages
-
-- ~~Deploy the MMR Preview Extension~~ (https://learn.microsoft.com/en-us/azure/virtual-desktop/deploy-preview-extension)
-- ~~Multimedia redirection~~ (https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-multimedia-redirection)
+- [SxS Network Stack](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-sxs)
+  - Updated: 2026-03-24T08:00:00.000Z → 2026-06-19T22:49:00.000Z
+- [Use Microsoft Teams](https://learn.microsoft.com/en-us/azure/virtual-desktop/teams-on-avd)
+  - Updated: 2025-06-20T03:01:00.000Z → 2026-06-17T21:12:00.000Z
 
 ## Classified Pages
 
@@ -176,7 +174,6 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Storage options for FSLogix profile container](https://learn.microsoft.com/en-us/azure/virtual-desktop/store-fslogix-profile) | decision-making | 0.70 | Compares Azure Files and other storage solutions for FSLogix with recommendations; likely includes decision criteria (performance, cost, features) and guidance on when to choose each. |
 | [Understand and estimate costs](https://learn.microsoft.com/en-us/azure/virtual-desktop/understand-estimate-costs) | decision-making | 0.70 | Explains which components are billed and how to estimate total cost; likely includes concrete cost drivers and planning guidance for different scenarios. |
 | [Use Azure CLI and Azure PowerShell](https://learn.microsoft.com/en-us/azure/virtual-desktop/cli-powershell) | integrations | 0.70 | Provides example CLI and PowerShell commands for AVD; includes module/command names and parameters that are product-specific integration patterns. |
-| [Use Microsoft Teams](https://learn.microsoft.com/en-us/azure/virtual-desktop/teams-on-avd) | configuration | 0.70 | Teams on AVD requires specific client versions, registry/Group Policy settings, and optimization flags that are product-specific configuration details. |
 | [User connection quality data](https://learn.microsoft.com/en-us/azure/virtual-desktop/connection-latency) | troubleshooting | 0.70 | Focuses on connection quality metrics and likely maps symptoms (latency, poor graphics) to causes and diagnostic data, using product-specific logs and counters. |
 | [Windows 10 multi-session images](https://learn.microsoft.com/en-us/azure/virtual-desktop/language-packs) | configuration | 0.70 | How-to article for installing and configuring Windows 10 Enterprise multi-session language packs in Azure Virtual Desktop; likely includes specific commands, package names, and configuration steps unique to this product scenario rather than just conceptual guidance. |
 | [Windows 11 Enterprise images](https://learn.microsoft.com/en-us/azure/virtual-desktop/windows-11-language-packs) | configuration | 0.70 | Describes customizing Windows 11 Enterprise images for Azure Virtual Desktop with language packs and features, including behavior changes (non-admin installation) and product-specific configuration steps, which go beyond generic knowledge. |
@@ -187,6 +184,7 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Provide access to external identities](https://learn.microsoft.com/en-us/azure/virtual-desktop/provide-access-external-identities) | security | 0.68 | The article provides product-specific steps and configuration details for granting Azure Virtual Desktop host pool access to external identities (such as Entra B2B/B2C), including required roles/permissions and access configuration patterns. This is security-focused identity and access configuration rather than a generic overview. |
 | [Publish applications with RemoteApp](https://learn.microsoft.com/en-us/azure/virtual-desktop/publish-applications-stream-remoteapp) | configuration | 0.68 | How-to for publishing apps via application groups will include specific portal/PowerShell parameters and constraints for AVD RemoteApp configuration. |
 | [Set preferred application group type](https://learn.microsoft.com/en-us/azure/virtual-desktop/set-preferred-application-group-type) | configuration | 0.68 | How-to article for setting the preferred type will include concrete portal/PowerShell parameters and property values unique to AVD host pools. |
+| [Use Microsoft Teams](https://learn.microsoft.com/en-us/azure/virtual-desktop/teams-on-avd) | configuration | 0.68 | This page typically includes product-specific configuration details for running Microsoft Teams on Azure Virtual Desktop, such as supported client platforms, required settings, and environment-specific options for media optimization. These are concrete, implementation-focused settings that go beyond generic knowledge and are unique to this integration scenario, fitting best under configuration. |
 | [Add session hosts to a host pool](https://learn.microsoft.com/en-us/azure/virtual-desktop/add-session-hosts-host-pool) | deployment | 0.65 | Adding session hosts typically involves SKU/tier constraints, network and image requirements, and possibly preview-specific limitations, which are deployment-specific details. |
 | [Azure Extended Zones](https://learn.microsoft.com/en-us/azure/virtual-desktop/azure-extended-zones) | decision-making | 0.65 | Explains using Extended Zones for latency-sensitive and data-residency workloads, helping choose deployment locations based on technical criteria. |
 | [Azure Local](https://learn.microsoft.com/en-us/azure/virtual-desktop/azure-local-overview) | decision-making | 0.65 | Covers when and how to use Azure Local for session hosts, including preview constraints and suitability for specific scenarios, aligning with decision-making guidance. |
@@ -238,7 +236,7 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Browser Extension](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-multimedia-redirection-extension) | 0.20 | A 'what's new' changelog for the multimedia redirection browser extension; similar to index 0, it focuses on feature updates rather than limits, configuration matrices, or decision/troubleshooting content required by the sub-skill types. |
 | [Host Component](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-multimedia-redirection) | 0.20 | A 'what's new' changelog for multimedia redirection host; likely lists feature updates and fixes but not structured limits, configs, or troubleshooting mappings as defined. No clear evidence of numeric limits, configuration tables, or error-code-based troubleshooting from the description. |
 | [Private Link with Azure Virtual Desktop](https://learn.microsoft.com/en-us/azure/virtual-desktop/private-link-overview) | 0.20 | High-level overview of using Private Link with Azure Virtual Desktop; summary indicates conceptual benefits without detailed configuration tables or limits. |
-| [SxS Network Stack](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-sxs) | 0.20 | Describes new features and updates for the Azure Virtual Desktop SxS Network Stack; functions as release notes rather than detailed configuration, limits, or troubleshooting guidance with structured expert data. |
+| [SxS Network Stack](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-sxs) | 0.20 | Release notes / what's-new page describing new features and updates for the Azure Virtual Desktop SxS Network Stack; based on the summary it does not expose concrete limits, configuration tables, error codes, or decision matrices that meet any sub-skill criteria. |
 | [Thin client partners](https://learn.microsoft.com/en-us/azure/virtual-desktop/thin-clients) | 0.20 | Primarily a link-out/navigation page to partner thin client vendors and a generic note about using a browser; no detailed configuration tables or product-specific parameters. |
 | [Understanding network connectivity](https://learn.microsoft.com/en-us/azure/virtual-desktop/network-connectivity) | 0.20 | Appears to be a conceptual overview of Azure Virtual Desktop network connectivity with high-level diagrams and descriptions; no evidence of specific limits, configuration tables, error codes, or detailed settings that meet the expert-knowledge criteria. |
 | [Autoscale glossary](https://learn.microsoft.com/en-us/azure/virtual-desktop/autoscale-glossary) | 0.10 | A glossary of autoscale terms is conceptual reference, defining terminology without product-specific limits, configuration tables, or decision matrices. It doesn’t provide the kind of expert numeric, configuration, or troubleshooting detail required by any sub-skill type. |

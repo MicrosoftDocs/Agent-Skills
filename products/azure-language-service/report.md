@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-07'
+generated_at: '2026-06-21'
 category_descriptions:
   configuration: Configuring Azure AI Language/CLU/NER/CQA projects and containers,
     including data formats, resources, Docker/on-prem setups, metrics, confidence
@@ -8,20 +8,20 @@ category_descriptions:
     NER, QnA, key phrases, language detection) across regions, containers, AKS, and
     migrate projects/resources.
   limits-quotas: Limits, quotas, and language/region support for Azure AI Language
-    features (CLU, NER, PII, key phrases, QnA), including data sizes, throughput,
-    containers, and training job constraints.
+    features (CLU, NER, PII, QnA, etc.), including data sizes, throughput, containers,
+    and model lifecycles.
   integrations: 'Implementing Azure AI Language features via REST/SDKs: CLU, custom
     NER/classification, CQA, sentiment, summarization, health, entity linking, and
     integrating with bots/Power Automate.'
   security: 'Security, encryption, and access control for Azure AI Language: RBAC,
     managed identities, SAS, CMK/data-at-rest, network isolation, Private Link, and
     CQA-specific security setup.'
-  decision-making: Guidance on choosing regions and resources, lifecycle policies,
-    and migration paths from LUIS, QnA Maker, Text Analytics, and Language Studio
-    to Azure Language and Microsoft Foundry
   best-practices: Best practices for designing, labeling, and evaluating CLU, custom
     NER, text classification, and CQA projects, including multilingual handling, emojis,
     schemas, and autolabeling.
+  decision-making: Guidance on choosing regions and resources, lifecycle policies,
+    and migration paths from LUIS, QnA Maker, Text Analytics, and Language Studio
+    to Azure Language and Microsoft Foundry
   architecture-patterns: 'Architectural guidance for CLU and custom text classification:
     choosing CLU vs orchestration workflows, and designing regional backup, redundancy,
     and failover strategies.'
@@ -31,16 +31,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure AI Language development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building CLU apps, custom NER/classification, CQA, sentiment/summarization, or PII/key
-  phrase pipelines, and other Azure AI Language related development tasks. Not for
-  Azure AI Search (use azure-cognitive-search), Azure AI Document Intelligence (use
-  azure-document-intelligence), Azure AI Speech (use azure-speech), Azure Translator
-  (use azure-translator).
-use_when: Use when building CLU apps, custom NER/classification, CQA, sentiment/summarization,
-  or PII/key phrase pipelines, and other Azure AI Language related development tasks.
+  using CLU, custom NER/classification, CQA, sentiment/summarization, or PII/health
+  text analysis APIs, and other Azure AI Language related development tasks. Not for
+  Azure AI Search (use azure-cognitive-search), Azure AI Speech (use azure-speech),
+  Azure Translator (use azure-translator), Azure AI Bot Service (use azure-bot-service).
+use_when: Use when using CLU, custom NER/classification, CQA, sentiment/summarization,
+  or PII/health text analysis APIs, and other Azure AI Language related development
+  tasks.
 confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure AI
-  Document Intelligence (use azure-document-intelligence), Azure AI Speech (use azure-speech),
-  Azure Translator (use azure-translator).
+  Speech (use azure-speech), Azure Translator (use azure-translator), Azure AI Bot
+  Service (use azure-bot-service).
 ---
 # Azure AI Language Crawl Report
 
@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 202
+- **Updated Pages**: 1
+- **Unchanged**: 201
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-language-service/azure-language-service.csv`
 
@@ -66,15 +66,20 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | architecture-patterns | 3 | 1.5% |
 | best-practices | 13 | 6.4% |
 | configuration | 21 | 10.4% |
-| decision-making | 6 | 3.0% |
+| decision-making | 5 | 2.5% |
 | deployment | 7 | 3.5% |
 | integrations | 28 | 13.9% |
-| limits-quotas | 15 | 7.4% |
+| limits-quotas | 16 | 7.9% |
 | security | 7 | 3.5% |
 | troubleshooting | 2 | 1.0% |
 | *(Unclassified)* | 100 | 49.5% |
 
 ## Changes
+
+### Updated Pages
+
+- [Model lifecycle](https://learn.microsoft.com/en-us/azure/ai-services/language-service/concepts/model-lifecycle)
+  - Updated: 2026-01-30T23:08:00.000Z → 2026-06-15T22:22:00.000Z
 
 ## Classified Pages
 
@@ -134,6 +139,7 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | [Markdown format](https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/reference/markdown-format) | configuration | 0.70 | Reference list of supported markdown formats for answer text; product-specific rendering behavior and allowed syntax are configuration details. |
 | [Migrate from LUIS or QnA Maker to Language Service](https://learn.microsoft.com/en-us/azure/ai-services/language-service/reference/migrate) | decision-making | 0.70 | The page helps determine whether and how to migrate from LUIS, QnA Maker, and Text Analytics to Azure Language, including service-specific migration guidance and scenarios. This is product-specific decision guidance about when to move between services and what to use instead, which fits the decision-making category. It goes beyond a conceptual overview by focusing on migration choices and applicability of the new unified service. |
 | [Migrate to Microsoft Foundry](https://learn.microsoft.com/en-us/azure/ai-services/language-service/migration-studio-to-foundry) | decision-making | 0.70 | Migration guide with a specific deprecation date and concrete guidance on when and how to move projects; supports decision-making about migration timing and steps. |
+| [Model lifecycle](https://learn.microsoft.com/en-us/azure/ai-services/language-service/concepts/model-lifecycle) | limits-quotas | 0.70 | A model lifecycle policy article for a specific Azure service typically includes concrete, time-bound details such as how long model versions are supported, deprecation notice periods, and retirement timelines (for example, months of support after deprecation). These are service-specific numeric policies that an LLM is unlikely to know from training, aligning best with limits-quotas as they define explicit temporal limits on model availability. |
 | [None intent](https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/concepts/none-intent) | configuration | 0.70 | Describes None intent behavior and threshold; includes product-specific behavior and possibly configurable threshold values. |
 | [Prebuilt API](https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/how-to/prebuilt) | integrations | 0.70 | Describes a prebuilt API that answers questions over a passage; likely includes request/response schema and parameters unique to this service. |
 | [Quickstart](https://learn.microsoft.com/en-us/azure/ai-services/language-service/key-phrase-extraction/quickstart) | integrations | 0.70 | Quickstart for the client library; includes request construction, parameters, and response handling specific to the Key Phrase Extraction API. |
@@ -176,7 +182,6 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | [Call the API and make predictions](https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/how-to/call-api) | integrations | 0.60 | Focuses on sending prediction requests via prediction API and SDK; likely includes request/response schema and parameter details specific to CLU. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-text-classification/faq) | troubleshooting | 0.60 | FAQ for this API likely includes answers to specific error scenarios and constraints; serves as troubleshooting guidance. |
 | [Label utterances](https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/how-to/tag-utterances) | best-practices | 0.60 | Data labeling guidance for CLU projects is product-specific and includes actionable recommendations for tagging utterances. |
-| [Model lifecycle](https://learn.microsoft.com/en-us/azure/ai-services/language-service/concepts/model-lifecycle) | decision-making | 0.60 | Describes model versioning, deprecation, and retirement timelines; this is decision guidance for when to upgrade models and plan migrations, with service-specific policies. |
 | [Move projects](https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/how-to/migrate-knowledge-base) | deployment | 0.60 | Describes exporting and moving projects between Language resources; contains product-specific migration steps and constraints beyond generic export/import concepts. |
 | [Multilingual and emoji support](https://learn.microsoft.com/en-us/azure/ai-services/language-service/concepts/multilingual-emoji-support) | best-practices | 0.60 | Explains how Unicode grapheme vs code point offsets affect Language feature outputs; likely includes product-specific offset behavior and guidance for handling it in code. |
 | [Multilingual projects](https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/concepts/multiple-languages) | best-practices | 0.60 | Guidance on using multilingual projects with language-specific utterances and synonyms; product-specific usage patterns and gotchas. |

@@ -35,8 +35,8 @@ confusable_not_for: Not for Azure Reliability (use azure-reliability), Azure Res
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 16
+- **Updated Pages**: 0
+- **Unchanged**: 18
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-extended-zones/azure-extended-zones.csv`
 
@@ -51,13 +51,6 @@ confusable_not_for: Not for Azure Reliability (use azure-reliability), Azure Res
 | *(Unclassified)* | 12 | 66.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [What is Azure Extended Zones?](https://learn.microsoft.com/en-us/azure/extended-zones/overview)
-  - Updated: 2026-03-31T06:10:00.000Z → 2026-06-11T22:20:00.000Z
-- [Deploy an AKS cluster in an Extended Zone](https://learn.microsoft.com/en-us/azure/extended-zones/deploy-aks-cluster)
-  - Updated: 2026-03-31T06:10:00.000Z → 2026-06-12T05:19:00.000Z
 
 ## Classified Pages
 

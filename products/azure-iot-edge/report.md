@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-05-17'
+generated_at: '2026-06-21'
 category_descriptions:
   configuration: 'Configuring IoT Edge devices and EFLOW: networking, gateways, proxies,
-    storage, GPU/USB access, metrics/monitoring, and provisioning (DPS, TPM, X.509,
-    symmetric keys) for modules and runtime.'
+    provisioning (DPS, TPM, X.509), storage, GPU, metrics/monitoring, and module/container
+    deployment settings.'
   security: Securing IoT Edge with certificates, X.509 provisioning, confidential
     computing, downstream device auth, EST server setup, and network protection via
     Private Link/endpoints.
@@ -19,9 +19,9 @@ category_descriptions:
   best-practices: Monitoring module twins for health/alerts and production-readiness
     guidance for IoT Edge solutions (deployment hardening, reliability, security,
     and operational best practices).
-  troubleshooting: Diagnosing and fixing IoT Edge runtime/device errors, portal-based
-    troubleshooting, Azure Monitor metrics issues, and EFLOW (Linux on Windows) networking
-    and platform problems.
+  troubleshooting: Diagnosing and fixing IoT Edge runtime/device errors, monitoring
+    and metrics issues, portal-based troubleshooting, and EFLOW (Linux on Windows)
+    and networking problems.
   architecture-patterns: Gateway design patterns for connecting downstream devices
     and patterns for handling offline/intermittent connectivity, local processing,
     and sync behavior in Azure IoT Edge setups.
@@ -30,13 +30,12 @@ category_descriptions:
 skill_description: Expert knowledge for Azure IoT Edge development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  configuring IoT Edge/EFLOW provisioning, gateways, DPS/TPM/X.509 auth, CI/CD deployments,
-  or EST/Private Link, and other Azure IoT Edge related development tasks. Not for
+  configuring IoT Edge/EFLOW, DPS/X.509 provisioning, module deployment, gateways,
+  or downstream devices, and other Azure IoT Edge related development tasks. Not for
   Azure IoT Hub (use azure-iot-hub), Azure IoT Central (use azure-iot-central), Azure
   IoT Operations (use azure-iot-operations), Azure Stack Edge (use azure-stack-edge).
-use_when: Use when configuring IoT Edge/EFLOW provisioning, gateways, DPS/TPM/X.509
-  auth, CI/CD deployments, or EST/Private Link, and other Azure IoT Edge related development
-  tasks.
+use_when: Use when configuring IoT Edge/EFLOW, DPS/X.509 provisioning, module deployment,
+  gateways, or downstream devices, and other Azure IoT Edge related development tasks.
 confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Central (use
   azure-iot-central), Azure IoT Operations (use azure-iot-operations), Azure Stack
   Edge (use azure-stack-edge).
@@ -53,8 +52,8 @@ confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Central
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 98
+- **Updated Pages**: 2
+- **Unchanged**: 96
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-iot-edge/azure-iot-edge.csv`
 
@@ -75,6 +74,13 @@ confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Central
 
 ## Changes
 
+### Updated Pages
+
+- [Resolve common errors](https://learn.microsoft.com/en-us/azure/iot-edge/troubleshoot-common-errors)
+  - Updated: 2026-04-14T22:21:00.000Z → 2026-06-17T22:15:00.000Z
+- [IoT Edge agent and hub properties](https://learn.microsoft.com/en-us/azure/iot-edge/module-edgeagent-edgehub)
+  - Updated: 2026-05-13T22:11:00.000Z → 2026-06-17T22:15:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
@@ -82,11 +88,11 @@ confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Central
 | [Limits and restrictions](https://learn.microsoft.com/en-us/azure/iot-edge/iot-edge-limits-and-restrictions) | limits-quotas | 0.92 | A page explicitly about IoT Edge limits and restrictions will list concrete numerical limits (for modules, routes, message sizes, etc.) and constraints specific to IoT Edge. These are exact values and conditions that qualify as limits-quotas expert knowledge beyond generic conceptual information. |
 | [Configure device settings](https://learn.microsoft.com/en-us/azure/iot-edge/configure-device) | configuration | 0.90 | Detailed reference of config.toml sections, option names, and allowed values for IoT Edge devices. |
 | [Diagnose IoT Edge devices](https://learn.microsoft.com/en-us/azure/iot-edge/troubleshoot) | troubleshooting | 0.90 | Explicit troubleshooting article for Azure IoT Edge. Typically includes specific error messages, diagnostic commands, log locations, and symptom→cause→solution flows that are unique to IoT Edge and not broadly known, matching the troubleshooting criteria. |
-| [Resolve common errors](https://learn.microsoft.com/en-us/azure/iot-edge/troubleshoot-common-errors) | troubleshooting | 0.90 | The page is explicitly a troubleshooting guide for Azure IoT Edge, organized around common issues and how to resolve them. These mappings of specific IoT Edge behaviors/logs to causes and fixes are product-specific troubleshooting knowledge that goes beyond generic debugging. |
-| [IoT Edge agent and hub properties](https://learn.microsoft.com/en-us/azure/iot-edge/module-edgeagent-edgehub) | configuration | 0.86 | The page documents the desired and reported properties for the IoT Edge runtime modules (edgeAgent and edgeHub), which are product-specific configuration options. It typically includes property names, allowed values, and behavior tied to those values—information that is configuration-focused and not generally known from training data. |
+| [IoT Edge agent and hub properties](https://learn.microsoft.com/en-us/azure/iot-edge/module-edgeagent-edgehub) | configuration | 0.86 | The page documents the desired and reported properties for the Azure IoT Edge runtime modules (edgeAgent and edgeHub), including specific property names, allowed values, and their meanings. This is product-specific configuration reference information that an LLM is unlikely to know from training and matches the configuration sub-skill definition. |
 | [Diagnose virtual machine](https://learn.microsoft.com/en-us/azure/iot-edge/troubleshoot-iot-edge-for-linux-on-windows) | troubleshooting | 0.85 | Dedicated troubleshooting guide with EFLOW-specific diagnostic commands, log locations, and symptom-to-solution mappings that are unique to this product. |
 | [Diagnose virtual machine networking](https://learn.microsoft.com/en-us/azure/iot-edge/troubleshoot-iot-edge-for-linux-on-windows-networking) | troubleshooting | 0.85 | Focuses on EFLOW networking problems with specific diagnostics, commands, and resolutions for network-related symptoms, matching the troubleshooting criteria. |
 | [Manage device certificates](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-manage-device-certificates) | security | 0.85 | Covers installation and management of IoT Edge device certificates for production; such content typically includes certificate types, trust chain requirements, and product-specific security configuration details, fitting the security sub-skill. |
+| [Resolve common errors](https://learn.microsoft.com/en-us/azure/iot-edge/troubleshoot-common-errors) | troubleshooting | 0.82 | The page is explicitly a troubleshooting guide for Azure IoT Edge, organized around common issues and how to resolve them. Such content typically includes product-specific error messages, causes, and resolution steps that go beyond generic debugging knowledge and qualify as expert troubleshooting knowledge. |
 | [Automatic deployments](https://learn.microsoft.com/en-us/azure/iot-edge/module-deployment-monitoring) | deployment | 0.80 | Product-specific deployment mechanism for groups and layered deployments, including constraints and behavior. |
 | [Configure proxy support](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-configure-proxy-support) | configuration | 0.80 | Describes how to configure IoT Edge runtime and modules to use network proxies; this usually includes specific environment variables, configuration keys, and allowed values, matching the configuration sub-skill definition. |
 | [Configure the API proxy module](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-configure-api-proxy-module) | configuration | 0.80 | Documents configuration options for the API proxy module, including environment variables, port mappings, and routing rules; these are detailed, product-specific configuration parameters. |
