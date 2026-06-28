@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Database for MariaDB (use azure-database-maria
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 175
+- **Updated Pages**: 0
+- **Unchanged**: 179
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-database-mysql/azure-database-mysql.csv`
 
@@ -76,17 +76,6 @@ confusable_not_for: Not for Azure Database for MariaDB (use azure-database-maria
 | *(Unclassified)* | 64 | 35.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [What's new?](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/whats-new)
-  - Updated: 2026-02-18T18:54:00.000Z → 2026-06-18T22:21:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/whats-new)
-  - Updated: 2026-02-18T18:54:00.000Z → 2026-06-18T22:21:00.000Z
-- [Resolve capacity errors](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/resolve-capacity-errors)
-  - Updated: 2025-06-27T11:10:00.000Z → 2026-06-15T17:11:00.000Z
-- [Application development best practices](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/whats-new)
-  - Updated: 2026-02-18T18:54:00.000Z → 2026-06-18T22:21:00.000Z
 
 ## Classified Pages
 

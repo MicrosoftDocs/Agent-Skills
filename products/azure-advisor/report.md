@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-06-07'
+generated_at: '2026-06-28'
 category_descriptions:
-  configuration: 'Setting up and customizing Azure Advisor: creating alerts (portal,
-    ARM, Bicep), email digests, tag-based filtering, and using workbooks for monitoring
-    and insights.'
+  configuration: Configuring Azure Advisor alerts, digests, and recommendation states
+    via portal, ARM/Bicep, tags, and workbooks to control how and when recommendations
+    are delivered and viewed.
   best-practices: Guidance on using Azure Advisor for Well-Architected assessments
     and bulk fixes to optimize cost, performance, reliability, and operational excellence
     across VMs and other services.
@@ -19,13 +19,12 @@ category_descriptions:
     and apps have appropriate access to Advisor recommendations and data
 skill_description: Expert knowledge for Azure Advisor development including best practices,
   decision making, limits & quotas, security, configuration, and integrations & coding
-  patterns. Use when creating Advisor alerts, workbooks, Resource Graph queries, migration
-  risk views, or sovereign-cloud setups, and other Azure Advisor related development
-  tasks. Not for Azure Cost Management (use azure-cost-management), Azure Monitor
-  (use azure-monitor), Azure Policy (use azure-policy), Azure Security (use azure-security).
-use_when: Use when creating Advisor alerts, workbooks, Resource Graph queries, migration
-  risk views, or sovereign-cloud setups, and other Azure Advisor related development
-  tasks.
+  patterns. Use when managing Advisor alerts, digests, recommendation states, Resource
+  Graph queries, or RBAC access, and other Azure Advisor related development tasks.
+  Not for Azure Cost Management (use azure-cost-management), Azure Monitor (use azure-monitor),
+  Azure Policy (use azure-policy), Azure Security (use azure-security).
+use_when: Use when managing Advisor alerts, digests, recommendation states, Resource
+  Graph queries, or RBAC access, and other Azure Advisor related development tasks.
 confusable_not_for: Not for Azure Cost Management (use azure-cost-management), Azure
   Monitor (use azure-monitor), Azure Policy (use azure-policy), Azure Security (use
   azure-security).
@@ -37,13 +36,13 @@ confusable_not_for: Not for Azure Cost Management (use azure-cost-management), A
 - **Total Pages**: 34
 - **Fetched**: 34
 - **Fetch Failed**: 0
-- **Classified**: 25
-- **Unclassified**: 9
+- **Classified**: 26
+- **Unclassified**: 8
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 34
+- **Updated Pages**: 1
+- **Unchanged**: 33
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-advisor/azure-advisor.csv`
 
@@ -52,14 +51,19 @@ confusable_not_for: Not for Azure Cost Management (use azure-cost-management), A
 | Type | Count | Percentage |
 |------|-------|------------|
 | best-practices | 9 | 26.5% |
-| configuration | 6 | 17.6% |
+| configuration | 7 | 20.6% |
 | decision-making | 5 | 14.7% |
 | integrations | 3 | 8.8% |
 | limits-quotas | 1 | 2.9% |
 | security | 1 | 2.9% |
-| *(Unclassified)* | 9 | 26.5% |
+| *(Unclassified)* | 8 | 23.5% |
 
 ## Changes
+
+### Updated Pages
+
+- [Recommendation state management](https://learn.microsoft.com/en-us/azure/advisor/advisor-azure-state-management)
+  - Updated: 2026-06-01T08:00:00.000Z → 2026-06-21T08:00:00.000Z
 
 ## Classified Pages
 
@@ -79,6 +83,7 @@ confusable_not_for: Not for Azure Cost Management (use azure-cost-management), A
 | [Sovereign clouds](https://learn.microsoft.com/en-us/azure/advisor/advisor-sovereign-clouds) | limits-quotas | 0.70 | Explicitly described as listing feature variations and usage limitations for sovereign clouds; likely includes per-cloud constraints and disabled features, which are limit/usage details. |
 | [Use tags to filter recommendations and score](https://learn.microsoft.com/en-us/azure/advisor/advisor-tag-filtering) | configuration | 0.70 | Explains using resource tag filters to scope recommendations and scores by workload/environment/team; includes product-specific tag-based configuration behavior. |
 | [Operational Excellence](https://learn.microsoft.com/en-us/azure/advisor/advisor-reference-operational-excellence-recommendations) | best-practices | 0.68 | Page is a catalog of Azure Advisor operational excellence recommendations (DO/DON'T style guidance) that are specific to Azure services and Advisor signals. These are product-specific best-practice rules rather than generic concepts, and represent curated expert guidance on how to configure and operate resources for operational excellence. |
+| [Recommendation state management](https://learn.microsoft.com/en-us/azure/advisor/advisor-azure-state-management) | configuration | 0.68 | Describes product-specific state management behavior for Azure Advisor recommendations, including which states are supported (Active only) for security recommendations and preview-specific constraints. This is configuration-focused expert knowledge about how recommendation states can and cannot be set, which is unlikely to be fully known from general training data. |
 | [Calculate total cost savings](https://learn.microsoft.com/en-us/azure/advisor/advisor-how-to-calculate-total-cost-savings) | best-practices | 0.65 | Provides concrete guidance on exporting cost savings data and aggregating yearly savings using Advisor’s cost fields; product-specific cost evaluation pattern. |
 | [Cost Optimization workbook](https://learn.microsoft.com/en-us/azure/advisor/advisor-workbook-cost-optimization) | decision-making | 0.65 | Cost Optimization workbook provides cost insights and recommendations aligned to Well-Architected cost pillar, helping choose optimization actions based on quantified data. |
 | [Digests](https://learn.microsoft.com/en-us/azure/advisor/advisor-recommendations-digest) | configuration | 0.65 | Covers setting up scheduled digests for recommendations; likely includes specific configuration options (frequency, scope, channels) that are product-specific. |
@@ -96,7 +101,6 @@ confusable_not_for: Not for Azure Cost Management (use azure-cost-management), A
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
 | [Advisor portal basics](https://learn.microsoft.com/en-us/azure/advisor/advisor-get-started) | 0.30 | Portal getting-started guide; mentions a generic 24-hour delay but lacks structured limits, configuration parameter tables, or other expert-only details. |
-| [Recommendation state management](https://learn.microsoft.com/en-us/azure/advisor/advisor-azure-state-management) | 0.30 | Summary describes conceptual state management (Active, Completed, Postponed, Dismissed) and preview caveats but does not indicate specific numeric limits, configuration tables, or detailed APIs; appears more conceptual than expert configuration or troubleshooting content. |
 | [Use Service Upgrade and Retirement recommendations](https://learn.microsoft.com/en-us/azure/advisor/advisor-how-to-use-service-upgrade-retirement-recommendations) | 0.30 | Summary suggests a how-to/tutorial on using upgrade and retirement recommendations, likely focused on portal usage and workflow. No clear indication of specific limits, configuration tables, error codes, or decision matrices; appears procedural rather than expert reference content. |
 | [Configuration](https://learn.microsoft.com/en-us/azure/advisor/view-recommendations) | 0.25 | Describes viewing and filtering recommendations to reduce noise; appears to be UI guidance without detailed config parameters or limits. |
 | [Advisor score](https://learn.microsoft.com/en-us/azure/advisor/advisor-score) | 0.20 | Page describes how Azure Advisor score measures optimization progress and category granularity but does not expose concrete limits, configuration tables, error codes, or decision matrices with quantified thresholds. It is primarily conceptual guidance, not detailed expert configuration, limits, or troubleshooting content. |

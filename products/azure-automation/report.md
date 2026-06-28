@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-24'
+generated_at: '2026-06-28'
 category_descriptions:
   security: 'Securing Automation accounts: identities (system/user-assigned), RBAC,
     auth methods, encryption, certificates/credentials, Private Link, Azure Policy,
@@ -43,16 +43,16 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 
 ## Summary
 
-- **Total Pages**: 115
-- **Fetched**: 115
+- **Total Pages**: 116
+- **Fetched**: 116
 - **Fetch Failed**: 0
 - **Classified**: 93
-- **Unclassified**: 22
+- **Unclassified**: 23
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 115
+- **New Pages**: 1
+- **Updated Pages**: 1
+- **Unchanged**: 114
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-automation/azure-automation.csv`
 
@@ -61,16 +61,25 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 | Type | Count | Percentage |
 |------|-------|------------|
 | best-practices | 6 | 5.2% |
-| configuration | 40 | 34.8% |
+| configuration | 40 | 34.5% |
 | decision-making | 5 | 4.3% |
 | deployment | 6 | 5.2% |
 | integrations | 9 | 7.8% |
 | limits-quotas | 3 | 2.6% |
-| security | 17 | 14.8% |
-| troubleshooting | 7 | 6.1% |
-| *(Unclassified)* | 22 | 19.1% |
+| security | 17 | 14.7% |
+| troubleshooting | 7 | 6.0% |
+| *(Unclassified)* | 23 | 19.8% |
 
 ## Changes
+
+### New Pages
+
+- [Retirements](https://learn.microsoft.com/en-us/azure/automation/automation-runtime-retirement-policy)
+
+### Updated Pages
+
+- [About Change tracking and inventory](https://learn.microsoft.com/en-us/azure/azure-change-tracking-inventory/overview-monitoring-agent)
+  - Updated: 2026-01-10T06:10:00.000Z → 2026-06-23T11:39:00.000Z
 
 ## Classified Pages
 
@@ -183,13 +192,14 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 | [Create Automation account - Azure portal](https://learn.microsoft.com/en-us/azure/automation/automation-create-standalone-account) | 0.35 | How-to for creating a standalone Automation account; mostly portal steps without detailed configuration matrices. |
 | [Enable Desired State Configuration for a machine](https://learn.microsoft.com/en-us/azure/automation/quickstarts/dsc-configuration) | 0.35 | Quickstart for configuring a VM with DSC; likely procedural without detailed config option tables or limits in the summary. |
 | [Install Hybrid Worker extension - Azure portal](https://learn.microsoft.com/en-us/azure/automation/quickstarts/install-hybrid-worker-extension) | 0.35 | Quickstart for installing Hybrid Worker extension; appears as a basic tutorial without detailed configuration parameter tables. |
-| [About Change tracking and inventory](https://learn.microsoft.com/en-us/azure/azure-change-tracking-inventory/overview-monitoring-agent) | 0.30 | Overview of Change Tracking and Inventory with AMA; summary suggests high-level features and benefits without detailed configuration tables or limits. |
 | [Create a PowerShell Workflow runbook](https://learn.microsoft.com/en-us/azure/automation/learn/automation-tutorial-runbook-textual) | 0.30 | Tutorial on creating a PowerShell Workflow runbook; mostly authoring steps, not configuration matrices or limits. |
 | [Create a Python 3 runbook](https://learn.microsoft.com/en-us/azure/automation/learn/automation-tutorial-runbook-textual-python-3) | 0.30 | Tutorial for Python runbook creation; basic how-to without expert-level configuration or limits. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/automation/automation-faq) | 0.30 | FAQ description is generic; no indication of specific error codes, limits, or config parameters in the summary. |
 | [Move Automation account to another subscription](https://learn.microsoft.com/en-us/azure/automation/how-to/move-account) | 0.30 | Primarily a how-to move guide without clear evidence of detailed limits, quotas, or configuration parameter tables in the summary. |
+| [Retirements](https://learn.microsoft.com/en-us/azure/automation/automation-runtime-retirement-policy) | 0.30 | Describes lifecycle and retirement policy conceptually for Azure Automation language runtimes. While policy details may be specific, the description suggests process and phases rather than numeric limits, configuration tables, or decision matrices with quantified criteria. |
 | [Use Automation extension for Visual Studio Code](https://learn.microsoft.com/en-us/azure/automation/how-to/runbook-authoring-extension-for-vscode) | 0.30 | Explains using VS Code extension to author runbooks; mostly tooling workflow, not configuration matrices, limits, or product-specific troubleshooting. |
 | [Use existing runbooks and modules](https://learn.microsoft.com/en-us/azure/automation/automation-runbook-gallery) | 0.30 | High-level guidance on using runbooks/modules from galleries; summary does not indicate detailed configuration tables, limits, or product-specific error mappings. |
+| [About Change tracking and inventory](https://learn.microsoft.com/en-us/azure/azure-change-tracking-inventory/overview-monitoring-agent) | 0.20 | Page is described as an overview of Azure Change Tracking and Inventory using Azure Monitor Agent, focusing on features and benefits. No indication of numeric limits, configuration parameter tables, error-code-based troubleshooting, or other detailed expert content. |
 | [Archive for What's new](https://learn.microsoft.com/en-us/azure/automation/whats-new-archive) | 0.20 | Archive of release notes; summary indicates high-level update listing without specific limits, configs, error codes, or decision matrices. |
 | [Create Automation account - Azure portal](https://learn.microsoft.com/en-us/azure/automation/quickstarts/create-azure-automation-account-portal) | 0.20 | Quickstart for creating an Automation account via portal; step-by-step tutorial without config matrices or limits. |
 | [Overview](https://learn.microsoft.com/en-us/azure/automation/automation-dsc-overview) | 0.20 | Described as an overview of Azure Automation State Configuration; overviews are primarily conceptual and retirement notice–style content, not detailed configuration tables, error mappings, or limits. |

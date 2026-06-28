@@ -46,10 +46,10 @@ confusable_not_for: Not for Azure Maps (use azure-maps), Azure Open Datasets (us
 - **Unclassified**: 11
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 3
-- **Unchanged**: 42
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 46
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-planetary-computer-pro/azure-planetary-computer-pro.csv`
 
 ## Classification Statistics
@@ -66,23 +66,6 @@ confusable_not_for: Not for Azure Maps (use azure-maps), Azure Open Datasets (us
 | *(Unclassified)* | 11 | 23.9% |
 
 ## Changes
-
-### New Pages
-
-- [Service usage metrics](https://learn.microsoft.com/en-us/azure/planetary-computer/service-usage-meters)
-
-### Updated Pages
-
-- [Get Started with data cubes](https://learn.microsoft.com/en-us/azure/planetary-computer/data-cube-quickstart)
-  - Updated: 2026-04-01T06:12:00.000Z → 2026-06-19T22:18:00.000Z
-- [What's new in Microsoft Planetary Computer Pro](https://learn.microsoft.com/en-us/azure/planetary-computer/whats-new)
-  - Updated: 2025-05-19T15:23:00.000Z → 2026-06-19T22:18:00.000Z
-- [STAC overview](https://learn.microsoft.com/en-us/azure/planetary-computer/stac-overview)
-  - Updated: 2025-12-01T23:10:00.000Z → 2026-06-19T22:18:00.000Z
-
-### Deleted Pages
-
-- ~~Service usage meters~~ (https://learn.microsoft.com/en-us/azure/planetary-computer/service-usage-meters)
 
 ## Classified Pages
 

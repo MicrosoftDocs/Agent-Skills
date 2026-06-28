@@ -1,9 +1,9 @@
 ---
 name: azure-cognitive-search
-description: Expert knowledge for Azure AI Search development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring indexes/skillsets, indexers, vectors/semantic ranker, private endpoints, or RAG/agent retrieval flows, and other Azure AI Search related development tasks. Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Database (use azure-sql-database), Azure Synapse Analytics (use azure-synapse-analytics), Azure Data Explorer (use azure-data-explorer).
+description: Expert knowledge for Azure AI Search development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring indexes/skillsets, indexers/data sources, vector/semantic search, RBAC/private endpoints, or RAG apps, and other Azure AI Search related development tasks. Not for Azure Data Explorer (use azure-data-explorer), Azure Cosmos DB (use azure-cosmos-db), Azure SQL Database (use azure-sql-database), Azure Synapse Analytics (use azure-synapse-analytics).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-21"
+  generated_at: "2026-06-28"
   generator: "docs2skills/1.0.0"
 ---
 # Azure AI Search Skill
@@ -30,9 +30,9 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L84-L89 | Architectural guidance for Azure AI Search: RAG patterns, knowledge store design, multitenancy and tenant isolation, and multi-region/high-availability deployment designs. |
 | Limits & Quotas | L90-L99 | Limits, quotas, and scheduling for Azure AI Search: billing/free enrichment, indexer run windows and runtime caps, service/index/vector size limits by tier and platform. |
 | Security | L100-L137 | Securing Azure AI Search: RBAC/keyless auth, API keys, encryption/CMK, network isolation (private endpoints, firewalls), indexer access to data sources, and query-time ACL/labels. |
-| Configuration | L138-L237 | Configuring Azure AI Search: data sources, indexers, skillsets, analyzers, vectors, semantic ranker, logging/monitoring, and agentic retrieval/answer synthesis settings. |
+| Configuration | L138-L237 | Configuring Azure AI Search: data sources, indexers, skillsets, analyzers, vector/semantic settings, enrichment, logging/monitoring, and agentic retrieval/knowledge base options. |
 | Integrations & Coding Patterns | L238-L304 | Patterns and code for integrating Azure AI Search with data sources, vectorization, query syntaxes (OData/Lucene), custom skills/vectorizers, knowledge stores, and app/agent retrieval flows |
-| Deployment | L305-L311 | Deploying and moving Azure AI Search services with ARM/Bicep/Terraform, plus guidance on cross-region moves and checking regional feature and SKU availability. |
+| Deployment | L305-L312 | Deploying Azure AI Search via ARM/Bicep/Terraform, moving services between regions, and checking regional availability and feature support. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -160,7 +160,7 @@ This skill requires **network access** to fetch documentation content:
 | Use annotation syntax to reference enriched nodes in skillsets | https://learn.microsoft.com/en-us/azure/search/cognitive-search-concept-annotations-syntax |
 | Create skillsets with Azure AI Search REST APIs | https://learn.microsoft.com/en-us/azure/search/cognitive-search-defining-skillset |
 | Configure output field mappings for Azure AI Search skillsets | https://learn.microsoft.com/en-us/azure/search/cognitive-search-output-field-mapping |
-| Configure built-in skills in Azure AI Search enrichment pipelines | https://learn.microsoft.com/en-us/azure/search/cognitive-search-predefined-skills |
+| Configure and use predefined skills in Azure AI Search | https://learn.microsoft.com/en-us/azure/search/cognitive-search-predefined-skills |
 | Use skill context and annotation language in Azure AI Search | https://learn.microsoft.com/en-us/azure/search/cognitive-search-skill-annotation-language |
 | Configure Azure OpenAI Embedding skill for AI Search | https://learn.microsoft.com/en-us/azure/search/cognitive-search-skill-azure-openai-embedding |
 | Configure Conditional skill in AI Search skillsets | https://learn.microsoft.com/en-us/azure/search/cognitive-search-skill-conditional |
@@ -309,3 +309,4 @@ This skill requires **network access** to fetch documentation content:
 | Deploy Azure AI Search service using Bicep | https://learn.microsoft.com/en-us/azure/search/search-get-started-bicep |
 | Provision Azure AI Search with Terraform | https://learn.microsoft.com/en-us/azure/search/search-get-started-terraform |
 | Manually move Azure AI Search services across regions | https://learn.microsoft.com/en-us/azure/search/search-howto-move-across-regions |
+| Check Azure AI Search regional feature availability | https://learn.microsoft.com/en-us/azure/search/search-region-support |

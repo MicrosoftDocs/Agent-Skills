@@ -1,11 +1,11 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-06-28'
 category_descriptions:
   decision-making: Guidance on choosing between Azure Rights Management and on-premises
     AD RMS, including feature, deployment, security, and migration considerations.
-  deployment: Deploying the RMS connector and step-by-step guidance for migrating
-    on-prem AD RMS (keys and policies) to Azure Information Protection, including
-    HSM and software key migration.
+  deployment: Deploying the RMS connector on-prem servers and step-by-step guidance
+    for migrating AD RMS (keys and policies) to Azure Information Protection, including
+    HSM and software key paths
   best-practices: Monitoring and troubleshooting Azure RMS connector health, tracking
     Azure Rights Management usage, and interpreting logs/metrics for ongoing protection
     service reliability.
@@ -13,16 +13,15 @@ category_descriptions:
     required registry values for RMS connectors on servers for Azure Information Protection.
 skill_description: Expert knowledge for Azure Information Protection development including
   best practices, decision making, configuration, and deployment. Use when choosing
-  Azure RMS vs AD RMS, migrating keys/policies, configuring RMS connector/MSIPC, or
-  monitoring RMS logs, and other Azure Information Protection related development
-  tasks. Not for Azure Key Vault (use azure-key-vault), Azure Security (use azure-security),
-  Azure Defender For Cloud (use azure-defender-for-cloud), Azure Sentinel (use azure-sentinel).
-use_when: Use when choosing Azure RMS vs AD RMS, migrating keys/policies, configuring
-  RMS connector/MSIPC, or monitoring RMS logs, and other Azure Information Protection
+  Azure RMS vs AD RMS, deploying RMS connectors, migrating keys/policies, or configuring
+  MSIPC clients, and other Azure Information Protection related development tasks.
+  Not for Azure Key Vault (use azure-key-vault), Azure Security (use azure-security),
+  Azure Defender For Cloud (use azure-defender-for-cloud).
+use_when: Use when choosing Azure RMS vs AD RMS, deploying RMS connectors, migrating
+  keys/policies, or configuring MSIPC clients, and other Azure Information Protection
   related development tasks.
 confusable_not_for: Not for Azure Key Vault (use azure-key-vault), Azure Security
-  (use azure-security), Azure Defender For Cloud (use azure-defender-for-cloud), Azure
-  Sentinel (use azure-sentinel).
+  (use azure-security), Azure Defender For Cloud (use azure-defender-for-cloud).
 ---
 # Azure Information Protection Crawl Report
 
@@ -36,8 +35,8 @@ confusable_not_for: Not for Azure Key Vault (use azure-key-vault), Azure Securit
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 20
+- **Updated Pages**: 1
+- **Unchanged**: 19
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-information-protection/azure-information-protection.csv`
 
@@ -53,15 +52,20 @@ confusable_not_for: Not for Azure Key Vault (use azure-key-vault), Azure Securit
 
 ## Changes
 
+### Updated Pages
+
+- [Overview](https://learn.microsoft.com/en-us/azure/information-protection/deploy-rms-connector)
+  - Updated: 2025-09-01T17:32:00.000Z → 2026-06-26T00:32:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
 | [Registry settings](https://learn.microsoft.com/en-us/azure/information-protection/rms-connector-registry-settings) | configuration | 0.90 | Contains registry setting tables and specific key/value patterns (e.g., <YourTenantURL>) for Exchange/SharePoint/Windows servers; classic configuration reference. |
 | [Install and configure the connector](https://learn.microsoft.com/en-us/azure/information-protection/install-configure-rms-connector) | deployment | 0.75 | Concrete installation and configuration steps for the RMS connector, including sovereign cloud instance selection; product-specific deployment configuration. |
-| [Overview](https://learn.microsoft.com/en-us/azure/information-protection/deploy-rms-connector) | deployment | 0.75 | Detailed deployment guidance for the RMS connector with product-specific prerequisites and supported server scenarios; specialized deployment pattern. |
 | [Comparison with the Azure Rights Management service](https://learn.microsoft.com/en-us/azure/information-protection/compare-on-premise) | decision-making | 0.70 | Comparison of Azure RMS vs on-prem AD RMS for organizations with existing deployments; provides product-specific decision guidance on when to choose each. |
 | [Overview](https://learn.microsoft.com/en-us/azure/information-protection/configure-servers-rms-connector) | deployment | 0.70 | Server-side configuration steps (Exchange, SharePoint, file servers) to integrate with RMS connector; specialized deployment/integration configuration. |
+| [Overview](https://learn.microsoft.com/en-us/azure/information-protection/deploy-rms-connector) | deployment | 0.70 | The page provides detailed, product-specific deployment instructions for the Rights Management connector (RMS connector) used with on-premises Exchange, SharePoint, and file servers. It includes expert operational steps and constraints unique to this connector deployment scenario, beyond generic knowledge of how to deploy software. |
 | [Overview](https://learn.microsoft.com/en-us/azure/information-protection/migrate-from-ad-rms-phase2) | deployment | 0.70 | Phase 2 migration instructions (steps 4–6) for AD RMS to Azure RMS; product-specific deployment/migration sequence beyond generic knowledge. |
 | [Overview](https://learn.microsoft.com/en-us/azure/information-protection/migrate-from-ad-rms-to-azure-rms) | deployment | 0.70 | Stepwise migration guidance from AD RMS to Azure RMS; contains product-specific migration path and post-migration behavior, which is specialized deployment/migration knowledge. |
 | [Phase 1 - Preparation](https://learn.microsoft.com/en-us/azure/information-protection/migrate-from-ad-rms-phase1) | deployment | 0.70 | Phase 1 of a multi-phase migration with concrete procedural steps unique to AD RMS → Azure RMS deployment; specialized migration/deployment knowledge. |

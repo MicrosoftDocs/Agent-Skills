@@ -1,9 +1,9 @@
 ---
 name: azure-virtual-machines
-description: Expert knowledge for Azure Virtual Machines development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing VM fleets/HPC, configuring scale sets/GPU, using ADE/CMK, AKS/Oracle VMs, or VM image deployments, and other Azure Virtual Machines related development tasks. Not for Azure Data Science Virtual Machines (use azure-data-science-vm), Azure Virtual Machine Scale Sets (use azure-vm-scalesets), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Cloud Services (use azure-cloud-services).
+description: Expert knowledge for Azure Virtual Machines development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when choosing VM sizes/disks, configuring scale sets/HPC-GPU, using Spot/reservations, or securing/encrypting VMs, and other Azure Virtual Machines related development tasks. Not for Azure Cloud Services (use azure-cloud-services), Azure Virtual Machine Scale Sets (use azure-vm-scalesets), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Data Science Virtual Machines (use azure-data-science-vm).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-21"
+  generated_at: "2026-06-28"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Virtual Machines Skill
@@ -24,14 +24,14 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Location | Description |
 |----------|----------|-------------|
-| Troubleshooting | L37-L65 | Diagnosing and fixing Azure VM issues: kernel/AKS problems, package/extension failures, disk encryption, hibernation, NSG/traffic, restore/maintenance, Trusted Launch, and Image Builder errors. |
-| Best Practices | L66-L97 | Best practices for operating, updating, scaling, tuning, and cost-optimizing Azure VMs (Linux/Windows, HPC, InfiniBand, disks, images) and improving performance, HA, and boot times. |
-| Decision Making | L98-L168 | Guidance for planning and choosing Azure VM/AKS options, costs, disk/storage, OS images, and migrations (sizes, GPU/HPC, Linux distros, Oracle, Dedicated Hosts, Spot/Reserved) across lifecycles. |
-| Architecture & Design Patterns | L169-L183 | Design patterns for Azure VM workloads: multi-region and fleet strategies, low-latency/NUMA-aware HPC, clustered/shared-disk setups, and Oracle/OpenShift architectures and DR. |
-| Limits & Quotas | L184-L388 | VM size specs, disk and storage performance limits, quotas, hardware capacities, and operational constraints for Azure VMs (compute, GPU, HPC, confidential, disks, NVMe, and bursting). |
-| Security | L389-L466 | Securing Azure VMs and disks: encryption (ADE, CMK, encryption at host), Key Vault integration, TLS/cert management, Trusted Launch, MSP/metadata hardening, RBAC/Policy, and secure image/gallery sharing. |
-| Configuration | [configuration.md](configuration.md) | Configuring Azure VMs and scale sets: OS images, disks, networking, agents/extensions, GPU/HPC, maintenance, monitoring/telemetry, SSH/WinRM access, and Oracle/RHEL/AKS/Azure Linux specifics. |
-| Integrations & Coding Patterns | [integrations.md](integrations.md) | Scripts and patterns for managing Azure VMs: backups, restore points, disk and VHD operations, maintenance/scheduled events, monitoring, encryption, and Oracle/SQL integrations via CLI, PowerShell, REST, and ARM. |
+| Troubleshooting | L37-L67 | Diagnosing and fixing Azure VM issues: kernel/AKS, package upgrades, Spot/scale set errors, extensions, hibernation, cloud-init, disk encryption, NSG traffic, gallery, and Trusted Launch. |
+| Best Practices | L68-L99 | Best practices for operating, updating, scaling, tuning, and cost-optimizing Azure VMs (Linux/Windows, HPC, InfiniBand, disks, images) and improving performance, HA, and boot times. |
+| Decision Making | L100-L169 | Guidance for choosing VM, disk, OS, and image options; planning costs, reservations, and Spot; and designing or migrating Linux, GPU, Oracle, and AKS workloads and retired VM series. |
+| Architecture & Design Patterns | L170-L184 | Design patterns for Azure VM workloads: multi-region and fleet strategies, low-latency/NUMA-aware HPC, clustered/shared-disk setups, and Oracle/OpenShift architectures and DR. |
+| Limits & Quotas | L185-L389 | VM size specs, disk and storage performance limits, quotas, and capacity/packing rules for Azure VMs, including GPU/HPC, confidential, dedicated hosts, and bursting/ephemeral/NVMe disks. |
+| Security | L390-L467 | Securing Azure VMs and disks: encryption (ADE, CMK, encryption at host), Key Vault integration, TLS/cert management, Trusted Launch, MSP/metadata hardening, RBAC/Policy, and secure image/gallery sharing. |
+| Configuration | [configuration.md](configuration.md) | Configuring Azure VMs and scale sets: disks, networking, images, maintenance, extensions, monitoring/VM watch, HPC/GPU/InfiniBand, Linux/Windows agents, Oracle workloads, and AKS host/Azure Linux settings. |
+| Integrations & Coding Patterns | [integrations.md](integrations.md) | Scripts and patterns for managing Azure VMs and disks via CLI/PowerShell/REST, including backups, snapshots, encryption, maintenance events, monitoring, and Oracle/SQL integrations. |
 | Deployment | [deployment.md](deployment.md) | Deploying and migrating Azure VMs and disks: image customization, blue‑green/rolling deployments, in‑place OS upgrades, storage/region/zone moves, and handling VM SKU retirements. |
 
 ### Troubleshooting
@@ -49,6 +49,7 @@ This skill requires **network access** to fetch documentation content:
 | Resolve common Azure Disk Encryption issues on Linux VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/disk-encryption-faq |
 | Troubleshoot Azure Disk Encryption on isolated Linux networks | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/disk-encryption-isolated-network |
 | Troubleshoot Azure Disk Encryption on Linux VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/disk-encryption-troubleshooting |
+| Resolve common issues for Azure Linux VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/faq |
 | Troubleshoot hibernation problems on Linux Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/hibernate-resume-troubleshooting-linux |
 | Connect to Azure Image Builder build VMs for debugging | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/image-builder-connect-to-build-vm |
 | Troubleshoot common Azure VM Image Builder failures | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/image-builder-troubleshoot |
@@ -61,6 +62,7 @@ This skill requires **network access** to fetch documentation content:
 | Troubleshoot common issues with Azure Trusted Launch VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/trusted-launch-faq |
 | Troubleshoot Azure Disk Encryption for Windows VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/disk-encryption-faq |
 | Troubleshoot Azure Disk Encryption on Windows VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/disk-encryption-troubleshooting |
+| Resolve common issues for Azure Windows VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/faq |
 | Troubleshoot hibernation problems on Windows Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/hibernate-resume-troubleshooting-windows |
 
 ### Best Practices
@@ -110,7 +112,7 @@ This skill requires **network access** to fetch documentation content:
 | Select constrained vCPU VM sizes for licensing | https://learn.microsoft.com/en-us/azure/virtual-machines/constrained-vcpu |
 | Monitor and control Azure VM spending with Cost Management | https://learn.microsoft.com/en-us/azure/virtual-machines/cost-optimization-monitor-costs |
 | Plan and estimate Azure VM costs using Cost Management | https://learn.microsoft.com/en-us/azure/virtual-machines/cost-optimization-plan-to-manage-costs |
-| Understand impact of deprecated Azure Marketplace images | https://learn.microsoft.com/en-us/azure/virtual-machines/deprecated-images |
+| Understand effects of deprecated Azure VM images | https://learn.microsoft.com/en-us/azure/virtual-machines/deprecated-images |
 | Plan migration from Standard HDD OS disks before retirement | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-hdd-os-retirement |
 | Choose options to improve Azure disk performance | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-performance-options |
 | Select redundancy options for Azure managed disks | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-redundancy |
@@ -159,7 +161,6 @@ This skill requires **network access** to fetch documentation content:
 | Plan and execute Oracle workload migration to Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/workloads/oracle/oracle-migration |
 | Migrate Oracle workloads to Oracle Database@Azure | https://learn.microsoft.com/en-us/azure/virtual-machines/workloads/oracle/oracle-migration-oracle-database-at-azure |
 | Choose approaches for Oracle applications on Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/workloads/oracle/oracle-overview |
-| Evaluate partner storage options for Oracle on Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/workloads/oracle/oracle-third-party-storage |
 | Choose and deploy Oracle VM images from Azure Marketplace | https://learn.microsoft.com/en-us/azure/virtual-machines/workloads/oracle/oracle-vm-solutions |
 | Select solutions for WebLogic Server on Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/workloads/oracle/oracle-weblogic |
 | Select solutions for WebLogic Server on AKS | https://learn.microsoft.com/en-us/azure/virtual-machines/workloads/oracle/weblogic-aks |
@@ -184,6 +185,7 @@ This skill requires **network access** to fetch documentation content:
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
+| Azure Compute Fleet FAQs on limits and behavior | https://learn.microsoft.com/en-us/azure/azure-compute-fleet/faq |
 | Understand CVE handling SLAs for Azure Linux and ACL | https://learn.microsoft.com/en-us/azure/azure-linux/manage-cves |
 | Understand Azure VM compute throttling limits | https://learn.microsoft.com/en-us/azure/virtual-machines/compute-throttling-limits |
 | Check support matrix and limits for Azure VM restore points | https://learn.microsoft.com/en-us/azure/virtual-machines/concepts-restore-points |
@@ -213,11 +215,10 @@ This skill requires **network access** to fetch documentation content:
 | Understand Azure HBv5 VM hardware specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/hbv5-series-overview |
 | Review HC-series VM performance benchmarks | https://learn.microsoft.com/en-us/azure/virtual-machines/hc-series-performance |
 | Review HX-series VM performance and scalability | https://learn.microsoft.com/en-us/azure/virtual-machines/hx-performance |
-| Configure Azure Image Builder triggers and regional limits | https://learn.microsoft.com/en-us/azure/virtual-machines/image-builder-triggers-how-to |
+| Configure Azure Image Builder triggers and limits | https://learn.microsoft.com/en-us/azure/virtual-machines/image-builder-triggers-how-to |
 | Compare CoreMark scores for Azure Linux VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/compute-benchmark-scores |
 | Upload or copy VHDs to managed disks with Azure CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/disks-upload-vhd-to-managed-disk-cli |
 | Expand Linux VM OS and data disk sizes in Azure | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/expand-disks |
-| Operational limits and behaviors for Azure Linux VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/faq |
 | Understand and manage Azure VM vCPU quotas by region | https://learn.microsoft.com/en-us/azure/virtual-machines/quotas |
 | Reference Fadsv7 Azure VM size specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/compute-optimized/fadsv7-series |
 | Reference specs for Azure Faldsv7 compute-optimized VM sizes | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/compute-optimized/faldsv7-series |
@@ -295,6 +296,7 @@ This skill requires **network access** to fetch documentation content:
 | Reference Dv5 Azure VM size specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dv5-series |
 | Reference specs for NC family GPU-optimized VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nc-family |
 | Use NC_RTXPRO6000BSE_v6 VM sizes and specs | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nc-rtxpro6000-bse-v6-series |
+| NC_RTXPRO6000BSE_v6 GPU VM size specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nc-rtxpro6000-bse-v6-series-overview |
 | Reference NC A100 v4 GPU VM size specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nca100v4-series |
 | Review NCads H100 v5 GPU VM size limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/ncadsh100v5-series |
 | Reference NCasT4 v3 GPU VM specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/ncast4v3-series |
@@ -381,7 +383,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure Azure VM vCore customization limits | https://learn.microsoft.com/en-us/azure/virtual-machines/vm-customization |
 | Compare CoreMark scores for Azure Windows VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/compute-benchmark-scores |
 | Upload or copy Windows VHDs to managed disks with PowerShell | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/disks-upload-vhd-to-managed-disk-powershell |
-| Operational limits and behaviors for Azure Windows VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/faq |
 | Prepare Windows VHDs for Azure with size constraints | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/prepare-for-upload-vhd-image |
 | Oracle on Azure VMs FAQs for sizing and HA | https://learn.microsoft.com/en-us/azure/virtual-machines/workloads/oracle/oracle-azure-vms-faq |
 | Understand RHEL image types, naming, and retention on Azure | https://learn.microsoft.com/en-us/azure/virtual-machines/workloads/redhat/redhat-images |

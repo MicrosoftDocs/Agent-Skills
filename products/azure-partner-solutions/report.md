@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-21'
+generated_at: '2026-06-28'
 category_descriptions:
   integrations: Patterns and setup guides for connecting Azure services to external
     data platforms (Confluent Cloud, MongoDB Atlas, Neon Postgres) using Service Connector
@@ -44,9 +44,9 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 - **Unclassified**: 82
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 1
-- **Unchanged**: 105
+- **Unchanged**: 106
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-partner-solutions/azure-partner-solutions.csv`
 
@@ -64,14 +64,10 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 
 ## Changes
 
-### New Pages
-
-- [Troubleshoot log forwarding with Copilot](https://learn.microsoft.com/en-us/azure/partner-solutions/new-relic/troubleshoot-logs-copilot)
-
 ### Updated Pages
 
-- [Napster Companion API](https://learn.microsoft.com/en-us/azure/partner-solutions/napster/)
-  - Updated: 2026-05-27T20:49:00Z → 2026-06-16T11:54:00Z
+- [What is Dell PowerScale?](https://learn.microsoft.com/en-us/azure/partner-solutions/dell/overview)
+  - Updated: 2026-03-30T20:20:00.000Z → 2026-06-25T11:43:00.000Z
 
 ## Classified Pages
 
@@ -186,6 +182,6 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 | [What is Azure Native Pure Storage Cloud?](https://learn.microsoft.com/en-us/azure/partner-solutions/pure-storage/overview) | 0.10 | Overview of Azure Native Pure Storage Cloud; high-level description of service and benefits without detailed configuration or numeric limits in the summary. |
 | [What is Azure Native Qumulo Scalable File Service?](https://learn.microsoft.com/en-us/azure/partner-solutions/qumulo/overview) | 0.10 | Overview of Azure Native Qumulo; descriptive explanation of the service and its capabilities without detailed configuration or numeric thresholds indicated. |
 | [What is Cloud NGFW by Palo Alto Networks?](https://learn.microsoft.com/en-us/azure/partner-solutions/palo-alto/overview) | 0.10 | Overview of Cloud NGFW by Palo Alto Networks; descriptive content about the service and its capabilities without detailed technical configuration or limits indicated. |
-| [What is Dell PowerScale?](https://learn.microsoft.com/en-us/azure/partner-solutions/dell/overview) | 0.10 | Overview/marketing-style description of Dell PowerScale on Azure without evidence of numeric limits, configuration tables, or decision matrices. Primarily conceptual and descriptive. |
+| [What is Dell PowerScale?](https://learn.microsoft.com/en-us/azure/partner-solutions/dell/overview) | 0.10 | Page is an overview/marketing-style description of Dell PowerScale Azure Native Integration without detailed limits, configuration parameters, error codes, or decision matrices; no product-specific numeric limits, settings tables, or troubleshooting content are evident. |
 | [What is LambdaTest - HyperExecute?](https://learn.microsoft.com/en-us/azure/partner-solutions/lambda-test/overview) | 0.10 | LambdaTest - HyperExecute overview is marketing/feature description; no explicit expert-level configuration, limits, or troubleshooting content indicated. |
 | [What is NGINXaaS – An Azure Native ISV Service?](https://learn.microsoft.com/en-us/azure/partner-solutions/nginx/overview) | 0.10 | Overview of NGINXaaS integration; primarily descriptive and marketing-style capabilities summary without detailed configuration or limits. |

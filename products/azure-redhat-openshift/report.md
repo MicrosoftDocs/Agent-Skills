@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-14'
+generated_at: '2026-06-28'
 category_descriptions:
   best-practices: 'Guidance on sizing and configuring ARO clusters: infra nodes, large-cluster
     design, supported configs, and optimizing OpenShift Virtualization VM deployments.'
@@ -48,8 +48,8 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 66
+- **Updated Pages**: 1
+- **Unchanged**: 65
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-redhat-openshift/azure-redhat-openshift.csv`
 
@@ -68,6 +68,11 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | *(Unclassified)* | 15 | 22.7% |
 
 ## Changes
+
+### Updated Pages
+
+- [What's new with Azure Red Hat OpenShift?](https://learn.microsoft.com/en-us/azure/openshift/azure-redhat-openshift-release-notes)
+  - Updated: 2026-05-27T08:00:00.000Z → 2026-06-24T08:00:00.000Z
 
 ## Classified Pages
 
@@ -138,7 +143,7 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Support lifecycle for Azure Red Hat OpenShift 4](https://learn.microsoft.com/en-us/azure/openshift/support-lifecycle) | 0.30 | Support lifecycle and version-support policy information is high-level policy/maintenance guidance, not one of the targeted sub-skill types (no numeric limits/quotas, configuration parameters, error codes, or decision matrices with thresholds). While it may contain specific version dates, those are lifecycle details rather than limits, configuration, or troubleshooting content as defined. |
 | [Upgrade a cluster with managed identities enabled](https://learn.microsoft.com/en-us/azure/openshift/howto-upgrade-aro-openshift-cluster) | 0.30 | This is an upgrade how-to for clusters with managed identities. It is likely a procedural tutorial (using web console or MUO) without configuration matrices, limits, or detailed diagnostic mappings. It describes lifecycle operations rather than expert-only configuration parameters or troubleshooting details. |
 | [Upgrade an Azure Red Hat OpenShift cluster](https://learn.microsoft.com/en-us/azure/openshift/howto-upgrade) | 0.30 | The summary indicates a procedural how-to for updating Azure Red Hat OpenShift clusters via console, CLI, or MUO. It reads as a lifecycle/update tutorial without mention of specific limits, configuration matrices, error-code troubleshooting, or policy-style best practices; likely standard step-by-step instructions rather than expert-only reference data. |
-| [What's new with Azure Red Hat OpenShift?](https://learn.microsoft.com/en-us/azure/openshift/azure-redhat-openshift-release-notes) | 0.30 | Release notes summarize new features and changes over time but are not organized as limits, configuration references, troubleshooting guides, or other structured expert-knowledge categories defined here. They typically lack stable numeric limits, decision matrices, or configuration tables; instead they list version-specific updates, which fall outside the targeted sub-skill types. |
+| [What's new with Azure Red Hat OpenShift?](https://learn.microsoft.com/en-us/azure/openshift/azure-redhat-openshift-release-notes) | 0.30 | Release notes summarize new features and changes but are not organized as limits, configuration references, troubleshooting guides, or other defined sub-skill types. They lack structured error-code mappings, config tables, or decision matrices required by the categories. |
 | [Connect to an Azure Red Hat OpenShift cluster](https://learn.microsoft.com/en-us/azure/openshift/connect-cluster) | 0.20 | Basic connection instructions using kubeadmin; no indication of detailed configuration parameters or troubleshooting mappings. |
 | [Create cluster with managed identities](https://learn.microsoft.com/en-us/azure/openshift/howto-create-openshift-cluster) | 0.20 | Primarily a how-to deployment guide for creating an Azure Red Hat OpenShift cluster with managed identities using CLI/Portal/Bicep/ARM. It does not clearly indicate detailed configuration tables, limits, error-code-based troubleshooting, or product-specific decision matrices; it appears to be procedural tutorial content rather than expert reference material. |
 | [Delete an Azure Red Hat OpenShift cluster](https://learn.microsoft.com/en-us/azure/openshift/delete-cluster) | 0.20 | Quickstart for deleting a cluster; operational but not configuration/limits-focused and lacks expert-only details in summary. |

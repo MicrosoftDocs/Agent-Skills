@@ -1,9 +1,9 @@
 ---
 name: azure-well-architected
-description: Expert guidance for designing, assessing, and optimizing Azure workloads using Azure Well Architected. Covers design review checklists, recommendations, design principles, tradeoffs, service guides, workload patterns, and assessment questions. Use when designing AI, HPC, SaaS, AVD, or mission-critical workloads with WAF-aligned patterns, guides, and tradeoffs, and other Azure Well Architected related development tasks.
+description: Expert guidance for designing, assessing, and optimizing Azure workloads using Azure Well Architected. Covers design review checklists, recommendations, design principles, tradeoffs, service guides, workload patterns, and assessment questions. Use when designing AI, HPC, SaaS, AVD, or mission-critical Azure workloads with WAF-aligned guidance, and other Azure Well Architected related development tasks.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-21"
+  generated_at: "2026-06-28"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Well Architected Skill
@@ -25,12 +25,12 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Design Review Checklists | L35-L43 | Checklists to review Azure workloads for cost, operations, performance, reliability, and security best practices and identify gaps against Well-Architected guidance. |
-| Recommendations | L44-L114 | Guidance on cost, reliability, performance, security, and sustainability best practices for Azure workloads, including design patterns, operations, automation, and governance recommendations. |
-| Design Principles | L115-L130 | Design patterns and best practices for applying Azure Well-Architected (WAF) principles—cost, reliability, security, performance, ops, sustainability—to AI, SaaS, AVD, HPC, and mission-critical workloads. |
-| Tradeoffs | L131-L140 | Guidance on weighing cost, reliability, performance, security, and operations tradeoffs in Azure architectures, including regions/AZ choices and cross-pillar design decisions. |
-| Service Guides | L141-L184 | End-to-end Well-Architected (WAF) guidance for specific Azure services—covering design, networking, security/IAM, monitoring, BCDR, performance, and cost optimization patterns. |
-| Workload Patterns | L185-L237 | Design patterns, reference architectures, and end-to-end guidance for AI, HPC, mission-critical, SaaS, and sustainable workloads on Azure, including platforms, data, ops, security, and governance. |
-| Assessment Questions | L238-L250 | Guided assessments and maturity models to evaluate AI, SaaS, AVD, AVS, and other Azure workloads against WAF pillars: cost, reliability, security, performance, and operations. |
+| Recommendations | L44-L117 | Guidance on cost optimization, operations, performance, reliability, security, and sustainability best practices for architecting and running Azure workloads. |
+| Design Principles | L118-L133 | Design patterns and best practices for cost, reliability, security, performance, operations, sustainability, and mission-critical design across AI, SaaS, AVD, HPC, and other Azure workloads. |
+| Tradeoffs | L134-L143 | Guidance on weighing cost, reliability, performance, security, and operations tradeoffs in Azure architectures, including regions/AZ choices and cross-pillar design decisions. |
+| Service Guides | L144-L187 | End-to-end Well-Architected (WAF) guidance for specific Azure services—covering design, networking, security/IAM, monitoring, BCDR, performance, and cost optimization patterns. |
+| Workload Patterns | L188-L233 | Design patterns, reference architectures, and end-to-end guidance for AI, HPC, mission-critical, SaaS, and sustainable workloads on Azure, including platforms, data, ops, security, and governance. |
+| Assessment Questions | L234-L246 | Guided assessments and maturity models to evaluate AI, SaaS, AVD, AVS, and other Azure workloads against WAF pillars: cost, reliability, security, performance, and operations. |
 
 ### Design Review Checklists
 | Topic | URL |
@@ -108,9 +108,12 @@ This skill requires **network access** to fetch documentation content:
 | Implement secure networking and connectivity controls | https://learn.microsoft.com/en-us/azure/well-architected/security/networking |
 | Implement secure development lifecycle architecture in Azure | https://learn.microsoft.com/en-us/azure/well-architected/security/secure-development-lifecycle |
 | Design segmentation strategies with perimeters and isolation | https://learn.microsoft.com/en-us/azure/well-architected/security/segmentation |
-| Plan and execute security testing for Azure workloads | https://learn.microsoft.com/en-us/azure/well-architected/security/test |
-| Apply security practices for sustainable Azure workloads | https://learn.microsoft.com/en-us/azure/well-architected/sustainability/sustainability-security |
-| Implement sustainable data and storage design on Azure | https://learn.microsoft.com/en-us/azure/well-architected/sustainability/sustainability-storage |
+| Implement rigorous security testing for Azure workloads | https://learn.microsoft.com/en-us/azure/well-architected/security/test |
+| Use cost optimization recommendations for sustainable Azure workloads | https://learn.microsoft.com/en-us/azure/well-architected/sustainability/sustainability-cost-optimization-recommendations |
+| Adopt operational excellence practices for sustainable Azure workloads | https://learn.microsoft.com/en-us/azure/well-architected/sustainability/sustainability-operational-excellence-recommendations |
+| Optimize performance efficiency for sustainable Azure workloads | https://learn.microsoft.com/en-us/azure/well-architected/sustainability/sustainability-performance-efficiency-recommendations |
+| Implement reliability recommendations for sustainable Azure workloads | https://learn.microsoft.com/en-us/azure/well-architected/sustainability/sustainability-reliability-recommendations |
+| Apply security recommendations to improve sustainable Azure workloads | https://learn.microsoft.com/en-us/azure/well-architected/sustainability/sustainability-security-recommendations |
 
 ### Design Principles
 | Topic | URL |
@@ -126,7 +129,7 @@ This skill requires **network access** to fetch documentation content:
 | Apply reliability design principles to Azure workloads | https://learn.microsoft.com/en-us/azure/well-architected/reliability/principles |
 | Use WAF-aligned design principles for SaaS on Azure | https://learn.microsoft.com/en-us/azure/well-architected/saas/design-principles |
 | Apply security design principles with zero trust | https://learn.microsoft.com/en-us/azure/well-architected/security/principles |
-| Use sustainability design principles for Azure workloads | https://learn.microsoft.com/en-us/azure/well-architected/sustainability/sustainability-design-principles |
+| Apply sustainability design methodology for Azure workloads | https://learn.microsoft.com/en-us/azure/well-architected/sustainability/sustainability-design-methodology |
 
 ### Tradeoffs
 | Topic | URL |
@@ -226,13 +229,6 @@ This skill requires **network access** to fetch documentation content:
 | Design incident management processes for SaaS solutions on Azure | https://learn.microsoft.com/en-us/azure/well-architected/saas/incident-management |
 | Design networking topology and security for SaaS on Azure | https://learn.microsoft.com/en-us/azure/well-architected/saas/networking |
 | Plan region selection and resource organization for SaaS on Azure | https://learn.microsoft.com/en-us/azure/well-architected/saas/resource-organization |
-| Optimize Azure workloads for sustainability with WAF | https://learn.microsoft.com/en-us/azure/well-architected/sustainability/ |
-| Design applications on Azure for sustainability and carbon efficiency | https://learn.microsoft.com/en-us/azure/well-architected/sustainability/sustainability-application-design |
-| Choose sustainable application platform and infrastructure options on Azure | https://learn.microsoft.com/en-us/azure/well-architected/sustainability/sustainability-application-platform |
-| Apply design methodology to build sustainable Azure workloads | https://learn.microsoft.com/en-us/azure/well-architected/sustainability/sustainability-design-methodology |
-| Design networking for sustainable Azure workloads to reduce emissions | https://learn.microsoft.com/en-us/azure/well-architected/sustainability/sustainability-networking |
-| Define operational procedures for sustainable workloads on Azure | https://learn.microsoft.com/en-us/azure/well-architected/sustainability/sustainability-operational-procedures |
-| Optimize testing and CI/CD for sustainable Azure workloads | https://learn.microsoft.com/en-us/azure/well-architected/sustainability/sustainability-testing |
 | Design sustainable AI workloads on Azure | https://learn.microsoft.com/en-us/azure/well-architected/sustainability/sustainable-ai-design |
 
 ### Assessment Questions

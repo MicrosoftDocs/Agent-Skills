@@ -1,9 +1,9 @@
 ---
 name: azure-api-management
-description: Expert knowledge for Azure API Management development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing APIM policies/callouts, VNet and custom domains, self-hosted gateways, Entra ID/OAuth2 auth, or autoscale, and other Azure API Management related development tasks. Not for Azure App Service (use azure-app-service), Azure Functions (use azure-functions), Azure Logic Apps (use azure-logic-apps), Azure Service Bus (use azure-service-bus).
+description: Expert knowledge for Azure API Management development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing APIM policies, VNet/gateways, self-hosted gateways, Entra/OAuth auth, or autoscale/multi-region setups, and other Azure API Management related development tasks. Not for Azure Application Gateway (use azure-application-gateway), Azure Front Door (use azure-front-door), Azure Web Application Firewall (use azure-web-application-firewall), Azure Functions (use azure-functions).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-21"
+  generated_at: "2026-06-28"
   generator: "docs2skills/1.0.0"
 ---
 # Azure API Management Skill
@@ -28,11 +28,11 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L46-L55 | Best practices for caching, throttling, security (OWASP API Top 10), SSE setup, and running the self-hosted gateway on Kubernetes in production for Azure API Management. |
 | Decision Making | L56-L74 | Guidance for planning and migrating API Management: pricing and scaling, cost control, DevOps/CI/CD, VNet choices, workspace and portal changes, and moving from legacy or other platforms. |
 | Architecture & Design Patterns | L75-L81 | Patterns for placing API Management behind App Gateway/WAF, Azure Front Door, or AKS, including routing, security, and high‑availability reference architectures. |
-| Limits & Quotas | L82-L99 | Limits, quotas, and validation rules in API Management: request/concurrency caps, per-key and bandwidth quotas, LLM token limits, SOAP/WSDL/WebSocket constraints, and validate-* policies. |
-| Security | L100-L141 | Securing APIs and APIM: authN/Z (Entra ID, B2C, OAuth2, JWT, mTLS, basic), managed identities/RBAC, secure portals/self-hosted gateways, security policies, and DDoS/Defender protections. |
-| Configuration | L142-L235 | Configuring Azure API Management services, policies, networking, caching, monitoring, domains, gateways, and developer portal behavior for runtime and operational control. |
-| Integrations & Coding Patterns | L236-L267 | Patterns and samples for integrating API Management with external services (LLMs, Event Hubs, Service Bus, Graph, GitHub, Dapr), importing APIs (OpenAPI, SAP, web apps), and using policies/callouts. |
-| Deployment | L268-L286 | Deploying and scaling API Management: autoscale, multi-region, DR/backup, VNet and zone deployment, self-hosted gateways (AKS/Kubernetes/Docker/Arc), automation, and certificate planning. |
+| Limits & Quotas | L82-L100 | Limits, quotas, and validation rules in API Management: service and gateway limits, request/concurrency caps, LLM token quotas, SOAP/WSDL/WebSocket constraints, and validate-* policies. |
+| Security | L101-L142 | Securing APIs and APIM: authN/Z (Entra ID, B2C, OAuth2, JWT, mTLS, basic), managed identities/RBAC, secure portals/self-hosted gateways, security policies, and DDoS/Defender protections. |
+| Configuration | L143-L236 | Configuring Azure API Management services, policies, networking, caching, monitoring, domains, gateways, and developer portal behavior for runtime and operational control. |
+| Integrations & Coding Patterns | L237-L268 | Patterns and samples for integrating API Management with LLMs, backends, logging/monitoring, events, OAuth, GitHub, Dapr, and exporting/importing APIs via OpenAPI, Postman, and Power Platform |
+| Deployment | L269-L287 | Deploying and scaling API Management: autoscale, multi-region, DR/backup, VNet and zone deployment, self-hosted gateways (AKS/Kubernetes/Docker/Arc), automation, and certificate planning. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -83,6 +83,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | API format support restrictions for OpenAPI, WSDL, and WADL | https://learn.microsoft.com/en-us/azure/api-management/api-management-api-import-restrictions |
+| Understand Azure API Management limits and behaviors | https://learn.microsoft.com/en-us/azure/api-management/api-management-faq |
 | Import SOAP APIs and handle WSDL restrictions in API Management | https://learn.microsoft.com/en-us/azure/api-management/import-soap-api |
 | Limit concurrent request execution in API Management | https://learn.microsoft.com/en-us/azure/api-management/limit-concurrency-policy |
 | Enforce LLM token limits with llm-token-limit policy | https://learn.microsoft.com/en-us/azure/api-management/llm-token-limit-policy |
@@ -252,7 +253,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure user-delegated OAuth connections in API Management | https://learn.microsoft.com/en-us/azure/api-management/credentials-how-to-user-delegated |
 | Export Azure API Management APIs to Postman collections | https://learn.microsoft.com/en-us/azure/api-management/export-api-postman |
 | Export Azure API Management APIs to Microsoft Power Platform | https://learn.microsoft.com/en-us/azure/api-management/export-api-power-platform |
-| Configure Service Fabric services as API Management backends | https://learn.microsoft.com/en-us/azure/api-management/how-to-configure-service-fabric-backend |
+| Configure Service Fabric as API Management backend | https://learn.microsoft.com/en-us/azure/api-management/how-to-configure-service-fabric-backend |
 | Deploy API Management self-hosted gateway with OpenTelemetry on Kubernetes | https://learn.microsoft.com/en-us/azure/api-management/how-to-deploy-self-hosted-gateway-kubernetes-opentelemetry |
 | Integrate Azure API Management events with Event Grid | https://learn.microsoft.com/en-us/azure/api-management/how-to-event-grid |
 | Import OpenAPI specifications into Azure API Management | https://learn.microsoft.com/en-us/azure/api-management/import-api-from-oas |

@@ -43,8 +43,8 @@ confusable_not_for: Not for Azure Firewall (use azure-firewall), Azure Web Appli
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 33
+- **Updated Pages**: 0
+- **Unchanged**: 34
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-ddos-protection/azure-ddos-protection.csv`
 
@@ -61,11 +61,6 @@ confusable_not_for: Not for Azure Firewall (use azure-firewall), Azure Web Appli
 | *(Unclassified)* | 9 | 26.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [Test with simulation partners](https://learn.microsoft.com/en-us/azure/ddos-protection/test-through-simulations)
-  - Updated: 2026-03-17T08:00:00.000Z → 2026-06-17T22:15:00.000Z
 
 ## Classified Pages
 

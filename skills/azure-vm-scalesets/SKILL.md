@@ -1,9 +1,9 @@
 ---
 name: azure-vm-scalesets
-description: Expert knowledge for Azure Virtual Machine Scale Sets development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring autoscale, standby pools, Spot mixes, disk encryption, or Shared Image Gallery images, and other Azure Virtual Machine Scale Sets related development tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Container Instances (use azure-container-instances), Azure App Service (use azure-app-service).
+description: Expert knowledge for Azure Virtual Machine Scale Sets development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring VMSS autoscale/standby pools, disk encryption with Key Vault, PPGs, Log Analytics, or rolling upgrades, and other Azure Virtual Machine Scale Sets related development tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Container Instances (use azure-container-instances), Azure App Service (use azure-app-service).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-31"
+  generated_at: "2026-06-28"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Virtual Machine Scale Sets Skill
@@ -28,7 +28,7 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L44-L49 | Configuring rolling upgrades for VM scale sets, tuning MaxSurge settings, and strategies to minimize downtime and maintain high availability during production updates. |
 | Decision Making | L50-L66 | Guidance on choosing VMSS orchestration/upgrade modes, autoscale, Spot vs standard/priority mix, fault domains, standby pools, and cost-optimized configurations for different workload patterns. |
 | Architecture & Design Patterns | L67-L71 | Designing scale sets with proximity placement groups to minimize latency, improve performance, and ensure VMs are co-located for tightly coupled or high-performance workloads |
-| Limits & Quotas | L72-L77 | Limits, quotas, and behaviors of VM Scale Sets, including placement groups, max instance counts, capacity constraints, and how scaling and distribution work under these limits. |
+| Limits & Quotas | L72-L77 | Scale set capacity, instance, and resource limits; placement group behavior; scaling constraints; and how limits affect deployment, availability, and distribution of VMs. |
 | Security | L78-L89 | Encrypting VMSS disks (CLI, PowerShell, ARM), configuring Azure Disk Encryption with Key Vault and extensions, and securing scale sets via Azure Policy and RBAC for standby pools. |
 | Configuration | L90-L133 | Configuring VM Scale Sets: templates, networking, disks, images, zones, upgrades, autoscale, repairs, standby pools, instance mix/protection, maintenance, and CLI/PowerShell/API management. |
 | Integrations & Coding Patterns | L134-L139 | Configuring VM scale set standby pools with Log Analytics for monitoring and integrating scale sets with Azure DSC extension for automated configuration management. |
@@ -72,7 +72,7 @@ This skill requires **network access** to fetch documentation content:
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
-| Azure VM Scale Sets FAQs on limits and behavior | https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-faq |
+| Reference limits and behaviors for VM Scale Sets | https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-faq |
 | Understand placement groups and scale set capacity limits | https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-placement-groups |
 
 ### Security

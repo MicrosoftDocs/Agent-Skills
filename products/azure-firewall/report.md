@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-21'
+generated_at: '2026-06-28'
 category_descriptions:
   decision-making: Guidance on choosing Azure Firewall SKUs (Basic/Standard/Premium),
     comparing features and performance, and planning or changing deployments based
@@ -48,13 +48,13 @@ confusable_not_for: Not for Azure Firewall Manager (use azure-firewall-manager),
 - **Total Pages**: 85
 - **Fetched**: 85
 - **Fetch Failed**: 0
-- **Classified**: 61
-- **Unclassified**: 24
+- **Classified**: 60
+- **Unclassified**: 25
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 5
-- **Unchanged**: 80
+- **Updated Pages**: 1
+- **Unchanged**: 84
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-firewall/azure-firewall.csv`
 
@@ -62,7 +62,7 @@ confusable_not_for: Not for Azure Firewall Manager (use azure-firewall-manager),
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 9 | 10.6% |
+| architecture-patterns | 8 | 9.4% |
 | best-practices | 4 | 4.7% |
 | configuration | 19 | 22.4% |
 | decision-making | 5 | 5.9% |
@@ -71,22 +71,14 @@ confusable_not_for: Not for Azure Firewall Manager (use azure-firewall-manager),
 | limits-quotas | 6 | 7.1% |
 | security | 10 | 11.8% |
 | troubleshooting | 2 | 2.4% |
-| *(Unclassified)* | 24 | 28.2% |
+| *(Unclassified)* | 25 | 29.4% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Best practices for performance](https://learn.microsoft.com/en-us/azure/firewall/firewall-best-practices)
-  - Updated: 2026-03-29T11:12:00.000Z → 2026-06-16T22:28:00.000Z
-- [Monitoring Azure Firewall reference](https://learn.microsoft.com/en-us/azure/firewall/monitor-firewall-reference)
-  - Updated: 2025-11-07T23:24:00.000Z → 2026-06-16T22:28:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/firewall/firewall-faq)
-  - Updated: 2026-04-15T17:15:00.000Z → 2026-06-16T22:28:00.000Z
-- [PowerShell](https://learn.microsoft.com/en-us/azure/firewall/deploy-multi-public-ip-powershell)
-  - Updated: 2026-03-30T22:11:00.000Z → 2026-06-16T22:28:00.000Z
-- [Scale outbound SNAT ports](https://learn.microsoft.com/en-us/azure/firewall/integrate-with-nat-gateway)
-  - Updated: 2026-04-01T22:41:00.000Z → 2026-06-16T22:28:00.000Z
+- [Portal](https://learn.microsoft.com/en-us/azure/firewall/tutorial-hybrid-portal-policy)
+  - Updated: 2026-01-27T08:00:00.000Z → 2026-06-23T05:11:00.000Z
 
 ## Classified Pages
 
@@ -143,7 +135,6 @@ confusable_not_for: Not for Azure Firewall Manager (use azure-firewall-manager),
 | [Policy Analytics](https://learn.microsoft.com/en-us/azure/firewall/policy-analytics) | best-practices | 0.65 | Focuses on using Policy Analytics to manage and optimize rules; contains product-specific guidance on improving rule sets and avoiding downtime, which is actionable best-practice content. |
 | [Portal](https://learn.microsoft.com/en-us/azure/firewall/firewall-azure-policy) | security | 0.65 | Describes using Azure Policy to govern Azure Firewall configurations and enforce security/compliance standards; likely includes specific built-in policy definitions and parameters, which are product-specific security configuration details. |
 | [Portal](https://learn.microsoft.com/en-us/azure/firewall/premium-deploy) | deployment | 0.65 | Covers deploying Premium with a specific test topology and notes Bastion hourly pricing behavior; includes product-specific deployment considerations and requirements for this SKU. |
-| [Portal](https://learn.microsoft.com/en-us/azure/firewall/tutorial-hybrid-portal-policy) | architecture-patterns | 0.65 | Tutorial for hybrid on-premises-to-Azure connectivity using Firewall and policy; describes a concrete hybrid network architecture pattern with multiple VNets. |
 | [Portal, PowerShell, and CLI](https://learn.microsoft.com/en-us/azure/firewall/create-ip-group) | configuration | 0.65 | Step-by-step creation of IP Groups with details on allowed address forms (single IP, multiple IPs, ranges); concrete configuration behavior for this feature. |
 | [PowerShell](https://learn.microsoft.com/en-us/azure/firewall/tutorial-hybrid-ps) | architecture-patterns | 0.65 | Describes creating multiple virtual networks and using Azure Firewall to control access in a hybrid (on-prem + Azure) scenario; this is a product-specific network architecture pattern. |
 | [Private IP DNAT for overlapped and nonroutable networks](https://learn.microsoft.com/en-us/azure/firewall/tutorial-private-ip-dnat) | architecture-patterns | 0.65 | Targets overlapped and nonroutable network scenarios using private IP DNAT; describes specific network design patterns for Azure Firewall. |
@@ -170,6 +161,7 @@ confusable_not_for: Not for Azure Firewall Manager (use azure-firewall-manager),
 | [Overview](https://learn.microsoft.com/en-us/azure/firewall/premium-portal) | 0.35 | Portal overview of Premium; summary points to high-level features, not detailed configuration parameters or limits. |
 | [Azure Firewall with Microsoft Sentinel](https://learn.microsoft.com/en-us/azure/firewall/firewall-sentinel-overview) | 0.30 | Overview of integrating Azure Firewall with Microsoft Sentinel; largely conceptual about benefits and scenarios, without detailed configuration parameters or numeric thresholds. |
 | [Deploy with Availability Zones](https://learn.microsoft.com/en-us/azure/firewall/deploy-availability-zone-powershell) | 0.30 | Availability Zones deployment via PowerShell; likely procedural without detailed limits, config parameter tables, or error mappings. |
+| [Portal](https://learn.microsoft.com/en-us/azure/firewall/tutorial-hybrid-portal-policy) | 0.30 | Tutorial-style deployment and configuration walkthrough for Azure Firewall in a hybrid network using the portal; primarily step-by-step instructions without clear evidence of detailed limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. Content appears to be general how-to guidance rather than expert-only reference data. |
 | [Preview features](https://learn.microsoft.com/en-us/azure/firewall/firewall-preview) | 0.30 | Lists preview features conceptually; no detailed limits, configs, or troubleshooting mappings. |
 | [Service tags](https://learn.microsoft.com/en-us/azure/firewall/service-tags) | 0.30 | Overview of service tags; describes concept and usage but not detailed configuration parameters, limits, or troubleshooting mappings. |
 | [ARM template](https://learn.microsoft.com/en-us/azure/firewall/deploy-template) | 0.20 | ARM template quickstart; focuses on sample deployment, not on expert configuration or limits. |

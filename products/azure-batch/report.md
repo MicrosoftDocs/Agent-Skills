@@ -53,9 +53,9 @@ confusable_not_for: Not for Azure HDInsight (use azure-hdinsight), Azure Databri
 - **Unclassified**: 37
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 53
-- **Unchanged**: 61
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 115
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-batch/azure-batch.csv`
 
@@ -75,54 +75,6 @@ confusable_not_for: Not for Azure HDInsight (use azure-hdinsight), Azure Databri
 | *(Unclassified)* | 37 | 32.2% |
 
 ## Changes
-
-### New Pages
-
-- [Capacity planning](https://learn.microsoft.com/en-us/azure/batch/batch-capacity-planning)
-
-### Updated Pages
-
-- [Task dependencies](https://learn.microsoft.com/en-us/azure/batch/batch-task-dependencies)
-  - Updated: 2026-05-16T05:17:00.000Z → 2026-06-16T08:00:00.000Z
-- [Schedule jobs for efficiency](https://learn.microsoft.com/en-us/azure/batch/batch-job-schedule)
-  - Updated: 2025-03-21T08:00:00.000Z → 2026-06-16T08:00:00.000Z
-- [Persist job and task output](https://learn.microsoft.com/en-us/azure/batch/batch-task-output)
-  - Updated: 2025-04-02T08:00:00.000Z → 2026-06-16T08:00:00.000Z
-- [Persist output with Batch API](https://learn.microsoft.com/en-us/azure/batch/batch-task-output-files)
-  - Updated: 2025-07-01T08:00:00.000Z → 2026-06-16T08:00:00.000Z
-- [Persist output with File Conventions library](https://learn.microsoft.com/en-us/azure/batch/batch-task-output-file-conventions)
-  - Updated: 2025-04-02T08:00:00.000Z → 2026-06-16T08:00:00.000Z
-- [Monitor with Application Insights](https://learn.microsoft.com/en-us/azure/batch/monitor-application-insights)
-  - Updated: 2024-11-06T08:00:00.000Z → 2026-06-17T11:41:00.000Z
-- [Use Azure PowerShell](https://learn.microsoft.com/en-us/azure/batch/batch-powershell-cmdlets-get-started)
-  - Updated: 2025-04-02T08:00:00.000Z → 2026-06-16T08:00:00.000Z
-- [Use Batch CLI templates](https://learn.microsoft.com/en-us/azure/batch/batch-cli-templates)
-  - Updated: 2025-04-02T08:00:00.000Z → 2026-06-16T08:00:00.000Z
-- [Rendering using Azure](https://learn.microsoft.com/en-us/azure/batch/batch-rendering-service)
-  - Updated: 2025-07-01T08:00:00.000Z → 2026-06-16T08:00:00.000Z
-- [Rendering architectures](https://learn.microsoft.com/en-us/azure/batch/batch-rendering-architectures)
-  - Updated: 2025-02-07T08:00:00.000Z → 2026-06-16T08:00:00.000Z
-- [Manage private endpoint connections with Batch accounts](https://learn.microsoft.com/en-us/azure/batch/manage-private-endpoint-connections)
-  - Updated: 2024-06-24T08:00:00.000Z → 2026-06-17T11:41:00.000Z
-- [Move between regions](https://learn.microsoft.com/en-us/azure/batch/account-move)
-  - Updated: 2025-04-25T08:00:00.000Z → 2026-06-16T08:00:00.000Z
-- [Rotate Batch account keys](https://learn.microsoft.com/en-us/azure/batch/account-key-rotation)
-  - Updated: 2025-07-01T08:00:00.000Z → 2026-06-17T11:41:00.000Z
-- [Associate Batch accounts with network security perimeter](https://learn.microsoft.com/en-us/azure/batch/network-security-perimeter)
-  - Updated: 2025-03-19T17:20:00.000Z → 2026-06-16T08:00:00.000Z
-- [Securely access Key Vault with Batch](https://learn.microsoft.com/en-us/azure/batch/credential-access-key-vault)
-  - Updated: 2025-07-01T08:00:00.000Z → 2026-06-17T11:41:00.000Z
-- [Role-based access control for Azure Batch service](https://learn.microsoft.com/en-us/azure/batch/batch-role-based-access-control)
-  - Updated: 2025-08-12T11:11:00.000Z → 2026-06-16T08:00:00.000Z
-- [Create a pool in a virtual network](https://learn.microsoft.com/en-us/azure/batch/batch-virtual-network)
-  - Updated: 2024-11-19T08:00:00.000Z → 2026-06-16T08:00:00.000Z
-- [Create a pool across Availability Zones](https://learn.microsoft.com/en-us/azure/batch/create-pool-availability-zones)
-  - Updated: 2024-08-12T08:00:00.000Z → 2026-06-16T08:00:00.000Z
-- [Enable certificate rotation](https://learn.microsoft.com/en-us/azure/batch/automatic-certificate-rotation)
-  - Updated: 2024-04-16T08:00:00.000Z → 2026-06-16T08:00:00.000Z
-- [Mount a virtual file system](https://learn.microsoft.com/en-us/azure/batch/virtual-file-mount)
-  - Updated: 2025-05-13T08:00:00.000Z → 2026-06-16T08:00:00.000Z
-- *...and 33 more*
 
 ## Classified Pages
 

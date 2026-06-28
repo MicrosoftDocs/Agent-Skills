@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-06-21'
+generated_at: '2026-06-28'
 category_descriptions:
   configuration: 'Configuring Azure AI Search: data sources, indexers, skillsets,
-    analyzers, vectors, semantic ranker, logging/monitoring, and agentic retrieval/answer
-    synthesis settings.'
+    analyzers, vector/semantic settings, enrichment, logging/monitoring, and agentic
+    retrieval/knowledge base options.'
   security: 'Securing Azure AI Search: RBAC/keyless auth, API keys, encryption/CMK,
     network isolation (private endpoints, firewalls), indexer access to data sources,
     and query-time ACL/labels.'
@@ -21,25 +21,24 @@ category_descriptions:
     behavior in Azure AI Search.
   decision-making: 'Guidance on planning and migrating Azure AI Search: API/SDK upgrades,
     capacity and region choices, data connectors, pricing models, and cost management.'
-  deployment: Deploying and moving Azure AI Search services with ARM/Bicep/Terraform,
-    plus guidance on cross-region moves and checking regional feature and SKU availability.
+  deployment: Deploying Azure AI Search via ARM/Bicep/Terraform, moving services between
+    regions, and checking regional availability and feature support.
   architecture-patterns: 'Architectural guidance for Azure AI Search: RAG patterns,
     knowledge store design, multitenancy and tenant isolation, and multi-region/high-availability
     deployment designs.'
 skill_description: Expert knowledge for Azure AI Search development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  configuring indexes/skillsets, indexers, vectors/semantic ranker, private endpoints,
-  or RAG/agent retrieval flows, and other Azure AI Search related development tasks.
-  Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Database (use azure-sql-database),
-  Azure Synapse Analytics (use azure-synapse-analytics), Azure Data Explorer (use
-  azure-data-explorer).
-use_when: Use when configuring indexes/skillsets, indexers, vectors/semantic ranker,
-  private endpoints, or RAG/agent retrieval flows, and other Azure AI Search related
-  development tasks.
-confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Database
-  (use azure-sql-database), Azure Synapse Analytics (use azure-synapse-analytics),
-  Azure Data Explorer (use azure-data-explorer).
+  configuring indexes/skillsets, indexers/data sources, vector/semantic search, RBAC/private
+  endpoints, or RAG apps, and other Azure AI Search related development tasks. Not
+  for Azure Data Explorer (use azure-data-explorer), Azure Cosmos DB (use azure-cosmos-db),
+  Azure SQL Database (use azure-sql-database), Azure Synapse Analytics (use azure-synapse-analytics).
+use_when: Use when configuring indexes/skillsets, indexers/data sources, vector/semantic
+  search, RBAC/private endpoints, or RAG apps, and other Azure AI Search related development
+  tasks.
+confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure Cosmos
+  DB (use azure-cosmos-db), Azure SQL Database (use azure-sql-database), Azure Synapse
+  Analytics (use azure-synapse-analytics).
 ---
 # Azure AI Search Crawl Report
 
@@ -48,13 +47,13 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Dat
 - **Total Pages**: 314
 - **Fetched**: 314
 - **Fetch Failed**: 0
-- **Classified**: 240
-- **Unclassified**: 74
+- **Classified**: 241
+- **Unclassified**: 73
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 5
-- **Unchanged**: 309
+- **Updated Pages**: 2
+- **Unchanged**: 312
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cognitive-search/azure-cognitive-search.csv`
 
@@ -66,27 +65,21 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Dat
 | best-practices | 16 | 5.1% |
 | configuration | 96 | 30.6% |
 | decision-making | 11 | 3.5% |
-| deployment | 4 | 1.3% |
+| deployment | 5 | 1.6% |
 | integrations | 63 | 20.1% |
 | limits-quotas | 6 | 1.9% |
 | security | 34 | 10.8% |
 | troubleshooting | 8 | 2.5% |
-| *(Unclassified)* | 74 | 23.6% |
+| *(Unclassified)* | 73 | 23.2% |
 
 ## Changes
 
 ### Updated Pages
 
-- [What's new](https://learn.microsoft.com/en-us/azure/search/whats-new)
-  - Updated: 2026-06-02T19:00:00.000Z → 2026-06-19T08:00:00.000Z
-- [Azure CLI](https://learn.microsoft.com/en-us/azure/search/search-manage-azure-cli)
-  - Updated: 2025-09-30T05:24:00.000Z → 2026-06-19T08:00:00.000Z
-- [Enable or disable semantic ranker billing](https://learn.microsoft.com/en-us/azure/search/semantic-how-to-enable-disable)
-  - Updated: 2026-05-12T06:04:00.000Z → 2026-06-17T17:08:00.000Z
-- [Enable or disable agentic retrieval billing](https://learn.microsoft.com/en-us/azure/search/agentic-retrieval-how-to-enable-disable)
-  - Updated: 2026-05-12T06:04:00.000Z → 2026-06-17T17:08:00.000Z
-- [Troubleshoot storage metrics](https://learn.microsoft.com/en-us/azure/search/troubleshoot-storage-metrics)
-  - Updated: 2026-03-19T22:16:00.000Z → 2026-06-15T17:17:00.000Z
+- [Supported regions](https://learn.microsoft.com/en-us/azure/search/search-region-support)
+  - Updated: 2026-06-05T08:00:00.000Z → 2026-06-25T22:16:00.000Z
+- [Overview](https://learn.microsoft.com/en-us/azure/search/cognitive-search-predefined-skills)
+  - Updated: 2025-11-18T15:37:00.000Z → 2026-06-25T08:00:00.000Z
 
 ## Classified Pages
 
@@ -107,7 +100,6 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Dat
 | [Stopwords](https://learn.microsoft.com/en-us/azure/search/reference-stopwords) | configuration | 0.85 | Provides the exact stopword lists used by Microsoft language analyzers; these are detailed, product-specific lexical configuration values. |
 | [Assign roles (apps)](https://learn.microsoft.com/en-us/azure/search/search-security-rbac-client-code) | security | 0.84 | Shows how to use Azure Identity libraries and Entra ID for keyless auth, including specific configuration patterns and parameters; security-focused integration details. |
 | [Configure cross-tenant CMK](https://learn.microsoft.com/en-us/azure/search/search-security-managed-encryption-cross-tenant) | security | 0.83 | Explains cross-tenant CMK setup using a multitenant Entra app and Key Vault in another tenant, including tenant roles, key access patterns, and encryption configuration unique to Azure AI Search, which is specialized security configuration knowledge. |
-| [Overview](https://learn.microsoft.com/en-us/azure/search/cognitive-search-predefined-skills) | configuration | 0.83 | Skills reference enumerates all built-in skills, their inputs/outputs, and configuration options; this is detailed, product-specific configuration knowledge. |
 | [Azure Cosmos DB](https://learn.microsoft.com/en-us/azure/search/search-howto-managed-identities-cosmos-db) | security | 0.82 | Describes configuring Azure AI Search indexers to Azure Cosmos DB using managed identities and mentions disabling local auth. This implies specific role assignments, RBAC roles, and configuration flags (such as disableLocalAuth) that are product-specific security settings. |
 | [Azure SQL (preview)](https://learn.microsoft.com/en-us/azure/search/agentic-knowledge-source-how-to-azure-sql) | configuration | 0.82 | An indexed Azure SQL knowledge source requires specifying table/view, key columns, and connection/ingestion settings. The article will define resource schema and parameters unique to this feature, which is configuration-focused expert knowledge. |
 | [Azure Vision multimodal embeddings](https://learn.microsoft.com/en-us/azure/search/cognitive-search-skill-vision-vectorize) | configuration | 0.82 | Skill reference with parameters, preview API version, billing behavior, and usage constraints; detailed configuration for a specific built-in skill. |
@@ -180,6 +172,7 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Dat
 | [Index CSV](https://learn.microsoft.com/en-us/azure/search/search-how-to-index-azure-blob-csv) | configuration | 0.78 | Explains the delimitedText parsing mode for Azure Blob/Files indexers, including how each CSV line becomes a document and how to handle delimiters and quotes. This is a product-specific configuration mode with concrete behavior and field-handling rules, fitting configuration. |
 | [Index any data](https://learn.microsoft.com/en-us/azure/search/tutorial-optimize-indexing-push-api) | best-practices | 0.78 | Provides concrete batching sizes, retry/backoff patterns, and code patterns tailored to Azure AI Search push indexing for performance and reliability. |
 | [Monitor queries](https://learn.microsoft.com/en-us/azure/search/search-monitor-queries) | configuration | 0.78 | Details metrics like latency, QPS, throttling, retention windows, and how to enable diagnostic logging to capture query strings. These are concrete monitoring configurations and behaviors. |
+| [Overview](https://learn.microsoft.com/en-us/azure/search/cognitive-search-predefined-skills) | configuration | 0.78 | The skills reference page lists each built-in/predefined skill with its specific input/output field names, required and optional parameters, allowed values, and behavior details unique to Azure AI Search enrichment pipelines. This is product-specific configuration knowledge (how to configure each skill in a skillset) that goes beyond generic LLM training. The content is organized as a reference of skill configuration options rather than a conceptual overview, matching the configuration sub-skill type. |
 | [SQL Database](https://learn.microsoft.com/en-us/azure/search/search-howto-managed-identities-sql) | security | 0.78 | Covers setting up managed identity-based connections from Azure AI Search to Azure SQL Database. This typically includes exact RBAC roles, permission scopes, and connection configuration parameters, which are concrete security configuration details. |
 | [SQL Managed Instance](https://learn.microsoft.com/en-us/azure/search/search-how-to-index-sql-managed-instance-with-managed-identity) | security | 0.78 | Explains configuring Azure AI Search indexers to Azure SQL Managed Instance with managed identities. This involves specific role assignments, permissions, and connection settings unique to this integration, fitting security configuration guidance. |
 | [Tips for better performance](https://learn.microsoft.com/en-us/azure/search/search-performance-tips) | best-practices | 0.78 | Performance tips/best practices page for a specific service; typically includes concrete, product-specific recommendations (e.g., index design, query options, batching patterns) that go beyond generic search theory. |
@@ -287,6 +280,7 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Dat
 | [Set retrieval reasoning effort (preview)](https://learn.microsoft.com/en-us/azure/search/agentic-retrieval-how-to-set-retrieval-reasoning-effort) | configuration | 0.70 | Page describes how to set levels of LLM processing for agentic retrieval, which implies specific configuration parameters, allowed values, and possibly defaults. This fits configuration-focused expert knowledge. |
 | [Shaper](https://learn.microsoft.com/en-us/azure/search/cognitive-search-skill-shaper) | configuration | 0.70 | Shaper skill documentation provides detailed configuration for reshaping the enrichment tree and mapping to index/knowledge store structures, which is product-specific configuration. |
 | [Simple query syntax](https://learn.microsoft.com/en-us/azure/search/query-simple-syntax) | integrations | 0.70 | Reference for a product-specific query language; includes operators, parameters, and syntax rules that function like an API surface for queries. |
+| [Supported regions](https://learn.microsoft.com/en-us/azure/search/search-region-support) | deployment | 0.70 | Page contains a region-by-region matrix of where Azure AI Search is available and which premium features are supported in each region. This is expert, product-specific availability data that changes over time and is not reliably known from training. It best fits deployment because it defines which regions (deployment locations) support specific capabilities, a key constraint for planning and deploying the service. |
 | [Terraform](https://learn.microsoft.com/en-us/azure/search/search-get-started-terraform) | deployment | 0.70 | Includes Terraform resource blocks and arguments specific to Azure AI Search, a deployment-focused integration pattern. |
 | [Upgrade a service](https://learn.microsoft.com/en-us/azure/search/search-how-to-upgrade) | decision-making | 0.70 | Upgrade article describes when and how to move to higher-capacity storage and processors, including which services are eligible and what changes (partition storage, vector index size) occur; this supports migration/upgrade decisions with product-specific details. |
 | [Use security filters](https://learn.microsoft.com/en-us/azure/search/search-security-trimming-for-azure-search) | security | 0.70 | Describes a concrete security filter pattern with stepwise implementation for trimming results by user/group identity. Pattern is product-specific and actionable beyond generic security concepts. |
@@ -346,7 +340,6 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Dat
 | [Page, sort, and shape results](https://learn.microsoft.com/en-us/azure/search/search-pagination-page-layout) | 0.40 | Explains shaping search results via query parameters; likely standard usage patterns, not expert-only configuration matrices. |
 | [Programmatic](https://learn.microsoft.com/en-us/azure/search/search-get-started-agentic-retrieval) | 0.40 | Quickstart for agentic retrieval using a preview API focuses on demonstrating features; summary does not show detailed configuration parameter tables, limits, or error-resolution mappings. |
 | [Return a semantic answer](https://learn.microsoft.com/en-us/azure/search/semantic-answers) | 0.40 | Describes semantic answers and how to obtain them; usage-level guidance without deep config tables or error mappings. |
-| [Supported regions](https://learn.microsoft.com/en-us/azure/search/search-region-support) | 0.40 | Region support listing is more of an availability matrix; while detailed, it’s not a deployment method/constraint guide and doesn’t fit other sub-skill types clearly from the summary. |
 | [What is an indexer?](https://learn.microsoft.com/en-us/azure/search/search-indexer-overview) | 0.40 | Indexer overview is conceptual (what indexers are, pull model) without detailed config tables or error/limit specifics. |
 | [What is vector ranking?](https://learn.microsoft.com/en-us/azure/search/vector-search-ranking) | 0.40 | Explains vector relevance and similarity metrics; algorithmic concepts rather than product-specific configuration tables or limits. |
 | [Add faceted navigation](https://learn.microsoft.com/en-us/azure/search/search-faceted-navigation) | 0.35 | How-to for adding facets; examples of query parameters but not a comprehensive configuration reference or troubleshooting guide. |

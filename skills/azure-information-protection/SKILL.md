@@ -1,9 +1,9 @@
 ---
 name: azure-information-protection
-description: Expert knowledge for Azure Information Protection development including best practices, decision making, configuration, and deployment. Use when choosing Azure RMS vs AD RMS, migrating keys/policies, configuring RMS connector/MSIPC, or monitoring RMS logs, and other Azure Information Protection related development tasks. Not for Azure Key Vault (use azure-key-vault), Azure Security (use azure-security), Azure Defender For Cloud (use azure-defender-for-cloud), Azure Sentinel (use azure-sentinel).
+description: Expert knowledge for Azure Information Protection development including best practices, decision making, configuration, and deployment. Use when choosing Azure RMS vs AD RMS, deploying RMS connectors, migrating keys/policies, or configuring MSIPC clients, and other Azure Information Protection related development tasks. Not for Azure Key Vault (use azure-key-vault), Azure Security (use azure-security), Azure Defender For Cloud (use azure-defender-for-cloud).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-06-28"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Information Protection Skill
@@ -27,7 +27,7 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L32-L36 | Monitoring and troubleshooting Azure RMS connector health, tracking Azure Rights Management usage, and interpreting logs/metrics for ongoing protection service reliability. |
 | Decision Making | L37-L41 | Guidance on choosing between Azure Rights Management and on-premises AD RMS, including feature, deployment, security, and migration considerations. |
 | Configuration | L42-L46 | Configuring and deploying the Windows RMS (MSIPC) client and setting required registry values for RMS connectors on servers for Azure Information Protection. |
-| Deployment | L47-L61 | Deploying the RMS connector and step-by-step guidance for migrating on-prem AD RMS (keys and policies) to Azure Information Protection, including HSM and software key migration. |
+| Deployment | L47-L61 | Deploying the RMS connector on-prem servers and step-by-step guidance for migrating AD RMS (keys and policies) to Azure Information Protection, including HSM and software key paths |
 
 ### Best Practices
 | Topic | URL |
@@ -48,7 +48,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Configure on-premises servers to use the RMS connector | https://learn.microsoft.com/en-us/azure/information-protection/configure-servers-rms-connector |
-| Deploy Microsoft Rights Management connector for on-premises servers | https://learn.microsoft.com/en-us/azure/information-protection/deploy-rms-connector |
+| Deploy the Azure RMS connector for on-premises servers | https://learn.microsoft.com/en-us/azure/information-protection/deploy-rms-connector |
 | Install and configure the RMS connector for AIP | https://learn.microsoft.com/en-us/azure/information-protection/install-configure-rms-connector |
 | Prepare environment for Phase 1 AD RMS to AIP migration | https://learn.microsoft.com/en-us/azure/information-protection/migrate-from-ad-rms-phase1 |
 | Execute Phase 2 of AD RMS to AIP migration | https://learn.microsoft.com/en-us/azure/information-protection/migrate-from-ad-rms-phase2 |

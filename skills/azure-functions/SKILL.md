@@ -1,9 +1,9 @@
 ---
 name: azure-functions
-description: Expert knowledge for Azure Functions development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building trigger/binding workflows, Durable Functions, containerized apps, Flex/Consumption plans, or CI/CD deploys, and other Azure Functions related development tasks. Not for Azure App Service (use azure-app-service), Azure Logic Apps (use azure-logic-apps), Azure Container Apps (use azure-container-apps), Azure Kubernetes Service (AKS) (use azure-kubernetes-service).
+description: Expert knowledge for Azure Functions development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building trigger-based apps with Durable Functions, Flex plans, containers, CI/CD pipelines, or Azure Storage, and other Azure Functions related development tasks. Not for Azure App Service (use azure-app-service), Azure Logic Apps (use azure-logic-apps), Azure Container Apps (use azure-container-apps), Azure Kubernetes Service (AKS) (use azure-kubernetes-service).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-21"
+  generated_at: "2026-06-28"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Functions Skill
@@ -30,7 +30,7 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L100-L105 | Running Functions in Linux containers, Durable Functions design with Azure Storage, and hosting Functions on Azure Container Apps for scalable, container-based architectures. |
 | Limits & Quotas | L106-L113 | Details on Functions hosting limits: legacy and Flex Consumption plans, scaling behavior, concurrency and target-based scaling settings, and supported languages/versions. |
 | Security | L114-L130 | Securing Azure Functions: encryption at rest, secure storage, keys and identities, networking/VNet/private endpoints, SQL access, MCP servers, and App Service-based security controls. |
-| Configuration | L131-L171 | Configuring Azure Functions apps: app/host settings, triggers/bindings, monitoring/telemetry, runtime versions, networking/IPs, local tools, and plan-specific (Flex, Premium) behavior. |
+| Configuration | L131-L171 | Configuring and running Azure Functions: app/host settings, triggers/bindings, monitoring/telemetry, networking/IPs, runtimes/CLI, plans (Flex/Elastic), and local or custom handler setups. |
 | Integrations & Coding Patterns | L172-L278 | Configuring Azure Functions triggers/bindings to integrate with databases, messaging, storage, OpenAI, MCP, Dapr, SignalR, Web PubSub, Logic Apps, and other Azure/third‑party services. |
 | Deployment | L279-L309 | Deploying and hosting Azure Functions: provisioning plans (Consumption/Flex/Kubernetes), CI/CD (GitHub Actions, Azure Pipelines), containers, slots, zip/package deploy, tools (VS/VS Code), and migrations. |
 
@@ -144,7 +144,7 @@ This skill requires **network access** to fetch documentation content:
 | Use Azure Functions binding expressions and patterns | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-expressions-patterns |
 | Register and configure Azure Functions binding extensions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-register |
 | Configure Azure Service Bus output bindings in Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-service-bus-output |
-| Configure Azure Functions timer trigger schedules | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-timer |
+| Configure timer trigger schedules in Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-timer |
 | Configure Azure Functions warmup trigger behavior | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-warmup |
 | Configure and use Azure Functions CLI v5 locally | https://learn.microsoft.com/en-us/azure/azure-functions/functions-cli-develop-local |
 | Use Azure Functions Core Tools CLI locally | https://learn.microsoft.com/en-us/azure/azure-functions/functions-core-tools-reference |

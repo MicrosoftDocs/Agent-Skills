@@ -1,9 +1,9 @@
 ---
 name: azure-virtual-network-manager
-description: Expert knowledge for Azure Virtual Network Manager development including troubleshooting, limits & quotas, security, configuration, and integrations & coding patterns. Use when managing AVNM IPAM pools, network groups, security admin rules, cross‑tenant connectivity, or Resource Graph queries, and other Azure Virtual Network Manager related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan), Azure Network Watcher (use azure-network-watcher), Azure Firewall Manager (use azure-firewall-manager).
+description: Expert knowledge for Azure Virtual Network Manager development including troubleshooting, limits & quotas, security, configuration, and integrations & coding patterns. Use when managing IPAM pools, network groups, cross-tenant connectivity, security admin rules, or ARG queries, and other Azure Virtual Network Manager related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan), Azure Network Watcher (use azure-network-watcher), Azure Networking (use azure-networking).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-31"
+  generated_at: "2026-06-28"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Virtual Network Manager Skill
@@ -26,9 +26,9 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L33-L38 | Diagnosing and fixing common Azure Virtual Network Manager issues, including deployment/configuration errors and verifying that AVNM-applied network configurations work as intended. |
 | Limits & Quotas | L39-L43 | IPAM features, supported regions, and key Azure Virtual Network Manager limits (scale, resources, configurations) that affect design and deployment decisions. |
-| Security | L44-L55 | Configuring and enforcing AVNM security admin rules: creating/applying via network groups, blocking/simulating inbound/outbound traffic, and protecting high‑risk ports using portal and PowerShell. |
-| Configuration | L56-L69 | Configuring AVNM: IPAM pools, network groups (static/dynamic via Policy), cross-tenant connections, event logs, and managing UDRs/topologies and reachability analysis. |
-| Integrations & Coding Patterns | L70-L73 | Using Azure Resource Graph to query, filter, and report on Azure Virtual Network Manager resources, configurations, and deployments at scale across subscriptions |
+| Security | L44-L56 | Configuring and enforcing AVNM security admin rules to block or allow traffic, protect high‑risk ports, simulate effects, and secure hub‑and‑spoke networks using network groups and tools like portal/PowerShell. |
+| Configuration | L57-L70 | Configuring AVNM: IPAM pools, network groups (static/dynamic via Policy), cross-tenant connections, event logs, and managing UDRs/topologies and reachability analysis. |
+| Integrations & Coding Patterns | L71-L74 | Using Azure Resource Graph to query, filter, and report on Azure Virtual Network Manager resources, configurations, and deployments at scale across subscriptions |
 
 ### Troubleshooting
 | Topic | URL |
@@ -52,6 +52,7 @@ This skill requires **network access** to fetch documentation content:
 | Block outbound traffic with AVNM security rules (PowerShell) | https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-block-network-traffic-powershell |
 | Create AVNM security admin rules using network groups | https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-create-security-admin-rule-network-group |
 | Simulate Azure Virtual Network Manager security admin rules | https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-simulate-security-admin-rules |
+| Secure Azure hub-and-spoke networks with AVNM | https://learn.microsoft.com/en-us/azure/virtual-network-manager/tutorial-create-secured-hub-and-spoke |
 
 ### Configuration
 | Topic | URL |

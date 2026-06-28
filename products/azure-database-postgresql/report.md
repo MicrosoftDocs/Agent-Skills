@@ -1,47 +1,47 @@
 ---
-generated_at: '2026-06-21'
+generated_at: '2026-06-28'
 category_descriptions:
-  best-practices: 'Performance and migration best practices for Azure PostgreSQL:
-    partitioning, pooling, pgvector, query store, bulk load, bloat cleanup, pg_dump/restore,
-    and Oracle-to-PostgreSQL conversion.'
+  best-practices: 'Performance, scaling, and migration best practices for Azure PostgreSQL:
+    partitioning, pooling, pgvector, Apache AGE, query store, stats, bloat cleanup,
+    bulk load, backups, replicas, and Oracle migrations'
   integrations: Patterns and code for integrating Azure PostgreSQL with AI/ML (Language,
     AML, LangChain, Foundry, orchestration), app SDKs (C#, Java, Python, Go, PHP),
     VS Code/Copilot, Data Factory, and migration tools.
-  security: 'Securing Azure Database for PostgreSQL: auth (Entra, SCRAM, RBAC, users),
-    network (VNet, firewall, Private Link), TLS/SSL, encryption/keys, managed identities,
-    auditing, and security policies.'
+  security: 'Securing Azure Database for PostgreSQL: identity and access control,
+    network isolation, TLS/SSL, encryption, auditing, firewall/VNet rules, and secure
+    connectivity from apps and tools.'
   architecture-patterns: Patterns for using Azure PostgreSQL (often with OpenAI) to
     build recommendation/semantic search apps, microservices, multitenancy, real-time
     dashboards, and sharded/elastic data architectures.
   limits-quotas: Backup/restore, geo-restore, storage types/limits, performance tiers,
     quotas, max connections, elastic cluster limits, and migration/conversion limitations
     for Azure Database for PostgreSQL.
-  decision-making: Guidance on choosing Azure PostgreSQL tiers, versions, hosting,
-    capacity and geo-replication, plus planning upgrades and pre-migration checks
-    (including Oracle-to-Postgres).
-  deployment: CI/CD deployment to Azure PostgreSQL, app integration (AKS/Django, Web
-    Apps + VNet), flexible server Bicep provisioning, major upgrades, network migration,
+  decision-making: Guidance on sizing and tuning Azure PostgreSQL (compute, storage,
+    SSDs), version and support choices, deployment/hosting options, reserved capacity,
+    and pre-migration/geo-replication planning.
+  deployment: Automating PostgreSQL deployments and upgrades (Azure Pipelines, GitHub
+    Actions), in-place major version upgrades, VNet-to-private endpoint migration,
     and point-in-time restore.
-  configuration: 'Configuring Azure Database for PostgreSQL servers: parameters, extensions,
-    HA, networking, logging/monitoring, tuning (autovacuum, memory, WAL, connections),
-    and deployment via CLI, ARM/Bicep, and VS Code.'
+  configuration: Configuring Azure Database for PostgreSQL servers, extensions, tuning
+    (autovacuum, memory, WAL, connections), HA, logging/monitoring, and VS Code tooling/automation
+    via CLI, ARM, and Bicep.
   troubleshooting: 'Diagnosing and fixing Azure PostgreSQL issues: connectivity/TLS,
     auth, HA and replicas, migration/validation, extensions, autovacuum, performance
     (CPU/IOPS/memory/slow queries), and deployment errors.'
 skill_description: Expert knowledge for Azure Database for PostgreSQL development
   including troubleshooting, best practices, decision making, architecture & design
   patterns, limits & quotas, security, configuration, integrations & coding patterns,
-  and deployment. Use when using pgvector, query store, partitioning, VNet/Private
-  Link, or CI/CD/Bicep for Azure PostgreSQL, and other Azure Database for PostgreSQL
-  related development tasks. Not for Azure SQL Database (use azure-sql-database),
-  Azure SQL Managed Instance (use azure-sql-managed-instance), SQL Server on Azure
-  Virtual Machines (use azure-sql-virtual-machines), Azure Cosmos DB (use azure-cosmos-db).
-use_when: Use when using pgvector, query store, partitioning, VNet/Private Link, or
-  CI/CD/Bicep for Azure PostgreSQL, and other Azure Database for PostgreSQL related
-  development tasks.
-confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure SQL
-  Managed Instance (use azure-sql-managed-instance), SQL Server on Azure Virtual Machines
-  (use azure-sql-virtual-machines), Azure Cosmos DB (use azure-cosmos-db).
+  and deployment. Use when using pgvector or Apache AGE, query store, replicas, bulk
+  load/backups, or sharded/elastic clusters, and other Azure Database for PostgreSQL
+  related development tasks. Not for Azure Database for MySQL (use azure-database-mysql),
+  Azure Database for MariaDB (use azure-database-mariadb), Azure SQL Database (use
+  azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance).
+use_when: Use when using pgvector or Apache AGE, query store, replicas, bulk load/backups,
+  or sharded/elastic clusters, and other Azure Database for PostgreSQL related development
+  tasks.
+confusable_not_for: Not for Azure Database for MySQL (use azure-database-mysql), Azure
+  Database for MariaDB (use azure-database-mariadb), Azure SQL Database (use azure-sql-database),
+  Azure SQL Managed Instance (use azure-sql-managed-instance).
 ---
 # Azure Database for PostgreSQL Crawl Report
 
@@ -50,13 +50,13 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 - **Total Pages**: 352
 - **Fetched**: 352
 - **Fetch Failed**: 0
-- **Classified**: 186
-- **Unclassified**: 166
+- **Classified**: 187
+- **Unclassified**: 165
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 350
+- **Updated Pages**: 7
+- **Unchanged**: 345
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-database-postgresql/azure-database-postgresql.csv`
 
@@ -65,24 +65,34 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 7 | 2.0% |
-| best-practices | 13 | 3.7% |
+| best-practices | 14 | 4.0% |
 | configuration | 56 | 15.9% |
 | decision-making | 11 | 3.1% |
-| deployment | 5 | 1.4% |
+| deployment | 6 | 1.7% |
 | integrations | 26 | 7.4% |
-| limits-quotas | 18 | 5.1% |
+| limits-quotas | 17 | 4.8% |
 | security | 28 | 8.0% |
 | troubleshooting | 22 | 6.2% |
-| *(Unclassified)* | 166 | 47.2% |
+| *(Unclassified)* | 165 | 46.9% |
 
 ## Changes
 
 ### Updated Pages
 
+- [Restore to custom restore point](https://learn.microsoft.com/en-us/azure/postgresql/backup-restore/how-to-restore-custom-restore-point)
+  - Updated: 2025-12-22T23:02:00.000Z → 2026-06-24T11:05:00.000Z
+- [High availability](https://learn.microsoft.com/en-us/azure/postgresql/high-availability/concepts-high-availability)
+  - Updated: 2026-06-03T08:00:00.000Z → 2026-06-09T08:00:00.000Z
+- [Create a read replica](https://learn.microsoft.com/en-us/azure/postgresql/read-replica/how-to-create-read-replica)
+  - Updated: 2025-12-22T23:02:00.000Z → 2026-06-22T22:09:00.000Z
 - [Major version upgrade](https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/concepts-major-version-upgrade)
-  - Updated: 2026-06-07T08:00:00.000Z → 2026-06-17T06:05:00.000Z
-- [Promote read replicas](https://learn.microsoft.com/en-us/azure/postgresql/read-replica/concepts-read-replicas-promote)
-  - Updated: 2026-02-16T08:00:00.000Z → 2026-06-10T08:00:00.000Z
+  - Updated: 2026-06-17T06:05:00.000Z → 2026-06-25T06:03:00.000Z
+- [Premium SSD v2](https://learn.microsoft.com/en-us/azure/postgresql/compute-storage/concepts-storage-premium-ssd-v2)
+  - Updated: 2026-04-07T17:14:00.000Z → 2026-06-26T22:11:00.000Z
+- [Access control](https://learn.microsoft.com/en-us/azure/postgresql/security/security-access-control)
+  - Updated: 2026-05-21T08:00:00.000Z → 2026-06-25T08:00:00.000Z
+- [Adaptive autovacuum](https://learn.microsoft.com/en-us/azure/postgresql/monitor/concepts-adaptive-autovacuum)
+  - Updated: 2026-06-12T22:15:00.000Z → 2026-06-24T11:05:00.000Z
 
 ## Classified Pages
 
@@ -105,7 +115,6 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | [Troubleshoot TLS connection failures](https://learn.microsoft.com/en-us/azure/postgresql/security/security-tls-troubleshoot) | troubleshooting | 0.85 | Explicitly a troubleshooting guide for TLS failures after certificate rotation; likely includes specific error messages, validation steps, and configuration checks unique to this product. |
 | [Troubleshoot connections](https://learn.microsoft.com/en-us/azure/postgresql/troubleshoot/how-to-troubleshoot-common-connection-issues) | troubleshooting | 0.85 | Connection troubleshooting guide for Azure Database for PostgreSQL flexible server, likely mapping connection symptoms to causes and fixes specific to the managed service. |
 | [Migration configuration parameters](https://learn.microsoft.com/en-us/azure/postgresql/migrate/migration-service/concepts-migration-parameters) | configuration | 0.82 | Page describes specific migration service parameters such as `azure.migration_skip_role_user` and others, which are product-specific configuration options controlling migration behavior—matching configuration sub-skill criteria. |
-| [Adaptive autovacuum](https://learn.microsoft.com/en-us/azure/postgresql/monitor/concepts-adaptive-autovacuum) | configuration | 0.80 | Explicitly states it documents adaptive_autovacuum parameters supported by the service; such pages typically include parameter names, allowed values, and behavior, which are product-specific configuration details. |
 | [Autovacuum](https://learn.microsoft.com/en-us/azure/postgresql/parameters/parameters-autovacuum) | configuration | 0.80 | Autovacuum parameter reference pages list specific parameter names, defaults, and ranges; this is core configuration metadata, even though access requires authorization. |
 | [Best practices](https://learn.microsoft.com/en-us/azure/postgresql/migrate/migration-service/best-practices-migration-service-postgresql) | best-practices | 0.80 | Explicit best-practices article for this migration service; likely includes concrete recommendations, configuration choices, and pitfalls specific to Azure Database for PostgreSQL migrations. |
 | [Best practices for bulk data upload](https://learn.microsoft.com/en-us/azure/postgresql/troubleshoot/how-to-bulk-load-data) | best-practices | 0.80 | Contains Azure PostgreSQL-specific best practices for bulk loading (initial and incremental) with concrete recommendations and likely configuration/command patterns. |
@@ -138,6 +147,8 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | [Troubleshoot high memory utilization](https://learn.microsoft.com/en-us/azure/postgresql/troubleshoot/how-to-high-memory-utilization) | troubleshooting | 0.80 | Explicitly a troubleshooting guide for high memory utilization; such articles typically map symptoms to causes and remedial actions specific to Azure Database for PostgreSQL. |
 | [Update trusted root certificate for Java](https://learn.microsoft.com/en-us/azure/postgresql/security/security-update-trusted-root-java) | security | 0.80 | Guides updating trusted roots for Java clients; contains product-specific certificate chains, keystore commands, and rotation requirements. |
 | [Write-Ahead Log / Checkpoints](https://learn.microsoft.com/en-us/azure/postgresql/parameters/parameters-write-ahead-log-checkpoints) | configuration | 0.80 | Explains how max_wal_size default is computed from the selected compute product and that changing the product later does not update the default, plus guidance to adjust max_wal_size when changing disk size; this is detailed, product-specific configuration behavior. |
+| [Access control](https://learn.microsoft.com/en-us/azure/postgresql/security/security-access-control) | security | 0.78 | Page focuses on concrete access management for Azure Database for PostgreSQL flexible server using PostgreSQL roles and Azure-specific features. It likely includes specific role names, permission scopes, and product-specific access control patterns that go beyond generic security concepts, fitting the security sub-skill definition. |
+| [Adaptive autovacuum](https://learn.microsoft.com/en-us/azure/postgresql/monitor/concepts-adaptive-autovacuum) | configuration | 0.78 | The page documents Azure-specific adaptive_autovacuum parameters for PostgreSQL flexible server, including parameter names, meanings, and allowed behaviors. This is product-specific configuration knowledge (server parameters and how they behave in Azure) that goes beyond generic PostgreSQL concepts and fits the configuration category best. |
 | [Configure extension](https://learn.microsoft.com/en-us/azure/postgresql/extensions/how-to-configure-azure-storage-extension) | configuration | 0.78 | How-to page for enabling and configuring the Azure Storage PostgreSQL extension. It likely includes extension-specific configuration parameters, required server settings, and possibly role/permission requirements unique to Azure Database for PostgreSQL flexible server. This is product-specific configuration detail rather than generic tutorial content. |
 | [Connect local database users with SCRAM authentication](https://learn.microsoft.com/en-us/azure/postgresql/security/security-connect-scram) | security | 0.78 | Page is about configuring SCRAM authentication for Azure Database for PostgreSQL flexible server, including product-specific security configuration steps and client requirements. This is concrete security configuration guidance rather than conceptual overview. |
 | [Customized Options](https://learn.microsoft.com/en-us/azure/postgresql/parameters/parameters-customized-options) | configuration | 0.78 | Describes product-specific parameter behavior (azure_storage.blob_block_size_mb) whose default is computed from the selected compute product and does not change when the product is changed later; this is detailed configuration behavior unique to Azure Database for PostgreSQL. |
@@ -158,7 +169,6 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | [Troubleshoot autovacuum](https://learn.microsoft.com/en-us/azure/postgresql/troubleshoot/how-to-autovacuum-tuning) | troubleshooting | 0.75 | Autovacuum tuning troubleshooting guide; covers monitoring bloat, blockers, and emergency thresholds, which are detailed, product-specific operational and tuning practices. |
 | [Tutorial - Develop with LangChain](https://learn.microsoft.com/en-us/azure/postgresql/azure-ai/generative-ai-develop-with-langchain) | integrations | 0.75 | Shows concrete LangChain code and configuration to use PostgreSQL’s integrated vector database; clearly an integration and coding pattern. |
 | [Vector search using pgvector](https://learn.microsoft.com/en-us/azure/postgresql/extensions/how-to-use-pgvector) | configuration | 0.75 | Describes enabling pgvector extension and configuring tables/indexes; includes extension-specific SQL and configuration details. |
-| [Access control](https://learn.microsoft.com/en-us/azure/postgresql/security/security-access-control) | security | 0.72 | Page focuses on concrete access control for Azure Database for PostgreSQL using PostgreSQL roles and Azure-specific features. It likely includes specific role names, permission scopes, and product-specific access management patterns that go beyond generic security concepts, fitting the security sub-skill definition. |
 | [Allow extensions](https://learn.microsoft.com/en-us/azure/postgresql/extensions/how-to-allow-extensions) | configuration | 0.70 | Describes the exact mechanism and steps to allowlist extensions for Azure Database for PostgreSQL Flexible Server, including product-specific configuration behavior; this is detailed operational knowledge beyond generic PostgreSQL concepts. |
 | [Application conversion best practices](https://learn.microsoft.com/en-us/azure/postgresql/migrate/oracle-conversions-application/app-conversions-best-practices) | best-practices | 0.70 | Best-practices article with concrete, product-specific recommendations for using the application conversion feature effectively. |
 | [Application conversion limitations](https://learn.microsoft.com/en-us/azure/postgresql/migrate/oracle-conversions-application/app-conversions-limitations) | limits-quotas | 0.70 | Describes known limitations and constraints of the application conversion feature, likely listing unsupported constructs and specific constraints. |
@@ -197,6 +207,7 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | [Known issues and limitations](https://learn.microsoft.com/en-us/azure/postgresql/migrate/migration-service/concepts-known-issues-migration-service) | limits-quotas | 0.70 | Known issues and limitations article typically lists specific unsupported scenarios, constraints, and sometimes numeric limits for the migration service, which are expert-only limits/constraints. |
 | [List by version of PostgreSQL](https://learn.microsoft.com/en-us/azure/postgresql/extensions/concepts-extensions-by-engine) | configuration | 0.70 | Lists exactly which PostgreSQL extensions/modules are supported per engine version for Azure Database for PostgreSQL Flexible Server; this is product-specific capability/configuration information that an LLM is unlikely to know exhaustively from training. |
 | [Logs](https://learn.microsoft.com/en-us/azure/postgresql/monitor/concepts-logging) | configuration | 0.70 | Logging concepts page for a specific service usually lists log categories, configuration parameters, and how to enable/route them, which are product-specific configuration details. |
+| [Major version upgrade](https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/concepts-major-version-upgrade) | deployment | 0.70 | Major version upgrade guidance for Azure Database for PostgreSQL flexible server is product-specific and includes detailed, stepwise procedures and constraints for doing in-place upgrades between supported PostgreSQL versions. This is deployment/upgrade-path guidance rather than generic concepts, and represents expert operational knowledge about how to upgrade instances safely in this managed service. |
 | [Manage database users](https://learn.microsoft.com/en-us/azure/postgresql/security/security-manage-database-users) | security | 0.70 | User management article; will contain product-specific SQL/role patterns and permission mappings for Azure PostgreSQL. |
 | [Manipulate with server logs](https://learn.microsoft.com/en-us/azure/postgresql/samples/sample-server-logs) | configuration | 0.70 | CLI script to enable and download slow query logs; exposes specific logging configuration commands and options that are product-specific. |
 | [Migrate data with pg_dump](https://learn.microsoft.com/en-us/azure/postgresql/migrate/how-to-migrate-using-dump-and-restore) | integrations | 0.70 | Details how to use pg_dump/pg_restore and psql with this managed service; likely includes command options, parameters, and constraints specific to Azure Database for PostgreSQL. |
@@ -207,7 +218,6 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | [Partitioning (pg_partman)](https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/how-to-use-pg-partman) | best-practices | 0.70 | Shows how to enable and use pg_partman for performance; likely includes concrete partitioning strategies and configuration steps tailored to Azure PostgreSQL. |
 | [Performance Best Practices for Apache AGE](https://learn.microsoft.com/en-us/azure/postgresql/azure-ai/generative-ai-age-performance) | best-practices | 0.70 | Explicitly labeled performance best practices based on benchmarking; likely includes concrete indexing strategies, data loading patterns, and product-specific tuning recommendations. |
 | [PgBouncer](https://learn.microsoft.com/en-us/azure/postgresql/parameters/parameters-pgbouncer) | configuration | 0.70 | Describes product-specific parameter visibility rules tied to pgbouncer.enabled and service tiers (General Purpose, Memory Optimized, Burstable), which is configuration behavior unique to Azure Database for PostgreSQL. |
-| [Premium SSD v2](https://learn.microsoft.com/en-us/azure/postgresql/compute-storage/concepts-storage-premium-ssd-v2) | limits-quotas | 0.70 | Premium SSD v2 storage docs typically include concrete IOPS, throughput, and capacity ranges, plus per-disk limits and scaling behaviors that are tier-specific and numeric. These are exact performance limits and constraints that qualify as limits-quotas expert knowledge. |
 | [Prepay for reserved capacity](https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/concepts-reserved-pricing) | decision-making | 0.70 | Explains reserved capacity with term options and required inputs (region, tier, term); helps choose pricing model and capacity commitment for workloads. |
 | [Python](https://learn.microsoft.com/en-us/azure/postgresql/connectivity/connect-python) | integrations | 0.70 | Contains product-specific Python connection patterns for Azure Database for PostgreSQL flexible server, including authentication method details (Microsoft Entra vs PostgreSQL auth) and concrete connection/SQL usage examples that go beyond generic PostgreSQL knowledge. |
 | [Request quota increase](https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/how-to-request-quota-increase) | limits-quotas | 0.70 | Specifically about default quotas/limits and how to increase them; while process-focused, it directly addresses resource limits for the service. |
@@ -228,7 +238,6 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | [Version policy](https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/concepts-version-policy) | decision-making | 0.70 | A version policy page for a managed database service typically includes concrete rules about supported major/minor versions, timelines for deprecation, upgrade windows, and how/when automatic upgrades occur. These are product-specific decision criteria (for choosing versions, planning upgrades, and migrations) that change over time and are not inferable from general PostgreSQL knowledge, fitting the decision-making category better than others. |
 | [Write-Ahead Log / Settings](https://learn.microsoft.com/en-us/azure/postgresql/parameters/parameters-write-ahead-log-settings) | configuration | 0.70 | Describes the wal_buffers parameter behavior, including how its default is computed based on selected compute product and how changes to compute affect (or don’t affect) this default. This is product-specific configuration behavior not generally known, fitting configuration. |
 | [How to migrate vnet private endpoint capable server](https://learn.microsoft.com/en-us/azure/postgresql/network/how-to-migrate-vnet-private-endpoint-capable-server) | deployment | 0.68 | The page describes a specific, product-focused migration path from VNet-injected Azure Database for PostgreSQL servers to a private endpoint–capable network configuration. Such migration guidance typically includes Azure-specific prerequisites, supported/unsupported configurations, sequencing of steps, and constraints that are not generic knowledge. This aligns best with deployment, as it covers how to change the deployed networking model of a production service rather than just conceptual networking information. |
-| [Major version upgrade](https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/concepts-major-version-upgrade) | decision-making | 0.68 | The page is about in-place major version upgrades for Azure Database for PostgreSQL flexible server, including which PostgreSQL major versions are supported and how/when to perform upgrades. This is product-specific guidance that helps decide upgrade paths and timing between supported versions, which fits decision-making. It goes beyond a conceptual overview by tying concrete supported versions and upgrade behavior to operational choices. |
 | [Overview](https://learn.microsoft.com/en-us/azure/postgresql/read-replica/concepts-read-replicas) | limits-quotas | 0.68 | Contains product-specific expert details such as the maximum number of replicas per primary (up to five replicas) and behavior of replication modes (streaming vs file-based log shipping) that represent concrete limits/constraints not derivable from generic PostgreSQL knowledge. |
 | [Resource Usage / Memory](https://learn.microsoft.com/en-us/azure/postgresql/parameters/parameters-resource-usage-memory) | configuration | 0.68 | Explains product-specific use of huge pages in PostgreSQL on Azure, including typical page sizes (2 MB vs 4 KB) and that huge pages apply only to the shared memory area (notably shared buffers), which is detailed configuration behavior. |
 | [ARM template](https://learn.microsoft.com/en-us/azure/postgresql/elastic-clusters/quickstart-create-elastic-cluster-arm-template) | configuration | 0.65 | ARM template quickstart defines JSON properties and parameters for elastic clusters; these are concrete configuration fields and allowed values for the service. |
@@ -241,6 +250,7 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | [Connect from Azure Data Factory via managed private endpoint](https://learn.microsoft.com/en-us/azure/postgresql/integration/how-to-connect-data-factory-private-endpoint) | security | 0.65 | Describes connecting via managed private endpoint/Private Link; these pages usually include specific network/security configuration fields, endpoint types, and scope details that are product-specific security configuration knowledge. |
 | [Connect in virtual network](https://learn.microsoft.com/en-us/azure/postgresql/connectivity/quickstart-create-connect-server-vnet) | security | 0.65 | Private access/VNet setup typically includes product-specific network and access configuration details (subnets, integration options) that qualify as security configuration. |
 | [Connection resilience](https://learn.microsoft.com/en-us/azure/postgresql/troubleshoot/concepts-connectivity) | troubleshooting | 0.65 | Connectivity troubleshooting article; likely maps transient error messages/codes to causes and mitigation patterns specific to Azure Database for PostgreSQL. |
+| [Create a read replica](https://learn.microsoft.com/en-us/azure/postgresql/read-replica/how-to-create-read-replica) | best-practices | 0.65 | Includes product-specific guidance about replication lag behavior for heavy write workloads and WAL file retention implications, which are nuanced, service-specific gotchas; this aligns with best-practices as it provides concrete DO/DON'T style operational advice unique to Azure Database for PostgreSQL flexible server. |
 | [Design for microservices](https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/tutorial-microservices) | architecture-patterns | 0.65 | Demonstrates using Azure Database for PostgreSQL as storage for multiple microservices with elastic clusters; includes product-specific data partitioning and isolation patterns. |
 | [Extended support](https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/extended-support) | decision-making | 0.65 | The extended support page describes Azure’s specific offering for PostgreSQL versions beyond community end-of-life, including what extended support provides and how it affects upgrade planning. This is specialized lifecycle and support-policy information that guides decisions about when to upgrade versus use extended support, which fits decision-making. The details are product- and policy-specific and not generally inferable from generic PostgreSQL knowledge. |
 | [GitHub Actions](https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/how-to-deploy-github-action) | deployment | 0.65 | Shows how to connect from GitHub Actions to Azure PostgreSQL; likely includes workflow YAML, secrets, and constraints specific to this deployment method. |
@@ -249,6 +259,7 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | [MCP server](https://learn.microsoft.com/en-us/azure/postgresql/development/vs-code-extension/mcp-server) | configuration | 0.65 | Explains how the extension registers an MCP server and what tools it exposes; likely lists tool identifiers and configuration details specific to MCP integration. |
 | [Perform major version upgrade](https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/how-to-perform-major-version-upgrade) | deployment | 0.65 | Step-by-step upgrade procedure with irreversible action warning and PITR guidance; represents a product-specific deployment/upgrade pattern. |
 | [Premigration checklist](https://learn.microsoft.com/en-us/azure/postgresql/migrate/oracle-migration/best-practices-oracle-to-postgresql-checklist) | decision-making | 0.65 | Checklist drives capacity and resource planning decisions with concrete questions and criteria specific to Oracle-to-PostgreSQL migrations. |
+| [Premium SSD v2](https://learn.microsoft.com/en-us/azure/postgresql/compute-storage/concepts-storage-premium-ssd-v2) | decision-making | 0.65 | The Premium SSD v2 article for Azure Database for PostgreSQL flexible server describes how to select and adjust storage performance (capacity, throughput, IOPS) for specific workloads, including cost/performance trade-offs and tuning guidance. This is product-specific decision guidance for storage tier and performance configuration, beyond generic storage concepts. |
 | [Quickstart examples](https://learn.microsoft.com/en-us/azure/postgresql/extensions/quickstart-azure-storage-extension) | integrations | 0.65 | Quickstart examples for Azure Storage extension; likely show concrete function calls and parameter usage for integrating PostgreSQL with Azure Storage. |
 | [Restore a server](https://learn.microsoft.com/en-us/azure/postgresql/samples/sample-point-in-time-restore) | deployment | 0.65 | CLI script for point-in-time restore; includes product-specific restore parameters and constraints, which are part of deployment/operations patterns. |
 | [Review tasks and output directory](https://learn.microsoft.com/en-us/azure/postgresql/migrate/oracle-conversions-schema/schema-conversions-review-tasks-artifacts) | configuration | 0.65 | Explains specific output folders, files, and review tasks produced by the schema conversion tool—effectively configuration and interpretation of generated artifacts. |
@@ -343,7 +354,6 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | [Azure Advisor recommendations](https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/concepts-azure-advisor-recommendations) | 0.30 | Advisor recommendations overview and FAQ; no concrete numeric limits, config tables, or error-code-based troubleshooting. |
 | [CLI release notes](https://learn.microsoft.com/en-us/azure/postgresql/release-notes/release-notes-cli) | 0.30 | CLI module release notes describe evolution of the module across Azure CLI releases; they are chronological change logs without structured limits, configuration parameter tables, or troubleshooting mappings that fit the defined sub-skill categories. |
 | [Confidential computing](https://learn.microsoft.com/en-us/azure/postgresql/security/security-confidential-computing) | 0.30 | High-level description of confidential computing options; likely conceptual without concrete RBAC roles, config parameters, or numeric constraints. |
-| [Create a read replica](https://learn.microsoft.com/en-us/azure/postgresql/read-replica/how-to-create-read-replica) | 0.30 | Step-by-step creation tutorial; summary mentions considerations but no concrete limits, configs, or troubleshooting mappings. |
 | [Create web app in virtual network](https://learn.microsoft.com/en-us/azure/postgresql/development/webapp-server-vnet) | 0.30 | Quickstart for creating an App Service web app and PostgreSQL flexible server in the same virtual network. Appears to be procedural guidance without detailed configuration tables, limits, or error mappings. |
 | [Delete on-demand backups](https://learn.microsoft.com/en-us/azure/postgresql/backup-restore/how-to-delete-backups) | 0.30 | Describes how to delete on-demand backups and notes automatic deletion based on retention period, but no explicit numeric limits, configuration tables, or error-code-based troubleshooting content are indicated. |
 | [Deploy Django app on AKS](https://learn.microsoft.com/en-us/azure/postgresql/development/django-aks-database) | 0.30 | Tutorial-style quickstart for deploying Django on AKS with Azure Database for PostgreSQL. Likely focuses on step-by-step commands rather than detailed configuration matrices, limits, or product-specific troubleshooting. |
@@ -351,7 +361,6 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | [From EDB Extended server](https://learn.microsoft.com/en-us/azure/postgresql/migrate/migration-service/tutorial-migration-service-enterprise-db-extended-server-online) | 0.30 | Online migration tutorial from EDB Extended Server to Azure Database for PostgreSQL. Appears to be a step-by-step guide without explicit mention of numeric limits, configuration parameter tables, or structured troubleshooting/decision-making content. |
 | [From Google AlloyDB for PostgreSQL](https://learn.microsoft.com/en-us/azure/postgresql/migrate/migration-service/tutorial-migration-service-alloy-db-offline) | 0.30 | Tutorial-style migration walkthrough from AlloyDB to Azure Database for PostgreSQL. Description/summary indicate step-by-step portal/CLI usage, not limits, config matrices, or detailed troubleshooting with error codes. Lacks clear evidence of product-specific parameters tables, quotas, or decision matrices. |
 | [From Google AlloyDB for PostgreSQL](https://learn.microsoft.com/en-us/azure/postgresql/migrate/migration-service/tutorial-migration-service-alloy-db-online) | 0.30 | Online migration tutorial from AlloyDB to Azure Database for PostgreSQL. Summary suggests a guided migration process, not detailed limits, quotas, configuration matrices, or decision/troubleshooting content required for expert-knowledge classification. |
-| [High availability](https://learn.microsoft.com/en-us/azure/postgresql/high-availability/concepts-high-availability) | 0.30 | High availability overview for Azure Database for PostgreSQL flexible server; summary suggests conceptual description of HA model and behavior without explicit numeric limits, configuration parameter tables, or decision matrices. |
 | [Intelligent tuning](https://learn.microsoft.com/en-us/azure/postgresql/monitor/concepts-intelligent-tuning) | 0.30 | High-level description of intelligent tuning feature; summary points to conceptual explanation and a link to configuration article, but this page itself is not configuration- or troubleshooting-focused. |
 | [Introduction to the azure_ai extension](https://learn.microsoft.com/en-us/azure/postgresql/azure-ai/generative-ai-azure-overview) | 0.30 | Introduction to the azure_ai extension; primarily conceptual description of what it enables and which services it can call, without concrete limits, config tables, or decision matrices. |
 | [January 2026](https://learn.microsoft.com/en-us/azure/postgresql/release-notes-maintenance/2026-january) | 0.30 | Similar to the March 2026 notes, the January 2026 maintenance release page summary focuses on announcing a new service version and its rollout date, without evidence of detailed error mappings, configuration parameters, or limits. This makes it more of an overview/announcement than a page containing the structured expert knowledge required for any sub-skill type. |
@@ -373,7 +382,7 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | [Release notes](https://learn.microsoft.com/en-us/azure/postgresql/release-notes/release-notes) | 0.30 | General release notes summary; likely feature and version announcements without structured limits, config tables, or troubleshooting mappings. |
 | [Reset local administrator password](https://learn.microsoft.com/en-us/azure/postgresql/security/security-reset-admin-password) | 0.30 | Reset admin password how-to; simple procedural steps, not deep security configuration or role mapping. |
 | [Restart PostgreSQL engine](https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/how-to-restart-server) | 0.30 | Restart engine article clarifies that only the engine process restarts, not the VM; this is product behavior but not in the form of limits, configs, or structured troubleshooting, so it doesn't meet expert-knowledge criteria. |
-| [Restore to custom restore point](https://learn.microsoft.com/en-us/azure/postgresql/backup-restore/how-to-restore-custom-restore-point) | 0.30 | How-to restore to a custom restore point; procedural content without detailed numeric constraints or config parameter reference. |
+| [Restore to custom restore point](https://learn.microsoft.com/en-us/azure/postgresql/backup-restore/how-to-restore-custom-restore-point) | 0.30 | Primarily a step-by-step restore tutorial without clear evidence of configuration tables, limits, or product-specific parameters beyond generic workflow; lacks the detailed numeric limits or config matrices required for the defined sub-skill types. |
 | [Restore to full backup (fast restore)](https://learn.microsoft.com/en-us/azure/postgresql/backup-restore/how-to-restore-full-backup) | 0.30 | Covers how to perform a fast restore from a full backup; appears to be a how-to guide without explicit limits/quotas, configuration parameter tables, or error-code-based troubleshooting. |
 | [Restore to latest restore point](https://learn.microsoft.com/en-us/azure/postgresql/backup-restore/how-to-restore-latest-restore-point) | 0.30 | Provides procedural steps to restore to the latest restore point; summary does not indicate presence of numeric limits, configuration matrices, or detailed troubleshooting mappings. |
 | [Schedule maintenance](https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/how-to-configure-scheduled-maintenance) | 0.30 | Describes how to schedule maintenance windows and notifications for Azure Database for PostgreSQL flexible server; based on summary, appears to be a procedural/how-to article without detailed configuration parameter tables, numeric limits, or product-specific troubleshooting content. |
@@ -401,6 +410,7 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | [Delete virtual endpoints](https://learn.microsoft.com/en-us/azure/postgresql/read-replica/how-to-delete-virtual-endpoints) | 0.20 | Delete virtual endpoints tutorial; operational steps, not configuration reference or limits. |
 | [Fabric mirroring](https://learn.microsoft.com/en-us/azure/postgresql/integration/concepts-fabric-mirroring) | 0.20 | Appears to be a conceptual overview of Fabric mirroring for Azure Database for PostgreSQL with benefits and high-level description; no evidence of numeric limits, configuration tables, error codes, or detailed settings in the summary. |
 | [Geo-disaster recovery](https://learn.microsoft.com/en-us/azure/postgresql/backup-restore/concepts-geo-disaster-recovery) | 0.20 | Conceptual overview of geo-disaster recovery and resiliency; summary does not indicate specific numeric limits, configuration parameters, or detailed decision matrices. Primarily high-level behavior and concepts. |
+| [High availability](https://learn.microsoft.com/en-us/azure/postgresql/high-availability/concepts-high-availability) | 0.20 | High availability concepts and SLAs are described at a conceptual level in the summary; no explicit evidence of numeric thresholds, decision matrices, or configuration parameter tables that meet the expert-knowledge criteria. |
 | [Maintenance release notes index](https://learn.microsoft.com/en-us/azure/postgresql/release-notes-maintenance/release-notes-maintenance-index) | 0.20 | Index of maintenance release notes; primarily navigational with rollout timing note, no concrete limits, configuration tables, or troubleshooting mappings. |
 | [Portal, CLI, ARM template](https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/quickstart-create-server) | 0.20 | Quickstart for creating a server is a step-by-step tutorial; no parameter tables, limits, or decision matrices. |
 | [Schema conversion tutorial](https://learn.microsoft.com/en-us/azure/postgresql/migrate/oracle-conversions-schema/schema-conversions-tutorial) | 0.20 | Step-by-step migration tutorial using VS Code and Microsoft Foundry; summary does not indicate presence of numeric limits, config parameter tables, error-code mappings, or product-specific decision matrices. Appears to be procedural guidance rather than expert reference content. |

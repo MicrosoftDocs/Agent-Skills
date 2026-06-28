@@ -41,8 +41,8 @@ confusable_not_for: Not for Azure Operator Insights (use azure-operator-insights
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 45
+- **Updated Pages**: 0
+- **Unchanged**: 47
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-operator-service-manager/azure-operator-service-manager.csv`
 
@@ -58,13 +58,6 @@ confusable_not_for: Not for Azure Operator Insights (use azure-operator-insights
 | *(Unclassified)* | 23 | 48.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [Azure Operator Service Manager Release Notes](https://learn.microsoft.com/en-us/azure/operator-service-manager/release-notes)
-  - Updated: 2026-06-04T22:19:00.000Z → 2026-06-16T08:00:00.000Z
-- [Helm Package Requirements](https://learn.microsoft.com/en-us/azure/operator-service-manager/helm-requirements)
-  - Updated: 2025-10-13T11:10:00.000Z → 2026-06-16T17:13:00.000Z
 
 ## Classified Pages
 

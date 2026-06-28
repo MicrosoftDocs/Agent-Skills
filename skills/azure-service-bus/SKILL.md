@@ -1,9 +1,9 @@
 ---
 name: azure-service-bus
-description: Expert knowledge for Azure Service Bus development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when securing namespaces, configuring queues/topics, using JMS clients, geo-DR/replication, or NServiceBus, and other Azure Service Bus related development tasks. Not for Azure Event Hubs (use azure-event-hubs), Azure Event Grid (use azure-event-grid), Azure Queue Storage (use azure-queue-storage), Azure Relay (use azure-relay).
+description: Expert knowledge for Azure Service Bus development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using queues/topics, sessions/FIFO, JMS/AMQP clients, geo-replication, or ARM/Bicep deployments, and other Azure Service Bus related development tasks. Not for Azure Event Hubs (use azure-event-hubs), Azure Event Grid (use azure-event-grid), Azure Queue Storage (use azure-queue-storage), Azure Relay (use azure-relay).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-21"
+  generated_at: "2026-06-28"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Service Bus Skill
@@ -26,9 +26,9 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L37-L46 | Diagnosing and fixing Service Bus errors: AMQP issues, tracing, .NET/current SDK exceptions, ARM/Resource Manager failures, and common connectivity or messaging problems. |
 | Best Practices | L47-L59 | Best practices for reliable, ordered, and performant messaging: sessions, FIFO, locks/settlement, duplicate detection, dead-lettering, serialization, prefetch, and maintenance tuning. |
-| Decision Making | L60-L69 | Guidance on choosing Service Bus vs other messaging options, configuring geo-disaster recovery/replication, Java/JMS client choices, and migrating from Standard to Premium. |
-| Architecture & Design Patterns | L70-L78 | Patterns for designing resilient, federated, multi-namespace Service Bus systems, including partitioning, replication, and using NServiceBus for message-driven architectures. |
-| Limits & Quotas | L79-L86 | Details on Service Bus size and throughput limits, quotas per tier, large message handling in Premium, and how throttling works and impacts clients. |
+| Decision Making | L60-L68 | Guidance on choosing Service Bus vs other messaging options, configuring geo-disaster recovery/replication, Java/JMS client choices, and migrating from Standard to Premium. |
+| Architecture & Design Patterns | L69-L78 | Patterns for resilient, geo-replicated, multi-namespace Service Bus architectures, including federation, message replication, partitioned entities, and using NServiceBus for message-driven systems. |
+| Limits & Quotas | L79-L86 | Details on Service Bus size/throughput limits, quotas, throttling behavior, and how Premium tier handles large messages and high-scale workloads. |
 | Security | L87-L109 | Securing Service Bus with Entra ID, managed identities, SAS, keys, TLS, network isolation (VNet, Private Link, firewalls, NSPs), and applying Azure Policy/compliance settings. |
 | Configuration | L110-L134 | Configuring and managing Service Bus entities (queues, topics, subscriptions), including forwarding, sessions, partitioning, TTL, monitoring, filters/actions, local emulation, and management via ARM/PowerShell. |
 | Integrations & Coding Patterns | L135-L150 | Patterns and code for integrating Service Bus with JMS (1.1/2.0), RabbitMQ, Event Grid/Logic Apps/Functions, subscription filters/actions, replication tasks, and batch message deletion. |
@@ -63,7 +63,6 @@ This skill requires **network access** to fetch documentation content:
 | Choose between Azure Event Grid, Event Hubs, and Service Bus | https://learn.microsoft.com/en-us/azure/service-bus-messaging/compare-messaging-services |
 | Decide between Azure Storage queues and Service Bus queues | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-azure-and-service-bus-queues-compared-contrasted |
 | Set up Service Bus Geo-Disaster Recovery | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-geo-dr |
-| Configure Azure Service Bus Geo-Replication | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-geo-replication |
 | Choose between JMS and native Java SDK for Azure Service Bus | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-jms-versus-native-sdk |
 | Migrate Azure Service Bus from Standard to Premium | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-migrate-standard-premium |
 
@@ -73,6 +72,7 @@ This skill requires **network access** to fetch documentation content:
 | Build message-driven systems on Service Bus with NServiceBus | https://learn.microsoft.com/en-us/azure/service-bus-messaging/build-message-driven-apps-nservicebus |
 | Design Service Bus federation and replication topologies | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-federation-overview |
 | Implement Service Bus message replication patterns | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-federation-patterns |
+| Design and use Azure Service Bus geo-replication | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-geo-replication |
 | Design multi-namespace Service Bus for resilience | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-outages-disasters |
 | Design and create partitioned Service Bus queues and topics | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-partitioning |
 
@@ -82,7 +82,7 @@ This skill requires **network access** to fetch documentation content:
 | Understand Azure Service Bus limits and behaviors | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-faq |
 | Use Azure Service Bus Premium tier for large messages | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-premium-messaging |
 | Reference Azure Service Bus quotas and limits | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-quotas |
-| Understand throttling limits in Azure Service Bus | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-throttling |
+| Understand Azure Service Bus throttling limits and behavior | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-throttling |
 
 ### Security
 | Topic | URL |

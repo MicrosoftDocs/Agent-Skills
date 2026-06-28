@@ -1,13 +1,12 @@
 ---
-generated_at: '2026-03-03'
+generated_at: '2026-06-28'
 category_descriptions:
   security: Configuring customer-managed key (CMK) encryption for Azure Container
     Storage using Elastic SAN volumes, including setup steps and security considerations.
   decision-making: Guidance on Azure Container Storage costs (v1 vs v2), billing models,
     and choosing/configuring redundancy options like LRS vs ZRS and multi-zone setups
-  configuration: 'Configuring Azure Container Storage pools, node placement, and monitoring:
-    storage pool parameters, node affinity, Prometheus setup (v1 & current), and Azure
-    Managed Grafana dashboards.'
+  configuration: Configuring Azure Container Storage pools, node placement, Elastic
+    SAN integration, and setting up Prometheus/Grafana monitoring and metrics dashboards.
   limits-quotas: Guidance on resizing Azure Container Storage volumes (v2 and v1),
     including capacity/pool limits, constraints, and steps to safely expand volumes
     within those limits.
@@ -16,13 +15,14 @@ category_descriptions:
     problems.
 skill_description: Expert knowledge for Azure Container Storage development including
   troubleshooting, decision making, limits & quotas, security, and configuration.
-  Use when configuring CMK-encrypted Elastic SAN volumes, ACS pools, LRS/ZRS redundancy,
-  volume resize, or v1 installs, and other Azure Container Storage related development
-  tasks. Not for Azure Blob Storage (use azure-blob-storage), Azure Files (use azure-files),
-  Azure Elastic SAN (use azure-elastic-san), Azure NetApp Files (use azure-netapp-files).
-use_when: Use when configuring CMK-encrypted Elastic SAN volumes, ACS pools, LRS/ZRS
-  redundancy, volume resize, or v1 installs, and other Azure Container Storage related
-  development tasks.
+  Use when configuring Elastic SAN-backed pools, CMK encryption, LRS/ZRS redundancy,
+  volume resizing, or Prometheus/Grafana monitoring, and other Azure Container Storage
+  related development tasks. Not for Azure Blob Storage (use azure-blob-storage),
+  Azure Files (use azure-files), Azure Elastic SAN (use azure-elastic-san), Azure
+  NetApp Files (use azure-netapp-files).
+use_when: Use when configuring Elastic SAN-backed pools, CMK encryption, LRS/ZRS redundancy,
+  volume resizing, or Prometheus/Grafana monitoring, and other Azure Container Storage
+  related development tasks.
 confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure Files
   (use azure-files), Azure Elastic SAN (use azure-elastic-san), Azure NetApp Files
   (use azure-netapp-files).
@@ -34,13 +34,13 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure F
 - **Total Pages**: 33
 - **Fetched**: 33
 - **Fetch Failed**: 0
-- **Classified**: 13
-- **Unclassified**: 20
+- **Classified**: 14
+- **Unclassified**: 19
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 33
+- **Updated Pages**: 1
+- **Unchanged**: 32
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-container-storage/azure-container-storage.csv`
 
@@ -48,14 +48,19 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure F
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| configuration | 5 | 15.2% |
+| configuration | 6 | 18.2% |
 | decision-making | 4 | 12.1% |
 | limits-quotas | 2 | 6.1% |
 | security | 1 | 3.0% |
 | troubleshooting | 1 | 3.0% |
-| *(Unclassified)* | 20 | 60.6% |
+| *(Unclassified)* | 19 | 57.6% |
 
 ## Changes
+
+### Updated Pages
+
+- [Configure Elastic SAN](https://learn.microsoft.com/en-us/azure/storage/container-storage/use-container-storage-with-elastic-san)
+  - Updated: 2026-02-12T12:10:00.000Z → 2026-06-22T22:13:00.000Z
 
 ## Classified Pages
 
@@ -68,6 +73,7 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure F
 | [Resize persistent volumes](https://learn.microsoft.com/en-us/azure/storage/container-storage/resize-volume) | limits-quotas | 0.70 | Discusses constraints like not shrinking volumes and maximum capacity tied to Elastic SAN or local NVMe; likely includes explicit size limits or rules that function as quotas. |
 | [Understand billing](https://learn.microsoft.com/en-us/azure/storage/container-storage/container-storage-billing) | decision-making | 0.70 | Billing/pricing model with backing storage costs and service fees; likely includes comparison of options and cost trade-offs to guide storage choice. |
 | [Understand billing](https://learn.microsoft.com/en-us/azure/storage/container-storage/container-storage-billing-version-1) | decision-making | 0.70 | Billing/pricing model with examples for different backing storage options; provides cost comparisons and trade-offs to guide storage choice. |
+| [Configure Elastic SAN](https://learn.microsoft.com/en-us/azure/storage/container-storage/use-container-storage-with-elastic-san) | configuration | 0.68 | The article describes product-specific configuration steps and parameters for wiring Azure Container Storage (v2.x.x) to Azure Elastic SAN as backing storage for Kubernetes workloads. This includes detailed setup of storage classes, volume configurations, and version-specific behavior that go beyond generic knowledge. It is primarily about how to configure these services together rather than general concepts or limits. |
 | [Connect with Prometheus](https://learn.microsoft.com/en-us/azure/storage/container-storage/enable-monitoring) | configuration | 0.65 | Covers enabling managed Prometheus; likely includes specific configuration flags, namespaces, and metrics settings unique to this service. |
 | [Enable monitoring with managed Prometheus](https://learn.microsoft.com/en-us/azure/storage/container-storage/enable-monitoring-version-1) | configuration | 0.65 | Covers enabling managed Prometheus for v1; likely includes specific configuration flags, namespaces, and metrics settings unique to this version. |
 | [Enable multi-zone storage redundancy](https://learn.microsoft.com/en-us/azure/storage/container-storage/enable-multi-zone-redundancy-version-1) | decision-making | 0.65 | Guides using multi-zone storage pools and ZRS disks in multi-zone AKS; likely includes scenario-based guidance on when/how to choose redundancy options. |
@@ -86,7 +92,6 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure F
 | [Temp SSD](https://learn.microsoft.com/en-us/azure/storage/container-storage/use-container-storage-with-temp-ssd) | 0.45 | How-to for using temp SSD with v1; procedural content without structured configuration tables or limits. |
 | [Use with Azure Disks](https://learn.microsoft.com/en-us/azure/storage/container-storage/use-container-storage-with-managed-disks) | 0.45 | How-to for using Managed Disks as backend; likely standard Kubernetes storage class and PVC patterns without detailed parameter tables. |
 | [Use with Azure Elastic SAN](https://learn.microsoft.com/en-us/azure/storage/container-storage/use-container-storage-with-elastic-san-version-1) | 0.45 | Preview how-to for Elastic SAN with v1; appears as a procedural integration tutorial rather than a configuration or limits reference. |
-| [Configure Elastic SAN](https://learn.microsoft.com/en-us/azure/storage/container-storage/use-container-storage-with-elastic-san) | 0.40 | How-to for configuring Elastic SAN as backing storage; appears as a step-by-step integration tutorial rather than a parameter reference or limits guide. |
 | [Configure local NVMe](https://learn.microsoft.com/en-us/azure/storage/container-storage/use-container-storage-with-local-disk) | 0.40 | How-to for using local NVMe with AKS; appears as a procedural tutorial without structured config tables or limits. |
 | [Create AKS cluster and install Azure Container Storage](https://learn.microsoft.com/en-us/azure/storage/container-storage/install-container-storage-aks-version-1) | 0.40 | Tutorial for installing v1 with AKS; step-by-step instructions rather than expert configuration or decision content. |
 | [Install Azure Container Storage](https://learn.microsoft.com/en-us/azure/storage/container-storage/install-container-storage-aks) | 0.40 | Tutorial-style install guide for AKS; likely step commands but not organized configuration reference, limits, or troubleshooting mappings. |

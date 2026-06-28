@@ -3,7 +3,7 @@ name: azure-virtual-network
 description: Expert knowledge for Azure Virtual Network development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and deployment. Use when configuring VNet peering, gateways, service endpoints, encryption, NVAs, or upgrading Basic to Standard IPs, and other Azure Virtual Network related development tasks. Not for Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-21"
+  generated_at: "2026-06-28"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Virtual Network Skill
@@ -25,13 +25,13 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L36-L40 | Diagnosing and fixing Azure VM/VNet connectivity issues: routing and NSG problems, NVAs and routing appliances, SMTP blocking, VNet peering, encryption, and VNet deletion errors. |
-| Best Practices | L41-L52 | Best practices for Azure VM/VNet networking: NIC internals, NSGs, outbound access, MTU and TCP/IP tuning, throughput optimization, and using VNet service endpoints securely and efficiently. |
-| Decision Making | L53-L62 | Guidance on design choices: when to use accelerated networking, routing preferences, VNets vs appliances, IP upgrade paths, VNet integration options, and cost/performance trade-offs. |
-| Architecture & Design Patterns | L63-L69 | Designing VNet architectures: subnet extension for migrations, VNet peering, hybrid two-tier apps, traffic mirroring with TAP, topology planning, and custom routing options. |
-| Limits & Quotas | L70-L75 | VM networking limits: MANA support per VM size, static public IP assignment and quotas, and per-VM network throughput caps and constraints. |
-| Security | L76-L85 | Network security for VNets: Kubernetes network policies, layered controls, Azure Policy for VNets, Virtual Network encryption concepts/config, and securing storage egress with service endpoint policies. |
-| Configuration | L86-L117 | Configuring Azure Virtual Network behavior: IPs (public/private/custom), DNS, DHCP, encryption, peering, gateways, monitoring, and MANA settings for VMs, NVAs, and PaaS delegation. |
-| Deployment | L118-L121 | Guidance for upgrading Azure Basic public IP addresses to Standard SKU, including requirements, steps, and considerations for network resources and downtime. |
+| Best Practices | L41-L51 | Best practices for Azure VM/VNet networking: NIC internals, NSGs, outbound access, MTU and TCP/IP tuning, throughput optimization, and using VNet service endpoints securely and efficiently. |
+| Decision Making | L52-L61 | Guidance on design choices: when to use accelerated networking, routing preferences, VNets vs appliances, IP upgrade paths, VNet integration options, and cost/performance trade-offs. |
+| Architecture & Design Patterns | L62-L68 | Designing VNet architectures: subnet extension for migrations, VNet peering, hybrid two-tier apps, traffic mirroring with TAP, topology planning, and custom routing options. |
+| Limits & Quotas | L69-L74 | VM networking limits: MANA support per VM size, static public IP assignment and quotas, and per-VM network throughput caps and constraints. |
+| Security | L75-L84 | Network security for VNets: Kubernetes network policies, layered controls, Azure Policy for VNets, Virtual Network encryption concepts/config, and securing storage egress with service endpoint policies. |
+| Configuration | L85-L116 | Configuring Azure Virtual Network behavior: IPs (public/private/custom), DNS, DHCP, encryption, peering, gateways, monitoring, and MANA settings for VMs, NVAs, and PaaS delegation. |
+| Deployment | L117-L120 | Guidance for upgrading Azure Basic public IP addresses to Standard SKU, including requirements, steps, and considerations for network resources and downtime. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -41,7 +41,6 @@ This skill requires **network access** to fetch documentation content:
 ### Best Practices
 | Topic | URL |
 |-------|-----|
-| Understand Azure Accelerated Networking internals on Linux | https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-how-it-works |
 | Apply Azure Virtual Network design best practices | https://learn.microsoft.com/en-us/azure/virtual-network/concepts-and-best-practices |
 | Tune MTU settings for Azure virtual machines | https://learn.microsoft.com/en-us/azure/virtual-network/how-to-virtual-machine-mtu |
 | Understand and control default outbound access for Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/default-outbound-access |

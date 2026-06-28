@@ -48,8 +48,8 @@ confusable_not_for: Not for Azure Virtual Enclaves (use azure-virtual-enclaves),
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 66
+- **Updated Pages**: 0
+- **Unchanged**: 70
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-confidential-computing/azure-confidential-computing.csv`
 
@@ -67,17 +67,6 @@ confusable_not_for: Not for Azure Virtual Enclaves (use azure-virtual-enclaves),
 | *(Unclassified)* | 21 | 30.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [Confidential computing on Azure](https://learn.microsoft.com/en-us/azure/confidential-computing/overview-azure-products)
-  - Updated: 2025-05-07T17:04:00.000Z → 2026-06-19T11:43:00.000Z
-- [Azure Confidential Clean Room](https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-clean-rooms)
-  - Updated: 2026-06-03T17:25:00.000Z → 2026-06-17T07:01:00.000Z
-- [Create a Confidential VM through Azure CLI](https://learn.microsoft.com/en-us/azure/confidential-computing/quick-create-confidential-vm-azure-cli)
-  - Updated: 2023-12-06T23:03:00.000Z → 2026-06-18T22:17:00.000Z
-- [Create a Confidential VM through ARM template](https://learn.microsoft.com/en-us/azure/confidential-computing/quick-create-confidential-vm-arm)
-  - Updated: 2025-09-16T17:23:00.000Z → 2026-06-18T22:17:00.000Z
 
 ## Classified Pages
 

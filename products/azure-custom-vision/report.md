@@ -43,8 +43,8 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI serv
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 22
+- **Updated Pages**: 0
+- **Unchanged**: 23
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-custom-vision/azure-custom-vision.csv`
 
@@ -61,11 +61,6 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI serv
 | *(Unclassified)* | 6 | 26.1% |
 
 ## Changes
-
-### Updated Pages
-
-- [Custom Vision FAQ](https://learn.microsoft.com/en-us/azure/ai-services/custom-vision-service/faq)
-  - Updated: 2026-06-05T22:11:00.000Z → 2026-06-15T17:17:00.000Z
 
 ## Classified Pages
 

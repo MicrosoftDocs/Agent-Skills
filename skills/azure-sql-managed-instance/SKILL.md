@@ -1,9 +1,9 @@
 ---
 name: azure-sql-managed-instance
-description: Expert knowledge for Azure SQL Managed Instance development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when planning MI tiers/migrations, configuring networking, HA/DR & geo‑replication, security (Entra/TDE), or MI Link, and other Azure SQL Managed Instance related development tasks. Not for Azure SQL Database (use azure-sql-database), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Database Migration service (use azure-database-migration).
+description: Expert knowledge for Azure SQL Managed Instance development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when planning MI vs SQL options, configuring networking, Entra/TDE security, MI Link, or HA/DR geo‑replication, and other Azure SQL Managed Instance related development tasks. Not for Azure SQL Database (use azure-sql-database), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Database for MySQL (use azure-database-mysql), Azure Database for PostgreSQL (use azure-database-postgresql).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-21"
+  generated_at: "2026-06-28"
   generator: "docs2skills/1.0.0"
 ---
 # Azure SQL Managed Instance Skill
@@ -26,13 +26,13 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L37-L55 | Diagnosing and fixing Azure SQL Managed Instance issues: deployment/scale errors, performance, connectivity, geo‑replication, memory/log full, XTP storage, MI Link, and Entra Kerberos auth. |
 | Best Practices | L56-L77 | Best practices for monitoring, tuning, securing, and operating Azure SQL Managed Instance, including performance, HA/DR, maintenance, alerts, and read-scale/replication scenarios. |
-| Decision Making | L78-L91 | Guidance for choosing Azure SQL MI vs other Azure SQL options, selecting tiers and subnet sizes, configuring standby/replicas, and planning migrations from SQL Server, Db2, and Oracle. |
-| Architecture & Design Patterns | L92-L96 | Connectivity architecture, networking models, and connection options for Azure SQL Database, including gateways, endpoints, firewalls, and integration with VNets and private access. |
-| Limits & Quotas | L97-L105 | Limits, quotas, and capacity for Azure SQL MI: DTU characteristics, free-tier caps, memory/OLTP limits, maintenance windows, and how to review or request higher resource quotas. |
-| Security | L106-L160 | Configuring Azure SQL Managed Instance security: Entra auth, identities, TDE & Key Vault, TLS, auditing, threat protection, private endpoints, Windows/Kerberos auth, and secure configuration. |
-| Configuration | L161-L209 | Configuring and operating SQL Managed Instance: networking and connectivity, backups and restore, monitoring and alerts, maintenance and updates, auditing, and SQL/MI behavioral differences. |
-| Integrations & Coding Patterns | L210-L233 | Connecting apps and tools to SQL Managed Instance (.NET, Java, Python, etc.), automation, data import, DTC, XEvents, MI Link, backups, tracing, and Spark integration. |
-| Deployment | L234-L254 | Deploying, scaling, moving, and pausing Azure SQL Managed Instance; networking setup, regional availability, DR/replication, migrations, and BACPAC import/export. |
+| Decision Making | L78-L92 | Guidance for choosing Azure SQL Managed Instance vs other Azure SQL options, selecting tiers and subnet sizes, and planning migrations from SQL Server, Oracle, and Db2. |
+| Architecture & Design Patterns | L93-L97 | Connectivity architecture, networking models, and connection options for Azure SQL Database, including gateways, endpoints, firewalls, and integration with VNets and private access. |
+| Limits & Quotas | L98-L106 | Limits, quotas, and capacity for Azure SQL MI: DTU characteristics, free-tier caps, memory/OLTP limits, maintenance windows, and how to review or request higher resource quotas. |
+| Security | L107-L161 | Configuring Azure SQL Managed Instance security: Entra auth, identities, TDE & Key Vault, TLS, auditing, threat protection, private endpoints, Windows/Kerberos auth, and secure configuration. |
+| Configuration | L162-L210 | Configuring and operating SQL Managed Instance: networking and connectivity, backups and restore, monitoring and alerts, maintenance and updates, auditing, and SQL/MI behavioral differences. |
+| Integrations & Coding Patterns | L211-L234 | Connecting apps and tools to SQL Managed Instance (.NET, Java, Python, etc.), automation, data import, DTC, XEvents, MI Link, backups, tracing, and Spark integration. |
+| Deployment | L235-L255 | Deploying, scaling, moving, and pausing Azure SQL Managed Instance; networking setup, regional availability, DR/replication, migrations, and BACPAC import/export. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -88,6 +88,7 @@ This skill requires **network access** to fetch documentation content:
 | Determine subnet size and IP range for Azure SQL Managed Instance | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/vnet-subnet-determine-size?view=azuresql |
 | Plan and execute Db2 to SQL Managed Instance migration | https://learn.microsoft.com/en-us/azure/azure-sql/migration-guides/managed-instance/db2-to-managed-instance-guide?view=azuresql |
 | Plan Oracle to Azure SQL Managed Instance migration | https://learn.microsoft.com/en-us/azure/azure-sql/migration-guides/managed-instance/oracle-to-managed-instance-guide?view=azuresql |
+| Plan and decide SQL Server to Azure SQL migrations | https://learn.microsoft.com/en-us/azure/azure-sql/migration-guides/modernization?view=azuresql |
 
 ### Architecture & Design Patterns
 | Topic | URL |

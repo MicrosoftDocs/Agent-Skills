@@ -3,7 +3,7 @@ name: azure-communication-services
 description: Expert knowledge for Azure Communication Services development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building ACS calling, chat, SMS, email, Teams interop, or contact center/Job Router solutions, and other Azure Communication Services related development tasks. Not for Azure Notification Hubs (use azure-notification-hubs), Azure Web PubSub (use azure-web-pubsub), Azure SignalR Service (use azure-signalr-service), Azure AI Bot Service (use azure-bot-service).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-21"
+  generated_at: "2026-06-28"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Communication Services Skill
@@ -30,9 +30,9 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L154-L159 | Designing scalable contact center solutions with ACS and patterns for integrating ACS with ExpressRoute for secure, private connectivity and network architecture. |
 | Limits & Quotas | L160-L227 | Limits, quotas, regional availability, and restrictions for ACS calling, phone numbers, email, Teams interop, media features, and troubleshooting token/metric-related issues. |
 | Security | L228-L254 | Security, auth, and compliance for ACS: encryption, identities, HMAC, caller ID, email/SMTP, Teams interop, captions/transcription, emergency calling, and secure webhooks/Rooms. |
-| Configuration | L255-L333 | Monitoring, logging, metrics, and diagnostics for ACS (chat, voice/video, SMS, email, calling, routing), plus configuration for Teams interop, domains, routing, UI library, and SMS/email compliance. |
-| Integrations & Coding Patterns | L334-L480 | Patterns and code to integrate ACS calling, chat, SMS, email, Rooms, Job Router, and WhatsApp with apps, bots, Teams, OpenAI, push/events, media, and telephony features. |
-| Deployment | L481-L485 | Infrastructure and deployment guidance for Azure Communication Services: direct routing requirements and automating ACS/Email resource provisioning with PowerShell. |
+| Configuration | L255-L332 | Monitoring, logging, metrics, and diagnostics for ACS (chat, voice/video, SMS, email, calling, routing), plus configuration for Teams interop, domains, routing, UI library, and SMS/email compliance. |
+| Integrations & Coding Patterns | L333-L479 | Patterns and code to integrate ACS calling, chat, SMS, email, Rooms, Job Router, and WhatsApp with apps, bots, Teams, OpenAI, push/events, media, and telephony features. |
+| Deployment | L480-L484 | Infrastructure and deployment guidance for Azure Communication Services: direct routing requirements and automating ACS/Email resource provisioning with PowerShell. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -283,7 +283,6 @@ This skill requires **network access** to fetch documentation content:
 | Query ACS call logs with Azure Log Analytics | https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/query-call-logs |
 | Set up monitoring and alerts for ACS calls | https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/set-up-call-monitoring |
 | Use Azure SMS metrics and dimensions in monitoring | https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/sms-metrics |
-| Configure incoming call notifications with Event Grid | https://learn.microsoft.com/en-us/azure/communication-services/concepts/call-automation/incoming-call-notification |
 | Understand Azure email metric definitions and usage | https://learn.microsoft.com/en-us/azure/communication-services/concepts/email-metrics |
 | Use inline attachments in ACS email messages | https://learn.microsoft.com/en-us/azure/communication-services/concepts/email/email-attachment-inline |
 | Prepare ACS email resources and domains for sending | https://learn.microsoft.com/en-us/azure/communication-services/concepts/email/prepare-email-communication-resource |

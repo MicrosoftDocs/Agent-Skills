@@ -44,8 +44,8 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 29
-- **Unchanged**: 31
+- **Updated Pages**: 0
+- **Unchanged**: 60
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-connector/azure-service-connector.csv`
 
@@ -62,50 +62,6 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 | *(Unclassified)* | 20 | 33.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [Azure Cosmos DB for NoSQL](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-cosmos-sql)
-  - Updated: 2025-03-14T08:00:00.000Z → 2026-06-17T08:00:00.000Z
-- [Azure Cosmos DB for Table](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-cosmos-table)
-  - Updated: 2025-03-24T11:11:00.000Z → 2026-06-17T17:25:00.000Z
-- [Azure Database for MySQL](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-mysql)
-  - Updated: 2025-03-14T08:00:00.000Z → 2026-06-17T08:00:00.000Z
-- [Azure Key Vault](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-key-vault)
-  - Updated: 2025-07-24T17:11:00.000Z → 2026-06-18T12:02:00.000Z
-- [Azure multi-service Cognitive Services](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-cognitive-services)
-  - Updated: 2026-02-04T08:00:00.000Z → 2026-06-18T12:02:00.000Z
-- [Azure OpenAI](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-openai)
-  - Updated: 2026-02-03T08:00:00.000Z → 2026-06-18T12:02:00.000Z
-- [Azure Service Bus](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-service-bus)
-  - Updated: 2025-08-29T17:12:00.000Z → 2026-06-17T08:00:00.000Z
-- [Azure Table Storage](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-storage-table)
-  - Updated: 2025-08-29T17:12:00.000Z → 2026-06-18T12:02:00.000Z
-- [MongoDB Atlas](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-mongodb-atlas)
-  - Updated: 2025-05-20T11:13:00.000Z → 2026-06-18T12:02:00.000Z
-- [Neon Serverless Postgres](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-neon-postgres)
-  - Updated: 2025-03-06T05:32:00.000Z → 2026-06-17T17:25:00.000Z
-- [SQL database in Microsoft Fabric](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-fabric-sql)
-  - Updated: 2025-04-25T11:15:00.000Z → 2026-06-18T08:00:00.000Z
-- [Azure App Service](https://learn.microsoft.com/en-us/azure/service-connector/quickstart-portal-app-service-connection)
-  - Updated: 2025-08-19T17:10:00.000Z → 2026-06-18T08:00:00.000Z
-- [Azure Functions](https://learn.microsoft.com/en-us/azure/service-connector/quickstart-portal-functions-connection)
-  - Updated: 2025-08-19T17:10:00.000Z → 2026-06-18T08:00:00.000Z
-- [Azure Kubernetes Service](https://learn.microsoft.com/en-us/azure/service-connector/quickstart-portal-aks-connection)
-  - Updated: 2025-08-19T17:10:00.000Z → 2026-06-18T08:00:00.000Z
-- [Azure Spring Apps](https://learn.microsoft.com/en-us/azure/service-connector/quickstart-portal-spring-cloud-connection)
-  - Updated: 2025-08-19T17:10:00.000Z → 2026-06-18T08:00:00.000Z
-- [ASP.NET core app to App Configuration](https://learn.microsoft.com/en-us/azure/service-connector/tutorial-connect-web-app-app-configuration)
-  - Updated: 2025-07-24T17:11:00.000Z → 2026-06-18T08:00:00.000Z
-- [Web app to MongoDB Atlas](https://learn.microsoft.com/en-us/azure/service-connector/howto-mongodb-atlas-service-connection)
-  - Updated: 2025-08-01T05:11:00.000Z → 2026-06-18T12:02:00.000Z
-- [Connect AKS to Azure OpenAI](https://learn.microsoft.com/en-us/azure/service-connector/tutorial-python-aks-openai-workload-identity)
-  - Updated: 2026-02-04T08:00:00.000Z → 2026-06-17T08:00:00.000Z
-- [Manage authentication](https://learn.microsoft.com/en-us/azure/service-connector/how-to-manage-authentication)
-  - Updated: 2026-04-13T22:10:00.000Z → 2026-06-18T08:00:00.000Z
-- [Provide correct parameters](https://learn.microsoft.com/en-us/azure/service-connector/how-to-provide-correct-parameters)
-  - Updated: 2025-05-12T08:00:00.000Z → 2026-06-18T08:00:00.000Z
-- *...and 9 more*
 
 ## Classified Pages
 

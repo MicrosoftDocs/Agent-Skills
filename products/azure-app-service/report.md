@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-14'
+generated_at: '2026-06-28'
 category_descriptions:
   decision-making: Guidance on choosing App Service tiers, plans, auth and networking
     options, and planning migrations (Windows→Linux, .NET, Docker, VNet, ASE) plus
@@ -53,8 +53,8 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Spring 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 247
+- **Updated Pages**: 3
+- **Unchanged**: 244
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-app-service/azure-app-service.csv`
 
@@ -74,6 +74,15 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Spring 
 | *(Unclassified)* | 99 | 40.1% |
 
 ## Changes
+
+### Updated Pages
+
+- [Spring Boot with MongoDB](https://learn.microsoft.com/en-us/azure/app-service/tutorial-java-spring-cosmosdb)
+  - Updated: 2025-04-17T08:00:00.000Z → 2026-06-26T22:12:00.000Z
+- [Tomcat with MySQL](https://learn.microsoft.com/en-us/azure/app-service/tutorial-java-tomcat-mysql-app)
+  - Updated: 2025-04-17T08:00:00.000Z → 2026-06-25T08:00:00.000Z
+- [JBoss with MySQL](https://learn.microsoft.com/en-us/azure/app-service/tutorial-java-jboss-mysql-app)
+  - Updated: 2026-03-25T08:00:00.000Z → 2026-06-25T08:00:00.000Z
 
 ## Classified Pages
 
@@ -277,7 +286,6 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Spring 
 | [RAG with Azure OpenAI with your data](https://learn.microsoft.com/en-us/azure/app-service/tutorial-ai-openai-search-java) | 0.30 | RAG app tutorial with OpenAI and AI Search; scenario walkthrough, not a configuration or limits reference. |
 | [Restore deleted app](https://learn.microsoft.com/en-us/azure/app-service/app-service-undelete) | 0.30 | Describes the ability and conditions to restore deleted apps, but from the summary it appears to be a procedural how-to without detailed limits, configuration parameters, or error mappings. |
 | [Scale out automatically](https://learn.microsoft.com/en-us/azure/app-service/manage-automatic-scaling) | 0.30 | Primarily explains what automatic scaling is and how to enable it; summary does not indicate detailed limits, configuration tables, or decision matrices—more of a feature/how-to overview. |
-| [Spring Boot with MongoDB](https://learn.microsoft.com/en-us/azure/app-service/tutorial-java-spring-cosmosdb) | 0.30 | Tutorial for Spring Boot app with Cosmos DB (Mongo API); primarily procedural, not a configuration or limits reference. |
 | [Upgrade preference for planned maintenance](https://learn.microsoft.com/en-us/azure/app-service/environment/how-to-upgrade-preference) | 0.30 | Page appears to be a how-to for setting upgrade preference for App Service Environment planned maintenance (portal/CLI). From the summary, it focuses on configuration steps and conceptual explanation of planned maintenance, without clear evidence of detailed configuration parameter tables, limits/quotas, error codes, or decision matrices. Lacking strong indicators of product-specific expert knowledge as defined by the sub-skill types. |
 | [Use .NET](https://learn.microsoft.com/en-us/azure/app-service/tutorial-connect-msi-key-vault) | 0.30 | Language-specific tutorial for securing connectivity using Key Vault and managed identity from a .NET app. Primarily step-by-step tutorial code; not a catalog of configuration options, limits, or error mappings. |
 | [Use JavaScript](https://learn.microsoft.com/en-us/azure/app-service/tutorial-connect-msi-key-vault-javascript) | 0.30 | JavaScript tutorial variant of the same scenario (Key Vault + managed identity). Focused on walkthrough code, not on structured configuration tables, limits, or troubleshooting matrices. |
@@ -302,7 +310,7 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Spring 
 | [Deploy with Azure Pipelines](https://learn.microsoft.com/en-us/azure/app-service/deploy-container-azure-pipelines) | 0.20 | Primarily a step-by-step CI/CD tutorial for deploying a Windows container app with Azure Pipelines. It does not emphasize product-specific limits, configuration matrices, or deployment constraints by tier/plan; instead it focuses on defining a YAML pipeline and basic deployment flow, which are patterns an LLM generally knows from training. |
 | [Develop WebJobs using VS](https://learn.microsoft.com/en-us/azure/app-service/webjobs-dotnet-deploy-vs) | 0.20 | Step-by-step Visual Studio deployment/tutorial for WebJobs; no configuration tables, limits, quotas, or product-specific error/diagnostic details. |
 | [Get started with WebJobs SDK](https://learn.microsoft.com/en-us/azure/app-service/webjobs-sdk-get-started) | 0.20 | Introductory tutorial for WebJobs SDK with basic queue-trigger example; focuses on how to build and deploy, not on limits, configuration matrices, or troubleshooting mappings. |
-| [JBoss with MySQL](https://learn.microsoft.com/en-us/azure/app-service/tutorial-java-jboss-mysql-app) | 0.20 | Step-by-step tutorial for deploying a Java JBoss app with MySQL on App Service; no evidence of detailed limits, configuration tables, or product-specific best-practice/diagnostic matrices beyond generic tutorial guidance. |
+| [JBoss with MySQL](https://learn.microsoft.com/en-us/azure/app-service/tutorial-java-jboss-mysql-app) | 0.20 | Tutorial for building and deploying a JBoss app with Azure Database for MySQL. It appears to be a guided example rather than a reference for limits, configuration options, security roles, or detailed troubleshooting, so it does not meet the expert-knowledge criteria. |
 | [Java Tomcat to Postgres](https://learn.microsoft.com/en-us/azure/app-service/tutorial-java-tomcat-connect-managed-identity-postgresql-database) | 0.20 | Tutorial-style walkthrough for using managed identity from a Java Tomcat app to access Azure Database for PostgreSQL. It focuses on step-by-step setup and conceptual security benefits, without detailed configuration parameter tables, specific RBAC role lists, error-code-based troubleshooting, or numeric limits/quotas. Content is primarily instructional, not a reference of expert-only details. |
 | [Local small language models](https://learn.microsoft.com/en-us/azure/app-service/scenario-ai-local-small-language-model) | 0.20 | Describes using local SLMs and mentions pricing tiers conceptually; no explicit numeric limits or configuration parameter tables in the summary. |
 | [Managed Instance overview](https://learn.microsoft.com/en-us/azure/app-service/overview-managed-instance) | 0.20 | Page is an overview of Managed Instance on Azure App Service (preview) describing what it is and target scenarios; no clear indication of detailed limits, configuration parameter tables, error codes, or other expert-only specifics based on the provided summary. |
@@ -317,8 +325,9 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Spring 
 | [RAG Azure OpenAI and Azure SQL](https://learn.microsoft.com/en-us/azure/app-service/deploy-intelligent-apps-dotnet-to-azure-sql) | 0.20 | Tutorial-style deployment and integration walkthrough for a Blazor RAG app using Azure SQL and Azure OpenAI. It primarily shows how to build and deploy the sample, not detailed configuration matrices, limits, or product-specific troubleshooting/error-code mappings. Lacks tables of config parameters, tier-specific deployment constraints, or quantified best-practice guidance, so it does not meet the expert-knowledge criteria for any sub-skill type. |
 | [Routine maintenance](https://learn.microsoft.com/en-us/azure/app-service/routine-maintenance) | 0.20 | Page appears to describe high-level routine maintenance behavior and assurances for Azure App Service without detailed numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. It is primarily conceptual/behavioral guidance about planned maintenance and service guarantees, not expert-level configuration, limits, or troubleshooting content. |
 | [Secure AI applications](https://learn.microsoft.com/en-us/azure/app-service/scenario-ai-authentication) | 0.20 | Security scenario overview for AI apps; summary lacks specific RBAC role names, auth parameters, or config tables. |
+| [Spring Boot with MongoDB](https://learn.microsoft.com/en-us/azure/app-service/tutorial-java-spring-cosmosdb) | 0.20 | Tutorial-style walkthrough for building and deploying a Spring Boot app with Cosmos DB (MongoDB API). It focuses on step-by-step instructions rather than detailed configuration tables, limits, error-code mappings, or product-specific best-practice guidance with quantified impact. |
 | [Terraform](https://learn.microsoft.com/en-us/azure/app-service/samples-terraform) | 0.20 | Page is primarily a link index to Terraform sample scripts without inlined configuration tables, limits, or product-specific parameter documentation; it’s a navigation/resource listing rather than embedded expert guidance. |
-| [Tomcat with MySQL](https://learn.microsoft.com/en-us/azure/app-service/tutorial-java-tomcat-mysql-app) | 0.20 | Tomcat + MySQL deployment tutorial; mostly walkthrough, no detailed limits, config matrices, or troubleshooting content. |
+| [Tomcat with MySQL](https://learn.microsoft.com/en-us/azure/app-service/tutorial-java-tomcat-mysql-app) | 0.20 | Tutorial for building and deploying a Tomcat app with Azure Database for MySQL. Content is primarily procedural (how-to) without explicit limits, configuration matrices, security role tables, or troubleshooting mappings that would qualify as expert knowledge. |
 | [WebJobs Quickstart](https://learn.microsoft.com/en-us/azure/app-service/quickstart-webjobs) | 0.20 | Quickstart tutorial for creating a scheduled WebJob; mostly step-by-step example, not a catalog of configs or expert-only details. |
 | [WebJobs Tutorial](https://learn.microsoft.com/en-us/azure/app-service/tutorial-webjobs) | 0.20 | Tutorial for building a scheduled WebJob; focuses on basic usage rather than exhaustive configuration or product-specific edge cases. |
 | [to Microsoft Graph as User](https://learn.microsoft.com/en-us/azure/app-service/tutorial-connect-app-access-microsoft-graph-as-user-javascript) | 0.20 | Tutorial for accessing Microsoft Graph as the signed-in user from an App Service app; focuses on delegated permissions and sign-in flow, not on detailed configuration tables, limits, or troubleshooting mappings. |

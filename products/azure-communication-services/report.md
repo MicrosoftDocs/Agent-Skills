@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-21'
+generated_at: '2026-06-28'
 category_descriptions:
   configuration: Monitoring, logging, metrics, and diagnostics for ACS (chat, voice/video,
     SMS, email, calling, routing), plus configuration for Teams interop, domains,
@@ -50,13 +50,13 @@ confusable_not_for: Not for Azure Notification Hubs (use azure-notification-hubs
 - **Total Pages**: 518
 - **Fetched**: 518
 - **Fetch Failed**: 0
-- **Classified**: 414
-- **Unclassified**: 104
+- **Classified**: 413
+- **Unclassified**: 105
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 1
-- **Unchanged**: 516
+- **Unchanged**: 517
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-communication-services/azure-communication-services.csv`
 
@@ -66,25 +66,21 @@ confusable_not_for: Not for Azure Notification Hubs (use azure-notification-hubs
 |------|-------|------------|
 | architecture-patterns | 2 | 0.4% |
 | best-practices | 22 | 4.2% |
-| configuration | 75 | 14.5% |
+| configuration | 74 | 14.3% |
 | decision-making | 12 | 2.3% |
 | deployment | 2 | 0.4% |
 | integrations | 143 | 27.6% |
 | limits-quotas | 64 | 12.4% |
 | security | 23 | 4.4% |
 | troubleshooting | 71 | 13.7% |
-| *(Unclassified)* | 104 | 20.1% |
+| *(Unclassified)* | 105 | 20.3% |
 
 ## Changes
 
-### New Pages
-
-- [Build an IVR Bot for Teams Auto Attendant](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/tpe/teams-phone-extensibility-interactive-voice-response)
-
 ### Updated Pages
 
-- [Overview](https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/tpe/teams-phone-extensibility-overview)
-  - Updated: 2025-06-02T22:13:00.000Z → 2026-06-17T22:15:00.000Z
+- [Answer a call](https://learn.microsoft.com/en-us/azure/communication-services/concepts/call-automation/incoming-call-notification)
+  - Updated: 2023-08-18T21:53:00.000Z → 2026-06-22T22:13:00.000Z
 
 ## Classified Pages
 
@@ -369,7 +365,6 @@ confusable_not_for: Not for Azure Notification Hubs (use azure-notification-hubs
 | [Add multiple sender addresses with Management SDKs](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/email/add-multiple-senders-mgmt-sdks) | configuration | 0.65 | Shows how to configure sender addresses using management client libraries; includes API parameters and resource model details. |
 | [Advanced Messaging logs](https://learn.microsoft.com/en-us/azure/communication-services/concepts/advanced-messaging/logs) | configuration | 0.65 | Describes how to enable and configure Advanced Messaging logs via Azure Monitor diagnostic settings, which is product-specific configuration for logging and monitoring. |
 | [Answer Teams Phone calls from Call Automation](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/tpe/teams-phone-extensibility-answer-teams-calls) | integrations | 0.65 | How-to for receiving and answering TPE calls via Call Automation; such articles typically include SDK/API parameters and request payload structures specific to this integration. |
-| [Answer a call](https://learn.microsoft.com/en-us/azure/communication-services/concepts/call-automation/incoming-call-notification) | configuration | 0.65 | Incoming call concepts for Call Automation generally document specific Event Grid event types, schema fields, and endpoint configuration details that are product-specific configuration knowledge. |
 | [Authenticate services](https://learn.microsoft.com/en-us/azure/communication-services/concepts/authentication) | security | 0.65 | Authentication article describing access keys, Entra ID, and user access tokens; typically includes specific configuration patterns and token usage flows unique to this service. |
 | [Azure Advisor](https://learn.microsoft.com/en-us/azure/communication-services/concepts/advisor-overview) | decision-making | 0.65 | Explains how ACS integrates with Azure Advisor and how to consume recommendations; supports decision-making on optimization based on Advisor outputs and Activity Log alerts. |
 | [Build an authentication service using Azure Functions](https://learn.microsoft.com/en-us/azure/communication-services/tutorials/trusted-service-tutorial) | integrations | 0.65 | Tutorial for building an auth service; likely includes specific bindings, function configuration, and ACS token generation patterns unique to this integration. |
@@ -579,6 +574,7 @@ confusable_not_for: Not for Azure Notification Hubs (use azure-notification-hubs
 | [Set exception policies](https://learn.microsoft.com/en-us/azure/communication-services/concepts/router/exception-policy) | 0.25 | Exception Policy article is conceptual about rules and actions; summary doesn’t indicate detailed error codes, limits, or config parameter tables. |
 | [UI Library use cases](https://learn.microsoft.com/en-us/azure/communication-services/concepts/ui-library/ui-library-use-cases) | 0.25 | UI Library use cases article explains scenarios and patterns conceptually; not focused on specific configuration values or troubleshooting. |
 | [Add Teams meeting calling to your app](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/voice-video-calling/get-started-teams-interop) | 0.20 | Quickstart tutorial for joining a Teams meeting with ACS Calling SDK; step-by-step example rather than a catalog of configuration options, limits, or troubleshooting mappings. |
+| [Answer a call](https://learn.microsoft.com/en-us/azure/communication-services/concepts/call-automation/incoming-call-notification) | 0.20 | Conceptual explanation of incoming call notifications and Event Grid usage for Azure Communication Services Call Automation; no specific limits, configuration parameter tables, error codes, or product-specific numeric thresholds are indicated. |
 | [Build an IVR Bot for Teams Auto Attendant](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/tpe/teams-phone-extensibility-interactive-voice-response) | 0.20 | Quickstart tutorial for building an IVR bot with Teams Auto Attendant; primarily step-by-step integration and sample code, without configuration tables, limits, error-code mappings, or other structured expert reference details. |
 | [Build intelligent, AI-powered chat experiences](https://learn.microsoft.com/en-us/azure/communication-services/concepts/chat/concepts) | 0.20 | Duplicate of chat concepts overview; same reasoning as index 21. |
 | [Call recording overview](https://learn.microsoft.com/en-us/azure/communication-services/concepts/voice-video-calling/call-recording) | 0.20 | Overview of Call Recording feature and APIs; description suggests conceptual explanation of scenarios and basic API actions (start/stop/pause/resume) without detailed limits, configuration parameters, or troubleshooting mappings required for expert-knowledge classification. |

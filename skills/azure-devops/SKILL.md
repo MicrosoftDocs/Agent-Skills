@@ -1,9 +1,9 @@
 ---
 name: azure-devops
-description: Expert knowledge for Azure DevOps development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing org/projects, Boards/work items, repos/pipelines, Analytics/OData/Power BI, or Azure DevOps Server, and other Azure DevOps related development tasks. Not for Azure Boards (use azure-boards), Azure Pipelines (use azure-pipelines), Azure Repos (use azure-repos), Azure Test Plans (use azure-test-plans).
+description: Expert knowledge for Azure DevOps development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing DevOps pools, Boards/work items, Pipelines analytics, Power BI/OData, or Azure DevOps Server, and other Azure DevOps related development tasks. Not for Azure Boards (use azure-boards), Azure Pipelines (use azure-pipelines), Azure Repos (use azure-repos), Azure Test Plans (use azure-test-plans).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-21"
+  generated_at: "2026-06-28"
   generator: "docs2skills/1.0.0"
 ---
 # Azure DevOps Skill
@@ -30,7 +30,7 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L87-L98 | Architectural guidance for Azure DevOps/Server: pool architecture, reliability/DR, SQL/database dependencies, and design patterns for simple to complex multi-server topologies and analytics modeling. |
 | Limits & Quotas | L99-L114 | Limits, quotas, and rules for Azure DevOps orgs/projects (naming, images, delete/recover), work tracking, backlogs, dashboards, wiki follows, Analytics data, Pipelines ARM size, and Managed DevOps Pools. |
 | Security | L115-L171 | Managing Azure DevOps security: identities, auth, org/project permissions, groups/roles, access levels, auditing, repo/pipeline/test/work item rights, and server/service account security. |
-| Configuration | L172-L248 | Configuring Azure DevOps/Server: managed DevOps pools, networking, storage, notifications, work items/Boards, Analytics/OData, dashboards, search, backups, SQL, services, and server administration. |
+| Configuration | L172-L248 | Configuring Azure DevOps/Server: managed DevOps pools, networking, scaling, notifications, work items/Boards, Analytics/OData/Power BI, dashboards, search, backups, SQL, services, and server admin. |
 | Integrations & Coding Patterns | L249-L293 | Integrating Azure DevOps with tools (VS, SIEM, notifications, clients) and building Analytics/OData- and Power BI–based reports for work items, pipelines, and test/requirements metrics. |
 | Deployment | L294-L325 | Installing, configuring, scaling, moving, backing up, restoring, and upgrading Azure DevOps Server/TFS deployments, including SQL, SharePoint, domains, and project collections |
 

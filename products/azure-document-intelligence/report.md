@@ -51,8 +51,8 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI Cust
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 75
+- **Updated Pages**: 0
+- **Unchanged**: 77
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-document-intelligence/azure-document-intelligence.csv`
 
@@ -72,13 +72,6 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI Cust
 | *(Unclassified)* | 42 | 54.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [Migration guide overview](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/versioning/migration-guide-overview?view=doc-intel-4.0.0)
-  - Updated: 2026-05-07T22:14:00.000Z → 2026-06-17T22:13:00.000Z
-- [General document](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/prebuilt/general-document?view=doc-intel-4.0.0)
-  - Updated: 2025-11-18T08:00:00.000Z → 2026-06-17T22:13:00.000Z
 
 ## Classified Pages
 

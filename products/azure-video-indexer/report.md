@@ -45,8 +45,8 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI Cust
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 65
+- **Updated Pages**: 0
+- **Unchanged**: 67
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-video-indexer/azure-video-indexer.csv`
 
@@ -64,13 +64,6 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI Cust
 | *(Unclassified)* | 43 | 64.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [Azure AI Video Indexer enabled by Azure Arc](https://learn.microsoft.com/en-us/azure/azure-video-indexer/arc/)
-  - Updated: 2026-04-30T22:11:00Z → 2026-06-16T17:09:00Z
-- [Azure AI Video Indexer documentation](https://learn.microsoft.com/en-us/azure/azure-video-indexer/cloud/)
-  - Updated: 2026-04-30T22:11:00Z → 2026-06-16T17:09:00Z
 
 ## Classified Pages
 

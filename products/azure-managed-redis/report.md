@@ -46,8 +46,8 @@ confusable_not_for: Not for Azure Cache for Redis (use azure-cache-redis).
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 71
+- **Updated Pages**: 0
+- **Unchanged**: 72
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-managed-redis/azure-managed-redis.csv`
 
@@ -66,11 +66,6 @@ confusable_not_for: Not for Azure Cache for Redis (use azure-cache-redis).
 | *(Unclassified)* | 8 | 11.1% |
 
 ## Changes
-
-### Updated Pages
-
-- [Enable Redis keyspace notifications](https://learn.microsoft.com/en-us/azure/redis/enable-redis-keyspace-notifications)
-  - Updated: 2026-04-15T22:11:00.000Z → 2026-06-17T05:11:00.000Z
 
 ## Classified Pages
 

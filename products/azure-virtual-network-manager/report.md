@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-31'
+generated_at: '2026-06-28'
 category_descriptions:
   configuration: 'Configuring AVNM: IPAM pools, network groups (static/dynamic via
     Policy), cross-tenant connections, event logs, and managing UDRs/topologies and
@@ -7,26 +7,26 @@ category_descriptions:
   troubleshooting: Diagnosing and fixing common Azure Virtual Network Manager issues,
     including deployment/configuration errors and verifying that AVNM-applied network
     configurations work as intended.
-  security: 'Configuring and enforcing AVNM security admin rules: creating/applying
-    via network groups, blocking/simulating inbound/outbound traffic, and protecting
-    high‑risk ports using portal and PowerShell.'
+  security: Configuring and enforcing AVNM security admin rules to block or allow
+    traffic, protect high‑risk ports, simulate effects, and secure hub‑and‑spoke networks
+    using network groups and tools like portal/PowerShell.
   limits-quotas: IPAM features, supported regions, and key Azure Virtual Network Manager
     limits (scale, resources, configurations) that affect design and deployment decisions.
   integrations: Using Azure Resource Graph to query, filter, and report on Azure Virtual
     Network Manager resources, configurations, and deployments at scale across subscriptions
 skill_description: Expert knowledge for Azure Virtual Network Manager development
   including troubleshooting, limits & quotas, security, configuration, and integrations
-  & coding patterns. Use when managing AVNM IPAM pools, network groups, security admin
-  rules, cross‑tenant connectivity, or Resource Graph queries, and other Azure Virtual
-  Network Manager related development tasks. Not for Azure Virtual Network (use azure-virtual-network),
-  Azure Virtual WAN (use azure-virtual-wan), Azure Network Watcher (use azure-network-watcher),
-  Azure Firewall Manager (use azure-firewall-manager).
-use_when: Use when managing AVNM IPAM pools, network groups, security admin rules,
-  cross‑tenant connectivity, or Resource Graph queries, and other Azure Virtual Network
-  Manager related development tasks.
+  & coding patterns. Use when managing IPAM pools, network groups, cross-tenant connectivity,
+  security admin rules, or ARG queries, and other Azure Virtual Network Manager related
+  development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure
+  Virtual WAN (use azure-virtual-wan), Azure Network Watcher (use azure-network-watcher),
+  Azure Networking (use azure-networking).
+use_when: Use when managing IPAM pools, network groups, cross-tenant connectivity,
+  security admin rules, or ARG queries, and other Azure Virtual Network Manager related
+  development tasks.
 confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), Azure
   Virtual WAN (use azure-virtual-wan), Azure Network Watcher (use azure-network-watcher),
-  Azure Firewall Manager (use azure-firewall-manager).
+  Azure Networking (use azure-networking).
 ---
 # Azure Virtual Network Manager Crawl Report
 
@@ -35,13 +35,13 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 - **Total Pages**: 54
 - **Fetched**: 54
 - **Fetch Failed**: 0
-- **Classified**: 22
-- **Unclassified**: 32
+- **Classified**: 23
+- **Unclassified**: 31
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 54
+- **Updated Pages**: 1
+- **Unchanged**: 53
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-network-manager/azure-virtual-network-manager.csv`
 
@@ -52,11 +52,16 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | configuration | 10 | 18.5% |
 | integrations | 1 | 1.9% |
 | limits-quotas | 1 | 1.9% |
-| security | 8 | 14.8% |
+| security | 9 | 16.7% |
 | troubleshooting | 2 | 3.7% |
-| *(Unclassified)* | 32 | 59.3% |
+| *(Unclassified)* | 31 | 57.4% |
 
 ## Changes
+
+### Updated Pages
+
+- [Create a secured hub and spoke](https://learn.microsoft.com/en-us/azure/virtual-network-manager/tutorial-create-secured-hub-and-spoke)
+  - Updated: 2025-07-11T08:00:00.000Z → 2026-06-22T08:00:00.000Z
 
 ## Classified Pages
 
@@ -77,6 +82,7 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Block network traffic -PowerShell](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-block-network-traffic-powershell) | security | 0.65 | PowerShell-based configuration of security rules blocking ports 80 and 443; includes AVNM-specific cmdlets and parameters for security admin rules. |
 | [Configure cross-tenant connections - CLI](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-configure-cross-tenant-cli) | configuration | 0.65 | CLI-based cross-tenant setup; will include specific CLI commands, flags, and parameter names/values unique to AVNM cross-tenant configuration. |
 | [Configure cross-tenant connections - Portal](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-configure-cross-tenant-portal) | configuration | 0.65 | How-to for cross-tenant connections; likely includes specific portal fields, parameter names, and required values for establishing connections, which are product-specific configuration details. |
+| [Create a secured hub and spoke](https://learn.microsoft.com/en-us/azure/virtual-network-manager/tutorial-create-secured-hub-and-spoke) | security | 0.65 | Tutorial shows product-specific security admin configuration in Azure Virtual Network Manager (e.g., blocking outbound traffic on specific ports 80 and 443, securing hub-and-spoke topology). Contains concrete, service-specific security configuration steps rather than just conceptual guidance. |
 | [Create user-defined routes (UDRs)](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-create-user-defined-route) | configuration | 0.65 | How-to for deploying UDRs including network group, routing configuration, and rule collection; likely includes specific configuration fields and allowed values. |
 | [Deploy IP address pools with Bicep](https://learn.microsoft.com/en-us/azure/virtual-network-manager/deploy-ip-address-management-pools-bicep) | configuration | 0.65 | Bicep-based deployment article will include resource types, property names, and allowed values for IPAM pools and static CIDRs. These are concrete configuration parameters unique to AVNM IPAM, matching the configuration sub-skill criteria. |
 | [Network groups as source and destination](https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-security-admin-rules-network-group) | security | 0.65 | Describes using network groups as source/destination in security admin rules; includes product-specific rule configuration semantics. |
@@ -94,7 +100,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-create-hub-and-spoke-powershell) | 0.45 | PowerShell how-to for hub-and-spoke; similar to other topology tutorials, focused on steps rather than exhaustive config or limits. |
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-create-mesh-network-powershell) | 0.45 | PowerShell mesh topology how-to; similar to other topology tutorials, primarily step-by-step commands. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-create-mesh-network) | 0.45 | How-to for mesh topology; describes enabling global mesh but summary doesn’t show detailed config tables or numeric thresholds. |
-| [Create a secured hub and spoke](https://learn.microsoft.com/en-us/azure/virtual-network-manager/tutorial-create-secured-hub-and-spoke) | 0.45 | Tutorial for secured hub-and-spoke; includes specific ports (80, 443) but mainly as example values in a scenario, not as a general best-practices catalog or config reference. |
 | [Deploy hub and spoke topology with Azure Firewall](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-deploy-hub-spoke-topology-with-azure-firewall) | 0.45 | Scenario tutorial integrating Azure Firewall with hub-and-spoke; integration-focused but framed as a walkthrough, not a parameter/limits reference. |
 | [Event Log Options for Azure Virtual Network Manager](https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-event-logs) | 0.45 | Conceptual overview of event log options; summary does not indicate detailed configuration parameters, role mappings, or error-code-based troubleshooting. |
 | [User-defined routes (UDRs) management overview](https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-user-defined-route) | 0.45 | Overview of UDR management and scenarios; conceptual explanation of behavior and benefits, not a detailed configuration or limits reference. |

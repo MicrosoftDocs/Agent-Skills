@@ -1,9 +1,9 @@
 ---
 name: azure-event-grid
-description: Expert knowledge for Azure Event Grid development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when configuring Event Grid topics/namespaces, MQTT broker/auth, webhooks, filters, dead-lettering, or routing targets, and other Azure Event Grid related development tasks. Not for Azure Service Bus (use azure-service-bus), Azure Event Hubs (use azure-event-hubs), Azure Notification Hubs (use azure-notification-hubs), Azure Logic Apps (use azure-logic-apps).
+description: Expert knowledge for Azure Event Grid development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when configuring topics/namespaces, MQTT broker routing, webhooks, filters/dead-lettering, or event schemas, and other Azure Event Grid related development tasks. Not for Azure Service Bus (use azure-service-bus), Azure Event Hubs (use azure-event-hubs), Azure Notification Hubs (use azure-notification-hubs), Azure Logic Apps (use azure-logic-apps).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-21"
+  generated_at: "2026-06-28"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Event Grid Skill
@@ -30,8 +30,8 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L58-L63 | Patterns for routing events across Event Grid namespace topics and implementing MQTT-based request/response command workflows using Event Grid. |
 | Limits & Quotas | L64-L75 | Event Grid delivery/retry behavior, custom headers, event retention, and region-specific quotas/limits for topics, namespaces, and Kubernetes-based Event Grid |
 | Security | L76-L127 | Authentication, authorization, and network security for Event Grid: keys/SAS, Entra ID/JWT, RBAC, managed identities, webhooks, MQTT auth, TLS, firewalls, private endpoints, and security policies. |
-| Configuration | L128-L202 | Configuring Event Grid: topics, namespaces, subscriptions, filters, dead-lettering, monitoring/metrics, MQTT broker and routing, and detailed event schemas for many Azure and Microsoft services. |
-| Integrations & Coding Patterns | L203-L243 | Patterns for publishing, routing, and consuming Event Grid events with HTTP/webhooks, MQTT, Azure/M365/SaaS sources, and handlers like Event Hubs, Monitor, Relay, and custom endpoints. |
+| Configuration | L128-L201 | Configuring Event Grid: topics, namespaces, subscriptions, filters, dead-lettering, monitoring/metrics, MQTT broker and routing, and detailed event schemas for many Azure and Microsoft services. |
+| Integrations & Coding Patterns | L202-L243 | Patterns and tutorials for integrating Event Grid with external services (Auth0, M365, Graph, Teams, SharePoint, Key Vault, MQTT) and configuring HTTP/webhook, Event Hubs, and schema-based handlers. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -170,7 +170,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure advanced event filtering in Event Grid on Kubernetes | https://learn.microsoft.com/en-us/azure/event-grid/kubernetes/filter-events |
 | Install and configure Event Grid extension on Arc-enabled Kubernetes | https://learn.microsoft.com/en-us/azure/event-grid/kubernetes/install-k8s-extension |
 | Configure Event Grid dead-lettering and retry policies | https://learn.microsoft.com/en-us/azure/event-grid/manage-event-delivery |
-| Microsoft Entra events schema via Microsoft Graph in Event Grid | https://learn.microsoft.com/en-us/azure/event-grid/microsoft-entra-events |
 | View Event Grid metrics and configure alerts in Azure portal | https://learn.microsoft.com/en-us/azure/event-grid/monitor-event-delivery |
 | Use MQTT broker metrics and logs for monitoring | https://learn.microsoft.com/en-us/azure/event-grid/monitor-mqtt-delivery-reference |
 | Monitor data reference for Event Grid namespace push delivery | https://learn.microsoft.com/en-us/azure/event-grid/monitor-namespace-push-reference |
@@ -220,6 +219,7 @@ This skill requires **network access** to fetch documentation content:
 | Consume Azure Key Vault events from Event Grid | https://learn.microsoft.com/en-us/azure/event-grid/event-schema-key-vault |
 | Alert on Health Resources events using Azure Monitor | https://learn.microsoft.com/en-us/azure/event-grid/handle-health-resources-events-using-azure-monitor-alerts |
 | Handle Key Vault expiration events with Azure Monitor alerts | https://learn.microsoft.com/en-us/azure/event-grid/handle-key-vault-events-using-azure-monitor-alerts |
+| Use Microsoft Entra event schemas in Event Grid | https://learn.microsoft.com/en-us/azure/event-grid/microsoft-entra-events |
 | Route MQTT events to Microsoft Fabric via Event Hubs | https://learn.microsoft.com/en-us/azure/event-grid/mqtt-events-fabric |
 | Publish MQTT messages via HTTP using Event Grid | https://learn.microsoft.com/en-us/azure/event-grid/mqtt-how-to-http-publish |
 | Publish MQTT messages via HTTP using Event Grid | https://learn.microsoft.com/en-us/azure/event-grid/mqtt-http-publish |

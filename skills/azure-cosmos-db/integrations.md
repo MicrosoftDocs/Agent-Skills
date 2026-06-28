@@ -110,6 +110,8 @@
 | Implement Cosmos DB vector search with Node.js | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-vector-store-nodejs |
 | Implement Cosmos DB vector search with Python | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-vector-store-python |
 | Read Azure Cosmos DB change feed with push and pull models | https://learn.microsoft.com/en-us/azure/cosmos-db/read-change-feed |
+| Use Azure CLI to manage Cosmos DB for NoSQL | https://learn.microsoft.com/en-us/azure/cosmos-db/samples-cli |
+| Use Azure PowerShell with Cosmos DB for NoSQL | https://learn.microsoft.com/en-us/azure/cosmos-db/samples-powershell |
 | Scale Cosmos DB throughput on a schedule with Functions | https://learn.microsoft.com/en-us/azure/cosmos-db/scale-on-schedule |
 | Bulk Executor .NET SDK reference for Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/sdk-dotnet-bulk-executor-v2 |
 | .NET Change Feed Processor SDK reference for Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/sdk-dotnet-change-feed-v2 |

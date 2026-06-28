@@ -1,14 +1,14 @@
 ---
 name: azure-blueprints
-description: Expert knowledge for Azure Blueprints development including troubleshooting, architecture & design patterns, security, configuration, and integrations & coding patterns. Use when defining Azure Blueprints, mapping built-in compliance sets, automating via CLI/PowerShell/REST, or fixing assignment errors, and other Azure Blueprints related development tasks. Not for Azure Policy (use azure-policy), Azure Resource Manager (use azure-resource-manager), Azure Managed Applications (use azure-managed-applications), Azure Deployment Environments (use azure-deployment-environments).
+description: Expert knowledge for Azure Blueprints development including troubleshooting, decision making, security, configuration, integrations & coding patterns, and deployment. Use when migrating off Azure Blueprints, mapping to PBMM/ISO/SWIFT, using CAF Foundation, or automating via CLI/PowerShell/REST, and other Azure Blueprints related development tasks. Not for Azure Policy (use azure-policy), Azure Resource Manager (use azure-resource-manager), Azure Portal (use azure-portal), Azure Role-based access control (use azure-rbac).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-06-28"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Blueprints Skill
 
-This skill provides expert guidance for Azure Blueprints. Covers troubleshooting, architecture & design patterns, security, configuration, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Blueprints. Covers troubleshooting, decision making, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -24,36 +24,33 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L37 | Diagnosing and fixing common Azure Blueprint creation/assignment errors, including policy, role, and resource lock issues, and interpreting error messages during deployment. |
-| Architecture & Design Patterns | L38-L46 | Blueprint reference architectures for Azure landing zones and workloads, showing how security, governance, and ISO 27001 controls are implemented and structured in Azure. |
-| Security | L47-L63 | Security-focused Azure Blueprint deployment, locks, operator setup, and using/mapping built‑in compliance blueprints (PBMM, ISM PROTECTED, ISO 27001, SWIFT, UK OFFICIAL/NHS) to Policy and RBAC |
-| Configuration | L64-L77 | Designing and configuring Azure Blueprint definitions: parameters, deployment order, built-in functions, and setup of security/compliance blueprint samples (CAF, ASB, ISO 27001, SWIFT, ISM). |
-| Integrations & Coding Patterns | L78-L85 | Automating Azure Blueprints as code using CLI, PowerShell, and REST: create, import/export, and manage blueprint definitions and assignments programmatically. |
+| Troubleshooting | L34-L38 | Diagnosing and fixing common Azure Blueprints deployment and assignment errors, including policy, role assignment, and resource lock issues, with step-by-step troubleshooting guidance. |
+| Decision Making | L39-L44 | Guidance on Azure Blueprints retirement timelines, planning and executing migrations, and answers to common questions about moving off Blueprints. |
+| Security | L45-L60 | Security-focused deployment stages, resource locks, operator roles, and using/mapping Azure Blueprints for compliance frameworks like PBMM, ISM PROTECTED, ISO 27001, SWIFT CSP, and UK OFFICIAL/NHS. |
+| Configuration | L61-L72 | Configuring and deploying Azure Blueprints (including security/ISO/CAF/SWIFT samples), using blueprint functions, and importing/exporting blueprints via PowerShell. |
+| Integrations & Coding Patterns | L73-L79 | Automating Azure Blueprints as code using CLI, PowerShell, and REST: create, import/export, and manage blueprint definitions and assignments programmatically. |
+| Deployment | L80-L85 | Managing blueprint deployment order, migrating blueprints to template specs, and deploying the CAF Foundation blueprint with configurable parameters. |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
-| Troubleshoot common Azure Blueprint creation and assignment errors | https://learn.microsoft.com/en-us/azure/governance/blueprints/troubleshoot/general |
+| Troubleshoot common Azure Blueprints errors | https://learn.microsoft.com/en-us/azure/governance/blueprints/troubleshoot/general |
 
-### Architecture & Design Patterns
+### Decision Making
 | Topic | URL |
 |-------|-----|
-| Architecture of Azure Security Benchmark blueprint foundation | https://learn.microsoft.com/en-us/azure/governance/blueprints/samples/azure-security-benchmark-foundation/ |
-| CAF foundation blueprint architecture for Azure landing zones | https://learn.microsoft.com/en-us/azure/governance/blueprints/samples/caf-foundation/ |
-| CAF migration landing zone blueprint architecture | https://learn.microsoft.com/en-us/azure/governance/blueprints/samples/caf-migrate-landing-zone/ |
-| Architecture of ISO 27001 ASE/SQL workload blueprint | https://learn.microsoft.com/en-us/azure/governance/blueprints/samples/iso27001-ase-sql-workload/ |
-| Architecture of ISO 27001 shared services blueprint | https://learn.microsoft.com/en-us/azure/governance/blueprints/samples/iso27001-shared/ |
+| Plan migration off Azure Blueprints with timelines | https://learn.microsoft.com/en-us/azure/governance/blueprints/blueprint-retirement |
+| Answer migration questions for Blueprints retirement | https://learn.microsoft.com/en-us/azure/governance/blueprints/blueprint-retirement-faq |
 
 ### Security
 | Topic | URL |
 |-------|-----|
 | Understand security-related stages of Azure Blueprint deployment | https://learn.microsoft.com/en-us/azure/governance/blueprints/concepts/deployment-stages |
 | Configure resource locking behavior in Azure Blueprints | https://learn.microsoft.com/en-us/azure/governance/blueprints/concepts/resource-locking |
-| Configure environment for Azure Blueprint Operator role | https://learn.microsoft.com/en-us/azure/governance/blueprints/how-to/configure-for-blueprint-operator |
+| Configure Azure Blueprint Operator role environment | https://learn.microsoft.com/en-us/azure/governance/blueprints/how-to/configure-for-blueprint-operator |
 | Use Canada Federal PBMM blueprint for governance controls | https://learn.microsoft.com/en-us/azure/governance/blueprints/samples/canada-federal-pbmm |
 | Use ISM PROTECTED blueprint for Australian compliance | https://learn.microsoft.com/en-us/azure/governance/blueprints/samples/ism-protected/ |
 | Map ISM PROTECTED controls to Azure Policy | https://learn.microsoft.com/en-us/azure/governance/blueprints/samples/ism-protected/control-mapping |
-| Apply ISO 27001 blueprint for Azure governance | https://learn.microsoft.com/en-us/azure/governance/blueprints/samples/iso-27001-2013 |
 | Map ISO 27001 ASE/SQL controls to Policy and RBAC | https://learn.microsoft.com/en-us/azure/governance/blueprints/samples/iso27001-ase-sql-workload/control-mapping |
 | Map ISO 27001 shared services controls to Azure Policy | https://learn.microsoft.com/en-us/azure/governance/blueprints/samples/iso27001-shared/control-mapping |
 | Use SWIFT CSP-CSCF 2020 blueprint for Azure compliance | https://learn.microsoft.com/en-us/azure/governance/blueprints/samples/swift-2020/ |
@@ -64,11 +61,9 @@ This skill requires **network access** to fetch documentation content:
 ### Configuration
 | Topic | URL |
 |-------|-----|
-| Use static and dynamic parameters in Azure Blueprints | https://learn.microsoft.com/en-us/azure/governance/blueprints/concepts/parameters |
-| Control Azure Blueprint artifact deployment sequence | https://learn.microsoft.com/en-us/azure/governance/blueprints/concepts/sequencing-order |
+| Import and export Azure Blueprints with PowerShell | https://learn.microsoft.com/en-us/azure/governance/blueprints/how-to/import-export-ps |
 | Use Azure Blueprint functions in definitions and artifacts | https://learn.microsoft.com/en-us/azure/governance/blueprints/reference/blueprint-functions |
 | Configure and deploy Azure Security Benchmark blueprint sample | https://learn.microsoft.com/en-us/azure/governance/blueprints/samples/azure-security-benchmark-foundation/deploy |
-| Configure and deploy CAF foundation blueprint sample | https://learn.microsoft.com/en-us/azure/governance/blueprints/samples/caf-foundation/deploy |
 | Configure and deploy CAF migration landing zone blueprint | https://learn.microsoft.com/en-us/azure/governance/blueprints/samples/caf-migrate-landing-zone/deploy |
 | Configure and deploy ISM PROTECTED blueprint sample | https://learn.microsoft.com/en-us/azure/governance/blueprints/samples/ism-protected/deploy |
 | Configure and deploy ISO 27001 ASE/SQL workload blueprint | https://learn.microsoft.com/en-us/azure/governance/blueprints/samples/iso27001-ase-sql-workload/deploy |
@@ -79,7 +74,12 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Create Azure Blueprints using Azure CLI commands | https://learn.microsoft.com/en-us/azure/governance/blueprints/create-blueprint-azurecli |
-| Create and manage Azure Blueprints with PowerShell | https://learn.microsoft.com/en-us/azure/governance/blueprints/create-blueprint-powershell |
 | Create Azure Blueprints via REST API requests | https://learn.microsoft.com/en-us/azure/governance/blueprints/create-blueprint-rest-api |
-| Import and export Azure Blueprints as code with PowerShell | https://learn.microsoft.com/en-us/azure/governance/blueprints/how-to/import-export-ps |
 | Manage Azure Blueprint assignments with Az.Blueprint PowerShell | https://learn.microsoft.com/en-us/azure/governance/blueprints/how-to/manage-assignments-ps |
+
+### Deployment
+| Topic | URL |
+|-------|-----|
+| Control Azure Blueprint artifact deployment order | https://learn.microsoft.com/en-us/azure/governance/blueprints/concepts/sequencing-order |
+| Migrate Azure Blueprints to template specs | https://learn.microsoft.com/en-us/azure/governance/blueprints/migrate-to-template-specs |
+| Deploy CAF Foundation blueprint with parameters | https://learn.microsoft.com/en-us/azure/governance/blueprints/samples/caf-foundation/deploy |

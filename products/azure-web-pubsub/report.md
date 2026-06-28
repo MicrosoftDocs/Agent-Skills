@@ -51,8 +51,8 @@ confusable_not_for: Not for Azure SignalR Service (use azure-signalr-service), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 107
+- **Updated Pages**: 0
+- **Unchanged**: 111
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-web-pubsub/azure-web-pubsub.csv`
 
@@ -72,17 +72,6 @@ confusable_not_for: Not for Azure SignalR Service (use azure-signalr-service), A
 | *(Unclassified)* | 31 | 27.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [JSON WebSocket subprotocol](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/reference-json-webpubsub-subprotocol)
-  - Updated: 2024-11-27T12:14:00.000Z → 2026-06-17T05:11:00.000Z
-- [Protobuf WebSocket subprotocol](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/reference-protobuf-webpubsub-subprotocol)
-  - Updated: 2026-03-25T22:12:00.000Z → 2026-06-17T05:11:00.000Z
-- [Reliable JSON WebSocket subprotocol](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/reference-json-reliable-webpubsub-subprotocol)
-  - Updated: 2026-03-25T22:12:00.000Z → 2026-06-17T05:11:00.000Z
-- [Reliable Protobuf WebSocket subprotocol](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/reference-protobuf-reliable-webpubsub-subprotocol)
-  - Updated: 2026-03-25T22:12:00.000Z → 2026-06-17T05:11:00.000Z
 
 ## Classified Pages
 

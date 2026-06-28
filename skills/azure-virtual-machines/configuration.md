@@ -15,7 +15,6 @@
 | Enable debuginfo repositories on Azure Linux | https://learn.microsoft.com/en-us/azure/azure-linux/install-debug-symbol-packages |
 | Inspect and configure Azure Linux kernel parameters | https://learn.microsoft.com/en-us/azure/azure-linux/kernel-management |
 | View logs and monitor system health on Azure Linux | https://learn.microsoft.com/en-us/azure/azure-linux/logging-monitoring |
-| Manage Azure Linux packages using DNF5 | https://learn.microsoft.com/en-us/azure/azure-linux/manage-packages |
 | Discover and use Azure Linux package repositories | https://learn.microsoft.com/en-us/azure/azure-linux/package-repositories |
 | Configure and deploy AKS pod sandboxing on Azure Linux | https://learn.microsoft.com/en-us/azure/azure-linux/pod-sandboxing-aks |
 | Manage storage and filesystems on Azure Linux VMs | https://learn.microsoft.com/en-us/azure/azure-linux/storage-file-system-management |
@@ -76,7 +75,6 @@
 | Attach persistent data disks to Linux VMs using CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/add-disk |
 | Attach new or existing data disks to Linux VMs in portal | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/attach-disk-portal |
 | Install AMD GPU drivers on Azure N-series Linux VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/azure-n-series-amd-gpu-driver-linux-installation-guide |
-| Find Marketplace image URNs and plans using Azure CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/cli-ps-findimage |
 | Create and upload CentOS-based VHDs to Azure | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/create-upload-centos |
 | Prepare generic Linux systems for Azure imaging | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/create-upload-generic |
 | Create and upload OpenBSD images for Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/create-upload-openbsd |
@@ -103,7 +101,7 @@
 | Export Compute Gallery image versions to managed disks | https://learn.microsoft.com/en-us/azure/virtual-machines/managed-disk-from-image-version |
 | Configure Marketplace purchase plans for gallery images | https://learn.microsoft.com/en-us/azure/virtual-machines/marketplace-images |
 | Reference monitoring data for Azure Virtual Machines | https://learn.microsoft.com/en-us/azure/virtual-machines/monitor-vm-reference |
-| Convert Azure VM disks from SCSI to NVMe on Linux | https://learn.microsoft.com/en-us/azure/virtual-machines/nvme-linux |
+| Convert Azure Linux VM disks from SCSI to NVMe | https://learn.microsoft.com/en-us/azure/virtual-machines/nvme-linux |
 | Configure and enable NVMe on Azure virtual machines | https://learn.microsoft.com/en-us/azure/virtual-machines/nvme-overview |
 | Configure InfiniBand networking on Azure HPC VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/setup-infiniband |
 | Configure MPI for RDMA-enabled Azure HPC VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/setup-mpi |

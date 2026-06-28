@@ -3,7 +3,7 @@ name: azure-virtual-wan
 description: Expert knowledge for Azure Virtual WAN development including troubleshooting, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing Virtual WAN hubs, P2S VPN, hub routing/BGP, NVAs/SD‑WAN, or ExpressRoute/Private Link integration, and other Azure Virtual WAN related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure VPN Gateway (use azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute), Azure Traffic Manager (use azure-traffic-manager).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-21"
+  generated_at: "2026-06-28"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Virtual WAN Skill

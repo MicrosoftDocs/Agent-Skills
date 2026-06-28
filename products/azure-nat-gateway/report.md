@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-07'
+generated_at: '2026-06-28'
 category_descriptions:
   limits-quotas: 'NAT Gateway limits, quotas, and behaviors: SNAT port allocation,
     connection scaling, IP/VM limits, per-subscription caps, and FAQs on throughput
@@ -47,8 +47,8 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 25
+- **Updated Pages**: 1
+- **Unchanged**: 24
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-nat-gateway/azure-nat-gateway.csv`
 
@@ -67,6 +67,11 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | *(Unclassified)* | 9 | 36.0% |
 
 ## Changes
+
+### Updated Pages
+
+- [NAT gateway resource](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-resource)
+  - Updated: 2026-04-30T22:22:00.000Z → 2026-06-23T05:11:00.000Z
 
 ## Classified Pages
 
@@ -95,10 +100,10 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 |-----------|------------|--------|
 | [Integrate a NAT gateway internal load balancer](https://learn.microsoft.com/en-us/azure/nat-gateway/tutorial-nat-gateway-load-balancer-internal-portal) | 0.30 | Tutorial for integrating NAT gateway with an internal load balancer; summary indicates procedural guidance, not expert-level configuration matrices, limits, or troubleshooting. |
 | [Integrate a NAT gateway public load balancer](https://learn.microsoft.com/en-us/azure/nat-gateway/tutorial-nat-gateway-load-balancer-public-portal) | 0.30 | Tutorial for integrating NAT gateway with a public load balancer; focuses on how-to steps rather than detailed configuration option tables, limits, or error-resolution content. |
-| [NAT gateway resource](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-resource) | 0.30 | Describes key components of a NAT gateway resource at a conceptual level; no explicit numeric limits, configuration parameter tables, or error mappings indicated in the summary. |
 | [Use a NAT gateway with a hub-and-spoke network](https://learn.microsoft.com/en-us/azure/nat-gateway/tutorial-hub-spoke-route-nat) | 0.30 | Tutorial on using NAT gateway in a hub-and-spoke network; primarily architectural walkthrough and steps, without explicit numeric thresholds, configuration tables, or troubleshooting mappings. |
 | [Create and validate a Standard NAT gateway](https://learn.microsoft.com/en-us/azure/nat-gateway/quickstart-create-nat-gateway) | 0.20 | Quickstart showing how to create a Standard NAT gateway via portal/CLI/PowerShell; primarily step-by-step instructions without detailed configuration parameter tables or product-specific limits. |
 | [Create and validate a Standard V2 NAT gateway](https://learn.microsoft.com/en-us/azure/nat-gateway/quickstart-create-nat-gateway-v2) | 0.20 | Quickstart for creating a StandardV2 NAT gateway; focuses on creation steps rather than detailed limits, configuration matrices, or troubleshooting content. |
 | [Manage a Standard V2 NAT gateway](https://learn.microsoft.com/en-us/azure/nat-gateway/manage-nat-gateway-v2) | 0.20 | Page is a how-to guide for creating/removing and associating a NAT Gateway v2 with subnets and IPs. From the description it appears procedural without detailed configuration parameter tables, limits, quotas, or product-specific troubleshooting/error-code mappings. It reads as standard tutorial content rather than expert reference material. |
+| [NAT gateway resource](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-resource) | 0.20 | The description indicates a conceptual explanation of NAT gateway components and configuration via various clients, but does not clearly indicate the presence of numeric limits, configuration parameter tables, error codes, or other detailed expert-only data. It appears to be a general resource overview rather than a limits, configuration, troubleshooting, or decision-making reference. |
 | [What is Azure NAT Gateway?](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-overview) | 0.20 | High-level overview of Azure NAT Gateway features and behavior without detailed numeric limits, configuration tables, or error mappings. Primarily conceptual and architectural description. |
 | [Support and troubleshooting](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-support-help) | - | Support/help options page that points to where to get assistance. Contains no technical configuration details, limits, error codes, or decision matrices. |

@@ -37,8 +37,8 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 23
-- **Unchanged**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 23
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/microsoft-foundry-local/microsoft-foundry-local.csv`
 
@@ -53,50 +53,6 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 | *(Unclassified)* | 8 | 34.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [What is Foundry Local?](https://learn.microsoft.com/en-us/azure/foundry-local/what-is-foundry-local)
-  - Updated: 2026-06-02T20:14:00.000Z → 2026-06-18T17:20:00.000Z
-- [Get Started](https://learn.microsoft.com/en-us/azure/foundry-local/get-started)
-  - Updated: 2026-04-09T17:17:00.000Z → 2026-06-15T08:00:00.000Z
-- [Build a multi-turn chat assistant](https://learn.microsoft.com/en-us/azure/foundry-local/tutorials/tutorial-build-chat-assistant)
-  - Updated: 2026-04-09T17:17:00.000Z → 2026-06-15T08:00:00.000Z
-- [Build an AI assistant with tool calling](https://learn.microsoft.com/en-us/azure/foundry-local/tutorials/tutorial-build-tool-calling-assistant)
-  - Updated: 2026-04-09T17:17:00.000Z → 2026-06-15T08:00:00.000Z
-- [Build a voice-to-text note taker](https://learn.microsoft.com/en-us/azure/foundry-local/tutorials/tutorial-build-voice-to-text-note-taker)
-  - Updated: 2026-04-09T17:17:00.000Z → 2026-06-15T08:00:00.000Z
-- [Build a document summarizer](https://learn.microsoft.com/en-us/azure/foundry-local/tutorials/tutorial-build-document-summarizer)
-  - Updated: 2026-04-09T17:17:00.000Z → 2026-06-15T08:00:00.000Z
-- [Build a RAG application](https://learn.microsoft.com/en-us/azure/foundry-local/tutorials/tutorial-build-rag-app)
-  - Updated: 2026-05-07T22:14:00.000Z → 2026-06-15T08:00:00.000Z
-- [Foundry Local Architecture](https://learn.microsoft.com/en-us/azure/foundry-local/concepts/foundry-local-architecture)
-  - Updated: 2026-04-09T17:17:00.000Z → 2026-06-15T08:00:00.000Z
-- [Use native chat completions API](https://learn.microsoft.com/en-us/azure/foundry-local/how-to/how-to-use-native-chat-completions)
-  - Updated: 2026-04-09T17:17:00.000Z → 2026-06-15T08:00:00.000Z
-- [Generate text embeddings](https://learn.microsoft.com/en-us/azure/foundry-local/how-to/how-to-generate-embeddings)
-  - Updated: 2026-05-07T22:14:00.000Z → 2026-06-15T08:00:00.000Z
-- [Use chat completions via REST server](https://learn.microsoft.com/en-us/azure/foundry-local/how-to/how-to-integrate-with-inference-sdks)
-  - Updated: 2026-04-09T17:17:00.000Z → 2026-06-15T08:00:00.000Z
-- [Transcribe audio (speech-to-text)](https://learn.microsoft.com/en-us/azure/foundry-local/how-to/how-to-transcribe-audio)
-  - Updated: 2026-04-09T17:17:00.000Z → 2026-06-15T08:00:00.000Z
-- [Live transcribe audio (speech-to-text) from a microphone](https://learn.microsoft.com/en-us/azure/foundry-local/how-to/how-to-live-transcribe-audio)
-  - Updated: 2026-05-07T22:14:00.000Z → 2026-06-15T08:00:00.000Z
-- [Integrate with LangChain](https://learn.microsoft.com/en-us/azure/foundry-local/how-to/how-to-use-langchain-with-foundry-local)
-  - Updated: 2026-04-09T17:17:00.000Z → 2026-06-15T08:00:00.000Z
-- [Compile Hugging Face models to run on Foundry Local](https://learn.microsoft.com/en-us/azure/foundry-local/how-to/how-to-compile-hugging-face-models)
-  - Updated: 2026-05-04T22:19:00.000Z → 2026-06-15T08:00:00.000Z
-- [Use tool calling](https://learn.microsoft.com/en-us/azure/foundry-local/how-to/how-to-use-tool-calling-with-foundry-local)
-  - Updated: 2026-04-09T17:17:00.000Z → 2026-06-15T08:00:00.000Z
-- [Use the Foundry Local CLI (preview)](https://learn.microsoft.com/en-us/azure/foundry-local/how-to/how-to-use-foundry-local-cli)
-  - Updated: 2026-04-09T17:17:00.000Z → 2026-06-15T08:00:00.000Z
-- [SDK guide](https://learn.microsoft.com/en-us/azure/foundry-local/reference/reference-sdk-current)
-  - Updated: 2026-04-09T17:17:00.000Z → 2026-06-15T08:00:00.000Z
-- [Legacy SDK](https://learn.microsoft.com/en-us/azure/foundry-local/reference/reference-sdk-legacy)
-  - Updated: 2026-04-09T17:17:00.000Z → 2026-06-15T08:00:00.000Z
-- [Guidance for migrating from the legacy SDK](https://learn.microsoft.com/en-us/azure/foundry-local/reference/reference-sdk-migration)
-  - Updated: 2026-04-09T17:17:00.000Z → 2026-06-15T08:00:00.000Z
-- *...and 3 more*
 
 ## Classified Pages
 

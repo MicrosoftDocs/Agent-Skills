@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-06-21'
+generated_at: '2026-06-28'
 category_descriptions:
   architecture-patterns: 'Architectural guidance for Azure DevOps/Server: pool architecture,
     reliability/DR, SQL/database dependencies, and design patterns for simple to complex
     multi-server topologies and analytics modeling.'
   configuration: 'Configuring Azure DevOps/Server: managed DevOps pools, networking,
-    storage, notifications, work items/Boards, Analytics/OData, dashboards, search,
-    backups, SQL, services, and server administration.'
+    scaling, notifications, work items/Boards, Analytics/OData/Power BI, dashboards,
+    search, backups, SQL, services, and server admin.'
   security: 'Managing Azure DevOps security: identities, auth, org/project permissions,
     groups/roles, access levels, auditing, repo/pipeline/test/work item rights, and
     server/service account security.'
@@ -31,12 +31,13 @@ category_descriptions:
 skill_description: Expert knowledge for Azure DevOps development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  managing org/projects, Boards/work items, repos/pipelines, Analytics/OData/Power
-  BI, or Azure DevOps Server, and other Azure DevOps related development tasks. Not
-  for Azure Boards (use azure-boards), Azure Pipelines (use azure-pipelines), Azure
-  Repos (use azure-repos), Azure Test Plans (use azure-test-plans).
-use_when: Use when managing org/projects, Boards/work items, repos/pipelines, Analytics/OData/Power
-  BI, or Azure DevOps Server, and other Azure DevOps related development tasks.
+  managing DevOps pools, Boards/work items, Pipelines analytics, Power BI/OData, or
+  Azure DevOps Server, and other Azure DevOps related development tasks. Not for Azure
+  Boards (use azure-boards), Azure Pipelines (use azure-pipelines), Azure Repos (use
+  azure-repos), Azure Test Plans (use azure-test-plans).
+use_when: Use when managing DevOps pools, Boards/work items, Pipelines analytics,
+  Power BI/OData, or Azure DevOps Server, and other Azure DevOps related development
+  tasks.
 confusable_not_for: Not for Azure Boards (use azure-boards), Azure Pipelines (use
   azure-pipelines), Azure Repos (use azure-repos), Azure Test Plans (use azure-test-plans).
 ---
@@ -51,10 +52,10 @@ confusable_not_for: Not for Azure Boards (use azure-boards), Azure Pipelines (us
 - **Unclassified**: 718
 
 ### Incremental Update
-- **New Pages**: 6
-- **Updated Pages**: 11
-- **Unchanged**: 955
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 971
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-devops/azure-devops.csv`
 
 ## Classification Statistics
@@ -74,43 +75,10 @@ confusable_not_for: Not for Azure Boards (use azure-boards), Azure Pipelines (us
 
 ## Changes
 
-### New Pages
-
-- [June 17](https://learn.microsoft.com/en-us/azure/devops/release-notes/2026/boards/sprint-275-update)
-- [June 17](https://learn.microsoft.com/en-us/azure/devops/release-notes/2026/sprint-275-update)
-- [June 17](https://learn.microsoft.com/en-us/azure/devops/release-notes/2026/pipelines/sprint-275-update)
-- [June 17](https://learn.microsoft.com/en-us/azure/devops/release-notes/2026/repos/sprint-275-update)
-- [June 17](https://learn.microsoft.com/en-us/azure/devops/release-notes/2026/ghazdo/sprint-275-update)
-- [May 2026](https://learn.microsoft.com/en-us/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new)
-
 ### Updated Pages
 
-- [Manage users and permissions](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/faq-user-and-permissions-management?view=azure-devops)
-  - Updated: 2026-04-24T22:42:00.000Z → 2026-06-15T15:03:00.000Z
-- [Get started as a Stakeholder](https://learn.microsoft.com/en-us/azure/devops/organizations/security/get-started-stakeholder?view=azure-devops)
-  - Updated: 2026-04-24T22:42:00.000Z → 2026-05-08T17:05:00.000Z
-- [Azure Boards >>](https://learn.microsoft.com/en-us/azure/devops/boards/?view=azure-devops)
-  - Updated: 2026-02-20T22:03:00Z → 2026-06-16T21:05:00Z
-- [Manage requirements](https://learn.microsoft.com/en-us/azure/devops/cross-service/manage-requirements?view=azure-devops)
-  - Updated: 2026-03-04T02:02:00.000Z → 2026-05-08T17:05:00.000Z
-- [Configure networking](https://learn.microsoft.com/en-us/azure/devops/managed-devops-pools/configure-networking?view=azure-devops)
-  - Updated: 2025-11-19T18:02:00.000Z → 2026-06-11T08:00:00.000Z
-- [Process templates](https://learn.microsoft.com/en-us/azure/devops/reference/process-templates/?view=azure-devops)
-  - Updated: 2026-02-18T02:04:00.000Z → 2026-05-07T21:03:00.000Z
-- [Released features](https://learn.microsoft.com/en-us/azure/devops/release-notes/features-timeline-released)
-  - Updated: 2026-05-21T08:00:00.000Z → 2026-06-10T08:00:00.000Z
-- [What's new](https://learn.microsoft.com/en-us/azure/devops/release-notes/docswhatsnew/)
-  - Updated: 2026-05-18T17:09:00Z → 2026-06-16T17:04:00Z
-- [April 2026](https://learn.microsoft.com/en-us/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new)
-  - Updated: 2026-05-18T17:09:00.000Z → 2026-06-16T17:04:00.000Z
-- [March 2026](https://learn.microsoft.com/en-us/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new)
-  - Updated: 2026-05-18T17:09:00.000Z → 2026-06-16T17:04:00.000Z
-- [RTW Release Notes](https://learn.microsoft.com/en-us/azure/devops/server/release-notes/azuredevopsserver?view=azure-devops)
-  - Updated: 2026-06-11T08:00:00.000Z → 2026-06-12T08:00:00.000Z
-
-### Deleted Pages
-
-- ~~February 2026~~ (https://learn.microsoft.com/en-us/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new)
+- [Remote MCP Server](https://learn.microsoft.com/en-us/azure/devops/mcp-server/remote-mcp-server?view=azure-devops)
+  - Updated: 2026-06-05T17:07:00.000Z → 2026-06-24T01:04:00.000Z
 
 ## Classified Pages
 
@@ -214,7 +182,6 @@ confusable_not_for: Not for Azure Boards (use azure-boards), Azure Pipelines (us
 | [Service account requirements](https://learn.microsoft.com/en-us/azure/devops/server/account-requirements?view=azure-devops-server) | security | 0.75 | Defines required service accounts, their roles, and permissions for installation and reporting; includes product-specific identity requirements. |
 | [Set up SQL Server](https://learn.microsoft.com/en-us/azure/devops/server/install/sql-server/install-sql-server?view=azure-devops-server) | configuration | 0.75 | Lists required SQL Server versions, features, and configuration options for Azure DevOps Server; includes product-specific requirements and settings. |
 | [Cumulative Flow Diagram](https://learn.microsoft.com/en-us/azure/devops/report/powerbi/sample-boards-cfd?view=azure-devops) | integrations | 0.74 | Provides concrete Analytics OData queries and field/entity usage specific to Azure DevOps Boards CFD reporting, which are product-specific integration patterns rather than generic BI concepts. |
-| [Remote MCP Server](https://learn.microsoft.com/en-us/azure/devops/mcp-server/remote-mcp-server?view=azure-devops) | configuration | 0.72 | Page is a how-to for setting up the remote MCP Server with specific endpoint URLs, transport details (streamable HTTP), and configuration steps unique to this preview service. These are product-specific configuration details not inferable from general knowledge. |
 | [1-Prepare new hardware](https://learn.microsoft.com/en-us/azure/devops/server/admin/backup/tut-single-svr-prep-new-hw?view=azure-devops-server) | deployment | 0.70 | Details prerequisites, database and SharePoint farm restore, and partial TFS install; these are concrete deployment preparation steps. |
 | [2-Restore databases](https://learn.microsoft.com/en-us/azure/devops/server/admin/backup/tut-single-svr-restore-dbs?view=azure-devops-server) | deployment | 0.70 | Covers restoring all required databases with correct ordering and scope; product-specific restore/deployment instructions. |
 | [3-Install and configure](https://learn.microsoft.com/en-us/azure/devops/server/admin/backup/tut-single-svr-install-config-tfs?view=azure-devops-server) | deployment | 0.70 | Shows how to install TFS via Application-Tier Only wizard and configure SharePoint, reporting, and analysis services; deployment configuration details. |
@@ -280,6 +247,7 @@ confusable_not_for: Not for Azure Boards (use azure-boards), Azure Pipelines (us
 | [Provide help text, hyperlinks, or web content](https://learn.microsoft.com/en-us/azure/devops/reference/xml/provide-help-text-hyperlinks-web-content-form?view=azure-devops-server) | configuration | 0.70 | Page is about specific form controls for Azure DevOps work item forms (tooltip, text, hyperlink, HTML/web content). This usually includes control/element names, attributes, and usage constraints that are product-specific configuration details. |
 | [Public projects retirement](https://learn.microsoft.com/en-us/azure/devops/organizations/projects/public-projects-retirement?view=azure-devops) | decision-making | 0.70 | Provides service-specific retirement timelines and what changes for organizations, guiding decisions on when and how to transition away from public projects. This is concrete, time-bound guidance unique to the product lifecycle. |
 | [Query tools](https://learn.microsoft.com/en-us/azure/devops/report/analytics/analytics-query-tools?view=azure-devops) | decision-making | 0.70 | The page provides a task-based comparison of different tools (web browser, Power BI, etc.) for querying Azure DevOps Analytics, with guidance on which tool to use for which reporting scenario. This is product-specific decision guidance rather than a generic overview, fitting the decision-making category. |
+| [Remote MCP Server](https://learn.microsoft.com/en-us/azure/devops/mcp-server/remote-mcp-server?view=azure-devops) | configuration | 0.70 | Page describes how to configure the remote Azure DevOps MCP Server, including product-specific endpoint setup and connection parameters for streamable HTTP transport. This is concrete configuration guidance rather than conceptual content. |
 | [Request change in permissions](https://learn.microsoft.com/en-us/azure/devops/organizations/security/request-changes-permissions?view=azure-devops) | security | 0.70 | Page is a concrete, product-specific guide for resolving insufficient-permission messages by mapping specific tasks and error conditions to required Azure DevOps roles/permissions and the process to request elevation. This is detailed security/permission configuration behavior rather than generic concepts. |
 | [Requirements](https://learn.microsoft.com/en-us/azure/devops/server/requirements?view=azure-devops-server) | deployment | 0.70 | Details supported OS, SQL versions, and hardware requirements for install/upgrade; these are product-specific deployment constraints and matrices. |
 | [Restore a deployment to new hardware (advanced)](https://learn.microsoft.com/en-us/azure/devops/server/admin/backup/tut-single-svr-home?view=azure-devops-server) | deployment | 0.70 | Tutorial for restoring a TFS deployment using backups and installation media; includes ordered deployment steps and requirements unique to this product. |

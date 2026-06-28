@@ -1,9 +1,9 @@
 ---
 name: azure-quantum
-description: Expert knowledge for Azure Quantum development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using QDK with Azure Quantum workspaces, IonQ/Quantinuum/Rigetti targets, QIR/OpenQASM jobs, or Resource Estimator, and other Azure Quantum related development tasks. Not for Azure HPC Cache (use azure-hpc-cache), Azure Batch (use azure-batch), Azure Databricks (use azure-databricks), Azure Machine Learning (use azure-machine-learning).
+description: Expert knowledge for Azure Quantum development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Azure Quantum QDK, IonQ/Quantinuum/Rigetti targets, hybrid jobs, resource estimator, or Q# in VS Code, and other Azure Quantum related development tasks. Not for Azure HPC Cache (use azure-hpc-cache), Azure Databricks (use azure-databricks), Azure Synapse Analytics (use azure-synapse-analytics), Azure Machine Learning (use azure-machine-learning).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-21"
+  generated_at: "2026-06-28"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Quantum Skill
@@ -25,14 +25,14 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L37-L44 | Troubleshooting Azure Quantum provider issues: diagnosing job failures and support/escalation policies and limits for IonQ, Quantinuum, and Rigetti hardware on Azure Quantum. |
-| Best Practices | L45-L49 | Best practices for using QDK in VS Code with Copilot, optimizing large Q# programs via resource estimation, and systematically testing and debugging quantum code. |
+| Best Practices | L45-L49 | Tools and techniques for testing, debugging, and validating quantum programs with the Azure Quantum Development Kit (QDK), including simulators, logging, and troubleshooting. |
 | Decision Making | L50-L56 | Guidance on Azure Quantum costs, provider pricing and regions, workspace migration, choosing Q# dev tools, and planning quantum-safe cryptography with the resource estimator. |
 | Architecture & Design Patterns | L57-L61 | Guidance on designing hybrid quantum-classical workflows in Azure Quantum, including architecture options, orchestration patterns, and when to offload tasks to quantum hardware. |
 | Limits & Quotas | L62-L68 | Managing Azure Quantum quotas, job/session limits, timeouts, and Rigetti-specific hardware constraints and target capabilities. |
 | Security | L69-L79 | Managing secure access to Azure Quantum workspaces: RBAC and access control, bulk user assignment, ARM locks, managed identities, service principals, and secure handling of access keys. |
 | Configuration | L80-L92 | Configuring Azure Quantum workspaces, QDK tools, simulators, and hardware targets, plus setting up and customizing Quantum Resource Estimator models and outputs. |
-| Integrations & Coding Patterns | L93-L103 | Integrating QDK with Azure Quantum: connecting workspaces, submitting Cirq/OpenQASM/QIR/Pulser jobs, building noise and application models, and running adaptive hybrid quantum workflows. |
-| Deployment | L104-L108 | Deploying Azure Quantum workspaces with Bicep and running/submitting Q# quantum programs from VS Code to Azure Quantum backends |
+| Integrations & Coding Patterns | L93-L105 | Using the Azure Quantum QDK to connect workspaces, submit and visualize circuits (Q#, OpenQASM, QIR, Qiskit, Cirq, Pulser), run hybrid jobs, and build noise/resource models. |
+| Deployment | L106-L110 | Deploying Azure Quantum workspaces with Bicep and running/submitting Q# quantum programs from VS Code to Azure Quantum backends |
 
 ### Troubleshooting
 | Topic | URL |
@@ -45,7 +45,7 @@ This skill requires **network access** to fetch documentation content:
 ### Best Practices
 | Topic | URL |
 |-------|-----|
-| Test and debug quantum programs with the Quantum Development Kit | https://learn.microsoft.com/en-us/azure/quantum/testing-debugging |
+| Test and debug quantum programs with QDK tools | https://learn.microsoft.com/en-us/azure/quantum/testing-debugging |
 
 ### Decision Making
 | Topic | URL |
@@ -94,12 +94,14 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Connect to Azure Quantum workspace via qdk.azure | https://learn.microsoft.com/en-us/azure/quantum/how-to-connect-workspace |
+| Visualize Q# and OpenQASM circuits with QDK | https://learn.microsoft.com/en-us/azure/quantum/how-to-visualize-circuits |
 | Run integrated hybrid quantum jobs with Adaptive RI in Azure Quantum | https://learn.microsoft.com/en-us/azure/quantum/hybrid-computing-integrated |
-| Run OpenQASM programs with the Quantum Development Kit | https://learn.microsoft.com/en-us/azure/quantum/qdk-openqasm-integration |
+| Run OpenQASM programs with Azure Quantum QDK | https://learn.microsoft.com/en-us/azure/quantum/qdk-openqasm-integration |
 | Build noise models with QDK neutral atom simulators | https://learn.microsoft.com/en-us/azure/quantum/qdk-simulator-noise-models |
 | Create application models from quantum frameworks for resource estimation | https://learn.microsoft.com/en-us/azure/quantum/qre-supported-applications |
 | Submit Cirq circuits to Azure Quantum with QDK | https://learn.microsoft.com/en-us/azure/quantum/quickstart-microsoft-cirq |
 | Submit QIR, OpenQASM, and Pulser circuits to Azure Quantum | https://learn.microsoft.com/en-us/azure/quantum/quickstart-microsoft-provider-format |
+| Submit Qiskit circuits to Azure Quantum with QDK | https://learn.microsoft.com/en-us/azure/quantum/quickstart-microsoft-qiskit |
 
 ### Deployment
 | Topic | URL |

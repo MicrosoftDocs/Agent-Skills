@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-21'
+generated_at: '2026-06-28'
 category_descriptions:
   deployment: 'Deploying and scaling Azure AI Speech: Docker/Kubernetes containers,
     on-prem STT/TTS, custom speech models/endpoints, language ID, and batch/long-form
@@ -7,33 +7,31 @@ category_descriptions:
   configuration: 'Configuring Azure AI Speech behavior: audio I/O, logging, storage,
     SSML, pronunciation, batch TTS/STT, avatars, personal/pro voices, and Voice Live/SDK/CLI
     connection and telemetry settings.'
-  decision-making: Guides for choosing Speech/Embedded/Voice Live options, planning
-    large-scale use, checking availability, and migrating between Speech APIs, models,
-    and personal/custom voice features.
   best-practices: Best practices for collecting and labeling audio/video, training
     custom voices/avatars, tuning recognition (phrases/keywords), optimizing latency/memory,
     and handling Voice Live agent behavior.
   security: 'Securing Azure AI Speech: auth (Entra, RBAC), network isolation (VNet,
     Private Link, sovereign clouds), encryption/BYOK, BYOS storage, and consent/ID
     flows for personal and professional voice.'
-  integrations: Patterns and APIs for integrating Azure Speech/Voice Live with apps,
-    agents, telephony, REST/WebSockets, SSML, avatars, transcription, translation,
-    and text‑to‑speech workflows.
-  limits-quotas: Speech service limits, quotas, and throttling, plus lifecycle, training,
-    deployment, and usage constraints for custom/professional voice and short-audio
-    speech-to-text APIs.
+  integrations: Patterns and code for integrating Azure Speech/Voice Live with apps,
+    telephony, agents, REST/SDK/WS APIs, TTS/translation/avatars, SSML customization,
+    and LLM/OpenAI workflows.
+  decision-making: Guides for choosing Azure Speech/Embedded/Voice Live options, checking
+    language/voice availability, and step-by-step migrations between Speech/voice
+    REST APIs and legacy features.
+  limits-quotas: Speech service limits, quotas, and behaviors for text-to-speech and
+    custom/professional voice models, including training duration, deployment constraints,
+    and managing model/endpoint lifecycles.
   troubleshooting: 'Diagnosing and resolving Azure AI Speech issues: session/ID lookup,
     Foundry integration errors, SDK CRL/compatibility problems, container deployment
     failures, and common SDK runtime bugs.'
 skill_description: Expert knowledge for Azure AI Speech development including troubleshooting,
   best practices, decision making, limits & quotas, security, configuration, integrations
-  & coding patterns, and deployment. Use when using STT/TTS APIs, custom voice/avatars,
-  Voice Live, batch transcription, or containerized speech services, and other Azure
-  AI Speech related development tasks. Not for Azure Communication Services (use azure-communication-services),
-  Azure AI Bot Service (use azure-bot-service), Azure AI Video Indexer (use azure-video-indexer),
-  Azure AI Immersive Reader (use azure-immersive-reader).
-use_when: Use when using STT/TTS APIs, custom voice/avatars, Voice Live, batch transcription,
-  or containerized speech services, and other Azure AI Speech related development
+  & coding patterns, and deployment. Use when building Azure Speech STT/TTS, custom
+  voices/avatars, Voice Live agents, or telephony/LLM integrations, and other Azure
+  AI Speech related development tasks.
+use_when: Use when building Azure Speech STT/TTS, custom voices/avatars, Voice Live
+  agents, or telephony/LLM integrations, and other Azure AI Speech related development
   tasks.
 confusable_not_for: Not for Azure Communication Services (use azure-communication-services),
   Azure AI Bot Service (use azure-bot-service), Azure AI Video Indexer (use azure-video-indexer),
@@ -43,55 +41,56 @@ confusable_not_for: Not for Azure Communication Services (use azure-communicatio
 
 ## Summary
 
-- **Total Pages**: 191
-- **Fetched**: 191
+- **Total Pages**: 189
+- **Fetched**: 189
 - **Fetch Failed**: 0
-- **Classified**: 113
-- **Unclassified**: 78
+- **Classified**: 112
+- **Unclassified**: 77
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 6
+- **Updated Pages**: 4
 - **Unchanged**: 185
-- **Deleted Pages**: 0
+- **Deleted Pages**: 2
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-speech/azure-speech.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| best-practices | 13 | 6.8% |
-| configuration | 30 | 15.7% |
-| decision-making | 14 | 7.3% |
-| deployment | 9 | 4.7% |
-| integrations | 27 | 14.1% |
+| best-practices | 13 | 6.9% |
+| configuration | 29 | 15.3% |
+| decision-making | 13 | 6.9% |
+| deployment | 9 | 4.8% |
+| integrations | 28 | 14.8% |
 | limits-quotas | 5 | 2.6% |
-| security | 10 | 5.2% |
+| security | 10 | 5.3% |
 | troubleshooting | 5 | 2.6% |
-| *(Unclassified)* | 78 | 40.8% |
+| *(Unclassified)* | 77 | 40.7% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Voice Live telephony integration](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live-telephony)
-  - Updated: 2026-05-22T06:05:00.000Z → 2026-06-16T22:16:00.000Z
-- [Enable telemetry and tracing](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-voice-live-telemetry)
-  - Updated: 2026-06-02T19:00:00.000Z → 2026-06-05T22:11:00.000Z
-- [Quickstart](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/quickstarts/get-started-text-to-speech-avatar)
-  - Updated: 2026-02-17T23:14:00.000Z → 2026-06-16T11:16:00.000Z
-- [Create a custom video avatar](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/text-to-speech-avatar/custom-avatar-create)
-  - Updated: 2026-02-25T08:00:00.000Z → 2026-06-05T22:11:00.000Z
-- [Language and voice support](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/language-support)
-  - Updated: 2026-05-07T06:09:00.000Z → 2026-06-19T08:00:00.000Z
-- [Speech to text REST API for short audio](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/rest-speech-to-text-short)
-  - Updated: 2026-05-18T22:09:00.000Z → 2026-06-05T22:11:00.000Z
+- [How to customize Voice Live input and output](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live-how-to-customize)
+  - Updated: 2026-06-02T19:00:00.000Z → 2026-06-23T22:11:00.000Z
+- [Quotas and limits](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-services-quotas-and-limits)
+  - Updated: 2026-01-30T18:18:00.000Z → 2026-06-26T08:00:00.000Z
+- [Batch transcription overview](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/batch-transcription)
+  - Updated: 2025-11-21T23:11:00.000Z → 2026-06-25T22:16:00.000Z
+- [From Speech to text 2024-11-15 to 2025-10-15](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/migrate-2025-10-15)
+  - Updated: 2026-04-09T22:15:00.000Z → 2026-06-22T17:19:00.000Z
+
+### Deleted Pages
+
+- ~~Multi-device conversation overview~~ (https://learn.microsoft.com/en-us/azure/ai-services/speech-service/multi-device-conversation)
+- ~~Multi-device conversation quickstart~~ (https://learn.microsoft.com/en-us/azure/ai-services/speech-service/quickstarts/multi-device-conversation)
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
-| [Quotas and limits](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-services-quotas-and-limits) | limits-quotas | 0.95 | Explicitly a quotas and limits article with tier-specific limits and best practices to avoid throttling; matches limits-quotas criteria. |
+| [Quotas and limits](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-services-quotas-and-limits) | limits-quotas | 0.95 | Page explicitly documents quotas and limits for Azure Speech, likely including exact numeric limits, per-tier constraints, and throttling details; it also mentions best practices but the primary content is limits/quotas. |
 | [2025-10-01](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live-api-reference-2025-10-01) | configuration | 0.90 | Complete API reference with events, models, and configuration options; contains detailed parameter names, types, and constraints for this specific API version. |
 | [2026-01-01-preview](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live-api-reference-2026-01-01-preview) | configuration | 0.90 | Preview API reference with full event and configuration details; includes product-specific parameters and options for this version. |
 | [2026-04-10](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live-api-reference-2026-04-10) | integrations | 0.90 | API reference for Voice Live events, models, and configuration; will contain detailed event schemas, parameter names, allowed values, and configuration options for the WebSocket-based API, which are core integration details not inferable from general knowledge. |
@@ -121,13 +120,13 @@ confusable_not_for: Not for Azure Communication Services (use azure-communicatio
 | [Configure OpenSSL for Linux](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-configure-openssl-linux) | configuration | 0.75 | Provides concrete commands, expected outputs, and directory/certificate layout requirements for OpenSSL with Speech SDK on Linux—product- and platform-specific configuration details beyond generic SSL knowledge. |
 | [Custom speech model lifecycle](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-custom-speech-model-and-endpoint-lifecycle) | limits-quotas | 0.75 | Explicitly describes model and endpoint timelines and includes a concrete limit: F0 endpoints deleted after seven days, which is a product-specific lifecycle limit. |
 | [Enable VNet service endpoint](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-service-vnet-service-endpoint) | security | 0.75 | Describes configuring Speech with VNet service endpoints; likely includes specific network configuration steps, scopes, and security-related settings unique to this service. |
-| [How to customize Voice Live input and output](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live-how-to-customize) | configuration | 0.75 | Covers options to use custom models with Voice Live, which typically involves specific configuration parameters and options for performance and quality tuning. |
 | [Improve tool calling and latency wait times](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-voice-live-interim-response) | configuration | 0.75 | Describes the interim_response session configuration, including how it behaves in agent vs model mode and when it’s supported; this is detailed configuration guidance. |
 | [Part 5: Deploy and use your voice model](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/professional-voice-deploy-endpoint) | limits-quotas | 0.75 | Explicitly states a numeric endpoint limit (up to 50 endpoints per S0 Speech resource) and ties it to deployment of professional voice endpoints, which is a concrete quota not generally known from training. |
 | [Pronunciation with SSML](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-synthesis-markup-pronunciation) | configuration | 0.75 | Details SSML elements for phonemes, custom lexicons, and math pronunciation; these are specific configuration constructs for Azure Speech. |
 | [SSML document structure and events](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-synthesis-markup-structure) | configuration | 0.75 | Focuses on SSML document structure and event tags like bookmark/viseme; these are concrete markup elements and attributes that act as configuration for the service. |
 | [Select a specific microphone input device](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-select-audio-input-devices) | configuration | 0.75 | Describes obtaining device IDs and using AudioConfig with constraints (friendly name vs ID); includes specific API usage patterns and gotchas unique to this SDK. |
 | [SDK 1.48.2 CRL compatibility update](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/migrate-to-sdk-1-48-2) | troubleshooting | 0.74 | The page describes a specific breaking behavior (connection failures) tied to Azure AI Speech SDK versions prior to 1.48.2 on Linux and Android, caused by CRL caching and industry-wide CRL partitioning changes. It provides product- and version-specific guidance on what actions to take before a concrete date to avoid service disruption, which is effectively symptom → cause → resolution for a narrow, product-specific issue. This is expert operational knowledge that an LLM would not reliably infer from training data. |
+| [How to customize Voice Live input and output](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live-how-to-customize) | integrations | 0.72 | The page describes product-specific ways to use the Voice Live API with customized models and options to optimize performance and quality. It focuses on how to integrate and configure custom models with the Voice Live service rather than generic concepts, including API usage patterns and service-specific customization behaviors. |
 | [Language and voice support](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/language-support) | decision-making | 0.72 | Page contains detailed capability-by-locale tables indicating which Azure Speech features (speech to text, text to speech, translation, pronunciation assessment, etc.) are supported for each language/locale. This is product-specific, current-state availability data that an LLM won't reliably know from training and is used to decide whether a given language/feature combination is viable, fitting decision-making best. |
 | [Batch processing with speech containers](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-container-batch-processing) | deployment | 0.70 | Describes using a batch processing container to scale transcription workloads across multiple endpoints; deployment and scaling pattern. |
 | [Configure the datastore](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/spx-data-store-configuration) | configuration | 0.70 | Describes Speech CLI datastore behavior and lookup order (current directory, ./spx/data, built-in datastore) and how settings are stored; this is product-specific configuration knowledge not generally known. |
@@ -138,6 +137,7 @@ confusable_not_for: Not for Azure Communication Services (use azure-communicatio
 | [Enable private endpoint](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-services-private-link) | security | 0.70 | The article provides product-specific guidance for configuring Azure Private Link with the Speech service, including required resource types, endpoint configuration steps, and how to maintain access after removing private endpoints. This is security-focused (network isolation, private endpoints) and contains concrete, service-specific configuration details beyond generic concepts. |
 | [Enable telemetry and tracing](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-voice-live-telemetry) | configuration | 0.70 | The page describes enabling OpenTelemetry tracing for Voice Live SDK sessions, which typically involves specific configuration parameters (exporters, endpoints, sampling, correlation with Azure Monitor). This is product-specific configuration and monitoring setup rather than generic telemetry theory, so it best fits the configuration sub-skill. |
 | [From Long Audio API to Batch synthesis API](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/migrate-to-batch-synthesis) | decision-making | 0.70 | Explains concrete differences, benefits, and migration steps between Long Audio REST API and Batch synthesis API, including retirement date—product-specific upgrade and choice guidance. |
+| [From Speech to text 2024-11-15 to 2025-10-15](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/migrate-2025-10-15) | decision-making | 0.70 | Migration guide between specific Speech to text REST API versions with concrete, version-specific behavior changes and upgrade guidance that an LLM would not know from training; focuses on how to update existing code and when to adopt new versioned features, fitting decision-making around version migration. |
 | [From Speech to text v3.2 to 2024-11-15](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/migrate-2024-11-15) | decision-making | 0.70 | Contains version-specific API changes and migration guidance for Speech to text REST API, helping decide how and when to upgrade and adapt code—expert, product-specific migration/decision details. |
 | [Get Speech to text Session ID](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-get-speech-session-id) | troubleshooting | 0.70 | Support-focused guide on obtaining IDs needed for debugging; includes product-specific steps and identifiers. |
 | [Get facial position with viseme](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-speech-synthesis-viseme) | configuration | 0.70 | Describes viseme IDs, blend shapes, and locale-specific support (e.g., SVG only for en-US); these are concrete, product-specific settings and constraints. |
@@ -181,7 +181,6 @@ confusable_not_for: Not for Azure Communication Services (use azure-communicatio
 | [Customize avatar gestures with SSML](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/text-to-speech-avatar/avatar-gestures-with-ssml) | integrations | 0.65 | Describes a product-specific SSML bookmark format (<bookmark mark='gesture.*'/>) and timing behavior; this is a concrete API/markup pattern unique to the service, fitting integrations & coding patterns. |
 | [Embedded speech overview](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/embedded-speech) | decision-making | 0.65 | Guides when to use embedded speech vs disconnected containers for secure or offline environments; product-specific selection guidance. |
 | [Evaluate performance of embedded speech](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/embedded-speech-performance-evaluations) | decision-making | 0.65 | Focuses on assessing whether a device can run embedded speech models; likely includes performance criteria and thresholds to guide deployment decisions. |
-| [From Speech to text 2024-11-15 to 2025-10-15](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/migrate-2025-10-15) | decision-making | 0.65 | A migration guide between specific REST API versions usually details breaking changes, parameter renames, behavior differences, and guidance on how and when to move between versions. This is expert, version-specific guidance that helps choose and transition between API versions, fitting the decision-making category around upgrade paths. |
 | [From Speech to text v3.1 to v3.2](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/migrate-v3-1-to-v3-2) | decision-making | 0.65 | Migration guides enumerate version-specific behavior changes, deprecated/renamed fields, and required code updates, often with tables mapping old to new APIs and guidance on when/how to upgrade. This is expert, product-specific decision and migration guidance that helps choose and move between API versions. |
 | [Generate a REST API client library](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/swagger-documentation) | integrations | 0.65 | Explains using Speech service Swagger specs to generate SDKs and which REST APIs are covered; includes product-specific API surface and integration details. |
 | [How to back up and recover speech customization resources](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/resiliency-and-recovery-plan) | best-practices | 0.65 | Provides concrete guidance tied to Speech regions, resource keys, and custom assets (models, voices) for resiliency and recovery—product-specific operational best practices rather than generic DR theory. |
@@ -200,7 +199,6 @@ confusable_not_for: Not for Azure Communication Services (use azure-communicatio
 | [Use batch synthesis for text to speech](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/batch-synthesis) | deployment | 0.65 | Covers asynchronous batch synthesis for long audio, including retirement/migration from Long Audio API and constraints like >10-minute audio, which are product-specific deployment/usage details. |
 | [Voice Live telephony integration](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live-telephony) | integrations | 0.65 | Page is about using the Voice Live API with telephony systems and a specific solution template. While the summary is high-level, this type of page typically includes product-specific integration details (API usage, configuration for telephony, and call center scenarios) that go beyond generic knowledge. It most closely matches the integrations sub-skill, as it focuses on connecting Voice Live with external telephony infrastructure. |
 | [How to evaluate Voice Live agents (preview)](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-voice-live-evaluate) | best-practices | 0.64 | Evaluation harness usage and built-in evaluators for Voice Live; likely includes concrete, product-specific guidance on how to run evaluations, interpret metrics, and structure test audio, which are actionable best practices unique to this service. |
-| [Batch transcription overview](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/batch-transcription) | decision-making | 0.60 | Describes when to use batch transcription, concurrency behavior, and turnaround characteristics; guides selection vs other modes for large workloads. |
 | [Get speech recognition results](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/get-speech-recognition-results) | integrations | 0.60 | How-to guide on using speech recognition results with SDKs; likely includes specific API members, result object fields, and usage patterns unique to Speech SDK. |
 | [Personal voice overview](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/personal-voice-overview) | decision-making | 0.60 | Describes supported languages/locales and regions for personal voice; helps decide where and how to use the feature based on regional availability. |
 | [Voice Live overview](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live) | decision-making | 0.60 | Overview explicitly mentions key scenarios and pricing to choose the right model; such pages usually include comparison guidance and criteria for selecting models and plans, which is decision-making content. |
@@ -233,7 +231,6 @@ confusable_not_for: Not for Azure Communication Services (use azure-communicatio
 | [Ingestion Client](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/ingestion-client) | 0.30 | Describes the Ingestion Client tool and its use to deploy a call center transcription solution with a no-code approach. Summary suggests a high-level or tutorial-style description, not detailed configuration parameter tables, limits, or troubleshooting mappings. |
 | [Install the Speech SDK](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/quickstarts/setup-platform) | 0.30 | Quickstart for installing SDK; typically just package names and basic commands, not deep configuration or limits. |
 | [Interactive language learning with pronunciation assessment](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/language-learning-with-pronunciation-assessment) | 0.30 | Describes interactive language learning with pronunciation assessment; preview note and conceptual explanation, but no detailed config tables or limits. |
-| [Multi-device conversation quickstart](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/quickstarts/multi-device-conversation) | 0.30 | Quickstart for multi-device conversation; sample-focused, not a configuration or limits reference. |
 | [OpenAI text to speech voices](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/openai-voices) | 0.30 | Summary indicates a conceptual/marketing-style overview of OpenAI text-to-speech voices and model variants (Neural vs NeuralHD) without mention of numeric limits, configuration tables, error codes, or decision matrices. |
 | [Part 1: Create a professional voice project](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/professional-voice-create-project) | 0.30 | High-level guidance on creating a professional voice project; summary suggests a getting-started/tutorial style without detailed configuration tables, limits, or error mappings. |
 | [Part 4: Test recognition quality](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-custom-speech-inspect-data) | 0.30 | Describes qualitative inspection and side-by-side testing of custom speech models; no indication of numeric thresholds, configuration parameters, or detailed troubleshooting mappings. |
@@ -253,8 +250,8 @@ confusable_not_for: Not for Azure Communication Services (use azure-communicatio
 | [Voice sync for avatar](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/text-to-speech-avatar/voice-sync-for-avatar) | 0.30 | Described as an introduction to voice sync for avatar; likely conceptual explanation of what it is rather than detailed configuration tables, limits, or troubleshooting content. |
 | [What's new](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/releasenotes) | 0.30 | Release notes summarize new features and changes but typically don't provide stable, reusable expert patterns like limits, configs, or troubleshooting mappings; content is time-bound and not aligned to any listed sub-skill type. |
 | [Devices overview](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-devices) | 0.25 | Overview of speech devices and audio processing capabilities; lacks detailed configuration parameters, limits, or troubleshooting mappings. |
-| [Multi-device conversation overview](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/multi-device-conversation) | 0.25 | Overview of multi-device conversation capabilities and scenarios; no detailed configuration matrices, limits, or troubleshooting mappings evident. |
 | [Audio concepts](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/concepts/audio-concepts) | 0.20 | Audio concepts overview (sampling, formats, codecs); largely generic background information. |
+| [Batch transcription overview](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/batch-transcription) | 0.20 | Described as an overview of batch transcription usage; no indication of specific numeric limits, configuration tables, or detailed error/diagnostic content, so it appears conceptual rather than expert-knowledge-focused. |
 | [Captioning with speech to text](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/captioning-concepts) | 0.20 | Conceptual captioning overview (synchronization, profanity filters, partial results); lacks detailed configuration tables, limits, or error-resolution content. |
 | [Create a custom video avatar](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/text-to-speech-avatar/custom-avatar-create) | 0.20 | Page appears to be a high-level how-to for creating a custom avatar, focused on process and eligibility rather than detailed configuration parameters, limits, or error codes. From the summary, it doesn't clearly expose numeric limits, config tables, or troubleshooting mappings, so it doesn't meet the expert-knowledge criteria for any sub-skill. |
 | [Custom text to speech avatar overview](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/text-to-speech-avatar/what-is-custom-text-to-speech-avatar) | 0.20 | Overview of custom text to speech avatar and access limitations; summary shows no detailed config, quotas, or error mappings. |

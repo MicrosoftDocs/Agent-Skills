@@ -16,6 +16,7 @@
 | Monitor Azure VM availability with Project Flash via Event Grid | https://learn.microsoft.com/en-us/azure/virtual-machines/flash-event-grid-system-topic |
 | Use Azure Instance Metadata Service for VM configuration and maintenance info | https://learn.microsoft.com/en-us/azure/virtual-machines/instance-metadata-service |
 | Use Azure CLI commands to manage Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/cli-manage |
+| Find and use Azure Marketplace VM image plans via CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/cli-ps-findimage |
 | Upgrade Azure Disk Encryption version on disks | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/disk-encryption-upgrade |
 | Download Linux VHDs from Azure using CLI and portal | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/download-vhd |
 | Resize Azure Disk Encryption LVM-encrypted Linux disks | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/how-to-resize-encrypted-lvm |

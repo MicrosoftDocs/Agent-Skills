@@ -3,7 +3,7 @@ name: azure-test-plans
 description: Expert knowledge for Azure Test Plans development including limits & quotas, security, and integrations & coding patterns. Use when configuring test run custom fields, data retention, permissions, access levels, or tcm.exe automation, and other Azure Test Plans related development tasks. Not for Azure DevOps (use azure-devops), Azure Pipelines (use azure-pipelines), Azure App Testing (use azure-app-testing), Azure Boards (use azure-boards).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-17"
+  generated_at: "2026-06-28"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Test Plans Skill

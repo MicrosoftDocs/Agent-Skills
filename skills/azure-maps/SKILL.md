@@ -1,9 +1,9 @@
 ---
 name: azure-maps
-description: Expert knowledge for Azure Maps development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when using map rendering/tiles, search & routing APIs, weather data, Spatial IO, or migrating from Bing/Google Maps, and other Azure Maps related development tasks. Not for Azure AI Search (use azure-cognitive-search), Azure Digital Twins (use azure-digital-twins), Azure IoT (use azure-iot), Azure IoT Hub (use azure-iot-hub).
+description: Expert knowledge for Azure Maps development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when using Azure Maps web SDK/REST, search/geocoding, routing/traffic, weather APIs, or migrating from Bing/Google Maps, and other Azure Maps related development tasks.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-14"
+  generated_at: "2026-06-28"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Maps Skill
@@ -24,7 +24,7 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L36-L40 | Diagnosing and fixing common Azure Maps Weather service issues, including authentication, quota/usage errors, incorrect responses, and troubleshooting API request/response problems. |
+| Troubleshooting | L36-L40 | Diagnosing and fixing common Azure Maps Weather API issues, including authentication, quota/usage limits, request/response errors, and troubleshooting incorrect or missing weather data. |
 | Best Practices | L41-L51 | Best practices for Azure Maps apps: auth/security, routing and search usage, static image rendering, performance tuning, accessibility, and correct copyright/attribution. |
 | Decision Making | L52-L64 | Guidance on pricing, billing, and migrating maps apps to Azure Maps from Bing, Google, Power BI visuals, and older Azure Maps APIs, including routing, tiles, and search replacements |
 | Architecture & Design Patterns | L65-L70 | Designing Azure architectures for elevation data services and multi-itinerary route optimization using Azure Maps, open DEM data, and NVIDIA cuOpt for scalable geospatial solutions |

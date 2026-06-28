@@ -1,9 +1,9 @@
 ---
 name: azure-arc
-description: Expert knowledge for Azure Arc development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing Arc-enabled Kubernetes, servers/VMs, data services, resource bridge, or Edge RAG workloads, and other Azure Arc related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Virtual Machines (use azure-virtual-machines), Azure Stack Edge (use azure-stack-edge), Azure VMware Solution (use azure-vmware-solution).
+description: Expert knowledge for Azure Arc development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing Arc-enabled Kubernetes, servers, data services, resource bridge, or Edge RAG/Edge Volumes, and other Azure Arc related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Virtual Machines (use azure-virtual-machines), Azure Stack Edge (use azure-stack-edge), Azure Local (use azure-local).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-14"
+  generated_at: "2026-06-28"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Arc Skill
@@ -24,15 +24,15 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L71 | Diagnosing and fixing Azure Arc issues: connectivity, extensions, Kubernetes/GitOps, storage, SQL, servers/VMs, site manager, resource bridge, workload orchestration, and licensing. |
-| Best Practices | L72-L78 | Best practices for Azure Arc storage and data services: filesystem behavior, avoiding out-of-space issues, static retain workflows for Edge Volumes, and common usage FAQs. |
-| Decision Making | L79-L98 | Guidance on planning, sizing, licensing, and migrating Azure Arc servers and data services, including Kubernetes platform choices, ESU/SQL licensing, and moving from legacy tools/agents. |
-| Architecture & Design Patterns | L99-L106 | Patterns for Arc data/compute design: container storage data flow, Arc Edge Volumes, HA/DR for Arc SQL MI and failover groups, and advanced Edge RAG data parsing. |
-| Limits & Quotas | L107-L116 | Limits, quotas, versions, and requirements for Arc-enabled Kubernetes, Edge RAG, Arc data services, resource bridge, and billing/ESU behavior for connected machines and Windows Server. |
-| Security | L117-L173 | Security, identity, and access control for Azure Arc: AD auth, TDE, keytabs/credential rotation, RBAC, network protection, Private Link, policies, and hardening for servers, Kubernetes, and SCVMM/vSphere. |
-| Configuration | L174-L259 | Configuring Azure Arc infrastructure: storage, data services, Kubernetes (GitOps, TLS, extensions), Connected Machine agent, networking, monitoring, logging, and VM/server onboarding and management. |
-| Integrations & Coding Patterns | L260-L281 | Programmatic and automation patterns for Azure Arc: CLI/PowerShell/ARM/Ansible/Terraform usage, onboarding servers/VMs/K8s at scale, managing extensions, monitoring, and security integrations. |
-| Deployment | L282-L310 | Deploying and managing Azure Arc components: data controllers, Kubernetes extensions, resource bridge, SCVMM/VMware onboarding, monitoring agents, upgrades, DR/failover, and multicloud connectors. |
+| Troubleshooting | L37-L72 | Diagnosing and fixing Azure Arc issues across Kubernetes, servers, VMs, storage, data services, networking, extensions, site manager, resource bridge, and workload orchestration. |
+| Best Practices | L73-L79 | Best practices for Azure Arc storage and data services: filesystem behavior, avoiding out-of-space issues, static retain workflows for Edge Volumes, and common usage FAQs. |
+| Decision Making | L80-L99 | Guidance on planning, sizing, licensing, and migrating Azure Arc servers and data services, including Kubernetes platform choices, ESU/SQL licensing, and moving from legacy tools/agents. |
+| Architecture & Design Patterns | L100-L107 | Patterns for Arc data/compute design: container storage data flow, Arc Edge Volumes, HA/DR for Arc SQL MI and failover groups, and advanced Edge RAG data parsing. |
+| Limits & Quotas | L108-L117 | Limits, quotas, versions, and requirements for Arc-enabled Kubernetes, Edge RAG, Arc data services, resource bridge, and billing/ESU behavior for connected machines and Windows Server. |
+| Security | L118-L174 | Security, identity, and access control for Azure Arc: AD auth, TDE, keytabs/credential rotation, RBAC, network protection, Private Link, policies, and hardening for servers, Kubernetes, and SCVMM/vSphere. |
+| Configuration | L175-L260 | Configuring Azure Arc infrastructure: Kubernetes, servers, data services, networking, security, monitoring, GitOps, storage, and agent/extension lifecycle for Arc-enabled resources. |
+| Integrations & Coding Patterns | L261-L282 | Programmatic and automation patterns for Azure Arc: CLI/PowerShell/ARM/Ansible/Terraform usage, onboarding servers/VMs/K8s at scale, managing extensions, monitoring, and security integrations. |
+| Deployment | L283-L311 | Deploying and managing Azure Arc components: data controllers, Kubernetes extensions, resource bridge, SCVMM/VMware onboarding, monitoring agents, upgrades, DR/failover, and multicloud connectors. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -40,6 +40,7 @@ This skill requires **network access** to fetch documentation content:
 | Fix blob upload and mirroring issues with managed identity | https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/blobs-not-uploaded |
 | Resolve common issues for Azure Container Storage enabled by Arc | https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/faq |
 | Troubleshoot Azure Arc container storage deployments | https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/troubleshooting |
+| Resolve common issues for Azure Arc-enabled data services | https://learn.microsoft.com/en-us/azure/azure-arc/data/faq |
 | Troubleshoot failover group connection issues in Arc SQL | https://learn.microsoft.com/en-us/azure/azure-arc/data/troubleshoot-managed-instance |
 | Troubleshoot configuration files for Arc SQL Managed Instance | https://learn.microsoft.com/en-us/azure/azure-arc/data/troubleshoot-managed-instance-configuration |
 | Collect Azure Arc data controller logs for troubleshooting | https://learn.microsoft.com/en-us/azure/azure-arc/data/troubleshooting-get-logs |
@@ -246,7 +247,7 @@ This skill requires **network access** to fetch documentation content:
 | Manage VM extensions on Arc-enabled servers | https://learn.microsoft.com/en-us/azure/azure-arc/servers/manage-vm-extensions |
 | Manage Arc VM extensions via Azure portal | https://learn.microsoft.com/en-us/azure/azure-arc/servers/manage-vm-extensions-portal |
 | Deploy Arc VM extensions via ARM templates | https://learn.microsoft.com/en-us/azure/azure-arc/servers/manage-vm-extensions-template |
-| Configure network requirements for Azure Arc Connected Machine agent | https://learn.microsoft.com/en-us/azure/azure-arc/servers/network-requirements |
+| Configure network requirements for Azure Arc servers | https://learn.microsoft.com/en-us/azure/azure-arc/servers/network-requirements |
 | Use portal deployment script to onboard Arc | https://learn.microsoft.com/en-us/azure/azure-arc/servers/onboard-portal |
 | Onboard Arc servers via Windows Admin Center | https://learn.microsoft.com/en-us/azure/azure-arc/servers/onboard-windows-admin-center |
 | Onboard Windows Server to Arc via setup wizard | https://learn.microsoft.com/en-us/azure/azure-arc/servers/onboard-windows-server |

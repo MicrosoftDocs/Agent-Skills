@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-21'
+generated_at: '2026-06-28'
 category_descriptions:
   troubleshooting: 'Diagnosing and fixing Azure Data Box and Data Box Disk issues:
     audit/order logs, validation and unlock errors, SMB/REST/upload copy failures,
@@ -13,25 +13,25 @@ category_descriptions:
   integrations: Patterns and tools for integrating Data Box with apps and backup products
     (REST APIs, VHD to managed disks, file share to SharePoint, Commvault, OpenText,
     Veeam migrations).
-  limits-quotas: Device capacities, disk/file size limits, and connection constraints
-    for Azure Data Box, Data Box Disk, and Data Box Heavy, including usage rules and
-    FAQs on quotas.
+  limits-quotas: Capacity, file, and connection limits for Data Box, Disk, and Heavy
+    devices, including quotas, usage constraints, and how much data you can store
+    or transfer per device.
   best-practices: Guidance on preserving NTFS ACLs, file permissions, and metadata
     when copying data to Azure Data Box and Data Box Disk using supported tools and
     settings
 skill_description: Expert knowledge for Azure Data Box development including troubleshooting,
   best practices, limits & quotas, security, configuration, and integrations & coding
-  patterns. Use when using Data Box/Heavy/Disk for bulk uploads, SMB/NFS copy, REST
-  APIs, Key Vault CMKs, or VHD-to-managed-disk, and other Azure Data Box related development
+  patterns. Use when handling Data Box/Heavy/Disk cabling and copy flows, blob tiering,
+  Key Vault CMKs, REST APIs, or VHD imports, and other Azure Data Box related development
   tasks. Not for Azure Import Export (use azure-import-export), Azure Stack Edge (use
-  azure-stack-edge), Azure Blob Storage (use azure-blob-storage), Azure Files (use
-  azure-files).
-use_when: Use when using Data Box/Heavy/Disk for bulk uploads, SMB/NFS copy, REST
-  APIs, Key Vault CMKs, or VHD-to-managed-disk, and other Azure Data Box related development
+  azure-stack-edge), Azure Virtual Machines (use azure-virtual-machines), Azure Blob
+  Storage (use azure-blob-storage).
+use_when: Use when handling Data Box/Heavy/Disk cabling and copy flows, blob tiering,
+  Key Vault CMKs, REST APIs, or VHD imports, and other Azure Data Box related development
   tasks.
 confusable_not_for: Not for Azure Import Export (use azure-import-export), Azure Stack
-  Edge (use azure-stack-edge), Azure Blob Storage (use azure-blob-storage), Azure
-  Files (use azure-files).
+  Edge (use azure-stack-edge), Azure Virtual Machines (use azure-virtual-machines),
+  Azure Blob Storage (use azure-blob-storage).
 ---
 # Azure Data Box Crawl Report
 
@@ -66,8 +66,8 @@ confusable_not_for: Not for Azure Import Export (use azure-import-export), Azure
 
 ### Updated Pages
 
-- [Data Box upload issues](https://learn.microsoft.com/en-us/azure/databox/data-box-troubleshoot-data-upload)
-  - Updated: 2025-03-06T08:00:00.000Z → 2026-06-17T11:41:00.000Z
+- [FAQ](https://learn.microsoft.com/en-us/azure/databox/data-box-faq)
+  - Updated: 2025-03-24T11:11:00.000Z → 2026-06-26T11:45:00.000Z
 
 ## Classified Pages
 
@@ -96,7 +96,7 @@ confusable_not_for: Not for Azure Import Export (use azure-import-export), Azure
 | [Review requirements](https://learn.microsoft.com/en-us/azure/databox/data-box-heavy-system-requirements) | configuration | 0.78 | System requirements page will list supported OS versions, network ports, and other concrete parameters for clients and device; product-specific configuration knowledge. |
 | [Manage via local web UI](https://learn.microsoft.com/en-us/azure/databox/data-box-local-web-ui-admin) | configuration | 0.75 | Focuses on local web UI tasks such as diagnostics, software updates, and device operations; these involve specific UI options and settings. |
 | [View audit logs](https://learn.microsoft.com/en-us/azure/databox/data-box-audit-logs) | troubleshooting | 0.75 | Details audit log types, collected fields, and locations; this is product-specific diagnostic information not generally known. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/databox/data-box-faq) | limits-quotas | 0.74 | FAQ for Azure Data Box, Data Box Next Gen, and Data Box Heavy typically includes device-specific capacities, per-order limits, supported data sizes, shipping and transfer constraints, and other numeric limits that are not inferable from general knowledge. These concrete values (for example, maximum TB per device, number of devices per order, supported file sizes, and throughput expectations) qualify as expert knowledge under the limits-quotas category. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/databox/data-box-faq) | limits-quotas | 0.72 | FAQ for Azure Data Box, Next Gen, and Heavy typically includes device-specific capacities, shipment and usage limits, supported file sizes, and other numeric constraints that are not obvious from general training data. These concrete limits and constraints align best with the limits-quotas sub-skill type. |
 | [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/databox/policy-reference) | security | 0.70 | Lists built-in Azure Policy definitions for Data Box; includes specific policy names, effects, and scopes, which are product-specific security/governance configurations. |
 | [For export orders](https://learn.microsoft.com/en-us/azure/databox/data-box-export-logs) | troubleshooting | 0.70 | Similar to import logs article but for export; includes Data Box–specific log types, locations, and tracking mechanisms. |
 | [For import orders](https://learn.microsoft.com/en-us/azure/databox/data-box-logs) | troubleshooting | 0.70 | Describes tools and logs for each import step; likely includes specific log locations, event types, and how to interpret them, which are product-specific diagnostic details. |

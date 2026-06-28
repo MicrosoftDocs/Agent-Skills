@@ -1,9 +1,9 @@
 ---
 name: azure-service-health
-description: Expert knowledge for Azure Service Health development including troubleshooting, limits & quotas, security, configuration, and integrations & coding patterns. Use when routing Service Health alerts via APIs/webhooks, configuring ARM/Bicep alerts, or diagnosing VM Resource Health, and other Azure Service Health related development tasks. Not for Azure Monitor (use azure-monitor), Azure Reliability (use azure-reliability), Azure Resiliency (use azure-resiliency), Azure Quotas (use azure-quotas).
+description: Expert knowledge for Azure Service Health development including troubleshooting, limits & quotas, security, configuration, and integrations & coding patterns. Use when using Service Health APIs, Resource Graph, webhooks, VM Resource Health, or notification retention settings, and other Azure Service Health related development tasks. Not for Azure Monitor (use azure-monitor), Azure Reliability (use azure-reliability), Azure Resiliency (use azure-resiliency), Azure Quotas (use azure-quotas).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-21"
+  generated_at: "2026-06-28"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Service Health Skill
@@ -28,7 +28,7 @@ This skill requires **network access** to fetch documentation content:
 | Limits & Quotas | L38-L42 | Details on how long Azure Service Health notifications are kept, their lifecycle stages, and retention behavior for different event types and channels |
 | Security | L43-L51 | Managing who can see Azure Service Health and security advisories using tenant/subscription roles and RBAC, including configuring access scopes and viewing security-related notifications. |
 | Configuration | L52-L59 | Configuring Service Health and Resource Health alerts via ARM/Bicep/PowerShell and querying Service Health data/fields with Azure Resource Graph. |
-| Integrations & Coding Patterns | L60-L70 | Using APIs, Resource Graph, webhooks, and connectors to query Azure Service Health/Security data and route alerts into tools like OpsGenie, PagerDuty, and ServiceNow |
+| Integrations & Coding Patterns | L60-L70 | Using APIs, Resource Graph, webhooks, and connectors (OpsGenie, PagerDuty, ServiceNow) to programmatically access, query, and route Azure Service Health and Security advisories |
 
 ### Troubleshooting
 | Topic | URL |
@@ -62,7 +62,7 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Access Azure Security advisories via API endpoint | https://learn.microsoft.com/en-us/azure/service-health/access-service-advisories-api |
 | Run Azure Resource Graph queries for Resource Health | https://learn.microsoft.com/en-us/azure/service-health/resource-graph-health-samples |
-| Query Azure Service Health impacted resources with ARG | https://learn.microsoft.com/en-us/azure/service-health/resource-graph-impacted-samples |
+| Query Azure Service Health impacted resources with Resource Graph | https://learn.microsoft.com/en-us/azure/service-health/resource-graph-impacted-samples |
 | Query Azure Service Health with Resource Graph | https://learn.microsoft.com/en-us/azure/service-health/resource-graph-samples |
 | Integrate Azure Service Health alerts via webhooks | https://learn.microsoft.com/en-us/azure/service-health/service-health-alert-webhook-guide |
 | Forward Azure Service Health alerts to OpsGenie | https://learn.microsoft.com/en-us/azure/service-health/service-health-alert-webhook-opsgenie |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-21'
+generated_at: '2026-06-28'
 category_descriptions:
   security: Configuring API authorization schemes for APIs in API Center and managing
     who can access the API Center portal via the VS Code extension
@@ -37,8 +37,8 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 36
+- **Updated Pages**: 1
+- **Unchanged**: 37
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-api-center/azure-api-center.csv`
 
@@ -57,10 +57,8 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 
 ### Updated Pages
 
-- [Export API from API Center to Copilot Studio](https://learn.microsoft.com/en-us/azure/api-center/export-to-copilot-studio)
-  - Updated: 2026-05-01T17:27:00.000Z → 2026-06-18T17:32:00.000Z
-- [Track API dependencies](https://learn.microsoft.com/en-us/azure/api-center/track-resource-dependencies)
-  - Updated: 2026-02-24T08:00:00.000Z → 2026-06-18T17:32:00.000Z
+- [What is Azure API Center?](https://learn.microsoft.com/en-us/azure/api-center/overview)
+  - Updated: 2026-06-02T20:30:00.000Z → 2026-06-25T05:13:00.000Z
 
 ## Classified Pages
 
@@ -107,5 +105,5 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 | [Samples and labs](https://learn.microsoft.com/en-us/azure/api-center/resources) | 0.20 | Resource index linking to external samples and labs; not itself a technical reference or configuration document. |
 | [Track API dependencies](https://learn.microsoft.com/en-us/azure/api-center/track-resource-dependencies) | 0.20 | Describes using dependency tracking in Azure API Center at a conceptual/how-to level; lacks numeric limits, configuration parameter tables, security role details, or troubleshooting mappings. |
 | [Key concepts](https://learn.microsoft.com/en-us/azure/api-center/key-concepts) | 0.10 | Key concepts/terminology description without product-specific numeric limits, configs, or troubleshooting content. |
-| [What is Azure API Center?](https://learn.microsoft.com/en-us/azure/api-center/overview) | 0.10 | High-level overview of Azure API Center capabilities and scenarios without numeric limits, configuration tables, error codes, or product-specific decision matrices. |
+| [What is Azure API Center?](https://learn.microsoft.com/en-us/azure/api-center/overview) | 0.10 | Overview/introduction page describing what Azure API Center is and its high-level capabilities; no specific limits, configuration parameters, error codes, or decision matrices with quantified trade-offs. |
 | [Frequently asked questions](https://learn.microsoft.com/en-us/azure/api-center/frequently-asked-questions) | - | FAQ page appears to be high-level Q&A about Azure API Center without clear evidence of numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. Lacking concrete expert details as defined by the sub-skill criteria. |

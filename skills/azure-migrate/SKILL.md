@@ -1,9 +1,9 @@
 ---
 name: azure-migrate
-description: Expert knowledge for Azure Migrate development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Azure Migrate appliances, Arc-based discovery, VMware/Hyper-V moves, AppCAT/CAST scans, or Resource Mover, and other Azure Migrate related development tasks. Not for Azure Database Migration service (use azure-database-migration), Azure Site Recovery (use azure-site-recovery), Azure Virtual Machines (use azure-virtual-machines), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines).
+description: Expert knowledge for Azure Migrate development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring Azure Migrate appliances, AppCAT assessments, Private Link discovery, Arc-based discovery, or REST VMware migration, and other Azure Migrate related development tasks. Not for Azure Database Migration service (use azure-database-migration), Azure Site Recovery (use azure-site-recovery), Azure Virtual Machines (use azure-virtual-machines), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-21"
+  generated_at: "2026-06-28"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Migrate Skill
@@ -25,13 +25,13 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L37-L55 | Diagnosing and fixing Azure Migrate issues: appliance deployment/discovery, assessments, replication, performance, connectivity (incl. private endpoints), OS upgrades, and web app migrations. |
-| Best Practices | L56-L65 | Best practices for preparing on-prem/VMware/legacy Windows workloads and PostgreSQL for Azure migration, securing the Azure Migrate appliance, and running/validating test VM migrations. |
-| Decision Making | L66-L106 | Guidance on assessing migration readiness, sizing and cost, choosing tools/services, planning migration waves, and executing workload moves from on-prem, AWS, GCP, or VMware to Azure. |
-| Architecture & Design Patterns | L107-L112 | Architecture and data flow for Azure Migrate using Arc-based discovery and Hyper-V, including components, connectivity, prerequisites, and how discovery/inventory works. |
-| Limits & Quotas | L113-L126 | Limits, prerequisites, regions, and support matrices for Azure Migrate appliances, discovery, assessment, and migration of VMware, Hyper-V, and physical servers. |
-| Security | L127-L142 | Securing Azure Migrate: least-privilege roles/accounts, Private Link discovery/migration, encrypted VM moves, Trusted Launch, RBAC, and Entra ID app registration. |
-| Configuration | L143-L167 | Configuring Azure Migrate projects, appliances, assessments, dependency analysis, Arc/agents, networking, and Resource Mover settings for server, SQL, .NET, Java, and PostgreSQL migrations. |
-| Integrations & Coding Patterns | L168-L174 | Patterns and tools for integrating code analysis and automation into Azure Migrate, including GitHub Copilot insights, AppCAT CLI, CAST Highlight scans, and REST-based VMware migration. |
+| Best Practices | L56-L66 | Best practices for preparing on-prem/VMware machines and appliances, configuring VM hydration, running test migrations, and creating custom/AppCAT/PostgreSQL assessment rules for Azure Migrate. |
+| Decision Making | L67-L108 | Guidance for choosing migration strategies, interpreting Azure Migrate/AppCAT assessments, planning waves and execution, and mapping/modernizing workloads from on-prem, AWS, GCP, and VMware to Azure. |
+| Architecture & Design Patterns | L109-L114 | Architecture and data flow for Azure Migrate using Arc-based discovery and Hyper-V, including components, connectivity, prerequisites, and how discovery/inventory works. |
+| Limits & Quotas | L115-L128 | Limits, prerequisites, regions, and support matrices for Azure Migrate appliances, discovery, assessment, and migration of VMware, Hyper-V, and physical servers. |
+| Security | L129-L144 | Securing Azure Migrate: least-privilege roles/accounts, Private Link discovery/migration, encrypted VM moves, Trusted Launch, RBAC, and Entra ID app registration. |
+| Configuration | L145-L168 | Configuring Azure Migrate projects, appliances, assessments, dependency analysis, Arc/agents, networking (Private Link), and Resource Mover settings for server/SQL/.NET/PostgreSQL migrations. |
+| Integrations & Coding Patterns | L169-L174 | Patterns and tools for integrating code analysis and automation into Azure Migrate, including GitHub Copilot insights, AppCAT CLI, CAST Highlight scans, and REST-based VMware migration. |
 | Deployment | L175-L185 | Guides for deploying Azure Migrate appliances, preparing legacy servers, automating deployments with PowerShell/DevOps, and moving Azure/SQL resources between regions and governments. |
 
 ### Troubleshooting
@@ -56,6 +56,7 @@ This skill requires **network access** to fetch documentation content:
 ### Best Practices
 | Topic | URL |
 |-------|-----|
+| Develop custom YAML rules for AppCAT 7 assessments | https://learn.microsoft.com/en-us/azure/migrate/appcat/appcat-7-rule-guide?view=migrate |
 | Apply PostgreSQL assessment rules for Azure migration | https://learn.microsoft.com/en-us/azure/migrate/assessment-rules-for-postgresql?view=migrate |
 | Apply security best practices to Azure Migrate appliance | https://learn.microsoft.com/en-us/azure/migrate/best-practices-security?view=migrate |
 | Best practices for test migrations of virtual machines | https://learn.microsoft.com/en-us/azure/migrate/how-to-test-replicating-virtual-machines?view=migrate |
@@ -66,8 +67,9 @@ This skill requires **network access** to fetch documentation content:
 ### Decision Making
 | Topic | URL |
 |-------|-----|
-| Interpret AppCAT 7 reports for Java migration readiness | https://learn.microsoft.com/en-us/azure/migrate/appcat/appcat-7-interpret-report?view=migrate |
-| Use AppCAT 7 to assess Java apps for Azure | https://learn.microsoft.com/en-us/azure/migrate/appcat/java?view=migrate |
+| Interpret AppCAT 7 Java migration readiness reports | https://learn.microsoft.com/en-us/azure/migrate/appcat/appcat-7-interpret-report?view=migrate |
+| Assess Java apps with legacy AppCAT 6 engine | https://learn.microsoft.com/en-us/azure/migrate/appcat/java-6?view=migrate |
+| Decide when to use AppCAT 7 for Java migrations | https://learn.microsoft.com/en-us/azure/migrate/appcat/java?view=migrate |
 | Interpret Azure Migrate assessment report outputs | https://learn.microsoft.com/en-us/azure/migrate/assessment-report?view=migrate |
 | Interpret Azure Migrate business case calculations | https://learn.microsoft.com/en-us/azure/migrate/concepts-business-case-calculation?view=migrate |
 | Evaluate performance coverage in Azure Migrate | https://learn.microsoft.com/en-us/azure/migrate/confidence-ratings?view=migrate |
@@ -143,9 +145,8 @@ This skill requires **network access** to fetch documentation content:
 ### Configuration
 | Topic | URL |
 |-------|-----|
-| Develop custom YAML rules for AppCAT 7 | https://learn.microsoft.com/en-us/azure/migrate/appcat/appcat-7-rule-guide?view=migrate |
+| Use AppCAT 7 CLI commands and options | https://learn.microsoft.com/en-us/azure/migrate/appcat/appcat-7-cli-guide?view=migrate |
 | Configure AppCAT for .NET application migration assessments | https://learn.microsoft.com/en-us/azure/migrate/appcat/dotnet?view=migrate |
-| Use legacy AppCAT Java tool to assess migration readiness | https://learn.microsoft.com/en-us/azure/migrate/appcat/java-6?view=migrate |
 | Meet Azure Migrate assessment prerequisites and settings | https://learn.microsoft.com/en-us/azure/migrate/assessment-prerequisites?view=migrate |
 | Configure general assessment properties in Azure Migrate | https://learn.microsoft.com/en-us/azure/migrate/assessment-properties?view=migrate |
 | Migrate dependency analysis from MMA to Azure Monitor Agent | https://learn.microsoft.com/en-us/azure/migrate/azure-monitor-agent-migration?view=migrate |
@@ -168,7 +169,6 @@ This skill requires **network access** to fetch documentation content:
 ### Integrations & Coding Patterns
 | Topic | URL |
 |-------|-----|
-| Use AppCAT 7 CLI commands for Java assessments | https://learn.microsoft.com/en-us/azure/migrate/appcat/appcat-7-cli-guide?view=migrate |
 | Integrate CAST Highlight code scans with Azure Migrate | https://learn.microsoft.com/en-us/azure/migrate/cast-highlights-integration?view=migrate |
 | Automate VMware to Azure migration via Site Recovery REST | https://learn.microsoft.com/en-us/azure/migrate/how-to-automate-vmware-to-azure-migration-rest-api?view=migrate |
 

@@ -1,9 +1,9 @@
 ---
 name: azure-cloud-shell
-description: Expert knowledge for Azure Cloud Shell development including troubleshooting, limits & quotas, and security. Use when debugging Cloud Shell storage/connectivity, session limits, required storage accounts, or private VNet access, and other Azure Cloud Shell related development tasks. Not for Azure Portal (use azure-portal), Azure Resource Manager (use azure-resource-manager).
+description: Expert knowledge for Azure Cloud Shell development including troubleshooting, limits & quotas, and security. Use when configuring Cloud Shell storage accounts, private VNet access, session limits, concurrency, or RBAC roles, and other Azure Cloud Shell related development tasks. Not for Azure Portal (use azure-portal), Azure Virtual Machines (use azure-virtual-machines), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure App Service (use azure-app-service).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-24"
+  generated_at: "2026-06-28"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Cloud Shell Skill
@@ -26,7 +26,7 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L31-L36 | Diagnosing and fixing common Cloud Shell errors, storage and connectivity issues, plus deployment and network problems when running Cloud Shell in private VNets. |
 | Limits & Quotas | L37-L41 | Details on Cloud Shell session duration, resource and concurrency limits, required storage accounts, quotas, and how these constraints affect shell usage and persistence |
-| Security | L42-L46 | Securing Cloud Shell storage accounts, including multi-user access patterns, network isolation, and configuring private endpoints for locked-down access. |
+| Security | L42-L47 | Securing Cloud Shell storage: configuring shared storage safely, using private endpoints, and assigning RBAC roles for secure VNet-based Cloud Shell deployments. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -44,3 +44,4 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Configure Cloud Shell storage for multiple users securely | https://learn.microsoft.com/en-us/azure/cloud-shell/security/how-to-support-multiple-users |
 | Secure Cloud Shell storage with private endpoints | https://learn.microsoft.com/en-us/azure/cloud-shell/vnet/how-to-use-private-endpoint-storage |
+| Assign RBAC roles for Cloud Shell VNet migration | https://learn.microsoft.com/en-us/azure/cloud-shell/vnet/migrate-container-permissions |

@@ -28,8 +28,8 @@ confusable_not_for: Not for Azure Cost Management (use azure-cost-management), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 14
+- **Updated Pages**: 0
+- **Unchanged**: 15
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-quotas/azure-quotas.csv`
 
@@ -41,11 +41,6 @@ confusable_not_for: Not for Azure Cost Management (use azure-cost-management), A
 | *(Unclassified)* | 14 | 93.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [About Azure Quotas](https://learn.microsoft.com/en-us/azure/quotas/quotas-overview)
-  - Updated: 2025-03-25T08:00:00.000Z → 2026-06-16T06:14:00.000Z
 
 ## Classified Pages
 

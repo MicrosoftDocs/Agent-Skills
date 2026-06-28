@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-21'
+generated_at: '2026-06-28'
 category_descriptions:
   deployment: 'Using App Configuration in CI/CD: exporting/importing settings, creating
     snapshots, integrating with Azure Pipelines, GitHub Actions, and Helm/Kubernetes
@@ -8,15 +8,16 @@ category_descriptions:
     and how to upgrade Spring Boot apps to use App Configuration library v6.
   integrations: Patterns and code samples for integrating Azure App Configuration
     into .NET, Go, JavaScript, Python, AKS, Front Door, and AI apps, including dynamic
-    config, feature flags, filters, and REST usage.
-  configuration: 'Configuring App Configuration behavior: feature flags, filters,
-    snapshots, geo-replication, soft delete, Kubernetes provider, emulator, dynamic
-    refresh, and AI/chat completion settings.'
-  security: 'Securing App Configuration: encryption with customer-managed keys, Entra
-    ID RBAC, managed identities, keys/HMAC, REST auth/authorization models, network
-    perimeters, and Azure Policy compliance.'
-  limits-quotas: Limits on key-value retention, point-in-time reads, soft delete behavior,
-    preview API lifecycles, and REST API throttling/quotas for Azure App Configuration.
+    config, feature flags, filters, telemetry, and REST APIs.
+  configuration: 'Configuring App Configuration behavior: files, emulator, dynamic
+    refresh, feature flags (variants, filters, time windows, telemetry), AI/chat settings,
+    snapshots, geo-replication, soft delete, and Kubernetes provider.'
+  security: 'Configuring secure access to App Configuration: keys, Entra ID RBAC,
+    managed identities, private endpoints, network/perimeter controls, HMAC/REST auth,
+    and Azure Policy compliance.'
+  limits-quotas: Limits, retention, and history for App Configuration key-values,
+    including soft delete, revision retention, past-time reads, preview API lifecycles,
+    and REST throttling quotas.
   best-practices: 'Guidance on designing and using App Configuration efficiently:
     key/value organization, labeling, feature flags, performance, security, and cost-optimized
     access patterns.'
@@ -26,14 +27,15 @@ category_descriptions:
 skill_description: Expert knowledge for Azure App Configuration development including
   troubleshooting, best practices, decision making, limits & quotas, security, configuration,
   integrations & coding patterns, and deployment. Use when using feature flags, dynamic
-  refresh, snapshots, geo-replication, or App Configuration REST APIs, and other Azure
-  App Configuration related development tasks. Not for Azure App Service (use azure-app-service),
-  Azure Key Vault (use azure-key-vault), Azure Automation (use azure-automation).
-use_when: Use when using feature flags, dynamic refresh, snapshots, geo-replication,
-  or App Configuration REST APIs, and other Azure App Configuration related development
+  config refresh, snapshots, geo-replication, or managed identity access, and other
+  Azure App Configuration related development tasks. Not for Azure App Service (use
+  azure-app-service), Azure Functions (use azure-functions), Azure Key Vault (use
+  azure-key-vault).
+use_when: Use when using feature flags, dynamic config refresh, snapshots, geo-replication,
+  or managed identity access, and other Azure App Configuration related development
   tasks.
-confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Key Vault
-  (use azure-key-vault), Azure Automation (use azure-automation).
+confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Functions
+  (use azure-functions), Azure Key Vault (use azure-key-vault).
 ---
 # Azure App Configuration Crawl Report
 
@@ -42,13 +44,13 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Key
 - **Total Pages**: 165
 - **Fetched**: 165
 - **Fetch Failed**: 0
-- **Classified**: 131
-- **Unclassified**: 34
+- **Classified**: 127
+- **Unclassified**: 38
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 163
+- **Updated Pages**: 21
+- **Unchanged**: 144
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-app-configuration/azure-app-configuration.csv`
 
@@ -57,23 +59,60 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Key
 | Type | Count | Percentage |
 |------|-------|------------|
 | best-practices | 1 | 0.6% |
-| configuration | 15 | 9.1% |
+| configuration | 14 | 8.5% |
 | decision-making | 2 | 1.2% |
 | deployment | 6 | 3.6% |
-| integrations | 86 | 52.1% |
+| integrations | 81 | 49.1% |
 | limits-quotas | 5 | 3.0% |
-| security | 15 | 9.1% |
+| security | 17 | 10.3% |
 | troubleshooting | 1 | 0.6% |
-| *(Unclassified)* | 34 | 20.6% |
+| *(Unclassified)* | 38 | 23.0% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Network security perimeter](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-network-security-perimeter)
-  - Updated: 2026-06-02T19:32:00.000Z → 2026-06-15T22:19:00.000Z
-- [Associate with a network security perimeter](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-set-up-network-security-perimeter)
-  - Updated: 2026-05-26T17:19:00.000Z → 2026-06-16T17:13:00.000Z
+- [Encrypt data using customer-managed keys](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-customer-managed-keys)
+  - Updated: 2025-09-22T17:18:00.000Z → 2026-06-22T08:00:00.000Z
+- [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-geo-replication)
+  - Updated: 2025-06-04T08:00:00.000Z → 2026-06-22T17:13:00.000Z
+- [Feature reference](https://learn.microsoft.com/en-us/azure/azure-app-configuration/feature-management-dotnet-reference)
+  - Updated: 2025-09-30T17:14:00.000Z → 2026-06-18T08:00:00.000Z
+- [Create an App Configuration store](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-azure-app-configuration-create)
+  - Updated: 2025-06-25T17:56:00.000Z → 2026-06-22T08:00:00.000Z
+- [Python](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-time-window-filter-python)
+  - Updated: 2025-07-25T05:11:00.000Z → 2026-06-25T08:00:00.000Z
+- [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-targetingfilter)
+  - Updated: 2025-09-02T17:11:00.000Z → 2026-06-25T08:00:00.000Z
+- [Python](https://learn.microsoft.com/en-us/azure/azure-app-configuration/how-to-targeting-filter-python)
+  - Updated: 2025-10-22T22:17:00.000Z → 2026-06-25T08:00:00.000Z
+- [Python](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-variant-feature-flags-python)
+  - Updated: 2025-05-06T08:00:00.000Z → 2026-06-26T17:12:00.000Z
+- [Private endpoints](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-private-endpoint)
+  - Updated: 2025-09-22T17:18:00.000Z → 2026-06-22T08:00:00.000Z
+- [Disable public network access](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-disable-public-access)
+  - Updated: 2026-06-02T19:32:00.000Z → 2026-06-22T17:13:00.000Z
+- [Point-in-time key-values](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-point-time-snapshot)
+  - Updated: 2025-06-04T08:00:00.000Z → 2026-06-22T08:00:00.000Z
+- [Per-environment configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-labels-aspnet-core)
+  - Updated: 2025-03-28T11:22:00.000Z → 2026-06-22T08:00:00.000Z
+- [.NET](https://learn.microsoft.com/en-us/azure/azure-app-configuration/enable-dynamic-configuration-dotnet-core-push-refresh)
+  - Updated: 2025-09-22T17:18:00.000Z → 2026-06-22T08:00:00.000Z
+- [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-chat-completion-config)
+  - Updated: 2025-11-21T08:00:00.000Z → 2026-06-22T08:00:00.000Z
+- [.NET](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-chat-completion-dotnet)
+  - Updated: 2025-11-21T08:00:00.000Z → 2026-06-22T08:00:00.000Z
+- [Python](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-chat-completion-python)
+  - Updated: 2026-03-11T22:19:00.000Z → 2026-06-25T11:43:00.000Z
+- [Get started](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-ai-agent-config)
+  - Updated: 2026-03-04T23:27:00.000Z → 2026-06-22T08:00:00.000Z
+- [Python](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-ai-agent-config-python)
+  - Updated: 2026-01-14T23:13:00.000Z → 2026-06-22T08:00:00.000Z
+- [.NET](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-ai-agent-config-dotnet)
+  - Updated: 2026-05-12T11:17:00.000Z → 2026-06-22T08:00:00.000Z
+- [Python](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-feature-filters-python)
+  - Updated: 2024-11-28T12:15:00.000Z → 2026-06-25T08:00:00.000Z
+- *...and 1 more*
 
 ## Classified Pages
 
@@ -94,10 +133,10 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Key
 | [Locks](https://learn.microsoft.com/en-us/azure/azure-app-configuration/rest-api-locks) | integrations | 0.80 | Documents lock/unlock semantics and label parameter rules for key-values; these are product-specific REST behaviors. |
 | [Microsoft Entra authentication](https://learn.microsoft.com/en-us/azure/azure-app-configuration/rest-api-authentication-azure-ad) | security | 0.80 | Describes Bearer token usage from Microsoft Entra ID and TLS requirement; includes concrete auth scheme details for this service. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/rest-api) | integrations | 0.80 | REST API reference for data plane includes endpoint formats and operation semantics that are specific to this service and not generic HTTP knowledge. |
-| [Point-in-time key-values](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-point-time-snapshot) | limits-quotas | 0.80 | Explicitly states history retention periods by tier (7 days for Free/Developer, 30 days for Standard/Premium), which are concrete numerical limits unique to the service. |
 | [Versioning](https://learn.microsoft.com/en-us/azure/azure-app-configuration/rest-api-versioning) | integrations | 0.80 | Specifies required api-version parameter, SemVer format, lack of negotiation, and error responses; concrete protocol semantics. |
 | [Best practices](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-best-practices) | best-practices | 0.78 | The page focuses on concrete usage patterns for Azure App Configuration (key groupings, key-value composition, bootstrap patterns, etc.). These are product-specific DO/DON'T recommendations and patterns that go beyond generic configuration advice, fitting the best-practices category. |
 | [Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-enable-rbac) | security | 0.78 | Page is focused on using Microsoft Entra ID and Azure RBAC with Azure App Configuration. It likely lists specific built-in roles, their permissions, and how to assign them to principals (users, managed identities, service principals), which are product-specific security configuration details rather than generic concepts. |
+| [Point-in-time key-values](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-point-time-snapshot) | limits-quotas | 0.78 | Contains specific tier-based history retention limits (7 days for Free/Developer, 30 days for Standard/Premium) that are numeric, SKU-specific constraints not generally known from training. |
 | [Authorization](https://learn.microsoft.com/en-us/azure/azure-app-configuration/rest-api-authorization-index) | security | 0.75 | Details how authorization depends on chosen authentication method and lists models; product-specific access control behavior. |
 | [Configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-azure-functions-csharp) | integrations | 0.75 | Quickstart for Azure Functions using .NET configuration provider; includes function-specific configuration patterns and provider usage. |
 | [Configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-go-console-app) | integrations | 0.75 | Quickstart for Go provider; includes binding to structs, composition, prefix trimming, and Key Vault resolution—provider-specific integration details. |
@@ -105,13 +144,10 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Key
 | [Configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-javascript-provider) | integrations | 0.75 | Quickstart for JavaScript provider; describes Map-based access, composition, prefix trimming, and Key Vault resolution—provider-specific behaviors and APIs. |
 | [Consistency model](https://learn.microsoft.com/en-us/azure/azure-app-configuration/rest-api-consistency) | integrations | 0.75 | Documents synchronization token mechanism and usage for real-time consistency; protocol-level behavior unique to this API. |
 | [Dynamic configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/enable-dynamic-configuration-python) | integrations | 0.75 | Dynamic configuration tutorial; uses Python provider’s caching and refresh APIs, which are integration-specific. |
-| [Encrypt data using customer-managed keys](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-customer-managed-keys) | security | 0.75 | Describes using Key Vault keys for encryption; likely includes key configuration, identity requirements, and rotation behavior specific to App Configuration. |
 | [Feature reference](https://learn.microsoft.com/en-us/azure/azure-app-configuration/reference-dotnet-provider) | integrations | 0.75 | Reference for .NET provider library with managed loading and extra functionality; contains product-specific API patterns and options. |
 | [Feature reference](https://learn.microsoft.com/en-us/azure/azure-app-configuration/reference-javascript-provider) | integrations | 0.75 | Reference for JavaScript provider library with managed loading and extra features; product-specific integration details. |
-| [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-chat-completion-config) | configuration | 0.75 | Describes model selection, prompts, temperature, token limits, etc.; likely includes concrete configuration schema and parameter names for chat completion. |
 | [Feature reference](https://learn.microsoft.com/en-us/azure/azure-app-configuration/reference-go-provider) | integrations | 0.74 | Reference page for the Go configuration provider that describes product-specific integration patterns, including provider APIs, options, and parameters for loading configurations and feature flags from Azure App Configuration. This is concrete SDK/config usage unique to this service, beyond generic Go or configuration concepts. |
-| [.NET](https://learn.microsoft.com/en-us/azure/azure-app-configuration/enable-dynamic-configuration-dotnet-core-push-refresh) | integrations | 0.70 | Push refresh model using App Configuration events; involves client library options, refresh triggers, and configuration parameters unique to this integration. |
-| [.NET](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-chat-completion-dotnet) | integrations | 0.70 | Quickstart wiring App Configuration chat settings into a .NET app; includes code and configuration patterns specific to this integration. |
+| [Encrypt data using customer-managed keys](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-customer-managed-keys) | security | 0.72 | Page is about using customer-managed keys with Azure App Configuration, which typically includes product-specific security configuration details (Key Vault integration, identity/permissions, key usage behavior). This is security-focused (encryption and key management) rather than conceptual only. |
 | [.NET](https://learn.microsoft.com/en-us/azure/azure-app-configuration/reload-key-vault-secrets-dotnet) | integrations | 0.70 | Covers automatic reload of secrets and certificates; typically includes provider configuration options, refresh intervals, and flags unique to this integration. |
 | [ASP.NET Core](https://learn.microsoft.com/en-us/azure/azure-app-configuration/how-to-telemetry-aspnet-core) | integrations | 0.70 | ASP.NET Core tutorial for tracking feature flag evaluations; expected to include SDK calls, telemetry configuration, and parameter names unique to this integration. |
 | [ASP.NET Core](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-feature-filters-aspnet-core) | integrations | 0.70 | Shows code and configuration for custom feature filters in ASP.NET Core; product-specific integration pattern with concrete APIs. |
@@ -124,6 +160,7 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Key
 | [Common headers](https://learn.microsoft.com/en-us/azure/azure-app-configuration/rest-api-headers) | integrations | 0.70 | Provides reference for custom headers used by this REST API; these are product-specific integration details. |
 | [Configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-python-provider) | integrations | 0.70 | Quickstart for Python provider; built on Azure SDK with provider-specific APIs and configuration usage. |
 | [Connect to Azure Front Door](https://learn.microsoft.com/en-us/azure/azure-app-configuration/how-to-connect-azure-front-door) | integrations | 0.70 | How-to page for a specific product-to-product integration (App Configuration → Front Door) that will include concrete settings such as endpoint types, managed identity usage, and configuration of caching/controls unique to this preview feature. This is implementation-focused integration guidance rather than a conceptual overview. |
+| [Disable public network access](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-disable-public-access) | security | 0.70 | How-to guide for disabling public access generally includes specific security settings (e.g., network access configuration options, allowed/denied settings, portal/API parameters) that are product-specific security configuration knowledge. |
 | [Dynamic configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/enable-dynamic-configuration-aspnet-netfx) | integrations | 0.70 | Dynamic configuration for ASP.NET Web Forms using App Configuration .NET provider; includes provider usage and patterns unique to this integration. |
 | [Dynamic configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/enable-dynamic-configuration-azure-functions-csharp) | integrations | 0.70 | Dynamic configuration tutorial for Functions; uses provider APIs and Functions-specific integration patterns. |
 | [Dynamic configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/enable-dynamic-configuration-dotnet) | integrations | 0.70 | Dynamic configuration tutorial for .NET Framework; details provider APIs, refresh behavior, and configuration options. |
@@ -140,12 +177,10 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Key
 | [Feature management](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-feature-flag-go-gin) | integrations | 0.70 | Feature flags quickstart for Gin; demonstrates integration of feature flags with real-time updates in this framework. |
 | [Feature management](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-feature-flag-javascript) | integrations | 0.70 | Feature flags quickstart for Node.js; uses JavaScript Feature Management libraries and provider-specific configuration. |
 | [Feature management](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-feature-flag-python) | integrations | 0.70 | Feature flags quickstart for Python; uses App Configuration feature management patterns and provider integration. |
-| [Feature reference](https://learn.microsoft.com/en-us/azure/azure-app-configuration/feature-management-dotnet-reference) | integrations | 0.70 | Reference for .NET feature management library and its integration with App Configuration and ASP.NET Core; includes product-specific APIs and patterns. |
 | [Feature reference](https://learn.microsoft.com/en-us/azure/azure-app-configuration/feature-management-go-reference) | integrations | 0.70 | Go feature management reference describing library usage and integration with App Configuration; product-specific APIs and patterns. |
 | [Feature reference](https://learn.microsoft.com/en-us/azure/azure-app-configuration/feature-management-javascript-reference) | integrations | 0.70 | JavaScript feature management reference with concrete library usage and integration patterns; product-specific code-level behavior. |
 | [Feature reference](https://learn.microsoft.com/en-us/azure/azure-app-configuration/feature-management-python-reference) | integrations | 0.70 | Python feature management reference describing how to define and evaluate flags with App Configuration; product-specific APIs and patterns. |
 | [Feature reference](https://learn.microsoft.com/en-us/azure/azure-app-configuration/reference-python-provider) | integrations | 0.70 | Python configuration provider reference typically includes product-specific integration details such as provider options, parameter names, and usage patterns on top of the base Azure SDK, which qualify as integration & coding patterns beyond generic SDK usage. |
-| [Get started](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-ai-agent-config) | configuration | 0.70 | Page focuses on defining agent instructions and toolsets via Azure App Configuration, likely including specific key structures, schemas, and configuration patterns unique to the Agent framework + App Configuration integration. This is product-specific configuration guidance rather than a generic overview. |
 | [Go](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-chat-completion-go) | integrations | 0.70 | Go integration quickstart; shows how to load and apply chat completion configuration from App Configuration with product-specific code patterns. |
 | [Go Gin](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-feature-filters-go) | integrations | 0.70 | Go Gin web app integration; shows how to use App Configuration feature filters with Go-specific APIs and configuration. |
 | [Go Gin](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-timewindow-filter-go) | integrations | 0.70 | Go Gin integration for scheduled feature flags; includes concrete code and configuration for App Configuration filters. |
@@ -162,18 +197,14 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Key
 | [Network security perimeter](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-network-security-perimeter) | security | 0.70 | Describes product-specific network security perimeter behavior for Azure App Configuration, including how inbound and outbound access is controlled when a store is associated with an NSP. This is concrete, service-specific security configuration guidance rather than a generic concept. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-app-configuration-event) | integrations | 0.70 | Describes App Configuration events via Event Grid; typically includes event types, schema, and subscription configuration parameters, which are integration-specific. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-soft-delete) | limits-quotas | 0.70 | Soft delete feature description for Standard and Premium tiers; typically includes retention duration and behavior constraints, which are numeric and tier-specific. |
+| [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-chat-completion-config) | configuration | 0.70 | Focuses on defining chat completion configuration (model selection, temperature, token limits, prompts) in Azure App Configuration; likely includes specific setting names and allowed ranges for model parameters, fitting configuration patterns. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-feature-filters) | configuration | 0.70 | How-to for feature filters; includes filter types, parameters, and configuration patterns specific to App Configuration feature management. |
-| [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-targetingfilter) | configuration | 0.70 | Describes targeting strategy with users, groups, and percentage rollout; likely includes specific configuration schema and parameters for targeting filters. |
-| [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-timewindow-filter) | configuration | 0.70 | Documents built-in time window filter, including its configuration parameters (start/end times, etc.) for scheduling feature flags. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-variant-feature-flags) | configuration | 0.70 | Explains how to set up variant feature flags; likely includes flag schema, variant properties, and configuration fields specific to Azure App Configuration. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-deployment-overview) | security | 0.70 | Covers roles, permissions, and authentication modes for deployment principals; this is product-specific IAM guidance with concrete role requirements, fitting the security category. |
 | [Preview API life cycle](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-preview-api-life-cycle) | limits-quotas | 0.70 | Defines that preview APIs are deprecated 90 days after newer versions; this is a specific time-based policy (a numeric limit) that affects API usage. |
+| [Private endpoints](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-private-endpoint) | security | 0.70 | Private endpoint article for App Configuration typically includes product-specific network/security settings (DNS configuration, endpoint properties, required subresources, and access patterns) that go beyond generic concepts and are needed for secure-by-default deployment. |
 | [Push using GitHub Actions](https://learn.microsoft.com/en-us/azure/azure-app-configuration/push-kv-github-action) | deployment | 0.70 | GitHub Action workflow for importing configuration; expected to include action name, inputs, and environment variables specific to this integration. |
-| [Python](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-ai-agent-config-python) | integrations | 0.70 | Python app using Agent Framework with App Configuration; includes concrete code and configuration patterns for loading agent specs. |
-| [Python](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-feature-filters-python) | integrations | 0.70 | Python integration for custom feature filters; includes SDK usage and configuration specific to App Configuration. |
 | [Python](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-telemetry-python) | integrations | 0.70 | Python integration for feature flag telemetry; likely documents concrete client APIs and configuration parameters for telemetry events. |
-| [Python](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-time-window-filter-python) | integrations | 0.70 | Python integration article; shows how to configure and use time window filters with App Configuration in Python. |
-| [Python](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-variant-feature-flags-python) | integrations | 0.70 | Python integration tutorial for variant feature flags; expected to document concrete SDK calls and configuration structures for variants. |
 | [Python](https://learn.microsoft.com/en-us/azure/azure-app-configuration/use-key-vault-references-python-provider) | integrations | 0.70 | Tutorial demonstrates product-specific integration patterns between Azure App Configuration and Key Vault in a Python application, including how Key Vault references are represented and consumed via the App Configuration client. This is concrete integration behavior unique to these Azure services rather than generic Python or HTTP usage. |
 | [Python SDK](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-python) | integrations | 0.70 | Quickstart demonstrates Python SDK and provider usage with App Configuration, including dictionary-like access and Key Vault resolution; these are product-specific integration patterns. |
 | [Recover or purge deleted stores](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-recover-deleted-stores-in-azure-app-configuration) | configuration | 0.70 | How-to for setting retention policy, enabling purge protection, and recovering/purging stores; includes specific configuration options and allowed values. |
@@ -185,7 +216,9 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Key
 | [Upgrade guide to version 6](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-convert-to-the-new-spring-boot) | decision-making | 0.70 | Describes breaking changes and required actions to upgrade; provides concrete migration guidance and decisions between old and new setups. |
 | [Use Event Grid for data change notifications](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-app-configuration-event) | integrations | 0.70 | Step-by-step for event subscriptions to web endpoints; includes Event Grid subscription settings and endpoint configuration specific to App Configuration events. |
 | [Use configuration files](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-config-file) | configuration | 0.70 | Covers import tooling, KVSet, and file content profiles; these are product-specific configuration constructs and formats not generally known. |
-| [.NET](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-ai-agent-config-dotnet) | integrations | 0.68 | The page is a concrete how-to for wiring up the Agent Framework in a .NET console app using Azure App Configuration to load YAML agent specs. It includes product-specific code patterns and configuration usage (e.g., how to structure and load agent YAML, how to bind it into the Agent Framework, and how to connect App Configuration to the app). This is integration-focused, with detailed coding patterns unique to Azure App Configuration and the Agent Framework, rather than just a generic tutorial. |
+| [Feature reference](https://learn.microsoft.com/en-us/azure/azure-app-configuration/feature-management-dotnet-reference) | integrations | 0.68 | Reference page for the .NET feature management library with Azure App Configuration; such references usually contain API/SDK parameter details, configuration options, and code patterns specific to this integration, fitting the integrations & coding patterns category. |
+| [Get started](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-ai-agent-config) | configuration | 0.68 | Explains defining agent instructions and toolsets via code or declarative YAML stored in Azure App Configuration; likely includes specific schema/setting names for agent behavior and tools, which are product- and framework-specific configuration details. |
+| [Python](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-feature-filters-python) | integrations | 0.66 | Shows how to implement a custom feature filter for feature flags in a Python app; likely includes specific feature management APIs, filter registration patterns, and configuration keys unique to Azure App Configuration feature management. |
 | [ASP.NET Core](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-targetingfilter-aspnet-core) | integrations | 0.65 | How-to for using the Azure App Configuration targeting filter in ASP.NET Core; likely includes SDK-specific options and parameter names for feature filters beyond generic concepts. |
 | [ASP.NET Core](https://learn.microsoft.com/en-us/azure/azure-app-configuration/use-key-vault-references-dotnet-core) | integrations | 0.65 | Tutorial for using Key Vault references via the App Configuration provider; typically includes provider options, connection settings, and integration-specific patterns beyond generic SDK usage. |
 | [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/azure-app-configuration/policy-reference) | security | 0.65 | Index of built-in policies for App Configuration; each policy encodes specific security/compliance rules and effects, which are product-specific. |
@@ -202,8 +235,10 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Key
 | [Go Gin](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-targetingfilter-go) | integrations | 0.65 | Go Gin integration with Azure App Configuration targeting filter; expected to show concrete client configuration and filter parameters not generally known. |
 | [JavaScript](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-targetingfilter-javascript) | integrations | 0.65 | Node.js-specific usage of the targeting filter for feature rollout; likely documents concrete SDK options and configuration parameters unique to this integration. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-telemetry) | configuration | 0.65 | Covers enabling telemetry for feature flags; likely lists configuration options, event names, and settings specific to Azure App Configuration telemetry. |
-| [Python](https://learn.microsoft.com/en-us/azure/azure-app-configuration/how-to-targeting-filter-python) | integrations | 0.65 | Python client usage of targeting filter; likely includes specific SDK calls and configuration structures for feature filters. |
-| [Python](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-chat-completion-python) | integrations | 0.65 | Quickstart likely includes concrete code and configuration patterns for wiring Azure App Configuration into an AI chat app using chat completion configuration (keys, labels, loading patterns). This is product-specific integration guidance rather than just conceptual content, but it’s a quickstart so depth is moderate. |
+| [.NET](https://learn.microsoft.com/en-us/azure/azure-app-configuration/enable-dynamic-configuration-dotnet-core-push-refresh) | integrations | 0.64 | Describes push refresh model using Azure App Configuration events with .NET client library; likely includes event subscription settings and client options (e.g., cache expiration, refresh triggers) that are product-specific integration parameters. |
+| [.NET](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-ai-agent-config-dotnet) | integrations | 0.63 | Similar to the Python version but for .NET; demonstrates loading agent YAML specs from App Configuration with specific .NET SDK APIs and configuration parameters, fitting integration patterns. |
+| [Python](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-ai-agent-config-python) | integrations | 0.63 | Python guide loading agent YAML specs (behavior, prompts, model configs) from App Configuration; likely includes concrete SDK usage, parameter names, and configuration patterns for integrating Agent Framework with App Configuration. |
+| [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-timewindow-filter) | configuration | 0.62 | Describes adding and configuring the built-in time window filter for feature flags; likely includes specific configuration properties (start/end times, parameter names) and how they are set in App Configuration, which are product-specific configuration details. |
 | [Build project using exported configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/integrate-ci-cd-pipeline) | deployment | 0.60 | Explains using App Configuration data in CI/CD; likely includes pipeline patterns, variables, and product-specific integration details beyond generic CI/CD concepts. |
 | [Configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-aspire) | integrations | 0.60 | Quickstart for Aspire integration; uses Aspire integration libraries and provisioning patterns that are product- and framework-specific. |
 | [Dynamic configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/enable-dynamic-configuration-aspire) | integrations | 0.60 | Dynamic configuration tutorial for Aspire; likely details provider usage, refresh configuration, and Aspire-specific wiring. |
@@ -217,9 +252,7 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Key
 |-----------|------------|--------|
 | [Feature reference](https://learn.microsoft.com/en-us/azure/azure-app-configuration/use-feature-flags-spring-boot) | 0.50 | Tutorial-style guide for using feature flags in Spring Boot; summary emphasizes step-by-step usage and lifecycle behavior but not detailed config tables or limits. |
 | [Move a resource between Azure regions](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-move-resource-between-regions) | 0.50 | Describes manual process to move a store between regions; summary suggests procedural steps without detailed configuration tables or limits. |
-| [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-geo-replication) | 0.50 | Conceptual explanation of geo-replication and resiliency; summary does not indicate detailed configuration tables or numeric thresholds. |
 | [Move a resource between subscriptions or resource groups](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-move-resource-between-subscriptions-resource-groups) | 0.45 | How-to for moving a store between subscriptions/resource groups; appears to be portal/CLI navigation steps rather than deep configuration or limits. |
-| [Disable public network access](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-disable-public-access) | 0.40 | Appears to be a how-to guide for disabling public access and setting up private access, but summary suggests step-by-step tutorial rather than detailed configuration parameter tables or security role definitions; likely more procedural than expert configuration reference. |
 | [Feature management](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-feature-flag-azure-kubernetes-service) | 0.40 | Quickstart tutorial for using feature flags with AKS; primarily step-by-step code and setup without configuration tables, limits, or product-specific edge-case guidance. |
 | [JSON content-type](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-leverage-json-content-type) | 0.40 | Describes using JSON content type for key-values; mostly conceptual and basic usage, not deep configuration matrices or limits. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-ai-configuration) | 0.40 | Introductory AI configuration concept article; mostly benefits and high-level description without detailed parameters or limits. |
@@ -227,25 +260,31 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Key
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-hyperscale-client-configuration) | 0.40 | Conceptual overview of hyperscale configuration delivery via Azure Front Door; summary suggests high-level explanation without detailed config tables or limits. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-snapshots) | 0.40 | Conceptual overview of snapshots; description of what they are without detailed configuration tables, limits, or decision matrices. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/feature-management-overview) | 0.40 | Feature management overview across languages; conceptual description of feature flags without detailed configuration or numeric guidance in the summary. |
-| [Per-environment configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-labels-aspnet-core) | 0.40 | How-to for labels per environment; likely shows usage patterns but not detailed configuration parameter tables or numeric constraints. |
-| [Private endpoints](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-private-endpoint) | 0.40 | Explains what private endpoints are and how they work conceptually for App Configuration; summary does not indicate detailed configuration parameters, role names, or security setting tables that would qualify as product-specific security or configuration expert knowledge. |
+| [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-targetingfilter) | 0.40 | Conceptual description of targeting filters and staged rollout; summary indicates strategy-level content without detailed configuration parameters, numeric thresholds, or error/diagnostic mappings. |
+| [Python](https://learn.microsoft.com/en-us/azure/azure-app-configuration/how-to-targeting-filter-python) | 0.40 | Python tutorial for using targeting filters; appears to be a how-to example rather than a reference of configuration options, limits, or troubleshooting details. |
+| [Python](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-time-window-filter-python) | 0.40 | Tutorial-style guide showing how to use a time window filter in a Python app; no configuration parameter tables, numeric limits, or product-specific best-practice guidance beyond generic feature-flag usage. |
+| [Python](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-variant-feature-flags-python) | 0.40 | Tutorial on using variant feature flags in a Python app; focuses on an example scenario without exposing detailed configuration matrices, limits, or product-specific best-practice constraints. |
 | [Resiliency and disaster recovery](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-disaster-recovery) | 0.40 | Resiliency and disaster recovery overview for App Configuration; summary shows conceptual guidance about geo-replication and high availability without concrete numeric thresholds, configuration tables, or decision matrices. |
 | [Set up private endpoints](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-set-up-private-access) | 0.40 | Described as a how-to for setting up private access via private endpoints; likely step-by-step portal/CLI instructions without extensive parameter tables or unique configuration constraints, so it reads as a standard tutorial rather than expert configuration/security reference. |
+| [.NET](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-chat-completion-dotnet) | 0.30 | Quickstart tutorial for using chat completion configuration in .NET; mainly step-by-step sample usage without detailed configuration tables or numeric constraints. |
 | [ARM template](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-resource-manager) | 0.30 | ARM template quickstart; focuses on basic deployment example, not on exhaustive configuration options, limits, or troubleshooting. |
 | [Bicep](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-bicep) | 0.30 | Basic Bicep quickstart for creating a store; mostly generic IaC deployment steps without detailed configuration matrices or constraints. |
 | [Frequently asked questions](https://learn.microsoft.com/en-us/azure/azure-app-configuration/faq) | 0.30 | FAQ content is mostly conceptual and comparative (for example, differences from Key Vault) without detailed numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices that meet the expert-knowledge criteria. |
+| [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-geo-replication) | 0.30 | Summary indicates a conceptual explanation of geo-replication and resiliency without clear evidence of numeric limits, configuration tables, or decision matrices; likely an overview of the feature rather than detailed expert configuration or limits. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-network-security) | 0.30 | Described as a network security overview for Azure App Configuration; likely explains options like public access controls, private endpoints, and NSP conceptually rather than listing specific RBAC roles, parameter names, or detailed configuration tables. |
+| [Python](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-chat-completion-python) | 0.30 | Quickstart tutorial for using chat completion configuration in Python; similar to .NET quickstart, focused on example code rather than detailed configuration or limits. |
 | [Spring Boot](https://learn.microsoft.com/en-us/azure/azure-app-configuration/how-to-time-window-filter-spring-boot) | 0.30 | How-to tutorial for using time window filters with feature flags in Spring Boot; focuses on step-by-step usage, not on detailed configuration tables, limits, error codes, or product-specific best-practice matrices. |
 | [Associate with a network security perimeter](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-set-up-network-security-perimeter) | 0.20 | Appears to be a step-by-step how-to for associating an App Configuration store with an NSP using Azure CLI, without detailed parameter tables, limits, or security role definitions. More of a procedural tutorial than expert configuration or troubleshooting content. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/azure-app-configuration/cli-samples) | 0.20 | Index of CLI sample scripts; no detailed configuration tables, limits, or troubleshooting content indicated. |
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/azure-app-configuration/powershell-samples) | 0.20 | Index of PowerShell sample scripts; navigation content without product-specific limits, configs, or troubleshooting mappings. |
 | [Configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-java-spring-app) | 0.20 | This is a quickstart tutorial for wiring a Java Spring app to Azure App Configuration. It primarily shows basic integration steps rather than enumerating configuration matrices, limits, or product-specific best-practice patterns. It doesn't meet the thresholds for any expert-knowledge sub-skill type. |
-| [Create an App Configuration store](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-azure-app-configuration-create) | 0.20 | Quickstart for creating a store and key-values; primarily step-by-step tutorial without configuration matrices or expert-only details. |
+| [Create an App Configuration store](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-azure-app-configuration-create) | 0.20 | Quickstart tutorial for creating an App Configuration store and adding key-values; focuses on basic how-to steps without detailed limits, configuration matrices, error codes, or product-specific best practices beyond generic usage. |
 | [Create and manage feature flags](https://learn.microsoft.com/en-us/azure/azure-app-configuration/manage-feature-flags) | 0.20 | Feature flag management quickstart; focused on using portal UI and basic concepts, not deep configuration or limits. |
 | [Feature management](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-feature-flag-spring-boot) | 0.20 | Quickstart tutorial showing how to add feature flags to a Spring Boot app using Azure App Configuration. It is primarily step-by-step guidance and basic integration usage, without detailed configuration parameter tables, limits, error-code-based troubleshooting, or product-specific best-practice guidance with quantified impact. |
 | [Import or export configuration data](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-import-export-data) | 0.20 | How-to for import/export via portal/CLI; typical tutorial flow, no indication of detailed config tables or limits. |
 | [Monitor App Configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/monitor-app-configuration) | 0.20 | High-level overview of monitoring data and Azure Monitor integration for App Configuration; summary indicates conceptual guidance without specific limits, configuration tables, or error-code-based troubleshooting. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-key-value) | 0.20 | Conceptual explanation of key-value storage; no specific limits, configuration tables, or product-specific error/role details. |
+| [Per-environment configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-labels-aspnet-core) | 0.20 | How-to for using labels per environment; primarily tutorial-style usage with no configuration tables, numeric limits, or product-specific best-practice gotchas. |
 | [Snapshot references](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-snapshot-references) | 0.20 | Conceptual explanation of snapshot references and their purpose (immutable configuration plus dynamic updates). The summary indicates high-level behavior without listing configuration parameters, limits, decision matrices, or error mappings, so it does not meet the expert-knowledge criteria for any sub-skill type. |
 | [About Azure App Configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/overview) | 0.10 | High-level overview of Azure App Configuration; no detailed limits, configs, or error mappings. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/configuration-provider-overview) | 0.10 | High-level overview of Azure App Configuration provider libraries; describes purpose and concepts without detailed limits, configuration parameter tables, error codes, or product-specific decision matrices. |

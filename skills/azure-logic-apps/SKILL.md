@@ -1,9 +1,9 @@
 ---
 name: azure-logic-apps
-description: Expert knowledge for Azure Logic Apps development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building Logic Apps with SAP/IBM/FTP connectors, B2B/EDI flows, AI/OpenAI calls, XML/JSON transforms, or DevOps CI/CD, and other Azure Logic Apps related development tasks. Not for Azure Functions (use azure-functions), Azure API Management (use azure-api-management), Azure Service Bus (use azure-service-bus), Azure Event Grid (use azure-event-grid).
+description: Expert knowledge for Azure Logic Apps development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building SAP/B2B flows, OpenAI integrations, hybrid/on-prem access, private endpoints, or DR/HA Logic Apps, and other Azure Logic Apps related development tasks. Not for Azure Functions (use azure-functions), Azure Data Factory (use azure-data-factory), Azure Event Grid (use azure-event-grid), Azure Service Bus (use azure-service-bus).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-21"
+  generated_at: "2026-06-28"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Logic Apps Skill
@@ -31,8 +31,8 @@ This skill requires **network access** to fetch documentation content:
 | Limits & Quotas | L85-L94 | Limits, quotas, and tuning for Logic Apps: JS inline code limits, SQL result/timeouts, connector pagination, large-message chunking, config limits, and metering/billing behavior. |
 | Security | L95-L111 | Securing Logic Apps with identities, auth (Entra, OAuth/OBO, Easy Auth), private endpoints, certificates, and Azure Policy/Defender controls for connectors, storage, and workflows. |
 | Configuration | L112-L154 | Configuring Logic Apps workflows, runtime, B2B/integration accounts, on-premises access, monitoring/logging, expressions, control flow, and storage/zone redundancy settings. |
-| Integrations & Coding Patterns | L155-L262 | Patterns and SDKs for integrating Logic Apps with Azure/IBM/SAP/FTP systems, AI/OpenAI, B2B/EDI, XML/JSON transforms, custom connectors, and automated workflow/unit testing. |
-| Deployment | L263-L284 | Deploying Logic Apps (Standard & Consumption) using ARM/Bicep, DevOps/CI-CD, VS Code, CLI, hybrid setups, deployment slots, and moving/migrating apps across environments. |
+| Integrations & Coding Patterns | L155-L262 | Patterns and SDKs for integrating Logic Apps with Azure/OpenAI, SAP, IBM, storage, messaging, B2B/EDI, custom connectors, inline code, and automated testing workflows. |
+| Deployment | L263-L284 | Deploying Logic Apps (Standard & Consumption) with ARM/Bicep, DevOps/CI-CD, VS Code, CLI, hybrid setups, slots, migration/cloning, and cross-subscription or region moves. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -207,7 +207,7 @@ This skill requires **network access** to fetch documentation content:
 | Use Logic Apps data operations with workflow code samples | https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-data-operations-code-samples |
 | Send and receive AS2 messages in Logic Apps workflows | https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-enterprise-integration-as2 |
 | Use EDIFACT connector for B2B workflows in Logic Apps | https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-enterprise-integration-edifact |
-| Encode and decode flat-file XML in Logic Apps | https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-enterprise-integration-flatfile |
+| Use flat file actions in Azure Logic Apps B2B workflows | https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-enterprise-integration-flatfile |
 | Transform JSON and XML with Liquid in Logic Apps | https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-enterprise-integration-liquid-transform |
 | Exchange RosettaNet messages in Logic Apps B2B workflows | https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-enterprise-integration-rosettanet |
 | Transform XML with maps in Logic Apps workflows | https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-enterprise-integration-transform |
@@ -281,4 +281,4 @@ This skill requires **network access** to fetch documentation content:
 | Configure continuous deployment for Standard Logic Apps via Deployment Center | https://learn.microsoft.com/en-us/azure/logic-apps/set-up-cd-deployment-center-standard |
 | Configure deployment slots for zero-downtime Logic Apps | https://learn.microsoft.com/en-us/azure/logic-apps/set-up-deployment-slots |
 | Set up DevOps deployment for Standard Logic Apps | https://learn.microsoft.com/en-us/azure/logic-apps/set-up-devops-deployment-single-tenant-azure-logic-apps |
-| Set up infrastructure for hybrid-deployed Standard Logic Apps | https://learn.microsoft.com/en-us/azure/logic-apps/set-up-standard-workflows-hybrid-deployment-requirements |
+| Configure hybrid infrastructure for Logic Apps Standard | https://learn.microsoft.com/en-us/azure/logic-apps/set-up-standard-workflows-hybrid-deployment-requirements |

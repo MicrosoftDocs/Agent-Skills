@@ -1,9 +1,9 @@
 ---
 name: azure-microsoft-discovery
-description: Expert knowledge for Azure Microsoft Discovery development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building Discovery workspaces, shared sessions, supercomputer jobs, Docker tools, or Log Analytics queries, and other Azure Microsoft Discovery related development tasks. Not for Azure Resource Graph (use azure-resource-graph), Azure Portal (use azure-portal), Azure Monitor (use azure-monitor), Azure Policy (use azure-policy).
+description: Expert knowledge for Azure Microsoft Discovery development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building Discovery workspaces, shared sessions, supercomputer jobs, Docker tool images, or Log Analytics queries, and other Azure Microsoft Discovery related development tasks.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-14"
+  generated_at: "2026-06-28"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Microsoft Discovery Skill
@@ -26,11 +26,11 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L37-L41 | Diagnosing and fixing Discovery Engine task execution failures, including common error patterns, configuration issues, and steps to restore successful task runs. |
 | Best Practices | L42-L49 | Best practices for structuring projects and shared sessions, applying responsible AI, calibrating trust and safety patterns, and planning tool capabilities and compute for Discovery. |
-| Decision Making | L50-L57 | Guidance on selecting registries, agent types, billing options, and LLM models for Microsoft Discovery, including configuration, cost implications, and matching models/agents to workloads. |
+| Decision Making | L50-L57 | Guidance on selecting registries, agent types, models, and understanding billing to design cost‑effective, well‑configured Microsoft Discovery solutions. |
 | Architecture & Design Patterns | L58-L62 | Designing and implementing advanced shared session patterns in Discovery Engine, including multi-user session management, data sharing, and scalable architecture best practices. |
 | Limits & Quotas | L63-L68 | Planning capacity and Azure quotas for Microsoft Discovery deployments, plus required naming conventions and rules for Discovery resources. |
 | Security | L69-L82 | Security and compliance for Discovery: encryption at rest, customer-managed keys, managed identities, RBAC/persona roles, network/private access, and audit logging configuration. |
-| Configuration | L83-L103 | Configuring Discovery workspaces, supercomputers, storage, tools, data handling, and querying operational/indexing logs via Log Analytics and Kusto. |
+| Configuration | L83-L103 | Configuring Discovery workspaces, supercomputers, storage, tools, data handling, and querying operational/indexing logs via Log Analytics, Kusto, and Azure activity logs |
 | Integrations & Coding Patterns | L104-L111 | Patterns and APIs for integrating tools/models into Discovery workflows, containerizing tools with Docker, writing action scripts, and submitting/monitoring Supercomputer jobs via REST |
 | Deployment | L112-L118 | Deploying Microsoft Discovery: secure stack setup, provisioning supercomputer infra via REST, registering tools, and publishing tool images to Azure Container Registry. |
 
@@ -53,7 +53,7 @@ This skill requires **network access** to fetch documentation content:
 | Choose and configure Azure Container Registry for Discovery | https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-azure-container-registry |
 | Choose appropriate agent types in Microsoft Discovery and Discovery app | https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-discovery-agent-types |
 | Understand Microsoft Discovery billing and charges | https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-discovery-billing |
-| Choose appropriate LLM models for Discovery agents | https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-select-models-for-agents |
+| Choose appropriate models for Microsoft Discovery agents | https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-select-models-for-agents |
 
 ### Architecture & Design Patterns
 | Topic | URL |
@@ -89,7 +89,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure storage containers and assets for Discovery | https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-storage-containers-assets |
 | Access Log Analytics workspaces for Discovery resources | https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-access-resource-logs |
 | Author tool definition YAML for Microsoft Discovery | https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-create-tool-definition |
-| Configure data handling for Microsoft Discovery agents | https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-data-handling-with-tools-agents |
+| Configure data handling for tools and agents in Discovery | https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-data-handling-with-tools-agents |
 | Configure Bookshelf and index knowledgebases in Discovery | https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-index-bookshelf-knowledgebase |
 | Configure storage containers and assets in Discovery | https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-manage-storage-containers |
 | Create and manage Discovery Supercomputers and node pools | https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-manage-supercomputers |

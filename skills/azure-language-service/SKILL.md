@@ -1,9 +1,9 @@
 ---
 name: azure-language-service
-description: Expert knowledge for Azure AI Language development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using CLU, custom NER/classification, CQA, sentiment/summarization, or PII/health text analysis APIs, and other Azure AI Language related development tasks. Not for Azure AI Search (use azure-cognitive-search), Azure AI Speech (use azure-speech), Azure Translator (use azure-translator), Azure AI Bot Service (use azure-bot-service).
+description: Expert knowledge for Azure AI Language development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building CLU apps, custom NER, CQA/QnA, sentiment/summarization, or PII redaction with Azure Language, and other Azure AI Language related development tasks. Not for Azure AI Search (use azure-cognitive-search), Azure AI Speech (use azure-speech), Azure Translator (use azure-translator), Azure AI Bot Service (use azure-bot-service).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-21"
+  generated_at: "2026-06-28"
   generator: "docs2skills/1.0.0"
 ---
 # Azure AI Language Skill
@@ -25,14 +25,14 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L37-L42 | Diagnosing and fixing common issues in custom text classification and custom question answering, including model performance, configuration, and runtime/response problems. |
-| Best Practices | L43-L59 | Best practices for designing, labeling, and evaluating CLU, custom NER, text classification, and CQA projects, including multilingual handling, emojis, schemas, and autolabeling. |
-| Decision Making | L60-L68 | Guidance on choosing regions and resources, lifecycle policies, and migration paths from LUIS, QnA Maker, Text Analytics, and Language Studio to Azure Language and Microsoft Foundry |
-| Architecture & Design Patterns | L69-L75 | Architectural guidance for CLU and custom text classification: choosing CLU vs orchestration workflows, and designing regional backup, redundancy, and failover strategies. |
-| Limits & Quotas | L76-L95 | Limits, quotas, and language/region support for Azure AI Language features (CLU, NER, PII, QnA, etc.), including data sizes, throughput, containers, and model lifecycles. |
-| Security | L96-L106 | Security, encryption, and access control for Azure AI Language: RBAC, managed identities, SAS, CMK/data-at-rest, network isolation, Private Link, and CQA-specific security setup. |
-| Configuration | L107-L131 | Configuring Azure AI Language/CLU/NER/CQA projects and containers, including data formats, resources, Docker/on-prem setups, metrics, confidence scores, PII redaction, and sentiment/summarization. |
-| Integrations & Coding Patterns | L132-L163 | Implementing Azure AI Language features via REST/SDKs: CLU, custom NER/classification, CQA, sentiment, summarization, health, entity linking, and integrating with bots/Power Automate. |
-| Deployment | L164-L173 | How to deploy and run Azure AI Language models (custom classification, NER, QnA, key phrases, language detection) across regions, containers, AKS, and migrate projects/resources. |
+| Best Practices | L43-L54 | Best practices for designing, labeling, and evaluating CLU, custom NER, text classification, and CQA projects, including multilingual handling, emojis, schemas, and autolabeling. |
+| Decision Making | L55-L63 | Guidance on choosing regions and resources, lifecycle policies, and migration paths from LUIS, QnA Maker, Text Analytics, and Language Studio to Azure Language and Microsoft Foundry |
+| Architecture & Design Patterns | L64-L70 | Architectural guidance for CLU and custom text classification: choosing CLU vs orchestration workflows, and designing regional backup, redundancy, and failover strategies. |
+| Limits & Quotas | L71-L89 | Limits, quotas, and language/region support for Azure AI Language features (CLU, NER, PII, QnA, etc.), including data sizes, throughput, containers, and model lifecycles. |
+| Security | L90-L100 | Security, encryption, and access control for Azure AI Language: RBAC, managed identities, SAS, CMK/data-at-rest, network isolation, Private Link, and CQA-specific security setup. |
+| Configuration | L101-L122 | Configuring Azure AI Language/CLU/NER/CQA projects and containers, including data formats, resources, Docker/on-prem setups, metrics, confidence scores, PII redaction, and sentiment/summarization. |
+| Integrations & Coding Patterns | L123-L151 | End-to-end code patterns and SDK/REST integrations for Azure Language features (CLU, NER, entity linking, key phrases, language detection, sentiment, summarization, health, Power Automate). |
+| Deployment | L152-L159 | How to deploy and run Azure AI Language models (custom classification, NER, QnA, key phrases, language detection) across regions, containers, AKS, and migrate projects/resources. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -46,14 +46,9 @@ This skill requires **network access** to fetch documentation content:
 | Handle multilingual and emoji offsets in Language | https://learn.microsoft.com/en-us/azure/ai-services/language-service/concepts/multilingual-emoji-support |
 | Apply CLU conversational design best practices | https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/concepts/best-practices |
 | Implement multilingual CLU projects effectively | https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/concepts/multiple-languages |
-| Design effective CLU project schemas | https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/how-to/build-schema |
-| Tag and label utterances for CLU training | https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/how-to/tag-utterances |
-| Interpret and stabilize CLU model evaluations | https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/how-to/view-model-evaluation |
 | Prepare data and design schemas for custom NER | https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-named-entity-recognition/how-to/design-schema |
 | Label data effectively for custom NER training | https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-named-entity-recognition/how-to/tag-data |
 | Use autolabeling to accelerate custom NER annotation | https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-named-entity-recognition/how-to/use-autolabeling |
-| Prepare data and design schemas for text classification | https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-text-classification/how-to/design-schema |
-| Label data effectively for custom text classification | https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-text-classification/how-to/tag-data |
 | Implement best practices for CQA project quality | https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/concepts/best-practices |
 | Apply project authoring best practices in CQA | https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/how-to/best-practices |
 
@@ -78,7 +73,6 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Data size and rate limits for Azure Language features | https://learn.microsoft.com/en-us/azure/ai-services/language-service/concepts/data-limits |
 | Understand lifecycle timelines for Azure Language models | https://learn.microsoft.com/en-us/azure/ai-services/language-service/concepts/model-lifecycle |
-| Train and manage CLU model jobs and limits | https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/how-to/train-model |
 | Apply CLU Docker container request limits | https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/how-to/use-containers |
 | Apply CLU data, region, and throughput limits | https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/service-limits |
 | Check language and region support for custom NER | https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-named-entity-recognition/language-support |
@@ -115,15 +109,12 @@ This skill requires **network access** to fetch documentation content:
 | Create custom NER projects and configure Azure resources | https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-named-entity-recognition/how-to/create-project |
 | Configure and run Custom NER Docker containers on-premises | https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-named-entity-recognition/how-to/use-containers |
 | Use required data formats for custom text classification | https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-text-classification/concepts/data-formats |
-| Configure and run training jobs for text classification models | https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-text-classification/how-to/train-model |
-| View and interpret evaluation metrics for text classification models | https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-text-classification/how-to/view-model-evaluation |
 | Map NER entity types and tags across API versions | https://learn.microsoft.com/en-us/azure/ai-services/language-service/named-entity-recognition/concepts/ga-preview-mapping |
 | Configure NER skill parameters and inference options | https://learn.microsoft.com/en-us/azure/ai-services/language-service/named-entity-recognition/how-to/skill-parameters |
 | Configure native document PII redaction with Azure Language | https://learn.microsoft.com/en-us/azure/ai-services/language-service/personally-identifiable-information/how-to/redact-document-pii |
 | Understand and configure confidence scores in CQA | https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/concepts/confidence-score |
 | Enable diagnostics and run analytics for CQA projects | https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/how-to/analytics |
 | Add and configure chitchat personas in CQA | https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/how-to/chit-chat |
-| Use supported markdown formats in CQA answers | https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/reference/markdown-format |
 | Run Sentiment Analysis Docker containers | https://learn.microsoft.com/en-us/azure/ai-services/language-service/sentiment-opinion-mining/how-to/use-containers |
 | Run Summarization Docker containers on-premises | https://learn.microsoft.com/en-us/azure/ai-services/language-service/summarization/how-to/use-containers |
 | Configure Text Analytics for health containers | https://learn.microsoft.com/en-us/azure/ai-services/language-service/text-analytics-for-health/how-to/configure-containers |
@@ -134,12 +125,10 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Integrate Azure Language SDK and REST APIs | https://learn.microsoft.com/en-us/azure/ai-services/language-service/concepts/developer-guide |
 | Use Azure Language features asynchronously | https://learn.microsoft.com/en-us/azure/ai-services/language-service/concepts/use-asynchronously |
-| Call CLU prediction APIs and SDKs | https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/how-to/call-api |
 | Create CLU fine-tuning tasks via Foundry and REST API | https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/how-to/create-project |
 | Integrate CLU with Bot Framework SDK | https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/tutorials/bot-framework |
 | Start building custom NER models via Foundry or REST | https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-named-entity-recognition/quickstart |
-| Send prediction requests to custom text classification deployments | https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-text-classification/how-to/call-api |
-| Call the entity linking API with correct parameters | https://learn.microsoft.com/en-us/azure/ai-services/language-service/entity-linking/how-to/call-api |
+| Call Azure Entity Linking API from applications | https://learn.microsoft.com/en-us/azure/ai-services/language-service/entity-linking/how-to/call-api |
 | Call entity linking via SDKs and REST API | https://learn.microsoft.com/en-us/azure/ai-services/language-service/entity-linking/quickstart |
 | Call the key phrase extraction API correctly | https://learn.microsoft.com/en-us/azure/ai-services/language-service/key-phrase-extraction/how-to/call-api |
 | Use key phrase extraction via .NET client library | https://learn.microsoft.com/en-us/azure/ai-services/language-service/key-phrase-extraction/quickstart |
@@ -147,13 +136,12 @@ This skill requires **network access** to fetch documentation content:
 | Implement language detection using SDKs and REST | https://learn.microsoft.com/en-us/azure/ai-services/language-service/language-detection/quickstart |
 | Call the NER API to extract named entities | https://learn.microsoft.com/en-us/azure/ai-services/language-service/named-entity-recognition/how-to-call |
 | Use the NER client library to extract entities | https://learn.microsoft.com/en-us/azure/ai-services/language-service/named-entity-recognition/quickstart |
+| Connect orchestration workflow with CLU and QnA | https://learn.microsoft.com/en-us/azure/ai-services/language-service/orchestration-workflow/tutorials/connect-services |
 | Use Authoring API for custom question answering automation | https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/how-to/authoring |
 | Call the prebuilt CQA API for ad-hoc answering | https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/how-to/prebuilt |
 | Call Sentiment and Opinion Mining APIs | https://learn.microsoft.com/en-us/azure/ai-services/language-service/sentiment-opinion-mining/how-to/call-api |
 | Call Sentiment Analysis via SDK and REST | https://learn.microsoft.com/en-us/azure/ai-services/language-service/sentiment-opinion-mining/quickstart |
-| Call conversation summarization API for chats | https://learn.microsoft.com/en-us/azure/ai-services/language-service/summarization/how-to/conversation-summarization |
-| Summarize native documents via API | https://learn.microsoft.com/en-us/azure/ai-services/language-service/summarization/how-to/document-summarization |
-| Use extractive text summarization API | https://learn.microsoft.com/en-us/azure/ai-services/language-service/summarization/how-to/text-summarization |
+| Call Azure Language summarization APIs | https://learn.microsoft.com/en-us/azure/ai-services/language-service/summarization/how-to/summarize |
 | Use Azure Summarization via SDK and REST | https://learn.microsoft.com/en-us/azure/ai-services/language-service/summarization/quickstart |
 | Enable FHIR structuring in health API output | https://learn.microsoft.com/en-us/azure/ai-services/language-service/text-analytics-for-health/concepts/fhir |
 | Interpret relation extraction JSON output | https://learn.microsoft.com/en-us/azure/ai-services/language-service/text-analytics-for-health/concepts/relation-extraction |
@@ -165,9 +153,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Deploy custom language projects to multiple regions | https://learn.microsoft.com/en-us/azure/ai-services/language-service/concepts/custom-features/multi-region-deployment |
-| Deploy custom text classification models for prediction | https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-text-classification/how-to/deploy-model |
 | Run key phrase extraction in Docker containers on-premises | https://learn.microsoft.com/en-us/azure/ai-services/language-service/key-phrase-extraction/how-to/use-containers |
 | Deploy language detection with Docker containers on-premises | https://learn.microsoft.com/en-us/azure/ai-services/language-service/language-detection/how-to/use-containers |
 | Deploy NER with Docker containers on-premises | https://learn.microsoft.com/en-us/azure/ai-services/language-service/named-entity-recognition/how-to/use-containers |
-| Move custom question answering projects between resources | https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/how-to/migrate-knowledge-base |
 | Deploy Language containers to Azure Kubernetes Service | https://learn.microsoft.com/en-us/azure/ai-services/language-service/tutorials/use-kubernetes-service |

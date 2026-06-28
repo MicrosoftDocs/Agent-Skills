@@ -1,9 +1,9 @@
 ---
 name: azure-repos
-description: Expert knowledge for Azure Repos development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when managing Azure Git/TFVC repos, branch policies/PRs, migrations from TFVC/SVN, CodeQL/GHAS scanning, or auth/permissions, and other Azure Repos related development tasks. Not for Azure DevOps (use azure-devops), Azure Boards (use azure-boards), Azure Pipelines (use azure-pipelines), Azure Artifacts (use azure-artifacts).
+description: Expert knowledge for Azure Repos development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when managing Git/TFVC repos, branch policies, PR workflows, CodeQL/dependency scans, or TFVC→Git migrations, and other Azure Repos related development tasks. Not for Azure DevOps (use azure-devops), Azure Pipelines (use azure-pipelines), Azure Boards (use azure-boards), Azure Artifacts (use azure-artifacts).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-21"
+  generated_at: "2026-06-28"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Repos Skill
@@ -26,17 +26,17 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L36-L50 | Diagnosing and fixing Git/Azure Repos and TFVC issues (locks, merge conflicts, push/RPC errors, undo/recover changes) plus troubleshooting CodeQL, dependency, and secret scanning. |
 | Best Practices | L51-L66 | Git and TFVC best practices: branching, merges, large files, history cleanup, cross‑platform compatibility, author/identity management, repo health, and post‑migration validation. |
-| Decision Making | L67-L76 | Guidance on choosing Git vs TFVC, workspace types, and planning/executing migrations from TFVC or SVN to Git, including hybrid use of TFVC and Git in one Azure DevOps project. |
+| Decision Making | L67-L76 | Guidance on choosing and migrating version control in Azure DevOps: Git vs TFVC, local vs server workspaces, mixed Git/TFVC use, and migration paths from TFVC/SVN to Git or GitHub. |
 | Architecture & Design Patterns | L77-L85 | Designing and choosing TFVC branching structures/strategies, planning strategic branches, implementing feature isolation, and managing branches for DevOps workflows in Azure Repos. |
 | Limits & Quotas | L86-L93 | Limits, quotas, and monitoring for Azure Repos: Git repo size/usage limits, Enterprise Live Migration cutover/sync windows, and supported ecosystems for GitHub Advanced Security dependency scanning. |
-| Security | L94-L119 | Securing Azure Repos and TFVC: auth methods (Entra, PAT, SSH, GCM), repo/branch/TFVC permissions and policies, secure cloning/import, and GitHub Advanced Security/CodeQL configuration. |
-| Configuration | L120-L153 | Configuring Azure Repos/TFVC and related tools: branch policies, PR templates/notifications, repo settings, Git/VS prefs, ELM setup, and GitHub Advanced Security scanning and CodeQL. |
-| Integrations & Coding Patterns | L154-L206 | Integrating Azure Repos with tools (Functions, Node.js, IDEs, Slack/Teams, scanners) and automating workflows via TFVC/tf.exe and Git-specific commands and permissions. |
+| Security | L94-L119 | Securing Azure Repos and TFVC: auth methods (Entra, PAT, SSH, credential managers), branch/repo permissions and policies, GitHub Advanced Security, and safe file/branch access control. |
+| Configuration | L120-L152 | Configuring Azure Repos/DevOps: branch policies, PR templates/notifications, Git/TFVC settings, check-in policies, workspaces, and GitHub Advanced Security (CodeQL, dependency, and secret scanning). |
+| Integrations & Coding Patterns | L153-L206 | Integrating Azure Repos with CLIs, IDEs, notifications, and scanners, plus detailed TFVC/tf.exe commands and Git permissions for automating and extending repo workflows |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
-| Diagnose and fix Enterprise Live Migration errors | https://learn.microsoft.com/en-us/azure/devops/repos/enterprise-live-migrations/troubleshoot?view=azure-devops |
+| Troubleshoot Azure DevOps Enterprise Live Migrations | https://learn.microsoft.com/en-us/azure/devops/repos/enterprise-live-migrations/troubleshoot?view=azure-devops |
 | Handle Git index.lock issues in Visual Studio and Azure Repos | https://learn.microsoft.com/en-us/azure/devops/repos/git/git-index-lock?view=azure-devops |
 | Troubleshoot Git issues in Azure Repos | https://learn.microsoft.com/en-us/azure/devops/repos/git/howto?view=azure-devops |
 | Troubleshoot and resolve Git merge conflicts in Azure Repos | https://learn.microsoft.com/en-us/azure/devops/repos/git/merging?view=azure-devops |
@@ -67,7 +67,7 @@ This skill requires **network access** to fetch documentation content:
 ### Decision Making
 | Topic | URL |
 |-------|-----|
-| Plan Azure DevOps to GitHub ELM migrations | https://learn.microsoft.com/en-us/azure/devops/repos/enterprise-live-migrations/overview?view=azure-devops |
+| Choose Enterprise Live Migration paths to GitHub | https://learn.microsoft.com/en-us/azure/devops/repos/enterprise-live-migrations/overview?view=azure-devops |
 | Plan and execute TFVC to Git migration in Azure DevOps | https://learn.microsoft.com/en-us/azure/devops/repos/git/import-from-tfvc?view=azure-devops |
 | Decide how to migrate from SVN to Git in Azure DevOps | https://learn.microsoft.com/en-us/azure/devops/repos/git/perform-migration-from-svn-to-git?view=azure-devops |
 | Use TFVC and Git together in one Azure DevOps project | https://learn.microsoft.com/en-us/azure/devops/repos/git/team-projects?view=azure-devops |
@@ -105,7 +105,7 @@ This skill requires **network access** to fetch documentation content:
 | Lock Azure Repos Git branches to prevent updates | https://learn.microsoft.com/en-us/azure/devops/repos/git/lock-branches?view=azure-devops |
 | Enforce branch folder structure and secure auth in Azure Repos | https://learn.microsoft.com/en-us/azure/devops/repos/git/require-branch-folders?view=azure-devops |
 | Configure Azure Repos Git repository permissions | https://learn.microsoft.com/en-us/azure/devops/repos/git/set-git-repository-permissions?view=azure-devops |
-| Use Git Credential Manager to access Azure Repos securely | https://learn.microsoft.com/en-us/azure/devops/repos/git/set-up-credential-managers?view=azure-devops |
+| Securely authenticate to Azure Repos with credential managers | https://learn.microsoft.com/en-us/azure/devops/repos/git/set-up-credential-managers?view=azure-devops |
 | Configure SSH key authentication for Azure Repos | https://learn.microsoft.com/en-us/azure/devops/repos/git/use-ssh-keys-to-authenticate?view=azure-devops |
 | Configure GitHub Advanced Security in Azure Repos | https://learn.microsoft.com/en-us/azure/devops/repos/security/configure-github-advanced-security-features?view=azure-devops |
 | Use Copilot Autofix for CodeQL alerts in Azure DevOps | https://learn.microsoft.com/en-us/azure/devops/repos/security/github-advanced-security-code-scanning-autofix?view=azure-devops |
@@ -120,9 +120,8 @@ This skill requires **network access** to fetch documentation content:
 ### Configuration
 | Topic | URL |
 |-------|-----|
-| Use Azure DevOps CLI for ELM operations | https://learn.microsoft.com/en-us/azure/devops/repos/enterprise-live-migrations/elm-cli-reference?view=azure-devops |
-| Prepare Azure DevOps and GitHub for ELM | https://learn.microsoft.com/en-us/azure/devops/repos/enterprise-live-migrations/prerequisites?view=azure-devops |
-| Authenticate and start Enterprise Live Migration sync | https://learn.microsoft.com/en-us/azure/devops/repos/enterprise-live-migrations/start-migration?view=azure-devops |
+| Configure prerequisites for Enterprise Live Migrations | https://learn.microsoft.com/en-us/azure/devops/repos/enterprise-live-migrations/prerequisites?view=azure-devops |
+| Configure and start Enterprise Live Migration sync | https://learn.microsoft.com/en-us/azure/devops/repos/enterprise-live-migrations/start-migration?view=azure-devops |
 | Configure Azure Repos Git branch policies for code quality | https://learn.microsoft.com/en-us/azure/devops/repos/git/branch-policies-overview?view=azure-devops |
 | Use Visual Studio Git commands and Azure DevOps integration | https://learn.microsoft.com/en-us/azure/devops/repos/git/command-prompt?view=azure-devops |
 | Configure Git preferences and config files in Visual Studio | https://learn.microsoft.com/en-us/azure/devops/repos/git/git-config?view=azure-devops |
@@ -154,6 +153,7 @@ This skill requires **network access** to fetch documentation content:
 ### Integrations & Coding Patterns
 | Topic | URL |
 |-------|-----|
+| Use Azure DevOps ELM CLI commands and parameters | https://learn.microsoft.com/en-us/azure/devops/repos/enterprise-live-migrations/elm-cli-reference?view=azure-devops |
 | Create Azure Functions-based custom branch policy for PRs | https://learn.microsoft.com/en-us/azure/devops/repos/git/create-pr-status-server-with-azure-functions?view=azure-devops |
 | Build a Node.js pull request status server for Azure Repos | https://learn.microsoft.com/en-us/azure/devops/repos/git/create-pr-status-server?view=azure-devops |
 | Use Azure DevOps IntelliJ plugin with Git repositories | https://learn.microsoft.com/en-us/azure/devops/repos/git/create-repo-intellij?view=azure-devops |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-21'
+generated_at: '2026-06-28'
 category_descriptions:
   limits-quotas: 'Limits and design guidance for Virtual WAN: P2S client pool sizing,
     hub routing/throughput caps, and using Private Link endpoints within scale and
@@ -48,10 +48,10 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 - **Unclassified**: 42
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 2
-- **Unchanged**: 134
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 137
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-wan/azure-virtual-wan.csv`
 
 ## Classification Statistics
@@ -70,21 +70,10 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ## Changes
 
-### New Pages
-
-- [Azure Portal](https://learn.microsoft.com/en-us/azure/virtual-wan/user-groups-create)
-- [Azure PowerShell](https://learn.microsoft.com/en-us/azure/virtual-wan/point-to-site-user-groups-powershell)
-
 ### Updated Pages
 
-- [Change VPN client app to Microsoft-registered](https://learn.microsoft.com/en-us/azure/virtual-wan/point-to-site-entra-gateway-update)
-  - Updated: 2025-02-10T08:00:00.000Z → 2026-06-17T11:41:00.000Z
-- [Create or modify custom audience app ID](https://learn.microsoft.com/en-us/azure/virtual-wan/point-to-site-entra-register-custom-app)
-  - Updated: 2025-02-25T23:02:00.000Z → 2026-06-17T22:15:00.000Z
-
-### Deleted Pages
-
-- ~~Configure user groups for address pools~~ (https://learn.microsoft.com/en-us/azure/virtual-wan/user-groups-create)
+- [Connection policy](https://learn.microsoft.com/en-us/azure/virtual-wan/how-to-connection-policy)
+  - Updated: 2026-05-26T17:35:00.000Z → 2026-06-24T22:11:00.000Z
 
 ## Classified Pages
 
@@ -217,6 +206,7 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Azure VPN Client versions](https://learn.microsoft.com/en-us/azure/virtual-wan/azure-vpn-client-versions) | 0.30 | Version history and feature listing for the Azure VPN Client; likely a changelog without numeric limits, configuration matrices, or troubleshooting mappings. Does not clearly match any expert-knowledge sub-skill type defined. |
 | [BGP dashboard](https://learn.microsoft.com/en-us/azure/virtual-wan/monitor-bgp-dashboard) | 0.30 | How-to for using the BGP dashboard to view peers and routes; likely step-by-step UI usage without product-specific error codes, config tables, or numeric thresholds. |
 | [Connect a VNet to a virtual hub](https://learn.microsoft.com/en-us/azure/virtual-wan/howto-connect-vnet-hub) | 0.30 | Task-focused how-to for connecting a VNet to a Virtual WAN hub via portal/PowerShell. From the description it appears to be a step-by-step tutorial without detailed limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. Lacks the specific numeric limits, RBAC role lists, or config option tables required for expert-knowledge classification. |
+| [Connection policy](https://learn.microsoft.com/en-us/azure/virtual-wan/how-to-connection-policy) | 0.30 | The summary indicates a how-to for using Virtual WAN connection policy and notes preview/SLA status, but does not clearly show specific limits, configuration parameter tables, error codes, or decision matrices. Without evidence of detailed numeric limits, config tables, or troubleshooting mappings, it does not meet the expert-knowledge criteria for any sub-skill type. |
 | [Leverage Virtual WAN](https://learn.microsoft.com/en-us/azure/virtual-wan/work-remotely-support) | 0.30 | Remote work guidance is largely conceptual/solution marketing; summary does not show detailed configs, limits, or error mappings. |
 | [OpenVPN client](https://learn.microsoft.com/en-us/azure/virtual-wan/point-to-site-vpn-client-certificate-openvpn-linux) | 0.30 | Describes how to configure a Linux OpenVPN client for Virtual WAN P2S with certificate auth; summary suggests a straightforward connection tutorial rather than detailed configuration tables, limits, or error-code-based troubleshooting. |
 | [Reimage an NVA in a virtual hub](https://learn.microsoft.com/en-us/azure/virtual-wan/how-to-network-virtual-appliance-reimage) | 0.30 | Reimaging an NVA in the hub is an operational procedure; description suggests step-by-step actions rather than configuration matrices or limits. |
@@ -228,7 +218,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Azure Monitor Insights](https://learn.microsoft.com/en-us/azure/virtual-wan/azure-monitor-insights) | 0.20 | Describes Azure Monitor Insights view for Virtual WAN and its topology map; summary suggests UI overview rather than detailed configuration parameters, limits, or troubleshooting mappings. |
 | [Configure a site-to-site connection](https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-site-to-site-portal) | 0.20 | Step-by-step tutorial for site-to-site VPN; summary does not mention detailed configuration parameter tables or limits. |
 | [Configure an ExpressRoute connection](https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-expressroute-portal) | 0.20 | ExpressRoute association tutorial; summary is procedural without expert-level limits, quotas, or config matrices. |
-| [Connection policy](https://learn.microsoft.com/en-us/azure/virtual-wan/how-to-connection-policy) | 0.20 | Described as a document explaining how to use connection policy in Azure Virtual WAN, likely a conceptual/how-to preview feature guide without explicit limits, configuration tables, or decision matrices. |
 | [Monitor Virtual WAN](https://learn.microsoft.com/en-us/azure/virtual-wan/monitor-virtual-wan) | 0.20 | General guidance on monitoring Virtual WAN with Azure Monitor; appears to be conceptual/how-to without detailed error codes, config tables, or numeric limits. |
 | [Virtual Network Manager and Virtual WAN overview](https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-network-manager-integration) | 0.20 | The page appears to be a conceptual/overview description of how Azure Virtual Network Manager integrates with Azure Virtual WAN, including preview disclaimers. The provided summary does not indicate presence of numeric limits, configuration parameter tables, error codes, decision matrices, or other detailed product-specific expert guidance. It reads as a feature/preview overview rather than deep technical reference content. |
 | [What is Virtual WAN?](https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-about) | 0.20 | High-level overview of Azure Virtual WAN features and architecture without concrete limits, configs, or decision matrices. |

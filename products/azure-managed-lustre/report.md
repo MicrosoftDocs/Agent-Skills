@@ -49,8 +49,8 @@ confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure NetApp 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 29
+- **Updated Pages**: 0
+- **Unchanged**: 31
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-managed-lustre/azure-managed-lustre.csv`
 
@@ -69,13 +69,6 @@ confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure NetApp 
 | *(Unclassified)* | 4 | 12.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [Plan your client install](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/client-install-plan)
-  - Updated: 2026-06-03T22:09:00.000Z → 2026-06-19T22:04:00.000Z
-- [Upgrade Lustre client](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/client-upgrade)
-  - Updated: 2026-06-03T22:09:00.000Z → 2026-06-19T08:00:00.000Z
 
 ## Classified Pages
 

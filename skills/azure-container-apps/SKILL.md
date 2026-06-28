@@ -1,9 +1,9 @@
 ---
 name: azure-container-apps
-description: Expert knowledge for Azure Container Apps development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring ACA ingress/scale, Dapr microservices, GitHub Actions deploys, Entra auth, or Java workloads, and other Azure Container Apps related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Container Instances (use azure-container-instances), Azure App Service (use azure-app-service), Azure Spring Apps (use azure-spring-apps).
+description: Expert knowledge for Azure Container Apps development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring ACA ingress/scale, Dapr microservices, Entra/OIDC auth, GitHub Actions CI/CD, or Arc-enabled clusters, and other Azure Container Apps related development tasks. Not for Azure App Service (use azure-app-service), Azure Functions (use azure-functions), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Container Instances (use azure-container-instances).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-21"
+  generated_at: "2026-06-28"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Container Apps Skill
@@ -26,7 +26,7 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L37-L52 | Diagnosing and fixing Container Apps issues: deploy/start/exit failures, image pulls, health probes, ports, storage mounts, runtime/OCI errors, debug console, and Java log-level troubleshooting. |
 | Best Practices | L53-L59 | Deployment, cold-start, and runtime tuning guidance: blue-green rollouts, reducing scale-out latency, and optimizing Java memory usage in Azure Container Apps. |
-| Decision Making | L60-L82 | Guidance on choosing Container Apps plans, compute/GPU options, costs, secrets, and hosting services, plus migration paths from legacy, Heroku, Java/Spring/Tomcat, and Functions versions. |
+| Decision Making | L60-L82 | Guidance on choosing Azure Container Apps plans, compute, GPUs, secrets, and environments, plus migration paths from legacy, Heroku, Java/Spring/Tomcat apps, and other Azure container hosting options. |
 | Architecture & Design Patterns | L83-L88 | Architectures and patterns for Java microservices on Azure Container Apps, including Eureka HA clusters, AI-enabled PetClinic, and end-to-end microservice design best practices. |
 | Limits & Quotas | L89-L95 | Limits, quotas, and default behaviors for Container Apps (including express preview), plus how to review current limits and request quota increases. |
 | Security | L96-L134 | Securing Container Apps: auth (Entra, social, OIDC, mTLS, certs), identities/secrets, network controls (NSG, firewall, private endpoints), and policy/best-practice hardening. |
@@ -78,7 +78,7 @@ This skill requires **network access** to fetch documentation content:
 | Compare Azure Container Apps plan types | https://learn.microsoft.com/en-us/azure/container-apps/plans |
 | Choose snapshot and autosuspend state options for Sandboxes | https://learn.microsoft.com/en-us/azure/container-apps/sandboxes-snapshots-state-management |
 | Choose Container Apps compute and billing structures | https://learn.microsoft.com/en-us/azure/container-apps/structure |
-| Choose appropriate workload profiles for Container Apps | https://learn.microsoft.com/en-us/azure/container-apps/workload-profiles-overview |
+| Choose and configure Azure Container Apps workload profiles | https://learn.microsoft.com/en-us/azure/container-apps/workload-profiles-overview |
 
 ### Architecture & Design Patterns
 | Topic | URL |

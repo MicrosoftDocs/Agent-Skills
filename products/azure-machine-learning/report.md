@@ -53,9 +53,9 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 - **Unclassified**: 146
 
 ### Incremental Update
-- **New Pages**: 3
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 627
+- **Unchanged**: 630
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-machine-learning/azure-machine-learning.csv`
 
@@ -75,12 +75,6 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 | *(Unclassified)* | 146 | 23.2% |
 
 ## Changes
-
-### New Pages
-
-- [Deployment templates](https://learn.microsoft.com/en-us/azure/machine-learning/concept-deployment-template?view=azureml-api-2)
-- [Manage models with deployment templates](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-manage-models-deployment-templates?view=azureml-api-2)
-- [Deploy models that use deployment templates](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-deploy-models-deployment-template?view=azureml-api-2)
 
 ## Classified Pages
 

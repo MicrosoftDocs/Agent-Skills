@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-06-21'
+generated_at: '2026-06-28'
 category_descriptions:
-  decision-making: Guidance for choosing Azure SQL MI vs other Azure SQL options,
-    selecting tiers and subnet sizes, configuring standby/replicas, and planning migrations
-    from SQL Server, Db2, and Oracle.
+  decision-making: Guidance for choosing Azure SQL Managed Instance vs other Azure
+    SQL options, selecting tiers and subnet sizes, and planning migrations from SQL
+    Server, Oracle, and Db2.
   troubleshooting: 'Diagnosing and fixing Azure SQL Managed Instance issues: deployment/scale
     errors, performance, connectivity, geo‑replication, memory/log full, XTP storage,
     MI Link, and Entra Kerberos auth.'
@@ -31,17 +31,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure SQL Managed Instance development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when planning MI tiers/migrations, configuring networking, HA/DR & geo‑replication,
-  security (Entra/TDE), or MI Link, and other Azure SQL Managed Instance related development
-  tasks. Not for Azure SQL Database (use azure-sql-database), SQL Server on Azure
-  Virtual Machines (use azure-sql-virtual-machines), Azure Database Migration service
-  (use azure-database-migration).
-use_when: Use when planning MI tiers/migrations, configuring networking, HA/DR & geo‑replication,
-  security (Entra/TDE), or MI Link, and other Azure SQL Managed Instance related development
-  tasks.
+  Use when planning MI vs SQL options, configuring networking, Entra/TDE security,
+  MI Link, or HA/DR geo‑replication, and other Azure SQL Managed Instance related
+  development tasks. Not for Azure SQL Database (use azure-sql-database), SQL Server
+  on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Database for MySQL
+  (use azure-database-mysql), Azure Database for PostgreSQL (use azure-database-postgresql).
+use_when: Use when planning MI vs SQL options, configuring networking, Entra/TDE security,
+  MI Link, or HA/DR geo‑replication, and other Azure SQL Managed Instance related
+  development tasks.
 confusable_not_for: Not for Azure SQL Database (use azure-sql-database), SQL Server
-  on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Database Migration
-  service (use azure-database-migration).
+  on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Database for MySQL
+  (use azure-database-mysql), Azure Database for PostgreSQL (use azure-database-postgresql).
 ---
 # Azure SQL Managed Instance Crawl Report
 
@@ -50,8 +50,8 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), SQL Ser
 - **Total Pages**: 242
 - **Fetched**: 242
 - **Fetch Failed**: 0
-- **Classified**: 183
-- **Unclassified**: 59
+- **Classified**: 184
+- **Unclassified**: 58
 
 ### Incremental Update
 - **New Pages**: 0
@@ -67,22 +67,22 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), SQL Ser
 | architecture-patterns | 1 | 0.4% |
 | best-practices | 18 | 7.4% |
 | configuration | 45 | 18.6% |
-| decision-making | 10 | 4.1% |
+| decision-making | 11 | 4.5% |
 | deployment | 18 | 7.4% |
 | integrations | 20 | 8.3% |
 | limits-quotas | 5 | 2.1% |
 | security | 51 | 21.1% |
 | troubleshooting | 15 | 6.2% |
-| *(Unclassified)* | 59 | 24.4% |
+| *(Unclassified)* | 58 | 24.0% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Create and configure](https://learn.microsoft.com/en-us/azure/azure-sql/database-watcher-manage?view=azuresql)
-  - Updated: 2026-01-12T08:00:00.000Z → 2026-06-16T08:00:00.000Z
-- [Customize time zone](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/timezones-overview?view=azuresql)
-  - Updated: 2025-04-03T08:00:00.000Z → 2026-06-16T22:37:00.000Z
+- [Migrating SQL Server Workloads FAQ](https://learn.microsoft.com/en-us/azure/azure-sql/migration-guides/modernization?view=azuresql)
+  - Updated: 2026-02-19T08:00:00.000Z → 2026-06-22T08:00:00.000Z
+- [Documentation](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/?view=azuresql)
+  - Updated: 2026-04-06T22:36:00Z → 2026-06-23T22:41:00Z
 
 ## Classified Pages
 
@@ -240,6 +240,7 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), SQL Ser
 | [Create and configure](https://learn.microsoft.com/en-us/azure/azure-sql/database-watcher-manage?view=azuresql) | configuration | 0.68 | The article focuses on creating and configuring a database watcher, which implies product-specific configuration steps and options (watcher properties, enablement settings, and operational parameters) rather than just a conceptual overview. These configuration details (specific setting names and how to set them in the Azure portal) are not generic knowledge and qualify as expert, product-specific configuration guidance. |
 | [Database using Log Replay Service](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/log-replay-service-migrate?view=azuresql) | best-practices | 0.68 | Step-by-step migration guide for Log Replay Service that typically includes product-specific prerequisites, sequencing, and best-practice recommendations (for example, backup/log chain handling, cutover patterns, and configuration details) that go beyond generic migration theory. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/azure-sql/database-watcher-faq?view=azuresql) | troubleshooting | 0.68 | FAQ pages for preview monitoring features typically include product-specific error messages, behavioral quirks, and targeted resolutions (for example, why data isn’t appearing, supported regions/limitations, and how to interpret watcher output). These symptom→cause→solution details are not generic SQL knowledge and qualify as troubleshooting-focused expert knowledge. |
+| [Migrating SQL Server Workloads FAQ](https://learn.microsoft.com/en-us/azure/azure-sql/migration-guides/modernization?view=azuresql) | decision-making | 0.68 | FAQ content for migrating SQL Server to Azure SQL typically includes scenario-based guidance, comparisons between Azure SQL Database, Managed Instance, and SQL Server on Azure VM, and recommendations for modernization paths. This goes beyond feature descriptions and helps choose between services and approaches, fitting the decision-making sub-skill. While the summary doesn't show numeric thresholds, migration FAQs on Microsoft Learn usually contain concrete criteria and trade-offs for selecting options. |
 | [.NET with Visual Studio](https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-dotnet-visual-studio?view=azuresql) | integrations | 0.65 | Quickstart includes concrete connection string formats, provider/driver names, and code patterns specific to Azure SQL connectivity from .NET in Visual Studio. |
 | [ARM template](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/create-template-quickstart?view=azuresql) | deployment | 0.65 | ARM template quickstart includes schema, resource types, and properties specific to Managed Instance and networking, which are deployment-focused configurations. |
 | [Automated backups](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/automated-backups-overview?view=azuresql) | configuration | 0.65 | Describes automated backup behavior and settings; likely includes retention periods, backup frequency, and geo-redundancy options specific to Managed Instance backup configuration. |
@@ -296,7 +297,6 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), SQL Ser
 | [Log Replay Service (LRS) Overview](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/log-replay-service-overview?view=azuresql) | 0.30 | Described as an overview of Log Replay Service for Azure SQL Managed Instance; focuses on what LRS is and its purpose for migration, without clear indication of detailed configuration parameters, limits, or troubleshooting mappings required for expert-knowledge classification. |
 | [Long-term backup retention](https://learn.microsoft.com/en-us/azure/azure-sql/database/long-term-retention-overview?view=azuresql) | 0.30 | Described as a conceptual overview of long-term retention backups; based on the summary it focuses on what LTR is and high-level capabilities (e.g., up to 10 years) rather than detailed limits tables, configuration parameters, or decision matrices. |
 | [Migrate with the link](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/managed-instance-link-migrate?view=azuresql) | 0.30 | Described as a how-to for using Managed Instance link to migrate; summary does not indicate detailed configuration tables, error codes, or quantified best practices—likely a procedural tutorial rather than expert-knowledge reference content. |
-| [Migrating SQL Server Workloads FAQ](https://learn.microsoft.com/en-us/azure/azure-sql/migration-guides/modernization?view=azuresql) | 0.30 | FAQ about migration and modernization; summary suggests conceptual guidance without specific numeric thresholds or configs. |
 | [Request quota increases](https://learn.microsoft.com/en-us/azure/azure-sql/database/quota-increase-request?view=azuresql) | 0.30 | Page describes the process to request a quota increase and subscription access/zone redundancy, but is about support workflow rather than listing specific numeric limits, tier-based quota tables, or timeout ranges. It lacks the concrete numerical constraints required for the limits-quotas category and does not fit other sub-skill types. |
 | [SSMS](https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-ssms?view=azuresql) | 0.30 | Basic quickstart for connecting with SSMS and running simple queries; mostly step-by-step tutorial without product-specific expert patterns or constraints. |
 | [Traffic management](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/traffic-management-overview?view=azuresql) | 0.30 | Traffic management overview; explains separation of user-managed vs service-managed traffic conceptually. |
@@ -327,7 +327,7 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), SQL Ser
 | [Always Encrypted](https://learn.microsoft.com/en-us/azure/azure-sql/database/always-encrypted-landing?view=azuresql) | 0.10 | Landing page for Always Encrypted docs; no detailed content itself. |
 | [Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/doc-changes-updates-release-notes-whats-new-archive?view=azuresql) | 0.10 | Archive of 'what's new' release-note links and documentation changes; no detailed limits, configs, troubleshooting mappings, or other structured expert data indicated. |
 | [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-release-notes-whats-new-archive?view=azuresql) | 0.10 | Archive page summarizing older feature and documentation updates; functions as navigation/history, not detailed technical guidance with specific parameters or limits. |
-| [Documentation](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/?view=azuresql) | 0.10 | Landing/overview documentation hub for Azure SQL Managed Instance; primarily navigation and conceptual description without detailed limits, configuration tables, error codes, or decision matrices. |
+| [Documentation](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/?view=azuresql) | 0.10 | Landing/overview page for Azure SQL Managed Instance documentation; primarily navigation and high-level description without detailed limits, configuration tables, error codes, or decision matrices. |
 | [Microsoft Entra authentication documentation](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-azure-ad-landing?view=azuresql) | 0.10 | Landing page for Microsoft Entra authentication docs; no detailed configuration content itself. |
 | [Migrate to Azure SQL](https://learn.microsoft.com/en-us/azure/azure-sql/migration-guides/?view=azuresql) | 0.10 | Landing page linking to migration guides; no concrete technical details or parameters. |
 | [Public data sets](https://learn.microsoft.com/en-us/azure/azure-sql/public-data-sets?view=azuresql) | 0.10 | List of public datasets is informational; does not provide product-specific configuration, limits, or troubleshooting mappings. |

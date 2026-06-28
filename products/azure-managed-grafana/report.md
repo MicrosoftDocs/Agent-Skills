@@ -43,8 +43,8 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Data Explor
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 44
+- **Updated Pages**: 0
+- **Unchanged**: 45
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-managed-grafana/azure-managed-grafana.csv`
 
@@ -62,11 +62,6 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Data Explor
 | *(Unclassified)* | 8 | 17.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [Authenticate data plane APIs with Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-authenticate-data-plane-api)
-  - Updated: 2026-06-11T11:42:00.000Z → 2026-06-15T11:43:00.000Z
 
 ## Classified Pages
 

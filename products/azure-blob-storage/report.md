@@ -1,18 +1,18 @@
 ---
-generated_at: '2026-06-21'
+generated_at: '2026-06-28'
 category_descriptions:
-  decision-making: 'Cost and architecture choices for Blob Storage: pricing, tiers,
-    migration tools, private connectivity, data protection, reserved capacity, and
-    detailed cost estimation for storage, access, and archive.'
+  decision-making: 'Cost planning and design choices for Blob Storage: tiers, archive
+    retrieval, networking, reserved capacity, migration tools, data protection, and
+    mapping operations to billing.'
   configuration: 'Configuring and monitoring Azure Blob Storage: lifecycle, immutability,
     soft delete, PITR, inventory, networking, BlobFuse, Storage Mover, migrations,
     and third‑party backup/move tools.'
   security: 'Securing Blob and Data Lake access: RBAC/ABAC, Entra ID auth, SAS tokens,
     SFTP, ACLs, Storage Mover, anonymous access controls, and encryption (CSE, scopes,
     keys, BlobFuse2).'
-  best-practices: 'Performance, cost, reliability, and monitoring best practices for
-    Azure Blob/Data Lake: access tiers, lifecycle, concurrency, client tuning, retries,
-    NFS/SFTP, events, and backup/migration guidance.'
+  best-practices: 'Performance, cost, and reliability best practices for Blob/Data
+    Lake: access tiers, lifecycle, partitioning, concurrency, client tuning, NFS/SFTP,
+    retries, monitoring, and backup/migration guidance.'
   limits-quotas: Limits, quotas, and performance/scalability behavior for Blob Storage
     (tiers, archive/rehydration, NFS/SFTP, BlobFuse, Data Lake, static sites, replication)
     and related known issues.
@@ -31,12 +31,13 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Blob Storage development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  using Blob tiers, lifecycle/immutability, Data Lake Gen2, SAS/RBAC auth, or NFS/BlobFuse
-  mounts, and other Azure Blob Storage related development tasks. Not for Azure Files
-  (use azure-files), Azure Table Storage (use azure-table-storage), Azure Queue Storage
-  (use azure-queue-storage), Azure NetApp Files (use azure-netapp-files).
-use_when: Use when using Blob tiers, lifecycle/immutability, Data Lake Gen2, SAS/RBAC
-  auth, or NFS/BlobFuse mounts, and other Azure Blob Storage related development tasks.
+  using Data Lake Gen2, BlobFuse/NFS/SFTP, lifecycle/immutability, SAS/RBAC auth,
+  or static website hosting, and other Azure Blob Storage related development tasks.
+  Not for Azure Files (use azure-files), Azure Table Storage (use azure-table-storage),
+  Azure Queue Storage (use azure-queue-storage), Azure NetApp Files (use azure-netapp-files).
+use_when: Use when using Data Lake Gen2, BlobFuse/NFS/SFTP, lifecycle/immutability,
+  SAS/RBAC auth, or static website hosting, and other Azure Blob Storage related development
+  tasks.
 confusable_not_for: Not for Azure Files (use azure-files), Azure Table Storage (use
   azure-table-storage), Azure Queue Storage (use azure-queue-storage), Azure NetApp
   Files (use azure-netapp-files).
@@ -52,10 +53,10 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Table Storage (
 - **Unclassified**: 83
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 11
-- **Unchanged**: 401
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 2
+- **Unchanged**: 411
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-blob-storage/azure-blob-storage.csv`
 
 ## Classification Statistics
@@ -65,48 +66,22 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Table Storage (
 | architecture-patterns | 1 | 0.2% |
 | best-practices | 30 | 7.3% |
 | configuration | 60 | 14.5% |
-| decision-making | 23 | 5.6% |
+| decision-making | 24 | 5.8% |
 | deployment | 11 | 2.7% |
 | integrations | 126 | 30.5% |
-| limits-quotas | 17 | 4.1% |
+| limits-quotas | 16 | 3.9% |
 | security | 55 | 13.3% |
 | troubleshooting | 7 | 1.7% |
 | *(Unclassified)* | 83 | 20.1% |
 
 ## Changes
 
-### New Pages
-
-- [Authorize access with Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/storage/blobs/secure-file-transfer-protocol-support-entra-id-based-access)
-
 ### Updated Pages
 
-- [Static websites](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-static-website)
-  - Updated: 2025-04-14T22:03:00.000Z → 2026-06-16T08:00:00.000Z
-- [.NET](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-user-delegation-sas-create-dotnet)
-  - Updated: 2024-09-06T17:09:00.000Z → 2026-06-15T22:19:00.000Z
-- [Performance tuning for uploads and downloads](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-tune-upload-download-javascript)
-  - Updated: 2024-10-28T08:00:00.000Z → 2026-06-16T05:25:00.000Z
-- [Premium block blob storage accounts](https://learn.microsoft.com/en-us/azure/storage/blobs/scalability-targets-premium-block-blobs)
-  - Updated: 2025-05-21T17:04:00.000Z → 2026-06-16T05:25:00.000Z
-- [Upload blobs](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-upload-javascript)
-  - Updated: 2025-03-27T17:09:00.000Z → 2026-06-16T05:25:00.000Z
-- [Download blobs](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-download-javascript)
-  - Updated: 2024-10-30T22:05:00.000Z → 2026-06-16T05:25:00.000Z
-- [Access tiers](https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview)
-  - Updated: 2026-04-13T22:10:00.000Z → 2026-06-15T17:26:00.000Z
-- [Upload blobs](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-upload)
-  - Updated: 2025-10-01T22:16:00.000Z → 2026-06-16T05:25:00.000Z
-- [Download blobs](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-download)
-  - Updated: 2024-08-05T08:00:00.000Z → 2026-06-16T05:25:00.000Z
-- [Performance tuning for uploads and downloads](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-tune-upload-download)
-  - Updated: 2025-11-19T08:00:00.000Z → 2026-06-16T05:25:00.000Z
-- [BlobFuse2 unmount](https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-commands-unmount)
-  - Updated: 2023-04-04T00:00:00.000Z → 2026-06-16T05:25:00.000Z
-
-### Deleted Pages
-
-- ~~Authorize access with Microsoft Entra ID (preview)~~ (https://learn.microsoft.com/en-us/azure/storage/blobs/secure-file-transfer-protocol-support-entra-id-based-access)
+- [Resource hierarchy](https://learn.microsoft.com/en-us/azure/storage-mover/resource-hierarchy)
+  - Updated: 2023-07-25T08:00:00.000Z → 2026-06-24T05:15:00.000Z
+- [Smart tiering](https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-smart)
+  - Updated: 2026-05-04T17:21:00.000Z → 2026-06-22T05:17:00.000Z
 
 ## Classified Pages
 
@@ -191,7 +166,7 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Table Storage (
 | [Monitoring Blob Storage data reference](https://learn.microsoft.com/en-us/azure/storage/blobs/monitor-blob-storage-reference) | configuration | 0.78 | A monitoring data reference for Blob Storage will enumerate specific metric names, dimensions, and log fields with their meanings and sometimes units/allowed values. This is product-specific, parameter-level information that an LLM is unlikely to fully know from training and aligns best with the configuration category (detailed reference of observable fields and their structure), rather than conceptual monitoring guidance. |
 | [PowerShell](https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-data-operations-powershell) | security | 0.78 | PowerShell-specific authorization flow using Microsoft Entra credentials, including cmdlet usage and token-based behavior, is product- and tool-specific security configuration beyond generic concepts. |
 | [PowerShell](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-user-delegation-sas-create-powershell) | security | 0.78 | Covers PowerShell parameters and patterns for generating user delegation SAS tokens with Entra credentials; product-specific secure access configuration. |
-| [Smart tiering](https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-smart) | limits-quotas | 0.78 | Page includes concrete, product-specific timing thresholds for automatic tier transitions (for example, data not accessed for 30 days moves to cool tier and after 90 days to cold tier). These are exact numeric limits/thresholds that govern the feature’s behavior and are unlikely to be reliably known without the documentation. |
+| [Smart tiering](https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-smart) | decision-making | 0.78 | Page includes specific, product-defined thresholds for when data moves between hot, cool, and cold tiers (for example, 30 and 90 days of inactivity), which are not generic knowledge. These quantified rules guide when to use smart tier and how it behaves, fitting decision-making guidance with concrete numbers rather than just conceptual overview. |
 | [Latency in Blob storage](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-latency) | best-practices | 0.76 | Explains how to measure and design for Blob latency with product-specific metrics and patterns; actionable performance best practices beyond generic latency concepts. |
 | [Point-in-time-restore](https://learn.microsoft.com/en-us/azure/storage/blobs/point-in-time-restore-overview) | configuration | 0.76 | Describes feature behavior, supported account types, and tier constraints for point-in-time restore; product-specific configuration and capability details. |
 | [Azure Storage reserved capacity](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-reserved-capacity) | decision-making | 0.75 | Explains reserved capacity with term options (1/3 years), capacity commitments, and discount behavior, guiding SKU and commitment decisions with quantitative cost trade-offs. |
@@ -346,7 +321,6 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Table Storage (
 | [Portal](https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-data-operations-portal) | security | 0.70 | Explains how portal requests are authorized, including which identity (Entra) or access key is used and how to switch; product-specific security/authorization behavior. |
 | [Prevent object replication across tenants](https://learn.microsoft.com/en-us/azure/storage/blobs/object-replication-prevent-cross-tenant-policies) | security | 0.70 | Focuses on preventing cross-tenant replication, likely including specific Azure policy definitions or Entra-related scopes/settings, which are product-specific security configurations. |
 | [Quarkus](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-java-quarkus) | integrations | 0.70 | Quarkus extension quickstart includes framework-specific configuration and Blob SDK usage, which are concrete integration patterns. |
-| [Resource hierarchy](https://learn.microsoft.com/en-us/azure/storage-mover/resource-hierarchy) | best-practices | 0.70 | Describes resource hierarchy and best practices for expressing migration needs; product-specific guidance on how to structure resources. |
 | [Retrieve data from the archive tier](https://learn.microsoft.com/en-us/azure/storage/blobs/cost-estimate-archive-retrieval-copy-blob) | decision-making | 0.70 | Uses sample prices and detailed calculations to quantify the cost of archive retrieval plus analysis, supporting scenario-based cost decisions. |
 | [Security recommendations](https://learn.microsoft.com/en-us/azure/storage/blobs/security-recommendations) | security | 0.70 | The page provides product-specific security recommendations for Azure Blob Storage, likely including concrete guidance such as using specific Azure RBAC roles, network access controls, and encryption settings. These are configuration-level, service-specific security details that go beyond generic security concepts. |
 | [Service SAS](https://learn.microsoft.com/en-us/azure/storage/blobs/sas-service-create-javascript) | security | 0.70 | Provides JavaScript client patterns and parameters for service SAS creation, including permissions and constraints. |
@@ -416,6 +390,7 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Table Storage (
 | [Process change feed logs](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-change-feed-how-to) | integrations | 0.65 | Shows .NET change feed processor library usage with specific APIs and patterns for reading change feed records. |
 | [Register an agent](https://learn.microsoft.com/en-us/azure/storage-mover/agent-register) | security | 0.65 | Agent registration establishes trust with the Storage Mover resource and can occur over public or private endpoints; likely includes identity, trust, and endpoint configuration details specific to this service. |
 | [Release notes](https://learn.microsoft.com/en-us/azure/storage-mover/release-notes) | limits-quotas | 0.65 | Release notes typically include version-specific limitations and sometimes numeric constraints or behavior changes, plus workarounds; these are time-specific expert details not known from training. |
+| [Resource hierarchy](https://learn.microsoft.com/en-us/azure/storage-mover/resource-hierarchy) | best-practices | 0.65 | The article describes how to express migration needs using Storage Mover-specific resources (projects, jobs, agents, endpoints) and includes product-specific guidance on structuring and mapping these resources for different migration scenarios. This is actionable, service-specific best-practices-style guidance rather than just conceptual overview, but it does not focus on limits, configuration tables, or deployment matrices. |
 | [Route events to a custom endpoint](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-event-quickstart) | integrations | 0.65 | Provides concrete CLI commands and parameters to subscribe to Blob events and route them to a webhook endpoint. |
 | [Set or change a blob's access tier](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-use-access-tier-dotnet) | integrations | 0.65 | Includes .NET methods and parameters to set access tiers on blobs, which are concrete integration details with the storage service. |
 | [Set or change a blob's access tier](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-use-access-tier-java) | integrations | 0.65 | Includes Java methods and parameters to configure blob access tiers; concrete integration details. |

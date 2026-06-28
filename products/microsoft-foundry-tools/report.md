@@ -1,14 +1,15 @@
 ---
-generated_at: '2026-06-07'
+generated_at: '2026-06-28'
 category_descriptions:
   integrations: 'Using Content Moderator and Content Understanding via REST/.NET:
     text/image/video moderation, term lists, multimodal analysis, and consuming Markdown/structured
     outputs'
+  decision-making: Guidance for choosing and migrating between Azure AI/Foundry content
+    tools (Content Moderator, Content Safety, Content Understanding), including feature
+    comparisons and pricing/usage planning.
   limits-quotas: Quotas, limits, and supported languages for Content Moderator image/list
     APIs and Content Understanding, plus .NET samples showing how to stay within list
     and usage limits.
-  decision-making: Guidance on choosing and migrating Azure AI/Foundry document processing
-    and Content Understanding tools, plus estimating and planning their pricing.
   configuration: Configuring and customizing Content Understanding analyzers (prebuilt
     and custom), document layout, face detection, and cross-resource capacity settings.
   best-practices: Guidance on improving Content Understanding accuracy, grounding
@@ -26,14 +27,14 @@ category_descriptions:
 skill_description: Expert knowledge for Microsoft Foundry Tools (aka Azure AI services,
   Azure Cognitive Services) development including troubleshooting, best practices,
   decision making, architecture & design patterns, limits & quotas, security, configuration,
-  and integrations & coding patterns. Use when using Content Moderator, Content Understanding
-  analyzers, document layout extraction, face detection, or REST/.NET APIs, and other
-  Microsoft Foundry Tools related development tasks. Not for Microsoft Foundry (use
-  microsoft-foundry), Microsoft Foundry Classic (use microsoft-foundry-classic), Microsoft
-  Foundry Local (use microsoft-foundry-local).
-use_when: Use when using Content Moderator, Content Understanding analyzers, document
-  layout extraction, face detection, or REST/.NET APIs, and other Microsoft Foundry
-  Tools related development tasks.
+  and integrations & coding patterns. Use when using Content Moderator, Content Safety,
+  Content Understanding analyzers, REST/.NET APIs, or document extraction workloads,
+  and other Microsoft Foundry Tools related development tasks. Not for Microsoft Foundry
+  (use microsoft-foundry), Microsoft Foundry Classic (use microsoft-foundry-classic),
+  Microsoft Foundry Local (use microsoft-foundry-local).
+use_when: Use when using Content Moderator, Content Safety, Content Understanding
+  analyzers, REST/.NET APIs, or document extraction workloads, and other Microsoft
+  Foundry Tools related development tasks.
 confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft Foundry
   Classic (use microsoft-foundry-classic), Microsoft Foundry Local (use microsoft-foundry-local).
 ---
@@ -41,14 +42,14 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 
 ## Summary
 
-- **Total Pages**: 53
-- **Fetched**: 53
+- **Total Pages**: 54
+- **Fetched**: 54
 - **Fetch Failed**: 0
-- **Classified**: 31
+- **Classified**: 32
 - **Unclassified**: 22
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
 - **Unchanged**: 53
 - **Deleted Pages**: 0
@@ -59,16 +60,20 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 1 | 1.9% |
-| best-practices | 2 | 3.8% |
-| configuration | 6 | 11.3% |
-| decision-making | 4 | 7.5% |
-| integrations | 12 | 22.6% |
-| limits-quotas | 4 | 7.5% |
+| best-practices | 2 | 3.7% |
+| configuration | 6 | 11.1% |
+| decision-making | 5 | 9.3% |
+| integrations | 12 | 22.2% |
+| limits-quotas | 4 | 7.4% |
 | security | 1 | 1.9% |
 | troubleshooting | 1 | 1.9% |
-| *(Unclassified)* | 22 | 41.5% |
+| *(Unclassified)* | 22 | 40.7% |
 
 ## Changes
+
+### New Pages
+
+- [Migrate from Azure Content Moderator to Azure AI Content Safety](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/content-moderator)
 
 ## Classified Pages
 
@@ -90,6 +95,7 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 | [Create a custom analyzer with Content Understanding Studio](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/how-to/customize-analyzer-content-understanding-studio) | configuration | 0.70 | How-to for creating and improving custom analyzers; involves setting schemas, fields, and options, which are concrete configuration steps. |
 | [Foundry and Content Understanding Studio comparison](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/foundry-vs-content-understanding-studio) | decision-making | 0.70 | A feature comparison page between Foundry and Content Understanding Studio will contain a comparison table of capabilities by option, guiding users on which environment to choose for different needs, which fits the decision-making category. |
 | [Language support](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/language-support) | limits-quotas | 0.70 | Language support page lists supported languages and ISO codes; these are concrete capability constraints and parameter values. |
+| [Migrate from Azure Content Moderator to Azure AI Content Safety](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/content-moderator) | decision-making | 0.70 | Migration guide between two specific Azure AI services with step-by-step, product-specific guidance and code examples that help decide and execute how to move text, image, and custom-terms workloads; this is specialized migration/decision knowledge not purely conceptual. |
 | [Migration from CU Preview to GA](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/how-to/migration-preview-to-ga) | decision-making | 0.70 | Contains concrete, time-bound migration guidance with specific API version numbers and retirement dates, helping decide when and how to move from preview to GA. This is product- and version-specific knowledge not inferable from general training data. |
 | [Prebuilt analyzers](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/prebuilt-analyzers) | configuration | 0.70 | Describes prebuilt analyzers and how to customize them; likely includes analyzer names, options, and configuration fields specific to this service. |
 | [Pricing model details and examples](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/pricing-explainer) | decision-making | 0.70 | Pricing explainer with cost breakdowns and examples; supports cost-based decision making and capacity planning for workloads. |

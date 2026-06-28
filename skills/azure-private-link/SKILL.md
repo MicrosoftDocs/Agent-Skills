@@ -1,9 +1,9 @@
 ---
 name: azure-private-link
-description: Expert knowledge for Azure Private Link development including best practices, decision making, architecture & design patterns, limits & quotas, security, and configuration. Use when configuring Private Endpoints, DNS zones, SNAT bypass, Network Security Perimeters, or Azure Private Resolver, and other Azure Private Link related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure VPN Gateway (use azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute), Azure Virtual WAN (use azure-virtual-wan).
+description: Expert knowledge for Azure Private Link development including best practices, decision making, architecture & design patterns, limits & quotas, security, and configuration. Use when designing Private Endpoints, DNS zones, Private Resolver, NSGs/NSPs, or Azure Firewall inspection, and other Azure Private Link related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure VPN Gateway (use azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-07"
+  generated_at: "2026-06-28"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Private Link Skill
@@ -28,7 +28,7 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L39-L44 | Guidance on choosing perimeter access modes and designing Azure Private Link setups, focusing on security tradeoffs, cost optimization, and migration/transition considerations. |
 | Architecture & Design Patterns | L45-L49 | Designing DNS architectures for Private Endpoints using Azure Private Resolver, including name resolution patterns, forwarding rules, and integration with on-premises or hybrid networks |
 | Limits & Quotas | L50-L56 | Details on Private Link/Endpoint capacity limits, per‑VNet scaling (High Scale), resource availability checks, and common behaviors/FAQs around quotas and constraints |
-| Security | L57-L64 | RBAC setup, security best practices, and traffic inspection/control for Private Endpoints and Private Link using Azure roles, Network Security Perimeters, and Azure Firewall. |
+| Security | L57-L64 | RBAC setup for Private Link and Network Security Perimeters, security best practices, and inspecting/controlling Private Endpoint traffic with Azure Firewall. |
 | Configuration | L65-L76 | Configuring Private Link/Endpoint behavior: subnet and service network policies, DNS records, SNAT bypass, routing, NSPs, diagnostics, and monitoring data for secure connectivity. |
 
 ### Best Practices
@@ -58,7 +58,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Configure RBAC permissions for Azure Network Security Perimeter operations | https://learn.microsoft.com/en-us/azure/private-link/network-security-perimeter-role-based-access-control-requirements |
-| Assign Azure RBAC roles for Private Endpoint and Private Link deployment | https://learn.microsoft.com/en-us/azure/private-link/rbac-permissions |
+| Configure RBAC permissions for Azure Private Link | https://learn.microsoft.com/en-us/azure/private-link/rbac-permissions |
 | Apply security best practices to Azure Private Link | https://learn.microsoft.com/en-us/azure/private-link/secure-private-link |
 | Inspect and control Private Endpoint traffic using Azure Firewall | https://learn.microsoft.com/en-us/azure/private-link/tutorial-inspect-traffic-azure-firewall |
 

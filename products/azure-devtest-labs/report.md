@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Lab Services (use azure-lab-services), Azure D
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 6
-- **Unchanged**: 92
+- **Updated Pages**: 0
+- **Unchanged**: 98
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-devtest-labs/azure-devtest-labs.csv`
 
@@ -75,21 +75,6 @@ confusable_not_for: Not for Azure Lab Services (use azure-lab-services), Azure D
 | *(Unclassified)* | 33 | 33.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [Use Platform-as-a-Service (PaaS) services](https://learn.microsoft.com/en-us/azure/devtest-labs/use-paas-services)
-  - Updated: 2024-10-01T11:13:00.000Z → 2026-06-16T22:28:00.000Z
-- [Create a Service Fabric cluster environment](https://learn.microsoft.com/en-us/azure/devtest-labs/create-environment-service-fabric-cluster)
-  - Updated: 2024-10-01T11:13:00.000Z → 2026-06-16T22:28:00.000Z
-- [Connect an environment to your lab's virtual network](https://learn.microsoft.com/en-us/azure/devtest-labs/connect-environment-lab-virtual-network)
-  - Updated: 2024-10-01T11:13:00.000Z → 2026-06-16T22:28:00.000Z
-- [Configure test environments with nested templates](https://learn.microsoft.com/en-us/azure/devtest-labs/deploy-nested-template-environments)
-  - Updated: 2025-04-08T22:02:00.000Z → 2026-06-16T22:28:00.000Z
-- [Use Azure managed identities to deploy environments](https://learn.microsoft.com/en-us/azure/devtest-labs/use-managed-identities-environments)
-  - Updated: 2024-10-01T11:13:00.000Z → 2026-06-16T22:28:00.000Z
-- [Security alerts for environments](https://learn.microsoft.com/en-us/azure/devtest-labs/environment-security-alerts)
-  - Updated: 2024-10-01T11:13:00.000Z → 2026-06-16T22:28:00.000Z
 
 ## Classified Pages
 

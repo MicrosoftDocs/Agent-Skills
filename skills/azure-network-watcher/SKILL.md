@@ -3,7 +3,7 @@ name: azure-network-watcher
 description: Expert knowledge for Azure Network Watcher development including troubleshooting, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when configuring Connection Monitor, NSG/VNet flow logs, packet capture, Traffic Analytics/KQL, or Sentinel integrations, and other Azure Network Watcher related development tasks. Not for Azure Monitor (use azure-monitor), Azure Virtual Network (use azure-virtual-network), Azure Networking (use azure-networking), Azure Virtual Network Manager (use azure-virtual-network-manager).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-07"
+  generated_at: "2026-06-28"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Network Watcher Skill
@@ -28,8 +28,8 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L45-L51 | Guidance for migrating network monitoring: moving from classic Connection Monitor and Network Performance Monitor tests, and switching NSG flow logs to VNet flow logs. |
 | Limits & Quotas | L52-L56 | How to configure and run Network Watcher packet capture, storage and filtering options, and the key limits/quotas (size, duration, concurrency) that apply to captures |
 | Security | L57-L64 | Securing Network Watcher: RBAC setup, hardening deployments and data access, Zero Trust segmentation with Traffic Analytics, and protecting VNet flow logs using managed identities. |
-| Configuration | L65-L79 | Configuring and governing Network Watcher logging: AMA for Connection Monitor, NSG/VNet flow logs setup, schemas, filtering, templates (Bicep/ARM), and Azure Policy enforcement. |
-| Integrations & Coding Patterns | L80-L85 | Using Network Watcher data in tools and code: parsing NSG flow logs with PowerShell, visualizing in Power BI, triggering packet capture from Functions, querying Traffic Analytics with KQL, and integrating with Sentinel. |
+| Configuration | L65-L78 | Configuring and governing Network Watcher logging: AMA for Connection Monitor, NSG/VNet flow logs setup, schemas, filtering, templates (Bicep/ARM), and Azure Policy enforcement. |
+| Integrations & Coding Patterns | L79-L84 | Using Network Watcher data in tools and code: parsing NSG flow logs with PowerShell, visualizing in Power BI, triggering packet capture from Functions, querying Traffic Analytics with KQL, and integrating with Sentinel. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -65,7 +65,6 @@ This skill requires **network access** to fetch documentation content:
 ### Configuration
 | Topic | URL |
 |-------|-----|
-| Configure Azure Monitor Agent for Connection Monitor | https://learn.microsoft.com/en-us/azure/network-watcher/azure-monitor-agent-with-connection-monitor |
 | Install and manage Azure Monitor Agent on Arc servers | https://learn.microsoft.com/en-us/azure/network-watcher/connection-monitor-install-azure-monitor-agent |
 | Understand Connection Monitor Log Analytics data schemas | https://learn.microsoft.com/en-us/azure/network-watcher/connection-monitor-schema |
 | Enable NSG flow logs using Bicep | https://learn.microsoft.com/en-us/azure/network-watcher/nsg-flow-logs-bicep |

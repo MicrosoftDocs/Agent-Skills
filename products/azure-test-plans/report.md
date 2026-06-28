@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-17'
+generated_at: '2026-06-28'
 category_descriptions:
   limits-quotas: Managing custom fields on test runs and understanding data retention
     limits, default quotas, and how long Azure Test Plans data is kept or deleted
@@ -32,8 +32,8 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 34
+- **Updated Pages**: 1
+- **Unchanged**: 33
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-test-plans/azure-test-plans.csv`
 
@@ -47,6 +47,11 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 | *(Unclassified)* | 30 | 88.2% |
 
 ## Changes
+
+### Updated Pages
+
+- [Actual Result](https://learn.microsoft.com/en-us/azure/devops/test/actual-result?view=azure-devops)
+  - Updated: 2026-04-14T01:03:00.000Z → 2026-06-24T01:04:00.000Z
 
 ## Classified Pages
 
@@ -63,7 +68,6 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 |-----------|------------|--------|
 | [Set test retention policies](https://learn.microsoft.com/en-us/azure/devops/test/how-long-to-keep-test-results?view=azure-devops) | 0.40 | Discusses having a policy for test result retention conceptually; summary does not show concrete retention limits, config parameter tables, or tier-specific values. Appears as general guidance rather than detailed limits or configuration reference. |
 | [Manage test failure type](https://learn.microsoft.com/en-us/azure/devops/test/manage-test-failure-type?view=azure-devops) | 0.35 | Customization of failure types is described conceptually; summary does not show numeric limits, config tables, or security/role specifics. |
-| [Actual Result](https://learn.microsoft.com/en-us/azure/devops/test/actual-result?view=azure-devops) | 0.30 | Describes preview feature to record actual results; configuration is at test plan level but no clear numeric limits, config tables, or error codes in summary. |
 | [Add to existing bugs](https://learn.microsoft.com/en-us/azure/devops/test/add-to-bugs-exploratory-testing?view=azure-devops) | 0.30 | Describes how the extension searches for existing bugs and how to add findings; no error codes, numeric limits, or config parameter tables. |
 | [Explore work items](https://learn.microsoft.com/en-us/azure/devops/test/explore-workitems-exploratory-testing?view=azure-devops) | 0.30 | Exploring work items and linking them; workflow guidance without numeric limits or configuration parameter tables. |
 | [Install the Test & Feedback extension](https://learn.microsoft.com/en-us/azure/devops/test/perform-exploratory-tests?view=azure-devops) | 0.30 | Installation and basic use of the Test & Feedback extension; appears as a feature/tutorial page without detailed configuration matrices or limits. |
@@ -77,6 +81,7 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 | [Repeat a test with different data](https://learn.microsoft.com/en-us/azure/devops/test/repeat-test-with-different-data?view=azure-devops) | 0.25 | Shows how to parameterize manual tests and reuse data; procedural but lacks numeric limits, config tables, or troubleshooting mappings. |
 | [Run automated tests from test plans](https://learn.microsoft.com/en-us/azure/devops/test/run-automated-tests-from-test-hub?view=azure-devops) | 0.25 | Explains how to run automated tests from test plans; focused on triggering tests via UI/pipelines, not on quotas, configuration matrices, or error diagnostics. |
 | [Track test status](https://learn.microsoft.com/en-us/azure/devops/test/track-test-status?view=azure-devops) | 0.25 | Viewing test status and charts; reporting how-to without numeric system limits or config matrices. |
+| [Actual Result](https://learn.microsoft.com/en-us/azure/devops/test/actual-result?view=azure-devops) | 0.20 | Page describes how to use the Actual Result field in Azure Test Plans and how it behaves (inheritance, retention tied to test run policies), but does not include numeric limits, configuration parameter tables, error codes, or other product-specific expert details that match any defined sub-skill type. |
 | [Copy or clone test items](https://learn.microsoft.com/en-us/azure/devops/test/copy-clone-test-items?view=azure-devops) | 0.20 | How-to guidance for copying/cloning test artifacts; no evidence of numeric limits, configuration parameter tables, error-code-based troubleshooting, or other product-specific expert details. |
 | [Create & manage test cases](https://learn.microsoft.com/en-us/azure/devops/test/create-test-cases?view=azure-devops) | 0.20 | How-to guide for creating manual test cases; lacks numeric limits, configuration parameter tables, or detailed troubleshooting mappings. |
 | [Create & manage test plans](https://learn.microsoft.com/en-us/azure/devops/test/create-a-test-plan?view=azure-devops) | 0.20 | How-to guide for creating/managing test plans; step-by-step UI usage without expert-only limits, configs, or decision matrices. |

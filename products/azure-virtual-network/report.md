@@ -1,15 +1,15 @@
 ---
-generated_at: '2026-06-21'
+generated_at: '2026-06-28'
 category_descriptions:
-  best-practices: 'Best practices for Azure VM/VNet networking: NIC internals, NSGs,
-    outbound access, MTU and TCP/IP tuning, throughput optimization, and using VNet
-    service endpoints securely and efficiently.'
   configuration: 'Configuring Azure Virtual Network behavior: IPs (public/private/custom),
     DNS, DHCP, encryption, peering, gateways, monitoring, and MANA settings for VMs,
     NVAs, and PaaS delegation.'
   decision-making: 'Guidance on design choices: when to use accelerated networking,
     routing preferences, VNets vs appliances, IP upgrade paths, VNet integration options,
     and cost/performance trade-offs.'
+  best-practices: 'Best practices for Azure VM/VNet networking: NIC internals, NSGs,
+    outbound access, MTU and TCP/IP tuning, throughput optimization, and using VNet
+    service endpoints securely and efficiently.'
   troubleshooting: 'Diagnosing and fixing Azure VM/VNet connectivity issues: routing
     and NSG problems, NVAs and routing appliances, SMTP blocking, VNet peering, encryption,
     and VNet deletion errors.'
@@ -44,13 +44,13 @@ confusable_not_for: Not for Azure Virtual Network Manager (use azure-virtual-net
 - **Total Pages**: 131
 - **Fetched**: 131
 - **Fetch Failed**: 0
-- **Classified**: 55
-- **Unclassified**: 76
+- **Classified**: 54
+- **Unclassified**: 77
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 129
+- **Updated Pages**: 1
+- **Unchanged**: 130
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-network/azure-virtual-network.csv`
 
@@ -59,23 +59,21 @@ confusable_not_for: Not for Azure Virtual Network Manager (use azure-virtual-net
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 3 | 2.3% |
-| best-practices | 8 | 6.1% |
+| best-practices | 7 | 5.3% |
 | configuration | 28 | 21.4% |
 | decision-making | 6 | 4.6% |
 | deployment | 1 | 0.8% |
 | limits-quotas | 2 | 1.5% |
 | security | 6 | 4.6% |
 | troubleshooting | 1 | 0.8% |
-| *(Unclassified)* | 76 | 58.0% |
+| *(Unclassified)* | 77 | 58.8% |
 
 ## Changes
 
 ### Updated Pages
 
-- [MANA on Network Virtual Appliances (NVAs) for existing VM sizes](https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-network-virtual-appliance-opt-out)
-  - Updated: 2026-06-02T22:37:00.000Z → 2026-06-17T17:25:00.000Z
-- [Optimize network throughput for Azure virtual machines](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-optimize-network-bandwidth)
-  - Updated: 2025-06-12T22:03:00.000Z → 2026-06-20T05:16:00.000Z
+- [Linux and FreeBSD VMs](https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-how-it-works)
+  - Updated: 2023-06-23T22:28:00.000Z → 2026-06-24T22:11:00.000Z
 
 ## Classified Pages
 
@@ -114,7 +112,6 @@ confusable_not_for: Not for Azure Virtual Network Manager (use azure-virtual-net
 | [Create a virtual machine with static public IP](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/virtual-network-static-public-ip) | limits-quotas | 0.65 | Mentions there is a limit to the number of public IP addresses per subscription and references downloadable IP range lists; this is concrete limits/quotas information beyond generic concepts. |
 | [Create a virtual network with encryption](https://learn.microsoft.com/en-us/azure/virtual-network/how-to-create-encryption) | configuration | 0.65 | How-to for creating an encrypted VNet; likely includes specific settings and parameters required to enable VNet encryption. |
 | [Linux VMs](https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-linux) | configuration | 0.65 | Describes how to enable and configure Microsoft Azure Network Adapter (MANA) on Linux VMs, including product-specific settings and steps. These are detailed configuration instructions for a specific Azure networking feature, beyond generic VM networking concepts. |
-| [Linux and FreeBSD VMs](https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-how-it-works) | best-practices | 0.65 | Deep dive into how Accelerated Networking works (synthetic vs VF interfaces, driver behavior). Contains product-specific implementation details and behavior patterns that guide correct configuration and usage beyond generic networking knowledge. |
 | [Plan virtual networks](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-vnet-plan-design-arm) | architecture-patterns | 0.65 | Planning guidance for multiple VNets and connectivity; likely includes Azure-specific design patterns and when to use them for different isolation and location requirements. |
 | [Service endpoint policies for Azure Storage](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoint-policies-overview) | security | 0.65 | Describes endpoint policies to restrict data exfiltration to specific storage accounts; product-specific network security configuration. |
 | [Application gateway](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/configure-public-ip-application-gateway) | configuration | 0.64 | Covers how public IPs are used as frontends, SKU support, and interaction with HTTP routing; these are specific configuration patterns for Application Gateway. |
@@ -196,6 +193,7 @@ confusable_not_for: Not for Azure Virtual Network Manager (use azure-virtual-net
 | [Dissociate public IP address from a VM](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/remove-public-ip-address-vm) | 0.30 | Simple dissociation procedure; lacks product-specific limits, config parameter tables, or error-code-based troubleshooting. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-faq) | 0.30 | FAQ likely covers general questions; description does not indicate detailed limits, configs, or troubleshooting mappings. |
 | [Filter network traffic](https://learn.microsoft.com/en-us/azure/virtual-network/tutorial-filter-network-traffic) | 0.30 | NSG tutorial focused on basic rule creation; lacks detailed product-specific limits, error codes, or configuration reference tables. |
+| [Linux and FreeBSD VMs](https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-how-it-works) | 0.30 | Page explains internal mechanics of Accelerated Networking (synthetic vs SR-IOV interfaces, data path through virtual switch and host) but is primarily conceptual architecture/behavior without configuration tables, numeric limits, error codes, or decision matrices. It doesn’t match the specific patterns for limits, configuration, best practices, troubleshooting, or other defined sub-skill types. |
 | [MANA support for existing VM sizes](https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-existing-sizes) | 0.30 | Describes support status for existing VM sizes on MANA-capable hardware; summary suggests an announcement/update style page without numeric limits, configuration parameters, or troubleshooting mappings. |
 | [Manage a virtual network peering](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-manage-peering) | 0.30 | Management article for creating/changing/deleting VNet peering; mostly operational steps without detailed limits or troubleshooting mappings. |
 | [Manage route tables](https://learn.microsoft.com/en-us/azure/virtual-network/manage-route-table) | 0.30 | Basic route table management article; generic operations without detailed limits, configuration matrices, or troubleshooting mappings. |

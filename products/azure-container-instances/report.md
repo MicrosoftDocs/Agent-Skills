@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-06-21'
+generated_at: '2026-06-28'
 category_descriptions:
-  limits-quotas: ACI limits on CPU/memory, quotas by region, standby pool constraints,
-    behavior FAQs, and networking/VNet considerations that affect container capacity
-    and availability
+  limits-quotas: 'ACI limits, quotas, and behaviors: vCPU/memory caps, big containers,
+    regional capacity checks, standby pool constraints, and VNet-related resource
+    limitations.'
   architecture-patterns: Design patterns for giving ACI containers static inbound/outbound
     IPs using Application Gateway, firewalls, and NAT Gateway for controlled, predictable
     network egress/ingress.
@@ -28,16 +28,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Container Instances development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, and deployment. Use when configuring ACI
-  networking/VNet IPs, standby pools, GitHub Actions deploys, TLS/ACR auth, or logs/events,
-  and other Azure Container Instances related development tasks. Not for Azure Container
-  Apps (use azure-container-apps), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
-  Azure Virtual Machines (use azure-virtual-machines), Azure Batch (use azure-batch).
-use_when: Use when configuring ACI networking/VNet IPs, standby pools, GitHub Actions
-  deploys, TLS/ACR auth, or logs/events, and other Azure Container Instances related
+  networking, standby pools, Spot containers, GitHub Actions deploys, or secure ACR
+  access, and other Azure Container Instances related development tasks. Not for Azure
+  Container Apps (use azure-container-apps), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
+  Azure Virtual Machines (use azure-virtual-machines), Azure App Service (use azure-app-service).
+use_when: Use when configuring ACI networking, standby pools, Spot containers, GitHub
+  Actions deploys, or secure ACR access, and other Azure Container Instances related
   development tasks.
 confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azure
   Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Virtual Machines
-  (use azure-virtual-machines), Azure Batch (use azure-batch).
+  (use azure-virtual-machines), Azure App Service (use azure-app-service).
 ---
 # Azure Container Instances Crawl Report
 
@@ -75,7 +75,7 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 ### Updated Pages
 
 - [FAQ](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-faq)
-  - Updated: 2025-11-17T23:03:00.000Z → 2026-06-16T22:04:00.000Z
+  - Updated: 2026-06-16T22:04:00.000Z → 2026-06-24T17:03:00.000Z
 
 ## Classified Pages
 
@@ -89,7 +89,7 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | [Deploy using a service principal](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-using-azure-container-registry) | security | 0.80 | Describes using Entra service principals and Key Vault to access ACR; includes security-related configuration (identity, credentials) specific to ACI-ACR integration. |
 | [Troubleshoot common issues](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-troubleshooting) | troubleshooting | 0.80 | Organized around common ACI failure symptoms with specific causes and resolutions, likely including error messages and diagnostic steps. |
 | [Use a managed identity](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-managed-identity) | security | 0.80 | Covers ACI-specific steps and configuration fields to attach managed identities and authenticate to other Azure services, including identity types and scopes. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-faq) | limits-quotas | 0.78 | The FAQ for Azure Container Instances includes concrete, product-specific details such as maximum container group sizes, supported OS and resource constraints, image and volume limitations, restart and retention behaviors, and other numeric or tightly scoped service behaviors that are not purely conceptual. These constitute expert knowledge, with several answers effectively documenting limits/constraints even if not all are in a formal limits table. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-faq) | limits-quotas | 0.78 | The ACI FAQ includes concrete, product-specific details such as maximum container group sizes, supported OS and resource constraints, networking and IP behavior, and other numeric or tightly scoped service behaviors that function as de facto limits/quotas and are unlikely to be fully known from pretraining. These are expert, service-specific constraints rather than generic conceptual information. |
 | [Azure file share](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-volume-azure-files) | configuration | 0.75 | Provides ACI-specific volume mount configuration (share names, storage account keys, mount paths) and constraints for persisting state. |
 | [Monitoring data reference](https://learn.microsoft.com/en-us/azure/container-instances/monitor-azure-container-instances-reference) | configuration | 0.75 | Reference for all ACI monitoring signals (metrics, logs, dimensions), including names and meanings, which are product-specific configuration/usage details. |
 | [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/container-instances/policy-reference) | security | 0.70 | Lists concrete built-in Azure Policy definitions specific to Azure Container Instances, including policy names and effects that map directly to security and governance configuration. This is product-specific security/IAM configuration knowledge that goes beyond generic concepts. |

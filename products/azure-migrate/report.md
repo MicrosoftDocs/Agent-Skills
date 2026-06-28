@@ -1,24 +1,24 @@
 ---
-generated_at: '2026-06-21'
+generated_at: '2026-06-28'
 category_descriptions:
-  integrations: Patterns and tools for integrating code analysis and automation into
-    Azure Migrate, including GitHub Copilot insights, AppCAT CLI, CAST Highlight scans,
-    and REST-based VMware migration.
-  decision-making: Guidance on assessing migration readiness, sizing and cost, choosing
-    tools/services, planning migration waves, and executing workload moves from on-prem,
-    AWS, GCP, or VMware to Azure.
   configuration: Configuring Azure Migrate projects, appliances, assessments, dependency
-    analysis, Arc/agents, networking, and Resource Mover settings for server, SQL,
-    .NET, Java, and PostgreSQL migrations.
-  best-practices: Best practices for preparing on-prem/VMware/legacy Windows workloads
-    and PostgreSQL for Azure migration, securing the Azure Migrate appliance, and
-    running/validating test VM migrations.
+    analysis, Arc/agents, networking (Private Link), and Resource Mover settings for
+    server/SQL/.NET/PostgreSQL migrations.
+  decision-making: Guidance for choosing migration strategies, interpreting Azure
+    Migrate/AppCAT assessments, planning waves and execution, and mapping/modernizing
+    workloads from on-prem, AWS, GCP, and VMware to Azure.
+  best-practices: Best practices for preparing on-prem/VMware machines and appliances,
+    configuring VM hydration, running test migrations, and creating custom/AppCAT/PostgreSQL
+    assessment rules for Azure Migrate.
   limits-quotas: Limits, prerequisites, regions, and support matrices for Azure Migrate
     appliances, discovery, assessment, and migration of VMware, Hyper-V, and physical
     servers.
   security: 'Securing Azure Migrate: least-privilege roles/accounts, Private Link
     discovery/migration, encrypted VM moves, Trusted Launch, RBAC, and Entra ID app
     registration.'
+  integrations: Patterns and tools for integrating code analysis and automation into
+    Azure Migrate, including GitHub Copilot insights, AppCAT CLI, CAST Highlight scans,
+    and REST-based VMware migration.
   troubleshooting: 'Diagnosing and fixing Azure Migrate issues: appliance deployment/discovery,
     assessments, replication, performance, connectivity (incl. private endpoints),
     OS upgrades, and web app migrations.'
@@ -31,14 +31,14 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Migrate development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  using Azure Migrate appliances, Arc-based discovery, VMware/Hyper-V moves, AppCAT/CAST
-  scans, or Resource Mover, and other Azure Migrate related development tasks. Not
-  for Azure Database Migration service (use azure-database-migration), Azure Site
-  Recovery (use azure-site-recovery), Azure Virtual Machines (use azure-virtual-machines),
+  configuring Azure Migrate appliances, AppCAT assessments, Private Link discovery,
+  Arc-based discovery, or REST VMware migration, and other Azure Migrate related development
+  tasks. Not for Azure Database Migration service (use azure-database-migration),
+  Azure Site Recovery (use azure-site-recovery), Azure Virtual Machines (use azure-virtual-machines),
   SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines).
-use_when: Use when using Azure Migrate appliances, Arc-based discovery, VMware/Hyper-V
-  moves, AppCAT/CAST scans, or Resource Mover, and other Azure Migrate related development
-  tasks.
+use_when: Use when configuring Azure Migrate appliances, AppCAT assessments, Private
+  Link discovery, Arc-based discovery, or REST VMware migration, and other Azure Migrate
+  related development tasks.
 confusable_not_for: Not for Azure Database Migration service (use azure-database-migration),
   Azure Site Recovery (use azure-site-recovery), Azure Virtual Machines (use azure-virtual-machines),
   SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines).
@@ -54,10 +54,10 @@ confusable_not_for: Not for Azure Database Migration service (use azure-database
 - **Unclassified**: 96
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 10
-- **Unchanged**: 199
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 9
+- **Unchanged**: 201
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-migrate/azure-migrate.csv`
 
 ## Classification Statistics
@@ -65,11 +65,11 @@ confusable_not_for: Not for Azure Database Migration service (use azure-database
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 2 | 1.0% |
-| best-practices | 6 | 2.9% |
-| configuration | 21 | 10.0% |
-| decision-making | 37 | 17.6% |
+| best-practices | 7 | 3.3% |
+| configuration | 20 | 9.5% |
+| decision-making | 38 | 18.1% |
 | deployment | 8 | 3.8% |
-| integrations | 3 | 1.4% |
+| integrations | 2 | 1.0% |
 | limits-quotas | 10 | 4.8% |
 | security | 12 | 5.7% |
 | troubleshooting | 15 | 7.1% |
@@ -77,36 +77,26 @@ confusable_not_for: Not for Azure Database Migration service (use azure-database
 
 ## Changes
 
-### New Pages
-
-- [Add code insights using GitHub Copilot modernization](https://learn.microsoft.com/en-us/azure/migrate/add-copilot-code-insights?view=migrate)
-
 ### Updated Pages
 
-- [Dependency analysis](https://learn.microsoft.com/en-us/azure/migrate/concepts-dependency-visualization?view=migrate)
-  - Updated: 2026-03-26T22:23:00.000Z → 2026-06-19T11:43:00.000Z
-- [Provide server credentials](https://learn.microsoft.com/en-us/azure/migrate/add-server-credentials?view=migrate)
-  - Updated: 2025-09-19T08:00:00.000Z → 2026-06-14T17:24:00.000Z
-- [Support matrix for VMware discovery](https://learn.microsoft.com/en-us/azure/migrate/migrate-support-matrix-vmware?view=migrate)
-  - Updated: 2026-04-16T11:14:00.000Z → 2026-06-19T11:43:00.000Z
-- [Support matrix for Hyper-V discovery](https://learn.microsoft.com/en-us/azure/migrate/migrate-support-matrix-hyper-v?view=migrate)
-  - Updated: 2025-12-30T06:12:00.000Z → 2026-06-19T11:43:00.000Z
-- [Support matrix for Physical server discovery](https://learn.microsoft.com/en-us/azure/migrate/migrate-support-matrix-physical?view=migrate)
-  - Updated: 2025-12-30T06:12:00.000Z → 2026-06-19T11:43:00.000Z
-- [Discovery and dependency analysis](https://learn.microsoft.com/en-us/azure/migrate/common-questions-discovery-dependency-analysis?view=migrate)
-  - Updated: 2025-10-19T11:11:00.000Z → 2026-06-19T11:43:00.000Z
-- [Agentless migrations using portal](https://learn.microsoft.com/en-us/azure/migrate/tutorial-migrate-vmware?view=migrate)
-  - Updated: 2026-04-27T22:14:00.000Z → 2026-06-16T08:00:00.000Z
-- [Agent-based migration using portal](https://learn.microsoft.com/en-us/azure/migrate/tutorial-migrate-vmware-agent?view=migrate)
-  - Updated: 2026-04-29T17:11:00.000Z → 2026-06-16T08:00:00.000Z
-- [Analyze machine dependencies (agent-based)](https://learn.microsoft.com/en-us/azure/migrate/how-to-create-group-machine-dependencies?view=migrate-classic)
-  - Updated: 2026-06-04T06:37:00.000Z → 2026-06-19T11:43:00.000Z
-- [Define and manage applications](https://learn.microsoft.com/en-us/azure/migrate/define-manage-applications?view=migrate)
-  - Updated: 2026-05-08T11:22:00.000Z → 2026-06-15T11:43:00.000Z
-
-### Deleted Pages
-
-- ~~Enhance web app assessment by adding code scan report~~ (https://learn.microsoft.com/en-us/azure/migrate/add-copilot-code-insights?view=migrate)
+- [Add code insights using GitHub Copilot modernization](https://learn.microsoft.com/en-us/azure/migrate/add-copilot-code-insights?view=migrate)
+  - Updated: 2026-06-16T17:13:00.000Z → 2026-06-26T22:12:00.000Z
+- [Migrate Physical servers to Azure](https://learn.microsoft.com/en-us/azure/migrate/tutorial-migrate-physical-virtual-machines?view=migrate)
+  - Updated: 2026-04-30T17:19:00.000Z → 2026-06-27T17:15:00.000Z
+- [Overview](https://learn.microsoft.com/en-us/azure/migrate/appcat/java?view=migrate)
+  - Updated: 2025-06-28T22:10:00.000Z → 2026-06-24T08:00:00.000Z
+- [Release notes](https://learn.microsoft.com/en-us/azure/migrate/appcat/appcat-7-release-notes?view=migrate)
+  - Updated: 2026-01-06T06:10:00.000Z → 2026-06-24T08:00:00.000Z
+- [Quickstart: Assess a Java project](https://learn.microsoft.com/en-us/azure/migrate/appcat/appcat-7-quickstart?view=migrate)
+  - Updated: 2025-08-04T17:15:00.000Z → 2026-06-24T08:00:00.000Z
+- [Interpret the report](https://learn.microsoft.com/en-us/azure/migrate/appcat/appcat-7-interpret-report?view=migrate)
+  - Updated: 2025-08-20T22:15:00.000Z → 2026-06-24T08:00:00.000Z
+- [CLI guide](https://learn.microsoft.com/en-us/azure/migrate/appcat/appcat-7-cli-guide?view=migrate)
+  - Updated: 2025-10-10T06:02:00.000Z → 2026-06-24T08:00:00.000Z
+- [Rule development guide](https://learn.microsoft.com/en-us/azure/migrate/appcat/appcat-7-rule-guide?view=migrate)
+  - Updated: 2025-06-28T22:10:00.000Z → 2026-06-24T08:00:00.000Z
+- [Assess Java applications and code](https://learn.microsoft.com/en-us/azure/migrate/appcat/java-6?view=migrate)
+  - Updated: 2025-06-28T22:10:00.000Z → 2026-06-24T08:00:00.000Z
 
 ## Classified Pages
 
@@ -147,10 +137,9 @@ confusable_not_for: Not for Azure Database Migration service (use azure-database
 | [Troubleshoot Azure Migrate projects](https://learn.microsoft.com/en-us/azure/migrate/troubleshoot-project?view=migrate) | troubleshooting | 0.75 | Explicit troubleshooting article for project creation/management; likely organized by specific errors and resolutions unique to Azure Migrate. |
 | [Windows OS upgrade issues](https://learn.microsoft.com/en-us/azure/migrate/troubleshoot-upgrade?view=migrate) | troubleshooting | 0.75 | Known issues in Windows OS upgrade feature; likely lists specific failure modes and resolutions. |
 | [Getting started](https://learn.microsoft.com/en-us/azure/migration/migrate-from-google-cloud) | decision-making | 0.74 | The page focuses on migrating workloads from GCP to Azure and explicitly mentions service comparisons and example scenarios. These comparisons and mappings between GCP and Azure services are product-specific decision guidance that help users choose equivalent Azure services and architectures, which qualifies as decision-making content rather than generic overview. |
-| [Rule development guide](https://learn.microsoft.com/en-us/azure/migrate/appcat/appcat-7-rule-guide?view=migrate) | configuration | 0.72 | Rules development guide for AppCAT 7; describes YAML rule schema, fields, and behavior, which is detailed configuration of the assessment engine. |
 | [Automate agent-based migrations using REST API](https://learn.microsoft.com/en-us/azure/migrate/how-to-automate-vmware-to-azure-migration-rest-api?view=migrate) | integrations | 0.70 | The article describes using Azure Site Recovery REST API with the InMageRcm replication provider to automate VMware-to-Azure migrations. Such REST how-to docs typically include product-specific API endpoints, request/response schemas, required parameters, and sequencing unique to Azure Migrate/Site Recovery, which qualifies as expert integration knowledge beyond generic SDK usage. |
 | [Business case overview](https://learn.microsoft.com/en-us/azure/migrate/concepts-business-case-calculation?view=migrate) | decision-making | 0.70 | Business case content typically includes concrete cost formulas, calculation logic, and parameterized assumptions (for example, how on-premises costs, Azure pricing, and utilization are modeled). These quantified formulas and report structures are product-specific and help decide whether and how to migrate, fitting decision-making. It goes beyond conceptual overview by detailing how Azure Migrate computes the business case. |
-| [CLI guide](https://learn.microsoft.com/en-us/azure/migrate/appcat/appcat-7-cli-guide?view=migrate) | integrations | 0.70 | CLI command guide typically lists command names, parameters, and allowed values for the AppCAT tool, which is product-specific API/CLI integration detail. |
+| [CLI guide](https://learn.microsoft.com/en-us/azure/migrate/appcat/appcat-7-cli-guide?view=migrate) | configuration | 0.70 | CLI command guide will enumerate commands, flags, and parameters specific to AppCAT 7, effectively serving as a configuration/options reference for running assessments; this is product-specific config knowledge. |
 | [Compute](https://learn.microsoft.com/en-us/azure/migration/migrate-compute-from-aws) | decision-making | 0.70 | Migration guidance from AWS compute to Azure typically includes concrete service mapping tables (for example, EC2 → Azure VMs, Lambda → Azure Functions, ECS/EKS → AKS/App Service) and scenario-based recommendations on which Azure service to choose for specific AWS usage patterns. This is product- and provider-specific decision guidance that helps select Azure services and approaches for different workloads, which fits the decision-making sub-skill. |
 | [Create a business case using imported inventory](https://learn.microsoft.com/en-us/azure/migrate/how-to-build-a-business-case?view=migrate) | decision-making | 0.70 | A business case article for Azure Migrate generally includes concrete cost and capacity comparison guidance, scenario-based recommendations, and criteria for planning migration, which aligns with decision-making content beyond generic conceptual advice. |
 | [Customize assessment settings](https://learn.microsoft.com/en-us/azure/migrate/assessment-properties?view=migrate) | configuration | 0.70 | Explains specific assessment property names and options on the General tab; these are product-specific configuration parameters. |
@@ -166,6 +155,7 @@ confusable_not_for: Not for Azure Database Migration service (use azure-database
 | [How to migrate VMware VMs at scale using the agentless replication method](https://learn.microsoft.com/en-us/azure/migrate/how-to-scale-out-for-migration?view=migrate) | limits-quotas | 0.70 | Mentions concrete VM count limits for a single vs. scale-out appliance (for example, up to 300 vs. 500 VMs), which are product-specific numerical limits. |
 | [Hydration process workflow](https://learn.microsoft.com/en-us/azure/migrate/hydration-process?view=migrate) | best-practices | 0.70 | Explains hydration process and required configuration changes for supported OS versions; includes product-specific behavior and requirements to avoid failures. |
 | [Integrate with CAST highlights](https://learn.microsoft.com/en-us/azure/migrate/cast-highlights-integration?view=migrate) | integrations | 0.70 | Covers integration of CAST Highlight reports into Azure Migrate assessments, including how code-level insights map to readiness and strategy; product-specific integration behavior. |
+| [Interpret the report](https://learn.microsoft.com/en-us/azure/migrate/appcat/appcat-7-interpret-report?view=migrate) | decision-making | 0.70 | Report interpretation guidance helps determine suitability for replatforming and modernization, mapping findings to migration decisions; this is product-specific decision-making support rather than generic concepts. |
 | [Manage Arc resource sync](https://learn.microsoft.com/en-us/azure/migrate/how-to-manage-arc-resource-sync?view=migrate) | configuration | 0.70 | Describes configuring sync behavior, project scope, and automatic synchronization; includes product-specific sync settings and options. |
 | [Migrate servers to Azure using Private Link](https://learn.microsoft.com/en-us/azure/migrate/migrate-hyper-v-servers-to-azure-using-private-link?view=migrate) | security | 0.70 | Covers migration over private network with Private Link; likely details private endpoint configuration and required network/security settings. |
 | [Modify destination settings](https://learn.microsoft.com/en-us/azure/resource-mover/modify-target-settings) | configuration | 0.70 | Specifically about modifying destination settings when moving VMs. This typically involves product-specific setting names and allowed values (sizes, networks, disks), fitting the configuration category. |
@@ -174,6 +164,7 @@ confusable_not_for: Not for Azure Database Migration service (use azure-database
 | [Performance coverage](https://learn.microsoft.com/en-us/azure/migrate/confidence-ratings?view=migrate) | decision-making | 0.70 | Defines the star-based performance coverage metric, its calculation from data points, and its impact on recommendation reliability; product-specific quantified decision signal. |
 | [Prepare Azure accounts using built-in roles](https://learn.microsoft.com/en-us/azure/migrate/prepare-azure-accounts?view=migrate) | security | 0.70 | Quickstart for setting up Azure RBAC for Azure Migrate projects; likely lists specific built-in role names and scopes, which are product-specific security configuration details. |
 | [Replicate using ExpressRoute](https://learn.microsoft.com/en-us/azure/migrate/discover-and-assess-using-private-endpoints?view=migrate) | security | 0.70 | Same as index 20; focuses on Private Link-based secure connectivity with specific network/security configuration steps. |
+| [Rule development guide](https://learn.microsoft.com/en-us/azure/migrate/appcat/appcat-7-rule-guide?view=migrate) | best-practices | 0.70 | Rules development guide describes how to write and run custom YAML-based rules for AppCAT, including product-specific patterns and gotchas for rule authoring; this is actionable, tool-specific best-practice guidance. |
 | [Scoped discovery of VMware hosted VMs](https://learn.microsoft.com/en-us/azure/migrate/set-discovery-scope?view=migrate) | security | 0.70 | Describes limiting discovery scope via vCenter permissions; includes specific permission assignments and scoping patterns, which are security/permission configurations. |
 | [Support-Move Extension resource types](https://learn.microsoft.com/en-us/azure/resource-mover/support-matrix-extension-resource-types) | deployment | 0.70 | Summarizes all extension resource types currently supported for moves. This is a capability matrix (what can be moved) that is critical deployment constraint knowledge. |
 | [Supported Scenarios](https://learn.microsoft.com/en-us/azure/migrate/troubleshoot-assessment-supported-scenarios?view=migrate) | troubleshooting | 0.70 | Supported scenarios for troubleshooting assessments; scenario-based guidance for resolving specific assessment problems. |
@@ -188,7 +179,7 @@ confusable_not_for: Not for Azure Database Migration service (use azure-database
 | [Requirements for Private endpoints](https://learn.microsoft.com/en-us/azure/migrate/how-to-use-azure-migrate-with-private-endpoints?view=migrate) | configuration | 0.68 | The article provides product-specific configuration steps for using Azure Migrate over Private Link, including required networking setup (ExpressRoute private peering or site-to-site VPN), private endpoint usage, and service-specific settings. This is concrete configuration guidance rather than just conceptual networking overview, but it does not focus on limits, troubleshooting, or security role matrices. |
 | [Upgrade Windows OS](https://learn.microsoft.com/en-us/azure/migrate/how-to-upgrade-windows?view=migrate) | decision-making | 0.68 | The article is about upgrading Windows Server OS as part of Azure Migrate. These docs typically include which source Windows Server versions can be upgraded in-place to which target versions during migration, supported/unsupported upgrade paths, and constraints specific to Azure Migrate tooling. That constitutes product-specific migration and upgrade-path guidance (what paths are allowed, when to choose upgrade vs other options), which fits the decision-making category more than a generic tutorial. It is not just conceptual; it encodes concrete support rules and migration considerations that an LLM would not reliably know from training. |
 | [Analyze machine dependencies (agentless)](https://learn.microsoft.com/en-us/azure/migrate/how-to-create-group-machine-dependencies-agentless?view=migrate) | configuration | 0.65 | Agentless dependency analysis setup will include specific prerequisites, feature flags, and configuration options. |
-| [Assess Java applications and code](https://learn.microsoft.com/en-us/azure/migrate/appcat/java-6?view=migrate) | configuration | 0.65 | Describes how to use the older AppCAT Java tool to assess and replatform applications; likely includes tool-specific options and configurations beyond generic concepts. |
+| [Assess Java applications and code](https://learn.microsoft.com/en-us/azure/migrate/appcat/java-6?view=migrate) | decision-making | 0.65 | Guide explains how to use the older AppCAT Java assessment tool to determine readiness and replatforming options, providing product-specific guidance on assessing and choosing migration paths; this supports migration decisions. |
 | [Azure Migrate in unsupported regions](https://learn.microsoft.com/en-us/azure/migrate/azure-migrate-unsupported-regions?view=migrate) | limits-quotas | 0.65 | Region support/unsupported list is a product-specific capability matrix; while not numeric quotas, it’s concrete availability constraints that LLMs won’t reliably know. |
 | [CI/CD for Day 2 operations](https://learn.microsoft.com/en-us/azure/migrate/tutorial-app-containerization-azure-pipeline?view=migrate) | deployment | 0.65 | Continuous deployment tutorial for AKS/App Service with Azure DevOps likely includes product-specific pipeline YAML, task parameters, and registry/deployment constraints. |
 | [Complete a wave plan](https://learn.microsoft.com/en-us/azure/migrate/how-to-complete-wave-plan?view=migrate) | decision-making | 0.65 | Explains defining targets, tools, tasks, and prerequisites for predictable modernization; product-specific planning details for execution decisions. |
@@ -198,6 +189,7 @@ confusable_not_for: Not for Azure Database Migration service (use azure-database
 | [Manage resources created during move](https://learn.microsoft.com/en-us/azure/resource-mover/manage-resources-created-move-process) | configuration | 0.65 | Explains resources explicitly created by Resource Mover and how to clean them up. This is product-specific behavior and configuration/management guidance for those auxiliary resources. |
 | [Migrate from on-premises](https://learn.microsoft.com/en-us/azure/migration/migrate-from-on-premises) | decision-making | 0.65 | The page covers replatforming on-premises workloads to Azure and includes service comparisons and example scenarios for transitioning components. This is migration planning and service selection guidance, helping users decide which Azure services to use for different on-premises components, which aligns with the decision-making sub-skill. |
 | [Migrate to Azure Monitor agent](https://learn.microsoft.com/en-us/azure/migrate/azure-monitor-agent-migration?view=migrate) | configuration | 0.65 | Migration from MMA to AMA for dependency analysis will include agent configuration details, workspace settings, and product-specific parameters. |
+| [Overview](https://learn.microsoft.com/en-us/azure/migrate/appcat/java?view=migrate) | decision-making | 0.65 | Overview explicitly focuses on suitable scenarios for migrating Java apps to Azure with AppCAT 7, providing product-specific guidance on when and how to use the tool for different migration paths; this is decision guidance rather than generic overview. |
 | [Overview](https://learn.microsoft.com/en-us/azure/migrate/concepts-arc-resource-discovery?view=migrate) | architecture-patterns | 0.65 | Overview of how Azure Migrate uses Arc-enabled servers/SQL; includes a specific architectural pattern for leveraging Arc instead of appliances. |
 | [Plan and create waves](https://learn.microsoft.com/en-us/azure/migrate/how-to-plan-create-waves?view=migrate) | decision-making | 0.65 | Provides concrete guidance on grouping workloads into waves and sequencing migrations to reduce risk and improve speed; supports planning decisions. |
 | [PostgreSQL customize assessment settings](https://learn.microsoft.com/en-us/azure/migrate/postgresql-assessment-properties?view=migrate) | configuration | 0.65 | Explains assessment properties for PostgreSQL workloads; these are specific configuration options for the product. |
@@ -212,7 +204,6 @@ confusable_not_for: Not for Azure Database Migration service (use azure-database
 | [Networking](https://learn.microsoft.com/en-us/azure/migration/migrate-networking-from-aws) | decision-making | 0.64 | Outlines scenarios for migrating AWS networking (VPC, load balancers, firewalls) to Azure networking services, providing concrete service mapping and choice guidance that is product-specific. |
 | [Migrate databases](https://learn.microsoft.com/en-us/azure/migration/migrate-databases-from-google-cloud) | decision-making | 0.63 | Covers concrete scenarios like Cloud SQL PostgreSQL to Azure Database for PostgreSQL and likely includes product-specific target selection and migration approach guidance. |
 | [Move encrypted Azure VMs to another region](https://learn.microsoft.com/en-us/azure/resource-mover/tutorial-move-region-encrypted-virtual-machines) | security | 0.62 | Focuses specifically on moving encrypted VMs, which usually involves product-specific security settings (disk encryption sets, key vault usage, encryption types). This is security-centric configuration and process guidance. |
-| [Overview](https://learn.microsoft.com/en-us/azure/migrate/appcat/java?view=migrate) | decision-making | 0.62 | Overview focused on suitable scenarios for migrating Java apps with AppCAT 7; likely includes guidance on when to use this tool and for which app types, which is product-specific decision guidance. |
 | [Security](https://learn.microsoft.com/en-us/azure/migration/migrate-security-from-aws) | decision-making | 0.62 | Focuses on migrating AWS security services (such as SIEM) to Azure/Microsoft security offerings, with platform-specific similarities/differences and migration scenarios that guide technology selection. |
 | [1. Plan](https://learn.microsoft.com/en-us/azure/migration/migrate-workload-from-aws-plan) | decision-making | 0.60 | Planning phase article with structured steps and objectives; provides concrete guidance on assessment and architecture decisions for migration. |
 | [2. Prepare](https://learn.microsoft.com/en-us/azure/migration/migrate-workload-from-aws-prepare) | decision-making | 0.60 | Preparation phase with detailed steps on deploying infrastructure, refactoring, and security testing; guides concrete migration choices. |
@@ -222,7 +213,6 @@ confusable_not_for: Not for Azure Database Migration service (use azure-database
 | [Create a project - ARM template](https://learn.microsoft.com/en-us/azure/migrate/quickstart-create-migrate-project?view=migrate) | configuration | 0.60 | ARM template quickstart typically includes parameter names, allowed values, and defaults for the project resource, which are product-specific configuration details. |
 | [Evaluate migration readiness and savings for Arc resources](https://learn.microsoft.com/en-us/azure/migrate/quickstart-evaluate-readiness-savings-for-arc-resources?view=migrate) | decision-making | 0.60 | Quickstart for evaluating migration readiness and savings for Arc resources; likely includes Azure Migrate-specific assessment outputs and cost/sizing criteria used for decisions. |
 | [Execute and track waves](https://learn.microsoft.com/en-us/azure/migrate/how-to-execute-track-waves?view=migrate) | deployment | 0.60 | Describes supported vs manual execution flows, status tracking, and timing for migration waves; product-specific execution and tracking behavior. |
-| [Interpret the report](https://learn.microsoft.com/en-us/azure/migrate/appcat/appcat-7-interpret-report?view=migrate) | decision-making | 0.60 | Guides how to interpret the AppCAT report to determine suitability for replatforming/modernization. This is tool-specific decision guidance on how to act on report findings. |
 | [Introduction](https://learn.microsoft.com/en-us/azure/migration/migrate-workload-from-aws-introduction) | decision-making | 0.60 | Prescriptive, actionable guidance for migrating a workload from AWS to Azure across lifecycle; includes scenario-based recommendations and trade-offs. |
 | [Prepare machines for migration](https://learn.microsoft.com/en-us/azure/migrate/prepare-for-migration?view=migrate) | best-practices | 0.60 | Preparation article typically includes concrete DOs/DON’Ts, required settings, and product-specific gotchas for successful migration. |
 | [Review assessment report](https://learn.microsoft.com/en-us/azure/migrate/review-azure-vmware-solution-assessment?view=migrate) | decision-making | 0.60 | Describes AVS assessment components, node sizing assumptions, and resource utilization calculations; supports capacity and migration decisions. |
@@ -266,6 +256,7 @@ confusable_not_for: Not for Azure Database Migration service (use azure-database
 | [Monitor Move across region](https://learn.microsoft.com/en-us/azure/resource-mover/move-across-region-dashboard) | 0.40 | Describes using a monitoring dashboard; likely UI-driven instructions without detailed configuration parameter tables or limits. |
 | [Move Azure VMs to availability zones](https://learn.microsoft.com/en-us/azure/resource-mover/move-region-availability-zone) | 0.40 | How-to article for moving VMs to availability zones; appears to be a procedural tutorial rather than a support matrix or configuration reference with detailed parameters or limits. |
 | [Provide server credentials](https://learn.microsoft.com/en-us/azure/migrate/add-server-credentials?view=migrate) | 0.40 | How-to style guidance for adding server credentials on the Azure Migrate appliance; summary does not show detailed config parameter tables, security role names, or other expert-only specifics beyond standard procedural steps. |
+| [Quickstart: Assess a Java project](https://learn.microsoft.com/en-us/azure/migrate/appcat/appcat-7-quickstart?view=migrate) | 0.40 | Quickstart is a step-by-step tutorial for downloading, installing, and running AppCAT 7 on a sample project; it’s procedural rather than a catalog of limits, configs, or troubleshooting mappings. |
 | [Redeploy servers using IaC](https://learn.microsoft.com/en-us/azure/migrate/server-redeploy?view=migrate) | 0.40 | IaC redeployment walkthrough; mostly process guidance, not config matrices or quantified best practices. |
 | [Remove resources from a move collection](https://learn.microsoft.com/en-us/azure/resource-mover/remove-move-resources) | 0.40 | Describes how to remove resources from a move collection; operational procedure without indication of detailed configuration parameters, limits, or decision matrices. |
 | [Wave planning](https://learn.microsoft.com/en-us/azure/migrate/common-questions-wave-planning?view=migrate) | 0.40 | FAQ-style content about wave planning; likely conceptual clarifications without detailed config tables or numeric thresholds. |
@@ -273,9 +264,6 @@ confusable_not_for: Not for Azure Database Migration service (use azure-database
 | [Move SQL resources to another region](https://learn.microsoft.com/en-us/azure/resource-mover/tutorial-move-region-sql) | 0.35 | Tutorial for moving Azure SQL resources; summary suggests a guided scenario using defaults, not a support matrix or detailed configuration reference. |
 | [Move across regions (from resource group)](https://learn.microsoft.com/en-us/azure/resource-mover/move-region-within-resource-group) | 0.35 | How-to article for moving resources in a resource group; summary suggests step-by-step instructions, not detailed matrices, limits, or configuration parameter tables. |
 | [Move resources across regions with PowerShell](https://learn.microsoft.com/en-us/azure/resource-mover/tutorial-move-region-powershell) | 0.35 | PowerShell-based tutorial for moving resources; likely shows commands but as a single example path rather than a full parameter reference or config matrix, so it doesn’t meet the configuration/integrations criteria. |
-| [Quickstart: Assess a Java project](https://learn.microsoft.com/en-us/azure/migrate/appcat/appcat-7-quickstart?view=migrate) | 0.35 | Quickstart tutorial for assessing a Java project; shows basic usage path, not comprehensive configuration or rule references. |
-| [Release notes](https://learn.microsoft.com/en-us/azure/migrate/appcat/appcat-7-release-notes?view=migrate) | 0.35 | Release notes for AppCAT 7; while product-specific, it’s change-log style rather than structured configuration, limits, or troubleshooting content. |
-| [Add code insights using GitHub Copilot modernization](https://learn.microsoft.com/en-us/azure/migrate/add-copilot-code-insights?view=migrate) | 0.30 | Describes how to add code insights using GitHub Copilot Modernization within Azure Migrate to assess migration readiness and recommend strategies. The summary suggests a workflow/tutorial style article without explicit limits, configuration parameter tables, error-code-based troubleshooting, or quantified decision matrices, so it doesn't meet the expert-knowledge criteria for any sub-skill type. |
 | [Agent-based migration using portal](https://learn.microsoft.com/en-us/azure/migrate/tutorial-migrate-vmware-agent?view=migrate) | 0.30 | Agent-based migration tutorial focused on procedural steps. From the summary it does not appear to include detailed configuration tables, limits, or troubleshooting mappings; it is a proof-of-concept style guide rather than expert reference content. |
 | [Agentless migration architecture](https://learn.microsoft.com/en-us/azure/migrate/concepts-vmware-agentless-migration?view=migrate) | 0.30 | Conceptual explanation of agentless VMware VM replication in Azure Migrate; likely describes flow and concepts without numeric limits, config parameter tables, or troubleshooting mappings. |
 | [Agentless migrations using portal](https://learn.microsoft.com/en-us/azure/migrate/tutorial-migrate-vmware?view=migrate) | 0.30 | Tutorial-style migration walkthrough using mostly default options; no clear evidence of limits tables, config parameter matrices, error-code-based troubleshooting, or decision matrices. Primarily step-by-step how-to content rather than reference-grade expert knowledge. |
@@ -295,22 +283,24 @@ confusable_not_for: Not for Azure Database Migration service (use azure-database
 | [Discovery using collector](https://learn.microsoft.com/en-us/azure/migrate/how-to-discover-using-collector?view=migrate) | 0.30 | How-to article on using Azure Migrate Collector to discover VMware servers; primarily workflow and usage guidance, not focused on explicit limits, configuration parameter tables, security roles, or structured troubleshooting content required by the sub-skill categories. |
 | [Enable application and code assessment](https://learn.microsoft.com/en-us/azure/migrate/appcat/?view=migrate) | 0.30 | High-level entry page for application and code assessment tools; summary suggests conceptual overview rather than detailed config or limits. |
 | [How to automate VMware migration](https://learn.microsoft.com/en-us/azure/migrate/how-to-automate-migration?view=migrate) | 0.30 | Covers automation scripts for agentless VMware migrations; summary doesn’t show detailed config parameters, limits, or troubleshooting content. |
-| [Migrate Physical servers to Azure](https://learn.microsoft.com/en-us/azure/migrate/tutorial-migrate-physical-virtual-machines?view=migrate) | 0.30 | Tutorial for migrating physical machines as servers to Azure; framed as a basic proof-of-concept walkthrough. The description does not suggest detailed configuration references, limits, or troubleshooting matrices beyond generic tutorial content. |
 | [Migrate to Azure Cloud](https://learn.microsoft.com/en-us/azure/migrate/tutorial-migrate-hyper-v?view=migrate) | 0.30 | Hyper-V VM migration tutorial using Azure Migrate; described as a simple deployment path using defaults. No indication of detailed limits, quotas, configuration option tables, or error-code mappings that would qualify as expert knowledge. |
 | [Modify and delete tags](https://learn.microsoft.com/en-us/azure/migrate/how-to-modify-delete-tags?view=migrate) | 0.30 | Operational instructions for adding, editing, and deleting tags; does not indicate presence of numeric limits, configuration matrices, or troubleshooting mappings. |
 | [Move overview](https://learn.microsoft.com/en-us/azure/resource-mover/about-move-process) | 0.30 | Describes the move process and components conceptually; no indication of numeric limits, config tables, or decision matrices that would qualify as expert configuration or limits content. |
 | [Onboard on-premises servers in VMware virtual environment to Azure Arc](https://learn.microsoft.com/en-us/azure/migrate/onboard-to-azure-arc-with-azure-migrate?view=migrate) | 0.30 | Onboarding VMware VMs to Azure Arc; summary doesn’t show parameter tables, limits, or error-code troubleshooting. |
 | [Overview](https://learn.microsoft.com/en-us/azure/migrate/appcat/overview?view=migrate) | 0.30 | Overview of Azure Migrate application and code assessment; conceptual description of tools and scenarios, not detailed rules, configs, or limits. |
 | [RVTools XLSX import](https://learn.microsoft.com/en-us/azure/migrate/common-questions-import?view=migrate) | 0.30 | FAQ about importing RVTools XLSX into Azure Migrate. From the summary, it mainly lists required sheets/columns and basic file-handling constraints (no manual edits, readable file, sensitivity labels). This is closer to procedural/FAQ content without clear structured troubleshooting (no explicit error codes or symptom→cause→solution mapping) or detailed configuration tables, so it does not clearly match any expert-knowledge sub-skill type. |
+| [Release notes](https://learn.microsoft.com/en-us/azure/migrate/appcat/appcat-7-release-notes?view=migrate) | 0.30 | Release notes typically list features, fixes, and known issues but not stable, reusable expert patterns like limits, configuration matrices, or troubleshooting mappings; content is version-changelog oriented. |
 | [Review assessment report](https://learn.microsoft.com/en-us/azure/migrate/tutorial-review-mongodb-report?view=migrate) | 0.30 | Describes what can be reviewed in a MongoDB assessment (readiness, sizing, cost); summary suggests conceptual explanation of outputs rather than expert-level limits, configuration tables, or troubleshooting mappings. |
 | [Review business case](https://learn.microsoft.com/en-us/azure/migrate/how-to-view-a-business-case?view=migrate) | 0.30 | Described as how to review business case reports, likely a UI walkthrough of viewing existing reports rather than exposing underlying formulas, thresholds, or comparison matrices. Appears procedural, not expert decision logic or configuration tables. |
 | [Review discovered inventory](https://learn.microsoft.com/en-us/azure/migrate/how-to-review-discovered-inventory?view=migrate) | 0.30 | How-to UI walkthrough for reviewing inventory; no deep config tables, limits, or product-specific error mappings. |
 | [About Azure Resource Mover](https://learn.microsoft.com/en-us/azure/resource-mover/overview) | 0.20 | High-level overview of Azure Resource Mover; summary indicates conceptual description of what the service is and why to use it, without detailed matrices, limits, or configuration tables. |
+| [Add code insights using GitHub Copilot modernization](https://learn.microsoft.com/en-us/azure/migrate/add-copilot-code-insights?view=migrate) | 0.20 | Procedural guide for adding GitHub Copilot-based code insights in Azure Migrate; no numeric limits, configuration parameter tables, error-code troubleshooting, or decision matrices. Primarily a how-to tutorial rather than expert-only reference content. |
 | [Create an AVS assessment](https://learn.microsoft.com/en-us/azure/migrate/how-to-create-azure-vmware-solution-assessment?view=migrate) | 0.20 | The article is described as a how-to for creating an Azure VMware Solution assessment using Azure Migrate. From the summary it appears to be a procedural/tutorial-style guide without mention of specific limits, configuration parameter tables, error codes, or decision matrices. It reads as general workflow guidance rather than expert-knowledge reference content. |
 | [End-to-end portal experience for server migrations with Azure Migrate](https://learn.microsoft.com/en-us/azure/migrate/end-to-end-portal-experience-server-migrations?view=migrate) | 0.20 | Portal navigation and end-to-end experience overview for Azure Migrate server migrations; no indication of numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. |
 | [Generate and deploy a platform landing zone](https://learn.microsoft.com/en-us/azure/migrate/platform-landing-zone?view=migrate) | 0.20 | Primarily a how-to/tutorial for generating and deploying a Platform Landing Zone with Azure Migrate. From the summary, it focuses on process (generate, iterate, deploy with VS Code, GitHub Copilot Chat, MCP) and conceptual description of PLZ capabilities (governance, identity, networking). It does not indicate presence of numeric limits, detailed configuration parameter tables, error-code-based troubleshooting, or decision matrices with quantified trade-offs. |
 | [Insights](https://learn.microsoft.com/en-us/azure/migrate/insights-overview?view=migrate) | 0.20 | Page is an overview of Azure Migrate Insights (preview) describing what it does conceptually (security assessment, vulnerabilities, end-of-support software, missing security tools) without detailed configuration parameters, limits, error codes, or decision matrices. It lacks the concrete numeric limits, settings tables, or symptom→solution mappings required for any of the expert-knowledge sub-skill types. |
 | [Migrate AWS EC2 to Azure](https://learn.microsoft.com/en-us/azure/migrate/tutorial-migrate-aws-virtual-machines?view=migrate) | 0.20 | Tutorial-style migration walkthrough for AWS EC2 to Azure using Azure Migrate. From the summary it appears to be step-by-step guidance without explicit limits, decision matrices, or detailed configuration parameter tables; more of a procedural how-to than expert reference content. |
+| [Migrate Physical servers to Azure](https://learn.microsoft.com/en-us/azure/migrate/tutorial-migrate-physical-virtual-machines?view=migrate) | 0.20 | Tutorial-style walkthrough for migrating physical machines using Azure Migrate; primarily step-by-step instructions without detailed limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. Content is more procedural than expert reference, so it does not meet the expert-knowledge criteria for any sub-skill type. |
 | [Overview](https://learn.microsoft.com/en-us/azure/migrate/concepts-overview?view=migrate) | 0.20 | An overview of Azure Migrate assessments; overviews generally describe types and concepts without detailed limits, configuration tables, or decision matrices. No indication of specific numeric thresholds or product-specific patterns. |
 | [Overview of Web App Migration and Modernization](https://learn.microsoft.com/en-us/azure/migrate/web-app-migration-modernization?view=migrate) | 0.20 | Conceptual overview of web app migration/modernization; no detailed limits, configs, or troubleshooting content indicated. |
 | [Overview reports](https://learn.microsoft.com/en-us/azure/migrate/reports-overview?view=migrate) | 0.20 | Overview of Azure Migrate reports and their purpose; lacks concrete numeric limits, configuration tables, or detailed decision criteria beyond high-level descriptions. |

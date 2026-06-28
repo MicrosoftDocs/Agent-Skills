@@ -1,9 +1,9 @@
 ---
 name: azure-virtual-desktop
-description: Expert knowledge for Azure Virtual Desktop development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing AVD host pools, autoscale, FSLogix profiles, MSIX App Attach, or Teams optimization, and other Azure Virtual Desktop related development tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Dev Box (use azure-dev-box), Azure VMware Solution (use azure-vmware-solution), Azure Data Science Virtual Machines (use azure-data-science-vm).
+description: Expert knowledge for Azure Virtual Desktop development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing AVD host pools, FSLogix profiles, autoscale, MSIX App Attach, or Teams optimization, and other Azure Virtual Desktop related development tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Dev Box (use azure-dev-box), Azure VMware Solution (use azure-vmware-solution), Azure Data Science Virtual Machines (use azure-data-science-vm).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-21"
+  generated_at: "2026-06-28"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Virtual Desktop Skill
@@ -29,10 +29,10 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L65-L80 | Guidance for planning and choosing AVD deployment models, autoscale, storage, licensing, host/session management, data locations, and cost/ESU strategies. |
 | Architecture & Design Patterns | L81-L88 | Design patterns for AVD app delivery, stateless hosts, DR, FSLogix profile containers, and automated scaling with Automation/Logic Apps. |
 | Limits & Quotas | L89-L94 | Guidance on RDP bandwidth requirements and optimizing Microsoft Teams (audio/video, collaboration features) performance and configuration in Azure Virtual Desktop. |
-| Security | L95-L115 | Securing Azure Virtual Desktop: auth/SSO (Entra ID, AD FS, Kerberos, MFA), RBAC/roles, external identities, clipboard/screen controls, watermarking, WebAuthn, redirection, and Purview forensic onboarding |
+| Security | L95-L115 | Securing Azure Virtual Desktop: SSO (Entra ID/AD FS), MFA/Conditional Access, RBAC, external identities, managed identities, redirection controls, watermarking, screen capture protection, and Purview forensic setup. |
 | Configuration | L116-L175 | Configuring AVD host pools, images, autoscale, networking, RDP/peripheral redirection, Teams/OneDrive/M365 optimizations, licensing, monitoring, and client/RemoteApp behavior. |
 | Integrations & Coding Patterns | L176-L182 | Managing AVD via CLI/PowerShell, integrating partner App Attach delivery, enabling WebRTC multimedia redirection, and launching resources using custom URI schemes. |
-| Deployment | L183-L193 | Deploying and migrating AVD environments: adding session hosts, moving from classic, hybrid/on-prem setups, regional host pools, region moves, and client/MMR deployment via Intune/ConfigMgr |
+| Deployment | L183-L193 | Guides for deploying and migrating AVD: adding session hosts, moving from classic, hybrid/on-prem setups, regional host pools, region moves, and client/MMR deployment via Intune/ConfigMgr. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -98,7 +98,7 @@ This skill requires **network access** to fetch documentation content:
 | Control clipboard direction and data types in AVD | https://learn.microsoft.com/en-us/azure/virtual-desktop/clipboard-transfer-direction-data-types |
 | Configure AD FS single sign-on for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/configure-adfs-sso |
 | Configure managed identities and permissions for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/configure-managed-identity |
-| Configure Entra ID single sign-on for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/configure-single-sign-on |
+| Configure Microsoft Entra ID SSO for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/configure-single-sign-on |
 | Configure context-based redirection policies in Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/context-based-redirections-avd |
 | Implement delegated administrative access in Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/delegated-access-virtual-desktop |
 | Set up Kerberos KDC proxy for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/key-distribution-center-proxy |
@@ -185,7 +185,7 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Add session host VMs to Azure Virtual Desktop host pools | https://learn.microsoft.com/en-us/azure/virtual-desktop/add-session-hosts-host-pool |
 | Automatically migrate from AVD (classic) to Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/automatic-migration |
-| Deploy Azure Virtual Desktop Hybrid on-premises | https://learn.microsoft.com/en-us/azure/virtual-desktop/deploy-azure-virtual-desktop-hybrid |
+| Deploy Azure Virtual Desktop Hybrid On-premises | https://learn.microsoft.com/en-us/azure/virtual-desktop/deploy-azure-virtual-desktop-hybrid |
 | Deploy Azure Virtual Desktop MMR Insider extension via Intune | https://learn.microsoft.com/en-us/azure/virtual-desktop/deploy-insider-extension |
 | Manually migrate from AVD (classic) to Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/manual-migration |
 | Move Azure Virtual Desktop resources between Azure regions | https://learn.microsoft.com/en-us/azure/virtual-desktop/move-resources |

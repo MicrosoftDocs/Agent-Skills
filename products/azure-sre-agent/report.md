@@ -47,8 +47,8 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 118
+- **Updated Pages**: 0
+- **Unchanged**: 119
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sre-agent/azure-sre-agent.csv`
 
@@ -66,11 +66,6 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 | *(Unclassified)* | 68 | 57.1% |
 
 ## Changes
-
-### Updated Pages
-
-- [What is SRE Agent?](https://learn.microsoft.com/en-us/azure/sre-agent/overview)
-  - Updated: 2026-03-27T15:55:00.000Z → 2026-06-19T22:18:00.000Z
 
 ## Classified Pages
 

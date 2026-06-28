@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-07'
+generated_at: '2026-06-28'
 category_descriptions:
   scenarios: 'End-to-end adoption patterns for AI agents, AKS, RHEL, ARO, AVD, Citrix,
     AVS, Oracle, SAP: landing zones, identity, networking, security, BCDR, automation,
@@ -7,51 +7,52 @@ category_descriptions:
   adoption-patterns: Patterns and step-by-step guides for planning, migrating, modernizing,
     and operating workloads on Azure (apps, data, AI agents, AVD, SAP, Oracle, VMware)
     using CAF best practices.
-  strategy: 'Strategic guidance for planning cloud and AI adoption: business cases,
-    exec strategy, cost, resiliency, security, sustainability, and workload-specific
-    plans (SAP, Oracle, AVD, VMware, hybrid/multicloud).'
+  strategy: 'High-level cloud and AI strategy: defining business goals, executive
+    alignment, unified data/ops, workload-specific plans (SAP, Oracle, AVD, VMware),
+    and cost, resiliency, security, and sustainability objectives.'
   planning: Planning cloud adoption, migration waves, modernization roadmaps, cost/skills
     readiness, and detailed plans for workloads (AI, data, Oracle, SAP, AVS, AVD,
     analytics) on Azure.
-  governance: 'Designing and enforcing Azure governance: policies, tagging, cost management,
-    compliance, and guardrails for landing zones, AI agents, Arc, AKS, AVD, AVS, and
-    SAP workloads.'
+  governance: 'Designing and enforcing Azure governance: policies, tagging, cost control,
+    compliance, and security baselines across landing zones, AKS, AVD, AVS, Arc, SAP,
+    and AI agents.'
   operations: Operating, monitoring, securing, and optimizing Azure environments and
     workloads (including AI, AKS, Arc, AVS, Oracle, SAP, analytics) plus BCDR, DevOps,
     and platform-level governance.
   organization: 'Designing cloud org structures, roles, and RACI: governance, CCoE,
     DevOps, security, operations, data/analytics, cost management, and breaking silos
     for Azure adoption and operations'
-  readiness: 'Designing and operating Azure landing zones: network topologies, connectivity,
-    identity, subscriptions, governance, automation/DevOps, multitenancy, and workload-specific
-    setups (AKS, AVS, SAP, Oracle, AVD).'
+  readiness: 'Designing and operating Azure landing zones: network topologies, identity,
+    subscriptions, governance, automation/DevOps, multitenant setups, and workload-specific
+    patterns (AVS, SAP, Oracle, AKS, Arc).'
   security: Security design and governance for Azure landing zones, including Zero
     Trust, IAM, encryption, DevOps, AKS, analytics, SAP/Oracle, Arc, and ongoing security
     operations.
 skill_description: Expert guidance for planning and executing cloud adoption using
   Azure Cloud Adoption Framework. Covers strategy, planning, readiness & landing zones,
   adoption patterns, governance, security, operations & management, organization &
-  teams, and adoption scenarios. Use when planning AI/AKS landing zones, AVD/AVS setups,
-  or SAP/Oracle migrations and governance, and other Azure Cloud Adoption Framework
+  teams, and adoption scenarios. Use when designing Azure landing zones, AKS, AVD/AVS,
+  SAP/Oracle workloads, or AI agent platforms, and other Azure Cloud Adoption Framework
   related development tasks.
-use_when: Use when planning AI/AKS landing zones, AVD/AVS setups, or SAP/Oracle migrations
-  and governance, and other Azure Cloud Adoption Framework related development tasks.
+use_when: Use when designing Azure landing zones, AKS, AVD/AVS, SAP/Oracle workloads,
+  or AI agent platforms, and other Azure Cloud Adoption Framework related development
+  tasks.
 ---
 # Azure Cloud Adoption Framework Crawl Report
 
 ## Summary
 
-- **Total Pages**: 328
-- **Fetched**: 328
+- **Total Pages**: 327
+- **Fetched**: 327
 - **Fetch Failed**: 0
-- **Classified**: 320
+- **Classified**: 319
 - **Unclassified**: 8
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 328
-- **Deleted Pages**: 0
+- **New Pages**: 2
+- **Updated Pages**: 2
+- **Unchanged**: 323
+- **Deleted Pages**: 3
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cloud-adoption-framework/azure-cloud-adoption-framework.csv`
 
 ## Classification Statistics
@@ -59,17 +60,35 @@ use_when: Use when planning AI/AKS landing zones, AVD/AVS setups, or SAP/Oracle 
 | Type | Count | Percentage |
 |------|-------|------------|
 | adoption-patterns | 21 | 6.4% |
-| governance | 25 | 7.6% |
+| governance | 24 | 7.3% |
 | operations | 31 | 9.5% |
 | organization | 14 | 4.3% |
 | planning | 24 | 7.3% |
-| readiness | 114 | 34.8% |
-| scenarios | 54 | 16.5% |
+| readiness | 114 | 34.9% |
+| scenarios | 53 | 16.2% |
 | security | 23 | 7.0% |
-| strategy | 14 | 4.3% |
+| strategy | 15 | 4.6% |
 | *(Unclassified)* | 8 | 2.4% |
 
 ## Changes
+
+### New Pages
+
+- [AI adoption](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/strategy)
+- [2. Govern & secure agents](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai-agents/governance-security-across-organization)
+
+### Updated Pages
+
+- [Define your naming convention](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming)
+  - Updated: 2025-09-12T18:02:00.000Z → 2026-06-25T18:08:00.000Z
+- [Tools](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/resources/tools-templates)
+  - Updated: 2026-05-19T20:03:00.000Z → 2026-06-24T15:03:00.000Z
+
+### Deleted Pages
+
+- ~~Governance and security~~ (https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai-agents/governance-security-across-organization)
+- ~~Responsible AI~~ (https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai-agents/responsible-ai-across-organization)
+- ~~AI adoption~~ (https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/)
 
 ## Classified Pages
 
@@ -97,7 +116,6 @@ use_when: Use when planning AI/AKS landing zones, AVD/AVS setups, or SAP/Oracle 
 | [Organize resources](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-setup-guide/organize-resources) | readiness | 0.90 | Detailed guidance on management hierarchies, naming conventions, and tagging for Azure resource organization—core landing zone and readiness design decisions. |
 | [Overview](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/identity-access) | readiness | 0.90 | Provides best practices for identity and access as a landing zone design area, forming the security perimeter and authorization model for the environment. |
 | [Prepare your landing zone for migration](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/ready-azure-landing-zone) | readiness | 0.90 | Lists concrete tasks and configurations required after landing zone deployment to support migration projects; clearly landing zone readiness, not migration execution. |
-| [Responsible AI](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai-agents/responsible-ai-across-organization) | governance | 0.90 | Explains how to design and operationalize responsible AI policies and governance standards for agents, integrating with existing workflows—governance and compliance depth. |
 | [SAP on Azure landing zone accelerator](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/sap/enterprise-scale-landing-zone) | scenarios | 0.90 | Scenario-specific CAF guidance for SAP workloads, providing a reference implementation and architectural approach for SAP workload landing zones inside an enterprise-scale landing zone. This is clearly a workload-specific CAF adaptation and landing zone pattern, matching the scenarios sub-skill. |
 | [Set up governance](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-setup-guide/governance-compliance) | governance | 0.90 | Explains how to define and enforce governance rules using Azure Policy and Defender for Cloud, with concrete governance setup practices beyond conceptual governance overviews. |
 | [Subscriptions](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/resource-org-subscriptions) | readiness | 0.90 | Provides detailed guidance on capturing subscription requirements and designing target subscriptions for large-scale adoption, including EA/MCA nuances. This is foundational environment and subscription design (readiness). |
@@ -129,7 +147,6 @@ use_when: Use when planning AI/AKS landing zones, AVD/AVS setups, or SAP/Oracle 
 | [Business continuity and disaster recovery](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/landing-zone-citrix/citrix-business-continuity-disaster-recovery) | scenarios | 0.86 | Scenario-specific BCDR design for Citrix on Azure Virtual Desktop landing zone, with concrete architecture and configuration guidance that goes beyond generic BCDR concepts. |
 | [Connectivity to Azure](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/connectivity-to-azure) | readiness | 0.86 | Provides concrete design considerations and recommended network topology models (ExpressRoute vs. S2S VPN) for connecting on-premises environments to Azure, which are detailed implementation and architecture decisions aligned with landing zone and network foundation setup, fitting the readiness category. |
 | [Create your initial subscriptions](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-setup-guide/initial-subscriptions) | readiness | 0.86 | Provides stepwise guidance and best practices for creating initial subscriptions and scaling them as the environment grows, which is core landing zone and subscription setup (readiness). |
-| [Define your naming convention](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming) | readiness | 0.86 | Offers prescriptive patterns and examples for naming Azure resources to ensure consistency and compliance, which is concrete environment setup guidance (readiness) rather than conceptual governance. |
 | [Design connectivity with Azure virtual networks](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-vmware/virtual-network-connectivity) | readiness | 0.86 | Explains ExpressRoute-based connectivity patterns between AVS private clouds and Azure VNets, including hub-spoke and Virtual WAN considerations—core landing zone network design. |
 | [Design connectivity with on-premises sites](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-vmware/on-premises-connectivity) | readiness | 0.86 | Provides detailed options and decision criteria for connecting on-premises datacenters to Azure VMware Solution, including throughput/latency considerations and supported patterns. |
 | [Dual-region network topologies](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-vmware/eslz-dual-region-network-topology) | readiness | 0.86 | Describes dual-region connectivity patterns for AVS private clouds to achieve disaster resilience, including topology and connectivity design across regions. |
@@ -209,7 +226,6 @@ use_when: Use when planning AI/AKS landing zones, AVD/AVS setups, or SAP/Oracle 
 | [Transition by duplicating a landing zone management group](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/align-approach-duplicate-brownfield-audit-only) | readiness | 0.84 | Scenario article describing a specific technical approach to transition to the Azure landing zone reference architecture by duplicating a landing zone management group with policies in audit-only mode. Provides concrete implementation details on management group structure, policy assignment strategy, and compliance assessment, which are expert-level landing zone and subscription design guidance aligned with readiness. |
 | [Transition management groups](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/align-scenario-multiple-management-groups) | readiness | 0.84 | Provides prescriptive guidance for reworking management group hierarchies and subscriptions into the landing zone reference architecture—deep readiness and platform structure expertise. |
 | [Transition to the Azure landing zone reference architecture](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/enterprise-scale/transition) | readiness | 0.84 | Gives detailed recommendations for onboarding existing subscriptions, management groups, and connectivity into the Azure landing zone reference architecture—expert environment transition and landing zone design. |
-| [Governance and security](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai-agents/governance-security-across-organization) | governance | 0.83 | Provides layered governance and security framework for AI agents, including data governance, compliance, and policy formation mapped to CAF governance concepts—specialized governance guidance. |
 | [Overview](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/management) | readiness | 0.83 | This is a CAF landing zone design-area article that defines management design considerations and recommendations for Azure, hybrid, and multicloud environments. It establishes the foundational operations management capabilities that must be built into landing zones (management groups, monitoring hooks, tooling integration), which is core readiness content. The guidance is prescriptive and implementation-focused rather than conceptual, providing expert-level details on how to structure management for Azure environments. |
 | [Subscription vending](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/subscription-vending) | readiness | 0.83 | Explains subscription vending as a platform mechanism, its lifecycle placement, and how it supports workload deployment; this is detailed subscription and platform design, core to readiness. |
 | [1. Build governance team](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/govern/build-cloud-governance-team) | organization | 0.82 | Details responsibilities, roles, and strategies for a cloud governance team managing risk and policies—organizational operating model and RACI-style guidance, not just policy concepts. |
@@ -306,11 +322,13 @@ use_when: Use when planning AI/AKS landing zones, AVD/AVS setups, or SAP/Oracle 
 | [Testing approach for Azure landing zones](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/enterprise-scale/testing-approach) | readiness | 0.80 | Provides a structured testing approach for landing zone deployments, including policy definitions, RBAC, and automation via ARM/Terraform/Bicep—expert validation and readiness practice. |
 | [Use Azure Bastion for virtual machine remote access](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/plan-for-virtual-machine-remote-access) | readiness | 0.80 | Provides design and planning considerations for enabling secure remote access to VMs in landing zones using Bastion and related services, which is detailed connectivity and access design (readiness). |
 | [Use infrastructure as code to update Azure landing zones](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/considerations/infrastructure-as-code-updates) | readiness | 0.80 | Details how to manage landing zone updates with IaC, including aligning existing non-IaC resources—expert implementation guidance for environment lifecycle management. |
+| [2. Govern & secure agents](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai-agents/governance-security-across-organization) | governance | 0.78 | Provides prescriptive, scenario-specific governance and security practices for AI agents (delegated authority, cross-system risk, baseline policies, compliance considerations). This is governance-focused expert guidance tailored to AI agents that goes beyond generic concepts. |
 | [2. Teams and roles](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/secure/teams-roles) | organization | 0.78 | Details specific security roles, responsibilities, and how they integrate into the cloud lifecycle—organizational operating model guidance for security, beyond generic role descriptions. |
 | [4. Optimize workloads](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/migrate/optimize-workloads-after-migration) | operations | 0.78 | Covers detailed post-migration optimization practices: performance tuning, cost controls, monitoring validation, backup verification, operations readiness, and architecture reviews—practical operations and optimization guidance not captured by generic training data. |
 | [6. Adopt](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/secure/adopt) | security | 0.78 | Focuses on establishing robust security mechanisms during workload implementation and migration, with consistent secure build practices—security execution patterns for adoption. |
 | [7. Govern](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/secure/govern) | security | 0.78 | Connects business priorities to security architecture, standards, and policies, and describes security governance teams and posture improvement—security governance methodology. |
 | [8. Manage](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/secure/manage) | security | 0.78 | Provides guidance for ongoing security posture management, incident preparedness, and integrating security into daily operations—security operations patterns at scale. |
+| [AI adoption](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/strategy) | strategy | 0.78 | Page focuses on identifying AI business drivers, selecting AI use cases, mapping them to Microsoft AI solutions, and building a responsible, data-driven AI strategy. It includes organization-level outcome definition and alignment guidance specific to AI adoption, which goes beyond generic LLM knowledge and fits the CAF 'strategy' sub-skill. |
 | [Abbreviations for Azure resources](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations) | readiness | 0.78 | Provides a large expert-curated table of recommended abbreviations mapped to Azure resources and provider namespaces, which is detailed configuration guidance for environment setup (readiness). |
 | [Application identity and access](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/identity-access-application-access) | readiness | 0.78 | Gives concrete guidance for how cloud-native application components authenticate to each other and manage end-user identities in Azure. This is detailed landing zone/application IAM design, fitting readiness rather than generic security methodology. |
 | [Azure Arc landing zone accelerator](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/hybrid/enterprise-scale-landing-zone) | readiness | 0.78 | The page provides detailed guidance on integrating Azure Arc-managed hybrid and multicloud resources into Azure landing zones, including how Arc resources are projected into the Azure control plane and incorporated into landing zone architecture. This is expert, implementation-focused content about extending landing zone design and governance to non-Azure resources, which aligns with readiness & landing zones rather than general scenarios or conceptual overviews. |
@@ -319,6 +337,7 @@ use_when: Use when planning AI/AKS landing zones, AVD/AVS setups, or SAP/Oracle 
 | [Basics and prerequisites](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-vmware/azure-vmware-solution-network-basics) | readiness | 0.78 | Summarizes platform-specific networking concepts required to apply the rest of the network design guide; foundational expert knowledge for landing zone network design. |
 | [Business plan](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai-agents/business-strategy-plan) | strategy | 0.78 | Focuses on identifying AI agent use cases aligned to business goals, defining value and success metrics, and structuring an adoption plan—business drivers and outcome definition for AI agents. |
 | [Cost governance](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/hybrid/arc-enabled-kubernetes/eslz-arc-kubernetes-cost-governance) | scenarios | 0.78 | Provides detailed, scenario-specific cost governance design considerations and recommendations for Azure Arc-enabled Kubernetes, mapping CAF governance and cost-control practices to this particular hybrid Kubernetes workload. This is workload/scenario-specific CAF adaptation, aligning with the 'scenarios' sub-skill type. |
+| [Define your naming convention](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming) | readiness | 0.78 | The page provides detailed, prescriptive guidance and concrete examples for creating standardized Azure resource naming conventions, including patterns aligned with Azure constraints and Cloud Adoption Framework practices. This is specific implementation guidance for preparing the Azure environment (management, clarity, compliance) and fits readiness/landing zone setup rather than governance or planning. |
 | [Expand your landing zone](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/considerations/) | readiness | 0.78 | Series focused on expanding an initial landing zone to enterprise requirements using refactoring and IaC; contains concrete patterns for evolving landing zone architecture—expert readiness evolution guidance. |
 | [Govern your portfolio](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/govern) | governance | 0.78 | Shows how to apply CAF governance disciplines and tooling specifically to AVD deployments, including policy and control extensions beyond generic governance concepts. |
 | [Landing zone regions](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/considerations/regions) | readiness | 0.78 | Explains how landing zones use regions, how to add/move regions, and when to use multi-region deployments for HA/DR—expert regional architecture and readiness guidance. |
@@ -368,7 +387,6 @@ use_when: Use when planning AI/AKS landing zones, AVD/AVS setups, or SAP/Oracle 
 | [3. Prepare your organization](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/prepare-organizational-alignment) | organization | 0.70 | Focuses on aligning leadership, strategies, and operating models, including stakeholder involvement and buy-in—this is organizational change and alignment guidance, fitting the organization sub-skill with specific practices rather than high-level marketing content. |
 | [4. Optimize workloads](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/modernize/optimize-after-cloud-modernization) | operations | 0.70 | The page focuses on validating production configurations, establishing monitoring and cost controls, measuring outcomes, and implementing continuous improvement after modernization. This aligns with operations & management (monitoring, optimization, ongoing management) rather than initial migration patterns. It contains prescriptive, post-deployment optimization practices that go beyond generic concepts, so it qualifies as expert operational guidance. |
 | [4. Protect Azure](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/manage/protect) | operations | 0.70 | Gives specific operational best practices for reliability and security of an Azure cloud estate as part of cloud operations, including concrete protection and resiliency approaches rather than only high-level security concepts. |
-| [AI adoption](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/) | scenarios | 0.70 | Scenario-specific CAF guidance for adopting generative and non‑generative AI workloads on Azure, including concrete steps for identifying AI use cases, selecting appropriate Azure AI solutions, and defining governance/operations for AI implementations. This is workload-specific (AI) adoption guidance aligned to CAF, which fits the scenarios sub-skill and contains prescriptive, process-level details beyond generic conceptual content. |
 | [Agents](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai-agents/) | scenarios | 0.70 | Provides detailed, prescriptive guidance for adopting AI agents (a specific workload scenario) including planning, governance, integration, and measurement, plus data architecture strategies and concrete patterns for Microsoft 365 agents and custom agents with Foundry/Copilot Studio. This is a workload-specific CAF adaptation for AI agents, which maps to the scenarios sub-skill and includes expert, step-by-step adoption practices. |
 | [Cost efficiency](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/inform/cost-efficiency) | strategy | 0.70 | Gives specific cost-efficiency considerations and decision guidance as part of cloud adoption strategy, tying financial outcomes to strategic choices. This aligns with strategy (business drivers, value, and cost outcomes) rather than governance or operations. |
 | [DevOps Toolchain considerations](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/considerations/devops-toolchain) | readiness | 0.70 | Provides concrete examples and selection guidance for tools across CI/CD, operations, and collaboration tailored to landing zone deployment—expert tooling guidance for environment readiness. |
@@ -404,7 +422,7 @@ use_when: Use when planning AI/AKS landing zones, AVD/AVS setups, or SAP/Oracle 
 | [1. Overview](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/secure/overview) | 0.40 | High-level overview of the Secure methodology across CAF phases; primarily conceptual and introductory without deep, specific implementation patterns. |
 | [Get landing zone help](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/partner-landing-zone) | 0.40 | Primarily explains how to find and work with partners; it’s process/engagement guidance without deep technical, architectural, or governance implementation details. |
 | [Innovate in the cloud](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/innovate) | 0.40 | High-level innovation and value narrative for AVD; lacks detailed methodologies, architectures, or stepwise implementation guidance. |
+| [Tools](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/resources/tools-templates) | 0.40 | Catalog of CAF tools and templates with high-level descriptions and links; does not itself contain detailed methodologies, decision trees, or implementation specifics beyond what an LLM would generally know. |
 | [Overview](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/resource-org) | 0.30 | High-level overview of the resource organization design area without deep implementation specifics; primarily conceptual framing. |
-| [Tools](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/resources/tools-templates) | 0.30 | Page is a catalog of tools, templates, and assessments across CAF phases, primarily navigational and descriptive. It doesn’t provide the underlying methodologies, decision frameworks, or detailed implementation guidance itself, so there’s no deep, non-obvious expert knowledge to capture under any specific sub-skill type. |
 | [What is the Cloud Adoption Framework?](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/overview) | 0.10 | High-level overview of the Microsoft Cloud Adoption Framework without deep implementation details, decision trees, or methodology-specific expert guidance; primarily conceptual and navigational content. |
 | [What's new](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/whats-new) | 0.10 | Page is a change log/updates overview for the Cloud Adoption Framework, summarizing new and deprecated content and navigation pointers. It does not itself contain deep implementation guidance, methodologies, or detailed frameworks that match any sub-skill detection hints. |

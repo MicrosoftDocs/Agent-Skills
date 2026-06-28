@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 8
-- **Unchanged**: 496
+- **Updated Pages**: 0
+- **Unchanged**: 504
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-factory/azure-data-factory.csv`
 
@@ -76,25 +76,6 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | *(Unclassified)* | 84 | 16.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [Introduction to Data Factory](https://learn.microsoft.com/en-us/azure/data-factory/introduction)
-  - Updated: 2025-02-13T08:00:00.000Z → 2026-06-19T17:16:00.000Z
-- [Pipeline assessment tool](https://learn.microsoft.com/en-us/azure/data-factory/how-to-assess-your-azure-data-factory-to-fabric-data-factory-migration)
-  - Updated: 2026-04-11T06:13:00.000Z → 2026-06-15T17:26:00.000Z
-- [Upgrade Azure Data Factory pipelines to Fabric](https://learn.microsoft.com/en-us/azure/data-factory/how-to-upgrade-your-azure-data-factory-pipelines-to-fabric-data-factory)
-  - Updated: 2026-04-30T17:19:00.000Z → 2026-06-04T08:00:00.000Z
-- [Upgrade Azure Synapse Analytics pipelines to Fabric](https://learn.microsoft.com/en-us/azure/data-factory/how-to-upgrade-your-azure-synapse-analytics-pipelines-to-fabric-data-factory)
-  - Updated: 2026-03-18T22:20:00.000Z → 2026-06-15T17:26:00.000Z
-- [List of tutorials](https://learn.microsoft.com/en-us/azure/data-factory/data-factory-tutorials)
-  - Updated: 2025-04-22T22:03:00.000Z → 2026-06-19T17:16:00.000Z
-- [Pipelines and activities](https://learn.microsoft.com/en-us/azure/data-factory/concepts-pipelines-activities)
-  - Updated: 2025-02-13T08:00:00.000Z → 2026-06-17T08:00:00.000Z
-- [Create and configure a self-hosted integration runtime](https://learn.microsoft.com/en-us/azure/data-factory/create-self-hosted-integration-runtime)
-  - Updated: 2025-03-31T08:00:00.000Z → 2026-06-17T08:00:00.000Z
-- [Overview and general copy activity errors](https://learn.microsoft.com/en-us/azure/data-factory/connector-troubleshoot-guide)
-  - Updated: 2025-07-03T17:22:00.000Z → 2026-06-19T17:16:00.000Z
 
 ## Classified Pages
 

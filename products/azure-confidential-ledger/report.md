@@ -40,10 +40,10 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 - **Unclassified**: 16
 
 ### Incremental Update
-- **New Pages**: 8
-- **Updated Pages**: 7
-- **Unchanged**: 22
-- **Deleted Pages**: 3
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 37
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-confidential-ledger/azure-confidential-ledger.csv`
 
 ## Classification Statistics
@@ -58,40 +58,6 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 | *(Unclassified)* | 16 | 43.2% |
 
 ## Changes
-
-### New Pages
-
-- [User authentication and authorization](https://learn.microsoft.com/en-us/azure/confidential-ledger/authentication-azure-ad)
-- [Data ingress and egress from Azure confidential ledger using Power Automate Connector](https://learn.microsoft.com/en-us/azure/confidential-ledger/create-power-automate-workflow)
-- [About Microsoft's Signing Transparency Ledger](https://learn.microsoft.com/en-us/azure/confidential-ledger/about-microsoft-signing-transparency-ledger)
-- [Concepts](https://learn.microsoft.com/en-us/azure/confidential-ledger/microsoft-signing-transparency-concepts)
-- [Usage: payloads, claims, and auditing](https://learn.microsoft.com/en-us/azure/confidential-ledger/microsoft-signing-transparency-usage)
-- [Verify ledger integrity and inspect entries](https://learn.microsoft.com/en-us/azure/confidential-ledger/microsoft-signing-transparency-verify-signatures)
-- [Troubleshooting](https://learn.microsoft.com/en-us/azure/confidential-ledger/microsoft-signing-transparency-troubleshoot)
-- [Secure Confidential Computing Ledger](https://learn.microsoft.com/en-us/azure/confidential-ledger/secure-confidential-ledger)
-
-### Updated Pages
-
-- [About Azure confidential ledger](https://learn.microsoft.com/en-us/azure/confidential-ledger/overview)
-  - Updated: 2026-04-23T08:00:00.000Z → 2026-06-14T12:35:00.000Z
-- [Architecture](https://learn.microsoft.com/en-us/azure/confidential-ledger/architecture)
-  - Updated: 2025-11-17T23:03:00.000Z → 2026-06-14T12:35:00.000Z
-- [Data organization](https://learn.microsoft.com/en-us/azure/confidential-ledger/data-organization)
-  - Updated: 2026-03-25T06:03:00.000Z → 2026-06-12T08:00:00.000Z
-- [Write transaction receipts](https://learn.microsoft.com/en-us/azure/confidential-ledger/write-transaction-receipts)
-  - Updated: 2026-04-23T08:00:00.000Z → 2026-06-14T12:35:00.000Z
-- [Use the Azure portal ledger explorer](https://learn.microsoft.com/en-us/azure/confidential-ledger/ledger-explorer)
-  - Updated: 2026-05-12T12:44:00.000Z → 2026-06-14T12:35:00.000Z
-- [Data residency](https://learn.microsoft.com/en-us/azure/confidential-ledger/data-residency)
-  - Updated: 2025-11-17T23:03:00.000Z → 2026-06-14T12:35:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/confidential-ledger/faq)
-  - Updated: 2026-06-12T22:35:00.000Z → 2026-06-14T12:35:00.000Z
-
-### Deleted Pages
-
-- ~~Authentication with Microsoft Entra ID~~ (https://learn.microsoft.com/en-us/azure/confidential-ledger/authentication-azure-ad)
-- ~~Data Ingress and Egress from Azure confidential ledger using Power Automate Connector~~ (https://learn.microsoft.com/en-us/azure/confidential-ledger/create-power-automate-workflow)
-- ~~Secure your Confidential Ledger~~ (https://learn.microsoft.com/en-us/azure/confidential-ledger/secure-confidential-ledger)
 
 ## Classified Pages
 

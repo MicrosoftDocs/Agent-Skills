@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-06-28'
 category_descriptions:
   troubleshooting: Diagnosing and resolving common Azure Large Instances issues with
     Epic integration, including connectivity, performance, configuration, and operational
@@ -35,8 +35,8 @@ confusable_not_for: Not for Azure Baremetal Infrastructure (use azure-baremetal-
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 10
+- **Updated Pages**: 1
+- **Unchanged**: 9
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-large-instances/azure-large-instances.csv`
 
@@ -50,6 +50,11 @@ confusable_not_for: Not for Azure Baremetal Infrastructure (use azure-baremetal-
 | *(Unclassified)* | 7 | 70.0% |
 
 ## Changes
+
+### Updated Pages
+
+- [Azure Large Instances for Epic workload](https://learn.microsoft.com/en-us/azure/azure-large-instances/workloads/epic/)
+  - Updated: 2024-08-04T11:36:00Z → 2026-06-23T17:23:00Z
 
 ## Classified Pages
 
@@ -68,5 +73,5 @@ confusable_not_for: Not for Azure Baremetal Infrastructure (use azure-baremetal-
 | [Quality checks of Azure Large Instances](https://learn.microsoft.com/en-us/azure/azure-large-instances/quality-checks) | 0.30 | Described as an overview of quality checks; summary does not show concrete thresholds, limits, or detailed diagnostic mappings. |
 | [Work with Azure Large Instances in the Azure portal](https://learn.microsoft.com/en-us/azure/azure-large-instances/work-with-azure-large-instances-in-azure-portal) | 0.30 | Portal how-to/navigation style content; no detailed configuration tables, limits, or product-specific troubleshooting. |
 | [What is Azure Large Instances?](https://learn.microsoft.com/en-us/azure/azure-large-instances/what-is-azure-large-instances) | 0.20 | High-level overview of Azure Large Instances; no specific limits, configs, error codes, or decision matrices. |
-| [Azure Large Instances for Epic workload](https://learn.microsoft.com/en-us/azure/azure-large-instances/workloads/epic/) | 0.10 | Landing page for Epic workload on Azure Large Instances; appears to be navigational/overview content. |
 | [Find your subscription ID](https://learn.microsoft.com/en-us/azure/azure-large-instances/find-your-subscription-id) | 0.10 | Simple guidance on locating a subscription ID in the portal; no expert-only configuration or limits. |
+| [Azure Large Instances for Epic workload](https://learn.microsoft.com/en-us/azure/azure-large-instances/workloads/epic/) | - | Only a high-level description is available; no visible evidence of numeric limits, configuration tables, error-code-based troubleshooting, or other detailed expert knowledge per the defined categories. |

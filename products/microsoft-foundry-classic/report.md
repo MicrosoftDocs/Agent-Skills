@@ -1,18 +1,18 @@
 ---
-generated_at: '2026-06-21'
+generated_at: '2026-06-28'
 category_descriptions:
-  configuration: Configuring, monitoring, and evaluating Foundry Classic/Models and
-    Azure OpenAI resources, including agents, networking, storage, compute, RAG, safety,
-    tracing, and continuous quality monitoring.
-  decision-making: Guidance on choosing models, regions, deployments, billing, and
-    lifecycle strategies for Foundry and Azure OpenAI, including migration, PTU sizing,
-    and cost/performance tradeoffs.
+  configuration: 'Configuring and operating Foundry classic: agent hosts, networking,
+    monitoring, evaluators, models, storage, RAG/vector indexes, OpenAI settings,
+    and continuous quality/usage tracking.'
+  decision-making: Guidance for choosing models, regions, deployments, billing and
+    PTU options, managing model lifecycle/versioning, and planning migrations and
+    costs for Foundry and Azure OpenAI workloads
   architecture-patterns: Designing multi-agent architectures, configuring Foundry
     Agent Service for resilience, and understanding model router behavior, failover,
     and disaster recovery strategies.
-  integrations: 'Integrating Foundry and Azure OpenAI with external data, tools, and
-    SDKs: RAG with Search/SharePoint/files, tools (Functions, OpenAPI, MCP, browser,
-    code), model routing, fine-tuning, realtime, and app frameworks.'
+  integrations: 'Patterns and code for integrating Foundry and Azure OpenAI with tools,
+    data, and runtimes: search/RAG, MCP/OpenAPI tools, SDKs, Assistants, realtime/audio/image,
+    fine-tuning, and external data stores.'
   security: 'Security, privacy, and compliance for Foundry: auth/RBAC, encryption
     and CMK, network isolation (VNets, Private Link, perimeters), Azure Policy guardrails,
     content filters, and data handling for models and tools.'
@@ -31,14 +31,14 @@ category_descriptions:
 skill_description: Expert knowledge for Microsoft Foundry Classic (aka Azure AI Foundry
   classic) development including troubleshooting, best practices, decision making,
   architecture & design patterns, limits & quotas, security, configuration, integrations
-  & coding patterns, and deployment. Use when building Foundry agents, configuring
-  RAG/search, using tools (Functions/OpenAPI/MCP), routing models, or deploying hubs,
-  and other Microsoft Foundry Classic related development tasks. Not for Microsoft
-  Foundry (use microsoft-foundry), Microsoft Foundry Local (use microsoft-foundry-local),
-  Microsoft Foundry Tools (use microsoft-foundry-tools).
-use_when: Use when building Foundry agents, configuring RAG/search, using tools (Functions/OpenAPI/MCP),
-  routing models, or deploying hubs, and other Microsoft Foundry Classic related development
-  tasks.
+  & coding patterns, and deployment. Use when configuring Foundry agents, model routing,
+  RAG/vector indexes, Azure OpenAI deployments, or secure VNets, and other Microsoft
+  Foundry Classic related development tasks. Not for Microsoft Foundry (use microsoft-foundry),
+  Microsoft Foundry Local (use microsoft-foundry-local), Microsoft Foundry Tools (use
+  microsoft-foundry-tools).
+use_when: Use when configuring Foundry agents, model routing, RAG/vector indexes,
+  Azure OpenAI deployments, or secure VNets, and other Microsoft Foundry Classic related
+  development tasks.
 confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft Foundry
   Local (use microsoft-foundry-local), Microsoft Foundry Tools (use microsoft-foundry-tools).
 ---
@@ -46,17 +46,17 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 
 ## Summary
 
-- **Total Pages**: 383
-- **Fetched**: 383
+- **Total Pages**: 378
+- **Fetched**: 378
 - **Fetch Failed**: 0
-- **Classified**: 286
+- **Classified**: 281
 - **Unclassified**: 97
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 7
-- **Unchanged**: 376
-- **Deleted Pages**: 1
+- **Updated Pages**: 5
+- **Unchanged**: 373
+- **Deleted Pages**: 5
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/microsoft-foundry-classic/microsoft-foundry-classic.csv`
 
 ## Classification Statistics
@@ -65,37 +65,37 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 |------|-------|------------|
 | architecture-patterns | 5 | 1.3% |
 | best-practices | 11 | 2.9% |
-| configuration | 49 | 12.8% |
-| decision-making | 25 | 6.5% |
+| configuration | 49 | 13.0% |
+| decision-making | 25 | 6.6% |
 | deployment | 19 | 5.0% |
-| integrations | 116 | 30.3% |
-| limits-quotas | 12 | 3.1% |
-| security | 43 | 11.2% |
+| integrations | 111 | 29.4% |
+| limits-quotas | 12 | 3.2% |
+| security | 43 | 11.4% |
 | troubleshooting | 6 | 1.6% |
-| *(Unclassified)* | 97 | 25.3% |
+| *(Unclassified)* | 97 | 25.7% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Deploy models to managed compute pay-as-you-go](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/deploy-models-managed-pay-go)
-  - Updated: 2026-06-03T22:17:00.000Z → 2026-06-16T22:16:00.000Z
-- [Realtime API for speech and audio](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/realtime-audio)
+- [Standard agent setup](https://learn.microsoft.com/en-us/azure/foundry-classic/agents/concepts/standard-agent-setup)
+  - Updated: 2026-04-14T22:13:00.000Z → 2026-06-05T22:11:00.000Z
+- [Determine PTU sizing for a workload](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/provisioned-throughput-sizing)
+  - Updated: 2026-05-26T11:12:00.000Z → 2026-06-05T22:11:00.000Z
+- [2024-10-21 API reference](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/reference)
   - Updated: 2026-02-27T23:08:00.000Z → 2026-06-05T22:11:00.000Z
-- [Rate limits, region and virtual network support](https://learn.microsoft.com/en-us/azure/foundry-classic/concepts/evaluation-regions-limits-virtual-network)
-  - Updated: 2026-05-18T17:15:00.000Z → 2026-06-15T22:22:00.000Z
-- [Azure OpenAI On Your Data](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/references/on-your-data)
-  - Updated: 2026-04-14T22:13:00.000Z → 2026-06-05T22:11:00.000Z
-- [Data source - Elasticsearch (preview)](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/references/elasticsearch)
+- [v1 Preview API](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/reference-preview-latest)
   - Updated: 2026-02-27T23:08:00.000Z → 2026-06-05T22:11:00.000Z
-- [Data source - Pinecone (preview)](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/references/pinecone)
-  - Updated: 2026-04-14T22:13:00.000Z → 2026-06-05T22:11:00.000Z
-- [Data source - Mongo DB (preview)](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/references/mongo-db)
-  - Updated: 2026-04-14T22:13:00.000Z → 2026-06-05T22:11:00.000Z
+- [2025-04-01-preview - Inference](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/reference-preview)
+  - Updated: 2026-02-27T23:08:00.000Z → 2026-06-05T22:11:00.000Z
 
 ### Deleted Pages
 
-- ~~Status dashboard~~ (https://learn.microsoft.com/en-us/azure/foundry-classic/foundry-status-dashboard-documentation)
+- ~~2025-04-01-preview - Authoring~~ (https://learn.microsoft.com/en-us/azure/foundry-classic/openai/authoring-reference-preview)
+- ~~Assistants~~ (https://learn.microsoft.com/en-us/azure/foundry-classic/openai/reference-preview)
+- ~~Messages~~ (https://learn.microsoft.com/en-us/azure/foundry-classic/openai/reference-preview)
+- ~~Runs~~ (https://learn.microsoft.com/en-us/azure/foundry-classic/openai/reference-preview)
+- ~~Threads~~ (https://learn.microsoft.com/en-us/azure/foundry-classic/openai/reference-preview)
 
 ## Classified Pages
 
@@ -103,15 +103,10 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 |-----------|------|------------|--------|
 | [Foundry Models quotas and limits](https://learn.microsoft.com/en-us/azure/foundry-classic/foundry-models/quotas-limits) | limits-quotas | 0.95 | Explicitly described as quotas and limits with per-model token and request limits and client timeouts; these numeric constraints are expert knowledge and match the limits-quotas criteria. |
 | [Quotas and limits](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/quotas-limits) | limits-quotas | 0.95 | Explicitly described as a quick reference of quotas and limits; such pages list exact numeric caps and tier-specific limits that qualify as expert limits-quotas knowledge. |
-| [2024-10-21 API reference](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/reference) | integrations | 0.90 | Reference article on inference REST API endpoints, authorization options, and request/response structure. Contains detailed parameter and schema information unique to this product. |
 | [Manage quotas for Foundry resources](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/quota) | limits-quotas | 0.90 | Quota article explicitly covers TPM units, per-subscription/region/model allocations, and differences between Standard and Provisioned deployments; it will contain numeric limits and quota behaviors. |
 | [Quotas and limits](https://learn.microsoft.com/en-us/azure/foundry-classic/agents/quotas-limits) | limits-quotas | 0.90 | Explicitly describes quotas and limits (file sizes, vector stores, threads, messages, tools) and handling limit errors; this is numeric limit data central to the page. |
 | [Troubleshoot secure project connectivity](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/troubleshoot-secure-connection-project) | troubleshooting | 0.90 | Explicit troubleshooting guide for private endpoint connectivity with HTTP 403 and 'access forbidden' symptoms. Maps specific errors to causes and fixes for Foundry projects, which is product-specific troubleshooting knowledge. |
-| [v1 Preview API](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/reference-preview-latest) | integrations | 0.90 | Preview v1 REST API reference with authorization, endpoints, and schemas. Product-specific integration details not inferable from generic knowledge. |
 | [Rate limits, region and virtual network support](https://learn.microsoft.com/en-us/azure/foundry-classic/concepts/evaluation-regions-limits-virtual-network) | limits-quotas | 0.86 | The page explicitly covers rate limits for evaluation runs, region availability, and enterprise features like virtual network support and storage usage. These are product- and tier-specific constraints (rate limits, region support) that qualify as expert knowledge about limits and quotas rather than just conceptual guidance. |
-| [2025-04-01-preview - Authoring](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/authoring-reference-preview) | integrations | 0.85 | Authoring preview API reference with request/response structure and authorization. Contains concrete API fields and endpoints for authoring scenarios. |
-| [2025-04-01-preview - Inference](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/reference-preview) | integrations | 0.85 | Preview REST API reference with detailed endpoints and parameters. This is core integration knowledge. |
-| [Assistants](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/reference-preview) | integrations | 0.85 | Duplicate preview REST API reference entry; same integration-focused expert content. |
 | [Chat](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/latest) | integrations | 0.85 | Same v1 REST API reference URL/content as index 23; contains detailed API integration information. |
 | [Configure key-less authentication](https://learn.microsoft.com/en-us/azure/foundry-classic/foundry-models/how-to/configure-entra-id) | security | 0.85 | Keyless auth setup includes app registration, scopes, audience/resource IDs, and RBAC role requirements for Foundry Models, which are detailed security configuration patterns. |
 | [Embeddings](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/latest) | integrations | 0.85 | Duplicate v1 REST API reference entry; includes product-specific endpoints and parameters. |
@@ -120,12 +115,9 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 | [Fine-tuning](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/latest) | integrations | 0.85 | Duplicate v1 REST API reference entry; same integration-focused content. |
 | [Foundry Models retirement schedule](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/model-retirement-schedule) | decision-making | 0.85 | Lists each model’s lifecycle stage, retirement date, and suggested replacement, enabling concrete migration planning and model selection decisions based on time-bound criteria. |
 | [GPT-5 vs GPT-4.1](https://learn.microsoft.com/en-us/azure/foundry-classic/foundry-models/how-to/model-choice-guide) | decision-making | 0.85 | Compares GPT-5 vs GPT-4.1 with reasoning depth, latency, cost, and ideal scenarios; this is model- and platform-specific selection guidance with quantified trade-offs, fitting decision-making. |
-| [Messages](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/reference-preview) | integrations | 0.85 | Duplicate preview REST API reference entry; expert integration knowledge. |
 | [Models](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/latest) | integrations | 0.85 | Duplicate v1 REST API reference entry; detailed API usage patterns. |
 | [Overview](https://learn.microsoft.com/en-us/azure/foundry-classic/agents/how-to/tools-classic/openapi-spec) | integrations | 0.85 | Details connecting agents to external APIs via OpenAPI 3.0, including managed identity and API key options; likely lists config parameters and auth scopes unique to this product. |
 | [Responses](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/latest) | integrations | 0.85 | Duplicate v1 REST API reference entry; product-specific integration details. |
-| [Runs](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/reference-preview) | integrations | 0.85 | Duplicate preview REST API reference entry; includes detailed request/response schemas and parameters. |
-| [Threads](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/reference-preview) | integrations | 0.85 | Duplicate preview REST API reference entry; contains product-specific API details. |
 | [Troubleshooting guidance](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/fine-tuning-troubleshoot) | troubleshooting | 0.85 | Explicit troubleshooting article for fine-tuning; these normally map fine-tuning errors and job failures to causes and resolutions, including specific error messages and diagnostic steps unique to Azure OpenAI fine-tuning. |
 | [Vector stores](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/latest) | integrations | 0.85 | Duplicate v1 REST API reference entry; expert knowledge of endpoints and parameters. |
 | [v1 API](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/latest) | integrations | 0.85 | REST API reference with server variables, endpoints, parameters, and schemas for Azure OpenAI in Foundry. This is detailed integration knowledge with exact field names and structures. |
@@ -140,7 +132,6 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 | [Data source - Azure Cosmos DB for MongoDB vCore](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/references/cosmos-db) | integrations | 0.80 | API reference for integrating Azure OpenAI with Azure Cosmos DB data, including Python and REST usage. It will contain product-specific parameter names, request bodies, and configuration options for Cosmos DB-backed data sources, which are concrete integration patterns beyond generic knowledge. |
 | [Deploy Foundry Models using code](https://learn.microsoft.com/en-us/azure/foundry-classic/foundry-models/how-to/create-model-deployments) | deployment | 0.80 | Shows how to define and configure model deployments via CLI and Bicep, including product-specific deployment properties and constraints. |
 | [Deployment types](https://learn.microsoft.com/en-us/azure/foundry-classic/foundry-models/concepts/deployment-types) | decision-making | 0.80 | Compares Global Standard, Provisioned, DataZone, and Batch with when-to-use guidance, data residency, and pricing implications; this is deployment-type selection guidance with scenario-based recommendations. |
-| [Determine PTU sizing for a workload](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/provisioned-throughput-sizing) | decision-making | 0.80 | Article provides per-model throughput parameters and sizing formulas plus a capacity calculator; this is explicit decision guidance with quantitative criteria for choosing PTU levels, fitting the decision-making category. |
 | [Develop with Semantic Kernel](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/develop/semantic-kernel) | integrations | 0.80 | Describes how to configure Semantic Kernel to call Foundry models, including SDK migration notes and product-specific integration settings. |
 | [Disable shared key access to storage](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/disable-local-auth) | security | 0.80 | Article explains how to disable shared-key auth for the hub’s default storage account, including specific Azure Storage settings and Foundry implications, which are concrete security configuration steps. |
 | [Function calling](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/function-calling) | integrations | 0.80 | Explains how to define and send functions, and how models return JSON arguments; includes request schemas and parameter structures specific to Azure OpenAI function calling. |
@@ -159,6 +150,9 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 | [Responses API](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/responses) | integrations | 0.80 | How-to for the Azure OpenAI Responses API in Foundry (classic), including Python and REST usage, streaming, tools, and computer-use-preview. This will contain endpoint paths, request/response schemas, parameter names (like response_id, tool_choice, etc.), and possibly default behaviors unique to this API, which are product-specific integration details that qualify as expert knowledge. |
 | [Role-based access control for Microsoft Foundry](https://learn.microsoft.com/en-us/azure/foundry-classic/concepts/hub-rbac-foundry) | security | 0.80 | RBAC article will list specific roles, permissions, and scope definitions for Foundry hubs and projects, which are product-specific security details. |
 | [Troubleshoot deployments and monitoring](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/troubleshoot-deploy-and-monitor) | troubleshooting | 0.80 | Explicit troubleshooting article for deployments and monitors; likely maps deployment/monitoring errors to causes and resolutions. |
+| [v1 Preview API](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/reference-preview-latest) | integrations | 0.80 | This v1 preview REST API reference for Azure OpenAI image, audio, and video generation documents preview-specific endpoints, routes, parameters, and request/response formats. Such API reference details (including preview-only operations and fields) are expert, time-sensitive knowledge. The content aligns with integrations & coding patterns rather than limits or configuration, as it focuses on how to call these APIs programmatically. |
+| [2024-10-21 API reference](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/reference) | integrations | 0.78 | REST API reference pages for Azure OpenAI image and audio operations include endpoint paths, required/optional parameters, headers, request/response schemas, and example payloads that are product- and version-specific. These are integration/coding details (API surface, parameter names, allowed values) that change over time and are unlikely to be fully captured in model training. The page is not focused on limits, security, or deployment but on how to structure and send requests to these APIs. |
+| [2025-04-01-preview - Inference](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/reference-preview) | integrations | 0.78 | The preview REST API reference (2025-04-01-preview) for image and audio operations provides concrete API contracts: URLs, methods, parameters, and response schemas. These are detailed integration patterns unique to this preview version and not just conceptual guidance. That fits the integrations sub-skill, since it enables agents to construct correct HTTP calls with the right fields and formats. |
 | [Azure OpenAI On Your Data](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/references/on-your-data) | integrations | 0.78 | An API reference page for Azure OpenAI On Your Data that describes Python and REST usage will include endpoint URLs, request/response schemas, parameter names, and required configuration fields specific to this product. These are product-specific integration details (SDK/API parameters, request formats) that go beyond generic LLM knowledge and match the integrations sub-skill definition. |
 | [Azure OpenAI monitoring data reference](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/monitor-openai-reference) | configuration | 0.78 | A monitoring data reference page for Azure OpenAI in Foundry typically lists specific Azure Monitor metric names, dimensions, log categories, and schema fields. These are product-specific configuration/telemetry parameters (e.g., metric IDs, column names, categories) that an LLM wouldn't reliably know from training and are used when configuring monitoring and alerts, fitting the configuration sub-skill. |
 | [Customer-managed keys](https://learn.microsoft.com/en-us/azure/foundry-classic/concepts/hub-encryption-keys-portal) | security | 0.78 | CMK setup for hub projects will include Azure Key Vault integration details, key URI formats, required permissions, and Foundry-specific encryption behaviors that are product-specific security configuration knowledge. |
@@ -166,9 +160,11 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 | [Data source - Mongo DB (preview)](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/references/mongo-db) | integrations | 0.78 | This MongoDB Atlas data Python & REST API reference will include concrete API usage patterns, parameter names, connection configuration, and request/response formats specific to Azure OpenAI On Your Data with MongoDB Atlas. These are detailed integration patterns that match the integrations sub-skill and represent expert knowledge. |
 | [Data source - Pinecone (preview)](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/references/pinecone) | integrations | 0.78 | As a Python & REST API reference for Azure OpenAI on Pinecone data, this page will document specific configuration parameters (such as index names, environment, API keys), endpoint paths, and request schemas unique to this integration. That fits the integrations category, providing expert, product-specific coding and configuration patterns. |
 | [Default safety policies](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/default-safety-policies) | security | 0.78 | Describes default Guardrail/safety policies applied to Azure OpenAI in Foundry classic, including content filtering models, blocklists, prompt transformation, and content credentials. These are product-specific security/safety configurations and policy behaviors that an LLM would not fully know from training, fitting the security category. |
+| [Determine PTU sizing for a workload](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/provisioned-throughput-sizing) | decision-making | 0.78 | The page provides per-model throughput parameters and concrete sizing formulas to estimate required PTUs for specific workloads. This is capacity-planning and tier-sizing guidance with quantitative inputs, helping users decide how many PTUs to provision rather than just describing the concept. It fits the decision-making category best because it focuses on selecting appropriate capacity based on numeric criteria. |
 | [Foundry known issues](https://learn.microsoft.com/en-us/azure/foundry-classic/reference/foundry-known-issues) | troubleshooting | 0.78 | The page is a catalog of known issues and workarounds for Microsoft Foundry (classic), which typically includes product-specific symptoms and corresponding resolutions that aren't inferable from general knowledge. This aligns with troubleshooting content (symptom → workaround/solution), even if individual error codes/messages aren't visible in the summary. |
 | [Managed virtual network](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/managed-virtual-network) | security | 0.78 | Managed virtual network setup for Foundry will describe specific configuration options (enabling outbound isolation, configuring private endpoints, allowed subresources, required permissions, and possibly supported regions or constraints). These are detailed, product-specific security and network isolation settings, matching the security sub-skill. |
 | [Role-based access control (Azure RBAC)](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/role-based-access-control) | security | 0.78 | RBAC article will list specific built-in roles, permissions, and scopes for Azure OpenAI, which are product-specific security details. |
+| [Standard agent setup](https://learn.microsoft.com/en-us/azure/foundry-classic/agents/concepts/standard-agent-setup) | configuration | 0.78 | Page describes how to provision and configure customer-managed, single-tenant Azure resources for the standard agent setup, including product-specific configuration of storage and isolation resources. This is detailed configuration guidance rather than conceptual overview, fitting the configuration sub-skill. |
 | [Troubleshooting and best practices](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/on-your-data-best-practices) | best-practices | 0.78 | Described as best practices plus fixes for common problems; On Your Data has product-specific behaviors and edge cases that are unlikely to be fully known from training, and the article focuses on concrete guidance for that feature. |
 | [Virtual networks with private endpoints](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/network) | security | 0.78 | How-to for VNet and private endpoints; such docs include specific network configuration steps, resource types, and settings unique to securing Azure OpenAI. |
 | [Use blocklists](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/use-blocklists) | security | 0.76 | Describes how to create and use custom block lists on top of configurable content filters to filter specific terms (competitors, internal project names, etc.). This is product-specific safety/security configuration for content moderation, including how block lists interact with filters, fitting the security category. |
@@ -327,7 +323,6 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 | [Run red teaming scans locally](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/develop/run-scans-ai-red-teaming-agent) | integrations | 0.68 | How-to page for using the AI Red Teaming Agent via the Azure AI Evaluation SDK; likely includes product-specific SDK usage, configuration parameters, and code patterns for running local scans against generative AI apps, which qualifies as integration-focused expert knowledge beyond generic concepts. |
 | [Safety evaluation](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/fine-tuning-safety-evaluation) | best-practices | 0.68 | Fine-tuning safety evaluation guidance for Microsoft Foundry is product- and implementation-specific, including concrete recommendations and constraints around how safety checks are applied to fine-tuned models. This is operational, product-specific RAI guidance that an LLM is unlikely to know from pretraining and fits best under best-practices. |
 | [Set up your development environment](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/develop/install-cli-sdk) | configuration | 0.68 | Page is a detailed environment setup guide for Microsoft Foundry (classic) development, specifying exact tools (Azure CLI, Azure Developer CLI, language runtimes, Foundry SDK) and how they must be installed/configured together for authentication and development. This is product-specific configuration knowledge (tooling and SDK setup) that goes beyond generic concepts, but it does not focus on limits, troubleshooting, or deployment matrices. |
-| [Standard agent setup](https://learn.microsoft.com/en-us/azure/foundry-classic/agents/concepts/standard-agent-setup) | configuration | 0.68 | The page describes provisioning and configuring customer-managed, single-tenant Azure resources for Foundry Agent Service standard setup, including concrete resource types and configuration details for data isolation and compliance. This is product-specific configuration guidance rather than a generic overview. |
 | [Code Interpreter](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/code-interpreter) | integrations | 0.66 | A 'how to use Code Interpreter' article for Azure OpenAI Assistants will typically include product-specific API parameters (for enabling tools, file handling, execution settings), request payload structures, and possibly constraints around execution. These are concrete integration details and coding patterns specific to this service, fitting the integrations sub-skill. |
 | [Trigger an agent using Logic Apps](https://learn.microsoft.com/en-us/azure/foundry-classic/agents/how-to/triggers) | integrations | 0.66 | The page describes how to invoke Foundry agents from Logic Apps when events occur, including product-specific connector usage and configuration details for the trigger flow, which are integration patterns rather than generic workflow concepts. |
 | [Assistants function calling](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/assistant-functions) | integrations | 0.65 | Function calling how-to for Assistants includes function schema definitions, parameter formats, and tool-calling behavior specific to this API. |

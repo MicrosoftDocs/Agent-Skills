@@ -48,8 +48,8 @@ confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 5
-- **Unchanged**: 163
+- **Updated Pages**: 0
+- **Unchanged**: 168
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-key-vault/azure-key-vault.csv`
 
@@ -68,19 +68,6 @@ confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure
 | *(Unclassified)* | 84 | 50.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [Virtual network service endpoints for Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/general/overview-vnet-service-endpoints)
-  - Updated: 2026-04-10T08:00:00.000Z → 2026-06-16T17:39:00.000Z
-- [Use an Azure RBAC for managing access](https://learn.microsoft.com/en-us/azure/key-vault/general/rbac-guide)
-  - Updated: 2026-04-10T08:00:00.000Z → 2026-06-16T08:00:00.000Z
-- [Secure your Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/general/secure-key-vault)
-  - Updated: 2026-05-04T08:00:00.000Z → 2026-06-16T08:00:00.000Z
-- [Configure network security](https://learn.microsoft.com/en-us/azure/key-vault/general/network-security)
-  - Updated: 2026-05-04T08:00:00.000Z → 2026-06-16T08:00:00.000Z
-- [About Managed HSM](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/overview)
-  - Updated: 2025-11-19T08:00:00.000Z → 2026-06-15T22:34:00.000Z
 
 ## Classified Pages
 

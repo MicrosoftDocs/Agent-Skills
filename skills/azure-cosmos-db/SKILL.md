@@ -1,9 +1,9 @@
 ---
 name: azure-cosmos-db
-description: Expert knowledge for Azure Cosmos DB development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Cosmos DB NoSQL/Mongo/Cassandra/PostgreSQL APIs, change feed, vector search, multi-region, or AI/RAG workloads, and other Azure Cosmos DB related development tasks. Not for Azure Table Storage (use azure-table-storage), Azure SQL Database (use azure-sql-database), Azure Database for MySQL (use azure-database-mysql), Azure Database for PostgreSQL (use azure-database-postgresql).
+description: Expert knowledge for Azure Cosmos DB development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Cosmos DB NoSQL/Mongo/Cassandra APIs, change feed, multi-region RUs, backups, or vector search, and other Azure Cosmos DB related development tasks. Not for Azure Table Storage (use azure-table-storage), Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance), Azure Database for PostgreSQL (use azure-database-postgresql).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-21"
+  generated_at: "2026-06-28"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Cosmos DB Skill
@@ -31,7 +31,7 @@ This skill requires **network access** to fetch documentation content:
 | Limits & Quotas | L252-L292 | Limits, quotas, and behaviors for Cosmos DB (and DocumentDB): throughput, autoscale, burst, partitions, backups/restore, serverless, free tier, indexing, Gremlin, PostgreSQL, and Cassandra. |
 | Security | L293-L365 | Securing Cosmos DB across all APIs: identity/RBAC, network isolation, encryption/CMK, auditing, firewall/TLS, data masking, Defender/Policy governance, and PostgreSQL/Cassandra/Mongo-specific hardening. |
 | Configuration | L366-L495 | Configuring Cosmos DB and related services: throughput, indexing, backup/restore, monitoring, emulators, vector/search, multi-region, Cassandra/Mongo/PostgreSQL/Table APIs, and SDK performance/observability. |
-| Integrations & Coding Patterns | [integrations.md](integrations.md) | SDK usage patterns, bulk ops, change feed, vector search, Kafka/Spark/BI integrations, and language-specific samples for connecting, migrating, and querying all Cosmos DB APIs. |
+| Integrations & Coding Patterns | [integrations.md](integrations.md) | SDK usage, integrations, and patterns for Cosmos DB (NoSQL, Mongo, Cassandra, Gremlin, PostgreSQL, DocumentDB): client code, bulk ops, change feed, Kafka/Spark, vector search, migration, and tooling. |
 | Deployment | [deployment.md](deployment.md) | Deploying and managing Cosmos DB (NoSQL, Mongo, Cassandra, PostgreSQL, Table, DocumentDB) with Bicep/ARM/Terraform, CI/CD, emulator, migrations, upgrades, and maintenance. |
 
 ### Troubleshooting

@@ -48,8 +48,8 @@ confusable_not_for: Not for Azure Active Directory B2C (use azure-active-directo
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 41
-- **Unchanged**: 63
+- **Updated Pages**: 0
+- **Unchanged**: 104
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-rbac/azure-rbac.csv`
 
@@ -67,50 +67,6 @@ confusable_not_for: Not for Azure Active Directory B2C (use azure-active-directo
 | *(Unclassified)* | 9 | 8.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [Migration](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/migration)
-  - Updated: 2026-05-25T08:00:00.000Z → 2026-06-20T08:00:00.000Z
-- [Monitor](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/monitor)
-  - Updated: 2026-05-25T08:00:00.000Z → 2026-06-20T08:00:00.000Z
-- [Management and governance](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/management-and-governance)
-  - Updated: 2026-05-25T08:00:00.000Z → 2026-06-20T08:00:00.000Z
-- [Hybrid + multicloud](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/hybrid-multicloud)
-  - Updated: 2026-05-25T08:00:00.000Z → 2026-06-20T08:00:00.000Z
-- [Permissions](https://learn.microsoft.com/en-us/azure/role-based-access-control/resource-provider-operations)
-  - Updated: 2026-05-25T08:00:00.000Z → 2026-06-20T08:00:00.000Z
-- [General](https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/general)
-  - Updated: 2026-05-25T08:00:00.000Z → 2026-06-20T08:00:00.000Z
-- [Compute](https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/compute)
-  - Updated: 2026-06-02T22:37:00.000Z → 2026-06-20T08:00:00.000Z
-- [Networking](https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/networking)
-  - Updated: 2026-05-25T08:00:00.000Z → 2026-06-20T08:00:00.000Z
-- [Storage](https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/storage)
-  - Updated: 2026-05-25T08:00:00.000Z → 2026-06-20T08:00:00.000Z
-- [Web and Mobile](https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/web-and-mobile)
-  - Updated: 2026-05-25T08:00:00.000Z → 2026-06-20T08:00:00.000Z
-- [Containers](https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/containers)
-  - Updated: 2026-06-02T22:37:00.000Z → 2026-06-20T08:00:00.000Z
-- [Databases](https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/databases)
-  - Updated: 2026-05-25T08:00:00.000Z → 2026-06-20T08:00:00.000Z
-- [Analytics](https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/analytics)
-  - Updated: 2026-05-25T08:00:00.000Z → 2026-06-20T08:00:00.000Z
-- [AI + machine learning](https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/ai-machine-learning)
-  - Updated: 2026-05-25T08:00:00.000Z → 2026-06-20T08:00:00.000Z
-- [Internet of Things](https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/internet-of-things)
-  - Updated: 2026-05-25T08:00:00.000Z → 2026-06-20T08:00:00.000Z
-- [Integration](https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/integration)
-  - Updated: 2026-05-25T08:00:00.000Z → 2026-06-20T08:00:00.000Z
-- [Identity](https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/identity)
-  - Updated: 2026-05-25T08:00:00.000Z → 2026-06-20T08:00:00.000Z
-- [Security](https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/security)
-  - Updated: 2026-05-25T08:00:00.000Z → 2026-06-20T08:00:00.000Z
-- [DevOps](https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/devops)
-  - Updated: 2026-06-02T22:37:00.000Z → 2026-06-20T08:00:00.000Z
-- [Migration](https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/migration)
-  - Updated: 2026-05-25T08:00:00.000Z → 2026-06-20T08:00:00.000Z
-- *...and 21 more*
 
 ## Classified Pages
 

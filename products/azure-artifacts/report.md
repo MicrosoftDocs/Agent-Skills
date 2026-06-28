@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-21'
+generated_at: '2026-06-28'
 category_descriptions:
   limits-quotas: Storage quotas, free allocation, and per-package size/count limits
     in Azure Artifacts, plus how to monitor, manage, and publish packages within those
@@ -37,13 +37,13 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 - **Total Pages**: 73
 - **Fetched**: 73
 - **Fetch Failed**: 0
-- **Classified**: 56
-- **Unclassified**: 17
+- **Classified**: 54
+- **Unclassified**: 19
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 72
+- **Updated Pages**: 2
+- **Unchanged**: 71
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-artifacts/azure-artifacts.csv`
 
@@ -52,20 +52,22 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 | Type | Count | Percentage |
 |------|-------|------------|
 | best-practices | 3 | 4.1% |
-| configuration | 6 | 8.2% |
+| configuration | 5 | 6.8% |
 | decision-making | 3 | 4.1% |
 | deployment | 1 | 1.4% |
 | integrations | 36 | 49.3% |
 | limits-quotas | 4 | 5.5% |
-| security | 3 | 4.1% |
-| *(Unclassified)* | 17 | 23.3% |
+| security | 2 | 2.7% |
+| *(Unclassified)* | 19 | 26.0% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Cargo](https://learn.microsoft.com/en-us/azure/devops/artifacts/get-started-cargo?view=azure-devops)
-  - Updated: 2025-03-28T20:53:00.000Z → 2026-06-20T01:06:00.000Z
+- [Npm scopes](https://learn.microsoft.com/en-us/azure/devops/artifacts/npm/scopes?view=azure-devops)
+  - Updated: 2025-12-19T16:56:00.000Z → 2026-06-24T01:04:00.000Z
+- [Npm audit](https://learn.microsoft.com/en-us/azure/devops/artifacts/npm/npm-audit?view=azure-devops)
+  - Updated: 2024-02-08T20:22:00.000Z → 2026-06-24T01:04:00.000Z
 
 ## Classified Pages
 
@@ -83,7 +85,6 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 | [What is Azure Artifacts?](https://learn.microsoft.com/en-us/azure/devops/artifacts/start-using-azure-artifacts?view=azure-devops) | limits-quotas | 0.75 | Includes the exact free storage amount (2 GiB) for Azure Artifacts, which is a concrete quota value. |
 | [Best practices](https://learn.microsoft.com/en-us/azure/devops/artifacts/concepts/best-practices?view=azure-devops) | best-practices | 0.70 | Explicitly a best-practices article; likely includes concrete DOs/DON’Ts and product-specific guidance for publishing and consuming packages. |
 | [Feed scopes](https://learn.microsoft.com/en-us/azure/devops/artifacts/feeds/project-scoped-feeds?view=azure-devops) | decision-making | 0.70 | Explicitly compares project vs organization scope and when to use each; this is product-specific selection guidance. |
-| [Npm scopes](https://learn.microsoft.com/en-us/azure/devops/artifacts/npm/scopes?view=azure-devops) | configuration | 0.70 | Describes using @scopeName and .npmrc to route scoped packages to specific feeds, which is product-specific configuration behavior. |
 | [Project setup](https://learn.microsoft.com/en-us/azure/devops/artifacts/cargo/project-setup-cargo?view=azure-devops) | integrations | 0.70 | Cargo integration; includes credential provider setup and registry configuration unique to Azure Artifacts. |
 | [Project setup (dotnet)](https://learn.microsoft.com/en-us/azure/devops/artifacts/nuget/dotnet-setup?view=azure-devops) | integrations | 0.70 | Connects dotnet to Azure Artifacts feeds and covers authentication setup. Likely includes product-specific configuration details such as credential provider usage, feed URLs, and auth parameters that go beyond generic SDK usage, fitting integrations & coding patterns. |
 | [Project setup - Gradle](https://learn.microsoft.com/en-us/azure/devops/artifacts/maven/project-setup-gradle?view=azure-devops) | integrations | 0.70 | Gradle integration; includes repository and credentials configuration in build.gradle tailored to Azure Artifacts. |
@@ -109,7 +110,6 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 | [Download Universal Packages](https://learn.microsoft.com/en-us/azure/devops/artifacts/quickstarts/download-universal-packages?view=azure-devops) | integrations | 0.65 | Describes using Azure Artifacts universal packages via CLI; typically includes product-specific commands, flags, and feed URL formats that qualify as integration patterns. |
 | [Install Python packages (CLI)](https://learn.microsoft.com/en-us/azure/devops/artifacts/quickstarts/install-python-packages?view=azure-devops) | integrations | 0.65 | CLI-focused guide for consuming Python packages from Azure Artifacts using NuGet; likely includes feed URLs, command arguments, and auth parameters specific to Azure Artifacts. |
 | [Maven](https://learn.microsoft.com/en-us/azure/devops/artifacts/get-started-maven?view=azure-devops) | integrations | 0.65 | Get-started guide that includes Maven repository configuration and Azure feed endpoints, which are product-specific integration details. |
-| [Npm audit](https://learn.microsoft.com/en-us/azure/devops/artifacts/npm/npm-audit?view=azure-devops) | security | 0.65 | Security-focused article; likely includes concrete commands and guidance on handling vulnerabilities in dependencies hosted via Azure Artifacts. |
 | [Publish artifacts with Gradle](https://learn.microsoft.com/en-us/azure/devops/artifacts/maven/publish-with-gradle?view=azure-devops) | integrations | 0.65 | Provides Gradle publishing configuration and Azure Artifacts-specific repository settings. |
 | [Publish from GitHub Actions](https://learn.microsoft.com/en-us/azure/devops/artifacts/quickstarts/github-actions?view=azure-devops) | deployment | 0.65 | CI/CD integration article; includes workflow YAML, auth methods (managed identity vs PAT), and Azure-specific constraints. |
 | [Publish packages - Maven](https://learn.microsoft.com/en-us/azure/devops/artifacts/maven/publish-packages-maven?view=azure-devops) | integrations | 0.65 | Shows Maven deploy configuration and Azure Artifacts repository endpoints for publishing. |
@@ -138,6 +138,8 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 | [Publish your first package](https://learn.microsoft.com/en-us/azure/devops/artifacts/get-started-artifacts-ai?view=azure-devops) | 0.30 | Step-by-step tutorial for publishing a first NuGet package to an Azure Artifacts feed. Primarily procedural getting-started content without detailed configuration tables, limits, or product-specific troubleshooting/error mappings. |
 | [Upstream from internal feeds](https://learn.microsoft.com/en-us/azure/devops/artifacts/how-to/upstream-internal-feed?view=azure-devops) | 0.30 | Primarily a how-to/tutorial for configuring an internal feed as an upstream source in Azure Artifacts; it does not emphasize numeric limits, detailed configuration parameter tables, error-code-based troubleshooting, or decision matrices. The content is procedural rather than expert reference material. |
 | [What are feed views?](https://learn.microsoft.com/en-us/azure/devops/artifacts/concepts/views?view=azure-devops) | 0.25 | Conceptual explanation of feed views; summary doesn’t show numeric thresholds or config tables. |
+| [Npm audit](https://learn.microsoft.com/en-us/azure/devops/artifacts/npm/npm-audit?view=azure-devops) | 0.20 | Content focuses on using npm audit and npm audit fix to scan and remediate vulnerabilities. This is general security tooling guidance rather than Azure Artifacts–specific configuration, limits, or troubleshooting with error codes; it does not meet the expert-knowledge criteria for any sub-skill type. |
+| [Npm scopes](https://learn.microsoft.com/en-us/azure/devops/artifacts/npm/scopes?view=azure-devops) | 0.20 | Page explains how to use npm scopes with Azure Artifacts and configure .npmrc, but from the summary it appears to be a conceptual/how-to guide without detailed configuration parameter tables, limits, or product-specific best-practice gotchas that go beyond standard npm scope usage. |
 | [NuGet](https://learn.microsoft.com/en-us/azure/devops/artifacts/get-started-nuget?view=azure-devops) | 0.20 | Introductory tutorial for publishing and downloading NuGet packages with Azure Artifacts; primarily step-by-step instructions without expert-level configuration matrices, limits/quotas, troubleshooting codes, or decision criteria. |
 | [Search for packages in upstream sources](https://learn.microsoft.com/en-us/azure/devops/artifacts/how-to/search-upstream?view=azure-devops) | 0.20 | Page is a how-to for searching and using upstream sources in Azure Artifacts. It appears to be procedural/tutorial content without detailed limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. No strong evidence of product-specific numeric limits, RBAC role lists, or configuration option tables that would qualify as expert knowledge under the defined categories. |
 | [Share packages publicly](https://learn.microsoft.com/en-us/azure/devops/artifacts/tutorials/share-packages-publicly?view=azure-devops) | 0.20 | Tutorial-style page about sharing Azure Artifacts packages via public feeds; primarily procedural guidance without detailed limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. Content is not focused on numeric quotas, specialized configuration references, or other expert-only details. |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-21'
+generated_at: '2026-06-28'
 category_descriptions:
   integrations: Configuring Azure Functions triggers/bindings to integrate with databases,
     messaging, storage, OpenAI, MCP, Dapr, SignalR, Web PubSub, Logic Apps, and other
@@ -10,9 +10,9 @@ category_descriptions:
   security: 'Securing Azure Functions: encryption at rest, secure storage, keys and
     identities, networking/VNet/private endpoints, SQL access, MCP servers, and App
     Service-based security controls.'
-  configuration: 'Configuring Azure Functions apps: app/host settings, triggers/bindings,
-    monitoring/telemetry, runtime versions, networking/IPs, local tools, and plan-specific
-    (Flex, Premium) behavior.'
+  configuration: 'Configuring and running Azure Functions: app/host settings, triggers/bindings,
+    monitoring/telemetry, networking/IPs, runtimes/CLI, plans (Flex/Elastic), and
+    local or custom handler setups.'
   architecture-patterns: Running Functions in Linux containers, Durable Functions
     design with Azure Storage, and hosting Functions on Azure Container Apps for scalable,
     container-based architectures.
@@ -31,13 +31,13 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Functions development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building trigger/binding workflows, Durable Functions, containerized apps, Flex/Consumption
-  plans, or CI/CD deploys, and other Azure Functions related development tasks. Not
-  for Azure App Service (use azure-app-service), Azure Logic Apps (use azure-logic-apps),
+  building trigger-based apps with Durable Functions, Flex plans, containers, CI/CD
+  pipelines, or Azure Storage, and other Azure Functions related development tasks.
+  Not for Azure App Service (use azure-app-service), Azure Logic Apps (use azure-logic-apps),
   Azure Container Apps (use azure-container-apps), Azure Kubernetes Service (AKS)
   (use azure-kubernetes-service).
-use_when: Use when building trigger/binding workflows, Durable Functions, containerized
-  apps, Flex/Consumption plans, or CI/CD deploys, and other Azure Functions related
+use_when: Use when building trigger-based apps with Durable Functions, Flex plans,
+  containers, CI/CD pipelines, or Azure Storage, and other Azure Functions related
   development tasks.
 confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Logic
   Apps (use azure-logic-apps), Azure Container Apps (use azure-container-apps), Azure
@@ -79,8 +79,8 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Log
 
 ### Updated Pages
 
-- [IntelliJ IDEA](https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-maven-intellij)
-  - Updated: 2024-05-29T11:30:00.000Z → 2026-06-18T08:00:00.000Z
+- [Timer](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-timer)
+  - Updated: 2025-04-16T08:00:00.000Z → 2026-06-21T08:00:00.000Z
 
 ## Classified Pages
 
@@ -195,7 +195,6 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Log
 | [Secret](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-dapr-input-secret) | integrations | 0.76 | Provides binding configuration and usage patterns for Dapr secret input binding in Azure Functions, which are product-specific integration details. |
 | [State](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-dapr-input-state) | integrations | 0.76 | Explains how to read Dapr state via an input binding, including binding names and configuration fields that are specific to the Azure Functions Dapr extension. |
 | [State](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-dapr-output-state) | integrations | 0.76 | Describes Dapr state output binding configuration and usage in Azure Functions, including binding parameters and schemas unique to this integration. |
-| [Timer](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-timer) | configuration | 0.76 | Timer trigger reference includes CRON expression formats, schedule configuration properties, and host.json/function.json settings specific to Functions. |
 | [Concurrency](https://learn.microsoft.com/en-us/azure/azure-functions/functions-concurrency) | limits-quotas | 0.75 | Explains fixed and dynamic concurrency models with per-instance behavior and likely configuration knobs/limits; focuses on how many events can run concurrently per instance, a form of quota. |
 | [Configure monitoring](https://learn.microsoft.com/en-us/azure/azure-functions/configure-monitoring) | configuration | 0.75 | Shows how to connect a function app to Application Insights and configure data collection, including instrumentation key settings and related parameters, which are product-specific configuration details. |
 | [Consumption plan costs](https://learn.microsoft.com/en-us/azure/azure-functions/functions-consumption-costs) | decision-making | 0.75 | Cost estimation for Consumption vs Flex Consumption plans typically includes formulas, pricing dimensions, and usage-based thresholds that guide plan selection and capacity planning. |
@@ -282,6 +281,7 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Log
 | [Storage considerations](https://learn.microsoft.com/en-us/azure/azure-functions/storage-considerations) | security | 0.70 | Storage considerations article for Azure Functions typically includes product-specific details on required storage services, encryption behavior, and configuration of storage accounts/keys; these are concrete, service-specific security and configuration details beyond generic concepts. |
 | [Supported languages](https://learn.microsoft.com/en-us/azure/azure-functions/supported-languages) | deployment | 0.70 | Lists exact supported languages, versions, support levels, and end-of-support dates per plan/runtime, which are product- and time-specific details not reliably known from training; this directly informs deployment/runtime selection across SKUs. |
 | [Terraform](https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-first-function-terraform) | deployment | 0.70 | Terraform-based provisioning of a Flex Consumption function app and storage; includes product-specific resource configuration for deployment. |
+| [Timer](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-timer) | configuration | 0.70 | Timer trigger reference includes CRON expression formats, schedule configuration details, and binding-specific settings unique to Azure Functions, which are product-specific configuration parameters rather than generic concepts. |
 | [Trigger](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-web-pubsub-trigger) | integrations | 0.70 | Describes the exact trigger endpoint URL pattern and required query parameter (code=<API_KEY>) that must be configured on the Web PubSub service side, and where to obtain the specific system key (webpubsub_extension) in the Function App. These are product-specific integration details and configuration patterns beyond generic knowledge. |
 | [Use identity for host connections](https://learn.microsoft.com/en-us/azure/azure-functions/functions-identity-based-connections-tutorial) | security | 0.70 | Tutorial shows concrete, product-specific steps and setting names for replacing storage connection strings with Microsoft Entra/managed identity in a function app. Includes identity configuration details that are implementation-specific, not just conceptual. |
 | [Use identity for triggers and bindings](https://learn.microsoft.com/en-us/azure/azure-functions/functions-identity-based-connections-tutorial-2) | security | 0.70 | Tutorial configures Azure Functions triggers/bindings (Service Bus queue) to use identity-based connections instead of secrets, with specific setting names and wiring patterns that are product-specific security configuration. |

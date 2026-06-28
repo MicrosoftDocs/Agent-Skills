@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-24'
+generated_at: '2026-06-28'
 category_descriptions:
   troubleshooting: Diagnosing and fixing common Cloud Shell errors, storage and connectivity
     issues, plus deployment and network problems when running Cloud Shell in private
@@ -7,33 +7,36 @@ category_descriptions:
   limits-quotas: Details on Cloud Shell session duration, resource and concurrency
     limits, required storage accounts, quotas, and how these constraints affect shell
     usage and persistence
-  security: Securing Cloud Shell storage accounts, including multi-user access patterns,
-    network isolation, and configuring private endpoints for locked-down access.
+  security: 'Securing Cloud Shell storage: configuring shared storage safely, using
+    private endpoints, and assigning RBAC roles for secure VNet-based Cloud Shell
+    deployments.'
 skill_description: Expert knowledge for Azure Cloud Shell development including troubleshooting,
-  limits & quotas, and security. Use when debugging Cloud Shell storage/connectivity,
-  session limits, required storage accounts, or private VNet access, and other Azure
+  limits & quotas, and security. Use when configuring Cloud Shell storage accounts,
+  private VNet access, session limits, concurrency, or RBAC roles, and other Azure
   Cloud Shell related development tasks. Not for Azure Portal (use azure-portal),
-  Azure Resource Manager (use azure-resource-manager).
-use_when: Use when debugging Cloud Shell storage/connectivity, session limits, required
-  storage accounts, or private VNet access, and other Azure Cloud Shell related development
-  tasks.
-confusable_not_for: Not for Azure Portal (use azure-portal), Azure Resource Manager
-  (use azure-resource-manager).
+  Azure Virtual Machines (use azure-virtual-machines), Azure Kubernetes Service (AKS)
+  (use azure-kubernetes-service), Azure App Service (use azure-app-service).
+use_when: Use when configuring Cloud Shell storage accounts, private VNet access,
+  session limits, concurrency, or RBAC roles, and other Azure Cloud Shell related
+  development tasks.
+confusable_not_for: Not for Azure Portal (use azure-portal), Azure Virtual Machines
+  (use azure-virtual-machines), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
+  Azure App Service (use azure-app-service).
 ---
 # Azure Cloud Shell Crawl Report
 
 ## Summary
 
-- **Total Pages**: 20
-- **Fetched**: 20
+- **Total Pages**: 21
+- **Fetched**: 21
 - **Fetch Failed**: 0
-- **Classified**: 5
+- **Classified**: 6
 - **Unclassified**: 15
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 20
+- **New Pages**: 1
+- **Updated Pages**: 1
+- **Unchanged**: 19
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cloud-shell/azure-cloud-shell.csv`
 
@@ -41,18 +44,28 @@ confusable_not_for: Not for Azure Portal (use azure-portal), Azure Resource Mana
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| limits-quotas | 1 | 5.0% |
-| security | 2 | 10.0% |
-| troubleshooting | 2 | 10.0% |
-| *(Unclassified)* | 15 | 75.0% |
+| limits-quotas | 1 | 4.8% |
+| security | 3 | 14.3% |
+| troubleshooting | 2 | 9.5% |
+| *(Unclassified)* | 15 | 71.4% |
 
 ## Changes
+
+### New Pages
+
+- [Assign necessary permissions to prepare for Network Profile deprecation](https://learn.microsoft.com/en-us/azure/cloud-shell/vnet/migrate-container-permissions)
+
+### Updated Pages
+
+- [Release notes](https://learn.microsoft.com/en-us/azure/cloud-shell/release-notes)
+  - Updated: 2026-05-21T22:10:00.000Z → 2026-05-22T08:00:00.000Z
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
 | [Allow multiple users to use a single storage account and file share](https://learn.microsoft.com/en-us/azure/cloud-shell/security/how-to-support-multiple-users) | security | 0.80 | Describes non-default security configuration to allow multiple users to share a storage account/file share, including security implications and required changes—product-specific IAM/storage security guidance. |
+| [Assign necessary permissions to prepare for Network Profile deprecation](https://learn.microsoft.com/en-us/azure/cloud-shell/vnet/migrate-container-permissions) | security | 0.80 | Page gives product-specific RBAC guidance for Cloud Shell in private VNets, including the exact role name (Network Contributor) and how to assign it to Container Instances for the new infrastructure, which matches the security sub-skill criteria for role names and permission scopes. |
 | [What is Azure Cloud Shell?](https://learn.microsoft.com/en-us/azure/cloud-shell/overview) | limits-quotas | 0.80 | Overview page but includes concrete expert-only limits: 20-minute inactivity timeout and 5-GB file share size for $HOME persistence. These are specific numerical constraints that qualify as limits-quotas. |
 | [Troubleshoot Azure Cloud Shell in a virtual network](https://learn.microsoft.com/en-us/azure/cloud-shell/vnet/troubleshooting) | troubleshooting | 0.75 | Dedicated troubleshooting article for VNet-based Cloud Shell deployments; expected to map specific connectivity symptoms and misconfigurations to resolutions. |
 | [FAQ & Troubleshooting](https://learn.microsoft.com/en-us/azure/cloud-shell/faq-troubleshooting) | troubleshooting | 0.70 | Explicitly an FAQ plus troubleshooting article; likely organized by common issues with causes and resolutions specific to Cloud Shell, matching symptom→solution guidance. |
@@ -66,7 +79,7 @@ confusable_not_for: Not for Azure Portal (use azure-portal), Azure Resource Mana
 | [Overview](https://learn.microsoft.com/en-us/azure/cloud-shell/vnet/overview) | 0.40 | Scenario overview for using Cloud Shell in a VNet; summary is conceptual and does not show specific configuration parameters, limits, or troubleshooting mappings. |
 | [Persist files in storage](https://learn.microsoft.com/en-us/azure/cloud-shell/persisting-shell-storage) | 0.30 | Explains persistence via Azure Files; summary does not expose numeric limits, configuration parameters, or security roles. |
 | [Predictive IntelliSense in Cloud Shell](https://learn.microsoft.com/en-us/azure/cloud-shell/cloud-shell-predictive-intellisense) | 0.30 | Explains that Predictive IntelliSense is enabled by default and mentions specific modules, but does not provide configuration parameter tables, limits, or structured troubleshooting content. |
-| [Release notes](https://learn.microsoft.com/en-us/azure/cloud-shell/release-notes) | 0.30 | Release notes list changes and updates but are primarily chronological change logs, not structured limits, configuration matrices, troubleshooting mappings, or decision guidance as defined by the sub-skill types. |
+| [Release notes](https://learn.microsoft.com/en-us/azure/cloud-shell/release-notes) | 0.30 | Release notes list changes and updates but the summary does not indicate stable, reusable expert data like limits, configuration matrices, or error-code-based troubleshooting; content is primarily change-log/announcement style rather than structured expert guidance. |
 | [Azure Cloud Shell pricing](https://learn.microsoft.com/en-us/azure/cloud-shell/pricing) | 0.20 | Pricing overview stating Cloud Shell is free; no detailed tier matrices, numeric cost comparisons, or decision criteria are shown. |
 | [Features & tools](https://learn.microsoft.com/en-us/azure/cloud-shell/features) | 0.20 | Feature overview without numeric limits, configuration tables, or product-specific troubleshooting; primarily conceptual description of capabilities. |
 | [Get started (Classic)](https://learn.microsoft.com/en-us/azure/cloud-shell/get-started/classic) | 0.20 | Getting started guide; likely step-by-step usage without detailed limits, configuration matrices, or troubleshooting mappings in the summary. |

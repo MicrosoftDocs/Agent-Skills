@@ -1,9 +1,9 @@
 ---
 name: azure-blob-storage
-description: Expert knowledge for Azure Blob Storage development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Blob tiers, lifecycle/immutability, Data Lake Gen2, SAS/RBAC auth, or NFS/BlobFuse mounts, and other Azure Blob Storage related development tasks. Not for Azure Files (use azure-files), Azure Table Storage (use azure-table-storage), Azure Queue Storage (use azure-queue-storage), Azure NetApp Files (use azure-netapp-files).
+description: Expert knowledge for Azure Blob Storage development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Data Lake Gen2, BlobFuse/NFS/SFTP, lifecycle/immutability, SAS/RBAC auth, or static website hosting, and other Azure Blob Storage related development tasks. Not for Azure Files (use azure-files), Azure Table Storage (use azure-table-storage), Azure Queue Storage (use azure-queue-storage), Azure NetApp Files (use azure-netapp-files).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-21"
+  generated_at: "2026-06-28"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Blob Storage Skill
@@ -25,10 +25,10 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L37-L47 | Diagnosing and fixing Azure Blob Storage issues: Storage Mover job/network errors, support bundles, BlobFuse/BlobFuse2 mount & I/O problems, and known NFS 3.0 limitations. |
-| Best Practices | L48-L81 | Performance, cost, reliability, and monitoring best practices for Azure Blob/Data Lake: access tiers, lifecycle, concurrency, client tuning, retries, NFS/SFTP, events, and backup/migration guidance. |
-| Decision Making | L82-L108 | Cost and architecture choices for Blob Storage: pricing, tiers, migration tools, private connectivity, data protection, reserved capacity, and detailed cost estimation for storage, access, and archive. |
-| Architecture & Design Patterns | L109-L113 | Guidance on when and why to enable Data Lake Storage Gen2 hierarchical namespace in Blob Storage, including tradeoffs, performance, and compatibility impacts. |
-| Limits & Quotas | L114-L134 | Limits, quotas, and performance/scalability behavior for Blob Storage (tiers, archive/rehydration, NFS/SFTP, BlobFuse, Data Lake, static sites, replication) and related known issues. |
+| Best Practices | L48-L81 | Performance, cost, and reliability best practices for Blob/Data Lake: access tiers, lifecycle, partitioning, concurrency, client tuning, NFS/SFTP, retries, monitoring, and backup/migration guidance. |
+| Decision Making | L82-L109 | Cost planning and design choices for Blob Storage: tiers, archive retrieval, networking, reserved capacity, migration tools, data protection, and mapping operations to billing. |
+| Architecture & Design Patterns | L110-L114 | Guidance on when and why to enable Data Lake Storage Gen2 hierarchical namespace in Blob Storage, including tradeoffs, performance, and compatibility impacts. |
+| Limits & Quotas | L115-L134 | Limits, quotas, and performance/scalability behavior for Blob Storage (tiers, archive/rehydration, NFS/SFTP, BlobFuse, Data Lake, static sites, replication) and related known issues. |
 | Security | L135-L193 | Securing Blob and Data Lake access: RBAC/ABAC, Entra ID auth, SAS tokens, SFTP, ACLs, Storage Mover, anonymous access controls, and encryption (CSE, scopes, keys, BlobFuse2). |
 | Configuration | L194-L257 | Configuring and monitoring Azure Blob Storage: lifecycle, immutability, soft delete, PITR, inventory, networking, BlobFuse, Storage Mover, migrations, and third‑party backup/move tools. |
 | Integrations & Coding Patterns | L258-L387 | SDK and CLI patterns for integrating Blob/Data Lake with apps: CRUD, copy/move, leases, metadata, tiers, SAS, events, NFS/BlobFuse mounts, analytics, and cross-cloud/Hadoop access. |
@@ -88,6 +88,7 @@ This skill requires **network access** to fetch documentation content:
 | Choose Azure private connectivity for Storage Mover | https://learn.microsoft.com/en-us/azure/storage-mover/cloud-to-cloud-private-network-configs |
 | Plan Azure Storage Mover deployments and migrations | https://learn.microsoft.com/en-us/azure/storage-mover/deployment-planning |
 | Choose Azure Blob Storage access tiers by usage | https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview |
+| Choose Azure Blob smart tier access transitions | https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-smart |
 | Calculate archive tier storage and retrieval costs | https://learn.microsoft.com/en-us/azure/storage/blobs/archive-cost-estimation |
 | Estimate AzCopy data transfer costs for Blob Storage | https://learn.microsoft.com/en-us/azure/storage/blobs/azcopy-cost-estimation |
 | Choose Azure Blob cost optimization capabilities | https://learn.microsoft.com/en-us/azure/storage/blobs/blob-cost-optimization-services |
@@ -118,7 +119,6 @@ This skill requires **network access** to fetch documentation content:
 | Review Azure Storage Discovery FAQs and service limits | https://learn.microsoft.com/en-us/azure/storage-discovery/frequently-asked-questions |
 | Understand Azure Storage Mover scale and performance | https://learn.microsoft.com/en-us/azure/storage-mover/performance-targets |
 | Review Azure Storage Mover release changes and limitations | https://learn.microsoft.com/en-us/azure/storage-mover/release-notes |
-| Use Azure Blob smart tier access transitions | https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-smart |
 | Manage Azure Blob archive tier retention and access | https://learn.microsoft.com/en-us/azure/storage/blobs/archive-blob |
 | Blob archive rehydration time and priority limits | https://learn.microsoft.com/en-us/azure/storage/blobs/archive-rehydrate-to-online-tier |
 | Understand BlobFuse limitations and known issues | https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-known-issues |

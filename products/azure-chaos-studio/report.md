@@ -39,10 +39,10 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Resiliency 
 - **Unclassified**: 27
 
 ### Incremental Update
-- **New Pages**: 26
-- **Updated Pages**: 4
-- **Unchanged**: 28
-- **Deleted Pages**: 19
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 58
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-chaos-studio/azure-chaos-studio.csv`
 
 ## Classification Statistics
@@ -57,63 +57,6 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Resiliency 
 | *(Unclassified)* | 27 | 46.6% |
 
 ## Changes
-
-### New Pages
-
-- [Assign experiment permissions](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-assign-experiment-permissions)
-- [Container image details](https://learn.microsoft.com/en-us/azure/chaos-studio/azure-container-instance-details)
-- [Configure customer-managed keys](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-configure-customer-managed-keys)
-- [Emit telemetry to Azure Monitor](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-set-up-azure-monitor)
-- [Troubleshooting](https://learn.microsoft.com/en-us/azure/chaos-studio/troubleshooting)
-- [Supported resource types](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-fault-providers)
-- [Chaos engineering overview](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-chaos-engineering-overview)
-- [What are Workspaces?](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-workspaces-overview)
-- [Quickstart: Create a Workspace and run a Scenario](https://learn.microsoft.com/en-us/azure/chaos-studio/quickstart-create-workspace)
-- [Scenarios](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-scenarios)
-- [Scenario reports](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-scenario-reports)
-- [Permissions and identity](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-workspace-permissions)
-- [Tutorial: PostgreSQL zone-down failover](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-tutorial-postgresql-failover)
-- [Quickstart: Create and run a chaos experiment](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-quickstart-azure-portal)
-- [Portal](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-tutorial-agent-based-portal)
-- [CLI](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-tutorial-agent-based-cli)
-- [Entra ID outage](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-tutorial-aad-outage-portal)
-- [Availability zone down (VMSS)](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-tutorial-availability-zone-down-portal)
-- [DNS outage (NSG)](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-tutorial-dns-outage)
-- [Run and manage experiments](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-run-experiment)
-- *...and 6 more*
-
-### Updated Pages
-
-- [Permissions and security](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-permissions-security)
-  - Updated: 2025-02-21T23:01:00.000Z → 2026-06-19T06:10:00.000Z
-- [Chaos Mesh version compatibility](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-versions)
-  - Updated: 2025-10-24T05:09:00.000Z → 2026-06-19T06:10:00.000Z
-- [What is Azure Chaos Studio?](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-overview)
-  - Updated: 2024-09-11T16:50:00.000Z → 2026-06-19T06:10:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-agent-overview)
-  - Updated: 2025-03-10T05:32:00.000Z → 2026-06-19T06:10:00.000Z
-
-### Deleted Pages
-
-- ~~Accessing container image details~~ (https://learn.microsoft.com/en-us/azure/chaos-studio/azure-container-instance-details)
-- ~~Enable and install agent via ARM template~~ (https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-agent-arm-template)
-- ~~Assigning experiment permissions~~ (https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-assign-experiment-permissions)
-- ~~Configure an experiment using customer-managed keys (CMK)~~ (https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-configure-customer-managed-keys)
-- ~~Measuring Experiment Impact with an Azure Monitor Workbook~~ (https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-fault-metrics-and-dashboard)
-- ~~Fault providers~~ (https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-fault-providers)
-- ~~Private Link and network security for agent~~ (https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-private-link-agent-service)
-- ~~Create and run a chaos experiment~~ (https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-quickstart-azure-portal)
-- ~~Run and manage experiment~~ (https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-run-experiment)
-- ~~Set up your chaos experiment to emit telemetry to Azure Monitor~~ (https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-set-up-azure-monitor)
-- ~~Use a chaos experiment template to induce an outage on an Azure Active Directory instance~~ (https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-tutorial-aad-outage-portal)
-- ~~CLI installation tutorial~~ (https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-tutorial-agent-based-cli)
-- ~~Portal installation tutorial~~ (https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-tutorial-agent-based-portal)
-- ~~Use a chaos experiment template to take down Virtual Machine Scale Set availability zones with autoscale disabled~~ (https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-tutorial-availability-zone-down-portal)
-- ~~Simulate a DNS outage using Azure Chaos Studio~~ (https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-tutorial-dns-outage)
-- ~~Azure policy definitions~~ (https://learn.microsoft.com/en-us/azure/chaos-studio/sample-policy-targets)
-- ~~Experiments~~ (https://learn.microsoft.com/en-us/azure/chaos-studio/sample-template-experiment)
-- ~~Targets and capabilities~~ (https://learn.microsoft.com/en-us/azure/chaos-studio/sample-template-targets)
-- ~~Troubleshoot common issues~~ (https://learn.microsoft.com/en-us/azure/chaos-studio/troubleshooting)
 
 ## Classified Pages
 
