@@ -1,9 +1,9 @@
 ---
 name: azure-service-fabric
-description: Expert knowledge for Azure Service Fabric development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing Service Fabric clusters, Reliable Services/Actors, reverse proxy/API gateways, CI/CD upgrades, or sfctl/PowerShell automation, and other Azure Service Fabric related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure App Service (use azure-app-service), Azure Functions (use azure-functions), Azure Cloud Services (use azure-cloud-services).
+description: Expert knowledge for Azure Service Fabric development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing Service Fabric clusters, Reliable Services/Actors, reverse proxy/API gateways, CI/CD upgrades, or sfctl/PowerShell ops, and other Azure Service Fabric related development tasks. Not for Azure Cloud Services (use azure-cloud-services), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Container Apps (use azure-container-apps), Azure App Service (use azure-app-service).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-28"
+  generated_at: "2026-07-05"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Service Fabric Skill
@@ -25,14 +25,14 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L37-L59 | Diagnosing and fixing Service Fabric issues: connectivity, upgrades, health, logging/monitoring, container and Java logs, reverse proxy, Reliable Services/Actors, and local cluster setup. |
-| Best Practices | L60-L94 | Guidance on designing, scaling, operating, and testing Service Fabric apps: migrations, ARM/infra, networking, health/monitoring, backups, DR, Reliable Collections/Actors, and production readiness. |
+| Best Practices | L60-L94 | Best-practice guidance for designing, scaling, upgrading, testing, monitoring, networking, backup/restore, and data/actor management in Azure Service Fabric clusters and apps. |
 | Decision Making | L95-L106 | Guidance on planning and sizing Service Fabric clusters: OS/disk choices, stateless node types, capacity/durability/reliability planning, version selection, and migration targets for Cloud Services workloads. |
 | Architecture & Design Patterns | L107-L120 | Designing Service Fabric cluster architecture: cross-AZ replica rings, CRP/CRM internals, service affinity, movement cost, defragmentation, metrics balancing, networking, and API gateway patterns. |
 | Limits & Quotas | L121-L125 | Configuring Service Fabric app upgrade settings: health policies, rolling upgrade behavior, monitoring, and timeout parameters to control safe, reliable deployments. |
 | Security | L126-L182 | Securing Service Fabric clusters/apps: cert and Entra auth, managed identities and secrets, disk encryption, network/DDoS/IP policies, remoting/endpoint security, and security best practices. |
-| Configuration | L183-L303 | Configuring Service Fabric clusters, apps, networking, scaling, monitoring, backups, manifests, actors, containers, and tooling (CLI/IDEs) across Azure managed, classic, and standalone environments. |
-| Integrations & Coding Patterns | L304-L340 | Patterns and tools for integrating Service Fabric apps with Azure services, APIs, containers, remoting stacks, and managing clusters/apps via sfctl, PowerShell, and EventStore APIs |
-| Deployment | L341-L403 | Deploying and upgrading Service Fabric clusters and apps (managed, classic, standalone), scaling and AZ/region migration, CI/CD pipelines, security, images, and maintenance/upgrade control. |
+| Configuration | L183-L302 | Configuring and operating Service Fabric clusters and apps: networking, scaling, backup/restore, manifests, actors, containers, monitoring/telemetry, resource governance, and test/fault tools. |
+| Integrations & Coding Patterns | L303-L339 | Patterns and tools for integrating Service Fabric apps with Azure services, APIs, containers, remoting stacks, and managing clusters/apps via sfctl, PowerShell, and EventStore APIs |
+| Deployment | L340-L401 | Deploying and upgrading Service Fabric clusters and apps (managed, classic, standalone), scaling and AZ/region migration, CI/CD pipelines, security, images, and maintenance/upgrade control. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -67,7 +67,7 @@ This skill requires **network access** to fetch documentation content:
 | Design Azure Service Fabric applications effectively | https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-best-practices-applications |
 | Plan and scale Azure Service Fabric cluster capacity | https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-best-practices-capacity-scaling |
 | Manage Service Fabric as code with ARM templates | https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-best-practices-infrastructure-as-code |
-| Monitor Azure Service Fabric clusters and applications | https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-best-practices-monitoring |
+| Apply monitoring best practices for Azure Service Fabric | https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-best-practices-monitoring |
 | Apply networking best practices for Azure Service Fabric clusters | https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-best-practices-networking |
 | Configure stateful replica set size in Service Fabric | https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-best-practices-replica-set-size-configuration |
 | Convert Cloud Services roles to Service Fabric stateless services | https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-cloud-services-migration-worker-role-stateless-service |
@@ -84,7 +84,7 @@ This skill requires **network access** to fetch documentation content:
 | Choose and use timers vs reminders in Reliable Actors | https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-reliable-actors-timers-reminders |
 | Plan and use Service Fabric Backup and Restore | https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-reliable-services-backup-restore |
 | Apply best practices for Service Fabric Reliable Collections | https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-reliable-services-reliable-collections-guidelines |
-| Avoid and handle throttling in Service Fabric Reliable Collections | https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-reliable-services-reliable-collections-throttling-guidelines |
+| Handle throttling in Service Fabric Reliable Collections | https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-reliable-services-reliable-collections-throttling-guidelines |
 | Configure transactions and locks in Reliable Collections | https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-reliable-services-reliable-collections-transactions-locks |
 | Use ReliableConcurrentQueue for high-throughput messaging | https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-reliable-services-reliable-concurrent-queue |
 | Use replica soft delete for Service Fabric data protection | https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-replica-soft-delete |
@@ -238,6 +238,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure Azure Files volume driver for Service Fabric containers | https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-containers-volume-logging-drivers |
 | Use Fault Injection and Cluster Analysis Service to induce chaos | https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-controlled-chaos |
 | Configure Java remote debugging for Service Fabric in Eclipse | https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-debugging-your-application-java |
+| Configure Service Fabric telemetry with Azure Monitor Agent and DCRs | https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-diagnostics-azure-monitor-agent-data-collection-rules |
 | Configure EventFlow for Service Fabric event aggregation | https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-diagnostics-event-aggregation-eventflow |
 | Aggregate Service Fabric Linux events with LAD | https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-diagnostics-event-aggregation-lad |
 | Aggregate Service Fabric events with Windows Azure Diagnostics | https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-diagnostics-event-aggregation-wad |
@@ -245,10 +246,8 @@ This skill requires **network access** to fetch documentation content:
 | Reference list of Azure Service Fabric operational events | https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-diagnostics-event-generation-operational |
 | Use built-in Azure Service Fabric events for monitoring | https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-diagnostics-events |
 | Use Azure Service Fabric Event Store for cluster state | https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-diagnostics-eventstore |
-| Install Log Analytics agent for Service Fabric performance monitoring | https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-diagnostics-oms-agent |
-| Monitor Service Fabric containers with Azure Monitor logs | https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-diagnostics-oms-containers |
-| Set up Azure Monitor logs for Service Fabric clusters | https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-diagnostics-oms-setup |
-| Write Service Fabric Linux cluster events to Syslog | https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-diagnostics-oms-syslog |
+| Configure Azure Monitor logs for Service Fabric containers | https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-diagnostics-oms-containers |
+| Configure Syslog for Service Fabric Linux cluster events | https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-diagnostics-oms-syslog |
 | Collect Service Fabric performance counters with Azure Diagnostics | https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-diagnostics-perf-wad |
 | Configure and use Azure Service Fabric DNS service | https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-dnsservice |
 | Deploy Docker Compose applications to Service Fabric | https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-docker-compose |
@@ -388,7 +387,6 @@ This skill requires **network access** to fetch documentation content:
 | Scale up primary node types in Azure Service Fabric clusters | https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-scale-up-primary-node-type |
 | Deploy a Linux Service Fabric cluster into an existing Azure VNet | https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-tutorial-create-vnet-and-linux-cluster |
 | Deploy a Windows Service Fabric cluster into an Azure virtual network | https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-tutorial-create-vnet-and-windows-cluster |
-| Delete Azure Service Fabric clusters and associated resources | https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-tutorial-delete-cluster |
 | Deploy a Service Fabric app to Azure clusters with Visual Studio | https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-tutorial-deploy-app |
 | Set up CI/CD for Service Fabric apps with Azure Pipelines | https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-tutorial-deploy-app-with-cicd-vsts |
 | Set up CI/CD for Service Fabric container applications | https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-tutorial-deploy-container-app-with-cicd-vsts |

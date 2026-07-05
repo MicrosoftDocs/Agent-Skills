@@ -1,9 +1,9 @@
 ---
 name: azure-cosmos-db
-description: Expert knowledge for Azure Cosmos DB development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Cosmos DB NoSQL/Mongo/Cassandra APIs, change feed, multi-region RUs, backups, or vector search, and other Azure Cosmos DB related development tasks. Not for Azure Table Storage (use azure-table-storage), Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance), Azure Database for PostgreSQL (use azure-database-postgresql).
+description: Expert knowledge for Azure Cosmos DB development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Cosmos DB NoSQL/Mongo/Cassandra APIs, change feed, multi-region/vector search, or AI/RAG workloads, and other Azure Cosmos DB related development tasks. Not for Azure Table Storage (use azure-table-storage), Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance), Azure Database for PostgreSQL (use azure-database-postgresql).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-28"
+  generated_at: "2026-07-05"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Cosmos DB Skill
@@ -24,13 +24,13 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Location | Description |
 |----------|----------|-------------|
-| Troubleshooting | L37-L90 | Diagnosing and fixing Cosmos DB issues across APIs (Cassandra, Gremlin, MongoDB, PostgreSQL, SQL), including errors, timeouts, performance, encryption/CMK, connectivity, and SDK/client problems. |
-| Best Practices | L91-L157 | Performance, cost, resiliency, and SDK best practices for Cosmos DB (NoSQL, Mongo, Cassandra, PostgreSQL), including partitioning, indexing, RU optimization, change feed, DR, and HA. |
-| Decision Making | L158-L219 | Guides for choosing Cosmos DB/DocumentDB/PostgreSQL options (throughput, consistency, regions, pricing) and planning migrations, upgrades, analytics, and vector index strategies. |
-| Architecture & Design Patterns | L220-L251 | Architectural patterns for AI/RAG, agent memory, knowledge graphs, multi-tenant and microservice designs, high availability, change feed, analytics, and vector search on Cosmos DB and PostgreSQL. |
-| Limits & Quotas | L252-L292 | Limits, quotas, and behaviors for Cosmos DB (and DocumentDB): throughput, autoscale, burst, partitions, backups/restore, serverless, free tier, indexing, Gremlin, PostgreSQL, and Cassandra. |
-| Security | L293-L365 | Securing Cosmos DB across all APIs: identity/RBAC, network isolation, encryption/CMK, auditing, firewall/TLS, data masking, Defender/Policy governance, and PostgreSQL/Cassandra/Mongo-specific hardening. |
-| Configuration | L366-L495 | Configuring Cosmos DB and related services: throughput, indexing, backup/restore, monitoring, emulators, vector/search, multi-region, Cassandra/Mongo/PostgreSQL/Table APIs, and SDK performance/observability. |
+| Troubleshooting | L37-L91 | Diagnosing and fixing Cosmos DB errors, performance, connectivity, encryption, and SDK/API-specific issues (SQL, MongoDB, Cassandra, Gremlin, PostgreSQL, DocumentDB) using logs, metrics, and KQL. |
+| Best Practices | L92-L158 | Performance, cost, resiliency, and SDK best practices for Cosmos DB (NoSQL, Mongo, Cassandra, PostgreSQL), including partitioning, indexing, RU optimization, change feed, DR, and HA. |
+| Decision Making | L159-L220 | Guides for choosing Cosmos DB/DocumentDB/PostgreSQL options (throughput, consistency, regions, pricing) and planning migrations, upgrades, analytics, and vector index strategies. |
+| Architecture & Design Patterns | L221-L252 | Architectural patterns for AI/RAG, agent memory, knowledge graphs, multi-tenant and microservice designs, high availability, change feed, analytics, and vector search on Cosmos DB and PostgreSQL. |
+| Limits & Quotas | L253-L293 | Limits, quotas, and behaviors for Cosmos DB (and DocumentDB): throughput, autoscale, burst, partitions, backups/restore, serverless, free tier, indexing, Gremlin, PostgreSQL, and Cassandra. |
+| Security | L294-L366 | Securing Cosmos DB across all APIs: identity/RBAC, network isolation, encryption/CMK, auditing, firewall/TLS, data masking, Defender/Policy governance, and PostgreSQL/Cassandra/Mongo-specific hardening. |
+| Configuration | L367-L496 | Configuring Cosmos DB and related services: throughput, indexing, backup/restore, monitoring, emulators, vector/search, multi-region, Cassandra/Mongo/PostgreSQL/Table APIs, and SDK performance/observability. |
 | Integrations & Coding Patterns | [integrations.md](integrations.md) | SDK usage, integrations, and patterns for Cosmos DB (NoSQL, Mongo, Cassandra, Gremlin, PostgreSQL, DocumentDB): client code, bulk ops, change feed, Kafka/Spark, vector search, migration, and tooling. |
 | Deployment | [deployment.md](deployment.md) | Deploying and managing Cosmos DB (NoSQL, Mongo, Cassandra, PostgreSQL, Table, DocumentDB) with Bicep/ARM/Terraform, CI/CD, emulator, migrations, upgrades, and maintenance. |
 
@@ -85,6 +85,7 @@ This skill requires **network access** to fetch documentation content:
 | Troubleshoot Cosmos DB 401 unauthorized access errors | https://learn.microsoft.com/en-us/azure/cosmos-db/troubleshoot-unauthorized |
 | Use Cosmos DB metrics and insights to debug common issues | https://learn.microsoft.com/en-us/azure/cosmos-db/use-metrics |
 | Troubleshoot CMK-based encryption issues in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/how-to-database-encryption-troubleshoot |
+| Diagnose Azure DocumentDB query performance with explain() | https://learn.microsoft.com/en-us/azure/documentdb/how-to-read-explain-output |
 | Diagnose and fix common Azure DocumentDB errors | https://learn.microsoft.com/en-us/azure/documentdb/troubleshoot-common-issues |
 | Troubleshoot Azure DocumentDB replication issues | https://learn.microsoft.com/en-us/azure/documentdb/troubleshoot-replication |
 

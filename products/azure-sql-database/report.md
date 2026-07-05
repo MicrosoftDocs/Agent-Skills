@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-06-28'
+generated_at: '2026-07-05'
 category_descriptions:
   decision-making: Guidance for choosing Azure SQL tiers, pricing models, licensing,
     Hyperscale options, DR/HA, automation, and migration paths from SQL Server or
     legacy features.
   troubleshooting: 'Diagnosing and fixing Azure SQL issues: performance (CPU, memory,
     deadlocks, blocking), connectivity, scaling, import/export, geo-replication, Data
-    Sync, and transaction log errors.'
+    Sync, Elastic Scale, and log-full errors.'
   configuration: 'Configuring Azure SQL databases: monitoring, backups, geo-replication/failover,
     security (encryption, TLS, immutability), scaling/pools, Data Sync, and CLI/PowerShell/REST
     setup tasks.'
@@ -30,17 +30,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure SQL Database development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  choosing Azure SQL tiers, configuring geo-replication, securing with Entra/MI, or
-  automating with ARM/Terraform, and other Azure SQL Database related development
-  tasks. Not for Azure SQL Managed Instance (use azure-sql-managed-instance), SQL
-  Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Cosmos
-  DB (use azure-cosmos-db), Azure Data Explorer (use azure-data-explorer).
-use_when: Use when choosing Azure SQL tiers, configuring geo-replication, securing
-  with Entra/MI, or automating with ARM/Terraform, and other Azure SQL Database related
-  development tasks.
+  choosing tiers/Hyperscale, configuring geo-replication/DR, Entra auth/Always Encrypted,
+  elastic pools/sharding, or automation APIs, and other Azure SQL Database related
+  development tasks. Not for Azure SQL Managed Instance (use azure-sql-managed-instance),
+  SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Cosmos
+  DB (use azure-cosmos-db), Azure Database for PostgreSQL (use azure-database-postgresql).
+use_when: Use when choosing tiers/Hyperscale, configuring geo-replication/DR, Entra
+  auth/Always Encrypted, elastic pools/sharding, or automation APIs, and other Azure
+  SQL Database related development tasks.
 confusable_not_for: Not for Azure SQL Managed Instance (use azure-sql-managed-instance),
   SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Cosmos
-  DB (use azure-cosmos-db), Azure Data Explorer (use azure-data-explorer).
+  DB (use azure-cosmos-db), Azure Database for PostgreSQL (use azure-database-postgresql).
 ---
 # Azure SQL Database Crawl Report
 
@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure SQL Managed Instance (use azure-sql-managed-in
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 358
+- **Updated Pages**: 1
+- **Unchanged**: 361
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sql-database/azure-sql-database.csv`
 
@@ -78,14 +78,8 @@ confusable_not_for: Not for Azure SQL Managed Instance (use azure-sql-managed-in
 
 ### Updated Pages
 
-- [Always Encrypted with secure enclaves using SGX](https://learn.microsoft.com/en-us/azure/azure-sql/database/always-encrypted-enclaves-getting-started-sgx?view=azuresql)
-  - Updated: 2025-08-25T08:00:00.000Z → 2026-06-17T08:00:00.000Z
-- [Always Encrypted with secure enclaves using VBS](https://learn.microsoft.com/en-us/azure/azure-sql/database/always-encrypted-enclaves-getting-started-vbs?view=azuresql)
-  - Updated: 2025-06-10T08:00:00.000Z → 2026-06-17T08:00:00.000Z
-- [Migrating SQL Server Workloads FAQ](https://learn.microsoft.com/en-us/azure/azure-sql/migration-guides/modernization?view=azuresql)
-  - Updated: 2026-02-19T08:00:00.000Z → 2026-06-22T08:00:00.000Z
-- [Documentation](https://learn.microsoft.com/en-us/azure/azure-sql/database/?view=azuresql)
-  - Updated: 2026-04-30T22:38:00Z → 2026-06-23T22:41:00Z
+- [Known issues with Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-known-issues?view=azuresql)
+  - Updated: 2026-05-01T08:00:00.000Z → 2026-06-25T08:00:00.000Z
 
 ## Classified Pages
 
@@ -148,7 +142,7 @@ confusable_not_for: Not for Azure SQL Managed Instance (use azure-sql-managed-in
 | [Audit to storage account behind VNet or firewall](https://learn.microsoft.com/en-us/azure/azure-sql/database/audit-write-storage-account-behind-vnet-firewall?view=azuresql) | security | 0.78 | The article gives product-specific security configuration details for enabling Azure SQL Database/Azure Synapse auditing to a storage account restricted by VNet/firewall. It includes concrete requirements such as needing managed identity authentication when the storage account is behind a VNet/firewall, and step-level configuration via Azure portal and REST with specific property names and settings. These are implementation-specific security patterns rather than generic concepts. |
 | [Configure isolated access for Hyperscale named replicas](https://learn.microsoft.com/en-us/azure/azure-sql/database/hyperscale-named-replica-security-configure?view=azuresql) | security | 0.78 | How-to article for granting access to a Hyperscale named replica without access to primary/other replicas; contains product-specific security configuration steps and role/permission patterns unique to Azure SQL Hyperscale. |
 | [IP-based firewall](https://learn.microsoft.com/en-us/azure/azure-sql/database/firewall-configure?view=azuresql) | security | 0.78 | Firewall configuration for Azure SQL Database is security-focused and typically includes product-specific details such as exact firewall rule scopes (server-level vs database-level), required ports, and specific configuration parameters/commands (T-SQL, PowerShell, CLI) that are unique to this service. These are concrete, implementation-level security settings rather than conceptual guidance. |
-| [Known issues with Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-known-issues?view=azuresql) | troubleshooting | 0.78 | A 'known issues' page for a specific Azure service typically lists concrete symptoms, causes, and workarounds or resolutions for product-specific problems. These are time-sensitive, expert details that change over time and are unlikely to be fully captured in model training. The structure aligns with troubleshooting (symptom → cause → workaround/resolution), rather than generic concepts or limits. |
+| [Known issues with Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-known-issues?view=azuresql) | troubleshooting | 0.78 | The page is a catalog of current known issues for Azure SQL Managed Instance, each with product-specific symptoms and workarounds or resolution details. This is expert troubleshooting knowledge that maps issues to causes and fixes, and is not just conceptual guidance. |
 | [Managed identity](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-azure-ad-user-assigned-managed-identity?view=azuresql) | security | 0.78 | Describes system-assigned and user-assigned managed identities for Azure SQL, including how they are created/assigned and used with Entra authentication. Such pages typically contain specific configuration steps, identity types, and required permissions/roles, which are product-specific security and identity configuration details. |
 | [Microsoft Entra authentication](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-configure?view=azuresql) | security | 0.78 | Configuration article for Entra (Azure AD) authentication to Azure SQL and Synapse; likely includes specific authentication modes, connection string parameters, and role/permission details that are product-specific security configuration. |
 | [Purchasing models](https://learn.microsoft.com/en-us/azure/azure-sql/database/purchasing-models?view=azuresql) | decision-making | 0.78 | The article compares Azure SQL Database purchasing models (vCore vs DTU) with concrete, product-specific decision criteria such as cost, performance characteristics, and when to choose each model. It is explicitly framed as a comparison to help select between options, matching the decision-making sub-skill. While it may also mention limits or tiers, its primary purpose is guiding purchasing-model selection rather than listing quotas. |

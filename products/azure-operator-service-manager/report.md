@@ -1,14 +1,14 @@
 ---
-generated_at: '2026-06-21'
+generated_at: '2026-07-05'
 category_descriptions:
-  best-practices: Best practices for AOSM onboarding, config group design, Helm packaging,
-    artifact cleanup, and controlling CNF upgrade behavior and failure handling.
+  best-practices: Best practices for AOSM onboarding, config group design, Helm charts,
+    artifact cleanup, and controlling CNF upgrade failure behavior.
   integrations: Using CLI/ARM/Helm with AOSM to onboard CNFs/VNFs, manage images and
     artifacts (ACR/storage-backed stores), and add ARM resources to network service
     designs
-  configuration: 'Configuring AOSM runtime behavior: cluster registry for edge resiliency,
-    pausing/resuming deployments, Helm cleanup/test settings, NFO extension cluster
-    commands, and geo-replicated artifact stores.'
+  configuration: 'Configuring AOSM deployment behavior: cluster registry for edge
+    resiliency, pausing/resuming site services, Helm cleanup/tests, NFO extension
+    settings, and artifact store geo-replication.'
   security: Securing AOSM with Private Link, custom RBAC/roles, and User Assigned
     Managed Identities for controlled, least-privilege access and secure SNS/service
     operator deployments.
@@ -17,17 +17,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Operator Service Manager development
   including troubleshooting, best practices, security, configuration, and integrations
   & coding patterns. Use when onboarding CNFs/VNFs, designing config groups, managing
-  ACR artifacts, securing with Private Link/RBAC, or debugging Helm-based deployments,
-  and other Azure Operator Service Manager related development tasks. Not for Azure
-  Operator Insights (use azure-operator-insights), Azure Operator Nexus (use azure-operator-nexus),
-  Azure Network Function Manager (use azure-network-function-manager), Azure Resource
-  Manager (use azure-resource-manager).
+  ACR artifacts, using ARM/CLI, or securing with Private Link, and other Azure Operator
+  Service Manager related development tasks. Not for Azure Operator Nexus (use azure-operator-nexus),
+  Azure Operator Insights (use azure-operator-insights), Azure Network Function Manager
+  (use azure-network-function-manager), Azure Networking (use azure-networking).
 use_when: Use when onboarding CNFs/VNFs, designing config groups, managing ACR artifacts,
-  securing with Private Link/RBAC, or debugging Helm-based deployments, and other
-  Azure Operator Service Manager related development tasks.
-confusable_not_for: Not for Azure Operator Insights (use azure-operator-insights),
-  Azure Operator Nexus (use azure-operator-nexus), Azure Network Function Manager
-  (use azure-network-function-manager), Azure Resource Manager (use azure-resource-manager).
+  using ARM/CLI, or securing with Private Link, and other Azure Operator Service Manager
+  related development tasks.
+confusable_not_for: Not for Azure Operator Nexus (use azure-operator-nexus), Azure
+  Operator Insights (use azure-operator-insights), Azure Network Function Manager
+  (use azure-network-function-manager), Azure Networking (use azure-networking).
 ---
 # Azure Operator Service Manager Crawl Report
 
@@ -41,8 +40,8 @@ confusable_not_for: Not for Azure Operator Insights (use azure-operator-insights
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 47
+- **Updated Pages**: 2
+- **Unchanged**: 45
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-operator-service-manager/azure-operator-service-manager.csv`
 
@@ -58,6 +57,13 @@ confusable_not_for: Not for Azure Operator Insights (use azure-operator-insights
 | *(Unclassified)* | 23 | 48.9% |
 
 ## Changes
+
+### Updated Pages
+
+- [Helm Package Requirements](https://learn.microsoft.com/en-us/azure/operator-service-manager/helm-requirements)
+  - Updated: 2026-06-16T17:13:00.000Z → 2026-07-02T22:11:00.000Z
+- [Manage the network function operator extension](https://learn.microsoft.com/en-us/azure/operator-service-manager/manage-network-function-operator)
+  - Updated: 2025-10-29T22:11:00.000Z → 2026-07-02T08:00:00.000Z
 
 ## Classified Pages
 
@@ -75,8 +81,8 @@ confusable_not_for: Not for Azure Operator Insights (use azure-operator-insights
 | [Container image onboarding using CLI](https://learn.microsoft.com/en-us/azure/operator-service-manager/concepts-cli-containerized-network-function-image-upload) | integrations | 0.70 | Explains how the CLI discovers images from Helm charts and uploads to artifact store; likely includes specific parameter handling and registry interaction details. |
 | [Exposing parameters via CGS using CLI](https://learn.microsoft.com/en-us/azure/operator-service-manager/concepts-expose-parameters-configuration-group-schema) | integrations | 0.70 | Details how the CLI translates Helm values and ARM parameters into AOSM configuration models; product-specific parameter mapping logic. |
 | [Get Started with Private Link](https://learn.microsoft.com/en-us/azure/operator-service-manager/get-started-with-private-link) | security | 0.70 | Private Link setup is security-focused and product-specific; likely includes concrete network/security configuration parameters. |
-| [Helm Package Requirements](https://learn.microsoft.com/en-us/azure/operator-service-manager/helm-requirements) | best-practices | 0.70 | The page explicitly focuses on publisher Helm best practices for integrating with Azure Operator Service Manager. Such guidance is product-specific and likely includes concrete recommendations and patterns for chart structure and configuration unique to AOSM, fitting the best-practices category. |
-| [Manage the network function operator extension](https://learn.microsoft.com/en-us/azure/operator-service-manager/manage-network-function-operator) | configuration | 0.70 | Command reference for NFO extension; likely includes specific command parameters and behaviors unique to AOSM. |
+| [Helm Package Requirements](https://learn.microsoft.com/en-us/azure/operator-service-manager/helm-requirements) | best-practices | 0.70 | The page focuses on product-specific Helm chart recommendations for integrating with Azure Operator Service Manager. While the summary is high-level, the topic strongly implies detailed, prescriptive guidance (DOs/DON’Ts, chart structure, values, and patterns) tailored to this service rather than generic Helm usage, which qualifies as best-practices type expert knowledge. |
+| [Manage the network function operator extension](https://learn.microsoft.com/en-us/azure/operator-service-manager/manage-network-function-operator) | configuration | 0.70 | The article is described as a command reference with examples for managing the Azure Operator Service Manager network function operator extension. Such references typically include specific CLI commands, flags, and parameters unique to this product, which fits the configuration sub-skill type as expert knowledge beyond generic Kubernetes or Azure CLI usage. |
 | [Onboard a containerized network function (CNF) - CLI](https://learn.microsoft.com/en-us/azure/operator-service-manager/how-to-onboard-containerized-network-function-cli) | integrations | 0.70 | How-to for onboarding CNFs via CLI; likely includes specific CLI commands, parameters, and patterns unique to AOSM. |
 | [Onboard a virtualized network function (VNF) - CLI](https://learn.microsoft.com/en-us/azure/operator-service-manager/how-to-onboard-virtualized-network-function-cli) | integrations | 0.70 | Similar to CNF onboarding but for VNFs; includes AOSM CLI commands and parameters specific to this integration. |
 | [Onboarding and Deploying Basics](https://learn.microsoft.com/en-us/azure/operator-service-manager/best-practices-onboard-deploy) | best-practices | 0.70 | Described as best practice recommendations for onboarding and deploying network functions with Azure Operator Service Manager. While the summary doesn’t show numbers, these product-specific DO/DON'T guidelines for NF onboarding and deployment are likely concrete and implementation-focused, fitting the best-practices sub-skill. |

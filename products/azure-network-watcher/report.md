@@ -45,8 +45,8 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Virtual Net
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 63
+- **Updated Pages**: 0
+- **Unchanged**: 65
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-network-watcher/azure-network-watcher.csv`
 
@@ -63,13 +63,6 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Virtual Net
 | *(Unclassified)* | 37 | 56.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [Overview](https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-overview)
-  - Updated: 2026-02-10T23:11:00.000Z → 2026-06-25T11:43:00.000Z
-- [Monitor connectivity using Azure Monitor agent](https://learn.microsoft.com/en-us/azure/network-watcher/azure-monitor-agent-with-connection-monitor)
-  - Updated: 2024-12-29T12:12:00.000Z → 2026-06-24T11:45:00.000Z
 
 ## Classified Pages
 

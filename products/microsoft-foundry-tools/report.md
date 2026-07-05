@@ -49,9 +49,9 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 - **Unclassified**: 22
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 53
+- **Unchanged**: 54
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/microsoft-foundry-tools/microsoft-foundry-tools.csv`
 
@@ -70,10 +70,6 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 | *(Unclassified)* | 22 | 40.7% |
 
 ## Changes
-
-### New Pages
-
-- [Migrate from Azure Content Moderator to Azure AI Content Safety](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/content-moderator)
 
 ## Classified Pages
 

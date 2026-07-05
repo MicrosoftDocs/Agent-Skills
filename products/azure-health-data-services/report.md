@@ -53,8 +53,8 @@ confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Data 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 5
-- **Unchanged**: 197
+- **Updated Pages**: 0
+- **Unchanged**: 202
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-health-data-services/azure-health-data-services.csv`
 
@@ -74,19 +74,6 @@ confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Data 
 | *(Unclassified)* | 55 | 27.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [2026](https://learn.microsoft.com/en-us/azure/healthcare-apis/release-notes-2026)
-  - Updated: 2026-06-12T17:29:00.000Z → 2026-06-26T22:12:00.000Z
-- [CARIN Implementation Guide for Blue Button](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/carin-implementation-guide-blue-button-tutorial)
-  - Updated: 2025-08-12T08:00:00.000Z → 2026-06-24T05:15:00.000Z
-- [Da Vinci Drug Formulary](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/davinci-drug-formulary-tutorial)
-  - Updated: 2025-10-01T08:00:00.000Z → 2026-06-22T22:13:00.000Z
-- [Da Vinci PDex](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/davinci-pdex-tutorial)
-  - Updated: 2025-10-01T08:00:00.000Z → 2026-06-22T22:13:00.000Z
-- [Da Vinci Plan Net](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/davinci-plan-net)
-  - Updated: 2025-10-01T08:00:00.000Z → 2026-06-22T22:13:00.000Z
 
 ## Classified Pages
 

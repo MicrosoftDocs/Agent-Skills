@@ -1,9 +1,9 @@
 ---
 name: azure-vmware-solution
-description: Expert knowledge for Azure VMware Solution development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring AVS networking/vSAN, HCX migrations, Horizon/Cloud Director, Defender for Cloud, or Run Command automation, and other Azure VMware Solution related development tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Stack Edge (use azure-stack-edge), Azure Large Instances (use azure-large-instances), SAP HANA on Azure Large Instances (use azure-sap).
+description: Expert knowledge for Azure VMware Solution development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when working with AVS networking/NSX, HCX migrations, vSAN clusters, Horizon VDI, or VMware Cloud Director, and other Azure VMware Solution related development tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Large Instances (use azure-large-instances), Azure Migrate (use azure-migrate), Azure Site Recovery (use azure-site-recovery).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-28"
+  generated_at: "2026-07-05"
   generator: "docs2skills/1.0.0"
 ---
 # Azure VMware Solution Skill
@@ -30,8 +30,8 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L63-L75 | Network, storage, and private cloud design for AVS: hub-spoke patterns, vSAN/stretched clusters, Horizon and GitHub Enterprise sizing, Cloud Director networking, and Gen 2 architecture. |
 | Limits & Quotas | L76-L87 | AVS capacity, host/cluster/vSAN limits, routing constraints, required ports, and how to plan, request quota, deploy, and scale private clouds within platform limits. |
 | Security | L88-L104 | Securing AVS: identity/access control, Defender for Cloud, vSAN CMK encryption, LDAP/vCenter identity, Trusted Launch/vTPM, NSX Edge internet, ESU, app protection, credential rotation, and best practices. |
-| Configuration | L105-L143 | Configuring AVS environments: networking, storage, backup, monitoring, DNS/DHCP, HCX, vSAN, Cloud Director, Arc/Run Command, and integrating Azure services like NetApp Files and Elastic SAN. |
-| Integrations & Coding Patterns | L144-L154 | Patterns for integrating AVS with Azure services: storage (Pure, NetApp), backup, monitoring/logs, HCX internet, VPN/Virtual WAN, and automation via Run Command/Logic Apps. |
+| Configuration | L105-L142 | Configuring AVS infrastructure: networking, DNS/DHCP, storage/datastores, backup, monitoring/metrics, Arc/Run Command, HCX, Cloud Director, and high availability/placement settings. |
+| Integrations & Coding Patterns | L143-L154 | Patterns for connecting AVS to Azure services: storage, backups, monitoring, syslog, NetApp Files, VPN/Virtual WAN, HCX internet, and VMware Tools repo configuration. |
 | Deployment | L155-L165 | Guides for planning and deploying AVS for production, including Horizon/Citrix VDI, JetStream DR, VMware Cloud Director, and migrating SQL (Always On, FCI, standalone) to Azure VMware Solution. |
 
 ### Troubleshooting
@@ -136,9 +136,8 @@ This skill requires **network access** to fetch documentation content:
 | Configure networking between Azure VMware Gen1 and Gen2 clouds | https://learn.microsoft.com/en-us/azure/azure-vmware/native-connect-private-cloud-previous-edition |
 | Configure DNS forward lookup zones for Azure VMware Gen2 | https://learn.microsoft.com/en-us/azure/azure-vmware/native-dns-forward-lookup-zone |
 | Execute VMware HCX Run Commands in AVS | https://learn.microsoft.com/en-us/azure/azure-vmware/use-hcx-run-commands |
-| Use Set-ToolsRepo Run Command in Azure VMware | https://learn.microsoft.com/en-us/azure/azure-vmware/use-set-toolsrepo-run-command |
 | Configure vCenter login banner via AVS Run Command | https://learn.microsoft.com/en-us/azure/azure-vmware/use-vcenter-login-banner-run-command |
-| Use AVS Run Command with cloudadmin role | https://learn.microsoft.com/en-us/azure/azure-vmware/using-run-command |
+| Use Run Commands and CloudAdmin in Azure VMware Solution | https://learn.microsoft.com/en-us/azure/azure-vmware/using-run-command |
 | Configure VMware Aria Operations for Azure VMware Solution | https://learn.microsoft.com/en-us/azure/azure-vmware/vrealize-operations-for-azure-vmware-solution |
 
 ### Integrations & Coding Patterns
@@ -151,6 +150,7 @@ This skill requires **network access** to fetch documentation content:
 | Integrate Azure Native Monitoring and Protection with AVS VMs | https://learn.microsoft.com/en-us/azure/azure-vmware/integrate-azure-native-services |
 | Send AVS VMware syslogs via Azure Logic Apps | https://learn.microsoft.com/en-us/azure/azure-vmware/logs-via-logic-app |
 | Use Azure NetApp Files shares with AVS virtual machines | https://learn.microsoft.com/en-us/azure/azure-vmware/netapp-files-with-azure-vmware-solution |
+| Configure Set-ToolsRepo run command for VMware Tools in AVS | https://learn.microsoft.com/en-us/azure/azure-vmware/use-set-toolsrepo-run-command |
 
 ### Deployment
 | Topic | URL |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-28'
+generated_at: '2026-07-05'
 category_descriptions:
   security: 'Security, identity, and access control for Azure Arc: AD auth, TDE, keytabs/credential
     rotation, RBAC, network protection, Private Link, policies, and hardening for
@@ -53,8 +53,8 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 5
-- **Unchanged**: 377
+- **Updated Pages**: 1
+- **Unchanged**: 381
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-arc/azure-arc.csv`
 
@@ -77,16 +77,8 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 
 ### Updated Pages
 
-- [FAQ](https://learn.microsoft.com/en-us/azure/azure-arc/data/faq)
-  - Updated: 2025-07-24T22:07:00.000Z → 2026-06-24T06:10:00.000Z
-- [Deploy applications using GitOps (Argo CD)](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/tutorial-use-gitops-argocd)
-  - Updated: 2026-05-08T22:11:00.000Z → 2026-06-24T22:12:00.000Z
-- [Deploy applications using GitOps (Flux v2)](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/tutorial-use-gitops-flux2)
-  - Updated: 2026-02-26T23:11:00.000Z → 2026-06-05T08:00:00.000Z
-- [Network requirements](https://learn.microsoft.com/en-us/azure/azure-arc/servers/network-requirements)
-  - Updated: 2026-04-01T08:00:00.000Z → 2026-04-01T17:20:00.000Z
-- [Deploy configurations using GitOps (Flux v1)](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/tutorial-use-gitops-flux2)
-  - Updated: 2026-02-26T23:11:00.000Z → 2026-06-05T08:00:00.000Z
+- [GitOps (Flux) Release notes](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/flux-gitops-release-notes)
+  - Updated: 2026-06-12T17:24:00.000Z → 2026-07-02T08:00:00.000Z
 
 ## Classified Pages
 
@@ -415,7 +407,7 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Deploy applications using GitOps (Flux v2)](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/tutorial-use-gitops-flux2) | 0.30 | This is a tutorial on using GitOps with Flux v2 in Azure Arc/AKS. The summary indicates procedural guidance (install extension, create fluxConfigurations, sync Git) rather than detailed configuration reference, limits, or troubleshooting content. It lacks clear signs of expert-only numerical limits, parameter tables, or error-resolution mappings. |
 | [Enable VMware vCenter resources in Azure](https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/browse-and-enable-vcenter-resources-in-azure) | 0.30 | Portal-based browsing/enabling of vCenter resources; navigation and basic enablement steps, no detailed configuration parameters, limits, or troubleshooting mappings. |
 | [Features](https://learn.microsoft.com/en-us/azure/azure-arc/data/managed-instance-features) | 0.30 | Features and capabilities list; mostly conceptual/marketing without detailed config, limits, or troubleshooting mappings. |
-| [GitOps (Flux) Release notes](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/flux-gitops-release-notes) | 0.30 | Release notes list versions and high-level changes for the Flux (GitOps) extension but, from the summary, do not clearly expose concrete limits, configuration tables, error-code mappings, or other structured expert details required by any sub-skill type. Primarily informational/version history content. |
+| [GitOps (Flux) Release notes](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/flux-gitops-release-notes) | 0.30 | Release notes summarize version support and general guidance (for example, N-2 support) but, based on the description, don't expose detailed limits, configuration tables, error codes, or decision matrices that meet any sub-skill detection criteria. |
 | [Guide](https://learn.microsoft.com/en-us/azure/azure-arc/data/troubleshoot-guide) | 0.30 | Introductory page that just links to troubleshooting resources; no direct error-code or diagnostic detail. |
 | [Implement CI/CD with GitOps (Flux v2)](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/tutorial-gitops-flux2-ci-cd) | 0.30 | CI/CD tutorial is scenario-focused; description doesn’t suggest detailed configuration matrices or limits. |
 | [Install Arc agent at scale](https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/enable-guest-management-at-scale) | 0.30 | Appears to be a how-to/tutorial for installing Azure Arc agents on VMware VMs at scale. The summary does not indicate presence of detailed configuration parameter tables, limits, error-code-based troubleshooting, or other product-specific expert references; it mainly describes the scenario and benefits. |

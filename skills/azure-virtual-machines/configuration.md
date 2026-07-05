@@ -25,7 +25,7 @@
 | Configure Azure Event Hubs as a sink for VM watch signals | https://learn.microsoft.com/en-us/azure/virtual-machines/configure-eventhub-vm-watch |
 | Customize VM watch settings and collectors on Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/configure-vm-watch |
 | Configure and create Azure Compute Galleries | https://learn.microsoft.com/en-us/azure/virtual-machines/create-gallery |
-| Use custom data and cloud-init with Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/custom-data |
+| Configure custom data for Azure virtual machines | https://learn.microsoft.com/en-us/azure/virtual-machines/custom-data |
 | Convert Azure managed disk types via CLI, PowerShell, portal | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-convert-types |
 | Deploy zone-redundant managed disks (ZRS) | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-deploy-zrs |
 | Enable on-demand bursting for Premium SSD disks | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-enable-bursting |

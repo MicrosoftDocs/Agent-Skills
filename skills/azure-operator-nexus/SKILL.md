@@ -1,9 +1,9 @@
 ---
 name: azure-operator-nexus
-description: Expert knowledge for Azure Operator Nexus development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing Nexus clusters, fabric BGP/VRFs, secure access, NPB TAP rules, or platform upgrades, and other Azure Operator Nexus related development tasks. Not for Azure Network Function Manager (use azure-network-function-manager), Azure Networking (use azure-networking), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use azure-virtual-wan).
+description: Expert knowledge for Azure Operator Nexus development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing Nexus clusters, fabric ACL/BGP, secure VM connectivity, NPB TAP rules, or near‑edge storage, and other Azure Operator Nexus related development tasks. Not for Azure Network Function Manager (use azure-network-function-manager), Azure Networking (use azure-networking), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Operator Insights (use azure-operator-insights).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-28"
+  generated_at: "2026-07-05"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Operator Nexus Skill
@@ -24,13 +24,13 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L82 | Diagnosing and fixing Nexus infrastructure issues: bare metal, storage, networking, Kubernetes clusters, runtime upgrades, and connectivity problems using logs, diagnostics, and recovery commands. |
+| Troubleshooting | L37-L82 | Diagnosing and fixing Nexus infrastructure issues: bare metal/VM recovery, storage and network faults, Kubernetes cluster/pod problems, runtime upgrades, and hardware/health alerts. |
 | Best Practices | L83-L88 | Guidance on Nexus bare metal lifecycle ops, ETCD maintenance in Nexus AKS, and procedures for repairing and maintaining Nexus storage appliance components. |
 | Decision Making | L89-L96 | Guidance on planning Nexus Kubernetes cluster placement and choosing compatible Nexus versions, VM SKUs, and platform SKUs based on workload, capacity, and storage support. |
 | Architecture & Design Patterns | L97-L102 | Design patterns and reference architectures for resilient Nexus deployments, including rack-failure-tolerant control planes and near-edge storage topology and capacity planning. |
 | Limits & Quotas | L103-L115 | Nexus platform limits, quotas, supported versions, upgrade cadence, storage planning, node restarts/timeouts, isolation domain requirements, and log behavior after disconnection. |
 | Security | L116-L155 | Securing Nexus: identity/RBAC, ACLs, SSH and serial access, break-glass methods, key/cert/secret rotation, Defender/Policy, managed identities, and secure VM/cluster connectivity. |
-| Configuration | L156-L225 | Configuring and operating Azure Operator Nexus: cluster templates, upgrades, Kubernetes, network fabric (BGP, VRFs, QoS, isolation domains, route policies), monitoring, security, and change workflows. |
+| Configuration | L156-L225 | Designing, applying, and troubleshooting configuration for Nexus clusters, Kubernetes, and network fabric (ACLs, route policies, isolation domains, BGP/QoS, upgrades, drift, and commit workflows). |
 | Integrations & Coding Patterns | L226-L230 | Configuring Network Packet Broker TAP rules in Azure Operator Nexus, including rule creation, traffic mirroring, filtering, and integration patterns for network observability. |
 | Deployment | L231-L239 | Deploying and maintaining Nexus platform and fabric: prerequisites, image building, OS and fabric upgrades, and replacing or updating terminal servers in the network fabric. |
 
@@ -51,7 +51,7 @@ This skill requires **network access** to fetch documentation content:
 | Fix Accepted cluster hydration issues in Operator Nexus | https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-accepted-cluster-hydration |
 | Diagnose and fix degraded bare metal machines in Azure Operator Nexus | https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-bare-metal-machine-degraded |
 | Troubleshoot bare-metal machine provisioning in Operator Nexus | https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-bare-metal-machine-provisioning |
-| Diagnose Bare Metal Machine warning states in Azure Operator Nexus | https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-bare-metal-machine-warning |
+| Resolve warning status on bare metal machines in Azure Operator Nexus | https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-bare-metal-machine-warning |
 | Fix Nexus ClusterConnectionStatus Disconnected heartbeat issues | https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-cluster-heartbeat-connection-status-disconnected |
 | Recover control plane quorum loss in Operator Nexus | https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-control-plane-quorum |
 | Resolve CSN storage pod containers stuck in creating | https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-csn-storage-pod-container-stuck-in-creating |
@@ -200,7 +200,7 @@ This skill requires **network access** to fetch documentation content:
 | Monitor packet rates for Nexus fabric interfaces in Azure portal | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-monitor-interface-packet-rate |
 | Configure monitoring for Nexus Kubernetes clusters | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-monitor-naks-cluster |
 | Monitor VNF virtual machines on Operator Nexus | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-monitor-virtualized-network-functions-virtual-machines |
-| Configure Quality of Service for Nexus Network Fabric via Azure CLI | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-network-fabric-quality-of-service |
+| Configure QoS settings for Azure Operator Nexus network fabric | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-network-fabric-quality-of-service |
 | Deploy Azure Operator Nexus instance via template | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-nexus-instance-deployment-template |
 | Reboot Nexus network devices using graceful and ungraceful modes | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-reboot-network-device |
 | Rotate Azure Local Operator Nexus cluster credentials | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-rotate-credential-api |

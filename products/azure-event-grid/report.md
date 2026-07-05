@@ -49,8 +49,8 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 262
+- **Updated Pages**: 0
+- **Unchanged**: 263
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-event-grid/azure-event-grid.csv`
 
@@ -69,11 +69,6 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 | *(Unclassified)* | 86 | 32.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/event-grid/microsoft-entra-events)
-  - Updated: 2025-01-22T05:32:00.000Z → 2026-06-22T22:13:00.000Z
 
 ## Classified Pages
 

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-28'
+generated_at: '2026-07-05'
 category_descriptions:
   configuration: 'Configuring Azure Files and Azure File Sync: networking, VPN and
     endpoints, performance and redundancy, cloud tiering, DFS integration, monitoring/metrics,
@@ -10,9 +10,9 @@ category_descriptions:
   best-practices: 'Best practices for Azure Files and Azure File Sync: DR/failover
     planning, server/drive replacement and recovery, safe deprovisioning, and performance
     tuning for SMB/NFS and VDI/FSLogix workloads.'
-  security: 'Securing Azure Files: identity-based SMB/NFS auth (AD DS, Entra ID, Kerberos,
-    managed identities), encryption, TLS, firewalls, NTFS/share permissions, and secure
-    client configuration.'
+  security: 'Securing Azure Files: identity-based SMB/NFS auth (AD DS, Entra, Kerberos),
+    encryption (TLS, CMK), firewalls/network perimeter, NTFS/share permissions, and
+    secure Linux/macOS mounting.'
   deployment: Guides for migrating and syncing data to Azure Files/Azure File Sync
     from NAS, Linux, GlusterFS, SMB/NFS shares, and moving File Sync resources safely
     across scopes.
@@ -25,11 +25,11 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Files development including best practices,
   decision making, limits & quotas, security, configuration, integrations & coding
   patterns, and deployment. Use when using Azure Files/File Sync, SMB/NFS shares,
-  cloud tiering, DFS, or RAG apps over file shares, and other Azure Files related
+  AD/Entra auth, cloud tiering, or RAG over file data, and other Azure Files related
   development tasks. Not for Azure Blob Storage (use azure-blob-storage), Azure NetApp
   Files (use azure-netapp-files), Azure Managed Lustre (use azure-managed-lustre).
-use_when: Use when using Azure Files/File Sync, SMB/NFS shares, cloud tiering, DFS,
-  or RAG apps over file shares, and other Azure Files related development tasks.
+use_when: Use when using Azure Files/File Sync, SMB/NFS shares, AD/Entra auth, cloud
+  tiering, or RAG over file data, and other Azure Files related development tasks.
 confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure NetApp
   Files (use azure-netapp-files), Azure Managed Lustre (use azure-managed-lustre).
 ---
@@ -40,13 +40,13 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure N
 - **Total Pages**: 129
 - **Fetched**: 129
 - **Fetch Failed**: 0
-- **Classified**: 110
-- **Unclassified**: 19
+- **Classified**: 109
+- **Unclassified**: 20
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 127
+- **Updated Pages**: 4
+- **Unchanged**: 125
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-files/azure-files.csv`
 
@@ -56,21 +56,25 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure N
 |------|-------|------------|
 | best-practices | 12 | 9.3% |
 | configuration | 24 | 18.6% |
-| decision-making | 17 | 13.2% |
+| decision-making | 16 | 12.4% |
 | deployment | 9 | 7.0% |
 | integrations | 19 | 14.7% |
 | limits-quotas | 4 | 3.1% |
 | security | 25 | 19.4% |
-| *(Unclassified)* | 19 | 14.7% |
+| *(Unclassified)* | 20 | 15.5% |
 
 ## Changes
 
 ### Updated Pages
 
-- [SSD file shares redundancy support](https://learn.microsoft.com/en-us/azure/storage/files/redundancy-premium-file-shares)
-  - Updated: 2026-03-13T08:00:00.000Z → 2026-06-24T05:15:00.000Z
-- [Enable AD DS authentication](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-ad-ds-enable)
-  - Updated: 2026-04-03T08:00:00.000Z → 2026-06-24T05:15:00.000Z
+- [Create alerts](https://learn.microsoft.com/en-us/azure/storage/files/files-monitoring-alerts)
+  - Updated: 2026-06-12T05:19:00.000Z → 2026-06-30T05:18:00.000Z
+- [Enable authentication for hybrid or cloud-only identities](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-auth-hybrid-identities-enable)
+  - Updated: 2026-06-12T17:29:00.000Z → 2026-06-29T17:15:00.000Z
+- [What is Azure Files?](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-introduction)
+  - Updated: 2026-04-03T21:52:00.000Z → 2026-06-29T22:28:00.000Z
+- [Plan for an Azure Files deployment](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-planning)
+  - Updated: 2026-06-17T08:00:00.000Z → 2026-06-30T08:00:00.000Z
 
 ## Classified Pages
 
@@ -98,7 +102,7 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure N
 | [Configure root squash (NFS shares)](https://learn.microsoft.com/en-us/azure/storage/files/nfs-root-squash) | security | 0.78 | Root squash is a product-specific NFS security feature; this page describes how to configure it for Azure Files, including concrete security behavior and settings that map to permissions and access control, which are not generic concepts. |
 | [Enable AD DS authentication](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-ad-ds-enable) | security | 0.78 | The page provides product-specific security configuration for enabling AD DS authentication on Azure Files, including precise steps and settings for integrating on-premises Active Directory with Azure file shares. This is detailed, implementation-specific security guidance beyond generic knowledge. |
 | [Enable Microsoft Entra Domain Services](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-auth-domain-services-enable) | security | 0.78 | Covers enabling Microsoft Entra Domain Services for SMB Azure file shares with concrete configuration steps, roles, and identity/security settings specific to Azure Files. |
-| [Enable authentication for hybrid or cloud-only identities](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-auth-hybrid-identities-enable) | security | 0.78 | How-to article for enabling Microsoft Entra Kerberos auth for Azure Files SMB shares. It contains product-specific security configuration steps and parameters (e.g., identity types, Entra/AD DS integration details, required settings for hybrid vs cloud-only identities) that go beyond generic security concepts. |
+| [Enable authentication for hybrid or cloud-only identities](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-auth-hybrid-identities-enable) | security | 0.78 | The article provides product-specific security configuration steps for enabling Microsoft Entra Kerberos authentication for Azure Files, including precise settings and identity configurations unique to this feature, which go beyond generic security concepts. |
 | [Enable authentication on macOS with Platform SSO](https://learn.microsoft.com/en-us/azure/storage/files/identity-kerberos-authentication-macos) | security | 0.78 | Step-by-step configuration of Microsoft Entra Kerberos authentication and macOS Platform SSO for Azure Files, including product-specific security settings, identity configuration, and platform-specific parameters that go beyond generic knowledge. |
 | [SMB performance](https://learn.microsoft.com/en-us/azure/storage/files/smb-performance) | best-practices | 0.78 | Focuses on specific techniques like SMB Multichannel and metadata caching for SSD (premium) SMB Azure file shares; these are concrete, product-specific recommendations and patterns for improving performance, fitting best-practices. |
 | [Choose how to authorize access to file data in the Azure portal](https://learn.microsoft.com/en-us/azure/storage/files/authorize-data-operations-portal) | security | 0.76 | Explains how portal requests to Azure Files are authorized, with specific details on using Entra accounts vs access keys and required permissions, which are product-specific security behaviors. |
@@ -143,7 +147,6 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure N
 | [Optimize costs with storage reservations](https://learn.microsoft.com/en-us/azure/storage/files/files-reserve-capacity) | decision-making | 0.70 | Describes when reservations apply (which billing models), discount behavior, and term options (1-year/3-year). Guides cost-optimization decisions with product-specific constraints. |
 | [Pinecone](https://learn.microsoft.com/en-us/azure/storage/files/artificial-intelligence/retrieval-augmented-generation/open-source-frameworks/vector-databases/pinecone) | integrations | 0.70 | Describes Pinecone as vector store with Azure Files as document source and orchestration frameworks. Typically includes Pinecone index/namespace configuration and parameters specific to this integration, which qualifies as product-specific integration knowledge. |
 | [Plan for an Azure File Sync deployment](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-planning) | decision-making | 0.70 | Planning guide for Azure File Sync that explains concrete deployment options, when to use each (cloud-only vs. hybrid caching, server vs. VM), and how different choices affect behavior. It provides product-specific decision guidance rather than just conceptual overview, helping users select appropriate deployment patterns. |
-| [Plan for an Azure Files deployment](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-planning) | decision-making | 0.70 | Planning article that compares direct SMB/NFS mounts vs Azure File Sync caching with concrete deployment considerations and when to choose each option. It guides technology/approach selection for Azure Files deployments rather than just explaining concepts. |
 | [Python](https://learn.microsoft.com/en-us/azure/storage/files/storage-python-how-to-use-file-storage) | integrations | 0.70 | Shows Python SDK patterns for Azure Files with concrete API calls and parameters, which are product-specific integration details. |
 | [Qdrant](https://learn.microsoft.com/en-us/azure/storage/files/artificial-intelligence/retrieval-augmented-generation/open-source-frameworks/vector-databases/qdrant) | integrations | 0.70 | Describes Qdrant with Azure Files and orchestration frameworks, including payload filtering for metadata-based scoping. This is a product-specific integration pattern with configuration details unique to Qdrant + Azure Files. |
 | [Recover from a server failure](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-server-recovery) | best-practices | 0.70 | Server recovery steps (new disk sizing, agent install, endpoint recreation) are product-specific operational guidance to avoid data loss. |
@@ -196,11 +199,12 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure N
 | [Deploy Azure File Sync](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-deployment-guide) | 0.40 | Deployment guide is likely procedural (portal/CLI/PowerShell) without tier matrices or deployment constraints by SKU. |
 | [Register a server with Azure File Sync](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-server-registration) | 0.35 | How-to for registering/unregistering servers; mostly procedural without detailed configuration tables or limits. |
 | [Cloud tiering overview](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-cloud-tiering-overview) | 0.30 | Explains the concept of cloud tiering and how it works, but the summary does not show concrete numeric thresholds, configuration parameter tables, or troubleshooting details; appears conceptual rather than expert configuration or limits. |
-| [Create alerts](https://learn.microsoft.com/en-us/azure/storage/files/files-monitoring-alerts) | 0.30 | The page is a how-to guide for creating Azure Monitor alerts on Azure Files metrics and logs. From the summary, it focuses on using the Azure portal to set alerts for throttling, capacity, egress, and latency, but does not indicate the presence of specific numeric limits, configuration parameter tables, error codes, or product-specific thresholds. It appears to be procedural/tutorial content rather than detailed limits, configuration references, or troubleshooting mappings. |
 | [Data protection overview](https://learn.microsoft.com/en-us/azure/storage/files/files-data-protection-overview) | 0.30 | High-level overview of Azure Files data protection options (soft delete, snapshots, backup, sync) without detailed numeric limits, configuration tables, or error-code-based troubleshooting. |
 | [Mount SMB file share on macOS](https://learn.microsoft.com/en-us/azure/storage/files/storage-how-to-use-files-mac) | 0.30 | Page is a how-to guide for mounting Azure Files on macOS using Finder/Terminal. It does not present numeric limits/quotas, configuration parameter tables, error-code-based troubleshooting, or other product-specific expert reference data; it is primarily step-by-step usage instructions. |
+| [Plan for an Azure Files deployment](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-planning) | 0.30 | High-level planning guidance for Azure Files deployment options (direct mount vs Azure File Sync). From the summary, it appears conceptual without specific numeric limits, configuration parameter tables, or detailed decision matrices with thresholds. |
 | [SMB file shares](https://learn.microsoft.com/en-us/azure/storage/files/files-smb-protocol) | 0.30 | Primarily a conceptual/feature overview of SMB file shares in Azure Files (protocol support, general capabilities). The summary does not indicate detailed limits, configuration tables, or decision matrices with quantified trade-offs. |
 | [Azure File Sync release notes](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-release-notes) | 0.20 | Release notes typically list changes, fixes, and new features by version but do not systematically present limits, configuration matrices, error-code mappings, or other structured expert knowledge as defined by the sub-skill types. The description suggests version history rather than detailed quotas, configuration tables, or troubleshooting mappings. |
+| [Create alerts](https://learn.microsoft.com/en-us/azure/storage/files/files-monitoring-alerts) | 0.20 | Primarily a how-to guide for creating Azure Monitor alerts on Azure Files metrics and logs. The summary doesn't indicate specific numeric limits, configuration parameter tables, error-code mappings, or tier-specific constraints; it focuses on using alerts for throttling, capacity, egress, and latency. This is standard monitoring/alerting usage that a generic LLM would already know conceptually, without product-unique expert details. |
 | [Customer case studies](https://learn.microsoft.com/en-us/azure/storage/files/azure-files-case-study) | 0.20 | Customer case studies are narrative/marketing-style usage stories, not technical reference with limits, configs, or error mappings. They don't provide reusable expert configuration or troubleshooting knowledge. |
 | [Extend Windows file servers with Azure File Sync](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-extend-servers) | 0.20 | Tutorial-style walkthrough for extending Windows Server storage with Azure File Sync; description suggests step-by-step usage, not detailed limits, configuration tables, error codes, or product-specific decision matrices. |
 | [Mount SMB file share on Windows](https://learn.microsoft.com/en-us/azure/storage/files/storage-how-to-use-files-windows) | 0.20 | Primarily a how-to tutorial for mounting SMB Azure file shares on Windows. While it may show commands, it is generic usage guidance without configuration tables, limits, or product-specific diagnostic/security details that rise to expert-knowledge level per the defined categories. |
@@ -209,4 +213,4 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure N
 | [What is Azure File Sync?](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-introduction) | 0.20 | High-level introduction to Azure File Sync; summary indicates conceptual overview of what the service does without specific limits, configuration tables, error codes, or decision matrices. |
 | [What is retrieval-augmented generation?](https://learn.microsoft.com/en-us/azure/storage/files/artificial-intelligence/retrieval-augmented-generation/overview) | 0.20 | High-level overview of RAG with Azure Files and AI services; primarily conceptual description of RAG and its benefits without detailed configuration tables, limits, or error mappings. |
 | [What's new in Azure Files?](https://learn.microsoft.com/en-us/azure/storage/files/files-whats-new) | 0.20 | The 'What's New in Azure Files and Azure File Sync' page is a release/feature announcement changelog. It highlights new capabilities and enhancements but does not primarily present structured limits, configuration parameter tables, troubleshooting mappings, or decision matrices. Any specific values mentioned are incidental to feature announcements rather than organized expert reference content for a sub-skill type. |
-| [What is Azure Files?](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-introduction) | 0.10 | High-level introduction to Azure Files describing what the service is and basic capabilities (SMB/NFS access, platforms supported). No specific limits, configuration tables, error codes, or decision matrices are present. |
+| [What is Azure Files?](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-introduction) | 0.10 | Introductory overview of Azure Files (what it is, basic capabilities, supported protocols). No detailed limits, configuration tables, error codes, or product-specific decision matrices. |

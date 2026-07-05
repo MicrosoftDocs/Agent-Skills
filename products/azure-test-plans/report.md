@@ -32,8 +32,8 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 33
+- **Updated Pages**: 0
+- **Unchanged**: 34
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-test-plans/azure-test-plans.csv`
 
@@ -47,11 +47,6 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 | *(Unclassified)* | 30 | 88.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [Actual Result](https://learn.microsoft.com/en-us/azure/devops/test/actual-result?view=azure-devops)
-  - Updated: 2026-04-14T01:03:00.000Z → 2026-06-24T01:04:00.000Z
 
 ## Classified Pages
 

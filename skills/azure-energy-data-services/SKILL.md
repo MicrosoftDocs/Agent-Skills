@@ -3,7 +3,7 @@ name: azure-energy-data-services
 description: Expert knowledge for Azure Energy Data Services development including troubleshooting, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when configuring ADME partitions/zones, DDMS APIs, large file workflows, Geospatial CZ on AKS, or OSDU Admin UI, and other Azure Energy Data Services related development tasks. Not for Azure Data Explorer (use azure-data-explorer), Azure Synapse Analytics (use azure-synapse-analytics), Azure Data Factory (use azure-data-factory), Azure Databricks (use azure-databricks).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-28"
+  generated_at: "2026-07-05"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Energy Data Services Skill
@@ -30,7 +30,7 @@ This skill requires **network access** to fetch documentation content:
 | Security | L51-L65 | Securing Azure Data Manager for Energy: auth tokens, ACLs, encryption, legal tags, user/group entitlements, managed identities, private endpoints, and API Management access control. |
 | Configuration | L66-L73 | Configuring Azure Data Manager for Energy: data partitions, analytics zone setup, CORS, audit logging, and milestone upgrade settings. |
 | Integrations & Coding Patterns | L74-L94 | Patterns and examples for integrating Azure Energy Data Services with analytics platforms, external data sources, DDMS APIs, logs/monitoring, and large file workflows. |
-| Deployment | L95-L99 | Guides for deploying Azure Energy Data Services components, including Geospatial Consumption Zone on AKS and the OSDU Admin UI for Azure Data Manager for Energy administration |
+| Deployment | L95-L98 | Guides for deploying Azure Energy Data Services components, including Geospatial Consumption Zone on AKS and the OSDU Admin UI for Azure Data Manager for Energy administration |
 
 ### Troubleshooting
 | Topic | URL |
@@ -96,4 +96,3 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Deploy Geospatial Consumption Zone on AKS with Azure Data Manager for Energy | https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-deploy-gcz |
-| Deploy OSDU Admin UI for ADME administration | https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-deploy-osdu-admin-ui |

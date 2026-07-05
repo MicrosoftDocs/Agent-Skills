@@ -1,9 +1,9 @@
 ---
 name: azure-backup
-description: Expert knowledge for Azure Backup development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when protecting Azure VMs, AKS, SQL/SAP HANA, Files/Blobs, or on‑prem workloads with Azure Backup APIs, and other Azure Backup related development tasks. Not for Azure Site Recovery (use azure-site-recovery), Azure Virtual Machines (use azure-virtual-machines), Azure Blob Storage (use azure-blob-storage), Azure Files (use azure-files).
+description: Expert knowledge for Azure Backup development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when backing up Azure VMs/SQL/SAP, using MABS/MARS, automating via CLI/PowerShell/REST, or securing vaults, and other Azure Backup related development tasks. Not for Azure Site Recovery (use azure-site-recovery), Azure Virtual Machines (use azure-virtual-machines), Azure Blob Storage (use azure-blob-storage), Azure Files (use azure-files).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-28"
+  generated_at: "2026-07-05"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Backup Skill
@@ -25,14 +25,14 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L37-L70 | Diagnosing and fixing Azure Backup errors across VMs, disks, databases (SQL, PostgreSQL, MySQL, SAP), files, blobs, AKS, MARS/MABS/DPM, vault management, monitoring, and restore issues. |
-| Best Practices | L71-L82 | Best practices for securely backing up and restoring Azure VMs, SQL Always On, Hyper-V, Exchange, and MABS/DPM workloads, including TRIM, vault recovery, and Azure Backup configuration. |
-| Decision Making | L83-L90 | Guidance on planning Azure Backup costs, checking supported VM SKUs, choosing reserved capacity for savings, and migrating classic backup alerts to Azure Monitor. |
-| Architecture & Design Patterns | L91-L95 | Azure Backup’s architecture for protecting SAP HANA: components, data flow, backup/restore process, scalability, security, and integration with Azure storage and recovery services. |
-| Limits & Quotas | L96-L132 | Backup limits, region support, retention, and support matrices for Azure workloads (VMs, disks, databases, files, blobs, AKS, MARS/MABS/DPM), plus metrics, quotas, and behavior constraints. |
-| Security | L133-L172 | Securing Azure Backup with encryption, RBAC, policies, soft delete, private endpoints, MUA/Resource Guard, and ransomware protection for VMs, databases, AKS, MABS, and hybrid workloads. |
-| Configuration | L173-L252 | Configuring Azure Backup and policies for VMs, AKS, SQL, SAP HANA, Files, Blobs, Disks, AD, and on-prem agents, plus monitoring, diagnostics, reporting, and Backup Center governance. |
-| Integrations & Coding Patterns | L253-L309 | Automating Azure Backup via CLI, PowerShell, REST, and scripts for VMs, SQL, PostgreSQL, Files, Blobs, Disks, MARS/on-prem, plus policies, vaults, jobs, restores, and security/reporting integrations. |
-| Deployment | L310-L318 | Deploying and managing Microsoft Azure Backup Server (MABS): backup of Azure VMs, supported workload matrices (v3/v4), silent install automation, and stopping protection for workloads. |
+| Best Practices | L71-L81 | Best practices for securely backing up and restoring Azure VMs, SQL Always On, Hyper-V, Exchange, and MABS/DPM workloads, including TRIM, vault recovery, and Azure Backup configuration. |
+| Decision Making | L82-L89 | Guidance on planning Azure Backup costs, checking supported VM SKUs, choosing reserved capacity for savings, and migrating classic backup alerts to Azure Monitor. |
+| Architecture & Design Patterns | L90-L94 | Azure Backup’s architecture for protecting SAP HANA: components, data flow, backup/restore process, scalability, security, and integration with Azure storage and recovery services. |
+| Limits & Quotas | L95-L131 | Backup limits, region support, retention, and support matrices for Azure workloads (VMs, disks, databases, files, blobs, AKS, MARS/MABS/DPM), plus metrics, quotas, and behavior constraints. |
+| Security | L132-L170 | Securing Azure Backup: encryption, RBAC/MIs, private endpoints, soft delete, ransomware protection, Azure Policy/MUA/Resource Guard, and secure restore of encrypted/Confidential/hybrid workloads. |
+| Configuration | L171-L253 | Configuring and operating Azure Backup: setup, policies, automation, diagnostics, monitoring, vaults, and workload-specific backups/restores (VMs, AKS, SQL, SAP, Files, Disks, Blobs, AD, Exchange). |
+| Integrations & Coding Patterns | L254-L310 | Automating Azure Backup via CLI, PowerShell, REST, and scripts for VMs, SQL, PostgreSQL, Files, Blobs, Disks, MARS/on-prem, plus policies, vaults, jobs, restores, and security/reporting integrations. |
+| Deployment | L311-L319 | Guides for deploying and managing Azure Backup Server (MABS): backup of local VMs, supported workload matrices for v3/v4, automating silent installs, and stopping protection for workloads. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -74,7 +74,6 @@ This skill requires **network access** to fetch documentation content:
 | Apply Azure Backup security best practices for data | https://learn.microsoft.com/en-us/azure/backup/azure-backup-data-protection-best-practices |
 | Back up and restore Hyper-V VMs with MABS | https://learn.microsoft.com/en-us/azure/backup/back-up-hyper-v-virtual-machines-mabs |
 | Recover Azure Backup Server data from any vault-registered server | https://learn.microsoft.com/en-us/azure/backup/backup-azure-alternate-dpm-server |
-| Configure DPM to back up Exchange to Azure safely | https://learn.microsoft.com/en-us/azure/backup/backup-azure-backup-exchange-server |
 | Prepare DPM server for Azure backups with TRIM considerations | https://learn.microsoft.com/en-us/azure/backup/backup-azure-dpm-introduction |
 | Apply Azure VM backup best practices with Azure Backup | https://learn.microsoft.com/en-us/azure/backup/backup-azure-vms-introduction |
 | Back up SQL Server Always On availability groups with Azure Backup | https://learn.microsoft.com/en-us/azure/backup/backup-sql-server-on-availability-groups |
@@ -142,7 +141,6 @@ This skill requires **network access** to fetch documentation content:
 | Back up and restore encrypted Azure VMs with Azure Backup | https://learn.microsoft.com/en-us/azure/backup/backup-azure-vms-encryption |
 | Understand encryption behavior in Azure Backup | https://learn.microsoft.com/en-us/azure/backup/backup-encryption |
 | Configure Azure RBAC roles for Recovery Services backups | https://learn.microsoft.com/en-us/azure/backup/backup-rbac-rs-vault |
-| Back up Confidential VMs with PMK or CMK using Azure Backup | https://learn.microsoft.com/en-us/azure/backup/confidential-vm-backup |
 | Restore Confidential VMs with PMK or CMK using Azure Backup | https://learn.microsoft.com/en-us/azure/backup/confidential-vm-restore |
 | Configure managed identities and RBAC for Backup vault | https://learn.microsoft.com/en-us/azure/backup/enable-managed-identity-backup-vault |
 | Configure managed identities and RBAC for Recovery Services vault | https://learn.microsoft.com/en-us/azure/backup/enable-managed-identity-recovery-services-vault |
@@ -185,6 +183,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure Azure Backup vault diagnostics via Azure Policy | https://learn.microsoft.com/en-us/azure/backup/azure-policy-configure-diagnostics |
 | Configure SQL Server instance snapshot backups on Azure VMs | https://learn.microsoft.com/en-us/azure/backup/back-up-sql-server-instance-snapshot |
 | Auto-enable VM backups using Azure Policy | https://learn.microsoft.com/en-us/azure/backup/backup-azure-auto-enable-backup |
+| Configure DPM to back up Exchange databases | https://learn.microsoft.com/en-us/azure/backup/backup-azure-backup-exchange-server |
 | Configure MARS offline seeding with Azure Import/Export | https://learn.microsoft.com/en-us/azure/backup/backup-azure-backup-import-export |
 | Configure DPM and MABS offline seeding with Import/Export | https://learn.microsoft.com/en-us/azure/backup/backup-azure-backup-server-import-export |
 | Configure Azure Backup DPM policies for SQL Server | https://learn.microsoft.com/en-us/azure/backup/backup-azure-backup-sql |
@@ -195,6 +194,7 @@ This skill requires **network access** to fetch documentation content:
 | Remove dependencies and delete Azure Recovery Services vaults | https://learn.microsoft.com/en-us/azure/backup/backup-azure-delete-vault |
 | Configure diagnostic events for Azure Backup vaults | https://learn.microsoft.com/en-us/azure/backup/backup-azure-diagnostic-events |
 | Use legacy Azure Backup diagnostics data model in Log Analytics | https://learn.microsoft.com/en-us/azure/backup/backup-azure-diagnostics-mode-data-model |
+| Configure Azure Backup Server for Exchange | https://learn.microsoft.com/en-us/azure/backup/backup-azure-exchange-mabs |
 | Configure Azure Files backups in Recovery Services vault | https://learn.microsoft.com/en-us/azure/backup/backup-azure-files |
 | Audit and enforce Azure Files backup using Azure Policy | https://learn.microsoft.com/en-us/azure/backup/backup-azure-files-policy-automation |
 | Configure and manage Azure Backup immutable vaults | https://learn.microsoft.com/en-us/azure/backup/backup-azure-immutable-vault-how-to-manage |
@@ -225,6 +225,7 @@ This skill requires **network access** to fetch documentation content:
 | Query Azure Backup logs using system functions | https://learn.microsoft.com/en-us/azure/backup/backup-reports-system-functions |
 | Use ARM and Bicep templates for Azure Backup | https://learn.microsoft.com/en-us/azure/backup/backup-rm-template-samples |
 | Configure operational and vaulted backups for Azure Blobs | https://learn.microsoft.com/en-us/azure/backup/blob-backup-configure-manage |
+| Configure Azure Backup for Confidential VMs with DES keys | https://learn.microsoft.com/en-us/azure/backup/confidential-vm-backup |
 | Configure Azure Backup reporting with Log Analytics and workbooks | https://learn.microsoft.com/en-us/azure/backup/configure-reports |
 | Create and delete Azure Backup vaults for newer workloads | https://learn.microsoft.com/en-us/azure/backup/create-manage-backup-vault |
 | Install and configure the MARS backup agent | https://learn.microsoft.com/en-us/azure/backup/install-mars-agent |
@@ -311,7 +312,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Back up Azure Local VMs with MABS | https://learn.microsoft.com/en-us/azure/backup/back-up-azure-stack-hyperconverged-infrastructure-virtual-machines |
-| Use MABS v4 protection matrix for supported workloads | https://learn.microsoft.com/en-us/azure/backup/backup-mabs-protection-matrix |
+| Use MABS v4 protection support matrix | https://learn.microsoft.com/en-us/azure/backup/backup-mabs-protection-matrix |
 | Automate silent installation of Azure Backup Server v4 | https://learn.microsoft.com/en-us/azure/backup/backup-mabs-unattended-install |
 | Stop protection for workloads in MABS | https://learn.microsoft.com/en-us/azure/backup/backup-server-stop-protection |
 | Use MABS v3 RTM protection matrix for supported workloads | https://learn.microsoft.com/en-us/azure/backup/microsoft-azure-backup-server-protection-v3 |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-28'
+generated_at: '2026-07-05'
 category_descriptions:
   decision-making: Guidance on choosing Azure regions and services (regional, zonal,
     multiregion, nonregional), using region pairs, and designing multi-region architectures
@@ -36,9 +36,9 @@ confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Monit
 - **Unclassified**: 60
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 4
-- **Unchanged**: 103
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 107
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-reliability/azure-reliability.csv`
 
@@ -54,20 +54,10 @@ confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Monit
 
 ## Changes
 
-### New Pages
-
-- [Azure Virtual Network Manager](https://learn.microsoft.com/en-us/azure/reliability/reliability-virtual-network-manager)
-
 ### Updated Pages
 
-- [Azure Key Vault Managed HSM](https://learn.microsoft.com/en-us/azure/reliability/reliability-managed-hsm)
-  - Updated: 2026-04-22T11:03:00.000Z → 2026-06-24T22:12:00.000Z
-- [Paired and nonpaired regions](https://learn.microsoft.com/en-us/azure/reliability/regions-paired)
-  - Updated: 2026-06-02T17:15:00.000Z → 2026-06-26T06:03:00.000Z
-- [What are Azure availability zones?](https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview)
-  - Updated: 2026-06-01T22:07:00.000Z → 2026-06-26T06:03:00.000Z
-- [Azure Monitor Logs](https://learn.microsoft.com/en-us/azure/reliability/reliability-monitor-logs)
-  - Updated: 2026-04-09T22:14:00.000Z → 2026-06-24T06:03:00.000Z
+- [What are Azure regions?](https://learn.microsoft.com/en-us/azure/reliability/regions-overview)
+  - Updated: 2026-06-02T17:15:00.000Z → 2026-06-29T11:02:00.000Z
 
 ## Classified Pages
 
@@ -180,7 +170,7 @@ confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Monit
 | [Paired and nonpaired regions](https://learn.microsoft.com/en-us/azure/reliability/regions-paired) | 0.20 | Azure region pairs overview describes how region pairs and nonpaired regions work conceptually; it does not suggest specific numeric thresholds, decision matrices, or configuration details that would qualify as expert knowledge under the defined sub-skill types. |
 | [Reliability and sovereignty in Azure](https://learn.microsoft.com/en-us/azure/reliability/concept-reliability-sovereignty) | 0.20 | Discusses sovereignty and reliability at a conceptual architecture level; lacks quantified decision matrices, limits, or specific configuration parameters. |
 | [What are Azure availability zones?](https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview) | 0.20 | Availability Zones overview explains what zones are and general design guidance for resilient solutions, but the summary does not indicate concrete limits, configuration parameter tables, or detailed decision matrices beyond generic architecture concepts. |
-| [What are Azure regions?](https://learn.microsoft.com/en-us/azure/reliability/regions-overview) | 0.20 | High-level conceptual overview of Azure regions and resiliency; no specific limits, configuration parameters, error codes, or decision matrices with quantified criteria. |
+| [What are Azure regions?](https://learn.microsoft.com/en-us/azure/reliability/regions-overview) | 0.20 | High-level conceptual overview of Azure regions and resiliency options; no specific numeric limits, configuration parameters, error codes, or decision matrices with quantified trade-offs. |
 | [Business continuity, high availability, and disaster recovery](https://learn.microsoft.com/en-us/azure/reliability/concept-business-continuity-high-availability-disaster-recovery) | 0.10 | Defines business continuity, high availability, and disaster recovery concepts; no concrete product-specific settings, limits, or troubleshooting content. |
 | [Failover and failback](https://learn.microsoft.com/en-us/azure/reliability/concept-failover-failback) | 0.10 | Overview of failover and failback concepts; no indication of product-specific limits, configs, or troubleshooting mappings. |
 | [Redundancy, replication, and backup](https://learn.microsoft.com/en-us/azure/reliability/concept-redundancy-replication-backup) | 0.10 | General introduction to redundancy, replication, and backup; high-level reliability concepts, not product-specific expert knowledge. |

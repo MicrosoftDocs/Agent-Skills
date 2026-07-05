@@ -35,8 +35,8 @@ confusable_not_for: Not for Azure Key Vault (use azure-key-vault), Azure Securit
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 19
+- **Updated Pages**: 0
+- **Unchanged**: 20
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-information-protection/azure-information-protection.csv`
 
@@ -51,11 +51,6 @@ confusable_not_for: Not for Azure Key Vault (use azure-key-vault), Azure Securit
 | *(Unclassified)* | 5 | 25.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [Overview](https://learn.microsoft.com/en-us/azure/information-protection/deploy-rms-connector)
-  - Updated: 2025-09-01T17:32:00.000Z → 2026-06-26T00:32:00.000Z
 
 ## Classified Pages
 

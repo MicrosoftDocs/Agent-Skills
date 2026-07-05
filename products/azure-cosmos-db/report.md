@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-28'
+generated_at: '2026-07-05'
 category_descriptions:
   integrations: 'SDK usage, integrations, and patterns for Cosmos DB (NoSQL, Mongo,
     Cassandra, Gremlin, PostgreSQL, DocumentDB): client code, bulk ops, change feed,
@@ -25,19 +25,19 @@ category_descriptions:
   deployment: Deploying and managing Cosmos DB (NoSQL, Mongo, Cassandra, PostgreSQL,
     Table, DocumentDB) with Bicep/ARM/Terraform, CI/CD, emulator, migrations, upgrades,
     and maintenance.
-  troubleshooting: Diagnosing and fixing Cosmos DB issues across APIs (Cassandra,
-    Gremlin, MongoDB, PostgreSQL, SQL), including errors, timeouts, performance, encryption/CMK,
-    connectivity, and SDK/client problems.
+  troubleshooting: Diagnosing and fixing Cosmos DB errors, performance, connectivity,
+    encryption, and SDK/API-specific issues (SQL, MongoDB, Cassandra, Gremlin, PostgreSQL,
+    DocumentDB) using logs, metrics, and KQL.
 skill_description: Expert knowledge for Azure Cosmos DB development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  using Cosmos DB NoSQL/Mongo/Cassandra APIs, change feed, multi-region RUs, backups,
-  or vector search, and other Azure Cosmos DB related development tasks. Not for Azure
-  Table Storage (use azure-table-storage), Azure SQL Database (use azure-sql-database),
+  using Cosmos DB NoSQL/Mongo/Cassandra APIs, change feed, multi-region/vector search,
+  or AI/RAG workloads, and other Azure Cosmos DB related development tasks. Not for
+  Azure Table Storage (use azure-table-storage), Azure SQL Database (use azure-sql-database),
   Azure SQL Managed Instance (use azure-sql-managed-instance), Azure Database for
   PostgreSQL (use azure-database-postgresql).
-use_when: Use when using Cosmos DB NoSQL/Mongo/Cassandra APIs, change feed, multi-region
-  RUs, backups, or vector search, and other Azure Cosmos DB related development tasks.
+use_when: Use when using Cosmos DB NoSQL/Mongo/Cassandra APIs, change feed, multi-region/vector
+  search, or AI/RAG workloads, and other Azure Cosmos DB related development tasks.
 confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure SQL
   Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance),
   Azure Database for PostgreSQL (use azure-database-postgresql).
@@ -46,16 +46,16 @@ confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure
 
 ## Summary
 
-- **Total Pages**: 836
-- **Fetched**: 836
+- **Total Pages**: 837
+- **Fetched**: 837
 - **Fetch Failed**: 0
-- **Classified**: 606
+- **Classified**: 607
 - **Unclassified**: 230
 
 ### Incremental Update
 - **New Pages**: 1
-- **Updated Pages**: 2
-- **Unchanged**: 833
+- **Updated Pages**: 1
+- **Unchanged**: 835
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cosmos-db/azure-cosmos-db.csv`
 
@@ -70,22 +70,20 @@ confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure
 | deployment | 27 | 3.2% |
 | integrations | 148 | 17.7% |
 | limits-quotas | 37 | 4.4% |
-| security | 69 | 8.3% |
-| troubleshooting | 50 | 6.0% |
+| security | 69 | 8.2% |
+| troubleshooting | 51 | 6.1% |
 | *(Unclassified)* | 230 | 27.5% |
 
 ## Changes
 
 ### New Pages
 
-- [Shared responsibility model](https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/shared-responsibility-model)
+- [Read query explain output](https://learn.microsoft.com/en-us/azure/documentdb/how-to-read-explain-output)
 
 ### Updated Pages
 
-- [Azure CLI](https://learn.microsoft.com/en-us/azure/cosmos-db/samples-cli)
-  - Updated: 2026-04-27T13:06:00Z → 2026-06-22T22:13:00Z
-- [Azure PowerShell](https://learn.microsoft.com/en-us/azure/cosmos-db/samples-powershell)
-  - Updated: 2026-04-27T13:06:00Z → 2026-06-22T22:13:00Z
+- [Semantic Reranker (preview)](https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/semantic-reranker)
+  - Updated: 2026-06-02T18:53:00.000Z → 2026-06-29T17:12:00.000Z
 
 ## Classified Pages
 
@@ -235,6 +233,7 @@ confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure
 | [Monitor with aggregated diagnostic logs](https://learn.microsoft.com/en-us/azure/cosmos-db/monitor-aggregated-logs) | troubleshooting | 0.78 | Explains CDBDataPlaneRequests5M table, 5/15-minute aggregation, and how to diagnose request issues; this is detailed, product-specific log schema and troubleshooting workflow. |
 | [Performance tips for Java SDK v4](https://learn.microsoft.com/en-us/azure/cosmos-db/performance-tips-java-sdk-v4) | configuration | 0.78 | Performance tips for a specific SDK generally enumerate client configuration options (connection mode, maxRetryAttemptsOnThrottledRequests, maxConnectionsPerHost, etc.) with recommended ranges, which are detailed configuration parameters. |
 | [Performance tips for Python SDK](https://learn.microsoft.com/en-us/azure/cosmos-db/performance-tips-python-sdk) | configuration | 0.78 | Performance tips for the Python SDK are likely to enumerate client configuration options (timeouts, connection pool sizes, retry settings) with recommended values, which are detailed configuration settings. |
+| [Read query explain output](https://learn.microsoft.com/en-us/azure/documentdb/how-to-read-explain-output) | troubleshooting | 0.78 | The page focuses on using the explain() command output to diagnose query performance issues in Azure DocumentDB. It describes how to interpret execution details (index usage, document scans, bottlenecks) and ties specific output fields to performance problems and their resolutions. This is product-specific, symptom → diagnosis → guidance content that an LLM is unlikely to know from training, fitting the troubleshooting category best. |
 | [Required outbound network rules](https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/network-rules) | security | 0.78 | A page about required outbound network rules and FQDNs for Azure Managed Instance for Apache Cassandra will list specific endpoints/FQDNs, ports, and possibly protocol requirements that must be allowed through firewalls. These are product-specific security/network configuration details that an LLM is unlikely to know from training and map directly to security configuration guidance. |
 | [System tables](https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/reference-metadata) | configuration | 0.78 | System tables metadata reference describes internal tables, columns, and meanings for distributed query execution, which are product-specific configuration/metadata details. |
 | [Tune connection configurations for Azure Cosmos DB .NET SDK v3](https://learn.microsoft.com/en-us/azure/cosmos-db/tune-connection-configurations-net-sdk-v3) | configuration | 0.78 | Page is about tuning connection configurations for the Azure Cosmos DB .NET SDK v3. These docs typically enumerate specific SDK configuration properties (e.g., connection mode, gateway/direct settings, connection limits, timeouts) with recommended values and behaviors unique to this SDK. That matches the configuration sub-skill: product-specific setting names and allowed values, rather than just conceptual guidance. |
@@ -839,7 +838,6 @@ confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure
 | [Release notes](https://learn.microsoft.com/en-us/azure/cosmos-db/emulator-release-notes) | 0.30 | Release notes are version history and bug fixes; while detailed, they are not a stable skill-type category like configuration, limits, or troubleshooting for the agent. |
 | [Schema conversion using Visual Studio Code extension](https://learn.microsoft.com/en-us/azure/documentdb/cassandra-how-to-schema-conversion-vs-code) | 0.30 | Appears to be a how-to/tutorial for using the Schema Migrator VS Code extension to convert Cassandra schemas to Azure DocumentDB. The summary does not indicate detailed configuration parameter tables, limits, error-code-based troubleshooting, or product-specific best-practice gotchas; it mainly describes workflow and capabilities, which are conceptual and procedural rather than expert reference content. |
 | [Security overview](https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/security) | 0.30 | Security overview and generic best practices; summary doesn’t indicate specific RBAC roles, config parameters, or compliance settings. |
-| [Semantic Reranker (preview)](https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/semantic-reranker) | 0.30 | Summary indicates a feature overview of Semantic Reranker with conceptual description of how it reorders query results; no evidence of numeric limits, configuration tables, error codes, or detailed troubleshooting/decision matrices. |
 | [Semantic cache](https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/semantic-cache) | 0.30 | Explains semantic cache conceptually; summary doesn’t show concrete Cosmos DB configuration parameters, limits, or error mappings. |
 | [Supported extensions](https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/reference-extensions) | 0.30 | Extensions page is a capability catalog; summary doesn’t show detailed config tables, limits, or troubleshooting content. |
 | [Tokens](https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/tokens) | 0.30 | Explains LLM tokens conceptually; generic AI knowledge not specific to Cosmos DB configuration or behavior. |
@@ -932,3 +930,4 @@ confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure
 | [Whitepapers](https://learn.microsoft.com/en-us/azure/cosmos-db/whitepapers) | 0.10 | Index of conceptual whitepapers; navigation/collection page without direct technical details itself. |
 | [Choose your model](https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/) | 0.05 | Landing documentation page for Cosmos DB MongoDB API; primarily navigational/overview content. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/cosmos-db/cassandra/faq) | - | FAQ page appears to be high-level guidance and product positioning (Cosmos DB for Cassandra vs other options) without clear evidence of numeric limits, configuration tables, error-code mappings, or other detailed expert-only content. |
+| [Semantic Reranker (preview)](https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/semantic-reranker) | - | From the summary, the page describes what Semantic Reranker is and how it improves search relevancy with minimal code changes, but there's no indication of specific limits, configuration tables, error codes, or detailed product-specific parameters. It appears to be an overview/feature description rather than expert configuration, limits, or troubleshooting content. |

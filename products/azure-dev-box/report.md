@@ -1,14 +1,14 @@
 ---
-generated_at: '2026-05-17'
+generated_at: '2026-07-05'
 category_descriptions:
   best-practices: Guidance on building efficient Dev Box images, including structuring
     image definitions and pre-warming Visual Studio caches to speed up developer environments.
   decision-making: Guidance on planning Dev Box deployments (networking, images, capacity)
     and deciding or preparing to move from Dev Box to Windows 365, including design
     and transition considerations.
-  configuration: 'Configuring Dev Box infrastructure: networks, images, catalogs,
-    policies, schedules (stop/hibernate/auto-delete), monitoring, and ARM/template-based
-    provisioning and management.'
+  configuration: 'Configuring Dev Box infrastructure: networking, images, catalogs,
+    policies, schedules (stop/hibernate/autodelete), pools/projects/dev centers, and
+    monitoring/log schemas.'
   security: 'Securing Dev Box access and sessions: RBAC roles, guest access, SSO,
     API auth, Key Vault/service principals, Intune Conditional Access and Endpoint
     Privilege Management.'
@@ -24,14 +24,13 @@ category_descriptions:
     setup, authentication, and remote development workflow configuration.
 skill_description: Expert knowledge for Azure Dev Box development including troubleshooting,
   best practices, decision making, limits & quotas, security, configuration, integrations
-  & coding patterns, and deployment. Use when designing Dev Box images, catalogs,
-  policies, schedules, RBAC/SSO access, or VS Code dev tunnel workflows, and other
-  Azure Dev Box related development tasks. Not for Azure DevTest Labs (use azure-devtest-labs),
-  Azure Virtual Machines (use azure-virtual-machines), Azure Lab Services (use azure-lab-services),
+  & coding patterns, and deployment. Use when designing Dev Box images, catalogs/pools,
+  RBAC/SSO access, VS dev tunnels, or region moves, and other Azure Dev Box related
+  development tasks. Not for Azure DevTest Labs (use azure-devtest-labs), Azure Virtual
+  Machines (use azure-virtual-machines), Azure Lab Services (use azure-lab-services),
   Azure Virtual Desktop (use azure-virtual-desktop).
-use_when: Use when designing Dev Box images, catalogs, policies, schedules, RBAC/SSO
-  access, or VS Code dev tunnel workflows, and other Azure Dev Box related development
-  tasks.
+use_when: Use when designing Dev Box images, catalogs/pools, RBAC/SSO access, VS dev
+  tunnels, or region moves, and other Azure Dev Box related development tasks.
 confusable_not_for: Not for Azure DevTest Labs (use azure-devtest-labs), Azure Virtual
   Machines (use azure-virtual-machines), Azure Lab Services (use azure-lab-services),
   Azure Virtual Desktop (use azure-virtual-desktop).
@@ -48,8 +47,8 @@ confusable_not_for: Not for Azure DevTest Labs (use azure-devtest-labs), Azure V
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 65
+- **Updated Pages**: 1
+- **Unchanged**: 64
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-dev-box/azure-dev-box.csv`
 
@@ -69,11 +68,16 @@ confusable_not_for: Not for Azure DevTest Labs (use azure-devtest-labs), Azure V
 
 ## Changes
 
+### Updated Pages
+
+- [Imagedefinition.yaml and task.yaml reference](https://learn.microsoft.com/en-us/azure/dev-box/reference-dev-box-customizations)
+  - Updated: 2025-08-08T22:10:00.000Z → 2026-07-01T05:18:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
-| [Imagedefinition.yaml and task.yaml reference](https://learn.microsoft.com/en-us/azure/dev-box/reference-dev-box-customizations) | configuration | 0.90 | Reference article with detailed schema, required attributes, built-in tasks, and parameters—core configuration knowledge for Dev Box customizations. |
+| [Imagedefinition.yaml and task.yaml reference](https://learn.microsoft.com/en-us/azure/dev-box/reference-dev-box-customizations) | configuration | 0.86 | This is a schema reference for Microsoft Dev Box customization YAML files. It defines specific configuration parameters, their allowed values, and structure for imagedefinition.yaml and task.yaml, including built-in GitClone, PowerShell, and WinGet tasks. These product-specific config details (field names, types, and usage) are expert knowledge not generally known to LLMs and fit the configuration sub-skill. |
 | [Troubleshoot custom image validation](https://learn.microsoft.com/en-us/azure/dev-box/how-to-troubleshoot-custom-image-validation) | troubleshooting | 0.86 | Focused on diagnosing Dev Box custom image validation failures. Likely includes specific validation error messages, causes tied to Dev Box architecture differences vs Azure VMs, and concrete resolution steps, matching symptom → cause → solution troubleshooting guidance. |
 | [Automatically repair connectivity issues](https://learn.microsoft.com/en-us/azure/dev-box/how-to-troubleshoot-repair-dev-box) | troubleshooting | 0.83 | Symptom-based guide for Remote Desktop connectivity issues using a specific Dev Box troubleshooting tool; likely includes diagnostic checks and resolution mappings unique to Dev Box. |
 | [Monitoring Microsoft DevCenter data reference](https://learn.microsoft.com/en-us/azure/dev-box/monitor-dev-box-reference) | configuration | 0.82 | Provides schema reference for Dev Box diagnostic logs and metrics, including property names and meanings; product-specific monitoring configuration/data model. |

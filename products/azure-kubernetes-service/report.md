@@ -1,15 +1,15 @@
 ---
-generated_at: '2026-06-28'
+generated_at: '2026-07-05'
 category_descriptions:
-  security: 'Securing AKS clusters: identity/RBAC, Entra auth, workload identity,
-    network and API hardening, encryption, CIS/PCI compliance, Azure Policy, node
-    access, and secure image/runtime controls.'
+  security: 'Securing AKS clusters: identity/RBAC, network and API protection, encryption,
+    CIS hardening, PCI controls, policies, workload identity, node access, and secure
+    integrations.'
   architecture-patterns: Designing AKS architectures and patterns for HA/DR, upgrades,
     networking/ingress, PCI workloads, multi-region, GPU and node pool strategies,
     and multi-cluster/Fleet rollout control.
-  configuration: Configuring AKS clusters, networking, storage, security, autoscaling,
-    add-ons, databases, fleets, and cost/maintenance settings, plus detailed setups
-    for ingress, GPUs, encryption, and monitoring.
+  configuration: 'Configuring AKS clusters and workloads: networking, ingress, storage,
+    GPUs, autoscaling, cost, security, maintenance, fleet/multi-cluster, and add-ons
+    like Istio, Dapr, Airflow, Kafka, MongoDB.'
   troubleshooting: Diagnosing and fixing AKS cluster, networking, DNS, GPU, encryption,
     logging, upgrade, Windows node, and Fleet Manager issues using logs, metrics,
     events, and built-in tools.
@@ -22,41 +22,41 @@ category_descriptions:
   decision-making: 'Guidance for planning and decision-making on AKS: migrations,
     networking, upgrades, pricing/cost, node/VM choices, OS and architecture options,
     compliance, and comparisons with other platforms.'
-  limits-quotas: 'AKS limits, quotas, and lifecycle rules: cluster scale, node/pod
-    capacity, networking/egress, load balancers, Istio performance, versions, previews,
-    and Fleet Manager constraints.'
-  best-practices: Best practices for AKS reliability, performance, cost, security,
-    networking, storage, GPUs, compliance, and upgrades, including tuning, monitoring,
-    isolation, and workload/resource management.
+  limits-quotas: AKS capacity, limits, quotas, version lifecycles, performance constraints,
+    and scaling behaviors for clusters, node pools, networking, Istio, KEDA, Fleet,
+    and regional VM SKUs.
+  best-practices: 'AKS operational best practices: performance, scaling, cost, security,
+    networking, storage, GPUs, compliance, resiliency testing, upgrades, and reliability
+    patterns for clusters and workloads.'
 skill_description: Expert knowledge for Azure Kubernetes Service (AKS) development
   including troubleshooting, best practices, decision making, architecture & design
   patterns, limits & quotas, security, configuration, integrations & coding patterns,
-  and deployment. Use when managing AKS networking/ingress, Entra/RBAC auth, GPU pools,
-  Fleet/multi-cluster, or AI/ML/Wasm workloads, and other Azure Kubernetes Service
-  (AKS) related development tasks. Not for Azure Container Apps (use azure-container-apps),
-  Azure Container Instances (use azure-container-instances), Azure Red Hat OpenShift
-  (use azure-redhat-openshift), Azure Virtual Machines (use azure-virtual-machines).
-use_when: Use when managing AKS networking/ingress, Entra/RBAC auth, GPU pools, Fleet/multi-cluster,
-  or AI/ML/Wasm workloads, and other Azure Kubernetes Service (AKS) related development
-  tasks.
+  and deployment. Use when managing AKS networking/ingress, GPU pools, Fleet/multi-cluster,
+  Istio/KEDA, or AI/ML workloads, and other Azure Kubernetes Service (AKS) related
+  development tasks. Not for Azure Container Apps (use azure-container-apps), Azure
+  Container Instances (use azure-container-instances), Azure Red Hat OpenShift (use
+  azure-redhat-openshift).
+use_when: Use when managing AKS networking/ingress, GPU pools, Fleet/multi-cluster,
+  Istio/KEDA, or AI/ML workloads, and other Azure Kubernetes Service (AKS) related
+  development tasks.
 confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azure
   Container Instances (use azure-container-instances), Azure Red Hat OpenShift (use
-  azure-redhat-openshift), Azure Virtual Machines (use azure-virtual-machines).
+  azure-redhat-openshift).
 ---
 # Azure Kubernetes Service (AKS) Crawl Report
 
 ## Summary
 
-- **Total Pages**: 614
-- **Fetched**: 614
+- **Total Pages**: 615
+- **Fetched**: 615
 - **Fetch Failed**: 0
-- **Classified**: 441
+- **Classified**: 442
 - **Unclassified**: 173
 
 ### Incremental Update
 - **New Pages**: 1
-- **Updated Pages**: 23
-- **Unchanged**: 590
+- **Updated Pages**: 21
+- **Unchanged**: 593
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-kubernetes-service/azure-kubernetes-service.csv`
 
@@ -65,65 +65,65 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 19 | 3.1% |
-| best-practices | 41 | 6.7% |
-| configuration | 142 | 23.1% |
+| best-practices | 42 | 6.8% |
+| configuration | 143 | 23.3% |
 | decision-making | 46 | 7.5% |
 | deployment | 51 | 8.3% |
-| integrations | 21 | 3.4% |
-| limits-quotas | 22 | 3.6% |
-| security | 79 | 12.9% |
+| integrations | 20 | 3.3% |
+| limits-quotas | 23 | 3.7% |
+| security | 78 | 12.7% |
 | troubleshooting | 20 | 3.3% |
-| *(Unclassified)* | 173 | 28.2% |
+| *(Unclassified)* | 173 | 28.1% |
 
 ## Changes
 
 ### New Pages
 
-- [Capacity and cost planning](https://learn.microsoft.com/en-us/azure/aks/upgrade-capacity-cost-planning)
+- [AKS desktop Kubernetes resource view](https://learn.microsoft.com/en-us/azure/aks/aks-desktop-cluster-view)
 
 ### Updated Pages
 
-- [Upgrade options and recommendations](https://learn.microsoft.com/en-us/azure/aks/upgrade-options)
-  - Updated: 2026-06-11T06:21:00.000Z → 2026-06-24T22:08:00.000Z
-- [Automatically upgrade an AKS cluster](https://learn.microsoft.com/en-us/azure/aks/auto-upgrade-cluster)
-  - Updated: 2026-03-09T08:00:00.000Z → 2026-06-27T06:05:00.000Z
-- [Automatically upgrade node OS images](https://learn.microsoft.com/en-us/azure/aks/auto-upgrade-node-os-image)
-  - Updated: 2025-11-10T18:12:00.000Z → 2026-06-27T06:05:00.000Z
-- [Compare AKS Standard and AKS Automatic](https://learn.microsoft.com/en-us/azure/aks/intro-aks-automatic)
-  - Updated: 2026-06-02T19:00:00.000Z → 2026-06-23T08:00:00.000Z
-- [Zone resiliency recommendations](https://learn.microsoft.com/en-us/azure/aks/reliability-zone-resiliency-recommendations)
-  - Updated: 2026-01-26T18:18:00.000Z → 2026-06-22T22:07:00.000Z
-- [Istio CNI](https://learn.microsoft.com/en-us/azure/aks/istio-cni)
-  - Updated: 2026-05-07T17:10:00.000Z → 2026-06-25T06:36:00.000Z
-- [Deploy ingress gateways](https://learn.microsoft.com/en-us/azure/aks/istio-deploy-ingress)
-  - Updated: 2026-01-28T23:09:00.000Z → 2026-06-25T06:36:00.000Z
-- [Deploy egress gateways](https://learn.microsoft.com/en-us/azure/aks/istio-deploy-egress)
-  - Updated: 2025-05-29T22:02:00.000Z → 2026-06-25T06:36:00.000Z
-- [Use instance-level public IP addresses](https://learn.microsoft.com/en-us/azure/aks/use-node-public-ips)
-  - Updated: 2024-10-14T08:00:00.000Z → 2026-06-22T11:03:00.000Z
-- [Use Azure CNI Powered by Cilium](https://learn.microsoft.com/en-us/azure/aks/azure-cni-powered-by-cilium)
-  - Updated: 2026-05-14T06:10:00.000Z → 2026-06-27T06:05:00.000Z
-- [Access and identity overview](https://learn.microsoft.com/en-us/azure/aks/concepts-identity)
-  - Updated: 2026-04-23T06:10:00.000Z → 2026-06-25T06:36:00.000Z
-- [Workload identity overview](https://learn.microsoft.com/en-us/azure/aks/workload-identity-overview)
-  - Updated: 2026-06-12T06:08:00.000Z → 2026-06-27T06:05:00.000Z
-- [Use KMS etcd encryption (legacy)](https://learn.microsoft.com/en-us/azure/aks/use-kms-etcd-encryption)
-  - Updated: 2026-01-20T23:08:00.000Z → 2026-06-24T11:03:00.000Z
-- [Confidential VM nodes](https://learn.microsoft.com/en-us/azure/aks/use-cvm)
-  - Updated: 2026-06-02T19:00:00.000Z → 2026-06-25T22:11:00.000Z
-- [Vulnerability management overview](https://learn.microsoft.com/en-us/azure/aks/concepts-vulnerability-management)
-  - Updated: 2025-09-11T05:03:00.000Z → 2026-06-22T22:07:00.000Z
-- [Small and large language models](https://learn.microsoft.com/en-us/azure/aks/concepts-ai-ml-language-models)
-  - Updated: 2025-07-21T17:11:00.000Z → 2026-06-25T06:36:00.000Z
-- [Use NVIDIA GPUs](https://learn.microsoft.com/en-us/azure/aks/use-nvidia-gpu)
-  - Updated: 2026-01-28T18:10:00.000Z → 2026-06-26T22:09:00.000Z
-- [GPU best practices](https://learn.microsoft.com/en-us/azure/aks/best-practices-gpu)
-  - Updated: 2025-10-08T15:47:00.000Z → 2026-06-25T06:36:00.000Z
-- [Optimize AKS usage and costs](https://learn.microsoft.com/en-us/azure/aks/optimize-aks-costs)
-  - Updated: 2025-02-27T23:00:00.000Z → 2026-06-26T06:02:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/aks/node-auto-provisioning)
-  - Updated: 2026-04-14T06:03:00.000Z → 2026-06-25T06:36:00.000Z
-- *...and 3 more*
+- [Node auto-repair](https://learn.microsoft.com/en-us/azure/aks/node-auto-repair)
+  - Updated: 2025-04-02T17:01:00.000Z → 2026-07-02T06:09:00.000Z
+- [2 - Create container registry](https://learn.microsoft.com/en-us/azure/aks/tutorial-kubernetes-prepare-acr)
+  - Updated: 2026-04-07T08:00:00.000Z → 2026-07-01T22:04:00.000Z
+- [3 - Create Kubernetes cluster](https://learn.microsoft.com/en-us/azure/aks/tutorial-kubernetes-deploy-cluster)
+  - Updated: 2025-03-12T22:00:00.000Z → 2026-07-01T22:04:00.000Z
+- [4 - Deploy Azure Container Storage](https://learn.microsoft.com/en-us/azure/aks/tutorial-kubernetes-deploy-azure-container-storage)
+  - Updated: 2026-02-18T18:36:00.000Z → 2026-07-01T22:04:00.000Z
+- [5 - Deploy containerized application](https://learn.microsoft.com/en-us/azure/aks/tutorial-kubernetes-deploy-application)
+  - Updated: 2024-11-08T22:59:00.000Z → 2026-07-01T22:04:00.000Z
+- [6 - Use PaaS services](https://learn.microsoft.com/en-us/azure/aks/tutorial-kubernetes-paas-services)
+  - Updated: 2024-08-01T20:29:00.000Z → 2026-07-01T22:04:00.000Z
+- [7 - Scale application](https://learn.microsoft.com/en-us/azure/aks/tutorial-kubernetes-scale)
+  - Updated: 2024-08-01T20:29:00.000Z → 2026-07-01T22:04:00.000Z
+- [Deploy a cluster with a fully managed resource group](https://learn.microsoft.com/en-us/azure/aks/node-resource-group-lockdown)
+  - Updated: 2025-11-05T05:30:00.000Z → 2026-07-01T06:03:00.000Z
+- [Kubernetes Gateway API with application routing](https://learn.microsoft.com/en-us/azure/aks/app-routing-gateway-api)
+  - Updated: 2026-06-16T22:11:00.000Z → 2026-07-01T22:04:00.000Z
+- [Create an OIDC Issuer for your cluster](https://learn.microsoft.com/en-us/azure/aks/use-oidc-issuer)
+  - Updated: 2026-03-02T18:10:00.000Z → 2026-07-01T06:03:00.000Z
+- [DNS Resolution](https://learn.microsoft.com/en-us/azure/aks/dns-concepts)
+  - Updated: 2025-11-18T19:02:00.000Z → 2026-07-01T06:03:00.000Z
+- [Use API Server VNet integration](https://learn.microsoft.com/en-us/azure/aks/api-server-vnet-integration)
+  - Updated: 2026-04-15T08:00:00.000Z → 2026-07-01T06:03:00.000Z
+- [FAQ](https://learn.microsoft.com/en-us/azure/aks/agentic-cli-for-aks-faq)
+  - Updated: 2026-02-18T06:03:00.000Z → 2026-07-03T06:03:00.000Z
+- [Enforce compliance with Azure Policy](https://learn.microsoft.com/en-us/azure/aks/use-azure-policy)
+  - Updated: 2024-08-01T20:29:00.000Z → 2026-07-01T17:07:00.000Z
+- [Remove vulnerable images with Image Cleaner](https://learn.microsoft.com/en-us/azure/aks/image-cleaner)
+  - Updated: 2024-12-05T23:00:00.000Z → 2026-07-01T06:03:00.000Z
+- [Set up NVIDIA GPU Operator](https://learn.microsoft.com/en-us/azure/aks/nvidia-gpu-operator)
+  - Updated: 2026-05-05T17:14:00.000Z → 2026-06-29T17:06:00.000Z
+- [Vertical Pod Autoscaler overview](https://learn.microsoft.com/en-us/azure/aks/vertical-pod-autoscaler)
+  - Updated: 2026-03-24T11:03:00.000Z → 2026-07-01T06:03:00.000Z
+- [About Kubernetes Event-driven Autoscaler (KEDA)](https://learn.microsoft.com/en-us/azure/aks/keda-about)
+  - Updated: 2025-05-23T17:02:00.000Z → 2026-07-01T06:03:00.000Z
+- [FAQ](https://learn.microsoft.com/en-us/azure/kubernetes-fleet/faq)
+  - Updated: 2026-06-23T06:06:00.000Z → 2026-06-29T08:00:00.000Z
+- [Overview](https://learn.microsoft.com/en-us/azure/aks/stateful-workloads-overview)
+  - Updated: 2025-07-22T05:03:00.000Z → 2026-07-02T11:03:00.000Z
+- *...and 1 more*
 
 ## Classified Pages
 
@@ -167,7 +167,6 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | [Define API server authorized IP ranges](https://learn.microsoft.com/en-us/azure/aks/api-server-authorized-ip-ranges) | security | 0.80 | How-to for configuring authorized IP ranges; includes specific CLI/ARM parameters and constraints for AKS control plane endpoints. |
 | [Deploy an AI model using the Azure CLI](https://learn.microsoft.com/en-us/azure/aks/ai-toolchain-operator) | deployment | 0.80 | Shows how to enable and use the KAITO add-on with AKS-specific CRDs and configuration fields for model deployment, which is highly product-specific. |
 | [Deploy with default policy](https://learn.microsoft.com/en-us/azure/aks/deploy-confidential-containers-default-policy) | deployment | 0.80 | Step-by-step Azure CLI deployment of AKS with Confidential Containers and security policy; such guides include specific CLI flags, required versions, and runtime settings that are product-specific deployment details. |
-| [Enforce compliance with Azure Policy](https://learn.microsoft.com/en-us/azure/aks/use-azure-policy) | security | 0.80 | Describes installing the Azure Policy add-on and applying AKS-specific built-in policy definitions/initiatives; includes product-specific security configuration patterns. |
 | [Fine-tune an AI model for inferencing](https://learn.microsoft.com/en-us/azure/aks/ai-toolchain-operator-fine-tune) | deployment | 0.80 | Details KAITO version requirements, CRD fields, and workflow for fine-tuning and deploying models on AKS, which is unique operational knowledge. |
 | [For small to medium workloads](https://learn.microsoft.com/en-us/azure/aks/best-practices-performance-scale) | best-practices | 0.80 | Best-practices article with AKS-specific performance and scaling guidance; expected to include concrete recommendations (e.g., node sizes, pod density, autoscaler settings) that are product-specific. |
 | [GPU best practices](https://learn.microsoft.com/en-us/azure/aks/best-practices-gpu) | best-practices | 0.80 | The article explicitly states it outlines best practices for managing GPU-enabled nodes, validating configurations, and reducing interruptions, and it is specific to AKS (including guidance around AKS Automatic). This aligns directly with the best-practices category as product-specific operational recommendations rather than generic GPU advice. |
@@ -187,7 +186,6 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | [Requirement mapping matrix](https://learn.microsoft.com/en-us/azure/aks/pci-requirement-mapping-matrix) | decision-making | 0.80 | Requirement mapping matrix that links AKS controls/docs to PCI requirements, aiding compliance decision-making and gap analysis. |
 | [Secure access to Azure OpenAI from Azure Kubernetes Service (AKS)](https://learn.microsoft.com/en-us/azure/aks/open-ai-secure-access-quickstart) | security | 0.80 | Includes concrete Microsoft Entra Workload ID and managed identity configuration for securing OpenAI access from AKS, with specific roles and scopes. |
 | [Security controls by Azure Policy](https://learn.microsoft.com/en-us/azure/aks/security-controls-policy) | security | 0.80 | Lists specific built-in policy definitions and compliance controls; includes policy names and mappings that are product-specific security configuration artifacts. |
-| [Set up NVIDIA GPU Operator](https://learn.microsoft.com/en-us/azure/aks/nvidia-gpu-operator) | integrations | 0.80 | Describes installing and using NVIDIA GPU Operator on AKS; likely includes Helm chart values, operator configuration parameters, required AKS settings, and how to disable overlapping AKS GPU features. These are concrete integration and configuration patterns specific to AKS + NVIDIA GPU Operator. |
 | [Troubleshoot CoreDNS](https://learn.microsoft.com/en-us/azure/aks/coredns-troubleshoot) | troubleshooting | 0.80 | Explicit troubleshooting article; will map DNS symptoms to causes and fixes, with AKS-specific commands and log locations. |
 | [Troubleshoot SNAT issues](https://learn.microsoft.com/en-us/azure/aks/troubleshoot-source-network-address-translation) | troubleshooting | 0.80 | Troubleshooting guide for SNAT exhaustion with Standard Load Balancer; includes symptom → cause → mitigation mappings and AKS-specific configuration options. |
 | [Trusted Access for Azure services](https://learn.microsoft.com/en-us/azure/aks/trusted-access-feature) | security | 0.80 | Details how to grant Azure services secure access to the AKS API using Trusted Access, including use of system-assigned managed identities and AKS-specific security settings. |
@@ -201,13 +199,13 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | [Configure NodePool custom resources](https://learn.microsoft.com/en-us/azure/aks/node-auto-provisioning-node-pools) | configuration | 0.78 | Configuration article for AKS NAP node pools that includes product-specific settings such as SKU selectors, resource limits, and priority weights. These are concrete configuration parameters and examples unique to AKS NAP behavior, which an LLM is unlikely to know in detail from training. |
 | [Configure a Standard Load Balancer](https://learn.microsoft.com/en-us/azure/aks/configure-load-balancer-standard) | configuration | 0.78 | Covers changing inbound pool type, scaling outbound IPs, and configuring allocated outbound ports; includes specific parameters and constraints. |
 | [Configure cross-tenant workload identity](https://learn.microsoft.com/en-us/azure/aks/workload-identity-cross-tenant) | security | 0.78 | Shows how to access resources in another tenant using AKS workload identity with specific cross-tenant configuration steps. |
-| [Create an OIDC Issuer for your cluster](https://learn.microsoft.com/en-us/azure/aks/use-oidc-issuer) | security | 0.78 | The article describes concrete, product-specific security configuration for enabling an OIDC issuer on AKS and creating an OIDC provider. It includes AKS- and Entra-specific settings, issuer URL formats, and stepwise configuration details that go beyond generic OIDC knowledge, fitting the security sub-skill focused on authentication and identity configuration. |
 | [Cryptography and key management](https://learn.microsoft.com/en-us/azure/aks/pci-cryptography-key-management) | security | 0.78 | Cryptography and key management guidance tailored to AKS and PCI DSS, including control placement and service usage patterns. |
 | [Custom node configuration](https://learn.microsoft.com/en-us/azure/aks/custom-node-configuration) | configuration | 0.78 | Page is about customizing OS and kubelet parameters for AKS node pools. These are product-specific configuration knobs (kubelet flags, OS settings) that go beyond generic Kubernetes knowledge and are tied to how AKS exposes them. This fits configuration: concrete settings and how to apply them, not just conceptual guidance. |
+| [Deploy a cluster with a fully managed resource group](https://learn.microsoft.com/en-us/azure/aks/node-resource-group-lockdown) | security | 0.78 | The page describes how node resource group lockdown works in AKS Automatic and AKS Standard, and how to configure different lockdown levels. This involves product-specific security/authorization behavior (deny assignments, what is blocked, how AKS manages resources) that goes beyond generic concepts and is unique to AKS. It focuses on controlling changes to infrastructure resources via Azure RBAC/deny assignments rather than general usage, fitting the security sub-skill. |
 | [Deployment and cluster reliability best practices](https://learn.microsoft.com/en-us/azure/aks/best-practices-app-cluster-reliability) | best-practices | 0.78 | The page is explicitly a best-practices guide for AKS deployment and cluster reliability. It contains product-specific recommendations (for AKS Automatic and AKS Standard), concrete guidance on how to configure and operate clusters for reliability, and likely includes specific configuration patterns and gotchas unique to AKS rather than generic Kubernetes theory. |
 | [Disable local cluster admin accounts](https://learn.microsoft.com/en-us/azure/aks/local-accounts) | security | 0.78 | Operational, product-specific security guidance for enabling/disabling non-auditable local accounts and re-enabling them; includes AKS-specific commands/flags and behavior not obvious from general Kubernetes knowledge. |
 | [Enhanced MFA implementation](https://learn.microsoft.com/en-us/azure/aks/pci-enhanced-mfa-implementation) | security | 0.78 | PCI-focused MFA implementation details for AKS admin and CDE access, with AKS/Azure-specific security configuration patterns. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/aks/faq) | limits-quotas | 0.78 | The AKS FAQ typically includes concrete platform constraints such as maximum node counts per cluster, node pool limits, supported Kubernetes version windows, upgrade/maintenance constraints, and other numeric or tier-specific limits that are not obvious from general knowledge. These are expressed as specific values and conditions, matching the limits-quotas criteria. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/aks/faq) | limits-quotas | 0.78 | The AKS FAQ includes multiple product-specific numeric limits and constraints (for example, maximum nodes per cluster, pod density per node, supported Kubernetes versions and retirement timelines, regional availability constraints, and other hard service limits). These are exact values and behaviors that change over time and aren't reliably known from generic training data, fitting the limits-quotas sub-skill best. While the page also has general Q&A, the presence of concrete service limits and constraints qualifies it as containing expert knowledge. |
 | [Network policy best practices](https://learn.microsoft.com/en-us/azure/aks/network-policy-best-practices) | best-practices | 0.78 | Best-practices article specific to AKS network policies with concrete DO/DON'T guidance and AKS-specific patterns beyond generic Kubernetes concepts. |
 | [Network security](https://learn.microsoft.com/en-us/azure/aks/pci-network) | security | 0.78 | Network security guidance for AKS under PCI DSS with specific topology (hub-spoke) and segmentation considerations; security-focused and AKS-specific. |
 | [Resource management best practices](https://learn.microsoft.com/en-us/azure/aks/developer-best-practices-resource-management) | best-practices | 0.78 | Developer best practices for AKS resource management with concrete recommendations on deployment patterns and resource usage specific to AKS. |
@@ -330,6 +328,7 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | [Create a Load Balancer Service](https://learn.microsoft.com/en-us/azure/aks/load-balancer-standard) | configuration | 0.70 | Describes integration of Standard Load Balancer with AKS; includes AKS-specific behavior and configuration options. |
 | [Create a network isolated cluster](https://learn.microsoft.com/en-us/azure/aks/network-isolated) | configuration | 0.70 | How-to for configuring outbound and inbound restrictions; such pages typically include specific NSG rules, ports, service tags, and AKS-specific settings, which are expert configuration details. |
 | [Create a private cluster](https://learn.microsoft.com/en-us/azure/aks/private-clusters) | configuration | 0.70 | Private AKS cluster creation involves product-specific network and API server configuration (e.g., private link, VNet integration, required parameters for CLI/Terraform). These are concrete configuration patterns and settings unique to AKS private clusters rather than generic Kubernetes knowledge, so it best fits the configuration sub-skill. |
+| [Create an OIDC Issuer for your cluster](https://learn.microsoft.com/en-us/azure/aks/use-oidc-issuer) | security | 0.70 | Page is focused on configuring the AKS OpenID Connect issuer, including product-specific security configuration steps and parameters (for AKS Automatic vs AKS Standard, version and configuration requirements). This is detailed security configuration guidance rather than a generic overview, matching the security sub-skill type. |
 | [Create an internal load balancer](https://learn.microsoft.com/en-us/azure/aks/internal-lb) | configuration | 0.70 | How-to for internal load balancers with AKS, including annotations and network requirements; these are concrete configuration details. |
 | [Create and configure Managed Fleet Namespaces](https://learn.microsoft.com/en-us/azure/kubernetes-fleet/howto-managed-namespaces) | configuration | 0.70 | Covers defining resource quotas, network policies, and delegated access via Managed Fleet Namespaces across clusters. This implies specific configuration objects, fields, and possibly quota definitions unique to Fleet Manager, making it primarily a configuration-focused article. |
 | [Create containerized app with Draft](https://learn.microsoft.com/en-us/azure/aks/draft) | deployment | 0.70 | Explains how to install and use the Draft extension on AKS, including generating Dockerfiles, manifests, and GitHub Actions workflows; AKS-specific tooling integration. |
@@ -343,7 +342,6 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | [Deploy Kubernetes applications with Azure CLI](https://learn.microsoft.com/en-us/azure/aks/deploy-application-az-cli) | deployment | 0.70 | Provides Azure CLI commands and flow to deploy Kubernetes applications from Azure Marketplace to AKS; AKS-specific deployment procedure. |
 | [Deploy MongoDB cluster](https://learn.microsoft.com/en-us/azure/aks/deploy-mongodb-cluster) | configuration | 0.70 | Deployment configuration for MongoDB on AKS; likely includes YAML manifests, operator settings, and MongoDB-specific parameters unique to this solution. |
 | [Deploy SpinKube to run serverless Wasm workloads](https://learn.microsoft.com/en-us/azure/aks/deploy-spinkube) | deployment | 0.70 | Shows how to deploy the SpinKube stack on AKS with product-specific configuration for running serverless WebAssembly workloads. |
-| [Deploy a cluster with a fully managed resource group](https://learn.microsoft.com/en-us/azure/aks/node-resource-group-lockdown) | security | 0.70 | Describes using deny assignments on the node resource group, including specific RBAC/permission behavior and AKS-specific constraints, which are product-specific security configuration details. |
 | [Deploy an application that uses OpenAI on Azure Kubernetes Service (AKS)](https://learn.microsoft.com/en-us/azure/aks/open-ai-quickstart) | deployment | 0.70 | Step-by-step deployment of a multi-service OpenAI sample on AKS with specific manifests and wiring is product- and integration-specific. |
 | [Deploy and configure workload identity for a cluster](https://learn.microsoft.com/en-us/azure/aks/workload-identity-deploy-cluster) | security | 0.70 | Step-by-step configuration of Microsoft Entra Workload ID for AKS, including creation and wiring of managed identity, Kubernetes service account, and federated identity credential. Contains product-specific security configuration details (resource types, identity bindings, and required settings) that go beyond generic concepts. |
 | [Deploy and run workflows with the Dapr extension](https://learn.microsoft.com/en-us/azure/aks/dapr-workflow) | deployment | 0.70 | Shows how to deploy and run Dapr Workflow on AKS using the Dapr extension with a concrete order-processing example; AKS- and Dapr-specific deployment pattern. |
@@ -354,12 +352,13 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | [Detecting and managing resource drift](https://learn.microsoft.com/en-us/azure/kubernetes-fleet/concepts-placement-drift) | architecture-patterns | 0.70 | Explains using the applyStrategy property to detect and handle drift between Fleet-managed definitions and placed workloads. This is a Fleet-specific control pattern for multi-cluster management, mapping scenarios (drift) to strategy choices, fitting architecture-patterns. |
 | [Enable cost optimized autoscaling](https://learn.microsoft.com/en-us/azure/aks/optimized-addon-scaling) | configuration | 0.70 | Overview of cost-optimized add-on scaling; expected to describe specific configuration options and override parameters for add-on CPU/memory and autoscaling. |
 | [Enable or disable NAP](https://learn.microsoft.com/en-us/azure/aks/use-node-auto-provisioning) | configuration | 0.70 | The page focuses on enabling/disabling AKS Node Auto-Provisioning via Azure CLI and ARM templates, which typically includes product-specific configuration flags, parameter names, and allowed values for NAP settings. These are concrete configuration options unique to AKS rather than generic concepts, fitting the configuration sub-skill. |
+| [Enforce compliance with Azure Policy](https://learn.microsoft.com/en-us/azure/aks/use-azure-policy) | security | 0.70 | Page is focused on configuring Azure Policy specifically for AKS clusters, including product-specific policy/initiative usage and add-on behavior. This is security-focused configuration and enforcement content (policy definitions, initiatives, cluster-scoped enforcement) that is specific to AKS and Azure Policy, which an LLM is unlikely to fully know from training. |
 | [Identity Bindings for scalable workload identity (overview)](https://learn.microsoft.com/en-us/azure/aks/identity-bindings-concepts) | limits-quotas | 0.70 | Contains a concrete platform limit (a single UAMI can't have more than 20 federated identity credentials) and discusses how identity bindings address this scale constraint for large AKS deployments. This is a specific numeric quota that is unlikely to be reliably known without the documentation. |
 | [Install Azure App Configuration AKS extension](https://learn.microsoft.com/en-us/azure/aks/azure-app-configuration) | configuration | 0.70 | Covers installing and configuring the Azure App Configuration Kubernetes Provider as an AKS extension; expected to include extension resource properties, parameter names, and configuration options unique to this integration. |
 | [Install and use the Container Network Insights Agent](https://learn.microsoft.com/en-us/azure/aks/how-to-configure-container-network-insights-agent) | configuration | 0.70 | How-to article for deploying and configuring the agent, including authentication and identity. Likely contains product-specific configuration parameters and settings (extension configuration, identity/auth options, possibly CLI/ARM parameters) that go beyond generic deployment steps. |
 | [Install the agentic CLI for AKS](https://learn.microsoft.com/en-us/azure/aks/agentic-cli-for-aks-install) | configuration | 0.70 | An install/use article for a preview CLI typically includes concrete configuration steps, flags, environment variables, and parameter values specific to the Agentic CLI (for client vs cluster mode). These are product-specific configuration details that go beyond generic CLI usage. |
 | [Kubernetes Event-driven Autoscaler (KEDA) integrations](https://learn.microsoft.com/en-us/azure/aks/keda-integrations) | integrations | 0.70 | Describes KEDA integrations with Azure and open-source projects; expected to list specific scalers, configuration parameters, and integration patterns unique to AKS KEDA add-on. |
-| [Kubernetes Gateway API with application routing](https://learn.microsoft.com/en-us/azure/aks/app-routing-gateway-api) | configuration | 0.70 | Gateway API-based app routing article typically includes concrete Kubernetes resource specs (Gateway, HTTPRoute), AKS add-on flags, and product-specific configuration fields/values for the AKS application routing add-on. These are detailed configuration patterns rather than just concepts. |
+| [Kubernetes Gateway API with application routing](https://learn.microsoft.com/en-us/azure/aks/app-routing-gateway-api) | configuration | 0.70 | The page describes product-specific configuration of the AKS application routing add-on using the Kubernetes Gateway API, including concrete resource types, annotations, and settings unique to AKS and this add-on. These are detailed configuration patterns rather than generic Kubernetes concepts. |
 | [Learn about Kueue for batch scheduling](https://learn.microsoft.com/en-us/azure/aks/kueue-overview) | configuration | 0.70 | Covers installation methods and enabling advanced Kueue features; likely includes CRD versions, Helm values, and AKS-specific setup steps. |
 | [List available VM SKUs for cluster nodes](https://learn.microsoft.com/en-us/azure/aks/aks-list-skus) | configuration | 0.70 | Page documents the az aks list-vm-skus command and its parameters for AKS, including product-specific CLI options and usage patterns to retrieve region-specific VM SKUs. This is configuration/integration-level detail about how to query supported SKUs for AKS clusters, which is not purely conceptual and includes concrete command syntax and options. |
 | [Long-term support](https://learn.microsoft.com/en-us/azure/aks/long-term-support) | decision-making | 0.70 | LTS for AKS versions is highly product-specific and includes concrete support windows, version timelines, and upgrade implications that affect planning and version selection. This is decision guidance (when to choose LTS vs community support, how long versions are supported) rather than just conceptual info, and the exact support behavior is not generally known from training. |
@@ -397,7 +396,6 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | [Production upgrade strategies](https://learn.microsoft.com/en-us/azure/aks/aks-production-upgrade-strategies) | architecture-patterns | 0.70 | Provides proven patterns for production upgrades with trade-offs for downtime and safety; these are AKS-specific operational patterns. |
 | [Reduce image pull time with Artifact Streaming on AKS](https://learn.microsoft.com/en-us/azure/aks/artifact-streaming) | best-practices | 0.70 | Describes AKS-specific feature behavior, configuration steps, and quantified impact (e.g., >15% faster readiness) for large images, which is concrete product guidance. |
 | [Refactor app](https://learn.microsoft.com/en-us/azure/aks/eks-edw-refactor) | integrations | 0.70 | Details code changes and Azure SDK usage to adapt the EDW workload from AWS to Azure; includes product-specific integration patterns. |
-| [Remove vulnerable images with Image Cleaner](https://learn.microsoft.com/en-us/azure/aks/image-cleaner) | security | 0.70 | Describes using Image Cleaner to automatically identify and remove stale/vulnerable images; likely includes configuration options, schedules, and permissions that are AKS-specific security/maintenance settings. |
 | [Restrict and control cluster egress traffic](https://learn.microsoft.com/en-us/azure/aks/limit-egress-traffic) | configuration | 0.70 | Uses AKS outbound/FQDN rules and the AzureKubernetesService FQDN tag; this is specific configuration knowledge about tags and rule setup. |
 | [Risk assessment and code assets](https://learn.microsoft.com/en-us/azure/aks/pci-ra-code-assets) | best-practices | 0.70 | Provides concrete recommendations for risk assessment and code asset management in AKS under PCI DSS, tied to a reference implementation. |
 | [Scale node pools](https://learn.microsoft.com/en-us/azure/aks/scale-node-pools) | configuration | 0.70 | Provides AKS-specific scaling commands, autoscaler settings, and behavior for node pools, which are concrete configuration patterns beyond generic Kubernetes autoscaling. |
@@ -482,6 +480,7 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | [Ingress with Kubernetes Gateway API](https://learn.microsoft.com/en-us/azure/aks/istio-gateway-api) | configuration | 0.68 | Page describes how to configure Kubernetes Gateway API-based ingress specifically for the Istio service mesh add-on on Azure Kubernetes Service, including product-specific resource kinds, annotations, and configuration details that go beyond generic Istio or Gateway API knowledge and are unique to AKS' managed Istio add-on behavior. |
 | [KMS observability (legacy)](https://learn.microsoft.com/en-us/azure/aks/kms-observability) | troubleshooting | 0.68 | Focuses on observability metrics and improving observability for KMS etcd encryption; likely includes specific metrics, log locations, and diagnostic patterns unique to AKS. |
 | [Migrate from Cluster Autoscaler to NAP](https://learn.microsoft.com/en-us/azure/aks/migrate-from-autoscaler-to-node-auto-provisioning) | deployment | 0.68 | Provides product-specific migration steps and constraints for moving from AKS cluster autoscaler to node auto-provisioning (Karpenter-based). While not a generic tutorial, it contains AKS-specific operational guidance and requirements for how to transition between autoscaling mechanisms in production, which is deployment-focused expert knowledge. |
+| [Node auto-repair](https://learn.microsoft.com/en-us/azure/aks/node-auto-repair) | best-practices | 0.68 | The page describes how AKS node auto-repair works in production, including health detection behavior, repair actions, limitations, and monitoring guidance specific to AKS Automatic vs AKS Standard. These are product-specific operational recommendations and gotchas for running production workloads on AKS that go beyond generic Kubernetes knowledge, fitting the best-practices category. |
 | [Optimize AKS usage and costs](https://learn.microsoft.com/en-us/azure/aks/optimize-aks-costs) | decision-making | 0.68 | The article provides concrete, product-specific guidance on when to use AKS Automatic vs AKS Standard for production workloads, along with practical cost-optimization choices around scaling, infrastructure sizing, GPU usage, and multitenancy. This is decision guidance (which mode/approach to choose for different scenarios) rather than just conceptual overview, and includes actionable recommendations tied to AKS-specific capabilities. |
 | [Placing namespace-scoped resources](https://learn.microsoft.com/en-us/azure/kubernetes-fleet/quickstart-namespace-scoped-resource-propagation) | configuration | 0.68 | Quickstart for ResourcePlacement includes concrete CRD field usage, YAML specs, and product-specific configuration patterns for propagating namespace-scoped resources across clusters, which are implementation details not inferable from general Kubernetes knowledge. |
 | [Security awareness training](https://learn.microsoft.com/en-us/azure/aks/pci-security-awareness-training) | security | 0.68 | PCI-driven security awareness requirements applied to AKS admin/developer personnel with environment-specific considerations. |
@@ -521,7 +520,6 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | [Migration Guidance to Istio AKS add-on](https://learn.microsoft.com/en-us/azure/aks/open-service-mesh-istio-migration-guidance) | decision-making | 0.65 | Provides product-specific migration guidance from OSM add-on to Istio add-on, mapping OSM policies to equivalent Istio policies and helping choose corresponding configurations; this is concrete decision/migration guidance beyond generic concepts. |
 | [Monitor GPU metrics](https://learn.microsoft.com/en-us/azure/aks/monitor-gpu-metrics) | configuration | 0.65 | Article on enabling and using managed GPU metrics; likely documents specific configuration options (for example, enabling managed GPU metrics, annotations, metric names, and collection settings) and how to expose DCGM metrics in AKS. These are product-specific configuration details for observability. |
 | [Monitor Kubernetes object events](https://learn.microsoft.com/en-us/azure/aks/events) | troubleshooting | 0.65 | How-to for using Kubernetes events for troubleshooting; likely maps event types/reasons to causes and actions in AKS, which is symptom→solution guidance. |
-| [Node auto-repair](https://learn.microsoft.com/en-us/azure/aks/node-auto-repair) | best-practices | 0.65 | Describes AKS-specific health checks, thresholds, and repair actions for Linux/Windows nodes, including behavior during platform maintenance—concrete product behavior and recommendations. |
 | [Onboard custom models for inference](https://learn.microsoft.com/en-us/azure/aks/kaito-custom-inference-model) | integrations | 0.65 | Describes onboarding custom models for inferencing with the KAITO operator on AKS, including pulling from HuggingFace and using the KAITO model registry. Such content typically includes CRD fields, spec parameters, and configuration patterns specific to KAITO and AKS (e.g., model spec, storage, runtime settings), which are product-specific integration and coding patterns. |
 | [Open Service Mesh integrations](https://learn.microsoft.com/en-us/azure/aks/open-service-mesh-integrations) | integrations | 0.65 | Covers how OSM integrates with various Azure features and open-source projects, likely listing specific integration points and configuration requirements. |
 | [Optimize GPU workloads using profiling](https://learn.microsoft.com/en-us/azure/aks/gpu-profiling) | best-practices | 0.65 | The page goes beyond conceptual profiling and provides AKS- and GPU-specific optimization guidance tied to profiling outputs (for example, interpreting GPU memory hotspots, addressing OOM and latency issues for AI inference workloads). These are concrete, product-specific recommendations and gotchas for optimizing GPU workloads on AKS, which fits best under best-practices. |
@@ -531,8 +529,10 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | [Placing cluster-scoped resources](https://learn.microsoft.com/en-us/azure/kubernetes-fleet/quickstart-resource-propagation) | configuration | 0.65 | How-to for using cluster resource placement to deploy workloads; includes CRP resource fields and configuration patterns unique to Fleet. |
 | [Quickstart with Azure App Configuration](https://learn.microsoft.com/en-us/azure/aks/azure-app-configuration-quickstart) | configuration | 0.65 | Quickstart for generating ConfigMaps from Azure App Configuration via the AKS extension; likely includes provider-specific settings, CLI flags, and connection parameters that qualify as product-specific configuration. |
 | [Refactor app](https://learn.microsoft.com/en-us/azure/aks/eks-web-refactor) | deployment | 0.65 | Provides concrete steps to move the Yelb app from AWS EKS to AKS, including AKS-specific deployment instructions; focused on practical migration deployment. |
+| [Remove vulnerable images with Image Cleaner](https://learn.microsoft.com/en-us/azure/aks/image-cleaner) | best-practices | 0.65 | Page describes how to use the AKS Image Cleaner feature on AKS Automatic and Standard to remove unused images with vulnerabilities. This is a product-specific operational and security practice for AKS clusters, with concrete guidance on using a specific feature (Image Cleaner) to mitigate image bloat and vulnerabilities, which qualifies as best-practices for this service. |
 | [Resilient public DNS load balancing](https://learn.microsoft.com/en-us/azure/kubernetes-fleet/howto-dns-load-balancing) | configuration | 0.65 | Step-by-step setup for DNS-based multi-cluster load balancing; likely includes DNS records, Fleet-specific settings, and configuration parameters for L4/L7 load balancing, which are product-specific configuration details beyond generic knowledge. |
 | [Roll back node pool versions](https://learn.microsoft.com/en-us/azure/aks/roll-back-node-pool-version) | best-practices | 0.65 | A rollback feature article for AKS node pools that explains when and how to use rollback, its capabilities and limitations, and post-rollback actions will contain product-specific guidance, constraints, and gotchas (for example, which upgrade paths can be rolled back, image/version combinations that are supported, and recommended operational steps). This is actionable, AKS-specific operational guidance rather than generic theory, so it best fits best-practices. |
+| [Set up NVIDIA GPU Operator](https://learn.microsoft.com/en-us/azure/aks/nvidia-gpu-operator) | configuration | 0.65 | Page describes product-specific setup details for using NVIDIA GPU Operator on AKS, including which AKS GPU components (device plugin, automatic driver installation) must be disabled or skipped when using the operator. These are configuration-specific, AKS-integrated behaviors that go beyond generic knowledge of GPU operators. |
 | [Set up a cluster for AKS desktop](https://learn.microsoft.com/en-us/azure/aks/aks-desktop-install-cluster-setup) | configuration | 0.65 | The article covers recommended AKS cluster configurations and add-ons for AKS Desktop, and distinguishes between Standard and Automatic clusters. This implies product-specific configuration requirements and supported/unsupported settings per tier, which constitute expert configuration knowledge beyond generic AKS usage. |
 | [Small and large language models](https://learn.microsoft.com/en-us/azure/aks/concepts-ai-ml-language-models) | decision-making | 0.65 | The article focuses on when to use small vs large language models and how to run them on AKS, including recommending AKS Automatic as the default for most production workloads. This is concrete decision guidance about model type and AKS mode selection rather than just conceptual LLM content, fitting the decision-making category. |
 | [Understand platform differences](https://learn.microsoft.com/en-us/azure/aks/eks-edw-understand) | decision-making | 0.65 | Explains operational differences between AWS and Azure relevant to EDW scaling; supports choosing equivalent Azure services and approaches for migration. |
@@ -562,6 +562,7 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | [Test resiliency](https://learn.microsoft.com/en-us/azure/aks/resiliency-mongodb-cluster) | best-practices | 0.62 | Resiliency testing scenarios using Locust and Percona operator; likely includes concrete patterns and gotchas for MongoDB behavior under failure on AKS. |
 | [Update NAP node images](https://learn.microsoft.com/en-us/azure/aks/node-auto-provisioning-upgrade-image) | best-practices | 0.62 | Discusses node image updates for NAP with recommended maintenance windows and examples; provides operational guidance and timing considerations specific to NAP. |
 | [AKS Automatic with managed system node pools overview](https://learn.microsoft.com/en-us/azure/aks/automatic/aks-automatic-managed-system-node-pools-about) | limits-quotas | 0.60 | Explains that managed system node pools are enabled by default on new AKS Automatic clusters and only available there; this is a product-specific capability constraint (feature availability by mode), which is expert knowledge akin to limits/quotas. |
+| [About Kubernetes Event-driven Autoscaler (KEDA)](https://learn.microsoft.com/en-us/azure/aks/keda-about) | limits-quotas | 0.60 | Page explicitly documents a concrete limitation of the AKS KEDA add-on (inability to modify CPU requests/limits and certain Helm values for Metrics Server/Operator). This is product- and implementation-specific behavior that an LLM would not reliably infer from generic KEDA knowledge; it functions as a practical constraint/limit for AKS users. |
 | [Add a Virtual Machines node pool](https://learn.microsoft.com/en-us/azure/aks/virtual-machines-node-pools) | decision-making | 0.60 | Explains when and why to use the new Virtual Machines node pool type versus VM Scale Sets, with product-specific behavior and trade-offs that guide cluster design decisions. |
 | [Azure portal Kubernetes resource view](https://learn.microsoft.com/en-us/azure/aks/kubernetes-portal) | configuration | 0.60 | Portal-based AKS resource management typically documents specific blades, actions, and constraints unique to AKS integration in the portal, which are product-specific configuration/management details. |
 | [Configure networking](https://learn.microsoft.com/en-us/azure/aks/node-auto-provisioning-networking) | security | 0.60 | Covers networking requirements, supported configurations, RBAC setup, and CIDR considerations; includes role definitions and network configuration details specific to NAP. |
@@ -575,7 +576,6 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
-| [About Kubernetes Event-driven Autoscaler (KEDA)](https://learn.microsoft.com/en-us/azure/aks/keda-about) | 0.55 | Conceptual overview of KEDA add-on with a noted limitation; mostly descriptive, with only a single high-level limitation and no detailed configuration tables. |
 | [Cluster autoscaler overview](https://learn.microsoft.com/en-us/azure/aks/cluster-autoscaler-overview) | 0.48 | Cluster autoscaler overview; primarily conceptual explanation of how autoscaling works without detailed configuration matrices or limits. |
 | [Automated deployments overview](https://learn.microsoft.com/en-us/azure/kubernetes-fleet/concepts-automated-deployments) | 0.45 | Automated Deployments conceptual overview; focuses on high-level pipeline concept from Git, not detailed configuration matrices or limits. |
 | [Overview of add-ons, extensions, and integrations](https://learn.microsoft.com/en-us/azure/aks/integrations) | 0.45 | High-level overview of add-ons and integrations; summary does not indicate detailed config tables or error/limit specifics. |
@@ -588,7 +588,6 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | [Configure availability zones](https://learn.microsoft.com/en-us/azure/aks/reliability-availability-zones-configure) | 0.40 | Configuring availability zones for AKS is largely conceptual and procedural (how to enable zones, what they are, and benefits). The summary does not indicate presence of numeric limits, detailed configuration parameter tables, or decision matrices; it is mainly reliability guidance and basic configuration steps. |
 | [Control cluster order for resource placement](https://learn.microsoft.com/en-us/azure/kubernetes-fleet/howto-staged-update-run) | 0.40 | How-to guide for using staged update runs and controlling deployment order across clusters. From the summary, it appears to be procedural deployment/rollout guidance without explicit tier matrices, numeric limits, or product-specific configuration tables. No clear evidence of expert-only configuration parameters, limits, or decision matrices. |
 | [Create and manage AKS resources in the Azure portal with Kubernetes center](https://learn.microsoft.com/en-us/azure/aks/kubernetes-center-azure-portal) | 0.40 | Kubernetes Center overview; describes portal experience and workflows, but summary does not show detailed configuration parameters or limits. |
-| [DNS Resolution](https://learn.microsoft.com/en-us/azure/aks/dns-concepts) | 0.40 | DNS concepts and LocalDNS benefits; summary emphasizes understanding and troubleshooting, not specific config parameters or error-code mappings. |
 | [Delete an AKS cluster](https://learn.microsoft.com/en-us/azure/aks/delete-cluster) | 0.40 | Explains what happens when deleting a cluster and how to delete it; likely procedural without detailed configuration matrices or limits. |
 | [Deploy Open-WebSearch MCP Server on AKS](https://learn.microsoft.com/en-us/azure/aks/openwebsearch-on-aks) | 0.40 | End-to-end deployment walkthrough for Open-WebSearch MCP on AKS; primarily procedural without configuration tables, limits, or product-specific decision matrices. |
 | [Fleet hub cluster overview](https://learn.microsoft.com/en-us/azure/kubernetes-fleet/concepts-lifecycle) | 0.40 | Hub cluster overview; mostly conceptual description of lifecycle and role, not detailed decision matrices or config tables. |
@@ -598,7 +597,6 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | [Subscribe to AKS events with Event Grid](https://learn.microsoft.com/en-us/azure/aks/quickstart-event-grid) | 0.40 | Quickstart tutorial for subscribing to events; likely basic steps without deep config tables or error mappings. |
 | [Support policy](https://learn.microsoft.com/en-us/azure/aks/istio-support-policy) | 0.40 | A support policy page for the Istio-based AKS add-on typically describes support boundaries, lifecycle, and responsibilities rather than numeric limits, configuration parameters, error-code troubleshooting, or decision matrices. It is more policy/contractual than technical expert knowledge as defined by the sub-skill types. |
 | [Upgrade Windows OS version](https://learn.microsoft.com/en-us/azure/aks/upgrade-windows-os) | 0.40 | Primarily a procedural guide describing how to upgrade Windows OS versions in AKS by creating new node pools and draining workloads. It does not emphasize numeric limits, configuration matrices, or detailed troubleshooting mappings; it is more of a step-by-step tutorial than expert reference content. |
-| [Use API Server VNet integration](https://learn.microsoft.com/en-us/azure/aks/api-server-vnet-integration) | 0.40 | The summary indicates this is primarily a conceptual/feature explanation of API Server VNet Integration and how it works (projecting the API server into a delegated subnet, internal load balancer VIP, etc.). There is no clear evidence of detailed configuration tables, limits, error codes, or prescriptive decision matrices in the description, so it does not clearly meet any expert-knowledge sub-skill criteria based on the provided snippet. |
 | [Use ARM template](https://learn.microsoft.com/en-us/azure/aks/learn/quick-azure-container-linux-deploy-arm-template) | 0.40 | Quickstart for deploying AKS with Azure Container Linux via ARM template; similar to index 15, focused on example deployment rather than exhaustive configuration or limits. |
 | [Use ARM template](https://learn.microsoft.com/en-us/azure/aks/learn/quick-flatcar-deploy-arm-template) | 0.40 | Quickstart for AKS with Flatcar using ARM template; explains template usage with one scenario, not a full configuration matrix. |
 | [Use ARM template](https://learn.microsoft.com/en-us/azure/aks/learn/quick-kubernetes-deploy-rm-template) | 0.40 | Quickstart using ARM template; explains template conceptually and shows one deployment example, not a full configuration reference. |
@@ -610,7 +608,6 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | [Use the Azure CLI](https://learn.microsoft.com/en-us/azure/aks/learn/quick-azure-container-linux-deploy-cli) | 0.40 | Quickstart for deploying AKS with Azure Container Linux via CLI; summary indicates default evaluation settings and references baseline architecture, but no explicit mention of detailed config tables or numeric limits. |
 | [Use the Azure CLI](https://learn.microsoft.com/en-us/azure/aks/learn/quick-flatcar-deploy-cli) | 0.40 | Quickstart for AKS with Flatcar using CLI; preview note and default deployment steps, not a configuration or limits reference. |
 | [Use the Azure portal](https://learn.microsoft.com/en-us/azure/aks/learn/quick-windows-container-deploy-portal) | 0.40 | Quickstart for Windows Server containers on AKS via portal; step-by-step UI guide without detailed configuration matrices or limits. |
-| [Vertical Pod Autoscaler overview](https://learn.microsoft.com/en-us/azure/aks/vertical-pod-autoscaler) | 0.40 | Described as an overview of Vertical Pod Autoscaler in AKS. Likely focuses on concepts and benefits rather than detailed configuration parameters, limits, or decision matrices. |
 | [Configure AKS diagnostics](https://learn.microsoft.com/en-us/azure/aks/aks-diagnostics) | 0.35 | Overview of the Diagnose and Solve Problems experience; summary does not indicate detailed error-code mappings or configuration tables. |
 | [Create a GitHub Workflow](https://learn.microsoft.com/en-us/azure/aks/aks-extension-draft-github-workflow) | 0.35 | How-to for generating a GitHub workflow from the AKS extension; likely generic CI/CD steps without AKS-specific config parameter tables or quotas. |
 | [Deploy and test inference models with the AI toolchain operator (KAITO) in Visual Studio Code](https://learn.microsoft.com/en-us/azure/aks/aks-extension-kaito) | 0.35 | Scenario tutorial for deploying/testing inference models with KAITO; likely step-by-step without detailed config matrices or limits. |
@@ -625,10 +622,6 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | [Overview](https://learn.microsoft.com/en-us/azure/aks/valkey-overview) | 0.35 | Solution overview for Valkey on AKS; primarily summarizes steps and architecture without clear indication of detailed configuration tables. |
 | [Pod Sandboxing overview](https://learn.microsoft.com/en-us/azure/aks/concepts-pod-sandboxing) | 0.35 | High-level overview of pod sandboxing and isolation; lacks detailed configuration parameters or numeric thresholds. |
 | [Use Azure CNI Pod Subnet](https://learn.microsoft.com/en-us/azure/aks/concepts-network-azure-cni-pod-subnet) | 0.35 | Concepts article about Azure CNI Pod Subnet modes; primarily descriptive without clear indication of config tables or numeric thresholds in the summary. |
-| [4 - Deploy Azure Container Storage](https://learn.microsoft.com/en-us/azure/aks/tutorial-kubernetes-deploy-azure-container-storage) | 0.30 | Tutorial introducing Azure Container Storage on AKS; summary suggests basic usage, not detailed limits or config parameter tables. |
-| [5 - Deploy containerized application](https://learn.microsoft.com/en-us/azure/aks/tutorial-kubernetes-deploy-application) | 0.30 | Application deployment tutorial; mentions GitOps conceptually but does not indicate detailed configuration matrices or quotas. |
-| [6 - Use PaaS services](https://learn.microsoft.com/en-us/azure/aks/tutorial-kubernetes-paas-services) | 0.30 | Tutorial for using Azure Service Bus with AKS; integration is shown as a walkthrough, not as a parameter/limits reference. |
-| [7 - Scale application](https://learn.microsoft.com/en-us/azure/aks/tutorial-kubernetes-scale) | 0.30 | Scaling tutorial; explains how to scale nodes and pods and use HPA, but summary does not indicate specific numeric thresholds or config tables. |
 | [8 - Upgrade cluster](https://learn.microsoft.com/en-us/azure/aks/tutorial-kubernetes-upgrade-cluster) | 0.30 | Cluster upgrade tutorial; focuses on procedure using CLI/PowerShell/portal, not on limits, configs, or decision matrices. |
 | [AKS Edge Essentials](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-edge-overview) | 0.30 | Overview of AKS Edge Essentials; summary indicates conceptual description and positioning, not detailed limits, configs, or troubleshooting content. |
 | [AKS on bare metal](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-bare-metal-overview) | 0.30 | Preview overview of AKS on bare metal; summary is conceptual and legal/preview notice focused, without specific numeric limits, configs, or decision matrices. |
@@ -643,6 +636,7 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | [Create a Kubernetes deployment](https://learn.microsoft.com/en-us/azure/aks/aks-extension-draft-deployment) | 0.30 | Tutorial on creating a Kubernetes deployment using the AKS VS Code extension; primarily workflow guidance, not detailed configuration references or limits. |
 | [Create and manage storage in the Azure portal](https://learn.microsoft.com/en-us/azure/aks/use-storage-in-the-azure-portal) | 0.30 | Portal-based how-to for creating/managing AKS storage; likely step-by-step UI guidance without detailed config tables, limits, or product-specific best-practice nuances that go beyond generic AKS/Kubernetes storage knowledge. |
 | [Create node pools](https://learn.microsoft.com/en-us/azure/aks/create-node-pools) | 0.30 | Primarily a how-to for creating node pools using az CLI and APIs. It’s procedural deployment/management guidance without configuration tables, numeric limits, or detailed product-specific patterns beyond standard AKS usage. Does not strongly match any expert-knowledge sub-skill category as defined. |
+| [DNS Resolution](https://learn.microsoft.com/en-us/azure/aks/dns-concepts) | 0.30 | DNS concepts in AKS is primarily an architectural/behavioral explanation of how DNS and LocalDNS work in AKS clusters. Based on the summary, it does not clearly indicate specific numeric limits, configuration parameter tables, error-code-based troubleshooting, or other detailed configuration matrices required by the sub-skill types. It appears to be a conceptual/operational overview rather than expert-knowledge reference content. |
 | [Define reusable update strategies](https://learn.microsoft.com/en-us/azure/kubernetes-fleet/update-create-update-strategy) | 0.30 | Covers defining reusable update strategies with stages and groups; appears to be a how-to without explicit numeric limits, configuration parameter tables, or decision matrices. |
 | [Deploy egress gateways](https://learn.microsoft.com/en-us/azure/aks/istio-deploy-egress) | 0.30 | The egress gateway deployment article is a step-by-step guide for setting up Istio egress gateways on AKS. It doesn’t include configuration parameter tables, limits, error-code mappings, or decision matrices that would qualify as expert knowledge under the defined sub-skill types. |
 | [Deploy ingress gateways](https://learn.microsoft.com/en-us/azure/aks/istio-deploy-ingress) | 0.30 | This page is a deployment tutorial for external/internal ingress gateways for the Istio add-on on AKS. It focuses on procedural steps and a note about minor revision upgrades, but lacks detailed configuration matrices, limits, or specialized troubleshooting/decision content. |
@@ -672,6 +666,7 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | [Update Kubernetes and node images](https://learn.microsoft.com/en-us/azure/kubernetes-fleet/update-orchestration) | 0.30 | How-to guide for orchestrating updates using update runs; summary does not indicate tables of limits, configuration option matrices, or product-specific troubleshooting details. |
 | [Upgrade node OS images](https://learn.microsoft.com/en-us/azure/aks/upgrade-node-image) | 0.30 | From the summary, the page explains that node images are updated weekly (Linux) and monthly (Windows) and that rollouts can take up to a week, but it appears to be a procedural how-to for upgrading node images rather than a structured limits/quotas, configuration matrix, or troubleshooting guide. No clear tables of parameters, error codes, or tier-specific constraints are indicated in the snippet. |
 | [Use AKS plugins for GitHub Copilot for Azure](https://learn.microsoft.com/en-us/azure/aks/aks-extension-ghcopilot-plugins) | 0.30 | Overview/how-to for using AKS plugins in GitHub Copilot; mostly feature description and basic usage, not deep configuration or troubleshooting content. |
+| [Use API Server VNet integration](https://learn.microsoft.com/en-us/azure/aks/api-server-vnet-integration) | 0.30 | API Server VNet Integration in AKS describes how the API server endpoint is projected into a VNet and how communication works. The summary suggests a conceptual networking explanation without explicit numeric limits, configuration parameter tables, or decision matrices. It reads as a feature/architecture overview rather than detailed expert reference content, so it does not meet the thresholds for any specific sub-skill type. |
 | [Use Azure Hybrid Benefit](https://learn.microsoft.com/en-us/azure/aks/azure-hybrid-benefit) | 0.30 | Cost/benefit overview of Azure Hybrid Benefit for AKS; likely licensing and pricing narrative without detailed technical configs or limits. |
 | [Use Azure PowerShell](https://learn.microsoft.com/en-us/azure/aks/learn/quick-windows-container-deploy-powershell) | 0.30 | Quickstart tutorial for deploying a Windows Server container to AKS using PowerShell. Similar to the CLI article, it is a procedural guide without configuration matrices, limits, troubleshooting mappings, or other expert-only details. |
 | [Use Bicep](https://learn.microsoft.com/en-us/azure/kubernetes-fleet/quickstart-create-fleet-resources-bicep) | 0.30 | Bicep quickstart; shows how to deploy but not deep configuration matrices, limits, or troubleshooting mappings. |
@@ -689,11 +684,15 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | [Windows AKS partner solutions](https://learn.microsoft.com/en-us/azure/aks/windows-aks-partner-solutions) | 0.30 | Primarily a partner solutions listing and marketing-style introductions; does not focus on detailed AKS configuration, limits, or troubleshooting content. |
 | [Cluster authorization concepts](https://learn.microsoft.com/en-us/azure/aks/concepts-cluster-authorization) | 0.25 | Cluster authorization concepts and model explanation; mostly conceptual description of RBAC/ABAC without detailed role or config parameter tables. |
 | [Dapr extension](https://learn.microsoft.com/en-us/azure/aks/dapr-overview) | 0.25 | Dapr extension overview describing capabilities and concepts; lacks indication of detailed config tables, limits, or troubleshooting mappings. |
-| [Overview](https://learn.microsoft.com/en-us/azure/aks/stateful-workloads-overview) | 0.25 | Overview of stateful workloads on AKS; likely conceptual without detailed configuration tables or limits. |
 | [1 - Prepare application for AKS](https://learn.microsoft.com/en-us/azure/aks/tutorial-kubernetes-prepare-app) | 0.20 | Tutorial on preparing a multi-container app with Docker Compose for AKS; primarily step-by-step guidance without product-specific limits, configuration matrices, or specialized troubleshooting/error-code content. |
-| [2 - Create container registry](https://learn.microsoft.com/en-us/azure/aks/tutorial-kubernetes-prepare-acr) | 0.20 | Tutorial on creating an Azure Container Registry and pushing images; focuses on basic setup and usage, not on limits, quotas, configuration parameter tables, or decision/troubleshooting matrices. |
-| [3 - Create Kubernetes cluster](https://learn.microsoft.com/en-us/azure/aks/tutorial-kubernetes-deploy-cluster) | 0.20 | Tutorial for creating an AKS cluster; uses default settings and basic commands, not deep configuration or decision guidance. |
+| [2 - Create container registry](https://learn.microsoft.com/en-us/azure/aks/tutorial-kubernetes-prepare-acr) | 0.20 | Tutorial-style walkthrough for creating an ACR instance and pushing images; no configuration parameter tables, limits, quotas, or product-specific best-practice/decision matrices beyond generic steps. |
+| [3 - Create Kubernetes cluster](https://learn.microsoft.com/en-us/azure/aks/tutorial-kubernetes-deploy-cluster) | 0.20 | Guided tutorial for creating an AKS cluster and connecting with kubectl; focuses on basic provisioning steps rather than detailed limits, configuration matrices, or troubleshooting content. |
+| [4 - Deploy Azure Container Storage](https://learn.microsoft.com/en-us/azure/aks/tutorial-kubernetes-deploy-azure-container-storage) | 0.20 | Introductory tutorial for deploying Azure Container Storage on AKS; appears to be a step-by-step example without detailed configuration tables, limits, or specialized troubleshooting guidance. |
+| [5 - Deploy containerized application](https://learn.microsoft.com/en-us/azure/aks/tutorial-kubernetes-deploy-application) | 0.20 | Tutorial for deploying a sample application to AKS using ACR images; content is procedural and does not emphasize expert-only configuration details, limits, or decision criteria. |
+| [6 - Use PaaS services](https://learn.microsoft.com/en-us/azure/aks/tutorial-kubernetes-paas-services) | 0.20 | Tutorial showing how to use Azure Service Bus with AKS; primarily a how-to integration example without deep configuration parameter tables, quotas, or specialized troubleshooting mappings. |
+| [7 - Scale application](https://learn.microsoft.com/en-us/azure/aks/tutorial-kubernetes-scale) | 0.20 | Tutorial on scaling pods and nodes and enabling HPA in AKS; focuses on basic scaling commands and concepts rather than detailed limits, configuration matrices, or product-specific best-practice tables. |
 | [AKS Vulnerability Data API overview](https://learn.microsoft.com/en-us/azure/aks/concepts-security-vulnerability-data-api) | 0.20 | Described as an overview of the AKS Vulnerability Data API and how to interpret vulnerability data. Likely conceptual and usage guidance without detailed error codes, config tables, or numeric limits; does not clearly match any expert-knowledge sub-skill type. |
+| [AKS desktop Kubernetes resource view](https://learn.microsoft.com/en-us/azure/aks/aks-desktop-cluster-view) | 0.20 | The page is an overview/tutorial for using AKS desktop to connect to clusters, view resources, and manage applications. From the summary, it doesn't indicate detailed configuration tables, limits, error codes, or product-specific parameters; it mainly explains capabilities and how to use the UI. This is not expert-knowledge content per the defined categories. |
 | [AKS enabled by Azure Arc](https://learn.microsoft.com/en-us/azure/aks/aksarc/) | 0.20 | High-level documentation landing page for AKS enabled by Arc; primarily navigation/overview without detailed limits, configs, or decision matrices. |
 | [About Open Service Mesh](https://learn.microsoft.com/en-us/azure/aks/open-service-mesh-about) | 0.20 | Conceptual overview of the Open Service Mesh add-on (what it is, how it works) without evidence of concrete configuration tables, limits, or error mappings. |
 | [About cluster extensions](https://learn.microsoft.com/en-us/azure/aks/cluster-extensions) | 0.20 | Appears to be a conceptual/feature overview of AKS cluster extensions and lifecycle management via ARM. The summary does not indicate detailed configuration tables, limits, or troubleshooting content; likely a high-level explanation rather than expert-knowledge specifics. |
@@ -705,8 +704,7 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | [Deploy a cluster in an Azure Extended Zone](https://learn.microsoft.com/en-us/azure/aks/extended-zones) | 0.20 | High-level description of AKS for Azure Extended Zones and availability; summary does not indicate specific limits, configuration parameters, decision matrices, or troubleshooting details. |
 | [Deploy an application](https://learn.microsoft.com/en-us/azure/aks/aks-desktop-app) | 0.20 | Task-focused guide on deploying an application via AKS Desktop (sign in, add cluster, create project, deploy, view metrics). The summary suggests a procedural tutorial without detailed configuration tables, limits, or troubleshooting mappings. |
 | [Expand pod CIDR space in Azure CNI Overlay clusters](https://learn.microsoft.com/en-us/azure/aks/azure-cni-overlay-pod-expand) | 0.20 | Primarily a how-to for expanding pod CIDR space using az aks update; summary does not indicate detailed configuration tables, limits, or product-specific error mappings. Appears to be procedural tutorial content rather than expert configuration, limits, or troubleshooting knowledge. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/aks/agentic-cli-for-aks-faq) | 0.20 | FAQ page about the agentic CLI for AKS appears to be high-level Q&A (what it is, availability, basic usage). No clear indication of numeric limits, configuration parameter tables, error-code-based troubleshooting, or other detailed expert-only content as defined by the sub-skill types. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/kubernetes-fleet/faq) | 0.20 | FAQ pages often mix conceptual and high-level Q&A; the summary does not indicate presence of specific limits, error codes, configuration tables, or other detailed expert-only data. Without clear evidence of such content, it is treated as non-expert overview/FAQ. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/kubernetes-fleet/faq) | 0.20 | FAQ pages are often conceptual or clarifying behavior; without access to the full content, there's no evidence of specific limits, configuration tables, error-code mappings, or decision matrices that meet the expert-knowledge criteria. |
 | [Fine-tuning language models](https://learn.microsoft.com/en-us/azure/aks/concepts-fine-tune-language-models) | 0.20 | Conceptual overview of fine-tuning language models on AKS; describes methods and benefits but does not include product-specific limits, configuration tables, error codes, or decision matrices with quantified trade-offs. |
 | [Introduction to resource placement](https://learn.microsoft.com/en-us/azure/kubernetes-fleet/concepts-resource-placement) | 0.20 | Describes concepts of intelligent resource placement across multiple clusters at a high level. The summary suggests an overview of challenges and approach, without specific limits, configuration parameters, decision matrices, or error-code-based troubleshooting, so it does not meet the expert-knowledge criteria. |
 | [Member cluster types](https://learn.microsoft.com/en-us/azure/kubernetes-fleet/concepts-member-cluster-types) | 0.20 | Conceptual overview of member cluster types and supported capabilities; summary suggests a support matrix but not detailed limits, configuration parameters, or decision matrices with thresholds. |
@@ -723,6 +721,7 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | [Overview](https://learn.microsoft.com/en-us/azure/aks/container-network-security-wireguard-encryption-concepts) | 0.20 | Described as an overview of WireGuard encryption capabilities; summary indicates conceptual security explanation without specific configuration parameters, limits, or product-specific error/diagnostic details. |
 | [Overview](https://learn.microsoft.com/en-us/azure/aks/eks-edw-overview) | 0.20 | From the summary, the article is a scenario/tutorial on replicating an AWS EKS event-driven workload on AKS using KEDA and Karpenter. It describes a competing consumers pattern and migration scenario but there's no evidence of detailed limits, configuration parameter tables, error-code-based troubleshooting, or quantified decision matrices. It appears to be conceptual and procedural guidance rather than expert reference content. |
 | [Overview](https://learn.microsoft.com/en-us/azure/aks/eks-web-overview) | 0.20 | The page focuses on replicating an AWS EKS web application protected by AWS WAF using Azure WAF and Application Gateway for Containers on AKS. The summary indicates a scenario/tutorial describing how to implement a WAF-protected app, not detailed configuration tables, limits, or troubleshooting mappings. It lacks the specific numeric limits, parameter tables, or error-code mappings required for any of the expert sub-skill types. |
+| [Overview](https://learn.microsoft.com/en-us/azure/aks/stateful-workloads-overview) | 0.20 | Page is an overview of running stateful workloads on AKS without detailed numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices; content is primarily conceptual architecture guidance that an LLM is likely to know from training. |
 | [Public endpoint DNS-based load balancing](https://learn.microsoft.com/en-us/azure/kubernetes-fleet/concepts-dns-load-balancing) | 0.20 | Described as helping understand how DNS-based load balancing works; appears conceptual with preview disclaimers, not detailed config, limits, or decision matrices. |
 | [Quickstart](https://learn.microsoft.com/en-us/azure/aks/aks-desktop-quickstart-auto) | 0.20 | Quickstart tutorial for deploying an app with AKS Desktop; focused on step-by-step usage rather than detailed configuration tables, limits, or troubleshooting mappings. |
 | [Safe multi-cluster upgrades](https://learn.microsoft.com/en-us/azure/kubernetes-fleet/concepts-update-orchestration) | 0.20 | Foundational concepts for update runs (stages, groups, strategies); appears conceptual without specific numeric limits, configuration tables, or error-code-based troubleshooting. |
@@ -733,6 +732,7 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | [Use cases (Preview)](https://learn.microsoft.com/en-us/azure/aks/cross-cluster-networking-fleet-use-cases) | 0.20 | Describes cross-cluster networking use cases and benefits conceptually (high availability, shared services, observability) without specific numeric limits, configuration parameters, or troubleshooting mappings. |
 | [Use the Azure CLI](https://learn.microsoft.com/en-us/azure/aks/learn/quick-kubernetes-deploy-cli) | 0.20 | Quickstart tutorial for creating an AKS cluster and deploying an app via Azure CLI; focuses on step-by-step commands and default settings without detailed configuration tables, limits, error codes, or product-specific best-practice guidance. |
 | [Use the Azure portal](https://learn.microsoft.com/en-us/azure/kubernetes-fleet/quickstart-create-fleet-and-members-portal) | 0.20 | Quickstart for creating Fleet Manager and joining clusters via portal; primarily step-by-step tutorial without evidence of detailed limits, configuration tables, or product-specific patterns beyond generic portal usage. |
+| [Vertical Pod Autoscaler overview](https://learn.microsoft.com/en-us/azure/aks/vertical-pod-autoscaler) | 0.20 | Summary indicates a conceptual overview of Vertical Pod Autoscaler and AKS Automatic vs Standard, without clear evidence of numeric limits, detailed config tables, or error/symptom mappings. Likely high-level guidance rather than expert-only specifics. |
 | [Vulnerability management overview](https://learn.microsoft.com/en-us/azure/aks/concepts-vulnerability-management) | 0.20 | Describes how Microsoft manages vulnerabilities and the shared responsibility model for AKS, likely a conceptual/security overview without specific RBAC roles, config parameters, or error-code-level troubleshooting details. |
 | [AKS desktop overview](https://learn.microsoft.com/en-us/azure/aks/aks-desktop-overview) | 0.10 | Overview of AKS Desktop describing what it is and who it is for; summary indicates conceptual/marketing-style content without specific limits, configs, or error mappings. |
 | [CNI networking overview](https://learn.microsoft.com/en-us/azure/aks/concepts-network-cni-overview) | 0.10 | Conceptual overview of CNI networking options in AKS; summary indicates high-level explanation of plugins and responsibilities without concrete limits, config tables, or error mappings. |
@@ -746,5 +746,6 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | [Projects in AKS desktop](https://learn.microsoft.com/en-us/azure/aks/aks-desktop-projects) | 0.10 | Conceptual overview of 'Projects' in AKS Desktop; describes benefits and comparisons to namespaces, but no indication of numeric limits, config matrices, or error-resolution content. |
 | [What is Azure Kubernetes Fleet Manager?](https://learn.microsoft.com/en-us/azure/kubernetes-fleet/overview) | 0.10 | Page is an overview of Azure Kubernetes Fleet Manager capabilities and scenarios without detailed limits, configuration parameters, error codes, or decision matrices. It is primarily conceptual/marketing and does not contain the kind of specific expert-only details required by any sub-skill type. |
 | [Compare AKS Standard and AKS Automatic](https://learn.microsoft.com/en-us/azure/aks/intro-aks-automatic) | - | Introductory overview of AKS Automatic features and benefits; no specific limits, configuration tables, error codes, or decision matrices with quantified trade-offs. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/aks/agentic-cli-for-aks-faq) | - | FAQ content about the agentic CLI for AKS is likely conceptual and explanatory (what it is, how to use it, general behavior). The description and summary don't indicate presence of numeric limits, configuration tables, error-code mappings, or other product-specific expert details required by any sub-skill type. |
 | [Fleets and member clusters](https://learn.microsoft.com/en-us/azure/kubernetes-fleet/concepts-fleet) | - | Explicitly a conceptual overview of fleets and member clusters; no detailed limits, configs, or troubleshooting content. |
 | [Windows AKS customer stories](https://learn.microsoft.com/en-us/azure/aks/windows-aks-customer-stories) | - | Customer story/marketing-style content about how organizations use Windows containers on AKS; no detailed limits, configuration parameters, error codes, or decision matrices. |

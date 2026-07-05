@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-31'
+generated_at: '2026-07-05'
 category_descriptions:
   integrations: Connecting Health Bot/Agent to channels (Teams, SMS, WhatsApp, Facebook),
     embedding web chat/voice, calling external APIs/OpenAPI, telemetry, auth, management
@@ -10,26 +10,22 @@ category_descriptions:
   security: 'Configuring security, privacy, and compliance: user consent, data access/deletion,
     encryption keys, abuse safeguards, authentication, secrets management, and portal
     permissions for Healthcare bots/agents.'
-  architecture-patterns: Designing bot architectures using the healthcare orchestrator
-    to route between plugins and flows, manage conversation logic, and structure complex
-    healthcare scenarios
   best-practices: Guidance on designing robust error-handling flows in Azure Health
     Bot scenarios, including detecting failures, user-friendly recovery paths, and
     safe handling of clinical conversation errors.
   decision-making: Estimating Azure Health Bot costs based on action usage, understanding
     pricing drivers, and forecasting expenses for different bot scenarios.
 skill_description: Expert knowledge for Azure Health Bot development including best
-  practices, decision making, architecture & design patterns, security, configuration,
-  and integrations & coding patterns. Use when wiring Health Bot to channels/APIs,
-  configuring scenarios/cards, securing PHI, using orchestrator, or estimating costs,
-  and other Azure Health Bot related development tasks. Not for Azure AI Bot Service
-  (use azure-bot-service), Azure Communication Services (use azure-communication-services),
-  Azure Functions (use azure-functions).
-use_when: Use when wiring Health Bot to channels/APIs, configuring scenarios/cards,
-  securing PHI, using orchestrator, or estimating costs, and other Azure Health Bot
-  related development tasks.
+  practices, decision making, security, configuration, and integrations & coding patterns.
+  Use when wiring Health Bot to channels/APIs, configuring scenarios, securing data/consent,
+  or estimating usage costs, and other Azure Health Bot related development tasks.
+  Not for Azure AI Bot Service (use azure-bot-service), Azure Communication Services
+  (use azure-communication-services), Azure Health Data Services (use azure-health-data-services).
+use_when: Use when wiring Health Bot to channels/APIs, configuring scenarios, securing
+  data/consent, or estimating usage costs, and other Azure Health Bot related development
+  tasks.
 confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure Communication
-  Services (use azure-communication-services), Azure Functions (use azure-functions).
+  Services (use azure-communication-services), Azure Health Data Services (use azure-health-data-services).
 ---
 # Azure Health Bot Crawl Report
 
@@ -38,13 +34,13 @@ confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure 
 - **Total Pages**: 78
 - **Fetched**: 78
 - **Fetch Failed**: 0
-- **Classified**: 46
-- **Unclassified**: 32
+- **Classified**: 44
+- **Unclassified**: 34
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 78
+- **Updated Pages**: 4
+- **Unchanged**: 74
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-health-bot/azure-health-bot.csv`
 
@@ -52,15 +48,25 @@ confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure 
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 1 | 1.3% |
 | best-practices | 1 | 1.3% |
 | configuration | 14 | 17.9% |
 | decision-making | 1 | 1.3% |
-| integrations | 20 | 25.6% |
+| integrations | 19 | 24.4% |
 | security | 9 | 11.5% |
-| *(Unclassified)* | 32 | 41.0% |
+| *(Unclassified)* | 34 | 43.6% |
 
 ## Changes
+
+### Updated Pages
+
+- [Generative Answers On Your Sources](https://learn.microsoft.com/en-us/azure/health-bot/quickstart-generative-answers-on-your-data)
+  - Updated: 2025-03-03T13:39:00.000Z → 2026-06-28T08:51:00.000Z
+- [Generative Answers On Your Public Sources](https://learn.microsoft.com/en-us/azure/health-bot/quickstart-generative-answers-on-your-public-data)
+  - Updated: 2025-03-03T13:39:00.000Z → 2026-06-28T08:51:00.000Z
+- [Healthcare Orchestrator](https://learn.microsoft.com/en-us/azure/health-bot/copilot/orchestrator)
+  - Updated: 2024-11-27T16:01:00.000Z → 2026-06-28T08:51:00.000Z
+- [OpenAPI Plugins](https://learn.microsoft.com/en-us/azure/health-bot/copilot/openapi-plugins)
+  - Updated: 2025-10-17T07:10:00.000Z → 2026-06-28T08:51:00.000Z
 
 ## Classified Pages
 
@@ -80,7 +86,6 @@ confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure 
 | [Facebook](https://learn.microsoft.com/en-us/azure/health-bot/channels/facebook) | integrations | 0.70 | Channel configuration for Facebook platforms with specific activation and connection steps; product-specific integration pattern. |
 | [Instance variables](https://learn.microsoft.com/en-us/azure/health-bot/scenario-authoring/instance-variables) | configuration | 0.70 | Describes variable types, storage behavior, and lifecycle; product-specific configuration and data-handling semantics. |
 | [Microsoft Teams](https://learn.microsoft.com/en-us/azure/health-bot/channels/teams) | integrations | 0.70 | Channel configuration for Teams; involves product-specific integration steps and settings beyond generic bot-to-Teams knowledge. |
-| [OpenAPI Plugins](https://learn.microsoft.com/en-us/azure/health-bot/copilot/openapi-plugins) | integrations | 0.70 | OpenAPI plugins are a concrete integration mechanism; page likely documents plugin configuration and usage specific to this service. |
 | [Portal User Management](https://learn.microsoft.com/en-us/azure/health-bot/portal-users) | security | 0.70 | Describes transition to Microsoft Entra Access Management and prerequisites (Healthcare Agent A role); this is product-specific access control configuration. |
 | [Proactive scenario API](https://learn.microsoft.com/en-us/azure/health-bot/integrations/proactive) | integrations | 0.70 | Explains proactive scenario invocation requiring user addresses (e.g., phone numbers) and channel-specific behavior; product-specific integration pattern for proactive messaging. |
 | [Programmatic client side scenario invocation](https://learn.microsoft.com/en-us/azure/health-bot/integrations/programmatic_invocation) | integrations | 0.70 | Describes sending a client-side event to invoke a custom scenario, referencing a container sample; this is a product-specific client integration pattern. |
@@ -103,7 +108,6 @@ confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure 
 | [Enabling Voice Interactions](https://learn.microsoft.com/en-us/azure/health-bot/integrations/voice) | integrations | 0.60 | Covers enabling voice via web chat and mobile; product-specific integration pattern with voice capabilities. |
 | [Error handling](https://learn.microsoft.com/en-us/azure/health-bot/errorhandling) | best-practices | 0.60 | Describes fail output nodes for specific steps and how to branch to failure logic; product-specific error-handling pattern. |
 | [Files & Environment Variables](https://learn.microsoft.com/en-us/azure/health-bot/tenant-resources) | configuration | 0.60 | Describes uploading files and creating static variables for environment-specific configuration; this is product-specific configuration behavior. |
-| [Healthcare Orchestrator](https://learn.microsoft.com/en-us/azure/health-bot/copilot/orchestrator) | architecture-patterns | 0.60 | Describes a healthcare-adapted orchestrator that selects plugins based on conversation context, a product-specific orchestration pattern. |
 | [Interrupting an active scenario](https://learn.microsoft.com/en-us/azure/health-bot/bot_docs/interruptions) | configuration | 0.60 | Explains how scenarios can be interrupted and resumed; product-specific conversation flow configuration. |
 | [Leaving feedback](https://learn.microsoft.com/en-us/azure/health-bot/bot_docs/feedback) | configuration | 0.60 | Describes feedback command, prompts, and reports; product-specific configuration of feedback mechanisms. |
 | [Scenario Management](https://learn.microsoft.com/en-us/azure/health-bot/scenario-authoring/scenario_management) | configuration | 0.60 | Scenario management page with actions like add, delete, export, import; operational configuration of scenarios. |
@@ -136,12 +140,14 @@ confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure 
 | [Extend your healthcare agent service with QnA Maker](https://learn.microsoft.com/en-us/azure/health-bot/language_model_qna) | 0.30 | Retirement notice and conceptual description of QnA Maker; no detailed configuration, limits, or error-resolution guidance evident. |
 | [Extend your healthcare agent service with Question Answering](https://learn.microsoft.com/en-us/azure/health-bot/language_model_question-answering) | 0.30 | Overview of Question Answering; summary lacks product-specific configuration tables, limits, or troubleshooting content. |
 | [Flow Control](https://learn.microsoft.com/en-us/azure/health-bot/scenario-authoring/flow_control) | 0.30 | Conceptual description of flow control elements; no clear indication of parameter tables or numeric thresholds. |
+| [Healthcare Orchestrator](https://learn.microsoft.com/en-us/azure/health-bot/copilot/orchestrator) | 0.30 | Healthcare Orchestrator overview with data residency statement; summary suggests conceptual description of orchestrator behavior and compliance, without specific configuration parameters, limits, or decision matrices. |
+| [OpenAPI Plugins](https://learn.microsoft.com/en-us/azure/health-bot/copilot/openapi-plugins) | 0.30 | OpenAPI Plugins page appears to focus on generative AI data residency and likely conceptual plugin usage; no indication of detailed configuration tables, error codes, or product-specific limits or best-practice patterns. |
 | [Overview](https://learn.microsoft.com/en-us/azure/health-bot/language_models) | 0.30 | Explains different language models conceptually; summary does not indicate detailed configuration tables or limits. |
 | [Scenario Template Catalog](https://learn.microsoft.com/en-us/azure/health-bot/bot_docs/scenario-templates) | 0.30 | Scenario templates catalog; mainly describes using templates, not detailed config parameters or limits. |
 | [Overview](https://learn.microsoft.com/en-us/azure/health-bot/configuration) | 0.25 | Navigation/overview page for configuration section; no specific parameters or values in the summary. |
 | [Create your first scenario](https://learn.microsoft.com/en-us/azure/health-bot/quickstart-createyourfirstscenario) | 0.20 | Quickstart for first custom scenario; scenario authoring tutorial rather than reference-style expert knowledge. |
-| [Generative Answers On Your Public Sources](https://learn.microsoft.com/en-us/azure/health-bot/quickstart-generative-answers-on-your-public-data) | 0.20 | Quickstart for generative answers on public sources; primarily tutorial content, not configuration reference. |
-| [Generative Answers On Your Sources](https://learn.microsoft.com/en-us/azure/health-bot/quickstart-generative-answers-on-your-data) | 0.20 | Quickstart for generative answers on your data; likely procedural without deep config tables or limits. |
+| [Generative Answers On Your Public Sources](https://learn.microsoft.com/en-us/azure/health-bot/quickstart-generative-answers-on-your-public-data) | 0.20 | Quickstart for generative answers on public sources; content appears to be step-by-step setup and data residency information, not detailed limits, configuration matrices, or troubleshooting mappings. |
+| [Generative Answers On Your Sources](https://learn.microsoft.com/en-us/azure/health-bot/quickstart-generative-answers-on-your-data) | 0.20 | Quickstart for setting up generative answers on private data; summary indicates high-level setup and data residency note without specific limits, configuration tables, error codes, or product-unique best practices. |
 | [Healthcare agent service for Microsoft Copilot M365](https://learn.microsoft.com/en-us/azure/health-bot/quickstart-copilot-m365-integration) | 0.20 | Quickstart-style integration overview that primarily points to a GitHub repository and describes high-level setup for exposing a Healthcare Agent Service instance to Microsoft 365 Copilot. No detailed configuration parameter tables, limits, error codes, or product-specific decision matrices are evident in the summary. |
 | [Healthcare agent service for Microsoft Copilot Studio](https://learn.microsoft.com/en-us/azure/health-bot/quickstart-copilot-studio-integration) | 0.20 | Quickstart for Copilot Studio integration; integration steps but no indication of detailed parameter tables or limits. |
 | [Transparency note](https://learn.microsoft.com/en-us/azure/health-bot/transparency-note) | 0.20 | Transparency note and disclaimer about AI use; policy/ethics content rather than technical expert knowledge. |

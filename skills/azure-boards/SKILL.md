@@ -1,9 +1,9 @@
 ---
 name: azure-boards
-description: Expert knowledge for Azure Boards development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when managing work items, queries/charts, GitHub links, Scrum boards/sprints, or WIQL-based integrations, and other Azure Boards related development tasks. Not for Azure DevOps (use azure-devops), Azure Test Plans (use azure-test-plans), Azure Pipelines (use azure-pipelines), Azure Repos (use azure-repos).
+description: Expert knowledge for Azure Boards development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when managing work items, queries, boards/processes, GitHub links, or WIQL-based reporting in Azure Boards, and other Azure Boards related development tasks. Not for Azure DevOps (use azure-devops), Azure Pipelines (use azure-pipelines), Azure Test Plans (use azure-test-plans), Azure Repos (use azure-repos).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-28"
+  generated_at: "2026-07-05"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Boards Skill
@@ -25,12 +25,12 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L35-L43 | Diagnosing and fixing Azure Boards issues with Office integration, backlog nesting/reordering, and common query problems (filters, clauses, results). |
-| Best Practices | L44-L50 | Guidance on using Azure Boards for Agile product management, scaling Agile across teams, and applying Scrum/sprint planning, tracking, and execution best practices. |
-| Decision Making | L51-L57 | Guidance on selecting Azure Boards process templates, migration/integration approaches, and tools for cross-team visibility and reporting across projects. |
-| Limits & Quotas | L58-L63 | Managing Azure Boards limits for test artifacts and work item attachments, including size/quantity constraints and how to restore deleted test-related items. |
-| Security | L64-L70 | Managing Azure Boards security: default permissions, configuring query/folder access, and setting access controls and policies for teams and users. |
-| Configuration | L71-L83 | Configuring Azure Boards processes, fields, and boards; linking with GitHub; and defining queries, charts, and work item field usage for Agile, Scrum, CMMI, bugs, and code reviews. |
-| Integrations & Coding Patterns | L84-L93 | Connecting Azure Boards to GitHub, Copilot, Slack, and Teams, adding status badges, linking work items to code/artifacts, and querying work items with WIQL syntax. |
+| Best Practices | L44-L51 | Guidance on Agile/Scrum workflows in Azure Boards: product management, sprint planning, scalable team practices, and configuring/customizing processes for effective project tracking. |
+| Decision Making | L52-L58 | Guidance on selecting Azure Boards process templates, migration/integration approaches, and tools for cross-team visibility and reporting across projects. |
+| Limits & Quotas | L59-L64 | Managing limits, quotas, and recovery for Azure Boards test artifacts and work item attachments, including deletion, restoration, size/count constraints, and best practices. |
+| Security | L65-L71 | Managing Azure Boards security: default permissions, configuring query/folder access, and setting access controls and policies for teams and users. |
+| Configuration | L72-L82 | Configuring Azure Boards processes, fields, and boards; linking with GitHub; and defining queries, charts, and work item field usage for Agile, Scrum, CMMI, bugs, and code reviews. |
+| Integrations & Coding Patterns | L83-L92 | Connecting Azure Boards to GitHub, Copilot, Slack, and Teams, adding status badges, linking work items to code/artifacts, and querying work items with WIQL syntax. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -45,6 +45,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Apply Azure Boards Agile product management practices | https://learn.microsoft.com/en-us/azure/devops/boards/best-practices-agile-project-management?view=azure-devops |
+| Plan and configure Azure Boards process customization | https://learn.microsoft.com/en-us/azure/devops/boards/configure-customize?view=azure-devops |
 | Apply scalable Agile practices in Azure Boards | https://learn.microsoft.com/en-us/azure/devops/boards/plans/practices-that-scale?view=azure-devops |
 | Apply Azure Boards sprint and Scrum best practices | https://learn.microsoft.com/en-us/azure/devops/boards/sprints/best-practices-scrum?view=azure-devops |
 
@@ -71,9 +72,7 @@ This skill requires **network access** to fetch documentation content:
 ### Configuration
 | Topic | URL |
 |-------|-----|
-| Configure and customize Azure Boards processes and boards | https://learn.microsoft.com/en-us/azure/devops/boards/configure-customize?view=azure-devops |
 | Configure on-premises Azure DevOps with GitHub Enterprise | https://learn.microsoft.com/en-us/azure/devops/boards/github/connect-on-premises-to-github?view=azure-devops-server |
-| Configure Azure Boards GitHub app connections | https://learn.microsoft.com/en-us/azure/devops/boards/github/install-github-app?view=azure-devops |
 | Configure Azure Boards query charts for dashboards | https://learn.microsoft.com/en-us/azure/devops/boards/queries/example-query-charts?view=azure-devops |
 | Use Azure Boards query fields, operators, and macros | https://learn.microsoft.com/en-us/azure/devops/boards/queries/query-operators-variables?view=azure-devops |
 | Track bugs, issues, and risks fields in CMMI process | https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi?view=azure-devops |

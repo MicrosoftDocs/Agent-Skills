@@ -1,14 +1,14 @@
 ---
 name: azure-web-application-firewall
-description: Expert knowledge for Azure Web Application Firewall development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring Front Door/App Gateway WAF rules, rate limits, bot/CAPTCHA, Sentinel logging, or IaC deployments, and other Azure Web Application Firewall related development tasks. Not for Azure Application Gateway (use azure-application-gateway), Azure Front Door (use azure-front-door), Azure Firewall (use azure-firewall), Azure DDos Protection (use azure-ddos-protection).
+description: Expert knowledge for Azure Web Application Firewall development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring Front Door/AppGW WAF rules, rate limits, geo/IP filters, bot challenges, or Sentinel logging, and other Azure Web Application Firewall related development tasks. Not for Azure Application Gateway (use azure-application-gateway), Azure Front Door (use azure-front-door), Azure Firewall (use azure-firewall), Azure DDos Protection (use azure-ddos-protection).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-28"
+  generated_at: "2026-07-05"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Web Application Firewall Skill
 
-This skill provides expert guidance for Azure Web Application Firewall. Covers troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Web Application Firewall. Covers troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -24,15 +24,14 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L41 | Diagnosing and fixing Azure WAF issues on Front Door and Application Gateway, including rule matches, false positives, blocked requests, and configuration or logging problems. |
-| Best Practices | L42-L50 | Best practices for configuring, tuning, and hardening Azure WAF on Front Door and Application Gateway, including rule tuning, exclusions, geomatch rules, and deployment security. |
-| Decision Making | L51-L57 | Guidance on planning and migrating from legacy WAF configs to full WAF policies, and managing the lifecycle, upgrades, and versions of Azure WAF managed rule sets. |
-| Architecture & Design Patterns | L58-L62 | Architectural guidance for designing DDoS-resistant web apps using Azure WAF with Front Door, including traffic flow, protection layers, and best-practice deployment patterns. |
-| Limits & Quotas | L63-L68 | Details on WAF limits like max request/body size, file upload constraints, rule engine behavior under high load, and how to configure or tune these limits on Application Gateway. |
-| Security | L69-L76 | Configuring Front Door WAF security: IP allow/deny rules, managed DRS rule groups, exclusion lists, and enforcing WAF settings and compliance with Azure Policy. |
-| Configuration | L77-L117 | Configuring Azure WAF (Front Door & App Gateway): policies, custom/managed rules, rate limiting, geo/IP filters, bot/CAPTCHA, exclusions, logging/scrubbing, and custom block responses. |
-| Integrations & Coding Patterns | L118-L128 | Using WAF with other Azure services: integrating logs with Sentinel/Log Analytics, automating incident response, investigating events, and protecting APIM/Azure OpenAI via Front Door WAF. |
-| Deployment | L129-L134 | How to deploy and provision Azure Application Gateway WAF v2 using Bicep, ARM templates, or Terraform, including required resources, parameters, and configuration structure. |
+| Troubleshooting | L36-L40 | Diagnosing and fixing Azure WAF issues on Front Door and Application Gateway, including rule matches, false positives, blocked requests, and configuration or logging problems. |
+| Best Practices | L41-L49 | Best practices for configuring, tuning, and hardening WAF on Front Door and Application Gateway, including geomatch rules, exclusions, and security posture improvements. |
+| Decision Making | L50-L55 | Guidance on planning and migrating from legacy WAF configs to full WAF policies, and managing the lifecycle, upgrades, and versions of Azure WAF managed rule sets. |
+| Limits & Quotas | L56-L61 | Details on WAF limits like max request/body size, file upload constraints, rule engine behavior under high load, and how to configure or tune these limits on Application Gateway. |
+| Security | L62-L69 | Configuring Front Door WAF security: IP allow/deny rules, managed DRS rule groups, exclusion lists, and enforcing WAF settings and compliance with Azure Policy. |
+| Configuration | L70-L110 | Configuring Azure WAF behavior: custom/managed rules, rate limiting, geo-filtering, bot/CAPTCHA/JS challenges, exclusions, logging/scrubbing, sensitive data protection, and policy scoping/association. |
+| Integrations & Coding Patterns | L111-L121 | Using WAF with other Azure services: integrating logs with Sentinel/Log Analytics, automating incident response, investigating events, and protecting APIM/Azure OpenAI via Front Door WAF. |
+| Deployment | L122-L128 | How to deploy and manage Application Gateway WAF v2 using Bicep, ARM templates, Terraform, and upgrade existing WAF configurations to WAF policies. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -42,9 +41,9 @@ This skill requires **network access** to fetch documentation content:
 ### Best Practices
 | Topic | URL |
 |-------|-----|
-| Implement best practices for Front Door WAF | https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/waf-front-door-best-practices |
+| Implement WAF best practices in Azure Front Door | https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/waf-front-door-best-practices |
 | Tune Azure Front Door WAF rules and exclusions | https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/waf-front-door-tuning |
-| Apply best practices for Application Gateway WAF | https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/best-practices |
+| Apply best practices for WAF on Application Gateway | https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/best-practices |
 | Apply geomatch WAF rules to strengthen web app security | https://learn.microsoft.com/en-us/azure/web-application-firewall/geomatch-custom-rules-examples |
 | Secure and harden Azure Web Application Firewall deployments | https://learn.microsoft.com/en-us/azure/web-application-firewall/secure-web-application-firewall |
 
@@ -52,13 +51,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Migrate Azure Application Gateway WAF configs to full policies | https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/migrate-policy |
-| Plan upgrade from WAF configuration to WAF policy | https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/upgrade-ag-waf-policy |
 | Plan Azure WAF managed ruleset lifecycle and upgrades | https://learn.microsoft.com/en-us/azure/web-application-firewall/ruleset-support-policy |
-
-### Architecture & Design Patterns
-| Topic | URL |
-|-------|-----|
-| Design application DDoS protection with Azure WAF and Front Door | https://learn.microsoft.com/en-us/azure/web-application-firewall/shared/application-ddos-protection |
 
 ### Limits & Quotas
 | Topic | URL |
@@ -78,6 +71,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Configure CAPTCHA challenges in Azure Front Door WAF | https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/captcha-challenge |
+| Configure WAF exception lists for Azure Front Door | https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/front-door-exceptions |
 | Configure custom block responses for Front Door WAF | https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/waf-front-door-configure-custom-response-code |
 | Define custom WAF rules for Azure Front Door | https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/waf-front-door-custom-rules |
 | Configure Azure Front Door WAF custom and managed rules | https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/waf-front-door-custom-rules-powershell |
@@ -108,7 +102,6 @@ This skill requires **network access** to fetch documentation content:
 | Understand and scope WAF policies on Application Gateway | https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/policy-overview |
 | Create rate-limiting custom rules for Application Gateway WAF v2 | https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/rate-limiting-configure |
 | Configure rate limiting for Azure Application Gateway WAF | https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/rate-limiting-overview |
-| Upgrade CRS/DRS ruleset versions on Application Gateway WAF | https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/upgrade-ruleset-version |
 | Configure sensitive data protection in WAF logs | https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/waf-sensitive-data-protection |
 | Set up WAF log scrubbing on Application Gateway | https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/waf-sensitive-data-protection-configure |
 | Enable and manage logging for Azure WAF | https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/web-application-firewall-logs |
@@ -131,4 +124,5 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Deploy Azure Application Gateway WAF v2 using Bicep | https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/quick-create-bicep |
 | Deploy Azure Application Gateway WAF v2 via ARM template | https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/quick-create-template |
+| Upgrade Azure Application Gateway WAF configuration to policy | https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/upgrade-ag-waf-policy |
 | Provision Application Gateway WAF v2 with Terraform | https://learn.microsoft.com/en-us/azure/web-application-firewall/quickstart-web-application-firewall-terraform |

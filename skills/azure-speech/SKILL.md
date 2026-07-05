@@ -1,9 +1,9 @@
 ---
 name: azure-speech
-description: Expert knowledge for Azure AI Speech development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building Azure Speech STT/TTS, custom voices/avatars, Voice Live agents, or telephony/LLM integrations, and other Azure AI Speech related development tasks.
+description: Expert knowledge for Azure AI Speech development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building STT/TTS containers, custom voices, Voice Live apps, SSML workflows, or telephony integrations, and other Azure AI Speech related development tasks. Not for Azure AI Bot Service (use azure-bot-service), Azure Communication Services (use azure-communication-services), Azure AI Immersive Reader (use azure-immersive-reader), Azure Translator (use azure-translator).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-28"
+  generated_at: "2026-07-05"
   generator: "docs2skills/1.0.0"
 ---
 # Azure AI Speech Skill
@@ -25,13 +25,13 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L36-L44 | Diagnosing and resolving Azure AI Speech issues: session/ID lookup, Foundry integration errors, SDK CRL/compatibility problems, container deployment failures, and common SDK runtime bugs. |
-| Best Practices | L45-L61 | Best practices for collecting and labeling audio/video, training custom voices/avatars, tuning recognition (phrases/keywords), optimizing latency/memory, and handling Voice Live agent behavior. |
+| Best Practices | L45-L61 | Guidance on preparing audio/video data, improving transcription and synthesis quality/latency, designing microphones, managing SDK memory, handling live voice chats, and backing up custom voice resources. |
 | Decision Making | L62-L78 | Guides for choosing Azure Speech/Embedded/Voice Live options, checking language/voice availability, and step-by-step migrations between Speech/voice REST APIs and legacy features. |
 | Limits & Quotas | L79-L87 | Speech service limits, quotas, and behaviors for text-to-speech and custom/professional voice models, including training duration, deployment constraints, and managing model/endpoint lifecycles. |
 | Security | L88-L101 | Securing Azure AI Speech: auth (Entra, RBAC), network isolation (VNet, Private Link, sovereign clouds), encryption/BYOK, BYOS storage, and consent/ID flows for personal and professional voice. |
 | Configuration | L102-L134 | Configuring Azure AI Speech behavior: audio I/O, logging, storage, SSML, pronunciation, batch TTS/STT, avatars, personal/pro voices, and Voice Live/SDK/CLI connection and telemetry settings. |
-| Integrations & Coding Patterns | L135-L166 | Patterns and code for integrating Azure Speech/Voice Live with apps, telephony, agents, REST/SDK/WS APIs, TTS/translation/avatars, SSML customization, and LLM/OpenAI workflows. |
-| Deployment | L167-L178 | Deploying and scaling Azure AI Speech: Docker/Kubernetes containers, on-prem STT/TTS, custom speech models/endpoints, language ID, and batch/long-form synthesis workflows. |
+| Integrations & Coding Patterns | L135-L165 | Patterns and code for integrating Azure Speech/Voice Live with apps, telephony, agents, REST/SDK/WS APIs, TTS/translation/avatars, SSML customization, and LLM/OpenAI workflows. |
+| Deployment | L166-L177 | Deploying and scaling Azure AI Speech: Docker/Kubernetes containers, on-prem STT/TTS, custom speech models/endpoints, language ID, and batch/long-form synthesis workflows. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -52,7 +52,7 @@ This skill requires **network access** to fetch documentation content:
 | Track and manage Azure Speech SDK memory usage | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-track-speech-sdk-memory-usage |
 | Handle interrupted responses in Voice Live chat history | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-voice-live-auto-truncation |
 | Evaluate and benchmark Voice Live voice agents | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-voice-live-evaluate |
-| Use phrase lists to improve Azure Speech recognition | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/improve-accuracy-phrase-list |
+| Use phrase lists to improve Azure Speech accuracy | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/improve-accuracy-phrase-list |
 | Apply keyword recognition design and accuracy guidelines | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/keyword-recognition-guidelines |
 | Record high-quality samples for custom voice training | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/record-custom-voice-samples |
 | Back up and recover custom Speech and Voice resources | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/resiliency-and-recovery-plan |
@@ -161,7 +161,6 @@ This skill requires **network access** to fetch documentation content:
 | Implement real-time text-to-speech avatar streaming | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/text-to-speech-avatar/real-time-synthesis-avatar |
 | Use Voice Live WebSocket API events and models | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live-api-reference-2026-04-10 |
 | Integrate with Voice Live preview WebSocket API | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live-api-reference-2026-06-01-preview |
-| Customize Voice Live input and output models | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live-how-to-customize |
 | Integrate Voice Live API with telephony systems | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live-telephony |
 
 ### Deployment

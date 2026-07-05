@@ -1,9 +1,9 @@
 ---
 name: azure-data-factory
-description: Expert knowledge for Azure Data Factory development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing ADF pipelines, data flows, integration runtimes, SAP CDC, CI/CD deployments, or SSIS migrations, and other Azure Data Factory related development tasks. Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure Databricks (use azure-databricks), Azure Stream Analytics (use azure-stream-analytics), Azure Functions (use azure-functions).
+description: Expert knowledge for Azure Data Factory development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building ADF pipelines, mapping data flows, SAP CDC, SSIS IR runtimes, or CI/CD deployments, and other Azure Data Factory related development tasks. Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure Databricks (use azure-databricks), Azure Stream Analytics (use azure-stream-analytics), Azure Functions (use azure-functions).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-21"
+  generated_at: "2026-07-05"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Data Factory Skill
@@ -24,14 +24,14 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L90 | Diagnosing and fixing ADF issues: connector/format errors, pipeline and data flow failures, performance, CI/CD, security, and self-hosted/SSIS IR problems using logs and tools. |
+| Troubleshooting | L37-L90 | Diagnosing and fixing ADF issues: connector errors (S3, Blob, REST, SAP, SQL, etc.), data flow/copy performance, CDC, pipelines/triggers, IR/SSIS problems, and common runtime failures. |
 | Best Practices | L91-L112 | Performance, DataOps, and reliability best practices for ADF: tuning data flows/copy, optimizing sources/sinks/IR, handling schema drift/errors, and migrating data (HDFS, Netezza, S3) to Azure. |
-| Decision Making | L113-L131 | Guidance on ADF architecture and cost decisions: choosing runtimes/compute, connector upgrade strategy, reserved capacity, and planning/migrating pipelines and SSIS/Synapse to ADF or Fabric. |
+| Decision Making | L113-L131 | Guidance on cost planning, connector upgrades, integration runtime and compute choices, and migration/modernization of ADF, SSIS, Synapse, and pipelines to Fabric. |
 | Architecture & Design Patterns | L132-L141 | Patterns and architectures for ADF: efficient mapping data flows, metadata‑driven copy, SSIS IR with SQL MI/failover/VNet, Cosmos DB migration, and SAP CDC design. |
 | Limits & Quotas | L142-L147 | ADF data flow reservation discounts, pricing behavior, and the official limits/quotas (throughput, activities, pipelines, data flows) documented in the FAQ. |
 | Security | L148-L178 | Securing Data Factory with identity, encryption, Key Vault, and Azure Policy, plus network controls like VNets, Private Link, firewalls, private endpoints, and secure runtimes (Azure-SSIS, self-hosted). |
 | Configuration | L179-L302 | Configuring Azure Data Factory: pipelines, activities, triggers, data flows, copy behavior, formats, integration runtimes (Azure/self-hosted/SSIS), monitoring, parameters, and SAP CDC settings. |
-| Integrations & Coding Patterns | L303-L477 | Patterns and how-tos for integrating ADF with many data sources, using connectors, mapping data flow functions, activities, templates, and orchestrating Databricks, Synapse, SSIS, and ML jobs. |
+| Integrations & Coding Patterns | L303-L477 | Connector setup, pipeline patterns, and code examples for integrating ADF with many data sources/services, using mapping data flows, SSIS, Databricks, Synapse, ML, and SDK/REST automation. |
 | Deployment | L478-L491 | CI/CD and deployment for ADF: ARM/linked templates, Azure DevOps pipelines, hotfix flows, pre/post scripts, IR automation, SSIS job migration, and runtime network migration. |
 
 ### Troubleshooting
@@ -42,15 +42,15 @@ This skill requires **network access** to fetch documentation content:
 | Resolve common Azure Data Factory connector upgrade issues | https://learn.microsoft.com/en-us/azure/data-factory/connector-deprecation-frequently-asked-questions |
 | Resolve Azure Data Factory Amazon S3 connector errors | https://learn.microsoft.com/en-us/azure/data-factory/connector-troubleshoot-amazon-simple-storage-service |
 | Fix Azure Blob Storage connector issues in ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-troubleshoot-azure-blob-storage |
-| Troubleshoot Azure Cosmos DB connectors in Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-troubleshoot-azure-cosmos-db |
+| Diagnose Azure Cosmos DB connector issues in Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-troubleshoot-azure-cosmos-db |
 | Resolve Azure Data Explorer connector problems in ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-troubleshoot-azure-data-explorer |
 | Troubleshoot Azure Data Lake Storage connectors in ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-troubleshoot-azure-data-lake |
 | Resolve Azure Files connector errors in Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-troubleshoot-azure-files |
 | Troubleshoot Azure Table Storage connector in ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-troubleshoot-azure-table-storage |
-| Fix DB2 connector problems in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-troubleshoot-db2 |
-| Troubleshoot delimited text format connector in ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-troubleshoot-delimited-text |
+| Resolve DB2 connector problems in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-troubleshoot-db2 |
+| Fix delimited text connector errors in Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-troubleshoot-delimited-text |
 | Resolve Dynamics 365 and Dataverse connector issues | https://learn.microsoft.com/en-us/azure/data-factory/connector-troubleshoot-dynamics-dataverse |
-| Troubleshoot file system connector failures in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-troubleshoot-file-system |
+| Troubleshoot file system connector in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-troubleshoot-file-system |
 | Troubleshoot FTP, SFTP, and HTTP connectors in ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-troubleshoot-ftp-sftp-http |
 | Fix Google Ads connector errors in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-troubleshoot-google-ads |
 | Diagnose and fix Azure Data Factory connector issues | https://learn.microsoft.com/en-us/azure/data-factory/connector-troubleshoot-guide |
@@ -62,13 +62,13 @@ This skill requires **network access** to fetch documentation content:
 | Troubleshoot ORC format connector in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-troubleshoot-orc |
 | Fix Parquet format connector issues in Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-troubleshoot-parquet |
 | Fix Azure Database for PostgreSQL connector issues | https://learn.microsoft.com/en-us/azure/data-factory/connector-troubleshoot-postgresql |
-| Troubleshoot REST connector errors in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-troubleshoot-rest |
+| Diagnose REST connector failures in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-troubleshoot-rest |
 | Resolve Salesforce and Service Cloud connector issues | https://learn.microsoft.com/en-us/azure/data-factory/connector-troubleshoot-salesforce |
-| Troubleshoot SAP Table and BW Open Hub connectors | https://learn.microsoft.com/en-us/azure/data-factory/connector-troubleshoot-sap |
+| Resolve SAP connector issues in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-troubleshoot-sap |
 | Fix ServiceNow connector problems in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-troubleshoot-servicenow |
-| Troubleshoot SharePoint Online list connector in ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-troubleshoot-sharepoint-online-list |
+| Fix SharePoint Online list connector problems in Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-troubleshoot-sharepoint-online-list |
 | Resolve Shopify connector issues in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-troubleshoot-shopify |
-| Troubleshoot Snowflake connector errors in Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-troubleshoot-snowflake |
+| Troubleshoot Snowflake connector in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-troubleshoot-snowflake |
 | Troubleshoot SQL-based connectors in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-troubleshoot-synapse-sql |
 | Fix Teradata connector failures in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-troubleshoot-teradata |
 | Fix XML format connector problems in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-troubleshoot-xml |
@@ -124,7 +124,7 @@ This skill requires **network access** to fetch documentation content:
 | Assess Azure Data Factory pipelines for Fabric migration | https://learn.microsoft.com/en-us/azure/data-factory/how-to-assess-your-azure-data-factory-to-fabric-data-factory-migration |
 | Choose and provision Enterprise Edition Azure-SSIS IR | https://learn.microsoft.com/en-us/azure/data-factory/how-to-configure-azure-ssis-ir-enterprise-edition |
 | Upgrade Azure Data Factory pipelines to Fabric Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/how-to-upgrade-your-azure-data-factory-pipelines-to-fabric-data-factory |
-| Modernize Azure Synapse pipelines with Fabric Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/how-to-upgrade-your-azure-synapse-analytics-pipelines-to-fabric-data-factory |
+| Modernize Synapse pipelines with Fabric Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/how-to-upgrade-your-azure-synapse-analytics-pipelines-to-fabric-data-factory |
 | Plan and manage Azure Data Factory costs | https://learn.microsoft.com/en-us/azure/data-factory/plan-manage-costs |
 | Assess and plan SSIS migration to Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/scenario-ssis-migration-overview |
 | Apply SSIS migration assessment rules for ADF/Synapse | https://learn.microsoft.com/en-us/azure/data-factory/scenario-ssis-migration-rules |
@@ -310,56 +310,56 @@ This skill requires **network access** to fetch documentation content:
 | Integrate Amazon RDS for Oracle with Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-amazon-rds-for-oracle |
 | Copy data from Amazon RDS for SQL Server with ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-amazon-rds-for-sql-server |
 | Integrate Azure Data Factory with Amazon Redshift | https://learn.microsoft.com/en-us/azure/data-factory/connector-amazon-redshift |
-| Copy data from S3-compatible storage using ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-amazon-s3-compatible-storage |
+| Configure ADF Amazon S3-compatible storage connector | https://learn.microsoft.com/en-us/azure/data-factory/connector-amazon-s3-compatible-storage |
 | Copy and transform data in Amazon S3 with ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-amazon-simple-storage-service |
 | Transform AppFigures data with ADF Data Flows | https://learn.microsoft.com/en-us/azure/data-factory/connector-appfigures |
 | Transform Asana data with ADF Data Flows | https://learn.microsoft.com/en-us/azure/data-factory/connector-asana |
 | Copy and transform data in Azure Blob Storage with ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-azure-blob-storage |
-| Transform Azure Cosmos DB analytical store data with ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-azure-cosmos-analytical-store |
+| Transform data in Cosmos DB analytical store via ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-azure-cosmos-analytical-store |
 | Copy and transform data in Azure Cosmos DB for NoSQL | https://learn.microsoft.com/en-us/azure/data-factory/connector-azure-cosmos-db |
 | Copy data to and from Azure Cosmos DB for MongoDB | https://learn.microsoft.com/en-us/azure/data-factory/connector-azure-cosmos-db-mongodb-api |
 | Copy and transform data in Azure Data Explorer with ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-azure-data-explorer |
 | Copy and transform data in Azure Data Lake Storage Gen2 | https://learn.microsoft.com/en-us/azure/data-factory/connector-azure-data-lake-storage |
-| Copy data to and from Azure Data Lake Storage Gen1 | https://learn.microsoft.com/en-us/azure/data-factory/connector-azure-data-lake-store |
-| Copy data from Azure Database for MariaDB using ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-azure-database-for-mariadb |
-| Copy and transform data in Azure Database for MySQL with ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-azure-database-for-mysql |
+| Copy data to and from Data Lake Storage Gen1 using ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-azure-data-lake-store |
+| Copy data from Azure Database for MariaDB with ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-azure-database-for-mariadb |
+| Copy and transform data in Azure Database for MySQL using ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-azure-database-for-mysql |
 | Copy and transform data in Azure Database for PostgreSQL | https://learn.microsoft.com/en-us/azure/data-factory/connector-azure-database-for-postgresql |
 | Copy data to and from Azure Databricks Delta Lake with ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-azure-databricks-delta-lake |
 | Copy data to and from Azure Files using ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-azure-file-storage |
-| Copy data into Azure Search index using ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-azure-search |
+| Push data to Azure Search index with ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-azure-search |
 | Copy and transform data in Azure Synapse Analytics with ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-azure-sql-data-warehouse |
 | Copy and transform data in Azure SQL Database with ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-azure-sql-database |
 | Copy and transform data in Azure SQL Managed Instance | https://learn.microsoft.com/en-us/azure/data-factory/connector-azure-sql-managed-instance |
 | Copy data to and from Azure Table storage using ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-azure-table-storage |
 | Copy data from Cassandra using Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-cassandra |
-| Integrate Azure Data Factory with Concur source | https://learn.microsoft.com/en-us/azure/data-factory/connector-concur |
+| Configure Azure Data Factory Concur connector | https://learn.microsoft.com/en-us/azure/data-factory/connector-concur |
 | Integrate Azure Data Factory with Couchbase source | https://learn.microsoft.com/en-us/azure/data-factory/connector-couchbase |
 | Transform data in data.world using Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-dataworld |
-| Configure DB2 connector for Azure Data Factory copy | https://learn.microsoft.com/en-us/azure/data-factory/connector-db2 |
+| Integrate Azure Data Factory with DB2 | https://learn.microsoft.com/en-us/azure/data-factory/connector-db2 |
 | Integrate Azure Data Factory with Apache Drill | https://learn.microsoft.com/en-us/azure/data-factory/connector-drill |
-| Copy data from Dynamics AX using Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-dynamics-ax |
+| Use Dynamics AX connector in Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-dynamics-ax |
 | Copy and transform Dynamics 365/Dataverse data with ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-dynamics-crm-office-365 |
 | Copy data to and from file systems with ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-file-system |
-| Copy data from FTP servers using Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-ftp |
-| Connect Azure Data Factory CDM to GitHub | https://learn.microsoft.com/en-us/azure/data-factory/connector-github |
-| Configure Google Ads connector for Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-google-adwords |
+| Configure FTP connector for Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-ftp |
+| Connect Azure Data Factory to GitHub for CDM | https://learn.microsoft.com/en-us/azure/data-factory/connector-github |
+| Configure Google Ads connector in Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-google-adwords |
 | Copy data from Google BigQuery V2 with Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-google-bigquery |
 | Copy data from Google BigQuery V1 with Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-google-bigquery-legacy |
 | Copy data from Google Cloud Storage using ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-google-cloud-storage |
-| Transform data in Google Sheets using Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-google-sheets |
+| Transform Google Sheets data with ADF data flows | https://learn.microsoft.com/en-us/azure/data-factory/connector-google-sheets |
 | Configure Greenplum connector for Azure Data Factory copy | https://learn.microsoft.com/en-us/azure/data-factory/connector-greenplum |
 | Integrate Azure Data Factory with HBase source | https://learn.microsoft.com/en-us/azure/data-factory/connector-hbase |
-| Copy data from HDFS with Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-hdfs |
+| Use HDFS connector with Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-hdfs |
 | Copy data from Hive using Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-hive |
-| Copy data from HTTP endpoints with Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-http |
+| Configure HTTP source connector in Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-http |
 | Copy data from HubSpot using Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-hubspot |
 | Integrate Azure Data Factory with Impala source | https://learn.microsoft.com/en-us/azure/data-factory/connector-impala |
-| Copy data to and from IBM Informix using Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-informix |
+| Integrate IBM Informix with Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-informix |
 | Configure Azure Data Factory Jira connector for copy | https://learn.microsoft.com/en-us/azure/data-factory/connector-jira |
 | Copy data from Magento using Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-magento |
 | Copy data from MariaDB using Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-mariadb |
-| Copy data from Marketo using Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-marketo |
-| Copy data to and from Microsoft Access using Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-microsoft-access |
+| Configure Marketo connector in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-marketo |
+| Use Microsoft Access connector with Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-microsoft-access |
 | Copy and transform data in Microsoft Fabric Lakehouse | https://learn.microsoft.com/en-us/azure/data-factory/connector-microsoft-fabric-lakehouse |
 | Copy and transform data in Microsoft Fabric Warehouse | https://learn.microsoft.com/en-us/azure/data-factory/connector-microsoft-fabric-warehouse |
 | Copy data to and from MongoDB using ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-mongodb |
@@ -368,52 +368,52 @@ This skill requires **network access** to fetch documentation content:
 | Use Azure Data Factory MySQL connector | https://learn.microsoft.com/en-us/azure/data-factory/connector-mysql |
 | Configure Azure Data Factory Netezza connector | https://learn.microsoft.com/en-us/azure/data-factory/connector-netezza |
 | Configure Azure Data Factory OData connector | https://learn.microsoft.com/en-us/azure/data-factory/connector-odata |
-| Use ODBC connector in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-odbc |
+| Configure Azure Data Factory ODBC connector | https://learn.microsoft.com/en-us/azure/data-factory/connector-odbc |
 | Copy and transform Microsoft 365 data with Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-office-365 |
-| Connect Azure Data Factory to Oracle Cloud Storage | https://learn.microsoft.com/en-us/azure/data-factory/connector-oracle-cloud-storage |
+| Integrate Oracle Cloud Storage with Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-oracle-cloud-storage |
 | Connect Azure Data Factory to Oracle Eloqua | https://learn.microsoft.com/en-us/azure/data-factory/connector-oracle-eloqua |
 | Connect Azure Data Factory to Oracle Responsys | https://learn.microsoft.com/en-us/azure/data-factory/connector-oracle-responsys |
-| Connect Azure Data Factory to Oracle Service Cloud | https://learn.microsoft.com/en-us/azure/data-factory/connector-oracle-service-cloud |
+| Use Oracle Service Cloud connector in Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-oracle-service-cloud |
 | Connect Azure Data Factory to PayPal data | https://learn.microsoft.com/en-us/azure/data-factory/connector-paypal |
 | Use Azure Data Factory Phoenix connector | https://learn.microsoft.com/en-us/azure/data-factory/connector-phoenix |
 | Use PostgreSQL V2 connector in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-postgresql |
-| Use PostgreSQL V1 connector in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-postgresql-legacy |
+| Configure PostgreSQL V1 connector in Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-postgresql-legacy |
 | Use Azure Data Factory Presto connector | https://learn.microsoft.com/en-us/azure/data-factory/connector-presto |
 | Transform Quickbase data with ADF data flows | https://learn.microsoft.com/en-us/azure/data-factory/connector-quickbase |
 | Connect Azure Data Factory to QuickBooks Online | https://learn.microsoft.com/en-us/azure/data-factory/connector-quickbooks |
 | Use REST connector for copy and transform in ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-rest |
 | Use Salesforce V2 connector in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-salesforce |
-| Use Salesforce V1 connector in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-salesforce-legacy |
-| Connect Azure Data Factory to Salesforce Marketing Cloud | https://learn.microsoft.com/en-us/azure/data-factory/connector-salesforce-marketing-cloud |
+| Connect Salesforce V1 to Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-salesforce-legacy |
+| Integrate Salesforce Marketing Cloud with Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-salesforce-marketing-cloud |
 | Use Salesforce Service Cloud V2 connector in Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-salesforce-service-cloud |
 | Use Salesforce Service Cloud V1 connector in ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-salesforce-service-cloud-legacy |
-| Copy from SAP BW using Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-sap-business-warehouse |
-| Copy from SAP BW via Open Hub using ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-sap-business-warehouse-open-hub |
+| Configure SAP BW connector for Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-sap-business-warehouse |
+| Use SAP BW Open Hub connector in Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-sap-business-warehouse-open-hub |
 | Transform SAP ODP data with SAP CDC connector | https://learn.microsoft.com/en-us/azure/data-factory/connector-sap-change-data-capture |
-| Copy data to and from SAP Cloud for Customer | https://learn.microsoft.com/en-us/azure/data-factory/connector-sap-cloud-for-customer |
+| Connect SAP Cloud for Customer with Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-sap-cloud-for-customer |
 | Copy data from SAP ECC with Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-sap-ecc |
 | Configure SAP HANA connector in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-sap-hana |
 | Copy data from SAP tables using ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-sap-table |
-| Configure ServiceNow V2 connector in Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-servicenow |
-| Use ServiceNow V1 connector in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-servicenow-legacy |
+| Use ServiceNow V2 connector with Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-servicenow |
+| Configure ServiceNow V1 connector in Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-servicenow-legacy |
 | Copy and transform data via SFTP connector in ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-sftp |
 | Copy data from SharePoint Online lists with ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-sharepoint-online-list |
 | Connect Azure Data Factory to Shopify data | https://learn.microsoft.com/en-us/azure/data-factory/connector-shopify |
-| Transform Smartsheet data with Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-smartsheet |
+| Transform Smartsheet data using Data Factory data flows | https://learn.microsoft.com/en-us/azure/data-factory/connector-smartsheet |
 | Configure Snowflake V2 connector and data flows | https://learn.microsoft.com/en-us/azure/data-factory/connector-snowflake |
-| Use Snowflake V1 connector in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-snowflake-legacy |
+| Configure Snowflake V1 connector in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-snowflake-legacy |
 | Configure Spark connector in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-spark |
 | Configure Azure Data Factory SQL Server connector | https://learn.microsoft.com/en-us/azure/data-factory/connector-sql-server |
 | Set up Azure Data Factory Square connector | https://learn.microsoft.com/en-us/azure/data-factory/connector-square |
-| Configure Sybase connector in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-sybase |
+| Set up Sybase connector for Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-sybase |
 | Use TeamDesk connector for ADF data flows | https://learn.microsoft.com/en-us/azure/data-factory/connector-teamdesk |
 | Configure Azure Data Factory Teradata Vantage connector | https://learn.microsoft.com/en-us/azure/data-factory/connector-teradata |
 | Use Twilio connector for ADF data flows | https://learn.microsoft.com/en-us/azure/data-factory/connector-twilio |
 | Configure Vertica connector in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-vertica |
-| Configure Web Table connector in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-web-table |
+| Use Web Table connector in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-web-table |
 | Integrate Azure Data Factory with Xero connector | https://learn.microsoft.com/en-us/azure/data-factory/connector-xero |
-| Use Zendesk connector for ADF data flows | https://learn.microsoft.com/en-us/azure/data-factory/connector-zendesk |
-| Configure Zoho connector in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-zoho |
+| Transform Zendesk data with Azure Data Factory data flows | https://learn.microsoft.com/en-us/azure/data-factory/connector-zendesk |
+| Configure Zoho connector (End of Support) in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-zoho |
 | Configure Azure Function activity in Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/control-flow-azure-function-activity |
 | Call REST endpoints with Web activity | https://learn.microsoft.com/en-us/azure/data-factory/control-flow-web-activity |
 | Configure Webhook activity for callback control in Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/control-flow-webhook-activity |

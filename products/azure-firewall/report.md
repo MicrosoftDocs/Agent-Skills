@@ -53,8 +53,8 @@ confusable_not_for: Not for Azure Firewall Manager (use azure-firewall-manager),
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 84
+- **Updated Pages**: 0
+- **Unchanged**: 85
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-firewall/azure-firewall.csv`
 
@@ -74,11 +74,6 @@ confusable_not_for: Not for Azure Firewall Manager (use azure-firewall-manager),
 | *(Unclassified)* | 25 | 29.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [Portal](https://learn.microsoft.com/en-us/azure/firewall/tutorial-hybrid-portal-policy)
-  - Updated: 2026-01-27T08:00:00.000Z → 2026-06-23T05:11:00.000Z
 
 ## Classified Pages
 

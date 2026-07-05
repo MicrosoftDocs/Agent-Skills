@@ -42,8 +42,8 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 71
+- **Updated Pages**: 0
+- **Unchanged**: 73
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-artifacts/azure-artifacts.csv`
 
@@ -61,13 +61,6 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 | *(Unclassified)* | 19 | 26.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [Npm scopes](https://learn.microsoft.com/en-us/azure/devops/artifacts/npm/scopes?view=azure-devops)
-  - Updated: 2025-12-19T16:56:00.000Z → 2026-06-24T01:04:00.000Z
-- [Npm audit](https://learn.microsoft.com/en-us/azure/devops/artifacts/npm/npm-audit?view=azure-devops)
-  - Updated: 2024-02-08T20:22:00.000Z → 2026-06-24T01:04:00.000Z
 
 ## Classified Pages
 

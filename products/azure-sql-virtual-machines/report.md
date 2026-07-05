@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-06-28'
+generated_at: '2026-07-05'
 category_descriptions:
   decision-making: Guidance for choosing Azure SQL options and pricing, comparing
     SQL VMs vs Managed Instance, planning migrations (including Db2), HADR choices,
     regional feature support, and SQL VM licensing/AHB.
-  troubleshooting: 'Diagnosing and fixing Azure SQL and SQL Server on Azure VMs issues:
-    connectivity, performance, capacity, memory, I/O, geo-replication, and transaction
-    log full errors.'
+  troubleshooting: Diagnosing and fixing performance, connectivity, capacity, memory,
+    log, replication, and I/O issues for Azure SQL Database, Managed Instance, and
+    SQL Server on Azure VMs
   architecture-patterns: 'High-level designs and patterns for SQL Server on Azure
     VMs: connectivity, Always On availability groups, failover cluster instances,
     and Windows Server Failover Clustering setup.'
@@ -30,32 +30,31 @@ category_descriptions:
 skill_description: Expert knowledge for SQL Server on Azure Virtual Machines development
   including troubleshooting, best practices, decision making, architecture & design
   patterns, limits & quotas, security, configuration, integrations & coding patterns,
-  and deployment. Use when planning SQL VM vs Managed Instance, Always On AG/FCI,
-  WSFC, SQL IaaS Agent, or Blob backup with MI, and other SQL Server on Azure Virtual
-  Machines related development tasks. Not for Azure SQL Database (use azure-sql-database),
+  and deployment. Use when planning SQL VM vs Managed Instance, Always On/FCI, HADR,
+  AHB licensing, or Blob backup with managed identity, and other SQL Server on Azure
+  Virtual Machines related development tasks. Not for Azure SQL Database (use azure-sql-database),
   Azure SQL Managed Instance (use azure-sql-managed-instance), Azure Virtual Machines
-  (use azure-virtual-machines), SAP HANA on Azure Large Instances (use azure-sap).
-use_when: Use when planning SQL VM vs Managed Instance, Always On AG/FCI, WSFC, SQL
-  IaaS Agent, or Blob backup with MI, and other SQL Server on Azure Virtual Machines
+  (use azure-virtual-machines).
+use_when: Use when planning SQL VM vs Managed Instance, Always On/FCI, HADR, AHB licensing,
+  or Blob backup with managed identity, and other SQL Server on Azure Virtual Machines
   related development tasks.
 confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure SQL
-  Managed Instance (use azure-sql-managed-instance), Azure Virtual Machines (use azure-virtual-machines),
-  SAP HANA on Azure Large Instances (use azure-sap).
+  Managed Instance (use azure-sql-managed-instance), Azure Virtual Machines (use azure-virtual-machines).
 ---
 # SQL Server on Azure Virtual Machines Crawl Report
 
 ## Summary
 
-- **Total Pages**: 128
-- **Fetched**: 128
+- **Total Pages**: 127
+- **Fetched**: 127
 - **Fetch Failed**: 0
-- **Classified**: 99
+- **Classified**: 98
 - **Unclassified**: 29
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 4
-- **Unchanged**: 123
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 126
 - **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sql-virtual-machines/azure-sql-virtual-machines.csv`
 
@@ -64,36 +63,26 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 5 | 3.9% |
-| best-practices | 10 | 7.8% |
-| configuration | 38 | 29.7% |
-| decision-making | 9 | 7.0% |
+| best-practices | 10 | 7.9% |
+| configuration | 38 | 29.9% |
+| decision-making | 9 | 7.1% |
 | deployment | 13 | 10.2% |
 | integrations | 2 | 1.6% |
 | limits-quotas | 1 | 0.8% |
-| security | 8 | 6.2% |
+| security | 7 | 5.5% |
 | troubleshooting | 13 | 10.2% |
-| *(Unclassified)* | 29 | 22.7% |
+| *(Unclassified)* | 29 | 22.8% |
 
 ## Changes
 
-### New Pages
-
-- [Extended Security Updates (ESU)](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/extended-security-updates-sql-vm?view=azuresql)
-
 ### Updated Pages
 
-- [FAQ](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/frequently-asked-questions-faq?view=azuresql)
-  - Updated: 2026-06-19T22:39:00.000Z → 2026-06-22T22:37:00.000Z
-- [From Oracle](https://learn.microsoft.com/en-us/azure/azure-sql/migration-guides/virtual-machines/oracle-to-sql-on-azure-vm-guide?view=azuresql)
-  - Updated: 2025-09-17T08:00:00.000Z → 2026-06-22T08:00:00.000Z
-- [Migrating SQL Server Workloads FAQ](https://learn.microsoft.com/en-us/azure/azure-sql/migration-guides/modernization?view=azuresql)
-  - Updated: 2026-02-19T08:00:00.000Z → 2026-06-22T08:00:00.000Z
-- [Documentation](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/?view=azuresql)
-  - Updated: 2025-11-24T18:39:00Z → 2026-06-23T22:41:00Z
+- [Known issues with Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-known-issues?view=azuresql)
+  - Updated: 2026-05-01T08:00:00.000Z → 2026-06-25T08:00:00.000Z
 
 ### Deleted Pages
 
-- ~~Extend support for SQL Server~~ (https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/sql-server-extend-end-of-support?view=azuresql)
+- ~~EKM with AKV using managed identities~~ (https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/managed-identity-extensible-key-management?view=azuresql)
 
 ## Classified Pages
 
@@ -107,13 +96,12 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | [Transaction log errors in Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/troubleshoot-transaction-log-errors-issues?view=azuresql-mi) | troubleshooting | 0.86 | The page targets Azure SQL Managed Instance and addresses specific transaction log full errors (9002, 40552), explaining their causes and how to resolve them in this particular platform. It follows a symptom → cause → solution structure with platform-specific guidance, which fits the troubleshooting sub-skill and contains expert operational knowledge. |
 | [Capacity errors during deployment](https://learn.microsoft.com/en-us/azure/azure-sql/capacity-errors-troubleshoot?view=azuresql) | troubleshooting | 0.80 | Guides diagnosis and resolution of capacity errors with specific error messages and recommended actions for SQL Database and Managed Instance. |
 | [Common connection issues](https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-common-connectivity-issues?view=azuresql) | troubleshooting | 0.80 | The article explicitly focuses on preventing, diagnosing, and mitigating connection and transient errors, and will include specific error patterns, connection string options, retry logic settings, and symptom→cause→solution guidance unique to Azure SQL, which fits the troubleshooting category. |
-| [EKM with AKV using managed identities](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/managed-identity-extensible-key-management?view=azuresql) | security | 0.80 | Combines managed identities, TDE EKM, and Key Vault; involves specific security configuration parameters and role assignments unique to this integration. |
 | [HADR configuration](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/hadr-cluster-best-practices?view=azuresql) | best-practices | 0.80 | Provides supported cluster configurations and best practices for AGs and FCIs on Azure VMs, including Azure-specific settings. |
 | [Microsoft Entra authentication](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/configure-azure-ad-authentication-for-sql-vm?view=azuresql) | security | 0.80 | Configuring Entra ID auth for SQL VMs requires specific roles, connection strings, and configuration steps that are product-specific security settings. |
 | [Troubleshoot out of memory errors](https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-memory-errors-issues?view=azuresql) | troubleshooting | 0.80 | Focuses on out-of-memory errors with causes and remediation steps, including references to service objective limits. |
 | [With the Azure portal](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/manage-sql-vm-portal?view=azuresql) | configuration | 0.80 | Explains SQL VM management settings exposed via the SQL virtual machines resource, including SQL-specific configuration options. |
 | [Distributed network name (DNN)](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/failover-cluster-instance-distributed-network-name-dnn-configure?view=azuresql) | configuration | 0.78 | DNN setup for FCI requires specific cluster resource names and Azure networking parameters that are product-specific configuration details. |
-| [Known issues with Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-known-issues?view=azuresql) | troubleshooting | 0.78 | A 'known issues' page for a specific Azure service typically lists concrete symptoms, causes, and workarounds or resolutions for product-specific problems. These are time-sensitive, expert details that change over time and are unlikely to be fully captured in model training. The structure aligns with troubleshooting (symptom → cause → workaround/resolution), rather than generic concepts or limits. |
+| [Known issues with Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-known-issues?view=azuresql) | troubleshooting | 0.78 | The page is a catalog of current known issues for Azure SQL Managed Instance, each with product-specific symptoms and workarounds or resolution details. This is expert troubleshooting knowledge that maps issues to causes and fixes, and is not just conceptual guidance. |
 | [SSL root certificate expiring](https://learn.microsoft.com/en-us/azure/azure-sql/updates/ssl-root-certificate-expiring?view=azuresql) | security | 0.78 | Details certificate authority changes and required client configuration updates to maintain secure connections, which are product-specific security settings. |
 | [Storage](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/performance-guidelines-best-practices-storage?view=azuresql) | best-practices | 0.78 | The page provides product-specific performance best practices for SQL Server on Azure VMs, including concrete recommendations on disk types, storage pool configurations, and caching strategies tailored to Azure infrastructure. These are actionable, implementation-focused guidelines rather than generic concepts, and include configuration details unique to SQL Server on Azure Virtual Machines. |
 | [VM vCore customization](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/vm-vcore-customization-for-sql?view=azuresql) | configuration | 0.78 | The article describes how to configure VM vCore customization (Configurable Constrained Cores and disabling SMT) specifically for SQL Server on Azure VMs, including product-specific settings and options that control how many vCores are exposed and how SMT is configured. These are concrete configuration parameters and behaviors unique to this Azure SQL VM scenario, rather than generic performance guidance. |

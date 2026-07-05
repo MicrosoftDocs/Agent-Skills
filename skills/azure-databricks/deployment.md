@@ -8,9 +8,15 @@
 | Topic | URL |
 |-------|-----|
 | Configure managed disaster recovery for Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/admin/managed-disaster-recovery |
-| Set up and manage serverless SQL warehouses in Databricks | https://learn.microsoft.com/en-us/azure/databricks/admin/sql/serverless |
 | Deploy Azure Databricks workspaces using Azure CLI | https://learn.microsoft.com/en-us/azure/databricks/admin/workspace/azure-cli |
 | Deploy Azure Databricks workspaces with PowerShell | https://learn.microsoft.com/en-us/azure/databricks/admin/workspace/powershell |
+| Deploy custom AI agents on Databricks Apps | https://learn.microsoft.com/en-us/azure/databricks/agents/agent-framework/author-agent |
+| Deploy custom AI agents on Model Serving | https://learn.microsoft.com/en-us/azure/databricks/agents/agent-framework/author-agent-model-serving |
+| Build and deploy chat UIs with Databricks Apps | https://learn.microsoft.com/en-us/azure/databricks/agents/agent-framework/chat-app |
+| Set up CI/CD for Databricks Apps agents | https://learn.microsoft.com/en-us/azure/databricks/agents/agent-framework/cicd-agent-app |
+| Deploy Databricks agents via Model Serving | https://learn.microsoft.com/en-us/azure/databricks/agents/agent-framework/deploy-agent |
+| Productionize Databricks Apps AI agents | https://learn.microsoft.com/en-us/azure/databricks/agents/agent-framework/productionize-agent |
+| Host custom MCP servers on Databricks Apps | https://learn.microsoft.com/en-us/azure/databricks/agents/mcp/custom-mcp |
 | Deploy Databricks stacks using the legacy Stack CLI | https://learn.microsoft.com/en-us/azure/databricks/archive/dev-tools/cli/stack-cli |
 | Deploy Databricks workflows using dbx by Databricks Labs | https://learn.microsoft.com/en-us/azure/databricks/archive/dev-tools/dbx/dbx |
 | Deploy MLflow models with legacy Databricks Model Serving | https://learn.microsoft.com/en-us/azure/databricks/archive/legacy-model-serving/model-serving |
@@ -32,34 +38,28 @@
 | Deploy Databricks apps using UI and CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-apps/deploy |
 | Deploy Scala JARs to Databricks serverless compute | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-connect/scala/jar-compile |
 | Use Declarative Automation Bundles with Databricks VS Code | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/vscode-ext/bundles |
-| Deploy custom AI agents using Databricks Apps | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/agent-framework/author-agent |
-| Deploy chat UI agents with Databricks Apps | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/agent-framework/chat-app |
-| Set up CI/CD for Databricks Apps agents with GitHub Actions | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/agent-framework/cicd-agent-app |
-| Deploy AI agents on Databricks Model Serving | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/agent-framework/deploy-agent |
-| Productionize Databricks Apps agents with governance and scaling | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/agent-framework/productionize-agent |
 | Deploy managed Aha! ingestion pipelines in Lakeflow | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/aha-pipeline |
 | Build GitHub ingestion pipelines with Lakeflow Connect | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/github-pipeline |
 | Create managed Google Ads ingestion pipelines | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/google-ads-pipeline |
 | Ingest GA4 data via Lakeflow Connect and BigQuery | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/google-analytics-pipeline |
 | Build HubSpot ingestion pipelines with Lakeflow Connect | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/hubspot-pipeline |
 | Create managed Jira ingestion pipelines in Databricks | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/jira-pipeline |
-| Automate Azure Databricks job management with CLI, SDK, and REST | https://learn.microsoft.com/en-us/azure/databricks/jobs/automate |
+| Automate Lakeflow Jobs creation and management via APIs | https://learn.microsoft.com/en-us/azure/databricks/jobs/automate |
+| Run Lakeflow Jobs on serverless compute for workflows | https://learn.microsoft.com/en-us/azure/databricks/jobs/run-serverless-jobs |
 | Plan Infrastructure as Code for Databricks deployments | https://learn.microsoft.com/en-us/azure/databricks/lakehouse-architecture/deployment-guide/iac |
-| Requirements and constraints for standalone pipelines | https://learn.microsoft.com/en-us/azure/databricks/ldp/dbsql/compute |
-| Deploy and use Databricks Feature Serving endpoints | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/feature-store/feature-function-serving |
-| Deploy provisioned throughput Foundation Model APIs in Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/foundation-model-apis/deploy-prov-throughput-foundation-model-apis |
+| Deploy Databricks batch inference pipelines with AI Functions | https://learn.microsoft.com/en-us/azure/databricks/large-language-models/batch-inference-pipelines |
+| Deploy provisioned throughput Foundation Model APIs | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/foundation-model-apis/deploy-prov-throughput-foundation-model-apis |
 | Implement CI/CD for machine learning on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/mlops/ci-cd-for-ml |
 | Automate Databricks MLOps with Stacks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/mlops/mlops-stacks |
-| Deploy AI and ML models using Databricks Model Serving | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/ |
+| Create and configure foundation model endpoints | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/create-foundation-model-endpoints |
 | Use express deployments for Databricks model endpoints | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/express-deployments |
 | Start Ray clusters as jobs on Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ray/start-ray |
 | Configure MLflow 3 deployment jobs on Databricks | https://learn.microsoft.com/en-us/azure/databricks/mlflow/deployment-job |
-| Use registry prompts in deployed GenAI apps | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/prompt-version-mgmt/prompt-registry/use-prompts-in-deployed-apps |
-| Deploy GenAI agents on Databricks with tracing | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/tracing/prod-tracing |
-| Enable MLflow tracing for agents deployed off Databricks | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/tracing/prod-tracing-external |
+| Use MLflow Prompt Registry in production GenAI deployments | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/prompt-version-mgmt/prompt-registry/use-prompts-in-deployed-apps |
+| Deploy Databricks GenAI apps with automatic tracing | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/tracing/prod-tracing |
+| Enable MLflow tracing for externally deployed agents | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/tracing/prod-tracing-external |
 | Create and manage Lakebase Provisioned instances | https://learn.microsoft.com/en-us/azure/databricks/oltp/instances/create/ |
 | Upgrade Azure Databricks Lakebase to Autoscaling | https://learn.microsoft.com/en-us/azure/databricks/oltp/upgrade-to-autoscaling |
-| Migrate Databricks HTTP routing to serverless compute | https://learn.microsoft.com/en-us/azure/databricks/query-federation/http-migration |
 | Integrate Databricks Git folders into CI/CD workflows | https://learn.microsoft.com/en-us/azure/databricks/repos/ci-cd |
 | Check regional feature availability for Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/resources/feature-region-support |
 | Understand Azure Databricks platform release windows | https://learn.microsoft.com/en-us/azure/databricks/resources/platform-release |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-07'
+generated_at: '2026-07-05'
 category_descriptions:
   decision-making: 'Planning and sizing Azure Site Recovery: choosing tools vs Azure
     Migrate, VMware/Hyper-V DR capacity and cost estimation, managed disk pricing,
@@ -16,9 +16,9 @@ category_descriptions:
   integrations: Automating and integrating Azure Site Recovery with scripts and infrastructure
     tools (PowerShell, ARM/Bicep, Terraform) plus networking/traffic (ExpressRoute,
     Traffic Manager) and Hyper-V/VMware DR planning.
-  limits-quotas: 'Site Recovery scale, capacity, and support limits: VM/Hyper‑V/VMware
-    matrices, high‑churn limits, shared disks, Mobility service usage, planner limits,
-    and safe use with Azure Backup.'
+  limits-quotas: 'Limits, capacity planning, and compatibility for Azure Site Recovery:
+    churn limits, safe use with Backup, planner limitations, VMware/physical support,
+    scaling, and Mobility service resource usage.'
   security: 'Securing Azure Site Recovery: NSGs, TLS, encryption changes, RBAC, managed
     identities, and hardening replication appliances/VMware replication traffic.'
   architecture-patterns: Designing Azure Site Recovery architectures for specific
@@ -30,17 +30,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Site Recovery development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when planning ASR for VMware/Hyper-V, Azure VMs, shared disks, ExpressRoute
-  traffic, or SAP/SQL workloads, and other Azure Site Recovery related development
+  Use when planning or automating ASR for Azure VMs, VMware/Hyper-V, physical servers,
+  ExpressRoute, or SQL workloads, and other Azure Site Recovery related development
   tasks. Not for Azure Backup (use azure-backup), Azure Migrate (use azure-migrate),
-  Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Network (use
-  azure-virtual-network).
-use_when: Use when planning ASR for VMware/Hyper-V, Azure VMs, shared disks, ExpressRoute
-  traffic, or SAP/SQL workloads, and other Azure Site Recovery related development
+  Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Machine Scale
+  Sets (use azure-vm-scalesets).
+use_when: Use when planning or automating ASR for Azure VMs, VMware/Hyper-V, physical
+  servers, ExpressRoute, or SQL workloads, and other Azure Site Recovery related development
   tasks.
 confusable_not_for: Not for Azure Backup (use azure-backup), Azure Migrate (use azure-migrate),
-  Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Network (use
-  azure-virtual-network).
+  Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Machine Scale
+  Sets (use azure-vm-scalesets).
 ---
 # Azure Site Recovery Crawl Report
 
@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Backup (use azure-backup), Azure Migrate (use 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 202
+- **Updated Pages**: 1
+- **Unchanged**: 201
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-site-recovery/azure-site-recovery.csv`
 
@@ -76,11 +76,15 @@ confusable_not_for: Not for Azure Backup (use azure-backup), Azure Migrate (use 
 
 ## Changes
 
+### Updated Pages
+
+- [Azure VM Disaster Recovery - High Churn Support](https://learn.microsoft.com/en-us/azure/site-recovery/concepts-azure-to-azure-high-churn-support)
+  - Updated: 2026-01-06T08:00:00.000Z → 2026-07-02T11:41:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
-| [Azure VM Disaster Recovery - High Churn Support](https://learn.microsoft.com/en-us/azure/site-recovery/concepts-azure-to-azure-high-churn-support) | limits-quotas | 0.95 | Explicitly documents churn limits (100 MB/s vs 54 MB/s) and options; this is precise numeric limit information central to the article. |
 | [Azure VM connectivity issues](https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-troubleshoot-network-connectivity) | troubleshooting | 0.90 | Focuses on connectivity issues with explicit requirements for URLs/IP ranges and NSG/firewall rules; maps symptoms to causes and fixes, which is expert troubleshooting content. |
 | [Azure VM disaster recovery replication errors](https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-troubleshoot-replication) | troubleshooting | 0.90 | Explicit troubleshooting article for replication; includes specific behaviors, error conditions, and resolutions unique to Site Recovery. |
 | [Azure VM extension issues](https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-extension-troubleshoot) | troubleshooting | 0.90 | Troubleshooting VM agent/extension errors; will list error codes/messages and targeted fixes, which are product-specific troubleshooting mappings. |
@@ -92,6 +96,7 @@ confusable_not_for: Not for Azure Backup (use azure-backup), Azure Migrate (use 
 | [Protection errors](https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-protection-errors) | troubleshooting | 0.90 | Explicit troubleshooting guide for protection errors; will contain specific error codes/messages and their resolutions, which is classic expert troubleshooting content. |
 | [Replication errors](https://learn.microsoft.com/en-us/azure/site-recovery/vmware-azure-troubleshoot-replication) | troubleshooting | 0.90 | Explicit troubleshooting for replication issues; includes common issues and specific errors with their resolutions. |
 | [Virtual Machine errors](https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-virtual-machine-errors) | troubleshooting | 0.90 | Troubleshooting VM errors during replication; organized by error with causes and fixes, which is product-specific troubleshooting knowledge. |
+| [Azure VM Disaster Recovery - High Churn Support](https://learn.microsoft.com/en-us/azure/site-recovery/concepts-azure-to-azure-high-churn-support) | limits-quotas | 0.86 | The page specifies exact supported churn/data change rate limits per Azure VM (e.g., 54 MB/s for Normal Churn, 100 MB/s previous limit, 500 MB/s with High Churn), which are product-specific numerical constraints that an LLM wouldn't reliably know from training. These are precise limits/quotas tied to specific options in Azure Site Recovery, matching the limits-quotas criteria. |
 | [VMware vCenter discovery failures](https://learn.microsoft.com/en-us/azure/site-recovery/vmware-azure-troubleshoot-vcenter-discovery-failures) | troubleshooting | 0.86 | The page is a focused troubleshooting guide for VMware vCenter discovery failures in Azure Site Recovery. It is organized around specific failure scenarios and provides product-specific diagnosis and resolution steps, likely including concrete error messages, log locations, and prescribed fixes. This matches the troubleshooting criteria of symptom → cause → solution with Azure Site Recovery–specific details that go beyond generic debugging knowledge. |
 | [VMware/physical to Azure](https://learn.microsoft.com/en-us/azure/site-recovery/vmware-physical-azure-support-matrix) | limits-quotas | 0.86 | A 'support matrix' page for Site Recovery VMware/physical DR typically contains detailed, product-specific compatibility tables (supported OS versions, hypervisor versions, agent versions, storage types, etc.) and constraints that are not derivable from general knowledge. These are effectively hard limits/constraints for what is supported and are maintained as reference data, matching the limits-quotas category best among the available options. |
 | [Azure Site Recovery Provider upgrade failures](https://learn.microsoft.com/en-us/azure/site-recovery/vmware-azure-troubleshoot-upgrade-failures) | troubleshooting | 0.85 | Targets upgrade failures with specific causes and fixes; product-version-specific troubleshooting guidance. |

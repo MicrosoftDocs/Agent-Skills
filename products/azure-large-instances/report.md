@@ -35,8 +35,8 @@ confusable_not_for: Not for Azure Baremetal Infrastructure (use azure-baremetal-
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 9
+- **Updated Pages**: 0
+- **Unchanged**: 10
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-large-instances/azure-large-instances.csv`
 
@@ -50,11 +50,6 @@ confusable_not_for: Not for Azure Baremetal Infrastructure (use azure-baremetal-
 | *(Unclassified)* | 7 | 70.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [Azure Large Instances for Epic workload](https://learn.microsoft.com/en-us/azure/azure-large-instances/workloads/epic/)
-  - Updated: 2024-08-04T11:36:00Z → 2026-06-23T17:23:00Z
 
 ## Classified Pages
 

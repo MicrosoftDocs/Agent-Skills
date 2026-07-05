@@ -1,9 +1,9 @@
 ---
 name: azure-virtual-desktop
-description: Expert knowledge for Azure Virtual Desktop development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing AVD host pools, FSLogix profiles, autoscale, MSIX App Attach, or Teams optimization, and other Azure Virtual Desktop related development tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Dev Box (use azure-dev-box), Azure VMware Solution (use azure-vmware-solution), Azure Data Science Virtual Machines (use azure-data-science-vm).
+description: Expert knowledge for Azure Virtual Desktop development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing AVD host pools, FSLogix profiles, autoscale, WebRTC/Teams optimization, or secure SSO/MFA, and other Azure Virtual Desktop related development tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Dev Box (use azure-dev-box), Azure Lab Services (use azure-lab-services), Azure VMware Solution (use azure-vmware-solution).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-28"
+  generated_at: "2026-07-05"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Virtual Desktop Skill
@@ -24,15 +24,15 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L53 | Diagnosing and fixing AVD issues: agent updates, MSIX App Attach, autoscale, FQDN/connectivity, connection quality, graphics, session host health/updates, hybrid onboarding, and Teams. |
-| Best Practices | L54-L64 | Guidance on AVD autoscale, Advisor recommendations, validation host pools, FAQs, proxy settings, Start VM on Connect, and Windows Enterprise multi-session configuration best practices |
-| Decision Making | L65-L80 | Guidance for planning and choosing AVD deployment models, autoscale, storage, licensing, host/session management, data locations, and cost/ESU strategies. |
+| Troubleshooting | L37-L53 | Diagnosing and fixing AVD issues: agent updates, autoscale, connectivity/FQDN, connection quality logs, graphics/Teams performance, session host health, hybrid onboarding, and Log Analytics queries. |
+| Best Practices | L54-L64 | Best practices for autoscaling, host pool validation, proxy usage, Start VM on Connect, Windows multi-session configuration, and resolving Azure Advisor/FAQ guidance for Azure Virtual Desktop. |
+| Decision Making | L65-L80 | Guidance on planning and choosing AVD deployment models, autoscale, host pool and session host management, storage, data locations, licensing, costs, ESU, and extended/local zones. |
 | Architecture & Design Patterns | L81-L88 | Design patterns for AVD app delivery, stateless hosts, DR, FSLogix profile containers, and automated scaling with Automation/Logic Apps. |
 | Limits & Quotas | L89-L94 | Guidance on RDP bandwidth requirements and optimizing Microsoft Teams (audio/video, collaboration features) performance and configuration in Azure Virtual Desktop. |
 | Security | L95-L115 | Securing Azure Virtual Desktop: SSO (Entra ID/AD FS), MFA/Conditional Access, RBAC, external identities, managed identities, redirection controls, watermarking, screen capture protection, and Purview forensic setup. |
-| Configuration | L116-L175 | Configuring AVD host pools, images, autoscale, networking, RDP/peripheral redirection, Teams/OneDrive/M365 optimizations, licensing, monitoring, and client/RemoteApp behavior. |
+| Configuration | L116-L175 | Configuring AVD host pools, images, autoscale, networking, RDP/RemoteApp features, redirection, Teams/Office, licensing, monitoring, and client settings for optimized deployments. |
 | Integrations & Coding Patterns | L176-L182 | Managing AVD via CLI/PowerShell, integrating partner App Attach delivery, enabling WebRTC multimedia redirection, and launching resources using custom URI schemes. |
-| Deployment | L183-L193 | Guides for deploying and migrating AVD: adding session hosts, moving from classic, hybrid/on-prem setups, regional host pools, region moves, and client/MMR deployment via Intune/ConfigMgr. |
+| Deployment | L183-L192 | Guides for deploying and migrating AVD: adding session hosts, moving from classic, hybrid/on-prem setups, regional host pools, region moves, and client/MMR deployment via Intune/ConfigMgr. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -54,7 +54,7 @@ This skill requires **network access** to fetch documentation content:
 ### Best Practices
 | Topic | URL |
 |-------|-----|
-| Use Azure Virtual Desktop autoscale effectively | https://learn.microsoft.com/en-us/azure/virtual-desktop/autoscale-faq |
+| Apply autoscale best practices for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/autoscale-faq |
 | Resolve Azure Advisor recommendations for AVD | https://learn.microsoft.com/en-us/azure/virtual-desktop/azure-advisor-recommendations |
 | Configure Azure Virtual Desktop validation host pools | https://learn.microsoft.com/en-us/azure/virtual-desktop/configure-validation-environment |
 | Apply Azure Virtual Desktop FAQ best practices | https://learn.microsoft.com/en-us/azure/virtual-desktop/faq |
@@ -163,7 +163,7 @@ This skill requires **network access** to fetch documentation content:
 | Enable enhanced RemoteApp windowing in Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/remoteapp-enhancements |
 | Allow required FQDNs and endpoints for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/required-fqdn-endpoint |
 | Configure scheduled agent updates for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/scheduled-agent-updates |
-| Configure session host update for Azure Virtual Desktop host pools | https://learn.microsoft.com/en-us/azure/virtual-desktop/session-host-update-configure |
+| Configure session host update for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/session-host-update-configure |
 | Set preferred application group type on AVD host pools | https://learn.microsoft.com/en-us/azure/virtual-desktop/set-preferred-application-group-type |
 | Prepare and upload a custom VHD image for AVD | https://learn.microsoft.com/en-us/azure/virtual-desktop/set-up-customize-master-image |
 | Build a golden image for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/set-up-golden-image |
@@ -183,7 +183,6 @@ This skill requires **network access** to fetch documentation content:
 ### Deployment
 | Topic | URL |
 |-------|-----|
-| Add session host VMs to Azure Virtual Desktop host pools | https://learn.microsoft.com/en-us/azure/virtual-desktop/add-session-hosts-host-pool |
 | Automatically migrate from AVD (classic) to Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/automatic-migration |
 | Deploy Azure Virtual Desktop Hybrid On-premises | https://learn.microsoft.com/en-us/azure/virtual-desktop/deploy-azure-virtual-desktop-hybrid |
 | Deploy Azure Virtual Desktop MMR Insider extension via Intune | https://learn.microsoft.com/en-us/azure/virtual-desktop/deploy-insider-extension |

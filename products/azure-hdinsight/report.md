@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-24'
+generated_at: '2026-07-05'
 category_descriptions:
   configuration: 'Configuring and tuning HDInsight clusters: networking/VPN, Ambari/Hive/Spark/HBase
     settings, autoscale, monitoring/logging, SSH/Jupyter/VS Code access, and script-based
@@ -51,8 +51,8 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 426
+- **Updated Pages**: 2
+- **Unchanged**: 424
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-hdinsight/azure-hdinsight.csv`
 
@@ -72,6 +72,13 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 | *(Unclassified)* | 89 | 20.9% |
 
 ## Changes
+
+### Updated Pages
+
+- [Release notes](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-release-notes)
+  - Updated: 2025-10-29T08:00:00.000Z → 2026-07-01T11:42:00.000Z
+- [Archived release notes for Azure HDInsight](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-release-notes-archive)
+  - Updated: 2025-10-28T08:00:00.000Z → 2026-06-29T08:00:00.000Z
 
 ## Classified Pages
 
@@ -433,7 +440,6 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 | [.NET samples](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-sdk-dotnet-samples) | 0.40 | Primarily a pointer to GitHub .NET samples and subscription benefits; little in-page expert configuration or limits content. |
 | [Analyze stored tweets](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-analyze-twitter-data-linux) | 0.40 | Scenario tutorial for analyzing X/Twitter data with Hive; mostly step-by-step usage rather than structured configuration, limits, or troubleshooting mappings. |
 | [Apache Hadoop architecture in HDInsight](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-architecture) | 0.40 | Describes Hadoop architecture concepts and HDInsight’s use of HDFS-compatible storage; largely conceptual without detailed limits or config tables. |
-| [Archived release notes for Azure HDInsight](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-release-notes-archive) | 0.40 | Archived release notes are historical changelogs; while detailed, they don’t align with the defined expert-knowledge sub-skill types like troubleshooting or configuration matrices. |
 | [Copy Hive tables across Storage Accounts](https://learn.microsoft.com/en-us/azure/hdinsight/interactive-query/hive-migration-across-storage-accounts) | 0.40 | How-to migration steps for Hive tables across storage accounts; no config tables, limits, or product-specific patterns beyond generic scripting. |
 | [Delete a cluster](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-delete-cluster) | 0.40 | Describes ways to delete clusters via portal/CLI/PowerShell; no indication of limits, config tables, or decision matrices. |
 | [Develop C# streaming MapReduce programs](https://learn.microsoft.com/en-us/azure/hdinsight/hadoop/apache-hadoop-dotnet-csharp-mapreduce-streaming) | 0.40 | Shows how to implement MapReduce with C# and Hadoop streaming; appears as a step-by-step coding tutorial without configuration matrices, limits, or detailed troubleshooting mappings. |
@@ -443,7 +449,6 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 | [Python samples](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-sdk-python-samples) | 0.40 | Primarily a pointer to Python samples and a deprecation note; lacks detailed config tables or error mappings. |
 | [Query Apache HBase - Apache Phoenix](https://learn.microsoft.com/en-us/azure/hdinsight/hbase/apache-hbase-query-with-phoenix) | 0.40 | Quickstart for Apache Phoenix with HBase; mainly shows basic usage, not detailed configuration tables or limits. |
 | [Reboot cluster nodes](https://learn.microsoft.com/en-us/azure/hdinsight/cluster-reboot-vm) | 0.40 | Operational guide to reboot unresponsive VMs; mostly procedural steps without detailed configuration parameters or limits. |
-| [Release notes](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-release-notes) | 0.40 | Release notes are highly version-specific but generally a changelog; they don’t fit the defined sub-skill categories like limits, troubleshooting, or configuration tables. |
 | [Upload data for Apache Hadoop jobs](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-upload-data) | 0.40 | General data upload methods (CLI, Explorer, PowerShell, Sqoop); mostly tutorial-style without detailed config tables or limits. |
 | [Use Apache Hive as an extract, transform, and load (ETL) tool](https://learn.microsoft.com/en-us/azure/hdinsight/hadoop/apache-hadoop-using-apache-hive-as-an-etl-tool) | 0.40 | Explains using Hive as an ETL tool conceptually and procedurally; no clear evidence of detailed configuration tables, limits, or decision matrices. |
 | [Use Apache Kafka Producer and Consumer API](https://learn.microsoft.com/en-us/azure/hdinsight/kafka/apache-kafka-producer-consumer-api) | 0.40 | Tutorial on Producer/Consumer APIs from Java; mostly generic Kafka API usage, not HDInsight-specific configuration tables or limits. |
@@ -466,6 +471,7 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 | [Versioning introduction](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-overview-versioning) | 0.35 | Explains how versioning works conceptually; no strong indication of numeric limits, decision matrices, or config parameter tables. |
 | [Analyze data using BI tools](https://learn.microsoft.com/en-us/azure/hdinsight/spark/apache-spark-use-bi-tools) | 0.30 | Tutorial for connecting Power BI to Spark data; integration is mostly wizard-driven and not a detailed config/parameter reference. |
 | [Apache Hive with Hadoop](https://learn.microsoft.com/en-us/azure/hdinsight/hadoop/hdinsight-use-hive) | 0.30 | Introductory article on Hive and HiveQL usage; mostly conceptual and basic usage, not deep configuration or troubleshooting. |
+| [Archived release notes for Azure HDInsight](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-release-notes-archive) | 0.30 | Archived release notes similarly focus on historical updates. The description does not indicate structured limits, configuration parameters, troubleshooting mappings, or decision guidance that meet the expert knowledge criteria. |
 | [Build an ETL pipeline](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-sales-insights-etl) | 0.30 | End-to-end ETL tutorial; primarily workflow steps and general integration, not focused on reusable config tables or limits. |
 | [Bulk load data into Apache Phoenix using psql](https://learn.microsoft.com/en-us/azure/hdinsight/hbase/apache-hbase-phoenix-psql) | 0.30 | Bulk loading with psql appears as a procedural tutorial; summary doesn’t indicate detailed config tables or product-specific parameters. |
 | [Create Apache Hadoop cluster - ARM Template](https://learn.microsoft.com/en-us/azure/hdinsight/hadoop/apache-hadoop-linux-tutorial-get-started) | 0.30 | Quickstart using an ARM template to create a Hadoop cluster; primarily a template-based tutorial without detailed deployment constraints or comparisons. |
@@ -481,6 +487,7 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 | [Develop Java MapReduce programs](https://learn.microsoft.com/en-us/azure/hdinsight/hadoop/apache-hadoop-develop-deploy-java-mapreduce-linux) | 0.30 | Maven-based Java MapReduce creation and execution tutorial; lacks structured configuration references, limits, or specialized troubleshooting content. |
 | [Manage HDInsight clusters - Portal](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-administer-use-portal-linux) | 0.30 | Portal management walkthrough; mostly operational UI steps without detailed config tables or expert-only parameters. |
 | [Manage clusters using the Apache Ambari web UI](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-manage-ambari) | 0.30 | General Ambari UI usage for monitoring and configuration; likely step-by-step UI guide without detailed config parameter tables or limits. |
+| [Release notes](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-release-notes) | 0.30 | Release notes pages can contain detailed changes, but based on the summary provided, there is no clear indication of specific limits, configuration tables, error codes, or decision matrices. Without access to the full content, it appears to be primarily update information rather than structured expert knowledge as defined. |
 | [Run queries on an Apache Spark cluster](https://learn.microsoft.com/en-us/azure/hdinsight/spark/apache-spark-load-data-run-query) | 0.30 | Tutorial on loading data and running queries; focuses on basic Spark usage rather than HDInsight-specific expert configuration. |
 | [Run the MapReduce samples](https://learn.microsoft.com/en-us/azure/hdinsight/hadoop/apache-hadoop-run-samples-linux) | 0.30 | Primarily a how-to/tutorial for running bundled MapReduce samples via SSH and Hadoop commands; no detailed configuration tables, limits, or product-specific troubleshooting content. |
 | [Use Data Lake Storage Gen2 in the portal](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-use-data-lake-storage-gen2-portal) | 0.30 | Portal-based cluster creation tutorial; no indication of configuration parameter tables, limits, or troubleshooting content. |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-28'
+generated_at: '2026-07-05'
 category_descriptions:
   security: 'Securing Container Apps: auth (Entra, social, OIDC, mTLS, certs), identities/secrets,
     network controls (NSG, firewall, private endpoints), and policy/best-practice
@@ -22,25 +22,25 @@ category_descriptions:
   troubleshooting: 'Diagnosing and fixing Container Apps issues: deploy/start/exit
     failures, image pulls, health probes, ports, storage mounts, runtime/OCI errors,
     debug console, and Java log-level troubleshooting.'
-  limits-quotas: Limits, quotas, and default behaviors for Container Apps (including
-    express preview), plus how to review current limits and request quota increases.
+  limits-quotas: Quotas, limits, and scaling caps for Container Apps, plus how they
+    behave at those limits and how to request quota increases from Azure support.
   architecture-patterns: Architectures and patterns for Java microservices on Azure
     Container Apps, including Eureka HA clusters, AI-enabled PetClinic, and end-to-end
     microservice design best practices.
 skill_description: Expert knowledge for Azure Container Apps development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when configuring ACA ingress/scale, Dapr microservices, Entra/OIDC auth, GitHub
-  Actions CI/CD, or Arc-enabled clusters, and other Azure Container Apps related development
-  tasks. Not for Azure App Service (use azure-app-service), Azure Functions (use azure-functions),
-  Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Container Instances
-  (use azure-container-instances).
-use_when: Use when configuring ACA ingress/scale, Dapr microservices, Entra/OIDC auth,
-  GitHub Actions CI/CD, or Arc-enabled clusters, and other Azure Container Apps related
+  Use when securing ingress/auth, configuring KEDA/Dapr scaling, integrating Arc AKS,
+  mounting storage, or tuning Java apps, and other Azure Container Apps related development
+  tasks. Not for Azure Container Instances (use azure-container-instances), Azure
+  Kubernetes Service (AKS) (use azure-kubernetes-service), Azure App Service (use
+  azure-app-service), Azure Functions (use azure-functions).
+use_when: Use when securing ingress/auth, configuring KEDA/Dapr scaling, integrating
+  Arc AKS, mounting storage, or tuning Java apps, and other Azure Container Apps related
   development tasks.
-confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Functions
-  (use azure-functions), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
-  Azure Container Instances (use azure-container-instances).
+confusable_not_for: Not for Azure Container Instances (use azure-container-instances),
+  Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure App Service
+  (use azure-app-service), Azure Functions (use azure-functions).
 ---
 # Azure Container Apps Crawl Report
 
@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 224
+- **Updated Pages**: 1
+- **Unchanged**: 225
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-container-apps/azure-container-apps.csv`
 
@@ -78,10 +78,8 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 
 ### Updated Pages
 
-- [Workload profiles](https://learn.microsoft.com/en-us/azure/container-apps/workload-profiles-overview)
-  - Updated: 2026-01-23T18:22:00.000Z → 2026-06-26T22:12:00.000Z
-- [Azure Arc-enabled Kubernetes clusters](https://learn.microsoft.com/en-us/azure/container-apps/azure-arc-overview)
-  - Updated: 2025-09-10T22:40:00.000Z → 2026-06-22T08:00:00.000Z
+- [Container Apps frequently asked questions](https://learn.microsoft.com/en-us/azure/container-apps/faq)
+  - Updated: 2025-12-23T06:12:00.000Z → 2026-06-30T22:12:00.000Z
 
 ## Classified Pages
 
@@ -161,7 +159,7 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [Connect to Eureka Server for Spring](https://learn.microsoft.com/en-us/azure/container-apps/java-eureka-server) | integrations | 0.70 | Connecting Container Apps to a managed Eureka Server for Spring involves binding configuration, connection parameters, and possibly SDK or Spring configuration properties specific to this Azure component. This is a concrete integration pattern between Container Apps and Eureka, fitting integrations. |
 | [Connect to Gateway for Spring](https://learn.microsoft.com/en-us/azure/container-apps/java-gateway-for-spring) | integrations | 0.70 | Creating and wiring a Gateway for Spring to route requests to Container Apps is an integration scenario with product-specific configuration (gateway definitions, routing to apps, bindings). This is a concrete integration and coding pattern between Container Apps and Gateway for Spring, so it fits integrations. |
 | [Consumption-only environment type](https://learn.microsoft.com/en-us/azure/container-apps/environment-type-consumption-only) | decision-making | 0.70 | Describes features and billing considerations for a specific legacy environment type and when to use it versus newer options, which is environment/tier selection guidance. |
-| [Container Apps frequently asked questions](https://learn.microsoft.com/en-us/azure/container-apps/faq) | limits-quotas | 0.70 | FAQ pages for Azure Container Apps typically include concrete platform behaviors and numeric constraints (for example, scale limits, port restrictions, supported resource ranges, or feature-specific limits) that are not obvious from general training data. These are expert, product-specific details and often include exact values, making limits-quotas the best fit among the available categories. |
+| [Container Apps frequently asked questions](https://learn.microsoft.com/en-us/azure/container-apps/faq) | limits-quotas | 0.70 | The FAQ includes concrete, product-specific limits and behaviors such as maximum container app revisions, scale limits, port and protocol constraints, and other numeric or tightly specified operational limits that aren't generally known from training data. These are presented as exact values and conditions, matching the limits-quotas criteria more than other categories. |
 | [Container debug console](https://learn.microsoft.com/en-us/azure/container-apps/container-debug-console) | troubleshooting | 0.70 | Debug console is a troubleshooting tool; article explains when and how to use it, including platform-specific behavior like one debug container per app. |
 | [Create a highly available Eureka server component cluster](https://learn.microsoft.com/en-us/azure/container-apps/java-eureka-server-highly-available) | architecture-patterns | 0.70 | Focuses on HA design for Eureka using multiple instances and clustering; product-specific pattern for resilience and scaling of the service registry. |
 | [Dapr component resiliency](https://learn.microsoft.com/en-us/azure/container-apps/dapr-component-resiliency) | configuration | 0.70 | Page explains how to configure resiliency policies (retries, timeouts, circuit breakers) for Dapr components in Azure Container Apps. It focuses on product-specific configuration of resiliency settings rather than generic resiliency concepts, matching the configuration category. |

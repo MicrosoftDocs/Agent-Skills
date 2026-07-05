@@ -1,9 +1,9 @@
 ---
 name: azure-site-recovery
-description: Expert knowledge for Azure Site Recovery development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when planning ASR for VMware/Hyper-V, Azure VMs, shared disks, ExpressRoute traffic, or SAP/SQL workloads, and other Azure Site Recovery related development tasks. Not for Azure Backup (use azure-backup), Azure Migrate (use azure-migrate), Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Network (use azure-virtual-network).
+description: Expert knowledge for Azure Site Recovery development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when planning or automating ASR for Azure VMs, VMware/Hyper-V, physical servers, ExpressRoute, or SQL workloads, and other Azure Site Recovery related development tasks. Not for Azure Backup (use azure-backup), Azure Migrate (use azure-migrate), Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Machine Scale Sets (use azure-vm-scalesets).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-07"
+  generated_at: "2026-07-05"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Site Recovery Skill
@@ -28,7 +28,7 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L65-L70 | Guidance on tuning Azure Site Recovery performance: analyzing high data churn on VMs, and monitoring/troubleshooting process server health, capacity, and throughput. |
 | Decision Making | L71-L88 | Planning and sizing Azure Site Recovery: choosing tools vs Azure Migrate, VMware/Hyper-V DR capacity and cost estimation, managed disk pricing, failover/failback options, and classic-to-modern migration. |
 | Architecture & Design Patterns | L89-L98 | Designing Azure Site Recovery architectures for specific workloads (AD/DNS, SAP, Dynamics AX, SharePoint, IIS, SQL, VMware, file servers) and multi-tier app DR patterns. |
-| Limits & Quotas | L99-L109 | Site Recovery scale, capacity, and support limits: VM/Hyper‑V/VMware matrices, high‑churn limits, shared disks, Mobility service usage, planner limits, and safe use with Azure Backup. |
+| Limits & Quotas | L99-L109 | Limits, capacity planning, and compatibility for Azure Site Recovery: churn limits, safe use with Backup, planner limitations, VMware/physical support, scaling, and Mobility service resource usage. |
 | Security | L110-L120 | Securing Azure Site Recovery: NSGs, TLS, encryption changes, RBAC, managed identities, and hardening replication appliances/VMware replication traffic. |
 | Configuration | L121-L179 | Configuring Azure Site Recovery for Azure VMs, VMware, Hyper-V, and physical servers, including networking, encryption, policies, appliances, monitoring, and replication/failback setup. |
 | Integrations & Coding Patterns | L180-L193 | Automating and integrating Azure Site Recovery with scripts and infrastructure tools (PowerShell, ARM/Bicep, Terraform) plus networking/traffic (ExpressRoute, Traffic Manager) and Hyper-V/VMware DR planning. |
@@ -99,7 +99,7 @@ This skill requires **network access** to fetch documentation content:
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
-| Use high churn support limits for Azure VM DR | https://learn.microsoft.com/en-us/azure/site-recovery/concepts-azure-to-azure-high-churn-support |
+| Use Azure Site Recovery high churn limits for VMs | https://learn.microsoft.com/en-us/azure/site-recovery/concepts-azure-to-azure-high-churn-support |
 | Use Azure Site Recovery with Azure Backup safely | https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-backup-interoperability |
 | Review version history and limitations of Site Recovery Deployment Planner | https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-deployment-planner-history |
 | Plan capacity for VMware disaster recovery with Site Recovery | https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-plan-capacity-vmware |

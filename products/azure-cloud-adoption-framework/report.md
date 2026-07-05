@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-28'
+generated_at: '2026-07-05'
 category_descriptions:
   scenarios: 'End-to-end adoption patterns for AI agents, AKS, RHEL, ARO, AVD, Citrix,
     AVS, Oracle, SAP: landing zones, identity, networking, security, BCDR, automation,
@@ -42,17 +42,17 @@ use_when: Use when designing Azure landing zones, AKS, AVD/AVS, SAP/Oracle workl
 
 ## Summary
 
-- **Total Pages**: 327
-- **Fetched**: 327
+- **Total Pages**: 328
+- **Fetched**: 328
 - **Fetch Failed**: 0
 - **Classified**: 319
-- **Unclassified**: 8
+- **Unclassified**: 9
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 2
-- **Unchanged**: 323
-- **Deleted Pages**: 3
+- **New Pages**: 1
+- **Updated Pages**: 0
+- **Unchanged**: 327
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cloud-adoption-framework/azure-cloud-adoption-framework.csv`
 
 ## Classification Statistics
@@ -64,31 +64,17 @@ use_when: Use when designing Azure landing zones, AKS, AVD/AVS, SAP/Oracle workl
 | operations | 31 | 9.5% |
 | organization | 14 | 4.3% |
 | planning | 24 | 7.3% |
-| readiness | 114 | 34.9% |
+| readiness | 114 | 34.8% |
 | scenarios | 53 | 16.2% |
 | security | 23 | 7.0% |
 | strategy | 15 | 4.6% |
-| *(Unclassified)* | 8 | 2.4% |
+| *(Unclassified)* | 9 | 2.7% |
 
 ## Changes
 
 ### New Pages
 
-- [AI adoption](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/strategy)
-- [2. Govern & secure agents](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai-agents/governance-security-across-organization)
-
-### Updated Pages
-
-- [Define your naming convention](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming)
-  - Updated: 2025-09-12T18:02:00.000Z → 2026-06-25T18:08:00.000Z
-- [Tools](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/resources/tools-templates)
-  - Updated: 2026-05-19T20:03:00.000Z → 2026-06-24T15:03:00.000Z
-
-### Deleted Pages
-
-- ~~Governance and security~~ (https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai-agents/governance-security-across-organization)
-- ~~Responsible AI~~ (https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai-agents/responsible-ai-across-organization)
-- ~~AI adoption~~ (https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/)
+- [Why Azure?](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/why-azure)
 
 ## Classified Pages
 
@@ -426,3 +412,4 @@ use_when: Use when designing Azure landing zones, AKS, AVD/AVS, SAP/Oracle workl
 | [Overview](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/resource-org) | 0.30 | High-level overview of the resource organization design area without deep implementation specifics; primarily conceptual framing. |
 | [What is the Cloud Adoption Framework?](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/overview) | 0.10 | High-level overview of the Microsoft Cloud Adoption Framework without deep implementation details, decision trees, or methodology-specific expert guidance; primarily conceptual and navigational content. |
 | [What's new](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/whats-new) | 0.10 | Page is a change log/updates overview for the Cloud Adoption Framework, summarizing new and deprecated content and navigation pointers. It does not itself contain deep implementation guidance, methodologies, or detailed frameworks that match any sub-skill detection hints. |
+| [Why Azure?](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/why-azure) | - | High-level, marketing-style overview of Azure value and platform strengths for decision makers; does not include detailed methodologies, frameworks, or implementation guidance that match any CAF sub-skill detection hints. |

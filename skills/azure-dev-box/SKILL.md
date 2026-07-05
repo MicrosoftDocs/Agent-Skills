@@ -1,9 +1,9 @@
 ---
 name: azure-dev-box
-description: Expert knowledge for Azure Dev Box development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing Dev Box images, catalogs, policies, schedules, RBAC/SSO access, or VS Code dev tunnel workflows, and other Azure Dev Box related development tasks. Not for Azure DevTest Labs (use azure-devtest-labs), Azure Virtual Machines (use azure-virtual-machines), Azure Lab Services (use azure-lab-services), Azure Virtual Desktop (use azure-virtual-desktop).
+description: Expert knowledge for Azure Dev Box development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing Dev Box images, catalogs/pools, RBAC/SSO access, VS dev tunnels, or region moves, and other Azure Dev Box related development tasks. Not for Azure DevTest Labs (use azure-devtest-labs), Azure Virtual Machines (use azure-virtual-machines), Azure Lab Services (use azure-lab-services), Azure Virtual Desktop (use azure-virtual-desktop).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-17"
+  generated_at: "2026-07-05"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Dev Box Skill
@@ -29,7 +29,7 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L53-L58 | Guidance on planning Dev Box deployments (networking, images, capacity) and deciding or preparing to move from Dev Box to Windows 365, including design and transition considerations. |
 | Limits & Quotas | L59-L64 | Managing Dev Box capacity: requesting quota/core limit increases and configuring per-user Dev Box limits to control usage and costs. |
 | Security | L65-L76 | Securing Dev Box access and sessions: RBAC roles, guest access, SSO, API auth, Key Vault/service principals, Intune Conditional Access and Endpoint Privilege Management. |
-| Configuration | L77-L104 | Configuring Dev Box infrastructure: networks, images, catalogs, policies, schedules (stop/hibernate/auto-delete), monitoring, and ARM/template-based provisioning and management. |
+| Configuration | L77-L104 | Configuring Dev Box infrastructure: networking, images, catalogs, policies, schedules (stop/hibernate/autodelete), pools/projects/dev centers, and monitoring/log schemas. |
 | Integrations & Coding Patterns | L105-L109 | Using VS Code dev tunnels to securely connect to Azure Dev Box, including setup, authentication, and remote development workflow configuration. |
 | Deployment | L110-L113 | Planning and rolling out Dev Box environments, including architecture and configuration, plus guidance for moving Dev Box pools and individual boxes between Azure regions. |
 
@@ -100,7 +100,7 @@ This skill requires **network access** to fetch documentation content:
 | Reference for Dev Box monitoring logs and metrics | https://learn.microsoft.com/en-us/azure/dev-box/monitor-dev-box-reference |
 | Configure core Microsoft Dev Box resources | https://learn.microsoft.com/en-us/azure/dev-box/quickstart-configure-dev-box-service |
 | Configure Dev Box resources with Get Started template | https://learn.microsoft.com/en-us/azure/dev-box/quickstart-get-started-template |
-| Reference schema for Dev Box imagedefinition.yaml and task.yaml | https://learn.microsoft.com/en-us/azure/dev-box/reference-dev-box-customizations |
+| Configure Dev Box imagedefinition.yaml and task.yaml schemas | https://learn.microsoft.com/en-us/azure/dev-box/reference-dev-box-customizations |
 
 ### Integrations & Coding Patterns
 | Topic | URL |

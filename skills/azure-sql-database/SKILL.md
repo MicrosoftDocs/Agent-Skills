@@ -1,9 +1,9 @@
 ---
 name: azure-sql-database
-description: Expert knowledge for Azure SQL Database development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when choosing Azure SQL tiers, configuring geo-replication, securing with Entra/MI, or automating with ARM/Terraform, and other Azure SQL Database related development tasks. Not for Azure SQL Managed Instance (use azure-sql-managed-instance), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Cosmos DB (use azure-cosmos-db), Azure Data Explorer (use azure-data-explorer).
+description: Expert knowledge for Azure SQL Database development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when choosing tiers/Hyperscale, configuring geo-replication/DR, Entra auth/Always Encrypted, elastic pools/sharding, or automation APIs, and other Azure SQL Database related development tasks. Not for Azure SQL Managed Instance (use azure-sql-managed-instance), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Cosmos DB (use azure-cosmos-db), Azure Database for PostgreSQL (use azure-database-postgresql).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-28"
+  generated_at: "2026-07-05"
   generator: "docs2skills/1.0.0"
 ---
 # Azure SQL Database Skill
@@ -24,7 +24,7 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L61 | Diagnosing and fixing Azure SQL issues: performance (CPU, memory, deadlocks, blocking), connectivity, scaling, import/export, geo-replication, Data Sync, and transaction log errors. |
+| Troubleshooting | L37-L61 | Diagnosing and fixing Azure SQL issues: performance (CPU, memory, deadlocks, blocking), connectivity, scaling, import/export, geo-replication, Data Sync, Elastic Scale, and log-full errors. |
 | Best Practices | L62-L79 | Best practices for Azure SQL operations: monitoring, security, HA/DR, failover, read replicas, maintenance, space management, elastic pools, Data Sync, and post-migration T-SQL adaptation. |
 | Decision Making | L80-L107 | Guidance for choosing Azure SQL tiers, pricing models, licensing, Hyperscale options, DR/HA, automation, and migration paths from SQL Server or legacy features. |
 | Architecture & Design Patterns | L108-L124 | Patterns and architectures for geo-replication, DR, availability, sharding/elastic scale-out, connectivity/routing, rolling upgrades, and multitenant SaaS design in Azure SQL. |

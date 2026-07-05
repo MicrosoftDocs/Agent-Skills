@@ -7,10 +7,23 @@
 ### Integrations & Coding Patterns
 | Topic | URL |
 |-------|-----|
-| Query LLMs and agents via Databricks UIs, SQL, and APIs | https://learn.microsoft.com/en-us/azure/databricks/agents/query-llms |
+| Use Databricks Supervisor API to build agents | https://learn.microsoft.com/en-us/azure/databricks/agents/agent-bricks/supervisor-api |
+| Connect Databricks agents to tools and MCP servers | https://learn.microsoft.com/en-us/azure/databricks/agents/agent-framework/agent-tool |
+| Enable Python code execution tools for agents | https://learn.microsoft.com/en-us/azure/databricks/agents/agent-framework/code-interpreter-tools |
+| Create Databricks AI tools from Unity Catalog functions | https://learn.microsoft.com/en-us/azure/databricks/agents/agent-framework/create-custom-tool |
+| Build non-conversational agents with MLflow | https://learn.microsoft.com/en-us/azure/databricks/agents/agent-framework/non-conversational-agents |
+| Query Databricks-deployed AI agents via APIs | https://learn.microsoft.com/en-us/azure/databricks/agents/agent-framework/query-agent |
+| Connect Databricks agents to structured data sources | https://learn.microsoft.com/en-us/azure/databricks/agents/agent-framework/structured-retrieval-tools |
+| Build Databricks Apps agents with Supervisor API | https://learn.microsoft.com/en-us/azure/databricks/agents/agent-framework/supervisor-api-app |
+| Integrate Databricks AI agents with Microsoft Teams | https://learn.microsoft.com/en-us/azure/databricks/agents/agent-framework/teams-agent |
+| Integrate Unity Catalog tools with LangChain and others | https://learn.microsoft.com/en-us/azure/databricks/agents/agent-framework/unity-catalog-tool-integration |
+| Connect Databricks agents to unstructured data | https://learn.microsoft.com/en-us/azure/databricks/agents/agent-framework/unstructured-retrieval-tools |
+| Use Databricks managed MCP servers for agent tools | https://learn.microsoft.com/en-us/azure/databricks/agents/mcp/managed-mcp |
+| Connect Databricks agents to MCP servers | https://learn.microsoft.com/en-us/azure/databricks/agents/mcp/use-mcp-in-agents |
+| Query Databricks LLMs and agents via APIs | https://learn.microsoft.com/en-us/azure/databricks/agents/query-llms |
 | Manage Databricks AI/BI assets via REST APIs | https://learn.microsoft.com/en-us/azure/databricks/ai-bi/admin/use-apis |
-| Integrate coding agents with Unity AI Gateway | https://learn.microsoft.com/en-us/azure/databricks/ai-gateway/coding-agent-integration-beta |
-| Query Unity AI Gateway endpoints via APIs | https://learn.microsoft.com/en-us/azure/databricks/ai-gateway/query-endpoints-beta |
+| Integrate coding agents with Unity AI model services | https://learn.microsoft.com/en-us/azure/databricks/ai-gateway/coding-agent-integration-model-services |
+| Query Unity Catalog model services via APIs | https://learn.microsoft.com/en-us/azure/databricks/ai-gateway/query-model-services |
 | Use custom Python embedding models with Databricks AI Search | https://learn.microsoft.com/en-us/azure/databricks/ai-search/custom-embedding-model |
 | Register and serve OSS embedding models for AI Search | https://learn.microsoft.com/en-us/azure/databricks/ai-search/embedding-with-oss-models |
 | Use Databricks AI Search Python SDK example notebooks | https://learn.microsoft.com/en-us/azure/databricks/ai-search/example-notebooks |
@@ -75,7 +88,7 @@
 | Use LOD expressions in Databricks metric views | https://learn.microsoft.com/en-us/azure/databricks/business-semantics/metric-views/level-of-detail |
 | Query Unity Catalog metric views from Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/business-semantics/metric-views/query |
 | Create and consume output tables in Databricks Clean Rooms | https://learn.microsoft.com/en-us/azure/databricks/clean-rooms/output-tables |
-| Configure JDBC Unity Catalog connections in Databricks | https://learn.microsoft.com/en-us/azure/databricks/connect/jdbc-connection |
+| Set up JDBC Unity Catalog connections in Databricks | https://learn.microsoft.com/en-us/azure/databricks/connect/jdbc-connection |
 | Use Spark data sources with Databricks external systems | https://learn.microsoft.com/en-us/azure/databricks/connect/spark-data-sources |
 | Connect Azure Databricks Structured Streaming to Kafka | https://learn.microsoft.com/en-us/azure/databricks/connect/streaming/kafka/ |
 | Subscribe to Google Pub/Sub with Databricks | https://learn.microsoft.com/en-us/azure/databricks/connect/streaming/pub-sub |
@@ -92,7 +105,6 @@
 | Create data profiles using Databricks quality_monitors API | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/data-quality-monitoring/data-profiling/create-monitor-api |
 | Add external lineage metadata to Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/external-lineage |
 | Use MERGE for Delta Lake upserts on Databricks | https://learn.microsoft.com/en-us/azure/databricks/delta/merge |
-| Expose Delta tables to Iceberg clients with UniForm | https://learn.microsoft.com/en-us/azure/databricks/delta/uniform |
 | Create user-defined operators in Lakeflow Designer | https://learn.microsoft.com/en-us/azure/databricks/designer/user-operators |
 | Use Databricks CLI command groups and operations | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/commands |
 | Run Databricks CLI from Azure Cloud Shell | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/databricks-cli-from-azure-cloud-shell |
@@ -166,7 +178,7 @@
 | Manage model serving endpoints via CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/serving-endpoints-commands |
 | Configure workspace settings using Databricks CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/settings-commands |
 | Manage Unity Catalog shares via Databricks CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/shares-commands |
-| Set up SSH connections via Databricks CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/ssh-commands |
+| Use Databricks CLI SSH commands for secure access | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/ssh-commands |
 | Manage Unity Catalog storage credentials via CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/storage-credentials-commands |
 | Sync local files to Databricks workspace via CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/sync-commands |
 | Manage system schemas via Databricks CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/system-schemas-commands |
@@ -200,51 +212,26 @@
 | Configure JetBrains DataGrip to connect to Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/datagrip |
 | Configure DBeaver to work with Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/dbeaver |
 | Run SQL from Go using Databricks SQL Driver | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/go-sql-driver |
-| Run SQL from Node.js using the Databricks SQL Driver | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/nodejs-sql-driver |
+| Use Databricks SQL Driver for Node.js securely | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/nodejs-sql-driver |
 | Use pyodbc to connect Python apps to Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/pyodbc |
-| Use the Databricks SQL Connector for Python | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/python-sql-connector |
+| Run SQL on Databricks with Python SQL Connector | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/python-sql-connector |
 | Use the English SDK to generate Spark code | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/sdk-english |
 | Automate Azure Databricks with Go SDK | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/sdk-go |
 | Automate Azure Databricks with Java SDK | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/sdk-java |
 | Use Databricks JavaScript SDKs for automation | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/sdk-javascript |
 | Automate Azure Databricks with Python SDK | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/sdk-python |
 | Automate Azure Databricks with R SDK | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/sdk-r |
-| Use the SQL Statement Execution API to run queries | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/sql-execution-tutorial |
 | Integrate SQLAlchemy with Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/sqlalchemy |
 | Use the Databricks SQLTools driver in VS Code | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/sqltools-driver |
+| Set up SSH tunnel from IDE to Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/ssh-tunnel |
 | Automate Unity Catalog deployment with Databricks Terraform | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/terraform/automate-uc |
 | Provision Databricks clusters, notebooks, and jobs with Terraform | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/terraform/cluster-notebook-job |
 | Manage Azure Databricks workspace resources using Terraform | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/terraform/workspace-management |
-| Configure Iceberg REST catalog for Unity tables | https://learn.microsoft.com/en-us/azure/databricks/external-access/iceberg |
+| Configure Iceberg REST catalog access to Unity Catalog tables | https://learn.microsoft.com/en-us/azure/databricks/external-access/iceberg |
 | Use Unity REST API from external Delta clients | https://learn.microsoft.com/en-us/azure/databricks/external-access/unity-rest |
 | Unzip and read compressed files in Databricks | https://learn.microsoft.com/en-us/azure/databricks/files/unzip-files |
-| Parse complex documents with Databricks Document Parsing | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/agent-bricks/document-parsing |
-| Use the Supervisor API to orchestrate custom agents | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/agent-bricks/supervisor-api |
-| Customize MLflow AI judges for agent evaluation | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/agent-evaluation/advanced-agent-eval |
-| Implement custom evaluation metrics in Databricks agents | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/agent-evaluation/custom-metrics |
-| Use built-in MLflow 2 AI judges and metrics | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/agent-evaluation/llm-judge-reference |
-| Configure AI agent tools and MCP integrations in Databricks | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/agent-framework/agent-tool |
-| Use Unity Catalog tools with Anthropic SDK | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/agent-framework/anthropic-uc-integration |
-| Author and deploy AI agents on Databricks Model Serving | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/agent-framework/author-agent-model-serving |
-| Use Databricks Python code interpreter tool in agents | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/agent-framework/code-interpreter-tools |
-| Create Databricks AI agent tools with Unity Catalog functions | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/agent-framework/create-custom-tool |
-| Connect Databricks agents to external services with MCP and OAuth | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/agent-framework/external-connection-tools |
-| Integrate LangChain and LangGraph with Databricks Unity Catalog tools | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/agent-framework/langchain-uc-integration |
-| Integrate LlamaIndex workflows with Unity Catalog tools | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/agent-framework/llamaindex-uc-integration |
-| Use Unity Catalog tools in OpenAI workflows | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/agent-framework/openai-uc-integration |
-| Query Databricks agents via APIs and clients | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/agent-framework/query-agent |
-| Integrate Databricks AI agents with Slack via HTTP connections | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/agent-framework/slack-agent |
-| Implement Databricks AI agents with Lakebase memory | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/agent-framework/stateful-agents |
-| Add Lakebase memory to Databricks Model Serving agents | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/agent-framework/stateful-agents-model-serving |
-| Connect Databricks agents to structured data sources | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/agent-framework/structured-retrieval-tools |
-| Build Databricks Apps agents with Supervisor API | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/agent-framework/supervisor-api-app |
-| Use Unity Catalog tools with third-party agent frameworks | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/agent-framework/unity-catalog-tool-integration |
-| Connect Databricks agents to unstructured data sources | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/agent-framework/unstructured-retrieval-tools |
-| Use Model Context Protocol on Databricks | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/mcp/ |
-| Connect to custom Databricks-hosted MCP servers from agents | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/mcp/custom-mcp-usage |
-| Connect Databricks agents to external MCP servers via proxy | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/mcp/external-mcp-usage |
-| Connect Genie Code to GitHub via native or MCP integration | https://learn.microsoft.com/en-us/azure/databricks/genie-code/github-mcp |
-| Integrate Genie Code Agent with MCP servers and connectors | https://learn.microsoft.com/en-us/azure/databricks/genie-code/mcp |
+| Integrate Genie Code with GitHub via MCP | https://learn.microsoft.com/en-us/azure/databricks/genie-code/github-mcp |
+| Connect Genie Code to MCP tools and SaaS | https://learn.microsoft.com/en-us/azure/databricks/genie-code/mcp |
 | Integrate Genie Spaces via Conversation and Management APIs | https://learn.microsoft.com/en-us/azure/databricks/genie/conversation-api |
 | Apply common Auto Loader data ingestion patterns | https://learn.microsoft.com/en-us/azure/databricks/ingestion/cloud-object-storage/auto-loader/patterns |
 | Load Unity Catalog tables using COPY INTO from ADLS | https://learn.microsoft.com/en-us/azure/databricks/ingestion/cloud-object-storage/copy-into/unity-catalog |
@@ -252,28 +239,27 @@
 | Convert Parquet and Iceberg tables to Delta Lake | https://learn.microsoft.com/en-us/azure/databricks/ingestion/data-migration/convert-to-delta |
 | Access file metadata via _metadata in Databricks | https://learn.microsoft.com/en-us/azure/databricks/ingestion/file-metadata-column |
 | Ingest Google Drive files into Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/ingestion/google-drive |
-| Configure Lakeflow Connect Dynamics 365 connector | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/d365-reference |
+| Build integrated CDC pipeline from MySQL to Databricks | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/mysql-integrated-pipeline |
 | Create Databricks Lakeflow ingestion pipelines from MySQL | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/mysql-pipeline |
 | Build managed Pendo ingestion pipelines with Lakeflow Connect | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/pendo-pipeline |
 | Ingest PostgreSQL data into Databricks with Lakeflow | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/postgresql-pipeline |
+| Build integrated SQL Server CDC pipelines in Lakeflow | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/sql-server-integrated-pipeline |
 | Ingest SQL Server data into Databricks with Lakeflow | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/sql-server-pipeline |
 | Configure TikTok Ads authentication for Lakeflow | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/tiktok-ads-source-setup |
 | Configure Workday HCM authentication for Databricks | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/workday-hcm-setup |
 | Configure Zendesk Support OAuth for Databricks | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/zendesk-support-source-setup |
 | Ingest OpenTelemetry data into Databricks via Zerobus | https://learn.microsoft.com/en-us/azure/databricks/ingestion/opentelemetry/ |
-| Ingest SFTP data with Lakeflow Auto Loader | https://learn.microsoft.com/en-us/azure/databricks/ingestion/sftp |
+| Ingest SFTP data with Databricks Auto Loader | https://learn.microsoft.com/en-us/azure/databricks/ingestion/sftp |
 | Ingest SharePoint files into Databricks Delta tables | https://learn.microsoft.com/en-us/azure/databricks/ingestion/sharepoint |
 | Ingest semi-structured data as VARIANT in Databricks | https://learn.microsoft.com/en-us/azure/databricks/ingestion/variant |
 | Use Arrow Flight with Zerobus Ingest for batch ingestion | https://learn.microsoft.com/en-us/azure/databricks/ingestion/zerobus-arrow-flight |
 | Ingest data with Zerobus Ingest in Lakeflow Connect | https://learn.microsoft.com/en-us/azure/databricks/ingestion/zerobus-ingest |
 | Configure OAuth SSO from Tableau Server to Databricks | https://learn.microsoft.com/en-us/azure/databricks/integrations/configure-oauth-tableau |
 | Use Azure Databricks Excel Add-in for Lakehouse data | https://learn.microsoft.com/en-us/azure/databricks/integrations/excel |
-| Import and query Databricks data from Excel | https://learn.microsoft.com/en-us/azure/databricks/integrations/excel-query |
-| Configure Azure Databricks Excel Add-in with SSO | https://learn.microsoft.com/en-us/azure/databricks/integrations/excel-setup |
 | Write Excel data back to Databricks Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/integrations/excel-write-back |
 | Use Databricks Connector to access data from Google Sheets | https://learn.microsoft.com/en-us/azure/databricks/integrations/google-sheets/ |
 | Set up Databricks Connector for Google Sheets | https://learn.microsoft.com/en-us/azure/databricks/integrations/google-sheets/connect |
-| Query Azure Databricks data from Google Sheets connector | https://learn.microsoft.com/en-us/azure/databricks/integrations/google-sheets/query-data |
+| Use Databricks Connector to query data in Google Sheets | https://learn.microsoft.com/en-us/azure/databricks/integrations/google-sheets/query-data |
 | Connect tools using the Databricks JDBC Driver | https://learn.microsoft.com/en-us/azure/databricks/integrations/jdbc-oss/ |
 | Use JDBC metadata for Databricks metric views | https://learn.microsoft.com/en-us/azure/databricks/integrations/jdbc-oss/metadata |
 | Java API reference for the Databricks JDBC driver | https://learn.microsoft.com/en-us/azure/databricks/integrations/jdbc-oss/reference |
@@ -281,23 +267,22 @@
 | Connect with legacy Simba Databricks JDBC driver | https://learn.microsoft.com/en-us/azure/databricks/integrations/jdbc/ |
 | Manage Unity Catalog volume files via JDBC Driver | https://learn.microsoft.com/en-us/azure/databricks/integrations/jdbc/volumes |
 | Connect Lovable no-code apps to Databricks via OAuth | https://learn.microsoft.com/en-us/azure/databricks/integrations/lovable |
-| Add Databricks Genie MCP server to Microsoft Foundry | https://learn.microsoft.com/en-us/azure/databricks/integrations/microsoft-foundry |
-| Configure Genie plugin integration with Copilot Cowork | https://learn.microsoft.com/en-us/azure/databricks/integrations/msft-cowork |
 | Configure Databricks Genie integration with Microsoft 365 Copilot | https://learn.microsoft.com/en-us/azure/databricks/integrations/msft-m365-copilot |
 | Use Databricks data and Genie Spaces in Copilot Studio | https://learn.microsoft.com/en-us/azure/databricks/integrations/msft-power-platform/copilot-studio |
-| Create Azure Databricks connections in Power Apps and Power Automate | https://learn.microsoft.com/en-us/azure/databricks/integrations/msft-power-platform/setup |
+| Create Azure Databricks connections in Microsoft Power Platform | https://learn.microsoft.com/en-us/azure/databricks/integrations/msft-power-platform/setup |
 | Connect Python and R clients to Databricks via ODBC | https://learn.microsoft.com/en-us/azure/databricks/integrations/odbc/connect-databricks-excel-python-r |
 | Manage Unity Catalog volume files via Databricks ODBC | https://learn.microsoft.com/en-us/azure/databricks/integrations/odbc/volumes |
 | Connect Replit-hosted apps to Azure Databricks with OAuth | https://learn.microsoft.com/en-us/azure/databricks/integrations/replit |
-| Drive Databricks For each jobs from SQL control tables | https://learn.microsoft.com/en-us/azure/databricks/jobs/how-to/foreach-sql-lookup-tutorial |
+| Configure Git-backed Azure Databricks Lakeflow Jobs | https://learn.microsoft.com/en-us/azure/databricks/jobs/git |
 | Implement watermark-based incremental For each jobs | https://learn.microsoft.com/en-us/azure/databricks/jobs/how-to/foreach-watermark-tutorial |
-| Integrate Apache Airflow with Lakeflow Jobs | https://learn.microsoft.com/en-us/azure/databricks/jobs/how-to/use-airflow-with-jobs |
+| Orchestrate Azure Databricks jobs with Apache Airflow | https://learn.microsoft.com/en-us/azure/databricks/jobs/how-to/use-airflow-with-jobs |
 | Run dbt Core transformations in Lakeflow Jobs | https://learn.microsoft.com/en-us/azure/databricks/jobs/how-to/use-dbt-in-workflows |
+| Create and run Scala or Java JAR tasks on Databricks | https://learn.microsoft.com/en-us/azure/databricks/jobs/how-to/use-jars-in-workflows |
 | Package and run Python wheels in Lakeflow Jobs | https://learn.microsoft.com/en-us/azure/databricks/jobs/how-to/use-python-wheels-in-workflows |
-| Access Lakeflow job parameters from task code | https://learn.microsoft.com/en-us/azure/databricks/jobs/parameter-use |
-| Pass task values between Databricks job tasks | https://learn.microsoft.com/en-us/azure/databricks/jobs/task-values |
-| Analyze customer reviews with Databricks AI Functions | https://learn.microsoft.com/en-us/azure/databricks/large-language-models/ai-functions-example |
-| Call AI models from Databricks using ai_query | https://learn.microsoft.com/en-us/azure/databricks/large-language-models/ai-query |
+| Access job and task parameters from Databricks code | https://learn.microsoft.com/en-us/azure/databricks/jobs/parameter-use |
+| Use dbutils task values to pass data between tasks | https://learn.microsoft.com/en-us/azure/databricks/jobs/task-values |
+| Run dbt Core projects with Lakeflow Jobs | https://learn.microsoft.com/en-us/azure/databricks/jobs/tasks/dbt |
+| Orchestrate dbt platform jobs from Databricks | https://learn.microsoft.com/en-us/azure/databricks/jobs/tasks/dbt-platform |
 | Implement AUTO CDC APIs in Lakeflow pipelines | https://learn.microsoft.com/en-us/azure/databricks/ldp/cdc |
 | Clone Hive metastore pipelines to Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/ldp/clone-hms-to-uc |
 | Create and use standalone materialized views in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/ldp/dbsql/materialized |
@@ -335,30 +320,31 @@
 | Configure sinks to write pipeline output to external systems | https://learn.microsoft.com/en-us/azure/databricks/ldp/ldp-sinks |
 | Define transformations in Lakeflow Spark pipelines | https://learn.microsoft.com/en-us/azure/databricks/ldp/transform |
 | Run Lakeflow pipelines from jobs and orchestrators | https://learn.microsoft.com/en-us/azure/databricks/ldp/workflows |
+| Manage AI Runtime jobs using the air CLI | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/cli/ |
+| Reference air CLI commands for AI Runtime workloads | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/cli/command-reference |
 | AI Runtime CLI multi-GPU workload examples | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/cli/examples/ |
 | Fine-tune Llama-3.1-8B with FSDP on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/cli/examples/multinode-llm-sft |
 | Batch LLM inference with Ray Data and vLLM on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/cli/examples/ray-batch-inference |
 | Run Ray Train distributed fine-tuning on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/cli/examples/ray-train-distributed |
-| Submit AI Runtime jobs with air CLI | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/cli/quickstart |
-| Connect notebooks and jobs to Databricks AI Runtime | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/connecting |
-| Run multi-GPU training with Databricks AI Runtime | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/distributed-training |
-| Use serverless_gpu library with H100 on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/examples/tutorials/sgc-api-h100-starter |
+| Use serverless_gpu API for multi-GPU training on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/distributed-training |
+| Run classic ML with GPU on Databricks AI Runtime | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/examples/gpu-classic-ml |
+| Use DDP for multi-GPU training on Databricks AI Runtime | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/examples/gpu-ddp |
+| Distributed DeepSpeed training on Databricks AI Runtime | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/examples/gpu-deepspeed |
+| Scale multi-GPU distributed training on Databricks AI Runtime | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/examples/gpu-distributed-training |
+| Train large models with FSDP on Databricks AI Runtime | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/examples/gpu-fsdp |
+| Build deep learning recommenders on Databricks AI Runtime | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/examples/gpu-recommendation |
+| Get started with H100 serverless GPUs on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/examples/tutorials/sgc-api-h100-starter |
 | Train CNN image classifier on Databricks AI Runtime | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/examples/tutorials/sgc-cnn-mnist |
 | Fine-tune Qwen2-0.5B with LoRA on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/examples/tutorials/sgc-distributed-finetune-qwen2-0.5b |
 | Fine-tune OpenAI gpt-oss-20b with Databricks distributed training | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/examples/tutorials/sgc-distributed-gpt-oss-20b |
 | Train Transformers with PyTorch FSDP on Databricks serverless GPU | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/examples/tutorials/sgc-distributed-pytorch-fsdp |
-| Fine-tune Llama-3.2-3B with Unsloth on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/examples/tutorials/sgc-finetune-llama-unsloth |
-| Distributed fine-tune Llama-3.2-3B with Unsloth on AI Runtime | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/examples/tutorials/sgc-finetune-llama-unsloth-distributed |
-| Fine-tune Qwen2-0.5B with LoRA on Databricks AI Runtime | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/examples/tutorials/sgc-finetune-qwen2-0.5b |
-| Fine-tune GPT-OSS 120B with Databricks distributed training | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/examples/tutorials/sgc-gpt-oss-120b-ddp-fsdp |
-| Fine-tune Llama 3.1 8B with Mosaic LLM Foundry on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/examples/tutorials/sgc-llama3-8b-llmfoundry |
-| Fine-tune Olmo3 7B with Axolotl on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/examples/tutorials/sgc-olmo3-7b-lora-axolotl |
-| Train two-tower recommenders with Lightning on Databricks GPUs | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/examples/tutorials/sgc-recommender-system-lightning |
-| Train RetinaNet object detection on Databricks GPUs | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/examples/tutorials/sgc-retinanet-image-detection-model-training |
-| Fine-tune Llama 3.2 1B with TRL and DeepSpeed on AI Runtime | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/examples/tutorials/sgc-sft-trl-deepspeed-llama-1b |
-| Time series forecasting with GluonTS on Databricks GPU | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/examples/tutorials/sgc-time-series-gluonts-101 |
-| Train XGBoost regression on Databricks single GPU | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/examples/tutorials/sgc-xgboost |
+| Distributed fine-tuning GPT-OSS 120B on Databricks AI Runtime | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/examples/tutorials/sgc-gpt-oss-120b-ddp-fsdp |
+| Train two-tower recommenders on Databricks AI Runtime | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/examples/tutorials/sgc-recommender-system-lightning |
+| Train RetinaNet object detection on Databricks AI Runtime | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/examples/tutorials/sgc-retinanet-image-detection-model-training |
+| Forecast time series with GluonTS on Databricks AI Runtime | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/examples/tutorials/sgc-time-series-gluonts-101 |
+| Train XGBoost regression on a single Databricks GPU | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/examples/tutorials/sgc-xgboost |
 | Train and serve YOLO11n object detection on Databricks AI Runtime | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/examples/tutorials/sgc-yolo11n-detect-coco128 |
+| Track experiments and monitor GPUs on AI Runtime | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/tracking-observability |
 | Use Hyperopt with HorovodRunner for distributed tuning on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/automl-hyperparam-tuning/hyperopt-distributed-ml |
 | Select best model type with Hyperopt and MLflow on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/automl-hyperparam-tuning/hyperopt-model-selection |
 | Parallelize Hyperopt hyperparameter tuning with MLflow on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/automl-hyperparam-tuning/hyperopt-spark-mlflow-integration |
@@ -372,34 +358,33 @@
 | Use Databricks Feature Views API for feature pipelines | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/feature-store/declarative-api-reference |
 | Implement on-demand feature computation at inference | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/feature-store/on-demand-features |
 | Use Databricks features in real-time online workflows | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/feature-store/online-workflows |
-| Publish Databricks features to third-party online stores | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/feature-store/publish-features |
+| Publish Databricks feature tables to external online stores | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/feature-store/publish-features |
 | Use the Databricks Feature Engineering Python client | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/feature-store/python-api |
 | Integrate third-party online stores with Feature Store | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/feature-store/third-party-online-stores |
 | Train models using Databricks feature tables | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/feature-store/train-models-with-feature-store |
 | Train models using Databricks Feature Views | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/feature-store/train-with-declarative-features |
-| Use Databricks foundation model REST APIs | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/foundation-model-apis/api-reference |
+| Use Databricks Foundation Model REST APIs | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/foundation-model-apis/api-reference |
+| Create external model endpoints for OpenAI on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/foundation-models/external-models-tutorial |
 | Load training data with Mosaic Streaming on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/load-data/streaming |
 | Save and load TFRecord data with Spark and TensorFlow on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/load-data/tfrecords-save-load |
 | Copy Databricks model versions to Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/manage-model-lifecycle/migrate-models |
 | Deploy custom Python code with Databricks Model Serving | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/deploy-custom-python-code |
-| Implement function calling on Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/function-calling |
-| Use provider-native LLM APIs on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/provider-native-apis |
-| Use Anthropic Messages API with Databricks foundation models | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/query-anthropic-messages |
-| Query Databricks chat models via model serving endpoints | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/query-chat-models |
-| Query embedding models using Databricks Model Serving | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/query-embedding-models |
-| Use Google Gemini API with Databricks foundation models | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/query-gemini-api |
-| Query models using Databricks Open Responses API | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/query-open-responses-models |
-| Use OpenAI Responses API with Databricks model serving | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/query-openai-responses |
-| Query reasoning models with Databricks Foundation Model API | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/query-reason-models |
+| Use provider-native APIs via Databricks Gateway | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/provider-native-apis |
+| Call Anthropic Messages API via Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/query-anthropic-messages |
+| Query Databricks chat and general LLM models | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/query-chat-models |
+| Query embedding models via Unity AI Gateway | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/query-embedding-models |
+| Call Google Gemini API through Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/query-gemini-api |
+| Use Databricks Open Responses API across providers | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/query-open-responses-models |
+| Query models with OpenAI Responses API on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/query-openai-responses |
+| Query reasoning-optimized models on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/query-reason-models |
 | Query route-optimized Databricks serving endpoints | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/query-route-optimization |
-| Call vision foundation models through Databricks APIs | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/query-vision-models |
-| Send scoring requests to Databricks custom model endpoints | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/score-custom-model-endpoints |
-| Send requests to Databricks foundation model endpoints | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/score-foundation-models |
+| Query vision foundation models on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/query-vision-models |
+| Format and send scoring requests to Databricks custom endpoints | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/score-custom-model-endpoints |
+| Send requests to Databricks foundation models | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/score-foundation-models |
 | Serve custom LLMs on Databricks with vLLM | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/serve-custom-llms |
-| Implement structured outputs with OpenAI models on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/structured-outputs |
-| Configure web search grounding for models on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/web-search |
+| Enable web search grounding for Databricks models | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/web-search |
 | Featurization for transfer learning with pandas UDFs | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/preprocess-data/transfer-learning-tensorflow |
-| Integrate Ray and Spark in Azure Databricks environments | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ray/connect-spark-ray |
+| Integrate Ray and Spark with Delta Lake on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ray/connect-spark-ray |
 | Integrate MLflow tracking with Ray on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ray/ray-mlflow |
 | Implement distributed image inference on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/reference-solutions/images-etl-inference |
 | Use DeepSpeed distributor for large PyTorch models on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/train-model/distributed-training/deepspeed |
@@ -412,11 +397,10 @@
 | Train XGBoost models on Azure Databricks with Python and Scala | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/train-model/xgboost |
 | Integrate XGBoost with Spark ML pipelines in Scala | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/train-model/xgboost-scala |
 | Use xgboost.spark for distributed XGBoost on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/train-model/xgboost-spark |
-| Access Databricks Marketplace products in Unity Catalog workspaces | https://learn.microsoft.com/en-us/azure/databricks/marketplace/get-started-consumer |
 | Log MLflow model dependencies for Databricks deployment | https://learn.microsoft.com/en-us/azure/databricks/mlflow/log-model-dependencies |
 | Integrate Workspace Model Registry webhooks | https://learn.microsoft.com/en-us/azure/databricks/mlflow/model-registry-webhooks |
-| Log, load, and register MLflow models on Databricks | https://learn.microsoft.com/en-us/azure/databricks/mlflow/models |
-| Examples of MLflow code-based scorers | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/eval-monitor/code-based-scorer-examples |
+| Log, load, and register MLflow models in Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/mlflow/models |
+| Implement MLflow GenAI code-based scorer patterns | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/eval-monitor/code-based-scorer-examples |
 | Use mlflow.genai.evaluate as evaluation harness | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/eval-monitor/concepts/eval-harness |
 | Use MLflow built-in LLM judges | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/eval-monitor/concepts/judges/ |
 | Create guidelines-based LLM judges in MLflow | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/eval-monitor/concepts/judges/guidelines |
@@ -429,6 +413,7 @@
 | Simulate conversations to test conversational agents | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/eval-monitor/conversation-simulation |
 | Implement custom LLM judges with make_judge | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/eval-monitor/custom-judge/ |
 | Tutorial: Build custom judges with make_judge | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/eval-monitor/custom-judge/create-custom-judge |
+| Develop and iterate MLflow GenAI code-based scorers | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/eval-monitor/custom-scorer-dev-workflow |
 | Create custom code-based scorers in MLflow | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/eval-monitor/custom-scorers |
 | MLflow evaluation data and predict_fn patterns | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/eval-monitor/eval-examples |
 | Evaluate GenAI apps with mlflow.genai.evaluate | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/eval-monitor/evaluate-app |
@@ -439,8 +424,8 @@
 | Apply Prompt Registry operations with examples | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/prompt-version-mgmt/prompt-registry/examples |
 | Track prompt and app versions with MLflow | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/prompt-version-mgmt/prompt-registry/track-prompts-app-versions |
 | Choose automatic vs manual MLflow tracing for GenAI apps | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/tracing/app-instrumentation/ |
-| Enable automatic MLflow tracing for GenAI apps | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/tracing/app-instrumentation/automatic |
-| Instrument Python functions with MLflow trace decorator | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/tracing/app-instrumentation/manual-tracing/function-decorator |
+| Enable automatic MLflow genAI tracing in Databricks | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/tracing/app-instrumentation/automatic |
+| Add MLflow tracing via Python function decorators | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/tracing/app-instrumentation/manual-tracing/function-decorator |
 | Use MLflow low-level client APIs for tracing | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/tracing/app-instrumentation/manual-tracing/low-level-api |
 | Use mlflow.start_span context managers for fine-grained tracing | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/tracing/app-instrumentation/manual-tracing/span-tracing |
 | Instrument Node.js apps with MLflow Tracing SDK | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/tracing/app-instrumentation/typescript-sdk |
@@ -495,7 +480,6 @@
 | Use Lakebase Autoscaling as backend for Online Feature Store | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/feature-store |
 | Use framework-specific code to connect to Lakebase | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/framework-examples |
 | Integrate Lakebase Postgres with Databricks Lakehouse | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/lakehouse-integrations |
-| Configure synced tables to serve Lakehouse data via Lakebase | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/sync-tables |
 | Read Databricks-to-Databricks OpenSharing data | https://learn.microsoft.com/en-us/azure/databricks/opensharing/read-data-databricks |
 | Read OpenSharing data using bearer token credentials | https://learn.microsoft.com/en-us/azure/databricks/opensharing/read-data-open |
 | Access Databricks OpenSharing data as a recipient | https://learn.microsoft.com/en-us/azure/databricks/opensharing/recipient |
@@ -519,6 +503,7 @@
 | Connect Mode analytics to Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/partners/bi/mode |
 | Connect Power BI Desktop to Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/partners/bi/power-bi-desktop |
 | Publish Azure Databricks data to Power BI service | https://learn.microsoft.com/en-us/azure/databricks/partners/bi/power-bi-service |
+| Configure Unity Catalog connection for Power BI orchestration | https://learn.microsoft.com/en-us/azure/databricks/partners/bi/power-bi-uc-connect |
 | Integrate Preset BI with Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/partners/bi/preset |
 | Connect Qlik Sense to Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/partners/bi/qlik-sense |
 | Connect Sigma BI to Databricks SQL warehouses | https://learn.microsoft.com/en-us/azure/databricks/partners/bi/sigma |
@@ -763,7 +748,10 @@
 | Call table-valued functions via SparkSession.tvf | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/sparksession/tvf |
 | Register and use UDFs with SparkSession.udf | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/sparksession/udf |
 | Register and use UDTFs with SparkSession.udtf | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/sparksession/udtf |
-| Use ai_parse_document PySpark function in Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/ai_parse_document |
+| Use ai_classify PySpark function on Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/ai_classify |
+| Use ai_extract PySpark function on Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/ai_extract |
+| Use ai_parse_document PySpark function on Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/ai_parse_document |
+| Use ai_query to call Databricks model endpoints | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/ai_query |
 | Create PyArrow-native UDTFs with arrow_udtf | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/arrow_udtf |
 | Use from_utc_timestamp for timezone conversion in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/from_utc_timestamp |
 | Parse XML strings to rows with from_xml in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/from_xml |
@@ -929,6 +917,13 @@
 | Compute sample variance with var_samp in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/var_samp |
 | Use variance alias for var_samp in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/variance |
 | Extract sub-variants with variant_get in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/variant_get |
+| Use vector_avg PySpark function in Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/vector_avg |
+| Use vector_cosine_similarity in Databricks PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/vector_cosine_similarity |
+| Use vector_inner_product in Databricks PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/vector_inner_product |
+| Use vector_l2_distance in Databricks PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/vector_l2_distance |
+| Use vector_norm function in Databricks PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/vector_norm |
+| Use vector_normalize in Databricks PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/vector_normalize |
+| Use vector_sum PySpark function in Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/vector_sum |
 | Get Spark version with Databricks PySpark version function | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/version |
 | Determine weekday from dates in Databricks PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/weekday |
 | Get ISO week number with weekofyear in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/weekofyear |
@@ -952,9 +947,9 @@
 | Merge arrays element-wise with zip_with in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/zip_with |
 | Compress data with zstd_compress in Databricks PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/zstd_compress |
 | Decompress Zstandard data with zstd_decompress in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/zstd_decompress |
-| Configure Databricks Lakehouse Federation for BigQuery | https://learn.microsoft.com/en-us/azure/databricks/query-federation/bigquery |
+| Configure Lakehouse Federation for BigQuery data | https://learn.microsoft.com/en-us/azure/databricks/query-federation/bigquery |
 | Federate another Databricks workspace with Lakehouse | https://learn.microsoft.com/en-us/azure/databricks/query-federation/databricks |
-| Create and use HTTP connections in Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/query-federation/http |
+| Create and use HTTP connections in Databricks | https://learn.microsoft.com/en-us/azure/databricks/query-federation/http |
 | Configure Lakehouse Federation for MySQL | https://learn.microsoft.com/en-us/azure/databricks/query-federation/mysql |
 | Configure OneLake catalog federation for Databricks | https://learn.microsoft.com/en-us/azure/databricks/query-federation/onelake |
 | Configure Lakehouse Federation for Oracle databases | https://learn.microsoft.com/en-us/azure/databricks/query-federation/oracle |
@@ -971,7 +966,7 @@
 | Federate Databricks queries to Snowflake with Okta OAuth | https://learn.microsoft.com/en-us/azure/databricks/query-federation/snowflake-okta |
 | Federate Snowflake with Databricks using PEM keys | https://learn.microsoft.com/en-us/azure/databricks/query-federation/snowflake-pem |
 | Set up Databricks federated queries to SQL Server | https://learn.microsoft.com/en-us/azure/databricks/query-federation/sql-server |
-| Federate queries to Azure Synapse from Databricks | https://learn.microsoft.com/en-us/azure/databricks/query-federation/sqldw |
+| Configure Lakehouse Federation for Azure Synapse | https://learn.microsoft.com/en-us/azure/databricks/query-federation/sqldw |
 | Configure Lakehouse Federation for Teradata | https://learn.microsoft.com/en-us/azure/databricks/query-federation/teradata |
 | Use Azure Databricks to read and write Avro data | https://learn.microsoft.com/en-us/azure/databricks/query/formats/avro |
 | Load binary file data into Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/query/formats/binary |
@@ -988,6 +983,7 @@
 | Use MLflow REST APIs on Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/reference/mlflow-api |
 | Use Account SCIM v2.1 API for identity management | https://learn.microsoft.com/en-us/azure/databricks/reference/scim-2-1 |
 | Query and extract JSON string fields in Azure Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/semi-structured/json |
+| Query VARIANT semi-structured data in Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/semi-structured/variant |
 | Reference Spark reader and writer options on Databricks | https://learn.microsoft.com/en-us/azure/databricks/spark/api-options |
 | Use SparkR, sparklyr, and dplyr DataFrames on Databricks | https://learn.microsoft.com/en-us/azure/databricks/sparkr/dataframes-tables |
 | Connect local RStudio to Azure Databricks compute | https://learn.microsoft.com/en-us/azure/databricks/sparkr/rstudio |
@@ -1009,19 +1005,20 @@
 | Re-raise exceptions with RESIGNAL in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/control-flow/resignal-stmt |
 | Raise custom conditions with SIGNAL in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/control-flow/signal-stmt |
 | Implement WHILE loops in Databricks SQL procedures | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/control-flow/while-stmt |
-| Call ai_analyze_sentiment in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/ai_analyze_sentiment |
-| Use ai_classify SQL function in Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/ai_classify |
-| Use ai_extract SQL function in Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/ai_extract |
-| Correct text grammar using ai_fix_grammar in Databricks | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/ai_fix_grammar |
+| Clone Delta and Parquet tables with Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/delta-clone |
+| Use ai_analyze_sentiment function in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/ai_analyze_sentiment |
+| Classify text with ai_classify in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/ai_classify |
+| Extract structured data using ai_extract function | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/ai_extract |
+| Correct text grammar with ai_fix_grammar function | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/ai_fix_grammar |
 | Forecast time series with ai_forecast in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/ai_forecast |
-| Generate content using ai_gen in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/ai_gen |
-| Mask sensitive entities with ai_mask in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/ai_mask |
-| Use ai_parse_document in Databricks SQL queries | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/ai_parse_document |
+| Generate text with ai_gen in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/ai_gen |
+| Mask sensitive entities using ai_mask function | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/ai_mask |
+| Parse documents with ai_parse_document in Databricks | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/ai_parse_document |
 | Prepare documents for RAG using ai_prep_search | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/ai_prep_search |
-| Call model endpoints with ai_query in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/ai_query |
-| Compute semantic similarity with ai_similarity in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/ai_similarity |
-| Summarize text using ai_summarize in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/ai_summarize |
-| Translate text with ai_translate in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/ai_translate |
+| Query model serving endpoints with ai_query | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/ai_query |
+| Compute semantic similarity using ai_similarity | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/ai_similarity |
+| Summarize text with ai_summarize in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/ai_summarize |
+| Translate text using ai_translate function | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/ai_translate |
 | Accumulate top-K sketches with approx_top_k_accumulate | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/approx_top_k_accumulate |
 | Combine top-K sketches with approx_top_k_combine | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/approx_top_k_combine |
 | Use array_contains in Databricks SQL expressions | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/array_contains |
@@ -1406,7 +1403,7 @@
 | Compute element-wise vector averages with vector_avg in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/vector_avg |
 | Calculate vector norms with vector_norm in Databricks | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/vector_norm |
 | Normalize vectors with vector_normalize in Databricks | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/vector_normalize |
-| Use vector_search SQL function with AI Search index | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/vector_search |
+| Use vector_search SQL function with Azure AI Search | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/vector_search |
 | Compute element-wise vector sums with vector_sum in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/vector_sum |
 | Get week of year with weekofyear in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/weekofyear |
 | Bucket numeric values with width_bucket in Databricks | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/width_bucket |
@@ -1423,33 +1420,24 @@
 | Merge arrays with zip_with in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/zip_with |
 | Compress data with zstd_compress in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/zstd_compress |
 | Decompress data with zstd_decompress in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/zstd_decompress |
-| Invoke built-in and user-defined functions in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-function-invocation |
-| Create and register Databricks SQL aggregate UDAFs | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-functions-udf-aggregate |
-| Integrate Hive UDFs, UDAFs, and UDTFs with Databricks | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-functions-udf-hive |
-| Implement external scalar UDFs in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-functions-udf-scalar |
-| Use H3 geospatial SQL functions in Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-h3-geospatial-functions |
-| Reference H3 geospatial functions in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-h3-geospatial-functions-alpha |
-| Analyze flight data with H3 geospatial functions in Databricks | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-h3-geospatial-functions-examples |
-| Work with IP address SQL functions in Databricks | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-ip-functions |
-| Use lambda functions in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-lambda-functions |
-| Use IDENTIFIER clause for safe Databricks SQL parameterization | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-names-identifier-clause |
-| Understand NULL semantics in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-null-semantics |
-| Use parameter markers in Azure Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-parameter-marker |
-| Use SQL/PSM scripting constructs in Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-scripting |
-| Use ST geospatial SQL functions in Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-st-geospatial-functions |
+| Run federated queries across external databases in Databricks | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-federated-queries |
+| Implement Databricks SQL user-defined aggregate functions | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-functions-udf-aggregate |
+| Integrate Hive UDFs and UDAFs with Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-functions-udf-hive |
+| Create and register Databricks SQL scalar UDFs | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-functions-udf-scalar |
+| Use JSON path expressions on JSON and VARIANT in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-json-path-expression |
 | Download volume files with Databricks GET | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-aux-connector-get |
 | Upload local files with Databricks PUT INTO | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-aux-connector-put-into |
 | Remove volume files with Databricks REMOVE | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-aux-connector-remove |
 | Execute dynamic SQL with EXECUTE IMMEDIATE | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-aux-execute-immediate |
 | Add comments and hints in Databricks SQL statements | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-comment |
+| Use CREATE TABLE LIKE in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-ddl-create-table-like |
 | Use mustache parameters in Databricks legacy SQL editor | https://learn.microsoft.com/en-us/azure/databricks/sql/user/sql-editor/mustache-parameters |
 | Example Databricks transformWithState streaming applications | https://learn.microsoft.com/en-us/azure/databricks/stateful-applications/examples |
 | Use Avro with Kafka streaming in Databricks | https://learn.microsoft.com/en-us/azure/databricks/structured-streaming/avro-dataframe |
 | Structured Streaming integration patterns with external systems | https://learn.microsoft.com/en-us/azure/databricks/structured-streaming/examples |
 | Use foreachBatch for custom Databricks streaming sinks | https://learn.microsoft.com/en-us/azure/databricks/structured-streaming/foreach |
-| Write Databricks streaming data to Lakebase | https://learn.microsoft.com/en-us/azure/databricks/structured-streaming/lakebase |
 | Process protocol buffers with Databricks Structured Streaming | https://learn.microsoft.com/en-us/azure/databricks/structured-streaming/protocol-buffers |
-| Use real-time mode with Kafka and custom sinks | https://learn.microsoft.com/en-us/azure/databricks/structured-streaming/real-time/examples |
+| Implement real-time Structured Streaming integrations in Databricks | https://learn.microsoft.com/en-us/azure/databricks/structured-streaming/real-time/examples |
 | Use change data feed for Delta and Iceberg tables | https://learn.microsoft.com/en-us/azure/databricks/tables/features/change-data-feed |
 | Create Scala user-defined aggregate functions in Databricks | https://learn.microsoft.com/en-us/azure/databricks/udf/aggregate-scala |
 | Implement and register Python UDFs in Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/udf/python |
@@ -1457,4 +1445,4 @@
 | Implement Scala scalar UDFs for Spark SQL | https://learn.microsoft.com/en-us/azure/databricks/udf/scala |
 | Access task context inside Databricks UDFs | https://learn.microsoft.com/en-us/azure/databricks/udf/udf-task-context |
 | Create and manage Unity Catalog volumes with SQL | https://learn.microsoft.com/en-us/azure/databricks/volumes/utility-commands |
-| Manage files in Unity Catalog volumes across tools | https://learn.microsoft.com/en-us/azure/databricks/volumes/volume-files |
+| Manage files in Azure Databricks Unity Catalog volumes | https://learn.microsoft.com/en-us/azure/databricks/volumes/volume-files |

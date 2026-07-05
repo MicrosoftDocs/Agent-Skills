@@ -39,9 +39,9 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Resource Mana
 - **Unclassified**: 14
 
 ### Incremental Update
-- **New Pages**: 3
-- **Updated Pages**: 15
-- **Unchanged**: 25
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 43
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-blueprints/azure-blueprints.csv`
 
@@ -58,45 +58,6 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Resource Mana
 | *(Unclassified)* | 14 | 32.6% |
 
 ## Changes
-
-### New Pages
-
-- [Azure Blueprints retirement](https://learn.microsoft.com/en-us/azure/governance/blueprints/blueprint-retirement)
-- [Retirement FAQ](https://learn.microsoft.com/en-us/azure/governance/blueprints/blueprint-retirement-faq)
-- [Migrate to template specs](https://learn.microsoft.com/en-us/azure/governance/blueprints/migrate-to-template-specs)
-
-### Updated Pages
-
-- [Configure your environment for a Blueprint Operator](https://learn.microsoft.com/en-us/azure/governance/blueprints/how-to/configure-for-blueprint-operator)
-  - Updated: 2023-09-15T17:19:00.000Z → 2025-10-24T05:11:00.000Z
-- [Troubleshoot](https://learn.microsoft.com/en-us/azure/governance/blueprints/troubleshoot/general)
-  - Updated: 2023-09-15T17:19:00.000Z → 2024-07-26T22:05:00.000Z
-- [What is Azure Blueprints?](https://learn.microsoft.com/en-us/azure/governance/blueprints/overview)
-  - Updated: 2023-09-07T08:00:00.000Z → 2026-06-23T05:11:00.000Z
-- [Create a blueprint - Azure PowerShell](https://learn.microsoft.com/en-us/azure/governance/blueprints/create-blueprint-powershell)
-  - Updated: 2023-09-07T08:00:00.000Z → 2025-11-26T23:19:00.000Z
-- [Index](https://learn.microsoft.com/en-us/azure/governance/blueprints/samples/)
-  - Updated: 2023-09-15T17:19:00.000Z → 2024-06-13T22:17:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/governance/blueprints/samples/azure-security-benchmark-foundation/)
-  - Updated: 2023-09-15T17:19:00.000Z → 2024-09-11T18:38:00.000Z
-- [ISO 27001](https://learn.microsoft.com/en-us/azure/governance/blueprints/samples/iso-27001-2013)
-  - Updated: 2023-09-07T08:00:00.000Z → 2025-11-26T23:19:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/governance/blueprints/samples/iso27001-shared/)
-  - Updated: 2023-09-15T17:19:00.000Z → 2025-05-29T05:35:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/governance/blueprints/samples/iso27001-ase-sql-workload/)
-  - Updated: 2023-09-15T17:19:00.000Z → 2024-08-07T22:04:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/governance/blueprints/samples/caf-foundation/)
-  - Updated: 2023-09-15T17:19:00.000Z → 2024-09-11T18:38:00.000Z
-- [Steps to deploy](https://learn.microsoft.com/en-us/azure/governance/blueprints/samples/caf-foundation/deploy)
-  - Updated: 2023-09-07T08:00:00.000Z → 2025-11-26T23:19:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/governance/blueprints/samples/caf-migrate-landing-zone/)
-  - Updated: 2024-06-13T22:17:00.000Z → 2024-09-11T18:38:00.000Z
-- [Dynamic parameters in a blueprint](https://learn.microsoft.com/en-us/azure/governance/blueprints/concepts/parameters)
-  - Updated: 2023-09-07T08:00:00.000Z → 2026-06-23T05:11:00.000Z
-- [Sequencing order of blueprint deployment](https://learn.microsoft.com/en-us/azure/governance/blueprints/concepts/sequencing-order)
-  - Updated: 2023-09-15T17:19:00.000Z → 2026-03-25T22:12:00.000Z
-- [Import and export with PowerShell](https://learn.microsoft.com/en-us/azure/governance/blueprints/how-to/import-export-ps)
-  - Updated: 2023-09-07T08:00:00.000Z → 2023-09-15T17:19:00.000Z
 
 ## Classified Pages
 

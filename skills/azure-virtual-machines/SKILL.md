@@ -1,9 +1,9 @@
 ---
 name: azure-virtual-machines
-description: Expert knowledge for Azure Virtual Machines development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when choosing VM sizes/disks, configuring scale sets/HPC-GPU, using Spot/reservations, or securing/encrypting VMs, and other Azure Virtual Machines related development tasks. Not for Azure Cloud Services (use azure-cloud-services), Azure Virtual Machine Scale Sets (use azure-vm-scalesets), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Data Science Virtual Machines (use azure-data-science-vm).
+description: Expert knowledge for Azure Virtual Machines development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when choosing VM sizes, disks, Spot/Reserved, HPC/GPU setups, Oracle workloads, or Trusted Launch security, and other Azure Virtual Machines related development tasks. Not for Azure Cloud Services (use azure-cloud-services), Azure Virtual Machine Scale Sets (use azure-vm-scalesets), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Data Science Virtual Machines (use azure-data-science-vm).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-28"
+  generated_at: "2026-07-05"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Virtual Machines Skill
@@ -28,9 +28,9 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L68-L99 | Best practices for operating, updating, scaling, tuning, and cost-optimizing Azure VMs (Linux/Windows, HPC, InfiniBand, disks, images) and improving performance, HA, and boot times. |
 | Decision Making | L100-L169 | Guidance for choosing VM, disk, OS, and image options; planning costs, reservations, and Spot; and designing or migrating Linux, GPU, Oracle, and AKS workloads and retired VM series. |
 | Architecture & Design Patterns | L170-L184 | Design patterns for Azure VM workloads: multi-region and fleet strategies, low-latency/NUMA-aware HPC, clustered/shared-disk setups, and Oracle/OpenShift architectures and DR. |
-| Limits & Quotas | L185-L389 | VM size specs, disk and storage performance limits, quotas, and capacity/packing rules for Azure VMs, including GPU/HPC, confidential, dedicated hosts, and bursting/ephemeral/NVMe disks. |
-| Security | L390-L467 | Securing Azure VMs and disks: encryption (ADE, CMK, encryption at host), Key Vault integration, TLS/cert management, Trusted Launch, MSP/metadata hardening, RBAC/Policy, and secure image/gallery sharing. |
-| Configuration | [configuration.md](configuration.md) | Configuring Azure VMs and scale sets: disks, networking, images, maintenance, extensions, monitoring/VM watch, HPC/GPU/InfiniBand, Linux/Windows agents, Oracle workloads, and AKS host/Azure Linux settings. |
+| Limits & Quotas | L185-L391 | VM size specs, disk and storage performance limits, host packing capacities, GPU/HPC VM limits, quotas, and behavior/constraints of Azure VM resources and images. |
+| Security | L392-L469 | Securing Azure VMs and disks: encryption (ADE, CMK, encryption at host, double encryption), Key Vault and certificates, MSP/metadata hardening, Trusted Launch, RBAC/Policy, and secure image/gallery sharing. |
+| Configuration | [configuration.md](configuration.md) | Configuring Azure VMs and scale sets: OS images, disks, networking, agents/extensions, HPC/GPU, maintenance, telemetry/monitoring, Oracle workloads, and Linux/Windows VM runtime settings. |
 | Integrations & Coding Patterns | [integrations.md](integrations.md) | Scripts and patterns for managing Azure VMs and disks via CLI/PowerShell/REST, including backups, snapshots, encryption, maintenance events, monitoring, and Oracle/SQL integrations. |
 | Deployment | [deployment.md](deployment.md) | Deploying and migrating Azure VMs and disks: image customization, blue‑green/rolling deployments, in‑place OS upgrades, storage/region/zone moves, and handling VM SKU retirements. |
 
@@ -362,7 +362,9 @@ This skill requires **network access** to fetch documentation content:
 | Reference Ev5 Azure VM size specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/ev5-series |
 | Reference M-series VM size specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/m-series |
 | Reference Mbdsv3 memory-storage optimized VM specs | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/mbdsv3-series |
+| Reference Mbdsv4 VM size specs and limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/mbdsv4-series |
 | Reference Mbsv3 memory-storage optimized VM specs | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/mbsv3-series |
+| Reference Mbsv4 VM size specs and limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/mbsv4-series |
 | Reference Mdsv2 MM VM size specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/mdsv2-mm-series |
 | Reference Mdsv3 High Memory VM specs | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/mdsv3-hm-series |
 | Reference Mdsv3 MM VM size specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/mdsv3-mm-series |
@@ -438,7 +440,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure MSP for Azure VMs via portal | https://learn.microsoft.com/en-us/azure/virtual-machines/metadata-security-protocol/other-examples/portal |
 | Understand Metadata Security Protocol for securing Azure VM metadata access | https://learn.microsoft.com/en-us/azure/virtual-machines/metadata-security-protocol/overview |
 | Mitigate speculative execution side-channel vulnerabilities on Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/mitigate-se |
-| Reference built-in Azure Policy definitions for Virtual Machines | https://learn.microsoft.com/en-us/azure/virtual-machines/policy-reference |
+| Use built-in Azure Policy definitions for VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/policy-reference |
 | Use Azure Policy regulatory compliance controls for VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/security-controls-policy |
 | Apply Azure Policy compliance controls to VM Image Builder | https://learn.microsoft.com/en-us/azure/virtual-machines/security-controls-policy-image-builder |
 | Apply Azure security features and policies to protect VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/security-policy |

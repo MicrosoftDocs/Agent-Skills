@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-14'
+generated_at: '2026-07-05'
 category_descriptions:
   best-practices: Guidance on validating attestation tokens, writing secure attestation
     policies, and configuring/enforcing SGX and TPM attestation baselines using sample
@@ -40,8 +40,8 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 33
+- **Updated Pages**: 1
+- **Unchanged**: 32
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-attestation/azure-attestation.csv`
 
@@ -57,6 +57,11 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 | *(Unclassified)* | 11 | 33.3% |
 
 ## Changes
+
+### Updated Pages
+
+- [About Microsoft Azure Attestation](https://learn.microsoft.com/en-us/azure/attestation/overview)
+  - Updated: 2025-04-15T08:00:00.000Z → 2026-06-29T22:43:00.000Z
 
 ## Classified Pages
 
@@ -97,6 +102,6 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 | [Bicep](https://learn.microsoft.com/en-us/azure/attestation/quickstart-bicep) | 0.30 | Bicep quickstart focused on deploying a simple resource; typical template fields rather than comprehensive configuration reference or best-practices. |
 | [Terraform](https://learn.microsoft.com/en-us/azure/attestation/quickstart-terraform) | 0.30 | Quickstart for creating a provider with Terraform; likely step-by-step resource creation without detailed config tables or product-specific edge cases. |
 | [TPM attestation overview](https://learn.microsoft.com/en-us/azure/attestation/tpm-attestation-concepts) | 0.25 | TPM attestation overview and capabilities; mostly conceptual description of measured boot and attestation scenarios, not detailed config or error handling. |
-| [About Microsoft Azure Attestation](https://learn.microsoft.com/en-us/azure/attestation/overview) | 0.20 | High-level service overview without numeric limits, configuration tables, or detailed patterns; mostly conceptual description of Azure Attestation capabilities. |
 | [Basic concepts](https://learn.microsoft.com/en-us/azure/attestation/basic-concepts) | 0.20 | Basic concepts article; primarily definitions and conceptual explanations without detailed configuration, limits, or troubleshooting mappings. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/attestation/faq) | 0.20 | FAQ page description suggests general Q&A without clear indication of specific limits, configuration tables, error-code mappings, or other detailed expert-only data. Lacking evidence of structured troubleshooting, limits, or configuration parameters as defined by the sub-skill criteria. |
+| [About Microsoft Azure Attestation](https://learn.microsoft.com/en-us/azure/attestation/overview) | - | High-level service overview without specific limits, configuration parameters, error codes, or decision matrices; primarily conceptual description of Azure Attestation capabilities. |

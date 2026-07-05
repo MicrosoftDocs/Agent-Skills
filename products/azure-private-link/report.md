@@ -44,8 +44,8 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 48
+- **Updated Pages**: 0
+- **Unchanged**: 49
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-private-link/azure-private-link.csv`
 
@@ -62,11 +62,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | *(Unclassified)* | 29 | 59.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [RBAC permissions](https://learn.microsoft.com/en-us/azure/private-link/rbac-permissions)
-  - Updated: 2026-03-30T08:00:00.000Z → 2026-06-26T22:12:00.000Z
 
 ## Classified Pages
 

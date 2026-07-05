@@ -40,17 +40,17 @@ confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure Io
 
 ## Summary
 
-- **Total Pages**: 238
-- **Fetched**: 238
+- **Total Pages**: 233
+- **Fetched**: 233
 - **Fetch Failed**: 0
 - **Classified**: 143
-- **Unclassified**: 95
+- **Unclassified**: 90
 
 ### Incremental Update
 - **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 238
-- **Deleted Pages**: 0
+- **Unchanged**: 233
+- **Deleted Pages**: 5
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-stack-edge/azure-stack-edge.csv`
 
 ## Classification Statistics
@@ -58,15 +58,23 @@ confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure Io
 | Type | Count | Percentage |
 |------|-------|------------|
 | best-practices | 3 | 1.3% |
-| configuration | 49 | 20.6% |
+| configuration | 49 | 21.0% |
 | decision-making | 5 | 2.1% |
 | integrations | 8 | 3.4% |
 | limits-quotas | 8 | 3.4% |
-| security | 23 | 9.7% |
-| troubleshooting | 47 | 19.7% |
-| *(Unclassified)* | 95 | 39.9% |
+| security | 23 | 9.9% |
+| troubleshooting | 47 | 20.2% |
+| *(Unclassified)* | 90 | 38.6% |
 
 ## Changes
+
+### Deleted Pages
+
+- ~~Cluster failover scenarios~~ (https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-cluster-failover-scenarios)
+- ~~Cluster witness~~ (https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-cluster-witness-overview)
+- ~~What is clustering?~~ (https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-clustering-overview)
+- ~~Kubernetes failover on clustered device~~ (https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-kubernetes-failover-scenarios)
+- ~~Cluster management~~ (https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-manage-cluster)
 
 ## Classified Pages
 
@@ -229,8 +237,6 @@ confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure Io
 | [1 - Order, prepare](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-pro-2-deploy-prep) | 0.45 | Portal preparation tutorial; mostly step-by-step setup rather than a full configuration reference with parameter tables. |
 | [3 - Connect](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-pro-2-deploy-connect) | 0.45 | Tutorial for connecting and activating via local web UI; likely procedural without exhaustive configuration matrices. |
 | [7 - Activate](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-mini-r-deploy-activate) | 0.45 | Activation and encryption tutorial is likely a guided workflow; without explicit indication of detailed parameter tables, it is more procedural than reference. |
-| [Cluster failover scenarios](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-cluster-failover-scenarios) | 0.45 | Describes failover scenarios and impact; summary does not mention specific error codes, diagnostic commands, or configuration thresholds, so it does not clearly fit troubleshooting or other categories. |
-| [Cluster management](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-manage-cluster) | 0.45 | Cluster management overview (add node, configure witness, remove cluster); appears procedural without explicit configuration parameter tables or limits in the summary. |
 | [Connect to VM console](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-connect-virtual-machine-console) | 0.45 | Connecting to VM console; mostly connection methods and UI steps, with only light troubleshooting hints, not structured error-code mappings. |
 | [Disks](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-manage-virtual-machine-disks-portal) | 0.45 | Managing VM disks via portal; describes add/resize/detach operations but likely as procedural steps, not as a configuration reference with ranges and defaults. |
 | [Kubernetes networking](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-kubernetes-networking) | 0.45 | Describes Kubernetes networking; largely conceptual networking behavior, not a configuration reference with specific ranges or thresholds. |
@@ -265,7 +271,6 @@ confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure Io
 | [Custom image from Azure VM](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-create-virtual-machine-image) | 0.40 | Step-by-step guide for creating custom VM images; likely mostly procedural without detailed config tables, limits, or product-specific error mappings. |
 | [Generalized image from ISO](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-prepare-windows-generalized-image-iso) | 0.40 | How-to for preparing a generalized Windows image from ISO; mostly imaging workflow, not detailed product-specific configuration or limits. |
 | [Get started](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-quickstart) | 0.40 | Quickstart deployment steps; procedural and high-level, not focused on enumerating configuration options or limits. |
-| [Kubernetes failover on clustered device](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-kubernetes-failover-scenarios) | 0.40 | Describes failover scenarios and device responses; likely conceptual behavior mapping without explicit error codes or diagnostic commands in the summary. |
 | [Reset, reactivate device](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-reset-reactivate-device) | 0.40 | Describes how to reset, reconfigure, and reactivate an Azure Stack Edge device. From the summary it looks like a procedural reset/reactivation guide without explicit error codes, configuration parameter matrices, or product-specific limits; more of an operational tutorial than expert configuration, limits, or troubleshooting reference. |
 | [Shares](https://learn.microsoft.com/en-us/azure/databox-gateway/data-box-gateway-manage-shares) | 0.40 | Managing shares via portal; task-focused without indication of full parameter tables or numeric constraints. |
 | [Stateless app](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-deploy-stateless-application-iot-edge-module) | 0.40 | Tutorial-style deployment of a stateless app via IoT Edge module; likely step-by-step without detailed config tables, limits, or product-specific troubleshooting. |
@@ -292,14 +297,12 @@ confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure Io
 | [3 - Connect](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-mini-r-deploy-connect) | 0.30 | Connection tutorial via local web UI; likely basic steps rather than detailed configuration matrices or troubleshooting mappings. |
 | [3 - Connect](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-pro-r-deploy-connect) | 0.30 | Tutorial for connecting via local web UI; primarily walkthrough, not configuration reference, limits, or troubleshooting with error codes. |
 | [Azure Stack Edge Hardware Additional Terms](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-add-hardware-terms) | 0.30 | Documents additional hardware terms; legal/contractual content rather than technical limits, configuration, or troubleshooting details. |
-| [Cluster witness](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-cluster-witness-overview) | 0.30 | High-level overview of cluster witness; requirements and setup are mentioned but not clearly as detailed parameter tables or limits from the summary. |
 | [Create order](https://learn.microsoft.com/en-us/azure/azure-edge-hardware-center/azure-edge-hardware-center-create-order) | 0.30 | Step-by-step portal tutorial for creating an order; lacks detailed configuration tables or product-specific edge cases. |
 | [Open Support ticket](https://learn.microsoft.com/en-us/azure/azure-edge-hardware-center/azure-edge-hardware-center-contact-microsoft-support) | 0.30 | Describes how to open a support ticket; process guidance rather than technical troubleshooting or configuration. |
 | [Track, cancel, return order](https://learn.microsoft.com/en-us/azure/azure-edge-hardware-center/azure-edge-hardware-center-manage-order) | 0.30 | Covers managing and tracking orders in portal; appears procedural without expert-only configuration or limits. |
 | [View use cases](https://learn.microsoft.com/en-us/azure/databox-gateway/data-box-gateway-use-cases) | 0.30 | Use-case descriptions and scenarios; decision context is high-level without explicit matrices or numeric thresholds. |
 | [What is Azure Stack Edge Pro 2?](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-pro-2-overview) | 0.30 | Overview of Azure Stack Edge Pro 2 benefits and scenarios; lacks detailed configuration or limits in the description. |
 | [What is Kubernetes?](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-kubernetes-overview) | 0.30 | Kubernetes overview on Azure Stack Edge; conceptual description of how Kubernetes is implemented, not detailed configuration or troubleshooting content. |
-| [What is clustering?](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-clustering-overview) | 0.30 | High-level clustering overview; summary does not indicate numeric thresholds, decision matrices, or detailed configuration parameters. |
 | [What is local Azure Resource Manager?](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-local-resource-manager-overview) | 0.30 | Overview of local Azure Resource Manager; conceptual explanation of what it is, not detailed configuration or troubleshooting content. |
 | [2 - Install](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-deploy-install) | 0.20 | Physical unpacking, racking, and cabling instructions; not in scope of the defined technical sub-skill categories. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/azure-edge-hardware-center/azure-edge-hardware-center-faq) | 0.20 | FAQ description suggests general Q&A about using Azure Edge Hardware Center and ordering devices, but doesn't indicate presence of numeric limits, configuration parameter tables, error-code-based troubleshooting, or other detailed expert content. Likely high-level usage and process information rather than the specific technical details required by any sub-skill type. |

@@ -53,10 +53,10 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 - **Unclassified**: 34
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 1
-- **Unchanged**: 98
-- **Deleted Pages**: 3
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 100
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-front-door/azure-front-door.csv`
 
 ## Classification Statistics
@@ -75,21 +75,6 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | *(Unclassified)* | 34 | 34.0% |
 
 ## Changes
-
-### New Pages
-
-- [Purge cache](https://learn.microsoft.com/en-us/azure/frontdoor/cache-purge)
-
-### Updated Pages
-
-- [Connect to Azure App Service](https://learn.microsoft.com/en-us/azure/frontdoor/standard-premium/how-to-enable-private-link-web-app)
-  - Updated: 2025-08-01T17:15:00.000Z → 2026-06-25T22:12:00.000Z
-
-### Deleted Pages
-
-- ~~Azure portal~~ (https://learn.microsoft.com/en-us/azure/frontdoor/standard-premium/how-to-cache-purge)
-- ~~Azure CLI~~ (https://learn.microsoft.com/en-us/azure/frontdoor/standard-premium/how-to-cache-purge-cli)
-- ~~Azure PowerShell~~ (https://learn.microsoft.com/en-us/azure/frontdoor/standard-premium/how-to-cache-purge-powershell)
 
 ## Classified Pages
 

@@ -3,7 +3,7 @@ name: azure-chaos-studio
 description: Expert knowledge for Chaos Studio development including troubleshooting, limits & quotas, security, configuration, and integrations & coding patterns. Use when designing Chaos experiments, configuring agents/targets, securing access, using REST/CLI, or wiring telemetry, and other Chaos Studio related development tasks. Not for Azure Monitor (use azure-monitor), Azure Resiliency (use azure-resiliency), Azure Reliability (use azure-reliability), Azure Site Recovery (use azure-site-recovery).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-21"
+  generated_at: "2026-07-05"
   generator: "docs2skills/1.0.0"
 ---
 # Chaos Studio Skill

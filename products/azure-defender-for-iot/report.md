@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 54
-- **Unchanged**: 126
+- **Updated Pages**: 0
+- **Unchanged**: 180
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-defender-for-iot/azure-defender-for-iot.csv`
 
@@ -76,50 +76,6 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | *(Unclassified)* | 63 | 35.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [Splunk](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/tutorial-splunk)
-  - Updated: 2026-04-28T17:57:00.000Z → 2026-06-24T17:35:00.000Z
-- [Manage OT licenses](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-manage-subscriptions)
-  - Updated: 2026-04-28T17:57:00.000Z → 2026-06-23T22:34:00.000Z
-- [Manage enterprise IoT security monitoring](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/manage-subscriptions-enterprise)
-  - Updated: 2026-04-28T17:57:00.000Z → 2026-06-23T22:34:00.000Z
-- [Manage sensors from the Azure portal](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-manage-sensors-on-the-cloud)
-  - Updated: 2026-04-28T17:57:00.000Z → 2026-06-23T22:34:00.000Z
-- [Azure portal](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/manage-users-portal)
-  - Updated: 2026-04-28T17:57:00.000Z → 2026-06-23T22:34:00.000Z
-- [OT sensor console](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/manage-users-sensor)
-  - Updated: 2026-04-28T17:57:00.000Z → 2026-06-24T17:35:00.000Z
-- [SSO for sensor console login](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/set-up-sso)
-  - Updated: 2026-04-28T17:57:00.000Z → 2026-06-24T17:35:00.000Z
-- [Import extra data for detected OT devices](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-import-device-information)
-  - Updated: 2026-04-28T17:57:00.000Z → 2026-06-23T22:34:00.000Z
-- [Detect Windows workstations and servers by script](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/detect-windows-endpoints-script)
-  - Updated: 2026-04-28T17:57:00.000Z → 2026-06-23T22:34:00.000Z
-- [Configure Windows Endpoint Monitoring](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/configure-windows-endpoint-monitoring)
-  - Updated: 2026-04-28T17:57:00.000Z → 2026-06-23T22:34:00.000Z
-- [Configure reverse DNS lookup](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/configure-reverse-dns-lookup)
-  - Updated: 2026-04-28T17:57:00.000Z → 2026-06-23T22:34:00.000Z
-- [Backup and restore](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/back-up-restore-sensor)
-  - Updated: 2026-04-28T17:57:00.000Z → 2026-06-23T22:34:00.000Z
-- [Configure OT sensor settings from the Azure portal](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/configure-sensor-settings-portal)
-  - Updated: 2026-04-28T17:57:00.000Z → 2026-06-23T22:34:00.000Z
-- [Configure SNMP monitoring](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-set-up-snmp-mib-monitoring)
-  - Updated: 2026-04-28T17:57:00.000Z → 2026-06-23T22:34:00.000Z
-- [Maintain threat intelligence packages](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-work-with-threat-intelligence-packages)
-  - Updated: 2026-04-28T17:57:00.000Z → 2026-06-23T22:34:00.000Z
-- [Get started with Enterprise IoT security](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/eiot-defender-for-endpoint)
-  - Updated: 2026-04-28T17:57:00.000Z → 2026-06-24T17:35:00.000Z
-- [Device inventories](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/device-inventory)
-  - Updated: 2026-04-28T17:57:00.000Z → 2026-06-24T17:35:00.000Z
-- [Alerts](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/alerts)
-  - Updated: 2026-04-28T17:57:00.000Z → 2026-06-23T22:34:00.000Z
-- [Set up traffic mirroring](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/traffic-mirroring/set-up-traffic-mirroring)
-  - Updated: 2026-04-28T17:57:00.000Z → 2026-06-24T17:35:00.000Z
-- [Provision for cloud management](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/ot-deploy/provision-cloud-management)
-  - Updated: 2026-04-28T17:57:00.000Z → 2026-06-24T17:35:00.000Z
-- *...and 34 more*
 
 ## Classified Pages
 

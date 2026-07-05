@@ -49,8 +49,8 @@ confusable_not_for: Not for Azure Virtual Network Manager (use azure-virtual-net
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 130
+- **Updated Pages**: 0
+- **Unchanged**: 131
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-network/azure-virtual-network.csv`
 
@@ -69,11 +69,6 @@ confusable_not_for: Not for Azure Virtual Network Manager (use azure-virtual-net
 | *(Unclassified)* | 77 | 58.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [Linux and FreeBSD VMs](https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-how-it-works)
-  - Updated: 2023-06-23T22:28:00.000Z → 2026-06-24T22:11:00.000Z
 
 ## Classified Pages
 

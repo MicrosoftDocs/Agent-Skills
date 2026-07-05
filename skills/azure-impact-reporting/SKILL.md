@@ -1,9 +1,9 @@
 ---
 name: azure-impact-reporting
-description: Expert knowledge for Azure Impact Reporting development including troubleshooting, configuration, and integrations & coding patterns. Use when wiring Impact Reporting to Monitor alerts, Logic Apps, Service Health, HPC Guest Health, or impact categories, and other Azure Impact Reporting related development tasks. Not for Azure Carbon Optimization (use azure-carbon-optimization), Azure Cost Management (use azure-cost-management), Azure Monitor (use azure-monitor).
+description: Expert knowledge for Azure Impact Reporting development including troubleshooting, configuration, and integrations & coding patterns. Use when wiring Impact Reporting to Monitor alerts, Logic Apps, Service Health, HPC guest health, or diagnostic logs, and other Azure Impact Reporting related development tasks. Not for Azure Carbon Optimization (use azure-carbon-optimization), Azure Cost Management (use azure-cost-management), Azure Monitor (use azure-monitor), Azure Policy (use azure-policy).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-14"
+  generated_at: "2026-07-05"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Impact Reporting Skill
@@ -25,8 +25,8 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L31-L35 | Diagnosing and fixing Azure Impact Reporting connector failures and resolving Azure HPC Guest Health Reporting issues, errors, and data/health reporting problems. |
-| Configuration | L36-L42 | Configuring Azure Impact Reporting: creating alert connectors and retrieving valid impact and HPC Guest Health category values for correct classification. |
-| Integrations & Coding Patterns | L43-L49 | Patterns and examples for integrating Impact Reporting with Azure Monitor alerts, Logic Apps, diagnostic logs, Service Health, and APIs (sending, attaching data, and viewing insights). |
+| Configuration | L36-L44 | Configuring Azure Impact Reporting and HPC guest health: setting up connectors, valid impact/report categories, guest health settings, and attaching diagnostic logs to reports. |
+| Integrations & Coding Patterns | L45-L50 | Patterns and examples for integrating Impact Reporting with Azure Monitor alerts, Logic Apps, diagnostic logs, Service Health, and APIs (sending, attaching data, and viewing insights). |
 
 ### Troubleshooting
 | Topic | URL |
@@ -38,6 +38,8 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Create Azure Impact Reporting connectors for alerts | https://learn.microsoft.com/en-us/azure/azure-impact-reporting/create-azure-monitor-connector |
 | Use valid HPC Guest Health impact categories | https://learn.microsoft.com/en-us/azure/azure-impact-reporting/guest-health-impact-categories |
+| Configure Azure HPC guest health reporting | https://learn.microsoft.com/en-us/azure/azure-impact-reporting/guest-health-impact-report |
+| Attach diagnostic logs to Azure guest health reports | https://learn.microsoft.com/en-us/azure/azure-impact-reporting/guest-health-log-upload |
 | Retrieve valid Azure Impact Reporting categories | https://learn.microsoft.com/en-us/azure/azure-impact-reporting/view-impact-categories |
 
 ### Integrations & Coding Patterns
@@ -45,5 +47,4 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Integrate Azure Monitor alerts with Impact Reporting | https://learn.microsoft.com/en-us/azure/azure-impact-reporting/azure-monitor-connector |
 | Use Logic Apps to send Azure impact reports | https://learn.microsoft.com/en-us/azure/azure-impact-reporting/creating-logic-app |
-| Attach diagnostic log files to Guest Health reports | https://learn.microsoft.com/en-us/azure/azure-impact-reporting/guest-health-log-upload |
 | Report Azure workload impact via Service Health and API | https://learn.microsoft.com/en-us/azure/azure-impact-reporting/report-impact |

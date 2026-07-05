@@ -1,9 +1,9 @@
 ---
 name: azure-container-apps
-description: Expert knowledge for Azure Container Apps development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring ACA ingress/scale, Dapr microservices, Entra/OIDC auth, GitHub Actions CI/CD, or Arc-enabled clusters, and other Azure Container Apps related development tasks. Not for Azure App Service (use azure-app-service), Azure Functions (use azure-functions), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Container Instances (use azure-container-instances).
+description: Expert knowledge for Azure Container Apps development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when securing ingress/auth, configuring KEDA/Dapr scaling, integrating Arc AKS, mounting storage, or tuning Java apps, and other Azure Container Apps related development tasks. Not for Azure Container Instances (use azure-container-instances), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure App Service (use azure-app-service), Azure Functions (use azure-functions).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-28"
+  generated_at: "2026-07-05"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Container Apps Skill
@@ -28,7 +28,7 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L53-L59 | Deployment, cold-start, and runtime tuning guidance: blue-green rollouts, reducing scale-out latency, and optimizing Java memory usage in Azure Container Apps. |
 | Decision Making | L60-L82 | Guidance on choosing Azure Container Apps plans, compute, GPUs, secrets, and environments, plus migration paths from legacy, Heroku, Java/Spring/Tomcat apps, and other Azure container hosting options. |
 | Architecture & Design Patterns | L83-L88 | Architectures and patterns for Java microservices on Azure Container Apps, including Eureka HA clusters, AI-enabled PetClinic, and end-to-end microservice design best practices. |
-| Limits & Quotas | L89-L95 | Limits, quotas, and default behaviors for Container Apps (including express preview), plus how to review current limits and request quota increases. |
+| Limits & Quotas | L89-L95 | Quotas, limits, and scaling caps for Container Apps, plus how they behave at those limits and how to request quota increases from Azure support. |
 | Security | L96-L134 | Securing Container Apps: auth (Entra, social, OIDC, mTLS, certs), identities/secrets, network controls (NSG, firewall, private endpoints), and policy/best-practice hardening. |
 | Configuration | L135-L175 | Configuring Container Apps runtime: networking, ingress, revisions, scaling (KEDA/Dapr/Functions), workload profiles, Java features, storage mounts, routing, maintenance, and logging/monitoring. |
 | Integrations & Coding Patterns | L176-L203 | Patterns for connecting Container Apps to other services: microservice calls, Dapr, Spring components, Front Door/Private Link, OpenTelemetry exports, and AI code interpreter/dynamic sessions. |
@@ -89,7 +89,7 @@ This skill requires **network access** to fetch documentation content:
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
-| Azure Container Apps platform limits and behaviors | https://learn.microsoft.com/en-us/azure/container-apps/faq |
+| Azure Container Apps limits and behavioral FAQs | https://learn.microsoft.com/en-us/azure/container-apps/faq |
 | Request quota increases for Azure Container Apps | https://learn.microsoft.com/en-us/azure/container-apps/quota-requests |
 | Review quotas and limits for Azure Container Apps | https://learn.microsoft.com/en-us/azure/container-apps/quotas |
 

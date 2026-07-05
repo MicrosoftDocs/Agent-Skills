@@ -43,10 +43,10 @@ use_when: Use when designing AI, HPC, SaaS, AVD, or mission-critical Azure workl
 - **Unclassified**: 32
 
 ### Incremental Update
-- **New Pages**: 6
-- **Updated Pages**: 4
-- **Unchanged**: 207
-- **Deleted Pages**: 9
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 217
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-well-architected/azure-well-architected.csv`
 
 ## Classification Statistics
@@ -63,38 +63,6 @@ use_when: Use when designing AI, HPC, SaaS, AVD, or mission-critical Azure workl
 | *(Unclassified)* | 32 | 14.7% |
 
 ## Changes
-
-### New Pages
-
-- [Get started](https://learn.microsoft.com/en-us/azure/well-architected/sustainability/overview)
-- [Reliability](https://learn.microsoft.com/en-us/azure/well-architected/sustainability/sustainability-reliability-recommendations)
-- [Security](https://learn.microsoft.com/en-us/azure/well-architected/sustainability/sustainability-security-recommendations)
-- [Cost Optimization](https://learn.microsoft.com/en-us/azure/well-architected/sustainability/sustainability-cost-optimization-recommendations)
-- [Operational Excellence](https://learn.microsoft.com/en-us/azure/well-architected/sustainability/sustainability-operational-excellence-recommendations)
-- [Performance Efficiency](https://learn.microsoft.com/en-us/azure/well-architected/sustainability/sustainability-performance-efficiency-recommendations)
-
-### Updated Pages
-
-- [SE:11 Testing and validation](https://learn.microsoft.com/en-us/azure/well-architected/security/test)
-  - Updated: 2023-11-15T08:00:00.000Z → 2026-06-26T17:03:00.000Z
-- [What's new](https://learn.microsoft.com/en-us/azure/well-architected/whats-new)
-  - Updated: 2026-05-18T08:00:00.000Z → 2026-06-18T08:00:00.000Z
-- [Sustainability](https://learn.microsoft.com/en-us/azure/well-architected/sustainability/)
-  - Updated: 2025-06-10T22:03:00Z → 2026-06-26T22:06:00Z
-- [Design methodology](https://learn.microsoft.com/en-us/azure/well-architected/sustainability/sustainability-design-methodology)
-  - Updated: 2024-06-18T16:58:00.000Z → 2026-06-26T22:06:00.000Z
-
-### Deleted Pages
-
-- ~~Application design~~ (https://learn.microsoft.com/en-us/azure/well-architected/sustainability/sustainability-application-design)
-- ~~Application platform~~ (https://learn.microsoft.com/en-us/azure/well-architected/sustainability/sustainability-application-platform)
-- ~~Design principles~~ (https://learn.microsoft.com/en-us/azure/well-architected/sustainability/sustainability-design-principles)
-- ~~Get started~~ (https://learn.microsoft.com/en-us/azure/well-architected/sustainability/sustainability-get-started)
-- ~~Networking and connectivity~~ (https://learn.microsoft.com/en-us/azure/well-architected/sustainability/sustainability-networking)
-- ~~Operational procedures~~ (https://learn.microsoft.com/en-us/azure/well-architected/sustainability/sustainability-operational-procedures)
-- ~~Security~~ (https://learn.microsoft.com/en-us/azure/well-architected/sustainability/sustainability-security)
-- ~~Storage~~ (https://learn.microsoft.com/en-us/azure/well-architected/sustainability/sustainability-storage)
-- ~~Testing~~ (https://learn.microsoft.com/en-us/azure/well-architected/sustainability/sustainability-testing)
 
 ## Classified Pages
 

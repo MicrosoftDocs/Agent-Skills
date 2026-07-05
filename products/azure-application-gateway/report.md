@@ -52,9 +52,9 @@ confusable_not_for: Not for Azure Front Door (use azure-front-door), Azure Load 
 - **Unclassified**: 50
 
 ### Incremental Update
-- **New Pages**: 4
-- **Updated Pages**: 8
-- **Unchanged**: 167
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 179
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-application-gateway/azure-application-gateway.csv`
 
@@ -74,32 +74,6 @@ confusable_not_for: Not for Azure Front Door (use azure-front-door), Azure Load 
 | *(Unclassified)* | 50 | 27.9% |
 
 ## Changes
-
-### New Pages
-
-- [Inference gateway for AI workloads](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/inference-gateway)
-- [Cross-Origin Resource Sharing (CORS)](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/cross-origin-resource-sharing)
-- [Cross-Origin Resource Sharing (CORS)](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/how-to-cors-gateway-api)
-- [Inference gateway](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/how-to-inference-gateway)
-
-### Updated Pages
-
-- [Application Gateway for Containers](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/overview)
-  - Updated: 2026-06-12T08:00:00.000Z → 2026-06-24T17:12:00.000Z
-- [WebSocket support](https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-websocket)
-  - Updated: 2024-08-22T17:04:00.000Z → 2026-06-22T17:13:00.000Z
-- [Deploy Application Gateway for Containers ALB Controller - Helm](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/quickstart-deploy-application-gateway-for-containers-alb-controller-helm)
-  - Updated: 2026-05-18T08:00:00.000Z → 2026-06-24T08:00:00.000Z
-- [Server-sent events](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/server-sent-events)
-  - Updated: 2025-05-08T17:04:00.000Z → 2026-06-24T17:12:00.000Z
-- [Service mesh integration](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/service-mesh-integration)
-  - Updated: 2026-05-18T08:00:00.000Z → 2026-06-24T08:00:00.000Z
-- [ALB Controller Helm Chart](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/alb-controller-helm-chart)
-  - Updated: 2025-10-24T17:26:00.000Z → 2026-06-24T17:12:00.000Z
-- [ALB Service Mesh Helm Chart](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/service-mesh-helm-chart)
-  - Updated: 2025-11-18T18:43:00.000Z → 2026-06-24T17:12:00.000Z
-- [ALB Controller release notes](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/alb-controller-release-notes)
-  - Updated: 2026-05-18T08:00:00.000Z → 2026-06-24T17:12:00.000Z
 
 ## Classified Pages
 

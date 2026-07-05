@@ -1,14 +1,14 @@
 ---
 name: azure-service-health
-description: Expert knowledge for Azure Service Health development including troubleshooting, limits & quotas, security, configuration, and integrations & coding patterns. Use when using Service Health APIs, Resource Graph, webhooks, VM Resource Health, or notification retention settings, and other Azure Service Health related development tasks. Not for Azure Monitor (use azure-monitor), Azure Reliability (use azure-reliability), Azure Resiliency (use azure-resiliency), Azure Quotas (use azure-quotas).
+description: Expert knowledge for Azure Service Health development including troubleshooting, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when handling Service Health APIs, Resource Graph queries, webhooks, VM Resource Health, or retirement alerts, and other Azure Service Health related development tasks. Not for Azure Monitor (use azure-monitor), Azure Reliability (use azure-reliability), Azure Resiliency (use azure-resiliency).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-28"
+  generated_at: "2026-07-05"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Service Health Skill
 
-This skill provides expert guidance for Azure Service Health. Covers troubleshooting, limits & quotas, security, configuration, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Service Health. Covers troubleshooting, decision making, limits & quotas, security, configuration, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -24,16 +24,23 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L37 | Understanding VM Resource Health annotations, diagnosing VM health issues, and troubleshooting platform or user-caused VM availability and performance problems |
-| Limits & Quotas | L38-L42 | Details on how long Azure Service Health notifications are kept, their lifecycle stages, and retention behavior for different event types and channels |
-| Security | L43-L51 | Managing who can see Azure Service Health and security advisories using tenant/subscription roles and RBAC, including configuring access scopes and viewing security-related notifications. |
-| Configuration | L52-L59 | Configuring Service Health and Resource Health alerts via ARM/Bicep/PowerShell and querying Service Health data/fields with Azure Resource Graph. |
-| Integrations & Coding Patterns | L60-L70 | Using APIs, Resource Graph, webhooks, and connectors (OpsGenie, PagerDuty, ServiceNow) to programmatically access, query, and route Azure Service Health and Security advisories |
+| Troubleshooting | L34-L38 | Understanding VM Resource Health annotations, diagnosing VM health issues, and troubleshooting platform or user-caused VM availability and performance problems |
+| Decision Making | L39-L44 | Guidance on selecting and interpreting Azure retirement alerts, and mapping retirement notices to specific resources to assess impact and plan mitigation. |
+| Limits & Quotas | L45-L49 | Details on how long Azure Service Health notifications are kept, their lifecycle stages, and retention behavior for different event types and channels |
+| Security | L50-L58 | Managing who can see Azure Service Health and security advisories using tenant/subscription roles and RBAC, including configuring access scopes and viewing security-related notifications. |
+| Configuration | L59-L66 | Configuring Service Health and Resource Health alerts via ARM/Bicep/PowerShell and querying Service Health data/fields with Azure Resource Graph. |
+| Integrations & Coding Patterns | L67-L77 | Using APIs, Resource Graph, webhooks, and connectors (OpsGenie, PagerDuty, ServiceNow) to programmatically access, query, and route Azure Service Health and Security advisories |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
 | Interpret and troubleshoot VM Resource Health annotations | https://learn.microsoft.com/en-us/azure/service-health/resource-health-vm-annotation |
+
+### Decision Making
+| Topic | URL |
+|-------|-----|
+| Choose Azure retirement alert signals effectively | https://learn.microsoft.com/en-us/azure/service-health/service-retirement-alerting-guidance |
+| Correlate retirement events to impacted Azure resources | https://learn.microsoft.com/en-us/azure/service-health/service-retirement-unified-impact-queries |
 
 ### Limits & Quotas
 | Topic | URL |

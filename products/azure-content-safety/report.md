@@ -48,8 +48,8 @@ confusable_not_for: Not for Azure Information Protection (use azure-information-
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 33
+- **Updated Pages**: 0
+- **Unchanged**: 34
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-content-safety/azure-content-safety.csv`
 
@@ -69,11 +69,6 @@ confusable_not_for: Not for Azure Information Protection (use azure-information-
 | *(Unclassified)* | 19 | 55.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [Azure AI Content Safety FAQ](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/faq)
-  - Updated: 2026-06-15T17:17:00.000Z → 2026-06-26T17:08:00.000Z
 
 ## Classified Pages
 

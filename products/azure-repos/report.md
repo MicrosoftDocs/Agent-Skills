@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-28'
+generated_at: '2026-07-05'
 category_descriptions:
   limits-quotas: 'Limits, quotas, and monitoring for Azure Repos: Git repo size/usage
     limits, Enterprise Live Migration cutover/sync windows, and supported ecosystems
@@ -7,35 +7,35 @@ category_descriptions:
   integrations: Integrating Azure Repos with CLIs, IDEs, notifications, and scanners,
     plus detailed TFVC/tf.exe commands and Git permissions for automating and extending
     repo workflows
-  decision-making: 'Guidance on choosing and migrating version control in Azure DevOps:
-    Git vs TFVC, local vs server workspaces, mixed Git/TFVC use, and migration paths
-    from TFVC/SVN to Git or GitHub.'
-  best-practices: 'Git and TFVC best practices: branching, merges, large files, history
-    cleanup, cross‑platform compatibility, author/identity management, repo health,
-    and post‑migration validation.'
-  configuration: 'Configuring Azure Repos/DevOps: branch policies, PR templates/notifications,
-    Git/TFVC settings, check-in policies, workspaces, and GitHub Advanced Security
-    (CodeQL, dependency, and secret scanning).'
+  configuration: 'Configuring Azure Repos/DevOps behavior: branch policies, PR templates/notifications,
+    Copilot reviews, Git/TFVC settings, check-in policies, workspaces, and GitHub
+    Advanced Security scanning.'
   troubleshooting: Diagnosing and fixing Git/Azure Repos and TFVC issues (locks, merge
     conflicts, push/RPC errors, undo/recover changes) plus troubleshooting CodeQL,
     dependency, and secret scanning.
   security: 'Securing Azure Repos and TFVC: auth methods (Entra, PAT, SSH, credential
     managers), branch/repo permissions and policies, GitHub Advanced Security, and
     safe file/branch access control.'
+  best-practices: 'Git and TFVC best practices: branching, merges, large files, history
+    cleanup, cross‑platform compatibility, author/identity management, repo health,
+    and post‑migration validation.'
+  decision-making: 'Guidance on choosing and migrating version control in Azure DevOps:
+    Git vs TFVC, local vs server workspaces, mixed Git/TFVC use, and migration paths
+    from TFVC/SVN to Git or GitHub.'
   architecture-patterns: Designing and choosing TFVC branching structures/strategies,
     planning strategic branches, implementing feature isolation, and managing branches
     for DevOps workflows in Azure Repos.
 skill_description: Expert knowledge for Azure Repos development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, and integrations & coding patterns. Use when managing Git/TFVC
-  repos, branch policies, PR workflows, CodeQL/dependency scans, or TFVC→Git migrations,
+  repos, branch policies, PR workflows, auth/permissions, or GitHub Advanced Security,
   and other Azure Repos related development tasks. Not for Azure DevOps (use azure-devops),
-  Azure Pipelines (use azure-pipelines), Azure Boards (use azure-boards), Azure Artifacts
-  (use azure-artifacts).
-use_when: Use when managing Git/TFVC repos, branch policies, PR workflows, CodeQL/dependency
-  scans, or TFVC→Git migrations, and other Azure Repos related development tasks.
-confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (use
-  azure-pipelines), Azure Boards (use azure-boards), Azure Artifacts (use azure-artifacts).
+  Azure Artifacts (use azure-artifacts), Azure Pipelines (use azure-pipelines), Azure
+  Boards (use azure-boards).
+use_when: Use when managing Git/TFVC repos, branch policies, PR workflows, auth/permissions,
+  or GitHub Advanced Security, and other Azure Repos related development tasks.
+confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Artifacts (use
+  azure-artifacts), Azure Pipelines (use azure-pipelines), Azure Boards (use azure-boards).
 ---
 # Azure Repos Crawl Report
 
@@ -44,13 +44,13 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 - **Total Pages**: 216
 - **Fetched**: 216
 - **Fetch Failed**: 0
-- **Classified**: 140
-- **Unclassified**: 76
+- **Classified**: 139
+- **Unclassified**: 77
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 6
-- **Unchanged**: 210
+- **Updated Pages**: 3
+- **Unchanged**: 213
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-repos/azure-repos.csv`
 
@@ -59,31 +59,25 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 5 | 2.3% |
-| best-practices | 12 | 5.6% |
-| configuration | 29 | 13.4% |
-| decision-making | 6 | 2.8% |
+| best-practices | 11 | 5.1% |
+| configuration | 30 | 13.9% |
+| decision-making | 5 | 2.3% |
 | integrations | 51 | 23.6% |
 | limits-quotas | 4 | 1.9% |
 | security | 22 | 10.2% |
 | troubleshooting | 11 | 5.1% |
-| *(Unclassified)* | 76 | 35.2% |
+| *(Unclassified)* | 77 | 35.6% |
 
 ## Changes
 
 ### Updated Pages
 
 - [1. Learn about Enterprise Live Migrations](https://learn.microsoft.com/en-us/azure/devops/repos/enterprise-live-migrations/overview?view=azure-devops)
-  - Updated: 2026-06-11T08:00:00.000Z → 2026-06-26T08:00:00.000Z
-- [2. Complete prerequisites](https://learn.microsoft.com/en-us/azure/devops/repos/enterprise-live-migrations/prerequisites?view=azure-devops)
-  - Updated: 2026-06-03T20:26:00.000Z → 2026-06-26T20:45:00.000Z
-- [3. Start the migration](https://learn.microsoft.com/en-us/azure/devops/repos/enterprise-live-migrations/start-migration?view=azure-devops)
-  - Updated: 2026-06-02T16:12:00.000Z → 2026-06-27T01:04:00.000Z
-- [ELM CLI reference](https://learn.microsoft.com/en-us/azure/devops/repos/enterprise-live-migrations/elm-cli-reference?view=azure-devops)
-  - Updated: 2026-06-03T20:26:00.000Z → 2026-06-27T01:04:00.000Z
-- [Troubleshoot ELM](https://learn.microsoft.com/en-us/azure/devops/repos/enterprise-live-migrations/troubleshoot?view=azure-devops)
-  - Updated: 2026-06-03T20:26:00.000Z → 2026-06-27T01:04:00.000Z
-- [Authenticate with Git Credential Manager](https://learn.microsoft.com/en-us/azure/devops/repos/git/set-up-credential-managers?view=azure-devops)
-  - Updated: 2026-02-25T14:06:00.000Z → 2026-06-24T01:04:00.000Z
+  - Updated: 2026-06-26T08:00:00.000Z → 2026-06-29T13:05:00.000Z
+- [6. Complete post-migration tasks](https://learn.microsoft.com/en-us/azure/devops/repos/enterprise-live-migrations/post-migration?view=azure-devops)
+  - Updated: 2026-06-02T16:12:00.000Z → 2026-06-29T17:04:00.000Z
+- [Copilot Code Reviews](https://learn.microsoft.com/en-us/azure/devops/repos/git/copilot-code-reviews?view=azure-devops)
+  - Updated: 2026-06-02T20:25:00.000Z → 2026-06-30T01:05:00.000Z
 
 ## Classified Pages
 
@@ -122,6 +116,7 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 | [Configure check-out settings](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/configure-check-out-settings?view=azure-devops) | configuration | 0.70 | Admin-focused configuration of check-out settings; likely includes specific options and allowed values for concurrent editing, fitting configuration sub-skill. |
 | [Configure dependency scanning](https://learn.microsoft.com/en-us/azure/devops/repos/security/github-advanced-security-dependency-scanning?view=azure-devops) | configuration | 0.70 | Product-specific setup instructions and required pipeline configuration for dependency scanning. |
 | [Configure secret scanning](https://learn.microsoft.com/en-us/azure/devops/repos/security/github-advanced-security-secret-scanning?view=azure-devops) | configuration | 0.70 | Step-by-step setup with product-specific options and configuration values for enabling secret scanning and push protection. |
+| [Copilot Code Reviews](https://learn.microsoft.com/en-us/azure/devops/repos/git/copilot-code-reviews?view=azure-devops) | configuration | 0.70 | Page describes how to enable and configure GitHub Copilot code review at organization, repository, and user levels for Azure Repos. This includes product-specific configuration steps and options (feature flags/preview enablement, scope of configuration) that are not generic LLM knowledge. It is not just a tutorial; it focuses on how to turn on and manage this feature, fitting the configuration sub-skill best. |
 | [Create and work with workspaces](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/create-work-workspaces?view=azure-devops) | configuration | 0.70 | Explains workspace behavior and options (e.g., multiple workspaces, mappings) in TFVC, which are product-specific configuration details. |
 | [Cross-platform compatibility](https://learn.microsoft.com/en-us/azure/devops/repos/git/os-compatibility?view=azure-devops) | best-practices | 0.70 | Covers file system incompatibilities across OSes and how to protect repos; includes specific recommendations and patterns to avoid cross-platform issues. |
 | [Edit check-in policies](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/edit-check-policies?view=azure-devops) | configuration | 0.70 | Shows how administrators modify existing check-in policies and their requirements, which is detailed TFVC configuration behavior. |
@@ -175,9 +170,7 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 | [Workspaces](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/workspaces-command?view=azure-devops) | integrations | 0.70 | Documents tf workspaces command and its handling of cached username/computer changes, which is TFVC-specific. |
 | [tf git permission](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/git-permission-command?view=azure-devops) | integrations | 0.70 | Documents the tf git permission command, including parameters and ACL behavior—product-specific command/API integration details. |
 | [Configure code scanning](https://learn.microsoft.com/en-us/azure/devops/repos/security/github-advanced-security-code-scanning?view=azure-devops) | security | 0.68 | The page is a configuration-focused, product-specific setup guide for enabling GitHub Advanced Security code scanning in Azure DevOps. It includes concrete steps, required permissions, and specific security-related configuration details (for example, enabling the feature at the project/repo level, using the Advanced Security tab, and configuring CodeQL analysis). These are implementation details that go beyond generic concepts and are tied to Azure DevOps and GitHub Advanced Security integration, fitting best under security. |
-| [1. Learn about Enterprise Live Migrations](https://learn.microsoft.com/en-us/azure/devops/repos/enterprise-live-migrations/overview?view=azure-devops) | decision-making | 0.65 | Describes concrete migration paths (full cutover vs hybrid), how continuous sync works, and when to use each option for Azure DevOps to GitHub Enterprise Cloud with data residency. This is product- and scenario-specific migration guidance that helps decide between approaches. |
 | [3. Start the migration](https://learn.microsoft.com/en-us/azure/devops/repos/enterprise-live-migrations/start-migration?view=azure-devops) | configuration | 0.65 | Covers how to authenticate, validate repositories, and start initial synchronization using a specific service connection ID. This is a product-specific configuration and execution flow for ELM, including required parameters and sequence. |
-| [6. Complete post-migration tasks](https://learn.microsoft.com/en-us/azure/devops/repos/enterprise-live-migrations/post-migration?view=azure-devops) | best-practices | 0.65 | Provides product-specific post-migration steps (validating GitHub repo, branch rulesets, mannequin reclamation, preparing teams) that are concrete operational recommendations tailored to ELM migrations. |
 | [About branching strategies](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/branching-strategies-with-tfvc?view=azure-devops) | architecture-patterns | 0.65 | Provides TFVC-specific branching strategies and when to use them for different team sizes and structures, which is design-pattern guidance tailored to this product. |
 | [About pull requests](https://learn.microsoft.com/en-us/azure/devops/repos/git/about-pull-requests?view=azure-devops) | security | 0.65 | Discusses pull request permissions and guidelines; includes Azure DevOps-specific permission behaviors and policy interactions. |
 | [Add](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/add-command?view=azure-devops) | integrations | 0.65 | Documents tf add behavior and parameters; product-specific CLI usage that underpins automated integrations and scripts. |
@@ -273,7 +266,6 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 | [Commit, share, and sync your code](https://learn.microsoft.com/en-us/azure/devops/repos/git/gitquickstart?view=azure-devops) | 0.30 | Step-by-step tutorial for basic Git operations with Visual Studio; no configuration matrices, limits, or product-specific troubleshooting. |
 | [Compare files](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/compare-files?view=azure-devops) | 0.30 | Explains how to compare files; generic feature usage without product-specific limits or configuration references. |
 | [Compare folders](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/compare-folders?view=azure-devops) | 0.30 | Folder comparison UI usage; no configuration matrices, limits, or troubleshooting mappings. |
-| [Copilot Code Reviews](https://learn.microsoft.com/en-us/azure/devops/repos/git/copilot-code-reviews?view=azure-devops) | 0.30 | Page explains how to enable and configure GitHub Copilot code review for pull requests in Azure Repos, but the summary suggests a feature overview and basic enablement steps for a preview feature, without detailed configuration parameter tables, limits, or troubleshooting mappings. It reads as a getting-started/tutorial document rather than deep expert reference. |
 | [Copy changes with cherry-pick](https://learn.microsoft.com/en-us/azure/devops/repos/git/cherry-pick?view=azure-devops) | 0.30 | Cherry-pick usage tutorial; no product-specific configuration schema, limits, or troubleshooting mappings. |
 | [Delete or restore](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/delete-restore-files-folders?view=azure-devops) | 0.30 | Describes delete/restore operations; no expert-only limits, security matrices, or detailed troubleshooting content. |
 | [Eclipse](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/share-your-code-in-tfvc-eclipse?view=azure-devops) | 0.30 | Tutorial for sharing code in TFVC using Eclipse; focuses on basic usage rather than detailed configuration parameters or error-resolution mappings. |
@@ -304,6 +296,8 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 | [Use Azure Repos](https://learn.microsoft.com/en-us/azure/devops/repos/get-started/?view=azure-devops) | 0.20 | Getting-started guide and overview; no detailed configuration tables, limits, or troubleshooting content. |
 | [Use Visual Studio with Git](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/use-visual-studio-git?view=azure-devops) | 0.20 | Resource pointer/overview for using Visual Studio with Git; lacks detailed configuration tables or troubleshooting mappings. |
 | [What is Azure Repos?](https://learn.microsoft.com/en-us/azure/devops/repos/get-started/what-is-repos?view=azure-devops) | 0.20 | High-level overview of Azure Repos and version control concepts without product-specific limits, configs, or detailed patterns. |
+| [1. Learn about Enterprise Live Migrations](https://learn.microsoft.com/en-us/azure/devops/repos/enterprise-live-migrations/overview?view=azure-devops) | 0.10 | High-level overview of Enterprise Live Migrations with migration path descriptions but no specific limits, configuration parameters, error codes, or decision matrices. Content is conceptual and does not include product-specific numeric thresholds or detailed settings. |
+| [6. Complete post-migration tasks](https://learn.microsoft.com/en-us/azure/devops/repos/enterprise-live-migrations/post-migration?view=azure-devops) | 0.10 | Describes general post-migration tasks (validation, branch rulesets, mannequins, team preparation) without detailed configuration tables, numeric limits, or error-code-based troubleshooting. Primarily procedural guidance rather than expert, product-specific technical reference. |
 | [Create a readme](https://learn.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops) | 0.10 | Content is general advice on writing README files (audiences, Markdown usage, examples). This is generic best-practice guidance without product-specific configuration, limits, or error codes. |
 | [Git Repositories](https://learn.microsoft.com/en-us/azure/devops/repos/git/?view=azure-devops) | 0.10 | Landing page for Git documentation; primarily navigational/overview content. |
 | [History in Git](https://learn.microsoft.com/en-us/azure/devops/repos/git/history?view=azure-devops) | 0.10 | Page is an overview of how Git history works conceptually (commits as a graph). It does not contain product-specific limits, configuration parameters, decision matrices, or troubleshooting mappings. |

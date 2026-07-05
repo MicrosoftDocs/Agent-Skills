@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-21'
+generated_at: '2026-07-05'
 category_descriptions:
   security: 'Securing Chaos Studio: identity/RBAC, workspace roles, CMK encryption,
     network/VNet setup, AKS auth and IP allowlists, Relay Bridge/agent security, and
@@ -40,8 +40,8 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Resiliency 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 58
+- **Updated Pages**: 2
+- **Unchanged**: 56
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-chaos-studio/azure-chaos-studio.csv`
 
@@ -57,6 +57,13 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Resiliency 
 | *(Unclassified)* | 27 | 46.6% |
 
 ## Changes
+
+### Updated Pages
+
+- [What is Azure Chaos Studio?](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-overview)
+  - Updated: 2026-06-19T06:10:00.000Z → 2026-07-01T17:13:00.000Z
+- [Chaos experiments](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-chaos-experiments)
+  - Updated: 2024-10-02T17:04:00.000Z → 2026-07-01T17:13:00.000Z
 
 ## Classified Pages
 
@@ -111,7 +118,6 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Resiliency 
 | [Target selection](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-target-selection) | 0.35 | Covers manual vs query-based target selection conceptually; likely a how-to without deep config matrices or limits. |
 | [Availability zone down (VMSS)](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-tutorial-availability-zone-down-portal) | 0.30 | Tutorial for availability zone down template; procedural guidance without detailed limits, configuration matrices, or error-code mappings. |
 | [CLI](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-tutorial-agent-based-cli) | 0.30 | CLI tutorial for an agent-based fault; similar to portal tutorial, focused on procedure rather than deep configuration reference or limits. |
-| [Chaos experiments](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-chaos-experiments) | 0.30 | Conceptual explanation of chaos experiments, selectors, and structure; lacks concrete configuration tables, limits, or troubleshooting mappings. |
 | [DNS outage (NSG)](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-tutorial-dns-outage) | 0.30 | Tutorial to simulate DNS outage via NSG rule; while it mentions port 53, it is still a how-to scenario rather than a comprehensive configuration or troubleshooting reference. |
 | [Entra ID outage](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-tutorial-aad-outage-portal) | 0.30 | Tutorial using an experiment template for Microsoft Entra ID outage; primarily step-by-step usage, not configuration reference or troubleshooting catalog. |
 | [Faults and actions](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-faults-actions) | 0.30 | Describes faults and actions conceptually; no detailed parameter tables, limits, or product-specific troubleshooting content. |
@@ -123,5 +129,6 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Resiliency 
 | [What are Workspaces?](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-workspaces-overview) | 0.30 | Describes what Workspaces are and how they conceptually organize testing; lacks concrete configuration tables, limits, or security role details. |
 | [Schedule an experiment](https://learn.microsoft.com/en-us/azure/chaos-studio/tutorial-schedule) | 0.25 | Tutorial using Logic Apps to schedule experiments; primarily procedural without deep product-specific configuration tables. |
 | [Quickstart: Create and run a chaos experiment](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-quickstart-azure-portal) | 0.20 | Quickstart to create and run a basic experiment; generic how-to without expert-level configuration matrices or limits. |
-| [What is Azure Chaos Studio?](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-overview) | 0.20 | High-level service overview of Azure Chaos Studio; describes capabilities and concepts without detailed limits, configuration parameters, or product-specific troubleshooting data. |
 | [Chaos engineering overview](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-chaos-engineering-overview) | 0.10 | Conceptual explanation of chaos engineering and fault injection; no product-specific limits, configs, or error mappings. |
+| [Chaos experiments](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-chaos-experiments) | - | Conceptual explanation of chaos experiments and their parts; does not include product-specific limits, configuration tables, error codes, or detailed troubleshooting/decision guidance. |
+| [What is Azure Chaos Studio?](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-overview) | - | High-level overview of Azure Chaos Studio capabilities and concepts without specific limits, configuration parameters, error codes, or decision matrices. |

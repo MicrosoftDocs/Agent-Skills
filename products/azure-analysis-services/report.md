@@ -29,8 +29,8 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 1
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-analysis-services/azure-analysis-services.csv`
 
@@ -41,11 +41,6 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | troubleshooting | 1 | 100.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [Network connectivity FAQ](https://learn.microsoft.com/en-us/analysis-services/azure-analysis-services/analysis-services-network-faq?view=sql-analysis-services-2025)
-  - Updated: 2026-06-11T22:03:00.000Z → 2026-06-25T22:03:00.000Z
 
 ## Classified Pages
 

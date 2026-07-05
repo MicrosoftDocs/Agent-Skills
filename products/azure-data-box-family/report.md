@@ -45,8 +45,8 @@ confusable_not_for: Not for Azure Import Export (use azure-import-export), Azure
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 78
+- **Updated Pages**: 0
+- **Unchanged**: 79
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-box-family/azure-data-box-family.csv`
 
@@ -63,11 +63,6 @@ confusable_not_for: Not for Azure Import Export (use azure-import-export), Azure
 | *(Unclassified)* | 28 | 35.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [FAQ](https://learn.microsoft.com/en-us/azure/databox/data-box-faq)
-  - Updated: 2025-03-24T11:11:00.000Z → 2026-06-26T11:45:00.000Z
 
 ## Classified Pages
 

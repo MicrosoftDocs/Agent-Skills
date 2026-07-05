@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-28'
+generated_at: '2026-07-05'
 category_descriptions:
   limits-quotas: 'ACI limits, quotas, and behaviors: vCPU/memory caps, big containers,
     regional capacity checks, standby pool constraints, and VNet-related resource
@@ -74,8 +74,8 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 
 ### Updated Pages
 
-- [FAQ](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-faq)
-  - Updated: 2026-06-16T22:04:00.000Z → 2026-06-24T17:03:00.000Z
+- [Support Policy for ACI](https://learn.microsoft.com/en-us/azure/container-instances/azure-container-instances-support-policy)
+  - Updated: 2025-11-17T08:00:00.000Z → 2026-07-02T11:06:00.000Z
 
 ## Classified Pages
 
@@ -148,7 +148,6 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | [Attestation in Confidential containers](https://learn.microsoft.com/en-us/azure/container-instances/confidential-containers-attestation-concepts) | 0.40 | Attestation concepts; mostly conceptual explanation of attestation in confidential computing, not ACI-specific configuration or error-code troubleshooting. |
 | [Deploy a confidential container group - Portal](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-tutorial-deploy-confidential-container-default-portal) | 0.40 | Portal tutorial for confidential containers; mostly step-by-step UI instructions, not a detailed security configuration reference. |
 | [NGroups Rolling Update](https://learn.microsoft.com/en-us/azure/container-instances/container-instance-ngroups/container-instances-rolling-update) | 0.40 | Rolling update intro for NGroups; likely conceptual or procedural, not a detailed configuration or limits reference. |
-| [Support Policy for ACI](https://learn.microsoft.com/en-us/azure/container-instances/azure-container-instances-support-policy) | 0.40 | Support policy and responsibilities overview; likely descriptive without detailed config tables, numeric thresholds, or error-code troubleshooting matrices. |
 | [Deploy a Spot container group - Azure CLI](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-tutorial-deploy-spot-containers-cli) | 0.35 | CLI tutorial for Spot containers; example deployment, not a full limits table or decision matrix. |
 | [Deploy a Spot container group - Portal](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-tutorial-deploy-spot-containers-portal) | 0.35 | Portal tutorial for Spot containers; basic deployment steps, not detailed quotas or configuration matrices. |
 | [Deploy a container instance - ARM template](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-quickstart-template) | 0.35 | ARM template quickstart; example-focused, not a full configuration matrix or decision/troubleshooting guide. |
@@ -162,6 +161,7 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | [Deploy a container instance - CLI](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-quickstart) | 0.30 | Quickstart using Azure CLI; primarily step-by-step deployment, not a catalog of limits, configs, or troubleshooting mappings. |
 | [Deploy a container instance - Portal](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-quickstart-portal) | 0.30 | Portal quickstart; focuses on basic deployment steps, not detailed configuration option references or limits. |
 | [Deploy a container instance - PowerShell](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-quickstart-powershell) | 0.30 | PowerShell quickstart; shows basic commands to deploy a container, without extensive config parameter tables or numeric constraints. |
+| [Support Policy for ACI](https://learn.microsoft.com/en-us/azure/container-instances/azure-container-instances-support-policy) | 0.30 | Support policy content describes responsibilities and supported/unsupported scenarios but doesn't provide numeric limits, configuration tables, error-code-based troubleshooting, or other detailed technical parameters that match any sub-skill type. |
 | [1 - Create container image](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-tutorial-prepare-app) | 0.25 | Tutorial on preparing a container image; generic containerization steps, not ACI-specific expert configuration or limits. |
 | [2 - Create container registry](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-tutorial-prepare-acr) | 0.25 | Tutorial on preparing Azure Container Registry; mostly generic ACR usage, not ACI-specific expert details. |
 | [Relationship to orchestrators](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-orchestrator-relationship) | 0.25 | Conceptual relationship between ACI and orchestrators; architectural overview without quantified decision matrices or limits. |

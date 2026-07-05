@@ -30,9 +30,9 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L60-L71 | Designing resilient, highly available ExpressRoute architectures, including DR patterns, multi-circuit routing/Global Reach, VPN coexistence and failover, and using Microsoft peering for PSTN. |
 | Limits & Quotas | L72-L80 | ExpressRoute limits on FastPath, gateways, routes, and provider circuits, including rate limiting, quotas, monitoring advertised routes, and FAQs on connectivity scale and constraints. |
 | Security | L81-L90 | Encryption (IPsec, MACsec), NAT rules, RBAC roles, and security best practices for protecting ExpressRoute circuits and traffic |
-| Configuration | L91-L126 | Configuring and managing ExpressRoute circuits, gateways, routing/peering, NAT, BFD, IPv6, Global Reach, monitoring, resiliency, and linking VNets using portal, PowerShell, and CLI. |
-| Integrations & Coding Patterns | L127-L133 | Automating ExpressRoute circuit creation/management with PowerShell or Azure CLI, and configuring a site-to-site VPN that runs over ExpressRoute Microsoft peering. |
-| Deployment | L134-L141 | Guides for deploying and migrating ExpressRoute circuits/gateways, including ARM/Terraform provisioning, Direct SKUs, and moving to zone-redundant or new production circuits. |
+| Configuration | L91-L125 | Configuring and managing ExpressRoute circuits, gateways, routing/peering, NAT, BFD, IPv6, Global Reach, monitoring, resiliency, and linking VNets using portal, PowerShell, and CLI. |
+| Integrations & Coding Patterns | L126-L132 | Automating ExpressRoute circuit creation/management with PowerShell or Azure CLI, and configuring a site-to-site VPN that runs over ExpressRoute Microsoft peering. |
+| Deployment | L133-L140 | Guides for deploying and migrating ExpressRoute circuits/gateways, including ARM/Terraform provisioning, Direct SKUs, and moving to zone-redundant or new production circuits. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -103,7 +103,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure coexisting ExpressRoute and S2S VPN gateways | https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-coexist-resource-manager |
 | Connect VNets to ExpressRoute circuits with PowerShell | https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-linkvnet-arm |
 | Link Azure VNets to ExpressRoute circuits via CLI | https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-linkvnet-cli |
-| Link virtual networks to ExpressRoute circuits in portal | https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-linkvnet-portal-resource-manager |
 | Reset ExpressRoute circuit peerings with PowerShell | https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-reset-peering |
 | Reset ExpressRoute circuit peerings in Azure portal | https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-reset-peering-portal |
 | Configure ExpressRoute routing and peering with PowerShell | https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-routing-arm |

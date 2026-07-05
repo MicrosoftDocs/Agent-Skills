@@ -3,7 +3,7 @@ name: azure-key-vault
 description: Expert knowledge for Azure Key Vault development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing vault/HSM keys & secrets, Private Link, Event Grid, key rotation, or RBAC vs access policies, and other Azure Key Vault related development tasks. Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure Cloud Hsm (use azure-cloud-hsm), Azure Payment Hsm (use azure-payment-hsm), Azure Information Protection (use azure-information-protection).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-21"
+  generated_at: "2026-07-05"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Key Vault Skill
@@ -30,8 +30,8 @@ This skill requires **network access** to fetch documentation content:
 | Limits & Quotas | L63-L74 | Key Vault and Managed HSM limits, quotas, throttling, logging latency, certificate/secret size behaviors, soft-delete/recovery, and network/IP firewall configuration. |
 | Security | L75-L99 | Securing Key Vault and Managed HSM: auth/RBAC vs access policies, network/firewall/private endpoints, soft-delete/backup-restore, and hardening/best practices for keys, secrets, and certificates. |
 | Configuration | L100-L121 | Configuring Key Vault and Managed HSM: monitoring, alerts, logging, metrics, policies, key types/algorithms, key rotation, secure key release, replication, and special secret formats. |
-| Integrations & Coding Patterns | L122-L146 | Integrating Key Vault with Event Grid, Private Link, DigiCert, Databricks, Managed HSM TLS offload, and JavaScript code samples for managing keys/secrets and crypto operations |
-| Deployment | L147-L150 | How to deploy and provision Azure Key Vault and Managed HSM (vaults, keys, secrets) using ARM templates, Bicep, Terraform, Azure CLI, and PowerShell |
+| Integrations & Coding Patterns | L122-L145 | Integrating Key Vault with Event Grid, Private Link, DigiCert, Databricks, Managed HSM TLS offload, and JavaScript code samples for managing keys/secrets and crypto operations |
+| Deployment | L146-L149 | How to deploy and provision Azure Key Vault and Managed HSM (vaults, keys, secrets) using ARM templates, Bicep, Terraform, Azure CLI, and PowerShell |
 
 ### Troubleshooting
 | Topic | URL |
@@ -136,7 +136,6 @@ This skill requires **network access** to fetch documentation content:
 | Import keys into Azure Key Vault with JavaScript | https://learn.microsoft.com/en-us/azure/key-vault/keys/javascript-developer-guide-import-key |
 | List Azure Key Vault keys using JavaScript | https://learn.microsoft.com/en-us/azure/key-vault/keys/javascript-developer-guide-list-key-version |
 | Sign and verify with Key Vault keys in JavaScript | https://learn.microsoft.com/en-us/azure/key-vault/keys/javascript-developer-guide-sign-verify-key |
-| Use Managed HSM TLS Offload library with F5 and Nginx | https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/tls-offload-library |
 | Back up and restore Key Vault secrets in JavaScript | https://learn.microsoft.com/en-us/azure/key-vault/secrets/javascript-developer-guide-backup-secrets |
 | Delete and purge Key Vault secrets with JavaScript | https://learn.microsoft.com/en-us/azure/key-vault/secrets/javascript-developer-guide-delete-secret |
 | Enable or disable Key Vault secrets using JavaScript | https://learn.microsoft.com/en-us/azure/key-vault/secrets/javascript-developer-guide-enable-disable-secret |

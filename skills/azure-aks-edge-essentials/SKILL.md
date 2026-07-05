@@ -1,9 +1,9 @@
 ---
 name: azure-aks-edge-essentials
-description: Expert knowledge for Azure Kubernetes Service Edge Essentials development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing AKS Edge/Arc clusters, Arc onboarding, SDN VNets, IoT/AI workloads, or offline/disconnected ops, and other Azure Kubernetes Service Edge Essentials related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure IoT Edge (use azure-iot-edge), Azure Container Apps (use azure-container-apps), Azure Stack Edge (use azure-stack-edge).
+description: Expert knowledge for Azure Kubernetes Service Edge Essentials development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing AKS Edge/Arc clusters, Arc onboarding, IoT/AI workloads, TPM access, or camera/OPC UA integration, and other Azure Kubernetes Service Edge Essentials related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure IoT Edge (use azure-iot-edge), Azure Stack Edge (use azure-stack-edge), Azure Container Apps (use azure-container-apps).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-28"
+  generated_at: "2026-07-05"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Kubernetes Service Edge Essentials Skill
@@ -24,15 +24,15 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L87 | Diagnosing and fixing AKS Edge/Arc cluster issues: deployments, upgrades, networking, storage, security, logs, certificates, Windows Server hosts, and known issues/workarounds. |
-| Best Practices | L88-L95 | Best practices for AKS Edge/Arc: applying Azure Policy, recovering clusters after management VM loss, and safely upgrading Kubernetes/workload clusters via PowerShell or Admin Center |
-| Decision Making | L96-L108 | Guidance on choosing AKS Edge/Arc vs cloud/on-prem, supported versions/add-ons, monitoring, pricing/licensing, support, and planning migrations or retirement of older AKS/Windows Server setups |
-| Architecture & Design Patterns | L109-L115 | Designing AKS on Windows Server for Azure Local: high availability on two-node setups, SDN VNet architectures, and deployment patterns for AKS Arc target clusters. |
-| Limits & Quotas | L116-L130 | Hardware/software requirements, IP and scale limits, quotas, and support policies for AKS Edge/Arc on Azure Local, bare metal, VMware, and Windows Server deployments. |
-| Security | L131-L165 | Auth, RBAC, SSH, certs, keys, gMSA, and container security for AKS Edge/Arc/Hybrid, including Entra/AD SSO, workload identity, image signing, and secure node/etcd communication. |
-| Configuration | L166-L252 | Configuring AKS Edge/Arc/hybrid clusters: networking, storage, load balancers, proxies, autoscaling, monitoring, Windows/Linux node pools, offline/Arc connectivity, and deployment templates. |
-| Integrations & Coding Patterns | L253-L312 | Managing and integrating AKS Edge/AKS Arc/hybrid clusters: Arc onboarding, CLI/PowerShell cmdlets, storage/CSI, networking, logging/backup, IoT/AI workloads, TPM access, and camera/OPC UA discovery. |
-| Deployment | L313-L349 | Deploying, upgrading, and managing AKS Edge/AKS hybrid/AKS Arc clusters and nodes (Windows & Linux), including installs, updates, node pools, offline/disconnected ops, and lifecycle tasks. |
+| Troubleshooting | L37-L88 | Diagnosing and fixing AKS Edge/Arc cluster issues: creation/upgrade failures, networking, storage, security, logs/diagnostics, VMware/Windows Server problems, and known errors/workarounds. |
+| Best Practices | L89-L96 | Best practices for AKS Edge/Arc: applying Azure Policy, recovering clusters after management VM loss, and safely upgrading Kubernetes/workload clusters via PowerShell or Admin Center |
+| Decision Making | L97-L109 | Guidance on choosing AKS Edge/Arc vs cloud/on-prem, supported versions/add-ons, monitoring, pricing/licensing, support, and planning migrations or retirement of older AKS/Windows Server setups |
+| Architecture & Design Patterns | L110-L116 | Designing AKS on Windows Server for Azure Local: high availability on two-node setups, SDN VNet architectures, and deployment patterns for AKS Arc target clusters. |
+| Limits & Quotas | L117-L131 | Hardware/software requirements, IP and scale limits, quotas, and support policies for AKS Edge/Arc on Azure Local, bare metal, VMware, and Windows Server deployments. |
+| Security | L132-L167 | Identity, RBAC, certificates, SSH, gMSA, and container security for AKS Edge/Arc/Hybrid, including Entra/AD auth, key rotation, workload identity, and secure access to nodes and clusters. |
+| Configuration | L168-L254 | Configuring AKS Edge/Arc/hybrid clusters: networking, storage, load balancers, proxies, autoscaling, monitoring, Windows/Linux node pools, offline/Arc connectivity, and deployment templates. |
+| Integrations & Coding Patterns | L255-L314 | Managing and integrating AKS Edge/AKS Arc/hybrid clusters: Arc onboarding, CLI/PowerShell cmdlets, storage/CSI, networking, logging/backup, IoT/AI workloads, TPM access, and camera/OPC UA discovery. |
+| Deployment | L315-L351 | Deploying, upgrading, and managing AKS Edge/AKS hybrid/AKS Arc clusters and nodes (Windows & Linux), including installs, updates, node pools, offline/disconnected ops, and lifecycle tasks. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -61,6 +61,7 @@ This skill requires **network access** to fetch documentation content:
 | Fix AKS Arc cluster create or scale failures due to VHD image issues | https://learn.microsoft.com/en-us/azure/aks/aksarc/gallery-image-not-usable |
 | Collect on-demand AKS Arc logs for Microsoft support | https://learn.microsoft.com/en-us/azure/aks/aksarc/get-on-demand-logs |
 | Fix GPU-enabled AKS Arc cluster creation failures | https://learn.microsoft.com/en-us/azure/aks/aksarc/gpu-enabled-cluster-issue |
+| Diagnose and fix 'MOC unreachable' errors for AKS on Azure Local | https://learn.microsoft.com/en-us/azure/aks/aksarc/infrastructure-operation-failures |
 | Handle general known issues when running AKS on Windows Server | https://learn.microsoft.com/en-us/azure/aks/aksarc/known-issues |
 | Fix Azure Arc enable/disable errors on AKS workload clusters | https://learn.microsoft.com/en-us/azure/aks/aksarc/known-issues-arc |
 | Resolve installation errors for AKS on Windows Server (AKS Arc) | https://learn.microsoft.com/en-us/azure/aks/aksarc/known-issues-installation |
@@ -144,6 +145,7 @@ This skill requires **network access** to fetch documentation content:
 | Encrypt Kubernetes etcd secrets in AKS on Azure Local | https://learn.microsoft.com/en-us/azure/aks/aksarc/encrypt-etcd-secrets |
 | Control AKS Arc access with Entra ID and Kubernetes RBAC | https://learn.microsoft.com/en-us/azure/aks/aksarc/kubernetes-rbac-entra-id |
 | Configure Kubernetes RBAC with Microsoft Entra ID in AKS Arc | https://learn.microsoft.com/en-us/azure/aks/aksarc/kubernetes-rbac-local |
+| Configure access and identity for AKS on Azure Local | https://learn.microsoft.com/en-us/azure/aks/aksarc/multi-rack/concepts-security-access-identity |
 | Configure Azure RBAC for AKS on Azure Local multi-rack | https://learn.microsoft.com/en-us/azure/aks/aksarc/multi-rack/use-azure-rbac |
 | Configure gMSA-based AD authentication for AKS Windows containers | https://learn.microsoft.com/en-us/azure/aks/aksarc/prepare-windows-nodes-gmsa |
 | Add gMSA credential spec for AKS hybrid | https://learn.microsoft.com/en-us/azure/aks/aksarc/reference/ps/add-akshcigmsacredentialspec |

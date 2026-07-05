@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-28'
+generated_at: '2026-07-05'
 category_descriptions:
   integrations: Patterns and setup guides for connecting Azure services to external
     data platforms (Confluent Cloud, MongoDB Atlas, Neon Postgres) using Service Connector
@@ -37,16 +37,16 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 
 ## Summary
 
-- **Total Pages**: 107
-- **Fetched**: 107
+- **Total Pages**: 108
+- **Fetched**: 108
 - **Fetch Failed**: 0
 - **Classified**: 25
-- **Unclassified**: 82
+- **Unclassified**: 83
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 106
+- **New Pages**: 1
+- **Updated Pages**: 0
+- **Unchanged**: 107
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-partner-solutions/azure-partner-solutions.csv`
 
@@ -55,19 +55,18 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 1 | 0.9% |
-| configuration | 11 | 10.3% |
+| configuration | 11 | 10.2% |
 | decision-making | 1 | 0.9% |
 | integrations | 2 | 1.9% |
 | security | 2 | 1.9% |
-| troubleshooting | 8 | 7.5% |
-| *(Unclassified)* | 82 | 76.6% |
+| troubleshooting | 8 | 7.4% |
+| *(Unclassified)* | 83 | 76.9% |
 
 ## Changes
 
-### Updated Pages
+### New Pages
 
-- [What is Dell PowerScale?](https://learn.microsoft.com/en-us/azure/partner-solutions/dell/overview)
-  - Updated: 2026-03-30T20:20:00.000Z → 2026-06-25T11:43:00.000Z
+- [Create Projects & Clusters](https://learn.microsoft.com/en-us/azure/partner-solutions/mongo-db/create-projects-clusters)
 
 ## Classified Pages
 
@@ -150,6 +149,7 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 | [Link to existing Dynatrace resource](https://learn.microsoft.com/en-us/azure/partner-solutions/dynatrace/link-to-existing-resources) | 0.25 | Linking to an existing Dynatrace resource is a portal operation; while billing notes exist, summary doesn’t clearly indicate detailed configuration matrices or limits. |
 | [Astro](https://learn.microsoft.com/en-us/azure/partner-solutions/astronomer/) | 0.20 | High-level description of Apache Airflow on Astro as an Azure Native ISV Service; no explicit expert-level numeric or configuration details. |
 | [Confluent](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/) | 0.20 | Confluent Cloud with Azure landing/overview; summary focuses on managed Kafka/Flink service, not specific limits, configs, or troubleshooting. |
+| [Create Projects & Clusters](https://learn.microsoft.com/en-us/azure/partner-solutions/mongo-db/create-projects-clusters) | 0.20 | From the summary, this appears to be a how-to/tutorial on creating and managing MongoDB Atlas projects and clusters via the Azure portal. There’s no indication of specific limits, quotas, configuration parameter tables, error codes, or decision matrices. Without evidence of detailed product-specific settings or constraints, it doesn’t meet the expert-knowledge criteria for any sub-skill type. |
 | [Create a Qumulo resource](https://learn.microsoft.com/en-us/azure/partner-solutions/qumulo/create) | 0.20 | This is a quickstart for creating an Azure Native Qumulo Scalable File Service instance in the portal. Quickstarts are typically step-by-step tutorials without comprehensive configuration tables, limits, or detailed troubleshooting matrices. It likely shows one example configuration rather than enumerating all settings or expert-only constraints, so it does not meet the bar for expert knowledge under the defined sub-skill types. |
 | [Create a resource](https://learn.microsoft.com/en-us/azure/partner-solutions/dell/create) | 0.20 | Quickstart for creating a Dell PowerScale resource via the portal is likely a step-by-step tutorial. The summary does not indicate configuration tables, limits, or other expert-only details; it appears to be basic how-to content. |
 | [Create an Apache Airflow deployment on Astro](https://learn.microsoft.com/en-us/azure/partner-solutions/astronomer/create) | 0.20 | Quickstart for creating an Astro resource in the Azure portal; likely step-by-step UI guidance without detailed configuration tables, limits, or product-specific troubleshooting. |

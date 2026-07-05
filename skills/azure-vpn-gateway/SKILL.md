@@ -1,9 +1,9 @@
 ---
 name: azure-vpn-gateway
-description: Expert knowledge for Azure VPN Gateway development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring S2S/P2S tunnels, BGP routing, IPsec/IKE policies, RADIUS/Entra auth, or active-active gateways, and other Azure VPN Gateway related development tasks. Not for Azure ExpressRoute (use azure-expressroute), Azure Virtual Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan), Azure Traffic Manager (use azure-traffic-manager).
+description: Expert knowledge for Azure VPN Gateway development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring S2S/P2S tunnels, BGP routing, IPsec/IKE policies, auth (cert/Entra/RADIUS), or ExpressRoute VPN, and other Azure VPN Gateway related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan), Azure ExpressRoute (use azure-expressroute), Azure NAT Gateway (use azure-nat-gateway).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-28"
+  generated_at: "2026-07-05"
   generator: "docs2skills/1.0.0"
 ---
 # Azure VPN Gateway Skill
@@ -32,7 +32,7 @@ This skill requires **network access** to fetch documentation content:
 | Security | L73-L94 | Security configuration for Azure VPN Gateway: IPsec/IKE policies, cert/RADIUS/Entra auth, MFA, P2S/S2S access control, crypto requirements, and security best practices. |
 | Configuration | L95-L154 | Configuring Azure VPN Gateway and clients: S2S/P2S setup, auth (cert, Entra, RADIUS), BGP, IPsec/NAT/routing, dual-stack, monitoring, and client/device-specific connection guides. |
 | Integrations & Coding Patterns | L155-L162 | Configuring Azure VPN Gateway with on-prem devices and services: NPS/RADIUS VSAs for P2S, S2S over ExpressRoute, Cisco ASA samples, and BGP VPN connectivity with AWS. |
-| Deployment | L163-L176 | Deploying and configuring Azure VPN Gateways: creating gateways and S2S VPNs via PowerShell/CLI, IP/SKU migration and upgrades, active-active changes, zone redundancy, and client profile deployment. |
+| Deployment | L163-L176 | Deploying and configuring Azure VPN Gateways: creating gateways/S2S VPNs via PowerShell/CLI, migrating Basic→Standard IP/SKU, active-active changes, zone redundancy, and client profile deployment. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -163,7 +163,7 @@ This skill requires **network access** to fetch documentation content:
 ### Deployment
 | Topic | URL |
 |-------|-----|
-| Migrate Azure VPN Gateway public IP from Basic to Standard | https://learn.microsoft.com/en-us/azure/vpn-gateway/basic-public-ip-migrate-about |
+| Migrate VPN Gateway Basic public IP to Standard | https://learn.microsoft.com/en-us/azure/vpn-gateway/basic-public-ip-migrate-about |
 | Execute Basic-to-Standard public IP migration for VPN Gateway | https://learn.microsoft.com/en-us/azure/vpn-gateway/basic-public-ip-migrate-howto |
 | Create a Basic SKU VPN Gateway via PowerShell | https://learn.microsoft.com/en-us/azure/vpn-gateway/create-gateway-basic-sku-powershell |
 | Deploy a VPN Gateway using PowerShell | https://learn.microsoft.com/en-us/azure/vpn-gateway/create-gateway-powershell |

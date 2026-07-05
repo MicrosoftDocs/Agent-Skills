@@ -52,8 +52,8 @@ confusable_not_for: Not for Azure Advisor (use azure-advisor), Azure Monitor (us
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 16
-- **Unchanged**: 256
+- **Updated Pages**: 0
+- **Unchanged**: 272
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cost-management/azure-cost-management.csv`
 
@@ -73,41 +73,6 @@ confusable_not_for: Not for Azure Advisor (use azure-advisor), Azure Monitor (us
 | *(Unclassified)* | 94 | 34.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [EA tasks in Microsoft Customer Agreement](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/mca-enterprise-operations)
-  - Updated: 2026-01-14T08:00:00.000Z → 2026-06-25T08:00:00.000Z
-- [Download your invoice](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/download-azure-invoice-daily-usage-date)
-  - Updated: 2026-01-14T08:00:00.000Z → 2026-06-25T08:00:00.000Z
-- [Upgrade free account](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/upgrade-azure-subscription)
-  - Updated: 2026-01-14T08:00:00.000Z → 2026-06-25T08:00:00.000Z
-- [Microsoft Customer Agreement price sheet terms](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/mca-understand-pricesheet)
-  - Updated: 2026-01-14T08:00:00.000Z → 2026-06-25T08:00:00.000Z
-- [Enterprise agreement price sheet terms](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/ea-understand-pricesheet)
-  - Updated: 2026-01-14T08:00:00.000Z → 2026-06-25T08:00:00.000Z
-- [Update tax details](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/manage-tax-information)
-  - Updated: 2026-01-14T08:00:00.000Z → 2026-06-25T08:00:00.000Z
-- [Grant access to billing](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/manage-billing-access)
-  - Updated: 2026-01-14T08:00:00.000Z → 2026-06-25T08:00:00.000Z
-- [Microsoft Customer Agreements roles in Azure](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/understand-mca-roles)
-  - Updated: 2026-02-10T08:00:00.000Z → 2026-06-25T08:00:00.000Z
-- [Manage billing across tenants](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/manage-billing-across-tenants)
-  - Updated: 2026-05-21T22:10:00.000Z → 2026-06-25T08:00:00.000Z
-- [View billing accounts](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/view-all-accounts)
-  - Updated: 2026-01-20T08:00:00.000Z → 2026-06-25T08:00:00.000Z
-- [Elevate access](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/elevate-access-global-admin)
-  - Updated: 2026-01-14T08:00:00.000Z → 2026-06-25T08:00:00.000Z
-- [Organize costs with invoice sections](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/mca-section-invoice)
-  - Updated: 2026-01-14T08:00:00.000Z → 2026-06-25T08:00:00.000Z
-- [Find tenant ID and primary domain name](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/find-tenant-id-domain)
-  - Updated: 2026-01-14T08:00:00.000Z → 2026-06-25T08:00:00.000Z
-- [Reactivate Azure Student subscription](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/azurestudents-subscription-disabled)
-  - Updated: 2026-01-15T08:00:00.000Z → 2026-06-25T08:00:00.000Z
-- [Transfer subscriptions between partners](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/azure-plan-subscription-transfer-partners)
-  - Updated: 2025-12-29T08:00:00.000Z → 2026-06-23T22:12:00.000Z
-- [Transfer CSP subscriptions](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/transfer-subscriptions-subscribers-csp)
-  - Updated: 2026-03-30T17:14:00.000Z → 2026-06-23T22:12:00.000Z
 
 ## Classified Pages
 

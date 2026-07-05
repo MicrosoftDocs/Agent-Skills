@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-06-28'
+generated_at: '2026-07-05'
 category_descriptions:
-  configuration: 'Configuring AVS environments: networking, storage, backup, monitoring,
-    DNS/DHCP, HCX, vSAN, Cloud Director, Arc/Run Command, and integrating Azure services
-    like NetApp Files and Elastic SAN.'
+  configuration: 'Configuring AVS infrastructure: networking, DNS/DHCP, storage/datastores,
+    backup, monitoring/metrics, Arc/Run Command, HCX, Cloud Director, and high availability/placement
+    settings.'
   architecture-patterns: 'Network, storage, and private cloud design for AVS: hub-spoke
     patterns, vSAN/stretched clusters, Horizon and GitHub Enterprise sizing, Cloud
     Director networking, and Gen 2 architecture.'
@@ -21,26 +21,26 @@ category_descriptions:
     VMs.
   best-practices: Guidance on securing and safely operating AVS private clouds, plus
     tuning NSX/HCX scale and performance for efficient, reliable VMware workload migrations.
-  integrations: 'Patterns for integrating AVS with Azure services: storage (Pure,
-    NetApp), backup, monitoring/logs, HCX internet, VPN/Virtual WAN, and automation
-    via Run Command/Logic Apps.'
+  integrations: 'Patterns for connecting AVS to Azure services: storage, backups,
+    monitoring, syslog, NetApp Files, VPN/Virtual WAN, HCX internet, and VMware Tools
+    repo configuration.'
   limits-quotas: AVS capacity, host/cluster/vSAN limits, routing constraints, required
     ports, and how to plan, request quota, deploy, and scale private clouds within
     platform limits.
 skill_description: Expert knowledge for Azure VMware Solution development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when configuring AVS networking/vSAN, HCX migrations, Horizon/Cloud Director,
-  Defender for Cloud, or Run Command automation, and other Azure VMware Solution related
-  development tasks. Not for Azure Virtual Machines (use azure-virtual-machines),
-  Azure Stack Edge (use azure-stack-edge), Azure Large Instances (use azure-large-instances),
-  SAP HANA on Azure Large Instances (use azure-sap).
-use_when: Use when configuring AVS networking/vSAN, HCX migrations, Horizon/Cloud
-  Director, Defender for Cloud, or Run Command automation, and other Azure VMware
-  Solution related development tasks.
+  Use when working with AVS networking/NSX, HCX migrations, vSAN clusters, Horizon
+  VDI, or VMware Cloud Director, and other Azure VMware Solution related development
+  tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Large
+  Instances (use azure-large-instances), Azure Migrate (use azure-migrate), Azure
+  Site Recovery (use azure-site-recovery).
+use_when: Use when working with AVS networking/NSX, HCX migrations, vSAN clusters,
+  Horizon VDI, or VMware Cloud Director, and other Azure VMware Solution related development
+  tasks.
 confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines), Azure
-  Stack Edge (use azure-stack-edge), Azure Large Instances (use azure-large-instances),
-  SAP HANA on Azure Large Instances (use azure-sap).
+  Large Instances (use azure-large-instances), Azure Migrate (use azure-migrate),
+  Azure Site Recovery (use azure-site-recovery).
 ---
 # Azure VMware Solution Crawl Report
 
@@ -53,9 +53,9 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 - **Unclassified**: 42
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 4
-- **Unchanged**: 131
+- **New Pages**: 0
+- **Updated Pages**: 2
+- **Unchanged**: 134
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-vmware-solution/azure-vmware-solution.csv`
 
@@ -65,10 +65,10 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 |------|-------|------------|
 | architecture-patterns | 9 | 6.6% |
 | best-practices | 3 | 2.2% |
-| configuration | 35 | 25.7% |
+| configuration | 34 | 25.0% |
 | decision-making | 8 | 5.9% |
 | deployment | 8 | 5.9% |
-| integrations | 7 | 5.1% |
+| integrations | 8 | 5.9% |
 | limits-quotas | 8 | 5.9% |
 | security | 13 | 9.6% |
 | troubleshooting | 3 | 2.2% |
@@ -76,20 +76,12 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 
 ## Changes
 
-### New Pages
-
-- [Use vCenter Login Banner Run Command](https://learn.microsoft.com/en-us/azure/azure-vmware/use-vcenter-login-banner-run-command)
-
 ### Updated Pages
 
-- [FAQ](https://learn.microsoft.com/en-us/azure/azure-vmware/faq)
-  - Updated: 2026-06-02T20:30:00.000Z → 2026-06-24T17:12:00.000Z
-- [Attach Azure NetApp Files datastores to Azure VMware Solution hosts](https://learn.microsoft.com/en-us/azure/azure-vmware/attach-azure-netapp-files-to-azure-vmware-solution-hosts)
-  - Updated: 2026-05-12T17:16:00.000Z → 2026-06-24T08:00:00.000Z
-- [Introduction to Gen 2](https://learn.microsoft.com/en-us/azure/azure-vmware/native-introduction)
-  - Updated: 2026-06-16T17:13:00.000Z → 2026-06-23T22:12:00.000Z
-- [VMware Cloud Foundations (VCF) license portability on Azure VMware Solution](https://learn.microsoft.com/en-us/azure/azure-vmware/vmware-cloud-foundations-license-portability)
-  - Updated: 2026-01-15T23:11:00.000Z → 2026-06-24T08:00:00.000Z
+- [Run Command](https://learn.microsoft.com/en-us/azure/azure-vmware/using-run-command)
+  - Updated: 2026-04-28T18:47:00.000Z → 2026-06-30T22:12:00.000Z
+- [Use Set-ToolsRepo Run Command](https://learn.microsoft.com/en-us/azure/azure-vmware/use-set-toolsrepo-run-command)
+  - Updated: 2026-06-12T22:22:00.000Z → 2026-06-30T22:12:00.000Z
 
 ## Classified Pages
 
@@ -103,7 +95,6 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Enable first-party application service principal](https://learn.microsoft.com/en-us/azure/azure-vmware/native-first-party-principle-security) | security | 0.80 | Security-focused article with a specific application ID and service principal name required for Gen 2 deployments; this is product-specific IAM configuration detail that qualifies as expert knowledge. |
 | [Request host quota for Azure VMware Solution](https://learn.microsoft.com/en-us/azure/azure-vmware/request-host-quota-azure-vmware-solution) | limits-quotas | 0.80 | Describes requesting host quota/capacity and includes concrete operational constraints such as allocation time (up to five business days) and guidance to request sufficient hosts up front. This is quota- and capacity-related behavior specific to Azure VMware Solution, matching limits-quotas. |
 | [Set an external identity source for NSX](https://learn.microsoft.com/en-us/azure/azure-vmware/configure-external-identity-source-nsx-t) | security | 0.80 | Explains how to configure VMware NSX in Azure VMware Solution to use external LDAP/Active Directory for authentication, including mapping accounts to NSX roles. This is product-specific identity and RBAC configuration, matching the security sub-skill type. |
-| [Run Command](https://learn.microsoft.com/en-us/azure/azure-vmware/using-run-command) | configuration | 0.78 | Explains AVS-specific Run Command operations available to the special cloudadmin role in vCenter, including which privileged operations can be executed and how, representing detailed configuration/operational behavior unique to AVS. |
 | [Configure alerts and work with metrics](https://learn.microsoft.com/en-us/azure/azure-vmware/configure-alerts-for-azure-vmware-solution) | configuration | 0.75 | Explains configuring Azure Alerts, Action Groups, and Metrics for AVS, including incident behavior and AVS-specific monitoring settings. |
 | [Integrate Microsoft Defender for Cloud](https://learn.microsoft.com/en-us/azure/azure-vmware/azure-security-integration) | security | 0.75 | Covers product-specific security integration between Defender for Cloud and AVS, including how alerts flow, how policies are applied, and how to protect AVS VMs. Such content typically includes concrete configuration steps and security settings unique to this integration. |
 | [NSX Scale and Performance Recommendations for VMware HCX](https://learn.microsoft.com/en-us/azure/azure-vmware/azure-vmware-solution-nsx-scale-and-performance-recommendations-for-vmware-hcx) | best-practices | 0.75 | Focuses on NSX topology, data path performance characteristics, identifying resource limits, and recommended configurations to mitigate performance issues for HCX migrations. This is product-specific, actionable guidance with configuration recommendations and edge-case considerations, fitting best-practices. |
@@ -149,10 +140,10 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-vmware/introduction) | limits-quotas | 0.70 | Introduction includes concrete platform limits (minimum 3 hosts, maximum 16 hosts per cluster) that are product-specific numeric quotas. |
 | [Private clouds and clusters](https://learn.microsoft.com/en-us/azure/azure-vmware/architecture-private-clouds) | architecture-patterns | 0.70 | Design considerations for vSAN stretched clusters are product-specific architecture patterns with when-to-use guidance. |
 | [Route architecture for Gen 2](https://learn.microsoft.com/en-us/azure/azure-vmware/native-network-routing-architecture) | limits-quotas | 0.70 | Explicitly mentions route architecture and limitations, including prefix scale considerations; likely contains concrete route/prefix limits and constraints. |
+| [Run Command](https://learn.microsoft.com/en-us/azure/azure-vmware/using-run-command) | configuration | 0.70 | Describes Azure VMware Solution–specific vCenter CloudAdmin role behavior and how run commands execute with elevated privileges via PowerShell cmdlets. This is product-specific operational/configuration knowledge (how commands are executed, privilege model) that goes beyond generic VMware or Azure concepts, but it doesn’t focus on limits, quotas, or troubleshooting. |
 | [Security recommendations](https://learn.microsoft.com/en-us/azure/azure-vmware/security-recommendations) | security | 0.70 | Security recommendations for a specific service usually include concrete RBAC roles, network/security configuration settings, and product-specific hardening steps. These are service-specific security configurations and best practices that go beyond generic security concepts. |
 | [Send syslogs to log management solutions via Azure Logic Apps](https://learn.microsoft.com/en-us/azure/azure-vmware/logs-via-logic-app) | integrations | 0.70 | Shows how to configure an Azure Logic Apps workflow to collect and forward VMware syslogs from AVS to external log management services. This is a concrete integration pattern between AVS syslogs and Logic Apps, likely including trigger/action configuration and parameters unique to this scenario. |
 | [Set an external identity source for vCenter Server](https://learn.microsoft.com/en-us/azure/azure-vmware/configure-identity-source-vcenter) | security | 0.70 | Describes product-specific identity and role configuration for Azure VMware Solution vCenter, including the special CloudAdmin account and role behavior that differs from other VMware and on-premises deployments, which is security-focused expert knowledge about RBAC and identity integration. |
-| [Use Set-ToolsRepo Run Command](https://learn.microsoft.com/en-us/azure/azure-vmware/use-set-toolsrepo-run-command) | configuration | 0.70 | The article describes end-to-end use of the Set-ToolsRepo Run Command in Azure VMware Solution, including how to download and host the correct GuestStore version of the VMware Tools ZIP and how to run and validate the AVS Run Command. This implies product-specific command usage, parameters, and configuration steps unique to Azure VMware Solution rather than generic concepts, fitting the configuration sub-skill best. |
 | [Use vCenter Login Banner Run Command](https://learn.microsoft.com/en-us/azure/azure-vmware/use-vcenter-login-banner-run-command) | configuration | 0.70 | Describes using Azure VMware Solution Run Commands to configure, view, and disable a vCenter login banner; this implies specific Run Command names, parameters, and usage patterns that are product-specific configuration details rather than generic concepts. |
 | [VMware HCX Mobility Optimized Networking (MON) guidance](https://learn.microsoft.com/en-us/azure/azure-vmware/vmware-hcx-mon-guidance) | best-practices | 0.70 | Provides recommended configurations to mitigate NSX data path constraints and improve HCX migration performance—product-specific best practices. |
 | [Azure VMware Solution private cloud maintenance](https://learn.microsoft.com/en-us/azure/azure-vmware/azure-vmware-solution-private-cloud-maintenance) | best-practices | 0.68 | The page describes Azure VMware Solution–specific maintenance behavior (host monitoring, remediation flow, mandatory customer steps before/after maintenance) that are unique to this managed service. It provides concrete, product-specific operational guidance and gotchas (for example, what customers must or must not change, how maintenance is orchestrated on hosts/clusters) rather than generic concepts, fitting best under best-practices. |
@@ -175,6 +166,7 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Protect web apps with Azure Application Gateway](https://learn.microsoft.com/en-us/azure/azure-vmware/protect-azure-vmware-solution-with-application-gateway) | security | 0.65 | Shows how to place Azure Application Gateway in front of web apps running on Azure VMware Solution to securely expose them. While also an integration, the focus is on secure exposure and protection patterns for AVS workloads using a specific Azure security service, fitting security best as a sub-skill. |
 | [Protect, monitor, and manage VMs](https://learn.microsoft.com/en-us/azure/azure-vmware/integrate-azure-native-services) | integrations | 0.65 | Explains how to wire AVS workloads into specific Azure native services (monitoring, management, protection). Such integration articles typically include service-specific configuration steps, parameters, and patterns unique to AVS–Azure integration, which constitute expert integration knowledge. |
 | [Save costs with a reserved instance](https://learn.microsoft.com/en-us/azure/azure-vmware/reserved-instance) | decision-making | 0.65 | Covers how reserved instances apply specifically to Azure VMware Solution hosts, including what portions of usage are covered (compute and software licensing) and how discounts are applied. This is product- and SKU-specific cost/selection guidance that informs when and how to choose reservations, fitting decision-making. Not just a conceptual overview of reservations. |
+| [Use Set-ToolsRepo Run Command](https://learn.microsoft.com/en-us/azure/azure-vmware/use-set-toolsrepo-run-command) | integrations | 0.65 | Explains end-to-end use of the Set-ToolsRepo run command, including how to download and host the correct GuestStore version of the VMware Tools ZIP and validate success. This is a product-specific integration/configuration pattern for AVS run commands and GuestStore/VMware Tools that goes beyond generic SDK or deployment tutorials. |
 | [VMware Cloud Director on Azure VMware Solution network scenarios](https://learn.microsoft.com/en-us/azure/azure-vmware/enable-vmware-vcd-with-azure-network) | architecture-patterns | 0.65 | Describes concrete networking connectivity scenarios for VMware Cloud Director tenants on Azure VMware Solution (internet access, Azure service access, external networks). This is product- and scenario-specific architecture guidance that goes beyond generic networking concepts, mapping AVS and VCD constructs into specific patterns. |
 | [Deploy Citrix on Azure VMware Solution](https://learn.microsoft.com/en-us/azure/azure-vmware/azure-vmware-solution-citrix) | deployment | 0.62 | Focuses on deploying Citrix Virtual Apps and Desktops service on Azure VMware Solution. Citrix-on-AVS is a specific deployment scenario with product-specific requirements and constraints (e.g., supported models, topology, and AVS usage patterns) that go beyond generic deployment knowledge, fitting the deployment sub-skill for a particular platform integration. |
 | [Enable VMware Cloud Director Service with Azure VMware Solution](https://learn.microsoft.com/en-us/azure/azure-vmware/enable-vmware-cds-with-azure) | deployment | 0.62 | Describes enabling VMware Cloud Director service on top of Azure VMware Solution private clouds to provision and manage virtual datacenters. This is a product-specific enablement/deployment scenario that likely includes required configurations and constraints for wiring the services together, best fitting deployment. |

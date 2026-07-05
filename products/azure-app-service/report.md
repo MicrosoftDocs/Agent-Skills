@@ -53,8 +53,8 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Spring 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 244
+- **Updated Pages**: 0
+- **Unchanged**: 247
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-app-service/azure-app-service.csv`
 
@@ -74,15 +74,6 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Spring 
 | *(Unclassified)* | 99 | 40.1% |
 
 ## Changes
-
-### Updated Pages
-
-- [Spring Boot with MongoDB](https://learn.microsoft.com/en-us/azure/app-service/tutorial-java-spring-cosmosdb)
-  - Updated: 2025-04-17T08:00:00.000Z → 2026-06-26T22:12:00.000Z
-- [Tomcat with MySQL](https://learn.microsoft.com/en-us/azure/app-service/tutorial-java-tomcat-mysql-app)
-  - Updated: 2025-04-17T08:00:00.000Z → 2026-06-25T08:00:00.000Z
-- [JBoss with MySQL](https://learn.microsoft.com/en-us/azure/app-service/tutorial-java-jboss-mysql-app)
-  - Updated: 2026-03-25T08:00:00.000Z → 2026-06-25T08:00:00.000Z
 
 ## Classified Pages
 

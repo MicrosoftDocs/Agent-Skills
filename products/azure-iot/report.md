@@ -28,9 +28,9 @@ confusable_not_for: Not for Azure IoT Central (use azure-iot-central), Azure IoT
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 7
-- **Deleted Pages**: 3
+- **Updated Pages**: 0
+- **Unchanged**: 8
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-iot/azure-iot.csv`
 
 ## Classification Statistics
@@ -41,17 +41,6 @@ confusable_not_for: Not for Azure IoT Central (use azure-iot-central), Azure IoT
 | *(Unclassified)* | 6 | 75.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [Secure your solution](https://learn.microsoft.com/en-us/azure/iot/iot-overview-security)
-  - Updated: 2025-06-18T11:21:00.000Z → 2026-06-23T17:23:00.000Z
-
-### Deleted Pages
-
-- ~~Connect on-premises SAP system to Azure~~ (https://learn.microsoft.com/en-us/azure/iot/howto-connect-on-premises-sap-to-azure)
-- ~~Enable industrial dataspace in Azure~~ (https://learn.microsoft.com/en-us/azure/iot/howto-iot-industrial-dataspaces)
-- ~~Implement industrial IoT reference solution~~ (https://learn.microsoft.com/en-us/azure/iot/tutorial-iot-industrial-solution-architecture)
 
 ## Classified Pages
 

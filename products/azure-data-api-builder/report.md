@@ -47,10 +47,10 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 - **Unclassified**: 43
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 15
-- **Unchanged**: 119
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 135
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-api-builder/azure-data-api-builder.csv`
 
 ## Classification Statistics
@@ -68,47 +68,6 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | *(Unclassified)* | 43 | 31.9% |
 
 ## Changes
-
-### New Pages
-
-- [DAB 2.0 (GA)](https://learn.microsoft.com/en-us/azure/data-api-builder/whats-new/version-2-0)
-
-### Updated Pages
-
-- [.NET Aspire](https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/quickstart-dotnet-aspire)
-  - Updated: 2026-05-15T17:03:00.000Z → 2026-06-19T08:00:00.000Z
-- [Azure Container Apps](https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/quickstart-azure-container-apps)
-  - Updated: 2026-05-11T08:00:00.000Z → 2026-06-19T08:00:00.000Z
-- [Local Models](https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/use-local-models)
-  - Updated: 2026-05-15T17:03:00.000Z → 2026-06-22T17:10:00.000Z
-- [Data Manipulation Tools](https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/data-manipulation-language-tools)
-  - Updated: 2026-05-15T17:03:00.000Z → 2026-06-19T08:00:00.000Z
-- [Aggregate data](https://learn.microsoft.com/en-us/azure/data-api-builder/concept/graphql/aggregate-data)
-  - Updated: 2026-04-01T23:07:00.000Z → 2026-06-23T17:09:00.000Z
-- [Multiple mutations](https://learn.microsoft.com/en-us/azure/data-api-builder/concept/graphql/multiple-mutations)
-  - Updated: 2026-04-01T23:07:00.000Z → 2026-06-22T08:00:00.000Z
-- [Unauthenticated](https://learn.microsoft.com/en-us/azure/data-api-builder/concept/security/authenticate-unauthenticated)
-  - Updated: 2026-04-01T23:07:00.000Z → 2026-04-04T05:02:00.000Z
-- [Database RLS](https://learn.microsoft.com/en-us/azure/data-api-builder/concept/security/row-level-security)
-  - Updated: 2026-04-01T23:07:00.000Z → 2026-06-19T08:00:00.000Z
-- [Configuration](https://learn.microsoft.com/en-us/azure/data-api-builder/configuration/entities)
-  - Updated: 2026-04-01T23:07:00.000Z → 2026-06-22T17:10:00.000Z
-- [Best practices](https://learn.microsoft.com/en-us/azure/data-api-builder/concept/security/best-practices)
-  - Updated: 2026-04-01T23:07:00.000Z → 2026-06-22T17:10:00.000Z
-- [Query Timeout](https://learn.microsoft.com/en-us/azure/data-api-builder/concept/database/timeout)
-  - Updated: 2026-04-01T23:07:00.000Z → 2026-06-22T17:10:00.000Z
-- [App Service (code)](https://learn.microsoft.com/en-us/azure/data-api-builder/deployment/azure-app-service)
-  - Updated: 2026-05-05T17:11:00.000Z → 2026-06-19T08:00:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/data-api-builder/whats-new/)
-  - Updated: 2026-04-01T23:07:00Z → 2026-06-22T17:10:00Z
-- [Property: Entities](https://learn.microsoft.com/en-us/azure/data-api-builder/configuration/entities)
-  - Updated: 2026-04-01T23:07:00.000Z → 2026-06-22T17:10:00.000Z
-- [dab add](https://learn.microsoft.com/en-us/azure/data-api-builder/command-line/dab-add)
-  - Updated: 2026-05-12T17:16:00.000Z → 2026-06-22T17:10:00.000Z
-
-### Deleted Pages
-
-- ~~DAB 2.0 (Preview)~~ (https://learn.microsoft.com/en-us/azure/data-api-builder/whats-new/version-2-0)
 
 ## Classified Pages
 

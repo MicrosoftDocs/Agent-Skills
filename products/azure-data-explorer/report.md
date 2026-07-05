@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-28'
+generated_at: '2026-07-05'
 category_descriptions:
   security: 'Securing ADX clusters: auth/RBAC, managed identities, encryption, keys,
     policies, network/private endpoints, outbound/public access control, and data
@@ -53,9 +53,9 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 - **Unclassified**: 92
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 5
-- **Unchanged**: 192
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 197
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-explorer/azure-data-explorer.csv`
 
@@ -76,22 +76,10 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 
 ## Changes
 
-### New Pages
-
-- [Troubleshoot dashboard tile errors](https://learn.microsoft.com/en-us/azure/data-explorer/dashboard-troubleshoot-tile-errors)
-
 ### Updated Pages
 
-- [Conditional Access](https://learn.microsoft.com/en-us/azure/data-explorer/security-conditional-access)
-  - Updated: 2024-08-14T11:11:00.000Z → 2026-06-21T22:02:00.000Z
-- [Use Advisor recommendations to optimize your cluster](https://learn.microsoft.com/en-us/azure/data-explorer/azure-advisor)
-  - Updated: 2026-01-08T12:04:00.000Z → 2026-06-21T22:02:00.000Z
-- [Migrate cluster to support availability zones](https://learn.microsoft.com/en-us/azure/data-explorer/migrate-cluster-to-multiple-availability-zone)
-  - Updated: 2025-04-20T11:07:00.000Z → 2026-06-21T22:02:00.000Z
-- [Create retention table policy](https://learn.microsoft.com/en-us/azure/data-explorer/table-retention-policy-wizard)
-  - Updated: 2023-11-23T17:54:00.000Z → 2026-06-21T22:02:00.000Z
-- [Create solutions](https://learn.microsoft.com/en-us/azure/data-explorer/business-continuity-create-solution)
-  - Updated: 2022-03-07T00:00:00.000Z → 2026-06-21T22:02:00.000Z
+- [Customize dashboard visuals](https://learn.microsoft.com/en-us/azure/data-explorer/dashboard-customize-visuals)
+  - Updated: 2026-02-22T23:05:00.000Z → 2026-06-29T11:03:00.000Z
 
 ## Classified Pages
 
@@ -268,7 +256,6 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | [Create an Event Hubs data connection](https://learn.microsoft.com/en-us/azure/data-explorer/create-event-hubs-connection) | 0.30 | Describes how to create an Event Hubs data connection and ingest data into Azure Data Explorer. The summary suggests a connection/ingestion walkthrough rather than configuration reference tables, limits, or troubleshooting matrices. Lacks clear evidence of expert-level numeric limits, parameter ranges, or error-code-based diagnosis. |
 | [Create external table](https://learn.microsoft.com/en-us/azure/data-explorer/external-table) | 0.30 | Wizard how-to for external tables; tutorial-style without deep configuration matrices or limits. |
 | [Create table](https://learn.microsoft.com/en-us/azure/data-explorer/create-table-wizard) | 0.30 | Wizard-based how-to for creating a table; mostly procedural without detailed config tables or limits. |
-| [Customize dashboard visuals](https://learn.microsoft.com/en-us/azure/data-explorer/dashboard-customize-visuals) | 0.30 | Customization of visuals is UI/tutorial oriented; lacks numeric limits, config matrices, or error-resolution mappings. |
 | [Dashboard-specific visuals](https://learn.microsoft.com/en-us/azure/data-explorer/dashboard-visuals) | 0.30 | Lists dashboard-specific visuals; likely feature enumeration and links, not detailed limits or configuration tables. |
 | [Data ingestion overview](https://learn.microsoft.com/en-us/azure/data-explorer/ingest-data-overview) | 0.30 | High-level ingestion overview without concrete limits, configs, or error mappings. |
 | [Delete a database](https://learn.microsoft.com/en-us/azure/data-explorer/delete-database) | 0.30 | Simple how-to for deleting a database; summary doesn’t indicate special limits, soft-delete behavior, or complex configuration. |
@@ -286,6 +273,7 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | [Access the web UI anywhere](https://learn.microsoft.com/en-us/azure/data-explorer/web-sync) | 0.20 | Primarily a how-to/tutorial for enabling sync of Azure Data Explorer web UI profile; does not list numeric limits, configuration parameter tables, error codes, or product-specific decision matrices. Content is procedural rather than expert reference material. |
 | [Add a query visualization](https://learn.microsoft.com/en-us/azure/data-explorer/add-query-visualization) | 0.20 | How-to UI guide for creating visualizations from query results; no limits, config tables, error codes, or product-specific thresholds. Primarily step-by-step usage, not expert reference content. |
 | [Create a cluster and database using SDKs](https://learn.microsoft.com/en-us/azure/data-explorer/create-cluster-database) | 0.20 | Primarily a how-to/tutorial for creating a cluster and database using various tools. It doesn’t focus on limits, decision matrices, configuration tables, or troubleshooting mappings with error codes, so it doesn’t meet the expert-knowledge criteria for any sub-skill type. |
+| [Customize dashboard visuals](https://learn.microsoft.com/en-us/azure/data-explorer/dashboard-customize-visuals) | 0.20 | Page focuses on how to edit and customize dashboard visuals in Azure Data Explorer. It appears to be a UI/tutorial-style guide without tables of configuration parameters, numeric limits, or product-specific error codes. The customization properties are likely descriptive rather than detailed config matrices, so it doesn't meet the thresholds for configuration, integrations, or other expert-knowledge categories. |
 | [Explore the results grid](https://learn.microsoft.com/en-us/azure/data-explorer/web-results-grid) | 0.20 | Describes how to work with the results grid in the web UI; lacks numeric limits, configuration parameter tables, or troubleshooting mappings. General feature-usage instructions rather than expert reference. |
 | [Explore the sample gallery](https://learn.microsoft.com/en-us/azure/data-explorer/web-ui-samples-query) | 0.20 | Sample data exploration tutorial; mainly KQL examples and navigation, not configuration or limits. |
 | [Get started for free](https://learn.microsoft.com/en-us/azure/data-explorer/start-for-free) | 0.20 | Page is an introductory 'start for free' overview for Azure Data Explorer, focused on how to get a free cluster and begin exploring. The summary does not indicate specific numeric limits/quotas, configuration parameter tables, error codes, or decision matrices. It appears to be onboarding/marketing-style content rather than detailed expert configuration, limits, or troubleshooting guidance. |

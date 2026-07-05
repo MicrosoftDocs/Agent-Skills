@@ -8,16 +8,17 @@
 | Topic | URL |
 |-------|-----|
 | Use Azure Policy to deploy Azure Monitor Agent at scale | https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-policy |
+| Check Azure Monitor Agent supported operating systems | https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-supported-operating-systems |
 | Deploy Azure Monitor and Log Analytics agents with ARM templates | https://learn.microsoft.com/en-us/azure/azure-monitor/agents/resource-manager-agent |
 | Deploy Azure Monitor alert rules via CLI, PowerShell, and ARM | https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-create-rule-cli-powershell-arm |
 | Migrate Application Insights smart detection to alerts | https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-smart-detections-migration |
-| Move Log Analytics workspaces across subscriptions and resource groups | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/move-workspace |
 | Configure and operate Log Analytics workspace replication | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/workspace-replication |
 | Create custom Azure policies to deploy diagnostic settings at scale | https://learn.microsoft.com/en-us/azure/azure-monitor/platform/diagnostic-settings-policy |
 | Enable diagnostic settings at scale with built-in Azure policies | https://learn.microsoft.com/en-us/azure/azure-monitor/platform/diagnostic-settings-policy-built-in |
 | Enable Application Insights Profiler for .NET on App Service | https://learn.microsoft.com/en-us/azure/azure-monitor/profiler/profiler |
 | Deploy Profiler for .NET on Azure Service Fabric | https://learn.microsoft.com/en-us/azure/azure-monitor/profiler/profiler-servicefabric |
 | Run Application Insights Profiler on Azure VMs and scale sets | https://learn.microsoft.com/en-us/azure/azure-monitor/profiler/profiler-vm |
+| Migrate Azure Policy assignments from Dependency Agent | https://learn.microsoft.com/en-us/azure/azure-monitor/vm/dependency-agent-migrate-policy |
 | Deploy Azure Monitor agent to Azure and hybrid VMs | https://learn.microsoft.com/en-us/azure/azure-monitor/vm/monitor-virtual-machine-agent |
 | Upgrade and manage VM insights Dependency Agent | https://learn.microsoft.com/en-us/azure/azure-monitor/vm/vminsights-dependency-agent |
 | Migrate VM insights from Log Analytics agent to Azure Monitor agent | https://learn.microsoft.com/en-us/azure/azure-monitor/vm/vminsights-migrate-agent |

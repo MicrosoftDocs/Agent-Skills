@@ -43,8 +43,8 @@ confusable_not_for: Not for Azure Traffic Manager (use azure-traffic-manager), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 72
+- **Updated Pages**: 0
+- **Unchanged**: 75
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-dns/azure-dns.csv`
 
@@ -61,15 +61,6 @@ confusable_not_for: Not for Azure Traffic Manager (use azure-traffic-manager), A
 | *(Unclassified)* | 47 | 62.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [Azure DNS overview](https://learn.microsoft.com/en-us/azure/dns/dns-overview)
-  - Updated: 2025-12-16T08:00:00.000Z → 2026-06-22T08:00:00.000Z
-- [What is Azure DNS Private Resolver?](https://learn.microsoft.com/en-us/azure/dns/dns-private-resolver-overview)
-  - Updated: 2025-12-17T06:10:00.000Z → 2026-06-22T08:00:00.000Z
-- [What is an Azure Private DNS zone?](https://learn.microsoft.com/en-us/azure/dns/private-dns-privatednszone)
-  - Updated: 2025-12-18T23:12:00.000Z → 2026-06-22T08:00:00.000Z
 
 ## Classified Pages
 

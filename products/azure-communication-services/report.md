@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Notification Hubs (use azure-notification-hubs
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 517
+- **Updated Pages**: 0
+- **Unchanged**: 518
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-communication-services/azure-communication-services.csv`
 
@@ -76,11 +76,6 @@ confusable_not_for: Not for Azure Notification Hubs (use azure-notification-hubs
 | *(Unclassified)* | 105 | 20.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [Answer a call](https://learn.microsoft.com/en-us/azure/communication-services/concepts/call-automation/incoming-call-notification)
-  - Updated: 2023-08-18T21:53:00.000Z → 2026-06-22T22:13:00.000Z
 
 ## Classified Pages
 

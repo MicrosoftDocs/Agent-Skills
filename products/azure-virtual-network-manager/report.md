@@ -40,8 +40,8 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 53
+- **Updated Pages**: 0
+- **Unchanged**: 54
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-network-manager/azure-virtual-network-manager.csv`
 
@@ -57,11 +57,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | *(Unclassified)* | 31 | 57.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [Create a secured hub and spoke](https://learn.microsoft.com/en-us/azure/virtual-network-manager/tutorial-create-secured-hub-and-spoke)
-  - Updated: 2025-07-11T08:00:00.000Z → 2026-06-22T08:00:00.000Z
 
 ## Classified Pages
 

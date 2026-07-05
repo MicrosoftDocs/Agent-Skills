@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-28'
+generated_at: '2026-07-05'
 category_descriptions:
   security: 'Securing Automation accounts: identities (system/user-assigned), RBAC,
     auth methods, encryption, certificates/credentials, Private Link, Azure Policy,
@@ -50,9 +50,9 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 - **Unclassified**: 23
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 1
-- **Unchanged**: 114
+- **Unchanged**: 115
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-automation/azure-automation.csv`
 
@@ -72,14 +72,10 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 
 ## Changes
 
-### New Pages
-
-- [Retirements](https://learn.microsoft.com/en-us/azure/automation/automation-runtime-retirement-policy)
-
 ### Updated Pages
 
-- [About Change tracking and inventory](https://learn.microsoft.com/en-us/azure/azure-change-tracking-inventory/overview-monitoring-agent)
-  - Updated: 2026-01-10T06:10:00.000Z → 2026-06-23T11:39:00.000Z
+- [Update runbook from PowerShell 7.1 to PowerShell 7.4](https://learn.microsoft.com/en-us/azure/automation/quickstart-update-runbook-in-runtime-environment)
+  - Updated: 2025-06-27T22:11:00.000Z → 2026-06-29T17:15:00.000Z
 
 ## Classified Pages
 
@@ -188,7 +184,6 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 | [Delete Run As account](https://learn.microsoft.com/en-us/azure/automation/delete-run-as-account) | 0.40 | Describes retirement and deletion of Run As accounts and migration to managed identities; primarily lifecycle and portal/PowerShell steps without deep config parameters or error mappings. |
 | [Remove user-assigned managed identity](https://learn.microsoft.com/en-us/azure/automation/remove-user-assigned-identity) | 0.40 | Procedural how-to for removing a user-assigned managed identity via portal/PowerShell/ARM; no detailed configuration tables, limits, or product-specific edge cases. |
 | [Run Azure CLI commands in PowerShell 7.4 runbooks](https://learn.microsoft.com/en-us/azure/automation/quickstart-cli-support-powershell-runbook-runtime-environment) | 0.40 | Shows that Azure CLI 2.64.0 is default in PowerShell 7.4 runtime, but no broader config matrices or constraints; mostly a how-to. |
-| [Update runbook from PowerShell 7.1 to PowerShell 7.4](https://learn.microsoft.com/en-us/azure/automation/quickstart-update-runbook-in-runtime-environment) | 0.40 | Upgrade runbook runtime version tutorial; summary doesn’t show detailed config tables or limits, more of a procedural guide. |
 | [Create Automation account - Azure portal](https://learn.microsoft.com/en-us/azure/automation/automation-create-standalone-account) | 0.35 | How-to for creating a standalone Automation account; mostly portal steps without detailed configuration matrices. |
 | [Enable Desired State Configuration for a machine](https://learn.microsoft.com/en-us/azure/automation/quickstarts/dsc-configuration) | 0.35 | Quickstart for configuring a VM with DSC; likely procedural without detailed config option tables or limits in the summary. |
 | [Install Hybrid Worker extension - Azure portal](https://learn.microsoft.com/en-us/azure/automation/quickstarts/install-hybrid-worker-extension) | 0.35 | Quickstart for installing Hybrid Worker extension; appears as a basic tutorial without detailed configuration parameter tables. |
@@ -203,6 +198,7 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 | [Archive for What's new](https://learn.microsoft.com/en-us/azure/automation/whats-new-archive) | 0.20 | Archive of release notes; summary indicates high-level update listing without specific limits, configs, error codes, or decision matrices. |
 | [Create Automation account - Azure portal](https://learn.microsoft.com/en-us/azure/automation/quickstarts/create-azure-automation-account-portal) | 0.20 | Quickstart for creating an Automation account via portal; step-by-step tutorial without config matrices or limits. |
 | [Overview](https://learn.microsoft.com/en-us/azure/automation/automation-dsc-overview) | 0.20 | Described as an overview of Azure Automation State Configuration; overviews are primarily conceptual and retirement notice–style content, not detailed configuration tables, error mappings, or limits. |
+| [Update runbook from PowerShell 7.1 to PowerShell 7.4](https://learn.microsoft.com/en-us/azure/automation/quickstart-update-runbook-in-runtime-environment) | 0.20 | Quickstart-style guidance for updating runbooks between PowerShell runtime versions; no detailed limits, configuration tables, error codes, or product-specific expert patterns beyond general version support statements. |
 | [What are the various Automation services in Azure?](https://learn.microsoft.com/en-us/azure/automation/automation-services) | 0.20 | Conceptual comparison of automation services; no detailed decision matrices, limits, or config tables evident from summary. |
 | [What is Azure Automation?](https://learn.microsoft.com/en-us/azure/automation/overview) | 0.20 | High-level overview of Azure Automation capabilities without concrete limits, configs, or error mappings. |
 | [What's new?](https://learn.microsoft.com/en-us/azure/automation/whats-new) | 0.10 | Monthly 'what's new' changelog/updates page; primarily release notes and high-level feature announcements without structured limits, configuration tables, error mappings, or decision matrices that match the defined expert-knowledge sub-skill types. |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-28'
+generated_at: '2026-07-05'
 category_descriptions:
   integrations: Using APIs, Resource Graph, webhooks, and connectors (OpsGenie, PagerDuty,
     ServiceNow) to programmatically access, query, and route Azure Service Health
@@ -14,61 +14,56 @@ category_descriptions:
     problems
   limits-quotas: Details on how long Azure Service Health notifications are kept,
     their lifecycle stages, and retention behavior for different event types and channels
+  decision-making: Guidance on selecting and interpreting Azure retirement alerts,
+    and mapping retirement notices to specific resources to assess impact and plan
+    mitigation.
 skill_description: Expert knowledge for Azure Service Health development including
-  troubleshooting, limits & quotas, security, configuration, and integrations & coding
-  patterns. Use when using Service Health APIs, Resource Graph, webhooks, VM Resource
-  Health, or notification retention settings, and other Azure Service Health related
-  development tasks. Not for Azure Monitor (use azure-monitor), Azure Reliability
-  (use azure-reliability), Azure Resiliency (use azure-resiliency), Azure Quotas (use
-  azure-quotas).
-use_when: Use when using Service Health APIs, Resource Graph, webhooks, VM Resource
-  Health, or notification retention settings, and other Azure Service Health related
+  troubleshooting, decision making, limits & quotas, security, configuration, and
+  integrations & coding patterns. Use when handling Service Health APIs, Resource
+  Graph queries, webhooks, VM Resource Health, or retirement alerts, and other Azure
+  Service Health related development tasks. Not for Azure Monitor (use azure-monitor),
+  Azure Reliability (use azure-reliability), Azure Resiliency (use azure-resiliency).
+use_when: Use when handling Service Health APIs, Resource Graph queries, webhooks,
+  VM Resource Health, or retirement alerts, and other Azure Service Health related
   development tasks.
 confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability (use
-  azure-reliability), Azure Resiliency (use azure-resiliency), Azure Quotas (use azure-quotas).
+  azure-reliability), Azure Resiliency (use azure-resiliency).
 ---
 # Azure Service Health Crawl Report
 
 ## Summary
 
-- **Total Pages**: 47
-- **Fetched**: 47
+- **Total Pages**: 49
+- **Fetched**: 49
 - **Fetch Failed**: 0
-- **Classified**: 19
+- **Classified**: 21
 - **Unclassified**: 28
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 1
-- **Unchanged**: 45
-- **Deleted Pages**: 1
+- **New Pages**: 2
+- **Updated Pages**: 0
+- **Unchanged**: 47
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-health/azure-service-health.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| configuration | 4 | 8.5% |
-| integrations | 8 | 17.0% |
-| limits-quotas | 1 | 2.1% |
-| security | 5 | 10.6% |
-| troubleshooting | 1 | 2.1% |
-| *(Unclassified)* | 28 | 59.6% |
+| configuration | 4 | 8.2% |
+| decision-making | 2 | 4.1% |
+| integrations | 8 | 16.3% |
+| limits-quotas | 1 | 2.0% |
+| security | 5 | 10.2% |
+| troubleshooting | 1 | 2.0% |
+| *(Unclassified)* | 28 | 57.1% |
 
 ## Changes
 
 ### New Pages
 
-- [Impacted Resources from Azure Health Advisories](https://learn.microsoft.com/en-us/azure/service-health/impacted-resources-retirements)
-
-### Updated Pages
-
-- [Sample queries for Impacted resources](https://learn.microsoft.com/en-us/azure/service-health/resource-graph-impacted-samples)
-  - Updated: 2025-08-08T17:09:00.000Z → 2026-06-26T22:11:00.000Z
-
-### Deleted Pages
-
-- ~~Impacted Resources from Azure retirements~~ (https://learn.microsoft.com/en-us/azure/service-health/impacted-resources-retirements)
+- [Service Health guidance for alerting retirements](https://learn.microsoft.com/en-us/azure/service-health/service-retirement-alerting-guidance)
+- [How to identify impacted resources for service retirements with ARG](https://learn.microsoft.com/en-us/azure/service-health/service-retirement-unified-impact-queries)
 
 ## Classified Pages
 
@@ -88,9 +83,11 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 | [Sample queries for Resource Health](https://learn.microsoft.com/en-us/azure/service-health/resource-graph-health-samples) | integrations | 0.70 | Page is a collection of concrete Azure Resource Graph KQL sample queries targeting Resource Health tables. These are product-specific query patterns and field usages that go beyond generic KQL knowledge, fitting the integrations & coding patterns category. |
 | [Send alerts to outside systems via webhook](https://learn.microsoft.com/en-us/azure/service-health/service-health-alert-webhook-guide) | integrations | 0.70 | Describes product-specific webhook integration of Service Health alerts with external systems (ServiceNow, PagerDuty, OpsGenie); likely includes endpoint/JSON schema details and configuration parameters unique to this integration pattern. |
 | [Send alerts with PagerDuty](https://learn.microsoft.com/en-us/azure/service-health/service-health-alert-webhook-pagerduty) | integrations | 0.70 | Shows how to configure Service Health alerts to PagerDuty using a webhook and a specific integration type; likely includes endpoint/parameter details unique to this integration, fitting integrations & coding patterns. |
+| [Service Health guidance for alerting retirements](https://learn.microsoft.com/en-us/azure/service-health/service-retirement-alerting-guidance) | decision-making | 0.70 | Provides product-specific guidance on when to use Azure Service Health vs Azure Advisor as the primary signal for service retirement workflows, including how to avoid duplicate notifications and which signal to anchor downstream correlation on. This is concrete decision guidance between Azure services rather than a generic overview. |
 | [Sample queries for Impacted resources](https://learn.microsoft.com/en-us/azure/service-health/resource-graph-impacted-samples) | integrations | 0.68 | Page provides concrete Azure Resource Graph Kusto queries and shows how to access Service Health 'Impacted resources' via specific tables and resource types. These are product-specific integration/query patterns that go beyond generic knowledge, but it does not focus on limits, configuration matrices, or troubleshooting error codes. |
 | [Sample queries for Service Health](https://learn.microsoft.com/en-us/azure/service-health/resource-graph-samples) | integrations | 0.68 | Page provides concrete Azure Resource Graph Kusto queries targeting Azure Service Health resource types and tables, including field names and query patterns that are product-specific integration knowledge rather than generic concepts. |
 | [Health history overview](https://learn.microsoft.com/en-us/azure/service-health/health-history-overview) | security | 0.65 | Describes that only users with owner, contributor, or reader roles can view Health history and notes special RBAC requirements for sensitive events like security advisories; includes specific RBAC role names and access behavior, which is product-specific security configuration knowledge. |
+| [How to identify impacted resources for service retirements with ARG](https://learn.microsoft.com/en-us/azure/service-health/service-retirement-unified-impact-queries) | decision-making | 0.65 | Describes a specific workflow for starting from Azure Service Health retirement events and correlating them with Azure Advisor recommendations and Azure Resource Graph to identify impacted resources, including guidance on when to rely on existing Advisor channels. This is product-specific decision and workflow guidance rather than generic content. |
 | [Subscription and Tenant access](https://learn.microsoft.com/en-us/azure/service-health/subscription-vs-tenant) | security | 0.65 | Explains tenant-level vs subscription-level access for Azure Service Health, detailing who can see which health updates. This is product-specific access behavior that maps to identity/permissions and is not just conceptual security guidance. |
 | [Service Health data transitions](https://learn.microsoft.com/en-us/azure/service-health/service-health-notification-transitions) | limits-quotas | 0.60 | Covers how notifications transition from Active to History and how long they are retained; likely includes specific retention durations or lifecycle rules that function as concrete limits/constraints not generally known from training. |
 

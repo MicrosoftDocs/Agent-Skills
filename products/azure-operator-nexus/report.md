@@ -1,15 +1,15 @@
 ---
-generated_at: '2026-06-28'
+generated_at: '2026-07-05'
 category_descriptions:
-  configuration: 'Configuring and operating Azure Operator Nexus: cluster templates,
-    upgrades, Kubernetes, network fabric (BGP, VRFs, QoS, isolation domains, route
-    policies), monitoring, security, and change workflows.'
+  configuration: Designing, applying, and troubleshooting configuration for Nexus
+    clusters, Kubernetes, and network fabric (ACLs, route policies, isolation domains,
+    BGP/QoS, upgrades, drift, and commit workflows).
   security: 'Securing Nexus: identity/RBAC, ACLs, SSH and serial access, break-glass
     methods, key/cert/secret rotation, Defender/Policy, managed identities, and secure
     VM/cluster connectivity.'
-  troubleshooting: 'Diagnosing and fixing Nexus infrastructure issues: bare metal,
-    storage, networking, Kubernetes clusters, runtime upgrades, and connectivity problems
-    using logs, diagnostics, and recovery commands.'
+  troubleshooting: 'Diagnosing and fixing Nexus infrastructure issues: bare metal/VM
+    recovery, storage and network faults, Kubernetes cluster/pod problems, runtime
+    upgrades, and hardware/health alerts.'
   decision-making: Guidance on planning Nexus Kubernetes cluster placement and choosing
     compatible Nexus versions, VM SKUs, and platform SKUs based on workload, capacity,
     and storage support.
@@ -31,17 +31,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Operator Nexus development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when managing Nexus clusters, fabric BGP/VRFs, secure access, NPB TAP rules,
-  or platform upgrades, and other Azure Operator Nexus related development tasks.
-  Not for Azure Network Function Manager (use azure-network-function-manager), Azure
-  Networking (use azure-networking), Azure Virtual Network Manager (use azure-virtual-network-manager),
-  Azure Virtual WAN (use azure-virtual-wan).
-use_when: Use when managing Nexus clusters, fabric BGP/VRFs, secure access, NPB TAP
-  rules, or platform upgrades, and other Azure Operator Nexus related development
+  Use when managing Nexus clusters, fabric ACL/BGP, secure VM connectivity, NPB TAP
+  rules, or near‑edge storage, and other Azure Operator Nexus related development
+  tasks. Not for Azure Network Function Manager (use azure-network-function-manager),
+  Azure Networking (use azure-networking), Azure Virtual Network Manager (use azure-virtual-network-manager),
+  Azure Operator Insights (use azure-operator-insights).
+use_when: Use when managing Nexus clusters, fabric ACL/BGP, secure VM connectivity,
+  NPB TAP rules, or near‑edge storage, and other Azure Operator Nexus related development
   tasks.
 confusable_not_for: Not for Azure Network Function Manager (use azure-network-function-manager),
   Azure Networking (use azure-networking), Azure Virtual Network Manager (use azure-virtual-network-manager),
-  Azure Virtual WAN (use azure-virtual-wan).
+  Azure Operator Insights (use azure-operator-insights).
 ---
 # Azure Operator Nexus Crawl Report
 
@@ -54,9 +54,9 @@ confusable_not_for: Not for Azure Network Function Manager (use azure-network-fu
 - **Unclassified**: 52
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 6
-- **Unchanged**: 213
+- **New Pages**: 0
+- **Updated Pages**: 3
+- **Unchanged**: 217
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-operator-nexus/azure-operator-nexus.csv`
 
@@ -77,24 +77,14 @@ confusable_not_for: Not for Azure Network Function Manager (use azure-network-fu
 
 ## Changes
 
-### New Pages
-
-- [Cluster Upgrades Preflight Validations](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-cluster-runtime-upgrade-preflight-checks)
-
 ### Updated Pages
 
-- [Control Plane Resiliency](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-rack-resiliency)
-  - Updated: 2025-12-18T18:04:00.000Z → 2026-06-24T22:02:00.000Z
-- [Cluster Upgrades](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-cluster-runtime-upgrade)
-  - Updated: 2026-02-27T18:05:00.000Z → 2026-06-24T17:05:00.000Z
-- [Cluster Upgrades With PauseAfterRack Strategy](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-cluster-runtime-upgrade-with-pauseafterrack-strategy)
-  - Updated: 2025-11-21T23:03:00.000Z → 2026-06-23T22:03:00.000Z
-- [Cluster Upgrades Template](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-cluster-runtime-upgrade-template)
-  - Updated: 2025-12-05T18:07:00.000Z → 2026-06-23T22:03:00.000Z
-- [List of logs available for streaming](https://learn.microsoft.com/en-us/azure/operator-nexus/list-logs-available)
-  - Updated: 2025-11-20T23:02:00.000Z → 2026-06-24T17:05:00.000Z
+- [How to Configure Quality of Service (QoS) in Azure Operator Nexus](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-network-fabric-quality-of-service)
+  - Updated: 2025-12-08T18:04:00.000Z → 2026-07-02T22:04:00.000Z
+- [Troubleshoot Degraded status](https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-bare-metal-machine-degraded)
+  - Updated: 2026-06-19T17:04:00.000Z → 2026-06-29T22:08:00.000Z
 - [Troubleshoot Warning status](https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-bare-metal-machine-warning)
-  - Updated: 2026-06-16T08:00:00.000Z → 2026-06-24T22:02:00.000Z
+  - Updated: 2026-06-24T22:02:00.000Z → 2026-06-29T22:08:00.000Z
 
 ## Classified Pages
 
@@ -108,7 +98,6 @@ confusable_not_for: Not for Azure Network Function Manager (use azure-network-fu
 | [Technical requirements for Isolation Domains](https://learn.microsoft.com/en-us/azure/operator-nexus/reference-isolation-domain-technical-requirements) | limits-quotas | 0.90 | Contains explicit numeric constraints (reserved first 8 IPs, example subnet, maximum BGP listen range /28); clear product-specific limits. |
 | [Troubleshoot Accepted Cluster Resource](https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-accepted-cluster-hydration) | troubleshooting | 0.90 | Explains why cluster resources move to Accepted state when mirroring is interrupted and how to diagnose and resolve this Nexus-specific condition. |
 | [Troubleshoot Control Plane Quorum](https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-control-plane-quorum) | troubleshooting | 0.90 | Provides stepwise diagnosis and recovery when multiple control plane nodes are offline, with Nexus-specific control plane behavior. |
-| [Troubleshoot Degraded status](https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-bare-metal-machine-degraded) | troubleshooting | 0.90 | The page is a product-specific troubleshooting guide for Bare Metal Machines in a 'Degraded' state, mapping specific status messages/symptoms to likely causes and resolution steps. This is symptom → cause → solution content unique to Azure Operator Nexus, which qualifies as expert troubleshooting knowledge. |
 | [Troubleshoot Hardware Validation Failure](https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-hardware-validation-failure) | troubleshooting | 0.90 | Product-specific HWV process, failure modes, and remediation steps for Dell/iDRAC-based validation during cluster deploy and bare metal replace. |
 | [Troubleshoot Isolation Domain](https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-isolation-domain) | troubleshooting | 0.90 | Uses Nexus CLI and specific failure codes to diagnose and fix L2/L3 isolation domain creation and management issues. |
 | [Troubleshoot NAKS Cluster Node Packet Loss](https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-packet-loss) | troubleshooting | 0.90 | Provides detailed, Nexus-specific network diagnostics for packet loss between NAKS worker nodes. |
@@ -116,11 +105,11 @@ confusable_not_for: Not for Azure Network Function Manager (use azure-network-fu
 | [Troubleshoot Nexus Kubernetes Cluster pods stuck in ContainerCreating](https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-nexus-kubernetes-cluster-pods) | troubleshooting | 0.90 | Provides detailed, Nexus-specific steps to diagnose and resolve pods stuck in ContainerCreating state. |
 | [Troubleshoot Nexus logs disrupted post prolonged disconnection period](https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-logs-disrupted-post-prolonged-disconnection) | limits-quotas | 0.90 | Describes a specific 48-hour disconnection threshold causing token expiration and log loss, which is an exact time-based limit unique to this pipeline. |
 | [Troubleshoot NotReady KuberentesCluster node](https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-not-ready-kubernetes-cluster-node) | troubleshooting | 0.90 | Provides Nexus-specific diagnosis and recovery steps when a KubernetesCluster node remains in NotReady. |
-| [Troubleshoot Warning status](https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-bare-metal-machine-warning) | troubleshooting | 0.90 | Page is organized around BMM warning status messages with specific detailed status texts, their meanings, and step-by-step resolution actions unique to Azure Operator Nexus, matching symptom → cause → solution troubleshooting guidance. |
 | [Troubleshoot a Kubernetes Cluster Node in NotReady,Scheduling Disabled after Runtime Upgrade](https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-kubernetes-cluster-node-cordoned) | troubleshooting | 0.90 | Targets the specific case where nodes fail to uncordon after runtime upgrade, with Nexus-specific remediation steps. |
 | [Troubleshoot failed volume attachments](https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-failed-volume-attachments) | troubleshooting | 0.90 | Provides symptom→cause→solution guidance for Azure Resource Health alerts about failed volume attachments in Nexus clusters. |
 | [Troubleshoot storage control plane connectivity issues](https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-storage-control-plane-disconnected) | troubleshooting | 0.90 | Targets specific Resource Health alerts for control plane connectivity, with Nexus-specific diagnostic steps and escalation paths. |
 | [Troubleshoot unhealthy Container Storage Interface (CSI) pods](https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-unhealthy-container-storage-interface) | troubleshooting | 0.90 | Maps unhealthy CSI pod alerts to likely storage issues and provides Nexus-specific remediation steps. |
+| [Troubleshoot Degraded status](https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-bare-metal-machine-degraded) | troubleshooting | 0.86 | The page is a product-specific troubleshooting guide for Azure Operator Nexus Bare Metal Machines in a Degraded state. It focuses on specific status messages and detailed status fields, mapping symptoms to likely causes and resolution steps. This is unique operational knowledge not generally known from training and fits the troubleshooting pattern of symptom → diagnosis → solution. |
 | [Configure role-based access control](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-kubernetes-cluster-aad-rbac) | security | 0.85 | Provides concrete RBAC role mappings, scope definitions, and Entra ID integration specifics for Nexus clusters that are product-specific. |
 | [Customize cluster DNS](https://learn.microsoft.com/en-us/azure/operator-nexus/how-to-customize-kubernetes-cluster-dns) | configuration | 0.85 | Shows exact ConfigMap names, kubectl commands, and override patterns for DNS in Nexus clusters, including default vs override behavior. |
 | [Isolation Domain configuration](https://learn.microsoft.com/en-us/azure/operator-nexus/reference-isolation-domain-configuration) | configuration | 0.85 | Explicitly a configuration reference; likely includes parameters, allowed values, and examples for isolation domain resources. |
@@ -135,6 +124,7 @@ confusable_not_for: Not for Azure Network Function Manager (use azure-network-fu
 | [Troubleshoot VM errors after BMM restart](https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-vm-error-after-reboot) | troubleshooting | 0.85 | Guides remediation when VM errors appear in Azure portal after cordoning and restarting BMMs in Nexus. |
 | [Troubleshoot issues with Azure Arc enrollment for virtual machines with managed identities](https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-virtual-machines-arc-enroll-with-managed-identities) | troubleshooting | 0.85 | Covers common pitfalls and fixes when enrolling Nexus VMs with managed identities into Azure Arc, including product-specific steps. |
 | [Troubleshooting dual-stack configuration issues for Nexus Kubernetes cluster](https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-kubernetes-cluster-dual-stack-configuration) | troubleshooting | 0.85 | Details configuration checks and fixes for dual-stack IP issues in Nexus clusters, beyond generic Kubernetes dual-stack guidance. |
+| [Troubleshoot Warning status](https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-bare-metal-machine-warning) | troubleshooting | 0.84 | The page provides targeted troubleshooting for Bare Metal Machines showing a Warning status in Azure Operator Nexus, including interpretation of warning messages and recommended corrective actions. It follows a symptom → cause → resolution structure with product-specific status fields and guidance, which qualifies as expert troubleshooting knowledge. |
 | [How to enable System Assigned Managed Identity (SAMI) for the Network Fabric resource](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-enable-system-assigned-managed-identity-for-network-fabric-resource) | security | 0.82 | Describes enabling SAMI for Network Fabric resources, supported identity modes, constraints after association, identity transition rules, lock/commit behavior, and role requirements. These are detailed, product-specific identity and RBAC behaviors that go beyond generic managed identity knowledge. |
 | [How to set up break glass access](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-set-up-break-glass-access) | security | 0.82 | Covers IAM policies, identity model changes from v1.5 to v2.0, and specific configuration for emergency access; includes product-specific roles and security flows. |
 | [BareMetal Run-Read Execution](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-baremetal-run-read) | troubleshooting | 0.80 | Provides curated read-only diagnostic commands via run-read; symptom-oriented troubleshooting using Nexus-specific CLI. |
@@ -186,6 +176,7 @@ confusable_not_for: Not for Azure Network Function Manager (use azure-network-fu
 | [How to use Commit Workflow v2 in Azure Operator Nexus](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-use-commit-workflow-v2) | configuration | 0.74 | Describes staging, reviewing, committing, and discarding changes across resources using Commit V2; includes product-specific workflow operations and states. |
 | [How-to usage guide for Customer Managed Key Vault](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-usage-guide-for-customer-managed-key-vault) | security | 0.74 | Describes product-specific security configuration for using a customer-managed Azure Key Vault with Operator Nexus Network Fabric, including region-specific behavior (lack of automatic cross-region replication in certain regions) and concrete operational steps and patterns for password rotation and duplication. This is detailed, service-specific security/Key Vault usage rather than generic concepts. |
 | [Cluster](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-configure-cluster) | configuration | 0.72 | A 'how to configure cluster deployment' article for Operator Nexus is likely to include product-specific AzCLI commands, required/optional parameter names, and configuration options (for example, cluster properties, allowed values, and defaults) that are unique to this service and not generally known. This fits the configuration sub-skill, as it focuses on concrete settings rather than generic deployment concepts. |
+| [How to Configure Quality of Service (QoS) in Azure Operator Nexus](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-network-fabric-quality-of-service) | configuration | 0.72 | The page describes how to enable/disable and configure Quality of Service specifically for Azure Operator Nexus via Azure CLI, including product-specific commands, flags, and configuration parameters for the network fabric. These are detailed, service-specific configuration options that go beyond generic QoS concepts, fitting the configuration sub-skill type. |
 | [Set up Defender for Cloud security](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-set-up-defender-for-cloud-security) | security | 0.72 | How-to guide for enabling and configuring Microsoft Defender for Cloud specifically on Azure Operator Nexus subscriptions. Likely includes product-specific security configuration steps, plan/feature enablement details, and required settings unique to Operator Nexus and its bare metal compute servers, which qualify as expert security configuration knowledge rather than generic concepts. |
 | [Access Control List configuration examples](https://learn.microsoft.com/en-us/azure/operator-nexus/reference-acl-examples) | security | 0.70 | Provides concrete ACL examples with specific match criteria and actions, representing product-specific security configuration patterns and edge cases. |
 | [Access Control Lists](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-access-control-lists) | configuration | 0.70 | Describes API-based ACL configuration for NNIs and ISD external networks with rule/action semantics; product-specific configuration model. |
@@ -264,7 +255,6 @@ confusable_not_for: Not for Azure Network Function Manager (use azure-network-fu
 | [Restart cluster node](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-kubernetes-cluster-action-restart) | limits-quotas | 0.65 | Documents specific restart behavior and timing (up to 5 minutes, timeout conditions) tied to a particular CLI command for Nexus clusters. |
 | [Understand agent pools](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-kubernetes-cluster-agent-pools) | configuration | 0.65 | Contains Nexus-specific agent pool requirements (system vs user pools, minimum nodes) and configuration fields that are product-specific. |
 | [Updating ACL on resources](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-update-access-control-list) | security | 0.65 | Covers methods for updating ACLs on NNIs and external networks; likely details Nexus-specific update mechanisms or API usage for security rules, which are product-specific operational knowledge. |
-| [How to Configure Quality of Service (QoS) in Azure Operator Nexus](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-network-fabric-quality-of-service) | configuration | 0.64 | Uses Azure CLI to enable/disable QoS for Nexus; includes specific commands and parameters for QoS configuration. |
 | [How to monitor interface In and Out packet rate for network fabric devices](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-monitor-interface-packet-rate) | configuration | 0.64 | Shows how to access and interpret specific metrics for Nexus devices in Azure portal; includes product-specific metric names and views. |
 | [Near-edge storage](https://learn.microsoft.com/en-us/azure/operator-nexus/reference-near-edge-storage) | architecture-patterns | 0.62 | The storage appliance overview for near-edge instances describes architecture, appliance counts per instance, and how storage pools are formed. This is product-specific architectural guidance with concrete constraints (for example, up to two appliances) that influence design patterns. |
 | [How to upgrade os of terminal server](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-upgrade-os-of-terminal-server) | deployment | 0.60 | Step-by-step OS upgrade procedure with pre-checks, backup, and post-validation for a Nexus Terminal Server; this is a product-specific operational runbook relevant to deployment/upgrade workflows, containing expert procedural knowledge not derivable from generic OS upgrade concepts. |

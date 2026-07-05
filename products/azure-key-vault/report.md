@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-21'
+generated_at: '2026-07-05'
 category_descriptions:
   limits-quotas: Key Vault and Managed HSM limits, quotas, throttling, logging latency,
     certificate/secret size behaviors, soft-delete/recovery, and network/IP firewall
@@ -43,13 +43,13 @@ confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure
 - **Total Pages**: 168
 - **Fetched**: 168
 - **Fetch Failed**: 0
-- **Classified**: 84
-- **Unclassified**: 84
+- **Classified**: 83
+- **Unclassified**: 85
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 168
+- **Updated Pages**: 1
+- **Unchanged**: 167
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-key-vault/azure-key-vault.csv`
 
@@ -61,13 +61,18 @@ confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure
 | configuration | 18 | 10.7% |
 | decision-making | 3 | 1.8% |
 | deployment | 1 | 0.6% |
-| integrations | 21 | 12.5% |
+| integrations | 20 | 11.9% |
 | limits-quotas | 8 | 4.8% |
 | security | 21 | 12.5% |
 | troubleshooting | 5 | 3.0% |
-| *(Unclassified)* | 84 | 50.0% |
+| *(Unclassified)* | 85 | 50.6% |
 
 ## Changes
+
+### Updated Pages
+
+- [TLS offload library](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/tls-offload-library)
+  - Updated: 2026-03-26T08:00:00.000Z → 2026-07-02T22:28:00.000Z
 
 ## Classified Pages
 
@@ -151,7 +156,6 @@ confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure
 | [Secrets rotation for resources that use one set of credentials](https://learn.microsoft.com/en-us/azure/key-vault/secrets/tutorial-rotation) | best-practices | 0.65 | Tutorial on automating periodic rotation of secrets for resources with one set of credentials. While framed as a tutorial, it encodes product-specific rotation patterns and guidance (how to structure rotation for this scenario), which is actionable best-practices content rather than generic theory. |
 | [Secrets rotation for resources that use two sets of credentials](https://learn.microsoft.com/en-us/azure/key-vault/secrets/tutorial-rotation-dual) | best-practices | 0.65 | Covers automation patterns for rotating secrets when two sets of credentials are used. This is a product-specific rotation pattern (how to safely alternate credentials) and thus fits best-practices rather than generic advice. |
 | [Storing multi-line secrets](https://learn.microsoft.com/en-us/azure/key-vault/secrets/multiline-secrets) | configuration | 0.65 | Explains how to store multiline secrets (JSON, RSA keys) using CLI/PowerShell, including the constraint that they cannot be passed directly on the command line and must be stored in a file. This is a product-specific configuration nuance and gotcha that qualifies as expert configuration/best-practice knowledge. |
-| [TLS offload library](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/tls-offload-library) | integrations | 0.65 | Describes a PKCS#11-based TLS offload library with a limited set of supported mechanisms and functions for F5 BigIP and Nginx. This is a product-specific integration pattern; full article likely lists supported mechanisms/functions and usage constraints that qualify as expert integration knowledge. |
 | [Recovery management with soft-delete and purge protection](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/recovery) | configuration | 0.62 | Explains how to manage soft-delete and purge protection using Azure CLI and PowerShell; likely includes specific parameters/commands for enabling and managing these recovery settings. |
 | [Terraform](https://learn.microsoft.com/en-us/azure/key-vault/keys/quick-create-terraform) | deployment | 0.62 | Contains Terraform HCL configuration for Azure Key Vault and keys, including resource types and arguments, which are product-specific deployment details. |
 | [Add, update, rotate secret](https://learn.microsoft.com/en-us/azure/key-vault/secrets/javascript-developer-guide-set-update-rotate-secret) | integrations | 0.60 | Demonstrates programmatic patterns for secret lifecycle operations using the JavaScript client, including rotation, which are SDK-specific integration details. |
@@ -203,6 +207,7 @@ confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure
 | [PowerShell](https://learn.microsoft.com/en-us/azure/key-vault/keys/quick-create-powershell) | 0.30 | Quickstart for creating and retrieving a key via Azure PowerShell. Similar to the CLI quickstart, it is a basic tutorial without deep configuration options, limits, or error-resolution mappings. |
 | [Python](https://learn.microsoft.com/en-us/azure/key-vault/certificates/quick-create-python) | 0.30 | Python client library quickstart for basic certificate management; shows how to install and call the SDK but not deeper configuration, limits, or decision-making content. |
 | [Python SDK](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/quickstart-python) | 0.30 | Python client library quickstart for Managed HSM; introductory code samples without extensive configuration tables or error mappings. |
+| [TLS offload library](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/tls-offload-library) | 0.30 | Summary indicates a high-level description of the Managed HSM TLS Offload library, its PKCS#11 compliance, and supported mechanisms/vendors (F5 BigIP, Nginx), but does not show specific configuration parameters, limits, error codes, or detailed mechanism tables. Without the GitHub content, there are no clear product-specific settings, quotas, or troubleshooting mappings, so it doesn't meet any sub-skill detection criteria. |
 | [Use Azure Key Vault with a Web App in .NET](https://learn.microsoft.com/en-us/azure/key-vault/general/tutorial-net-create-vault-azure-web-app) | 0.30 | Web app + Key Vault tutorial; focuses on using managed identities and reading secrets, not on expert-level security configuration or limits. |
 | [Use Azure Key Vault with a virtual machine in .NET](https://learn.microsoft.com/en-us/azure/key-vault/general/tutorial-net-virtual-machine) | 0.30 | Tutorial for using Key Vault with a VM in .NET; focuses on wiring up managed identity and reading a secret, not on detailed security role tables or configuration matrices. |
 | [Use Azure Key Vault with a virtual machine in JavaScript](https://learn.microsoft.com/en-us/azure/key-vault/general/tutorial-javascript-virtual-machine) | 0.30 | JavaScript VM tutorial; integration walkthrough using managed identities, without evidence of detailed security configuration tables or limits. |

@@ -1,14 +1,14 @@
 ---
 name: azure-health-bot
-description: Expert knowledge for Azure Health Bot development including best practices, decision making, architecture & design patterns, security, configuration, and integrations & coding patterns. Use when wiring Health Bot to channels/APIs, configuring scenarios/cards, securing PHI, using orchestrator, or estimating costs, and other Azure Health Bot related development tasks. Not for Azure AI Bot Service (use azure-bot-service), Azure Communication Services (use azure-communication-services), Azure Functions (use azure-functions).
+description: Expert knowledge for Azure Health Bot development including best practices, decision making, security, configuration, and integrations & coding patterns. Use when wiring Health Bot to channels/APIs, configuring scenarios, securing data/consent, or estimating usage costs, and other Azure Health Bot related development tasks. Not for Azure AI Bot Service (use azure-bot-service), Azure Communication Services (use azure-communication-services), Azure Health Data Services (use azure-health-data-services).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-31"
+  generated_at: "2026-07-05"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Health Bot Skill
 
-This skill provides expert guidance for Azure Health Bot. Covers best practices, decision making, architecture & design patterns, security, configuration, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Health Bot. Covers best practices, decision making, security, configuration, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -24,12 +24,11 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Best Practices | L34-L38 | Guidance on designing robust error-handling flows in Azure Health Bot scenarios, including detecting failures, user-friendly recovery paths, and safe handling of clinical conversation errors. |
-| Decision Making | L39-L43 | Estimating Azure Health Bot costs based on action usage, understanding pricing drivers, and forecasting expenses for different bot scenarios. |
-| Architecture & Design Patterns | L44-L48 | Designing bot architectures using the healthcare orchestrator to route between plugins and flows, manage conversation logic, and structure complex healthcare scenarios |
-| Security | L49-L61 | Configuring security, privacy, and compliance: user consent, data access/deletion, encryption keys, abuse safeguards, authentication, secrets management, and portal permissions for Healthcare bots/agents. |
-| Configuration | L62-L79 | Configuring bot behavior and conversations: welcome/help messages, feedback, interruptions, human/Teams handoff, terms links, and managing scenarios, variables, cards, and versions. |
-| Integrations & Coding Patterns | L80-L102 | Connecting Health Bot/Agent to channels (Teams, SMS, WhatsApp, Facebook), embedding web chat/voice, calling external APIs/OpenAPI, telemetry, auth, management APIs, and proactive scenario invocation |
+| Best Practices | L33-L37 | Guidance on designing robust error-handling flows in Azure Health Bot scenarios, including detecting failures, user-friendly recovery paths, and safe handling of clinical conversation errors. |
+| Decision Making | L38-L42 | Estimating Azure Health Bot costs based on action usage, understanding pricing drivers, and forecasting expenses for different bot scenarios. |
+| Security | L43-L55 | Configuring security, privacy, and compliance: user consent, data access/deletion, encryption keys, abuse safeguards, authentication, secrets management, and portal permissions for Healthcare bots/agents. |
+| Configuration | L56-L73 | Configuring bot behavior and conversations: welcome/help messages, feedback, interruptions, human/Teams handoff, terms links, and managing scenarios, variables, cards, and versions. |
+| Integrations & Coding Patterns | L74-L95 | Connecting Health Bot/Agent to channels (Teams, SMS, WhatsApp, Facebook), embedding web chat/voice, calling external APIs/OpenAPI, telemetry, auth, management APIs, and proactive scenario invocation |
 
 ### Best Practices
 | Topic | URL |
@@ -40,11 +39,6 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Estimate healthcare agent service costs by action usage | https://learn.microsoft.com/en-us/azure/health-bot/pricing-details |
-
-### Architecture & Design Patterns
-| Topic | URL |
-|-------|-----|
-| Use the healthcare orchestrator to route plugins and flows | https://learn.microsoft.com/en-us/azure/health-bot/copilot/orchestrator |
 
 ### Security
 | Topic | URL |
@@ -88,7 +82,6 @@ This skill requires **network access** to fetch documentation content:
 | Connect healthcare bot to Twilio SMS channel | https://learn.microsoft.com/en-us/azure/health-bot/channels/twilio |
 | Embed healthcare agent web chat into web applications | https://learn.microsoft.com/en-us/azure/health-bot/channels/webchat |
 | Configure WhatsApp via Twilio for healthcare agent service | https://learn.microsoft.com/en-us/azure/health-bot/channels/whatsapp |
-| Integrate external services via OpenAPI plugins in healthcare bots | https://learn.microsoft.com/en-us/azure/health-bot/copilot/openapi-plugins |
 | Integrate healthcare bot telemetry with Application Insights | https://learn.microsoft.com/en-us/azure/health-bot/custom_telemetry |
 | Use data connections to call external APIs from healthcare bots | https://learn.microsoft.com/en-us/azure/health-bot/data_connection |
 | Use Clinical Safeguards API with Azure Health Agent Service | https://learn.microsoft.com/en-us/azure/health-bot/integrations/clinicalsafeguardsapi |

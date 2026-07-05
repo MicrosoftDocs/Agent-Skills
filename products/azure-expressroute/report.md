@@ -47,13 +47,13 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 - **Total Pages**: 95
 - **Fetched**: 95
 - **Fetch Failed**: 0
-- **Classified**: 70
-- **Unclassified**: 25
+- **Classified**: 69
+- **Unclassified**: 26
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 8
-- **Unchanged**: 87
+- **Updated Pages**: 0
+- **Unchanged**: 95
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-expressroute/azure-expressroute.csv`
 
@@ -63,35 +63,16 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 |------|-------|------------|
 | architecture-patterns | 8 | 8.4% |
 | best-practices | 4 | 4.2% |
-| configuration | 32 | 33.7% |
+| configuration | 31 | 32.6% |
 | decision-making | 5 | 5.3% |
 | deployment | 5 | 5.3% |
 | integrations | 3 | 3.2% |
 | limits-quotas | 5 | 5.3% |
 | security | 6 | 6.3% |
 | troubleshooting | 2 | 2.1% |
-| *(Unclassified)* | 25 | 26.3% |
+| *(Unclassified)* | 26 | 27.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [Overview](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-global-reach)
-  - Updated: 2025-04-09T08:00:00.000Z → 2026-06-24T22:11:00.000Z
-- [Azure portal](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-linkvnet-portal-resource-manager)
-  - Updated: 2025-11-11T18:15:00.000Z → 2026-06-23T08:00:00.000Z
-- [Design with private peering](https://learn.microsoft.com/en-us/azure/expressroute/designing-for-disaster-recovery-with-expressroute-privatepeering)
-  - Updated: 2025-04-28T08:00:00.000Z → 2026-06-23T08:00:00.000Z
-- [Understand connectivity models](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-connectivity-models)
-  - Updated: 2025-01-31T08:00:00.000Z → 2026-06-24T22:11:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-circuit-peerings)
-  - Updated: 2025-01-10T23:02:00.000Z → 2026-06-24T22:11:00.000Z
-- [Azure portal](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-routing-portal-resource-manager)
-  - Updated: 2025-07-29T22:11:00.000Z → 2026-06-23T08:00:00.000Z
-- [Azure portal](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-linkvnet-portal-resource-manager)
-  - Updated: 2025-11-11T18:15:00.000Z → 2026-06-23T08:00:00.000Z
-- [Azure PowerShell](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-linkvnet-arm)
-  - Updated: 2025-11-11T18:15:00.000Z → 2026-04-20T08:00:00.000Z
 
 ## Classified Pages
 
@@ -150,7 +131,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Azure portal](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-gateway-migration-portal) | deployment | 0.68 | The article describes how to migrate from legacy Standard/HighPerf/UltraPerf ExpressRoute gateway SKUs to the ErGw1/2/3AZ SKUs, which is a product-specific migration/deployment path between tiers. It contains SKU-specific guidance and constraints for moving to availability zone-enabled gateways, which falls under deployment/migration patterns rather than generic how-to content. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/expressroute/howto-circuit-cli) | integrations | 0.65 | Duplicate of index 11; CLI commands and parameters for ExpressRoute circuits are product-specific integration patterns. |
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-set-global-reach) | configuration | 0.65 | PowerShell-based configuration of Global Reach; contains product-specific cmdlets and parameter usage. |
-| [Azure portal](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-linkvnet-portal-resource-manager) | configuration | 0.65 | Shows how to create a connection linking VNets to ExpressRoute circuits, including cross-subscription scenarios. These instructions generally include specific resource types, connection settings, and required parameters, which are product-specific configuration details. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-set-global-reach-portal) | configuration | 0.65 | Portal configuration guide for linking ExpressRoute circuits; likely includes circuit-level settings and parameters specific to Global Reach. |
 | [Configure ExpressRoute and S2S coexisting connections](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-coexist-classic) | configuration | 0.65 | Describes how to configure ExpressRoute and Site-to-Site VPN to coexist, including specific gateway settings, routing configurations, and constraints for the classic deployment model. These are product-specific configuration patterns not captured by generic knowledge. |
 | [Configure a scalable gateway](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-scalable-portal) | configuration | 0.65 | Portal configuration guide for scalable gateway with product-specific settings and scaling options. |
@@ -185,6 +165,7 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Workflows](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-workflows) | 0.30 | High-level workflow description without detailed configuration parameters, limits, or decision matrices. |
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-circuit-arm) | 0.20 | Duplicate of index 2: PowerShell quickstart for ExpressRoute circuits. It is a basic how-to guide without structured configuration parameter documentation or product-specific troubleshooting/error mappings, so it doesn’t fit any expert-knowledge sub-skill type. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-circuit-portal-resource-manager) | 0.20 | Duplicate of index 1: portal quickstart for ExpressRoute circuits. Same reasoning: tutorial content without detailed limits, configuration matrices, or decision guidance, so it doesn’t qualify as expert knowledge under the defined categories. |
+| [Azure portal](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-linkvnet-portal-resource-manager) | 0.20 | Primarily a step-by-step portal tutorial for linking a VNet to an ExpressRoute circuit; it does not emphasize configuration matrices, limits, or product-specific best-practice nuances beyond generic how-to steps. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-linkvnet-portal-resource-manager) | 0.20 | Primarily a step-by-step portal tutorial for linking a VNet to an ExpressRoute circuit; it does not emphasize configuration matrices, limits, or product-specific best-practice nuances beyond generic how-to steps. |
 | [Create an ExpressRoute circuit - Portal](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-circuit-portal-resource-manager) | 0.20 | Quickstart for creating ExpressRoute circuits in the portal is a step-by-step tutorial. It focuses on how to create, update, and delete circuits, not on detailed limits, configuration parameter tables, or decision matrices. It doesn’t match any expert-knowledge sub-skill type as defined. |
 | [Create an ExpressRoute circuit - PowerShell](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-circuit-arm) | 0.20 | PowerShell quickstart for creating ExpressRoute circuits is procedural guidance. It shows commands and basic usage but not structured configuration option tables, limits, or troubleshooting mappings. It doesn’t meet the expert-knowledge criteria for any sub-skill type. |

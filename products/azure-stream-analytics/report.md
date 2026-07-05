@@ -47,17 +47,17 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure S
 
 ## Summary
 
-- **Total Pages**: 167
-- **Fetched**: 167
+- **Total Pages**: 164
+- **Fetched**: 164
 - **Fetch Failed**: 0
-- **Classified**: 111
+- **Classified**: 108
 - **Unclassified**: 56
 
 ### Incremental Update
 - **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 167
-- **Deleted Pages**: 0
+- **Unchanged**: 164
+- **Deleted Pages**: 3
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-stream-analytics/azure-stream-analytics.csv`
 
 ## Classification Statistics
@@ -65,17 +65,23 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure S
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 2 | 1.2% |
-| best-practices | 14 | 8.4% |
-| configuration | 30 | 18.0% |
+| best-practices | 13 | 7.9% |
+| configuration | 30 | 18.3% |
 | decision-making | 4 | 2.4% |
-| deployment | 10 | 6.0% |
-| integrations | 16 | 9.6% |
+| deployment | 10 | 6.1% |
+| integrations | 14 | 8.5% |
 | limits-quotas | 3 | 1.8% |
-| security | 16 | 9.6% |
-| troubleshooting | 16 | 9.6% |
-| *(Unclassified)* | 56 | 33.5% |
+| security | 16 | 9.8% |
+| troubleshooting | 16 | 9.8% |
+| *(Unclassified)* | 56 | 34.1% |
 
 ## Changes
+
+### Deleted Pages
+
+- ~~Use ML REST APIs~~ (https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-how-to-configure-azure-machine-learning-endpoints-in-stream-analytics)
+- ~~Sentiment analysis with ML models~~ (https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-machine-learning-integration-tutorial)
+- ~~Scale with ML functions~~ (https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-scale-with-machine-learning-functions)
 
 ## Classified Pages
 
@@ -151,15 +157,12 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure S
 | [Repartition your input](https://learn.microsoft.com/en-us/azure/stream-analytics/repartition) | best-practices | 0.70 | Focuses on repartitioning patterns and when to use them; this is a product-specific scaling technique with concrete guidance beyond generic theory. |
 | [Run jobs on Azure Stack](https://learn.microsoft.com/en-us/azure/stream-analytics/on-azure-stack) | deployment | 0.70 | Covers running Stream Analytics as an IoT Edge module on Azure Stack Hub with custom URLs and hybrid constraints; these are deployment-specific behaviors and requirements. |
 | [Scale cluster size](https://learn.microsoft.com/en-us/azure/stream-analytics/scale-cluster) | limits-quotas | 0.70 | Discusses cluster capacity measured in Streaming Units and constraints that total job SUs must not exceed cluster capacity; likely includes specific SU sizing guidance and constraints that are numeric and product-specific. |
-| [Scale with ML functions](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-scale-with-machine-learning-functions) | best-practices | 0.70 | Focuses on how to scale Stream Analytics jobs that call ML Studio (classic) functions using partitioning and stream units; this is product-specific guidance with concrete configuration patterns for performance and reliability. |
-| [Sentiment analysis with ML models](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-machine-learning-integration-tutorial) | integrations | 0.70 | Shows how to call ML Studio (classic) via UDFs; includes product-specific integration steps, endpoint usage, and configuration patterns. |
 | [Service Bus topics](https://learn.microsoft.com/en-us/azure/stream-analytics/service-bus-topics-output) | configuration | 0.70 | Summary notes a table of property names for topic output and mentions partition behavior tied to SKU; this is concrete configuration behavior for this adapter. |
 | [Set up a pipeline with Azure DevOps](https://learn.microsoft.com/en-us/azure/stream-analytics/set-up-cicd-pipeline) | deployment | 0.70 | The article describes product-specific CI/CD setup for Azure Stream Analytics jobs using Azure DevOps build and release pipelines. It goes beyond generic deployment commands and includes Stream Analytics–specific tasks, artifacts, and pipeline configuration details that are not general knowledge, fitting the deployment sub-skill. |
 | [Streaming data inputs](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-define-inputs) | configuration | 0.70 | Page describes product-specific input configuration details (supported Azure resources, cross-subscription behavior, and exact supported compression types including exceptions for reference data and Avro handling). These are concrete, service-specific settings rather than generic concepts, fitting the configuration category best. |
 | [Table storage](https://learn.microsoft.com/en-us/azure/stream-analytics/table-storage-output) | configuration | 0.70 | Summary mentions a table of property names and descriptions for creating a table output, which is exactly a configuration-parameter reference. |
 | [Threshold-based rules](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-threshold-based-rules) | best-practices | 0.70 | Describes using reference data to build configurable threshold-based rules; provides a concrete product-specific pattern and gotchas for alerting solutions. |
 | [Update credentials](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-login-credentials-inputs-outputs) | security | 0.70 | Covers updating credentials and resuming jobs; this is identity/credential management with product-specific operational steps and constraints (must stop job, resume from last output). |
-| [Use ML REST APIs](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-how-to-configure-azure-machine-learning-endpoints-in-stream-analytics) | integrations | 0.70 | Covers how to wire Azure Machine Learning Studio (classic) web service endpoints as UDFs in Stream Analytics, including endpoint configuration details that are product-specific integration patterns. |
 | [Use activity and resource logs](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-job-diagnostic-logs) | troubleshooting | 0.70 | Page is explicitly about troubleshooting Stream Analytics jobs using resource logs. It likely includes specific log categories, event types, and diagnostic steps that map symptoms (job stops processing) to causes and resolutions, which are product-specific troubleshooting details beyond generic debugging knowledge. |
 | [Watermark delay increase](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-job-analysis-with-metric-dimensions) | best-practices | 0.70 | Explains how to interpret specific metrics like watermark delay and backlogged events to assess performance; provides product-specific guidance on what to monitor and how. |
 | [Write data to Delta Lake](https://learn.microsoft.com/en-us/azure/stream-analytics/write-to-delta-lake) | configuration | 0.70 | The page describes how to configure the native Delta Lake output connector for Azure Stream Analytics, including product-specific output settings and behaviors (such as append mode to Delta tables in ADLS Gen2). These are concrete, service-specific configuration details rather than just conceptual guidance. |

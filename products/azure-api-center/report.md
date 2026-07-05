@@ -37,8 +37,8 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 37
+- **Updated Pages**: 0
+- **Unchanged**: 38
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-api-center/azure-api-center.csv`
 
@@ -54,11 +54,6 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 | *(Unclassified)* | 24 | 63.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [What is Azure API Center?](https://learn.microsoft.com/en-us/azure/api-center/overview)
-  - Updated: 2026-06-02T20:30:00.000Z → 2026-06-25T05:13:00.000Z
 
 ## Classified Pages
 

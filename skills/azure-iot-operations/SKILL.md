@@ -1,9 +1,9 @@
 ---
 name: azure-iot-operations
-description: Expert knowledge for Azure IoT Operations development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building MQTT data flows, WASM transforms, OPC UA/ONVIF connectors, ONNX inference, or Arc deployments, and other Azure IoT Operations related development tasks. Not for Azure IoT (use azure-iot), Azure IoT Hub (use azure-iot-hub), Azure IoT Edge (use azure-iot-edge), Azure IoT Central (use azure-iot-central).
+description: Expert knowledge for Azure IoT Operations development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing IoT data flows, MQTT broker configs, WASM transforms, OPC UA/ONVIF connectors, or Arc deployments, and other Azure IoT Operations related development tasks. Not for Azure IoT (use azure-iot), Azure IoT Hub (use azure-iot-hub), Azure IoT Edge (use azure-iot-edge), Azure IoT Central (use azure-iot-central).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-28"
+  generated_at: "2026-07-05"
   generator: "docs2skills/1.0.0"
 ---
 # Azure IoT Operations Skill
@@ -24,14 +24,14 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L36-L44 | Diagnosing and fixing Azure IoT Operations issues: debugging WASM modules, private network connectivity, health reason codes, known component bugs, and deployment/runtime failures. |
+| Troubleshooting | L36-L44 | Diagnosing and fixing Azure IoT Operations issues: WASM module debugging, private network connectivity, health reason codes, known component bugs, and deployment/runtime failures. |
 | Best Practices | L45-L51 | Production-ready guidance for Azure IoT Operations: deployment patterns, high availability design for the MQTT broker, and using the state store for durable, persistent edge data. |
 | Decision Making | L52-L63 | Planning and design guidance for Azure IoT Operations: choosing data flows/endpoints vs graphs, sizing/topology for production, and configuring MQTT broker buffering, persistence, diagnostics, and client options. |
 | Limits & Quotas | L64-L69 | Planning baseline resource and capacity needs for Azure IoT Operations, and reviewing supported MQTT features, limits, and control capabilities in the broker. |
 | Security | L70-L87 | Securing Azure IoT Operations: TLS/mutual TLS, MQTT authz/authn, OPC UA trust, private networking, RBAC, secrets/certs management, and validating container/Helm image integrity. |
-| Configuration | L88-L127 | Configuring IoT Operations data flows, endpoints, transforms, connectors, and observability/metrics, including schemas, routing, enrichment, storage, brokers, and health monitoring. |
-| Integrations & Coding Patterns | L128-L142 | Patterns and code for integrating Azure IoT Operations: custom WASM transforms, MQTT routing, ONNX inference, schema/state store usage, OPC UA/Akri connectors, and ONVIF camera capture. |
-| Deployment | L143-L154 | Installing, configuring, upgrading, cloning, and removing Azure IoT Operations on Arc-enabled Kubernetes, including secure production, test, private-network, and WASM/graph deployments. |
+| Configuration | L88-L126 | Configuring IoT Operations data flows, endpoints, transforms, connectors, and observability/metrics, including schemas, routing, enrichment, storage, brokers, and health monitoring. |
+| Integrations & Coding Patterns | L127-L141 | Patterns and code for integrating Azure IoT Operations: custom WASM transforms, MQTT routing, ONNX inference, schema/state store usage, OPC UA/Akri connectors, and ONVIF camera capture. |
+| Deployment | L142-L153 | Installing, configuring, upgrading, cloning, and removing Azure IoT Operations on Arc-enabled Kubernetes, including secure production, test, private-network, and WASM/graph deployments. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -39,7 +39,7 @@ This skill requires **network access** to fetch documentation content:
 | Debug Azure IoT WASM modules in VS Code | https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/howto-debug-wasm-modules |
 | Troubleshoot private connectivity in Azure IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/manage-layered-network/howto-troubleshoot-private-connectivity |
 | Interpret Azure IoT Operations health reason codes | https://learn.microsoft.com/en-us/azure/iot-operations/reference/health-status-reason-codes |
-| Resolve known issues in Azure IoT Operations components | https://learn.microsoft.com/en-us/azure/iot-operations/troubleshoot/known-issues |
+| Diagnose known issues in Azure IoT Operations components | https://learn.microsoft.com/en-us/azure/iot-operations/troubleshoot/known-issues |
 | Troubleshoot deployment and runtime issues in IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/troubleshoot/troubleshoot |
 
 ### Best Practices
@@ -121,7 +121,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure MQTT broker data persistence in IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/manage-mqtt-broker/howto-broker-persistence |
 | Monitor Akri and connectors with Azure IoT metrics | https://learn.microsoft.com/en-us/azure/iot-operations/reference/observability-metrics-akri-connectors |
 | Monitor Azure IoT Operations data flows with metrics | https://learn.microsoft.com/en-us/azure/iot-operations/reference/observability-metrics-data-flows |
-| Monitor Layered Network Management with metrics | https://learn.microsoft.com/en-us/azure/iot-operations/reference/observability-metrics-layered-network |
 | Use MQTT broker observability metrics in Azure IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/reference/observability-metrics-mqtt-broker |
 | Use OPC UA connector observability metrics in IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/reference/observability-metrics-opcua-broker |
 

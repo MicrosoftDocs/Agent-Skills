@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-28'
+generated_at: '2026-07-05'
 category_descriptions:
   integrations: Patterns and code for integrating Azure Maps into web/mobile/Power
     BI apps, using REST/SDKs, layers, drawing, search/routing/weather, Spatial IO,
@@ -28,7 +28,9 @@ skill_description: Expert knowledge for Azure Maps development including trouble
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, and integrations & coding patterns. Use when using Azure
   Maps web SDK/REST, search/geocoding, routing/traffic, weather APIs, or migrating
-  from Bing/Google Maps, and other Azure Maps related development tasks.
+  from Bing/Google Maps, and other Azure Maps related development tasks. Not for Azure
+  AI Search (use azure-cognitive-search), Azure Digital Twins (use azure-digital-twins),
+  Azure IoT (use azure-iot), Azure IoT Hub (use azure-iot-hub).
 use_when: Use when using Azure Maps web SDK/REST, search/geocoding, routing/traffic,
   weather APIs, or migrating from Bing/Google Maps, and other Azure Maps related development
   tasks.
@@ -47,8 +49,8 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 146
+- **Updated Pages**: 3
+- **Unchanged**: 144
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-maps/azure-maps.csv`
 
@@ -70,8 +72,12 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 
 ### Updated Pages
 
-- [Weather service FAQ](https://learn.microsoft.com/en-us/azure/azure-maps/weather-services-faq)
-  - Updated: 2025-10-17T22:12:00.000Z → 2026-06-22T22:13:00.000Z
+- [Map control](https://learn.microsoft.com/en-us/azure/azure-maps/release-notes-map-control)
+  - Updated: 2026-05-06T08:00:00.000Z → 2026-07-01T08:00:00.000Z
+- [Drawing Tools module](https://learn.microsoft.com/en-us/azure/azure-maps/release-notes-drawing-tools-module)
+  - Updated: 2025-12-17T08:00:00.000Z → 2026-07-02T05:13:00.000Z
+- [Spatial IO module](https://learn.microsoft.com/en-us/azure/azure-maps/release-notes-spatial-module)
+  - Updated: 2024-09-25T22:03:00.000Z → 2026-07-02T05:13:00.000Z
 
 ## Classified Pages
 
@@ -202,7 +208,6 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | [Azure Maps geographic scope](https://learn.microsoft.com/en-us/azure/azure-maps/geographic-scope) | 0.40 | Explains geographic scope and data residency conceptually; likely lacks numeric limits or detailed configuration parameter tables. |
 | [Consent management](https://learn.microsoft.com/en-us/azure/azure-maps/consent-management) | 0.40 | Consent management and data residency overview; mostly policy/behavior description rather than concrete configuration matrices or limits. |
 | [Manage accounts](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-manage-account-keys) | 0.40 | Portal-based account and key management is mostly step-by-step UI guidance without detailed configuration tables, limits, or specialized patterns. |
-| [Spatial IO module](https://learn.microsoft.com/en-us/azure/azure-maps/release-notes-spatial-module) | 0.40 | Release notes for Spatial IO Module; change log style, not structured expert guidance per the defined sub-skill types. |
 | [Open source projects](https://learn.microsoft.com/en-us/azure/azure-maps/open-source-projects) | 0.35 | Lists community open-source projects and samples; catalog-style content rather than configuration, limits, or troubleshooting guidance. |
 | [REST SDK Developer Guide](https://learn.microsoft.com/en-us/azure/azure-maps/rest-sdk-developer-guide) | 0.35 | Acts as a navigation/developer guide listing SDKs and linking to other how-to articles; does not itself contain detailed configuration tables or error mappings. |
 | [Show real-time traffic](https://learn.microsoft.com/en-us/azure/azure-maps/power-bi-visual-show-real-time-traffic) | 0.35 | Real-time traffic layer usage; summary mentions a slider and settings but not detailed parameter tables, limits, or error mappings. |
@@ -220,12 +225,13 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | [Add a reference layer](https://learn.microsoft.com/en-us/azure/azure-maps/power-bi-visual-add-reference-layer) | 0.20 | Page describes how to add and use a reference layer in the Azure Maps Power BI visual, but based on the summary it appears to be a feature-usage/how-to article without numeric limits, configuration parameter tables, error-code troubleshooting, or decision matrices. It does not match any expert-knowledge sub-skill criteria. |
 | [Create a store locator](https://learn.microsoft.com/en-us/azure/azure-maps/tutorial-create-store-locator) | 0.20 | Store locator tutorial; step-by-step app creation, not deep configuration, limits, or troubleshooting content. |
 | [Create a web app](https://learn.microsoft.com/en-us/azure/azure-maps/quick-demo-map-app) | 0.20 | Quickstart tutorial for building an interactive map; primarily step-by-step usage, not configuration matrices, limits, or troubleshooting. |
+| [Drawing Tools module](https://learn.microsoft.com/en-us/azure/azure-maps/release-notes-drawing-tools-module) | 0.20 | This is a release notes page for the Azure Maps Drawing Tools Module. It mainly describes feature additions and changes, not product-specific limits, configuration parameters, troubleshooting mappings, or decision criteria that match any sub-skill type. |
 | [Geographic coverage](https://learn.microsoft.com/en-us/azure/azure-maps/geographic-coverage) | 0.20 | Described as providing links to geographic coverage information. Likely a navigation/overview page pointing to external coverage details rather than containing concrete limits, configuration parameters, or decision matrices itself. Does not clearly match any expert-knowledge sub-skill type from the summary. |
+| [Map control](https://learn.microsoft.com/en-us/azure/azure-maps/release-notes-map-control) | 0.20 | Release notes typically list new features and changes without structured limits, configuration tables, error codes, or decision matrices. This page is a change log for the Azure Maps Web SDK Map Control, not a technical reference with expert-only details as defined by the sub-skill types. |
 | [Maps API](https://learn.microsoft.com/en-us/azure/azure-maps/rest-api-azure-maps) | 0.20 | Page is a navigational/overview index of Azure Maps REST APIs with service descriptions and links, but no concrete limits, configuration tables, error codes, or other product-specific expert details. |
 | [Multiple routes by mode of travel](https://learn.microsoft.com/en-us/azure/azure-maps/tutorial-prioritized-routes) | 0.20 | Tutorial for multiple travel modes; appears as example usage without detailed configuration matrices or limits. |
 | [On-object interaction](https://learn.microsoft.com/en-us/azure/azure-maps/power-bi-visual-on-object-interaction) | 0.20 | On-object interaction article describes UI formatting interactions; no indication of detailed configuration parameters or expert constraints. |
 | [Route to a destination](https://learn.microsoft.com/en-us/azure/azure-maps/tutorial-route-location) | 0.20 | Routing tutorial showing how to call Route service; no indication of limits, configuration tables, or troubleshooting mappings. |
 | [Search for point of interest](https://learn.microsoft.com/en-us/azure/azure-maps/tutorial-search-location) | 0.20 | Tutorial on searching locations; focuses on example usage rather than product-specific limits, configuration options, or error codes. |
+| [Spatial IO module](https://learn.microsoft.com/en-us/azure/azure-maps/release-notes-spatial-module) | 0.20 | This Spatial IO Module release notes page is a change log for the Azure Maps Spatial IO Module. It does not present structured limits, configuration tables, error codes, or decision-making guidance required for classification into the defined sub-skill types. |
 | [What is Azure Maps?](https://learn.microsoft.com/en-us/azure/azure-maps/about-azure-maps) | 0.20 | High-level product overview of Azure Maps services and capabilities without detailed limits, configuration tables, or error mappings. |
-| [Drawing Tools module](https://learn.microsoft.com/en-us/azure/azure-maps/release-notes-drawing-tools-module) | - | Release notes summary without exposed technical details, configuration parameters, limits, or troubleshooting information; no concrete expert knowledge per the defined categories. |
-| [Map control](https://learn.microsoft.com/en-us/azure/azure-maps/release-notes-map-control) | - | Release notes list feature changes and fixes but are not a stable source of reusable expert knowledge like limits, configuration matrices, or troubleshooting mappings as defined by the sub-skill types. |

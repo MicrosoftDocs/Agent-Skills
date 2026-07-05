@@ -1,18 +1,18 @@
 ---
-generated_at: '2026-06-28'
+generated_at: '2026-07-05'
 category_descriptions:
   architecture-patterns: 'Designing Service Fabric cluster architecture: cross-AZ
     replica rings, CRP/CRM internals, service affinity, movement cost, defragmentation,
     metrics balancing, networking, and API gateway patterns.'
-  configuration: Configuring Service Fabric clusters, apps, networking, scaling, monitoring,
-    backups, manifests, actors, containers, and tooling (CLI/IDEs) across Azure managed,
-    classic, and standalone environments.
+  configuration: 'Configuring and operating Service Fabric clusters and apps: networking,
+    scaling, backup/restore, manifests, actors, containers, monitoring/telemetry,
+    resource governance, and test/fault tools.'
   decision-making: 'Guidance on planning and sizing Service Fabric clusters: OS/disk
     choices, stateless node types, capacity/durability/reliability planning, version
     selection, and migration targets for Cloud Services workloads.'
-  best-practices: 'Guidance on designing, scaling, operating, and testing Service
-    Fabric apps: migrations, ARM/infra, networking, health/monitoring, backups, DR,
-    Reliable Collections/Actors, and production readiness.'
+  best-practices: Best-practice guidance for designing, scaling, upgrading, testing,
+    monitoring, networking, backup/restore, and data/actor management in Azure Service
+    Fabric clusters and apps.
   security: 'Securing Service Fabric clusters/apps: cert and Entra auth, managed identities
     and secrets, disk encryption, network/DDoS/IP policies, remoting/endpoint security,
     and security best practices.'
@@ -32,32 +32,32 @@ skill_description: Expert knowledge for Azure Service Fabric development includi
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
   Use when designing Service Fabric clusters, Reliable Services/Actors, reverse proxy/API
-  gateways, CI/CD upgrades, or sfctl/PowerShell automation, and other Azure Service
-  Fabric related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
-  Azure App Service (use azure-app-service), Azure Functions (use azure-functions),
-  Azure Cloud Services (use azure-cloud-services).
+  gateways, CI/CD upgrades, or sfctl/PowerShell ops, and other Azure Service Fabric
+  related development tasks. Not for Azure Cloud Services (use azure-cloud-services),
+  Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Container Apps
+  (use azure-container-apps), Azure App Service (use azure-app-service).
 use_when: Use when designing Service Fabric clusters, Reliable Services/Actors, reverse
-  proxy/API gateways, CI/CD upgrades, or sfctl/PowerShell automation, and other Azure
-  Service Fabric related development tasks.
-confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
-  Azure App Service (use azure-app-service), Azure Functions (use azure-functions),
-  Azure Cloud Services (use azure-cloud-services).
+  proxy/API gateways, CI/CD upgrades, or sfctl/PowerShell ops, and other Azure Service
+  Fabric related development tasks.
+confusable_not_for: Not for Azure Cloud Services (use azure-cloud-services), Azure
+  Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Container Apps (use
+  azure-container-apps), Azure App Service (use azure-app-service).
 ---
 # Azure Service Fabric Crawl Report
 
 ## Summary
 
-- **Total Pages**: 406
-- **Fetched**: 406
+- **Total Pages**: 405
+- **Fetched**: 405
 - **Fetch Failed**: 0
-- **Classified**: 332
-- **Unclassified**: 74
+- **Classified**: 330
+- **Unclassified**: 75
 
 ### Incremental Update
 - **New Pages**: 1
-- **Updated Pages**: 5
-- **Unchanged**: 400
-- **Deleted Pages**: 0
+- **Updated Pages**: 6
+- **Unchanged**: 398
+- **Deleted Pages**: 2
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-fabric/azure-service-fabric.csv`
 
 ## Classification Statistics
@@ -65,34 +65,41 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 10 | 2.5% |
-| best-practices | 31 | 7.6% |
-| configuration | 117 | 28.8% |
+| best-practices | 31 | 7.7% |
+| configuration | 116 | 28.6% |
 | decision-making | 8 | 2.0% |
-| deployment | 60 | 14.8% |
+| deployment | 59 | 14.6% |
 | integrations | 33 | 8.1% |
 | limits-quotas | 1 | 0.2% |
 | security | 53 | 13.1% |
 | troubleshooting | 19 | 4.7% |
-| *(Unclassified)* | 74 | 18.2% |
+| *(Unclassified)* | 75 | 18.5% |
 
 ## Changes
 
 ### New Pages
 
-- [Reliable Collections Throttling Guidelines](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-reliable-services-reliable-collections-throttling-guidelines)
+- [Configure telemetry with Azure Monitor Agent and data collection rules](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-diagnostics-azure-monitor-agent-data-collection-rules)
 
 ### Updated Pages
 
-- [Node types and virtual machine scale sets](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-nodetypes)
-  - Updated: 2026-04-02T22:05:00.000Z → 2026-06-24T22:03:00.000Z
+- [5- Delete a cluster](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-tutorial-delete-cluster)
+  - Updated: 2026-03-22T08:00:00.000Z → 2026-06-30T22:03:00.000Z
 - [DNS service](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-dnsservice)
-  - Updated: 2026-03-22T08:00:00.000Z → 2026-06-22T08:00:00.000Z
-- [Windows](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-get-started)
-  - Updated: 2026-06-18T08:00:00.000Z → 2026-06-22T22:03:00.000Z
-- [Deploy an Azure Service Fabric cluster with Managed data disks](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-managed-disk)
-  - Updated: 2026-03-22T08:00:00.000Z → 2026-06-24T22:03:00.000Z
-- [Service Fabric versions](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-versions)
-  - Updated: 2026-06-18T08:00:00.000Z → 2026-06-25T08:00:00.000Z
+  - Updated: 2026-06-22T08:00:00.000Z → 2026-07-01T22:03:00.000Z
+- [Monitoring and diagnostics](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-best-practices-monitoring)
+  - Updated: 2026-03-22T08:00:00.000Z → 2026-06-30T22:03:00.000Z
+- [Reliable Collections Throttling Guidelines](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-reliable-services-reliable-collections-throttling-guidelines)
+  - Updated: 2026-06-26T17:03:00.000Z → 2026-06-29T22:04:00.000Z
+- [Monitor containers](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-diagnostics-oms-containers)
+  - Updated: 2026-03-22T08:00:00.000Z → 2026-06-30T22:03:00.000Z
+- [Linux Cluster Diagnostics](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-diagnostics-oms-syslog)
+  - Updated: 2026-03-22T08:00:00.000Z → 2026-06-30T22:03:00.000Z
+
+### Deleted Pages
+
+- ~~Collect performance counters with the Log Analytics Agent~~ (https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-diagnostics-oms-agent)
+- ~~Configure Azure Monitor logs to collect cluster events~~ (https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-diagnostics-oms-setup)
 
 ## Classified Pages
 
@@ -152,6 +159,7 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Configure](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-reliable-services-configuration) | configuration | 0.80 | Explains specific configuration sections and parameters for stateful Reliable Services at cluster and service scope, which are Service Fabric–specific configuration details. |
 | [Configure Microsoft Entra client access](https://learn.microsoft.com/en-us/azure/service-fabric/how-to-managed-cluster-azure-active-directory-client) | security | 0.80 | Details cluster security setup with x509 certificates and Microsoft Entra, including prerequisites and binding to management endpoints—specific security configuration steps and role relationships. |
 | [Configure container repository credentials](https://learn.microsoft.com/en-us/azure/service-fabric/configure-container-repository-credentials) | configuration | 0.80 | Shows concrete manifest schema (RepositoryCredentials, ContainerHostPolicies) and how to specify account/password and encryption—detailed configuration parameters unique to Service Fabric. |
+| [Configure telemetry with Azure Monitor Agent and data collection rules](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-diagnostics-azure-monitor-agent-data-collection-rules) | configuration | 0.80 | The page provides specific guidance on configuring Azure Monitor Agent and data collection rules for Service Fabric clusters, including migration from WAD/LAD/MMA. It focuses on telemetry configuration parameters and supported setups, which are product-specific configuration knowledge. |
 | [Container image management](https://learn.microsoft.com/en-us/azure/service-fabric/container-image-management) | configuration | 0.80 | Describes image download/cleanup behavior and required runtime configurations; includes specific configuration names and behaviors unique to Service Fabric. |
 | [Container networking modes](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-networking-modes) | configuration | 0.80 | Details nat vs open networking modes, port behavior, and how to configure them in Service Fabric; includes product-specific settings and constraints for port sharing. |
 | [Data serialization in application upgrades](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-application-upgrade-data-serialization) | best-practices | 0.80 | Provides concrete guidance on making data formats forward/backward compatible during rolling upgrades; includes product-specific serialization patterns and edge cases affecting Reliable Services. |
@@ -210,7 +218,7 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Networking](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-best-practices-networking) | best-practices | 0.78 | The article provides product-specific DO/DON'T guidance for configuring Service Fabric networking resources (VNETs, IP ranges, load balancers, NSGs) and references Service Fabric–specific networking patterns. This is actionable, service-specific advice rather than generic networking concepts, fitting the best-practices category. |
 | [Plan cluster capacity](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-capacity) | decision-making | 0.78 | Capacity planning considerations for node types, durability, and reliability; likely includes concrete thresholds (e.g., reliability levels vs node counts) and guidance on when to choose each, which is decision-making content. |
 | [Reliable Collection guidelines & recommendations](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-reliable-services-reliable-collections-guidelines) | best-practices | 0.78 | The page is explicitly a set of guidelines and recommendations for using Reliable State Manager and Reliable Collections, focusing on avoiding common pitfalls and product-specific usage patterns. It provides concrete DO/DON'T style advice and gotchas unique to Service Fabric Reliable Collections rather than generic concepts, which aligns with the best-practices sub-skill type. |
-| [Reliable Collections Throttling Guidelines](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-reliable-services-reliable-collections-throttling-guidelines) | best-practices | 0.78 | The article provides product-specific guidance on how throttling manifests when writing to Reliable Collections and concrete recommendations to prevent and handle it. These are nuanced, Service Fabric–specific behaviors and patterns that go beyond generic theory, fitting the best-practices category. |
+| [Reliable Collections Throttling Guidelines](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-reliable-services-reliable-collections-throttling-guidelines) | best-practices | 0.78 | The article describes how throttling manifests specifically in Service Fabric Reliable Collections and provides concrete guidance on avoiding and handling throttling scenarios (for example, patterns for write operations, replication considerations, and platform-specific behaviors). This is product-specific, actionable guidance on edge cases and gotchas, which aligns with the best-practices sub-skill. |
 | [Run a service startup script as a local user or system account](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-run-script-at-service-startup) | configuration | 0.78 | Shows how to define setup entry points and RunAs policies in the service manifest, including specific manifest elements and behavior unique to Service Fabric. |
 | [Scale up non-primary node type](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-scale-up-non-primary-node-type) | deployment | 0.78 | Similar to primary node type scaling but for nonprimary; includes detailed Service Fabric-specific deployment steps and constraints for vertical scaling. |
 | [Scale up primary node type](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-scale-up-primary-node-type) | deployment | 0.78 | Explains safe vertical scaling by adding new node types and removing old ones; includes Service Fabric-specific steps and constraints (no in-place SKU upgrades). |
@@ -227,7 +235,6 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/service-fabric/policy-reference) | security | 0.75 | Lists specific Azure Policy definitions applicable to Service Fabric, with names and links; these are security/compliance configuration artifacts. |
 | [Change cluster certificate to common name](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-change-cert-thumbprint-to-cn) | security | 0.75 | Covers converting thumbprint-based certificate declarations to CN-based for Service Fabric clusters; includes product-specific certificate handling and upgrade behavior. |
 | [Collect performance counters with WAD](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-diagnostics-perf-wad) | configuration | 0.75 | Explains configuring WAD extension to collect performance counters for Service Fabric nodes; includes specific counter paths and extension configuration parameters. |
-| [Collect performance counters with the Log Analytics Agent](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-diagnostics-oms-agent) | configuration | 0.75 | Covers adding Log Analytics agent as a VM scale set extension and connecting to a workspace; includes specific extension configuration for Service Fabric clusters. |
 | [Configure managed cluster network settings](https://learn.microsoft.com/en-us/azure/service-fabric/how-to-managed-cluster-networking) | configuration | 0.75 | Walks through concrete NSG rules, ports, load-balancing rules, and RDP access for managed clusters—product-specific network configuration parameters. |
 | [Configure secondary node type for large scaling on a managed cluster](https://learn.microsoft.com/en-us/azure/service-fabric/how-to-managed-cluster-large-virtual-machine-scale-sets) | configuration | 0.75 | Covers the multiplePlacementGroups property, its default, and implications for scaling beyond 100 VMs—specific configuration parameter and trade-offs. |
 | [Deploy application secrets to a managed cluster](https://learn.microsoft.com/en-us/azure/service-fabric/how-to-managed-cluster-application-secrets) | security | 0.75 | Provides concrete patterns for using Key Vault and Service Fabric service configuration to handle secrets securely—product-specific secret management configuration. |
@@ -253,6 +260,7 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [sfctl rpm](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-sfctl-rpm) | integrations | 0.75 | Documents repair manager service commands; specific to Service Fabric CLI integration. |
 | [sfctl settings](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-sfctl-settings) | configuration | 0.75 | Describes local sfctl configuration options; likely includes specific setting names and allowed values for the CLI. |
 | [Migrate old Java Application to support Maven](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-migrate-old-javaapp-to-use-maven) | integrations | 0.74 | Gives concrete Maven coordinates and build configuration changes needed to consume Service Fabric Java dependencies from Maven Central; integration-specific config. |
+| [Monitoring and diagnostics](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-best-practices-monitoring) | best-practices | 0.74 | The page provides product-specific monitoring and diagnostics recommendations for Azure Service Fabric clusters and applications (for example, concrete guidance on what telemetry to collect, how to structure monitoring, and platform-specific considerations like deprecation of Application Insights for the Service Fabric SDK). These are actionable DO/DON'T style guidelines tailored to Service Fabric rather than generic monitoring theory, fitting the best-practices sub-skill. |
 | [Unit test stateful services](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-how-to-unit-test-stateful-services) | best-practices | 0.74 | Provides Service Fabric–specific testing considerations and patterns for stateful services that go beyond generic unit testing advice. |
 | [Using test scenarios](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-testability-scenarios) | configuration | 0.74 | Explains using Fault Analysis Service chaos and failover tests, with Service Fabric–specific scenario parameters and behaviors. |
 | [Create in Azure portal](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-creation-via-portal) | deployment | 0.72 | Step-by-step secure cluster creation with Key Vault; includes Service Fabric-specific portal options and constraints for security and deployment. |
@@ -284,7 +292,6 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Cluster monitoring overview](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-diagnostics-event-generation-infra) | configuration | 0.70 | Details platform-level events and logs for monitoring/diagnosis; includes event sources, log locations, and configuration specifics unique to Service Fabric. |
 | [Cluster networking patterns](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-patterns-networking) | architecture-patterns | 0.70 | Describes concrete networking patterns integrating Service Fabric with Azure networking features; includes product-specific pattern guidance beyond generic networking concepts. |
 | [Configuration](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-visualstudio-configure-upgrade) | deployment | 0.70 | Focuses on configuring upgrade settings via Visual Studio tooling; includes product-specific deployment/upgrade configuration steps and options. |
-| [Configure Azure Monitor logs to collect cluster events](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-diagnostics-oms-setup) | configuration | 0.70 | Explains configuring Log Analytics workspaces and connecting Service Fabric clusters; includes specific deployment/configuration patterns for diagnostics. |
 | [Configure CI/CD by using Azure Pipelines](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-tutorial-deploy-app-with-cicd-vsts) | deployment | 0.70 | CI/CD tutorial for Service Fabric apps; includes pipeline configuration and deployment tasks specific to Service Fabric and Azure Pipelines. |
 | [Configure autoscaling on a managed cluster](https://learn.microsoft.com/en-us/azure/service-fabric/how-to-managed-cluster-autoscale) | configuration | 0.70 | Autoscaling configuration for Service Fabric managed clusters typically includes product-specific policy parameters (for example, metric names, thresholds, cooldown periods, min/max node counts) and how to set them, which are not generic knowledge. This is primarily about defining and tuning autoscale rules and settings rather than general concepts, so it best fits the configuration sub-skill. |
 | [Configure maintenance control on a managed cluster](https://learn.microsoft.com/en-us/azure/service-fabric/how-to-managed-cluster-maintenance-control) | deployment | 0.70 | Explains MaintenanceControl configuration to coordinate background operations and avoid peak-hour failovers—product-specific maintenance scheduling settings. |
@@ -296,6 +303,7 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Connect to your managed cluster](https://learn.microsoft.com/en-us/azure/service-fabric/how-to-managed-cluster-connect) | troubleshooting | 0.70 | Describes connection methods and a specific browser error (NET::ERR_CERT_AUTHORITY_INVALID) with its cause in managed clusters—product-specific symptom and explanation. |
 | [Contents of the standalone package](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-standalone-package-contents) | configuration | 0.70 | Lists files and templates in the standalone package; provides product-specific artifacts and their purposes, which are configuration/deployment primitives. |
 | [Convert Web and Worker Roles to stateless services](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-cloud-services-migration-worker-role-stateless-service) | best-practices | 0.70 | Provides concrete mapping and migration guidance from Web/Worker Roles to Service Fabric stateless services, including product-specific patterns and gotchas. |
+| [DNS service](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-dnsservice) | configuration | 0.70 | The DNS service page describes how to enable and configure the optional Service Fabric DNS system service, including product-specific details like mapping DNS names to Service Fabric service names, how resolution works inside the cluster, and configuration behaviors unique to Service Fabric. These are concrete, service-specific configuration patterns rather than just conceptual DNS explanations. |
 | [Debug a Java service in Eclipse](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-debugging-your-application-java) | configuration | 0.70 | Shows editing entryPoint.sh with specific JVM debug parameters and port (8001), and manifest changes; these are concrete configuration details unique to Service Fabric Java services. |
 | [Delete actors and their state](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-reliable-actors-delete-actors) | best-practices | 0.70 | Explains actor deletion semantics, effects on state, and how to invoke deletion via Actor Service APIs, which are product-specific behaviors and gotchas. |
 | [Deploy an Azure Service Fabric Cluster across Availability Zones](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-cross-availability-zones) | deployment | 0.70 | Describes configuration methods for zone-spanning clusters; includes Service Fabric-specific settings and constraints for AZ deployment. |
@@ -314,17 +322,16 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Infrastructure as code](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-best-practices-infrastructure-as-code) | best-practices | 0.70 | Infrastructure-as-code best practices for Service Fabric using ARM templates; includes product-specific template structures and configuration patterns. |
 | [Initializer CodePackages](https://learn.microsoft.com/en-us/azure/service-fabric/initializer-codepackages) | configuration | 0.70 | Describes Initializer CodePackages semantics and their relationship to ServicePackages; typically includes specific schema/manifest elements and settings unique to Service Fabric. |
 | [Integrate with API Management](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-tutorial-deploy-api-management) | integrations | 0.70 | Shows how to route API Management traffic to Service Fabric services with product-specific configuration and routing patterns for this integration. |
-| [Linux Cluster Diagnostics](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-diagnostics-oms-syslog) | configuration | 0.70 | Shows how to configure Service Fabric to emit platform events to Syslog; includes product-specific event configuration and mapping. |
+| [Linux Cluster Diagnostics](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-diagnostics-oms-syslog) | configuration | 0.70 | The article explains how to configure Service Fabric to emit platform events to Syslog on Linux, with concrete settings and event wiring details. This is specific configuration guidance for diagnostics rather than conceptual content. |
 | [Manage applications for multiple environments](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-manage-multiple-environment-app-configuration) | configuration | 0.70 | Explains defining different application parameters per environment; includes product-specific parameterization patterns and configuration mechanisms for Service Fabric applications. |
 | [Managed Identity](https://learn.microsoft.com/en-us/azure/service-fabric/concepts-managed-identity) | security | 0.70 | Covers Service Fabric–specific use of managed identities, including how identities are bound and used for authentication to other services—product-specific security configuration patterns. |
 | [Managed cluster deny assignment policy](https://learn.microsoft.com/en-us/azure/service-fabric/managed-cluster-deny-assignment) | security | 0.70 | Describes deny assignment behavior and specific protected actions on cluster resources, including how policies restrict operations—product-specific access control configuration. |
 | [Managed cluster with ARM template](https://learn.microsoft.com/en-us/azure/service-fabric/quickstart-managed-cluster-template) | deployment | 0.70 | Shows how to deploy a managed cluster using ARM templates; includes resource definitions and cluster-specific deployment parameters that go beyond generic ARM usage. |
 | [Migrate your Service Fabric cluster to availability zone support](https://learn.microsoft.com/en-us/azure/service-fabric/migrate-service-fabric-availability-zones) | deployment | 0.70 | Provides migration paths and steps for moving managed and nonmanaged Service Fabric clusters to AZ-aware deployments, including scenario-specific guidance. |
 | [Migration guide](https://learn.microsoft.com/en-us/azure/service-fabric/cloud-services-to-service-fabric-migration-guide) | best-practices | 0.70 | Step-by-step migration guide with Service-Fabric-specific recommendations (for example, using managed clusters, sequencing migration tasks) that go beyond generic advice. |
-| [Monitor containers](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-diagnostics-oms-containers) | configuration | 0.70 | Covers setting up the container monitoring solution and wiring cluster diagnostics to Azure Monitor logs; includes product-specific configuration steps. |
+| [Monitor containers](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-diagnostics-oms-containers) | configuration | 0.70 | The article describes detailed, product-specific configuration steps for wiring Service Fabric container logs into Azure Monitor/Log Analytics, including agent setup and platform-specific settings. These are concrete configuration patterns rather than generic monitoring concepts. |
 | [Monitor your cluster with Azure Monitor logs](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-diagnostics-event-analysis-oms) | troubleshooting | 0.70 | Shows how to run specific queries to answer diagnostic questions and troubleshoot cluster issues; product-specific event schema and query patterns. |
 | [Monitoring Service Remoting](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-reliable-serviceremoting-diagnostics) | troubleshooting | 0.70 | Diagnostics article for Reliable ServiceRemoting lists specific EventSource/performance counter names and meanings used to monitor and troubleshoot this runtime, which are product-specific details not inferable from general knowledge. |
-| [Monitoring and diagnostics](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-best-practices-monitoring) | best-practices | 0.70 | Monitoring best-practices article; likely includes concrete configuration for diagnostics, metrics, and logging specific to Service Fabric (e.g., which counters/logs to enable). |
 | [Monitoring data reference](https://learn.microsoft.com/en-us/azure/service-fabric/monitor-service-fabric-reference) | configuration | 0.70 | Reference for what monitoring data (events, counters) is available and how to collect it; includes specific counter names and event categories. |
 | [On-demand backup of partition](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-backup-restore-service-ondemand-backup) | configuration | 0.70 | Describes using on-demand backup features, including when and how to trigger backups before planned changes; involves product-specific backup APIs/parameters. |
 | [Open a port in the load balancer](https://learn.microsoft.com/en-us/azure/service-fabric/create-load-balancer-rule) | configuration | 0.70 | Explains how to expose/route ports via Azure Load Balancer for Service Fabric; likely includes specific port mappings and LB rule parameters tied to Service Fabric cluster topology. |
@@ -372,7 +379,6 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [View health reports](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-view-entities-aggregated-health) | troubleshooting | 0.70 | Describes Service Fabric health queries, entity hierarchy, and how to interpret aggregated health for diagnosis; includes product-specific query patterns and evaluation logic useful for troubleshooting. |
 | [Volume and logging drivers](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-containers-volume-logging-drivers) | configuration | 0.70 | Describes Azure Files volume plugin as a Service Fabric app, with driver-specific configuration and deployment details that are product-specific integration/configuration knowledge. |
 | [WCF](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-reliable-services-communication-wcf) | integrations | 0.70 | Describes how to plug in the built-in WCF communication stack via ICommunicationListener and related APIs, which are Service Fabric–specific integration patterns. |
-| [DNS service](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-dnsservice) | configuration | 0.68 | The DNS service page goes beyond conceptual overview and includes product-specific configuration details: how to enable the optional DNS system service in a Service Fabric cluster, how to map DNS names to Service Fabric service names, and how resolution works for microservices and containerized services inside the cluster. These are concrete, Service Fabric–specific configuration patterns that an LLM is unlikely to know from training, but the page does not focus on numeric limits/quotas, error-code troubleshooting, or architecture decision matrices. |
 | [Node types and virtual machine scale sets](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-nodetypes) | configuration | 0.68 | Page explains the exact relationship between Service Fabric node types and Azure VM scale sets, including constraints such as one node type per scale set, that multiple node types cannot share a scale set, and that a node type should not be backed by multiple scale sets. It also covers how the Service Fabric runtime is installed via a specific VM extension and how to connect to instances. These are product-specific configuration rules and behaviors that go beyond generic knowledge and map directly to how to configure node types and scale sets. |
 | [Patch cluster nodes (Windows)](https://learn.microsoft.com/en-us/azure/service-fabric/how-to-patch-cluster-nodes-windows) | best-practices | 0.68 | Contains product-specific guidance such as requiring silver or greater durability for VM Scale Set automatic OS image upgrades and explicit support end dates for Windows Server versions, which are concrete, time-bound details and recommendations unique to Service Fabric operations rather than generic patching advice. |
 | [Scale to zero nodes](https://learn.microsoft.com/en-us/azure/service-fabric/how-to-managed-cluster-scale-to-zero) | configuration | 0.68 | How-to article for enabling and configuring scale-to-zero on node types; likely includes specific Service Fabric managed cluster settings/parameters and constraints that are product-specific and not general knowledge. |
@@ -381,7 +387,6 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [2- Package and deploy containers](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-tutorial-package-containers) | configuration | 0.65 | Uses Yeoman to generate Service Fabric application definitions; includes application manifest and service configuration specific to container packaging. |
 | [3- Deploy the application](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-tutorial-java-deploy-azure) | deployment | 0.65 | Tutorial on deploying Java Service Fabric apps to Azure; includes Service Fabric-specific deployment commands and configuration. |
 | [3- Scale the cluster](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-tutorial-scale-cluster) | deployment | 0.65 | Tutorial on scaling clusters out/in and cleaning up resources; includes Service Fabric-specific scaling operations and Azure resource handling. |
-| [5- Delete a cluster](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-tutorial-delete-cluster) | deployment | 0.65 | Explains deleting cluster resources and/or entire resource groups; includes Service Fabric-specific resource dependencies and deletion steps. |
 | [Add logging to your application](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-how-to-diagnostics-log) | best-practices | 0.65 | Shows concrete logging options and patterns for Service Fabric apps, beyond generic logging theory; includes product-specific recommendations and code patterns. |
 | [Application upgrade overview](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-application-upgrade) | deployment | 0.65 | Explains upgrade modes, manifest version comparisons, and health checks; typically includes upgrade-mode-specific behaviors and constraints, which are deployment/upgrade expert details. |
 | [Application upgrades advanced topics](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-application-upgrade-advanced) | deployment | 0.65 | Covers advanced upgrade topics, likely including detailed behaviors, parameters, and constraints for complex upgrade paths, which are deployment-focused expert details. |
@@ -491,6 +496,7 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [C# Reliable Actors application on Windows](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-reliable-actors-get-started) | 0.25 | Quickstart for Reliable Actors in C#; shows how to create/debug/deploy but not deep configuration, limits, or troubleshooting content. |
 | [Java Reliable Actors application on Linux](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-create-your-first-linux-application-with-java) | 0.25 | Java Reliable Actors quickstart; basic setup and deployment without detailed configuration tables or error mappings. |
 | [macOS](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-get-started-mac) | 0.25 | macOS dev environment setup; likely basic installation and cluster creation steps without detailed config matrices. |
+| [5- Delete a cluster](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-tutorial-delete-cluster) | 0.20 | Tutorial focuses on how to delete a Service Fabric cluster and its resource group using standard Azure operations. It does not present product-specific limits, configuration tables, error-code-based troubleshooting, or other detailed expert-only data; it's primarily procedural guidance. |
 | [Application scenarios](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-application-scenarios) | 0.20 | Application scenarios and design overview; mostly conceptual discussion of stateless vs stateful and scenarios, not concrete product-specific configs or limits. |
 | [Architecture](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-architecture) | 0.20 | Architecture overview of Service Fabric subsystems; conceptual explanation rather than decision matrices, limits, or configuration tables. |
 | [C# Reliable Services application on Linux](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-create-your-first-linux-application-with-csharp) | 0.20 | Tutorial for creating a Linux Service Fabric app with C#; largely step-by-step without configuration matrices or error-resolution mappings. |
