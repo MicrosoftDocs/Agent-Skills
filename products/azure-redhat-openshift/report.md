@@ -46,10 +46,10 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 - **Unclassified**: 15
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 3
-- **Unchanged**: 62
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 67
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-redhat-openshift/azure-redhat-openshift.csv`
 
 ## Classification Statistics
@@ -67,24 +67,6 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | *(Unclassified)* | 15 | 22.4% |
 
 ## Changes
-
-### New Pages
-
-- [Configure capacity reservations by using machine sets](https://learn.microsoft.com/en-us/azure/openshift/howto-capacity-reservations)
-- [Create an Azure Files storage class](https://learn.microsoft.com/en-us/azure/openshift/howto-create-a-storageclass)
-
-### Updated Pages
-
-- [Use the built-in container registry](https://learn.microsoft.com/en-us/azure/openshift/built-in-container-registry)
-  - Updated: 2025-08-07T22:06:00.000Z → 2026-06-29T22:17:00.000Z
-- [Use Azure Container registry](https://learn.microsoft.com/en-us/azure/openshift/howto-use-acr-with-aro)
-  - Updated: 2025-07-18T22:10:00.000Z → 2026-06-29T22:17:00.000Z
-- [Encrypt cluster data with customer-managed key](https://learn.microsoft.com/en-us/azure/openshift/howto-byok)
-  - Updated: 2026-06-11T17:32:00.000Z → 2026-06-29T22:17:00.000Z
-
-### Deleted Pages
-
-- ~~Create an Azure Files Storageclass~~ (https://learn.microsoft.com/en-us/azure/openshift/howto-create-a-storageclass)
 
 ## Classified Pages
 

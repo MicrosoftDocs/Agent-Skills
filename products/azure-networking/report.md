@@ -44,10 +44,10 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 - **Unclassified**: 12
 
 ### Incremental Update
-- **New Pages**: 28
-- **Updated Pages**: 2
-- **Unchanged**: 13
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 43
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-networking/azure-networking.csv`
 
 ## Classification Statistics
@@ -63,41 +63,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | *(Unclassified)* | 12 | 27.9% |
 
 ## Changes
-
-### New Pages
-
-- [Overview](https://learn.microsoft.com/en-us/azure/networking/design-guide/overview)
-- [Common workload patterns](https://learn.microsoft.com/en-us/azure/networking/design-guide/workload-patterns)
-- [Lift and shift](https://learn.microsoft.com/en-us/azure/networking/design-guide/lift-and-shift)
-- [Migrate and modernize](https://learn.microsoft.com/en-us/azure/networking/design-guide/migrate-modernize)
-- [Cross-cloud](https://learn.microsoft.com/en-us/azure/networking/design-guide/cross-cloud)
-- [Virtual networks and subnets](https://learn.microsoft.com/en-us/azure/networking/design-guide/vnets-subnets)
-- [IP address planning](https://learn.microsoft.com/en-us/azure/networking/design-guide/ip-planning)
-- [Network security groups and ASGs](https://learn.microsoft.com/en-us/azure/networking/design-guide/network-application-security-groups)
-- [Single-workload flat network](https://learn.microsoft.com/en-us/azure/networking/design-guide/flat-network)
-- [Hub-and-spoke topology](https://learn.microsoft.com/en-us/azure/networking/design-guide/hub-spoke)
-- [Azure Virtual WAN](https://learn.microsoft.com/en-us/azure/networking/design-guide/virtual-wan)
-- [Multi-region networking](https://learn.microsoft.com/en-us/azure/networking/design-guide/multi-region)
-- [Hybrid connectivity](https://learn.microsoft.com/en-us/azure/networking/design-guide/hybrid-connectivity)
-- [Internet ingress](https://learn.microsoft.com/en-us/azure/networking/design-guide/internet-ingress)
-- [Application delivery](https://learn.microsoft.com/en-us/azure/networking/design-guide/app-delivery)
-- [Outbound egress](https://learn.microsoft.com/en-us/azure/networking/design-guide/outbound-egress)
-- [Private PaaS access](https://learn.microsoft.com/en-us/azure/networking/design-guide/private-platform-as-a-service)
-- [Developer and admin access](https://learn.microsoft.com/en-us/azure/networking/design-guide/developer-admin-access)
-- [Cross-region and cross-cloud](https://learn.microsoft.com/en-us/azure/networking/design-guide/cross-region)
-- [Azure Firewall](https://learn.microsoft.com/en-us/azure/networking/design-guide/azure-firewall)
-- *...and 8 more*
-
-### Updated Pages
-
-- [Network foundations overview](https://learn.microsoft.com/en-us/azure/networking/foundations/network-foundations-overview)
-  - Updated: 2025-07-26T17:14:00.000Z → 2026-07-02T22:11:00.000Z
-- [Azure network latency](https://learn.microsoft.com/en-us/azure/networking/azure-network-latency)
-  - Updated: 2025-08-18T17:25:00.000Z → 2026-07-02T17:11:00.000Z
-
-### Deleted Pages
-
-- ~~Troubleshoot Microsoft.Network Failed provisioning state~~ (https://learn.microsoft.com/en-us/azure/networking/troubleshoot-failed-state)
 
 ## Classified Pages
 

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-05'
+generated_at: '2026-07-12'
 category_descriptions:
   security: 'Securing Service Bus: auth with Entra ID/SAS/managed identities, network
     isolation (VNet, Private Link, firewalls, perimeters), encryption/CMK, TLS policies,
@@ -13,9 +13,9 @@ category_descriptions:
   decision-making: Guidance on choosing Service Bus vs other messaging options, configuring
     geo-disaster recovery/replication, Java/JMS client choices, and migrating from
     Standard to Premium.
-  configuration: 'Configuring Service Bus behavior: queues/topics setup, forwarding,
-    sessions, partitioning, TTL/dead-lettering, monitoring/metrics, subscription rules,
-    management via ARM/PowerShell/emulator.'
+  configuration: 'Configuring and managing Service Bus entities: forwarding, sessions,
+    partitioning, TTL, dead-lettering, monitoring/metrics, SQL filters/actions, ARM/PowerShell,
+    geo-replication, and local emulation.'
   best-practices: 'Guidance on reliable messaging patterns: duplicates, FIFO/sessions,
     locks/settlement, dead-letter handling, serialization, performance tuning, prefetch,
     timeouts, retries, and maintenance.'
@@ -29,16 +29,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Service Bus development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  using queues/topics, sessions & partitioning, JMS/RabbitMQ integration, geo-replication,
-  or Premium tier limits, and other Azure Service Bus related development tasks. Not
-  for Azure Event Hubs (use azure-event-hubs), Azure Event Grid (use azure-event-grid),
-  Azure Relay (use azure-relay), Azure Queue Storage (use azure-queue-storage).
-use_when: Use when using queues/topics, sessions & partitioning, JMS/RabbitMQ integration,
-  geo-replication, or Premium tier limits, and other Azure Service Bus related development
+  using queues/topics, sessions/FIFO, JMS/RabbitMQ integration, geo-replication, or
+  Premium high-scale workloads, and other Azure Service Bus related development tasks.
+  Not for Azure Event Hubs (use azure-event-hubs), Azure Relay (use azure-relay),
+  Azure Notification Hubs (use azure-notification-hubs), Azure Web PubSub (use azure-web-pubsub).
+use_when: Use when using queues/topics, sessions/FIFO, JMS/RabbitMQ integration, geo-replication,
+  or Premium high-scale workloads, and other Azure Service Bus related development
   tasks.
-confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Event Grid
-  (use azure-event-grid), Azure Relay (use azure-relay), Azure Queue Storage (use
-  azure-queue-storage).
+confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Relay (use
+  azure-relay), Azure Notification Hubs (use azure-notification-hubs), Azure Web PubSub
+  (use azure-web-pubsub).
 ---
 # Azure Service Bus Crawl Report
 
@@ -51,9 +51,9 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Event
 - **Unclassified**: 35
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 4
-- **Unchanged**: 120
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 125
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-bus/azure-service-bus.csv`
 
@@ -61,9 +61,9 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Event
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 6 | 4.8% |
+| architecture-patterns | 5 | 4.0% |
 | best-practices | 11 | 8.7% |
-| configuration | 21 | 16.7% |
+| configuration | 22 | 17.5% |
 | decision-making | 5 | 4.0% |
 | deployment | 7 | 5.6% |
 | integrations | 12 | 9.5% |
@@ -74,21 +74,10 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Event
 
 ## Changes
 
-### New Pages
-
-- [Handle timeouts and configure retries](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-timeouts-retries)
-- [Prevent message loss and duplicates](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-message-loss-and-duplicates)
-
 ### Updated Pages
 
-- [Allow access via private endpoints](https://learn.microsoft.com/en-us/azure/service-bus-messaging/private-link-service)
-  - Updated: 2026-05-02T08:00:00.000Z → 2026-06-29T22:28:00.000Z
-- [Dead-letter queues](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-dead-letter-queues)
-  - Updated: 2026-06-15T22:19:00.000Z → 2026-06-29T22:28:00.000Z
-- [Chain entities with auto-forwarding](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-auto-forwarding)
-  - Updated: 2026-05-19T22:14:00.000Z → 2026-07-02T05:13:00.000Z
-- [Network security perimeter](https://learn.microsoft.com/en-us/azure/service-bus-messaging/network-security-perimeter)
-  - Updated: 2026-04-28T17:24:00.000Z → 2026-07-02T17:11:00.000Z
+- [Geo-Replication](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-geo-replication)
+  - Updated: 2026-06-23T05:11:00.000Z → 2026-07-09T22:04:00.000Z
 
 ## Classified Pages
 
@@ -174,7 +163,7 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Event
 | [Use Service Bus with Java Message Service (JMS) 2.0](https://learn.microsoft.com/en-us/azure/service-bus-messaging/how-to-use-java-message-service-20) | integrations | 0.70 | How-to for using JMS 2.0 over AMQP with Azure Service Bus; likely includes product-specific API usage, configuration parameters, and integration patterns beyond generic JMS knowledge. |
 | [Dead-letter queues](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-dead-letter-queues) | best-practices | 0.68 | The article goes beyond conceptual description and includes product-specific guidance on when and how messages are dead-lettered, how to move/repair them, and how to use the DLQ subqueue in code. These are concrete, Service Bus–specific behavioral details and recommended handling patterns that qualify as expert knowledge and align best with best-practices. |
 | [Duplicate message detection](https://learn.microsoft.com/en-us/azure/service-bus-messaging/duplicate-detection) | best-practices | 0.68 | A duplicate detection article for Service Bus typically includes product-specific guidance such as how to set the DuplicateDetectionHistoryTimeWindow, how message IDs are used, and how to configure or use this feature to avoid duplicate processing in concrete failure scenarios. The summary already describes specific failure patterns (acknowledgment not returned, client retries) and how the system handles duplicates, which are product-specific gotchas and usage recommendations rather than just conceptual theory, fitting best-practices. |
-| [Geo-Replication](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-geo-replication) | architecture-patterns | 0.68 | Geo-replication for Service Bus is a product-specific resiliency pattern. The article describes how metadata and data are replicated from primary to secondary regions, when and how to enable it on namespaces, and how to use it to insulate applications from outages. This is specialized architectural guidance for this service rather than generic concepts. |
+| [Geo-Replication](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-geo-replication) | configuration | 0.68 | Geo-replication for Service Bus is a product-specific feature with detailed behavior and configuration steps (primary/secondary regions, metadata and data replication semantics) that go beyond generic concepts. The page likely includes specific options and constraints for enabling and managing geo-replication on namespaces, which fits best under configuration rather than general architecture guidance. |
 | [Bicep](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-resource-manager-namespace-queue-bicep) | deployment | 0.65 | Shows a reusable Bicep template with parameters and resource definitions; while a quickstart, it exposes concrete deployment resource schema and parameterization useful for production deployments. |
 | [Chain entities with auto-forwarding](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-auto-forwarding) | configuration | 0.65 | The page describes how to configure autoforwarding between queues/topics, including entity-level settings and tier-specific behavior (for example, unsupported in Basic tier). It focuses on how to set up and chain entities, which aligns best with configuration details rather than generic concepts. |
 | [Delete messages in Service Bus](https://learn.microsoft.com/en-us/azure/service-bus-messaging/batch-delete) | integrations | 0.65 | Shows how to delete messages via code, likely including SDK methods, parameters, and constraints specific to Service Bus batch deletion. |

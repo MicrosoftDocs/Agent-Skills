@@ -1,9 +1,9 @@
 ---
 name: azure-blueprints
-description: Expert knowledge for Azure Blueprints development including troubleshooting, decision making, security, configuration, integrations & coding patterns, and deployment. Use when migrating off Azure Blueprints, mapping to PBMM/ISO/SWIFT, using CAF Foundation, or automating via CLI/PowerShell/REST, and other Azure Blueprints related development tasks. Not for Azure Policy (use azure-policy), Azure Resource Manager (use azure-resource-manager), Azure Portal (use azure-portal), Azure Role-based access control (use azure-rbac).
+description: Expert knowledge for Azure Blueprints development including troubleshooting, decision making, security, configuration, integrations & coding patterns, and deployment. Use when migrating off Blueprints, mapping to PBMM/ISO/SWIFT, automating via CLI/PowerShell/REST, or fixing deployment errors, and other Azure Blueprints related development tasks. Not for Azure Policy (use azure-policy), Azure Resource Manager (use azure-resource-manager), Azure Resource Graph (use azure-resource-graph), Azure Portal (use azure-portal).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-28"
+  generated_at: "2026-07-12"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Blueprints Skill
@@ -29,7 +29,7 @@ This skill requires **network access** to fetch documentation content:
 | Security | L45-L60 | Security-focused deployment stages, resource locks, operator roles, and using/mapping Azure Blueprints for compliance frameworks like PBMM, ISM PROTECTED, ISO 27001, SWIFT CSP, and UK OFFICIAL/NHS. |
 | Configuration | L61-L72 | Configuring and deploying Azure Blueprints (including security/ISO/CAF/SWIFT samples), using blueprint functions, and importing/exporting blueprints via PowerShell. |
 | Integrations & Coding Patterns | L73-L79 | Automating Azure Blueprints as code using CLI, PowerShell, and REST: create, import/export, and manage blueprint definitions and assignments programmatically. |
-| Deployment | L80-L85 | Managing blueprint deployment order, migrating blueprints to template specs, and deploying the CAF Foundation blueprint with configurable parameters. |
+| Deployment | L80-L85 | Controlling blueprint artifact deployment order, migrating blueprints to template specs/deployment stacks, and deploying the CAF Foundation blueprint with parameters. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -81,5 +81,5 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Control Azure Blueprint artifact deployment order | https://learn.microsoft.com/en-us/azure/governance/blueprints/concepts/sequencing-order |
-| Migrate Azure Blueprints to template specs | https://learn.microsoft.com/en-us/azure/governance/blueprints/migrate-to-template-specs |
+| Migrate Azure Blueprints to template specs and deployment stacks | https://learn.microsoft.com/en-us/azure/governance/blueprints/migrate-to-template-specs |
 | Deploy CAF Foundation blueprint with parameters | https://learn.microsoft.com/en-us/azure/governance/blueprints/samples/caf-foundation/deploy |

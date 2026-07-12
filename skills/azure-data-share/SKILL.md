@@ -1,9 +1,9 @@
 ---
 name: azure-data-share
-description: Expert knowledge for Azure Data Share development including troubleshooting, decision making, security, configuration, and deployment. Use when estimating Data Share costs, managing invitations/RBAC, cross-region deployments, dataset mapping, or automation, and other Azure Data Share related development tasks. Not for Azure Data Box (use azure-data-box-family), Azure Import Export (use azure-import-export), Azure Open Datasets (use azure-open-datasets), Azure Data Explorer (use azure-data-explorer).
+description: Expert knowledge for Azure Data Share development including troubleshooting, decision making, security, configuration, and deployment. Use when estimating Data Share costs, securing invitations, fixing share errors, configuring datasets, or deploying across regions, and other Azure Data Share related development tasks. Not for Azure Data Box (use azure-data-box-family), Azure Data Explorer (use azure-data-explorer), Azure Data Factory (use azure-data-factory), Azure Open Datasets (use azure-open-datasets).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-07-12"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Data Share Skill
@@ -27,7 +27,7 @@ This skill requires **network access** to fetch documentation content:
 | Troubleshooting | L33-L37 | Diagnosing and fixing Azure Data Share invitation issues, common error codes/messages, permission and configuration problems when sending or accepting shares |
 | Decision Making | L38-L42 | Guidance on estimating Azure Data Share costs, understanding pricing factors (shares, snapshots, storage), and planning budgets for data sharing scenarios. |
 | Security | L43-L49 | Managing access and security for Data Share: RBAC roles, permissions, invitations/recipients, and configuring security controls for shared datasets. |
-| Configuration | L50-L62 | Configuring Azure Data Share: adding datasets, mapping received data, integrating with SQL/Synapse/Blob/Data Lake, setting up monitoring/metrics, and automating via PowerShell, ARM, and Bicep. |
+| Configuration | L50-L62 | How to set up and manage Azure Data Share: add datasets, configure mappings and storage (SQL, Synapse, Blob, Data Lake), enable monitoring, and deploy via PowerShell, ARM, or Bicep. |
 | Deployment | L63-L67 | Guides for deploying Azure Data Share across regions, including disaster recovery setup, regional failover, and moving Data Share accounts between Azure regions. |
 
 ### Troubleshooting

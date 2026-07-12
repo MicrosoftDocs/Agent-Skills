@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-06-14'
+generated_at: '2026-07-12'
 category_descriptions:
   security: 'Securing Synapse workspaces end-to-end: auth and RBAC, network and private
     endpoints, firewall and data exfiltration, encryption/TDE, policies, managed identities,
     and secure data access/migration.'
-  configuration: 'Configuring Synapse workspaces, Spark pools, and SQL pools: monitoring,
-    scaling, libraries, backups/restores, workload management, Purview/ML integration,
-    and Synapse Link monitoring.'
+  configuration: Configuring Synapse workspaces, Spark pools, libraries, monitoring/metrics,
+    backups/restore, workload management, and integrations with Purview, Azure ML,
+    and Azure Monitor.
   deployment: Guides for deploying Synapse workspaces and dedicated SQL pools with
     CI/CD and ARM templates, plus operational readiness checks and configuring SQL
     pool maintenance windows.
@@ -31,17 +31,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Synapse Analytics development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when working with Synapse SQL pools, Spark pools, Synapse Link, PolyBase ELT,
-  or Cosmos DB integrations, and other Azure Synapse Analytics related development
-  tasks. Not for Azure Data Factory (use azure-data-factory), Azure Data Explorer
-  (use azure-data-explorer), Azure Databricks (use azure-databricks), Azure HDInsight
-  (use azure-hdinsight).
-use_when: Use when working with Synapse SQL pools, Spark pools, Synapse Link, PolyBase
-  ELT, or Cosmos DB integrations, and other Azure Synapse Analytics related development
+  Use when designing Synapse workspaces, SQL/Spark pools, ELT/PolyBase loads, Synapse
+  Link, or CI/CD deployments, and other Azure Synapse Analytics related development
+  tasks. Not for Azure Data Factory (use azure-data-factory), Azure Databricks (use
+  azure-databricks), Azure HDInsight (use azure-hdinsight), Azure Stream Analytics
+  (use azure-stream-analytics).
+use_when: Use when designing Synapse workspaces, SQL/Spark pools, ELT/PolyBase loads,
+  Synapse Link, or CI/CD deployments, and other Azure Synapse Analytics related development
   tasks.
-confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure Data
-  Explorer (use azure-data-explorer), Azure Databricks (use azure-databricks), Azure
-  HDInsight (use azure-hdinsight).
+confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure Databricks
+  (use azure-databricks), Azure HDInsight (use azure-hdinsight), Azure Stream Analytics
+  (use azure-stream-analytics).
 ---
 # Azure Synapse Analytics Crawl Report
 
@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure D
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 450
+- **Updated Pages**: 1
+- **Unchanged**: 449
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-synapse-analytics/azure-synapse-analytics.csv`
 
@@ -76,6 +76,11 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure D
 | *(Unclassified)* | 173 | 38.4% |
 
 ## Changes
+
+### Updated Pages
+
+- [Monitoring data reference](https://learn.microsoft.com/en-us/azure/synapse-analytics/monitor-synapse-analytics-reference)
+  - Updated: 2024-09-11T18:38:00.000Z → 2025-09-15T22:11:00.000Z
 
 ## Classified Pages
 
@@ -179,6 +184,7 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure D
 | [Connect to Synapse workspace from restricted network](https://learn.microsoft.com/en-us/azure/synapse-analytics/security/how-to-connect-to-workspace-from-restricted-network) | security | 0.74 | Network/security configuration for enabling Synapse Studio access from locked-down environments; includes specific connectivity patterns. |
 | [Connect to a secured storage account](https://learn.microsoft.com/en-us/azure/synapse-analytics/security/connect-to-a-secure-storage-account) | security | 0.74 | How-to for linking secure storage with Synapse; likely includes specific access configuration and identity/permission settings. |
 | [Performance tuning guidance](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/performance-tuning-materialized-views) | best-practices | 0.74 | Article provides product-specific guidance on when and how to use materialized views in dedicated SQL pools, including concrete recommendations and gotchas unique to Synapse rather than generic SQL concepts. |
+| [Monitoring data reference](https://learn.microsoft.com/en-us/azure/synapse-analytics/monitor-synapse-analytics-reference) | configuration | 0.72 | A monitoring data reference for Synapse Analytics will list specific metrics, dimensions, and log categories, often in tables with exact names, units, and meanings. These product-specific monitoring fields and their configuration details (which metrics exist, how they’re emitted, and how to interpret them) are not generally known from training and match the configuration sub-skill focus on detailed settings and parameters. |
 | [1 Design performance for Netezza migration](https://learn.microsoft.com/en-us/azure/synapse-analytics/migration-guides/netezza/1-design-performance-migration) | best-practices | 0.70 | Parallel to Teradata article but for Netezza; focuses on design and performance best practices specific to Synapse vs Netezza. |
 | [1 Design performance for Oracle migration](https://learn.microsoft.com/en-us/azure/synapse-analytics/migration-guides/oracle/1-design-performance-migration) | best-practices | 0.70 | Covers design and performance best practices when moving from Oracle to Synapse; includes platform-specific recommendations and patterns. |
 | [1 Design performance for Teradata migration](https://learn.microsoft.com/en-us/azure/synapse-analytics/migration-guides/teradata/1-design-performance-migration) | best-practices | 0.70 | Explicitly focuses on best practices for design and performance when moving from Teradata to Synapse; contains product- and platform-specific recommendations and patterns. |
@@ -249,7 +255,6 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure D
 | [Monitor Apache Spark Applications metrics with Prometheus and Grafana](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/use-prometheus-grafana-to-monitor-apache-spark-application-level-metrics) | integrations | 0.70 | Covers deploying metrics solution to AKS and wiring Grafana dashboards; expected to include connector settings, scrape configs, and product-specific parameters. |
 | [Monitor Gen2 cache](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-how-to-monitor-cache) | troubleshooting | 0.70 | Article explicitly focuses on monitoring and troubleshooting slow query performance via Gen2 cache; such docs typically map cache-related symptoms to causes and resolutions using Synapse-specific metrics and views. |
 | [Monitor Synapse Analytics](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/monitor-sql-pool-synapse-analytics) | configuration | 0.70 | Monitoring article for dedicated SQL pool; typically details specific metrics, diagnostic settings, and Azure Monitor configuration options for this service. |
-| [Monitoring data reference](https://learn.microsoft.com/en-us/azure/synapse-analytics/monitor-synapse-analytics-reference) | configuration | 0.70 | Monitoring data reference typically includes metric names, dimensions, and schemas specific to Synapse, which are configuration-like reference details. |
 | [Navigate the Apache Spark pool history server](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-history-server) | troubleshooting | 0.70 | Guides using extended Spark history server tabs (Data, Graph, Diagnosis) for root-cause analysis; likely maps symptoms like data/time skew to causes and fixes. |
 | [Network security](https://learn.microsoft.com/en-us/azure/synapse-analytics/guidance/security-white-paper-network-security) | security | 0.70 | Network security white paper; expected to detail Synapse-specific firewall, private endpoints, and networking configuration options. |
 | [Optimize Apache Spark writes on Delta Lake](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/optimize-write-for-apache-spark) | best-practices | 0.70 | Discusses the small file problem and Optimize Write feature; likely includes product-specific recommendations on file sizes, partitioning, and configuration options for better performance. |

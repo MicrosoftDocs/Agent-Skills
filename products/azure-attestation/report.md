@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-05'
+generated_at: '2026-07-12'
 category_descriptions:
   best-practices: Guidance on validating attestation tokens, writing secure attestation
     policies, and configuring/enforcing SGX and TPM attestation baselines using sample
@@ -7,9 +7,8 @@ category_descriptions:
   configuration: Configuring Azure Attestation policies (grammar, versions, claim
     rules), policy signer certs, and monitoring/logging via Azure Monitor, CLI, PowerShell,
     and log schema.
-  security: Using Azure Policy to govern attestation providers, and securing Azure
-    Attestation with private endpoints, firewalls, managed identities, and access
-    control settings
+  security: Using Azure Policy with Attestation, enforcing compliance, and best practices
+    to harden, secure, and protect Azure Attestation deployments and configurations.
   deployment: How to create and configure a private endpoint for Azure Attestation
     using PowerShell, including network setup and secure access to attestation resources.
   troubleshooting: Diagnosing and fixing common Azure Attestation failures, error
@@ -17,16 +16,17 @@ category_descriptions:
     or runtime problems.
 skill_description: Expert knowledge for Azure Attestation development including troubleshooting,
   best practices, security, configuration, and deployment. Use when validating attestation
-  tokens, authoring policies, managing SGX/TPM baselines, or securing private endpoints,
-  and other Azure Attestation related development tasks. Not for Azure Confidential
-  Computing (use azure-confidential-computing), Azure Virtual Enclaves (use azure-virtual-enclaves),
-  Azure Key Vault (use azure-key-vault), Azure Dedicated HSM (use azure-dedicated-hsm).
-use_when: Use when validating attestation tokens, authoring policies, managing SGX/TPM
-  baselines, or securing private endpoints, and other Azure Attestation related development
-  tasks.
+  tokens, authoring policies, enforcing SGX/TPM baselines, or configuring private
+  endpoints, and other Azure Attestation related development tasks. Not for Azure
+  Confidential Computing (use azure-confidential-computing), Azure Virtual Enclaves
+  (use azure-virtual-enclaves), Azure Dedicated HSM (use azure-dedicated-hsm), Azure
+  Key Vault (use azure-key-vault).
+use_when: Use when validating attestation tokens, authoring policies, enforcing SGX/TPM
+  baselines, or configuring private endpoints, and other Azure Attestation related
+  development tasks.
 confusable_not_for: Not for Azure Confidential Computing (use azure-confidential-computing),
-  Azure Virtual Enclaves (use azure-virtual-enclaves), Azure Key Vault (use azure-key-vault),
-  Azure Dedicated HSM (use azure-dedicated-hsm).
+  Azure Virtual Enclaves (use azure-virtual-enclaves), Azure Dedicated HSM (use azure-dedicated-hsm),
+  Azure Key Vault (use azure-key-vault).
 ---
 # Azure Attestation Crawl Report
 
@@ -60,8 +60,8 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 
 ### Updated Pages
 
-- [About Microsoft Azure Attestation](https://learn.microsoft.com/en-us/azure/attestation/overview)
-  - Updated: 2025-04-15T08:00:00.000Z → 2026-06-29T22:43:00.000Z
+- [Secure Microsoft Azure Attestation](https://learn.microsoft.com/en-us/azure/attestation/secure-attestation)
+  - Updated: 2025-04-08T22:01:00.000Z → 2026-07-10T22:34:00.000Z
 
 ## Classified Pages
 
@@ -69,7 +69,6 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 |-----------|------|------------|--------|
 | [Troubleshoot issues](https://learn.microsoft.com/en-us/azure/attestation/troubleshoot-guide) | troubleshooting | 0.85 | Explicit troubleshooting guide; based on REST API error handling, likely lists specific error codes/messages and maps them to causes and resolutions. |
 | [Data reference of logs](https://learn.microsoft.com/en-us/azure/attestation/logs-data-reference) | configuration | 0.80 | Explicitly a monitoring data reference; will contain detailed tables of log fields, metric names, and types, which are configuration/reference details unique to this product. |
-| [Secure Microsoft Azure Attestation](https://learn.microsoft.com/en-us/azure/attestation/secure-attestation) | security | 0.80 | Explicitly a security hardening article; likely includes RBAC roles, network configuration (private endpoints, firewall rules), and identity/access patterns specific to Azure Attestation. |
 | [Claim Rule Functions](https://learn.microsoft.com/en-us/azure/attestation/claim-rule-functions) | configuration | 0.75 | Explains new operator and six functions in updated policy language; includes function names, parameters, and behavior, which are configuration/policy language reference details. |
 | [Policy Version 1.0](https://learn.microsoft.com/en-us/azure/attestation/policy-version-1-0) | configuration | 0.75 | Policy version reference describing supported grammar and processing; contains detailed policy constructs and configuration options specific to version 1.0. |
 | [Policy Version 1.1](https://learn.microsoft.com/en-us/azure/attestation/policy-version-1-1) | configuration | 0.75 | Similar to v1.0 but for version 1.1; includes specific language features and configuration semantics unique to this version. |
@@ -83,6 +82,7 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 | [Enforce custom TCB baseline for SGX attestation](https://learn.microsoft.com/en-us/azure/attestation/custom-tcb-baseline-enforcement) | best-practices | 0.70 | Describes how Azure Attestation validates SGX evidence against default TCB baseline and how to customize it; contains product-specific behavior and configuration steps that are nuanced and not generic. |
 | [How to interpret Azure Attestation logs](https://learn.microsoft.com/en-us/azure/attestation/view-logs) | configuration | 0.70 | Describes full logs collected, timing (up to 10 minutes), and how they are stored; likely includes schema details and field meanings, which are product-specific monitoring configuration/reference. |
 | [Policy signer certificate](https://learn.microsoft.com/en-us/azure/attestation/policy-signer-examples) | configuration | 0.70 | Describes certificate content and file formats for create/add/delete signer flows; includes specific format requirements and usage patterns unique to Azure Attestation. |
+| [Secure Microsoft Azure Attestation](https://learn.microsoft.com/en-us/azure/attestation/secure-attestation) | security | 0.70 | The page focuses on securing Azure Attestation with product-specific guidance around network security, identity management, and access control. While the summary is high-level, this type of document typically includes concrete recommendations such as specific Azure roles, identity configurations, and access patterns unique to Azure Attestation, which qualifies as expert security configuration knowledge rather than generic security concepts. |
 | [Attestation token](https://learn.microsoft.com/en-us/azure/attestation/attestation-token-examples) | best-practices | 0.65 | Shows example attestation tokens produced by policies; provides concrete token structure and claim patterns that help implementers correctly consume tokens. |
 | [Claim sets](https://learn.microsoft.com/en-us/azure/attestation/claim-sets) | configuration | 0.65 | Describes categories of claims generated during attestation; likely enumerates specific claim names and meanings, which are product-specific reference details. |
 | [Monitor Azure Attestation](https://learn.microsoft.com/en-us/azure/attestation/monitor-logs) | configuration | 0.65 | Monitoring article for a specific service typically lists metrics, log categories, and example queries; these are configuration/usage details for monitoring rather than generic concepts. |

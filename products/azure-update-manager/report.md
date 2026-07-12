@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-28'
+generated_at: '2026-07-12'
 category_descriptions:
   deployment: 'Deploying and managing Automanage/Update Manager at scale: onboarding
     VMs and Arc servers, moving/repairing configs across regions/tenants, policies,
@@ -46,8 +46,8 @@ confusable_not_for: Not for Azure Automation (use azure-automation), Azure Polic
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 84
+- **Updated Pages**: 1
+- **Unchanged**: 83
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-update-manager/azure-update-manager.csv`
 
@@ -66,6 +66,11 @@ confusable_not_for: Not for Azure Automation (use azure-automation), Azure Polic
 | *(Unclassified)* | 30 | 35.7% |
 
 ## Changes
+
+### Updated Pages
+
+- [Overview](https://learn.microsoft.com/en-us/azure/azure-change-tracking-inventory/overview-monitoring-agent)
+  - Updated: 2026-06-23T11:39:00.000Z → 2026-07-08T11:40:00.000Z
 
 ## Classified Pages
 
@@ -159,4 +164,4 @@ confusable_not_for: Not for Azure Automation (use azure-automation), Azure Polic
 | [Enable Azure Change Tracking and Inventory](https://learn.microsoft.com/en-us/azure/azure-change-tracking-inventory/quickstart-monitor-changes-collect-inventory-azure-change-tracking-inventory) | 0.20 | Quickstart focused on enabling Change Tracking and Inventory via the Azure portal; primarily step-by-step UI instructions without detailed configuration parameter tables, limits, error codes, or product-specific best-practice guidance. Does not meet thresholds for limits, configuration, troubleshooting, or other expert sub-skill types. |
 | [Enable on VMs in the Azure portal](https://learn.microsoft.com/en-us/azure/automanage/quick-create-virtual-machines-portal) | 0.20 | Quickstart for enabling Automanage via portal; mostly step-by-step UI instructions without deep configuration matrices or limits. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/automanage/faq) | 0.20 | FAQ page description suggests general Q&A and support guidance without clear indication of numeric limits, configuration tables, error-code mappings, or other product-specific expert details as defined by the sub-skill types. |
-| [Overview](https://learn.microsoft.com/en-us/azure/azure-change-tracking-inventory/overview-monitoring-agent) | 0.10 | Page is described as an overview of Azure Change Tracking and Inventory using Azure Monitor Agent, focusing on features and benefits without indicating specific limits, configuration tables, error codes, or other detailed expert-only data. |
+| [Overview](https://learn.microsoft.com/en-us/azure/azure-change-tracking-inventory/overview-monitoring-agent) | 0.20 | Page is an overview of Azure Change Tracking and Inventory using Azure Monitor Agent, describing capabilities and high-level usage. The summary does not indicate presence of specific limits, configuration parameter tables, error codes, or detailed troubleshooting/decision matrices. Aside from a version recommendation for the Change Tracking extension (2.20.0.0 or later), it lacks the kind of product-specific numeric limits, settings, or diagnostic mappings required for expert-knowledge classification. |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-28'
+generated_at: '2026-07-12'
 category_descriptions:
   limits-quotas: 'Limits and design guidance for Virtual WAN: P2S client pool sizing,
     hub routing/throughput caps, and using Private Link endpoints within scale and
@@ -10,9 +10,9 @@ category_descriptions:
   decision-making: 'Guidance on planning and choosing Virtual WAN designs: NVAs in
     hubs, VPN client migrations, upgrading Basic→Standard, and selecting partners
     and hub locations.'
-  configuration: Configuring Azure Virtual WAN hubs, routing, BGP/NVA integration,
-    VPN (P2S/Always On), IPsec/NAT, Entra ID auth, certificates, client profiles,
-    and monitoring/logging.
+  configuration: Configuring Virtual WAN hubs, routing, BGP/NAT/IPsec, NVAs/Firewalls,
+    and P2S/Always On VPN (certs, Entra ID, client profiles, user groups, IP pools)
+    plus monitoring and path selection.
   troubleshooting: Diagnosing and fixing Virtual WAN issues, including P2S VPN client
     prerequisite checks, connectivity problems, and using built-in tools and diagnostics
     for troubleshooting.
@@ -25,17 +25,17 @@ category_descriptions:
     ID (MFA, OpenVPN, custom app IDs), Azure VPN Client setup/migration, and hub roles/permissions.
 skill_description: Expert knowledge for Azure Virtual WAN development including troubleshooting,
   decision making, architecture & design patterns, limits & quotas, security, configuration,
-  integrations & coding patterns, and deployment. Use when designing Virtual WAN hubs,
-  P2S VPN, hub routing/BGP, NVAs/SD‑WAN, or ExpressRoute/Private Link integration,
-  and other Azure Virtual WAN related development tasks. Not for Azure Virtual Network
-  (use azure-virtual-network), Azure VPN Gateway (use azure-vpn-gateway), Azure ExpressRoute
-  (use azure-expressroute), Azure Traffic Manager (use azure-traffic-manager).
-use_when: Use when designing Virtual WAN hubs, P2S VPN, hub routing/BGP, NVAs/SD‑WAN,
-  or ExpressRoute/Private Link integration, and other Azure Virtual WAN related development
+  integrations & coding patterns, and deployment. Use when designing VWAN hubs, P2S/Always
+  On VPN, BGP/IPsec routing, NVAs/firewalls, or ExpressRoute/SD-WAN integration, and
+  other Azure Virtual WAN related development tasks. Not for Azure Virtual Network
+  (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager),
+  Azure VPN Gateway (use azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute).
+use_when: Use when designing VWAN hubs, P2S/Always On VPN, BGP/IPsec routing, NVAs/firewalls,
+  or ExpressRoute/SD-WAN integration, and other Azure Virtual WAN related development
   tasks.
 confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), Azure
-  VPN Gateway (use azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute),
-  Azure Traffic Manager (use azure-traffic-manager).
+  Virtual Network Manager (use azure-virtual-network-manager), Azure VPN Gateway (use
+  azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute).
 ---
 # Azure Virtual WAN Crawl Report
 
@@ -49,8 +49,8 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 138
+- **Updated Pages**: 1
+- **Unchanged**: 137
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-wan/azure-virtual-wan.csv`
 
@@ -69,6 +69,11 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | *(Unclassified)* | 42 | 30.4% |
 
 ## Changes
+
+### Updated Pages
+
+- [Monitoring data reference](https://learn.microsoft.com/en-us/azure/virtual-wan/monitor-virtual-wan-reference)
+  - Updated: 2024-11-01T22:03:00.000Z → 2026-07-01T23:48:00.000Z
 
 ## Classified Pages
 
@@ -133,7 +138,7 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Linux - strongSwan](https://learn.microsoft.com/en-us/azure/virtual-wan/point-to-site-certificates-linux-strongswan) | configuration | 0.70 | Shows strongSwan CLI commands and options to generate certificates for Virtual WAN P2S; these are detailed configuration steps tied to the product. |
 | [Manage IP configurations for NVAs](https://learn.microsoft.com/en-us/azure/virtual-wan/how-to-network-virtual-appliance-add-ip-configurations) | configuration | 0.70 | Managing IP configurations for integrated NVAs in a Virtual WAN hub is product-specific; likely includes IP config object names, constraints, and behaviors not generally known. |
 | [Migrate from the Azure VPN Client for Linux](https://learn.microsoft.com/en-us/azure/virtual-wan/azure-vpn-client-linux-retirement) | decision-making | 0.70 | Retirement and migration guide content typically includes concrete timelines, supported/unsupported paths, and specific replacement options, helping users decide which alternative clients and configurations to adopt; this is product- and date-specific expert knowledge not inferable from training. |
-| [Monitoring data reference](https://learn.microsoft.com/en-us/azure/virtual-wan/monitor-virtual-wan-reference) | configuration | 0.70 | A monitoring data reference article typically lists specific metric names, dimensions, log table schemas, and possibly default aggregation or retention details—product-specific configuration/telemetry schema that qualifies as expert knowledge under configuration. |
+| [Monitoring data reference](https://learn.microsoft.com/en-us/azure/virtual-wan/monitor-virtual-wan-reference) | configuration | 0.70 | A monitoring data reference page for a specific Azure service typically lists all metrics, dimensions, log categories, and diagnostic settings with exact names, units, and sometimes default behaviors. These are product-specific configuration details (which metrics exist, how to configure diagnostic settings, what categories to enable) that an LLM is unlikely to know from training. This aligns best with the configuration sub-skill, as it serves as a catalog of monitoring-related configuration options rather than limits, architecture, or troubleshooting content. |
 | [Next hop IP support](https://learn.microsoft.com/en-us/azure/virtual-wan/next-hop-ip) | configuration | 0.70 | Explains next hop IP support, BGP peering behavior, and configuration between NVAs and the virtual hub router; product-specific routing configuration. |
 | [Roles and permissions](https://learn.microsoft.com/en-us/azure/virtual-wan/roles-permissions) | security | 0.70 | Describes required permissions on underlying resources for hub operations; likely includes specific RBAC roles and scopes. |
 | [Run Prerequisites Test](https://learn.microsoft.com/en-us/azure/virtual-wan/azure-vpn-client-prerequisites-check) | troubleshooting | 0.70 | Describes the Run Prerequisites Test feature, what it checks (specific Windows services, permissions, time sync) and how to mitigate failures—symptom-to-check mappings specific to Azure VPN Client. |

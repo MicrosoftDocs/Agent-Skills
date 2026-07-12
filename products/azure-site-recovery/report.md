@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Backup (use azure-backup), Azure Migrate (use 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 201
+- **Updated Pages**: 0
+- **Unchanged**: 202
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-site-recovery/azure-site-recovery.csv`
 
@@ -75,11 +75,6 @@ confusable_not_for: Not for Azure Backup (use azure-backup), Azure Migrate (use 
 | *(Unclassified)* | 72 | 35.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [Azure VM Disaster Recovery - High Churn Support](https://learn.microsoft.com/en-us/azure/site-recovery/concepts-azure-to-azure-high-churn-support)
-  - Updated: 2026-01-06T08:00:00.000Z → 2026-07-02T11:41:00.000Z
 
 ## Classified Pages
 

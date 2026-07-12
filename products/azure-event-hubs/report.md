@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-17'
+generated_at: '2026-07-12'
 category_descriptions:
   integrations: Patterns and code for integrating Event Hubs with .NET, Kafka (clients,
     Streams, Connect, Debezium), Flink, Spark, Akka, schema/JSON registry, and adding
@@ -7,8 +7,8 @@ category_descriptions:
   troubleshooting: 'Diagnosing and fixing Event Hubs runtime issues: Kafka/AMQP errors,
     .NET/legacy exceptions, ARM failures, auth problems, connectivity, and Blob Storage
     checkpoint store errors.'
-  decision-making: Guidance on migrating from Kafka, selecting the right Event Hubs
-    tier, and deciding when/how to use Auto Inflate for scaling and cost optimization
+  decision-making: Guidance on choosing Event Hubs tiers, auto-inflate settings, geo-replication
+    modes, and planning migrations from Apache Kafka to Event Hubs.
   security: 'Securing Event Hubs: auth (Entra ID, SAS, RBAC, managed identity), encryption
     and CMKs, network isolation (VNet, NSG, Private Link, NSP), TLS settings, and
     compliance/governance via Azure Policy.'
@@ -30,13 +30,13 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Event Hubs development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  using Kafka clients/Streams, .NET SDK, Flink/Spark, geo-DR/replication, or Auto
-  Inflate scaling in Event Hubs, and other Azure Event Hubs related development tasks.
-  Not for Azure Service Bus (use azure-service-bus), Azure Event Grid (use azure-event-grid),
+  using Kafka clients/Streams, .NET SDK, geo-replication/DR, app groups throttling,
+  or Event Hubs emulator, and other Azure Event Hubs related development tasks. Not
+  for Azure Service Bus (use azure-service-bus), Azure Event Grid (use azure-event-grid),
   Azure Notification Hubs (use azure-notification-hubs), Azure Stream Analytics (use
   azure-stream-analytics).
-use_when: Use when using Kafka clients/Streams, .NET SDK, Flink/Spark, geo-DR/replication,
-  or Auto Inflate scaling in Event Hubs, and other Azure Event Hubs related development
+use_when: Use when using Kafka clients/Streams, .NET SDK, geo-replication/DR, app
+  groups throttling, or Event Hubs emulator, and other Azure Event Hubs related development
   tasks.
 confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Event
   Grid (use azure-event-grid), Azure Notification Hubs (use azure-notification-hubs),
@@ -49,13 +49,13 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 - **Total Pages**: 114
 - **Fetched**: 114
 - **Fetch Failed**: 0
-- **Classified**: 72
-- **Unclassified**: 42
+- **Classified**: 73
+- **Unclassified**: 41
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 114
+- **Updated Pages**: 1
+- **Unchanged**: 113
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-event-hubs/azure-event-hubs.csv`
 
@@ -66,15 +66,20 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 | architecture-patterns | 3 | 2.6% |
 | best-practices | 2 | 1.8% |
 | configuration | 10 | 8.8% |
-| decision-making | 3 | 2.6% |
+| decision-making | 4 | 3.5% |
 | deployment | 4 | 3.5% |
 | integrations | 14 | 12.3% |
 | limits-quotas | 3 | 2.6% |
 | security | 24 | 21.1% |
 | troubleshooting | 9 | 7.9% |
-| *(Unclassified)* | 42 | 36.8% |
+| *(Unclassified)* | 41 | 36.0% |
 
 ## Changes
+
+### Updated Pages
+
+- [Geo-replication](https://learn.microsoft.com/en-us/azure/event-hubs/geo-replication)
+  - Updated: 2026-05-05T06:13:00.000Z → 2026-07-11T05:10:00.000Z
 
 ## Classified Pages
 
@@ -139,6 +144,7 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 | [Using Apache Kafka Mirror Maker 1](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-kafka-mirror-maker-tutorial) | deployment | 0.70 | Shows how to configure MirrorMaker 1 to mirror Kafka into Event Hubs; includes product-specific deployment and configuration details. |
 | [Using Apache Kafka Mirror Maker 2](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-kafka-mirrormaker-2-tutorial) | deployment | 0.70 | Tutorial for using MirrorMaker 2 with Event Hubs; includes concrete configuration parameters and constraints for this replication deployment. |
 | [Confidential computing](https://learn.microsoft.com/en-us/azure/event-hubs/confidential-computing) | security | 0.68 | Page is focused on configuring confidential computing for Event Hubs Dedicated namespaces, which is a product-specific security feature. It likely includes concrete enablement steps, specific configuration options, and constraints tied to this capability (for example, which SKUs support it, how to turn it on, and any required settings). This is security-focused configuration rather than a generic overview, so it best fits the security sub-skill. |
+| [Geo-replication](https://learn.microsoft.com/en-us/azure/event-hubs/geo-replication) | decision-making | 0.68 | The page compares synchronous vs asynchronous geo-replication modes for Event Hubs, explains trade-offs (for example, data loss risk vs latency/throughput), and provides guidance on when to use each mode and how to manage secondary regions. This is product-specific decision guidance rather than just conceptual replication theory, so it fits the decision-making sub-skill. |
 | [Add custom data to events](https://learn.microsoft.com/en-us/azure/event-hubs/add-custom-data-event) | integrations | 0.65 | Explains how to attach key-value metadata to EventData objects and how consumers use it; includes product-specific event structure and coding patterns. |
 | [Application groups](https://learn.microsoft.com/en-us/azure/event-hubs/resource-governance-overview) | limits-quotas | 0.65 | Resource governance with application groups implies applying quotas and access policies per group; this page likely includes group-level quota settings and constraints specific to Premium/Dedicated tiers. |
 | [Client-side schema enforcement](https://learn.microsoft.com/en-us/azure/event-hubs/schema-registry-client-side-enforcement) | integrations | 0.65 | Describes concrete client-side validation/serialization patterns against Schema Registry when producing/consuming events; includes product-specific usage details beyond generic concepts. |
@@ -180,7 +186,6 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 | [ARM template](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-resource-manager-namespace-event-hub) | 0.30 | ARM template quickstart for creating an event hub; deployment tutorial without tier matrices or detailed constraints. |
 | [Bicep](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-bicep-namespace-event-hub) | 0.30 | Bicep quickstart to create namespace, event hub, and consumer group; shows one template example rather than full config reference. |
 | [Event processor](https://learn.microsoft.com/en-us/azure/event-hubs/event-processor-balance-partition-load) | 0.30 | Describes how Event Hubs partition load balancing works conceptually and via SDKs, but the summary does not indicate concrete numeric limits, configuration tables, or product-specific error codes or settings. Appears to be behavior/architecture explanation rather than expert configuration or limits. |
-| [Geo-replication](https://learn.microsoft.com/en-us/azure/event-hubs/geo-replication) | 0.30 | Explains geo-replication modes and high-level behavior. The summary does not show numeric thresholds, configuration parameter tables, or decision matrices with quantified trade-offs. Likely a conceptual/feature overview rather than detailed limits, configuration, or troubleshooting. |
 | [Kafka developer guide for Event Hubs](https://learn.microsoft.com/en-us/azure/event-hubs/apache-kafka-developer-guide) | 0.30 | High-level developer guide aggregating quickstarts and tutorials; mostly navigation/overview without deep config tables or error mappings. |
 | [Metadata only geo-disaster recovery](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-geo-dr) | 0.30 | Describes geo-disaster recovery as a feature and distinguishes it from geo-replication, but the summary suggests a conceptual overview of metadata replication and failover, without specific configuration parameters, limits, or error-code-based troubleshooting. |
 | [Multi-site and multi-region federation](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-federation-overview) | 0.30 | High-level federation overview; patterns and rationale but no quantified thresholds, decision matrices, or detailed configs. |

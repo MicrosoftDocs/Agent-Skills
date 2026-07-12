@@ -1,16 +1,15 @@
 ---
-generated_at: '2026-06-21'
+generated_at: '2026-07-12'
 category_descriptions:
   configuration: 'Configuring Azure Managed Lustre clients and file systems: network/storage
     prerequisites, fstab auto-mounts, client install/upgrade, ARM/Bicep deployment,
     and monitoring/metrics with Azure Monitor.'
-  architecture-patterns: Designing Azure Managed Lustre for high availability, regional
-    redundancy, disaster recovery, and failover strategies across regions or zones
+  architecture-patterns: Designing resilient Azure Managed Lustre deployments, including
+    regional redundancy/failover strategies and tiered checkpoint architectures for
+    performance and data protection.
   integrations: Integrating Azure Managed Lustre with Blob Storage, Linux/AKS clients,
     Terraform, and AzCopy, including import/export pipelines, auto-sync, and CSI driver-based
     Kubernetes usage.
-  deployment: Guidance on planning and choosing Azure Managed Lustre client installation
-    methods, including supported client types, prerequisites, and deployment considerations.
   security: 'Securing Azure Managed Lustre: secure boot, firewalls/NSGs, CMK encryption,
     root squash access controls, and virtual network encryption configuration and
     validation.'
@@ -25,17 +24,16 @@ category_descriptions:
     and tuning/optimization steps.
 skill_description: Expert knowledge for Azure Managed Lustre development including
   troubleshooting, best practices, architecture & design patterns, limits & quotas,
-  security, configuration, integrations & coding patterns, and deployment. Use when
-  mounting AML clients, linking Blob, using CSI on AKS, setting quotas, or tuning
-  Lustre performance, and other Azure Managed Lustre related development tasks. Not
-  for Azure HPC Cache (use azure-hpc-cache), Azure NetApp Files (use azure-netapp-files),
-  Azure Blob Storage (use azure-blob-storage), Azure Elastic SAN (use azure-elastic-san).
-use_when: Use when mounting AML clients, linking Blob, using CSI on AKS, setting quotas,
-  or tuning Lustre performance, and other Azure Managed Lustre related development
+  security, configuration, and integrations & coding patterns. Use when mounting AML
+  to Linux/AKS, using Blob integration, quotas, CMK encryption, or Azure Monitor metrics,
+  and other Azure Managed Lustre related development tasks. Not for Azure HPC Cache
+  (use azure-hpc-cache), Azure NetApp Files (use azure-netapp-files), Azure Elastic
+  SAN (use azure-elastic-san).
+use_when: Use when mounting AML to Linux/AKS, using Blob integration, quotas, CMK
+  encryption, or Azure Monitor metrics, and other Azure Managed Lustre related development
   tasks.
 confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure NetApp Files
-  (use azure-netapp-files), Azure Blob Storage (use azure-blob-storage), Azure Elastic
-  SAN (use azure-elastic-san).
+  (use azure-netapp-files), Azure Elastic SAN (use azure-elastic-san).
 ---
 # Azure Managed Lustre Crawl Report
 
@@ -48,20 +46,19 @@ confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure NetApp 
 - **Unclassified**: 4
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
-- **Unchanged**: 31
-- **Deleted Pages**: 0
+- **Unchanged**: 30
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-managed-lustre/azure-managed-lustre.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 1 | 3.2% |
+| architecture-patterns | 2 | 6.5% |
 | best-practices | 2 | 6.5% |
 | configuration | 5 | 16.1% |
-| deployment | 1 | 3.2% |
 | integrations | 9 | 29.0% |
 | limits-quotas | 1 | 3.2% |
 | security | 6 | 19.4% |
@@ -69,6 +66,14 @@ confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure NetApp 
 | *(Unclassified)* | 4 | 12.9% |
 
 ## Changes
+
+### New Pages
+
+- [Tiered checkpoints for AI training](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/tiered-checkpoints)
+
+### Deleted Pages
+
+- ~~Plan your client install~~ (https://learn.microsoft.com/en-us/azure/azure-managed-lustre/client-install-plan)
 
 ## Classified Pages
 
@@ -91,7 +96,7 @@ confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure NetApp 
 | [Migrate data from on-premises POSIX file systems](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/migrate-data-from-linux) | integrations | 0.70 | The migration article describes a concrete integration pattern between on-premises POSIX file systems, Azure Blob Storage, and Azure Managed Lustre using AzCopy. Such guidance typically includes AzCopy command parameters, flags to preserve POSIX properties, container and path conventions, and service-specific options, which are product-specific integration and coding patterns rather than generic tutorial content. |
 | [Monitor a file system](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/monitor-file-system) | configuration | 0.70 | Describes which metrics/logs are emitted and how to configure collection and alerts; includes product-specific monitoring configuration steps. |
 | [Optimize file and directory layouts](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/optimize-file-layouts) | best-practices | 0.70 | Focuses on scaling file/directory layouts for performance; likely includes concrete recommendations (stripe counts, directory structures) specific to this product. |
-| [Plan your client install](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/client-install-plan) | deployment | 0.70 | The page includes a support matrix for distributions, architectures, and kernels, and guides choosing between prebuilt kmod and DKMS methods based on environment and Secure Boot requirements. This is product-specific deployment/installation decision guidance with matrix-style constraints, fitting deployment best. |
+| [Tiered checkpoints for AI training](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/tiered-checkpoints) | architecture-patterns | 0.70 | The article explains when to use a tiered checkpointing architecture for large-scale AI training, how Azure Managed Lustre and Azure Blob Storage are combined into Accelerator and Core Storage layers, and what performance characteristics to expect. This is product-specific architectural guidance for AI training workloads rather than a generic overview, matching the architecture-patterns sub-skill. |
 | [Use Azure Blob Storage with Azure Managed Lustre](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/blob-integration) | integrations | 0.70 | Explains blob integration requirements and configuration for containers and file systems; includes product-specific parameters and behaviors for this integration. |
 | [Use Azure Firewall with Azure Managed Lustre](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/configure-firewall) | security | 0.70 | Provides firewall rule and topology guidance specific to Managed Lustre traffic patterns, which are product-specific security/network configuration practices. |
 | [Connect client to the file system](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/connect-clients) | integrations | 0.65 | Explains how to prepare Linux clients and mount the Azure Managed Lustre file system, likely including mount options and parameters specific to this service, which are integration patterns between clients and AML. |

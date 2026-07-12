@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-05'
+generated_at: '2026-07-12'
 category_descriptions:
   security: 'Securing Automation accounts: identities (system/user-assigned), RBAC,
     auth methods, encryption, certificates/credentials, Private Link, Azure Policy,
@@ -74,8 +74,8 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 
 ### Updated Pages
 
-- [Update runbook from PowerShell 7.1 to PowerShell 7.4](https://learn.microsoft.com/en-us/azure/automation/quickstart-update-runbook-in-runtime-environment)
-  - Updated: 2025-06-27T22:11:00.000Z → 2026-06-29T17:15:00.000Z
+- [About Change tracking and inventory](https://learn.microsoft.com/en-us/azure/azure-change-tracking-inventory/overview-monitoring-agent)
+  - Updated: 2026-06-23T11:39:00.000Z → 2026-07-08T11:40:00.000Z
 
 ## Classified Pages
 
@@ -194,7 +194,7 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 | [Retirements](https://learn.microsoft.com/en-us/azure/automation/automation-runtime-retirement-policy) | 0.30 | Describes lifecycle and retirement policy conceptually for Azure Automation language runtimes. While policy details may be specific, the description suggests process and phases rather than numeric limits, configuration tables, or decision matrices with quantified criteria. |
 | [Use Automation extension for Visual Studio Code](https://learn.microsoft.com/en-us/azure/automation/how-to/runbook-authoring-extension-for-vscode) | 0.30 | Explains using VS Code extension to author runbooks; mostly tooling workflow, not configuration matrices, limits, or product-specific troubleshooting. |
 | [Use existing runbooks and modules](https://learn.microsoft.com/en-us/azure/automation/automation-runbook-gallery) | 0.30 | High-level guidance on using runbooks/modules from galleries; summary does not indicate detailed configuration tables, limits, or product-specific error mappings. |
-| [About Change tracking and inventory](https://learn.microsoft.com/en-us/azure/azure-change-tracking-inventory/overview-monitoring-agent) | 0.20 | Page is described as an overview of Azure Change Tracking and Inventory using Azure Monitor Agent, focusing on features and benefits. No indication of numeric limits, configuration parameter tables, error-code-based troubleshooting, or other detailed expert content. |
+| [About Change tracking and inventory](https://learn.microsoft.com/en-us/azure/azure-change-tracking-inventory/overview-monitoring-agent) | 0.20 | Page is an overview of Azure Change Tracking and Inventory using Azure Monitor Agent, describing capabilities and high-level usage. The summary does not indicate presence of specific limits, configuration parameter tables, error codes, or detailed troubleshooting/decision matrices. Aside from a version recommendation for the Change Tracking extension (2.20.0.0 or later), it lacks the kind of product-specific numeric limits, settings, or diagnostic mappings required for expert-knowledge classification. |
 | [Archive for What's new](https://learn.microsoft.com/en-us/azure/automation/whats-new-archive) | 0.20 | Archive of release notes; summary indicates high-level update listing without specific limits, configs, error codes, or decision matrices. |
 | [Create Automation account - Azure portal](https://learn.microsoft.com/en-us/azure/automation/quickstarts/create-azure-automation-account-portal) | 0.20 | Quickstart for creating an Automation account via portal; step-by-step tutorial without config matrices or limits. |
 | [Overview](https://learn.microsoft.com/en-us/azure/automation/automation-dsc-overview) | 0.20 | Described as an overview of Azure Automation State Configuration; overviews are primarily conceptual and retirement notice–style content, not detailed configuration tables, error mappings, or limits. |

@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-07-05'
+generated_at: '2026-07-12'
 category_descriptions:
   scenarios: 'End-to-end adoption patterns for AI agents, AKS, RHEL, ARO, AVD, Citrix,
     AVS, Oracle, SAP: landing zones, identity, networking, security, BCDR, automation,
     governance, and operations.'
-  adoption-patterns: Patterns and step-by-step guides for planning, migrating, modernizing,
-    and operating workloads on Azure (apps, data, AI agents, AVD, SAP, Oracle, VMware)
-    using CAF best practices.
+  adoption-patterns: Patterns and step-by-step guidance for planning, migrating, modernizing,
+    and operating Azure workloads (AI agents, cloud-native apps, AVD, VMware, Oracle,
+    SAP) safely and efficiently
   strategy: 'High-level cloud and AI strategy: defining business goals, executive
     alignment, unified data/ops, workload-specific plans (SAP, Oracle, AVD, VMware),
     and cost, resiliency, security, and sustainability objectives.'
@@ -31,11 +31,11 @@ category_descriptions:
 skill_description: Expert guidance for planning and executing cloud adoption using
   Azure Cloud Adoption Framework. Covers strategy, planning, readiness & landing zones,
   adoption patterns, governance, security, operations & management, organization &
-  teams, and adoption scenarios. Use when designing Azure landing zones, AKS, AVD/AVS,
-  SAP/Oracle workloads, or AI agent platforms, and other Azure Cloud Adoption Framework
+  teams, and adoption scenarios. Use when adopting AKS/Arc, AVS/VMware, SAP/Oracle,
+  AVD/Citrix, or AI agent workloads on Azure, and other Azure Cloud Adoption Framework
   related development tasks.
-use_when: Use when designing Azure landing zones, AKS, AVD/AVS, SAP/Oracle workloads,
-  or AI agent platforms, and other Azure Cloud Adoption Framework related development
+use_when: Use when adopting AKS/Arc, AVS/VMware, SAP/Oracle, AVD/Citrix, or AI agent
+  workloads on Azure, and other Azure Cloud Adoption Framework related development
   tasks.
 ---
 # Azure Cloud Adoption Framework Crawl Report
@@ -49,9 +49,9 @@ use_when: Use when designing Azure landing zones, AKS, AVD/AVS, SAP/Oracle workl
 - **Unclassified**: 9
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 0
-- **Unchanged**: 327
+- **New Pages**: 0
+- **Updated Pages**: 2
+- **Unchanged**: 326
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cloud-adoption-framework/azure-cloud-adoption-framework.csv`
 
@@ -72,9 +72,12 @@ use_when: Use when designing Azure landing zones, AKS, AVD/AVS, SAP/Oracle workl
 
 ## Changes
 
-### New Pages
+### Updated Pages
 
-- [Why Azure?](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/why-azure)
+- [What's new](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/whats-new)
+  - Updated: 2026-04-09T18:03:00.000Z → 2026-07-06T20:03:00.000Z
+- [Modernization guides](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/modernize/modernization-cloud-replatform-refactor-rearchitect)
+  - Updated: 2026-02-09T23:02:00.000Z → 2026-07-06T15:03:00.000Z
 
 ## Classified Pages
 
@@ -328,6 +331,7 @@ use_when: Use when designing Azure landing zones, AKS, AVD/AVS, SAP/Oracle workl
 | [Govern your portfolio](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/govern) | governance | 0.78 | Shows how to apply CAF governance disciplines and tooling specifically to AVD deployments, including policy and control extensions beyond generic governance concepts. |
 | [Landing zone regions](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/considerations/regions) | readiness | 0.78 | Explains how landing zones use regions, how to add/move regions, and when to use multi-region deployments for HA/DR—expert regional architecture and readiness guidance. |
 | [Managing organization alignment](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/organize/) | organization | 0.78 | Provides concrete, stepwise guidance for defining and maintaining cloud-focused organizational structures and operating models, including specific role groupings and alignment practices that go beyond generic concepts. |
+| [Modernization guides](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/modernize/modernization-cloud-replatform-refactor-rearchitect) | adoption-patterns | 0.78 | The page organizes and links detailed guidance for three specific modernization strategies (replatform to PaaS, refactor application code, rearchitect to cloud-native). This is workload adoption methodology focused on how to execute modernization patterns rather than high-level concepts, aligning with adoption-patterns. It goes beyond generic overview by curating concrete implementation approaches and decision guidance for each pattern. |
 | [Overview](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/considerations/security-considerations-overview) | security | 0.78 | Summarizes critical security areas (access, agents, workstations, scanning) for DevOps platforms used to deploy landing zones; this is expert DevOps security posture guidance. |
 | [Overview](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/) | strategy | 0.78 | Provides a prescriptive, stepwise strategy methodology that links executive intent to measurable outcomes, including how to define priorities, guardrails, and investment decisions—content that goes beyond generic concepts and into specific CAF strategy practices. |
 | [Plan for inbound and outbound internet connectivity](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/plan-for-inbound-and-outbound-internet-connectivity) | readiness | 0.78 | Details recommended models for inbound/outbound internet connectivity for Azure environments, which is part of network and landing zone design (readiness). |
@@ -384,7 +388,6 @@ use_when: Use when designing Azure landing zones, AKS, AVD/AVS, SAP/Oracle workl
 | [ISV considerations for landing zones](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/isv-landing-zone) | readiness | 0.70 | Provides ISV-specific considerations for landing zone architecture (multi-tenant, SaaS, scaling), which are specialized readiness patterns for that scenario. |
 | [IT fiefdoms and IT silos](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/organize/fiefdoms-silos) | organization | 0.70 | Discusses specific organizational antipatterns (silos, fiefdoms) that block cloud transformation and growth mindset, with guidance on organizational behavior and change. |
 | [Keep Azure landing zones up to date](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/keep-azure-landing-zone-up-to-date) | readiness | 0.70 | Gives specific practices and mechanisms to keep landing zones updated, avoid configuration drift, and adopt new platform features—expert landing zone lifecycle and readiness guidance. |
-| [Modernization guides](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/modernize/modernization-cloud-replatform-refactor-rearchitect) | adoption-patterns | 0.70 | Organizes and links detailed guidance for three concrete modernization strategies with Azure-specific patterns—expert pattern catalog beyond generic definitions of these terms. |
 | [Operational compliance](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/management-operational-compliance) | operations | 0.70 | Goes beyond overview to give concrete design considerations and recommendations for monitoring configuration drift and enforcing operational compliance at scale, which is expert operations/management guidance. |
 | [Overview](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/) | readiness | 0.70 | This page introduces CAF Ready and Azure landing zones as the recommended implementation of a platform landing zone, with prescriptive guidance on preparing a scalable, secure, and governed environment before workload deployment. That is expert, framework-specific knowledge about landing zone concepts and environment preparation, aligning with the readiness & landing zones sub-skill. |
 | [Overview](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/platform-automation-devops) | readiness | 0.70 | Design-area guidance on using infrastructure as code and DevOps to deploy and manage environments; this is foundational landing zone automation architecture, fitting readiness/landing zone setup. |
@@ -411,5 +414,5 @@ use_when: Use when designing Azure landing zones, AKS, AVD/AVS, SAP/Oracle workl
 | [Tools](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/resources/tools-templates) | 0.40 | Catalog of CAF tools and templates with high-level descriptions and links; does not itself contain detailed methodologies, decision trees, or implementation specifics beyond what an LLM would generally know. |
 | [Overview](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/resource-org) | 0.30 | High-level overview of the resource organization design area without deep implementation specifics; primarily conceptual framing. |
 | [What is the Cloud Adoption Framework?](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/overview) | 0.10 | High-level overview of the Microsoft Cloud Adoption Framework without deep implementation details, decision trees, or methodology-specific expert guidance; primarily conceptual and navigational content. |
-| [What's new](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/whats-new) | 0.10 | Page is a change log/updates overview for the Cloud Adoption Framework, summarizing new and deprecated content and navigation pointers. It does not itself contain deep implementation guidance, methodologies, or detailed frameworks that match any sub-skill detection hints. |
+| [What's new](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/whats-new) | 0.10 | Release notes and high-level update announcements for the Cloud Adoption Framework; does not provide detailed methodologies, architectures, or implementation guidance that match any sub-skill detection hints. |
 | [Why Azure?](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/why-azure) | - | High-level, marketing-style overview of Azure value and platform strengths for decision makers; does not include detailed methodologies, frameworks, or implementation guidance that match any CAF sub-skill detection hints. |

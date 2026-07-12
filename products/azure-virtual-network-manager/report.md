@@ -1,29 +1,29 @@
 ---
-generated_at: '2026-06-28'
+generated_at: '2026-07-12'
 category_descriptions:
-  configuration: 'Configuring AVNM: IPAM pools, network groups (static/dynamic via
-    Policy), cross-tenant connections, event logs, and managing UDRs/topologies and
-    reachability analysis.'
+  configuration: 'Configuring AVNM: IPAM pools, network groups, cross-tenant connections,
+    event logs, UDRs/hub-spoke routing, and reachability analysis with CLI, portal,
+    Bicep, and Azure Policy.'
   troubleshooting: Diagnosing and fixing common Azure Virtual Network Manager issues,
     including deployment/configuration errors and verifying that AVNM-applied network
     configurations work as intended.
-  security: Configuring and enforcing AVNM security admin rules to block or allow
-    traffic, protect high‑risk ports, simulate effects, and secure hub‑and‑spoke networks
-    using network groups and tools like portal/PowerShell.
+  security: Configuring and enforcing AVNM security admin rules to block or restrict
+    traffic (including high‑risk ports), using network groups, simulating rule impact,
+    and securing hub‑and‑spoke virtual networks.
   limits-quotas: IPAM features, supported regions, and key Azure Virtual Network Manager
     limits (scale, resources, configurations) that affect design and deployment decisions.
   integrations: Using Azure Resource Graph to query, filter, and report on Azure Virtual
     Network Manager resources, configurations, and deployments at scale across subscriptions
 skill_description: Expert knowledge for Azure Virtual Network Manager development
   including troubleshooting, limits & quotas, security, configuration, and integrations
-  & coding patterns. Use when managing IPAM pools, network groups, cross-tenant connectivity,
-  security admin rules, or ARG queries, and other Azure Virtual Network Manager related
-  development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure
-  Virtual WAN (use azure-virtual-wan), Azure Network Watcher (use azure-network-watcher),
+  & coding patterns. Use when managing IPAM pools, network groups, hub-spoke routing,
+  security admin rules, or Resource Graph queries, and other Azure Virtual Network
+  Manager related development tasks. Not for Azure Virtual Network (use azure-virtual-network),
+  Azure Virtual WAN (use azure-virtual-wan), Azure Network Watcher (use azure-network-watcher),
   Azure Networking (use azure-networking).
-use_when: Use when managing IPAM pools, network groups, cross-tenant connectivity,
-  security admin rules, or ARG queries, and other Azure Virtual Network Manager related
-  development tasks.
+use_when: Use when managing IPAM pools, network groups, hub-spoke routing, security
+  admin rules, or Resource Graph queries, and other Azure Virtual Network Manager
+  related development tasks.
 confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), Azure
   Virtual WAN (use azure-virtual-wan), Azure Network Watcher (use azure-network-watcher),
   Azure Networking (use azure-networking).
@@ -32,31 +32,57 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ## Summary
 
-- **Total Pages**: 54
-- **Fetched**: 54
+- **Total Pages**: 51
+- **Fetched**: 51
 - **Fetch Failed**: 0
 - **Classified**: 23
-- **Unclassified**: 31
+- **Unclassified**: 28
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 54
-- **Deleted Pages**: 0
+- **New Pages**: 1
+- **Updated Pages**: 6
+- **Unchanged**: 44
+- **Deleted Pages**: 4
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-network-manager/azure-virtual-network-manager.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| configuration | 10 | 18.5% |
-| integrations | 1 | 1.9% |
-| limits-quotas | 1 | 1.9% |
-| security | 9 | 16.7% |
-| troubleshooting | 2 | 3.7% |
-| *(Unclassified)* | 31 | 57.4% |
+| configuration | 10 | 19.6% |
+| integrations | 1 | 2.0% |
+| limits-quotas | 1 | 2.0% |
+| security | 9 | 17.6% |
+| troubleshooting | 2 | 3.9% |
+| *(Unclassified)* | 28 | 54.9% |
 
 ## Changes
+
+### New Pages
+
+- [Create mesh or hub-and-spoke topology](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-create-network-manager-topologies)
+
+### Updated Pages
+
+- [FAQ](https://learn.microsoft.com/en-us/azure/virtual-network-manager/faq)
+  - Updated: 2026-05-19T05:18:00.000Z → 2026-07-08T22:31:00.000Z
+- [Create Virtual Network Manager - Bicep](https://learn.microsoft.com/en-us/azure/virtual-network-manager/create-virtual-network-manager-bicep)
+  - Updated: 2025-04-09T08:00:00.000Z → 2026-07-08T17:13:00.000Z
+- [Configure cross-tenant connections - CLI](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-configure-cross-tenant-cli)
+  - Updated: 2024-10-15T08:00:00.000Z → 2026-07-08T22:31:00.000Z
+- [Network groups overview](https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-network-groups)
+  - Updated: 2024-06-10T22:06:00.000Z → 2026-07-08T22:31:00.000Z
+- [Connectivity configuration overview](https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-connectivity-configuration)
+  - Updated: 2026-05-26T17:35:00.000Z → 2026-07-08T08:00:00.000Z
+- [Protect high-risk network ports with security admin rules and exceptions](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-block-high-risk-ports)
+  - Updated: 2024-03-15T08:00:00.000Z → 2026-07-08T22:31:00.000Z
+
+### Deleted Pages
+
+- ~~Azure portal~~ (https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-create-hub-and-spoke)
+- ~~Azure PowerShell~~ (https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-create-hub-and-spoke-powershell)
+- ~~Azure portal~~ (https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-create-mesh-network)
+- ~~Azure PowerShell~~ (https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-create-mesh-network-powershell)
 
 ## Classified Pages
 
@@ -66,8 +92,9 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Common issues](https://learn.microsoft.com/en-us/azure/virtual-network-manager/common-issues) | troubleshooting | 0.86 | The page is explicitly a troubleshooting guide for Azure Virtual Network Manager, organized around common issues (configuration delays, connectivity errors, resource group creation failures) and their resolutions. This matches the troubleshooting pattern of symptom → cause → solution for a specific Azure service, which constitutes product-specific expert knowledge beyond generic debugging advice. |
 | [Automate IP address management](https://learn.microsoft.com/en-us/azure/virtual-network-manager/automate-ip-address-management-ipam-sample) | configuration | 0.70 | Provides a PowerShell script and describes IPAM pool usage; includes specific parameters, resource properties, and configuration patterns unique to AVNM IPAM. |
 | [Configure Event Logs for Azure Virtual Network Manager](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-configure-event-logs) | configuration | 0.70 | How-to for configuring event logs with Log Analytics and storage accounts; likely includes diagnostic setting names, categories, and destination parameters, which are product-specific configuration details. |
+| [Configure cross-tenant connections - CLI](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-configure-cross-tenant-cli) | configuration | 0.70 | Cross-tenant connection setup via CLI typically includes specific parameter names, required values, and scope/connection resource properties unique to Azure Virtual Network Manager. This is product-specific configuration detail (CLI commands, flags, resource fields) that goes beyond generic knowledge. |
 | [Define dynamic network group membership with Azure Policy](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-define-network-group-membership-azure-policy) | configuration | 0.70 | Shows how to build conditional expressions and parameters in Azure Policy for AVNM; includes concrete policy parameter names, operators, and configuration patterns. |
-| [Protect high-risk network ports with security admin rules and exceptions](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-block-high-risk-ports) | security | 0.70 | Scenario-driven security configuration including general block rules and exception rules; contains AVNM-specific security patterns and interactions with NSGs. |
+| [Protect high-risk network ports with security admin rules and exceptions](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-block-high-risk-ports) | security | 0.70 | The article walks through creating security admin rules and exception rules specific to Azure Virtual Network Manager and network security groups. This likely includes rule configuration fields (priorities, directions, protocols, port ranges, action values) and product-specific security behavior, which fits the security sub-skill with concrete configuration details. |
 | [Security admin rule overview](https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-security-admins) | security | 0.70 | Explains what security admin rules are and how they work; likely includes rule structure, fields (source, destination, ports, protocols), and evaluation behavior specific to AVNM. |
 | [Using network groups as source and destination](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-create-security-admin-rule-network-group) | security | 0.70 | Portal how-to for creating security admin configurations and rules; includes specific rule fields (ports, protocols, directions) and deployment behavior unique to AVNM. |
 | [Verify resource reachability with Virtual Network Verifier](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-verify-reachability-with-virtual-network-verifier) | configuration | 0.70 | Step-by-step portal guide for verifier workspaces and reachability intents; likely defines specific workspace settings, intent parameters, and delegation options, which are product-specific configuration details. |
@@ -75,7 +102,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Azure Policy integration with network groups](https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-azure-policy-integration) | configuration | 0.65 | Describes configuring network groups via Azure Policy; likely includes specific policy definitions, parameters, and assignment settings unique to AVNM integration. |
 | [Block network traffic - Portal](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-block-network-traffic-portal) | security | 0.65 | Shows creating a rule to block RDP on port 3389; includes concrete security rule configuration steps and parameters specific to AVNM. |
 | [Block network traffic -PowerShell](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-block-network-traffic-powershell) | security | 0.65 | PowerShell-based configuration of security rules blocking ports 80 and 443; includes AVNM-specific cmdlets and parameters for security admin rules. |
-| [Configure cross-tenant connections - CLI](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-configure-cross-tenant-cli) | configuration | 0.65 | CLI-based cross-tenant setup; will include specific CLI commands, flags, and parameter names/values unique to AVNM cross-tenant configuration. |
 | [Configure cross-tenant connections - Portal](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-configure-cross-tenant-portal) | configuration | 0.65 | How-to for cross-tenant connections; likely includes specific portal fields, parameter names, and required values for establishing connections, which are product-specific configuration details. |
 | [Create a secured hub and spoke](https://learn.microsoft.com/en-us/azure/virtual-network-manager/tutorial-create-secured-hub-and-spoke) | security | 0.65 | Tutorial shows product-specific security admin configuration in Azure Virtual Network Manager (e.g., blocking outbound traffic on specific ports 80 and 443, securing hub-and-spoke topology). Contains concrete, service-specific security configuration steps rather than just conceptual guidance. |
 | [Create user-defined routes (UDRs)](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-create-user-defined-route) | configuration | 0.65 | How-to for deploying UDRs including network group, routing configuration, and rule collection; likely includes specific configuration fields and allowed values. |
@@ -92,12 +118,10 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 |-----------|------------|--------|
 | [Deployment overview](https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-deployments) | 0.50 | Explains how configuration deployments work and mentions best practices, but summary doesn’t show concrete numeric thresholds or detailed config tables; likely procedural/conceptual. |
 | [Remove or update network manager components](https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-remove-components-checklist) | 0.50 | Checklist for removing components; procedural steps but not clearly a configuration catalog, limits reference, or troubleshooting mapping from the summary. |
-| [Azure PowerShell](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-create-hub-and-spoke-powershell) | 0.45 | PowerShell how-to for hub-and-spoke; similar to other topology tutorials, focused on steps rather than exhaustive config or limits. |
-| [Azure PowerShell](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-create-mesh-network-powershell) | 0.45 | PowerShell mesh topology how-to; similar to other topology tutorials, primarily step-by-step commands. |
-| [Azure portal](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-create-mesh-network) | 0.45 | How-to for mesh topology; describes enabling global mesh but summary doesn’t show detailed config tables or numeric thresholds. |
 | [Deploy hub and spoke topology with Azure Firewall](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-deploy-hub-spoke-topology-with-azure-firewall) | 0.45 | Scenario tutorial integrating Azure Firewall with hub-and-spoke; integration-focused but framed as a walkthrough, not a parameter/limits reference. |
 | [Event Log Options for Azure Virtual Network Manager](https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-event-logs) | 0.45 | Conceptual overview of event log options; summary does not indicate detailed configuration parameters, role mappings, or error-code-based troubleshooting. |
 | [User-defined routes (UDRs) management overview](https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-user-defined-route) | 0.45 | Overview of UDR management and scenarios; conceptual explanation of behavior and benefits, not a detailed configuration or limits reference. |
+| [Create mesh or hub-and-spoke topology](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-create-network-manager-topologies) | 0.40 | Creating mesh or hub-and-spoke topologies via portal or PowerShell sounds like a how-to guide. The summary emphasizes choosing topology and following steps, not detailed configuration option tables, limits, or decision matrices with thresholds. |
 | [Cross-tenant connection support](https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-cross-tenant) | 0.40 | Conceptual overview of cross-tenant support; describes scenarios and benefits without detailed config tables or numeric thresholds. |
 | [Manage IP address pool association recommendations](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-ip-address-management-association-recommendations) | 0.40 | Covers recommendation feature usage for associating VNets to IPAM pools; summary indicates conceptual and UI-driven guidance, not detailed config tables, limits, or error-code troubleshooting. |
 | [Monitoring security admin rules with Virtual Network Flow Logs](https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-virtual-network-flow-logs) | 0.40 | Conceptual article on using flow logs to monitor security admin rules; summary suggests high-level monitoring explanation without detailed config tables or error-code mappings. |
@@ -105,19 +129,18 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Scope overview](https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-network-manager-scope) | 0.40 | Conceptual explanation of scopes and related concepts; no indication of numeric thresholds, decision matrices, or detailed config parameters. |
 | [Create Virtual Network Manager - ARM](https://learn.microsoft.com/en-us/azure/virtual-network-manager/create-virtual-network-manager-template) | 0.35 | ARM template quickstart; demonstrates deploying topologies with parameters, but framed as a getting-started example, not a comprehensive config/limits reference. |
 | [Create Virtual Network Manager - Terraform](https://learn.microsoft.com/en-us/azure/virtual-network-manager/create-virtual-network-manager-terraform) | 0.35 | Terraform quickstart; shows how to deploy a mesh topology, but summary indicates tutorial-style content rather than a full configuration reference. |
-| [Network groups overview](https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-network-groups) | 0.35 | Conceptual article on network groups and membership types; high-level behavior, not detailed configuration or limits. |
 | [Virtual Network Verifier overview](https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-virtual-network-verifier) | 0.35 | Conceptual 'what is network verifier' overview; summary focuses on purpose and scenarios, not on concrete configuration parameters, limits, or troubleshooting mappings. |
-| [Azure portal](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-create-hub-and-spoke) | 0.30 | Step-by-step portal tutorial for creating a hub-and-spoke topology; no evidence of numeric limits, configuration parameter tables, error codes, or product-specific best-practice gotchas. Primarily procedural guidance rather than expert-only reference data. |
 | [Configure Virtual WAN hub in Hub and Spoke Topology](https://learn.microsoft.com/en-us/azure/virtual-network-manager/configure-virtual-wan-hub-for-network-manager) | 0.30 | How-to guide for specifying a Virtual WAN hub as the hub in a topology; appears to be procedural configuration steps without detailed limits, decision matrices, or troubleshooting mappings. |
-| [Connectivity configuration overview](https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-connectivity-configuration) | 0.30 | Conceptual explanation of connectivity configurations (mesh and hub-and-spoke) and their use cases; no clear indication of numeric thresholds, decision matrices, or detailed configuration tables that would qualify as expert knowledge. |
+| [Connectivity configuration overview](https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-connectivity-configuration) | 0.30 | Connectivity configurations article is described as explaining features, use cases, and settings conceptually (mesh vs hub-and-spoke, high-scale groups, global mesh). The summary does not indicate numeric limits, decision matrices, or detailed configuration tables; it reads as a conceptual overview. |
 | [Create IP address pools with IPAM](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-manage-ip-addresses-network-manager) | 0.30 | The page appears to be a how-to guide for managing IP addresses and IPAM with Azure Virtual Network Manager (creating and assigning IP pools). The summary does not indicate detailed numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. It mainly describes availability and general capability, which is not expert-knowledge per the defined categories. |
-| [Create Virtual Network Manager - Bicep](https://learn.microsoft.com/en-us/azure/virtual-network-manager/create-virtual-network-manager-bicep) | 0.30 | Bicep quickstart; similar to other quickstarts, focused on basic deployment steps rather than detailed expert configuration or limits. |
+| [Create Virtual Network Manager - Bicep](https://learn.microsoft.com/en-us/azure/virtual-network-manager/create-virtual-network-manager-bicep) | 0.30 | Quickstart using Bicep to create a mesh topology is primarily a step-by-step tutorial. It likely shows example templates and commands but not comprehensive configuration tables, limits, or product-specific best-practice guidance with quantified impact. |
 | [Create Virtual Network Manager - CLI](https://learn.microsoft.com/en-us/azure/virtual-network-manager/create-virtual-network-manager-cli) | 0.30 | Quickstart using Azure CLI; focused on initial setup, not exhaustive configuration or numeric constraints. |
 | [Create Virtual Network Manager - PowerShell](https://learn.microsoft.com/en-us/azure/virtual-network-manager/create-virtual-network-manager-powershell) | 0.30 | Quickstart using PowerShell; primarily walkthrough commands and basic configuration, not a reference of expert-only parameters or limits. |
 | [Deploy cross-tenant IP address pools](https://learn.microsoft.com/en-us/azure/virtual-network-manager/deploy-cross-tenant-ip-address-management) | 0.30 | Cross-tenant IPAM deployment guide; appears to be procedural without explicit limits, RBAC role tables, or diagnostic error mappings required for expert-knowledge classification. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/virtual-network-manager/faq) | 0.30 | FAQ page likely mixes conceptual and high-level Q&A; without clear evidence of detailed numeric limits, configuration tables, or error-code-based troubleshooting, it does not meet the strict criteria for any expert sub-skill type. |
+| [Network groups overview](https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-network-groups) | 0.30 | Concept article explaining what network groups are and static vs dynamic membership is primarily conceptual. It likely describes behavior and use cases, but not detailed configuration parameter tables, limits, or troubleshooting mappings. |
 | [Prevent overlapping IP address spaces with Azure Policy and IPAM](https://learn.microsoft.com/en-us/azure/virtual-network-manager/prevent-overlapping-ip-address-space-policy-ipam) | 0.30 | How-to/policy usage article for preventing overlapping IP spaces; summary shows no numeric limits, config tables, or error-code mappings. Likely procedural guidance without product-specific limits, configs, or troubleshooting matrices. |
 | [Common use cases for Azure Virtual Network Manager](https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-use-cases) | 0.20 | Use-case discussion for AVNM; scenario-focused, not detailed with numeric thresholds, configs, or troubleshooting mappings. |
 | [Create Virtual Network Manager - Portal](https://learn.microsoft.com/en-us/azure/virtual-network-manager/create-virtual-network-manager-portal) | 0.20 | Quickstart/tutorial for creating a mesh topology in Azure Virtual Network Manager via the portal. It focuses on step-by-step deployment and verification, without detailed limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. Content is procedural rather than expert reference material. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/virtual-network-manager/faq) | 0.20 | FAQ pages are usually high-level Q&A without detailed limits, config tables, or error-code-based troubleshooting. The summary suggests conceptual explanations of Azure Virtual Network Manager, not specific numeric limits, configuration matrices, or error mappings. |
 | [IP address management overview](https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-ip-address-management) | 0.20 | Conceptual overview of IP address management in Azure Virtual Network Manager; no evidence of numeric limits, configuration parameter tables, error codes, or decision matrices with quantified trade-offs. |
 | [What is Azure Virtual Network Manager?](https://learn.microsoft.com/en-us/azure/virtual-network-manager/overview) | 0.20 | High-level overview of Azure Virtual Network Manager; conceptual description of capabilities without concrete limits, configs, or error details. |

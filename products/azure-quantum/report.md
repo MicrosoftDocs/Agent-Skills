@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-05'
+generated_at: '2026-07-12'
 category_descriptions:
   troubleshooting: 'Troubleshooting Azure Quantum provider issues: diagnosing job
     failures and support/escalation policies and limits for IonQ, Quantinuum, and
@@ -52,10 +52,10 @@ confusable_not_for: Not for Azure HDInsight (use azure-hdinsight), Azure Databri
 - **Unclassified**: 96
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 4
-- **Unchanged**: 130
-- **Deleted Pages**: 0
+- **New Pages**: 1
+- **Updated Pages**: 0
+- **Unchanged**: 135
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-quantum/azure-quantum.csv`
 
 ## Classification Statistics
@@ -77,19 +77,11 @@ confusable_not_for: Not for Azure HDInsight (use azure-hdinsight), Azure Databri
 
 ### New Pages
 
-- [Build noise models for neutral atom device simulations](https://learn.microsoft.com/en-us/azure/quantum/neutral-atom-noise-models)
-- [Learn quantum computing and Q# with the Katas](https://learn.microsoft.com/en-us/azure/quantum/katas-qdk-learning)
+- [QIR target profiles](https://learn.microsoft.com/en-us/azure/quantum/quantum-computing-target-profiles)
 
-### Updated Pages
+### Deleted Pages
 
-- [Types of target profiles](https://learn.microsoft.com/en-us/azure/quantum/quantum-computing-target-profiles)
-  - Updated: 2025-10-27T17:20:00.000Z → 2026-07-02T16:03:00.000Z
-- [Overview of QDK simulators](https://learn.microsoft.com/en-us/azure/quantum/simulators-overview-qdk)
-  - Updated: 2026-05-11T22:54:00.000Z → 2026-06-29T22:17:00.000Z
-- [Build noise models for simulations](https://learn.microsoft.com/en-us/azure/quantum/qdk-simulator-noise-models)
-  - Updated: 2026-05-22T18:34:00.000Z → 2026-06-29T22:17:00.000Z
-- [Neutral atom device simulation in the QDK](https://learn.microsoft.com/en-us/azure/quantum/overview-qdk-neutral-atom-simulator)
-  - Updated: 2026-05-22T18:34:00.000Z → 2026-06-29T22:17:00.000Z
+- ~~Types of target profiles~~ (https://learn.microsoft.com/en-us/azure/quantum/quantum-computing-target-profiles)
 
 ## Classified Pages
 
@@ -159,7 +151,6 @@ confusable_not_for: Not for Azure HDInsight (use azure-hdinsight), Azure Databri
 | [Submit a circuit with PennyLane](https://learn.microsoft.com/en-us/azure/quantum/quickstart-microsoft-pennylane) | 0.30 | Quickstart for submitting PennyLane circuits to Azure Quantum; primarily a tutorial flow without indication of detailed config matrices, limits, or specialized troubleshooting content. |
 | [T gates & T factories](https://learn.microsoft.com/en-us/azure/quantum/concepts-tfactories) | 0.30 | Describes T gates and T factories and mentions the resource estimator, but summary suggests high-level explanation rather than concrete config tables, limits, or decision guidance. |
 | [Type declarations](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/programstructure/typedeclarations) | 0.30 | Language reference for struct type declarations in Q#; describes syntax and behavior, which is core language knowledge rather than operational product configuration. |
-| [Types of target profiles](https://learn.microsoft.com/en-us/azure/quantum/quantum-computing-target-profiles) | 0.30 | Page is described as an overview of QIR target profiles without clear evidence of numeric limits, configuration tables, error-code-based troubleshooting, or detailed decision matrices; appears primarily conceptual rather than containing product-specific expert parameters or constraints. |
 | [Update the QDK](https://learn.microsoft.com/en-us/azure/quantum/install-update-qdk) | 0.30 | Update instructions for QDK; likely generic version update steps without detailed configuration matrices or limits. |
 | [Visual Studio Code agent mode](https://learn.microsoft.com/en-us/azure/quantum/qdk-vscode-agent-setup) | 0.30 | How-to guide for setting up agent mode in VS Code; appears to be a usage/tutorial page without detailed configuration parameter tables, limits, or error-code-based troubleshooting. |
 | [Welcome to QDK for chemistry](https://learn.microsoft.com/en-us/azure/quantum/overview-qdk-chemistry) | 0.30 | High-level overview of QDK for chemistry; focuses on features and benefits, not detailed configuration or troubleshooting. |
@@ -236,3 +227,4 @@ confusable_not_for: Not for Azure HDInsight (use azure-hdinsight), Azure Databri
 | [What is quantum computing?](https://learn.microsoft.com/en-us/azure/quantum/overview-understanding-quantum-computing) | 0.10 | Conceptual explanation of quantum computing principles; no product-specific expert configuration or limits. |
 | [Contributing to the Microsoft Quantum Development Kit](https://learn.microsoft.com/en-us/azure/quantum/contributing-overview) | 0.05 | Community contribution overview for the Quantum Development Kit; process/participation guidance, not technical expert knowledge per defined categories. |
 | [Further reading](https://learn.microsoft.com/en-us/azure/quantum/further-reading-qdk) | 0.05 | Curated list of external learning resources; navigation/reference content without product-specific limits, configuration, or troubleshooting details. |
+| [QIR target profiles](https://learn.microsoft.com/en-us/azure/quantum/quantum-computing-target-profiles) | - | Appears to be an overview of QIR target profiles and hardware capabilities without detailed numeric limits, configuration tables, error codes, or decision matrices; no clear product-specific expert configuration, limits, or troubleshooting content is evident from the summary. |

@@ -3,7 +3,7 @@ name: azure-firmware-analysis
 description: Expert knowledge for Azure Firmware Analysis development including best practices, security, integrations & coding patterns, and deployment. Use when configuring RBAC access, deploying workspaces via ARM/Bicep/Terraform, or automating firmware uploads via CLI/PowerShell/Python, and other Azure Firmware Analysis related development tasks. Not for Azure Defender For Iot (use azure-defender-for-iot), Azure IoT Edge (use azure-iot-edge), Azure IoT Hub (use azure-iot-hub), Azure Confidential Computing (use azure-confidential-computing).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-07"
+  generated_at: "2026-07-12"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Firmware Analysis Skill

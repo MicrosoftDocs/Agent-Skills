@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-05'
+generated_at: '2026-07-12'
 category_descriptions:
   configuration: 'Configuring and tuning HDInsight clusters: networking/VPN, Ambari/Hive/Spark/HBase
     settings, autoscale, monitoring/logging, SSH/Jupyter/VS Code access, and script-based
@@ -22,22 +22,23 @@ category_descriptions:
   security: 'Securing HDInsight clusters: identity and access (Entra, LDAP, Ranger,
     RBAC), network isolation (NSG, Private Link), TLS/encryption, Kafka/Hive/Spark
     security, and security best practices.'
-  decision-making: 'Planning and migration guidance for HDInsight: cluster sizing,
-    storage and VM selection, HBase/Kafka upgrades, version moves, and retiring or
-    reconfiguring existing deployments.'
+  decision-making: Planning HDInsight capacity, networking, storage, and VM sizes,
+    plus detailed migration/upgrade paths for Hadoop, HBase, Kafka, Ambari, and HDInsight
+    versions and load balancers.
   limits-quotas: HDInsight capacity limits, node configs, Kafka-specific limits, metastore
     constraints, log sizing/retention, and how to request/manage CPU core quota increases.
 skill_description: Expert knowledge for Azure HDInsight development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building Hive/Spark/Kafka/HBase jobs, tuning clusters, securing access, or integrating
-  SQL, Cosmos DB, or Synapse, and other Azure HDInsight related development tasks.
-  Not for Azure Databricks (use azure-databricks), Azure Synapse Analytics (use azure-synapse-analytics).
-use_when: Use when building Hive/Spark/Kafka/HBase jobs, tuning clusters, securing
-  access, or integrating SQL, Cosmos DB, or Synapse, and other Azure HDInsight related
-  development tasks.
+  working with HDInsight Spark/Hive/Kafka/HBase clusters, Ambari/Oozie pipelines,
+  or Azure-integrated storage/BI, and other Azure HDInsight related development tasks.
+  Not for Azure Databricks (use azure-databricks), Azure Synapse Analytics (use azure-synapse-analytics),
+  Azure Stream Analytics (use azure-stream-analytics).
+use_when: Use when working with HDInsight Spark/Hive/Kafka/HBase clusters, Ambari/Oozie
+  pipelines, or Azure-integrated storage/BI, and other Azure HDInsight related development
+  tasks.
 confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synapse
-  Analytics (use azure-synapse-analytics).
+  Analytics (use azure-synapse-analytics), Azure Stream Analytics (use azure-stream-analytics).
 ---
 # Azure HDInsight Crawl Report
 
@@ -51,8 +52,8 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 424
+- **Updated Pages**: 1
+- **Unchanged**: 425
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-hdinsight/azure-hdinsight.csv`
 
@@ -60,10 +61,10 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 12 | 2.8% |
+| architecture-patterns | 11 | 2.6% |
 | best-practices | 38 | 8.9% |
 | configuration | 53 | 12.4% |
-| decision-making | 21 | 4.9% |
+| decision-making | 22 | 5.2% |
 | deployment | 11 | 2.6% |
 | integrations | 64 | 15.0% |
 | limits-quotas | 6 | 1.4% |
@@ -75,10 +76,8 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 
 ### Updated Pages
 
-- [Release notes](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-release-notes)
-  - Updated: 2025-10-29T08:00:00.000Z → 2026-07-01T11:42:00.000Z
-- [Archived release notes for Azure HDInsight](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-release-notes-archive)
-  - Updated: 2025-10-28T08:00:00.000Z → 2026-06-29T08:00:00.000Z
+- [Plan VNETs for HDInsight](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-plan-virtual-network-deployment)
+  - Updated: 2026-05-08T06:13:00.000Z → 2026-05-08T08:00:00.000Z
 
 ## Classified Pages
 
@@ -358,7 +357,7 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 | [Use with Microsoft Cognitive Toolkit](https://learn.microsoft.com/en-us/azure/hdinsight/spark/apache-spark-microsoft-cognitive-toolkit) | integrations | 0.70 | Shows how to install CNTK via custom script on HDInsight and use it from PySpark against Blob Storage, including product-specific integration steps. |
 | [What is enterprise security in HDInsight?](https://learn.microsoft.com/en-us/azure/hdinsight/domain-joined/hdinsight-security-overview) | security | 0.70 | Security overview but HDInsight-specific, describing concrete security solution combinations and how they apply; includes product-specific security modes and components. |
 | [Create service endpoint policies](https://learn.microsoft.com/en-us/azure/hdinsight/service-endpoint-policies) | configuration | 0.68 | Describes how to implement service endpoint policies specifically for HDInsight VNets, including required service endpoints and policy configuration details. |
-| [Plan VNETs for HDInsight](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-plan-virtual-network-deployment) | architecture-patterns | 0.68 | The article focuses on planning and design decisions for placing HDInsight clusters in Azure Virtual Networks and connecting to other cloud/on-premises resources. It discusses design and implementation decisions specific to HDInsight VNet deployments, which are product-specific architecture guidance rather than generic networking concepts. |
+| [Plan VNETs for HDInsight](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-plan-virtual-network-deployment) | decision-making | 0.68 | The article focuses on planning and design decisions for placing HDInsight clusters in VNets and connecting to other resources. It discusses specific design and implementation choices unique to HDInsight VNet deployments (such as required management IPs and NSG considerations), helping users decide how to structure their network for different scenarios. This aligns best with decision-making guidance rather than generic networking concepts. |
 | [Accelerated Writes](https://learn.microsoft.com/en-us/azure/hdinsight/hbase/apache-hbase-accelerated-writes) | best-practices | 0.65 | Explains how to effectively use Accelerated Writes with Premium SSD for HBase WAL; likely includes concrete configuration and usage recommendations specific to HDInsight. |
 | [Ambari user configs migration](https://learn.microsoft.com/en-us/azure/hdinsight/migrate-ambari-recent-version-hdinsight) | decision-making | 0.65 | Provides a script-based process and manual steps to compare and migrate Ambari configs between versions; supports migration decisions and concrete upgrade path. |
 | [Apache Phoenix with Apache Zeppelin](https://learn.microsoft.com/en-us/azure/hdinsight/hbase/apache-hbase-phoenix-zeppelin) | integrations | 0.65 | Describes using Phoenix over HBase with Zeppelin; likely includes JDBC connection strings, configuration options, and query execution patterns specific to this integration. |

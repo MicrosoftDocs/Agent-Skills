@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-05'
+generated_at: '2026-07-12'
 category_descriptions:
   decision-making: 'Cost planning and design choices for Blob Storage: tiers, archive
     retrieval, networking, reserved capacity, migration tools, data protection, and
@@ -7,37 +7,34 @@ category_descriptions:
   configuration: Configuring monitoring, lifecycle, immutability, restore, networking,
     and client tools (BlobFuse, Storage Mover), plus third‑party backup/migration
     integrations for Azure Blob Storage.
-  security: 'Securing Blob Storage: RBAC/ABAC and Entra auth, SAS tokens, SFTP, Storage
-    Mover, ACLs, client-side and key-based encryption, and preventing/remediating
-    anonymous access.'
-  best-practices: 'Performance, cost, and reliability best practices for Blob/Data
-    Lake: access tiers, lifecycle, partitioning, concurrency, client tuning, NFS/SFTP,
-    retries, monitoring, and backup/migration guidance.'
-  limits-quotas: Limits, quotas, and performance/scalability behavior for Blob Storage
-    (tiers, archive/rehydration, NFS/SFTP, BlobFuse, Data Lake, static sites, replication)
-    and related known issues.
+  security: 'Securing Blob Storage access: RBAC/ABAC, Entra auth, SAS tokens, SFTP,
+    ACLs, private networking, Storage Mover, and encryption (CSE, scopes, keys, BlobFuse2).'
+  best-practices: 'Performance, reliability, and cost best practices for Blob/Data
+    Lake: access tiers, client tuning, concurrency, lifecycle, NFS/SFTP, retries,
+    monitoring, events, and backup/migration guidance.'
+  limits-quotas: Limits, quotas, performance, and known issues for Azure Blob Storage
+    features (scalability, archive/rehydration, NFS/SFTP/BlobFuse, static websites,
+    replication, and Storage Mover).
   troubleshooting: 'Diagnosing and fixing Azure Blob Storage issues: Storage Mover
     job/network errors, support bundles, BlobFuse/BlobFuse2 mount & I/O problems,
     and known NFS 3.0 limitations.'
   deployment: Guides for deploying static websites on Blob Storage, enabling Data
     Lake features, and migrating or integrating data from HDFS, Hadoop, NAS, and hybrid
     solutions into Azure Storage.
-  integrations: 'SDK and CLI patterns for integrating Blob/Data Lake with apps: CRUD,
-    copy/move, leases, metadata, tiers, SAS, events, NFS/BlobFuse mounts, analytics,
-    and cross-cloud/Hadoop access.'
+  integrations: SDK, CLI, and PowerShell patterns for connecting to Blob/Data Lake,
+    managing containers/blobs (CRUD, leases, metadata, tiers, SAS), copying/migrating
+    data, mounts (BlobFuse/NFS), and event-driven integrations.
 skill_description: Expert knowledge for Azure Blob Storage development including troubleshooting,
   best practices, decision making, limits & quotas, security, configuration, integrations
-  & coding patterns, and deployment. Use when using tiers/rehydration, SAS/SFTP/NFS,
-  BlobFuse/Data Lake, static sites, or cross-cloud/Hadoop access, and other Azure
-  Blob Storage related development tasks. Not for Azure Files (use azure-files), Azure
-  Queue Storage (use azure-queue-storage), Azure Table Storage (use azure-table-storage),
-  Azure Managed Lustre (use azure-managed-lustre).
-use_when: Use when using tiers/rehydration, SAS/SFTP/NFS, BlobFuse/Data Lake, static
-  sites, or cross-cloud/Hadoop access, and other Azure Blob Storage related development
+  & coding patterns, and deployment. Use when using Blob tiers, Data Lake, NFS/SFTP/BlobFuse
+  mounts, SAS/RBAC auth, or static website hosting, and other Azure Blob Storage related
+  development tasks. Not for Azure Files (use azure-files), Azure Table Storage (use
+  azure-table-storage), Azure Queue Storage (use azure-queue-storage).
+use_when: Use when using Blob tiers, Data Lake, NFS/SFTP/BlobFuse mounts, SAS/RBAC
+  auth, or static website hosting, and other Azure Blob Storage related development
   tasks.
-confusable_not_for: Not for Azure Files (use azure-files), Azure Queue Storage (use
-  azure-queue-storage), Azure Table Storage (use azure-table-storage), Azure Managed
-  Lustre (use azure-managed-lustre).
+confusable_not_for: Not for Azure Files (use azure-files), Azure Table Storage (use
+  azure-table-storage), Azure Queue Storage (use azure-queue-storage).
 ---
 # Azure Blob Storage Crawl Report
 
@@ -46,58 +43,52 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Queue Storage (
 - **Total Pages**: 415
 - **Fetched**: 415
 - **Fetch Failed**: 0
-- **Classified**: 327
-- **Unclassified**: 88
+- **Classified**: 325
+- **Unclassified**: 90
 
 ### Incremental Update
-- **New Pages**: 3
-- **Updated Pages**: 7
-- **Unchanged**: 405
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 9
+- **Unchanged**: 406
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-blob-storage/azure-blob-storage.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| best-practices | 30 | 7.2% |
+| best-practices | 31 | 7.5% |
 | configuration | 60 | 14.5% |
 | decision-making | 23 | 5.5% |
 | deployment | 11 | 2.7% |
-| integrations | 125 | 30.1% |
-| limits-quotas | 16 | 3.9% |
+| integrations | 123 | 29.6% |
+| limits-quotas | 15 | 3.6% |
 | security | 55 | 13.3% |
 | troubleshooting | 7 | 1.7% |
-| *(Unclassified)* | 88 | 21.2% |
+| *(Unclassified)* | 90 | 21.7% |
 
 ## Changes
 
-### New Pages
-
-- [Planning your Private Networking for cloud to cloud migrations](https://learn.microsoft.com/en-us/azure/storage-mover/cloud-to-cloud-private-network-configuration)
-- [Migrate from Google S3 to Azure](https://learn.microsoft.com/en-us/azure/storage-mover/google-migration)
-- [Customer-initiated disaster recovery](https://learn.microsoft.com/en-us/azure/storage-mover/customer-initiated-disaster-recovery)
-
 ### Updated Pages
 
-- [Overview of validated partners](https://learn.microsoft.com/en-us/azure/storage/solution-integration/validated-partners/data-management/partner-overview)
-  - Updated: 2026-04-23T11:10:00.000Z → 2026-06-29T22:28:00.000Z
-- [Introduction to Data Lake Storage](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-introduction)
-  - Updated: 2026-05-15T08:00:00.000Z → 2026-07-03T05:11:00.000Z
-- [Enable Data Lake Storage (New storage accounts)](https://learn.microsoft.com/en-us/azure/storage/blobs/create-data-lake-storage-account)
-  - Updated: 2026-05-08T08:00:00.000Z → 2026-07-03T05:11:00.000Z
-- [Azure Blob File System URI](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-introduction-abfs-uri)
-  - Updated: 2024-11-15T08:00:00.000Z → 2026-07-03T05:11:00.000Z
-- [About hierarchical namespaces](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-namespace)
-  - Updated: 2026-05-26T22:16:00.000Z → 2026-07-03T05:11:00.000Z
-- [Access control lists](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-access-control)
-  - Updated: 2026-05-18T08:00:00.000Z → 2026-07-02T08:00:00.000Z
-- [Use with Databricks and Spark](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-use-databricks-spark)
-  - Updated: 2025-01-13T08:00:00.000Z → 2026-07-03T05:11:00.000Z
-
-### Deleted Pages
-
-- ~~Planning your Private Networking for cloud to cloud migrations~~ (https://learn.microsoft.com/en-us/azure/storage-mover/cloud-to-cloud-private-network-configs)
+- [Known issues and limitations](https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-known-issues)
+  - Updated: 2026-05-14T22:12:00.000Z → 2026-07-08T22:31:00.000Z
+- [Integrate with Azure CDN](https://learn.microsoft.com/en-us/azure/cdn/cdn-create-a-storage-account-with-cdn)
+  - Updated: 2026-02-25T23:33:00.000Z → 2026-02-28T08:00:00.000Z
+- [Delete and restore blobs](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-delete)
+  - Updated: 2024-08-22T17:04:00.000Z → 2026-07-07T05:10:00.000Z
+- [Azure Blob File System driver for Hadoop](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-abfs-driver)
+  - Updated: 2024-11-15T08:00:00.000Z → 2026-07-08T05:12:00.000Z
+- [Multi-protocol access](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-multi-protocol-access)
+  - Updated: 2025-11-18T18:43:00.000Z → 2026-07-10T22:11:00.000Z
+- [Supported Azure services](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-supported-azure-services)
+  - Updated: 2024-08-29T05:56:00.000Z → 2026-07-10T22:11:00.000Z
+- [Known issues](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-known-issues)
+  - Updated: 2024-11-15T08:00:00.000Z → 2026-07-06T22:04:00.000Z
+- [Storage Explorer](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-explorer-acl)
+  - Updated: 2024-11-18T08:00:00.000Z → 2026-07-10T22:11:00.000Z
+- [Storage Explorer](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-explorer)
+  - Updated: 2024-11-18T08:00:00.000Z → 2026-07-08T05:12:00.000Z
 
 ## Classified Pages
 
@@ -124,7 +115,6 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Queue Storage (
 | [Performance checklist](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-performance-checklist) | best-practices | 0.86 | Contains concrete, product-specific performance recommendations tied to Azure Storage scale targets, including configuration choices and naming patterns to avoid throttling. |
 | [Soft delete versus versioning](https://learn.microsoft.com/en-us/azure/storage/blobs/soft-delete-vs-versioning-options) | decision-making | 0.86 | Explicitly helps decide when to enable soft delete, versioning, both, or neither based on workload, cost, and recovery needs; clear product-specific decision guidance. |
 | [Host keys (SFTP) support](https://learn.microsoft.com/en-us/azure/storage/blobs/secure-file-transfer-protocol-host-keys) | security | 0.85 | Contains a list of valid SSH host key fingerprints/types for Blob Storage SFTP endpoints. These are product-specific security parameters used to verify server identity. |
-| [Known issues](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-known-issues) | limits-quotas | 0.85 | Explicitly about limitations and known issues; likely includes feature support tables, constraints, and edge-case behaviors that are expert knowledge on limits and product quirks. |
 | [Performance checklist for developers](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-performance-checklist-developers) | best-practices | 0.85 | Contains detailed, product-specific performance recommendations aligned to Azure Storage targets, including guidance on throttling, parallelism, and retries. |
 | [Security for conditions](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-auth-abac-security) | security | 0.84 | Provides product-specific security gotchas (for example, path rename implications) when using ABAC conditions; concrete security guidance unique to this feature. |
 | [Enable point-in-time restore](https://learn.microsoft.com/en-us/azure/storage/blobs/point-in-time-restore-manage) | configuration | 0.82 | Explains how to enable point-in-time restore and execute restore operations, including constraints (GPv2, standard tier, hot/cool only); concrete configuration behavior. |
@@ -218,7 +208,6 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Queue Storage (
 | [Manage container leases](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-container-lease-python) | integrations | 0.75 | Covers Python SDK lease operations (acquire, renew, release, break) on containers, which are Azure-specific integration patterns. |
 | [Provide an encryption key on a write request](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-customer-provided-key) | security | 0.75 | Shows how to configure AES-256 customer-provided keys on requests via .NET, including security-specific request parameters and patterns. |
 | [Query for a Blob Storage endpoint](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-query-endpoint-srp) | integrations | 0.75 | Shows how to query storage account endpoints via the management library and use them to construct BlobServiceClient, including specific API calls and parameters. |
-| [Storage Explorer](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-explorer-acl) | security | 0.75 | Shows how to view and update ACLs, including recursive application; product-specific security configuration patterns. |
 | [Transfer data with the DistCp tool](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-use-distcp) | integrations | 0.75 | Details DistCp command-line parameters and options when targeting HNS-enabled accounts; these are integration-specific configuration patterns. |
 | [Upload blobs](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-upload-go) | integrations | 0.75 | Provides concrete Go SDK methods, parameters, and patterns for uploading blobs from different sources and with index tags. |
 | [Upload blobs](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-upload-python) | integrations | 0.75 | Details Python SDK upload methods and options (file, stream, binary, tags) that are specific to Azure Blob Storage. |
@@ -233,7 +222,6 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Queue Storage (
 | [Authorize using a user delegation SAS](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-user-delegation-sas-create-java) | security | 0.70 | Covers Java APIs and parameters to create user delegation SAS with Microsoft Entra, including permissions and validity configuration. |
 | [Authorize with Microsoft Entra ID and Azure RBAC](https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-access-azure-active-directory) | security | 0.70 | Covers product-specific security configuration for Blob Storage using Entra ID and Azure RBAC, including concrete role usage and authorization flows; this is detailed security configuration rather than a generic overview. |
 | [Azure Blob File System URI](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-introduction-abfs-uri) | configuration | 0.70 | Describes the Azure Blob File System (ABFS) URI format used by the Hadoop Filesystem driver, which is a product-specific configuration detail (scheme identifier, URI structure) that LLMs are unlikely to know precisely from training. |
-| [Azure Blob File System driver for Hadoop](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-abfs-driver) | integrations | 0.70 | ABFS driver article typically documents driver-specific configuration options, URI formats, and parameters for Hadoop integrations, which are product-specific integration patterns. |
 | [Best practices](https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-best-practices) | best-practices | 0.70 | Explicitly a best practices article for storage tasks; likely contains product-specific DOs/DON’Ts, configuration guidance, and edge cases beyond generic advice. |
 | [Bicep template for creating a workspace](https://learn.microsoft.com/en-us/azure/storage-discovery/create-workspace-bicep) | configuration | 0.70 | Bicep template quickstart that likely includes parameter names and allowed values for the workspace resource, which are configuration details. |
 | [Blob Storage feature support](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-feature-support-in-storage-accounts) | deployment | 0.70 | Contains detailed tables mapping Blob Storage features to storage account types and settings; effectively a platform support matrix that informs which deployment/account configurations support which features, which is product-specific and not generally known. |
@@ -264,7 +252,7 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Queue Storage (
 | [Create endpoints](https://learn.microsoft.com/en-us/azure/storage-mover/endpoint-manage) | configuration | 0.70 | Managing endpoints (storage locations with paths and metadata) is core configuration; page likely details endpoint types, required fields, and constraints unique to Storage Mover. |
 | [Cross region data access](https://learn.microsoft.com/en-us/azure/storage/blobs/cost-estimate-multi-region-access) | decision-making | 0.70 | Shows numeric cost estimation for cross-region uploads/downloads, including egress and transaction components, to inform architecture and access-pattern choices. |
 | [Data protection](https://learn.microsoft.com/en-us/azure/storage/blobs/data-protection-overview) | decision-making | 0.70 | Compares Blob data protection features and guides selection based on recovery scenarios; product-specific decision guidance across multiple options. |
-| [Delete and restore blobs](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-delete) | integrations | 0.70 | How-to article with concrete .NET client methods and options for deleting and restoring soft-deleted blobs; includes SDK-specific request patterns that go beyond generic knowledge. |
+| [Delete and restore blobs](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-delete) | integrations | 0.70 | The page provides product-specific .NET client library usage for Azure Blob Storage delete and soft-restore operations, including specific methods, options, and patterns unique to this SDK rather than generic blob concepts. This fits integrations & coding patterns more than other categories. |
 | [Delete and restore blobs](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-delete-go) | integrations | 0.70 | Shows Go client calls for deleting and restoring soft-deleted blobs during retention, including SDK methods and options. |
 | [Delete and restore blobs](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-delete-java) | integrations | 0.70 | Provides Java methods and patterns for deleting blobs and restoring soft-deleted blobs during retention. |
 | [Delete and restore containers](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-container-delete-go) | integrations | 0.70 | Go-specific Azure Storage SDK patterns for deleting and restoring containers, including method names and usage details that are SDK-version-specific. |
@@ -293,7 +281,8 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Queue Storage (
 | [Java SE](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-java) | integrations | 0.70 | Provides Java client library usage with Blob-specific APIs and configuration options, which are integration patterns unique to this product. |
 | [JavaScript for Node.js](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-nodejs) | integrations | 0.70 | JavaScript client library quickstart includes Blob-specific APIs and configuration usage, which are integration patterns beyond generic JS knowledge. |
 | [JavaScript for browser](https://learn.microsoft.com/en-us/azure/storage/blobs/quickstart-blobs-javascript-browser) | integrations | 0.70 | Browser-focused JS quickstart uses npm Blob client with specific methods and options, a concrete integration scenario. |
-| [Known issues and limitations](https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-known-issues) | limits-quotas | 0.70 | A dedicated limitations/known issues article typically enumerates concrete constraints (unsupported scenarios, caps, behaviors) that are product-specific expert knowledge; fits limits-quotas best among available types. |
+| [Known issues](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-known-issues) | best-practices | 0.70 | Known issues and limitations for hierarchical namespace accounts are product-specific gotchas and edge cases. Such a page typically includes concrete scenarios where APIs or integrations behave unexpectedly and how to work around them, fitting best-practices (and partially troubleshooting) more than other categories. |
+| [Known issues and limitations](https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-known-issues) | limits-quotas | 0.70 | A 'known issues and limitations' page for a specific Azure service typically lists concrete constraints (for example, unsupported scenarios, maximum sizes, or behavioral limits) that are unique to storage tasks and not generally known from training data. These product-specific limitations and edge cases qualify as expert knowledge and align best with the limits-quotas sub-skill, even if presented as issues rather than a formal limits table. |
 | [Komprise getting started guide](https://learn.microsoft.com/en-us/azure/storage/solution-integration/validated-partners/data-management/komprise-quick-start-guide) | configuration | 0.70 | Guide for analyzing and migrating data with Komprise to multiple Azure storage services; likely contains product-specific configuration flows and settings for tiering and migration. |
 | [Komprise tiering guide](https://learn.microsoft.com/en-us/azure/storage/solution-integration/validated-partners/data-management/komprise-tiering-guide) | configuration | 0.70 | Tiering guide focused on moving data to Azure Blob using Komprise; expected to detail tiering policies, thresholds, and configuration options unique to this integration. |
 | [Limitations and known issues](https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-known-issues) | limits-quotas | 0.70 | Summarizes specific limitations and behavioral constraints of BlobFuse, which function as product-specific limits and edge cases. |
@@ -322,7 +311,6 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Queue Storage (
 | [Migrate from Amazon S3 to Azure](https://learn.microsoft.com/en-us/azure/storage-mover/cloud-to-cloud-migration) | integrations | 0.70 | Covers Cloud-to-Cloud Migration using Azure Arc multicloud connectors for AWS; likely includes product-specific parameters, authentication settings, and integration patterns between S3, Arc, and Storage Mover. |
 | [Monitor copy and job run logs](https://learn.microsoft.com/en-us/azure/storage-mover/log-monitoring) | configuration | 0.70 | Monitoring copy and job run logs requires configuring log destinations and formats; page likely details log types, fields, and configuration options unique to Storage Mover. |
 | [Move out of the archive tier](https://learn.microsoft.com/en-us/azure/storage/blobs/cost-estimate-archive-retrieval-set-tier) | decision-making | 0.70 | Provides a worked numeric example for early archive deletion and re-tiering costs, guiding decisions on when to rehydrate vs keep archived. |
-| [Multi-protocol access](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-multi-protocol-access) | integrations | 0.70 | Describes how Blob APIs work with HNS accounts and which features are available; likely includes compatibility tables and API-specific behaviors, which are integration details. |
 | [Nasuni getting started guide](https://learn.microsoft.com/en-us/azure/storage/solution-integration/validated-partners/primary-secondary-storage/nasuni-deployment-guide) | deployment | 0.70 | Labeled as a deployment guide for Nasuni and Azure Blob Storage. Such validated-partner deployment guides typically contain product-specific deployment steps, supported patterns, and constraints for using Nasuni with Azure, which qualifies as expert deployment/configuration knowledge. |
 | [Object replication priority replication](https://learn.microsoft.com/en-us/azure/storage/blobs/object-replication-priority-replication) | limits-quotas | 0.70 | Describes priority replication with a quantified SLA-like statement (for same-continent accounts, 99% of objects within 15 minutes), which is a specific numeric performance guarantee. |
 | [Overview](https://learn.microsoft.com/en-us/azure/storage/blobs/anonymous-read-access-overview) | security | 0.70 | Gives concrete remediation steps and configuration paths for disabling anonymous blob access across account types; product-specific security hardening guidance. |
@@ -407,6 +395,7 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Queue Storage (
 | [Route events to a custom endpoint](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-event-quickstart) | integrations | 0.65 | Provides concrete CLI commands and parameters to subscribe to Blob events and route them to a webhook endpoint. |
 | [Set or change a blob's access tier](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-use-access-tier-dotnet) | integrations | 0.65 | Includes .NET methods and parameters to set access tiers on blobs, which are concrete integration details with the storage service. |
 | [Set or change a blob's access tier](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-use-access-tier-java) | integrations | 0.65 | Includes Java methods and parameters to configure blob access tiers; concrete integration details. |
+| [Storage Explorer](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-explorer-acl) | security | 0.65 | Focuses on managing ACLs (access control lists) for directories and files, including inheritance and recursive application. This is product-specific security/authorization configuration guidance, likely with concrete UI options and permission semantics. |
 | [Upload blobs](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-upload-java) | integrations | 0.65 | Shows Java methods and overloads for uploading blobs from various sources and with index tags; SDK-specific usage. |
 | [Use queries to retrieve data](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-query-acceleration-how-to) | integrations | 0.65 | How-to for using query acceleration likely includes request parameters, supported formats, and API options—product-specific integration/configuration details. |
 | [Veeam getting started guide](https://learn.microsoft.com/en-us/azure/storage/solution-integration/validated-partners/backup-archive-disaster-recovery/veeam/veeam-solution-guide) | best-practices | 0.65 | Described as providing best practices and product-specific guidance for using Veeam with Azure Blob Storage; likely includes concrete recommendations and gotchas unique to this integration. |
@@ -436,7 +425,6 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Queue Storage (
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
 | [About query acceleration](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-query-acceleration) | 0.50 | Conceptual overview of query acceleration; describes benefits and high-level behavior without detailed configuration tables or numeric thresholds. |
-| [Storage Explorer](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-explorer) | 0.50 | How-to for using Storage Explorer UI to manage directories and files; mostly step-by-step UI operations without deep config tables or numeric limits. |
 | [Compose a condition](https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-conditions-operations-edit) | 0.45 | Visual editor how-to; focuses on UI steps rather than exhaustive configuration tables or limits. |
 | [Create a storage task](https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-create) | 0.45 | How-to for creating a storage task; likely procedural without full parameter/limits reference beyond what’s in dedicated condition/operation docs. |
 | [Create and manage an assignment](https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-assignment-create) | 0.45 | How-to for creating and enabling assignments; mostly procedural, with core config semantics covered in other reference pages. |
@@ -453,10 +441,11 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Queue Storage (
 | [Get started](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-java-get-started) | 0.40 | Getting started article; focuses on setup and basic connection, not on detailed configuration matrices or limits. |
 | [Get started](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-javascript-get-started) | 0.40 | Getting started article for JavaScript/TypeScript; focuses on initial setup and connection, not deep configuration or limits. |
 | [Mock runs for storage task assignments](https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-mock-run) | 0.40 | Short conceptual description of mock runs; likely a conceptual/overview page pointing to the how-to article, without detailed configs or limits. |
+| [Multi-protocol access](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-multi-protocol-access) | 0.40 | Multi-protocol access overview and capabilities; likely explains how Blob APIs work with hierarchical namespace accounts and what features/tools are supported, but description suggests conceptual/integrative content rather than detailed limits, configs, or error mappings. |
 | [Overview](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-samples-blobs-cli) | 0.40 | Navigation page listing CLI sample links; lacks direct expert configuration or troubleshooting content. |
 | [Overview](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-samples-blobs-powershell) | 0.40 | Acts as a navigation table linking to PowerShell samples; does not itself contain detailed parameters or limits. |
 | [Scenarios](https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-scenarios) | 0.40 | Scenario descriptions for using storage tasks; more conceptual usage patterns than concrete limits/configs. |
-| [Supported Azure services](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-supported-azure-services) | 0.40 | Lists Azure services that support ADLS with links; mostly catalog/overview, not detailed configuration parameters or decision matrices. |
+| [Storage Explorer](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-explorer) | 0.40 | Shows how to use Storage Explorer to create and manage directories and files; primarily a usage/tutorial article without detailed configuration tables, limits, or troubleshooting content. |
 | [Supported open source platforms](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-supported-open-source-platforms) | 0.40 | List of open source platforms that support ADLS; catalog-style content without deep config tables or numeric limits. |
 | [Tutorial: Upload and process image files](https://learn.microsoft.com/en-us/azure/storage/blobs/blob-upload-function-trigger) | 0.40 | End-to-end tutorial scenario; mostly step-by-step usage of Functions, Blob Storage, and AI services without detailed config tables or limits. |
 | [.NET](https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-quickstart-dotnet) | 0.35 | .NET quickstart; likely shows basic client usage, not a full SDK parameter or config reference. |
@@ -482,6 +471,7 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Queue Storage (
 | [Schedule a migration job](https://learn.microsoft.com/en-us/azure/storage-mover/job-scheduling) | 0.30 | Explains scheduling options for Storage Mover jobs; likely focuses on how to set up schedules rather than detailed configuration parameter tables or quantified decision criteria. |
 | [Service prerequisites](https://learn.microsoft.com/en-us/azure/storage-mover/service-prerequisites) | 0.30 | Service prerequisites overview; description suggests high-level requirements and examples of sources, but no clear indication of detailed configuration tables, limits, or error mappings. |
 | [Soft delete for containers](https://learn.microsoft.com/en-us/azure/storage/blobs/soft-delete-container-overview) | 0.30 | Page is an overview of container soft delete behavior and retention conceptually; no detailed numeric limits, configuration parameter tables, or product-specific error codes/diagnostic patterns are evident from the summary. |
+| [Supported Azure services](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-supported-azure-services) | 0.30 | Lists Azure services that support Data Lake Storage and their level of support; primarily a compatibility/integration catalog without detailed configuration parameters, limits, or troubleshooting mappings. |
 | [Terraform](https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-quickstart-terraform) | 0.30 | Terraform quickstart; tutorial-style guidance without detailed parameter tables or limits. |
 | [Transfer from Azure Blob to Blob](https://learn.microsoft.com/en-us/azure/storage-mover/azure-to-azure-migration) | 0.30 | Get-started migration guide for Azure Storage Mover blob-to-blob; primarily step-by-step configuration and workflow, without detailed config parameter tables, limits, or product-specific best-practice gotchas. |
 | [Understand how apps interact with Blob Storage data resources](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-object-model) | 0.30 | Conceptual explanation of Blob Storage object model and basic SDK usage; no strong indication of detailed config tables or numeric thresholds. |
@@ -491,13 +481,14 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Queue Storage (
 | [Cloud migration basics](https://learn.microsoft.com/en-us/azure/storage-mover/migration-basics) | 0.25 | Cloud migration basics; generic strategy content rather than product-specific expert details. |
 | [.NET](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-dotnet) | 0.20 | Quickstart tutorial for using the .NET Blob client library; focuses on basic sample code and setup, without deep configuration tables, limits, or troubleshooting mappings. |
 | [About hierarchical namespaces](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-namespace) | 0.20 | Conceptual explanation of hierarchical namespace benefits and behavior; lacks specific numeric limits, configuration parameter tables, or troubleshooting details. |
+| [Azure Blob File System driver for Hadoop](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-abfs-driver) | 0.20 | From the summary, the page is an overview of the ABFS driver and how it enables Hadoop access to Azure Data Lake Storage. It doesn’t clearly indicate presence of numeric limits, detailed configuration tables, error-code-based troubleshooting, or product-specific decision matrices. Without evidence of such expert details, it appears to be conceptual/introductory content rather than expert configuration or limits documentation. |
 | [Azure Storage Actions documentation](https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/) | 0.20 | Hub/overview page for Azure Storage Actions documentation; no indication of detailed limits, configs, or error mappings. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal) | 0.20 | Quickstart using Azure portal; mostly step-by-step UI instructions without deep configuration tables or limits. |
 | [BlobFuse2 unmount](https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-commands-unmount) | 0.20 | Appears to be a focused command usage page for 'blobfuse2 unmount' without indication of detailed configuration tables, limits, or product-specific error-code troubleshooting. Likely a basic how-to for unmounting BlobFuse2 mount points rather than expert reference material. |
 | [Download blobs](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-download) | 0.20 | Tutorial-style code article showing how to download blobs with .NET; does not include configuration matrices, limits, or specialized troubleshooting or best-practice content. |
 | [Enable Data Lake Storage (New storage accounts)](https://learn.microsoft.com/en-us/azure/storage/blobs/create-data-lake-storage-account) | 0.20 | Step-by-step guidance to create a storage account with hierarchical namespace, but no detailed configuration parameter tables, limits, or product-specific best practices beyond standard setup. |
 | [Get Started on Storage Discovery reports](https://learn.microsoft.com/en-us/azure/storage-discovery/get-started-reports) | 0.20 | Page describes the structure and use of Azure Storage Discovery reports (capacity, activity, errors) and top-level filters. It appears to be a conceptual/UX overview of how insights are presented, without specific limits, configuration parameter tables, error-code mappings, or other product-specific numeric thresholds or settings. |
-| [Integrate with Azure CDN](https://learn.microsoft.com/en-us/azure/cdn/cdn-create-a-storage-account-with-cdn) | 0.20 | Quickstart/tutorial for integrating Azure Storage with Azure CDN; primarily step-by-step UI guidance without detailed limits, configuration matrices, or product-specific patterns beyond what an LLM would already know. |
+| [Integrate with Azure CDN](https://learn.microsoft.com/en-us/azure/cdn/cdn-create-a-storage-account-with-cdn) | 0.20 | Quickstart tutorial for integrating Azure Storage with Azure CDN; primarily step-by-step UI guidance without detailed limits, configuration tables, error codes, or product-specific expert patterns. |
 | [Object replication](https://learn.microsoft.com/en-us/azure/storage/blobs/object-replication-overview) | 0.20 | High-level overview of object replication scenarios and behavior without detailed numeric limits, configuration tables, or error mappings. |
 | [Overview](https://learn.microsoft.com/en-us/azure/storage/blobs/lifecycle-management-overview) | 0.20 | High-level overview of Blob Storage lifecycle management without detailed numeric limits, configuration tables, or product-specific decision matrices; primarily conceptual cost-optimization description. |
 | [Overview](https://learn.microsoft.com/en-us/azure/storage/blobs/secure-file-transfer-protocol-support) | 0.20 | This is primarily an overview of SFTP support for Azure Blob Storage and why/when to use it. The summary indicates conceptual description and positioning, not detailed limits, configuration tables, or error mappings. Without clear evidence of numeric limits, config matrices, or troubleshooting content, it does not meet the expert-knowledge criteria for any sub-skill type. |

@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-06-21'
+generated_at: '2026-07-12'
 category_descriptions:
-  security: 'Securing Confidential Ledger: Entra ID setup, app registration, auth
-    (tokens/certs), RBAC and roles, node attestation/quote verification, and security
-    best practices.'
+  security: 'Auth, attestation, identity, and access control for Confidential Ledger:
+    Entra ID setup, app registration, RBAC, cert-based users, client certs, node quote
+    verification, and deployment security.'
   integrations: Patterns and examples for integrating ACL with Blob Storage, Power
     Automate, Cosmos DB, organizing ledger data, designing MST payloads/claims, and
     writing JavaScript user-defined functions.
@@ -17,17 +17,17 @@ category_descriptions:
     ARM templates or Terraform, including required parameters and configuration steps.
 skill_description: Expert knowledge for Azure Confidential Ledger development including
   troubleshooting, decision making, security, integrations & coding patterns, and
-  deployment. Use when configuring Entra ID auth, MST payloads, Cosmos DB/Blob integrations,
-  ACL Explorer, or ARM/Terraform deployment, and other Azure Confidential Ledger related
-  development tasks. Not for Azure Confidential Computing (use azure-confidential-computing),
-  Azure Virtual Enclaves (use azure-virtual-enclaves), Azure Key Vault (use azure-key-vault),
-  Azure Database for PostgreSQL (use azure-database-postgresql).
-use_when: Use when configuring Entra ID auth, MST payloads, Cosmos DB/Blob integrations,
-  ACL Explorer, or ARM/Terraform deployment, and other Azure Confidential Ledger related
-  development tasks.
+  deployment. Use when configuring ACL auth/attestation, integrating with Blob/Cosmos,
+  using MST payloads, or deploying via ARM/Terraform, and other Azure Confidential
+  Ledger related development tasks. Not for Azure Confidential Computing (use azure-confidential-computing),
+  Azure Key Vault (use azure-key-vault), Azure Dedicated HSM (use azure-dedicated-hsm),
+  Azure Payment Hsm (use azure-payment-hsm).
+use_when: Use when configuring ACL auth/attestation, integrating with Blob/Cosmos,
+  using MST payloads, or deploying via ARM/Terraform, and other Azure Confidential
+  Ledger related development tasks.
 confusable_not_for: Not for Azure Confidential Computing (use azure-confidential-computing),
-  Azure Virtual Enclaves (use azure-virtual-enclaves), Azure Key Vault (use azure-key-vault),
-  Azure Database for PostgreSQL (use azure-database-postgresql).
+  Azure Key Vault (use azure-key-vault), Azure Dedicated HSM (use azure-dedicated-hsm),
+  Azure Payment Hsm (use azure-payment-hsm).
 ---
 # Azure Confidential Ledger Crawl Report
 
@@ -41,8 +41,8 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 37
+- **Updated Pages**: 1
+- **Unchanged**: 36
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-confidential-ledger/azure-confidential-ledger.csv`
 
@@ -59,6 +59,11 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 
 ## Changes
 
+### Updated Pages
+
+- [Secure Confidential Computing Ledger](https://learn.microsoft.com/en-us/azure/confidential-ledger/secure-confidential-ledger)
+  - Updated: 2026-04-23T08:00:00.000Z → 2026-07-10T22:34:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
@@ -68,9 +73,9 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 | [Establish trust on Azure confidential ledger](https://learn.microsoft.com/en-us/azure/confidential-ledger/verify-node-quotes) | security | 0.80 | Covers remote attestation, quote contents (identity key hash, MRENCLAVE), and verification steps unique to confidential ledger’s TEE security model. |
 | [Manage Microsoft Entra token-based users](https://learn.microsoft.com/en-us/azure/confidential-ledger/manage-azure-ad-token-based-users) | security | 0.80 | Defines specific roles (Reader, Contributor, Administrator) and how they map to permissions in confidential ledger, which is product-specific RBAC configuration. |
 | [Manage certificate-based users](https://learn.microsoft.com/en-us/azure/confidential-ledger/manage-certificate-based-users) | security | 0.80 | Describes certificate fingerprint-based identities and role assignments, which are product-specific security and access control mechanisms. |
-| [Secure Confidential Computing Ledger](https://learn.microsoft.com/en-us/azure/confidential-ledger/secure-confidential-ledger) | security | 0.80 | Security-focused guidance for Confidential Computing Ledger workloads, including best practices for authentication, data integrity, and access controls; expected to reference specific roles, settings, and patterns unique to this service. |
 | [Create a client certificate](https://learn.microsoft.com/en-us/azure/confidential-ledger/create-client-certificate) | security | 0.75 | Details PEM certificate requirements, allowlisting behavior, and authentication constraints specific to confidential ledger APIs. |
 | [Create a managed application to store blob digests](https://learn.microsoft.com/en-us/azure/confidential-ledger/create-blob-managed-app) | integrations | 0.75 | Describes a managed application that tracks blobs and stores digests in the ledger, including product-specific configuration and integration behavior. |
+| [Secure Confidential Computing Ledger](https://learn.microsoft.com/en-us/azure/confidential-ledger/secure-confidential-ledger) | security | 0.72 | The article is explicitly about securing Confidential Computing Ledger workloads, and Microsoft service-specific security guidance typically includes concrete RBAC role names, authentication flows, and access control configurations that go beyond generic security concepts. This matches the security sub-skill criteria for product-specific security settings and identity/access configuration. |
 | [Advanced UDFs](https://learn.microsoft.com/en-us/azure/confidential-ledger/user-defined-endpoints) | security | 0.70 | Advanced UDFs include custom RBAC and TEE execution details, which are product-specific security and authorization configurations. |
 | [Data ingress and egress from Azure confidential ledger using Power Automate Connector](https://learn.microsoft.com/en-us/azure/confidential-ledger/create-power-automate-workflow) | integrations | 0.70 | Shows how to use a specific Power Automate connector with Azure confidential ledger and store transaction IDs in Cosmos DB; contains product-specific integration workflow and parameters beyond generic tutorial content. |
 | [Migration from Managed CCF to Azure confidential ledger](https://learn.microsoft.com/en-us/azure/confidential-ledger/managed-confidential-consortium-framework-migration) | decision-making | 0.70 | Deprecation and migration guidance inherently compares Managed CCF and confidential ledger and provides recommendations for migration paths and scenarios. |

@@ -1,11 +1,11 @@
 ---
-generated_at: '2026-07-05'
+generated_at: '2026-07-12'
 category_descriptions:
   integrations: 'Integrating Grafana with Azure AI agents and monitoring tools: MCP
     setup, AI Foundry dashboards, alerts, Prometheus/AKS, and Azure Data Explorer
     data sources.'
-  security: 'Securing Managed Grafana: auth and RBAC, Entra/Team Sync, service accounts/tokens,
-    private endpoints and outbound IPs, data encryption/storage, Azure Monitor access,
+  security: 'Securing Managed Grafana: auth (API, users, Entra, roles, team sync),
+    service accounts/tokens, private access/endpoints, outbound IPs, data encryption,
     and security best practices.'
   limits-quotas: Service limits, supported regions, constraints, and how reporting/image
     rendering works in Azure Managed Grafana, including quotas and operational restrictions.
@@ -21,11 +21,11 @@ category_descriptions:
     access, configuration, and private endpoint connectivity and DNS problems.
 skill_description: Expert knowledge for Azure Managed Grafana development including
   troubleshooting, decision making, limits & quotas, security, configuration, integrations
-  & coding patterns, and deployment. Use when configuring workspaces, Entra auth/RBAC,
-  Prometheus/ADX data sources, alerts/SMTP, or zone-redundant deployments, and other
+  & coding patterns, and deployment. Use when configuring workspaces, Prometheus/AKS
+  data sources, Entra auth, private endpoints, or AI Foundry dashboards, and other
   Azure Managed Grafana related development tasks. Not for Azure Monitor (use azure-monitor).
-use_when: Use when configuring workspaces, Entra auth/RBAC, Prometheus/ADX data sources,
-  alerts/SMTP, or zone-redundant deployments, and other Azure Managed Grafana related
+use_when: Use when configuring workspaces, Prometheus/AKS data sources, Entra auth,
+  private endpoints, or AI Foundry dashboards, and other Azure Managed Grafana related
   development tasks.
 confusable_not_for: Not for Azure Monitor (use azure-monitor).
 ---
@@ -41,8 +41,8 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor).
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 5
-- **Unchanged**: 40
+- **Updated Pages**: 1
+- **Unchanged**: 44
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-managed-grafana/azure-managed-grafana.csv`
 
@@ -63,16 +63,8 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor).
 
 ### Updated Pages
 
-- [About Azure Managed Grafana](https://learn.microsoft.com/en-us/azure/managed-grafana/overview)
-  - Updated: 2025-09-30T22:16:00.000Z → 2026-06-29T17:15:00.000Z
-- [Service limits](https://learn.microsoft.com/en-us/azure/managed-grafana/known-limitations)
-  - Updated: 2025-08-19T08:00:00.000Z → 2026-06-29T17:15:00.000Z
-- [Configure data sources](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-data-source-plugins-managed-identity)
-  - Updated: 2025-11-21T08:00:00.000Z → 2026-06-29T17:15:00.000Z
-- [Use Azure Monitor alerts with Grafana](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-use-azure-monitor-alerts)
-  - Updated: 2025-09-22T08:00:00.000Z → 2026-06-29T17:15:00.000Z
-- [Migrate from Essential service tier](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-migrate-essential-service-tier)
-  - Updated: 2026-01-28T06:18:00.000Z → 2026-06-29T17:15:00.000Z
+- [Encryption](https://learn.microsoft.com/en-us/azure/managed-grafana/encryption)
+  - Updated: 2025-02-20T12:33:00.000Z → 2026-07-09T22:04:00.000Z
 
 ## Classified Pages
 
@@ -102,7 +94,7 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor).
 | [Connect to self-hosted Prometheus through managed private endpoint](https://learn.microsoft.com/en-us/azure/managed-grafana/tutorial-mpe-oss-prometheus) | integrations | 0.70 | Product-specific integration pattern between AKS-hosted Prometheus and Azure Managed Grafana via managed private endpoint, likely with concrete endpoint settings and constraints. |
 | [Enable Grafana Enterprise](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-grafana-enterprise) | decision-making | 0.70 | Describes prerequisites (Standard plan), plan options, and how to update plans; supports decision-making about Enterprise add-on usage and access to plugins. |
 | [Enable zone redundancy](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-enable-zone-redundancy) | deployment | 0.70 | Describes zone redundancy option, availability zone usage, and billing implications; product-specific deployment/reliability configuration. |
-| [Encryption](https://learn.microsoft.com/en-us/azure/managed-grafana/encryption) | security | 0.70 | Product-specific description of how data is stored and encrypted; includes implementation details not obvious from generic knowledge. |
+| [Encryption](https://learn.microsoft.com/en-us/azure/managed-grafana/encryption) | security | 0.70 | Describes product-specific encryption behavior and data storage details for Azure Managed Grafana, including how and where data is encrypted at rest and in transit. This is security-focused configuration/behavior information that isn't generic and would be considered expert knowledge about this specific service. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/managed-grafana/faq) | limits-quotas | 0.70 | FAQ includes product-specific expert details such as supported regions, data source support, licensing/tenant constraints, and other concrete service behaviors that are not generic knowledge. It also typically documents specific service limits (for example, region availability, tenant or workspace constraints), which best align with the limits-quotas sub-skill compared to other categories. |
 | [Manage plugins](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-manage-plugins) | configuration | 0.70 | Explains how to add/remove plugins via Azure portal rather than Grafana UI/CLI; product-specific configuration path and constraints. |
 | [Microsoft Foundry dashboard](https://learn.microsoft.com/en-us/azure/managed-grafana/azure-ai-foundry-dashboard) | integrations | 0.70 | Prebuilt dashboard for AI metrics (latency, throughput, token usage); includes specific metrics, queries, and panel configurations tied to Azure AI Foundry. |

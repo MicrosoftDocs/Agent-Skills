@@ -31,7 +31,9 @@ skill_description: Expert knowledge for Azure Microsoft Discovery development in
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
   Use when building Discovery workspaces, shared sessions, supercomputer jobs, ACR
   tool images, or Log Analytics queries, and other Azure Microsoft Discovery related
-  development tasks.
+  development tasks. Not for Azure Resource Graph (use azure-resource-graph), Azure
+  Portal (use azure-portal), Azure Monitor (use azure-monitor), Azure Policy (use
+  azure-policy).
 use_when: Use when building Discovery workspaces, shared sessions, supercomputer jobs,
   ACR tool images, or Log Analytics queries, and other Azure Microsoft Discovery related
   development tasks.
@@ -50,10 +52,10 @@ confusable_not_for: Not for Azure Resource Graph (use azure-resource-graph), Azu
 - **Unclassified**: 25
 
 ### Incremental Update
-- **New Pages**: 3
-- **Updated Pages**: 5
-- **Unchanged**: 64
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 72
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-microsoft-discovery/azure-microsoft-discovery.csv`
 
 ## Classification Statistics
@@ -72,29 +74,6 @@ confusable_not_for: Not for Azure Resource Graph (use azure-resource-graph), Azu
 | *(Unclassified)* | 25 | 34.7% |
 
 ## Changes
-
-### New Pages
-
-- [Use GitHub Copilot in Microsoft Discovery](https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-copilot)
-- [GitHub Copilot & Microsoft Discovery](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-copilot)
-- [Platform card](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-platform-card)
-
-### Updated Pages
-
-- [Quickstart - Deploy infrastructure using Azure portal](https://learn.microsoft.com/en-us/azure/microsoft-discovery/quickstart-infrastructure-portal)
-  - Updated: 2026-05-15T22:17:00.000Z → 2026-06-30T11:46:00.000Z
-- [Managed identities](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-managed-identities)
-  - Updated: 2026-06-02T18:53:00.000Z → 2026-07-01T05:18:00.000Z
-- [Bookshelf & Knowledge Bases](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-bookshelf-knowledge-bases)
-  - Updated: 2026-06-02T18:53:00.000Z → 2026-07-02T22:11:00.000Z
-- [Discovery Agent concepts](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-discovery-agent)
-  - Updated: 2026-06-02T18:53:00.000Z → 2026-07-01T05:18:00.000Z
-- [Discovery Agent types](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-discovery-agent-types)
-  - Updated: 2026-06-02T18:53:00.000Z → 2026-07-01T05:18:00.000Z
-
-### Deleted Pages
-
-- ~~Transparency note~~ (https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-platform-card)
 
 ## Classified Pages
 

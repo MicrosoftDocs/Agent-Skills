@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-05'
+generated_at: '2026-07-12'
 category_descriptions:
   best-practices: Guidance on building efficient Dev Box images, including structuring
     image definitions and pre-warming Visual Studio caches to speed up developer environments.
@@ -12,28 +12,28 @@ category_descriptions:
   security: 'Securing Dev Box access and sessions: RBAC roles, guest access, SSO,
     API auth, Key Vault/service principals, Intune Conditional Access and Endpoint
     Privilege Management.'
-  troubleshooting: 'Diagnosing and fixing Dev Box issues: connectivity/RDC problems,
-    custom image validation errors, stale/inaccessible boxes, and using Azure Monitor
-    logs for troubleshooting.'
   deployment: Planning and rolling out Dev Box environments, including architecture
     and configuration, plus guidance for moving Dev Box pools and individual boxes
     between Azure regions.
   limits-quotas: 'Managing Dev Box capacity: requesting quota/core limit increases
     and configuring per-user Dev Box limits to control usage and costs.'
+  troubleshooting: Diagnosing and fixing Dev Box connectivity issues, image validation
+    errors, stale/inaccessible boxes, using Troubleshoot & Repair, and monitoring
+    via Azure Monitor logs.
   integrations: Using VS Code dev tunnels to securely connect to Azure Dev Box, including
     setup, authentication, and remote development workflow configuration.
 skill_description: Expert knowledge for Azure Dev Box development including troubleshooting,
   best practices, decision making, limits & quotas, security, configuration, integrations
   & coding patterns, and deployment. Use when designing Dev Box images, catalogs/pools,
-  RBAC/SSO access, VS dev tunnels, or region moves, and other Azure Dev Box related
+  RBAC/SSO access, region moves, or VS Code dev tunnels, and other Azure Dev Box related
   development tasks. Not for Azure DevTest Labs (use azure-devtest-labs), Azure Virtual
-  Machines (use azure-virtual-machines), Azure Lab Services (use azure-lab-services),
-  Azure Virtual Desktop (use azure-virtual-desktop).
-use_when: Use when designing Dev Box images, catalogs/pools, RBAC/SSO access, VS dev
-  tunnels, or region moves, and other Azure Dev Box related development tasks.
+  Machines (use azure-virtual-machines), Azure Virtual Desktop (use azure-virtual-desktop),
+  Azure Lab Services (use azure-lab-services).
+use_when: Use when designing Dev Box images, catalogs/pools, RBAC/SSO access, region
+  moves, or VS Code dev tunnels, and other Azure Dev Box related development tasks.
 confusable_not_for: Not for Azure DevTest Labs (use azure-devtest-labs), Azure Virtual
-  Machines (use azure-virtual-machines), Azure Lab Services (use azure-lab-services),
-  Azure Virtual Desktop (use azure-virtual-desktop).
+  Machines (use azure-virtual-machines), Azure Virtual Desktop (use azure-virtual-desktop),
+  Azure Lab Services (use azure-lab-services).
 ---
 # Azure Dev Box Crawl Report
 
@@ -42,13 +42,13 @@ confusable_not_for: Not for Azure DevTest Labs (use azure-devtest-labs), Azure V
 - **Total Pages**: 65
 - **Fetched**: 65
 - **Fetch Failed**: 0
-- **Classified**: 47
-- **Unclassified**: 18
+- **Classified**: 45
+- **Unclassified**: 20
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 64
+- **Updated Pages**: 5
+- **Unchanged**: 60
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-dev-box/azure-dev-box.csv`
 
@@ -57,21 +57,29 @@ confusable_not_for: Not for Azure DevTest Labs (use azure-devtest-labs), Azure V
 | Type | Count | Percentage |
 |------|-------|------------|
 | best-practices | 2 | 3.1% |
-| configuration | 24 | 36.9% |
+| configuration | 23 | 35.4% |
 | decision-making | 2 | 3.1% |
 | deployment | 1 | 1.5% |
 | integrations | 1 | 1.5% |
 | limits-quotas | 2 | 3.1% |
 | security | 8 | 12.3% |
-| troubleshooting | 7 | 10.8% |
-| *(Unclassified)* | 18 | 27.7% |
+| troubleshooting | 6 | 9.2% |
+| *(Unclassified)* | 20 | 30.8% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Imagedefinition.yaml and task.yaml reference](https://learn.microsoft.com/en-us/azure/dev-box/reference-dev-box-customizations)
-  - Updated: 2025-08-08T22:10:00.000Z → 2026-07-01T05:18:00.000Z
+- [Hibernate your Dev Box](https://learn.microsoft.com/en-us/azure/dev-box/how-to-hibernate-your-dev-box)
+  - Updated: 2025-05-30T05:27:00.000Z → 2026-07-08T05:12:00.000Z
+- [Configure stop on disconnect](https://learn.microsoft.com/en-us/azure/dev-box/how-to-configure-stop-on-disconnect)
+  - Updated: 2025-12-30T23:13:00.000Z → 2026-07-08T05:12:00.000Z
+- [Automatically repair connectivity issues](https://learn.microsoft.com/en-us/azure/dev-box/how-to-troubleshoot-repair-dev-box)
+  - Updated: 2025-05-30T05:27:00.000Z → 2026-07-08T05:12:00.000Z
+- [Resolve dev box connectivity issues](https://learn.microsoft.com/en-us/azure/dev-box/how-to-resolve-dev-box-connectivity-issues)
+  - Updated: 2025-11-21T23:10:00.000Z → 2026-07-08T05:12:00.000Z
+- [FAQ](https://learn.microsoft.com/en-us/azure/dev-box/dev-box-faq)
+  - Updated: 2025-08-14T22:10:00.000Z → 2026-07-08T05:12:00.000Z
 
 ## Classified Pages
 
@@ -79,10 +87,8 @@ confusable_not_for: Not for Azure DevTest Labs (use azure-devtest-labs), Azure V
 |-----------|------|------------|--------|
 | [Imagedefinition.yaml and task.yaml reference](https://learn.microsoft.com/en-us/azure/dev-box/reference-dev-box-customizations) | configuration | 0.86 | This is a schema reference for Microsoft Dev Box customization YAML files. It defines specific configuration parameters, their allowed values, and structure for imagedefinition.yaml and task.yaml, including built-in GitClone, PowerShell, and WinGet tasks. These product-specific config details (field names, types, and usage) are expert knowledge not generally known to LLMs and fit the configuration sub-skill. |
 | [Troubleshoot custom image validation](https://learn.microsoft.com/en-us/azure/dev-box/how-to-troubleshoot-custom-image-validation) | troubleshooting | 0.86 | Focused on diagnosing Dev Box custom image validation failures. Likely includes specific validation error messages, causes tied to Dev Box architecture differences vs Azure VMs, and concrete resolution steps, matching symptom → cause → solution troubleshooting guidance. |
-| [Automatically repair connectivity issues](https://learn.microsoft.com/en-us/azure/dev-box/how-to-troubleshoot-repair-dev-box) | troubleshooting | 0.83 | Symptom-based guide for Remote Desktop connectivity issues using a specific Dev Box troubleshooting tool; likely includes diagnostic checks and resolution mappings unique to Dev Box. |
 | [Monitoring Microsoft DevCenter data reference](https://learn.microsoft.com/en-us/azure/dev-box/monitor-dev-box-reference) | configuration | 0.82 | Provides schema reference for Dev Box diagnostic logs and metrics, including property names and meanings; product-specific monitoring configuration/data model. |
 | [Request a quota limit increase](https://learn.microsoft.com/en-us/azure/dev-box/how-to-request-quota-increase) | limits-quotas | 0.82 | Explains Dev Box resource quotas (cores, dev centers, etc.) and how to view and request increases; likely includes specific quota types and numeric limits per subscription. |
-| [Resolve dev box connectivity issues](https://learn.microsoft.com/en-us/azure/dev-box/how-to-resolve-dev-box-connectivity-issues) | troubleshooting | 0.82 | Structured troubleshooting for connection failures, sign-in issues, disconnections, and high latency; symptom-to-solution mappings specific to Dev Box. |
 | [Authenticate to REST APIs](https://learn.microsoft.com/en-us/azure/dev-box/how-to-authenticate) | security | 0.80 | Covers obtaining and using Entra access tokens for Dev Box admin and developer APIs; includes token scopes/usage patterns specific to this product. |
 | [Authoring and troubleshooting team customizations](https://learn.microsoft.com/en-us/azure/dev-box/concept-authoring-troubleshooting-guide-team-customizations) | best-practices | 0.80 | Guide with recommendations, common pitfalls, and troubleshooting for imagedefinition.yaml; includes concrete patterns and gotchas unique to Dev Box. |
 | [Azure role-based access control](https://learn.microsoft.com/en-us/azure/dev-box/concept-dev-box-role-based-access-control) | security | 0.80 | Describes built-in roles supported by Dev Box and how they map to organizational roles; includes specific RBAC role names and scopes. |
@@ -104,7 +110,8 @@ confusable_not_for: Not for Azure DevTest Labs (use azure-devtest-labs), Azure V
 | [Configure tasks for customizations](https://learn.microsoft.com/en-us/azure/dev-box/how-to-configure-customization-tasks) | configuration | 0.75 | Describes creating catalogs and tasks, with task definitions and parameters; includes Dev Box–specific configuration constructs. |
 | [Configure user customizations](https://learn.microsoft.com/en-us/azure/dev-box/how-to-configure-user-customizations) | configuration | 0.75 | Covers schema/structure and validation of user customization files, including VS Code integration; product-specific configuration details. |
 | [Manage network connections](https://learn.microsoft.com/en-us/azure/dev-box/how-to-configure-network-connections) | configuration | 0.75 | Explains configuring network connections, region selection, and on-premises connectivity; includes specific Dev Box network settings. |
-| [Configure stop on disconnect](https://learn.microsoft.com/en-us/azure/dev-box/how-to-configure-stop-on-disconnect) | configuration | 0.74 | Covers configuring automatic stop after RDP disconnect with a configurable timeout; includes product-specific setting and behavior tied to hibernation-enabled definitions. |
+| [Resolve dev box connectivity issues](https://learn.microsoft.com/en-us/azure/dev-box/how-to-resolve-dev-box-connectivity-issues) | troubleshooting | 0.75 | Step-by-step troubleshooting guide for Dev Box connection failures, sign-in issues, disconnections, and latency; likely organized by symptom→cause→solution with product-specific diagnostics and remedies. |
+| [Automatically repair connectivity issues](https://learn.microsoft.com/en-us/azure/dev-box/how-to-troubleshoot-repair-dev-box) | troubleshooting | 0.70 | Focused on diagnosing and resolving Dev Box connectivity issues using a specific Troubleshoot & Repair tool tied to Azure infrastructure; likely includes product-specific steps, checks, and resolutions not generally known. |
 | [Configure Dev Box Hibernation](https://learn.microsoft.com/en-us/azure/dev-box/how-to-configure-dev-box-hibernation) | configuration | 0.70 | Explains configuring hibernation at image/definition levels and automation; likely includes specific settings and allowed values for hibernation behavior. |
 | [Configure Visual Studio caches](https://learn.microsoft.com/en-us/azure/dev-box/how-to-generate-visual-studio-caches) | best-practices | 0.70 | Describes using VS 17.8 precaching with Dev Box images, including concrete steps and product-specific optimization patterns. |
 | [Configure project policies](https://learn.microsoft.com/en-us/azure/dev-box/how-to-configure-project-policy) | configuration | 0.70 | Describes project policies, enforcement behavior, and health checks; includes specific policy settings and their effects. |
@@ -112,7 +119,6 @@ confusable_not_for: Not for Azure DevTest Labs (use azure-devtest-labs), Azure V
 | [Connect to a dev box with a dev tunnel](https://learn.microsoft.com/en-us/azure/dev-box/how-to-set-up-dev-tunnels) | integrations | 0.70 | Integration article between Dev Box and VS Code, including enabling tunnels and extension configuration—contains product-specific integration parameters and steps. |
 | [Delete unused dev boxes](https://learn.microsoft.com/en-us/azure/dev-box/how-to-auto-delete-dev-box) | configuration | 0.70 | Describes enabling and configuring auto-delete with specific settings and behavior for unused Dev Boxes; product-specific lifecycle configuration. |
 | [Dev Box maintenance mode](https://learn.microsoft.com/en-us/azure/dev-box/dev-box-roadmap) | decision-making | 0.70 | Roadmap/maintenance-mode article provides product-specific guidance for existing Dev Box customers to move to Windows 365, including recommendations on future usage and transition considerations, which supports technology selection and migration decisions. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/dev-box/dev-box-faq) | troubleshooting | 0.70 | FAQ pages for specific Azure services typically include concrete, product-specific answers such as error messages, behavioral edge cases, and operational constraints that aren't purely conceptual. While framed as FAQs, these often map symptoms or questions (for example, access issues, performance behavior, or lifecycle quirks) to specific causes and resolutions unique to Microsoft Dev Box, which aligns best with the troubleshooting category. |
 | [Manage a dev box definition](https://learn.microsoft.com/en-us/azure/dev-box/how-to-manage-dev-box-definitions) | configuration | 0.70 | Covers dev box definitions (image, compute, storage) with product-specific options and constraints. |
 | [Manage a dev box pool](https://learn.microsoft.com/en-us/azure/dev-box/how-to-manage-dev-box-pools) | configuration | 0.70 | Pool management article with settings for images, networks, and hosting; includes Dev Box–specific configuration parameters. |
 | [Manage a dev box project](https://learn.microsoft.com/en-us/azure/dev-box/how-to-manage-dev-box-projects) | configuration | 0.70 | Project management article with pool configuration and cost control; includes Dev Box–specific project and pool settings. |
@@ -136,9 +142,11 @@ confusable_not_for: Not for Azure DevTest Labs (use azure-devtest-labs), Azure V
 | [What is Microsoft Dev Box MCP Server?](https://learn.microsoft.com/en-us/azure/dev-box/overview-what-is-dev-box-mcp-server) | 0.50 | Overview of the Dev Box MCP server; integration concept description without detailed API parameter tables or configuration schemas in the summary. |
 | [Skip or delay an automatic shutdown](https://learn.microsoft.com/en-us/azure/dev-box/how-to-skip-delay-stop) | 0.45 | Explains how users can delay or skip an already configured autostop; likely UI-driven steps without detailed configuration parameter tables or numeric constraints. |
 | [Configure Serverless GPU](https://learn.microsoft.com/en-us/azure/dev-box/how-to-configure-dev-box-serverless-gpu) | 0.40 | Explains what serverless GPU compute is and scenarios; appears conceptual without detailed limits, configuration tables, or thresholds. |
-| [Hibernate your Dev Box](https://learn.microsoft.com/en-us/azure/dev-box/how-to-hibernate-your-dev-box) | 0.40 | How-to for hibernating/resuming via portal/CLI; mostly procedural without detailed configuration tables, limits, or error-code troubleshooting. |
+| [Configure stop on disconnect](https://learn.microsoft.com/en-us/azure/dev-box/how-to-configure-stop-on-disconnect) | 0.40 | Describes configuring auto stop on disconnect with a timeout, but summary lacks exact numeric ranges, config tables, or product-specific constraints; mainly cost-saving guidance. |
+| [Hibernate your Dev Box](https://learn.microsoft.com/en-us/azure/dev-box/how-to-hibernate-your-dev-box) | 0.40 | Procedural how-to for hibernating Dev Boxes via portal/CLI; no specific limits, quotas, config tables, or product-unique edge cases beyond generic behavior. |
 | [Connect physical devices to a dev box](https://learn.microsoft.com/en-us/azure/dev-box/how-to-connect-devices-to-dev-box) | 0.35 | Step-by-step tutorial for connecting Android devices; likely generic device connection steps rather than product-specific configuration tables or limits. |
 | [Architecture and key concepts](https://learn.microsoft.com/en-us/azure/dev-box/concept-dev-box-architecture) | 0.30 | Conceptual architecture overview; describes components and relationships but not detailed decision matrices or numeric thresholds. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/dev-box/dev-box-faq) | 0.30 | FAQ content is typically high-level Q&A; summary does not indicate detailed limits, error codes, or configuration tables, so it likely lacks the required expert technical depth. |
 | [Get support for Microsoft Dev Box](https://learn.microsoft.com/en-us/azure/dev-box/how-to-get-help) | 0.30 | Support-channel guidance and escalation paths; process/contacts rather than technical configuration, limits, or troubleshooting details. |
 | [Set up Dev Box service (ARM template)](https://learn.microsoft.com/en-us/azure/dev-box/quickstart-configure-dev-box-arm-template) | 0.30 | Quickstart using an ARM template is primarily step-by-step setup; summary does not indicate detailed configuration tables, parameter ranges, or other expert-only configuration references. |
 | [Tutorial: Get started with the Dev Box MCP Server](https://learn.microsoft.com/en-us/azure/dev-box/tutorial-get-started-dev-box-mcp-server) | 0.30 | Tutorial-style usage of Dev Box MCP Server with natural language operations; likely step-by-step but not focused on configuration tables, limits, or error-code-based troubleshooting. |

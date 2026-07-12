@@ -54,9 +54,9 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 - **Unclassified**: 75
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 1
-- **Unchanged**: 353
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 355
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-aks-edge-essentials/azure-aks-edge-essentials.csv`
 
@@ -76,15 +76,6 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | *(Unclassified)* | 75 | 21.1% |
 
 ## Changes
-
-### New Pages
-
-- [Infrastructure operation failures](https://learn.microsoft.com/en-us/azure/aks/aksarc/infrastructure-operation-failures)
-
-### Updated Pages
-
-- [Access and identity](https://learn.microsoft.com/en-us/azure/aks/aksarc/multi-rack/concepts-security-access-identity)
-  - Updated: 2026-04-27T17:08:00.000Z → 2026-06-30T22:04:00.000Z
 
 ## Classified Pages
 

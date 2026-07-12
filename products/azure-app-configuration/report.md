@@ -48,8 +48,8 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 13
-- **Unchanged**: 152
+- **Updated Pages**: 0
+- **Unchanged**: 165
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-app-configuration/azure-app-configuration.csv`
 
@@ -68,35 +68,6 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | *(Unclassified)* | 38 | 23.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [Create an App Configuration store](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-azure-app-configuration-create)
-  - Updated: 2026-06-22T08:00:00.000Z → 2026-06-30T05:18:00.000Z
-- [Bicep](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-bicep)
-  - Updated: 2024-05-30T08:00:00.000Z → 2026-06-30T05:18:00.000Z
-- [Point-in-time key-values](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-point-time-snapshot)
-  - Updated: 2026-06-22T08:00:00.000Z → 2026-06-30T05:18:00.000Z
-- [Use Event Grid for data change notifications](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-app-configuration-event)
-  - Updated: 2023-03-15T00:00:00.000Z → 2026-06-30T05:18:00.000Z
-- [Python](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-telemetry-python)
-  - Updated: 2025-07-22T22:09:00.000Z → 2026-07-01T23:48:00.000Z
-- [Move a resource between Azure regions](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-move-resource-between-regions)
-  - Updated: 2024-04-12T08:00:00.000Z → 2026-06-30T05:18:00.000Z
-- [Private endpoints](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-private-endpoint)
-  - Updated: 2026-06-22T08:00:00.000Z → 2026-06-30T05:18:00.000Z
-- [Set up private endpoints](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-set-up-private-access)
-  - Updated: 2024-04-12T08:00:00.000Z → 2026-06-30T05:18:00.000Z
-- [Network security perimeter](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-network-security-perimeter)
-  - Updated: 2026-06-15T22:19:00.000Z → 2026-06-30T05:18:00.000Z
-- [Associate with a network security perimeter](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-set-up-network-security-perimeter)
-  - Updated: 2026-06-16T17:13:00.000Z → 2026-06-30T05:18:00.000Z
-- [Add Managed Identities](https://learn.microsoft.com/en-us/azure/azure-app-configuration/overview-managed-identity)
-  - Updated: 2024-05-24T08:00:00.000Z → 2026-06-30T05:18:00.000Z
-- [Encrypt data using customer-managed keys](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-customer-managed-keys)
-  - Updated: 2026-06-22T08:00:00.000Z → 2026-06-30T05:18:00.000Z
-- [Feature flag telemetry reference](https://learn.microsoft.com/en-us/azure/azure-app-configuration/feature-flag-telemetry-reference)
-  - Updated: 2025-06-27T22:11:00.000Z → 2026-06-30T05:18:00.000Z
 
 ## Classified Pages
 

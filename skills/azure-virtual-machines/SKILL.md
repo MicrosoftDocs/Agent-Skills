@@ -1,9 +1,9 @@
 ---
 name: azure-virtual-machines
-description: Expert knowledge for Azure Virtual Machines development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when choosing VM sizes, disks, Spot/Reserved, HPC/GPU setups, Oracle workloads, or Trusted Launch security, and other Azure Virtual Machines related development tasks. Not for Azure Cloud Services (use azure-cloud-services), Azure Virtual Machine Scale Sets (use azure-vm-scalesets), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Data Science Virtual Machines (use azure-data-science-vm).
+description: Expert knowledge for Azure Virtual Machines development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when choosing VM sizes, disks, GPU/HPC configs, Oracle workloads, or CLI/PowerShell/REST automation, and other Azure Virtual Machines related development tasks. Not for Azure Data Science Virtual Machines (use azure-data-science-vm), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Virtual Machine Scale Sets (use azure-vm-scalesets), Azure VMware Solution (use azure-vmware-solution).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-05"
+  generated_at: "2026-07-12"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Virtual Machines Skill
@@ -26,13 +26,13 @@ This skill requires **network access** to fetch documentation content:
 |----------|----------|-------------|
 | Troubleshooting | L37-L67 | Diagnosing and fixing Azure VM issues: kernel/AKS, package upgrades, Spot/scale set errors, extensions, hibernation, cloud-init, disk encryption, NSG traffic, gallery, and Trusted Launch. |
 | Best Practices | L68-L99 | Best practices for operating, updating, scaling, tuning, and cost-optimizing Azure VMs (Linux/Windows, HPC, InfiniBand, disks, images) and improving performance, HA, and boot times. |
-| Decision Making | L100-L169 | Guidance for choosing VM, disk, OS, and image options; planning costs, reservations, and Spot; and designing or migrating Linux, GPU, Oracle, and AKS workloads and retired VM series. |
-| Architecture & Design Patterns | L170-L184 | Design patterns for Azure VM workloads: multi-region and fleet strategies, low-latency/NUMA-aware HPC, clustered/shared-disk setups, and Oracle/OpenShift architectures and DR. |
-| Limits & Quotas | L185-L391 | VM size specs, disk and storage performance limits, host packing capacities, GPU/HPC VM limits, quotas, and behavior/constraints of Azure VM resources and images. |
-| Security | L392-L469 | Securing Azure VMs and disks: encryption (ADE, CMK, encryption at host, double encryption), Key Vault and certificates, MSP/metadata hardening, Trusted Launch, RBAC/Policy, and secure image/gallery sharing. |
-| Configuration | [configuration.md](configuration.md) | Configuring Azure VMs and scale sets: OS images, disks, networking, agents/extensions, HPC/GPU, maintenance, telemetry/monitoring, Oracle workloads, and Linux/Windows VM runtime settings. |
+| Decision Making | L100-L170 | Guidance for choosing Azure VM/AKS/Oracle/HPC configurations, costs, images, and disk options, plus detailed migration and retirement planning for OSes, VM sizes, GPUs, and hosts. |
+| Architecture & Design Patterns | L171-L185 | Design patterns for Azure VM workloads: multi-region and fleet strategies, low-latency/NUMA-aware HPC, clustered/shared-disk setups, and Oracle/OpenShift architectures and DR. |
+| Limits & Quotas | L186-L391 | VM size specs, disk and storage performance limits, host packing capacities, GPU/HPC VM limits, vCPU quotas, and behavior/constraints of disks, images, and VM states. |
+| Security | L392-L469 | Securing Azure VMs and disks: encryption (ADE, CMK, encryption at host), Key Vault, certificates, Trusted Launch, MSP metadata controls, RBAC/Policy, and secure image/gallery sharing. |
+| Configuration | [configuration.md](configuration.md) | Configuring Azure VMs and scale sets: OS images, disks, networking, agents/extensions, HPC/GPU, maintenance, monitoring/telemetry, Oracle workloads, and Linux/Windows VM runtime settings. |
 | Integrations & Coding Patterns | [integrations.md](integrations.md) | Scripts and patterns for managing Azure VMs and disks via CLI/PowerShell/REST, including backups, snapshots, encryption, maintenance events, monitoring, and Oracle/SQL integrations. |
-| Deployment | [deployment.md](deployment.md) | Deploying and migrating Azure VMs and disks: image customization, blue‑green/rolling deployments, in‑place OS upgrades, storage/region/zone moves, and handling VM SKU retirements. |
+| Deployment | [deployment.md](deployment.md) | Guides for deploying and migrating Azure VMs: image customization, disk and snapshot moves, availability/zonal changes, in-place OS upgrades, and blue-green/rolling deployments. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -138,10 +138,11 @@ This skill requires **network access** to fetch documentation content:
 | Choose instance size flexibility for Azure Reserved VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/reserved-vm-instance-size-flexibility |
 | Plan for Azure NV-series GPU VM retirement and migration | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nv-series |
 | Prepare for Azure NVv3 GPU VM retirement and options | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nvv3-series |
-| Plan migration from retiring NVv3 GPU VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nvv3-series-retirement |
 | Review previous-generation Azure VM size series | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/previous-gen-sizes-list |
 | Plan migration from Av1 to Av2 Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/retirement/av1-series-retirement |
+| Plan migration from retiring DCccv5 VM sizes | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/retirement/dcccv5-series-retirement |
 | Plan migration from DCsv2 to newer Azure VM series | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/retirement/dcsv2-series-retirement |
+| Select replacements for retiring ECccv5 VM sizes | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/retirement/ecccv5-series-retirement |
 | Migrate Azure HBv2-series VMs before retirement deadline | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/retirement/hbv2-series-retirement |
 | Plan migration from HC-series to newer Azure HPC VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/retirement/hc-series-retirement |
 | Plan migration for Msv2 and Mdsv2 isolated VM retirement | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/retirement/msv2-mdsv2-retirement |
@@ -295,8 +296,7 @@ This skill requires **network access** to fetch documentation content:
 | Reference specs for Azure Dv4 VM sizes | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dv4-series |
 | Reference Dv5 Azure VM size specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dv5-series |
 | Reference specs for NC family GPU-optimized VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nc-family |
-| Use NC_RTXPRO6000BSE_v6 VM sizes and specs | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nc-rtxpro6000-bse-v6-series |
-| NC_RTXPRO6000BSE_v6 GPU VM size specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nc-rtxpro6000-bse-v6-series-overview |
+| Reference VM specs for NC RTX PRO 6000 BSE v6 | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nc-rtxpro6000-bse-v6-series |
 | Reference NC A100 v4 GPU VM size specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nca100v4-series |
 | Review NCads H100 v5 GPU VM size limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/ncadsh100v5-series |
 | Reference NCasT4 v3 GPU VM specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/ncast4v3-series |

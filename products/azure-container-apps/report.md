@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-05'
+generated_at: '2026-07-12'
 category_descriptions:
   security: 'Securing Container Apps: auth (Entra, social, OIDC, mTLS, certs), identities/secrets,
     network controls (NSG, firewall, private endpoints), and policy/best-practice
@@ -78,8 +78,8 @@ confusable_not_for: Not for Azure Container Instances (use azure-container-insta
 
 ### Updated Pages
 
-- [Container Apps frequently asked questions](https://learn.microsoft.com/en-us/azure/container-apps/faq)
-  - Updated: 2025-12-23T06:12:00.000Z → 2026-06-30T22:12:00.000Z
+- [About Azure Container Apps](https://learn.microsoft.com/en-us/azure/container-apps/overview)
+  - Updated: 2026-03-31T08:00:00.000Z → 2026-07-07T22:18:00.000Z
 
 ## Classified Pages
 
@@ -307,12 +307,12 @@ confusable_not_for: Not for Azure Container Instances (use azure-container-insta
 | [Overview](https://learn.microsoft.com/en-us/azure/container-apps/javascript-overview) | 0.20 | High-level JavaScript overview; mostly conceptual and marketing-style description of capabilities. |
 | [Overview](https://learn.microsoft.com/en-us/azure/container-apps/scale-app) | 0.20 | Appears to be a general overview of scaling behavior in Azure Container Apps and KEDA, without mention of specific numeric limits, configuration parameter tables, or detailed error/diagnostic information. |
 | [Visual Studio](https://learn.microsoft.com/en-us/azure/container-apps/deploy-visual-studio) | 0.20 | Tutorial-style deployment walkthrough from Visual Studio without matrices, tier constraints, or detailed configuration tables; focuses on step-by-step actions rather than expert-only limits, settings, or decision criteria. |
-| [About Azure Container Apps](https://learn.microsoft.com/en-us/azure/container-apps/overview) | 0.10 | High-level overview of Azure Container Apps scenarios and benefits; no specific limits, configs, error codes, or decision matrices. |
 | [Introduction to containers](https://learn.microsoft.com/en-us/azure/container-apps/java-containers-intro) | 0.10 | Intro to containers for Java is conceptual and generic; not specific to Container Apps configuration or limits. |
 | [Introduction to containers](https://learn.microsoft.com/en-us/azure/container-apps/start-containers) | 0.10 | Introductory explanation of containers and motivations; no product-specific limits, configs, or troubleshooting content. |
 | [Overview](https://learn.microsoft.com/en-us/azure/container-apps/java-overview) | 0.10 | High-level overview of running Java on Azure Container Apps with benefits and general capabilities; no specific limits, configuration tables, error codes, or decision matrices that meet the expert-knowledge criteria. |
 | [Samples](https://learn.microsoft.com/en-us/azure/container-apps/samples) | 0.10 | Index page listing sample scenarios; primarily navigation to other content. No indication of limits, configuration tables, troubleshooting mappings, or decision matrices. |
 | [Use serverless containers](https://learn.microsoft.com/en-us/azure/container-apps/start-serverless-containers) | 0.10 | Conceptual overview of serverless containers and scaling; lacks specific configuration parameters or numeric thresholds. |
 | [What's new](https://learn.microsoft.com/en-us/azure/container-apps/whats-new) | 0.10 | What's new page is a changelog/announcements; not a stable expert-knowledge reference for configuration, limits, or troubleshooting. |
+| [About Azure Container Apps](https://learn.microsoft.com/en-us/azure/container-apps/overview) | - | High-level conceptual overview of Azure Container Apps scenarios and benefits without specific limits, configuration parameters, error codes, or decision matrices. |
 | [Azure Container Apps extension release notes](https://learn.microsoft.com/en-us/azure/container-apps/container-apps-extension-release-notes) | - | Extension release notes behind authorization; even if detailed, they are versioned change logs, not core skill reference content. |
 | [Express frequently asked questions](https://learn.microsoft.com/en-us/azure/container-apps/express-faq) | - | FAQ/preview overview for Azure Container Apps express; based on description it does not clearly indicate presence of numeric limits, configuration tables, error-code mappings, or other detailed expert-only data required by any sub-skill type. |

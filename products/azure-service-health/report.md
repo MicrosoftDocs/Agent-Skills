@@ -40,9 +40,9 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 - **Unclassified**: 28
 
 ### Incremental Update
-- **New Pages**: 2
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 47
+- **Unchanged**: 49
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-health/azure-service-health.csv`
 
@@ -59,11 +59,6 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 | *(Unclassified)* | 28 | 57.1% |
 
 ## Changes
-
-### New Pages
-
-- [Service Health guidance for alerting retirements](https://learn.microsoft.com/en-us/azure/service-health/service-retirement-alerting-guidance)
-- [How to identify impacted resources for service retirements with ARG](https://learn.microsoft.com/en-us/azure/service-health/service-retirement-unified-impact-queries)
 
 ## Classified Pages
 

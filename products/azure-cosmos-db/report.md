@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-07-05'
+generated_at: '2026-07-12'
 category_descriptions:
-  integrations: 'SDK usage, integrations, and patterns for Cosmos DB (NoSQL, Mongo,
-    Cassandra, Gremlin, PostgreSQL, DocumentDB): client code, bulk ops, change feed,
-    Kafka/Spark, vector search, migration, and tooling.'
+  integrations: SDK usage, integrations, and patterns for connecting apps and tools
+    to Cosmos DB (NoSQL, Mongo, Cassandra, PostgreSQL), including bulk ops, change
+    feed, Kafka/Spark/BI, vector/search, and migration.
   security: 'Securing Cosmos DB across all APIs: identity/RBAC, network isolation,
     encryption/CMK, auditing, firewall/TLS, data masking, Defender/Policy governance,
     and PostgreSQL/Cassandra/Mongo-specific hardening.'
@@ -31,13 +31,14 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Cosmos DB development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  using Cosmos DB NoSQL/Mongo/Cassandra APIs, change feed, multi-region/vector search,
-  or AI/RAG workloads, and other Azure Cosmos DB related development tasks. Not for
-  Azure Table Storage (use azure-table-storage), Azure SQL Database (use azure-sql-database),
+  using Cosmos DB NoSQL/Mongo/Cassandra/PostgreSQL APIs, change feed, multi-region,
+  vector search, or migrations, and other Azure Cosmos DB related development tasks.
+  Not for Azure Table Storage (use azure-table-storage), Azure SQL Database (use azure-sql-database),
   Azure SQL Managed Instance (use azure-sql-managed-instance), Azure Database for
   PostgreSQL (use azure-database-postgresql).
-use_when: Use when using Cosmos DB NoSQL/Mongo/Cassandra APIs, change feed, multi-region/vector
-  search, or AI/RAG workloads, and other Azure Cosmos DB related development tasks.
+use_when: Use when using Cosmos DB NoSQL/Mongo/Cassandra/PostgreSQL APIs, change feed,
+  multi-region, vector search, or migrations, and other Azure Cosmos DB related development
+  tasks.
 confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure SQL
   Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance),
   Azure Database for PostgreSQL (use azure-database-postgresql).
@@ -53,9 +54,9 @@ confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure
 - **Unclassified**: 230
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 1
-- **Unchanged**: 835
+- **Unchanged**: 836
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cosmos-db/azure-cosmos-db.csv`
 
@@ -65,10 +66,10 @@ confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure
 |------|-------|------------|
 | architecture-patterns | 28 | 3.3% |
 | best-practices | 63 | 7.5% |
-| configuration | 126 | 15.1% |
+| configuration | 125 | 14.9% |
 | decision-making | 58 | 6.9% |
 | deployment | 27 | 3.2% |
-| integrations | 148 | 17.7% |
+| integrations | 149 | 17.8% |
 | limits-quotas | 37 | 4.4% |
 | security | 69 | 8.2% |
 | troubleshooting | 51 | 6.1% |
@@ -76,14 +77,10 @@ confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure
 
 ## Changes
 
-### New Pages
-
-- [Read query explain output](https://learn.microsoft.com/en-us/azure/documentdb/how-to-read-explain-output)
-
 ### Updated Pages
 
-- [Semantic Reranker (preview)](https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/semantic-reranker)
-  - Updated: 2026-06-02T18:53:00.000Z → 2026-06-29T17:12:00.000Z
+- [Full text search overview](https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/full-text-search)
+  - Updated: 2026-04-27T13:06:00.000Z → 2026-07-08T22:13:00.000Z
 
 ## Classified Pages
 
@@ -384,7 +381,6 @@ confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure
 | [Find request unit charge](https://learn.microsoft.com/en-us/azure/cosmos-db/find-request-unit-charge) | integrations | 0.70 | Provides SDK-specific code and response header/property names to read RU charges across .NET, Java, Python, Node.js, and Go—detailed API parameter usage. |
 | [Find request unit charge](https://learn.microsoft.com/en-us/azure/cosmos-db/table/find-request-unit-charge) | configuration | 0.70 | RU charge article explains how to retrieve and interpret request unit consumption via SDKs and portal, including specific headers/properties and patterns unique to Cosmos DB. |
 | [Frequently asked questions](https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/faq) | limits-quotas | 0.70 | FAQ explicitly mentions throughput limits, supported regions, and configuration details; such pages typically list concrete numeric limits and region matrices. |
-| [Full text search overview](https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/full-text-search) | configuration | 0.70 | Full-text search feature article; likely details indexing policy settings, search parameters, and BM25-related options specific to Cosmos DB. |
 | [Fuzzy search](https://learn.microsoft.com/en-us/azure/documentdb/full-text-search-fuzzy) | integrations | 0.70 | Explains fuzzy search via bounded Levenshtein edit distance for $search+text, which implies product-specific query parameters (for distance, options) and examples. This is a concrete search integration pattern rather than conceptual theory. |
 | [Get started](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-dotnet-get-started) | integrations | 0.70 | Shows concrete .NET SDK configuration (client options, connection strings, preferred regions) specific to Cosmos DB, beyond generic HTTP client usage. |
 | [Get started](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-javascript-get-started) | integrations | 0.70 | Shows npm package usage and client configuration (endpoint, keys, options) specific to the Cosmos DB JavaScript SDK. |
@@ -533,6 +529,7 @@ confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure
 | [Bulk executor - Java library](https://learn.microsoft.com/en-us/azure/cosmos-db/bulk-executor-java) | integrations | 0.68 | Page describes using the Azure Cosmos DB Java V4 SDK bulk executor library for bulk import/update, which involves product-specific SDK usage patterns and configuration unique to Cosmos DB bulk operations, fitting the integrations & coding patterns category. |
 | [Change partition key](https://learn.microsoft.com/en-us/azure/cosmos-db/change-partition-key) | configuration | 0.68 | Page describes the product-specific capability and procedure to change the partition key of an existing Azure Cosmos DB for NoSQL container, including constraints and operational details that are not generic database knowledge. This is primarily about how to reconfigure a core setting (partition key) of a Cosmos DB container rather than general concepts, so it best fits the configuration sub-skill. |
 | [Data residency](https://learn.microsoft.com/en-us/azure/cosmos-db/data-residency) | security | 0.68 | Explains how to keep data and backups in a single region, which requires specific configuration options (region selection, backup settings) tied to compliance and data residency. |
+| [Full text search overview](https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/full-text-search) | integrations | 0.68 | The page describes product-specific full-text search behavior and configuration for Azure Cosmos DB for NoSQL, including how best matching 25 scoring is applied and how to structure queries. This is detailed, service-specific integration/query behavior that goes beyond generic full-text search concepts and would be considered expert knowledge for using this feature correctly. |
 | [Latest restorable timestamp](https://learn.microsoft.com/en-us/azure/cosmos-db/latest-restore-timestamp-continuous-backup) | integrations | 0.68 | Describes a specific API, including request/response formats and parameters for latest restorable timestamp, which are SDK/API-level integration details unique to Cosmos DB continuous backup. |
 | [Understanding multi-region writes](https://learn.microsoft.com/en-us/azure/cosmos-db/multi-region-writes) | architecture-patterns | 0.68 | Describes when and how to use multi-region writes in Cosmos DB for near-zero downtime, including product-specific behavior and trade-offs between availability and consistency. This is architecture guidance specific to Cosmos DB rather than generic concepts. |
 | [Using .NET bulk support](https://learn.microsoft.com/en-us/azure/cosmos-db/tutorial-dotnet-bulk-import) | deployment | 0.68 | Bulk import tutorial typically includes specific SDK patterns (bulk executor, parallelism settings) and throughput considerations, which are deployment/ingestion patterns with configuration-like details. |

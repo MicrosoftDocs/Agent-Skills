@@ -1,37 +1,36 @@
 ---
-generated_at: '2026-06-14'
+generated_at: '2026-07-12'
 category_descriptions:
   integrations: Guidance on generating signed SBOMs for container images, attaching
     them in CI/CD, and integrating software supply chain security into deployment
     workflows.
-  configuration: 'Configuring Azure security features: container scanning (Dependabot/Copacetic),
-    firewall rules via domain patterns, customer-managed keys, security logging/auditing,
-    and managed TLS/DCV changes.'
+  configuration: 'Configuring Azure security features: container vulnerability tools,
+    firewall rules via domain patterns, customer-managed encryption keys, security
+    logging/auditing, and upcoming TLS/DCV changes.'
   deployment: Guides for signing and verifying container images with Notation in Azure
     Pipelines/GitHub Actions, plus comparing security feature availability in Azure
     vs Azure Government.
-  security: 'Securing Azure workloads: threat modeling mitigations, auth/crypto/logging
-    best practices, AKS image validation, ransomware defense, Customer Lockbox, firewall/antimalware,
-    and data protection.'
-  best-practices: 'End-to-end Azure security hardening guidance: identity, network,
-    data, PaaS/IaaS apps, secrets, ransomware defenses, incident response, and service-specific
-    security checklists.'
-  decision-making: Guidance on which Azure services support customer-managed keys
-    and how to choose the right key management approach (Key Vault, managed HSM, encryption
-    options) for your workloads.
+  security: 'Securing Azure workloads: threat modeling mitigations, identity/access,
+    data protection, ransomware defense, firewall/antimalware, certificates, backup,
+    and operational security best practices.'
+  best-practices: 'Azure security hardening guidance for IaaS/PaaS: network, data,
+    app, secrets, ransomware, incident response, and service‑specific checklists (SQL,
+    Storage, App Service, Service Fabric).'
+  decision-making: Guidance on selecting Azure key management options (Key Vault,
+    managed HSM, app-level keys), comparing security, compliance, performance, and
+    integration trade-offs.
 skill_description: Expert knowledge for Azure Security development including best
   practices, decision making, security, configuration, integrations & coding patterns,
-  and deployment. Use when securing AKS images, CMK/Key Vault encryption, Notation
-  signing, SBOM workflows, or Customer Lockbox, and other Azure Security related development
-  tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure Firewall
-  (use azure-firewall), Azure DDos Protection (use azure-ddos-protection), Azure Web
-  Application Firewall (use azure-web-application-firewall).
-use_when: Use when securing AKS images, CMK/Key Vault encryption, Notation signing,
-  SBOM workflows, or Customer Lockbox, and other Azure Security related development
-  tasks.
+  and deployment. Use when securing Azure containers, Key Vault/HSM keys, firewalls,
+  TLS/certs, or Gov vs commercial deployments, and other Azure Security related development
+  tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure Sentinel
+  (use azure-sentinel), Azure Firewall (use azure-firewall), Azure Web Application
+  Firewall (use azure-web-application-firewall).
+use_when: Use when securing Azure containers, Key Vault/HSM keys, firewalls, TLS/certs,
+  or Gov vs commercial deployments, and other Azure Security related development tasks.
 confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-cloud),
-  Azure Firewall (use azure-firewall), Azure DDos Protection (use azure-ddos-protection),
-  Azure Web Application Firewall (use azure-web-application-firewall).
+  Azure Sentinel (use azure-sentinel), Azure Firewall (use azure-firewall), Azure
+  Web Application Firewall (use azure-web-application-firewall).
 ---
 # Azure Security Crawl Report
 
@@ -45,8 +44,8 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 126
+- **Updated Pages**: 11
+- **Unchanged**: 115
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-security/azure-security.csv`
 
@@ -54,15 +53,40 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| best-practices | 18 | 14.3% |
-| configuration | 4 | 3.2% |
-| decision-making | 2 | 1.6% |
+| best-practices | 16 | 12.7% |
+| configuration | 5 | 4.0% |
+| decision-making | 1 | 0.8% |
 | deployment | 4 | 3.2% |
 | integrations | 1 | 0.8% |
-| security | 26 | 20.6% |
+| security | 28 | 22.2% |
 | *(Unclassified)* | 71 | 56.3% |
 
 ## Changes
+
+### Updated Pages
+
+- [Physical security](https://learn.microsoft.com/en-us/azure/security/fundamentals/physical-security)
+  - Updated: 2025-04-16T08:00:00.000Z → 2026-07-08T08:00:00.000Z
+- [Encryption at rest](https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-atrest)
+  - Updated: 2026-04-20T08:00:00.000Z → 2026-07-09T22:04:00.000Z
+- [Security overview](https://learn.microsoft.com/en-us/azure/security/fundamentals/identity-management-overview)
+  - Updated: 2026-05-05T08:00:00.000Z → 2026-07-08T22:31:00.000Z
+- [Best practices](https://learn.microsoft.com/en-us/azure/security/fundamentals/identity-management-best-practices)
+  - Updated: 2026-05-05T08:00:00.000Z → 2026-07-08T22:31:00.000Z
+- [Security checklist](https://learn.microsoft.com/en-us/azure/security/fundamentals/steps-secure-identity)
+  - Updated: 2024-09-06T08:00:00.000Z → 2026-07-08T22:31:00.000Z
+- [Best practices for protecting secrets](https://learn.microsoft.com/en-us/azure/security/fundamentals/secrets-best-practices)
+  - Updated: 2026-05-05T08:00:00.000Z → 2026-07-09T22:04:00.000Z
+- [Data security and encryption](https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-overview)
+  - Updated: 2026-05-05T08:00:00.000Z → 2026-07-09T22:04:00.000Z
+- [Key management in Azure](https://learn.microsoft.com/en-us/azure/security/fundamentals/key-management)
+  - Updated: 2026-05-05T08:00:00.000Z → 2026-07-09T22:04:00.000Z
+- [Choosing a key management solution](https://learn.microsoft.com/en-us/azure/security/fundamentals/key-management-choose)
+  - Updated: 2026-04-07T08:00:00.000Z → 2026-07-09T22:04:00.000Z
+- [Services supporting CMKs](https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-customer-managed-keys-support)
+  - Updated: 2026-05-15T08:00:00.000Z → 2026-07-08T08:00:00.000Z
+- [Data encryption models](https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-models)
+  - Updated: 2026-04-20T08:00:00.000Z → 2026-07-09T22:04:00.000Z
 
 ## Classified Pages
 
@@ -74,6 +98,7 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | [Azure App Service for PaaS](https://learn.microsoft.com/en-us/azure/security/fundamentals/paas-applications-using-app-services) | best-practices | 0.75 | App Service–specific security best practices for PaaS apps; includes concrete configuration and usage patterns unique to this service. |
 | [Azure Service Fabric security](https://learn.microsoft.com/en-us/azure/security/fundamentals/service-fabric-best-practices) | best-practices | 0.75 | Prescriptive guidance for securing Service Fabric clusters; includes product-specific configuration and deployment recommendations. |
 | [Best practices - IaaS workloads](https://learn.microsoft.com/en-us/azure/security/fundamentals/iaas) | best-practices | 0.75 | Explicitly a security best-practices article for IaaS VMs and OSs, based on consensus and Azure platform capabilities. Likely includes Azure-specific recommendations and patterns beyond generic guidance. |
+| [Choosing a key management solution](https://learn.microsoft.com/en-us/azure/security/fundamentals/key-management-choose) | decision-making | 0.75 | Explicitly focused on selecting between Key Vault, Managed HSM, Cloud HSM, and Payment HSM based on scenarios, compliance, and cost; likely includes comparison/decision guidance beyond generic descriptions. |
 | [DB best practices for PaaS](https://learn.microsoft.com/en-us/azure/security/fundamentals/paas-applications-using-sql) | best-practices | 0.75 | Security best practices for Azure SQL Database and Synapse in PaaS scenarios; includes concrete service-specific controls and patterns. |
 | [Securing AKS workloads: Validating container image signatures with Ratify and Azure Policy](https://learn.microsoft.com/en-us/azure/security/container-secure-supply-chain/articles/validating-image-signatures-using-ratify-aks) | security | 0.75 | Describes configuring Ratify and Azure Policy on AKS; likely includes specific policy definitions, CRDs, configuration fields, and RBAC scopes unique to this security scenario. |
 | [Authentication](https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool-authentication) | security | 0.72 | Page focuses on concrete authentication mitigations in Microsoft Threat Modeling Tool, including product-specific guidance and code examples for secure authentication patterns. This is security-configuration guidance rather than generic concepts, but does not center on limits, deployment, or troubleshooting. |
@@ -83,11 +108,9 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | [Azure Marketplace images](https://learn.microsoft.com/en-us/azure/security/fundamentals/azure-marketplace-images) | best-practices | 0.70 | Security configuration requirements for Marketplace images; includes concrete recommendations and likely specific settings that are product- and process-specific. |
 | [Azure Storage for PaaS](https://learn.microsoft.com/en-us/azure/security/fundamentals/paas-applications-using-storage) | best-practices | 0.70 | Explicitly a set of Azure Storage security best practices for PaaS apps, derived from Azure and customer experience. Contains product-specific recommendations and patterns. |
 | [Best practices](https://learn.microsoft.com/en-us/azure/security/fundamentals/data-encryption-best-practices) | best-practices | 0.70 | Explicit best-practices article for data security and encryption aligned with Azure capabilities and Zero Trust. Likely includes Azure-specific recommendations and patterns. |
-| [Best practices](https://learn.microsoft.com/en-us/azure/security/fundamentals/identity-management-best-practices) | best-practices | 0.70 | Explicitly a best-practices article for Azure identity and access control. While summary is high-level, this type of page typically contains concrete Entra ID recommendations, product-specific patterns, and gotchas beyond generic security advice. |
 | [Best practices](https://learn.microsoft.com/en-us/azure/security/fundamentals/network-best-practices) | best-practices | 0.70 | The page is explicitly a set of Azure-specific network security best practices, derived from platform and customer experience. It provides concrete, product-specific DO and DON'T guidance for securing Azure networking using built-in capabilities, which qualifies as expert knowledge beyond generic security concepts. |
 | [Best practices](https://learn.microsoft.com/en-us/azure/security/fundamentals/operational-best-practices) | best-practices | 0.70 | Operational best practices for protecting Azure data, apps, and assets; includes Azure-specific recommendations and controls aligned to Zero Trust. |
-| [Best practices for protecting secrets](https://learn.microsoft.com/en-us/azure/security/fundamentals/secrets-best-practices) | best-practices | 0.70 | Guidance on protecting secrets across code, repos, logs, and CI/CD, compiled from multiple Azure services and MCSB. This is prescriptive, product-specific best-practices content. |
-| [Choosing a key management solution](https://learn.microsoft.com/en-us/azure/security/fundamentals/key-management-choose) | decision-making | 0.70 | Article explicitly aims to help choose between Azure Key Vault, Managed HSM, Cloud HSM, and Payment HSM based on scenarios and requirements. This is product-specific technology selection guidance. While the summary doesn’t show numbers, such comparison/flowchart content typically includes concrete decision criteria and scenario-based recommendations unique to these services, fitting the decision-making sub-skill. |
+| [Best practices for protecting secrets](https://learn.microsoft.com/en-us/azure/security/fundamentals/secrets-best-practices) | best-practices | 0.70 | Provides detailed, Azure-specific guidance for discovering, storing, rotating, and monitoring secrets, aggregating service-level recommendations and Cloud Security Benchmark controls. |
 | [Communication security](https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool-communication-security) | security | 0.70 | Covers communication security mitigations and code examples mapped to Threat Modeling Tool threats, representing Azure/Microsoft-specific security implementation details. |
 | [Configuration management](https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool-configuration-management) | security | 0.70 | Provides mitigation information and examples for configuration-management-related threats identified by the Threat Modeling Tool, which are concrete security configuration patterns. |
 | [Cryptography](https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool-cryptography) | security | 0.70 | Contains cryptography-specific mitigation guidance and code examples aligned to Threat Modeling Tool threats, including product-specific security settings and usage patterns. |
@@ -99,9 +122,7 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | [Prepare for an attack](https://learn.microsoft.com/en-us/azure/security/fundamentals/ransomware-prepare) | best-practices | 0.70 | Preparation guidance for ransomware in Azure typically includes actionable, Azure-specific steps (such as configuring certain services, policies, or recovery options) that go beyond generic advice, aligning with product-specific best practices. |
 | [Security checklist](https://learn.microsoft.com/en-us/azure/security/fundamentals/database-security-checklist) | best-practices | 0.70 | Checklist of concrete security controls for Azure SQL Database and Managed Instance; product-specific, actionable items. |
 | [Security checklist](https://learn.microsoft.com/en-us/azure/security/fundamentals/operational-checklist) | security | 0.70 | Checklist-style page with concrete, product-specific operational security actions and configurations for Azure environments, going beyond generic concepts into actionable guidance. |
-| [Security checklist](https://learn.microsoft.com/en-us/azure/security/fundamentals/steps-secure-identity) | best-practices | 0.70 | Actionable checklist for securing Microsoft Entra identity infrastructure; contains concrete steps and product-specific controls rather than just concepts. |
 | [Sensitive data](https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool-sensitive-data) | security | 0.70 | Sensitive-data mitigation guidance and examples are mapped to Threat Modeling Tool threats, representing concrete, Azure/Microsoft-specific security practices. |
-| [Services supporting CMKs](https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-customer-managed-keys-support) | decision-making | 0.70 | The page is essentially a service support matrix listing which specific Azure services integrate with customer-managed keys via Key Vault or Managed HSM. This is product-specific, up-to-date expert knowledge that an LLM is unlikely to know reliably from training and is used to decide which services can meet CMK requirements. It aligns best with decision-making because it helps choose services based on CMK support, even though it doesn't include numeric limits. |
 | [Session management](https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool-session-management) | security | 0.70 | Session-management mitigation instructions and code examples are specific to threats exposed by the Threat Modeling Tool, making them specialized security configuration patterns. |
 | [Alternate email notifications](https://learn.microsoft.com/en-us/azure/security/fundamentals/customer-lockbox-alternative-email) | security | 0.65 | Describes alternate email notification feature for Customer Lockbox, including constraints (support plan, account types); specific security-related configuration behavior. |
 | [Azure features & resources that help you protect, detect, and respond](https://learn.microsoft.com/en-us/azure/security/fundamentals/ransomware-features-resources) | security | 0.65 | Enumerates Azure-native capabilities for ransomware defense; these mappings between features and attack techniques are product-specific security guidance. |
@@ -109,11 +130,13 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | [Backup and restore plan for ransomware](https://learn.microsoft.com/en-us/azure/security/fundamentals/backup-plan-to-protect-against-ransomware) | security | 0.65 | Azure-specific backup/restore planning for ransomware involves concrete use of Azure Backup, retention, and recovery configurations, which are specialized security practices. |
 | [Best practices](https://learn.microsoft.com/en-us/azure/security/fundamentals/ai-security-best-practices) | security | 0.65 | Azure AI security best practices are service-specific (Azure OpenAI, AI Foundry, ML) and include concrete Azure controls and configurations beyond generic security advice. |
 | [Best practices](https://learn.microsoft.com/en-us/azure/security/fundamentals/best-practices-and-patterns) | security | 0.65 | Aggregates Azure-specific security best practices and patterns for different resources; while summarized, it points to concrete, product-specific recommendations that go beyond generic security theory. |
+| [Best practices](https://learn.microsoft.com/en-us/azure/security/fundamentals/identity-management-best-practices) | security | 0.65 | Prescriptive, product-specific identity and access control guidance aligned to Entra ID and Zero Trust; likely includes concrete recommendations and specific Azure roles/settings beyond generic security theory. |
 | [Dangling DNS and subdomain takeover](https://learn.microsoft.com/en-us/azure/security/fundamentals/subdomain-takeover) | best-practices | 0.65 | Threat-specific mitigation guidance for subdomain takeover using Azure DNS alias records and App Service verification; includes Azure-specific steps and edge cases. |
 | [Managed TLS changes](https://learn.microsoft.com/en-us/azure/security/fundamentals/managed-tls-changes) | configuration | 0.65 | Describes concrete upcoming changes to managed TLS and domain control validation that impact how customers must configure TLS for vanity domains. |
 | [PaaS](https://learn.microsoft.com/en-us/azure/security/fundamentals/paas-deployments) | best-practices | 0.65 | Described as guidance for designing, building, and managing secure cloud applications on Azure PaaS. This is prescriptive, product-specific best-practices content. |
 | [Ransomware protection in Azure](https://learn.microsoft.com/en-us/azure/security/fundamentals/ransomware-protection) | best-practices | 0.65 | Azure-focused ransomware protection guidance is likely to include concrete, product-specific recommendations (for example, particular backup configurations, Defender for Cloud settings, or storage features) and gotchas unique to Azure, fitting the best-practices category. |
 | [Ransomware protection with Azure Firewall Premium](https://learn.microsoft.com/en-us/azure/security/fundamentals/ransomware-protection-with-azure-firewall) | security | 0.65 | Describes how to use Azure Firewall Premium specifically for ransomware protection, including product-specific rules and capabilities. |
+| [Services supporting CMKs](https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-customer-managed-keys-support) | configuration | 0.65 | Catalog of services that support CMKs and how they integrate with Key Vault/Managed HSM; typically includes service-specific support details and configuration requirements for server-side encryption. |
 | [Sign an image with Notation using GitHub Actions](https://learn.microsoft.com/en-us/azure/security/container-secure-supply-chain/articles/notation-sign-gha) | deployment | 0.65 | GitHub Actions workflow for signing images; likely includes workflow YAML, action inputs, and registry-related settings that are concrete deployment/integration configuration details. |
 | [Sign and verify a container image with Notation in Azure Pipeline](https://learn.microsoft.com/en-us/azure/security/container-secure-supply-chain/articles/notation-ado-task-sign) | deployment | 0.65 | Shows how to use the Notation Azure DevOps task in pipelines; expected to include task YAML schema, input parameters, and pipeline-specific constraints that are product-specific deployment details. |
 | [Stay up to date with container image dependencies using Dependabot](https://learn.microsoft.com/en-us/azure/security/container-secure-supply-chain/articles/container-secure-supply-chain-implementation/cssc-depenadabot-quickstart) | configuration | 0.65 | Quickstart for configuring Dependabot and Copacetic; likely contains repo-level configuration files, parameter names, and option values specific to these tools in a secure supply chain context. |
@@ -123,6 +146,7 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | [Incident response](https://learn.microsoft.com/en-us/azure/security/fundamentals/incident-response-overview) | best-practices | 0.60 | Incident response overview for Azure environments is likely to include Azure-native investigation and automated response patterns, with concrete, product-specific recommendations and workflows, which fits best-practices more than generic concepts. |
 | [Production network](https://learn.microsoft.com/en-us/azure/security/fundamentals/production-network) | security | 0.60 | Discusses security access methods and protection mechanisms for connecting to the Azure production network, which are specific security controls and patterns. |
 | [SQL Database](https://learn.microsoft.com/en-us/azure/security/fundamentals/infrastructure-sql) | security | 0.60 | Describes Azure SQL Database security capabilities, which typically include specific features (TDE, auditing, firewall, etc.) and their use; product-specific security knowledge. |
+| [Security checklist](https://learn.microsoft.com/en-us/azure/security/fundamentals/steps-secure-identity) | security | 0.60 | Action-oriented checklist for securing Entra ID with specific capabilities and steps; goes beyond conceptual overview into concrete security posture improvements. |
 
 ## Unclassified Pages
 
@@ -161,21 +185,20 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | [AI shared responsibility model](https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility-ai) | 0.30 | AI shared responsibility model is conceptual guidance; does not expose concrete configuration parameters, roles, or numeric thresholds. |
 | [Availability](https://learn.microsoft.com/en-us/azure/security/fundamentals/infrastructure-availability) | 0.30 | Infrastructure availability overview; focuses on how Azure provides redundancy and uptime, not on customer-side configuration or limits. |
 | [Components and boundaries](https://learn.microsoft.com/en-us/azure/security/fundamentals/infrastructure-components) | 0.30 | General description of Azure architecture and management boundaries; conceptual and internal, not actionable configuration or limits. |
-| [Data encryption models](https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-models) | 0.30 | Describes encryption models and their pros/cons at a conceptual level; lacks concrete configuration values, limits, or detailed decision matrices that would constitute expert knowledge. |
+| [Data encryption models](https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-models) | 0.30 | Explains encryption models and their pros/cons conceptually; summary does not indicate specific limits, configuration tables, or quantified decision criteria. |
 | [Deploy secure apps](https://learn.microsoft.com/en-us/azure/security/develop/secure-deploy) | 0.30 | Deploy-phase security best practices; summary indicates lifecycle guidance, not detailed deployment matrices or product-specific constraints. |
 | [Design secure apps](https://learn.microsoft.com/en-us/azure/security/develop/secure-design) | 0.30 | Design-phase security best practices article; summary suggests conceptual SDL questions and Azure service mentions rather than concrete, parameterized configurations. |
 | [Develop secure apps](https://learn.microsoft.com/en-us/azure/security/develop/secure-develop) | 0.30 | Develop-phase security best practices; appears to be general guidance without specific error codes, limits, or configuration tables. |
 | [Feature overview](https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool-feature-overview) | 0.30 | Feature overview of the Threat Modeling Tool; describes UI features and reports, not detailed configuration parameters or expert-only constraints. |
 | [Hypervisor security](https://learn.microsoft.com/en-us/azure/security/fundamentals/hypervisor) | 0.30 | Technical overview of Azure hypervisor security but primarily conceptual; no concrete settings, thresholds, or troubleshooting content. |
 | [Infrastructure security](https://learn.microsoft.com/en-us/azure/security/fundamentals/infrastructure) | 0.30 | Describes how Microsoft secures datacenters at a high level; largely compliance and operational overview without actionable configuration for customers. |
+| [Key management in Azure](https://learn.microsoft.com/en-us/azure/security/fundamentals/key-management) | 0.30 | Overview of key management solutions and concepts; summary suggests descriptive content rather than detailed configuration parameters or decision matrices with thresholds. |
 | [Network architecture](https://learn.microsoft.com/en-us/azure/security/fundamentals/infrastructure-network) | 0.30 | High-level description of Azure network architecture; lacks specific customer-facing configuration parameters or thresholds in the summary. |
 | [Overview](https://learn.microsoft.com/en-us/azure/security/develop/secure-dev-overview) | 0.30 | High-level secure development best practices across Azure; mostly conceptual SDL guidance without detailed product-specific parameters or limits in the summary. |
 | [Overview](https://learn.microsoft.com/en-us/azure/security/fundamentals/customer-lockbox-overview) | 0.30 | Technical overview of Customer Lockbox; summary mentions prerequisites and purpose but not detailed configuration parameters, role mappings, or limits. |
-| [Physical security](https://learn.microsoft.com/en-us/azure/security/fundamentals/physical-security) | 0.30 | Physical security overview of Azure datacenters; mostly descriptive of Microsoft controls, not customer-configurable expert knowledge. |
 | [Platform integrity and security](https://learn.microsoft.com/en-us/azure/security/fundamentals/platform) | 0.30 | Technical overview of Azure platform integrity and security focuses on how Microsoft secures the platform; primarily architectural and conceptual, without user-facing configuration parameters, limits, or troubleshooting mappings. |
 | [Trusted Hardware Identity Management](https://learn.microsoft.com/en-us/azure/security/fundamentals/trusted-hardware-identity-management) | 0.30 | Technical overview of Trusted Hardware Identity Management and its role in certificate cache management and TCB information; appears architectural/conceptual without concrete configuration parameters, limits, or troubleshooting mappings. |
 | [Double encryption](https://learn.microsoft.com/en-us/azure/security/fundamentals/double-encryption) | 0.25 | Explains the concept of double encryption and that Azure provides it for data at rest and in transit; appears conceptual without detailed configuration values or product-specific patterns. |
-| [Key management in Azure](https://learn.microsoft.com/en-us/azure/security/fundamentals/key-management) | 0.25 | Overview of key management options (platform-managed vs customer-managed). Appears conceptual, not focused on specific configuration tables, limits, or error-based troubleshooting. |
 | [Microsoft Threat Modeling tool](https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool) | 0.25 | Overview of the Threat Modeling Tool and process; primarily conceptual and marketing-style description without detailed configuration or limits. |
 | [Mitigations](https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool-mitigations) | 0.25 | Mitigations page appears to describe generic mitigation guidance for threats; summary does not indicate product-specific configuration parameters or error mappings. |
 | [Overview](https://learn.microsoft.com/en-us/azure/security/fundamentals/operational-overview) | 0.25 | Operational security overview describing frameworks and programs like SDL and MSRC; appears high-level without specific configuration parameters, limits, or error mappings. |
@@ -185,14 +208,15 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | [Azure security services](https://learn.microsoft.com/en-us/azure/security/fundamentals/services-technologies) | 0.20 | High-level overview of Azure security services and technologies with links out; primarily conceptual and navigational without detailed configurations, limits, or error mappings. |
 | [Build Stage](https://learn.microsoft.com/en-us/azure/security/container-secure-supply-chain/articles/container-secure-supply-chain-implementation/build-overview) | 0.20 | Build stage overview is about background and goals; no product-specific configuration tables, limits, or error mappings are evident. |
 | [Catalog Stage](https://learn.microsoft.com/en-us/azure/security/container-secure-supply-chain/articles/container-secure-supply-chain-implementation/catalog-overview) | 0.20 | Catalog stage overview focuses on rationale and objectives; lacks detailed settings, limits, or concrete security configurations. |
-| [Data security and encryption](https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-overview) | 0.20 | Encryption overview (at rest, in flight, key management) without evidence of detailed configuration parameters, limits, or decision matrices. |
+| [Data security and encryption](https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-overview) | 0.20 | General encryption overview (at rest, in transit, key management) without detailed limits, configuration tables, or decision matrices. |
 | [Deploy Stage](https://learn.microsoft.com/en-us/azure/security/container-secure-supply-chain/articles/container-secure-supply-chain-implementation/deploy-overview) | 0.20 | Deploy stage overview discusses validating metadata and attestations conceptually; does not show concrete policies, parameters, or decision matrices. |
-| [Encryption at rest](https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-atrest) | 0.20 | High-level overview of Azure data encryption at rest and general considerations; no concrete configuration parameters, limits, or product-specific error/decision matrices. |
+| [Encryption at rest](https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-atrest) | 0.20 | High-level overview of encryption at rest in Azure; no specific limits, configuration tables, or product-specific error codes. |
 | [Introduction](https://learn.microsoft.com/en-us/azure/security/container-secure-supply-chain/articles/container-secure-supply-chain-implementation/containers-secure-supply-chain-overview) | 0.20 | High-level introduction to the Containers Secure Supply Chain framework; conceptual overview without concrete configuration values, limits, or error details. |
 | [Isolation in the Azure cloud](https://learn.microsoft.com/en-us/azure/security/fundamentals/isolation-choices) | 0.20 | High-level explanation of isolation and multitenancy in Azure; appears conceptual without concrete configuration parameters, limits, or error mappings. |
 | [Observability](https://learn.microsoft.com/en-us/azure/security/container-secure-supply-chain/articles/container-secure-supply-chain-implementation/observability-overview) | 0.20 | Observability overview explains role of observability conceptually; no explicit metrics, configuration options, or diagnostic commands are described. |
+| [Physical security](https://learn.microsoft.com/en-us/azure/security/fundamentals/physical-security) | 0.20 | Primarily a high-level description of Azure datacenter physical security and compliance posture without product-specific configuration details, error codes, limits, or actionable settings; fits generic security concepts rather than expert, configurable guidance. |
 | [Run Stage](https://learn.microsoft.com/en-us/azure/security/container-secure-supply-chain/articles/container-secure-supply-chain-implementation/run-overview) | 0.20 | Run stage overview mentions best practices at a high level; summary indicates conceptual guidance rather than specific, product-bound configurations. |
-| [Security overview](https://learn.microsoft.com/en-us/azure/security/fundamentals/identity-management-overview) | 0.20 | Overview of identity management and Microsoft Entra ID security features; no indication of specific RBAC role lists, config values, or detailed error mappings. |
+| [Security overview](https://learn.microsoft.com/en-us/azure/security/fundamentals/identity-management-overview) | 0.20 | Conceptual overview of identity management and Entra ID security features without detailed configuration parameters or error mappings. |
 | [Security overview](https://learn.microsoft.com/en-us/azure/security/fundamentals/network-overview) | 0.20 | Network security overview describing capabilities like Azure Firewall and DDoS Protection; framed as conceptual coverage rather than detailed configuration or limits. |
 | [Threat protection](https://learn.microsoft.com/en-us/azure/security/fundamentals/threat-detection) | 0.20 | Describes Azure threat protection services at a high level; appears to be an overview of capabilities without detailed configuration parameters, limits, or error-resolution mappings. |
 | [Virtual machine security overview](https://learn.microsoft.com/en-us/azure/security/fundamentals/virtual-machines-overview) | 0.20 | Overview of security features for Azure VMs; appears to list capabilities rather than detailed best-practices, configuration matrices, or limits. |

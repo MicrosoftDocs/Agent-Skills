@@ -1,9 +1,9 @@
 ---
 name: azure-expressroute
-description: Expert knowledge for Azure ExpressRoute development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring ExpressRoute circuits/gateways, BGP routing, Global Reach, VPN coexistence, or MACsec/IPsec, and other Azure ExpressRoute related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway), Azure Internet Peering (use azure-internet-peering).
+description: Expert knowledge for Azure ExpressRoute development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring ExpressRoute circuits/gateways, BGP/NAT routing, Global Reach, IPsec/MACsec, or automation via CLI/PowerShell, and other Azure ExpressRoute related development tasks. Not for Azure Internet Peering (use azure-internet-peering), Azure Peering Service (use azure-peering-service), Azure Virtual WAN (use azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-28"
+  generated_at: "2026-07-12"
   generator: "docs2skills/1.0.0"
 ---
 # Azure ExpressRoute Skill
@@ -30,7 +30,7 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L60-L71 | Designing resilient, highly available ExpressRoute architectures, including DR patterns, multi-circuit routing/Global Reach, VPN coexistence and failover, and using Microsoft peering for PSTN. |
 | Limits & Quotas | L72-L80 | ExpressRoute limits on FastPath, gateways, routes, and provider circuits, including rate limiting, quotas, monitoring advertised routes, and FAQs on connectivity scale and constraints. |
 | Security | L81-L90 | Encryption (IPsec, MACsec), NAT rules, RBAC roles, and security best practices for protecting ExpressRoute circuits and traffic |
-| Configuration | L91-L125 | Configuring and managing ExpressRoute circuits, gateways, routing/peering, NAT, BFD, IPv6, Global Reach, monitoring, resiliency, and linking VNets using portal, PowerShell, and CLI. |
+| Configuration | L91-L125 | Configuring and managing ExpressRoute circuits, gateways, peering, routing, NAT/BGP, IPv6, Global Reach, monitoring, resiliency, and coexistence with VPN using portal, PowerShell, and CLI. |
 | Integrations & Coding Patterns | L126-L132 | Automating ExpressRoute circuit creation/management with PowerShell or Azure CLI, and configuring a site-to-site VPN that runs over ExpressRoute Microsoft peering. |
 | Deployment | L133-L140 | Guides for deploying and migrating ExpressRoute circuits/gateways, including ARM/Terraform provisioning, Direct SKUs, and moving to zone-redundant or new production circuits. |
 
@@ -93,7 +93,7 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Establish private ExpressRoute peering to an Azure VNet | https://learn.microsoft.com/en-us/azure/expressroute/configure-expressroute-private-peering |
 | Configure customer-controlled maintenance windows for ExpressRoute gateways | https://learn.microsoft.com/en-us/azure/expressroute/customer-controlled-gateway-maintenance |
-| Configure BFD over Azure ExpressRoute peering | https://learn.microsoft.com/en-us/azure/expressroute/expressroute-bfd |
+| Configure BFD settings for Azure ExpressRoute private peering | https://learn.microsoft.com/en-us/azure/expressroute/expressroute-bfd |
 | Configure NAT on Cisco and Juniper for ExpressRoute | https://learn.microsoft.com/en-us/azure/expressroute/expressroute-config-samples-nat |
 | Router interface and BGP configuration samples for ExpressRoute | https://learn.microsoft.com/en-us/azure/expressroute/expressroute-config-samples-routing |
 | Configure Azure ExpressRoute virtual network gateways in portal | https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-add-gateway-portal-resource-manager |

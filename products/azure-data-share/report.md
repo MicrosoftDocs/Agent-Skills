@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-07-12'
 category_descriptions:
   decision-making: Guidance on estimating Azure Data Share costs, understanding pricing
     factors (shares, snapshots, storage), and planning budgets for data sharing scenarios.
@@ -11,21 +11,21 @@ category_descriptions:
   deployment: Guides for deploying Azure Data Share across regions, including disaster
     recovery setup, regional failover, and moving Data Share accounts between Azure
     regions.
-  configuration: 'Configuring Azure Data Share: adding datasets, mapping received
-    data, integrating with SQL/Synapse/Blob/Data Lake, setting up monitoring/metrics,
-    and automating via PowerShell, ARM, and Bicep.'
+  configuration: 'How to set up and manage Azure Data Share: add datasets, configure
+    mappings and storage (SQL, Synapse, Blob, Data Lake), enable monitoring, and deploy
+    via PowerShell, ARM, or Bicep.'
 skill_description: Expert knowledge for Azure Data Share development including troubleshooting,
   decision making, security, configuration, and deployment. Use when estimating Data
-  Share costs, managing invitations/RBAC, cross-region deployments, dataset mapping,
-  or automation, and other Azure Data Share related development tasks. Not for Azure
-  Data Box (use azure-data-box-family), Azure Import Export (use azure-import-export),
-  Azure Open Datasets (use azure-open-datasets), Azure Data Explorer (use azure-data-explorer).
-use_when: Use when estimating Data Share costs, managing invitations/RBAC, cross-region
-  deployments, dataset mapping, or automation, and other Azure Data Share related
-  development tasks.
-confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure Import
-  Export (use azure-import-export), Azure Open Datasets (use azure-open-datasets),
-  Azure Data Explorer (use azure-data-explorer).
+  Share costs, securing invitations, fixing share errors, configuring datasets, or
+  deploying across regions, and other Azure Data Share related development tasks.
+  Not for Azure Data Box (use azure-data-box-family), Azure Data Explorer (use azure-data-explorer),
+  Azure Data Factory (use azure-data-factory), Azure Open Datasets (use azure-open-datasets).
+use_when: Use when estimating Data Share costs, securing invitations, fixing share
+  errors, configuring datasets, or deploying across regions, and other Azure Data
+  Share related development tasks.
+confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure Data
+  Explorer (use azure-data-explorer), Azure Data Factory (use azure-data-factory),
+  Azure Open Datasets (use azure-open-datasets).
 ---
 # Azure Data Share Crawl Report
 
@@ -39,8 +39,8 @@ confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure Im
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 25
+- **Updated Pages**: 1
+- **Unchanged**: 24
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-share/azure-data-share.csv`
 
@@ -57,16 +57,21 @@ confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure Im
 
 ## Changes
 
+### Updated Pages
+
+- [Monitoring data reference](https://learn.microsoft.com/en-us/azure/data-share/monitor-data-share-reference)
+  - Updated: 2026-01-20T08:00:00.000Z → 2026-01-20T23:26:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
 | [Troubleshoot](https://learn.microsoft.com/en-us/azure/data-share/data-share-troubleshoot) | troubleshooting | 0.90 | Explicit troubleshooting article; will map specific errors and symptoms to causes and resolutions unique to Azure Data Share. |
-| [Monitoring data reference](https://learn.microsoft.com/en-us/azure/data-share/monitor-data-share-reference) | configuration | 0.85 | Monitoring data reference will list metric names, dimensions, log categories, and schemas specific to Azure Data Share, which are detailed configuration/telemetry references. |
 | [Roles and requirements](https://learn.microsoft.com/en-us/azure/data-share/concepts-roles-permissions) | security | 0.85 | Explicitly about roles and permissions; will list Azure RBAC role names, required permissions, and scopes specific to sharing and receiving data. |
 | [Configure dataset mappings](https://learn.microsoft.com/en-us/azure/data-share/how-to-configure-mapping) | configuration | 0.80 | Dataset mapping involves specifying target data stores and mapping rules; this is a product-specific configuration feature with concrete options and parameters. |
 | [Move Data Share account to new region](https://learn.microsoft.com/en-us/azure/data-share/move-to-new-region) | deployment | 0.80 | Describes using ARM templates to recreate Data Share accounts in a new region, including constraints (cannot move directly) and deployment steps specific to this service. |
 | [Add datasets](https://learn.microsoft.com/en-us/azure/data-share/how-to-add-datasets) | configuration | 0.75 | Explains how to modify an existing share by adding datasets; likely includes UI or API property names and constraints specific to Azure Data Share configuration. |
+| [Monitoring data reference](https://learn.microsoft.com/en-us/azure/data-share/monitor-data-share-reference) | configuration | 0.72 | A monitoring reference page typically lists all Azure Data Share metrics, diagnostic log categories, dimensions, and their exact names and meanings. These product-specific metric IDs, log category names, and fields are configuration/observability parameters that an LLM is unlikely to know from training. The content is organized as reference material for monitoring rather than conceptual guidance, fitting the configuration sub-skill (specific settings and parameters used to configure monitoring and diagnostics). |
 | [Add recipients](https://learn.microsoft.com/en-us/azure/data-share/how-to-add-recipients) | security | 0.70 | Describes adding recipients using Azure sign-in emails, service principals, and tenant IDs; these are identity and access-related configurations specific to the service. |
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/data-share/samples-powershell) | configuration | 0.70 | PowerShell samples will expose cmdlet names and parameter sets specific to Azure Data Share, which are product-specific configuration and management interfaces. |
 | [Disaster recovery](https://learn.microsoft.com/en-us/azure/data-share/disaster-recovery) | deployment | 0.70 | Disaster recovery guidance will include region pairing, replication, and failover configuration specific to Azure Data Share, representing deployment/DR patterns for production. |

@@ -1,9 +1,9 @@
 ---
 name: azure-cost-management
-description: Expert knowledge for Azure Cost Management development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing budgets, alerts, exports, billing accounts, reservations, or savings plans in Azure Cost Management, and other Azure Cost Management related development tasks. Not for Azure Advisor (use azure-advisor), Azure Monitor (use azure-monitor), Azure Portal (use azure-portal), Azure Impact Reporting (use azure-impact-reporting).
+description: Expert knowledge for Azure Cost Management development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing budgets/alerts, cost exports, billing accounts, reservations/savings plans, or cost APIs/scripts, and other Azure Cost Management related development tasks. Not for Azure Advisor (use azure-advisor), Azure Monitor (use azure-monitor), Azure Quotas (use azure-quotas), Azure Impact Reporting (use azure-impact-reporting).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-28"
+  generated_at: "2026-07-12"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Cost Management Skill
@@ -29,7 +29,7 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L79-L159 | Guidance for cost-related decisions: billing model migrations, EA/MCA/CSP management, reservations and savings plans, discounts, chargeback, and optimizing Azure service spend. |
 | Architecture & Design Patterns | L160-L164 | How Azure bills centrally assigned SQL Server licenses hourly, including license assignment, cost calculation, and optimization considerations |
 | Limits & Quotas | L165-L177 | Usage, timing, and granularity limits for cost data; free account and subscription spending limits; savings plan exclusions/utilization; subscription count limits; billing account dormancy/retention. |
-| Security | L178-L199 | Managing secure access, roles, and permissions for Azure billing, subscriptions, reservations, savings plans, and tax documents, including RBAC, admin elevation, and compliance (e.g., PSD2 SCA). |
+| Security | L178-L199 | RBAC and admin roles for cost data, billing accounts, EA/MCA/CSP, subscription transfers, reservations, savings plans, tax docs, and security/compliance for Azure purchases |
 | Configuration | L200-L227 | Configuring Azure Cost Management: budgets, alerts, tags, exports, cost analysis views, reservations/savings plans, billing ownership/transfers, payment methods, and EA/MCA/partner billing settings. |
 | Integrations & Coding Patterns | L228-L245 | APIs, scripts, and PowerShell patterns for automating cost analysis, billing data retrieval, and programmatic creation/management of Azure subscriptions and reservations. |
 | Deployment | L246-L249 | Configuring automated, large-scale exports of Azure cost and usage data to storage (like Azure Storage), including setup, scheduling, and management for ongoing cost analysis. |
@@ -188,7 +188,7 @@ This skill requires **network access** to fetch documentation content:
 | Assign Azure billing roles for account access | https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/manage-billing-access |
 | Understand PSD2 SCA requirements for Azure purchases | https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/open-banking-strong-customer-authentication |
 | Manage Azure Enterprise Agreement admin roles and permissions | https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/understand-ea-roles |
-| Configure billing roles for Microsoft Customer Agreement | https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/understand-mca-roles |
+| Manage billing roles for Microsoft Customer Agreements | https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/understand-mca-roles |
 | Manage tenants and secure billing access under MCA | https://learn.microsoft.com/en-us/azure/cost-management-billing/microsoft-customer-agreement/manage-tenants |
 | View Azure reservations as a Cloud Solution Provider | https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/how-to-view-csp-reservations |
 | Grant RBAC access to Azure reservations with PowerShell | https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/manage-reservations-rbac-powershell |

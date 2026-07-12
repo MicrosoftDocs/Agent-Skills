@@ -1,9 +1,9 @@
 ---
 name: azure-service-bus
-description: Expert knowledge for Azure Service Bus development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using queues/topics, sessions & partitioning, JMS/RabbitMQ integration, geo-replication, or Premium tier limits, and other Azure Service Bus related development tasks. Not for Azure Event Hubs (use azure-event-hubs), Azure Event Grid (use azure-event-grid), Azure Relay (use azure-relay), Azure Queue Storage (use azure-queue-storage).
+description: Expert knowledge for Azure Service Bus development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using queues/topics, sessions/FIFO, JMS/RabbitMQ integration, geo-replication, or Premium high-scale workloads, and other Azure Service Bus related development tasks. Not for Azure Event Hubs (use azure-event-hubs), Azure Relay (use azure-relay), Azure Notification Hubs (use azure-notification-hubs), Azure Web PubSub (use azure-web-pubsub).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-05"
+  generated_at: "2026-07-12"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Service Bus Skill
@@ -27,10 +27,10 @@ This skill requires **network access** to fetch documentation content:
 | Troubleshooting | L37-L46 | Diagnosing and fixing Service Bus errors: AMQP issues, tracing, .NET/current SDK exceptions, ARM/Resource Manager failures, and common connectivity or messaging problems. |
 | Best Practices | L47-L61 | Guidance on reliable messaging patterns: duplicates, FIFO/sessions, locks/settlement, dead-letter handling, serialization, performance tuning, prefetch, timeouts, retries, and maintenance. |
 | Decision Making | L62-L70 | Guidance on choosing Service Bus vs other messaging options, configuring geo-disaster recovery/replication, Java/JMS client choices, and migrating from Standard to Premium. |
-| Architecture & Design Patterns | L71-L80 | Patterns for resilient, geo-replicated, multi-namespace Service Bus architectures, including federation, message replication, partitioned entities, and using NServiceBus for message-driven systems. |
-| Limits & Quotas | L81-L88 | Details on Service Bus size/throughput limits, quotas, throttling behavior, and how Premium tier handles large messages and high-scale workloads. |
-| Security | L89-L111 | Securing Service Bus: auth with Entra ID/SAS/managed identities, network isolation (VNet, Private Link, firewalls, perimeters), encryption/CMK, TLS policies, and compliance/Azure Policy. |
-| Configuration | L112-L136 | Configuring Service Bus behavior: queues/topics setup, forwarding, sessions, partitioning, TTL/dead-lettering, monitoring/metrics, subscription rules, management via ARM/PowerShell/emulator. |
+| Architecture & Design Patterns | L71-L79 | Patterns for resilient, geo-replicated, multi-namespace Service Bus architectures, including federation, message replication, partitioned entities, and using NServiceBus for message-driven systems. |
+| Limits & Quotas | L80-L87 | Details on Service Bus size/throughput limits, quotas, throttling behavior, and how Premium tier handles large messages and high-scale workloads. |
+| Security | L88-L110 | Securing Service Bus: auth with Entra ID/SAS/managed identities, network isolation (VNet, Private Link, firewalls, perimeters), encryption/CMK, TLS policies, and compliance/Azure Policy. |
+| Configuration | L111-L136 | Configuring and managing Service Bus entities: forwarding, sessions, partitioning, TTL, dead-lettering, monitoring/metrics, SQL filters/actions, ARM/PowerShell, geo-replication, and local emulation. |
 | Integrations & Coding Patterns | L137-L152 | Patterns and code for integrating Service Bus with JMS (1.1/2.0), RabbitMQ, Event Grid/Logic Apps/Functions, subscription filters/actions, replication tasks, and batch message deletion. |
 | Deployment | L153-L162 | Deploying Service Bus namespaces and entities (queues, topics, subscriptions, rules) using ARM/Bicep templates, and moving namespaces across Azure regions. |
 
@@ -74,7 +74,6 @@ This skill requires **network access** to fetch documentation content:
 | Build message-driven systems on Service Bus with NServiceBus | https://learn.microsoft.com/en-us/azure/service-bus-messaging/build-message-driven-apps-nservicebus |
 | Design Service Bus federation and replication topologies | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-federation-overview |
 | Implement Service Bus message replication patterns | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-federation-patterns |
-| Design and use Azure Service Bus geo-replication | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-geo-replication |
 | Design multi-namespace Service Bus for resilience | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-outages-disasters |
 | Design and create partitioned Service Bus queues and topics | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-partitioning |
 
@@ -127,6 +126,7 @@ This skill requires **network access** to fetch documentation content:
 | Use AMQP request/response operations in Service Bus | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-amqp-request-response |
 | Configure autoforwarding between Azure Service Bus entities | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-auto-forwarding |
 | Configure Azure Functions-based Service Bus replication tasks | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-federation-configuration |
+| Configure Azure Service Bus Geo-Replication across regions | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-geo-replication |
 | Use Azure Monitor insights for Service Bus | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-insights |
 | Manage Service Bus resources with Azure PowerShell | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-manage-with-ps |
 | Programmatically manage Service Bus namespaces and entities | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-management-libraries |

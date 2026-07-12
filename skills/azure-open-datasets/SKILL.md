@@ -3,7 +3,7 @@ name: azure-open-datasets
 description: Expert knowledge for Azure Open Datasets development including limits & quotas. Use when handling non-Spark dataset downloads, throttling behavior, quota limits, retry logic, or rate-limit workarounds, and other Azure Open Datasets related development tasks. Not for Azure Data Explorer (use azure-data-explorer), Azure Synapse Analytics (use azure-synapse-analytics), Azure Databricks (use azure-databricks), Azure Machine Learning (use azure-machine-learning).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-07-12"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Open Datasets Skill

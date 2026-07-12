@@ -1,9 +1,9 @@
 ---
 name: azure-pipelines
-description: Expert knowledge for Azure Pipelines development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing YAML CI/CD, multi-stage releases, Key Vault secrets, web/Kubernetes deploys, or Git/Slack integrations, and other Azure Pipelines related development tasks. Not for Azure DevOps (use azure-devops), Azure Repos (use azure-repos), Azure Test Plans (use azure-test-plans), Azure Artifacts (use azure-artifacts).
+description: Expert knowledge for Azure Pipelines development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring YAML pipelines, agents, triggers, Key Vault secrets, or app/DB/Kubernetes deployments, and other Azure Pipelines related development tasks. Not for Azure DevOps (use azure-devops), Azure Artifacts (use azure-artifacts), Azure Boards (use azure-boards), Azure Test Plans (use azure-test-plans).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-05"
+  generated_at: "2026-07-12"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Pipelines Skill
@@ -30,9 +30,9 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L66-L73 | Guidance on end-to-end CI/CD and DevOps architectures for Azure: baseline pipeline patterns, Web App deployment design, and IaaS/VM-focused DevTest and production pipelines. |
 | Limits & Quotas | L74-L85 | Managing Azure Pipelines limits: agent quotas/concurrency, Microsoft/GitHub-hosted agent capabilities, image deprecations, parallel jobs, run retention, and large Universal Package handling. |
 | Security | L86-L144 | Securing Azure Pipelines: auth for agents and service connections, secret/Key Vault handling, permissions/approvals, artifact/repo protection, and built‑in security/scanning tasks. |
-| Configuration | L145-L503 | Configuring Azure Pipelines: agents, triggers, variables, YAML structure, environments, jobs/steps, artifacts, and detailed task input references for build, test, and deployment tasks. |
+| Configuration | L145-L503 | Configuring Azure Pipelines: agents, triggers, variables, YAML structure, environments, deployment strategies, artifacts, tasks, and detailed task input/reference for many built-in tasks. |
 | Integrations & Coding Patterns | L504-L533 | Language-specific CI/CD pipeline examples, scripting patterns, and integrations (Git, Key Vault, Slack, ServiceNow, REST/Functions, Selenium) for building, testing, and automating Azure Pipelines. |
-| Deployment | L534-L589 | Deploying apps and services with Azure Pipelines: agents (self-hosted, scale sets, deployment groups), multi-stage releases, containers/Kubernetes, web/DB deployments, and package publish/restore. |
+| Deployment | L534-L589 | Deploying apps, containers, databases, and packages via Azure Pipelines: agent setup (Windows/Linux/macOS/VMSS), release pipelines, Kubernetes, web apps, SQL, artifacts, and registry publishing. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -148,9 +148,8 @@ This skill requires **network access** to fetch documentation content:
 | Choose and configure Azure Pipelines agents | https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/agents?view=azure-devops |
 | Configure Node.js runners in Azure Pipelines agent | https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/nodejs-runners?view=azure-devops |
 | Configure Azure Pipelines agent behind web proxy | https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/proxy?view=azure-devops |
-| Configure and manage Azure Pipelines agent version 4 | https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/v4-agent?view=azure-devops |
-| Configure and run Azure Pipelines agent version 5 | https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/v5-agent?view=azure-devops |
-| Deploy and configure Azure Pipelines Windows agents | https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/windows-agent?view=azure-devops |
+| Manage and configure Azure Pipelines v4 agents | https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/v4-agent?view=azure-devops |
+| Configure and run Azure Pipelines v5 agents | https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/v5-agent?view=azure-devops |
 | Publish and download build artifacts in Azure Pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/artifacts/build-artifacts?view=azure-devops |
 | Publish and download pipeline artifacts in Azure Pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/artifacts/pipeline-artifacts?view=azure-devops |
 | Use tasks and leases to retain Azure Pipelines runs | https://learn.microsoft.com/en-us/azure/devops/pipelines/build/run-retention?view=azure-devops |
@@ -303,6 +302,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure GitHubRelease v1 task to manage releases | https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/github-release-v1?view=azure-pipelines |
 | Configure GoTool@0 task inputs in pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/go-tool-v0?view=azure-pipelines |
 | Configure Go task to build and test Go apps | https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/go-v0?view=azure-pipelines |
+| Configure GradleAuthenticate task for Azure Artifacts | https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/gradle-authenticate-v0?view=azure-pipelines |
 | Configure Gradle@1 task inputs for builds | https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/gradle-v1?view=azure-pipelines |
 | Configure deprecated Gradle@2 task parameters | https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/gradle-v2?view=azure-pipelines |
 | Configure Gradle@3 task settings in pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/gradle-v3?view=azure-pipelines |
@@ -538,6 +538,7 @@ This skill requires **network access** to fetch documentation content:
 | Deploy Azure Pipelines self-hosted agent on Linux | https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/linux-agent?view=azure-devops |
 | Deploy Azure Pipelines agent on macOS | https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/osx-agent?view=azure-devops |
 | Use VM scale set agents for Azure Pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/scale-set-agents?view=azure-devops |
+| Deploy and manage Windows agents for Azure Pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/windows-agent?view=azure-devops |
 | Deploy Linux web app with ARM template via pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/apps/cd/azure/deploy-arm-template?view=azure-devops |
 | Build and publish Gradle artifacts in Azure Pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/artifacts/build-publish-artifacts-gradle?view=azure-devops |
 | Publish Cargo packages to Azure Artifacts feeds | https://learn.microsoft.com/en-us/azure/devops/pipelines/artifacts/cargo-pipelines?view=azure-devops |
@@ -557,7 +558,6 @@ This skill requires **network access** to fetch documentation content:
 | Restore Maven packages from internal and external feeds | https://learn.microsoft.com/en-us/azure/devops/pipelines/packages/maven-restore?view=azure-devops |
 | Restore NuGet packages in Azure Pipelines builds | https://learn.microsoft.com/en-us/azure/devops/pipelines/packages/nuget-restore?view=azure-devops |
 | Configure artifact sources in classic release pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/release/artifacts?view=azure-devops |
-| Configure multi-stage classic release pipelines for ASP.NET Core | https://learn.microsoft.com/en-us/azure/devops/pipelines/release/define-multistage-release-process?view=azure-devops |
 | Deploy pull request builds with classic release pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/release/deploy-pull-request-builds?view=azure-devops |
 | Deploy web apps to IIS on Windows VMs via deployment groups | https://learn.microsoft.com/en-us/azure/devops/pipelines/release/deploy-webdeploy-iis-deploygroups?view=azure-devops |
 | Configure deployment group jobs and targeting behavior | https://learn.microsoft.com/en-us/azure/devops/pipelines/release/deployment-group-phases?view=azure-devops |

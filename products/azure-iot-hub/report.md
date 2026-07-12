@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-31'
+generated_at: '2026-07-12'
 category_descriptions:
   security: 'Securing IoT Hub, DPS, and Device Update: auth (Entra ID, RBAC, SAS,
     X.509), cert lifecycle, key rotation, TLS/ciphers, network/IP controls, private
@@ -19,9 +19,9 @@ category_descriptions:
   integrations: Patterns and code samples for connecting devices/DPUs to IoT Hub/DPS
     (MQTT/HTTPS/AMQP), managing identities, twins, methods, jobs, file upload, and
     message formats/endpoints.
-  troubleshooting: 'Diagnosing and fixing IoT Hub and DPS issues: device connectivity,
-    routing, error codes, Device Update/import/storage/proxy problems, and collecting/using
-    diagnostic and debug logs.'
+  troubleshooting: Diagnosing and fixing IoT Hub/DPS connectivity, routing, proxy,
+    and storage issues; interpreting error codes and collecting/using Device Update
+    and device diagnostic logs.
   deployment: 'Deploying and updating IoT devices and hubs: Device Update setup (image/package/delta/proxy),
     platform support, regional failover, and IoT Hub migration and job scheduling.'
   decision-making: Guidance for choosing IoT Hub vs alternatives, DR usage, routing
@@ -30,14 +30,14 @@ category_descriptions:
 skill_description: Expert knowledge for Azure IoT Hub development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  using DPS enrollments, device twins/methods/jobs, message routing/endpoints, Device
+  using IoT Hub/DPS device provisioning, twins/methods/jobs, routing/endpoints, Device
   Update, or Cosmos DB sinks, and other Azure IoT Hub related development tasks. Not
   for Azure IoT (use azure-iot), Azure IoT Central (use azure-iot-central), Azure
-  IoT Edge (use azure-iot-edge), Azure IoT Operations (use azure-iot-operations).
-use_when: Use when using DPS enrollments, device twins/methods/jobs, message routing/endpoints,
+  IoT Edge (use azure-iot-edge), Azure Defender For Iot (use azure-defender-for-iot).
+use_when: Use when using IoT Hub/DPS device provisioning, twins/methods/jobs, routing/endpoints,
   Device Update, or Cosmos DB sinks, and other Azure IoT Hub related development tasks.
 confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Central (use azure-iot-central),
-  Azure IoT Edge (use azure-iot-edge), Azure IoT Operations (use azure-iot-operations).
+  Azure IoT Edge (use azure-iot-edge), Azure Defender For Iot (use azure-defender-for-iot).
 ---
 # Azure IoT Hub Crawl Report
 
@@ -51,8 +51,8 @@ confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Central (use az
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 203
+- **Updated Pages**: 1
+- **Unchanged**: 202
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-iot-hub/azure-iot-hub.csv`
 
@@ -62,16 +62,21 @@ confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Central (use az
 |------|-------|------------|
 | architecture-patterns | 3 | 1.5% |
 | best-practices | 6 | 3.0% |
-| configuration | 33 | 16.3% |
+| configuration | 32 | 15.8% |
 | decision-making | 9 | 4.4% |
 | deployment | 10 | 4.9% |
 | integrations | 22 | 10.8% |
 | limits-quotas | 3 | 1.5% |
 | security | 35 | 17.2% |
-| troubleshooting | 12 | 5.9% |
+| troubleshooting | 13 | 6.4% |
 | *(Unclassified)* | 70 | 34.5% |
 
 ## Changes
+
+### Updated Pages
+
+- [Monitoring data reference](https://learn.microsoft.com/en-us/azure/iot-dps/monitor-iot-dps-reference)
+  - Updated: 2024-08-09T05:35:00.000Z → 2026-05-21T19:52:00.000Z
 
 ## Classified Pages
 
@@ -107,7 +112,6 @@ confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Central (use az
 | [Diagnostic features](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-diagnostics) | troubleshooting | 0.80 | Covers deployment error codes, remote log collection, and Agent Check; includes error code meanings and diagnostic flows. |
 | [Manage device identities](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-identity-registry) | security | 0.80 | Dev guide for identity registry; includes device/module identity properties, authentication credential handling, and bulk import/export operations—core IAM configuration for IoT Hub. |
 | [Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/iot-hub/authenticate-authorize-azure-ad) | security | 0.80 | Details IoT Hub’s Entra ID auth flows and Azure RBAC roles/scopes for service APIs, which are concrete security configuration patterns. |
-| [Monitoring data reference](https://learn.microsoft.com/en-us/azure/iot-dps/monitor-iot-dps-reference) | configuration | 0.80 | Monitoring reference pages typically contain exhaustive tables of metrics, dimensions, categories, and log schemas with exact names and meanings—product-specific configuration/telemetry details. |
 | [Pricing examples](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-pricing) | decision-making | 0.80 | Explains how features are metered as messages with worked examples; supports SKU and usage planning decisions with quantified trade-offs. |
 | [Shared access signatures](https://learn.microsoft.com/en-us/azure/iot-hub/authenticate-authorize-sas) | security | 0.80 | Covers SAS token formats, scopes, and key usage specific to IoT Hub devices and services, which are detailed security/auth configuration mechanics. |
 | [Troubleshoot device connectivity](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-troubleshoot-connectivity) | troubleshooting | 0.80 | Focused on monitoring and troubleshooting device connectivity issues. Such pages typically map specific connectivity symptoms to causes and resolutions, and reference IoT Hub–specific diagnostics (Azure Monitor, metrics, logs). This aligns with the troubleshooting sub-skill: symptom → diagnosis → solution with product-specific tools and guidance. |
@@ -164,6 +168,7 @@ confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Central (use az
 | [Manage linked IoT hubs](https://learn.microsoft.com/en-us/azure/iot-dps/how-to-manage-linked-iot-hubs) | configuration | 0.70 | Explains how to link IoT hubs to DPS and configure them for allocation policies; DPS-specific configuration steps and options. |
 | [Manually migrate an IoT hub using ARM](https://learn.microsoft.com/en-us/azure/iot-hub/migrate-hub-arm) | deployment | 0.70 | Covers manual migration using portal, ARM templates, and SDKs with IoT Hub-specific constraints (naming, subscriptions, regions); deployment/migration-focused expert guidance. |
 | [Monitor device connection status](https://learn.microsoft.com/en-us/azure/iot-hub/monitor-device-connection-state) | decision-making | 0.70 | Compares Event Grid, heartbeat, and other options with concrete pros/cons and limitations to help select an approach; product-specific decision guidance rather than generic concepts. |
+| [Monitoring data reference](https://learn.microsoft.com/en-us/azure/iot-dps/monitor-iot-dps-reference) | troubleshooting | 0.70 | A monitoring data reference for Azure IoT Hub Device Provisioning Service typically lists specific metrics, log categories, and diagnostic signals used to detect and troubleshoot issues. These product-specific monitoring fields and their meanings are expert knowledge not generally known from training and are used in symptom→diagnosis workflows, fitting the troubleshooting sub-skill best among the available categories. |
 | [Multi-step updates](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-multi-step-updates) | configuration | 0.70 | Explains inline and reference steps in manifest schema v4; implies specific manifest fields and step configuration details. |
 | [Prepare for root key rotation](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-rootkey) | security | 0.70 | Root key rotation guidance is security-specific and likely includes product-specific procedures, timing, and configuration requirements for Device Update keys, which are not generic security concepts. |
 | [Read device-to-cloud messages from the built-in endpoint](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-messages-read-builtin) | integrations | 0.70 | Explains using the Event Hubs-compatible messages/events endpoint with specific behaviors and routing interactions, which are product-specific integration patterns. |

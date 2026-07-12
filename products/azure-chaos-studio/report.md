@@ -40,8 +40,8 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Resiliency 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 56
+- **Updated Pages**: 0
+- **Unchanged**: 58
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-chaos-studio/azure-chaos-studio.csv`
 
@@ -57,13 +57,6 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Resiliency 
 | *(Unclassified)* | 27 | 46.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [What is Azure Chaos Studio?](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-overview)
-  - Updated: 2026-06-19T06:10:00.000Z → 2026-07-01T17:13:00.000Z
-- [Chaos experiments](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-chaos-experiments)
-  - Updated: 2024-10-02T17:04:00.000Z → 2026-07-01T17:13:00.000Z
 
 ## Classified Pages
 

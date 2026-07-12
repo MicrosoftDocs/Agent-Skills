@@ -1,9 +1,9 @@
 ---
 name: azure-api-management
-description: Expert knowledge for Azure API Management development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when integrating APIM with LLMs/backends, securing with Entra/OAuth/JWT, using policies/caching, or scaling via VNet/self-hosted gateways, and other Azure API Management related development tasks. Not for Azure Service Bus (use azure-service-bus), Azure Functions (use azure-functions), Azure Logic Apps (use azure-logic-apps), Azure App Service (use azure-app-service).
+description: Expert knowledge for Azure API Management development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when securing APIs, enforcing quotas, integrating LLM/backends, configuring policies, or deploying gateways, and other Azure API Management related development tasks. Not for Azure App Service (use azure-app-service), Azure Functions (use azure-functions), Azure Logic Apps (use azure-logic-apps), Azure Service Bus (use azure-service-bus).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-05"
+  generated_at: "2026-07-12"
   generator: "docs2skills/1.0.0"
 ---
 # Azure API Management Skill
@@ -30,7 +30,7 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L75-L81 | Patterns for placing API Management behind App Gateway/WAF, Azure Front Door, or AKS, including routing, security, and high‑availability reference architectures. |
 | Limits & Quotas | L82-L100 | Limits, quotas, and validation rules in API Management: service and gateway limits, request/concurrency caps, LLM token quotas, SOAP/WSDL/WebSocket constraints, and validate-* policies. |
 | Security | L101-L142 | Securing APIs and APIM: authN/Z (Entra ID, B2C, OAuth2, JWT, mTLS, basic), managed identities/RBAC, secure portals/self-hosted gateways, security policies, and DDoS/Defender protections. |
-| Configuration | L143-L238 | Configuring APIM behavior: policies, caching, domains, networking/VNet, monitoring, self-hosted gateways, developer portal, subscriptions/users, and infrastructure-as-code setup. |
+| Configuration | L143-L238 | Configuring Azure API Management behavior: policies, caching, domains, networking/VNet, monitoring/logging, developer portal, gateways, backends, subscriptions, users, and automation templates. |
 | Integrations & Coding Patterns | L239-L270 | Patterns and samples for integrating API Management with LLMs, backends, logging/monitoring, events, OAuth, GitHub, Dapr, and exporting/importing APIs via OpenAPI, Postman, and Power Platform |
 | Deployment | L271-L290 | Deploying and scaling APIM: multi-region, VNet/external setups, self-hosted gateways/portals, autoscale, backup/restore, migration, automation, and certificate/MCP rollout planning. |
 
@@ -199,7 +199,7 @@ This skill requires **network access** to fetch documentation content:
 | Programmatically manage MCP servers in API Management | https://learn.microsoft.com/en-us/azure/api-management/manage-mcp-servers-rest-api |
 | Configure mock-response policy to simulate APIs | https://learn.microsoft.com/en-us/azure/api-management/mock-response-policy |
 | Configure monitoring and alerts for Azure API Management | https://learn.microsoft.com/en-us/azure/api-management/monitor-api-management |
-| Monitoring data reference for Azure API Management with Azure Monitor | https://learn.microsoft.com/en-us/azure/api-management/monitor-api-management-reference |
+| Reference monitoring metrics and logs for Azure API Management | https://learn.microsoft.com/en-us/azure/api-management/monitor-api-management-reference |
 | Configure and query MCP server telemetry in API Management | https://learn.microsoft.com/en-us/azure/api-management/monitor-mcp-servers |
 | Create and reuse policy fragments in API Management | https://learn.microsoft.com/en-us/azure/api-management/policy-fragments |
 | Configure inbound private endpoint for API Management | https://learn.microsoft.com/en-us/azure/api-management/private-endpoint |

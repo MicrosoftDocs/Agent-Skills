@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-07-05'
+generated_at: '2026-07-12'
 category_descriptions:
-  decision-making: Guidance on choosing Azure Local vs alternatives, VM types, licensing/billing,
-    storage/network patterns, deployment scale, and planning/migrating Hyper‑V/VMware
-    VMs and containers.
+  decision-making: Guidance on choosing Azure Local deployment types, VM/storage/network
+    options, migration paths, licensing/billing, and when to use Azure Local vs Windows
+    Server.
   security: Identity, RBAC, certificates, NSGs, firewalls, BitLocker, Secure Boot,
     Defender, and security controls for Azure Local, including disconnected, multi-rack,
     and Trusted launch scenarios
@@ -31,16 +31,15 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Local development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  planning Azure Local racks, SDN networking, Arc VMs, AKS/VM migrations, or disconnected
-  deployments, and other Azure Local related development tasks. Not for Azure Stack
-  Edge (use azure-stack-edge), Azure VMware Solution (use azure-vmware-solution),
-  Azure Virtual Machines (use azure-virtual-machines), Azure Kubernetes Service (AKS)
-  (use azure-kubernetes-service).
-use_when: Use when planning Azure Local racks, SDN networking, Arc VMs, AKS/VM migrations,
-  or disconnected deployments, and other Azure Local related development tasks.
-confusable_not_for: Not for Azure Stack Edge (use azure-stack-edge), Azure VMware
-  Solution (use azure-vmware-solution), Azure Virtual Machines (use azure-virtual-machines),
-  Azure Kubernetes Service (AKS) (use azure-kubernetes-service).
+  planning Azure Local racks, SDN networks, Arc VMs, AKS clusters, or Hyper-V/VMware
+  migrations, and other Azure Local related development tasks. Not for Microsoft Foundry
+  Local (use microsoft-foundry-local), Azure Stack Edge (use azure-stack-edge), Azure
+  VMware Solution (use azure-vmware-solution), Azure Virtual Machines (use azure-virtual-machines).
+use_when: Use when planning Azure Local racks, SDN networks, Arc VMs, AKS clusters,
+  or Hyper-V/VMware migrations, and other Azure Local related development tasks.
+confusable_not_for: Not for Microsoft Foundry Local (use microsoft-foundry-local),
+  Azure Stack Edge (use azure-stack-edge), Azure VMware Solution (use azure-vmware-solution),
+  Azure Virtual Machines (use azure-virtual-machines).
 ---
 # Azure Local Crawl Report
 
@@ -54,8 +53,8 @@ confusable_not_for: Not for Azure Stack Edge (use azure-stack-edge), Azure VMwar
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 365
+- **Updated Pages**: 1
+- **Unchanged**: 368
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-local/azure-local.csv`
 
@@ -78,14 +77,8 @@ confusable_not_for: Not for Azure Stack Edge (use azure-stack-edge), Azure VMwar
 
 ### Updated Pages
 
-- [Connect External Storage (SAN)](https://learn.microsoft.com/en-us/azure/azure-local/deploy/enable-external-storage?view=azloc-2606)
-  - Updated: 2026-06-05T22:03:00.000Z → 2026-07-02T17:05:00.000Z
-- [Manage security defaults](https://learn.microsoft.com/en-us/azure/azure-local/manage/manage-secure-baseline?view=azloc-2606)
-  - Updated: 2026-05-18T22:04:00.000Z → 2026-07-01T17:04:00.000Z
-- [Fallback log collection](https://learn.microsoft.com/en-us/azure/azure-local/manage/disconnected-operations-fallback?view=azloc-2606)
-  - Updated: 2026-02-23T23:04:00.000Z → 2026-06-29T22:08:00.000Z
-- [What's new in disconnected operations?](https://learn.microsoft.com/en-us/azure/azure-local/manage/disconnected-operations-whats-new?view=azloc-2606)
-  - Updated: 2026-05-13T22:09:00.000Z → 2026-07-02T22:04:00.000Z
+- [External storage support](https://learn.microsoft.com/en-us/azure/azure-local/concepts/external-storage-support?view=azloc-2606)
+  - Updated: 2026-05-15T22:06:00.000Z → 2026-07-06T22:05:00.000Z
 
 ## Classified Pages
 
@@ -307,6 +300,7 @@ confusable_not_for: Not for Azure Stack Edge (use azure-stack-edge), Azure VMwar
 | [Virtual deployment](https://learn.microsoft.com/en-us/azure/azure-local/deploy/deployment-virtual?view=azloc-2606) | deployment | 0.70 | Describes virtual deployment method, supported host OS versions, Hyper-V requirement, and deployment duration; product-specific deployment constraints. |
 | [With Arc gateway](https://learn.microsoft.com/en-us/azure/azure-local/deploy/deployment-with-azure-arc-gateway?view=azloc-2606) | configuration | 0.70 | Details Arc gateway and proxy configuration using scripts; involves product-specific proxy settings and parameters for Arc gateway integration. |
 | [Without Arc gateway](https://learn.microsoft.com/en-us/azure/azure-local/deploy/deployment-without-azure-arc-gateway?view=azloc-2606) | configuration | 0.70 | Covers registration and proxy configuration via script and UI; likely includes concrete parameter names, environment variables, and script options specific to this integration. |
+| [External storage support](https://learn.microsoft.com/en-us/azure/azure-local/concepts/external-storage-support?view=azloc-2606) | decision-making | 0.68 | The page contains product-specific guidance on how Azure Local integrates with external SAN storage, including supported configurations (for VMs, AKS, AVD), constraints, and scenario-based recommendations on when and how to use external storage versus built-in options. It goes beyond conceptual overview by detailing supported patterns and trade-offs for different workloads, which helps users make deployment and architecture decisions for Azure Local environments. |
 | [Manage GPUs using Discrete Device Assignment](https://learn.microsoft.com/en-us/azure/azure-local/multi-rack/multi-rack-gpu-manage-via-device?view=azloc-2606) | configuration | 0.68 | A how-to article for managing GPUs via Discrete Device Assignment on Azure Local multi-rack VMs will necessarily include product-specific configuration steps (e.g., enabling DDA on specific hosts, mapping physical GPUs to VMs, required settings in Azure Arc/Azure Local, and possibly driver/firmware requirements). These are detailed, implementation-specific settings that go beyond generic GPU virtualization knowledge and qualify as expert configuration knowledge. |
 | [About hyperconverged deployments](https://learn.microsoft.com/en-us/azure/azure-local/overview/hyperconverged-overview?view=azloc-2606) | limits-quotas | 0.65 | States specific scale limits (for example, up to 16 machines) for hyperconverged deployments; these are concrete product limits. |
 | [Add and repair nodes](https://learn.microsoft.com/en-us/azure/azure-local/concepts/rack-aware-cluster-add-server?view=azloc-2606) | deployment | 0.65 | Node add/repair procedures are cluster deployment/maintenance operations with Azure Local–specific steps and constraints. |
@@ -366,7 +360,6 @@ confusable_not_for: Not for Azure Stack Edge (use azure-stack-edge), Azure VMwar
 | [About Solution Builder Extension software updates](https://learn.microsoft.com/en-us/azure/azure-local/update/solution-builder-extension?view=azloc-2606) | configuration | 0.60 | Explains identifying and installing Solution Builder Extension updates and advanced capabilities; likely includes specific update channels or parameters unique to Azure Local. |
 | [About disaggregated deployments](https://learn.microsoft.com/en-us/azure/azure-local/overview/disaggregated-overview?view=azloc-2606) | decision-making | 0.60 | Overview of disaggregated deployments includes use cases, sizes, and when to choose this architecture, which is decision-making guidance for deployment models. |
 | [Configure load balancer for high availability ports](https://learn.microsoft.com/en-us/azure/azure-local/manage/configure-software-load-balancer?view=azloc-2606) | limits-quotas | 0.60 | Describes prerequisites, supported configurations, and limitations for high availability ports; likely lists specific constraints (supported scenarios, port behaviors) that function as product limits. |
-| [External storage support](https://learn.microsoft.com/en-us/azure/azure-local/concepts/external-storage-support?view=azloc-2606) | decision-making | 0.60 | Explains supported external storage configurations and when/how to use them; guides architecture choices for SAN integration. |
 | [Get remote support](https://learn.microsoft.com/en-us/azure/azure-local/manage/get-remote-support?view=azloc-2606) | configuration | 0.60 | Covers enabling remote support, proxy settings, and operational steps; product-specific remote support configuration. |
 | [Load balance multiple logical networks](https://learn.microsoft.com/en-us/azure/azure-local/manage/load-balance-multiple-networks?view=azloc-2606) | architecture-patterns | 0.60 | Guidance on using multiple logical networks for load balancing and isolation; contains Azure Local-specific design pattern for SDN logical network layout. |
 | [Network](https://learn.microsoft.com/en-us/azure/azure-local/manage/disconnected-operations-network?view=azloc-2606) | architecture-patterns | 0.60 | Network planning article for disconnected operations; likely includes topology guidance and product-specific design considerations beyond generic networking. |

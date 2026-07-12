@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-14'
+generated_at: '2026-07-12'
 category_descriptions:
   architecture-patterns: 'Guidance on designing Dedicated HSM deployments: sizing
     and topology, high availability and failover patterns, and secure networking (VNet,
@@ -10,20 +10,21 @@ category_descriptions:
   decision-making: Guidance on Dedicated HSM retirement, choosing successors (Managed/Cloud
     HSM), and planning/migrating ExpressRoute IPs and HSM workloads to new SKUs or
     services.
-  security: Physical security controls for Dedicated HSM devices and best-practice
-    guidance for securing, configuring, and operating Azure Dedicated HSM in production
-    environments.
+  security: Physical security controls for Dedicated HSM devices and recommended security
+    configurations, policies, and operational best practices for protecting keys and
+    access.
 skill_description: Expert knowledge for Azure Dedicated HSM development including
   troubleshooting, decision making, architecture & design patterns, and security.
-  Use when deploying Dedicated HSMs, configuring VNets/ExpressRoute, planning HA/failover,
-  or migrating to Managed/Cloud HSM, and other Azure Dedicated HSM related development
-  tasks. Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Key Vault (use azure-key-vault),
-  Azure Payment Hsm (use azure-payment-hsm).
-use_when: Use when deploying Dedicated HSMs, configuring VNets/ExpressRoute, planning
-  HA/failover, or migrating to Managed/Cloud HSM, and other Azure Dedicated HSM related
+  Use when deploying Dedicated HSMs, configuring VNet/ExpressRoute, planning HA/failover,
+  or migrating to Managed HSM, and other Azure Dedicated HSM related development tasks.
+  Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Payment Hsm (use azure-payment-hsm),
+  Azure Key Vault (use azure-key-vault), Azure Confidential Computing (use azure-confidential-computing).
+use_when: Use when deploying Dedicated HSMs, configuring VNet/ExpressRoute, planning
+  HA/failover, or migrating to Managed HSM, and other Azure Dedicated HSM related
   development tasks.
-confusable_not_for: Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Key Vault
-  (use azure-key-vault), Azure Payment Hsm (use azure-payment-hsm).
+confusable_not_for: Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Payment Hsm
+  (use azure-payment-hsm), Azure Key Vault (use azure-key-vault), Azure Confidential
+  Computing (use azure-confidential-computing).
 ---
 # Azure Dedicated HSM Crawl Report
 
@@ -37,8 +38,8 @@ confusable_not_for: Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Key Vau
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 16
+- **Updated Pages**: 1
+- **Unchanged**: 15
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-dedicated-hsm/azure-dedicated-hsm.csv`
 
@@ -54,13 +55,18 @@ confusable_not_for: Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Key Vau
 
 ## Changes
 
+### Updated Pages
+
+- [Secure your Dedicated HSM](https://learn.microsoft.com/en-us/azure/dedicated-hsm/secure-dedicated-hsm)
+  - Updated: 2025-09-26T08:00:00.000Z → 2026-07-10T22:34:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
-| [Secure your Dedicated HSM](https://learn.microsoft.com/en-us/azure/dedicated-hsm/secure-dedicated-hsm) | security | 0.80 | Provides product-specific security recommendations for network security, identity management, monitoring, and backup tailored to Dedicated HSM, going beyond generic security advice into concrete patterns for this service. |
 | [Troubleshooting](https://learn.microsoft.com/en-us/azure/dedicated-hsm/troubleshoot) | troubleshooting | 0.80 | Explicitly a troubleshooting article that distinguishes Azure-side registration/deployment from HSM configuration, and covers unique considerations arising from HSMs as Azure resources. It maps service-specific issues to causes and resolutions. |
 | [Migrate to Cloud or Managed HSM](https://learn.microsoft.com/en-us/azure/dedicated-hsm/migration-guide) | decision-making | 0.74 | Contains product-specific retirement dates, explicit restriction that key material cannot be migrated, and concrete guidance on when/how to transition from Dedicated HSM to Managed HSM or Cloud HSM. This is migration and service-selection guidance with specific constraints, fitting decision-making. |
+| [Secure your Dedicated HSM](https://learn.microsoft.com/en-us/azure/dedicated-hsm/secure-dedicated-hsm) | security | 0.72 | The page focuses on securing Azure Dedicated HSM with product-specific guidance (network isolation, identity management, monitoring, backup strategies) tailored to this service. While the summary is high level, this type of page typically includes concrete recommendations and configurations unique to Dedicated HSM (for example, specific Azure networking and identity patterns for HSM appliances), which qualifies as expert, product-specific security knowledge rather than generic concepts. |
 | [Migrate ExpressRoute Gateway Basic SKU public IP to Standard SKU public IP](https://learn.microsoft.com/en-us/azure/dedicated-hsm/migration-basic-standard) | decision-making | 0.70 | Includes a specific support end date for Basic SKU public IP and prescriptive steps that there is no smooth migration and a new Dedicated HSM/VNET/ERGW must be created. This is concrete migration and SKU-transition guidance with product-specific constraints, aligning with decision-making. |
 | [Dedicated HSM overview](https://learn.microsoft.com/en-us/azure/dedicated-hsm/overview) | decision-making | 0.65 | Contains product-specific retirement timeline (support until July 31, 2028), explicit onboarding restrictions, and concrete guidance to choose Azure Cloud HSM vs Azure Managed HSM. This is decision guidance tied to specific dates and migration direction that an LLM is unlikely to know from training. |
 | [Frequently asked questions](https://learn.microsoft.com/en-us/azure/dedicated-hsm/faq) | troubleshooting | 0.62 | Service-specific FAQ for Dedicated HSM typically includes detailed answers about interoperability, high availability behavior, and support conditions that are not generic knowledge. While organized as FAQ rather than classic symptom trees, it provides concrete resolutions and clarifications to common operational issues, closest to troubleshooting. |

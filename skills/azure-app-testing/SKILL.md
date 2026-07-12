@@ -1,9 +1,9 @@
 ---
 name: azure-app-testing
-description: Expert knowledge for Azure App Testing development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when running Azure Load Testing, Playwright Workspaces, JMeter/Locust tests, VNet/private endpoint tests, or CI/CD test pipelines, and other Azure App Testing related development tasks. Not for Azure Test Plans (use azure-test-plans), Azure DevOps (use azure-devops), Azure Pipelines (use azure-pipelines), Playwright Workspaces (use azure-playwright-workspaces).
+description: Expert knowledge for Azure App Testing development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Azure Load Testing, Playwright Workspaces, JMeter/Locust tests, VNet/private endpoints, or CI/CD pipelines, and other Azure App Testing related development tasks. Not for Azure Test Plans (use azure-test-plans), Azure DevOps (use azure-devops), Azure Pipelines (use azure-pipelines), Playwright Workspaces (use azure-playwright-workspaces).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-10"
+  generated_at: "2026-07-12"
   generator: "docs2skills/1.0.0"
 ---
 # Azure App Testing Skill
@@ -24,15 +24,15 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L46 | Diagnosing and fixing Azure Load Testing issues (failures, debug runs, private endpoints) and troubleshooting Playwright Workspaces errors and test run problems. |
-| Best Practices | L47-L55 | Guidance on load testing App Service apps, tuning high-scale tests, finding performance bottlenecks, and optimizing Playwright Workspace tests for reliability and low latency. |
-| Decision Making | L56-L63 | Guides for deciding load test resource moves (regions, groups, subscriptions) and tuning performance settings like Azure Functions configs and Playwright parallelism. |
-| Architecture & Design Patterns | L64-L69 | Designing Azure Load Testing setups with virtual networks and private endpoints, including VNet-injected tests, network isolation, and testing services over private connectivity. |
-| Limits & Quotas | L70-L77 | Usage caps, service limits, quotas, and configuration details for Azure Load Testing and Playwright Workspaces, including free trial constraints and how to set monthly usage limits. |
-| Security | L78-L90 | Securing Azure Load Testing and Playwright Workspaces: RBAC, auth for endpoints, managed identities, Key Vault, CMK encryption, certificates, access tokens, and Azure Policy controls. |
-| Configuration | L91-L112 | Configuring and running Azure Load Testing and Playwright Workspaces: test definitions, HTTP/JMeter settings, secrets, monitoring, baselines, reporting/export, CI/CD YAML, scheduling, and multi-region load. |
-| Integrations & Coding Patterns | L113-L123 | Authoring and running load tests with JMeter, Locust, and Playwright, using CSV data and plugins, integrating with VS Code/Copilot, and testing local or private apps via Azure Load Testing. |
-| Deployment | L124-L128 | Setting up and automating CI/CD for Azure Load Testing, including manual pipeline configuration and integration with Azure Pipelines for automated test runs. |
+| Troubleshooting | L37-L47 | Diagnosing and fixing Azure Load Testing and Playwright Workspace issues, including failed tests, debug runs, browser recorder, private endpoints, and test run/reporting errors. |
+| Best Practices | L48-L56 | Guidance on load testing App Service apps, tuning high-scale tests, finding performance bottlenecks, and optimizing Playwright Workspace tests for reliability and low latency. |
+| Decision Making | L57-L64 | Guides for deciding load test resource moves (regions, groups, subscriptions) and tuning performance settings like Azure Functions configs and Playwright parallelism. |
+| Architecture & Design Patterns | L65-L70 | Designing Azure Load Testing setups with virtual networks and private endpoints, including VNet-injected tests, network isolation, and testing services over private connectivity. |
+| Limits & Quotas | L71-L78 | Configuring and understanding usage limits, quotas, and free trial constraints for Azure Load Testing and Playwright Workspaces, including monthly caps and workspace configuration options. |
+| Security | L79-L91 | Securing Azure Load Testing and Playwright Workspaces: RBAC, auth for endpoints, managed identities, Key Vault, CMK encryption, certificates, access tokens, and Azure Policy controls. |
+| Configuration | L92-L113 | Configuring and running Azure Load Testing and Playwright Workspaces: test definitions, HTTP/JMeter settings, secrets, monitoring, baselines, reporting/export, CI/CD YAML, scheduling, and multi-region load. |
+| Integrations & Coding Patterns | L114-L124 | Authoring and running load tests with JMeter, Locust, and Playwright, using CSV data and plugins, integrating with VS Code/Copilot, and testing local or private apps via Azure Load Testing. |
+| Deployment | L125-L129 | Setting up and automating CI/CD for Azure Load Testing, including manual pipeline configuration and integration with Azure Pipelines for automated test runs. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -40,6 +40,7 @@ This skill requires **network access** to fetch documentation content:
 | Use AI-powered actionable insights to diagnose Azure load test issues | https://learn.microsoft.com/en-us/azure/app-testing/load-testing/how-to-analyze-test-results-using-actionable-insights |
 | Diagnose and troubleshoot failing Azure load tests | https://learn.microsoft.com/en-us/azure/app-testing/load-testing/how-to-diagnose-failing-load-test |
 | Run Azure load tests in debug mode for troubleshooting | https://learn.microsoft.com/en-us/azure/app-testing/load-testing/how-to-run-tests-in-debug-mode |
+| Diagnose browser recorder issues in Azure Load Testing | https://learn.microsoft.com/en-us/azure/app-testing/load-testing/troubleshoot-browser-extension |
 | Troubleshoot private endpoint load tests in Azure Load Testing | https://learn.microsoft.com/en-us/azure/app-testing/load-testing/troubleshoot-private-endpoint-tests |
 | Troubleshoot Playwright Workspaces reporting errors | https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/troubleshoot-playwright-workspaces-reporting |
 | Troubleshoot Playwright Workspaces test run issues | https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/troubleshoot-test-run-failures |
@@ -73,7 +74,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure monthly usage limits for Azure Load Testing | https://learn.microsoft.com/en-us/azure/app-testing/load-testing/how-to-manage-usage-limits |
 | Service limits and quotas for Azure Load Testing | https://learn.microsoft.com/en-us/azure/app-testing/load-testing/resource-limits-quotas-capacity |
 | Understand Playwright Workspaces free trial limits | https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/how-to-try-playwright-workspaces-free |
-| Service limits, quotas, and configuration for Playwright Workspaces | https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/resource-limits-quotas-capacity |
+| Review limits and configuration for Playwright Workspaces | https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/resource-limits-quotas-capacity |
 
 ### Security
 | Topic | URL |

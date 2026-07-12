@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-28'
+generated_at: '2026-07-12'
 category_descriptions:
   limits-quotas: ExpressRoute limits on FastPath, gateways, routes, and provider circuits,
     including rate limiting, quotas, monitoring advertised routes, and FAQs on connectivity
@@ -10,9 +10,9 @@ category_descriptions:
   deployment: Guides for deploying and migrating ExpressRoute circuits/gateways, including
     ARM/Terraform provisioning, Direct SKUs, and moving to zone-redundant or new production
     circuits.
-  configuration: Configuring and managing ExpressRoute circuits, gateways, routing/peering,
-    NAT, BFD, IPv6, Global Reach, monitoring, resiliency, and linking VNets using
-    portal, PowerShell, and CLI.
+  configuration: Configuring and managing ExpressRoute circuits, gateways, peering,
+    routing, NAT/BGP, IPv6, Global Reach, monitoring, resiliency, and coexistence
+    with VPN using portal, PowerShell, and CLI.
   architecture-patterns: Designing resilient, highly available ExpressRoute architectures,
     including DR patterns, multi-circuit routing/Global Reach, VPN coexistence and
     failover, and using Microsoft peering for PSTN.
@@ -29,16 +29,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure ExpressRoute development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  configuring ExpressRoute circuits/gateways, BGP routing, Global Reach, VPN coexistence,
-  or MACsec/IPsec, and other Azure ExpressRoute related development tasks. Not for
-  Azure Virtual Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan),
-  Azure VPN Gateway (use azure-vpn-gateway), Azure Internet Peering (use azure-internet-peering).
-use_when: Use when configuring ExpressRoute circuits/gateways, BGP routing, Global
-  Reach, VPN coexistence, or MACsec/IPsec, and other Azure ExpressRoute related development
-  tasks.
-confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), Azure
-  Virtual WAN (use azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway),
-  Azure Internet Peering (use azure-internet-peering).
+  configuring ExpressRoute circuits/gateways, BGP/NAT routing, Global Reach, IPsec/MACsec,
+  or automation via CLI/PowerShell, and other Azure ExpressRoute related development
+  tasks. Not for Azure Internet Peering (use azure-internet-peering), Azure Peering
+  Service (use azure-peering-service), Azure Virtual WAN (use azure-virtual-wan),
+  Azure VPN Gateway (use azure-vpn-gateway).
+use_when: Use when configuring ExpressRoute circuits/gateways, BGP/NAT routing, Global
+  Reach, IPsec/MACsec, or automation via CLI/PowerShell, and other Azure ExpressRoute
+  related development tasks.
+confusable_not_for: Not for Azure Internet Peering (use azure-internet-peering), Azure
+  Peering Service (use azure-peering-service), Azure Virtual WAN (use azure-virtual-wan),
+  Azure VPN Gateway (use azure-vpn-gateway).
 ---
 # Azure ExpressRoute Crawl Report
 
@@ -52,8 +53,8 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 95
+- **Updated Pages**: 1
+- **Unchanged**: 94
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-expressroute/azure-expressroute.csv`
 
@@ -74,6 +75,11 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ## Changes
 
+### Updated Pages
+
+- [BFD over ExpressRoute](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-bfd)
+  - Updated: 2026-03-12T08:00:00.000Z → 2026-07-08T22:31:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
@@ -82,6 +88,7 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/expressroute/how-to-configure-custom-bgp-communities) | configuration | 0.80 | Explains how to set custom BGP community values for VNets using PowerShell, including specific property names and allowed values, which is detailed configuration knowledge. |
 | [QoS requirements](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-qos) | best-practices | 0.80 | Provides DSCP markings and QoS requirements for Skype for Business/voice over ExpressRoute with specific values and guidance, representing product-specific best practices with quantified settings. |
 | [Router configuration samples for NAT](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-config-samples-nat) | configuration | 0.80 | Contains concrete NAT configuration samples for Cisco ASA and Juniper SRX routers, including device-specific commands and parameters that qualify as detailed configuration knowledge unique to this integration scenario. |
+| [BFD over ExpressRoute](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-bfd) | configuration | 0.78 | A BFD configuration guide for ExpressRoute private peering will include product-specific router commands, parameter names (e.g., detection intervals, multiplier), and required settings unique to Azure ExpressRoute edge devices and partner equipment. These are detailed configuration values and patterns that go beyond generic BFD concepts, fitting the configuration sub-skill. |
 | [Configure MACsec for ExpressRoute Direct ports](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-macsec) | security | 0.78 | The article provides product-specific security configuration for MACsec on ExpressRoute, including required parameters, PowerShell commands, and settings unique to securing links between customer edge routers and Microsoft edge routers. This is concrete, implementation-focused security guidance rather than conceptual overview. |
 | [Configure controlled gateway maintenance](https://learn.microsoft.com/en-us/azure/expressroute/customer-controlled-gateway-maintenance) | configuration | 0.78 | Covers how to set and manage maintenance windows for ExpressRoute virtual network gateways via portal and PowerShell. This typically includes specific properties/parameters on the gateway resource and allowed values, which are product-specific configuration details. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-faqs) | limits-quotas | 0.78 | FAQ includes product-specific numeric details such as supported bandwidth options, connection counts, SLA specifics, and other quantified technical constraints that are unlikely to be known generically by an LLM. |
@@ -105,7 +112,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Azure portal](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-routing-portal-resource-manager) | configuration | 0.70 | How-to for creating and managing routing configuration for ExpressRoute private and Microsoft peering. Such pages typically include specific configuration fields (e.g., VLAN IDs, ASN, prefixes) and portal parameter values unique to ExpressRoute, which qualify as product-specific configuration details. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/expressroute/how-to-configure-coexisting-gateway-portal) | architecture-patterns | 0.70 | Describes scenarios, advantages, and configuration order for coexisting ExpressRoute and S2S VPN; product-specific hybrid connectivity pattern. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/expressroute/how-to-configure-custom-bgp-communities-portal) | configuration | 0.70 | How-to for applying custom BGP community values on ExpressRoute private peering via the portal. This is product-specific configuration of routing behavior; such pages typically include exact field names, where to set them, and how they interact with regional BGP communities, which qualifies as configuration expert knowledge. |
-| [BFD over ExpressRoute](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-bfd) | configuration | 0.70 | Configuring BFD over ExpressRoute private/Microsoft peering requires specific timers, intervals, and device-side settings between MSEE and CE/PE routers. These are detailed configuration parameters unique to ExpressRoute BFD support. |
 | [BGP community](https://learn.microsoft.com/en-us/azure/expressroute/bgp-communities) | best-practices | 0.70 | Explains how to use BGP communities with ExpressRoute to manage complex hybrid networks; product-specific routing strategy and constraints. |
 | [Configure Connection Monitoring for ExpressRoute](https://learn.microsoft.com/en-us/azure/expressroute/how-to-configure-connection-monitor) | configuration | 0.70 | How-to for configuring Connection Monitor for ExpressRoute typically includes monitor settings, endpoint types, test frequency, protocol options, and other specific configuration parameters unique to this integration, matching the configuration sub-skill. |
 | [Configure ExpressRoute Direct](https://learn.microsoft.com/en-us/azure/expressroute/how-to-expressroute-direct-portal) | configuration | 0.70 | Step-by-step creation of ExpressRoute Direct via portal, PowerShell, and CLI with product-specific parameters. |

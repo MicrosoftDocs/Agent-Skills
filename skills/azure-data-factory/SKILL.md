@@ -1,9 +1,9 @@
 ---
 name: azure-data-factory
-description: Expert knowledge for Azure Data Factory development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building ADF pipelines, mapping data flows, SAP CDC, SSIS IR runtimes, or CI/CD deployments, and other Azure Data Factory related development tasks. Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure Databricks (use azure-databricks), Azure Stream Analytics (use azure-stream-analytics), Azure Functions (use azure-functions).
+description: Expert knowledge for Azure Data Factory development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building ADF pipelines, data flows, triggers, integration runtimes, SAP CDC, or CI/CD deployments, and other Azure Data Factory related development tasks. Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure Databricks (use azure-databricks), Azure Stream Analytics (use azure-stream-analytics), Azure Data Explorer (use azure-data-explorer).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-05"
+  generated_at: "2026-07-12"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Data Factory Skill
@@ -31,7 +31,7 @@ This skill requires **network access** to fetch documentation content:
 | Limits & Quotas | L142-L147 | ADF data flow reservation discounts, pricing behavior, and the official limits/quotas (throughput, activities, pipelines, data flows) documented in the FAQ. |
 | Security | L148-L178 | Securing Data Factory with identity, encryption, Key Vault, and Azure Policy, plus network controls like VNets, Private Link, firewalls, private endpoints, and secure runtimes (Azure-SSIS, self-hosted). |
 | Configuration | L179-L302 | Configuring Azure Data Factory: pipelines, activities, triggers, data flows, copy behavior, formats, integration runtimes (Azure/self-hosted/SSIS), monitoring, parameters, and SAP CDC settings. |
-| Integrations & Coding Patterns | L303-L477 | Connector setup, pipeline patterns, and code examples for integrating ADF with many data sources/services, using mapping data flows, SSIS, Databricks, Synapse, ML, and SDK/REST automation. |
+| Integrations & Coding Patterns | L303-L477 | Integrating ADF with diverse data sources/services, using connectors, mapping data flow functions, templates, and activities (Databricks, SSIS, ML, Synapse) to copy, transform, and orchestrate data. |
 | Deployment | L478-L491 | CI/CD and deployment for ADF: ARM/linked templates, Azure DevOps pipelines, hotfix flows, pre/post scripts, IR automation, SSIS job migration, and runtime network migration. |
 
 ### Troubleshooting
@@ -355,7 +355,7 @@ This skill requires **network access** to fetch documentation content:
 | Copy data from HubSpot using Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-hubspot |
 | Integrate Azure Data Factory with Impala source | https://learn.microsoft.com/en-us/azure/data-factory/connector-impala |
 | Integrate IBM Informix with Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-informix |
-| Configure Azure Data Factory Jira connector for copy | https://learn.microsoft.com/en-us/azure/data-factory/connector-jira |
+| Integrate Jira as a source in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-jira |
 | Copy data from Magento using Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-magento |
 | Copy data from MariaDB using Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-mariadb |
 | Configure Marketo connector in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-marketo |
@@ -397,7 +397,7 @@ This skill requires **network access** to fetch documentation content:
 | Use ServiceNow V2 connector with Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-servicenow |
 | Configure ServiceNow V1 connector in Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-servicenow-legacy |
 | Copy and transform data via SFTP connector in ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-sftp |
-| Copy data from SharePoint Online lists with ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-sharepoint-online-list |
+| Integrate SharePoint Online lists with Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-sharepoint-online-list |
 | Connect Azure Data Factory to Shopify data | https://learn.microsoft.com/en-us/azure/data-factory/connector-shopify |
 | Transform Smartsheet data using Data Factory data flows | https://learn.microsoft.com/en-us/azure/data-factory/connector-smartsheet |
 | Configure Snowflake V2 connector and data flows | https://learn.microsoft.com/en-us/azure/data-factory/connector-snowflake |

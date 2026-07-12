@@ -54,10 +54,10 @@ confusable_not_for: Not for Azure Cloud Services (use azure-cloud-services), Azu
 - **Unclassified**: 75
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 6
-- **Unchanged**: 398
-- **Deleted Pages**: 2
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 405
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-fabric/azure-service-fabric.csv`
 
 ## Classification Statistics
@@ -76,30 +76,6 @@ confusable_not_for: Not for Azure Cloud Services (use azure-cloud-services), Azu
 | *(Unclassified)* | 75 | 18.5% |
 
 ## Changes
-
-### New Pages
-
-- [Configure telemetry with Azure Monitor Agent and data collection rules](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-diagnostics-azure-monitor-agent-data-collection-rules)
-
-### Updated Pages
-
-- [5- Delete a cluster](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-tutorial-delete-cluster)
-  - Updated: 2026-03-22T08:00:00.000Z → 2026-06-30T22:03:00.000Z
-- [DNS service](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-dnsservice)
-  - Updated: 2026-06-22T08:00:00.000Z → 2026-07-01T22:03:00.000Z
-- [Monitoring and diagnostics](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-best-practices-monitoring)
-  - Updated: 2026-03-22T08:00:00.000Z → 2026-06-30T22:03:00.000Z
-- [Reliable Collections Throttling Guidelines](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-reliable-services-reliable-collections-throttling-guidelines)
-  - Updated: 2026-06-26T17:03:00.000Z → 2026-06-29T22:04:00.000Z
-- [Monitor containers](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-diagnostics-oms-containers)
-  - Updated: 2026-03-22T08:00:00.000Z → 2026-06-30T22:03:00.000Z
-- [Linux Cluster Diagnostics](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-diagnostics-oms-syslog)
-  - Updated: 2026-03-22T08:00:00.000Z → 2026-06-30T22:03:00.000Z
-
-### Deleted Pages
-
-- ~~Collect performance counters with the Log Analytics Agent~~ (https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-diagnostics-oms-agent)
-- ~~Configure Azure Monitor logs to collect cluster events~~ (https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-diagnostics-oms-setup)
 
 ## Classified Pages
 

@@ -54,9 +54,9 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Log
 - **Unclassified**: 51
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 4
-- **Unchanged**: 284
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 289
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-functions/azure-functions.csv`
 
@@ -76,21 +76,6 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Log
 | *(Unclassified)* | 51 | 17.6% |
 
 ## Changes
-
-### New Pages
-
-- [Recover a Flex Consumption deployment](https://learn.microsoft.com/en-us/azure/azure-functions/functions-rollback-deployments)
-
-### Updated Pages
-
-- [General troubleshooting](https://learn.microsoft.com/en-us/azure/azure-functions/recover-python-functions)
-  - Updated: 2024-02-25T12:15:00.000Z → 2026-07-03T11:47:00.000Z
-- [Azure Functions CLI (v5)](https://learn.microsoft.com/en-us/azure/azure-functions/functions-cli-develop-local)
-  - Updated: 2026-06-09T08:00:00.000Z → 2026-07-04T11:45:00.000Z
-- [Register binding extensions](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-register)
-  - Updated: 2025-07-22T22:09:00.000Z → 2026-07-04T11:45:00.000Z
-- [Manage a function app](https://learn.microsoft.com/en-us/azure/azure-functions/functions-how-to-use-azure-function-app-settings)
-  - Updated: 2025-05-21T08:00:00.000Z → 2026-07-04T11:45:00.000Z
 
 ## Classified Pages
 

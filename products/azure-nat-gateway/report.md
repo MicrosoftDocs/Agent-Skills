@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-28'
+generated_at: '2026-07-12'
 category_descriptions:
   limits-quotas: 'NAT Gateway limits, quotas, and behaviors: SNAT port allocation,
     connection scaling, IP/VM limits, per-subscription caps, and FAQs on throughput
@@ -9,8 +9,9 @@ category_descriptions:
   troubleshooting: 'Diagnosing and fixing NAT Gateway issues: reading flow logs, resolving
     misconfigurations, connectivity failures with Azure services, and outbound internet
     connection problems.'
-  architecture-patterns: Designing VNets and subnets for NAT Gateway, and patterns
-    for scaling secure outbound traffic using NAT Gateway with Azure Firewall.
+  architecture-patterns: Designing VNETs with NAT Gateway, choosing patterns for outbound
+    connectivity, and scaling/combining NAT Gateway with Azure Firewall for secure,
+    high-throughput egress traffic.
   best-practices: Guidance on reducing SNAT port exhaustion and optimizing outbound
     connectivity patterns when using Azure NAT Gateway.
   decision-making: Guidance on when to use NAT Gateway Standard vs StandardV2, how
@@ -23,17 +24,18 @@ category_descriptions:
     firewalls, and other Azure security controls.'
 skill_description: Expert knowledge for Azure NAT Gateway development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
-  security, configuration, and deployment. Use when managing SNAT ports, outbound
-  IPs, NAT Gateway V2 deployments, flow logs, or Azure Firewall integration, and other
-  Azure NAT Gateway related development tasks. Not for Azure Virtual Network (use
-  azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager),
-  Azure Virtual WAN (use azure-virtual-wan), Azure Load Balancer (use azure-load-balancer).
-use_when: Use when managing SNAT ports, outbound IPs, NAT Gateway V2 deployments,
-  flow logs, or Azure Firewall integration, and other Azure NAT Gateway related development
-  tasks.
-confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), Azure
+  security, configuration, and deployment. Use when sizing SNAT ports, configuring
+  NAT Gateway V2, reading flow logs, scaling outbound IPs, or securing egress traffic,
+  and other Azure NAT Gateway related development tasks. Not for Azure Load Balancer
+  (use azure-load-balancer), Azure Virtual Network (use azure-virtual-network), Azure
   Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use
-  azure-virtual-wan), Azure Load Balancer (use azure-load-balancer).
+  azure-virtual-wan).
+use_when: Use when sizing SNAT ports, configuring NAT Gateway V2, reading flow logs,
+  scaling outbound IPs, or securing egress traffic, and other Azure NAT Gateway related
+  development tasks.
+confusable_not_for: Not for Azure Load Balancer (use azure-load-balancer), Azure Virtual
+  Network (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager),
+  Azure Virtual WAN (use azure-virtual-wan).
 ---
 # Azure NAT Gateway Crawl Report
 
@@ -47,8 +49,8 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 25
+- **Updated Pages**: 1
+- **Unchanged**: 24
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-nat-gateway/azure-nat-gateway.csv`
 
@@ -68,11 +70,17 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ## Changes
 
+### Updated Pages
+
+- [NAT gateway design guidance](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-design)
+  - Updated: 2026-05-15T08:00:00.000Z → 2026-07-06T22:04:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
 | [Secure NAT Gateway deployment](https://learn.microsoft.com/en-us/azure/nat-gateway/secure-nat-gateway) | security | 0.78 | The article focuses on securing Azure NAT Gateway and provides product-specific security recommendations and best practices (for example, how to structure outbound connectivity, combine with other Azure network security services, and configure NAT Gateway securely). It includes concrete, service-specific guidance rather than just conceptual security overviews, fitting the 'security' sub-skill type. |
+| [NAT gateway design guidance](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-design) | architecture-patterns | 0.72 | The page provides product-specific design considerations for Azure NAT Gateway in virtual networks, including when to use particular patterns (for example, per-subnet vs shared gateways, outbound connectivity strategies, and multi-region designs). It goes beyond conceptual overview and gives concrete guidance on choosing patterns and configurations unique to NAT Gateway, but does not primarily focus on numeric limits/quotas or troubleshooting. |
 | [Azure NAT Gateway SKUs](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-sku) | decision-making | 0.70 | SKU comparison article that explains differences between Standard and StandardV2. Likely includes comparison tables and concrete criteria (data processing, availability, capabilities) to help select a SKU, which fits decision-making guidance. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/nat-gateway/faq) | limits-quotas | 0.70 | NAT Gateway FAQs typically include concrete numeric details such as SNAT port counts, connection limits, and other behavioral constraints. These are specific limits/quotas and behaviors that qualify as expert knowledge beyond conceptual overview. |
 | [Manage a Standard NAT gateway](https://learn.microsoft.com/en-us/azure/nat-gateway/manage-nat-gateway) | configuration | 0.70 | Explains how to create/remove NAT gateway, associate subnets, and manage public IPs/prefixes; contains concrete configuration operations and parameters. |
@@ -85,7 +93,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Manage Standard V2 NAT gateway flow logs](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-flow-logs) | configuration | 0.65 | Describes the NatGatewayFlowLogsV1 category and how to configure flow logs via diagnostic settings; product-specific logging configuration. |
 | [Metrics and alerts](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-metrics) | configuration | 0.65 | Details available metrics and diagnostic capabilities for NAT Gateway; likely includes metric names, dimensions, and usage guidance, which are configuration/monitoring specifics. |
 | [Migrate outbound access](https://learn.microsoft.com/en-us/azure/nat-gateway/tutorial-migrate-outbound-nat) | decision-making | 0.65 | Tutorial on migrating outbound connectivity from default outbound access or load balancer outbound rules to NAT Gateway, including when and how to switch and reuse IPs. This is migration/selection guidance between outbound options, fitting decision-making. |
-| [NAT gateway design guidance](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-design) | architecture-patterns | 0.65 | Design-focused article with product-specific considerations for placing and using NAT Gateway in virtual networks. Likely includes guidance on subnet design, association patterns, and trade-offs, which are architecture/design pattern decisions specific to this service. |
 | [Use deployment templates to create a StandardV2 NAT gateway](https://learn.microsoft.com/en-us/azure/nat-gateway/quickstart-create-nat-gateway-v2-templates) | configuration | 0.65 | Template-based quickstart necessarily includes resource definitions and parameter names/values for NAT gateway, VNet, subnet, and VM; these ARM/Bicep/Terraform schema details are product-specific configuration knowledge. |
 | [Migrate a virtual machine public IP address](https://learn.microsoft.com/en-us/azure/nat-gateway/tutorial-migrate-ilip-nat) | deployment | 0.60 | Shows how to migrate from a VM’s direct public IP to NAT Gateway while reusing the IP; product-specific deployment/migration guidance. |
 

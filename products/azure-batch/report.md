@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-21'
+generated_at: '2026-07-12'
 category_descriptions:
   security: 'Securing Batch accounts and pools: auth with Entra ID/managed identities,
     keys and disk encryption, RBAC, private endpoints/network perimeters, public access,
@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure HDInsight (use azure-hdinsight), Azure Databri
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 115
+- **Updated Pages**: 2
+- **Unchanged**: 113
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-batch/azure-batch.csv`
 
@@ -75,6 +75,13 @@ confusable_not_for: Not for Azure HDInsight (use azure-hdinsight), Azure Databri
 | *(Unclassified)* | 37 | 32.2% |
 
 ## Changes
+
+### Updated Pages
+
+- [What is Azure Batch?](https://learn.microsoft.com/en-us/azure/batch/batch-technical-overview)
+  - Updated: 2026-06-16T08:00:00.000Z → 2026-07-09T08:00:00.000Z
+- [Parallel file processing - Python](https://learn.microsoft.com/en-us/azure/batch/tutorial-parallel-python)
+  - Updated: 2026-05-14T11:14:00.000Z → 2026-07-10T11:39:00.000Z
 
 ## Classified Pages
 
@@ -184,7 +191,7 @@ confusable_not_for: Not for Azure HDInsight (use azure-hdinsight), Azure Databri
 | [Deploy a Batch account and two pools with a start task - Terraform](https://learn.microsoft.com/en-us/azure/batch/quick-deploy-batch-account-two-pools-start-task-terraform) | 0.30 | Terraform quickstart with start task; still a tutorial scenario rather than a catalog of expert configuration details. |
 | [OCR with Batch and Functions](https://learn.microsoft.com/en-us/azure/batch/tutorial-batch-functions) | 0.30 | Tutorial integrating Batch with Azure Functions; scenario walkthrough without detailed limits or config matrices. |
 | [Parallel file processing - .NET](https://learn.microsoft.com/en-us/azure/batch/tutorial-parallel-dotnet) | 0.30 | Tutorial for running a parallel workload with Azure Batch .NET and ffmpeg. Focuses on example workflow and code, not on product-specific limits, configuration parameter tables, troubleshooting error codes, or quantified best practices. |
-| [Parallel file processing - Python](https://learn.microsoft.com/en-us/azure/batch/tutorial-parallel-python) | 0.30 | Tutorial for running a parallel workload with Azure Batch Python and ffmpeg. Provides example code and workflow only; lacks expert-level details such as limits/quotas, configuration matrices, security roles, or troubleshooting mappings. |
+| [Parallel file processing - Python](https://learn.microsoft.com/en-us/azure/batch/tutorial-parallel-python) | 0.30 | Step-by-step tutorial for running a parallel Python workload on Azure Batch. Focuses on basic usage patterns rather than product-specific limits, configuration matrices, or troubleshooting details. |
 | [Python scripts with Data Factory](https://learn.microsoft.com/en-us/azure/batch/tutorial-run-python-batch-azure-data-factory) | 0.30 | Tutorial running Batch via Data Factory; focuses on workflow steps, not deep product-specific configuration or quotas. |
 | [Schedule jobs for efficiency](https://learn.microsoft.com/en-us/azure/batch/batch-job-schedule) | 0.30 | Describes scheduling Batch jobs and efficiency concepts; lacks concrete limits, configuration parameter tables, or decision matrices with thresholds. |
 | [Task dependencies](https://learn.microsoft.com/en-us/azure/batch/batch-task-dependencies) | 0.30 | Explains how to define and use task dependencies conceptually; no numeric limits, config tables, or product-specific error codes or settings. |
@@ -199,4 +206,4 @@ confusable_not_for: Not for Azure HDInsight (use azure-hdinsight), Azure Databri
 | [Create a Batch account and run a job - Azure portal](https://learn.microsoft.com/en-us/azure/batch/quick-create-portal) | 0.20 | Portal quickstart for creating a Batch account and job; primarily step-by-step UI guidance. |
 | [Monitor Azure Batch](https://learn.microsoft.com/en-us/azure/batch/monitor-batch) | 0.20 | High-level monitoring overview tying Azure Batch to Azure Monitor; summary suggests conceptual guidance without specific error codes, configuration tables, or quantified thresholds. |
 | [Rendering using Azure](https://learn.microsoft.com/en-us/azure/batch/batch-rendering-service) | 0.20 | High-level rendering overview and use cases; marketing/introductory style content without specific configuration, limits, or troubleshooting details. |
-| [What is Azure Batch?](https://learn.microsoft.com/en-us/azure/batch/batch-technical-overview) | 0.20 | High-level technical overview of Azure Batch; no detailed limits, configs, or error mappings. |
+| [What is Azure Batch?](https://learn.microsoft.com/en-us/azure/batch/batch-technical-overview) | 0.20 | Technical overview of Azure Batch capabilities and concepts without specific limits, configuration tables, error codes, or decision matrices. Primarily conceptual and introductory content. |

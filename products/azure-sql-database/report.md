@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-05'
+generated_at: '2026-07-12'
 category_descriptions:
   decision-making: Guidance for choosing Azure SQL tiers, pricing models, licensing,
     Hyperscale options, DR/HA, automation, and migration paths from SQL Server or
@@ -7,9 +7,9 @@ category_descriptions:
   troubleshooting: 'Diagnosing and fixing Azure SQL issues: performance (CPU, memory,
     deadlocks, blocking), connectivity, scaling, import/export, geo-replication, Data
     Sync, Elastic Scale, and log-full errors.'
-  configuration: 'Configuring Azure SQL databases: monitoring, backups, geo-replication/failover,
-    security (encryption, TLS, immutability), scaling/pools, Data Sync, and CLI/PowerShell/REST
-    setup tasks.'
+  configuration: 'Configuring Azure SQL databases/servers: monitoring, backups, geo-replication/failover,
+    security (TLS, Always Encrypted, immutability), scaling, elastic pools/jobs, Data
+    Sync, and CLI/PowerShell setup.'
   best-practices: 'Best practices for Azure SQL operations: monitoring, security,
     HA/DR, failover, read replicas, maintenance, space management, elastic pools,
     Data Sync, and post-migration T-SQL adaptation.'
@@ -19,9 +19,9 @@ category_descriptions:
   architecture-patterns: Patterns and architectures for geo-replication, DR, availability,
     sharding/elastic scale-out, connectivity/routing, rolling upgrades, and multitenant
     SaaS design in Azure SQL.
-  integrations: Connecting apps and tools to Azure SQL (drivers, EF, Node, Python),
-    plus PowerShell automation for auditing, scaling, replication, geo/failover, sharding,
-    and streaming/Spark integration.
+  integrations: Connecting apps and tools to Azure SQL (EF Core, .NET, Node.js, Python,
+    Go), plus PowerShell/CLI automation for auditing, scaling, geo-replication, data
+    sync, and streaming/Spark integration.
   deployment: 'Deploying and scaling Azure SQL databases/MI: automation (GitHub, ARM,
     Bicep, Terraform), Hyperscale/zone-redundant setup, regional moves, feature availability,
     and dev environment setup.'
@@ -30,17 +30,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure SQL Database development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  choosing tiers/Hyperscale, configuring geo-replication/DR, Entra auth/Always Encrypted,
-  elastic pools/sharding, or automation APIs, and other Azure SQL Database related
-  development tasks. Not for Azure SQL Managed Instance (use azure-sql-managed-instance),
-  SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Cosmos
-  DB (use azure-cosmos-db), Azure Database for PostgreSQL (use azure-database-postgresql).
-use_when: Use when choosing tiers/Hyperscale, configuring geo-replication/DR, Entra
-  auth/Always Encrypted, elastic pools/sharding, or automation APIs, and other Azure
-  SQL Database related development tasks.
+  choosing tiers/Hyperscale, setting geo-replication/DR, using Entra auth/Always Encrypted,
+  or automating deployments, and other Azure SQL Database related development tasks.
+  Not for Azure SQL Managed Instance (use azure-sql-managed-instance), SQL Server
+  on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Cosmos DB (use
+  azure-cosmos-db), Azure Synapse Analytics (use azure-synapse-analytics).
+use_when: Use when choosing tiers/Hyperscale, setting geo-replication/DR, using Entra
+  auth/Always Encrypted, or automating deployments, and other Azure SQL Database related
+  development tasks.
 confusable_not_for: Not for Azure SQL Managed Instance (use azure-sql-managed-instance),
   SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Cosmos
-  DB (use azure-cosmos-db), Azure Database for PostgreSQL (use azure-database-postgresql).
+  DB (use azure-cosmos-db), Azure Synapse Analytics (use azure-synapse-analytics).
 ---
 # Azure SQL Database Crawl Report
 
@@ -49,13 +49,13 @@ confusable_not_for: Not for Azure SQL Managed Instance (use azure-sql-managed-in
 - **Total Pages**: 362
 - **Fetched**: 362
 - **Fetch Failed**: 0
-- **Classified**: 242
-- **Unclassified**: 120
+- **Classified**: 243
+- **Unclassified**: 119
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 361
+- **Updated Pages**: 2
+- **Unchanged**: 360
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sql-database/azure-sql-database.csv`
 
@@ -68,18 +68,20 @@ confusable_not_for: Not for Azure SQL Managed Instance (use azure-sql-managed-in
 | configuration | 61 | 16.9% |
 | decision-making | 24 | 6.6% |
 | deployment | 13 | 3.6% |
-| integrations | 26 | 7.2% |
+| integrations | 27 | 7.5% |
 | limits-quotas | 8 | 2.2% |
 | security | 62 | 17.1% |
 | troubleshooting | 21 | 5.8% |
-| *(Unclassified)* | 120 | 33.1% |
+| *(Unclassified)* | 119 | 32.9% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Known issues with Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-known-issues?view=azuresql)
-  - Updated: 2026-05-01T08:00:00.000Z → 2026-06-25T08:00:00.000Z
+- [Go](https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-go?view=azuresql)
+  - Updated: 2025-06-13T08:00:00.000Z → 2026-07-10T22:36:00.000Z
+- [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/monitoring-sql-managed-instance-azure-monitor-reference?view=azuresql)
+  - Updated: 2026-02-12T08:00:00.000Z → 2026-02-13T18:37:00.000Z
 
 ## Classified Pages
 
@@ -140,6 +142,7 @@ confusable_not_for: Not for Azure SQL Managed Instance (use azure-sql-managed-in
 | [Use DMVs to monitor performance](https://learn.microsoft.com/en-us/azure/azure-sql/database/monitoring-with-dmvs?view=azuresql) | troubleshooting | 0.80 | Shows specific DMVs, queries, and interpretations to detect blocked/long-running queries and resource bottlenecks, which are product-specific diagnostic patterns. |
 | [vNet endpoints - PowerShell](https://learn.microsoft.com/en-us/azure/azure-sql/database/scripts/vnet-service-endpoint-rule-powershell-create?view=azuresql) | security | 0.80 | PowerShell scripts for VNet rules and endpoints are security/network configuration, including specific cmdlets and parameters unique to Azure SQL. |
 | [Audit to storage account behind VNet or firewall](https://learn.microsoft.com/en-us/azure/azure-sql/database/audit-write-storage-account-behind-vnet-firewall?view=azuresql) | security | 0.78 | The article gives product-specific security configuration details for enabling Azure SQL Database/Azure Synapse auditing to a storage account restricted by VNet/firewall. It includes concrete requirements such as needing managed identity authentication when the storage account is behind a VNet/firewall, and step-level configuration via Azure portal and REST with specific property names and settings. These are implementation-specific security patterns rather than generic concepts. |
+| [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/monitoring-sql-managed-instance-azure-monitor-reference?view=azuresql) | configuration | 0.78 | A monitoring data reference page for Azure SQL Managed Instance typically lists all Azure Monitor metrics, dimensions, and log categories specific to the service, including exact metric names, units, and sometimes default collection behavior. These product-specific monitoring fields and their meanings are not generally known from training and function as configuration/parameter references for observability setups rather than generic concepts. |
 | [Configure isolated access for Hyperscale named replicas](https://learn.microsoft.com/en-us/azure/azure-sql/database/hyperscale-named-replica-security-configure?view=azuresql) | security | 0.78 | How-to article for granting access to a Hyperscale named replica without access to primary/other replicas; contains product-specific security configuration steps and role/permission patterns unique to Azure SQL Hyperscale. |
 | [IP-based firewall](https://learn.microsoft.com/en-us/azure/azure-sql/database/firewall-configure?view=azuresql) | security | 0.78 | Firewall configuration for Azure SQL Database is security-focused and typically includes product-specific details such as exact firewall rule scopes (server-level vs database-level), required ports, and specific configuration parameters/commands (T-SQL, PowerShell, CLI) that are unique to this service. These are concrete, implementation-level security settings rather than conceptual guidance. |
 | [Known issues with Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-known-issues?view=azuresql) | troubleshooting | 0.78 | The page is a catalog of current known issues for Azure SQL Managed Instance, each with product-specific symptoms and workarounds or resolution details. This is expert troubleshooting knowledge that maps issues to causes and fixes, and is not just conceptual guidance. |
@@ -154,7 +157,6 @@ confusable_not_for: Not for Azure SQL Managed Instance (use azure-sql-managed-in
 | [Auditing setup](https://learn.microsoft.com/en-us/azure/azure-sql/database/auditing-setup?view=azuresql) | security | 0.75 | How-to article for setting up auditing at server or database level and choosing destinations; includes product-specific security configuration steps. |
 | [Authenticate app](https://learn.microsoft.com/en-us/azure/azure-sql/database/application-authentication-get-client-id-keys?view=azuresql) | security | 0.75 | Walks through app registration and service principal setup for Azure SQL, including specific identity configuration values (client IDs, keys, tenant); clearly security/auth configuration. |
 | [Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/monitoring-sql-database-azure-monitor-reference?view=azuresql) | configuration | 0.75 | Monitoring reference pages enumerate metric names, dimensions, units, and log schema fields specific to Azure SQL Database, which are detailed configuration/telemetry parameters. |
-| [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/monitoring-sql-managed-instance-azure-monitor-reference?view=azuresql) | configuration | 0.75 | Lists specific Azure Monitor metrics, dimensions, and log schemas for Managed Instance, which are product-specific configuration/telemetry details. |
 | [Change automated backup settings](https://learn.microsoft.com/en-us/azure/azure-sql/database/automated-backups-change-settings?view=azuresql) | configuration | 0.75 | Details backup retention policies and redundancy options with specific settings and ranges, which are Azure SQL–specific configuration parameters. |
 | [Configure dynamic data masking](https://learn.microsoft.com/en-us/azure/azure-sql/database/dynamic-data-masking-configure-portal?view=azuresql) | security | 0.75 | Dynamic Data Masking configuration involves specific masking rules and options unique to Azure SQL; security-focused configuration. |
 | [Configure geo replication when using database level CMK](https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-database-level-geo-replication-restore?view=azuresql) | security | 0.75 | Combines geo-replication/restore with database-level CMK TDE; includes security constraints and key access requirements across regions/replicas. |
@@ -277,6 +279,7 @@ confusable_not_for: Not for Azure SQL Managed Instance (use azure-sql-managed-in
 | [Data Sync Agent](https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-data-sync-agent-overview?view=azuresql) | configuration | 0.65 | Product-specific configuration steps and parameters for the Data Sync Agent to connect SQL Server and Azure SQL; detailed setup beyond generic tutorials. |
 | [Gateway IP address updates](https://learn.microsoft.com/en-us/azure/azure-sql/database/connectivity-architecture?view=azuresql) | architecture-patterns | 0.65 | Explains internal connectivity components and connection policies for Azure SQL, including when to use each policy for different client locations, which is product-specific architectural guidance. |
 | [GitHub Actions](https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-github-actions-sql-db?view=azuresql) | deployment | 0.65 | Shows GitHub Actions workflow YAML and Azure SQL-specific deployment steps, including action parameters and constraints for CI/CD. |
+| [Go](https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-go?view=azuresql) | integrations | 0.65 | Quickstart includes product-specific Go driver usage and connection details for Azure SQL Database/Managed Instance. While largely tutorial, it likely contains concrete connection string patterns, driver initialization, and T-SQL execution code specific to Azure SQL with go-mssqldb, which qualifies as an integration/coding pattern beyond generic language usage. |
 | [Hyperscale backups](https://learn.microsoft.com/en-us/azure/azure-sql/database/hyperscale-automated-backups-overview?view=azuresql) | configuration | 0.65 | Describes snapshot-based backups, log storage, and retention behavior specific to Hyperscale; includes product-specific backup configuration and behavior details. |
 | [Hyperscale elastic pools](https://learn.microsoft.com/en-us/azure/azure-sql/database/hyperscale-elastic-pool-overview?view=azuresql) | decision-making | 0.65 | Explains Hyperscale elastic pools and shared resource model, helping decide when to use pools vs individual Hyperscale databases for cost/performance. |
 | [Intelligent Insights](https://learn.microsoft.com/en-us/azure/azure-sql/database/intelligent-insights-overview?view=azuresql) | configuration | 0.65 | Describes Intelligent Insights logs (SQLInsights) and monitoring behavior; product-specific monitoring configuration and data outputs. |
@@ -438,7 +441,6 @@ confusable_not_for: Not for Azure SQL Managed Instance (use azure-sql-managed-in
 | [Event file walkthrough](https://learn.microsoft.com/en-us/azure/azure-sql/database/xevent-code-event-file?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 351) |
 | [Export a database to a BACPAC file](https://learn.microsoft.com/en-us/azure/azure-sql/database/database-export?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 351) |
 | [Extended events](https://learn.microsoft.com/en-us/azure/azure-sql/database/xevent-db-diff-from-svr?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 351) |
-| [Go](https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-go?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 351) |
 | [Identify query performance issues](https://learn.microsoft.com/en-us/azure/azure-sql/identify-query-performance-issues?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 351) |
 | [Import a database from a BACPAC file](https://learn.microsoft.com/en-us/azure/azure-sql/database/database-import?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 351) |
 | [Load data with BCP](https://learn.microsoft.com/en-us/azure/azure-sql/load-from-csv-with-bcp?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 351) |

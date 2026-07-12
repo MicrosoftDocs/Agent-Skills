@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-05'
+generated_at: '2026-07-12'
 category_descriptions:
   integrations: Patterns and samples for integrating API Management with LLMs, backends,
     logging/monitoring, events, OAuth, GitHub, Dapr, and exporting/importing APIs
@@ -13,9 +13,9 @@ category_descriptions:
   decision-making: 'Guidance for planning and migrating API Management: pricing and
     scaling, cost control, DevOps/CI/CD, VNet choices, workspace and portal changes,
     and moving from legacy or other platforms.'
-  configuration: 'Configuring APIM behavior: policies, caching, domains, networking/VNet,
-    monitoring, self-hosted gateways, developer portal, subscriptions/users, and infrastructure-as-code
-    setup.'
+  configuration: 'Configuring Azure API Management behavior: policies, caching, domains,
+    networking/VNet, monitoring/logging, developer portal, gateways, backends, subscriptions,
+    users, and automation templates.'
   troubleshooting: 'Diagnosing and fixing APIM issues: policies and error handling,
     request tracing/debugging, custom domain/Key Vault cert failures, SNAT timeouts,
     portal problems, and using Diagnose and Solve.'
@@ -31,17 +31,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure API Management development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when integrating APIM with LLMs/backends, securing with Entra/OAuth/JWT, using
-  policies/caching, or scaling via VNet/self-hosted gateways, and other Azure API
-  Management related development tasks. Not for Azure Service Bus (use azure-service-bus),
-  Azure Functions (use azure-functions), Azure Logic Apps (use azure-logic-apps),
-  Azure App Service (use azure-app-service).
-use_when: Use when integrating APIM with LLMs/backends, securing with Entra/OAuth/JWT,
-  using policies/caching, or scaling via VNet/self-hosted gateways, and other Azure
-  API Management related development tasks.
-confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Functions
-  (use azure-functions), Azure Logic Apps (use azure-logic-apps), Azure App Service
-  (use azure-app-service).
+  Use when securing APIs, enforcing quotas, integrating LLM/backends, configuring
+  policies, or deploying gateways, and other Azure API Management related development
+  tasks. Not for Azure App Service (use azure-app-service), Azure Functions (use azure-functions),
+  Azure Logic Apps (use azure-logic-apps), Azure Service Bus (use azure-service-bus).
+use_when: Use when securing APIs, enforcing quotas, integrating LLM/backends, configuring
+  policies, or deploying gateways, and other Azure API Management related development
+  tasks.
+confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Functions
+  (use azure-functions), Azure Logic Apps (use azure-logic-apps), Azure Service Bus
+  (use azure-service-bus).
 ---
 # Azure API Management Crawl Report
 
@@ -54,9 +53,9 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Fun
 - **Unclassified**: 57
 
 ### Incremental Update
-- **New Pages**: 4
-- **Updated Pages**: 2
-- **Unchanged**: 270
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 275
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-api-management/azure-api-management.csv`
 
@@ -77,19 +76,10 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Fun
 
 ## Changes
 
-### New Pages
-
-- [Create and manage MCP servers programmatically](https://learn.microsoft.com/en-us/azure/api-management/manage-mcp-servers-rest-api)
-- [Govern MCP servers with products](https://learn.microsoft.com/en-us/azure/api-management/govern-mcp-server-products)
-- [Roll out MCP servers using versions](https://learn.microsoft.com/en-us/azure/api-management/mcp-server-versions)
-- [Monitor MCP server traffic](https://learn.microsoft.com/en-us/azure/api-management/monitor-mcp-servers)
-
 ### Updated Pages
 
-- [Observability overview](https://learn.microsoft.com/en-us/azure/api-management/observability)
-  - Updated: 2025-08-28T17:18:00.000Z → 2026-07-01T05:18:00.000Z
-- [set-variable](https://learn.microsoft.com/en-us/azure/api-management/set-variable-policy)
-  - Updated: 2025-06-01T11:12:00.000Z → 2026-06-29T22:28:00.000Z
+- [Monitoring data reference](https://learn.microsoft.com/en-us/azure/api-management/monitor-api-management-reference)
+  - Updated: 2025-09-05T08:00:00.000Z → 2026-06-26T05:22:00.000Z
 
 ## Classified Pages
 
@@ -129,7 +119,6 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Fun
 | [Deploy a self-hosted gateway to Azure Kubernetes Service](https://learn.microsoft.com/en-us/azure/api-management/how-to-deploy-self-hosted-gateway-azure-kubernetes-service) | deployment | 0.80 | AKS deployment guide for self-hosted gateway; contains product-specific deployment YAML/Helm values, ports, and resource requirements. |
 | [Deploy a self-hosted gateway to Kubernetes (YAML)](https://learn.microsoft.com/en-us/azure/api-management/how-to-deploy-self-hosted-gateway-kubernetes) | deployment | 0.80 | Kubernetes YAML deployment article; includes container image, environment variables, and Kubernetes resource settings specific to APIM gateway. |
 | [Deploy to multiple Azure regions](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-deploy-multi-region) | deployment | 0.80 | Details Premium multi-region deployment, including configuring regional scale units and availability zones, which are product-specific deployment constraints. |
-| [Monitoring data reference](https://learn.microsoft.com/en-us/azure/api-management/monitor-api-management-reference) | configuration | 0.80 | Reference for metrics, logs, and dimensions emitted by API Management; includes names, meanings, and possibly units—detailed monitoring configuration/reference data. |
 | [Secure APIs using client certificate authentication](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-mutual-certificates-for-clients) | security | 0.80 | Details mutual TLS and client certificate validation using API Management policies, including certificate property checks, which are product-specific security patterns. |
 | [Secure access to MCP servers](https://learn.microsoft.com/en-us/azure/api-management/secure-mcp-servers) | security | 0.80 | Focused on securing MCP servers; will include concrete security configuration options, auth methods, and possibly RBAC or policy details specific to MCP scenarios. |
 | [Send messages to Azure Service Bus](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-send-service-bus) | integrations | 0.80 | Describes policy-based integration with Service Bus, including configuration details unique to this integration. |
@@ -158,6 +147,7 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Fun
 | [Export API as custom connector](https://learn.microsoft.com/en-us/azure/api-management/export-api-power-platform) | integrations | 0.78 | Provides concrete steps and parameters to export APIs as custom connectors for Copilot Studio, Power Apps, and Power Automate; product-specific integration pattern. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/api-management/api-management-faq) | limits-quotas | 0.78 | The FAQ includes concrete, product-specific numeric details such as maximum sizes, timeouts, and other hard limits (for example, constraints on policy size, request/response size, and other quotas) that are not inferable from general knowledge. These are expressed as exact values and service-specific constraints, matching the limits-quotas criteria. |
 | [Manage protocols and ciphers](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-manage-protocols-ciphers) | security | 0.78 | TLS/cipher management article for APIM; typically lists supported TLS versions, cipher suite names, and configuration switches—product-specific security settings and constraints. |
+| [Monitoring data reference](https://learn.microsoft.com/en-us/azure/api-management/monitor-api-management-reference) | configuration | 0.78 | A monitoring data reference for Azure API Management in Azure Monitor typically lists all available metrics, dimensions, and log fields with their exact names, types, and meanings. This is product-specific expert knowledge that an LLM wouldn't reliably know from training. The content is configuration-oriented because it defines the precise telemetry schema (metric names, categories, properties) used when configuring monitoring, alerts, and dashboards, rather than general concepts or limits. |
 | [Policy reference index](https://learn.microsoft.com/en-us/azure/api-management/api-management-policies) | configuration | 0.78 | Reference index for all API Management policies with gateway applicability and policy-specific settings links. This is product-specific configuration knowledge (policy names, where they apply, and dependencies like subscription key requirements) that goes beyond generic LLM knowledge. |
 | [Use managed identities for Azure resources](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-use-managed-service-identity) | security | 0.78 | Describes product-specific steps and settings to create and use system-assigned and user-assigned managed identities for API Management to access Entra-protected resources like Key Vault. This is concrete security configuration (identity setup and usage) rather than conceptual guidance. |
 | [Virtual network for workspace gateways](https://learn.microsoft.com/en-us/azure/api-management/virtual-network-workspaces-resources) | configuration | 0.78 | The page describes detailed, product-specific virtual network requirements for API Management workspace gateways, including required network resources and differing requirements by inbound/outbound access modes. This constitutes configuration-level expert knowledge about how to correctly set up networking for this specific feature, beyond generic VNet concepts. |

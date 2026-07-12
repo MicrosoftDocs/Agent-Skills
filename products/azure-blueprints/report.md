@@ -1,13 +1,14 @@
 ---
-generated_at: '2026-06-28'
+generated_at: '2026-07-12'
 category_descriptions:
   decision-making: Guidance on Azure Blueprints retirement timelines, planning and
     executing migrations, and answers to common questions about moving off Blueprints.
   security: Security-focused deployment stages, resource locks, operator roles, and
     using/mapping Azure Blueprints for compliance frameworks like PBMM, ISM PROTECTED,
     ISO 27001, SWIFT CSP, and UK OFFICIAL/NHS.
-  deployment: Managing blueprint deployment order, migrating blueprints to template
-    specs, and deploying the CAF Foundation blueprint with configurable parameters.
+  deployment: Controlling blueprint artifact deployment order, migrating blueprints
+    to template specs/deployment stacks, and deploying the CAF Foundation blueprint
+    with parameters.
   integrations: 'Automating Azure Blueprints as code using CLI, PowerShell, and REST:
     create, import/export, and manage blueprint definitions and assignments programmatically.'
   configuration: Configuring and deploying Azure Blueprints (including security/ISO/CAF/SWIFT
@@ -17,16 +18,16 @@ category_descriptions:
     troubleshooting guidance.
 skill_description: Expert knowledge for Azure Blueprints development including troubleshooting,
   decision making, security, configuration, integrations & coding patterns, and deployment.
-  Use when migrating off Azure Blueprints, mapping to PBMM/ISO/SWIFT, using CAF Foundation,
-  or automating via CLI/PowerShell/REST, and other Azure Blueprints related development
-  tasks. Not for Azure Policy (use azure-policy), Azure Resource Manager (use azure-resource-manager),
-  Azure Portal (use azure-portal), Azure Role-based access control (use azure-rbac).
-use_when: Use when migrating off Azure Blueprints, mapping to PBMM/ISO/SWIFT, using
-  CAF Foundation, or automating via CLI/PowerShell/REST, and other Azure Blueprints
+  Use when migrating off Blueprints, mapping to PBMM/ISO/SWIFT, automating via CLI/PowerShell/REST,
+  or fixing deployment errors, and other Azure Blueprints related development tasks.
+  Not for Azure Policy (use azure-policy), Azure Resource Manager (use azure-resource-manager),
+  Azure Resource Graph (use azure-resource-graph), Azure Portal (use azure-portal).
+use_when: Use when migrating off Blueprints, mapping to PBMM/ISO/SWIFT, automating
+  via CLI/PowerShell/REST, or fixing deployment errors, and other Azure Blueprints
   related development tasks.
 confusable_not_for: Not for Azure Policy (use azure-policy), Azure Resource Manager
-  (use azure-resource-manager), Azure Portal (use azure-portal), Azure Role-based
-  access control (use azure-rbac).
+  (use azure-resource-manager), Azure Resource Graph (use azure-resource-graph), Azure
+  Portal (use azure-portal).
 ---
 # Azure Blueprints Crawl Report
 
@@ -40,8 +41,8 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Resource Mana
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 43
+- **Updated Pages**: 1
+- **Unchanged**: 42
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-blueprints/azure-blueprints.csv`
 
@@ -59,6 +60,11 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Resource Mana
 
 ## Changes
 
+### Updated Pages
+
+- [Migrate to template specs](https://learn.microsoft.com/en-us/azure/governance/blueprints/migrate-to-template-specs)
+  - Updated: 2026-06-24T05:15:00.000Z → 2026-06-26T08:00:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
@@ -73,6 +79,7 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Resource Mana
 | [Azure Blueprints retirement](https://learn.microsoft.com/en-us/azure/governance/blueprints/blueprint-retirement) | decision-making | 0.70 | Retirement article includes specific retirement dates, phased timeline milestones, and migration guidance to Deployment Stacks and template specs, which are concrete decision inputs for when and how to move off the service. |
 | [Configure your environment for a Blueprint Operator](https://learn.microsoft.com/en-us/azure/governance/blueprints/how-to/configure-for-blueprint-operator) | security | 0.70 | Page is a how-to for configuring an environment specifically for the Azure Blueprints built-in Blueprint Operator role. It likely includes product-specific RBAC role names, required permissions, and scope configuration steps that are not generic security knowledge, matching the security sub-skill criteria. |
 | [Create a blueprint - REST API](https://learn.microsoft.com/en-us/azure/governance/blueprints/create-blueprint-rest-api) | integrations | 0.70 | REST API quickstart; will include request URIs, payload schemas, and parameters specific to Azure Blueprints, matching integration/API parameter guidance. |
+| [Migrate to template specs](https://learn.microsoft.com/en-us/azure/governance/blueprints/migrate-to-template-specs) | deployment | 0.70 | The article provides product-specific, step-by-step migration and deployment guidance for moving Azure Blueprints definitions and artifacts to template specs and deploying them with Azure Deployment Stacks before retirement. This includes concrete, Azure-specific migration paths and deployment behaviors that go beyond generic knowledge, fitting the deployment category best among the available types. |
 | [Resource locking in Azure Blueprints](https://learn.microsoft.com/en-us/azure/governance/blueprints/concepts/resource-locking) | security | 0.70 | Details locking options and how they protect resources, including interactions with roles; product-specific security configuration behavior. |
 | [Steps to deploy](https://learn.microsoft.com/en-us/azure/governance/blueprints/samples/azure-security-benchmark-foundation/deploy) | configuration | 0.70 | Deployment steps plus artifact parameter details; likely includes parameter tables and allowed values for this blueprint sample, matching configuration guidance. |
 | [Steps to deploy](https://learn.microsoft.com/en-us/azure/governance/blueprints/samples/caf-foundation/deploy) | deployment | 0.70 | Described as deployment steps including blueprint artifact parameter details; this implies concrete parameter names/values and deployment-specific guidance for this sample, which is expert deployment/configuration knowledge. |
@@ -83,7 +90,6 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Resource Mana
 | [Steps to deploy](https://learn.microsoft.com/en-us/azure/governance/blueprints/samples/swift-2020/deploy) | configuration | 0.70 | Deployment steps with artifact parameter details; includes configuration parameters for this compliance blueprint. |
 | [Create a blueprint - Azure CLI](https://learn.microsoft.com/en-us/azure/governance/blueprints/create-blueprint-azurecli) | integrations | 0.65 | CLI-focused quickstart; expected to show blueprint-related CLI commands and parameters unique to this service, which are product-specific integration details. |
 | [Import and export with PowerShell](https://learn.microsoft.com/en-us/azure/governance/blueprints/how-to/import-export-ps) | configuration | 0.65 | Describes working with blueprint definitions as code via specific PowerShell commands; likely includes command names, parameters, and usage patterns that constitute product-specific configuration/management details. |
-| [Migrate to template specs](https://learn.microsoft.com/en-us/azure/governance/blueprints/migrate-to-template-specs) | deployment | 0.65 | Step-by-step migration to template specs and Deployment Stacks is a product-specific deployment/migration pattern, including how to structure templates and keep versioning and deny assignments; this is concrete deployment guidance rather than generic tutorial content. |
 | [Overview](https://learn.microsoft.com/en-us/azure/governance/blueprints/samples/swift-2020/) | security | 0.65 | Compliance blueprint overview mapping to SWIFT CSP-CSCF controls via Azure Policy; product-specific security/compliance guidance. |
 | [Protect new resources with blueprint resource locks](https://learn.microsoft.com/en-us/azure/governance/blueprints/tutorials/protect-new-resources) | security | 0.65 | Focuses on resource locks (ReadOnly, DoNotDelete) and interaction with Owner role; contains product-specific security/locking behavior and likely RBAC implications. |
 | [Retirement FAQ](https://learn.microsoft.com/en-us/azure/governance/blueprints/blueprint-retirement-faq) | decision-making | 0.65 | FAQ around retirement contains detailed answers about what changes, data retention, deny-assignment impact, and migration behavior, providing concrete criteria and implications for migration decisions. |

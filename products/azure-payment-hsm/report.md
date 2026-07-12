@@ -1,12 +1,11 @@
 ---
-generated_at: '2026-06-14'
+generated_at: '2026-07-12'
 category_descriptions:
   configuration: 'Configuring Azure Payment HSM networking and access: VNets/peering,
     FastPath, ARM/CLI deployment, IP layout (split/reused VNets), provider registration,
     and payShield Manager browser access.'
-  security: 'Security setup for Payment HSM: configuring SSH/payShield manager access,
-    understanding compliance certifications/scope, and applying hardening and security
-    best practices.'
+  security: Configuring secure SSH access, understanding Payment HSM compliance/certifications,
+    and applying detailed security controls and best practices for Azure Payment HSM.
   decision-making: Guidance on choosing/changing Azure Payment HSM performance SKUs,
     and understanding support options, roles, and responsibilities for operating the
     service.
@@ -21,17 +20,17 @@ category_descriptions:
     or workarounds.
 skill_description: Expert knowledge for Azure Payment Hsm development including troubleshooting,
   best practices, decision making, architecture & design patterns, security, and configuration.
-  Use when configuring Payment HSM VNets/FastPath, payShield Manager access, HA/DR
-  topologies, SKUs, or traffic inspection, and other Azure Payment Hsm related development
-  tasks. Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure Cloud Hsm (use
-  azure-cloud-hsm), Azure Key Vault (use azure-key-vault), Azure Information Protection
-  (use azure-information-protection).
-use_when: Use when configuring Payment HSM VNets/FastPath, payShield Manager access,
-  HA/DR topologies, SKUs, or traffic inspection, and other Azure Payment Hsm related
-  development tasks.
-confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure Cloud
-  Hsm (use azure-cloud-hsm), Azure Key Vault (use azure-key-vault), Azure Information
-  Protection (use azure-information-protection).
+  Use when configuring Payment HSM VNets/peering, FastPath, payShield Manager access,
+  SKUs, HA/DR topologies, or traffic routing, and other Azure Payment Hsm related
+  development tasks. Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Dedicated
+  HSM (use azure-dedicated-hsm), Azure Key Vault (use azure-key-vault), Azure Security
+  (use azure-security).
+use_when: Use when configuring Payment HSM VNets/peering, FastPath, payShield Manager
+  access, SKUs, HA/DR topologies, or traffic routing, and other Azure Payment Hsm
+  related development tasks.
+confusable_not_for: Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Dedicated
+  HSM (use azure-dedicated-hsm), Azure Key Vault (use azure-key-vault), Azure Security
+  (use azure-security).
 ---
 # Azure Payment Hsm Crawl Report
 
@@ -45,8 +44,8 @@ confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 28
+- **Updated Pages**: 1
+- **Unchanged**: 27
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-payment-hsm/azure-payment-hsm.csv`
 
@@ -64,18 +63,23 @@ confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure
 
 ## Changes
 
+### Updated Pages
+
+- [Secure your Payment HSM](https://learn.microsoft.com/en-us/azure/payment-hsm/secure-payment-hsm)
+  - Updated: 2026-04-01T06:04:00.000Z → 2026-07-10T08:00:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
 | [Fastpathenabled](https://learn.microsoft.com/en-us/azure/payment-hsm/fastpathenabled) | configuration | 0.85 | Details both the subscription-level feature flag and VNet tag, including registration steps and support contact requirements; these are precise configuration mechanisms unique to the service. |
 | [Peer payment HSM virtual networks](https://learn.microsoft.com/en-us/azure/payment-hsm/peer-vnets) | configuration | 0.80 | Specifically calls out the required 'fastpathenabled' tag on VNets and limitations of the Azure portal; these are concrete, product-specific configuration requirements. |
-| [Secure your Payment HSM](https://learn.microsoft.com/en-us/azure/payment-hsm/secure-payment-hsm) | security | 0.80 | Article explicitly focuses on securing Azure Payment HSM and likely includes product-specific security guidance such as RBAC roles, network security rules, identity configuration, and key management practices tailored to this service. |
 | [Azure Payment HSM service support guide](https://learn.microsoft.com/en-us/azure/payment-hsm/support-guide) | decision-making | 0.70 | Defines prerequisites, support channels, and division of responsibility, including S2 support dependency on specific HA deployment; this is decision guidance on supportability and deployment posture. |
 | [Azure Payment HSM traffic inspection](https://learn.microsoft.com/en-us/azure/payment-hsm/inspect-traffic) | best-practices | 0.70 | Guidance on bypassing UDR restrictions and inspecting traffic for a VNet-injected, delegated subnet service; likely includes specific network patterns and constraints unique to Payment HSM. |
 | [Certification and compliance](https://learn.microsoft.com/en-us/azure/payment-hsm/certification-compliance) | security | 0.70 | Details specific compliance standards and references to PCI reports and shared responsibility matrices; these are product-specific security/compliance requirements. |
 | [High availability & disaster recovery](https://learn.microsoft.com/en-us/azure/payment-hsm/deployment-scenarios) | architecture-patterns | 0.70 | Describes deployment stamps, cross-AZ requirements, and multi-region provisioning for HA/DR; these are product-specific architectural patterns and constraints. |
 | [Register resource provider and resource provider features](https://learn.microsoft.com/en-us/azure/payment-hsm/register-payment-hsm-resource-providers) | configuration | 0.70 | Covers registering resource providers and feature flags; typically includes exact provider names, feature names, and commands that are product-specific configuration details. |
+| [Secure your Payment HSM](https://learn.microsoft.com/en-us/azure/payment-hsm/secure-payment-hsm) | security | 0.70 | The article focuses on securing Azure Payment HSM, a specialized bare-metal Thales payShield 10K-based service. Such guidance typically includes product-specific security controls (for example, required network isolation patterns, supported identity models, and key management practices unique to Payment HSM) that go beyond generic security concepts. This constitutes expert, service-specific security configuration and operational guidance. |
 | [Solution design](https://learn.microsoft.com/en-us/azure/payment-hsm/solution-design) | architecture-patterns | 0.70 | Explicitly about topologies and constraints; likely includes recommended patterns and limits unique to Payment HSM deployments. |
 | [Using VPN](https://learn.microsoft.com/en-us/azure/payment-hsm/access-payshield-manager) | configuration | 0.70 | Specifies requirements like minimum number of smart cards, management NIC IP usage, and browser/USB reader setup; these are concrete, product-specific configuration details. |
 | [Change payShield performance level](https://learn.microsoft.com/en-us/azure/payment-hsm/change-performance-level) | decision-making | 0.65 | Discusses supported SKUs, performance levels, and non-disruptive updates; this is SKU/performance selection guidance that informs capacity and tier decisions. |

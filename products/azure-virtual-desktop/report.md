@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-05'
+generated_at: '2026-07-12'
 category_descriptions:
   configuration: Configuring AVD host pools, images, autoscale, networking, RDP/RemoteApp
     features, redirection, Teams/Office, licensing, monitoring, and client settings
@@ -53,8 +53,8 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 7
-- **Unchanged**: 149
+- **Updated Pages**: 2
+- **Unchanged**: 154
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-desktop/azure-virtual-desktop.csv`
 
@@ -77,20 +77,10 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 
 ### Updated Pages
 
-- [Host pool management approaches](https://learn.microsoft.com/en-us/azure/virtual-desktop/host-pool-management-approaches)
-  - Updated: 2026-05-26T18:16:00.000Z → 2026-07-02T08:00:00.000Z
-- [Deploy Azure Virtual Desktop](https://learn.microsoft.com/en-us/azure/virtual-desktop/deploy-azure-virtual-desktop)
-  - Updated: 2025-06-20T03:01:00.000Z → 2026-07-02T08:00:00.000Z
-- [Session host update overview](https://learn.microsoft.com/en-us/azure/virtual-desktop/session-host-update)
-  - Updated: 2026-05-26T18:16:00.000Z → 2026-07-02T08:00:00.000Z
-- [Use session host update](https://learn.microsoft.com/en-us/azure/virtual-desktop/session-host-update-configure)
-  - Updated: 2025-06-20T03:01:00.000Z → 2026-07-02T08:00:00.000Z
-- [Session host update diagnostic queries](https://learn.microsoft.com/en-us/azure/virtual-desktop/session-host-update-diagnostics)
-  - Updated: 2025-06-20T03:01:00.000Z → 2026-07-02T08:00:00.000Z
-- [Autoscale FAQ](https://learn.microsoft.com/en-us/azure/virtual-desktop/autoscale-faq)
-  - Updated: 2026-05-12T21:00:00.000Z → 2026-06-29T22:44:00.000Z
-- [Add session hosts to a host pool](https://learn.microsoft.com/en-us/azure/virtual-desktop/add-session-hosts-host-pool)
-  - Updated: 2025-06-20T03:01:00.000Z → 2026-07-02T08:00:00.000Z
+- [Drain session hosts](https://learn.microsoft.com/en-us/azure/virtual-desktop/drain-mode)
+  - Updated: 2025-06-20T03:01:00.000Z → 2026-07-06T21:05:00.000Z
+- [RDP Multipath](https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-multipath)
+  - Updated: 2026-05-11T21:20:00.000Z → 2026-07-08T20:49:00.000Z
 
 ## Classified Pages
 
@@ -222,7 +212,6 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
-| [Drain session hosts](https://learn.microsoft.com/en-us/azure/virtual-desktop/drain-mode) | 0.50 | Explains drain mode concept and basic usage; likely mostly procedural without detailed config tables, limits, or error-code-based troubleshooting. |
 | [Configure personal desktop assignment](https://learn.microsoft.com/en-us/azure/virtual-desktop/configure-host-pool-personal-desktop-assignment-type) | 0.40 | Primarily conceptual and procedural assignment guidance for personal desktops; summary doesn’t indicate detailed config tables, numeric thresholds, or product-specific edge cases. |
 | [Connect to Azure Virtual Desktop](https://learn.microsoft.com/en-us/azure/virtual-desktop/connect-azure-virtual-desktop) | 0.40 | Connection overview for clients; mostly conceptual and basic usage without detailed config tables or product-specific limits. |
 | [Delete a host pool](https://learn.microsoft.com/en-us/azure/virtual-desktop/delete-host-pool) | 0.40 | Procedural deletion steps; summary doesn’t show detailed configuration parameters, limits, or troubleshooting mappings. |
@@ -232,7 +221,7 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Tag resources](https://learn.microsoft.com/en-us/azure/virtual-desktop/tag-virtual-desktop-resources) | 0.40 | Tagging usage is generic across Azure; summary suggests high-level cost organization without AVD-specific configuration parameters. |
 | [Deploy a sample Windows 11 desktop](https://learn.microsoft.com/en-us/azure/virtual-desktop/quickstart) | 0.35 | Quickstart deployment guide for a sample environment; step-by-step evaluation setup, not production constraints or matrices. |
 | [Azure Virtual Desktop Agent](https://learn.microsoft.com/en-us/azure/virtual-desktop/agent-overview) | 0.30 | Described as an overview of the agent and update processes; likely conceptual with minimal concrete configuration or troubleshooting matrices in the summary. |
-| [RDP Multipath](https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-multipath) | 0.30 | Explains how RDP Multipath improves Azure Virtual Desktop connections and its benefits; summary suggests conceptual behavior and advantages, not detailed configuration parameters, limits, or troubleshooting mappings. |
+| [Drain session hosts](https://learn.microsoft.com/en-us/azure/virtual-desktop/drain-mode) | 0.30 | Page explains how to use drain mode for Azure Virtual Desktop session hosts conceptually and procedurally, but does not include product-specific limits, configuration parameter tables, error codes, or decision matrices. It’s primarily operational guidance without the kind of detailed expert data required by the sub-skill types. |
 | [Service architecture and resilience](https://learn.microsoft.com/en-us/azure/virtual-desktop/service-architecture-resilience) | 0.30 | Architecture and resilience overview appears conceptual; no indication of quantified thresholds, decision matrices, or config tables. |
 | [Use cases for Azure Virtual Desktop Insights](https://learn.microsoft.com/en-us/azure/virtual-desktop/insights-use-cases) | 0.30 | Describes use cases and scenarios for Insights at a conceptual level; does not emphasize specific parameters, limits, or decision matrices with quantified trade-offs. |
 | [Insights](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-insights) | 0.25 | Insights release notes; summary does not indicate detailed config tables or troubleshooting mappings. |
@@ -257,3 +246,4 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Terminology](https://learn.microsoft.com/en-us/azure/virtual-desktop/terminology) | 0.10 | Terminology and conceptual structure only; no product-specific numeric limits, configs, or troubleshooting content. |
 | [What is Azure Virtual Desktop?](https://learn.microsoft.com/en-us/azure/virtual-desktop/overview) | 0.10 | High-level product overview of Azure Virtual Desktop without detailed limits, configs, or error mappings. |
 | [Documentation](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-documentation) | 0.05 | Meta page about documentation updates; no technical guidance. |
+| [RDP Multipath](https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-multipath) | - | Summary indicates a conceptual explanation of RDP Multipath benefits and behavior without specific limits, configuration tables, error codes, or product-specific settings; no detailed expert-only parameters or constraints are evident. |

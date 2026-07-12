@@ -1,9 +1,9 @@
 ---
 name: azure-resource-manager
-description: Expert knowledge for Azure Resource Manager development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when authoring Bicep/ARM templates, using CLI/PowerShell/REST, configuring policy/Key Vault, or deploying stacks, and other Azure Resource Manager related development tasks. Not for Azure Policy (use azure-policy), Azure Resource Graph (use azure-resource-graph), Azure Portal (use azure-portal), Azure Monitor (use azure-monitor).
+description: Expert knowledge for Azure Resource Manager development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when authoring Bicep/ARM templates, using CLI/PowerShell/REST, configuring policy/Key Vault, or multi-scope deployments, and other Azure Resource Manager related development tasks. Not for Azure Policy (use azure-policy), Azure Resource Graph (use azure-resource-graph), Azure Portal (use azure-portal), Azure Networking (use azure-networking).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-05"
+  generated_at: "2026-07-12"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Resource Manager Skill
@@ -24,15 +24,15 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L132 | Diagnosing and fixing Bicep and ARM template errors (BCP codes, syntax/type issues, decorators, scopes, deployment failures, policy/SKU/name/region problems, and debug tooling). |
-| Best Practices | L133-L177 | Best practices for authoring and validating ARM/Bicep templates: lint rules, naming, locations, dependencies, resource IDs, module versions, and ARM toolkit tests for quality and resiliency. |
-| Decision Making | L178-L191 | Guidance on migration and relocation decisions: moving from classic/ASM to ARM/Bicep, blueprint-to-stack migration, regional move planning, resource move/tag support, and relocation strategies. |
-| Architecture & Design Patterns | L192-L199 | Bicep architecture patterns for reusable configs, flexible parameters, deterministic name generation, and sharing variables across templates for scalable ARM deployments. |
-| Limits & Quotas | L200-L229 | ARM/Bicep limits, quotas, and constraints: deployment history, job size, resources per group, parameters/outputs/variables, naming/tag rules, throttling, and quota-exceeded error troubleshooting. |
-| Security | L230-L257 | Securing ARM/Bicep deployments: secrets handling, secure parameters, RBAC, Key Vault integration, Private Link/VNet access, locks, policy/regulatory mapping, and TLS/network security. |
-| Configuration | L258-L314 | Configuring ARM and Bicep templates: file structure, parameters, scopes, tags, networking, monitoring, policy, custom providers, portal Form view UI, and deployment/AI tooling setup. |
-| Integrations & Coding Patterns | L315-L376 | Bicep and ARM integration patterns, functions, and operators, plus CLI/PowerShell/Python/REST usage for deploying, querying, tagging, and programmatically managing Azure resources. |
-| Deployment | L377-L434 | Deploying and moving Azure resources with ARM/Bicep: scripts, stacks, registries, multi-scope deployments, CI/CD, and region/subscription relocation for many Azure services. |
+| Troubleshooting | L37-L134 | Diagnosing and fixing Bicep/ARM deployment issues: compiler diagnostics (BCP codes), decorator/type errors, template/resource name/scope problems, policy/SKU/region/provider failures, and debug logging. |
+| Best Practices | L135-L179 | Best practices for authoring and validating ARM/Bicep templates: lint rules, naming, locations, dependencies, resource IDs, module versions, and ARM toolkit tests for quality and resiliency. |
+| Decision Making | L180-L193 | Guidance on migration and relocation decisions: moving from classic/ASM to ARM/Bicep, blueprint-to-stack migration, regional move planning, resource move/tag support, and relocation strategies. |
+| Architecture & Design Patterns | L194-L201 | Bicep architecture patterns for reusable configs, flexible parameters, deterministic name generation, and sharing variables across templates for scalable ARM deployments. |
+| Limits & Quotas | L202-L231 | ARM/Bicep limits, quotas, and constraints: deployment history, job size, resources per group, parameters/outputs/variables, naming/tag rules, throttling, and quota-exceeded error troubleshooting. |
+| Security | L232-L259 | Securing ARM/Bicep deployments: secrets handling, secure parameters, RBAC, Key Vault integration, Private Link/VNet access, locks, policy/regulatory mapping, and TLS/network security. |
+| Configuration | L260-L316 | Configuring ARM and Bicep templates: file structure, parameters, scopes, tags, networking, monitoring, policy, custom providers, portal Form view UI, and deployment/AI tooling setup. |
+| Integrations & Coding Patterns | L317-L378 | Bicep and ARM integration patterns, functions, and operators, plus CLI/PowerShell/Python/REST usage for deploying, querying, tagging, and programmatically managing Azure resources. |
+| Deployment | L379-L436 | Deploying and moving Azure resources with ARM/Bicep: scripts, stacks, registries, multi-scope deployments, CI/CD, and region/subscription relocation for many Azure services. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -98,6 +98,7 @@ This skill requires **network access** to fetch documentation content:
 | Resolve BCP302 invalid Bicep type name errors | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/diagnostics/bcp302 |
 | Fix BCP311 invalid array index errors in Bicep | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/diagnostics/bcp311 |
 | Resolve BCP318 null-access and conditional resource errors | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/diagnostics/bcp318 |
+| Resolve BCP321 type mismatch diagnostics in Bicep | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/diagnostics/bcp321 |
 | Fix BCP327 value-too-large assignment errors | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/diagnostics/bcp327 |
 | Resolve BCP328 value-too-small assignment errors | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/diagnostics/bcp328 |
 | Fix BCP332 maximum length validation errors | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/diagnostics/bcp332 |
@@ -105,6 +106,7 @@ This skill requires **network access** to fetch documentation content:
 | Handle BCP335 potential maximum length violations | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/diagnostics/bcp335 |
 | Fix BCP337 invalid declaration types in parameters files | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/diagnostics/bcp337 |
 | Resolve BCP338 parameter evaluation failures in Bicep | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/diagnostics/bcp338 |
+| Fix BCP364 discriminator property errors in Bicep | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/diagnostics/bcp364 |
 | Fix BCP401 invalid spread operator usage in Bicep | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/diagnostics/bcp401 |
 | Resolve BCP414 invalid reverse index operator usage | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/diagnostics/bcp414 |
 | Resolve BCP416 string pattern mismatch errors | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/diagnostics/bcp416 |

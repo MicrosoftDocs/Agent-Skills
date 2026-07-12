@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-07-05'
+generated_at: '2026-07-12'
 category_descriptions:
-  integrations: Patterns and code for integrating Azure Maps into web/mobile/Power
-    BI apps, using REST/SDKs, layers, drawing, search/routing/weather, Spatial IO,
-    and migrating from Bing/Google Maps.
+  integrations: 'Patterns and code for integrating Azure Maps: Web/REST/Power BI SDK
+    usage, layers and drawing, geocoding/routing/weather, Spatial IO/WMS, and migrations
+    from Bing/Google/legacy SDKs.'
   best-practices: 'Best practices for Azure Maps apps: auth/security, routing and
     search usage, static image rendering, performance tuning, accessibility, and correct
     copyright/attribution.'
@@ -26,16 +26,16 @@ category_descriptions:
     incorrect or missing weather data.
 skill_description: Expert knowledge for Azure Maps development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
-  security, configuration, and integrations & coding patterns. Use when using Azure
-  Maps web SDK/REST, search/geocoding, routing/traffic, weather APIs, or migrating
-  from Bing/Google Maps, and other Azure Maps related development tasks. Not for Azure
-  AI Search (use azure-cognitive-search), Azure Digital Twins (use azure-digital-twins),
-  Azure IoT (use azure-iot), Azure IoT Hub (use azure-iot-hub).
-use_when: Use when using Azure Maps web SDK/REST, search/geocoding, routing/traffic,
-  weather APIs, or migrating from Bing/Google Maps, and other Azure Maps related development
-  tasks.
-confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure Digital
-  Twins (use azure-digital-twins), Azure IoT (use azure-iot), Azure IoT Hub (use azure-iot-hub).
+  security, configuration, and integrations & coding patterns. Use when using web/REST/Power
+  BI SDKs, geocoding/routing/weather APIs, tiles/rendering, or DEM/cuOpt routing,
+  and other Azure Maps related development tasks. Not for Azure AI Search (use azure-cognitive-search),
+  Azure IoT (use azure-iot), Azure IoT Central (use azure-iot-central), Azure IoT
+  Edge (use azure-iot-edge).
+use_when: Use when using web/REST/Power BI SDKs, geocoding/routing/weather APIs, tiles/rendering,
+  or DEM/cuOpt routing, and other Azure Maps related development tasks.
+confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure IoT
+  (use azure-iot), Azure IoT Central (use azure-iot-central), Azure IoT Edge (use
+  azure-iot-edge).
 ---
 # Azure Maps Crawl Report
 
@@ -49,8 +49,8 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 144
+- **Updated Pages**: 1
+- **Unchanged**: 146
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-maps/azure-maps.csv`
 
@@ -61,8 +61,8 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | architecture-patterns | 2 | 1.4% |
 | best-practices | 7 | 4.8% |
 | configuration | 21 | 14.3% |
-| decision-making | 9 | 6.1% |
-| integrations | 58 | 39.5% |
+| decision-making | 8 | 5.4% |
+| integrations | 59 | 40.1% |
 | limits-quotas | 6 | 4.1% |
 | security | 11 | 7.5% |
 | troubleshooting | 1 | 0.7% |
@@ -72,12 +72,8 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 
 ### Updated Pages
 
-- [Map control](https://learn.microsoft.com/en-us/azure/azure-maps/release-notes-map-control)
-  - Updated: 2026-05-06T08:00:00.000Z → 2026-07-01T08:00:00.000Z
-- [Drawing Tools module](https://learn.microsoft.com/en-us/azure/azure-maps/release-notes-drawing-tools-module)
-  - Updated: 2025-12-17T08:00:00.000Z → 2026-07-02T05:13:00.000Z
-- [Spatial IO module](https://learn.microsoft.com/en-us/azure/azure-maps/release-notes-spatial-module)
-  - Updated: 2024-09-25T22:03:00.000Z → 2026-07-02T05:13:00.000Z
+- [Migrate Azure Maps Search 1.0 APIs](https://learn.microsoft.com/en-us/azure/azure-maps/migrate-search-v1-api)
+  - Updated: 2026-03-27T22:21:00.000Z → 2026-03-28T08:00:00.000Z
 
 ## Classified Pages
 
@@ -144,7 +140,7 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | [Manage authentication](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-manage-authentication) | security | 0.70 | Describes concrete Azure Maps authentication options (Microsoft Entra ID vs shared key), including account-specific identifiers and how they’re used; likely includes scopes and configuration parameters unique to Azure Maps. |
 | [Manage consent](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-manage-consent) | configuration | 0.70 | Explains configuring global data processing settings via portal, REST APIs, and ARM templates to comply with residency laws; involves product-specific configuration options and parameters. |
 | [Manage pricing tier](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-manage-pricing-tier) | decision-making | 0.70 | Discusses Gen1 vs Gen2 pricing tiers, retirement dates, and when/how to switch; includes concrete SKU guidance and migration implications, which is decision-making content with product-specific details. |
-| [Migrate Azure Maps Search 1.0 APIs](https://learn.microsoft.com/en-us/azure/azure-maps/migrate-search-v1-api) | decision-making | 0.70 | Migration guidance between Search API v1.0 and 2026-01-01 with product-specific, versioned behavior and endpoint changes that affect how and when to move integrations. Contains concrete, version-specific details that are not generic knowledge, but is focused on migration/choice rather than pure configuration or coding. |
+| [Migrate Azure Maps Search 1.0 APIs](https://learn.microsoft.com/en-us/azure/azure-maps/migrate-search-v1-api) | integrations | 0.70 | Migration guidance between Search API versions typically includes endpoint changes, parameter mappings, and behavior differences that are specific to Azure Maps and not generally known to LLMs. These are concrete, product-specific integration details rather than conceptual overview content. |
 | [Python REST SDK Developers Guide](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-dev-guide-py-sdk) | integrations | 0.70 | Similar to C# guide but for Python; includes concrete SDK methods and configuration for Search, Route, Render, Geolocation; product-specific integration details. |
 | [React to drawing events](https://learn.microsoft.com/en-us/azure/azure-maps/drawing-tools-events) | integrations | 0.70 | Provides a table of DrawingManager events and how they fire during user interactions, which are product-specific event contracts. |
 | [Reacting to events](https://learn.microsoft.com/en-us/azure/azure-maps/map-events) | integrations | 0.70 | Provides a list of supported map events and how to subscribe to them using Azure Maps APIs, which are concrete, product-specific event integration details. |

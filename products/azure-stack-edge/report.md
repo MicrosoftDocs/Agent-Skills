@@ -50,7 +50,7 @@ confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure Io
 - **New Pages**: 0
 - **Updated Pages**: 0
 - **Unchanged**: 233
-- **Deleted Pages**: 5
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-stack-edge/azure-stack-edge.csv`
 
 ## Classification Statistics
@@ -67,14 +67,6 @@ confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure Io
 | *(Unclassified)* | 90 | 38.6% |
 
 ## Changes
-
-### Deleted Pages
-
-- ~~Cluster failover scenarios~~ (https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-cluster-failover-scenarios)
-- ~~Cluster witness~~ (https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-cluster-witness-overview)
-- ~~What is clustering?~~ (https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-clustering-overview)
-- ~~Kubernetes failover on clustered device~~ (https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-kubernetes-failover-scenarios)
-- ~~Cluster management~~ (https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-manage-cluster)
 
 ## Classified Pages
 

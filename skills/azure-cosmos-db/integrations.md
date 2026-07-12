@@ -34,6 +34,7 @@
 | Integrate Cosmos DB Java SDK metrics with Micrometer and Prometheus | https://learn.microsoft.com/en-us/azure/cosmos-db/client-metrics-java |
 | Retrieve RU charge for Cosmos DB SQL queries | https://learn.microsoft.com/en-us/azure/cosmos-db/find-request-unit-charge |
 | Index external documents into Cosmos DB for semantic search | https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/document-indexer |
+| Implement full-text search in Azure Cosmos DB for NoSQL | https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/full-text-search |
 | Get latest restorable timestamp via PowerShell and CLI | https://learn.microsoft.com/en-us/azure/cosmos-db/get-latest-restore-timestamp |
 | Execute Gremlin graph queries on Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/gremlin/how-to-write-queries |
 | Use partner tools with Cosmos DB Gremlin graphs | https://learn.microsoft.com/en-us/azure/cosmos-db/gremlin/partner-tools-services |

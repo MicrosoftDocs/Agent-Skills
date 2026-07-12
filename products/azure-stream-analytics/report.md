@@ -57,7 +57,7 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure S
 - **New Pages**: 0
 - **Updated Pages**: 0
 - **Unchanged**: 164
-- **Deleted Pages**: 3
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-stream-analytics/azure-stream-analytics.csv`
 
 ## Classification Statistics
@@ -76,12 +76,6 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure S
 | *(Unclassified)* | 56 | 34.1% |
 
 ## Changes
-
-### Deleted Pages
-
-- ~~Use ML REST APIs~~ (https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-how-to-configure-azure-machine-learning-endpoints-in-stream-analytics)
-- ~~Sentiment analysis with ML models~~ (https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-machine-learning-integration-tutorial)
-- ~~Scale with ML functions~~ (https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-scale-with-machine-learning-functions)
 
 ## Classified Pages
 

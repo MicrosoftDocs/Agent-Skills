@@ -1,9 +1,9 @@
 ---
 name: azure-iot-hub
-description: Expert knowledge for Azure IoT Hub development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using DPS enrollments, device twins/methods/jobs, message routing/endpoints, Device Update, or Cosmos DB sinks, and other Azure IoT Hub related development tasks. Not for Azure IoT (use azure-iot), Azure IoT Central (use azure-iot-central), Azure IoT Edge (use azure-iot-edge), Azure IoT Operations (use azure-iot-operations).
+description: Expert knowledge for Azure IoT Hub development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using IoT Hub/DPS device provisioning, twins/methods/jobs, routing/endpoints, Device Update, or Cosmos DB sinks, and other Azure IoT Hub related development tasks. Not for Azure IoT (use azure-iot), Azure IoT Central (use azure-iot-central), Azure IoT Edge (use azure-iot-edge), Azure Defender For Iot (use azure-defender-for-iot).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-31"
+  generated_at: "2026-07-12"
   generator: "docs2skills/1.0.0"
 ---
 # Azure IoT Hub Skill
@@ -24,13 +24,13 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L52 | Diagnosing and fixing IoT Hub and DPS issues: device connectivity, routing, error codes, Device Update/import/storage/proxy problems, and collecting/using diagnostic and debug logs. |
-| Best Practices | L53-L62 | Best practices for secure, scalable IoT Hub/DPS deployments: device provisioning at scale, OEM security, cert renewal/ADR, resilient reconnection, auto device config, and IoT Hub hardening. |
-| Decision Making | L63-L75 | Guidance for choosing IoT Hub vs alternatives, DR usage, routing options, C2D/D2C patterns, pricing and tiers, and methods for monitoring device connections. |
-| Architecture & Design Patterns | L76-L82 | Design patterns for DPS lifecycle/HA/DR, VNet connectivity, secure device streams, and reliably persisting ordered IoT Hub events with Cosmos DB. |
-| Limits & Quotas | L83-L89 | Limits, quotas, and throttling for IoT Hub, Device Provisioning Service, and Device Update, including per‑service caps, scaling behavior, and what happens when limits are exceeded. |
-| Security | L90-L128 | Securing IoT Hub, DPS, and Device Update: auth (Entra ID, RBAC, SAS, X.509), cert lifecycle, key rotation, TLS/ciphers, network/IP controls, private endpoints, and policy/compliance. |
-| Configuration | L129-L165 | Configuring IoT Hub, DPS, and Device Update: enroll devices, set allocation/IP policies, manage twins, jobs, routing, endpoints, file upload, certificates, and monitor via metrics/logs and VS Code. |
+| Troubleshooting | L37-L53 | Diagnosing and fixing IoT Hub/DPS connectivity, routing, proxy, and storage issues; interpreting error codes and collecting/using Device Update and device diagnostic logs. |
+| Best Practices | L54-L63 | Best practices for secure, scalable IoT Hub/DPS deployments: device provisioning at scale, OEM security, cert renewal/ADR, resilient reconnection, auto device config, and IoT Hub hardening. |
+| Decision Making | L64-L76 | Guidance for choosing IoT Hub vs alternatives, DR usage, routing options, C2D/D2C patterns, pricing and tiers, and methods for monitoring device connections. |
+| Architecture & Design Patterns | L77-L83 | Design patterns for DPS lifecycle/HA/DR, VNet connectivity, secure device streams, and reliably persisting ordered IoT Hub events with Cosmos DB. |
+| Limits & Quotas | L84-L90 | Limits, quotas, and throttling for IoT Hub, Device Provisioning Service, and Device Update, including per‑service caps, scaling behavior, and what happens when limits are exceeded. |
+| Security | L91-L129 | Securing IoT Hub, DPS, and Device Update: auth (Entra ID, RBAC, SAS, X.509), cert lifecycle, key rotation, TLS/ciphers, network/IP controls, private endpoints, and policy/compliance. |
+| Configuration | L130-L165 | Configuring IoT Hub, DPS, and Device Update: enroll devices, set allocation/IP policies, manage twins, jobs, routing, endpoints, file upload, certificates, and monitor via metrics/logs and VS Code. |
 | Integrations & Coding Patterns | L166-L191 | Patterns and code samples for connecting devices/DPUs to IoT Hub/DPS (MQTT/HTTPS/AMQP), managing identities, twins, methods, jobs, file upload, and message formats/endpoints. |
 | Deployment | L192-L204 | Deploying and updating IoT devices and hubs: Device Update setup (image/package/delta/proxy), platform support, regional failover, and IoT Hub migration and job scheduling. |
 
@@ -38,6 +38,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Diagnose and fix common Azure DPS provisioning errors | https://learn.microsoft.com/en-us/azure/iot-dps/how-to-troubleshoot-dps |
+| Reference monitoring data for Azure IoT DPS | https://learn.microsoft.com/en-us/azure/iot-dps/monitor-iot-dps-reference |
 | Use Agent Check to diagnose missing Device Update devices | https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-agent-check |
 | Use Device Update diagnostics, error codes, and logs | https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-diagnostics |
 | Interpret Device Update for IoT Hub error codes | https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-error-codes |
@@ -133,7 +134,6 @@ This skill requires **network access** to fetch documentation content:
 | Link and manage IoT hubs in DPS | https://learn.microsoft.com/en-us/azure/iot-dps/how-to-manage-linked-iot-hubs |
 | Configure DPS allocation policies across IoT hubs | https://learn.microsoft.com/en-us/azure/iot-dps/how-to-use-allocation-policies |
 | Query and manage DPS instance IP address properties | https://learn.microsoft.com/en-us/azure/iot-dps/iot-dps-understand-ip-address |
-| Reference for Azure DPS monitoring metrics and logs | https://learn.microsoft.com/en-us/azure/iot-dps/monitor-iot-dps-reference |
 | Create apt manifests for package-based Device Updates | https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-apt-manifest |
 | Configure adu-config.json for Device Update agent | https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-configuration-file |
 | Configure multistep execution in Device Update manifests | https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-multi-step-updates |

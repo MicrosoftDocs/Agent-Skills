@@ -1,9 +1,9 @@
 ---
 name: azure-machine-learning
-description: Expert knowledge for Azure Machine Learning development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Azure ML workspaces, compute clusters, pipelines, endpoints, AutoML, or Prompt Flow, and other Azure Machine Learning related development tasks. Not for Azure Databricks (use azure-databricks), Azure Synapse Analytics (use azure-synapse-analytics), Azure Data Science Virtual Machines (use azure-data-science-vm), Azure HDInsight (use azure-hdinsight).
+description: Expert knowledge for Azure Machine Learning development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Azure ML workspaces, jobs/pipelines, online/batch endpoints, AutoML, or Prompt Flow/LLM workloads, and other Azure Machine Learning related development tasks. Not for Azure Databricks (use azure-databricks), Azure Synapse Analytics (use azure-synapse-analytics), Azure Data Science Virtual Machines (use azure-data-science-vm), Azure HDInsight (use azure-hdinsight).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-05"
+  generated_at: "2026-07-12"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Machine Learning Skill
@@ -24,15 +24,15 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L72 | Diagnosing and fixing Azure ML errors: pipelines, endpoints, AutoML, data access, environments, Kubernetes, networking, prompt flow, and known platform issues. |
-| Best Practices | L73-L92 | Best practices for Azure ML experiments: model tuning, monitoring, cost and compute optimization, data prep, deployment scripts, GPU/distributed training, and prompt/model performance. |
-| Decision Making | L93-L123 | Guidance for architectural and migration decisions in Azure ML: choosing algorithms, training and networking options, cost/DR strategies, and upgrading/migrating from AML v1, Prompt Flow, and legacy features. |
-| Architecture & Design Patterns | L124-L130 | Designing Azure ML inference architectures: choosing endpoint types, planning real-time online endpoints, and structuring data movement and multistep pipeline components. |
-| Limits & Quotas | L131-L139 | Info on Azure ML regional/sovereign availability, quotas and service limits, supported VM SKUs, and how to plan deployment capacity within those constraints |
-| Security | L140-L193 | Securing Azure ML: encryption, auth/RBAC, keys/secrets, managed identities, network isolation/VNets, data exfiltration, policies/compliance, and secure endpoints, training, and Prompt Flow. |
-| Configuration | L194-L455 | How to configure Azure ML components, compute, networking, monitoring, AutoML, Prompt Flow, feature stores, and YAML/CLI settings for training, deployment, and data workflows. |
-| Integrations & Coding Patterns | L456-L513 | Integrating Azure ML with data/storage, Spark/Databricks/Synapse, MLflow, REST APIs, batch endpoints, and prompt flow tools for LLM/RAG, deployment, logging, and pipelines. |
-| Deployment | L514-L555 | Deploying and operationalizing models, pipelines, and prompt flows to Azure ML endpoints (online/batch), plus CI/CD, MLOps, rollout strategies, and cross-workspace/registry deployments. |
+| Troubleshooting | L37-L71 | Diagnosing and fixing Azure ML errors: pipelines, endpoints, AutoML, data access, Kubernetes, networking, CLI/SDK issues, known bugs, and prompt flow troubleshooting. |
+| Best Practices | L72-L91 | Best practices for Azure ML experiments: model tuning, monitoring, cost and compute optimization, data prep, deployment scripts, GPU/distributed training, and prompt/model performance. |
+| Decision Making | L92-L121 | Guides for choosing Azure ML algorithms, training and networking options, and detailed migration/upgrade paths from AML v1/Prompt Flow to v2/Agent Framework, including DR, data, compute, and endpoints. |
+| Architecture & Design Patterns | L122-L128 | Designing Azure ML inference architectures: choosing endpoint types, planning real-time online endpoints, and structuring data movement and multistep pipeline components. |
+| Limits & Quotas | L129-L137 | Info on Azure ML regional/sovereign availability, quotas and service limits, supported VM SKUs, and how to plan deployment capacity within those constraints |
+| Security | L138-L191 | Securing Azure ML: encryption, auth/RBAC, secrets, network isolation/VNets, managed identity, data exfiltration, policies/compliance, and secure endpoints, training, workspaces, and prompt flow. |
+| Configuration | L192-L453 | Configuring Azure ML components, jobs, compute, data, networking, monitoring, AutoML, Prompt Flow, and YAML/CLI settings for training, deployment, and responsible AI. |
+| Integrations & Coding Patterns | L454-L511 | Integrating Azure ML with data/storage, Spark/Databricks/Synapse, MLflow, REST APIs, batch endpoints, and prompt flow tools for LLM/RAG, deployment, logging, and pipelines. |
+| Deployment | L512-L553 | Deploying and operationalizing models, pipelines, and prompt flows to Azure ML endpoints (online/batch), plus CI/CD, MLOps, rollout strategies, and cross-workspace/registry deployments |
 
 ### Troubleshooting
 | Topic | URL |
@@ -45,12 +45,11 @@ This skill requires **network access** to fetch documentation content:
 | Profile and fix Azure ML pipeline performance | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-debug-pipeline-performance?view=azureml-api-2 |
 | Diagnose and fix Azure ML pipeline reuse issues | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-debug-pipeline-reuse-issues?view=azureml-api-2 |
 | Troubleshoot Azure ML SDK v1 pipelines | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-debug-pipelines?view=azureml-api-1 |
-| Debug and monitor Azure ML interactive jobs | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-interactive-jobs?view=azureml-api-2 |
 | Troubleshoot Azure automated ML experiment failures | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-troubleshoot-auto-ml?view=azureml-api-2 |
 | Troubleshoot Azure ML batch endpoints and jobs | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-troubleshoot-batch-endpoints?view=azureml-api-2 |
 | Troubleshoot data access issues in Azure ML SDK v2 | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-troubleshoot-data-access?view=azureml-api-2 |
 | Troubleshoot Azure ML data labeling project creation | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-troubleshoot-data-labeling?view=azureml-api-2 |
-| Troubleshoot Azure ML environment image builds and packages | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-troubleshoot-environments?view=azureml-api-2 |
+| Diagnose and fix Azure ML environment image build issues | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-troubleshoot-environments?view=azureml-api-2 |
 | Troubleshoot Azure ML Kubernetes compute workloads | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-troubleshoot-kubernetes-compute?view=azureml-api-2 |
 | Troubleshoot Azure ML Kubernetes extension deployment | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-troubleshoot-kubernetes-extension?view=azureml-api-2 |
 | Diagnose Azure ML managed virtual network issues | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-troubleshoot-managed-network?view=azureml-api-2 |
@@ -94,7 +93,6 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Choose Azure ML designer algorithms with cheat sheet | https://learn.microsoft.com/en-us/azure/machine-learning/algorithm-cheat-sheet?view=azureml-api-1 |
-| Plan Azure ML registries for multi-environment MLOps | https://learn.microsoft.com/en-us/azure/machine-learning/concept-machine-learning-registries-mlops?view=azureml-api-2 |
 | Choose between managed and custom network isolation in Azure ML | https://learn.microsoft.com/en-us/azure/machine-learning/concept-network-isolation-configurations?view=azureml-api-2 |
 | Choose the right Azure ML training method | https://learn.microsoft.com/en-us/azure/machine-learning/concept-train-machine-learning-model?view=azureml-api-2 |
 | Choose migration paths from Azure ML Data Import to Fabric | https://learn.microsoft.com/en-us/azure/machine-learning/data-import-migration-guide?view=azureml-api-2 |
@@ -186,7 +184,7 @@ This skill requires **network access** to fetch documentation content:
 | Securely use Key Vault secrets in Azure ML runs | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-use-secrets-in-runs?view=azureml-api-2 |
 | Apply built-in Azure Policy definitions for AML | https://learn.microsoft.com/en-us/azure/machine-learning/policy-reference?view=azureml-api-2 |
 | Manage credentials with connections in Azure ML prompt flow | https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/concept-connections?view=azureml-api-2 |
-| Secure Prompt Flow with virtual network isolation | https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/how-to-secure-prompt-flow?view=azureml-api-2 |
+| Configure network isolation for Prompt flow in Azure ML | https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/how-to-secure-prompt-flow?view=azureml-api-2 |
 | Apply Azure Policy regulatory controls to Azure ML | https://learn.microsoft.com/en-us/azure/machine-learning/security-controls-policy?view=azureml-api-2 |
 | Secure Azure ML workspace with custom VNet | https://learn.microsoft.com/en-us/azure/machine-learning/tutorial-create-secure-workspace-vnet?view=azureml-api-2 |
 | Create secure Azure ML workspace with managed VNet | https://learn.microsoft.com/en-us/azure/machine-learning/tutorial-create-secure-workspace?view=azureml-api-2 |
@@ -486,7 +484,7 @@ This skill requires **network access** to fetch documentation content:
 | Invoke Azure ML batch endpoints from Azure Data Factory | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-use-batch-azure-data-factory?view=azureml-api-2 |
 | Access Azure ML batch endpoints from Microsoft Fabric | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-use-batch-fabric?view=azureml-api-2 |
 | Trigger Azure ML batch endpoints from Event Grid | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-use-event-grid-batch?view=azureml-api-2 |
-| Integrate Azure ML events with Azure Event Grid | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-use-event-grid?view=azureml-api-2 |
+| Integrate Azure ML workflows with Event Grid | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-use-event-grid?view=azureml-api-2 |
 | Use labeled datasets from Azure ML labeling | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-use-labeled-dataset?view=azureml-api-1 |
 | Integrate Azure Databricks MLflow tracking with Azure ML | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-use-mlflow-azure-databricks?view=azureml-api-2 |
 | Configure MLflow tracking from Azure Synapse to Azure ML | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-use-mlflow-azure-synapse?view=azureml-api-2 |
@@ -551,5 +549,5 @@ This skill requires **network access** to fetch documentation content:
 | Build RAG pipelines with Azure ML and prompt flow | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-use-pipelines-prompt-flow?view=azureml-api-2 |
 | Deploy migrated Agent Framework workflows to Azure | https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/how-to-deploy-migrated-agent-framework-workflow?view=azureml-api-2 |
 | Deploy prompt flows to Azure ML online endpoints | https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/how-to-deploy-to-code?view=azureml-api-2 |
-| Implement GenAIOps pipelines with Azure DevOps and prompt flow | https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/how-to-end-to-end-azure-devops-with-prompt-flow?view=azureml-api-2 |
+| Set up GenAIOps pipeline with prompt flow and Azure DevOps | https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/how-to-end-to-end-azure-devops-with-prompt-flow?view=azureml-api-2 |
 | Integrate prompt flow with DevOps for LLM apps | https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/how-to-integrate-with-llm-app-devops?view=azureml-api-2 |

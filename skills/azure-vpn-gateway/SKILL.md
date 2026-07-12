@@ -1,9 +1,9 @@
 ---
 name: azure-vpn-gateway
-description: Expert knowledge for Azure VPN Gateway development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring S2S/P2S tunnels, BGP routing, IPsec/IKE policies, auth (cert/Entra/RADIUS), or ExpressRoute VPN, and other Azure VPN Gateway related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan), Azure ExpressRoute (use azure-expressroute), Azure NAT Gateway (use azure-nat-gateway).
+description: Expert knowledge for Azure VPN Gateway development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring P2S/S2S tunnels, IPsec/IKE policies, BGP routing, NAT, or active-active VPN gateways, and other Azure VPN Gateway related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan), Azure ExpressRoute (use azure-expressroute), Azure NAT Gateway (use azure-nat-gateway).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-05"
+  generated_at: "2026-07-12"
   generator: "docs2skills/1.0.0"
 ---
 # Azure VPN Gateway Skill
@@ -30,9 +30,9 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L61-L67 | Design patterns and guidance for choosing VPN Gateway topologies, configuring active-active gateways, and building highly available, resilient site-to-site connectivity. |
 | Limits & Quotas | L68-L72 | VPN Gateway client version history, SKU comparisons, and FAQs about gateway limits, scale, performance, and connection behavior |
 | Security | L73-L94 | Security configuration for Azure VPN Gateway: IPsec/IKE policies, cert/RADIUS/Entra auth, MFA, P2S/S2S access control, crypto requirements, and security best practices. |
-| Configuration | L95-L154 | Configuring Azure VPN Gateway and clients: S2S/P2S setup, auth (cert, Entra, RADIUS), BGP, IPsec/NAT/routing, dual-stack, monitoring, and client/device-specific connection guides. |
-| Integrations & Coding Patterns | L155-L162 | Configuring Azure VPN Gateway with on-prem devices and services: NPS/RADIUS VSAs for P2S, S2S over ExpressRoute, Cisco ASA samples, and BGP VPN connectivity with AWS. |
-| Deployment | L163-L176 | Deploying and configuring Azure VPN Gateways: creating gateways/S2S VPNs via PowerShell/CLI, migrating Basic→Standard IP/SKU, active-active changes, zone redundancy, and client profile deployment. |
+| Configuration | L95-L155 | Configuring Azure VPN Gateway and clients: P2S/S2S setup, auth (cert, Entra, RADIUS), BGP, IPsec/NAT/routing, dual-stack, monitoring, VNet-to-VNet, and Always-On VPN. |
+| Integrations & Coding Patterns | L156-L163 | Configuring Azure VPN Gateway with on-prem devices and services: NPS/RADIUS VSAs for P2S, S2S over ExpressRoute, Cisco ASA samples, and BGP VPN connectivity with AWS. |
+| Deployment | L164-L177 | Deploying and configuring Azure VPN Gateways: creating gateways/S2S VPNs via PowerShell/CLI, migrating Basic→Standard IP/SKU, active-active changes, zone redundancy, and client profile deployment. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -103,7 +103,7 @@ This skill requires **network access** to fetch documentation content:
 | Create custom IPsec policies for P2S VPN | https://learn.microsoft.com/en-us/azure/vpn-gateway/create-custom-policies-p2s-ps |
 | Configure custom traffic selectors for VPN Gateway | https://learn.microsoft.com/en-us/azure/vpn-gateway/custom-traffic-selectors |
 | Configure customer-controlled maintenance windows for VPN Gateway | https://learn.microsoft.com/en-us/azure/vpn-gateway/customer-controlled-gateway-maintenance |
-| Configure dual-stack IPv4/IPv6 for Azure VPN Gateway | https://learn.microsoft.com/en-us/azure/vpn-gateway/ipv6-configuration |
+| Configure IPv6 dual-stack for Azure VPN Gateway | https://learn.microsoft.com/en-us/azure/vpn-gateway/ipv6-configuration |
 | Configure monitoring for Azure VPN Gateway with Azure Monitor | https://learn.microsoft.com/en-us/azure/vpn-gateway/monitor-vpn-gateway |
 | Reference for Azure VPN Gateway monitoring data | https://learn.microsoft.com/en-us/azure/vpn-gateway/monitor-vpn-gateway-reference |
 | Configure NAT rules on Azure VPN Gateway | https://learn.microsoft.com/en-us/azure/vpn-gateway/nat-howto |
@@ -129,6 +129,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure VPN client for other P2S RADIUS methods | https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-vpn-client-configuration-radius-other |
 | Configure VPN client for P2S RADIUS password auth | https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-vpn-client-configuration-radius-password |
 | Configure high-bandwidth S2S tunnels via ExpressRoute | https://learn.microsoft.com/en-us/azure/vpn-gateway/site-to-site-high-bandwidth-tunnel |
+| Set up dual-stack site-to-site VPN with Azure CLI | https://learn.microsoft.com/en-us/azure/vpn-gateway/site-to-site-ipv6-azure-cli |
 | Configure forced tunneling for S2S VPN in Azure | https://learn.microsoft.com/en-us/azure/vpn-gateway/site-to-site-tunneling |
 | Understand Point-to-Site VPN routing behavior in Azure | https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-point-to-site-routing |
 | Supported VPN devices and IPsec parameters for Azure | https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpn-devices |

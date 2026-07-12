@@ -1,9 +1,9 @@
 ---
 name: azure-cognitive-search
-description: Expert knowledge for Azure AI Search development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring indexes/indexers, enrichment skillsets, semantic ranking, vector search, or RAG workloads, and other Azure AI Search related development tasks. Not for Azure Cosmos DB (use azure-cosmos-db), Azure Data Explorer (use azure-data-explorer), Azure SQL Database (use azure-sql-database), Azure Synapse Analytics (use azure-synapse-analytics).
+description: Expert knowledge for Azure AI Search development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building indexes/indexers, AI enrichment skillsets, semantic/vector search, or secure multi-region deployments, and other Azure AI Search related development tasks. Not for Azure Cosmos DB (use azure-cosmos-db), Azure Data Explorer (use azure-data-explorer), Azure SQL Database (use azure-sql-database), Azure Synapse Analytics (use azure-synapse-analytics).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-05"
+  generated_at: "2026-07-12"
   generator: "docs2skills/1.0.0"
 ---
 # Azure AI Search Skill
@@ -24,25 +24,24 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L49 | Diagnosing and fixing Azure AI Search indexer, skillset, enrichment, filter, private link, and storage metric issues, including portal-based debugging and sessions. |
-| Best Practices | L50-L67 | Best practices for scaling/indexing, performance tuning, cost optimization, vector storage/compression, safe updates, blob change handling, and responsible GenAI prompt skill usage. |
+| Troubleshooting | L37-L48 | Diagnosing and fixing Azure AI Search indexer and skillset errors, debug sessions, OData filter issues, private link problems, and storage/metrics-related failures. |
+| Best Practices | L49-L67 | Design, performance, cost, and reliability best practices for Azure AI Search: AI enrichment, custom skills, indexing/updates, vectors/chunking, concurrency, blob changes, and query/index tuning. |
 | Decision Making | L68-L82 | Guidance on planning and upgrading Azure AI Search: migrations (skills, APIs, SDKs), capacity and region choices, pricing tiers, cost management, and connector selection. |
-| Architecture & Design Patterns | L83-L88 | Architectural guidance for Azure AI Search: RAG patterns, knowledge store design, multitenancy and tenant isolation, and multi-region/high-availability deployment designs. |
-| Limits & Quotas | L89-L98 | Limits, quotas, and sizing for Azure AI Search: billing/free enrichment, indexer schedules and execution caps, service tier limits, .NET indexing, and vector index size constraints. |
-| Security | L99-L134 | Securing Azure AI Search: RBAC/Entra auth, keys, encryption, policies, document-level ACL, and locking down indexer connections via firewalls, private endpoints, and managed identities. |
-| Configuration | L135-L218 | Configuring Azure AI Search: indexes, indexers, analyzers, vectors, enrichment skillsets, caching, semantic ranking, query options, logging, and agentic retrieval/answer synthesis settings. |
-| Integrations & Coding Patterns | L219-L307 | Connecting and querying diverse data sources (SQL, blobs, SharePoint, Fabric, web, MCP), configuring indexers, skills, vectorizers, and query patterns for agentic retrieval and semantic search. |
-| Deployment | L308-L316 | Deploying and moving Azure AI Search services: ARM/Bicep/Terraform provisioning, region moves and feature availability, and deploying search apps to Static Web Apps. |
+| Architecture & Design Patterns | L83-L88 | Designing Azure AI Search architectures for multitenancy vs isolated indexes, and planning resilient multi-region deployments, failover, and data locality. |
+| Limits & Quotas | L89-L99 | Limits, quotas, and scheduling for indexers and services, including billing/free enrichment, tier caps, vector index size, and how to manage and run indexers with .NET. |
+| Security | L100-L136 | Securing Azure AI Search: RBAC/keys, Entra auth, policies, encryption/CMK, network isolation (firewalls, private endpoints), and securing indexer connections and document-level/query-time access. |
+| Configuration | L137-L219 | Configuring Azure AI Search behavior: indexes, indexers, analyzers, vectorization, skillsets/enrichment, semantic ranking, retrieval/answer synthesis, logging, and query/OData options. |
+| Integrations & Coding Patterns | L220-L305 | Integrating Azure AI Search with data sources, indexers, skills, vectorization, query syntax, semantic ranking, and knowledge bases for agentic and organizational retrieval. |
+| Deployment | L306-L314 | Deploying and moving Azure AI Search services: ARM/Bicep/Terraform provisioning, region moves and feature availability, and deploying search apps to Static Web Apps. |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
 | Troubleshoot Azure AI Search indexer errors and warnings | https://learn.microsoft.com/en-us/azure/search/cognitive-search-common-errors-warnings |
-| Troubleshoot and optimize AI enrichment pipelines in Azure AI Search | https://learn.microsoft.com/en-us/azure/search/cognitive-search-concept-troubleshooting |
 | Understand Debug Sessions for skillset troubleshooting | https://learn.microsoft.com/en-us/azure/search/cognitive-search-debug-session |
 | Debug and troubleshoot Azure AI Search skillsets | https://learn.microsoft.com/en-us/azure/search/cognitive-search-how-to-debug-skillset |
 | Debug Azure AI Search skillsets using portal sessions | https://learn.microsoft.com/en-us/azure/search/cognitive-search-tutorial-debug-sessions |
-| Troubleshoot Azure AI Search indexer issues without errors | https://learn.microsoft.com/en-us/azure/search/search-indexer-troubleshooting |
+| Diagnose and fix Azure AI Search indexer issues | https://learn.microsoft.com/en-us/azure/search/search-indexer-troubleshooting |
 | Troubleshoot OData collection filter errors in Azure AI Search | https://learn.microsoft.com/en-us/azure/search/search-query-troubleshoot-collection-filters |
 | Troubleshoot shared private link resource issues in Azure AI Search | https://learn.microsoft.com/en-us/azure/search/troubleshoot-shared-private-link-resources |
 | Troubleshoot Azure AI Search storage metric issues | https://learn.microsoft.com/en-us/azure/search/troubleshoot-storage-metrics |
@@ -50,6 +49,7 @@ This skill requires **network access** to fetch documentation content:
 ### Best Practices
 | Topic | URL |
 |-------|-----|
+| Apply AI enrichment design tips in Azure AI Search | https://learn.microsoft.com/en-us/azure/search/cognitive-search-concept-troubleshooting |
 | Scale and manage custom skills in Azure AI Search | https://learn.microsoft.com/en-us/azure/search/cognitive-search-custom-skill-scale |
 | Apply responsible AI best practices for GenAI Prompt skill | https://learn.microsoft.com/en-us/azure/search/responsible-ai-best-practices-genai-prompt-skill |
 | Handle changed and deleted blobs in Azure AI Search | https://learn.microsoft.com/en-us/azure/search/search-how-to-index-azure-blob-changed-deleted |
@@ -58,7 +58,7 @@ This skill requires **network access** to fetch documentation content:
 | Update or rebuild Azure AI Search indexes safely | https://learn.microsoft.com/en-us/azure/search/search-howto-reindex |
 | Analyze Azure AI Search query and indexing performance | https://learn.microsoft.com/en-us/azure/search/search-performance-analysis |
 | Optimize Azure AI Search query and indexing performance | https://learn.microsoft.com/en-us/azure/search/search-performance-tips |
-| Optimize Azure AI Search Serverless costs | https://learn.microsoft.com/en-us/azure/search/serverless-cost-optimization |
+| Optimize Azure AI Search Serverless costs and usage | https://learn.microsoft.com/en-us/azure/search/serverless-cost-optimization |
 | Efficient C# indexing with Azure AI Search Push API | https://learn.microsoft.com/en-us/azure/search/tutorial-optimize-indexing-push-api |
 | Use narrow vector data types to reduce Azure AI Search storage | https://learn.microsoft.com/en-us/azure/search/vector-search-how-to-assign-narrow-data-types |
 | Chunk large documents for Azure AI Search vector retrieval | https://learn.microsoft.com/en-us/azure/search/vector-search-how-to-chunk-documents |
@@ -83,14 +83,15 @@ This skill requires **network access** to fetch documentation content:
 ### Architecture & Design Patterns
 | Topic | URL |
 |-------|-----|
-| Implement multitenancy and content isolation in Azure AI Search | https://learn.microsoft.com/en-us/azure/search/search-modeling-multitenant-saas-applications |
+| Design multitenant and isolated content in Azure AI Search | https://learn.microsoft.com/en-us/azure/search/search-modeling-multitenant-saas-applications |
 | Design multi-region architectures for Azure AI Search | https://learn.microsoft.com/en-us/azure/search/search-multi-region |
 
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
 | Billing limits and free quotas for Azure AI Search enrichment | https://learn.microsoft.com/en-us/azure/search/cognitive-search-attach-cognitive-services |
-| Schedule Azure AI Search indexers within processing windows | https://learn.microsoft.com/en-us/azure/search/search-howto-schedule-indexers |
+| Manage Azure AI Search indexer runs and resets | https://learn.microsoft.com/en-us/azure/search/search-howto-run-reset-indexers |
+| Configure Azure AI Search indexer schedules and limits | https://learn.microsoft.com/en-us/azure/search/search-howto-schedule-indexers |
 | Understand indexer execution quotas on Serverless and S3 HD | https://learn.microsoft.com/en-us/azure/search/search-indexer-high-density-serverless-overview |
 | Azure AI Search service limits by tier | https://learn.microsoft.com/en-us/azure/search/search-limits-quotas-capacity |
 | Create and load Azure AI Search index with .NET | https://learn.microsoft.com/en-us/azure/search/tutorial-csharp-create-load-index |
@@ -100,7 +101,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Use built-in Azure Policy definitions for Azure AI Search | https://learn.microsoft.com/en-us/azure/search/policy-reference |
-| Configure document-level access control in Azure AI Search | https://learn.microsoft.com/en-us/azure/search/search-document-level-access-overview |
+| Implement document-level access control in Azure AI Search | https://learn.microsoft.com/en-us/azure/search/search-document-level-access-overview |
 | Configure keyless RBAC access to Azure AI Search | https://learn.microsoft.com/en-us/azure/search/search-get-started-rbac |
 | Configure managed identity access to SQL Managed Instance | https://learn.microsoft.com/en-us/azure/search/search-how-to-index-sql-managed-instance-with-managed-identity |
 | Secure AI Search indexer connections to SQL Server VMs | https://learn.microsoft.com/en-us/azure/search/search-how-to-index-sql-server |
@@ -115,6 +116,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure shared private link access for Azure AI Search indexers | https://learn.microsoft.com/en-us/azure/search/search-indexer-howto-access-private |
 | Use trusted service exception for Azure AI Search indexers | https://learn.microsoft.com/en-us/azure/search/search-indexer-howto-access-trusted-service-exception |
 | Secure indexer access to network-protected resources in Azure AI Search | https://learn.microsoft.com/en-us/azure/search/search-indexer-securing-resources |
+| Configure indexers to ingest Purview sensitivity labels | https://learn.microsoft.com/en-us/azure/search/search-indexer-sensitivity-labels |
 | Configure security and access for Azure AI Search | https://learn.microsoft.com/en-us/azure/search/search-manage |
 | Enforce ACL and RBAC at query time in Azure AI Search | https://learn.microsoft.com/en-us/azure/search/search-query-access-control-rbac-enforcement |
 | Enforce Purview sensitivity labels at query time in Azure AI Search | https://learn.microsoft.com/en-us/azure/search/search-query-sensitivity-labels |
@@ -143,11 +145,10 @@ This skill requires **network access** to fetch documentation content:
 | Configure image serving for agentic retrieval answer synthesis | https://learn.microsoft.com/en-us/azure/search/agentic-retrieval-how-to-image-serving |
 | Set retrieval reasoning effort for agentic Azure AI Search | https://learn.microsoft.com/en-us/azure/search/agentic-retrieval-how-to-set-retrieval-reasoning-effort |
 | Use annotation syntax to reference enriched nodes in skillsets | https://learn.microsoft.com/en-us/azure/search/cognitive-search-concept-annotations-syntax |
-| Create skillsets with Azure AI Search REST APIs | https://learn.microsoft.com/en-us/azure/search/cognitive-search-defining-skillset |
+| Define and configure skillsets in Azure AI Search | https://learn.microsoft.com/en-us/azure/search/cognitive-search-defining-skillset |
 | Configure output field mappings for Azure AI Search skillsets | https://learn.microsoft.com/en-us/azure/search/cognitive-search-output-field-mapping |
 | Configure and use predefined skills in Azure AI Search | https://learn.microsoft.com/en-us/azure/search/cognitive-search-predefined-skills |
 | Use skill context and annotation language in Azure AI Search | https://learn.microsoft.com/en-us/azure/search/cognitive-search-skill-annotation-language |
-| Configure Azure OpenAI Embedding skill for AI Search | https://learn.microsoft.com/en-us/azure/search/cognitive-search-skill-azure-openai-embedding |
 | Configure Azure Content Understanding skill in AI Search | https://learn.microsoft.com/en-us/azure/search/cognitive-search-skill-content-understanding |
 | Configure Custom Entity Lookup skill parameters | https://learn.microsoft.com/en-us/azure/search/cognitive-search-skill-custom-entity-lookup |
 | Configure Document Layout skill in Azure AI Search | https://learn.microsoft.com/en-us/azure/search/cognitive-search-skill-document-intelligence-layout |
@@ -158,8 +159,8 @@ This skill requires **network access** to fetch documentation content:
 | Use Shaper skill to restructure enrichment output | https://learn.microsoft.com/en-us/azure/search/cognitive-search-skill-shaper |
 | Configure Text Split skill for chunking content | https://learn.microsoft.com/en-us/azure/search/cognitive-search-skill-textsplit |
 | Design and configure skillsets for AI enrichment | https://learn.microsoft.com/en-us/azure/search/cognitive-search-working-with-skillsets |
-| Configure enrichment caching for AI pipelines (preview) | https://learn.microsoft.com/en-us/azure/search/enrichment-cache-how-to-configure |
-| Manage enrichment cache stored in Azure Storage | https://learn.microsoft.com/en-us/azure/search/enrichment-cache-how-to-manage |
+| Configure enrichment caching in Azure AI Search | https://learn.microsoft.com/en-us/azure/search/enrichment-cache-how-to-configure |
+| Manage enrichment cache storage for Azure AI Search | https://learn.microsoft.com/en-us/azure/search/enrichment-cache-how-to-manage |
 | Define custom analyzers for Azure AI Search indexes | https://learn.microsoft.com/en-us/azure/search/index-add-custom-analyzers |
 | Add language analyzers to Azure AI Search fields | https://learn.microsoft.com/en-us/azure/search/index-add-language-analyzers |
 | Define and apply scoring profiles in Azure AI Search | https://learn.microsoft.com/en-us/azure/search/index-add-scoring-profiles |
@@ -182,10 +183,10 @@ This skill requires **network access** to fetch documentation content:
 | Set parsing modes for plain text blob indexing in Azure AI Search | https://learn.microsoft.com/en-us/azure/search/search-how-to-index-azure-blob-plaintext |
 | Configure Azure Cosmos DB NoSQL indexer for AI Search | https://learn.microsoft.com/en-us/azure/search/search-how-to-index-cosmosdb-sql |
 | Configure Azure AI Search indexer for OneLake files | https://learn.microsoft.com/en-us/azure/search/search-how-to-index-onelake-files |
+| Configure SharePoint Online indexer for Azure AI Search | https://learn.microsoft.com/en-us/azure/search/search-how-to-index-sharepoint-online |
 | Enable SQL Managed Instance connections for Azure AI Search indexers | https://learn.microsoft.com/en-us/azure/search/search-how-to-index-sql-managed-instance |
 | Load and refresh data into Azure AI Search indexes | https://learn.microsoft.com/en-us/azure/search/search-how-to-load-search-index |
 | Configure complex data types in Azure AI Search indexes | https://learn.microsoft.com/en-us/azure/search/search-howto-complex-data-types |
-| Configure and manage Azure AI Search indexer runs | https://learn.microsoft.com/en-us/azure/search/search-howto-run-reset-indexers |
 | Configure field mappings for Azure AI Search indexers | https://learn.microsoft.com/en-us/azure/search/search-indexer-field-mappings |
 | Manage Azure AI Search services with Azure CLI | https://learn.microsoft.com/en-us/azure/search/search-manage-azure-cli |
 | Manage Azure AI Search with PowerShell scripts | https://learn.microsoft.com/en-us/azure/search/search-manage-powershell |
@@ -226,18 +227,17 @@ This skill requires **network access** to fetch documentation content:
 | Create file-based knowledge sources for agentic retrieval | https://learn.microsoft.com/en-us/azure/search/agentic-knowledge-source-how-to-file |
 | Create MCP server knowledge sources for agentic retrieval | https://learn.microsoft.com/en-us/azure/search/agentic-knowledge-source-how-to-mcp-server |
 | Create OneLake knowledge sources for agentic retrieval | https://learn.microsoft.com/en-us/azure/search/agentic-knowledge-source-how-to-onelake |
-| Create search index knowledge sources for agentic retrieval | https://learn.microsoft.com/en-us/azure/search/agentic-knowledge-source-how-to-search-index |
 | Create indexed SharePoint knowledge sources in Azure AI Search | https://learn.microsoft.com/en-us/azure/search/agentic-knowledge-source-how-to-sharepoint-indexed |
 | Create remote SharePoint knowledge sources for agentic retrieval | https://learn.microsoft.com/en-us/azure/search/agentic-knowledge-source-how-to-sharepoint-remote |
 | Create web knowledge sources for agentic retrieval | https://learn.microsoft.com/en-us/azure/search/agentic-knowledge-source-how-to-web |
 | Create Work IQ knowledge sources for organizational grounding | https://learn.microsoft.com/en-us/azure/search/agentic-knowledge-source-how-to-work-iq |
 | Create knowledge bases for agentic retrieval in Azure AI Search | https://learn.microsoft.com/en-us/azure/search/agentic-retrieval-how-to-create-knowledge-base |
 | Migrate Azure AI Search agentic retrieval code | https://learn.microsoft.com/en-us/azure/search/agentic-retrieval-how-to-migrate |
-| Query knowledge bases via retrieve API or MCP in Azure AI Search | https://learn.microsoft.com/en-us/azure/search/agentic-retrieval-how-to-retrieve |
 | Integrate custom AML models as AI Search skills | https://learn.microsoft.com/en-us/azure/search/cognitive-search-aml-skill |
 | Create Bing Entity Search custom skill in Azure AI Search | https://learn.microsoft.com/en-us/azure/search/cognitive-search-create-custom-skill-example |
-| Implement custom skill web interface for Azure AI Search | https://learn.microsoft.com/en-us/azure/search/cognitive-search-custom-skill-interface |
-| Implement Custom Web API skill for enrichment | https://learn.microsoft.com/en-us/azure/search/cognitive-search-custom-skill-web-api |
+| Define custom skill web interface for Azure AI Search | https://learn.microsoft.com/en-us/azure/search/cognitive-search-custom-skill-interface |
+| Implement Custom Web API skill for Azure AI Search | https://learn.microsoft.com/en-us/azure/search/cognitive-search-custom-skill-web-api |
+| Configure Azure OpenAI Embedding skill in Azure AI Search | https://learn.microsoft.com/en-us/azure/search/cognitive-search-skill-azure-openai-embedding |
 | Configure Conditional skill in Azure AI Search | https://learn.microsoft.com/en-us/azure/search/cognitive-search-skill-conditional |
 | Configure Document Extraction skill in AI Search | https://learn.microsoft.com/en-us/azure/search/cognitive-search-skill-document-extraction |
 | Configure Entity Linking skill in AI Search | https://learn.microsoft.com/en-us/azure/search/cognitive-search-skill-entity-linking-v3 |
@@ -274,14 +274,12 @@ This skill requires **network access** to fetch documentation content:
 | Index Azure Cosmos DB for MongoDB with AI Search | https://learn.microsoft.com/en-us/azure/search/search-how-to-index-cosmosdb-mongodb |
 | Configure Logic Apps workflows for Azure AI Search indexing | https://learn.microsoft.com/en-us/azure/search/search-how-to-index-logic-apps |
 | Index Azure Database for MySQL with AI Search | https://learn.microsoft.com/en-us/azure/search/search-how-to-index-mysql |
-| Index SharePoint Online content with Azure AI Search | https://learn.microsoft.com/en-us/azure/search/search-how-to-index-sharepoint-online |
 | Configure Azure SQL indexer for Azure AI Search | https://learn.microsoft.com/en-us/azure/search/search-how-to-index-sql-database |
 | Configure REST-based integrated vectorization in Azure AI Search | https://learn.microsoft.com/en-us/azure/search/search-how-to-integrated-vectorization |
 | Page Azure AI Search list API results | https://learn.microsoft.com/en-us/azure/search/search-how-to-page-list-results |
 | Use Document Layout skill for semantic chunking and vectorization | https://learn.microsoft.com/en-us/azure/search/search-how-to-semantic-chunking |
 | Use Content Understanding skill for semantic chunking | https://learn.microsoft.com/en-us/azure/search/search-how-to-semantic-chunking-content-understanding |
 | Ingest ADLS Gen2 ACL and RBAC metadata with indexers | https://learn.microsoft.com/en-us/azure/search/search-indexer-access-control-lists-and-role-based-access |
-| Ingest Microsoft Purview sensitivity labels with Azure AI Search indexers | https://learn.microsoft.com/en-us/azure/search/search-indexer-sensitivity-labels |
 | Ingest SharePoint ACL metadata using Azure AI Search indexers | https://learn.microsoft.com/en-us/azure/search/search-indexer-sharepoint-access-control-lists |
 | Implement C# indexer integration with Azure SQL and Azure AI Search | https://learn.microsoft.com/en-us/azure/search/search-indexer-tutorial |
 | Visualize Azure AI Search logs and metrics in Power BI | https://learn.microsoft.com/en-us/azure/search/search-monitor-logs-powerbi |
@@ -302,8 +300,8 @@ This skill requires **network access** to fetch documentation content:
 | Integrate Microsoft Foundry embedding models with Azure AI Search | https://learn.microsoft.com/en-us/azure/search/vector-search-integrated-vectorization-ai-studio |
 | Configure Azure Vision vectorizer for AI Search | https://learn.microsoft.com/en-us/azure/search/vector-search-vectorizer-ai-services-vision |
 | Configure Foundry model catalog vectorizer | https://learn.microsoft.com/en-us/azure/search/vector-search-vectorizer-azure-machine-learning-ai-studio-catalog |
-| Configure Azure OpenAI vectorizer for AI Search | https://learn.microsoft.com/en-us/azure/search/vector-search-vectorizer-azure-open-ai |
-| Implement Custom Web API vectorizer for AI Search | https://learn.microsoft.com/en-us/azure/search/vector-search-vectorizer-custom-web-api |
+| Configure Azure OpenAI vectorizer for Azure AI Search | https://learn.microsoft.com/en-us/azure/search/vector-search-vectorizer-azure-open-ai |
+| Build Custom Web API vectorizer for Azure AI Search | https://learn.microsoft.com/en-us/azure/search/vector-search-vectorizer-custom-web-api |
 
 ### Deployment
 | Topic | URL |

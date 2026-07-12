@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-05'
+generated_at: '2026-07-12'
 category_descriptions:
   decision-making: Guidance on choosing Azure regions and services (regional, zonal,
     multiregion, nonregional), using region pairs, and designing multi-region architectures
@@ -7,20 +7,20 @@ category_descriptions:
   architecture-patterns: Designing Azure apps for high availability using zones and
     multi-region patterns, including zonal vs zone-redundant deployments, hardening
     strategies, and non-paired region failover.
-  best-practices: Patterns and guidance for designing, configuring, and hardening
-    highly available, resilient, and disaster‑ready architectures across key Azure
-    services and workloads.
+  best-practices: Patterns and guidance for designing highly available, resilient,
+    and disaster‑ready architectures across many Azure services (AKS, databases, networking,
+    messaging, monitoring, and more).
   limits-quotas: Guidance on Azure Queue Storage message size limits and designing
     reliable, scalable Azure Web PubSub apps under service quotas and constraints
 skill_description: Expert knowledge for Azure Reliability development including best
   practices, decision making, architecture & design patterns, and limits & quotas.
-  Use when choosing regions, region pairs, zonal/zone-redundant deployments, multi-region
-  failover, or Queue/Web PubSub limits, and other Azure Reliability related development
-  tasks. Not for Azure Resiliency (use azure-resiliency), Azure Monitor (use azure-monitor),
+  Use when designing multi-region Azure apps using zones, AKS, databases, networking,
+  messaging, or Web PubSub, and other Azure Reliability related development tasks.
+  Not for Azure Resiliency (use azure-resiliency), Azure Monitor (use azure-monitor),
   Azure Service Health (use azure-service-health), Azure Site Recovery (use azure-site-recovery).
-use_when: Use when choosing regions, region pairs, zonal/zone-redundant deployments,
-  multi-region failover, or Queue/Web PubSub limits, and other Azure Reliability related
-  development tasks.
+use_when: Use when designing multi-region Azure apps using zones, AKS, databases,
+  networking, messaging, or Web PubSub, and other Azure Reliability related development
+  tasks.
 confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Monitor
   (use azure-monitor), Azure Service Health (use azure-service-health), Azure Site
   Recovery (use azure-site-recovery).
@@ -29,16 +29,16 @@ confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Monit
 
 ## Summary
 
-- **Total Pages**: 108
-- **Fetched**: 108
+- **Total Pages**: 109
+- **Fetched**: 109
 - **Fetch Failed**: 0
-- **Classified**: 48
+- **Classified**: 49
 - **Unclassified**: 60
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 107
+- **New Pages**: 1
+- **Updated Pages**: 0
+- **Unchanged**: 108
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-reliability/azure-reliability.csv`
 
@@ -46,18 +46,17 @@ confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Monit
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 2 | 1.9% |
-| best-practices | 38 | 35.2% |
-| decision-making | 6 | 5.6% |
-| limits-quotas | 2 | 1.9% |
-| *(Unclassified)* | 60 | 55.6% |
+| architecture-patterns | 2 | 1.8% |
+| best-practices | 39 | 35.8% |
+| decision-making | 6 | 5.5% |
+| limits-quotas | 2 | 1.8% |
+| *(Unclassified)* | 60 | 55.0% |
 
 ## Changes
 
-### Updated Pages
+### New Pages
 
-- [What are Azure regions?](https://learn.microsoft.com/en-us/azure/reliability/regions-overview)
-  - Updated: 2026-06-02T17:15:00.000Z → 2026-06-29T11:02:00.000Z
+- [Azure Automation](https://learn.microsoft.com/en-us/azure/reliability/reliability-automation)
 
 ## Classified Pages
 
@@ -66,6 +65,7 @@ confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Monit
 | [Azure Web PubSub](https://learn.microsoft.com/en-us/azure/reliability/reliability-web-pubsub) | limits-quotas | 0.80 | The summary explicitly states a concrete scalability limit: a single Web PubSub resource can scale to one million concurrent WebSocket connections. This is an exact numerical service limit that an LLM is unlikely to know reliably from training, matching the limits-quotas category. |
 | [Azure App Configuration](https://learn.microsoft.com/en-us/azure/reliability/reliability-app-configuration) | best-practices | 0.75 | Reliability guidance for Azure App Configuration typically includes specific patterns for handling transient faults, region/zone outages, and backup/restore of configuration stores and feature flags. These are actionable, product-specific recommendations (how to design access, caching, and failover), which matches best-practices. |
 | [Azure App Configuration](https://learn.microsoft.com/en-us/azure/reliability/reliability-app-configuration) | best-practices | 0.75 | Reliability guidance for Azure App Configuration typically includes specific patterns for handling transient faults, region/zone outages, and backup/restore of configuration stores and feature flags. These are actionable, product-specific recommendations (how to design access, caching, and failover), which matches best-practices. |
+| [Azure Automation](https://learn.microsoft.com/en-us/azure/reliability/reliability-automation) | best-practices | 0.70 | The article provides product-specific reliability guidance for Azure Automation, including how to handle transient faults, zone/region outages, and service maintenance, plus backup/restore approaches. These are concrete, Azure-Automation-specific DO/DON'T recommendations and patterns rather than generic reliability theory, fitting best under best-practices. |
 | [Azure Functions](https://learn.microsoft.com/en-us/azure/reliability/reliability-functions) | best-practices | 0.70 | The page focuses on making Azure Functions resilient to specific failure modes (transient faults, zone/region outages, service maintenance) and provides product-specific reliability guidance and patterns. This is actionable, service-specific reliability guidance (DOs/DON’Ts, patterns like handling transient faults and regional outages) rather than generic concepts, fitting best-practices. It does not appear to be primarily about numeric limits, configuration tables, or deployment matrices. |
 | [Azure Functions](https://learn.microsoft.com/en-us/azure/reliability/reliability-functions) | best-practices | 0.70 | The page focuses on making Azure Functions resilient to specific failure modes (transient faults, zone/region outages, service maintenance) and provides product-specific reliability guidance and patterns. This is actionable, service-specific reliability guidance (DOs/DON’Ts, patterns like handling transient faults and regional outages) rather than generic concepts, fitting best-practices. It does not appear to be primarily about numeric limits, configuration tables, or deployment matrices. |
 | [Azure Managed Grafana](https://learn.microsoft.com/en-us/azure/reliability/reliability-managed-grafana) | best-practices | 0.70 | Reliability content for Azure Managed Grafana generally includes concrete guidance on handling zone/region outages, maintenance, and backup/restore for this specific managed service. These are product-specific DO/DON'T recommendations and patterns, so it fits best-practices rather than generic concepts. |

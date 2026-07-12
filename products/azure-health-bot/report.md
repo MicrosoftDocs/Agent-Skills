@@ -39,8 +39,8 @@ confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 74
+- **Updated Pages**: 0
+- **Unchanged**: 78
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-health-bot/azure-health-bot.csv`
 
@@ -56,17 +56,6 @@ confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure 
 | *(Unclassified)* | 34 | 43.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [Generative Answers On Your Sources](https://learn.microsoft.com/en-us/azure/health-bot/quickstart-generative-answers-on-your-data)
-  - Updated: 2025-03-03T13:39:00.000Z → 2026-06-28T08:51:00.000Z
-- [Generative Answers On Your Public Sources](https://learn.microsoft.com/en-us/azure/health-bot/quickstart-generative-answers-on-your-public-data)
-  - Updated: 2025-03-03T13:39:00.000Z → 2026-06-28T08:51:00.000Z
-- [Healthcare Orchestrator](https://learn.microsoft.com/en-us/azure/health-bot/copilot/orchestrator)
-  - Updated: 2024-11-27T16:01:00.000Z → 2026-06-28T08:51:00.000Z
-- [OpenAPI Plugins](https://learn.microsoft.com/en-us/azure/health-bot/copilot/openapi-plugins)
-  - Updated: 2025-10-17T07:10:00.000Z → 2026-06-28T08:51:00.000Z
 
 ## Classified Pages
 

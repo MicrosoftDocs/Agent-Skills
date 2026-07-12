@@ -1,9 +1,9 @@
 ---
 name: azure-sql-database
-description: Expert knowledge for Azure SQL Database development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when choosing tiers/Hyperscale, configuring geo-replication/DR, Entra auth/Always Encrypted, elastic pools/sharding, or automation APIs, and other Azure SQL Database related development tasks. Not for Azure SQL Managed Instance (use azure-sql-managed-instance), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Cosmos DB (use azure-cosmos-db), Azure Database for PostgreSQL (use azure-database-postgresql).
+description: Expert knowledge for Azure SQL Database development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when choosing tiers/Hyperscale, setting geo-replication/DR, using Entra auth/Always Encrypted, or automating deployments, and other Azure SQL Database related development tasks. Not for Azure SQL Managed Instance (use azure-sql-managed-instance), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Cosmos DB (use azure-cosmos-db), Azure Synapse Analytics (use azure-synapse-analytics).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-05"
+  generated_at: "2026-07-12"
   generator: "docs2skills/1.0.0"
 ---
 # Azure SQL Database Skill
@@ -30,9 +30,9 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L108-L124 | Patterns and architectures for geo-replication, DR, availability, sharding/elastic scale-out, connectivity/routing, rolling upgrades, and multitenant SaaS design in Azure SQL. |
 | Limits & Quotas | L125-L136 | Limits, quotas, and resource caps for Azure SQL (free offers, DTU/vCore for single DBs and pools), plus maintenance windows and how to request quota increases. |
 | Security | L137-L202 | Securing Azure SQL: Entra auth and managed identities, auditing and Defender, Always Encrypted and TDE with CMK, network/firewall controls, data masking/classification, and secure backup/DR. |
-| Configuration | L203-L267 | Configuring Azure SQL databases: monitoring, backups, geo-replication/failover, security (encryption, TLS, immutability), scaling/pools, Data Sync, and CLI/PowerShell/REST setup tasks. |
-| Integrations & Coding Patterns | L268-L297 | Connecting apps and tools to Azure SQL (drivers, EF, Node, Python), plus PowerShell automation for auditing, scaling, replication, geo/failover, sharding, and streaming/Spark integration. |
-| Deployment | L298-L313 | Deploying and scaling Azure SQL databases/MI: automation (GitHub, ARM, Bicep, Terraform), Hyperscale/zone-redundant setup, regional moves, feature availability, and dev environment setup. |
+| Configuration | L203-L267 | Configuring Azure SQL databases/servers: monitoring, backups, geo-replication/failover, security (TLS, Always Encrypted, immutability), scaling, elastic pools/jobs, Data Sync, and CLI/PowerShell setup. |
+| Integrations & Coding Patterns | L268-L298 | Connecting apps and tools to Azure SQL (EF Core, .NET, Node.js, Python, Go), plus PowerShell/CLI automation for auditing, scaling, geo-replication, data sync, and streaming/Spark integration. |
+| Deployment | L299-L314 | Deploying and scaling Azure SQL databases/MI: automation (GitHub, ARM, Bicep, Terraform), Hyperscale/zone-redundant setup, regional moves, feature availability, and dev environment setup. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -263,7 +263,7 @@ This skill requires **network access** to fetch documentation content:
 | Install and configure Data Sync Agent for Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-data-sync-agent-overview?view=azuresql |
 | Set up Azure SQL Data Sync groups and schedules | https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-data-sync-sql-server-configure?view=azuresql |
 | Configure maintenance windows for Azure SQL databases | https://learn.microsoft.com/en-us/azure/azure-sql/maintenance-window-azure-sql?view=azuresql |
-| Reference for Azure SQL Managed Instance monitoring metrics and logs | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/monitoring-sql-managed-instance-azure-monitor-reference?view=azuresql |
+| Reference monitoring metrics for Azure SQL Managed Instance | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/monitoring-sql-managed-instance-azure-monitor-reference?view=azuresql |
 
 ### Integrations & Coding Patterns
 | Topic | URL |
@@ -273,6 +273,7 @@ This skill requires **network access** to fetch documentation content:
 | Connect and query Azure SQL using .NET SqlClient | https://learn.microsoft.com/en-us/azure/azure-sql/database/azure-sql-dotnet-quickstart?view=azuresql |
 | Query Azure SQL from Node.js using mssql package | https://learn.microsoft.com/en-us/azure/azure-sql/database/azure-sql-javascript-mssql-quickstart?view=azuresql |
 | Connect to Azure SQL using Python mssql-python driver | https://learn.microsoft.com/en-us/azure/azure-sql/database/azure-sql-python-quickstart?view=azuresql |
+| Connect to Azure SQL using Go and go-mssqldb | https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-go?view=azuresql |
 | Connect and query Azure SQL using Python | https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-python?view=azuresql |
 | Manage Azure SQL DNS aliases with PowerShell and CLI | https://learn.microsoft.com/en-us/azure/azure-sql/database/dns-alias-powershell-create?view=azuresql |
 | Manage shard maps with Elastic Database client library | https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-scale-shard-map-management?view=azuresql |

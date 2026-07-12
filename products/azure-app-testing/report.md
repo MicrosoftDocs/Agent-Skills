@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-10'
+generated_at: '2026-07-12'
 category_descriptions:
   architecture-patterns: Designing Azure Load Testing setups with virtual networks
     and private endpoints, including VNet-injected tests, network isolation, and testing
@@ -10,9 +10,9 @@ category_descriptions:
   configuration: 'Configuring and running Azure Load Testing and Playwright Workspaces:
     test definitions, HTTP/JMeter settings, secrets, monitoring, baselines, reporting/export,
     CI/CD YAML, scheduling, and multi-region load.'
-  troubleshooting: Diagnosing and fixing Azure Load Testing issues (failures, debug
-    runs, private endpoints) and troubleshooting Playwright Workspaces errors and
-    test run problems.
+  troubleshooting: Diagnosing and fixing Azure Load Testing and Playwright Workspace
+    issues, including failed tests, debug runs, browser recorder, private endpoints,
+    and test run/reporting errors.
   security: 'Securing Azure Load Testing and Playwright Workspaces: RBAC, auth for
     endpoints, managed identities, Key Vault, CMK encryption, certificates, access
     tokens, and Azure Policy controls.'
@@ -22,22 +22,22 @@ category_descriptions:
   integrations: Authoring and running load tests with JMeter, Locust, and Playwright,
     using CSV data and plugins, integrating with VS Code/Copilot, and testing local
     or private apps via Azure Load Testing.
-  limits-quotas: Usage caps, service limits, quotas, and configuration details for
-    Azure Load Testing and Playwright Workspaces, including free trial constraints
-    and how to set monthly usage limits.
+  limits-quotas: Configuring and understanding usage limits, quotas, and free trial
+    constraints for Azure Load Testing and Playwright Workspaces, including monthly
+    caps and workspace configuration options.
   decision-making: Guides for deciding load test resource moves (regions, groups,
     subscriptions) and tuning performance settings like Azure Functions configs and
     Playwright parallelism.
 skill_description: Expert knowledge for Azure App Testing development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  running Azure Load Testing, Playwright Workspaces, JMeter/Locust tests, VNet/private
-  endpoint tests, or CI/CD test pipelines, and other Azure App Testing related development
-  tasks. Not for Azure Test Plans (use azure-test-plans), Azure DevOps (use azure-devops),
+  using Azure Load Testing, Playwright Workspaces, JMeter/Locust tests, VNet/private
+  endpoints, or CI/CD pipelines, and other Azure App Testing related development tasks.
+  Not for Azure Test Plans (use azure-test-plans), Azure DevOps (use azure-devops),
   Azure Pipelines (use azure-pipelines), Playwright Workspaces (use azure-playwright-workspaces).
-use_when: Use when running Azure Load Testing, Playwright Workspaces, JMeter/Locust
-  tests, VNet/private endpoint tests, or CI/CD test pipelines, and other Azure App
-  Testing related development tasks.
+use_when: Use when using Azure Load Testing, Playwright Workspaces, JMeter/Locust
+  tests, VNet/private endpoints, or CI/CD pipelines, and other Azure App Testing related
+  development tasks.
 confusable_not_for: Not for Azure Test Plans (use azure-test-plans), Azure DevOps
   (use azure-devops), Azure Pipelines (use azure-pipelines), Playwright Workspaces
   (use azure-playwright-workspaces).
@@ -46,16 +46,16 @@ confusable_not_for: Not for Azure Test Plans (use azure-test-plans), Azure DevOp
 
 ## Summary
 
-- **Total Pages**: 72
-- **Fetched**: 72
+- **Total Pages**: 73
+- **Fetched**: 73
 - **Fetch Failed**: 0
-- **Classified**: 57
+- **Classified**: 58
 - **Unclassified**: 15
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 72
+- **New Pages**: 1
+- **Updated Pages**: 1
+- **Unchanged**: 71
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-app-testing/azure-app-testing.csv`
 
@@ -63,27 +63,37 @@ confusable_not_for: Not for Azure Test Plans (use azure-test-plans), Azure DevOp
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 2 | 2.8% |
-| best-practices | 5 | 6.9% |
-| configuration | 18 | 25.0% |
-| decision-making | 4 | 5.6% |
-| deployment | 2 | 2.8% |
-| integrations | 7 | 9.7% |
-| limits-quotas | 4 | 5.6% |
-| security | 9 | 12.5% |
-| troubleshooting | 6 | 8.3% |
-| *(Unclassified)* | 15 | 20.8% |
+| architecture-patterns | 2 | 2.7% |
+| best-practices | 5 | 6.8% |
+| configuration | 18 | 24.7% |
+| decision-making | 4 | 5.5% |
+| deployment | 2 | 2.7% |
+| integrations | 7 | 9.6% |
+| limits-quotas | 4 | 5.5% |
+| security | 9 | 12.3% |
+| troubleshooting | 7 | 9.6% |
+| *(Unclassified)* | 15 | 20.5% |
 
 ## Changes
+
+### New Pages
+
+- [Troubleshoot issues with browser recording extension](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/troubleshoot-browser-extension)
+
+### Updated Pages
+
+- [Service limits](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/resource-limits-quotas-capacity)
+  - Updated: 2025-08-29T22:11:00.000Z → 2026-07-07T11:40:00.000Z
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
 | [Service limits](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/resource-limits-quotas-capacity) | limits-quotas | 0.95 | Explicit service limits article used for capacity planning; will contain numeric limits, quotas, and possibly tier-specific caps—canonical limits-quotas expert knowledge. |
-| [Service limits](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/resource-limits-quotas-capacity) | limits-quotas | 0.95 | Explicit limits/quotas and configuration reference; will contain numeric limits, quotas, and configuration constraints for running tests, which is core limits-quotas expert knowledge. |
+| [Service limits](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/resource-limits-quotas-capacity) | limits-quotas | 0.93 | The page is a limits and configuration reference for Playwright Workspaces, describing service limitations, quotas, and configuration settings. This matches the limits-quotas category, as it likely contains exact numerical limits, quotas, and capacity constraints that are specific to this Azure service and not generally known. |
 | [Test configuration YAML](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/reference-test-config-yaml) | configuration | 0.90 | Reference for load test configuration YAML; almost certainly contains parameter names, allowed values, defaults, and structure—classic configuration reference content. |
 | [Use service package options](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/how-to-use-service-config-file) | configuration | 0.90 | Reference for playwright.service.config.ts / PlaywrightServiceSetup.cs options; will contain option names, allowed values, and defaults—core configuration reference content. |
+| [Troubleshoot issues with browser recording extension](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/troubleshoot-browser-extension) | troubleshooting | 0.86 | The page is explicitly a troubleshooting guide for the Azure App Testing browser recording extension, with symptom-based steps to fix recording and test generation issues. It likely includes specific error messages, extension behaviors, and product-specific resolution steps that go beyond generic debugging knowledge. |
 | [JMeter property overrides](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/resource-jmeter-property-overrides) | configuration | 0.85 | Lists specific JMeter properties that Azure Load Testing overrides and ignores; this is a product-specific configuration reference with exact property names and behaviors. |
 | [Manage authentication](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/how-to-manage-authentication) | security | 0.85 | Authentication article describing Microsoft Entra ID usage and access tokens; likely includes specific auth flows, constraints (e.g., cannot disable Entra ID), and token usage patterns—product-specific security configuration. |
 | [Manage workspace access](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/how-to-manage-workspace-access) | security | 0.85 | Managing workspace access with Azure RBAC; likely lists specific roles, permissions, and scope guidance, which are security configuration details. |

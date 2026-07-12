@@ -26,11 +26,11 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Design Review Checklists | L35-L43 | Checklists to review Azure workloads for cost, operations, performance, reliability, and security best practices and identify gaps against Well-Architected guidance. |
 | Recommendations | L44-L117 | Guidance on cost optimization, operations, performance, reliability, security, and sustainability best practices for architecting and running Azure workloads. |
-| Design Principles | L118-L133 | Design patterns and best practices for cost, reliability, security, performance, operations, sustainability, and mission-critical design across AI, SaaS, AVD, HPC, and other Azure workloads. |
-| Tradeoffs | L134-L143 | Guidance on weighing cost, reliability, performance, security, and operations tradeoffs in Azure architectures, including regions/AZ choices and cross-pillar design decisions. |
-| Service Guides | L144-L187 | End-to-end Well-Architected (WAF) guidance for specific Azure services—covering design, networking, security/IAM, monitoring, BCDR, performance, and cost optimization patterns. |
-| Workload Patterns | L188-L233 | Design patterns, reference architectures, and end-to-end guidance for AI, HPC, mission-critical, SaaS, and sustainable workloads on Azure, including platforms, data, ops, security, and governance. |
-| Assessment Questions | L234-L246 | Guided assessments and maturity models to evaluate AI, SaaS, AVD, AVS, and other Azure workloads against WAF pillars: cost, reliability, security, performance, and operations. |
+| Design Principles | L118-L132 | Design patterns and best practices for cost, reliability, security, performance, operations, sustainability, and mission-critical design across AI, SaaS, AVD, HPC, and other Azure workloads. |
+| Tradeoffs | L133-L142 | Guidance on weighing cost, reliability, performance, security, and operations tradeoffs in Azure architectures, including regions/AZ choices and cross-pillar design decisions. |
+| Service Guides | L143-L178 | End-to-end Well-Architected (WAF) guidance for specific Azure services—covering design, networking, security/IAM, monitoring, BCDR, performance, and cost optimization patterns. |
+| Workload Patterns | L179-L223 | Design patterns, reference architectures, and end-to-end guidance for AI, HPC, mission-critical, SaaS, and sustainable workloads on Azure, including platforms, data, ops, security, and governance. |
+| Assessment Questions | L224-L235 | Guided assessments and maturity models to evaluate AI, SaaS, AVD, AVS, and other Azure workloads against WAF pillars: cost, reliability, security, performance, and operations. |
 
 ### Design Review Checklists
 | Topic | URL |
@@ -119,7 +119,6 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Apply WAF design principles to AI workloads | https://learn.microsoft.com/en-us/azure/well-architected/ai/design-principles |
-| Apply WAF design principles to Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/well-architected/azure-virtual-desktop/design-principles |
 | Use architecture patterns that improve cost optimization | https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/design-patterns |
 | Apply Cost Optimization design principles in Azure | https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/principles |
 | Use WAF design principles for Azure HPC architectures | https://learn.microsoft.com/en-us/azure/well-architected/hpc/hpc-design-principles |
@@ -144,14 +143,6 @@ This skill requires **network access** to fetch documentation content:
 ### Service Guides
 | Topic | URL |
 |-------|-----|
-| Design application delivery for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/well-architected/azure-virtual-desktop/application-delivery |
-| Plan business continuity for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/well-architected/azure-virtual-desktop/business-continuity |
-| Integrate Azure Virtual Desktop with Azure landing zones | https://learn.microsoft.com/en-us/azure/well-architected/azure-virtual-desktop/landing-zone-integration |
-| Implement monitoring for Azure Virtual Desktop workloads | https://learn.microsoft.com/en-us/azure/well-architected/azure-virtual-desktop/monitoring |
-| Design networking and connectivity for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/well-architected/azure-virtual-desktop/networking |
-| Define operations procedures for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/well-architected/azure-virtual-desktop/operations |
-| Secure Azure Virtual Desktop and manage IAM | https://learn.microsoft.com/en-us/azure/well-architected/azure-virtual-desktop/security |
-| Optimize storage for Azure Virtual Desktop workloads | https://learn.microsoft.com/en-us/azure/well-architected/azure-virtual-desktop/storage |
 | Apply WAF best practices to Azure App Service Web Apps | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/app-service-web-apps |
 | Configure Azure Monitor Application Insights using WAF guidance | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/application-insights |
 | Apply WAF best practices to Azure API Management | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-api-management |
@@ -202,7 +193,6 @@ This skill requires **network access** to fetch documentation content:
 | Apply responsible AI practices in Azure workloads | https://learn.microsoft.com/en-us/azure/well-architected/ai/responsible-ai |
 | Test and evaluate Azure AI models and systems | https://learn.microsoft.com/en-us/azure/well-architected/ai/test |
 | Design training data pipelines for Azure AI workloads | https://learn.microsoft.com/en-us/azure/well-architected/ai/training-data-design |
-| Architect Azure Virtual Desktop workloads with WAF principles | https://learn.microsoft.com/en-us/azure/well-architected/azure-virtual-desktop/ |
 | Design high-performance computing workloads on Azure | https://learn.microsoft.com/en-us/azure/well-architected/hpc/ |
 | Apply Well-Architected guidance to Azure HPC workloads | https://learn.microsoft.com/en-us/azure/well-architected/hpc/get-started-overview |
 | Adopt a reference architecture pattern for Azure HPC | https://learn.microsoft.com/en-us/azure/well-architected/hpc/hpc-architecture-pattern |
@@ -235,7 +225,6 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Use AI workload assessment for WAF alignment | https://learn.microsoft.com/en-us/azure/well-architected/ai/assessment |
-| Use the Azure Virtual Desktop WAF assessment | https://learn.microsoft.com/en-us/azure/well-architected/azure-virtual-desktop/assessment |
 | Assess Cost Optimization maturity for Azure workloads | https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/maturity-model |
 | Use Azure Well-Architected Review assessment effectively | https://learn.microsoft.com/en-us/azure/well-architected/design-guides/implementing-recommendations |
 | Use mission-critical workload readiness assessment on Azure | https://learn.microsoft.com/en-us/azure/well-architected/mission-critical/mission-critical-assessment |

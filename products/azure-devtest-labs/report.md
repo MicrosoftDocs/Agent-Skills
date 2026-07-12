@@ -46,17 +46,17 @@ confusable_not_for: Not for Azure Lab Services (use azure-lab-services), Azure D
 
 ## Summary
 
-- **Total Pages**: 98
-- **Fetched**: 98
+- **Total Pages**: 97
+- **Fetched**: 97
 - **Fetch Failed**: 0
-- **Classified**: 65
+- **Classified**: 64
 - **Unclassified**: 33
 
 ### Incremental Update
 - **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 98
-- **Deleted Pages**: 0
+- **Unchanged**: 97
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-devtest-labs/azure-devtest-labs.csv`
 
 ## Classification Statistics
@@ -65,16 +65,20 @@ confusable_not_for: Not for Azure Lab Services (use azure-lab-services), Azure D
 |------|-------|------------|
 | architecture-patterns | 1 | 1.0% |
 | best-practices | 1 | 1.0% |
-| configuration | 19 | 19.4% |
-| decision-making | 5 | 5.1% |
-| deployment | 5 | 5.1% |
-| integrations | 15 | 15.3% |
+| configuration | 19 | 19.6% |
+| decision-making | 5 | 5.2% |
+| deployment | 4 | 4.1% |
+| integrations | 15 | 15.5% |
 | limits-quotas | 1 | 1.0% |
-| security | 14 | 14.3% |
+| security | 14 | 14.4% |
 | troubleshooting | 4 | 4.1% |
-| *(Unclassified)* | 33 | 33.7% |
+| *(Unclassified)* | 33 | 34.0% |
 
 ## Changes
+
+### Deleted Pages
+
+- ~~Use DevTest Labs in Azure Pipelines build and release pipelines~~ (https://learn.microsoft.com/en-us/azure/devtest-labs/use-devtest-labs-build-release-pipelines)
 
 ## Classified Pages
 
@@ -140,7 +144,6 @@ confusable_not_for: Not for Azure Lab Services (use azure-lab-services), Azure D
 | [Select IP configuration option](https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-shared-ip) | configuration | 0.65 | Explains how shared IPs work and how to configure them; product-specific networking configuration behavior. |
 | [Standard Load Balancer and Standard SKU Public IP addresses](https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-standard-load-balancer) | deployment | 0.65 | Describes DevTest Labs enhancements and required changes due to retirement of Basic Load Balancer and Basic Public IP; includes deployment constraints and migration-related guidance. |
 | [Start or stop a VM using PowerShell or CLI](https://learn.microsoft.com/en-us/azure/devtest-labs/use-command-line-start-stop-virtual-machines) | integrations | 0.65 | Uses PowerShell and Azure CLI to control DevTest Labs VMs; includes specific commands, parameters, and scripting patterns unique to DevTest Labs. |
-| [Use DevTest Labs in Azure Pipelines build and release pipelines](https://learn.microsoft.com/en-us/azure/devtest-labs/use-devtest-labs-build-release-pipelines) | deployment | 0.65 | Integration of DevTest Labs with Azure Pipelines build/release usually involves product-specific constraints and configuration of tasks/agents; this is deployment-focused guidance for CI/CD scenarios. |
 | [Create a VM with Generation 2 base image](https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-gen2-vm) | decision-making | 0.60 | Compares Generation 1 and 2 VMs with capabilities like SGX, vPMEM, and memory support; helps decide which generation to use based on features and scenarios. |
 | [Create and manage labs by using ARM templates](https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-use-arm-and-powershell-for-lab-resources) | deployment | 0.60 | Describes how DevTest Labs uses ARM templates for labs, VMs, and environments; likely includes template schema elements and deployment patterns specific to this service. |
 | [Integration with Azure DevOps](https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-dev-ops) | deployment | 0.60 | Guidance on using DevTest Labs in CI/CD pipelines; likely includes product-specific deployment patterns, pipeline integration steps, and constraints beyond generic DevOps concepts. |

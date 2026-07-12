@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-05'
+generated_at: '2026-07-12'
 category_descriptions:
   best-practices: 'Best practices for authoring and validating ARM/Bicep templates:
     lint rules, naming, locations, dependencies, resource IDs, module versions, and
@@ -10,9 +10,9 @@ category_descriptions:
   configuration: 'Configuring ARM and Bicep templates: file structure, parameters,
     scopes, tags, networking, monitoring, policy, custom providers, portal Form view
     UI, and deployment/AI tooling setup.'
-  troubleshooting: Diagnosing and fixing Bicep and ARM template errors (BCP codes,
-    syntax/type issues, decorators, scopes, deployment failures, policy/SKU/name/region
-    problems, and debug tooling).
+  troubleshooting: 'Diagnosing and fixing Bicep/ARM deployment issues: compiler diagnostics
+    (BCP codes), decorator/type errors, template/resource name/scope problems, policy/SKU/region/provider
+    failures, and debug logging.'
   deployment: 'Deploying and moving Azure resources with ARM/Bicep: scripts, stacks,
     registries, multi-scope deployments, CI/CD, and region/subscription relocation
     for many Azure services.'
@@ -32,30 +32,30 @@ skill_description: Expert knowledge for Azure Resource Manager development inclu
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
   Use when authoring Bicep/ARM templates, using CLI/PowerShell/REST, configuring policy/Key
-  Vault, or deploying stacks, and other Azure Resource Manager related development
+  Vault, or multi-scope deployments, and other Azure Resource Manager related development
   tasks. Not for Azure Policy (use azure-policy), Azure Resource Graph (use azure-resource-graph),
-  Azure Portal (use azure-portal), Azure Monitor (use azure-monitor).
+  Azure Portal (use azure-portal), Azure Networking (use azure-networking).
 use_when: Use when authoring Bicep/ARM templates, using CLI/PowerShell/REST, configuring
-  policy/Key Vault, or deploying stacks, and other Azure Resource Manager related
+  policy/Key Vault, or multi-scope deployments, and other Azure Resource Manager related
   development tasks.
 confusable_not_for: Not for Azure Policy (use azure-policy), Azure Resource Graph
-  (use azure-resource-graph), Azure Portal (use azure-portal), Azure Monitor (use
-  azure-monitor).
+  (use azure-resource-graph), Azure Portal (use azure-portal), Azure Networking (use
+  azure-networking).
 ---
 # Azure Resource Manager Crawl Report
 
 ## Summary
 
-- **Total Pages**: 481
-- **Fetched**: 481
+- **Total Pages**: 483
+- **Fetched**: 483
 - **Fetch Failed**: 0
-- **Classified**: 363
+- **Classified**: 365
 - **Unclassified**: 118
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 3
-- **Unchanged**: 477
+- **New Pages**: 2
+- **Updated Pages**: 0
+- **Unchanged**: 481
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-resource-manager/azure-resource-manager.csv`
 
@@ -68,26 +68,18 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Resource Grap
 | configuration | 53 | 11.0% |
 | decision-making | 10 | 2.1% |
 | deployment | 55 | 11.4% |
-| integrations | 58 | 12.1% |
+| integrations | 58 | 12.0% |
 | limits-quotas | 26 | 5.4% |
 | security | 24 | 5.0% |
-| troubleshooting | 92 | 19.1% |
-| *(Unclassified)* | 118 | 24.5% |
+| troubleshooting | 94 | 19.5% |
+| *(Unclassified)* | 118 | 24.4% |
 
 ## Changes
 
 ### New Pages
 
-- [BCP446](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/diagnostics/bcp446)
-
-### Updated Pages
-
-- [Modules (module)](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/modules)
-  - Updated: 2026-06-12T22:22:00.000Z → 2026-06-26T08:00:00.000Z
-- [User-defined data types (type)](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/user-defined-data-types)
-  - Updated: 2026-06-02T08:00:00.000Z → 2026-06-26T08:00:00.000Z
-- [Blueprint to deployment stack](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/migrate-blueprint)
-  - Updated: 2026-06-24T05:15:00.000Z → 2026-06-26T08:00:00.000Z
+- [BCP321](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/diagnostics/bcp321)
+- [BCP364](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/diagnostics/bcp364)
 
 ## Classified Pages
 
@@ -262,6 +254,8 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Resource Grap
 | [Azure Policy definitions - compliance](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/tag-policies) | configuration | 0.70 | Contains concrete built-in policy definitions, parameters, and effects (including Modify and remediation) for tagging; these are product-specific configuration artifacts. |
 | [Azure Resource Graph queries](https://learn.microsoft.com/en-us/azure/governance/service-groups/resource-graph-samples) | integrations | 0.70 | Collection of Resource Graph sample queries for Service Groups, showing specific resource types and tables; these are concrete integration/query patterns unique to this feature. |
 | [BCP062](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/diagnostics/bcp062) | troubleshooting | 0.70 | Provides specific information about BCP062, including when it occurs and what it means, which is targeted troubleshooting guidance. |
+| [BCP321](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/diagnostics/bcp321) | troubleshooting | 0.70 | Page documents a specific compiler diagnostic (BCP321) with product-specific error message text and conditions, mapping a symptom (type mismatch or null) to its cause and resolution. This is troubleshooting content with expert, tool-specific knowledge not generally known from training. |
+| [BCP364](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/diagnostics/bcp364) | troubleshooting | 0.70 | Page explains a specific diagnostic (BCP364) tied to the @discriminator decorator, including the exact error condition and required property characteristics. It provides symptom → cause guidance for a niche compiler behavior, fitting troubleshooting and containing expert, product-specific knowledge. |
 | [BCP446](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/diagnostics/bcp446) | security | 0.70 | Describes a specific Bicep compiler diagnostic (BCP446) tied to version v0.43.1, detailing a product-specific restriction on custom domains and trusted registries for module restore from Azure Container Registry. This is expert, versioned behavior with a concrete error code and compliance-related configuration pattern, fitting security-focused registry trust configuration more than generic troubleshooting. |
 | [Bicep](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources-bicep) | configuration | 0.70 | Documents Bicep syntax and behavior where tags in the file replace existing tags unless explicitly preserved; this is specific configuration semantics for this product. |
 | [Bicep CLI](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-cli) | integrations | 0.70 | Lists Bicep CLI commands and how to invoke them via Azure CLI or directly, including command names and usage patterns that are specific to Bicep/ARM tooling. This is concrete, product-specific command/API surface knowledge (how to integrate Bicep with Azure CLI/PowerShell), but not primarily about limits, security, or deployment matrices, so integrations is the best match. |

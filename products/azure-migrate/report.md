@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-07-05'
+generated_at: '2026-07-12'
 category_descriptions:
   configuration: 'Configuring Azure Migrate and related tools: assessment settings
     (VM, SQL, PostgreSQL, .NET/AppCAT), appliances, Arc/AMA, private endpoints, landing
     zones, and Resource Mover destination options.'
-  decision-making: Guidance for choosing migration strategies, interpreting Azure
-    Migrate/AppCAT assessments, planning waves and execution, and mapping/modernizing
-    workloads from on-prem, AWS, GCP, and VMware to Azure.
+  decision-making: Guidance for interpreting Azure Migrate assessments, choosing sizing
+    and tools, planning migration waves and execution, and making platform/service
+    decisions across VMware, AWS, GCP, SQL, web, and Java workloads.
   best-practices: Best practices for preparing on-prem/VMware machines and appliances,
     configuring VM hydration, running test migrations, and creating custom/AppCAT/PostgreSQL
     assessment rules for Azure Migrate.
@@ -31,14 +31,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Migrate development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  assessing VMware/SQL/.NET, configuring appliances/Arc, using AppCAT/CAST, or migrating
-  VMs via REST, and other Azure Migrate related development tasks. Not for Azure Database
+  assessing/migrating VMware/AWS/GCP VMs, SQL/PostgreSQL, .NET/AppCAT apps, or Arc/AMA-based
+  workloads, and other Azure Migrate related development tasks. Not for Azure Database
   Migration service (use azure-database-migration), Azure Site Recovery (use azure-site-recovery),
-  Azure Virtual Machines (use azure-virtual-machines).
-use_when: Use when assessing VMware/SQL/.NET, configuring appliances/Arc, using AppCAT/CAST,
-  or migrating VMs via REST, and other Azure Migrate related development tasks.
+  Azure Virtual Machines (use azure-virtual-machines), SQL Server on Azure Virtual
+  Machines (use azure-sql-virtual-machines).
+use_when: Use when assessing/migrating VMware/AWS/GCP VMs, SQL/PostgreSQL, .NET/AppCAT
+  apps, or Arc/AMA-based workloads, and other Azure Migrate related development tasks.
 confusable_not_for: Not for Azure Database Migration service (use azure-database-migration),
-  Azure Site Recovery (use azure-site-recovery), Azure Virtual Machines (use azure-virtual-machines).
+  Azure Site Recovery (use azure-site-recovery), Azure Virtual Machines (use azure-virtual-machines),
+  SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines).
 ---
 # Azure Migrate Crawl Report
 
@@ -47,14 +49,14 @@ confusable_not_for: Not for Azure Database Migration service (use azure-database
 - **Total Pages**: 211
 - **Fetched**: 211
 - **Fetch Failed**: 0
-- **Classified**: 110
-- **Unclassified**: 101
+- **Classified**: 109
+- **Unclassified**: 102
 
 ### Incremental Update
-- **New Pages**: 3
-- **Updated Pages**: 7
-- **Unchanged**: 201
-- **Deleted Pages**: 2
+- **New Pages**: 1
+- **Updated Pages**: 2
+- **Unchanged**: 208
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-migrate/azure-migrate.csv`
 
 ## Classification Statistics
@@ -68,39 +70,26 @@ confusable_not_for: Not for Azure Database Migration service (use azure-database
 | deployment | 8 | 3.8% |
 | integrations | 2 | 0.9% |
 | limits-quotas | 10 | 4.7% |
-| security | 11 | 5.2% |
+| security | 10 | 4.7% |
 | troubleshooting | 15 | 7.1% |
-| *(Unclassified)* | 101 | 47.9% |
+| *(Unclassified)* | 102 | 48.3% |
 
 ## Changes
 
 ### New Pages
 
-- [Execute server migrations in Azure Migrate portal](https://learn.microsoft.com/en-us/azure/migrate/execute-server-migrations?view=migrate)
-- [Get started](https://learn.microsoft.com/en-us/azure/migration/migrate-from-on-premises)
-- [Fundamentals of Azure](https://learn.microsoft.com/en-us/azure/migration/migrate-from-on-premises-fundamentals)
+- [Migrate to Trusted Launch or Confidential Virtual Machines with Azure Migrate](https://learn.microsoft.com/en-us/azure/migrate/migrate-to-trusted-launch-virtual-machines-with-azure-migrate?view=migrate)
 
 ### Updated Pages
 
-- [Migrate Generation 2 Virtual Machines to Azure Trusted Launch Virtual Machines with Azure Migrate](https://learn.microsoft.com/en-us/azure/migrate/migrate-to-trusted-launch-virtual-machines-with-azure-migrate?view=migrate)
-  - Updated: 2026-03-18T06:15:00.000Z → 2026-06-28T11:46:00.000Z
-- [Agentless migrations using portal](https://learn.microsoft.com/en-us/azure/migrate/tutorial-migrate-vmware?view=migrate)
-  - Updated: 2026-06-16T08:00:00.000Z → 2026-06-28T11:46:00.000Z
-- [Agent-based migration using portal](https://learn.microsoft.com/en-us/azure/migrate/tutorial-migrate-vmware-agent?view=migrate)
-  - Updated: 2026-06-16T08:00:00.000Z → 2026-06-28T11:46:00.000Z
-- [Generate and deploy a platform landing zone](https://learn.microsoft.com/en-us/azure/migrate/platform-landing-zone?view=migrate)
-  - Updated: 2026-03-12T08:00:00.000Z → 2026-07-01T06:12:00.000Z
-- [Analyze machine dependencies (agentless)](https://learn.microsoft.com/en-us/azure/migrate/how-to-create-group-machine-dependencies-agentless?view=migrate)
-  - Updated: 2025-10-03T17:11:00.000Z → 2026-06-26T08:00:00.000Z
-- [Storage](https://learn.microsoft.com/en-us/azure/migration/migrate-storage-from-aws)
-  - Updated: 2026-03-10T08:00:00.000Z → 2026-07-01T18:57:00.000Z
-- [Getting started](https://learn.microsoft.com/en-us/azure/migration/migrate-from-google-cloud)
-  - Updated: 2026-05-07T13:18:00Z → 2026-07-01T23:48:00Z
+- [Scoped discovery of VMware hosted VMs](https://learn.microsoft.com/en-us/azure/migrate/set-discovery-scope?view=migrate)
+  - Updated: 2025-05-13T05:03:00.000Z → 2026-07-06T11:40:00.000Z
+- [Security](https://learn.microsoft.com/en-us/azure/migration/migrate-security-from-aws)
+  - Updated: 2025-08-19T05:19:00.000Z → 2026-07-09T11:41:00.000Z
 
 ### Deleted Pages
 
-- ~~End-to-end portal experience for server migrations with Azure Migrate~~ (https://learn.microsoft.com/en-us/azure/migrate/end-to-end-portal-experience-server-migrations?view=migrate)
-- ~~Migrate from on-premises~~ (https://learn.microsoft.com/en-us/azure/migration/migrate-from-on-premises)
+- ~~Migrate Generation 2 Virtual Machines to Azure Trusted Launch Virtual Machines with Azure Migrate~~ (https://learn.microsoft.com/en-us/azure/migrate/migrate-to-trusted-launch-virtual-machines-with-azure-migrate?view=migrate)
 
 ## Classified Pages
 
@@ -168,7 +157,7 @@ confusable_not_for: Not for Azure Database Migration service (use azure-database
 | [Prepare Azure accounts using built-in roles](https://learn.microsoft.com/en-us/azure/migrate/prepare-azure-accounts?view=migrate) | security | 0.70 | Quickstart for setting up Azure RBAC for Azure Migrate projects; likely lists specific built-in role names and scopes, which are product-specific security configuration details. |
 | [Replicate using ExpressRoute](https://learn.microsoft.com/en-us/azure/migrate/discover-and-assess-using-private-endpoints?view=migrate) | security | 0.70 | Same as index 20; focuses on Private Link-based secure connectivity with specific network/security configuration steps. |
 | [Rule development guide](https://learn.microsoft.com/en-us/azure/migrate/appcat/appcat-7-rule-guide?view=migrate) | best-practices | 0.70 | Rules development guide describes how to write and run custom YAML-based rules for AppCAT, including product-specific patterns and gotchas for rule authoring; this is actionable, tool-specific best-practice guidance. |
-| [Scoped discovery of VMware hosted VMs](https://learn.microsoft.com/en-us/azure/migrate/set-discovery-scope?view=migrate) | security | 0.70 | Describes limiting discovery scope via vCenter permissions; includes specific permission assignments and scoping patterns, which are security/permission configurations. |
+| [Security](https://learn.microsoft.com/en-us/azure/migration/migrate-security-from-aws) | decision-making | 0.70 | The article provides product-specific guidance for migrating security services from AWS to Azure, including scenario-based recommendations and comparisons between AWS and Microsoft security capabilities. It helps readers decide how to replace or replatform AWS security controls with Azure/Microsoft equivalents, which aligns with decision-making. While the summary doesn't show numeric thresholds or tables, the migration scenarios and service mappings are specialized, product-specific knowledge beyond generic concepts. |
 | [Support-Move Extension resource types](https://learn.microsoft.com/en-us/azure/resource-mover/support-matrix-extension-resource-types) | deployment | 0.70 | Summarizes all extension resource types currently supported for moves. This is a capability matrix (what can be moved) that is critical deployment constraint knowledge. |
 | [Supported Scenarios](https://learn.microsoft.com/en-us/azure/migrate/troubleshoot-assessment-supported-scenarios?view=migrate) | troubleshooting | 0.70 | Supported scenarios for troubleshooting assessments; scenario-based guidance for resolving specific assessment problems. |
 | [Target right-sizing](https://learn.microsoft.com/en-us/azure/migrate/target-right-sizing?view=migrate) | decision-making | 0.70 | Details how Azure Migrate computes sizing recommendations based on performance vs on-premises as-is; provides product-specific trade-offs for sizing decisions. |
@@ -204,7 +193,6 @@ confusable_not_for: Not for Azure Database Migration service (use azure-database
 | [Networking](https://learn.microsoft.com/en-us/azure/migration/migrate-networking-from-aws) | decision-making | 0.64 | Outlines scenarios for migrating AWS networking (VPC, load balancers, firewalls) to Azure networking services, providing concrete service mapping and choice guidance that is product-specific. |
 | [Migrate databases](https://learn.microsoft.com/en-us/azure/migration/migrate-databases-from-google-cloud) | decision-making | 0.63 | Covers concrete scenarios like Cloud SQL PostgreSQL to Azure Database for PostgreSQL and likely includes product-specific target selection and migration approach guidance. |
 | [Move encrypted Azure VMs to another region](https://learn.microsoft.com/en-us/azure/resource-mover/tutorial-move-region-encrypted-virtual-machines) | security | 0.62 | Focuses specifically on moving encrypted VMs, which usually involves product-specific security settings (disk encryption sets, key vault usage, encryption types). This is security-centric configuration and process guidance. |
-| [Security](https://learn.microsoft.com/en-us/azure/migration/migrate-security-from-aws) | decision-making | 0.62 | Focuses on migrating AWS security services (such as SIEM) to Azure/Microsoft security offerings, with platform-specific similarities/differences and migration scenarios that guide technology selection. |
 | [1. Plan](https://learn.microsoft.com/en-us/azure/migration/migrate-workload-from-aws-plan) | decision-making | 0.60 | Planning phase article with structured steps and objectives; provides concrete guidance on assessment and architecture decisions for migration. |
 | [2. Prepare](https://learn.microsoft.com/en-us/azure/migration/migrate-workload-from-aws-prepare) | decision-making | 0.60 | Preparation phase with detailed steps on deploying infrastructure, refactoring, and security testing; guides concrete migration choices. |
 | [3. Execute](https://learn.microsoft.com/en-us/azure/migration/migrate-workload-from-aws-execute) | decision-making | 0.60 | Execution phase guidance on cutover strategies, data sync, validation, and rollback; provides scenario-based decision guidance for migration steps. |
@@ -321,4 +309,5 @@ confusable_not_for: Not for Azure Database Migration service (use azure-database
 | [What's new](https://learn.microsoft.com/en-us/azure/migrate/whats-new?view=migrate) | 0.10 | Release notes / what's new summary for Azure Migrate; primarily high-level feature announcements and updates without detailed limits, configuration tables, error codes, or decision matrices that meet the expert-knowledge criteria. |
 | [Work with previous version of Azure Migrate](https://learn.microsoft.com/en-us/azure/migrate/migrate-services-overview?view=migrate) | 0.10 | High-level overview of Azure Migrate capabilities and supported scenarios without specific limits, configuration parameters, error codes, or decision matrices; primarily conceptual service description. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/migrate/appcat/faq?view=migrate) | - | FAQ description is high-level and support-oriented; no evidence of specific limits, configuration parameters, error codes, or other product-specific expert details. |
-| [Migrate Generation 2 Virtual Machines to Azure Trusted Launch Virtual Machines with Azure Migrate](https://learn.microsoft.com/en-us/azure/migrate/migrate-to-trusted-launch-virtual-machines-with-azure-migrate?view=migrate) | - | Page describes how to use Azure Migrate to move machines to Trusted Launch or Confidential VMs, but is primarily a scenario/tutorial-style migration guide without detailed limits, configuration parameter tables, error-code-based troubleshooting, or security role/permission specifics. It lacks the kind of product-specific numeric limits, decision matrices, or configuration reference content required for expert-knowledge classification. |
+| [Migrate to Trusted Launch or Confidential Virtual Machines with Azure Migrate](https://learn.microsoft.com/en-us/azure/migrate/migrate-to-trusted-launch-virtual-machines-with-azure-migrate?view=migrate) | - | Appears to be a scenario/tutorial on migrating VMs to Trusted Launch or Confidential VMs using Azure Migrate. Based on the summary, it likely explains capabilities and steps rather than listing detailed limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices with quantified trade-offs. Without evidence of specific numeric limits, RBAC role lists, or product-specific config tables, it does not meet the expert-knowledge criteria for any sub-skill type. |
+| [Scoped discovery of VMware hosted VMs](https://learn.microsoft.com/en-us/azure/migrate/set-discovery-scope?view=migrate) | - | Procedural guidance on limiting VMware vSphere discovery scope in Azure Migrate; no numeric limits, quotas, tier matrices, specific config parameter tables, or error-code-based troubleshooting. Primarily a how-to tutorial rather than expert reference content. |

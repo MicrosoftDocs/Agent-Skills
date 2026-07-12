@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-28'
+generated_at: '2026-07-12'
 category_descriptions:
   decision-making: Guidance on designing Azure Device Registry namespaces and schema
     registries, including structure, organization, and planning for IoT device data
@@ -28,8 +28,8 @@ confusable_not_for: Not for Azure IoT Central (use azure-iot-central), Azure IoT
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 8
+- **Updated Pages**: 1
+- **Unchanged**: 7
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-iot/azure-iot.csv`
 
@@ -41,6 +41,11 @@ confusable_not_for: Not for Azure IoT Central (use azure-iot-central), Azure IoT
 | *(Unclassified)* | 6 | 75.0% |
 
 ## Changes
+
+### Updated Pages
+
+- [Secure your solution](https://learn.microsoft.com/en-us/azure/iot/iot-overview-security)
+  - Updated: 2026-06-23T17:23:00.000Z → 2026-07-07T17:13:00.000Z
 
 ## Classified Pages
 
@@ -54,7 +59,7 @@ confusable_not_for: Not for Azure IoT Central (use azure-iot-central), Azure IoT
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
 | [Choose an Azure IoT service](https://learn.microsoft.com/en-us/azure/iot/iot-services-and-technologies) | 0.20 | Describes available Azure IoT services; appears as catalog/overview without detailed decision matrices or quantified comparisons. |
-| [Secure your solution](https://learn.microsoft.com/en-us/azure/iot/iot-overview-security) | 0.20 | High-level IoT security overview and general best practices without product-specific configuration details, role names, or concrete parameters; lacks expert-only numeric limits, settings tables, or error-code-based troubleshooting. |
+| [Secure your solution](https://learn.microsoft.com/en-us/azure/iot/iot-overview-security) | 0.20 | High-level security and best practices overview for Azure IoT solutions without specific RBAC roles, configuration parameters, numeric limits, or product-specific settings; content is conceptual rather than detailed expert guidance. |
 | [IoT device development](https://learn.microsoft.com/en-us/azure/iot/iot-overview-device-development) | 0.10 | Overview of IoT device development concepts and components; does not expose concrete configuration tables, quotas, error mappings, or product-specific best-practice details. |
 | [Support and help options](https://learn.microsoft.com/en-us/azure/iot/iot-support-help) | 0.10 | Support and help options; meta-information, not technical configuration or troubleshooting content. |
 | [What is Azure IoT?](https://learn.microsoft.com/en-us/azure/iot/iot-introduction) | 0.10 | High-level introduction to Azure IoT portfolio and concepts without specific limits, configuration parameters, error codes, or decision matrices. |

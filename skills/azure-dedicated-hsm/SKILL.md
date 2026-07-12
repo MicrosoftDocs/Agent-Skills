@@ -1,9 +1,9 @@
 ---
 name: azure-dedicated-hsm
-description: Expert knowledge for Azure Dedicated HSM development including troubleshooting, decision making, architecture & design patterns, and security. Use when deploying Dedicated HSMs, configuring VNets/ExpressRoute, planning HA/failover, or migrating to Managed/Cloud HSM, and other Azure Dedicated HSM related development tasks. Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Key Vault (use azure-key-vault), Azure Payment Hsm (use azure-payment-hsm).
+description: Expert knowledge for Azure Dedicated HSM development including troubleshooting, decision making, architecture & design patterns, and security. Use when deploying Dedicated HSMs, configuring VNet/ExpressRoute, planning HA/failover, or migrating to Managed HSM, and other Azure Dedicated HSM related development tasks. Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Payment Hsm (use azure-payment-hsm), Azure Key Vault (use azure-key-vault), Azure Confidential Computing (use azure-confidential-computing).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-14"
+  generated_at: "2026-07-12"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Dedicated HSM Skill
@@ -27,7 +27,7 @@ This skill requires **network access** to fetch documentation content:
 | Troubleshooting | L32-L37 | Diagnosing and fixing Azure Dedicated HSM deployment, configuration, usage, and support issues, including common errors and steps to resolve failed or misconfigured HSM instances. |
 | Decision Making | L38-L44 | Guidance on Dedicated HSM retirement, choosing successors (Managed/Cloud HSM), and planning/migrating ExpressRoute IPs and HSM workloads to new SKUs or services. |
 | Architecture & Design Patterns | L45-L51 | Guidance on designing Dedicated HSM deployments: sizing and topology, high availability and failover patterns, and secure networking (VNet, subnets, routing, and connectivity). |
-| Security | L52-L56 | Physical security controls for Dedicated HSM devices and best-practice guidance for securing, configuring, and operating Azure Dedicated HSM in production environments. |
+| Security | L52-L56 | Physical security controls for Dedicated HSM devices and recommended security configurations, policies, and operational best practices for protecting keys and access. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -53,4 +53,4 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Understand physical security of Azure Dedicated HSM devices | https://learn.microsoft.com/en-us/azure/dedicated-hsm/physical-security |
-| Apply security best practices to Azure Dedicated HSM | https://learn.microsoft.com/en-us/azure/dedicated-hsm/secure-dedicated-hsm |
+| Apply security best practices for Azure Dedicated HSM | https://learn.microsoft.com/en-us/azure/dedicated-hsm/secure-dedicated-hsm |

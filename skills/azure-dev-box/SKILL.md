@@ -1,9 +1,9 @@
 ---
 name: azure-dev-box
-description: Expert knowledge for Azure Dev Box development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing Dev Box images, catalogs/pools, RBAC/SSO access, VS dev tunnels, or region moves, and other Azure Dev Box related development tasks. Not for Azure DevTest Labs (use azure-devtest-labs), Azure Virtual Machines (use azure-virtual-machines), Azure Lab Services (use azure-lab-services), Azure Virtual Desktop (use azure-virtual-desktop).
+description: Expert knowledge for Azure Dev Box development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing Dev Box images, catalogs/pools, RBAC/SSO access, region moves, or VS Code dev tunnels, and other Azure Dev Box related development tasks. Not for Azure DevTest Labs (use azure-devtest-labs), Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Desktop (use azure-virtual-desktop), Azure Lab Services (use azure-lab-services).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-05"
+  generated_at: "2026-07-12"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Dev Box Skill
@@ -24,24 +24,23 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L36-L46 | Diagnosing and fixing Dev Box issues: connectivity/RDC problems, custom image validation errors, stale/inaccessible boxes, and using Azure Monitor logs for troubleshooting. |
-| Best Practices | L47-L52 | Guidance on building efficient Dev Box images, including structuring image definitions and pre-warming Visual Studio caches to speed up developer environments. |
-| Decision Making | L53-L58 | Guidance on planning Dev Box deployments (networking, images, capacity) and deciding or preparing to move from Dev Box to Windows 365, including design and transition considerations. |
-| Limits & Quotas | L59-L64 | Managing Dev Box capacity: requesting quota/core limit increases and configuring per-user Dev Box limits to control usage and costs. |
-| Security | L65-L76 | Securing Dev Box access and sessions: RBAC roles, guest access, SSO, API auth, Key Vault/service principals, Intune Conditional Access and Endpoint Privilege Management. |
-| Configuration | L77-L104 | Configuring Dev Box infrastructure: networking, images, catalogs, policies, schedules (stop/hibernate/autodelete), pools/projects/dev centers, and monitoring/log schemas. |
-| Integrations & Coding Patterns | L105-L109 | Using VS Code dev tunnels to securely connect to Azure Dev Box, including setup, authentication, and remote development workflow configuration. |
-| Deployment | L110-L113 | Planning and rolling out Dev Box environments, including architecture and configuration, plus guidance for moving Dev Box pools and individual boxes between Azure regions. |
+| Troubleshooting | L36-L45 | Diagnosing and fixing Dev Box connectivity issues, image validation errors, stale/inaccessible boxes, using Troubleshoot & Repair, and monitoring via Azure Monitor logs. |
+| Best Practices | L46-L51 | Guidance on building efficient Dev Box images, including structuring image definitions and pre-warming Visual Studio caches to speed up developer environments. |
+| Decision Making | L52-L57 | Guidance on planning Dev Box deployments (networking, images, capacity) and deciding or preparing to move from Dev Box to Windows 365, including design and transition considerations. |
+| Limits & Quotas | L58-L63 | Managing Dev Box capacity: requesting quota/core limit increases and configuring per-user Dev Box limits to control usage and costs. |
+| Security | L64-L75 | Securing Dev Box access and sessions: RBAC roles, guest access, SSO, API auth, Key Vault/service principals, Intune Conditional Access and Endpoint Privilege Management. |
+| Configuration | L76-L102 | Configuring Dev Box infrastructure: networking, images, catalogs, policies, schedules (stop/hibernate/autodelete), pools/projects/dev centers, and monitoring/log schemas. |
+| Integrations & Coding Patterns | L103-L107 | Using VS Code dev tunnels to securely connect to Azure Dev Box, including setup, authentication, and remote development workflow configuration. |
+| Deployment | L108-L111 | Planning and rolling out Dev Box environments, including architecture and configuration, plus guidance for moving Dev Box pools and individual boxes between Azure regions. |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
-| Resolve common Microsoft Dev Box issues and questions | https://learn.microsoft.com/en-us/azure/dev-box/dev-box-faq |
-| Step-by-step guide to Dev Box connectivity issues | https://learn.microsoft.com/en-us/azure/dev-box/how-to-resolve-dev-box-connectivity-issues |
+| Diagnose and fix Microsoft Dev Box connectivity | https://learn.microsoft.com/en-us/azure/dev-box/how-to-resolve-dev-box-connectivity-issues |
 | Troubleshoot Dev Box custom image validation failures | https://learn.microsoft.com/en-us/azure/dev-box/how-to-troubleshoot-custom-image-validation |
 | Fix stale or inaccessible Dev Boxes in Task view | https://learn.microsoft.com/en-us/azure/dev-box/how-to-troubleshoot-dev-box-task-view |
 | Troubleshoot known Dev Box connectivity problems | https://learn.microsoft.com/en-us/azure/dev-box/how-to-troubleshoot-remote-desktop-connectivity |
-| Use Troubleshoot and Repair for Dev Box RDC issues | https://learn.microsoft.com/en-us/azure/dev-box/how-to-troubleshoot-repair-dev-box |
+| Use Dev Box Troubleshoot & Repair for connectivity | https://learn.microsoft.com/en-us/azure/dev-box/how-to-troubleshoot-repair-dev-box |
 | Monitor Dev Box with Azure Monitor diagnostic logs | https://learn.microsoft.com/en-us/azure/dev-box/monitor-dev-box |
 
 ### Best Practices
@@ -86,7 +85,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure imaging pipeline for Dev Box team customizations | https://learn.microsoft.com/en-us/azure/dev-box/how-to-configure-dev-center-imaging |
 | Configure Dev Box network connections and VNets | https://learn.microsoft.com/en-us/azure/dev-box/how-to-configure-network-connections |
 | Configure Dev Box project policies for governance | https://learn.microsoft.com/en-us/azure/dev-box/how-to-configure-project-policy |
-| Set stop-on-disconnect timeout for Dev Boxes | https://learn.microsoft.com/en-us/azure/dev-box/how-to-configure-stop-on-disconnect |
 | Configure Dev Box pool autostop schedules | https://learn.microsoft.com/en-us/azure/dev-box/how-to-configure-stop-schedule |
 | Author Dev Box image definition files for team customizations | https://learn.microsoft.com/en-us/azure/dev-box/how-to-configure-team-customizations |
 | Create and upload Dev Box user customization files | https://learn.microsoft.com/en-us/azure/dev-box/how-to-configure-user-customizations |

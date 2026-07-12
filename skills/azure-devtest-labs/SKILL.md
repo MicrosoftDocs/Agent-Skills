@@ -32,7 +32,7 @@ This skill requires **network access** to fetch documentation content:
 | Security | L69-L86 | Securing DevTest Labs: identities, RBAC and granular policy permissions, secrets/Key Vault, disk/storage encryption, secure VM access (RDP Gateway, Bastion, browser), Trusted Launch, and security alerts. |
 | Configuration | L87-L109 | Configuring DevTest Labs environments and VMs: images, networks, policies, costs, tags, ARM templates, artifacts, activity logs, alerts, IPs, and resource groups. |
 | Integrations & Coding Patterns | L110-L128 | Automating DevTest Labs with ARM, PowerShell, CLI, REST, and Functions: user/VM management, VHD/custom image workflows, cross-lab import, reporting, and VM start/stop/start-order control. |
-| Deployment | L129-L136 | Guides for deploying and migrating DevTest Labs: ARM templates, CI/CD and Azure Pipelines integration, region moves, and handling Azure Basic Load Balancer retirement. |
+| Deployment | L129-L135 | Guides for deploying and migrating DevTest Labs: ARM templates, CI/CD and Azure Pipelines integration, region moves, and handling Azure Basic Load Balancer retirement. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -133,4 +133,3 @@ This skill requires **network access** to fetch documentation content:
 | Handle Azure Basic Load Balancer retirement in DevTest Labs | https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-standard-load-balancer |
 | Deploy DevTest Labs resources with ARM templates | https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-use-arm-and-powershell-for-lab-resources |
 | Move Azure DevTest Labs to another region | https://learn.microsoft.com/en-us/azure/devtest-labs/how-to-move-labs |
-| Use DevTest Labs in Azure Pipelines build and release | https://learn.microsoft.com/en-us/azure/devtest-labs/use-devtest-labs-build-release-pipelines |

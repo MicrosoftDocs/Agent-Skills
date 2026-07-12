@@ -40,8 +40,8 @@ confusable_not_for: Not for Azure Operator Nexus (use azure-operator-nexus), Azu
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 45
+- **Updated Pages**: 0
+- **Unchanged**: 47
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-operator-service-manager/azure-operator-service-manager.csv`
 
@@ -57,13 +57,6 @@ confusable_not_for: Not for Azure Operator Nexus (use azure-operator-nexus), Azu
 | *(Unclassified)* | 23 | 48.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [Helm Package Requirements](https://learn.microsoft.com/en-us/azure/operator-service-manager/helm-requirements)
-  - Updated: 2026-06-16T17:13:00.000Z → 2026-07-02T22:11:00.000Z
-- [Manage the network function operator extension](https://learn.microsoft.com/en-us/azure/operator-service-manager/manage-network-function-operator)
-  - Updated: 2025-10-29T22:11:00.000Z → 2026-07-02T08:00:00.000Z
 
 ## Classified Pages
 

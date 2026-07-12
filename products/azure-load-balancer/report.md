@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-07'
+generated_at: '2026-07-12'
 category_descriptions:
   configuration: 'Configuring Azure Load Balancer behavior: backends/frontends (incl.
     cross-subscription, IP-based, outbound-only), rules, health probes, traffic distribution,
@@ -14,9 +14,9 @@ category_descriptions:
     IPs, retrieve metadata, and collect/load metrics for integration and automation.
   decision-making: Guidance on choosing the right Load Balancer SKU, upgrading Basic
     to Standard, migrating from AWS NLB, and moving from inbound NAT rules v1 to v2.
-  limits-quotas: Load Balancer connection limits, SNAT/port behaviors, TCP idle timeout
-    configuration, and how/when TCP resets occur for troubleshooting connectivity
-    issues.
+  limits-quotas: 'Limits, behaviors, and configuration of Azure Load Balancer: SNAT
+    port quotas, outbound connection limits, TCP idle timeouts, and TCP reset behavior
+    for troubleshooting connectivity.'
   troubleshooting: 'Diagnosing and fixing Azure Load Balancer issues: deployment errors,
     health events/logs, probes, connectivity/backend traffic, SNAT/timeouts, IMDS
     errors, and resource health/availability.'
@@ -27,13 +27,13 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Load Balancer development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when configuring LB rules/probes, SNAT/outbound, VMSS backends, IMDS/Monitor
-  APIs, or DDoS/NSG protection, and other Azure Load Balancer related development
-  tasks. Not for Azure Application Gateway (use azure-application-gateway), Azure
-  Front Door (use azure-front-door), Azure Traffic Manager (use azure-traffic-manager),
-  Azure Virtual Network (use azure-virtual-network).
-use_when: Use when configuring LB rules/probes, SNAT/outbound, VMSS backends, IMDS/Monitor
-  APIs, or DDoS/NSG protection, and other Azure Load Balancer related development
+  Use when configuring SNAT/outbound rules, health probes, VM scale set traffic, IMDS/Monitor
+  APIs, or DDoS/NSG security, and other Azure Load Balancer related development tasks.
+  Not for Azure Application Gateway (use azure-application-gateway), Azure Front Door
+  (use azure-front-door), Azure Traffic Manager (use azure-traffic-manager), Azure
+  Virtual Network (use azure-virtual-network).
+use_when: Use when configuring SNAT/outbound rules, health probes, VM scale set traffic,
+  IMDS/Monitor APIs, or DDoS/NSG security, and other Azure Load Balancer related development
   tasks.
 confusable_not_for: Not for Azure Application Gateway (use azure-application-gateway),
   Azure Front Door (use azure-front-door), Azure Traffic Manager (use azure-traffic-manager),
@@ -51,8 +51,8 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 87
+- **Updated Pages**: 9
+- **Unchanged**: 78
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-load-balancer/azure-load-balancer.csv`
 
@@ -60,18 +60,39 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 2 | 2.3% |
+| architecture-patterns | 1 | 1.1% |
 | best-practices | 4 | 4.6% |
 | configuration | 17 | 19.5% |
 | decision-making | 4 | 4.6% |
 | deployment | 2 | 2.3% |
 | integrations | 4 | 4.6% |
-| limits-quotas | 3 | 3.4% |
+| limits-quotas | 4 | 4.6% |
 | security | 2 | 2.3% |
 | troubleshooting | 4 | 4.6% |
 | *(Unclassified)* | 45 | 51.7% |
 
 ## Changes
+
+### Updated Pages
+
+- [SNAT for outbound connections to internet](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-outbound-connections)
+  - Updated: 2025-09-01T08:00:00.000Z → 2026-07-08T17:13:00.000Z
+- [What is Azure Load Balancer?](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-overview)
+  - Updated: 2025-07-16T22:08:00.000Z → 2026-07-08T17:13:00.000Z
+- [Gateway load balancer overview](https://learn.microsoft.com/en-us/azure/load-balancer/gateway-overview)
+  - Updated: 2026-01-07T08:00:00.000Z → 2026-07-08T17:13:00.000Z
+- [Global load balancer overview](https://learn.microsoft.com/en-us/azure/load-balancer/cross-region-overview)
+  - Updated: 2026-01-29T08:00:00.000Z → 2026-07-08T17:13:00.000Z
+- [Create a public load balancer](https://learn.microsoft.com/en-us/azure/load-balancer/quickstart-load-balancer-standard-public-portal)
+  - Updated: 2026-01-09T08:00:00.000Z → 2026-07-08T05:12:00.000Z
+- [PowerShell](https://learn.microsoft.com/en-us/azure/load-balancer/quickstart-load-balancer-standard-public-powershell)
+  - Updated: 2026-01-28T08:00:00.000Z → 2026-07-08T05:12:00.000Z
+- [CLI](https://learn.microsoft.com/en-us/azure/load-balancer/quickstart-load-balancer-standard-public-cli)
+  - Updated: 2026-01-28T08:00:00.000Z → 2026-07-08T05:12:00.000Z
+- [ARM template](https://learn.microsoft.com/en-us/azure/load-balancer/quickstart-load-balancer-standard-public-template)
+  - Updated: 2026-01-28T08:00:00.000Z → 2026-07-08T05:12:00.000Z
+- [Terraform](https://learn.microsoft.com/en-us/azure/load-balancer/quickstart-load-balancer-standard-public-terraform)
+  - Updated: 2026-01-28T08:00:00.000Z → 2026-07-08T05:12:00.000Z
 
 ## Classified Pages
 
@@ -96,6 +117,7 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Retrieve information using the Azure Instance Metadata Service](https://learn.microsoft.com/en-us/azure/load-balancer/instance-metadata-service-load-balancer) | integrations | 0.70 | Describes using Azure Instance Metadata Service to retrieve load balancer and VM IP information, which generally includes specific REST paths, query structure, and metadata schema fields. These are concrete, product-specific API usage details that fit the integrations sub-skill type rather than a conceptual overview. |
 | [Retrieve metadata using the Azure IMDS](https://learn.microsoft.com/en-us/azure/load-balancer/howto-load-balancer-imds) | integrations | 0.70 | A 'how-to' for retrieving load balancer and VM IP metadata via Azure Instance Metadata Service typically includes the exact IMDS endpoint (169.254.169.254), REST paths, required headers, and example requests/responses. These are product-specific API integration details and configuration parameters that qualify as expert knowledge under the integrations category. |
 | [SKUs](https://learn.microsoft.com/en-us/azure/load-balancer/skus) | decision-making | 0.70 | SKU overview pages typically include comparison tables of Basic, Standard, and Gateway with capabilities and constraints to guide selection, which is product-specific decision guidance. |
+| [SNAT for outbound connections to internet](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-outbound-connections) | limits-quotas | 0.70 | Azure Load Balancer SNAT documentation typically includes exact SNAT port allocations per backend IP, per frontend IP, and per protocol, along with numeric thresholds for outbound connectivity, port exhaustion behavior, and configuration options. These are product-specific limits and quotas that an LLM wouldn't reliably know from training, fitting the limits-quotas sub-skill. |
 | [Secure your load balancer](https://learn.microsoft.com/en-us/azure/load-balancer/secure-load-balancer) | security | 0.70 | The article is explicitly about security recommendations for Azure Load Balancer. Microsoft Learn security guidance for a specific service typically includes concrete, product-specific configurations such as required NSG rules, recommended RBAC roles, and monitoring settings. These are security-focused, service-specific configurations that go beyond generic concepts, fitting the 'security' sub-skill. While the summary is high level, the page purpose and phrasing ('security recommendations') indicate detailed, actionable security configuration guidance rather than just conceptual overview. |
 | [TCP reset on idle timeout](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-tcp-reset) | limits-quotas | 0.70 | Explains TCP reset on idle timeout; likely includes specific idle timeout behavior and packet handling details that are product-specific and not generic knowledge. |
 | [Testing inbound frontend IP address reachability](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-test-frontend-reachability) | troubleshooting | 0.70 | Shows how to use ping and traceroute for diagnosing inbound connectivity issues to Standard Public Load Balancer frontends. While somewhat procedural, it is clearly framed as a troubleshooting technique for a specific product scenario. |
@@ -117,7 +139,6 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Deploy public load balancer with DDoS protection](https://learn.microsoft.com/en-us/azure/load-balancer/tutorial-protect-load-balancer-ddos) | security | 0.60 | Tutorial on configuring DDoS Protection for public load balancers; includes product-specific security configuration steps and mentions cost/overage behavior for protected public IPs. |
 | [Monitor Load Balancer](https://learn.microsoft.com/en-us/azure/load-balancer/monitor-load-balancer) | configuration | 0.60 | Central article on monitoring Load Balancer via Azure Monitor and Insights; likely includes which metrics/logs are emitted and how to configure collection, which are product-specific monitoring configuration details. |
 | [Move a load balancer across regions](https://learn.microsoft.com/en-us/azure/load-balancer/move-across-regions-azure-load-balancer) | deployment | 0.60 | Covers moving an internal or external load balancer to another region using ARM templates; includes product-specific deployment pattern for DR/testing scenarios. |
-| [SNAT for outbound connections to internet](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-outbound-connections) | architecture-patterns | 0.60 | Explains how SNAT is used for outbound connectivity, mapping backend IPs to frontend IPs and preventing inbound connections; this is a product-specific connectivity pattern. |
 | [Standard Load Balancer and Virtual Machine Scale Sets](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-standard-virtual-machine-scale-sets) | best-practices | 0.60 | Guidance article with specific recommendations for combining VM scale sets and Standard Load Balancer; contains product-specific behavioral guidance and gotchas. |
 
 ## Unclassified Pages
@@ -131,41 +152,41 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [High Availability ports](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-ha-ports-overview) | 0.40 | Overview of HA ports; mostly conceptual description of behavior, not a configuration reference with parameters or limits. |
 | [Manage Load Balancer health status](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-manage-health-status) | 0.40 | Describes the health status feature and its purpose. Summary does not indicate detailed error codes, configuration tables, or numeric thresholds; it appears more like a feature explanation than expert-level troubleshooting or configuration reference. |
 | [Components](https://learn.microsoft.com/en-us/azure/load-balancer/components) | 0.35 | Explains key components (frontends, backend pools, rules) conceptually; not primarily a detailed configuration parameter reference. |
+| [ARM template](https://learn.microsoft.com/en-us/azure/load-balancer/quickstart-load-balancer-standard-public-template) | 0.30 | ARM template quickstart for deploying a standard load balancer; focuses on basic deployment example rather than exhaustive configuration options or product-specific constraints. |
 | [Add multiple Virtual Machine Scale Set instances behind one Azure Load Balancer](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-multiple-virtual-machine-scale-set) | 0.30 | How-to for configuring multiple VM scale sets behind one load balancer; likely procedural without detailed config parameter tables or limits. |
 | [Administrative state](https://learn.microsoft.com/en-us/azure/load-balancer/admin-state-overview) | 0.30 | Explains the Admin State concept and scenarios; likely descriptive without detailed parameter tables or numeric ranges. |
 | [Azure Monitor Insights for Load Balancer](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-insights) | 0.30 | Describes insights visualizations and how they help with design decisions and fault localization, but summary suggests a conceptual/UX overview of Azure Monitor for networks rather than detailed error codes, limits, or configuration parameter tables. |
+| [CLI](https://learn.microsoft.com/en-us/azure/load-balancer/quickstart-load-balancer-standard-public-cli) | 0.30 | Quickstart using Azure CLI; summary indicates standard tutorial content without expert-level limits, quotas, or specialized configuration tables. |
 | [Configure outbound connectivity with a gateway load balancer](https://learn.microsoft.com/en-us/azure/load-balancer/tutorial-gateway-outbound-connectivity) | 0.30 | Tutorial for outbound connectivity with Gateway Load Balancer; focused on a scenario, not broad expert configuration or limits. |
 | [Create a global load balancer](https://learn.microsoft.com/en-us/azure/load-balancer/tutorial-cross-region-portal) | 0.30 | Tutorial for creating a global load balancer; deployment walkthrough rather than configuration or decision matrices. |
+| [Create a public load balancer](https://learn.microsoft.com/en-us/azure/load-balancer/quickstart-load-balancer-standard-public-portal) | 0.30 | Quickstart tutorial for creating a public load balancer via portal; primarily step-by-step instructions without configuration option tables, limits, or product-specific edge cases. |
 | [Create gateway load balancer](https://learn.microsoft.com/en-us/azure/load-balancer/tutorial-create-gateway-load-balancer) | 0.30 | Tutorial on creating a gateway load balancer; step-by-step instructions but not a structured configuration or limits reference. |
 | [Deploy a dual-stack gateway load balancer](https://learn.microsoft.com/en-us/azure/load-balancer/gateway-deploy-dual-stack-load-balancer) | 0.30 | Tutorial for adding IPv6 to an existing Gateway Load Balancer; scenario-specific steps rather than general configuration tables. |
 | [Deploy a global load balancer - ARM template](https://learn.microsoft.com/en-us/azure/load-balancer/tutorial-deploy-cross-region-load-balancer-template) | 0.30 | ARM template-based deployment tutorial for global load balancer; single deployment pattern, not a comprehensive expert reference. |
 | [Floating IP configuration](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-floating-ip) | 0.30 | High-level overview of floating IP configuration; summary suggests conceptual explanation without detailed configuration tables or limits. |
+| [Global load balancer overview](https://learn.microsoft.com/en-us/azure/load-balancer/cross-region-overview) | 0.30 | Describes global load balancing conceptually and a basic port-matching note; lacks detailed limits, configuration matrices, or decision criteria that would qualify as expert knowledge. |
 | [Load balancing algorithm](https://learn.microsoft.com/en-us/azure/load-balancer/concepts) | 0.30 | Concepts article about algorithms and traffic distribution; mostly conceptual rather than configuration, limits, or troubleshooting. |
+| [PowerShell](https://learn.microsoft.com/en-us/azure/load-balancer/quickstart-load-balancer-standard-public-powershell) | 0.30 | Quickstart using PowerShell to create a load balancer; focuses on basic resource creation, not on detailed configuration parameters, limits, or troubleshooting mappings. |
+| [Terraform](https://learn.microsoft.com/en-us/azure/load-balancer/quickstart-load-balancer-standard-public-terraform) | 0.30 | Terraform quickstart for deploying a standard load balancer; summary suggests generic infrastructure-as-code usage without detailed limits, quotas, or specialized configuration guidance. |
 | [Use Virtual Machine Scale Set instance with an existing Azure Load Balancer](https://learn.microsoft.com/en-us/azure/load-balancer/configure-vm-scale-set-portal) | 0.30 | Shows how to attach a VM scale set to an existing load balancer via portal/CLI/PowerShell; mostly deployment steps, not configuration reference or limits. |
 | [Using multiple IP configurations](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-multiple-ip) | 0.30 | Tutorial for load balancing multiple NIC IP configurations; appears to be scenario walkthrough rather than config reference or decision matrix. |
 | [ARM template](https://learn.microsoft.com/en-us/azure/load-balancer/quickstart-load-balancer-standard-internal-template) | 0.25 | Quickstart using ARM template for internal load balancer; focused on one deployment pattern. |
-| [ARM template](https://learn.microsoft.com/en-us/azure/load-balancer/quickstart-load-balancer-standard-public-template) | 0.25 | Quickstart using ARM template; focused on a single deployment example, not exhaustive expert knowledge. |
 | [Bicep](https://learn.microsoft.com/en-us/azure/load-balancer/quickstart-load-balancer-standard-internal-bicep) | 0.25 | Quickstart using Bicep for internal load balancer; single scenario deployment, not a configuration catalog. |
 | [Bicep](https://learn.microsoft.com/en-us/azure/load-balancer/quickstart-load-balancer-standard-public-bicep) | 0.25 | Quickstart using Bicep; shows one deployment pattern, not a full configuration or limits catalog. |
 | [CLI](https://learn.microsoft.com/en-us/azure/load-balancer/quickstart-load-balancer-standard-internal-cli) | 0.25 | Quickstart using CLI for internal load balancer; primarily step-by-step instructions. |
-| [CLI](https://learn.microsoft.com/en-us/azure/load-balancer/quickstart-load-balancer-standard-public-cli) | 0.25 | Quickstart using Azure CLI; step-by-step tutorial rather than expert configuration or troubleshooting content. |
 | [Create a multiple VMs inbound NAT rule](https://learn.microsoft.com/en-us/azure/load-balancer/tutorial-nat-rule-multi-instance-portal) | 0.25 | Tutorial for inbound NAT rule v2 to multiple VMs; scenario walkthrough without detailed config tables or error mappings. |
-| [Create a public load balancer](https://learn.microsoft.com/en-us/azure/load-balancer/quickstart-load-balancer-standard-public-portal) | 0.25 | Quickstart tutorial for creating a public load balancer via portal; step-by-step but not a comprehensive configuration reference or limits guide. |
 | [Create a single VM inbound NAT rule](https://learn.microsoft.com/en-us/azure/load-balancer/tutorial-load-balancer-port-forwarding-portal) | 0.25 | Tutorial for creating a single-VM inbound NAT rule; primarily step-by-step configuration, not a reference of parameters, limits, or troubleshooting. |
 | [Create an internal load balancer](https://learn.microsoft.com/en-us/azure/load-balancer/quickstart-load-balancer-standard-internal-portal) | 0.25 | Quickstart for internal load balancer via portal; focused on example setup, not exhaustive configuration or expert troubleshooting. |
 | [Cross-subscription load balancer overview](https://learn.microsoft.com/en-us/azure/load-balancer/cross-subscription-overview) | 0.25 | Conceptual overview of cross-subscription load balancing and supported scenarios; no detailed configuration parameters or numeric constraints. |
 | [PowerShell](https://learn.microsoft.com/en-us/azure/load-balancer/quickstart-load-balancer-standard-internal-powershell) | 0.25 | Quickstart using PowerShell for internal load balancer; example deployment, not a detailed configuration or troubleshooting reference. |
-| [PowerShell](https://learn.microsoft.com/en-us/azure/load-balancer/quickstart-load-balancer-standard-public-powershell) | 0.25 | Quickstart using PowerShell to create a public load balancer; example-focused, not a comprehensive configuration or limits reference. |
 | [Terraform](https://learn.microsoft.com/en-us/azure/load-balancer/quickstart-load-balancer-standard-internal-terraform) | 0.25 | Quickstart using Terraform for internal load balancer; tutorial rather than expert reference. |
-| [Terraform](https://learn.microsoft.com/en-us/azure/load-balancer/quickstart-load-balancer-standard-public-terraform) | 0.25 | Quickstart using Terraform; tutorial content without detailed product-specific configuration matrices or limits. |
 | [Create a public load balancer with an IP-based backend - Portal](https://learn.microsoft.com/en-us/azure/load-balancer/tutorial-load-balancer-ip-backend-portal) | 0.20 | Portal tutorial for creating a public load balancer with IP-based backend; mostly step-by-step UI instructions without config tables, limits, or product-specific patterns. |
-| [Gateway load balancer overview](https://learn.microsoft.com/en-us/azure/load-balancer/gateway-overview) | 0.20 | Gateway Load Balancer overview focused on scenarios and benefits; lacks numeric limits, config parameter tables, or troubleshooting content. |
-| [Global load balancer overview](https://learn.microsoft.com/en-us/azure/load-balancer/cross-region-overview) | 0.20 | Global load balancer overview describing capabilities and basic configuration rule; no detailed limits, decision matrices, or config tables. |
+| [Gateway load balancer overview](https://learn.microsoft.com/en-us/azure/load-balancer/gateway-overview) | 0.20 | Overview of Gateway Load Balancer SKU and scenarios; no evidence of numeric limits, config parameter tables, or troubleshooting details in the summary. |
 | [Inbound NAT rules overview](https://learn.microsoft.com/en-us/azure/load-balancer/inbound-nat-rules) | 0.20 | Described as an overview of what inbound NAT rules are, why and how to use them. This is conceptual product documentation without detailed limits, configuration tables, or error-code-based troubleshooting. |
 | [Load balance VMs with multiple availability sets](https://learn.microsoft.com/en-us/azure/load-balancer/tutorial-multi-availability-sets-portal) | 0.20 | Tutorial for using multiple availability sets in a backend pool; appears to be a how-to without deep configuration tables or error mappings. |
 | [Load balance a VM within a specific availability zone](https://learn.microsoft.com/en-us/azure/load-balancer/tutorial-load-balancer-standard-public-zonal-portal) | 0.20 | Tutorial for creating a zonal Standard Load Balancer; primarily procedural steps without detailed configuration matrices or limits. |
 | [Multiple frontends](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-multivip-overview) | 0.20 | Content is an architectural/conceptual overview of using multiple frontends on Azure Load Balancer, describing when they are useful and general design considerations. It does not expose concrete limits, configuration parameter tables, error codes, or quantified decision matrices that go beyond what an LLM would already know. |
 | [Partners](https://learn.microsoft.com/en-us/azure/load-balancer/gateway-partners) | 0.20 | Partner listing for Gateway Load Balancer; essentially ecosystem/marketing content without technical configuration or limits. |
-| [What is Azure Load Balancer?](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-overview) | 0.20 | High-level overview of Azure Load Balancer features and scenarios; no detailed limits, configuration tables, or error mappings. |
+| [What is Azure Load Balancer?](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-overview) | 0.20 | High-level overview of Azure Load Balancer features and scenarios; summary does not indicate specific limits, configuration tables, error codes, or decision matrices. |
 | [What's new?](https://learn.microsoft.com/en-us/azure/load-balancer/whats-new) | 0.20 | What's new / release notes index; mostly announcements and links, not structured limits, configuration, or troubleshooting guidance. |
 | [Support and troubleshooting for Azure Load Balancer](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-support-help) | 0.10 | Support/help options page; no technical limits, configuration parameters, error codes, or product-specific patterns. Primarily guidance on where to get assistance, not expert implementation knowledge. |

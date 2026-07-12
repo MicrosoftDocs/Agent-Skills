@@ -1,9 +1,9 @@
 ---
 name: azure-virtual-wan
-description: Expert knowledge for Azure Virtual WAN development including troubleshooting, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing Virtual WAN hubs, P2S VPN, hub routing/BGP, NVAs/SD‑WAN, or ExpressRoute/Private Link integration, and other Azure Virtual WAN related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure VPN Gateway (use azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute), Azure Traffic Manager (use azure-traffic-manager).
+description: Expert knowledge for Azure Virtual WAN development including troubleshooting, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing VWAN hubs, P2S/Always On VPN, BGP/IPsec routing, NVAs/firewalls, or ExpressRoute/SD-WAN integration, and other Azure Virtual WAN related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure VPN Gateway (use azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-28"
+  generated_at: "2026-07-12"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Virtual WAN Skill
@@ -29,7 +29,7 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L51-L78 | Designing and troubleshooting Azure Virtual WAN architectures: routing patterns, hub-and-spoke and global transit designs, security/firewall integration, SD-WAN, isolation, DR, and Microsoft 365 connectivity. |
 | Limits & Quotas | L79-L85 | Limits and design guidance for Virtual WAN: P2S client pool sizing, hub routing/throughput caps, and using Private Link endpoints within scale and quota constraints. |
 | Security | L86-L95 | Configuring secure P2S VPN access in Virtual WAN using Microsoft Entra ID (MFA, OpenVPN, custom app IDs), Azure VPN Client setup/migration, and hub roles/permissions. |
-| Configuration | L96-L150 | Configuring Azure Virtual WAN hubs, routing, BGP/NVA integration, VPN (P2S/Always On), IPsec/NAT, Entra ID auth, certificates, client profiles, and monitoring/logging. |
+| Configuration | L96-L150 | Configuring Virtual WAN hubs, routing, BGP/NAT/IPsec, NVAs/Firewalls, and P2S/Always On VPN (certs, Entra ID, client profiles, user groups, IP pools) plus monitoring and path selection. |
 | Integrations & Coding Patterns | L151-L157 | PowerShell and automation patterns for integrating Virtual WAN with ExpressRoute, SD-WAN/VPN CPEs, RADIUS user groups, and sharing services via Azure Private Link |
 | Deployment | L158-L162 | PowerShell-based deployment of cross-tenant VNet connections to Virtual WAN hubs and step-by-step setup of integrated NVAs inside Virtual WAN hubs. |
 

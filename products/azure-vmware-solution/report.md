@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-05'
+generated_at: '2026-07-12'
 category_descriptions:
   configuration: 'Configuring AVS infrastructure: networking, DNS/DHCP, storage/datastores,
     backup, monitoring/metrics, Arc/Run Command, HCX, Cloud Director, and high availability/placement
@@ -7,9 +7,9 @@ category_descriptions:
   architecture-patterns: 'Network, storage, and private cloud design for AVS: hub-spoke
     patterns, vSAN/stretched clusters, Horizon and GitHub Enterprise sizing, Cloud
     Director networking, and Gen 2 architecture.'
-  decision-making: 'Guidance on choosing AVS-related options: API Management SKUs,
-    backup and storage, migration approaches, licensing, cross-region moves, reserved
-    instances, and VMware Cloud Foundation subscriptions.'
+  decision-making: 'Guidance for planning AVS workloads: choosing APIs, backup and
+    storage, migration/region moves, SQL/Windows licensing, and reserved instance
+    purchasing decisions.'
   security: 'Securing AVS: identity/access control, Defender for Cloud, vSAN CMK encryption,
     LDAP/vCenter identity, Trusted Launch/vTPM, NSX Edge internet, ESU, app protection,
     credential rotation, and best practices.'
@@ -30,17 +30,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure VMware Solution development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when working with AVS networking/NSX, HCX migrations, vSAN clusters, Horizon
-  VDI, or VMware Cloud Director, and other Azure VMware Solution related development
-  tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Large
-  Instances (use azure-large-instances), Azure Migrate (use azure-migrate), Azure
-  Site Recovery (use azure-site-recovery).
-use_when: Use when working with AVS networking/NSX, HCX migrations, vSAN clusters,
-  Horizon VDI, or VMware Cloud Director, and other Azure VMware Solution related development
+  Use when designing AVS private clouds, NSX/HCX networking, Horizon VDI, SQL migrations,
+  or JetStream DR, and other Azure VMware Solution related development tasks. Not
+  for Azure Virtual Machines (use azure-virtual-machines), Azure Large Instances (use
+  azure-large-instances), Azure Stack Edge (use azure-stack-edge), Azure Migrate (use
+  azure-migrate).
+use_when: Use when designing AVS private clouds, NSX/HCX networking, Horizon VDI,
+  SQL migrations, or JetStream DR, and other Azure VMware Solution related development
   tasks.
 confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines), Azure
-  Large Instances (use azure-large-instances), Azure Migrate (use azure-migrate),
-  Azure Site Recovery (use azure-site-recovery).
+  Large Instances (use azure-large-instances), Azure Stack Edge (use azure-stack-edge),
+  Azure Migrate (use azure-migrate).
 ---
 # Azure VMware Solution Crawl Report
 
@@ -49,13 +49,13 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 - **Total Pages**: 136
 - **Fetched**: 136
 - **Fetch Failed**: 0
-- **Classified**: 94
-- **Unclassified**: 42
+- **Classified**: 95
+- **Unclassified**: 41
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 134
+- **Updated Pages**: 1
+- **Unchanged**: 135
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-vmware-solution/azure-vmware-solution.csv`
 
@@ -66,22 +66,20 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | architecture-patterns | 9 | 6.6% |
 | best-practices | 3 | 2.2% |
 | configuration | 34 | 25.0% |
-| decision-making | 8 | 5.9% |
+| decision-making | 9 | 6.6% |
 | deployment | 8 | 5.9% |
 | integrations | 8 | 5.9% |
 | limits-quotas | 8 | 5.9% |
 | security | 13 | 9.6% |
 | troubleshooting | 3 | 2.2% |
-| *(Unclassified)* | 42 | 30.9% |
+| *(Unclassified)* | 41 | 30.1% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Run Command](https://learn.microsoft.com/en-us/azure/azure-vmware/using-run-command)
-  - Updated: 2026-04-28T18:47:00.000Z → 2026-06-30T22:12:00.000Z
-- [Use Set-ToolsRepo Run Command](https://learn.microsoft.com/en-us/azure/azure-vmware/use-set-toolsrepo-run-command)
-  - Updated: 2026-06-12T22:22:00.000Z → 2026-06-30T22:12:00.000Z
+- [FAQ](https://learn.microsoft.com/en-us/azure/azure-vmware/faq)
+  - Updated: 2026-06-24T17:12:00.000Z → 2026-07-09T22:04:00.000Z
 
 ## Classified Pages
 
@@ -127,6 +125,7 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Enable Managed SNAT for Azure VMware Solution workloads](https://learn.microsoft.com/en-us/azure/azure-vmware/enable-managed-snat-for-workloads) | configuration | 0.70 | Describes product-specific networking behavior and constraints (Managed SNAT not working with a default Azure route, ICMP disabled by design). These are concrete, service-specific configuration and behavior details that aren't generic knowledge, but it doesn't focus on numeric limits or decision matrices. |
 | [Enable public IP on the NSX Edge for Azure VMware Solution](https://learn.microsoft.com/en-us/azure/azure-vmware/enable-public-ip-nsx-edge) | security | 0.70 | The article covers enabling public IPs on NSX Edge and setting internet access rules, which is a security-sensitive configuration. It likely includes NSX/AVS-specific settings, rule configurations, and constraints (for example, how public IPs are assigned, required firewall/NAT rules, and design considerations), representing product-specific security configuration knowledge. |
 | [Enable unlimited virtualization with Azure Hybrid Benefit for SQL Server in Azure VMware Solution](https://learn.microsoft.com/en-us/azure/azure-vmware/enable-sql-azure-hybrid-benefit) | configuration | 0.70 | Gives concrete configuration steps for VM-Host placement policies and license registration for SQL Server on AVS, including host-level licensing behavior and core coverage requirements. These are product-specific configuration patterns beyond generic knowledge. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/azure-vmware/faq) | decision-making | 0.70 | FAQ pages for Azure VMware Solution typically include product-specific guidance on when to use the service, migration and sizing considerations, and comparisons with other Azure options. These details help users decide if and how to adopt the service, going beyond generic concepts into concrete decision criteria, even if not heavily numeric. |
 | [Hub and spoke](https://learn.microsoft.com/en-us/azure/azure-vmware/architecture-hub-and-spoke) | architecture-patterns | 0.70 | Architecture guidance for integrating Azure VMware Solution into a hub-and-spoke topology in hybrid environments. Likely includes product-specific network patterns, routing considerations, and when to use particular connectivity options, which are detailed, service-specific design decisions beyond generic hub-and-spoke concepts. |
 | [Install Cloud Backup for Virtual Machines](https://learn.microsoft.com/en-us/azure/azure-vmware/install-cloud-backup-virtual-machines) | integrations | 0.70 | Covers installing a specific Cloud Backup for Virtual Machines plug-in within Azure VMware Solution to back up Azure NetApp Files datastores and VMs. This is a product-specific integration pattern between AVS and NetApp, likely including configuration steps and parameters unique to this integration, which qualifies as integrations-focused expert knowledge. |
 | [Internet connectivity design considerations](https://learn.microsoft.com/en-us/azure/azure-vmware/architecture-design-public-internet-access) | architecture-patterns | 0.70 | Network design considerations and solutions for AVS-specific use cases constitute product-specific architecture patterns. |
@@ -227,4 +226,3 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-vmware/resource-health-for-azure-vmware-solution-overview) | 0.20 | High-level overview of Azure Resource Health for AVS; summary indicates conceptual description of what Resource Health does, without concrete error codes, configuration parameters, or limits. |
 | [Security solutions for Azure VMware Solution](https://learn.microsoft.com/en-us/azure/azure-vmware/ecosystem-security-solutions) | 0.20 | High-level description of security partner solutions and ecosystem; appears marketing/overview oriented without specific RBAC roles, configuration parameters, or detailed integration settings. Lacks the concrete, product-specific security configuration details required for the security or other expert categories. |
 | [What's new](https://learn.microsoft.com/en-us/azure/azure-vmware/azure-vmware-solution-platform-updates) | 0.20 | A 'what's new' / platform updates page; primarily lifecycle and feature announcements without detailed limits, configuration parameters, error codes, or decision matrices. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/azure-vmware/faq) | - | FAQ page appears to provide general Q&A about Azure VMware Solution without clear evidence of detailed numeric limits, configuration tables, error-code-based troubleshooting, or other product-specific expert data as defined by the sub-skill types. |

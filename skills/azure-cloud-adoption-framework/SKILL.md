@@ -1,9 +1,9 @@
 ---
 name: azure-cloud-adoption-framework
-description: Expert guidance for planning and executing cloud adoption using Azure Cloud Adoption Framework. Covers strategy, planning, readiness & landing zones, adoption patterns, governance, security, operations & management, organization & teams, and adoption scenarios. Use when designing Azure landing zones, AKS, AVD/AVS, SAP/Oracle workloads, or AI agent platforms, and other Azure Cloud Adoption Framework related development tasks.
+description: Expert guidance for planning and executing cloud adoption using Azure Cloud Adoption Framework. Covers strategy, planning, readiness & landing zones, adoption patterns, governance, security, operations & management, organization & teams, and adoption scenarios. Use when adopting AKS/Arc, AVS/VMware, SAP/Oracle, AVD/Citrix, or AI agent workloads on Azure, and other Azure Cloud Adoption Framework related development tasks.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-05"
+  generated_at: "2026-07-12"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Cloud Adoption Framework Skill
@@ -27,7 +27,7 @@ This skill requires **network access** to fetch documentation content:
 | Strategy | L37-L55 | High-level cloud and AI strategy: defining business goals, executive alignment, unified data/ops, workload-specific plans (SAP, Oracle, AVD, VMware), and cost, resiliency, security, and sustainability objectives. |
 | Planning | L56-L83 | Planning cloud adoption, migration waves, modernization roadmaps, cost/skills readiness, and detailed plans for workloads (AI, data, Oracle, SAP, AVS, AVD, analytics) on Azure. |
 | Readiness & Landing Zones | L84-L201 | Designing and operating Azure landing zones: network topologies, identity, subscriptions, governance, automation/DevOps, multitenant setups, and workload-specific patterns (AVS, SAP, Oracle, AKS, Arc). |
-| Adoption Patterns | L202-L226 | Patterns and step-by-step guides for planning, migrating, modernizing, and operating workloads on Azure (apps, data, AI agents, AVD, SAP, Oracle, VMware) using CAF best practices. |
+| Adoption Patterns | L202-L226 | Patterns and step-by-step guidance for planning, migrating, modernizing, and operating Azure workloads (AI agents, cloud-native apps, AVD, VMware, Oracle, SAP) safely and efficiently |
 | Governance | L227-L254 | Designing and enforcing Azure governance: policies, tagging, cost control, compliance, and security baselines across landing zones, AKS, AVD, AVS, Arc, SAP, and AI agents. |
 | Security | L255-L281 | Security design and governance for Azure landing zones, including Zero Trust, IAM, encryption, DevOps, AKS, analytics, SAP/Oracle, Arc, and ongoing security operations. |
 | Operations & Management | L282-L316 | Operating, monitoring, securing, and optimizing Azure environments and workloads (including AI, AKS, Arc, AVS, Oracle, SAP, analytics) plus BCDR, DevOps, and platform-level governance. |
@@ -210,7 +210,7 @@ This skill requires **network access** to fetch documentation content:
 | Decommission on-premises workloads after Azure migration | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/migrate/decommission-source-workload |
 | Execute structured Azure workload migrations | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/migrate/execute-migration |
 | Execute Azure cloud modernization projects safely | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/modernize/execute-cloud-modernization |
-| Apply replatform, refactor, rearchitect modernization patterns | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/modernize/modernization-cloud-replatform-refactor-rearchitect |
+| Apply replatform, refactor, rearchitect patterns for Azure modernization | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/modernize/modernization-cloud-replatform-refactor-rearchitect |
 | Assess environments for Azure Virtual Desktop migration | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/migrate-assess |
 | Deploy and migrate Azure Virtual Desktop workloads | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/migrate-deploy |
 | Execute post-deployment and release for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/migrate-release |

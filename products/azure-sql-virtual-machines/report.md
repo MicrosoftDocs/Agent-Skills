@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-05'
+generated_at: '2026-07-12'
 category_descriptions:
   decision-making: Guidance for choosing Azure SQL options and pricing, comparing
     SQL VMs vs Managed Instance, planning migrations (including Db2), HADR choices,
@@ -13,9 +13,9 @@ category_descriptions:
   limits-quotas: Info on Azure SQL capacity limits, DTU benchmark behavior, regional
     feature availability, and how to request quota increases for databases and managed
     instances
-  configuration: 'Configuring SQL Server on Azure VMs: clustering/FCI and AG setups,
-    load balancers/listeners, storage and tempdb layout, backups, editions/versions,
-    and SQL IaaS Agent management.'
+  configuration: 'Configuring SQL Server on Azure VMs: HA/DR (AGs, FCIs, load balancers,
+    clustering), storage/layout, tempdb, vCores, connectivity, backups, and SQL IaaS
+    Agent setup/management.'
   best-practices: 'Best practices for SQL Server on Azure VMs: HA/DR clustering, DNN
     listeners, backup/restore, performance tuning, storage and VM sizing, baselines,
     and best practices assessments.'
@@ -30,16 +30,18 @@ category_descriptions:
 skill_description: Expert knowledge for SQL Server on Azure Virtual Machines development
   including troubleshooting, best practices, decision making, architecture & design
   patterns, limits & quotas, security, configuration, integrations & coding patterns,
-  and deployment. Use when planning SQL VM vs Managed Instance, Always On/FCI, HADR,
-  AHB licensing, or Blob backup with managed identity, and other SQL Server on Azure
-  Virtual Machines related development tasks. Not for Azure SQL Database (use azure-sql-database),
-  Azure SQL Managed Instance (use azure-sql-managed-instance), Azure Virtual Machines
-  (use azure-virtual-machines).
-use_when: Use when planning SQL VM vs Managed Instance, Always On/FCI, HADR, AHB licensing,
-  or Blob backup with managed identity, and other SQL Server on Azure Virtual Machines
-  related development tasks.
+  and deployment. Use when choosing SQL VM vs Managed Instance, configuring Always
+  On/FCI, HA/DR, storage, backups, or Blob-based backups, and other SQL Server on
+  Azure Virtual Machines related development tasks. Not for Azure SQL Database (use
+  azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance),
+  Azure Virtual Machines (use azure-virtual-machines), SAP HANA on Azure Large Instances
+  (use azure-sap).
+use_when: Use when choosing SQL VM vs Managed Instance, configuring Always On/FCI,
+  HA/DR, storage, backups, or Blob-based backups, and other SQL Server on Azure Virtual
+  Machines related development tasks.
 confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure SQL
-  Managed Instance (use azure-sql-managed-instance), Azure Virtual Machines (use azure-virtual-machines).
+  Managed Instance (use azure-sql-managed-instance), Azure Virtual Machines (use azure-virtual-machines),
+  SAP HANA on Azure Large Instances (use azure-sap).
 ---
 # SQL Server on Azure Virtual Machines Crawl Report
 
@@ -53,9 +55,9 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 126
-- **Deleted Pages**: 1
+- **Updated Pages**: 2
+- **Unchanged**: 125
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sql-virtual-machines/azure-sql-virtual-machines.csv`
 
 ## Classification Statistics
@@ -77,12 +79,10 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 
 ### Updated Pages
 
-- [Known issues with Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-known-issues?view=azuresql)
-  - Updated: 2026-05-01T08:00:00.000Z → 2026-06-25T08:00:00.000Z
-
-### Deleted Pages
-
-- ~~EKM with AKV using managed identities~~ (https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/managed-identity-extensible-key-management?view=azuresql)
+- [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/monitoring-sql-managed-instance-azure-monitor-reference?view=azuresql)
+  - Updated: 2026-02-12T08:00:00.000Z → 2026-02-13T18:37:00.000Z
+- [What's new?](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/doc-changes-updates-release-notes-whats-new?view=azuresql)
+  - Updated: 2026-05-27T17:43:00.000Z → 2026-07-10T08:00:00.000Z
 
 ## Classified Pages
 
@@ -100,6 +100,7 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | [Microsoft Entra authentication](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/configure-azure-ad-authentication-for-sql-vm?view=azuresql) | security | 0.80 | Configuring Entra ID auth for SQL VMs requires specific roles, connection strings, and configuration steps that are product-specific security settings. |
 | [Troubleshoot out of memory errors](https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-memory-errors-issues?view=azuresql) | troubleshooting | 0.80 | Focuses on out-of-memory errors with causes and remediation steps, including references to service objective limits. |
 | [With the Azure portal](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/manage-sql-vm-portal?view=azuresql) | configuration | 0.80 | Explains SQL VM management settings exposed via the SQL virtual machines resource, including SQL-specific configuration options. |
+| [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/monitoring-sql-managed-instance-azure-monitor-reference?view=azuresql) | configuration | 0.78 | A monitoring data reference page for Azure SQL Managed Instance typically lists all Azure Monitor metrics, dimensions, and log categories specific to the service, including exact metric names, units, and sometimes default collection behavior. These product-specific monitoring fields and their meanings are not generally known from training and function as configuration/parameter references for observability setups rather than generic concepts. |
 | [Distributed network name (DNN)](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/failover-cluster-instance-distributed-network-name-dnn-configure?view=azuresql) | configuration | 0.78 | DNN setup for FCI requires specific cluster resource names and Azure networking parameters that are product-specific configuration details. |
 | [Known issues with Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-known-issues?view=azuresql) | troubleshooting | 0.78 | The page is a catalog of current known issues for Azure SQL Managed Instance, each with product-specific symptoms and workarounds or resolution details. This is expert troubleshooting knowledge that maps issues to causes and fixes, and is not just conceptual guidance. |
 | [SSL root certificate expiring](https://learn.microsoft.com/en-us/azure/azure-sql/updates/ssl-root-certificate-expiring?view=azuresql) | security | 0.78 | Details certificate authority changes and required client configuration updates to maintain secure connections, which are product-specific security settings. |
@@ -122,7 +123,6 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/azure-sql/database/policy-reference?view=azuresql) | security | 0.70 | Lists concrete Azure Policy definitions, including names and scopes, which are product-specific security/compliance configurations. |
 | [Azure Quickstart templates](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/availability-group-quickstart-template-configure?view=azuresql) | deployment | 0.70 | Quickstart templates encode deployment configuration (parameters, resources) for AGs; this is product-specific deployment knowledge. |
 | [Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/monitoring-sql-database-azure-monitor-reference?view=azuresql) | configuration | 0.70 | Monitoring reference enumerates specific metric names, dimensions, and log categories used for Azure Monitor integration. |
-| [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/monitoring-sql-managed-instance-azure-monitor-reference?view=azuresql) | configuration | 0.70 | Provides detailed list of metrics and diagnostic settings specific to Managed Instance monitoring. |
 | [Azure SQL decision tree](https://learn.microsoft.com/en-us/azure/azure-sql/azure-sql-decision-tree?view=azuresql) | decision-making | 0.70 | Describes a decision tree in the Azure SQL hub specifically for selecting between Azure SQL Database, Managed Instance, and SQL Server on VM. This is explicit technology selection guidance and decision support, fitting the decision-making category even though the full tree content is hosted in the portal. |
 | [Azure Storage for backup](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/azure-storage-sql-server-backup-restore-use?view=azuresql) | integrations | 0.70 | Covers using Azure Storage with SQL Server BACKUP/RESTORE, including T-SQL/SMO usage and storage-specific parameters. |
 | [Azure shared disks](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/failover-cluster-instance-azure-shared-disks-manually-configure?view=azuresql) | configuration | 0.70 | Step-by-step manual configuration of a SQL Server failover cluster instance on Azure VMs with Azure Shared Disks will include product-specific settings (cluster, storage, networking, SQL configuration) and exact parameter names/values unique to this scenario, which an LLM is unlikely to know from training. |
@@ -210,7 +210,7 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | [Portal](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/sql-vm-create-portal-quickstart?view=azuresql) | 0.20 | Quickstart tutorial for creating a SQL Server VM in the Azure portal. These typically show step-by-step UI usage without detailed configuration matrices, limits, or error-code-based troubleshooting. |
 | [Query editor (Classic)](https://learn.microsoft.com/en-us/azure/azure-sql/database/query-editor-classic?view=azuresql) | 0.20 | Describes the classic Azure portal query editor experience and how to run T-SQL in the browser. It is a tool/UX overview without detailed configuration tables, limits, error-code mappings, or other expert-only specifics. |
 | [Unified inventory (preview)](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/unified-inventory-sql-vm?view=azuresql) | 0.20 | Preview feature overview for unified inventory; describes the concept and resource type but no detailed configuration parameters, limits, or troubleshooting content. |
-| [What's new?](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/doc-changes-updates-release-notes-whats-new?view=azuresql) | 0.20 | Release notes / what's new summary for SQL Server on Azure VMs; primarily describes new features and documentation changes, not detailed limits, configs, troubleshooting mappings, or quantified decision criteria. |
+| [What's new?](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/doc-changes-updates-release-notes-whats-new?view=azuresql) | 0.20 | Release notes and documentation change log for SQL Server on Azure VMs; primarily a high-level 'what's new' overview without detailed limits, configuration tables, error codes, or product-specific decision matrices. |
 | [About Linux SQL Server VMs](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/linux/sql-server-on-linux-vm-what-is-iaas-overview?view=azuresql) | 0.10 | High-level overview of SQL Server on Azure Linux VMs with general descriptions of regions, VM sizes, and image gallery; no specific limits, configuration parameters, error codes, or decision matrices that meet the expert-knowledge criteria. |
 | [Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/doc-changes-updates-release-notes-whats-new-archive?view=azuresql) | 0.10 | Archive of 'what's new' documentation changes; primarily historical release-note navigation without detailed limits, configs, troubleshooting mappings, or decision matrices. |
 | [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-release-notes-whats-new-archive?view=azuresql) | 0.10 | Archive of 'what's new' documentation changes for Managed Instance; functions as historical/navigation content rather than detailed technical guidance. |

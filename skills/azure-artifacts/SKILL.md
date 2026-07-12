@@ -1,9 +1,9 @@
 ---
 name: azure-artifacts
-description: Expert knowledge for Azure Artifacts development including best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing feeds, upstream sources, views/promotion, retention, GitHub Actions CI/CD, or npm/.npmrc config, and other Azure Artifacts related development tasks. Not for Azure DevOps (use azure-devops), Azure Pipelines (use azure-pipelines).
+description: Expert knowledge for Azure Artifacts development including best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing feeds, upstream sources, retention, npm/.npmrc scopes, or GitHub Actions package publishing, and other Azure Artifacts related development tasks. Not for Azure DevOps (use azure-devops), Azure Pipelines (use azure-pipelines), Azure Repos (use azure-repos), Azure Test Plans (use azure-test-plans).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-28"
+  generated_at: "2026-07-12"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Artifacts Skill
@@ -26,11 +26,11 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Best Practices | L35-L41 | Guidance on Azure Artifacts package management best practices, configuring and using upstream sources, and safely restoring packages from external feeds. |
 | Decision Making | L42-L48 | Guidance on choosing feed scope and planning migrations of package storage, including moving from file shares or MyGet to Azure Artifacts feeds. |
-| Limits & Quotas | L49-L56 | Storage quotas, free allocation, and per-package size/count limits in Azure Artifacts, plus how to monitor, manage, and publish packages within those limits. |
-| Security | L57-L62 | Securing Azure Artifacts feeds: configuring permissions, protecting upstream sources from malicious packages, and using npm audit to find and fix vulnerabilities. |
-| Configuration | L63-L71 | Configuring Azure Artifacts feeds: views/promotion, retention/deletion, upstream sources, npm/.npmrc and scopes, and .artifactignore for optimizing pipeline artifacts. |
-| Integrations & Coding Patterns | L72-L111 | How to connect build tools (NuGet, npm, Maven, Gradle, Cargo, Python, PowerShell) to Azure Artifacts feeds, publish/restore packages, use upstream sources, and debug with symbol packages |
-| Deployment | L112-L115 | Using GitHub Actions to build and push packages (NuGet, npm, etc.) to Azure Artifacts feeds, including workflow setup, authentication, and CI/CD integration. |
+| Limits & Quotas | L49-L57 | Storage quotas, package size/count limits, free allocation, and how to monitor, retain, delete, and publish Azure Artifacts packages within those limits. |
+| Security | L58-L63 | Securing Azure Artifacts feeds: configuring permissions, protecting upstream sources from malicious packages, and using npm audit to find and fix vulnerabilities. |
+| Configuration | L64-L71 | Configuring Azure Artifacts feeds: views/promotion, retention/deletion, upstream sources, npm/.npmrc and scopes, and .artifactignore for optimizing pipeline artifacts. |
+| Integrations & Coding Patterns | L72-L110 | How to connect build tools (NuGet, npm, Maven, Gradle, Cargo, Python, PowerShell) to Azure Artifacts feeds, publish/restore packages, use upstream sources, and debug with symbol packages |
+| Deployment | L111-L114 | Using GitHub Actions to build and push packages (NuGet, npm, etc.) to Azure Artifacts feeds, including workflow setup, authentication, and CI/CD integration. |
 
 ### Best Practices
 | Topic | URL |
@@ -50,6 +50,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Monitor and manage Azure Artifacts storage limits | https://learn.microsoft.com/en-us/azure/devops/artifacts/artifact-storage?view=azure-devops |
+| Manage deletion and retention for Azure Artifacts packages | https://learn.microsoft.com/en-us/azure/devops/artifacts/how-to/delete-and-recover-packages?view=azure-devops |
 | Publish Universal Packages and understand size limits | https://learn.microsoft.com/en-us/azure/devops/artifacts/quickstarts/universal-packages?view=azure-devops |
 | Azure Artifacts package size and count limits | https://learn.microsoft.com/en-us/azure/devops/artifacts/reference/limits?view=azure-devops |
 | Understand Azure Artifacts free storage allocation | https://learn.microsoft.com/en-us/azure/devops/artifacts/start-using-azure-artifacts?view=azure-devops |
@@ -64,7 +65,6 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Configure and manage Azure Artifacts feed views and promotion | https://learn.microsoft.com/en-us/azure/devops/artifacts/feeds/views?view=azure-devops |
-| Configure deletion, retention, and recovery for Azure Artifacts | https://learn.microsoft.com/en-us/azure/devops/artifacts/how-to/delete-and-recover-packages?view=azure-devops |
 | Configure upstream sources for Azure Artifacts feeds | https://learn.microsoft.com/en-us/azure/devops/artifacts/how-to/set-up-upstream-sources?view=azure-devops |
 | Configure .npmrc to connect npm to Azure Artifacts | https://learn.microsoft.com/en-us/azure/devops/artifacts/npm/npmrc?view=azure-devops |
 | Configure .artifactignore to optimize Azure Pipelines artifacts | https://learn.microsoft.com/en-us/azure/devops/artifacts/reference/artifactignore?view=azure-devops |
@@ -93,7 +93,6 @@ This skill requires **network access** to fetch documentation content:
 | Publish NuGet packages via dotnet CLI to Azure Artifacts | https://learn.microsoft.com/en-us/azure/devops/artifacts/nuget/dotnet-exe?view=azure-devops |
 | Configure dotnet to authenticate with Azure Artifacts feeds | https://learn.microsoft.com/en-us/azure/devops/artifacts/nuget/dotnet-setup?view=azure-devops |
 | Install NuGet packages from Azure Artifacts in Visual Studio | https://learn.microsoft.com/en-us/azure/devops/artifacts/nuget/install-nuget-packages-with-visual-studio?view=azure-devops |
-| Connect NuGet CLI to Azure Artifacts feeds | https://learn.microsoft.com/en-us/azure/devops/artifacts/nuget/nuget-exe?view=azure-devops |
 | Publish Azure Artifacts NuGet packages to NuGet.org | https://learn.microsoft.com/en-us/azure/devops/artifacts/nuget/publish-to-nuget-org?view=azure-devops |
 | Publish NuGet packages with NuGet CLI to Azure Artifacts | https://learn.microsoft.com/en-us/azure/devops/artifacts/nuget/publish?view=azure-devops |
 | Restore NuGet packages with dotnet from Azure Artifacts | https://learn.microsoft.com/en-us/azure/devops/artifacts/nuget/restore-nuget-packages-dotnet?view=azure-devops |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-28'
+generated_at: '2026-07-12'
 category_descriptions:
   troubleshooting: Diagnosing and fixing common Cloud Shell errors, storage and connectivity
     issues, plus deployment and network problems when running Cloud Shell in private
@@ -35,8 +35,8 @@ confusable_not_for: Not for Azure Portal (use azure-portal), Azure Virtual Machi
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 21
+- **Updated Pages**: 1
+- **Unchanged**: 20
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cloud-shell/azure-cloud-shell.csv`
 
@@ -50,6 +50,11 @@ confusable_not_for: Not for Azure Portal (use azure-portal), Azure Virtual Machi
 | *(Unclassified)* | 15 | 71.4% |
 
 ## Changes
+
+### Updated Pages
+
+- [Release notes](https://learn.microsoft.com/en-us/azure/cloud-shell/release-notes)
+  - Updated: 2026-05-22T08:00:00.000Z → 2026-07-06T17:11:00.000Z
 
 ## Classified Pages
 
@@ -70,13 +75,13 @@ confusable_not_for: Not for Azure Portal (use azure-portal), Azure Virtual Machi
 | [Overview](https://learn.microsoft.com/en-us/azure/cloud-shell/vnet/overview) | 0.40 | Scenario overview for using Cloud Shell in a VNet; summary is conceptual and does not show specific configuration parameters, limits, or troubleshooting mappings. |
 | [Persist files in storage](https://learn.microsoft.com/en-us/azure/cloud-shell/persisting-shell-storage) | 0.30 | Explains persistence via Azure Files; summary does not expose numeric limits, configuration parameters, or security roles. |
 | [Predictive IntelliSense in Cloud Shell](https://learn.microsoft.com/en-us/azure/cloud-shell/cloud-shell-predictive-intellisense) | 0.30 | Explains that Predictive IntelliSense is enabled by default and mentions specific modules, but does not provide configuration parameter tables, limits, or structured troubleshooting content. |
-| [Release notes](https://learn.microsoft.com/en-us/azure/cloud-shell/release-notes) | 0.30 | Release notes list changes and updates but the summary does not indicate stable, reusable expert data like limits, configuration matrices, or error-code-based troubleshooting; content is primarily change-log/announcement style rather than structured expert guidance. |
 | [Azure Cloud Shell pricing](https://learn.microsoft.com/en-us/azure/cloud-shell/pricing) | 0.20 | Pricing overview stating Cloud Shell is free; no detailed tier matrices, numeric cost comparisons, or decision criteria are shown. |
 | [Features & tools](https://learn.microsoft.com/en-us/azure/cloud-shell/features) | 0.20 | Feature overview without numeric limits, configuration tables, or product-specific troubleshooting; primarily conceptual description of capabilities. |
 | [Get started (Classic)](https://learn.microsoft.com/en-us/azure/cloud-shell/get-started/classic) | 0.20 | Getting started guide; likely step-by-step usage without detailed limits, configuration matrices, or troubleshooting mappings in the summary. |
 | [Get started (New UI)](https://learn.microsoft.com/en-us/azure/cloud-shell/get-started/ephemeral) | 0.20 | Explains ephemeral sessions conceptually (no persistence after session ends) but no numeric limits, config tables, or error mappings are indicated. |
 | [Get started with existing storage account (New UI)](https://learn.microsoft.com/en-us/azure/cloud-shell/get-started/existing-storage) | 0.20 | How-to for using existing storage; appears procedural without detailed configuration option tables or numeric constraints in the summary. |
 | [Get started with new storage account (New UI)](https://learn.microsoft.com/en-us/azure/cloud-shell/get-started/new-storage) | 0.20 | Tutorial for starting Cloud Shell with persistent storage; summary does not show specific configuration parameters, limits, or troubleshooting content. |
+| [Release notes](https://learn.microsoft.com/en-us/azure/cloud-shell/release-notes) | 0.20 | Release notes list changes, new features, and deprecations but the summary does not indicate detailed limits, configuration tables, error-code-based troubleshooting, or other structured expert knowledge as defined. Primarily change log/overview content. |
 | [Use the Cloud Shell editor (Classic UI)](https://learn.microsoft.com/en-us/azure/cloud-shell/use-cloud-shell-editor-classic) | 0.10 | Classic editor overview; only general feature description without specific numeric constraints, config parameters, or diagnostic guidance. |
 | [Use the Cloud Shell editor (New UI)](https://learn.microsoft.com/en-us/azure/cloud-shell/use-cloud-shell-editor-new) | 0.10 | Describes the integrated editor and its features at a high level; lacks numeric limits, config tables, or product-specific troubleshooting details. |
 | [Use the window (Classic UI)](https://learn.microsoft.com/en-us/azure/cloud-shell/use-the-shell-window-classic) | 0.10 | Classic UI usage overview; no expert-only limits, configuration matrices, or error-code-based troubleshooting. |

@@ -1,9 +1,9 @@
 ---
 name: azure-security
-description: Expert knowledge for Azure Security development including best practices, decision making, security, configuration, integrations & coding patterns, and deployment. Use when securing AKS images, CMK/Key Vault encryption, Notation signing, SBOM workflows, or Customer Lockbox, and other Azure Security related development tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure Firewall (use azure-firewall), Azure DDos Protection (use azure-ddos-protection), Azure Web Application Firewall (use azure-web-application-firewall).
+description: Expert knowledge for Azure Security development including best practices, decision making, security, configuration, integrations & coding patterns, and deployment. Use when securing Azure containers, Key Vault/HSM keys, firewalls, TLS/certs, or Gov vs commercial deployments, and other Azure Security related development tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure Sentinel (use azure-sentinel), Azure Firewall (use azure-firewall), Azure Web Application Firewall (use azure-web-application-firewall).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-14"
+  generated_at: "2026-07-12"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Security Skill
@@ -24,10 +24,10 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Best Practices | L34-L55 | End-to-end Azure security hardening guidance: identity, network, data, PaaS/IaaS apps, secrets, ransomware defenses, incident response, and service-specific security checklists. |
-| Decision Making | L56-L61 | Guidance on which Azure services support customer-managed keys and how to choose the right key management approach (Key Vault, managed HSM, encryption options) for your workloads. |
-| Security | L62-L91 | Securing Azure workloads: threat modeling mitigations, auth/crypto/logging best practices, AKS image validation, ransomware defense, Customer Lockbox, firewall/antimalware, and data protection. |
-| Configuration | L92-L99 | Configuring Azure security features: container scanning (Dependabot/Copacetic), firewall rules via domain patterns, customer-managed keys, security logging/auditing, and managed TLS/DCV changes. |
+| Best Practices | L34-L53 | Azure security hardening guidance for IaaS/PaaS: network, data, app, secrets, ransomware, incident response, and service‑specific checklists (SQL, Storage, App Service, Service Fabric). |
+| Decision Making | L54-L58 | Guidance on selecting Azure key management options (Key Vault, managed HSM, app-level keys), comparing security, compliance, performance, and integration trade-offs. |
+| Security | L59-L90 | Securing Azure workloads: threat modeling mitigations, identity/access, data protection, ransomware defense, firewall/antimalware, certificates, backup, and operational security best practices. |
+| Configuration | L91-L99 | Configuring Azure security features: container vulnerability tools, firewall rules via domain patterns, customer-managed encryption keys, security logging/auditing, and upcoming TLS/DCV changes. |
 | Integrations & Coding Patterns | L100-L104 | Guidance on generating signed SBOMs for container images, attaching them in CI/CD, and integrating software supply chain security into deployment workflows. |
 | Deployment | L105-L111 | Guides for signing and verifying container images with Notation in Azure Pipelines/GitHub Actions, plus comparing security feature availability in Azure vs Azure Government. |
 
@@ -38,7 +38,6 @@ This skill requires **network access** to fetch documentation content:
 | Apply Azure data security and encryption best practices | https://learn.microsoft.com/en-us/azure/security/fundamentals/data-encryption-best-practices |
 | Use Azure SQL database security checklist | https://learn.microsoft.com/en-us/azure/security/fundamentals/database-security-checklist |
 | Secure Azure IaaS workloads and virtual machines | https://learn.microsoft.com/en-us/azure/security/fundamentals/iaas |
-| Apply Azure identity and access security best practices | https://learn.microsoft.com/en-us/azure/security/fundamentals/identity-management-best-practices |
 | Implement Azure-specific incident response practices and tooling | https://learn.microsoft.com/en-us/azure/security/fundamentals/incident-response-overview |
 | Apply Azure network security best practices | https://learn.microsoft.com/en-us/azure/security/fundamentals/network-best-practices |
 | Apply operational security best practices for Azure assets | https://learn.microsoft.com/en-us/azure/security/fundamentals/operational-best-practices |
@@ -48,16 +47,14 @@ This skill requires **network access** to fetch documentation content:
 | Design and operate secure Azure PaaS deployments | https://learn.microsoft.com/en-us/azure/security/fundamentals/paas-deployments |
 | Prepare Azure environments to withstand ransomware attacks | https://learn.microsoft.com/en-us/azure/security/fundamentals/ransomware-prepare |
 | Apply Azure-specific protections against ransomware attacks | https://learn.microsoft.com/en-us/azure/security/fundamentals/ransomware-protection |
-| Protect secrets across Azure services and pipelines | https://learn.microsoft.com/en-us/azure/security/fundamentals/secrets-best-practices |
+| Protect and manage secrets in Azure workloads | https://learn.microsoft.com/en-us/azure/security/fundamentals/secrets-best-practices |
 | Apply security best practices to Azure Service Fabric | https://learn.microsoft.com/en-us/azure/security/fundamentals/service-fabric-best-practices |
-| Implement five-step checklist to secure Entra ID | https://learn.microsoft.com/en-us/azure/security/fundamentals/steps-secure-identity |
 | Prevent Azure subdomain takeover with DNS and App Service | https://learn.microsoft.com/en-us/azure/security/fundamentals/subdomain-takeover |
 
 ### Decision Making
 | Topic | URL |
 |-------|-----|
-| Identify Azure services supporting customer-managed keys | https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-customer-managed-keys-support |
-| Select the right Azure key management solution | https://learn.microsoft.com/en-us/azure/security/fundamentals/key-management-choose |
+| Choose the right Azure key management solution | https://learn.microsoft.com/en-us/azure/security/fundamentals/key-management-choose |
 
 ### Security
 | Topic | URL |
@@ -80,6 +77,7 @@ This skill requires **network access** to fetch documentation content:
 | Implement Azure resource security best practices | https://learn.microsoft.com/en-us/azure/security/fundamentals/best-practices-and-patterns |
 | Configure alternate email notifications for Customer Lockbox | https://learn.microsoft.com/en-us/azure/security/fundamentals/customer-lockbox-alternative-email |
 | Understand and configure Azure Customer Lockbox access | https://learn.microsoft.com/en-us/azure/security/fundamentals/customer-lockbox-faq |
+| Apply Azure identity and access control best practices | https://learn.microsoft.com/en-us/azure/security/fundamentals/identity-management-best-practices |
 | Review Azure SQL Database built-in security features | https://learn.microsoft.com/en-us/azure/security/fundamentals/infrastructure-sql |
 | Apply Azure operational security checklist actions | https://learn.microsoft.com/en-us/azure/security/fundamentals/operational-checklist |
 | Follow Azure penetration testing rules and scope | https://learn.microsoft.com/en-us/azure/security/fundamentals/pen-testing |
@@ -88,12 +86,14 @@ This skill requires **network access** to fetch documentation content:
 | Detect and respond to ransomware using Azure security tools | https://learn.microsoft.com/en-us/azure/security/fundamentals/ransomware-detect-respond |
 | Use Azure-native features to protect against ransomware | https://learn.microsoft.com/en-us/azure/security/fundamentals/ransomware-features-resources |
 | Configure Azure Firewall Premium to mitigate ransomware | https://learn.microsoft.com/en-us/azure/security/fundamentals/ransomware-protection-with-azure-firewall |
+| Implement core Microsoft Entra identity security steps | https://learn.microsoft.com/en-us/azure/security/fundamentals/steps-secure-identity |
 
 ### Configuration
 | Topic | URL |
 |-------|-----|
 | Configure Dependabot and Copacetic for container security | https://learn.microsoft.com/en-us/azure/security/container-secure-supply-chain/articles/container-secure-supply-chain-implementation/cssc-depenadabot-quickstart |
 | Configure firewalls using Azure domain patterns | https://learn.microsoft.com/en-us/azure/security/fundamentals/azure-domains |
+| Configure Azure services to use customer-managed keys | https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-customer-managed-keys-support |
 | Configure and analyze Azure security logging and auditing | https://learn.microsoft.com/en-us/azure/security/fundamentals/log-audit |
 | Adapt to upcoming Azure managed TLS and DCV changes | https://learn.microsoft.com/en-us/azure/security/fundamentals/managed-tls-changes |
 

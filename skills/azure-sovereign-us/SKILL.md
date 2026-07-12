@@ -1,9 +1,9 @@
 ---
 name: azure-sovereign-us
-description: Expert knowledge for Azure US Government development including decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when handling FedRAMP/DoD IL5 scope, SACA patterns, Gov CI/CD, Gov Marketplace, or sovereign APIs, and other Azure US Government related development tasks. Not for Azure Local (use azure-local), Azure Arc (use azure-arc), Azure Networking (use azure-networking), Azure Security (use azure-security).
+description: Expert knowledge for Azure US Government development including decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when designing IL5/FedRAMP Gov envs, SACA-based architectures, ASE/DISA CAP deploys, Gov Marketplace, or Entra auth, and other Azure US Government related development tasks. Not for Azure Security (use azure-security), Azure Defender For Cloud (use azure-defender-for-cloud), Azure Policy (use azure-policy), Azure Monitor (use azure-monitor).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-05"
+  generated_at: "2026-07-12"
   generator: "docs2skills/1.0.0"
 ---
 # Azure US Government Skill
@@ -26,7 +26,7 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Decision Making | L34-L46 | Guidance on choosing Azure Government vs global, FedRAMP/DoD scope and ATO, CSP reseller options, marketplace and DoD regions, and sector-specific compliance (NERC CIP, public safety, worldwide public sector). |
 | Architecture & Design Patterns | L47-L51 | Guidance on applying Secure Azure Computing Architecture (SACA) patterns to design compliant, secure, and resilient solutions in Azure Sovereign Cloud environments. |
-| Security | L52-L64 | Security and compliance for Azure Government: FedRAMP/DoD scope, IL5 isolation, TIC, secure configuration, identity/Entra auth, naming to avoid data leaks, and protecting workloads/data. |
+| Security | L52-L64 | Designing secure, compliant Azure Government environments: isolation/IL5, FedRAMP Rev5 & DoD scope, TIC, identity/Entra auth, resource naming, and workload security controls. |
 | Configuration | L65-L73 | Guidance for configuring and operating Azure Government: app deployment, VM extensions, EA billing, marketplace images, and Azure Monitor logs in sovereign US regions. |
 | Integrations & Coding Patterns | L74-L80 | Coding patterns and connection guidance for Azure Government: building Foundry Tools apps, connecting SSMS to Gov SQL, and using Azure Storage APIs in sovereign clouds. |
 | Deployment | L81-L87 | Guides for deploying apps and solutions to Azure Government: CI/CD with Azure Pipelines, ASE baseline with DISA CAP, App Service deployment, and publishing to Gov Marketplace. |
@@ -52,7 +52,7 @@ This skill requires **network access** to fetch documentation content:
 ### Security
 | Topic | URL |
 |-------|-----|
-| Implement secure isolation in Azure environments | https://learn.microsoft.com/en-us/azure/azure-government/azure-secure-isolation-guidance |
+| Design secure isolation for Azure Government and multitenant | https://learn.microsoft.com/en-us/azure/azure-government/azure-secure-isolation-guidance |
 | Understand FedRAMP and DoD compliance scope for Azure clouds | https://learn.microsoft.com/en-us/azure/azure-government/compliance/azure-services-in-fedramp-auditscope |
 | Meet Trusted Internet Connections using Azure | https://learn.microsoft.com/en-us/azure/azure-government/compliance/compliance-tic |
 | Configure Azure securely for FedRAMP Rev5 | https://learn.microsoft.com/en-us/azure/azure-government/compliance/recommended-secure-configuration |
@@ -60,7 +60,7 @@ This skill requires **network access** to fetch documentation content:
 | Name Azure resources without exposing sensitive data | https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-concept-naming-resources |
 | Configure Azure Government for DoD IL5 isolation | https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-impact-level-5 |
 | Plan identity architecture for Azure Government | https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-plan-identity |
-| Secure Azure Government workloads and data | https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-plan-security |
+| Implement security controls for Azure Government workloads | https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-plan-security |
 
 ### Configuration
 | Topic | URL |

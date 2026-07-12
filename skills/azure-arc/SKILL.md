@@ -1,9 +1,9 @@
 ---
 name: azure-arc
-description: Expert knowledge for Azure Arc development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing Arc-enabled Kubernetes, servers, data services, resource bridge, or Edge RAG/Edge Volumes, and other Azure Arc related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Virtual Machines (use azure-virtual-machines), Azure Stack Edge (use azure-stack-edge), Azure Local (use azure-local).
+description: Expert knowledge for Azure Arc development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing Arc-enabled Kubernetes, servers, SQL MI/data services, resource bridge, or Edge RAG workloads, and other Azure Arc related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Stack Edge (use azure-stack-edge), Azure Local (use azure-local), Azure VMware Solution (use azure-vmware-solution).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-05"
+  generated_at: "2026-07-12"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Arc Skill
@@ -24,7 +24,7 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L72 | Diagnosing and fixing Azure Arc issues across Kubernetes, servers, VMs, storage, data services, networking, extensions, site manager, resource bridge, and workload orchestration. |
+| Troubleshooting | L37-L72 | Diagnosing and fixing Arc issues: Kubernetes connectivity/extensions, data services and SQL MI problems, resource bridge/site manager/VMware orchestration errors, server agent, SSH, networking, ESU, and log collection. |
 | Best Practices | L73-L79 | Best practices for Azure Arc storage and data services: filesystem behavior, avoiding out-of-space issues, static retain workflows for Edge Volumes, and common usage FAQs. |
 | Decision Making | L80-L99 | Guidance on planning, sizing, licensing, and migrating Azure Arc servers and data services, including Kubernetes platform choices, ESU/SQL licensing, and moving from legacy tools/agents. |
 | Architecture & Design Patterns | L100-L107 | Patterns for Arc data/compute design: container storage data flow, Arc Edge Volumes, HA/DR for Arc SQL MI and failover groups, and advanced Edge RAG data parsing. |
@@ -32,7 +32,7 @@ This skill requires **network access** to fetch documentation content:
 | Security | L118-L174 | Security, identity, and access control for Azure Arc: AD auth, TDE, keytabs/credential rotation, RBAC, network protection, Private Link, policies, and hardening for servers, Kubernetes, and SCVMM/vSphere. |
 | Configuration | L175-L260 | Configuring Azure Arc infrastructure: Kubernetes, servers, data services, networking, security, monitoring, GitOps, storage, and agent/extension lifecycle for Arc-enabled resources. |
 | Integrations & Coding Patterns | L261-L282 | Programmatic and automation patterns for Azure Arc: CLI/PowerShell/ARM/Ansible/Terraform usage, onboarding servers/VMs/K8s at scale, managing extensions, monitoring, and security integrations. |
-| Deployment | L283-L311 | Deploying and managing Azure Arc components: data controllers, Kubernetes extensions, resource bridge, SCVMM/VMware onboarding, monitoring agents, upgrades, DR/failover, and multicloud connectors. |
+| Deployment | L283-L310 | Deploying and managing Azure Arc components: data controllers, Kubernetes extensions, resource bridge, SCVMM/VMware onboarding, monitoring agents, upgrades, DR/failover, and multicloud connectors. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -54,7 +54,7 @@ This skill requires **network access** to fetch documentation content:
 | Troubleshoot Azure Arc resource bridge deployment and connectivity | https://learn.microsoft.com/en-us/azure/azure-arc/resource-bridge/troubleshoot-resource-bridge |
 | Evaluate Arc on Azure VMs and handle errors | https://learn.microsoft.com/en-us/azure/azure-arc/servers/plan-evaluate-on-azure-virtual-machine |
 | Troubleshoot SSH connectivity to Arc-enabled servers | https://learn.microsoft.com/en-us/azure/azure-arc/servers/ssh-arc-troubleshoot |
-| Diagnose Azure Connected Machine agent connection issues | https://learn.microsoft.com/en-us/azure/azure-arc/servers/troubleshoot-agent-onboard |
+| Diagnose Azure Arc Connected Machine agent onboarding issues | https://learn.microsoft.com/en-us/azure/azure-arc/servers/troubleshoot-agent-onboard |
 | Handle disconnected scenarios for Azure Arc-enabled servers | https://learn.microsoft.com/en-us/azure/azure-arc/servers/troubleshoot-connectivity |
 | Troubleshoot Azure Arc ESU licensing and patch delivery | https://learn.microsoft.com/en-us/azure/azure-arc/servers/troubleshoot-extended-security-updates |
 | Troubleshoot networking problems for Azure Arc-enabled servers | https://learn.microsoft.com/en-us/azure/azure-arc/servers/troubleshoot-networking |
@@ -292,7 +292,6 @@ This skill requires **network access** to fetch documentation content:
 | Install and test pre-release Arc data services builds | https://learn.microsoft.com/en-us/azure/azure-arc/data/preview-testing |
 | Manage Azure Arc-enabled Kubernetes agent upgrades and support policy | https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/agent-upgrade |
 | Deploy cert-manager extension on Arc-enabled Kubernetes | https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/cert-manager-deploy |
-| Use and manage extensions on Arc-enabled Kubernetes | https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/extensions-release |
 | Onboard Amazon EKS clusters to Azure Arc via multicloud connector | https://learn.microsoft.com/en-us/azure/azure-arc/multicloud-connector/onboard-elastic-kubernetes-service-clusters-arc |
 | Onboard multicloud VMs to Azure Arc with the connector | https://learn.microsoft.com/en-us/azure/azure-arc/multicloud-connector/onboard-multicloud-vms-arc |
 | Use Azure CLI commands to deploy Arc resource bridge | https://learn.microsoft.com/en-us/azure/azure-arc/resource-bridge/deploy-cli |

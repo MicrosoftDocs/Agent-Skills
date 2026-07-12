@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-05'
+generated_at: '2026-07-12'
 category_descriptions:
   security: 'Securing ACR access: auth methods (Entra, managed identity, tokens),
     RBAC/ABAC, network/firewall/VNet rules, policy/compliance, encryption keys, image
@@ -7,9 +7,9 @@ category_descriptions:
   integrations: Integrating ACR with Kubernetes, ACI, GitHub Actions, Helm, ORAS,
     and ACR Transfer; configuring auth, caching, webhooks, and image signing/verification
     workflows.
-  configuration: 'Configuring Azure Container Registry behavior: caching, retention,
-    delete/locks, IPv6, webhooks, monitoring, and ACR Tasks (YAML, scheduling, patching,
-    agent pools) for automated image workflows.'
+  configuration: 'Configuring ACR behavior: cache and wildcard rules, purge/locks/soft
+    delete, retention and IPv6, tasks (YAML, timers, agent pools, patching), webhooks,
+    and monitoring metrics/logs.'
   decision-making: Guidance on choosing ACR auth for Kubernetes, migrating image signing
     from Docker Content Trust to Notary, and planning/configuring geo-replication
     for multi-region registries.
@@ -77,8 +77,8 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 
 ### Updated Pages
 
-- [Azure ABAC repository permissions](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-rbac-abac-repository-permissions)
-  - Updated: 2026-03-19T22:17:00.000Z → 2026-06-29T22:18:00.000Z
+- [Retention policy for untagged manifests (preview)](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-retention-policy)
+  - Updated: 2025-12-19T05:31:00.000Z → 2026-07-07T17:09:00.000Z
 
 ## Classified Pages
 
@@ -114,7 +114,6 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | [Enable unauthenticated anonymous pull access](https://learn.microsoft.com/en-us/azure/container-registry/anonymous-pull-access) | security | 0.80 | Describes enabling unauthenticated pull, tier constraints (Standard/Premium), and security implications; product-specific security setting. |
 | [Monitoring data reference](https://learn.microsoft.com/en-us/azure/container-registry/monitor-container-registry-reference) | configuration | 0.80 | Reference article for ACR monitoring data, including metrics and log categories; provides detailed names and structures that are product-specific configuration/telemetry knowledge. |
 | [Restrict access using service endpoint (preview)](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-vnet) | security | 0.80 | Shows configuring VNet service endpoints for ACR; includes subnet/endpoint settings, a network security configuration scenario. |
-| [Retention policy for untagged manifests (preview)](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-retention-policy) | configuration | 0.80 | Explains retention policy with a numeric days setting and automatic deletion behavior; includes CLI/portal parameters, fitting configuration. |
 | [Tag and version images](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-image-tag-version) | best-practices | 0.80 | Provides concrete DO/DON'T strategies for image tags and versions in ACR deployments; product-specific lifecycle guidance. |
 | [Troubleshoot performance issues](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-troubleshoot-performance) | troubleshooting | 0.80 | Describes performance symptoms, likely with causes (e.g., SKU, region, network) and recommended fixes specific to ACR, which is expert troubleshooting guidance. |
 | [Azure ABAC repository permissions](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-rbac-abac-repository-permissions) | security | 0.78 | The page describes Azure ABAC usage specifically for Azure Container Registry repositories, including repository-level permission conditions and how they extend Azure RBAC. It contains product-specific security configuration details (role assignments with repository attributes and conditions) that go beyond generic security concepts. |
@@ -142,6 +141,7 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | [Manage network bypass policy for tasks](https://learn.microsoft.com/en-us/azure/container-registry/manage-network-bypass-policy-for-tasks) | security | 0.70 | Describes the networkRuleBypassAllowedForTasks setting, its security implications, and how it interacts with managed identities and network restrictions, which is product-specific security configuration. |
 | [Manage public images](https://learn.microsoft.com/en-us/azure/container-registry/buffer-gate-public-content) | best-practices | 0.70 | Describes concrete practices and workflows for mirroring public content into a private ACR; product-specific operational guidance. |
 | [Push and pull a Helm chart](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-helm-repos) | integrations | 0.70 | Shows how to store Helm charts as OCI artifacts in ACR with Helm 3; includes ACR-specific integration and repository behavior. |
+| [Retention policy for untagged manifests (preview)](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-retention-policy) | configuration | 0.70 | Describes product-specific retention policy settings for untagged manifests in Premium tier, including how to enable and configure the number-of-days parameter via portal and CLI. This is concrete configuration guidance rather than conceptual overview, but does not focus on numeric service limits/quotas. |
 | [Rotate or revoke a Customer managed key](https://learn.microsoft.com/en-us/azure/container-registry/tutorial-rotate-revoke-customer-managed-keys) | security | 0.70 | Covers rotation, update, and revocation flows for CMK on ACR with product-specific security behavior and requirements. |
 | [Run task on dedicated agent pool (preview)](https://learn.microsoft.com/en-us/azure/container-registry/tasks-agent-pools) | configuration | 0.70 | Explains how to set up and use ACR agent pools, including tier requirement (Premium) and pool selection, which are product-specific configuration and constraints. |
 | [Secure deployment options](https://learn.microsoft.com/en-us/azure/container-registry/tutorial-connected-registry-arc) | security | 0.70 | Details HTTPS/TLS/no-TLS, BYOC certificates, and trust distribution for the extension; contains concrete security configuration options. |
