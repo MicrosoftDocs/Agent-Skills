@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-12'
+generated_at: '2026-07-19'
 category_descriptions:
   integrations: Patterns and code for integrating Event Hubs with .NET, Kafka (clients,
     Streams, Connect, Debezium), Flink, Spark, Akka, schema/JSON registry, and adding
@@ -13,8 +13,8 @@ category_descriptions:
     and CMKs, network isolation (VNet, NSG, Private Link, NSP), TLS settings, and
     compliance/governance via Azure Policy.'
   configuration: 'Configuring Event Hubs behavior: partitions, retention, geo-DR,
-    replication, processing units, metrics/logs, app groups, log compaction, and Avro
-    capture schema.'
+    scaling, replication, Avro capture, monitoring/metrics, app groups, and log compaction
+    for performance and governance.'
   architecture-patterns: 'Patterns and guidance for Event Hubs reliability: availability/consistency
     design, geo-disaster recovery, and building/operating replication tasks (often
     with Azure Functions).'
@@ -30,17 +30,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Event Hubs development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  using Kafka clients/Streams, .NET SDK, geo-replication/DR, app groups throttling,
-  or Event Hubs emulator, and other Azure Event Hubs related development tasks. Not
-  for Azure Service Bus (use azure-service-bus), Azure Event Grid (use azure-event-grid),
-  Azure Notification Hubs (use azure-notification-hubs), Azure Stream Analytics (use
-  azure-stream-analytics).
-use_when: Use when using Kafka clients/Streams, .NET SDK, geo-replication/DR, app
-  groups throttling, or Event Hubs emulator, and other Azure Event Hubs related development
+  using Kafka-compatible clients, .NET SDKs, Flink/Spark, geo-replication/DR, or Avro
+  Capture with Event Hubs, and other Azure Event Hubs related development tasks. Not
+  for Azure Service Bus (use azure-service-bus), Azure Notification Hubs (use azure-notification-hubs),
+  Azure Event Grid (use azure-event-grid), Azure Stream Analytics (use azure-stream-analytics).
+use_when: Use when using Kafka-compatible clients, .NET SDKs, Flink/Spark, geo-replication/DR,
+  or Avro Capture with Event Hubs, and other Azure Event Hubs related development
   tasks.
-confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Event
-  Grid (use azure-event-grid), Azure Notification Hubs (use azure-notification-hubs),
-  Azure Stream Analytics (use azure-stream-analytics).
+confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Notification
+  Hubs (use azure-notification-hubs), Azure Event Grid (use azure-event-grid), Azure
+  Stream Analytics (use azure-stream-analytics).
 ---
 # Azure Event Hubs Crawl Report
 
@@ -78,8 +77,8 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 
 ### Updated Pages
 
-- [Geo-replication](https://learn.microsoft.com/en-us/azure/event-hubs/geo-replication)
-  - Updated: 2026-05-05T06:13:00.000Z → 2026-07-11T05:10:00.000Z
+- [Monitor data reference](https://learn.microsoft.com/en-us/azure/event-hubs/monitor-event-hubs-reference)
+  - Updated: 2025-07-14T08:00:00.000Z → 2025-07-16T05:10:00.000Z
 
 ## Classified Pages
 
@@ -103,7 +102,6 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 | [Configure properties for an event hub](https://learn.microsoft.com/en-us/azure/event-hubs/configure-event-hub-properties) | configuration | 0.85 | Explicitly about configuring status, partition count, cleanup policy, and retention; such pages usually list property names, allowed ranges, and defaults, which are expert configuration details. |
 | [Enable managed identity for a namespace](https://learn.microsoft.com/en-us/azure/event-hubs/enable-managed-identity) | security | 0.85 | Covers enabling system- and user-assigned managed identities with specific portal/ARM settings and role assignments, which are product-specific security configuration details. |
 | [Encrypt data using customer-managed keys](https://learn.microsoft.com/en-us/azure/event-hubs/configure-customer-managed-key) | security | 0.85 | Customer-managed key configuration for Event Hubs data-at-rest encryption is security-focused and usually includes specific Key Vault requirements, key types, RBAC roles, and configuration parameters unique to Event Hubs + SSE/BYOK. These are product-specific security settings that qualify as expert knowledge. |
-| [Monitor data reference](https://learn.microsoft.com/en-us/azure/event-hubs/monitor-event-hubs-reference) | configuration | 0.85 | Monitoring data reference typically enumerates metric names, dimensions, log categories, and schemas, which are detailed configuration/reference data. |
 | [Troubleshoot connectivity issues](https://learn.microsoft.com/en-us/azure/event-hubs/troubleshooting-guide) | troubleshooting | 0.85 | Organized around connectivity symptoms (permanent vs transient failures) and how to diagnose and resolve them. Likely includes specific checks (firewall, connection strings, network configuration) and symptom→cause→solution guidance unique to Event Hubs, matching the troubleshooting criteria. |
 | [Authenticate and authorize access to Event Hubs resources](https://learn.microsoft.com/en-us/azure/event-hubs/authorize-access-event-hubs) | security | 0.80 | Details Event Hubs-specific authorization mechanisms (SAS, Microsoft Entra, RBAC) and how they apply to Event Hubs and Kafka endpoints; includes product-specific security model. |
 | [Authenticate with a shared access signature](https://learn.microsoft.com/en-us/azure/event-hubs/authenticate-shared-access-signature) | security | 0.80 | Explains SAS authentication for Event Hubs with product-specific parameters and code examples; includes concrete security configuration details. |
@@ -116,6 +114,7 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 | [Kafka troubleshooting guide for Event Hubs](https://learn.microsoft.com/en-us/azure/event-hubs/apache-kafka-troubleshooting-guide) | troubleshooting | 0.80 | Focused on diagnosing and resolving Kafka-on-Event-Hubs issues; likely includes specific error patterns and resolutions unique to this integration. |
 | [Network security](https://learn.microsoft.com/en-us/azure/event-hubs/network-security) | security | 0.80 | Explains use of private endpoints, firewalls, and related network security features specifically for Event Hubs; includes product-specific security settings. |
 | [Troubleshoot checkpoint store issues](https://learn.microsoft.com/en-us/azure/event-hubs/troubleshoot-checkpoint-store-issues) | troubleshooting | 0.80 | Focuses on issues with Blob Storage checkpoint store, likely listing specific error patterns and resolutions, which is product-specific troubleshooting guidance. |
+| [Monitor data reference](https://learn.microsoft.com/en-us/azure/event-hubs/monitor-event-hubs-reference) | configuration | 0.78 | The monitoring reference page for Azure Event Hubs typically lists all available Azure Monitor metrics, dimensions, and diagnostic log categories specific to Event Hubs, including exact metric names, units, and sometimes default behaviors. These are product-specific configuration/telemetry details that an LLM is unlikely to fully know from training and are used to configure monitoring and alerting. It does not primarily describe limits/quotas, troubleshooting flows, or decision matrices, but rather enumerates concrete monitoring data types and their parameters, fitting best under configuration. |
 | [Associate a network security perimeter](https://learn.microsoft.com/en-us/azure/event-hubs/associate-network-security-perimeter) | security | 0.75 | Describes binding an NSP to Event Hubs with specific configuration steps and constraints, which are product-specific security settings. |
 | [Configure processing units for a premium namespace](https://learn.microsoft.com/en-us/azure/event-hubs/configure-processing-units-premium-namespace) | configuration | 0.75 | Provides instructions and likely parameter values/ranges for configuring processing units (PUs) on Premium namespaces; concrete configuration guidance. |
 | [Exchange events between applications using different protocols](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-exchange-events-different-protocols) | best-practices | 0.75 | Provides best practices for cross-protocol producers/consumers, mapping message fields between AMQP, Kafka, and HTTPS in Event Hubs; product-specific integration nuances. |

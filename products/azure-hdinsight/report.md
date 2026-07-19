@@ -52,8 +52,8 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 425
+- **Updated Pages**: 0
+- **Unchanged**: 426
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-hdinsight/azure-hdinsight.csv`
 
@@ -73,11 +73,6 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 | *(Unclassified)* | 89 | 20.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [Plan VNETs for HDInsight](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-plan-virtual-network-deployment)
-  - Updated: 2026-05-08T06:13:00.000Z → 2026-05-08T08:00:00.000Z
 
 ## Classified Pages
 

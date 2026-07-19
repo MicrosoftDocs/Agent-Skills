@@ -3,7 +3,7 @@ name: azure-sovereign-us
 description: Expert knowledge for Azure US Government development including decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when designing IL5/FedRAMP Gov envs, SACA-based architectures, ASE/DISA CAP deploys, Gov Marketplace, or Entra auth, and other Azure US Government related development tasks. Not for Azure Security (use azure-security), Azure Defender For Cloud (use azure-defender-for-cloud), Azure Policy (use azure-policy), Azure Monitor (use azure-monitor).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-12"
+  generated_at: "2026-07-19"
   generator: "docs2skills/1.0.0"
 ---
 # Azure US Government Skill

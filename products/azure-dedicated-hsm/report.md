@@ -38,8 +38,8 @@ confusable_not_for: Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Payment
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 15
+- **Updated Pages**: 0
+- **Unchanged**: 16
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-dedicated-hsm/azure-dedicated-hsm.csv`
 
@@ -54,11 +54,6 @@ confusable_not_for: Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Payment
 | *(Unclassified)* | 6 | 37.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [Secure your Dedicated HSM](https://learn.microsoft.com/en-us/azure/dedicated-hsm/secure-dedicated-hsm)
-  - Updated: 2025-09-26T08:00:00.000Z → 2026-07-10T22:34:00.000Z
 
 ## Classified Pages
 

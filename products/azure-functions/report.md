@@ -1,18 +1,18 @@
 ---
-generated_at: '2026-07-05'
+generated_at: '2026-07-19'
 category_descriptions:
-  integrations: Configuring Azure Functions triggers/bindings to integrate with databases,
-    messaging, storage, OpenAI, MCP, Dapr, SignalR, Web PubSub, Logic Apps, and other
-    Azure/third‑party services.
+  integrations: Patterns and how-tos for wiring Functions to external systems (HTTP,
+    storage, messaging, databases, AI/OpenAI, MCP, Dapr, Redis, Kafka, etc.) via triggers
+    and input/output bindings.
   decision-making: Guidance on choosing Functions hosting/runtime models, estimating
     costs, and planning or executing migrations (plans, runtimes, languages, platforms
     like AWS Lambda or Express) and key extensions.
   security: 'Securing Azure Functions: encryption at rest, secure storage, keys and
     identities, networking/VNet/private endpoints, SQL access, MCP servers, and App
     Service-based security controls.'
-  configuration: Configuring Azure Functions behavior, bindings, triggers, networking,
-    runtimes, monitoring (App Insights/OpenTelemetry), and local tools/settings for
-    different plans and languages.
+  configuration: 'Configuring Azure Functions apps: runtime versions, plans, networking/IPs,
+    host/app settings, local tools, monitoring/telemetry, and triggers/bindings for
+    services like SQL, Cosmos DB, Event Hubs, and Service Bus.'
   architecture-patterns: Running Functions in Linux containers, Durable Functions
     design with Azure Storage, and hosting Functions on Azure Container Apps for scalable,
     container-based architectures.
@@ -31,14 +31,14 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Functions development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building HTTP/queue-triggered apps, Durable workflows, container-based Functions,
-  or OpenAI/Dapr integrations, and other Azure Functions related development tasks.
+  building Functions with HTTP/storage/queues, Event Hubs/Service Bus, Durable workflows,
+  containers, or Flex plans, and other Azure Functions related development tasks.
   Not for Azure App Service (use azure-app-service), Azure Logic Apps (use azure-logic-apps),
   Azure Container Apps (use azure-container-apps), Azure Kubernetes Service (AKS)
   (use azure-kubernetes-service).
-use_when: Use when building HTTP/queue-triggered apps, Durable workflows, container-based
-  Functions, or OpenAI/Dapr integrations, and other Azure Functions related development
-  tasks.
+use_when: Use when building Functions with HTTP/storage/queues, Event Hubs/Service
+  Bus, Durable workflows, containers, or Flex plans, and other Azure Functions related
+  development tasks.
 confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Logic
   Apps (use azure-logic-apps), Azure Container Apps (use azure-container-apps), Azure
   Kubernetes Service (AKS) (use azure-kubernetes-service).
@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Log
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 289
+- **Updated Pages**: 3
+- **Unchanged**: 286
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-functions/azure-functions.csv`
 
@@ -76,6 +76,15 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Log
 | *(Unclassified)* | 51 | 17.6% |
 
 ## Changes
+
+### Updated Pages
+
+- [Premium plan](https://learn.microsoft.com/en-us/azure/azure-functions/functions-premium-plan)
+  - Updated: 2026-05-15T08:00:00.000Z → 2026-07-14T08:00:00.000Z
+- [Monitoring data reference](https://learn.microsoft.com/en-us/azure/azure-functions/monitor-functions-reference)
+  - Updated: 2025-10-30T05:16:00.000Z → 2025-11-10T23:18:00.000Z
+- [Notification Hubs](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-notification-hubs)
+  - Updated: 2024-07-02T22:19:00.000Z → 2026-07-17T22:12:00.000Z
 
 ## Classified Pages
 
@@ -143,7 +152,6 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Log
 | [Input](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-signalr-service-input) | integrations | 0.80 | Describes SignalRConnectionInfo binding, including binding properties and token behavior specific to Azure Functions + SignalR. |
 | [Manage connections](https://learn.microsoft.com/en-us/azure/azure-functions/manage-connections) | best-practices | 0.80 | Explains how to avoid connection exhaustion in Consumption plan with specific coding patterns (static clients, connection reuse) and notes on plan-specific limits; product-specific best practices. |
 | [Migrate from AWS Lambda](https://learn.microsoft.com/en-us/azure/azure-functions/migration/migrate-aws-lambda-to-azure-functions) | decision-making | 0.80 | Provides guidance comparing AWS Lambda and Azure Functions and how to migrate, including trade-offs and optimization on Azure, which is decision-making and migration-focused. |
-| [Notification Hubs](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-notification-hubs) | integrations | 0.80 | Notification Hubs output binding reference includes binding configuration, platform-specific requirements, and deprecation notes (e.g., GCM) that are specific integration details. |
 | [Output](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-azure-data-explorer-output) | integrations | 0.80 | Output binding reference for ingesting data into Azure Data Explorer; includes binding configuration details. |
 | [Output](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-documentdb-output) | integrations | 0.80 | Output binding reference with configuration and code patterns for writing documents; product-specific integration details. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-event-iot) | integrations | 0.80 | IoT Hub bindings reference (based on Event Hubs) includes binding configuration and usage patterns specific to Azure Functions’ IoT Hub integration. |
@@ -163,6 +171,8 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Log
 | [Input](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-storage-table-input) | integrations | 0.78 | Input binding reference with binding properties (tableName, partitionKey, rowKey, etc.) and function.json/attribute details unique to this integration. |
 | [Local runtime/tools (func.exe)](https://learn.microsoft.com/en-us/azure/azure-functions/functions-core-tools-reference) | configuration | 0.78 | CLI/core tools reference pages typically list detailed command options, flags, and environment variables (for example, func init, func start, func settings) with specific parameter names, defaults, and constraints. This is product-specific configuration knowledge for the Azure Functions local runtime and tools, not just a tutorial, and qualifies as configuration expert knowledge. |
 | [Mobile Apps](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-mobile-apps) | integrations | 0.78 | Mobile Apps bindings reference includes input/output binding configuration and usage patterns specific to Azure Functions 1.x Mobile Apps integration, including version support details. |
+| [Monitoring data reference](https://learn.microsoft.com/en-us/azure/azure-functions/monitor-functions-reference) | configuration | 0.78 | The page is a monitoring data reference for Azure Functions, detailing which metrics, logs, and dimensions are emitted and how they map into Azure Monitor/Application Insights. This is product-specific reference material (tables of fields, categories, and meanings) that an LLM is unlikely to fully know from training. It focuses on configuration/interpretation of monitoring data rather than generic concepts, but does not primarily describe limits/quotas, troubleshooting flows, or architecture patterns. |
+| [Notification Hubs](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-notification-hubs) | integrations | 0.78 | The page documents the Azure Functions output binding for Azure Notification Hubs, including binding-specific attributes, configuration parameters (such as hub name, connection setting names, and binding properties), and code patterns unique to this integration. These are product-specific integration details and binding schemas that go beyond generic knowledge and match the integrations sub-skill definition. |
 | [Output](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-azure-sql-output) | integrations | 0.78 | Binding reference pages typically include binding-specific configuration tables (e.g., connection, commandText, parameters) and code patterns unique to Azure Functions’ Azure SQL integration, which qualify as product-specific integration details beyond generic knowledge. |
 | [Output](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-cosmosdb-v2-output) | configuration | 0.78 | Azure Functions binding reference for Cosmos DB output normally documents binding properties (e.g., databaseName, containerName/collectionName, createIfNotExists, partitionKey, connection) with exact parameter names, types, and defaults, plus version-specific behavior for the Node.js programming model. This is detailed, product-specific configuration information that fits the configuration sub-skill type. |
 | [Output](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-signalr-service-output) | integrations | 0.78 | Output binding reference with configuration options for targeting users, groups, and managing group membership via binding-specific parameters. |
@@ -209,7 +219,6 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Log
 | [Binding](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-dapr-trigger) | integrations | 0.74 | Page focuses on Dapr input binding triggers and the specific Dapr events and binding configuration used by Azure Functions, matching the integrations pattern with concrete binding parameters. |
 | [Output](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-event-hubs-output) | configuration | 0.74 | Event Hubs output binding docs for Azure Functions normally provide binding configuration tables (e.g., connection, eventHubName, partitionKey) and language-specific attribute/JSON settings with required/optional flags and defaults. This is expert, product-specific configuration knowledge, matching the configuration sub-skill. |
 | [Output](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-service-bus-output) | configuration | 0.74 | Service Bus output binding documentation generally includes binding property tables (e.g., queueName, topicName, connection, entityType) and their valid values and behaviors across languages and Node.js models. These concrete configuration parameters and defaults are expert configuration details, not just conceptual usage. |
-| [Premium plan](https://learn.microsoft.com/en-us/azure/azure-functions/functions-premium-plan) | configuration | 0.74 | Page describes Premium (ElasticPremium/EPx) plan–specific configuration options such as virtual network integration, execution duration (unlimited vs other plans), and other hosting behaviors unique to this SKU. These are product-specific settings and behaviors that go beyond generic knowledge of Azure Functions hosting, fitting the configuration sub-skill. It is not primarily a limits table, troubleshooting guide, or decision matrix, but a detailed description of how this plan is configured and behaves. |
 | [Query input](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-openai-assistantquery-input) | integrations | 0.74 | Binding reference pages for Azure Functions usually define binding names, direction, type, and configuration properties (such as connection, deploymentName, assistantId, input/output types) with allowed values and usage patterns. This page describes the Azure OpenAI assistant query input binding with binding-specific parameters and code patterns, which is product-specific integration knowledge between Azure Functions and Azure OpenAI Assistants. |
 | [Service Invocation](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-dapr-trigger-svc-invoke) | integrations | 0.74 | Describes how Azure Functions is triggered by Dapr service invocation, including trigger configuration and binding parameters unique to this integration. |
 | [Topic](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-dapr-trigger-topic) | integrations | 0.74 | Covers Dapr topic subscription triggers with Azure Functions, including binding configuration and event schema details specific to this integration. |
@@ -217,6 +226,7 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Log
 | [Warmup](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-warmup) | configuration | 0.74 | Warmup trigger reference includes trigger configuration details and host/function settings specific to preloading dependencies on scale-out. |
 | [Input](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-storage-blob-input) | integrations | 0.72 | Blob input binding docs typically include binding configuration properties (e.g., path, connection, dataType) with allowed values and language-specific attributes/annotations, plus examples of how the runtime binds blobs to parameters. These are product-specific integration patterns and configuration parameters for Azure Functions, which qualify as expert knowledge under integrations. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-web-pubsub) | integrations | 0.72 | The bindings page for Azure Web PubSub in Azure Functions typically documents binding directions, trigger/attribute names, binding configuration properties, and parameter schemas that are specific to this integration. These are product-specific SDK/binding parameters and configuration details that go beyond generic knowledge of real-time messaging, fitting the integrations category. |
+| [Premium plan](https://learn.microsoft.com/en-us/azure/azure-functions/functions-premium-plan) | configuration | 0.72 | Page describes Premium (ElasticPremium/EP SKUs) hosting details and configuration options such as virtual network integration, cold-start behavior, and execution duration specifics for Azure Functions. These are product-specific configuration details and plan/SKU behaviors that go beyond generic knowledge, fitting the configuration sub-skill best. |
 | [API Management integration (portal)](https://learn.microsoft.com/en-us/azure/azure-functions/functions-openapi-definition) | integrations | 0.70 | Shows how to integrate Functions with API Management to generate OpenAPI definitions, including configuration of integration and definition generation, which are product-specific integration patterns. |
 | [AZF0001](https://learn.microsoft.com/en-us/azure/azure-functions/errors-diagnostics/sdk-rules/azf0001) | best-practices | 0.70 | Code analysis rule provides a concrete DO/DON'T pattern (avoid async void) with Functions-specific implications, representing product-specific best practice. |
 | [Access Azure SQL with managed identity](https://learn.microsoft.com/en-us/azure/azure-functions/functions-identity-access-azure-sql-with-managed-identity) | security | 0.70 | Tutorial focuses on configuring Azure Functions managed identity with Azure SQL bindings. It includes product-specific security configuration details such as how to enable system-assigned identity on a function app, how to grant it access in Azure SQL (e.g., creating contained users from external providers, assigning roles/permissions), and how to reference the managed identity in SQL bindings/connection settings. These are concrete, service-specific security and identity configuration steps rather than generic concepts. |
@@ -258,7 +268,6 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Log
 | [Memory profiling](https://learn.microsoft.com/en-us/azure/azure-functions/python-memory-profiler-reference) | best-practices | 0.70 | Provides step-by-step use of memory-profiler with Functions, including configuration and usage patterns specific to this environment, which are actionable performance best practices. |
 | [Migrate Consumption plan apps to Flex Consumption](https://learn.microsoft.com/en-us/azure/azure-functions/migration/migrate-plan-consumption-to-flex) | deployment | 0.70 | Migration between Consumption and Flex Consumption plans is a deployment/hosting concern. The article is specifically about moving existing apps between plans, which falls under deployment patterns and migration paths. It likely includes plan-specific requirements and constraints (for example Linux Consumption retirement date and guidance to move), which are product-specific deployment details. |
 | [Migrate version 4.x to 5.x](https://learn.microsoft.com/en-us/azure/azure-functions/migrate-service-bus-version-4-version-5) | decision-making | 0.70 | Migration guide describes breaking changes, configuration differences, and upgrade considerations between extension versions, helping choose and move between versions. |
-| [Monitoring data reference](https://learn.microsoft.com/en-us/azure/azure-functions/monitor-functions-reference) | configuration | 0.70 | Monitoring reference describes specific metrics, log categories, dimensions, and schema used for monitoring Azure Functions, which are product-specific configuration/telemetry details. |
 | [Networking FAQ](https://learn.microsoft.com/en-us/azure/azure-functions/functions-networking-faq) | troubleshooting | 0.70 | FAQ is organized around specific networking symptoms and scenarios (for example, Functions not reaching storage, private endpoint access issues, VNet integration behavior) and provides product-specific causes and resolutions. It maps concrete problems to Azure Functions networking features and required configurations, which is troubleshooting-style expert knowledge rather than generic concepts. |
 | [OpenTelemetry distributed tracing](https://learn.microsoft.com/en-us/azure/azure-functions/monitor-functions-opentelemetry-distributed-tracing) | configuration | 0.70 | Demonstrates configuring OpenTelemetry and Application Insights for Functions, including tracing settings and instrumentation parameters. |
 | [Output](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-storage-blob-output) | integrations | 0.70 | Binding reference pages typically include binding-specific configuration properties, parameter names, and usage patterns (e.g., path syntax, connection setting names, direction, data types) that are unique to Azure Functions Blob output bindings. This is product-specific integration knowledge beyond generic SDK usage, matching the integrations & coding patterns criteria. |

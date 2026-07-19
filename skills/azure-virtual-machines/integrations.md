@@ -17,13 +17,14 @@
 | Use Azure Instance Metadata Service for VM configuration and maintenance info | https://learn.microsoft.com/en-us/azure/virtual-machines/instance-metadata-service |
 | Use Azure CLI commands to manage Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/cli-manage |
 | Find and use Azure Marketplace VM image plans via CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/cli-ps-findimage |
-| Upgrade Azure Disk Encryption version on disks | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/disk-encryption-upgrade |
+| Azure Disk Encryption sample scripts for Linux | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/disk-encryption-sample-scripts |
 | Download Linux VHDs from Azure using CLI and portal | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/download-vhd |
 | Resize Azure Disk Encryption LVM-encrypted Linux disks | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/how-to-resize-encrypted-lvm |
 | Retrieve Azure VM CPU metrics via Monitor REST API | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/metrics-vm-usage-rest |
 | Use Scheduled Events on Linux Azure VMs via Metadata Service | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/scheduled-events |
 | Retrieve Azure VM maintenance notifications using Azure CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/maintenance-notifications-cli |
 | Get Azure VM maintenance notifications with PowerShell | https://learn.microsoft.com/en-us/azure/virtual-machines/maintenance-notifications-powershell |
+| Convert Azure VM disks from SCSI to NVMe | https://learn.microsoft.com/en-us/azure/virtual-machines/migration/sizes/scsi-to-nvme-migration |
 | Query Azure VM availability data using Azure Resource Graph | https://learn.microsoft.com/en-us/azure/virtual-machines/resource-graph-availability |
 | Query Azure VM resources with Azure Resource Graph | https://learn.microsoft.com/en-us/azure/virtual-machines/resource-graph-samples |
 | Configure Azure VM scheduled events with Event Grid | https://learn.microsoft.com/en-us/azure/virtual-machines/scheduled-events-event-grid |
@@ -45,8 +46,6 @@
 | Create Azure VM disk snapshots for backup and debugging | https://learn.microsoft.com/en-us/azure/virtual-machines/snapshot-copy-managed-disk |
 | Author ARM templates for Azure VM managed disks | https://learn.microsoft.com/en-us/azure/virtual-machines/using-managed-disks-template-deployments |
 | Create Azure VM restore points using Azure CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/virtual-machines-create-restore-points-cli |
-| Create and encrypt Windows VM using Azure CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/disk-encryption-cli-quickstart |
-| Create and encrypt Windows VM with PowerShell | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/disk-encryption-powershell-quickstart |
 | Azure Disk Encryption sample scripts for Windows | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/disk-encryption-sample-scripts |
 | Download Windows VHDs from Azure using the portal | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/download-vhd |
 | Configure VM virtual networks using PowerShell | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/ps-common-network-ref |

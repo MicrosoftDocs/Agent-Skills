@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-17'
+generated_at: '2026-07-19'
 category_descriptions:
   integrations: Implementing and migrating push notification integrations (FCM v1,
     APNS, WNS), device/user targeting, templates, localization, and using REST/SDKs
@@ -15,28 +15,27 @@ category_descriptions:
   architecture-patterns: Guidance on designing large-scale, multi-tenant, and geo-distributed
     push notification architectures with Azure Notification Hubs, including patterns,
     best practices, and integration approaches.
+  limits-quotas: Notification Hubs limits, quotas, and throttling behaviors, plus
+    how to create, manage, and understand constraints of scheduled push notifications.
   troubleshooting: Diagnosing and fixing common Notification Hubs issues, including
     delivery failures, dropped notifications, platform-specific errors, and steps
     to trace, test, and resolve send problems.
   best-practices: 'Guidance on designing Notification Hubs apps: registration patterns,
     tags and routing, templates, and implementation FAQs for scalable, targeted push
     notifications.'
-  limits-quotas: Scheduling push notifications in Azure Notification Hubs, including
-    creating, managing, and sending time-based or recurring notifications across platforms
 skill_description: Expert knowledge for Azure Notification Hubs development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, and integrations & coding patterns. Use
-  when integrating FCM/APNS/WNS, configuring PNS creds, targeting devices/tags, scheduling
-  pushes, or scaling multi-tenant hubs, and other Azure Notification Hubs related
-  development tasks. Not for Azure Event Hubs (use azure-event-hubs), Azure Service
-  Bus (use azure-service-bus), Azure Web PubSub (use azure-web-pubsub), Azure Communication
-  Services (use azure-communication-services).
-use_when: Use when integrating FCM/APNS/WNS, configuring PNS creds, targeting devices/tags,
-  scheduling pushes, or scaling multi-tenant hubs, and other Azure Notification Hubs
-  related development tasks.
+  when integrating APNS/FCM/WNS, configuring PNS creds, using REST/SDKs, Private Link,
+  or scheduled pushes, and other Azure Notification Hubs related development tasks.
+  Not for Azure Event Hubs (use azure-event-hubs), Azure Service Bus (use azure-service-bus),
+  Azure Web PubSub (use azure-web-pubsub), Azure SignalR Service (use azure-signalr-service).
+use_when: Use when integrating APNS/FCM/WNS, configuring PNS creds, using REST/SDKs,
+  Private Link, or scheduled pushes, and other Azure Notification Hubs related development
+  tasks.
 confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Service
-  Bus (use azure-service-bus), Azure Web PubSub (use azure-web-pubsub), Azure Communication
-  Services (use azure-communication-services).
+  Bus (use azure-service-bus), Azure Web PubSub (use azure-web-pubsub), Azure SignalR
+  Service (use azure-signalr-service).
 ---
 # Azure Notification Hubs Crawl Report
 
@@ -50,8 +49,8 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Servi
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 67
+- **Updated Pages**: 1
+- **Unchanged**: 66
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-notification-hubs/azure-notification-hubs.csv`
 
@@ -64,12 +63,17 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Servi
 | configuration | 16 | 23.9% |
 | decision-making | 1 | 1.5% |
 | integrations | 24 | 35.8% |
-| limits-quotas | 1 | 1.5% |
+| limits-quotas | 2 | 3.0% |
 | security | 5 | 7.5% |
-| troubleshooting | 2 | 3.0% |
+| troubleshooting | 1 | 1.5% |
 | *(Unclassified)* | 14 | 20.9% |
 
 ## Changes
+
+### Updated Pages
+
+- [FAQ](https://learn.microsoft.com/en-us/azure/notification-hubs/notification-hubs-push-notification-faq)
+  - Updated: 2025-05-02T17:17:00.000Z → 2026-07-15T22:16:00.000Z
 
 ## Classified Pages
 
@@ -88,7 +92,7 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Servi
 | [Configure Windows Push Notification Service](https://learn.microsoft.com/en-us/azure/notification-hubs/configure-windows-push-notification-service) | configuration | 0.70 | WNS setup for Notification Hubs involves specific configuration fields (SID, secret, etc.) that are product-specific. |
 | [Configure a notification hub](https://learn.microsoft.com/en-us/azure/notification-hubs/configure-notification-hub-portal-pns-settings) | configuration | 0.70 | Portal-based setup of PNS credentials per platform (APNS, FCM, etc.) involves specific setting names and required values unique to Notification Hubs. |
 | [Enable resource logs](https://learn.microsoft.com/en-us/azure/notification-hubs/notification-hubs-diagnostic-logs) | configuration | 0.70 | Covers operational/diagnostic logs and how to enable them; likely includes specific log categories and settings names for this service. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/notification-hubs/notification-hubs-push-notification-faq) | troubleshooting | 0.70 | FAQ includes product-specific error scenarios and behaviors (for example, platform-specific push notification delivery issues, registration and tagging behaviors, scaling and throttling nuances) with concrete explanations and remedies that go beyond generic concepts, fitting a symptom→cause→solution troubleshooting pattern for Notification Hubs. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/notification-hubs/notification-hubs-push-notification-faq) | limits-quotas | 0.70 | FAQ pages for Azure Notification Hubs typically include concrete, product-specific details such as maximum registrations per hub, tag limits, broadcast limits, platform-specific constraints, and sometimes timeouts or throughput caps. These are exact numeric limits and behavioral constraints that are not generally known from training data and are needed for capacity planning and design, fitting the limits-quotas sub-skill. |
 | [Initial configuration to receive push notification from Azure Notification Hubs](https://learn.microsoft.com/en-us/azure/notification-hubs/ios-sdk-current) | integrations | 0.70 | Details SDK version-specific APIs and patterns for integrating iOS apps with Notification Hubs, which are product-specific integration details. |
 | [Security model](https://learn.microsoft.com/en-us/azure/notification-hubs/notification-hubs-push-notification-security) | security | 0.70 | Describes SAS keys, access levels, and security patterns specific to Notification Hubs, including how to securely access the service. |
 | [Send cross-platform notifications](https://learn.microsoft.com/en-us/azure/notification-hubs/notification-hubs-aspnet-cross-platform-notification) | integrations | 0.70 | Demonstrates template-based cross-platform notifications from ASP.NET backend, including concrete template and API usage patterns. |

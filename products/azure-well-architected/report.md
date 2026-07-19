@@ -46,7 +46,7 @@ use_when: Use when designing AI, HPC, SaaS, AVD, or mission-critical Azure workl
 - **New Pages**: 0
 - **Updated Pages**: 0
 - **Unchanged**: 205
-- **Deleted Pages**: 12
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-well-architected/azure-well-architected.csv`
 
 ## Classification Statistics
@@ -63,21 +63,6 @@ use_when: Use when designing AI, HPC, SaaS, AVD, or mission-critical Azure workl
 | *(Unclassified)* | 31 | 15.1% |
 
 ## Changes
-
-### Deleted Pages
-
-- ~~Azure Virtual Desktop~~ (https://learn.microsoft.com/en-us/azure/well-architected/azure-virtual-desktop/)
-- ~~Application delivery~~ (https://learn.microsoft.com/en-us/azure/well-architected/azure-virtual-desktop/application-delivery)
-- ~~Assessment~~ (https://learn.microsoft.com/en-us/azure/well-architected/azure-virtual-desktop/assessment)
-- ~~Business continuity~~ (https://learn.microsoft.com/en-us/azure/well-architected/azure-virtual-desktop/business-continuity)
-- ~~Design principles~~ (https://learn.microsoft.com/en-us/azure/well-architected/azure-virtual-desktop/design-principles)
-- ~~Azure landing zone integration~~ (https://learn.microsoft.com/en-us/azure/well-architected/azure-virtual-desktop/landing-zone-integration)
-- ~~Monitoring~~ (https://learn.microsoft.com/en-us/azure/well-architected/azure-virtual-desktop/monitoring)
-- ~~Networking and connectivity~~ (https://learn.microsoft.com/en-us/azure/well-architected/azure-virtual-desktop/networking)
-- ~~Operational procedures~~ (https://learn.microsoft.com/en-us/azure/well-architected/azure-virtual-desktop/operations)
-- ~~Get started~~ (https://learn.microsoft.com/en-us/azure/well-architected/azure-virtual-desktop/overview)
-- ~~Security and identity and access management (IAM)~~ (https://learn.microsoft.com/en-us/azure/well-architected/azure-virtual-desktop/security)
-- ~~Storage~~ (https://learn.microsoft.com/en-us/azure/well-architected/azure-virtual-desktop/storage)
 
 ## Classified Pages
 

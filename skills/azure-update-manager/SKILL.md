@@ -1,9 +1,9 @@
 ---
 name: azure-update-manager
-description: Expert knowledge for Azure Update Manager development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when onboarding VMs/Arc servers, configuring patch schedules/ESU, using Change Tracking, or calling Update Manager APIs, and other Azure Update Manager related development tasks. Not for Azure Automation (use azure-automation), Azure Policy (use azure-policy), Azure Monitor (use azure-monitor).
+description: Expert knowledge for Azure Update Manager development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when onboarding VMs/Arc servers, configuring Automanage profiles, guest patching, DCRs/workspaces, or Update Manager APIs, and other Azure Update Manager related development tasks. Not for Azure Automation (use azure-automation), Azure Monitor (use azure-monitor), Azure Policy (use azure-policy), Azure Osconfig (use azure-osconfig).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-12"
+  generated_at: "2026-07-19"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Update Manager Skill
@@ -27,11 +27,11 @@ This skill requires **network access** to fetch documentation content:
 | Troubleshooting | L36-L42 | Diagnosing and fixing onboarding failures, extension/agent issues, and common errors when using Azure Update Manager, Automanage, and Change Tracking. |
 | Best Practices | L43-L53 | Best practices for configuring Automanage and guest patching on Windows/Linux/Arc VMs, handling SQL Server and Ubuntu/Ubuntu Pro updates, and managing SMB over QUIC in Update Manager. |
 | Decision Making | L54-L59 | Planning patch strategies across subscriptions and guidance for migrating patch management from Configuration Manager to Azure Update Manager |
-| Limits & Quotas | L60-L68 | OS, region, image, and workload support limits for Update Manager, including supported update sources/types, change tracking matrix, and unsupported scenarios. |
-| Security | L69-L74 | Configuring disk encryption for Automanaged VMs and setting up RBAC roles/permissions to securely manage and control access to Azure Update Manager. |
-| Configuration | L75-L94 | Configuring Update Manager behavior: update schedules, scopes, alerts, ESU, Automanage profiles, Change Tracking, Resource Graph queries, and policy-based or cross-subscription patching. |
-| Integrations & Coding Patterns | L95-L107 | Using SDKs (Go/Java/JS/Python) and REST APIs to assign Automanage profiles, manage VM/Arc server updates, and implement pre/post maintenance with Functions, webhooks, and runbooks |
-| Deployment | L108-L120 | Deploying and managing Automanage/Update Manager at scale: onboarding VMs and Arc servers, moving/repairing configs across regions/tenants, policies, extension versions, and supported OS/features. |
+| Limits & Quotas | L60-L67 | OS, region, image, and workload support limits for Update Manager, including supported update sources/types, change tracking matrix, and unsupported scenarios. |
+| Security | L68-L73 | Configuring disk encryption for Automanaged VMs and setting up RBAC roles/permissions to securely manage and control access to Azure Update Manager. |
+| Configuration | L74-L93 | Configuring Update Manager: Automanage profiles, DCRs/workspaces, Windows Update/ESU setup, scopes/schedules, alerts/events, policy-based assessments, and reporting via workbooks/Resource Graph. |
+| Integrations & Coding Patterns | L94-L106 | Using SDKs (Go/Java/JS/Python) and REST APIs to assign Automanage profiles, manage VM/Arc server updates, and implement pre/post maintenance with Functions, webhooks, and runbooks |
+| Deployment | L107-L120 | Deploying and managing Automanage/Update Manager at scale: onboarding VMs/Arc servers, upgrading profiles, cross-region moves, tenant repairs, Azure Policy deployment, and supported OS/update sources. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -62,7 +62,6 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Understand Change Tracking support matrix and limitations | https://learn.microsoft.com/en-us/azure/azure-change-tracking-inventory/change-tracking-inventory-support-matrix |
 | Manage customized images in Azure Update Manager | https://learn.microsoft.com/en-us/azure/update-manager/manage-updates-customized-images |
-| Understand supported update sources and types | https://learn.microsoft.com/en-us/azure/update-manager/support-matrix |
 | Check supported Azure regions for Update Manager | https://learn.microsoft.com/en-us/azure/update-manager/supported-regions |
 | Identify unsupported workloads in Azure Update Manager | https://learn.microsoft.com/en-us/azure/update-manager/unsupported-workloads |
 
@@ -84,7 +83,7 @@ This skill requires **network access** to fetch documentation content:
 | Enable and configure alerts in Azure Update Manager | https://learn.microsoft.com/en-us/azure/update-manager/manage-alerts |
 | Configure and manage dynamic scopes for patching | https://learn.microsoft.com/en-us/azure/update-manager/manage-dynamic-scoping |
 | Manage existing pre and post maintenance events | https://learn.microsoft.com/en-us/azure/update-manager/manage-pre-post-events |
-| Manage update configuration settings in Update Manager | https://learn.microsoft.com/en-us/azure/update-manager/manage-update-settings |
+| Configure update settings for Azure Update Manager machines | https://learn.microsoft.com/en-us/azure/update-manager/manage-update-settings |
 | Create custom Update Manager reports with workbooks | https://learn.microsoft.com/en-us/azure/update-manager/manage-workbooks |
 | Enable periodic assessment via Azure Policy | https://learn.microsoft.com/en-us/azure/update-manager/periodic-assessment-at-scale |
 | Create pre and post maintenance events in Update Manager | https://learn.microsoft.com/en-us/azure/update-manager/pre-post-events-schedule-maintenance-configuration |
@@ -117,4 +116,5 @@ This skill requires **network access** to fetch documentation content:
 | Enable Automanage for VMs using Azure Policy | https://learn.microsoft.com/en-us/azure/automanage/virtual-machines-policy-enable |
 | Deploy Change Tracking at scale using Azure Policy | https://learn.microsoft.com/en-us/azure/azure-change-tracking-inventory/enable-change-tracking-at-scale-policy |
 | Track Arc-enabled VM extension releases and issues for Update Manager | https://learn.microsoft.com/en-us/azure/update-manager/overview-arc-enabled-vm-extensions |
+| Supported update sources and types in Azure Update Manager | https://learn.microsoft.com/en-us/azure/update-manager/support-matrix |
 | Azure Update Manager OS and feature support matrix | https://learn.microsoft.com/en-us/azure/update-manager/support-matrix-updates |

@@ -7,7 +7,6 @@
 ### Deployment
 | Topic | URL |
 |-------|-----|
-| Use Azure Policy to deploy Azure Monitor Agent at scale | https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-policy |
 | Check Azure Monitor Agent supported operating systems | https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-supported-operating-systems |
 | Deploy Azure Monitor and Log Analytics agents with ARM templates | https://learn.microsoft.com/en-us/azure/azure-monitor/agents/resource-manager-agent |
 | Migrate Application Insights smart detection to alerts | https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-smart-detections-migration |

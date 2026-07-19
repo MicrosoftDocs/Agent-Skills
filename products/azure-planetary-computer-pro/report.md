@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-21'
+generated_at: '2026-07-19'
 category_descriptions:
   integrations: 'Using GeoCatalog/STAC with code and tools: ingest and bulk-load data,
     build apps, create collections/items, and integrate with QGIS, ArcGIS Pro, Azure
@@ -10,8 +10,8 @@ category_descriptions:
   decision-making: Guidance on selecting how to access Planetary Computer Pro data,
     including connection options, integrations with tools/services, and choosing the
     best method for your workflow.
-  configuration: 'Configuring Planetary Computer Pro data collections: visualization/render
-    settings, colormaps, tiles/mosaics, queryable filters, ingestion sources/credentials,
+  configuration: 'Configuring Planetary Computer Pro collections: visualization, render
+    and tile settings, colormaps, mosaics, queryables, ingestion sources/credentials,
     and US Gov cloud endpoints.'
   deployment: Deploying and safely deleting Planetary Computer GeoCatalog resources,
     including deployment steps, best practices, and cleanup to avoid data loss or
@@ -25,13 +25,13 @@ category_descriptions:
 skill_description: Expert knowledge for Microsoft Planetary Computer Pro development
   including troubleshooting, decision making, limits & quotas, security, configuration,
   integrations & coding patterns, and deployment. Use when using GeoCatalog/STAC APIs,
-  QGIS/ArcGIS Pro integrations, Entra ID/RBAC access, tiles/mosaics, or ingestion,
-  and other Microsoft Planetary Computer Pro related development tasks. Not for Azure
-  Maps (use azure-maps), Azure Open Datasets (use azure-open-datasets), Azure Data
-  Explorer (use azure-data-explorer).
-use_when: Use when using GeoCatalog/STAC APIs, QGIS/ArcGIS Pro integrations, Entra
-  ID/RBAC access, tiles/mosaics, or ingestion, and other Microsoft Planetary Computer
-  Pro related development tasks.
+  configuring collections/tiles, securing access, integrating QGIS/ArcGIS, or troubleshooting
+  ingestion, and other Microsoft Planetary Computer Pro related development tasks.
+  Not for Azure Maps (use azure-maps), Azure Open Datasets (use azure-open-datasets),
+  Azure Data Explorer (use azure-data-explorer).
+use_when: Use when using GeoCatalog/STAC APIs, configuring collections/tiles, securing
+  access, integrating QGIS/ArcGIS, or troubleshooting ingestion, and other Microsoft
+  Planetary Computer Pro related development tasks.
 confusable_not_for: Not for Azure Maps (use azure-maps), Azure Open Datasets (use
   azure-open-datasets), Azure Data Explorer (use azure-data-explorer).
 ---
@@ -47,8 +47,8 @@ confusable_not_for: Not for Azure Maps (use azure-maps), Azure Open Datasets (us
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 46
+- **Updated Pages**: 2
+- **Unchanged**: 44
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-planetary-computer-pro/azure-planetary-computer-pro.csv`
 
@@ -67,6 +67,13 @@ confusable_not_for: Not for Azure Maps (use azure-maps), Azure Open Datasets (us
 
 ## Changes
 
+### Updated Pages
+
+- [Get Started with data cubes](https://learn.microsoft.com/en-us/azure/planetary-computer/data-cube-quickstart)
+  - Updated: 2026-06-19T22:18:00.000Z → 2026-07-16T22:11:00.000Z
+- [Render configuration](https://learn.microsoft.com/en-us/azure/planetary-computer/render-configuration)
+  - Updated: 2026-05-27T08:00:00.000Z → 2026-07-16T22:11:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
@@ -81,6 +88,7 @@ confusable_not_for: Not for Azure Maps (use azure-maps), Azure Open Datasets (us
 | [Mosaic configuration](https://learn.microsoft.com/en-us/azure/planetary-computer/mosaic-configurations-for-collections) | configuration | 0.75 | Explains mosaic configuration JSON for STAC collections, including search criteria like date ranges and cloud cover thresholds—product-specific config. |
 | [Set up an ingestion source using managed identity through the UI](https://learn.microsoft.com/en-us/azure/planetary-computer/set-up-ingestion-credentials-managed-identity) | security | 0.75 | Step-by-step guide to grant GeoCatalog access to external data via managed identities; includes security/auth configuration details and required steps. |
 | [Supported color maps](https://learn.microsoft.com/en-us/azure/planetary-computer/supported-colormaps) | configuration | 0.75 | Lists the complete set of named colormaps supported by Explorer and how to reference them in render configurations—product-specific configuration values. |
+| [Render configuration](https://learn.microsoft.com/en-us/azure/planetary-computer/render-configuration) | configuration | 0.74 | Page is specifically about defining render configurations for STAC collections and advanced options in the Planetary Computer Pro data explorer and Tiler API. This is product-specific configuration knowledge (render configuration objects, how assets are combined/processed/styled) that goes beyond generic concepts and is unlikely to be fully known from training. It focuses on concrete configuration of visualization behavior rather than general concepts, fitting the configuration sub-skill. |
 | [Using managed identities with GeoCatalog resource](https://learn.microsoft.com/en-us/azure/planetary-computer/assign-managed-identity-geocatalog-resource) | security | 0.72 | The article describes how to add, update, or remove a user-assigned managed identity for GeoCatalog resources via Azure CLI/SDKs. This implies specific identity configuration steps, parameter names, and resource bindings that are product-specific security/identity configuration details rather than generic managed identity concepts. |
 | [Authoring and Configuring a Partner Application](https://learn.microsoft.com/en-us/azure/planetary-computer/configure-cross-tenant-application) | security | 0.70 | Quickstart for configuring a multitenant Azure application to read/write GeoCatalogs will necessarily include product-specific AAD app settings, permission scopes, and possibly role assignments unique to Planetary Computer Pro. This is concrete security/identity configuration rather than generic auth theory. |
 | [Azure Batch and Microsoft Planetary Computer Pro](https://learn.microsoft.com/en-us/azure/planetary-computer/azure-batch) | integrations | 0.70 | Describes using a GeoCatalog resource in Azure Batch with a user-assigned managed identity and configuring permissions. This is a product-specific integration pattern between Planetary Computer Pro and Azure Batch, likely including specific configuration parameters and identity wiring details. |
@@ -89,7 +97,6 @@ confusable_not_for: Not for Azure Maps (use azure-maps), Azure Open Datasets (us
 | [Ingestion sources](https://learn.microsoft.com/en-us/azure/planetary-computer/ingestion-source) | configuration | 0.70 | Explains ingestion source concept including location, URI structure, and authentication methods—product-specific configuration parameters for ingestion. |
 | [Partner Application Overview](https://learn.microsoft.com/en-us/azure/planetary-computer/working-with-partner-applications) | integrations | 0.70 | Describes cross-tenant application integration scenarios and patterns for partner apps to read/write GeoCatalog data—product-specific integration model. |
 | [Queryables](https://learn.microsoft.com/en-us/azure/planetary-computer/queryables-for-explorer-custom-search-filter) | configuration | 0.70 | Focuses on configuring queryables for Explorer custom search; likely includes field names, types, and configuration structure. |
-| [Render configuration](https://learn.microsoft.com/en-us/azure/planetary-computer/render-configuration) | configuration | 0.70 | Covers defining render configurations for STAC collections and advanced options for the Tiler API. Likely includes specific configuration fields, allowed values, and product-specific behavior for rendering, which are configuration details. |
 | [Set up ingestion source using SAS tokens](https://learn.microsoft.com/en-us/azure/planetary-computer/set-up-ingestion-credentials-sas-tokens) | configuration | 0.70 | Guide for setting up ingestion credentials using SAS tokens. Likely details specific configuration fields, required permissions, and ingestion source settings for Planetary Computer Pro, which are product-specific configuration details. |
 | [Tile settings](https://learn.microsoft.com/en-us/azure/planetary-computer/tile-settings) | configuration | 0.70 | Describes tile settings JSON (default location, min zoom) and where to modify them—product-specific configuration parameters. |
 | [US Government cloud support](https://learn.microsoft.com/en-us/azure/planetary-computer/us-government-cloud-support) | configuration | 0.70 | Described as a comprehensive reference for endpoint and configuration differences, including endpoint mappings, authentication URLs, and API scopes—product-specific configuration details. |
@@ -117,8 +124,8 @@ confusable_not_for: Not for Azure Maps (use azure-maps), Azure Open Datasets (us
 | [Create a STAC collection (Web Interface)](https://learn.microsoft.com/en-us/azure/planetary-computer/create-collection-web-interface) | 0.25 | Quickstart for creating collections via web UI; likely procedural without deep configuration reference. |
 | [Ingest data using the web interface](https://learn.microsoft.com/en-us/azure/planetary-computer/ingest-via-web-interface) | 0.25 | Quickstart for ingesting data via web interface; likely UI-driven steps without detailed config references. |
 | [Data cube overview](https://learn.microsoft.com/en-us/azure/planetary-computer/data-cube-overview) | 0.20 | Overview of data cube concepts and enrichment; described as explaining concepts and enabling/disabling enrichment. This is primarily conceptual and high-level feature explanation without clear indication of detailed configuration tables, limits, or error mappings. |
-| [Get Started with data cubes](https://learn.microsoft.com/en-us/azure/planetary-computer/data-cube-quickstart) | 0.20 | Quickstart for working with data cubes in Planetary Computer Pro; appears to be a step-by-step usage guide without detailed limits, configuration tables, error-code mappings, or decision matrices that meet the expert-knowledge criteria. |
 | [Get started with Microsoft Planetary Computer Pro](https://learn.microsoft.com/en-us/azure/planetary-computer/get-started-planetary-computer) | 0.20 | Getting started tutorial; likely step-by-step but not a reference of configs, limits, or error codes. |
 | [What is Microsoft Planetary Computer Pro?](https://learn.microsoft.com/en-us/azure/planetary-computer/microsoft-planetary-computer-pro-overview) | 0.20 | High-level product overview of Planetary Computer Pro and GeoCatalog; no detailed limits, configs, or error mappings. |
 | [STAC overview](https://learn.microsoft.com/en-us/azure/planetary-computer/stac-overview) | 0.10 | Conceptual overview of STAC and how Planetary Computer Pro uses it; no indication of numeric limits, configuration parameter tables, or error-code-based troubleshooting. |
 | [What's new in Microsoft Planetary Computer Pro](https://learn.microsoft.com/en-us/azure/planetary-computer/whats-new) | 0.10 | What's-new/update page; likely lists new features and changes but not structured limits, configuration tables, or troubleshooting mappings. Primarily informational/marketing-style updates rather than expert reference data. |
+| [Get Started with data cubes](https://learn.microsoft.com/en-us/azure/planetary-computer/data-cube-quickstart) | - | Quickstart for working with data cubes appears to be a tutorial-style guide without explicit limits, configuration tables, error-code-based troubleshooting, or other structured expert reference content as defined by the sub-skill types. |

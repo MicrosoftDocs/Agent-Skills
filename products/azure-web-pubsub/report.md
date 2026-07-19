@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-21'
+generated_at: '2026-07-19'
 category_descriptions:
   security: 'Securing Web PubSub: auth with Entra ID/managed identity/keys, client
     certs, network & private endpoints, firewalls, policies, key rotation, and per-client/group
@@ -43,14 +43,14 @@ confusable_not_for: Not for Azure SignalR Service (use azure-signalr-service), A
 
 ## Summary
 
-- **Total Pages**: 111
-- **Fetched**: 111
+- **Total Pages**: 114
+- **Fetched**: 114
 - **Fetch Failed**: 0
 - **Classified**: 80
-- **Unclassified**: 31
+- **Unclassified**: 34
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 3
 - **Updated Pages**: 0
 - **Unchanged**: 111
 - **Deleted Pages**: 0
@@ -60,18 +60,24 @@ confusable_not_for: Not for Azure SignalR Service (use azure-signalr-service), A
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 3 | 2.7% |
+| architecture-patterns | 3 | 2.6% |
 | best-practices | 1 | 0.9% |
-| configuration | 12 | 10.8% |
+| configuration | 12 | 10.5% |
 | decision-making | 1 | 0.9% |
-| deployment | 4 | 3.6% |
-| integrations | 25 | 22.5% |
+| deployment | 4 | 3.5% |
+| integrations | 25 | 21.9% |
 | limits-quotas | 2 | 1.8% |
-| security | 26 | 23.4% |
-| troubleshooting | 6 | 5.4% |
-| *(Unclassified)* | 31 | 27.9% |
+| security | 26 | 22.8% |
+| troubleshooting | 6 | 5.3% |
+| *(Unclassified)* | 34 | 29.8% |
 
 ## Changes
+
+### New Pages
+
+- [Overview](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/chat-hub-overview)
+- [Quickstart](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/chat-hub-quickstart)
+- [FAQ](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/chat-hub-faq)
 
 ## Classified Pages
 
@@ -175,6 +181,8 @@ confusable_not_for: Not for Azure SignalR Service (use azure-signalr-service), A
 | [Azure IoT Hub](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/tutorial-serverless-iot) | 0.30 | IoT visualization tutorial; primarily a guided example, not a reference of limits, configs, or troubleshooting mappings. |
 | [Client protocol overview](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/concept-client-protocols) | 0.30 | Overview of WebSocket client protocols; appears conceptual without detailed parameter tables, limits, or troubleshooting content. |
 | [Client streaming with a service-supported subprotocol](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/tutorial-subprotocol) | 0.30 | Subprotocol tutorial; likely shows example usage but not organized as config tables or best-practice guidance with quantified impact. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/chat-hub-faq) | 0.30 | FAQ about how the chat hub works and when to use it; description suggests conceptual Q&A and usage guidance, but no clear indication of numeric limits, configuration parameter tables, or error-code-based troubleshooting content. |
+| [Quickstart](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/chat-hub-quickstart) | 0.30 | Quickstart for building a simple chat flow; likely step-by-step tutorial showing basic usage rather than detailed configuration matrices, limits, or troubleshooting mappings. Does not clearly indicate product-specific expert details beyond standard tutorial content. |
 | [Service internals](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/concept-service-internals) | 0.30 | Page appears to be a conceptual/architectural overview of Azure Web PubSub internals (connections, data flow, architecture) without clear evidence of numeric limits, configuration tables, error-code-based troubleshooting, or other product-specific expert details as defined by the sub-skill types. |
 | [Static Web Apps](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/tutorial-serverless-static-web-app) | 0.30 | Chat app tutorial with Static Web Apps; focuses on example implementation rather than detailed product-specific configuration references. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/socketio-overview) | 0.25 | High-level overview of Socket.IO on Azure; mostly conceptual and marketing-style description of managed support. |
@@ -184,6 +192,7 @@ confusable_not_for: Not for Azure SignalR Service (use azure-signalr-service), A
 | [Create a resource](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-develop-create-instance) | 0.20 | Quickstart for creating a resource via portal/CLI/Bicep; mostly step-by-step, not configuration reference or limits. |
 | [Develop with Visual Studio Code](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/tutorial-develop-with-visual-studio-code) | 0.20 | VS Code extension tutorial; mostly tooling workflow, not detailed configuration or troubleshooting reference. |
 | [Event notifications from clients](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/quickstarts-event-notifications-from-clients) | 0.20 | Quickstart for handling events; likely shows basic wiring of event handlers without deep troubleshooting or config tables. |
+| [Overview](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/chat-hub-overview) | 0.20 | Overview of Azure Web PubSub chat hub; description indicates conceptual/marketing-style explanation of what the chat hub is and its high-level benefits, without evidence of numeric limits, configuration tables, error codes, or detailed patterns. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/overview-mqtt) | 0.20 | MQTT support overview; conceptual description of scenarios and benefits without detailed configuration tables or limits. |
 | [PubSub among clients](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/quickstarts-pubsub-among-clients) | 0.20 | Quickstart showing basic pub/sub usage; tutorial-style without configuration matrices or quotas. |
 | [Publish and subscribe messages](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/tutorial-pub-sub-messages) | 0.20 | Tutorial combining WebSocket API and SDK; step-by-step app build, not configuration or limits reference. |

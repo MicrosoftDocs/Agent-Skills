@@ -1,9 +1,9 @@
 ---
 name: azure-event-hubs
-description: Expert knowledge for Azure Event Hubs development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Kafka clients/Streams, .NET SDK, geo-replication/DR, app groups throttling, or Event Hubs emulator, and other Azure Event Hubs related development tasks. Not for Azure Service Bus (use azure-service-bus), Azure Event Grid (use azure-event-grid), Azure Notification Hubs (use azure-notification-hubs), Azure Stream Analytics (use azure-stream-analytics).
+description: Expert knowledge for Azure Event Hubs development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Kafka-compatible clients, .NET SDKs, Flink/Spark, geo-replication/DR, or Avro Capture with Event Hubs, and other Azure Event Hubs related development tasks. Not for Azure Service Bus (use azure-service-bus), Azure Notification Hubs (use azure-notification-hubs), Azure Event Grid (use azure-event-grid), Azure Stream Analytics (use azure-stream-analytics).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-12"
+  generated_at: "2026-07-19"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Event Hubs Skill
@@ -30,7 +30,7 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L64-L70 | Patterns and guidance for Event Hubs reliability: availability/consistency design, geo-disaster recovery, and building/operating replication tasks (often with Azure Functions). |
 | Limits & Quotas | L71-L77 | Event Hubs capacity, throughput, and entity limits; quota rules and enforcement; and using application groups to govern and throttle client access and usage. |
 | Security | L78-L105 | Securing Event Hubs: auth (Entra ID, SAS, RBAC, managed identity), encryption and CMKs, network isolation (VNet, NSG, Private Link, NSP), TLS settings, and compliance/governance via Azure Policy. |
-| Configuration | L106-L119 | Configuring Event Hubs behavior: partitions, retention, geo-DR, replication, processing units, metrics/logs, app groups, log compaction, and Avro capture schema. |
+| Configuration | L106-L119 | Configuring Event Hubs behavior: partitions, retention, geo-DR, scaling, replication, Avro capture, monitoring/metrics, app groups, and log compaction for performance and governance. |
 | Integrations & Coding Patterns | L120-L137 | Patterns and code for integrating Event Hubs with .NET, Kafka (clients, Streams, Connect, Debezium), Flink, Spark, Akka, schema/JSON registry, and adding metadata or managing hubs programmatically |
 | Deployment | L138-L144 | Guides for deploying Event Hubs with Kafka mirroring (MirrorMaker 1/2), setting up geo-replication, and running/local-testing Event Hubs apps using the emulator. |
 
@@ -113,7 +113,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure code-free Event Hubs replication tasks | https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-federation-configuration |
 | Understand and use Event Hubs captured Avro schema | https://learn.microsoft.com/en-us/azure/event-hubs/explore-captured-avro-files |
 | Configure Azure Monitor metrics and alerts for Event Hubs | https://learn.microsoft.com/en-us/azure/event-hubs/monitor-event-hubs |
-| Reference for Event Hubs metrics, logs, and diagnostic settings | https://learn.microsoft.com/en-us/azure/event-hubs/monitor-event-hubs-reference |
+| Reference monitoring metrics and logs for Azure Event Hubs | https://learn.microsoft.com/en-us/azure/event-hubs/monitor-event-hubs-reference |
 | Configure Event Hubs application groups for resource governance | https://learn.microsoft.com/en-us/azure/event-hubs/resource-governance-with-app-groups |
 | Configure and use log compaction in Azure Event Hubs | https://learn.microsoft.com/en-us/azure/event-hubs/use-log-compaction |
 

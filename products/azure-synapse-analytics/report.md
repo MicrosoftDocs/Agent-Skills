@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-12'
+generated_at: '2026-07-19'
 category_descriptions:
   security: 'Securing Synapse workspaces end-to-end: auth and RBAC, network and private
     endpoints, firewall and data exfiltration, encryption/TDE, policies, managed identities,
@@ -13,9 +13,9 @@ category_descriptions:
   best-practices: Best practices for Synapse performance, SQL/T-SQL patterns, Spark
     optimization, indexing/statistics, data loading, and migrating/modernizing from
     Netezza, Oracle, and Teradata.
-  decision-making: Guidance for choosing Synapse components, migration tools, performance
-    tiers, and cost models, plus planning upgrades, Spark lifecycles, and SQL pool
-    resource and distribution strategies.
+  decision-making: Guidance for choosing Synapse components, sizing and cost models,
+    and planning/migrating data warehouses (Netezza, Oracle, Teradata, SQL DW) and
+    Spark runtimes for optimal architectures.
   architecture-patterns: Architecture and design guidance for Synapse workspaces,
     SQL/serverless/Spark pools, data warehouse migrations, table/distribution/partition
     strategies, ELT/PolyBase loading, and workload management.
@@ -31,17 +31,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Synapse Analytics development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when designing Synapse workspaces, SQL/Spark pools, ELT/PolyBase loads, Synapse
-  Link, or CI/CD deployments, and other Azure Synapse Analytics related development
-  tasks. Not for Azure Data Factory (use azure-data-factory), Azure Databricks (use
-  azure-databricks), Azure HDInsight (use azure-hdinsight), Azure Stream Analytics
-  (use azure-stream-analytics).
-use_when: Use when designing Synapse workspaces, SQL/Spark pools, ELT/PolyBase loads,
-  Synapse Link, or CI/CD deployments, and other Azure Synapse Analytics related development
+  Use when designing Synapse workspaces, SQL/Spark pools, PolyBase ELT, Synapse Link,
+  or Purview/ML integrations, and other Azure Synapse Analytics related development
+  tasks. Not for Azure Data Factory (use azure-data-factory), Azure Data Explorer
+  (use azure-data-explorer), Azure Databricks (use azure-databricks), Azure HDInsight
+  (use azure-hdinsight).
+use_when: Use when designing Synapse workspaces, SQL/Spark pools, PolyBase ELT, Synapse
+  Link, or Purview/ML integrations, and other Azure Synapse Analytics related development
   tasks.
-confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure Databricks
-  (use azure-databricks), Azure HDInsight (use azure-hdinsight), Azure Stream Analytics
-  (use azure-stream-analytics).
+confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure Data
+  Explorer (use azure-data-explorer), Azure Databricks (use azure-databricks), Azure
+  HDInsight (use azure-hdinsight).
 ---
 # Azure Synapse Analytics Crawl Report
 
@@ -50,8 +50,8 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure D
 - **Total Pages**: 450
 - **Fetched**: 450
 - **Fetch Failed**: 0
-- **Classified**: 277
-- **Unclassified**: 173
+- **Classified**: 278
+- **Unclassified**: 172
 
 ### Incremental Update
 - **New Pages**: 0
@@ -67,20 +67,20 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure D
 | architecture-patterns | 16 | 3.6% |
 | best-practices | 58 | 12.9% |
 | configuration | 45 | 10.0% |
-| decision-making | 18 | 4.0% |
+| decision-making | 19 | 4.2% |
 | deployment | 5 | 1.1% |
 | integrations | 46 | 10.2% |
 | limits-quotas | 7 | 1.6% |
 | security | 57 | 12.7% |
 | troubleshooting | 25 | 5.6% |
-| *(Unclassified)* | 173 | 38.4% |
+| *(Unclassified)* | 172 | 38.2% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Monitoring data reference](https://learn.microsoft.com/en-us/azure/synapse-analytics/monitor-synapse-analytics-reference)
-  - Updated: 2024-09-11T18:38:00.000Z → 2025-09-15T22:11:00.000Z
+- [Azure Synapse Apache Spark 3.4 runtime (unsupported)](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-34-runtime)
+  - Updated: 2026-05-27T16:50:00.000Z → 2026-07-13T22:21:00.000Z
 
 ## Classified Pages
 
@@ -289,6 +289,7 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure D
 | [Work with Delta Lake](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-delta-lake-overview) | integrations | 0.70 | Shows concrete code snippets and patterns for reading/writing Delta tables in Synapse Spark; integration-focused with product-specific APIs and behaviors. |
 | [Workload classification](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-workload-classification) | configuration | 0.70 | Explains classification rules, parameters, and configuration options for mapping requests to workload groups and importance levels. |
 | [Workload isolation](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-workload-isolation) | configuration | 0.70 | Provides concrete configuration options and rules for workload groups to isolate and contain resources in Synapse dedicated SQL pool. |
+| [Azure Synapse Apache Spark 3.4 runtime (unsupported)](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-34-runtime) | decision-making | 0.68 | Page contains product- and version-specific lifecycle details (end-of-support date, phased disablement of Spark 3.4 jobs, and associated operational/security implications) that guide when and why to move off this runtime. These EOS timelines and deprecation behaviors are expert knowledge not reliably known from training and are used for runtime/tier selection and migration decisions. |
 | [Conditional Access](https://learn.microsoft.com/en-us/azure/synapse-analytics/security/workspace-conditional-access) | security | 0.68 | Shows how Synapse integrates with Entra Conditional Access; contains product-specific scope and configuration details. |
 | [Create DNS alias with PowerShell or Azure CLI](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/dns-alias-powershell-create) | integrations | 0.68 | The page provides concrete Azure PowerShell Az and Azure CLI scripts and cmdlets for managing DNS aliases for Azure Synapse dedicated SQL pools. It includes product-specific command names, parameters, and usage patterns that go beyond generic knowledge of DNS or scripting, fitting the integrations & coding patterns category best. |
 | [Multifactor authentication](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/mfa-authentication) | security | 0.68 | Page is about using Microsoft Entra multifactor authentication with Synapse SQL from SSMS, which typically includes product-specific authentication modes, connection options, and possibly required permissions or configuration flags. These are concrete security configuration details (e.g., specific auth type selections in SSMS, Entra auth options) that qualify as expert, product-specific security knowledge rather than generic concepts. |
@@ -446,7 +447,6 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure D
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/synapse-analytics/quickstart-create-workspace-cli) | 0.30 | CLI quickstart; mostly commands to create workspace, not a comprehensive config/limits reference. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/create-data-warehouse-azure-cli) | 0.30 | Quickstart for creating a SQL pool via Azure CLI; mostly step-by-step commands without broader configuration matrices or limits. |
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/synapse-analytics/quickstart-create-workspace-powershell) | 0.30 | PowerShell quickstart; procedural creation steps, not detailed configuration options or constraints. |
-| [Azure Synapse Apache Spark 3.4 runtime (unsupported)](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-34-runtime) | 0.30 | Page primarily announces deprecation/EOS timeline for the Azure Synapse Runtime for Apache Spark 3.4 and mentions versions (Spark 3.4.1, Python 3.10, Delta Lake 2.4). It does not expose detailed limits, configuration tables, error codes, or other product-specific expert guidance as defined by the sub-skill types. |
 | [Big data analytics with Apache Spark pool](https://learn.microsoft.com/en-us/azure/synapse-analytics/guidance/proof-of-concept-playbook-spark-pool) | 0.30 | High-level POC methodology for Spark pool; focused on project approach, not detailed product-specific settings or limits. |
 | [Big data analytics with Data Explorer pool](https://learn.microsoft.com/en-us/azure/synapse-analytics/guidance/proof-of-concept-playbook-data-explorer-pool) | 0.30 | High-level POC methodology for Data Explorer pool; no indication of numeric thresholds, config tables, or error mappings. |
 | [Clone a lake database](https://learn.microsoft.com/en-us/azure/synapse-analytics/database-designer/clone-lake-database) | 0.30 | Tutorial for cloning a lake database; focuses on how-to steps rather than limits, configuration matrices, or deep troubleshooting. |

@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-07-12'
+generated_at: '2026-07-19'
 category_descriptions:
   integrations: Coding patterns and integration guides for using FHIR, DICOM, and
     de-identification APIs with SDKs/tools, bulk operations, events, SMART on FHIR,
     and connecting to Synapse/Data Factory/Fabric.
-  security: 'Configuring security for Azure Health Data Services: Entra auth, RBAC,
-    app registration, tokens, CMK encryption, network/Private Link, policies, SMART
-    on FHIR, and secure import/export.'
+  security: Configuring auth, RBAC, app registrations, tokens, keys, policies, network/Private
+    Link, and SMART/B2C/External ID for secure FHIR, DICOM, and de-identification
+    services in Azure Health Data Services.
   limits-quotas: 'Scaling and performance limits for Azure API for FHIR and DICOM:
     autoscale setup, throughput and request caps, storage and size constraints, and
     service-specific behavior under load.'
@@ -19,25 +19,25 @@ category_descriptions:
   architecture-patterns: 'Architectural patterns for FHIR, DICOM, and de-identification:
     disaster recovery setup, reliable anonymization services, DICOM + Data Lake integration,
     and digital pathology workflow design.'
+  decision-making: Guidance on FAQs and planning migrations from Azure API for FHIR
+    and SMART on FHIR proxy to Azure Health Data Services, including strategies, steps,
+    and considerations.
   deployment: How to deploy and move Azure Health Data Services (FHIR, DICOM, de-identification,
     workspaces) using portal, ARM, Bicep, CLI, PowerShell, and check regional availability
   best-practices: 'Best practices for securing and managing Azure Health Data Services:
     BCDR planning, CMK encryption for FHIR/DICOM, performance tuning, and safely running
     FHIR reindex jobs.'
-  decision-making: Planning and executing migrations from Azure API for FHIR to the
-    FHIR service or broader Azure Health Data Services, including architecture, data,
-    and configuration considerations.
 skill_description: Expert knowledge for Azure Health Data Services development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when using FHIR/DICOM services, de-identification APIs, SMART on FHIR apps,
-  bulk ops, or Synapse/Fabric integration, and other Azure Health Data Services related
-  development tasks. Not for Azure Health Bot (use azure-health-bot), Azure Data Factory
-  (use azure-data-factory), Azure Synapse Analytics (use azure-synapse-analytics),
-  Azure Machine Learning (use azure-machine-learning).
-use_when: Use when using FHIR/DICOM services, de-identification APIs, SMART on FHIR
-  apps, bulk ops, or Synapse/Fabric integration, and other Azure Health Data Services
-  related development tasks.
+  Use when using FHIR/DICOM APIs, de-identification, bulk import/export, eventing,
+  or Synapse/Fabric integrations, and other Azure Health Data Services related development
+  tasks. Not for Azure Health Bot (use azure-health-bot), Azure Data Factory (use
+  azure-data-factory), Azure Synapse Analytics (use azure-synapse-analytics), Azure
+  Machine Learning (use azure-machine-learning).
+use_when: Use when using FHIR/DICOM APIs, de-identification, bulk import/export, eventing,
+  or Synapse/Fabric integrations, and other Azure Health Data Services related development
+  tasks.
 confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Data Factory
   (use azure-data-factory), Azure Synapse Analytics (use azure-synapse-analytics),
   Azure Machine Learning (use azure-machine-learning).
@@ -46,17 +46,17 @@ confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Data 
 
 ## Summary
 
-- **Total Pages**: 202
-- **Fetched**: 202
+- **Total Pages**: 203
+- **Fetched**: 203
 - **Fetch Failed**: 0
 - **Classified**: 148
-- **Unclassified**: 54
+- **Unclassified**: 55
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 7
-- **Unchanged**: 195
-- **Deleted Pages**: 0
+- **New Pages**: 2
+- **Updated Pages**: 4
+- **Unchanged**: 197
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-health-data-services/azure-health-data-services.csv`
 
 ## Classification Statistics
@@ -65,33 +65,36 @@ confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Data 
 |------|-------|------------|
 | architecture-patterns | 3 | 1.5% |
 | best-practices | 5 | 2.5% |
-| configuration | 48 | 23.8% |
-| decision-making | 2 | 1.0% |
+| configuration | 48 | 23.6% |
+| decision-making | 4 | 2.0% |
 | deployment | 11 | 5.4% |
-| integrations | 34 | 16.8% |
-| limits-quotas | 3 | 1.5% |
-| security | 36 | 17.8% |
+| integrations | 33 | 16.3% |
+| limits-quotas | 2 | 1.0% |
+| security | 36 | 17.7% |
 | troubleshooting | 6 | 3.0% |
-| *(Unclassified)* | 54 | 26.7% |
+| *(Unclassified)* | 55 | 27.1% |
 
 ## Changes
 
+### New Pages
+
+- [SMART on FHIR proxy](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/smart-on-fhir-proxy)
+- [CMS Interoperability and Patient Access rule overview](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/centers-for-medicare-tutorial-introduction)
+
 ### Updated Pages
 
-- [2026](https://learn.microsoft.com/en-us/azure/healthcare-apis/release-notes-2026)
-  - Updated: 2026-06-26T22:12:00.000Z → 2026-07-06T22:04:00.000Z
-- [Release notes](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/release-notes-2026)
-  - Updated: 2026-06-12T17:29:00.000Z → 2026-07-06T22:04:00.000Z
-- [FHIR search overview](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/overview-of-search)
-  - Updated: 2025-10-17T22:12:00.000Z → 2026-07-07T22:18:00.000Z
-- [Define custom search parameters](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/how-to-do-custom-search)
-  - Updated: 2025-10-09T08:00:00.000Z → 2026-07-07T22:18:00.000Z
-- [Run a reindex job](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/how-to-run-a-reindex)
-  - Updated: 2025-10-09T08:00:00.000Z → 2026-07-07T22:18:00.000Z
-- [Search examples](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/search-samples)
-  - Updated: 2025-10-10T08:00:00.000Z → 2026-07-07T22:18:00.000Z
-- [Selectable search parameters](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/selectable-search-parameters)
-  - Updated: 2025-10-10T08:00:00.000Z → 2026-07-07T22:18:00.000Z
+- [SMART on FHIR](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/smart-on-fhir)
+  - Updated: 2025-12-05T08:00:00.000Z → 2026-01-26T18:11:00.000Z
+- [SMART on FHIR](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/smart-on-fhir)
+  - Updated: 2025-11-24T23:17:00.000Z → 2026-07-14T22:16:00.000Z
+- [FAQ](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/fhir-faq)
+  - Updated: 2026-01-26T18:11:00.000Z → 2026-07-14T22:16:00.000Z
+- [Migration FAQ](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/migration-faq)
+  - Updated: 2026-02-25T08:00:00.000Z → 2026-07-14T22:16:00.000Z
+
+### Deleted Pages
+
+- ~~CMS Interoperability and Patient Access rule introduction~~ (https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/centers-for-medicare-tutorial-introduction)
 
 ## Classified Pages
 
@@ -147,7 +150,6 @@ confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Data 
 | [Enable diagnostic settings in the FHIR service](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/fhir-service-diagnostic-logs) | configuration | 0.76 | Describes enabling diagnostic settings and provides sample log queries. Contains product-specific log categories, settings, and Kusto query examples that are not generic knowledge. |
 | [Export FHIR data](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/export-data) | configuration | 0.76 | Explains how to invoke $export with this FHIR service, including endpoint usage, required configuration, and behavior aligned with Bulk Data Access spec but implemented specifically here. |
 | [Import FHIR data](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/import-data) | configuration | 0.76 | Describes using the import operation with NDJSON, including operation parameters, throughput behavior, and constraints unique to this FHIR service. |
-| [SMART on FHIR](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/smart-on-fhir) | security | 0.76 | Covers OAuth2/OpenID Connect configuration, scopes, and redirect URIs specific to SMART on FHIR with this service. |
 | [Store profiles](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/store-profiles-in-fhir) | configuration | 0.76 | How-to for storing FHIR profiles in this service, including endpoints, resource types, and any service-specific constraints on profile storage. |
 | [$member-match](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/tutorial-member-match) | integrations | 0.75 | Describes the $member-match operation, including request/response structure, headers, and constraints specific to this implementation. |
 | [$purge-history](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/purge-history) | configuration | 0.75 | Describes the $purge-history operation, including allowed parameters, effects, and constraints specific to Azure API for FHIR. |
@@ -160,6 +162,7 @@ confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Data 
 | [Security controls by Azure policy](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/security-controls-policy) | security | 0.75 | Lists Azure Policy regulatory compliance controls and built-in definitions; these are product-specific security/compliance configurations. |
 | [Use Custom HTTP headers to add data to audit logs](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/use-custom-headers) | configuration | 0.75 | Describes specific HTTP header names and how they map into audit logs, which is product-specific configuration behavior. |
 | [Use managed identities](https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/managed-identities) | security | 0.75 | Explains how to assign and use system/user-assigned managed identities for accessing storage, including role assignments and identity configuration unique to this service. |
+| [Migration FAQ](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/migration-faq) | decision-making | 0.74 | FAQ content for migrating from Azure API for FHIR to Azure Health Data Services typically includes product-specific migration timelines, deprecation dates, supported/unsupported features, and recommended migration paths for different scenarios. This is expert, time-sensitive guidance that an LLM is unlikely to infer from training data and directly supports technology and path selection (when to migrate, which approach to use, what constraints apply), fitting the decision-making sub-skill. |
 | [Configure Private Link](https://learn.microsoft.com/en-us/azure/healthcare-apis/configure-private-link) | security | 0.72 | The page provides product-specific security configuration for Azure Health Data Services using Private Link, including detailed steps and settings to create, test, and validate private endpoints and DNS behavior for FHIR and DICOM services. This is concrete, implementation-focused security guidance rather than a conceptual overview. |
 | [Da Vinci PDex](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/davinci-pdex-tutorial) | integrations | 0.72 | Content covers configuring capability statements, loading US Core profiles, and implementing required FHIR operations for PDex on Azure FHIR, including a note about JSON-only support and _format behavior. These are specific integration/configuration details for this product and IG, matching integrations. |
 | [Migration from Azure API for FHIR](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/migration-strategies) | decision-making | 0.72 | The page provides concrete, product-specific migration strategies and timelines for moving from Azure API for FHIR to Azure Health Data Services FHIR, including retirement dates, constraints on new deployments, and guidance on how and when to transition. This is expert decision guidance about migration paths and service selection rather than just a conceptual overview. |
@@ -193,7 +196,7 @@ confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Data 
 | [Enable audit and diagnostic logging](https://learn.microsoft.com/en-us/azure/healthcare-apis/dicom/enable-diagnostic-logging) | configuration | 0.70 | Diagnostic logging setup will specify diagnostic settings categories, log types, and sample Kusto queries specific to this service. |
 | [Export DICOM files](https://learn.microsoft.com/en-us/azure/healthcare-apis/dicom/export-files) | integrations | 0.70 | Export API details, including path structure, parameters, and Blob Storage configuration, are product-specific integration patterns. |
 | [External metadata](https://learn.microsoft.com/en-us/azure/healthcare-apis/dicom/external-metadata) | integrations | 0.70 | Uses STOW-RS with custom headers; includes request formats and tag handling specific to this implementation. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/fhir-faq) | limits-quotas | 0.70 | FAQ includes product-specific expert details such as supported FHIR versions, data residency/storage behavior, backup/retention characteristics, and specific service constraints (for example, what is or isn’t supported, and operational limits). These are concrete, service-specific facts and limits that an LLM is unlikely to infer without documentation, fitting best under limits-quotas among the available categories. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/fhir-faq) | decision-making | 0.70 | The FAQ includes product-specific details such as supported FHIR versions, data storage locations, regional availability, and behavior of the managed service that help users decide how and when to use Azure API for FHIR. These are not generic concepts and represent expert, service-specific knowledge, but the page does not focus on numeric limits/quotas, configuration tables, or error-code-based troubleshooting. |
 | [FHIR REST API capabilities](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/fhir-rest-api-capabilities) | integrations | 0.70 | Describes RESTful interactions and capabilities; likely details supported operations, search parameters, and behavior specific to this FHIR implementation, which are integration & API usage patterns. |
 | [Find identity object IDs](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/find-identity-object-ids) | security | 0.70 | Explains how to obtain specific Microsoft Entra object IDs needed for configuring authentication to Azure API for FHIR, including product-specific security configuration steps. |
 | [Get a token for Azure API for FHIR - CLI](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/get-healthcare-apis-access-token-cli) | security | 0.70 | Provides concrete Azure CLI commands and parameters to request tokens for Azure API for FHIR, including resource scopes and tenant-specific details. |
@@ -202,13 +205,11 @@ confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Data 
 | [Import DICOM files](https://learn.microsoft.com/en-us/azure/healthcare-apis/dicom/import-files) | integrations | 0.70 | Bulk import API usage will include request schema, parameters, and storage configuration specific to this DICOM service. |
 | [Known issues](https://learn.microsoft.com/en-us/azure/healthcare-apis/known-issues) | troubleshooting | 0.70 | Known issues pages typically list specific symptoms, causes, and workarounds with dates. These are highly product-specific troubleshooting details that an LLM will not know from training. |
 | [Manage network access security](https://learn.microsoft.com/en-us/azure/healthcare-apis/network-access-security) | security | 0.70 | Focuses on securing network access and outbound connections for FHIR and DICOM; likely includes product-specific network security options and settings (firewall, private endpoints, allowed origins) that qualify as security configuration details. |
-| [Migration FAQ](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/migration-faq) | decision-making | 0.70 | Migration FAQ is likely to contain product-specific migration paths, compatibility details, and scenario-based guidance for moving from Azure API for FHIR to Azure Health Data Services FHIR service, which fits decision-making (migration/upgrade choices). |
 | [Patient/$everything](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/patient-everything) | configuration | 0.70 | Explains how this FHIR service implements Patient-everything, including request parameters, pagination, and behavior specific to this platform. |
 | [Python - asynchronous](https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/quickstart-asynchronous-python) | integrations | 0.70 | Covers configuration and invocation of the batch de-identification API with Python, including job parameters and storage integration specifics. |
 | [Register a client application](https://learn.microsoft.com/en-us/azure/healthcare-apis/dicom/dicom-register-application) | security | 0.70 | Covers app registration steps and settings specific to the DICOM service, including redirect URIs and API permissions, which are security configuration details. |
 | [Register an application via Azure portal](https://learn.microsoft.com/en-us/azure/healthcare-apis/register-application) | security | 0.70 | Covers registering a client application in Microsoft Entra ID specifically for Azure Health Data Services, including adding secrets, certificates, and API permissions. This implies product-specific permission scopes and configuration steps for FHIR and DICOM access, which fall under security (auth configuration and access control) and are detailed, product-specific settings. |
 | [Run a reindex job](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/how-to-run-a-reindex) | best-practices | 0.70 | Focuses on how to run reindex jobs for custom search parameters and warns about performance impact. Likely includes product-specific guidance and gotchas on when and how to run reindex in production, which fits best-practices. |
-| [SMART on FHIR](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/smart-on-fhir) | integrations | 0.70 | Describes enabling SMART on FHIR, including specific authorization endpoints, scopes, and configuration parameters unique to Azure API for FHIR. |
 | [Search examples](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/search-samples) | integrations | 0.70 | Provides concrete HTTP query examples with parameters, modifiers, and behavior specific to Azure API for FHIR’s search implementation. |
 | [Store profiles](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/store-profiles-in-fhir) | configuration | 0.70 | Describes how to store FHIR profiles, including resource types, endpoints, and configuration behavior specific to this service. |
 | [Troubleshoot events](https://learn.microsoft.com/en-us/azure/healthcare-apis/events/events-troubleshooting-guide) | troubleshooting | 0.70 | Explicitly positioned as a troubleshooting guide for events; likely organized around common issues and resolutions for delivery, metrics, and diagnostics. Contains product-specific behavior (for example, events not sent for past FHIR/DICOM changes or when the feature is off), which is expert troubleshooting knowledge. |
@@ -222,6 +223,7 @@ confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Data 
 | [CARIN Implementation Guide for Blue Button](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/carin-implementation-guide-blue-button-tutorial) | integrations | 0.68 | Tutorial is focused on configuring Azure Health Data Services FHIR to pass CARIN Blue Button Touchstone tests, which typically requires product-specific capability statements, search parameters, and profile handling. These are detailed integration/configuration patterns for a specific implementation guide rather than generic concepts, fitting integrations best. |
 | [Configure CORS](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/configure-cross-origin-resource-sharing) | configuration | 0.68 | CORS configuration article for the FHIR service is expected to list specific configuration fields/allowed origins/headers and how to set them, which are product-specific configuration details rather than generic concepts. |
 | [Da Vinci Plan Net](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/davinci-plan-net) | integrations | 0.68 | Tutorial guides defining search parameters and loading Plan-Net profiles to pass Touchstone tests. This is detailed, product-specific setup for a particular implementation guide, representing integration patterns between Azure FHIR and Da Vinci Plan Net. |
+| [SMART on FHIR](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/smart-on-fhir) | security | 0.68 | Page is focused on enabling SMART on FHIR with Azure Health Data Services FHIR service using OAuth 2.0 and OpenID Connect. This typically includes product-specific security configuration details such as scopes, audience values, SMART-specific OAuth parameters, and how to wire them to the Azure FHIR service. These are security configuration details that go beyond generic OAuth concepts and are specific to this product’s SMART on FHIR implementation. |
 | [Access Azure Health Data Services](https://learn.microsoft.com/en-us/azure/healthcare-apis/access-healthcare-apis) | integrations | 0.65 | Shows how to call the services via cURL, REST Client, Python, and C#; likely includes endpoint formats, headers, and request parameters unique to these APIs, fitting integrations & coding patterns. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/quickstart-azure-cli) | deployment | 0.65 | Contains Azure CLI commands and required parameters to deploy the service, which are product-specific deployment details. |
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/quickstart-powershell) | deployment | 0.65 | Includes PowerShell cmdlets and parameter values for deploying the service, which are concrete deployment instructions. |
@@ -240,6 +242,7 @@ confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Data 
 | [Regional availability of services & features](https://learn.microsoft.com/en-us/azure/healthcare-apis/services-features-regional-availability) | deployment | 0.65 | Regional availability matrices for specific services/features are product- and region-specific details that change over time and are not reliably known from training data. This is effectively a deployment constraint by region, fitting deployment (platform/tier support matrix by region). |
 | [Supported features](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/fhir-features-supported) | configuration | 0.65 | Lists which FHIR features and operations are implemented by this specific service, which is product-specific capability/configuration knowledge not derivable generically. |
 | [Use DICOM data in analytics workloads](https://learn.microsoft.com/en-us/azure/healthcare-apis/dicom/get-started-with-analytics-dicom) | integrations | 0.65 | Describes concrete steps and configurations to move and analyze DICOM data with ADF and Fabric, which are integration patterns with product-specific settings. |
+| [SMART on FHIR proxy](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/smart-on-fhir-proxy) | decision-making | 0.64 | The page describes the SMART on FHIR proxy as a legacy option, its retirement date, and instructs organizations to transition to the newer SMART on FHIR option. This is product-specific decision guidance around deprecation, migration timing, and which approach to choose going forward, which fits the decision-making category rather than generic conceptual content. |
 | [Disable events notifications](https://learn.microsoft.com/en-us/azure/healthcare-apis/events/events-disable-delete-workspace) | configuration | 0.62 | Covers how to delete or pause event subscriptions with specific settings and portal/API steps unique to this events feature. |
 | [3. Write web application](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/tutorial-web-app-write-web-app) | integrations | 0.60 | Walkthrough for writing a web app that integrates with Azure API for FHIR, likely including FHIR-specific endpoints, headers, and request patterns beyond generic HTTP usage. |
 | [Portal](https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/quickstart) | deployment | 0.60 | Quickstart includes concrete deployment parameters and resource details for this specific service, which are product-specific deployment instructions. |
@@ -285,7 +288,7 @@ confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Data 
 | [What is the DICOM service?](https://learn.microsoft.com/en-us/azure/healthcare-apis/dicom/overview) | 0.30 | High-level overview of the DICOM service benefits and use cases; primarily conceptual/marketing without detailed configuration or limits. |
 | [Azure API for FHIR](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/overview) | 0.20 | Azure API for FHIR overview plus retirement notice; no evidence of detailed limits, configuration parameters, or troubleshooting mappings. |
 | [Azure Health Data Services quickstart](https://learn.microsoft.com/en-us/azure/healthcare-apis/healthcare-apis-quickstart) | 0.20 | Quickstart for creating a workspace via portal; primarily step-by-step tutorial without detailed configuration parameter tables or product-specific constraints. |
-| [CMS Interoperability and Patient Access rule introduction](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/centers-for-medicare-tutorial-introduction) | 0.20 | Tutorial series introduction; high-level description of CMS rule and implementation guides, not detailed configuration or troubleshooting content. |
+| [CMS Interoperability and Patient Access rule overview](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/centers-for-medicare-tutorial-introduction) | 0.20 | The page is an overview of the CMS Interoperability and Patient Access rule and lists related implementation guides and tutorials. It does not appear to contain specific configuration parameter tables, numeric limits, error codes, or detailed Azure FHIR service configuration steps; instead it is primarily conceptual and navigational, so it does not meet the expert-knowledge criteria for any sub-skill type. |
 | [CMS interoperability and patient access rule](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/centers-for-medicare-tutorial-introduction) | 0.20 | Series introduction/overview for CMS interoperability tutorials; high-level description without detailed configuration or limits. |
 | [Configure events](https://learn.microsoft.com/en-us/azure/healthcare-apis/events/events-deploy-portal) | 0.20 | A quickstart for deploying an event subscription via the portal is primarily step-by-step tutorial content. It usually shows basic configuration and UI steps without detailed parameter tables, limits, or product-specific diagnostic patterns, so it doesn’t meet the expert-knowledge thresholds for any sub-skill type. |
 | [DICOM service open-source projects](https://learn.microsoft.com/en-us/azure/healthcare-apis/dicom/references-for-dicom-service) | 0.20 | Reference to external GitHub projects; acts as a link hub rather than containing detailed expert configuration itself. |
@@ -304,3 +307,4 @@ confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Data 
 | [What is Azure Health Data Services?](https://learn.microsoft.com/en-us/azure/healthcare-apis/healthcare-apis-overview) | 0.10 | High-level product overview of Azure Health Data Services without numeric limits, configuration tables, or detailed error/security specifics. |
 | [Workspace overview](https://learn.microsoft.com/en-us/azure/healthcare-apis/workspace-overview) | 0.10 | High-level overview of Azure Health Data Services workspace; no specific limits, configuration tables, security roles, or troubleshooting details. |
 | [2026](https://learn.microsoft.com/en-us/azure/healthcare-apis/release-notes-2026) | - | Release notes typically list new features and fixes but not structured limits, configuration matrices, error-code troubleshooting, or decision frameworks as defined in the sub-skill types. The description and summary indicate general feature/enhancement information for FHIR and DICOM services, not the specific numeric limits, config tables, or error mappings required for expert-knowledge classification. |
+| [SMART on FHIR](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/smart-on-fhir) | - | Tutorial-style page about enabling SMART on FHIR with Azure API for FHIR; based on the description it focuses on how to enable the integration and migration notes, without exposing detailed limits, configuration parameter tables, error-code-based troubleshooting, or product-specific decision matrices. |

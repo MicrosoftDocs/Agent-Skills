@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-07-12'
+generated_at: '2026-07-19'
 category_descriptions:
-  example-workloads: 'End-to-end Azure solution blueprints: real-world workloads for
-    data/AI, security, networking, hybrid, mainframe, SAP, IoT, AKS, Fabric, and app
-    modernization with detailed reference architectures.'
+  example-workloads: End-to-end reference architectures and implementation guides
+    for real-world Azure workloads (data/AI, apps, hybrid, mainframe, networking,
+    security, and Fabric) with patterns, services, and deployment details.
   reference-architectures: 'End-to-end Azure solution blueprints: mission-critical,
     secure, and hybrid architectures for AKS, data platforms, SAP, networking, DR,
     MLOps, and enterprise app deployments.'
@@ -31,10 +31,12 @@ category_descriptions:
 skill_description: Expert guidance for designing Azure solutions using Azure Architecture.
   Covers reference architectures, solution ideas, design patterns, technology choices,
   architecture styles, best practices, anti-patterns, example workloads, and migration
-  guides. Use when designing AKS, SAP, IoT, data/AI platforms, or migrating AWS/GCP/on-prem
-  workloads to Azure, and other Azure Architecture related development tasks.
-use_when: Use when designing AKS, SAP, IoT, data/AI platforms, or migrating AWS/GCP/on-prem
-  workloads to Azure, and other Azure Architecture related development tasks.
+  guides. Use when designing AKS, data/AI, SAP, or hybrid workloads, choosing Azure
+  services, or fixing performance anti-patterns, and other Azure Architecture related
+  development tasks.
+use_when: Use when designing AKS, data/AI, SAP, or hybrid workloads, choosing Azure
+  services, or fixing performance anti-patterns, and other Azure Architecture related
+  development tasks.
 ---
 # Azure Architecture Crawl Report
 
@@ -43,14 +45,14 @@ use_when: Use when designing AKS, SAP, IoT, data/AI platforms, or migrating AWS/
 - **Total Pages**: 445
 - **Fetched**: 445
 - **Fetch Failed**: 0
-- **Classified**: 334
-- **Unclassified**: 111
+- **Classified**: 335
+- **Unclassified**: 110
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 9
-- **Unchanged**: 434
-- **Deleted Pages**: 2
+- **New Pages**: 0
+- **Updated Pages**: 2
+- **Unchanged**: 443
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-architecture/azure-architecture.csv`
 
 ## Classification Statistics
@@ -61,45 +63,21 @@ use_when: Use when designing AKS, SAP, IoT, data/AI platforms, or migrating AWS/
 | architecture-styles | 8 | 1.8% |
 | best-practices | 54 | 12.1% |
 | design-patterns | 45 | 10.1% |
-| example-workloads | 77 | 17.3% |
+| example-workloads | 78 | 17.5% |
 | migration-guides | 27 | 6.1% |
 | reference-architectures | 50 | 11.2% |
 | solution-ideas | 31 | 7.0% |
 | technology-choices | 31 | 7.0% |
-| *(Unclassified)* | 111 | 24.9% |
+| *(Unclassified)* | 110 | 24.7% |
 
 ## Changes
 
-### New Pages
-
-- [Multiple-region App Service apps for disaster recovery](https://learn.microsoft.com/en-us/azure/architecture/web-apps/guides/multi-region-app-service/multi-region-app-service)
-- [Ransomware-resilient backups](https://learn.microsoft.com/en-us/azure/architecture/security/ransomware-resilient-backup-architecture/)
-
 ### Updated Pages
 
-- [Networking and connectivity platform](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks-mission-critical/mission-critical-networking)
-  - Updated: 2025-09-22T17:34:00.000Z → 2026-07-10T05:02:00.000Z
-- [Health modeling](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks-mission-critical/mission-critical-health-modeling)
-  - Updated: 2025-01-23T18:31:00.000Z → 2026-07-10T05:02:00.000Z
-- [Architecture icons](https://learn.microsoft.com/en-us/azure/architecture/icons/)
-  - Updated: 2025-12-18T18:34:00.000Z → 2026-07-09T17:33:00.000Z
-- [What's new](https://learn.microsoft.com/en-us/azure/architecture/changelog)
-  - Updated: 2026-06-23T17:33:00.000Z → 2026-07-10T17:32:00.000Z
-- [Image classification](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/idea/intelligent-apps-image-processing)
-  - Updated: 2026-06-03T05:05:00Z → 2026-07-07T17:34:00Z
-- [Performance and scale](https://learn.microsoft.com/en-us/azure/architecture/serverless/event-hubs-functions/performance-scale)
-  - Updated: 2026-04-23T17:32:00Z → 2026-07-08T05:02:00.000Z
-- [Resilient design](https://learn.microsoft.com/en-us/azure/architecture/serverless/event-hubs-functions/resilient-design)
-  - Updated: 2026-04-22T08:00:00.000Z → 2026-07-07T17:34:00.000Z
-- [Security](https://learn.microsoft.com/en-us/azure/architecture/serverless/event-hubs-functions/security)
-  - Updated: 2026-04-22T08:00:00.000Z → 2026-07-08T05:02:00.000Z
-- [Enterprise integration - queues and events](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/integration/queues-events)
-  - Updated: 2026-06-03T05:05:00Z → 2026-07-07T17:34:00Z
-
-### Deleted Pages
-
-- ~~Deploy IBM Sterling Order Management~~ (https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/ibm/deploy-ibm-sterling-oms)
-- ~~Multi-region App Service apps for disaster recovery~~ (https://learn.microsoft.com/en-us/azure/architecture/web-apps/guides/multi-region-app-service/multi-region-app-service)
+- [Refactor Adabas & Natural systems](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/mainframe/refactor-adabas-aks)
+  - Updated: 2025-08-08T05:07:00Z → 2026-07-13T17:34:00Z
+- [Zero Trust network for web applications](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/gateway/application-gateway-before-azure-firewall)
+  - Updated: 2025-07-17T05:04:00.000Z → 2026-07-16T17:35:00.000Z
 
 ## Classified Pages
 
@@ -247,7 +225,6 @@ use_when: Use when designing AKS, SAP, IoT, data/AI platforms, or migrating AWS/
 | [Storage options](https://learn.microsoft.com/en-us/azure/architecture/aws-professional/eks-to-aks/storage) | migration-guides | 0.86 | Page is in the aws-professional/ path and focuses on mapping and comparing Amazon EKS and AKS storage options, including concrete Azure storage choices and how to use them for Kubernetes workloads. This is expert, migration-focused guidance rather than generic concepts, matching the migration-guides category. |
 | [Targeted language processing](https://learn.microsoft.com/en-us/azure/architecture/data-guide/ai-services/targeted-language-processing) | technology-choices | 0.86 | Focused decision guide for targeted language processing in Foundry Tools (Language, text analytics, translation, document extraction). It compares capabilities and use cases of multiple services and helps select the right one, matching the technology-choices pattern and containing concrete, up-to-date service-specific guidance. |
 | [Teamcenter baseline architecture](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/manufacturing/teamcenter-baseline) | example-workloads | 0.86 | URL contains example-scenario/ and 'baseline', indicating a detailed implementation for a specific industry workload (manufacturing PLM). These example-scenario pages typically include concrete Azure service choices, topology, and configuration guidance for running Teamcenter in production-like environments, which goes beyond generic concepts and constitutes expert, scenario-specific knowledge. |
-| [Zero Trust network for web applications](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/gateway/application-gateway-before-azure-firewall) | example-workloads | 0.86 | example-scenario/gateway URL; detailed Zero Trust inbound traffic architecture using Firewall and App Gateway with encryption/inspection specifics. |
 | [Application design](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks-mission-critical/mission-critical-app-design) | reference-architectures | 0.85 | Part of mission-critical reference architecture series with concrete reliability and throughput design techniques. |
 | [Application platform](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks-mission-critical/mission-critical-app-platform) | reference-architectures | 0.85 | In /reference-architectures/ aks-mission-critical; details layered platform design and service configuration considerations. |
 | [Asynchronous messaging](https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/messaging) | technology-choices | 0.85 | Describes messaging types and compares Azure Service Bus, Event Grid, and Event Hubs with guidance on when to use each, matching technology-choices. |
@@ -360,12 +337,14 @@ use_when: Use when designing AKS, SAP, IoT, data/AI platforms, or migrating AWS/
 | [Protect APIs by using Application Gateway and API Management](https://learn.microsoft.com/en-us/azure/architecture/web-apps/api-management/architectures/protect-apis) | best-practices | 0.78 | Applies Gateway Routing pattern with concrete configuration of App Gateway and APIM for API security; includes prescriptive security and routing guidance. |
 | [Quantum computing integration with classical apps](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/quantum/quantum-computing-integration-with-classical-apps) | example-workloads | 0.78 | URL contains example-scenario/, and the topic is a specific use case (integrating quantum computing with classical applications). Example-scenario pages in the Architecture Center typically include detailed implementation guidance, concrete service wiring (Azure Quantum plus classical components), and scenario-specific technical details that go beyond generic LLM knowledge, matching the example-workloads definition. |
 | [Real-time sync of MongoDB Atlas to Fabric](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/analytics/sync-mongodb-atlas-fabric-analytics) | example-workloads | 0.78 | The URL path contains example-scenario/analytics, and the article describes a concrete implementation for syncing MongoDB Atlas operational data into Microsoft Fabric using open mirroring. It focuses on a specific analytics use case with detailed technical guidance rather than a generic pattern or high-level solution idea, matching the example-workloads category. |
+| [Refactor Adabas & Natural systems](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/mainframe/refactor-adabas-aks) | example-workloads | 0.78 | The URL contains example-scenario/, indicating an example workload. The page describes a specific modernization path for mainframe systems running Adabas & Natural, including detailed technical implementation guidance for refactoring to Azure (likely involving AKS and related services). This is more detailed than a solution idea and focused on a concrete legacy workload scenario rather than a generic reference architecture, matching the example-workloads criteria. |
 | [Rehost Adabas & Natural applications](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/mainframe/rehost-adabas-software-ag) | example-workloads | 0.78 | The URL path contains 'example-scenario/mainframe', indicating an example workload. The page describes a concrete migration/implementation scenario for rehosting Adabas and Natural mainframe systems on Azure, with workload-specific technical guidance rather than just a high-level solution idea. It focuses on a specific industry-grade use case (mission-critical mainframe apps) and provides detailed implementation and migration considerations, which qualifies as expert knowledge. |
 | [Rehost IMS DC and IMS DB](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/mainframe/rehost-ims-raincode-imsql) | example-workloads | 0.78 | Covers rehosting IMS workloads using Raincode IMSql in an example-scenario. This is a niche, vendor-specific migration path with detailed steps, integration patterns, and constraints that LLMs are unlikely to infer generically, making it expert scenario implementation content. |
 | [SAP deployment using an Oracle database](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/apps/sap-production) | example-workloads | 0.78 | URL contains example-scenario/apps, and the description indicates a concrete SAP production deployment with high availability, proven practices, and a detailed reference architecture diagram. This is a scenario-specific, technically detailed implementation (SAP NetWeaver on Oracle across availability zones) that goes beyond a high-level solution idea but is more scenario-focused than a generic reference architecture, matching the example-workloads category. |
 | [SAP landscape architecture](https://learn.microsoft.com/en-us/azure/architecture/guide/sap/sap-whole-landscape) | best-practices | 0.78 | The page is explicitly described as best practices and recommendations for architecting an entire SAP landscape on Azure, focusing on secure, high-performing, and resilient network design across hub, production, nonproduction, and DR environments. This is implementation-focused guidance with concrete do/don't style recommendations for a specific but broad scenario (SAP on Azure networking), matching the best-practices category more than reference architectures or solution ideas. |
 | [Unlock insights from conversational data](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/idea/unlock-insights-from-conversational-data) | solution-ideas | 0.78 | Explicitly labeled as a solution idea and describes a conceptual architecture for conversation knowledge mining using Foundry Tools and Microsoft Foundry, showing how multiple Azure services work together for a specific scenario (call center conversational data). It’s higher level and less detailed than a reference architecture but still contains scenario-specific architectural guidance. |
 | [Write-through caching with Azure Managed Redis and Azure SQL Database](https://learn.microsoft.com/en-us/azure/architecture/databases/architecture/write-through-caching-azure-sql-managed-redis) | example-workloads | 0.78 | Describes a concrete, scenario-specific implementation of write-through caching for a high-traffic web app using Azure App Service, Azure Functions, Azure SQL Database, and Azure Managed Redis. Provides detailed technical behavior (SQL as system of record, Redis as derived cache, Functions as coordinator) and implementation guidance beyond generic concepts, matching an example workload rather than a high-level solution idea. |
+| [Zero Trust network for web applications](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/gateway/application-gateway-before-azure-firewall) | example-workloads | 0.78 | URL contains example-scenario/, and the article describes a concrete Zero Trust implementation for web applications using Azure Firewall and Application Gateway. These example scenarios typically include detailed network topology, traffic flows, and configuration guidance that go beyond generic concepts, qualifying as expert knowledge and fitting the example-workloads category rather than a high-level solution idea. |
 | [DataOps for modern data warehouse](https://learn.microsoft.com/en-us/azure/architecture/databases/architecture/dataops-mdw) | example-workloads | 0.76 | Architecture article for a specific MDW-based data pipeline scenario (city planning office) with end-to-end implementation and DevOps/DataOps processes; fits example-workloads as a detailed, scenario-focused architecture rather than a generic pattern or high-level style. |
 | [Hybrid availability and monitoring](https://learn.microsoft.com/en-us/azure/architecture/hybrid/hybrid-perf-monitoring) | example-workloads | 0.76 | Hybrid monitoring reference architecture with concrete use of Azure Monitor for VMs across Azure, on-premises, and other clouds. |
 | [Integrate Azure and Defender](https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/microsoft-365-defender-security-integrate-azure) | solution-ideas | 0.76 | Solution-ideas URL with an architecture showing integration of Azure and Microsoft 365 security services; provides scenario-specific guidance for hybrid and cloud IT security integration. |
@@ -545,7 +524,6 @@ use_when: Use when designing AKS, SAP, IoT, data/AI platforms, or migrating AWS/
 | [Migrate AIX workloads with Skytap](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/mainframe/migrate-aix-workloads-to-azure-with-skytap) | - | Parse error: Expecting value: line 1 column 1 (char 0) |
 | [Migrate IBM i series to Azure with Skytap](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/mainframe/migrate-ibm-i-series-to-azure-with-skytap) | - | Parse error: Expecting value: line 1 column 1 (char 0) |
 | [Patch and upgrade worker nodes](https://learn.microsoft.com/en-us/azure/architecture/operator-guides/aks/aks-upgrade-practices) | - | Day-2 AKS patching and upgrade guidance is an operator guide, not one of the defined architecture/decision/pattern/migration sub-skill types. It focuses on operational practices for upgrading AKS worker nodes and Kubernetes versions rather than reference architectures, solution ideas, patterns, technology choices, best practices (per URL rule), anti-patterns, example workloads, or migration guides. |
-| [Refactor Adabas & Natural systems](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/mainframe/refactor-adabas-aks) | - | Parse error: Expecting value: line 1 column 1 (char 0) |
 | [Refactor mainframe with Raincode](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/app-modernization/raincode-reference-architecture) | - | Parse error: Expecting value: line 1 column 1 (char 0) |
 | [SD-WAN integration](https://learn.microsoft.com/en-us/azure/architecture/networking/guide/sd-wan-integration-hub-spoke-network-topologies) | - | Networking design guide for SD-WAN with Azure hub-and-spoke; URL path is /networking/guide/ not one of the specified skill paths (reference-architectures, solution-ideas, patterns, technology-choices, architecture-styles, best-practices, antipatterns, example-scenario, industries, migration). Does not match required structural cues for any defined sub-skill type. |
 | [SD-WAN integration](https://learn.microsoft.com/en-us/azure/architecture/networking/guide/sd-wan-integration-hub-spoke-network-topologies) | - | Networking design guide for SD-WAN with Azure hub-and-spoke; URL path is /networking/guide/ not one of the specified skill paths (reference-architectures, solution-ideas, patterns, technology-choices, architecture-styles, best-practices, antipatterns, example-scenario, industries, migration). Does not match required structural cues for any defined sub-skill type. |

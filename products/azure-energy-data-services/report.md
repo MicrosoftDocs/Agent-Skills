@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-05'
+generated_at: '2026-07-19'
 category_descriptions:
   decision-making: Guidance on choosing ADME deployment tiers (Developer vs Standard)
     and checking which OSDU data/compute services and capabilities are available in
@@ -47,8 +47,8 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 57
+- **Updated Pages**: 1
+- **Unchanged**: 56
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-energy-data-services/azure-energy-data-services.csv`
 
@@ -66,6 +66,11 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 | *(Unclassified)* | 20 | 35.1% |
 
 ## Changes
+
+### Updated Pages
+
+- [Release notes](https://learn.microsoft.com/en-us/azure/energy-data-services/release-notes)
+  - Updated: 2026-05-22T17:10:00.000Z → 2026-07-13T08:00:00.000Z
 
 ## Classified Pages
 
@@ -129,7 +134,7 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 | [Analytics consumption zone (ACZ)](https://learn.microsoft.com/en-us/azure/energy-data-services/concepts-analytics-consumption-zone) | 0.20 | Conceptual overview of Analytics Consumption Zone explaining what it is and how it mirrors data; no detailed limits, configuration tables, error codes, or other expert-only specifics. |
 | [Change tier for seismic workloads](https://learn.microsoft.com/en-us/azure/energy-data-services/tutorial-seismic-change-tier) | 0.20 | Tutorial-style guidance on changing storage tiers (Hot/Cool/Cold) for seismic datasets; no evidence of numeric limits, configuration parameter tables, error codes, or decision matrices with quantified trade-offs. Content appears conceptual/operational rather than detailed expert reference. |
 | [Deploy OSDU Admin UI](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-deploy-osdu-admin-ui) | 0.20 | Appears to be a how-to deployment guide for the OSDU Admin UI on Azure Data Manager for Energy. Based on the summary, it likely focuses on step-by-step deployment instructions without detailed tier matrices, limits, configuration parameter tables, or error-code-based troubleshooting. Without evidence of specific numeric limits, config tables, or decision matrices, it doesn't meet the expert-knowledge criteria for any sub-skill type. |
-| [Release notes](https://learn.microsoft.com/en-us/azure/energy-data-services/release-notes) | 0.20 | Release notes typically list changes, fixes, and known issues but not in the structured, reusable form required for the defined sub-skill types (no config tables, limits matrices, or systematic troubleshooting mappings). |
+| [Release notes](https://learn.microsoft.com/en-us/azure/energy-data-services/release-notes) | 0.20 | Release notes typically list changes, fixes, and known issues but not structured limits, configuration matrices, or decision/troubleshooting content as defined; no evidence of specific numeric limits, config tables, or error-code-based troubleshooting from the summary. |
 | [Partners](https://learn.microsoft.com/en-us/azure/energy-data-services/resources-partner-solutions) | 0.10 | Partner solutions listing is marketing/ecosystem content, not technical configuration, limits, or troubleshooting guidance. |
 | [Syncing reference data values](https://learn.microsoft.com/en-us/azure/energy-data-services/concepts-reference-data-values) | 0.10 | Described as an overview of reference data values and synchronization; no indication of detailed configuration tables, limits, or error mappings. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/energy-data-services/faq-energy-data-services) | - | FAQ content is high-level Q&A about Azure Data Manager for Energy without specific numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. It doesn't meet any of the expert-knowledge detection criteria. |

@@ -1,9 +1,9 @@
 ---
 name: azure-virtual-network-manager
-description: Expert knowledge for Azure Virtual Network Manager development including troubleshooting, limits & quotas, security, configuration, and integrations & coding patterns. Use when managing IPAM pools, network groups, hub-spoke routing, security admin rules, or Resource Graph queries, and other Azure Virtual Network Manager related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan), Azure Network Watcher (use azure-network-watcher), Azure Networking (use azure-networking).
+description: Expert knowledge for Azure Virtual Network Manager development including troubleshooting, limits & quotas, security, configuration, and integrations & coding patterns. Use when managing IPAM pools, network groups, cross-tenant connectivity, hub-spoke routing, or security admin rules, and other Azure Virtual Network Manager related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan), Azure Firewall Manager (use azure-firewall-manager), Azure Network Watcher (use azure-network-watcher).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-12"
+  generated_at: "2026-07-19"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Virtual Network Manager Skill
@@ -24,7 +24,7 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L38 | Diagnosing and fixing common Azure Virtual Network Manager issues, including deployment/configuration errors and verifying that AVNM-applied network configurations work as intended. |
+| Troubleshooting | L33-L38 | Diagnosing and fixing common Azure Virtual Network Manager issues, including policy deployment, connectivity, and verifying that AVNM configurations are correctly applied. |
 | Limits & Quotas | L39-L43 | IPAM features, supported regions, and key Azure Virtual Network Manager limits (scale, resources, configurations) that affect design and deployment decisions. |
 | Security | L44-L56 | Configuring and enforcing AVNM security admin rules to block or restrict traffic (including high‑risk ports), using network groups, simulating rule impact, and securing hub‑and‑spoke virtual networks. |
 | Configuration | L57-L70 | Configuring AVNM: IPAM pools, network groups, cross-tenant connections, event logs, UDRs/hub-spoke routing, and reachability analysis with CLI, portal, Bicep, and Azure Policy. |

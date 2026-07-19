@@ -8,28 +8,23 @@
 | Topic | URL |
 |-------|-----|
 | Design Databricks intelligent document processing pipelines | https://learn.microsoft.com/en-us/azure/databricks/agents/agent-bricks/intelligent-document-processing |
-| Design coordinated multi-agent systems with Supervisor Agent | https://learn.microsoft.com/en-us/azure/databricks/agents/agent-bricks/multi-agent-supervisor |
 | Design multi-agent orchestrator apps on Databricks | https://learn.microsoft.com/en-us/azure/databricks/agents/agent-framework/multi-agent-apps |
 | Design Databricks agents with memory patterns | https://learn.microsoft.com/en-us/azure/databricks/agents/agent-framework/stateful-agents |
 | Apply Databricks agent system design patterns | https://learn.microsoft.com/en-us/azure/databricks/agents/agent-system-design-patterns |
-| Design joins and schemas in Databricks metric views | https://learn.microsoft.com/en-us/azure/databricks/business-semantics/metric-views/joins |
 | Use packaged clean rooms for provider-consumer collaboration | https://learn.microsoft.com/en-us/azure/databricks/clean-rooms/packaged-clean-rooms |
-| Design multi-fact semantic models with Databricks dashboard relationships | https://learn.microsoft.com/en-us/azure/databricks/dashboards/manage/data-modeling/dashboard-relationships/ |
+| Choose data modeling options in AI/BI dashboards | https://learn.microsoft.com/en-us/azure/databricks/dashboards/manage/data-modeling/ |
+| Design multi-fact models with dashboard relationships | https://learn.microsoft.com/en-us/azure/databricks/dashboards/manage/data-modeling/dashboard-relationships/ |
+| Create and use dashboard relationship models | https://learn.microsoft.com/en-us/azure/databricks/dashboards/manage/data-modeling/dashboard-relationships/create-relationships |
+| Model local metric views in AI/BI dashboards | https://learn.microsoft.com/en-us/azure/databricks/dashboards/manage/data-modeling/local-metric-views |
 | Design fan-in and fan-out pipelines in Lakeflow | https://learn.microsoft.com/en-us/azure/databricks/data-engineering/fan-in-fan-out |
 | Choose patterns for external access to Databricks data | https://learn.microsoft.com/en-us/azure/databricks/external-access/ |
-| Architect cost-optimized Databricks deployments | https://learn.microsoft.com/en-us/azure/databricks/lakehouse-architecture/cost-optimization/ |
-| Apply Databricks data and AI governance architecture | https://learn.microsoft.com/en-us/azure/databricks/lakehouse-architecture/data-governance/ |
+| Apply Databricks well-architected framework design principles | https://learn.microsoft.com/en-us/azure/databricks/lakehouse-architecture/ |
 | Plan enterprise Databricks production architecture | https://learn.microsoft.com/en-us/azure/databricks/lakehouse-architecture/deployment-guide/ |
 | Design Delta Lake and medallion architecture on Databricks | https://learn.microsoft.com/en-us/azure/databricks/lakehouse-architecture/deployment-guide/delta-lake |
 | Design Databricks high availability and disaster recovery | https://learn.microsoft.com/en-us/azure/databricks/lakehouse-architecture/deployment-guide/ha-dr |
 | Design Azure Databricks network architecture | https://learn.microsoft.com/en-us/azure/databricks/lakehouse-architecture/deployment-guide/network |
 | Design storage architecture for Azure Databricks and Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/lakehouse-architecture/deployment-guide/storage |
 | Design Azure Databricks workspace architecture | https://learn.microsoft.com/en-us/azure/databricks/lakehouse-architecture/deployment-guide/workspace-strategy |
-| Design Databricks interoperability and usability architecture | https://learn.microsoft.com/en-us/azure/databricks/lakehouse-architecture/interoperability-and-usability/ |
-| Architect operational excellence for Databricks platforms | https://learn.microsoft.com/en-us/azure/databricks/lakehouse-architecture/operational-excellence/ |
-| Architect performance-efficient Databricks solutions | https://learn.microsoft.com/en-us/azure/databricks/lakehouse-architecture/performance-efficiency/ |
-| Use Databricks reference architectures for lakehouse design | https://learn.microsoft.com/en-us/azure/databricks/lakehouse-architecture/reference |
-| Design reliable architectures on Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/lakehouse-architecture/reliability/ |
 | Apply medallion lakehouse architecture on Databricks | https://learn.microsoft.com/en-us/azure/databricks/lakehouse/medallion |
 | Replicate external RDBMS tables using AUTO CDC | https://learn.microsoft.com/en-us/azure/databricks/ldp/database-replication |
 | Design flows for streaming tables and backfills in Lakeflow | https://learn.microsoft.com/en-us/azure/databricks/ldp/flow-examples |

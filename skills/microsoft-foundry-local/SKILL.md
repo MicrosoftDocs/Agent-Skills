@@ -1,14 +1,14 @@
 ---
 name: microsoft-foundry-local
-description: Expert knowledge for Microsoft Foundry Local (aka Azure AI Foundry Local) development including best practices, decision making, configuration, and integrations & coding patterns. Use when compiling HF models with Olive, using Foundry Local CLI, chat/embeddings APIs, tool calling, or SDK migration, and other Microsoft Foundry Local related development tasks. Not for Microsoft Foundry (use microsoft-foundry), Microsoft Foundry Classic (use microsoft-foundry-classic), Microsoft Foundry Tools (use microsoft-foundry-tools), Azure Local (use azure-local).
+description: Expert knowledge for Microsoft Foundry Local (aka Azure AI Foundry Local) development including best practices, configuration, and integrations & coding patterns. Use when compiling HF models with Olive, managing local models via CLI, or building chat, embeddings, or transcription apps, and other Microsoft Foundry Local related development tasks. Not for Microsoft Foundry (use microsoft-foundry), Microsoft Foundry Classic (use microsoft-foundry-classic), Microsoft Foundry Tools (use microsoft-foundry-tools), Azure Local (use azure-local).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-21"
+  generated_at: "2026-07-19"
   generator: "docs2skills/1.0.0"
 ---
 # Microsoft Foundry Local Skill
 
-This skill provides expert guidance for Microsoft Foundry Local. Covers best practices, decision making, configuration, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Microsoft Foundry Local. Covers best practices, configuration, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -24,20 +24,14 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Best Practices | L32-L36 | CLI usage tips, common error diagnostics, troubleshooting install/auth/deploy issues, and recommended workflows for using the Foundry Local CLI effectively. |
-| Decision Making | L37-L41 | Guidance for upgrading apps from the legacy Foundry Local SDK to the current one, including API changes, migration steps, and compatibility considerations. |
-| Configuration | L42-L48 | Compiling Hugging Face models with Olive for Foundry Local and using the Foundry Local CLI to install, manage, and configure local models and their command options. |
-| Integrations & Coding Patterns | L49-L61 | Using Foundry Local APIs/SDKs for chat, embeddings, transcription, OpenAI-compatible clients, LangChain apps, tool calling, and REST/SDK reference (C#, JS, Python, Rust, legacy). |
+| Best Practices | L31-L35 | Guidance on using Foundry Local CLI effectively, following recommended workflows, and diagnosing/fixing common CLI issues and misconfigurations. |
+| Configuration | L36-L43 | Configuring Foundry Local: compiling/optimizing Hugging Face models with Olive, using the CLI to manage local models, and migrating/reconfiguring apps to the new Foundry Local SDK. |
+| Integrations & Coding Patterns | L44-L56 | Using Foundry Local APIs/SDKs for chat, embeddings, transcription, OpenAI-compatible clients, LangChain apps, tool calling, and REST/SDK reference (C#, JS, Python, Rust, legacy). |
 
 ### Best Practices
 | Topic | URL |
 |-------|-----|
-| Best practices and troubleshooting for Foundry Local CLI | https://learn.microsoft.com/en-us/azure/foundry-local/reference/reference-best-practice |
-
-### Decision Making
-| Topic | URL |
-|-------|-----|
-| Migrate from legacy to current Foundry Local SDK | https://learn.microsoft.com/en-us/azure/foundry-local/reference/reference-sdk-migration |
+| Apply best practices and fix issues in Foundry Local CLI | https://learn.microsoft.com/en-us/azure/foundry-local/reference/reference-best-practice |
 
 ### Configuration
 | Topic | URL |
@@ -45,6 +39,7 @@ This skill requires **network access** to fetch documentation content:
 | Compile Hugging Face models for Foundry Local with Olive | https://learn.microsoft.com/en-us/azure/foundry-local/how-to/how-to-compile-hugging-face-models |
 | Use Foundry Local CLI to manage local models | https://learn.microsoft.com/en-us/azure/foundry-local/how-to/how-to-use-foundry-local-cli |
 | Foundry Local CLI command and options reference | https://learn.microsoft.com/en-us/azure/foundry-local/reference/reference-cli |
+| Migrate and reconfigure apps to new Foundry Local SDK | https://learn.microsoft.com/en-us/azure/foundry-local/reference/reference-sdk-migration |
 
 ### Integrations & Coding Patterns
 | Topic | URL |

@@ -39,8 +39,8 @@ confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure Da
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 24
+- **Updated Pages**: 0
+- **Unchanged**: 25
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-share/azure-data-share.csv`
 
@@ -56,11 +56,6 @@ confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure Da
 | *(Unclassified)* | 9 | 36.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [Monitoring data reference](https://learn.microsoft.com/en-us/azure/data-share/monitor-data-share-reference)
-  - Updated: 2026-01-20T08:00:00.000Z → 2026-01-20T23:26:00.000Z
 
 ## Classified Pages
 

@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-07-12'
+generated_at: '2026-07-19'
 category_descriptions:
   configuration: 'Configuring AVNM: IPAM pools, network groups, cross-tenant connections,
     event logs, UDRs/hub-spoke routing, and reachability analysis with CLI, portal,
     Bicep, and Azure Policy.'
   troubleshooting: Diagnosing and fixing common Azure Virtual Network Manager issues,
-    including deployment/configuration errors and verifying that AVNM-applied network
-    configurations work as intended.
+    including policy deployment, connectivity, and verifying that AVNM configurations
+    are correctly applied.
   security: Configuring and enforcing AVNM security admin rules to block or restrict
     traffic (including high‑risk ports), using network groups, simulating rule impact,
     and securing hub‑and‑spoke virtual networks.
@@ -16,17 +16,17 @@ category_descriptions:
     Network Manager resources, configurations, and deployments at scale across subscriptions
 skill_description: Expert knowledge for Azure Virtual Network Manager development
   including troubleshooting, limits & quotas, security, configuration, and integrations
-  & coding patterns. Use when managing IPAM pools, network groups, hub-spoke routing,
-  security admin rules, or Resource Graph queries, and other Azure Virtual Network
-  Manager related development tasks. Not for Azure Virtual Network (use azure-virtual-network),
-  Azure Virtual WAN (use azure-virtual-wan), Azure Network Watcher (use azure-network-watcher),
-  Azure Networking (use azure-networking).
-use_when: Use when managing IPAM pools, network groups, hub-spoke routing, security
-  admin rules, or Resource Graph queries, and other Azure Virtual Network Manager
+  & coding patterns. Use when managing IPAM pools, network groups, cross-tenant connectivity,
+  hub-spoke routing, or security admin rules, and other Azure Virtual Network Manager
+  related development tasks. Not for Azure Virtual Network (use azure-virtual-network),
+  Azure Virtual WAN (use azure-virtual-wan), Azure Firewall Manager (use azure-firewall-manager),
+  Azure Network Watcher (use azure-network-watcher).
+use_when: Use when managing IPAM pools, network groups, cross-tenant connectivity,
+  hub-spoke routing, or security admin rules, and other Azure Virtual Network Manager
   related development tasks.
 confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), Azure
-  Virtual WAN (use azure-virtual-wan), Azure Network Watcher (use azure-network-watcher),
-  Azure Networking (use azure-networking).
+  Virtual WAN (use azure-virtual-wan), Azure Firewall Manager (use azure-firewall-manager),
+  Azure Network Watcher (use azure-network-watcher).
 ---
 # Azure Virtual Network Manager Crawl Report
 
@@ -39,10 +39,10 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 - **Unclassified**: 28
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 6
-- **Unchanged**: 44
-- **Deleted Pages**: 4
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 50
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-network-manager/azure-virtual-network-manager.csv`
 
 ## Classification Statistics
@@ -58,38 +58,17 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ## Changes
 
-### New Pages
-
-- [Create mesh or hub-and-spoke topology](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-create-network-manager-topologies)
-
 ### Updated Pages
 
-- [FAQ](https://learn.microsoft.com/en-us/azure/virtual-network-manager/faq)
-  - Updated: 2026-05-19T05:18:00.000Z → 2026-07-08T22:31:00.000Z
-- [Create Virtual Network Manager - Bicep](https://learn.microsoft.com/en-us/azure/virtual-network-manager/create-virtual-network-manager-bicep)
-  - Updated: 2025-04-09T08:00:00.000Z → 2026-07-08T17:13:00.000Z
-- [Configure cross-tenant connections - CLI](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-configure-cross-tenant-cli)
-  - Updated: 2024-10-15T08:00:00.000Z → 2026-07-08T22:31:00.000Z
-- [Network groups overview](https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-network-groups)
-  - Updated: 2024-06-10T22:06:00.000Z → 2026-07-08T22:31:00.000Z
-- [Connectivity configuration overview](https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-connectivity-configuration)
-  - Updated: 2026-05-26T17:35:00.000Z → 2026-07-08T08:00:00.000Z
-- [Protect high-risk network ports with security admin rules and exceptions](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-block-high-risk-ports)
-  - Updated: 2024-03-15T08:00:00.000Z → 2026-07-08T22:31:00.000Z
-
-### Deleted Pages
-
-- ~~Azure portal~~ (https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-create-hub-and-spoke)
-- ~~Azure PowerShell~~ (https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-create-hub-and-spoke-powershell)
-- ~~Azure portal~~ (https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-create-mesh-network)
-- ~~Azure PowerShell~~ (https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-create-mesh-network-powershell)
+- [Common issues](https://learn.microsoft.com/en-us/azure/virtual-network-manager/common-issues)
+  - Updated: 2026-05-16T05:17:00.000Z → 2026-07-16T22:11:00.000Z
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
 | [Limitations](https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-limitations) | limits-quotas | 0.90 | Explicitly about current limitations such as maximum number of VNets per manager and evaluation cycles; these are numeric, product-specific limits that change over time. |
-| [Common issues](https://learn.microsoft.com/en-us/azure/virtual-network-manager/common-issues) | troubleshooting | 0.86 | The page is explicitly a troubleshooting guide for Azure Virtual Network Manager, organized around common issues (configuration delays, connectivity errors, resource group creation failures) and their resolutions. This matches the troubleshooting pattern of symptom → cause → solution for a specific Azure service, which constitutes product-specific expert knowledge beyond generic debugging advice. |
+| [Common issues](https://learn.microsoft.com/en-us/azure/virtual-network-manager/common-issues) | troubleshooting | 0.86 | Page is organized around specific AVNM issues (configuration delays, connectivity errors, resource group creation failures) with symptom → cause → resolution guidance, which is product-specific troubleshooting knowledge not reliably known from training. |
 | [Automate IP address management](https://learn.microsoft.com/en-us/azure/virtual-network-manager/automate-ip-address-management-ipam-sample) | configuration | 0.70 | Provides a PowerShell script and describes IPAM pool usage; includes specific parameters, resource properties, and configuration patterns unique to AVNM IPAM. |
 | [Configure Event Logs for Azure Virtual Network Manager](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-configure-event-logs) | configuration | 0.70 | How-to for configuring event logs with Log Analytics and storage accounts; likely includes diagnostic setting names, categories, and destination parameters, which are product-specific configuration details. |
 | [Configure cross-tenant connections - CLI](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-configure-cross-tenant-cli) | configuration | 0.70 | Cross-tenant connection setup via CLI typically includes specific parameter names, required values, and scope/connection resource properties unique to Azure Virtual Network Manager. This is product-specific configuration detail (CLI commands, flags, resource fields) that goes beyond generic knowledge. |

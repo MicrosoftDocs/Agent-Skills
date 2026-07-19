@@ -1,14 +1,14 @@
 ---
 name: azure-oracle
-description: Expert knowledge for Azure Oracle development including troubleshooting, security, configuration, and integrations & coding patterns. Use when configuring TDE with Key Vault, Oracle@Azure connectivity, AI DB VNets, Exadata log export, or Sentinel, and other Azure Oracle related development tasks. Not for Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure VMware Solution (use azure-vmware-solution).
+description: Expert knowledge for Azure Oracle development including troubleshooting, security, and integrations & coding patterns. Use when configuring Oracle TDE with Azure Key Vault, fixing Oracle@Azure issues, or exporting Exadata logs to Azure Monitor/Sentinel, and other Azure Oracle related development tasks. Not for Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), SAP HANA on Azure Large Instances (use azure-sap).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-17"
+  generated_at: "2026-07-19"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Oracle Skill
 
-This skill provides expert guidance for Azure Oracle. Covers troubleshooting, security, configuration, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Oracle. Covers troubleshooting, security, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -24,10 +24,9 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L32-L36 | Operational FAQs and fixes for common Oracle Database@Azure issues, including connectivity, performance, deployment, configuration, and known platform limitations. |
-| Security | L37-L41 | Configuring Oracle Transparent Data Encryption (TDE) to use Azure Key Vault, including key management, integration steps, and security best practices. |
-| Configuration | L42-L46 | Designing and configuring network architecture for Oracle AI Database@Azure clusters, including VNet peering, private endpoints, connectivity, and security considerations. |
-| Integrations & Coding Patterns | L47-L50 | Configuring Oracle Exadata log export to Azure Monitor and Microsoft Sentinel, including pipelines, data formats, and setup for monitoring and security analytics. |
+| Troubleshooting | L31-L35 | Operational FAQs and fixes for common Oracle Database@Azure issues, including connectivity, performance, deployment, configuration, and known platform limitations. |
+| Security | L36-L40 | Configuring Oracle Transparent Data Encryption (TDE) to use Azure Key Vault, including key management, integration steps, and security best practices. |
+| Integrations & Coding Patterns | L41-L44 | Configuring Oracle Exadata log export to Azure Monitor and Microsoft Sentinel, including pipelines, data formats, and setup for monitoring and security analytics. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -38,11 +37,6 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Configure Oracle TDE keys with Azure Key Vault | https://learn.microsoft.com/en-us/azure/oracle/oracle-db/manage-oracle-transparent-data-encryption-azure-key-vault |
-
-### Configuration
-| Topic | URL |
-|-------|-----|
-| Plan networking for Oracle AI Database@Azure clusters | https://learn.microsoft.com/en-us/azure/oracle/oracle-db/oracle-database-network-plan |
 
 ### Integrations & Coding Patterns
 | Topic | URL |

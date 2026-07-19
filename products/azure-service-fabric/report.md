@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-05'
+generated_at: '2026-07-19'
 category_descriptions:
   architecture-patterns: 'Designing Service Fabric cluster architecture: cross-AZ
     replica rings, CRP/CRM internals, service affinity, movement cost, defragmentation,
@@ -7,12 +7,12 @@ category_descriptions:
   configuration: 'Configuring and operating Service Fabric clusters and apps: networking,
     scaling, backup/restore, manifests, actors, containers, monitoring/telemetry,
     resource governance, and test/fault tools.'
-  decision-making: 'Guidance on planning and sizing Service Fabric clusters: OS/disk
-    choices, stateless node types, capacity/durability/reliability planning, version
-    selection, and migration targets for Cloud Services workloads.'
-  best-practices: Best-practice guidance for designing, scaling, upgrading, testing,
-    monitoring, networking, backup/restore, and data/actor management in Azure Service
-    Fabric clusters and apps.
+  decision-making: 'Guidance on planning and sizing Service Fabric clusters: choosing
+    OS, versions, disk types, stateless node types, capacity/durability, and migration
+    targets for Cloud Services workloads.'
+  best-practices: Best practices for designing, deploying, upgrading, testing, monitoring,
+    and operating Azure Service Fabric apps and clusters, including Reliable Collections/Actors,
+    backup/restore, networking, capacity, and DR.
   security: 'Securing Service Fabric clusters/apps: cert and Entra auth, managed identities
     and secrets, disk encryption, network/DDoS/IP policies, remoting/endpoint security,
     and security best practices.'
@@ -31,17 +31,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Service Fabric development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when designing Service Fabric clusters, Reliable Services/Actors, reverse proxy/API
-  gateways, CI/CD upgrades, or sfctl/PowerShell ops, and other Azure Service Fabric
-  related development tasks. Not for Azure Cloud Services (use azure-cloud-services),
-  Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Container Apps
-  (use azure-container-apps), Azure App Service (use azure-app-service).
-use_when: Use when designing Service Fabric clusters, Reliable Services/Actors, reverse
-  proxy/API gateways, CI/CD upgrades, or sfctl/PowerShell ops, and other Azure Service
-  Fabric related development tasks.
-confusable_not_for: Not for Azure Cloud Services (use azure-cloud-services), Azure
-  Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Container Apps (use
-  azure-container-apps), Azure App Service (use azure-app-service).
+  Use when designing Service Fabric clusters, Reliable Services/Actors, backup/restore,
+  reverse proxy, or sfctl/PowerShell automation, and other Azure Service Fabric related
+  development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
+  Azure Container Apps (use azure-container-apps), Azure Cloud Services (use azure-cloud-services),
+  Azure Virtual Machines (use azure-virtual-machines).
+use_when: Use when designing Service Fabric clusters, Reliable Services/Actors, backup/restore,
+  reverse proxy, or sfctl/PowerShell automation, and other Azure Service Fabric related
+  development tasks.
+confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
+  Azure Container Apps (use azure-container-apps), Azure Cloud Services (use azure-cloud-services),
+  Azure Virtual Machines (use azure-virtual-machines).
 ---
 # Azure Service Fabric Crawl Report
 
@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Cloud Services (use azure-cloud-services), Azu
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 405
+- **Updated Pages**: 2
+- **Unchanged**: 403
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-fabric/azure-service-fabric.csv`
 
@@ -76,6 +76,13 @@ confusable_not_for: Not for Azure Cloud Services (use azure-cloud-services), Azu
 | *(Unclassified)* | 75 | 18.5% |
 
 ## Changes
+
+### Updated Pages
+
+- [Reliable Collections Throttling Guidelines](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-reliable-services-reliable-collections-throttling-guidelines)
+  - Updated: 2026-06-29T22:04:00.000Z → 2026-07-16T06:03:00.000Z
+- [Service Fabric versions](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-versions)
+  - Updated: 2026-06-25T08:00:00.000Z → 2026-07-02T08:00:00.000Z
 
 ## Classified Pages
 
@@ -194,7 +201,7 @@ confusable_not_for: Not for Azure Cloud Services (use azure-cloud-services), Azu
 | [Networking](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-best-practices-networking) | best-practices | 0.78 | The article provides product-specific DO/DON'T guidance for configuring Service Fabric networking resources (VNETs, IP ranges, load balancers, NSGs) and references Service Fabric–specific networking patterns. This is actionable, service-specific advice rather than generic networking concepts, fitting the best-practices category. |
 | [Plan cluster capacity](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-capacity) | decision-making | 0.78 | Capacity planning considerations for node types, durability, and reliability; likely includes concrete thresholds (e.g., reliability levels vs node counts) and guidance on when to choose each, which is decision-making content. |
 | [Reliable Collection guidelines & recommendations](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-reliable-services-reliable-collections-guidelines) | best-practices | 0.78 | The page is explicitly a set of guidelines and recommendations for using Reliable State Manager and Reliable Collections, focusing on avoiding common pitfalls and product-specific usage patterns. It provides concrete DO/DON'T style advice and gotchas unique to Service Fabric Reliable Collections rather than generic concepts, which aligns with the best-practices sub-skill type. |
-| [Reliable Collections Throttling Guidelines](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-reliable-services-reliable-collections-throttling-guidelines) | best-practices | 0.78 | The article describes how throttling manifests specifically in Service Fabric Reliable Collections and provides concrete guidance on avoiding and handling throttling scenarios (for example, patterns for write operations, replication considerations, and platform-specific behaviors). This is product-specific, actionable guidance on edge cases and gotchas, which aligns with the best-practices sub-skill. |
+| [Reliable Collections Throttling Guidelines](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-reliable-services-reliable-collections-throttling-guidelines) | best-practices | 0.78 | The article provides product-specific guidance on how throttling manifests in Azure Service Fabric Reliable Collections and concrete recommendations to avoid and handle it (for example, how to structure writes, batching, and handling replication-related throttling). This is actionable, service-specific best-practice guidance rather than generic concepts, but it does not primarily focus on numeric limits/quotas or configuration matrices. |
 | [Run a service startup script as a local user or system account](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-run-script-at-service-startup) | configuration | 0.78 | Shows how to define setup entry points and RunAs policies in the service manifest, including specific manifest elements and behavior unique to Service Fabric. |
 | [Scale up non-primary node type](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-scale-up-non-primary-node-type) | deployment | 0.78 | Similar to primary node type scaling but for nonprimary; includes detailed Service Fabric-specific deployment steps and constraints for vertical scaling. |
 | [Scale up primary node type](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-scale-up-primary-node-type) | deployment | 0.78 | Explains safe vertical scaling by adding new node types and removing old ones; includes Service Fabric-specific steps and constraints (no in-place SKU upgrades). |
@@ -328,7 +335,7 @@ confusable_not_for: Not for Azure Cloud Services (use azure-cloud-services), Azu
 | [Service Fabric cluster with ARM template](https://learn.microsoft.com/en-us/azure/service-fabric/quickstart-cluster-template) | deployment | 0.70 | ARM template quickstart for Service Fabric test clusters; includes cluster resource schema and required properties that are product-specific. |
 | [Service Fabric cluster with Bicep](https://learn.microsoft.com/en-us/azure/service-fabric/quickstart-cluster-bicep) | deployment | 0.70 | Bicep-based deployment of a Service Fabric test cluster; includes resource definitions and cluster-specific deployment parameters unique to Service Fabric. |
 | [Service Fabric events](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-diagnostics-events) | configuration | 0.70 | Describes structured events, their mapping to entities, and provides a list; product-specific event schema and usage patterns qualify as expert configuration knowledge. |
-| [Service Fabric versions](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-versions) | decision-making | 0.70 | Page provides detailed tables of actively supported Service Fabric and platform versions, with version-specific support status and links to release notes. This is expert, time-sensitive knowledge used to decide which cluster/runtime versions to deploy or upgrade to, fitting decision-making around version selection rather than generic concepts. |
+| [Service Fabric versions](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-versions) | decision-making | 0.70 | Page contains detailed tables of currently supported Service Fabric and platform runtime versions, with specific version numbers and support status. This is expert, time-sensitive knowledge used to decide which cluster/runtime versions to deploy or upgrade to, fitting decision-making around version selection and support lifecycle rather than generic concepts. |
 | [Service Remoting - C#](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-reliable-services-communication-remoting) | integrations | 0.70 | Shows how to configure Service Fabric remoting for C# services with specific APIs, listener setup, and parameters unique to Service Fabric remoting. |
 | [Service Remoting - Java](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-reliable-services-communication-remoting-java) | integrations | 0.70 | Provides Java-specific Service Fabric remoting setup with concrete API usage and configuration patterns unique to this product. |
 | [Service movement](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-resource-manager-movement-cost) | architecture-patterns | 0.70 | Explains movement cost concept and how to specify it to meet architectural needs; includes product-specific trade-offs and configuration patterns. |

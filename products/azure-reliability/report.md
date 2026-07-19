@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-12'
+generated_at: '2026-07-19'
 category_descriptions:
   decision-making: Guidance on choosing Azure regions and services (regional, zonal,
     multiregion, nonregional), using region pairs, and designing multi-region architectures
@@ -37,9 +37,9 @@ confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Monit
 
 ### Incremental Update
 - **New Pages**: 1
-- **Updated Pages**: 0
-- **Unchanged**: 108
-- **Deleted Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 107
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-reliability/azure-reliability.csv`
 
 ## Classification Statistics
@@ -56,7 +56,16 @@ confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Monit
 
 ### New Pages
 
-- [Azure Automation](https://learn.microsoft.com/en-us/azure/reliability/reliability-automation)
+- [Azure Storage Mover](https://learn.microsoft.com/en-us/azure/reliability/reliability-storage-mover)
+
+### Updated Pages
+
+- [Azure NetApp Files](https://learn.microsoft.com/en-us/azure/reliability/reliability-netapp-files)
+  - Updated: 2026-01-22T18:34:00.000Z → 2026-07-07T08:00:00.000Z
+
+### Deleted Pages
+
+- ~~Azure Storage Mover~~ (https://learn.microsoft.com/en-us/azure/reliability/reliability-azure-storage-mover)
 
 ## Classified Pages
 
@@ -137,7 +146,6 @@ confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Monit
 | [Azure Firewall](https://learn.microsoft.com/en-us/azure/reliability/reliability-firewall) | 0.40 | Reliability in Azure Firewall including SLA mention; summary suggests shared-responsibility and resiliency concepts, not detailed limits or configs. |
 | [Azure Key Vault](https://learn.microsoft.com/en-us/azure/reliability/reliability-key-vault) | 0.40 | Reliability in Azure Key Vault; summary mentions backup/restore and SLA but not specific limits, configs, or error codes. |
 | [Azure NAT Gateway](https://learn.microsoft.com/en-us/azure/reliability/reliability-nat-gateway) | 0.40 | Reliability in Azure NAT Gateway; summary is high-level and doesn’t indicate specific quotas, configs, or troubleshooting mappings. |
-| [Azure NetApp Files](https://learn.microsoft.com/en-us/azure/reliability/reliability-netapp-files) | 0.40 | Reliability in Azure NetApp Files; mentions backup and SLA but summary doesn’t indicate concrete limits or config parameters. |
 | [Azure Table Storage](https://learn.microsoft.com/en-us/azure/reliability/reliability-storage-table) | 0.40 | Reliability in Azure Table Storage; summary is conceptual and doesn’t expose specific limits, configs, or troubleshooting mappings. |
 | [Azure Application Gateway for Containers](https://learn.microsoft.com/en-us/azure/reliability/reliability-app-gateway-containers) | 0.30 | Reliability/zone redundancy overview for Application Gateway for Containers; summary suggests conceptual guidance without concrete limits, configs, or error mappings. |
 | [Azure Bastion](https://learn.microsoft.com/en-us/azure/reliability/reliability-bastion) | 0.30 | Reliability overview for Azure Bastion; likely high-level resiliency description without detailed configuration tables or numeric thresholds. |
@@ -145,13 +153,14 @@ confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Monit
 | [Azure Container Registry](https://learn.microsoft.com/en-us/azure/reliability/reliability-container-registry) | 0.30 | Reliability overview for Azure Container Registry; summary suggests conceptual shared-responsibility and resiliency patterns without concrete limits, configs, or error-code style troubleshooting. |
 | [Azure Data Explorer](https://learn.microsoft.com/en-us/azure/reliability/reliability-data-explorer) | 0.30 | Reliability overview for Azure Data Explorer; summary focuses on shared responsibility and general resiliency concepts. No evidence of concrete limits, configuration tables, error codes, or quantified decision criteria in the provided text. |
 | [Azure Key Vault Managed HSM](https://learn.microsoft.com/en-us/azure/reliability/reliability-managed-hsm) | 0.30 | Reliability article for Azure Key Vault Managed HSM focuses on built-in reliability features and shared responsibility concepts; the summary does not indicate detailed limits, configuration parameter tables, or troubleshooting mappings. |
+| [Azure NetApp Files](https://learn.microsoft.com/en-us/azure/reliability/reliability-netapp-files) | 0.30 | Reliability overview for Azure NetApp Files focusing on shared responsibility, resiliency concepts, and backup/SLA discussion. No evidence of specific numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices; content appears conceptual rather than detailed expert configuration or limits. |
 | [Azure SQL Database](https://learn.microsoft.com/en-us/azure/reliability/reliability-sql-database) | 0.30 | Page appears to be a conceptual reliability overview for Azure SQL Database (shared responsibility, resiliency concepts, backup/restore, SLAs) without clear evidence of specific numeric limits, configuration tables, error-code-based troubleshooting, or detailed decision matrices. Likely high-level guidance rather than expert-only configuration or pattern details. |
 | [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/reliability/reliability-sql-managed-instance) | 0.30 | Reliability overview for Azure SQL Managed Instance; focuses on high availability, backups, and shared responsibility conceptually, not on numeric limits or configuration parameter tables. |
 | [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/reliability/reliability-sql-managed-instance) | 0.30 | Reliability overview for Azure SQL Managed Instance; focuses on high availability, backups, and shared responsibility conceptually, not on numeric limits or configuration parameter tables. |
 | [Azure Service Bus](https://learn.microsoft.com/en-us/azure/reliability/reliability-service-bus) | 0.30 | Reliability in Azure Service Bus; summary highlights built-in reliability features and shared responsibility at a conceptual level, without specific limits, configs, or troubleshooting details. |
 | [Azure Service Bus](https://learn.microsoft.com/en-us/azure/reliability/reliability-service-bus) | 0.30 | Reliability in Azure Service Bus; summary highlights built-in reliability features and shared responsibility at a conceptual level, without specific limits, configs, or troubleshooting details. |
 | [Azure Storage Actions](https://learn.microsoft.com/en-us/azure/reliability/reliability-storage-actions) | 0.30 | Reliability in Azure Storage Actions; summary focuses on zones and DR without indicating numeric limits or detailed configuration tables. |
-| [Azure Storage Mover](https://learn.microsoft.com/en-us/azure/reliability/reliability-azure-storage-mover) | 0.30 | Reliability in Azure Storage Mover; high-level resiliency and DR description, no clear evidence of numeric or config expert details. |
+| [Azure Storage Mover](https://learn.microsoft.com/en-us/azure/reliability/reliability-storage-mover) | 0.30 | Reliability overview for Azure Storage Mover describing behavior under outages and shared responsibility. The summary does not indicate specific numeric limits, configuration settings, or error-code-based troubleshooting; it appears to be conceptual guidance rather than detailed expert knowledge. |
 | [Azure Virtual Machine Scale Sets](https://learn.microsoft.com/en-us/azure/reliability/reliability-virtual-machine-scale-sets) | 0.30 | Reliability in Virtual Machine Scale Sets; summary is conceptual about resiliency and scaling, without explicit expert-level limits, configs, or troubleshooting mappings. |
 | [Azure Virtual Machine Scale Sets](https://learn.microsoft.com/en-us/azure/reliability/reliability-virtual-machine-scale-sets) | 0.30 | Reliability in Virtual Machine Scale Sets; summary is conceptual about resiliency and scaling, without explicit expert-level limits, configs, or troubleshooting mappings. |
 | [Azure Virtual Machines](https://learn.microsoft.com/en-us/azure/reliability/reliability-virtual-machines) | 0.30 | Reliability in Azure Virtual Machines; description emphasizes shared responsibility and general resiliency concepts, not detailed numeric limits or configuration options. |

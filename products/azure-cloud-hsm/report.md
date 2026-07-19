@@ -38,8 +38,8 @@ confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 5
-- **Unchanged**: 15
+- **Updated Pages**: 0
+- **Unchanged**: 20
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cloud-hsm/azure-cloud-hsm.csv`
 
@@ -55,19 +55,6 @@ confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure
 | *(Unclassified)* | 6 | 30.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [About Azure Cloud HSM](https://learn.microsoft.com/en-us/azure/cloud-hsm/overview)
-  - Updated: 2026-04-01T17:22:00.000Z → 2026-07-06T08:00:00.000Z
-- [Certificate storage](https://learn.microsoft.com/en-us/azure/cloud-hsm/tutorial-certificate-storage)
-  - Updated: 2026-03-26T08:00:00.000Z → 2026-07-07T07:36:00.000Z
-- [Azure Cloud HSM Integration Guides](https://learn.microsoft.com/en-us/azure/cloud-hsm/integration-guides)
-  - Updated: 2025-07-17T17:15:00.000Z → 2026-07-07T07:36:00.000Z
-- [Secure your Cloud HSM](https://learn.microsoft.com/en-us/azure/cloud-hsm/secure-cloud-hsm)
-  - Updated: 2026-04-08T08:00:00.000Z → 2026-07-10T22:34:00.000Z
-- [Network Security](https://learn.microsoft.com/en-us/azure/cloud-hsm/network-security)
-  - Updated: 2025-06-13T17:01:00.000Z → 2026-07-07T07:36:00.000Z
 
 ## Classified Pages
 

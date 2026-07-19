@@ -30,9 +30,9 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L72-L84 | Patterns and best practices for Logic Apps workflow design: DR across regions, API calling patterns, rules engine behavior, Service Bus convoys, and multi-agent/prompt-chaining loop architectures. |
 | Limits & Quotas | L85-L93 | Limits, quotas, and tuning for Logic Apps: JS inline code limits, SQL result/timeouts, connector pagination, large-message chunking, config limits, and metering/billing behavior. |
 | Security | L94-L110 | Securing Logic Apps: identities, Entra/OAuth auth, Easy Auth for agents, private endpoints/storage, certificates, and Azure Policy/Defender controls for access, data, and connector usage. |
-| Configuration | L111-L150 | Configuring Logic Apps behavior: workflow JSON, triggers, loops/branches, B2B/integration accounts, monitoring/logging, on-prem connectivity, storage, redundancy, and telemetry. |
-| Integrations & Coding Patterns | L151-L256 | Integrating Logic Apps with Azure/OpenAI, SAP, IBM, storage, messaging, B2B/EDI, and HL7, plus coding patterns, SDK-based workflows, custom connectors, and automated testing. |
-| Deployment | L257-L278 | Deploying Logic Apps (Standard & Consumption) with ARM/Bicep/DevOps, migrating/ cloning workflows, hybrid setups, deployment slots, and CI/CD via VS Code, DevOps, and Deployment Center. |
+| Configuration | L111-L149 | Configuring Logic Apps behavior: workflow JSON, triggers, loops/branches, B2B/integration accounts, monitoring/logging, on-prem connectivity, storage, redundancy, and telemetry. |
+| Integrations & Coding Patterns | L150-L255 | Integrating Logic Apps with Azure/OpenAI, SAP, IBM, storage, messaging, B2B/EDI, and HL7, plus coding patterns, SDK-based workflows, custom connectors, and automated testing. |
+| Deployment | L256-L277 | Deploying Logic Apps (Standard & Consumption) with ARM/Bicep/DevOps, migrating/ cloning workflows, hybrid setups, deployment slots, and CI/CD via VS Code, DevOps, and Deployment Center. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -114,7 +114,6 @@ This skill requires **network access** to fetch documentation content:
 | Execute inline PowerShell in Standard Logic Apps | https://learn.microsoft.com/en-us/azure/logic-apps/add-run-powershell-scripts |
 | Configure recurring schedules for Logic Apps triggers | https://learn.microsoft.com/en-us/azure/logic-apps/concepts-schedule-automated-recurring-tasks-workflows |
 | Configure Logic Apps connections to on-premises data sources | https://learn.microsoft.com/en-us/azure/logic-apps/connect-on-premises-data-sources |
-| Configure hosted MCP servers in Azure Connector Namespace | https://learn.microsoft.com/en-us/azure/logic-apps/connector-namespace/hosted-mcp-dev-guide |
 | Create Kusto queries for Logic Apps monitoring data | https://learn.microsoft.com/en-us/azure/logic-apps/create-monitoring-tracking-queries |
 | Configure app and host settings for Standard Logic Apps | https://learn.microsoft.com/en-us/azure/logic-apps/edit-app-settings-host-settings |
 | Enable enhanced Application Insights telemetry for Logic Apps Standard | https://learn.microsoft.com/en-us/azure/logic-apps/enable-enhanced-telemetry-standard-workflows |

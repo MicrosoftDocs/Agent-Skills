@@ -41,8 +41,8 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 36
+- **Updated Pages**: 0
+- **Unchanged**: 37
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-confidential-ledger/azure-confidential-ledger.csv`
 
@@ -58,11 +58,6 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 | *(Unclassified)* | 16 | 43.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [Secure Confidential Computing Ledger](https://learn.microsoft.com/en-us/azure/confidential-ledger/secure-confidential-ledger)
-  - Updated: 2026-04-23T08:00:00.000Z → 2026-07-10T22:34:00.000Z
 
 ## Classified Pages
 

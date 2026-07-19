@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-06-21'
+generated_at: '2026-07-19'
 category_descriptions:
   configuration: 'Configuring DevTest Labs environments and VMs: images, networks,
     policies, costs, tags, ARM templates, artifacts, activity logs, alerts, IPs, and
     resource groups.'
-  integrations: 'Automating DevTest Labs with ARM, PowerShell, CLI, REST, and Functions:
-    user/VM management, VHD/custom image workflows, cross-lab import, reporting, and
-    VM start/stop/start-order control.'
+  integrations: 'Automating DevTest Labs with ARM, PowerShell, CLI, Functions, and
+    Automation: creating/importing VMs, managing images/VHDs, environments, users,
+    VM start/stop, and cross-lab usage reporting.'
   best-practices: Guidance on organizing and collaborating on DevTest Labs infrastructure
     as code across teams, including branching, environments, and distributed resource
     development workflows
@@ -30,13 +30,13 @@ category_descriptions:
 skill_description: Expert knowledge for Azure DevTest Labs development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  managing DevTest Labs images, artifacts, ARM/REST automation, VM start/stop, or
-  hub-spoke lab networks, and other Azure DevTest Labs related development tasks.
-  Not for Azure Lab Services (use azure-lab-services), Azure Dev Box (use azure-dev-box),
+  managing lab VM images, ARM/CI-CD automation, RBAC/Key Vault security, hub-spoke
+  networking, or quotas, and other Azure DevTest Labs related development tasks. Not
+  for Azure Lab Services (use azure-lab-services), Azure Dev Box (use azure-dev-box),
   Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Desktop (use
   azure-virtual-desktop).
-use_when: Use when managing DevTest Labs images, artifacts, ARM/REST automation, VM
-  start/stop, or hub-spoke lab networks, and other Azure DevTest Labs related development
+use_when: Use when managing lab VM images, ARM/CI-CD automation, RBAC/Key Vault security,
+  hub-spoke networking, or quotas, and other Azure DevTest Labs related development
   tasks.
 confusable_not_for: Not for Azure Lab Services (use azure-lab-services), Azure Dev
   Box (use azure-dev-box), Azure Virtual Machines (use azure-virtual-machines), Azure
@@ -54,9 +54,9 @@ confusable_not_for: Not for Azure Lab Services (use azure-lab-services), Azure D
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 97
-- **Deleted Pages**: 1
+- **Updated Pages**: 1
+- **Unchanged**: 96
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-devtest-labs/azure-devtest-labs.csv`
 
 ## Classification Statistics
@@ -65,10 +65,10 @@ confusable_not_for: Not for Azure Lab Services (use azure-lab-services), Azure D
 |------|-------|------------|
 | architecture-patterns | 1 | 1.0% |
 | best-practices | 1 | 1.0% |
-| configuration | 19 | 19.6% |
+| configuration | 18 | 18.6% |
 | decision-making | 5 | 5.2% |
 | deployment | 4 | 4.1% |
-| integrations | 15 | 15.5% |
+| integrations | 16 | 16.5% |
 | limits-quotas | 1 | 1.0% |
 | security | 14 | 14.4% |
 | troubleshooting | 4 | 4.1% |
@@ -76,9 +76,10 @@ confusable_not_for: Not for Azure Lab Services (use azure-lab-services), Azure D
 
 ## Changes
 
-### Deleted Pages
+### Updated Pages
 
-- ~~Use DevTest Labs in Azure Pipelines build and release pipelines~~ (https://learn.microsoft.com/en-us/azure/devtest-labs/use-devtest-labs-build-release-pipelines)
+- [Create environments from ARM templates](https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-create-environment-from-arm)
+  - Updated: 2025-12-16T23:42:00.000Z → 2026-07-15T17:11:00.000Z
 
 ## Classified Pages
 
@@ -106,7 +107,6 @@ confusable_not_for: Not for Azure Lab Services (use azure-lab-services), Azure D
 | [Connect via browser on VMs with Bastion](https://learn.microsoft.com/en-us/azure/devtest-labs/enable-browser-connection-lab-virtual-machines) | security | 0.70 | Integration with Azure Bastion for browser access; includes product-specific security configuration and connectivity settings. |
 | [Create activity log alerts](https://learn.microsoft.com/en-us/azure/devtest-labs/create-alerts) | configuration | 0.70 | Creating alerts for lab events requires specific signal types, scopes, and conditions tied to DevTest Labs operations, which are product-specific configuration details. |
 | [Create custom artifacts](https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-artifact-author) | configuration | 0.70 | Custom artifact creation uses an artifact definition JSON schema and script structure that are product-specific configuration details (parameter names, structure, and usage) that go beyond generic knowledge. |
-| [Create environments from ARM templates](https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-create-environment-from-arm) | configuration | 0.70 | Shows how to define multi-VM/PaaS environments via ARM; likely includes environment resource types and properties specific to DevTest Labs. |
 | [Customize permissions with custom roles](https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-grant-user-permissions-to-specific-lab-policies) | security | 0.70 | Focuses on granting user permissions to specific lab policies; involves detailed RBAC/permission configuration unique to DevTest Labs. |
 | [Define start order for lab VMs](https://learn.microsoft.com/en-us/azure/devtest-labs/start-machines-use-automation-runbooks) | integrations | 0.70 | Uses Azure Automation runbooks and VM tags to orchestrate startup order; includes specific script patterns and tag usage unique to DevTest Labs integration. |
 | [Manage formulas](https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-manage-formulas) | configuration | 0.70 | Explains formula objects (default property lists) and how to create/manage them; includes DevTest Labs-specific configuration fields and behaviors. |
@@ -124,6 +124,7 @@ confusable_not_for: Not for Azure Lab Services (use azure-lab-services), Azure D
 | [Use Azure Functions to extend DevTest Labs](https://learn.microsoft.com/en-us/azure/devtest-labs/extend-devtest-labs-azure-functions) | integrations | 0.70 | Shows how to integrate DevTest Labs with Azure Functions; likely includes bindings, triggers, and configuration parameters specific to DevTest Labs events and APIs. |
 | [Use Azure managed identities to deploy environments](https://learn.microsoft.com/en-us/azure/devtest-labs/use-managed-identities-environments) | security | 0.70 | Covers using managed identities to deploy environments that reference external Azure resources. This typically includes specific identity types (system-assigned vs user-assigned), required role assignments, and scope details, which are product-specific security configuration knowledge. |
 | [View activity logs](https://learn.microsoft.com/en-us/azure/devtest-labs/activity-logs) | configuration | 0.70 | Explains how DevTest Labs uses Azure Monitor activity logs; likely includes specific operation names, categories, and filters relevant to DevTest Labs resources. |
+| [Create environments from ARM templates](https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-create-environment-from-arm) | integrations | 0.68 | The article provides product-specific guidance on using Azure Resource Manager templates with Azure DevTest Labs environments, including how resources are grouped, lifecycle behavior, and cost tracking specifics for multi-VM and PaaS setups. This is an integration/coding pattern between DevTest Labs and ARM templates rather than generic deployment or configuration, and includes details unique to this service combination. |
 | [Add artifacts to a VM](https://learn.microsoft.com/en-us/azure/devtest-labs/add-artifact-vm) | configuration | 0.65 | Describes artifact configuration via portal and PowerShell, including artifact sources and parameters; these are product-specific configuration patterns. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-vmcli) | integrations | 0.65 | CLI quickstart for DevTest Labs VMs will include az command groups, flags, and parameter usage specific to DevTest Labs, fitting integrations & coding patterns. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/devtest-labs/samples-cli) | integrations | 0.65 | CLI sample scripts for creating and managing DevTest Labs VMs; contains concrete command parameters and patterns specific to this service. |

@@ -41,8 +41,8 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Resource Mana
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 42
+- **Updated Pages**: 0
+- **Unchanged**: 43
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-blueprints/azure-blueprints.csv`
 
@@ -59,11 +59,6 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Resource Mana
 | *(Unclassified)* | 14 | 32.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [Migrate to template specs](https://learn.microsoft.com/en-us/azure/governance/blueprints/migrate-to-template-specs)
-  - Updated: 2026-06-24T05:15:00.000Z → 2026-06-26T08:00:00.000Z
 
 ## Classified Pages
 

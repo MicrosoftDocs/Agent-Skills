@@ -1,9 +1,9 @@
 ---
 name: azure-machine-learning
-description: Expert knowledge for Azure Machine Learning development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Azure ML workspaces, jobs/pipelines, online/batch endpoints, AutoML, or Prompt Flow/LLM workloads, and other Azure Machine Learning related development tasks. Not for Azure Databricks (use azure-databricks), Azure Synapse Analytics (use azure-synapse-analytics), Azure Data Science Virtual Machines (use azure-data-science-vm), Azure HDInsight (use azure-hdinsight).
+description: Expert knowledge for Azure Machine Learning development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Azure ML jobs/endpoints, AutoML, registries, feature stores, or prompt flow/LLM tools, and other Azure Machine Learning related development tasks. Not for Azure Databricks (use azure-databricks), Azure Synapse Analytics (use azure-synapse-analytics), Azure Data Science Virtual Machines (use azure-data-science-vm), Azure HDInsight (use azure-hdinsight).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-12"
+  generated_at: "2026-07-19"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Machine Learning Skill
@@ -30,7 +30,7 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L122-L128 | Designing Azure ML inference architectures: choosing endpoint types, planning real-time online endpoints, and structuring data movement and multistep pipeline components. |
 | Limits & Quotas | L129-L137 | Info on Azure ML regional/sovereign availability, quotas and service limits, supported VM SKUs, and how to plan deployment capacity within those constraints |
 | Security | L138-L191 | Securing Azure ML: encryption, auth/RBAC, secrets, network isolation/VNets, managed identity, data exfiltration, policies/compliance, and secure endpoints, training, workspaces, and prompt flow. |
-| Configuration | L192-L453 | Configuring Azure ML components, jobs, compute, data, networking, monitoring, AutoML, Prompt Flow, and YAML/CLI settings for training, deployment, and responsible AI. |
+| Configuration | L192-L453 | Configuring Azure ML: designer components, AutoML, compute, networking, data, monitoring, registries, environments, and full CLI/YAML schemas for jobs, deployments, feature stores, and connections. |
 | Integrations & Coding Patterns | L454-L511 | Integrating Azure ML with data/storage, Spark/Databricks/Synapse, MLflow, REST APIs, batch endpoints, and prompt flow tools for LLM/RAG, deployment, logging, and pipelines. |
 | Deployment | L512-L553 | Deploying and operationalizing models, pipelines, and prompt flows to Azure ML endpoints (online/batch), plus CI/CD, MLOps, rollout strategies, and cross-workspace/registry deployments |
 
@@ -377,7 +377,7 @@ This skill requires **network access** to fetch documentation content:
 | View and tag costs for Azure ML managed online endpoints | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-view-online-endpoints-costs?view=azureml-api-2 |
 | Configure VS Code remote sessions to Azure ML compute | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-work-in-vs-code-remote?view=azureml-api-2 |
 | Configure serverless Spark compute for Azure ML notebooks | https://learn.microsoft.com/en-us/azure/machine-learning/interactive-data-wrangling-with-apache-spark-azure-ml?view=azureml-api-2 |
-| Reference Azure Machine Learning monitoring metrics and logs | https://learn.microsoft.com/en-us/azure/machine-learning/monitor-azure-machine-learning-reference?view=azureml-api-2 |
+| Reference monitoring metrics for Azure Machine Learning | https://learn.microsoft.com/en-us/azure/machine-learning/monitor-azure-machine-learning-reference?view=azureml-api-2 |
 | Run batch evaluations for Prompt Flow at scale | https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/how-to-bulk-test-evaluate-flow?view=azureml-api-2 |
 | Customize compute session base images for Azure ML prompt flow | https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/how-to-customize-session-base-image?view=azureml-api-2 |
 | Create and customize evaluation flows and metrics | https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/how-to-develop-an-evaluation-flow?view=azureml-api-2 |

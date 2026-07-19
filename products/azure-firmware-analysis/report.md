@@ -37,8 +37,8 @@ confusable_not_for: Not for Azure Defender For Iot (use azure-defender-for-iot),
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 14
+- **Updated Pages**: 0
+- **Unchanged**: 16
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-firmware-analysis/azure-firmware-analysis.csv`
 
@@ -53,13 +53,6 @@ confusable_not_for: Not for Azure Defender For Iot (use azure-defender-for-iot),
 | *(Unclassified)* | 5 | 31.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [FAQ](https://learn.microsoft.com/en-us/azure/firmware-analysis/firmware-analysis-faq)
-  - Updated: 2026-05-27T16:50:00.000Z → 2026-07-10T17:20:00.000Z
-- [What's new?](https://learn.microsoft.com/en-us/azure/firmware-analysis/release-notes)
-  - Updated: 2026-05-26T08:00:00.000Z → 2026-07-07T08:00:00.000Z
 
 ## Classified Pages
 

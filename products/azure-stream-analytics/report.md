@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-06-14'
+generated_at: '2026-07-19'
 category_descriptions:
   configuration: 'Configuring Stream Analytics jobs: inputs, outputs (SQL, Cosmos
     DB, Event Hubs, Kafka, Power BI, Delta Lake, etc.), autoscale, ordering, error
-    handling, monitoring, and compatibility settings.'
+    handling, monitoring, and compatibility.'
   security: Securing Stream Analytics jobs with managed identities, private endpoints,
     VNets, data protection, credential rotation, and Azure Policy for outputs like
     Event Hubs, SQL, ADX, Cosmos DB, and Power BI
@@ -31,17 +31,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Stream Analytics development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when building ASA jobs with Event Hubs/Kafka, Cosmos DB/SQL/ADX outputs, ML/AML,
+  Use when building jobs with Event Hubs/Kafka, Cosmos DB/SQL outputs, ML/AML integration,
   IoT Edge, or Power BI, and other Azure Stream Analytics related development tasks.
-  Not for Azure Data Factory (use azure-data-factory), Azure Synapse Analytics (use
-  azure-synapse-analytics), Azure Databricks (use azure-databricks), Azure Event Hubs
-  (use azure-event-hubs).
-use_when: Use when building ASA jobs with Event Hubs/Kafka, Cosmos DB/SQL/ADX outputs,
-  ML/AML, IoT Edge, or Power BI, and other Azure Stream Analytics related development
+  Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure Data Factory
+  (use azure-data-factory), Azure Event Hubs (use azure-event-hubs), Azure Data Explorer
+  (use azure-data-explorer).
+use_when: Use when building jobs with Event Hubs/Kafka, Cosmos DB/SQL outputs, ML/AML
+  integration, IoT Edge, or Power BI, and other Azure Stream Analytics related development
   tasks.
-confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure Synapse
-  Analytics (use azure-synapse-analytics), Azure Databricks (use azure-databricks),
-  Azure Event Hubs (use azure-event-hubs).
+confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics),
+  Azure Data Factory (use azure-data-factory), Azure Event Hubs (use azure-event-hubs),
+  Azure Data Explorer (use azure-data-explorer).
 ---
 # Azure Stream Analytics Crawl Report
 
@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure S
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 164
+- **Updated Pages**: 1
+- **Unchanged**: 163
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-stream-analytics/azure-stream-analytics.csv`
 
@@ -76,6 +76,11 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure S
 | *(Unclassified)* | 56 | 34.1% |
 
 ## Changes
+
+### Updated Pages
+
+- [Streaming data inputs](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-define-inputs)
+  - Updated: 2026-03-06T23:15:00.000Z → 2026-07-15T08:00:00.000Z
 
 ## Classified Pages
 
@@ -153,7 +158,6 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure S
 | [Scale cluster size](https://learn.microsoft.com/en-us/azure/stream-analytics/scale-cluster) | limits-quotas | 0.70 | Discusses cluster capacity measured in Streaming Units and constraints that total job SUs must not exceed cluster capacity; likely includes specific SU sizing guidance and constraints that are numeric and product-specific. |
 | [Service Bus topics](https://learn.microsoft.com/en-us/azure/stream-analytics/service-bus-topics-output) | configuration | 0.70 | Summary notes a table of property names for topic output and mentions partition behavior tied to SKU; this is concrete configuration behavior for this adapter. |
 | [Set up a pipeline with Azure DevOps](https://learn.microsoft.com/en-us/azure/stream-analytics/set-up-cicd-pipeline) | deployment | 0.70 | The article describes product-specific CI/CD setup for Azure Stream Analytics jobs using Azure DevOps build and release pipelines. It goes beyond generic deployment commands and includes Stream Analytics–specific tasks, artifacts, and pipeline configuration details that are not general knowledge, fitting the deployment sub-skill. |
-| [Streaming data inputs](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-define-inputs) | configuration | 0.70 | Page describes product-specific input configuration details (supported Azure resources, cross-subscription behavior, and exact supported compression types including exceptions for reference data and Avro handling). These are concrete, service-specific settings rather than generic concepts, fitting the configuration category best. |
 | [Table storage](https://learn.microsoft.com/en-us/azure/stream-analytics/table-storage-output) | configuration | 0.70 | Summary mentions a table of property names and descriptions for creating a table output, which is exactly a configuration-parameter reference. |
 | [Threshold-based rules](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-threshold-based-rules) | best-practices | 0.70 | Describes using reference data to build configurable threshold-based rules; provides a concrete product-specific pattern and gotchas for alerting solutions. |
 | [Update credentials](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-login-credentials-inputs-outputs) | security | 0.70 | Covers updating credentials and resuming jobs; this is identity/credential management with product-specific operational steps and constraints (must stop job, resume from last output). |
@@ -165,6 +169,7 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure S
 | [Increase throughput of your job](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-scale-jobs) | architecture-patterns | 0.68 | The page describes concrete scaling patterns for Azure Stream Analytics jobs (partitioning inputs, tuning queries, and configuring streaming units) and when to use them to increase throughput. This is product-specific architecture and scaling guidance beyond generic concepts, but not focused on explicit numeric limits/quotas. |
 | [Run job in your virtual network](https://learn.microsoft.com/en-us/azure/stream-analytics/run-job-in-virtual-network) | security | 0.68 | The page describes how to run Azure Stream Analytics jobs inside an Azure virtual network using private endpoints and service endpoints. It includes product-specific security configuration details such as which subresources/endpoints must be enabled, required network access patterns for inputs/outputs, and how to configure network isolation for the ASA job. These are concrete, service-specific security and network configuration patterns that go beyond generic concepts. |
 | [Set up CI/CD pipeline](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-tools-for-visual-studio-cicd) | deployment | 0.68 | Describes a NuGet package that adds MSBuild, local run, and deployment tooling; includes product-specific build/deploy configuration for CI/CD. |
+| [Streaming data inputs](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-define-inputs) | configuration | 0.68 | Page describes product-specific input configuration for Azure Stream Analytics (Event Hubs, IoT Hub, Blob, Kafka) including supported compression types (None, Gzip, Deflate) and special handling rules for compressed Avro and reference data. These are concrete, service-specific configuration capabilities and constraints that go beyond generic knowledge, but it does not focus on numeric limits/quotas, troubleshooting, or architecture patterns. |
 | [Time handling considerations](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-time-handling) | best-practices | 0.68 | The article provides product-specific guidance on choosing event vs. arrival time, configuring start times, and handling late/early events in Azure Stream Analytics jobs. It includes concrete, scenario-based recommendations and gotchas unique to Stream Analytics time semantics (watermarks, out-of-order handling, and time handling metrics), going beyond generic streaming concepts. While it is design-focused, it does not center on numeric limits/quotas or decision matrices with quantified thresholds, so best-practices is the closest fit. |
 | [Using API for IoT Edge jobs](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-cicd-api) | deployment | 0.68 | Focuses on using specific REST APIs to build CI/CD for Stream Analytics on IoT Edge; includes product-specific deployment API usage rather than generic tutorial content. |
 | [Deploy jobs with Bicep](https://learn.microsoft.com/en-us/azure/stream-analytics/cicd-deploy-with-bicep) | deployment | 0.67 | Bicep-based deployment of Stream Analytics jobs; involves product-specific resource types and properties in infrastructure-as-code. |

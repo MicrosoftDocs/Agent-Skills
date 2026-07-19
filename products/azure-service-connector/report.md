@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-21'
+generated_at: '2026-07-19'
 category_descriptions:
   security: 'Managing Service Connector security: required permissions, Microsoft
     Entra role assignments, and configuring auth methods (managed identity, service
@@ -44,8 +44,8 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 60
+- **Updated Pages**: 1
+- **Unchanged**: 59
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-connector/azure-service-connector.csv`
 
@@ -62,6 +62,11 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 | *(Unclassified)* | 20 | 33.3% |
 
 ## Changes
+
+### Updated Pages
+
+- [Service Connector internals](https://learn.microsoft.com/en-us/azure/service-connector/concept-service-connector-internals)
+  - Updated: 2025-09-29T08:00:00.000Z → 2026-07-17T11:42:00.000Z
 
 ## Classified Pages
 
@@ -118,7 +123,6 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 | [Store secrets in Key Vault](https://learn.microsoft.com/en-us/azure/service-connector/tutorial-portal-key-vault) | 0.45 | Tutorial for storing secrets in Key Vault via Service Connector; primarily a scenario walkthrough, not a general configuration or security reference with role tables. |
 | [Web app to MongoDB Atlas](https://learn.microsoft.com/en-us/azure/service-connector/howto-mongodb-atlas-service-connection) | 0.45 | Guide to connect apps to MongoDB Atlas via Service Connector; appears to be step-by-step with some auth/network setup but not a structured configuration reference or error-code mapping. |
 | [ASP.NET core app to App Configuration](https://learn.microsoft.com/en-us/azure/service-connector/tutorial-connect-web-app-app-configuration) | 0.40 | Tutorial connecting Web App to App Configuration via Service Connector; largely a guided example rather than a reference of settings, limits, or troubleshooting mappings. |
-| [Service Connector internals](https://learn.microsoft.com/en-us/azure/service-connector/concept-service-connector-internals) | 0.40 | Service Connector internals and architecture; conceptual explanation of internals and data flow, not focused on limits, configuration parameters, or decision matrices. |
 | [Connect to Azure Key Vault using CSI driver](https://learn.microsoft.com/en-us/azure/service-connector/tutorial-python-aks-keyvault-csi-driver) | 0.35 | AKS + Key Vault CSI driver tutorial; scenario-specific instructions, not a general configuration parameter or error reference. |
 | [Connect to Azure SQL Database](https://learn.microsoft.com/en-us/azure/service-connector/tutorial-python-aks-sql-database-connection-string) | 0.35 | AKS app to Azure SQL Database tutorial; scenario-based instructions rather than general configuration or troubleshooting content. |
 | [Python function with Azure Blob Storage as input](https://learn.microsoft.com/en-us/azure/service-connector/tutorial-python-functions-storage-blob-as-input) | 0.35 | Python Functions with Blob input tutorial; similar to other tutorials, mainly step-by-step instructions rather than expert configuration tables. |
@@ -131,4 +135,5 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 | [High availability](https://learn.microsoft.com/en-us/azure/service-connector/concept-availability) | 0.30 | High availability overview for Service Connector; summary indicates conceptual description of zones, redundancy, and failover without explicit configuration parameters, limits, or decision matrices. |
 | [Python app to PostgreSQL](https://learn.microsoft.com/en-us/azure/service-connector/tutorial-django-webapp-postgres-cli) | 0.30 | Primarily a step-by-step tutorial for deploying a Django app and wiring Service Connector; does not emphasize configuration tables, limits, or product-specific error mappings beyond generic tutorial usage. |
 | [Python function with Azure Table Storage as output](https://learn.microsoft.com/en-us/azure/service-connector/tutorial-python-functions-storage-table-as-output) | 0.20 | This is a step-by-step tutorial for wiring a Python Azure Function to Azure Table Storage using Service Connector. It focuses on how to perform a single example configuration and deployment flow, not on enumerating configuration parameters, limits, error codes, or decision matrices. It lacks parameter tables, quotas, or structured troubleshooting content, so it does not meet the expert-knowledge criteria for any sub-skill type. |
+| [Service Connector internals](https://learn.microsoft.com/en-us/azure/service-connector/concept-service-connector-internals) | 0.20 | Page appears to be an architectural/conceptual explanation of Service Connector internals (architecture, network solutions, authentication) without clear evidence of numeric limits, detailed configuration tables, or troubleshooting mappings that meet the expert-knowledge criteria. |
 | [About Service Connector](https://learn.microsoft.com/en-us/azure/service-connector/overview) | 0.10 | High-level overview of Service Connector use cases and benefits without concrete limits, configuration tables, or error mappings. |

@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-07-12'
+generated_at: '2026-07-19'
 category_descriptions:
   integrations: 'Integrating Grafana with Azure AI agents and monitoring tools: MCP
     setup, AI Foundry dashboards, alerts, Prometheus/AKS, and Azure Data Explorer
     data sources.'
-  security: 'Securing Managed Grafana: auth (API, users, Entra, roles, team sync),
-    service accounts/tokens, private access/endpoints, outbound IPs, data encryption,
-    and security best practices.'
+  security: 'Securing Managed Grafana: encryption, auth (Entra, tokens, service accounts),
+    RBAC/roles, private endpoints, outbound IP control, team sync, and security best
+    practices.'
   limits-quotas: Service limits, supported regions, constraints, and how reporting/image
     rendering works in Azure Managed Grafana, including quotas and operational restrictions.
   configuration: 'Configuring Azure Managed Grafana workspaces: instance settings,
@@ -14,20 +14,24 @@ category_descriptions:
     and SMTP email alert setup.'
   deployment: Designing highly available Azure Managed Grafana workspaces, including
     reliability features, SLAs, and enabling zone-redundant deployments for resiliency.
-  decision-making: Guides for choosing and managing Azure Managed Grafana plans, migrating
-    from other Grafana deployments or Azure tiers, and planning/upgrading between
-    Grafana versions.
+  decision-making: 'Planning and executing Grafana decisions: choosing/activating
+    Enterprise plans, migrating from self‑hosted or Azure Grafana Essential, and upgrading
+    Azure Managed Grafana (incl. v12).'
   troubleshooting: Diagnosing and resolving common Azure Managed Grafana issues, including
     access, configuration, and private endpoint connectivity and DNS problems.
 skill_description: Expert knowledge for Azure Managed Grafana development including
   troubleshooting, decision making, limits & quotas, security, configuration, integrations
-  & coding patterns, and deployment. Use when configuring workspaces, Prometheus/AKS
-  data sources, Entra auth, private endpoints, or AI Foundry dashboards, and other
-  Azure Managed Grafana related development tasks. Not for Azure Monitor (use azure-monitor).
-use_when: Use when configuring workspaces, Prometheus/AKS data sources, Entra auth,
-  private endpoints, or AI Foundry dashboards, and other Azure Managed Grafana related
-  development tasks.
-confusable_not_for: Not for Azure Monitor (use azure-monitor).
+  & coding patterns, and deployment. Use when integrating Azure Managed Grafana with
+  Prometheus/AKS, Azure Data Explorer, Entra auth, private endpoints, or HA deployments,
+  and other Azure Managed Grafana related development tasks. Not for Azure Monitor
+  (use azure-monitor), Azure App Service (use azure-app-service), Azure Kubernetes
+  Service (AKS) (use azure-kubernetes-service), Azure Virtual Machines (use azure-virtual-machines).
+use_when: Use when integrating Azure Managed Grafana with Prometheus/AKS, Azure Data
+  Explorer, Entra auth, private endpoints, or HA deployments, and other Azure Managed
+  Grafana related development tasks.
+confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure App Service (use
+  azure-app-service), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
+  Azure Virtual Machines (use azure-virtual-machines).
 ---
 # Azure Managed Grafana Crawl Report
 
@@ -41,8 +45,8 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor).
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 44
+- **Updated Pages**: 2
+- **Unchanged**: 43
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-managed-grafana/azure-managed-grafana.csv`
 
@@ -63,8 +67,10 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor).
 
 ### Updated Pages
 
-- [Encryption](https://learn.microsoft.com/en-us/azure/managed-grafana/encryption)
-  - Updated: 2025-02-20T12:33:00.000Z → 2026-07-09T22:04:00.000Z
+- [Authenticate data plane APIs with Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-authenticate-data-plane-api)
+  - Updated: 2026-06-15T11:43:00.000Z → 2026-07-13T11:41:00.000Z
+- [Upgrade to Grafana 12](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-upgrade-grafana-12)
+  - Updated: 2026-03-11T22:19:00.000Z → 2026-07-15T11:40:00.000Z
 
 ## Classified Pages
 
@@ -79,7 +85,7 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor).
 | [Set up private access](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-set-up-private-access) | security | 0.80 | Covers disabling public access and configuring private endpoints; product-specific network security configuration. |
 | [Troubleshoot common issues](https://learn.microsoft.com/en-us/azure/managed-grafana/troubleshoot-managed-grafana) | troubleshooting | 0.80 | Described as a troubleshooting guide for errors related to data fetching, dashboards, and performance, which typically includes symptom-to-cause-to-solution mappings and possibly specific error messages unique to Azure Managed Grafana. |
 | [Use Grafana Team Sync](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-sync-teams-with-entra-groups) | security | 0.80 | Describes mapping Microsoft Entra groups to Grafana Teams and interaction with Azure RBAC roles; product-specific permission configuration. |
-| [Authenticate data plane APIs with Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-authenticate-data-plane-api) | security | 0.78 | Contains product-specific authentication details, including the exact Microsoft Entra audience/application ID (6f2d169c-08f3-4a4c-a982-bcaf2d038c45) required to obtain tokens for Azure Managed Grafana data plane APIs and guidance on which token acquisition methods to use. These are concrete, service-unique security configuration parameters that an LLM is unlikely to know from training. |
+| [Authenticate data plane APIs with Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-authenticate-data-plane-api) | security | 0.78 | Contains product-specific authentication details, including the exact Microsoft Entra audience value required for Azure Managed Grafana data plane APIs and guidance on token acquisition methods. These are concrete security configuration parameters unique to this service that an LLM is unlikely to infer from general training. |
 | [Grafana settings](https://learn.microsoft.com/en-us/azure/managed-grafana/grafana-settings) | configuration | 0.78 | A Grafana settings page for a managed service typically enumerates concrete configuration keys, allowed values, and defaults that differ from generic Grafana. These product-specific parameters and how they behave in Azure Managed Grafana qualify as configuration expert knowledge. |
 | [Manage access and permissions for users and identities](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-manage-access-permissions-users-identities) | security | 0.76 | A guide on assigning roles to users, groups, service principals, and managed identities in Azure Managed Grafana will include specific role names, permission scopes, and IAM configuration steps, which are product-specific security details. |
 | [Configure MCP for AI Foundry agents](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-configure-mcp-for-ai-foundry) | integrations | 0.75 | Shows how to wire the Azure Managed Grafana MCP endpoint into Azure AI Foundry agents so they can query Azure resources, metrics, logs, and dashboards. This is a concrete cross-service integration pattern with product-specific configuration steps. |
@@ -104,7 +110,7 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor).
 | [Ingest data via OpenTelemetry Collector](https://learn.microsoft.com/en-us/azure/managed-grafana/grafana-opentelemetry-app-insights) | integrations | 0.68 | The page describes an end-to-end setup of a telemetry pipeline using OpenTelemetry and Azure Application Insights specifically for multiple AI coding agents (GitHub Copilot, Claude Code, Codex, OpenClaw, OpenCode, Gemini CLI). This likely includes product-specific configuration details such as telemetry endpoints, instrumentation keys/connection strings, and OpenTelemetry exporter settings unique to this scenario, which qualify as expert integration knowledge beyond generic concepts. |
 | [Monitor using diagnostic settings](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-monitor-managed-grafana-workspace) | configuration | 0.65 | Details diagnostic settings and event log categories for the service; product-specific logging configuration. |
 | [Monitor using metrics](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-monitor-managed-grafana-metrics) | configuration | 0.65 | Shows which workspace metrics are exposed and how to configure metric charts; includes specific metric names and usage patterns. |
-| [Upgrade to Grafana 12](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-upgrade-grafana-12) | decision-making | 0.65 | Provides product-specific guidance on upgrading workspaces from Grafana 11 to 12, including retirement and automatic-upgrade dates and conditions. This is expert decision and migration guidance (when and how to upgrade, implications of missing the deadline) that goes beyond generic upgrade concepts. |
+| [Upgrade to Grafana 12](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-upgrade-grafana-12) | decision-making | 0.65 | Provides concrete, time-bound upgrade and retirement details for Grafana 11 (specific retirement date, automatic upgrade behavior, and required upgrade path to Grafana 12). This is product-specific lifecycle and migration guidance that informs when and how to move between versions, fitting decision-making around upgrade timing and impact. |
 | [Use reporting and image rendering](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-use-reporting-and-image-rendering) | limits-quotas | 0.65 | Covers performance and limitations of image rendering and reporting; likely includes concrete constraints (e.g., size, frequency, timeout) that are product-specific. |
 | [Use service accounts](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-service-accounts) | security | 0.65 | Provides product-specific guidance on enabling service accounts and using service account tokens for Grafana API authentication, including when to use service accounts vs Microsoft Entra ID. This is concrete identity/auth configuration for this service. |
 

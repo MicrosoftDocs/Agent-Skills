@@ -52,8 +52,8 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Relay
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 125
+- **Updated Pages**: 0
+- **Unchanged**: 126
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-bus/azure-service-bus.csv`
 
@@ -73,11 +73,6 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Relay
 | *(Unclassified)* | 35 | 27.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [Geo-Replication](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-geo-replication)
-  - Updated: 2026-06-23T05:11:00.000Z → 2026-07-09T22:04:00.000Z
 
 ## Classified Pages
 

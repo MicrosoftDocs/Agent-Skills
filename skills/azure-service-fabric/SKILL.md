@@ -1,9 +1,9 @@
 ---
 name: azure-service-fabric
-description: Expert knowledge for Azure Service Fabric development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing Service Fabric clusters, Reliable Services/Actors, reverse proxy/API gateways, CI/CD upgrades, or sfctl/PowerShell ops, and other Azure Service Fabric related development tasks. Not for Azure Cloud Services (use azure-cloud-services), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Container Apps (use azure-container-apps), Azure App Service (use azure-app-service).
+description: Expert knowledge for Azure Service Fabric development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing Service Fabric clusters, Reliable Services/Actors, backup/restore, reverse proxy, or sfctl/PowerShell automation, and other Azure Service Fabric related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Container Apps (use azure-container-apps), Azure Cloud Services (use azure-cloud-services), Azure Virtual Machines (use azure-virtual-machines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-05"
+  generated_at: "2026-07-19"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Service Fabric Skill
@@ -25,8 +25,8 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L37-L59 | Diagnosing and fixing Service Fabric issues: connectivity, upgrades, health, logging/monitoring, container and Java logs, reverse proxy, Reliable Services/Actors, and local cluster setup. |
-| Best Practices | L60-L94 | Best-practice guidance for designing, scaling, upgrading, testing, monitoring, networking, backup/restore, and data/actor management in Azure Service Fabric clusters and apps. |
-| Decision Making | L95-L106 | Guidance on planning and sizing Service Fabric clusters: OS/disk choices, stateless node types, capacity/durability/reliability planning, version selection, and migration targets for Cloud Services workloads. |
+| Best Practices | L60-L94 | Best practices for designing, deploying, upgrading, testing, monitoring, and operating Azure Service Fabric apps and clusters, including Reliable Collections/Actors, backup/restore, networking, capacity, and DR. |
+| Decision Making | L95-L106 | Guidance on planning and sizing Service Fabric clusters: choosing OS, versions, disk types, stateless node types, capacity/durability, and migration targets for Cloud Services workloads. |
 | Architecture & Design Patterns | L107-L120 | Designing Service Fabric cluster architecture: cross-AZ replica rings, CRP/CRM internals, service affinity, movement cost, defragmentation, metrics balancing, networking, and API gateway patterns. |
 | Limits & Quotas | L121-L125 | Configuring Service Fabric app upgrade settings: health policies, rolling upgrade behavior, monitoring, and timeout parameters to control safe, reliable deployments. |
 | Security | L126-L182 | Securing Service Fabric clusters/apps: cert and Entra auth, managed identities and secrets, disk encryption, network/DDoS/IP policies, remoting/endpoint security, and security best practices. |
@@ -84,7 +84,7 @@ This skill requires **network access** to fetch documentation content:
 | Choose and use timers vs reminders in Reliable Actors | https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-reliable-actors-timers-reminders |
 | Plan and use Service Fabric Backup and Restore | https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-reliable-services-backup-restore |
 | Apply best practices for Service Fabric Reliable Collections | https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-reliable-services-reliable-collections-guidelines |
-| Handle throttling in Service Fabric Reliable Collections | https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-reliable-services-reliable-collections-throttling-guidelines |
+| Avoid and handle throttling in Service Fabric Reliable Collections | https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-reliable-services-reliable-collections-throttling-guidelines |
 | Configure transactions and locks in Reliable Collections | https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-reliable-services-reliable-collections-transactions-locks |
 | Use ReliableConcurrentQueue for high-throughput messaging | https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-reliable-services-reliable-concurrent-queue |
 | Use replica soft delete for Service Fabric data protection | https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-replica-soft-delete |

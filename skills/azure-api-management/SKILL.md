@@ -1,9 +1,9 @@
 ---
 name: azure-api-management
-description: Expert knowledge for Azure API Management development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when securing APIs, enforcing quotas, integrating LLM/backends, configuring policies, or deploying gateways, and other Azure API Management related development tasks. Not for Azure App Service (use azure-app-service), Azure Functions (use azure-functions), Azure Logic Apps (use azure-logic-apps), Azure Service Bus (use azure-service-bus).
+description: Expert knowledge for Azure API Management development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building APIM policies, securing APIs (JWT/OAuth/mTLS), integrating LLM/backends, or deploying self-hosted gateways, and other Azure API Management related development tasks. Not for Azure Application Gateway (use azure-application-gateway), Azure Front Door (use azure-front-door), Azure Web Application Firewall (use azure-web-application-firewall), Azure Service Bus (use azure-service-bus).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-12"
+  generated_at: "2026-07-19"
   generator: "docs2skills/1.0.0"
 ---
 # Azure API Management Skill
@@ -32,7 +32,7 @@ This skill requires **network access** to fetch documentation content:
 | Security | L101-L142 | Securing APIs and APIM: authN/Z (Entra ID, B2C, OAuth2, JWT, mTLS, basic), managed identities/RBAC, secure portals/self-hosted gateways, security policies, and DDoS/Defender protections. |
 | Configuration | L143-L238 | Configuring Azure API Management behavior: policies, caching, domains, networking/VNet, monitoring/logging, developer portal, gateways, backends, subscriptions, users, and automation templates. |
 | Integrations & Coding Patterns | L239-L270 | Patterns and samples for integrating API Management with LLMs, backends, logging/monitoring, events, OAuth, GitHub, Dapr, and exporting/importing APIs via OpenAPI, Postman, and Power Platform |
-| Deployment | L271-L290 | Deploying and scaling APIM: multi-region, VNet/external setups, self-hosted gateways/portals, autoscale, backup/restore, migration, automation, and certificate/MCP rollout planning. |
+| Deployment | L271-L290 | Deploying and scaling API Management: multi-region, VNet/external, self-hosted gateways (AKS/K8s/Docker/Arc), backup/DR, migration, automation, and managed cert/portal deployment. |
 
 ### Troubleshooting
 | Topic | URL |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-07'
+generated_at: '2026-07-19'
 category_descriptions:
   configuration: How to configure and tune Anomaly Detector Docker containers, including
     environment variables, resource limits, logging, networking, and runtime behavior
@@ -38,8 +38,8 @@ confusable_not_for: Not for Azure AI Metrics Advisor (use azure-metrics-advisor)
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 24
+- **Updated Pages**: 1
+- **Unchanged**: 23
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-anomaly-detector/azure-anomaly-detector.csv`
 
@@ -55,6 +55,11 @@ confusable_not_for: Not for Azure AI Metrics Advisor (use azure-metrics-advisor)
 | *(Unclassified)* | 17 | 70.8% |
 
 ## Changes
+
+### Updated Pages
+
+- [Create an Anomaly Detector Resource](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/how-to/create-resource)
+  - Updated: 2026-01-27T18:30:00.000Z → 2026-06-05T22:11:00.000Z
 
 ## Classified Pages
 
@@ -83,7 +88,7 @@ confusable_not_for: Not for Azure AI Metrics Advisor (use azure-metrics-advisor)
 | [Prepare and upload your data](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/how-to/prepare-data) | 0.25 | Data preparation and upload tutorial; summary does not indicate numeric thresholds, config tables, or product-specific error/limit details, just that training requires a storage account. |
 | [Streaming inference](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/how-to/streaming-inference) | 0.25 | Explains using streaming vs batch inference; appears to be a usage how-to without explicit limits, config parameter tables, or troubleshooting mappings. |
 | [Azure Data Explorer integration](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/tutorials/azure-data-explorer) | 0.20 | Tutorial integrating Univariate Anomaly Detector with Azure Data Explorer; summary suggests step-by-step usage, not detailed configuration tables or limits. |
-| [Create an Anomaly Detector Resource](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/how-to/create-resource) | 0.20 | Resource creation walkthrough; typically a portal/how-to article without detailed configuration parameter tables, limits, or decision matrices. |
+| [Create an Anomaly Detector Resource](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/how-to/create-resource) | 0.20 | Page is primarily a how-to for creating an Anomaly Detector resource and includes retirement/migration notice. It does not expose detailed limits, configuration parameter tables, error codes, or other product-specific expert knowledge as defined by the sub-skill types. |
 | [Identify anomalies in your data](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/how-to/identify-anomalies) | 0.20 | How-to usage guide for the API (batch vs streaming) without clear indication of numeric limits, config tables, or product-specific error mappings; primarily procedural/tutorial content. |
 | [More technical articles ...](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/whats-new) | 0.20 | Duplicate of the What's New page; release notes and links without detailed limits, configuration, or troubleshooting mappings. |
 | [Visualize anomalies as a batch using Power BI (univariate)](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/tutorials/batch-anomaly-detection-powerbi) | 0.20 | Power BI visualization tutorial; focuses on preparing data and calling the API, not on numeric limits, config matrices, or troubleshooting mappings. |

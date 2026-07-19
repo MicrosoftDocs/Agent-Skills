@@ -1,9 +1,9 @@
 ---
 name: azure-planetary-computer-pro
-description: Expert knowledge for Microsoft Planetary Computer Pro development including troubleshooting, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using GeoCatalog/STAC APIs, QGIS/ArcGIS Pro integrations, Entra ID/RBAC access, tiles/mosaics, or ingestion, and other Microsoft Planetary Computer Pro related development tasks. Not for Azure Maps (use azure-maps), Azure Open Datasets (use azure-open-datasets), Azure Data Explorer (use azure-data-explorer).
+description: Expert knowledge for Microsoft Planetary Computer Pro development including troubleshooting, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using GeoCatalog/STAC APIs, configuring collections/tiles, securing access, integrating QGIS/ArcGIS, or troubleshooting ingestion, and other Microsoft Planetary Computer Pro related development tasks. Not for Azure Maps (use azure-maps), Azure Open Datasets (use azure-open-datasets), Azure Data Explorer (use azure-data-explorer).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-21"
+  generated_at: "2026-07-19"
   generator: "docs2skills/1.0.0"
 ---
 # Microsoft Planetary Computer Pro Skill
@@ -28,7 +28,7 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L41-L45 | Guidance on selecting how to access Planetary Computer Pro data, including connection options, integrations with tools/services, and choosing the best method for your workflow. |
 | Limits & Quotas | L46-L50 | Supported file formats, data types, and size/usage limits for datasets and computations in Planetary Computer Pro, including quotas that affect how you process and store data. |
 | Security | L51-L62 | Configuring secure access to Planetary Computer Pro/GeoCatalog using Entra ID, RBAC, managed identities, cross-tenant auth, API Management, and SAS tokens for collections. |
-| Configuration | L63-L77 | Configuring Planetary Computer Pro data collections: visualization/render settings, colormaps, tiles/mosaics, queryable filters, ingestion sources/credentials, and US Gov cloud endpoints. |
+| Configuration | L63-L77 | Configuring Planetary Computer Pro collections: visualization, render and tile settings, colormaps, mosaics, queryables, ingestion sources/credentials, and US Gov cloud endpoints. |
 | Integrations & Coding Patterns | L78-L91 | Using GeoCatalog/STAC with code and tools: ingest and bulk-load data, build apps, create collections/items, and integrate with QGIS, ArcGIS Pro, Azure Batch, and other geospatial clients. |
 | Deployment | L92-L96 | Deploying and safely deleting Planetary Computer GeoCatalog resources, including deployment steps, best practices, and cleanup to avoid data loss or orphaned assets. |
 
@@ -69,7 +69,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure ingestion sources for Planetary Computer Pro GeoCatalogs | https://learn.microsoft.com/en-us/azure/planetary-computer/ingestion-source |
 | Configure mosaic options for Planetary Computer Pro collections | https://learn.microsoft.com/en-us/azure/planetary-computer/mosaic-configurations-for-collections |
 | Configure queryables for custom search filters in Planetary Computer Pro | https://learn.microsoft.com/en-us/azure/planetary-computer/queryables-for-explorer-custom-search-filter |
-| Configure render settings for Planetary Computer visualization | https://learn.microsoft.com/en-us/azure/planetary-computer/render-configuration |
+| Configure render settings in Planetary Computer Pro | https://learn.microsoft.com/en-us/azure/planetary-computer/render-configuration |
 | Configure SAS-based ingestion credentials for GeoCatalog | https://learn.microsoft.com/en-us/azure/planetary-computer/set-up-ingestion-credentials-sas-tokens |
 | Use supported colormaps in Planetary Computer Pro render configurations | https://learn.microsoft.com/en-us/azure/planetary-computer/supported-colormaps |
 | Configure tile settings for Planetary Computer Pro STAC collections | https://learn.microsoft.com/en-us/azure/planetary-computer/tile-settings |

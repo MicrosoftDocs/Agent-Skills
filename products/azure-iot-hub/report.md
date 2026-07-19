@@ -51,8 +51,8 @@ confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Central (use az
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 202
+- **Updated Pages**: 0
+- **Unchanged**: 203
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-iot-hub/azure-iot-hub.csv`
 
@@ -72,11 +72,6 @@ confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Central (use az
 | *(Unclassified)* | 70 | 34.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [Monitoring data reference](https://learn.microsoft.com/en-us/azure/iot-dps/monitor-iot-dps-reference)
-  - Updated: 2024-08-09T05:35:00.000Z → 2026-05-21T19:52:00.000Z
 
 ## Classified Pages
 

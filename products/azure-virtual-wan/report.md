@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-07-12'
+generated_at: '2026-07-19'
 category_descriptions:
   limits-quotas: 'Limits and design guidance for Virtual WAN: P2S client pool sizing,
     hub routing/throughput caps, and using Private Link endpoints within scale and
     quota constraints.'
-  architecture-patterns: 'Designing and troubleshooting Azure Virtual WAN architectures:
-    routing patterns, hub-and-spoke and global transit designs, security/firewall
-    integration, SD-WAN, isolation, DR, and Microsoft 365 connectivity.'
+  architecture-patterns: Designing Virtual WAN hub-and-spoke architectures, routing
+    patterns (BGP, static, any-to-any), secure internet access, isolation, SD‑WAN/NVA
+    integration, and global transit connectivity.
   decision-making: 'Guidance on planning and choosing Virtual WAN designs: NVAs in
     hubs, VPN client migrations, upgrading Basic→Standard, and selecting partners
     and hub locations.'
@@ -25,17 +25,16 @@ category_descriptions:
     ID (MFA, OpenVPN, custom app IDs), Azure VPN Client setup/migration, and hub roles/permissions.
 skill_description: Expert knowledge for Azure Virtual WAN development including troubleshooting,
   decision making, architecture & design patterns, limits & quotas, security, configuration,
-  integrations & coding patterns, and deployment. Use when designing VWAN hubs, P2S/Always
-  On VPN, BGP/IPsec routing, NVAs/firewalls, or ExpressRoute/SD-WAN integration, and
-  other Azure Virtual WAN related development tasks. Not for Azure Virtual Network
-  (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager),
-  Azure VPN Gateway (use azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute).
-use_when: Use when designing VWAN hubs, P2S/Always On VPN, BGP/IPsec routing, NVAs/firewalls,
-  or ExpressRoute/SD-WAN integration, and other Azure Virtual WAN related development
-  tasks.
+  integrations & coding patterns, and deployment. Use when designing Virtual WAN hubs,
+  P2S VPN, BGP routing, NVAs/firewalls, ExpressRoute, or Private Link, and other Azure
+  Virtual WAN related development tasks. Not for Azure Virtual Network (use azure-virtual-network),
+  Azure VPN Gateway (use azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute),
+  Azure Traffic Manager (use azure-traffic-manager).
+use_when: Use when designing Virtual WAN hubs, P2S VPN, BGP routing, NVAs/firewalls,
+  ExpressRoute, or Private Link, and other Azure Virtual WAN related development tasks.
 confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), Azure
-  Virtual Network Manager (use azure-virtual-network-manager), Azure VPN Gateway (use
-  azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute).
+  VPN Gateway (use azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute),
+  Azure Traffic Manager (use azure-traffic-manager).
 ---
 # Azure Virtual WAN Crawl Report
 
@@ -49,8 +48,8 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 137
+- **Updated Pages**: 2
+- **Unchanged**: 136
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-wan/azure-virtual-wan.csv`
 
@@ -72,8 +71,10 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ### Updated Pages
 
-- [Monitoring data reference](https://learn.microsoft.com/en-us/azure/virtual-wan/monitor-virtual-wan-reference)
-  - Updated: 2024-11-01T22:03:00.000Z → 2026-07-01T23:48:00.000Z
+- [Internet access with routing intent](https://learn.microsoft.com/en-us/azure/virtual-wan/about-internet-routing)
+  - Updated: 2025-11-18T18:43:00.000Z → 2026-07-17T17:52:00.000Z
+- [About ExpressRoute in Virtual WAN](https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-expressroute-about)
+  - Updated: 2025-03-26T22:03:00.000Z → 2026-07-16T05:10:00.000Z
 
 ## Classified Pages
 
@@ -148,6 +149,7 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [User tunnel - Windows clients](https://learn.microsoft.com/en-us/azure/virtual-wan/howto-always-on-user-tunnel) | configuration | 0.70 | How-to guide for configuring an Always On VPN user tunnel on Windows/macOS for Azure Virtual WAN. These pages typically include product-specific VPN profile settings, XML/JSON configuration elements, and parameter names/values (e.g., tunnel type, triggers, server addresses, authentication options) that are not generic knowledge. The focus is on concrete client and Virtual WAN configuration rather than concepts, so it best fits the configuration sub-skill. |
 | [Virtual WAN gateway settings](https://learn.microsoft.com/en-us/azure/virtual-wan/gateway-settings) | configuration | 0.70 | Answers detailed questions about gateway settings; likely includes specific parameters, allowed values, and behavior unique to Virtual WAN gateways. |
 | [Virtual hub settings](https://learn.microsoft.com/en-us/azure/virtual-wan/hub-settings) | configuration | 0.70 | Explains virtual hub settings and routing infrastructure units; product-specific configuration options and their effects. |
+| [Internet access with routing intent](https://learn.microsoft.com/en-us/azure/virtual-wan/about-internet-routing) | architecture-patterns | 0.68 | The page describes specific routing patterns for inspecting internet-bound traffic with Azure Virtual WAN routing intent, including when to use each pattern and how to direct traffic through security services. This is product-specific architecture guidance on routing design choices and trade-offs rather than generic networking concepts. |
 | [Virtual hub routing preference](https://learn.microsoft.com/en-us/azure/virtual-wan/about-virtual-hub-routing-preference) | architecture-patterns | 0.68 | The page describes how the virtual hub router makes routing decisions using a built-in route selection algorithm and advanced routing constructs (route propagation, association, custom route tables). This is product-specific routing/architecture guidance for Azure Virtual WAN rather than generic networking theory, and helps decide how to structure routing in a virtual hub. It does not focus on numeric limits, security, or deployment. |
 | [About Route-maps](https://learn.microsoft.com/en-us/azure/virtual-wan/route-maps-about) | configuration | 0.65 | Describes Route-maps feature, how it controls route advertisements, and the configuration model; product-specific routing control mechanism. |
 | [About branch IPsec connectivity automation](https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-locations-partners) | decision-making | 0.65 | Lists partners and available locations; used to decide which partner/region to use for connectivity into Virtual WAN hubs. |
@@ -157,7 +159,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Convert a virtual hub to a secured virtual hub](https://learn.microsoft.com/en-us/azure/virtual-wan/howto-firewall) | configuration | 0.65 | How-to for installing Azure Firewall directly in a Virtual WAN hub; likely includes hub-specific firewall settings, required options, and wiring unique to Virtual WAN rather than generic firewall concepts. |
 | [Disaster recovery design](https://learn.microsoft.com/en-us/azure/virtual-wan/disaster-recovery-design) | architecture-patterns | 0.65 | Provides architectural recommendations and patterns for DR with Virtual WAN hubs, branches, and multi-region connectivity. |
 | [Integrated NVAs in the virtual hub](https://learn.microsoft.com/en-us/azure/virtual-wan/about-nva-hub) | decision-making | 0.65 | Explains which NVAs can be deployed directly into a Virtual WAN hub, references a specific partner list, and describes constraints and joint management behavior. This provides product-specific guidance on when and how to choose NVA-in-hub deployments versus other options, fitting decision-making around architecture choices. |
-| [Internet access with routing intent](https://learn.microsoft.com/en-us/azure/virtual-wan/about-internet-routing) | architecture-patterns | 0.65 | Describes concrete routing patterns for inspecting internet-bound traffic with routing intent; product-specific architecture guidance and trade-offs. |
 | [Isolating VNets - custom](https://learn.microsoft.com/en-us/azure/virtual-wan/scenario-isolate-vnets-custom) | architecture-patterns | 0.65 | Scenario for isolating specific sets of VNets while allowing branch access; detailed routing pattern unique to Virtual WAN. |
 | [MakeCert](https://learn.microsoft.com/en-us/azure/virtual-wan/certificates-point-to-site-makecert) | configuration | 0.65 | Provides detailed MakeCert command usage and parameters to create certificates for Virtual WAN P2S; specialized configuration knowledge even though MakeCert is deprecated. |
 | [Manage access to resources - Spoke VNet P2S](https://learn.microsoft.com/en-us/azure/virtual-wan/manage-secure-access-resources-spoke-p2s) | security | 0.65 | Describes using Virtual WAN and Azure Firewall rules/filters to restrict P2S client access to specific resources. This implies product-specific firewall rule configuration, possibly including rule types, directions, and scopes for securing access. The focus is on securing access paths and rules, so it best fits security. |
@@ -188,7 +189,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [OpenVPN client - iOS](https://learn.microsoft.com/en-us/azure/virtual-wan/point-to-site-vpn-client-certificate-openvpn-ios) | 0.45 | iOS OpenVPN client configuration; similar to other client how-tos, not a configuration or limits reference for the service. |
 | [OpenVPN client - macOS](https://learn.microsoft.com/en-us/azure/virtual-wan/point-to-site-vpn-client-certificate-openvpn-mac) | 0.45 | macOS OpenVPN client configuration; client-focused tutorial without deep Virtual WAN configuration details. |
 | [PowerShell](https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-point-to-site-powershell) | 0.45 | PowerShell tutorial for creating a P2S connection; mostly step-by-step commands rather than a configuration reference with parameter matrices. |
-| [About ExpressRoute in Virtual WAN](https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-expressroute-about) | 0.40 | Conceptual overview of ExpressRoute connections in Virtual WAN without detailed limits, matrices, or configuration parameter tables. |
 | [About point-to-site concepts](https://learn.microsoft.com/en-us/azure/virtual-wan/point-to-site-concepts) | 0.40 | Concepts article describing P2S User VPN options; primarily conceptual and explanatory rather than tabular configuration or limits reference. |
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/virtual-wan/site-to-site-powershell) | 0.40 | PowerShell tutorial for creating site-to-site connections; mostly procedural without configuration tables, limits, or specialized patterns beyond standard IPsec/IKE setup. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/virtual-wan/packet-capture-site-to-site-portal) | 0.40 | Tutorial-style article on configuring packet capture via the portal; summary does not indicate detailed parameter tables, limits, or error-code-based troubleshooting. |
@@ -215,6 +215,7 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Route-maps dashboard](https://learn.microsoft.com/en-us/azure/virtual-wan/route-maps-dashboard) | 0.30 | Explains using the Route Map dashboard to monitor routes and BGP attributes; appears to be a monitoring UI guide without detailed limits, configuration matrices, or troubleshooting mappings. |
 | [What's new?](https://learn.microsoft.com/en-us/azure/virtual-wan/whats-new) | 0.30 | Release notes/what's new page; summary does not indicate detailed limits, configuration tables, or troubleshooting mappings, and is primarily announcements and high-level changes. |
 | [Certificate authentication](https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-point-to-site-portal) | 0.25 | User VPN tutorial; summary shows basic how-to steps, not detailed configuration option tables or product-specific gotchas. |
+| [About ExpressRoute in Virtual WAN](https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-expressroute-about) | 0.20 | Page appears to be a conceptual overview of using ExpressRoute with Azure Virtual WAN, without clear evidence of numeric limits, detailed configuration parameter tables, error-code-based troubleshooting, or decision matrices. Based on the summary, it primarily explains what ExpressRoute connections in Virtual WAN are and points to a tutorial, so it does not meet the expert-knowledge criteria for any sub-skill type. |
 | [Azure Monitor Insights](https://learn.microsoft.com/en-us/azure/virtual-wan/azure-monitor-insights) | 0.20 | Describes Azure Monitor Insights view for Virtual WAN and its topology map; summary suggests UI overview rather than detailed configuration parameters, limits, or troubleshooting mappings. |
 | [Configure a site-to-site connection](https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-site-to-site-portal) | 0.20 | Step-by-step tutorial for site-to-site VPN; summary does not mention detailed configuration parameter tables or limits. |
 | [Configure an ExpressRoute connection](https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-expressroute-portal) | 0.20 | ExpressRoute association tutorial; summary is procedural without expert-level limits, quotas, or config matrices. |

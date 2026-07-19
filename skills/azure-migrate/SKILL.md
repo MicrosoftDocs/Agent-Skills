@@ -1,9 +1,9 @@
 ---
 name: azure-migrate
-description: Expert knowledge for Azure Migrate development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when assessing/migrating VMware/AWS/GCP VMs, SQL/PostgreSQL, .NET/AppCAT apps, or Arc/AMA-based workloads, and other Azure Migrate related development tasks. Not for Azure Database Migration service (use azure-database-migration), Azure Site Recovery (use azure-site-recovery), Azure Virtual Machines (use azure-virtual-machines), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines).
+description: Expert knowledge for Azure Migrate development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring Azure Migrate appliances, Arc/AMA, AppCAT/.NET assessments, VMware agentless replication, or Resource Mover, and other Azure Migrate related development tasks. Not for Azure Database Migration service (use azure-database-migration), Azure Site Recovery (use azure-site-recovery), Azure Virtual Machines (use azure-virtual-machines), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-12"
+  generated_at: "2026-07-19"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Migrate Skill
@@ -24,11 +24,11 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L55 | Diagnosing and fixing Azure Migrate issues: appliance deployment/discovery, assessments, replication, performance, connectivity (incl. private endpoints), OS upgrades, and web app migrations. |
+| Troubleshooting | L37-L55 | Diagnosing and fixing Azure Migrate issues: appliance setup, discovery/assessment errors, dependency analysis, project creation, private endpoints, VMware agentless replication, and OS/web app migration. |
 | Best Practices | L56-L66 | Best practices for preparing on-prem/VMware machines and appliances, configuring VM hydration, running test migrations, and creating custom/AppCAT/PostgreSQL assessment rules for Azure Migrate. |
 | Decision Making | L67-L105 | Guidance for interpreting Azure Migrate assessments, choosing sizing and tools, planning migration waves and execution, and making platform/service decisions across VMware, AWS, GCP, SQL, web, and Java workloads. |
 | Architecture & Design Patterns | L106-L111 | Architecture and data flow for Azure Migrate using Arc-based discovery and Hyper-V, including components, connectivity, prerequisites, and how discovery/inventory works. |
-| Limits & Quotas | L112-L125 | Limits, prerequisites, regions, and support matrices for Azure Migrate appliances, discovery, assessment, and migration of VMware, Hyper-V, and physical servers. |
+| Limits & Quotas | L112-L125 | Limits, prerequisites, region support, and scale guidance for Azure Migrate appliances and discovery/migration of VMware, Hyper-V, and physical servers. |
 | Security | L126-L139 | Securing Azure Migrate: least-privilege roles/accounts, Private Link discovery/migration, encrypted VM moves, Trusted Launch, RBAC, and Entra ID app registration. |
 | Configuration | L140-L163 | Configuring Azure Migrate and related tools: assessment settings (VM, SQL, PostgreSQL, .NET/AppCAT), appliances, Arc/AMA, private endpoints, landing zones, and Resource Mover destination options. |
 | Integrations & Coding Patterns | L164-L169 | Patterns and tools for integrating code analysis and automation into Azure Migrate, including GitHub Copilot insights, AppCAT CLI, CAST Highlight scans, and REST-based VMware migration. |
@@ -43,7 +43,7 @@ This skill requires **network access** to fetch documentation content:
 | FAQ for troubleshooting Azure Migrate assessments | https://learn.microsoft.com/en-us/azure/migrate/troubleshoot-assessment-faq?view=migrate |
 | Troubleshooting scenarios for Azure Migrate assessments | https://learn.microsoft.com/en-us/azure/migrate/troubleshoot-assessment-supported-scenarios?view=migrate |
 | Resolve common Azure Migrate assessment issues | https://learn.microsoft.com/en-us/azure/migrate/troubleshoot-assessment?view=migrate |
-| Fix replication failures in agentless VMware migration | https://learn.microsoft.com/en-us/azure/migrate/troubleshoot-changed-block-tracking-replication?view=migrate |
+| Troubleshoot agentless VMware replication in Azure Migrate | https://learn.microsoft.com/en-us/azure/migrate/troubleshoot-changed-block-tracking-replication?view=migrate |
 | Troubleshoot Azure Migrate dependency analysis issues | https://learn.microsoft.com/en-us/azure/migrate/troubleshoot-dependencies?view=migrate |
 | Troubleshoot Azure Migrate server and SQL discovery | https://learn.microsoft.com/en-us/azure/migrate/troubleshoot-discovery?view=migrate |
 | Troubleshoot common Azure Migrate service issues | https://learn.microsoft.com/en-us/azure/migrate/troubleshoot-general?view=migrate |
@@ -113,7 +113,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Use Azure Migrate in unsupported regions | https://learn.microsoft.com/en-us/azure/migrate/azure-migrate-unsupported-regions?view=migrate |
-| Scale-out Azure Migrate appliance capacity limits | https://learn.microsoft.com/en-us/azure/migrate/how-to-scale-out-for-migration?view=migrate |
+| Scale out Azure Migrate appliance for large VMware moves | https://learn.microsoft.com/en-us/azure/migrate/how-to-scale-out-for-migration?view=migrate |
 | Review Azure Migrate appliance prerequisites and support | https://learn.microsoft.com/en-us/azure/migrate/migrate-appliance?view=migrate |
 | Hyper-V to Azure migration support matrix | https://learn.microsoft.com/en-us/azure/migrate/migrate-support-matrix-hyper-v-migration?view=migrate |
 | Review Hyper-V discovery and assessment support matrix in Azure Migrate | https://learn.microsoft.com/en-us/azure/migrate/migrate-support-matrix-hyper-v?view=migrate |

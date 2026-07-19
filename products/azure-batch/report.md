@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-07-12'
+generated_at: '2026-07-19'
 category_descriptions:
-  security: 'Securing Batch accounts and pools: auth with Entra ID/managed identities,
-    keys and disk encryption, RBAC, private endpoints/network perimeters, public access,
-    and Azure Policy governance.'
+  security: 'Securing Azure Batch: identity (Entra ID, managed identities, RBAC),
+    keys and encryption, private endpoints/network access, and governance with Azure
+    Policy and network security perimeters.'
   deployment: Guides for moving Azure Batch accounts across regions with ARM templates
     and setting up CI/CD pipelines for Batch HPC workloads using Azure Pipelines.
   configuration: 'Configuring Batch pools, tasks, networking, scaling, diagnostics,
@@ -30,17 +30,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Batch development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  configuring Batch pools/tasks, autoscale, containers/MPI, storage mounts, or CI/CD
-  for HPC/render workloads, and other Azure Batch related development tasks. Not for
-  Azure HDInsight (use azure-hdinsight), Azure Databricks (use azure-databricks),
-  Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Virtual Machines
-  (use azure-virtual-machines).
-use_when: Use when configuring Batch pools/tasks, autoscale, containers/MPI, storage
-  mounts, or CI/CD for HPC/render workloads, and other Azure Batch related development
-  tasks.
-confusable_not_for: Not for Azure HDInsight (use azure-hdinsight), Azure Databricks
-  (use azure-databricks), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
+  configuring Batch pools/tasks, autoscale, containers, MPI jobs, storage mounts,
+  or CI/CD for HPC workloads, and other Azure Batch related development tasks. Not
+  for Azure Container Instances (use azure-container-instances), Azure Kubernetes
+  Service (AKS) (use azure-kubernetes-service), Azure Functions (use azure-functions),
   Azure Virtual Machines (use azure-virtual-machines).
+use_when: Use when configuring Batch pools/tasks, autoscale, containers, MPI jobs,
+  storage mounts, or CI/CD for HPC workloads, and other Azure Batch related development
+  tasks.
+confusable_not_for: Not for Azure Container Instances (use azure-container-instances),
+  Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Functions (use
+  azure-functions), Azure Virtual Machines (use azure-virtual-machines).
 ---
 # Azure Batch Crawl Report
 
@@ -53,10 +53,10 @@ confusable_not_for: Not for Azure HDInsight (use azure-hdinsight), Azure Databri
 - **Unclassified**: 37
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 113
-- **Deleted Pages**: 0
+- **New Pages**: 1
+- **Updated Pages**: 0
+- **Unchanged**: 114
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-batch/azure-batch.csv`
 
 ## Classification Statistics
@@ -76,12 +76,13 @@ confusable_not_for: Not for Azure HDInsight (use azure-hdinsight), Azure Databri
 
 ## Changes
 
-### Updated Pages
+### New Pages
 
-- [What is Azure Batch?](https://learn.microsoft.com/en-us/azure/batch/batch-technical-overview)
-  - Updated: 2026-06-16T08:00:00.000Z → 2026-07-09T08:00:00.000Z
-- [Parallel file processing - Python](https://learn.microsoft.com/en-us/azure/batch/tutorial-parallel-python)
-  - Updated: 2026-05-14T11:14:00.000Z → 2026-07-10T11:39:00.000Z
+- [Associate Batch accounts with network security perimeter (preview)](https://learn.microsoft.com/en-us/azure/batch/network-security-perimeter)
+
+### Deleted Pages
+
+- ~~Associate Batch accounts with network security perimeter~~ (https://learn.microsoft.com/en-us/azure/batch/network-security-perimeter)
 
 ## Classified Pages
 
@@ -106,7 +107,6 @@ confusable_not_for: Not for Azure HDInsight (use azure-hdinsight), Azure Databri
 | [Create a pool with disk encryption enabled](https://learn.microsoft.com/en-us/azure/batch/disk-encryption) | security | 0.74 | Disk encryption for Batch pools is a product-specific security configuration topic. The article describes how to enable encryption with platform-managed keys via disk encryption configuration when creating pools with Virtual Machine Configuration, which involves concrete Azure Batch and VM configuration parameters and options that go beyond generic security concepts. |
 | [Microsoft Entra ID with Batch Management](https://learn.microsoft.com/en-us/azure/batch/batch-aad-auth-management) | security | 0.72 | Describes how to authenticate applications that call the Azure Batch Management service using Microsoft Entra ID and Azure Identity, in combination with Azure.ResourceManager.Batch. This is product-specific identity and access configuration for management-plane APIs, which aligns with the security sub-skill. |
 | [Microsoft Entra ID with Batch service](https://learn.microsoft.com/en-us/azure/batch/batch-aad-auth) | security | 0.72 | Page is focused on configuring Microsoft Entra ID authentication for Azure Batch service applications using Azure Identity credentials (DefaultAzureCredential, ManagedIdentityCredential, ClientSecretCredential, etc.). This is product-specific security/auth configuration with concrete guidance on which auth flows/credentials to use and how, which fits the security sub-skill. |
-| [Associate Batch accounts with network security perimeter](https://learn.microsoft.com/en-us/azure/batch/network-security-perimeter) | security | 0.70 | Explains associating Batch accounts with Azure network security perimeters and how NSP rules interact with private endpoints, which is product-specific security configuration behavior. |
 | [Autoscale compute nodes](https://learn.microsoft.com/en-us/azure/batch/batch-automatic-scaling) | configuration | 0.70 | Covers Azure Batch autoscale formulas and parameters that control node counts. These are product-specific configuration expressions and properties, beyond generic scaling concepts, but not primarily limits/quotas or decision matrices. |
 | [Capacity planning](https://learn.microsoft.com/en-us/azure/batch/batch-capacity-planning) | decision-making | 0.70 | Guides capacity and quota planning, discusses capacity hierarchy and strategies to avoid allocation failures; used to make planning decisions, and references specific quota values elsewhere. |
 | [Check for job and task errors](https://learn.microsoft.com/en-us/azure/batch/batch-job-task-error-checking) | troubleshooting | 0.70 | Article is explicitly about checking and handling errors after submission, likely mapping Batch-specific error states/codes and patterns for detecting them, which is troubleshooting-focused. |
@@ -146,6 +146,7 @@ confusable_not_for: Not for Azure HDInsight (use azure-hdinsight), Azure Databri
 | [Use temporary NVMe disks](https://learn.microsoft.com/en-us/azure/batch/batch-nvme-temporary) | configuration | 0.70 | Explains how Batch manages NVMe temporary disks, required initialization steps, and how to choose and configure these disks for workloads. These are product-specific configuration and usage details. |
 | [User accounts for running tasks](https://learn.microsoft.com/en-us/azure/batch/batch-user-accounts) | configuration | 0.70 | Describes concrete, product-specific user account types and how to configure them for Batch tasks (e.g., auto-user, elevation, scope, and OS-specific behavior). These are detailed configuration semantics unique to Azure Batch rather than generic OS account concepts. |
 | [VHD and Managed Images](https://learn.microsoft.com/en-us/azure/batch/batch-custom-image-pools-to-azure-compute-gallery-migration-guide) | decision-making | 0.70 | Migration guide with a concrete retirement date and product-specific migration steps and considerations, helping decide and plan migration paths. |
+| [Associate Batch accounts with network security perimeter (preview)](https://learn.microsoft.com/en-us/azure/batch/network-security-perimeter) | security | 0.68 | Page is about associating Azure Batch accounts with a network security perimeter, which is a product-specific security configuration. Such docs typically include exact configuration steps, scope definitions, and possibly required roles or permissions unique to this feature, qualifying as security-focused expert knowledge rather than a generic overview. |
 | [Classic compute node communication model](https://learn.microsoft.com/en-us/azure/batch/batch-pools-to-simplified-compute-node-communication-model-migration-guide) | decision-making | 0.68 | Migration guide for retiring the classic compute node communication model with a fixed end-of-support date, including product-specific guidance on how and when to move to the simplified model and how to plan the transition. This is concrete, time-bound, service-specific decision and migration guidance rather than a generic overview. |
 | [Concurrent node tasks](https://learn.microsoft.com/en-us/azure/batch/batch-parallel-node-tasks) | best-practices | 0.68 | Focuses on maximizing resource usage and lowering costs by running multiple tasks concurrently per node, with scenario-based guidance on when to share node resources vs dedicate them. This is concrete, product-specific guidance on tuning parallelism and node utilization, fitting best-practices. |
 | [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/batch/policy-reference) | security | 0.65 | Indexes Batch-specific Azure Policy built-in definitions, which are concrete governance/security controls and policy names unique to this service. |

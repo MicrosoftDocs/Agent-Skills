@@ -48,8 +48,8 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 71
-- **Unchanged**: 6
+- **Updated Pages**: 0
+- **Unchanged**: 77
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-document-intelligence/azure-document-intelligence.csv`
 
@@ -68,50 +68,6 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | *(Unclassified)* | 38 | 49.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [Custom model lifecycle](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/train/custom-lifecycle?view=doc-intel-4.0.0)
-  - Updated: 2025-11-18T08:00:00.000Z → 2026-06-29T08:00:00.000Z
-- [Enhanced capabilities](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/concept/add-on-capabilities?view=doc-intel-4.0.0)
-  - Updated: 2025-11-18T08:00:00.000Z → 2026-06-22T08:00:00.000Z
-- [Query field extraction](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/concept/query-fields?view=doc-intel-4.0.0)
-  - Updated: 2026-02-04T18:16:00.000Z → 2026-06-11T08:00:00.000Z
-- [Accuracy and confidence scores](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/concept/accuracy-confidence?view=doc-intel-4.0.0)
-  - Updated: 2025-11-18T08:00:00.000Z → 2026-04-08T08:00:00.000Z
-- [Analyze document API response](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/concept/analyze-document-response?view=doc-intel-4.0.0)
-  - Updated: 2025-11-18T08:00:00.000Z → 2026-04-30T08:00:00.000Z
-- [Layout API markdown output elements](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/concept/markdown-elements?view=doc-intel-4.0.0)
-  - Updated: 2025-11-18T08:00:00.000Z → 2026-04-16T08:00:00.000Z
-- [Retrieval-Augmented Generation (RAG)](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/concept/retrieval-augmented-generation?view=doc-intel-4.0.0)
-  - Updated: 2025-11-18T08:00:00.000Z → 2026-06-25T08:00:00.000Z
-- [Batch documents analysis](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/prebuilt/batch-analysis?view=doc-intel-4.0.0)
-  - Updated: 2025-11-18T08:00:00.000Z → 2026-05-18T08:00:00.000Z
-- [Troubleshoot latency issues](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/concept/troubleshoot-latency?view=doc-intel-4.0.0)
-  - Updated: 2025-11-18T08:00:00.000Z → 2026-04-30T08:00:00.000Z
-- [Document Intelligence Studio custom projects](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/quickstarts/studio-custom-project?view=doc-intel-4.0.0)
-  - Updated: 2025-11-18T08:00:00.000Z → 2026-06-30T08:00:00.000Z
-- [Get started with Document Intelligence Studio](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/quickstarts/get-started-studio?view=doc-intel-4.0.0)
-  - Updated: 2025-11-18T15:37:00.000Z → 2026-04-29T08:00:00.000Z
-- [Get started with Document Intelligence client libraries](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/quickstarts/get-started-sdks-rest-api?view=doc-intel-4.0.0)
-  - Updated: 2025-11-18T08:00:00.000Z → 2026-04-22T08:00:00.000Z
-- [Sample Labeling tool](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/v21/try-sample-label-tool?view=doc-intel-2.1.0)
-  - Updated: 2025-10-01T08:00:00.000Z → 2026-05-11T08:00:00.000Z
-- [Use Document Intelligence models](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/how-to-guides/use-sdk-rest-api?view=doc-intel-4.0.0)
-  - Updated: 2025-11-18T08:00:00.000Z → 2026-04-01T08:00:00.000Z
-- [Check my usage and estimate the cost](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/how-to-guides/estimate-cost?view=doc-intel-4.0.0)
-  - Updated: 2025-11-18T15:37:00.000Z → 2026-05-21T08:00:00.000Z
-- [Create SAS tokens for storage containers](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/authentication/create-sas-tokens?view=doc-intel-4.0.0)
-  - Updated: 2025-11-18T08:00:00.000Z → 2026-04-16T08:00:00.000Z
-- [Build a custom extraction model](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/how-to-guides/build-a-custom-model?view=doc-intel-4.0.0)
-  - Updated: 2025-11-18T08:00:00.000Z → 2026-05-23T08:00:00.000Z
-- [Build a custom classification model](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/how-to-guides/build-a-custom-classifier?view=doc-intel-4.0.0)
-  - Updated: 2025-11-18T08:00:00.000Z → 2026-05-21T08:00:00.000Z
-- [Project sharing with custom models](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/how-to-guides/project-share-custom-models?view=doc-intel-4.0.0)
-  - Updated: 2026-02-06T06:03:00.000Z → 2026-04-11T08:00:00.000Z
-- [Compose custom extraction models](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/how-to-guides/compose-custom-models?view=doc-intel-4.0.0)
-  - Updated: 2025-11-18T08:00:00.000Z → 2026-04-07T08:00:00.000Z
-- *...and 51 more*
 
 ## Classified Pages
 

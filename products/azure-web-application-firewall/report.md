@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-12'
+generated_at: '2026-07-19'
 category_descriptions:
   integrations: 'Using WAF with other Azure services: integrating logs with Sentinel/Log
     Analytics, automating incident response, investigating events, and protecting
@@ -13,8 +13,8 @@ category_descriptions:
   best-practices: Best practices for configuring, tuning, and hardening WAF on Front
     Door and Application Gateway, including geomatch rules, exclusions, and security
     posture improvements.
-  security: 'Configuring WAF security controls: IP restrictions, Front Door DRS rule
-    groups, exclusion/exception lists, and enforcing WAF policies via Azure Policy.'
+  security: 'Configuring and governing WAF security: IP restrictions, DRS rule groups,
+    exclusions/exceptions, hardening settings, and enforcing policies with Azure Policy.'
   limits-quotas: Details on WAF limits like max request/body size, file upload constraints,
     rule engine behavior under high load, and how to configure or tune these limits
     on Application Gateway.
@@ -26,13 +26,14 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Web Application Firewall development
   including troubleshooting, best practices, decision making, limits & quotas, security,
   configuration, integrations & coding patterns, and deployment. Use when configuring
-  Front Door/App Gateway WAF rules, DRS groups, geo/IP filters, rate limits, or bot/CAPTCHA,
-  and other Azure Web Application Firewall related development tasks. Not for Azure
-  Application Gateway (use azure-application-gateway), Azure Front Door (use azure-front-door),
-  Azure Firewall (use azure-firewall), Azure DDos Protection (use azure-ddos-protection).
-use_when: Use when configuring Front Door/App Gateway WAF rules, DRS groups, geo/IP
-  filters, rate limits, or bot/CAPTCHA, and other Azure Web Application Firewall related
-  development tasks.
+  Front Door/App Gateway WAF rules, rate limits, geo/bot controls, logging, or Sentinel
+  integration, and other Azure Web Application Firewall related development tasks.
+  Not for Azure Application Gateway (use azure-application-gateway), Azure Front Door
+  (use azure-front-door), Azure Firewall (use azure-firewall), Azure DDos Protection
+  (use azure-ddos-protection).
+use_when: Use when configuring Front Door/App Gateway WAF rules, rate limits, geo/bot
+  controls, logging, or Sentinel integration, and other Azure Web Application Firewall
+  related development tasks.
 confusable_not_for: Not for Azure Application Gateway (use azure-application-gateway),
   Azure Front Door (use azure-front-door), Azure Firewall (use azure-firewall), Azure
   DDos Protection (use azure-ddos-protection).
@@ -48,36 +49,32 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 - **Unclassified**: 19
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 0
-- **Unchanged**: 80
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 81
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-web-application-firewall/azure-web-application-firewall.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| best-practices | 5 | 6.1% |
+| best-practices | 4 | 4.9% |
 | configuration | 37 | 45.1% |
 | decision-making | 2 | 2.4% |
 | deployment | 4 | 4.9% |
 | integrations | 7 | 8.5% |
 | limits-quotas | 2 | 2.4% |
-| security | 5 | 6.1% |
+| security | 6 | 7.3% |
 | troubleshooting | 1 | 1.2% |
 | *(Unclassified)* | 19 | 23.2% |
 
 ## Changes
 
-### New Pages
+### Updated Pages
 
-- [Exception lists](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/application-gateway-exceptions)
-- [Exception lists](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/front-door-exceptions)
-
-### Deleted Pages
-
-- ~~Exceptions List~~ (https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/front-door-exceptions)
+- [Secure your Azure Web Application Firewall](https://learn.microsoft.com/en-us/azure/web-application-firewall/secure-web-application-firewall)
+  - Updated: 2025-07-09T05:33:00.000Z → 2026-07-17T22:12:00.000Z
 
 ## Classified Pages
 
@@ -88,7 +85,6 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Best practices](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/best-practices) | best-practices | 0.80 | Explicitly labeled as best practices for Azure WAF on Application Gateway V2. Such pages typically include product-specific DOs/DON’Ts, configuration recommendations, and gotchas unique to WAF on Application Gateway, matching the best-practices sub-skill. |
 | [Configure custom response code and body](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/configure-custom-response-code) | configuration | 0.80 | Describes how to change default 403 response and message when WAF blocks a request; includes specific status code and body configuration options unique to this product. |
 | [Exclusion lists](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/application-gateway-waf-configuration) | configuration | 0.80 | Explains how to configure exclusion lists in WAF policies; includes specific fields and behaviors for excluding parts of requests, which are product-specific settings. |
-| [Secure your Azure Web Application Firewall](https://learn.microsoft.com/en-us/azure/web-application-firewall/secure-web-application-firewall) | best-practices | 0.80 | Explicitly a best-practices article covering network, identity, logging, and policy; contains product-specific security recommendations and configurations. |
 | [Overview](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/waf-front-door-drs) | security | 0.78 | A DRS rule set reference page for Azure Web Application Firewall on Front Door typically enumerates concrete rule groups and individual rules, including their IDs, categories, and behavior. These rule identifiers and groupings are product-specific security configuration knowledge that an LLM is unlikely to fully know from training. The content is focused on how Azure-managed WAF rules are organized and applied, which aligns with security-focused configuration and behavior rather than generic concepts. |
 | [Automated detection and response](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/automated-detection-response-with-sentinel) | integrations | 0.75 | Describes deploying playbooks and detection templates; includes Sentinel rule configurations and automation steps specific to WAF events. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/application-gateway-customize-waf-rules-cli) | configuration | 0.75 | CLI-based configuration of WAF rule groups and rules; provides product-specific command parameters and options. |
@@ -103,6 +99,7 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Mask sensitive data](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/waf-sensitive-data-protection-configure) | configuration | 0.75 | How-to for configuring log scrubbing, including rule definitions and behavior; product-specific configuration parameters and limitations. |
 | [Overview](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/application-gateway-crs-rulegroups-rules) | configuration | 0.75 | Details Azure-managed Default Rule Set and CRS rule groups/rules; includes rule identifiers and behavior that are product-specific configuration references. |
 | [Using Microsoft Sentinel with Web Application Firewall](https://learn.microsoft.com/en-us/azure/web-application-firewall/waf-sentinel) | integrations | 0.75 | Shows how to use Sentinel workbooks and Log Analytics with WAF; includes product-specific integration steps and configuration of data sources. |
+| [Secure your Azure Web Application Firewall](https://learn.microsoft.com/en-us/azure/web-application-firewall/secure-web-application-firewall) | security | 0.72 | Page focuses on securing Azure Web Application Firewall deployments with concrete, product-specific security recommendations (network security, IAM, data protection, logging, compliance, recovery). This aligns with security sub-skill guidance, and such WAF-specific hardening steps and configurations are more detailed than generic security concepts an LLM would know. |
 | [Associate a policy with an existing Application Gateway](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/associate-waf-policy-existing-gateway) | configuration | 0.70 | Describes constraints (same region/subscription) and steps to bind a WAF policy to an existing gateway; product-specific configuration behavior. |
 | [CAPTCHA challenge](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/captcha-challenge) | configuration | 0.70 | Describes CAPTCHA feature behavior and configuration for login/sign-up flows; includes WAF action settings and usage constraints. |
 | [Configure WAF policy - PowerShell](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/waf-front-door-custom-rules-powershell) | configuration | 0.70 | Shows how to configure a WAF policy with custom rules and the Default Rule Set; likely includes rule configuration parameters and allowed values, which are product-specific configuration details. |

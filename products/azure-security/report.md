@@ -44,8 +44,8 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 11
-- **Unchanged**: 115
+- **Updated Pages**: 0
+- **Unchanged**: 126
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-security/azure-security.csv`
 
@@ -62,31 +62,6 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | *(Unclassified)* | 71 | 56.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [Physical security](https://learn.microsoft.com/en-us/azure/security/fundamentals/physical-security)
-  - Updated: 2025-04-16T08:00:00.000Z → 2026-07-08T08:00:00.000Z
-- [Encryption at rest](https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-atrest)
-  - Updated: 2026-04-20T08:00:00.000Z → 2026-07-09T22:04:00.000Z
-- [Security overview](https://learn.microsoft.com/en-us/azure/security/fundamentals/identity-management-overview)
-  - Updated: 2026-05-05T08:00:00.000Z → 2026-07-08T22:31:00.000Z
-- [Best practices](https://learn.microsoft.com/en-us/azure/security/fundamentals/identity-management-best-practices)
-  - Updated: 2026-05-05T08:00:00.000Z → 2026-07-08T22:31:00.000Z
-- [Security checklist](https://learn.microsoft.com/en-us/azure/security/fundamentals/steps-secure-identity)
-  - Updated: 2024-09-06T08:00:00.000Z → 2026-07-08T22:31:00.000Z
-- [Best practices for protecting secrets](https://learn.microsoft.com/en-us/azure/security/fundamentals/secrets-best-practices)
-  - Updated: 2026-05-05T08:00:00.000Z → 2026-07-09T22:04:00.000Z
-- [Data security and encryption](https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-overview)
-  - Updated: 2026-05-05T08:00:00.000Z → 2026-07-09T22:04:00.000Z
-- [Key management in Azure](https://learn.microsoft.com/en-us/azure/security/fundamentals/key-management)
-  - Updated: 2026-05-05T08:00:00.000Z → 2026-07-09T22:04:00.000Z
-- [Choosing a key management solution](https://learn.microsoft.com/en-us/azure/security/fundamentals/key-management-choose)
-  - Updated: 2026-04-07T08:00:00.000Z → 2026-07-09T22:04:00.000Z
-- [Services supporting CMKs](https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-customer-managed-keys-support)
-  - Updated: 2026-05-15T08:00:00.000Z → 2026-07-08T08:00:00.000Z
-- [Data encryption models](https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-models)
-  - Updated: 2026-04-20T08:00:00.000Z → 2026-07-09T22:04:00.000Z
 
 ## Classified Pages
 

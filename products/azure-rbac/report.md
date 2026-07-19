@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-07-05'
+generated_at: '2026-07-19'
 category_descriptions:
   best-practices: 'Security-focused guidance on designing Azure RBAC: choosing scopes,
     delegating access with ABAC conditions, and applying least privilege and separation-of-duties
     best practices.'
-  security: Azure RBAC roles, permissions, ABAC conditions, custom roles, PIM, deny
-    assignments, and secure role assignment/management for security, identity, and
-    privileged access scenarios.
+  security: 'Azure RBAC/ABAC roles, permissions, and conditions: built-in and custom
+    roles by workload, assignment and PIM, deny assignments, policy integration, and
+    secure subscription management.'
   troubleshooting: 'Diagnosing and fixing Azure RBAC problems: auditing role changes,
     resolving role/custom role limits, and troubleshooting role assignment condition
     and common access issues.'
@@ -24,17 +24,15 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Role-based access control development
   including troubleshooting, best practices, decision making, limits & quotas, security,
   configuration, and integrations & coding patterns. Use when defining RBAC/ABAC roles,
-  custom role definitions, PIM, deny assignments, or ARM/Bicep-based role assignments,
+  PIM assignments, deny policies, custom role JSON, or ARM/Bicep access templates,
   and other Azure Role-based access control related development tasks. Not for Azure
-  Active Directory B2C (use azure-active-directory-b2c), Azure Information Protection
-  (use azure-information-protection), Azure Policy (use azure-policy), Azure Security
-  (use azure-security).
-use_when: Use when defining RBAC/ABAC roles, custom role definitions, PIM, deny assignments,
-  or ARM/Bicep-based role assignments, and other Azure Role-based access control related
-  development tasks.
-confusable_not_for: Not for Azure Active Directory B2C (use azure-active-directory-b2c),
-  Azure Information Protection (use azure-information-protection), Azure Policy (use
-  azure-policy), Azure Security (use azure-security).
+  Policy (use azure-policy), Azure Security (use azure-security), Azure Portal (use
+  azure-portal), Azure Resource Manager (use azure-resource-manager).
+use_when: Use when defining RBAC/ABAC roles, PIM assignments, deny policies, custom
+  role JSON, or ARM/Bicep access templates, and other Azure Role-based access control
+  related development tasks.
+confusable_not_for: Not for Azure Policy (use azure-policy), Azure Security (use azure-security),
+  Azure Portal (use azure-portal), Azure Resource Manager (use azure-resource-manager).
 ---
 # Azure Role-based access control Crawl Report
 
@@ -48,8 +46,8 @@ confusable_not_for: Not for Azure Active Directory B2C (use azure-active-directo
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 104
+- **Updated Pages**: 1
+- **Unchanged**: 103
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-rbac/azure-rbac.csv`
 
@@ -67,6 +65,11 @@ confusable_not_for: Not for Azure Active Directory B2C (use azure-active-directo
 | *(Unclassified)* | 9 | 8.7% |
 
 ## Changes
+
+### Updated Pages
+
+- [Migration](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/migration)
+  - Updated: 2026-07-01T08:00:00.000Z → 2026-07-14T22:16:00.000Z
 
 ## Classified Pages
 
@@ -109,9 +112,9 @@ confusable_not_for: Not for Azure Active Directory B2C (use azure-active-directo
 | [Web and Mobile](https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/web-and-mobile) | security | 0.95 | Lists Web and Mobile provider permission operations with exact action strings, which are detailed RBAC security settings. |
 | [Hybrid + multicloud](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/hybrid-multicloud) | security | 0.90 | Lists built-in RBAC roles for Hybrid + multicloud (Azure Stack HCI) including Actions/DataActions, which are specific security permissions. |
 | [Management and governance](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/management-and-governance) | security | 0.90 | Contains the full list of built-in RBAC roles for Management and governance with their permission sets, which are detailed security role definitions. |
-| [Migration](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/migration) | security | 0.90 | Lists concrete built-in RBAC roles in the Migration category with their exact Actions/NotActions/DataActions, which are product-specific security permissions. |
 | [Monitor](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/monitor) | security | 0.90 | Provides detailed built-in RBAC roles for Monitor with explicit Actions/NotActions/DataActions, which are specific security configuration details. |
 | [Troubleshoot Azure RBAC limits](https://learn.microsoft.com/en-us/azure/role-based-access-control/troubleshoot-limits) | troubleshooting | 0.88 | Focused on exceeding RBAC limits and using Azure Resource Graph to reduce assignments/custom roles; combines limit-specific behavior with concrete remediation steps, matching troubleshooting for limits. |
+| [Migration](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/migration) | security | 0.86 | Lists specific Azure RBAC built-in roles in the Migration category with their exact Actions, NotActions, DataActions, and NotDataActions, which are product-specific security/authorization details not reliably known from training. |
 | [Overview](https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles) | limits-quotas | 0.86 | Includes explicit numeric limits on custom roles per tenant (5,000 and 2,000 for 21Vianet) plus detailed role definition structure; the limits are expert knowledge fitting limits-quotas. |
 | [Troubleshoot ABAC conditions](https://learn.microsoft.com/en-us/azure/role-based-access-control/conditions-troubleshoot) | troubleshooting | 0.86 | The page is explicitly a troubleshooting guide for Azure ABAC role assignment conditions. It maps specific symptoms and error messages to causes and resolutions, including product-specific behaviors and steps (for example, how certain condition formats or properties cause particular failures). This symptom→cause→solution structure with Azure RBAC/ABAC–specific details qualifies as expert troubleshooting knowledge beyond generic debugging advice. |
 | [Best practices](https://learn.microsoft.com/en-us/azure/role-based-access-control/best-practices) | best-practices | 0.85 | Explicit best-practices article with DO/DON'T guidance for Azure RBAC usage, including product-specific recommendations and pitfalls. |
