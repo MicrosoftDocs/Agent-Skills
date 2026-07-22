@@ -6,5 +6,5 @@
     "name": "Microsoft",
     "url": "https://github.com/MicrosoftDocs/agent-skills"
   },
-  "skills": "skills/"
+  "skills": "./skills/"
 }
