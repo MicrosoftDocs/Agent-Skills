@@ -1,9 +1,9 @@
 ---
 name: azure-data-api-builder
-description: Expert knowledge for Azure Data Api Builder development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when exposing databases via REST/GraphQL, tuning queries, configuring auth, deploying DAB, or using SQL MCP, and other Azure Data Api Builder related development tasks. Not for Azure App Service (use azure-app-service), Azure Functions (use azure-functions), Azure API Management (use azure-api-management).
+description: Expert knowledge for Azure Data Api Builder development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when exposing databases via DAB REST/GraphQL, configuring auth/RLS, tuning limits, or deploying to Azure/Docker, and other Azure Data Api Builder related development tasks. Not for Azure API Management (use azure-api-management), Azure Functions (use azure-functions), Azure App Service (use azure-app-service), Azure Logic Apps (use azure-logic-apps).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-28"
+  generated_at: "2026-07-19"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Data Api Builder Skill
@@ -31,7 +31,7 @@ This skill requires **network access** to fetch documentation content:
 | Security | L70-L90 | Configuring authentication, authorization, and row-level security for Data API builder, including Entra ID, JWT, EasyAuth, managed identity, simulator, and SQL auth, plus security best practices. |
 | Configuration | L91-L133 | Configuring Data API builder: CLI setup, JSON schema, entities, data sources, security, caching, telemetry, logging, health checks, OpenAPI, and exposing DB objects via REST/GraphQL. |
 | Integrations & Coding Patterns | L134-L149 | GraphQL/REST query patterns in DAB: filtering, sorting, pagination, field projection, exporting schemas, batching mutations, and using SQL MCP tools from AI agents. |
-| Deployment | L150-L158 | How to deploy and run Data API builder in different environments (App Service, Docker, air‑gapped), including building from source and configuring backends like local SQL and Cosmos DB NoSQL. |
+| Deployment | L150-L158 | How to build and run Data API builder from source or Docker, and deploy it to Azure (App Service, Cosmos DB, air‑gapped/local SQL) with configuration and environment-specific guidance. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -150,7 +150,7 @@ This skill requires **network access** to fetch documentation content:
 ### Deployment
 | Topic | URL |
 |-------|-----|
-| Choose deployment options for Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/deployment/ |
+| Choose Data API builder deployment option in Azure | https://learn.microsoft.com/en-us/azure/data-api-builder/deployment/ |
 | Deploy Data API builder in air-gapped environments | https://learn.microsoft.com/en-us/azure/data-api-builder/deployment/air-gapped |
 | Deploy Data API builder to Azure App Service | https://learn.microsoft.com/en-us/azure/data-api-builder/deployment/azure-app-service |
 | Build and run Data API builder from source | https://learn.microsoft.com/en-us/azure/data-api-builder/deployment/run-from-source |

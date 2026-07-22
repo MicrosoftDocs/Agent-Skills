@@ -51,8 +51,8 @@ confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 188
+- **Updated Pages**: 0
+- **Unchanged**: 189
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-speech/azure-speech.csv`
 
@@ -71,11 +71,6 @@ confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure 
 | *(Unclassified)* | 79 | 41.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [How to evaluate Voice Live agents (preview)](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-voice-live-evaluate)
-  - Updated: 2026-06-02T19:00:00.000Z → 2026-07-08T22:13:00.000Z
 
 ## Classified Pages
 

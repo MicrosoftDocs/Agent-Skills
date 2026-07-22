@@ -1,9 +1,9 @@
 ---
 name: azure-bastion
-description: Expert knowledge for Azure Bastion development including best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when configuring Bastion for AKS private clusters, VM scale sets, Entra ID auth, hub/spoke VNets, or native SSH/RDP clients, and other Azure Bastion related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual Machines (use azure-virtual-machines), Azure VPN Gateway (use azure-vpn-gateway), Azure Firewall (use azure-firewall).
+description: Expert knowledge for Azure Bastion development including best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when configuring Bastion for AKS private clusters, VM scale sets, Entra ID auth, hub/spoke VNets, or IP-based cross-VNet access, and other Azure Bastion related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual Machines (use azure-virtual-machines), Azure VPN Gateway (use azure-vpn-gateway), Azure Firewall (use azure-firewall).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-17"
+  generated_at: "2026-07-19"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Bastion Skill
@@ -29,7 +29,7 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L47-L53 | Architectural options and patterns for Azure Bastion: hub/spoke and peered VNets, private-only deployments, network/topology design, and deployment guidance for secure remote access. |
 | Limits & Quotas | L54-L58 | Configuring Azure Bastion host scaling limits, including max concurrent RDP/SSH sessions, connection thresholds, and how to adjust or plan capacity for different SKUs. |
 | Security | L59-L65 | Configuring secure Azure Bastion access: Entra ID authentication, required NSG rules, and hardening best practices to lock down Bastion hosts and connections. |
-| Configuration | L66-L77 | Configuring Azure Bastion settings, auth (Kerberos), monitoring/metrics/logs, native client access, session management, recording, and shareable links for secure RDP/SSH access |
+| Configuration | L66-L77 | Configuring Azure Bastion features: auth (Kerberos), monitoring/metrics/logs, native client access, session management, recording, and shareable links. |
 | Integrations & Coding Patterns | L78-L85 | How to use Azure Bastion with AKS private clusters, VM scale sets, and native Windows/Linux clients, including SSH/RDP connectivity patterns and file transfer via Bastion native clients. |
 
 ### Best Practices
@@ -69,7 +69,7 @@ This skill requires **network access** to fetch documentation content:
 | Azure Bastion configuration settings and options | https://learn.microsoft.com/en-us/azure/bastion/configuration-settings |
 | Configure Kerberos authentication for Azure Bastion | https://learn.microsoft.com/en-us/azure/bastion/kerberos-authentication-portal |
 | Configure monitoring and diagnostics for Azure Bastion | https://learn.microsoft.com/en-us/azure/bastion/monitor-bastion |
-| Reference monitoring metrics and logs for Azure Bastion | https://learn.microsoft.com/en-us/azure/bastion/monitor-bastion-reference |
+| Reference Azure Bastion monitoring metrics and logs | https://learn.microsoft.com/en-us/azure/bastion/monitor-bastion-reference |
 | Configure Azure Bastion for native client access | https://learn.microsoft.com/en-us/azure/bastion/native-client |
 | Monitor and manage active Azure Bastion sessions | https://learn.microsoft.com/en-us/azure/bastion/session-monitoring |
 | Configure and use Azure Bastion session recording | https://learn.microsoft.com/en-us/azure/bastion/session-recording |

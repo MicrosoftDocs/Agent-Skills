@@ -3,7 +3,7 @@ name: azure-arc
 description: Expert knowledge for Azure Arc development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing Arc-enabled Kubernetes, servers, SQL MI/data services, resource bridge, or Edge RAG workloads, and other Azure Arc related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Stack Edge (use azure-stack-edge), Azure Local (use azure-local), Azure VMware Solution (use azure-vmware-solution).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-12"
+  generated_at: "2026-07-19"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Arc Skill

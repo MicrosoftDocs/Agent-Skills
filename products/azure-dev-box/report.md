@@ -47,8 +47,8 @@ confusable_not_for: Not for Azure DevTest Labs (use azure-devtest-labs), Azure V
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 5
-- **Unchanged**: 60
+- **Updated Pages**: 0
+- **Unchanged**: 65
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-dev-box/azure-dev-box.csv`
 
@@ -67,19 +67,6 @@ confusable_not_for: Not for Azure DevTest Labs (use azure-devtest-labs), Azure V
 | *(Unclassified)* | 20 | 30.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [Hibernate your Dev Box](https://learn.microsoft.com/en-us/azure/dev-box/how-to-hibernate-your-dev-box)
-  - Updated: 2025-05-30T05:27:00.000Z → 2026-07-08T05:12:00.000Z
-- [Configure stop on disconnect](https://learn.microsoft.com/en-us/azure/dev-box/how-to-configure-stop-on-disconnect)
-  - Updated: 2025-12-30T23:13:00.000Z → 2026-07-08T05:12:00.000Z
-- [Automatically repair connectivity issues](https://learn.microsoft.com/en-us/azure/dev-box/how-to-troubleshoot-repair-dev-box)
-  - Updated: 2025-05-30T05:27:00.000Z → 2026-07-08T05:12:00.000Z
-- [Resolve dev box connectivity issues](https://learn.microsoft.com/en-us/azure/dev-box/how-to-resolve-dev-box-connectivity-issues)
-  - Updated: 2025-11-21T23:10:00.000Z → 2026-07-08T05:12:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/dev-box/dev-box-faq)
-  - Updated: 2025-08-14T22:10:00.000Z → 2026-07-08T05:12:00.000Z
 
 ## Classified Pages
 

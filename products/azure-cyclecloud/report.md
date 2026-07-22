@@ -49,10 +49,10 @@ confusable_not_for: Not for Azure Batch (use azure-batch), Azure HPC Cache (use 
 - **Unclassified**: 23
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 4
-- **Unchanged**: 109
-- **Deleted Pages**: 2
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 115
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cyclecloud/azure-cyclecloud.csv`
 
 ## Classification Statistics
@@ -70,27 +70,6 @@ confusable_not_for: Not for Azure Batch (use azure-batch), Azure HPC Cache (use 
 | *(Unclassified)* | 23 | 20.0% |
 
 ## Changes
-
-### New Pages
-
-- [8.9.1 Release Notes](https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/8-9-1?view=cyclecloud-8)
-- [Plan and size HPC clusters](https://learn.microsoft.com/en-us/azure/cyclecloud/concepts/plan-and-size-hpc-clusters?view=cyclecloud-8)
-
-### Updated Pages
-
-- [Current Release - v8.x](https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes?view=cyclecloud-8)
-  - Updated: 2026-06-19T08:00:00.000Z → 2026-07-01T08:00:00.000Z
-- [Create a Cluster](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/create-cluster?view=cyclecloud-8)
-  - Updated: 2026-06-19T08:00:00.000Z → 2026-07-10T08:00:00.000Z
-- [What is Azure CycleCloud?](https://learn.microsoft.com/en-us/azure/cyclecloud/overview?view=cyclecloud-8)
-  - Updated: 2026-06-19T08:00:00.000Z → 2026-07-09T08:00:00.000Z
-- [What is Azure CycleCloud Workspace for Slurm?](https://learn.microsoft.com/en-us/azure/cyclecloud/overview-ccws?view=cyclecloud-8)
-  - Updated: 2026-06-19T08:00:00.000Z → 2026-07-09T08:00:00.000Z
-
-### Deleted Pages
-
-- ~~8.8.0 Release Notes~~ (https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/8-8-0?view=cyclecloud-8)
-- ~~8.8.1 Release Notes~~ (https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/8-8-1?view=cyclecloud-8)
 
 ## Classified Pages
 

@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-07-12'
+generated_at: '2026-07-19'
 category_descriptions:
-  configuration: 'Configuring Azure Load Balancer behavior: backends/frontends (incl.
-    cross-subscription, IP-based, outbound-only), rules, health probes, traffic distribution,
-    monitoring, and SNAT outbound rules.'
+  configuration: 'Configuring Azure Load Balancer behavior: backends/frontends (including
+    cross-subscription), health probes, rules (inbound, outbound, NAT), traffic distribution,
+    monitoring, and IPv6/DHCPv6 settings.'
   best-practices: Guidance on deploying Azure Load Balancer with VM scale sets, configuring
     inbound NAT, and building custom HTTP/HTTPS health probes (Python) using recommended
     best practices.
@@ -27,13 +27,13 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Load Balancer development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when configuring SNAT/outbound rules, health probes, VM scale set traffic, IMDS/Monitor
-  APIs, or DDoS/NSG security, and other Azure Load Balancer related development tasks.
-  Not for Azure Application Gateway (use azure-application-gateway), Azure Front Door
-  (use azure-front-door), Azure Traffic Manager (use azure-traffic-manager), Azure
-  Virtual Network (use azure-virtual-network).
-use_when: Use when configuring SNAT/outbound rules, health probes, VM scale set traffic,
-  IMDS/Monitor APIs, or DDoS/NSG security, and other Azure Load Balancer related development
+  Use when configuring health probes/rules, SNAT/outbound flows, IMDS/Monitor APIs,
+  NAT v1→v2, or DDoS/NSG protection, and other Azure Load Balancer related development
+  tasks. Not for Azure Application Gateway (use azure-application-gateway), Azure
+  Front Door (use azure-front-door), Azure Traffic Manager (use azure-traffic-manager),
+  Azure Virtual Network (use azure-virtual-network).
+use_when: Use when configuring health probes/rules, SNAT/outbound flows, IMDS/Monitor
+  APIs, NAT v1→v2, or DDoS/NSG protection, and other Azure Load Balancer related development
   tasks.
 confusable_not_for: Not for Azure Application Gateway (use azure-application-gateway),
   Azure Front Door (use azure-front-door), Azure Traffic Manager (use azure-traffic-manager),
@@ -51,8 +51,8 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 9
-- **Unchanged**: 78
+- **Updated Pages**: 1
+- **Unchanged**: 86
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-load-balancer/azure-load-balancer.csv`
 
@@ -75,24 +75,8 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 
 ### Updated Pages
 
-- [SNAT for outbound connections to internet](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-outbound-connections)
-  - Updated: 2025-09-01T08:00:00.000Z → 2026-07-08T17:13:00.000Z
-- [What is Azure Load Balancer?](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-overview)
-  - Updated: 2025-07-16T22:08:00.000Z → 2026-07-08T17:13:00.000Z
-- [Gateway load balancer overview](https://learn.microsoft.com/en-us/azure/load-balancer/gateway-overview)
-  - Updated: 2026-01-07T08:00:00.000Z → 2026-07-08T17:13:00.000Z
-- [Global load balancer overview](https://learn.microsoft.com/en-us/azure/load-balancer/cross-region-overview)
-  - Updated: 2026-01-29T08:00:00.000Z → 2026-07-08T17:13:00.000Z
-- [Create a public load balancer](https://learn.microsoft.com/en-us/azure/load-balancer/quickstart-load-balancer-standard-public-portal)
-  - Updated: 2026-01-09T08:00:00.000Z → 2026-07-08T05:12:00.000Z
-- [PowerShell](https://learn.microsoft.com/en-us/azure/load-balancer/quickstart-load-balancer-standard-public-powershell)
-  - Updated: 2026-01-28T08:00:00.000Z → 2026-07-08T05:12:00.000Z
-- [CLI](https://learn.microsoft.com/en-us/azure/load-balancer/quickstart-load-balancer-standard-public-cli)
-  - Updated: 2026-01-28T08:00:00.000Z → 2026-07-08T05:12:00.000Z
-- [ARM template](https://learn.microsoft.com/en-us/azure/load-balancer/quickstart-load-balancer-standard-public-template)
-  - Updated: 2026-01-28T08:00:00.000Z → 2026-07-08T05:12:00.000Z
-- [Terraform](https://learn.microsoft.com/en-us/azure/load-balancer/quickstart-load-balancer-standard-public-terraform)
-  - Updated: 2026-01-28T08:00:00.000Z → 2026-07-08T05:12:00.000Z
+- [Portal settings](https://learn.microsoft.com/en-us/azure/load-balancer/manage)
+  - Updated: 2024-01-19T08:00:00.000Z → 2026-07-15T08:00:00.000Z
 
 ## Classified Pages
 
@@ -106,6 +90,7 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Upgrade options and guidance](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-basic-upgrade-guidance) | decision-making | 0.80 | Upgrade guidance between SKUs with recommendations, differences, and migration considerations; helps decide how and when to move to Standard. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-faqs) | limits-quotas | 0.78 | FAQ includes product-specific behaviors and several concrete limits (for example SNAT port counts, timeout durations, and other numeric constraints) that qualify as expert knowledge beyond generic concepts, fitting the limits-quotas category best. |
 | [Manage admin state](https://learn.microsoft.com/en-us/azure/load-balancer/manage-admin-state-how-to) | configuration | 0.75 | Describes Admin State feature with specific values (Up, Down, None) and how to set/update/remove via portal/CLI/PowerShell; clearly a product-specific configuration option. |
+| [Portal settings](https://learn.microsoft.com/en-us/azure/load-balancer/manage) | configuration | 0.72 | The page explains individual Azure Load Balancer settings and how to choose the right configuration, which implies detailed, product-specific configuration options and parameters rather than just conceptual overview. This aligns with the configuration sub-skill type. |
 | [Backend Pool management](https://learn.microsoft.com/en-us/azure/load-balancer/backend-pool-management) | configuration | 0.70 | Backend pool management article focusing on configuration by IP address and VNet ID; includes product-specific backend pool configuration options and behaviors. |
 | [Configuring outbound rules](https://learn.microsoft.com/en-us/azure/load-balancer/outbound-rules) | configuration | 0.70 | Outbound rules article describes explicit SNAT configuration and tuning; likely includes rule parameters and behavior, which are product-specific configuration details. |
 | [Distribution modes](https://learn.microsoft.com/en-us/azure/load-balancer/distribution-mode-concepts) | architecture-patterns | 0.70 | Explains product-specific distribution modes, how each routes traffic, and when to switch between them; this is detailed, service-specific routing/architecture guidance beyond generic load balancing concepts. |
@@ -132,7 +117,6 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Get Load Balancer metrics with Azure Monitor CLI](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-monitor-metrics-cli) | integrations | 0.65 | Provides concrete CLI examples for querying Load Balancer metrics via Azure Monitor; includes command parameters and metric names, which are integration/config details. |
 | [Manage inbound NAT rules](https://learn.microsoft.com/en-us/azure/load-balancer/manage-inbound-nat-rules) | configuration | 0.65 | Management article for inbound NAT rules v1 and v2; likely includes rule properties, supported targets, and configuration specifics beyond basic tutorial content. |
 | [Migrate Inbound NAT Pools to NAT Rules](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-nat-pool-migration) | decision-making | 0.65 | The page focuses on migrating from inbound NAT rules v1 to v2, including a specific retirement date for NAT Pools and guidance on what to do if you are currently using them. This is migration and choice guidance between versions, which fits decision-making, and includes product-specific timelines and upgrade considerations that an LLM would not know from training. |
-| [Portal settings](https://learn.microsoft.com/en-us/azure/load-balancer/manage) | configuration | 0.65 | Describes individual portal settings and how to choose the right configuration; likely enumerates specific setting names and options, which is product-specific configuration knowledge. |
 | [Standard Load Balancer metrics and diagnostics](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-standard-diagnostics) | troubleshooting | 0.65 | Focused on using metrics, alerts, and resource health to diagnose issues. Such diagnostic guides for a specific service usually map symptoms/metrics to causes and resolutions, which is product-specific troubleshooting knowledge beyond generic monitoring concepts. |
 | [Upgrade from Basic to Standard with PowerShell](https://learn.microsoft.com/en-us/azure/load-balancer/upgrade-basic-standard-with-powershell) | deployment | 0.65 | Describes a PowerShell module that recreates configuration on Standard SKU; product-specific deployment/upgrade procedure rather than generic tutorial. |
 | [Configure DHCPv6 for Linux VMs](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-ipv6-for-linux) | configuration | 0.60 | Details OS-level DHCPv6 configuration for various Linux distributions to work with Azure IPv6; includes distro-specific config steps and packages, which are product/integration-specific. |

@@ -1,9 +1,9 @@
 ---
 name: azure-architecture
-description: Expert guidance for designing Azure solutions using Azure Architecture. Covers reference architectures, solution ideas, design patterns, technology choices, architecture styles, best practices, anti-patterns, example workloads, and migration guides. Use when designing AKS, SAP, IoT, data/AI platforms, or migrating AWS/GCP/on-prem workloads to Azure, and other Azure Architecture related development tasks.
+description: Expert guidance for designing Azure solutions using Azure Architecture. Covers reference architectures, solution ideas, design patterns, technology choices, architecture styles, best practices, anti-patterns, example workloads, and migration guides. Use when designing AKS, data/AI, SAP, or hybrid workloads, choosing Azure services, or fixing performance anti-patterns, and other Azure Architecture related development tasks.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-12"
+  generated_at: "2026-07-19"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Architecture Skill
@@ -31,8 +31,8 @@ This skill requires **network access** to fetch documentation content:
 | Architecture Styles | L210-L221 | Guidance on choosing and designing Azure app architectures (big compute, big data, event-driven, microservices, N-tier, web-queue-worker) with patterns, components, and best practices. |
 | Best Practices | L222-L279 | Best-practice patterns for Azure apps: secure APIs/RAG/IoT/SAP, MLOps and model lifecycle, scaling, caching/CDN, DR, networking/DNS/Private Link, AKS ops, Event Hubs + Functions, and monitoring. |
 | Anti-patterns | L280-L294 | Diagnosing and fixing common Azure performance and scalability anti-patterns (busy DB/front end, chatty I/O, no caching, noisy neighbors, retry storms, sync I/O, monolithic persistence). |
-| Example Workloads | L295-L375 | End-to-end Azure solution blueprints: real-world workloads for data/AI, security, networking, hybrid, mainframe, SAP, IoT, AKS, Fabric, and app modernization with detailed reference architectures. |
-| Migration Guides | L376-L405 | Guides for migrating from AWS/GCP/on-prem (incl. Oracle, Kafka, EKS) to Azure, mapping services, architectures, identity, networking, security, and cost/ops differences. |
+| Example Workloads | L295-L376 | End-to-end reference architectures and implementation guides for real-world Azure workloads (data/AI, apps, hybrid, mainframe, networking, security, and Fabric) with patterns, services, and deployment details. |
+| Migration Guides | L377-L406 | Guides for migrating from AWS/GCP/on-prem (incl. Oracle, Kafka, EKS) to Azure, mapping services, architectures, identity, networking, security, and cost/ops differences. |
 
 ### Reference Architectures
 | Topic | URL |
@@ -328,7 +328,7 @@ This skill requires **network access** to fetch documentation content:
 | Run Oracle Database on Azure with NetApp Files | https://learn.microsoft.com/en-us/azure/architecture/example-scenario/file-storage/oracle-azure-netapp-files |
 | Run SQL Server on Azure VMs with Azure NetApp Files | https://learn.microsoft.com/en-us/azure/architecture/example-scenario/file-storage/sql-server-azure-netapp-files |
 | Implement computer forensics chain of custody on Azure | https://learn.microsoft.com/en-us/azure/architecture/example-scenario/forensics/ |
-| Implement Zero Trust network for web apps with Azure Firewall | https://learn.microsoft.com/en-us/azure/architecture/example-scenario/gateway/application-gateway-before-azure-firewall |
+| Implement Zero Trust web apps with Azure Firewall and Application Gateway | https://learn.microsoft.com/en-us/azure/architecture/example-scenario/gateway/application-gateway-before-azure-firewall |
 | Secure virtual networks with Azure Firewall and Application Gateway | https://learn.microsoft.com/en-us/azure/architecture/example-scenario/gateway/firewall-application-gateway |
 | Operate AKS clusters using GitOps with Flux and Argo CD | https://learn.microsoft.com/en-us/azure/architecture/example-scenario/gitops-aks/gitops-blueprint-aks |
 | Implement a baseline AKS architecture on Azure Local | https://learn.microsoft.com/en-us/azure/architecture/example-scenario/hybrid/aks-baseline |
@@ -351,6 +351,7 @@ This skill requires **network access** to fetch documentation content:
 | Modernize IBM mainframe and midrange data to Azure | https://learn.microsoft.com/en-us/azure/architecture/example-scenario/mainframe/modernize-mainframe-data-to-azure |
 | Process high-volume batch transactions with AKS and Service Bus | https://learn.microsoft.com/en-us/azure/architecture/example-scenario/mainframe/process-batch-transactions |
 | Reengineer mainframe batch applications on Azure | https://learn.microsoft.com/en-us/azure/architecture/example-scenario/mainframe/reengineer-mainframe-batch-apps-azure |
+| Modernize Adabas & Natural mainframes to Azure AKS | https://learn.microsoft.com/en-us/azure/architecture/example-scenario/mainframe/refactor-adabas-aks |
 | Rehost Software AG Adabas and Natural mainframe workloads on Azure | https://learn.microsoft.com/en-us/azure/architecture/example-scenario/mainframe/rehost-adabas-software-ag |
 | Rehost IMS databases and data communications on Azure | https://learn.microsoft.com/en-us/azure/architecture/example-scenario/mainframe/rehost-ims-raincode-imsql |
 | Implement Siemens Teamcenter PLM baseline on Azure | https://learn.microsoft.com/en-us/azure/architecture/example-scenario/manufacturing/teamcenter-baseline |

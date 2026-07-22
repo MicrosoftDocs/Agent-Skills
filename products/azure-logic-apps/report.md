@@ -46,79 +46,44 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Service
 
 ## Summary
 
-- **Total Pages**: 274
-- **Fetched**: 274
+- **Total Pages**: 268
+- **Fetched**: 268
 - **Fetch Failed**: 0
-- **Classified**: 207
-- **Unclassified**: 67
+- **Classified**: 206
+- **Unclassified**: 62
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 33
-- **Unchanged**: 241
-- **Deleted Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 268
+- **Deleted Pages**: 6
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-logic-apps/azure-logic-apps.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 9 | 3.3% |
+| architecture-patterns | 9 | 3.4% |
 | best-practices | 3 | 1.1% |
-| configuration | 36 | 13.1% |
-| decision-making | 8 | 2.9% |
-| deployment | 19 | 6.9% |
-| integrations | 102 | 37.2% |
-| limits-quotas | 5 | 1.8% |
-| security | 13 | 4.7% |
-| troubleshooting | 12 | 4.4% |
-| *(Unclassified)* | 67 | 24.5% |
+| configuration | 35 | 13.1% |
+| decision-making | 8 | 3.0% |
+| deployment | 19 | 7.1% |
+| integrations | 102 | 38.1% |
+| limits-quotas | 5 | 1.9% |
+| security | 13 | 4.9% |
+| troubleshooting | 12 | 4.5% |
+| *(Unclassified)* | 62 | 23.1% |
 
 ## Changes
 
-### Updated Pages
+### Deleted Pages
 
-- [Portal](https://learn.microsoft.com/en-us/azure/logic-apps/create-single-tenant-workflows-azure-portal)
-  - Updated: 2025-12-05T08:00:00.000Z → 2026-07-09T08:00:00.000Z
-- [Portal - Templates gallery](https://learn.microsoft.com/en-us/azure/logic-apps/create-workflows-from-templates)
-  - Updated: 2025-07-10T22:09:00.000Z → 2026-07-10T08:00:00.000Z
-- [Create Consumption workflow with Azure Storage and Azure Functions](https://learn.microsoft.com/en-us/azure/logic-apps/tutorial-process-email-attachments-workflow)
-  - Updated: 2026-01-31T08:00:00.000Z → 2026-07-10T08:00:00.000Z
-- [Azure CLI - Consumption workflow sample script](https://learn.microsoft.com/en-us/azure/logic-apps/sample-logic-apps-cli-script)
-  - Updated: 2025-07-18T08:00:00.000Z → 2026-07-10T08:00:00.000Z
-- [Custom connectors](https://learn.microsoft.com/en-us/azure/logic-apps/custom-connector-overview)
-  - Updated: 2025-06-19T08:00:00.000Z → 2026-07-10T08:00:00.000Z
-- [Scheduled recurring workflows](https://learn.microsoft.com/en-us/azure/logic-apps/concepts-schedule-automated-recurring-tasks-workflows)
-  - Updated: 2025-07-14T08:00:00.000Z → 2026-07-10T08:00:00.000Z
-- [Serverless with Azure](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-serverless-overview)
-  - Updated: 2025-07-23T05:09:00.000Z → 2026-07-10T08:00:00.000Z
-- [Multi-region deployments for disaster recovery](https://learn.microsoft.com/en-us/azure/logic-apps/multi-region-disaster-recovery)
-  - Updated: 2025-07-17T08:00:00.000Z → 2026-07-10T08:00:00.000Z
-- [Create Standard workflows from templates - Portal](https://learn.microsoft.com/en-us/azure/logic-apps/create-workflows-from-templates)
-  - Updated: 2025-07-10T22:09:00.000Z → 2026-07-10T08:00:00.000Z
-- [Create custom built-in connectors](https://learn.microsoft.com/en-us/azure/logic-apps/create-custom-built-in-connector-standard)
-  - Updated: 2025-07-16T08:00:00.000Z → 2026-07-10T08:00:00.000Z
-- [Create and publish workflow templates](https://learn.microsoft.com/en-us/azure/logic-apps/create-publish-workflow-templates)
-  - Updated: 2025-07-10T22:09:00.000Z → 2026-07-10T08:00:00.000Z
-- [Add agent tools in Foundry backed by connectors](https://learn.microsoft.com/en-us/azure/logic-apps/add-agent-tools-connector-actions)
-  - Updated: 2025-12-12T23:21:00.000Z → 2026-07-10T08:00:00.000Z
-- [Create Standard workflows for hybrid deployment](https://learn.microsoft.com/en-us/azure/logic-apps/create-standard-workflows-hybrid-deployment)
-  - Updated: 2025-06-09T11:13:00.000Z → 2026-07-09T08:00:00.000Z
-- [Conditional statements](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-control-flow-conditional-statement)
-  - Updated: 2025-06-28T05:14:00.000Z → 2026-07-10T08:00:00.000Z
-- [Call, trigger, or nest logic apps](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-http-endpoint)
-  - Updated: 2025-06-27T05:17:00.000Z → 2026-07-10T08:00:00.000Z
-- [Handle errors and exceptions](https://learn.microsoft.com/en-us/azure/logic-apps/error-exception-handling)
-  - Updated: 2025-07-22T05:10:00.000Z → 2026-07-10T08:00:00.000Z
-- [Handle throttling problems or 429 errors](https://learn.microsoft.com/en-us/azure/logic-apps/handle-throttling-problems-429-errors)
-  - Updated: 2025-06-19T08:00:00.000Z → 2026-07-10T08:00:00.000Z
-- [Create custom APIs for logic apps](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-create-api-app)
-  - Updated: 2025-07-15T08:00:00.000Z → 2026-07-10T08:00:00.000Z
-- [Trading partners](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-enterprise-integration-partners)
-  - Updated: 2026-03-13T05:18:00.000Z → 2026-03-13T08:00:00.000Z
-- [Agreements](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-enterprise-integration-agreements)
-  - Updated: 2026-03-13T05:18:00.000Z → 2026-03-13T08:00:00.000Z
-- *...and 13 more*
+- ~~Hosted MCP servers~~ (https://learn.microsoft.com/en-us/azure/logic-apps/connector-namespace/connector-namespace-hosted-mcp)
+- ~~Overview~~ (https://learn.microsoft.com/en-us/azure/logic-apps/connector-namespace/connector-namespace-overview)
+- ~~Create connector namespaces~~ (https://learn.microsoft.com/en-us/azure/logic-apps/connector-namespace/create-connector-namespace)
+- ~~Create connections for connector namespaces~~ (https://learn.microsoft.com/en-us/azure/logic-apps/connector-namespace/create-connector-namespace-connection)
+- ~~Hosted MCP servers developer guide~~ (https://learn.microsoft.com/en-us/azure/logic-apps/connector-namespace/hosted-mcp-dev-guide)
+- ~~Create hosted MCP servers~~ (https://learn.microsoft.com/en-us/azure/logic-apps/connector-namespace/hosted-mcp-quickstart)
 
 ## Classified Pages
 
@@ -259,7 +224,6 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Service
 | [Exchange EDIFACT messages](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-enterprise-integration-edifact) | integrations | 0.70 | Describes using the EDIFACT connector with encoding/decoding actions. This typically includes connector operation names, required parameters, and behavior specific to EDIFACT integration in Logic Apps, fitting integration & coding patterns. |
 | [Generate schemas for SAP artifacts](https://learn.microsoft.com/en-us/azure/logic-apps/connectors/sap-generate-schemas-for-artifacts) | integrations | 0.70 | Walkthrough for using the SAP connector action 'Generate schemas' and related actions; this involves specific connector operations and request patterns to SAP artifacts, which are detailed integration patterns unique to Logic Apps + SAP. |
 | [Handle errors and exceptions](https://learn.microsoft.com/en-us/azure/logic-apps/error-exception-handling) | troubleshooting | 0.70 | Focused on handling workflow errors and exceptions; Azure Logic Apps typically documents specific retry policies, run status values, failure behaviors, and action-level settings, giving symptom→cause→resolution guidance that is product-specific. |
-| [Hosted MCP servers developer guide](https://learn.microsoft.com/en-us/azure/logic-apps/connector-namespace/hosted-mcp-dev-guide) | configuration | 0.70 | The page is a developer guide covering configuration details and requirements for hosted MCP servers, including deployment, authentication, observability, and access policies. This strongly implies product-specific configuration options and settings, likely with parameter names and allowed values, which fits the configuration sub-skill definition. |
 | [IBM Informix](https://learn.microsoft.com/en-us/azure/logic-apps/connectors/informix) | integrations | 0.70 | Connector pages typically include operation lists, connection parameters (server, database, authentication options), and platform-specific constraints for IBM Informix; these are product-specific integration details and configuration parameters that go beyond generic SDK usage. |
 | [IVariableWorkflowAction interface](https://learn.microsoft.com/en-us/azure/logic-apps/standard-sdk/i-variable-workflow-action-class-definition) | integrations | 0.70 | IVariableWorkflowAction interface extends IWorkflowAction with variable name/value semantics; SDK-specific integration surface. |
 | [Improve security for calls to custom APIs](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-custom-api-authentication) | security | 0.70 | Covers setting up Microsoft Entra authentication for custom APIs called from Logic Apps. This typically includes specific auth settings, portal configuration parameters, and enforcement options that are product-specific security configuration details. |
@@ -366,10 +330,7 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Service
 | [Create Consumption workflow with Azure Storage and Azure Functions](https://learn.microsoft.com/en-us/azure/logic-apps/tutorial-process-email-attachments-workflow) | 0.30 | Tutorial showing how to integrate Logic Apps with Functions and Storage to process email attachments; focuses on example workflow steps, not on product-specific limits, config matrices, or error-code-based troubleshooting. |
 | [Create MCP servers and tools from connectors](https://learn.microsoft.com/en-us/azure/logic-apps/create-mcp-server-api-center) | 0.30 | Appears to be a conceptual/how-to page about creating MCP servers with Logic Apps and API Center. The summary does not indicate presence of numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. Likely a preview feature introduction and workflow tutorial rather than expert reference content. |
 | [Create autonomous agentic workflows](https://learn.microsoft.com/en-us/azure/logic-apps/create-autonomous-agent-workflows) | 0.30 | Summary indicates a scenario/tutorial-style guide for building autonomous agentic workflows with Logic Apps and LLMs, but does not show specific limits, configuration tables, error codes, or product-specific parameter details. It appears conceptual/how-to rather than detailed configuration, troubleshooting, or limits content. |
-| [Create connections for connector namespaces](https://learn.microsoft.com/en-us/azure/logic-apps/connector-namespace/create-connector-namespace-connection) | 0.30 | The page focuses on creating and organizing reusable connections conceptually; the summary does not indicate specific configuration parameter tables, quotas, or error-code mappings that would qualify as expert knowledge. |
-| [Create connector namespaces](https://learn.microsoft.com/en-us/azure/logic-apps/connector-namespace/create-connector-namespace) | 0.30 | From the summary this appears to be a conceptual/overview and how-to page about creating and managing connector namespaces, without mention of numeric limits, configuration parameter tables, error-code-based troubleshooting, or other expert-only details. |
 | [Create conversational agentic workflows](https://learn.microsoft.com/en-us/azure/logic-apps/create-conversational-agent-workflows) | 0.30 | Summary describes how to create conversational agentic workflows using Logic Apps and LLMs, focused on scenarios and behavior (user-driven, short-lived, session-based). It does not expose concrete limits, configuration parameter tables, error codes, or decision matrices with quantified trade-offs, so it does not meet the expert-knowledge criteria. |
-| [Create hosted MCP servers](https://learn.microsoft.com/en-us/azure/logic-apps/connector-namespace/hosted-mcp-quickstart) | 0.30 | This is a quickstart tutorial for creating a hosted MCP server; quickstarts typically show basic steps rather than detailed configuration tables, limits, or troubleshooting mappings, and the summary does not suggest otherwise. |
 | [Custom connectors](https://learn.microsoft.com/en-us/azure/logic-apps/custom-connector-overview) | 0.30 | Overview of custom connectors and their role in Logic Apps; summary suggests conceptual explanation without detailed connector configuration tables, limits, or security role mappings. |
 | [Enable Health Check](https://learn.microsoft.com/en-us/azure/logic-apps/monitor-health-standard-workflows) | 0.30 | The summary focuses on conceptual benefits of the Health Check feature (proactive monitoring, increased availability, automatic recovery) without exposing concrete configuration parameters, limits, or error mappings. It reads as a feature overview rather than detailed expert configuration or troubleshooting guidance. |
 | [Extend migration agent with custom parsers](https://learn.microsoft.com/en-us/azure/logic-apps/migration/migration-agent-extend) | 0.30 | Describes extending the Migration Agent with custom parsers and a registry-based architecture; this is primarily conceptual/extension guidance and unlikely to contain configuration tables, limits, or other expert-only details per the defined categories. |
@@ -391,9 +352,7 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Service
 | [Create Standard workflows from templates - Portal](https://learn.microsoft.com/en-us/azure/logic-apps/create-workflows-from-templates) | 0.20 | Duplicate of index 1: prebuilt templates overview; focuses on using templates gallery and common patterns without detailed configuration matrices or limits. |
 | [Create and publish workflow templates](https://learn.microsoft.com/en-us/azure/logic-apps/create-publish-workflow-templates) | 0.20 | The page describes workflow templates conceptually and how to create/publish them to the gallery. From the summary, it appears to be a higher-level how-to/tutorial without detailed configuration tables, limits, or product-specific edge cases; more about using templates as starting points rather than deep expert guidance. |
 | [Exchange B2B messages](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-enterprise-integration-b2b) | 0.20 | Page appears to be a scenario/overview for B2B messaging with Logic Apps and standard protocols (AS2, X12, EDIFACT, RosettaNet). The summary does not indicate presence of numeric limits, detailed configuration parameter tables, error-code-based troubleshooting, or decision matrices. It mainly describes what you can do (create integration account, define partners, agreements, maps, schemas) rather than expert, product-specific reference details. |
-| [Hosted MCP servers](https://learn.microsoft.com/en-us/azure/logic-apps/connector-namespace/connector-namespace-hosted-mcp) | 0.20 | Described as an overview of hosted MCP servers; overviews are explicitly out of scope unless they contain detailed limits, configs, or decision matrices, which are not indicated in the summary. |
 | [Mainframe modernization](https://learn.microsoft.com/en-us/azure/logic-apps/mainframe-modernization-overview) | 0.20 | Modernization overview; mostly strategy/benefits without product-specific numeric thresholds or config matrices. |
-| [Overview](https://learn.microsoft.com/en-us/azure/logic-apps/connector-namespace/connector-namespace-overview) | 0.20 | Overview/marketing-style description of Azure Connector Namespace; no numeric limits, config tables, error codes, or detailed patterns. Primarily conceptual explanation of what the service is and why to use it. |
 | [Portal](https://learn.microsoft.com/en-us/azure/logic-apps/create-single-tenant-workflows-azure-portal) | 0.20 | Step-by-step tutorial for creating a basic Standard logic app workflow via the portal; no configuration tables, limits, error codes, or product-specific best-practice guidance beyond generic workflow construction. |
 | [Portal](https://learn.microsoft.com/en-us/azure/logic-apps/quickstart-create-example-consumption-workflow) | 0.20 | Quickstart tutorial for creating a Consumption workflow in the Azure portal; focuses on step-by-step example (RSS feed on a schedule) without detailed limits, configuration matrices, error codes, or product-specific best-practice guidance. |
 | [Portal - Templates gallery](https://learn.microsoft.com/en-us/azure/logic-apps/create-workflows-from-templates) | 0.20 | Describes using prebuilt templates and the templates gallery; appears to be a conceptual/how-to overview without detailed configuration parameters, limits, or troubleshooting content. |

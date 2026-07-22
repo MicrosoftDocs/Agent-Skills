@@ -1,9 +1,9 @@
 ---
 name: azure-batch
-description: Expert knowledge for Azure Batch development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring Batch pools/tasks, autoscale, containers/MPI, storage mounts, or CI/CD for HPC/render workloads, and other Azure Batch related development tasks. Not for Azure HDInsight (use azure-hdinsight), Azure Databricks (use azure-databricks), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Virtual Machines (use azure-virtual-machines).
+description: Expert knowledge for Azure Batch development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring Batch pools/tasks, autoscale, containers, MPI jobs, storage mounts, or CI/CD for HPC workloads, and other Azure Batch related development tasks. Not for Azure Container Instances (use azure-container-instances), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Functions (use azure-functions), Azure Virtual Machines (use azure-virtual-machines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-12"
+  generated_at: "2026-07-19"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Batch Skill
@@ -29,7 +29,7 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L55-L67 | Guidance on choosing Batch VM sizes, images, Spot/ephemeral disks, capacity and quotas, cost planning, and migration decisions for pools, images, and communication models. |
 | Architecture & Design Patterns | L68-L73 | Architectural guidance for burst rendering with Azure Batch, including choosing batch/topology patterns and designing storage, caching, and data movement for large render workloads. |
 | Limits & Quotas | L74-L79 | Managing Batch account quotas via .NET and understanding core Azure Batch limits (pools, cores, jobs, tasks) and how to monitor, plan for, and request quota increases. |
-| Security | L80-L96 | Securing Batch accounts and pools: auth with Entra ID/managed identities, keys and disk encryption, RBAC, private endpoints/network perimeters, public access, and Azure Policy governance. |
+| Security | L80-L96 | Securing Azure Batch: identity (Entra ID, managed identities, RBAC), keys and encryption, private endpoints/network access, and governance with Azure Policy and network security perimeters. |
 | Configuration | L97-L128 | Configuring Batch pools, tasks, networking, scaling, diagnostics, and security: autoscale, OS/cert rotation, VNet/IP, containers, disks, metrics/logs, events, and task runtime settings. |
 | Integrations & Coding Patterns | L129-L144 | Client SDK patterns, task/node APIs, containers, MPI, output persistence, Key Vault, monitoring, and mounting storage/virtual file systems for Azure Batch workloads |
 | Deployment | L145-L149 | Guides for moving Azure Batch accounts across regions with ARM templates and setting up CI/CD pipelines for Batch HPC workloads using Azure Pipelines. |
@@ -88,7 +88,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure disk encryption for Azure Batch pools | https://learn.microsoft.com/en-us/azure/batch/disk-encryption |
 | Manage Azure Batch private endpoint connections securely | https://learn.microsoft.com/en-us/azure/batch/manage-private-endpoint-connections |
 | Configure user-assigned managed identities on Azure Batch pools | https://learn.microsoft.com/en-us/azure/batch/managed-identity-pools |
-| Associate Azure Batch accounts with network security perimeters | https://learn.microsoft.com/en-us/azure/batch/network-security-perimeter |
+| Configure Azure Batch with network security perimeters | https://learn.microsoft.com/en-us/azure/batch/network-security-perimeter |
 | Use built-in Azure Policy definitions for Azure Batch governance | https://learn.microsoft.com/en-us/azure/batch/policy-reference |
 | Configure Azure Batch private endpoints with Private Link | https://learn.microsoft.com/en-us/azure/batch/private-connectivity |
 | Configure public network access for Azure Batch accounts | https://learn.microsoft.com/en-us/azure/batch/public-network-access |

@@ -1,16 +1,17 @@
 ---
-generated_at: '2026-05-24'
+generated_at: '2026-07-19'
 category_descriptions:
-  integrations: Using PowerShell to batch-create Elastic SAN volumes and configuring
-    Linux and Windows clients to connect, mount, and use those iSCSI-based volumes.
+  integrations: Creating and benchmarking Elastic SAN volumes, plus step-by-step guidance
+    to connect Linux and Windows clients using iSCSI and optimize performance.
   best-practices: Performance tuning, benchmarking, and configuration best practices
     for Azure Elastic SAN (including AVS datastores) plus guidance on using snapshots
     for backup.
   security: Encrypting Elastic SAN with customer-managed keys and configuring secure
     access via private endpoints, service endpoints, and other network security options
     for volumes and volume groups.
-  configuration: Configuring, deploying, resizing, deleting, and monitoring Azure
-    Elastic SAN resources/volumes, plus safely managing IQN naming authority transitions.
+  configuration: Configuring, resizing, monitoring, deleting, and safely transitioning
+    Azure Elastic SAN resources, volumes, and iSCSI IQN naming for correct lifecycle
+    and performance management.
   deployment: Guides for migrating Azure VMware Solution (AVS) datastores to Azure
     Elastic SAN, including configuring and using multiple private endpoints for secure
     connectivity.
@@ -28,16 +29,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Elastic SAN development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  creating iSCSI volumes, AVS datastores, snapshots, CMK encryption, or AKS-integrated
-  workloads, and other Azure Elastic SAN related development tasks. Not for Azure
-  NetApp Files (use azure-netapp-files), Azure Managed Lustre (use azure-managed-lustre),
-  Azure Container Storage (use azure-container-storage), Azure Virtual Machines (use
-  azure-virtual-machines).
-use_when: Use when creating iSCSI volumes, AVS datastores, snapshots, CMK encryption,
-  or AKS-integrated workloads, and other Azure Elastic SAN related development tasks.
-confusable_not_for: Not for Azure NetApp Files (use azure-netapp-files), Azure Managed
-  Lustre (use azure-managed-lustre), Azure Container Storage (use azure-container-storage),
-  Azure Virtual Machines (use azure-virtual-machines).
+  creating Elastic SAN volumes, AVS datastores, iSCSI clients, CMK encryption, or
+  AKS-integrated storage, and other Azure Elastic SAN related development tasks. Not
+  for Azure Blob Storage (use azure-blob-storage), Azure Files (use azure-files),
+  Azure NetApp Files (use azure-netapp-files), Azure Managed Lustre (use azure-managed-lustre).
+use_when: Use when creating Elastic SAN volumes, AVS datastores, iSCSI clients, CMK
+  encryption, or AKS-integrated storage, and other Azure Elastic SAN related development
+  tasks.
+confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure Files
+  (use azure-files), Azure NetApp Files (use azure-netapp-files), Azure Managed Lustre
+  (use azure-managed-lustre).
 ---
 # Azure Elastic SAN Crawl Report
 
@@ -51,8 +52,8 @@ confusable_not_for: Not for Azure NetApp Files (use azure-netapp-files), Azure M
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 25
+- **Updated Pages**: 2
+- **Unchanged**: 23
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-elastic-san/azure-elastic-san.csv`
 
@@ -61,17 +62,24 @@ confusable_not_for: Not for Azure NetApp Files (use azure-netapp-files), Azure M
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 1 | 4.0% |
-| best-practices | 4 | 16.0% |
+| best-practices | 3 | 12.0% |
 | configuration | 5 | 20.0% |
 | decision-making | 1 | 4.0% |
 | deployment | 1 | 4.0% |
-| integrations | 3 | 12.0% |
+| integrations | 4 | 16.0% |
 | limits-quotas | 2 | 8.0% |
 | security | 6 | 24.0% |
 | troubleshooting | 1 | 4.0% |
 | *(Unclassified)* | 1 | 4.0% |
 
 ## Changes
+
+### Updated Pages
+
+- [Transition IQN Naming Authority on Connected Volumes](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-transition-iqn-naming-authority)
+  - Updated: 2026-04-22T22:14:00.000Z → 2026-07-13T22:21:00.000Z
+- [Benchmarking performance](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-benchmarking)
+  - Updated: 2026-05-21T22:10:00.000Z → 2026-07-17T22:12:00.000Z
 
 ## Classified Pages
 
@@ -94,10 +102,10 @@ confusable_not_for: Not for Azure NetApp Files (use azure-netapp-files), Azure M
 | [Performance on Azure VMware Solution](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-performance-on-azure-vmware-solutions) | best-practices | 0.70 | The page provides benchmark-based, product-specific performance guidance for Azure Elastic SAN used as datastores with Azure VMware Solution, including concrete workload patterns, configuration details, and how to interpret/compare results. This is actionable, service-specific tuning and usage guidance rather than generic performance theory, fitting best under best-practices. |
 | [Planning](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-planning) | decision-making | 0.70 | Planning article that discusses storage capacity, performance, redundancy, and encryption choices for SAN, volume groups, and volumes. Likely includes concrete thresholds and configuration guidance to choose sizes and redundancy options, which supports deployment decision-making. |
 | [Resize an Elastic SAN](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-expand) | configuration | 0.70 | Describes how to increase/decrease SAN and volume sizes. Such docs typically include constraints (e.g., expansion vs shrink rules, allowed ranges), which are product-specific configuration details. |
-| [Transition IQN Naming Authority on Connected Volumes](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-transition-iqn-naming-authority) | configuration | 0.70 | Describes product-specific IQN naming authorities (net.azure.storage vs net.windows.core) and prescriptive steps to reconfigure existing Elastic SAN volumes and clients. This is detailed configuration guidance unique to Azure Elastic SAN rather than generic iSCSI knowledge. |
+| [Transition IQN Naming Authority on Connected Volumes](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-transition-iqn-naming-authority) | configuration | 0.70 | Describes a product-specific, time-bound change to IQN naming authority for Azure Elastic SAN volumes and prescribes concrete steps to reconfigure existing connections. This is detailed, service-specific operational guidance (how to update IQNs, what authorities are used, and by when), which an LLM is unlikely to infer from general training data. It centers on reconfiguration of existing deployments rather than generic concepts. |
 | [Using volume snapshots](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-snapshots) | best-practices | 0.70 | Snapshot article describes how Elastic SAN snapshots behave versus managed disk snapshots and when/how to use them for backup, volume creation, or export. It likely includes product-specific recommendations and gotchas (for example, behavior of first vs subsequent snapshots) that qualify as best-practice guidance rather than just conceptual backup theory. |
-| [Benchmarking performance](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-benchmarking) | best-practices | 0.68 | Page provides product-specific benchmarking guidance for Azure Elastic SAN using DiskSpd and fio, including concrete command patterns, workload configurations, and measurement approaches tailored to this storage service. This is actionable, implementation-focused advice rather than generic benchmarking theory, fitting best under best-practices. |
 | [Improve performance and reliability of Azure VMware Solution Datastore connections](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-increase-private-endpoints-azure-vmware-solutions) | deployment | 0.68 | The article describes a product-specific, zero-downtime migration pattern for Azure VMware Solution datastores on Elastic SAN when increasing private endpoints. It includes a recommended endpoint configuration and a concrete sequence (create new datastore with recommended endpoints, migrate VMs/templates via vSphere, cut over), which is a deployment/migration pattern specific to AVS + Elastic SAN rather than a generic tutorial. |
+| [Benchmarking performance](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-benchmarking) | integrations | 0.65 | Provides concrete, product-specific benchmarking procedures for Azure Elastic SAN using DiskSpd and fio on Windows and Linux VMs, including exact command patterns, parameter combinations, and how to drive Elastic SAN volumes to measure IOPS and throughput. These are detailed integration/usage patterns between Elastic SAN and specific benchmarking tools, beyond generic performance testing knowledge. |
 | [Clustered applications](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-shared-volumes) | architecture-patterns | 0.65 | Covers pattern of sharing Elastic SAN volumes across multiple clients using cluster managers (WSFC, Pacemaker) and explains constraints (no managed SMB/NFS). This is a product-specific deployment/architecture pattern for clustered workloads. |
 | [Networking](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-networking) | security | 0.65 | Describes specific networking options (service endpoints, private endpoints, iSCSI) and how to restrict access by subnets and endpoints. This is product-specific access control/network isolation guidance, fitting security configuration. |
 | [Delete an Elastic SAN](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-delete) | configuration | 0.60 | Covers ordered deletion of connections, volumes, volume groups, and SAN. While procedural, it encodes product-specific dependencies and required steps to avoid issues, which are configuration/management details. |

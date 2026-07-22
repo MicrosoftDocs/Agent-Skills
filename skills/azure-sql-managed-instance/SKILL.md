@@ -1,9 +1,9 @@
 ---
 name: azure-sql-managed-instance
-description: Expert knowledge for Azure SQL Managed Instance development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when planning MI migrations, configuring networking/auth, tuning performance/HA, or using backups/geo-replication, and other Azure SQL Managed Instance related development tasks. Not for Azure SQL Database (use azure-sql-database), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Virtual Machines (use azure-virtual-machines).
+description: Expert knowledge for Azure SQL Managed Instance development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when planning MI vs SQL options, configuring networking, Entra/TDE security, geo-replication, or app connectivity, and other Azure SQL Managed Instance related development tasks. Not for Azure SQL Database (use azure-sql-database), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Database for MySQL (use azure-database-mysql), Azure Database for PostgreSQL (use azure-database-postgresql).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-12"
+  generated_at: "2026-07-19"
   generator: "docs2skills/1.0.0"
 ---
 # Azure SQL Managed Instance Skill
@@ -25,14 +25,14 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L37-L56 | Diagnosing and fixing Azure SQL Managed Instance/Database issues: performance, connectivity, capacity, backups, geo-replication, memory, transaction logs, and auth (incl. Kerberos). |
-| Best Practices | L57-L78 | Best practices for monitoring, tuning, securing, and operating Azure SQL Managed Instance, including performance, HA/DR, maintenance, alerts, and read-scale/replication scenarios. |
-| Decision Making | L79-L93 | Guidance for choosing Azure SQL Managed Instance vs other Azure SQL options, selecting tiers and subnet sizes, and planning migrations from SQL Server, Oracle, and Db2. |
-| Architecture & Design Patterns | L94-L98 | Connectivity architecture, networking models, and connection options for Azure SQL Database, including gateways, endpoints, firewalls, and integration with VNets and private access. |
-| Limits & Quotas | L99-L108 | Limits, quotas, and performance constraints for SQL Managed Instance: DTU benchmarks, free-tier caps, memory/OLTP limits, maintenance windows, operation times, and resource ceilings. |
-| Security | L109-L163 | Configuring Azure SQL Managed Instance security: Entra auth, identities, TDE & Key Vault, TLS, auditing, threat protection, private endpoints, Windows/Kerberos auth, and secure configuration. |
-| Configuration | L164-L211 | Configuring SQL Managed Instance monitoring, backups, maintenance, networking/connectivity, auditing, and behavioral settings (time zone, tempdb, T-SQL differences, update policy, failover). |
-| Integrations & Coding Patterns | L212-L235 | Client app connectivity, drivers, and code samples for multiple languages, plus automation, networking, DTC, XEvents, backups, and Managed Instance link/Agent usage on SQL Managed Instance. |
-| Deployment | L236-L255 | Deploying, scaling, moving, and pausing Azure SQL Managed Instance; networking setup, regional availability, DR/replication, migrations, and BACPAC import/export. |
+| Best Practices | L57-L79 | Performance, HA/DR, and security best practices for Azure SQL Managed Instance, including monitoring, tuning queries, maintenance, alerts, geo-replication, failover, and migration guidance. |
+| Decision Making | L80-L94 | Guidance for choosing Azure SQL Managed Instance vs other Azure SQL options, selecting tiers and subnet sizes, and planning migrations from SQL Server, Oracle, and Db2. |
+| Architecture & Design Patterns | L95-L99 | Connectivity architecture, networking models, and connection options for Azure SQL Database, including gateways, endpoints, firewalls, and integration with VNets and private access. |
+| Limits & Quotas | L100-L109 | Limits, quotas, and performance constraints for SQL Managed Instance: DTU benchmarks, free-tier caps, memory/OLTP limits, maintenance windows, operation times, and resource ceilings. |
+| Security | L110-L164 | Configuring Azure SQL Managed Instance security: Entra auth, identities, TDE & Key Vault, TLS, auditing, threat protection, private endpoints, Windows/Kerberos auth, and secure configuration. |
+| Configuration | L165-L211 | Configuring SQL Managed Instance monitoring, backups, maintenance, networking/connectivity, auditing, and behavioral settings (time zone, tempdb, T-SQL differences, update policy, failover). |
+| Integrations & Coding Patterns | L212-L234 | Client app connectivity, drivers, and code samples for multiple languages, plus automation, networking, DTC, XEvents, backups, and Managed Instance link/Agent usage on SQL Managed Instance. |
+| Deployment | L235-L254 | Deploying and managing Azure SQL Managed Instance: provisioning via Bicep/ARM/Terraform, scaling, start/stop, regional moves, networking, DR/replication, and BACPAC import/export. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -74,6 +74,7 @@ This skill requires **network access** to fetch documentation content:
 | Apply best practices for Managed Instance link replication | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/managed-instance-link-best-practices?view=azuresql |
 | Monitor Azure SQL Managed Instance performance using DMVs | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/monitoring-with-dmvs?view=azuresql |
 | Tune Azure SQL Managed Instance performance for applications | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/performance-guidance?view=azuresql |
+| Apply T-SQL differences for Azure SQL Managed Instance | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/transact-sql-tsql-differences-sql-server?view=azuresql |
 | Use batching to improve Azure SQL application performance | https://learn.microsoft.com/en-us/azure/azure-sql/performance-improve-use-batching?view=azuresql |
 
 ### Decision Making
@@ -205,7 +206,6 @@ This skill requires **network access** to fetch documentation content:
 | Enable service-aided subnet configuration for Managed Instance | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/subnet-service-aided-configuration-enable?view=azuresql |
 | Configure tempdb files and growth on Azure SQL Managed Instance | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/tempdb-configure?view=azuresql |
 | Configure time zone behavior in Azure SQL Managed Instance | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/timezones-overview?view=azuresql |
-| Handle T-SQL differences between SQL Server and SQL Managed Instance | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/transact-sql-tsql-differences-sql-server?view=azuresql |
 | Configure update policy for Azure SQL Managed Instance | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/update-policy?view=azuresql |
 | Restart Azure SQL Managed Instance using manual failover | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/user-initiated-failover?view=azuresql |
 
@@ -227,7 +227,6 @@ This skill requires **network access** to fetch documentation content:
 | Connect applications to Azure SQL Managed Instance in various networks | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/connect-application-instance?view=azuresql |
 | Use Distributed Transaction Coordinator with SQL Managed Instance | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/distributed-transaction-coordinator-dtc?view=azuresql |
 | Use in-memory OLTP and columnstore samples on SQL MI | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/in-memory-oltp-sample?view=azuresql |
-| Automate jobs with SQL Server Agent on SQL Managed Instance | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/job-automation-managed-instance?view=azuresql |
 | Configure Managed Instance link using T-SQL and Azure scripts | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/managed-instance-link-configure-how-to-scripts?view=azuresql |
 | Fail over databases using Managed Instance link between SQL Server and Azure SQL Managed Instance | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/managed-instance-link-failover-how-to?view=azuresql |
 | Restore Azure SQL Managed Instance backups to SQL Server 2022 or 2025 | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/restore-database-to-sql-server?view=azuresql |
@@ -252,4 +251,4 @@ This skill requires **network access** to fetch documentation content:
 | Set up replication between SQL Managed Instance and SQL Server | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/replication-two-instances-and-sql-server-configure-tutorial?view=azuresql |
 | Create a virtual network for Azure SQL Managed Instance deployment | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/virtual-network-subnet-create-arm-template?view=azuresql |
 | Configure existing virtual networks for Azure SQL Managed Instance | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/vnet-existing-add-subnet?view=azuresql |
-| Move Azure SQL Managed Instance to another subnet with minimal downtime | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/vnet-subnet-move-instance?view=azuresql |
+| Move Azure SQL Managed Instance between subnets with minimal downtime | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/vnet-subnet-move-instance?view=azuresql |

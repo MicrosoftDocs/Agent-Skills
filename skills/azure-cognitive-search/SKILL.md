@@ -1,9 +1,9 @@
 ---
 name: azure-cognitive-search
-description: Expert knowledge for Azure AI Search development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building indexes/indexers, AI enrichment skillsets, semantic/vector search, or secure multi-region deployments, and other Azure AI Search related development tasks. Not for Azure Cosmos DB (use azure-cosmos-db), Azure Data Explorer (use azure-data-explorer), Azure SQL Database (use azure-sql-database), Azure Synapse Analytics (use azure-synapse-analytics).
+description: Expert knowledge for Azure AI Search development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building indexes/indexers, AI enrichment skillsets, vector/semantic search, secure access, or multi-region setups, and other Azure AI Search related development tasks. Not for Azure Data Explorer (use azure-data-explorer), Azure Cosmos DB (use azure-cosmos-db), Azure SQL Database (use azure-sql-database), Azure Synapse Analytics (use azure-synapse-analytics).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-12"
+  generated_at: "2026-07-19"
   generator: "docs2skills/1.0.0"
 ---
 # Azure AI Search Skill
@@ -26,13 +26,13 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L37-L48 | Diagnosing and fixing Azure AI Search indexer and skillset errors, debug sessions, OData filter issues, private link problems, and storage/metrics-related failures. |
 | Best Practices | L49-L67 | Design, performance, cost, and reliability best practices for Azure AI Search: AI enrichment, custom skills, indexing/updates, vectors/chunking, concurrency, blob changes, and query/index tuning. |
-| Decision Making | L68-L82 | Guidance on planning and upgrading Azure AI Search: migrations (skills, APIs, SDKs), capacity and region choices, pricing tiers, cost management, and connector selection. |
+| Decision Making | L68-L82 | Guidance on planning Azure AI Search capacity, pricing and regions, and safely migrating or upgrading APIs, SDKs, skills, and data source connectors. |
 | Architecture & Design Patterns | L83-L88 | Designing Azure AI Search architectures for multitenancy vs isolated indexes, and planning resilient multi-region deployments, failover, and data locality. |
 | Limits & Quotas | L89-L99 | Limits, quotas, and scheduling for indexers and services, including billing/free enrichment, tier caps, vector index size, and how to manage and run indexers with .NET. |
-| Security | L100-L136 | Securing Azure AI Search: RBAC/keys, Entra auth, policies, encryption/CMK, network isolation (firewalls, private endpoints), and securing indexer connections and document-level/query-time access. |
+| Security | L100-L136 | Securing Azure AI Search: RBAC/Entra auth, keys, CMK encryption, IP firewalls/private endpoints, indexer network security, and document/query-time ACL and sensitivity label enforcement. |
 | Configuration | L137-L219 | Configuring Azure AI Search behavior: indexes, indexers, analyzers, vectorization, skillsets/enrichment, semantic ranking, retrieval/answer synthesis, logging, and query/OData options. |
 | Integrations & Coding Patterns | L220-L305 | Integrating Azure AI Search with data sources, indexers, skills, vectorization, query syntax, semantic ranking, and knowledge bases for agentic and organizational retrieval. |
-| Deployment | L306-L314 | Deploying and moving Azure AI Search services: ARM/Bicep/Terraform provisioning, region moves and feature availability, and deploying search apps to Static Web Apps. |
+| Deployment | L306-L313 | Deploying and moving Azure AI Search services: ARM/Bicep/Terraform provisioning, region moves and feature availability, and deploying search apps to Static Web Apps. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -78,7 +78,7 @@ This skill requires **network access** to fetch documentation content:
 | Upgrade Azure AI Search to higher capacity | https://learn.microsoft.com/en-us/azure/search/search-how-to-upgrade |
 | Choose alternative regions for Azure AI Search capacity | https://learn.microsoft.com/en-us/azure/search/search-region-capacity |
 | Plan and manage Azure AI Search costs | https://learn.microsoft.com/en-us/azure/search/search-sku-manage-costs |
-| Choose Azure AI Search pricing model and tier | https://learn.microsoft.com/en-us/azure/search/search-sku-tier |
+| Select Azure AI Search pricing model and tier | https://learn.microsoft.com/en-us/azure/search/search-sku-tier |
 
 ### Architecture & Design Patterns
 | Topic | URL |
@@ -310,5 +310,4 @@ This skill requires **network access** to fetch documentation content:
 | Deploy Azure AI Search using Bicep | https://learn.microsoft.com/en-us/azure/search/search-get-started-bicep |
 | Provision Azure AI Search with Terraform | https://learn.microsoft.com/en-us/azure/search/search-get-started-terraform |
 | Move Azure AI Search services across regions | https://learn.microsoft.com/en-us/azure/search/search-howto-move-across-regions |
-| Check Azure AI Search regional feature availability | https://learn.microsoft.com/en-us/azure/search/search-region-support |
 | Deploy Azure AI Search app to Static Web Apps | https://learn.microsoft.com/en-us/azure/search/tutorial-csharp-deploy-static-web-app |

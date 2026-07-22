@@ -1,11 +1,12 @@
 ---
-generated_at: '2026-07-12'
+generated_at: '2026-07-19'
 category_descriptions:
   limits-quotas: 'NAT Gateway limits, quotas, and behaviors: SNAT port allocation,
     connection scaling, IP/VM limits, per-subscription caps, and FAQs on throughput
     and high-connection scenarios.'
-  configuration: 'Configuring NAT Gateway V2 (IPs, deployment via ARM/Bicep/Terraform),
-    plus monitoring setup: metrics, alerts, and flow logs for traffic and diagnostics'
+  configuration: Configuring NAT Gateway and IPs, enabling/using flow logs, monitoring
+    with metrics/logs and alerts, and deploying NAT Gateway V2 via ARM, Bicep, or
+    Terraform.
   troubleshooting: 'Diagnosing and fixing NAT Gateway issues: reading flow logs, resolving
     misconfigurations, connectivity failures with Azure services, and outbound internet
     connection problems.'
@@ -24,18 +25,17 @@ category_descriptions:
     firewalls, and other Azure security controls.'
 skill_description: Expert knowledge for Azure NAT Gateway development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
-  security, configuration, and deployment. Use when sizing SNAT ports, configuring
-  NAT Gateway V2, reading flow logs, scaling outbound IPs, or securing egress traffic,
-  and other Azure NAT Gateway related development tasks. Not for Azure Load Balancer
-  (use azure-load-balancer), Azure Virtual Network (use azure-virtual-network), Azure
-  Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use
-  azure-virtual-wan).
-use_when: Use when sizing SNAT ports, configuring NAT Gateway V2, reading flow logs,
-  scaling outbound IPs, or securing egress traffic, and other Azure NAT Gateway related
-  development tasks.
-confusable_not_for: Not for Azure Load Balancer (use azure-load-balancer), Azure Virtual
-  Network (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager),
-  Azure Virtual WAN (use azure-virtual-wan).
+  security, configuration, and deployment. Use when managing SNAT ports, flow logs,
+  outbound IPs, NAT Gateway V2 deployments, or Azure Firewall egress patterns, and
+  other Azure NAT Gateway related development tasks. Not for Azure Virtual Network
+  (use azure-virtual-network), Azure Load Balancer (use azure-load-balancer), Azure
+  Firewall (use azure-firewall), Azure Virtual WAN (use azure-virtual-wan).
+use_when: Use when managing SNAT ports, flow logs, outbound IPs, NAT Gateway V2 deployments,
+  or Azure Firewall egress patterns, and other Azure NAT Gateway related development
+  tasks.
+confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), Azure
+  Load Balancer (use azure-load-balancer), Azure Firewall (use azure-firewall), Azure
+  Virtual WAN (use azure-virtual-wan).
 ---
 # Azure NAT Gateway Crawl Report
 
@@ -72,13 +72,14 @@ confusable_not_for: Not for Azure Load Balancer (use azure-load-balancer), Azure
 
 ### Updated Pages
 
-- [NAT gateway design guidance](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-design)
-  - Updated: 2026-05-15T08:00:00.000Z → 2026-07-06T22:04:00.000Z
+- [Monitoring data reference](https://learn.microsoft.com/en-us/azure/nat-gateway/monitor-nat-gateway-reference)
+  - Updated: 2024-12-09T18:04:00.000Z → 2025-06-19T22:03:00.000Z
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
+| [Monitoring data reference](https://learn.microsoft.com/en-us/azure/nat-gateway/monitor-nat-gateway-reference) | configuration | 0.78 | Monitoring reference pages for Azure services typically list all available metrics, dimensions, log categories, and schema fields with exact names, units, and sometimes default behaviors. This is product-specific configuration/telemetry knowledge that LLMs are unlikely to fully know from training. The content is not about limits or troubleshooting, but about detailed monitoring data definitions, which aligns best with configuration (specific parameter/field names and allowed values). |
 | [Secure NAT Gateway deployment](https://learn.microsoft.com/en-us/azure/nat-gateway/secure-nat-gateway) | security | 0.78 | The article focuses on securing Azure NAT Gateway and provides product-specific security recommendations and best practices (for example, how to structure outbound connectivity, combine with other Azure network security services, and configure NAT Gateway securely). It includes concrete, service-specific guidance rather than just conceptual security overviews, fitting the 'security' sub-skill type. |
 | [NAT gateway design guidance](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-design) | architecture-patterns | 0.72 | The page provides product-specific design considerations for Azure NAT Gateway in virtual networks, including when to use particular patterns (for example, per-subnet vs shared gateways, outbound connectivity strategies, and multi-region designs). It goes beyond conceptual overview and gives concrete guidance on choosing patterns and configurations unique to NAT Gateway, but does not primarily focus on numeric limits/quotas or troubleshooting. |
 | [Azure NAT Gateway SKUs](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-sku) | decision-making | 0.70 | SKU comparison article that explains differences between Standard and StandardV2. Likely includes comparison tables and concrete criteria (data processing, availability, capabilities) to help select a SKU, which fits decision-making guidance. |
@@ -86,7 +87,6 @@ confusable_not_for: Not for Azure Load Balancer (use azure-load-balancer), Azure
 | [Manage a Standard NAT gateway](https://learn.microsoft.com/en-us/azure/nat-gateway/manage-nat-gateway) | configuration | 0.70 | Explains how to create/remove NAT gateway, associate subnets, and manage public IPs/prefixes; contains concrete configuration operations and parameters. |
 | [Migrate Azure NAT Gateway to Standard V2](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-v2-migrate) | decision-making | 0.70 | Provides migration guidance and recommendations on when and how to move from Standard to StandardV2, including production vs non-production considerations and lack of in-place upgrade. This is SKU/approach selection and migration decision guidance. |
 | [Monitor Standard V2 NAT gateway flow logs](https://learn.microsoft.com/en-us/azure/nat-gateway/monitor-nat-gateway-flow-logs) | troubleshooting | 0.70 | Shows how to use flow logs for monitoring and troubleshooting traffic; includes product-specific log categories and analysis patterns for diagnosing issues. |
-| [Monitoring data reference](https://learn.microsoft.com/en-us/azure/nat-gateway/monitor-nat-gateway-reference) | configuration | 0.70 | Monitoring data reference likely lists metric and log names, dimensions, and schemas; detailed configuration/reference information for monitoring NAT Gateway. |
 | [SNAT with NAT gateway](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-snat) | best-practices | 0.70 | Discusses SNAT options and considerations, likely including port allocation behavior and guidance on efficient outbound connection design; product-specific best practices and gotchas. |
 | [Use a NAT gateway with Azure Firewall](https://learn.microsoft.com/en-us/azure/nat-gateway/tutorial-hub-spoke-nat-firewall) | architecture-patterns | 0.70 | Describes integration of NAT Gateway with Azure Firewall in hub-spoke; includes specific SNAT port counts and IP limits, making it an architecture pattern with numeric thresholds. |
 | [Create and configure a NAT gateway after a region move](https://learn.microsoft.com/en-us/azure/nat-gateway/region-move-nat-gateway) | deployment | 0.65 | Covers constraints that NAT gateways cannot be moved between regions and describes the required deployment pattern after using Azure Resource Mover; this is product-specific deployment behavior and requirements. |

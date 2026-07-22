@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-12'
+generated_at: '2026-07-19'
 category_descriptions:
   security: 'Securing Automation accounts: identities (system/user-assigned), RBAC,
     auth methods, encryption, certificates/credentials, Private Link, Azure Policy,
@@ -7,15 +7,15 @@ category_descriptions:
   configuration: Configuring Azure Automation runbooks, DSC/State Configuration, Hybrid
     Runbook Workers, schedules, modules/packages, alerts, policies, and integrations
     (VS Code, source control, ARM, Azure Monitor).
-  deployment: Guides for deploying resilient Automation accounts, setting up disaster
-    recovery, and installing/configuring Hybrid Runbook Workers (Windows/Linux, agent-
-    and extension-based) plus DSC/Chocolatey CI/CD.
   best-practices: 'Best practices for structuring and running Automation runbooks:
     modular parent-child design, execution patterns, error handling, stream/output
     usage, and avoiding context/locking issues.'
   integrations: Patterns for integrating runbooks with AWS, ARM/SQL/Office 365, webhooks,
     email (SendGrid), Azure Monitor logging, and using the graphical runbook SDK with
     managed identities
+  deployment: Guides for deploying resilient Automation accounts, setting up disaster
+    recovery, and installing/configuring Hybrid Runbook Workers (Windows/Linux, agent-
+    and extension-based) plus DSC/Chocolatey CI/CD.
   limits-quotas: Azure Automation capacity limits, quotas, and supported configurations,
     plus Change Tracking & Inventory support details when using the Azure Monitor
     Agent (AMA).
@@ -43,17 +43,17 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 
 ## Summary
 
-- **Total Pages**: 116
-- **Fetched**: 116
+- **Total Pages**: 115
+- **Fetched**: 115
 - **Fetch Failed**: 0
-- **Classified**: 93
-- **Unclassified**: 23
+- **Classified**: 91
+- **Unclassified**: 24
 
 ### Incremental Update
 - **New Pages**: 0
 - **Updated Pages**: 1
-- **Unchanged**: 115
-- **Deleted Pages**: 0
+- **Unchanged**: 114
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-automation/azure-automation.csv`
 
 ## Classification Statistics
@@ -61,21 +61,25 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 | Type | Count | Percentage |
 |------|-------|------------|
 | best-practices | 6 | 5.2% |
-| configuration | 40 | 34.5% |
+| configuration | 40 | 34.8% |
 | decision-making | 5 | 4.3% |
-| deployment | 6 | 5.2% |
+| deployment | 4 | 3.5% |
 | integrations | 9 | 7.8% |
 | limits-quotas | 3 | 2.6% |
-| security | 17 | 14.7% |
-| troubleshooting | 7 | 6.0% |
-| *(Unclassified)* | 23 | 19.8% |
+| security | 17 | 14.8% |
+| troubleshooting | 7 | 6.1% |
+| *(Unclassified)* | 24 | 20.9% |
 
 ## Changes
 
 ### Updated Pages
 
-- [About Change tracking and inventory](https://learn.microsoft.com/en-us/azure/azure-change-tracking-inventory/overview-monitoring-agent)
-  - Updated: 2026-06-23T11:39:00.000Z → 2026-07-08T11:40:00.000Z
+- [Disaster recovery for Automation accounts](https://learn.microsoft.com/en-us/azure/automation/automation-disaster-recovery)
+  - Updated: 2025-11-17T08:00:00.000Z → 2026-07-13T05:11:00.000Z
+
+### Deleted Pages
+
+- ~~Availability zones~~ (https://learn.microsoft.com/en-us/azure/automation/automation-availability-zones)
 
 ## Classified Pages
 
@@ -98,7 +102,6 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 | [Configure runbook input parameters](https://learn.microsoft.com/en-us/azure/automation/runbook-input-parameters) | configuration | 0.80 | Details parameter types, behaviors, and configuration for different runbook types; specific to Automation’s parameter handling. |
 | [Create modular runbooks](https://learn.microsoft.com/en-us/azure/automation/automation-child-runbooks) | best-practices | 0.80 | Provides a comparison table of inline vs cmdlet-based child runbook calls and guidance on when to use each; clear product-specific best practices. |
 | [Deploy extension-based worker](https://learn.microsoft.com/en-us/azure/automation/extension-based-hybrid-runbook-worker-install) | deployment | 0.80 | Provides product-specific deployment steps and constraints for extension-based User Hybrid Runbook Workers across environments, including how to add/remove workers and groups. |
-| [Disaster recovery for Automation accounts](https://learn.microsoft.com/en-us/azure/automation/automation-disaster-recovery) | deployment | 0.80 | Provides DR strategy for Automation accounts and dependent resources, including product-specific deployment and recovery patterns. |
 | [Handle errors in graphical runbooks](https://learn.microsoft.com/en-us/azure/automation/automation-runbook-graphical-error-handling) | best-practices | 0.80 | Provides concrete patterns for handling success, expected, and unexpected errors in graphical runbooks; product-specific error-handling design guidance. |
 | [Manage role permissions and security](https://learn.microsoft.com/en-us/azure/automation/automation-role-based-access-control) | security | 0.80 | Describes Automation-specific RBAC usage; likely lists roles, scopes, and permission mappings for Automation resources. |
 | [Migrate existing Agent-based Hybrid Workers to Extension-based Workers](https://learn.microsoft.com/en-us/azure/automation/migrate-existing-agent-based-hybrid-worker-to-extension-based-workers) | decision-making | 0.80 | Includes a retirement date for agent-based workers and guidance on migrating to extension-based workers, which is concrete upgrade-path and choice guidance specific to Azure Automation. |
@@ -168,7 +171,6 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 | [Work with the Graphical runbook SDK](https://learn.microsoft.com/en-us/azure/automation/graphical-runbook-sdk) | integrations | 0.65 | SDK-focused article for programmatically creating/editing graphical runbooks; likely includes API/SDK parameters and structures unique to this product. |
 | [Automation Runtime environment](https://learn.microsoft.com/en-us/azure/automation/runtime-environment-overview) | configuration | 0.60 | Runtime environment overview likely details supported versions and environment settings, which are configuration-specific. |
 | [Automation runbook types](https://learn.microsoft.com/en-us/azure/automation/automation-runbook-types) | decision-making | 0.60 | Compares runbook types and considerations for choosing among them, which is product-specific decision guidance. |
-| [Availability zones](https://learn.microsoft.com/en-us/azure/automation/automation-availability-zones) | deployment | 0.60 | Describes availability zone support and regional behavior for Automation, relevant to deployment and high-availability planning. |
 | [Azure Automation extension for Visual Studio Code](https://learn.microsoft.com/en-us/azure/automation/automation-runbook-authoring) | configuration | 0.60 | Describes VS Code extension capabilities and operations for runbook management, including product-specific configuration of tooling. |
 | [Hybrid Runbook Worker overview](https://learn.microsoft.com/en-us/azure/automation/automation-hybrid-runbook-worker) | configuration | 0.60 | Hybrid Runbook Worker overview includes installation and environment-specific configuration details unique to this feature. |
 | [Remediate noncompliant State Configuration servers](https://learn.microsoft.com/en-us/azure/automation/automation-dsc-remediate) | configuration | 0.60 | Describes on-demand reapplication of configurations; likely includes commands and settings for triggering remediation unique to Automation DSC. |
@@ -182,6 +184,7 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 | [Learn PowerShell Workflow](https://learn.microsoft.com/en-us/azure/automation/automation-powershell-workflow) | 0.45 | Conceptual explanation of PowerShell Workflow vs PowerShell for Automation runbooks; more educational than product-specific configuration or troubleshooting. |
 | [Manage Automation account](https://learn.microsoft.com/en-us/azure/automation/delete-account) | 0.45 | Describes deleting/restoring Automation accounts and related resources; mostly procedural without detailed configuration tables or error-code-based troubleshooting. |
 | [Delete Run As account](https://learn.microsoft.com/en-us/azure/automation/delete-run-as-account) | 0.40 | Describes retirement and deletion of Run As accounts and migration to managed identities; primarily lifecycle and portal/PowerShell steps without deep config parameters or error mappings. |
+| [Disaster recovery for Automation accounts](https://learn.microsoft.com/en-us/azure/automation/automation-disaster-recovery) | 0.40 | The page describes disaster recovery strategies and responsibilities for Azure Automation accounts and dependent resources, but the summary does not indicate presence of specific numerical limits, configuration parameter tables, error-code-based troubleshooting, or detailed decision matrices. It appears to be guidance/strategy rather than expert, parameterized configuration or limits content. |
 | [Remove user-assigned managed identity](https://learn.microsoft.com/en-us/azure/automation/remove-user-assigned-identity) | 0.40 | Procedural how-to for removing a user-assigned managed identity via portal/PowerShell/ARM; no detailed configuration tables, limits, or product-specific edge cases. |
 | [Run Azure CLI commands in PowerShell 7.4 runbooks](https://learn.microsoft.com/en-us/azure/automation/quickstart-cli-support-powershell-runbook-runtime-environment) | 0.40 | Shows that Azure CLI 2.64.0 is default in PowerShell 7.4 runtime, but no broader config matrices or constraints; mostly a how-to. |
 | [Create Automation account - Azure portal](https://learn.microsoft.com/en-us/azure/automation/automation-create-standalone-account) | 0.35 | How-to for creating a standalone Automation account; mostly portal steps without detailed configuration matrices. |

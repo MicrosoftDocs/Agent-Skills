@@ -1,9 +1,9 @@
 ---
 name: azure-rbac
-description: Expert knowledge for Azure Role-based access control development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when defining RBAC/ABAC roles, custom role definitions, PIM, deny assignments, or ARM/Bicep-based role assignments, and other Azure Role-based access control related development tasks. Not for Azure Active Directory B2C (use azure-active-directory-b2c), Azure Information Protection (use azure-information-protection), Azure Policy (use azure-policy), Azure Security (use azure-security).
+description: Expert knowledge for Azure Role-based access control development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when defining RBAC/ABAC roles, PIM assignments, deny policies, custom role JSON, or ARM/Bicep access templates, and other Azure Role-based access control related development tasks. Not for Azure Policy (use azure-policy), Azure Security (use azure-security), Azure Portal (use azure-portal), Azure Resource Manager (use azure-resource-manager).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-05"
+  generated_at: "2026-07-19"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Role-based access control Skill
@@ -28,7 +28,7 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L44-L50 | Security-focused guidance on designing Azure RBAC: choosing scopes, delegating access with ABAC conditions, and applying least privilege and separation-of-duties best practices. |
 | Decision Making | L51-L55 | Guidance on choosing and migrating role models: moving from classic admins to RBAC, scaling with ABAC, selecting Azure vs Entra vs classic roles, and transferring subscriptions between directories. |
 | Limits & Quotas | L56-L61 | Designing and managing Azure RBAC custom roles, including understanding role structure, permissions, and step-by-step creation using the Azure portal |
-| Security | L62-L129 | Azure RBAC roles, permissions, ABAC conditions, custom roles, PIM, deny assignments, and secure role assignment/management for security, identity, and privileged access scenarios. |
+| Security | L62-L129 | Azure RBAC/ABAC roles, permissions, and conditions: built-in and custom roles by workload, assignment and PIM, deny assignments, policy integration, and secure subscription management. |
 | Configuration | L130-L140 | Configuring Azure RBAC/ABAC: prerequisites, condition syntax, role assignments, built‑in vs custom roles, and creating/inspecting custom role definitions via CLI and PowerShell |
 | Integrations & Coding Patterns | L141-L156 | How to assign, list, and query Azure RBAC role assignments using CLI, PowerShell, portal, REST, ARM/Bicep templates, including managed identities and group-based access. |
 
@@ -75,7 +75,7 @@ This skill requires **network access** to fetch documentation content:
 | Use integration Azure RBAC built-in roles | https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/integration |
 | Use IoT Azure RBAC built-in roles and permissions | https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/internet-of-things |
 | Apply management and governance RBAC roles in Azure | https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/management-and-governance |
-| Use Azure RBAC built-in roles for migration tasks | https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/migration |
+| Use Azure RBAC built-in roles for migration scenarios | https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/migration |
 | Assign Azure Monitor built-in RBAC roles | https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/monitor |
 | Apply networking Azure RBAC built-in roles and scopes | https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/networking |
 | Use privileged Azure RBAC built-in roles | https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/privileged |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-05'
+generated_at: '2026-07-19'
 category_descriptions:
   deployment: 'Using App Configuration in CI/CD: exporting/importing settings, creating
     snapshots, integrating with Azure Pipelines, GitHub Actions, and Helm/Kubernetes
@@ -8,7 +8,7 @@ category_descriptions:
     and how to upgrade Spring Boot apps to use App Configuration library v6.
   integrations: Patterns and code samples for integrating Azure App Configuration
     into .NET, Go, JavaScript, Python, AKS, Front Door, and AI apps, including dynamic
-    config, feature flags, filters, telemetry, and REST APIs.
+    config, feature flags, filters, and REST/Key Vault usage
   configuration: 'Configuring App Configuration behavior: files, emulator, snapshots,
     geo-replication, soft delete, feature flags/filters/telemetry, Kubernetes provider,
     and AI/chat completion settings.'
@@ -26,13 +26,14 @@ category_descriptions:
     and common error patterns.
 skill_description: Expert knowledge for Azure App Configuration development including
   troubleshooting, best practices, decision making, limits & quotas, security, configuration,
-  integrations & coding patterns, and deployment. Use when using feature flags, snapshots,
-  CI/CD exports/imports, Kubernetes provider, or REST/AI integration, and other Azure
-  App Configuration related development tasks. Not for Azure App Service (use azure-app-service),
-  Azure Functions (use azure-functions), Azure Key Vault (use azure-key-vault).
-use_when: Use when using feature flags, snapshots, CI/CD exports/imports, Kubernetes
-  provider, or REST/AI integration, and other Azure App Configuration related development
-  tasks.
+  integrations & coding patterns, and deployment. Use when using feature flags, dynamic
+  config refresh, snapshots, Key Vault integration, or CI/CD exports/imports, and
+  other Azure App Configuration related development tasks. Not for Azure App Service
+  (use azure-app-service), Azure Functions (use azure-functions), Azure Key Vault
+  (use azure-key-vault).
+use_when: Use when using feature flags, dynamic config refresh, snapshots, Key Vault
+  integration, or CI/CD exports/imports, and other Azure App Configuration related
+  development tasks.
 confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Functions
   (use azure-functions), Azure Key Vault (use azure-key-vault).
 ---
@@ -43,13 +44,13 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 - **Total Pages**: 165
 - **Fetched**: 165
 - **Fetch Failed**: 0
-- **Classified**: 127
-- **Unclassified**: 38
+- **Classified**: 126
+- **Unclassified**: 39
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 165
+- **Updated Pages**: 3
+- **Unchanged**: 162
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-app-configuration/azure-app-configuration.csv`
 
@@ -61,13 +62,22 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | configuration | 14 | 8.5% |
 | decision-making | 2 | 1.2% |
 | deployment | 6 | 3.6% |
-| integrations | 79 | 47.9% |
+| integrations | 78 | 47.3% |
 | limits-quotas | 5 | 3.0% |
 | security | 19 | 11.5% |
 | troubleshooting | 1 | 0.6% |
-| *(Unclassified)* | 38 | 23.0% |
+| *(Unclassified)* | 39 | 23.6% |
 
 ## Changes
+
+### Updated Pages
+
+- [ASP.NET Core](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-targetingfilter-aspnet-core)
+  - Updated: 2025-01-13T23:06:00.000Z → 2026-07-17T22:12:00.000Z
+- [Feature management](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-feature-flag-aspnet-core)
+  - Updated: 2025-11-21T08:00:00.000Z → 2026-07-15T08:00:00.000Z
+- [Snapshots](https://learn.microsoft.com/en-us/azure/azure-app-configuration/rest-api-snapshot)
+  - Updated: 2025-06-04T08:00:00.000Z → 2026-07-15T22:16:00.000Z
 
 ## Classified Pages
 
@@ -95,6 +105,7 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [Versioning](https://learn.microsoft.com/en-us/azure/azure-app-configuration/rest-api-versioning) | integrations | 0.80 | Specifies required api-version parameter, SemVer format, lack of negotiation, and error responses; concrete protocol semantics. |
 | [Best practices](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-best-practices) | best-practices | 0.78 | The page focuses on concrete usage patterns for Azure App Configuration (key groupings, key-value composition, bootstrap patterns, etc.). These are product-specific DO/DON'T recommendations and patterns that go beyond generic configuration advice, fitting the best-practices category. |
 | [Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-enable-rbac) | security | 0.78 | Page is focused on using Microsoft Entra ID and Azure RBAC with Azure App Configuration. It likely lists specific built-in roles, their permissions, and how to assign them to principals (users, managed identities, service principals), which are product-specific security configuration details rather than generic concepts. |
+| [Snapshots](https://learn.microsoft.com/en-us/azure/azure-app-configuration/rest-api-snapshot) | integrations | 0.78 | REST reference for snapshot operations with product-specific resource behavior, API version caveats, and operation details that go beyond generic REST knowledge. |
 | [Authorization](https://learn.microsoft.com/en-us/azure/azure-app-configuration/rest-api-authorization-index) | security | 0.75 | Details how authorization depends on chosen authentication method and lists models; product-specific access control behavior. |
 | [Configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-azure-functions-csharp) | integrations | 0.75 | Quickstart for Azure Functions using .NET configuration provider; includes function-specific configuration patterns and provider usage. |
 | [Configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-go-console-app) | integrations | 0.75 | Quickstart for Go provider; includes binding to structs, composition, prefix trimming, and Key Vault resolution—provider-specific integration details. |
@@ -108,6 +119,7 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [.NET](https://learn.microsoft.com/en-us/azure/azure-app-configuration/reload-key-vault-secrets-dotnet) | integrations | 0.70 | Covers automatic reload of secrets and certificates; typically includes provider configuration options, refresh intervals, and flags unique to this integration. |
 | [ASP.NET Core](https://learn.microsoft.com/en-us/azure/azure-app-configuration/how-to-telemetry-aspnet-core) | integrations | 0.70 | ASP.NET Core tutorial for tracking feature flag evaluations; expected to include SDK calls, telemetry configuration, and parameter names unique to this integration. |
 | [ASP.NET Core](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-feature-filters-aspnet-core) | integrations | 0.70 | Shows code and configuration for custom feature filters in ASP.NET Core; product-specific integration pattern with concrete APIs. |
+| [ASP.NET Core](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-targetingfilter-aspnet-core) | integrations | 0.70 | The page shows product-specific usage of Azure App Configuration's targeting filter in an ASP.NET Core app, including concrete configuration patterns and code for integrating feature flags with targeted rollouts. This is an integration/coding pattern rather than generic tutorial content, as it relies on specific filter names, options, and wiring unique to Azure App Configuration. |
 | [ASP.NET Core](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-timewindow-filter-aspnet-core) | integrations | 0.70 | ASP.NET Core-specific implementation of time window filters; includes code and configuration patterns unique to this integration. |
 | [ASP.NET Core](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-variant-feature-flags-aspnet-core) | integrations | 0.70 | Tutorial wiring variant feature flags into ASP.NET Core; expected to show SDK APIs, configuration provider usage, and parameter names unique to this integration. |
 | [Access keys](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-disable-access-key-authentication) | security | 0.70 | Explains enabling/disabling access key auth; expected to include specific configuration options and security implications unique to this service. |
@@ -164,7 +176,6 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [Python](https://learn.microsoft.com/en-us/azure/azure-app-configuration/use-key-vault-references-python-provider) | integrations | 0.70 | Tutorial demonstrates product-specific integration patterns between Azure App Configuration and Key Vault in a Python application, including how Key Vault references are represented and consumed via the App Configuration client. This is concrete integration behavior unique to these Azure services rather than generic Python or HTTP usage. |
 | [Python SDK](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-python) | integrations | 0.70 | Quickstart demonstrates Python SDK and provider usage with App Configuration, including dictionary-like access and Key Vault resolution; these are product-specific integration patterns. |
 | [Recover or purge deleted stores](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-recover-deleted-stores-in-azure-app-configuration) | configuration | 0.70 | How-to for setting retention policy, enabling purge protection, and recovering/purging stores; includes specific configuration options and allowed values. |
-| [Snapshots](https://learn.microsoft.com/en-us/azure/azure-app-configuration/rest-api-snapshot) | integrations | 0.70 | Defines snapshot as a REST resource and notes version availability; API semantics are specific to this product. |
 | [Spring Boot](https://learn.microsoft.com/en-us/azure/azure-app-configuration/how-to-feature-filters-spring-boot) | integrations | 0.70 | Spring Boot integration for custom feature filters; includes specific configuration properties and code patterns. |
 | [Spring Boot](https://learn.microsoft.com/en-us/azure/azure-app-configuration/how-to-variant-feature-flags-spring-boot) | integrations | 0.70 | Spring Boot integration with variant feature flags; likely includes Java/Spring configuration classes, annotations, and property names specific to App Configuration. |
 | [Spring Boot](https://learn.microsoft.com/en-us/azure/azure-app-configuration/use-key-vault-references-spring-boot) | integrations | 0.70 | Tutorial shows product-specific integration between Azure App Configuration and Key Vault from a Spring Boot app, including concrete client usage and reference patterns that are specific to these services. While framed as a tutorial, it encodes detailed integration behavior (Key Vault reference keys, URI usage, and client interaction) that goes beyond generic SDK usage. |
@@ -174,7 +185,6 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [Feature reference](https://learn.microsoft.com/en-us/azure/azure-app-configuration/feature-management-dotnet-reference) | integrations | 0.68 | Reference page for the .NET feature management library with Azure App Configuration; such references usually contain API/SDK parameter details, configuration options, and code patterns specific to this integration, fitting the integrations & coding patterns category. |
 | [Get started](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-ai-agent-config) | configuration | 0.68 | Explains defining agent instructions and toolsets via code or declarative YAML stored in Azure App Configuration; likely includes specific schema/setting names for agent behavior and tools, which are product- and framework-specific configuration details. |
 | [Python](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-feature-filters-python) | integrations | 0.66 | Shows how to implement a custom feature filter for feature flags in a Python app; likely includes specific feature management APIs, filter registration patterns, and configuration keys unique to Azure App Configuration feature management. |
-| [ASP.NET Core](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-targetingfilter-aspnet-core) | integrations | 0.65 | How-to for using the Azure App Configuration targeting filter in ASP.NET Core; likely includes SDK-specific options and parameter names for feature filters beyond generic concepts. |
 | [ASP.NET Core](https://learn.microsoft.com/en-us/azure/azure-app-configuration/use-key-vault-references-dotnet-core) | integrations | 0.65 | Tutorial for using Key Vault references via the App Configuration provider; typically includes provider options, connection settings, and integration-specific patterns beyond generic SDK usage. |
 | [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/azure-app-configuration/policy-reference) | security | 0.65 | Index of built-in policies for App Configuration; each policy encodes specific security/compliance rules and effects, which are product-specific. |
 | [Configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-aspnet-core-app) | integrations | 0.65 | Quickstart for ASP.NET Core uses the App Configuration .NET provider; likely includes provider-specific configuration patterns and parameters unique to this integration. |
@@ -198,7 +208,6 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [Configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-aspire) | integrations | 0.60 | Quickstart for Aspire integration; uses Aspire integration libraries and provisioning patterns that are product- and framework-specific. |
 | [Dynamic configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/enable-dynamic-configuration-aspire) | integrations | 0.60 | Dynamic configuration tutorial for Aspire; likely details provider usage, refresh configuration, and Aspire-specific wiring. |
 | [Feature management](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-feature-flag-aspire) | integrations | 0.60 | Feature flags quickstart for Aspire; uses specific feature management libraries and configuration patterns tied to App Configuration. |
-| [Feature management](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-feature-flag-aspnet-core) | integrations | 0.60 | Feature flags quickstart for ASP.NET Core; likely includes feature management library APIs and configuration patterns specific to App Configuration integration. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/emulator-overview) | configuration | 0.60 | Emulator overview for local development; full article likely includes specific configuration options and behaviors unique to the emulator. |
 
 ## Unclassified Pages
@@ -234,6 +243,7 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [Bicep](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-bicep) | 0.20 | Quickstart for creating an App Configuration store with Bicep; likely step-by-step deployment/template example without detailed config parameter tables, limits, or product-specific best practices beyond generic IaC usage. |
 | [Configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-java-spring-app) | 0.20 | This is a quickstart tutorial for wiring a Java Spring app to Azure App Configuration. It primarily shows basic integration steps rather than enumerating configuration matrices, limits, or product-specific best-practice patterns. It doesn't meet the thresholds for any expert-knowledge sub-skill type. |
 | [Create and manage feature flags](https://learn.microsoft.com/en-us/azure/azure-app-configuration/manage-feature-flags) | 0.20 | Feature flag management quickstart; focused on using portal UI and basic concepts, not deep configuration or limits. |
+| [Feature management](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-feature-flag-aspnet-core) | 0.20 | Quickstart tutorial showing how to add feature flags to an ASP.NET Core app using Azure App Configuration; focuses on step-by-step implementation rather than detailed configuration tables, limits, error codes, or product-specific best-practice guidance. Does not meet criteria for configuration, integrations, or other sub-skill types requiring expert-level reference details. |
 | [Feature management](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-feature-flag-spring-boot) | 0.20 | Quickstart tutorial showing how to add feature flags to a Spring Boot app using Azure App Configuration. It is primarily step-by-step guidance and basic integration usage, without detailed configuration parameter tables, limits, error-code-based troubleshooting, or product-specific best-practice guidance with quantified impact. |
 | [Import or export configuration data](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-import-export-data) | 0.20 | How-to for import/export via portal/CLI; typical tutorial flow, no indication of detailed config tables or limits. |
 | [Monitor App Configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/monitor-app-configuration) | 0.20 | High-level overview of monitoring data and Azure Monitor integration for App Configuration; summary indicates conceptual guidance without specific limits, configuration tables, or error-code-based troubleshooting. |

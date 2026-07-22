@@ -40,8 +40,8 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 32
+- **Updated Pages**: 0
+- **Unchanged**: 33
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-attestation/azure-attestation.csv`
 
@@ -57,11 +57,6 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 | *(Unclassified)* | 11 | 33.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [Secure Microsoft Azure Attestation](https://learn.microsoft.com/en-us/azure/attestation/secure-attestation)
-  - Updated: 2025-04-08T22:01:00.000Z → 2026-07-10T22:34:00.000Z
 
 ## Classified Pages
 

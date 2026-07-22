@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Container Instances (use azure-container-insta
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 225
+- **Updated Pages**: 0
+- **Unchanged**: 226
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-container-apps/azure-container-apps.csv`
 
@@ -75,11 +75,6 @@ confusable_not_for: Not for Azure Container Instances (use azure-container-insta
 | *(Unclassified)* | 85 | 37.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [About Azure Container Apps](https://learn.microsoft.com/en-us/azure/container-apps/overview)
-  - Updated: 2026-03-31T08:00:00.000Z → 2026-07-07T22:18:00.000Z
 
 ## Classified Pages
 

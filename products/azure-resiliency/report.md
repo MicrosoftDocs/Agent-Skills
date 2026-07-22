@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-07'
+generated_at: '2026-07-19'
 category_descriptions:
   deployment: Guidance on testing zone-down drills, understanding regional failover
     scenarios, and using the resiliency support matrix to see which workloads and
@@ -35,8 +35,8 @@ confusable_not_for: Not for Azure Reliability (use azure-reliability), Azure Sit
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 34
+- **Updated Pages**: 1
+- **Unchanged**: 33
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-resiliency/azure-resiliency.csv`
 
@@ -50,6 +50,11 @@ confusable_not_for: Not for Azure Reliability (use azure-reliability), Azure Sit
 | *(Unclassified)* | 24 | 70.6% |
 
 ## Changes
+
+### Updated Pages
+
+- [Use the Resiliency agent](https://learn.microsoft.com/en-us/azure/resiliency/goals-recommendations-use-agent)
+  - Updated: 2026-06-02T18:53:00.000Z → 2026-07-16T11:41:00.000Z
 
 ## Classified Pages
 
@@ -89,8 +94,8 @@ confusable_not_for: Not for Azure Reliability (use azure-reliability), Azure Sit
 | [Recovery orchestration plan](https://learn.microsoft.com/en-us/azure/resiliency/recovery-orchestration-plan-about) | 0.30 | Overview of Azure Recovery Orchestration Plan and its purpose; summary focuses on what it does, not on detailed configuration options, limits, or troubleshooting specifics. |
 | [Review recommendations](https://learn.microsoft.com/en-us/azure/resiliency/goals-recommendations-review-recommendations) | 0.30 | Describes reviewing and acting on recommendations; appears to be workflow guidance without explicit mention of numeric thresholds, config parameters, or error-code-based troubleshooting. |
 | [Understand the protection estate](https://learn.microsoft.com/en-us/azure/resiliency/quick-understand-protection-estate) | 0.30 | Quickstart UI walkthrough to identify protected/unprotected resources; lacks detailed configuration tables, limits, or troubleshooting mappings. |
-| [Use the Resiliency agent](https://learn.microsoft.com/en-us/azure/resiliency/goals-recommendations-use-agent) | 0.30 | Explains how to use the Resiliency agent (conversational AI) in a conceptual/UX sense; summary does not indicate detailed configuration, limits, or security settings. |
 | [View protectable resources](https://learn.microsoft.com/en-us/azure/resiliency/tutorial-view-protectable-resources) | 0.30 | Tutorial on viewing unprotected resources; primarily step-by-step portal usage without product-specific config parameters or limits. |
 | [View protected items and perform actions](https://learn.microsoft.com/en-us/azure/resiliency/tutorial-view-protected-items-and-perform-actions) | 0.30 | Tutorial on viewing protected items and performing actions; operational walkthrough without expert-level configuration or troubleshooting content. |
 | [Overview](https://learn.microsoft.com/en-us/azure/resiliency/resiliency-overview) | 0.20 | High-level overview of the Resiliency service; conceptual description of capabilities without numeric limits, configuration tables, error codes, or detailed procedures. |
+| [Use the Resiliency agent](https://learn.microsoft.com/en-us/azure/resiliency/goals-recommendations-use-agent) | 0.20 | Page describes how to use a conversational resiliency agent within Infrastructure Resiliency Manager; it appears to be a usage/experience guide without detailed limits, configuration tables, error-code-based troubleshooting, or other product-specific numeric or parameterized expert knowledge as defined by the sub-skill types. |
 | [What's new](https://learn.microsoft.com/en-us/azure/resiliency/resiliency-whats-new) | 0.20 | What's new/change log style page; primarily feature announcements and marketing-style descriptions, not detailed configuration, limits, or troubleshooting content. |

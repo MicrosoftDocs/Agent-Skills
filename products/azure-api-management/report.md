@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-12'
+generated_at: '2026-07-19'
 category_descriptions:
   integrations: Patterns and samples for integrating API Management with LLMs, backends,
     logging/monitoring, events, OAuth, GitHub, Dapr, and exporting/importing APIs
@@ -19,9 +19,9 @@ category_descriptions:
   troubleshooting: 'Diagnosing and fixing APIM issues: policies and error handling,
     request tracing/debugging, custom domain/Key Vault cert failures, SNAT timeouts,
     portal problems, and using Diagnose and Solve.'
-  deployment: 'Deploying and scaling APIM: multi-region, VNet/external setups, self-hosted
-    gateways/portals, autoscale, backup/restore, migration, automation, and certificate/MCP
-    rollout planning.'
+  deployment: 'Deploying and scaling API Management: multi-region, VNet/external,
+    self-hosted gateways (AKS/K8s/Docker/Arc), backup/DR, migration, automation, and
+    managed cert/portal deployment.'
   best-practices: Best practices for caching, throttling, security (OWASP API Top
     10), SSE setup, and running the self-hosted gateway on Kubernetes in production
     for Azure API Management.
@@ -31,16 +31,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure API Management development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when securing APIs, enforcing quotas, integrating LLM/backends, configuring
-  policies, or deploying gateways, and other Azure API Management related development
-  tasks. Not for Azure App Service (use azure-app-service), Azure Functions (use azure-functions),
-  Azure Logic Apps (use azure-logic-apps), Azure Service Bus (use azure-service-bus).
-use_when: Use when securing APIs, enforcing quotas, integrating LLM/backends, configuring
-  policies, or deploying gateways, and other Azure API Management related development
-  tasks.
-confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Functions
-  (use azure-functions), Azure Logic Apps (use azure-logic-apps), Azure Service Bus
-  (use azure-service-bus).
+  Use when building APIM policies, securing APIs (JWT/OAuth/mTLS), integrating LLM/backends,
+  or deploying self-hosted gateways, and other Azure API Management related development
+  tasks. Not for Azure Application Gateway (use azure-application-gateway), Azure
+  Front Door (use azure-front-door), Azure Web Application Firewall (use azure-web-application-firewall),
+  Azure Service Bus (use azure-service-bus).
+use_when: Use when building APIM policies, securing APIs (JWT/OAuth/mTLS), integrating
+  LLM/backends, or deploying self-hosted gateways, and other Azure API Management
+  related development tasks.
+confusable_not_for: Not for Azure Application Gateway (use azure-application-gateway),
+  Azure Front Door (use azure-front-door), Azure Web Application Firewall (use azure-web-application-firewall),
+  Azure Service Bus (use azure-service-bus).
 ---
 # Azure API Management Crawl Report
 
@@ -78,8 +79,8 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 
 ### Updated Pages
 
-- [Monitoring data reference](https://learn.microsoft.com/en-us/azure/api-management/monitor-api-management-reference)
-  - Updated: 2025-09-05T08:00:00.000Z → 2026-06-26T05:22:00.000Z
+- [Regional availability](https://learn.microsoft.com/en-us/azure/api-management/api-management-region-availability)
+  - Updated: 2026-05-12T17:16:00.000Z → 2026-07-14T05:10:00.000Z
 
 ## Classified Pages
 
@@ -251,7 +252,7 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [Protect your API with Azure AD B2C](https://learn.microsoft.com/en-us/azure/api-management/howto-protect-backend-frontend-azure-ad-b2c) | security | 0.70 | Shows a specific security configuration using AD B2C, Easy Auth, and PKCE SPA flow to protect APIs, which is product- and flow-specific. |
 | [Protect your API with Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-protect-backend-with-aad) | security | 0.70 | Provides concrete configuration steps and parameters to secure APIs with OAuth 2.0 and Entra ID, beyond generic OAuth concepts. |
 | [Provision a self-hosted gateway](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-provision-self-hosted-gateway) | deployment | 0.70 | Provisioning gateway resource is a deployment prerequisite; article likely includes resource-level constraints, required settings, and tier applicability for self-hosted gateway. |
-| [Regional availability](https://learn.microsoft.com/en-us/azure/api-management/api-management-region-availability) | deployment | 0.70 | Region-availability pages enumerate exactly which Azure regions support specific API Management v2 tiers and workspace gateways. This is a product- and time-specific support matrix that changes over time and is not inferable from general knowledge, aligning best with deployment (platform/tier support matrix by region). |
+| [Regional availability](https://learn.microsoft.com/en-us/azure/api-management/api-management-region-availability) | deployment | 0.70 | Page provides a region-by-region availability matrix for API Management v2 tiers and workspace gateways, which is deployment-specific, time-sensitive information not reliably known from training data. This aligns with deployment constraints by region/SKU. |
 | [Retrieve IP addresses](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-ip-addresses) | configuration | 0.70 | Explains how to obtain public/private IPs and when they change, enabling precise firewall and routing configuration specific to API Management. |
 | [Reuse policy configurations](https://learn.microsoft.com/en-us/azure/api-management/policy-fragments) | configuration | 0.70 | Describes how to define and apply reusable policy XML fragments, including limitations; product-specific configuration pattern. |
 | [Security controls by Azure Policy](https://learn.microsoft.com/en-us/azure/api-management/security-controls-policy) | security | 0.70 | Lists Azure Policy regulatory compliance controls and built-in policy definitions specific to Azure API Management. These are concrete, product-specific security/compliance configuration artifacts rather than conceptual security guidance. |

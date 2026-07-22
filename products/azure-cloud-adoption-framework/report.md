@@ -50,8 +50,8 @@ use_when: Use when adopting AKS/Arc, AVS/VMware, SAP/Oracle, AVD/Citrix, or AI a
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 326
+- **Updated Pages**: 0
+- **Unchanged**: 328
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cloud-adoption-framework/azure-cloud-adoption-framework.csv`
 
@@ -71,13 +71,6 @@ use_when: Use when adopting AKS/Arc, AVS/VMware, SAP/Oracle, AVD/Citrix, or AI a
 | *(Unclassified)* | 9 | 2.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [What's new](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/whats-new)
-  - Updated: 2026-04-09T18:03:00.000Z → 2026-07-06T20:03:00.000Z
-- [Modernization guides](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/modernize/modernization-cloud-replatform-refactor-rearchitect)
-  - Updated: 2026-02-09T23:02:00.000Z → 2026-07-06T15:03:00.000Z
 
 ## Classified Pages
 

@@ -1,9 +1,9 @@
 ---
 name: azure-virtual-wan
-description: Expert knowledge for Azure Virtual WAN development including troubleshooting, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing VWAN hubs, P2S/Always On VPN, BGP/IPsec routing, NVAs/firewalls, or ExpressRoute/SD-WAN integration, and other Azure Virtual WAN related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure VPN Gateway (use azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute).
+description: Expert knowledge for Azure Virtual WAN development including troubleshooting, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing Virtual WAN hubs, P2S VPN, BGP routing, NVAs/firewalls, ExpressRoute, or Private Link, and other Azure Virtual WAN related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure VPN Gateway (use azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute), Azure Traffic Manager (use azure-traffic-manager).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-12"
+  generated_at: "2026-07-19"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Virtual WAN Skill
@@ -26,7 +26,7 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L36-L41 | Diagnosing and fixing Virtual WAN issues, including P2S VPN client prerequisite checks, connectivity problems, and using built-in tools and diagnostics for troubleshooting. |
 | Decision Making | L42-L50 | Guidance on planning and choosing Virtual WAN designs: NVAs in hubs, VPN client migrations, upgrading Basic→Standard, and selecting partners and hub locations. |
-| Architecture & Design Patterns | L51-L78 | Designing and troubleshooting Azure Virtual WAN architectures: routing patterns, hub-and-spoke and global transit designs, security/firewall integration, SD-WAN, isolation, DR, and Microsoft 365 connectivity. |
+| Architecture & Design Patterns | L51-L78 | Designing Virtual WAN hub-and-spoke architectures, routing patterns (BGP, static, any-to-any), secure internet access, isolation, SD‑WAN/NVA integration, and global transit connectivity. |
 | Limits & Quotas | L79-L85 | Limits and design guidance for Virtual WAN: P2S client pool sizing, hub routing/throughput caps, and using Private Link endpoints within scale and quota constraints. |
 | Security | L86-L95 | Configuring secure P2S VPN access in Virtual WAN using Microsoft Entra ID (MFA, OpenVPN, custom app IDs), Azure VPN Client setup/migration, and hub roles/permissions. |
 | Configuration | L96-L150 | Configuring Virtual WAN hubs, routing, BGP/NAT/IPsec, NVAs/Firewalls, and P2S/Always On VPN (certs, Entra ID, client profiles, user groups, IP pools) plus monitoring and path selection. |
@@ -51,7 +51,7 @@ This skill requires **network access** to fetch documentation content:
 ### Architecture & Design Patterns
 | Topic | URL |
 |-------|-----|
-| Routing intent patterns to secure internet access | https://learn.microsoft.com/en-us/azure/virtual-wan/about-internet-routing |
+| Design routing intent patterns for secure internet access in Virtual WAN | https://learn.microsoft.com/en-us/azure/virtual-wan/about-internet-routing |
 | Choose routing preference in Azure Virtual WAN hubs | https://learn.microsoft.com/en-us/azure/virtual-wan/about-virtual-hub-routing-preference |
 | Design disaster recovery architecture for Azure Virtual WAN | https://learn.microsoft.com/en-us/azure/virtual-wan/disaster-recovery-design |
 | Design selective Azure Firewall bypass in secure hubs | https://learn.microsoft.com/en-us/azure/virtual-wan/firewall-custom-bypass |

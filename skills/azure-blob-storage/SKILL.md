@@ -1,9 +1,9 @@
 ---
 name: azure-blob-storage
-description: Expert knowledge for Azure Blob Storage development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Blob tiers, Data Lake, NFS/SFTP/BlobFuse mounts, SAS/RBAC auth, or static website hosting, and other Azure Blob Storage related development tasks. Not for Azure Files (use azure-files), Azure Table Storage (use azure-table-storage), Azure Queue Storage (use azure-queue-storage).
+description: Expert knowledge for Azure Blob Storage development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when planning Blob tiers/costs, configuring lifecycle/immutability, securing with Entra/SAS, or using NFS/BlobFuse/SFTP, and other Azure Blob Storage related development tasks. Not for Azure Files (use azure-files), Azure Table Storage (use azure-table-storage), Azure Queue Storage (use azure-queue-storage), Azure NetApp Files (use azure-netapp-files).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-12"
+  generated_at: "2026-07-19"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Blob Storage Skill
@@ -28,10 +28,10 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L47-L81 | Performance, reliability, and cost best practices for Blob/Data Lake: access tiers, client tuning, concurrency, lifecycle, NFS/SFTP, retries, monitoring, events, and backup/migration guidance. |
 | Decision Making | L82-L108 | Cost planning and design choices for Blob Storage: tiers, archive retrieval, networking, reserved capacity, migration tools, data protection, and mapping operations to billing. |
 | Limits & Quotas | L109-L127 | Limits, quotas, performance, and known issues for Azure Blob Storage features (scalability, archive/rehydration, NFS/SFTP/BlobFuse, static websites, replication, and Storage Mover). |
-| Security | L128-L186 | Securing Blob Storage access: RBAC/ABAC, Entra auth, SAS tokens, SFTP, ACLs, private networking, Storage Mover, and encryption (CSE, scopes, keys, BlobFuse2). |
-| Configuration | L187-L250 | Configuring monitoring, lifecycle, immutability, restore, networking, and client tools (BlobFuse, Storage Mover), plus third‑party backup/migration integrations for Azure Blob Storage. |
-| Integrations & Coding Patterns | L251-L377 | SDK, CLI, and PowerShell patterns for connecting to Blob/Data Lake, managing containers/blobs (CRUD, leases, metadata, tiers, SAS), copying/migrating data, mounts (BlobFuse/NFS), and event-driven integrations. |
-| Deployment | L378-L391 | Guides for deploying static websites on Blob Storage, enabling Data Lake features, and migrating or integrating data from HDFS, Hadoop, NAS, and hybrid solutions into Azure Storage. |
+| Security | L128-L186 | Managing secure access to Blob/Data Lake data using Entra ID, RBAC/ABAC, ACLs, SAS tokens, SFTP, private networking, and encryption (service, client-side, and customer-provided keys). |
+| Configuration | L187-L248 | Configuring monitoring, lifecycle, immutability, restore, networking, and client tools (BlobFuse, Storage Mover), plus third‑party backup/migration integrations for Azure Blob Storage. |
+| Integrations & Coding Patterns | L249-L375 | SDK, CLI, and PowerShell patterns for connecting to Blob/Data Lake, managing containers/blobs (CRUD, leases, metadata, tiers, SAS), copying/migrating data, mounts (BlobFuse/NFS), and event-driven integrations. |
+| Deployment | L376-L390 | Guides for deploying static websites on Blob Storage, enabling Data Lake features, and migrating data from on-prem, AWS, and third‑party NAS solutions into Azure Storage. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -134,7 +134,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure private networking for Azure Storage Mover migrations | https://learn.microsoft.com/en-us/azure/storage-mover/migrations-requiring-private-connections |
 | Configure anonymous read access for Blob containers | https://learn.microsoft.com/en-us/azure/storage/blobs/anonymous-read-access-configure |
 | Remediate anonymous read access to Azure Blob data | https://learn.microsoft.com/en-us/azure/storage/blobs/anonymous-read-access-overview |
-| Prevent anonymous read access for ARM-based Blob accounts | https://learn.microsoft.com/en-us/azure/storage/blobs/anonymous-read-access-prevent |
+| Disable and remediate anonymous Azure Blob access | https://learn.microsoft.com/en-us/azure/storage/blobs/anonymous-read-access-prevent |
 | Assign Azure RBAC roles for Blob data access | https://learn.microsoft.com/en-us/azure/storage/blobs/assign-azure-role-data-access |
 | Authorize Azure Blob access with Microsoft Entra ID | https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-access-azure-active-directory |
 | Authorize Azure Blob data operations with Azure CLI | https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-data-operations-cli |
@@ -197,7 +197,6 @@ This skill requires **network access** to fetch documentation content:
 | Deploy and configure Azure Storage Mover agents | https://learn.microsoft.com/en-us/azure/storage-mover/agent-deploy |
 | Deploy and configure Azure Storage Mover agents | https://learn.microsoft.com/en-us/azure/storage-mover/agent-deploy |
 | Configure bandwidth schedules for Storage Mover agents | https://learn.microsoft.com/en-us/azure/storage-mover/bandwidth-management |
-| Manage Azure Storage Mover source and target endpoints | https://learn.microsoft.com/en-us/azure/storage-mover/endpoint-manage |
 | Configure and use Azure Storage Mover copy logs | https://learn.microsoft.com/en-us/azure/storage-mover/log-monitoring |
 | Configure networking for Azure Storage Mover agents | https://learn.microsoft.com/en-us/azure/storage-mover/network-prerequisites |
 | Configure and understand Azure Blob inventory reports | https://learn.microsoft.com/en-us/azure/storage/blobs/blob-inventory |
@@ -222,7 +221,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure Blob lifecycle policies to delete data | https://learn.microsoft.com/en-us/azure/storage/blobs/lifecycle-management-policy-delete |
 | Monitor Blob lifecycle policies with events, metrics, and logs | https://learn.microsoft.com/en-us/azure/storage/blobs/lifecycle-management-policy-monitor |
 | Understand Azure Blob lifecycle management policy schema | https://learn.microsoft.com/en-us/azure/storage/blobs/lifecycle-management-policy-structure |
-| Configure monitoring and diagnostics for Azure Blob Storage | https://learn.microsoft.com/en-us/azure/storage/blobs/monitor-blob-storage |
 | Reference monitoring metrics and logs for Azure Blob Storage | https://learn.microsoft.com/en-us/azure/storage/blobs/monitor-blob-storage-reference |
 | Enable and perform point-in-time restore for block blobs | https://learn.microsoft.com/en-us/azure/storage/blobs/point-in-time-restore-manage |
 | Overview of point-in-time restore for block blobs | https://learn.microsoft.com/en-us/azure/storage/blobs/point-in-time-restore-overview |
@@ -379,6 +377,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Move Storage Discovery workspaces across Azure scopes | https://learn.microsoft.com/en-us/azure/storage-discovery/resource-move |
+| Migrate AWS FSx SMB shares to Azure Files | https://learn.microsoft.com/en-us/azure/storage-mover/amazon-files-azure-files-migration |
 | Migrate on-premises HDFS data to Azure Storage using Data Box | https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster |
 | Migrate Hadoop data to Azure Data Lake Storage with WANdisco LiveData | https://learn.microsoft.com/en-us/azure/storage/blobs/migrate-gen2-wandisco-live-data-platform |
 | Configure and deploy a static website on Blob Storage | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-static-website-host |

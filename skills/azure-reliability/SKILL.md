@@ -3,7 +3,7 @@ name: azure-reliability
 description: Expert knowledge for Azure Reliability development including best practices, decision making, architecture & design patterns, and limits & quotas. Use when designing multi-region Azure apps using zones, AKS, databases, networking, messaging, or Web PubSub, and other Azure Reliability related development tasks. Not for Azure Resiliency (use azure-resiliency), Azure Monitor (use azure-monitor), Azure Service Health (use azure-service-health), Azure Site Recovery (use azure-site-recovery).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-12"
+  generated_at: "2026-07-19"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Reliability Skill

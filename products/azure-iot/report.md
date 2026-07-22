@@ -28,8 +28,8 @@ confusable_not_for: Not for Azure IoT Central (use azure-iot-central), Azure IoT
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 7
+- **Updated Pages**: 0
+- **Unchanged**: 8
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-iot/azure-iot.csv`
 
@@ -41,11 +41,6 @@ confusable_not_for: Not for Azure IoT Central (use azure-iot-central), Azure IoT
 | *(Unclassified)* | 6 | 75.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [Secure your solution](https://learn.microsoft.com/en-us/azure/iot/iot-overview-security)
-  - Updated: 2026-06-23T17:23:00.000Z → 2026-07-07T17:13:00.000Z
 
 ## Classified Pages
 

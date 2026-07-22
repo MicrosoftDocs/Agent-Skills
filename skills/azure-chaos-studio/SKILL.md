@@ -1,14 +1,14 @@
 ---
 name: azure-chaos-studio
-description: Expert knowledge for Chaos Studio development including troubleshooting, limits & quotas, security, configuration, and integrations & coding patterns. Use when designing Chaos experiments, configuring agents/targets, securing access, using REST/CLI, or wiring telemetry, and other Chaos Studio related development tasks. Not for Azure Monitor (use azure-monitor), Azure Resiliency (use azure-resiliency), Azure Reliability (use azure-reliability), Azure Site Recovery (use azure-site-recovery).
+description: Expert knowledge for Chaos Studio development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when configuring Chaos Studio experiments, AKS targets, Private Link, CLI/REST automation, or Azure Monitor telemetry, and other Chaos Studio related development tasks. Not for Azure Monitor (use azure-monitor), Azure Resiliency (use azure-resiliency), Azure Reliability (use azure-reliability), Azure Sre Agent (use azure-sre-agent).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-05"
+  generated_at: "2026-07-19"
   generator: "docs2skills/1.0.0"
 ---
 # Chaos Studio Skill
 
-This skill provides expert guidance for Chaos Studio. Covers troubleshooting, limits & quotas, security, configuration, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Chaos Studio. Covers troubleshooting, best practices, decision making, limits & quotas, security, configuration, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -24,26 +24,38 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L40 | Diagnosing Chaos Agent install/health issues, checking VM agent status, and troubleshooting common Chaos Studio experiment failures and known issues. |
-| Limits & Quotas | L41-L49 | Chaos Studio limits, throttling, regional/HA behavior, agent OS/fault compatibility, and supported versions/compatibility matrix |
-| Security | L50-L64 | Securing Chaos Studio: identity/RBAC, workspace roles, CMK encryption, network/VNet setup, AKS auth and IP allowlists, Relay Bridge/agent security, and mapping faults to required Azure roles. |
-| Configuration | L65-L75 | Authoring and deploying Chaos Studio experiments and agents with ARM/Bicep, configuring targets/capabilities, parameters, Private Link, and Azure Policy-based auto-onboarding. |
-| Integrations & Coding Patterns | L76-L82 | Using REST/CLI to create/run Chaos Studio experiments and wiring their telemetry into Azure Monitor and Application Insights for tracking, correlation, and analysis |
+| Troubleshooting | L35-L43 | Diagnosing and fixing Chaos Agent install/health issues, interpreting agent status on VMs, and troubleshooting Chaos Studio workspaces, scenarios, and experiment failures |
+| Best Practices | L44-L48 | Guidance for designing and running Chaos Studio experiments to validate and improve Azure Kubernetes Service (AKS) workload resiliency under failure scenarios. |
+| Decision Making | L49-L53 | Guidance on when to use Chaos Studio workspaces vs experiments, how they differ, and how to choose the right structure for organizing and running chaos tests. |
+| Limits & Quotas | L54-L61 | Chaos Studio limits, quotas, throttling, OS/fault compatibility, and version support details for agents and experiments. |
+| Security | L62-L76 | Security, identity, and access control for Chaos Studio: RBAC roles, workspace/experiment permissions, AKS auth/IPs, CMK encryption, VNet injection, relay/agent networking, and secure target control. |
+| Configuration | L77-L87 | Authoring and deploying Chaos Studio experiments and agents with ARM/Bicep, configuring targets/capabilities, parameters, Private Link, and Azure Policy-based auto-onboarding. |
+| Integrations & Coding Patterns | L88-L95 | Using CLI/REST to create and manage Chaos Studio workspaces/experiments, plus patterns for sending experiment and agent telemetry to Azure Monitor and Application Insights. |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
-| Review known issues and workarounds for Chaos Agent | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-agent-known-issues |
+| Resolve Azure Chaos Agent known issues and workarounds | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-agent-known-issues |
 | Troubleshoot Azure Chaos Agent installation and health | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-agent-troubleshooting |
 | Verify and interpret Chaos Agent status on VMs | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-agent-verify-status |
+| Troubleshoot Azure Chaos Studio workspaces and scenarios | https://learn.microsoft.com/en-us/azure/chaos-studio/troubleshoot-workspaces-scenarios |
 | Troubleshoot common Azure Chaos Studio experiment issues | https://learn.microsoft.com/en-us/azure/chaos-studio/troubleshooting |
+
+### Best Practices
+| Topic | URL |
+|-------|-----|
+| Test AKS workload resiliency with Chaos Studio | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-aks-guidance |
+
+### Decision Making
+| Topic | URL |
+|-------|-----|
+| Choose between Chaos Studio workspaces and experiments | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-workspaces-vs-experiments |
 
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
 | Check OS and fault compatibility for Chaos Agent | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-agent-os-support |
-| Review Chaos Studio limitations and known issues | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-limitations |
-| Understand Chaos Studio regional and HA model | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-region-availability |
+| Review Azure Chaos Studio limitations and constraints | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-limitations |
 | Azure Chaos Studio throttling and usage limits | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-service-limits |
 | Azure Chaos Studio version and compatibility matrix | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-versions |
 
@@ -60,7 +72,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure permissions and security for Azure Chaos Studio | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-permissions-security |
 | Secure Chaos Studio with virtual network injection | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-private-networking |
 | Control Chaos Studio targets and capabilities securely | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-targets-capabilities |
-| Configure Chaos Studio Workspace identities and RBAC permissions | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-workspace-permissions |
+| Configure RBAC and identities for Chaos Studio workspaces | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-workspace-permissions |
 
 ### Configuration
 | Topic | URL |
@@ -76,6 +88,7 @@ This skill requires **network access** to fetch documentation content:
 ### Integrations & Coding Patterns
 | Topic | URL |
 |-------|-----|
+| Manage Chaos Studio workspaces via Azure CLI | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-manage-cli |
 | Call Azure Chaos Studio REST APIs with CLI samples | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-samples-rest-api |
 | Send Chaos Agent experiment telemetry to App Insights | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-set-up-app-insights |
 | Integrate Azure Monitor telemetry with Chaos Studio experiments | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-set-up-azure-monitor |

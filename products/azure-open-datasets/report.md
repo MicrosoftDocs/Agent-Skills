@@ -29,8 +29,8 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 17
-- **Unchanged**: 27
+- **Updated Pages**: 0
+- **Unchanged**: 44
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-open-datasets/azure-open-datasets.csv`
 
@@ -42,43 +42,6 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 | *(Unclassified)* | 43 | 97.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [Public holidays](https://learn.microsoft.com/en-us/azure/open-datasets/dataset-public-holidays)
-  - Updated: 2025-10-28T08:00:00.000Z → 2026-07-08T22:13:00.000Z
-- [NYC Taxi - yellow](https://learn.microsoft.com/en-us/azure/open-datasets/dataset-taxi-yellow)
-  - Updated: 2025-09-12T08:00:00.000Z → 2026-06-29T08:00:00.000Z
-- [NYC Taxi - green](https://learn.microsoft.com/en-us/azure/open-datasets/dataset-taxi-green)
-  - Updated: 2024-08-28T16:59:00.000Z → 2026-07-08T22:13:00.000Z
-- [NYC Taxi - for-hire vehicle](https://learn.microsoft.com/en-us/azure/open-datasets/dataset-taxi-for-hire-vehicle)
-  - Updated: 2024-08-28T16:59:00.000Z → 2026-07-08T22:13:00.000Z
-- [US Labor Force Statistics](https://learn.microsoft.com/en-us/azure/open-datasets/dataset-us-labor-force)
-  - Updated: 2024-08-28T16:59:00.000Z → 2026-07-08T22:13:00.000Z
-- [US National Employment Hours and Earnings](https://learn.microsoft.com/en-us/azure/open-datasets/dataset-us-national-employment-earnings)
-  - Updated: 2024-08-28T16:59:00.000Z → 2026-06-29T08:00:00.000Z
-- [US State Employment Hours and Earnings](https://learn.microsoft.com/en-us/azure/open-datasets/dataset-us-state-employment-earnings)
-  - Updated: 2024-08-28T16:59:00.000Z → 2026-07-08T22:13:00.000Z
-- [US Local Area Unemployment Statistics](https://learn.microsoft.com/en-us/azure/open-datasets/dataset-us-local-unemployment)
-  - Updated: 2024-08-28T16:59:00.000Z → 2026-06-29T08:00:00.000Z
-- [US Consumer Price Index](https://learn.microsoft.com/en-us/azure/open-datasets/dataset-us-consumer-price-index)
-  - Updated: 2024-08-28T16:59:00.000Z → 2026-06-29T08:00:00.000Z
-- [US Producer Price Index - Industry](https://learn.microsoft.com/en-us/azure/open-datasets/dataset-us-producer-price-index-industry)
-  - Updated: 2024-08-28T16:59:00.000Z → 2026-06-29T08:00:00.000Z
-- [US Producer Price Index - Commodities](https://learn.microsoft.com/en-us/azure/open-datasets/dataset-us-producer-price-index-commodities)
-  - Updated: 2024-08-28T16:59:00.000Z → 2026-07-08T22:13:00.000Z
-- [US Population by County](https://learn.microsoft.com/en-us/azure/open-datasets/dataset-us-population-county)
-  - Updated: 2024-08-28T16:59:00.000Z → 2026-07-08T22:13:00.000Z
-- [US Population by ZIP Code](https://learn.microsoft.com/en-us/azure/open-datasets/dataset-us-population-zip)
-  - Updated: 2024-08-28T16:59:00.000Z → 2026-07-08T22:13:00.000Z
-- [Boston Safety Data](https://learn.microsoft.com/en-us/azure/open-datasets/dataset-boston-safety)
-  - Updated: 2024-08-28T16:59:00.000Z → 2026-07-08T22:13:00.000Z
-- [Chicago Safety Data](https://learn.microsoft.com/en-us/azure/open-datasets/dataset-chicago-safety)
-  - Updated: 2024-08-28T16:59:00.000Z → 2026-06-29T08:00:00.000Z
-- [New York City Safety Data](https://learn.microsoft.com/en-us/azure/open-datasets/dataset-new-york-city-safety)
-  - Updated: 2024-08-28T16:59:00.000Z → 2026-07-08T22:13:00.000Z
-- [San Francisco Safety Data](https://learn.microsoft.com/en-us/azure/open-datasets/dataset-san-francisco-safety)
-  - Updated: 2024-08-28T16:59:00.000Z → 2026-06-29T08:00:00.000Z
 
 ## Classified Pages
 

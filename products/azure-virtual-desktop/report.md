@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-12'
+generated_at: '2026-07-19'
 category_descriptions:
   configuration: Configuring AVD host pools, images, autoscale, networking, RDP/RemoteApp
     features, redirection, Teams/Office, licensing, monitoring, and client settings
@@ -77,10 +77,10 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 
 ### Updated Pages
 
-- [Drain session hosts](https://learn.microsoft.com/en-us/azure/virtual-desktop/drain-mode)
-  - Updated: 2025-06-20T03:01:00.000Z → 2026-07-06T21:05:00.000Z
-- [RDP Multipath](https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-multipath)
-  - Updated: 2026-05-11T21:20:00.000Z → 2026-07-08T20:49:00.000Z
+- [Host Component](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-multimedia-redirection)
+  - Updated: 2026-02-23T23:41:00.000Z → 2026-07-16T03:35:00.000Z
+- [Browser Extension](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-multimedia-redirection-extension)
+  - Updated: 2026-06-11T10:02:00.000Z → 2026-07-16T03:35:00.000Z
 
 ## Classified Pages
 
@@ -232,9 +232,9 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [App Attach overview](https://learn.microsoft.com/en-us/azure/virtual-desktop/app-attach-overview) | 0.20 | High-level overview of App Attach; no specific limits, configuration parameter tables, error codes, or detailed decision matrices. Primarily conceptual description of what App Attach is and its benefits. |
 | [Azure Virtual Desktop](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new) | 0.20 | A 'what's new' changelog-style page listing recent Azure Virtual Desktop updates; primarily release notes and marketing/overview of new features without structured limits, configuration tables, decision matrices, or troubleshooting mappings. |
 | [Azure Virtual Desktop Hybrid Overview](https://learn.microsoft.com/en-us/azure/virtual-desktop/hybrid-overview) | 0.20 | Page is an overview of Azure Virtual Desktop Hybrid, describing what it is and high-level behavior. No detailed limits, configuration parameter tables, error codes, or decision matrices are evident from the summary; content is conceptual rather than expert-level reference. |
-| [Browser Extension](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-multimedia-redirection-extension) | 0.20 | A 'what's new' changelog for the multimedia redirection browser extension; similar to index 0, it focuses on feature updates rather than limits, configuration matrices, or decision/troubleshooting content required by the sub-skill types. |
+| [Browser Extension](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-multimedia-redirection-extension) | 0.20 | Page is a 'what's new' changelog for multimedia redirection browser extension; it focuses on release updates rather than detailed limits, configuration parameters, troubleshooting mappings, or decision matrices. |
 | [Deploy Azure Virtual Desktop](https://learn.microsoft.com/en-us/azure/virtual-desktop/deploy-azure-virtual-desktop) | 0.20 | The page is a deployment tutorial showing how to create host pools, workspaces, and session hosts using portal/CLI. It doesn’t present deployment matrices, tier-specific constraints, or other detailed limits/configuration tables; it’s primarily step-by-step guidance that a generic LLM could already approximate. |
-| [Host Component](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-multimedia-redirection) | 0.20 | A 'what's new' changelog for multimedia redirection host; likely lists feature updates and fixes but not structured limits, configs, or troubleshooting mappings as defined. No clear evidence of numeric limits, configuration tables, or error-code-based troubleshooting from the description. |
+| [Host Component](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-multimedia-redirection) | 0.20 | Page is a 'what's new' changelog for multimedia redirection host; it lists feature updates but not detailed limits, configuration tables, error mappings, or other structured expert knowledge as defined by the sub-skill types. |
 | [Private Link with Azure Virtual Desktop](https://learn.microsoft.com/en-us/azure/virtual-desktop/private-link-overview) | 0.20 | High-level overview of using Private Link with Azure Virtual Desktop; summary indicates conceptual benefits without detailed configuration tables or limits. |
 | [SxS Network Stack](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-sxs) | 0.20 | Release notes / what's-new page describing new features and updates for the Azure Virtual Desktop SxS Network Stack; based on the summary it does not expose concrete limits, configuration tables, error codes, or decision matrices that meet any sub-skill criteria. |
 | [Thin client partners](https://learn.microsoft.com/en-us/azure/virtual-desktop/thin-clients) | 0.20 | Primarily a link-out/navigation page to partner thin client vendors and a generic note about using a browser; no detailed configuration tables or product-specific parameters. |

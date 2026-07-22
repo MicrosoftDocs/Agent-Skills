@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-07-12'
+generated_at: '2026-07-19'
 category_descriptions:
   decision-making: Guides for choosing Azure ML algorithms, training and networking
     options, and detailed migration/upgrade paths from AML v1/Prompt Flow to v2/Agent
     Framework, including DR, data, compute, and endpoints.
-  configuration: Configuring Azure ML components, jobs, compute, data, networking,
-    monitoring, AutoML, Prompt Flow, and YAML/CLI settings for training, deployment,
-    and responsible AI.
+  configuration: 'Configuring Azure ML: designer components, AutoML, compute, networking,
+    data, monitoring, registries, environments, and full CLI/YAML schemas for jobs,
+    deployments, feature stores, and connections.'
   troubleshooting: 'Diagnosing and fixing Azure ML errors: pipelines, endpoints, AutoML,
     data access, Kubernetes, networking, CLI/SDK issues, known bugs, and prompt flow
     troubleshooting.'
@@ -30,14 +30,13 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Machine Learning development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when using Azure ML workspaces, jobs/pipelines, online/batch endpoints, AutoML,
-  or Prompt Flow/LLM workloads, and other Azure Machine Learning related development
-  tasks. Not for Azure Databricks (use azure-databricks), Azure Synapse Analytics
-  (use azure-synapse-analytics), Azure Data Science Virtual Machines (use azure-data-science-vm),
-  Azure HDInsight (use azure-hdinsight).
-use_when: Use when using Azure ML workspaces, jobs/pipelines, online/batch endpoints,
-  AutoML, or Prompt Flow/LLM workloads, and other Azure Machine Learning related development
-  tasks.
+  Use when using Azure ML jobs/endpoints, AutoML, registries, feature stores, or prompt
+  flow/LLM tools, and other Azure Machine Learning related development tasks. Not
+  for Azure Databricks (use azure-databricks), Azure Synapse Analytics (use azure-synapse-analytics),
+  Azure Data Science Virtual Machines (use azure-data-science-vm), Azure HDInsight
+  (use azure-hdinsight).
+use_when: Use when using Azure ML jobs/endpoints, AutoML, registries, feature stores,
+  or prompt flow/LLM tools, and other Azure Machine Learning related development tasks.
 confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synapse
   Analytics (use azure-synapse-analytics), Azure Data Science Virtual Machines (use
   azure-data-science-vm), Azure HDInsight (use azure-hdinsight).
@@ -54,8 +53,8 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 8
-- **Unchanged**: 622
+- **Updated Pages**: 1
+- **Unchanged**: 629
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-machine-learning/azure-machine-learning.csv`
 
@@ -78,22 +77,8 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 
 ### Updated Pages
 
-- [Debug jobs](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-interactive-jobs?view=azureml-api-2)
-  - Updated: 2026-07-01T19:18:00.000Z → 2026-07-06T17:21:00.000Z
-- [Network isolation in prompt flow](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/how-to-secure-prompt-flow?view=azureml-api-2)
-  - Updated: 2026-04-21T16:56:00.000Z → 2026-07-07T22:13:00.000Z
-- [Set up end-to-end GenAIOps with prompt flow and Azure DevOps](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/how-to-end-to-end-azure-devops-with-prompt-flow?view=azureml-api-2)
-  - Updated: 2026-06-30T08:00:00.000Z → 2026-07-06T08:00:00.000Z
-- [How to troubleshoot environments](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-troubleshoot-environments?view=azureml-api-2)
-  - Updated: 2025-06-13T17:01:00.000Z → 2026-07-02T08:00:00.000Z
-- [Registries](https://learn.microsoft.com/en-us/azure/machine-learning/concept-machine-learning-registries-mlops?view=azureml-api-2)
-  - Updated: 2025-06-12T08:00:00.000Z → 2026-07-07T22:13:00.000Z
-- [Custom CI/CD and Event-driven workflows](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-use-event-grid?view=azureml-api-2)
-  - Updated: 2025-03-31T17:04:00.000Z → 2026-07-07T22:13:00.000Z
-- [Use Terraform](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-manage-workspace-terraform?view=azureml-api-2)
-  - Updated: 2025-06-13T08:00:00.000Z → 2026-07-06T17:21:00.000Z
-- [How to move a workspace](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-move-workspace?view=azureml-api-2)
-  - Updated: 2025-06-12T08:00:00.000Z → 2026-07-07T22:13:00.000Z
+- [Monitoring data reference](https://learn.microsoft.com/en-us/azure/machine-learning/monitor-azure-machine-learning-reference?view=azureml-api-2)
+  - Updated: 2024-08-28T16:59:00.000Z → 2025-12-31T23:04:00.000Z
 
 ## Classified Pages
 
@@ -250,6 +235,7 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 | [Consume web service](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-authenticate-online-endpoint?view=azureml-api-2) | security | 0.78 | Same page as index 0; includes Azure ML–specific authentication mechanisms, token types, and how to use them for endpoint access. These are product-specific security configurations beyond generic knowledge. |
 | [Data assets](https://learn.microsoft.com/en-us/azure/machine-learning/migrate-to-v2-assets-data?view=azureml-api-2) | decision-making | 0.78 | Explains how File/Tabular datasets map to uri_folder/uri_file/mltable and compares scenarios, guiding migration choices. |
 | [Manage models with deployment templates](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-manage-models-deployment-templates?view=azureml-api-2) | configuration | 0.78 | Describes YAML syntax and schema for deployment templates tied to models and registries; such content typically lists specific configuration fields, allowed values, and defaults for environments and infrastructure, which is expert configuration knowledge unique to Azure ML. |
+| [Monitoring data reference](https://learn.microsoft.com/en-us/azure/machine-learning/monitor-azure-machine-learning-reference?view=azureml-api-2) | configuration | 0.78 | The page is a monitoring data reference for Azure Machine Learning, listing specific metric/event names, dimensions, and schema details that are product-specific and not generally known from training. This fits configuration because it defines the exact monitoring data model and fields users must configure or query when setting up monitoring, rather than general concepts or limits. |
 | [Secure training environment](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-secure-training-vnet?view=azureml-api-2) | security | 0.78 | How-to article with product-specific security configuration for Azure Machine Learning training using VNets and managed virtual networks, including concrete steps, resource types (compute instance, serverless compute, private endpoints), and Azure ML–specific network isolation patterns. Contains detailed, implementation-focused security guidance rather than just conceptual overview. |
 | [Security controls by Azure Policy](https://learn.microsoft.com/en-us/azure/machine-learning/security-controls-policy?view=azureml-api-2) | security | 0.78 | Lists specific built-in Azure Policy definitions and controls for Azure ML compliance; includes policy names and mappings unique to the service. |
 | [Use private endpoint](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-configure-private-link?view=azureml-api-2) | configuration | 0.78 | How-to for configuring Private Link/private endpoints for Azure ML workspaces; typically includes specific resource types, required subresources, DNS zone names, and portal/CLI parameters that are product-specific configuration details rather than generic concepts. |
@@ -424,7 +410,6 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 | [Monitor Kubernetes Online Endpoint inference server logs](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-monitor-kubernetes-online-enpoint-inference-server-log?view=azureml-api-2) | configuration | 0.70 | Describes how to route inference server logs to Log Analytics; likely includes diagnostic settings, table names, and configuration parameters. |
 | [Monitor online endpoints](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-monitor-online-endpoints?view=azureml-api-2) | configuration | 0.70 | Details metrics, log tables, and Application Insights integration for endpoints; includes specific metric names and log schemas, which are configuration-level expert knowledge. |
 | [Monitor with Application Insights](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-monitor-online-endpoints?view=azureml-api-2) | configuration | 0.70 | Details metrics, logs, and Application Insights integration for online endpoints, including specific metric names, log tables, and configuration steps. |
-| [Monitoring data reference](https://learn.microsoft.com/en-us/azure/machine-learning/monitor-azure-machine-learning-reference?view=azureml-api-2) | configuration | 0.70 | Monitoring data reference typically lists specific metric names, dimensions, and log schemas unique to AML, which are configuration/telemetry schema details. |
 | [Multiclass Neural Network](https://learn.microsoft.com/en-us/azure/machine-learning/component-reference/multiclass-neural-network?view=azureml-api-2) | configuration | 0.70 | Describes how to set up and parameterize the Multiclass Neural Network component in Azure ML designer, which is product-specific configuration information. |
 | [Network isolation in prompt flow](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/how-to-secure-prompt-flow?view=azureml-api-2) | security | 0.70 | The page is about securing Prompt flow with virtual networks and network isolation. Such content typically includes product-specific security configuration details (for example, required subnets, private endpoints, NSG rules, or identity/RBAC settings) that go beyond generic security concepts. It is focused on how to secure Prompt flow workloads in Azure Machine Learning, which aligns with the security sub-skill type. |
 | [Neural Network Regression](https://learn.microsoft.com/en-us/azure/machine-learning/component-reference/neural-network-regression?view=azureml-api-2) | configuration | 0.70 | Covers a concrete Azure ML neural network regression component with service-specific hyperparameters and configuration options, which qualify as expert configuration knowledge. |

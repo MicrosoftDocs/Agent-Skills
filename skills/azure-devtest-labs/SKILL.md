@@ -1,9 +1,9 @@
 ---
 name: azure-devtest-labs
-description: Expert knowledge for Azure DevTest Labs development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing DevTest Labs images, artifacts, ARM/REST automation, VM start/stop, or hub-spoke lab networks, and other Azure DevTest Labs related development tasks. Not for Azure Lab Services (use azure-lab-services), Azure Dev Box (use azure-dev-box), Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Desktop (use azure-virtual-desktop).
+description: Expert knowledge for Azure DevTest Labs development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing lab VM images, ARM/CI-CD automation, RBAC/Key Vault security, hub-spoke networking, or quotas, and other Azure DevTest Labs related development tasks. Not for Azure Lab Services (use azure-lab-services), Azure Dev Box (use azure-dev-box), Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Desktop (use azure-virtual-desktop).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-21"
+  generated_at: "2026-07-19"
   generator: "docs2skills/1.0.0"
 ---
 # Azure DevTest Labs Skill
@@ -30,8 +30,8 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L59-L63 | Enterprise-scale DevTest Labs architectures: hub-spoke design, network/security layout, governance, cost management, and best practices for large org lab deployments. |
 | Limits & Quotas | L64-L68 | Managing DevTest Labs limits and quotas, viewing current usage, and requesting or configuring quota increases for labs, VMs, and related resources. |
 | Security | L69-L86 | Securing DevTest Labs: identities, RBAC and granular policy permissions, secrets/Key Vault, disk/storage encryption, secure VM access (RDP Gateway, Bastion, browser), Trusted Launch, and security alerts. |
-| Configuration | L87-L109 | Configuring DevTest Labs environments and VMs: images, networks, policies, costs, tags, ARM templates, artifacts, activity logs, alerts, IPs, and resource groups. |
-| Integrations & Coding Patterns | L110-L128 | Automating DevTest Labs with ARM, PowerShell, CLI, REST, and Functions: user/VM management, VHD/custom image workflows, cross-lab import, reporting, and VM start/stop/start-order control. |
+| Configuration | L87-L108 | Configuring DevTest Labs environments and VMs: images, networks, policies, costs, tags, ARM templates, artifacts, activity logs, alerts, IPs, and resource groups. |
+| Integrations & Coding Patterns | L109-L128 | Automating DevTest Labs with ARM, PowerShell, CLI, Functions, and Automation: creating/importing VMs, managing images/VHDs, environments, users, VM start/stop, and cross-lab usage reporting. |
 | Deployment | L129-L135 | Guides for deploying and migrating DevTest Labs: ARM templates, CI/CD and Azure Pipelines integration, region moves, and handling Azure Basic Load Balancer retirement. |
 
 ### Troubleshooting
@@ -98,7 +98,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure cost tracking for Azure DevTest Labs with tags | https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-configure-cost-management |
 | Configure allowed Azure Marketplace images in DevTest Labs | https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-configure-marketplace-images |
 | Add and configure virtual networks for DevTest Labs | https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-configure-vnet |
-| Create DevTest Labs environments from ARM templates | https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-create-environment-from-arm |
 | Enable and manage licensed images in DevTest Labs | https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-enable-licensed-images |
 | Configure and use formulas for DevTest Labs VMs | https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-manage-formulas |
 | Configure Azure DevTest Labs policies for cost control | https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-set-lab-policy |
@@ -112,6 +111,7 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Automate adding DevTest Labs users via ARM, PowerShell, and CLI | https://learn.microsoft.com/en-us/azure/devtest-labs/automate-add-lab-user |
 | Create DevTest Labs custom images from VHD with PowerShell | https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-create-custom-image-from-vhd-using-powershell |
+| Create DevTest Labs environments from ARM templates | https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-create-environment-from-arm |
 | Upload VHDs to DevTest Labs storage using AzCopy | https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-upload-vhd-using-azcopy |
 | Upload VHDs to DevTest Labs with PowerShell | https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-upload-vhd-using-powershell |
 | Upload VHDs to DevTest Labs via Storage Explorer | https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-upload-vhd-using-storage-explorer |

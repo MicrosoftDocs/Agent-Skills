@@ -42,8 +42,8 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 71
+- **Updated Pages**: 0
+- **Unchanged**: 73
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-artifacts/azure-artifacts.csv`
 
@@ -61,13 +61,6 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 | *(Unclassified)* | 20 | 27.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [Delete and recover packages](https://learn.microsoft.com/en-us/azure/devops/artifacts/how-to/delete-and-recover-packages?view=azure-devops)
-  - Updated: 2025-09-04T21:03:00.000Z → 2026-07-10T01:04:00.000Z
-- [Project setup (NuGet.exe)](https://learn.microsoft.com/en-us/azure/devops/artifacts/nuget/nuget-exe?view=azure-devops)
-  - Updated: 2026-05-12T17:04:00.000Z → 2026-07-11T01:04:00.000Z
 
 ## Classified Pages
 

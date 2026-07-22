@@ -1,9 +1,9 @@
 ---
 name: azure-functions
-description: Expert knowledge for Azure Functions development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building HTTP/queue-triggered apps, Durable workflows, container-based Functions, or OpenAI/Dapr integrations, and other Azure Functions related development tasks. Not for Azure App Service (use azure-app-service), Azure Logic Apps (use azure-logic-apps), Azure Container Apps (use azure-container-apps), Azure Kubernetes Service (AKS) (use azure-kubernetes-service).
+description: Expert knowledge for Azure Functions development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building Functions with HTTP/storage/queues, Event Hubs/Service Bus, Durable workflows, containers, or Flex plans, and other Azure Functions related development tasks. Not for Azure App Service (use azure-app-service), Azure Logic Apps (use azure-logic-apps), Azure Container Apps (use azure-container-apps), Azure Kubernetes Service (AKS) (use azure-kubernetes-service).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-05"
+  generated_at: "2026-07-19"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Functions Skill
@@ -30,8 +30,8 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L100-L105 | Running Functions in Linux containers, Durable Functions design with Azure Storage, and hosting Functions on Azure Container Apps for scalable, container-based architectures. |
 | Limits & Quotas | L106-L113 | Details on Functions hosting limits: legacy and Flex Consumption plans, scaling behavior, concurrency and target-based scaling settings, and supported languages/versions. |
 | Security | L114-L130 | Securing Azure Functions: encryption at rest, secure storage, keys and identities, networking/VNet/private endpoints, SQL access, MCP servers, and App Service-based security controls. |
-| Configuration | L131-L170 | Configuring Azure Functions behavior, bindings, triggers, networking, runtimes, monitoring (App Insights/OpenTelemetry), and local tools/settings for different plans and languages. |
-| Integrations & Coding Patterns | L171-L277 | Configuring Azure Functions triggers/bindings to integrate with databases, messaging, storage, OpenAI, MCP, Dapr, SignalR, Web PubSub, Logic Apps, and other Azure/third‑party services. |
+| Configuration | L131-L170 | Configuring Azure Functions apps: runtime versions, plans, networking/IPs, host/app settings, local tools, monitoring/telemetry, and triggers/bindings for services like SQL, Cosmos DB, Event Hubs, and Service Bus. |
+| Integrations & Coding Patterns | L171-L277 | Patterns and how-tos for wiring Functions to external systems (HTTP, storage, messaging, databases, AI/OpenAI, MCP, Dapr, Redis, Kafka, etc.) via triggers and input/output bindings. |
 | Deployment | L278-L309 | Deploying and hosting Functions: provisioning plans (Consumption/Flex/Kubernetes), CI/CD pipelines, containers, slots, zip/package deployment, migrations, and language-specific publish methods. |
 
 ### Troubleshooting
@@ -154,13 +154,13 @@ This skill requires **network access** to fetch documentation content:
 | Configure host.json settings for Azure Functions v1 | https://learn.microsoft.com/en-us/azure/azure-functions/functions-host-json-v1 |
 | Configure Azure Functions app settings and behavior | https://learn.microsoft.com/en-us/azure/azure-functions/functions-how-to-use-azure-function-app-settings |
 | Configure NAT gateway for Azure Functions outbound IP | https://learn.microsoft.com/en-us/azure/azure-functions/functions-how-to-use-nat-gateway |
-| Configure Azure Functions Elastic Premium plan settings | https://learn.microsoft.com/en-us/azure/azure-functions/functions-premium-plan |
+| Configure Azure Functions Elastic Premium plan options | https://learn.microsoft.com/en-us/azure/azure-functions/functions-premium-plan |
 | Develop Azure Functions using legacy C# script (.csx) | https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-csharp |
 | Configure and code Azure Functions using PowerShell | https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-powershell |
 | Use Azure Functions Core Tools for local development | https://learn.microsoft.com/en-us/azure/azure-functions/functions-run-local |
 | Manage inbound and outbound IPs for Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/ip-addresses |
 | Configure OpenTelemetry distributed tracing for Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/monitor-functions-opentelemetry-distributed-tracing |
-| Reference for Azure Functions monitoring data schema | https://learn.microsoft.com/en-us/azure/azure-functions/monitor-functions-reference |
+| Reference Azure Functions monitoring data schema | https://learn.microsoft.com/en-us/azure/azure-functions/monitor-functions-reference |
 | Configure OpenTelemetry export for Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/opentelemetry-howto |
 | Register Azure Functions MCP servers in API Center | https://learn.microsoft.com/en-us/azure/azure-functions/register-mcp-server-api-center |
 | Configure Azure Functions serverless agents runtime | https://learn.microsoft.com/en-us/azure/azure-functions/scenario-serverless-agents-runtime |
@@ -231,7 +231,7 @@ This skill requires **network access** to fetch documentation content:
 | Implement MCP resource triggers in Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-mcp-resource-trigger |
 | Configure MCP tool trigger endpoints in Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-mcp-tool-trigger |
 | Use Azure Mobile Apps bindings in Azure Functions 1.x | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-mobile-apps |
-| Send push notifications with Notification Hubs output binding | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-notification-hubs |
+| Use Notification Hubs output bindings in Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-notification-hubs |
 | Configure Azure OpenAI extension for Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-openai |
 | Use Azure OpenAI assistant trigger in Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-openai-assistant-trigger |
 | Use Azure OpenAI assistant create output binding in Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-openai-assistantcreate-output |

@@ -1,9 +1,9 @@
 ---
 name: azure-managed-grafana
-description: Expert knowledge for Azure Managed Grafana development including troubleshooting, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring workspaces, Prometheus/AKS data sources, Entra auth, private endpoints, or AI Foundry dashboards, and other Azure Managed Grafana related development tasks. Not for Azure Monitor (use azure-monitor).
+description: Expert knowledge for Azure Managed Grafana development including troubleshooting, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when integrating Azure Managed Grafana with Prometheus/AKS, Azure Data Explorer, Entra auth, private endpoints, or HA deployments, and other Azure Managed Grafana related development tasks. Not for Azure Monitor (use azure-monitor), Azure App Service (use azure-app-service), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Virtual Machines (use azure-virtual-machines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-12"
+  generated_at: "2026-07-19"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Managed Grafana Skill
@@ -25,9 +25,9 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L35-L40 | Diagnosing and resolving common Azure Managed Grafana issues, including access, configuration, and private endpoint connectivity and DNS problems. |
-| Decision Making | L41-L48 | Guides for choosing and managing Azure Managed Grafana plans, migrating from other Grafana deployments or Azure tiers, and planning/upgrading between Grafana versions. |
+| Decision Making | L41-L48 | Planning and executing Grafana decisions: choosing/activating Enterprise plans, migrating from self‑hosted or Azure Grafana Essential, and upgrading Azure Managed Grafana (incl. v12). |
 | Limits & Quotas | L49-L55 | Service limits, supported regions, constraints, and how reporting/image rendering works in Azure Managed Grafana, including quotas and operational restrictions. |
-| Security | L56-L70 | Securing Managed Grafana: auth (API, users, Entra, roles, team sync), service accounts/tokens, private access/endpoints, outbound IPs, data encryption, and security best practices. |
+| Security | L56-L70 | Securing Managed Grafana: encryption, auth (Entra, tokens, service accounts), RBAC/roles, private endpoints, outbound IP control, team sync, and security best practices. |
 | Configuration | L71-L81 | Configuring Azure Managed Grafana workspaces: instance settings, Prometheus, data sources with managed identity, plugins, metrics/diagnostics, and SMTP email alert setup. |
 | Integrations & Coding Patterns | L82-L94 | Integrating Grafana with Azure AI agents and monitoring tools: MCP setup, AI Foundry dashboards, alerts, Prometheus/AKS, and Azure Data Explorer data sources. |
 | Deployment | L95-L98 | Designing highly available Azure Managed Grafana workspaces, including reliability features, SLAs, and enabling zone-redundant deployments for resiliency. |
@@ -44,7 +44,7 @@ This skill requires **network access** to fetch documentation content:
 | Activate and manage Grafana Enterprise plans in Azure | https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-grafana-enterprise |
 | Migrate self-hosted or cloud Grafana to Azure Managed Grafana | https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-migrate |
 | Plan migration from Azure Grafana Essential to Standard or Azure Monitor | https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-migrate-essential-service-tier |
-| Plan and execute upgrade from Grafana 11 to 12 in Azure Managed Grafana | https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-upgrade-grafana-12 |
+| Plan and perform Azure Managed Grafana 12 upgrade | https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-upgrade-grafana-12 |
 
 ### Limits & Quotas
 | Topic | URL |

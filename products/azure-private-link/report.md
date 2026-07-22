@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-06-28'
+generated_at: '2026-07-19'
 category_descriptions:
   limits-quotas: Details on Private Link/Endpoint capacity limits, per‑VNet scaling
     (High Scale), resource availability checks, and common behaviors/FAQs around quotas
     and constraints
-  configuration: 'Configuring Private Link/Endpoint behavior: subnet and service network
-    policies, DNS records, SNAT bypass, routing, NSPs, diagnostics, and monitoring
-    data for secure connectivity.'
+  configuration: 'Configuring Private Link and Private Endpoints: NSP cross-perimeter
+    links, routing, subnet/network policies, DNS, SNAT, diagnostics, monitoring, and
+    CLI-based management.'
   security: RBAC setup for Private Link and Network Security Perimeters, security
     best practices, and inspecting/controlling Private Endpoint traffic with Azure
     Firewall.
@@ -21,13 +21,14 @@ category_descriptions:
     with on-premises or hybrid networks
 skill_description: Expert knowledge for Azure Private Link development including best
   practices, decision making, architecture & design patterns, limits & quotas, security,
-  and configuration. Use when designing Private Endpoints, DNS zones, Private Resolver,
-  NSGs/NSPs, or Azure Firewall inspection, and other Azure Private Link related development
-  tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual
-  Network Manager (use azure-virtual-network-manager), Azure VPN Gateway (use azure-vpn-gateway),
-  Azure ExpressRoute (use azure-expressroute).
-use_when: Use when designing Private Endpoints, DNS zones, Private Resolver, NSGs/NSPs,
-  or Azure Firewall inspection, and other Azure Private Link related development tasks.
+  and configuration. Use when designing Private Endpoints, NSP cross-perimeter links,
+  DNS/SNAT routing, Azure Firewall traffic control, or Azure Private Resolver setups,
+  and other Azure Private Link related development tasks. Not for Azure Virtual Network
+  (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager),
+  Azure VPN Gateway (use azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute).
+use_when: Use when designing Private Endpoints, NSP cross-perimeter links, DNS/SNAT
+  routing, Azure Firewall traffic control, or Azure Private Resolver setups, and other
+  Azure Private Link related development tasks.
 confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), Azure
   Virtual Network Manager (use azure-virtual-network-manager), Azure VPN Gateway (use
   azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute).
@@ -36,14 +37,14 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ## Summary
 
-- **Total Pages**: 49
-- **Fetched**: 49
+- **Total Pages**: 51
+- **Fetched**: 51
 - **Fetch Failed**: 0
-- **Classified**: 20
-- **Unclassified**: 29
+- **Classified**: 21
+- **Unclassified**: 30
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 2
 - **Updated Pages**: 0
 - **Unchanged**: 49
 - **Deleted Pages**: 0
@@ -55,13 +56,18 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 |------|-------|------------|
 | architecture-patterns | 1 | 2.0% |
 | best-practices | 1 | 2.0% |
-| configuration | 9 | 18.4% |
-| decision-making | 2 | 4.1% |
-| limits-quotas | 3 | 6.1% |
-| security | 4 | 8.2% |
-| *(Unclassified)* | 29 | 59.2% |
+| configuration | 10 | 19.6% |
+| decision-making | 2 | 3.9% |
+| limits-quotas | 3 | 5.9% |
+| security | 4 | 7.8% |
+| *(Unclassified)* | 30 | 58.8% |
 
 ## Changes
+
+### New Pages
+
+- [What are network security perimeter links?](https://learn.microsoft.com/en-us/azure/private-link/perimeter-links-overview)
+- [Configure a perimeter link between network security perimeters](https://learn.microsoft.com/en-us/azure/private-link/configure-perimeter-link)
 
 ## Classified Pages
 
@@ -74,6 +80,7 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Secure Private Link deployment](https://learn.microsoft.com/en-us/azure/private-link/secure-private-link) | security | 0.78 | The article is explicitly about security recommendations for Azure Private Link deployments. These are product-specific security best practices (for example, how to securely configure private endpoints, DNS, access controls, and network policies for Private Link) that go beyond generic security concepts. It focuses on concrete, Azure-Private-Link-specific guidance, which fits the 'security' sub-skill type and qualifies as expert knowledge. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/private-link/private-link-faq) | limits-quotas | 0.72 | The FAQ for Azure Private Link typically includes product-specific numeric constraints (for example, maximum number of private endpoints per virtual network, per subscription, or per Private Link service; supported regions; and other quantified behaviors). These are exact limits and quotas that are unlikely to be reliably known from model pretraining and are needed for precise planning and implementation. |
 | [Availability](https://learn.microsoft.com/en-us/azure/private-link/availability) | limits-quotas | 0.70 | Describes which Azure services support Private Link; typically implemented as a service support/availability matrix, which is product-specific reference data not inferable from training. |
+| [Configure a perimeter link between network security perimeters](https://learn.microsoft.com/en-us/azure/private-link/configure-perimeter-link) | configuration | 0.70 | Configuration-focused article that teaches how to set up a perimeter link between two network security perimeters. Such how-to configuration pages typically include product-specific settings (e.g., link properties, allowed values, required parameters, CLI/PowerShell flags) that an LLM would not know from training, fitting the configuration sub-skill. |
 | [Cost optimization](https://learn.microsoft.com/en-us/azure/private-link/private-link-cost-optimization) | decision-making | 0.70 | Cost optimization guidance for a specific service usually includes scenario-based recommendations and trade-offs between security and cost, qualifying as decision-making content. |
 | [Disable SNAT for traffic through NVA](https://learn.microsoft.com/en-us/azure/private-link/private-link-disable-snat) | configuration | 0.70 | Describes enabling SNAT bypass via a specific tag on NVA VMs; this is product-specific configuration behavior with named settings that an LLM is unlikely to know from training. |
 | [Disable network policies for a Private Link service](https://learn.microsoft.com/en-us/azure/private-link/disable-private-link-service-network-policy) | configuration | 0.70 | Explains the required subnet setting privateLinkServiceNetworkPolicies for Azure Private Link service, including when it must be disabled and how portal vs. scripted deployments handle it. This is product-specific configuration knowledge tied to a named setting rather than generic networking concepts. |
@@ -107,6 +114,7 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Create a private endpoint - PowerShell](https://learn.microsoft.com/en-us/azure/private-link/create-private-endpoint-powershell) | 0.30 | PowerShell quickstart; primarily step-by-step commands, not a catalog of parameters, limits, or troubleshooting mappings. |
 | [Export private endpoint DNS records](https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-export-dns) | 0.30 | Tutorial on exporting DNS records via portal; operational steps but no detailed configuration parameter tables or numeric constraints. |
 | [Monitor Private Link](https://learn.microsoft.com/en-us/azure/private-link/monitor-private-link) | 0.30 | Monitoring overview for Azure Private Link; describes available metrics/logs and tools but summary does not indicate specific numeric limits, configuration parameter tables, or error-code-based troubleshooting. Likely general guidance LLM already knows. |
+| [What are network security perimeter links?](https://learn.microsoft.com/en-us/azure/private-link/perimeter-links-overview) | 0.30 | Page is an overview of perimeter links (cross-perimeter connections) and supported regions/services during preview; summary indicates conceptual/feature overview without clear evidence of numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. |
 | [Connect to a SQL server - Azure CLI](https://learn.microsoft.com/en-us/azure/private-link/tutorial-private-endpoint-sql-cli) | 0.25 | Tutorial for connecting to Azure SQL via Private Endpoint using CLI; scenario walkthrough rather than reference limits, configuration matrices, or troubleshooting. |
 | [Create a network security perimeter - Azure CLI](https://learn.microsoft.com/en-us/azure/private-link/create-network-security-perimeter-cli) | 0.25 | CLI quickstart for network security perimeter; tutorial-style content without expert-level configuration matrices or limits. |
 | [Create a network security perimeter - Azure portal](https://learn.microsoft.com/en-us/azure/private-link/create-network-security-perimeter-portal) | 0.25 | Portal quickstart for creating a network security perimeter; procedural steps without detailed RBAC role lists, config parameter tables, or numeric limits. |

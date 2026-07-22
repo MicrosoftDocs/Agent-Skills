@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-12'
+generated_at: '2026-07-19'
 category_descriptions:
   troubleshooting: 'Troubleshooting Azure Quantum provider issues: diagnosing job
     failures and support/escalation policies and limits for IonQ, Quantinuum, and
@@ -52,10 +52,10 @@ confusable_not_for: Not for Azure HDInsight (use azure-hdinsight), Azure Databri
 - **Unclassified**: 96
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 0
+- **New Pages**: 0
+- **Updated Pages**: 1
 - **Unchanged**: 135
-- **Deleted Pages**: 1
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-quantum/azure-quantum.csv`
 
 ## Classification Statistics
@@ -75,13 +75,10 @@ confusable_not_for: Not for Azure HDInsight (use azure-hdinsight), Azure Databri
 
 ## Changes
 
-### New Pages
+### Updated Pages
 
-- [QIR target profiles](https://learn.microsoft.com/en-us/azure/quantum/quantum-computing-target-profiles)
-
-### Deleted Pages
-
-- ~~Types of target profiles~~ (https://learn.microsoft.com/en-us/azure/quantum/quantum-computing-target-profiles)
+- [Quantum Development Kit overview](https://learn.microsoft.com/en-us/azure/quantum/qdk-main-overview)
+  - Updated: 2026-04-28T17:28:00.000Z → 2026-07-15T22:07:00.000Z
 
 ## Classified Pages
 
@@ -215,7 +212,7 @@ confusable_not_for: Not for Azure HDInsight (use azure-hdinsight), Azure Databri
 | [Overview of QDK simulators](https://learn.microsoft.com/en-us/azure/quantum/simulators-overview-qdk) | 0.10 | High-level overview of QDK quantum simulators; no specific limits, configs, error codes, or product-unique patterns with quantified guidance. |
 | [Q#](https://learn.microsoft.com/en-us/azure/quantum/qsharp-overview) | 0.10 | High-level introduction to Q# and program structure; conceptual overview without detailed configuration, limits, or troubleshooting content. |
 | [QDK language support overview](https://learn.microsoft.com/en-us/azure/quantum/qdk-language-support-overview) | 0.10 | High-level overview of quantum language support in the QDK; describes supported languages and workflows without detailed configuration parameters, limits, or troubleshooting mappings. |
-| [Quantum Development Kit overview](https://learn.microsoft.com/en-us/azure/quantum/qdk-main-overview) | 0.10 | Main landing/overview page for the Quantum Development Kit; high-level description and navigation, not detailed technical limits, configuration, or troubleshooting. |
+| [Quantum Development Kit overview](https://learn.microsoft.com/en-us/azure/quantum/qdk-main-overview) | 0.10 | Main landing/overview page for the Quantum Development Kit with high-level description and links; no detailed limits, configuration tables, error codes, or product-specific numeric guidance. |
 | [Quantum entanglement](https://learn.microsoft.com/en-us/azure/quantum/concepts-entanglement) | 0.10 | Conceptual overview of entanglement and correlations; does not provide product-specific settings, limits, or troubleshooting flows. |
 | [Self-consistent field calculations and active space selection](https://learn.microsoft.com/en-us/azure/quantum/overview-qdk-chem-scf-active-space) | 0.10 | Explains self-consistent field theory conceptually; not product-specific configuration or operational guidance. |
 | [The circuit editor](https://learn.microsoft.com/en-us/azure/quantum/qdk-circuit-editor) | 0.10 | Introduces the circuit editor feature and how to build/visualize circuits; appears to be a conceptual/usage overview without detailed configuration parameters, limits, or troubleshooting mappings. |

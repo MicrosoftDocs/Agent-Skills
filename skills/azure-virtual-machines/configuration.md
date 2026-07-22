@@ -57,7 +57,7 @@
 | Configure NVIDIA GPU Driver Extension on Linux VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/hpccompute-gpu-linux |
 | Configure NVIDIA GPU Driver Extension on Windows VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/hpccompute-gpu-windows |
 | Configure Microsoft Antimalware Extension for Windows VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/iaas-antimalware-windows |
-| Configure Azure Key Vault VM extension on Linux VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/key-vault-linux |
+| Configure Azure Key Vault VM extension on Linux | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/key-vault-linux |
 | Configure Azure Key Vault VM extension on Windows | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/key-vault-windows |
 | Configure Qualys Cloud Agent extension on Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/qualys |
 | Configure Salt Minion VM Extension for Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/salt-minion |
@@ -73,12 +73,14 @@
 | Understand HX-series VM architecture and topology | https://learn.microsoft.com/en-us/azure/virtual-machines/hx-series-overview |
 | Install Azure VM watch via ARM, PowerShell, or CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/install-vm-watch |
 | Attach persistent data disks to Linux VMs using CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/add-disk |
-| Attach new or existing data disks to Linux VMs in portal | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/attach-disk-portal |
 | Install AMD GPU drivers on Azure N-series Linux VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/azure-n-series-amd-gpu-driver-linux-installation-guide |
 | Create and upload CentOS-based VHDs to Azure | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/create-upload-centos |
 | Prepare generic Linux systems for Azure imaging | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/create-upload-generic |
 | Create and upload OpenBSD images for Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/create-upload-openbsd |
 | Prepare Debian Linux VHD images for Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/debian-create-upload-vhd |
+| Create and encrypt Linux VM using Azure CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/disk-encryption-cli-quickstart |
+| Encrypt Linux VM disks via Azure portal | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/disk-encryption-portal-quickstart |
+| Create and encrypt Linux VM with PowerShell | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/disk-encryption-powershell-quickstart |
 | Use Flatcar Container Linux VHDs in Azure | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/flatcar-create-upload-vhd |
 | Configure Azure VM Image Builder with Compute Gallery | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/image-builder |
 | Author Bicep and ARM templates for Azure Image Builder | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/image-builder-json |
@@ -100,7 +102,7 @@
 | Manage and restore Azure VMs from restore points | https://learn.microsoft.com/en-us/azure/virtual-machines/manage-restore-points |
 | Export Compute Gallery image versions to managed disks | https://learn.microsoft.com/en-us/azure/virtual-machines/managed-disk-from-image-version |
 | Configure Marketplace purchase plans for gallery images | https://learn.microsoft.com/en-us/azure/virtual-machines/marketplace-images |
-| Reference monitoring data for Azure Virtual Machines | https://learn.microsoft.com/en-us/azure/virtual-machines/monitor-vm-reference |
+| Reference monitoring metrics and logs for Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/monitor-vm-reference |
 | Convert Azure Linux VM disks from SCSI to NVMe | https://learn.microsoft.com/en-us/azure/virtual-machines/nvme-linux |
 | Configure and enable NVMe on Azure virtual machines | https://learn.microsoft.com/en-us/azure/virtual-machines/nvme-overview |
 | Configure InfiniBand networking on Azure HPC VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/setup-infiniband |
@@ -121,8 +123,12 @@
 | Configure VM watch Collectors Suite for Azure VM health checks | https://learn.microsoft.com/en-us/azure/virtual-machines/vm-watch-collector-suite |
 | Attach data disks to Windows VMs using PowerShell | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/attach-disk-ps |
 | Attach managed data disks to Windows VMs in portal | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/attach-managed-disk-portal |
+| Recreate Azure VM to change availability set | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/change-availability-set |
 | Find Marketplace image URNs and plans with PowerShell | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/cli-ps-findimage |
 | Configure WinRM connectivity for Azure Windows VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/connect-winrm |
+| Create and encrypt Windows VM using Azure CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/disk-encryption-cli-quickstart |
+| Encrypt Windows VM disks via Azure portal | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/disk-encryption-portal-quickstart |
+| Create and encrypt Windows VM with PowerShell | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/disk-encryption-powershell-quickstart |
 | Configure Azure Diagnostics Extension for Windows VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/extensions-diagnostics |
 | Set up time sync for AD domain Windows VMs in Azure | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/external-ntpsource-configuration |
 | Configure AMD GPU drivers on Azure N-series Windows VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/n-series-amd-driver-setup |

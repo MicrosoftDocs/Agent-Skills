@@ -3,7 +3,7 @@ name: azure-anomaly-detector
 description: Expert knowledge for Azure AI Anomaly Detector development including troubleshooting, best practices, limits & quotas, configuration, and deployment. Use when tuning Docker-based Anomaly Detector, ACI or IoT Edge deployments, univariate/multivariate APIs, or service limits, and other Azure AI Anomaly Detector related development tasks. Not for Azure AI Metrics Advisor (use azure-metrics-advisor), Azure Monitor (use azure-monitor), Azure Machine Learning (use azure-machine-learning).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-07"
+  generated_at: "2026-07-19"
   generator: "docs2skills/1.0.0"
 ---
 # Azure AI Anomaly Detector Skill

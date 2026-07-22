@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-24'
+generated_at: '2026-07-19'
 category_descriptions:
   security: Managing access to Azure Table data using Microsoft Entra ID and Azure
     RBAC, including assigning roles and configuring identity-based authorization.
@@ -38,13 +38,13 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure Blob St
 - **Total Pages**: 15
 - **Fetched**: 15
 - **Fetch Failed**: 0
-- **Classified**: 13
-- **Unclassified**: 2
+- **Classified**: 12
+- **Unclassified**: 3
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 15
+- **Updated Pages**: 1
+- **Unchanged**: 14
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-table-storage/azure-table-storage.csv`
 
@@ -54,13 +54,18 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure Blob St
 |------|-------|------------|
 | architecture-patterns | 6 | 40.0% |
 | best-practices | 1 | 6.7% |
-| configuration | 2 | 13.3% |
+| configuration | 1 | 6.7% |
 | integrations | 1 | 6.7% |
 | limits-quotas | 1 | 6.7% |
 | security | 2 | 13.3% |
-| *(Unclassified)* | 2 | 13.3% |
+| *(Unclassified)* | 3 | 20.0% |
 
 ## Changes
+
+### Updated Pages
+
+- [Monitor Table Storage](https://learn.microsoft.com/en-us/azure/storage/tables/monitor-table-storage)
+  - Updated: 2024-02-14T12:15:00.000Z → 2026-07-17T17:52:00.000Z
 
 ## Classified Pages
 
@@ -77,7 +82,6 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure Blob St
 | [Guidelines for table design](https://learn.microsoft.com/en-us/azure/storage/tables/table-storage-design-guidelines) | architecture-patterns | 0.75 | Guidelines for read/write-efficient table designs specific to Azure Table service; focuses on design patterns and trade-offs. |
 | [Design scalable and performant tables](https://learn.microsoft.com/en-us/azure/storage/tables/table-storage-design) | architecture-patterns | 0.70 | Deep design guidance on partitions, entity group transactions, capacity and cost trade-offs; Table-storage-specific patterns and decisions. |
 | [Modeling relationships](https://learn.microsoft.com/en-us/azure/storage/tables/table-storage-design-modeling) | architecture-patterns | 0.70 | Translates domain relationships (one-to-many, inheritance) into Table storage-specific modeling patterns; architecture/design guidance. |
-| [Monitor Table Storage](https://learn.microsoft.com/en-us/azure/storage/tables/monitor-table-storage) | configuration | 0.65 | Service-specific monitoring setup using Azure Monitor, likely including metric/log categories and configuration options; fits configuration of monitoring features. |
 | [PowerShell](https://learn.microsoft.com/en-us/azure/storage/tables/table-storage-how-to-use-powershell) | integrations | 0.65 | PowerShell-focused operational guide for Azure Table storage with product-specific cmdlets and parameters; fits integrations & coding patterns more than generic how-to. |
 
 ## Unclassified Pages
@@ -85,4 +89,5 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure Blob St
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
 | [Azure Table storage overview](https://learn.microsoft.com/en-us/azure/storage/tables/table-storage-overview) | 0.20 | High-level introduction to Azure Table storage; conceptual overview without detailed limits, configs, or error mappings. |
+| [Monitor Table Storage](https://learn.microsoft.com/en-us/azure/storage/tables/monitor-table-storage) | 0.20 | Page appears to be a general monitoring overview for Azure Table Storage using Azure Monitor, without clear evidence of specific numeric limits, detailed configuration parameter tables, error-code-based troubleshooting flows, or other product-specific expert details as defined by the sub-skill types. |
 | [Create a table in the Azure portal](https://learn.microsoft.com/en-us/azure/storage/tables/table-storage-quickstart-portal) | 0.10 | Quickstart for creating a table via portal; step-by-step tutorial without configuration matrices, limits, or advanced patterns. |

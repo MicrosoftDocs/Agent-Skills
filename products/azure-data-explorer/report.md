@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-07-05'
+generated_at: '2026-07-19'
 category_descriptions:
-  security: 'Securing ADX clusters: auth/RBAC, managed identities, encryption, keys,
-    policies, network/private endpoints, outbound/public access control, and data
-    privacy (purge) configuration.'
+  security: 'Securing ADX clusters: auth and RBAC, managed identities, encryption/CMK,
+    network/private endpoints, outbound/public access control, policies, locks, and
+    data purging.'
   limits-quotas: 'Cluster limits and behaviors: free cluster quotas, auto-stop, safe
     delete/recover, ingestion file size and invalid data handling, and supported data/compression
     formats.'
@@ -25,18 +25,18 @@ category_descriptions:
     private endpoint, ingestion, and DB/table operation errors, including interpreting
     ingestion error codes and using Resource Health.
   configuration: 'Configuring ADX environments: deployment scripts, policies, cross-tenant
-    connections, emulator setup, schema sync, retention/cache, monitoring, web UI
-    settings, and T‑SQL/KQL usage.'
+    connections, emulator setup, language extensions, monitoring, schema sync, T-SQL,
+    retention/cache, and web UI settings.'
 skill_description: Expert knowledge for Azure Data Explorer development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when configuring ADX auth/network, automating cluster deployment, tuning ingestion/queries,
-  or integrating external tools, and other Azure Data Explorer related development
-  tasks. Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure HDInsight
-  (use azure-hdinsight), Azure Databricks (use azure-databricks), Azure Stream Analytics
-  (use azure-stream-analytics).
-use_when: Use when configuring ADX auth/network, automating cluster deployment, tuning
+  Use when configuring ADX auth/networking, automating cluster deployment, tuning
   ingestion/queries, or integrating external tools, and other Azure Data Explorer
+  related development tasks. Not for Azure Synapse Analytics (use azure-synapse-analytics),
+  Azure HDInsight (use azure-hdinsight), Azure Databricks (use azure-databricks),
+  Azure Stream Analytics (use azure-stream-analytics).
+use_when: Use when configuring ADX auth/networking, automating cluster deployment,
+  tuning ingestion/queries, or integrating external tools, and other Azure Data Explorer
   related development tasks.
 confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics),
   Azure HDInsight (use azure-hdinsight), Azure Databricks (use azure-databricks),
@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 198
+- **Updated Pages**: 2
+- **Unchanged**: 196
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-explorer/azure-data-explorer.csv`
 
@@ -75,6 +75,13 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | *(Unclassified)* | 92 | 46.5% |
 
 ## Changes
+
+### Updated Pages
+
+- [Authenticate external tables with managed identities](https://learn.microsoft.com/en-us/azure/data-explorer/external-tables-managed-identities)
+  - Updated: 2024-05-21T11:04:00.000Z → 2026-07-13T22:03:00.000Z
+- [Monitoring data reference](https://learn.microsoft.com/en-us/azure/data-explorer/monitor-data-explorer-reference)
+  - Updated: 2026-04-16T08:00:00.000Z → 2026-04-16T22:02:00.000Z
 
 ## Classified Pages
 
@@ -107,13 +114,13 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | [Deal with duplicate data](https://learn.microsoft.com/en-us/azure/data-explorer/dealing-with-duplicates) | best-practices | 0.75 | Article explicitly outlines approaches to deal with duplicates in ADX; this is product-specific guidance and likely includes concrete KQL patterns and ingestion strategies that go beyond generic theory. |
 | [Multitenant solutions](https://learn.microsoft.com/en-us/azure/data-explorer/multi-tenant) | architecture-patterns | 0.74 | The page compares different multitenant architectures specific to Azure Data Explorer, describing when to use each approach and their trade-offs. This is product-specific architectural decision guidance rather than a generic overview, fitting the architecture-patterns sub-skill. |
 | [Telegraf](https://learn.microsoft.com/en-us/azure/data-explorer/ingest-data-telegraf) | integrations | 0.74 | Details Telegraf output plugin for Azure Data Explorer with plugin-specific configuration keys, parameter names, and constraints that are not generic knowledge. |
+| [Authenticate external tables with managed identities](https://learn.microsoft.com/en-us/azure/data-explorer/external-tables-managed-identities) | security | 0.72 | The article provides product-specific security configuration for using managed identities with Azure Data Explorer external tables, including exact Kusto commands, required properties (such as authentication type values, identity references, and connection settings), and how to wire up managed identities to external storage/SQL sources. This is concrete, implementation-focused security guidance rather than a conceptual overview. |
 | [Connect with JDBC](https://learn.microsoft.com/en-us/azure/data-explorer/connect-jdbc) | integrations | 0.72 | Details JDBC connection setup using TDS endpoint with supported versions and connection string parameters, which are product-specific integration details. |
 | [Connect with ODBC](https://learn.microsoft.com/en-us/azure/data-explorer/connect-odbc) | integrations | 0.72 | Explains using SQL Server ODBC driver with Azure Data Explorer, including DSN/connection string parameters and protocol specifics unique to this product. |
 | [OpenTelemetry](https://learn.microsoft.com/en-us/azure/data-explorer/open-telemetry-connector) | integrations | 0.72 | Connector article with product-specific OpenTelemetry collector receiver/processor/exporter settings and Azure Data Explorer sink configuration parameters that go beyond generic knowledge. |
 | [Optimize for high concurrency](https://learn.microsoft.com/en-us/azure/data-explorer/high-concurrency) | best-practices | 0.72 | High-concurrency optimization article likely includes product-specific recommendations (cluster sizing, cache policy, query patterns) and edge cases tailored to Azure Data Explorer. |
 | [Add cluster principal](https://learn.microsoft.com/en-us/azure/data-explorer/add-cluster-principal) | security | 0.70 | Covers adding principals via C#, Python, and ARM. This is security/identity configuration with API-level details for managing access. |
 | [Add database principal](https://learn.microsoft.com/en-us/azure/data-explorer/add-database-principal) | security | 0.70 | Similar to cluster principals but at database scope; involves security roles and access configuration via SDKs/ARM. |
-| [Authenticate external tables with managed identities](https://learn.microsoft.com/en-us/azure/data-explorer/external-tables-managed-identities) | security | 0.70 | Shows how to configure external tables to use managed identities for access; product-specific auth configuration. |
 | [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/data-explorer/policy-reference) | security | 0.70 | Policy reference lists specific built-in policy definitions, names, and effects for ADX resources, which are security/governance configuration artifacts. |
 | [Best practices for Power BI](https://learn.microsoft.com/en-us/azure/data-explorer/power-bi-best-practices) | best-practices | 0.70 | Explicitly a best-practices article for a specific integration (Power BI with Azure Data Explorer). Such docs typically include concrete recommendations (query patterns, DirectQuery vs import, model design) that are product- and integration-specific and go beyond generic BI advice. |
 | [Cluster encryption overview](https://learn.microsoft.com/en-us/azure/data-explorer/cluster-encryption-overview) | security | 0.70 | Describes specific encryption models for data at rest and cached data; product-specific security configuration. |
@@ -137,7 +144,7 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | [Managed identities overview](https://learn.microsoft.com/en-us/azure/data-explorer/managed-identities-overview) | security | 0.70 | Explains managed identity usage patterns for accessing other Azure resources; includes product-specific security/auth configuration. |
 | [Migrate cluster to support availability zones](https://learn.microsoft.com/en-us/azure/data-explorer/migrate-cluster-to-multiple-availability-zone) | deployment | 0.70 | The article provides a step-by-step migration procedure for enabling multiple availability zones on an existing Azure Data Explorer cluster, including platform-specific requirements and constraints around regions and zone support. This is a product-specific deployment/migration pattern rather than a generic concept, fitting the deployment sub-skill. |
 | [Migrate from Elasticsearch](https://learn.microsoft.com/en-us/azure/data-explorer/migrate-elasticsearch-to-azure-data-explorer) | decision-making | 0.70 | Migration guide with concrete steps and mappings from Elasticsearch schema and tooling (Logstash) to Azure Data Explorer. |
-| [Monitoring data reference](https://learn.microsoft.com/en-us/azure/data-explorer/monitor-data-explorer-reference) | configuration | 0.70 | Monitoring reference pages for Azure services typically list all available metrics, dimensions, log categories, and their exact names and semantics for Azure Monitor. These are product-specific configuration and reference details (metric names, log table names, dimensions, and how to use them) that an LLM is unlikely to know reliably from training. This fits the configuration sub-skill because it is a structured reference for monitoring-related settings and signals rather than conceptual guidance. |
+| [Monitoring data reference](https://learn.microsoft.com/en-us/azure/data-explorer/monitor-data-explorer-reference) | configuration | 0.70 | Monitoring reference pages for Azure services typically list detailed metric names, dimensions, log categories, and diagnostic setting options specific to the service. These are configuration-like details (e.g., which metrics/logs are available, their exact names, and how they map to Azure Monitor) that are not generally memorized by LLMs and are unique to Azure Data Explorer monitoring. This fits the configuration sub-skill as it provides concrete parameter names and options rather than conceptual guidance. |
 | [Network security overview](https://learn.microsoft.com/en-us/azure/data-explorer/security-network-overview) | security | 0.70 | Describes product-specific network security options (private endpoints, access models) and how to apply them. |
 | [Notebooks with Kqlmagic](https://learn.microsoft.com/en-us/azure/data-explorer/kqlmagic) | integrations | 0.70 | Kqlmagic integration article will include magic command syntax, connection parameters, and combined Python/KQL patterns that are specific to this ADX integration. |
 | [Power Automate connector](https://learn.microsoft.com/en-us/azure/data-explorer/flow) | integrations | 0.70 | Connector article will enumerate actions, triggers, authentication requirements, and possibly limits specific to the ADX Power Automate connector—an integration-focused, parameterized API surface. |

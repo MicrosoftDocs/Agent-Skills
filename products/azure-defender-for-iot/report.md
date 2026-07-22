@@ -53,10 +53,10 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 - **Unclassified**: 61
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 8
-- **Unchanged**: 171
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 180
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-defender-for-iot/azure-defender-for-iot.csv`
 
 ## Classification Statistics
@@ -75,33 +75,6 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | *(Unclassified)* | 61 | 33.9% |
 
 ## Changes
-
-### New Pages
-
-- [Licenses](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/license-and-trial-license-extention)
-
-### Updated Pages
-
-- [Onboard and activate a virtual OT sensor](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/tutorial-onboarding)
-  - Updated: 2026-04-28T17:57:00.000Z → 2026-07-05T12:34:00.000Z
-- [Add an OT plan to your Azure subscription](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/getting-started)
-  - Updated: 2026-04-28T17:57:00.000Z → 2026-07-05T12:34:00.000Z
-- [Subscription billing](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/billing)
-  - Updated: 2026-04-28T17:57:00.000Z → 2026-07-05T12:34:00.000Z
-- [OT deployment path](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/ot-deploy/ot-deploy-path)
-  - Updated: 2026-04-28T17:57:00.000Z → 2026-07-05T12:34:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/best-practices/plan-corporate-monitoring)
-  - Updated: 2026-04-28T17:57:00.000Z → 2026-07-05T12:34:00.000Z
-- [Manage OT licenses](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-manage-subscriptions)
-  - Updated: 2026-06-23T22:34:00.000Z → 2026-07-05T12:34:00.000Z
-- [Manage enterprise IoT security monitoring](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/manage-subscriptions-enterprise)
-  - Updated: 2026-06-23T22:34:00.000Z → 2026-07-05T12:34:00.000Z
-- [What's new archive](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/whats-new-archive)
-  - Updated: 2026-04-28T17:57:00.000Z → 2026-07-05T12:34:00.000Z
-
-### Deleted Pages
-
-- ~~Licenses and the trial license~~ (https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/license-and-trial-license-extention)
 
 ## Classified Pages
 

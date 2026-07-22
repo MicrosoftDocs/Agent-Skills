@@ -3,7 +3,7 @@ name: azure-automation
 description: Expert knowledge for Azure Automation development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building Azure Automation runbooks, DSC/State Configuration, Hybrid Runbook Workers, Private Link, or AMA-based Change Tracking, and other Azure Automation related development tasks. Not for Azure Functions (use azure-functions), Azure Logic Apps (use azure-logic-apps), Azure Scheduler (use azure-scheduler), Azure Update Manager (use azure-update-manager).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-12"
+  generated_at: "2026-07-19"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Automation Skill
@@ -31,7 +31,7 @@ This skill requires **network access** to fetch documentation content:
 | Security | L73-L93 | Securing Automation accounts: identities (system/user-assigned), RBAC, auth methods, encryption, certificates/credentials, Private Link, Azure Policy, and Terraform-based secure provisioning. |
 | Configuration | L94-L137 | Configuring Azure Automation runbooks, DSC/State Configuration, Hybrid Runbook Workers, schedules, modules/packages, alerts, policies, and integrations (VS Code, source control, ARM, Azure Monitor). |
 | Integrations & Coding Patterns | L138-L150 | Patterns for integrating runbooks with AWS, ARM/SQL/Office 365, webhooks, email (SendGrid), Azure Monitor logging, and using the graphical runbook SDK with managed identities |
-| Deployment | L151-L159 | Guides for deploying resilient Automation accounts, setting up disaster recovery, and installing/configuring Hybrid Runbook Workers (Windows/Linux, agent- and extension-based) plus DSC/Chocolatey CI/CD. |
+| Deployment | L151-L157 | Guides for deploying resilient Automation accounts, setting up disaster recovery, and installing/configuring Hybrid Runbook Workers (Windows/Linux, agent- and extension-based) plus DSC/Chocolatey CI/CD. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -151,8 +151,6 @@ This skill requires **network access** to fetch documentation content:
 ### Deployment
 | Topic | URL |
 |-------|-----|
-| Use availability zones for resilient Azure Automation deployments | https://learn.microsoft.com/en-us/azure/automation/automation-availability-zones |
-| Plan disaster recovery for Azure Automation accounts | https://learn.microsoft.com/en-us/azure/automation/automation-disaster-recovery |
 | Set up continuous deployment with DSC and Chocolatey | https://learn.microsoft.com/en-us/azure/automation/automation-dsc-cd-chocolatey |
 | Deploy Linux Hybrid Runbook Worker agent | https://learn.microsoft.com/en-us/azure/automation/automation-linux-hrw-install |
 | Deploy agent-based Windows Hybrid Runbook Workers in Automation | https://learn.microsoft.com/en-us/azure/automation/automation-windows-hrw-install |

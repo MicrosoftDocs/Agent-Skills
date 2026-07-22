@@ -1,9 +1,9 @@
 ---
 name: azure-network-watcher
-description: Expert knowledge for Azure Network Watcher development including troubleshooting, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when configuring Connection Monitor, NSG/VNet flow logs, packet capture, Traffic Analytics/KQL, or Sentinel integrations, and other Azure Network Watcher related development tasks. Not for Azure Monitor (use azure-monitor), Azure Virtual Network (use azure-virtual-network), Azure Networking (use azure-networking), Azure Virtual Network Manager (use azure-virtual-network-manager).
+description: Expert knowledge for Azure Network Watcher development including troubleshooting, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when configuring Connection Monitor, NSG/VNet flow logs, packet capture, Traffic Analytics, or Sentinel integrations, and other Azure Network Watcher related development tasks. Not for Azure Monitor (use azure-monitor), Azure Networking (use azure-networking), Azure Virtual Network (use azure-virtual-network), Azure Firewall (use azure-firewall).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-28"
+  generated_at: "2026-07-19"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Network Watcher Skill
@@ -24,7 +24,7 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L34-L44 | Diagnosing and fixing Azure network issues: outbound connectivity, NSG/admin rules, and VPN gateway/on-premises connectivity, including automation and CLI/PowerShell-based troubleshooting. |
+| Troubleshooting | L34-L44 | Diagnosing and fixing outbound connectivity, NSG/admin rule issues, and VPN gateway/on-premises VPN problems, plus automating VPN connectivity monitoring with Azure Network Watcher. |
 | Decision Making | L45-L51 | Guidance for migrating network monitoring: moving from classic Connection Monitor and Network Performance Monitor tests, and switching NSG flow logs to VNet flow logs. |
 | Limits & Quotas | L52-L56 | How to configure and run Network Watcher packet capture, storage and filtering options, and the key limits/quotas (size, duration, concurrency) that apply to captures |
 | Security | L57-L64 | Securing Network Watcher: RBAC setup, hardening deployments and data access, Zero Trust segmentation with Traffic Analytics, and protecting VNet flow logs using managed identities. |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-12'
+generated_at: '2026-07-19'
 category_descriptions:
   security: 'Security, identity, and access control for Azure Arc: AD auth, TDE, keytabs/credential
     rotation, RBAC, network protection, Private Link, policies, and hardening for
@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 378
+- **Updated Pages**: 1
+- **Unchanged**: 381
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-arc/azure-arc.csv`
 
@@ -78,14 +78,8 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 
 ### Updated Pages
 
-- [Available extensions](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/extensions-release)
-  - Updated: 2026-06-02T20:13:00.000Z → 2026-07-09T17:08:00.000Z
-- [What's new with Connected Machine agent?](https://learn.microsoft.com/en-us/azure/azure-arc/servers/agent-release-notes)
-  - Updated: 2026-06-11T17:37:00.000Z → 2026-07-06T17:09:00.000Z
-- [Release notes](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/secret-store-extension-release-notes)
-  - Updated: 2026-05-26T17:20:00.000Z → 2026-07-07T11:03:00.000Z
-- [Agent connection issues](https://learn.microsoft.com/en-us/azure/azure-arc/servers/troubleshoot-agent-onboard)
-  - Updated: 2025-10-30T22:13:00.000Z → 2026-07-08T06:03:00.000Z
+- [GitOps (Flux) Release notes](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/flux-gitops-release-notes)
+  - Updated: 2026-07-02T08:00:00.000Z → 2026-07-13T08:00:00.000Z
 
 ## Classified Pages
 
@@ -413,7 +407,7 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Deploy applications using GitOps (Flux v2)](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/tutorial-use-gitops-flux2) | 0.30 | This is a tutorial on using GitOps with Flux v2 in Azure Arc/AKS. The summary indicates procedural guidance (install extension, create fluxConfigurations, sync Git) rather than detailed configuration reference, limits, or troubleshooting content. It lacks clear signs of expert-only numerical limits, parameter tables, or error-resolution mappings. |
 | [Enable VMware vCenter resources in Azure](https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/browse-and-enable-vcenter-resources-in-azure) | 0.30 | Portal-based browsing/enabling of vCenter resources; navigation and basic enablement steps, no detailed configuration parameters, limits, or troubleshooting mappings. |
 | [Features](https://learn.microsoft.com/en-us/azure/azure-arc/data/managed-instance-features) | 0.30 | Features and capabilities list; mostly conceptual/marketing without detailed config, limits, or troubleshooting mappings. |
-| [GitOps (Flux) Release notes](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/flux-gitops-release-notes) | 0.30 | Release notes summarize version support and general guidance (for example, N-2 support) but, based on the description, don't expose detailed limits, configuration tables, error codes, or decision matrices that meet any sub-skill detection criteria. |
+| [GitOps (Flux) Release notes](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/flux-gitops-release-notes) | 0.30 | Release notes summarize version history and deprecations but, from the provided summary, do not expose concrete limits, configuration tables, error codes, or other structured expert details that match any sub-skill category. Without specific numeric limits, config parameters, or troubleshooting mappings, it does not meet the expert-knowledge criteria. |
 | [Guide](https://learn.microsoft.com/en-us/azure/azure-arc/data/troubleshoot-guide) | 0.30 | Introductory page that just links to troubleshooting resources; no direct error-code or diagnostic detail. |
 | [Implement CI/CD with GitOps (Flux v2)](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/tutorial-gitops-flux2-ci-cd) | 0.30 | CI/CD tutorial is scenario-focused; description doesn’t suggest detailed configuration matrices or limits. |
 | [Install Arc agent at scale](https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/enable-guest-management-at-scale) | 0.30 | Appears to be a how-to/tutorial for installing Azure Arc agents on VMware VMs at scale. The summary does not indicate presence of detailed configuration parameter tables, limits, error-code-based troubleshooting, or other product-specific expert references; it mainly describes the scenario and benefits. |

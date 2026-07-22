@@ -1,9 +1,9 @@
 ---
 name: azure-app-configuration
-description: Expert knowledge for Azure App Configuration development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using feature flags, snapshots, CI/CD exports/imports, Kubernetes provider, or REST/AI integration, and other Azure App Configuration related development tasks. Not for Azure App Service (use azure-app-service), Azure Functions (use azure-functions), Azure Key Vault (use azure-key-vault).
+description: Expert knowledge for Azure App Configuration development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using feature flags, dynamic config refresh, snapshots, Key Vault integration, or CI/CD exports/imports, and other Azure App Configuration related development tasks. Not for Azure App Service (use azure-app-service), Azure Functions (use azure-functions), Azure Key Vault (use azure-key-vault).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-05"
+  generated_at: "2026-07-19"
   generator: "docs2skills/1.0.0"
 ---
 # Azure App Configuration Skill
@@ -30,8 +30,8 @@ This skill requires **network access** to fetch documentation content:
 | Limits & Quotas | L52-L60 | Limits, retention, and lifecycle rules for App Configuration: snapshots, soft delete, key-value revision retention, preview API deprecation, and REST throttling quotas. |
 | Security | L61-L83 | Securing App Configuration: encryption, RBAC/Entra ID, keys/HMAC, REST authz models, managed identities, private endpoints, network perimeter, and Azure Policy compliance. |
 | Configuration | L84-L101 | Configuring App Configuration behavior: files, emulator, snapshots, geo-replication, soft delete, feature flags/filters/telemetry, Kubernetes provider, and AI/chat completion settings. |
-| Integrations & Coding Patterns | L102-L184 | Patterns and code samples for integrating Azure App Configuration into .NET, Go, JavaScript, Python, AKS, Front Door, and AI apps, including dynamic config, feature flags, filters, telemetry, and REST APIs. |
-| Deployment | L185-L193 | Using App Configuration in CI/CD: exporting/importing settings, creating snapshots, integrating with Azure Pipelines, GitHub Actions, and Helm/Kubernetes deployment workflows. |
+| Integrations & Coding Patterns | L102-L183 | Patterns and code samples for integrating Azure App Configuration into .NET, Go, JavaScript, Python, AKS, Front Door, and AI apps, including dynamic config, feature flags, filters, and REST/Key Vault usage |
+| Deployment | L184-L192 | Using App Configuration in CI/CD: exporting/importing settings, creating snapshots, integrating with Azure Pipelines, GitHub Actions, and Helm/Kubernetes deployment workflows. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -132,7 +132,7 @@ This skill requires **network access** to fetch documentation content:
 | Implement custom feature filters in Go Gin with App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-feature-filters-go |
 | Implement custom feature filters in Node.js with App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-feature-filters-javascript |
 | Implement custom feature filters in Python with App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-feature-filters-python |
-| Use targeting filter in ASP.NET Core with App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-targetingfilter-aspnet-core |
+| Use targeting filter for feature flags in ASP.NET Core | https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-targetingfilter-aspnet-core |
 | Use targeting filter in Go Gin with App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-targetingfilter-go |
 | Use targeting filter in Node.js with App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-targetingfilter-javascript |
 | Use feature flag telemetry in Node.js with App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-telemetry-javascript |
@@ -150,7 +150,6 @@ This skill requires **network access** to fetch documentation content:
 | Integrate Azure App Configuration with .NET Framework apps | https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-dotnet-app |
 | Integrate Azure App Configuration with .NET console apps | https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-dotnet-core-app |
 | Use Azure App Configuration feature flags in Aspire apps | https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-feature-flag-aspire |
-| Use Azure App Configuration feature flags in ASP.NET Core | https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-feature-flag-aspnet-core |
 | Add Azure App Configuration feature flags to Azure Functions | https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-feature-flag-azure-functions-csharp |
 | Add Azure App Configuration feature flags to .NET apps | https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-feature-flag-dotnet |
 | Add Azure App Configuration feature flags to .NET background services | https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-feature-flag-dotnet-background-service |
@@ -176,7 +175,7 @@ This skill requires **network access** to fetch documentation content:
 | Manage App Configuration keys via REST API | https://learn.microsoft.com/en-us/azure/azure-app-configuration/rest-api-keys |
 | Use labels with Azure App Configuration REST API | https://learn.microsoft.com/en-us/azure/azure-app-configuration/rest-api-labels |
 | Lock and unlock key-values via App Configuration REST | https://learn.microsoft.com/en-us/azure/azure-app-configuration/rest-api-locks |
-| Manage App Configuration snapshots via REST API | https://learn.microsoft.com/en-us/azure/azure-app-configuration/rest-api-snapshot |
+| Use Azure App Configuration snapshot REST API | https://learn.microsoft.com/en-us/azure/azure-app-configuration/rest-api-snapshot |
 | API versioning rules for App Configuration REST | https://learn.microsoft.com/en-us/azure/azure-app-configuration/rest-api-versioning |
 | Integrate App Configuration Key Vault references in ASP.NET Core | https://learn.microsoft.com/en-us/azure/azure-app-configuration/use-key-vault-references-dotnet-core |
 | Use App Configuration Key Vault references in Python apps | https://learn.microsoft.com/en-us/azure/azure-app-configuration/use-key-vault-references-python-provider |

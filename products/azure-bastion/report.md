@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-17'
+generated_at: '2026-07-19'
 category_descriptions:
   integrations: How to use Azure Bastion with AKS private clusters, VM scale sets,
     and native Windows/Linux clients, including SSH/RDP connectivity patterns and
@@ -8,9 +8,8 @@ category_descriptions:
     NSG rules, and hardening best practices to lock down Bastion hosts and connections.'
   decision-making: Guidance on choosing and upgrading Bastion SKU tiers and using
     IP-based Bastion connections across VNets, subscriptions, and environments.
-  configuration: Configuring Azure Bastion settings, auth (Kerberos), monitoring/metrics/logs,
-    native client access, session management, recording, and shareable links for secure
-    RDP/SSH access
+  configuration: 'Configuring Azure Bastion features: auth (Kerberos), monitoring/metrics/logs,
+    native client access, session management, recording, and shareable links.'
   limits-quotas: Configuring Azure Bastion host scaling limits, including max concurrent
     RDP/SSH sessions, connection thresholds, and how to adjust or plan capacity for
     different SKUs.
@@ -23,13 +22,13 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Bastion development including best practices,
   decision making, architecture & design patterns, limits & quotas, security, configuration,
   and integrations & coding patterns. Use when configuring Bastion for AKS private
-  clusters, VM scale sets, Entra ID auth, hub/spoke VNets, or native SSH/RDP clients,
-  and other Azure Bastion related development tasks. Not for Azure Virtual Network
-  (use azure-virtual-network), Azure Virtual Machines (use azure-virtual-machines),
+  clusters, VM scale sets, Entra ID auth, hub/spoke VNets, or IP-based cross-VNet
+  access, and other Azure Bastion related development tasks. Not for Azure Virtual
+  Network (use azure-virtual-network), Azure Virtual Machines (use azure-virtual-machines),
   Azure VPN Gateway (use azure-vpn-gateway), Azure Firewall (use azure-firewall).
 use_when: Use when configuring Bastion for AKS private clusters, VM scale sets, Entra
-  ID auth, hub/spoke VNets, or native SSH/RDP clients, and other Azure Bastion related
-  development tasks.
+  ID auth, hub/spoke VNets, or IP-based cross-VNet access, and other Azure Bastion
+  related development tasks.
 confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), Azure
   Virtual Machines (use azure-virtual-machines), Azure VPN Gateway (use azure-vpn-gateway),
   Azure Firewall (use azure-firewall).
@@ -46,8 +45,8 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 40
+- **Updated Pages**: 1
+- **Unchanged**: 39
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-bastion/azure-bastion.csv`
 
@@ -66,6 +65,11 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ## Changes
 
+### Updated Pages
+
+- [Bastion monitoring data reference](https://learn.microsoft.com/en-us/azure/bastion/monitor-bastion-reference)
+  - Updated: 2025-01-16T23:03:00.000Z → 2026-07-01T23:48:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
@@ -73,11 +77,11 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Bastion SKU comparison](https://learn.microsoft.com/en-us/azure/bastion/bastion-sku-comparison) | decision-making | 0.80 | SKU comparison pages for Azure services usually include feature/limit comparison tables and guidance on when to choose each tier; this directly supports tier/SKU selection with criteria and trade-offs, matching the decision-making category. |
 | [Secure Bastion](https://learn.microsoft.com/en-us/azure/bastion/secure-bastion) | security | 0.80 | Security guidance aligned to Microsoft Cloud Security Benchmark will include Bastion-specific security settings, RBAC, and configuration recommendations. |
 | [Work with NSGs](https://learn.microsoft.com/en-us/azure/bastion/bastion-nsg) | security | 0.80 | NSG configuration for Bastion necessarily involves specific inbound/outbound rules, ports, and possibly service tags that are product-specific security settings; this matches the security category with concrete configuration guidance. |
+| [Bastion monitoring data reference](https://learn.microsoft.com/en-us/azure/bastion/monitor-bastion-reference) | configuration | 0.78 | The page is a monitoring data reference for Azure Bastion, listing specific Azure Monitor metrics, diagnostic log categories, and their fields. These are product-specific configuration/telemetry parameters (metric names, dimensions, log categories, schema fields) that an LLM is unlikely to fully know from training. It does not focus on limits, troubleshooting, or decision-making, but rather on the detailed configuration of what monitoring data is available and how it is structured. |
 | [Configure Microsoft Entra ID authentication](https://learn.microsoft.com/en-us/azure/bastion/bastion-entra-id-authentication) | security | 0.76 | Entra ID authentication setup for Bastion will include specific RBAC role names, required permissions, and configuration steps for RDP/SSH, which are product-specific security settings and identity configuration details not derivable from general knowledge. |
 | [Bastion configuration settings](https://learn.microsoft.com/en-us/azure/bastion/configuration-settings) | configuration | 0.75 | A page dedicated to 'configuration settings' for Azure Bastion will enumerate specific setting names, allowed values, and possibly defaults (for example, SKU, IP settings, session behavior). These are product-specific configuration parameters that qualify as expert knowledge and align with the configuration sub-skill type. |
 | [Configure native client support](https://learn.microsoft.com/en-us/azure/bastion/native-client) | configuration | 0.75 | Explains how to modify Bastion deployment to accept native client connections, including specific settings and possibly parameter values. |
 | [Bastion and VNet peering](https://learn.microsoft.com/en-us/azure/bastion/vnet-peering) | architecture-patterns | 0.70 | Describes how a single Bastion host can serve peered VNets, a product-specific architecture pattern with deployment implications. |
-| [Bastion monitoring data reference](https://learn.microsoft.com/en-us/azure/bastion/monitor-bastion-reference) | configuration | 0.70 | Monitoring data reference pages typically list all Bastion-specific Azure Monitor metrics, log categories, dimensions, and their exact names/fields. These are product-specific configuration/telemetry details (e.g., metric names, dimensions, log table schemas) that an LLM is unlikely to know from training and are used when configuring monitoring and alerts, fitting the configuration sub-skill best. |
 | [Configure a shareable link](https://learn.microsoft.com/en-us/azure/bastion/shareable-link) | configuration | 0.70 | Describes enabling and configuring the Shareable Link feature, including authentication options and Bastion-specific settings. |
 | [Configure host scaling](https://learn.microsoft.com/en-us/azure/bastion/configure-host-scaling) | limits-quotas | 0.70 | Host scaling for Bastion Standard SKU implies specific instance/scale-unit limits and concurrent connection capacities that are product- and SKU-specific. This kind of article typically documents exact numeric ranges for scale units and their impact on concurrent sessions, which are not generally known from training data and fit the limits-quotas category. |
 | [Configure session recording](https://learn.microsoft.com/en-us/azure/bastion/session-recording) | configuration | 0.70 | The page describes how to configure Bastion session recording, including storage account/container usage and SAS URL handling. Such a feature article for a specific Azure service typically includes product-specific settings (for example, where to store recordings, required permissions, and portal/ARM configuration options) that qualify as expert configuration knowledge beyond generic concepts. |

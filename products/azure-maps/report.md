@@ -49,8 +49,8 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 146
+- **Updated Pages**: 0
+- **Unchanged**: 147
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-maps/azure-maps.csv`
 
@@ -69,11 +69,6 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | *(Unclassified)* | 32 | 21.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [Migrate Azure Maps Search 1.0 APIs](https://learn.microsoft.com/en-us/azure/azure-maps/migrate-search-v1-api)
-  - Updated: 2026-03-27T22:21:00.000Z → 2026-03-28T08:00:00.000Z
 
 ## Classified Pages
 

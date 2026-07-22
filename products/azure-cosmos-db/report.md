@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 836
+- **Updated Pages**: 0
+- **Unchanged**: 837
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cosmos-db/azure-cosmos-db.csv`
 
@@ -76,11 +76,6 @@ confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure
 | *(Unclassified)* | 230 | 27.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [Full text search overview](https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/full-text-search)
-  - Updated: 2026-04-27T13:06:00.000Z → 2026-07-08T22:13:00.000Z
 
 ## Classified Pages
 

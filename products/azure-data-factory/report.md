@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-12'
+generated_at: '2026-07-19'
 category_descriptions:
   configuration: 'Configuring Azure Data Factory: pipelines, activities, triggers,
     data flows, copy behavior, formats, integration runtimes (Azure/self-hosted/SSIS),
@@ -7,9 +7,9 @@ category_descriptions:
   decision-making: Guidance on cost planning, connector upgrades, integration runtime
     and compute choices, and migration/modernization of ADF, SSIS, Synapse, and pipelines
     to Fabric.
-  security: Securing Data Factory with identity, encryption, Key Vault, and Azure
-    Policy, plus network controls like VNets, Private Link, firewalls, private endpoints,
-    and secure runtimes (Azure-SSIS, self-hosted).
+  security: 'Securing Data Factory with identity, encryption, and networking: managed
+    identities, Key Vault, CMK, Private Link, VNets, firewall rules, policies, and
+    secure runtimes/on-prem access.'
   integrations: Integrating ADF with diverse data sources/services, using connectors,
     mapping data flow functions, templates, and activities (Databricks, SSIS, ML,
     Synapse) to copy, transform, and orchestrate data.
@@ -31,12 +31,13 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Data Factory development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building ADF pipelines, data flows, triggers, integration runtimes, SAP CDC, or
-  CI/CD deployments, and other Azure Data Factory related development tasks. Not for
-  Azure Synapse Analytics (use azure-synapse-analytics), Azure Databricks (use azure-databricks),
-  Azure Stream Analytics (use azure-stream-analytics), Azure Data Explorer (use azure-data-explorer).
-use_when: Use when building ADF pipelines, data flows, triggers, integration runtimes,
-  SAP CDC, or CI/CD deployments, and other Azure Data Factory related development
+  building ADF pipelines, triggers, data flows, integration runtimes, SAP CDC, or
+  secure networked runtimes, and other Azure Data Factory related development tasks.
+  Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure Databricks
+  (use azure-databricks), Azure Stream Analytics (use azure-stream-analytics), Azure
+  Data Explorer (use azure-data-explorer).
+use_when: Use when building ADF pipelines, triggers, data flows, integration runtimes,
+  SAP CDC, or secure networked runtimes, and other Azure Data Factory related development
   tasks.
 confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics),
   Azure Databricks (use azure-databricks), Azure Stream Analytics (use azure-stream-analytics),
@@ -46,16 +47,16 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 
 ## Summary
 
-- **Total Pages**: 504
-- **Fetched**: 504
+- **Total Pages**: 505
+- **Fetched**: 505
 - **Fetch Failed**: 0
-- **Classified**: 420
+- **Classified**: 421
 - **Unclassified**: 84
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 501
+- **New Pages**: 1
+- **Updated Pages**: 0
+- **Unchanged**: 504
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-factory/azure-data-factory.csv`
 
@@ -70,20 +71,15 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | deployment | 11 | 2.2% |
 | integrations | 171 | 33.9% |
 | limits-quotas | 2 | 0.4% |
-| security | 27 | 5.4% |
+| security | 28 | 5.5% |
 | troubleshooting | 50 | 9.9% |
-| *(Unclassified)* | 84 | 16.7% |
+| *(Unclassified)* | 84 | 16.6% |
 
 ## Changes
 
-### Updated Pages
+### New Pages
 
-- [Connector release stages and timelines](https://learn.microsoft.com/en-us/azure/data-factory/connector-release-stages-and-timelines)
-  - Updated: 2026-05-12T06:12:00.000Z → 2026-05-12T08:00:00.000Z
-- [Jira](https://learn.microsoft.com/en-us/azure/data-factory/connector-jira)
-  - Updated: 2026-05-12T06:12:00.000Z → 2026-05-12T08:00:00.000Z
-- [SharePoint Online List](https://learn.microsoft.com/en-us/azure/data-factory/connector-sharepoint-online-list)
-  - Updated: 2025-09-07T11:48:00.000Z → 2026-07-10T17:20:00.000Z
+- [Modern Trusted Service Data Factory](https://learn.microsoft.com/en-us/azure/data-factory/modern-trusted-service)
 
 ## Classified Pages
 
@@ -404,6 +400,7 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | [Metadata driven copy data](https://learn.microsoft.com/en-us/azure/data-factory/copy-data-tool-metadata-driven) | architecture-patterns | 0.70 | Metadata-driven copy tool article describes a specific pattern for large-scale ingestion using control tables and parameterized pipelines, including structure of metadata tables and how they drive execution, which is a product-specific design pattern. |
 | [Metafunctions](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-metafunctions) | integrations | 0.70 | Describes metafunctions available in ADF/Synapse mapping data flows, including names and usage patterns; these are specific to the product’s expression language. |
 | [Migrate SSIS jobs with SSMS](https://learn.microsoft.com/en-us/azure/data-factory/how-to-migrate-ssis-job-ssms) | deployment | 0.70 | Covers detailed, product-specific mapping of on-prem SQL Agent SSIS jobs to ADF pipelines/activities/triggers using SSMS. This is a concrete migration/deployment pattern with stepwise mappings, not just conceptual guidance. |
+| [Modern Trusted Service Data Factory](https://learn.microsoft.com/en-us/azure/data-factory/modern-trusted-service) | security | 0.70 | Page describes the new Modern trusted service capability vs Legacy for Azure Data Factory, including concrete migration timelines (legacy retirement in August 2027) and product-specific security behavior for accessing firewall-protected resources like Storage and Key Vault. This is detailed, product-specific security configuration guidance rather than a generic overview. |
 | [Monitor SSIS operations with Azure Monitor](https://learn.microsoft.com/en-us/azure/data-factory/monitor-ssis) | configuration | 0.70 | Describes specific log tables/views, metrics, and monitoring flows for SSIS IR in ADF, which are product-specific details. |
 | [Monitor copy activity](https://learn.microsoft.com/en-us/azure/data-factory/copy-activity-monitoring) | configuration | 0.70 | Monitoring docs for copy activity generally enumerate specific monitoring metrics, status fields, log locations, and configuration options (e.g., diagnostic settings categories, property names) that are concrete configuration details rather than conceptual guidance. |
 | [Monitor integration runtime](https://learn.microsoft.com/en-us/azure/data-factory/monitor-integration-runtime) | configuration | 0.70 | Describes specific monitoring metrics, statuses, and views for different IR types, which are product-specific monitoring configuration details. |

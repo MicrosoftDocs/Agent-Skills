@@ -1,11 +1,11 @@
 ---
-generated_at: '2026-05-24'
+generated_at: '2026-07-19'
 category_descriptions:
   security: Using Entra ID/RBAC/ABAC for queue data access, configuring auth in CLI/Portal/PowerShell,
     client-side encryption, and migrating Queue apps to passwordless authentication
-  configuration: Configuring and interpreting monitoring for Azure Queue Storage,
-    including metrics, logs, diagnostic settings, and detailed reference for all queue
-    monitoring data fields.
+  configuration: Setting up metrics, logs, and alerts for Azure Queue Storage, and
+    understanding/using the collected monitoring data to troubleshoot performance
+    and reliability issues.
   best-practices: 'Monitoring, securing, and tuning Azure Queue Storage: metrics/logging,
     alerts, encryption, access control, and performance/scalability patterns and checklists.'
   limits-quotas: Scalability and size limits for Azure Queue Storage, including max
@@ -15,13 +15,13 @@ category_descriptions:
     common coding patterns.
 skill_description: Expert knowledge for Azure Queue Storage development including
   best practices, limits & quotas, security, configuration, and integrations & coding
-  patterns. Use when using queue client SDKs, Entra ID auth, client-side encryption,
-  monitoring metrics/logs, or scaling queues, and other Azure Queue Storage related
+  patterns. Use when using Entra ID/RBAC auth, client-side encryption, monitoring/alerts,
+  scaling limits, or .NET/Java/Python SDKs, and other Azure Queue Storage related
   development tasks. Not for Azure Blob Storage (use azure-blob-storage), Azure Table
   Storage (use azure-table-storage), Azure Service Bus (use azure-service-bus), Azure
   Event Hubs (use azure-event-hubs).
-use_when: Use when using queue client SDKs, Entra ID auth, client-side encryption,
-  monitoring metrics/logs, or scaling queues, and other Azure Queue Storage related
+use_when: Use when using Entra ID/RBAC auth, client-side encryption, monitoring/alerts,
+  scaling limits, or .NET/Java/Python SDKs, and other Azure Queue Storage related
   development tasks.
 confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure Table
   Storage (use azure-table-storage), Azure Service Bus (use azure-service-bus), Azure
@@ -39,8 +39,8 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure T
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 24
+- **Updated Pages**: 1
+- **Unchanged**: 23
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-queue-storage/azure-queue-storage.csv`
 
@@ -57,6 +57,11 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure T
 
 ## Changes
 
+### Updated Pages
+
+- [Monitoring Queue Storage data reference](https://learn.microsoft.com/en-us/azure/storage/queues/monitor-queue-storage-reference)
+  - Updated: 2024-08-20T05:41:00.000Z → 2025-07-02T22:09:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
@@ -70,9 +75,9 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure T
 | [Performance and scalability checklist](https://learn.microsoft.com/en-us/azure/storage/queues/storage-performance-checklist) | best-practices | 0.85 | Checklist of proven practices for Queue Storage performance, likely including concrete configuration patterns and usage recommendations tied to scalability targets. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/storage/queues/authorize-data-operations-cli) | security | 0.80 | Describes CLI extensions and flags for choosing Entra ID, account keys, or SAS for queue data operations, including product-specific auth options. |
 | [Configure client-side encryption](https://learn.microsoft.com/en-us/azure/storage/queues/client-side-encryption) | security | 0.80 | Explains client-side encryption behavior in .NET/Python Queue Storage libraries and integration with Key Vault, including product-specific encryption settings. |
-| [Monitoring Queue Storage data reference](https://learn.microsoft.com/en-us/azure/storage/queues/monitor-queue-storage-reference) | configuration | 0.80 | Reference for all monitoring data for Queue Storage, likely listing metric names, dimensions, and log categories—detailed configuration/reference information. |
 | [PowerShell](https://learn.microsoft.com/en-us/azure/storage/queues/authorize-data-operations-powershell) | security | 0.80 | Details PowerShell extensions for Queue Storage, including how Entra tokens are used and which roles/permissions are required for data operations. |
 | [Scenarios and best practices](https://learn.microsoft.com/en-us/azure/storage/queues/queues-storage-monitoring-scenarios) | best-practices | 0.80 | Provides scenario-based monitoring guidance with specific metrics/logs to use and how to configure them, representing product-specific monitoring best practices. |
+| [Monitoring Queue Storage data reference](https://learn.microsoft.com/en-us/azure/storage/queues/monitor-queue-storage-reference) | configuration | 0.78 | The monitoring reference page for Azure Queue Storage typically lists detailed metric names, dimensions, log categories, and diagnostic settings with specific parameter names, allowed values, and sometimes defaults. This constitutes product-specific configuration knowledge for monitoring and diagnostics that an LLM is unlikely to fully know from training. It is not focused on limits/quotas or troubleshooting error codes, but rather on how to configure and interpret monitoring data, fitting the configuration sub-skill. |
 | [Security recommendations](https://learn.microsoft.com/en-us/azure/storage/queues/security-recommendations) | best-practices | 0.75 | Security recommendations for Queue Storage with concrete product-specific guidance (for example, which features to enable, how to configure Defender for Cloud alerts). |
 | [Migrate to passwordless connections](https://learn.microsoft.com/en-us/azure/storage/queues/passwordless-migrate-queues) | security | 0.70 | Guides migration from Shared Key to Entra ID/RBAC for queues with product-specific authentication configuration steps and considerations. |
 | [Portal](https://learn.microsoft.com/en-us/azure/storage/queues/authorize-data-operations-portal) | security | 0.70 | Explains how portal operations against queue data are authorized via Entra ID or account keys, including specific permission requirements and modes. |

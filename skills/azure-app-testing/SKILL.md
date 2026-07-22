@@ -1,9 +1,9 @@
 ---
 name: azure-app-testing
-description: Expert knowledge for Azure App Testing development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Azure Load Testing, Playwright Workspaces, JMeter/Locust tests, VNet/private endpoints, or CI/CD pipelines, and other Azure App Testing related development tasks. Not for Azure Test Plans (use azure-test-plans), Azure DevOps (use azure-devops), Azure Pipelines (use azure-pipelines), Playwright Workspaces (use azure-playwright-workspaces).
+description: Expert knowledge for Azure App Testing development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Azure Load Testing with VNets/private endpoints, JMeter/Locust, Playwright Workspaces, CI/CD, or quotas, and other Azure App Testing related development tasks. Not for Azure Test Plans (use azure-test-plans), Azure DevOps (use azure-devops), Azure Pipelines (use azure-pipelines), Azure App Service (use azure-app-service).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-12"
+  generated_at: "2026-07-19"
   generator: "docs2skills/1.0.0"
 ---
 # Azure App Testing Skill
@@ -24,7 +24,7 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L47 | Diagnosing and fixing Azure Load Testing and Playwright Workspace issues, including failed tests, debug runs, browser recorder, private endpoints, and test run/reporting errors. |
+| Troubleshooting | L37-L47 | Diagnosing and fixing Azure Load Testing issues: failed or flaky tests, debug-mode runs, AI-based insights, browser recorder problems, private endpoint failures, and Playwright workspace/test run errors. |
 | Best Practices | L48-L56 | Guidance on load testing App Service apps, tuning high-scale tests, finding performance bottlenecks, and optimizing Playwright Workspace tests for reliability and low latency. |
 | Decision Making | L57-L64 | Guides for deciding load test resource moves (regions, groups, subscriptions) and tuning performance settings like Azure Functions configs and Playwright parallelism. |
 | Architecture & Design Patterns | L65-L70 | Designing Azure Load Testing setups with virtual networks and private endpoints, including VNet-injected tests, network isolation, and testing services over private connectivity. |
@@ -40,7 +40,7 @@ This skill requires **network access** to fetch documentation content:
 | Use AI-powered actionable insights to diagnose Azure load test issues | https://learn.microsoft.com/en-us/azure/app-testing/load-testing/how-to-analyze-test-results-using-actionable-insights |
 | Diagnose and troubleshoot failing Azure load tests | https://learn.microsoft.com/en-us/azure/app-testing/load-testing/how-to-diagnose-failing-load-test |
 | Run Azure load tests in debug mode for troubleshooting | https://learn.microsoft.com/en-us/azure/app-testing/load-testing/how-to-run-tests-in-debug-mode |
-| Diagnose browser recorder issues in Azure Load Testing | https://learn.microsoft.com/en-us/azure/app-testing/load-testing/troubleshoot-browser-extension |
+| Diagnose Azure Load Testing browser recorder issues | https://learn.microsoft.com/en-us/azure/app-testing/load-testing/troubleshoot-browser-extension |
 | Troubleshoot private endpoint load tests in Azure Load Testing | https://learn.microsoft.com/en-us/azure/app-testing/load-testing/troubleshoot-private-endpoint-tests |
 | Troubleshoot Playwright Workspaces reporting errors | https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/troubleshoot-playwright-workspaces-reporting |
 | Troubleshoot Playwright Workspaces test run issues | https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/troubleshoot-test-run-failures |

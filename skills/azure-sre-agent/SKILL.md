@@ -1,9 +1,9 @@
 ---
 name: azure-sre-agent
-description: Expert knowledge for Azure Sre Agent development including troubleshooting, best practices, decision making, security, configuration, integrations & coding patterns, and deployment. Use when wiring SRE Agent to Azure DevOps/GitHub, Log Analytics/App Insights, AKS Java workloads, or Key Vault, and other Azure Sre Agent related development tasks. Not for Azure Monitor (use azure-monitor), Azure Reliability (use azure-reliability), Azure Resiliency (use azure-resiliency), Azure Service Health (use azure-service-health).
+description: Expert knowledge for Azure Sre Agent development including troubleshooting, best practices, decision making, security, configuration, integrations & coding patterns, and deployment. Use when wiring SRE Agent to Azure DevOps/GitHub, Log Analytics/App Insights, AKS Java workloads, Key Vault, or VNets, and other Azure Sre Agent related development tasks. Not for Azure Monitor (use azure-monitor), Azure Reliability (use azure-reliability), Azure Resiliency (use azure-resiliency), Azure Service Health (use azure-service-health).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-21"
+  generated_at: "2026-07-19"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Sre Agent Skill
@@ -26,7 +26,7 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L35-L42 | Diagnosing and fixing SRE Agent issues: querying telemetry with KQL, filing Azure support tickets, resolving deployment/operation failures, and debugging Java performance on AKS. |
 | Best Practices | L43-L47 | Best practices for integrating Azure Monitor, Application Insights, and related observability tools with SRE Agent to collect, analyze, and act on telemetry and alerts. |
-| Decision Making | L48-L55 | Guidance on when to run deep investigations, choosing Log Analytics vs App Insights connectors, estimating/controlling SRE Agent costs, and selecting supported Azure regions. |
+| Decision Making | L48-L55 | Guidance on when to run deep investigations, when to use Log Analytics vs App Insights, how to estimate/control SRE Agent costs, and which Azure regions you can deploy in. |
 | Security | L56-L72 | Securing SRE Agent identities, permissions, RBAC, approvals, network/VNet access, firewalls, and secure connections to Key Vault, ADO, and GitHub (including BYO GitHub App). |
 | Configuration | L73-L89 | Configuring SRE Agent behavior: code interpreter, tools/skills, subagents, connectors, network, governance hooks, incident plans, IDE/MCP, and GitHub/knowledge source integrations. |
 | Integrations & Coding Patterns | L90-L108 | Integrating SRE Agent with Azure DevOps, GitHub, observability and incident tools, defining REST/Kusto/Python tools, cross-tenant access, and secure connector/MCP configurations |

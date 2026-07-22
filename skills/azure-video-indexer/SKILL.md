@@ -1,9 +1,9 @@
 ---
 name: azure-video-indexer
-description: Expert knowledge for Azure AI Video Indexer development including best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when indexing videos, using live camera analysis, calling Video Indexer APIs/widgets, or redacting faces, and other Azure AI Video Indexer related development tasks. Not for Azure AI Vision (use azure-ai-vision), Azure AI Custom Vision (use azure-custom-vision), Azure AI Speech (use azure-speech), Azure AI Search (use azure-cognitive-search).
+description: Expert knowledge for Azure AI Video Indexer development including best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when indexing videos, using Video Indexer APIs/widgets, integrating OpenAI, customizing models, or securing access, and other Azure AI Video Indexer related development tasks. Not for Azure AI Vision (use azure-ai-vision), Azure AI Custom Vision (use azure-custom-vision), Azure AI Speech (use azure-speech), Azure AI Search (use azure-cognitive-search).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-21"
+  generated_at: "2026-07-19"
   generator: "docs2skills/1.0.0"
 ---
 # Azure AI Video Indexer Skill
@@ -24,31 +24,32 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Best Practices | L35-L41 | Guidance on scaling Video Indexer, training custom speech models effectively, and designing disaster recovery and failover for resilient deployments. |
-| Decision Making | L42-L47 | Guidance on selecting Azure Video Indexer account types and designing multi-tenant setups, including management, isolation, and scaling strategies. |
-| Limits & Quotas | L48-L53 | Service limits, supported languages/capabilities, and how to use live camera indexing features like event summaries and viewing live recordings. |
-| Security | L54-L63 | Security and access control for Video Indexer: roles/permissions, private endpoints, NSG service tags, firewall-protected storage, security baselines, and requesting access to restricted features. |
-| Configuration | L64-L73 | Configuring Video Indexer behavior: OpenAI connections, indexing options, regions, upload settings, speaker editing, and monitoring/diagnostics metrics and logs. |
-| Integrations & Coding Patterns | L74-L81 | Using Video Indexer APIs, widgets, and low-code tools to call the service, embed insights, automate workflows, and programmatically redact faces in videos |
-| Deployment | L82-L85 | How to deploy and configure Azure Video Indexer using ARM templates, including required resources, parameters, and automation steps for setting up the service. |
+| Best Practices | L35-L43 | Guidance on scaling Video Indexer, training/customizing speech, language, and brand models, and designing disaster recovery and failover strategies. |
+| Decision Making | L44-L48 | Guidance on selecting Azure Video Indexer account types and designing multi-tenant setups, including management, isolation, and scaling strategies. |
+| Limits & Quotas | L49-L54 | Video Indexer file formats, size/duration limits, account/service quotas, and which languages and AI capabilities (transcription, translation, etc.) are supported. |
+| Security | L55-L64 | Security and access control for Video Indexer: roles/permissions, private endpoints, NSG service tags, firewall-protected storage, security baselines, and requesting access to restricted features. |
+| Configuration | L65-L75 | Configuring Video Indexer behavior: OpenAI integration, indexing options, regions, monitoring/diagnostics data, speaker identity editing, and text summarization settings. |
+| Integrations & Coding Patterns | L76-L82 | Using Video Indexer APIs, widgets, and low-code tools to call the service, embed insights, automate workflows, and programmatically redact faces in videos |
+| Deployment | L83-L86 | How to deploy and configure Azure Video Indexer using ARM templates, including required resources, parameters, and automation steps for setting up the service. |
 
 ### Best Practices
 | Topic | URL |
 |-------|-----|
 | Apply scale best practices for Azure Video Indexer | https://learn.microsoft.com/en-us/azure/azure-video-indexer/considerations-when-use-at-scale |
+| Customize brand detection models in Video Indexer | https://learn.microsoft.com/en-us/azure/azure-video-indexer/customize-brands-model-how-to |
+| Customize Azure Video Indexer language models | https://learn.microsoft.com/en-us/azure/azure-video-indexer/customize-language-model-how-to |
 | Apply Video Indexer speech model training best practices | https://learn.microsoft.com/en-us/azure/azure-video-indexer/speech-model-training-best-practices |
 | Implement disaster recovery and failover for Video Indexer | https://learn.microsoft.com/en-us/azure/azure-video-indexer/video-indexer-disaster-recovery |
 
 ### Decision Making
 | Topic | URL |
 |-------|-----|
-| Choose between Azure Video Indexer account types | https://learn.microsoft.com/en-us/azure/azure-video-indexer/accounts-overview |
 | Choose multi-tenant management strategies for Video Indexer | https://learn.microsoft.com/en-us/azure/azure-video-indexer/manage-multiple-tenants |
 
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
-| Review Azure Video Indexer support matrix and service limits | https://learn.microsoft.com/en-us/azure/azure-video-indexer/avi-support-matrix |
+| Azure Video Indexer formats, limits, and service quotas | https://learn.microsoft.com/en-us/azure/azure-video-indexer/avi-support-matrix |
 | Check language support and capabilities in Video Indexer | https://learn.microsoft.com/en-us/azure/azure-video-indexer/language-support |
 
 ### Security
@@ -64,12 +65,13 @@ This skill requires **network access** to fetch documentation content:
 ### Configuration
 | Topic | URL |
 |-------|-----|
-| Configure Azure OpenAI connections for Video Indexer accounts | https://learn.microsoft.com/en-us/azure/azure-video-indexer/connect-azure-open-ai-task |
+| Configure Azure Video Indexer with Azure OpenAI | https://learn.microsoft.com/en-us/azure/azure-video-indexer/connect-azure-open-ai-task |
 | Edit speaker identities in Azure Video Indexer transcripts | https://learn.microsoft.com/en-us/azure/azure-video-indexer/edit-speakers |
-| Configure indexing options for Azure Video Indexer | https://learn.microsoft.com/en-us/azure/azure-video-indexer/indexing-configuration-guide |
+| Configure Azure AI Video Indexer indexing options | https://learn.microsoft.com/en-us/azure/azure-video-indexer/indexing-configuration-guide |
 | Configure monitoring and diagnostics for Azure Video Indexer | https://learn.microsoft.com/en-us/azure/azure-video-indexer/monitor-video-indexer |
 | Reference for Azure Video Indexer monitoring data | https://learn.microsoft.com/en-us/azure/azure-video-indexer/monitor-video-indexer-data-reference |
 | Set Azure region parameters for Video Indexer APIs | https://learn.microsoft.com/en-us/azure/azure-video-indexer/regions |
+| Configure textual summarization with Azure Video Indexer | https://learn.microsoft.com/en-us/azure/azure-video-indexer/text-summarization-task |
 
 ### Integrations & Coding Patterns
 | Topic | URL |
@@ -77,7 +79,6 @@ This skill requires **network access** to fetch documentation content:
 | Redact faces in videos using Video Indexer API | https://learn.microsoft.com/en-us/azure/azure-video-indexer/face-redaction-with-api |
 | Integrate Video Indexer with Logic Apps and Power Automate | https://learn.microsoft.com/en-us/azure/azure-video-indexer/logic-apps-connector-arm-accounts |
 | Embed Azure Video Indexer widgets into applications | https://learn.microsoft.com/en-us/azure/azure-video-indexer/video-indexer-embed-widgets |
-| Call Azure AI Video Indexer APIs from applications | https://learn.microsoft.com/en-us/azure/azure-video-indexer/video-indexer-use-apis |
 
 ### Deployment
 | Topic | URL |

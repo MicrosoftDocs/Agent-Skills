@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-07-12'
+generated_at: '2026-07-19'
 category_descriptions:
-  configuration: 'Configuring Azure virtual networks: IPs (public/private/custom),
-    DNS, DHCP, subnet peering/delegation, encryption, monitoring, and special features
-    like MANA, NAT, gateways, and IPv6.'
+  configuration: 'Configuring Azure Virtual Network features: IPs (public/private/custom),
+    NAT, firewalls, gateways, DNS, monitoring, subnet delegation/peering, encryption,
+    and MANA/DHCP for VMs and NVAs.'
   decision-making: 'Guidance on design choices: when to use accelerated networking,
     routing preferences, VNets vs appliances, IP upgrade paths, VNet integration options,
     and cost/performance trade-offs.'
@@ -27,15 +27,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Virtual Network development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, and deployment. Use when configuring VNet
-  peering, NAT/gateways, service endpoints, encryption, or hybrid network routing,
-  and other Azure Virtual Network related development tasks. Not for Azure Networking
-  (use azure-networking), Azure Virtual Network Manager (use azure-virtual-network-manager),
-  Azure Virtual WAN (use azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway).
-use_when: Use when configuring VNet peering, NAT/gateways, service endpoints, encryption,
-  or hybrid network routing, and other Azure Virtual Network related development tasks.
+  peering, service endpoints, NSGs, VPN/ExpressRoute gateways, or upgrading Basic
+  to Standard IPs, and other Azure Virtual Network related development tasks. Not
+  for Azure Networking (use azure-networking), Azure Virtual Network Manager (use
+  azure-virtual-network-manager), Azure Virtual WAN (use azure-virtual-wan), Azure
+  Firewall (use azure-firewall).
+use_when: Use when configuring VNet peering, service endpoints, NSGs, VPN/ExpressRoute
+  gateways, or upgrading Basic to Standard IPs, and other Azure Virtual Network related
+  development tasks.
 confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtual
   Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use azure-virtual-wan),
-  Azure VPN Gateway (use azure-vpn-gateway).
+  Azure Firewall (use azure-firewall).
 ---
 # Azure Virtual Network Crawl Report
 
@@ -49,8 +51,8 @@ confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtu
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 129
+- **Updated Pages**: 1
+- **Unchanged**: 130
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-network/azure-virtual-network.csv`
 
@@ -72,10 +74,8 @@ confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtu
 
 ### Updated Pages
 
-- [FAQ](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-faq)
-  - Updated: 2024-07-22T08:00:00.000Z → 2026-07-08T08:00:00.000Z
-- [Configure subnet peering](https://learn.microsoft.com/en-us/azure/virtual-network/how-to-configure-subnet-peering)
-  - Updated: 2026-04-22T17:34:00.000Z → 2026-07-09T22:04:00.000Z
+- [Monitoring data reference](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/monitor-public-ip-reference)
+  - Updated: 2024-07-23T22:09:00.000Z → 2025-06-19T22:03:00.000Z
 
 ## Classified Pages
 
@@ -83,6 +83,7 @@ confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtu
 |-----------|------|------------|--------|
 | [Network bandwidth](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-machine-network-throughput) | limits-quotas | 0.80 | Explains VM network throughput, flow limits, and bandwidth per size. Contains concrete Mbps values, flow limits, and possibly tables by VM SKU, which are specific limits/quotas not generally known. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-faq) | limits-quotas | 0.78 | The FAQ includes multiple precise, product-specific limits and constraints (for example, maximum number of virtual networks per subscription, maximum number of subnets per virtual network, address space constraints, peering limits, and other numeric caps). These are exact values that are unlikely to be reliably known from generic training data and match the limits-quotas criteria: specific numerical limits with units and plan-specific constraints. |
+| [Monitoring data reference](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/monitor-public-ip-reference) | configuration | 0.78 | A monitoring data reference page for a specific Azure resource typically lists exact metric names, dimensions, log categories, and sometimes default/retention settings that are product-specific and not generally known from training. These are configuration-level details for how to monitor Public IP addresses (e.g., which metrics/logs exist and how to use them), fitting the configuration sub-skill better than limits-quotas or others. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-encryption-faq) | security | 0.72 | An FAQ for a specific Azure security feature typically includes product-specific details such as supported scenarios, required configurations, limitations, and interactions with other Azure security features. These are not generic security concepts and qualify as expert knowledge about how Virtual Network encryption behaves and should be configured. |
 | [Azure Policy Regulatory Compliance controls](https://learn.microsoft.com/en-us/azure/virtual-network/security-controls-policy) | security | 0.70 | Lists specific built-in policy definitions and compliance controls for VNets, which are product-specific security/compliance configurations. |
 | [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/virtual-network/policy-reference) | configuration | 0.70 | Index of built-in policy definitions; each policy has a specific name, effect, and conditions that are product-specific configuration artifacts. |
@@ -93,7 +94,6 @@ confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtu
 | [Configure subnet peering](https://learn.microsoft.com/en-us/azure/virtual-network/how-to-configure-subnet-peering) | configuration | 0.70 | How-to page for subnet peering likely includes product-specific configuration steps, required settings, and options (e.g., which subnets can be selected, flags like 'allow forwarded traffic', 'use remote gateways'), which are detailed configuration parameters unique to Azure Virtual Network rather than generic concepts. |
 | [Deploy a DHCP server on an Azure VM](https://learn.microsoft.com/en-us/azure/virtual-network/how-to-dhcp-azure) | configuration | 0.70 | Describes Azure-specific DHCP relay behavior (no broadcasts) and detailed port/protocol requirements plus configuration steps for a highly available DHCP server in Azure, including product-specific networking constraints. |
 | [Monitor data reference](https://learn.microsoft.com/en-us/azure/virtual-network/monitor-virtual-network-reference) | configuration | 0.70 | Monitoring reference pages for Azure services usually enumerate all metrics, logs, dimensions, and categories with exact names, units, and sometimes value ranges (for example, metric names, log table names, and category identifiers) that an LLM is unlikely to know reliably from training. This is structured, product-specific reference data that fits configuration-like knowledge for monitoring/diagnostics. |
-| [Monitoring data reference](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/monitor-public-ip-reference) | configuration | 0.70 | Explicitly a monitoring data reference; such pages typically list metrics, dimensions, and log categories in tables with names and meanings, which are product-specific configuration/telemetry details not generally known. |
 | [Name resolution for resources](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances) | configuration | 0.70 | Covers Azure-provided DNS, private DNS zones, and custom DNS; includes Azure-specific DNS configuration patterns and options. |
 | [Network virtual appliances](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-scenario-udr-gw-nva) | architecture-patterns | 0.70 | Scenario-based architecture using route tables, VPN gateway, and NVAs to build DMZ and protected networks; concrete Azure network pattern. |
 | [Optimize network throughput for Azure virtual machines](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-optimize-network-bandwidth) | best-practices | 0.70 | The article provides product-specific tuning guidance (congestion control algorithms, queue discipline, buffer sizes, NIC tuning) for Azure VMs on Windows and Linux. These are concrete, actionable optimization recommendations tied to Azure VM networking behavior rather than generic networking theory, fitting the best-practices category. |

@@ -1,9 +1,9 @@
 ---
 name: azure-translator
-description: Expert knowledge for Azure Translator development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when using text/doc translation APIs, Custom Translator, glossaries/dictionaries, containers, or neural dictionary features, and other Azure Translator related development tasks. Not for Azure AI Language (use azure-language-service), Azure AI Speech (use azure-speech), Azure AI Immersive Reader (use azure-immersive-reader), Azure AI Search (use azure-cognitive-search).
+description: Expert knowledge for Azure Translator development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when using text/document translation APIs, Custom Translator, glossaries, transliteration, or containers, and other Azure Translator related development tasks. Not for Azure AI Language (use azure-language-service), Azure AI Speech (use azure-speech), Azure AI Immersive Reader (use azure-immersive-reader), Azure AI Search (use azure-cognitive-search).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-12"
+  generated_at: "2026-07-19"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Translator Skill
@@ -30,7 +30,7 @@ This skill requires **network access** to fetch documentation content:
 | Limits & Quotas | L61-L67 | Language/feature and locale support matrices, plus usage limits and quotas for Azure Translator text, document translation, and Translator Pro. |
 | Security | L68-L79 | Securing Azure Translator: encryption, keys, auth (Entra ID, SAS, managed identities), firewalls/VNet endpoints, and protecting data and deployments. |
 | Configuration | L80-L105 | Configuring Azure Translator and Custom Translator: containers, resources, APIs, parameters, filters, tagging, dictionaries, alignment, monitoring, and sovereign cloud setup. |
-| Integrations & Coding Patterns | L106-L143 | Patterns and code for calling Translator REST/SDK: text, transliteration, neural dictionary, custom/adaptive models, containers, document batch/sync APIs, jobs, status, and supported formats. |
+| Integrations & Coding Patterns | L106-L143 | Patterns and code for integrating Azure Translator: REST/SDK usage, text and document translation (sync/async), jobs/status APIs, containers, glossaries, transliteration, and adaptive/custom models. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -111,7 +111,7 @@ This skill requires **network access** to fetch documentation content:
 | Use Translator container text translation parameters | https://learn.microsoft.com/en-us/azure/ai-services/translator/containers/translate-text-parameters |
 | Use Translator container transliteration API parameters | https://learn.microsoft.com/en-us/azure/ai-services/translator/containers/transliterate-text-parameters |
 | Call Translator API using a Custom Translator model | https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/how-to/translate-with-custom-model |
-| Integrate asynchronous batch document translation with Blob Storage | https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/latest/quickstarts/asynchronous |
+| Use asynchronous batch document translation with Azure | https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/latest/quickstarts/asynchronous |
 | Integrate synchronous single-file document translation API | https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/latest/quickstarts/synchronous |
 | Cancel an asynchronous document translation job | https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/latest/rest-api/cancel-translation |
 | Retrieve status for all documents in a job | https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/latest/rest-api/get-status-all-documents |
@@ -120,7 +120,7 @@ This skill requires **network access** to fetch documentation content:
 | Get status of a specific translation job | https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/latest/rest-api/get-status-specific-translation |
 | Query supported document formats for translation | https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/latest/rest-api/get-supported-document-formats |
 | Query supported glossary formats for translation | https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/latest/rest-api/get-supported-glossary-formats |
-| Start asynchronous batch document translation jobs | https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/latest/rest-api/translate-asynchronous |
+| Call Azure Document Translation asynchronous REST API | https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/latest/rest-api/translate-asynchronous |
 | Call synchronous document translation REST endpoint | https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/latest/rest-api/translate-synchronous |
 | Cancel a batch document translation job | https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/reference/cancel-translation |
 | Get status for a specific document in a job | https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/reference/get-document-status |
