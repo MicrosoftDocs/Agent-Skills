@@ -53,10 +53,10 @@ confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Data 
 - **Unclassified**: 55
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 4
-- **Unchanged**: 197
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 203
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-health-data-services/azure-health-data-services.csv`
 
 ## Classification Statistics
@@ -75,26 +75,6 @@ confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Data 
 | *(Unclassified)* | 55 | 27.1% |
 
 ## Changes
-
-### New Pages
-
-- [SMART on FHIR proxy](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/smart-on-fhir-proxy)
-- [CMS Interoperability and Patient Access rule overview](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/centers-for-medicare-tutorial-introduction)
-
-### Updated Pages
-
-- [SMART on FHIR](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/smart-on-fhir)
-  - Updated: 2025-12-05T08:00:00.000Z → 2026-01-26T18:11:00.000Z
-- [SMART on FHIR](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/smart-on-fhir)
-  - Updated: 2025-11-24T23:17:00.000Z → 2026-07-14T22:16:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/fhir-faq)
-  - Updated: 2026-01-26T18:11:00.000Z → 2026-07-14T22:16:00.000Z
-- [Migration FAQ](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/migration-faq)
-  - Updated: 2026-02-25T08:00:00.000Z → 2026-07-14T22:16:00.000Z
-
-### Deleted Pages
-
-- ~~CMS Interoperability and Patient Access rule introduction~~ (https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/centers-for-medicare-tutorial-introduction)
 
 ## Classified Pages
 

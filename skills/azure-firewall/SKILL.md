@@ -1,9 +1,9 @@
 ---
 name: azure-firewall
-description: Expert knowledge for Azure Firewall development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring TLS inspection, DNAT/SNAT, DNS proxy, hub-and-spoke routing, or Azure Firewall Premium deployments, and other Azure Firewall related development tasks. Not for Azure Web Application Firewall (use azure-web-application-firewall), Azure DDos Protection (use azure-ddos-protection), Azure Virtual Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan).
+description: Expert knowledge for Azure Firewall development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring TLS inspection, DNAT/SNAT rules, DNS proxy, hub-and-spoke routing, or Premium firewall deployments, and other Azure Firewall related development tasks. Not for Azure Firewall Manager (use azure-firewall-manager), Azure Virtual Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan), Azure Web Application Firewall (use azure-web-application-firewall).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-19"
+  generated_at: "2026-07-26"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Firewall Skill
@@ -30,9 +30,9 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L60-L71 | Designing Azure Firewall network architectures: hub-and-spoke, forced tunneling, load balancer integration, hybrid/AVD/M365 protection, and DNAT for overlapping/private IP networks. |
 | Limits & Quotas | L72-L81 | Azure Firewall capacity, IP and SNAT port limits, prescaling options, TCP idle timeouts, and how to scale/extend outbound connectivity (including via NAT Gateway V2). |
 | Security | L82-L95 | Azure Firewall security setup: compliance, RBAC/permissions, Azure Policy, TLS inspection and CA chains, threat intel, DNAT, AKS and hybrid network protection, and portal deployment. |
-| Configuration | L96-L119 | Configuring Azure Firewall features and policies: IP groups, DNS, DNAT/SNAT, dual-stack, explicit proxy, logging/monitoring, Premium features, and PowerShell-based rule and policy management. |
-| Integrations & Coding Patterns | L120-L124 | Configuring Azure Firewall to securely access Azure Storage via SFTP, including required rules, network paths, and integration patterns for SFTP traffic. |
-| Deployment | L125-L132 | How to deploy Azure Firewall (including Premium) with IP Groups using Bicep/ARM/Terraform, and integrate with Azure DDoS Protection, including basic configuration steps |
+| Configuration | L96-L120 | Configuring Azure Firewall features: rules, policies, IP groups, DNAT/SNAT, DNS, HTTP headers, explicit proxy, IPv6, logging/monitoring, advanced/Premium options, and PowerShell-based management. |
+| Integrations & Coding Patterns | L121-L125 | Configuring Azure Firewall to securely access Azure Storage via SFTP, including required rules, network paths, and integration patterns for SFTP traffic. |
+| Deployment | L126-L133 | How to deploy Azure Firewall (including Premium) with IP Groups using Bicep/ARM/Terraform, and integrate with Azure DDoS Protection, including basic configuration steps |
 
 ### Troubleshooting
 | Topic | URL |
@@ -96,6 +96,7 @@ This skill requires **network access** to fetch documentation content:
 ### Configuration
 | Topic | URL |
 |-------|-----|
+| Configure HTTP header insertion in Azure Firewall | https://learn.microsoft.com/en-us/azure/firewall/configure-http-header-insertion |
 | Create and manage Azure Firewall IP Groups | https://learn.microsoft.com/en-us/azure/firewall/create-ip-group |
 | Set customer-controlled maintenance windows for Azure Firewall | https://learn.microsoft.com/en-us/azure/firewall/customer-controlled-maintenance |
 | Configure Azure Firewall for dual stack IPv4/IPv6 | https://learn.microsoft.com/en-us/azure/firewall/deploy-dual-stack-firewall |

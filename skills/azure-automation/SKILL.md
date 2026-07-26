@@ -1,9 +1,9 @@
 ---
 name: azure-automation
-description: Expert knowledge for Azure Automation development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building Azure Automation runbooks, DSC/State Configuration, Hybrid Runbook Workers, Private Link, or AMA-based Change Tracking, and other Azure Automation related development tasks. Not for Azure Functions (use azure-functions), Azure Logic Apps (use azure-logic-apps), Azure Scheduler (use azure-scheduler), Azure Update Manager (use azure-update-manager).
+description: Expert knowledge for Azure Automation development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when securing Automation accounts, configuring runbooks/DSC, using Hybrid Workers, integrating external services, or deploying at scale, and other Azure Automation related development tasks. Not for Azure Functions (use azure-functions), Azure Logic Apps (use azure-logic-apps), Azure Scheduler (use azure-scheduler), Azure Update Manager (use azure-update-manager).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-19"
+  generated_at: "2026-07-26"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Automation Skill
@@ -26,12 +26,12 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L36-L46 | Diagnosing and fixing Azure Automation issues: runbook failures, DSC/State Configuration, Hybrid Runbook Workers, managed identities, shared resources, and collecting logs for support. |
 | Best Practices | L47-L56 | Best practices for structuring and running Automation runbooks: modular parent-child design, execution patterns, error handling, stream/output usage, and avoiding context/locking issues. |
-| Decision Making | L57-L65 | Guidance for planning and migrating Azure Automation: runbook types, Orchestrator/runbook/agent/Hybrid Worker migrations, Run As → managed identity, and module/AzureRM to Az updates. |
-| Limits & Quotas | L66-L72 | Azure Automation capacity limits, quotas, and supported configurations, plus Change Tracking & Inventory support details when using the Azure Monitor Agent (AMA). |
-| Security | L73-L93 | Securing Automation accounts: identities (system/user-assigned), RBAC, auth methods, encryption, certificates/credentials, Private Link, Azure Policy, and Terraform-based secure provisioning. |
-| Configuration | L94-L137 | Configuring Azure Automation runbooks, DSC/State Configuration, Hybrid Runbook Workers, schedules, modules/packages, alerts, policies, and integrations (VS Code, source control, ARM, Azure Monitor). |
+| Decision Making | L57-L65 | Guidance on choosing runbook types and planning migrations for Azure Automation, including Orchestrator runbooks, Log Analytics/AMA, agent workers, and Run As to managed identities. |
+| Limits & Quotas | L66-L73 | Limits, quotas, and version details for Azure Automation: DSC extension history, Automation account capacity, job/runbook limits, and Change Tracking/Inventory support matrix with AMA. |
+| Security | L74-L94 | Securing Automation accounts: identities (system/user-assigned), Entra auth, RBAC, encryption, credentials/certs, private endpoints, policies, and security best practices. |
+| Configuration | L95-L137 | Configuring Azure Automation runbooks, DSC/State Configuration, Hybrid Runbook Workers, schedules, modules/packages, alerts, policies, and integrations (VS Code, source control, ARM, Azure Monitor). |
 | Integrations & Coding Patterns | L138-L150 | Patterns for integrating runbooks with AWS, ARM/SQL/Office 365, webhooks, email (SendGrid), Azure Monitor logging, and using the graphical runbook SDK with managed identities |
-| Deployment | L151-L157 | Guides for deploying resilient Automation accounts, setting up disaster recovery, and installing/configuring Hybrid Runbook Workers (Windows/Linux, agent- and extension-based) plus DSC/Chocolatey CI/CD. |
+| Deployment | L151-L157 | Guides for deploying Automation resources: setting up DSC continuous deployment with Chocolatey and installing/configuring Windows and Linux Hybrid Runbook Worker agents (agent- and extension-based). |
 
 ### Troubleshooting
 | Topic | URL |
@@ -60,12 +60,13 @@ This skill requires **network access** to fetch documentation content:
 | Migrate System Center Orchestrator runbooks to Azure Automation | https://learn.microsoft.com/en-us/azure/automation/automation-orchestrator-migration |
 | Choose appropriate Azure Automation runbook types | https://learn.microsoft.com/en-us/azure/automation/automation-runbook-types |
 | Migrate Change Tracking from Log Analytics agent to AMA | https://learn.microsoft.com/en-us/azure/automation/change-tracking/guidance-migration-log-analytics-monitoring-agent |
-| Migrate agent-based Hybrid Workers to extension-based workers | https://learn.microsoft.com/en-us/azure/automation/migrate-existing-agent-based-hybrid-worker-to-extension-based-workers |
+| Migrate agent-based workers to extension-based | https://learn.microsoft.com/en-us/azure/automation/migrate-existing-agent-based-hybrid-worker-to-extension-based-workers |
 | Plan and execute migration from Run As to managed identities | https://learn.microsoft.com/en-us/azure/automation/migrate-run-as-accounts-managed-identity |
 
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
+| Reference Azure DSC extension version history details | https://learn.microsoft.com/en-us/azure/automation/automation-dsc-extension-history |
 | View and manage Azure Automation limits and quotas | https://learn.microsoft.com/en-us/azure/automation/automation-limits-quotas |
 | Azure Automation subscription limits and quotas reference | https://learn.microsoft.com/en-us/azure/automation/automation-subscription-limits-faq |
 | Support matrix for Change Tracking and Inventory with AMA | https://learn.microsoft.com/en-us/azure/azure-change-tracking-inventory/change-tracking-inventory-support-matrix |
@@ -74,7 +75,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Configure user-assigned managed identity for Azure Automation | https://learn.microsoft.com/en-us/azure/automation/add-user-assigned-identity |
-| Understand and configure Azure Automation data security | https://learn.microsoft.com/en-us/azure/automation/automation-managing-data |
+| Configure and understand Azure Automation data security | https://learn.microsoft.com/en-us/azure/automation/automation-managing-data |
 | Assign Azure RBAC roles and permissions for Automation accounts | https://learn.microsoft.com/en-us/azure/automation/automation-role-based-access-control |
 | Configure encryption for secure assets in Azure Automation | https://learn.microsoft.com/en-us/azure/automation/automation-secure-asset-encryption |
 | Apply security best practices for Azure Automation accounts | https://learn.microsoft.com/en-us/azure/automation/automation-security-guidelines |
@@ -103,7 +104,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure STIG-based DSC data in Azure Automation | https://learn.microsoft.com/en-us/azure/automation/automation-dsc-configuration-based-on-stig |
 | Convert DSC configurations to composite resources | https://learn.microsoft.com/en-us/azure/automation/automation-dsc-create-composite |
 | Send State Configuration data to Azure Monitor Logs | https://learn.microsoft.com/en-us/azure/automation/automation-dsc-diagnostics |
-| Use Azure DSC extension versions and capabilities | https://learn.microsoft.com/en-us/azure/automation/automation-dsc-extension-history |
 | Configure core Azure Automation State Configuration tasks | https://learn.microsoft.com/en-us/azure/automation/automation-dsc-getting-started |
 | Enable and onboard machines to State Configuration | https://learn.microsoft.com/en-us/azure/automation/automation-dsc-onboarding |
 | Remediate noncompliant servers with State Configuration | https://learn.microsoft.com/en-us/azure/automation/automation-dsc-remediate |
@@ -154,4 +154,4 @@ This skill requires **network access** to fetch documentation content:
 | Set up continuous deployment with DSC and Chocolatey | https://learn.microsoft.com/en-us/azure/automation/automation-dsc-cd-chocolatey |
 | Deploy Linux Hybrid Runbook Worker agent | https://learn.microsoft.com/en-us/azure/automation/automation-linux-hrw-install |
 | Deploy agent-based Windows Hybrid Runbook Workers in Automation | https://learn.microsoft.com/en-us/azure/automation/automation-windows-hrw-install |
-| Deploy extension-based Hybrid Runbook Workers on Windows and Linux | https://learn.microsoft.com/en-us/azure/automation/extension-based-hybrid-runbook-worker-install |
+| Deploy extension-based Hybrid Runbook Workers | https://learn.microsoft.com/en-us/azure/automation/extension-based-hybrid-runbook-worker-install |

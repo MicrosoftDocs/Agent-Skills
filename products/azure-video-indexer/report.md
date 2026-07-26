@@ -46,8 +46,8 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI Cust
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 17
-- **Unchanged**: 50
+- **Updated Pages**: 0
+- **Unchanged**: 67
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-video-indexer/azure-video-indexer.csv`
 
@@ -65,43 +65,6 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI Cust
 | *(Unclassified)* | 42 | 62.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [Translate transcripts](https://learn.microsoft.com/en-us/azure/azure-video-indexer/transcription-translation-lid-insight)
-  - Updated: 2026-01-06T23:10:00.000Z → 2026-07-14T06:02:00.000Z
-- [Summaries overview](https://learn.microsoft.com/en-us/azure/azure-video-indexer/text-summarization-overview)
-  - Updated: 2025-10-06T08:00:00.000Z → 2026-07-16T06:02:00.000Z
-- [Generate summaries](https://learn.microsoft.com/en-us/azure/azure-video-indexer/text-summarization-task)
-  - Updated: 2025-10-06T08:00:00.000Z → 2026-07-14T22:13:00.000Z
-- [Create prompts](https://learn.microsoft.com/en-us/azure/azure-video-indexer/prompt-overview)
-  - Updated: 2025-10-06T08:00:00.000Z → 2026-07-16T06:02:00.000Z
-- [Connect to other AI models](https://learn.microsoft.com/en-us/azure/azure-video-indexer/generative_ai_with_vi)
-  - Updated: 2025-10-06T08:00:00.000Z → 2026-07-16T06:02:00.000Z
-- [Bring your own model](https://learn.microsoft.com/en-us/azure/azure-video-indexer/bring-your-own-model-overview)
-  - Updated: 2025-10-06T08:00:00.000Z → 2026-07-16T06:02:00.000Z
-- [Language model](https://learn.microsoft.com/en-us/azure/azure-video-indexer/customize-language-model-how-to)
-  - Updated: 2025-10-07T22:06:00.000Z → 2026-07-14T06:02:00.000Z
-- [Brands model](https://learn.microsoft.com/en-us/azure/azure-video-indexer/customize-brands-model-how-to)
-  - Updated: 2025-10-06T08:00:00.000Z → 2026-07-14T06:02:00.000Z
-- [Connect Azure OpenAI](https://learn.microsoft.com/en-us/azure/azure-video-indexer/connect-azure-open-ai-task)
-  - Updated: 2025-10-06T08:00:00.000Z → 2026-07-16T06:02:00.000Z
-- [Support matrix and limitations](https://learn.microsoft.com/en-us/azure/azure-video-indexer/avi-support-matrix)
-  - Updated: 2025-11-10T23:06:00.000Z → 2026-07-13T22:11:00.000Z
-- [What is Azure AI Video Indexer (VI)?](https://learn.microsoft.com/en-us/azure/azure-video-indexer/video-indexer-overview)
-  - Updated: 2025-11-18T16:09:00.000Z → 2026-07-13T08:00:00.000Z
-- [Try web portal](https://learn.microsoft.com/en-us/azure/azure-video-indexer/try-vi-web-portal-quickstart)
-  - Updated: 2025-10-06T08:00:00.000Z → 2026-07-14T22:13:00.000Z
-- [Call APIs](https://learn.microsoft.com/en-us/azure/azure-video-indexer/video-indexer-use-apis)
-  - Updated: 2026-05-11T17:14:00.000Z → 2026-07-14T06:02:00.000Z
-- [Account types](https://learn.microsoft.com/en-us/azure/azure-video-indexer/accounts-overview)
-  - Updated: 2025-10-06T08:00:00.000Z → 2026-07-13T08:00:00.000Z
-- [Configure indexing](https://learn.microsoft.com/en-us/azure/azure-video-indexer/indexing-configuration-guide)
-  - Updated: 2025-10-06T08:00:00.000Z → 2026-07-14T06:02:00.000Z
-- [Upload and index media](https://learn.microsoft.com/en-us/azure/azure-video-indexer/upload-index-media)
-  - Updated: 2026-05-11T17:14:00.000Z → 2026-07-13T22:11:00.000Z
-- [Detect scenes, shots & keyframes](https://learn.microsoft.com/en-us/azure/azure-video-indexer/scene-shot-keyframe-detection-insight)
-  - Updated: 2025-10-06T08:00:00.000Z → 2026-07-14T22:13:00.000Z
 
 ## Classified Pages
 

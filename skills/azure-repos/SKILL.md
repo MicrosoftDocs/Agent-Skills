@@ -1,9 +1,9 @@
 ---
 name: azure-repos
-description: Expert knowledge for Azure Repos development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when managing Git/TFVC repos, branch policies/PR checks, Copilot/security scans, CodeQL/GHAS, or TFVC branching, and other Azure Repos related development tasks. Not for Azure DevOps (use azure-devops), Azure Pipelines (use azure-pipelines), Azure Artifacts (use azure-artifacts), Azure Boards (use azure-boards).
+description: Expert knowledge for Azure Repos development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when managing Git/TFVC repos, branch policies/PR checks, CodeQL/secret scans, or GitHub Advanced Security, and other Azure Repos related development tasks. Not for Azure DevOps (use azure-devops), Azure Pipelines (use azure-pipelines), Azure Boards (use azure-boards), Azure Test Plans (use azure-test-plans).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-19"
+  generated_at: "2026-07-26"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Repos Skill
@@ -25,8 +25,8 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L36-L51 | Diagnosing and fixing Git/Azure Repos and TFVC issues (locks, merge conflicts, push/RPC failures, undo/recover), plus troubleshooting CodeQL, dependency, and secret scanning in Azure DevOps/GHAS |
-| Best Practices | L52-L66 | Git and TFVC best practices: branching, merges, large files, history cleanup, cross‑platform compatibility, author/identity management, repo health, and post‑migration validation. |
-| Decision Making | L67-L74 | Guidance on choosing and migrating version control in Azure DevOps: Git vs TFVC, local vs server workspaces, mixed Git/TFVC use, and migration paths from TFVC/SVN to Git or GitHub. |
+| Best Practices | L52-L65 | Git and TFVC best practices: branching, merges, large files, history cleanup, cross‑platform compatibility, author/identity management, repo health, and post‑migration validation. |
+| Decision Making | L66-L74 | Guidance on choosing Git vs TFVC, local vs server workspaces, and planning migrations from TFVC or SVN to Git, including handling large files in Azure Repos. |
 | Architecture & Design Patterns | L75-L83 | Designing and choosing TFVC branching structures/strategies, planning strategic branches, implementing feature isolation, and managing branches for DevOps workflows in Azure Repos. |
 | Limits & Quotas | L84-L91 | Limits, quotas, and monitoring for Azure Repos: Git repo size/usage limits, Enterprise Live Migration cutover/sync windows, and supported ecosystems for GitHub Advanced Security dependency scanning. |
 | Security | L92-L117 | Securing Azure Repos and TFVC: auth methods (PAT/SSH/Entra, credential managers, Xcode/Go), permissions, branch policies/locks, secure imports, and GitHub Advanced Security setup and management. |
@@ -56,7 +56,6 @@ This skill requires **network access** to fetch documentation content:
 | Adopt effective Git branching strategies in Azure Repos | https://learn.microsoft.com/en-us/azure/devops/repos/git/git-branching-guidance?view=azure-devops |
 | Manage author names and emails for Azure Repos commits | https://learn.microsoft.com/en-us/azure/devops/repos/git/git-names?view=azure-devops |
 | Configure Git ignore rules for Azure Repos projects | https://learn.microsoft.com/en-us/azure/devops/repos/git/ignore-files?view=azure-devops |
-| Manage large binary files in Azure Repos Git | https://learn.microsoft.com/en-us/azure/devops/repos/git/manage-large-files?view=azure-devops |
 | Choose merge strategies and use squash merges in Azure Repos | https://learn.microsoft.com/en-us/azure/devops/repos/git/merging-with-squash?view=azure-devops |
 | Ensure cross-platform Git compatibility in Azure Repos | https://learn.microsoft.com/en-us/azure/devops/repos/git/os-compatibility?view=azure-devops |
 | Remove large binaries from Azure Repos Git history | https://learn.microsoft.com/en-us/azure/devops/repos/git/remove-binaries?view=azure-devops |
@@ -68,6 +67,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Plan and execute TFVC to Git migration in Azure DevOps | https://learn.microsoft.com/en-us/azure/devops/repos/git/import-from-tfvc?view=azure-devops |
+| Choose storage for large files in Azure Repos Git | https://learn.microsoft.com/en-us/azure/devops/repos/git/manage-large-files?view=azure-devops |
 | Decide how to migrate from SVN to Git in Azure DevOps | https://learn.microsoft.com/en-us/azure/devops/repos/git/perform-migration-from-svn-to-git?view=azure-devops |
 | Choose between Git and TFVC in Azure Repos | https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/comparison-git-tfvc?view=azure-devops |
 | Choose between local and server TFVC workspaces | https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/decide-between-using-local-server-workspace?view=azure-devops |

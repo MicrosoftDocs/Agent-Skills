@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-12'
+generated_at: '2026-07-26'
 category_descriptions:
   scenarios: 'End-to-end adoption patterns for AI agents, AKS, RHEL, ARO, AVD, Citrix,
     AVS, Oracle, SAP: landing zones, identity, networking, security, BCDR, automation,
@@ -22,21 +22,20 @@ category_descriptions:
   organization: 'Designing cloud org structures, roles, and RACI: governance, CCoE,
     DevOps, security, operations, data/analytics, cost management, and breaking silos
     for Azure adoption and operations'
-  readiness: 'Designing and operating Azure landing zones: network topologies, identity,
-    subscriptions, governance, automation/DevOps, multitenant setups, and workload-specific
-    patterns (AVS, SAP, Oracle, AKS, Arc).'
+  readiness: 'Designing and operating Azure landing zones: network topologies, connectivity,
+    identity, subscriptions, governance, automation/DevOps, multitenancy, and workload-specific
+    setups (AKS, AVS, SAP, Oracle, AVD).'
   security: Security design and governance for Azure landing zones, including Zero
     Trust, IAM, encryption, DevOps, AKS, analytics, SAP/Oracle, Arc, and ongoing security
     operations.
 skill_description: Expert guidance for planning and executing cloud adoption using
   Azure Cloud Adoption Framework. Covers strategy, planning, readiness & landing zones,
   adoption patterns, governance, security, operations & management, organization &
-  teams, and adoption scenarios. Use when adopting AKS/Arc, AVS/VMware, SAP/Oracle,
-  AVD/Citrix, or AI agent workloads on Azure, and other Azure Cloud Adoption Framework
-  related development tasks.
-use_when: Use when adopting AKS/Arc, AVS/VMware, SAP/Oracle, AVD/Citrix, or AI agent
-  workloads on Azure, and other Azure Cloud Adoption Framework related development
-  tasks.
+  teams, and adoption scenarios. Use when deploying AI agents, AKS, AVS, AVD, SAP/Oracle
+  workloads, or Azure landing zones, and other Azure Cloud Adoption Framework related
+  development tasks.
+use_when: Use when deploying AI agents, AKS, AVS, AVD, SAP/Oracle workloads, or Azure
+  landing zones, and other Azure Cloud Adoption Framework related development tasks.
 ---
 # Azure Cloud Adoption Framework Crawl Report
 
@@ -50,8 +49,8 @@ use_when: Use when adopting AKS/Arc, AVS/VMware, SAP/Oracle, AVD/Citrix, or AI a
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 328
+- **Updated Pages**: 1
+- **Unchanged**: 327
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cloud-adoption-framework/azure-cloud-adoption-framework.csv`
 
@@ -71,6 +70,11 @@ use_when: Use when adopting AKS/Arc, AVS/VMware, SAP/Oracle, AVD/Citrix, or AI a
 | *(Unclassified)* | 9 | 2.7% |
 
 ## Changes
+
+### Updated Pages
+
+- [Abbreviations for Azure resources](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations)
+  - Updated: 2025-05-23T08:00:00.000Z → 2026-07-21T15:04:00.000Z
 
 ## Classified Pages
 
@@ -118,6 +122,7 @@ use_when: Use when adopting AKS/Arc, AVS/VMware, SAP/Oracle, AVD/Citrix, or AI a
 | [Security](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/azure-red-hat-enterprise-linux/security) | scenarios | 0.88 | Scenario-specific security design and recommendations for RHEL environments on Azure, spanning multiple security areas and requiring coordinated processes, clearly CAF scenario guidance. |
 | [1. Plan migration](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/migrate/plan-migration) | planning | 0.86 | Provides concrete methodologies for workload sequencing, data transfer paths, and rollback strategies, translating strategy into actionable migration plans—expert migration planning guidance. |
 | [3. Execute migration](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/migrate/execute-migration) | adoption-patterns | 0.86 | Provides step-by-step execution guidance for offline and near-zero-downtime migrations, including stakeholder communication, environment prep, data migration execution, validation, and post-migration support—detailed execution patterns beyond generic concepts. |
+| [Abbreviations for Azure resources](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations) | readiness | 0.86 | Page provides a detailed, prescriptive table of recommended abbreviations mapped to specific Azure resource types and provider namespaces, plus guidance on using the Azure Naming Tool. These concrete naming standards are implementation-specific expert knowledge not reliably inferred from general training data and directly support landing zone and environment preparation, aligning best with readiness. |
 | [Application connectivity design](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/oracle-on-azure/application-connectivity-design) | readiness | 0.86 | Gives detailed network design and configuration patterns for app-to-database connectivity in Azure VNets for Oracle Exadata Database@Azure. |
 | [Azure VMware Solution landing zone accelerator](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-vmware/enterprise-scale-landing-zone) | scenarios | 0.86 | The page provides a scenario-specific landing zone accelerator for Microsoft Azure VMware Solution, including ARM/Bicep/Terraform reference implementations and architecture aligned to CAF enterprise-scale practices. This is workload-specific (Azure VMware Solution) CAF adaptation with detailed technical design and deployment guidance, matching the 'scenarios' sub-skill. It contains expert, implementation-level knowledge that goes beyond generic CAF concepts. |
 | [Azure landing zones](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/sap/ready) | readiness | 0.86 | SAP-specific landing zone preparation guidance including scalability, security, and governance services in the initial environment. |
@@ -311,7 +316,6 @@ use_when: Use when adopting AKS/Arc, AVS/VMware, SAP/Oracle, AVD/Citrix, or AI a
 | [7. Govern](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/secure/govern) | security | 0.78 | Connects business priorities to security architecture, standards, and policies, and describes security governance teams and posture improvement—security governance methodology. |
 | [8. Manage](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/secure/manage) | security | 0.78 | Provides guidance for ongoing security posture management, incident preparedness, and integrating security into daily operations—security operations patterns at scale. |
 | [AI adoption](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/strategy) | strategy | 0.78 | Page focuses on identifying AI business drivers, selecting AI use cases, mapping them to Microsoft AI solutions, and building a responsible, data-driven AI strategy. It includes organization-level outcome definition and alignment guidance specific to AI adoption, which goes beyond generic LLM knowledge and fits the CAF 'strategy' sub-skill. |
-| [Abbreviations for Azure resources](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations) | readiness | 0.78 | Provides a large expert-curated table of recommended abbreviations mapped to Azure resources and provider namespaces, which is detailed configuration guidance for environment setup (readiness). |
 | [Application identity and access](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/identity-access-application-access) | readiness | 0.78 | Gives concrete guidance for how cloud-native application components authenticate to each other and manage end-user identities in Azure. This is detailed landing zone/application IAM design, fitting readiness rather than generic security methodology. |
 | [Azure Arc landing zone accelerator](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/hybrid/enterprise-scale-landing-zone) | readiness | 0.78 | The page provides detailed guidance on integrating Azure Arc-managed hybrid and multicloud resources into Azure landing zones, including how Arc resources are projected into the Azure control plane and incorporated into landing zone architecture. This is expert, implementation-focused content about extending landing zone design and governance to non-Azure resources, which aligns with readiness & landing zones rather than general scenarios or conceptual overviews. |
 | [Azure Kubernetes Service application landing zone accelerator](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/aks/landing-zone-accelerator) | readiness | 0.78 | Scenario-specific CAF guidance for AKS landing zones, including detailed architecture and deployment considerations that go beyond generic AKS knowledge and align with landing zone and environment preparation. |

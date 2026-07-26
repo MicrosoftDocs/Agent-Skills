@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-05'
+generated_at: '2026-07-26'
 category_descriptions:
   limits-quotas: 'ACI limits, quotas, and behaviors: vCPU/memory caps, big containers,
     regional capacity checks, standby pool constraints, and VNet-related resource
@@ -13,9 +13,9 @@ category_descriptions:
   configuration: 'Configuring ACI container groups: YAML, env vars, DNS, volumes,
     probes, GPUs, restart/entrypoint, standby pools, networking, lifecycle, logging,
     and monitoring.'
-  security: 'Securing Azure Container Instances: TLS/HTTPS setup, image and secret
-    protection, managed identities, RBAC, DNS safety, ACR auth, CMK encryption, and
-    Azure Policy enforcement.'
+  security: 'Securing ACI: TLS/HTTPS setup, image and secret protection, CMK encryption,
+    managed identities and RBAC, ACR auth, secret volumes, DNS reuse protection, and
+    Azure Policy.'
   troubleshooting: Diagnosing ACI issues by viewing logs/events, understanding provisioning/runtime
     states, and troubleshooting common deployment, startup, and container runtime
     failures.
@@ -51,8 +51,8 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 83
+- **Updated Pages**: 1
+- **Unchanged**: 82
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-container-instances/azure-container-instances.csv`
 
@@ -72,6 +72,11 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 
 ## Changes
 
+### Updated Pages
+
+- [Use a managed identity](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-managed-identity)
+  - Updated: 2025-11-21T05:55:00.000Z → 2026-07-22T17:03:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
@@ -83,10 +88,10 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | [Deploy using a managed identity](https://learn.microsoft.com/en-us/azure/container-instances/using-azure-container-registry-mi) | security | 0.80 | Shows configuring managed identity access to ACR, including private endpoint scenarios; involves ACI-specific identity and access configuration. |
 | [Deploy using a service principal](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-using-azure-container-registry) | security | 0.80 | Describes using Entra service principals and Key Vault to access ACR; includes security-related configuration (identity, credentials) specific to ACI-ACR integration. |
 | [Troubleshoot common issues](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-troubleshooting) | troubleshooting | 0.80 | Organized around common ACI failure symptoms with specific causes and resolutions, likely including error messages and diagnostic steps. |
-| [Use a managed identity](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-managed-identity) | security | 0.80 | Covers ACI-specific steps and configuration fields to attach managed identities and authenticate to other Azure services, including identity types and scopes. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-faq) | limits-quotas | 0.78 | The ACI FAQ includes concrete, product-specific details such as maximum container group sizes, supported OS and resource constraints, networking and IP behavior, and other numeric or tightly scoped service behaviors that function as de facto limits/quotas and are unlikely to be fully known from pretraining. These are expert, service-specific constraints rather than generic conceptual information. |
 | [Azure file share](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-volume-azure-files) | configuration | 0.75 | Provides ACI-specific volume mount configuration (share names, storage account keys, mount paths) and constraints for persisting state. |
 | [Monitoring data reference](https://learn.microsoft.com/en-us/azure/container-instances/monitor-azure-container-instances-reference) | configuration | 0.75 | Reference for all ACI monitoring signals (metrics, logs, dimensions), including names and meanings, which are product-specific configuration/usage details. |
+| [Use a managed identity](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-managed-identity) | security | 0.72 | Page describes how to enable and use managed identities specifically for Azure Container Instances, including product-specific identity configuration details and authentication patterns to other Azure services, which fall under security-focused configuration and are not purely conceptual. |
 | [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/container-instances/policy-reference) | security | 0.70 | Lists concrete built-in Azure Policy definitions specific to Azure Container Instances, including policy names and effects that map directly to security and governance configuration. This is product-specific security/IAM configuration knowledge that goes beyond generic concepts. |
 | [Best practices and considerations](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-best-practices-and-considerations) | best-practices | 0.70 | Explicitly a best practices article; likely includes ACI-specific recommendations, gotchas, and configuration guidance beyond generic container advice. |
 | [Cloned Git repo](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-volume-gitrepo) | configuration | 0.70 | Shows how to configure ACI gitRepo volumes to clone repositories into containers, including Linux-only limitations and config fields. |

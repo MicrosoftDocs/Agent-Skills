@@ -3,7 +3,7 @@ name: azure-container-instances
 description: Expert knowledge for Azure Container Instances development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and deployment. Use when configuring ACI networking, standby pools, Spot containers, GitHub Actions deploys, or secure ACR access, and other Azure Container Instances related development tasks. Not for Azure Container Apps (use azure-container-apps), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Virtual Machines (use azure-virtual-machines), Azure App Service (use azure-app-service).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-05"
+  generated_at: "2026-07-26"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Container Instances Skill
@@ -29,7 +29,7 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L48-L53 | Guidance on cost-optimizing ACI with Spot containers and using prediction-based sizing to configure and right-size Azure Container Instances standby pools. |
 | Architecture & Design Patterns | L54-L60 | Design patterns for giving ACI containers static inbound/outbound IPs using Application Gateway, firewalls, and NAT Gateway for controlled, predictable network egress/ingress. |
 | Limits & Quotas | L61-L69 | ACI limits, quotas, and behaviors: vCPU/memory caps, big containers, regional capacity checks, standby pool constraints, and VNet-related resource limitations. |
-| Security | L70-L84 | Securing Azure Container Instances: TLS/HTTPS setup, image and secret protection, managed identities, RBAC, DNS safety, ACR auth, CMK encryption, and Azure Policy enforcement. |
+| Security | L70-L84 | Securing ACI: TLS/HTTPS setup, image and secret protection, CMK encryption, managed identities and RBAC, ACR auth, secret volumes, DNS reuse protection, and Azure Policy. |
 | Configuration | L85-L117 | Configuring ACI container groups: YAML, env vars, DNS, volumes, probes, GPUs, restart/entrypoint, standby pools, networking, lifecycle, logging, and monitoring. |
 | Deployment | L118-L121 | Using GitHub Actions to build, push, and automatically deploy container images to Azure Container Instances, including workflow YAML setup and authentication configuration. |
 
@@ -74,7 +74,7 @@ This skill requires **network access** to fetch documentation content:
 | Enable TLS for Azure Container Instances with Nginx sidecar | https://learn.microsoft.com/en-us/azure/container-instances/container-instances-container-group-ssl |
 | Encrypt Azure Container Instances deployment data with customer-managed keys | https://learn.microsoft.com/en-us/azure/container-instances/container-instances-encrypt-data |
 | Secure images and secrets for Azure Container Instances | https://learn.microsoft.com/en-us/azure/container-instances/container-instances-image-security |
-| Enable and use managed identities in Azure Container Instances | https://learn.microsoft.com/en-us/azure/container-instances/container-instances-managed-identity |
+| Configure managed identities for Azure Container Instances | https://learn.microsoft.com/en-us/azure/container-instances/container-instances-managed-identity |
 | Configure RBAC permissions for Azure Container Instances standby pools | https://learn.microsoft.com/en-us/azure/container-instances/container-instances-standby-pool-configure-permissions |
 | Configure ACI to pull images from ACR using service principals | https://learn.microsoft.com/en-us/azure/container-instances/container-instances-using-azure-container-registry |
 | Mount secret volumes in Azure Container Instances | https://learn.microsoft.com/en-us/azure/container-instances/container-instances-volume-secret |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-05'
+generated_at: '2026-07-26'
 category_descriptions:
   limits-quotas: Using Azure region round-trip latency stats to compare network performance
     between regions, plan deployments, and optimize app responsiveness based on measured
@@ -44,10 +44,10 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 - **Unclassified**: 12
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
-- **Unchanged**: 43
-- **Deleted Pages**: 0
+- **Unchanged**: 42
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-networking/azure-networking.csv`
 
 ## Classification Statistics
@@ -63,6 +63,14 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | *(Unclassified)* | 12 | 27.9% |
 
 ## Changes
+
+### New Pages
+
+- [Network monitoring and management overview](https://learn.microsoft.com/en-us/azure/networking/monitoring-management/network-monitoring-management-overview)
+
+### Deleted Pages
+
+- ~~Network monitoring and management overview~~ (https://learn.microsoft.com/en-us/azure/networking/monitoring-management/)
 
 ## Classified Pages
 
@@ -110,9 +118,9 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Azure for network engineers](https://learn.microsoft.com/en-us/azure/networking/azure-for-network-engineers) | 0.10 | Conceptual explanation of how networking in Azure differs from traditional networking; no concrete configs, limits, or troubleshooting content. |
 | [Hybrid connectivity overview](https://learn.microsoft.com/en-us/azure/networking/hybrid-connectivity/hybrid-connectivity) | 0.10 | Conceptual overview of hybrid connectivity options (VPN, ExpressRoute, Virtual WAN) without detailed limits, configs, or decision tables. |
 | [Load balancing and content delivery overview](https://learn.microsoft.com/en-us/azure/networking/load-balancer-content-delivery/load-balancing-content-delivery-overview) | 0.10 | Explains what load balancing and content delivery are and lists services; lacks numeric limits, config parameters, or decision matrices. |
+| [Network monitoring and management overview](https://learn.microsoft.com/en-us/azure/networking/monitoring-management/network-monitoring-management-overview) | 0.10 | High-level conceptual overview of Azure network monitoring and management services without specific limits, configuration tables, error codes, or product-specific decision matrices. |
 | [Network security overview](https://learn.microsoft.com/en-us/azure/networking/security/network-security) | 0.10 | Overview of Azure network security and Zero Trust; no specific RBAC role lists, config parameters, or product-specific security settings. |
 | [Overview](https://learn.microsoft.com/en-us/azure/networking/microsoft-global-network) | 0.10 | Descriptive overview of Microsoft’s global network; mostly marketing/architecture description without actionable configuration or limits. |
 | [Architecture guides](https://learn.microsoft.com/en-us/azure/networking/architecture-guides) | 0.05 | Navigation page pointing to architecture guides; does not itself contain patterns, thresholds, or decision matrices. |
 | [Lumenisity UoS Patents](https://learn.microsoft.com/en-us/azure/networking/lumenisity-patent-list) | 0.05 | Static list of patents; not related to product configuration, limits, troubleshooting, or architectural decision-making. |
-| [Network monitoring and management overview](https://learn.microsoft.com/en-us/azure/networking/monitoring-management/) | 0.05 | Landing/overview page for monitoring and management documentation; described as conceptual, not detailed technical guidance. |
 | [Overview](https://learn.microsoft.com/en-us/azure/networking/design-guide/overview) | - | High-level overview and navigation for the design guide without detailed decision criteria, limits, or configurations. |

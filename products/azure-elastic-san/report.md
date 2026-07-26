@@ -1,17 +1,16 @@
 ---
-generated_at: '2026-07-19'
+generated_at: '2026-07-26'
 category_descriptions:
   integrations: Creating and benchmarking Elastic SAN volumes, plus step-by-step guidance
     to connect Linux and Windows clients using iSCSI and optimize performance.
   best-practices: Performance tuning, benchmarking, and configuration best practices
     for Azure Elastic SAN (including AVS datastores) plus guidance on using snapshots
     for backup.
-  security: Encrypting Elastic SAN with customer-managed keys and configuring secure
-    access via private endpoints, service endpoints, and other network security options
-    for volumes and volume groups.
-  configuration: Configuring, resizing, monitoring, deleting, and safely transitioning
-    Azure Elastic SAN resources, volumes, and iSCSI IQN naming for correct lifecycle
-    and performance management.
+  security: Encrypting Elastic SAN with customer-managed keys and securing access
+    via encryption options, private endpoints, service endpoints, and network configuration
+    for volumes.
+  configuration: Deploying, resizing, deleting, and monitoring Azure Elastic SAN resources/volumes,
+    plus managing IQN naming authority and safe configuration best practices.
   deployment: Guides for migrating Azure VMware Solution (AVS) datastores to Azure
     Elastic SAN, including configuring and using multiple private endpoints for secure
     connectivity.
@@ -29,12 +28,12 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Elastic SAN development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  creating Elastic SAN volumes, AVS datastores, iSCSI clients, CMK encryption, or
-  AKS-integrated storage, and other Azure Elastic SAN related development tasks. Not
-  for Azure Blob Storage (use azure-blob-storage), Azure Files (use azure-files),
+  creating Elastic SAN volumes, AVS datastores, iSCSI clients, private endpoints,
+  or clustered app storage, and other Azure Elastic SAN related development tasks.
+  Not for Azure Blob Storage (use azure-blob-storage), Azure Files (use azure-files),
   Azure NetApp Files (use azure-netapp-files), Azure Managed Lustre (use azure-managed-lustre).
-use_when: Use when creating Elastic SAN volumes, AVS datastores, iSCSI clients, CMK
-  encryption, or AKS-integrated storage, and other Azure Elastic SAN related development
+use_when: Use when creating Elastic SAN volumes, AVS datastores, iSCSI clients, private
+  endpoints, or clustered app storage, and other Azure Elastic SAN related development
   tasks.
 confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure Files
   (use azure-files), Azure NetApp Files (use azure-netapp-files), Azure Managed Lustre
@@ -52,8 +51,8 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure F
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 23
+- **Updated Pages**: 3
+- **Unchanged**: 22
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-elastic-san/azure-elastic-san.csv`
 
@@ -76,10 +75,12 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure F
 
 ### Updated Pages
 
-- [Transition IQN Naming Authority on Connected Volumes](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-transition-iqn-naming-authority)
-  - Updated: 2026-04-22T22:14:00.000Z → 2026-07-13T22:21:00.000Z
-- [Benchmarking performance](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-benchmarking)
-  - Updated: 2026-05-21T22:10:00.000Z → 2026-07-17T22:12:00.000Z
+- [Create an Elastic SAN](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-create)
+  - Updated: 2026-01-09T08:00:00.000Z → 2026-03-27T06:14:00.000Z
+- [Configure customer-managed keys with Key Vault](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-configure-customer-managed-keys)
+  - Updated: 2026-01-13T12:18:00.000Z → 2026-02-13T12:10:00.000Z
+- [Manage customer keys](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-encryption-manage-customer-keys)
+  - Updated: 2026-01-13T08:00:00.000Z → 2026-01-13T23:18:00.000Z
 
 ## Classified Pages
 
@@ -87,15 +88,15 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure F
 |-----------|------|------------|--------|
 | [Troubleshoot your Elastic SAN](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-troubleshoot) | troubleshooting | 0.95 | Explicit troubleshooting article listing common issues, causes, and resolutions. Likely includes specific error messages/codes and diagnostic steps, matching troubleshooting criteria. |
 | [Scale targets](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-scale-targets) | limits-quotas | 0.90 | A scalability and performance targets page for Elastic SAN will list concrete capacity, IOPS, and throughput numbers, often by region or SKU. These numeric targets and constraints are classic limits/quotas information that an LLM wouldn't reliably know from training. |
-| [Configure customer-managed keys with Key Vault](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-configure-customer-managed-keys) | security | 0.85 | Shows how to configure CMK-based encryption for Elastic SAN volume groups using Key Vault via PowerShell/CLI, including key and scope parameters. This is detailed encryption and key management configuration, matching security. |
-| [Manage customer keys](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-encryption-manage-customer-keys) | security | 0.85 | Details lifecycle and management of CMKs (rotation, access control) for Elastic SAN. Contains product-specific key management behaviors and requirements, fitting security. |
 | [Best practices](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-best-practices) | best-practices | 0.80 | Explicitly a best-practices article with product-specific recommendations for client-side settings, MPIO, iSCSI configuration, and deployment sizing to achieve optimal performance. These are concrete, Elastic SAN–specific DO/DON'T guidelines beyond generic storage advice. |
+| [Configure customer-managed keys with Key Vault](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-configure-customer-managed-keys) | security | 0.80 | Customer-managed keys setup for Elastic SAN involves specific security configurations: Key Vault integration, key URIs/versions, required permissions/RBAC roles, and encryption settings on volume groups via CLI/PowerShell. These are product-specific security parameters and procedures that qualify as expert security configuration knowledge. |
 | [Configure private endpoints](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-configure-private-endpoints) | security | 0.80 | Shows how to configure private endpoints for Elastic SAN, including behavior (automatic subnet access, network isolation). This is product-specific secure networking configuration, matching security. |
 | [Connect to Linux](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-connect-linux) | integrations | 0.80 | Linux iSCSI connection article that will include specific package requirements, daemon settings, iSCSI discovery/login commands, and tuning options for optimal performance when using Elastic SAN. These are detailed integration and coding/command patterns unique to this product. |
+| [Manage customer keys](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-encryption-manage-customer-keys) | security | 0.80 | Managing CMKs for Elastic SAN covers detailed security operations: rotating keys, updating key versions, handling key revocation, and required access controls in Key Vault and Elastic SAN. It includes product-specific security settings and role/permission requirements, which are expert-level security configuration details. |
 | [Performance](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-performance) | limits-quotas | 0.80 | Explains how Elastic SAN limits and VM limits interact, including IOPS, throughput allocation, and throttling. Such content typically includes specific numeric limits and allocation rules, fitting limits-quotas. |
 | [Configure service endpoints](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-configure-service-endpoints) | security | 0.75 | Explains configuring service endpoints and virtual network rules for Elastic SAN volume groups. These are specific access control and network security settings, fitting security. |
 | [Connect to Windows](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-connect-windows) | integrations | 0.70 | Windows connection guide for Elastic SAN volumes that is likely to include VM extension settings, iSCSI target/initiator parameters, and OS-specific commands/flags unique to this integration. This is concrete, product-specific connection/config detail rather than generic how-to or conceptual content. |
-| [Create an Elastic SAN](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-create) | configuration | 0.70 | Deployment/how-to article that typically includes Elastic SAN–specific parameters (SAN, volume group, volume properties, network settings) and CLI/PowerShell flags with required/allowed values. These concrete configuration details are product-specific and go beyond generic deployment knowledge, but it doesn't focus on limits, patterns, or troubleshooting. |
+| [Create an Elastic SAN](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-create) | configuration | 0.70 | A create/deploy article for Elastic SAN typically includes product-specific configuration parameters (SAN, volume groups, volumes), required property names, allowed values, and CLI/PowerShell arguments unique to Elastic SAN. These concrete settings and parameter combinations are configuration-focused expert knowledge beyond generic deployment concepts. |
 | [Create elastic SAN volumes in a batch](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-batch-create-sample) | integrations | 0.70 | Provides a PowerShell script and CSV schema (specific column names and usage) to create multiple volumes. This is a concrete automation/integration pattern with product-specific parameters, fitting integrations. |
 | [Metrics](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-metrics) | configuration | 0.70 | Defines specific Elastic SAN metrics exposed in Azure Monitor. Metric names and semantics are product-specific configuration/observability details, fitting configuration of monitoring/metrics. |
 | [Overview of encryption for Elastic SAN](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-encryption-overview) | security | 0.70 | Encryption overview for Elastic SAN that discusses platform-managed vs customer-managed keys, including how SSE is applied and how to use your own keys. This is product-specific security configuration/behavior (key types, where applied, compliance context) rather than generic encryption concepts. |

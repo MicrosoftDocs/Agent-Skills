@@ -1,9 +1,9 @@
 ---
 name: azure-sql-database
-description: Expert knowledge for Azure SQL Database development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when choosing Azure SQL tiers, configuring geo-replication, securing with Entra/MI, using Hyperscale, or automating with ARM/Terraform, and other Azure SQL Database related development tasks. Not for Azure Database for MariaDB (use azure-database-mariadb), Azure Database for MySQL (use azure-database-mysql), Azure Database for PostgreSQL (use azure-database-postgresql), Azure SQL Managed Instance (use azure-sql-managed-instance).
+description: Expert knowledge for Azure SQL Database development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when choosing tiers/pricing, configuring geo-replication/DR, tuning elastic pools, securing with TDE/Entra, or automating via ARM/CLI, and other Azure SQL Database related development tasks. Not for Azure SQL Managed Instance (use azure-sql-managed-instance), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Database for MySQL (use azure-database-mysql), Azure Database for PostgreSQL (use azure-database-postgresql).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-19"
+  generated_at: "2026-07-26"
   generator: "docs2skills/1.0.0"
 ---
 # Azure SQL Database Skill
@@ -25,11 +25,11 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L37-L61 | Diagnosing and fixing Azure SQL issues: performance (CPU, memory, deadlocks, blocking), connectivity, scaling, import/export, geo-replication, Data Sync, Elastic Scale, and log-full errors. |
-| Best Practices | L62-L79 | Operational best practices for Azure SQL: monitoring, security, HA/DR, maintenance, resource and space management, read scale-out, Data Sync, and adapting SQL Server T-SQL. |
-| Decision Making | L80-L107 | Guidance for choosing Azure SQL tiers, pricing models, DR/migration paths, Hyperscale options, automation, and cost/licensing benefits like Hybrid Benefit and Reservations. |
-| Architecture & Design Patterns | L108-L124 | Architectural patterns for Azure SQL apps: geo-replication, DR/BCP, connectivity/routing, sharding and elastic scale-out, Hyperscale internals, rolling upgrades, and multitenant SaaS tenancy. |
-| Limits & Quotas | L125-L136 | Limits, quotas, and resource caps for Azure SQL (free offers, DTU/vCore for single DBs and pools), plus maintenance windows and how to request quota increases. |
-| Security | L137-L202 | Securing Azure SQL: Entra auth and managed identities, auditing and Defender, Always Encrypted and TDE with CMK, network/firewall controls, data masking/classification, and secure backup/DR. |
+| Best Practices | L62-L78 | Best practices for Azure SQL operations: monitoring, auditing, security, HA/DR, failover, read replicas, maintenance, elastic pool tuning, file space, Data Sync, and T-SQL adaptation. |
+| Decision Making | L79-L106 | Guidance for choosing Azure SQL tiers, pricing models, DR/migration paths, Hyperscale options, automation, and cost/licensing benefits like Hybrid Benefit and Reservations. |
+| Architecture & Design Patterns | L107-L123 | Architectural patterns for Azure SQL apps: geo-replication, DR/BCP, connectivity/routing, sharding and elastic scale-out, Hyperscale internals, rolling upgrades, and multitenant SaaS tenancy. |
+| Limits & Quotas | L124-L135 | Limits, quotas, and resource caps for Azure SQL (free offers, DTU/vCore for single DBs and pools), plus maintenance windows and how to request quota increases. |
+| Security | L136-L202 | Securing Azure SQL: authentication (Entra, managed identity, MFA), networking and firewalls, auditing and Defender, encryption (TDE, Always Encrypted), masking/classification, and compliance. |
 | Configuration | L203-L267 | Configuring Azure SQL databases/servers: monitoring, backups, geo-replication/failover, security (TLS, Always Encrypted, immutability), scaling, elastic pools/jobs, Data Sync, and CLI/PowerShell setup. |
 | Integrations & Coding Patterns | L268-L298 | Connecting apps and tools to Azure SQL (EF Core, .NET, Node.js, Python, Go), plus PowerShell/CLI automation for auditing, scaling, geo-replication, data sync, and streaming/Spark integration. |
 | Deployment | L299-L314 | Deploying and scaling Azure SQL databases/MI: automation (GitHub, ARM, Bicep, Terraform), Hyperscale/zone-redundant setup, regional moves, feature availability, and dev environment setup. |
@@ -64,11 +64,10 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Analyze Azure SQL monitoring data with KQL and T-SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database-watcher-analyze?view=azuresql |
 | Apply auditing best practices in production Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/auditing-best-practices?view=azuresql |
-| Maintain data integrity in Azure SQL Database | https://learn.microsoft.com/en-us/azure/azure-sql/database/data-integrity?view=azuresql |
 | Run disaster recovery drills for Azure SQL workloads | https://learn.microsoft.com/en-us/azure/azure-sql/database/disaster-recovery-drills?view=azuresql |
 | Optimize resource management in dense Azure SQL elastic pools | https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-pool-resource-management?view=azuresql |
 | Configure and operate Azure SQL failover groups with best practices | https://learn.microsoft.com/en-us/azure/azure-sql/database/failover-group-sql-db?view=azuresql |
-| Manage and reclaim Azure SQL Database file space | https://learn.microsoft.com/en-us/azure/azure-sql/database/file-space-manage?view=azuresql-db |
+| Manage Azure SQL Database file space efficiently | https://learn.microsoft.com/en-us/azure/azure-sql/database/file-space-manage?view=azuresql-db |
 | Apply HA and DR configuration checklist for Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/high-availability-disaster-recovery-checklist?view=azuresql |
 | Plan for Azure SQL planned maintenance events | https://learn.microsoft.com/en-us/azure/azure-sql/database/planned-maintenance?view=azuresql |
 | Configure and use read scale-out replicas in Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/read-scale-out?view=azuresql |
@@ -171,6 +170,7 @@ This skill requires **network access** to fetch documentation content:
 | Import/export Azure SQL databases over Private Link | https://learn.microsoft.com/en-us/azure/azure-sql/database/database-import-export-private-link?view=azuresql |
 | Set up dynamic data masking in Azure SQL portal | https://learn.microsoft.com/en-us/azure/azure-sql/database/dynamic-data-masking-configure-portal?view=azuresql |
 | Configure dynamic data masking in Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/dynamic-data-masking-overview?view=azuresql |
+| Configure regex-based dynamic data masking in Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/dynamic-data-masking-regex?view=azuresql |
 | Configure split-merge service security with certificates | https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-scale-split-merge-security-configuration?view=azuresql |
 | Configure Azure SQL Database IP firewall rules securely | https://learn.microsoft.com/en-us/azure/azure-sql/database/firewall-configure?view=azuresql |
 | Configure isolated security for Hyperscale named replicas | https://learn.microsoft.com/en-us/azure/azure-sql/database/hyperscale-named-replica-security-configure?view=azuresql |

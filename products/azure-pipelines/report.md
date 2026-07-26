@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-07-19'
+generated_at: '2026-07-26'
 category_descriptions:
   security: 'Securing Azure Pipelines: agent auth, service connections, secrets/Key
     Vault, permissions and approvals, secure variables, signing (mobile/Apple/Docker),
     and security scanning/compliance.'
-  configuration: 'Configuring Azure Pipelines: agents, triggers, variables, YAML structure,
-    environments, deployment strategies, artifacts, and detailed task/step settings
-    for build, test, and release workflows.'
+  configuration: 'Configuring Azure Pipelines: agents, triggers, YAML structure, environments,
+    variables, artifacts, and detailed task/step settings for building, testing, and
+    deploying across languages and platforms.'
   deployment: 'Deploying apps, containers, databases, and packages via Azure Pipelines:
     agent setup (Windows/Linux/macOS/VMSS), release pipelines, Kubernetes, web apps,
     SQL, artifacts, and registry publishing.'
@@ -31,13 +31,13 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Pipelines development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  configuring YAML pipelines, agents, service connections, Key Vault secrets, or Azure
-  Web App/Kubernetes deployments, and other Azure Pipelines related development tasks.
-  Not for Azure DevOps (use azure-devops), Azure Boards (use azure-boards), Azure
-  Repos (use azure-repos), Azure Test Plans (use azure-test-plans).
-use_when: Use when configuring YAML pipelines, agents, service connections, Key Vault
-  secrets, or Azure Web App/Kubernetes deployments, and other Azure Pipelines related
-  development tasks.
+  configuring YAML pipelines, service connections/Key Vault, agents/parallel jobs,
+  Kubernetes/web app deploys, or Git/Slack integrations, and other Azure Pipelines
+  related development tasks. Not for Azure DevOps (use azure-devops), Azure Boards
+  (use azure-boards), Azure Repos (use azure-repos), Azure Test Plans (use azure-test-plans).
+use_when: Use when configuring YAML pipelines, service connections/Key Vault, agents/parallel
+  jobs, Kubernetes/web app deploys, or Git/Slack integrations, and other Azure Pipelines
+  related development tasks.
 confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Boards (use azure-boards),
   Azure Repos (use azure-repos), Azure Test Plans (use azure-test-plans).
 ---
@@ -53,8 +53,8 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Boards (use a
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 5
-- **Unchanged**: 573
+- **Updated Pages**: 2
+- **Unchanged**: 576
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-pipelines/azure-pipelines.csv`
 
@@ -77,16 +77,10 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Boards (use a
 
 ### Updated Pages
 
-- [Azure Resource Manager service connection](https://learn.microsoft.com/en-us/azure/devops/pipelines/library/connect-to-azure?view=azure-devops)
-  - Updated: 2026-04-22T08:00:00.000Z → 2026-07-15T08:00:00.000Z
-- [Troubleshoot Azure Resource Manager service connections](https://learn.microsoft.com/en-us/azure/devops/pipelines/release/azure-rm-endpoint?view=azure-devops)
-  - Updated: 2026-06-18T01:03:00.000Z → 2026-07-15T08:00:00.000Z
-- [Manage service connections](https://learn.microsoft.com/en-us/azure/devops/pipelines/library/service-endpoints?view=azure-devops)
-  - Updated: 2026-04-22T08:00:00.000Z → 2026-07-15T08:00:00.000Z
-- [Secure agents, projects, and containers](https://learn.microsoft.com/en-us/azure/devops/pipelines/security/misc?view=azure-devops)
-  - Updated: 2026-01-17T02:04:00.000Z → 2026-07-16T01:05:00.000Z
-- [Troubleshoot pipeline runs](https://learn.microsoft.com/en-us/azure/devops/pipelines/troubleshooting/troubleshooting?view=azure-devops)
-  - Updated: 2026-06-03T20:26:00.000Z → 2026-07-15T08:00:00.000Z
+- [resources.containers.container](https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/resources-containers-container?view=azure-pipelines)
+  - Updated: 2026-06-29T08:00:00.000Z → 2026-07-24T22:02:00.000Z
+- [InvokeRESTAPI@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/invoke-rest-api-v1?view=azure-pipelines)
+  - Updated: 2026-07-02T08:00:00.000Z → 2026-07-20T12:54:00.000Z
 
 ## Classified Pages
 
@@ -165,7 +159,7 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Boards (use a
 | [HelmInstaller@0](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/helm-installer-v0?view=azure-pipelines) | configuration | 0.86 | HelmInstaller@0 task reference documents configuration options for installing Helm and Kubernetes (version fields, locations, flags), which are detailed product-specific settings. |
 | [HelmInstaller@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/helm-installer-v1?view=azure-pipelines) | configuration | 0.86 | HelmInstaller@1 task reference includes inputs like helmVersion, checkLatest, installKubectl, and paths, with specific allowed values and defaults, which are configuration parameters. |
 | [InvokeRESTAPI@0](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/invoke-rest-api-v0?view=azure-pipelines) | configuration | 0.86 | InvokeRESTAPI@0 task reference similarly documents all configuration inputs for REST API invocation in pipelines, which is expert configuration content. |
-| [InvokeRESTAPI@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/invoke-rest-api-v1?view=azure-pipelines) | configuration | 0.86 | InvokeRESTAPI@1 task reference includes inputs like connectionType, method, headers, body, waitForCompletion, and successCriteria, with specific allowed values and semantics, which are configuration parameters unique to this task. |
+| [InvokeRESTAPI@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/invoke-rest-api-v1?view=azure-pipelines) | configuration | 0.86 | Page is a task reference for InvokeRESTAPI@1 with detailed parameter tables (e.g., connectionType, method, headers, body, waitForCompletion, successCriteria), including allowed values, defaults, and behavior descriptions specific to Azure DevOps pipelines. This is product-specific configuration knowledge that an LLM is unlikely to fully know from training and fits the configuration sub-skill type. |
 | [Link a variable group to Azure Key Vault](https://learn.microsoft.com/en-us/azure/devops/pipelines/library/link-variable-groups-to-key-vaults?view=azure-devops) | security | 0.86 | Describes product-specific integration and security behavior between variable groups and Azure Key Vault, including how secrets are mapped and fetched at runtime. |
 | [Maven@4](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/maven-v4?view=azure-pipelines) | configuration | 0.86 | Task reference pages list all YAML inputs, allowed values, defaults, and behavior for the Maven@4 task, which are product-specific configuration details not generally known from training. |
 | [MavenAuthenticate@0](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/maven-authenticate-v0?view=azure-pipelines) | configuration | 0.86 | Describes task inputs, flags, and behavior for providing credentials to Azure Artifacts and external Maven repos, including .m2 settings handling, which is detailed configuration knowledge. |
@@ -192,6 +186,7 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Boards (use a
 | [gulp@0](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/gulp-v0?view=azure-pipelines) | configuration | 0.86 | gulp@0 task reference similarly provides detailed configuration input names and behaviors for the older task version, which is expert configuration knowledge. |
 | [gulp@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/gulp-v1?view=azure-pipelines) | configuration | 0.86 | gulp@1 task reference lists task inputs (gulp file, targets, working directory, arguments) with explicit configuration semantics, which are product-specific configuration details. |
 | [npmAuthenticate@0](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/npm-authenticate-v0?view=azure-pipelines) | configuration | 0.86 | Provides detailed inputs for writing credentials into .npmrc, including feed selection and auth scopes, which are specific configuration patterns for Azure Artifacts integration. |
+| [resources.containers.container](https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/resources-containers-container?view=azure-pipelines) | configuration | 0.86 | Page is a YAML schema reference for resources.containers.container, listing specific schema fields, allowed values, and configuration options unique to Azure DevOps Pipelines. It includes parameter names, structures, and usage details that constitute product-specific configuration knowledge rather than generic concepts. |
 | [steps.getPackage](https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/steps-get-package?view=azure-pipelines) | configuration | 0.86 | YAML schema reference for steps.getPackage with concrete parameter names, allowed values, and behavior specific to Azure DevOps; this is product-specific configuration detail rather than generic concepts. |
 | [steps.powershell](https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/steps-powershell?view=azure-pipelines) | configuration | 0.86 | YAML schema for steps.powershell with specific inputs (e.g., targetType, errorActionPreference) and defaults; these are product-specific configuration options. |
 | [steps.pwsh](https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/steps-pwsh?view=azure-pipelines) | configuration | 0.86 | YAML schema reference for steps.pwsh with specific configuration fields and defaults unique to Azure Pipelines. |
@@ -437,7 +432,6 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Boards (use a
 | [onSuccessHook](https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/on-success-hook?view=azure-pipelines) | configuration | 0.78 | onSuccessHook schema with specific fields for success-only cleanup steps; configuration details. |
 | [pool.demands](https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/pool-demands?view=azure-pipelines) | configuration | 0.78 | pool.demands schema specifies how to declare demands for private pools, including syntax and parameter names, which are detailed configuration options unique to Azure DevOps. |
 | [resources.containers](https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/resources-containers?view=azure-pipelines) | configuration | 0.78 | resources.containers schema describes how to list container images as resources with specific YAML keys and constraints, which is configuration-focused expert knowledge. |
-| [resources.containers.container](https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/resources-containers-container?view=azure-pipelines) | configuration | 0.78 | resources.containers.container schema specifies YAML for a single container resource, including image reference and other fields, which are product-specific configuration parameters. |
 | [resources.pipelines](https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/resources-pipelines?view=azure-pipelines) | configuration | 0.78 | resources.pipelines schema defines how to list pipeline resources, including YAML structure and keys, which are product-specific configuration parameters. |
 | [resources.pipelines.pipeline.trigger.branches](https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/resources-pipelines-pipeline-trigger-branches?view=azure-pipelines) | configuration | 0.78 | resources.pipelines.pipeline.trigger.branches schema specifies YAML for include/exclude branch lists, which are detailed configuration parameters. |
 | [resources.repositories](https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/resources-repositories?view=azure-pipelines) | configuration | 0.78 | resources.repositories schema defines how to list external repositories as resources, including YAML keys and structure, which is expert configuration knowledge. |

@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Security (use azure-security), Azure Sentinel 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 461
+- **Updated Pages**: 0
+- **Unchanged**: 463
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-defender-for-cloud/azure-defender-for-cloud.csv`
 
@@ -75,13 +75,6 @@ confusable_not_for: Not for Azure Security (use azure-security), Azure Sentinel 
 | *(Unclassified)* | 210 | 45.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [Set up the free data ingestion benefit](https://learn.microsoft.com/en-us/azure/defender-for-cloud/data-ingestion-benefit)
-  - Updated: 2026-06-17T12:36:00.000Z → 2026-07-12T22:37:00.000Z
-- [Review and remediate vulnerabilities](https://learn.microsoft.com/en-us/azure/defender-for-cloud/sql-azure-vulnerability-assessment-find)
-  - Updated: 2026-06-17T12:36:00.000Z → 2026-07-14T17:35:00.000Z
 
 ## Classified Pages
 

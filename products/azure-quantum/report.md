@@ -53,8 +53,8 @@ confusable_not_for: Not for Azure HDInsight (use azure-hdinsight), Azure Databri
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 135
+- **Updated Pages**: 0
+- **Unchanged**: 136
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-quantum/azure-quantum.csv`
 
@@ -74,11 +74,6 @@ confusable_not_for: Not for Azure HDInsight (use azure-hdinsight), Azure Databri
 | *(Unclassified)* | 96 | 70.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [Quantum Development Kit overview](https://learn.microsoft.com/en-us/azure/quantum/qdk-main-overview)
-  - Updated: 2026-04-28T17:28:00.000Z → 2026-07-15T22:07:00.000Z
 
 ## Classified Pages
 

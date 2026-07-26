@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-19'
+generated_at: '2026-07-26'
 category_descriptions:
   configuration: 'Configuring Azure Migrate and related tools: assessment settings
     (VM, SQL, PostgreSQL, .NET/AppCAT), appliances, Arc/AMA, private endpoints, landing
@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Database Migration service (use azure-database
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 209
+- **Updated Pages**: 1
+- **Unchanged**: 210
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-migrate/azure-migrate.csv`
 
@@ -78,10 +78,8 @@ confusable_not_for: Not for Azure Database Migration service (use azure-database
 
 ### Updated Pages
 
-- [How to migrate VMware VMs at scale using the agentless replication method](https://learn.microsoft.com/en-us/azure/migrate/how-to-scale-out-for-migration?view=migrate)
-  - Updated: 2024-12-31T12:14:00.000Z → 2026-07-17T11:42:00.000Z
-- [Replication in agentless VMware migration](https://learn.microsoft.com/en-us/azure/migrate/troubleshoot-changed-block-tracking-replication?view=migrate)
-  - Updated: 2025-05-13T05:03:00.000Z → 2026-07-17T11:42:00.000Z
+- [Simplified experience for Azure migrate](https://learn.microsoft.com/en-us/azure/migrate/simplified-experience-for-azure-migrate?view=migrate)
+  - Updated: 2026-02-11T18:17:00.000Z → 2026-07-20T11:41:00.000Z
 
 ## Classified Pages
 
@@ -204,7 +202,6 @@ confusable_not_for: Not for Azure Database Migration service (use azure-database
 | [Assess large number of servers in VMware environment](https://learn.microsoft.com/en-us/azure/migrate/scale-vmware-assessment?view=migrate) | 0.50 | Large-scale VMware assessment article; summary mentions scale but not explicit numeric limits or configuration matrices. |
 | [Assess large numbers of physical servers](https://learn.microsoft.com/en-us/azure/migrate/scale-physical-assessment?view=migrate) | 0.50 | Large-scale physical server assessment; similar to VMware scale article, likely procedural without detailed numeric constraints. |
 | [Conclusion](https://learn.microsoft.com/en-us/azure/migration/migrate-workload-from-aws-conclusion) | 0.50 | Conclusion/next steps article; mostly meta-guidance and links to further resources rather than detailed technical decision criteria. |
-| [Simplified experience for Azure migrate](https://learn.microsoft.com/en-us/azure/migrate/simplified-experience-for-azure-migrate?view=migrate) | 0.50 | High-level description of simplified migration experience and upgraded stack; mostly conceptual and capability overview. |
 | [Assess Physical servers](https://learn.microsoft.com/en-us/azure/migrate/tutorial-assess-physical?view=migrate) | 0.45 | Physical server assessment tutorial; procedural, not a detailed configuration or limits reference. |
 | [Assess VMware servers](https://learn.microsoft.com/en-us/azure/migrate/tutorial-assess-vmware-azure-vm?view=migrate) | 0.45 | Assessment tutorial for VMware; mostly wizard steps and not a reference of limits, configs, or troubleshooting mappings. |
 | [Assess large number of servers in Hyper-V environment](https://learn.microsoft.com/en-us/azure/migrate/scale-hyper-v-assessment?view=migrate) | 0.45 | Large-scale Hyper-V assessment tutorial; focuses on process, not numeric limits or config parameter tables. |
@@ -290,6 +287,7 @@ confusable_not_for: Not for Azure Database Migration service (use azure-database
 | [Responsible AI FAQ for Azure Copilot Migration Agent](https://learn.microsoft.com/en-us/azure/migrate/common-questions-azure-copilot-migration-agent?view=migrate) | 0.20 | Common questions about Azure Copilot migration agent, with emphasis on Responsible AI principles. The summary suggests high-level FAQ/assurance content rather than concrete limits, configuration parameters, or troubleshooting mappings. Lacks the specific numeric limits, config tables, or error-code-based guidance required for expert-knowledge classification. |
 | [Review assessment report](https://learn.microsoft.com/en-us/azure/migrate/review-application-assessment?view=migrate) | 0.20 | Conceptual explanation of application/cross-workload assessments and migration strategies; no indication of numeric thresholds, configuration values, or detailed decision matrices. |
 | [Review assessment report](https://learn.microsoft.com/en-us/azure/migrate/review-file-share-assessment?view=migrate) | 0.20 | Describes components of an Azure Files assessment and how to review results; appears conceptual and procedural without expert-level numeric limits, config tables, or error-code mappings. |
+| [Simplified experience for Azure migrate](https://learn.microsoft.com/en-us/azure/migrate/simplified-experience-for-azure-migrate?view=migrate) | 0.20 | Page describes the simplified/updated Azure Migrate agent-based experience and its benefits at a conceptual level. The summary indicates high-level advantages and references an external support matrix but does not itself expose concrete limits, configuration tables, error codes, or decision matrices. It reads as an overview of the new migration stack rather than detailed limits, configuration parameters, troubleshooting mappings, or best-practice specifics. |
 | [Software and Insights](https://learn.microsoft.com/en-us/azure/migrate/software-insights-faq?view=migrate) | 0.20 | FAQ-style page about Azure Migrate Software and Insights; description suggests general Q&A and pointers to other resources, without clear indication of numeric limits, configuration tables, error-code mappings, or other product-specific expert details. |
 | [Storage](https://learn.microsoft.com/en-us/azure/migration/migrate-storage-from-aws) | 0.20 | Landing page that lists migration scenarios from AWS storage to Azure. Summary indicates conceptual guidance and scenario links, but no specific limits, configs, error codes, or decision matrices with quantified criteria on this page itself. |
 | [Tags in Azure Migrate](https://learn.microsoft.com/en-us/azure/migrate/resource-tagging?view=migrate) | 0.20 | High-level overview of tagging concepts in Azure Migrate without detailed configuration parameters, limits, or product-specific decision matrices. |

@@ -52,9 +52,9 @@ confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure
 - **Unclassified**: 81
 
 ### Incremental Update
-- **New Pages**: 3
-- **Updated Pages**: 4
-- **Unchanged**: 176
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 183
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-key-vault/azure-key-vault.csv`
 
@@ -74,23 +74,6 @@ confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure
 | *(Unclassified)* | 81 | 44.3% |
 
 ## Changes
-
-### New Pages
-
-- [ABAC conditions for Key Vault role assignments (preview)](https://learn.microsoft.com/en-us/azure/key-vault/general/rbac-abac)
-- [Add ABAC conditions with Azure CLI (preview)](https://learn.microsoft.com/en-us/azure/key-vault/general/howto-abac-conditions-cli)
-- [Add ABAC conditions with Azure PowerShell (preview)](https://learn.microsoft.com/en-us/azure/key-vault/general/howto-abac-conditions-powershell)
-
-### Updated Pages
-
-- [Azure Key Vault throttling guidance](https://learn.microsoft.com/en-us/azure/key-vault/general/overview-throttling)
-  - Updated: 2026-04-10T08:00:00.000Z → 2026-07-17T17:33:00.000Z
-- [Use an Azure RBAC for managing access](https://learn.microsoft.com/en-us/azure/key-vault/general/rbac-guide)
-  - Updated: 2026-06-16T08:00:00.000Z → 2026-07-17T22:34:00.000Z
-- [Monitoring Key Vault data reference](https://learn.microsoft.com/en-us/azure/key-vault/general/monitor-key-vault-reference)
-  - Updated: 2025-04-23T08:00:00.000Z → 2026-06-12T22:35:00.000Z
-- [Service limits](https://learn.microsoft.com/en-us/azure/key-vault/general/service-limits)
-  - Updated: 2025-07-21T05:30:00.000Z → 2026-06-12T22:35:00.000Z
 
 ## Classified Pages
 

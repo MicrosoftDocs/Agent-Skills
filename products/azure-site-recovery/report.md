@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-05'
+generated_at: '2026-07-26'
 category_descriptions:
   decision-making: 'Planning and sizing Azure Site Recovery: choosing tools vs Azure
     Migrate, VMware/Hyper-V DR capacity and cost estimation, managed disk pricing,
@@ -19,8 +19,9 @@ category_descriptions:
   limits-quotas: 'Limits, capacity planning, and compatibility for Azure Site Recovery:
     churn limits, safe use with Backup, planner limitations, VMware/physical support,
     scaling, and Mobility service resource usage.'
-  security: 'Securing Azure Site Recovery: NSGs, TLS, encryption changes, RBAC, managed
-    identities, and hardening replication appliances/VMware replication traffic.'
+  security: 'Securing Azure Site Recovery: NSGs, TLS, encryption changes, secure replication
+    (incl. VMware), RBAC access control, managed identities, and hardened replication
+    appliance deployment.'
   architecture-patterns: Designing Azure Site Recovery architectures for specific
     workloads (AD/DNS, SAP, Dynamics AX, SharePoint, IIS, SQL, VMware, file servers)
     and multi-tier app DR patterns.
@@ -30,17 +31,15 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Site Recovery development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when planning or automating ASR for Azure VMs, VMware/Hyper-V, physical servers,
-  ExpressRoute, or SQL workloads, and other Azure Site Recovery related development
-  tasks. Not for Azure Backup (use azure-backup), Azure Migrate (use azure-migrate),
-  Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Machine Scale
-  Sets (use azure-vm-scalesets).
-use_when: Use when planning or automating ASR for Azure VMs, VMware/Hyper-V, physical
-  servers, ExpressRoute, or SQL workloads, and other Azure Site Recovery related development
-  tasks.
+  Use when planning ASR for VMware/Hyper-V, Azure VMs, physical servers, ExpressRoute,
+  or multi-tier app DR, and other Azure Site Recovery related development tasks. Not
+  for Azure Backup (use azure-backup), Azure Migrate (use azure-migrate), Azure Virtual
+  Machines (use azure-virtual-machines), Azure Virtual Network (use azure-virtual-network).
+use_when: Use when planning ASR for VMware/Hyper-V, Azure VMs, physical servers, ExpressRoute,
+  or multi-tier app DR, and other Azure Site Recovery related development tasks.
 confusable_not_for: Not for Azure Backup (use azure-backup), Azure Migrate (use azure-migrate),
-  Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Machine Scale
-  Sets (use azure-vm-scalesets).
+  Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Network (use
+  azure-virtual-network).
 ---
 # Azure Site Recovery Crawl Report
 
@@ -54,8 +53,8 @@ confusable_not_for: Not for Azure Backup (use azure-backup), Azure Migrate (use 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 202
+- **Updated Pages**: 1
+- **Unchanged**: 201
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-site-recovery/azure-site-recovery.csv`
 
@@ -75,6 +74,11 @@ confusable_not_for: Not for Azure Backup (use azure-backup), Azure Migrate (use 
 | *(Unclassified)* | 72 | 35.6% |
 
 ## Changes
+
+### Updated Pages
+
+- [Deprecation of Site Recovery data encryption](https://learn.microsoft.com/en-us/azure/site-recovery/encryption-feature-deprecation)
+  - Updated: 2026-02-11T12:11:00.000Z → 2026-07-20T22:11:00.000Z
 
 ## Classified Pages
 
@@ -131,7 +135,7 @@ confusable_not_for: Not for Azure Backup (use azure-backup), Azure Migrate (use 
 | [Cleanup script on a VMM server](https://learn.microsoft.com/en-us/azure/site-recovery/unregister-vmm-server-script) | troubleshooting | 0.70 | Targets the 'Disconnected' VMM server state and uses a specific cleanup script; symptom (disconnected) → action mapping is troubleshooting-focused. |
 | [Configure Failover for Multiple IP addresses](https://learn.microsoft.com/en-us/azure/site-recovery/concepts-multiple-ip-address-failover) | configuration | 0.70 | Details how secondary IP configurations are handled and how to configure them; includes product-specific networking configuration behavior. |
 | [Delete a vault](https://learn.microsoft.com/en-us/azure/site-recovery/delete-vault) | configuration | 0.70 | Describes conditions and steps to delete a Site Recovery vault, likely including required cleanup of resources; product-specific operational configuration. |
-| [Deprecation of Site Recovery data encryption](https://learn.microsoft.com/en-us/azure/site-recovery/encryption-feature-deprecation) | security | 0.70 | Deprecation article will specify which encryption options/parameters are affected and required remediation steps, including security-related configuration details. |
+| [Deprecation of Site Recovery data encryption](https://learn.microsoft.com/en-us/azure/site-recovery/encryption-feature-deprecation) | security | 0.70 | Deprecation notice for a specific Azure Site Recovery data encryption feature with concrete remediation actions and product-specific security configuration guidance; this is detailed, time-bound information an LLM is unlikely to infer from training and is tightly tied to security/encryption behavior. |
 | [Deprecation of classic experience](https://learn.microsoft.com/en-us/azure/site-recovery/vmware-physical-azure-classic-deprecation) | decision-making | 0.70 | Deprecation article with dates and alternative options; helps decide migration paths and timelines, which is decision-making guidance. |
 | [Deprecation of parameters - New-AzRecoveryServicesAsrVMNicConfig cmdlet](https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-ipconfig-cmdlet-parameter-deprecation) | configuration | 0.70 | Describes deprecation of specific PowerShell cmdlet parameters and the alternative cmdlet; this is product-specific configuration guidance with exact cmdlet/parameter names and behavioral implications. |
 | [Enable replication between zones within a region](https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-how-to-enable-zone-to-zone-disaster-recovery) | configuration | 0.70 | Explains how to configure replication/failover between availability zones; includes Site Recovery-specific zone configuration behavior. |

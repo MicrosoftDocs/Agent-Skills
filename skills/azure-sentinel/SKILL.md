@@ -1,9 +1,9 @@
 ---
 name: azure-sentinel
-description: Expert knowledge for Azure Sentinel development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring data connectors, ASIM schemas, analytics rules, playbooks/Logic Apps, or KQL/data lake jobs, and other Azure Sentinel related development tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure Security (use azure-security), Azure Monitor (use azure-monitor), Azure Network Watcher (use azure-network-watcher).
+description: Expert knowledge for Azure Sentinel development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring data connectors, KQL analytics, playbooks/automation, UEBA/Fusion, or SAP integrations in Sentinel, and other Azure Sentinel related development tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure Security (use azure-security), Azure Monitor (use azure-monitor), Azure Firewall (use azure-firewall).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-19"
+  generated_at: "2026-07-26"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Sentinel Skill
@@ -24,15 +24,15 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L54 | Diagnosing and fixing Sentinel ingestion, connectors (AWS, Blob, Syslog/CEF, SAP), KQL/jobs, notebooks, MCP tools, and monitoring/troubleshooting analytics and automation health. |
-| Best Practices | L55-L85 | Best practices for designing, tuning, and operating Microsoft Sentinel: automation, playbooks, detections, anomalies, watchlists, incident tasks, SOC processes, ML, UEBA, and Security Copilot. |
-| Decision Making | L86-L124 | Guidance for SIEM/SOAR migration to Sentinel, cost/pricing decisions, data tiers and connectors, and choosing between Sentinel/Defender features and automation options. |
-| Architecture & Design Patterns | L125-L136 | Designing Sentinel architectures: BCDR, multi-workspace/tenant layouts, coexisting with other SIEMs, SAP-specific patterns, and building/publishing ISV solution components. |
+| Troubleshooting | L37-L54 | Diagnosing and fixing Sentinel data ingestion, KQL, notebooks, MCP tools, automation, analytics rules, and SAP connector issues, plus monitoring rule/automation health and audit logs. |
+| Best Practices | L55-L85 | Best practices for Microsoft Sentinel SOCs: workspace and data design, detections and tuning, automation/playbooks, watchlists, incident tasks, UEBA/anomalies, ML, and solution lifecycle. |
+| Decision Making | L86-L126 | Guidance for planning, costing, and architecting Sentinel deployments, choosing connectors and data tiers, and migrating from other SIEMs, SOAR tools, and legacy Sentinel components. |
+| Architecture & Design Patterns | L127-L136 | Designing Sentinel architectures: BCDR, multi-workspace/tenant layouts, coexisting with other SIEMs, SAP-specific patterns, and building/publishing ISV solution components. |
 | Limits & Quotas | L137-L149 | Limits, quotas, and constraints for Sentinel features (NRT rules, data lake, MCP usage, watchlists, search jobs), regional availability, ASIM issues, and removal implications. |
-| Security | L150-L166 | Securing Microsoft Sentinel: auth and RBAC for playbooks/workbooks/data, CMK and data residency, storage/network hardening, MSSP IP protection, and SAP security/authorizations. |
-| Configuration | L167-L289 | Configuring Microsoft Sentinel: data connectors, ASIM schemas, analytics/automation rules, playbooks, UEBA/Fusion, data lake/KQL jobs, multi-tenant/SIEM solutions, and SAP/security content setup. |
-| Integrations & Coding Patterns | L290-L343 | Integrating Microsoft Sentinel with external logs, TIPs, and tools; building playbooks, Logic Apps, graphs, KQL/notebooks, MCP/AI integrations, and programmatic APIs for automation and data access. |
-| Deployment | L344-L360 | Deploying and publishing Sentinel solutions, rules, automation, and SAP/Dynamics/Power Platform integrations, plus CI/CD, ARM templates, and SAP connector/agent migration and updates. |
+| Security | L150-L166 | Securing Microsoft Sentinel: authentication, RBAC, roles, data access, encryption, storage/network protection, SAP security setup, MSSP IP protection, and geo/data residency controls. |
+| Configuration | L167-L288 | Configuring Microsoft Sentinel: data connectors, ASIM schemas, analytics/automation rules, playbooks, data lake/KQL jobs, UEBA/Fusion, SAP, threat intel, retention, and multi-tenant operations. |
+| Integrations & Coding Patterns | L289-L343 | Integrating Microsoft Sentinel with external logs, TIPs, MCP/AI tools, graphs, and data lake APIs, plus building playbooks, connectors, KQL/GQL queries, and automation workflows. |
+| Deployment | L344-L361 | Deploying and updating Microsoft Sentinel solutions, rules, automation, notebooks, and SAP/Power Platform/Dynamics integrations using CI/CD, ARM templates, agents, and Partner Center. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -44,7 +44,7 @@ This skill requires **network access** to fetch documentation content:
 | Troubleshoot KQL queries and jobs in Sentinel | https://learn.microsoft.com/en-us/azure/sentinel/datalake/kql-troubleshoot |
 | Resolve common Jupyter notebook errors in Sentinel data lake | https://learn.microsoft.com/en-us/azure/sentinel/datalake/notebooks-troubleshooting |
 | Best practices and troubleshooting Sentinel MCP tools | https://learn.microsoft.com/en-us/azure/sentinel/datalake/troubleshoot-sentinel-mcp |
-| Troubleshoot Microsoft Sentinel solution ingestion and packaging | https://learn.microsoft.com/en-us/azure/sentinel/isv/troubleshoot-sentinel-solutions |
+| Troubleshoot Microsoft Sentinel solution issues | https://learn.microsoft.com/en-us/azure/sentinel/isv/troubleshoot-sentinel-solutions |
 | Monitor and troubleshoot Sentinel analytics rule health | https://learn.microsoft.com/en-us/azure/sentinel/monitor-analytics-rule-integrity |
 | Monitor and troubleshoot Sentinel automation health | https://learn.microsoft.com/en-us/azure/sentinel/monitor-automation-health |
 | Monitor and troubleshoot Sentinel scheduled analytics rule execution | https://learn.microsoft.com/en-us/azure/sentinel/monitor-optimize-analytics-rule-execution |
@@ -71,7 +71,7 @@ This skill requires **network access** to fetch documentation content:
 | Handle data ingestion delay in Sentinel rules | https://learn.microsoft.com/en-us/azure/sentinel/ingestion-delay |
 | Investigate Sentinel incidents using large dataset search | https://learn.microsoft.com/en-us/azure/sentinel/investigate-large-datasets |
 | Use UEBA data to investigate Sentinel incidents | https://learn.microsoft.com/en-us/azure/sentinel/investigate-with-ueba |
-| Apply quality guidelines for Sentinel solutions | https://learn.microsoft.com/en-us/azure/sentinel/isv/sentinel-solution-quality-guidance |
+| Apply quality guidelines to Sentinel platform solutions | https://learn.microsoft.com/en-us/azure/sentinel/isv/platform-solution-quality-guidance |
 | Apply operational best practices for Microsoft Sentinel SOCs | https://learn.microsoft.com/en-us/azure/sentinel/ops-guide |
 | Use Security Copilot effectively with Microsoft Sentinel data | https://learn.microsoft.com/en-us/azure/sentinel/sentinel-security-copilot |
 | Manage deprecated Microsoft Sentinel solutions lifecycle | https://learn.microsoft.com/en-us/azure/sentinel/sentinel-solution-deprecation |
@@ -87,7 +87,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Plan and execute Sentinel migration from MMA to AMA | https://learn.microsoft.com/en-us/azure/sentinel/ama-migrate |
-| Decide and migrate alert-trigger playbooks to automation rules | https://learn.microsoft.com/en-us/azure/sentinel/automation/migrate-playbooks-to-automation-rules |
+| Decide and migrate Sentinel playbooks to automation rules | https://learn.microsoft.com/en-us/azure/sentinel/automation/migrate-playbooks-to-automation-rules |
 | Decide when to use the Microsoft Sentinel data lake tier | https://learn.microsoft.com/en-us/azure/sentinel/basic-logs-use-cases |
 | Plan and estimate Microsoft Sentinel billing costs | https://learn.microsoft.com/en-us/azure/sentinel/billing |
 | Control and analyze Microsoft Sentinel billing costs | https://learn.microsoft.com/en-us/azure/sentinel/billing-monitor-costs |
@@ -99,6 +99,8 @@ This skill requires **network access** to fetch documentation content:
 | Choose between KQL jobs, summary rules, and search jobs | https://learn.microsoft.com/en-us/azure/sentinel/datalake/kql-jobs-summary-rules-search-jobs |
 | Choose which logs to ingest into Sentinel data lake | https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-lake-log-ingestion-guidance |
 | Enroll Sentinel workspaces in simplified pricing tiers | https://learn.microsoft.com/en-us/azure/sentinel/enroll-simplified-pricing-tier |
+| Plan and lifecycle-manage Sentinel SIEM solutions | https://learn.microsoft.com/en-us/azure/sentinel/isv/sentinel-integration-guide |
+| Choose Sentinel platform components for ISV solutions | https://learn.microsoft.com/en-us/azure/sentinel/isv/which-platform-components-to-build |
 | Choose Microsoft Sentinel log retention tiers | https://learn.microsoft.com/en-us/azure/sentinel/log-plans |
 | Plan Sentinel data tiers and retention for cost optimization | https://learn.microsoft.com/en-us/azure/sentinel/manage-data-overview |
 | Determine Defender XDR data type support across GCC clouds in Sentinel | https://learn.microsoft.com/en-us/azure/sentinel/microsoft-365-defender-cloud-support |
@@ -128,8 +130,6 @@ This skill requires **network access** to fetch documentation content:
 | Design BCDR architecture for Microsoft Sentinel | https://learn.microsoft.com/en-us/azure/sentinel/business-continuity-disaster-recovery |
 | Deploy Sentinel alongside an existing SIEM | https://learn.microsoft.com/en-us/azure/sentinel/deploy-side-by-side |
 | Design Sentinel across multiple workspaces and tenants | https://learn.microsoft.com/en-us/azure/sentinel/extend-sentinel-across-workspaces-tenants |
-| Architect Microsoft Sentinel solution components and patterns | https://learn.microsoft.com/en-us/azure/sentinel/isv/partner-integrations |
-| Design and publish Microsoft Sentinel ISV solutions | https://learn.microsoft.com/en-us/azure/sentinel/isv/sentinel-integration-guide |
 | Plan multi-workspace and multi-tenant Sentinel layouts | https://learn.microsoft.com/en-us/azure/sentinel/prepare-multiple-workspaces |
 | Choose Microsoft Sentinel workspace designs by scenario | https://learn.microsoft.com/en-us/azure/sentinel/sample-workspace-designs |
 | Design multi-workspace architecture for Sentinel SAP | https://learn.microsoft.com/en-us/azure/sentinel/sap/cross-workspace |
@@ -161,7 +161,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure resource-context RBAC for Sentinel data access | https://learn.microsoft.com/en-us/azure/sentinel/resource-context-rbac |
 | Configure Microsoft Sentinel roles and permissions | https://learn.microsoft.com/en-us/azure/sentinel/roles |
 | Prepare SAP system security for Sentinel connector | https://learn.microsoft.com/en-us/azure/sentinel/sap/preparing-sap |
-| Assign required ABAP authorizations for Sentinel SAP | https://learn.microsoft.com/en-us/azure/sentinel/sap/required-abap-authorizations |
+| Configure required SAP ABAP authorizations for Sentinel | https://learn.microsoft.com/en-us/azure/sentinel/sap/required-abap-authorizations |
 | Use Microsoft Sentinel built-in security content for SAP | https://learn.microsoft.com/en-us/azure/sentinel/sap/sap-solution-security-content |
 
 ### Configuration
@@ -215,10 +215,11 @@ This skill requires **network access** to fetch documentation content:
 | Configure and interpret Sentinel auditing and health monitoring | https://learn.microsoft.com/en-us/azure/sentinel/health-audit |
 | Use SentinelHealth table for SIEM health monitoring | https://learn.microsoft.com/en-us/azure/sentinel/health-table-reference |
 | Configure push-based codeless connectors for Sentinel | https://learn.microsoft.com/en-us/azure/sentinel/isv/create-push-codeless-connector |
-| Configure and manage Sentinel platform solution components | https://learn.microsoft.com/en-us/azure/sentinel/isv/manage-platform-solutions |
-| Configure analytics rules for Sentinel solutions | https://learn.microsoft.com/en-us/azure/sentinel/isv/sentinel-analytic-rules-creation |
-| Create and publish Sentinel playbooks for solutions | https://learn.microsoft.com/en-us/azure/sentinel/isv/sentinel-playbook-creation |
-| Set up prerequisites for Sentinel SIEM solutions | https://learn.microsoft.com/en-us/azure/sentinel/isv/solution-setup-essentials |
+| Build and publish Sentinel custom graph solutions | https://learn.microsoft.com/en-us/azure/sentinel/isv/develop-custom-graph-platform-solutions |
+| Develop Jupyter notebook analytics for Sentinel | https://learn.microsoft.com/en-us/azure/sentinel/isv/develop-notebook-platform-solutions |
+| Ingest sample telemetry into Sentinel data lake | https://learn.microsoft.com/en-us/azure/sentinel/isv/ingest-sample-data |
+| Configure and develop ASIM parsers for Microsoft Sentinel | https://learn.microsoft.com/en-us/azure/sentinel/isv/normalization-develop-parsers |
+| Onboard tenants to the Sentinel data lake | https://learn.microsoft.com/en-us/azure/sentinel/isv/sentinel-data-lake-onboarding |
 | Manage versions of Sentinel analytics rule templates | https://learn.microsoft.com/en-us/azure/sentinel/manage-analytics-rule-templates |
 | Use incident metrics to manage SOC performance in Sentinel | https://learn.microsoft.com/en-us/azure/sentinel/manage-soc-with-incident-metrics |
 | Configure Sentinel and Defender table retention and tiers | https://learn.microsoft.com/en-us/azure/sentinel/manage-table-tiers-retention |
@@ -233,7 +234,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure near-real-time analytics rules for fast detection | https://learn.microsoft.com/en-us/azure/sentinel/near-real-time-rules |
 | Manage workspace-deployed ASIM parsers in Sentinel | https://learn.microsoft.com/en-us/azure/sentinel/normalization-about-workspace-parsers |
 | Use ASIM common schema fields in Sentinel | https://learn.microsoft.com/en-us/azure/sentinel/normalization-common-fields |
-| Develop and deploy ASIM parsers for Sentinel | https://learn.microsoft.com/en-us/azure/sentinel/normalization-develop-parsers |
 | Implement ASIM Application Entity schema in Sentinel | https://learn.microsoft.com/en-us/azure/sentinel/normalization-entity-application |
 | Implement ASIM Device Entity schema in Sentinel | https://learn.microsoft.com/en-us/azure/sentinel/normalization-entity-device |
 | Implement ASIM User Entity schema in Sentinel | https://learn.microsoft.com/en-us/azure/sentinel/normalization-entity-user |
@@ -255,16 +255,15 @@ This skill requires **network access** to fetch documentation content:
 | Use Microsoft Sentinel ASIM web session schema fields | https://learn.microsoft.com/en-us/azure/sentinel/normalization-schema-web |
 | Configure Jupyter notebooks and MSTICPy for Sentinel | https://learn.microsoft.com/en-us/azure/sentinel/notebook-get-started |
 | Use advanced MSTICPy notebook configurations in Sentinel | https://learn.microsoft.com/en-us/azure/sentinel/notebooks-msticpy-advanced |
+| Remove Microsoft Sentinel from Log Analytics workspaces | https://learn.microsoft.com/en-us/azure/sentinel/offboard |
 | Restore and manage archived Sentinel log data | https://learn.microsoft.com/en-us/azure/sentinel/restore |
 | Configure SAP HANA audit log collection in Sentinel | https://learn.microsoft.com/en-us/azure/sentinel/sap/collect-sap-hana-audit-logs |
-| Configure SAP data connector agent or agentless | https://learn.microsoft.com/en-us/azure/sentinel/sap/deploy-data-connector-agent-container |
 | Configure SAP threat detection content in Sentinel | https://learn.microsoft.com/en-us/azure/sentinel/sap/deployment-solution-configuration |
 | Verify prerequisites for Sentinel SAP monitoring | https://learn.microsoft.com/en-us/azure/sentinel/sap/prerequisites-for-deploying-sap-continuous-threat-monitoring |
 | Reference kickstart script parameters for SAP connector | https://learn.microsoft.com/en-us/azure/sentinel/sap/reference-kickstart |
 | Configure legacy systemconfig.ini for Sentinel SAP agent | https://learn.microsoft.com/en-us/azure/sentinel/sap/reference-systemconfig |
 | Configure systemconfig.json for Sentinel SAP connector | https://learn.microsoft.com/en-us/azure/sentinel/sap/reference-systemconfig-json |
 | Configure SAP connector agent update script options | https://learn.microsoft.com/en-us/azure/sentinel/sap/reference-update |
-| Expert configuration of Sentinel SAP connector container | https://learn.microsoft.com/en-us/azure/sentinel/sap/sap-solution-deploy-alternate |
 | Reference SAP logs and tables ingested by Sentinel | https://learn.microsoft.com/en-us/azure/sentinel/sap/sap-solution-log-reference |
 | Tune monitored SAP security parameters for Sentinel rules | https://learn.microsoft.com/en-us/azure/sentinel/sap/sap-suspicious-configuration-security-parameters |
 | Disable and stop SAP data collection in Sentinel | https://learn.microsoft.com/en-us/azure/sentinel/sap/stop-collection |
@@ -327,8 +326,9 @@ This skill requires **network access** to fetch documentation content:
 | Manage Sentinel hunting queries via Log Analytics REST API | https://learn.microsoft.com/en-us/azure/sentinel/hunting-with-rest-api |
 | Bulk import threat intelligence files into Sentinel | https://learn.microsoft.com/en-us/azure/sentinel/indicators-bulk-file-import |
 | Integrate Defender for Cloud incidents via Defender XDR | https://learn.microsoft.com/en-us/azure/sentinel/ingest-defender-for-cloud-incidents |
+| Develop Security Copilot agents with Sentinel data | https://learn.microsoft.com/en-us/azure/sentinel/isv/build-agent-security-copilot |
 | Create codeless data connectors for Microsoft Sentinel | https://learn.microsoft.com/en-us/azure/sentinel/isv/create-codeless-connector |
-| Build custom Sentinel connectors with AI agent | https://learn.microsoft.com/en-us/azure/sentinel/isv/create-custom-connector-builder-agent |
+| Build AI-assisted custom Sentinel data connectors | https://learn.microsoft.com/en-us/azure/sentinel/isv/create-custom-connector-builder-agent |
 | Use ASIM KQL parsers for normalized Sentinel queries | https://learn.microsoft.com/en-us/azure/sentinel/normalization-about-parsers |
 | Apply ASIM helper functions in KQL queries | https://learn.microsoft.com/en-us/azure/sentinel/normalization-functions |
 | Build Power BI reports from Sentinel data | https://learn.microsoft.com/en-us/azure/sentinel/powerbi |
@@ -350,10 +350,11 @@ This skill requires **network access** to fetch documentation content:
 | Deploy Sentinel monitoring for Dynamics 365 Finance | https://learn.microsoft.com/en-us/azure/sentinel/dynamics-365/deploy-dynamics-365-finance-operations-solution |
 | Deploy Sentinel analytics rules via ARM templates | https://learn.microsoft.com/en-us/azure/sentinel/import-export-analytics-rules |
 | Deploy Sentinel automation rules via ARM templates | https://learn.microsoft.com/en-us/azure/sentinel/import-export-automation-rules |
-| Package and deploy Sentinel platform solutions | https://learn.microsoft.com/en-us/azure/sentinel/isv/package-platform-solution |
-| Publish Sentinel SIEM solutions to Microsoft marketplace | https://learn.microsoft.com/en-us/azure/sentinel/isv/publish-sentinel-solutions |
+| Package and deploy Sentinel graph/notebook solutions | https://learn.microsoft.com/en-us/azure/sentinel/isv/package-publish-notebook-graph-solutions |
+| Publish Microsoft Security Copilot agents to store | https://learn.microsoft.com/en-us/azure/sentinel/isv/publish-agent-to-security-store |
+| Publish Sentinel SIEM solutions via Partner Center | https://learn.microsoft.com/en-us/azure/sentinel/isv/publish-sentinel-solutions |
 | Run Sentinel hunting notebooks in Azure ML workspaces | https://learn.microsoft.com/en-us/azure/sentinel/notebooks-hunt |
-| Deploy SAP data connector agent container via CLI | https://learn.microsoft.com/en-us/azure/sentinel/sap/deploy-command-line |
+| Deploy SAP data connector agents to Microsoft Sentinel | https://learn.microsoft.com/en-us/azure/sentinel/sap/deploy-data-connector-agent-container |
 | Deploy Sentinel solution for SAP BTP systems | https://learn.microsoft.com/en-us/azure/sentinel/sap/deploy-sap-btp-solution |
 | Deploy Sentinel solution for SAP applications | https://learn.microsoft.com/en-us/azure/sentinel/sap/deployment-overview |
 | Migrate Sentinel SAP container agent to agentless connector | https://learn.microsoft.com/en-us/azure/sentinel/sap/sap-agent-migrate |

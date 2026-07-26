@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-19'
+generated_at: '2026-07-26'
 category_descriptions:
   configuration: 'Configuring AVS infrastructure: networking, DNS/DHCP, storage/datastores,
     backup, monitoring/metrics, Arc/Run Command, HCX, Cloud Director, and high availability/placement
@@ -52,10 +52,10 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 - **Unclassified**: 42
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 2
-- **Unchanged**: 134
-- **Deleted Pages**: 0
+- **New Pages**: 1
+- **Updated Pages**: 0
+- **Unchanged**: 137
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-vmware-solution/azure-vmware-solution.csv`
 
 ## Classification Statistics
@@ -77,15 +77,11 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 
 ### New Pages
 
-- [Collect esxtop performance data](https://learn.microsoft.com/en-us/azure/azure-vmware/run-command-esxtop)
-- [Troubleshoot Run Command](https://learn.microsoft.com/en-us/azure/azure-vmware/troubleshoot-run-command)
+- [Plan maintenance for Azure VMware Solution](https://learn.microsoft.com/en-us/azure/azure-vmware/maintenance-orchestration)
 
-### Updated Pages
+### Deleted Pages
 
-- [2 - Create a private cloud](https://learn.microsoft.com/en-us/azure/azure-vmware/tutorial-create-private-cloud)
-  - Updated: 2026-04-03T08:00:00.000Z → 2026-04-07T22:12:00.000Z
-- [Run Command](https://learn.microsoft.com/en-us/azure/azure-vmware/using-run-command)
-  - Updated: 2026-06-30T22:12:00.000Z → 2026-07-13T17:11:00.000Z
+- ~~Plan self-service maintenance for Azure VMware Solution~~ (https://learn.microsoft.com/en-us/azure/azure-vmware/self-service-maintenance-orchestration)
 
 ## Classified Pages
 
@@ -220,7 +216,7 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Deploy vSAN stretched clusters](https://learn.microsoft.com/en-us/azure/azure-vmware/deploy-vsan-stretched-clusters) | 0.30 | Summary indicates a procedural deployment guide for vSAN stretched clusters without exposing specific limits, configuration parameter tables, or decision matrices. Likely step-by-step instructions rather than reusable expert configuration or limits data. |
 | [Internet connectivity options](https://learn.microsoft.com/en-us/azure/azure-vmware/native-internet-connectivity-design-considerations) | 0.30 | Internet connectivity options article; summary indicates design considerations and options, but no clear evidence of numeric thresholds, decision matrices, or detailed configuration tables. |
 | [Move Azure VMware Solution subscriptions](https://learn.microsoft.com/en-us/azure/azure-vmware/move-ea-csp-subscriptions) | 0.30 | Describes moving an AVS subscription between subscriptions, likely as a procedural/billing operation. The summary does not indicate presence of limits tables, configuration parameter references, or decision matrices; it appears to be a how-to without reusable expert constraints. |
-| [Plan self-service maintenance for Azure VMware Solution](https://learn.microsoft.com/en-us/azure/azure-vmware/self-service-maintenance-orchestration) | 0.30 | Describes how to use self-service maintenance orchestration and schedule maintenance; appears to be a feature-usage guide without numeric limits, decision matrices, or detailed configuration parameter tables. |
+| [Plan maintenance for Azure VMware Solution](https://learn.microsoft.com/en-us/azure/azure-vmware/maintenance-orchestration) | 0.30 | Appears to be a procedural guide on using maintenance orchestration in the Azure portal without clear evidence of numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices; likely a how-to article rather than expert-knowledge reference content. |
 | [Remove Arc-enabled Azure VMware Solution vSphere resources from Azure](https://learn.microsoft.com/en-us/azure/azure-vmware/remove-arc-enabled-azure-vmware-solution-vsphere-resources-from-azure) | 0.30 | Procedural how-to for removing Arc-enabled vSphere resources; no detailed configuration tables, limits, error-code mappings, or product-specific parameters beyond generic portal steps. |
 | [Restore VMs](https://learn.microsoft.com/en-us/azure/azure-vmware/restore-azure-netapp-files-vms) | 0.30 | Procedural restore-how-to for Cloud Backup and vCenter; description suggests step-by-step operations without explicit limits, config tables, error-code mappings, or product-specific parameter references that meet any sub-skill criteria. |
 | [Restore guest files and folders](https://learn.microsoft.com/en-us/azure/azure-vmware/restore-guest-files-folders) | 0.30 | How-to guide for restoring guest files/folders from VMDK; summary indicates operational steps only, with no numeric limits, configuration matrices, error-code troubleshooting, or detailed parameter tables required for any sub-skill type. |

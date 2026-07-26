@@ -1,9 +1,9 @@
 ---
 name: azure-cloud-services
-description: Expert knowledge for Azure Cloud Services development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when configuring Cloud Services roles, Key Vault certs, autoscale rules, guest OS upgrades, or PowerShell automation, and other Azure Cloud Services related development tasks. Not for Azure Networking (use azure-networking), Azure Virtual Machines (use azure-virtual-machines), Azure Resource Manager (use azure-resource-manager), Azure Portal (use azure-portal).
+description: Expert knowledge for Azure Cloud Services development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when managing Cloud Services guest OS upgrades, Key Vault certs, .csdef/.cscfg configs, autoscale, or migrations, and other Azure Cloud Services related development tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure App Service (use azure-app-service), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Functions (use azure-functions).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-05"
+  generated_at: "2026-07-26"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Cloud Services Skill
@@ -29,7 +29,7 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L45-L53 | Guidance on planning Cloud Services guest OS upgrades, comparing Cloud Services vs VM Scale Sets, and migrating classic/non-VNet Cloud Services to extended support and VNets. |
 | Limits & Quotas | L54-L60 | VM instance size limits/capacities and timelines, impacts, and constraints related to Guest OS family retirements for Azure Cloud Services. |
 | Security | L61-L66 | Using Key Vault for certificates in Cloud Services and understanding Azure Guest OS security updates, support lifecycle, and retirement policies |
-| Configuration | L67-L85 | Configuring Cloud Services roles and deployments: .csdef/.cscfg schemas, network/load balancer settings, diagnostics, RDP, Key Vault, extensions, alerts, and scaling/SKU overrides. |
+| Configuration | L67-L85 | Configuring Cloud Services roles and deployments: .csdef/.cscfg schemas, networking, load balancers, diagnostics, RDP, Key Vault, extensions, alerts, and SKU/instance overrides |
 | Integrations & Coding Patterns | L86-L91 | Automating Azure Cloud Services (extended support) with PowerShell: creating deployments, retrieving service details, and resetting or redeploying cloud service instances. |
 
 ### Troubleshooting
@@ -72,7 +72,7 @@ This skill requires **network access** to fetch documentation content:
 | Enable Key Vault VM extension for Cloud Services roles | https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/enable-key-vault-virtual-machine |
 | Configure Remote Desktop extension for Cloud Services | https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/enable-rdp |
 | Configure Azure diagnostics extension for Cloud Services | https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/enable-wad |
-| Configure and manage extensions for Cloud Services roles | https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/extensions |
+| Configure extensions for Azure Cloud Services (extended support) | https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/extensions |
 | Override Cloud Services SKU and instance count via allowModelOverride | https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/override-sku |
 | Reference schema for Cloud Services configuration (.cscfg) | https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/schema-cscfg-file |
 | Configure NetworkConfiguration for Cloud Services deployments | https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/schema-cscfg-networkconfiguration |

@@ -48,8 +48,8 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 136
+- **Updated Pages**: 0
+- **Unchanged**: 138
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-wan/azure-virtual-wan.csv`
 
@@ -68,13 +68,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | *(Unclassified)* | 42 | 30.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [Internet access with routing intent](https://learn.microsoft.com/en-us/azure/virtual-wan/about-internet-routing)
-  - Updated: 2025-11-18T18:43:00.000Z → 2026-07-17T17:52:00.000Z
-- [About ExpressRoute in Virtual WAN](https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-expressroute-about)
-  - Updated: 2025-03-26T22:03:00.000Z → 2026-07-16T05:10:00.000Z
 
 ## Classified Pages
 

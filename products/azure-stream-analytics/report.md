@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 163
+- **Updated Pages**: 0
+- **Unchanged**: 164
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-stream-analytics/azure-stream-analytics.csv`
 
@@ -76,11 +76,6 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | *(Unclassified)* | 56 | 34.1% |
 
 ## Changes
-
-### Updated Pages
-
-- [Streaming data inputs](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-define-inputs)
-  - Updated: 2026-03-06T23:15:00.000Z → 2026-07-15T08:00:00.000Z
 
 ## Classified Pages
 

@@ -46,8 +46,8 @@ confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure NetApp 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 30
+- **Updated Pages**: 0
+- **Unchanged**: 31
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-managed-lustre/azure-managed-lustre.csv`
 
@@ -65,11 +65,6 @@ confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure NetApp 
 | *(Unclassified)* | 4 | 12.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [Monitoring reference for metrics and logs](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/monitor-file-system-reference)
-  - Updated: 2024-11-22T17:47:00.000Z → 2025-09-18T22:04:00.000Z
 
 ## Classified Pages
 

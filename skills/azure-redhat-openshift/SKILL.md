@@ -1,9 +1,9 @@
 ---
 name: azure-redhat-openshift
-description: Expert knowledge for Azure Red Hat OpenShift development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when sizing ARO clusters, configuring networking/storage, securing with Entra/Front Door, or integrating GPUs/NetApp, and other Azure Red Hat OpenShift related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Container Apps (use azure-container-apps), Azure Virtual Machines (use azure-virtual-machines), Azure Arc (use azure-arc).
+description: Expert knowledge for Azure Red Hat OpenShift development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing ARO clusters, configuring networking/storage, securing with Entra/Front Door, or integrating GPUs/Key Vault, and other Azure Red Hat OpenShift related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Container Apps (use azure-container-apps), Azure Virtual Machines (use azure-virtual-machines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-05"
+  generated_at: "2026-07-26"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Red Hat OpenShift Skill
@@ -26,12 +26,12 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L36-L42 | Fixing common ARO cluster issues, restoring cluster access, and manually updating or troubleshooting cluster certificates and connectivity via CLI |
 | Best Practices | L43-L50 | Guidance on sizing and configuring ARO clusters: infra nodes, large-cluster design, supported configs, and optimizing OpenShift Virtualization VM deployments. |
-| Decision Making | L51-L55 | Defines the shared responsibility model for Azure Red Hat OpenShift, detailing which operational tasks are handled by Microsoft, Red Hat, and the customer. |
-| Limits & Quotas | L56-L61 | Scaling ARO clusters with multiple load balancer IPs, plus hard/soft service limits, quotas, and key terms that constrain cluster size and usage. |
-| Security | L62-L79 | Identity, access, disk encryption, network egress, workload/managed identities, FIPS, Lockbox, and securing ARO apps with Azure Front Door and Microsoft Entra. |
-| Configuration | L80-L98 | Cluster-level setup for ARO: registry, networking (proxy, DNS, MTU, endpoints), storage (Azure Files, Prometheus), node/subnet layout, Spot VMs, capacity reservations, tags, and pull secrets. |
-| Integrations & Coding Patterns | L99-L107 | Guides for integrating ARO with GPUs, Azure NetApp Files, Azure Monitor (Prometheus), Container Registry, and Key Vault secrets, including setup and configuration patterns. |
-| Deployment | L108-L118 | Deploying and operating ARO clusters and apps: cluster creation (private/ARM/Bicep), upgrades, networking migration, backups/restores, and app runtimes (JBoss, WebSphere, S2I, serverless). |
+| Decision Making | L51-L56 | Roles and responsibilities for managing ARO clusters and guidance on ARO version lifecycle, support timelines, and upgrade planning. |
+| Limits & Quotas | L57-L62 | Scaling ARO clusters with multiple load balancer IPs, plus hard/soft service limits, quotas, and key terms that constrain cluster size and usage. |
+| Security | L63-L80 | Identity, access, disk encryption, network egress, workload/managed identities, FIPS, Lockbox, and securing ARO apps with Azure Front Door and Microsoft Entra. |
+| Configuration | L81-L99 | Cluster-level setup for ARO: registry, networking (proxy, DNS, MTU, endpoints), storage (Azure Files, Prometheus), node/subnet layout, Spot VMs, capacity reservations, tags, and pull secrets. |
+| Integrations & Coding Patterns | L100-L108 | Guides for integrating ARO with GPUs, Azure NetApp Files, Azure Monitor (Prometheus), Container Registry, and Key Vault secrets, including setup and configuration patterns. |
+| Deployment | L109-L119 | Deploying and operating ARO clusters and apps: cluster creation (private/ARM/Bicep), upgrades, networking migration, backups/restores, and app runtimes (JBoss, WebSphere, S2I, serverless). |
 
 ### Troubleshooting
 | Topic | URL |
@@ -52,6 +52,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Understand responsibility matrix for ARO operations | https://learn.microsoft.com/en-us/azure/openshift/responsibility-matrix |
+| Plan Azure Red Hat OpenShift version support lifecycle | https://learn.microsoft.com/en-us/azure/openshift/support-lifecycle |
 
 ### Limits & Quotas
 | Topic | URL |

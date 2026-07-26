@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-19'
+generated_at: '2026-07-26'
 category_descriptions:
   security: 'Managing Service Connector security: required permissions, Microsoft
     Entra role assignments, and configuring auth methods (managed identity, service
@@ -9,9 +9,9 @@ category_descriptions:
   troubleshooting: Diagnosing and resolving common Service Connector errors, connection
     failures (incl. AKS scenarios), error codes, and configuration issues between
     Azure compute and backing services.
-  configuration: How to define and retrieve Service Connector connection settings
-    (IaC and runtime), configure auth and environment variables, and supply correct
-    CLI parameters for connections
+  configuration: Configuring Service Connector connections via IaC/CLI, setting auth
+    and environment variables, and specific setup for Azure Cache for Redis and retrieving
+    connection configs.
   integrations: How to connect Azure compute to databases, messaging, storage, AI,
     and third‑party services using Service Connector, including setup patterns, auth
     options, and integration examples.
@@ -21,16 +21,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Service Connector development including
   troubleshooting, limits & quotas, security, configuration, integrations & coding
   patterns, and deployment. Use when wiring Azure compute to databases, messaging,
-  storage, AI, or third‑party services via Service Connector, and other Azure Service
-  Connector related development tasks. Not for Azure API Management (use azure-api-management),
-  Azure App Service (use azure-app-service), Azure Functions (use azure-functions),
-  Azure Logic Apps (use azure-logic-apps).
-use_when: Use when wiring Azure compute to databases, messaging, storage, AI, or third‑party
-  services via Service Connector, and other Azure Service Connector related development
-  tasks.
+  storage, AI services, or Azure Cache for Redis via Service Connector, and other
+  Azure Service Connector related development tasks. Not for Azure API Management
+  (use azure-api-management), Azure Functions (use azure-functions), Azure Logic Apps
+  (use azure-logic-apps), Azure App Service (use azure-app-service).
+use_when: Use when wiring Azure compute to databases, messaging, storage, AI services,
+  or Azure Cache for Redis via Service Connector, and other Azure Service Connector
+  related development tasks.
 confusable_not_for: Not for Azure API Management (use azure-api-management), Azure
-  App Service (use azure-app-service), Azure Functions (use azure-functions), Azure
-  Logic Apps (use azure-logic-apps).
+  Functions (use azure-functions), Azure Logic Apps (use azure-logic-apps), Azure
+  App Service (use azure-app-service).
 ---
 # Azure Service Connector Crawl Report
 
@@ -53,9 +53,9 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| configuration | 4 | 6.7% |
+| configuration | 5 | 8.3% |
 | deployment | 1 | 1.7% |
-| integrations | 29 | 48.3% |
+| integrations | 28 | 46.7% |
 | limits-quotas | 1 | 1.7% |
 | security | 2 | 3.3% |
 | troubleshooting | 3 | 5.0% |
@@ -65,8 +65,8 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 
 ### Updated Pages
 
-- [Service Connector internals](https://learn.microsoft.com/en-us/azure/service-connector/concept-service-connector-internals)
-  - Updated: 2025-09-29T08:00:00.000Z → 2026-07-17T11:42:00.000Z
+- [Azure Cache for Redis](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-redis-cache)
+  - Updated: 2026-06-18T08:00:00.000Z → 2026-07-23T11:40:00.000Z
 
 ## Classified Pages
 
@@ -74,7 +74,6 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 |-----------|------|------------|--------|
 | [Troubleshoot](https://learn.microsoft.com/en-us/azure/service-connector/how-to-troubleshoot-front-end-error) | troubleshooting | 0.95 | Explicitly described as listing Service Connector error messages with suggested actions. Contains concrete error messages and mappings from symptom to cause and resolution, which is product-specific troubleshooting knowledge. |
 | [Azure Blob Storage](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-storage-blob) | integrations | 0.90 | Lists supported auth methods/clients, sample code, and default environment variable names, values, and configuration for Blob Storage; detailed integration and config patterns. |
-| [Azure Cache for Redis](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-redis-cache) | integrations | 0.90 | Includes supported auth methods, clients, sample code, and default environment variable names/values for Redis; clearly an integration-focused reference with product-specific parameters. |
 | [Azure Cosmos DB for Apache Cassandra](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-cosmos-cassandra) | integrations | 0.90 | Shows auth methods, clients, sample code, and default environment variable names/values for Cosmos DB Cassandra API; detailed integration and configuration information. |
 | [Azure Cosmos DB for Apache Gremlin](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-cosmos-gremlin) | integrations | 0.90 | Provides Gremlin-specific auth/client usage and default environment variable names/values; integration patterns and parameters are product-specific. |
 | [Azure Cosmos DB for MongoDB](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-cosmos-db) | integrations | 0.90 | Details supported auth methods, clients, sample code, and default environment variable names/values or Spring Boot config; strong match for integrations with concrete configuration parameters. |
@@ -97,6 +96,7 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 | [Azure Queue Storage](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-storage-queue) | integrations | 0.82 | The article includes concrete integration patterns between Azure Queue Storage and compute services using Service Connector, including default environment variables and Spring Boot configuration properties. These are product-specific configuration parameters and code patterns that qualify as expert integration knowledge rather than generic tutorial content. |
 | [Get connection configurations](https://learn.microsoft.com/en-us/azure/service-connector/how-to-get-configurations) | configuration | 0.80 | Shows how Service Connector populates connection strings and other settings, and how to access them; involves specific configuration names and patterns unique to the service. |
 | [Provide correct parameters](https://learn.microsoft.com/en-us/azure/service-connector/how-to-provide-correct-parameters) | configuration | 0.80 | Explains fundamental properties and proper value formats when passing parameters via CLI; this is detailed configuration knowledge with specific parameter names and expected formats. |
+| [Azure Cache for Redis](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-redis-cache) | configuration | 0.78 | Page documents default environment variable names and values, authentication options, and connection configuration obtained when creating service connections. These are product-specific configuration details (parameter names, defaults, and patterns) that qualify as expert knowledge beyond generic integration tutorials. |
 | [Azure Event Hubs](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-event-hubs) | integrations | 0.78 | The page documents product-specific integration details between Service Connector and Azure Event Hubs, including supported client types, authentication methods, default environment variable names/values, and Spring Boot configuration properties. These are concrete configuration and coding patterns unique to this integration, matching the integrations sub-skill criteria. |
 | [Azure File](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-storage-file) | integrations | 0.78 | The page documents product-specific integration details: supported clients, authentication methods, and default environment variables used by Service Connector when wiring Azure Files to compute services. These environment variable names/values and connection patterns are configuration- and SDK-specific details that go beyond generic knowledge, fitting the integrations category. |
 | [Azure SignalR Service](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-signalr) | integrations | 0.78 | The article provides specific integration details for Azure SignalR Service via Service Connector, including supported client types, authentication options, default environment variables, and Spring Boot configuration keys. These product-specific parameters and code patterns qualify as expert integration knowledge. |

@@ -47,8 +47,8 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 56
+- **Updated Pages**: 0
+- **Unchanged**: 57
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-energy-data-services/azure-energy-data-services.csv`
 
@@ -66,11 +66,6 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 | *(Unclassified)* | 20 | 35.1% |
 
 ## Changes
-
-### Updated Pages
-
-- [Release notes](https://learn.microsoft.com/en-us/azure/energy-data-services/release-notes)
-  - Updated: 2026-05-22T17:10:00.000Z → 2026-07-13T08:00:00.000Z
 
 ## Classified Pages
 

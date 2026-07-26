@@ -35,8 +35,8 @@ confusable_not_for: Not for Azure Reliability (use azure-reliability), Azure Sit
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 33
+- **Updated Pages**: 0
+- **Unchanged**: 34
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-resiliency/azure-resiliency.csv`
 
@@ -50,11 +50,6 @@ confusable_not_for: Not for Azure Reliability (use azure-reliability), Azure Sit
 | *(Unclassified)* | 24 | 70.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [Use the Resiliency agent](https://learn.microsoft.com/en-us/azure/resiliency/goals-recommendations-use-agent)
-  - Updated: 2026-06-02T18:53:00.000Z → 2026-07-16T11:41:00.000Z
 
 ## Classified Pages
 

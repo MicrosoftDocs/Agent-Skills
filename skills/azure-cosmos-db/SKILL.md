@@ -1,9 +1,9 @@
 ---
 name: azure-cosmos-db
-description: Expert knowledge for Azure Cosmos DB development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Cosmos DB NoSQL/Mongo/Cassandra/PostgreSQL APIs, change feed, multi-region, vector search, or migrations, and other Azure Cosmos DB related development tasks. Not for Azure Table Storage (use azure-table-storage), Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance), Azure Database for PostgreSQL (use azure-database-postgresql).
+description: Expert knowledge for Azure Cosmos DB development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Cosmos DB NoSQL/Mongo/Cassandra/PostgreSQL APIs, change feed, vector search, bulk ops, or Kafka/Spark, and other Azure Cosmos DB related development tasks. Not for Azure Table Storage (use azure-table-storage), Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance), Azure Data Explorer (use azure-data-explorer).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-12"
+  generated_at: "2026-07-26"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Cosmos DB Skill
@@ -24,13 +24,13 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Location | Description |
 |----------|----------|-------------|
-| Troubleshooting | L37-L91 | Diagnosing and fixing Cosmos DB errors, performance, connectivity, encryption, and SDK/API-specific issues (SQL, MongoDB, Cassandra, Gremlin, PostgreSQL, DocumentDB) using logs, metrics, and KQL. |
+| Troubleshooting | L37-L91 | Diagnosing and fixing Cosmos DB issues across APIs and SDKs: connection and timeout errors, RU/latency problems, encryption/CMK and replication issues, and advanced diagnostics/log queries. |
 | Best Practices | L92-L158 | Performance, cost, resiliency, and SDK best practices for Cosmos DB (NoSQL, Mongo, Cassandra, PostgreSQL), including partitioning, indexing, RU optimization, change feed, DR, and HA. |
-| Decision Making | L159-L220 | Guides for choosing Cosmos DB/DocumentDB/PostgreSQL options (throughput, consistency, regions, pricing) and planning migrations, upgrades, analytics, and vector index strategies. |
+| Decision Making | L159-L220 | Guidance for choosing Cosmos DB/DocumentDB/PostgreSQL/MongoDB options, sizing RU/s and clusters, consistency, pricing, networking, and planning or executing migrations and upgrades. |
 | Architecture & Design Patterns | L221-L252 | Architectural patterns for AI/RAG, agent memory, knowledge graphs, multi-tenant and microservice designs, high availability, change feed, analytics, and vector search on Cosmos DB and PostgreSQL. |
-| Limits & Quotas | L253-L293 | Limits, quotas, and behaviors for Cosmos DB (and DocumentDB): throughput, autoscale, burst, partitions, backups/restore, serverless, free tier, indexing, Gremlin, PostgreSQL, and Cassandra. |
-| Security | L294-L366 | Securing Cosmos DB across all APIs: identity/RBAC, network isolation, encryption/CMK, auditing, firewall/TLS, data masking, Defender/Policy governance, and PostgreSQL/Cassandra/Mongo-specific hardening. |
-| Configuration | L367-L495 | Configuring Cosmos DB and related services: throughput, indexing, backup/restore, monitoring, emulators, vector/search, multi-region, Cassandra/Mongo/PostgreSQL/Table APIs, and SDK performance/observability. |
+| Limits & Quotas | L253-L294 | Limits, quotas, and behaviors for Cosmos DB (and DocumentDB/PostgreSQL/Cassandra): throughput, partitions, backups/restore, free tier, serverless, change feed, indexing, and API-specific caps. |
+| Security | L295-L367 | Securing Cosmos DB across all APIs: identity/RBAC, network isolation, encryption/CMK, auditing, firewall/TLS, data masking, Defender/Policy governance, and PostgreSQL/Cassandra/Mongo-specific hardening. |
+| Configuration | L368-L496 | Configuring and tuning Cosmos DB and related services: throughput, indexing, backup/restore, monitoring, SDK performance, emulators, vector/search, Cassandra/Mongo/PostgreSQL/Table APIs, and fleet/HA settings. |
 | Integrations & Coding Patterns | [integrations.md](integrations.md) | SDK usage, integrations, and patterns for connecting apps and tools to Cosmos DB (NoSQL, Mongo, Cassandra, PostgreSQL), including bulk ops, change feed, Kafka/Spark/BI, vector/search, and migration. |
 | Deployment | [deployment.md](deployment.md) | Deploying and managing Cosmos DB (NoSQL, Mongo, Cassandra, PostgreSQL, Table, DocumentDB) with Bicep/ARM/Terraform, CI/CD, emulator, migrations, upgrades, and maintenance. |
 
@@ -49,7 +49,7 @@ This skill requires **network access** to fetch documentation content:
 | Interpret Cosmos DB Gremlin response headers for debugging | https://learn.microsoft.com/en-us/azure/cosmos-db/gremlin/headers |
 | Use diagnostics queries to troubleshoot Cosmos DB MongoDB | https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/diagnostic-queries |
 | Resolve common Azure Cosmos DB MongoDB error codes | https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/error-codes-solutions |
-| Resolve common Azure Cosmos DB for MongoDB issues | https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/faq |
+| Resolve common issues for Azure Cosmos DB MongoDB API | https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/faq |
 | Prevent rate-limiting errors in Cosmos DB MongoDB operations | https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/prevent-rate-limiting-errors |
 | Troubleshoot query performance issues in Cosmos DB MongoDB | https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/troubleshoot-query-performance |
 | Use aggregated diagnostics logs to troubleshoot Cosmos DB requests | https://learn.microsoft.com/en-us/azure/cosmos-db/monitor-aggregated-logs |
@@ -165,7 +165,7 @@ This skill requires **network access** to fetch documentation content:
 | Choose Azure Cosmos DB consistency levels | https://learn.microsoft.com/en-us/azure/cosmos-db/consistency-levels |
 | Convert vCores to Cosmos DB RU/s for migration | https://learn.microsoft.com/en-us/azure/cosmos-db/convert-vcore-to-request-unit |
 | Decide when to use Cosmos DB dedicated gateway | https://learn.microsoft.com/en-us/azure/cosmos-db/dedicated-gateway |
-| Estimate Cosmos DB RU/s and cost with capacity planner | https://learn.microsoft.com/en-us/azure/cosmos-db/estimate-ru-with-capacity-planner |
+| Estimate Azure Cosmos DB RU/s and costs | https://learn.microsoft.com/en-us/azure/cosmos-db/estimate-ru-with-capacity-planner |
 | Manage multitenant throughput with Cosmos DB fleet pools | https://learn.microsoft.com/en-us/azure/cosmos-db/fleet-pools |
 | Use global secondary indexes in Azure Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/global-secondary-indexes |
 | Choose Cosmos DB manual vs autoscale throughput | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-choose-offer |
@@ -182,7 +182,7 @@ This skill requires **network access** to fetch documentation content:
 | Decide between Cosmos DB MongoDB and MongoDB Atlas | https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/compare-mongodb-atlas |
 | Evaluate benefits of upgrading to Cosmos DB MongoDB 4.0+ | https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/compression-cost-savings |
 | Map MongoDB consistency to Cosmos DB levels | https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/consistency-mapping |
-| Estimate RU/s and cost for Cosmos DB MongoDB workloads | https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/estimate-ru-capacity-planner |
+| Plan RU/s capacity and cost for Cosmos DB MongoDB API | https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/estimate-ru-capacity-planner |
 | Decide and migrate from Cosmos DB for MongoDB to DocumentDB | https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/how-to-migrate-documentdb |
 | Plan pre-migration steps from MongoDB to Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/pre-migration-steps |
 | Plan Cosmos DB network bandwidth usage and costs | https://learn.microsoft.com/en-us/azure/cosmos-db/network-bandwidth |
@@ -261,7 +261,7 @@ This skill requires **network access** to fetch documentation content:
 | Understand limits for Cosmos DB continuous backup restore | https://learn.microsoft.com/en-us/azure/cosmos-db/continuous-backup-restore-frequently-asked-questions |
 | Use Cosmos DB continuous backup and point-in-time restore | https://learn.microsoft.com/en-us/azure/cosmos-db/continuous-backup-restore-introduction |
 | Throughput redistribution limits across Cosmos DB partitions | https://learn.microsoft.com/en-us/azure/cosmos-db/distribute-throughput-across-partitions-faq |
-| Reference Azure Cosmos DB service limits and quotas | https://learn.microsoft.com/en-us/azure/cosmos-db/faq |
+| Azure Cosmos DB service limits and behaviors FAQ | https://learn.microsoft.com/en-us/azure/cosmos-db/faq |
 | Use Cosmos DB lifetime free tier limits | https://learn.microsoft.com/en-us/azure/cosmos-db/free-tier |
 | Reference stopwords for Cosmos DB full text search | https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/stopwords |
 | Review runtime limits for Cosmos DB Gremlin engine | https://learn.microsoft.com/en-us/azure/cosmos-db/gremlin/limits |
@@ -280,6 +280,7 @@ This skill requires **network access** to fetch documentation content:
 | Use same-account restore with Cosmos DB continuous backup | https://learn.microsoft.com/en-us/azure/cosmos-db/restore-in-account-continuous-backup-frequently-asked-questions |
 | Understand performance limits of Cosmos DB serverless | https://learn.microsoft.com/en-us/azure/cosmos-db/serverless-performance |
 | Configure and understand Cosmos DB soft delete retention | https://learn.microsoft.com/en-us/azure/cosmos-db/soft-delete |
+| Review Azure Cosmos DB Table API limits and behaviors | https://learn.microsoft.com/en-us/azure/cosmos-db/table/faq |
 | Throughput bucket limits and throttling behavior in Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/throughput-buckets-faq |
 | Review compute and storage configuration options for Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/compute-storage |
 | Review compute and storage configuration options for Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/compute-storage |
@@ -422,7 +423,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure throughput for Cosmos DB MongoDB resources | https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/how-to-provision-throughput |
 | Configure per-document TTL in Cosmos DB for MongoDB | https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/time-to-live |
 | Track Cosmos DB partition split and merge via activity logs | https://learn.microsoft.com/en-us/azure/cosmos-db/monitor-activity-logs-elastic-operations |
-| Reference for Cosmos DB monitoring metrics and logs | https://learn.microsoft.com/en-us/azure/cosmos-db/monitor-reference |
+| Use Azure Cosmos DB monitoring metrics and logs | https://learn.microsoft.com/en-us/azure/cosmos-db/monitor-reference |
 | Configure diagnostic settings and resource logs for Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/monitor-resource-logs |
 | Optimize Async Java v2 Cosmos DB client settings | https://learn.microsoft.com/en-us/azure/cosmos-db/performance-tips-async-java |
 | Optimize Sync Java v2 Cosmos DB client settings | https://learn.microsoft.com/en-us/azure/cosmos-db/performance-tips-java |

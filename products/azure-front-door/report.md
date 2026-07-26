@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-19'
+generated_at: '2026-07-26'
 category_descriptions:
   architecture-patterns: 'Architectural patterns for Azure Front Door: apex domain
     setup, blue/green deployments, manual failover with Traffic Manager, static blob
@@ -49,13 +49,13 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 - **Total Pages**: 101
 - **Fetched**: 101
 - **Fetch Failed**: 0
-- **Classified**: 66
-- **Unclassified**: 35
+- **Classified**: 62
+- **Unclassified**: 39
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 6
-- **Unchanged**: 94
+- **New Pages**: 0
+- **Updated Pages**: 4
+- **Unchanged**: 97
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-front-door/azure-front-door.csv`
 
@@ -63,37 +63,29 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 5 | 5.0% |
+| architecture-patterns | 4 | 4.0% |
 | best-practices | 4 | 4.0% |
 | configuration | 18 | 17.8% |
 | decision-making | 8 | 7.9% |
-| deployment | 8 | 7.9% |
-| integrations | 3 | 3.0% |
+| deployment | 6 | 5.9% |
+| integrations | 2 | 2.0% |
 | limits-quotas | 5 | 5.0% |
 | security | 14 | 13.9% |
 | troubleshooting | 1 | 1.0% |
-| *(Unclassified)* | 35 | 34.7% |
+| *(Unclassified)* | 39 | 38.6% |
 
 ## Changes
 
-### New Pages
-
-- [Edge actions](https://learn.microsoft.com/en-us/azure/frontdoor/edge-actions)
-
 ### Updated Pages
 
-- [Understanding billing](https://learn.microsoft.com/en-us/azure/frontdoor/billing)
-  - Updated: 2026-07-10T17:20:00.000Z → 2026-07-14T08:00:00.000Z
-- [Caching with Azure Front Door](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-caching)
-  - Updated: 2025-09-25T08:00:00.000Z → 2026-07-15T22:16:00.000Z
-- [Secure your Front Door](https://learn.microsoft.com/en-us/azure/frontdoor/secure-front-door)
-  - Updated: 2025-07-09T05:33:00.000Z → 2026-07-17T22:12:00.000Z
-- [WebSocket](https://learn.microsoft.com/en-us/azure/frontdoor/standard-premium/websocket)
-  - Updated: 2025-11-19T12:10:00.000Z → 2026-07-17T22:12:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-faq)
-  - Updated: 2026-06-11T06:13:00.000Z → 2026-07-18T02:31:00.000Z
-- [Routing limits](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-routing-limits)
-  - Updated: 2026-04-21T17:17:00.000Z → 2026-07-17T22:12:00.000Z
+- [Bicep and Resource Manager Templates](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-quickstart-template-samples)
+  - Updated: 2024-11-18T08:00:00.000Z → 2026-07-24T22:16:00.000Z
+- [Create a Front Door - ARM template](https://learn.microsoft.com/en-us/azure/frontdoor/create-front-door-template)
+  - Updated: 2025-05-12T22:03:00.000Z → 2026-07-24T18:54:00.000Z
+- [Blue/Green deployment with Front Door](https://learn.microsoft.com/en-us/azure/frontdoor/blue-green-deployment)
+  - Updated: 2024-11-19T18:02:00.000Z → 2026-07-24T08:00:00.000Z
+- [Edge actions](https://learn.microsoft.com/en-us/azure/frontdoor/edge-actions)
+  - Updated: 2026-07-14T17:11:00.000Z → 2026-07-24T17:11:00.000Z
 
 ## Classified Pages
 
@@ -119,7 +111,6 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Add origins to origin group](https://learn.microsoft.com/en-us/azure/frontdoor/how-to-configure-origin) | configuration | 0.70 | How-to for configuring origins and origin groups; includes product-specific settings such as hostnames, ports, and priority/weight behavior. |
 | [Add security headers with Rules engine](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-security-headers) | security | 0.70 | Shows how to configure specific security headers (HSTS, X-XSS-Protection, etc.) via Rules Engine; includes concrete header names, values, and Front Door rule configuration details that are product-specific security patterns. |
 | [Azure Storage blobs](https://learn.microsoft.com/en-us/azure/frontdoor/scenario-storage-blobs) | architecture-patterns | 0.70 | Scenario article for using Front Door with Storage blobs; describes a specific architecture pattern and when to use it for website hosting and file delivery. |
-| [Bicep and Resource Manager Templates](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-quickstart-template-samples) | deployment | 0.70 | Template samples for creating profiles and rate limiting include resource schemas, properties, and deployment-time constraints specific to Front Door, which are concrete deployment patterns. |
 | [CDN and Front Door price comparison](https://learn.microsoft.com/en-us/azure/frontdoor/compare-cdn-front-door-price) | decision-making | 0.70 | Pricing comparison content between Azure CDN Standard Microsoft (classic) and Azure Front Door typically includes SKU- and region-specific rate tables and cost drivers, which are concrete, product-specific decision criteria not reliably known from training. This helps choose between services based on quantified cost trade-offs, fitting the decision-making category. |
 | [Configure TLS policy](https://learn.microsoft.com/en-us/azure/frontdoor/standard-premium/tls-policy-configure) | security | 0.70 | Page describes how to configure TLS policies for Azure Front Door, including predefined vs custom policies and minimum TLS versions for different Front Door/CDN offerings, which are product-specific security configuration details. |
 | [Configure delivery rules](https://learn.microsoft.com/en-us/azure/frontdoor/standard-premium/front-door-add-rules-cli) | integrations | 0.70 | CLI-focused tutorial that includes specific commands and parameters to add delivery rules; product-specific integration pattern with Azure CLI. |
@@ -132,7 +123,6 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [URL rewrite](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-url-rewrite) | configuration | 0.70 | Explains how to configure URL rewrite conditions and behaviors; product-specific routing configuration patterns. |
 | [Understanding billing](https://learn.microsoft.com/en-us/azure/frontdoor/billing) | decision-making | 0.70 | Billing model pages for a specific Azure service typically include detailed, product-specific cost components (base fees per profile, per-request charges, regional data transfer rates, and tier-based differences). These quantified trade-offs and tier/region-specific pricing considerations help users choose tiers and plan usage, fitting the decision-making category more than generic pricing info. |
 | [Upload to Azure Storage blobs](https://learn.microsoft.com/en-us/azure/frontdoor/scenario-upload-storage-blobs) | architecture-patterns | 0.70 | Scenario for mission-critical uploads through Front Door to Blob Storage; describes a secure, reliable, scalable architecture pattern with WAF and TLS considerations. |
-| [Blue/Green deployment with Front Door](https://learn.microsoft.com/en-us/azure/frontdoor/blue-green-deployment) | architecture-patterns | 0.69 | Describes how to realize blue/green deployment strategy with Front Door routing; includes product-specific traffic-splitting pattern. |
 | [Enable log scrubbing](https://learn.microsoft.com/en-us/azure/frontdoor/standard-premium/how-to-protect-sensitive-data) | security | 0.69 | Step-by-step configuration of log scrubbing for sensitive data; includes specific log fields and behavior unique to Front Door. |
 | [End-to-end TLS encryption](https://learn.microsoft.com/en-us/azure/frontdoor/end-to-end-tls) | security | 0.69 | Details supported TLS versions and cipher suites and how TLS offload works in Front Door; product-specific security configuration knowledge. |
 | [Compression](https://learn.microsoft.com/en-us/azure/frontdoor/standard-premium/how-to-compression) | configuration | 0.68 | Provides concrete compression settings, behavior for range requests, and header requirements (Content-Length) specific to Front Door. |
@@ -160,11 +150,9 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Video on-demand and live streaming](https://learn.microsoft.com/en-us/azure/frontdoor/video-on-demand-live-streaming) | best-practices | 0.62 | Guidance on delivering VOD and live streaming over Front Door is likely to include concrete, product-specific recommendations (for example, caching rules, origin configuration patterns, or tuning settings) tailored to media workloads. These are actionable best-practice patterns rather than generic CDN theory. |
 | [Add a root or apex domain](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-how-to-onboard-apex-domain) | configuration | 0.60 | Detailed onboarding process using CNAME validation and domain ownership; includes specific DNS record requirements and constraints. |
 | [Apex domains](https://learn.microsoft.com/en-us/azure/frontdoor/apex-domain) | architecture-patterns | 0.60 | Describes special considerations and patterns for using apex domains with Front Door; product-specific DNS/architecture behavior. |
-| [Create a Front Door - ARM template](https://learn.microsoft.com/en-us/azure/frontdoor/create-front-door-template) | deployment | 0.60 | ARM template quickstart; contains resource schema and property names for Front Door deployment, which are product-specific deployment configuration details. |
 | [Create a Front Door - Bicep](https://learn.microsoft.com/en-us/azure/frontdoor/create-front-door-bicep) | deployment | 0.60 | Bicep-based provisioning of Front Door; includes resource definitions and properties specific to Front Door deployment via IaC. |
 | [Create a Front Door - Terraform](https://learn.microsoft.com/en-us/azure/frontdoor/create-front-door-terraform) | deployment | 0.60 | Terraform quickstart; includes provider-specific resource blocks and arguments for Front Door, which are deployment-specific patterns. |
 | [Cross-Origin Resource Sharing (CORS)](https://learn.microsoft.com/en-us/azure/frontdoor/standard-premium/troubleshoot-cross-origin-resources) | troubleshooting | 0.60 | CORS-focused article; likely includes specific header configurations and symptom→cause→solution guidance for cross-origin problems through Front Door. |
-| [Edge actions](https://learn.microsoft.com/en-us/azure/frontdoor/edge-actions) | integrations | 0.60 | An Edge Actions article for Azure Front Door will describe how to attach custom JavaScript logic to routes, including function signatures, available request/response objects, and configuration options for binding actions to routes. These are product-specific coding and configuration patterns for integrating custom logic at the edge, matching the integrations & coding patterns sub-skill. |
 
 ## Unclassified Pages
 
@@ -176,6 +164,7 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [What is a rule set?](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-rules-engine) | 0.35 | Overview of rule sets concept; doesn’t indicate detailed parameter tables or limits. |
 | [Add a custom domain](https://learn.microsoft.com/en-us/azure/frontdoor/standard-premium/how-to-add-custom-domain) | 0.30 | Describes onboarding custom domains with examples; summary does not show parameter tables, limits, or security role details. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/frontdoor/scripts/custom-domain) | 0.30 | CLI script example to deploy a custom domain and TLS certificate; primarily a tutorial/script, not a reference of configuration options, limits, or troubleshooting mappings. |
+| [Blue/Green deployment with Front Door](https://learn.microsoft.com/en-us/azure/frontdoor/blue-green-deployment) | 0.30 | Appears to be a conceptual/strategy guide for blue/green deployments using Azure Front Door without clear evidence of numeric limits, configuration parameter tables, deployment matrices, or detailed troubleshooting mappings. |
 | [Configure HTTPS on a custom domain](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-custom-domain-https) | 0.30 | How-to article for enabling HTTPS on a custom domain; mainly procedural steps rather than detailed configuration parameter tables, limits, or decision matrices. |
 | [Domains in Azure Front Door](https://learn.microsoft.com/en-us/azure/frontdoor/domain) | 0.30 | From the summary, the page explains what domains are in Azure Front Door and the types supported (subdomains, apex, wildcard) and how they can be used in routes. It doesn't clearly indicate specific numeric limits, configuration parameter tables, error codes, or decision matrices. It appears to be a conceptual/feature overview and basic usage, so no sub-skill type with expert knowledge applies. |
 | [Front Door manager](https://learn.microsoft.com/en-us/azure/frontdoor/manager) | 0.30 | Overview of Front Door manager UI and capabilities; largely conceptual management description. |
@@ -190,10 +179,13 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [WebSocket](https://learn.microsoft.com/en-us/azure/frontdoor/standard-premium/websocket) | 0.30 | The WebSocket article description focuses on explaining what WebSockets are and that Azure Front Door Standard/Premium support them without extra configuration. From the summary, it appears conceptual and capability-descriptive, without detailed configuration parameters, limits, or troubleshooting content, so it does not clearly meet any expert-knowledge sub-skill criteria. |
 | [Wildcard domains](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-wildcard-domain) | 0.30 | Wildcard domain support description for Azure Front Door focuses on conceptual explanation and basic usage; no clear evidence of numeric limits, configuration parameter tables, or detailed troubleshooting/decision matrices in the provided summary. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-custom-domain) | 0.20 | How-to guide for adding a custom domain; likely step-by-step portal instructions without detailed configuration parameter tables, limits, or error-code-based troubleshooting. |
+| [Bicep and Resource Manager Templates](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-quickstart-template-samples) | 0.20 | Page is a catalog of ARM/Bicep template sample links for Azure Front Door without exposing detailed configuration tables, limits, or error mappings; it primarily lists sample scenarios rather than providing expert-only numeric limits, configuration parameter matrices, or troubleshooting content. |
 | [Configure HTTP to HTTPS redirect](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-how-to-redirect-https) | 0.20 | Guide for configuring HTTP to HTTPS redirection; largely step-by-step UI instructions without detailed configuration matrices, limits, or error-code-based troubleshooting. |
+| [Create a Front Door - ARM template](https://learn.microsoft.com/en-us/azure/frontdoor/create-front-door-template) | 0.20 | Quickstart shows how to deploy Azure Front Door via an ARM template but appears to be a step-by-step tutorial without detailed configuration parameter tables, limits, or product-specific best-practice guidance; it focuses on a single example template rather than comprehensive configuration or expert-only details. |
 | [Create a Front Door - PowerShell](https://learn.microsoft.com/en-us/azure/frontdoor/create-front-door-powershell) | 0.20 | Quickstart tutorial for creating a Front Door profile with PowerShell; primarily step-by-step instructions without configuration matrices, limits, or troubleshooting mappings. |
 | [Create a new endpoint](https://learn.microsoft.com/en-us/azure/frontdoor/how-to-configure-endpoints) | 0.20 | How-to article for adding an endpoint via portal; appears to be procedural without detailed configuration reference or limits. |
 | [DDoS protection](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-ddos) | 0.20 | Describes DDoS protection conceptually (global POP count, general protection levels). No indication of specific configuration parameters, limits, error codes, or decision matrices; mostly architectural/marketing overview. |
+| [Edge actions](https://learn.microsoft.com/en-us/azure/frontdoor/edge-actions) | 0.20 | Summary suggests a high-level feature overview of Edge Actions with marketing/positioning language; no indication of specific limits, configuration tables, error codes, or decision matrices. |
 | [Endpoints in Azure Front Door](https://learn.microsoft.com/en-us/azure/frontdoor/endpoint) | 0.20 | Conceptual explanation of endpoints and domains; no evidence of numeric limits, config tables, or security/role details. |
 | [Front Door (classic) retirement FAQ](https://learn.microsoft.com/en-us/azure/frontdoor/classic-retirement-faq) | 0.20 | Retirement FAQ content is primarily conceptual and lifecycle/marketing oriented (dates, high-level feature differences, migration encouragement). It does not focus on detailed configuration parameters, limits, or error-resolution mappings that would qualify as expert knowledge under the defined categories. |
 | [Monitor Front Door](https://learn.microsoft.com/en-us/azure/frontdoor/monitor-front-door) | 0.20 | Monitoring overview for Azure Front Door describing available metrics/logs and general use of Azure Monitor; no indication of specific numeric limits, configuration parameter tables, error-code-based troubleshooting flows, or other product-specific expert details. |

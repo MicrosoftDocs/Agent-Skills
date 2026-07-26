@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Test Plans (use azure-test-plans), Azure DevOp
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 72
+- **Updated Pages**: 0
+- **Unchanged**: 73
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-app-testing/azure-app-testing.csv`
 
@@ -75,11 +75,6 @@ confusable_not_for: Not for Azure Test Plans (use azure-test-plans), Azure DevOp
 | *(Unclassified)* | 15 | 20.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [Troubleshoot issues with browser recording extension](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/troubleshoot-browser-extension)
-  - Updated: 2026-07-07T11:40:00.000Z → 2026-07-17T11:42:00.000Z
 
 ## Classified Pages
 

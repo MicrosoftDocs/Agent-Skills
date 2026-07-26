@@ -8,16 +8,21 @@
 | Topic | URL |
 |-------|-----|
 | Design Databricks intelligent document processing pipelines | https://learn.microsoft.com/en-us/azure/databricks/agents/agent-bricks/intelligent-document-processing |
-| Design multi-agent orchestrator apps on Databricks | https://learn.microsoft.com/en-us/azure/databricks/agents/agent-framework/multi-agent-apps |
-| Design Databricks agents with memory patterns | https://learn.microsoft.com/en-us/azure/databricks/agents/agent-framework/stateful-agents |
-| Apply Databricks agent system design patterns | https://learn.microsoft.com/en-us/azure/databricks/agents/agent-system-design-patterns |
+| Orchestrate Databricks multi-agent systems with Supervisor Agent | https://learn.microsoft.com/en-us/azure/databricks/agents/agent-bricks/multi-agent-supervisor |
+| Apply Databricks design patterns for GenAI agents | https://learn.microsoft.com/en-us/azure/databricks/agents/agent-system-design-patterns |
+| Build multi-agent systems with Genie and LangGraph on Databricks | https://learn.microsoft.com/en-us/azure/databricks/agents/custom-agents/model-serving/multi-agent-genie |
+| Implement Databricks Model Serving agents with Lakebase-backed memory | https://learn.microsoft.com/en-us/azure/databricks/agents/custom-agents/model-serving/stateful-agents-model-serving |
+| Design Databricks agent memory with managed and self-managed options | https://learn.microsoft.com/en-us/azure/databricks/agents/custom-agents/stateful-agents |
 | Use packaged clean rooms for provider-consumer collaboration | https://learn.microsoft.com/en-us/azure/databricks/clean-rooms/packaged-clean-rooms |
-| Choose data modeling options in AI/BI dashboards | https://learn.microsoft.com/en-us/azure/databricks/dashboards/manage/data-modeling/ |
+| Size and scale Azure Databricks SQL warehouses | https://learn.microsoft.com/en-us/azure/databricks/compute/sql-warehouse/warehouse-behavior |
 | Design multi-fact models with dashboard relationships | https://learn.microsoft.com/en-us/azure/databricks/dashboards/manage/data-modeling/dashboard-relationships/ |
 | Create and use dashboard relationship models | https://learn.microsoft.com/en-us/azure/databricks/dashboards/manage/data-modeling/dashboard-relationships/create-relationships |
-| Model local metric views in AI/BI dashboards | https://learn.microsoft.com/en-us/azure/databricks/dashboards/manage/data-modeling/local-metric-views |
 | Design fan-in and fan-out pipelines in Lakeflow | https://learn.microsoft.com/en-us/azure/databricks/data-engineering/fan-in-fan-out |
+| Implement ABAC row filtering and column masking patterns | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/common-patterns |
 | Choose patterns for external access to Databricks data | https://learn.microsoft.com/en-us/azure/databricks/external-access/ |
+| Use integrated CDC pipelines for MySQL ingestion | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/mysql-integrated-pipeline |
+| Understand Veeva Vault connector architecture and models | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/veeva-vault-concepts |
+| Understand Zendesk Support connector concepts and models | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/zendesk-support-concepts |
 | Apply Databricks well-architected framework design principles | https://learn.microsoft.com/en-us/azure/databricks/lakehouse-architecture/ |
 | Plan enterprise Databricks production architecture | https://learn.microsoft.com/en-us/azure/databricks/lakehouse-architecture/deployment-guide/ |
 | Design Delta Lake and medallion architecture on Databricks | https://learn.microsoft.com/en-us/azure/databricks/lakehouse-architecture/deployment-guide/delta-lake |
@@ -32,7 +37,7 @@
 | Use REPLACE WHERE flows for targeted batch recompute | https://learn.microsoft.com/en-us/azure/databricks/ldp/flows-replace-where |
 | Choose Databricks model deployment patterns | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/mlops/deployment-patterns |
 | Design MLOps workflows on Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/mlops/mlops-workflow |
-| Apply function calling in Databricks generative apps | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/function-calling |
+| Design and implement function calling on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/function-calling |
 | Use structured outputs with Databricks models | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/structured-outputs |
 | Choose batch vs view-based PII redaction for OTel traces | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/tracing/redact-pii-otel-traces-reference |
 | Configure high availability for Lakebase instances | https://learn.microsoft.com/en-us/azure/databricks/oltp/instances/create/high-availability |

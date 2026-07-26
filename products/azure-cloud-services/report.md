@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-05'
+generated_at: '2026-07-26'
 category_descriptions:
   limits-quotas: VM instance size limits/capacities and timelines, impacts, and constraints
     related to Guest OS family retirements for Azure Cloud Services.
@@ -9,8 +9,8 @@ category_descriptions:
     Cloud Services vs VM Scale Sets, and migrating classic/non-VNet Cloud Services
     to extended support and VNets.
   configuration: 'Configuring Cloud Services roles and deployments: .csdef/.cscfg
-    schemas, network/load balancer settings, diagnostics, RDP, Key Vault, extensions,
-    alerts, and scaling/SKU overrides.'
+    schemas, networking, load balancers, diagnostics, RDP, Key Vault, extensions,
+    alerts, and SKU/instance overrides'
   best-practices: Guidance on designing and configuring autoscale rules for Cloud
     Services, including metrics, thresholds, and patterns to optimize performance,
     reliability, and cost.
@@ -22,17 +22,17 @@ category_descriptions:
     cloud service instances.'
 skill_description: Expert knowledge for Azure Cloud Services development including
   troubleshooting, best practices, decision making, limits & quotas, security, configuration,
-  and integrations & coding patterns. Use when configuring Cloud Services roles, Key
-  Vault certs, autoscale rules, guest OS upgrades, or PowerShell automation, and other
-  Azure Cloud Services related development tasks. Not for Azure Networking (use azure-networking),
-  Azure Virtual Machines (use azure-virtual-machines), Azure Resource Manager (use
-  azure-resource-manager), Azure Portal (use azure-portal).
-use_when: Use when configuring Cloud Services roles, Key Vault certs, autoscale rules,
-  guest OS upgrades, or PowerShell automation, and other Azure Cloud Services related
-  development tasks.
-confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtual
-  Machines (use azure-virtual-machines), Azure Resource Manager (use azure-resource-manager),
-  Azure Portal (use azure-portal).
+  and integrations & coding patterns. Use when managing Cloud Services guest OS upgrades,
+  Key Vault certs, .csdef/.cscfg configs, autoscale, or migrations, and other Azure
+  Cloud Services related development tasks. Not for Azure Virtual Machines (use azure-virtual-machines),
+  Azure App Service (use azure-app-service), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
+  Azure Functions (use azure-functions).
+use_when: Use when managing Cloud Services guest OS upgrades, Key Vault certs, .csdef/.cscfg
+  configs, autoscale, or migrations, and other Azure Cloud Services related development
+  tasks.
+confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines), Azure
+  App Service (use azure-app-service), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
+  Azure Functions (use azure-functions).
 ---
 # Azure Cloud Services Crawl Report
 
@@ -46,8 +46,8 @@ confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtu
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 45
+- **Updated Pages**: 1
+- **Unchanged**: 44
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cloud-services/azure-cloud-services.csv`
 
@@ -65,6 +65,11 @@ confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtu
 | *(Unclassified)* | 15 | 33.3% |
 
 ## Changes
+
+### Updated Pages
+
+- [Extensions](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/extensions)
+  - Updated: 2025-04-08T11:16:00.000Z → 2026-07-24T18:54:00.000Z
 
 ## Classified Pages
 
@@ -90,13 +95,13 @@ confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtu
 | [Config files and packaging](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/cloud-services-model-and-package) | configuration | 0.70 | Describes .csdef, .cscfg, and .cspkg structure; these schema/model details are product-specific configuration knowledge beyond generic LLM training. |
 | [Configure scaling](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/configure-scaling) | best-practices | 0.70 | Provides considerations and conditions for scaling based on CPU, disk, and network; includes product-specific guidance and likely recommended thresholds. |
 | [Create a new cloud service](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/sample-create-cloud-service) | integrations | 0.70 | Sample scripts for creating Cloud Services (extended support) deployments will contain concrete Azure PowerShell cmdlets, parameter names, and required combinations specific to this resource type. These are product-specific integration/coding patterns rather than generic tutorials, so they qualify as expert knowledge under integrations. |
+| [Extensions](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/extensions) | configuration | 0.70 | Page describes specific Cloud Services (extended support) role extensions (e.g., Remote Desktop extension) and how they are configured post-deployment. This is product-specific configuration knowledge (extension names, behaviors, and usage patterns) that is not purely conceptual and is unlikely to be fully known from training. It does not focus on limits, troubleshooting, or security, but on how to configure and use extensions. |
 | [Family 1 retirement notice](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/cloud-services-guestos-family-1-retirement) | limits-quotas | 0.70 | Provides specific retirement dates and behavior (deploy/upgrade failures) for OS Family 1; time-based constraints on what can be deployed. |
 | [Family 2, 3, 4 retirement notice](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/cloud-services-guestos-family-2-3-4-retirement) | limits-quotas | 0.70 | Lists announced retirement dates for OS Families 2, 3, and 4; these are concrete time-based constraints affecting deployments. |
 | [Get cloud service details](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/sample-get-cloud-service) | integrations | 0.70 | The page provides PowerShell samples to query Cloud Services (extended support), including specific cmdlets, parameters, and usage patterns unique to this service. That is product-specific API/SDK usage, fitting the integrations category and representing expert knowledge beyond generic PowerShell usage. |
 | [Migration overview](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/in-place-migration-overview) | decision-making | 0.70 | Migration overview that likely includes when/how to move, benefits, and scenario-based guidance; helps decide migration approach between models. |
 | [Migration technical details](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/in-place-migration-technical-details) | decision-making | 0.70 | Technical details and requirements for migration tool; includes constraints and conditions that drive migration decisions and planning. |
 | [Reset a cloud service](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/sample-reset-cloud-service) | integrations | 0.70 | Reset samples will show exact PowerShell cmdlets and parameter combinations for resetting Cloud Services (extended support) deployments, which are specific integration patterns with Azure APIs. This is expert, product-specific scripting guidance, best classified as integrations. |
-| [Extensions](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/extensions) | configuration | 0.65 | Explains Cloud Services extensions (RDP, diagnostics, etc.) as post-deployment configuration; typically includes extension names and settings unique to this product. |
 | [Migrate non-vnet installation to a virtual network](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/non-vnet-migration) | decision-making | 0.65 | Discusses considerations before migrating non-VNet services and walks through process; contains scenario-based guidance and constraints influencing migration decisions. |
 | [Retirement policy](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/cloud-services-guestos-retirement-policy) | security | 0.65 | Details supportability and retirement policy implementation for Guest OS families; includes policy thresholds and constraints relevant to secure operations. |
 | [Enable alerts](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/enable-alerts) | configuration | 0.60 | Details how to enable alerts for Cloud Services; likely includes specific monitoring/alert configuration options in the portal. |

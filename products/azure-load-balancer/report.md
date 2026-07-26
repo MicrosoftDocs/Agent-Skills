@@ -51,8 +51,8 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 86
+- **Updated Pages**: 0
+- **Unchanged**: 87
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-load-balancer/azure-load-balancer.csv`
 
@@ -72,11 +72,6 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | *(Unclassified)* | 45 | 51.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [Portal settings](https://learn.microsoft.com/en-us/azure/load-balancer/manage)
-  - Updated: 2024-01-19T08:00:00.000Z → 2026-07-15T08:00:00.000Z
 
 ## Classified Pages
 

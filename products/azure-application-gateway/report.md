@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Front Door (use azure-front-door), Azure Load 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 6
-- **Unchanged**: 173
+- **Updated Pages**: 0
+- **Unchanged**: 179
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-application-gateway/azure-application-gateway.csv`
 
@@ -75,21 +75,6 @@ confusable_not_for: Not for Azure Front Door (use azure-front-door), Azure Load 
 | *(Unclassified)* | 49 | 27.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [Deploy Application Gateway for Containers ALB Controller - Helm](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/quickstart-deploy-application-gateway-for-containers-alb-controller-helm)
-  - Updated: 2026-06-24T08:00:00.000Z → 2026-07-16T08:00:00.000Z
-- [Service mesh integration](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/service-mesh-integration)
-  - Updated: 2026-06-24T08:00:00.000Z → 2026-07-16T08:00:00.000Z
-- [Configure Key Vault - PowerShell](https://learn.microsoft.com/en-us/azure/application-gateway/configure-keyvault-ps)
-  - Updated: 2023-05-11T11:16:00.000Z → 2026-07-16T22:11:00.000Z
-- [Configure Key Vault - Portal](https://learn.microsoft.com/en-us/azure/application-gateway/configure-key-vault-portal)
-  - Updated: 2023-04-13T22:15:00.000Z → 2026-07-16T08:00:00.000Z
-- [Application Gateway features](https://learn.microsoft.com/en-us/azure/application-gateway/features)
-  - Updated: 2026-05-12T08:00:00.000Z → 2026-07-16T22:11:00.000Z
-- [ALB Controller release notes](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/alb-controller-release-notes)
-  - Updated: 2026-06-24T17:12:00.000Z → 2026-07-16T17:19:00.000Z
 
 ## Classified Pages
 
