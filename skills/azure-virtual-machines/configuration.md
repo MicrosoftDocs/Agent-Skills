@@ -8,8 +8,6 @@
 | Topic | URL |
 |-------|-----|
 | Configure attribute-based VM selection in Compute Fleet | https://learn.microsoft.com/en-us/azure/azure-compute-fleet/attribute-based-vm-selection |
-| Modify capacity and VM sizes in Azure Compute Fleet | https://learn.microsoft.com/en-us/azure/azure-compute-fleet/modify-fleet |
-| Configure Spot VM behavior in Azure Compute Fleet | https://learn.microsoft.com/en-us/azure/azure-compute-fleet/spot-vm-configuration |
 | Inspect and manage Azure Linux AKS host packages | https://learn.microsoft.com/en-us/azure/azure-linux/aks-packages |
 | Configure networking on Azure Linux with systemd-networkd | https://learn.microsoft.com/en-us/azure/azure-linux/configure-networking |
 | Enable debuginfo repositories on Azure Linux | https://learn.microsoft.com/en-us/azure/azure-linux/install-debug-symbol-packages |
@@ -122,7 +120,6 @@
 | Configure VM Snapshot extension for restore points | https://learn.microsoft.com/en-us/azure/virtual-machines/virtual-machines-restore-points-vm-snapshot-extension |
 | Configure VM watch Collectors Suite for Azure VM health checks | https://learn.microsoft.com/en-us/azure/virtual-machines/vm-watch-collector-suite |
 | Attach data disks to Windows VMs using PowerShell | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/attach-disk-ps |
-| Attach managed data disks to Windows VMs in portal | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/attach-managed-disk-portal |
 | Recreate Azure VM to change availability set | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/change-availability-set |
 | Find Marketplace image URNs and plans with PowerShell | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/cli-ps-findimage |
 | Configure WinRM connectivity for Azure Windows VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/connect-winrm |

@@ -50,8 +50,8 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 81
+- **Updated Pages**: 0
+- **Unchanged**: 82
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-web-application-firewall/azure-web-application-firewall.csv`
 
@@ -70,11 +70,6 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | *(Unclassified)* | 19 | 23.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [Secure your Azure Web Application Firewall](https://learn.microsoft.com/en-us/azure/web-application-firewall/secure-web-application-firewall)
-  - Updated: 2025-07-09T05:33:00.000Z → 2026-07-17T22:12:00.000Z
 
 ## Classified Pages
 

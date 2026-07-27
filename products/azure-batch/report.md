@@ -53,10 +53,10 @@ confusable_not_for: Not for Azure Container Instances (use azure-container-insta
 - **Unclassified**: 37
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 114
-- **Deleted Pages**: 1
+- **Unchanged**: 115
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-batch/azure-batch.csv`
 
 ## Classification Statistics
@@ -75,14 +75,6 @@ confusable_not_for: Not for Azure Container Instances (use azure-container-insta
 | *(Unclassified)* | 37 | 32.2% |
 
 ## Changes
-
-### New Pages
-
-- [Associate Batch accounts with network security perimeter (preview)](https://learn.microsoft.com/en-us/azure/batch/network-security-perimeter)
-
-### Deleted Pages
-
-- ~~Associate Batch accounts with network security perimeter~~ (https://learn.microsoft.com/en-us/azure/batch/network-security-perimeter)
 
 ## Classified Pages
 

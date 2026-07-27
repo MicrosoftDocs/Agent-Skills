@@ -1,9 +1,9 @@
 ---
 name: azure-communication-services
-description: Expert knowledge for Azure Communication Services development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building ACS calling, chat, SMS, email, Teams interop, or PSTN/phone number solutions, and other Azure Communication Services related development tasks. Not for Azure Notification Hubs (use azure-notification-hubs), Azure SignalR Service (use azure-signalr-service), Azure Web PubSub (use azure-web-pubsub), Azure AI Bot Service (use azure-bot-service).
+description: Expert knowledge for Azure Communication Services development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building ACS calling/chat, SMS/email, Teams interop, Rooms/Job Router, or telephony/PSTN solutions, and other Azure Communication Services related development tasks. Not for Azure Notification Hubs (use azure-notification-hubs), Azure SignalR Service (use azure-signalr-service), Azure Web PubSub (use azure-web-pubsub), Azure AI Bot Service (use azure-bot-service).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-19"
+  generated_at: "2026-07-26"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Communication Services Skill
@@ -26,13 +26,13 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L37-L111 | Diagnosing and fixing ACS calling, SMS, email, Teams, PSTN, audio/video, device, network, and SDK issues, plus collecting logs, UFD events, and diagnostics for support. |
 | Best Practices | L112-L137 | Best practices for ACS calling, SMS, email, IDs, auth, Teams interop, network/quality, spam/opt-out compliance, and production-ready virtual visit and meeting experiences. |
-| Decision Making | L138-L153 | Guidance on ACS/Teams design decisions: PSTN options and pricing, phone numbers, Teams interop and licensing, gov cloud usage, and migrating from Twilio Video/Chat to ACS. |
-| Architecture & Design Patterns | L154-L159 | Designing scalable contact center solutions with ACS and patterns for integrating ACS with ExpressRoute for secure, private connectivity and network architecture. |
-| Limits & Quotas | L160-L227 | Limits, quotas, regional availability, and restrictions for ACS calling, phone numbers, email, Teams interop, media features, and troubleshooting token/metric-related issues. |
-| Security | L228-L253 | Security, auth, and compliance for ACS: encryption, identities, HMAC, caller ID, email/SMTP, Teams interop, captions/transcription, emergency calling, and secure webhooks/Rooms. |
-| Configuration | L254-L331 | Configuring monitoring, logging, metrics, and insights for ACS (chat, voice/video, calls, SMS, email), plus setup for Teams interop, direct routing, UI Library options, and SMS/email domain/sender settings. |
-| Integrations & Coding Patterns | L332-L479 | End-to-end patterns for integrating ACS calling, chat, SMS, email, Rooms, Job Router, WhatsApp, Teams, OpenAI/bots, and UI libraries, including media control, events, push, and telephony interop. |
-| Deployment | L480-L484 | Infrastructure and deployment guidance for Azure Communication Services: direct routing requirements and automating ACS/Email resource provisioning with PowerShell. |
+| Decision Making | L138-L154 | Guidance for planning ACS solutions: Teams interop in gov clouds, PSTN/phone number options, pricing/licensing, and migration from Twilio Video/Chat to ACS Calling/Chat. |
+| Architecture & Design Patterns | L155-L160 | Designing scalable contact center solutions with ACS and patterns for integrating ACS with ExpressRoute for secure, private connectivity and network architecture. |
+| Limits & Quotas | L161-L228 | Limits, quotas, regional availability, and restrictions for ACS calling, phone numbers, email, Teams interop, media features, and troubleshooting token/metric-related issues. |
+| Security | L229-L254 | Security, auth, and compliance for ACS: encryption, identities, HMAC, caller ID, email/SMTP, Teams interop, captions/transcription, emergency calling, and secure webhooks/Rooms. |
+| Configuration | L255-L332 | Configuring monitoring, logging, metrics, and insights for ACS (chat, voice/video, calls, SMS, email), plus setup for Teams interop, direct routing, UI Library options, and SMS/email domain/sender settings. |
+| Integrations & Coding Patterns | L333-L480 | End-to-end patterns for integrating ACS calling, chat, SMS, email, Rooms, Job Router, WhatsApp, Teams, OpenAI/bots, and UI libraries, including media control, events, push, and telephony interop. |
+| Deployment | L481-L485 | Infrastructure and deployment guidance for Azure Communication Services: direct routing requirements and automating ACS/Email resource provisioning with PowerShell. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -141,6 +141,7 @@ This skill requires **network access** to fetch documentation content:
 | Use Azure Advisor recommendations for ACS optimization | https://learn.microsoft.com/en-us/azure/communication-services/concepts/advisor-overview |
 | Use ACS Teams interop in government cloud environments | https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/guest/government-cloud |
 | Use ACS Teams user features in government cloud environments | https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/teams-user/government-cloud |
+| Map Teams Phone features to ACS SDK capabilities | https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/tpe/teams-phone-extensibility-capabilities |
 | Choose PSTN connectivity options and estimate cost for Teams Phone extensibility | https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/tpe/teams-phone-extensibility-connectivity-cost |
 | Decide on migration from Twilio Video to ACS Calling | https://learn.microsoft.com/en-us/azure/communication-services/concepts/migrate-to-azure-communication-services |
 | Choose ACS phone number types and regions | https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/number-types |

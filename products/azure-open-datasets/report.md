@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-12'
+generated_at: '2026-07-26'
 category_descriptions:
   limits-quotas: Managing and troubleshooting non-Spark download limits for Azure
     Open Datasets, including throttling behavior, quotas, and strategies to avoid
@@ -21,27 +21,43 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 
 ## Summary
 
-- **Total Pages**: 44
-- **Fetched**: 44
+- **Total Pages**: 40
+- **Fetched**: 40
 - **Fetch Failed**: 0
 - **Classified**: 1
-- **Unclassified**: 43
+- **Unclassified**: 39
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 44
-- **Deleted Pages**: 0
+- **Updated Pages**: 3
+- **Unchanged**: 37
+- **Deleted Pages**: 4
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-open-datasets/azure-open-datasets.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| limits-quotas | 1 | 2.3% |
-| *(Unclassified)* | 43 | 97.7% |
+| limits-quotas | 1 | 2.5% |
+| *(Unclassified)* | 39 | 97.5% |
 
 ## Changes
+
+### Updated Pages
+
+- [Datasets in Azure Machine Learning](https://learn.microsoft.com/en-us/azure/open-datasets/how-to-create-azure-machine-learning-dataset-from-open-dataset)
+  - Updated: 2024-08-28T16:59:00.000Z → 2026-07-20T22:09:00.000Z
+- [Dataset catalog](https://learn.microsoft.com/en-us/azure/open-datasets/dataset-catalog)
+  - Updated: 2025-09-12T08:00:00.000Z → 2026-07-20T22:09:00.000Z
+- [COVID-19 data lake](https://learn.microsoft.com/en-us/azure/open-datasets/dataset-covid-19-data-lake)
+  - Updated: 2025-10-28T08:00:00.000Z → 2026-07-20T22:09:00.000Z
+
+### Deleted Pages
+
+- ~~Bing COVID-19 Data~~ (https://learn.microsoft.com/en-us/azure/open-datasets/dataset-bing-covid-19)
+- ~~COVID Tracking Project~~ (https://learn.microsoft.com/en-us/azure/open-datasets/dataset-covid-tracking)
+- ~~ECDC COVID-19 cases~~ (https://learn.microsoft.com/en-us/azure/open-datasets/dataset-ecdc-covid-cases)
+- ~~Oxford COVID-19 Government Response Tracker~~ (https://learn.microsoft.com/en-us/azure/open-datasets/dataset-oxford-covid-government-response-tracker)
 
 ## Classified Pages
 
@@ -64,20 +80,16 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 | [SnpEff](https://learn.microsoft.com/en-us/azure/open-datasets/dataset-snpeff) | 0.40 | SnpEff dataset page; summary is deprecation notice plus generic dataset mention, no expert configuration or limits. |
 | [TCGA Open Data](https://learn.microsoft.com/en-us/azure/open-datasets/dataset-the-cancer-genome-atlas) | 0.40 | TCGA Open Data dataset page; deprecation notice and generic dataset description without expert technical details. |
 | [gnomAD](https://learn.microsoft.com/en-us/azure/open-datasets/dataset-gnomad) | 0.40 | gnomAD dataset page; similar to other genomics pages with deprecation notice and no Azure-specific technical guidance. |
-| [Bing COVID-19 Data](https://learn.microsoft.com/en-us/azure/open-datasets/dataset-bing-covid-19) | 0.30 | Bing COVID-19 dataset description; describes content and sources, not product-specific settings or constraints. |
-| [COVID Tracking Project](https://learn.microsoft.com/en-us/azure/open-datasets/dataset-covid-tracking) | 0.30 | COVID Tracking Project dataset description; links to GitHub and includes disclaimer, but no Azure-specific expert guidance. |
-| [COVID-19 data lake](https://learn.microsoft.com/en-us/azure/open-datasets/dataset-covid-19-data-lake) | 0.30 | COVID-19 Data Lake dataset description; no Azure-specific configuration parameters or limits indicated. |
+| [COVID-19 data lake](https://learn.microsoft.com/en-us/azure/open-datasets/dataset-covid-19-data-lake) | 0.30 | Describes the COVID-19 Data Lake and its contents at a high level; summary does not indicate presence of configuration tables, limits, or detailed integration patterns. |
+| [Datasets in Azure Machine Learning](https://learn.microsoft.com/en-us/azure/open-datasets/how-to-create-azure-machine-learning-dataset-from-open-dataset) | 0.30 | How-to/tutorial for creating Azure ML datasets from Azure Open Datasets; no evidence of detailed configuration tables, limits, error codes, or product-specific best-practice guidance beyond what an LLM would already know. |
 | [Diabetes](https://learn.microsoft.com/en-us/azure/open-datasets/dataset-diabetes) | 0.30 | Diabetes dataset description; generic ML toy dataset info without Azure-specific configuration or troubleshooting. |
-| [ECDC COVID-19 cases](https://learn.microsoft.com/en-us/azure/open-datasets/dataset-ecdc-covid-cases) | 0.30 | ECDC COVID-19 cases dataset description; focuses on what data is included, not on Azure configuration or limits. |
 | [MNIST](https://learn.microsoft.com/en-us/azure/open-datasets/dataset-mnist) | 0.30 | MNIST dataset description; standard dataset info that is widely known and not Azure-specific. |
 | [OJ Sales Simulated Data](https://learn.microsoft.com/en-us/azure/open-datasets/dataset-oj-sales-simulated) | 0.30 | OJ Sales Simulated dataset description; high-level dataset purpose and disclaimer only. |
-| [Oxford COVID-19 Government Response Tracker](https://learn.microsoft.com/en-us/azure/open-datasets/dataset-oxford-covid-government-response-tracker) | 0.30 | Oxford COVID-19 Government Response Tracker dataset description; conceptual dataset info without Azure-specific technical details. |
 | [Seattle Safety Data](https://learn.microsoft.com/en-us/azure/open-datasets/dataset-seattle-safety) | 0.30 | Seattle Safety Data dataset description; only describes dataset and legal terms. |
 | [Tartanair AirSim](https://learn.microsoft.com/en-us/azure/open-datasets/dataset-tartanair-simulation) | 0.30 | Dataset description for TartanAir; summary does not show Azure-specific configuration, limits, or error handling details. |
-| [Datasets in Azure Machine Learning](https://learn.microsoft.com/en-us/azure/open-datasets/how-to-create-azure-machine-learning-dataset-from-open-dataset) | 0.20 | How-to/tutorial style guidance for creating datasets; summary does not indicate detailed config tables, limits, or error mappings. |
 | [Microsoft News recommendation dataset](https://learn.microsoft.com/en-us/azure/open-datasets/dataset-microsoft-news) | 0.20 | Dataset description with high-level stats; no product-specific limits, configuration parameters, or decision/troubleshooting details. |
 | [Russian open speech to text](https://learn.microsoft.com/en-us/azure/open-datasets/dataset-open-speech-text) | 0.20 | Overview of a speech dataset with general description and legal disclaimer; no detailed Azure-specific configuration, limits, or troubleshooting content. |
-| [Dataset catalog](https://learn.microsoft.com/en-us/azure/open-datasets/dataset-catalog) | 0.10 | Catalog/overview of datasets; primarily discovery/marketing content without technical limits, configuration, or troubleshooting. |
+| [Dataset catalog](https://learn.microsoft.com/en-us/azure/open-datasets/dataset-catalog) | 0.10 | Catalog/overview of available datasets; primarily discovery/marketing-style content without numeric limits, configuration parameters, or troubleshooting details. |
 | [What are Azure Open Datasets?](https://learn.microsoft.com/en-us/azure/open-datasets/overview-what-are-open-datasets) | 0.10 | High-level overview of Azure Open Datasets; no product-specific limits, configuration parameters, or troubleshooting details. |
 | [Boston Safety Data](https://learn.microsoft.com/en-us/azure/open-datasets/dataset-boston-safety) | - | Boston safety data (311 calls) dataset description; no specific Azure configuration, limits, or troubleshooting mappings. |
 | [Chicago Safety Data](https://learn.microsoft.com/en-us/azure/open-datasets/dataset-chicago-safety) | - | Chicago safety data (311 service requests) dataset overview; only conceptual dataset info and disclaimer, no expert knowledge per defined categories. |

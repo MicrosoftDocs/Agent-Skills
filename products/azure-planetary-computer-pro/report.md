@@ -47,8 +47,8 @@ confusable_not_for: Not for Azure Maps (use azure-maps), Azure Open Datasets (us
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 44
+- **Updated Pages**: 0
+- **Unchanged**: 46
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-planetary-computer-pro/azure-planetary-computer-pro.csv`
 
@@ -66,13 +66,6 @@ confusable_not_for: Not for Azure Maps (use azure-maps), Azure Open Datasets (us
 | *(Unclassified)* | 11 | 23.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [Get Started with data cubes](https://learn.microsoft.com/en-us/azure/planetary-computer/data-cube-quickstart)
-  - Updated: 2026-06-19T22:18:00.000Z → 2026-07-16T22:11:00.000Z
-- [Render configuration](https://learn.microsoft.com/en-us/azure/planetary-computer/render-configuration)
-  - Updated: 2026-05-27T08:00:00.000Z → 2026-07-16T22:11:00.000Z
 
 ## Classified Pages
 

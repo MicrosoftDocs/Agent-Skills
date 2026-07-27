@@ -1,9 +1,9 @@
 ---
 name: azure-language-service
-description: Expert knowledge for Azure AI Language development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building CLU apps, custom NER, sentiment/key phrase analysis, CQA bots, or health/FHIR text pipelines, and other Azure AI Language related development tasks. Not for Azure AI Search (use azure-cognitive-search), Azure AI Document Intelligence (use azure-document-intelligence), Azure AI Speech (use azure-speech), Azure Translator (use azure-translator).
+description: Expert knowledge for Azure AI Language development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building CLU, custom NER, sentiment, PII redaction, or conversational question answering solutions, and other Azure AI Language related development tasks. Not for Azure AI Search (use azure-cognitive-search), Azure AI Speech (use azure-speech), Azure Translator (use azure-translator), Azure AI Immersive Reader (use azure-immersive-reader).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-19"
+  generated_at: "2026-07-26"
   generator: "docs2skills/1.0.0"
 ---
 # Azure AI Language Skill
@@ -29,10 +29,10 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L55-L64 | Guides for choosing regions and app types, planning CQA solutions, and deciding or executing migrations from LUIS, QnA Maker, Text Analytics, and Language Studio to Azure Language/Fountry. |
 | Architecture & Design Patterns | L65-L72 | Designing and implementing regional failover and high-availability patterns for CLU, custom NER, custom text classification, and orchestration workflow models in Azure AI Language. |
 | Limits & Quotas | L73-L96 | Limits, quotas, languages, and supported entities for Azure Language features (CLU, NER, classification, CQA, health), including data size, rate/throughput, training and model lifecycles. |
-| Security | L97-L107 | Securing Language/CQA data and access: encryption at rest (incl. CMK), RBAC, managed identities, SAS tokens, and network isolation/Private Link for storage and fine-tuning. |
-| Configuration | L108-L128 | Configuring Azure AI Language projects and containers: resources, versioning, NER entities/skills, orchestration intents, CQA behavior/telemetry, health analytics, and storage/security settings. |
-| Integrations & Coding Patterns | L129-L151 | How to call Azure AI Language REST/SDK APIs for NER, sentiment, key phrases, entity linking, health/FHIR, CQA/CLU, PII redaction, async workflows, and integration with .NET and Power Automate. |
-| Deployment | L152-L164 | Guides for deploying Azure Language services and custom projects (NER, key phrases, sentiment, health, CQA) across regions, Docker/on-prem, and AKS, plus moving CQA between environments. |
+| Security | L97-L108 | Securing Azure AI Language and CQA: encryption at rest (including CMK), RBAC, managed identities, SAS tokens, network isolation/Private Link, and secure deployment/data access configuration. |
+| Configuration | L109-L129 | Configuring Azure AI Language projects and containers: resources, versioning, NER entities/skills, orchestration intents, CQA behavior/telemetry, health analytics, and storage/security settings. |
+| Integrations & Coding Patterns | L130-L152 | Using Azure AI Language APIs/SDKs for NER, entity linking, key phrases, sentiment, language detection, health/FHIR, custom Q&A/CLU, PII redaction, async patterns, and Power Automate integration |
+| Deployment | L153-L165 | Guides for deploying Azure Language services and custom projects (NER, key phrases, sentiment, health, CQA) across regions, Docker/on-prem, and AKS, plus moving CQA between environments. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -104,6 +104,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure Azure resources for CQA fine-tuning | https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/how-to/configure-azure-resources |
 | Configure CMK encryption for CQA data at rest | https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/how-to/encrypt-data-at-rest |
 | Enable network isolation and Private Link for CQA | https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/how-to/network-isolation |
+| Secure Azure Language deployments and data access | https://learn.microsoft.com/en-us/azure/ai-services/language-service/secure-deployment |
 
 ### Configuration
 | Topic | URL |
@@ -140,7 +141,7 @@ This skill requires **network access** to fetch documentation content:
 | Perform NER using Azure Language APIs | https://learn.microsoft.com/en-us/azure/ai-services/language-service/named-entity-recognition/how-to-call |
 | Create a .NET app using the NER client library | https://learn.microsoft.com/en-us/azure/ai-services/language-service/named-entity-recognition/quickstart |
 | Integrate CLU and custom Q&A via orchestration workflow | https://learn.microsoft.com/en-us/azure/ai-services/language-service/orchestration-workflow/tutorials/connect-services |
-| Redact PII from native documents via Azure Language | https://learn.microsoft.com/en-us/azure/ai-services/language-service/personally-identifiable-information/how-to/redact-document-pii |
+| Redact PII from native documents with Azure Language | https://learn.microsoft.com/en-us/azure/ai-services/language-service/personally-identifiable-information/how-to/redact-document-pii |
 | Automate CQA authoring with REST API | https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/how-to/authoring |
 | Use the CQA prebuilt answering API | https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/how-to/prebuilt |
 | Call sentiment analysis and opinion mining APIs correctly | https://learn.microsoft.com/en-us/azure/ai-services/language-service/sentiment-opinion-mining/how-to/call-api |

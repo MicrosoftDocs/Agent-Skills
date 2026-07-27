@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-19'
+generated_at: '2026-07-26'
 category_descriptions:
   integrations: Patterns and code for integrating Event Hubs with .NET, Kafka (clients,
     Streams, Connect, Debezium), Flink, Spark, Akka, schema/JSON registry, and adding
@@ -21,25 +21,26 @@ category_descriptions:
   best-practices: Guidance on routing events between AMQP, Kafka, and HTTPS, and on
     designing/scaling Event Hubs with partitions and throughput units for performance
     and capacity.
-  limits-quotas: Event Hubs capacity, throughput, and entity limits; quota rules and
-    enforcement; and using application groups to govern and throttle client access
-    and usage.
+  limits-quotas: Platform limits, quotas, and throughput caps for Event Hubs, plus
+    guidance on large message patterns and using application groups to govern and
+    throttle client workloads.
   deployment: Guides for deploying Event Hubs with Kafka mirroring (MirrorMaker 1/2),
     setting up geo-replication, and running/local-testing Event Hubs apps using the
     emulator.
 skill_description: Expert knowledge for Azure Event Hubs development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  using Kafka-compatible clients, .NET SDKs, Flink/Spark, geo-replication/DR, or Avro
-  Capture with Event Hubs, and other Azure Event Hubs related development tasks. Not
-  for Azure Service Bus (use azure-service-bus), Azure Notification Hubs (use azure-notification-hubs),
-  Azure Event Grid (use azure-event-grid), Azure Stream Analytics (use azure-stream-analytics).
-use_when: Use when using Kafka-compatible clients, .NET SDKs, Flink/Spark, geo-replication/DR,
-  or Avro Capture with Event Hubs, and other Azure Event Hubs related development
+  using Kafka-compatible clients, .NET SDKs, Flink/Spark, geo-replication, or Avro
+  capture with Azure Event Hubs, and other Azure Event Hubs related development tasks.
+  Not for Azure Service Bus (use azure-service-bus), Azure Event Grid (use azure-event-grid),
+  Azure Notification Hubs (use azure-notification-hubs), Azure Stream Analytics (use
+  azure-stream-analytics).
+use_when: Use when using Kafka-compatible clients, .NET SDKs, Flink/Spark, geo-replication,
+  or Avro capture with Azure Event Hubs, and other Azure Event Hubs related development
   tasks.
-confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Notification
-  Hubs (use azure-notification-hubs), Azure Event Grid (use azure-event-grid), Azure
-  Stream Analytics (use azure-stream-analytics).
+confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Event
+  Grid (use azure-event-grid), Azure Notification Hubs (use azure-notification-hubs),
+  Azure Stream Analytics (use azure-stream-analytics).
 ---
 # Azure Event Hubs Crawl Report
 
@@ -48,13 +49,13 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Not
 - **Total Pages**: 114
 - **Fetched**: 114
 - **Fetch Failed**: 0
-- **Classified**: 73
-- **Unclassified**: 41
+- **Classified**: 74
+- **Unclassified**: 40
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 113
+- **Updated Pages**: 3
+- **Unchanged**: 111
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-event-hubs/azure-event-hubs.csv`
 
@@ -68,17 +69,21 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Not
 | decision-making | 4 | 3.5% |
 | deployment | 4 | 3.5% |
 | integrations | 14 | 12.3% |
-| limits-quotas | 3 | 2.6% |
+| limits-quotas | 4 | 3.5% |
 | security | 24 | 21.1% |
 | troubleshooting | 9 | 7.9% |
-| *(Unclassified)* | 41 | 36.0% |
+| *(Unclassified)* | 40 | 35.1% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Monitor data reference](https://learn.microsoft.com/en-us/azure/event-hubs/monitor-event-hubs-reference)
-  - Updated: 2025-07-14T08:00:00.000Z → 2025-07-16T05:10:00.000Z
+- [Stream large messages](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-quickstart-stream-large-messages)
+  - Updated: 2025-11-18T18:43:00.000Z → 2026-07-24T22:16:00.000Z
+- [Create a dedicated cluster](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-dedicated-cluster-create-portal)
+  - Updated: 2025-01-13T23:06:00.000Z → 2026-07-24T22:16:00.000Z
+- [Dedicated tier](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-dedicated-overview)
+  - Updated: 2025-07-28T08:00:00.000Z → 2026-07-24T22:16:00.000Z
 
 ## Classified Pages
 
@@ -140,6 +145,7 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Not
 | [Monitor Event Hubs](https://learn.microsoft.com/en-us/azure/event-hubs/monitor-event-hubs) | configuration | 0.70 | Monitoring article likely contains metric names, dimensions, and recommended alert thresholds specific to Event Hubs, which are configuration-level expert details. |
 | [Scalability](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-scalability) | best-practices | 0.70 | Scalability guide likely includes concrete recommendations on partition counts, throughput units, and scaling strategies specific to Event Hubs. |
 | [Security controls by Azure Policy](https://learn.microsoft.com/en-us/azure/event-hubs/security-controls-policy) | security | 0.70 | Lists specific Azure Policy built-ins and compliance controls for Event Hubs; includes concrete policy definitions and mappings to standards. |
+| [Stream large messages](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-quickstart-stream-large-messages) | limits-quotas | 0.70 | Quickstart specifically mentions sending large messages up to 20 MB in a dedicated cluster, which is a concrete size limit/constraint that qualifies as limits-quotas expert knowledge beyond generic conceptual info. |
 | [Using Apache Kafka Mirror Maker 1](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-kafka-mirror-maker-tutorial) | deployment | 0.70 | Shows how to configure MirrorMaker 1 to mirror Kafka into Event Hubs; includes product-specific deployment and configuration details. |
 | [Using Apache Kafka Mirror Maker 2](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-kafka-mirrormaker-2-tutorial) | deployment | 0.70 | Tutorial for using MirrorMaker 2 with Event Hubs; includes concrete configuration parameters and constraints for this replication deployment. |
 | [Confidential computing](https://learn.microsoft.com/en-us/azure/event-hubs/confidential-computing) | security | 0.68 | Page is focused on configuring confidential computing for Event Hubs Dedicated namespaces, which is a product-specific security feature. It likely includes concrete enablement steps, specific configuration options, and constraints tied to this capability (for example, which SKUs support it, how to turn it on, and any required settings). This is security-focused configuration rather than a generic overview, so it best fits the security sub-skill. |
@@ -163,11 +169,8 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Not
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
 | [Capture event data in Event Hubs](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-capture-overview) | 0.45 | Capture feature overview; describes behavior and tiers but not a detailed numeric limits table or config parameter reference. |
-| [Create a dedicated cluster](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-dedicated-cluster-create-portal) | 0.45 | Portal quickstart for Dedicated cluster creation; mentions SLA and high-level characteristics but is not a detailed limits or decision matrix page. |
-| [Dedicated tier](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-dedicated-overview) | 0.45 | Dedicated tier overview; marketing/feature overview without explicit decision matrices or numeric thresholds in the summary. |
 | [Log compaction](https://learn.microsoft.com/en-us/azure/event-hubs/log-compaction) | 0.45 | Describes log compaction behavior and support; conceptual feature explanation without numeric thresholds, config tables, or decision matrices in the summary. |
 | [Premium tier](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-premium-overview) | 0.45 | Premium tier overview; describes characteristics and replication but not a detailed comparison matrix or numeric thresholds in the summary. |
-| [Stream large messages](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-quickstart-stream-large-messages) | 0.45 | Quickstart for large messages mentions up to 20 MB but is primarily a tutorial; detailed limits likely live in quotas docs, and this page is not a general limits reference. |
 | [Overview of Event Hubs emulator](https://learn.microsoft.com/en-us/azure/event-hubs/overview-emulator) | 0.40 | Emulator overview; focuses on benefits, features, and limitations conceptually, not on detailed configuration parameters or limits tables. |
 | [Validate schemas for Event Hubs SDK based applications](https://learn.microsoft.com/en-us/azure/event-hubs/schema-registry-dotnet-send-receive-quickstart) | 0.40 | .NET Schema Registry quickstart; demonstrates validation but lacks comprehensive configuration tables or limits. |
 | [Validate schemas for Kafka applications](https://learn.microsoft.com/en-us/azure/event-hubs/schema-registry-kafka-java-send-receive-quickstart) | 0.40 | Kafka + Avro + Schema Registry quickstart; integration example but not a parameter reference with allowed values or ranges. |
@@ -198,6 +201,8 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Not
 | [.NET](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-dotnet-standard-getstarted-send) | 0.20 | Quickstart tutorial showing basic .NET send/receive usage for Event Hubs; no configuration tables, limits, error-code mappings, or product-specific best-practice guidance beyond generic SDK usage. |
 | [Apache Kafka on Azure Event Hubs](https://learn.microsoft.com/en-us/azure/event-hubs/azure-event-hubs-apache-kafka-overview) | 0.20 | Conceptual overview of Kafka protocol support; no detailed configuration tables, limits, or troubleshooting content. |
 | [Code samples](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-samples) | 0.20 | Index of sample links; navigation content without technical details itself. |
+| [Create a dedicated cluster](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-dedicated-cluster-create-portal) | 0.20 | Portal-based creation quickstart; summary emphasizes SLA and general capabilities but not detailed configuration tables, limits, or other expert-only specifics. Primarily a step-by-step tutorial/overview. |
+| [Dedicated tier](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-dedicated-overview) | 0.20 | Described as an overview of the Dedicated tier with features, benefits, and use cases; no indication of detailed limits, configuration parameters, or decision matrices that would constitute expert knowledge. |
 | [Enable Auto inflate](https://learn.microsoft.com/en-us/azure/event-hubs/enable-auto-inflate) | 0.20 | Primarily a how-to/tutorial for enabling Auto Inflate via portal or ARM template. It does not emphasize configuration parameter tables, limits, or decision criteria beyond what is already covered conceptually, so it lacks the kind of expert-only configuration or decision matrices required by the categories. |
 | [Java](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-quickstart-kafka-enabled-event-hubs) | 0.20 | Kafka quickstart focused on wiring producer/consumer to Event Hubs with minimal configuration; lacks detailed parameter tables, limits, troubleshooting mappings, or decision criteria. |
 | [Use Event Hubs Data Explorer to run data operations on Azure Event Hubs](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-data-explorer) | 0.20 | How-to article for using Event Hubs Data Explorer to send/view events; focuses on portal operations, not on limits, configuration matrices, troubleshooting codes, or decision frameworks. |

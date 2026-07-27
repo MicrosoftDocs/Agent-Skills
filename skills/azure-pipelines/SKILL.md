@@ -1,9 +1,9 @@
 ---
 name: azure-pipelines
-description: Expert knowledge for Azure Pipelines development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring YAML pipelines, agents, service connections, Key Vault secrets, or Azure Web App/Kubernetes deployments, and other Azure Pipelines related development tasks. Not for Azure DevOps (use azure-devops), Azure Boards (use azure-boards), Azure Repos (use azure-repos), Azure Test Plans (use azure-test-plans).
+description: Expert knowledge for Azure Pipelines development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring YAML pipelines, service connections/Key Vault, agents/parallel jobs, Kubernetes/web app deploys, or Git/Slack integrations, and other Azure Pipelines related development tasks. Not for Azure DevOps (use azure-devops), Azure Boards (use azure-boards), Azure Repos (use azure-repos), Azure Test Plans (use azure-test-plans).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-19"
+  generated_at: "2026-07-26"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Pipelines Skill
@@ -30,7 +30,7 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L66-L73 | Guidance on end-to-end CI/CD and DevOps architectures for Azure: baseline pipeline patterns, Web App deployment design, and IaaS/VM-focused DevTest and production pipelines. |
 | Limits & Quotas | L74-L85 | Managing Azure Pipelines limits: agent quotas/concurrency, Microsoft/GitHub-hosted agent capabilities, image deprecations, parallel jobs, run retention, and large Universal Package handling. |
 | Security | L86-L144 | Securing Azure Pipelines: agent auth, service connections, secrets/Key Vault, permissions and approvals, secure variables, signing (mobile/Apple/Docker), and security scanning/compliance. |
-| Configuration | L145-L504 | Configuring Azure Pipelines: agents, triggers, variables, YAML structure, environments, deployment strategies, artifacts, and detailed task/step settings for build, test, and release workflows. |
+| Configuration | L145-L504 | Configuring Azure Pipelines: agents, triggers, YAML structure, environments, variables, artifacts, and detailed task/step settings for building, testing, and deploying across languages and platforms. |
 | Integrations & Coding Patterns | L505-L534 | Language-specific CI/CD pipeline examples, scripting patterns, and integrations (Git, Key Vault, Slack, ServiceNow, REST/Functions, Selenium) for building, testing, and automating Azure Pipelines. |
 | Deployment | L535-L590 | Deploying apps, containers, databases, and packages via Azure Pipelines: agent setup (Windows/Linux/macOS/VMSS), release pipelines, Kubernetes, web apps, SQL, artifacts, and registry publishing. |
 
@@ -319,7 +319,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure IISWebAppDeployment@1 MSDeploy task | https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/iisweb-app-deployment-v1?view=azure-pipelines |
 | Configure IISWebAppManagementOnMachineGroup@0 settings | https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/iisweb-app-management-on-machine-group-v0?view=azure-pipelines |
 | Configure InvokeRESTAPI@0 task parameters | https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/invoke-rest-api-v0?view=azure-pipelines |
-| Configure InvokeRESTAPI@1 task to call REST services | https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/invoke-rest-api-v1?view=azure-pipelines |
+| Configure InvokeRESTAPI@1 task inputs in Azure Pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/invoke-rest-api-v1?view=azure-pipelines |
 | Configure JavaToolInstaller@0 to set JAVA_HOME | https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/java-tool-installer-v0?view=azure-pipelines |
 | Configure JavaToolInstaller@1 with Azure RBAC storage | https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/java-tool-installer-v1?view=azure-pipelines |
 | Configure JenkinsDownloadArtifacts@1 task options | https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/jenkins-download-artifacts-v1?view=azure-pipelines |
@@ -459,7 +459,7 @@ This skill requires **network access** to fetch documentation content:
 | Reference build artifacts via build resources | https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/resources-builds-build?view=azure-pipelines |
 | Configure build resources in Azure Pipelines YAML | https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/resources-builds?view=azure-pipelines |
 | Configure container resource triggers in pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/resources-containers-container-trigger?view=azure-pipelines |
-| Define individual container resource entries in YAML | https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/resources-containers-container?view=azure-pipelines |
+| Configure container resources in Azure Pipelines YAML | https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/resources-containers-container?view=azure-pipelines |
 | Configure container resources in Azure Pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/resources-containers?view=azure-pipelines |
 | Reference NuGet and npm GitHub packages as resources | https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/resources-packages-package?view=azure-pipelines |
 | Configure external package resources in YAML pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/resources-packages?view=azure-pipelines |

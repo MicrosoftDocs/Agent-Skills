@@ -52,8 +52,8 @@ confusable_not_for: Not for Azure Virtual WAN (use azure-virtual-wan), Azure VPN
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 93
+- **Updated Pages**: 0
+- **Unchanged**: 95
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-expressroute/azure-expressroute.csv`
 
@@ -73,13 +73,6 @@ confusable_not_for: Not for Azure Virtual WAN (use azure-virtual-wan), Azure VPN
 | *(Unclassified)* | 26 | 27.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [Configure a router](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-config-samples-routing)
-  - Updated: 2025-01-31T08:00:00.000Z → 2026-07-16T05:10:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/expressroute/about-fastpath)
-  - Updated: 2026-03-02T08:00:00.000Z → 2026-07-16T05:10:00.000Z
 
 ## Classified Pages
 

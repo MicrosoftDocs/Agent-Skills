@@ -29,16 +29,16 @@ confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Monit
 
 ## Summary
 
-- **Total Pages**: 109
-- **Fetched**: 109
+- **Total Pages**: 108
+- **Fetched**: 108
 - **Fetch Failed**: 0
-- **Classified**: 49
+- **Classified**: 48
 - **Unclassified**: 60
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 1
-- **Unchanged**: 107
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 108
 - **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-reliability/azure-reliability.csv`
 
@@ -46,26 +46,17 @@ confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Monit
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 2 | 1.8% |
-| best-practices | 39 | 35.8% |
-| decision-making | 6 | 5.5% |
-| limits-quotas | 2 | 1.8% |
-| *(Unclassified)* | 60 | 55.0% |
+| architecture-patterns | 2 | 1.9% |
+| best-practices | 38 | 35.2% |
+| decision-making | 6 | 5.6% |
+| limits-quotas | 2 | 1.9% |
+| *(Unclassified)* | 60 | 55.6% |
 
 ## Changes
 
-### New Pages
-
-- [Azure Storage Mover](https://learn.microsoft.com/en-us/azure/reliability/reliability-storage-mover)
-
-### Updated Pages
-
-- [Azure NetApp Files](https://learn.microsoft.com/en-us/azure/reliability/reliability-netapp-files)
-  - Updated: 2026-01-22T18:34:00.000Z → 2026-07-07T08:00:00.000Z
-
 ### Deleted Pages
 
-- ~~Azure Storage Mover~~ (https://learn.microsoft.com/en-us/azure/reliability/reliability-azure-storage-mover)
+- ~~Microsoft Fabric~~ (https://learn.microsoft.com/en-us/azure/reliability/reliability-fabric)
 
 ## Classified Pages
 
@@ -117,7 +108,6 @@ confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Monit
 | [Azure Bot Service](https://learn.microsoft.com/en-us/azure/reliability/reliability-bot) | best-practices | 0.62 | Describes concrete patterns for regional vs cross-region reliability, availability zones, and disaster recovery for bots with local data residency; product-specific resiliency guidance. |
 | [Azure Databricks](https://learn.microsoft.com/en-us/azure/reliability/reliability-databricks) | best-practices | 0.62 | Service-specific resiliency features and how to use them (transient fault handling, AZ support) in Databricks workloads; actionable reliability design guidance. |
 | [Azure Device Registry](https://learn.microsoft.com/en-us/azure/reliability/reliability-device-registry) | best-practices | 0.62 | Guidance on handling transient faults, AZ failures, and regional failures for Device Registry; service-specific reliability considerations. |
-| [Microsoft Fabric](https://learn.microsoft.com/en-us/azure/reliability/reliability-fabric) | best-practices | 0.60 | Explains how to use availability zones, cross-region replication, and DR planning in Fabric; concrete product-specific reliability patterns. |
 | [Multiregion solutions in nonpaired regions](https://learn.microsoft.com/en-us/azure/reliability/regions-multi-region-nonpaired) | decision-making | 0.60 | Lists specific Azure services and configurations that support geo-redundancy across nonpaired regions, guiding how to choose and configure services for multi-region designs. This is product-specific selection and configuration guidance for a particular scenario (nonpaired regions), fitting decision-making. |
 | [Single zone (zonal) resources](https://learn.microsoft.com/en-us/azure/reliability/availability-zones-zonal-resource-resiliency) | architecture-patterns | 0.60 | Explains when to use zonal resources and responsibilities for making them resilient; product-specific pattern guidance for zonal vs zone-resilient deployments. |
 

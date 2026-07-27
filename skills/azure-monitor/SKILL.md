@@ -1,9 +1,9 @@
 ---
 name: azure-monitor
-description: Expert knowledge for Azure Monitor development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring agents/DCRs, alerts/autoscale, Application Insights, KQL APIs, or Prometheus/OTel pipelines, and other Azure Monitor related development tasks. Not for Azure Network Watcher (use azure-network-watcher), Azure Service Health (use azure-service-health), Azure Defender For Cloud (use azure-defender-for-cloud), Azure Cost Management (use azure-cost-management).
+description: Expert knowledge for Azure Monitor development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring AMA/DCR pipelines, alerts/autoscale, Application Insights, Prometheus/AKS, or Log Analytics workspaces, and other Azure Monitor related development tasks. Not for Azure Network Watcher (use azure-network-watcher), Azure Service Health (use azure-service-health), Azure Defender For Cloud (use azure-defender-for-cloud), Azure Cost Management (use azure-cost-management).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-19"
+  generated_at: "2026-07-26"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Monitor Skill
@@ -26,11 +26,11 @@ This skill requires **network access** to fetch documentation content:
 |----------|----------|-------------|
 | Troubleshooting | L37-L98 | Diagnosing and fixing Azure Monitor issues: agents (AMA/Log Analytics/Diagnostics), data collection and pipelines, alerts, metrics/logs, Application Insights, containers, VM performance, and ITSM connectors. |
 | Best Practices | L99-L137 | Best practices for configuring, tuning, and scaling Azure Monitor (logs, metrics, alerts, autoscale, AKS, VMs, costs, Prometheus/OTel) for performance, reliability, and cost efficiency. |
-| Decision Making | L138-L177 | Guidance for planning migrations, choosing monitoring/alerting options, and optimizing Azure Monitor pipelines, workspaces, agents, OpenTelemetry, Grafana, and cost/billing. |
+| Decision Making | L138-L177 | Guidance for planning and decision-making around Azure Monitor migrations, alerting, costs, pipelines, workspaces, OpenTelemetry, Grafana, and replacing legacy/retired monitoring solutions. |
 | Architecture & Design Patterns | L178-L183 | Designing Azure Monitor architectures: enterprise-wide layouts, Private Link network patterns, choosing single vs multiple workspaces, and using workspace replication for resilience. |
 | Limits & Quotas | L184-L213 | Limits, quotas, scale/performance planning, ingestion/retention caps, query timeouts, and metric coverage for Azure Monitor, Application Insights, Prometheus, Container Insights, and Workbooks. |
-| Security | L214-L275 | Securing Azure Monitor and related services: auth, RBAC, network/TLS, private access, policies, secure ingestion, and querying/analyzing security and audit logs from many platforms. |
-| Configuration | [configuration.md](configuration.md) | Configuring Azure Monitor end to end: agents, DCRs, pipelines, alerts, autoscale, workbooks, Private Link, and detailed log/metric schemas for Azure, multicloud, and Application Insights. |
+| Security | L214-L275 | Securing Azure Monitor and related services: auth, RBAC, TLS, networking, policies, data protection, and analyzing security/audit logs from Azure, Kubernetes, Databricks, GCP, and Defender. |
+| Configuration | [configuration.md](configuration.md) | Configuring Azure Monitor end to end: agents, DCRs, pipelines, alerts, autoscale, Private Link, Application Insights, Kubernetes/Prometheus, and detailed log/metric/table schemas for Azure and partner services. |
 | Integrations & Coding Patterns | [integrations.md](integrations.md) | Patterns and code for integrating Azure Monitor with apps and tools: sending custom/Prometheus/OTel data, querying via APIs/KQL, wiring alerts and ITSM, and scenario-based KQL for many log tables. |
 | Deployment | [deployment.md](deployment.md) | Guides for deploying and migrating Azure Monitor agents, alerts, diagnostics, and Application Insights Profiler at scale using Policy, ARM, CLI/PowerShell, and workspace replication. |
 
@@ -165,7 +165,7 @@ This skill requires **network access** to fetch documentation content:
 | Understand billing rules for Azure diagnostic settings | https://learn.microsoft.com/en-us/azure/azure-monitor/platform/diagnostic-settings-faq |
 | Migrate from diagnostic retention to Azure Storage lifecycle policies | https://learn.microsoft.com/en-us/azure/azure-monitor/platform/migrate-to-azure-storage-lifecycle-policy |
 | Migrate from SCOM Managed Instance to Azure Monitor DCRs | https://learn.microsoft.com/en-us/azure/azure-monitor/scom-manage-instance/migrate-to-azure-monitor |
-| Plan and execute migration from SCOM Managed Instance | https://learn.microsoft.com/en-us/azure/azure-monitor/scom-manage-instance/migration-faq-scom-manage-instance |
+| Plan migration from Azure Monitor SCOM Managed Instance | https://learn.microsoft.com/en-us/azure/azure-monitor/scom-manage-instance/migration-faq-scom-manage-instance |
 | Plan migration from SCOM Managed Instance to SCOM or Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/scom-manage-instance/migration-overview |
 | Choose the right Azure Monitor visualization tool | https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/best-practices-visualize |
 | Decide when to copy dashboards to Azure Managed Grafana | https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/visualize-copy-to-managed-grafana |
@@ -220,7 +220,7 @@ This skill requires **network access** to fetch documentation content:
 | Use Application Insights smart detection to identify security issues | https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/proactive-application-security-detection-pack |
 | Enable Microsoft Entra authentication for Application Insights ingestion | https://learn.microsoft.com/en-us/azure/azure-monitor/app/azure-ad-authentication |
 | Configure IP collection and geolocation in Application Insights | https://learn.microsoft.com/en-us/azure/azure-monitor/app/ip-collection |
-| Migrate Container Insights from legacy to managed identity authentication | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-authentication |
+| Configure legacy authentication for Container Insights | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-authentication |
 | Configure secure access to Live Data in Container insights | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-livedata-setup |
 | Choose TLS options for Azure Monitor pipeline ingestion | https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/pipeline-tls |
 | Configure automated TLS certificates for Azure Monitor pipeline | https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/pipeline-tls-automated |

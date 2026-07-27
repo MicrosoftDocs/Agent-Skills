@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-07-05'
+generated_at: '2026-07-26'
 category_descriptions:
-  configuration: Designing, applying, and troubleshooting configuration for Nexus
-    clusters, Kubernetes, and network fabric (ACLs, route policies, isolation domains,
-    BGP/QoS, upgrades, drift, and commit workflows).
+  configuration: 'Configuring and operating Azure Operator Nexus: cluster/runtime
+    templates, fabric routing and QoS, isolation domains, ACLs, BGP/VRF limits, monitoring,
+    upgrades, and Kubernetes/node settings.'
   security: 'Securing Nexus: identity/RBAC, ACLs, SSH and serial access, break-glass
     methods, key/cert/secret rotation, Defender/Policy, managed identities, and secure
     VM/cluster connectivity.'
@@ -31,17 +31,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Operator Nexus development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when managing Nexus clusters, fabric ACL/BGP, secure VM connectivity, NPB TAP
-  rules, or near‑edge storage, and other Azure Operator Nexus related development
+  Use when managing Nexus clusters, fabric routing/QoS, isolation domains, BGP/VRF,
+  or Network Packet Broker TAP rules, and other Azure Operator Nexus related development
   tasks. Not for Azure Network Function Manager (use azure-network-function-manager),
-  Azure Networking (use azure-networking), Azure Virtual Network Manager (use azure-virtual-network-manager),
-  Azure Operator Insights (use azure-operator-insights).
-use_when: Use when managing Nexus clusters, fabric ACL/BGP, secure VM connectivity,
-  NPB TAP rules, or near‑edge storage, and other Azure Operator Nexus related development
-  tasks.
+  Azure Operator Insights (use azure-operator-insights), Azure Operator Service Manager
+  (use azure-operator-service-manager), Azure Networking (use azure-networking).
+use_when: Use when managing Nexus clusters, fabric routing/QoS, isolation domains,
+  BGP/VRF, or Network Packet Broker TAP rules, and other Azure Operator Nexus related
+  development tasks.
 confusable_not_for: Not for Azure Network Function Manager (use azure-network-function-manager),
-  Azure Networking (use azure-networking), Azure Virtual Network Manager (use azure-virtual-network-manager),
-  Azure Operator Insights (use azure-operator-insights).
+  Azure Operator Insights (use azure-operator-insights), Azure Operator Service Manager
+  (use azure-operator-service-manager), Azure Networking (use azure-networking).
 ---
 # Azure Operator Nexus Crawl Report
 
@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Network Function Manager (use azure-network-fu
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 220
+- **Updated Pages**: 4
+- **Unchanged**: 216
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-operator-nexus/azure-operator-nexus.csv`
 
@@ -76,6 +76,17 @@ confusable_not_for: Not for Azure Network Function Manager (use azure-network-fu
 | *(Unclassified)* | 52 | 23.6% |
 
 ## Changes
+
+### Updated Pages
+
+- [Cluster Manager Template JSON Example](https://learn.microsoft.com/en-us/azure/operator-nexus/clustermanager-jsonc-example)
+  - Updated: 2026-05-01T22:03:00.000Z → 2026-07-23T17:07:00.000Z
+- [Cluster Manager Parameters JSON Example](https://learn.microsoft.com/en-us/azure/operator-nexus/clustermanager-parameters-jsonc-example)
+  - Updated: 2026-05-01T22:03:00.000Z → 2026-07-23T17:07:00.000Z
+- [Cluster Template JSON Example](https://learn.microsoft.com/en-us/azure/operator-nexus/cluster-jsonc-example)
+  - Updated: 2026-05-01T22:03:00.000Z → 2026-07-23T17:07:00.000Z
+- [Cluster Parameters JSON Example](https://learn.microsoft.com/en-us/azure/operator-nexus/cluster-parameters-jsonc-example)
+  - Updated: 2026-05-01T22:03:00.000Z → 2026-07-23T17:07:00.000Z
 
 ## Classified Pages
 
@@ -120,10 +131,6 @@ confusable_not_for: Not for Azure Network Function Manager (use azure-network-fu
 | [How to set up break glass access](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-set-up-break-glass-access) | security | 0.82 | Covers IAM policies, identity model changes from v1.5 to v2.0, and specific configuration for emergency access; includes product-specific roles and security flows. |
 | [BareMetal Run-Read Execution](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-baremetal-run-read) | troubleshooting | 0.80 | Provides curated read-only diagnostic commands via run-read; symptom-oriented troubleshooting using Nexus-specific CLI. |
 | [Best Practices for Bare Metal Machine Operations](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-bare-metal-best-practices) | best-practices | 0.80 | Explicit best-practices article with concrete prerequisites and pitfalls for BMM replace/reimage; product-specific operational guidance. |
-| [Cluster Manager Parameters JSON Example](https://learn.microsoft.com/en-us/azure/operator-nexus/clustermanager-parameters-jsonc-example) | configuration | 0.80 | Example parameters template exposes concrete parameter names, expected value types, and possibly defaults for clusterManager.parameters.jsonc, which are product-specific configuration details. |
-| [Cluster Manager Template JSON Example](https://learn.microsoft.com/en-us/azure/operator-nexus/clustermanager-jsonc-example) | configuration | 0.80 | Example template file implies detailed configuration schema (fields, structure, and values) for clusterManager.jsonc specific to Azure Operator Nexus; this is product-specific configuration knowledge not derivable from general training. |
-| [Cluster Parameters JSON Example](https://learn.microsoft.com/en-us/azure/operator-nexus/cluster-parameters-jsonc-example) | configuration | 0.80 | Example of an eight-rack cluster parameter file contains detailed parameter names and allowed values for cluster.parameters.jsonc, which are expert configuration details. |
-| [Cluster Template JSON Example](https://learn.microsoft.com/en-us/azure/operator-nexus/cluster-jsonc-example) | configuration | 0.80 | Example cluster.jsonc template will list specific configuration fields and structure required by Azure Operator Nexus ARM templates, matching the configuration sub-skill definition. |
 | [Cluster Upgrades Preflight Validations](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-cluster-runtime-upgrade-preflight-checks) | troubleshooting | 0.80 | Documents preflight validation checks that block upgrades, with specific failure conditions and descriptive messages surfaced in clusteractionStates, and required operator actions. This is symptom (failed check/message) → cause → required action, matching troubleshooting. |
 | [Cluster metrics configuration management](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-cluster-metrics-configuration-management) | configuration | 0.80 | Defines MetricsConfiguration resource, including fields and default behavior for standard vs optional metrics collection in Nexus clusters. |
 | [Commit Workflow v2](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-commit-workflow-v2) | configuration | 0.80 | Details lock/preview/validate/commit semantics and improved error handling; product-specific configuration workflow with operational states. |
@@ -144,6 +151,10 @@ confusable_not_for: Not for Azure Network Function Manager (use azure-network-fu
 | [Troubleshoot Resource Health alerts](https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-resource-health-alerts) | troubleshooting | 0.80 | Breaks down platform-emitted health alerts with descriptions and links to specific troubleshooting guides, mapping alerts to causes and actions. |
 | [Access Control List configuration](https://learn.microsoft.com/en-us/azure/operator-nexus/reference-acl-configuration) | security | 0.78 | ACL configuration defines detailed traffic match fields (dot1q, ethertype, fragment, protocol, etc.) and actions. This is product-specific packet filtering configuration, directly tied to security controls. |
 | [BareMetal Run-Data-Extract Execution](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-baremetal-run-data-extract) | troubleshooting | 0.78 | Page documents the az networkcloud baremetalmachine run-data-extract command specifically for troubleshooting bare-metal machines, including product-specific diagnostic usage patterns and data collection details that are unique to Azure Operator Nexus and not general knowledge. |
+| [Cluster Manager Parameters JSON Example](https://learn.microsoft.com/en-us/azure/operator-nexus/clustermanager-parameters-jsonc-example) | configuration | 0.78 | An example clusterManager.parameters.jsonc file is a parameter configuration reference for ARM templates, showing exact parameter names, structures, and expected values for Azure Operator Nexus. This fits configuration, as it exposes detailed config schema not generally known. |
+| [Cluster Manager Template JSON Example](https://learn.microsoft.com/en-us/azure/operator-nexus/clustermanager-jsonc-example) | configuration | 0.78 | An example clusterManager.jsonc template for Azure Operator Nexus will list concrete JSON configuration fields, allowed structures, and possibly default values specific to this product’s ARM deployment model. That constitutes product-specific configuration parameters rather than generic concepts. |
+| [Cluster Parameters JSON Example](https://learn.microsoft.com/en-us/azure/operator-nexus/cluster-parameters-jsonc-example) | configuration | 0.78 | An example eight-rack cluster.parameters.jsonc file defines detailed ARM parameters (names, structures, and expected values) for Azure Operator Nexus clusters, which is expert configuration knowledge rather than generic guidance. |
+| [Cluster Template JSON Example](https://learn.microsoft.com/en-us/azure/operator-nexus/cluster-jsonc-example) | configuration | 0.78 | An example cluster.jsonc ARM template for creating an Operator Nexus cluster will contain specific resource properties, field names, and configuration patterns unique to this service, matching the configuration sub-skill type. |
 | [Cross-subscription deployments and required RBAC for Network Fabric](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-cross-subscription-deployments-required-rbac-for-network-fabric) | security | 0.78 | Details required permissions and linked access checks for cross-subscription management; includes specific RBAC roles/behaviors unique to Nexus fabric. |
 | [How to Configure NNF with Bring Your Own (BYO) Storage](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-configure-bring-your-own-storage-network-fabric) | configuration | 0.78 | Shows how to wire a customer-managed storage account and user-assigned managed identity into NNF; includes specific resource properties and identity scopes. |
 | [How to Configure Network TAP Rules with User Assigned Managed Identity (UAMI) in Azure Operator Nexus](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-configure-network-tap-rules-with-user-assigned-managed-identity) | security | 0.78 | Shows how TAP rules use UAMI to access storage and other services; includes identity-based authentication configuration and Trusted Microsoft Services alignment. |

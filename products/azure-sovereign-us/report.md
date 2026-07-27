@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-07-19'
+generated_at: '2026-07-26'
 category_descriptions:
-  security: 'Designing secure, compliant Azure Government environments: isolation/IL5,
-    FedRAMP Rev5 & DoD scope, TIC, identity/Entra auth, resource naming, and workload
-    security controls.'
+  security: 'Security and compliance guidance for Azure Government: isolation, IL5,
+    FedRAMP Rev5, TIC, secure naming, and identity/auth architecture with Microsoft
+    Entra.'
   decision-making: Guidance on choosing Azure Government vs global, FedRAMP/DoD scope
     and ATO, CSP reseller options, marketplace and DoD regions, and sector-specific
     compliance (NERC CIP, public safety, worldwide public sector).
@@ -21,17 +21,17 @@ category_descriptions:
     US regions.'
 skill_description: Expert knowledge for Azure US Government development including
   decision making, architecture & design patterns, security, configuration, integrations
-  & coding patterns, and deployment. Use when designing IL5/FedRAMP Gov envs, SACA-based
-  architectures, ASE/DISA CAP deploys, Gov Marketplace, or Entra auth, and other Azure
-  US Government related development tasks. Not for Azure Security (use azure-security),
-  Azure Defender For Cloud (use azure-defender-for-cloud), Azure Policy (use azure-policy),
-  Azure Monitor (use azure-monitor).
-use_when: Use when designing IL5/FedRAMP Gov envs, SACA-based architectures, ASE/DISA
-  CAP deploys, Gov Marketplace, or Entra auth, and other Azure US Government related
+  & coding patterns, and deployment. Use when using Azure Gov IL5/FedRAMP, SACA patterns,
+  Gov App Service/ASE, Gov Marketplace, or sovereign storage/SQL APIs, and other Azure
+  US Government related development tasks. Not for Azure Networking (use azure-networking),
+  Azure Virtual Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan),
+  Azure ExpressRoute (use azure-expressroute).
+use_when: Use when using Azure Gov IL5/FedRAMP, SACA patterns, Gov App Service/ASE,
+  Gov Marketplace, or sovereign storage/SQL APIs, and other Azure US Government related
   development tasks.
-confusable_not_for: Not for Azure Security (use azure-security), Azure Defender For
-  Cloud (use azure-defender-for-cloud), Azure Policy (use azure-policy), Azure Monitor
-  (use azure-monitor).
+confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtual
+  Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan),
+  Azure ExpressRoute (use azure-expressroute).
 ---
 # Azure US Government Crawl Report
 
@@ -66,8 +66,8 @@ confusable_not_for: Not for Azure Security (use azure-security), Azure Defender 
 
 ### Updated Pages
 
-- [Azure Government product General Availability](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-product-roadmap)
-  - Updated: 2026-07-02T17:11:00.000Z → 2026-07-16T08:00:00.000Z
+- [Azure secure isolation guidance](https://learn.microsoft.com/en-us/azure/azure-government/azure-secure-isolation-guidance)
+  - Updated: 2026-07-08T08:00:00.000Z → 2026-07-20T08:00:00.000Z
 
 ## Classified Pages
 
@@ -77,7 +77,6 @@ confusable_not_for: Not for Azure Security (use azure-security), Azure Defender 
 | [Compare Azure Government and global Azure](https://learn.microsoft.com/en-us/azure/azure-government/compare-azure-government-global-azure) | decision-making | 0.75 | Provides feature and compliance differences between Azure Government and global Azure, including environment-specific capabilities and constraints to guide cloud selection decisions. |
 | [Deploy with Azure Pipelines](https://learn.microsoft.com/en-us/azure/azure-government/connect-with-azure-pipelines) | deployment | 0.75 | How-to for configuring Azure Pipelines to deploy to Azure Government App Service, including environment-specific endpoints and constraints for CI/CD. |
 | [Authorized reseller list](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-csp-list) | decision-making | 0.70 | Provides authoritative list of authorized CSPs and resellers for Azure Government, used to select appropriate partners—data not inferable from training alone. |
-| [Azure secure isolation guidance](https://learn.microsoft.com/en-us/azure/azure-government/azure-secure-isolation-guidance) | security | 0.70 | Page focuses on secure isolation across compute, networking, storage, and encryption in Azure Government and multitenant Azure. This is product-specific security guidance about how to isolate workloads and data in a hyperscale multitenant environment, going beyond generic security theory. |
 | [Cloud services by audit scope](https://learn.microsoft.com/en-us/azure/azure-government/compliance/azure-services-in-fedramp-auditscope) | security | 0.70 | Page details which Azure, Azure Government, and Azure Government Secret services and regions fall within specific FedRAMP and DoD authorization scopes. This is product- and environment-specific compliance and security information (which environments are authorized for which impact levels), which an LLM is unlikely to know reliably from training. It maps cloud environments to concrete compliance authorizations, fitting the security category best. |
 | [Considerations for naming Azure resources](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-concept-naming-resources) | security | 0.70 | Provides concrete guidance on avoiding sensitive data in resource names, with examples tied to specific Azure services and compliance boundaries—product-specific security practice. |
 | [Identity](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-plan-identity) | security | 0.70 | Provides planning guidance on using Microsoft Entra Public vs Government tenants and identity placement for Azure Government applications—product-specific identity/security configuration decisions. |
@@ -86,6 +85,7 @@ confusable_not_for: Not for Azure Security (use azure-security), Azure Defender 
 | [Security](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-plan-security) | security | 0.70 | Page provides product-specific security guidance for Azure Government, including how Microsoft handles requirements at the infrastructure level and how customers should implement encryption, isolation, monitoring, and access controls to meet regulated/controlled data needs. This is concrete, Azure-Government-specific security configuration and practice rather than generic concepts. |
 | [Trusted Internet Connections with Azure](https://learn.microsoft.com/en-us/azure/azure-government/compliance/compliance-tic) | security | 0.70 | Maps TIC requirements to Azure IaaS/PaaS security features, providing concrete guidance for compliant configurations in Azure and Azure Government. |
 | [Use DISA CAP](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-ase-disa-cap) | deployment | 0.70 | Explains baseline configuration of App Service Environment with ILB for DISA CAP connectivity—highly specific deployment pattern for Azure Government. |
+| [Azure secure isolation guidance](https://learn.microsoft.com/en-us/azure/azure-government/azure-secure-isolation-guidance) | security | 0.68 | The page provides detailed, product-specific guidance for secure isolation across compute, networking, storage, and encryption in Azure Government and multitenant Azure. This goes beyond generic security concepts and includes concrete recommendations and patterns unique to Azure Government isolation scenarios, fitting the security sub-skill type. |
 | [Accelerate your path to ATO with Azure](https://learn.microsoft.com/en-us/azure/azure-government/compliance/documentation-accelerate-compliance) | decision-making | 0.65 | Aggregates resources, reference architectures, and partner tools to help plan and implement FedRAMP-compliant solutions, guiding technology and approach choices. |
 | [Access EA billing account](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-how-to-access-enterprise-agreement-billing-account) | configuration | 0.65 | Details how EA customers access billing accounts in the Azure Government portal, including portal behavior changes and environment-specific steps. |
 | [Department of Defense](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-overview-dod) | decision-making | 0.65 | DoD-focused overview with guidance on when and how to use DoD regions; informs region/service selection for specific impact levels and missions. |

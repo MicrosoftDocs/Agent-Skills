@@ -54,9 +54,9 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 - **Unclassified**: 84
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 504
+- **Unchanged**: 505
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-factory/azure-data-factory.csv`
 
@@ -76,10 +76,6 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | *(Unclassified)* | 84 | 16.6% |
 
 ## Changes
-
-### New Pages
-
-- [Modern Trusted Service Data Factory](https://learn.microsoft.com/en-us/azure/data-factory/modern-trusted-service)
 
 ## Classified Pages
 

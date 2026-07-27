@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-19'
+generated_at: '2026-07-26'
 category_descriptions:
   security: Identity, RBAC, certificates, SSH, gMSA, and container security for AKS
     Edge/Arc/Hybrid, including Entra/AD auth, key rotation, workload identity, and
@@ -10,12 +10,12 @@ category_descriptions:
   decision-making: Guidance on choosing AKS Edge/Arc vs cloud/on-prem, supported versions/add-ons,
     monitoring, pricing/licensing, support, and planning migrations or retirement
     of older AKS/Windows Server setups
-  troubleshooting: 'Diagnosing and fixing AKS Edge/Arc cluster issues: creation/upgrade
-    failures, networking, storage, security, certificates, logs, telemetry, and known
-    issues on Azure Local and Windows Server.'
-  limits-quotas: Hardware, storage, IP, and scale requirements/limits for AKS Edge/Arc
-    (Azure Local, bare metal, VMware, Windows Server), plus support policies and release
-    changes.
+  troubleshooting: 'Diagnosing and fixing AKS Edge/Arc issues: cluster creation/upgrade
+    failures, networking, storage, security, logs, certificates, KMS, VMware/Windows
+    Server known issues, and support tools.'
+  limits-quotas: System requirements, scale limits, IP capacity planning, supported
+    versions, and support policies for AKS Edge/Arc on Azure Local, bare metal, VMware,
+    and Windows Server.
   integrations: 'Managing and integrating AKS Edge/AKS Arc/hybrid clusters: Arc onboarding,
     CLI/PowerShell cmdlets, storage/CSI, networking, logging/backup, IoT/AI workloads,
     TPM access, and camera/OPC UA discovery.'
@@ -32,12 +32,12 @@ skill_description: Expert knowledge for Azure Kubernetes Service Edge Essentials
   including troubleshooting, best practices, decision making, architecture & design
   patterns, limits & quotas, security, configuration, integrations & coding patterns,
   and deployment. Use when managing AKS Edge/Arc clusters, Arc onboarding, SDN VNets,
-  TPM/IoT camera workloads, or offline deployments, and other Azure Kubernetes Service
+  IoT/AI workloads, or TPM/camera/OPC UA access, and other Azure Kubernetes Service
   Edge Essentials related development tasks. Not for Azure Kubernetes Service (AKS)
   (use azure-kubernetes-service), Azure IoT Edge (use azure-iot-edge), Azure Stack
   Edge (use azure-stack-edge), Azure Container Apps (use azure-container-apps).
-use_when: Use when managing AKS Edge/Arc clusters, Arc onboarding, SDN VNets, TPM/IoT
-  camera workloads, or offline deployments, and other Azure Kubernetes Service Edge
+use_when: Use when managing AKS Edge/Arc clusters, Arc onboarding, SDN VNets, IoT/AI
+  workloads, or TPM/camera/OPC UA access, and other Azure Kubernetes Service Edge
   Essentials related development tasks.
 confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
   Azure IoT Edge (use azure-iot-edge), Azure Stack Edge (use azure-stack-edge), Azure
@@ -54,9 +54,9 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 - **Unclassified**: 75
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 1
-- **Unchanged**: 354
+- **New Pages**: 0
+- **Updated Pages**: 4
+- **Unchanged**: 352
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-aks-edge-essentials/azure-aks-edge-essentials.csv`
 
@@ -67,24 +67,26 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | architecture-patterns | 3 | 0.8% |
 | best-practices | 4 | 1.1% |
 | configuration | 82 | 23.0% |
-| decision-making | 9 | 2.5% |
+| decision-making | 8 | 2.2% |
 | deployment | 34 | 9.6% |
 | integrations | 56 | 15.7% |
-| limits-quotas | 12 | 3.4% |
+| limits-quotas | 13 | 3.7% |
 | security | 32 | 9.0% |
 | troubleshooting | 49 | 13.8% |
 | *(Unclassified)* | 75 | 21.1% |
 
 ## Changes
 
-### New Pages
-
-- [Kubernetes version image not ready](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-arc-image-not-ready)
-
 ### Updated Pages
 
-- [System requirements and prerequisites](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-bare-metal-system-requirements)
-  - Updated: 2026-06-04T22:04:00.000Z → 2026-07-14T22:09:00.000Z
+- [Supported Kubernetes versions](https://learn.microsoft.com/en-us/azure/aks/aksarc/supported-kubernetes-versions)
+  - Updated: 2026-03-11T17:06:00.000Z → 2026-07-23T08:00:00.000Z
+- [Get kubelet logs](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-get-kubelet-logs)
+  - Updated: 2025-09-30T17:08:00.000Z → 2026-07-22T17:03:00.000Z
+- [Get on-demand logs for troubleshooting](https://learn.microsoft.com/en-us/azure/aks/aksarc/get-on-demand-logs)
+  - Updated: 2025-09-30T17:08:00.000Z → 2026-07-22T17:03:00.000Z
+- [Troubleshooting overview](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-troubleshoot)
+  - Updated: 2025-09-30T22:03:00.000Z → 2026-07-22T17:03:00.000Z
 
 ## Classified Pages
 
@@ -102,6 +104,7 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Kubernetes version image not ready](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-arc-image-not-ready) | troubleshooting | 0.86 | The page focuses on a specific failure mode ('Kubernetes version image not ready') for AKS enabled by Azure Arc on Azure Local and provides symptom → cause → mitigation guidance. It likely includes product-specific commands, checks, and remediation steps unique to AKS Arc and Azure Local environments, which qualify as expert troubleshooting knowledge beyond generic debugging advice. |
 | [Networking](https://learn.microsoft.com/en-us/azure/aks/aksarc/known-issues-networking) | troubleshooting | 0.86 | Networking 'known issues' and error-resolution steps for AKS Arc are concrete, product-specific troubleshooting patterns (e.g., connectivity failures, port/config issues) that go beyond generic networking advice. |
 | [Supported SKU sizes and scale requirements](https://learn.microsoft.com/en-us/azure/aks/aksarc/multi-rack/scale-requirements) | limits-quotas | 0.86 | The page explicitly describes supported node sizes and scale requirements for AKS on Azure Local multi-rack deployments, including cluster, node pool, and node limits. These are product- and SKU-specific numerical constraints that an LLM wouldn't reliably know from training, fitting the limits-quotas category. |
+| [Troubleshooting overview](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-troubleshoot) | troubleshooting | 0.86 | Explicitly a troubleshooting article that maps common Kubernetes issues in AKS enabled by Azure Arc to diagnostic steps and resolutions, likely including product-specific commands and behaviors not covered by generic Kubernetes knowledge. |
 | [Quotas and resource limits](https://learn.microsoft.com/en-us/azure/aks/aksarc/concepts-support) | limits-quotas | 0.85 | Explicitly about tested configurations, resource limits, VM sizes, and regions; contains numeric limits and support matrices. |
 | [Set-AksHciConfig](https://learn.microsoft.com/en-us/azure/aks/aksarc/reference/ps/set-akshciconfig) | configuration | 0.85 | Central configuration cmdlet listing many host-level settings, names, and allowed values unique to AKS hybrid. |
 | [Supported scale requirements](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-vmware-scale-requirements) | limits-quotas | 0.85 | Explicitly lists supported scale counts for clusters and node pools, which are numeric limits and quotas specific to this service. |
@@ -113,6 +116,7 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [KubeAPIServer unreachable error](https://learn.microsoft.com/en-us/azure/aks/aksarc/kube-api-server-unreachable) | troubleshooting | 0.83 | Targets a specific error message about reaching kube-apiserver/control plane IP, with environment-specific diagnosis and fixes. |
 | [Uninstall](https://learn.microsoft.com/en-us/azure/aks/aksarc/known-issues-uninstall) | troubleshooting | 0.83 | Focused on uninstall issues and errors with AKS Arc, mapping uninstall failures to causes and solutions. This is uninstall-specific troubleshooting knowledge. |
 | [Control plane configuration validation errors](https://learn.microsoft.com/en-us/azure/aks/aksarc/control-plane-validation-errors) | troubleshooting | 0.82 | Documents specific ControlPlaneConfigurationValidation error codes, meanings, and resolution steps, which are highly product-specific. |
+| [Get on-demand logs for troubleshooting](https://learn.microsoft.com/en-us/azure/aks/aksarc/get-on-demand-logs) | troubleshooting | 0.82 | Describes how to collect full on-demand logs and send them to Microsoft support for AKS enabled by Azure Arc, including product-specific commands/flows for log collection used in issue diagnosis, which fits troubleshooting. |
 | [K8sVersionValidation error](https://learn.microsoft.com/en-us/azure/aks/aksarc/cluster-k8s-version) | troubleshooting | 0.82 | Focuses on a named error code with causes and mitigation steps tied to supported Kubernetes versions in AKS on Azure Local. |
 | [Upgrade](https://learn.microsoft.com/en-us/azure/aks/aksarc/known-issues-upgrade) | troubleshooting | 0.82 | Focuses on known issues and errors during AKS Arc upgrades with targeted guidance. Upgrade problems and their fixes are highly product-specific troubleshooting content. |
 | [Network validation error due to .local domain](https://learn.microsoft.com/en-us/azure/aks/aksarc/network-validation-error-local) | troubleshooting | 0.81 | Addresses a specific error string and its root cause (.local domain) with concrete remediation steps. |
@@ -167,7 +171,9 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Connect to Arc](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-edge-howto-connect-to-arc) | configuration | 0.78 | Describes Arc connection behavior and requires specific config file section (Arc in config) and possibly parameter values; product-specific configuration knowledge. |
 | [Deleted AKS Arc cluster still visible on Azure portal](https://learn.microsoft.com/en-us/azure/aks/aksarc/deleted-cluster-visible) | troubleshooting | 0.78 | Explains why a deleted cluster remains as a connectedCluster resource and how to clean it up; symptom→cause→solution. |
 | [Deploy Azure IoT Operations](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-edge-howto-deploy-azure-iot) | integrations | 0.78 | Describes a script and required cluster configuration to run Azure IoT Operations on AKS Edge; includes product-specific integration parameters and constraints. |
+| [Get kubelet logs](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-get-kubelet-logs) | troubleshooting | 0.78 | Page focuses on using journalctl and other product-specific steps to access kubelet logs on AKS enabled by Azure Arc nodes for diagnosing issues. This is concrete troubleshooting guidance (where and how to get specific logs) rather than generic concepts. |
 | [Other](https://learn.microsoft.com/en-us/azure/aks/aksarc/known-issues) | troubleshooting | 0.78 | A general 'known issues' page for AKS on Windows Server that aggregates specific problems and their workarounds. These are concrete, product-specific troubleshooting cases rather than conceptual guidance. |
+| [Supported Kubernetes versions](https://learn.microsoft.com/en-us/azure/aks/aksarc/supported-kubernetes-versions) | limits-quotas | 0.78 | The page documents the exact supported Kubernetes minor and patch versions, their support windows, and lifecycle policy for AKS enabled by Azure Arc. These are time- and version-specific constraints (what versions are allowed and for how long), which function as product limits/constraints that an LLM wouldn't reliably know from training. |
 | [System requirements and prerequisites](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-bare-metal-system-requirements) | limits-quotas | 0.78 | A system requirements page for AKS on bare metal will list precise hardware, network, and Azure prerequisites, such as minimum CPU, RAM, disk sizes, supported NIC counts, specific firmware/BIOS capabilities, and possibly network bandwidth or latency constraints. These are exact numeric limits and constraints that qualify as product-specific limits/quotas beyond generic conceptual knowledge. |
 | [Use Azure RBAC](https://learn.microsoft.com/en-us/azure/aks/aksarc/multi-rack/use-azure-rbac) | security | 0.78 | The page is focused on enabling and using Azure RBAC with Microsoft Entra ID to authorize Kubernetes API requests for AKS on Azure Local multi-rack deployments. This is product-specific security configuration, likely including concrete RBAC role names, scope details, and how they map to kubeconfig access and kubectl permissions, which qualifies as expert security configuration knowledge rather than a generic overview. |
 | [Use diagnostic checker](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-arc-diagnostic-checker) | troubleshooting | 0.78 | Tool-based troubleshooting for cluster creation failures with specific checks, outputs, and remediation steps unique to AKS Arc. |
@@ -212,7 +218,6 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Use disk CSI drivers](https://learn.microsoft.com/en-us/azure/aks/aksarc/container-storage-interface-disks-windows-server) | configuration | 0.75 | Describes built-in storage classes and custom class creation for CSI disks; involves configuration parameters and class definitions unique to this environment. |
 | [Use file CSI drivers](https://learn.microsoft.com/en-us/azure/aks/aksarc/container-storage-interface-files) | configuration | 0.75 | Describes mounting SMB/NFS via CSI; includes driver names, mount options, and storage class parameters unique to this product. |
 | [Use file CSI drivers](https://learn.microsoft.com/en-us/azure/aks/aksarc/container-storage-interface-files-windows-server) | configuration | 0.75 | Mounting SMB/NFS shares via CSI file drivers requires specific storage class and volume configuration—product-specific configuration details. |
-| [Troubleshooting overview](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-troubleshoot) | troubleshooting | 0.74 | Central troubleshooting guide mapping symptoms to causes and resolutions for AKS Arc, likely with product-specific commands and error patterns. |
 | [Update-AksHci](https://learn.microsoft.com/en-us/azure/aks/aksarc/reference/ps/update-akshci) | integrations | 0.73 | Update cmdlet reference will include parameters, version handling, and constraints unique to updating AKS hybrid hosts, which are concrete API/config patterns. |
 | [Update-AksHciCertificates](https://learn.microsoft.com/en-us/azure/aks/aksarc/reference/ps/update-akshcicertificates) | integrations | 0.73 | Documents a cmdlet for rotating tokens and certificates in the management cluster, with product-specific parameters and operational semantics. |
 | [Update-AksHciClusterCertificates](https://learn.microsoft.com/en-us/azure/aks/aksarc/reference/ps/update-akshciclustercertificates) | integrations | 0.73 | Provides detailed usage of a cmdlet that rotates tokens and certificates in workload clusters, exposing product-specific API and configuration details. |
@@ -244,8 +249,6 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Enable-AksHciArcConnection](https://learn.microsoft.com/en-us/azure/aks/aksarc/reference/ps/enable-akshciarcconnection) | configuration | 0.70 | Cmdlet reference for enabling Arc connectivity, including configuration parameters unique to AKS hybrid. |
 | [Encrypt etcd secrets](https://learn.microsoft.com/en-us/azure/aks/aksarc/encrypt-secrets) | troubleshooting | 0.70 | Explicitly a monitoring and troubleshooting guide for etcd secret encryption with AKS Arc-specific behaviors and resolution steps. |
 | [Expose Kubernetes services](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-edge-howto-expose-service) | configuration | 0.70 | Explains service exposure methods depending on networking configuration, including specific settings like Init.Service; product-specific configuration guidance. |
-| [Get kubelet logs](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-get-kubelet-logs) | troubleshooting | 0.70 | Describes using journalctl and node access patterns specific to AKS Arc to obtain kubelet logs for diagnosing issues. |
-| [Get on-demand logs for troubleshooting](https://learn.microsoft.com/en-us/azure/aks/aksarc/get-on-demand-logs) | troubleshooting | 0.70 | Step-by-step guidance for collecting full diagnostic logs and sending them to Microsoft; includes product-specific commands and packaging details. |
 | [Get-AksEdgeNodeConnectivityMode](https://learn.microsoft.com/en-us/azure/aks/aksarc/reference/aks-edge-ps/get-aksedgenodeconnectivitymode) | integrations | 0.70 | Reference page for a specific AKS Edge Essentials PowerShell cmdlet, including its parameters and behavior, which are product- and API-specific details. |
 | [Get-AksEdgeNodeName](https://learn.microsoft.com/en-us/azure/aks/aksarc/reference/aks-edge-ps/get-aksedgenodename) | integrations | 0.70 | Cmdlet reference describing how to retrieve VM hostnames for AKS Edge nodes, including parameterized behavior unique to this module. |
 | [Get-AksEdgeUpgrade](https://learn.microsoft.com/en-us/azure/aks/aksarc/reference/aks-edge-ps/get-aksedgeupgrade) | integrations | 0.70 | Documents a product-specific cmdlet that returns AKS Edge Essentials upgrade permissions, including its usage and outputs. |
@@ -320,7 +323,6 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [vnet](https://learn.microsoft.com/en-us/azure/aks/aksarc/vnet) | integrations | 0.70 | CLI vnet reference; contains product-specific networking command parameters and constraints. |
 | [Upgrade Kubernetes clusters](https://learn.microsoft.com/en-us/azure/aks/aksarc/cluster-upgrade) | deployment | 0.69 | Details rolling upgrade behavior, supported upgrade paths, and commands for AKS Arc cluster upgrades, which are product-specific operational steps. |
 | [Access and identity](https://learn.microsoft.com/en-us/azure/aks/aksarc/multi-rack/concepts-security-access-identity) | security | 0.68 | Page focuses on access and identity management for AKS enabled by Azure Arc in multi-rack Azure Local deployments, including product-specific constraints (for example, az aksarc get-credentials not supported for multi-rack and alternative interactive access methods) and concrete guidance on using Kubernetes RBAC and Azure RBAC for cluster access. These are security- and IAM-specific configurations unique to this deployment model, beyond generic concepts. |
-| [Supported Kubernetes versions](https://learn.microsoft.com/en-us/azure/aks/aksarc/supported-kubernetes-versions) | decision-making | 0.68 | The page documents the specific Kubernetes versions currently supported for AKS enabled by Azure Arc and explains the support policy and lifecycle. These concrete version lists and lifecycle details are time-sensitive expert knowledge not reliably known from model training and help users decide which Kubernetes version to run and when to upgrade. |
 | [Monitor Kubernetes audit events](https://learn.microsoft.com/en-us/azure/aks/aksarc/kubernetes-monitor-audit-events) | configuration | 0.67 | Covers creating diagnostic settings to route audit logs as Azure Monitor resource logs; includes product-specific settings and destinations. |
 | [Disable Windows node pools](https://learn.microsoft.com/en-us/azure/aks/aksarc/disable-windows-nodepool) | configuration | 0.66 | Version-specific configuration steps to disable a feature on Azure Local 2508 and earlier, including commands and flags unique to this environment. |
 | [Monitor control plane metrics](https://learn.microsoft.com/en-us/azure/aks/aksarc/control-plane-metrics) | configuration | 0.66 | Explains enabling control plane metrics and querying them; likely includes specific metric names, endpoints, and configuration steps unique to AKS on Azure Local. |

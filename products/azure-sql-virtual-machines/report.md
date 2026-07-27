@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-19'
+generated_at: '2026-07-26'
 category_descriptions:
   decision-making: Guidance for choosing Azure SQL options and pricing, comparing
     SQL VMs vs Managed Instance, planning migrations (including Db2), HADR choices,
@@ -14,8 +14,8 @@ category_descriptions:
     feature availability, and how to request quota increases for databases and managed
     instances
   configuration: 'Configuring SQL Server on Azure VMs: HA/DR (AGs, FCIs, listeners,
-    load balancers), storage and tempdb layout, IaaS Agent setup, backups, editions/versions,
-    and connectivity options.'
+    load balancers, clustering), storage and tempdb layout, IaaS Agent setup, deployment/edition
+    changes, and connectivity options.'
   best-practices: 'Best practices for SQL Server on Azure VMs: HA/DR clustering, DNN
     listeners, backup/restore, performance tuning, storage and VM sizing, baselines,
     and best practices assessments.'
@@ -31,16 +31,17 @@ skill_description: Expert knowledge for SQL Server on Azure Virtual Machines dev
   including troubleshooting, best practices, decision making, architecture & design
   patterns, limits & quotas, security, configuration, integrations & coding patterns,
   and deployment. Use when planning SQL VM vs Managed Instance, Always On AG/FCI on
-  Azure VMs, HA/DR, storage/tempdb, or Blob backups, and other SQL Server on Azure
-  Virtual Machines related development tasks. Not for Azure SQL Database (use azure-sql-database),
-  Azure SQL Managed Instance (use azure-sql-managed-instance), Azure Virtual Machines
-  (use azure-virtual-machines), Azure Virtual Machine Scale Sets (use azure-vm-scalesets).
+  Azure VMs, HA/DR clustering, AHB licensing, or Blob backups, and other SQL Server
+  on Azure Virtual Machines related development tasks. Not for Azure SQL Database
+  (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance),
+  Azure Virtual Machines (use azure-virtual-machines), SAP HANA on Azure Large Instances
+  (use azure-sap).
 use_when: Use when planning SQL VM vs Managed Instance, Always On AG/FCI on Azure
-  VMs, HA/DR, storage/tempdb, or Blob backups, and other SQL Server on Azure Virtual
-  Machines related development tasks.
+  VMs, HA/DR clustering, AHB licensing, or Blob backups, and other SQL Server on Azure
+  Virtual Machines related development tasks.
 confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure SQL
   Managed Instance (use azure-sql-managed-instance), Azure Virtual Machines (use azure-virtual-machines),
-  Azure Virtual Machine Scale Sets (use azure-vm-scalesets).
+  SAP HANA on Azure Large Instances (use azure-sap).
 ---
 # SQL Server on Azure Virtual Machines Crawl Report
 
@@ -53,10 +54,10 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 - **Unclassified**: 31
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 5
-- **Unchanged**: 121
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 126
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sql-virtual-machines/azure-sql-virtual-machines.csv`
 
 ## Classification Statistics
@@ -76,26 +77,10 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 
 ## Changes
 
-### New Pages
-
-- [Automated backup (SQL Server 2016+)](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/automated-backup?view=azuresql)
-
 ### Updated Pages
 
-- [FAQ](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/frequently-asked-questions-faq?view=azuresql)
-  - Updated: 2026-06-22T22:37:00.000Z → 2026-07-16T17:38:00.000Z
-- [About Linux SQL Server VMs](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/linux/sql-server-on-linux-vm-what-is-iaas-overview?view=azuresql)
-  - Updated: 2026-04-06T22:36:00.000Z → 2026-07-16T17:38:00.000Z
-- [Create SQL VM - Portal](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/linux/sql-vm-create-portal-quickstart?view=azuresql)
-  - Updated: 2025-09-25T22:35:00.000Z → 2026-07-16T17:38:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/linux/frequently-asked-questions-faq?view=azuresql)
-  - Updated: 2025-10-28T22:34:00.000Z → 2026-07-16T17:38:00.000Z
-- [on Azure confidential VMs](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/sql-vm-create-confidential-vm-how-to?view=azuresql)
-  - Updated: 2025-08-25T08:00:00.000Z → 2026-07-16T17:38:00.000Z
-
-### Deleted Pages
-
-- ~~Automated backup (SQL 2016+)~~ (https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/automated-backup?view=azuresql)
+- [Register single VM](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/sql-agent-extension-manually-register-single-vm?view=azuresql)
+  - Updated: 2026-01-23T08:00:00.000Z → 2026-07-20T22:35:00.000Z
 
 ## Classified Pages
 
@@ -123,7 +108,6 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | [Automatic registration](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/sql-agent-extension-automatic-registration-all-vms?view=azuresql) | configuration | 0.75 | Covers enabling automatic registration at subscription level, including extension settings and behavior. |
 | [Bulk register multiple VMs](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/sql-agent-extension-manually-register-vms-bulk?view=azuresql) | configuration | 0.75 | Uses a specific PowerShell cmdlet and describes bulk registration behavior and constraints for SQL VMs. |
 | [Collect baseline](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/performance-guidelines-best-practices-collect-baseline?view=azuresql) | best-practices | 0.75 | Step-by-step, product-specific guidance on collecting performance baselines for SQL Server on Azure VMs; actionable best-practice procedures rather than conceptual performance theory. |
-| [Register single VM](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/sql-agent-extension-manually-register-single-vm?view=azuresql) | configuration | 0.75 | Details registration steps and extension behavior, including least-privileged model specifics. |
 | [Security](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/security-considerations-best-practices?view=azuresql) | security | 0.75 | Security-focused guidance for SQL VMs, likely including Azure-specific network, identity, and SQL configuration details. |
 | [Place tempdb to ephemeral disk](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/tempdb-ephemeral-storage?view=azuresql) | configuration | 0.74 | The article provides product-specific configuration steps and settings for placing SQL Server tempdb and buffer pool extensions on Azure VM ephemeral (local SSD) storage. It includes concrete configuration details (drive usage, SQL Server settings, and Azure VM-specific behavior) that go beyond generic knowledge, but does not focus on numeric limits/quotas, troubleshooting error codes, or architecture decision matrices. |
 | [Analyze I/O performance](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/storage-performance-analysis?view=azuresql) | troubleshooting | 0.70 | Explicitly about identifying I/O performance issues from VM and disk limits; such content typically maps symptoms to causes and uses Azure-specific metrics and tools. |
@@ -165,6 +149,7 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | [Premium file share (Win2012+)](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/failover-cluster-instance-premium-file-share-manually-configure?view=azuresql) | configuration | 0.70 | Premium file share-backed FCIs require Azure Files configuration, share sizing, and cluster settings that are product-specific. |
 | [Pricing](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/pricing-guidance?view=azuresql) | decision-making | 0.70 | Pricing guidance article focused on selecting the right SQL Server VM pricing model. Such pages typically include comparison of licensing options (PAYG vs Azure Hybrid Benefit), VM sizes, and edition choices with concrete cost/feature trade-offs and scenario-based recommendations, which fits the decision-making category. |
 | [Quick checklist](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/performance-guidelines-best-practices-checklist?view=azuresql) | best-practices | 0.70 | Checklist of product-specific performance recommendations for SQL Server on Azure VMs, referencing concrete configuration and tuning actions; part of a best-practices series rather than generic guidance. |
+| [Register single VM](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/sql-agent-extension-manually-register-single-vm?view=azuresql) | configuration | 0.70 | Page provides product-specific steps and parameters for registering a single SQL Server on Azure Windows VM with the SQL IaaS Agent extension, including required resource types, modes, and Azure CLI/PowerShell commands. This is concrete configuration knowledge for this extension rather than generic deployment or conceptual content. |
 | [Register with SQL IaaS extension](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/linux/sql-iaas-agent-extension-register-vm-linux?view=azuresql) | configuration | 0.70 | Registration with the SQL IaaS Agent extension for Linux VMs typically involves product-specific configuration steps, parameter names, and required settings unique to Azure SQL on VMs. These are concrete configuration details (extension types, modes, commands, and options) that go beyond generic knowledge and fit the configuration sub-skill. |
 | [SQL IaaS Agent extension](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/linux/sql-server-iaas-agent-extension-linux?view=azuresql) | configuration | 0.70 | Describes extension behavior and likely lists extension modes, settings, and parameters specific to SQL IaaS Agent on Linux. |
 | [SQL best practices assessment](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/sql-assessment-for-sql-vm?view=azuresql) | best-practices | 0.70 | The page describes a product-specific SQL best practices assessment feature for SQL Server on Azure VMs, driven by the SQL Assessment API and a rich ruleset. This implies concrete, product-specific DO/DON'T guidance and configuration checks unique to SQL Server on Azure VMs, which qualifies as expert best-practices knowledge rather than a generic overview. |

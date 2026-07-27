@@ -1,9 +1,9 @@
 ---
 name: azure-operator-nexus
-description: Expert knowledge for Azure Operator Nexus development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing Nexus clusters, fabric ACL/BGP, secure VM connectivity, NPB TAP rules, or near‑edge storage, and other Azure Operator Nexus related development tasks. Not for Azure Network Function Manager (use azure-network-function-manager), Azure Networking (use azure-networking), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Operator Insights (use azure-operator-insights).
+description: Expert knowledge for Azure Operator Nexus development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing Nexus clusters, fabric routing/QoS, isolation domains, BGP/VRF, or Network Packet Broker TAP rules, and other Azure Operator Nexus related development tasks. Not for Azure Network Function Manager (use azure-network-function-manager), Azure Operator Insights (use azure-operator-insights), Azure Operator Service Manager (use azure-operator-service-manager), Azure Networking (use azure-networking).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-05"
+  generated_at: "2026-07-26"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Operator Nexus Skill
@@ -30,7 +30,7 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L97-L102 | Design patterns and reference architectures for resilient Nexus deployments, including rack-failure-tolerant control planes and near-edge storage topology and capacity planning. |
 | Limits & Quotas | L103-L115 | Nexus platform limits, quotas, supported versions, upgrade cadence, storage planning, node restarts/timeouts, isolation domain requirements, and log behavior after disconnection. |
 | Security | L116-L155 | Securing Nexus: identity/RBAC, ACLs, SSH and serial access, break-glass methods, key/cert/secret rotation, Defender/Policy, managed identities, and secure VM/cluster connectivity. |
-| Configuration | L156-L225 | Designing, applying, and troubleshooting configuration for Nexus clusters, Kubernetes, and network fabric (ACLs, route policies, isolation domains, BGP/QoS, upgrades, drift, and commit workflows). |
+| Configuration | L156-L225 | Configuring and operating Azure Operator Nexus: cluster/runtime templates, fabric routing and QoS, isolation domains, ACLs, BGP/VRF limits, monitoring, upgrades, and Kubernetes/node settings. |
 | Integrations & Coding Patterns | L226-L230 | Configuring Network Packet Broker TAP rules in Azure Operator Nexus, including rule creation, traffic mirroring, filtering, and integration patterns for network observability. |
 | Deployment | L231-L239 | Deploying and maintaining Nexus platform and fabric: prerequisites, image building, OS and fabric upgrades, and replacing or updating terminal servers in the network fabric. |
 
@@ -156,10 +156,10 @@ This skill requires **network access** to fetch documentation content:
 ### Configuration
 | Topic | URL |
 |-------|-----|
-| Author cluster.jsonc templates for Nexus clusters | https://learn.microsoft.com/en-us/azure/operator-nexus/cluster-jsonc-example |
-| Define cluster.parameters.jsonc for multi-rack Nexus clusters | https://learn.microsoft.com/en-us/azure/operator-nexus/cluster-parameters-jsonc-example |
-| Use clusterManager.jsonc template for Nexus deployment | https://learn.microsoft.com/en-us/azure/operator-nexus/clustermanager-jsonc-example |
-| Configure clusterManager.parameters.jsonc for Nexus clusters | https://learn.microsoft.com/en-us/azure/operator-nexus/clustermanager-parameters-jsonc-example |
+| Use cluster.jsonc template for Nexus clusters | https://learn.microsoft.com/en-us/azure/operator-nexus/cluster-jsonc-example |
+| Configure cluster.parameters.jsonc for Nexus clusters | https://learn.microsoft.com/en-us/azure/operator-nexus/cluster-parameters-jsonc-example |
+| Use clusterManager.jsonc template for Nexus ARM | https://learn.microsoft.com/en-us/azure/operator-nexus/clustermanager-jsonc-example |
+| Define clusterManager.parameters.jsonc for Nexus ARM | https://learn.microsoft.com/en-us/azure/operator-nexus/clustermanager-parameters-jsonc-example |
 | Apply A/B staged configuration updates in Nexus Fabric | https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-ab-staged-commit-configuration-update-commit-workflow |
 | Define and apply access control lists in Nexus Network Fabric | https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-access-control-lists |
 | Use commit workflow v2 for Nexus Network Fabric changes | https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-commit-workflow-v2 |

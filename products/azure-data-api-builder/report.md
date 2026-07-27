@@ -49,8 +49,8 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 133
+- **Updated Pages**: 0
+- **Unchanged**: 135
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-api-builder/azure-data-api-builder.csv`
 
@@ -69,13 +69,6 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 | *(Unclassified)* | 43 | 31.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [Overview](https://learn.microsoft.com/en-us/azure/data-api-builder/deployment/)
-  - Updated: 2026-05-15T17:03:00Z → 2026-07-13T23:05:00Z
-- [App Service (code)](https://learn.microsoft.com/en-us/azure/data-api-builder/deployment/azure-app-service)
-  - Updated: 2026-06-19T08:00:00.000Z → 2026-07-17T05:02:00.000Z
 
 ## Classified Pages
 

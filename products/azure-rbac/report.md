@@ -46,8 +46,8 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Security (use
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 103
+- **Updated Pages**: 0
+- **Unchanged**: 104
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-rbac/azure-rbac.csv`
 
@@ -65,11 +65,6 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Security (use
 | *(Unclassified)* | 9 | 8.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [Migration](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/migration)
-  - Updated: 2026-07-01T08:00:00.000Z → 2026-07-14T22:16:00.000Z
 
 ## Classified Pages
 

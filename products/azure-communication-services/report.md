@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-19'
+generated_at: '2026-07-26'
 category_descriptions:
   configuration: Configuring monitoring, logging, metrics, and insights for ACS (chat,
     voice/video, calls, SMS, email), plus setup for Teams interop, direct routing,
@@ -7,9 +7,9 @@ category_descriptions:
   security: 'Security, auth, and compliance for ACS: encryption, identities, HMAC,
     caller ID, email/SMTP, Teams interop, captions/transcription, emergency calling,
     and secure webhooks/Rooms.'
-  decision-making: 'Guidance on ACS/Teams design decisions: PSTN options and pricing,
-    phone numbers, Teams interop and licensing, gov cloud usage, and migrating from
-    Twilio Video/Chat to ACS.'
+  decision-making: 'Guidance for planning ACS solutions: Teams interop in gov clouds,
+    PSTN/phone number options, pricing/licensing, and migration from Twilio Video/Chat
+    to ACS Calling/Chat.'
   limits-quotas: Limits, quotas, regional availability, and restrictions for ACS calling,
     phone numbers, email, Teams interop, media features, and troubleshooting token/metric-related
     issues.
@@ -31,13 +31,14 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Communication Services development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when building ACS calling, chat, SMS, email, Teams interop, or PSTN/phone number
-  solutions, and other Azure Communication Services related development tasks. Not
-  for Azure Notification Hubs (use azure-notification-hubs), Azure SignalR Service
-  (use azure-signalr-service), Azure Web PubSub (use azure-web-pubsub), Azure AI Bot
-  Service (use azure-bot-service).
-use_when: Use when building ACS calling, chat, SMS, email, Teams interop, or PSTN/phone
-  number solutions, and other Azure Communication Services related development tasks.
+  Use when building ACS calling/chat, SMS/email, Teams interop, Rooms/Job Router,
+  or telephony/PSTN solutions, and other Azure Communication Services related development
+  tasks. Not for Azure Notification Hubs (use azure-notification-hubs), Azure SignalR
+  Service (use azure-signalr-service), Azure Web PubSub (use azure-web-pubsub), Azure
+  AI Bot Service (use azure-bot-service).
+use_when: Use when building ACS calling/chat, SMS/email, Teams interop, Rooms/Job
+  Router, or telephony/PSTN solutions, and other Azure Communication Services related
+  development tasks.
 confusable_not_for: Not for Azure Notification Hubs (use azure-notification-hubs),
   Azure SignalR Service (use azure-signalr-service), Azure Web PubSub (use azure-web-pubsub),
   Azure AI Bot Service (use azure-bot-service).
@@ -49,14 +50,14 @@ confusable_not_for: Not for Azure Notification Hubs (use azure-notification-hubs
 - **Total Pages**: 518
 - **Fetched**: 518
 - **Fetch Failed**: 0
-- **Classified**: 413
-- **Unclassified**: 105
+- **Classified**: 414
+- **Unclassified**: 104
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 3
-- **Unchanged**: 514
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 517
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-communication-services/azure-communication-services.csv`
 
 ## Classification Statistics
@@ -66,32 +67,20 @@ confusable_not_for: Not for Azure Notification Hubs (use azure-notification-hubs
 | architecture-patterns | 2 | 0.4% |
 | best-practices | 22 | 4.2% |
 | configuration | 74 | 14.3% |
-| decision-making | 12 | 2.3% |
+| decision-making | 13 | 2.5% |
 | deployment | 2 | 0.4% |
 | integrations | 144 | 27.8% |
 | limits-quotas | 64 | 12.4% |
 | security | 22 | 4.2% |
 | troubleshooting | 71 | 13.7% |
-| *(Unclassified)* | 105 | 20.3% |
+| *(Unclassified)* | 104 | 20.1% |
 
 ## Changes
 
-### New Pages
-
-- [REST API for Teams Phone extensibility](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/tpe/teams-phone-extensibility-rest-api)
-
 ### Updated Pages
 
-- [View email events](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/email/handle-email-events)
-  - Updated: 2025-04-17T05:15:00.000Z → 2026-07-14T22:16:00.000Z
-- [Provisioning and authorization](https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/tpe/teams-phone-extensibility-provisioning)
-  - Updated: 2025-09-03T17:13:00.000Z → 2026-07-17T17:52:00.000Z
-- [Access Teams Phone without going through the Teams client](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/tpe/teams-phone-extensibility-access-teams-phone)
-  - Updated: 2025-09-03T17:13:00.000Z → 2026-07-16T22:11:00.000Z
-
-### Deleted Pages
-
-- ~~REST API for Teams Phone extensibility~~ (https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/tpe/teams-phone-extensiblity-rest-api)
+- [Teams Phone capabilities](https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/tpe/teams-phone-extensibility-capabilities)
+  - Updated: 2025-09-03T17:13:00.000Z → 2026-07-23T22:13:00.000Z
 
 ## Classified Pages
 
@@ -330,6 +319,7 @@ confusable_not_for: Not for Azure Notification Hubs (use azure-notification-hubs
 | [Sign an HTTP Request using HMAC](https://learn.microsoft.com/en-us/azure/communication-services/tutorials/hmac-header-tutorial) | security | 0.70 | Tutorial on HMAC signing for ACS HTTP requests; likely includes precise header formats, canonicalization steps, and algorithm parameters that are product-specific security configuration details. |
 | [Subscribe to Job Router events](https://learn.microsoft.com/en-us/azure/communication-services/how-tos/router-sdk/subscribe-events) | integrations | 0.70 | Describes setting up Event Grid subscriptions for Job Router; includes event types, schema, and subscription parameters specific to this integration. |
 | [Subscribe to events](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/events/subscribe-to-events) | integrations | 0.70 | Shows how to configure event subscriptions using portal/CLI/PowerShell/SDK; includes ACS-specific event types and configuration parameters. |
+| [Teams Phone capabilities](https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/tpe/teams-phone-extensibility-capabilities) | decision-making | 0.70 | The page enumerates which specific Microsoft Teams Phone capabilities are or aren't supported by Azure Communication Services Calling and Call Automation SDKs for Teams Phone extensibility. This is product-specific, detailed capability mapping that an LLM is unlikely to infer from general training data and is used to decide whether ACS is suitable for a given Teams Phone scenario. It functions as decision guidance (what you can/can’t do, by capability) rather than generic conceptual content. |
 | [Trial phone numbers](https://learn.microsoft.com/en-us/azure/communication-services/concepts/telephony/trial-phone-numbers-faq) | limits-quotas | 0.70 | FAQ for trial numbers likely includes specific constraints (usage limits, duration, capabilities) that are numeric and product-specific. |
 | [Troubleshooting in Azure Communication Services](https://learn.microsoft.com/en-us/azure/communication-services/concepts/troubleshooting-info) | troubleshooting | 0.70 | Guides how to gather data like SMS delivery reports via Event Grid and other diagnostics; includes product-specific mechanisms and event configurations for troubleshooting. |
 | [Understand sender reputation](https://learn.microsoft.com/en-us/azure/communication-services/concepts/email/sender-reputation-managed-suppression-list) | best-practices | 0.70 | Described as a comprehensive guide with concrete practices for managing complaints and using Azure email logs; these are product-specific delivery and reputation practices beyond generic email theory. |
@@ -536,7 +526,6 @@ confusable_not_for: Not for Azure Notification Hubs (use azure-notification-hubs
 | [Meeting capabilities](https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/teams-user/meeting-capabilities) | 0.40 | Lists Teams meeting capabilities for Teams users; appears as a capability overview rather than detailed configuration, limits, or troubleshooting content. |
 | [Overview](https://learn.microsoft.com/en-us/azure/communication-services/concepts/identity-model) | 0.40 | Identity model concept page; explains key concepts, but summary does not indicate specific RBAC roles, token lifetimes, or config parameters. |
 | [Phone capabilities](https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/teams-user/phone-capabilities) | 0.40 | Overview of phone capabilities for Teams users in ACS Calling SDK; primarily feature descriptions without clear evidence of numeric limits, config tables, or troubleshooting mappings. |
-| [Teams Phone capabilities](https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/tpe/teams-phone-extensibility-capabilities) | 0.40 | Conceptual description of which Teams Phone capabilities are supported in ACS Calling and Call Automation SDKs; primarily a capability matrix, not limits, configuration, or troubleshooting guidance. |
 | [Teams users in Azure Communication Services calls](https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/guest/calling-capabilities) | 0.40 | Describes interop capabilities and scenarios for Teams users joining ACS calls; appears as a conceptual capability overview without detailed limits, configuration, or troubleshooting content. |
 | [Try Number Lookup](https://learn.microsoft.com/en-us/azure/communication-services/concepts/telephony/try-number-lookup) | 0.40 | Portal tool overview for testing Number Lookup; mostly conceptual/procedural without deep configuration tables or limits. |
 | [Understanding Simulcast](https://learn.microsoft.com/en-us/azure/communication-services/concepts/voice-video-calling/simulcast) | 0.40 | Simulcast article is primarily conceptual (what simulcast is and why it helps); summary does not indicate concrete thresholds, configuration tables, or numeric decision criteria. |

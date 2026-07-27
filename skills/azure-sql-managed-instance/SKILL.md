@@ -1,9 +1,9 @@
 ---
 name: azure-sql-managed-instance
-description: Expert knowledge for Azure SQL Managed Instance development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when planning MI vs SQL options, configuring networking, Entra/TDE security, geo-replication, or app connectivity, and other Azure SQL Managed Instance related development tasks. Not for Azure SQL Database (use azure-sql-database), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Database for MySQL (use azure-database-mysql), Azure Database for PostgreSQL (use azure-database-postgresql).
+description: Expert knowledge for Azure SQL Managed Instance development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when planning MI vs SQL options, configuring networking/auth, tuning performance, setting HA/DR, or automating deployments, and other Azure SQL Managed Instance related development tasks. Not for Azure SQL Database (use azure-sql-database), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Database for MySQL (use azure-database-mysql), Azure Database for PostgreSQL (use azure-database-postgresql).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-19"
+  generated_at: "2026-07-26"
   generator: "docs2skills/1.0.0"
 ---
 # Azure SQL Managed Instance Skill
@@ -28,11 +28,11 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L57-L79 | Performance, HA/DR, and security best practices for Azure SQL Managed Instance, including monitoring, tuning queries, maintenance, alerts, geo-replication, failover, and migration guidance. |
 | Decision Making | L80-L94 | Guidance for choosing Azure SQL Managed Instance vs other Azure SQL options, selecting tiers and subnet sizes, and planning migrations from SQL Server, Oracle, and Db2. |
 | Architecture & Design Patterns | L95-L99 | Connectivity architecture, networking models, and connection options for Azure SQL Database, including gateways, endpoints, firewalls, and integration with VNets and private access. |
-| Limits & Quotas | L100-L109 | Limits, quotas, and performance constraints for SQL Managed Instance: DTU benchmarks, free-tier caps, memory/OLTP limits, maintenance windows, operation times, and resource ceilings. |
-| Security | L110-L164 | Configuring Azure SQL Managed Instance security: Entra auth, identities, TDE & Key Vault, TLS, auditing, threat protection, private endpoints, Windows/Kerberos auth, and secure configuration. |
-| Configuration | L165-L211 | Configuring SQL Managed Instance monitoring, backups, maintenance, networking/connectivity, auditing, and behavioral settings (time zone, tempdb, T-SQL differences, update policy, failover). |
-| Integrations & Coding Patterns | L212-L234 | Client app connectivity, drivers, and code samples for multiple languages, plus automation, networking, DTC, XEvents, backups, and Managed Instance link/Agent usage on SQL Managed Instance. |
-| Deployment | L235-L254 | Deploying and managing Azure SQL Managed Instance: provisioning via Bicep/ARM/Terraform, scaling, start/stop, regional moves, networking, DR/replication, and BACPAC import/export. |
+| Limits & Quotas | L100-L110 | Limits, quotas, and behaviors for Azure SQL Managed Instance: DTU benchmarks, free tier caps, memory/OLTP limits, maintenance windows, operation durations, and per-resource max capacities. |
+| Security | L111-L165 | Configuring Azure SQL Managed Instance security: Entra auth, identities, TDE & Key Vault, TLS, auditing, threat protection, private endpoints, Windows/Kerberos auth, and secure configuration. |
+| Configuration | L166-L212 | Configuring SQL Managed Instance monitoring, backups, maintenance, networking/connectivity, auditing, and behavioral settings (time zone, tempdb, T-SQL differences, update policy, failover). |
+| Integrations & Coding Patterns | L213-L235 | Client app connectivity, drivers, and code samples for multiple languages, plus automation, networking, DTC, XEvents, backups, and Managed Instance link/Agent usage on SQL Managed Instance. |
+| Deployment | L236-L255 | Deploying and managing Azure SQL Managed Instance: provisioning via Bicep/ARM/Terraform, scaling, start/stop, regional moves, networking, DR/replication, and BACPAC import/export. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -102,6 +102,7 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Understand DTU benchmark characteristics for Azure SQL Database | https://learn.microsoft.com/en-us/azure/azure-sql/database/dtu-benchmark?view=azuresql |
 | Understand free-tier limits for Azure SQL Managed Instance | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/free-offer?view=azuresql |
+| Azure SQL Managed Instance FAQs on limits and behavior | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/frequently-asked-questions-faq?view=azuresql |
 | Adopt In-memory OLTP and understand memory limits in SQL MI | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/in-memory-oltp-configure?view=azuresql |
 | Understand Azure SQL Managed Instance maintenance windows | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/maintenance-window-faq?view=azuresql |
 | Understand Azure SQL Managed Instance operation durations | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/management-operations-duration?view=azuresql |

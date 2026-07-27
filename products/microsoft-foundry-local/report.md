@@ -35,8 +35,8 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 5
-- **Unchanged**: 18
+- **Updated Pages**: 0
+- **Unchanged**: 23
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/microsoft-foundry-local/microsoft-foundry-local.csv`
 
@@ -50,19 +50,6 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 | *(Unclassified)* | 8 | 34.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [Build a multi-turn chat assistant](https://learn.microsoft.com/en-us/azure/foundry-local/tutorials/tutorial-build-chat-assistant)
-  - Updated: 2026-06-15T08:00:00.000Z → 2026-06-27T08:00:00.000Z
-- [Build an AI assistant with tool calling](https://learn.microsoft.com/en-us/azure/foundry-local/tutorials/tutorial-build-tool-calling-assistant)
-  - Updated: 2026-06-15T08:00:00.000Z → 2026-06-18T08:00:00.000Z
-- [Build a document summarizer](https://learn.microsoft.com/en-us/azure/foundry-local/tutorials/tutorial-build-document-summarizer)
-  - Updated: 2026-06-15T08:00:00.000Z → 2026-07-01T08:00:00.000Z
-- [Guidance for migrating from the legacy SDK](https://learn.microsoft.com/en-us/azure/foundry-local/reference/reference-sdk-migration)
-  - Updated: 2026-06-15T08:00:00.000Z → 2026-06-21T08:00:00.000Z
-- [CLI (preview) best practice and troubleshooting](https://learn.microsoft.com/en-us/azure/foundry-local/reference/reference-best-practice)
-  - Updated: 2026-06-15T08:00:00.000Z → 2026-06-27T08:00:00.000Z
 
 ## Classified Pages
 

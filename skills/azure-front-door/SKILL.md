@@ -3,7 +3,7 @@ name: azure-front-door
 description: Expert knowledge for Azure Front Door development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring apex domains, rules engine, caching/CDN, Private Link origins, or TLS/cert management in Front Door, and other Azure Front Door related development tasks. Not for Azure Application Gateway (use azure-application-gateway), Azure Traffic Manager (use azure-traffic-manager), Azure Load Balancer (use azure-load-balancer), Azure Web Application Firewall (use azure-web-application-firewall).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-19"
+  generated_at: "2026-07-26"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Front Door Skill
@@ -27,12 +27,12 @@ This skill requires **network access** to fetch documentation content:
 | Troubleshooting | L37-L41 | Diagnosing and fixing Azure Front Door 4xx/5xx errors, CORS and compression issues, config/runtime problems, and performance bottlenecks using logs, reference strings, and best practices. |
 | Best Practices | L42-L49 | Best practices for configuring Front Door, tuning caching, building rules engine patterns, and optimizing video-on-demand/live streaming performance and reliability. |
 | Decision Making | L50-L61 | Guidance on Front Door pricing, cost estimation/optimization, and deciding or migrating between Classic, Standard, and Premium tiers (including upgrades and CDN comparisons). |
-| Architecture & Design Patterns | L62-L70 | Architectural patterns for Azure Front Door: apex domain setup, blue/green deployments, manual failover with Traffic Manager, static blob hosting, reliable uploads, and well-architected design guidance. |
-| Limits & Quotas | L71-L79 | POP codes and locations, regional POP lists, Front Door feature limits/quotas, routing composite limits, and subscription-level bandwidth throttling behavior. |
-| Security | L80-L97 | TLS, cipher suites, HTTPS certs, security headers, managed identity auth, origin protection (incl. Private Link), and log scrubbing/sensitive data protection for Azure Front Door |
-| Configuration | L98-L119 | Configuring Azure Front Door behavior: caching, rules/rewrite, headers/protocols, compression, Private Link backends, WebSockets, monitoring, and cache purge via portal/CLI/PowerShell. |
-| Integrations & Coding Patterns | L120-L126 | Using Azure CLI and JavaScript to create/configure Front Door profiles, define routing and delivery rules, and implement custom edge logic with JavaScript actions. |
-| Deployment | L127-L137 | Automating Front Door deployment and migration using Bicep/ARM/Terraform, updating DevOps pipelines, and upgrading or migrating between Classic, Standard, and Premium tiers. |
+| Architecture & Design Patterns | L62-L69 | Architectural patterns for Azure Front Door: apex domain setup, blue/green deployments, manual failover with Traffic Manager, static blob hosting, reliable uploads, and well-architected design guidance. |
+| Limits & Quotas | L70-L78 | POP codes and locations, regional POP lists, Front Door feature limits/quotas, routing composite limits, and subscription-level bandwidth throttling behavior. |
+| Security | L79-L96 | TLS, cipher suites, HTTPS certs, security headers, managed identity auth, origin protection (incl. Private Link), and log scrubbing/sensitive data protection for Azure Front Door |
+| Configuration | L97-L118 | Configuring Azure Front Door behavior: caching, rules/rewrite, headers/protocols, compression, Private Link backends, WebSockets, monitoring, and cache purge via portal/CLI/PowerShell. |
+| Integrations & Coding Patterns | L119-L124 | Using Azure CLI and JavaScript to create/configure Front Door profiles, define routing and delivery rules, and implement custom edge logic with JavaScript actions. |
+| Deployment | L125-L133 | Automating Front Door deployment and migration using Bicep/ARM/Terraform, updating DevOps pipelines, and upgrading or migrating between Classic, Standard, and Premium tiers. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -63,7 +63,6 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Design and configure apex domains with Azure Front Door | https://learn.microsoft.com/en-us/azure/frontdoor/apex-domain |
-| Implement blue/green deployments using Front Door | https://learn.microsoft.com/en-us/azure/frontdoor/blue-green-deployment |
 | Implement manual failover for Front Door with Traffic Manager | https://learn.microsoft.com/en-us/azure/frontdoor/high-availability |
 | Architect Azure Front Door with Storage blobs for static content | https://learn.microsoft.com/en-us/azure/frontdoor/scenario-storage-blobs |
 | Design reliable blob upload via Azure Front Door | https://learn.microsoft.com/en-us/azure/frontdoor/scenario-upload-storage-blobs |
@@ -121,16 +120,13 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Create Azure Front Door profiles using Azure CLI | https://learn.microsoft.com/en-us/azure/frontdoor/create-front-door-cli |
-| Implement custom JavaScript edge actions in Azure Front Door | https://learn.microsoft.com/en-us/azure/frontdoor/edge-actions |
 | Create Azure Front Door and delivery rules with CLI | https://learn.microsoft.com/en-us/azure/frontdoor/standard-premium/front-door-add-rules-cli |
 
 ### Deployment
 | Topic | URL |
 |-------|-----|
 | Deploy Azure Front Door using Bicep templates | https://learn.microsoft.com/en-us/azure/frontdoor/create-front-door-bicep |
-| Deploy Azure Front Door using ARM templates | https://learn.microsoft.com/en-us/azure/frontdoor/create-front-door-template |
 | Provision Azure Front Door with Terraform configuration | https://learn.microsoft.com/en-us/azure/frontdoor/create-front-door-terraform |
-| Deploy Azure Front Door using ARM/Bicep template samples | https://learn.microsoft.com/en-us/azure/frontdoor/front-door-quickstart-template-samples |
 | Migrate Front Door classic using PowerShell | https://learn.microsoft.com/en-us/azure/frontdoor/migrate-tier-powershell |
 | Update DevOps pipelines after Front Door migration | https://learn.microsoft.com/en-us/azure/frontdoor/post-migration-dev-ops-experience |
 | Provision Azure Front Door with Terraform configuration samples | https://learn.microsoft.com/en-us/azure/frontdoor/terraform-samples |

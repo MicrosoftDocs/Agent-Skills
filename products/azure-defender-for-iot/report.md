@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-12'
+generated_at: '2026-07-26'
 category_descriptions:
   security: 'Security alerts, recommendations, auth, and access control for Defender
     for IoT: configuring alerts/micro agents, SSL/TLS and CA certs, RBAC/roles, SSO,
@@ -7,9 +7,9 @@ category_descriptions:
   limits-quotas: Data residency, retention limits, networking/port requirements, supported
     OT sensor/virtual appliance versions, and hardware/software specs for Defender
     for IoT deployments.
-  configuration: 'Configuring and managing Defender for IoT micro agents and OT sensors:
-    installation, dependencies, monitoring modes, connectivity, alert forwarding,
-    maintenance, and Azure/Defender for Endpoint integration.'
+  configuration: Configuring Defender for IoT micro agents and OT sensors, including
+    installation, OS dependencies, monitoring methods, connectivity, alert forwarding,
+    maintenance, and Azure/Defender for Endpoint integration.
   decision-making: Guidance on planning and choosing OT mirroring methods, appliances,
     licensing/billing, tracking versions, and transitioning from on‑prem to cloud
     or retired Defender for IoT components.
@@ -31,16 +31,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Defender For Iot development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when configuring OT sensors/micro agents, traffic mirroring, Sentinel/SIEM integration,
-  RBAC, or SSL/TLS certs, and other Azure Defender For Iot related development tasks.
-  Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure Security
-  (use azure-security), Azure Sentinel (use azure-sentinel), Azure IoT Hub (use azure-iot-hub).
-use_when: Use when configuring OT sensors/micro agents, traffic mirroring, Sentinel/SIEM
-  integration, RBAC, or SSL/TLS certs, and other Azure Defender For Iot related development
-  tasks.
+  Use when configuring OT sensors/micro agents, traffic mirroring, IoT Hub integration,
+  Sentinel/SIEM pipelines, or OT network layouts, and other Azure Defender For Iot
+  related development tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud),
+  Azure IoT (use azure-iot), Azure IoT Hub (use azure-iot-hub), Azure IoT Operations
+  (use azure-iot-operations).
+use_when: Use when configuring OT sensors/micro agents, traffic mirroring, IoT Hub
+  integration, Sentinel/SIEM pipelines, or OT network layouts, and other Azure Defender
+  For Iot related development tasks.
 confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-cloud),
-  Azure Security (use azure-security), Azure Sentinel (use azure-sentinel), Azure
-  IoT Hub (use azure-iot-hub).
+  Azure IoT (use azure-iot), Azure IoT Hub (use azure-iot-hub), Azure IoT Operations
+  (use azure-iot-operations).
 ---
 # Azure Defender For Iot Crawl Report
 
@@ -54,8 +55,8 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 180
+- **Updated Pages**: 1
+- **Unchanged**: 179
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-defender-for-iot/azure-defender-for-iot.csv`
 
@@ -76,6 +77,11 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 
 ## Changes
 
+### Updated Pages
+
+- [Configure reverse DNS lookup](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/configure-reverse-dns-lookup)
+  - Updated: 2026-06-23T22:34:00.000Z → 2026-07-23T22:34:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
@@ -93,7 +99,6 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | [OT sensor console](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/manage-users-sensor) | security | 0.84 | Creating and managing on-premises users on OT sensors implies product-specific user roles, permissions, and access control behaviors on the sensor console, which are security configuration details. |
 | [Configure SNMP monitoring](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-set-up-snmp-mib-monitoring) | configuration | 0.83 | SNMP MIB monitoring setup includes SNMP polling rates (50 times a second), ports (UDP 161), and specific MIB definitions, which are concrete configuration parameters and limits. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/manage-users-portal) | security | 0.82 | Managing Azure users for Defender for IoT necessarily involves specific RBAC roles, scopes, and permission mappings unique to this service, which matches the security sub-skill criteria. |
-| [Configure reverse DNS lookup](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/configure-reverse-dns-lookup) | configuration | 0.82 | Reverse DNS setup for active monitoring includes DNS server configuration, CIDR handling, and sensor-side options for lookups, which are concrete configuration parameters unique to this product. |
 | [Configure Windows Endpoint Monitoring](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/configure-windows-endpoint-monitoring) | configuration | 0.80 | Configuring WEM for active probing of Windows systems requires product-specific settings (probes, schedules, ports, targeting rules) on Defender for IoT, which are configuration details. |
 | [Configure active or passive aggregation (TAP)](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/best-practices/traffic-mirroring-methods) | decision-making | 0.80 | Explicitly about choosing traffic mirroring methods based on network needs; provides scenario-based guidance on which method to use, fitting decision-making. |
 | [Create SSL/TLS certificates](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/ot-deploy/create-ssl-certificates) | security | 0.80 | Step-by-step creation of certificates with required file types and likely subject/usage parameters; product-specific certificate configuration for secure communication. |
@@ -179,6 +184,7 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | [Set up automatic sensor disconnection notifications](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/automate-sensor-disconnection-alerts) | integrations | 0.70 | Shows how to build a Sentinel playbook for sensor disconnection; involves product-specific trigger and action configuration parameters. |
 | [Subscription billing](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/billing) | decision-making | 0.70 | Billing guidance for OT monitoring with site-based licenses usually includes specific site-size tiers, license applicability per site, and how different plans affect cost. This is expert, product-specific decision guidance for choosing licensing and estimating costs, not just conceptual pricing marketing. |
 | [Validate after installation](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/ot-deploy/post-install-validation-ot-software) | troubleshooting | 0.70 | Covers post-installation validation and system health checks via UI/CLI; likely maps symptoms (failed processes) to checks and corrective steps, fitting troubleshooting. |
+| [Configure reverse DNS lookup](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/configure-reverse-dns-lookup) | configuration | 0.68 | Procedural article for configuring reverse DNS lookup with multiple DNS servers for OT active monitoring in Microsoft Defender for IoT; likely includes product-specific configuration fields, supported CIDR formats, and settings unique to this service, which fits the configuration sub-skill. |
 | [Connect Defender for IoT cloud data to Microsoft Sentinel](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/iot-solution) | integrations | 0.68 | Integration tutorial with Sentinel data connector; likely includes connector configuration fields, required parameters, and event mapping specific to this integration. |
 | [Investigate CIS benchmark recommendation](https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/how-to-investigate-cis-benchmark) | troubleshooting | 0.68 | Walks through investigation of CIS benchmark findings using Defender for IoT portal and Log Analytics queries; likely includes specific Kusto query patterns, table names, and field mappings that are product-specific troubleshooting knowledge. |
 | [Transition to the cloud](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/ot-deploy/transition-on-premises-management-console-to-cloud) | decision-making | 0.68 | Migration/retirement guidance for legacy on-prem console; likely includes architecture comparisons, retirement timelines, and scenario-based recommendations for adopting the new cloud-based architecture. |

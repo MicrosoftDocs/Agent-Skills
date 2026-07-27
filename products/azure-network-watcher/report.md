@@ -45,8 +45,8 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Networking 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 64
+- **Updated Pages**: 0
+- **Unchanged**: 65
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-network-watcher/azure-network-watcher.csv`
 
@@ -63,11 +63,6 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Networking 
 | *(Unclassified)* | 37 | 56.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [FAQ](https://learn.microsoft.com/en-us/azure/network-watcher/frequently-asked-questions)
-  - Updated: 2026-01-27T23:11:00.000Z → 2026-07-15T11:40:00.000Z
 
 ## Classified Pages
 

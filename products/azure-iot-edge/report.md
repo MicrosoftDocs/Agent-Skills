@@ -53,8 +53,8 @@ confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT (use az
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 27
-- **Unchanged**: 71
+- **Updated Pages**: 0
+- **Unchanged**: 98
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-iot-edge/azure-iot-edge.csv`
 
@@ -74,50 +74,6 @@ confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT (use az
 | *(Unclassified)* | 29 | 29.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [Access TPM secrets](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-access-dtpm)
-  - Updated: 2026-04-01T08:00:00.000Z → 2026-07-16T08:00:00.000Z
-- [Develop and debugging](https://learn.microsoft.com/en-us/azure/iot-edge/tutorial-develop-for-linux-on-windows)
-  - Updated: 2025-01-23T23:10:00.000Z → 2026-07-16T08:00:00.000Z
-- [Create a hierarchy of IoT Edge devices](https://learn.microsoft.com/en-us/azure/iot-edge/tutorial-nested-iot-edge-for-linux-on-windows)
-  - Updated: 2026-03-09T08:00:00.000Z → 2026-07-16T08:00:00.000Z
-- [Deploy IoT Edge VM using a Bicep file](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-install-iot-edge-ubuntuvm-bicep)
-  - Updated: 2025-07-22T05:10:00.000Z → 2025-09-23T17:23:00.000Z
-- [Give modules access to a device's local storage](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-access-host-storage-from-module)
-  - Updated: 2026-02-20T18:12:00.000Z → 2026-07-16T22:11:00.000Z
-- [Debug modules with VS Code](https://learn.microsoft.com/en-us/azure/iot-edge/debug-module-vs-code)
-  - Updated: 2025-05-08T08:00:00.000Z → 2026-07-16T08:00:00.000Z
-- [Azure CLI](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-deploy-modules-cli)
-  - Updated: 2026-04-01T08:00:00.000Z → 2026-07-16T08:00:00.000Z
-- [Azure portal](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-deploy-at-scale)
-  - Updated: 2025-05-30T22:09:00.000Z → 2026-07-16T08:00:00.000Z
-- [Azure CLI](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-deploy-cli-at-scale)
-  - Updated: 2026-04-01T08:00:00.000Z → 2026-07-16T08:00:00.000Z
-- [Add custom metrics](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-add-custom-metrics)
-  - Updated: 2025-08-08T08:00:00.000Z → 2025-08-21T05:12:00.000Z
-- [Configure gateways for IoT Edge devices](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-connect-downstream-iot-edge-device)
-  - Updated: 2026-02-27T08:00:00.000Z → 2026-07-16T08:00:00.000Z
-- [Diagnose IoT Edge devices](https://learn.microsoft.com/en-us/azure/iot-edge/troubleshoot)
-  - Updated: 2026-04-01T08:00:00.000Z → 2026-07-16T08:00:00.000Z
-- [Troubleshoot in the Azure portal](https://learn.microsoft.com/en-us/azure/iot-edge/troubleshoot-in-portal)
-  - Updated: 2025-05-09T22:02:00.000Z → 2025-09-23T17:23:00.000Z
-- [Resolve common errors](https://learn.microsoft.com/en-us/azure/iot-edge/troubleshoot-common-errors)
-  - Updated: 2026-06-17T22:15:00.000Z → 2026-07-16T08:00:00.000Z
-- [Version history and release notes](https://learn.microsoft.com/en-us/azure/iot-edge/version-history)
-  - Updated: 2026-05-07T06:30:00.000Z → 2026-07-17T08:00:00.000Z
-- [Supported platforms](https://learn.microsoft.com/en-us/azure/iot-edge/support)
-  - Updated: 2026-03-02T23:28:00.000Z → 2026-07-16T08:00:00.000Z
-- [Develop modules using VS Code](https://learn.microsoft.com/en-us/azure/iot-edge/tutorial-develop-for-linux)
-  - Updated: 2026-02-26T08:00:00.000Z → 2026-07-16T08:00:00.000Z
-- [Develop modules with Visual Studio](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-visual-studio-develop-module)
-  - Updated: 2026-04-06T08:00:00.000Z → 2026-07-16T08:00:00.000Z
-- [Deploy a Stream Analytics module](https://learn.microsoft.com/en-us/azure/iot-edge/tutorial-deploy-stream-analytics)
-  - Updated: 2026-03-05T08:00:00.000Z → 2026-07-16T08:00:00.000Z
-- [Classify images with Custom Vision](https://learn.microsoft.com/en-us/azure/iot-edge/tutorial-deploy-custom-vision)
-  - Updated: 2026-03-05T08:00:00.000Z → 2026-07-16T08:00:00.000Z
-- *...and 7 more*
 
 ## Classified Pages
 

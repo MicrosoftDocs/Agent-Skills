@@ -53,8 +53,8 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 154
+- **Updated Pages**: 0
+- **Unchanged**: 156
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-desktop/azure-virtual-desktop.csv`
 
@@ -74,13 +74,6 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | *(Unclassified)* | 35 | 22.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [Host Component](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-multimedia-redirection)
-  - Updated: 2026-02-23T23:41:00.000Z → 2026-07-16T03:35:00.000Z
-- [Browser Extension](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-multimedia-redirection-extension)
-  - Updated: 2026-06-11T10:02:00.000Z → 2026-07-16T03:35:00.000Z
 
 ## Classified Pages
 

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-12'
+generated_at: '2026-07-26'
 category_descriptions:
   integrations: Patterns and setup guides for connecting Azure services to external
     data platforms (Confluent Cloud, MongoDB Atlas, Neon Postgres) using Service Connector
@@ -45,8 +45,8 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 108
+- **Updated Pages**: 1
+- **Unchanged**: 107
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-partner-solutions/azure-partner-solutions.csv`
 
@@ -63,6 +63,11 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 | *(Unclassified)* | 83 | 76.9% |
 
 ## Changes
+
+### Updated Pages
+
+- [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/qumulo/faq)
+  - Updated: 2026-05-26T17:19:00.000Z → 2026-07-20T22:11:00.000Z
 
 ## Classified Pages
 
@@ -132,7 +137,6 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 | [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/nginx/faq) | 0.30 | NGINXaaS FAQ description emphasizes capabilities, getting started, management, and support; it is likely a general FAQ without the structured numeric limits, config matrices, or error-code mappings required for the expert sub-skill types. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/palo-alto/faq) | 0.30 | Cloud NGFW by Palo Alto Networks FAQ focuses on deployment, management, and configuration at a question-and-answer level; without evidence of detailed limits, config parameter tables, or explicit error-code troubleshooting, it is treated as non-expert FAQ content. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/pure-storage/faq) | 0.30 | Azure Native Pure Storage Cloud FAQ is described as general questions about resources and developer tools; this suggests high-level guidance rather than detailed limits, configuration options, or structured troubleshooting mappings. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/qumulo/faq) | 0.30 | Azure Native Qumulo FAQ is a generic FAQ page about using the service; based on the description, it likely lacks the specific numeric limits, configuration parameter tables, or error-code-based troubleshooting required for expert-knowledge classification. |
 | [Get started](https://learn.microsoft.com/en-us/azure/partner-solutions/new-relic/create) | 0.30 | Quickstart for creating a New Relic resource in the portal; typically step-by-step UI instructions without detailed configuration matrices or expert-only parameters. |
 | [Link to an existing Datadog organization](https://learn.microsoft.com/en-us/azure/partner-solutions/datadog/link-to-existing-organization) | 0.30 | How to link an existing Datadog organization; appears to be procedural without detailed configuration options, limits, or troubleshooting mappings. |
 | [What is Apache Airflow on Astro – An Azure Native ISV Service?](https://learn.microsoft.com/en-us/azure/partner-solutions/astronomer/overview) | 0.30 | Overview of Apache Airflow on Astro; high-level description of service and marketplace offering. |
@@ -181,3 +185,4 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 | [What is Dell PowerScale?](https://learn.microsoft.com/en-us/azure/partner-solutions/dell/overview) | 0.10 | Page is an overview/marketing-style description of Dell PowerScale Azure Native Integration without detailed limits, configuration parameters, error codes, or decision matrices; no product-specific numeric limits, settings tables, or troubleshooting content are evident. |
 | [What is LambdaTest - HyperExecute?](https://learn.microsoft.com/en-us/azure/partner-solutions/lambda-test/overview) | 0.10 | LambdaTest - HyperExecute overview is marketing/feature description; no explicit expert-level configuration, limits, or troubleshooting content indicated. |
 | [What is NGINXaaS – An Azure Native ISV Service?](https://learn.microsoft.com/en-us/azure/partner-solutions/nginx/overview) | 0.10 | Overview of NGINXaaS integration; primarily descriptive and marketing-style capabilities summary without detailed configuration or limits. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/qumulo/faq) | - | FAQ page appears to answer common conceptual and usage questions about Azure Native Qumulo without clear evidence of detailed numeric limits, configuration parameter tables, error-code-based troubleshooting, or other structured expert-only data as defined by the sub-skill types. |

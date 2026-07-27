@@ -3,7 +3,7 @@ name: azure-networking
 description: Expert knowledge for Azure Networking development including troubleshooting, decision making, architecture & design patterns, limits & quotas, security, and configuration. Use when designing hub-spoke/VWAN VNets, planning IP ranges, securing with firewalls/NSGs, or using VNet Manager, and other Azure Networking related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use azure-virtual-wan), Azure Network Watcher (use azure-network-watcher).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-05"
+  generated_at: "2026-07-26"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Networking Skill

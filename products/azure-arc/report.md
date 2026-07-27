@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-19'
+generated_at: '2026-07-26'
 category_descriptions:
   security: 'Security, identity, and access control for Azure Arc: AD auth, TDE, keytabs/credential
     rotation, RBAC, network protection, Private Link, policies, and hardening for
@@ -13,9 +13,9 @@ category_descriptions:
   limits-quotas: Limits, quotas, versions, and requirements for Arc-enabled Kubernetes,
     Edge RAG, Arc data services, resource bridge, and billing/ESU behavior for connected
     machines and Windows Server.
-  configuration: 'Configuring Azure Arc infrastructure: Kubernetes, servers, data
-    services, networking, security, monitoring, GitOps, storage, and agent/extension
-    lifecycle for Arc-enabled resources.'
+  configuration: 'Configuring Azure Arc infrastructure: storage, data services, Kubernetes
+    (GitOps, TLS, extensions), servers (azcmagent, VM extensions), networking, monitoring,
+    upgrades, and onboarding workflows.'
   architecture-patterns: 'Patterns for Arc data/compute design: container storage
     data flow, Arc Edge Volumes, HA/DR for Arc SQL MI and failover groups, and advanced
     Edge RAG data parsing.'
@@ -31,16 +31,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Arc development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  managing Arc-enabled Kubernetes, servers, SQL MI/data services, resource bridge,
-  or Edge RAG workloads, and other Azure Arc related development tasks. Not for Azure
-  Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Stack Edge (use azure-stack-edge),
-  Azure Local (use azure-local), Azure VMware Solution (use azure-vmware-solution).
-use_when: Use when managing Arc-enabled Kubernetes, servers, SQL MI/data services,
-  resource bridge, or Edge RAG workloads, and other Azure Arc related development
+  managing Arc-enabled Kubernetes, data services/SQL MI, resource bridge, Edge RAG,
+  or Arc servers at scale, and other Azure Arc related development tasks. Not for
+  Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Virtual Machines
+  (use azure-virtual-machines), Azure Stack Edge (use azure-stack-edge), Azure VMware
+  Solution (use azure-vmware-solution).
+use_when: Use when managing Arc-enabled Kubernetes, data services/SQL MI, resource
+  bridge, Edge RAG, or Arc servers at scale, and other Azure Arc related development
   tasks.
 confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
-  Azure Stack Edge (use azure-stack-edge), Azure Local (use azure-local), Azure VMware
-  Solution (use azure-vmware-solution).
+  Azure Virtual Machines (use azure-virtual-machines), Azure Stack Edge (use azure-stack-edge),
+  Azure VMware Solution (use azure-vmware-solution).
 ---
 # Azure Arc Crawl Report
 
@@ -54,8 +55,8 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 381
+- **Updated Pages**: 2
+- **Unchanged**: 380
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-arc/azure-arc.csv`
 
@@ -78,8 +79,10 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 
 ### Updated Pages
 
+- [Network requirements](https://learn.microsoft.com/en-us/azure/azure-arc/resource-bridge/network-requirements)
+  - Updated: 2025-07-23T05:09:00.000Z → 2026-06-24T22:12:00.000Z
 - [GitOps (Flux) Release notes](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/flux-gitops-release-notes)
-  - Updated: 2026-07-02T08:00:00.000Z → 2026-07-13T08:00:00.000Z
+  - Updated: 2026-07-13T08:00:00.000Z → 2026-07-22T08:00:00.000Z
 
 ## Classified Pages
 
@@ -103,7 +106,6 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Built-in roles](https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/built-in-roles) | security | 0.85 | Lists Azure built-in roles specific to Arc-enabled VMware vSphere with Actions/NotActions/DataActions; contains product-specific RBAC role names and permission scopes. |
 | [Connection issues](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/diagnose-connection-issues) | troubleshooting | 0.85 | Focuses on diagnosing connection issues with guided flowcharts; likely includes specific checks, commands, and conditions unique to Arc connectivity, fitting symptom-to-solution troubleshooting. |
 | [Manage proxy settings](https://learn.microsoft.com/en-us/azure/azure-arc/servers/manage-agent-proxy-settings) | configuration | 0.85 | Describes managing proxy settings via azcmagent config and environment variables, including precedence rules and specific parameter names/values; this is product-specific configuration behavior that an LLM is unlikely to infer without documentation. |
-| [Network requirements](https://learn.microsoft.com/en-us/azure/azure-arc/resource-bridge/network-requirements) | configuration | 0.85 | Describes required URLs, ports, and protocols to allowlist; these are detailed network configuration parameters unique to the product. |
 | [Platform issues](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/troubleshooting) | troubleshooting | 0.85 | Explicitly a troubleshooting article for Arc-enabled Kubernetes connectivity, permissions, agents, and GitOps; likely organized by specific issues, causes, and resolutions with product-specific commands and behaviors. |
 | [Resize persistent volume (PVC)](https://learn.microsoft.com/en-us/azure/azure-arc/data/resize-persistent-volume-claim) | configuration | 0.85 | Explains resizing PVCs and references specific parameters like --volume-size-data/logs/datalogs/backups and StorageClass AllowVolumeExpansion; clearly a configuration-parameter focused article. |
 | [Troubleshoot](https://learn.microsoft.com/en-us/azure/azure-arc/resource-bridge/troubleshoot-resource-bridge) | troubleshooting | 0.85 | Dedicated troubleshooting article for deployment/use/removal; likely organized by symptoms and includes product-specific diagnostics and resolutions. |
@@ -154,6 +156,7 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Configure Workload Identity](https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/howto-configure-workload-identity) | security | 0.78 | How-to for configuring Workload Identity for Cloud subvolumes; likely includes specific Kubernetes/Azure identity configuration fields, annotations, and role assignments unique to Azure Container Storage enabled by Azure Arc. |
 | [Enable local identity access](https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/howto-enable-local-identity-access) | security | 0.78 | Describes a product-specific security configuration (localhost token endpoint) for Azure Container Storage enabled by Azure Arc, including how it changes required Linux capabilities (NET_ADMIN, NET_RAW) for the identity adapter sidecar. This is concrete, implementation-level security guidance unique to this product rather than generic concepts. |
 | [Network requirements](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/network-requirements) | configuration | 0.78 | The page documents product-specific network requirements for Azure Arc-enabled Kubernetes, including required outbound endpoints, ports, and protocols. These are concrete configuration details (hostnames, port numbers, and which services/features require which endpoints) that an LLM is unlikely to know from training and that are needed to correctly configure connectivity, fitting the configuration sub-skill. |
+| [Network requirements](https://learn.microsoft.com/en-us/azure/azure-arc/resource-bridge/network-requirements) | configuration | 0.78 | Page documents product-specific network requirements and URLs that must be allowlisted for Azure Arc resource bridge, including exact endpoint names and patterns. These are configuration details (what endpoints/ports must be opened) rather than conceptual networking guidance, and represent expert knowledge not inferable from general training. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-arc/servers/azcmagent) | integrations | 0.78 | CLI reference for the Azure Connected Machine agent; contains product-specific commands, parameters, and behaviors for configuring and troubleshooting Azure Arc connections, which qualify as integration/coding patterns with concrete parameter usage beyond generic knowledge. |
 | [Plan for deployment](https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/support-matrix-for-arc-enabled-vmware-vsphere) | deployment | 0.78 | A 'support matrix' page for Arc-enabled VMware vSphere will list precise, product-specific compatibility and deployment requirements (supported vCenter versions, OS versions, network ports, resource bridge requirements, etc.). These are expert, versioned details not reliably known from training and are critical for planning deployments, aligning best with deployment-focused matrices of supported platforms and prerequisites. |
 | [Resource sync](https://learn.microsoft.com/en-us/azure/azure-arc/data/resource-sync) | configuration | 0.78 | Explains resource sync behavior and configuration in direct connected mode; includes product-specific sync mechanics and possibly annotations/labels or API usage. |
@@ -407,7 +410,7 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Deploy applications using GitOps (Flux v2)](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/tutorial-use-gitops-flux2) | 0.30 | This is a tutorial on using GitOps with Flux v2 in Azure Arc/AKS. The summary indicates procedural guidance (install extension, create fluxConfigurations, sync Git) rather than detailed configuration reference, limits, or troubleshooting content. It lacks clear signs of expert-only numerical limits, parameter tables, or error-resolution mappings. |
 | [Enable VMware vCenter resources in Azure](https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/browse-and-enable-vcenter-resources-in-azure) | 0.30 | Portal-based browsing/enabling of vCenter resources; navigation and basic enablement steps, no detailed configuration parameters, limits, or troubleshooting mappings. |
 | [Features](https://learn.microsoft.com/en-us/azure/azure-arc/data/managed-instance-features) | 0.30 | Features and capabilities list; mostly conceptual/marketing without detailed config, limits, or troubleshooting mappings. |
-| [GitOps (Flux) Release notes](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/flux-gitops-release-notes) | 0.30 | Release notes summarize version history and deprecations but, from the provided summary, do not expose concrete limits, configuration tables, error codes, or other structured expert details that match any sub-skill category. Without specific numeric limits, config parameters, or troubleshooting mappings, it does not meet the expert-knowledge criteria. |
+| [GitOps (Flux) Release notes](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/flux-gitops-release-notes) | 0.30 | Release notes list version history and high-level guidance (for example, N-2 support) but do not primarily provide structured limits, configuration tables, or troubleshooting mappings as defined by the sub-skill types. Content is mostly change log information rather than reusable expert knowledge patterns. |
 | [Guide](https://learn.microsoft.com/en-us/azure/azure-arc/data/troubleshoot-guide) | 0.30 | Introductory page that just links to troubleshooting resources; no direct error-code or diagnostic detail. |
 | [Implement CI/CD with GitOps (Flux v2)](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/tutorial-gitops-flux2-ci-cd) | 0.30 | CI/CD tutorial is scenario-focused; description doesn’t suggest detailed configuration matrices or limits. |
 | [Install Arc agent at scale](https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/enable-guest-management-at-scale) | 0.30 | Appears to be a how-to/tutorial for installing Azure Arc agents on VMware VMs at scale. The summary does not indicate presence of detailed configuration parameter tables, limits, error-code-based troubleshooting, or other product-specific expert references; it mainly describes the scenario and benefits. |

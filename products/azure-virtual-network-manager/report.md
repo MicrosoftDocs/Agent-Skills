@@ -40,8 +40,8 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 50
+- **Updated Pages**: 0
+- **Unchanged**: 51
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-network-manager/azure-virtual-network-manager.csv`
 
@@ -57,11 +57,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | *(Unclassified)* | 28 | 54.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [Common issues](https://learn.microsoft.com/en-us/azure/virtual-network-manager/common-issues)
-  - Updated: 2026-05-16T05:17:00.000Z → 2026-07-16T22:11:00.000Z
 
 ## Classified Pages
 

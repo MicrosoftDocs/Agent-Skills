@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-19'
+generated_at: '2026-07-26'
 category_descriptions:
   architecture-patterns: 'Designing Service Fabric cluster architecture: cross-AZ
     replica rings, CRP/CRM internals, service affinity, movement cost, defragmentation,
@@ -50,13 +50,13 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 - **Total Pages**: 405
 - **Fetched**: 405
 - **Fetch Failed**: 0
-- **Classified**: 330
-- **Unclassified**: 75
+- **Classified**: 329
+- **Unclassified**: 76
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 403
+- **Updated Pages**: 3
+- **Unchanged**: 402
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-fabric/azure-service-fabric.csv`
 
@@ -67,22 +67,24 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | architecture-patterns | 10 | 2.5% |
 | best-practices | 31 | 7.7% |
 | configuration | 116 | 28.6% |
-| decision-making | 8 | 2.0% |
+| decision-making | 7 | 1.7% |
 | deployment | 59 | 14.6% |
 | integrations | 33 | 8.1% |
 | limits-quotas | 1 | 0.2% |
 | security | 53 | 13.1% |
 | troubleshooting | 19 | 4.7% |
-| *(Unclassified)* | 75 | 18.5% |
+| *(Unclassified)* | 76 | 18.8% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Reliable Collections Throttling Guidelines](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-reliable-services-reliable-collections-throttling-guidelines)
-  - Updated: 2026-06-29T22:04:00.000Z → 2026-07-16T06:03:00.000Z
+- [What's new for Service Fabric?](https://learn.microsoft.com/en-us/azure/service-fabric/whats-new)
+  - Updated: 2026-06-18T08:00:00.000Z → 2026-07-21T08:00:00.000Z
+- [Release notes](https://learn.microsoft.com/en-us/azure/service-fabric/release-notes)
+  - Updated: 2026-03-20T08:00:00.000Z → 2026-07-21T08:00:00.000Z
 - [Service Fabric versions](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-versions)
-  - Updated: 2026-06-25T08:00:00.000Z → 2026-07-02T08:00:00.000Z
+  - Updated: 2026-07-02T08:00:00.000Z → 2026-07-21T08:00:00.000Z
 
 ## Classified Pages
 
@@ -335,7 +337,6 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Service Fabric cluster with ARM template](https://learn.microsoft.com/en-us/azure/service-fabric/quickstart-cluster-template) | deployment | 0.70 | ARM template quickstart for Service Fabric test clusters; includes cluster resource schema and required properties that are product-specific. |
 | [Service Fabric cluster with Bicep](https://learn.microsoft.com/en-us/azure/service-fabric/quickstart-cluster-bicep) | deployment | 0.70 | Bicep-based deployment of a Service Fabric test cluster; includes resource definitions and cluster-specific deployment parameters unique to Service Fabric. |
 | [Service Fabric events](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-diagnostics-events) | configuration | 0.70 | Describes structured events, their mapping to entities, and provides a list; product-specific event schema and usage patterns qualify as expert configuration knowledge. |
-| [Service Fabric versions](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-versions) | decision-making | 0.70 | Page contains detailed tables of currently supported Service Fabric and platform runtime versions, with specific version numbers and support status. This is expert, time-sensitive knowledge used to decide which cluster/runtime versions to deploy or upgrade to, fitting decision-making around version selection and support lifecycle rather than generic concepts. |
 | [Service Remoting - C#](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-reliable-services-communication-remoting) | integrations | 0.70 | Shows how to configure Service Fabric remoting for C# services with specific APIs, listener setup, and parameters unique to Service Fabric remoting. |
 | [Service Remoting - Java](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-reliable-services-communication-remoting-java) | integrations | 0.70 | Provides Java-specific Service Fabric remoting setup with concrete API usage and configuration patterns unique to this product. |
 | [Service movement](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-resource-manager-movement-cost) | architecture-patterns | 0.70 | Explains movement cost concept and how to specify it to meet architectural needs; includes product-specific trade-offs and configuration patterns. |
@@ -442,6 +443,7 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Polymorphism](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-reliable-actors-polymorphism) | 0.40 | Discusses polymorphism in Reliable Actors largely as an OO concept with some framework constraints; summary does not show concrete configuration tables, limits, or error mappings. |
 | [Remove a node type](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-how-to-remove-node-type) | 0.40 | How-to for removing a node type; procedural scaling steps, no detailed configuration matrices, limits, or troubleshooting mappings. |
 | [Send notifications](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-reliable-services-notifications) | 0.40 | Conceptual explanation of notifications for Reliable State Manager and Reliable Dictionary; mostly behavior description without detailed config tables or error mappings. |
+| [Service Fabric versions](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-versions) | 0.40 | Page lists Service Fabric cluster/runtime versions and support status, but this is essentially a support lifecycle/version listing rather than limits, configuration, troubleshooting, or decision matrices as defined. It does not fit any specified sub-skill type. |
 | [State management](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-reliable-actors-state-management) | 0.40 | Explains state management concepts for Reliable Actors but appears conceptual; summary does not indicate concrete configuration parameters, limits, or code patterns beyond general persistence/replication behavior. |
 | [Application lifecycle overview](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-application-lifecycle) | 0.35 | Lifecycle overview (design, deploy, upgrade, maintain); summary does not indicate detailed configuration parameters, limits, or troubleshooting mappings. |
 | [Build an Apache Tomcat server container on Linux](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-get-started-tomcat) | 0.35 | Tutorial for building and deploying a Tomcat container; mostly generic containerization steps without detailed Service Fabric–specific configuration matrices or limits. |
@@ -464,6 +466,7 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Linux](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-get-started-linux) | 0.30 | Linux dev environment setup and basic CLI usage; primarily step-by-step installation, not deep configuration or limits. |
 | [Linux container application](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-get-started-containers-linux) | 0.30 | Linux container quickstart; mainly a tutorial without detailed configuration tables, limits, or troubleshooting mappings. |
 | [Reconfiguring stateful services](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-concepts-reconfiguration) | 0.30 | Explains reconfiguration process conceptually; not primarily a best-practices, limits, or troubleshooting guide with concrete parameters. |
+| [Release notes](https://learn.microsoft.com/en-us/azure/service-fabric/release-notes) | 0.30 | Release notes summarize features and changes per version but are not organized as limits, configuration references, troubleshooting guides, or other defined sub-skill types. They typically lack structured numeric limits, config tables, or decision matrices required by the categories. |
 | [Reliable Services lifecycle - C#](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-reliable-services-lifecycle) | 0.30 | Lifecycle overview for Reliable Services; mostly conceptual event ordering without detailed configuration tables or error mappings. |
 | [Reliable Services lifecycle - Java](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-reliable-services-lifecycle-java) | 0.30 | Java-specific lifecycle overview; similar conceptual content as .NET lifecycle article, not focused on configuration matrices or troubleshooting. |
 | [Reliable Services overview](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-reliable-services-introduction) | 0.30 | Overview of Reliable Services programming model; primarily conceptual and introductory, not a configuration/limits/troubleshooting reference. |
@@ -490,11 +493,10 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Monitoring partners](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-diagnostics-partners) | 0.20 | Partner monitoring overview; likely high-level integration/marketing without detailed config parameters or error mappings. |
 | [Overview of Azure clusters](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-azure-clusters-overview) | 0.20 | Content is an overview of Service Fabric clusters (what they are, high-level scaling behavior). No specific limits, configuration tables, error codes, or decision matrices are evident, so it doesn't meet any expert-knowledge criteria. |
 | [Overview of standalone clusters](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-standalone-clusters-overview) | 0.20 | Standalone clusters overview; high-level description of what clusters are and where they can run, without deep configuration or decision matrices. |
-| [Release notes](https://learn.microsoft.com/en-us/azure/service-fabric/release-notes) | 0.20 | Release notes overview/landing page; likely links out to detailed version notes but itself is primarily navigation/summary content without concrete limits, configs, or error mappings. |
 | [Reliable Actors overview](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-reliable-actors-introduction) | 0.20 | High-level introduction to Reliable Actors and the virtual actor pattern without product-specific limits, configuration tables, or error/diagnostic details. |
 | [Service Fabric managed clusters FAQ](https://learn.microsoft.com/en-us/azure/service-fabric/faq-managed-cluster) | 0.20 | FAQ content about Service Fabric managed clusters is primarily conceptual and scenario-focused; it does not center on numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices with quantified trade-offs. |
 | [Terminology](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-technical-overview) | 0.20 | Terminology and conceptual overview; definitions rather than actionable configuration, limits, or troubleshooting content. |
 | [What is Service Fabric?](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-overview) | 0.20 | General product overview of Azure Service Fabric; conceptual description of microservices platform without concrete expert-only details. |
-| [What's new for Service Fabric?](https://learn.microsoft.com/en-us/azure/service-fabric/whats-new) | 0.20 | Release notes / what's new overview; likely lists new features and changes but not organized as limits, configuration tables, troubleshooting mappings, or decision matrices. No clear indication of structured expert knowledge per the defined sub-skill types. |
+| [What's new for Service Fabric?](https://learn.microsoft.com/en-us/azure/service-fabric/whats-new) | 0.20 | What's new / release notes page summarizing recent changes; likely high-level feature announcements without structured limits, configuration tables, or troubleshooting mappings as defined by the sub-skill types. |
 | [Big picture](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-content-roadmap) | 0.10 | Content roadmap/overview; primarily navigational and conceptual, not detailed expert reference. |
 | [Understand microservices](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-overview-microservices) | 0.10 | Conceptual introduction to microservices and Service Fabric; high-level overview without detailed configuration, limits, or troubleshooting content. |

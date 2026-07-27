@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-19'
+generated_at: '2026-07-26'
 category_descriptions:
   best-practices: 'Performance, tuning, and migration best practices for Azure Database
     for PostgreSQL: query/store tuning, pooling, pgvector/AGE, maintenance, bulk load,
@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Database for MySQL (use azure-database-mysql),
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 182
-- **Unchanged**: 170
+- **Updated Pages**: 1
+- **Unchanged**: 351
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-database-postgresql/azure-database-postgresql.csv`
 
@@ -79,47 +79,8 @@ confusable_not_for: Not for Azure Database for MySQL (use azure-database-mysql),
 
 ### Updated Pages
 
-- [Configure storage autogrow](https://learn.microsoft.com/en-us/azure/postgresql/scale/how-to-auto-grow-storage)
-  - Updated: 2026-06-11T22:21:00.000Z → 2026-07-16T06:04:00.000Z
 - [High availability](https://learn.microsoft.com/en-us/azure/postgresql/high-availability/concepts-high-availability)
-  - Updated: 2026-06-09T08:00:00.000Z → 2026-07-13T08:00:00.000Z
-- [Configure high availability](https://learn.microsoft.com/en-us/azure/postgresql/high-availability/how-to-configure-high-availability)
-  - Updated: 2026-07-01T11:03:00.000Z → 2026-07-13T08:00:00.000Z
-- [Monitor high availability](https://learn.microsoft.com/en-us/azure/postgresql/high-availability/how-to-monitor-high-availability)
-  - Updated: 2025-12-22T23:02:00.000Z → 2026-07-13T17:05:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/postgresql/read-replica/concepts-read-replicas)
-  - Updated: 2026-04-06T08:00:00.000Z → 2026-07-16T17:05:00.000Z
-- [Geo-Replication](https://learn.microsoft.com/en-us/azure/postgresql/read-replica/concepts-read-replicas-geo)
-  - Updated: 2025-12-22T23:02:00.000Z → 2026-07-16T17:05:00.000Z
-- [Promote read replicas](https://learn.microsoft.com/en-us/azure/postgresql/read-replica/concepts-read-replicas-promote)
-  - Updated: 2026-06-10T08:00:00.000Z → 2026-07-16T17:05:00.000Z
-- [Virtual endpoints](https://learn.microsoft.com/en-us/azure/postgresql/read-replica/concepts-read-replicas-virtual-endpoints)
-  - Updated: 2025-12-22T23:02:00.000Z → 2026-07-16T17:05:00.000Z
-- [Create a read replica](https://learn.microsoft.com/en-us/azure/postgresql/read-replica/how-to-create-read-replica)
-  - Updated: 2026-06-22T22:09:00.000Z → 2026-07-16T17:05:00.000Z
-- [Create virtual endpoints](https://learn.microsoft.com/en-us/azure/postgresql/read-replica/how-to-create-virtual-endpoints)
-  - Updated: 2026-06-29T22:16:00.000Z → 2026-07-16T17:05:00.000Z
-- [Update virtual endpoints](https://learn.microsoft.com/en-us/azure/postgresql/read-replica/how-to-update-virtual-endpoints)
-  - Updated: 2025-12-22T23:02:00.000Z → 2026-07-16T17:05:00.000Z
-- [Show virtual endpoints](https://learn.microsoft.com/en-us/azure/postgresql/read-replica/how-to-show-virtual-endpoints)
-  - Updated: 2026-06-29T22:16:00.000Z → 2026-07-13T08:00:00.000Z
-- [Delete virtual endpoints](https://learn.microsoft.com/en-us/azure/postgresql/read-replica/how-to-delete-virtual-endpoints)
-  - Updated: 2025-12-22T23:02:00.000Z → 2026-07-16T17:05:00.000Z
-- [Switch over read replica to primary](https://learn.microsoft.com/en-us/azure/postgresql/read-replica/how-to-switch-over-replica-to-primary)
-  - Updated: 2025-12-22T23:02:00.000Z → 2026-07-16T17:05:00.000Z
-- [Promote read replica to standalone server](https://learn.microsoft.com/en-us/azure/postgresql/read-replica/how-to-promote-replica-to-standalone)
-  - Updated: 2025-12-22T23:02:00.000Z → 2026-07-16T17:05:00.000Z
-- [Delete a read replica](https://learn.microsoft.com/en-us/azure/postgresql/read-replica/how-to-delete-read-replica)
-  - Updated: 2026-06-29T22:16:00.000Z → 2026-07-16T17:05:00.000Z
-- [Connection libraries](https://learn.microsoft.com/en-us/azure/postgresql/connectivity/concepts-connection-libraries)
-  - Updated: 2025-12-22T23:02:00.000Z → 2026-07-08T08:00:00.000Z
-- [April 2026](https://learn.microsoft.com/en-us/azure/postgresql/release-notes-maintenance/2026-april)
-  - Updated: 2026-07-01T17:11:00.000Z → 2026-07-16T17:05:00.000Z
-- [January 2026](https://learn.microsoft.com/en-us/azure/postgresql/release-notes-maintenance/2026-january)
-  - Updated: 2026-03-09T22:16:00.000Z → 2026-07-16T17:05:00.000Z
-- [Connect in virtual network](https://learn.microsoft.com/en-us/azure/postgresql/connectivity/quickstart-create-connect-server-vnet)
-  - Updated: 2025-12-22T23:02:00.000Z → 2026-07-14T17:12:00.000Z
-- *...and 162 more*
+  - Updated: 2026-07-13T08:00:00.000Z → 2026-07-22T08:00:00.000Z
 
 ## Classified Pages
 
@@ -414,6 +375,7 @@ confusable_not_for: Not for Azure Database for MySQL (use azure-database-mysql),
 | [From an Azure VM or an on-premises PostgreSQL server](https://learn.microsoft.com/en-us/azure/postgresql/migrate/migration-service/tutorial-migration-service-iaas-online) | 0.30 | Online migration tutorial from on-premises/Azure VM PostgreSQL to Azure Database for PostgreSQL flexible server. The summary indicates a guided migration process, not detailed limits, configuration matrices, or error-code-based troubleshooting. Lacks evidence of product-specific expert knowledge beyond general migration steps. |
 | [Geo-disaster recovery](https://learn.microsoft.com/en-us/azure/postgresql/backup-restore/concepts-geo-disaster-recovery) | 0.30 | Geo-disaster recovery overview; summary focuses on conceptual resiliency and options without clear indication of numeric limits, matrices, or detailed configuration settings. |
 | [Go](https://learn.microsoft.com/en-us/azure/postgresql/connectivity/connect-go) | 0.30 | Go quickstart for connecting and querying; summary suggests generic sample code rather than expert-level configuration or constraints. |
+| [High availability](https://learn.microsoft.com/en-us/azure/postgresql/high-availability/concepts-high-availability) | 0.30 | The page is a conceptual explanation of high availability for Azure Database for PostgreSQL flexible server (zone-redundant vs zonal, automatic failover, SLAs) without detailed numeric limits, configuration parameter tables, or troubleshooting error mappings. It describes how HA works and its benefits but does not provide the kind of specific, product-unique configuration values, limits, or decision matrices required for the defined sub-skill types. |
 | [Introduction to the azure_ai extension](https://learn.microsoft.com/en-us/azure/postgresql/azure-ai/generative-ai-azure-overview) | 0.30 | Introduction to the azure_ai extension; primarily conceptual description of what it enables and which services it can call, without concrete limits, config tables, or decision matrices. |
 | [Java](https://learn.microsoft.com/en-us/azure/postgresql/connectivity/connect-java) | 0.30 | Java/JDBC quickstart; primarily sample app and auth methods, not structured configuration references or expert-only constraints. |
 | [Logical replication and logical decoding](https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/concepts-logical) | 0.30 | Appears to be a conceptual/feature explanation of logical replication and logical decoding on Azure Database for PostgreSQL flexible servers. The summary does not indicate presence of numeric limits, detailed configuration parameter tables, error-code-based troubleshooting, or product-specific decision matrices. Without evidence of such expert details, it does not meet any sub-skill detection criteria. |
@@ -449,7 +411,6 @@ confusable_not_for: Not for Azure Database for MySQL (use azure-database-mysql),
 | [Copy activity](https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/how-to-data-factory-copy-activity-fabric) | 0.20 | Step-by-step tutorial for creating a copy activity; description suggests general guidance on using copy, bulk insert, and upsert, but no indication of detailed configuration tables, limits, or product-specific edge cases beyond what an LLM would already know. |
 | [Create an elastic cluster](https://learn.microsoft.com/en-us/azure/postgresql/elastic-clusters/create-elastic-cluster) | 0.20 | Quickstart for creating an elastic cluster; primarily step-by-step provisioning without detailed configuration tables, limits, or product-specific patterns. |
 | [Delete a server](https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/how-to-delete-server) | 0.20 | Delete-server article is a procedural how-to; summary indicates simple steps without product-specific limits, configuration matrices, or troubleshooting mappings. |
-| [High availability](https://learn.microsoft.com/en-us/azure/postgresql/high-availability/concepts-high-availability) | 0.20 | High availability concepts and behavior description; no specific numeric limits, configuration tables, or decision matrices with quantified trade-offs. |
 | [January 2026](https://learn.microsoft.com/en-us/azure/postgresql/release-notes-maintenance/2026-january) | 0.20 | Release notes summary; excerpt does not show concrete limits, configs, or troubleshooting mappings. |
 | [July 2026](https://learn.microsoft.com/en-us/azure/postgresql/release-notes-maintenance/2026-july) | 0.20 | Release notes summary is high-level (new version, features, security patches) without exposed specific error codes, configuration values, or limits; treated as general update/marketing-style content. |
 | [June 2026](https://learn.microsoft.com/en-us/azure/postgresql/release-notes-maintenance/2026-june) | 0.20 | Release notes summary only; no evidence of specific limits, configuration parameters, error codes, or decision matrices in the provided description. Likely a high-level list of changes and fixes rather than detailed expert configuration or troubleshooting guidance. |

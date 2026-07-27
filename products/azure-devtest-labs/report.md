@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Lab Services (use azure-lab-services), Azure D
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 96
+- **Updated Pages**: 0
+- **Unchanged**: 97
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-devtest-labs/azure-devtest-labs.csv`
 
@@ -75,11 +75,6 @@ confusable_not_for: Not for Azure Lab Services (use azure-lab-services), Azure D
 | *(Unclassified)* | 33 | 34.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [Create environments from ARM templates](https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-create-environment-from-arm)
-  - Updated: 2025-12-16T23:42:00.000Z → 2026-07-15T17:11:00.000Z
 
 ## Classified Pages
 

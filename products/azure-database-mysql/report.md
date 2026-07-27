@@ -54,10 +54,10 @@ confusable_not_for: Not for Azure Database for MariaDB (use azure-database-maria
 - **Unclassified**: 56
 
 ### Incremental Update
-- **New Pages**: 26
-- **Updated Pages**: 2
-- **Unchanged**: 140
-- **Deleted Pages**: 37
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 168
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-database-mysql/azure-database-mysql.csv`
 
 ## Classification Statistics
@@ -76,61 +76,6 @@ confusable_not_for: Not for Azure Database for MariaDB (use azure-database-maria
 | *(Unclassified)* | 56 | 33.3% |
 
 ## Changes
-
-### New Pages
-
-- [2026](https://learn.microsoft.com/en-us/azure/mysql/whats-new/whats-new-2026)
-- [2025](https://learn.microsoft.com/en-us/azure/mysql/whats-new/whats-new-2025)
-- [2024](https://learn.microsoft.com/en-us/azure/mysql/whats-new/whats-new-2024)
-- [2023](https://learn.microsoft.com/en-us/azure/mysql/whats-new/whats-new-2023)
-- [2022](https://learn.microsoft.com/en-us/azure/mysql/whats-new/whats-new-2022)
-- [2021](https://learn.microsoft.com/en-us/azure/mysql/whats-new/whats-new-2021)
-- [2026](https://learn.microsoft.com/en-us/azure/mysql/release-notes/release-notes-2026)
-- [2025](https://learn.microsoft.com/en-us/azure/mysql/release-notes/release-notes-2025)
-- [2024](https://learn.microsoft.com/en-us/azure/mysql/release-notes/release-notes-2024)
-- [Create databases and users](https://learn.microsoft.com/en-us/azure/mysql/security/security-how-to-create-users)
-- [FAQ](https://learn.microsoft.com/en-us/azure/mysql/whats-new/whats-new-2026)
-- [Migrate data from MySQL on-premises to Azure Database for MySQL flexible server](https://learn.microsoft.com/en-us/azure/mysql/migrate/mysql-on-premises-azure-db/01-mysql-migration-guide-intro)
-- [Migrate large databases to Azure Database for MySQL flexible server using mydumper/myloader](https://learn.microsoft.com/en-us/azure/mysql/migrate/concepts-migrate-mydumper-myloader)
-- [Application development best practices](https://learn.microsoft.com/en-us/azure/mysql/whats-new/whats-new-2026)
-- [Secure your Azure Database for MySQL](https://learn.microsoft.com/en-us/azure/mysql/security/security-overview)
-- [Microsoft Entra authentication](https://learn.microsoft.com/en-us/azure/mysql/security/security-entra-authentication)
-- [Configure Microsoft Entra authentication](https://learn.microsoft.com/en-us/azure/mysql/security/security-how-to-entra)
-- [TLS overview](https://learn.microsoft.com/en-us/azure/mysql/security/security-tls)
-- [Connect using TLS/SSL](https://learn.microsoft.com/en-us/azure/mysql/security/security-tls-how-to-connect)
-- [Root certificate change](https://learn.microsoft.com/en-us/azure/mysql/security/security-tls-root-certificate-rotation)
-- *...and 6 more*
-
-### Updated Pages
-
-- [Version support policy](https://learn.microsoft.com/en-us/azure/mysql/concepts-version-policy)
-  - Updated: 2026-05-14T11:04:00.000Z → 2026-07-18T06:02:00.000Z
-- [Monitoring data reference](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-monitor-mysql-reference)
-  - Updated: 2026-01-05T08:00:00.000Z → 2026-01-08T06:04:00.000Z
-
-### Deleted Pages
-
-- ~~April 2024~~ (https://learn.microsoft.com/en-us/azure/mysql/flexible-server/release-notes/april-2024)
-- ~~August 2024~~ (https://learn.microsoft.com/en-us/azure/mysql/flexible-server/release-notes/august-2024)
-- ~~February 2024~~ (https://learn.microsoft.com/en-us/azure/mysql/flexible-server/release-notes/february-2024)
-- ~~February 2025~~ (https://learn.microsoft.com/en-us/azure/mysql/flexible-server/release-notes/february-2025)
-- ~~January 2024~~ (https://learn.microsoft.com/en-us/azure/mysql/flexible-server/release-notes/january-2024)
-- ~~January 2026~~ (https://learn.microsoft.com/en-us/azure/mysql/flexible-server/release-notes/january-2026)
-- ~~July 2025~~ (https://learn.microsoft.com/en-us/azure/mysql/flexible-server/release-notes/july-2025)
-- ~~June 2024~~ (https://learn.microsoft.com/en-us/azure/mysql/flexible-server/release-notes/june-2024)
-- ~~March 2025~~ (https://learn.microsoft.com/en-us/azure/mysql/flexible-server/release-notes/march-2025)
-- ~~March 2026~~ (https://learn.microsoft.com/en-us/azure/mysql/flexible-server/release-notes/march-2026)
-- ~~May 2024~~ (https://learn.microsoft.com/en-us/azure/mysql/flexible-server/release-notes/may-2024)
-- ~~May 2025~~ (https://learn.microsoft.com/en-us/azure/mysql/flexible-server/release-notes/may-2025)
-- ~~May 2026~~ (https://learn.microsoft.com/en-us/azure/mysql/flexible-server/release-notes/may-2026)
-- ~~October 2024~~ (https://learn.microsoft.com/en-us/azure/mysql/flexible-server/release-notes/october-2024)
-- ~~October 2025~~ (https://learn.microsoft.com/en-us/azure/mysql/flexible-server/release-notes/october-2025)
-- ~~Release notes index~~ (https://learn.microsoft.com/en-us/azure/mysql/flexible-server/release-notes/release-notes-index)
-- ~~September 2024~~ (https://learn.microsoft.com/en-us/azure/mysql/flexible-server/release-notes/september-2024)
-- ~~September 2025~~ (https://learn.microsoft.com/en-us/azure/mysql/flexible-server/release-notes/september-2025)
-- ~~Data encryption~~ (https://learn.microsoft.com/en-us/azure/mysql/flexible-server/security-customer-managed-key)
-- ~~Microsoft Entra authentication~~ (https://learn.microsoft.com/en-us/azure/mysql/flexible-server/security-entra-authentication)
-- *...and 17 more*
 
 ## Classified Pages
 

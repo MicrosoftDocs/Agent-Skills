@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-07-12'
+generated_at: '2026-07-26'
 category_descriptions:
-  security: 'Securing Container Apps: auth (Entra, social, OIDC, mTLS, certs), identities/secrets,
-    network controls (NSG, firewall, private endpoints), and policy/best-practice
-    hardening.'
+  security: 'Securing Container Apps: auth (Entra, social, OIDC, mTLS), identities/secrets,
+    TLS/domains/certs, Dapr security, network controls (NSG, firewall, private endpoints),
+    and security best practices.'
   deployment: 'Deploying and automating Container Apps: CI/CD with GitHub Actions/Azure
     Pipelines, Docker Compose migration, self-hosted runners, and Arc-enabled Kubernetes
     integration.'
@@ -30,17 +30,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Container Apps development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when securing ingress/auth, configuring KEDA/Dapr scaling, integrating Arc AKS,
-  mounting storage, or tuning Java apps, and other Azure Container Apps related development
-  tasks. Not for Azure Container Instances (use azure-container-instances), Azure
-  Kubernetes Service (AKS) (use azure-kubernetes-service), Azure App Service (use
-  azure-app-service), Azure Functions (use azure-functions).
-use_when: Use when securing ingress/auth, configuring KEDA/Dapr scaling, integrating
-  Arc AKS, mounting storage, or tuning Java apps, and other Azure Container Apps related
-  development tasks.
-confusable_not_for: Not for Azure Container Instances (use azure-container-instances),
-  Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure App Service
-  (use azure-app-service), Azure Functions (use azure-functions).
+  Use when configuring ACA ingress/scale, Dapr microservices, Entra auth, GitHub Actions
+  deploys, or Java/Spring workloads, and other Azure Container Apps related development
+  tasks. Not for Azure App Service (use azure-app-service), Azure Functions (use azure-functions),
+  Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Spring Apps
+  (use azure-spring-apps).
+use_when: Use when configuring ACA ingress/scale, Dapr microservices, Entra auth,
+  GitHub Actions deploys, or Java/Spring workloads, and other Azure Container Apps
+  related development tasks.
+confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Functions
+  (use azure-functions), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
+  Azure Spring Apps (use azure-spring-apps).
 ---
 # Azure Container Apps Crawl Report
 
@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Container Instances (use azure-container-insta
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 226
+- **Updated Pages**: 2
+- **Unchanged**: 224
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-container-apps/azure-container-apps.csv`
 
@@ -75,6 +75,13 @@ confusable_not_for: Not for Azure Container Instances (use azure-container-insta
 | *(Unclassified)* | 85 | 37.6% |
 
 ## Changes
+
+### Updated Pages
+
+- [Overview](https://learn.microsoft.com/en-us/azure/container-apps/sandboxes-overview)
+  - Updated: 2026-06-02T18:53:00.000Z → 2026-07-20T22:11:00.000Z
+- [Workflow](https://learn.microsoft.com/en-us/azure/container-apps/workflows-overview)
+  - Updated: 2026-02-12T23:11:00.000Z → 2026-07-23T22:13:00.000Z
 
 ## Classified Pages
 
@@ -175,7 +182,7 @@ confusable_not_for: Not for Azure Container Instances (use azure-container-insta
 | [Migrate Tomcat applications](https://learn.microsoft.com/en-us/azure/container-apps/migrate-tomcat) | decision-making | 0.70 | Walks through assessing, containerizing, and deploying Tomcat apps to Azure Container Apps. Contains migration-specific guidance and likely Tomcat/Azure-specific considerations and patterns, which are expert migration/decision knowledge rather than generic containerization advice. |
 | [Override auto-generated KEDA scale rules](https://learn.microsoft.com/en-us/azure/container-apps/functions-scale-rule-override) | configuration | 0.70 | Page describes the specific configuration property template.scale.allowScalingRuleOverride and how to replace platform-generated KEDA triggers with custom rules in template.scale.rules. This is product-specific configuration detail (exact setting names and behavior) that an LLM is unlikely to infer from general knowledge. |
 | [Overview](https://learn.microsoft.com/en-us/azure/container-apps/opentelemetry-agents) | integrations | 0.70 | Describes using a managed OpenTelemetry data agent with Azure Container Apps and routing data to various endpoints; likely includes product-specific configuration options, endpoint parameters, and integration patterns for OTLP-compatible backends. |
-| [Overview](https://learn.microsoft.com/en-us/azure/container-apps/sandboxes-overview) | security | 0.70 | Includes a specific Azure RBAC role name (Container Apps SandboxGroup Data Owner) required to create and manage sandboxes, which is product-specific security configuration detail. |
+| [Overview](https://learn.microsoft.com/en-us/azure/container-apps/sandboxes-overview) | security | 0.70 | Page introduces a specific Azure RBAC role name (Container Apps SandboxGroup Data Owner) required to manage sandboxes, which is product-specific security configuration detail not inferable from general training data. |
 | [Overview](https://learn.microsoft.com/en-us/azure/container-apps/security) | security | 0.70 | Although labeled as an overview, it explicitly mentions best practices and security features like managed identities, secrets management, and token store for Azure Container Apps. Such a page typically includes concrete RBAC role names, identity configuration steps, and product-specific security settings, which constitute expert security configuration knowledge. |
 | [Overview](https://learn.microsoft.com/en-us/azure/container-apps/structure) | decision-making | 0.70 | Explains relationship between plans and workload profiles and when to select each; this is SKU/plan selection guidance with scenario-based recommendations, fitting decision-making. |
 | [Planned maintenance](https://learn.microsoft.com/en-us/azure/container-apps/planned-maintenance) | configuration | 0.70 | Covers defining maintenance windows and how updates are applied; likely includes specific settings/parameters for maintenance configuration, fitting configuration. |
@@ -280,7 +287,6 @@ confusable_not_for: Not for Azure Container Instances (use azure-container-insta
 | [Session pools](https://learn.microsoft.com/en-us/azure/container-apps/session-pool) | 0.30 | Summary suggests a conceptual/usage explanation of session pools (subsecond allocation and lifecycle management) without clear indication of numeric limits, configuration parameter tables, or troubleshooting/error mappings. Likely a usage/overview page rather than expert-knowledge content as defined by the sub-skill types. |
 | [Update a container app deployed from code](https://learn.microsoft.com/en-us/azure/container-apps/tutorial-update-from-code) | 0.30 | Tutorial for updating an app; appears to be a continuation of basic deployment steps without advanced config or limits. |
 | [Usage](https://learn.microsoft.com/en-us/azure/container-apps/sessions-usage) | 0.30 | Appears to be a how-to/tutorial style page on using dynamic sessions, without evidence of configuration tables, limits, error codes, or decision matrices. The summary focuses on what sessions are good for and that you don't need to deploy a container app resource, which is useful but not expert-level configuration, limits, or troubleshooting content per the defined categories. |
-| [Workflow](https://learn.microsoft.com/en-us/azure/container-apps/workflows-overview) | 0.30 | High-level overview of workflow options and concepts in Container Apps; no concrete limits, configs, or error mappings. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/container-apps/jobs-get-started-portal) | 0.25 | Portal quickstart for jobs; describes concepts and basic creation steps, not detailed configuration or quotas. |
 | [Code repository](https://learn.microsoft.com/en-us/azure/container-apps/quickstart-repo-to-cloud) | 0.25 | Quickstart for repo-to-cloud deployment; tutorial-style without detailed settings tables or tier comparisons. |
 | [Command line](https://learn.microsoft.com/en-us/azure/container-apps/deploy-artifact) | 0.25 | Quickstart deploying from a JAR artifact; example-focused, not a comprehensive configuration or limits reference. |
@@ -302,6 +308,7 @@ confusable_not_for: Not for Azure Container Instances (use azure-container-insta
 | [Overview](https://learn.microsoft.com/en-us/azure/container-apps/javascript-overview) | 0.20 | High-level JavaScript overview; mostly conceptual and marketing-style description of capabilities. |
 | [Overview](https://learn.microsoft.com/en-us/azure/container-apps/scale-app) | 0.20 | Appears to be a general overview of scaling behavior in Azure Container Apps and KEDA, without mention of specific numeric limits, configuration parameter tables, or detailed error/diagnostic information. |
 | [Visual Studio](https://learn.microsoft.com/en-us/azure/container-apps/deploy-visual-studio) | 0.20 | Tutorial-style deployment walkthrough from Visual Studio without matrices, tier constraints, or detailed configuration tables; focuses on step-by-step actions rather than expert-only limits, settings, or decision criteria. |
+| [Workflow](https://learn.microsoft.com/en-us/azure/container-apps/workflows-overview) | 0.20 | Page is an overview of workflow options (Durable Functions, Durable Task, Logic Apps) in Azure Container Apps. From the summary it appears conceptual, explaining terminology and high-level options rather than listing concrete limits, configuration tables, error codes, or decision matrices with quantified trade-offs. No clear evidence of expert-only numeric limits, configuration parameter tables, or troubleshooting mappings. |
 | [Introduction to containers](https://learn.microsoft.com/en-us/azure/container-apps/java-containers-intro) | 0.10 | Intro to containers for Java is conceptual and generic; not specific to Container Apps configuration or limits. |
 | [Introduction to containers](https://learn.microsoft.com/en-us/azure/container-apps/start-containers) | 0.10 | Introductory explanation of containers and motivations; no product-specific limits, configs, or troubleshooting content. |
 | [Overview](https://learn.microsoft.com/en-us/azure/container-apps/java-overview) | 0.10 | High-level overview of running Java on Azure Container Apps with benefits and general capabilities; no specific limits, configuration tables, error codes, or decision matrices that meet the expert-knowledge criteria. |

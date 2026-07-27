@@ -49,8 +49,8 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 162
+- **Updated Pages**: 0
+- **Unchanged**: 165
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-app-configuration/azure-app-configuration.csv`
 
@@ -69,15 +69,6 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | *(Unclassified)* | 39 | 23.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [ASP.NET Core](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-targetingfilter-aspnet-core)
-  - Updated: 2025-01-13T23:06:00.000Z → 2026-07-17T22:12:00.000Z
-- [Feature management](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-feature-flag-aspnet-core)
-  - Updated: 2025-11-21T08:00:00.000Z → 2026-07-15T08:00:00.000Z
-- [Snapshots](https://learn.microsoft.com/en-us/azure/azure-app-configuration/rest-api-snapshot)
-  - Updated: 2025-06-04T08:00:00.000Z → 2026-07-15T22:16:00.000Z
 
 ## Classified Pages
 
