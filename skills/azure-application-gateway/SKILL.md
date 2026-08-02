@@ -1,9 +1,9 @@
 ---
 name: azure-application-gateway
-description: Expert knowledge for Azure Application Gateway development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring HTTP routing, WAF/TLS, autoscale/zone redundancy, AKS ingress, or App Gateway for Containers, and other Azure Application Gateway related development tasks. Not for Azure Front Door (use azure-front-door), Azure Load Balancer (use azure-load-balancer), Azure Traffic Manager (use azure-traffic-manager), Azure Web Application Firewall (use azure-web-application-firewall).
+description: Expert knowledge for Azure Application Gateway development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring HTTP routing, WAF/TLS, autoscaling v2 gateways, AKS ingress/AGIC, or App Gateway for Containers, and other Azure Application Gateway related development tasks. Not for Azure Front Door (use azure-front-door), Azure Load Balancer (use azure-load-balancer), Azure Traffic Manager (use azure-traffic-manager), Azure Web Application Firewall (use azure-web-application-firewall).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-19"
+  generated_at: "2026-08-02"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Application Gateway Skill
@@ -28,7 +28,7 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L43-L47 | Guidance on designing Application Gateway for very high traffic: sizing, autoscaling, performance tuning, capacity planning, and configuration patterns to handle large loads reliably. |
 | Decision Making | L48-L59 | Guidance on pricing, billing, and migration decisions for Application Gateway (V1→V2, AGIC→Containers, classic→ARM VMs) and choosing networking for Application Gateway for Containers |
 | Architecture & Design Patterns | L60-L64 | Guidance on choosing and designing load-balancing strategies and traffic distribution patterns when using Azure Application Gateway for Containers. |
-| Limits & Quotas | L65-L71 | Autoscaling, zone redundancy, and detailed capacity, configuration, and performance limits/quotas for Application Gateway v2 and Application Gateway for Containers. |
+| Limits & Quotas | L65-L71 | Autoscaling, zone redundancy, and detailed capacity, configuration, and performance limits for Application Gateway v2 and Application Gateway for Containers. |
 | Security | L72-L111 | Configuring TLS/SSL, certificates, mTLS, WAF, DDoS protection, security headers, and secure listener/backend/Ingress settings for Azure Application Gateway and Containers. |
 | Configuration | L112-L178 | Configuring Application Gateway and App Gateway for Containers: routing, probes/health, headers/URL rewrite/redirect, session affinity, networking, monitoring, WebSockets, mTLS, and AKS ingress. |
 | Integrations & Coding Patterns | L179-L188 | Configuring Application Gateway TLS with Key Vault, integrating with AKS/containers (Prometheus, Grafana, Istio, Sentinel/Defender), and autoscaling AKS pods using gateway metrics. |
@@ -66,7 +66,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Configure autoscaling and zone redundancy for Application Gateway v2 | https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-autoscaling-zone-redundant |
-| Reference limits and behaviors for Azure Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-faq |
+| Reference Azure Application Gateway limits and behaviors | https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-faq |
 | Azure Application Gateway for Containers limits and behaviors | https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/faq |
 
 ### Security

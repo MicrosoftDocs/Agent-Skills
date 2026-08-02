@@ -1,9 +1,9 @@
 ---
 name: azure-vm-scalesets
-description: Expert knowledge for Azure Virtual Machine Scale Sets development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring VMSS autoscale/standby pools, disk encryption with Key Vault, PPGs, Log Analytics, or rolling upgrades, and other Azure Virtual Machine Scale Sets related development tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Container Instances (use azure-container-instances), Azure App Service (use azure-app-service).
+description: Expert knowledge for Azure Virtual Machine Scale Sets development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring autoscale, standby pools, Spot mixes, disk encryption with Key Vault, or PPG-based VMSS deployments, and other Azure Virtual Machine Scale Sets related development tasks. Not for Azure Virtual Machines (use azure-virtual-machines), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Container Instances (use azure-container-instances).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-28"
+  generated_at: "2026-08-02"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Virtual Machine Scale Sets Skill
@@ -32,7 +32,7 @@ This skill requires **network access** to fetch documentation content:
 | Security | L78-L89 | Encrypting VMSS disks (CLI, PowerShell, ARM), configuring Azure Disk Encryption with Key Vault and extensions, and securing scale sets via Azure Policy and RBAC for standby pools. |
 | Configuration | L90-L133 | Configuring VM Scale Sets: templates, networking, disks, images, zones, upgrades, autoscale, repairs, standby pools, instance mix/protection, maintenance, and CLI/PowerShell/API management. |
 | Integrations & Coding Patterns | L134-L139 | Configuring VM scale set standby pools with Log Analytics for monitoring and integrating scale sets with Azure DSC extension for automated configuration management. |
-| Deployment | L140-L146 | Creating VM scale sets from generalized/specialized Shared Image Gallery images, migrating flexible sets to zonal, and deploying apps onto scale set instances. |
+| Deployment | L140-L146 | Creating VM scale sets from generalized/specialized Shared Image Gallery images, migrating flexible sets to zonal, and deploying/rolling out applications to scale set instances |
 
 ### Troubleshooting
 | Topic | URL |
@@ -142,5 +142,5 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Create scale sets from generalized gallery images | https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/instance-generalized-image-version |
 | Create scale sets from specialized gallery images | https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/instance-specialized-image-version |
-| Migrate regional flexible scale sets to zonal sets | https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/migrate-scale-set-flex-to-availability-zones |
+| Migrate regional flexible scale sets to zonal | https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/migrate-scale-set-flex-to-availability-zones |
 | Deploy applications to VM Scale Set instances | https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-deploy-app |

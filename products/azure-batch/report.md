@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-07-19'
+generated_at: '2026-08-02'
 category_descriptions:
-  security: 'Securing Azure Batch: identity (Entra ID, managed identities, RBAC),
-    keys and encryption, private endpoints/network access, and governance with Azure
-    Policy and network security perimeters.'
+  security: 'Securing Azure Batch: identity/auth (Entra ID, managed identities, RBAC),
+    keys and encryption, private endpoints/network perimeters, public access, and
+    governance via Azure Policy.'
   deployment: Guides for moving Azure Batch accounts across regions with ARM templates
     and setting up CI/CD pipelines for Batch HPC workloads using Azure Pipelines.
   configuration: 'Configuring Batch pools, tasks, networking, scaling, diagnostics,
@@ -30,17 +30,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Batch development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  configuring Batch pools/tasks, autoscale, containers, MPI jobs, storage mounts,
-  or CI/CD for HPC workloads, and other Azure Batch related development tasks. Not
-  for Azure Container Instances (use azure-container-instances), Azure Kubernetes
-  Service (AKS) (use azure-kubernetes-service), Azure Functions (use azure-functions),
-  Azure Virtual Machines (use azure-virtual-machines).
-use_when: Use when configuring Batch pools/tasks, autoscale, containers, MPI jobs,
-  storage mounts, or CI/CD for HPC workloads, and other Azure Batch related development
+  configuring Batch pools/tasks, autoscale, containers/MPI, storage mounts, or CI/CD
+  for HPC/render jobs, and other Azure Batch related development tasks. Not for Azure
+  Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Container Instances
+  (use azure-container-instances), Azure Functions (use azure-functions), Azure HDInsight
+  (use azure-hdinsight).
+use_when: Use when configuring Batch pools/tasks, autoscale, containers/MPI, storage
+  mounts, or CI/CD for HPC/render jobs, and other Azure Batch related development
   tasks.
-confusable_not_for: Not for Azure Container Instances (use azure-container-instances),
-  Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Functions (use
-  azure-functions), Azure Virtual Machines (use azure-virtual-machines).
+confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
+  Azure Container Instances (use azure-container-instances), Azure Functions (use
+  azure-functions), Azure HDInsight (use azure-hdinsight).
 ---
 # Azure Batch Crawl Report
 
@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Container Instances (use azure-container-insta
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 115
+- **Updated Pages**: 1
+- **Unchanged**: 114
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-batch/azure-batch.csv`
 
@@ -75,6 +75,11 @@ confusable_not_for: Not for Azure Container Instances (use azure-container-insta
 | *(Unclassified)* | 37 | 32.2% |
 
 ## Changes
+
+### Updated Pages
+
+- [Create a pool with disk encryption enabled](https://learn.microsoft.com/en-us/azure/batch/disk-encryption)
+  - Updated: 2026-03-12T05:52:00.000Z → 2026-07-29T18:02:00.000Z
 
 ## Classified Pages
 
@@ -96,7 +101,6 @@ confusable_not_for: Not for Azure Container Instances (use azure-container-insta
 | [Create a pool with public IP addresses](https://learn.microsoft.com/en-us/azure/batch/create-pool-public-ip) | configuration | 0.75 | Explains how to configure Batch pools to use a specified list of public IPs, including constraints and behavior over pool lifetime. |
 | [Mount a virtual file system](https://learn.microsoft.com/en-us/azure/batch/virtual-file-mount) | integrations | 0.75 | Provides concrete patterns and ARM client library usage to mount cloud or external file systems on Batch nodes, including mount configuration details and troubleshooting, which are product-specific integration patterns. |
 | [Persist output with File Conventions library](https://learn.microsoft.com/en-us/azure/batch/batch-task-output-file-conventions) | integrations | 0.75 | Describes the Batch File Conventions .NET library for persisting output to Azure Storage; likely includes library-specific types, method signatures, and configuration patterns unique to this integration. |
-| [Create a pool with disk encryption enabled](https://learn.microsoft.com/en-us/azure/batch/disk-encryption) | security | 0.74 | Disk encryption for Batch pools is a product-specific security configuration topic. The article describes how to enable encryption with platform-managed keys via disk encryption configuration when creating pools with Virtual Machine Configuration, which involves concrete Azure Batch and VM configuration parameters and options that go beyond generic security concepts. |
 | [Microsoft Entra ID with Batch Management](https://learn.microsoft.com/en-us/azure/batch/batch-aad-auth-management) | security | 0.72 | Describes how to authenticate applications that call the Azure Batch Management service using Microsoft Entra ID and Azure Identity, in combination with Azure.ResourceManager.Batch. This is product-specific identity and access configuration for management-plane APIs, which aligns with the security sub-skill. |
 | [Microsoft Entra ID with Batch service](https://learn.microsoft.com/en-us/azure/batch/batch-aad-auth) | security | 0.72 | Page is focused on configuring Microsoft Entra ID authentication for Azure Batch service applications using Azure Identity credentials (DefaultAzureCredential, ManagedIdentityCredential, ClientSecretCredential, etc.). This is product-specific security/auth configuration with concrete guidance on which auth flows/credentials to use and how, which fits the security sub-skill. |
 | [Autoscale compute nodes](https://learn.microsoft.com/en-us/azure/batch/batch-automatic-scaling) | configuration | 0.70 | Covers Azure Batch autoscale formulas and parameters that control node counts. These are product-specific configuration expressions and properties, beyond generic scaling concepts, but not primarily limits/quotas or decision matrices. |
@@ -104,6 +108,7 @@ confusable_not_for: Not for Azure Container Instances (use azure-container-insta
 | [Check for job and task errors](https://learn.microsoft.com/en-us/azure/batch/batch-job-task-error-checking) | troubleshooting | 0.70 | Article is explicitly about checking and handling errors after submission, likely mapping Batch-specific error states/codes and patterns for detecting them, which is troubleshooting-focused. |
 | [Create a CI/CD pipeline for Batch](https://learn.microsoft.com/en-us/azure/batch/batch-ci-cd) | deployment | 0.70 | Shows how to use Azure Pipelines to build and deploy ARM templates for Batch HPC solutions, including product-specific deployment pipeline configuration. |
 | [Create a pool in a virtual network](https://learn.microsoft.com/en-us/azure/batch/batch-virtual-network) | configuration | 0.70 | Explains configuring a Batch pool in a VNet subnet, including required settings and parameters for network configuration that are specific to Batch pools. |
+| [Create a pool with disk encryption enabled](https://learn.microsoft.com/en-us/azure/batch/disk-encryption) | security | 0.70 | Page describes product-specific security configuration for Azure Batch pools, including how to specify disk encryption configuration when using Virtual Machine Configuration and platform-managed keys. This is concrete security setup guidance rather than a conceptual overview. |
 | [Create a simplified node communication pool without public IP addresses](https://learn.microsoft.com/en-us/azure/batch/simplified-node-communication-pool-no-public-ip) | configuration | 0.70 | Explains how to configure an Azure Batch pool without public IPs using simplified node communication, including region availability constraints and required network settings. This is product-specific configuration guidance with concrete requirements, not just conceptual content. |
 | [Create efficient query lists](https://learn.microsoft.com/en-us/azure/batch/batch-efficient-list-queries) | best-practices | 0.70 | Provides concrete, Batch-specific recommendations for using filters, select clauses, and query patterns to reduce payload size and improve performance. These are actionable DO/DON'T patterns tied to the Batch API rather than generic querying advice. |
 | [Create resource files](https://learn.microsoft.com/en-us/azure/batch/resource-files) | configuration | 0.70 | Describes concrete, product-specific ways to define and attach resource files to Batch tasks and how they appear on VMs. While mostly procedural, it includes Batch-specific properties/fields and path behaviors that are configuration details rather than generic tutorial content. |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-12'
+generated_at: '2026-08-02'
 category_descriptions:
   integrations: APIs, CLI, and Python SDK for automating CycleCloud, plus configuring
     and integrating schedulers (Slurm, Grid Engine, HTCondor, LSF, OpenPBS, HPC Pack),
@@ -10,9 +10,9 @@ category_descriptions:
   architecture-patterns: Designing resilient multi‑region CycleCloud HPC clusters
     and choosing VM placement strategies (single-zone, multi-zone, regional) for performance,
     availability, and cost optimization.
-  decision-making: Guidance on planning/migrating CycleCloud clusters and workspaces,
-    choosing Spot VMs, and understanding licensing, usage, and servicing policies
-    for Azure CycleCloud.
+  decision-making: Guidance on planning and sizing CycleCloud HPC clusters, Slurm
+    workspaces, migration from v7, using Spot VMs, licensing/usage terms, and servicing/support
+    policies.
   security: 'Securing CycleCloud: auth (Entra, service principals, managed identities),
     SSL, SSH/Bastion access, SELinux, telemetry/data usage, and portal/cluster user
     authentication setup.'
@@ -27,13 +27,13 @@ category_descriptions:
 skill_description: Expert knowledge for Azure CycleCloud development including troubleshooting,
   best practices, decision making, architecture & design patterns, security, configuration,
   integrations & coding patterns, and deployment. Use when automating CycleCloud via
-  API/CLI, configuring Slurm/HTCondor clusters, tuning HB/HC VMs, or securing access,
-  and other Azure CycleCloud related development tasks. Not for Azure Batch (use azure-batch),
-  Azure HPC Cache (use azure-hpc-cache), Azure Virtual Machines (use azure-virtual-machines),
-  Azure Kubernetes Service (AKS) (use azure-kubernetes-service).
-use_when: Use when automating CycleCloud via API/CLI, configuring Slurm/HTCondor clusters,
-  tuning HB/HC VMs, or securing access, and other Azure CycleCloud related development
-  tasks.
+  API/CLI/SDK, configuring Slurm clusters, using Spot VMs, securing access, or tuning
+  HB/HC HPC workloads, and other Azure CycleCloud related development tasks. Not for
+  Azure Batch (use azure-batch), Azure HPC Cache (use azure-hpc-cache), Azure Virtual
+  Machines (use azure-virtual-machines), Azure Kubernetes Service (AKS) (use azure-kubernetes-service).
+use_when: Use when automating CycleCloud via API/CLI/SDK, configuring Slurm clusters,
+  using Spot VMs, securing access, or tuning HB/HC HPC workloads, and other Azure
+  CycleCloud related development tasks.
 confusable_not_for: Not for Azure Batch (use azure-batch), Azure HPC Cache (use azure-hpc-cache),
   Azure Virtual Machines (use azure-virtual-machines), Azure Kubernetes Service (AKS)
   (use azure-kubernetes-service).
@@ -50,8 +50,8 @@ confusable_not_for: Not for Azure Batch (use azure-batch), Azure HPC Cache (use 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 115
+- **Updated Pages**: 1
+- **Unchanged**: 114
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cyclecloud/azure-cyclecloud.csv`
 
@@ -70,6 +70,11 @@ confusable_not_for: Not for Azure Batch (use azure-batch), Azure HPC Cache (use 
 | *(Unclassified)* | 23 | 20.0% |
 
 ## Changes
+
+### Updated Pages
+
+- [Service Policy](https://learn.microsoft.com/en-us/azure/cyclecloud/service-policy?view=cyclecloud-8)
+  - Updated: 2026-06-19T08:00:00.000Z → 2026-07-27T08:00:00.000Z
 
 ## Classified Pages
 
@@ -145,6 +150,7 @@ confusable_not_for: Not for Azure Batch (use azure-batch), Azure HPC Cache (use 
 | [Use Spot Instances](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/use-spot-instances?view=cyclecloud-8) | decision-making | 0.70 | Discusses suitability of Spot VMs for different workloads and cluster types, including trade-offs like lack of SLA and eviction behavior; provides product-specific guidance on when to choose Spot VMs. |
 | [Use Storage Blobs](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/storage-blobs?view=cyclecloud-8) | configuration | 0.70 | Describes project blobs, user blobs, downloading behavior, and lockers; these are specific storage configuration mechanisms within CycleCloud. |
 | [Noderef](https://learn.microsoft.com/en-us/azure/cyclecloud/cluster-references/noderef-reference?view=cyclecloud-8) | configuration | 0.68 | The page is a 'Noderef reference' for templates, describing NodeRef as an internal reference to another node. As a reference page, it likely enumerates properties/fields of NodeRef, which are configuration parameters specific to CycleCloud templates. |
+| [Service Policy](https://learn.microsoft.com/en-us/azure/cyclecloud/service-policy?view=cyclecloud-8) | decision-making | 0.68 | The page defines Azure CycleCloud servicing policy with product-specific details such as supported version windows, release cadence, and conditions for remaining in a supported state. These are expert, time-sensitive details not inferable from general training data and help users decide when to upgrade or which versions to run to stay supported, fitting the decision-making category best. |
 | [Configure Autoscaling](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/configure-autoscaling?view=cyclecloud-8) | configuration | 0.65 | Details how to set autoscaling behavior in CycleCloud, including scaling parameters and possibly thresholds in templates; these are product-specific scaling configuration options. |
 | [Create Network Fileserver](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/create-fileserver?view=cyclecloud-8) | configuration | 0.65 | Describes built-in CycleCloud support for NFS exports and how to configure a simple file server for clusters; involves product-specific configuration attributes and patterns. |
 | [Create a Custom Image](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/create-custom-image?view=cyclecloud-8) | configuration | 0.65 | Explains how to specify custom, marketplace, and gallery images for nodes and node arrays, including UI/template configuration; this is specific to CycleCloud image handling. |
@@ -160,7 +166,6 @@ confusable_not_for: Not for Azure Batch (use azure-batch), Azure HPC Cache (use 
 | [Use Flex Scale Set Orchestration](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/flex-scalesets?view=cyclecloud-8) | configuration | 0.65 | Describes how to bind CycleCloud nodes to pre-created Flex scale sets, including credential constraints and node-array-specific settings; these are product-specific configuration patterns not generally known. |
 | [Use HealthCheck](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/healthcheck?view=cyclecloud-8) | troubleshooting | 0.65 | Describes two distinct health-check mechanisms (Node Health Checks and HealthCheck service) and how they terminate or block unhealthy VMs; likely includes specific behaviors and configuration steps for diagnosing/remediating node issues. |
 | [Common Cookbook Reference](https://learn.microsoft.com/en-us/azure/cyclecloud/cookbook-reference?view=cyclecloud-8) | integrations | 0.64 | Describes how CycleCloud uses Chef concepts and attributes (e.g., run_list, thunderball resource) in a product-specific way. |
-| [Service Policy](https://learn.microsoft.com/en-us/azure/cyclecloud/service-policy?view=cyclecloud-8) | decision-making | 0.63 | Describes support windows, release types, and what to do to stay supported, which informs upgrade and lifecycle decisions. |
 | [CycleCloud Cluster Templates](https://learn.microsoft.com/en-us/azure/cyclecloud/download-cluster-templates?view=cyclecloud-8) | deployment | 0.62 | Describes how to obtain and import specific cluster templates and projects via CLI, which is a product-specific deployment/config pattern. |
 | [Data Usage Policy](https://learn.microsoft.com/en-us/azure/cyclecloud/data-policy?view=cyclecloud-8) | security | 0.60 | Explains what telemetry data is collected and how it is handled, which is product-specific compliance/security-related configuration knowledge. |
 | [How to connect to the CycleCloud Portal through Bastion](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/ccws/connect-to-portal-with-bastion?view=cyclecloud-8) | security | 0.60 | Shows how to establish an SSH tunnel via Bastion to reach the CycleCloud portal when HTTPS is unavailable; involves product-specific secure access configuration. |

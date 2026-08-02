@@ -1,9 +1,9 @@
 ---
 name: azure-cloud-adoption-framework
-description: Expert guidance for planning and executing cloud adoption using Azure Cloud Adoption Framework. Covers strategy, planning, readiness & landing zones, adoption patterns, governance, security, operations & management, organization & teams, and adoption scenarios. Use when deploying AI agents, AKS, AVS, AVD, SAP/Oracle workloads, or Azure landing zones, and other Azure Cloud Adoption Framework related development tasks.
+description: Expert guidance for planning and executing cloud adoption using Azure Cloud Adoption Framework. Covers strategy, planning, readiness & landing zones, adoption patterns, governance, security, operations & management, organization & teams, and adoption scenarios. Use when designing landing zones, AKS, AVS, AVD, Oracle/SAP on Azure, or enforcing governance/security policies, and other Azure Cloud Adoption Framework related development tasks.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-26"
+  generated_at: "2026-08-02"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Cloud Adoption Framework Skill
@@ -26,13 +26,13 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Strategy | L37-L55 | High-level cloud and AI strategy: defining business goals, executive alignment, unified data/ops, workload-specific plans (SAP, Oracle, AVD, VMware), and cost, resiliency, security, and sustainability objectives. |
 | Planning | L56-L83 | Planning cloud adoption, migration waves, modernization roadmaps, cost/skills readiness, and detailed plans for workloads (AI, data, Oracle, SAP, AVS, AVD, analytics) on Azure. |
-| Readiness & Landing Zones | L84-L201 | Designing and operating Azure landing zones: network topologies, connectivity, identity, subscriptions, governance, automation/DevOps, multitenancy, and workload-specific setups (AKS, AVS, SAP, Oracle, AVD). |
-| Adoption Patterns | L202-L226 | Patterns and step-by-step guidance for planning, migrating, modernizing, and operating Azure workloads (AI agents, cloud-native apps, AVD, VMware, Oracle, SAP) safely and efficiently |
-| Governance | L227-L254 | Designing and enforcing Azure governance: policies, tagging, cost control, compliance, and security baselines across landing zones, AKS, AVD, AVS, Arc, SAP, and AI agents. |
-| Security | L255-L281 | Security design and governance for Azure landing zones, including Zero Trust, IAM, encryption, DevOps, AKS, analytics, SAP/Oracle, Arc, and ongoing security operations. |
-| Operations & Management | L282-L316 | Operating, monitoring, securing, and optimizing Azure environments and workloads (including AI, AKS, Arc, AVS, Oracle, SAP, analytics) plus BCDR, DevOps, and platform-level governance. |
-| Organization & Teams | L317-L334 | Designing cloud org structures, roles, and RACI: governance, CCoE, DevOps, security, operations, data/analytics, cost management, and breaking silos for Azure adoption and operations |
-| Adoption Scenarios | L335-L390 | End-to-end adoption patterns for AI agents, AKS, RHEL, ARO, AVD, Citrix, AVS, Oracle, SAP: landing zones, identity, networking, security, BCDR, automation, governance, and operations. |
+| Readiness & Landing Zones | L84-L200 | Designing and operating Azure landing zones: network topologies, identity, subscriptions, governance, automation/DevOps, multitenancy, and specialized patterns (AVS, Arc, SAP, Oracle, AVD). |
+| Adoption Patterns | L201-L225 | Patterns and step-by-step guidance for planning, migrating, modernizing, and operating Azure workloads (AI agents, cloud-native apps, AVD, VMware, Oracle, SAP) safely and efficiently |
+| Governance | L226-L253 | Designing and enforcing Azure governance: policies, tagging, cost control, compliance, and security baselines across landing zones, AKS, AVD, AVS, Arc, SAP, and AI agents. |
+| Security | L254-L280 | Security design and governance for Azure landing zones, including Zero Trust, IAM, encryption, DevOps, AKS, analytics, SAP/Oracle, Arc, and ongoing security operations. |
+| Operations & Management | L281-L315 | Operating, monitoring, securing, and optimizing Azure environments and workloads (including AI, AKS, Arc, AVS, Oracle, SAP, analytics) plus BCDR, DevOps, and platform-level governance. |
+| Organization & Teams | L316-L333 | Designing cloud org structures, roles, and RACI: governance, CCoE, DevOps, security, operations, data/analytics, cost management, and breaking silos for Azure adoption and operations |
+| Adoption Scenarios | L334-L389 | Designing and operating enterprise landing zones for AKS, RHEL, ARO, AVD, Citrix, AVS, Oracle, SAP—covering identity, networking, security, BCDR, automation, governance, and integration. |
 
 ### Strategy
 | Topic | URL |
@@ -84,7 +84,6 @@ This skill requires **network access** to fetch documentation content:
 ### Readiness & Landing Zones
 | Topic | URL |
 |-------|-----|
-| Prepare Azure landing zones for scalable workloads | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/ |
 | Use Azure Virtual Network Manager in landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/azure-virtual-network-manager |
 | Design on-premises connectivity topologies to Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/connectivity-to-azure |
 | Design connectivity to Azure PaaS services securely | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/connectivity-to-azure-paas-services |
@@ -121,7 +120,7 @@ This skill requires **network access** to fetch documentation content:
 | Design and manage sandbox landing zone environments | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/considerations/sandbox-environments |
 | Test Azure landing zone deployments and policies | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/enterprise-scale/testing-approach |
 | Transition existing Azure environments to landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/enterprise-scale/transition |
-| Understand Azure landing zones as environment foundation | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/ |
+| Design Azure platform and application landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/ |
 | Duplicate landing zone management group in audit-only mode | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/align-approach-duplicate-brownfield-audit-only |
 | Transition existing management groups to landing zone hierarchy | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/align-scenario-multiple-management-groups |
 | Align regional dev/test/prod structures to landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/align-scenario-regional-org |
@@ -137,7 +136,7 @@ This skill requires **network access** to fetch documentation content:
 | Design identity and access for Azure landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/identity-access-landing-zones |
 | Keep Azure landing zone configurations current | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/keep-azure-landing-zone-up-to-date |
 | Design management foundations for Azure environments | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/management |
-| Manage app environments with landing zone subscriptions | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/management-application-environments |
+| Design and manage application environments in Azure landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/management-application-environments |
 | Implement inventory and visibility for Azure platforms | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/management-platform |
 | Automate Azure landing zone deployments across tenants | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/multi-tenant/automation |
 | Use canary environments for multitenant Azure landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/multi-tenant/canary |
@@ -337,7 +336,7 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Adopt organization-wide AI agents with CAF | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai-agents/ |
 | Design identity and access management for AKS | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/aks/identity-and-access-management |
-| Design network topology and connectivity for AKS | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/aks/network-topology-and-connectivity |
+| Design AKS network topology and connectivity in CAF | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/aks/network-topology-and-connectivity |
 | Implement platform automation and DevOps for AKS | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/aks/platform-automation-and-devops |
 | Design AKS resource organization for app platforms | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/aks/resource-organization |
 | Plan scalability for Azure Kubernetes Service environments | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/aks/scalability |

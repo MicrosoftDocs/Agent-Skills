@@ -1,9 +1,9 @@
 ---
 name: azure-blob-storage
-description: Expert knowledge for Azure Blob Storage development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Blob tiers, lifecycle/immutability, SAS/RBAC, NFS/SFTP/BlobFuse, or static website hosting, and other Azure Blob Storage related development tasks. Not for Azure Files (use azure-files), Azure Table Storage (use azure-table-storage), Azure Queue Storage (use azure-queue-storage), Azure NetApp Files (use azure-netapp-files).
+description: Expert knowledge for Azure Blob Storage development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Blob tiers, lifecycle policies, immutability, SAS/SFTP access, or NFS/BlobFuse mounts, and other Azure Blob Storage related development tasks. Not for Azure Files (use azure-files), Azure Table Storage (use azure-table-storage), Azure Queue Storage (use azure-queue-storage), Azure NetApp Files (use azure-netapp-files).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-26"
+  generated_at: "2026-08-02"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Blob Storage Skill
@@ -25,13 +25,13 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L36-L46 | Diagnosing and fixing Azure Blob Storage issues: Storage Mover job/network errors, support bundles, BlobFuse/BlobFuse2 mount & I/O problems, and known NFS 3.0 limitations. |
-| Best Practices | L47-L81 | Performance, reliability, and cost best practices for Blob/Data Lake: access tiers, client tuning, concurrency, lifecycle, NFS/SFTP, retries, monitoring, events, and backup/migration guidance. |
-| Decision Making | L82-L108 | Cost planning and design choices for Blob Storage: tiers, archive retrieval, networking, reserved capacity, migration tools, data protection, and mapping operations to billing. |
-| Limits & Quotas | L109-L127 | Limits, quotas, performance, and known issues for Azure Blob Storage features (scalability, archive/rehydration, NFS/SFTP/BlobFuse, static websites, replication, and Storage Mover). |
-| Security | L128-L186 | Securing Blob Storage: identity-based access (RBAC/ABAC, Entra ID), SAS tokens, SFTP, ACLs, encryption (CSE, CPK, scopes), anonymous access controls, and Storage Mover/BlobFuse2 security. |
-| Configuration | L187-L248 | Configuring monitoring, lifecycle, immutability, restore, networking, and client tools (BlobFuse, Storage Mover), plus third‑party backup/migration integrations for Azure Blob Storage. |
-| Integrations & Coding Patterns | L249-L375 | SDK, CLI, and tooling patterns for integrating with Blob Storage/ADLS: mounting, uploads/downloads, copy/delete/restore, leases, metadata, access tiers, tags, SAS, events, and language-specific code samples. |
-| Deployment | L376-L389 | Guides for deploying static websites on Blob Storage, enabling Data Lake features, and migrating data from on-prem, AWS, and third‑party NAS solutions into Azure Storage. |
+| Best Practices | L47-L82 | Performance, reliability, and cost-optimization guidance for Azure Blob/Data Lake: access tiers, lifecycle, hot partitions, NFS/SFTP, client tuning, retries, monitoring, and backup best practices. |
+| Decision Making | L83-L109 | Cost planning and design choices for Blob Storage: tiers, archive retrieval, networking, reserved capacity, migration tools, data protection, and mapping operations to billing. |
+| Limits & Quotas | L110-L128 | Limits, quotas, and performance/scalability behavior for Blob Storage features (archive, NFS, SFTP, static sites, replication, premium tiers), including known issues and latency guarantees. |
+| Security | L129-L187 | Securing Blob Storage and Data Lake: identity-based access (RBAC/ABAC), SAS tokens, SFTP, ACLs, private networking, client-side and key-based encryption, and anonymous access controls. |
+| Configuration | L188-L249 | Configuring monitoring, lifecycle, immutability, restore, networking, and client tools (BlobFuse, Storage Mover), plus third‑party backup/migration integrations for Azure Blob Storage. |
+| Integrations & Coding Patterns | L250-L376 | SDK, CLI, and tooling patterns for integrating with Blob Storage/ADLS: mounting, uploads/downloads, copy/delete/restore, leases, metadata, access tiers, tags, SAS, events, and language-specific code samples. |
+| Deployment | L377-L390 | Guides for deploying static websites on Blob Storage, enabling Data Lake features, and migrating data from on-prem, AWS, and third‑party NAS solutions into Azure Storage. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -72,6 +72,7 @@ This skill requires **network access** to fetch documentation content:
 | Optimize Azure Blob partitions with naming strategies | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-performance-blob-partitions |
 | Performance optimization checklist for Azure Blob Storage | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-performance-checklist |
 | Apply Blob Storage performance checklist for custom apps | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-performance-checklist-developers |
+| Detect and mitigate Azure Blob hot partitions | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-performance-mitigate-hot-partitions |
 | Configure retry policies for Blob Storage in .NET | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-retry-policy |
 | Implement resilient retry policies for Blob Storage in Go | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-retry-policy-go |
 | Configure retry policies for Blob Storage in Java | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-retry-policy-java |
@@ -118,7 +119,7 @@ This skill requires **network access** to fetch documentation content:
 | Understand BlobFuse limitations and known issues | https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-known-issues |
 | Protocol limits for NFS 3.0 on Azure Blob | https://learn.microsoft.com/en-us/azure/storage/blobs/network-file-system-protocol-support |
 | Object replication priority replication latency guarantees | https://learn.microsoft.com/en-us/azure/storage/blobs/object-replication-priority-replication |
-| Understand Azure Blob Storage scalability limits | https://learn.microsoft.com/en-us/azure/storage/blobs/scalability-targets |
+| Azure Blob Storage scalability and performance limits | https://learn.microsoft.com/en-us/azure/storage/blobs/scalability-targets |
 | Scalability limits for premium block blob storage accounts | https://learn.microsoft.com/en-us/azure/storage/blobs/scalability-targets-premium-block-blobs |
 | Use premium page blob storage scalability targets | https://learn.microsoft.com/en-us/azure/storage/blobs/scalability-targets-premium-page-blobs |
 | Limitations and known issues for SFTP on Azure Blob Storage | https://learn.microsoft.com/en-us/azure/storage/blobs/secure-file-transfer-protocol-known-issues |
@@ -149,11 +150,11 @@ This skill requires **network access** to fetch documentation content:
 | Configure POSIX-style ACLs for Azure Data Lake Storage | https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-access-control |
 | Configure access control for Azure Data Lake Storage | https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-access-control-model |
 | Configure Data Lake Storage ACLs in Azure portal | https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-acl-azure-portal |
-| Manage Azure Data Lake Storage ACLs using Azure CLI | https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-acl-cli |
+| Manage Data Lake Storage ACLs with Azure CLI | https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-acl-cli |
 | Use .NET to configure ACLs in Azure Data Lake Storage | https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-acl-dotnet |
 | Use Java to configure ACLs in Azure Data Lake Storage | https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-acl-java |
 | Use JavaScript to configure ACLs in Azure Data Lake Storage | https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-acl-javascript |
-| Manage Azure Data Lake Storage ACLs using PowerShell | https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-acl-powershell |
+| Manage Data Lake Storage ACLs with PowerShell | https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-acl-powershell |
 | Use Python to configure ACLs in Azure Data Lake Storage | https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-acl-python |
 | Manage Data Lake Storage ACLs with Storage Explorer | https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-explorer-acl |
 | Use customer-provided encryption keys with Blob Storage | https://learn.microsoft.com/en-us/azure/storage/blobs/encryption-customer-provided-keys |

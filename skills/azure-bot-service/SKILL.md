@@ -1,9 +1,9 @@
 ---
 name: azure-bot-service
-description: Expert knowledge for Azure AI Bot Service development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building Azure AI bots with Direct Line/Web Chat, Teams, OAuth/SSO, human handoff, or proactive messaging, and other Azure AI Bot Service related development tasks. Not for Azure Health Bot (use azure-health-bot), Azure Functions (use azure-functions), Azure App Service (use azure-app-service), Azure Logic Apps (use azure-logic-apps).
+description: Expert knowledge for Azure AI Bot Service development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building bots with adaptive dialogs, Direct Line/Web Chat, Teams integration, OAuth/SSO, or proactive messages, and other Azure AI Bot Service related development tasks. Not for Azure Health Bot (use azure-health-bot), Azure Web PubSub (use azure-web-pubsub), Azure Functions (use azure-functions), Azure App Service (use azure-app-service).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-17"
+  generated_at: "2026-08-02"
   generator: "docs2skills/1.0.0"
 ---
 # Azure AI Bot Service Skill
@@ -30,7 +30,7 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L74-L86 | Designing bot architectures: dialog modularization, branching/looping flows, multi-LUIS/QnA routing, embedding bots in apps/web, human handoff, knowledge bots, and reusable skills. |
 | Limits & Quotas | L87-L92 | Handling long-running bot operations (deferred replies, proactive messages) and checking which channels support specific features, attachments, and card types. |
 | Security | L93-L112 | Securing Azure bots: auth/SSO (OAuth, Web Chat, skills), Direct Line security, network isolation/VNET, encryption, privacy, and configuring bot/connector authentication. |
-| Configuration | L113-L157 | Configuring Azure AI bots: dialogs, language generation/understanding, memory/state, channels (Web Chat, Direct Line), telemetry/monitoring, skills, and environment-specific settings. |
+| Configuration | L113-L157 | Configuring Azure bots: adaptive dialogs/expressions, language generation and understanding, state/storage, telemetry/monitoring, Web Chat and channels, skills, and environment-specific settings. |
 | Integrations & Coding Patterns | L158-L217 | Connecting bots to channels (Teams, SMS, web, social), using Direct Line/Web Chat, handling activities/messages, media, cards, prompts, OAuth, state, skills, and channel-specific features. |
 | Deployment | L218-L223 | Guides for provisioning App Service, deploying Bot Framework bots to Azure, and setting up CI/CD pipelines for automated bot deployment. |
 
@@ -145,7 +145,7 @@ This skill requires **network access** to fetch documentation content:
 | Inject and use LG functions inside templates | https://learn.microsoft.com/en-us/azure/bot-service/language-generation/functions-injected-from-language-generation?view=azure-bot-service-4.0 |
 | Language Generation API reference for Bot Framework | https://learn.microsoft.com/en-us/azure/bot-service/language-generation/language-generation-api-reference?view=azure-bot-service-4.0 |
 | Define structured response templates with Language Generation | https://learn.microsoft.com/en-us/azure/bot-service/language-generation/language-generation-structured-response-template?view=azure-bot-service-4.0 |
-| Reference monitoring metrics and logs for Azure Bot Service | https://learn.microsoft.com/en-us/azure/bot-service/monitor-bot-service-reference?view=azure-bot-service-4.0 |
+| Reference monitoring metrics and logs for Azure AI Bot Service | https://learn.microsoft.com/en-us/azure/bot-service/monitor-bot-service-reference?view=azure-bot-service-4.0 |
 | Configure and analyze monitoring for Azure bots | https://learn.microsoft.com/en-us/azure/bot-service/monitor-bot-service?view=azure-bot-service-4.0 |
 | Provision Azure Bot resources using Azure CLI and ARM | https://learn.microsoft.com/en-us/azure/bot-service/provision-azure-bot?view=azure-bot-service-4.0 |
 | Select correct OAuth and redirect URLs for bots | https://learn.microsoft.com/en-us/azure/bot-service/ref-oauth-redirect-urls?view=azure-bot-service-4.0 |

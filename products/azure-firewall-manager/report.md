@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-26'
+generated_at: '2026-08-02'
 category_descriptions:
   configuration: 'Configuring Azure Firewall Manager and policies: DDoS plans, DNS/DNS
     proxy, FQDN/IP group rules, WAF policy management, rule hierarchy, private endpoint
@@ -9,22 +9,21 @@ category_descriptions:
     filtering behavior
   security: 'Configuring Azure Firewall Manager for security: DDoS Protection plans,
     centralized WAF policy management, and threat intelligence-based traffic filtering.'
-  decision-making: Guidance on choosing between a secured virtual hub and a hub virtual
-    network in Azure Firewall Manager, including architecture, security, routing,
-    and management trade-offs.
+  decision-making: Guidance on when to use Azure Firewall Manager with a hub virtual
+    network vs a secured virtual hub, including architecture, scenarios, and trade-offs
+    for each option.
 skill_description: Expert knowledge for Azure Firewall Manager development including
   best practices, decision making, security, and configuration. Use when configuring
-  DDoS plans, DNS proxy, FQDN/IP groups, WAF policies, or secured virtual hubs in
-  Azure Firewall Manager, and other Azure Firewall Manager related development tasks.
-  Not for Azure Firewall (use azure-firewall), Azure Virtual Network Manager (use
-  azure-virtual-network-manager), Azure Virtual Network (use azure-virtual-network),
-  Azure Web Application Firewall (use azure-web-application-firewall).
+  DDoS plans, DNS proxy, FQDN/IP groups, WAF policies, or secured virtual hubs, and
+  other Azure Firewall Manager related development tasks. Not for Azure Firewall (use
+  azure-firewall), Azure Virtual Network Manager (use azure-virtual-network-manager),
+  Azure Network Function Manager (use azure-network-function-manager), Azure Web Application
+  Firewall (use azure-web-application-firewall).
 use_when: Use when configuring DDoS plans, DNS proxy, FQDN/IP groups, WAF policies,
-  or secured virtual hubs in Azure Firewall Manager, and other Azure Firewall Manager
-  related development tasks.
+  or secured virtual hubs, and other Azure Firewall Manager related development tasks.
 confusable_not_for: Not for Azure Firewall (use azure-firewall), Azure Virtual Network
-  Manager (use azure-virtual-network-manager), Azure Virtual Network (use azure-virtual-network),
-  Azure Web Application Firewall (use azure-web-application-firewall).
+  Manager (use azure-virtual-network-manager), Azure Network Function Manager (use
+  azure-network-function-manager), Azure Web Application Firewall (use azure-web-application-firewall).
 ---
 # Azure Firewall Manager Crawl Report
 
@@ -38,8 +37,8 @@ confusable_not_for: Not for Azure Firewall (use azure-firewall), Azure Virtual N
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 23
+- **Updated Pages**: 2
+- **Unchanged**: 25
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-firewall-manager/azure-firewall-manager.csv`
 
@@ -57,21 +56,17 @@ confusable_not_for: Not for Azure Firewall (use azure-firewall), Azure Virtual N
 
 ### Updated Pages
 
-- [Secure your virtual hub - portal](https://learn.microsoft.com/en-us/azure/firewall-manager/secure-cloud-network)
-  - Updated: 2026-01-29T23:12:00.000Z → 2026-07-23T11:40:00.000Z
-- [Deploy security partner providers](https://learn.microsoft.com/en-us/azure/firewall-manager/deploy-trusted-security-partner)
-  - Updated: 2024-12-05T23:02:00.000Z → 2026-07-22T12:23:00.000Z
-- [Configure DDoS Protection Plan](https://learn.microsoft.com/en-us/azure/firewall-manager/configure-ddos)
-  - Updated: 2024-11-19T18:02:00.000Z → 2026-07-23T11:40:00.000Z
-- [Manage WAF policies](https://learn.microsoft.com/en-us/azure/firewall-manager/manage-web-application-firewall-policies)
-  - Updated: 2024-07-29T17:21:00.000Z → 2026-07-23T11:40:00.000Z
+- [Deploy firewall with policy - ARM template](https://learn.microsoft.com/en-us/azure/firewall-manager/quick-firewall-policy)
+  - Updated: 2025-01-08T08:00:00.000Z → 2026-08-01T05:13:00.000Z
+- [Architecture options](https://learn.microsoft.com/en-us/azure/firewall-manager/vhubs-and-vnets)
+  - Updated: 2024-03-08T16:06:00.000Z → 2026-08-01T05:13:00.000Z
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
 | [DNS settings](https://learn.microsoft.com/en-us/azure/firewall-manager/dns-settings) | configuration | 0.75 | Describes DNS settings including default behavior (Azure DNS, DNS Proxy disabled) and how to configure custom DNS and proxy; these are explicit configuration parameters and defaults. |
-| [Architecture options](https://learn.microsoft.com/en-us/azure/firewall-manager/vhubs-and-vnets) | decision-making | 0.70 | Compares two Azure Firewall Manager architecture options with service-specific considerations; while summary is high-level, the full article is a decision guide for when to use each architecture, which is product-specific decision-making content. |
+| [Architecture options](https://learn.microsoft.com/en-us/azure/firewall-manager/vhubs-and-vnets) | decision-making | 0.70 | Compares hub virtual network and secured virtual hub architectures for Azure Firewall Manager, providing product-specific guidance on when to use each option and their trade-offs; this is architecture and service selection guidance rather than a generic overview. |
 | [Configure DDoS Protection Plan](https://learn.microsoft.com/en-us/azure/firewall-manager/configure-ddos) | configuration | 0.70 | Describes specific product behaviors and constraints (e.g., DDoS Protection not supporting virtual WANs, force tunneling workaround, tenant-level application of plans) and how to associate virtual networks with a DDoS plan, which are product-specific configuration details. |
 | [Define a rule hierarchy](https://learn.microsoft.com/en-us/azure/firewall-manager/rule-hierarchy) | configuration | 0.70 | Explains how to structure rule hierarchy in Firewall policy to enforce compliance while enabling CI/CD; this is product-specific configuration of rule ordering and scope. |
 | [FQDN in network rules](https://learn.microsoft.com/en-us/azure/firewall-manager/fqdn-filtering-network-rules) | configuration | 0.70 | Describes using FQDNs in network rules based on DNS resolution and the requirement to enable DNS Proxy; these are concrete, product-specific configuration requirements. |
@@ -88,7 +83,7 @@ confusable_not_for: Not for Azure Firewall (use azure-firewall), Azure Virtual N
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
 | [Create and update policy](https://learn.microsoft.com/en-us/azure/firewall-manager/create-policy-powershell) | 0.30 | PowerShell quickstart for creating/updating firewall policy; procedural tutorial without structured config tables or error mappings. |
-| [Deploy firewall with policy - ARM template](https://learn.microsoft.com/en-us/azure/firewall-manager/quick-firewall-policy) | 0.30 | ARM template quickstart; focuses on deploying a sample firewall and policy, not on exhaustive configuration or limits. |
+| [Deploy firewall with policy - ARM template](https://learn.microsoft.com/en-us/azure/firewall-manager/quick-firewall-policy) | 0.30 | Quickstart ARM template showing a basic Azure Firewall and policy deployment; primarily a step-by-step tutorial without configuration parameter tables, limits, error codes, or product-specific best-practice guidance beyond generic example rules. |
 | [Deploy firewall with policy - Bicep](https://learn.microsoft.com/en-us/azure/firewall-manager/quick-firewall-policy-bicep) | 0.30 | Bicep quickstart for firewall and policy; example rules and IPs but no reusable configuration tables, limits, or decision matrices. |
 | [Deploy firewall with policy - Terraform](https://learn.microsoft.com/en-us/azure/firewall-manager/quick-firewall-policy-terraform) | 0.30 | Terraform quickstart; mainly a deployment example, not a configuration reference or best-practices guide with quantified impact. |
 | [Deploy security partner providers](https://learn.microsoft.com/en-us/azure/firewall-manager/deploy-trusted-security-partner) | 0.30 | Primarily a how-to deployment/tutorial for adding a security partner provider; summary does not indicate detailed configuration tables, limits, or product-specific error/diagnostic content that would qualify as expert knowledge under the defined categories. |

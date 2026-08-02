@@ -1,9 +1,9 @@
 ---
 name: azure-resource-manager
-description: Expert knowledge for Azure Resource Manager development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when authoring Bicep/ARM templates, using CLI/PowerShell/SDKs, deploying stacks/registries, or securing Key Vault secrets, and other Azure Resource Manager related development tasks. Not for Azure Policy (use azure-policy), Azure Blueprints (use azure-blueprints), Azure Resource Graph (use azure-resource-graph), Azure Portal (use azure-portal).
+description: Expert knowledge for Azure Resource Manager development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when authoring Bicep/ARM templates, using CLI/PowerShell/SDKs, Key Vault, stacks/registries, or multi-scope deployments, and other Azure Resource Manager related development tasks. Not for Azure Blueprints (use azure-blueprints), Azure Policy (use azure-policy), Azure Resource Graph (use azure-resource-graph), Azure Portal (use azure-portal).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-26"
+  generated_at: "2026-08-02"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Resource Manager Skill
@@ -30,9 +30,9 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L197-L204 | Bicep architecture patterns for reusable configs, flexible parameters, deterministic name generation, and sharing variables across templates for scalable ARM deployments. |
 | Limits & Quotas | L205-L234 | ARM/Bicep limits, quotas, and constraints: subscription/RG caps, template size and history limits, naming/tag rules, throttling, and how to diagnose and fix quota-related deployment errors. |
 | Security | L235-L264 | Securing ARM/Bicep deployments: cross-tenant auth, private endpoints/VNETs, secrets handling (Key Vault, secure params), RBAC/locks, policy/regulatory mapping, and TLS/network hardening. |
-| Configuration | L265-L319 | Configuring ARM and Bicep templates: file structure, parameters, scopes, tags, networking, monitoring, policy, custom providers, portal Form view UI, and deployment/AI tooling setup. |
-| Integrations & Coding Patterns | L320-L381 | Bicep and ARM template functions, operators, and patterns; integrating with CLI/PowerShell/SDKs/REST, using Key Vault, AKS, custom providers, and programmatic resource/tag management. |
-| Deployment | L382-L439 | Deploying and moving Azure resources with ARM/Bicep: scripts, stacks, registries, multi-scope deployments, CI/CD, and region/subscription relocation for many Azure services. |
+| Configuration | L265-L320 | Configuring ARM and Bicep deployments: linter and env setup, parameters, scopes, dependencies, tags, custom providers, monitoring, policy/governance, portal Form view UI, and preview/feature management. |
+| Integrations & Coding Patterns | L321-L382 | Bicep and ARM template functions, operators, and patterns; integrating with CLI/PowerShell/SDKs/REST, using Key Vault, AKS, custom providers, and programmatic resource/tag management. |
+| Deployment | L383-L439 | Deploying and moving Azure resources with ARM/Bicep: scripts, stacks, registries, multi-scope deployments, CI/CD, and region/subscription relocation for many Azure services. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -290,6 +290,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure monitoring and alerts for Azure Resource Manager | https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/monitor-resource-manager |
 | Use built-in Azure Policy definitions for ARM governance | https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/policy-reference |
 | Configure and manage Azure preview features via Microsoft.Features | https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/preview-features |
+| Relocate Azure Log Analytics workspace across regions | https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/relocation/relocation-log-analytics |
 | Use Resource Group insights to monitor application health | https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/resource-group-insights |
 | Manage and delete personal data in Azure Resource Manager | https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/resource-manager-personal-data |
 | Discover Azure resource providers, types, and API versions | https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/resource-providers-and-types |
@@ -411,7 +412,6 @@ This skill requires **network access** to fetch documentation content:
 | Relocate Azure HDInsight clusters across regions | https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/relocation/relocation-hdinsight |
 | Work around lack of Azure Key Vault relocation | https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/relocation/relocation-key-vault |
 | Relocate Azure Kubernetes Service clusters by region | https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/relocation/relocation-kubernetes-service |
-| Relocate Log Analytics workspaces and reconfigure senders | https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/relocation/relocation-log-analytics |
 | Relocate Azure NetApp Files volumes across regions | https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/relocation/relocation-netapp |
 | Relocate Azure Database for PostgreSQL across regions | https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/relocation/relocation-postgresql-flexible-server |
 | Relocate Azure Private Link Service to new regions | https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/relocation/relocation-private-link |

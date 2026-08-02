@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-12'
+generated_at: '2026-08-02'
 category_descriptions:
   security: Managing secure access to Azure Firmware Analysis using service principals
     and configuring role-based access control (RBAC) permissions for users and apps
@@ -37,8 +37,8 @@ confusable_not_for: Not for Azure Defender For Iot (use azure-defender-for-iot),
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 16
+- **Updated Pages**: 2
+- **Unchanged**: 14
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-firmware-analysis/azure-firmware-analysis.csv`
 
@@ -53,6 +53,13 @@ confusable_not_for: Not for Azure Defender For Iot (use azure-defender-for-iot),
 | *(Unclassified)* | 5 | 31.2% |
 
 ## Changes
+
+### Updated Pages
+
+- [FAQ](https://learn.microsoft.com/en-us/azure/firmware-analysis/firmware-analysis-faq)
+  - Updated: 2026-07-10T17:20:00.000Z → 2026-07-29T08:00:00.000Z
+- [What's new?](https://learn.microsoft.com/en-us/azure/firmware-analysis/release-notes)
+  - Updated: 2026-07-07T08:00:00.000Z → 2026-07-29T08:00:00.000Z
 
 ## Classified Pages
 
@@ -76,6 +83,6 @@ confusable_not_for: Not for Azure Defender For Iot (use azure-defender-for-iot),
 |-----------|------------|--------|
 | [Firmware analysis integration with Azure Device Registry](https://learn.microsoft.com/en-us/azure/firmware-analysis/firmware-analysis-integration-with-azure-device-registry) | 0.30 | Describes conceptual integration between Firmware analysis and Azure Device Registry; summary does not indicate specific configuration parameters, code, limits, or troubleshooting details required for any sub-skill type. |
 | [UEFI firmware analysis capabilities](https://learn.microsoft.com/en-us/azure/firmware-analysis/unified-extensible-firmware-interface-firmware-analysis) | 0.30 | Describes capabilities and limitations of UEFI firmware analysis at a conceptual level; no clear evidence of numeric limits, configuration parameters, or detailed troubleshooting/decision matrices from the summary. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/firmware-analysis/firmware-analysis-faq) | 0.20 | FAQ pages are typically conceptual or explanatory. Based on the description, this page answers general questions about what firmware analysis is and how it works, but there's no indication of specific limits, error codes, configuration tables, or other product-specific expert details. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/firmware-analysis/firmware-analysis-faq) | 0.20 | FAQ content is typically high-level Q&A without detailed limits, configuration tables, error-code mappings, or other product-specific expert data as defined by the sub-skill types. |
 | [Overview](https://learn.microsoft.com/en-us/azure/firmware-analysis/overview-firmware-analysis) | 0.20 | High-level overview of firmware analysis and IoT security concerns without product-specific limits, configs, or detailed procedures. |
-| [What's new?](https://learn.microsoft.com/en-us/azure/firmware-analysis/release-notes) | 0.10 | Release notes list new features and enhancements but usually lack structured limits, configuration matrices, or troubleshooting mappings. The summary suggests high-level change information rather than detailed expert configuration, limits, or diagnostic content. |
+| [What's new?](https://learn.microsoft.com/en-us/azure/firmware-analysis/release-notes) | 0.10 | Release notes list new features and changes but generally do not provide structured limits, configuration parameters, troubleshooting mappings, or decision matrices required for any sub-skill type. |

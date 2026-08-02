@@ -39,7 +39,7 @@ confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Monit
 - **New Pages**: 0
 - **Updated Pages**: 0
 - **Unchanged**: 108
-- **Deleted Pages**: 1
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-reliability/azure-reliability.csv`
 
 ## Classification Statistics
@@ -53,10 +53,6 @@ confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Monit
 | *(Unclassified)* | 60 | 55.6% |
 
 ## Changes
-
-### Deleted Pages
-
-- ~~Microsoft Fabric~~ (https://learn.microsoft.com/en-us/azure/reliability/reliability-fabric)
 
 ## Classified Pages
 

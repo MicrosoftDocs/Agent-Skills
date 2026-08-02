@@ -1,9 +1,9 @@
 ---
 name: azure-well-architected
-description: Expert guidance for designing, assessing, and optimizing Azure workloads using Azure Well Architected. Covers design review checklists, recommendations, design principles, tradeoffs, service guides, workload patterns, and assessment questions. Use when designing AI, HPC, SaaS, AVD, or mission-critical Azure workloads with WAF-aligned guidance, and other Azure Well Architected related development tasks.
+description: Expert guidance for designing, assessing, and optimizing Azure workloads using Azure Well Architected. Covers design review checklists, recommendations, design principles, tradeoffs, service guides, workload patterns, and assessment questions. Use when designing AI, HPC, SaaS, AVD, AVS, or mission‑critical workloads on Azure, and other Azure Well Architected related development tasks.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-28"
+  generated_at: "2026-08-02"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Well Architected Skill
@@ -25,7 +25,7 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Design Review Checklists | L35-L43 | Checklists to review Azure workloads for cost, operations, performance, reliability, and security best practices and identify gaps against Well-Architected guidance. |
-| Recommendations | L44-L117 | Guidance on cost optimization, operations, performance, reliability, security, and sustainability best practices for architecting and running Azure workloads. |
+| Recommendations | L44-L117 | Prescriptive best practices for Azure cost, operations, performance, reliability, security, and sustainability—covering design, automation, monitoring, testing, scaling, and governance of cloud workloads. |
 | Design Principles | L118-L132 | Design patterns and best practices for cost, reliability, security, performance, operations, sustainability, and mission-critical design across AI, SaaS, AVD, HPC, and other Azure workloads. |
 | Tradeoffs | L133-L142 | Guidance on weighing cost, reliability, performance, security, and operations tradeoffs in Azure architectures, including regions/AZ choices and cross-pillar design decisions. |
 | Service Guides | L143-L178 | End-to-end Well-Architected (WAF) guidance for specific Azure services—covering design, networking, security/IAM, monitoring, BCDR, performance, and cost optimization patterns. |
@@ -73,7 +73,7 @@ This skill requires **network access** to fetch documentation content:
 | Design an observability and monitoring system in Azure | https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/observability |
 | Implement safe deployment practices for Azure workloads | https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/safe-deployments |
 | Apply testing strategies for operational excellence | https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/testing |
-| Standardize development tools and processes for Azure teams | https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/tools-processes |
+| Standardize development tools and processes for OpEx | https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/tools-processes |
 | Implement CI/CD-based workload development supply chains | https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/workload-supply-chain |
 | Implement capacity planning for Azure performance efficiency | https://learn.microsoft.com/en-us/azure/well-architected/performance-efficiency/capacity-planning |
 | Continuously optimize performance efficiency in Azure | https://learn.microsoft.com/en-us/azure/well-architected/performance-efficiency/continuous-performance-optimize |
@@ -98,10 +98,10 @@ This skill requires **network access** to fetch documentation content:
 | Build self-healing and self-preservation into workloads | https://learn.microsoft.com/en-us/azure/well-architected/reliability/self-preservation |
 | Implement simplicity and efficiency for reliable workloads | https://learn.microsoft.com/en-us/azure/well-architected/reliability/simplify |
 | Securely manage and store application secrets in Azure | https://learn.microsoft.com/en-us/azure/well-architected/security/application-secrets |
-| Implement data classification for secure workloads | https://learn.microsoft.com/en-us/azure/well-architected/security/data-classification |
+| Implement data classification for secure Azure workloads | https://learn.microsoft.com/en-us/azure/well-architected/security/data-classification |
 | Apply encryption and secret management for Azure data | https://learn.microsoft.com/en-us/azure/well-architected/security/encryption |
 | Establish and apply a security baseline in Azure | https://learn.microsoft.com/en-us/azure/well-architected/security/establish-baseline |
-| Implement security hardening controls for Azure workloads | https://learn.microsoft.com/en-us/azure/well-architected/security/harden-resources |
+| Harden Azure resources to reduce attack surface | https://learn.microsoft.com/en-us/azure/well-architected/security/harden-resources |
 | Design identity and access management for workloads | https://learn.microsoft.com/en-us/azure/well-architected/security/identity-access |
 | Implement security incident response for Azure workloads | https://learn.microsoft.com/en-us/azure/well-architected/security/incident-response |
 | Design monitoring and threat detection for Azure workloads | https://learn.microsoft.com/en-us/azure/well-architected/security/monitor-threats |

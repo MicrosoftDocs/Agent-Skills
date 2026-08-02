@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-26'
+generated_at: '2026-08-02'
 category_descriptions:
   decision-making: Guidance on choosing Azure Firewall SKUs (Basic/Standard/Premium),
     comparing features and throughput, and planning or changing deployments based
@@ -48,13 +48,13 @@ confusable_not_for: Not for Azure Firewall Manager (use azure-firewall-manager),
 - **Total Pages**: 87
 - **Fetched**: 87
 - **Fetch Failed**: 0
-- **Classified**: 62
-- **Unclassified**: 25
+- **Classified**: 60
+- **Unclassified**: 27
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 0
-- **Unchanged**: 86
+- **New Pages**: 0
+- **Updated Pages**: 2
+- **Unchanged**: 85
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-firewall/azure-firewall.csv`
 
@@ -63,21 +63,24 @@ confusable_not_for: Not for Azure Firewall Manager (use azure-firewall-manager),
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 8 | 9.2% |
-| best-practices | 4 | 4.6% |
-| configuration | 21 | 24.1% |
+| best-practices | 3 | 3.4% |
+| configuration | 20 | 23.0% |
 | decision-making | 5 | 5.7% |
 | deployment | 5 | 5.7% |
 | integrations | 1 | 1.1% |
 | limits-quotas | 6 | 6.9% |
 | security | 10 | 11.5% |
 | troubleshooting | 2 | 2.3% |
-| *(Unclassified)* | 25 | 28.7% |
+| *(Unclassified)* | 27 | 31.0% |
 
 ## Changes
 
-### New Pages
+### Updated Pages
 
-- [HTTP header insertion](https://learn.microsoft.com/en-us/azure/firewall/configure-http-header-insertion)
+- [Policy Analytics](https://learn.microsoft.com/en-us/azure/firewall/policy-analytics)
+  - Updated: 2026-03-29T11:12:00.000Z → 2026-07-29T05:11:00.000Z
+- [Explicit Proxy](https://learn.microsoft.com/en-us/azure/firewall/explicit-proxy)
+  - Updated: 2026-03-29T11:12:00.000Z → 2026-07-31T11:41:00.000Z
 
 ## Classified Pages
 
@@ -129,11 +132,9 @@ confusable_not_for: Not for Azure Firewall Manager (use azure-firewall-manager),
 | [Azure Firewall Workbooks](https://learn.microsoft.com/en-us/azure/firewall/firewall-workbook) | configuration | 0.65 | Explains using Azure Firewall workbooks for data analysis and visualization; involves specific workbook parameters, queries, and configuration steps, which are product-specific configuration/integration details. |
 | [Deploy and configure - classic](https://learn.microsoft.com/en-us/azure/firewall/tutorial-firewall-deploy-portal) | security | 0.65 | Portal-based configuration of Azure Firewall rules and routing for outbound control is security configuration specific to this product. |
 | [Deploy in hybrid network - classic](https://learn.microsoft.com/en-us/azure/firewall/tutorial-hybrid-portal) | security | 0.65 | Shows how to secure a hybrid network with Azure Firewall rules and routing; contains product-specific security configuration steps. |
-| [Explicit Proxy](https://learn.microsoft.com/en-us/azure/firewall/explicit-proxy) | configuration | 0.65 | Explains switching from transparent to explicit proxy, including UDR behavior and explicit proxy settings; contains product-specific configuration parameters and modes. |
 | [Firewall with inbound DNAT rules](https://learn.microsoft.com/en-us/azure/firewall/tutorial-firewall-dnat-policy) | configuration | 0.65 | Details DNAT policy behavior, rule collection actions, and implicit network rules; product-specific configuration semantics for DNAT. |
 | [Forced tunneling](https://learn.microsoft.com/en-us/azure/firewall/forced-tunneling) | architecture-patterns | 0.65 | Gives product-specific architectural guidance on routing Internet-bound traffic via another NVA, including when to use Firewall Management NIC; this is a design/architecture pattern for Azure Firewall. |
 | [Logs and metrics](https://learn.microsoft.com/en-us/azure/firewall/monitor-firewall) | configuration | 0.65 | Describes how to monitor Azure Firewall using logs and Azure Monitor; such articles typically include specific log categories, metrics, and configuration steps, which are product-specific monitoring configuration details. |
-| [Policy Analytics](https://learn.microsoft.com/en-us/azure/firewall/policy-analytics) | best-practices | 0.65 | Focuses on using Policy Analytics to manage and optimize rules; contains product-specific guidance on improving rule sets and avoiding downtime, which is actionable best-practice content. |
 | [Portal](https://learn.microsoft.com/en-us/azure/firewall/firewall-azure-policy) | security | 0.65 | Describes using Azure Policy to govern Azure Firewall configurations and enforce security/compliance standards; likely includes specific built-in policy definitions and parameters, which are product-specific security configuration details. |
 | [Portal](https://learn.microsoft.com/en-us/azure/firewall/premium-deploy) | deployment | 0.65 | Covers deploying Premium with a specific test topology and notes Bastion hourly pricing behavior; includes product-specific deployment considerations and requirements for this SKU. |
 | [Portal, PowerShell, and CLI](https://learn.microsoft.com/en-us/azure/firewall/create-ip-group) | configuration | 0.65 | Step-by-step creation of IP Groups with details on allowed address forms (single IP, multiple IPs, ranges); concrete configuration behavior for this feature. |
@@ -152,6 +153,7 @@ confusable_not_for: Not for Azure Firewall Manager (use azure-firewall-manager),
 |-----------|------------|--------|
 | [IDPS signature rule categories](https://learn.microsoft.com/en-us/azure/firewall/idps-signature-categories) | 0.50 | Lists IDPS signature categories and descriptions; categorical taxonomy but no configuration parameters, limits, or decision matrices. |
 | [Rule processing logic](https://learn.microsoft.com/en-us/azure/firewall/rule-processing) | 0.45 | Describes rule processing order and default deny behavior conceptually; no specific numeric limits or config tables. |
+| [Explicit Proxy](https://learn.microsoft.com/en-us/azure/firewall/explicit-proxy) | 0.40 | Page appears to describe how explicit proxy mode works conceptually (transparent vs explicit, routing via private IP) without clear indication of configuration parameter tables, limits, or error-code-based troubleshooting; likely a mode/feature explanation rather than detailed expert configuration or limits. |
 | [FQDN filtering](https://learn.microsoft.com/en-us/azure/firewall/domain-filtering-overview) | 0.40 | Conceptual explanation of FQDN filtering and rule types; no evidence of detailed configuration tables or limits in the summary. |
 | [Policy rule sets](https://learn.microsoft.com/en-us/azure/firewall/policy-rule-sets) | 0.40 | Describes policy hierarchy (rule collection groups, collections, rules) conceptually; lacks concrete config tables or numeric thresholds. |
 | [Portal](https://learn.microsoft.com/en-us/azure/firewall/tutorial-firewall-deploy-portal-policy) | 0.40 | General tutorial on deploying and configuring firewall and policy via portal; primarily step-by-step without detailed config matrices or numeric limits. |
@@ -162,6 +164,7 @@ confusable_not_for: Not for Azure Firewall Manager (use azure-firewall-manager),
 | [Overview](https://learn.microsoft.com/en-us/azure/firewall/premium-portal) | 0.35 | Portal overview of Premium; summary points to high-level features, not detailed configuration parameters or limits. |
 | [Azure Firewall with Microsoft Sentinel](https://learn.microsoft.com/en-us/azure/firewall/firewall-sentinel-overview) | 0.30 | Overview of integrating Azure Firewall with Microsoft Sentinel; largely conceptual about benefits and scenarios, without detailed configuration parameters or numeric thresholds. |
 | [Deploy with Availability Zones](https://learn.microsoft.com/en-us/azure/firewall/deploy-availability-zone-powershell) | 0.30 | Availability Zones deployment via PowerShell; likely procedural without detailed limits, config parameter tables, or error mappings. |
+| [Policy Analytics](https://learn.microsoft.com/en-us/azure/firewall/policy-analytics) | 0.30 | Summary indicates a conceptual/feature overview of Policy Analytics (visibility, insights, rule optimization) without evidence of numeric limits, configuration tables, error codes, or detailed settings; likely not containing the specific expert-knowledge patterns defined. |
 | [Portal](https://learn.microsoft.com/en-us/azure/firewall/tutorial-hybrid-portal-policy) | 0.30 | Tutorial-style deployment and configuration walkthrough for Azure Firewall in a hybrid network using the portal; primarily step-by-step instructions without clear evidence of detailed limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. Content appears to be general how-to guidance rather than expert-only reference data. |
 | [Preview features](https://learn.microsoft.com/en-us/azure/firewall/firewall-preview) | 0.30 | Lists preview features conceptually; no detailed limits, configs, or troubleshooting mappings. |
 | [Service tags](https://learn.microsoft.com/en-us/azure/firewall/service-tags) | 0.30 | Overview of service tags; describes concept and usage but not detailed configuration parameters, limits, or troubleshooting mappings. |

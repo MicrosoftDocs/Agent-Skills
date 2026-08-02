@@ -44,8 +44,8 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 59
+- **Updated Pages**: 0
+- **Unchanged**: 60
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-connector/azure-service-connector.csv`
 
@@ -62,11 +62,6 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 | *(Unclassified)* | 20 | 33.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [Azure Cache for Redis](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-redis-cache)
-  - Updated: 2026-06-18T08:00:00.000Z → 2026-07-23T11:40:00.000Z
 
 ## Classified Pages
 

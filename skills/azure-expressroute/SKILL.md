@@ -1,9 +1,9 @@
 ---
 name: azure-expressroute
-description: Expert knowledge for Azure ExpressRoute development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing ExpressRoute circuits, gateways, BGP routing, Global Reach, NAT/encryption, or ARM/Terraform automation, and other Azure ExpressRoute related development tasks. Not for Azure Virtual WAN (use azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway), Azure Virtual Network (use azure-virtual-network), Azure Internet Peering (use azure-internet-peering).
+description: Expert knowledge for Azure ExpressRoute development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring circuits/gateways, BGP/peering (incl. IPv6), Global Reach, QoS for voice, or ExpressRoute VPN, and other Azure ExpressRoute related development tasks. Not for Azure Internet Peering (use azure-internet-peering), Azure Peering Service (use azure-peering-service), Azure Virtual WAN (use azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-19"
+  generated_at: "2026-08-02"
   generator: "docs2skills/1.0.0"
 ---
 # Azure ExpressRoute Skill
@@ -25,7 +25,7 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L37-L42 | Troubleshooting ExpressRoute resiliency and asymmetric routing issues, plus FAQs on connectivity models, supported services, bandwidth, and pricing to resolve design or outage-related questions. |
-| Best Practices | L43-L50 | Best practices for ExpressRoute: upgrading circuit bandwidth, using BGP communities in complex topologies, QoS for Skype voice, and migrating to new gateway hardware. |
+| Best Practices | L43-L50 | Guidance on ExpressRoute operations: scaling circuit bandwidth, using BGP communities for complex topologies, applying QoS for Skype voice, and migrating legacy gateways to new hardware. |
 | Decision Making | L51-L59 | Guidance on choosing ExpressRoute connectivity models, VNets and gateways, planning gateway SKU changes, and estimating/managing ExpressRoute costs. |
 | Architecture & Design Patterns | L60-L71 | Designing resilient, highly available ExpressRoute architectures, including DR patterns, multi-circuit routing/Global Reach, VPN coexistence and failover, and using Microsoft peering for PSTN. |
 | Limits & Quotas | L72-L80 | ExpressRoute limits on bandwidth, routes, gateways, FastPath, provider rate limiting, plus monitoring and FAQs to avoid hitting connectivity and quota constraints. |
@@ -43,7 +43,7 @@ This skill requires **network access** to fetch documentation content:
 ### Best Practices
 | Topic | URL |
 |-------|-----|
-| Apply best practices for upgrading ExpressRoute circuit bandwidth | https://learn.microsoft.com/en-us/azure/expressroute/about-upgrade-circuit-bandwidth |
+| Best practices for upgrading ExpressRoute circuit bandwidth | https://learn.microsoft.com/en-us/azure/expressroute/about-upgrade-circuit-bandwidth |
 | Manage complex ExpressRoute networks using BGP communities | https://learn.microsoft.com/en-us/azure/expressroute/bgp-communities |
 | Apply QoS requirements for Skype voice over ExpressRoute | https://learn.microsoft.com/en-us/azure/expressroute/expressroute-qos |
 | Migrate legacy ExpressRoute gateway connections to new hardware | https://learn.microsoft.com/en-us/azure/expressroute/howto-recreate-connections |

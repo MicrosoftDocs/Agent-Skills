@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-26'
+generated_at: '2026-08-02'
 category_descriptions:
   security: 'Securing Web PubSub: authN/Z for chat, Socket.IO, MQTT; roles/permissions;
     Entra ID and managed identities; mTLS and WAF; keys/Key Vault; private endpoints,
@@ -50,10 +50,10 @@ confusable_not_for: Not for Azure SignalR Service (use azure-signalr-service), A
 - **Unclassified**: 35
 
 ### Incremental Update
-- **New Pages**: 11
-- **Updated Pages**: 1
-- **Unchanged**: 110
-- **Deleted Pages**: 3
+- **New Pages**: 1
+- **Updated Pages**: 0
+- **Unchanged**: 121
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-web-pubsub/azure-web-pubsub.csv`
 
 ## Classification Statistics
@@ -75,28 +75,11 @@ confusable_not_for: Not for Azure SignalR Service (use azure-signalr-service), A
 
 ### New Pages
 
-- [Overview](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/chat-overview)
-- [Configure storage and enable Chat](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/chat-howto-enable-chat)
-- [Quickstart](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/chat-quickstart)
-- [Tutorial](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/chat-tutorial)
-- [Authenticate and connect clients](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/chat-howto-authenticate)
-- [Create and manage rooms](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/chat-howto-manage-rooms)
-- [Send and read messages](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/chat-howto-messages)
-- [Configure roles and permissions](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/chat-howto-roles-permissions)
-- [Frequently asked questions](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/chat-faq)
-- [SDKs and REST API](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/chat-reference-sdk-and-rest)
-- [Error codes](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/chat-reference-errors)
-
-### Updated Pages
-
-- [What's new](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/whats-new)
-  - Updated: 2026-04-01T08:46:00.000Z → 2026-07-21T06:10:00.000Z
+- [Use playground to explore](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/quickstarts-playground)
 
 ### Deleted Pages
 
-- ~~FAQ~~ (https://learn.microsoft.com/en-us/azure/azure-web-pubsub/chat-hub-faq)
-- ~~Overview~~ (https://learn.microsoft.com/en-us/azure/azure-web-pubsub/chat-hub-overview)
-- ~~Quickstart~~ (https://learn.microsoft.com/en-us/azure/azure-web-pubsub/chat-hub-quickstart)
+- ~~Use LiveTry to explore~~ (https://learn.microsoft.com/en-us/azure/azure-web-pubsub/quickstarts-livetry)
 
 ## Classified Pages
 
@@ -223,9 +206,9 @@ confusable_not_for: Not for Azure SignalR Service (use azure-signalr-service), A
 | [PubSub among clients](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/quickstarts-pubsub-among-clients) | 0.20 | Quickstart showing basic pub/sub usage; tutorial-style without configuration matrices or quotas. |
 | [Publish and subscribe messages](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/tutorial-pub-sub-messages) | 0.20 | Tutorial combining WebSocket API and SDK; step-by-step app build, not configuration or limits reference. |
 | [Push message from server](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/quickstarts-push-messages-from-server) | 0.20 | Tutorial on pushing messages from server; focuses on pattern demonstration, not detailed product-specific configs. |
+| [Use playground to explore](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/quickstarts-playground) | 0.20 | Quickstart/tutorial for using the Azure Web PubSub playground; focuses on trying capabilities without code and explaining concepts like connections, groups, and messages. It does not present numeric limits, configuration parameter tables, error-code-based troubleshooting, or other product-specific expert details. |
 | [About Web PubSub](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/overview) | 0.10 | High-level overview and use cases for Azure Web PubSub without concrete limits, configs, or error details. |
 | [App scenarios](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/samples-app-scenarios) | 0.10 | Index of sample app scenarios; no indication of detailed limits, configs, or error mappings—primarily navigation/overview. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/chat-overview) | 0.10 | High-level overview of Web PubSub chat; no numeric limits, configuration tables, or detailed patterns beyond what an LLM likely knows. |
 | [Platform and frameworks](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/samples-platforms-and-frameworks) | 0.10 | Index of samples by platforms/frameworks; appears to be a listing page without deep configuration or troubleshooting content. |
-| [Use LiveTry to explore](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/quickstarts-livetry) | 0.10 | Playground usage guide; tool walkthrough rather than reference for limits, security, or configuration. |
 | [What's new](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/whats-new) | 0.10 | What's new/change log page with recent updates; description indicates high-level update summaries without detailed limits, configuration tables, error codes, or decision matrices. |

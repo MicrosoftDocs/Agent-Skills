@@ -3,7 +3,7 @@ name: azure-internet-peering
 description: Expert knowledge for Azure Internet Peering development including troubleshooting. Use when validating Peering Service prefixes, checking prefix registration, verifying routing, or fixing reachability issues, and other Azure Internet Peering related development tasks. Not for Azure ExpressRoute (use azure-expressroute), Azure Virtual Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-08-02"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Internet Peering Skill

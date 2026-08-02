@@ -44,9 +44,9 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 - **Unclassified**: 30
 
 ### Incremental Update
-- **New Pages**: 5
-- **Updated Pages**: 4
-- **Unchanged**: 47
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 56
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-private-link/azure-private-link.csv`
 
@@ -63,25 +63,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | *(Unclassified)* | 30 | 53.6% |
 
 ## Changes
-
-### New Pages
-
-- [Azure Private Link over IPv6 (Preview)](https://learn.microsoft.com/en-us/azure/private-link/private-link-ipv6)
-- [Standard service endpoint](https://learn.microsoft.com/en-us/azure/private-link/service-endpoint-standard-overview)
-- [Configure a standard service endpoint - Azure portal](https://learn.microsoft.com/en-us/azure/private-link/configure-service-endpoint-standard-portal)
-- [Configure a standard service endpoint - Azure CLI](https://learn.microsoft.com/en-us/azure/private-link/configure-service-endpoint-standard-cli)
-- [Configure a standard service endpoint - PowerShell](https://learn.microsoft.com/en-us/azure/private-link/configure-service-endpoint-standard-powershell)
-
-### Updated Pages
-
-- [What is Azure Private Link?](https://learn.microsoft.com/en-us/azure/private-link/private-link-overview)
-  - Updated: 2026-03-30T08:00:00.000Z → 2026-07-23T17:11:00.000Z
-- [What is a network security perimeter?](https://learn.microsoft.com/en-us/azure/private-link/network-security-perimeter-concepts)
-  - Updated: 2026-05-20T05:21:00.000Z → 2026-07-08T08:00:00.000Z
-- [Create a network security perimeter - Azure portal](https://learn.microsoft.com/en-us/azure/private-link/create-network-security-perimeter-portal)
-  - Updated: 2025-10-08T22:11:00.000Z → 2026-07-08T08:00:00.000Z
-- [Private DNS zone values](https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-dns)
-  - Updated: 2026-05-05T08:00:00.000Z → 2026-07-16T08:00:00.000Z
 
 ## Classified Pages
 

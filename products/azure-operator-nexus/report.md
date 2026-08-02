@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Network Function Manager (use azure-network-fu
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 216
+- **Updated Pages**: 0
+- **Unchanged**: 220
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-operator-nexus/azure-operator-nexus.csv`
 
@@ -76,17 +76,6 @@ confusable_not_for: Not for Azure Network Function Manager (use azure-network-fu
 | *(Unclassified)* | 52 | 23.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [Cluster Manager Template JSON Example](https://learn.microsoft.com/en-us/azure/operator-nexus/clustermanager-jsonc-example)
-  - Updated: 2026-05-01T22:03:00.000Z → 2026-07-23T17:07:00.000Z
-- [Cluster Manager Parameters JSON Example](https://learn.microsoft.com/en-us/azure/operator-nexus/clustermanager-parameters-jsonc-example)
-  - Updated: 2026-05-01T22:03:00.000Z → 2026-07-23T17:07:00.000Z
-- [Cluster Template JSON Example](https://learn.microsoft.com/en-us/azure/operator-nexus/cluster-jsonc-example)
-  - Updated: 2026-05-01T22:03:00.000Z → 2026-07-23T17:07:00.000Z
-- [Cluster Parameters JSON Example](https://learn.microsoft.com/en-us/azure/operator-nexus/cluster-parameters-jsonc-example)
-  - Updated: 2026-05-01T22:03:00.000Z → 2026-07-23T17:07:00.000Z
 
 ## Classified Pages
 

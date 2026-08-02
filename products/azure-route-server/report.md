@@ -1,11 +1,12 @@
 ---
-generated_at: '2026-06-07'
+generated_at: '2026-08-02'
 category_descriptions:
-  architecture-patterns: Design patterns for using Route Server in hub-spoke, dual-homed,
-    anycast, multi-region, ExpressRoute/VPN integrations, NVA next-hop designs, and
-    spoke route injection.
-  configuration: Configuring Azure Route Server BGP peers, policies, and settings,
-    and monitoring its performance, health, and traffic with Azure Monitor metrics
+  architecture-patterns: Designing Azure Route Server network topologies, including
+    hub-spoke, anycast, multi-region, NVA next-hop, and using route maps for route
+    injection, filtering, AS path prepending, and BGP communities.
+  configuration: Configuring Route Server BGP (peers, policies, route maps), monitoring
+    with Azure Monitor metrics, and managing route selection/filtering via portal
+    and PowerShell.
   best-practices: Configuring Azure Route Server routing preferences, BGP path selection,
     and custom routing policies to control traffic flow and route advertisement to
     your NVA or on-premises routers.
@@ -18,15 +19,14 @@ category_descriptions:
     including BGP peering issues, route propagation, and troubleshooting steps/logs.
 skill_description: Expert knowledge for Azure Route Server development including troubleshooting,
   best practices, architecture & design patterns, limits & quotas, security, and configuration.
-  Use when designing hub-spoke or dual-homed topologies, configuring BGP peers/policies,
-  tuning routing preferences, planning Route Server scale, or troubleshooting BGP/route
-  propagation, and other Azure Route Server related development tasks. Not for Azure
-  Virtual Network (use azure-virtual-network), Azure Virtual Network Manager (use
-  azure-virtual-network-manager), Azure Virtual WAN (use azure-virtual-wan), Azure
-  VPN Gateway (use azure-vpn-gateway).
-use_when: Use when designing hub-spoke or dual-homed topologies, configuring BGP peers/policies,
-  tuning routing preferences, planning Route Server scale, or troubleshooting BGP/route
-  propagation, and other Azure Route Server related development tasks.
+  Use when designing hub-spoke or NVA topologies, configuring BGP peers/route maps,
+  tuning routing prefs, or fixing BGP issues, and other Azure Route Server related
+  development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure
+  Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use
+  azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway).
+use_when: Use when designing hub-spoke or NVA topologies, configuring BGP peers/route
+  maps, tuning routing prefs, or fixing BGP issues, and other Azure Route Server related
+  development tasks.
 confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), Azure
   Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use
   azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway).
@@ -35,14 +35,14 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ## Summary
 
-- **Total Pages**: 22
-- **Fetched**: 22
+- **Total Pages**: 27
+- **Fetched**: 27
 - **Fetch Failed**: 0
-- **Classified**: 14
+- **Classified**: 19
 - **Unclassified**: 8
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 5
 - **Updated Pages**: 0
 - **Unchanged**: 22
 - **Deleted Pages**: 0
@@ -52,15 +52,23 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 6 | 27.3% |
-| best-practices | 2 | 9.1% |
-| configuration | 2 | 9.1% |
-| limits-quotas | 1 | 4.5% |
-| security | 2 | 9.1% |
-| troubleshooting | 1 | 4.5% |
-| *(Unclassified)* | 8 | 36.4% |
+| architecture-patterns | 10 | 37.0% |
+| best-practices | 2 | 7.4% |
+| configuration | 3 | 11.1% |
+| limits-quotas | 1 | 3.7% |
+| security | 2 | 7.4% |
+| troubleshooting | 1 | 3.7% |
+| *(Unclassified)* | 8 | 29.6% |
 
 ## Changes
+
+### New Pages
+
+- [About route maps](https://learn.microsoft.com/en-us/azure/route-server/route-maps-about)
+- [Configure route maps](https://learn.microsoft.com/en-us/azure/route-server/route-maps-how-to)
+- [Prepend routes](https://learn.microsoft.com/en-us/azure/route-server/route-maps-scenario-prepend-routes)
+- [Tag routes with BGP communities](https://learn.microsoft.com/en-us/azure/route-server/route-maps-scenario-tag-bgp-communities)
+- [Drop inbound routes](https://learn.microsoft.com/en-us/azure/route-server/route-maps-scenario-drop-inbound-routes)
 
 ## Classified Pages
 
@@ -71,12 +79,17 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [IP anycast](https://learn.microsoft.com/en-us/azure/route-server/anycast) | architecture-patterns | 0.75 | Covers a specific anycast routing pattern over private networks using Route Server, including when to use it for availability/performance. |
 | [Multi-region design](https://learn.microsoft.com/en-us/azure/route-server/multiregion) | architecture-patterns | 0.75 | Provides multi-region topology patterns and design guidance specific to Route Server, including HA and DR scenarios. |
 | [Configure and manage Route Server](https://learn.microsoft.com/en-us/azure/route-server/configure-route-server) | configuration | 0.70 | Article is about configuring and managing Azure Route Server via portal, PowerShell, and CLI, including adding/removing BGP peers and configuring route exchange and routing preferences. This typically involves specific parameter names, flags, and configuration options unique to Route Server, which qualifies as expert configuration knowledge beyond generic concepts. |
+| [Configure route maps](https://learn.microsoft.com/en-us/azure/route-server/route-maps-how-to) | configuration | 0.70 | How-to article focused on creating, configuring, and applying route maps on Azure Route Server using Azure portal and PowerShell. It necessarily includes product-specific configuration steps, parameter names, and application points for route maps, which are configuration details unique to this service. |
+| [Drop inbound routes](https://learn.microsoft.com/en-us/azure/route-server/route-maps-scenario-drop-inbound-routes) | architecture-patterns | 0.70 | Covers a specific routing control pattern: dropping unwanted inbound BGP routes before they propagate to peers and gateways using Azure Route Server route maps. This is a product-specific route filtering pattern and behavior, fitting architecture-patterns. |
 | [Dual-homed network](https://learn.microsoft.com/en-us/azure/route-server/about-dual-homed-network) | architecture-patterns | 0.70 | Describes a specific dual-homed network architecture pattern using Azure Route Server, including when and why to use it. |
 | [Next hop IP support](https://learn.microsoft.com/en-us/azure/route-server/next-hop-ip) | architecture-patterns | 0.70 | Describes product-specific architectural patterns (active-passive, active-active behind internal load balancers) enabled by next hop IP support. |
 | [Path selection](https://learn.microsoft.com/en-us/azure/route-server/path-selection) | best-practices | 0.70 | Explains how to configure routing preferences for performance/cost/resilience with product-specific guidance on path selection. |
+| [Prepend routes](https://learn.microsoft.com/en-us/azure/route-server/route-maps-scenario-prepend-routes) | architecture-patterns | 0.70 | Describes a specific traffic-engineering pattern (AS-PATH prepending) implemented via Azure Route Server route maps, including how to influence downstream path selection. This is a product-specific routing pattern and usage scenario rather than generic BGP theory, aligning with architecture-patterns. |
 | [Roles and permissions](https://learn.microsoft.com/en-us/azure/route-server/roles-permissions) | security | 0.70 | Focuses on RBAC roles and permissions required for Route Server, likely listing specific role names and scopes. |
 | [Route injection in spoke virtual networks](https://learn.microsoft.com/en-us/azure/route-server/route-injection-in-spokes) | architecture-patterns | 0.70 | Describes a hub-and-spoke design pattern where Route Server automatically injects routes, replacing manual UDR patterns. |
 | [Secure Route Server deployment](https://learn.microsoft.com/en-us/azure/route-server/secure-route-server) | security | 0.70 | The page is explicitly about securing Azure Route Server and likely includes product-specific security guidance such as recommended RBAC roles, network security configurations, and other concrete security settings unique to Route Server. This aligns with the security sub-skill type, as it focuses on how to protect a specific Azure networking service rather than generic security concepts. |
+| [Tag routes with BGP communities](https://learn.microsoft.com/en-us/azure/route-server/route-maps-scenario-tag-bgp-communities) | architecture-patterns | 0.70 | Shows how to apply BGP community tags via Azure Route Server route maps so downstream peers (NVAs, SD-WAN, on-prem) can make routing decisions based on metadata. This is a concrete routing pattern and decision mechanism specific to Azure Route Server behavior. |
+| [About route maps](https://learn.microsoft.com/en-us/azure/route-server/route-maps-about) | architecture-patterns | 0.65 | Explains how Azure Route Server route maps control inbound/outbound BGP advertisements for NVAs, ExpressRoute, and VPN gateways, including product-specific routing behavior and when to apply route maps to influence path selection. This is detailed, service-specific routing behavior beyond generic BGP concepts, fitting architecture/design pattern guidance for this service. |
 | [Azure Route Server support for ExpressRoute and Azure VPN](https://learn.microsoft.com/en-us/azure/route-server/expressroute-vpn-support) | architecture-patterns | 0.65 | Covers hybrid topology patterns and how Route Server interacts with ExpressRoute/VPN gateways in specific architectures. |
 | [Monitor Route Server](https://learn.microsoft.com/en-us/azure/route-server/monitor-route-server) | configuration | 0.65 | Details specific metrics (e.g., BGP peer status, route counts) and how to configure monitoring for Route Server in Azure Monitor. |
 | [Routing preference](https://learn.microsoft.com/en-us/azure/route-server/hub-routing-preference) | best-practices | 0.65 | Explains how routing preference works with concrete configuration options and implementation best practices specific to Azure Route Server. |

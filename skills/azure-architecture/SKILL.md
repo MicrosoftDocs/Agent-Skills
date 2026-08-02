@@ -1,9 +1,9 @@
 ---
 name: azure-architecture
-description: Expert guidance for designing Azure solutions using Azure Architecture. Covers reference architectures, solution ideas, design patterns, technology choices, architecture styles, best practices, anti-patterns, example workloads, and migration guides. Use when designing HA/DR Azure solutions, AKS + Event Hubs apps, secure Private Link networks, or AWS/GCP migrations, and other Azure Architecture related development tasks.
+description: Expert guidance for designing Azure solutions using Azure Architecture. Covers reference architectures, solution ideas, design patterns, technology choices, architecture styles, best practices, anti-patterns, example workloads, and migration guides. Use when designing AKS, data/AI, SAP, or hybrid workloads, choosing Azure services, or planning AWS/GCP migrations, and other Azure Architecture related development tasks.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-26"
+  generated_at: "2026-08-02"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Architecture Skill
@@ -25,14 +25,14 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Reference Architectures | L37-L90 | End-to-end Azure solution blueprints for mission-critical apps, data/AI, networking, security, hybrid, and SAP—covering baseline designs, HA/DR, compliance, and production-ready deployments. |
-| Solution Ideas | L91-L128 | End-to-end solution patterns for AI, data, security, IoT, and mainframe/OLTP workloads on Azure, including reference architectures, integrations, and implementation guidance. |
-| Design Patterns | L129-L177 | Patterns for resilient, scalable, and secure Azure app architectures: messaging, transactions, caching, routing, identity, global distribution, legacy migration, and workload isolation. |
-| Technology Choices | L178-L212 | Guidance for choosing Azure/Fabric services and architectures (compute, data, AI, storage, networking, messaging, containers) based on workload, performance, and deployment needs. |
-| Architecture Styles | L213-L224 | Guidance on choosing and designing Azure app architectures (big compute, big data, event-driven, microservices, N-tier, web-queue-worker) with patterns, components, and best practices. |
-| Best Practices | L225-L279 | Best-practice patterns for Azure apps: secure APIs/RAG/IoT/SAP, MLOps and model lifecycle, scaling, caching/CDN, DR, networking/DNS/Private Link, AKS ops, Event Hubs + Functions, and monitoring. |
+| Solution Ideas | L91-L127 | End-to-end solution patterns for AI, data, security, IoT, and mainframe/OLTP workloads on Azure, including reference architectures, integrations, and implementation guidance. |
+| Design Patterns | L128-L176 | Patterns for resilient, scalable cloud apps: messaging, transactions, routing, caching, security, identity, data partitioning, and migration using Azure services. |
+| Technology Choices | L177-L211 | Guidance for choosing Azure/Fabric services and architectures (compute, data, AI, storage, networking, messaging, containers) based on workload, performance, and deployment needs. |
+| Architecture Styles | L212-L223 | Guidance on choosing and designing Azure app architectures (big compute, big data, event-driven, microservices, N-tier, web-queue-worker) with patterns, components, and best practices. |
+| Best Practices | L224-L279 | Best practices for designing, securing, scaling, monitoring, and operating Azure solutions, including RAG/GenAI, APIs, AKS, Event Hubs, networking, DR, caching, and VM/patch management. |
 | Anti-patterns | L280-L294 | Diagnosing and fixing common Azure performance and scalability anti-patterns (busy DB/front end, chatty I/O, no caching, noisy neighbors, retry storms, sync I/O, monolithic persistence). |
-| Example Workloads | L295-L385 | End-to-end reference architectures and patterns for real-world Azure workloads (data/AI, apps, networking, hybrid, mainframe, SAP, VDI, security, and observability) with detailed implementation guidance. |
-| Migration Guides | L386-L415 | Guides for migrating from AWS/GCP/on-prem (incl. Oracle, Kafka, EKS) to Azure, mapping services, architectures, identity, networking, security, and cost/ops differences. |
+| Example Workloads | L295-L395 | End-to-end reference architectures and patterns for real-world Azure workloads (data/AI, AKS, networking, hybrid, mainframe, IoT, SAP, Fabric, security, DR) with implementation guidance. |
+| Migration Guides | L396-L425 | Guides for migrating from AWS/GCP/on-prem (incl. Oracle, Kafka, EKS) to Azure, mapping services, architectures, identity, networking, security, and cost/ops differences. |
 
 ### Reference Architectures
 | Topic | URL |
@@ -114,7 +114,6 @@ This skill requires **network access** to fetch documentation content:
 | Design a highly available SharePoint farm on Azure | https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/highly-available-sharepoint-farm |
 | Build batch and streaming ETL with Databricks and Delta Lake | https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/ingest-etl-stream-with-adb |
 | Design IoT analytics with Azure Data Explorer and IoT Hub | https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/iot-azure-data-explorer |
-| Design an Azure industrial IoT reference solution | https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/iot-industrial-solution-architecture |
 | Replicate and sync mainframe files to Azure storage | https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/mainframe-azure-file-replication |
 | Map organizational threats using Azure security tools | https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/map-threats-it-environment |
 | Integrate Azure and Microsoft Defender XDR security services | https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/microsoft-365-defender-security-integrate-azure |
@@ -137,7 +136,7 @@ This skill requires **network access** to fetch documentation content:
 | Design Backends for Frontends for tailored clients | https://learn.microsoft.com/en-us/azure/architecture/patterns/backends-for-frontends |
 | Apply the Bulkhead pattern to isolate failures | https://learn.microsoft.com/en-us/azure/architecture/patterns/bulkhead |
 | Use the Cache-Aside pattern for on-demand caching | https://learn.microsoft.com/en-us/azure/architecture/patterns/cache-aside |
-| Implement the Choreography pattern for workflows | https://learn.microsoft.com/en-us/azure/architecture/patterns/choreography |
+| Apply the choreography pattern for distributed workflows | https://learn.microsoft.com/en-us/azure/architecture/patterns/choreography |
 | Use the Circuit Breaker pattern for resilient calls | https://learn.microsoft.com/en-us/azure/architecture/patterns/circuit-breaker |
 | Apply the Claim-Check pattern for large messages | https://learn.microsoft.com/en-us/azure/architecture/patterns/claim-check |
 | Apply the Compensating Transaction pattern in Azure | https://learn.microsoft.com/en-us/azure/architecture/patterns/compensating-transaction |
@@ -274,6 +273,7 @@ This skill requires **network access** to fetch documentation content:
 | Optimize Event Hubs-triggered Azure Functions performance | https://learn.microsoft.com/en-us/azure/architecture/serverless/event-hubs-functions/performance-scale |
 | Design resilient Event Hubs-triggered Azure Functions | https://learn.microsoft.com/en-us/azure/architecture/serverless/event-hubs-functions/resilient-design |
 | Secure Azure Functions integrated with Event Hubs | https://learn.microsoft.com/en-us/azure/architecture/serverless/event-hubs-functions/security |
+| Implement scalable Windows VM patch management on Azure | https://learn.microsoft.com/en-us/azure/architecture/virtual-machines/patch-management |
 | Protect APIs with Application Gateway and API Management | https://learn.microsoft.com/en-us/azure/architecture/web-apps/api-management/architectures/protect-apis |
 | Secure SPA authorization using Azure API Management | https://learn.microsoft.com/en-us/azure/architecture/web-apps/guides/security/secure-single-page-application-authorization |
 
@@ -369,7 +369,17 @@ This skill requires **network access** to fetch documentation content:
 | Replatform Kubernetes microservices to Azure Container Apps | https://learn.microsoft.com/en-us/azure/architecture/example-scenario/serverless/microservices-with-container-apps |
 | Build Dapr-based microservices on Azure Container Apps | https://learn.microsoft.com/en-us/azure/architecture/example-scenario/serverless/microservices-with-container-apps-dapr |
 | Migrate on-premises AIX UNIX to Azure Linux | https://learn.microsoft.com/en-us/azure/architecture/example-scenario/unix-migration/migrate-aix-azure-linux |
-| Plan WSUS deployment to update isolated Azure Windows VMs | https://learn.microsoft.com/en-us/azure/architecture/example-scenario/wsus/ |
+| Add agentic AI to OPC UA industrial IoT solution | https://learn.microsoft.com/en-us/azure/architecture/guide/iot/agentic-ai-for-the-solution |
+| Connect Azure Data Explorer to OPC UA IoT solution | https://learn.microsoft.com/en-us/azure/architecture/guide/iot/how-to-connect-azure-data-explorer-to-solution |
+| Connect Azure Databricks to OPC UA IoT solution | https://learn.microsoft.com/en-us/azure/architecture/guide/iot/how-to-connect-databricks-to-solution |
+| Integrate Dynamics 365 Field Service with OPC UA telemetry | https://learn.microsoft.com/en-us/azure/architecture/guide/iot/how-to-connect-dynamics-field-service-to-the-solution |
+| Integrate Microsoft Fabric with OPC UA IoT solution | https://learn.microsoft.com/en-us/azure/architecture/guide/iot/how-to-connect-fabric-to-solution |
+| Use Azure Managed Grafana with OPC UA IoT solution | https://learn.microsoft.com/en-us/azure/architecture/guide/iot/how-to-connect-grafana-to-solution |
+| Connect on-premises SAP ERP to OPC UA IoT solution | https://learn.microsoft.com/en-us/azure/architecture/guide/iot/how-to-connect-on-premises-sap-to-the-solution |
+| Connect Power BI to OPC UA industrial IoT solution | https://learn.microsoft.com/en-us/azure/architecture/guide/iot/how-to-connect-power-bi-to-the-solution |
+| Enable an industrial dataspace on Azure | https://learn.microsoft.com/en-us/azure/architecture/guide/iot/how-to-enable-industrial-dataspaces |
+| Import OPC UA information models from UA Cloud Library | https://learn.microsoft.com/en-us/azure/architecture/guide/iot/import-opc-ua-information-models-from-ua-cloud-library |
+| Implement an OPC UA industrial IoT reference solution | https://learn.microsoft.com/en-us/azure/architecture/guide/iot/iot-industrial-solution-architecture |
 | Enable ML inference on Azure IoT Edge devices | https://learn.microsoft.com/en-us/azure/architecture/guide/iot/machine-learning-inference-iot-edge |
 | Architect and deploy SAS analytics workloads on Azure | https://learn.microsoft.com/en-us/azure/architecture/guide/sas/sas-overview |
 | Manage hybrid Kubernetes clusters with Azure Arc | https://learn.microsoft.com/en-us/azure/architecture/hybrid/arc-hybrid-kubernetes |

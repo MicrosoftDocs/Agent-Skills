@@ -1,9 +1,9 @@
 ---
 name: azure-managed-grafana
-description: Expert knowledge for Azure Managed Grafana development including troubleshooting, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring Azure Managed Grafana workspaces, Prometheus/AKS and ADX data sources, Entra auth, or zone-redundant deployments, and other Azure Managed Grafana related development tasks. Not for Azure Monitor (use azure-monitor), Azure App Service (use azure-app-service), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Virtual Machines (use azure-virtual-machines).
+description: Expert knowledge for Azure Managed Grafana development including troubleshooting, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when integrating AI/Prometheus/ADX data, configuring workspaces, securing access, deploying HA, or fixing connectivity, and other Azure Managed Grafana related development tasks. Not for Azure Monitor (use azure-monitor), Azure App Service (use azure-app-service), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Virtual Machines (use azure-virtual-machines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-26"
+  generated_at: "2026-08-02"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Managed Grafana Skill
@@ -26,11 +26,11 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L35-L40 | Diagnosing and resolving common Azure Managed Grafana issues, including access, configuration, and private endpoint connectivity and DNS problems. |
 | Decision Making | L41-L48 | Planning and executing Grafana decisions: choosing/activating Enterprise plans, migrating from self‑hosted or Azure Grafana Essential, and upgrading Azure Managed Grafana (incl. v12). |
-| Limits & Quotas | L49-L55 | Details on Managed Grafana regional availability, quotas and constraints, plus how to use and configure reporting and image rendering features. |
+| Limits & Quotas | L49-L55 | Details on Managed Grafana regional availability, quotas and constraints, plus how to use features like reporting and image rendering within those limits. |
 | Security | L56-L70 | Securing Managed Grafana: encryption, auth (Entra, tokens, service accounts), RBAC/roles, private endpoints, outbound IP control, team sync, and security best practices. |
-| Configuration | L71-L81 | Configuring Azure Managed Grafana workspaces: instance settings, Prometheus, data sources with managed identity, plugins, metrics/diagnostics, and SMTP email alert setup. |
-| Integrations & Coding Patterns | L82-L93 | Integrating Grafana with Azure AI agents and monitoring tools: MCP setup, AI Foundry dashboards, alerts, Prometheus/AKS, and Azure Data Explorer data sources. |
-| Deployment | L94-L97 | Designing highly available Azure Managed Grafana workspaces, including reliability features, SLAs, and enabling zone-redundant deployments for resiliency. |
+| Configuration | L71-L79 | Configuring Azure Managed Grafana workspaces: instance settings, Prometheus, data sources with managed identity, plugins, metrics/diagnostics, and SMTP email alert setup. |
+| Integrations & Coding Patterns | L80-L90 | Integrating Grafana with Azure AI agents and monitoring tools: MCP setup, AI Foundry dashboards, alerts, Prometheus/AKS, and Azure Data Explorer data sources. |
+| Deployment | L91-L94 | Designing highly available Azure Managed Grafana workspaces, including reliability features, SLAs, and enabling zone-redundant deployments for resiliency. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -51,7 +51,7 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Azure Managed Grafana limits, regions, and support details | https://learn.microsoft.com/en-us/azure/managed-grafana/faq |
 | Use reporting and image rendering in Managed Grafana | https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-use-reporting-and-image-rendering |
-| Review Azure Managed Grafana service limits and constraints | https://learn.microsoft.com/en-us/azure/managed-grafana/known-limitations |
+| Azure Managed Grafana service limits and constraints | https://learn.microsoft.com/en-us/azure/managed-grafana/known-limitations |
 
 ### Security
 | Topic | URL |
@@ -72,8 +72,6 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Configure Azure Managed Grafana instance settings | https://learn.microsoft.com/en-us/azure/managed-grafana/grafana-settings |
-| Configure bundled Prometheus in Azure Managed Grafana | https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-bundled-prometheus |
-| Configure data source plugins with managed identity in Azure Grafana | https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-data-source-plugins-managed-identity |
 | Manage Grafana plugins in Azure Managed Grafana | https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-manage-plugins |
 | Monitor Managed Grafana metrics with Azure Monitor charts | https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-monitor-managed-grafana-metrics |
 | Configure diagnostic settings for Managed Grafana workspaces | https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-monitor-managed-grafana-workspace |
@@ -87,7 +85,6 @@ This skill requires **network access** to fetch documentation content:
 | Integrate AI coding agents with Grafana monitoring | https://learn.microsoft.com/en-us/azure/managed-grafana/grafana-opentelemetry-app-insights |
 | Configure Grafana MCP with Azure AI Foundry agents | https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-configure-mcp-for-ai-foundry |
 | Add Azure Data Explorer as a Grafana data source | https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-connect-azure-data-explorer |
-| Connect Azure Monitor workspace Prometheus to Grafana | https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-connect-azure-monitor-workspace |
 | Integrate Azure Monitor alerts with Azure Managed Grafana | https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-use-azure-monitor-alerts |
 | Connect AKS Prometheus to Managed Grafana privately | https://learn.microsoft.com/en-us/azure/managed-grafana/tutorial-mpe-oss-prometheus |
 

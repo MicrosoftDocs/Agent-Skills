@@ -1,9 +1,9 @@
 ---
 name: azure-energy-data-services
-description: Expert knowledge for Azure Energy Data Services development including troubleshooting, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when configuring ADME partitions/zones, DDMS APIs, large file workflows, Geospatial CZ on AKS, or OSDU Admin UI, and other Azure Energy Data Services related development tasks. Not for Azure Data Explorer (use azure-data-explorer), Azure Synapse Analytics (use azure-synapse-analytics), Azure Data Factory (use azure-data-factory), Azure Databricks (use azure-databricks).
+description: Expert knowledge for Azure Energy Data Services development including troubleshooting, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when configuring ADME metrics/partitioning, choosing tiers, securing auth/ACLs, deploying AKS geospatial, or fixing ingestion logs, and other Azure Energy Data Services related development tasks. Not for Azure Data Explorer (use azure-data-explorer), Azure Synapse Analytics (use azure-synapse-analytics), Azure Data Factory (use azure-data-factory), Azure Databricks (use azure-databricks).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-19"
+  generated_at: "2026-08-02"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Energy Data Services Skill
@@ -28,9 +28,9 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L40-L45 | Guidance on choosing ADME deployment tiers (Developer vs Standard) and checking which OSDU data/compute services and capabilities are available in each tier. |
 | Architecture & Design Patterns | L46-L50 | Guidance on architecting resilient ADME deployments in Azure Energy Data Services, including zone redundancy, disaster recovery strategies, and high-availability design patterns. |
 | Security | L51-L65 | Securing Azure Data Manager for Energy: auth tokens, ACLs, encryption, legal tags, user/group entitlements, managed identities, private endpoints, and API Management access control. |
-| Configuration | L66-L73 | Configuring Azure Data Manager for Energy: data partitions, analytics zone setup, CORS, audit logging, and milestone upgrade settings. |
-| Integrations & Coding Patterns | L74-L94 | Patterns and examples for integrating Azure Energy Data Services with analytics platforms, external data sources, DDMS APIs, logs/monitoring, and large file workflows. |
-| Deployment | L95-L98 | Guides for deploying Azure Energy Data Services components, including Geospatial Consumption Zone on AKS and the OSDU Admin UI for Azure Data Manager for Energy administration |
+| Configuration | L66-L74 | Configuring ADME operations: monitoring metrics, data partitioning, CORS, audit logging, and milestone upgrade settings for secure, scalable data management. |
+| Integrations & Coding Patterns | L75-L95 | Patterns and examples for integrating Azure Energy Data Services with analytics platforms, external data sources, DDMS APIs, logs/monitoring, and large file workflows. |
+| Deployment | L96-L99 | Guides for deploying Azure Energy Data Services components, including Geospatial Consumption Zone on AKS and the OSDU Admin UI for Azure Data Manager for Energy administration |
 
 ### Troubleshooting
 | Topic | URL |
@@ -66,6 +66,7 @@ This skill requires **network access** to fetch documentation content:
 ### Configuration
 | Topic | URL |
 |-------|-----|
+| Reference monitoring metrics for Data Manager for Energy | https://learn.microsoft.com/en-us/azure/energy-data-services/concepts-monitor-data-reference |
 | Add and manage data partitions in ADME | https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-add-more-data-partitions |
 | Configure CORS policies for Azure Data Manager for Energy | https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-enable-cors |
 | Configure and use audit logs in Azure Data Manager for Energy | https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-manage-audit-logs |

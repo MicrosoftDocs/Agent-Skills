@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-19'
+generated_at: '2026-08-02'
 category_descriptions:
   limits-quotas: Video Indexer file formats, size/duration limits, account/service
     quotas, and which languages and AI capabilities (transcription, translation, etc.)
@@ -15,24 +15,22 @@ category_descriptions:
   integrations: Using Video Indexer APIs, widgets, and low-code tools to call the
     service, embed insights, automate workflows, and programmatically redact faces
     in videos
-  security: 'Security and access control for Video Indexer: roles/permissions, private
-    endpoints, NSG service tags, firewall-protected storage, security baselines, and
-    requesting access to restricted features.'
+  security: 'Securing Video Indexer: roles and access control, private endpoints,
+    NSG service tags, firewall-protected storage, limited feature access, and security
+    baselines/best practices.'
   decision-making: Guidance on selecting Azure Video Indexer account types and designing
     multi-tenant setups, including management, isolation, and scaling strategies.
 skill_description: Expert knowledge for Azure AI Video Indexer development including
   best practices, decision making, limits & quotas, security, configuration, integrations
-  & coding patterns, and deployment. Use when indexing videos, using Video Indexer
-  APIs/widgets, integrating OpenAI, customizing models, or securing access, and other
-  Azure AI Video Indexer related development tasks. Not for Azure AI Vision (use azure-ai-vision),
-  Azure AI Custom Vision (use azure-custom-vision), Azure AI Speech (use azure-speech),
-  Azure AI Search (use azure-cognitive-search).
-use_when: Use when indexing videos, using Video Indexer APIs/widgets, integrating
-  OpenAI, customizing models, or securing access, and other Azure AI Video Indexer
-  related development tasks.
-confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI Custom
-  Vision (use azure-custom-vision), Azure AI Speech (use azure-speech), Azure AI Search
-  (use azure-cognitive-search).
+  & coding patterns, and deployment. Use when indexing videos, using OpenAI integration,
+  calling Video Indexer APIs, redacting faces, or securing access, and other Azure
+  AI Video Indexer related development tasks. Not for Azure AI Vision (use azure-ai-vision),
+  Azure AI Search (use azure-cognitive-search), Azure Machine Learning (use azure-machine-learning).
+use_when: Use when indexing videos, using OpenAI integration, calling Video Indexer
+  APIs, redacting faces, or securing access, and other Azure AI Video Indexer related
+  development tasks.
+confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI Search
+  (use azure-cognitive-search), Azure Machine Learning (use azure-machine-learning).
 ---
 # Azure AI Video Indexer Crawl Report
 
@@ -46,8 +44,8 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI Cust
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 67
+- **Updated Pages**: 1
+- **Unchanged**: 66
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-video-indexer/azure-video-indexer.csv`
 
@@ -66,6 +64,11 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI Cust
 
 ## Changes
 
+### Updated Pages
+
+- [Manage account access](https://learn.microsoft.com/en-us/azure/azure-video-indexer/restricted-viewer-role)
+  - Updated: 2025-10-06T08:00:00.000Z → 2026-07-30T22:12:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
@@ -74,7 +77,7 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI Cust
 | [Connect Azure OpenAI](https://learn.microsoft.com/en-us/azure/azure-video-indexer/connect-azure-open-ai-task) | configuration | 0.80 | Explains creating/updating a Video Indexer account with an Azure OpenAI connection; this is configuration-focused and likely includes specific setting names, required fields, and constraints for wiring the two services together. |
 | [Security baseline](https://learn.microsoft.com/en-us/azure/azure-video-indexer/security-baseline-video-indexer) | security | 0.80 | Security baseline article with configurations and best practices; likely lists specific security settings and controls for the service. |
 | [Firewall protected storage](https://learn.microsoft.com/en-us/azure/azure-video-indexer/storage-behind-firewall) | security | 0.78 | The page describes configuring Video Indexer with firewall-protected Azure Storage, including requirements like storage account type (Standard general-purpose v2) and use of user/system-assigned managed identities. These are product-specific security and access configuration details, matching the security sub-skill. |
-| [Manage account access](https://learn.microsoft.com/en-us/azure/azure-video-indexer/restricted-viewer-role) | security | 0.75 | Focuses on managing access and mentions the Restricted Viewer role; likely lists specific RBAC roles, permissions, and scopes unique to Video Indexer. |
+| [Manage account access](https://learn.microsoft.com/en-us/azure/azure-video-indexer/restricted-viewer-role) | security | 0.78 | Page is about managing access to Azure AI Video Indexer accounts using built-in roles, including a specific 'Restricted Viewer' role. This is product-specific security/authorization configuration with concrete role names and behavior that an LLM is unlikely to fully know from training. |
 | [Brands model](https://learn.microsoft.com/en-us/azure/azure-video-indexer/customize-brands-model-how-to) | best-practices | 0.70 | How-to for customizing brand models, including how brand detection works with Bing’s brand database and context disambiguation; likely contains product-specific guidance and gotchas for training and using custom brand models, which qualifies as best-practices. |
 | [Choose regions](https://learn.microsoft.com/en-us/azure/azure-video-indexer/regions) | configuration | 0.70 | Describes the location parameter and supported regions; region-specific configuration is product-specific and not generic knowledge. |
 | [Configure indexing](https://learn.microsoft.com/en-us/azure/azure-video-indexer/indexing-configuration-guide) | configuration | 0.70 | Explains each indexing option (language, indexing modes, custom models, streaming settings) for both portal and API; this is product-specific configuration guidance with concrete option names and behaviors, fitting the configuration sub-skill. |

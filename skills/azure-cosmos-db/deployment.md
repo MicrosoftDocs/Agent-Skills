@@ -21,8 +21,8 @@
 | Migrate MongoDB offline to Cosmos DB using native tools | https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/tutorial-mongotools-cosmos-db |
 | Upgrade Cosmos DB for MongoDB wire protocol version | https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/upgrade-version |
 | Manage scheduled maintenance for Cosmos DB clusters | https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/concepts-maintenance |
+| Execute migration workflow to PostgreSQL elastic clusters | https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/how-to-migrate-database-postgresql |
 | Upgrade PostgreSQL and Citus versions in Cosmos DB for PostgreSQL clusters | https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/howto-upgrade |
-| Deploy Cosmos DB for PostgreSQL cluster with Bicep | https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/quickstart-create-bicep |
 | Manage Azure Cosmos DB for PostgreSQL with Terraform | https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/reference-terraform |
 | Deploy and configure Cosmos DB NoSQL with ARM templates | https://learn.microsoft.com/en-us/azure/cosmos-db/samples-resource-manager-templates |
 | Provision Cosmos DB NoSQL accounts with Terraform | https://learn.microsoft.com/en-us/azure/cosmos-db/samples-terraform |

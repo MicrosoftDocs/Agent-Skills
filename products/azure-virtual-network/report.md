@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-26'
+generated_at: '2026-08-02'
 category_descriptions:
   configuration: 'Configuring Azure Virtual Network features: IPs (public/private/custom),
     DNS, MTU, DHCP, encryption, monitoring, subnet delegation/peering, and gateway/firewall/load
@@ -7,9 +7,9 @@ category_descriptions:
   decision-making: 'Guidance on design choices: when to use accelerated networking,
     routing preferences, VNets vs appliances, IP upgrade paths, VNet integration options,
     and cost/performance trade-offs.'
-  best-practices: 'Designing secure, high-performance VNets: outbound access control,
-    NSG rules/flows, service endpoints, and TCP/IP/VM network tuning for throughput
-    and reliability.'
+  best-practices: 'Designing secure, high-performance VNets: outbound VM access control,
+    NSG rules/flows, VM throughput tuning, TCP/IP optimization, and secure use of
+    VNet service endpoints.'
   troubleshooting: 'Diagnosing and fixing Azure VM/VNet connectivity issues: routing
     and NSG problems, NVAs and routing appliances, SMTP blocking, VNet peering, encryption,
     and VNet deletion errors.'
@@ -27,16 +27,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Virtual Network development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, and deployment. Use when configuring VNet
-  peering, NSGs/service endpoints, VPN/ExpressRoute gateways, load balancers, or NAT
-  gateways, and other Azure Virtual Network related development tasks. Not for Azure
-  Networking (use azure-networking), Azure Virtual Network Manager (use azure-virtual-network-manager),
-  Azure Virtual WAN (use azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway).
-use_when: Use when configuring VNet peering, NSGs/service endpoints, VPN/ExpressRoute
-  gateways, load balancers, or NAT gateways, and other Azure Virtual Network related
-  development tasks.
+  peering, NSGs, service endpoints, VPN/ExpressRoute gateways, or Azure Firewall/NAT,
+  and other Azure Virtual Network related development tasks. Not for Azure Networking
+  (use azure-networking), Azure Virtual Network Manager (use azure-virtual-network-manager),
+  Azure Virtual WAN (use azure-virtual-wan), Azure Firewall (use azure-firewall).
+use_when: Use when configuring VNet peering, NSGs, service endpoints, VPN/ExpressRoute
+  gateways, or Azure Firewall/NAT, and other Azure Virtual Network related development
+  tasks.
 confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtual
   Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use azure-virtual-wan),
-  Azure VPN Gateway (use azure-vpn-gateway).
+  Azure Firewall (use azure-firewall).
 ---
 # Azure Virtual Network Crawl Report
 
@@ -45,8 +45,8 @@ confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtu
 - **Total Pages**: 131
 - **Fetched**: 131
 - **Fetch Failed**: 0
-- **Classified**: 55
-- **Unclassified**: 76
+- **Classified**: 54
+- **Unclassified**: 77
 
 ### Incremental Update
 - **New Pages**: 0
@@ -65,18 +65,18 @@ confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtu
 | decision-making | 6 | 4.6% |
 | deployment | 1 | 0.8% |
 | limits-quotas | 3 | 2.3% |
-| security | 6 | 4.6% |
+| security | 5 | 3.8% |
 | troubleshooting | 1 | 0.8% |
-| *(Unclassified)* | 76 | 58.0% |
+| *(Unclassified)* | 77 | 58.8% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Configure MTU for virtual machines](https://learn.microsoft.com/en-us/azure/virtual-network/how-to-virtual-machine-mtu)
-  - Updated: 2024-07-26T05:35:00.000Z → 2026-07-23T22:13:00.000Z
-- [Service endpoints](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoints-overview)
-  - Updated: 2025-07-22T08:00:00.000Z → 2026-07-08T08:00:00.000Z
+- [Overview](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-encryption-overview)
+  - Updated: 2025-04-18T05:11:00.000Z → 2026-07-28T17:15:00.000Z
+- [Optimize network throughput for Azure virtual machines](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-optimize-network-bandwidth)
+  - Updated: 2026-06-20T05:16:00.000Z → 2026-07-29T22:37:00.000Z
 
 ## Classified Pages
 
@@ -97,7 +97,7 @@ confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtu
 | [Monitor data reference](https://learn.microsoft.com/en-us/azure/virtual-network/monitor-virtual-network-reference) | configuration | 0.70 | Monitoring reference pages for Azure services usually enumerate all metrics, logs, dimensions, and categories with exact names, units, and sometimes value ranges (for example, metric names, log table names, and category identifiers) that an LLM is unlikely to know reliably from training. This is structured, product-specific reference data that fits configuration-like knowledge for monitoring/diagnostics. |
 | [Name resolution for resources](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances) | configuration | 0.70 | Covers Azure-provided DNS, private DNS zones, and custom DNS; includes Azure-specific DNS configuration patterns and options. |
 | [Network virtual appliances](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-scenario-udr-gw-nva) | architecture-patterns | 0.70 | Scenario-based architecture using route tables, VPN gateway, and NVAs to build DMZ and protected networks; concrete Azure network pattern. |
-| [Optimize network throughput for Azure virtual machines](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-optimize-network-bandwidth) | best-practices | 0.70 | The article provides product-specific tuning guidance (congestion control algorithms, queue discipline, buffer sizes, NIC tuning) for Azure VMs on Windows and Linux. These are concrete, actionable optimization recommendations tied to Azure VM networking behavior rather than generic networking theory, fitting the best-practices category. |
+| [Optimize network throughput for Azure virtual machines](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-optimize-network-bandwidth) | best-practices | 0.70 | The article focuses on concrete, product-specific tuning guidance for Azure VM networking (e.g., congestion control algorithms, queue discipline, buffer sizes, NIC tuning) and emphasizes applying these settings consistently. These are actionable DO/DO-NOT style recommendations with specific configuration patterns for Windows and Linux VMs, which qualify as best-practices rather than generic networking theory. |
 | [Secure Virtual Network](https://learn.microsoft.com/en-us/azure/virtual-network/secure-virtual-network) | security | 0.70 | Security-focused guidance for VNets; likely includes concrete recommendations on NSGs, firewalls, and access controls specific to Azure VNet. |
 | [TCP/IP performance tuning](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-tcpip-performance-tuning) | best-practices | 0.70 | Provides Azure-specific TCP/IP tuning recommendations and considerations (e.g., window sizes, offloads) tailored to Azure VM networking behavior, which are product-specific best-practices rather than generic TCP advice. |
 | [Upgrade guidance for Basic SKU public IP addresses](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-basic-upgrade-guidance) | decision-making | 0.70 | Retirement guidance plus SKU comparison and migration steps; helps decide when/how to upgrade Basic to Standard with scenario-focused recommendations. |
@@ -133,7 +133,6 @@ confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtu
 | [How network security groups filter traffic](https://learn.microsoft.com/en-us/azure/virtual-network/network-security-group-how-it-works) | best-practices | 0.60 | Explains NSG rule processing and likely includes ordering, default behaviors, and best practices for secure traffic filtering specific to Azure. |
 | [Monitor Public IP addresses](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/monitor-public-ip) | configuration | 0.60 | Monitoring article for public IPs via Azure Monitor; such references list specific metrics, log categories, and alertable signals unique to this resource type. |
 | [Monitoring](https://learn.microsoft.com/en-us/azure/virtual-network/monitor-virtual-network) | configuration | 0.60 | Monitoring article typically lists specific metrics, logs, and configuration options for Azure Monitor integration, which are product-specific configuration details. |
-| [Overview](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-encryption-overview) | security | 0.60 | Explains how VNet encryption works (DTLS tunnels, supported scenarios); Azure-specific security feature behavior beyond generic encryption concepts. |
 | [Public IP prefix](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-address-prefix) | configuration | 0.60 | Explains how to create public IP prefixes with region, subscription, prefix size, IPv4/IPv6, and zone options; these are concrete Azure-specific configuration properties and behaviors. |
 | [Subnet delegation](https://learn.microsoft.com/en-us/azure/virtual-network/subnet-delegation-overview) | configuration | 0.60 | Explains how to delegate subnets to specific PaaS services and the resulting configuration rules; Azure-specific configuration behavior. |
 | [Subnet extension](https://learn.microsoft.com/en-us/azure/virtual-network/subnet-extension) | architecture-patterns | 0.60 | Discusses retaining IP ranges and handling subnet extension during migration; Azure-specific network design pattern for IP-dependent workloads. |
@@ -201,6 +200,7 @@ confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtu
 | [Manage a virtual network peering](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-manage-peering) | 0.30 | Management article for creating/changing/deleting VNet peering; mostly operational steps without detailed limits or troubleshooting mappings. |
 | [Manage route tables](https://learn.microsoft.com/en-us/azure/virtual-network/manage-route-table) | 0.30 | Basic route table management article; generic operations without detailed limits, configuration matrices, or troubleshooting mappings. |
 | [Overview](https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-overview) | 0.30 | High-level overview of MANA benefits and behavior; summary does not indicate concrete limits, configuration tables, error codes, or decision matrices. Likely conceptual performance/availability description rather than detailed expert parameters. |
+| [Overview](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-encryption-overview) | 0.30 | Appears to be a conceptual/overview page describing what Virtual Network encryption is and where it applies (VMs, scale sets, peered VNets). The summary does not indicate specific configuration parameters, limits, error codes, or detailed security configuration (such as RBAC roles or exact settings). It reads as a feature overview rather than expert-level configuration, limits, or troubleshooting content. |
 | [Restrict network access to PaaS resources](https://learn.microsoft.com/en-us/azure/virtual-network/tutorial-restrict-network-access-to-resources) | 0.30 | Tutorial for restricting access with service endpoints; mostly wizard-driven steps, not deep configuration or troubleshooting content. |
 | [Route network traffic](https://learn.microsoft.com/en-us/azure/virtual-network/tutorial-create-route-table) | 0.30 | Route table tutorial showing how to create custom routes; no detailed routing limits, decision matrices, or troubleshooting mappings. |
 | [Traffic routing](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-udr-overview) | 0.30 | Appears to be a conceptual overview of Azure virtual network routing and user-defined routes; summary does not indicate specific numeric limits, configuration parameter tables, or error-code-based troubleshooting. Likely explains how routing works rather than providing expert-only configuration or limits. |

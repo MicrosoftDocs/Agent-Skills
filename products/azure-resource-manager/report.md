@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-26'
+generated_at: '2026-08-02'
 category_descriptions:
   best-practices: 'Bicep/ARM template authoring and linting best practices: naming,
     locations, dependencies, unused code, safe patterns, testing with ARM toolkit,
@@ -7,9 +7,9 @@ category_descriptions:
   integrations: Bicep and ARM template functions, operators, and patterns; integrating
     with CLI/PowerShell/SDKs/REST, using Key Vault, AKS, custom providers, and programmatic
     resource/tag management.
-  configuration: 'Configuring ARM and Bicep templates: file structure, parameters,
-    scopes, tags, networking, monitoring, policy, custom providers, portal Form view
-    UI, and deployment/AI tooling setup.'
+  configuration: 'Configuring ARM and Bicep deployments: linter and env setup, parameters,
+    scopes, dependencies, tags, custom providers, monitoring, policy/governance, portal
+    Form view UI, and preview/feature management.'
   troubleshooting: Diagnosing and fixing Azure Bicep/ARM deployment errors, including
     specific BCP codes, template syntax/type issues, scope and decorator problems,
     policy/SKU/name constraints, and common deployment failures.
@@ -31,15 +31,15 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Resource Manager development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when authoring Bicep/ARM templates, using CLI/PowerShell/SDKs, deploying stacks/registries,
-  or securing Key Vault secrets, and other Azure Resource Manager related development
-  tasks. Not for Azure Policy (use azure-policy), Azure Blueprints (use azure-blueprints),
+  Use when authoring Bicep/ARM templates, using CLI/PowerShell/SDKs, Key Vault, stacks/registries,
+  or multi-scope deployments, and other Azure Resource Manager related development
+  tasks. Not for Azure Blueprints (use azure-blueprints), Azure Policy (use azure-policy),
   Azure Resource Graph (use azure-resource-graph), Azure Portal (use azure-portal).
-use_when: Use when authoring Bicep/ARM templates, using CLI/PowerShell/SDKs, deploying
-  stacks/registries, or securing Key Vault secrets, and other Azure Resource Manager
+use_when: Use when authoring Bicep/ARM templates, using CLI/PowerShell/SDKs, Key Vault,
+  stacks/registries, or multi-scope deployments, and other Azure Resource Manager
   related development tasks.
-confusable_not_for: Not for Azure Policy (use azure-policy), Azure Blueprints (use
-  azure-blueprints), Azure Resource Graph (use azure-resource-graph), Azure Portal
+confusable_not_for: Not for Azure Blueprints (use azure-blueprints), Azure Policy
+  (use azure-policy), Azure Resource Graph (use azure-resource-graph), Azure Portal
   (use azure-portal).
 ---
 # Azure Resource Manager Crawl Report
@@ -53,10 +53,10 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Blueprints (u
 - **Unclassified**: 119
 
 ### Incremental Update
-- **New Pages**: 4
-- **Updated Pages**: 2
-- **Unchanged**: 481
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 486
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-resource-manager/azure-resource-manager.csv`
 
 ## Classification Statistics
@@ -65,9 +65,9 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Blueprints (u
 |------|-------|------------|
 | architecture-patterns | 4 | 0.8% |
 | best-practices | 43 | 8.8% |
-| configuration | 51 | 10.5% |
+| configuration | 52 | 10.7% |
 | decision-making | 10 | 2.1% |
-| deployment | 55 | 11.3% |
+| deployment | 54 | 11.1% |
 | integrations | 58 | 11.9% |
 | limits-quotas | 26 | 5.3% |
 | security | 26 | 5.3% |
@@ -76,23 +76,10 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Blueprints (u
 
 ## Changes
 
-### New Pages
-
-- [No hardcoded outputs](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-no-hardcoded-outputs)
-- [No unused types](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-no-unused-types)
-- [Secure params in parameters file](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-secure-params-in-parameters-file)
-- [Use a registry across tenants (Lighthouse)](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/cross-tenant-registry-lighthouse)
-
 ### Updated Pages
 
-- [Linter](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter)
-  - Updated: 2026-06-12T22:22:00.000Z → 2026-07-24T05:15:00.000Z
-- [Install Bicep tools](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/install)
-  - Updated: 2026-06-26T08:00:00.000Z → 2026-07-24T17:11:00.000Z
-
-### Deleted Pages
-
-- ~~Retry resource deployments (retryOn)~~ (https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-retryon)
+- [Monitor - Log Analytics Workspace](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/relocation/relocation-log-analytics)
+  - Updated: 2025-09-15T08:00:00.000Z → 2026-07-31T19:23:00.000Z
 
 ## Classified Pages
 
@@ -156,7 +143,6 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Blueprints (u
 | [Key Vault](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/relocation/relocation-key-vault) | deployment | 0.80 | States that Key Vault doesn’t support regional relocation and prescribes alternative steps, a critical deployment limitation and pattern. |
 | [Linter settings](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-config-linter) | configuration | 0.80 | Article explicitly describes how to customize Bicep linter behavior via bicepconfig.json, which implies concrete configuration keys, allowed values, and defaults for the linter. These are product-specific configuration parameters that qualify as expert knowledge under the configuration sub-skill. |
 | [Module settings](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-config-modules) | configuration | 0.80 | Details module-related settings (aliases, profile/credential precedence) in bicepconfig.json; product-specific configuration options. |
-| [Monitor - Log Analytics Workspace](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/relocation/relocation-log-analytics) | deployment | 0.80 | Explains that workspace data can’t be migrated regionally and requires creating a new workspace and reconfiguring devices/settings, a product-specific deployment limitation. |
 | [Nested deployment template scoping](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-nested-deployment-template-scoping) | best-practices | 0.80 | Describes a subtle, product-specific scoping rule for Microsoft.Resources/deployments with inner scope and references to parent symbols, mapping a concrete gotcha to a recommended pattern. |
 | [No registered provider found](https://learn.microsoft.com/en-us/azure/azure-resource-manager/troubleshooting/error-register-resource-provider) | troubleshooting | 0.80 | Describes specific registration-related errors and how to manually register providers, mapping errors to concrete remediation steps. |
 | [No unnecessary dependsOn entries](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-no-unnecessary-dependson) | best-practices | 0.80 | Maps a specific anti-pattern (extra dependsOn) to a linter rule and recommended usage, which is concrete Bicep best-practice guidance. |
@@ -384,6 +370,7 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Blueprints (u
 | [All functions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-functions) | integrations | 0.68 | Lists all ARM template functions with their exact names, signatures, and behavior, which are product-specific API details. This is expert integration knowledge about how to programmatically interact with Azure Resource Manager templates rather than a conceptual overview. |
 | [Blueprint to deployment stack](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/migrate-blueprint) | decision-making | 0.68 | Page provides product-specific migration guidance from Azure Blueprints (being retired on specific dates) to Deployment Stacks and Template Specs, including which replacement technologies to choose and how artifacts map to ARM/Bicep. This is concrete retirement/migration decision guidance that an LLM wouldn't reliably infer from training data. |
 | [Create portal form](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-specs-create-portal-forms) | configuration | 0.68 | The page describes how to define Form view JSON for ARM template specs, including specific JSON schema elements and configuration properties that the Azure portal interprets at runtime. These are product-specific configuration details (field names, structure, and behavior) that go beyond generic knowledge and match the configuration sub-skill definition. |
+| [Monitor - Log Analytics Workspace](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/relocation/relocation-log-analytics) | configuration | 0.68 | Page describes product-specific constraints (no native workspace data migration), and prescriptive steps to create a new workspace in the target region and reconfigure all dependent resources and settings. This is detailed, service-specific configuration/relocation guidance rather than generic concepts. |
 | [Programmatic Bicep usage with JSON-RPC](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-cli-jsonrpc) | integrations | 0.68 | The page documents the Bicep CLI `jsonrpc` command, including version-specific introduction details and a stable, backward-compatible JSON-RPC interface. It describes structured request/response formats and fields that external tools must use to integrate programmatically with Bicep. These are product-specific API/CLI parameters and payload structures that qualify as integration-focused expert knowledge rather than general concepts. |
 | [Service tag](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/service-tags) | security | 0.68 | Explains how to use the AzureResourceManager service tag to define network access; includes product-specific security configuration behavior for NSG rules. |
 | [Custom resource provider RESTful endpoint reference](https://learn.microsoft.com/en-us/azure/azure-resource-manager/custom-providers/reference-custom-providers-csharp-endpoint) | integrations | 0.66 | C# RESTful endpoint reference for custom providers via Azure Functions; likely includes function signatures, request/response schemas, and parameters specific to this integration. |

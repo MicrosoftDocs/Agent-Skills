@@ -1,9 +1,9 @@
 ---
 name: azure-monitor
-description: Expert knowledge for Azure Monitor development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring AMA/DCR pipelines, alerts/autoscale, Application Insights, Prometheus/AKS, or Log Analytics workspaces, and other Azure Monitor related development tasks. Not for Azure Network Watcher (use azure-network-watcher), Azure Service Health (use azure-service-health), Azure Defender For Cloud (use azure-defender-for-cloud), Azure Cost Management (use azure-cost-management).
+description: Expert knowledge for Azure Monitor development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when working with Log Analytics, AMA/DCR pipelines, alerts/ITSM, Application Insights, or Prometheus/OpenTelemetry, and other Azure Monitor related development tasks. Not for Azure Network Watcher (use azure-network-watcher), Azure Service Health (use azure-service-health), Azure Defender For Cloud (use azure-defender-for-cloud), Azure Cost Management (use azure-cost-management).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-26"
+  generated_at: "2026-08-02"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Monitor Skill
@@ -24,14 +24,14 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Location | Description |
 |----------|----------|-------------|
-| Troubleshooting | L37-L98 | Diagnosing and fixing Azure Monitor issues: agents (AMA/Log Analytics/Diagnostics), data collection and pipelines, alerts, metrics/logs, Application Insights, containers, VM performance, and ITSM connectors. |
-| Best Practices | L99-L137 | Best practices for configuring, tuning, and scaling Azure Monitor (logs, metrics, alerts, autoscale, AKS, VMs, costs, Prometheus/OTel) for performance, reliability, and cost efficiency. |
-| Decision Making | L138-L177 | Guidance for planning and decision-making around Azure Monitor migrations, alerting, costs, pipelines, workspaces, OpenTelemetry, Grafana, and replacing legacy/retired monitoring solutions. |
-| Architecture & Design Patterns | L178-L183 | Designing Azure Monitor architectures: enterprise-wide layouts, Private Link network patterns, choosing single vs multiple workspaces, and using workspace replication for resilience. |
-| Limits & Quotas | L184-L213 | Limits, quotas, scale/performance planning, ingestion/retention caps, query timeouts, and metric coverage for Azure Monitor, Application Insights, Prometheus, Container Insights, and Workbooks. |
-| Security | L214-L275 | Securing Azure Monitor and related services: auth, RBAC, TLS, networking, policies, data protection, and analyzing security/audit logs from Azure, Kubernetes, Databricks, GCP, and Defender. |
-| Configuration | [configuration.md](configuration.md) | Configuring Azure Monitor end to end: agents, DCRs, pipelines, alerts, autoscale, Private Link, Application Insights, Kubernetes/Prometheus, and detailed log/metric/table schemas for Azure and partner services. |
-| Integrations & Coding Patterns | [integrations.md](integrations.md) | Patterns and code for integrating Azure Monitor with apps and tools: sending custom/Prometheus/OTel data, querying via APIs/KQL, wiring alerts and ITSM, and scenario-based KQL for many log tables. |
+| Troubleshooting | L37-L107 | Diagnosing and fixing Azure Monitor data/agent issues (Log Analytics, AMA, pipelines, DCR, alerts, ITSM, App Insights, containers, DevCenter, VM perf) using logs, tools, and targeted queries |
+| Best Practices | L108-L147 | Best practices for configuring Azure Monitor, alerts, autoscale, AKS/VM monitoring, logs, Prometheus/PromQL, cost optimization, performance, reliability, and multicloud observability. |
+| Decision Making | L148-L189 | Planning and decision guides for migrating agents/monitoring (MMA, WAD/LAD, SCOM, Prometheus, OpenTelemetry), choosing alerting/visualization options, and estimating/optimizing Azure Monitor costs. |
+| Architecture & Design Patterns | L190-L195 | Designing Azure Monitor architectures: enterprise-wide layouts, Private Link network patterns, choosing single vs multiple workspaces, and using workspace replication for resilience. |
+| Limits & Quotas | L196-L223 | Limits, quotas, performance, and scaling behavior for Azure Monitor components (Logs, Metrics, Alerts, App Insights, Container Insights, Prometheus, Workbooks), including ingestion caps and query timeouts. |
+| Security | L224-L299 | Securing Azure Monitor and Application Insights: auth, TLS, networking, RBAC, policy, ITSM/webhooks, and using security/audit logs (MDE, Databricks, Synapse, etc.) for monitoring and investigations. |
+| Configuration | [configuration.md](configuration.md) | Configuring Azure Monitor end to end: agents, DCRs, pipelines, alerts, logs/metrics, workbooks, and per‑service schemas for collecting, routing, and analyzing monitoring data. |
+| Integrations & Coding Patterns | [integrations.md](integrations.md) | Patterns and code for integrating Azure Monitor with apps and tools: agents, APIs, webhooks, ITSM, Prometheus/Grafana, OpenTelemetry, and KQL query examples for many log tables. |
 | Deployment | [deployment.md](deployment.md) | Guides for deploying and migrating Azure Monitor agents, alerts, diagnostics, and Application Insights Profiler at scale using Policy, ARM, CLI/PowerShell, and workspace replication. |
 
 ### Troubleshooting
@@ -45,9 +45,9 @@ This skill requires **network access** to fetch documentation content:
 | Fix Azure Monitor agent problems on Windows Arc servers | https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-troubleshoot-windows-arc |
 | Diagnose Azure Monitor agent issues on Windows VMs | https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-troubleshoot-windows-vm |
 | Troubleshoot Azure Diagnostics extension issues on Azure resources | https://learn.microsoft.com/en-us/azure/azure-monitor/agents/diagnostics-extension-troubleshooting |
-| Use AMA Linux troubleshooter to diagnose agent issues | https://learn.microsoft.com/en-us/azure/azure-monitor/agents/troubleshooter-ama-linux |
+| Use Azure Monitor Agent Linux troubleshooter effectively | https://learn.microsoft.com/en-us/azure/azure-monitor/agents/troubleshooter-ama-linux |
 | Use AMA Windows troubleshooter to diagnose agent issues | https://learn.microsoft.com/en-us/azure/azure-monitor/agents/troubleshooter-ama-windows |
-| Troubleshoot Azure Log Analytics VM extension on Windows and Linux | https://learn.microsoft.com/en-us/azure/azure-monitor/agents/vmext-troubleshoot |
+| Diagnose issues with Azure Log Analytics VM extension | https://learn.microsoft.com/en-us/azure/azure-monitor/agents/vmext-troubleshoot |
 | Use deep investigation examples to diagnose incidents | https://learn.microsoft.com/en-us/azure/azure-monitor/aiops/observability-agent-deep-investigation-examples |
 | Troubleshoot Azure Copilot Observability Agent issues | https://learn.microsoft.com/en-us/azure/azure-monitor/aiops/observability-agent-troubleshooting |
 | Troubleshoot tenant-level Azure service health alerts | https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-create-tenant-level-service-heath-alerts |
@@ -82,11 +82,20 @@ This skill requires **network access** to fetch documentation content:
 | Detect risky CloudStorageAggregatedEvents with queries | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/cloudstorageaggregatedevents |
 | Query and analyze EdgeActionServiceLog in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/edgeactionservicelog |
 | Use ZTSJobStatus log queries to diagnose workspace connectivity | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/ztsjobstatus |
-| Troubleshoot Azure Monitor DCR log collection issues | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/dcrlogtroubleshooting |
+| Investigate DCR-based data collection log errors | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/dcrlogerrors |
+| Use DCRLogTroubleshooting for DCR flow diagnostics | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/dcrlogtroubleshooting |
+| Diagnose DevCenter dev box agent health issues | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devcenteragenthealthlogs |
+| Troubleshoot DevCenter dev box connection events | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devcenterconnectionlogs |
+| Investigate DevCenter dev box and environment operations | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devcenterdiagnosticlogs |
+| Analyze DevCenter resource operation and health logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devcenterresourceoperationlogs |
 | Investigate DCR-based data collection errors via logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-insights-datacollectionrules |
 | Troubleshoot Azure Monitor pipeline groups with error logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-monitor-pipelinegroups |
-| Analyze Toolchain Orchestrator user diagnostics logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/touserdiagnostics |
-| Interpret WOUserDiagnostics logs for workload orchestration | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/wouserdiagnostics |
+| Diagnose failed Synapse DX ingestion operations | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/synapsedxfailedingestion |
+| Audit Toolchain orchestrator API interactions | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/touseraudits |
+| Diagnose Toolchain orchestrator user request failures | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/touserdiagnostics |
+| Investigate Azure Time Series Insights ingress errors | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/tsiingress |
+| Monitor device-specific update compliance alerts | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ucdevicealert |
+| Investigate update compliance alerts per device | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ucupdatealert |
 | Troubleshoot Application Insights Snapshot Debugger problems | https://learn.microsoft.com/en-us/azure/azure-monitor/snapshot-debugger/snapshot-debugger-troubleshoot |
 | Troubleshoot workbook-based insights in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/troubleshoot-workbooks |
 | Access deprecated troubleshooting guides in Workbooks | https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/workbooks-access-troubleshooting-guide |
@@ -112,6 +121,7 @@ This skill requires **network access** to fetch documentation content:
 | Apply Azure Monitor best practices for AKS clusters | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/best-practices-containers |
 | Optimize Container Insights monitoring costs and configuration | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-cost |
 | Design cost-effective alerting for AKS in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/cost-effective-alerting |
+| Configure recommended Kubernetes metric alerts in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/kubernetes-metric-alerts |
 | Apply Azure Monitor best practices for Kubernetes layers | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/monitor-kubernetes |
 | Apply best practices for Azure Monitor data collection rules | https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/data-collection-rule-best-practices |
 | Apply sample Azure Monitor transformation queries | https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/data-collection-transformations-samples |
@@ -138,7 +148,9 @@ This skill requires **network access** to fetch documentation content:
 ### Decision Making
 | Topic | URL |
 |-------|-----|
+| Map MMA data fields to Azure Monitor Agent schemas | https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-data-field-differences |
 | Plan and execute migration from Log Analytics agent to AMA | https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-migration |
+| Generate DCR configs to migrate from MMA to AMA | https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-migration-data-collection-rule-generator |
 | Plan migration from Log Analytics Agent to Azure Monitor Agent | https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-migration-helper-workbook |
 | Plan migration from WAD/LAD diagnostics to AMA | https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-migration-wad-lad |
 | Plan and manage costs for Observability Agent usage | https://learn.microsoft.com/en-us/azure/azure-monitor/aiops/observability-agent-billing |
@@ -158,7 +170,7 @@ This skill requires **network access** to fetch documentation content:
 | Identify Azure Monitor tables supporting Basic plan | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/basic-logs-azure-tables |
 | Plan and optimize Azure Monitor Logs costs | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/cost-logs |
 | Decide and configure Azure Monitor dedicated clusters | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/logs-dedicated-clusters |
-| Choose Azure Monitor Logs table plans by usage | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/logs-table-plans |
+| Choose and configure Azure Monitor Logs table plans | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/logs-table-plans |
 | Plan migration from Splunk to Azure Monitor Logs | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/migrate-splunk-to-azure-monitor-logs |
 | Choose and design Azure Log Analytics workspaces | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/workspace-design |
 | Plan migration from self-hosted Prometheus to Azure Monitor managed Prometheus | https://learn.microsoft.com/en-us/azure/azure-monitor/metrics/prometheus-migrate |
@@ -185,7 +197,6 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Plan Azure Monitor Agent performance for gateway forwarding | https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-performance |
-| Check Azure Monitor Agent platform and resource requirements | https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-requirements |
 | Manage Azure Monitor alert instance retention and state | https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-manage-alert-instances |
 | Monitor and interpret log alert rule health in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/log-alert-rule-health |
 | Deploy log search alert rules with ARM templates and size limits | https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/resource-manager-alerts-log |
@@ -198,13 +209,12 @@ This skill requires **network access** to fetch documentation content:
 | Plan Prometheus scraping performance and scale in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/prometheus-metrics-scrape-scale |
 | Check supported resources and regions for metrics export | https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/metrics-export-reference |
 | Review supported resource types and regions for platform logs | https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/platform-logs-reference |
-| Azure Monitor platform limits and quotas reference | https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/service-limits |
+| Review Azure Monitor service limits and quotas | https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/service-limits |
 | Understand caching behavior in Logs Query API | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/api/cache |
 | Use cross-workspace query limits in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/api/cross-workspace-queries |
 | Configure Azure Monitor logs query timeouts and limits | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/api/timeouts |
 | Configure Azure Monitor logs query timeouts and limits | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/api/timeouts |
 | Configure daily ingestion caps for Log Analytics workspaces | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/daily-cap |
-| Understand Azure Monitor log data ingestion latency | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/data-ingestion-time |
 | Tables supporting ingestion-time transformations in Log Analytics | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/tables-feature-support |
 | Monitor Azure Monitor workspace metrics ingestion limits | https://learn.microsoft.com/en-us/azure/azure-monitor/metrics/azure-monitor-workspace-monitor-ingest-limits |
 | Technical details and limits for Azure Monitor managed Prometheus | https://learn.microsoft.com/en-us/azure/azure-monitor/metrics/prometheus-metrics-details |
@@ -243,32 +253,46 @@ This skill requires **network access** to fetch documentation content:
 | Configure table-level RBAC for Log Analytics workspaces | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/manage-table-access |
 | Configure protected tables and RBAC in Azure Monitor Logs | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/protected-tables-configure |
 | Manage access control for Azure Monitor workspaces | https://learn.microsoft.com/en-us/azure/azure-monitor/metrics/azure-monitor-workspace-manage-access |
-| Analyze Defender serverless security plugin data logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/appserviceserverlesssecurityplugindata |
-| Use ArcK8sAudit Kubernetes API audit logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/arck8saudit |
-| Analyze ArcK8sAuditAdmin modifying Kubernetes API operations | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/arck8sauditadmin |
-| Analyze AzureAttestationDiagnostics attestation request logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azureattestationdiagnostics |
-| Use AzureDevOpsAuditing logs to track DevOps changes | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azuredevopsauditing |
-| Leverage BehaviorAnalytics Sentinel UEBA enriched events | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/behavioranalytics |
-| Use BehaviorEntities table for Defender entity behaviors | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/behaviorentities |
-| Analyze BehaviorInfo table for Defender behavior insights | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/behaviorinfo |
-| Use CampaignInfo table for Defender for Office 365 campaigns | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/campaigninfo |
-| Analyze CassandraAudit CQL operation and login audit logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/cassandraaudit |
-| Understand DatabricksRBAC audit log schema in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/databricksrbac |
-| Review DatabricksRemoteHistoryService credential audit schema | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/databricksremotehistoryservice |
-| Use DatabricksRFA access request audit logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/databricksrfa |
-| Inspect DatabricksSecrets audit log schema | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/databrickssecrets |
-| Analyze DatabricksSQLPermissions audit log schema | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/databrickssqlpermissions |
-| Use DatabricksSSH audit log table schema | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/databricksssh |
-| Monitor GCPIAM identity and access logs in Sentinel | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/gcpiam |
-| Query GoogleCloudSCC security findings in Sentinel | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/googlecloudscc |
-| Monitor HDInsightGatewayAuditLogs authentication activity | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/hdinsightgatewayauditlogs |
+| Analyze Databricks RBAC audit logs in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/databricksrbac |
+| Audit Databricks remote history service credentials | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/databricksremotehistoryservice |
+| Monitor Databricks request-for-access events | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/databricksrfa |
+| Track Databricks secrets access and changes | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/databrickssecrets |
+| Audit Databricks SQL endpoint lifecycle events | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/databrickssql |
+| Review Databricks SQL permissions audit logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/databrickssqlpermissions |
+| Monitor Databricks SSH access audit events | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/databricksssh |
+| Analyze Databricks Unity Catalog audit activity | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/databricksunitycatalog |
+| Audit Databricks webhook notification activity | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/databrickswebhooknotifications |
+| Monitor Databricks web terminal usage logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/databrickswebterminal |
+| Audit Databricks workspace configuration changes | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/databricksworkspace |
+| Track Databricks workspace file access and changes | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/databricksworkspacefiles |
+| Analyze Microsoft Dataverse and Dynamics 365 audit logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/dataverseactivity |
+| Monitor Defender for IoT raw security events | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/defenderiotrawevent |
+| Use DeviceBehaviorEntities for threat investigation | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicebehaviorentities |
+| Leverage DeviceBehaviorInfo for security behavior insights | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicebehaviorinfo |
+| Collect custom file events with MDE for investigations | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicecustomfileevents |
+| Monitor custom DLL load events in MDE | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicecustomimageloadevents |
+| Track custom network activity with MDE logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicecustomnetworkevents |
+| Capture custom process events for endpoint security | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicecustomprocessevents |
+| Audit custom registry changes with MDE | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicecustomregistryevents |
+| Monitor custom script execution events in MDE | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicecustomscriptevents |
+| Use DeviceEvents for comprehensive endpoint security logging | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/deviceevents |
+| Inspect file signing certificates with DeviceFileCertificateInfo | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicefilecertificateinfo |
+| Analyze endpoint file activity with DeviceFileEvents | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicefileevents |
+| Monitor DLL loading activity via DeviceImageLoadEvents | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/deviceimageloadevents |
 | Audit Azure AD tenant activity with Monitor tables | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-graph-tenants |
 | Audit Azure API for FHIR with Monitor tables | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-healthcareapis-services |
 | Monitor Azure Health Data DICOM service activity | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-healthcareapis-workspaces |
 | Audit Windows 365 operations with Intune logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-intune-operations |
 | Audit Kubernetes API activity on Arc-connected clusters | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-kubernetes-connectedclusters |
 | Audit Nexus bare metal machine security and metrics logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-networkcloud-baremetalmachines |
-| Audit Synapse RBAC operations with SynapseRbacOperations logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/synapserbacoperations |
+| Audit Purview security events with PurviewSecurityLogs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/purviewsecuritylogs |
+| Use ResourceManagementPublicAccessLogs for private link analysis | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/resourcemanagementpublicaccesslogs |
+| Audit Azure Synapse RBAC operations with logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/synapserbacoperations |
+| Analyze STIX threat indicators in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/threatintelindicators |
+| Use ThreatIntelligenceIndicator logs for security analysis | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/threatintelligenceindicator |
+| Query generic STIX threat intel objects | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/threatintelobjects |
+| Analyze Defender for Office 365 URL click events | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/urlclickevents |
+| Analyze user access paths to Azure resources | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/useraccessanalytics |
 | Run resource-scoped Prometheus queries securely in Grafana | https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/grafana-resource-scoped-queries |
 | Call Azure Monitor-managed Grafana APIs with Entra ID | https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/visualize-call-grafana-api |
 | Secure Azure Monitor workbooks with customer storage | https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/workbooks-bring-your-own-storage |

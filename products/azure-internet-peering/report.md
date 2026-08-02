@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-08-02'
 category_descriptions:
   troubleshooting: Diagnosing and validating Azure Peering Service prefixes, including
     prefix registration checks, routing verification, and troubleshooting connectivity
@@ -29,8 +29,8 @@ confusable_not_for: Not for Azure ExpressRoute (use azure-expressroute), Azure V
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 23
+- **Updated Pages**: 2
+- **Unchanged**: 21
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-internet-peering/azure-internet-peering.csv`
 
@@ -43,6 +43,13 @@ confusable_not_for: Not for Azure ExpressRoute (use azure-expressroute), Azure V
 
 ## Changes
 
+### Updated Pages
+
+- [Create or modify a Direct peering](https://learn.microsoft.com/en-us/azure/internet-peering/howto-direct-portal)
+  - Updated: 2026-02-25T08:00:00.000Z → 2026-07-28T08:00:00.000Z
+- [Create or modify an Exchange peering](https://learn.microsoft.com/en-us/azure/internet-peering/howto-exchange-portal)
+  - Updated: 2026-02-25T08:00:00.000Z → 2026-07-28T08:00:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
@@ -54,8 +61,6 @@ confusable_not_for: Not for Azure ExpressRoute (use azure-expressroute), Azure V
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
 | [Associate peer ASN to Azure subscription](https://learn.microsoft.com/en-us/azure/internet-peering/howto-subscription-association-portal) | 0.45 | Shows how to associate an ASN with a subscription via portal; likely a simple step-by-step UI guide without detailed configuration tables. |
-| [Create or modify a Direct peering](https://learn.microsoft.com/en-us/azure/internet-peering/howto-direct-portal) | 0.45 | Create/modify direct peering via portal; while it may touch on some settings, the summary suggests a UI walkthrough rather than a comprehensive configuration reference. |
-| [Create or modify an Exchange peering](https://learn.microsoft.com/en-us/azure/internet-peering/howto-exchange-portal) | 0.45 | Create/modify exchange peering via portal; appears to be a procedural article without detailed configuration parameter tables or numeric limits. |
 | [Create or modify an Exchange peering with route server](https://learn.microsoft.com/en-us/azure/internet-peering/how-to-exchange-route-server-portal) | 0.45 | Portal guide for exchange peering with route server; summary indicates standard create/update/delete steps, not expert-level configuration or limits. |
 | [Direct peering walkthrough](https://learn.microsoft.com/en-us/azure/internet-peering/walkthrough-direct-all) | 0.40 | Step-by-step setup and monitoring guide for direct peering; described as a walkthrough rather than a reference of limits, configs, or troubleshooting mappings. |
 | [Enable Peering Service Voice on a Direct peering](https://learn.microsoft.com/en-us/azure/internet-peering/howto-peering-service-voice-portal) | 0.40 | Similar to index 16 but for voice; summary indicates a straightforward enablement guide without detailed parameters or limits. |
@@ -69,6 +74,8 @@ confusable_not_for: Not for Azure ExpressRoute (use azure-expressroute), Azure V
 | [Convert a legacy Direct peering to Azure resource](https://learn.microsoft.com/en-us/azure/internet-peering/howto-legacy-direct-portal) | 0.35 | Legacy direct peering conversion guide; focused on migration steps, not on limits, configuration matrices, or troubleshooting details. |
 | [Convert a legacy Exchange peering to Azure resource](https://learn.microsoft.com/en-us/azure/internet-peering/howto-legacy-exchange-portal) | 0.35 | Legacy exchange peering conversion walkthrough; migration-focused and not a reference for limits, configs, or troubleshooting. |
 | [Direct peering type conversion request walkthrough](https://learn.microsoft.com/en-us/azure/internet-peering/walkthrough-direct-peering-type-conversions) | 0.35 | Portal-based type conversion request walkthrough; procedural with no indication of numeric thresholds, config parameters, or troubleshooting mappings. |
+| [Create or modify a Direct peering](https://learn.microsoft.com/en-us/azure/internet-peering/howto-direct-portal) | 0.30 | Page is a how-to for creating/modifying Direct peering via Azure portal; from the description it appears to be a procedural tutorial without detailed limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. Lacks the specific numeric limits, config tables, or error mappings required for any sub-skill type. |
+| [Create or modify an Exchange peering](https://learn.microsoft.com/en-us/azure/internet-peering/howto-exchange-portal) | 0.30 | Page is a how-to for creating/modifying Exchange peering via Azure portal; description suggests step-by-step operations (create, check status, update, delete) but not detailed limits, configuration option tables, or troubleshooting mappings. Does not meet criteria for limits-quotas, configuration, troubleshooting, or other sub-skill types. |
 | [Internet peering FAQ](https://learn.microsoft.com/en-us/azure/internet-peering/faqs) | 0.30 | FAQ format; summary does not indicate presence of specific error codes, limits tables, or configuration matrices—likely general Q&A. |
 | [Peering policy](https://learn.microsoft.com/en-us/azure/internet-peering/policy) | 0.30 | Describes general peering policy and requirements at a high level; summary does not indicate specific numeric limits or configuration tables. |
 | [Prerequisites to set up peering with Microsoft](https://learn.microsoft.com/en-us/azure/internet-peering/prerequisites) | 0.30 | Prerequisites article appears procedural and conceptual; summary does not show concrete limits, config parameters, or error mappings. |

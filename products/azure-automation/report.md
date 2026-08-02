@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-26'
+generated_at: '2026-08-02'
 category_descriptions:
   security: 'Securing Automation accounts: identities (system/user-assigned), Entra
     auth, RBAC, encryption, credentials/certs, private endpoints, policies, and security
@@ -51,8 +51,8 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 6
-- **Unchanged**: 109
+- **Updated Pages**: 1
+- **Unchanged**: 114
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-automation/azure-automation.csv`
 
@@ -74,18 +74,8 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 
 ### Updated Pages
 
-- [What is Azure Automation?](https://learn.microsoft.com/en-us/azure/automation/overview)
-  - Updated: 2025-04-24T08:00:00.000Z → 2026-07-23T17:11:00.000Z
-- [Management of Azure Automation data](https://learn.microsoft.com/en-us/azure/automation/automation-managing-data)
-  - Updated: 2026-04-24T08:00:00.000Z → 2026-05-05T08:00:00.000Z
-- [Deploy extension-based worker](https://learn.microsoft.com/en-us/azure/automation/extension-based-hybrid-runbook-worker-install)
-  - Updated: 2026-04-15T08:00:00.000Z → 2026-05-05T08:00:00.000Z
-- [Migrate existing Agent-based Hybrid Workers to Extension-based Workers](https://learn.microsoft.com/en-us/azure/automation/migrate-existing-agent-based-hybrid-worker-to-extension-based-workers)
-  - Updated: 2026-04-24T08:00:00.000Z → 2026-05-05T08:00:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/automation/automation-dsc-overview)
-  - Updated: 2026-04-24T08:00:00.000Z → 2026-05-05T08:00:00.000Z
-- [Work with State Configuration extension version history](https://learn.microsoft.com/en-us/azure/automation/automation-dsc-extension-history)
-  - Updated: 2026-04-24T08:00:00.000Z → 2026-05-05T08:00:00.000Z
+- [What's new?](https://learn.microsoft.com/en-us/azure/automation/whats-new)
+  - Updated: 2026-03-10T08:00:00.000Z → 2026-07-27T08:00:00.000Z
 
 ## Classified Pages
 
@@ -210,4 +200,4 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 | [Update runbook from PowerShell 7.1 to PowerShell 7.4](https://learn.microsoft.com/en-us/azure/automation/quickstart-update-runbook-in-runtime-environment) | 0.20 | Quickstart-style guidance for updating runbooks between PowerShell runtime versions; no detailed limits, configuration tables, error codes, or product-specific expert patterns beyond general version support statements. |
 | [What are the various Automation services in Azure?](https://learn.microsoft.com/en-us/azure/automation/automation-services) | 0.20 | Conceptual comparison of automation services; no detailed decision matrices, limits, or config tables evident from summary. |
 | [What is Azure Automation?](https://learn.microsoft.com/en-us/azure/automation/overview) | 0.10 | High-level overview of Azure Automation capabilities and benefits without specific limits, configuration parameters, error codes, or detailed patterns that meet the expert-knowledge criteria. |
-| [What's new?](https://learn.microsoft.com/en-us/azure/automation/whats-new) | 0.10 | Monthly 'what's new' changelog/updates page; primarily release notes and high-level feature announcements without structured limits, configuration tables, error mappings, or decision matrices that match the defined expert-knowledge sub-skill types. |
+| [What's new?](https://learn.microsoft.com/en-us/azure/automation/whats-new) | 0.10 | Release notes / what's new page summarizing monthly updates; does not focus on detailed limits, configuration tables, troubleshooting mappings, or other structured expert knowledge as defined by the sub-skill types. |

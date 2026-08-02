@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-05-17'
+generated_at: '2026-08-02'
 category_descriptions:
-  configuration: 'Configuring Azure AI bots: dialogs, language generation/understanding,
-    memory/state, channels (Web Chat, Direct Line), telemetry/monitoring, skills,
-    and environment-specific settings.'
+  configuration: 'Configuring Azure bots: adaptive dialogs/expressions, language generation
+    and understanding, state/storage, telemetry/monitoring, Web Chat and channels,
+    skills, and environment-specific settings.'
   security: 'Securing Azure bots: auth/SSO (OAuth, Web Chat, skills), Direct Line
     security, network isolation/VNET, encryption, privacy, and configuring bot/connector
     authentication.'
@@ -30,16 +30,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure AI Bot Service development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when building Azure AI bots with Direct Line/Web Chat, Teams, OAuth/SSO, human
-  handoff, or proactive messaging, and other Azure AI Bot Service related development
-  tasks. Not for Azure Health Bot (use azure-health-bot), Azure Functions (use azure-functions),
-  Azure App Service (use azure-app-service), Azure Logic Apps (use azure-logic-apps).
-use_when: Use when building Azure AI bots with Direct Line/Web Chat, Teams, OAuth/SSO,
-  human handoff, or proactive messaging, and other Azure AI Bot Service related development
-  tasks.
-confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Functions
-  (use azure-functions), Azure App Service (use azure-app-service), Azure Logic Apps
-  (use azure-logic-apps).
+  Use when building bots with adaptive dialogs, Direct Line/Web Chat, Teams integration,
+  OAuth/SSO, or proactive messages, and other Azure AI Bot Service related development
+  tasks. Not for Azure Health Bot (use azure-health-bot), Azure Web PubSub (use azure-web-pubsub),
+  Azure Functions (use azure-functions), Azure App Service (use azure-app-service).
+use_when: Use when building bots with adaptive dialogs, Direct Line/Web Chat, Teams
+  integration, OAuth/SSO, or proactive messages, and other Azure AI Bot Service related
+  development tasks.
+confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Web PubSub
+  (use azure-web-pubsub), Azure Functions (use azure-functions), Azure App Service
+  (use azure-app-service).
 ---
 # Azure AI Bot Service Crawl Report
 
@@ -53,8 +53,8 @@ confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Funct
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 190
+- **Updated Pages**: 2
+- **Unchanged**: 188
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-bot-service/azure-bot-service.csv`
 
@@ -74,6 +74,13 @@ confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Funct
 | *(Unclassified)* | 38 | 20.0% |
 
 ## Changes
+
+### Updated Pages
+
+- [Monitoring data reference](https://learn.microsoft.com/en-us/azure/bot-service/monitor-bot-service-reference?view=azure-bot-service-4.0)
+  - Updated: 2024-10-09T08:00:00.000Z → 2025-12-16T01:01:00.000Z
+- [General](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-resources-faq-general?view=azure-bot-service-4.0)
+  - Updated: 2025-01-02T13:00:00.000Z → 2026-07-30T01:03:00.000Z
 
 ## Classified Pages
 
@@ -108,6 +115,7 @@ confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Funct
 | [Web Chat](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-connect-webchat?view=azure-bot-service-4.0) | integrations | 0.80 | Includes obtaining bot secret keys, token usage, and embedding Web Chat control—channel-specific integration configuration. |
 | [.lg file format](https://learn.microsoft.com/en-us/azure/bot-service/file-format/bot-builder-lg-file-format?view=azure-bot-service-4.0) | configuration | 0.78 | .lg file format reference is a syntax/configuration spec: it defines template constructs, parameters, condition syntax, imports, and other file-format rules that are product-specific and not just conceptual. This matches configuration (file format parameters and allowed structures). |
 | [.lu file format](https://learn.microsoft.com/en-us/azure/bot-service/file-format/bot-builder-lu-file-format?view=azure-bot-service-4.0) | configuration | 0.78 | .lu file format reference describes the exact text-based schema for intents, entities, utterances, and other NLU constructs. These are concrete file-format rules and parameters unique to Bot Service/LUIS/Orchestrator, fitting configuration. |
+| [Monitoring data reference](https://learn.microsoft.com/en-us/azure/bot-service/monitor-bot-service-reference?view=azure-bot-service-4.0) | configuration | 0.78 | The page is a monitoring data reference that lists specific telemetry signals, metric names, dimensions, and log schema fields for Azure AI Bot Service. These are product-specific configuration/telemetry parameters (e.g., metric identifiers, property names, categories) that an LLM wouldn't reliably know from training. Content is organized as reference data rather than conceptual guidance, fitting the configuration sub-skill type best. |
 | [API reference](https://learn.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?view=azure-bot-service-4.0) | integrations | 0.75 | REST API reference for the Connector service will list operations, headers, objects, and error codes with parameter names and constraints. These are product-specific API details that qualify as integration patterns/configuration for programmatic access. |
 | [Add telemetry to your bot](https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-telemetry?view=azure-bot-service-4.0) | configuration | 0.75 | Shows how to enable and configure telemetry logging for Bot Framework bots with Application Insights, including specific settings and telemetry event patterns. |
 | [Alexa](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-connect-alexa?view=azure-bot-service-4.0) | integrations | 0.75 | Requires specific Alexa skill configuration, IDs, endpoints, and Azure channel settings—detailed cross-service integration. |
@@ -160,7 +168,6 @@ confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Funct
 | [Inputs](https://learn.microsoft.com/en-us/azure/bot-service/adaptive-dialog/adaptive-dialog-prebuilt-inputs?view=azure-bot-service-4.0) | configuration | 0.70 | Lists input dialog types and validation options, including property names and behaviors. These are specific configuration constructs for adaptive dialogs. |
 | [LINE](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-connect-line?view=azure-bot-service-4.0) | integrations | 0.70 | Uses LINE Developers Console configuration and Azure channel wiring; platform-specific integration details. |
 | [M365 (preview)](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-connect-m365?view=azure-bot-service-4.0) | integrations | 0.70 | Describes M365 Extensions channel configuration and Outlook testing; integration-specific settings not generally known. |
-| [Monitoring data reference](https://learn.microsoft.com/en-us/azure/bot-service/monitor-bot-service-reference?view=azure-bot-service-4.0) | configuration | 0.70 | A 'monitoring data reference' page typically enumerates concrete metric names, dimensions, log categories, and schema fields specific to Azure AI Bot Service. These are product-specific configuration/telemetry details that LLMs won't reliably know and are used to configure monitoring queries and alerts. |
 | [Outlook (preview)](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-connect-actionable-email?view=azure-bot-service-4.0) | integrations | 0.70 | Uses Adaptive Cards with Outlook Actionable Messages channel; includes preview channel configuration and constraints. |
 | [Overview](https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-webchat-overview?view=azure-bot-service-4.0) | configuration | 0.70 | Web Chat overview includes details of available properties and customization options for the component, which are specific configuration parameters for this client. |
 | [Provision an App Service resource](https://learn.microsoft.com/en-us/azure/bot-service/provision-app-service?view=azure-bot-service-4.0) | deployment | 0.70 | Focuses on creating App Service for bot deployment using Azure CLI and ARM templates, and includes a product-specific constraint about Python bots and Windows services in the same resource group. This is deployment-specific behavior/constraint that an LLM is unlikely to know from training. |
@@ -264,7 +271,7 @@ confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Funct
 | [Bot Framework SDK documentation](https://learn.microsoft.com/en-us/azure/bot-service/index-bf-sdk?view=azure-bot-service-4.0) | 0.20 | Landing/index page for Bot Framework SDK docs; high-level navigation and archival notice without detailed limits, configs, or error mappings. |
 | [Create a basic bot](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-quickstart-create-bot?view=azure-bot-service-4.0) | 0.20 | Quickstart tutorial for creating a basic bot locally; step-by-step example rather than reference-style expert configuration or limits. |
 | [Ecosystem](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-resources-faq-ecosystem?view=azure-bot-service-4.0) | 0.20 | Ecosystem FAQ is likely descriptive (tools, channels, integrations) rather than containing numeric limits, config parameter tables, or decision matrices. |
-| [General](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-resources-faq-general?view=azure-bot-service-4.0) | 0.20 | General FAQ typically covers conceptual and common questions, not product-specific limits, configuration matrices, or troubleshooting mappings. |
+| [General](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-resources-faq-general?view=azure-bot-service-4.0) | 0.20 | General FAQ page with broad Q&A; not focused on numeric limits, detailed configuration tables, error-code-based troubleshooting, or other structured expert data as defined by the sub-skill types. |
 | [How bots work](https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-basics?view=azure-bot-service-4.0) | 0.20 | Basics/how-it-works overview of bots, channels, and activities; conceptual rather than detailed configuration or troubleshooting reference. |
 | [Index](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-resources-bot-framework-faq?view=azure-bot-service-4.0) | 0.20 | Index/landing FAQ page that just links to other FAQs; no indication of detailed limits, configuration parameters, or error-code-based troubleshooting content. |
 | [Key concepts](https://learn.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-connector-concepts?view=azure-bot-service-4.0) | 0.20 | Conceptual explanation of Bot Connector API key concepts; no indication of detailed configuration tables, limits, or error mappings. |

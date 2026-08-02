@@ -1,9 +1,9 @@
 ---
 name: azure-database-postgresql
-description: Expert knowledge for Azure Database for PostgreSQL development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when tuning queries, configuring replicas, securing with VNet/Private Link, using pgvector, or planning migrations, and other Azure Database for PostgreSQL related development tasks. Not for Azure Database for MySQL (use azure-database-mysql), Azure Database for MariaDB (use azure-database-mariadb), Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance).
+description: Expert knowledge for Azure Database for PostgreSQL development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when tuning flexible servers, configuring pgvector/AGE, setting replicas, securing with VNet/TLS, or planning migrations, and other Azure Database for PostgreSQL related development tasks. Not for Azure Database for MySQL (use azure-database-mysql), Azure Database for MariaDB (use azure-database-mariadb), Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-26"
+  generated_at: "2026-08-02"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Database for PostgreSQL Skill
@@ -30,9 +30,9 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L107-L117 | Patterns for AI-powered apps and scalable data: using PostgreSQL with OpenAI (recommendations, semantic search) and designing/sharding multitenant, microservices, and real-time dashboard storage. |
 | Limits & Quotas | L118-L142 | Backup, storage, performance, and feature limits for Azure PostgreSQL, including PITR/restore behaviors, quotas, SSD tiers, replicas, and known migration or configuration constraints. |
 | Security | L143-L174 | Securing Azure Database for PostgreSQL: identity and access control, firewall/VNet, TLS, encryption, auditing, Defender, policies, and security best practices for flexible server. |
-| Configuration | L175-L260 | Configuring Azure Database for PostgreSQL Flexible Server: server parameters, extensions, logging/metrics, tuning (autovacuum, Query Store, planner), networking, replication, VS Code tools, and CLI-based management. |
-| Integrations & Coding Patterns | L261-L287 | Patterns and tools for integrating Azure PostgreSQL with AI/ML (Language, ML, LangChain, Foundry, MCP), SDK automation, migrations, Data Factory, vector search, and operational scripting. |
-| Deployment | L288-L295 | Guides for deploying and restoring Azure Database for PostgreSQL, including Azure Pipelines tasks and offline migrations from Aurora, RDS, and on-prem/VM PostgreSQL to flexible server. |
+| Configuration | L175-L261 | Configuring Azure Database for PostgreSQL Flexible Server: server parameters, extensions, networking, logging/metrics, tuning (autovacuum, Query Store, PgBouncer), VS Code tools, and CLI-based management. |
+| Integrations & Coding Patterns | L262-L289 | Integrating Azure PostgreSQL with AI/ML (Language, ML, LangChain, Foundry, Copilot), SDKs (.NET/Java/Python), DevOps tools (VS Code, CLI, ADF), migrations, partitioning, and vector search. |
+| Deployment | L290-L297 | Guides for deploying and restoring Azure Database for PostgreSQL, including Azure Pipelines tasks and offline migrations from Aurora, RDS, and on-prem/VM PostgreSQL to flexible server. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -178,15 +178,16 @@ This skill requires **network access** to fetch documentation content:
 | Check supported PostgreSQL versions on Azure Flexible Server | https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/concepts-supported-versions |
 | Configure scheduled maintenance windows for PostgreSQL flexible server | https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/how-to-configure-scheduled-maintenance |
 | Provision Azure PostgreSQL servers using Bicep templates | https://learn.microsoft.com/en-us/azure/postgresql/development/create-server-bicep |
-| Use advanced PostgreSQL connection options in VS Code | https://learn.microsoft.com/en-us/azure/postgresql/development/vs-code-extension/advanced-connection-options |
+| Configure advanced PostgreSQL connections in VS Code | https://learn.microsoft.com/en-us/azure/postgresql/development/vs-code-extension/advanced-connection-options |
 | Manage Azure PostgreSQL servers from VS Code | https://learn.microsoft.com/en-us/azure/postgresql/development/vs-code-extension/azure-server-management |
 | Configure Copilot integration with PostgreSQL VS Code extension | https://learn.microsoft.com/en-us/azure/postgresql/development/vs-code-extension/copilot-integration |
 | Understand MCP server tools in PostgreSQL VS Code extension | https://learn.microsoft.com/en-us/azure/postgresql/development/vs-code-extension/mcp-server |
 | Use PostgreSQL VS Code extension commands | https://learn.microsoft.com/en-us/azure/postgresql/development/vs-code-extension/reference/commands |
-| Keyboard shortcuts for PostgreSQL VS Code extension | https://learn.microsoft.com/en-us/azure/postgresql/development/vs-code-extension/reference/keyboard-shortcuts |
+| Use keyboard shortcuts in PostgreSQL VS Code extension | https://learn.microsoft.com/en-us/azure/postgresql/development/vs-code-extension/reference/keyboard-shortcuts |
 | Configure PostgreSQL VS Code extension settings | https://learn.microsoft.com/en-us/azure/postgresql/development/vs-code-extension/reference/settings |
+| Use PostgreSQL server dashboard metrics in VS Code | https://learn.microsoft.com/en-us/azure/postgresql/development/vs-code-extension/server-dashboard |
 | Enable azure_local_ai embeddings in PostgreSQL flexible server | https://learn.microsoft.com/en-us/azure/postgresql/extensions/azure-local-ai |
-| Azure PostgreSQL extensions by engine version | https://learn.microsoft.com/en-us/azure/postgresql/extensions/concepts-extensions-by-engine |
+| Enable PostgreSQL extensions on Azure Flexible Server | https://learn.microsoft.com/en-us/azure/postgresql/extensions/concepts-extensions-by-engine |
 | Reference list of Azure PostgreSQL extensions | https://learn.microsoft.com/en-us/azure/postgresql/extensions/concepts-extensions-versions |
 | Allow and manage extensions on Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/extensions/how-to-allow-extensions |
 | Configure Azure Storage extension for PostgreSQL flexible server | https://learn.microsoft.com/en-us/azure/postgresql/extensions/how-to-configure-azure-storage-extension |
@@ -271,9 +272,10 @@ This skill requires **network access** to fetch documentation content:
 | Use Azure Java SDK to manage PostgreSQL servers | https://learn.microsoft.com/en-us/azure/postgresql/development/create-server-java-sdk |
 | Use Azure Python SDK to manage PostgreSQL servers | https://learn.microsoft.com/en-us/azure/postgresql/development/create-server-python-sdk |
 | Migrate Oracle databases to PostgreSQL with VS Code | https://learn.microsoft.com/en-us/azure/postgresql/development/vs-code-extension/oracle-migration |
-| GitHub Copilot Chat participants for PostgreSQL extension | https://learn.microsoft.com/en-us/azure/postgresql/development/vs-code-extension/reference/chat-participant |
+| Run parameterized PostgreSQL queries in VS Code | https://learn.microsoft.com/en-us/azure/postgresql/development/vs-code-extension/parameterized-queries |
+| Use PostgreSQL chat participants with Copilot Chat | https://learn.microsoft.com/en-us/azure/postgresql/development/vs-code-extension/reference/chat-participant |
 | Use PostgreSQL Copilot tools in VS Code | https://learn.microsoft.com/en-us/azure/postgresql/development/vs-code-extension/reference/copilot-tools |
-| MCP server definitions for PostgreSQL VS Code extension | https://learn.microsoft.com/en-us/azure/postgresql/development/vs-code-extension/reference/mcp-server |
+| Use MCP server providers in PostgreSQL VS Code extension | https://learn.microsoft.com/en-us/azure/postgresql/development/vs-code-extension/reference/mcp-server |
 | Enable and use DiskANN with Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/extensions/how-to-use-pgdiskann |
 | Use pgvector for vector search on Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/extensions/how-to-use-pgvector |
 | Use Azure Storage extension function reference for PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/extensions/reference-azure-storage-extension |

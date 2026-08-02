@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-28'
+generated_at: '2026-08-02'
 category_descriptions:
   configuration: Configuring Redis cache behavior, replication, persistence, redundancy,
     maintenance (reboots/updates), and setting up monitoring, diagnostics, and metrics/logs
@@ -49,8 +49,8 @@ confusable_not_for: Not for Azure Managed Redis (use azure-managed-redis), Azure
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 63
+- **Updated Pages**: 1
+- **Unchanged**: 62
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cache-redis/azure-cache-redis.csv`
 
@@ -69,6 +69,11 @@ confusable_not_for: Not for Azure Managed Redis (use azure-managed-redis), Azure
 | *(Unclassified)* | 6 | 9.5% |
 
 ## Changes
+
+### Updated Pages
+
+- [What's new](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-whats-new)
+  - Updated: 2026-05-02T06:17:00.000Z → 2026-07-30T22:15:00.000Z
 
 ## Classified Pages
 
@@ -139,6 +144,6 @@ confusable_not_for: Not for Azure Managed Redis (use azure-managed-redis), Azure
 | [Create an Azure Cache for Redis instance in the Basic, Standard and Premium tiers](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/quickstart-create-redis) | 0.30 | Quickstart for creating a cache via portal; mostly step-by-step UI guidance without detailed configuration tables or product-specific best-practice values. |
 | [Development FAQs](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-development-faq) | 0.30 | A development FAQ is usually a mix of general usage questions and high-level guidance without structured symptom→solution mappings, specific error codes, or detailed configuration tables. From the description it appears conceptual and Q&A oriented, not focused on limits, configuration matrices, or troubleshooting details. |
 | [Publishing Azure Cache for Redis events](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-event-grid) | 0.20 | Described as an Event Grid overview for Azure Cache for Redis events. Likely focuses on conceptual explanation of events and integration possibilities without detailed parameter tables, limits, or product-specific configuration values; reads as overview/marketing rather than deep config or troubleshooting. |
-| [What's new](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-whats-new) | 0.20 | A 'what's new' changelog page typically summarizes recent features and updates without structured limits, configuration tables, error-code mappings, or decision matrices. It’s primarily informational/announcement content rather than detailed expert guidance matching any sub-skill type. |
+| [What's new](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-whats-new) | 0.20 | The 'What's New' page is a release notes/updates overview without detailed limits, configuration tables, error codes, or decision matrices; it summarizes recent changes rather than providing deep, product-specific expert guidance. |
 | [About Azure Cache for Redis](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-overview) | 0.10 | Service overview describing what Azure Cache for Redis is and common use cases; conceptual and marketing-level content. |
 | [Choose a cache tier](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-overview) | 0.10 | Duplicate of the overview page; same conceptual content without detailed expert configuration or limits. |

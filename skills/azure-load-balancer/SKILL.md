@@ -1,9 +1,9 @@
 ---
 name: azure-load-balancer
-description: Expert knowledge for Azure Load Balancer development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring health probes/rules, SNAT/outbound flows, IMDS/Monitor APIs, NAT v1→v2, or DDoS/NSG protection, and other Azure Load Balancer related development tasks. Not for Azure Application Gateway (use azure-application-gateway), Azure Front Door (use azure-front-door), Azure Traffic Manager (use azure-traffic-manager), Azure Virtual Network (use azure-virtual-network).
+description: Expert knowledge for Azure Load Balancer development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring LB rules/probes, SNAT/outbound, VMSS backends, IMDS/metrics APIs, or DDoS/NSG protection, and other Azure Load Balancer related development tasks. Not for Azure Application Gateway (use azure-application-gateway), Azure Front Door (use azure-front-door), Azure Traffic Manager (use azure-traffic-manager), Azure Virtual Network (use azure-virtual-network).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-19"
+  generated_at: "2026-08-02"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Load Balancer Skill
@@ -25,13 +25,13 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L37-L44 | Diagnosing and fixing Azure Load Balancer issues: deployment errors, health events/logs, probes, connectivity/backend traffic, SNAT/timeouts, IMDS errors, and resource health/availability. |
-| Best Practices | L45-L52 | Guidance on deploying Azure Load Balancer with VM scale sets, configuring inbound NAT, and building custom HTTP/HTTPS health probes (Python) using recommended best practices. |
-| Decision Making | L53-L60 | Guidance on choosing the right Load Balancer SKU, upgrading Basic to Standard, migrating from AWS NLB, and moving from inbound NAT rules v1 to v2. |
-| Architecture & Design Patterns | L61-L65 | Design patterns for traffic distribution and session affinity, plus guidance for configuring outbound internet connectivity and SNAT behavior with Azure Load Balancer. |
-| Limits & Quotas | L66-L73 | Limits, behaviors, and configuration of Azure Load Balancer: SNAT port quotas, outbound connection limits, TCP idle timeouts, and TCP reset behavior for troubleshooting connectivity. |
+| Best Practices | L45-L51 | Guidance on deploying Azure Load Balancer with VM scale sets, configuring inbound NAT, and building custom HTTP/HTTPS health probes (Python) using recommended best practices. |
+| Decision Making | L52-L59 | Guidance on choosing the right Load Balancer SKU, upgrading Basic to Standard, migrating from AWS NLB, and moving from inbound NAT rules v1 to v2. |
+| Architecture & Design Patterns | L60-L64 | Design patterns for traffic distribution and session affinity, plus guidance for configuring outbound internet connectivity and SNAT behavior with Azure Load Balancer. |
+| Limits & Quotas | L65-L73 | Health probe tuning, SNAT port and outbound limits, TCP idle timeouts, and TCP reset behaviors/FAQs for Azure Load Balancer capacity and connection handling. |
 | Security | L74-L79 | Securing Azure Load Balancer with NSGs and other controls, and enabling/configuring Azure DDoS Protection to defend against volumetric and protocol attacks. |
-| Configuration | L80-L100 | Configuring Azure Load Balancer behavior: backends/frontends (including cross-subscription), health probes, rules (inbound, outbound, NAT), traffic distribution, monitoring, and IPv6/DHCPv6 settings. |
-| Integrations & Coding Patterns | L101-L108 | Using IMDS, Azure Monitor CLI, and REST APIs to query load balancer/VM IPs, retrieve metadata, and collect/load metrics for integration and automation. |
+| Configuration | L80-L99 | Configuring Azure Load Balancer behavior: backends/frontends (including cross-subscription), rules, health probes, traffic distribution, outbound/SNAT, monitoring, and IPv6/DHCPv6 settings. |
+| Integrations & Coding Patterns | L100-L108 | Code samples and patterns for probing health, reading load balancer/VM metadata via IMDS, and retrieving Azure Load Balancer metrics using CLI and REST APIs |
 | Deployment | L109-L113 | Guides for deploying Load Balancers: replicating configurations across regions and automating upgrades from Basic to Standard using PowerShell. |
 
 ### Troubleshooting
@@ -46,7 +46,6 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Configure inbound NAT rules for VM scale sets | https://learn.microsoft.com/en-us/azure/load-balancer/configure-inbound-nat-rules-vm-scale-set |
-| Implement custom HTTP/HTTPS health probes with Python | https://learn.microsoft.com/en-us/azure/load-balancer/create-custom-http-health-probe-howto |
 | Apply Azure Load Balancer deployment best practices | https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-best-practices |
 | Use Azure Standard Load Balancer with virtual machine scale sets | https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-standard-virtual-machine-scale-sets |
 
@@ -66,9 +65,10 @@ This skill requires **network access** to fetch documentation content:
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
+| Configure and tune Azure Load Balancer health probes | https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-custom-probe-overview |
 | Azure Load Balancer FAQs with limits and behaviors | https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-faqs |
 | Understand SNAT port limits for Azure Load Balancer outbound | https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-outbound-connections |
-| Configure Azure Load Balancer TCP idle timeout and reset | https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-tcp-idle-timeout |
+| Configure TCP idle timeout and reset for Azure Load Balancer | https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-tcp-idle-timeout |
 | Understand Azure Load Balancer TCP reset behavior | https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-tcp-reset |
 
 ### Security
@@ -86,13 +86,12 @@ This skill requires **network access** to fetch documentation content:
 | Create global load balancer with cross-subscription backends | https://learn.microsoft.com/en-us/azure/load-balancer/cross-subscription-how-to-global-backend |
 | Configure cross-subscription internal Azure load balancer | https://learn.microsoft.com/en-us/azure/load-balancer/cross-subscription-how-to-internal-load-balancer |
 | Configure outbound-only Azure Load Balancer with Bastion | https://learn.microsoft.com/en-us/azure/load-balancer/egress-only |
-| Configure Azure Load Balancer health probe settings | https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-custom-probe-overview |
 | Configure Azure Load Balancer traffic distribution mode | https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-distribution-mode |
 | Configure DHCPv6 on Linux VMs for Azure IPv6 | https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-ipv6-for-linux |
 | Configure Azure Load Balancer portal settings | https://learn.microsoft.com/en-us/azure/load-balancer/manage |
 | Manage Azure Load Balancer backend admin state | https://learn.microsoft.com/en-us/azure/load-balancer/manage-admin-state-how-to |
 | Configure and manage Azure Load Balancer inbound NAT rules | https://learn.microsoft.com/en-us/azure/load-balancer/manage-inbound-nat-rules |
-| Configure Azure Load Balancer health probes | https://learn.microsoft.com/en-us/azure/load-balancer/manage-probes-how-to |
+| Configure Azure Load Balancer health probe settings in portal | https://learn.microsoft.com/en-us/azure/load-balancer/manage-probes-how-to |
 | Configure Azure Load Balancer rule types and properties | https://learn.microsoft.com/en-us/azure/load-balancer/manage-rules-how-to |
 | Configure monitoring for Azure Load Balancer with Azure Monitor | https://learn.microsoft.com/en-us/azure/load-balancer/monitor-load-balancer |
 | Reference monitoring metrics and logs for Azure Load Balancer | https://learn.microsoft.com/en-us/azure/load-balancer/monitor-load-balancer-reference |
@@ -101,6 +100,7 @@ This skill requires **network access** to fetch documentation content:
 ### Integrations & Coding Patterns
 | Topic | URL |
 |-------|-----|
+| Implement custom HTTP/HTTPS health probes with Python for Azure Load Balancer | https://learn.microsoft.com/en-us/azure/load-balancer/create-custom-http-health-probe-howto |
 | Use IMDS to retrieve Azure Load Balancer metadata | https://learn.microsoft.com/en-us/azure/load-balancer/howto-load-balancer-imds |
 | Query load balancer and VM IPs via IMDS | https://learn.microsoft.com/en-us/azure/load-balancer/instance-metadata-service-load-balancer |
 | Retrieve Azure Load Balancer metrics using Azure Monitor CLI | https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-monitor-metrics-cli |

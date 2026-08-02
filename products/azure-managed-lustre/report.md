@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-19'
+generated_at: '2026-08-02'
 category_descriptions:
   configuration: 'Configuring AML file systems: network/storage prerequisites, auto-mount
     via fstab, ARM/Bicep deployment, and setting up monitoring, metrics, and alerts
@@ -7,12 +7,11 @@ category_descriptions:
   architecture-patterns: Designing resilient Azure Managed Lustre deployments, including
     regional redundancy/failover strategies and tiered checkpoint architectures for
     performance and data protection.
-  integrations: Integrating Azure Managed Lustre with Blob Storage, Linux/AKS clients,
-    Terraform, and AzCopy, including import/export pipelines, auto-sync, and CSI driver-based
-    Kubernetes usage.
-  security: 'Securing Azure Managed Lustre: secure boot, firewalls/NSGs, CMK encryption,
-    root squash access controls, and virtual network encryption configuration and
-    validation.'
+  integrations: Patterns for connecting AML to Linux, AKS, and Terraform, plus configuring
+    Blob import/export, auto-sync, and POSIX data migration via AzCopy.
+  security: 'Securing Azure Managed Lustre: secure boot, firewalls/NSGs, CMK-based
+    encryption, root squash access controls, and virtual network encryption configuration
+    and validation.'
   limits-quotas: Configuring and managing user, group, and project storage quotas
     in Azure Managed Lustre, including setup steps, commands, and best practices for
     capacity control.
@@ -25,12 +24,13 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Managed Lustre development including
   troubleshooting, best practices, architecture & design patterns, limits & quotas,
   security, configuration, and integrations & coding patterns. Use when deploying
-  AML with Blob sync, AKS CSI, Terraform, quotas, or Azure Monitor metrics/alerts,
-  and other Azure Managed Lustre related development tasks. Not for Azure HPC Cache
-  (use azure-hpc-cache), Azure NetApp Files (use azure-netapp-files), Azure Virtual
-  Machines (use azure-virtual-machines).
-use_when: Use when deploying AML with Blob sync, AKS CSI, Terraform, quotas, or Azure
-  Monitor metrics/alerts, and other Azure Managed Lustre related development tasks.
+  AML with AKS/Linux, Blob import/export, AzCopy POSIX migration, quotas, or Azure
+  Monitor alerts, and other Azure Managed Lustre related development tasks. Not for
+  Azure HPC Cache (use azure-hpc-cache), Azure NetApp Files (use azure-netapp-files),
+  Azure Virtual Machines (use azure-virtual-machines).
+use_when: Use when deploying AML with AKS/Linux, Blob import/export, AzCopy POSIX
+  migration, quotas, or Azure Monitor alerts, and other Azure Managed Lustre related
+  development tasks.
 confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure NetApp Files
   (use azure-netapp-files), Azure Virtual Machines (use azure-virtual-machines).
 ---
@@ -46,8 +46,8 @@ confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure NetApp 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 31
+- **Updated Pages**: 2
+- **Unchanged**: 29
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-managed-lustre/azure-managed-lustre.csv`
 
@@ -66,13 +66,20 @@ confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure NetApp 
 
 ## Changes
 
+### Updated Pages
+
+- [Use Azure Blob Storage with Azure Managed Lustre](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/blob-integration)
+  - Updated: 2026-01-13T18:08:00.000Z → 2026-07-29T08:00:00.000Z
+- [Configure a network security group](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/configure-network-security-group)
+  - Updated: 2025-11-07T23:02:00.000Z → 2026-07-29T08:00:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
 | [Troubleshoot cluster performance issues](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/troubleshoot-performance) | troubleshooting | 0.86 | The page is explicitly a troubleshooting guide for Azure Managed Lustre performance, organized around common performance symptoms and how to diagnose and resolve them. It contains product-specific troubleshooting steps and likely maps symptoms to causes and resolutions, which qualifies as expert troubleshooting knowledge beyond generic debugging advice. |
 | [Troubleshoot cluster deployment failures](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/troubleshoot-deployment) | troubleshooting | 0.85 | Explicit troubleshooting guide for deployment; likely organized by error codes/messages and causes with specific resolutions unique to this service. |
-| [Configure a network security group](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/configure-network-security-group) | security | 0.80 | Describes specific NSG rules (ports, protocols, directions) required for Managed Lustre, which are detailed security configuration settings. |
+| [Configure a network security group](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/configure-network-security-group) | security | 0.80 | Page describes configuring Network Security Group rules specifically for Azure Managed Lustre, as part of a Zero Trust strategy. It likely includes product-specific ports, protocols, and rule configurations required to securely access the service, which matches the security sub-skill type (RBAC/NSG-style security configuration details). |
 | [Optimize Azure Managed Lustre performance](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/optimize-performance) | best-practices | 0.80 | Provides product-specific performance tuning guidance (e.g., VM sizes, accelerated networking, AZ placement, routing) with concrete configuration recommendations. |
 | [Set and configure Lustre quotas](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/lustre-quotas) | limits-quotas | 0.80 | Quota article will include specific quota types, commands, and likely numeric examples/constraints for storage limits, which are detailed quota configurations. |
 | [Use Azure Managed Lustre with Secure Boot](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/client-secure-boot) | security | 0.80 | Details how Lustre client kernel modules behave under Secure Boot and when/how to customize UEFI Secure Boot keys so modules load; includes product-specific security configuration behavior. |
@@ -88,7 +95,7 @@ confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure NetApp 
 | [Monitor a file system](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/monitor-file-system) | configuration | 0.70 | Describes which metrics/logs are emitted and how to configure collection and alerts; includes product-specific monitoring configuration steps. |
 | [Optimize file and directory layouts](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/optimize-file-layouts) | best-practices | 0.70 | Focuses on scaling file/directory layouts for performance; likely includes concrete recommendations (stripe counts, directory structures) specific to this product. |
 | [Tiered checkpoints for AI training](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/tiered-checkpoints) | architecture-patterns | 0.70 | The article explains when to use a tiered checkpointing architecture for large-scale AI training, how Azure Managed Lustre and Azure Blob Storage are combined into Accelerator and Core Storage layers, and what performance characteristics to expect. This is product-specific architectural guidance for AI training workloads rather than a generic overview, matching the architecture-patterns sub-skill. |
-| [Use Azure Blob Storage with Azure Managed Lustre](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/blob-integration) | integrations | 0.70 | Explains blob integration requirements and configuration for containers and file systems; includes product-specific parameters and behaviors for this integration. |
+| [Use Azure Blob Storage with Azure Managed Lustre](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/blob-integration) | integrations | 0.70 | Page focuses on how Azure Managed Lustre integrates with Azure Blob Storage for import/export. This is a product-specific integration pattern describing how to use blob containers with the file system, which falls under integrations & coding patterns. It goes beyond conceptual overview by explaining concrete integration behavior and configuration requirements for compatible blob containers. |
 | [Use Azure Firewall with Azure Managed Lustre](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/configure-firewall) | security | 0.70 | Provides firewall rule and topology guidance specific to Managed Lustre traffic patterns, which are product-specific security/network configuration practices. |
 | [Connect client to the file system](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/connect-clients) | integrations | 0.65 | Explains how to prepare Linux clients and mount the Azure Managed Lustre file system, likely including mount options and parameters specific to this service, which are integration patterns between clients and AML. |
 | [Create file system using Terraform](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/create-aml-file-system-terraform) | integrations | 0.65 | Terraform article will define resource blocks and parameters specific to Azure Managed Lustre, including required/optional fields and defaults, which are product-specific integration patterns. |

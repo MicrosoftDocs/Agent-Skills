@@ -8,6 +8,7 @@
 | Topic | URL |
 |-------|-----|
 | Configure attribute-based VM selection in Compute Fleet | https://learn.microsoft.com/en-us/azure/azure-compute-fleet/attribute-based-vm-selection |
+| Configure Spot VM behavior in Azure Compute Fleet | https://learn.microsoft.com/en-us/azure/azure-compute-fleet/spot-vm-configuration |
 | Inspect and manage Azure Linux AKS host packages | https://learn.microsoft.com/en-us/azure/azure-linux/aks-packages |
 | Configure networking on Azure Linux with systemd-networkd | https://learn.microsoft.com/en-us/azure/azure-linux/configure-networking |
 | Enable debuginfo repositories on Azure Linux | https://learn.microsoft.com/en-us/azure/azure-linux/install-debug-symbol-packages |

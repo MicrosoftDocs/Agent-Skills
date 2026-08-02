@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-12'
+generated_at: '2026-08-02'
 category_descriptions:
   troubleshooting: Diagnosing and resolving Azure AI Content Safety API errors, including
     HTTP status codes, common failure causes, and recommended fixes or retries.
@@ -12,42 +12,40 @@ category_descriptions:
     strategies.
   security: Details on how Azure AI Content Safety encrypts data at rest, including
     encryption models, key management options, and compliance/security considerations.
+  integrations: Calling Content Safety APIs for provenance detection and groundedness
+    checks, including request/response patterns, parameters, and integration examples
+    for detecting source and factual alignment.
   best-practices: Tuning Content Safety thresholds, categories, and prompts to reduce
     misclassifications, plus strategies to balance safety, recall, and user experience.
   decision-making: Guidance on migrating apps from Content Safety preview to GA and
     deciding when and how to use limited-access Content Safety features and models.
   limits-quotas: Language coverage, building and training custom safety categories,
     and detecting protected/third‑party code in model outputs.
-  integrations: Using the groundedness detection API to check if AI responses are
-    supported by source content, with request/response formats, parameters, and integration
-    patterns
 skill_description: Expert knowledge for Azure AI Content Safety development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when using Content Safety APIs, Docker containers, text blocklists, groundedness
-  detection, or custom safety categories, and other Azure AI Content Safety related
-  development tasks. Not for Azure Information Protection (use azure-information-protection),
-  Azure Security (use azure-security), Azure Defender For Cloud (use azure-defender-for-cloud),
-  Azure Sentinel (use azure-sentinel).
-use_when: Use when using Content Safety APIs, Docker containers, text blocklists,
-  groundedness detection, or custom safety categories, and other Azure AI Content
-  Safety related development tasks.
-confusable_not_for: Not for Azure Information Protection (use azure-information-protection),
-  Azure Security (use azure-security), Azure Defender For Cloud (use azure-defender-for-cloud),
-  Azure Sentinel (use azure-sentinel).
+  Use when using Content Safety Docker, text/image/prompt shield APIs, blocklists,
+  provenance, or groundedness checks, and other Azure AI Content Safety related development
+  tasks. Not for Azure Security (use azure-security), Azure Defender For Cloud (use
+  azure-defender-for-cloud), Azure Sentinel (use azure-sentinel).
+use_when: Use when using Content Safety Docker, text/image/prompt shield APIs, blocklists,
+  provenance, or groundedness checks, and other Azure AI Content Safety related development
+  tasks.
+confusable_not_for: Not for Azure Security (use azure-security), Azure Defender For
+  Cloud (use azure-defender-for-cloud), Azure Sentinel (use azure-sentinel).
 ---
 # Azure AI Content Safety Crawl Report
 
 ## Summary
 
-- **Total Pages**: 34
-- **Fetched**: 34
+- **Total Pages**: 36
+- **Fetched**: 36
 - **Fetch Failed**: 0
-- **Classified**: 15
-- **Unclassified**: 19
+- **Classified**: 16
+- **Unclassified**: 20
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 2
 - **Updated Pages**: 0
 - **Unchanged**: 34
 - **Deleted Pages**: 0
@@ -57,18 +55,23 @@ confusable_not_for: Not for Azure Information Protection (use azure-information-
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 1 | 2.9% |
-| best-practices | 1 | 2.9% |
-| configuration | 2 | 5.9% |
-| decision-making | 2 | 5.9% |
-| deployment | 3 | 8.8% |
-| integrations | 1 | 2.9% |
-| limits-quotas | 3 | 8.8% |
-| security | 1 | 2.9% |
-| troubleshooting | 1 | 2.9% |
-| *(Unclassified)* | 19 | 55.9% |
+| architecture-patterns | 1 | 2.8% |
+| best-practices | 1 | 2.8% |
+| configuration | 2 | 5.6% |
+| decision-making | 2 | 5.6% |
+| deployment | 3 | 8.3% |
+| integrations | 2 | 5.6% |
+| limits-quotas | 3 | 8.3% |
+| security | 1 | 2.8% |
+| troubleshooting | 1 | 2.8% |
+| *(Unclassified)* | 20 | 55.6% |
 
 ## Changes
+
+### New Pages
+
+- [Provenance Detection](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/concepts/provenance-detection)
+- [Use Provenance Detection API](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/how-to/how-to-provenance-detection)
 
 ## Classified Pages
 
@@ -80,6 +83,7 @@ confusable_not_for: Not for Azure Information Protection (use azure-information-
 | [Install and run containers](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/how-to/containers/install-run-container) | configuration | 0.70 | Install/run articles for Azure AI service containers typically include container image names, required environment variables, configuration parameters, and command-line flags specific to the product. These are product-specific configuration details (e.g., keys, endpoint variables, port mappings, required settings) that qualify as expert knowledge beyond generic Docker usage. |
 | [Language support](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/language-support) | limits-quotas | 0.70 | Lists exactly which natural languages are supported by specific Content Safety models and which are English-only; this is product-specific capability data that changes over time and isn’t derivable from general knowledge. |
 | [Migrate from public preview to GA](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/how-to/migrate-to-general-availability) | decision-making | 0.70 | Guides upgrading code from public preview to GA; involves product-specific migration steps and decisions about API/behavior changes. |
+| [Use Provenance Detection API](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/how-to/how-to-provenance-detection) | integrations | 0.70 | A how-to guide for using the Provenance Detect API to analyze image, audio, and video for C2PA credentials and watermark markers. Such how-to API pages typically include request/response schemas, parameter names, allowed values, and example code specific to this service, which fits the integrations & coding patterns category. |
 | [Use a blocklist](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/how-to/use-blocklist) | configuration | 0.70 | Describes using custom blocklistItems to extend classifiers; the full article typically includes specific API parameters and structures for blocklists, which are product-specific configuration details. |
 | [Groundedness detection (preview)](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/quickstart-groundedness) | integrations | 0.68 | Quickstart for a specific Azure AI Content Safety groundedness detection API, including concrete request/response patterns and parameters unique to this service. While primarily a tutorial, it exposes product-specific API usage details that qualify as integration-focused expert knowledge rather than generic LLM concepts. |
 | [Image analysis container](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/how-to/containers/image-container) | deployment | 0.65 | Shows how to download, install, and run the image analysis container; product-specific deployment guidance. |
@@ -112,4 +116,5 @@ confusable_not_for: Not for Azure Information Protection (use azure-information-
 | [Use Content Safety in Foundry portal](https://learn.microsoft.com/en-us/azure/foundry-classic/ai-services/content-safety-overview) | 0.25 | Portal overview (classic) for Content Safety; primarily an interface/feature overview without detailed limits, configs, or troubleshooting mappings in summary. |
 | [Azure AI Content Safety FAQ](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/faq) | 0.20 | FAQ page likely contains general Q&A, conceptual clarifications, and support links rather than detailed limits, configuration tables, error-code mappings, or other product-specific expert data as defined by the sub-skill types. |
 | [Azure AI Content Safety overview](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/overview) | 0.20 | High-level service overview and marketing-style description without concrete limits, configs, or error details. |
+| [Provenance Detection](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/concepts/provenance-detection) | 0.20 | Described as an overview of what the Provenance Detect API does, what signals it can detect, use cases, and limitations. This is primarily conceptual/introductory content without clear indication of numeric limits, configuration tables, error-code mappings, or other detailed product-specific parameters. |
 | [What's new](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/whats-new) | 0.10 | Release notes/what’s new index without detailed technical tables or configs in the summary; treated as navigation/update listing. |

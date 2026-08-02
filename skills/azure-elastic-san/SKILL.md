@@ -1,9 +1,9 @@
 ---
 name: azure-elastic-san
-description: Expert knowledge for Azure Elastic SAN development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when creating Elastic SAN volumes, AVS datastores, iSCSI clients, private endpoints, or clustered app storage, and other Azure Elastic SAN related development tasks. Not for Azure Blob Storage (use azure-blob-storage), Azure Files (use azure-files), Azure NetApp Files (use azure-netapp-files), Azure Managed Lustre (use azure-managed-lustre).
+description: Expert knowledge for Azure Elastic SAN development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when provisioning Elastic SAN volumes, AVS datastores, iSCSI clients, snapshots, or CMK-encrypted deployments, and other Azure Elastic SAN related development tasks. Not for Azure Blob Storage (use azure-blob-storage), Azure NetApp Files (use azure-netapp-files), Azure Managed Lustre (use azure-managed-lustre), Azure Container Storage (use azure-container-storage).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-26"
+  generated_at: "2026-08-02"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Elastic SAN Skill
@@ -30,7 +30,7 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L54-L58 | Patterns for running clustered apps (SQL, Failover Cluster, etc.) on Azure Elastic SAN, including shared volume setup, fencing, failover behavior, and high-availability design. |
 | Limits & Quotas | L59-L64 | Details on Elastic SAN capacity limits, max IOPS/throughput, and how VM sizes, volume groups, and workloads affect achievable performance and scaling. |
 | Security | L65-L74 | Encrypting Elastic SAN with customer-managed keys and securing access via encryption options, private endpoints, service endpoints, and network configuration for volumes. |
-| Configuration | L75-L83 | Deploying, resizing, deleting, and monitoring Azure Elastic SAN resources/volumes, plus managing IQN naming authority and safe configuration best practices. |
+| Configuration | L75-L83 | Deploying, resizing, deleting, and monitoring Azure Elastic SAN instances/volumes, plus configuring iSCSI IQN naming and safe operational best practices. |
 | Integrations & Coding Patterns | L84-L91 | Creating and benchmarking Elastic SAN volumes, plus step-by-step guidance to connect Linux and Windows clients using iSCSI and optimize performance. |
 | Deployment | L92-L95 | Guides for migrating Azure VMware Solution (AVS) datastores to Azure Elastic SAN, including configuring and using multiple private endpoints for secure connectivity. |
 
@@ -78,7 +78,7 @@ This skill requires **network access** to fetch documentation content:
 | Deploy and configure Azure Elastic SAN resources | https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-create |
 | Delete Azure Elastic SAN resources correctly | https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-delete |
 | Resize Azure Elastic SAN resources and volumes safely | https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-expand |
-| Use Azure Elastic SAN monitoring metrics effectively | https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-metrics |
+| Monitor Azure Elastic SAN with built-in metrics | https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-metrics |
 | Transition Elastic SAN IQN naming authority | https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-transition-iqn-naming-authority |
 
 ### Integrations & Coding Patterns

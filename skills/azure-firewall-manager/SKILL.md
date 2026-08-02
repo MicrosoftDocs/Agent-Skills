@@ -1,9 +1,9 @@
 ---
 name: azure-firewall-manager
-description: Expert knowledge for Azure Firewall Manager development including best practices, decision making, security, and configuration. Use when configuring DDoS plans, DNS proxy, FQDN/IP groups, WAF policies, or secured virtual hubs in Azure Firewall Manager, and other Azure Firewall Manager related development tasks. Not for Azure Firewall (use azure-firewall), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual Network (use azure-virtual-network), Azure Web Application Firewall (use azure-web-application-firewall).
+description: Expert knowledge for Azure Firewall Manager development including best practices, decision making, security, and configuration. Use when configuring DDoS plans, DNS proxy, FQDN/IP groups, WAF policies, or secured virtual hubs, and other Azure Firewall Manager related development tasks. Not for Azure Firewall (use azure-firewall), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Network Function Manager (use azure-network-function-manager), Azure Web Application Firewall (use azure-web-application-firewall).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-26"
+  generated_at: "2026-08-02"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Firewall Manager Skill
@@ -25,7 +25,7 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Best Practices | L32-L36 | Details on how Azure Firewall evaluates and processes rules, rule collection groups, and policies, including priority, matching logic, and traffic filtering behavior |
-| Decision Making | L37-L41 | Guidance on choosing between a secured virtual hub and a hub virtual network in Azure Firewall Manager, including architecture, security, routing, and management trade-offs. |
+| Decision Making | L37-L41 | Guidance on when to use Azure Firewall Manager with a hub virtual network vs a secured virtual hub, including architecture, scenarios, and trade-offs for each option. |
 | Security | L42-L46 | Configuring Azure Firewall Manager for security: DDoS Protection plans, centralized WAF policy management, and threat intelligence-based traffic filtering. |
 | Configuration | L47-L58 | Configuring Azure Firewall Manager and policies: DDoS plans, DNS/DNS proxy, FQDN/IP group rules, WAF policy management, rule hierarchy, private endpoint protection, and secured virtual hubs. |
 
@@ -37,7 +37,7 @@ This skill requires **network access** to fetch documentation content:
 ### Decision Making
 | Topic | URL |
 |-------|-----|
-| Choose between secured virtual hub and hub virtual network | https://learn.microsoft.com/en-us/azure/firewall-manager/vhubs-and-vnets |
+| Choose Azure Firewall Manager hub or secured virtual hub | https://learn.microsoft.com/en-us/azure/firewall-manager/vhubs-and-vnets |
 
 ### Security
 | Topic | URL |

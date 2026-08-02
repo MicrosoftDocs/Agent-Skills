@@ -51,8 +51,8 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 5
-- **Unchanged**: 260
+- **Updated Pages**: 0
+- **Unchanged**: 265
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-event-grid/azure-event-grid.csv`
 
@@ -71,19 +71,6 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 | *(Unclassified)* | 85 | 32.1% |
 
 ## Changes
-
-### Updated Pages
-
-- [Deliver events securely using managed identities](https://learn.microsoft.com/en-us/azure/event-grid/deliver-events-using-managed-identity)
-  - Updated: 2025-07-28T08:00:00.000Z → 2026-07-23T22:13:00.000Z
-- [What is Event Grid?](https://learn.microsoft.com/en-us/azure/event-grid/overview)
-  - Updated: 2026-05-08T06:13:00.000Z → 2026-07-23T22:13:00.000Z
-- [Service Bus](https://learn.microsoft.com/en-us/azure/event-grid/handler-service-bus)
-  - Updated: 2025-07-31T22:14:00.000Z → 2026-07-23T22:13:00.000Z
-- [Subscribe to Microsoft Graph API events](https://learn.microsoft.com/en-us/azure/event-grid/subscribe-to-graph-api-events)
-  - Updated: 2025-07-31T22:14:00.000Z → 2026-07-23T22:13:00.000Z
-- [Create an event subscription that uses the managed identity](https://learn.microsoft.com/en-us/azure/event-grid/managed-service-identity)
-  - Updated: 2025-07-31T22:14:00.000Z → 2026-07-23T22:13:00.000Z
 
 ## Classified Pages
 

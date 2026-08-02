@@ -1,9 +1,9 @@
 ---
 name: azure-api-management
-description: Expert knowledge for Azure API Management development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when securing APIM gateways, integrating OAuth/Entra ID backends, managing quotas, VNets, or self-hosted gateways, and other Azure API Management related development tasks. Not for Azure Application Gateway (use azure-application-gateway), Azure Front Door (use azure-front-door), Azure Web Application Firewall (use azure-web-application-firewall), Azure Service Bus (use azure-service-bus).
+description: Expert knowledge for Azure API Management development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring APIM policies, OAuth/JWT auth, VNets/private gateways, self-hosted gateways, or multi-region scaling, and other Azure API Management related development tasks. Not for Azure Application Gateway (use azure-application-gateway), Azure Front Door (use azure-front-door), Azure Web Application Firewall (use azure-web-application-firewall), Azure Logic Apps (use azure-logic-apps).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-26"
+  generated_at: "2026-08-02"
   generator: "docs2skills/1.0.0"
 ---
 # Azure API Management Skill
@@ -32,7 +32,7 @@ This skill requires **network access** to fetch documentation content:
 | Security | L101-L144 | Securing Azure API Management and AI Gateway: authN/Z (OAuth2, Entra ID, B2C, mTLS, JWT), certificates, RBAC, private networking, policies, self-hosted gateway, and Defender/DoS protections. |
 | Configuration | L145-L240 | Configuring Azure API Management behavior: policies, caching, domains, networking/VNet, monitoring/logging, developer portal, gateways, backends, subscriptions, users, and automation templates. |
 | Integrations & Coding Patterns | L241-L272 | Patterns and samples for integrating API Management with LLMs, backends, logging/monitoring, events, OAuth, GitHub, Dapr, and exporting/importing APIs via OpenAPI, Postman, and Power Platform |
-| Deployment | L273-L292 | Deploying and scaling API Management: multi-region, VNet/external, self-hosted gateways (AKS/K8s/Docker/Arc), backup/DR, migration, automation, and managed cert/portal deployment. |
+| Deployment | L273-L292 | Deploying and scaling API Management: multi-region, autoscale, backup/restore, migration, vNet and self-hosted gateways (AKS, Docker, Arc), portal automation, and certificate lifecycle. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -282,7 +282,7 @@ This skill requires **network access** to fetch documentation content:
 | Deploy Azure API Management to an external virtual network | https://learn.microsoft.com/en-us/azure/api-management/api-management-using-with-vnet |
 | Automate deployment of API Management developer portal content | https://learn.microsoft.com/en-us/azure/api-management/automate-portal-deployments |
 | Automate Azure API Management operations with Azure Automation | https://learn.microsoft.com/en-us/azure/api-management/automation-manage-api-management |
-| Plan for API Management managed certificate suspension 2025–2026 | https://learn.microsoft.com/en-us/azure/api-management/breaking-changes/managed-certificates-suspension-august-2025 |
+| Plan for suspension of API Management managed certificates | https://learn.microsoft.com/en-us/azure/api-management/breaking-changes/managed-certificates-suspension-august-2025 |
 | Self-host the Azure API Management developer portal | https://learn.microsoft.com/en-us/azure/api-management/developer-portal-self-host |
 | Deploy API Management gateway as Azure Arc extension | https://learn.microsoft.com/en-us/azure/api-management/how-to-deploy-self-hosted-gateway-azure-arc |
 | Deploy API Management self-hosted gateway to AKS | https://learn.microsoft.com/en-us/azure/api-management/how-to-deploy-self-hosted-gateway-azure-kubernetes-service |
