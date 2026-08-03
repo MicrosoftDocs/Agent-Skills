@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-26'
+generated_at: '2026-08-02'
 category_descriptions:
   decision-making: Guidance for choosing Azure SQL options and pricing, comparing
     SQL VMs vs Managed Instance, planning migrations (including Db2), HADR choices,
@@ -14,31 +14,30 @@ category_descriptions:
     feature availability, and how to request quota increases for databases and managed
     instances
   configuration: 'Configuring SQL Server on Azure VMs: HA/DR (AGs, FCIs, listeners,
-    load balancers, clustering), storage and tempdb layout, IaaS Agent setup, deployment/edition
-    changes, and connectivity options.'
+    load balancers), storage and tempdb layout, editions/versions, IaaS Agent, and
+    connectivity options.'
   best-practices: 'Best practices for SQL Server on Azure VMs: HA/DR clustering, DNN
     listeners, backup/restore, performance tuning, storage and VM sizing, baselines,
     and best practices assessments.'
   security: 'Securing SQL Server on Azure VMs: policies, TLS cert rotation, Key Vault/EKM,
     managed identities, Entra auth, Extended Security Updates, hardening guidance,
     and confidential VM deployment.'
-  deployment: Deploying and migrating SQL Server Always On availability groups and
-    FCIs on Azure VMs, including single/multi-subnet, cross-region, prerequisites,
-    disks, and confidential VM scenarios.
+  deployment: Deploying and configuring SQL Server Always On/FCI on Azure VMs, including
+    single/multi-subnet AGs, cross-region setups, migrations (regions, disks, FCI),
+    and confidential VM deployments.
   integrations: Backing up SQL Server on Azure VMs directly to Azure Blob Storage,
     including configurations that use managed identities instead of stored credentials.
 skill_description: Expert knowledge for SQL Server on Azure Virtual Machines development
   including troubleshooting, best practices, decision making, architecture & design
   patterns, limits & quotas, security, configuration, integrations & coding patterns,
-  and deployment. Use when planning SQL VM vs Managed Instance, Always On AG/FCI on
-  Azure VMs, HA/DR clustering, AHB licensing, or Blob backups, and other SQL Server
-  on Azure Virtual Machines related development tasks. Not for Azure SQL Database
-  (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance),
-  Azure Virtual Machines (use azure-virtual-machines), SAP HANA on Azure Large Instances
-  (use azure-sap).
-use_when: Use when planning SQL VM vs Managed Instance, Always On AG/FCI on Azure
-  VMs, HA/DR clustering, AHB licensing, or Blob backups, and other SQL Server on Azure
-  Virtual Machines related development tasks.
+  and deployment. Use when planning SQL VM vs Managed Instance, Always On/FCI HADR,
+  DTU/capacity, AHB licensing, or Blob backups, and other SQL Server on Azure Virtual
+  Machines related development tasks. Not for Azure SQL Database (use azure-sql-database),
+  Azure SQL Managed Instance (use azure-sql-managed-instance), Azure Virtual Machines
+  (use azure-virtual-machines), SAP HANA on Azure Large Instances (use azure-sap).
+use_when: Use when planning SQL VM vs Managed Instance, Always On/FCI HADR, DTU/capacity,
+  AHB licensing, or Blob backups, and other SQL Server on Azure Virtual Machines related
+  development tasks.
 confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure SQL
   Managed Instance (use azure-sql-managed-instance), Azure Virtual Machines (use azure-virtual-machines),
   SAP HANA on Azure Large Instances (use azure-sap).
@@ -47,14 +46,14 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 
 ## Summary
 
-- **Total Pages**: 127
-- **Fetched**: 127
+- **Total Pages**: 129
+- **Fetched**: 129
 - **Fetch Failed**: 0
-- **Classified**: 96
+- **Classified**: 98
 - **Unclassified**: 31
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 2
 - **Updated Pages**: 1
 - **Unchanged**: 126
 - **Deleted Pages**: 0
@@ -65,22 +64,27 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 5 | 3.9% |
-| best-practices | 10 | 7.9% |
-| configuration | 38 | 29.9% |
-| decision-making | 9 | 7.1% |
-| deployment | 14 | 11.0% |
+| best-practices | 10 | 7.8% |
+| configuration | 40 | 31.0% |
+| decision-making | 8 | 6.2% |
+| deployment | 15 | 11.6% |
 | integrations | 2 | 1.6% |
 | limits-quotas | 1 | 0.8% |
 | security | 6 | 4.7% |
-| troubleshooting | 11 | 8.7% |
-| *(Unclassified)* | 31 | 24.4% |
+| troubleshooting | 11 | 8.5% |
+| *(Unclassified)* | 31 | 24.0% |
 
 ## Changes
 
+### New Pages
+
+- [Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/modifiable-configuration-reference?view=azuresql)
+- [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/modifiable-configuration-reference?view=azuresql)
+
 ### Updated Pages
 
-- [Register single VM](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/sql-agent-extension-manually-register-single-vm?view=azuresql)
-  - Updated: 2026-01-23T08:00:00.000Z → 2026-07-20T22:35:00.000Z
+- [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/region-availability?view=azuresql)
+  - Updated: 2026-03-24T00:04:00.000Z → 2026-07-31T17:52:00.000Z
 
 ## Classified Pages
 
@@ -92,6 +96,8 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | [Known issues and troubleshooting](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/sql-agent-extension-troubleshoot-known-issues?view=azuresql) | troubleshooting | 0.86 | The page focuses on known issues and troubleshooting for the SQL Server IaaS Agent extension, likely listing specific error messages, causes, and resolutions unique to this extension, which matches the troubleshooting criteria of symptom → cause → solution with product-specific details. |
 | [Transaction log errors in Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-transaction-log-errors-issues?view=azuresql-db) | troubleshooting | 0.86 | The page is organized around specific errors (9002, 40552) indicating a full transaction log in Azure SQL Database and provides product-specific causes and resolution steps. It maps symptoms (log full, specific error codes) to diagnosis and remediation actions unique to Azure SQL Database behavior, which qualifies as troubleshooting-focused expert knowledge. |
 | [Transaction log errors in Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/troubleshoot-transaction-log-errors-issues?view=azuresql-mi) | troubleshooting | 0.86 | The page targets Azure SQL Managed Instance and addresses specific transaction log full errors (9002, 40552), explaining their causes and how to resolve them in this particular platform. It follows a symptom → cause → solution structure with platform-specific guidance, which fits the troubleshooting sub-skill and contains expert operational knowledge. |
+| [Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/modifiable-configuration-reference?view=azuresql) | configuration | 0.85 | Page lists specific Azure SQL Database configuration settings and explicitly marks which are mutable vs immutable after creation. This is a detailed configuration reference with product-specific setting names and constraints, which qualifies as configuration expert knowledge. |
+| [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/modifiable-configuration-reference?view=azuresql) | configuration | 0.85 | Page provides a reference of Azure SQL Managed Instance configuration options, indicating which can be changed post-deployment and which require creating a new instance. It contains product-specific configuration parameters and mutability rules, fitting the configuration sub-skill. |
 | [Capacity errors during deployment](https://learn.microsoft.com/en-us/azure/azure-sql/capacity-errors-troubleshoot?view=azuresql) | troubleshooting | 0.80 | Guides diagnosis and resolution of capacity errors with specific error messages and recommended actions for SQL Database and Managed Instance. |
 | [Common connection issues](https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-common-connectivity-issues?view=azuresql) | troubleshooting | 0.80 | The article explicitly focuses on preventing, diagnosing, and mitigating connection and transient errors, and will include specific error patterns, connection string options, retry logic settings, and symptom→cause→solution guidance unique to Azure SQL, which fits the troubleshooting category. |
 | [HADR configuration](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/hadr-cluster-best-practices?view=azuresql) | best-practices | 0.80 | Provides supported cluster configurations and best practices for AGs and FCIs on Azure VMs, including Azure-specific settings. |
@@ -120,6 +126,7 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/azure-sql/database/policy-reference?view=azuresql) | security | 0.70 | Lists concrete Azure Policy definitions, including names and scopes, which are product-specific security/compliance configurations. |
 | [Azure Quickstart templates](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/availability-group-quickstart-template-configure?view=azuresql) | deployment | 0.70 | Quickstart templates encode deployment configuration (parameters, resources) for AGs; this is product-specific deployment knowledge. |
 | [Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/monitoring-sql-database-azure-monitor-reference?view=azuresql) | configuration | 0.70 | Monitoring reference enumerates specific metric names, dimensions, and log categories used for Azure Monitor integration. |
+| [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/region-availability?view=azuresql) | deployment | 0.70 | Page is a centralized matrix of which Azure SQL Managed Instance features are available in which Azure regions. This is expert, time-sensitive data not inferable from training and directly affects deployment planning and regional support decisions. |
 | [Azure SQL decision tree](https://learn.microsoft.com/en-us/azure/azure-sql/azure-sql-decision-tree?view=azuresql) | decision-making | 0.70 | Describes a decision tree in the Azure SQL hub specifically for selecting between Azure SQL Database, Managed Instance, and SQL Server on VM. This is explicit technology selection guidance and decision support, fitting the decision-making category even though the full tree content is hosted in the portal. |
 | [Azure Storage for backup](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/azure-storage-sql-server-backup-restore-use?view=azuresql) | integrations | 0.70 | Covers using Azure Storage with SQL Server BACKUP/RESTORE, including T-SQL/SMO usage and storage-specific parameters. |
 | [Azure shared disks](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/failover-cluster-instance-azure-shared-disks-manually-configure?view=azuresql) | configuration | 0.70 | Step-by-step manual configuration of a SQL Server failover cluster instance on Azure VMs with Azure Shared Disks will include product-specific settings (cluster, storage, networking, SQL configuration) and exact parameter names/values unique to this scenario, which an LLM is unlikely to know from training. |
@@ -163,7 +170,6 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | [Set up Azure SLES VM availability group with fencing](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/linux/sles-high-availability-fencing-tutorial?view=azuresql) | configuration | 0.68 | SLES HA and STONITH setup requires specific Pacemaker/STONITH configuration values and Azure integration details. |
 | [on Azure confidential VMs](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/sql-vm-create-confidential-vm-how-to?view=azuresql) | deployment | 0.68 | The article is a how-to guide for deploying SQL Server specifically on Azure Confidential VMs, which typically includes product-specific deployment requirements (such as supported VM sizes, image types, prerequisites, and configuration constraints unique to confidential computing). These deployment details are not generic and qualify as expert knowledge about how to correctly deploy SQL Server in this specialized environment. |
 | [Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/region-availability?view=azuresql) | decision-making | 0.65 | A centralized list of feature availability by Azure region is a product-specific matrix used to decide where to deploy databases; this is expert knowledge that changes over time and is not inferable from training data, and it directly supports deployment/region selection decisions. |
-| [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/region-availability?view=azuresql) | decision-making | 0.65 | Similar to the database page, this is a region-by-feature matrix for Managed Instance, used to decide which regions can host required features; this is time-sensitive, product-specific decision data not reliably known to an LLM from training. |
 | [Connect to SQL Server VM](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/ways-to-connect-to-sql?view=azuresql) | configuration | 0.65 | Describes connection scenarios based on networking configuration and client location, with Azure-specific connection settings. |
 | [Create SQL Server VM with PowerShell](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/scripts/create-sql-vm-powershell?view=azuresql) | configuration | 0.65 | End-to-end script includes concrete cmdlets and parameter values for provisioning SQL VMs, which are product-specific configuration patterns. |
 | [DNN interoperability](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/availability-group-dnn-interoperability?view=azuresql) | best-practices | 0.65 | Covers feature interoperability and additional considerations when using a distributed network name (DNN) listener with SQL Server Always On availability groups. This implies product-specific DO/DON'T guidance and edge cases for particular SQL features with DNN, which fits best-practices. |

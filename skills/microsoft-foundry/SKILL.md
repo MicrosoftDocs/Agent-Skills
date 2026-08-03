@@ -1,9 +1,9 @@
 ---
 name: microsoft-foundry
-description: Expert knowledge for Microsoft Foundry (aka Azure AI Foundry) development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building Foundry agents with Foundry IQ, MCP tools, agent/azure.yaml, azd CI/CD, or M365/Teams apps, and other Microsoft Foundry related development tasks. Not for Microsoft Foundry Classic (use microsoft-foundry-classic), Microsoft Foundry Local (use microsoft-foundry-local), Microsoft Foundry Tools (use microsoft-foundry-tools).
+description: Expert knowledge for Microsoft Foundry (aka Azure AI Foundry) development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building Foundry agents with IQ retrieval, Azure OpenAI models, MCP tools, VNet/private access, or Teams apps, and other Microsoft Foundry related development tasks. Not for Microsoft Foundry Classic (use microsoft-foundry-classic), Microsoft Foundry Local (use microsoft-foundry-local), Microsoft Foundry Tools (use microsoft-foundry-tools).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-26"
+  generated_at: "2026-08-02"
   generator: "docs2skills/1.0.0"
 ---
 # Microsoft Foundry Skill
@@ -25,14 +25,14 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L37-L46 | Diagnosing and fixing hosted agent, evaluation/observability, webhook, and service issues, including health checks, recovery from data loss, and known bugs/workarounds. |
-| Best Practices | L47-L64 | Best practices for designing, optimizing, evaluating, routing, and safely operating Foundry/Azure OpenAI agents, including prompts, tools, models, latency, fine-tuning, and human/automated evaluations. |
-| Decision Making | L65-L108 | Guidance for choosing models, deployments, networking, billing modes, and migration paths in Microsoft Foundry, including cost optimization, lifecycle/retirement planning, and disaster recovery. |
-| Architecture & Design Patterns | L109-L116 | Design patterns for networking, private retrieval with Foundry IQ, multi-user session pooling, and high availability architectures for Microsoft Foundry agents. |
-| Limits & Quotas | L117-L134 | Quotas, rate limits, regions, and capacity management for Foundry agents, models, Azure OpenAI, vector stores, batch jobs, and fine-tuning, including configuration and enterprise options. |
-| Security | L135-L179 | Identity, access, networking, data privacy, and guardrail/security configuration for Foundry agents, models, MCP tools, and infrastructure, including RBAC, Entra, policies, and isolation. |
-| Configuration | L180-L256 | Configuring and operating Microsoft Foundry: agent/azure.yaml schemas, runtime and tools, networking and security, monitoring and tracing, evaluations, OpenAI/Claude models, and deployment automation. |
-| Integrations & Coding Patterns | L257-L348 | Patterns and code samples for integrating Foundry agents, tools, models, OpenAI/Azure services, tracing, safety, MCP, LangChain/LangGraph, and external systems into applications. |
-| Deployment | L349-L372 | Deploying and managing Foundry hosted agents and models, including azd scaffolding, CI/CD, private registries, M365/Teams publishing, evaluations, red teaming, and healthcare/model-specific deployments. |
+| Best Practices | L47-L60 | Best practices for configuring and optimizing Foundry agents: prompts, tools, routing, safety, evaluation, latency/throughput, and fine-tuning (incl. GPT‑4 vision) for reliable production use. |
+| Decision Making | L61-L105 | Guidance for choosing models, hosting, networking, costs, lifecycle, and migration/upgrade paths so you can design, size, and operate Foundry agents and models effectively. |
+| Architecture & Design Patterns | L106-L113 | Design patterns for secure, scalable Foundry agents: VNet networking, private retrieval with Foundry IQ, shared session pooling, and high availability architectures. |
+| Limits & Quotas | L114-L131 | Quotas, rate limits, and regions for Foundry agents, models, vector stores, and Azure OpenAI, plus how to configure TPM/throughput, sessions, evaluations, and cost safeguards |
+| Security | L132-L176 | Identity, RBAC, networking, guardrails, and policy controls for securing Foundry agents, data, models, MCP tools, and trace/observability across commercial and government environments |
+| Configuration | L177-L252 | Configuring and operating Microsoft Foundry: agent/agent-service schemas, tools, skills, networking, security, monitoring, evaluations, Azure OpenAI models, and deployment/runtime setup. |
+| Integrations & Coding Patterns | L253-L344 | Integrating and coding with Foundry agents and Azure OpenAI: SDK usage, tools/MCP connectors, external APIs, search/grounding, tracing, safety, and deploying/using various AI models and voice/real-time features. |
+| Deployment | L345-L367 | Deploying and managing Foundry hosted agents and models, including azd scaffolding, CI/CD, private registries, M365/Teams publishing, evaluations, red teaming, and healthcare/model-specific deployments. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -49,13 +49,9 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Apply tool usage best practices in Foundry agents | https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/tool-best-practice |
 | Optimize hosted agent instructions, tools, skills, and models | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/optimize-agent-targets |
-| Optimize Microsoft Foundry hosted agents with Agent Optimizer | https://learn.microsoft.com/en-us/azure/foundry/agents/quickstarts/quickstart-optimize-hosted-agent |
 | Use Task Adherence signals for Foundry agents | https://learn.microsoft.com/en-us/azure/foundry/guardrails/task-adherence |
 | Evaluate Microsoft Foundry AI agents with built-in evaluators | https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/evaluate-agent |
-| Configure human evaluation workflows for Foundry agents | https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/human-evaluation |
-| Improve Foundry agent prompts with Prompt Optimizer | https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/prompt-optimizer |
 | Design effective system messages for Azure OpenAI | https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/advanced-prompt-engineering |
-| Apply prompt engineering techniques for vision-enabled GPT models | https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/gpt-4-v-prompt-engineering |
 | Apply routing modes and best practices for model router | https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/model-router-how-it-works |
 | Apply safety system message templates in Foundry | https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/safety-system-message-templates |
 | Fine-tune GPT-4 vision models with images | https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/fine-tuning-vision |
@@ -84,10 +80,9 @@ This skill requires **network access** to fetch documentation content:
 | Choose partner and community Foundry Models | https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners |
 | Select Azure-sold Foundry Models by capability and region | https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure |
 | Select Foundry Models by Azure region and deployment type | https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure-region-availability |
-| Upgrade GitHub Models workloads to Foundry Models | https://learn.microsoft.com/en-us/azure/foundry/foundry-models/how-to/quickstart-github-models |
+| Decide when to upgrade from GitHub Models to Foundry Models | https://learn.microsoft.com/en-us/azure/foundry/foundry-models/how-to/quickstart-github-models |
 | Plan disaster recovery for Foundry Agent Service | https://learn.microsoft.com/en-us/azure/foundry/how-to/agent-service-disaster-recovery |
 | Use Foundry model leaderboard for selection | https://learn.microsoft.com/en-us/azure/foundry/how-to/benchmark-model-in-catalog |
-| Select and deploy Microsoft Foundry AI templates | https://learn.microsoft.com/en-us/azure/foundry/how-to/develop/ai-template-get-started |
 | Interpret and compare Foundry evaluation results | https://learn.microsoft.com/en-us/azure/foundry/how-to/evaluate-results |
 | Select and use healthcare AI models in Foundry | https://learn.microsoft.com/en-us/azure/foundry/how-to/healthcare-ai/healthcare-ai-models |
 | Choose integration patterns for Microsoft Foundry APIs | https://learn.microsoft.com/en-us/azure/foundry/how-to/integrate-with-other-apps |
@@ -95,21 +90,23 @@ This skill requires **network access** to fetch documentation content:
 | Upgrade Azure OpenAI resources to Microsoft Foundry | https://learn.microsoft.com/en-us/azure/foundry/how-to/upgrade-azure-openai |
 | Use Ask AI to upgrade or switch Foundry models | https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/optimization-model-upgrade |
 | Choose content streaming and filtering modes in Foundry | https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/content-streaming |
+| Choose GPT Realtime Transcribe for low-latency streaming | https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/gpt-realtime-whisper |
 | Use Foundry model retirement schedule for migrations | https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/model-retirement-schedule |
-| Use Foundry model retirement schedule in Azure Government | https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/model-retirement-schedule-gov |
+| Use Azure Government model retirement schedule for migrations | https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/model-retirement-schedule-gov |
 | Plan around Foundry Models lifecycle and retirements | https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/model-retirements |
-| Plan Foundry Models lifecycle in Azure Government | https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/model-retirements-gov |
+| Plan for Foundry model lifecycle in Azure Government | https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/model-retirements-gov |
+| Decide when to use Azure OpenAI prompt transformation | https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/prompt-transformation |
 | Choose PTU billing mode and manage costs | https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/provisioned-throughput-billing |
-| Identify retired Foundry Models and choose alternatives | https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/retired-models |
+| Identify retired Foundry models and alternatives | https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/retired-models |
 | Estimate and manage fine-tuning costs in Foundry | https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/fine-tuning-cost-management |
 | Use Foundry model router with agents for optimal model selection | https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/model-router-agents |
-| Decide PTU sizing for Foundry workloads | https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/provisioned-throughput-sizing |
-| Migrate from preview to GA Realtime API | https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/realtime-audio-preview-api-migration-guide |
+| Size provisioned throughput units for Foundry model workloads | https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/provisioned-throughput-sizing |
+| Migrate from preview to GA GPT Realtime API protocol | https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/realtime-audio-preview-api-migration-guide |
 
 ### Architecture & Design Patterns
 | Topic | URL |
 |-------|-----|
-| Design networking and subnet sizing for Foundry agents | https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/agents-networking-deep-dive |
+| Design networking for Foundry Agent Service with BYO VNet | https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/agents-networking-deep-dive |
 | Design private agentic retrieval architecture with Foundry IQ | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/foundry-iq-tutorial-private-overview |
 | Pool multiple users onto shared Foundry agent sessions | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/multiplex-session-users |
 | Design high availability for Microsoft Foundry agents | https://learn.microsoft.com/en-us/azure/foundry/how-to/high-availability-resiliency |
@@ -124,13 +121,13 @@ This skill requires **network access** to fetch documentation content:
 | Configure token rate limits and quotas in Foundry Control Plane | https://learn.microsoft.com/en-us/azure/foundry/control-plane/how-to-enforce-limits-models |
 | Compare Claude models, quotas, and regions in Foundry | https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/claude-models |
 | Reference quotas and limits for Foundry Models | https://learn.microsoft.com/en-us/azure/foundry/foundry-models/quotas-limits |
-| Manage Microsoft Foundry model deployment quotas | https://learn.microsoft.com/en-us/azure/foundry/how-to/quota |
+| Manage Foundry model deployment quotas and TPM limits | https://learn.microsoft.com/en-us/azure/foundry/how-to/quota |
 | Manage provisioned throughput quotas for Foundry models | https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/provisioned-throughput |
 | Use Azure OpenAI global batch processing and quotas | https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/batch |
 | Manage Azure OpenAI quota and rate limits in Foundry | https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/quota |
 | Use reinforcement fine-tuning with cost safeguards | https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/reinforcement-fine-tuning |
 | Azure OpenAI quotas and limits in Foundry | https://learn.microsoft.com/en-us/azure/foundry/openai/quotas-limits |
-| Reference quotas and limits for Azure OpenAI in Azure Government | https://learn.microsoft.com/en-us/azure/foundry/openai/quotas-limits-gov |
+| Reference quotas and limits for Azure OpenAI in US Government | https://learn.microsoft.com/en-us/azure/foundry/openai/quotas-limits-gov |
 
 ### Security
 | Topic | URL |
@@ -141,7 +138,7 @@ This skill requires **network access** to fetch documentation content:
 | Reference permissions for Foundry hosted agents | https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/hosted-agent-permissions |
 | Configure RBAC roles and environment for Foundry Agent Service | https://learn.microsoft.com/en-us/azure/foundry/agents/environment-setup |
 | Understand Foundry Agent Service data and access | https://learn.microsoft.com/en-us/azure/foundry/agents/faq |
-| Attach Responsible AI guardrails to Foundry hosted agents | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/add-hosted-agent-guardrails |
+| Attach RAI guardrail policies to Foundry hosted agents | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/add-hosted-agent-guardrails |
 | Publish and secure Microsoft Foundry agent applications | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/agent-applications |
 | Configure and share Microsoft Foundry agent endpoints | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/configure-agent |
 | Configure Agent 365 data collection for Foundry | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/configure-agent-365-data-collection |
@@ -160,7 +157,7 @@ This skill requires **network access** to fetch documentation content:
 | Govern Foundry agent infrastructure as Entra admin | https://learn.microsoft.com/en-us/azure/foundry/control-plane/govern-agent-infrastructure-entra-admin |
 | Manage compliance and security for Microsoft Foundry assets | https://learn.microsoft.com/en-us/azure/foundry/control-plane/how-to-manage-compliance-security |
 | Create and apply Foundry guardrail policies | https://learn.microsoft.com/en-us/azure/foundry/control-plane/quickstart-create-guardrail-policy |
-| Configure keyless Entra ID authentication for Foundry Models | https://learn.microsoft.com/en-us/azure/foundry/foundry-models/how-to/configure-entra-id |
+| Configure Entra ID keyless auth for Foundry Models | https://learn.microsoft.com/en-us/azure/foundry/foundry-models/how-to/configure-entra-id |
 | Configure guided safety and security guardrails for agents | https://learn.microsoft.com/en-us/azure/foundry/guardrails/guided-set-up |
 | Create custom Azure Policy rules for Foundry resources | https://learn.microsoft.com/en-us/azure/foundry/how-to/custom-policy-definition |
 | Restrict Microsoft Foundry preview features with RBAC and tags | https://learn.microsoft.com/en-us/azure/foundry/how-to/disable-preview-features |
@@ -192,6 +189,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure Connected Foundry Models in Agent Service | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/connected-models |
 | Configure optimizer evaluation datasets and evaluators | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/create-optimizer-dataset |
 | Disable classic agents and assistants in Azure OpenAI | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/disable-classic-agents |
+| Enable Agent2Agent endpoints for Foundry agents | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/enable-agent-to-agent-endpoint |
 | Configure private inbound connectivity for Foundry IQ | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/foundry-iq-tutorial-private-inbound |
 | Configure private outbound dependencies for Foundry IQ | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/foundry-iq-tutorial-private-outbound |
 | Install and verify azd Foundry AI extensions | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/install-cli-foundry-extensions |
@@ -201,10 +199,10 @@ This skill requires **network access** to fetch documentation content:
 | Register external agents for Foundry observability and evaluation | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/register-external-agent |
 | Run Foundry hosted agents locally with azd | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/run-hosted-agent-locally |
 | Configure structured inputs for Foundry agents | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/structured-inputs |
+| Configure Browser Automation tool for Foundry agents | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/browser-automation |
 | Configure custom MCP-based code interpreter for Foundry agents | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/custom-code-interpreter |
-| Configure MCP tool connections for Foundry agents | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/model-context-protocol |
-| Configure and manage versioned skills for Foundry agents | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/skills |
-| Configure tool search for large Foundry toolboxes | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/tool-search |
+| Manage versioned skills with SKILL.md and Skills REST API | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/skills |
+| Enable and configure tool search in Foundry toolboxes | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/tool-search |
 | Configure and manage Foundry agent toolboxes | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/toolbox |
 | Reconfigure model deployment for Foundry hosted agents | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/update-hosted-agent-model |
 | Automate azd AI usage with coding agents and scripts | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/use-cli-with-coding-agents |
@@ -213,12 +211,11 @@ This skill requires **network access** to fetch documentation content:
 | Reference built-in evaluators and parameters in Foundry | https://learn.microsoft.com/en-us/azure/foundry/concepts/built-in-evaluators |
 | Configure AI Gateway token limits in Foundry | https://learn.microsoft.com/en-us/azure/foundry/configuration/enable-ai-api-management-gateway-portal |
 | Register and configure custom agents in Foundry | https://learn.microsoft.com/en-us/azure/foundry/control-plane/register-custom-agent |
-| Use Microsoft Foundry model endpoints and authentication | https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/endpoints |
 | Configure Claude Code with Microsoft Foundry for enterprise use | https://learn.microsoft.com/en-us/azure/foundry/foundry-models/how-to/configure-claude-code |
 | Configure Claude Desktop to use Microsoft Foundry inference | https://learn.microsoft.com/en-us/azure/foundry/foundry-models/how-to/configure-claude-desktop |
 | Configure Foundry model deployments with CLI and Bicep | https://learn.microsoft.com/en-us/azure/foundry/foundry-models/how-to/create-model-deployments |
 | Configure Azure Monitor for Foundry model deployments | https://learn.microsoft.com/en-us/azure/foundry/foundry-models/how-to/monitor-models |
-| Configure guardrails and controls in Microsoft Foundry | https://learn.microsoft.com/en-us/azure/foundry/guardrails/how-to-create-guardrails |
+| Configure guardrails and controls in Foundry | https://learn.microsoft.com/en-us/azure/foundry/guardrails/how-to-create-guardrails |
 | Configure Foundry managed network access to on-premises | https://learn.microsoft.com/en-us/azure/foundry/how-to/access-on-premises-resources |
 | Configure bring-your-own storage for Microsoft Foundry | https://learn.microsoft.com/en-us/azure/foundry/how-to/bring-your-own-azure-storage-foundry |
 | Set up BYOS for Speech and Language in Foundry | https://learn.microsoft.com/en-us/azure/foundry/how-to/bring-your-own-azure-storage-speech-language-services |
@@ -229,13 +226,12 @@ This skill requires **network access** to fetch documentation content:
 | Enable and configure Fireworks models in Foundry | https://learn.microsoft.com/en-us/azure/foundry/how-to/fireworks/enable-fireworks-models |
 | Import and deploy custom Fireworks models in Foundry | https://learn.microsoft.com/en-us/azure/foundry/how-to/fireworks/import-custom-models |
 | Configure health and performance alerts for Foundry | https://learn.microsoft.com/en-us/azure/foundry/how-to/stay-informed-service-health |
-| Understand agent tracing behavior and data in Foundry | https://learn.microsoft.com/en-us/azure/foundry/observability/concepts/trace-agent-concept |
 | Run Foundry agent evaluations with azd CLI | https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/azure-developer-cli-evaluation |
 | Configure Agent Monitoring Dashboard for Foundry agents | https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/how-to-monitor-agents-dashboard |
 | Log end user feedback with OpenTelemetry in Foundry | https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/log-end-user-feedback |
 | Use Ask AI to interpret Foundry monitoring dashboards | https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/optimization-dashboard |
 | Analyze agent traces with Trace Replay in Foundry | https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/trace-agent-replay |
-| Set up tracing to Application Insights for Foundry agents | https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/trace-agent-setup |
+| Configure OpenTelemetry tracing for Foundry agents | https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/trace-agent-setup |
 | Annotate Foundry traces with human feedback signals | https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/trace-annotations |
 | Configure evaluation test suites for hosted agents | https://learn.microsoft.com/en-us/azure/foundry/observability/quickstarts/quickstart-evaluate-hosted-agent |
 | Enable and review tracing for hosted agents | https://learn.microsoft.com/en-us/azure/foundry/observability/quickstarts/quickstart-tracing-hosted-agent |
@@ -261,31 +257,31 @@ This skill requires **network access** to fetch documentation content:
 | Add Responses or Invocations protocol adapters to hosted agents | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/add-protocol-adapter |
 | Integrate external AI gateways as BYOM in Foundry Agent Service | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/ai-gateway |
 | Build real-time voice agents using Foundry WebSockets | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/build-voice-agent |
-| Enable Agent2Agent endpoints for Foundry agents | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/enable-agent-to-agent-endpoint |
 | Connect Foundry agents to Foundry IQ knowledge bases | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/foundry-iq-connect |
 | Validate private agentic retrieval with Foundry IQ | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/foundry-iq-tutorial-private-retrieval |
 | Invoke Foundry hosted agents using azd commands | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/invoke-hosted-agent |
 | Enable agent optimizer integration for hosted agents | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/make-agent-optimizer-ready |
-| Connect Foundry agents to remote A2A endpoints | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/agent-to-agent |
-| Integrate Azure AI Search with Foundry agents | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/ai-search |
+| Connect Foundry agents to remote Agent2Agent endpoints | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/agent-to-agent |
+| Integrate Azure AI Search indexes with Foundry agents | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/ai-search |
 | Integrate Azure Speech MCP tool with Foundry agents | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/azure-ai-speech |
 | Integrate Azure Functions as tools for agents | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/azure-functions |
 | Use Bing grounding tools with Foundry agents | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/bing-tools |
-| Configure Browser Automation tool for Foundry agents | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/browser-automation |
 | Deploy a Foundry hosted agent with browser automation | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/browser-automation-hosted-agent-quickstart |
 | Use Code Interpreter tool in Foundry agents | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/code-interpreter |
 | Integrate Foundry agents with computer use tool | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/computer-use |
-| Add managed MCP connector servers to Foundry | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/connectors |
+| Use managed MCP connector namespaces from Foundry Tools Catalog | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/connectors |
 | Connect Foundry agents to Microsoft Fabric data | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/fabric |
-| Integrate Foundry agents with Fabric IQ workload | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/fabric-iq |
+| Connect Foundry agents to Microsoft Fabric via Fabric IQ | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/fabric-iq |
 | Configure file search tool for Foundry agents | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/file-search |
 | Implement function calling with Foundry agents | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/function-calling |
 | Use image generation tool in Foundry Agent Service | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/image-generation |
-| Connect OpenAPI tools to Microsoft Foundry agents | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/openapi |
+| Connect Foundry agents to MCP server endpoints | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/model-context-protocol |
+| Connect OpenAPI-based external APIs to Foundry agents | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/openapi |
 | Use reminder_preview tool for self-scheduling agents | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/reminder-tool |
 | Ground Foundry agents with SharePoint content | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/sharepoint |
-| Enable web search tool in Foundry Agent Service | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/web-search |
-| Connect Foundry agents to Microsoft 365 via Work IQ | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/work-iq |
+| Connect Foundry hosted agents to MCP toolboxes | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/use-toolbox-hosted-agent |
+| Integrate web search tool into Foundry Agent Service | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/web-search |
+| Ground Foundry agents in Microsoft 365 data with Work IQ | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/work-iq |
 | Add declarative agent workflows using Foundry VS Code toolkit | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/vs-code-agents-workflow-low-code |
 | Ground hosted agents in Foundry IQ knowledge bases | https://learn.microsoft.com/en-us/azure/foundry/agents/quickstarts/quickstart-foundry-iq-hosted-agent |
 | Add persistent memory to a Foundry hosted agent | https://learn.microsoft.com/en-us/azure/foundry/agents/quickstarts/quickstart-memory-hosted-agent |
@@ -297,7 +293,7 @@ This skill requires **network access** to fetch documentation content:
 | Deploy and use Claude models in Foundry | https://learn.microsoft.com/en-us/azure/foundry/foundry-models/how-to/use-foundry-models-claude |
 | Deploy and use FLUX image models in Foundry | https://learn.microsoft.com/en-us/azure/foundry/foundry-models/how-to/use-foundry-models-flux |
 | Deploy and call MAI image models in Foundry | https://learn.microsoft.com/en-us/azure/foundry/foundry-models/how-to/use-foundry-models-mai-image |
-| Deploy and call DeepSeek-R1 in Foundry Models | https://learn.microsoft.com/en-us/azure/foundry/foundry-models/tutorials/get-started-deepseek-r1 |
+| Deploy and call DeepSeek reasoning models in Foundry | https://learn.microsoft.com/en-us/azure/foundry/foundry-models/tutorials/get-started-deepseek-r1 |
 | Integrate third-party safety guardrails with Foundry | https://learn.microsoft.com/en-us/azure/foundry/guardrails/third-party-integrations |
 | Configure and manage Microsoft Foundry connections | https://learn.microsoft.com/en-us/azure/foundry/how-to/connections-add |
 | Host Microsoft Agent Framework agents on Foundry | https://learn.microsoft.com/en-us/azure/foundry/how-to/develop/framework-hosted-agents |
@@ -324,13 +320,13 @@ This skill requires **network access** to fetch documentation content:
 | Generate Azure OpenAI embeddings with SDKs and REST | https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/embeddings |
 | Fine-tune tool calling behavior in Azure OpenAI | https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/fine-tuning-functions |
 | Implement function calling with Azure OpenAI in Foundry | https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/function-calling |
-| Call Azure OpenAI vision-enabled chat models | https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/gpt-with-vision |
+| Call Azure OpenAI vision-enabled chat models via API | https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/gpt-with-vision |
 | Configure JSON mode responses for Azure OpenAI | https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/json-mode |
 | Use Foundry model router to route prompts | https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/model-router |
 | Optimize latency with predicted outputs in Azure OpenAI | https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/predicted-outputs |
-| Use Azure OpenAI GPT Realtime API for audio | https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/realtime-audio |
-| Use GPT Realtime API over SIP | https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/realtime-audio-sip |
-| Use GPT Realtime audio via WebRTC in Azure | https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/realtime-audio-webrtc |
+| Integrate GPT Realtime API for low-latency audio | https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/realtime-audio |
+| Connect GPT Realtime API to SIP endpoints | https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/realtime-audio-sip |
+| Stream GPT Realtime audio via WebRTC in Azure OpenAI | https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/realtime-audio-webrtc |
 | Connect to GPT Realtime API via WebSockets | https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/realtime-audio-websockets |
 | Use Azure OpenAI Responses API with Python and REST | https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/responses |
 | Call Foundry models via Responses API with routing | https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/responses-model-routing |
@@ -338,12 +334,12 @@ This skill requires **network access** to fetch documentation content:
 | Use structured outputs and JSON schema with Azure OpenAI | https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/structured-outputs |
 | Use tool search with Azure OpenAI Responses API | https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/tool-search |
 | Enable and configure web search tool in Responses API | https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/web-search |
-| Use WebSocket mode with Azure OpenAI Responses API | https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/websockets |
+| Use Azure OpenAI Responses API over WebSockets in Foundry | https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/websockets |
 | Use Azure OpenAI image and audio REST APIs (GA) | https://learn.microsoft.com/en-us/azure/foundry/openai/reference |
 | Use Azure OpenAI image and audio REST APIs (preview) | https://learn.microsoft.com/en-us/azure/foundry/openai/reference-preview |
 | Use Azure OpenAI image, audio, and video REST APIs (preview) | https://learn.microsoft.com/en-us/azure/foundry/openai/reference-preview-latest |
 | Use Azure OpenAI SDKs across supported languages | https://learn.microsoft.com/en-us/azure/foundry/openai/supported-languages |
-| Use Azure OpenAI Whisper for speech to text | https://learn.microsoft.com/en-us/azure/foundry/openai/whisper-quickstart |
+| Use Azure OpenAI transcription models for speech to text | https://learn.microsoft.com/en-us/azure/foundry/openai/whisper-quickstart |
 | Get started coding with the Microsoft Foundry SDK | https://learn.microsoft.com/en-us/azure/foundry/quickstarts/get-started-code |
 
 ### Deployment
@@ -360,7 +356,6 @@ This skill requires **network access** to fetch documentation content:
 | Update Foundry hosted agent endpoints and cards with azd | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/update-agent-endpoint-cli |
 | Create and deploy hosted agent workflows from VS Code | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/vs-code-agents-workflow-pro-code |
 | Set up GitHub Actions CI/CD for hosted agents | https://learn.microsoft.com/en-us/azure/foundry/agents/quickstarts/set-up-cicd-hosted-agent |
-| Deploy Microsoft Foundry Models via Foundry portal | https://learn.microsoft.com/en-us/azure/foundry/foundry-models/how-to/deploy-foundry-models |
 | Recover Foundry Agent Service from regional platform outages | https://learn.microsoft.com/en-us/azure/foundry/how-to/agent-service-platform-disaster-recovery |
 | Deploy open-source models on Foundry managed compute | https://learn.microsoft.com/en-us/azure/foundry/how-to/deploy-models-managed |
 | Run cloud-based evaluations with the Foundry SDK | https://learn.microsoft.com/en-us/azure/foundry/how-to/develop/cloud-evaluation |

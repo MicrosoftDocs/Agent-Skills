@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-05'
+generated_at: '2026-08-02'
 category_descriptions:
   integrations: Connecting Health Bot/Agent to channels (Teams, SMS, WhatsApp, Facebook),
     embedding web chat/voice, calling external APIs/OpenAPI, telemetry, auth, management
@@ -13,19 +13,17 @@ category_descriptions:
   best-practices: Guidance on designing robust error-handling flows in Azure Health
     Bot scenarios, including detecting failures, user-friendly recovery paths, and
     safe handling of clinical conversation errors.
-  decision-making: Estimating Azure Health Bot costs based on action usage, understanding
-    pricing drivers, and forecasting expenses for different bot scenarios.
 skill_description: Expert knowledge for Azure Health Bot development including best
-  practices, decision making, security, configuration, and integrations & coding patterns.
-  Use when wiring Health Bot to channels/APIs, configuring scenarios, securing data/consent,
-  or estimating usage costs, and other Azure Health Bot related development tasks.
+  practices, security, configuration, and integrations & coding patterns. Use when
+  wiring Teams/SMS/WhatsApp channels, embedding web chat, calling external APIs, configuring
+  handoff, or enforcing consent, and other Azure Health Bot related development tasks.
   Not for Azure AI Bot Service (use azure-bot-service), Azure Communication Services
-  (use azure-communication-services), Azure Health Data Services (use azure-health-data-services).
-use_when: Use when wiring Health Bot to channels/APIs, configuring scenarios, securing
-  data/consent, or estimating usage costs, and other Azure Health Bot related development
-  tasks.
+  (use azure-communication-services), Azure Functions (use azure-functions).
+use_when: Use when wiring Teams/SMS/WhatsApp channels, embedding web chat, calling
+  external APIs, configuring handoff, or enforcing consent, and other Azure Health
+  Bot related development tasks.
 confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure Communication
-  Services (use azure-communication-services), Azure Health Data Services (use azure-health-data-services).
+  Services (use azure-communication-services), Azure Functions (use azure-functions).
 ---
 # Azure Health Bot Crawl Report
 
@@ -34,13 +32,13 @@ confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure 
 - **Total Pages**: 78
 - **Fetched**: 78
 - **Fetch Failed**: 0
-- **Classified**: 44
-- **Unclassified**: 34
+- **Classified**: 43
+- **Unclassified**: 35
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 78
+- **Updated Pages**: 1
+- **Unchanged**: 77
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-health-bot/azure-health-bot.csv`
 
@@ -50,12 +48,16 @@ confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure 
 |------|-------|------------|
 | best-practices | 1 | 1.3% |
 | configuration | 14 | 17.9% |
-| decision-making | 1 | 1.3% |
 | integrations | 19 | 24.4% |
 | security | 9 | 11.5% |
-| *(Unclassified)* | 34 | 43.6% |
+| *(Unclassified)* | 35 | 44.9% |
 
 ## Changes
+
+### Updated Pages
+
+- [Billing rates and management](https://learn.microsoft.com/en-us/azure/health-bot/pricing-details)
+  - Updated: 2025-11-03T11:55:00.000Z → 2026-07-27T15:02:00.000Z
 
 ## Classified Pages
 
@@ -65,7 +67,6 @@ confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure 
 | [Overview](https://learn.microsoft.com/en-us/azure/health-bot/keys) | security | 0.75 | Page covers secrets, keys, endpoints, and custom telemetry for Healthcare agent service. This typically includes product-specific key types, endpoint formats, and configuration details for secure access, fitting the security sub-skill with expert configuration knowledge. |
 | [Scenario management API](https://learn.microsoft.com/en-us/azure/health-bot/integrations/managementapi) | integrations | 0.75 | Management API for programmatic import/export and other actions is a product-specific API surface with unique operations and parameters. |
 | [Authentication Providers](https://learn.microsoft.com/en-us/azure/health-bot/authentication_providers) | integrations | 0.70 | Explains an authentication layer on top of data connections for third-party APIs; product-specific integration pattern for authenticated HTTP calls. |
-| [Billing rates and management](https://learn.microsoft.com/en-us/azure/health-bot/pricing-details) | decision-making | 0.70 | Pricing details with action-based metering and tiered rates directly support cost and usage decision-making. |
 | [Configure Customer Managed Keys](https://learn.microsoft.com/en-us/azure/health-bot/cmk) | security | 0.70 | Describes CMK support, including creation date requirement and encryption behavior; CMK setup is a product-specific security configuration topic. |
 | [Custom Telemetry](https://learn.microsoft.com/en-us/azure/health-bot/custom_telemetry) | integrations | 0.70 | Describes custom telemetry integration with Application Insights and Power BI, including enabling it; this is a product-specific integration pattern. |
 | [Data Connections](https://learn.microsoft.com/en-us/azure/health-bot/data_connection) | integrations | 0.70 | Describes the data connection object, base URL vs endpoint path, and scenario integration; this is a product-specific integration and coding pattern for external HTTP APIs. |
@@ -115,6 +116,7 @@ confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure 
 | [Create a healthcare agent service Instance using Azure CLI](https://learn.microsoft.com/en-us/azure/health-bot/integrations/create-your-healthcare-bot-quickstart-cli) | 0.45 | Quickstart for creating an instance via Azure CLI; primarily procedural and generic to Azure resource creation. |
 | [Create a healthcare agent service Instance using Azure PowerShell](https://learn.microsoft.com/en-us/azure/health-bot/integrations/create-your-healthcare-bot-quickstart-powershell) | 0.45 | Quickstart for creating an instance via PowerShell; likely mostly step-by-step commands without reusable configuration matrices or limits. |
 | [Overview](https://learn.microsoft.com/en-us/azure/health-bot/channels/main) | 0.45 | Conceptual overview of channels and accessibility recommendation; summary does not show channel-specific configuration parameters or constraints. |
+| [Billing rates and management](https://learn.microsoft.com/en-us/azure/health-bot/pricing-details) | 0.40 | Pricing overview for healthcare agent service; description mentions actions-based billing but no explicit limits/quotas, configuration parameters, or decision matrices with quantified technical trade-offs. Primarily billing/marketing-style information rather than expert technical knowledge as defined. |
 | [Conversation Logs](https://learn.microsoft.com/en-us/azure/health-bot/conversation_logs) | 0.40 | Explains that conversation logs provide full list of conversations; summary lacks specific log schema, retention limits, or configuration options. |
 | [Credible Sources](https://learn.microsoft.com/en-us/azure/health-bot/bot_docs/credible_sources) | 0.40 | Overview of credible medical sources; lists sources but not configuration parameters or decision matrices. |
 | [Dynamics 365 Omnichannel](https://learn.microsoft.com/en-us/azure/health-bot/omnichannel) | 0.40 | Conceptual description of Dynamics 365 Omnichannel integration and escalation; summary lacks concrete settings, parameters, or error mappings. |

@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Database Migration service (use azure-database
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 210
+- **Updated Pages**: 0
+- **Unchanged**: 211
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-migrate/azure-migrate.csv`
 
@@ -75,11 +75,6 @@ confusable_not_for: Not for Azure Database Migration service (use azure-database
 | *(Unclassified)* | 102 | 48.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [Simplified experience for Azure migrate](https://learn.microsoft.com/en-us/azure/migrate/simplified-experience-for-azure-migrate?view=migrate)
-  - Updated: 2026-02-11T18:17:00.000Z → 2026-07-20T11:41:00.000Z
 
 ## Classified Pages
 

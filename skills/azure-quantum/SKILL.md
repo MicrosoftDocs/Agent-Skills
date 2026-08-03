@@ -3,7 +3,7 @@ name: azure-quantum
 description: Expert knowledge for Azure Quantum development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when running Q# jobs on IonQ/Quantinuum/Rigetti, managing quotas, RBAC access, hybrid jobs, or resource estimation, and other Azure Quantum related development tasks. Not for Azure HDInsight (use azure-hdinsight), Azure Databricks (use azure-databricks), Azure Machine Learning (use azure-machine-learning), Azure Virtual Machines (use azure-virtual-machines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-19"
+  generated_at: "2026-08-02"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Quantum Skill
@@ -30,9 +30,9 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L57-L61 | Guidance on designing hybrid quantum-classical workflows in Azure Quantum, including architecture options, orchestration patterns, and when to offload tasks to quantum hardware. |
 | Limits & Quotas | L62-L68 | Managing Azure Quantum quotas, job/session limits, timeouts, and Rigetti-specific hardware constraints and target capabilities. |
 | Security | L69-L79 | Managing secure access to Azure Quantum workspaces: RBAC and access control, bulk user assignment, ARM locks, managed identities, service principals, and secure handling of access keys. |
-| Configuration | L80-L92 | Configuring Azure Quantum workspaces, QDK tools, simulators, and hardware targets, plus setting up and customizing Quantum Resource Estimator models and outputs. |
-| Integrations & Coding Patterns | L93-L106 | Integrating quantum frameworks (Q#, OpenQASM, QIR, Qiskit, Cirq, Pulser) with Azure Quantum, configuring simulators/noise models, visualization, hybrid jobs, and resource estimation. |
-| Deployment | L107-L111 | Deploying Azure Quantum workspaces with Bicep and running/submitting Q# quantum programs from VS Code to Azure Quantum backends |
+| Configuration | L80-L91 | Configuring Azure Quantum workspaces, QDK tools, simulators, and hardware targets, plus setting up and customizing Quantum Resource Estimator models and outputs. |
+| Integrations & Coding Patterns | L92-L104 | Integrating quantum frameworks (Q#, OpenQASM, QIR, Qiskit, Cirq, Pulser) with Azure Quantum, configuring simulators/noise models, visualization, hybrid jobs, and resource estimation. |
+| Deployment | L105-L109 | Deploying Azure Quantum workspaces with Bicep and running/submitting Q# quantum programs from VS Code to Azure Quantum backends |
 
 ### Troubleshooting
 | Topic | URL |
@@ -82,7 +82,6 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Configure Azure Quantum workspaces with Azure CLI | https://learn.microsoft.com/en-us/azure/quantum/how-to-manage-quantum-workspaces-with-the-azure-cli |
 | Use the QDK neutral atom device visualizer | https://learn.microsoft.com/en-us/azure/quantum/how-to-use-neutral-atom-visualizer |
-| Set up QDK VS Code extension and environment | https://learn.microsoft.com/en-us/azure/quantum/install-overview-qdk |
 | Install and configure QDK quantum simulators | https://learn.microsoft.com/en-us/azure/quantum/install-qdk-quantum-simulators |
 | Configure and use IonQ targets in Azure Quantum | https://learn.microsoft.com/en-us/azure/quantum/provider-ionq |
 | Configure hardware architecture models for the Quantum resource estimator | https://learn.microsoft.com/en-us/azure/quantum/qre-build-architecture-models |
@@ -102,7 +101,6 @@ This skill requires **network access** to fetch documentation content:
 | Create application models from quantum frameworks for resource estimation | https://learn.microsoft.com/en-us/azure/quantum/qre-supported-applications |
 | Submit Cirq circuits to Azure Quantum with QDK | https://learn.microsoft.com/en-us/azure/quantum/quickstart-microsoft-cirq |
 | Submit QIR, OpenQASM, and Pulser circuits to Azure Quantum | https://learn.microsoft.com/en-us/azure/quantum/quickstart-microsoft-provider-format |
-| Submit Qiskit circuits to Azure Quantum with QDK | https://learn.microsoft.com/en-us/azure/quantum/quickstart-microsoft-qiskit |
 
 ### Deployment
 | Topic | URL |

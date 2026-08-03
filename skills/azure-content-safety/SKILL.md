@@ -1,9 +1,9 @@
 ---
 name: azure-content-safety
-description: Expert knowledge for Azure AI Content Safety development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Content Safety APIs, Docker containers, text blocklists, groundedness detection, or custom safety categories, and other Azure AI Content Safety related development tasks. Not for Azure Information Protection (use azure-information-protection), Azure Security (use azure-security), Azure Defender For Cloud (use azure-defender-for-cloud), Azure Sentinel (use azure-sentinel).
+description: Expert knowledge for Azure AI Content Safety development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Content Safety Docker, text/image/prompt shield APIs, blocklists, provenance, or groundedness checks, and other Azure AI Content Safety related development tasks. Not for Azure Security (use azure-security), Azure Defender For Cloud (use azure-defender-for-cloud), Azure Sentinel (use azure-sentinel).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-12"
+  generated_at: "2026-08-02"
   generator: "docs2skills/1.0.0"
 ---
 # Azure AI Content Safety Skill
@@ -31,8 +31,8 @@ This skill requires **network access** to fetch documentation content:
 | Limits & Quotas | L58-L64 | Language coverage, building and training custom safety categories, and detecting protected/third‑party code in model outputs. |
 | Security | L65-L69 | Details on how Azure AI Content Safety encrypts data at rest, including encryption models, key management options, and compliance/security considerations. |
 | Configuration | L70-L75 | Configuring Content Safety runtime via Docker containers and setting up/managing text blocklists to customize and enforce content filtering rules |
-| Integrations & Coding Patterns | L76-L80 | Using the groundedness detection API to check if AI responses are supported by source content, with request/response formats, parameters, and integration patterns |
-| Deployment | L81-L86 | How to install, configure, and run Azure AI Content Safety Docker containers for text, image, and prompt shield analysis in your own environment. |
+| Integrations & Coding Patterns | L76-L81 | Calling Content Safety APIs for provenance detection and groundedness checks, including request/response patterns, parameters, and integration examples for detecting source and factual alignment. |
+| Deployment | L82-L87 | How to install, configure, and run Azure AI Content Safety Docker containers for text, image, and prompt shield analysis in your own environment. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -76,6 +76,7 @@ This skill requires **network access** to fetch documentation content:
 ### Integrations & Coding Patterns
 | Topic | URL |
 |-------|-----|
+| Call Azure Content Safety Provenance Detect API | https://learn.microsoft.com/en-us/azure/ai-services/content-safety/how-to/how-to-provenance-detection |
 | Use Azure AI Content Safety groundedness detection API | https://learn.microsoft.com/en-us/azure/ai-services/content-safety/quickstart-groundedness |
 
 ### Deployment

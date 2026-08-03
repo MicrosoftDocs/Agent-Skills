@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 179
+- **Updated Pages**: 0
+- **Unchanged**: 180
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-defender-for-iot/azure-defender-for-iot.csv`
 
@@ -76,11 +76,6 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | *(Unclassified)* | 61 | 33.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [Configure reverse DNS lookup](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/configure-reverse-dns-lookup)
-  - Updated: 2026-06-23T22:34:00.000Z → 2026-07-23T22:34:00.000Z
 
 ## Classified Pages
 

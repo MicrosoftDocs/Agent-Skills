@@ -1,14 +1,14 @@
 ---
 name: azure-health-bot
-description: Expert knowledge for Azure Health Bot development including best practices, decision making, security, configuration, and integrations & coding patterns. Use when wiring Health Bot to channels/APIs, configuring scenarios, securing data/consent, or estimating usage costs, and other Azure Health Bot related development tasks. Not for Azure AI Bot Service (use azure-bot-service), Azure Communication Services (use azure-communication-services), Azure Health Data Services (use azure-health-data-services).
+description: Expert knowledge for Azure Health Bot development including best practices, security, configuration, and integrations & coding patterns. Use when wiring Teams/SMS/WhatsApp channels, embedding web chat, calling external APIs, configuring handoff, or enforcing consent, and other Azure Health Bot related development tasks. Not for Azure AI Bot Service (use azure-bot-service), Azure Communication Services (use azure-communication-services), Azure Functions (use azure-functions).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-05"
+  generated_at: "2026-08-02"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Health Bot Skill
 
-This skill provides expert guidance for Azure Health Bot. Covers best practices, decision making, security, configuration, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Health Bot. Covers best practices, security, configuration, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -24,21 +24,15 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Best Practices | L33-L37 | Guidance on designing robust error-handling flows in Azure Health Bot scenarios, including detecting failures, user-friendly recovery paths, and safe handling of clinical conversation errors. |
-| Decision Making | L38-L42 | Estimating Azure Health Bot costs based on action usage, understanding pricing drivers, and forecasting expenses for different bot scenarios. |
-| Security | L43-L55 | Configuring security, privacy, and compliance: user consent, data access/deletion, encryption keys, abuse safeguards, authentication, secrets management, and portal permissions for Healthcare bots/agents. |
-| Configuration | L56-L73 | Configuring bot behavior and conversations: welcome/help messages, feedback, interruptions, human/Teams handoff, terms links, and managing scenarios, variables, cards, and versions. |
-| Integrations & Coding Patterns | L74-L95 | Connecting Health Bot/Agent to channels (Teams, SMS, WhatsApp, Facebook), embedding web chat/voice, calling external APIs/OpenAPI, telemetry, auth, management APIs, and proactive scenario invocation |
+| Best Practices | L32-L36 | Guidance on designing robust error-handling flows in Azure Health Bot scenarios, including detecting failures, user-friendly recovery paths, and safe handling of clinical conversation errors. |
+| Security | L37-L49 | Configuring security, privacy, and compliance: user consent, data access/deletion, encryption keys, abuse safeguards, authentication, secrets management, and portal permissions for Healthcare bots/agents. |
+| Configuration | L50-L67 | Configuring bot behavior and conversations: welcome/help messages, feedback, interruptions, human/Teams handoff, terms links, and managing scenarios, variables, cards, and versions. |
+| Integrations & Coding Patterns | L68-L89 | Connecting Health Bot/Agent to channels (Teams, SMS, WhatsApp, Facebook), embedding web chat/voice, calling external APIs/OpenAPI, telemetry, auth, management APIs, and proactive scenario invocation |
 
 ### Best Practices
 | Topic | URL |
 |-------|-----|
 | Design error handling flows in healthcare bot scenarios | https://learn.microsoft.com/en-us/azure/health-bot/errorhandling |
-
-### Decision Making
-| Topic | URL |
-|-------|-----|
-| Estimate healthcare agent service costs by action usage | https://learn.microsoft.com/en-us/azure/health-bot/pricing-details |
 
 ### Security
 | Topic | URL |

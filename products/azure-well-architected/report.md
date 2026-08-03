@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-28'
+generated_at: '2026-08-02'
 category_descriptions:
   workload-patterns: Design patterns, reference architectures, and end-to-end guidance
     for AI, HPC, mission-critical, SaaS, and sustainable workloads on Azure, including
@@ -10,9 +10,9 @@ category_descriptions:
   design-principles: Design patterns and best practices for cost, reliability, security,
     performance, operations, sustainability, and mission-critical design across AI,
     SaaS, AVD, HPC, and other Azure workloads.
-  recommendations: Guidance on cost optimization, operations, performance, reliability,
-    security, and sustainability best practices for architecting and running Azure
-    workloads.
+  recommendations: Prescriptive best practices for Azure cost, operations, performance,
+    reliability, security, and sustainability—covering design, automation, monitoring,
+    testing, scaling, and governance of cloud workloads.
   checklists: Checklists to review Azure workloads for cost, operations, performance,
     reliability, and security best practices and identify gaps against Well-Architected
     guidance.
@@ -25,12 +25,10 @@ category_descriptions:
 skill_description: Expert guidance for designing, assessing, and optimizing Azure
   workloads using Azure Well Architected. Covers design review checklists, recommendations,
   design principles, tradeoffs, service guides, workload patterns, and assessment
-  questions. Use when designing AI, HPC, SaaS, AVD, or mission-critical Azure workloads
-  with WAF-aligned guidance, and other Azure Well Architected related development
-  tasks.
-use_when: Use when designing AI, HPC, SaaS, AVD, or mission-critical Azure workloads
-  with WAF-aligned guidance, and other Azure Well Architected related development
-  tasks.
+  questions. Use when designing AI, HPC, SaaS, AVD, AVS, or mission‑critical workloads
+  on Azure, and other Azure Well Architected related development tasks.
+use_when: Use when designing AI, HPC, SaaS, AVD, AVS, or mission‑critical workloads
+  on Azure, and other Azure Well Architected related development tasks.
 ---
 # Azure Well Architected Crawl Report
 
@@ -44,8 +42,8 @@ use_when: Use when designing AI, HPC, SaaS, AVD, or mission-critical Azure workl
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 205
+- **Updated Pages**: 3
+- **Unchanged**: 202
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-well-architected/azure-well-architected.csv`
 
@@ -64,6 +62,15 @@ use_when: Use when designing AI, HPC, SaaS, AVD, or mission-critical Azure workl
 
 ## Changes
 
+### Updated Pages
+
+- [SE:03 Data classification](https://learn.microsoft.com/en-us/azure/well-architected/security/data-classification)
+  - Updated: 2023-11-15T08:00:00.000Z → 2026-07-30T17:04:00.000Z
+- [SE:08 Hardening resources](https://learn.microsoft.com/en-us/azure/well-architected/security/harden-resources)
+  - Updated: 2023-11-15T08:00:00.000Z → 2026-07-30T17:04:00.000Z
+- [OE:04 Tools and processes](https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/tools-processes)
+  - Updated: 2026-02-11T19:15:00.000Z → 2026-07-30T17:04:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
@@ -79,7 +86,6 @@ use_when: Use when designing AI, HPC, SaaS, AVD, or mission-critical Azure workl
 | [RE:06 Scaling](https://learn.microsoft.com/en-us/azure/well-architected/reliability/scaling) | recommendations | 0.95 | Explicitly tied to a Reliability checklist recommendation and provides concrete guidance on static/automatic/manual scaling, vertical vs horizontal scaling, and tradeoffs. |
 | [RE:07 Self-preservation](https://learn.microsoft.com/en-us/azure/well-architected/reliability/self-preservation) | recommendations | 0.95 | Linked to a Reliability checklist recommendation and gives detailed implementation strategies for self-preservation and self-healing capabilities to improve reliability. |
 | [SE:01 Security baseline](https://learn.microsoft.com/en-us/azure/well-architected/security/establish-baseline) | recommendations | 0.95 | Explicitly applies to a Security checklist recommendation and provides detailed guidance on defining, publishing, and enforcing security baselines across the organization. |
-| [SE:03 Data classification](https://learn.microsoft.com/en-us/azure/well-architected/security/data-classification) | recommendations | 0.95 | Linked to a Security checklist recommendation and describes how to categorize data by sensitivity/compliance and apply appropriate protections—specific implementation guidance. |
 | [SE:04 Segmentation](https://learn.microsoft.com/en-us/azure/well-architected/security/segmentation) | recommendations | 0.95 | Applies to a Security checklist recommendation and gives detailed guidance on defining segments, perimeters, and isolation boundaries as part of a unified segmentation strategy. |
 | [SE:05 Identity and access management](https://learn.microsoft.com/en-us/azure/well-architected/security/identity-access) | recommendations | 0.95 | Explicitly tied to a Security checklist recommendation and provides concrete recommendations for authenticating and authorizing human and workload identities. |
 | [SE:06 Network controls](https://learn.microsoft.com/en-us/azure/well-architected/security/networking) | recommendations | 0.95 | Applies to a Security checklist recommendation and details network security controls (filtering, blocking, detection) and their use alongside identity controls. |
@@ -145,7 +151,6 @@ use_when: Use when designing AI, HPC, SaaS, AVD, or mission-critical Azure workl
 | [CO:05 Rate optimization](https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/get-best-rates) | recommendations | 0.88 | Supports a Cost Optimization checklist recommendation and gives concrete strategies for optimizing pricing without changing architecture. This is prescriptive, actionable guidance. |
 | [CO:13 Personnel time](https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/optimize-personnel-time) | recommendations | 0.88 | Tied to a Cost Optimization checklist recommendation and describes how to align skills, tasks, and time to maximize productivity. Prescriptive, step-oriented guidance. |
 | [CO:14 Consolidation](https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/consolidation) | recommendations | 0.88 | Supports a Cost Optimization checklist recommendation and provides detailed guidance on consolidating servers, databases, applications, and responsibilities. Implementation-level cost guidance. |
-| [OE:04 Tools and processes](https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/tools-processes) | recommendations | 0.88 | Supports an Operational Excellence checklist recommendation and describes specific practices for choosing and standardizing tools and processes to improve efficiency and quality. |
 | [PE:03 Selecting services](https://learn.microsoft.com/en-us/azure/well-architected/performance-efficiency/select-services) | recommendations | 0.88 | Described as recommendations for selecting appropriate services for a workload, tied to a Performance Efficiency checklist recommendation, with prescriptive selection guidance rather than high-level principles. |
 | [PE:09 Critical flows](https://learn.microsoft.com/en-us/azure/well-architected/performance-efficiency/prioritize-critical-flows) | recommendations | 0.88 | Applies to a Performance Efficiency checklist recommendation and gives prescriptive guidance on identifying and prioritizing critical business flows for performance, fitting recommendations. |
 | [PE:10 Operational tasks](https://learn.microsoft.com/en-us/azure/well-architected/performance-efficiency/optimize-operational-tasks) | recommendations | 0.88 | Mapped to a Performance Efficiency checklist recommendation and provides detailed guidance on minimizing the performance impact of operational tasks, which is implementation-focused. |
@@ -162,9 +167,11 @@ use_when: Use when designing AI, HPC, SaaS, AVD, or mission-critical Azure workl
 | [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-sql-managed-instance) | service-guides | 0.86 | This is a Well-Architected service guide focused on Azure SQL Managed Instance. It provides WAF-aligned, service-specific guidance (resilience, security, efficiency, etc.) for configuring and operating SQL Managed Instance. The content goes beyond generic concepts and includes concrete, service-focused best practices that are unlikely to be fully captured as general training data, fitting the 'service-guides' category. |
 | [Azure Service Fabric](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-service-fabric) | service-guides | 0.86 | Service Fabric–focused architectural recommendations mapped to WAF pillars with implementation detail. |
 | [Log Analytics](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-log-analytics) | service-guides | 0.86 | The page is a Well-Architected service guide focused on Log Analytics workspaces, providing Azure Monitor–specific best practices across multiple pillars (for example, how to structure workspaces, configure data collection, retention, access, and performance). This is detailed, service-specific implementation guidance that goes beyond generic concepts and would not be fully captured in general LLM training data, fitting the 'service-guides' category. |
+| [OE:04 Tools and processes](https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/tools-processes) | recommendations | 0.86 | The page is explicitly described as a guide for an Operational Excellence checklist recommendation, providing detailed implementation guidance on defining standards for software development tools and processes. This aligns with the 'recommendations' type, which is the how-to behind checklist items, rather than high-level principles or checklists themselves. |
 | [OE:11 Safe deployment practices](https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/safe-deployments) | recommendations | 0.86 | The page is explicitly a guide for an Operational Excellence checklist recommendation and provides detailed, prescriptive guidance on how to implement safe deployment practices (SDP) to reduce risk of changes. It maps to a specific checklist item in the OpEx pillar and contains concrete implementation steps and patterns, which aligns with the 'recommendations' definition. |
 | [PE:04 Performance monitoring](https://learn.microsoft.com/en-us/azure/well-architected/performance-efficiency/monitoring) | recommendations | 0.86 | The summary explicitly states this article maps to a specific Performance Efficiency checklist recommendation and describes concrete design strategies for implementing multi-layer performance measurement (latency, throughput, resource behavior). That aligns with detailed implementation guidance behind a checklist item, which matches the 'recommendations' definition. It is not just conceptual; it provides how-to strategies tied to a checklist recommendation. |
-| [SE:08 Hardening resources](https://learn.microsoft.com/en-us/azure/well-architected/security/harden-resources) | recommendations | 0.86 | Explicitly tied to a Security checklist recommendation and provides detailed, prescriptive guidance on hardening resources (localized controls, repeated-attack resilience). This is concrete how-to implementation advice behind checklist items, not just principles. |
+| [SE:03 Data classification](https://learn.microsoft.com/en-us/azure/well-architected/security/data-classification) | recommendations | 0.86 | The summary explicitly states this is a guide describing recommendations for data classification and ties it to a specific Security checklist recommendation. These WAF security recommendation pages typically map to checklist IDs and provide detailed, prescriptive implementation guidance (how to categorize data, apply protections, configure controls) rather than just high-level principles. This constitutes expert, post-training knowledge aligned with the 'recommendations' sub-skill. |
+| [SE:08 Hardening resources](https://learn.microsoft.com/en-us/azure/well-architected/security/harden-resources) | recommendations | 0.86 | The page is described as a guide for recommendations on hardening resources and is explicitly linked to an Azure Well-Architected Framework Security checklist recommendation. These hardening guides provide detailed, actionable implementation steps (localized controls, maintenance practices, configuration specifics) that support particular checklist items, matching the 'recommendations' definition and containing expert, implementation-level knowledge. |
 | [SE:12 Incident response](https://learn.microsoft.com/en-us/azure/well-architected/security/incident-response) | recommendations | 0.86 | Supports a Security checklist recommendation and provides detailed steps for incident identification, management, and mitigation. This is implementation guidance behind checklist items. |
 | [Design principles](https://learn.microsoft.com/en-us/azure/well-architected/ai/design-principles) | design-principles | 0.85 | Defines AI-specific design principles, explains why they matter, and ties them to WAF pillars and trade-offs. |
 | [Tradeoffs](https://learn.microsoft.com/en-us/azure/well-architected/reliability/tradeoffs) | tradeoffs | 0.85 | Reliability tradeoffs page discusses how reliability decisions affect other pillars (security, performance, cost, operations) and provides cross-pillar tradeoff analysis and guidance. |

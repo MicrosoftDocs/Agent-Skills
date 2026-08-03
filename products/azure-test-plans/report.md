@@ -1,24 +1,25 @@
 ---
-generated_at: '2026-06-28'
+generated_at: '2026-08-02'
 category_descriptions:
-  limits-quotas: Managing custom fields on test runs and understanding data retention
-    limits, default quotas, and how long Azure Test Plans data is kept or deleted
+  limits-quotas: Configuring test data and pipeline retention limits, understanding
+    default quotas, and using custom fields to control how long Azure Test Plans runs
+    and results are stored.
   security: Managing permissions, access levels, and security roles for users and
     groups in Azure Test Plans manual testing features.
   integrations: 'Using tcm.exe CLI to manage Azure Test Plans: create and run test
     suites, import/export test cases, manage test configurations, and automate test
     management tasks'
 skill_description: Expert knowledge for Azure Test Plans development including limits
-  & quotas, security, and integrations & coding patterns. Use when configuring test
-  run custom fields, data retention, permissions, access levels, or tcm.exe automation,
-  and other Azure Test Plans related development tasks. Not for Azure DevOps (use
-  azure-devops), Azure Pipelines (use azure-pipelines), Azure App Testing (use azure-app-testing),
-  Azure Boards (use azure-boards).
-use_when: Use when configuring test run custom fields, data retention, permissions,
-  access levels, or tcm.exe automation, and other Azure Test Plans related development
+  & quotas, security, and integrations & coding patterns. Use when tuning test retention,
+  configuring access for manual testers, or automating suites via tcm.exe CLI, and
+  other Azure Test Plans related development tasks. Not for Azure DevOps (use azure-devops),
+  Azure Boards (use azure-boards), Azure Pipelines (use azure-pipelines), Azure App
+  Testing (use azure-app-testing).
+use_when: Use when tuning test retention, configuring access for manual testers, or
+  automating suites via tcm.exe CLI, and other Azure Test Plans related development
   tasks.
-confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (use
-  azure-pipelines), Azure App Testing (use azure-app-testing), Azure Boards (use azure-boards).
+confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Boards (use azure-boards),
+  Azure Pipelines (use azure-pipelines), Azure App Testing (use azure-app-testing).
 ---
 # Azure Test Plans Crawl Report
 
@@ -27,14 +28,14 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 - **Total Pages**: 34
 - **Fetched**: 34
 - **Fetch Failed**: 0
-- **Classified**: 4
-- **Unclassified**: 30
+- **Classified**: 5
+- **Unclassified**: 29
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
-- **Unchanged**: 34
-- **Deleted Pages**: 0
+- **Unchanged**: 33
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-test-plans/azure-test-plans.csv`
 
 ## Classification Statistics
@@ -42,16 +43,25 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 | Type | Count | Percentage |
 |------|-------|------------|
 | integrations | 1 | 2.9% |
-| limits-quotas | 2 | 5.9% |
+| limits-quotas | 3 | 8.8% |
 | security | 1 | 2.9% |
-| *(Unclassified)* | 30 | 88.2% |
+| *(Unclassified)* | 29 | 85.3% |
 
 ## Changes
+
+### New Pages
+
+- [Set test retention policies](https://learn.microsoft.com/en-us/azure/devops/pipelines/policies/retention?view=azure-devops)
+
+### Deleted Pages
+
+- ~~Set test retention policies~~ (https://learn.microsoft.com/en-us/azure/devops/test/how-long-to-keep-test-results?view=azure-devops)
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
+| [Set test retention policies](https://learn.microsoft.com/en-us/azure/devops/pipelines/policies/retention?view=azure-devops) | limits-quotas | 0.78 | The retention policies article documents specific numeric retention limits (days, number of runs/releases/tests kept), default values, and how they differ by pipeline type and scope. These are concrete, product-specific limits and behaviors that an LLM wouldn't reliably infer from training, matching the limits-quotas category. |
 | [Add custom data fields](https://learn.microsoft.com/en-us/azure/devops/test/custom-fields?view=azure-devops) | limits-quotas | 0.70 | Explicitly states a numeric limit: up to 100 custom fields per Azure DevOps project; this is a concrete quota not generally known from training. |
 | [Default permissions (Security)](https://learn.microsoft.com/en-us/azure/devops/test/manual-test-permissions?view=azure-devops) | security | 0.70 | Covers Azure DevOps access levels, licensing, and permissions for manual and exploratory testing. Likely includes specific permission names, role mappings, and access requirements, which are product-specific security/authorization details. |
 | [Manual testing FAQs](https://learn.microsoft.com/en-us/azure/devops/test/reference-qa?view=azure-devops) | limits-quotas | 0.70 | FAQ for Azure Test Plans typically includes concrete retention durations and possibly other numeric constraints (for example, how long test results are kept, limits around test artifacts). These are product-specific limits that an LLM is unlikely to know precisely from training, fitting the limits-quotas category better than the others. |
@@ -61,7 +71,6 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
-| [Set test retention policies](https://learn.microsoft.com/en-us/azure/devops/test/how-long-to-keep-test-results?view=azure-devops) | 0.40 | Discusses having a policy for test result retention conceptually; summary does not show concrete retention limits, config parameter tables, or tier-specific values. Appears as general guidance rather than detailed limits or configuration reference. |
 | [Manage test failure type](https://learn.microsoft.com/en-us/azure/devops/test/manage-test-failure-type?view=azure-devops) | 0.35 | Customization of failure types is described conceptually; summary does not show numeric limits, config tables, or security/role specifics. |
 | [Add to existing bugs](https://learn.microsoft.com/en-us/azure/devops/test/add-to-bugs-exploratory-testing?view=azure-devops) | 0.30 | Describes how the extension searches for existing bugs and how to add findings; no error codes, numeric limits, or config parameter tables. |
 | [Explore work items](https://learn.microsoft.com/en-us/azure/devops/test/explore-workitems-exploratory-testing?view=azure-devops) | 0.30 | Exploring work items and linking them; workflow guidance without numeric limits or configuration parameter tables. |

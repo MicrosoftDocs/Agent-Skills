@@ -1,14 +1,14 @@
 ---
 name: azure-extended-zones
-description: Expert knowledge for Azure Extended Zones development including decision making, limits & quotas, security, and configuration. Use when setting up Extended Zones access, Azure Policy, Firewall, CMK disk encryption, or quota increase workflows, and other Azure Extended Zones related development tasks. Not for Azure Reliability (use azure-reliability), Azure Resiliency (use azure-resiliency), Azure Virtual Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan).
+description: Expert knowledge for Azure Extended Zones development including limits & quotas, security, and configuration. Use when registering subs, authoring Azure Policy, deploying Azure Firewall, CMK disk encryption, or quota requests, and other Azure Extended Zones related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan), Azure Traffic Manager (use azure-traffic-manager).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-14"
+  generated_at: "2026-08-02"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Extended Zones Skill
 
-This skill provides expert guidance for Azure Extended Zones. Covers decision making, limits & quotas, security, and configuration. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Extended Zones. Covers limits & quotas, security, and configuration. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -24,15 +24,9 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Decision Making | L32-L36 | Guidance on cost optimization for Azure Extended Zones, including when and how to buy reservations or savings plans, pricing tradeoffs, and purchase workflows. |
-| Limits & Quotas | L37-L41 | How to view current Azure Extended Zones quotas and request quota increases using the Azure portal, including required steps and limits considerations. |
-| Security | L42-L46 | How to encrypt Extended Zone VM disks using customer-managed keys, including setup steps, key vault integration, and security configuration details. |
-| Configuration | L47-L52 | Configuring Extended Zones access and governance: registering subscriptions, creating custom Azure Policy, and deploying Azure Firewall within Extended Zones. |
-
-### Decision Making
-| Topic | URL |
-|-------|-----|
-| Choose and purchase reservations or savings plans for Azure Extended Zones | https://learn.microsoft.com/en-us/azure/extended-zones/purchase-reservations-savings-plans |
+| Limits & Quotas | L31-L35 | How to view current Azure Extended Zones quotas and request quota increases using the Azure portal, including required steps and limits considerations. |
+| Security | L36-L40 | How to encrypt Extended Zone VM disks using customer-managed keys, including setup steps, key vault integration, and security configuration details. |
+| Configuration | L41-L46 | Configuring Extended Zones access and governance: registering subscriptions, creating custom Azure Policy, and deploying Azure Firewall within Extended Zones. |
 
 ### Limits & Quotas
 | Topic | URL |

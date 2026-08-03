@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-07'
+generated_at: '2026-08-02'
 category_descriptions:
   limits-quotas: Limits, capacities, performance, and system requirements for Azure
     Stack Edge and Data Box Gateway devices, including supported VM sizes and moving
@@ -8,33 +8,35 @@ category_descriptions:
     release-specific critical bugs, ordering/activation, certificates, ARM/Blob/IoT
     Edge/VM/GPU problems, and using logs/alerts for troubleshooting.'
   configuration: 'Configuring and managing Azure Stack Edge/Data Box Gateway devices:
-    networking, power, storage, Kubernetes, VMs, GPUs, monitoring, automation, and
-    device lifecycle (reset, wipe, specs).'
-  security: 'Managing Azure Stack Edge security: user access, certs/TLS, Key Vault
-    secrets, VPN/BCDR, Kubernetes RBAC, data erasure proof, and built-in Azure Policy
-    for device protection.'
+    networking, power, storage, Kubernetes/VMs, GPUs, monitoring, automation, and
+    hardware/system requirements.'
+  security: 'Securing Azure Stack Edge: user access, certificates/TLS, Key Vault secrets,
+    VPN/BCDR, encryption, secure wipe, Kubernetes RBAC, and built-in security features/policies.'
   integrations: 'How to deploy and integrate workloads on Azure Stack Edge: IoT Edge
     modules, GPU-sharing/Kubernetes apps, DeepStream, Arc/Kubernetes GitOps, and connecting
     to local ARM.'
   decision-making: Guidance on region and data-location choices, resiliency behavior,
     disconnected deployment planning, and processes for replacing Azure Stack Edge
     devices.
+  deployment: Predeployment requirements and planning for Azure Stack Edge Pro GPU,
+    including hardware, networking, certificates, capacity, and environment checks
+    before deployment.
   best-practices: 'Best practices for Azure Stack Edge Pro: device failure recovery,
     GPU sharing/partitioning guidance, and operational guidelines for deployment,
     monitoring, and maintenance.'
 skill_description: Expert knowledge for Azure Stack Edge development including troubleshooting,
-  best practices, decision making, limits & quotas, security, configuration, and integrations
-  & coding patterns. Use when deploying IoT Edge modules, Kubernetes/GPU apps, DeepStream
-  pipelines, Arc GitOps, or local ARM workloads, and other Azure Stack Edge related
-  development tasks. Not for Azure Data Box (use azure-data-box-family), Azure IoT
-  Edge (use azure-iot-edge), Azure Local (use azure-local), Azure Virtual Machines
-  (use azure-virtual-machines).
-use_when: Use when deploying IoT Edge modules, Kubernetes/GPU apps, DeepStream pipelines,
+  best practices, decision making, limits & quotas, security, configuration, integrations
+  & coding patterns, and deployment. Use when deploying IoT Edge modules, GPU/Kubernetes
+  apps, DeepStream pipelines, Arc GitOps, or local ARM workloads, and other Azure
+  Stack Edge related development tasks. Not for Azure Data Box (use azure-data-box-family),
+  Azure IoT Edge (use azure-iot-edge), Azure Local (use azure-local), Azure Kubernetes
+  Service Edge Essentials (use azure-aks-edge-essentials).
+use_when: Use when deploying IoT Edge modules, GPU/Kubernetes apps, DeepStream pipelines,
   Arc GitOps, or local ARM workloads, and other Azure Stack Edge related development
   tasks.
 confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure IoT
-  Edge (use azure-iot-edge), Azure Local (use azure-local), Azure Virtual Machines
-  (use azure-virtual-machines).
+  Edge (use azure-iot-edge), Azure Local (use azure-local), Azure Kubernetes Service
+  Edge Essentials (use azure-aks-edge-essentials).
 ---
 # Azure Stack Edge Crawl Report
 
@@ -43,13 +45,13 @@ confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure Io
 - **Total Pages**: 233
 - **Fetched**: 233
 - **Fetch Failed**: 0
-- **Classified**: 143
-- **Unclassified**: 90
+- **Classified**: 144
+- **Unclassified**: 89
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 233
+- **Updated Pages**: 11
+- **Unchanged**: 222
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-stack-edge/azure-stack-edge.csv`
 
@@ -60,13 +62,39 @@ confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure Io
 | best-practices | 3 | 1.3% |
 | configuration | 49 | 21.0% |
 | decision-making | 5 | 2.1% |
+| deployment | 1 | 0.4% |
 | integrations | 8 | 3.4% |
 | limits-quotas | 8 | 3.4% |
 | security | 23 | 9.9% |
 | troubleshooting | 47 | 20.2% |
-| *(Unclassified)* | 90 | 38.6% |
+| *(Unclassified)* | 89 | 38.2% |
 
 ## Changes
+
+### Updated Pages
+
+- [0 - Get checklist](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-deploy-checklist)
+  - Updated: 2023-11-21T23:11:00.000Z → 2026-07-28T17:15:00.000Z
+- [2 - Install](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-deploy-install)
+  - Updated: 2022-07-25T17:07:00.000Z → 2026-07-28T17:15:00.000Z
+- [3 - Connect](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-deploy-connect)
+  - Updated: 2022-07-25T17:07:00.000Z → 2026-07-28T17:15:00.000Z
+- [4 - Configure network](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-deploy-configure-network-compute-web-proxy)
+  - Updated: 2025-11-25T06:13:00.000Z → 2026-07-28T17:15:00.000Z
+- [6 - Configure certificates](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-deploy-configure-certificates)
+  - Updated: 2022-11-08T23:08:00.000Z → 2026-07-28T17:15:00.000Z
+- [0 - Get checklist](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-pro-2-deploy-checklist)
+  - Updated: 2023-11-21T23:11:00.000Z → 2026-07-28T17:15:00.000Z
+- [2 - Install](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-pro-2-deploy-install)
+  - Updated: 2024-02-21T08:00:00.000Z → 2026-07-28T17:15:00.000Z
+- [3 - Connect](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-pro-2-deploy-connect)
+  - Updated: 2022-03-23T02:24:00.000Z → 2026-07-28T17:15:00.000Z
+- [4 - Configure network](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-pro-2-deploy-configure-network-compute-web-proxy)
+  - Updated: 2025-11-25T06:13:00.000Z → 2026-07-28T17:15:00.000Z
+- [Deploy via config file](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-powershell-based-configuration)
+  - Updated: 2023-12-21T08:00:00.000Z → 2026-07-28T17:15:00.000Z
+- [Reset, reactivate device](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-reset-reactivate-device)
+  - Updated: 2026-06-03T22:23:00.000Z → 2026-07-28T17:15:00.000Z
 
 ## Classified Pages
 
@@ -87,7 +115,6 @@ confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure Io
 | [View requirements](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-certificate-requirements) | security | 0.85 | Describes required certificate formats, algorithms, subject/SAN rules, and troubleshooting of certificate errors; clearly product-specific security and troubleshooting knowledge. |
 | [View supported VMs](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-virtual-machine-sizes) | limits-quotas | 0.85 | Lists supported VM sizes for this appliance; effectively a limits/quotas table with specific size constraints and capabilities. |
 | [6 - Configure security](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-mini-r-deploy-configure-certificates-vpn-encryption) | security | 0.80 | Combines certificate, VPN, and encryption-at-rest configuration; includes security parameters and flows specific to this device. |
-| [Deploy via config file](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-powershell-based-configuration) | configuration | 0.80 | Uses a config file and PowerShell to provision and activate devices; likely lists configuration schema and parameters unique to this product. |
 | [For Azure Stack Edge Blob storage](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-system-requirements-rest) | configuration | 0.80 | Lists supported API, SDK, and client library versions plus behavioral differences vs Azure Storage; these are precise compatibility and configuration details unique to this product. |
 | [GPU extension issues](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-troubleshoot-virtual-machine-gpu-extension-installation) | troubleshooting | 0.80 | Focused on resolving GPU extension installation failures; likely includes specific extension states, error messages, and corrective steps that are product-specific. |
 | [Review requirements](https://learn.microsoft.com/en-us/azure/databox-gateway/data-box-gateway-system-requirements) | limits-quotas | 0.80 | System requirements article typically includes specific CPU, RAM, disk, and network requirements with numeric values; these are expert deployment constraints. |
@@ -106,17 +133,19 @@ confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure Io
 | [2105](https://learn.microsoft.com/en-us/azure/databox-gateway/data-box-gateway-2105-release-notes) | troubleshooting | 0.75 | Release notes with critical issues and workarounds; used to diagnose and resolve version-specific problems. |
 | [2301](https://learn.microsoft.com/en-us/azure/databox-gateway/data-box-gateway-2301-release-notes) | troubleshooting | 0.75 | Version-specific release notes with known issues and resolutions; supports troubleshooting for that release. |
 | [2409 - Current](https://learn.microsoft.com/en-us/azure/databox-gateway/data-box-gateway-2409-release-notes) | troubleshooting | 0.75 | Release notes list critical issues and workarounds; effectively troubleshooting guidance tied to specific versions. |
+| [4 - Configure network](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-deploy-configure-network-compute-web-proxy) | configuration | 0.75 | Network, compute network, and web proxy configuration for this device will include specific setting names, allowed values, and constraints (IP ranges, VLANs, DNS, gateways, proxy formats) that are product-specific configuration parameters. |
 | [4 - Configure network](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-mini-r-deploy-configure-network-compute-web-proxy) | configuration | 0.75 | Network, compute network, and web proxy settings for a specific device will include concrete fields, allowed values, and possibly Wi-Fi deprecation notes that are product-specific configuration knowledge. |
 | [6 - Configure security](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-pro-r-deploy-configure-certificates-vpn-encryption) | security | 0.75 | Certificate configuration for a specific device generally includes certificate types, required subject/SAN formats, and upload/usage details that are product-specific security settings. |
 | [Erase device data](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-secure-erase-certificate) | security | 0.75 | Describes secure erase process and certificate contents, including device-specific erase methods and reporting details. |
 | [Manage Edge container registry](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-edge-container-registry) | configuration | 0.75 | Describes enabling local container registry and using it from Kubernetes; includes registry configuration, endpoints, and auth details specific to the device. |
 | [Ordering issues](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-troubleshoot-ordering) | troubleshooting | 0.75 | Explicitly a troubleshooting article for ordering issues; such pages map specific portal states or error messages to causes and resolutions. |
 | [Upload, import, view expiry](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-manage-certificates) | security | 0.75 | Describes uploading, importing, exporting, and managing certificate lifecycles; includes product-specific certificate handling and security practices. |
+| [Deploy via config file](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-powershell-based-configuration) | configuration | 0.72 | Page describes using a configuration file and PowerShell to provision and activate Azure Stack Edge devices, which typically includes device-specific configuration parameters and sequences not generally known from training. This aligns with configuration sub-skill as it focuses on structured config-based deployment rather than generic tutorial content. |
+| [0 - Get checklist](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-deploy-checklist) | deployment | 0.70 | A predeployment checklist for a specific hardware appliance typically includes product-specific requirements (power, rack space, network, IP ranges, DNS, certificates, account prerequisites) that are not generally known and are needed before deployment; this is deployment-focused rather than generic tutorial content. |
 | [1905](https://learn.microsoft.com/en-us/azure/databox-gateway/data-box-gateway-1905-release-notes) | troubleshooting | 0.70 | GA release notes with critical issues and fixes; used for diagnosing problems on that release. |
 | [2008](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-2008-release-notes) | troubleshooting | 0.70 | Preview release notes with critical open issues and workarounds; highly specific troubleshooting guidance for preview software. |
 | [2010](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-2010-release-notes) | troubleshooting | 0.70 | GA release notes for Azure Stack Edge Pro with GPU; includes critical open issues and resolved issues for the GA build, used for troubleshooting deployments. |
-| [4 - Configure network](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-pro-2-deploy-configure-network-compute-web-proxy) | configuration | 0.70 | Network and proxy configuration tutorial will include specific setting names, modes, and possibly ranges unique to this device. |
-| [6 - Configure certificates](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-deploy-configure-certificates) | security | 0.70 | Device-specific certificate configuration is security-focused and typically includes concrete certificate types, bindings, and trust requirements that are expert configuration details. |
+| [6 - Configure certificates](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-deploy-configure-certificates) | security | 0.70 | Certificate configuration for this device is a security-focused task and likely includes product-specific certificate types, required key lengths, trust chains, and binding locations; these are detailed security configuration settings unique to the service. |
 | [6 - Configure certificates](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-pro-2-deploy-configure-certificates) | security | 0.70 | Certificate configuration for a specific hardware device typically includes concrete certificate types, usage, and binding/validation details that are product-specific security configuration knowledge. |
 | [Access, power, connectivity](https://learn.microsoft.com/en-us/azure/databox-gateway/data-box-gateway-manage-access-power-connectivity-mode) | configuration | 0.70 | Covers device access and connectivity modes; likely lists specific mode names and settings that are configuration parameters. |
 | [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/databox-online/policy-reference) | security | 0.70 | Lists built-in Azure Policy definitions specific to Azure Stack Edge; these include policy names and effects that define security/compliance configurations. |
@@ -184,7 +213,7 @@ confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure Io
 | [2407](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-2407-release-notes) | troubleshooting | 0.65 | Release notes with critical issues and resolutions; maps known problems to fixes for this version. |
 | [2501](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-2501-release-notes) | troubleshooting | 0.65 | Same pattern: release notes with open issues and workarounds for a specific build, which are expert troubleshooting details. |
 | [2506](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-2506-release-notes) | troubleshooting | 0.65 | Version-specific release notes listing critical issues and resolutions; contains expert, time-sensitive troubleshooting guidance. |
-| [4 - Configure network](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-deploy-configure-network-compute-web-proxy) | configuration | 0.65 | Network and web proxy configuration for a specific device typically includes IP modes, DNS, gateway, VLAN, and proxy parameters, which are concrete configuration settings unique to this product. |
+| [4 - Configure network](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-pro-2-deploy-configure-network-compute-web-proxy) | configuration | 0.65 | Tutorial is specifically about configuring network, compute network, and web proxy settings via the local web UI; such pages typically enumerate concrete setting names, allowed values, and examples (e.g., IP modes, DNS, gateways, proxy parameters), which constitute product-specific configuration knowledge beyond generic networking concepts. |
 | [4 - Configure network](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-pro-r-deploy-configure-network-compute-web-proxy) | configuration | 0.65 | Network and web proxy configuration for a specific appliance typically includes concrete setting names, IP ranges, DNS, gateway, and proxy parameters unique to this product. |
 | [5 - Configure device](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-mini-r-deploy-set-up-device-update-time) | configuration | 0.65 | Covers device name, update server, and time server configuration; these are specific settings and values for this appliance. |
 | [5 - Configure device](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-pro-r-deploy-set-up-device-update-time) | configuration | 0.65 | Covers device name, update server, and time server configuration via local UI; likely includes specific fields and allowed values for this hardware. |
@@ -206,7 +235,7 @@ confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure Io
 | [Understand data residency](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-data-residency) | decision-making | 0.65 | Covers data residency posture and how to enable it; informs decisions about where data is stored and processed with product-specific behavior. |
 | [Understand disconnected use](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-disconnected-scenario) | decision-making | 0.65 | Describes assumptions and available features when offline; provides scenario-specific guidance on what works and what to consider in disconnected mode. |
 | [Via Azure Stack Readiness Checker tool](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-create-certificates-tool) | security | 0.65 | Tool-based certificate creation for this device; includes specific flows and options tailored to Azure Stack Edge certificate needs. |
-| [0 - Get checklist](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-pro-2-deploy-checklist) | configuration | 0.60 | Checklist likely enumerates specific network, identity, and environment details required before deployment; these are product-specific configuration prerequisites. |
+| [3 - Connect](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-deploy-connect) | configuration | 0.60 | Connecting to the local web UI for a specific appliance usually involves device-specific URLs, ports, credentials, and possibly browser/security settings; these are configuration details unique to this product and not generic knowledge. |
 | [Dynamically provisioned stateful app](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-deploy-stateful-application-dynamic-provision-kubernetes) | configuration | 0.60 | Demonstrates using StorageClass for dynamic provisioning; expected to include StorageClass and PVC configuration details specific to Azure Stack Edge CSI/storage behavior. |
 | [Replace device](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-replace-device) | decision-making | 0.60 | Explains process and considerations for device replacement after hardware failure or upgrade; informs operational decisions. |
 | [Return device](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-return-device) | configuration | 0.60 | Covers wiping data, returning hardware, and deleting resources; includes product-specific steps and requirements. |
@@ -227,7 +256,6 @@ confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure Io
 | [Stateless app](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-deploy-stateless-application-kubernetes) | 0.50 | Stateless app deployment with kubectl; primarily a tutorial using standard Kubernetes manifests and commands, not a product-specific configuration reference. |
 | [Update](https://learn.microsoft.com/en-us/azure/databox-gateway/data-box-gateway-apply-updates) | 0.50 | Update installation steps; while it mentions specific version numbers, it’s primarily procedural and release-note-linked rather than configuration or limits reference. |
 | [1 - Order, prepare](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-pro-2-deploy-prep) | 0.45 | Portal preparation tutorial; mostly step-by-step setup rather than a full configuration reference with parameter tables. |
-| [3 - Connect](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-pro-2-deploy-connect) | 0.45 | Tutorial for connecting and activating via local web UI; likely procedural without exhaustive configuration matrices. |
 | [7 - Activate](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-mini-r-deploy-activate) | 0.45 | Activation and encryption tutorial is likely a guided workflow; without explicit indication of detailed parameter tables, it is more procedural than reference. |
 | [Connect to VM console](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-connect-virtual-machine-console) | 0.45 | Connecting to VM console; mostly connection methods and UI steps, with only light troubleshooting hints, not structured error-code mappings. |
 | [Disks](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-manage-virtual-machine-disks-portal) | 0.45 | Managing VM disks via portal; describes add/resize/detach operations but likely as procedural steps, not as a configuration reference with ranges and defaults. |
@@ -241,7 +269,6 @@ confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure Io
 | [VMs - Azure CLI/Python](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-deploy-virtual-machine-cli-python) | 0.45 | CLI/Python-based VM deployment; uses standard ARM APIs, likely a how-to rather than a detailed integration reference with parameter tables. |
 | [VMs - GPU](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-deploy-gpu-virtual-machine) | 0.45 | Deploying GPU VMs and installing GPU extension; mostly deployment steps, not a dedicated configuration reference or troubleshooting guide. |
 | [VMs - HPN](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-deploy-virtual-machine-high-performance-network) | 0.45 | High performance network VM deployment; likely shows how to select HPN options but not detailed limits tables or error mappings. |
-| [0 - Get checklist](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-deploy-checklist) | 0.40 | Predeployment checklist is mostly about gathering information; summary does not indicate detailed numeric limits or configuration parameter tables. |
 | [0 - Get checklist](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-mini-r-deploy-checklist) | 0.40 | Predeployment checklist is procedural and organizational; likely lists items to gather rather than detailed configuration parameters or limits. |
 | [0 - Get checklist](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-pro-r-deploy-checklist) | 0.40 | Predeployment checklist; mainly about gathering information rather than enumerating configuration parameters or limits. |
 | [1 - Order, prepare](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-deploy-prep) | 0.40 | Tutorial to prepare portal and environment; likely step-by-step portal operations without deep configuration matrices or limits. |
@@ -263,7 +290,6 @@ confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure Io
 | [Custom image from Azure VM](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-create-virtual-machine-image) | 0.40 | Step-by-step guide for creating custom VM images; likely mostly procedural without detailed config tables, limits, or product-specific error mappings. |
 | [Generalized image from ISO](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-prepare-windows-generalized-image-iso) | 0.40 | How-to for preparing a generalized Windows image from ISO; mostly imaging workflow, not detailed product-specific configuration or limits. |
 | [Get started](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-quickstart) | 0.40 | Quickstart deployment steps; procedural and high-level, not focused on enumerating configuration options or limits. |
-| [Reset, reactivate device](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-reset-reactivate-device) | 0.40 | Describes how to reset, reconfigure, and reactivate an Azure Stack Edge device. From the summary it looks like a procedural reset/reactivation guide without explicit error codes, configuration parameter matrices, or product-specific limits; more of an operational tutorial than expert configuration, limits, or troubleshooting reference. |
 | [Shares](https://learn.microsoft.com/en-us/azure/databox-gateway/data-box-gateway-manage-shares) | 0.40 | Managing shares via portal; task-focused without indication of full parameter tables or numeric constraints. |
 | [Stateless app](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-deploy-stateless-application-iot-edge-module) | 0.40 | Tutorial-style deployment of a stateless app via IoT Edge module; likely step-by-step without detailed config tables, limits, or product-specific troubleshooting. |
 | [Use metrics charts](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-monitor) | 0.40 | General monitoring how-to (view metrics, events, alerts) via portal and local UI; summary does not indicate detailed config tables, limits, or error mappings. |
@@ -282,21 +308,23 @@ confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure Io
 | [VM activity](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-monitor-virtual-machine-activity) | 0.35 | Viewing VM activity logs; generic Azure activity log usage, not product-specific troubleshooting mappings or configuration tables. |
 | [VM metrics](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-monitor-virtual-machine-metrics) | 0.35 | Monitoring CPU and memory metrics via portal; generic monitoring steps without detailed metric limits or configuration matrices. |
 | [VM sizes](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-manage-virtual-machine-resize-portal) | 0.35 | VM resize via portal; likely a simple how-to for changing sizes, without detailed SKU matrices or thresholds specific enough for decision-making classification. |
+| [0 - Get checklist](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-pro-2-deploy-checklist) | 0.30 | Predeployment checklist appears to be a procedural/step-by-step preparation guide without clear evidence of numeric limits, configuration parameter tables, or product-specific error mappings; likely general deployment prep rather than expert-only configuration or troubleshooting content. |
+| [2 - Install](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-deploy-install) | 0.30 | Tutorial on unpacking, racking, and cabling a device is primarily procedural/step-by-step; from the summary there is no clear indication of product-specific constraints, matrices, or configuration parameters that meet the expert-knowledge criteria. |
 | [2 - Install](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-mini-r-deploy-install) | 0.30 | Physical installation tutorial (cabling, power); procedural without deep configuration or limits. |
-| [2 - Install](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-pro-2-deploy-install) | 0.30 | Physical installation guide (unpack, rack, cable); operational but not configuration/limits/security reference. |
 | [2 - Install](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-pro-r-deploy-install) | 0.30 | Step-by-step physical installation tutorial; likely procedural cabling and power steps without configuration tables, limits, or product-specific diagnostic/security details. |
-| [3 - Connect](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-deploy-connect) | 0.30 | Tutorial to connect to local web UI; procedural connection steps without evidence of detailed configuration parameters or limits. |
 | [3 - Connect](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-mini-r-deploy-connect) | 0.30 | Connection tutorial via local web UI; likely basic steps rather than detailed configuration matrices or troubleshooting mappings. |
+| [3 - Connect](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-pro-2-deploy-connect) | 0.30 | Tutorial on connecting and activating via local web UI sounds like a basic how-to; summary does not indicate detailed configuration option tables, security role mappings, or error-code-based troubleshooting, so it likely lacks the required expert knowledge. |
 | [3 - Connect](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-pro-r-deploy-connect) | 0.30 | Tutorial for connecting via local web UI; primarily walkthrough, not configuration reference, limits, or troubleshooting with error codes. |
 | [Azure Stack Edge Hardware Additional Terms](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-add-hardware-terms) | 0.30 | Documents additional hardware terms; legal/contractual content rather than technical limits, configuration, or troubleshooting details. |
 | [Create order](https://learn.microsoft.com/en-us/azure/azure-edge-hardware-center/azure-edge-hardware-center-create-order) | 0.30 | Step-by-step portal tutorial for creating an order; lacks detailed configuration tables or product-specific edge cases. |
 | [Open Support ticket](https://learn.microsoft.com/en-us/azure/azure-edge-hardware-center/azure-edge-hardware-center-contact-microsoft-support) | 0.30 | Describes how to open a support ticket; process guidance rather than technical troubleshooting or configuration. |
+| [Reset, reactivate device](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-reset-reactivate-device) | 0.30 | Summary indicates a procedural guide for resetting and reactivating an Azure Stack Edge device via UI, without clear evidence of detailed error codes, configuration parameter tables, or other expert-only specifics. It appears to be a standard how-to/reset guide rather than deep troubleshooting or configuration reference. |
 | [Track, cancel, return order](https://learn.microsoft.com/en-us/azure/azure-edge-hardware-center/azure-edge-hardware-center-manage-order) | 0.30 | Covers managing and tracking orders in portal; appears procedural without expert-only configuration or limits. |
 | [View use cases](https://learn.microsoft.com/en-us/azure/databox-gateway/data-box-gateway-use-cases) | 0.30 | Use-case descriptions and scenarios; decision context is high-level without explicit matrices or numeric thresholds. |
 | [What is Azure Stack Edge Pro 2?](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-pro-2-overview) | 0.30 | Overview of Azure Stack Edge Pro 2 benefits and scenarios; lacks detailed configuration or limits in the description. |
 | [What is Kubernetes?](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-kubernetes-overview) | 0.30 | Kubernetes overview on Azure Stack Edge; conceptual description of how Kubernetes is implemented, not detailed configuration or troubleshooting content. |
 | [What is local Azure Resource Manager?](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-local-resource-manager-overview) | 0.30 | Overview of local Azure Resource Manager; conceptual explanation of what it is, not detailed configuration or troubleshooting content. |
-| [2 - Install](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-deploy-install) | 0.20 | Physical unpacking, racking, and cabling instructions; not in scope of the defined technical sub-skill categories. |
+| [2 - Install](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-pro-2-deploy-install) | 0.20 | Tutorial focuses on physical installation (unpack, rack, cable) and mentions approximate time; no indication of configuration parameter tables, limits, or detailed troubleshooting, so it does not meet any expert-knowledge sub-skill criteria. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/azure-edge-hardware-center/azure-edge-hardware-center-faq) | 0.20 | FAQ description suggests general Q&A about using Azure Edge Hardware Center and ordering devices, but doesn't indicate presence of numeric limits, configuration parameter tables, error-code-based troubleshooting, or other detailed expert content. Likely high-level usage and process information rather than the specific technical details required by any sub-skill type. |
 | [FAQ - Billing model](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-faq-billing-model) | 0.20 | FAQ focuses on billing model and pricing concepts for Azure Stack Edge Pro GPU; it does not expose technical limits, configuration parameters, error codes, or other product-specific expert details required by any sub-skill type. |
 | [In English (en-us)](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-pro-2-safety) | 0.20 | General safety instructions and precautions; important but not in scope of the requested technical sub-skill types. |

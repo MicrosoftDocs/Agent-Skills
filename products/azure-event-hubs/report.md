@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 111
+- **Updated Pages**: 0
+- **Unchanged**: 114
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-event-hubs/azure-event-hubs.csv`
 
@@ -75,15 +75,6 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 | *(Unclassified)* | 40 | 35.1% |
 
 ## Changes
-
-### Updated Pages
-
-- [Stream large messages](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-quickstart-stream-large-messages)
-  - Updated: 2025-11-18T18:43:00.000Z → 2026-07-24T22:16:00.000Z
-- [Create a dedicated cluster](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-dedicated-cluster-create-portal)
-  - Updated: 2025-01-13T23:06:00.000Z → 2026-07-24T22:16:00.000Z
-- [Dedicated tier](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-dedicated-overview)
-  - Updated: 2025-07-28T08:00:00.000Z → 2026-07-24T22:16:00.000Z
 
 ## Classified Pages
 

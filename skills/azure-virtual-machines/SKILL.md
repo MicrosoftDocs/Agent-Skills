@@ -1,9 +1,9 @@
 ---
 name: azure-virtual-machines
-description: Expert knowledge for Azure Virtual Machines development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when choosing VM sizes, disks, and images, or running GPU, HPC, Oracle, or AKS/Azure Linux workloads, and other Azure Virtual Machines related development tasks. Not for Azure Virtual Machine Scale Sets (use azure-vm-scalesets), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Data Science Virtual Machines (use azure-data-science-vm), Azure Cloud Services (use azure-cloud-services).
+description: Expert knowledge for Azure Virtual Machines development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing VM fleets, scale sets, HPC/GPU or Oracle workloads, disk encryption, or cross-region migrations, and other Azure Virtual Machines related development tasks. Not for Azure Cloud Services (use azure-cloud-services), Azure Virtual Machine Scale Sets (use azure-vm-scalesets), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Data Science Virtual Machines (use azure-data-science-vm).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-26"
+  generated_at: "2026-08-02"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Virtual Machines Skill
@@ -25,12 +25,12 @@ This skill requires **network access** to fetch documentation content:
 | Category | Location | Description |
 |----------|----------|-------------|
 | Troubleshooting | L37-L67 | Diagnosing and fixing Azure VM issues: kernel/AKS, package updates, hibernation, networking/NSG, encryption (Linux/Windows), extensions, restore points, Trusted Launch, and Image Builder failures. |
-| Best Practices | L68-L104 | Best practices for Azure VM performance, scaling, cost, HA, storage, encryption, Linux/Windows tuning, HPC/InfiniBand, updates, and migration using Azure Linux, disks, and Image Builder. |
-| Decision Making | L105-L179 | Guidance for choosing Azure VM, disk, and image options, planning costs and reservations, and designing or migrating Linux, GPU, HPC, Oracle, and retiring VM workloads. |
-| Architecture & Design Patterns | L180-L196 | Architecting Azure VM solutions: compute fleet patterns, low-latency/NUMA placement, clustered/shared disk designs, and high-availability, DR, and cross-cloud architectures for Oracle and OpenShift. |
-| Limits & Quotas | L197-L402 | VM size specs, disk and storage performance limits, dedicated host packing, quotas, and hardware constraints for Azure VMs, including GPU, HPC, confidential, and previous-gen capacity limits. |
-| Security | L403-L472 | Encrypting and securing Azure VMs and disks (ADE, CMK, SSE, host encryption), managing certs/Key Vault, Trusted Launch/MSP, RBAC/Policy, and secure image/gallery sharing and extensions. |
-| Configuration | [configuration.md](configuration.md) | Configuring Azure VMs and scale sets: disks, networking, images, encryption, maintenance, extensions/agents, HPC/GPU, Oracle workloads, AKS/Azure Linux, VM watch, and restore/backup. |
+| Best Practices | L68-L103 | Best practices for Azure VM performance, scaling, cost, HA, storage, encryption, Linux/Windows tuning, HPC/InfiniBand, updates, and migration using Azure Linux, disks, and Image Builder. |
+| Decision Making | L104-L176 | Guidance for choosing VM/disk/OS options, managing lifecycle, costs, and migrations (sizes, SKUs, OS images, Oracle, AKS, GPU/HPC) and planning retirements, backups, and reservations. |
+| Architecture & Design Patterns | L177-L192 | Architecting Azure VM solutions: compute fleet patterns, low-latency/NUMA placement, clustered/shared disk designs, and high-availability, DR, and cross-cloud architectures for Oracle and OpenShift. |
+| Limits & Quotas | L193-L400 | VM size specs, disk and storage performance limits, quotas, packing/capacity, and hardware characteristics for Azure VM families, including GPU, HPC, confidential, and dedicated host configurations. |
+| Security | L401-L470 | Encrypting and securing Azure VMs and disks (ADE, CMK, SSE, host encryption), managing certs/Key Vault, Trusted Launch/MSP, RBAC/Policy, and secure image/gallery sharing and extensions. |
+| Configuration | [configuration.md](configuration.md) | Configuring Azure VMs and scale sets: disks, networking, images, maintenance, security, extensions/agents, HPC/GPU, Oracle workloads, telemetry, and Linux/Windows guest settings. |
 | Integrations & Coding Patterns | [integrations.md](integrations.md) | Scripts and patterns for automating Azure VM operations: backups, restore points, disk and snapshot management, maintenance events, monitoring, metadata, networking, and Oracle/SQL integrations via CLI, PowerShell, REST. |
 | Deployment | [deployment.md](deployment.md) | Deploying and migrating Azure VMs and disks: image customization, storage/encryption changes, in-place OS upgrades, blue/green and rolling deployments, and cross-region/zone moves. |
 
@@ -68,7 +68,6 @@ This skill requires **network access** to fetch documentation content:
 ### Best Practices
 | Topic | URL |
 |-------|-----|
-| Configure Spot VMs effectively in Azure Compute Fleet | https://learn.microsoft.com/en-us/azure/azure-compute-fleet/spot-vm-configuration |
 | Operate and support Azure Linux distributions | https://learn.microsoft.com/en-us/azure/azure-linux/faq-general |
 | Manage Azure Linux packages and upgrades | https://learn.microsoft.com/en-us/azure/azure-linux/faq-packages |
 | Perform common developer tasks on Azure Linux | https://learn.microsoft.com/en-us/azure/azure-linux/get-started-developer |
@@ -137,8 +136,6 @@ This skill requires **network access** to fetch documentation content:
 | Plan backup and DR for unmanaged Azure VM disks | https://learn.microsoft.com/en-us/azure/virtual-machines/page-blobs-backup-and-disaster-recovery |
 | Decide and purchase Azure Reserved VM Instances | https://learn.microsoft.com/en-us/azure/virtual-machines/prepay-reserved-vm-instances |
 | Choose instance size flexibility for Azure Reserved VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/reserved-vm-instance-size-flexibility |
-| Plan for Azure NV-series GPU VM retirement and migration | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nv-series |
-| Prepare for Azure NVv3 GPU VM retirement and options | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nvv3-series |
 | Select replacements for previous-generation Azure VM series | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/lifecycle/previous-gen-sizes-list |
 | Review retired Azure VM size series and replacements | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/lifecycle/retired-sizes-list |
 | Migrate from Av1 to Av2 Azure VM series before retirement | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/lifecycle/retirement/av1-series-retirement |
@@ -181,7 +178,6 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Choose Azure Compute Fleet allocation strategies | https://learn.microsoft.com/en-us/azure/azure-compute-fleet/allocation-strategies |
-| Apply Launch mode patterns for Azure Compute Fleet | https://learn.microsoft.com/en-us/azure/azure-compute-fleet/launch-mode |
 | Use Managed mode to maintain Azure Compute Fleet capacity | https://learn.microsoft.com/en-us/azure/azure-compute-fleet/managed-mode |
 | Use proximity placement groups to minimize VM latency | https://learn.microsoft.com/en-us/azure/virtual-machines/co-location |
 | Architect clustered workloads with Azure shared disks | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-shared |
@@ -231,102 +227,104 @@ This skill requires **network access** to fetch documentation content:
 | Expand Linux VM OS and data disk sizes in Azure | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/expand-disks |
 | Plan for Azure previous-gen VM capacity limits and migration | https://learn.microsoft.com/en-us/azure/virtual-machines/migration/sizes/previous-gen-series-capacity-limitations |
 | Understand and manage Azure VM vCPU quotas by region | https://learn.microsoft.com/en-us/azure/virtual-machines/quotas |
-| Reference Fadsv7 Azure VM size specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/compute-optimized/fadsv7-series |
-| Reference specs for Azure Faldsv7 compute-optimized VM sizes | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/compute-optimized/faldsv7-series |
-| Reference specs for Azure Falsv6 compute-optimized VM sizes | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/compute-optimized/falsv6-series |
-| Reference specs for Azure Falsv7 compute-optimized VM sizes | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/compute-optimized/falsv7-series |
-| Reference specs for Azure Famdsv7 compute-optimized VM sizes | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/compute-optimized/famdsv7-series |
-| Reference specs for Azure Famsv6 compute-optimized VM sizes | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/compute-optimized/famsv6-series |
-| Reference specs for Azure Famsv7 compute-optimized VM sizes | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/compute-optimized/famsv7-series |
-| Reference specs for Azure Fasv6 compute-optimized VM sizes | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/compute-optimized/fasv6-series |
-| Reference Fasv7 Azure VM size specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/compute-optimized/fasv7-series |
-| Reference Fsv2 Azure VM size specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/compute-optimized/fsv2-series |
-| Reference FX Azure VM size specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/compute-optimized/fx-series |
-| Reference specs for Azure FXmdsv2 memory-intensive VM sizes | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/compute-optimized/fxmdsv2-series |
-| Reference specs for Azure FXmsv2 memory-intensive VM sizes | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/compute-optimized/fxmsv2-series |
-| NMads MA35d video transcoding VM specs and limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/fpga-accelerated/nm-ads-ma35d-series |
+| Reference Fadsv7 VM size specifications and limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/compute-optimized/fadsv7-series |
+| Reference Faldsv7 VM size specifications and limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/compute-optimized/faldsv7-series |
+| Reference Falsv6 VM size specifications and limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/compute-optimized/falsv6-series |
+| Reference Falsv7 VM size specifications and limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/compute-optimized/falsv7-series |
+| Reference Famdsv7 VM size specifications and limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/compute-optimized/famdsv7-series |
+| Reference Famsv6 VM size specifications and limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/compute-optimized/famsv6-series |
+| Reference Famsv7 VM size specifications and limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/compute-optimized/famsv7-series |
+| Reference Fasv6 VM size specifications and limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/compute-optimized/fasv6-series |
+| Reference Fasv7 VM size specifications and limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/compute-optimized/fasv7-series |
+| Reference Fsv2 VM size specifications and limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/compute-optimized/fsv2-series |
+| Reference FX VM size specifications and limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/compute-optimized/fx-series |
+| Reference FXmdsv2 VM size specifications and limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/compute-optimized/fxmdsv2-series |
+| Reference FXmsv2 VM size specifications and limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/compute-optimized/fxmsv2-series |
+| Reference NMads MA35d video transcoding VM specs | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/fpga-accelerated/nm-ads-ma35d-series |
 | Reference NP family FPGA VM sizes and retirement | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/fpga-accelerated/np-family |
-| Review NP-series FPGA VM specifications and limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/fpga-accelerated/np-series |
-| Use Azure Av2 VM sizes and specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/av2-series |
+| Reference NP-series FPGA VM specs and retirement | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/fpga-accelerated/np-series |
+| Reference Av2 VM size specifications and capacities | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/av2-series |
 | Select Azure Basv2 burstable VM sizes | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/basv2-series |
 | Choose Azure Bpsv2 Arm-based VM sizes | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/bpsv2-series |
 | Plan workloads with Azure Bsv2 burstable VM sizes | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/bsv2-series |
-| Reference Bv1-series general purpose VM specs | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/bv1-series |
-| Use Azure Dadsv5 VM sizes with temporary storage | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dadsv5-series |
-| Use Azure Dadsv6 VM sizes with NVMe storage | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dadsv6-series |
-| Use Azure Dadsv7 VM sizes with NVMe storage | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dadsv7-series |
-| Plan workloads on Azure Daldsv6 NVMe VM sizes | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/daldsv6-series |
-| Plan workloads on Azure Daldsv7 NVMe VM sizes | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/daldsv7-series |
+| Reference Bv1 Azure VM size specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/bv1-series |
+| Reference Dadsv5 VM sizes and storage limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dadsv5-series |
+| Use Dadsv6 VM size specs for workload sizing | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dadsv6-series |
+| Use Dadsv7 VM size specs for capacity planning | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dadsv7-series |
+| Plan deployments with Daldsv6 VM size limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/daldsv6-series |
+| Evaluate Daldsv7 VM size resource constraints | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/daldsv7-series |
 | Reference Dalsv6 Azure VM size specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dalsv6-series |
-| Optimize costs with Azure Dalsv7 low-memory VM sizes | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dalsv7-series |
-| Reference specs for Azure Dasv4 VM sizes | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dasv4-series |
-| Reference Dasv5 Azure VM size specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dasv5-series |
+| Plan workloads with Dalsv7 VM size limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dalsv7-series |
+| Reference Dasv4 VM sizes and Premium SSD limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dasv4-series |
+| Reference Dasv5 VM sizes and resource limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dasv5-series |
 | Plan workloads with Azure Dasv6 VM sizes | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dasv6-series |
 | Select Azure Dasv7 general-purpose VM sizes | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dasv7-series |
-| Reference specs for Azure Dav4 VM sizes | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dav4-series |
-| Reference specs for Azure DCads_cc_v5 confidential child-capable VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dcadsccv5-series |
-| Reference specs for Azure DCadsv5 confidential VM sizes | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dcadsv5-series |
-| Reference specs for Azure DCadsv6 confidential VM sizes | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dcadsv6-series |
+| Reference Dav4 VM sizes and capacity limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dav4-series |
+| Reference DCads_cc_v5 parent-child VM size limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dcadsccv5-series |
+| Reference DCadsv5 confidential VM sizes and limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dcadsv5-series |
+| Reference DCadsv6 confidential VM sizes and limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dcadsv6-series |
 | Reference specs for Azure DCas_cc_v5 confidential child-capable VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dcasccv5-series |
 | Reference specs for Azure DCasv5 confidential VM sizes | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dcasv5-series |
 | Reference specs for Azure DCasv6 confidential VM sizes | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dcasv6-series |
-| Reference DCdsv3 Azure VM size specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dcdsv3-series |
+| Reference DCdsv3 confidential VM sizes and limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dcdsv3-series |
 | Reference specs for Azure DCedsv6 confidential VM sizes | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dcedsv6-series |
 | Reference specs for Azure DCesv6 confidential VM sizes | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dcesv6-series |
-| Reference DCsv2 Azure VM size specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dcsv2-series |
+| Reference DCsv2 confidential VM sizes and limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dcsv2-series |
 | Reference DCsv3 Azure VM size specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dcsv3-series |
-| Reference specs for Azure Ddsv4 VM sizes | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/ddsv4-series |
-| Reference Ddsv5 Azure VM size specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/ddsv5-series |
-| Deploy workloads on Azure Ddsv6 VM sizes | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/ddsv6-series |
+| Reference Ddsv4 VM sizes and capacity limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/ddsv4-series |
+| Reference Ddsv5 VM sizes and capacity limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/ddsv5-series |
+| Reference Ddsv6 VM size performance limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/ddsv6-series |
 | Reference Ddsv7 Azure VM size specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/ddsv7-series |
-| Reference specs for Azure Ddv4 VM sizes | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/ddv4-series |
-| Deploy workloads on Azure Ddv5 VM sizes with local disk | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/ddv5-series |
-| Reference specs for Azure Dldsv5 VM sizes | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dldsv5-series |
-| Use Azure Dldsv6 VM sizes with local SSD | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dldsv6-series |
+| Reference Ddv4 VM sizes and capacity limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/ddv4-series |
+| Reference Ddv5 VM sizes and capacity limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/ddv5-series |
+| Reference Dldsv5 VM sizes and SSD limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dldsv5-series |
+| Check Dldsv6 VM size and storage capacities | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dldsv6-series |
 | Reference Dldsv7 Azure VM size specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dldsv7-series |
 | Reference specs for Azure Dlsv5 VM sizes | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dlsv5-series |
 | Choose Azure Dlsv6 low-memory VM sizes | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dlsv6-series |
 | Reference Dlsv7 Azure VM size specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dlsv7-series |
-| Deploy workloads on Azure Dpdsv5 Arm VM sizes | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dpdsv5-series |
-| Deploy workloads on Azure Dpdsv6 Cobalt VM sizes | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dpdsv6-series |
-| Use Azure Dpldsv5 Arm VM sizes with local storage | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dpldsv5-series |
-| Use Azure Dpldsv6 Cobalt VM sizes with local storage | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dpldsv6-series |
+| Reference Dpdsv5 Arm VM sizes and limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dpdsv5-series |
+| Reference Dpdsv6 VM sizes and limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dpdsv6-series |
+| Reference Dpldsv5 Arm VM sizes and limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dpldsv5-series |
+| Reference Dpldsv6 VM sizes and limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dpldsv6-series |
 | Use Azure Dplsv5 low-memory Arm VM sizes | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dplsv5-series |
 | Choose Azure Dplsv6 low-memory Cobalt VM sizes | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dplsv6-series |
 | Choose Azure Dpsv5 Arm-based VM sizes | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dpsv5-series |
 | Use Azure Dpsv6 Cobalt-based VM sizes | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dpsv6-series |
-| Reference Dsv2-series general purpose VM specs | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dsv2-series |
-| Dsv3-series Azure VM size specifications and limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dsv3-series |
+| Reference Dsv2 Azure VM size specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dsv2-series |
+| Reference Dsv3 Azure VM size specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dsv3-series |
 | Reference specs for Azure Dsv4 VM sizes | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dsv4-series |
 | Use Azure Dsv5 VM sizes for general workloads | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dsv5-series |
 | Use Azure Dsv6 VM sizes for general workloads | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dsv6-series |
 | Reference Dsv7 Azure VM size specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dsv7-series |
-| Reference Dv2-series general purpose VM specs | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dv2-series |
-| Reference Dv3-series general purpose VM specs | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dv3-series |
+| Reference Dv2 Azure VM size specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dv2-series |
+| Reference Dv3 Azure VM size specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dv3-series |
 | Reference specs for Azure Dv4 VM sizes | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dv4-series |
 | Reference Dv5 Azure VM size specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dv5-series |
-| Reference specs for NC family GPU-optimized VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nc-family |
-| Reference VM specs for NC RTX PRO 6000 BSE v6 | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nc-rtxpro6000-bse-v6-series |
+| Reference NC family GPU VM sizes | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nc-family |
+| Reference NC RTX PRO 6000 BSE v6 VM specs | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nc-rtxpro6000-bse-v6-series |
 | Reference NC A100 v4 GPU VM size specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nca100v4-series |
-| Review NCads H100 v5 GPU VM size limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/ncadsh100v5-series |
-| Reference NCasT4 v3 GPU VM specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/ncast4v3-series |
+| Reference NCads H100 v5 GPU VM specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/ncadsh100v5-series |
+| Reference NCasT4 v3 GPU VM size specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/ncast4v3-series |
 | Reference NCCads H100 v5 confidential GPU VM specs | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nccadsh100v5-series |
 | Reference specs for ND family GPU-accelerated VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nd-family |
-| Reference ND GB200 v6 Blackwell GPU VM limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nd-gb200-v6-series |
-| Reference ND GB300 v6 GPU VM specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nd-gb300-v6-series |
-| Reference ND H200 v5 Azure GPU VM specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nd-h200-v5-series |
-| Reference retired ND-series GPU VM specs | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nd-series |
-| Reference ND A100 v4 deep learning VM limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/ndasra100v4-series |
-| Reference ND H100 v5 GPU VM size limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/ndh100v5-series |
-| Reference NDm A100 v4 GPU VM specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/ndma100v4-series |
-| Reference ND MI300X v5 Azure GPU VM specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/ndmi300xv5-series |
-| Reference NDv2 GPU VM size specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/ndv2-series |
+| Reference ND GB200 v6 Blackwell GPU VM specs | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nd-gb200-v6-series |
+| Reference ND GB300 v6 rackscale GPU VM specs | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nd-gb300-v6-series |
+| Reference ND H200 v5 GPU VM performance specs | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nd-h200-v5-series |
+| Reference retired ND-series GPU VM specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nd-series |
+| Reference ND A100 v4 GPU VM training specs | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/ndasra100v4-series |
+| Reference ND H100 v5 GPU VM training specs | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/ndh100v5-series |
+| Reference NDm A100 v4 GPU VM training specs | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/ndma100v4-series |
+| Reference ND MI300X v5 AMD GPU VM specs | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/ndmi300xv5-series |
+| Reference NDv2-series GPU VM hardware specs | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/ndv2-series |
 | NG GPU VM family sizes and specs | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/ng-family |
-| NGads V620 GPU VM size specs and limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/ngadsv620-series |
+| Reference NGads V620 gaming GPU VM specs | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/ngadsv620-series |
 | Reference NV-series GPU VM sizes and specs | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nv-family |
-| Select NVadsA10_v5 GPU VM sizes and limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nvadsa10v5-series |
-| Reference NVads V710 v5 Azure GPU VM size limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nvadsv710-v5-series |
-| Select and size Azure NVv4 GPU VM instances | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nvv4-series |
+| Reference NV-series GPU VM specs and retirement | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nv-series |
+| Reference NVadsA10 v5 partial NVIDIA GPU VM specs | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nvadsa10v5-series |
+| Reference NVads V710 v5 partial AMD GPU VM specs | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nvadsv710-v5-series |
+| Reference NVv3 GPU VM graphics specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nvv3-series |
+| Reference NVv4 partial GPU VM specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nvv4-series |
 | HB HPC VM sub-family sizes and specs | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/high-performance-compute/hb-family |
 | Use HBv2-series VM size specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/high-performance-compute/hbv2-series |
 | HBv3 HPC VM size specifications and limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/high-performance-compute/hbv3-series |
@@ -384,13 +382,13 @@ This skill requires **network access** to fetch documentation content:
 | Reference Msv3 High Memory VM size specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/msv3-hm-series |
 | Reference Msv3 MM VM size specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/msv3-mm-series |
 | Reference Mv2 High Memory VM size specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/mv2-series |
-| Reference L-series VM sizes and storage specs | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/storage-optimized/l-family |
-| Reference Laosv4 storage-optimized VM specs | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/storage-optimized/laosv4-series |
-| Reference Lasv3 storage-optimized VM size limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/storage-optimized/lasv3-series |
-| Reference Lasv4 storage-optimized VM specs | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/storage-optimized/lasv4-series |
-| Reference Lsv2 VM size specs and limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/storage-optimized/lsv2-series |
-| Reference Lsv3 storage-optimized VM size limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/storage-optimized/lsv3-series |
-| Reference Lsv4 storage-optimized VM specs | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/storage-optimized/lsv4-series |
+| Reference L family VM sizes and specs | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/storage-optimized/l-family |
+| Use Laosv4 VM sizes and capabilities | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/storage-optimized/laosv4-series |
+| Use Lasv3 VM sizes and capabilities | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/storage-optimized/lasv3-series |
+| Use Lasv4 VM sizes and capabilities | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/storage-optimized/lasv4-series |
+| Reference Lsv2 Azure VM size and storage limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/storage-optimized/lsv2-series |
+| Use Lsv3 VM sizes and capabilities | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/storage-optimized/lsv3-series |
+| Use Lsv4 VM sizes and capabilities | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/storage-optimized/lsv4-series |
 | Use Soft Delete and retention in Compute Gallery | https://learn.microsoft.com/en-us/azure/virtual-machines/soft-delete-gallery |
 | Understand VM states and Azure billing behavior | https://learn.microsoft.com/en-us/azure/virtual-machines/states-billing |
 | Configure Azure VM vCore customization limits | https://learn.microsoft.com/en-us/azure/virtual-machines/vm-customization |

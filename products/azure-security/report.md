@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-26'
+generated_at: '2026-08-02'
 category_descriptions:
   integrations: Guides for generating signed SBOMs for container images and scripting
     Microsoft Antimalware configuration in Azure using PowerShell.
@@ -10,8 +10,8 @@ category_descriptions:
     Pipelines/GitHub Actions, plus comparing security feature availability in Azure
     vs Azure Government.
   security: 'Security best practices for Azure: platform integrity, hardware/firmware,
-    network, data access, AKS, SQL, AI workloads, and Threat Modeling Tool–driven
-    mitigations (auth, crypto, logging, etc.).'
+    network and data access controls, AKS image validation, Threat Modeling mitigations,
+    CMKs, logging, and secure boot/attestation.'
   best-practices: 'End-to-end Azure security guidance: hardening IaaS/PaaS, identity
     and access, network and operational security, backups and ransomware resilience,
     secrets management, and service-specific checklists.'
@@ -20,13 +20,13 @@ category_descriptions:
     Vault, managed keys, BYOK).
 skill_description: Expert knowledge for Azure Security development including best
   practices, decision making, security, configuration, integrations & coding patterns,
-  and deployment. Use when configuring antimalware, container SBOM/signing, CMK encryption,
-  Azure logging/auditing, or Lockbox alerts, and other Azure Security related development
-  tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure Sentinel
-  (use azure-sentinel), Azure DDos Protection (use azure-ddos-protection), Azure Web
-  Application Firewall (use azure-web-application-firewall).
-use_when: Use when configuring antimalware, container SBOM/signing, CMK encryption,
-  Azure logging/auditing, or Lockbox alerts, and other Azure Security related development
+  and deployment. Use when securing AKS images, CMK encryption, Azure Antimalware,
+  container SBOM signing, or Notation pipelines, and other Azure Security related
+  development tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud),
+  Azure Sentinel (use azure-sentinel), Azure DDos Protection (use azure-ddos-protection),
+  Azure Web Application Firewall (use azure-web-application-firewall).
+use_when: Use when securing AKS images, CMK encryption, Azure Antimalware, container
+  SBOM signing, or Notation pipelines, and other Azure Security related development
   tasks.
 confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-cloud),
   Azure Sentinel (use azure-sentinel), Azure DDos Protection (use azure-ddos-protection),
@@ -44,8 +44,8 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 64
-- **Unchanged**: 62
+- **Updated Pages**: 1
+- **Unchanged**: 125
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-security/azure-security.csv`
 
@@ -54,58 +54,19 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | Type | Count | Percentage |
 |------|-------|------------|
 | best-practices | 21 | 16.7% |
-| configuration | 8 | 6.3% |
+| configuration | 7 | 5.6% |
 | decision-making | 2 | 1.6% |
 | deployment | 3 | 2.4% |
 | integrations | 2 | 1.6% |
-| security | 28 | 22.2% |
+| security | 29 | 23.0% |
 | *(Unclassified)* | 62 | 49.2% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Security checklist](https://learn.microsoft.com/en-us/azure/security/fundamentals/operational-checklist)
-  - Updated: 2026-05-05T08:00:00.000Z → 2026-07-21T05:11:00.000Z
-- [Feature availability for US Government clouds](https://learn.microsoft.com/en-us/azure/security/fundamentals/feature-availability)
-  - Updated: 2026-01-09T18:19:00.000Z → 2026-07-24T18:54:00.000Z
-- [Best practices](https://learn.microsoft.com/en-us/azure/security/fundamentals/best-practices-and-patterns)
-  - Updated: 2026-05-05T08:00:00.000Z → 2026-07-24T18:54:00.000Z
-- [Pen testing](https://learn.microsoft.com/en-us/azure/security/fundamentals/pen-testing)
-  - Updated: 2026-05-15T22:17:00.000Z → 2026-07-24T18:54:00.000Z
-- [Azure domains](https://learn.microsoft.com/en-us/azure/security/fundamentals/azure-domains)
-  - Updated: 2026-05-05T08:00:00.000Z → 2026-07-20T08:00:00.000Z
-- [Project Cerberus](https://learn.microsoft.com/en-us/azure/security/fundamentals/project-cerberus)
-  - Updated: 2024-08-29T08:00:00.000Z → 2026-07-21T05:11:00.000Z
-- [Encryption at rest](https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-atrest)
-  - Updated: 2026-07-09T22:04:00.000Z → 2026-07-21T11:41:00.000Z
-- [Isolation in the Azure cloud](https://learn.microsoft.com/en-us/azure/security/fundamentals/isolation-choices)
-  - Updated: 2026-05-05T08:00:00.000Z → 2026-07-21T05:11:00.000Z
-- [Best practices](https://learn.microsoft.com/en-us/azure/security/fundamentals/identity-management-best-practices)
-  - Updated: 2026-07-08T22:31:00.000Z → 2026-07-20T08:00:00.000Z
-- [Security checklist](https://learn.microsoft.com/en-us/azure/security/fundamentals/steps-secure-identity)
-  - Updated: 2026-07-08T22:31:00.000Z → 2026-07-21T08:00:00.000Z
-- [Security overview](https://learn.microsoft.com/en-us/azure/security/fundamentals/network-overview)
-  - Updated: 2026-05-05T08:00:00.000Z → 2026-07-20T08:00:00.000Z
-- [Best practices](https://learn.microsoft.com/en-us/azure/security/fundamentals/network-best-practices)
-  - Updated: 2026-06-03T22:23:00.000Z → 2026-07-20T08:00:00.000Z
-- [Dangling DNS and subdomain takeover](https://learn.microsoft.com/en-us/azure/security/fundamentals/subdomain-takeover)
-  - Updated: 2026-01-12T08:00:00.000Z → 2026-07-24T18:54:00.000Z
-- [Microsoft Antimalware](https://learn.microsoft.com/en-us/azure/security/fundamentals/antimalware)
-  - Updated: 2026-01-12T08:00:00.000Z → 2026-07-24T18:54:00.000Z
-- [Microsoft Antimalware code samples](https://learn.microsoft.com/en-us/azure/security/fundamentals/antimalware-code-samples)
-  - Updated: 2026-03-05T23:11:00.000Z → 2026-07-24T18:54:00.000Z
-- [Virtual machine security overview](https://learn.microsoft.com/en-us/azure/security/fundamentals/virtual-machines-overview)
-  - Updated: 2026-05-05T08:00:00.000Z → 2026-07-21T05:11:00.000Z
-- [Azure Marketplace images](https://learn.microsoft.com/en-us/azure/security/fundamentals/azure-marketplace-images)
-  - Updated: 2025-12-03T08:00:00.000Z → 2026-07-21T05:11:00.000Z
-- [Best practices for protecting secrets](https://learn.microsoft.com/en-us/azure/security/fundamentals/secrets-best-practices)
-  - Updated: 2026-07-09T22:04:00.000Z → 2026-07-21T11:41:00.000Z
-- [Key management in Azure](https://learn.microsoft.com/en-us/azure/security/fundamentals/key-management)
-  - Updated: 2026-07-09T22:04:00.000Z → 2026-07-21T11:41:00.000Z
-- [Choosing a key management solution](https://learn.microsoft.com/en-us/azure/security/fundamentals/key-management-choose)
-  - Updated: 2026-07-09T22:04:00.000Z → 2026-07-21T11:41:00.000Z
-- *...and 44 more*
+- [Services supporting CMKs](https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-customer-managed-keys-support)
+  - Updated: 2026-07-08T08:00:00.000Z → 2026-07-27T08:00:00.000Z
 
 ## Classified Pages
 
@@ -115,6 +76,7 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | [Azure domains](https://learn.microsoft.com/en-us/azure/security/fundamentals/azure-domains) | configuration | 0.80 | Provides a reference list of Azure domains and wildcard subdomains (for example, *.blob.core.windows.net) used for endpoint and firewall planning. These concrete FQDN patterns are configuration-specific expert knowledge, matching configuration. |
 | [Choosing a key management solution](https://learn.microsoft.com/en-us/azure/security/fundamentals/key-management-choose) | decision-making | 0.80 | Explicitly helps choose between Key Vault, Managed HSM, Cloud HSM, and Payment HSM; mentions flowchart and scenario-based selection, implying decision matrices and trade-offs. |
 | [Feature availability for US Government clouds](https://learn.microsoft.com/en-us/azure/security/fundamentals/feature-availability) | decision-making | 0.80 | Contains tables mapping specific security features to availability states (GA, Public Preview, Not Available) across Azure, Azure Government, and Microsoft 365 Government. This is expert, up-to-date guidance for deciding which environments can support required features, matching decision-making. |
+| [Services supporting CMKs](https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-customer-managed-keys-support) | security | 0.78 | Page is a product-specific matrix listing which Azure services support customer-managed keys with Azure Key Vault and Managed HSM. It provides detailed, service-level support information that an LLM wouldn't reliably know from training and is directly tied to security configuration and encryption capabilities. |
 | [Azure App Service for PaaS](https://learn.microsoft.com/en-us/azure/security/fundamentals/paas-applications-using-app-services) | best-practices | 0.75 | Explicitly a set of security best practices for App Service; likely includes concrete configuration steps and patterns specific to this PaaS offering. |
 | [Azure Service Fabric security](https://learn.microsoft.com/en-us/azure/security/fundamentals/service-fabric-best-practices) | best-practices | 0.75 | Best-practices article for Service Fabric security, including certificates, TLS, network isolation, Key Vault, and role assignments; contains product-specific configurations. |
 | [Best practices - IaaS workloads](https://learn.microsoft.com/en-us/azure/security/fundamentals/iaas) | best-practices | 0.75 | Explicitly a security best-practices article for IaaS VMs and OSs, based on consensus and Azure platform capabilities. Likely includes Azure-specific recommendations and patterns beyond generic guidance. |
@@ -163,7 +125,6 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | [Ransomware protection with Azure Firewall Premium](https://learn.microsoft.com/en-us/azure/security/fundamentals/ransomware-protection-with-azure-firewall) | best-practices | 0.65 | Explains how to use Azure Firewall Premium specifically to detect malicious and C2 traffic related to ransomware; includes product-specific guidance and patterns for configuration and use. |
 | [Security checklist](https://learn.microsoft.com/en-us/azure/security/fundamentals/database-security-checklist) | best-practices | 0.65 | Checklist of important security controls for Azure SQL Database and Managed Instance; likely enumerates specific features and configurations to apply. |
 | [Security checklist](https://learn.microsoft.com/en-us/azure/security/fundamentals/steps-secure-identity) | best-practices | 0.65 | Five-step checklist for securing Entra ID with specific actions and configurations; actionable product-specific guidance rather than conceptual overview. |
-| [Services supporting CMKs](https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-customer-managed-keys-support) | configuration | 0.65 | Catalog of services that support CMKs and how they integrate with Key Vault/Managed HSM; typically includes service-specific support details and configuration requirements for server-side encryption. |
 | [Sign an image with Notation using GitHub Actions](https://learn.microsoft.com/en-us/azure/security/container-secure-supply-chain/articles/notation-sign-gha) | deployment | 0.65 | GitHub Actions workflow for signing images; likely includes workflow YAML, action inputs, and registry-related settings that are concrete deployment/integration configuration details. |
 | [Sign and verify a container image with Notation in Azure Pipeline](https://learn.microsoft.com/en-us/azure/security/container-secure-supply-chain/articles/notation-ado-task-sign) | deployment | 0.65 | Shows how to use the Notation Azure DevOps task in pipelines; expected to include task YAML schema, input parameters, and pipeline-specific constraints that are product-specific deployment details. |
 | [Stay up to date with container image dependencies using Dependabot](https://learn.microsoft.com/en-us/azure/security/container-secure-supply-chain/articles/container-secure-supply-chain-implementation/cssc-depenadabot-quickstart) | configuration | 0.65 | Quickstart for configuring Dependabot and Copacetic; likely contains repo-level configuration files, parameter names, and option values specific to these tools in a secure supply chain context. |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-26'
+generated_at: '2026-08-02'
 category_descriptions:
   decision-making: 'Planning and sizing Azure Site Recovery: choosing tools vs Azure
     Migrate, VMware/Hyper-V DR capacity and cost estimation, managed disk pricing,
@@ -77,8 +77,8 @@ confusable_not_for: Not for Azure Backup (use azure-backup), Azure Migrate (use 
 
 ### Updated Pages
 
-- [Deprecation of Site Recovery data encryption](https://learn.microsoft.com/en-us/azure/site-recovery/encryption-feature-deprecation)
-  - Updated: 2026-02-11T12:11:00.000Z → 2026-07-20T22:11:00.000Z
+- [ARM Templates](https://learn.microsoft.com/en-us/azure/site-recovery/asr-arm-templates)
+  - Updated: 2026-02-12T08:00:00.000Z → 2026-07-27T17:13:00.000Z
 
 ## Classified Pages
 
@@ -275,7 +275,7 @@ confusable_not_for: Not for Azure Backup (use azure-backup), Azure Migrate (use 
 | [Run a disaster recovery drill](https://learn.microsoft.com/en-us/azure/site-recovery/tutorial-dr-drill-azure) | 0.25 | DR drill tutorial for on-premises to Azure; minimal-steps walkthrough without detailed config matrices or troubleshooting content. |
 | [Run failback](https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-tutorial-failback) | 0.25 | Failback tutorial with minimal steps; not focused on detailed configuration options or error-resolution mappings. |
 | [Run failover and reprotect](https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-tutorial-failover-failback) | 0.25 | Failover/reprotect tutorial; focuses on basic steps and references other articles for detailed networking/automation/troubleshooting. |
-| [ARM Templates](https://learn.microsoft.com/en-us/azure/site-recovery/asr-arm-templates) | 0.20 | Index of ARM templates; mostly links, not in-page expert configuration or troubleshooting content. |
+| [ARM Templates](https://learn.microsoft.com/en-us/azure/site-recovery/asr-arm-templates) | 0.20 | Page is primarily a link/index table of ARM templates for Azure Site Recovery without detailed configuration parameters, limits, or troubleshooting content; it does not expose specific expert-only numeric limits, settings tables, or error mappings. |
 | [Classic to modernized VMware disaster recovery](https://learn.microsoft.com/en-us/azure/site-recovery/move-from-classic-to-modernized-vmware-disaster-recovery) | 0.20 | Described as architecture, infrastructure, and FAQs for moving from classic to modernized VMware disaster recovery. This is primarily conceptual/architectural migration guidance without clear evidence of numeric limits, detailed config tables, or error-code-based troubleshooting in the provided summary. |
 | [Configure on-premise disks for Azure through Hydration](https://learn.microsoft.com/en-us/azure/site-recovery/hydration-process) | 0.20 | The hydration process article appears to be a procedural/configuration-change overview for preparing VMs before failover, without clear indication of parameter tables, numeric limits, or detailed configuration matrices. It reads more like a conceptual/how-to explanation than a source of specific expert-only limits, quotas, or configuration reference. |
 | [Manage Site Recovery updates](https://learn.microsoft.com/en-us/azure/site-recovery/service-updates-how-to) | 0.20 | Overview of update process and component upgrades; likely procedural without detailed config tables, limits, or troubleshooting mappings. |

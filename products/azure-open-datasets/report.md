@@ -29,9 +29,9 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 37
-- **Deleted Pages**: 4
+- **Updated Pages**: 0
+- **Unchanged**: 40
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-open-datasets/azure-open-datasets.csv`
 
 ## Classification Statistics
@@ -42,22 +42,6 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 | *(Unclassified)* | 39 | 97.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [Datasets in Azure Machine Learning](https://learn.microsoft.com/en-us/azure/open-datasets/how-to-create-azure-machine-learning-dataset-from-open-dataset)
-  - Updated: 2024-08-28T16:59:00.000Z → 2026-07-20T22:09:00.000Z
-- [Dataset catalog](https://learn.microsoft.com/en-us/azure/open-datasets/dataset-catalog)
-  - Updated: 2025-09-12T08:00:00.000Z → 2026-07-20T22:09:00.000Z
-- [COVID-19 data lake](https://learn.microsoft.com/en-us/azure/open-datasets/dataset-covid-19-data-lake)
-  - Updated: 2025-10-28T08:00:00.000Z → 2026-07-20T22:09:00.000Z
-
-### Deleted Pages
-
-- ~~Bing COVID-19 Data~~ (https://learn.microsoft.com/en-us/azure/open-datasets/dataset-bing-covid-19)
-- ~~COVID Tracking Project~~ (https://learn.microsoft.com/en-us/azure/open-datasets/dataset-covid-tracking)
-- ~~ECDC COVID-19 cases~~ (https://learn.microsoft.com/en-us/azure/open-datasets/dataset-ecdc-covid-cases)
-- ~~Oxford COVID-19 Government Response Tracker~~ (https://learn.microsoft.com/en-us/azure/open-datasets/dataset-oxford-covid-government-response-tracker)
 
 ## Classified Pages
 

@@ -1,14 +1,14 @@
 ---
 name: azure-networking
-description: Expert knowledge for Azure Networking development including troubleshooting, decision making, architecture & design patterns, limits & quotas, security, and configuration. Use when designing hub-spoke/VWAN VNets, planning IP ranges, securing with firewalls/NSGs, or using VNet Manager, and other Azure Networking related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use azure-virtual-wan), Azure Network Watcher (use azure-network-watcher).
+description: Expert knowledge for Azure Networking development including troubleshooting, decision making, architecture & design patterns, security, and configuration. Use when designing VNets, hub-spoke/Virtual WAN, Azure Firewall/DDoS, NSG/ASG rules, or private DNS, and other Azure Networking related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use azure-virtual-wan), Azure Network Watcher (use azure-network-watcher).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-26"
+  generated_at: "2026-08-02"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Networking Skill
 
-This skill provides expert guidance for Azure Networking. Covers troubleshooting, decision making, architecture & design patterns, limits & quotas, security, and configuration. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Networking. Covers troubleshooting, decision making, architecture & design patterns, security, and configuration. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -24,12 +24,11 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L34-L38 | Monitoring tools and step-by-step guidance to diagnose, troubleshoot, and resolve issues with Azure virtual networks, connectivity, performance, and other network resources. |
-| Decision Making | L39-L54 | Guidance on choosing Azure network designs and services: load balancing, hybrid/multicloud connectivity, secure topologies, private access, and controlling internet ingress/egress. |
+| Troubleshooting | L33-L37 | Monitoring tools and step-by-step guidance to diagnose, troubleshoot, and resolve issues with Azure virtual networks, connectivity, performance, and other network resources. |
+| Decision Making | L38-L54 | Guidance for choosing Azure networking architectures: load balancing, hybrid/multicloud connectivity, private access, secure topologies, and internet ingress/egress design. |
 | Architecture & Design Patterns | L55-L67 | Designing secure Azure network topologies (hub-spoke, flat, multi-region, Virtual WAN), planning IP ranges/subnets, and applying common workload-specific network patterns. |
-| Limits & Quotas | L68-L72 | Using Azure region round-trip latency stats to compare network performance between regions, plan deployments, and optimize app responsiveness based on measured latency. |
-| Security | L73-L83 | Designing secure Azure networks: firewall and DDoS tiers, VM access, DNS/private name resolution, NSG/ASG rules, WAF protection, and policy-based compliance for network resources. |
-| Configuration | L84-L87 | Configuring and centrally managing multiple VNets using Azure Virtual Network Manager, including network groups, connectivity, security rules, and governance at scale. |
+| Security | L68-L78 | Designing secure Azure networks: firewall and DDoS tiers, VM access, DNS/private name resolution, NSG/ASG rules, WAF protection, and policy-based compliance for network resources. |
+| Configuration | L79-L82 | Configuring and centrally managing multiple VNets using Azure Virtual Network Manager, including network groups, connectivity, security rules, and governance at scale. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -39,6 +38,7 @@ This skill requires **network access** to fetch documentation content:
 ### Decision Making
 | Topic | URL |
 |-------|-----|
+| Use Azure region latency stats for architecture decisions | https://learn.microsoft.com/en-us/azure/networking/azure-network-latency |
 | Choose Azure load balancing and app delivery options | https://learn.microsoft.com/en-us/azure/networking/design-guide/app-delivery |
 | Plan cross-cloud connectivity with Azure networking | https://learn.microsoft.com/en-us/azure/networking/design-guide/cross-cloud |
 | Plan cross-region and multicloud connectivity in Azure | https://learn.microsoft.com/en-us/azure/networking/design-guide/cross-region |
@@ -64,11 +64,6 @@ This skill requires **network access** to fetch documentation content:
 | Architect global transit networks with Azure Virtual WAN | https://learn.microsoft.com/en-us/azure/networking/design-guide/virtual-wan |
 | Design Azure virtual networks and subnet layouts | https://learn.microsoft.com/en-us/azure/networking/design-guide/vnets-subnets |
 | Apply common Azure networking workload patterns | https://learn.microsoft.com/en-us/azure/networking/design-guide/workload-patterns |
-
-### Limits & Quotas
-| Topic | URL |
-|-------|-----|
-| Use Azure region round-trip latency statistics | https://learn.microsoft.com/en-us/azure/networking/azure-network-latency |
 
 ### Security
 | Topic | URL |

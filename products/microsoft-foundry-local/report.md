@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-07-19'
+generated_at: '2026-08-02'
 category_descriptions:
-  configuration: 'Configuring Foundry Local: compiling/optimizing Hugging Face models
-    with Olive, using the CLI to manage local models, and migrating/reconfiguring
-    apps to the new Foundry Local SDK.'
+  configuration: Compiling Hugging Face models with Olive, installing/configuring
+    the Foundry Local CLI, managing local models, and migrating apps to the new Foundry
+    Local SDK.
   integrations: Using Foundry Local APIs/SDKs for chat, embeddings, transcription,
     OpenAI-compatible clients, LangChain apps, tool calling, and REST/SDK reference
     (C#, JS, Python, Rust, legacy).
@@ -11,14 +11,14 @@ category_descriptions:
     workflows, and diagnosing/fixing common CLI issues and misconfigurations.
 skill_description: Expert knowledge for Microsoft Foundry Local (aka Azure AI Foundry
   Local) development including best practices, configuration, and integrations & coding
-  patterns. Use when compiling HF models with Olive, managing local models via CLI,
-  or building chat, embeddings, or transcription apps, and other Microsoft Foundry
-  Local related development tasks. Not for Microsoft Foundry (use microsoft-foundry),
-  Microsoft Foundry Classic (use microsoft-foundry-classic), Microsoft Foundry Tools
-  (use microsoft-foundry-tools), Azure Local (use azure-local).
-use_when: Use when compiling HF models with Olive, managing local models via CLI,
-  or building chat, embeddings, or transcription apps, and other Microsoft Foundry
-  Local related development tasks.
+  patterns. Use when compiling HF models with Olive, using Foundry Local CLI, chat/embeddings
+  APIs, transcription, or tool calling, and other Microsoft Foundry Local related
+  development tasks. Not for Microsoft Foundry (use microsoft-foundry), Microsoft
+  Foundry Classic (use microsoft-foundry-classic), Microsoft Foundry Tools (use microsoft-foundry-tools),
+  Azure Local (use azure-local).
+use_when: Use when compiling HF models with Olive, using Foundry Local CLI, chat/embeddings
+  APIs, transcription, or tool calling, and other Microsoft Foundry Local related
+  development tasks.
 confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft Foundry
   Classic (use microsoft-foundry-classic), Microsoft Foundry Tools (use microsoft-foundry-tools),
   Azure Local (use azure-local).
@@ -35,8 +35,8 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 23
+- **Updated Pages**: 1
+- **Unchanged**: 22
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/microsoft-foundry-local/microsoft-foundry-local.csv`
 
@@ -51,15 +51,20 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 
 ## Changes
 
+### Updated Pages
+
+- [CLI (preview) guide](https://learn.microsoft.com/en-us/azure/foundry-local/reference/reference-cli)
+  - Updated: 2026-06-15T08:00:00.000Z → 2026-07-30T22:16:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
 | [CLI (preview) best practice and troubleshooting](https://learn.microsoft.com/en-us/azure/foundry-local/reference/reference-best-practice) | best-practices | 0.80 | Explicitly described as listing best practices and troubleshooting tips for Foundry Local CLI; such content usually includes concrete DOs/DON’Ts, product-specific gotchas, and error-to-solution mappings that qualify as expert best-practices knowledge. |
-| [CLI (preview) guide](https://learn.microsoft.com/en-us/azure/foundry-local/reference/reference-cli) | configuration | 0.80 | Comprehensive CLI reference; expected to contain command/option tables and defaults, which are configuration parameters unique to this product. |
 | [CLI REST (preview) API](https://learn.microsoft.com/en-us/azure/foundry-local/reference/reference-rest) | integrations | 0.80 | REST API reference; will list endpoints, request/response schemas, and parameters specific to Foundry Local, matching integrations criteria. |
 | [SDK guide](https://learn.microsoft.com/en-us/azure/foundry-local/reference/reference-sdk-current) | integrations | 0.80 | SDK reference; expected to list classes, methods, and parameters unique to Foundry Local, matching integrations & coding patterns. |
 | [Use chat completions via REST server](https://learn.microsoft.com/en-us/azure/foundry-local/how-to/how-to-integrate-with-inference-sdks) | integrations | 0.80 | Explicitly about integrating with OpenAI-compatible SDKs and HTTP clients; likely includes endpoint formats and config parameters unique to Foundry Local’s local REST server. |
+| [CLI (preview) guide](https://learn.microsoft.com/en-us/azure/foundry-local/reference/reference-cli) | configuration | 0.78 | A full CLI reference typically lists product-specific commands, flags, and parameters with exact names, defaults, and allowed values. This is expert, implementation-level knowledge not reliably known from training and aligns best with the configuration sub-skill, as it documents concrete configuration options and usage patterns for the Foundry Local CLI. |
 | [Legacy SDK](https://learn.microsoft.com/en-us/azure/foundry-local/reference/reference-sdk-legacy) | integrations | 0.75 | Reference for older SDK versions; contains product-specific API signatures and behaviors, still an integrations-style reference. |
 | [Compile Hugging Face models to run on Foundry Local](https://learn.microsoft.com/en-us/azure/foundry-local/how-to/how-to-compile-hugging-face-models) | configuration | 0.70 | Covers Olive CLI and optimization settings for converting models; likely includes command-line flags and configuration options specific to Foundry Local model compilation. |
 | [Guidance for migrating from the legacy SDK](https://learn.microsoft.com/en-us/azure/foundry-local/reference/reference-sdk-migration) | configuration | 0.70 | Migration guide between legacy and current Foundry Local SDK versions typically includes product-specific API and configuration changes (parameter names, defaults, and behavior differences) that an LLM is unlikely to infer; this aligns best with configuration-focused expert knowledge. |

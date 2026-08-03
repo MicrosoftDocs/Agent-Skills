@@ -1,9 +1,9 @@
 ---
 name: azure-managed-lustre
-description: Expert knowledge for Azure Managed Lustre development including troubleshooting, best practices, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when deploying AML with Blob sync, AKS CSI, Terraform, quotas, or Azure Monitor metrics/alerts, and other Azure Managed Lustre related development tasks. Not for Azure HPC Cache (use azure-hpc-cache), Azure NetApp Files (use azure-netapp-files), Azure Virtual Machines (use azure-virtual-machines).
+description: Expert knowledge for Azure Managed Lustre development including troubleshooting, best practices, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when deploying AML with AKS/Linux, Blob import/export, AzCopy POSIX migration, quotas, or Azure Monitor alerts, and other Azure Managed Lustre related development tasks. Not for Azure HPC Cache (use azure-hpc-cache), Azure NetApp Files (use azure-netapp-files), Azure Virtual Machines (use azure-virtual-machines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-19"
+  generated_at: "2026-08-02"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Managed Lustre Skill
@@ -28,9 +28,9 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L41-L46 | Guidance on tuning Azure Managed Lustre performance via optimal file/directory layout, client striping, and network setup (NICs, throughput, latency, and scaling). |
 | Architecture & Design Patterns | L47-L52 | Designing resilient Azure Managed Lustre deployments, including regional redundancy/failover strategies and tiered checkpoint architectures for performance and data protection. |
 | Limits & Quotas | L53-L57 | Configuring and managing user, group, and project storage quotas in Azure Managed Lustre, including setup steps, commands, and best practices for capacity control. |
-| Security | L58-L67 | Securing Azure Managed Lustre: secure boot, firewalls/NSGs, CMK encryption, root squash access controls, and virtual network encryption configuration and validation. |
+| Security | L58-L67 | Securing Azure Managed Lustre: secure boot, firewalls/NSGs, CMK-based encryption, root squash access controls, and virtual network encryption configuration and validation. |
 | Configuration | L68-L76 | Configuring AML file systems: network/storage prerequisites, auto-mount via fstab, ARM/Bicep deployment, and setting up monitoring, metrics, and alerts with Azure Monitor. |
-| Integrations & Coding Patterns | L77-L88 | Integrating Azure Managed Lustre with Blob Storage, Linux/AKS clients, Terraform, and AzCopy, including import/export pipelines, auto-sync, and CSI driver-based Kubernetes usage. |
+| Integrations & Coding Patterns | L77-L88 | Patterns for connecting AML to Linux, AKS, and Terraform, plus configuring Blob import/export, auto-sync, and POSIX data migration via AzCopy. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -60,7 +60,7 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Configure Secure Boot for Azure Managed Lustre clients | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/client-secure-boot |
 | Use Azure Firewall with Azure Managed Lustre in hub-spoke networks | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/configure-firewall |
-| Configure NSG rules to secure Azure Managed Lustre access | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/configure-network-security-group |
+| Configure NSG rules for Azure Managed Lustre | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/configure-network-security-group |
 | Use customer-managed keys to encrypt Azure Managed Lustre data | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/customer-managed-encryption-keys |
 | Configure root squash security settings for Azure Managed Lustre | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/root-squash-configure-settings |
 | Enable and validate virtual network encryption for Azure Managed Lustre | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/vnet-encryption |
@@ -79,7 +79,7 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Set up Azure Managed Lustre auto-export to Blob Storage | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/auto-export |
 | Configure Azure Managed Lustre auto-import from Blob Storage | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/auto-import |
-| Integrate Azure Blob Storage with Azure Managed Lustre | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/blob-integration |
+| Integrate Azure Blob Storage with Managed Lustre | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/blob-integration |
 | Connect Linux clients to Azure Managed Lustre | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/connect-clients |
 | Provision Azure Managed Lustre with Terraform configuration | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/create-aml-file-system-terraform |
 | Create Azure Blob import jobs for Azure Managed Lustre | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/create-import-job |

@@ -1,9 +1,9 @@
 ---
 name: azure-security
-description: Expert knowledge for Azure Security development including best practices, decision making, security, configuration, integrations & coding patterns, and deployment. Use when configuring antimalware, container SBOM/signing, CMK encryption, Azure logging/auditing, or Lockbox alerts, and other Azure Security related development tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure Sentinel (use azure-sentinel), Azure DDos Protection (use azure-ddos-protection), Azure Web Application Firewall (use azure-web-application-firewall).
+description: Expert knowledge for Azure Security development including best practices, decision making, security, configuration, integrations & coding patterns, and deployment. Use when securing AKS images, CMK encryption, Azure Antimalware, container SBOM signing, or Notation pipelines, and other Azure Security related development tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure Sentinel (use azure-sentinel), Azure DDos Protection (use azure-ddos-protection), Azure Web Application Firewall (use azure-web-application-firewall).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-26"
+  generated_at: "2026-08-02"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Security Skill
@@ -26,8 +26,8 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Best Practices | L34-L58 | End-to-end Azure security guidance: hardening IaaS/PaaS, identity and access, network and operational security, backups and ransomware resilience, secrets management, and service-specific checklists. |
 | Decision Making | L59-L64 | Guidance on choosing Azure security options, including comparing security features in US Gov clouds and selecting appropriate key management (Key Vault, managed keys, BYOK). |
-| Security | L65-L96 | Security best practices for Azure: platform integrity, hardware/firmware, network, data access, AKS, SQL, AI workloads, and Threat Modeling Tool–driven mitigations (auth, crypto, logging, etc.). |
-| Configuration | L97-L108 | Configuring Azure security features: antimalware, container scanning (Dependabot/Copacetic), firewall rules, CMK encryption, logging/auditing, TLS changes, ransomware protections, and Customer Lockbox alerts. |
+| Security | L65-L97 | Security best practices for Azure: platform integrity, hardware/firmware, network and data access controls, AKS image validation, Threat Modeling mitigations, CMKs, logging, and secure boot/attestation. |
+| Configuration | L98-L108 | Configuring Azure security features: antimalware, container scanning (Dependabot/Copacetic), firewall rules, CMK encryption, logging/auditing, TLS changes, ransomware protections, and Customer Lockbox alerts. |
 | Integrations & Coding Patterns | L109-L114 | Guides for generating signed SBOMs for container images and scripting Microsoft Antimalware configuration in Azure using PowerShell. |
 | Deployment | L115-L120 | Guides for signing and verifying container images with Notation in Azure Pipelines/GitHub Actions, plus comparing security feature availability in Azure vs Azure Government. |
 
@@ -81,6 +81,7 @@ This skill requires **network access** to fetch documentation content:
 | Enforce platform code integrity in Azure production | https://learn.microsoft.com/en-us/azure/security/fundamentals/code-integrity |
 | Understand and configure Azure Customer Lockbox access | https://learn.microsoft.com/en-us/azure/security/fundamentals/customer-lockbox-faq |
 | Control Microsoft engineer data access with Customer Lockbox | https://learn.microsoft.com/en-us/azure/security/fundamentals/customer-lockbox-overview |
+| Identify Azure services supporting customer-managed keys | https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-customer-managed-keys-support |
 | Secure Azure hardware, firmware, and supply chain | https://learn.microsoft.com/en-us/azure/security/fundamentals/firmware |
 | Maintain Azure infrastructure integrity and security controls | https://learn.microsoft.com/en-us/azure/security/fundamentals/infrastructure-integrity |
 | Monitor Azure infrastructure for security and vulnerabilities | https://learn.microsoft.com/en-us/azure/security/fundamentals/infrastructure-monitoring |
@@ -101,7 +102,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure Microsoft Antimalware for Azure workloads | https://learn.microsoft.com/en-us/azure/security/fundamentals/antimalware |
 | Plan firewall rules using Azure domain patterns | https://learn.microsoft.com/en-us/azure/security/fundamentals/azure-domains |
 | Configure alternate email notifications for Customer Lockbox | https://learn.microsoft.com/en-us/azure/security/fundamentals/customer-lockbox-alternative-email |
-| Configure Azure services to use customer-managed keys | https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-customer-managed-keys-support |
 | Configure Azure security logging and auditing | https://learn.microsoft.com/en-us/azure/security/fundamentals/log-audit |
 | Adapt to Azure managed TLS feature changes | https://learn.microsoft.com/en-us/azure/security/fundamentals/managed-tls-changes |
 | Configure Azure-native features for ransomware protection | https://learn.microsoft.com/en-us/azure/security/fundamentals/ransomware-features-resources |

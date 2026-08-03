@@ -1,9 +1,9 @@
 ---
 name: azure-logic-apps
-description: Expert knowledge for Azure Logic Apps development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when integrating enterprise systems, tuning connector limits, configuring triggers, securing endpoints, or deploying CI/CD workflows, and other Azure Logic Apps related development tasks. Not for Azure Functions (use azure-functions), Azure Data Factory (use azure-data-factory), Azure Event Grid (use azure-event-grid), Azure Service Bus (use azure-service-bus).
+description: Expert knowledge for Azure Logic Apps development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building Logic Apps with SAP/B2B connectors, custom connectors, code-first workflows, DR patterns, or CI/CD deployments, and other Azure Logic Apps related development tasks. Not for Azure Functions (use azure-functions), Azure App Service (use azure-app-service), Azure Service Bus (use azure-service-bus), Azure Event Grid (use azure-event-grid).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-26"
+  generated_at: "2026-08-02"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Logic Apps Skill
@@ -31,8 +31,8 @@ This skill requires **network access** to fetch documentation content:
 | Limits & Quotas | L86-L94 | Limits, quotas, and tuning for Logic Apps: JS inline code limits, SQL result/timeouts, connector pagination, large-message chunking, config limits, and metering/billing behavior. |
 | Security | L95-L111 | Securing Logic Apps: identities, Entra/OAuth auth, Easy Auth for agents, private endpoints/storage, certificates, and Azure Policy/Defender controls for access, data, and connector usage. |
 | Configuration | L112-L149 | Configuring Logic Apps behavior: workflow JSON, triggers, loops/branches, B2B/integration accounts, monitoring/logging, on-prem connectivity, storage, redundancy, and telemetry. |
-| Integrations & Coding Patterns | L150-L256 | Patterns and SDKs for integrating Logic Apps with Azure/IBM/SAP/HL7 systems, AI/OpenAI, storage, B2B/EDI, custom connectors, inline code, and automated workflow testing. |
-| Deployment | L257-L278 | Deploying Logic Apps (Standard & Consumption) with ARM/Bicep/DevOps, migrating/ cloning workflows, hybrid setups, deployment slots, and CI/CD via VS Code, DevOps, and Deployment Center. |
+| Integrations & Coding Patterns | L150-L257 | Patterns and SDKs for integrating Logic Apps with Azure/OpenAI, SAP, IBM, storage, messaging, B2B (EDI/AS2), XML/JSON transforms, and building/testing code-first workflows and custom connectors. |
+| Deployment | L258-L279 | Deploying Logic Apps (Standard & Consumption) with ARM/Bicep/DevOps, migrating/ cloning workflows, hybrid setups, deployment slots, and CI/CD via VS Code, DevOps, and Deployment Center. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -150,6 +150,7 @@ This skill requires **network access** to fetch documentation content:
 ### Integrations & Coding Patterns
 | Topic | URL |
 |-------|-----|
+| Integrate Foundry classic agents with Logic Apps workflows | https://learn.microsoft.com/en-us/azure/logic-apps/add-agent-action-create-run-workflow |
 | Add Logic Apps connector tools to Foundry agents | https://learn.microsoft.com/en-us/azure/logic-apps/add-agent-tools-connector-actions |
 | Run inline C# scripts in Logic Apps Standard workflows | https://learn.microsoft.com/en-us/azure/logic-apps/add-run-csharp-scripts |
 | Call Azure Functions from Azure Logic Apps workflows | https://learn.microsoft.com/en-us/azure/logic-apps/call-azure-functions-from-workflows |

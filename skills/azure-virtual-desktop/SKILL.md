@@ -1,9 +1,9 @@
 ---
 name: azure-virtual-desktop
-description: Expert knowledge for Azure Virtual Desktop development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing AVD host pools, FSLogix profiles, autoscale, WebRTC/Teams optimization, or secure SSO/MFA, and other Azure Virtual Desktop related development tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Dev Box (use azure-dev-box), Azure Lab Services (use azure-lab-services), Azure VMware Solution (use azure-vmware-solution).
+description: Expert knowledge for Azure Virtual Desktop development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing AVD host pools, autoscale, FSLogix profiles, MSIX App Attach, or Teams multimedia redirection, and other Azure Virtual Desktop related development tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Dev Box (use azure-dev-box), Azure VMware Solution (use azure-vmware-solution).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-19"
+  generated_at: "2026-08-02"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Virtual Desktop Skill
@@ -24,13 +24,13 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L53 | Diagnosing and fixing AVD issues: agent updates, autoscale, connectivity/FQDN, connection quality logs, graphics/Teams performance, session host health, hybrid onboarding, and Log Analytics queries. |
+| Troubleshooting | L37-L53 | Diagnosing and fixing AVD issues: agent updates, autoscale, connectivity, session host health, graphics/Teams performance, MSIX App Attach, and using logs/Insights for troubleshooting. |
 | Best Practices | L54-L64 | Best practices for autoscaling, host pool validation, proxy usage, Start VM on Connect, Windows multi-session configuration, and resolving Azure Advisor/FAQ guidance for Azure Virtual Desktop. |
-| Decision Making | L65-L80 | Guidance on planning and choosing AVD deployment models, autoscale, host pool and session host management, storage, data locations, licensing, costs, ESU, and extended/local zones. |
-| Architecture & Design Patterns | L81-L88 | Design patterns for AVD app delivery, stateless hosts, DR, FSLogix profile containers, and automated scaling with Automation/Logic Apps. |
-| Limits & Quotas | L89-L94 | Guidance on RDP bandwidth requirements and optimizing Microsoft Teams (audio/video, collaboration features) performance and configuration in Azure Virtual Desktop. |
-| Security | L95-L115 | Securing Azure Virtual Desktop: SSO (Entra ID/AD FS), MFA/Conditional Access, RBAC, external identities, managed identities, redirection controls, watermarking, screen capture protection, and Purview forensic setup. |
-| Configuration | L116-L175 | Configuring AVD host pools, images, autoscale, networking, RDP/RemoteApp features, redirection, Teams/Office, licensing, monitoring, and client settings for optimized deployments. |
+| Decision Making | L65-L79 | Guidance on planning and choosing AVD deployment models, autoscale, host pool and session host management, storage, data locations, licensing, costs, ESU, and extended/local zones. |
+| Architecture & Design Patterns | L80-L87 | Design patterns for AVD app delivery, stateless hosts, DR, FSLogix profile containers, and automated scaling with Automation/Logic Apps. |
+| Limits & Quotas | L88-L93 | Guidance on RDP bandwidth requirements and optimizing Microsoft Teams (audio/video, collaboration features) performance and configuration in Azure Virtual Desktop. |
+| Security | L94-L115 | Security and access control for AVD: SSO (Entra ID/AD FS), Conditional Access/MFA, RBAC, external identities, session protections (clipboard, redirection, watermarking, screen capture), and Purview evidence. |
+| Configuration | L116-L175 | Configuring AVD environments: images, autoscale, networking, RDP/peripheral redirection, Teams/Office, licensing, monitoring, and client/host settings for performance and user experience. |
 | Integrations & Coding Patterns | L176-L182 | Managing AVD via CLI/PowerShell, integrating partner App Attach delivery, enabling WebRTC multimedia redirection, and launching resources using custom URI schemes. |
 | Deployment | L183-L192 | Guides for deploying and migrating AVD: adding session hosts, moving from classic, hybrid/on-prem setups, regional host pools, region moves, and client/MMR deployment via Intune/ConfigMgr. |
 
@@ -76,7 +76,6 @@ This skill requires **network access** to fetch documentation content:
 | Choose Azure Virtual Desktop deployment models | https://learn.microsoft.com/en-us/azure/virtual-desktop/organization-internal-external-commercial-purposes-recommendations |
 | Choose Azure storage options for FSLogix profiles on AVD | https://learn.microsoft.com/en-us/azure/virtual-desktop/store-fslogix-profile |
 | Estimate and plan Azure Virtual Desktop costs | https://learn.microsoft.com/en-us/azure/virtual-desktop/understand-estimate-costs |
-| Plan Windows 10 ESU for Azure Virtual Desktop deployments | https://learn.microsoft.com/en-us/azure/virtual-desktop/understanding-extended-security-updates |
 
 ### Architecture & Design Patterns
 | Topic | URL |
@@ -110,7 +109,8 @@ This skill requires **network access** to fetch documentation content:
 | Configure screen capture protection for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/screen-capture-protection |
 | Apply security recommendations to Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/security-recommendations |
 | Assign RBAC and Entra roles to AVD service principals | https://learn.microsoft.com/en-us/azure/virtual-desktop/service-principal-assign-roles |
-| Enforce MFA for Azure Virtual Desktop with Conditional Access | https://learn.microsoft.com/en-us/azure/virtual-desktop/set-up-mfa |
+| Configure Conditional Access MFA for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/set-up-mfa |
+| Manage Windows 10 ESU for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/understanding-extended-security-updates |
 | Configure watermarking to protect Azure Virtual Desktop sessions | https://learn.microsoft.com/en-us/azure/virtual-desktop/watermarking |
 
 ### Configuration
@@ -161,7 +161,7 @@ This skill requires **network access** to fetch documentation content:
 | Use advanced features of the Windows Remote Desktop client for AVD | https://learn.microsoft.com/en-us/azure/virtual-desktop/remote-desktop-client/client-features-windows-msrdc |
 | Connect to Azure Virtual Desktop using the Windows Remote Desktop client | https://learn.microsoft.com/en-us/azure/virtual-desktop/remote-desktop-client/connect-windows-cloud-services |
 | Enable enhanced RemoteApp windowing in Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/remoteapp-enhancements |
-| Allow required FQDNs and endpoints for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/required-fqdn-endpoint |
+| Configure required FQDNs and endpoints for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/required-fqdn-endpoint |
 | Configure scheduled agent updates for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/scheduled-agent-updates |
 | Configure session host update for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/session-host-update-configure |
 | Set preferred application group type on AVD host pools | https://learn.microsoft.com/en-us/azure/virtual-desktop/set-preferred-application-group-type |

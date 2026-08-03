@@ -1,9 +1,9 @@
 ---
 name: azure-analysis-services
-description: Expert knowledge for Azure Analysis Services development including troubleshooting. Use when configuring firewalls/VNets, gateways, DNS, or client connections to Azure Analysis Services, and other Azure Analysis Services related development tasks. Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines).
+description: Expert knowledge for Azure Analysis Services development including troubleshooting. Use when resolving server connectivity, firewall/VNet, DNS, client connection, or network error issues, and other Azure Analysis Services related development tasks. Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-28"
+  generated_at: "2026-08-02"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Analysis Services Skill
@@ -24,7 +24,7 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L29-L32 | Diagnosing and fixing Azure Analysis Services connectivity issues, including firewall/VNet settings, gateway configuration, DNS, and common client connection failures. |
+| Troubleshooting | L29-L32 | Diagnosing and fixing Azure Analysis Services connectivity issues, including firewall/VNet settings, DNS, client connections, and common network-related errors. |
 
 ### Troubleshooting
 | Topic | URL |

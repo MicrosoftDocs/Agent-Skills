@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-19'
+generated_at: '2026-08-02'
 category_descriptions:
   limits-quotas: 'NAT Gateway limits, quotas, and behaviors: SNAT port allocation,
     connection scaling, IP/VM limits, per-subscription caps, and FAQs on throughput
@@ -15,9 +15,8 @@ category_descriptions:
     high-throughput egress traffic.
   best-practices: Guidance on reducing SNAT port exhaustion and optimizing outbound
     connectivity patterns when using Azure NAT Gateway.
-  decision-making: Guidance on when to use NAT Gateway Standard vs StandardV2, how
-    to migrate between SKUs, and how to move existing outbound access patterns to
-    NAT Gateway.
+  decision-making: Guidance on choosing NAT Gateway Standard vs StandardV2 SKUs and
+    step-by-step migration of existing outbound access and gateways to StandardV2.
   deployment: Guides for redeploying NAT Gateway after cross-region moves and migrating
     VM outbound traffic from public IPs to use NAT Gateway
   security: 'Security best practices for NAT Gateway: hardening design, minimizing
@@ -25,17 +24,17 @@ category_descriptions:
     firewalls, and other Azure security controls.'
 skill_description: Expert knowledge for Azure NAT Gateway development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
-  security, configuration, and deployment. Use when managing SNAT ports, flow logs,
-  outbound IPs, NAT Gateway V2 deployments, or Azure Firewall egress patterns, and
-  other Azure NAT Gateway related development tasks. Not for Azure Virtual Network
-  (use azure-virtual-network), Azure Load Balancer (use azure-load-balancer), Azure
-  Firewall (use azure-firewall), Azure Virtual WAN (use azure-virtual-wan).
-use_when: Use when managing SNAT ports, flow logs, outbound IPs, NAT Gateway V2 deployments,
-  or Azure Firewall egress patterns, and other Azure NAT Gateway related development
+  security, configuration, and deployment. Use when managing SNAT ports, outbound
+  IPs, flow logs/metrics, Standard vs StandardV2, or Azure Firewall egress, and other
+  Azure NAT Gateway related development tasks. Not for Azure Virtual Network (use
+  azure-virtual-network), Azure Load Balancer (use azure-load-balancer), Azure Virtual
+  WAN (use azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway).
+use_when: Use when managing SNAT ports, outbound IPs, flow logs/metrics, Standard
+  vs StandardV2, or Azure Firewall egress, and other Azure NAT Gateway related development
   tasks.
 confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), Azure
-  Load Balancer (use azure-load-balancer), Azure Firewall (use azure-firewall), Azure
-  Virtual WAN (use azure-virtual-wan).
+  Load Balancer (use azure-load-balancer), Azure Virtual WAN (use azure-virtual-wan),
+  Azure VPN Gateway (use azure-vpn-gateway).
 ---
 # Azure NAT Gateway Crawl Report
 
@@ -49,8 +48,8 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 25
+- **Updated Pages**: 4
+- **Unchanged**: 21
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-nat-gateway/azure-nat-gateway.csv`
 
@@ -70,17 +69,28 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ## Changes
 
+### Updated Pages
+
+- [What is Azure NAT Gateway?](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-overview)
+  - Updated: 2026-05-15T08:00:00.000Z → 2026-07-29T08:00:00.000Z
+- [NAT gateway resource](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-resource)
+  - Updated: 2026-06-23T05:11:00.000Z → 2026-07-28T17:15:00.000Z
+- [Azure NAT Gateway SKUs](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-sku)
+  - Updated: 2026-05-16T05:17:00.000Z → 2026-07-29T08:00:00.000Z
+- [Migrate Azure NAT Gateway to Standard V2](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-v2-migrate)
+  - Updated: 2026-05-16T05:17:00.000Z → 2026-07-29T08:00:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
 | [Monitoring data reference](https://learn.microsoft.com/en-us/azure/nat-gateway/monitor-nat-gateway-reference) | configuration | 0.78 | Monitoring reference pages for Azure services typically list all available metrics, dimensions, log categories, and schema fields with exact names, units, and sometimes default behaviors. This is product-specific configuration/telemetry knowledge that LLMs are unlikely to fully know from training. The content is not about limits or troubleshooting, but about detailed monitoring data definitions, which aligns best with configuration (specific parameter/field names and allowed values). |
 | [Secure NAT Gateway deployment](https://learn.microsoft.com/en-us/azure/nat-gateway/secure-nat-gateway) | security | 0.78 | The article focuses on securing Azure NAT Gateway and provides product-specific security recommendations and best practices (for example, how to structure outbound connectivity, combine with other Azure network security services, and configure NAT Gateway securely). It includes concrete, service-specific guidance rather than just conceptual security overviews, fitting the 'security' sub-skill type. |
+| [Migrate Azure NAT Gateway to Standard V2](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-v2-migrate) | decision-making | 0.75 | Provides migration guidance and recommendations on when and how to move from Standard to StandardV2, including constraints like lack of in-place migration and production resiliency considerations; this is product-specific decision and migration guidance. |
 | [NAT gateway design guidance](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-design) | architecture-patterns | 0.72 | The page provides product-specific design considerations for Azure NAT Gateway in virtual networks, including when to use particular patterns (for example, per-subnet vs shared gateways, outbound connectivity strategies, and multi-region designs). It goes beyond conceptual overview and gives concrete guidance on choosing patterns and configurations unique to NAT Gateway, but does not primarily focus on numeric limits/quotas or troubleshooting. |
-| [Azure NAT Gateway SKUs](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-sku) | decision-making | 0.70 | SKU comparison article that explains differences between Standard and StandardV2. Likely includes comparison tables and concrete criteria (data processing, availability, capabilities) to help select a SKU, which fits decision-making guidance. |
+| [Azure NAT Gateway SKUs](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-sku) | decision-making | 0.70 | SKU comparison content typically includes decision criteria and differences (e.g., capabilities, performance, cost) to help select between Standard and StandardV2; this is product-specific decision guidance beyond generic knowledge. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/nat-gateway/faq) | limits-quotas | 0.70 | NAT Gateway FAQs typically include concrete numeric details such as SNAT port counts, connection limits, and other behavioral constraints. These are specific limits/quotas and behaviors that qualify as expert knowledge beyond conceptual overview. |
 | [Manage a Standard NAT gateway](https://learn.microsoft.com/en-us/azure/nat-gateway/manage-nat-gateway) | configuration | 0.70 | Explains how to create/remove NAT gateway, associate subnets, and manage public IPs/prefixes; contains concrete configuration operations and parameters. |
-| [Migrate Azure NAT Gateway to Standard V2](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-v2-migrate) | decision-making | 0.70 | Provides migration guidance and recommendations on when and how to move from Standard to StandardV2, including production vs non-production considerations and lack of in-place upgrade. This is SKU/approach selection and migration decision guidance. |
 | [Monitor Standard V2 NAT gateway flow logs](https://learn.microsoft.com/en-us/azure/nat-gateway/monitor-nat-gateway-flow-logs) | troubleshooting | 0.70 | Shows how to use flow logs for monitoring and troubleshooting traffic; includes product-specific log categories and analysis patterns for diagnosing issues. |
 | [SNAT with NAT gateway](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-snat) | best-practices | 0.70 | Discusses SNAT options and considerations, likely including port allocation behavior and guidance on efficient outbound connection design; product-specific best practices and gotchas. |
 | [Use a NAT gateway with Azure Firewall](https://learn.microsoft.com/en-us/azure/nat-gateway/tutorial-hub-spoke-nat-firewall) | architecture-patterns | 0.70 | Describes integration of NAT Gateway with Azure Firewall in hub-spoke; includes specific SNAT port counts and IP limits, making it an architecture pattern with numeric thresholds. |
@@ -95,12 +105,12 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
+| [NAT gateway resource](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-resource) | 0.40 | Describes key components of a NAT gateway resource and how to configure via portal/CLI/PowerShell; summary does not indicate detailed configuration tables, limits, or troubleshooting content. |
 | [Integrate a NAT gateway internal load balancer](https://learn.microsoft.com/en-us/azure/nat-gateway/tutorial-nat-gateway-load-balancer-internal-portal) | 0.30 | Tutorial for integrating NAT gateway with an internal load balancer; summary indicates procedural guidance, not expert-level configuration matrices, limits, or troubleshooting. |
 | [Integrate a NAT gateway public load balancer](https://learn.microsoft.com/en-us/azure/nat-gateway/tutorial-nat-gateway-load-balancer-public-portal) | 0.30 | Tutorial for integrating NAT gateway with a public load balancer; focuses on how-to steps rather than detailed configuration option tables, limits, or error-resolution content. |
 | [Use a NAT gateway with a hub-and-spoke network](https://learn.microsoft.com/en-us/azure/nat-gateway/tutorial-hub-spoke-route-nat) | 0.30 | Tutorial on using NAT gateway in a hub-and-spoke network; primarily architectural walkthrough and steps, without explicit numeric thresholds, configuration tables, or troubleshooting mappings. |
+| [What is Azure NAT Gateway?](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-overview) | 0.30 | High-level overview of Azure NAT Gateway features and behavior; no clear evidence of numeric limits, configuration tables, error codes, or other product-specific expert details. |
 | [Create and validate a Standard NAT gateway](https://learn.microsoft.com/en-us/azure/nat-gateway/quickstart-create-nat-gateway) | 0.20 | Quickstart showing how to create a Standard NAT gateway via portal/CLI/PowerShell; primarily step-by-step instructions without detailed configuration parameter tables or product-specific limits. |
 | [Create and validate a Standard V2 NAT gateway](https://learn.microsoft.com/en-us/azure/nat-gateway/quickstart-create-nat-gateway-v2) | 0.20 | Quickstart for creating a StandardV2 NAT gateway; focuses on creation steps rather than detailed limits, configuration matrices, or troubleshooting content. |
 | [Manage a Standard V2 NAT gateway](https://learn.microsoft.com/en-us/azure/nat-gateway/manage-nat-gateway-v2) | 0.20 | Page is a how-to guide for creating/removing and associating a NAT Gateway v2 with subnets and IPs. From the description it appears procedural without detailed configuration parameter tables, limits, quotas, or product-specific troubleshooting/error-code mappings. It reads as standard tutorial content rather than expert reference material. |
-| [NAT gateway resource](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-resource) | 0.20 | The description indicates a conceptual explanation of NAT gateway components and configuration via various clients, but does not clearly indicate the presence of numeric limits, configuration parameter tables, error codes, or other detailed expert-only data. It appears to be a general resource overview rather than a limits, configuration, troubleshooting, or decision-making reference. |
-| [What is Azure NAT Gateway?](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-overview) | 0.20 | High-level overview of Azure NAT Gateway features and behavior without detailed numeric limits, configuration tables, or error mappings. Primarily conceptual and architectural description. |
 | [Support and troubleshooting](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-support-help) | - | Support/help options page that points to where to get assistance. Contains no technical configuration details, limits, error codes, or decision matrices. |

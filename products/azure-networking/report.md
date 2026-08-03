@@ -1,15 +1,12 @@
 ---
-generated_at: '2026-07-26'
+generated_at: '2026-08-02'
 category_descriptions:
-  limits-quotas: Using Azure region round-trip latency stats to compare network performance
-    between regions, plan deployments, and optimize app responsiveness based on measured
-    latency.
+  decision-making: 'Guidance for choosing Azure networking architectures: load balancing,
+    hybrid/multicloud connectivity, private access, secure topologies, and internet
+    ingress/egress design.'
   architecture-patterns: Designing secure Azure network topologies (hub-spoke, flat,
     multi-region, Virtual WAN), planning IP ranges/subnets, and applying common workload-specific
     network patterns.
-  decision-making: 'Guidance on choosing Azure network designs and services: load
-    balancing, hybrid/multicloud connectivity, secure topologies, private access,
-    and controlling internet ingress/egress.'
   security: 'Designing secure Azure networks: firewall and DDoS tiers, VM access,
     DNS/private name resolution, NSG/ASG rules, WAF protection, and policy-based compliance
     for network resources.'
@@ -20,15 +17,14 @@ category_descriptions:
     and resolve issues with Azure virtual networks, connectivity, performance, and
     other network resources.
 skill_description: Expert knowledge for Azure Networking development including troubleshooting,
-  decision making, architecture & design patterns, limits & quotas, security, and
-  configuration. Use when designing hub-spoke/VWAN VNets, planning IP ranges, securing
-  with firewalls/NSGs, or using VNet Manager, and other Azure Networking related development
-  tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual
-  Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use azure-virtual-wan),
-  Azure Network Watcher (use azure-network-watcher).
-use_when: Use when designing hub-spoke/VWAN VNets, planning IP ranges, securing with
-  firewalls/NSGs, or using VNet Manager, and other Azure Networking related development
-  tasks.
+  decision making, architecture & design patterns, security, and configuration. Use
+  when designing VNets, hub-spoke/Virtual WAN, Azure Firewall/DDoS, NSG/ASG rules,
+  or private DNS, and other Azure Networking related development tasks. Not for Azure
+  Virtual Network (use azure-virtual-network), Azure Virtual Network Manager (use
+  azure-virtual-network-manager), Azure Virtual WAN (use azure-virtual-wan), Azure
+  Network Watcher (use azure-network-watcher).
+use_when: Use when designing VNets, hub-spoke/Virtual WAN, Azure Firewall/DDoS, NSG/ASG
+  rules, or private DNS, and other Azure Networking related development tasks.
 confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), Azure
   Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use
   azure-virtual-wan), Azure Network Watcher (use azure-network-watcher).
@@ -44,10 +40,10 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 - **Unclassified**: 12
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 0
-- **Unchanged**: 42
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 2
+- **Unchanged**: 41
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-networking/azure-networking.csv`
 
 ## Classification Statistics
@@ -56,27 +52,24 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 |------|-------|------------|
 | architecture-patterns | 9 | 20.9% |
 | configuration | 1 | 2.3% |
-| decision-making | 12 | 27.9% |
-| limits-quotas | 1 | 2.3% |
+| decision-making | 13 | 30.2% |
 | security | 7 | 16.3% |
 | troubleshooting | 1 | 2.3% |
 | *(Unclassified)* | 12 | 27.9% |
 
 ## Changes
 
-### New Pages
+### Updated Pages
 
-- [Network monitoring and management overview](https://learn.microsoft.com/en-us/azure/networking/monitoring-management/network-monitoring-management-overview)
-
-### Deleted Pages
-
-- ~~Network monitoring and management overview~~ (https://learn.microsoft.com/en-us/azure/networking/monitoring-management/)
+- [Azure Networking overview](https://learn.microsoft.com/en-us/azure/networking/networking-overview)
+  - Updated: 2026-04-22T19:06:00.000Z → 2026-07-27T22:17:00.000Z
+- [Azure network latency](https://learn.microsoft.com/en-us/azure/networking/azure-network-latency)
+  - Updated: 2026-07-02T17:11:00.000Z → 2026-07-30T22:15:00.000Z
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
-| [Azure network latency](https://learn.microsoft.com/en-us/azure/networking/azure-network-latency) | limits-quotas | 0.85 | Provides measured round-trip latency values between specific Azure regions, which are numeric performance constraints useful for architecture and capacity decisions. |
 | [Application delivery](https://learn.microsoft.com/en-us/azure/networking/design-guide/app-delivery) | decision-making | 0.80 | Provides comparison and guidance on when to use Load Balancer, Application Gateway, and Front Door, including when to combine them for specific traffic patterns. |
 | [Azure Firewall](https://learn.microsoft.com/en-us/azure/networking/design-guide/azure-firewall) | security | 0.80 | Explains Azure Firewall capabilities and compares Basic, Standard, and Premium tiers with product-specific security and inspection features. |
 | [DNS and private name resolution](https://learn.microsoft.com/en-us/azure/networking/design-guide/dns-security) | security | 0.80 | Provides Azure-specific DNS patterns using private DNS zones, DNS Private Resolver, hybrid forwarding, Private Endpoint integration, and DNS-layer threat protection. |
@@ -93,6 +86,7 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Cross-region and cross-cloud](https://learn.microsoft.com/en-us/azure/networking/design-guide/cross-region) | decision-making | 0.75 | Compares Global VNet Peering, Virtual WAN, ExpressRoute Global Reach, and cross-cloud VPN options to guide connectivity choices across regions and clouds. |
 | [DDoS protection](https://learn.microsoft.com/en-us/azure/networking/design-guide/ddos) | security | 0.75 | Compares infrastructure protection, DDoS Network Protection, and DDoS IP Protection with tier-specific capabilities for defending workloads. |
 | [Developer and admin access](https://learn.microsoft.com/en-us/azure/networking/design-guide/developer-admin-access) | security | 0.75 | Compares Azure Bastion, Point-to-Site VPN, and Just-in-Time access for SSH/RDP, providing product-specific secure access patterns. |
+| [Azure network latency](https://learn.microsoft.com/en-us/azure/networking/azure-network-latency) | decision-making | 0.70 | Provides concrete, measured round-trip latency statistics between specific Azure regions, used to optimize architecture and deployment choices. These quantified performance metrics are not generally known from training data and directly support region/tier selection and placement decisions. |
 | [Centralized network management](https://learn.microsoft.com/en-us/azure/networking/design-guide/azure-virtual-network-manager) | configuration | 0.70 | Describes Azure Virtual Network Manager constructs (network groups, connectivity, security admin rules, IPAM) and centralized configuration patterns across subscriptions. |
 | [Common workload patterns](https://learn.microsoft.com/en-us/azure/networking/design-guide/workload-patterns) | architecture-patterns | 0.70 | Describes specific workload-based network patterns and when to use each, mapping workloads to design-guide articles; pattern selection is product-specific. |
 | [Multi-region networking](https://learn.microsoft.com/en-us/azure/networking/design-guide/multi-region) | architecture-patterns | 0.70 | Provides Azure-specific patterns (hub-per-region, Virtual WAN multi-hub) for high availability, latency, and data residency across regions. |
@@ -114,7 +108,7 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 |-----------|------------|--------|
 | [Azure Resource Graph queries](https://learn.microsoft.com/en-us/azure/networking/resource-graph-samples) | 0.40 | Collection of sample Azure Resource Graph queries; code examples but not configuration tables, limits, or troubleshooting mappings as defined by the sub-skill types. |
 | [Working remotely](https://learn.microsoft.com/en-us/azure/networking/working-remotely-support) | 0.30 | Scenario guidance for enabling remote work; likely contains options and considerations but no clear evidence of numeric limits, config tables, or error mappings in the summary. |
-| [Azure Networking overview](https://learn.microsoft.com/en-us/azure/networking/networking-overview) | 0.10 | High-level overview of Azure networking services without specific limits, configs, error codes, or decision matrices. |
+| [Azure Networking overview](https://learn.microsoft.com/en-us/azure/networking/networking-overview) | 0.10 | High-level overview of Azure networking categories and services without specific limits, configuration parameters, error codes, or decision matrices. |
 | [Azure for network engineers](https://learn.microsoft.com/en-us/azure/networking/azure-for-network-engineers) | 0.10 | Conceptual explanation of how networking in Azure differs from traditional networking; no concrete configs, limits, or troubleshooting content. |
 | [Hybrid connectivity overview](https://learn.microsoft.com/en-us/azure/networking/hybrid-connectivity/hybrid-connectivity) | 0.10 | Conceptual overview of hybrid connectivity options (VPN, ExpressRoute, Virtual WAN) without detailed limits, configs, or decision tables. |
 | [Load balancing and content delivery overview](https://learn.microsoft.com/en-us/azure/networking/load-balancer-content-delivery/load-balancing-content-delivery-overview) | 0.10 | Explains what load balancing and content delivery are and lists services; lacks numeric limits, config parameters, or decision matrices. |

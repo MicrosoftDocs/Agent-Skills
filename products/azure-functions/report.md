@@ -54,10 +54,10 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Log
 - **Unclassified**: 55
 
 ### Incremental Update
-- **New Pages**: 12
-- **Updated Pages**: 32
-- **Unchanged**: 251
-- **Deleted Pages**: 6
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 295
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-functions/azure-functions.csv`
 
 ## Classification Statistics
@@ -76,74 +76,6 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Log
 | *(Unclassified)* | 55 | 18.6% |
 
 ## Changes
-
-### New Pages
-
-- [Developer reference guide](https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-node)
-- [Build options](https://learn.microsoft.com/en-us/azure/azure-functions/typescript-build-options)
-- [Scale and performance recommendations](https://learn.microsoft.com/en-us/azure/azure-functions/node-scale-performance)
-- [Troubleshooting](https://learn.microsoft.com/en-us/azure/azure-functions/functions-node-troubleshoot)
-- [HTTP streams (TypeScript/JavaScript)](https://learn.microsoft.com/en-us/azure/azure-functions/node-http-stream)
-- [Package management](https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-node)
-- [Managing dependencies](https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-node)
-- [Process file uploads](https://learn.microsoft.com/en-us/azure/azure-functions/scenario-blob-storage-events)
-- [Build a serverless workflow](https://learn.microsoft.com/en-us/azure/azure-functions/scenario-build-serverless-workflow)
-- [Develop Python functions with VS Code](https://learn.microsoft.com/en-us/azure/azure-functions/how-to-create-function-vs-code?pivots=programming-language-python)
-- [Reference](https://learn.microsoft.com/en-us/azure/azure-functions/functions-serverless-agents-runtime-reference)
-- [Compare agent options](https://learn.microsoft.com/en-us/azure/azure-functions/compare-serverless-agents-runtime)
-
-### Updated Pages
-
-- [Access Azure SQL with managed identity](https://learn.microsoft.com/en-us/azure/azure-functions/functions-identity-access-azure-sql-with-managed-identity)
-  - Updated: 2026-05-06T06:11:00.000Z → 2026-07-23T11:40:00.000Z
-- [Manage connections](https://learn.microsoft.com/en-us/azure/azure-functions/manage-connections)
-  - Updated: 2021-11-18T12:09:00.000Z → 2026-07-21T05:11:00.000Z
-- [Developer guide](https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference)
-  - Updated: 2025-12-04T06:11:00.000Z → 2026-07-21T05:11:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/azure-functions/functions-serverless-agents-runtime)
-  - Updated: 2026-06-02T22:37:00.000Z → 2026-07-23T11:40:00.000Z
-- [Serverless agents](https://learn.microsoft.com/en-us/azure/azure-functions/scenario-serverless-agents-runtime)
-  - Updated: 2026-06-02T22:37:00.000Z → 2026-07-21T08:00:00.000Z
-- [Trigger](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-storage-queue-trigger)
-  - Updated: 2024-01-30T23:07:00.000Z → 2026-07-21T05:11:00.000Z
-- [Output](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-storage-queue-output)
-  - Updated: 2024-08-15T05:40:00.000Z → 2026-07-21T05:11:00.000Z
-- [Output](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-service-bus-output)
-  - Updated: 2025-09-15T22:11:00.000Z → 2026-06-15T11:43:00.000Z
-- [Trigger](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-signalr-service-trigger)
-  - Updated: 2024-04-02T17:05:00.000Z → 2026-07-21T05:11:00.000Z
-- [Input](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-signalr-service-input)
-  - Updated: 2025-02-05T23:02:00.000Z → 2026-07-21T05:11:00.000Z
-- [Output](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-signalr-service-output)
-  - Updated: 2025-02-05T23:02:00.000Z → 2026-07-21T05:11:00.000Z
-- [Input](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-storage-table-input)
-  - Updated: 2023-09-21T11:22:00.000Z → 2026-07-21T05:11:00.000Z
-- [Output](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-storage-table-output)
-  - Updated: 2025-06-22T05:19:00.000Z → 2026-07-21T05:11:00.000Z
-- [Store output](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-openai-embeddingsstore-output)
-  - Updated: 2025-05-19T17:08:00.000Z → 2026-07-21T05:11:00.000Z
-- [Semantic search input](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-openai-semanticsearch-input)
-  - Updated: 2025-05-19T17:08:00.000Z → 2026-07-21T05:11:00.000Z
-- [Text Completion input](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-openai-textcompletion-input)
-  - Updated: 2025-05-19T17:08:00.000Z → 2026-07-21T05:11:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-azure-sql)
-  - Updated: 2025-09-03T22:18:00.000Z → 2026-07-21T05:11:00.000Z
-- [Trigger](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-azure-sql-trigger)
-  - Updated: 2026-05-01T08:00:00.000Z → 2026-07-21T05:11:00.000Z
-- [Input](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-azure-sql-input)
-  - Updated: 2025-06-22T05:19:00.000Z → 2026-07-21T05:11:00.000Z
-- [Output](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-azure-sql-output)
-  - Updated: 2025-06-22T05:19:00.000Z → 2026-07-21T05:11:00.000Z
-- *...and 12 more*
-
-### Deleted Pages
-
-- ~~Choose a file access strategy~~ (https://learn.microsoft.com/en-us/azure/azure-functions/concept-file-access-options)
-- ~~Use identity for host connections~~ (https://learn.microsoft.com/en-us/azure/azure-functions/functions-identity-based-connections-tutorial)
-- ~~Use identity for triggers and bindings~~ (https://learn.microsoft.com/en-us/azure/azure-functions/functions-identity-based-connections-tutorial-2)
-- ~~Node.js~~ (https://learn.microsoft.com/en-us/azure/azure-functions/functions-node-troubleshoot)
-- ~~JavaScript~~ (https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-node)
-- ~~Respond to blob storage events~~ (https://learn.microsoft.com/en-us/azure/azure-functions/scenario-blob-storage-events)
 
 ## Classified Pages
 

@@ -1,8 +1,10 @@
 ---
-generated_at: '2026-06-28'
+generated_at: '2026-08-02'
 category_descriptions:
   security: Configuring API authorization schemes for APIs in API Center and managing
     who can access the API Center portal via the VS Code extension
+  configuration: 'Configuring API Center instances: deployment via ARM/Bicep/CLI,
+    setting up backup/restore, and defining/customizing governance metadata schemas.'
   deployment: Automating API linting and registration to Azure API Center (e.g., via
     GitHub Actions) and instructions for self-hosting the Azure API Center portal.
   best-practices: 'Best practices for API governance in API Center: using managed
@@ -10,33 +12,30 @@ category_descriptions:
   integrations: Patterns and scripts for syncing APIs between API Center and platforms
     like API Management, Amazon API Gateway, and Copilot Studio, plus automation via
     Azure CLI and Logic Apps/Teams
-  configuration: 'Configuring and deploying Azure API Center: setup via ARM/Bicep/CLI,
-    portal customization, API linting/analysis, metadata schemas, MCP/A2A agent setup,
-    and inventory management.'
 skill_description: Expert knowledge for Azure Api Center development including best
   practices, security, configuration, integrations & coding patterns, and deployment.
-  Use when automating API linting/registration, syncing with API gateways, customizing
-  the portal, or managing API inventory, and other Azure Api Center related development
-  tasks. Not for Azure API Management (use azure-api-management), Azure App Service
-  (use azure-app-service), Azure Functions (use azure-functions).
-use_when: Use when automating API linting/registration, syncing with API gateways,
-  customizing the portal, or managing API inventory, and other Azure Api Center related
+  Use when automating API linting/registration, ARM/Bicep deployment, backup/restore,
+  portal access control, or API platform sync, and other Azure Api Center related
+  development tasks. Not for Azure API Management (use azure-api-management), Azure
+  Resource Manager (use azure-resource-manager), Azure Portal (use azure-portal).
+use_when: Use when automating API linting/registration, ARM/Bicep deployment, backup/restore,
+  portal access control, or API platform sync, and other Azure Api Center related
   development tasks.
 confusable_not_for: Not for Azure API Management (use azure-api-management), Azure
-  App Service (use azure-app-service), Azure Functions (use azure-functions).
+  Resource Manager (use azure-resource-manager), Azure Portal (use azure-portal).
 ---
 # Azure Api Center Crawl Report
 
 ## Summary
 
-- **Total Pages**: 38
-- **Fetched**: 38
+- **Total Pages**: 39
+- **Fetched**: 39
 - **Fetch Failed**: 0
-- **Classified**: 14
+- **Classified**: 15
 - **Unclassified**: 24
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
 - **Unchanged**: 38
 - **Deleted Pages**: 0
@@ -46,14 +45,18 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| best-practices | 2 | 5.3% |
-| configuration | 5 | 13.2% |
-| deployment | 2 | 5.3% |
-| integrations | 3 | 7.9% |
-| security | 2 | 5.3% |
-| *(Unclassified)* | 24 | 63.2% |
+| best-practices | 2 | 5.1% |
+| configuration | 6 | 15.4% |
+| deployment | 2 | 5.1% |
+| integrations | 3 | 7.7% |
+| security | 2 | 5.1% |
+| *(Unclassified)* | 24 | 61.5% |
 
 ## Changes
+
+### New Pages
+
+- [Backup and restore](https://learn.microsoft.com/en-us/azure/api-center/backup-restore)
 
 ## Classified Pages
 
@@ -65,6 +68,7 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 | [Enable API Center portal view - VS Code extension](https://learn.microsoft.com/en-us/azure/api-center/enable-api-center-portal-vs-code-extension) | security | 0.70 | Uses Entra ID and RBAC to manage portal view access; includes role and permission configuration specific to this extension. |
 | [Import APIs from API Management](https://learn.microsoft.com/en-us/azure/api-center/import-api-management-apis) | integrations | 0.70 | Shows CLI-based integration between API Management and API Center, including specific commands, parameters, and options. |
 | [Use metadata for governance](https://learn.microsoft.com/en-us/azure/api-center/metadata) | configuration | 0.70 | Goes beyond concepts to describe built-in vs custom metadata, schema structure, and how to enforce consistency—product-specific configuration behavior. |
+| [Backup and restore](https://learn.microsoft.com/en-us/azure/api-center/backup-restore) | configuration | 0.68 | The page describes product-specific backup and restore commands (apiops apic), including required parameters and how to restore to different instances/regions/tenants. These are concrete configuration operations and CLI flags unique to Azure API Center, which qualify as expert configuration knowledge rather than generic backup concepts. |
 | [1 - Define custom metadata](https://learn.microsoft.com/en-us/azure/api-center/tutorials/add-metadata-properties) | configuration | 0.65 | Describes concrete metadata properties, types, and how to configure them for governance; product-specific configuration behavior. |
 | [API analysis - Microsoft managed](https://learn.microsoft.com/en-us/azure/api-center/enable-managed-api-analysis-linting) | best-practices | 0.65 | Describes Microsoft-managed linting and analysis for API definitions, including how to enable/disable built-in vs self-managed linting via a custom Azure Function. This is product-specific guidance on using a particular analysis mechanism and switching modes, which qualifies as best-practices-level operational detail rather than generic concepts, even though no numeric limits are mentioned. |
 | [API analysis - self-managed](https://learn.microsoft.com/en-us/azure/api-center/enable-api-analysis-linting) | deployment | 0.65 | Describes automated deployment of a linting engine and event subscription using Azure Developer CLI, which is product-specific deployment guidance beyond generic tutorials. While the summary is brief, it indicates concrete deployment procedures and configuration for the linting engine and triggers. |

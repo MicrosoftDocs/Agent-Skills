@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-26'
+generated_at: '2026-08-02'
 category_descriptions:
   architecture-patterns: 'Designing Service Fabric cluster architecture: cross-AZ
     replica rings, CRP/CRM internals, service affinity, movement cost, defragmentation,
@@ -7,9 +7,9 @@ category_descriptions:
   configuration: 'Configuring and operating Service Fabric clusters and apps: networking,
     scaling, backup/restore, manifests, actors, containers, monitoring/telemetry,
     resource governance, and test/fault tools.'
-  decision-making: 'Guidance on planning and sizing Service Fabric clusters: choosing
-    OS, versions, disk types, stateless node types, capacity/durability, and migration
-    targets for Cloud Services workloads.'
+  decision-making: 'Guidance for planning and sizing Service Fabric clusters: OS/disk
+    choices, stateless node types, capacity/durability/reliability planning, version
+    selection, and migration targets.'
   best-practices: Best practices for designing, deploying, upgrading, testing, monitoring,
     and operating Azure Service Fabric apps and clusters, including Reliable Collections/Actors,
     backup/restore, networking, capacity, and DR.
@@ -31,17 +31,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Service Fabric development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when designing Service Fabric clusters, Reliable Services/Actors, backup/restore,
-  reverse proxy, or sfctl/PowerShell automation, and other Azure Service Fabric related
-  development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
-  Azure Container Apps (use azure-container-apps), Azure Cloud Services (use azure-cloud-services),
-  Azure Virtual Machines (use azure-virtual-machines).
-use_when: Use when designing Service Fabric clusters, Reliable Services/Actors, backup/restore,
-  reverse proxy, or sfctl/PowerShell automation, and other Azure Service Fabric related
+  Use when designing Service Fabric clusters, Reliable Services/Actors, reverse proxy/API
+  gateways, backup/restore, or CI/CD, and other Azure Service Fabric related development
+  tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure
+  Container Apps (use azure-container-apps), Azure App Service (use azure-app-service),
+  Azure Cloud Services (use azure-cloud-services).
+use_when: Use when designing Service Fabric clusters, Reliable Services/Actors, reverse
+  proxy/API gateways, backup/restore, or CI/CD, and other Azure Service Fabric related
   development tasks.
 confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
-  Azure Container Apps (use azure-container-apps), Azure Cloud Services (use azure-cloud-services),
-  Azure Virtual Machines (use azure-virtual-machines).
+  Azure Container Apps (use azure-container-apps), Azure App Service (use azure-app-service),
+  Azure Cloud Services (use azure-cloud-services).
 ---
 # Azure Service Fabric Crawl Report
 
@@ -50,13 +50,13 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 - **Total Pages**: 405
 - **Fetched**: 405
 - **Fetch Failed**: 0
-- **Classified**: 329
-- **Unclassified**: 76
+- **Classified**: 330
+- **Unclassified**: 75
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 402
+- **Updated Pages**: 1
+- **Unchanged**: 404
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-fabric/azure-service-fabric.csv`
 
@@ -67,24 +67,20 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | architecture-patterns | 10 | 2.5% |
 | best-practices | 31 | 7.7% |
 | configuration | 116 | 28.6% |
-| decision-making | 7 | 1.7% |
+| decision-making | 8 | 2.0% |
 | deployment | 59 | 14.6% |
 | integrations | 33 | 8.1% |
 | limits-quotas | 1 | 0.2% |
 | security | 53 | 13.1% |
 | troubleshooting | 19 | 4.7% |
-| *(Unclassified)* | 76 | 18.8% |
+| *(Unclassified)* | 75 | 18.5% |
 
 ## Changes
 
 ### Updated Pages
 
-- [What's new for Service Fabric?](https://learn.microsoft.com/en-us/azure/service-fabric/whats-new)
-  - Updated: 2026-06-18T08:00:00.000Z → 2026-07-21T08:00:00.000Z
-- [Release notes](https://learn.microsoft.com/en-us/azure/service-fabric/release-notes)
-  - Updated: 2026-03-20T08:00:00.000Z → 2026-07-21T08:00:00.000Z
 - [Service Fabric versions](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-versions)
-  - Updated: 2026-07-02T08:00:00.000Z → 2026-07-21T08:00:00.000Z
+  - Updated: 2026-07-21T08:00:00.000Z → 2026-07-26T11:03:00.000Z
 
 ## Classified Pages
 
@@ -337,6 +333,7 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Service Fabric cluster with ARM template](https://learn.microsoft.com/en-us/azure/service-fabric/quickstart-cluster-template) | deployment | 0.70 | ARM template quickstart for Service Fabric test clusters; includes cluster resource schema and required properties that are product-specific. |
 | [Service Fabric cluster with Bicep](https://learn.microsoft.com/en-us/azure/service-fabric/quickstart-cluster-bicep) | deployment | 0.70 | Bicep-based deployment of a Service Fabric test cluster; includes resource definitions and cluster-specific deployment parameters unique to Service Fabric. |
 | [Service Fabric events](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-diagnostics-events) | configuration | 0.70 | Describes structured events, their mapping to entities, and provides a list; product-specific event schema and usage patterns qualify as expert configuration knowledge. |
+| [Service Fabric versions](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-versions) | decision-making | 0.70 | Page contains detailed tables of currently supported Service Fabric and platform runtime versions, which are time-sensitive, product-specific data not reliably known from training. This information guides decisions on which cluster/runtime versions to deploy or upgrade to, fitting decision-making around version support and lifecycle rather than limits, configuration, or troubleshooting. |
 | [Service Remoting - C#](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-reliable-services-communication-remoting) | integrations | 0.70 | Shows how to configure Service Fabric remoting for C# services with specific APIs, listener setup, and parameters unique to Service Fabric remoting. |
 | [Service Remoting - Java](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-reliable-services-communication-remoting-java) | integrations | 0.70 | Provides Java-specific Service Fabric remoting setup with concrete API usage and configuration patterns unique to this product. |
 | [Service movement](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-resource-manager-movement-cost) | architecture-patterns | 0.70 | Explains movement cost concept and how to specify it to meet architectural needs; includes product-specific trade-offs and configuration patterns. |
@@ -443,7 +440,6 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Polymorphism](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-reliable-actors-polymorphism) | 0.40 | Discusses polymorphism in Reliable Actors largely as an OO concept with some framework constraints; summary does not show concrete configuration tables, limits, or error mappings. |
 | [Remove a node type](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-how-to-remove-node-type) | 0.40 | How-to for removing a node type; procedural scaling steps, no detailed configuration matrices, limits, or troubleshooting mappings. |
 | [Send notifications](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-reliable-services-notifications) | 0.40 | Conceptual explanation of notifications for Reliable State Manager and Reliable Dictionary; mostly behavior description without detailed config tables or error mappings. |
-| [Service Fabric versions](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-versions) | 0.40 | Page lists Service Fabric cluster/runtime versions and support status, but this is essentially a support lifecycle/version listing rather than limits, configuration, troubleshooting, or decision matrices as defined. It does not fit any specified sub-skill type. |
 | [State management](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-reliable-actors-state-management) | 0.40 | Explains state management concepts for Reliable Actors but appears conceptual; summary does not indicate concrete configuration parameters, limits, or code patterns beyond general persistence/replication behavior. |
 | [Application lifecycle overview](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-application-lifecycle) | 0.35 | Lifecycle overview (design, deploy, upgrade, maintain); summary does not indicate detailed configuration parameters, limits, or troubleshooting mappings. |
 | [Build an Apache Tomcat server container on Linux](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-get-started-tomcat) | 0.35 | Tutorial for building and deploying a Tomcat container; mostly generic containerization steps without detailed Service Fabric–specific configuration matrices or limits. |

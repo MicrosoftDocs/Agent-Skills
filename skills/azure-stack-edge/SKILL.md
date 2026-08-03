@@ -1,14 +1,14 @@
 ---
 name: azure-stack-edge
-description: Expert knowledge for Azure Stack Edge development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when deploying IoT Edge modules, Kubernetes/GPU apps, DeepStream pipelines, Arc GitOps, or local ARM workloads, and other Azure Stack Edge related development tasks. Not for Azure Data Box (use azure-data-box-family), Azure IoT Edge (use azure-iot-edge), Azure Local (use azure-local), Azure Virtual Machines (use azure-virtual-machines).
+description: Expert knowledge for Azure Stack Edge development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when deploying IoT Edge modules, GPU/Kubernetes apps, DeepStream pipelines, Arc GitOps, or local ARM workloads, and other Azure Stack Edge related development tasks. Not for Azure Data Box (use azure-data-box-family), Azure IoT Edge (use azure-iot-edge), Azure Local (use azure-local), Azure Kubernetes Service Edge Essentials (use azure-aks-edge-essentials).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-07"
+  generated_at: "2026-08-02"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Stack Edge Skill
 
-This skill provides expert guidance for Azure Stack Edge. Covers troubleshooting, best practices, decision making, limits & quotas, security, configuration, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Stack Edge. Covers troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -24,13 +24,14 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L85 | Diagnosing and fixing Azure Stack Edge/Data Box Gateway issues: release-specific critical bugs, ordering/activation, certificates, ARM/Blob/IoT Edge/VM/GPU problems, and using logs/alerts for troubleshooting. |
-| Best Practices | L86-L92 | Best practices for Azure Stack Edge Pro: device failure recovery, GPU sharing/partitioning guidance, and operational guidelines for deployment, monitoring, and maintenance. |
-| Decision Making | L93-L101 | Guidance on region and data-location choices, resiliency behavior, disconnected deployment planning, and processes for replacing Azure Stack Edge devices. |
-| Limits & Quotas | L102-L113 | Limits, capacities, performance, and system requirements for Azure Stack Edge and Data Box Gateway devices, including supported VM sizes and moving Edge resources across subscriptions. |
-| Security | L114-L140 | Managing Azure Stack Edge security: user access, certs/TLS, Key Vault secrets, VPN/BCDR, Kubernetes RBAC, data erasure proof, and built-in Azure Policy for device protection. |
-| Configuration | L141-L193 | Configuring and managing Azure Stack Edge/Data Box Gateway devices: networking, power, storage, Kubernetes, VMs, GPUs, monitoring, automation, and device lifecycle (reset, wipe, specs). |
-| Integrations & Coding Patterns | L194-L204 | How to deploy and integrate workloads on Azure Stack Edge: IoT Edge modules, GPU-sharing/Kubernetes apps, DeepStream, Arc/Kubernetes GitOps, and connecting to local ARM. |
+| Troubleshooting | L36-L86 | Diagnosing and fixing Azure Stack Edge/Data Box Gateway issues: release-specific critical bugs, ordering/activation, certificates, ARM/Blob/IoT Edge/VM/GPU problems, and using logs/alerts for troubleshooting. |
+| Best Practices | L87-L93 | Best practices for Azure Stack Edge Pro: device failure recovery, GPU sharing/partitioning guidance, and operational guidelines for deployment, monitoring, and maintenance. |
+| Decision Making | L94-L102 | Guidance on region and data-location choices, resiliency behavior, disconnected deployment planning, and processes for replacing Azure Stack Edge devices. |
+| Limits & Quotas | L103-L114 | Limits, capacities, performance, and system requirements for Azure Stack Edge and Data Box Gateway devices, including supported VM sizes and moving Edge resources across subscriptions. |
+| Security | L115-L141 | Securing Azure Stack Edge: user access, certificates/TLS, Key Vault secrets, VPN/BCDR, encryption, secure wipe, Kubernetes RBAC, and built-in security features/policies. |
+| Configuration | L142-L194 | Configuring and managing Azure Stack Edge/Data Box Gateway devices: networking, power, storage, Kubernetes/VMs, GPUs, monitoring, automation, and hardware/system requirements. |
+| Integrations & Coding Patterns | L195-L206 | How to deploy and integrate workloads on Azure Stack Edge: IoT Edge modules, GPU-sharing/Kubernetes apps, DeepStream, Arc/Kubernetes GitOps, and connecting to local ARM. |
+| Deployment | L207-L210 | Predeployment requirements and planning for Azure Stack Edge Pro GPU, including hardware, networking, certificates, capacity, and environment checks before deployment. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -153,7 +154,8 @@ This skill requires **network access** to fetch documentation content:
 | Configure and manage Kubernetes cluster on Azure Stack Edge | https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-create-kubernetes-cluster |
 | Create virtual switches on Azure Stack Edge via PowerShell | https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-create-virtual-switch-powershell |
 | Configure GPU/VPU acceleration for Kubernetes on Azure Stack Edge | https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-deploy-compute-acceleration |
-| Configure network and proxy for Azure Stack Edge GPU | https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-deploy-configure-network-compute-web-proxy |
+| Configure networking and proxy for Azure Stack Edge Pro GPU | https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-deploy-configure-network-compute-web-proxy |
+| Connect to Azure Stack Edge Pro GPU local UI | https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-deploy-connect |
 | Configure dynamic storage for stateful Kubernetes apps on Azure Stack Edge | https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-deploy-stateful-application-dynamic-provision-kubernetes |
 | Configure static storage for stateful Kubernetes apps on Azure Stack Edge | https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-deploy-stateful-application-static-provision-kubernetes |
 | Configure Custom Script Extension for Azure Stack Edge VMs | https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-deploy-virtual-machine-custom-script-extension |
@@ -178,9 +180,8 @@ This skill requires **network access** to fetch documentation content:
 | Manage Wi‑Fi connectivity on Azure Stack Edge Mini R | https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-mini-r-manage-wifi |
 | System and network requirements for Azure Stack Edge Mini R | https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-mini-r-system-requirements |
 | Create and use Wi‑Fi profiles for Azure Stack Edge Mini R | https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-mini-r-use-wifi-profiles |
-| Automate Azure Stack Edge provisioning with PowerShell config file | https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-powershell-based-configuration |
-| Predeployment information checklist for Azure Stack Edge Pro 2 | https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-pro-2-deploy-checklist |
-| Configure network and web proxy for Azure Stack Edge Pro 2 | https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-pro-2-deploy-configure-network-compute-web-proxy |
+| Automate Azure Stack Edge setup with PowerShell config | https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-powershell-based-configuration |
+| Configure network and proxy for Azure Stack Edge Pro 2 | https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-pro-2-deploy-configure-network-compute-web-proxy |
 | Review Azure Stack Edge Pro 2 system requirements | https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-pro-2-system-requirements |
 | Understand Azure Stack Edge Pro 2 technical specifications | https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-pro-2-technical-specifications-compliance |
 | Configure network and proxy for Azure Stack Edge Pro R | https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-pro-r-deploy-configure-network-compute-web-proxy |
@@ -202,3 +203,8 @@ This skill requires **network access** to fetch documentation content:
 | Deploy IoT Edge runtime on Ubuntu VM on Azure Stack Edge | https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-deploy-iot-edge-linux-vm |
 | Run Kubernetes GPU-sharing workloads on Azure Stack Edge | https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-deploy-kubernetes-gpu-sharing |
 | Deploy PHP Guestbook via GitOps on Arc-enabled Azure Stack Edge | https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-deploy-stateless-application-git-ops-guestbook |
+
+### Deployment
+| Topic | URL |
+|-------|-----|
+| Predeployment checklist for Azure Stack Edge Pro GPU | https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-deploy-checklist |

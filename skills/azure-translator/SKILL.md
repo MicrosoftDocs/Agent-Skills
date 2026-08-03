@@ -1,9 +1,9 @@
 ---
 name: azure-translator
-description: Expert knowledge for Azure Translator development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when using Translator text/document APIs, Custom Translator, glossaries, containers, or secure VNet-integrated setups, and other Azure Translator related development tasks. Not for Azure AI Language (use azure-language-service), Azure AI Speech (use azure-speech), Azure AI Immersive Reader (use azure-immersive-reader), Azure AI Search (use azure-cognitive-search).
+description: Expert knowledge for Azure Translator development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when using Translator text/document APIs, containers, Custom Translator models, glossaries, or secure auth/networking, and other Azure Translator related development tasks. Not for Azure AI Language (use azure-language-service), Azure AI Speech (use azure-speech), Azure AI Immersive Reader (use azure-immersive-reader), Azure AI Document Intelligence (use azure-document-intelligence).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-26"
+  generated_at: "2026-08-02"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Translator Skill
@@ -25,12 +25,12 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L35-L42 | Diagnosing and fixing Azure Translator errors: container startup/runtime issues, usage/FAQ problems, known service bugs, and interpreting HTTP status/error codes for troubleshooting. |
-| Best Practices | L43-L52 | Best practices for preparing training data, managing glossaries, and building reliable end-to-end workflows for Custom Translator and batch/document translation in Azure Translator. |
-| Decision Making | L53-L61 | Guidance on choosing custom vs baseline models, planning upgrades, selecting Document Translation infrastructure, and migrating apps between Translator API versions. |
-| Limits & Quotas | L62-L68 | Language/feature and locale support matrices, plus usage limits and quotas for Azure Translator text, document translation, and Translator Pro. |
-| Security | L69-L80 | Configuring secure access to Azure Translator: auth (keys, Entra ID, SAS, managed identities), network controls (VNets, firewalls, Foundry), and encryption with customer-managed keys. |
-| Configuration | L81-L106 | Configuring Azure Translator and Custom Translator: containers, resources, APIs, parameters, filters, tagging, dictionaries, alignment, monitoring, and sovereign cloud setup. |
-| Integrations & Coding Patterns | L107-L144 | Using Translator REST/SDK APIs, containers, and connectors to translate text/documents, manage jobs/status, use glossaries/custom models, and integrate transliteration and adaptive custom translation. |
+| Best Practices | L43-L51 | Best practices for preparing training data, managing glossaries, and building reliable end-to-end workflows for Custom Translator and batch/document translation in Azure Translator. |
+| Decision Making | L52-L60 | Guidance on choosing custom vs baseline models, planning upgrades, selecting Document Translation infrastructure, and migrating apps between Translator API versions. |
+| Limits & Quotas | L61-L67 | Language/feature and locale support matrices, plus usage limits and quotas for Azure Translator text, document translation, and Translator Pro. |
+| Security | L68-L79 | Configuring secure access to Azure Translator: auth (keys, Entra ID, SAS, managed identities), network controls (VNets, firewalls, Foundry), and encryption with customer-managed keys. |
+| Configuration | L80-L104 | Configuring Azure Translator and Custom Translator: containers, resources, APIs, parameters, filters, tagging, dictionaries, alignment, monitoring, and sovereign cloud setup. |
+| Integrations & Coding Patterns | L105-L142 | Implementing Translator REST/SDK integrations for text and document translation, including containers, async jobs, status APIs, supported formats, glossaries, and custom/adaptive models. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -46,7 +46,6 @@ This skill requires **network access** to fetch documentation content:
 | Prepare and filter training data for Custom Translator | https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/concepts/data-filtering |
 | Prepare and upload Custom Translator training documents | https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/how-to/create-manage-training-documents |
 | Train Custom Translator models with proper datasets | https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/how-to/train-custom-model |
-| Apply FAQ-based usage tips for Document translation | https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/faq |
 | Create and apply glossaries in Document translation | https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/how-to-guides/create-use-glossaries |
 | Implement reliable end-to-end batch document translation workflow | https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/latest/end-to-end-batch-workflow |
 
@@ -87,7 +86,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure and manage Custom Translator projects | https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/how-to/create-manage-project |
 | Configure and manage Custom Translator workspaces | https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/how-to/create-manage-workspace |
 | Publish Custom Translator models to regions | https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/how-to/publish-model |
-| Configure Document Translation REST API 2026-03-01 operations | https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/latest/rest-api/guide-overview |
 | Create and configure Azure Translator resources | https://learn.microsoft.com/en-us/azure/ai-services/translator/how-to/create-translator-resource |
 | Use Azure Translator in sovereign cloud environments | https://learn.microsoft.com/en-us/azure/ai-services/translator/reference/sovereign-clouds |
 | Use Translator 2026-06-06 translate API parameters | https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/2026-06-06/translate-api |
@@ -130,7 +128,7 @@ This skill requires **network access** to fetch documentation content:
 | Retrieve supported glossary formats via REST | https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/reference/get-supported-glossary-formats |
 | Get status of a document translation request | https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/reference/get-translation-status |
 | List translation jobs and statuses via REST | https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/reference/get-translations-status |
-| Navigate Document translation REST API operations | https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/reference/rest-api-guide |
+| Use Document Translation REST API operations | https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/reference/rest-api-guide |
 | Start batch document translation via REST | https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/reference/start-batch-translation |
 | Use synchronous text translation REST API for documents | https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/reference/translate-document |
 | Integrate with adaptive custom translation (AdaptCT) API | https://learn.microsoft.com/en-us/azure/ai-services/translator/foundry/adaptive-custom-translation |

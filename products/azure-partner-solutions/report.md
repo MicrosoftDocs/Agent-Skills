@@ -45,8 +45,8 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 107
+- **Updated Pages**: 0
+- **Unchanged**: 108
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-partner-solutions/azure-partner-solutions.csv`
 
@@ -63,11 +63,6 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 | *(Unclassified)* | 83 | 76.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/qumulo/faq)
-  - Updated: 2026-05-26T17:19:00.000Z → 2026-07-20T22:11:00.000Z
 
 ## Classified Pages
 

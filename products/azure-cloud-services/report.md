@@ -46,8 +46,8 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 44
+- **Updated Pages**: 0
+- **Unchanged**: 45
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cloud-services/azure-cloud-services.csv`
 
@@ -65,11 +65,6 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | *(Unclassified)* | 15 | 33.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [Extensions](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/extensions)
-  - Updated: 2025-04-08T11:16:00.000Z → 2026-07-24T18:54:00.000Z
 
 ## Classified Pages
 

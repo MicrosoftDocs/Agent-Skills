@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-26'
+generated_at: '2026-08-02'
 category_descriptions:
   integrations: Patterns and samples for integrating API Management with LLMs, backends,
     logging/monitoring, events, OAuth, GitHub, Dapr, and exporting/importing APIs
@@ -19,9 +19,9 @@ category_descriptions:
   troubleshooting: 'Diagnosing and fixing APIM issues: policies and error handling,
     request tracing/debugging, custom domain/Key Vault cert failures, SNAT timeouts,
     portal problems, and using Diagnose and Solve.'
-  deployment: 'Deploying and scaling API Management: multi-region, VNet/external,
-    self-hosted gateways (AKS/K8s/Docker/Arc), backup/DR, migration, automation, and
-    managed cert/portal deployment.'
+  deployment: 'Deploying and scaling API Management: multi-region, autoscale, backup/restore,
+    migration, vNet and self-hosted gateways (AKS, Docker, Arc), portal automation,
+    and certificate lifecycle.'
   best-practices: Best practices for caching, throttling, security (OWASP API Top
     10), SSE setup, and running the self-hosted gateway on Kubernetes in production
     for Azure API Management.
@@ -31,17 +31,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure API Management development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when securing APIM gateways, integrating OAuth/Entra ID backends, managing quotas,
-  VNets, or self-hosted gateways, and other Azure API Management related development
+  Use when configuring APIM policies, OAuth/JWT auth, VNets/private gateways, self-hosted
+  gateways, or multi-region scaling, and other Azure API Management related development
   tasks. Not for Azure Application Gateway (use azure-application-gateway), Azure
   Front Door (use azure-front-door), Azure Web Application Firewall (use azure-web-application-firewall),
-  Azure Service Bus (use azure-service-bus).
-use_when: Use when securing APIM gateways, integrating OAuth/Entra ID backends, managing
-  quotas, VNets, or self-hosted gateways, and other Azure API Management related development
-  tasks.
+  Azure Logic Apps (use azure-logic-apps).
+use_when: Use when configuring APIM policies, OAuth/JWT auth, VNets/private gateways,
+  self-hosted gateways, or multi-region scaling, and other Azure API Management related
+  development tasks.
 confusable_not_for: Not for Azure Application Gateway (use azure-application-gateway),
   Azure Front Door (use azure-front-door), Azure Web Application Firewall (use azure-web-application-firewall),
-  Azure Service Bus (use azure-service-bus).
+  Azure Logic Apps (use azure-logic-apps).
 ---
 # Azure API Management Crawl Report
 
@@ -54,9 +54,9 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 - **Unclassified**: 61
 
 ### Incremental Update
-- **New Pages**: 6
-- **Updated Pages**: 0
-- **Unchanged**: 276
+- **New Pages**: 0
+- **Updated Pages**: 4
+- **Unchanged**: 278
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-api-management/azure-api-management.csv`
 
@@ -77,14 +77,16 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 
 ## Changes
 
-### New Pages
+### Updated Pages
 
-- [Overview](https://learn.microsoft.com/en-us/azure/api-management/ai-gateway-overview)
 - [Create an instance](https://learn.microsoft.com/en-us/azure/api-management/quickstart-ai-gateway-create)
+  - Updated: 2026-07-23T22:13:00.000Z → 2026-07-28T22:10:00.000Z
 - [Set up your gateway](https://learn.microsoft.com/en-us/azure/api-management/ai-gateway-setup)
-- [Manage models and tools](https://learn.microsoft.com/en-us/azure/api-management/ai-gateway-manage-models-tools)
-- [Govern, secure, and operate](https://learn.microsoft.com/en-us/azure/api-management/ai-gateway-govern-secure-assets)
-- [Configure private networking](https://learn.microsoft.com/en-us/azure/api-management/ai-gateway-configure-private-networking)
+  - Updated: 2026-07-23T22:13:00.000Z → 2026-07-28T22:10:00.000Z
+- [Regional availability](https://learn.microsoft.com/en-us/azure/api-management/api-management-region-availability)
+  - Updated: 2026-07-14T05:10:00.000Z → 2026-07-31T05:12:00.000Z
+- [Managed certificates suspension (August 2025 - June 2026)](https://learn.microsoft.com/en-us/azure/api-management/breaking-changes/managed-certificates-suspension-august-2025)
+  - Updated: 2026-04-03T08:00:00.000Z → 2026-07-23T08:00:00.000Z
 
 ## Classified Pages
 
@@ -246,7 +248,6 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Log requests with Azure Application Insights](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-app-insights) | integrations | 0.70 | The page is a how-to for wiring Azure API Management to Application Insights with product-specific configuration steps and settings (for example, enabling logging for APIs, workspace-specific integration behavior). This is concrete integration/configuration knowledge rather than a conceptual overview, and includes details that are specific to this product combination, fitting the integrations sub-skill best. |
 | [Manage groups](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-create-groups) | security | 0.70 | Describes built-in groups (Administrators, etc.) and their semantics; these are specific RBAC-like constructs and visibility rules unique to APIM. |
 | [Manage microservices deployed in Azure Kubernetes Service (AKS)](https://learn.microsoft.com/en-us/azure/api-management/api-management-kubernetes) | architecture-patterns | 0.70 | Describes specific options for publishing AKS microservices via API Management; product-specific architecture patterns and trade-offs for AKS integration. |
-| [Managed certificates suspension (August 2025 - June 2026)](https://learn.microsoft.com/en-us/azure/api-management/breaking-changes/managed-certificates-suspension-august-2025) | deployment | 0.70 | Contains precise dates and conditions for suspension of managed certificate creation, plus behavior of existing certificates and required network/DNS conditions. These time-bound platform constraints affect how and when you can configure custom domains, fitting deployment/operational constraints that an LLM would not know from training. |
 | [Managed connections - process flows](https://learn.microsoft.com/en-us/azure/api-management/credentials-process-flow) | configuration | 0.70 | Details management and runtime process flows for OAuth 2.0 connections in credential manager, which are specific to API Management. |
 | [Migrate Amazon API Gateway to Azure API Management](https://learn.microsoft.com/en-us/azure/api-management/migrate-amazon-api-gateway-to-api-management) | decision-making | 0.70 | Provides feature mappings, migration steps, and best-practice guidance for moving from Amazon API Gateway to API Management, which is concrete decision and migration content. |
 | [Monitor MCP server traffic](https://learn.microsoft.com/en-us/azure/api-management/monitor-mcp-servers) | configuration | 0.70 | The article describes product-specific telemetry emitted for MCP server traffic, how to enable payload logging for tool arguments/results, and provides ready-to-use KQL queries against Azure Monitor. These are concrete, configuration-level details (what is logged by default, how to turn on additional logging, and how to query specific tables/fields) that go beyond generic monitoring knowledge and are unique to Azure API Management’s MCP integration. |
@@ -257,7 +258,7 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Protect your API with Azure AD B2C](https://learn.microsoft.com/en-us/azure/api-management/howto-protect-backend-frontend-azure-ad-b2c) | security | 0.70 | Shows a specific security configuration using AD B2C, Easy Auth, and PKCE SPA flow to protect APIs, which is product- and flow-specific. |
 | [Protect your API with Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-protect-backend-with-aad) | security | 0.70 | Provides concrete configuration steps and parameters to secure APIs with OAuth 2.0 and Entra ID, beyond generic OAuth concepts. |
 | [Provision a self-hosted gateway](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-provision-self-hosted-gateway) | deployment | 0.70 | Provisioning gateway resource is a deployment prerequisite; article likely includes resource-level constraints, required settings, and tier applicability for self-hosted gateway. |
-| [Regional availability](https://learn.microsoft.com/en-us/azure/api-management/api-management-region-availability) | deployment | 0.70 | Page provides a region-by-region availability matrix for API Management v2 tiers and workspace gateways, which is deployment-specific, time-sensitive information not reliably known from training data. This aligns with deployment constraints by region/SKU. |
+| [Regional availability](https://learn.microsoft.com/en-us/azure/api-management/api-management-region-availability) | deployment | 0.70 | Page provides a region-by-region availability matrix for API Management v2 tiers and workspace gateways, which is deployment-specific, SKU-specific information that changes over time and is not reliably known from training data. |
 | [Retrieve IP addresses](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-ip-addresses) | configuration | 0.70 | Explains how to obtain public/private IPs and when they change, enabling precise firewall and routing configuration specific to API Management. |
 | [Reuse policy configurations](https://learn.microsoft.com/en-us/azure/api-management/policy-fragments) | configuration | 0.70 | Describes how to define and apply reusable policy XML fragments, including limitations; product-specific configuration pattern. |
 | [Security controls by Azure Policy](https://learn.microsoft.com/en-us/azure/api-management/security-controls-policy) | security | 0.70 | Lists Azure Policy regulatory compliance controls and built-in policy definitions specific to Azure API Management. These are concrete, product-specific security/compliance configuration artifacts rather than conceptual security guidance. |
@@ -296,6 +297,7 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Import Microsoft Foundry API](https://learn.microsoft.com/en-us/azure/api-management/azure-ai-foundry-api) | integrations | 0.65 | Describes importing Microsoft Foundry AI model endpoints as APIs and using AI gateway policies; this is a product-specific integration pattern likely including endpoint configuration details and API Management-specific settings. |
 | [Import a SOAP API and convert to REST](https://learn.microsoft.com/en-us/azure/api-management/restify-soap-api) | limits-quotas | 0.65 | Includes a dedicated note about WSDL import limitations and unsupported directives (wsdl:import, xsd:import, xsd:include). These are concrete product-specific constraints on supported WSDL structures, fitting the limits-quotas category as expert knowledge. |
 | [Import an OpenAPI Specification](https://learn.microsoft.com/en-us/azure/api-management/import-api-from-oas) | integrations | 0.65 | Shows importing OpenAPI specs via portal/CLI/PowerShell; includes tool-specific parameters and API Management import options, plus version support and restrictions. |
+| [Managed certificates suspension (August 2025 - June 2026)](https://learn.microsoft.com/en-us/azure/api-management/breaking-changes/managed-certificates-suspension-august-2025) | deployment | 0.65 | Page documents precise suspension dates, scope (which tiers, which feature), and operational conditions for continued autorenewal of existing managed certificates, which are time-bound, product-specific deployment/operations constraints not inferable from general knowledge. |
 | [Move instances between regions](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-migrate) | deployment | 0.65 | Provides a concrete migration path using backup/restore operations and region-specific constraints, which are product-specific deployment/migration details. |
 | [Built-in analytics dashboard retirement (March 2027)](https://learn.microsoft.com/en-us/azure/api-management/breaking-changes/analytics-dashboard-retirement-march-2027) | decision-making | 0.64 | Specifies retirement date for the built-in analytics dashboard and points to the Azure Monitor-based replacement, guiding monitoring solution choices and migration. |
 | [CAPTCHA endpoint update (September 2025)](https://learn.microsoft.com/en-us/azure/api-management/breaking-changes/captcha-endpoint-change-sep-2025) | configuration | 0.64 | Provides a specific date and new CAPTCHA endpoint, requiring VNet/network configuration updates to keep the developer portal working—expert configuration detail. |
@@ -337,7 +339,7 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Alternative approaches to self-hosting](https://learn.microsoft.com/en-us/azure/api-management/developer-portal-alternative-processes-self-host) | 0.30 | Appears to describe alternative approaches for self-hosting the API Management developer portal, likely more of a conceptual/approach overview without detailed configuration tables, limits, or error-code-based troubleshooting. No clear evidence of numeric limits, config parameter matrices, or decision matrices from the summary. |
 | [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/api-management/policy-reference) | 0.30 | This is an index of Azure Policy built-in definitions for API Management, primarily navigational. It links out to definitions but does not itself contain detailed configuration tables or numeric thresholds. |
 | [Create a workspace](https://learn.microsoft.com/en-us/azure/api-management/how-to-create-workspace) | 0.30 | Step-by-step how-to for creating a workspace; lacks configuration parameter tables, limits, troubleshooting error codes, or other expert-only details. |
-| [Create an instance](https://learn.microsoft.com/en-us/azure/api-management/quickstart-ai-gateway-create) | 0.30 | Quickstart for creating an AI Gateway instance and calling a model; likely step-by-step tutorial without detailed configuration parameter tables, limits, or troubleshooting mappings. |
+| [Create an instance](https://learn.microsoft.com/en-us/azure/api-management/quickstart-ai-gateway-create) | 0.30 | Quickstart for creating an AI Gateway tier instance and calling an OpenAI-compatible endpoint; primarily a step-by-step tutorial without detailed limits, configuration matrices, or product-specific error/diagnostic mappings. |
 | [Create an instance - CLI](https://learn.microsoft.com/en-us/azure/api-management/get-started-create-service-instance-cli) | 0.30 | Quickstart showing CLI commands to create an instance; lacks parameter tables, limits, or advanced configuration beyond basic provisioning. |
 | [Create an instance - PowerShell](https://learn.microsoft.com/en-us/azure/api-management/powershell-create-service-instance) | 0.30 | PowerShell quickstart for instance creation; focuses on basic provisioning commands, not detailed configuration options or quotas. |
 | [Create and debug policies in Visual Studio Code (VS Code)](https://learn.microsoft.com/en-us/azure/api-management/api-management-debug-policies) | 0.30 | Primarily a how-to/tutorial for using the VS Code extension and Copilot to create and debug policies; it doesn’t emphasize structured configuration tables, limits, or product-specific error mappings that would qualify as expert knowledge under the defined categories. |
@@ -354,7 +356,7 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Manage API versions](https://learn.microsoft.com/en-us/azure/api-management/api-management-versions) | 0.30 | Conceptual explanation of versions; lacks numeric thresholds, decision matrices, or product-specific config tables. |
 | [Monetization overview](https://learn.microsoft.com/en-us/azure/api-management/monetization-overview) | 0.30 | High-level monetization overview and strategy stages; primarily conceptual/business content without detailed technical limits, configs, or decision matrices. |
 | [Self-hosted gateway overview](https://learn.microsoft.com/en-us/azure/api-management/self-hosted-gateway-overview) | 0.30 | Self-hosted gateway overview; mostly conceptual explanation of scenarios and benefits without detailed config matrices. |
-| [Set up your gateway](https://learn.microsoft.com/en-us/azure/api-management/ai-gateway-setup) | 0.30 | Setup wizard guidance for AI Gateway; appears to be a guided first-run experience rather than a detailed configuration reference with parameter tables or limits. |
+| [Set up your gateway](https://learn.microsoft.com/en-us/azure/api-management/ai-gateway-setup) | 0.30 | Setup wizard guide for AI Gateway tier that focuses on discovery and registration of resources; appears to be a procedural getting-started article without detailed configuration parameter tables, limits, or troubleshooting content. |
 | [Understand subscriptions](https://learn.microsoft.com/en-us/azure/api-management/api-management-subscriptions) | 0.30 | Conceptual overview of subscriptions; explains what they are but not detailed configuration tables or numeric limits. |
 | [v2 service tiers](https://learn.microsoft.com/en-us/azure/api-management/v2-service-tiers-overview) | 0.30 | Described as an introduction to scenarios, capabilities, and concepts of v2 tiers, and points to a separate detailed comparison page. This is primarily conceptual/overview content without clear evidence of comparison tables, thresholds, or quantified trade-offs in the snippet. |
 | [Create an instance - Visual Studio Code](https://learn.microsoft.com/en-us/azure/api-management/vscode-create-service-instance) | 0.25 | VS Code extension quickstart; primarily a tooling tutorial without deep configuration or product-specific patterns. |

@@ -43,8 +43,8 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Test Plans (u
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 13
-- **Unchanged**: 112
+- **Updated Pages**: 0
+- **Unchanged**: 125
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-boards/azure-boards.csv`
 
@@ -62,35 +62,6 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Test Plans (u
 | *(Unclassified)* | 91 | 72.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [Manage inline tests](https://learn.microsoft.com/en-us/azure/devops/boards/boards/add-run-update-tests?view=azure-devops)
-  - Updated: 2025-10-16T22:03:00.000Z → 2026-07-21T01:04:00.000Z
-- [Delete test artifacts](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/delete-test-artifacts?view=azure-devops)
-  - Updated: 2025-07-17T19:00:00.000Z → 2026-07-21T01:04:00.000Z
-- [Configure your backlog view](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/configure-your-backlog-view?view=azure-devops)
-  - Updated: 2026-06-16T21:05:00.000Z → 2026-07-21T01:04:00.000Z
-- [Automate work item state transitions](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/automate-work-item-state-transitions?view=azure-devops)
-  - Updated: 2026-02-04T22:06:00.000Z → 2026-07-21T01:04:00.000Z
-- [Display rollup progress bars or totals](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/display-rollup?view=azure-devops)
-  - Updated: 2026-07-06T20:58:00.000Z → 2026-07-21T01:04:00.000Z
-- [Query FAQs](https://learn.microsoft.com/en-us/azure/devops/boards/queries/query-faqs?view=azure-devops)
-  - Updated: 2026-04-22T21:02:00.000Z → 2026-07-23T21:03:00.000Z
-- [Delivery Plans FAQs](https://learn.microsoft.com/en-us/azure/devops/boards/plans/faqs?view=azure-devops)
-  - Updated: 2026-04-22T21:02:00.000Z → 2026-07-23T21:03:00.000Z
-- [Excel FAQs](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/office/faqs?view=azure-devops)
-  - Updated: 2026-04-22T21:02:00.000Z → 2026-07-23T21:03:00.000Z
-- [Office integration issues](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/office/tfs-office-integration-issues?view=azure-devops)
-  - Updated: 2026-02-28T08:00:00.000Z → 2026-07-20T21:04:00.000Z
-- [Resolve Excel data conflicts](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/office/tfs-office-integration-issues?view=azure-devops)
-  - Updated: 2026-02-28T08:00:00.000Z → 2026-07-20T21:04:00.000Z
-- [Resolve Excel data validation errors](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/office/tfs-office-integration-issues?view=azure-devops)
-  - Updated: 2026-02-28T08:00:00.000Z → 2026-07-20T21:04:00.000Z
-- [FAQs](https://learn.microsoft.com/en-us/azure/devops/boards/faqs?view=azure-devops)
-  - Updated: 2026-04-22T21:02:00.000Z → 2026-07-23T21:03:00.000Z
-- [Work item form caching](https://learn.microsoft.com/en-us/azure/devops/boards/faqs?view=azure-devops)
-  - Updated: 2026-04-22T21:02:00.000Z → 2026-07-23T21:03:00.000Z
 
 ## Classified Pages
 

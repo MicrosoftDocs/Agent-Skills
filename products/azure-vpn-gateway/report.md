@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-26'
+generated_at: '2026-08-02'
 category_descriptions:
   architecture-patterns: Design patterns and guidance for choosing VPN Gateway topologies,
     configuring active-active gateways, and building highly available, resilient site-to-site
@@ -9,18 +9,18 @@ category_descriptions:
   security: 'Securing Azure VPN Gateway: IPsec/IKE policies, forced tunneling, cert
     and Entra ID auth, P2S/S2S setup, RADIUS/NPS MFA, client config, access control,
     roles, and crypto requirements.'
-  configuration: 'Configuring Azure VPN Gateway for P2S/S2S: auth (cert, Entra, RADIUS),
-    client setup (Windows/macOS/Linux/iOS), BGP, IPsec/NAT/IPv6, routing, monitoring,
-    and high-bandwidth/Always-On/VNet-to-VNet scenarios.'
-  troubleshooting: 'Diagnosing and fixing Azure VPN Gateway issues: client prerequisites,
-    packet captures, tunnel resets, connection health checks, and answers to common
-    troubleshooting FAQs.'
+  configuration: 'Configuring Azure VPN Gateway: P2S/S2S setup, auth (cert, Entra,
+    RADIUS), clients, IPsec/BGP/NAT, routing, monitoring, maintenance, dual-stack,
+    VNet-to-VNet, and Always-On VPN.'
   deployment: 'Deploying and configuring Azure VPN Gateways: creating gateways/S2S
     VPNs via PowerShell/CLI, migrating Basic→Standard IP/SKU, active-active changes,
     zone redundancy, and client profile deployment.'
   best-practices: Guidance on using network virtual appliances (NVAs) in Azure as
     VPN endpoints for remote access, including design, routing, security, and integration
     with Azure VPN Gateway.
+  troubleshooting: 'Diagnosing and fixing Azure VPN Gateway issues: client prerequisites,
+    packet captures, tunnel resets, connection health checks, and answers to common
+    troubleshooting FAQs.'
   integrations: 'Configuring Azure VPN with external systems: NPS/RADIUS user groups,
     S2S certificate tunnels, VPN over ExpressRoute, Cisco ASA setups, and BGP connections
     with AWS.'
@@ -29,31 +29,31 @@ category_descriptions:
 skill_description: Expert knowledge for Azure VPN Gateway development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  configuring P2S/S2S tunnels, IPsec/IKE/BGP, Entra/RADIUS auth, active-active gateways,
-  or VPN over ExpressRoute, and other Azure VPN Gateway related development tasks.
-  Not for Azure Virtual WAN (use azure-virtual-wan), Azure ExpressRoute (use azure-expressroute),
-  Azure Virtual Network (use azure-virtual-network), Azure Traffic Manager (use azure-traffic-manager).
-use_when: Use when configuring P2S/S2S tunnels, IPsec/IKE/BGP, Entra/RADIUS auth,
-  active-active gateways, or VPN over ExpressRoute, and other Azure VPN Gateway related
-  development tasks.
-confusable_not_for: Not for Azure Virtual WAN (use azure-virtual-wan), Azure ExpressRoute
-  (use azure-expressroute), Azure Virtual Network (use azure-virtual-network), Azure
-  Traffic Manager (use azure-traffic-manager).
+  designing S2S/P2S VPNs, IPsec/IKE/BGP/NAT configs, zone-redundant gateways, or VPN
+  over ExpressRoute, and other Azure VPN Gateway related development tasks. Not for
+  Azure Virtual Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan),
+  Azure ExpressRoute (use azure-expressroute), Azure Application Gateway (use azure-application-gateway).
+use_when: Use when designing S2S/P2S VPNs, IPsec/IKE/BGP/NAT configs, zone-redundant
+  gateways, or VPN over ExpressRoute, and other Azure VPN Gateway related development
+  tasks.
+confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), Azure
+  Virtual WAN (use azure-virtual-wan), Azure ExpressRoute (use azure-expressroute),
+  Azure Application Gateway (use azure-application-gateway).
 ---
 # Azure VPN Gateway Crawl Report
 
 ## Summary
 
-- **Total Pages**: 129
-- **Fetched**: 129
+- **Total Pages**: 130
+- **Fetched**: 130
 - **Fetch Failed**: 0
-- **Classified**: 107
-- **Unclassified**: 22
+- **Classified**: 105
+- **Unclassified**: 25
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 128
+- **New Pages**: 1
+- **Updated Pages**: 3
+- **Unchanged**: 126
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-vpn-gateway/azure-vpn-gateway.csv`
 
@@ -63,21 +63,29 @@ confusable_not_for: Not for Azure Virtual WAN (use azure-virtual-wan), Azure Exp
 |------|-------|------------|
 | architecture-patterns | 3 | 2.3% |
 | best-practices | 1 | 0.8% |
-| configuration | 57 | 44.2% |
+| configuration | 58 | 44.6% |
 | decision-making | 7 | 5.4% |
-| deployment | 11 | 8.5% |
-| integrations | 5 | 3.9% |
+| deployment | 9 | 6.9% |
+| integrations | 5 | 3.8% |
 | limits-quotas | 1 | 0.8% |
-| security | 18 | 14.0% |
-| troubleshooting | 4 | 3.1% |
-| *(Unclassified)* | 22 | 17.1% |
+| security | 18 | 13.8% |
+| troubleshooting | 3 | 2.3% |
+| *(Unclassified)* | 25 | 19.2% |
 
 ## Changes
 
+### New Pages
+
+- [Azure CLI](https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-user-groups-create-cli)
+
 ### Updated Pages
 
-- [About gateway SKU consolidation & migration](https://learn.microsoft.com/en-us/azure/vpn-gateway/gateway-sku-consolidation)
-  - Updated: 2026-05-13T08:00:00.000Z → 2026-07-24T05:15:00.000Z
+- [Azure PowerShell](https://learn.microsoft.com/en-us/azure/vpn-gateway/create-gateway-powershell)
+  - Updated: 2024-11-20T23:04:00.000Z → 2026-08-01T05:13:00.000Z
+- [Azure CLI](https://learn.microsoft.com/en-us/azure/vpn-gateway/create-routebased-vpn-gateway-cli)
+  - Updated: 2024-11-20T23:04:00.000Z → 2026-08-01T05:13:00.000Z
+- [Run Prerequisites Test](https://learn.microsoft.com/en-us/azure/vpn-gateway/azure-vpn-client-prerequisites-check)
+  - Updated: 2025-03-14T08:00:00.000Z → 2026-08-01T05:13:00.000Z
 
 ## Classified Pages
 
@@ -119,6 +127,7 @@ confusable_not_for: Not for Azure Virtual WAN (use azure-virtual-wan), Azure Exp
 | [About gateway SKUs](https://learn.microsoft.com/en-us/azure/vpn-gateway/about-gateway-skus) | decision-making | 0.70 | SKU selection guidance is inherently decision-focused. This article describes factors to consider when choosing a VPN Gateway SKU, likely including comparison of SKUs, capabilities, and trade-offs. Such SKU comparison and selection criteria qualify as decision-making expert knowledge beyond generic concepts. |
 | [About site-to-site VPN connections with certificate authentication](https://learn.microsoft.com/en-us/azure/vpn-gateway/site-to-site-certificate-authentication-gateway-about) | security | 0.70 | Describes product-specific behavior for S2S VPN with X.509 certificates, including how inbound/outbound certificates are used, storage in Key Vault, and gateway interaction patterns. This is security-configuration-focused and not just conceptual marketing, but rather concrete guidance on how certificate-based authentication works for Azure VPN Gateway. |
 | [Advertise custom routes to P2S clients](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-p2s-advertise-custom-routes) | configuration | 0.70 | Describes how to configure custom route advertisement and forced tunneling for P2S, including specific route settings and constraints. |
+| [Azure CLI](https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-user-groups-create-cli) | configuration | 0.70 | Page describes configuring Policy Groups and Group Members for P2S VPN, including product-specific constructs (policy groups, address pools, group priority) and Azure CLI commands/parameters unique to Azure VPN Gateway. This is detailed configuration guidance rather than generic concepts. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/vpn-gateway/site-to-site-certificate-authentication-gateway-cli) | integrations | 0.70 | CLI-based how-to for configuring S2S VPN with certificate auth includes product-specific commands, parameter names, and configuration patterns (e.g., specific Azure CLI arguments for VPN Gateway, Key Vault integration, and certificate references). This fits integrations & coding patterns because it details concrete configuration parameters and their usage for this integration scenario. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/vpn-gateway/site-to-site-ipv6-azure-cli) | configuration | 0.70 | This page provides Azure CLI-based, product-specific configuration steps for creating a site-to-site VPN connection using IPv4 and IPv6 dual stack. It includes concrete commands and parameters for Azure VPN Gateway and virtual networks, which are unique configuration details rather than generic VPN concepts, aligning with the configuration sub-skill. |
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/vpn-gateway/site-to-site-certificate-authentication-gateway-powershell) | security | 0.70 | PowerShell configuration of certificate-based S2S auth, including Key Vault and certificate handling specifics. |
@@ -160,7 +169,6 @@ confusable_not_for: Not for Azure Virtual WAN (use azure-virtual-wan), Azure Exp
 | [Other authentication protocols](https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-vpn-client-configuration-radius-other) | configuration | 0.70 | Covers nonstandard RADIUS methods; requires specific client configuration parameters and mapping to Azure VPN Gateway expectations. |
 | [P2S session management](https://learn.microsoft.com/en-us/azure/vpn-gateway/p2s-session-management) | security | 0.70 | Describes product-specific session management behavior (5-minute status refresh) and required RBAC role (Contributor vs Reader) to view/disconnect sessions, which are concrete security/permission details. |
 | [Password authentication clients](https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-vpn-client-configuration-radius-password) | configuration | 0.70 | Describes exact VPN client settings and authentication flow details for username/password RADIUS auth, which are product-specific configuration details. |
-| [Run Prerequisites Test](https://learn.microsoft.com/en-us/azure/vpn-gateway/azure-vpn-client-prerequisites-check) | troubleshooting | 0.70 | Describes the built-in prerequisites test, specific Windows services, permissions, and conditions it checks, and how to remediate failures—symptom-to-fix guidance. |
 | [Upgrade a gateway SKU](https://learn.microsoft.com/en-us/azure/vpn-gateway/gateway-sku-upgrade) | deployment | 0.70 | Describes a product-specific upgrade process for VPN Gateway SKUs, including approximate downtime (~45 minutes), behavior of public IP retention, and use of specific tools (Portal, PowerShell, CLI). These operational constraints and behaviors are deployment-specific expert knowledge beyond generic LLM understanding. |
 | [VPN over private peering](https://learn.microsoft.com/en-us/azure/vpn-gateway/site-to-site-vpn-private-peering) | integrations | 0.70 | Integration pattern combining VPN Gateway with ExpressRoute, including configuration constraints and supported scenarios. |
 | [Install VPN client certificates](https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-how-to-vpn-client-install-azure-cert) | configuration | 0.68 | Details OS-specific certificate import steps and required certificate stores/locations for Azure P2S client authentication. |
@@ -183,8 +191,6 @@ confusable_not_for: Not for Azure Virtual WAN (use azure-virtual-wan), Azure Exp
 | [Intune - Deploy VPN client profile](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-profile-intune) | deployment | 0.65 | Shows Intune custom profile schema/OMA-URI or JSON for VPN profiles—product-specific deployment configuration for managed rollout. |
 | [Update a P2S VPN Client profile](https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-user-vpn-profile-update) | configuration | 0.65 | Provides concrete steps and parameters for generating, distributing, and installing updated P2S VPN client profiles for Azure VPN Gateway/Virtual WAN, including configuration-specific details beyond generic VPN profile concepts. |
 | [About point-to-site VPN routing](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-point-to-site-routing) | configuration | 0.62 | Explains routing behavior differences by OS, protocol, and VNet topology; likely includes specific routing rules and behaviors unique to Azure P2S. |
-| [Azure CLI](https://learn.microsoft.com/en-us/azure/vpn-gateway/create-routebased-vpn-gateway-cli) | deployment | 0.60 | CLI-based deployment article with product-specific flags and options for VPN Gateway creation. |
-| [Azure PowerShell](https://learn.microsoft.com/en-us/azure/vpn-gateway/create-gateway-powershell) | deployment | 0.60 | PowerShell-based deployment article that includes specific parameters and options for creating VPN Gateways in production-like setups. |
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-connect-different-deployment-models-powershell) | configuration | 0.60 | PowerShell configuration for cross-model VNet connectivity uses specific cmdlets and parameters unique to this scenario. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-vnet-vnet-resource-manager-portal) | configuration | 0.60 | Portal how-to for VNet-to-VNet typically includes gateway SKU choices, connection types, and specific configuration fields unique to Azure VPN Gateway. |
 | [Leveraging Azure VPN connections](https://learn.microsoft.com/en-us/azure/vpn-gateway/work-remotely-support) | decision-making | 0.60 | Discusses options and capacity considerations for remote access; helps choose when and how to use P2S versus other solutions. |
@@ -201,7 +207,9 @@ confusable_not_for: Not for Azure Virtual WAN (use azure-virtual-wan), Azure Exp
 | [What's new?](https://learn.microsoft.com/en-us/azure/vpn-gateway/whats-new) | 0.40 | Release notes/what's new page; summary does not indicate specific numeric limits, configuration parameters, or detailed troubleshooting mappings. Likely high-level announcements and change log rather than stable expert reference data. |
 | [About BGP and VPN Gateway](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-bgp-overview) | 0.30 | Described as an overview of BGP support; likely conceptual without detailed parameter tables or numeric thresholds. |
 | [About NAT and VPN Gateway](https://learn.microsoft.com/en-us/azure/vpn-gateway/nat-overview) | 0.30 | NAT overview article; summary suggests conceptual explanation and supported scenarios, not detailed parameter tables or numeric ranges. |
+| [Azure CLI](https://learn.microsoft.com/en-us/azure/vpn-gateway/create-routebased-vpn-gateway-cli) | 0.30 | CLI-based tutorial for creating a VPN gateway with a specific example configuration. It lacks explicit limits/quotas, decision matrices, troubleshooting mappings, or detailed configuration option tables; it is mainly procedural guidance. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-modify-local-network-gateway-cli) | 0.30 | CLI walkthrough for modifying local network gateway IP/prefix; largely step-by-step commands, not configuration reference. |
+| [Azure PowerShell](https://learn.microsoft.com/en-us/azure/vpn-gateway/create-gateway-powershell) | 0.30 | Primarily a step-by-step PowerShell tutorial for creating a VPN gateway and related resources. It does not emphasize configuration tables, limits, error codes, or product-specific best-practice guidance; instead it walks through a single example deployment. |
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-modify-local-network-gateway) | 0.30 | PowerShell walkthrough for modifying local network gateway IP/prefix; mostly procedural without detailed config matrices or limits. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-user-groups-create-portal) | 0.30 | Step-by-step Azure portal tutorial for creating policy groups and assigning IP pools. It references concepts and limitations but is primarily a how-to guide without parameter tables, default values, or other configuration matrices that rise to expert-knowledge level per the defined categories. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-modify-local-network-gateway-portal) | 0.30 | Primarily a portal walkthrough for editing address prefixes/BGP; unlikely to contain detailed parameter tables or numeric limits beyond generic steps. |
@@ -209,6 +217,7 @@ confusable_not_for: Not for Azure Virtual WAN (use azure-virtual-wan), Azure Exp
 | [Download Azure VPN Client with Windows Package Manager (WinGet)](https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-vpn-client-winget) | 0.30 | How-to install Azure VPN Client via winget. Primarily procedural commands; no configuration parameter tables, limits, error-code troubleshooting, or security/RBAC specifics. Tutorial-style content rather than expert reference. |
 | [PowerShell](https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-user-groups-create) | 0.30 | PowerShell-based how-to for configuring policy groups and group members. It is a procedural tutorial rather than a reference of configuration options, limits, or troubleshooting mappings, so it does not meet the expert-knowledge criteria for the defined sub-skill types. |
 | [Remove the Basic SKU public IP reference - Basic SKU VPN gateways](https://learn.microsoft.com/en-us/azure/vpn-gateway/basic-sku-public-ip-remove) | 0.30 | Focused on a migration/cleanup task (removing Basic SKU public IP reference) with portal steps; summary does not suggest detailed limits, configuration parameter tables, or structured troubleshooting content. |
+| [Run Prerequisites Test](https://learn.microsoft.com/en-us/azure/vpn-gateway/azure-vpn-client-prerequisites-check) | 0.30 | Page focuses on running a prerequisites check in the Azure VPN Client UI and conceptually describes what it verifies (services, permissions, internet access, time sync). It does not expose detailed error-code mappings, configuration parameter tables, or other product-specific expert data beyond what an LLM likely knows. |
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/vpn-gateway/site-to-site-ipv6-azure-powershell) | 0.20 | This article is a PowerShell-based how-to for creating a dual-stack site-to-site VPN connection. From the summary, it appears to be a procedural tutorial (create gateway, configure connection) without explicit limits, configuration matrices, or detailed parameter reference beyond standard cmdlet usage. It therefore does not clearly expose expert-level configuration or troubleshooting content per the defined categories. |
 | [Azure VPN Client versions](https://learn.microsoft.com/en-us/azure/vpn-gateway/azure-vpn-client-versions) | 0.20 | Page primarily lists client version history; no limits, configuration matrices, error codes, or other expert-only technical details that fit the defined sub-skill types. |
 | [Certificate authentication](https://learn.microsoft.com/en-us/azure/vpn-gateway/site-to-site-certificate-authentication-gateway-portal) | 0.20 | Portal-based how-to for S2S certificate authentication using Managed Identity and Key Vault; described as a configuration walkthrough rather than a reference of settings, limits, or error-code-based troubleshooting. |

@@ -1,9 +1,9 @@
 ---
 name: azure-virtual-network
-description: Expert knowledge for Azure Virtual Network development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and deployment. Use when configuring VNet peering, NSGs/service endpoints, VPN/ExpressRoute gateways, load balancers, or NAT gateways, and other Azure Virtual Network related development tasks. Not for Azure Networking (use azure-networking), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway).
+description: Expert knowledge for Azure Virtual Network development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and deployment. Use when configuring VNet peering, NSGs, service endpoints, VPN/ExpressRoute gateways, or Azure Firewall/NAT, and other Azure Virtual Network related development tasks. Not for Azure Networking (use azure-networking), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use azure-virtual-wan), Azure Firewall (use azure-firewall).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-26"
+  generated_at: "2026-08-02"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Virtual Network Skill
@@ -25,13 +25,13 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L36-L40 | Diagnosing and fixing Azure VM/VNet connectivity issues: routing and NSG problems, NVAs and routing appliances, SMTP blocking, VNet peering, encryption, and VNet deletion errors. |
-| Best Practices | L41-L50 | Designing secure, high-performance VNets: outbound access control, NSG rules/flows, service endpoints, and TCP/IP/VM network tuning for throughput and reliability. |
+| Best Practices | L41-L50 | Designing secure, high-performance VNets: outbound VM access control, NSG rules/flows, VM throughput tuning, TCP/IP optimization, and secure use of VNet service endpoints. |
 | Decision Making | L51-L60 | Guidance on design choices: when to use accelerated networking, routing preferences, VNets vs appliances, IP upgrade paths, VNet integration options, and cost/performance trade-offs. |
 | Architecture & Design Patterns | L61-L67 | Designing VNet architectures: subnet extension for migrations, VNet peering, hybrid two-tier apps, traffic mirroring with TAP, topology planning, and custom routing options. |
 | Limits & Quotas | L68-L74 | IP address quotas, VM network throughput caps, and Virtual Network scale/limit behaviors (IP types, NICs, bandwidth) and how to design within these constraints. |
-| Security | L75-L84 | Network security for VNets: Kubernetes network policies, layered controls, Azure Policy for VNets, Virtual Network encryption concepts/config, and securing storage egress with service endpoint policies. |
-| Configuration | L85-L117 | Configuring Azure Virtual Network features: IPs (public/private/custom), DNS, MTU, DHCP, encryption, monitoring, subnet delegation/peering, and gateway/firewall/load balancer/NAT settings. |
-| Deployment | L118-L121 | Guidance for upgrading Azure Basic public IP addresses to Standard SKU, including requirements, steps, and considerations for network resources and downtime. |
+| Security | L75-L83 | Network security for VNets: Kubernetes network policies, layered controls, Azure Policy for VNets, Virtual Network encryption concepts/config, and securing storage egress with service endpoint policies. |
+| Configuration | L84-L116 | Configuring Azure Virtual Network features: IPs (public/private/custom), DNS, MTU, DHCP, encryption, monitoring, subnet delegation/peering, and gateway/firewall/load balancer/NAT settings. |
+| Deployment | L117-L120 | Guidance for upgrading Azure Basic public IP addresses to Standard SKU, including requirements, steps, and considerations for network resources and downtime. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -44,7 +44,7 @@ This skill requires **network access** to fetch documentation content:
 | Apply Azure Virtual Network design best practices | https://learn.microsoft.com/en-us/azure/virtual-network/concepts-and-best-practices |
 | Understand and control default outbound access for Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/default-outbound-access |
 | Configure Azure NSG rules and traffic processing | https://learn.microsoft.com/en-us/azure/virtual-network/network-security-group-how-it-works |
-| Tune Azure VM network settings for higher throughput | https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-optimize-network-bandwidth |
+| Optimize Azure VM network throughput settings | https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-optimize-network-bandwidth |
 | Implement Azure virtual network service endpoints securely | https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoints-overview |
 | Apply TCP/IP performance tuning on Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-tcpip-performance-tuning |
 
@@ -79,7 +79,6 @@ This skill requires **network access** to fetch documentation content:
 | Secure Azure Virtual Network deployments with layered controls | https://learn.microsoft.com/en-us/azure/virtual-network/secure-virtual-network |
 | Apply Azure Policy compliance controls to Virtual Network | https://learn.microsoft.com/en-us/azure/virtual-network/security-controls-policy |
 | Configure and manage Azure Virtual Network encryption | https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-encryption-faq |
-| Understand and use Azure Virtual Network encryption | https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-encryption-overview |
 | Secure Azure Storage egress with service endpoint policies | https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoint-policies-overview |
 
 ### Configuration

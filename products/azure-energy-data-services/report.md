@@ -1,11 +1,12 @@
 ---
-generated_at: '2026-07-19'
+generated_at: '2026-08-02'
 category_descriptions:
+  configuration: 'Configuring ADME operations: monitoring metrics, data partitioning,
+    CORS, audit logging, and milestone upgrade settings for secure, scalable data
+    management.'
   decision-making: Guidance on choosing ADME deployment tiers (Developer vs Standard)
     and checking which OSDU data/compute services and capabilities are available in
     each tier.
-  configuration: 'Configuring Azure Data Manager for Energy: data partitions, analytics
-    zone setup, CORS, audit logging, and milestone upgrade settings.'
   integrations: Patterns and examples for integrating Azure Energy Data Services with
     analytics platforms, external data sources, DDMS APIs, logs/monitoring, and large
     file workflows.
@@ -23,14 +24,14 @@ category_descriptions:
     error patterns.
 skill_description: Expert knowledge for Azure Energy Data Services development including
   troubleshooting, decision making, architecture & design patterns, security, configuration,
-  integrations & coding patterns, and deployment. Use when configuring ADME partitions/zones,
-  DDMS APIs, large file workflows, Geospatial CZ on AKS, or OSDU Admin UI, and other
-  Azure Energy Data Services related development tasks. Not for Azure Data Explorer
-  (use azure-data-explorer), Azure Synapse Analytics (use azure-synapse-analytics),
+  integrations & coding patterns, and deployment. Use when configuring ADME metrics/partitioning,
+  choosing tiers, securing auth/ACLs, deploying AKS geospatial, or fixing ingestion
+  logs, and other Azure Energy Data Services related development tasks. Not for Azure
+  Data Explorer (use azure-data-explorer), Azure Synapse Analytics (use azure-synapse-analytics),
   Azure Data Factory (use azure-data-factory), Azure Databricks (use azure-databricks).
-use_when: Use when configuring ADME partitions/zones, DDMS APIs, large file workflows,
-  Geospatial CZ on AKS, or OSDU Admin UI, and other Azure Energy Data Services related
-  development tasks.
+use_when: Use when configuring ADME metrics/partitioning, choosing tiers, securing
+  auth/ACLs, deploying AKS geospatial, or fixing ingestion logs, and other Azure Energy
+  Data Services related development tasks.
 confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure Synapse
   Analytics (use azure-synapse-analytics), Azure Data Factory (use azure-data-factory),
   Azure Databricks (use azure-databricks).
@@ -39,14 +40,14 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 
 ## Summary
 
-- **Total Pages**: 57
-- **Fetched**: 57
+- **Total Pages**: 59
+- **Fetched**: 59
 - **Fetch Failed**: 0
-- **Classified**: 37
-- **Unclassified**: 20
+- **Classified**: 38
+- **Unclassified**: 21
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 2
 - **Updated Pages**: 0
 - **Unchanged**: 57
 - **Deleted Pages**: 0
@@ -56,22 +57,28 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 1 | 1.8% |
-| configuration | 4 | 7.0% |
-| decision-making | 2 | 3.5% |
-| deployment | 1 | 1.8% |
-| integrations | 17 | 29.8% |
-| security | 11 | 19.3% |
-| troubleshooting | 1 | 1.8% |
-| *(Unclassified)* | 20 | 35.1% |
+| architecture-patterns | 1 | 1.7% |
+| configuration | 5 | 8.5% |
+| decision-making | 2 | 3.4% |
+| deployment | 1 | 1.7% |
+| integrations | 17 | 28.8% |
+| security | 11 | 18.6% |
+| troubleshooting | 1 | 1.7% |
+| *(Unclassified)* | 21 | 35.6% |
 
 ## Changes
+
+### New Pages
+
+- [Monitoring data reference](https://learn.microsoft.com/en-us/azure/energy-data-services/concepts-monitor-data-reference)
+- [Monitor Azure Data Manager for Energy](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-monitor-data-manager-energy)
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
 | [Troubleshooting manifest ingestion](https://learn.microsoft.com/en-us/azure/energy-data-services/troubleshoot-manifest-ingestion) | troubleshooting | 0.80 | Explicitly a troubleshooting article for manifest ingestion using Airflow task logs. Likely includes symptom → cause → solution mappings, log locations, and possibly error messages specific to this product’s ingestion workflows. |
+| [Monitoring data reference](https://learn.microsoft.com/en-us/azure/energy-data-services/concepts-monitor-data-reference) | configuration | 0.78 | A 'monitoring data reference' page for a specific Azure service typically lists all available metrics, dimensions, and log categories with exact names, units, and sometimes default behaviors. These are product-specific configuration/telemetry fields that LLMs are unlikely to know from training and are used to configure Azure Monitor queries and alerts, fitting the configuration sub-skill. |
 | [Airflow task logs integration with Azure Monitor](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-integrate-airflow-logs-with-azure-monitor) | integrations | 0.75 | How-to for exporting Airflow logs to Azure Monitor; includes diagnostic settings, categories, and configuration parameters specific to ADME’s Airflow integration. |
 | [Elastic logs integration with Azure Monitor](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-integrate-elastic-logs-with-azure-monitor) | integrations | 0.75 | Describes configuring Elasticsearch log export; likely includes specific diagnostic categories and settings unique to ADME. |
 | [Integrate OSDU Service Logs with Azure Monitor](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-integrate-osdu-service-logs-with-azure-monitor) | integrations | 0.75 | Integration of OSDU service logs with Azure Monitor via diagnostic settings; includes product-specific log categories and configuration parameters. |
@@ -124,6 +131,7 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 | [Create a Microsoft Azure Data Manager for Energy instance](https://learn.microsoft.com/en-us/azure/energy-data-services/quickstart-create-microsoft-energy-data-services-instance) | 0.30 | Quickstart creation guide; likely step-by-step portal usage without detailed configuration matrices or limits. |
 | [Domain Data Management Services (DDMS)](https://learn.microsoft.com/en-us/azure/energy-data-services/concepts-ddms) | 0.30 | DDMS concepts article; conceptual extension model, not concrete config or troubleshooting. |
 | [Indexing and search](https://learn.microsoft.com/en-us/azure/energy-data-services/concepts-index-and-search) | 0.30 | Index and search workflow concepts; high-level behavior, not configuration or limits. |
+| [Monitor Azure Data Manager for Energy](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-monitor-data-manager-energy) | 0.30 | Described as an introductory 'start here' article explaining what monitoring data is available and how to view/analyze it. This is more of a conceptual/how-to overview for monitoring Azure Data Manager for Energy, not a detailed reference of metrics, limits, or configuration tables, so it likely lacks the specific expert-only details required. |
 | [About Domain Data Management Services (DDMS)](https://learn.microsoft.com/en-us/azure/energy-data-services/overview-ddms) | 0.20 | Conceptual overview of domain data management services; no specific parameters, limits, or troubleshooting mappings. |
 | [About Microsoft Azure Data Manager for Energy](https://learn.microsoft.com/en-us/azure/energy-data-services/overview-microsoft-energy-data-services) | 0.20 | High-level product overview without concrete limits, configs, or error details. |
 | [Analytics consumption zone (ACZ)](https://learn.microsoft.com/en-us/azure/energy-data-services/concepts-analytics-consumption-zone) | 0.20 | Conceptual overview of Analytics Consumption Zone explaining what it is and how it mirrors data; no detailed limits, configuration tables, error codes, or other expert-only specifics. |

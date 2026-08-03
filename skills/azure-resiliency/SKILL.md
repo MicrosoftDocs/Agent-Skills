@@ -3,7 +3,7 @@ name: azure-resiliency
 description: Expert knowledge for Azure Resiliency development including security, configuration, and deployment. Use when testing zone-down drills, regional failover, Backup/Site Recovery vaults, protection policies, or RBAC for Recovery Plans, and other Azure Resiliency related development tasks. Not for Azure Reliability (use azure-reliability), Azure Site Recovery (use azure-site-recovery), Azure Backup (use azure-backup), Azure Monitor (use azure-monitor).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-19"
+  generated_at: "2026-08-02"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Resiliency Skill

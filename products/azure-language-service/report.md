@@ -52,9 +52,9 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 - **Unclassified**: 86
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 6
-- **Unchanged**: 173
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 180
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-language-service/azure-language-service.csv`
 
@@ -74,25 +74,6 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | *(Unclassified)* | 86 | 47.8% |
 
 ## Changes
-
-### New Pages
-
-- [Secure deployment](https://learn.microsoft.com/en-us/azure/ai-services/language-service/secure-deployment)
-
-### Updated Pages
-
-- [What is Azure Language in Foundry Tools?](https://learn.microsoft.com/en-us/azure/ai-services/language-service/overview)
-  - Updated: 2026-03-30T16:59:00.000Z → 2026-07-21T08:00:00.000Z
-- [What's new](https://learn.microsoft.com/en-us/azure/ai-services/language-service/whats-new)
-  - Updated: 2026-06-02T19:00:00.000Z → 2026-07-21T08:00:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/ai-services/language-service/personally-identifiable-information/overview)
-  - Updated: 2026-07-01T19:18:00.000Z → 2026-07-22T22:14:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/ai-services/language-service/personally-identifiable-information/document-based-pii-overview)
-  - Updated: 2026-07-01T19:18:00.000Z → 2026-07-22T22:14:00.000Z
-- [Quickstart](https://learn.microsoft.com/en-us/azure/ai-services/language-service/personally-identifiable-information/document-based-pii-playground)
-  - Updated: 2026-07-02T22:13:00.000Z → 2026-07-22T22:14:00.000Z
-- [Detect and redact PII in native documents](https://learn.microsoft.com/en-us/azure/ai-services/language-service/personally-identifiable-information/how-to/redact-document-pii)
-  - Updated: 2026-05-21T08:00:00.000Z → 2026-07-22T22:14:00.000Z
 
 ## Classified Pages
 

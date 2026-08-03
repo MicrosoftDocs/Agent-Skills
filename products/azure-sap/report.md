@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-26'
+generated_at: '2026-08-02'
 category_descriptions:
   configuration: 'Configuring SAP on Azure: automation framework setup, storage/network/HA
     clustering for HANA and NetWeaver, monitoring, BPS/Fabric integrations, and Azure
@@ -11,8 +11,8 @@ category_descriptions:
     Monitor, VIS (CLI/PowerShell/REST), Ansible, Salesforce, Exchange, Power Query,
     RISE services, and Universal Print.
   decision-making: 'Planning and design guidance for SAP on Azure: choosing VM/storage
-    configs, supported versions, app/DR architectures, connectivity, data tiering,
-    and data extraction to Fabric.'
+    configs, supported SAP versions, network and DR options, data extraction/tiering,
+    and overall SAP app architecture.'
   best-practices: Best practices for testing SAP on Azure (HA/DR, config validation,
     Quality Insights), and optimizing infrastructure (DFS-N SAPMNT, Azure Files NFS/SMB,
     VM scale sets) for reliable SAP HANA LI workloads.
@@ -31,32 +31,31 @@ category_descriptions:
 skill_description: Expert knowledge for SAP HANA on Azure Large Instances development
   including troubleshooting, best practices, decision making, architecture & design
   patterns, limits & quotas, security, configuration, integrations & coding patterns,
-  and deployment. Use when deploying SAP HANA LIs, S/4HANA/NetWeaver, Azure Monitor/AMS,
-  HA/DR topologies, or SAP RISE connectivity, and other SAP HANA on Azure Large Instances
-  related development tasks. Not for Azure Large Instances (use azure-large-instances),
-  Azure Virtual Machines (use azure-virtual-machines), SQL Server on Azure Virtual
-  Machines (use azure-sql-virtual-machines).
-use_when: Use when deploying SAP HANA LIs, S/4HANA/NetWeaver, Azure Monitor/AMS, HA/DR
-  topologies, or SAP RISE connectivity, and other SAP HANA on Azure Large Instances
-  related development tasks.
+  and deployment. Use when deploying HANA LIs, configuring HA clusters, integrating
+  Azure Monitor, automating CI/CD, or designing multi-region DR, and other SAP HANA
+  on Azure Large Instances related development tasks. Not for Azure Large Instances
+  (use azure-large-instances), Azure Virtual Machines (use azure-virtual-machines),
+  Azure VMware Solution (use azure-vmware-solution).
+use_when: Use when deploying HANA LIs, configuring HA clusters, integrating Azure
+  Monitor, automating CI/CD, or designing multi-region DR, and other SAP HANA on Azure
+  Large Instances related development tasks.
 confusable_not_for: Not for Azure Large Instances (use azure-large-instances), Azure
-  Virtual Machines (use azure-virtual-machines), SQL Server on Azure Virtual Machines
-  (use azure-sql-virtual-machines).
+  Virtual Machines (use azure-virtual-machines), Azure VMware Solution (use azure-vmware-solution).
 ---
 # SAP HANA on Azure Large Instances Crawl Report
 
 ## Summary
 
-- **Total Pages**: 223
-- **Fetched**: 223
+- **Total Pages**: 224
+- **Fetched**: 224
 - **Fetch Failed**: 0
-- **Classified**: 183
+- **Classified**: 184
 - **Unclassified**: 40
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 6
-- **Unchanged**: 217
+- **New Pages**: 1
+- **Updated Pages**: 0
+- **Unchanged**: 223
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sap/azure-sap.csv`
 
@@ -64,10 +63,10 @@ confusable_not_for: Not for Azure Large Instances (use azure-large-instances), A
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 31 | 13.9% |
+| architecture-patterns | 31 | 13.8% |
 | best-practices | 7 | 3.1% |
-| configuration | 76 | 34.1% |
-| decision-making | 10 | 4.5% |
+| configuration | 76 | 33.9% |
+| decision-making | 11 | 4.9% |
 | deployment | 27 | 12.1% |
 | integrations | 10 | 4.5% |
 | limits-quotas | 1 | 0.4% |
@@ -77,20 +76,9 @@ confusable_not_for: Not for Azure Large Instances (use azure-large-instances), A
 
 ## Changes
 
-### Updated Pages
+### New Pages
 
-- [Secure Azure Infrastructure for SAP](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-security-infrastructure)
-  - Updated: 2026-02-23T08:00:00.000Z → 2026-07-22T08:00:00.000Z
-- [Set up Pacemaker cluster](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-suse-pacemaker)
-  - Updated: 2026-03-19T08:00:00.000Z → 2026-07-24T17:11:00.000Z
-- [Scale-up with HSR and Pacemaker](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-hana-high-availability)
-  - Updated: 2025-11-13T08:00:00.000Z → 2026-07-22T08:00:00.000Z
-- [Scale-up with HSR and Pacemaker on Azure NetApp Files](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-hana-high-availability-netapp-files-suse)
-  - Updated: 2026-02-13T12:10:00.000Z → 2026-07-22T08:00:00.000Z
-- [Scale-out  with HSR and Pacemaker](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-hana-high-availability-scale-out-hsr-suse)
-  - Updated: 2026-03-25T08:00:00.000Z → 2026-07-22T08:00:00.000Z
-- [Azure Files NFS Encryption In Transit for SAP](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-azure-files-nfs-encryption-in-transit-guide)
-  - Updated: 2026-02-23T08:00:00.000Z → 2026-07-22T08:00:00.000Z
+- [Service scenarios and selection guidance](https://learn.microsoft.com/en-us/azure/sap/choose-sap-services-by-scenario)
 
 ## Classified Pages
 
@@ -146,6 +134,7 @@ confusable_not_for: Not for Azure Large Instances (use azure-large-instances), A
 | [Install HA SAP NetWeaver with Azure NetApp Files](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-netapp-files) | configuration | 0.74 | Describes detailed steps to configure VMs, cluster framework, and SAP instances for HA using Azure NetApp Files. Such SAP HA workload docs normally contain specific cluster resource definitions, ANF volume and mount configuration, SAP instance numbering conventions, and OS-level settings that are product- and scenario-specific, making this expert configuration guidance rather than a generic tutorial. |
 | [Install HA SAP NetWeaver with NFS on Azure Files](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-nfs-azure-files) | configuration | 0.74 | High-availability implementation guide for SAP NetWeaver on RHEL with NFS on Azure Files. These SAP-on-Azure HA guides typically include product- and scenario-specific cluster configuration parameters (Pacemaker/Corosync resources, fencing/STONITH settings, mount options, Azure Files/NFS export options, systemd and SAP profile parameters) and exact command lines unique to this workload, which qualify as expert configuration knowledge rather than generic concepts. |
 | [Set up Pacemaker cluster](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-pacemaker) | configuration | 0.74 | A Pacemaker HA setup guide for RHEL on Azure typically includes product- and OS-specific configuration commands, cluster resource definitions, fencing/STONITH settings, and parameter values unique to running Pacemaker with Azure VMs. This goes beyond generic theory and provides concrete, expert configuration details for this environment. |
+| [Service scenarios and selection guidance](https://learn.microsoft.com/en-us/azure/sap/choose-sap-services-by-scenario) | decision-making | 0.73 | The page provides scenario-based guidance for choosing between multiple Azure services (for deploying, managing, monitoring, integrating, and protecting SAP systems). It maps specific SAP scenarios to recommended Azure services and combinations, which is product- and scenario-specific decision guidance rather than generic concepts. |
 | [Install GlusterFS on Azure VMs for SAP NetWeaver](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-glusterfs) | configuration | 0.72 | The article provides step-by-step, product-specific configuration details for deploying and configuring a GlusterFS cluster on Azure VMs running RHEL for SAP NetWeaver, including concrete VM, network, storage, and cluster settings. It goes beyond generic concepts and includes exact configuration commands and patterns unique to this SAP-on-Azure scenario, fitting best under configuration rather than generic deployment guidance. |
 | [Install HA SAP NetWeaver](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel) | configuration | 0.72 | Covers deployment and configuration of VMs, cluster framework, and SAP NetWeaver HA on RHEL. These guides usually specify concrete Pacemaker/Corosync resource settings, Azure-specific cluster parameters, SAP instance configuration commands, and OS tuning values that are unique to SAP on Azure, which constitutes expert configuration knowledge. |
 | [Install HA SAP NetWeaver with NFS simple mount](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-nfs-simple-mount) | architecture-patterns | 0.72 | The article describes a concrete high-availability architecture for SAP NetWeaver on Azure VMs using Red Hat Enterprise Linux and Azure-native NFS services, including specific layout of ASCS, shared directories, and mount structures. It goes beyond generic HA concepts and provides product- and scenario-specific architectural guidance and patterns for how to structure and deploy the SAP application layer with NFS in Azure. |

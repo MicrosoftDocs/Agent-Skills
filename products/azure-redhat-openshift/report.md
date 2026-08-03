@@ -46,8 +46,8 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 64
+- **Updated Pages**: 0
+- **Unchanged**: 67
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-redhat-openshift/azure-redhat-openshift.csv`
 
@@ -66,15 +66,6 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | *(Unclassified)* | 14 | 20.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [What's new with Azure Red Hat OpenShift?](https://learn.microsoft.com/en-us/azure/openshift/azure-redhat-openshift-release-notes)
-  - Updated: 2026-06-24T08:00:00.000Z → 2026-07-07T08:00:00.000Z
-- [Frequently asked questions](https://learn.microsoft.com/en-us/azure/openshift/openshift-faq)
-  - Updated: 2026-03-09T22:14:00.000Z → 2026-07-22T22:09:00.000Z
-- [Support lifecycle for Azure Red Hat OpenShift 4](https://learn.microsoft.com/en-us/azure/openshift/support-lifecycle)
-  - Updated: 2026-04-20T08:00:00.000Z → 2026-07-07T08:00:00.000Z
 
 ## Classified Pages
 
