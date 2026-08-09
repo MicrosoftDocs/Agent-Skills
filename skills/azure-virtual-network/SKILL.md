@@ -1,9 +1,9 @@
 ---
 name: azure-virtual-network
-description: Expert knowledge for Azure Virtual Network development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and deployment. Use when configuring VNet peering, NSGs, service endpoints, VPN/ExpressRoute gateways, or Azure Firewall/NAT, and other Azure Virtual Network related development tasks. Not for Azure Networking (use azure-networking), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use azure-virtual-wan), Azure Firewall (use azure-firewall).
+description: Expert knowledge for Azure Virtual Network development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and deployment. Use when configuring VNets, peering, service endpoints, NVAs/virtual routers, or upgrading Basic to Standard IPs, and other Azure Virtual Network related development tasks. Not for Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-02"
+  generated_at: "2026-08-09"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Virtual Network Skill
@@ -24,19 +24,19 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L36-L40 | Diagnosing and fixing Azure VM/VNet connectivity issues: routing and NSG problems, NVAs and routing appliances, SMTP blocking, VNet peering, encryption, and VNet deletion errors. |
+| Troubleshooting | L36-L40 | Configuring, validating, and debugging Azure routing appliances (NVA/virtual routers), including routing setup, traffic flow issues, and common misconfiguration fixes. |
 | Best Practices | L41-L50 | Designing secure, high-performance VNets: outbound VM access control, NSG rules/flows, VM throughput tuning, TCP/IP optimization, and secure use of VNet service endpoints. |
-| Decision Making | L51-L60 | Guidance on design choices: when to use accelerated networking, routing preferences, VNets vs appliances, IP upgrade paths, VNet integration options, and cost/performance trade-offs. |
-| Architecture & Design Patterns | L61-L67 | Designing VNet architectures: subnet extension for migrations, VNet peering, hybrid two-tier apps, traffic mirroring with TAP, topology planning, and custom routing options. |
-| Limits & Quotas | L68-L74 | IP address quotas, VM network throughput caps, and Virtual Network scale/limit behaviors (IP types, NICs, bandwidth) and how to design within these constraints. |
-| Security | L75-L83 | Network security for VNets: Kubernetes network policies, layered controls, Azure Policy for VNets, Virtual Network encryption concepts/config, and securing storage egress with service endpoint policies. |
-| Configuration | L84-L116 | Configuring Azure Virtual Network features: IPs (public/private/custom), DNS, MTU, DHCP, encryption, monitoring, subnet delegation/peering, and gateway/firewall/load balancer/NAT settings. |
-| Deployment | L117-L120 | Guidance for upgrading Azure Basic public IP addresses to Standard SKU, including requirements, steps, and considerations for network resources and downtime. |
+| Decision Making | L51-L61 | Guidance on performance and cost trade-offs: MANA support, Accelerated Networking, routing preference, public IP upgrades, VNet cost optimization, and VNet integration for service isolation. |
+| Architecture & Design Patterns | L62-L68 | Designing VNet architectures: subnet extension for migrations, VNet peering, hybrid two-tier apps, traffic mirroring with TAP, topology planning, and custom routing options. |
+| Limits & Quotas | L69-L75 | IP address quotas, VM network throughput caps, and Virtual Network scale/limit behaviors (IP types, NICs, bandwidth) and how to design within these constraints. |
+| Security | L76-L84 | Network security for VNets: Kubernetes network policies, layered controls, Azure Policy for VNets, Virtual Network encryption concepts/config, and securing storage egress with service endpoint policies. |
+| Configuration | L85-L117 | Configuring Azure Virtual Network behavior: IPs (public/private/custom prefixes), MTU, DNS, DHCP, encryption, monitoring, policies, subnet peering/delegation, and gateway/firewall/load balancer settings. |
+| Deployment | L118-L121 | Guidance for upgrading Azure Basic public IP addresses to Standard SKU, including requirements, steps, and considerations for network resources and downtime. |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
-| Register and create Azure Virtual Network routing appliances | https://learn.microsoft.com/en-us/azure/virtual-network/how-to-create-virtual-network-routing-appliance |
+| Configure and troubleshoot Azure routing appliances | https://learn.microsoft.com/en-us/azure/virtual-network/how-to-create-virtual-network-routing-appliance |
 
 ### Best Practices
 | Topic | URL |
@@ -51,6 +51,7 @@ This skill requires **network access** to fetch documentation content:
 ### Decision Making
 | Topic | URL |
 |-------|-----|
+| Decide MANA support for existing Azure VM sizes | https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-existing-sizes |
 | Decide when to use Azure Accelerated Networking | https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-overview |
 | Plan and execute upgrade from Basic to Standard public IPs | https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-basic-upgrade-guidance |
 | Choose Azure routing preference via Microsoft or ISP network | https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/routing-preference-overview |
@@ -85,7 +86,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Configure MANA for Linux Azure virtual machines | https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-linux |
-| Configure MANA support and opt-out for Azure NVAs | https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-network-virtual-appliance-opt-out |
+| Configure MANA behavior for NVAs on existing VM sizes | https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-network-virtual-appliance-opt-out |
 | Configure advertised gateway prefixes for hub VNets | https://learn.microsoft.com/en-us/azure/virtual-network/how-to-advertised-gateway-prefixes |
 | Configure subnet peering in Azure virtual networks | https://learn.microsoft.com/en-us/azure/virtual-network/how-to-configure-subnet-peering |
 | Create and configure an encrypted Azure virtual network | https://learn.microsoft.com/en-us/azure/virtual-network/how-to-create-encryption |

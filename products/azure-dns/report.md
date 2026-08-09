@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-02'
+generated_at: '2026-08-09'
 category_descriptions:
   integrations: Automating Azure DNS zone/record management and subdomain delegation
     with PowerShell/CLI, plus importing/exporting DNS zone files and mapping Azure
@@ -7,9 +7,9 @@ category_descriptions:
   limits-quotas: DNS record, zone, and query limits for Azure DNS and Private DNS,
     including quotas, scaling behaviors, usage constraints, and how many zones/records
     you can create and manage.
-  security: Protecting DNS zones/records from deletion, configuring DNS security policies
-    and logging, using DNSSEC for public zones, and securing Azure DNS with RBAC,
-    alerts, and built-in protections.
+  security: 'Securing Azure DNS: protecting private/public zones from deletion, configuring
+    DNS resolver policies and threat protection, using DNSSEC, and setting access
+    control and monitoring.'
   configuration: 'Configuring Azure DNS behavior: reverse DNS, private DNS zones and
     resolvers, zone file import/export, monitoring/metrics/logs, and query/ResolutionPolicy
     settings for name resolution.'
@@ -19,21 +19,21 @@ category_descriptions:
     when to use centralized vs distributed DNS Private Resolvers and how to shard
     Private DNS zones for high availability.
   troubleshooting: Diagnosing and resolving Azure DNS name resolution failures, including
-    common misconfigurations, network/DNS forwarding issues, and step-by-step troubleshooting
-    guidance.
+    troubleshooting DNS records, zones, forwarding, and common configuration or connectivity
+    issues.
 skill_description: Expert knowledge for Azure DNS development including troubleshooting,
   decision making, architecture & design patterns, limits & quotas, security, configuration,
-  and integrations & coding patterns. Use when automating DNS zones/records, using
-  Private DNS/Resolvers, enabling DNSSEC, migrating legacy zones, or fixing name resolution,
+  and integrations & coding patterns. Use when automating DNS zones/records, securing
+  DNSSEC, configuring Private Resolvers, migrating Private DNS, or fixing name resolution,
   and other Azure DNS related development tasks. Not for Azure Traffic Manager (use
-  azure-traffic-manager), Azure Front Door (use azure-front-door), Azure Virtual Network
-  (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager).
-use_when: Use when automating DNS zones/records, using Private DNS/Resolvers, enabling
-  DNSSEC, migrating legacy zones, or fixing name resolution, and other Azure DNS related
-  development tasks.
+  azure-traffic-manager), Azure Load Balancer (use azure-load-balancer), Azure Application
+  Gateway (use azure-application-gateway), Azure Front Door (use azure-front-door).
+use_when: Use when automating DNS zones/records, securing DNSSEC, configuring Private
+  Resolvers, migrating Private DNS, or fixing name resolution, and other Azure DNS
+  related development tasks.
 confusable_not_for: Not for Azure Traffic Manager (use azure-traffic-manager), Azure
-  Front Door (use azure-front-door), Azure Virtual Network (use azure-virtual-network),
-  Azure Virtual Network Manager (use azure-virtual-network-manager).
+  Load Balancer (use azure-load-balancer), Azure Application Gateway (use azure-application-gateway),
+  Azure Front Door (use azure-front-door).
 ---
 # Azure DNS Crawl Report
 
@@ -46,10 +46,10 @@ confusable_not_for: Not for Azure Traffic Manager (use azure-traffic-manager), A
 - **Unclassified**: 50
 
 ### Incremental Update
-- **New Pages**: 5
+- **New Pages**: 0
 - **Updated Pages**: 5
-- **Unchanged**: 69
-- **Deleted Pages**: 1
+- **Unchanged**: 74
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-dns/azure-dns.csv`
 
 ## Classification Statistics
@@ -67,40 +67,27 @@ confusable_not_for: Not for Azure Traffic Manager (use azure-traffic-manager), A
 
 ## Changes
 
-### New Pages
-
-- [Create Traffic Manager linked records - Portal](https://learn.microsoft.com/en-us/azure/dns/tutorial-traffic-manager-linked-records-portal)
-- [Create Traffic Manager linked records - CLI](https://learn.microsoft.com/en-us/azure/dns/tutorial-traffic-manager-linked-records-cli)
-- [Create Traffic Manager linked records - PowerShell](https://learn.microsoft.com/en-us/azure/dns/tutorial-traffic-manager-linked-records-powershell)
-- [Traffic Manager linked records](https://learn.microsoft.com/en-us/azure/dns/dns-traffic-manager-linked-records)
-- [Troubleshoot public DNS](https://learn.microsoft.com/en-us/troubleshoot/azure/dns/troubleshoot-dns)
-
 ### Updated Pages
 
-- [What is Azure Public DNS?](https://learn.microsoft.com/en-us/azure/dns/public-dns-overview)
-  - Updated: 2024-10-31T05:34:00.000Z → 2026-07-31T19:23:00.000Z
-- [Create alias records for Traffic Manager](https://learn.microsoft.com/en-us/azure/dns/tutorial-alias-tm)
-  - Updated: 2026-03-04T06:13:00.000Z → 2026-07-31T19:23:00.000Z
-- [Integrate with other Azure services](https://learn.microsoft.com/en-us/azure/dns/dns-for-azure-services)
-  - Updated: 2023-11-30T08:00:00.000Z → 2026-07-31T19:23:00.000Z
-- [Alias records](https://learn.microsoft.com/en-us/azure/dns/dns-alias)
-  - Updated: 2024-09-24T08:00:00.000Z → 2026-07-31T19:23:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/dns/dns-faq)
-  - Updated: 2026-03-25T22:12:00.000Z → 2026-07-31T19:23:00.000Z
-
-### Deleted Pages
-
-- ~~Support and troubleshooting~~ (https://learn.microsoft.com/en-us/azure/dns/dns-support-help)
+- [Azure DNS overview](https://learn.microsoft.com/en-us/azure/dns/dns-overview)
+  - Updated: 2026-06-22T08:00:00.000Z → 2026-07-28T08:00:00.000Z
+- [What is DNS security policy?](https://learn.microsoft.com/en-us/azure/dns/dns-security-policy)
+  - Updated: 2025-11-18T18:43:00.000Z → 2026-08-05T11:41:00.000Z
+- [How-to secure and view DNS traffic](https://learn.microsoft.com/en-us/azure/dns/dns-traffic-log-how-to)
+  - Updated: 2025-11-18T18:43:00.000Z → 2026-08-05T11:41:00.000Z
+- [Secure DNS](https://learn.microsoft.com/en-us/azure/dns/secure-dns)
+  - Updated: 2025-08-07T05:10:00.000Z → 2026-07-28T08:00:00.000Z
+- [Troubleshoot public DNS](https://learn.microsoft.com/en-us/troubleshoot/azure/dns/troubleshoot-dns)
+  - Updated: 2026-04-08T18:04:00.000Z → 2026-08-03T18:07:00.000Z
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
+| [Troubleshoot public DNS](https://learn.microsoft.com/en-us/troubleshoot/azure/dns/troubleshoot-dns) | troubleshooting | 0.85 | Explicitly a troubleshooting article for Azure DNS, covering zones, records, Private DNS, Private Resolver, and forwarding. It likely maps specific symptoms to causes and resolutions, including Azure-specific diagnostic steps and commands. |
 | [Azure DNS Monitoring data reference](https://learn.microsoft.com/en-us/azure/dns/monitor-dns-reference) | configuration | 0.80 | Monitoring data reference typically includes exact metric names, dimensions, log categories, and schemas, which are detailed configuration references unique to Azure DNS. |
-| [Troubleshoot public DNS](https://learn.microsoft.com/en-us/troubleshoot/azure/dns/troubleshoot-dns) | troubleshooting | 0.80 | Troubleshoot Azure DNS is explicitly a troubleshooting guide for zone delegation, record creation, and name resolution. Such pages typically map symptoms to causes and resolutions, and include product-specific diagnostic steps and possibly error messages, fitting the troubleshooting sub-skill. |
 | [Fallback to internet resolution](https://learn.microsoft.com/en-us/azure/dns/private-dns-fallback) | configuration | 0.75 | Explains setting the ResolutionPolicy property and its behavior; contains a specific configuration property and allowed behavior, which is product-specific configuration knowledge. |
 | [Private resolver architecture](https://learn.microsoft.com/en-us/azure/dns/private-resolver-architecture) | architecture-patterns | 0.75 | Explicit architecture guidance comparing centralized and noncentralized resolver designs in hub-and-spoke topologies with product-specific recommendations and example configurations. |
-| [Secure DNS](https://learn.microsoft.com/en-us/azure/dns/secure-dns) | security | 0.75 | Security-focused guidance for Azure DNS; likely includes RBAC role names, access scopes, and specific security settings and monitoring recommendations unique to Azure DNS. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/dns/dns-import-export) | integrations | 0.70 | CLI-based import/export article; likely includes Azure DNS–specific CLI commands, parameters, and constraints for zone file handling. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/dns/private-dns-import-export) | configuration | 0.70 | CLI-focused guide for zone file import/export; includes command parameters and options specific to Azure DNS. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/dns/private-dns-import-export-portal) | configuration | 0.70 | How-to for importing/exporting zone files; likely includes specific options, constraints, and parameter usage for Azure Private DNS zone file operations. |
@@ -110,6 +97,7 @@ confusable_not_for: Not for Azure Traffic Manager (use azure-traffic-manager), A
 | [Private DNS zone migration guide](https://learn.microsoft.com/en-us/azure/dns/private-dns-migration-guide) | decision-making | 0.70 | Migration guide from legacy to GA resource model with a deadline; includes concrete migration steps and considerations, which are product-specific decision and upgrade guidance. |
 | [Protect private DNS zones and records](https://learn.microsoft.com/en-us/azure/dns/dns-protect-private-zones-recordsets) | security | 0.70 | Similar to public zones protection but for Private DNS; likely details product-specific mechanisms (locks, permissions) and how they apply to private zones. |
 | [Protect public DNS zones and records](https://learn.microsoft.com/en-us/azure/dns/dns-protect-zones-recordsets) | security | 0.70 | Explains how Azure DNS protects zones and records against unauthorized or accidental changes; likely includes specific Azure features (locks, RBAC roles) and configuration steps. |
+| [Secure DNS](https://learn.microsoft.com/en-us/azure/dns/secure-dns) | security | 0.70 | Security-focused guidance for Azure DNS deployments that likely includes product-specific RBAC roles, access management patterns, and monitoring/protection configurations beyond generic security concepts. |
 | [Sharding private DNS zones](https://learn.microsoft.com/en-us/azure/dns/sharding-private-dns-zones) | architecture-patterns | 0.70 | Provides architectural guidance specific to sharding Private DNS zones for large-scale environments; likely includes product-specific design patterns and trade-offs unique to Azure DNS. |
 | [Sign a DNS zone](https://learn.microsoft.com/en-us/azure/dns/dnssec-how-to) | security | 0.70 | How-to for DNSSEC signing; likely includes DNSSEC-specific settings, key parameters, and Azure DNSSEC configuration steps unique to the product. |
 | [Use Azure Resource Graph Explorer](https://learn.microsoft.com/en-us/azure/dns/private-dns-arg) | configuration | 0.70 | Provides example ARG queries and resource schema details for Private DNS; includes field names and query patterns that are product-specific configuration/usage details. |
@@ -117,7 +105,7 @@ confusable_not_for: Not for Azure Traffic Manager (use azure-traffic-manager), A
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/dns/dns-operations-recordsets) | integrations | 0.65 | PowerShell article listing commands for record operations; includes Azure DNS–specific cmdlets and parameters, which are integration patterns. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/dns/dns-import-export-portal) | integrations | 0.65 | Describes import/export behavior for DNS zone files in Azure DNS; typically includes supported formats, constraints, and portal options that are product-specific. |
 | [DNSSEC overview](https://learn.microsoft.com/en-us/azure/dns/dnssec) | security | 0.65 | DNSSEC configuration overview for Azure Public DNS; typically includes DNSSEC-specific record types and Azure-specific signing behavior and requirements, which are product-specific security details. |
-| [How-to secure and view DNS traffic](https://learn.microsoft.com/en-us/azure/dns/dns-traffic-log-how-to) | security | 0.65 | How-to guide for DNS security policy and Threat intelligence feed; likely includes specific policy settings, filters, and configuration parameters unique to Azure DNS. |
+| [How-to secure and view DNS traffic](https://learn.microsoft.com/en-us/azure/dns/dns-traffic-log-how-to) | security | 0.65 | How-to guide for securing and viewing DNS traffic using DNS resolver policy and Threat intelligence feed in Azure DNS; likely includes specific policy settings, configuration parameters, and security-focused options unique to Azure DNS. |
 | [Integrate with other Azure services](https://learn.microsoft.com/en-us/azure/dns/dns-for-azure-services) | integrations | 0.65 | Contains a table mapping specific Azure services to supported DNS record types, which is a product-specific integration pattern detailing which record types can be used for each service. |
 | [Unsign a DNS zone](https://learn.microsoft.com/en-us/azure/dns/dnssec-unsign) | security | 0.65 | Companion to DNSSEC signing article; contains product-specific steps and parameters to unsign zones, which are security configuration details. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/dns/dns-operations-dnszones-cli) | integrations | 0.60 | CLI-focused management article; likely includes Azure DNS–specific CLI commands and parameters, which are integration patterns with concrete API usage. |
@@ -143,7 +131,6 @@ confusable_not_for: Not for Azure Traffic Manager (use azure-traffic-manager), A
 | [Resiliency in Azure DNS Private Resolver](https://learn.microsoft.com/en-us/azure/dns/private-resolver-reliability) | 0.40 | Reliability overview; mentions availability zones and disaster recovery conceptually without detailed configuration parameters or numeric thresholds. |
 | [Resolve Azure and on-premises domains](https://learn.microsoft.com/en-us/azure/dns/private-resolver-hybrid-dns) | 0.40 | Hybrid DNS resolution tutorial; focuses on setup steps rather than detailed configuration matrices or error mappings. |
 | [Virtual network links](https://learn.microsoft.com/en-us/azure/dns/private-dns-virtual-network-links) | 0.40 | Conceptual explanation of virtual network link subresources; summary does not indicate numeric limits or detailed configuration tables. |
-| [What is DNS security policy?](https://learn.microsoft.com/en-us/azure/dns/dns-security-policy) | 0.40 | Overview of DNS security policy; references features but defers detailed configuration to other how-to guides. |
 | [Create alias records for zone records](https://learn.microsoft.com/en-us/azure/dns/tutorial-alias-rr) | 0.35 | Tutorial for alias records referencing other records; scenario-focused, not a comprehensive configuration reference. |
 | [Create custom DNS records for a web app](https://learn.microsoft.com/en-us/azure/dns/dns-web-sites-custom-domain) | 0.35 | Tutorial for custom DNS records for web apps; mostly step-by-step, without detailed product-specific config matrices. |
 | [Alias records](https://learn.microsoft.com/en-us/azure/dns/dns-alias) | 0.30 | Alias records overview describes what alias records are and how they conceptually work in Azure DNS, but there's no indication of numeric limits, configuration parameter tables, or product-specific best-practice gotchas; it appears to be a conceptual feature overview. |
@@ -177,6 +164,7 @@ confusable_not_for: Not for Azure Traffic Manager (use azure-traffic-manager), A
 | [Reverse DNS](https://learn.microsoft.com/en-us/azure/dns/dns-reverse-dns-overview) | 0.20 | Conceptual overview of reverse DNS in Azure; lacks specific limits, configuration parameters, or error mappings. |
 | [What is Azure Private DNS?](https://learn.microsoft.com/en-us/azure/dns/private-dns-overview) | 0.20 | Overview of Azure Private DNS; conceptual description without detailed settings or limits. |
 | [What is Azure Public DNS?](https://learn.microsoft.com/en-us/azure/dns/public-dns-overview) | 0.20 | High-level overview of Azure Public DNS; no specific limits, configuration tables, error codes, or product-specific numeric details. |
+| [What is DNS security policy?](https://learn.microsoft.com/en-us/azure/dns/dns-security-policy) | 0.20 | Conceptual overview of DNS resolver policy and threat intelligence feed; detailed configuration and security settings are deferred to separate how-to guides. |
 | [What is an Azure Private DNS zone?](https://learn.microsoft.com/en-us/azure/dns/private-dns-privatednszone) | 0.20 | Page is an overview of Azure Private DNS zones (what they are, high-level behavior). The description mentions setup, limits, and best practices, but the provided summary only shows conceptual information about resolution scope and linking to virtual networks. No concrete numeric limits, configuration parameter tables, error codes, or decision matrices are evident, so it does not meet the expert-knowledge criteria for any sub-skill type. |
-| [Azure DNS overview](https://learn.microsoft.com/en-us/azure/dns/dns-overview) | 0.10 | High-level overview of Azure DNS hosting and resolution; no specific limits, configuration tables, error codes, or product-specific decision matrices. |
+| [Azure DNS overview](https://learn.microsoft.com/en-us/azure/dns/dns-overview) | 0.10 | High-level overview of Azure DNS hosting and resolution without specific limits, configuration parameters, error codes, or decision matrices. |
 | [What is Azure DNS Private Resolver?](https://learn.microsoft.com/en-us/azure/dns/dns-private-resolver-overview) | 0.10 | Conceptual overview of Azure DNS Private Resolver features and benefits; lacks numeric limits, detailed configuration parameters, or troubleshooting mappings. |

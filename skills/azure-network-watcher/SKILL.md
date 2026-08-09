@@ -1,9 +1,9 @@
 ---
 name: azure-network-watcher
-description: Expert knowledge for Azure Network Watcher development including troubleshooting, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when managing NSG/VNet flow logs, Traffic Analytics, Connection Monitor migration, packet capture, or Sentinel integration, and other Azure Network Watcher related development tasks. Not for Azure Monitor (use azure-monitor), Azure Virtual Network (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Networking (use azure-networking).
+description: Expert knowledge for Azure Network Watcher development including troubleshooting, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when configuring flow logs/Traffic Analytics, VPN monitoring, packet capture, KQL/Sentinel, or Power BI views, and other Azure Network Watcher related development tasks. Not for Azure Monitor (use azure-monitor), Azure Virtual Network (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Networking (use azure-networking).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-02"
+  generated_at: "2026-08-09"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Network Watcher Skill
@@ -28,7 +28,7 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L45-L51 | Guidance for migrating network monitoring: moving from classic Connection Monitor and Network Performance Monitor tests, and switching NSG flow logs to VNet flow logs. |
 | Limits & Quotas | L52-L56 | How to configure and run Network Watcher packet capture, storage and filtering options, and the key limits/quotas (size, duration, concurrency) that apply to captures |
 | Security | L57-L64 | Securing Network Watcher: RBAC setup, hardening deployments and data access, Zero Trust segmentation with Traffic Analytics, and protecting VNet flow logs using managed identities. |
-| Configuration | L65-L79 | Configuring and managing Network Watcher agents and flow logs (NSG/VNet), including schemas, filters, ARM/Bicep setup, Traffic Analytics, and Azure Policy enforcement/governance. |
+| Configuration | L65-L79 | Configuring and deploying Network Watcher/NSG/VNet flow logs and Traffic Analytics, including agents (Linux/Arc), schemas, filtering, ARM/Bicep templates, and Azure Policy governance. |
 | Integrations & Coding Patterns | L80-L84 | Using Network Watcher data in tools and code: parsing NSG flow logs with PowerShell, visualizing in Power BI, triggering packet capture from Functions, querying Traffic Analytics with KQL, and integrating with Sentinel. |
 
 ### Troubleshooting
@@ -68,14 +68,14 @@ This skill requires **network access** to fetch documentation content:
 | Install and manage Azure Monitor Agent on Arc servers | https://learn.microsoft.com/en-us/azure/network-watcher/connection-monitor-install-azure-monitor-agent |
 | Understand Connection Monitor Log Analytics data schemas | https://learn.microsoft.com/en-us/azure/network-watcher/connection-monitor-schema |
 | Install and manage Network Watcher Agent on Linux VMs | https://learn.microsoft.com/en-us/azure/network-watcher/network-watcher-agent-linux |
-| Configure NSG flow logs using Bicep | https://learn.microsoft.com/en-us/azure/network-watcher/nsg-flow-logs-bicep |
 | Configure and manage Azure NSG flow logs | https://learn.microsoft.com/en-us/azure/network-watcher/nsg-flow-logs-manage |
-| Enable NSG flow logs with ARM templates | https://learn.microsoft.com/en-us/azure/network-watcher/nsg-flow-logs-template |
 | Govern Traffic Analytics with Azure Policy | https://learn.microsoft.com/en-us/azure/network-watcher/traffic-analytics-policy-portal |
 | Understand Traffic Analytics schema and aggregation | https://learn.microsoft.com/en-us/azure/network-watcher/traffic-analytics-schema |
+| Deploy Network Watcher flow logs with Bicep | https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-bicep |
 | Configure filtering for Azure VNet flow logs | https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-filtering |
 | Configure and manage Azure virtual network flow logs | https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-manage |
 | Enforce VNet flow logs with Azure Policy | https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-policy |
+| Deploy Network Watcher flow logs via ARM template | https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-template |
 
 ### Integrations & Coding Patterns
 | Topic | URL |

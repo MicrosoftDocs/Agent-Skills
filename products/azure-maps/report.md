@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-12'
+generated_at: '2026-08-09'
 category_descriptions:
   integrations: 'Patterns and code for integrating Azure Maps: Web/REST/Power BI SDK
     usage, layers and drawing, geocoding/routing/weather, Spatial IO/WMS, and migrations
@@ -21,18 +21,13 @@ category_descriptions:
   decision-making: Guidance on pricing, billing, and migrating maps apps to Azure
     Maps from Bing, Google, Power BI visuals, and older Azure Maps APIs, including
     routing, tiles, and search replacements
-  troubleshooting: Diagnosing and fixing common Azure Maps Weather API issues, including
-    authentication, quota/usage limits, request/response errors, and troubleshooting
-    incorrect or missing weather data.
-skill_description: Expert knowledge for Azure Maps development including troubleshooting,
-  best practices, decision making, architecture & design patterns, limits & quotas,
-  security, configuration, and integrations & coding patterns. Use when using web/REST/Power
-  BI SDKs, geocoding/routing/weather APIs, tiles/rendering, or DEM/cuOpt routing,
-  and other Azure Maps related development tasks. Not for Azure AI Search (use azure-cognitive-search),
-  Azure IoT (use azure-iot), Azure IoT Central (use azure-iot-central), Azure IoT
-  Edge (use azure-iot-edge).
+skill_description: Expert knowledge for Azure Maps development including best practices,
+  decision making, architecture & design patterns, limits & quotas, security, configuration,
+  and integrations & coding patterns. Use when using web/REST/Power BI SDKs, geocoding/routing/weather
+  APIs, tiles/rendering, or multi-stop route optimization, and other Azure Maps related
+  development tasks.
 use_when: Use when using web/REST/Power BI SDKs, geocoding/routing/weather APIs, tiles/rendering,
-  or DEM/cuOpt routing, and other Azure Maps related development tasks.
+  or multi-stop route optimization, and other Azure Maps related development tasks.
 confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure IoT
   (use azure-iot), Azure IoT Central (use azure-iot-central), Azure IoT Edge (use
   azure-iot-edge).
@@ -44,13 +39,13 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 - **Total Pages**: 147
 - **Fetched**: 147
 - **Fetch Failed**: 0
-- **Classified**: 115
-- **Unclassified**: 32
+- **Classified**: 114
+- **Unclassified**: 33
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 147
+- **Updated Pages**: 1
+- **Unchanged**: 146
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-maps/azure-maps.csv`
 
@@ -65,10 +60,14 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | integrations | 59 | 40.1% |
 | limits-quotas | 6 | 4.1% |
 | security | 11 | 7.5% |
-| troubleshooting | 1 | 0.7% |
-| *(Unclassified)* | 32 | 21.8% |
+| *(Unclassified)* | 33 | 22.4% |
 
 ## Changes
+
+### Updated Pages
+
+- [Weather service FAQ](https://learn.microsoft.com/en-us/azure/azure-maps/weather-services-faq)
+  - Updated: 2026-06-22T22:13:00.000Z → 2026-08-06T22:11:00.000Z
 
 ## Classified Pages
 
@@ -154,7 +153,6 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | [Create multi-itinerary optimization service](https://learn.microsoft.com/en-us/azure/azure-maps/itinerary-optimization-service) | architecture-patterns | 0.68 | Describes a two-step architecture (cost matrix + solver) using Azure Maps and cuOpt, including how to structure the optimization service; this is a product-specific architectural pattern. |
 | [Get Imagery Metadata](https://learn.microsoft.com/en-us/azure/azure-maps/migrate-get-imagery-metadata) | decision-making | 0.68 | Migration guidance between Bing Maps and Azure Maps usually includes mapping of parameters, capabilities, and behavior differences between the two APIs, helping choose equivalent options and patterns. This is product-specific decision/migration content beyond generic concepts. |
 | [Migrate from Google Maps](https://learn.microsoft.com/en-us/azure/azure-maps/migrate-from-google-maps) | decision-making | 0.68 | Migration tutorial includes concrete mapping between Google Maps APIs/SDKs and Azure Maps equivalents plus product-specific migration suggestions and patterns that guide technology choice; this is specialized, product-specific guidance beyond generic knowledge. |
-| [Weather service FAQ](https://learn.microsoft.com/en-us/azure/azure-maps/weather-services-faq) | troubleshooting | 0.68 | FAQ for a specific service typically includes concrete answers about data availability, feature behavior, and known limitations, often with product-specific details (for example, which weather data sources are used, how often data is refreshed, or how certain edge cases are handled). These are symptom → explanation style mappings unique to Azure Maps Weather, fitting troubleshooting better than other categories, even though it's framed as an FAQ. |
 | [Add a bubble layer](https://learn.microsoft.com/en-us/azure/azure-maps/map-add-bubble-layer) | configuration | 0.66 | Shows how to render point data as bubble layers and use filters like geometry-type; includes specific configuration expressions and options unique to Azure Maps. |
 | [Add a symbol layer](https://learn.microsoft.com/en-us/azure/azure-maps/map-add-pin) | configuration | 0.66 | Provides detailed usage of symbol layers, including data source binding and performance considerations; product-specific configuration and behavior details. |
 | [Create a data source](https://learn.microsoft.com/en-us/azure/azure-maps/create-data-source-web-sdk) | configuration | 0.66 | Explains GeoJSON and vector tile data sources with concrete API usage and options; these are specific configuration patterns for data handling. |
@@ -226,3 +224,4 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | [Search for point of interest](https://learn.microsoft.com/en-us/azure/azure-maps/tutorial-search-location) | 0.20 | Tutorial on searching locations; focuses on example usage rather than product-specific limits, configuration options, or error codes. |
 | [Spatial IO module](https://learn.microsoft.com/en-us/azure/azure-maps/release-notes-spatial-module) | 0.20 | This Spatial IO Module release notes page is a change log for the Azure Maps Spatial IO Module. It does not present structured limits, configuration tables, error codes, or decision-making guidance required for classification into the defined sub-skill types. |
 | [What is Azure Maps?](https://learn.microsoft.com/en-us/azure/azure-maps/about-azure-maps) | 0.20 | High-level product overview of Azure Maps services and capabilities without detailed limits, configuration tables, or error mappings. |
+| [Weather service FAQ](https://learn.microsoft.com/en-us/azure/azure-maps/weather-services-faq) | - | FAQ-style page about Azure Maps Weather service; based on the description it likely covers general questions about data and features rather than detailed limits, configuration parameters, error codes, or decision matrices. Without evidence of specific numeric limits, config tables, or error-code mappings, it doesn't meet any sub-skill detection criteria. |

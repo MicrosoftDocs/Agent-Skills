@@ -45,8 +45,8 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure App Service
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 5
-- **Unchanged**: 40
+- **Updated Pages**: 0
+- **Unchanged**: 45
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-managed-grafana/azure-managed-grafana.csv`
 
@@ -64,19 +64,6 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure App Service
 | *(Unclassified)* | 12 | 26.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [Service limits](https://learn.microsoft.com/en-us/azure/managed-grafana/known-limitations)
-  - Updated: 2026-07-24T17:11:00.000Z → 2026-07-30T11:56:00.000Z
-- [Configure data sources](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-data-source-plugins-managed-identity)
-  - Updated: 2026-06-29T17:15:00.000Z → 2026-07-30T11:56:00.000Z
-- [Add an Azure Monitor workspace](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-connect-azure-monitor-workspace)
-  - Updated: 2025-02-20T12:33:00.000Z → 2026-07-03T08:00:00.000Z
-- [Configure bundled Prometheus](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-bundled-prometheus)
-  - Updated: 2026-05-22T11:42:00.000Z → 2026-07-03T08:00:00.000Z
-- [Create a dashboard](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-create-dashboard)
-  - Updated: 2025-11-21T08:00:00.000Z → 2026-07-30T11:56:00.000Z
 
 ## Classified Pages
 

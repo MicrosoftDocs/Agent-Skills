@@ -1,9 +1,9 @@
 ---
 name: azure-update-manager
-description: Expert knowledge for Azure Update Manager development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when onboarding VMs/Arc servers, configuring Automanage profiles, guest patching, DCRs/workspaces, or Update Manager APIs, and other Azure Update Manager related development tasks. Not for Azure Automation (use azure-automation), Azure Monitor (use azure-monitor), Azure Policy (use azure-policy), Azure Osconfig (use azure-osconfig).
+description: Expert knowledge for Azure Update Manager development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when onboarding VMs/Arc, configuring patch schedules/ESU, using SDK/REST APIs, or migrating from ConfigMgr, and other Azure Update Manager related development tasks. Not for Azure Automation (use azure-automation), Azure Monitor (use azure-monitor), Azure Policy (use azure-policy), Azure Resource Manager (use azure-resource-manager).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-19"
+  generated_at: "2026-08-09"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Update Manager Skill
@@ -29,7 +29,7 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L54-L59 | Planning patch strategies across subscriptions and guidance for migrating patch management from Configuration Manager to Azure Update Manager |
 | Limits & Quotas | L60-L67 | OS, region, image, and workload support limits for Update Manager, including supported update sources/types, change tracking matrix, and unsupported scenarios. |
 | Security | L68-L73 | Configuring disk encryption for Automanaged VMs and setting up RBAC roles/permissions to securely manage and control access to Azure Update Manager. |
-| Configuration | L74-L93 | Configuring Update Manager: Automanage profiles, DCRs/workspaces, Windows Update/ESU setup, scopes/schedules, alerts/events, policy-based assessments, and reporting via workbooks/Resource Graph. |
+| Configuration | L74-L93 | Configuring Azure Update Manager: profiles, scopes, schedules, alerts, ESU, client settings, data collection, Resource Graph, policy-based assessments, and pre/post maintenance events. |
 | Integrations & Coding Patterns | L94-L106 | Using SDKs (Go/Java/JS/Python) and REST APIs to assign Automanage profiles, manage VM/Arc server updates, and implement pre/post maintenance with Functions, webhooks, and runbooks |
 | Deployment | L107-L120 | Deploying and managing Automanage/Update Manager at scale: onboarding VMs/Arc servers, upgrading profiles, cross-region moves, tenant repairs, Azure Policy deployment, and supported OS/update sources. |
 
@@ -79,7 +79,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure workspaces and data collection rules for Change Tracking | https://learn.microsoft.com/en-us/azure/azure-change-tracking-inventory/tutorial-change-workspace-configure-data-collection-rule |
 | Configure Windows Update client for Azure Update Manager | https://learn.microsoft.com/en-us/azure/update-manager/configure-wu-agent |
 | Set up cross-subscription patching in Azure | https://learn.microsoft.com/en-us/azure/update-manager/enable-cross-subscription-patching |
-| Enroll Windows Server ESU with Update Manager | https://learn.microsoft.com/en-us/azure/update-manager/extended-security-updates |
+| Configure ESU enrollment with Azure Update Manager | https://learn.microsoft.com/en-us/azure/update-manager/extended-security-updates |
 | Enable and configure alerts in Azure Update Manager | https://learn.microsoft.com/en-us/azure/update-manager/manage-alerts |
 | Configure and manage dynamic scopes for patching | https://learn.microsoft.com/en-us/azure/update-manager/manage-dynamic-scoping |
 | Manage existing pre and post maintenance events | https://learn.microsoft.com/en-us/azure/update-manager/manage-pre-post-events |

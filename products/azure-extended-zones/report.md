@@ -31,8 +31,8 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 16
+- **Updated Pages**: 0
+- **Unchanged**: 18
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-extended-zones/azure-extended-zones.csv`
 
@@ -46,13 +46,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | *(Unclassified)* | 13 | 72.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [Replicate images with Azure Compute Gallery](https://learn.microsoft.com/en-us/azure/extended-zones/replicate-azure-compute-gallery)
-  - Updated: 2025-08-29T22:11:00.000Z → 2026-07-28T17:15:00.000Z
-- [Purchase reservations and savings plans](https://learn.microsoft.com/en-us/azure/extended-zones/purchase-reservations-savings-plans)
-  - Updated: 2026-03-31T06:10:00.000Z → 2026-07-28T08:00:00.000Z
 
 ## Classified Pages
 

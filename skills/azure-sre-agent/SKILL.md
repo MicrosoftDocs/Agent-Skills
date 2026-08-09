@@ -1,9 +1,9 @@
 ---
 name: azure-sre-agent
-description: Expert knowledge for Azure Sre Agent development including troubleshooting, best practices, decision making, security, configuration, integrations & coding patterns, and deployment. Use when wiring SRE Agent to Azure DevOps/GitHub, KQL telemetry, AKS Java workloads, IaC deployments, or Azure Monitor, and other Azure Sre Agent related development tasks. Not for Azure Monitor (use azure-monitor), Azure Reliability (use azure-reliability), Azure Resiliency (use azure-resiliency), Azure Service Health (use azure-service-health).
+description: Expert knowledge for Azure Sre Agent development including troubleshooting, best practices, decision making, security, configuration, integrations & coding patterns, and deployment. Use when wiring SRE Agent to DevOps/GitHub, Log Analytics/App Insights, AKS Java workloads, MCP servers, or KQL telemetry, and other Azure Sre Agent related development tasks. Not for Azure Monitor (use azure-monitor), Azure Service Health (use azure-service-health), Azure Reliability (use azure-reliability), Azure Resiliency (use azure-resiliency).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-02"
+  generated_at: "2026-08-09"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Sre Agent Skill
@@ -28,8 +28,8 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L43-L47 | Best practices for integrating Azure Monitor, Application Insights, and related observability tools with SRE Agent to collect, analyze, and act on telemetry and alerts. |
 | Decision Making | L48-L55 | Guidance on when to run deep investigations, when to use Log Analytics vs App Insights, how to estimate/control SRE Agent costs, and which Azure regions you can deploy in. |
 | Security | L56-L74 | Securing SRE Agent: identities/auth, RBAC and roles, subscription visibility, approvals, GitHub/ADO access, and network controls (VNet, firewalls, IP allow-lists, tool access policies). |
-| Configuration | L75-L90 | Configuring SRE Agent behavior: code interpreter, tools/skills, subagents, connectors, network, governance hooks, incident plans, IDE/MCP, and GitHub/knowledge source integrations. |
-| Integrations & Coding Patterns | L91-L110 | Integrating SRE Agent with Azure DevOps, GitHub, observability and incident tools, and building/using custom Python, Kusto, REST, and MCP tools securely. |
+| Configuration | L75-L89 | Configuring SRE Agent behavior: code interpreter, tools/skills, subagents, connectors, network, governance hooks, incident plans, IDE/MCP, and GitHub/knowledge source integrations. |
+| Integrations & Coding Patterns | L90-L110 | Integrating Azure SRE Agent with DevOps, GitHub, observability, incident tools, MCP servers, and Python/Kusto tools, plus secure API use and cross-tenant access configuration |
 | Deployment | L111-L114 | How to deploy Azure SRE Agent using Infrastructure-as-Code templates, including required resources, parameters, and environment configuration steps. |
 
 ### Troubleshooting
@@ -83,7 +83,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure incident response plans in Azure SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/incident-response-plans |
 | Configure managed connectors for Azure SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/managed-connectors |
 | Configure GitHub OAuth or PAT connector for SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/setup-github-connector |
-| Configure managed connectors and governance in SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/setup-managed-connector |
 | Configure Azure SRE Agent MCP server for IDE clients | https://learn.microsoft.com/en-us/azure/sre-agent/setup-mcp-server |
 | Configure agent hooks via REST API in Azure SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/tutorial-agent-hooks |
 | Enable and use Code Interpreter in Azure SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/use-code-interpreter |
@@ -106,7 +105,8 @@ This skill requires **network access** to fetch documentation content:
 | Operate Azure SRE Agent via MCP server integrations | https://learn.microsoft.com/en-us/azure/sre-agent/mcp-server |
 | Integrate PagerDuty incidents with Azure SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/pagerduty-incidents |
 | Create and configure Python tools for Azure SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/python-code-execution |
-| Configure ServiceNow incident indexing for Azure SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/setup-servicenow-indexing |
+| Configure legacy Teams connector for Azure SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/set-up-teams-connector |
+| Connect ServiceNow incidents to Azure SRE Agent indexing | https://learn.microsoft.com/en-us/azure/sre-agent/setup-servicenow-indexing |
 
 ### Deployment
 | Topic | URL |

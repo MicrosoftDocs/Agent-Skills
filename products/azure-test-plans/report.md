@@ -32,10 +32,10 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Boards (use a
 - **Unclassified**: 29
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 33
-- **Deleted Pages**: 1
+- **Unchanged**: 34
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-test-plans/azure-test-plans.csv`
 
 ## Classification Statistics
@@ -48,14 +48,6 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Boards (use a
 | *(Unclassified)* | 29 | 85.3% |
 
 ## Changes
-
-### New Pages
-
-- [Set test retention policies](https://learn.microsoft.com/en-us/azure/devops/pipelines/policies/retention?view=azure-devops)
-
-### Deleted Pages
-
-- ~~Set test retention policies~~ (https://learn.microsoft.com/en-us/azure/devops/test/how-long-to-keep-test-results?view=azure-devops)
 
 ## Classified Pages
 

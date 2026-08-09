@@ -1,9 +1,9 @@
 ---
 name: azure-sql-database
-description: Expert knowledge for Azure SQL Database development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when choosing tiers/HA, tuning performance, configuring geo-replication, serverless/elastic pools, or Hyperscale, and other Azure SQL Database related development tasks. Not for Azure Database for MariaDB (use azure-database-mariadb), Azure Database for MySQL (use azure-database-mysql), Azure Database for PostgreSQL (use azure-database-postgresql), Azure SQL Managed Instance (use azure-sql-managed-instance).
+description: Expert knowledge for Azure SQL Database development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using serverless billing, Hyperscale, geo-replication/DR, elastic pools/sharding, or Managed Instance, and other Azure SQL Database related development tasks. Not for Azure SQL Managed Instance (use azure-sql-managed-instance), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Cosmos DB (use azure-cosmos-db), Azure Data Factory (use azure-data-factory).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-02"
+  generated_at: "2026-08-09"
   generator: "docs2skills/1.0.0"
 ---
 # Azure SQL Database Skill
@@ -28,11 +28,11 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L63-L79 | Best practices for Azure SQL operations: monitoring, auditing, security, HA/DR, failover, read replicas, maintenance, elastic pool tuning, file space, Data Sync, and T-SQL adaptation. |
 | Decision Making | L80-L107 | Guidance for choosing Azure SQL tiers, pricing models, DR/HA, Hyperscale options, licensing/Reservations, automation, and migration paths (on-prem, DTU↔vCore, SQL Data Sync, elastic sharding). |
 | Architecture & Design Patterns | L108-L124 | Architectural patterns for Azure SQL apps: geo-replication, DR/BCP, connectivity/routing, sharding and elastic scale-out, Hyperscale internals, rolling upgrades, and multitenant SaaS tenancy. |
-| Limits & Quotas | L125-L138 | Limits, quotas, and billing rules for Azure SQL Database: free tiers, DTU/vCore and serverless resource caps, maintenance windows, and how far you can scale single DBs and elastic pools. |
-| Security | L139-L205 | Securing Azure SQL: authentication (Entra, managed identity, MFA), networking and firewalls, auditing and Defender, encryption (TDE, Always Encrypted), masking/classification, and compliance. |
-| Configuration | L206-L275 | Configuring Azure SQL databases and pools: backups, geo-replication/failover, monitoring/alerts, maintenance, security (encryption, immutability), scaling/serverless, elastic jobs, and CLI/PowerShell/REST setup. |
-| Integrations & Coding Patterns | L276-L306 | Connecting apps and tools to Azure SQL (EF Core, .NET, Node.js, Python, Go), plus PowerShell/CLI automation for auditing, scaling, geo-replication, data sync, and streaming/Spark integration. |
-| Deployment | L307-L319 | Deploying and managing Azure SQL databases: CI/CD with GitHub/Terraform, scaling and tier changes (Hyperscale, zones, elastic pools), regional moves, and checking feature availability by region. |
+| Limits & Quotas | L125-L140 | Limits, quotas, and behaviors for Azure SQL: backups immutability, free tier offers, DTU/vCore pool/single DB caps, serverless billing rules, and maintenance window constraints. |
+| Security | L141-L207 | Securing Azure SQL: authentication (Entra, managed identity, MFA), networking and firewalls, auditing and Defender, encryption (TDE, Always Encrypted), masking/classification, and compliance. |
+| Configuration | L208-L277 | Configuring Azure SQL databases and pools: backups, geo-replication/failover, monitoring/alerts, maintenance, security (encryption, immutability), scaling/serverless, elastic jobs, and CLI/PowerShell/REST setup. |
+| Integrations & Coding Patterns | L278-L308 | Connecting apps and tools to Azure SQL (EF Core, .NET, Node.js, Python, Go), plus PowerShell/CLI automation for auditing, scaling, geo-replication, data sync, and streaming/Spark integration. |
+| Deployment | L309-L321 | Deploying and managing Azure SQL databases: CI/CD with GitHub/Terraform, scaling and tier changes (Hyperscale, zones, elastic pools), regional moves, and checking feature availability by region. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -125,6 +125,8 @@ This skill requires **network access** to fetch documentation content:
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
+| Understand automatic backup immutability for Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/automatic-backup-immutability?view=azuresql |
+| Track new Azure SQL Database features and free tier limits | https://learn.microsoft.com/en-us/azure/azure-sql/database/doc-changes-updates-release-notes-whats-new?view=azuresql |
 | Understand Azure SQL Database free offer limits | https://learn.microsoft.com/en-us/azure/azure-sql/database/free-offer-faq?view=azuresql |
 | Understand Azure SQL Database free tier limits | https://learn.microsoft.com/en-us/azure/azure-sql/database/free-offer?view=azuresql |
 | Use Azure free account to deploy free Azure SQL database | https://learn.microsoft.com/en-us/azure/azure-sql/database/free-sql-db-free-account-how-to-deploy?view=azuresql |

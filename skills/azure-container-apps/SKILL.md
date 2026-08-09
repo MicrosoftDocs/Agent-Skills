@@ -3,7 +3,7 @@ name: azure-container-apps
 description: Expert knowledge for Azure Container Apps development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring ACA auth, Dapr/KEDA, workload profiles, Java microservices, or CI/CD with GitHub Actions, and other Azure Container Apps related development tasks. Not for Azure App Service (use azure-app-service), Azure Functions (use azure-functions), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Red Hat OpenShift (use azure-redhat-openshift).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-02"
+  generated_at: "2026-08-09"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Container Apps Skill
@@ -30,9 +30,9 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L83-L88 | Architectures and patterns for Java microservices on Azure Container Apps, including Eureka HA clusters, AI-enabled PetClinic, and end-to-end microservice design best practices. |
 | Limits & Quotas | L89-L95 | Quotas, limits, and scaling caps for Container Apps, plus how they behave at those limits and how to request quota increases from Azure support. |
 | Security | L96-L133 | Securing Container Apps: auth (Entra, social, OIDC, mTLS), identities/secrets, TLS/domains/certs, Dapr security, network controls (NSG, firewall, private endpoints), and security best practices. |
-| Configuration | L134-L174 | Configuring Container Apps environments and apps: networking, ingress, revisions/traffic, workload profiles, storage, Dapr/KEDA/Functions scaling, Java features, logging/monitoring, and maintenance. |
-| Integrations & Coding Patterns | L175-L199 | Patterns for connecting Container Apps to other services: microservice calls, Dapr, Spring components, Front Door/Private Link, OpenTelemetry exports, and AI code interpreter/dynamic sessions. |
-| Deployment | L200-L208 | Deploying and automating Container Apps: CI/CD with GitHub Actions/Azure Pipelines, Docker Compose migration, self-hosted runners, and Arc-enabled Kubernetes integration. |
+| Configuration | L134-L172 | Configuring Container Apps environments and apps: networking, ingress, revisions/traffic, workload profiles, storage, Dapr/KEDA/Functions scaling, Java features, logging/monitoring, and maintenance. |
+| Integrations & Coding Patterns | L173-L197 | Patterns for connecting Container Apps to other services: microservice calls, Dapr, Spring components, Front Door/Private Link, OpenTelemetry exports, and AI code interpreter/dynamic sessions. |
+| Deployment | L198-L206 | Deploying and automating Container Apps: CI/CD with GitHub Actions/Azure Pipelines, Docker Compose migration, self-hosted runners, and Arc-enabled Kubernetes integration. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -149,7 +149,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure startup, liveness, and readiness probes in Container Apps | https://learn.microsoft.com/en-us/azure/container-apps/health-probes |
 | Configure environment-level ingress for Container Apps | https://learn.microsoft.com/en-us/azure/container-apps/ingress-environment-configuration |
 | Enable and tune app-level ingress in Container Apps | https://learn.microsoft.com/en-us/azure/container-apps/ingress-how-to |
-| Configure ingress options for Azure Container Apps | https://learn.microsoft.com/en-us/azure/container-apps/ingress-overview |
 | Configure Java APM agent with init containers in Container Apps | https://learn.microsoft.com/en-us/azure/container-apps/java-application-performance-management-config |
 | Configure Java build environment variables in Container Apps | https://learn.microsoft.com/en-us/azure/container-apps/java-build-environment-variables |
 | Access logs for managed Java components in Container Apps | https://learn.microsoft.com/en-us/azure/container-apps/java-component-logs |
@@ -161,7 +160,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure premium ingress for Azure Container Apps | https://learn.microsoft.com/en-us/azure/container-apps/premium-ingress |
 | Configure private endpoints and DNS for Container Apps | https://learn.microsoft.com/en-us/azure/container-apps/private-endpoints-with-dns |
 | Configure and manage Container Apps revisions | https://learn.microsoft.com/en-us/azure/container-apps/revisions-manage |
-| Configure rule-based HTTP routing in Container Apps | https://learn.microsoft.com/en-us/azure/container-apps/rule-based-routing |
 | Configure custom domains with rule-based routing | https://learn.microsoft.com/en-us/azure/container-apps/rule-based-routing-custom-domain |
 | Configure service discovery resiliency policies | https://learn.microsoft.com/en-us/azure/container-apps/service-discovery-resiliency |
 | Enable session affinity (sticky sessions) in Container Apps | https://learn.microsoft.com/en-us/azure/container-apps/sticky-sessions |

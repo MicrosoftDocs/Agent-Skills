@@ -53,8 +53,8 @@ confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 180
+- **Updated Pages**: 0
+- **Unchanged**: 183
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-key-vault/azure-key-vault.csv`
 
@@ -74,15 +74,6 @@ confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure
 | *(Unclassified)* | 81 | 44.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [ABAC conditions for Key Vault role assignments (preview)](https://learn.microsoft.com/en-us/azure/key-vault/general/rbac-abac)
-  - Updated: 2026-07-17T22:34:00.000Z → 2026-07-31T17:36:00.000Z
-- [About Key Vault keys](https://learn.microsoft.com/en-us/azure/key-vault/keys/about-keys)
-  - Updated: 2026-05-22T06:11:00.000Z → 2026-07-30T17:40:00.000Z
-- [Key types, algorithms, and operations](https://learn.microsoft.com/en-us/azure/key-vault/keys/about-keys-details)
-  - Updated: 2026-05-22T06:11:00.000Z → 2026-07-30T17:40:00.000Z
 
 ## Classified Pages
 

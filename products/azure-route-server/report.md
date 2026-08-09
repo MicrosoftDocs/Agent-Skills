@@ -42,9 +42,9 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 - **Unclassified**: 8
 
 ### Incremental Update
-- **New Pages**: 5
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 22
+- **Unchanged**: 27
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-route-server/azure-route-server.csv`
 
@@ -61,14 +61,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | *(Unclassified)* | 8 | 29.6% |
 
 ## Changes
-
-### New Pages
-
-- [About route maps](https://learn.microsoft.com/en-us/azure/route-server/route-maps-about)
-- [Configure route maps](https://learn.microsoft.com/en-us/azure/route-server/route-maps-how-to)
-- [Prepend routes](https://learn.microsoft.com/en-us/azure/route-server/route-maps-scenario-prepend-routes)
-- [Tag routes with BGP communities](https://learn.microsoft.com/en-us/azure/route-server/route-maps-scenario-tag-bgp-communities)
-- [Drop inbound routes](https://learn.microsoft.com/en-us/azure/route-server/route-maps-scenario-drop-inbound-routes)
 
 ## Classified Pages
 

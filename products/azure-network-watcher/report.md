@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-08-02'
+generated_at: '2026-08-09'
 category_descriptions:
-  configuration: Configuring and managing Network Watcher agents and flow logs (NSG/VNet),
-    including schemas, filters, ARM/Bicep setup, Traffic Analytics, and Azure Policy
-    enforcement/governance.
+  configuration: Configuring and deploying Network Watcher/NSG/VNet flow logs and
+    Traffic Analytics, including agents (Linux/Arc), schemas, filtering, ARM/Bicep
+    templates, and Azure Policy governance.
   troubleshooting: Diagnosing and fixing outbound connectivity, NSG/admin rule issues,
     and VPN gateway/on-prem VPN connection problems, plus automating VPN monitoring
     with Azure Network Watcher.
@@ -21,14 +21,14 @@ category_descriptions:
     logs using managed identities.'
 skill_description: Expert knowledge for Azure Network Watcher development including
   troubleshooting, decision making, limits & quotas, security, configuration, and
-  integrations & coding patterns. Use when managing NSG/VNet flow logs, Traffic Analytics,
-  Connection Monitor migration, packet capture, or Sentinel integration, and other
-  Azure Network Watcher related development tasks. Not for Azure Monitor (use azure-monitor),
+  integrations & coding patterns. Use when configuring flow logs/Traffic Analytics,
+  VPN monitoring, packet capture, KQL/Sentinel, or Power BI views, and other Azure
+  Network Watcher related development tasks. Not for Azure Monitor (use azure-monitor),
   Azure Virtual Network (use azure-virtual-network), Azure Virtual Network Manager
   (use azure-virtual-network-manager), Azure Networking (use azure-networking).
-use_when: Use when managing NSG/VNet flow logs, Traffic Analytics, Connection Monitor
-  migration, packet capture, or Sentinel integration, and other Azure Network Watcher
-  related development tasks.
+use_when: Use when configuring flow logs/Traffic Analytics, VPN monitoring, packet
+  capture, KQL/Sentinel, or Power BI views, and other Azure Network Watcher related
+  development tasks.
 confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Virtual Network
   (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager),
   Azure Networking (use azure-networking).
@@ -44,10 +44,10 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Virtual Net
 - **Unclassified**: 37
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 9
-- **Unchanged**: 55
-- **Deleted Pages**: 1
+- **New Pages**: 2
+- **Updated Pages**: 0
+- **Unchanged**: 63
+- **Deleted Pages**: 2
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-network-watcher/azure-network-watcher.csv`
 
 ## Classification Statistics
@@ -66,32 +66,13 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Virtual Net
 
 ### New Pages
 
-- [RBAC permissions](https://learn.microsoft.com/en-us/azure/network-watcher/rbac-permissions)
-
-### Updated Pages
-
-- [Manage NSG flow logs](https://learn.microsoft.com/en-us/azure/network-watcher/nsg-flow-logs-manage)
-  - Updated: 2025-12-18T08:00:00.000Z → 2026-07-31T22:11:00.000Z
-- [ARM template](https://learn.microsoft.com/en-us/azure/network-watcher/nsg-flow-logs-template)
-  - Updated: 2025-12-18T08:00:00.000Z → 2026-02-25T23:33:00.000Z
-- [Bicep](https://learn.microsoft.com/en-us/azure/network-watcher/nsg-flow-logs-bicep)
-  - Updated: 2025-12-18T08:00:00.000Z → 2026-02-25T23:33:00.000Z
-- [Read flow logs](https://learn.microsoft.com/en-us/azure/network-watcher/flow-logs-read)
-  - Updated: 2025-08-20T22:15:00.000Z → 2026-02-25T23:33:00.000Z
-- [Visualize flow logs with Power BI](https://learn.microsoft.com/en-us/azure/network-watcher/flow-logs-power-bi)
-  - Updated: 2026-04-05T11:04:00.000Z → 2026-07-30T22:15:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/network-watcher/frequently-asked-questions)
-  - Updated: 2026-07-15T11:40:00.000Z → 2026-07-31T19:23:00.000Z
-- [Linux](https://learn.microsoft.com/en-us/azure/network-watcher/network-watcher-agent-linux)
-  - Updated: 2025-09-23T08:00:00.000Z → 2026-07-30T22:15:00.000Z
-- [PowerShell](https://learn.microsoft.com/en-us/azure/network-watcher/diagnose-vm-network-traffic-filtering-problem-powershell)
-  - Updated: 2026-02-17T08:00:00.000Z → 2026-07-31T05:12:00.000Z
-- [Azure CLI](https://learn.microsoft.com/en-us/azure/network-watcher/diagnose-vm-network-traffic-filtering-problem-cli)
-  - Updated: 2026-02-26T06:24:00.000Z → 2026-07-31T05:12:00.000Z
+- [Create using Bicep](https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-bicep)
+- [Create using an ARM template](https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-template)
 
 ### Deleted Pages
 
-- ~~RBAC permissions~~ (https://learn.microsoft.com/en-us/azure/network-watcher/required-rbac-permissions)
+- ~~Bicep~~ (https://learn.microsoft.com/en-us/azure/network-watcher/nsg-flow-logs-bicep)
+- ~~ARM template~~ (https://learn.microsoft.com/en-us/azure/network-watcher/nsg-flow-logs-template)
 
 ## Classified Pages
 
@@ -102,12 +83,12 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Virtual Net
 | [Schema](https://learn.microsoft.com/en-us/azure/network-watcher/connection-monitor-schema) | configuration | 0.80 | Describes fields in test and path data schemas; likely includes tables of column names, types, and meanings, which are product-specific configuration/data contract details. |
 | [Secure Network Watcher deployment](https://learn.microsoft.com/en-us/azure/network-watcher/secure-network-watcher) | security | 0.78 | The page provides product-specific security recommendations for Azure Network Watcher, including how to secure its deployment, data outputs, and identities that access it. This aligns with the security sub-skill type, as it focuses on securing a particular Azure service with concrete, service-specific guidance rather than generic security concepts. |
 | [Troubleshoot outbound connections](https://learn.microsoft.com/en-us/azure/network-watcher/connection-troubleshoot-manage) | troubleshooting | 0.78 | How-to article for the connection troubleshoot feature; likely includes specific test statuses, result fields, and stepwise diagnosis for failed outbound connections, which are product-specific troubleshooting details. |
-| [ARM template](https://learn.microsoft.com/en-us/azure/network-watcher/nsg-flow-logs-template) | configuration | 0.75 | Quickstart shows an ARM template schema for NSG flow logs, including resource types, properties, and parameter names/values. This is product-specific configuration (template fields, allowed values) rather than generic tutorial content, fitting the configuration sub-skill. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/network-watcher/vpn-troubleshoot-cli) | troubleshooting | 0.75 | CLI-focused guide for VPN troubleshoot; provides symptom→diagnosis→resolution steps and log handling specific to Network Watcher VPN troubleshoot. |
-| [Bicep](https://learn.microsoft.com/en-us/azure/network-watcher/nsg-flow-logs-bicep) | configuration | 0.75 | Bicep quickstart defines NSG flow log resources and properties in code, exposing exact configuration parameter names, structures, and defaults for this Azure feature. These are detailed config options unique to NSG flow logs, matching the configuration category. |
 | [Diagnose on-premises connectivity via VPN gateway](https://learn.microsoft.com/en-us/azure/network-watcher/network-watcher-diagnose-on-premises-connectivity) | troubleshooting | 0.75 | Focused on diagnosing VPN gateway and on-premises device connectivity; uses VPN troubleshoot outputs and logs, mapping common issues to diagnostics. |
 | [PowerShell](https://learn.microsoft.com/en-us/azure/network-watcher/vpn-troubleshoot-powershell) | troubleshooting | 0.75 | Explicitly about diagnosing and troubleshooting VPN gateways and connections; mentions long-running requests and log storage, indicating product-specific troubleshooting workflow and outputs. |
 | [Use queries in traffic analytics](https://learn.microsoft.com/en-us/azure/network-watcher/traffic-analytics-queries) | integrations | 0.75 | Provides sample KQL queries for Traffic Analytics; includes concrete query patterns, field names, and filters specific to this product’s data model, which are integration/coding patterns. |
+| [Create using Bicep](https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-bicep) | configuration | 0.70 | Bicep-based deployment articles typically include resource definitions and configuration parameters (for Network Watcher flow logs and Storage accounts) with specific property names and required values unique to Azure networking and logging. This is product-specific configuration detail rather than just conceptual guidance. |
+| [Create using an ARM template](https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-template) | configuration | 0.70 | ARM template articles generally provide JSON schemas with resource types, property names, and required configuration values for Network Watcher flow logs and Storage accounts. These are concrete, product-specific configuration parameters that go beyond generic template usage and qualify as expert configuration knowledge. |
 | [Diagnose network security rules](https://learn.microsoft.com/en-us/azure/network-watcher/diagnose-network-security-rules) | troubleshooting | 0.70 | Shows how to use NSG diagnostics to determine why traffic is allowed/denied, including a misconfigured NSG example; this is a symptom→cause→solution troubleshooting guide specific to Network Watcher. |
 | [From Connection monitor (classic)](https://learn.microsoft.com/en-us/azure/network-watcher/migrate-to-connection-monitor-from-connection-monitor-classic) | decision-making | 0.70 | Migration article between classic and new versions; contains guidance on how and when to migrate with zero downtime, a product-specific decision/migration path. |
 | [From Network performance monitor](https://learn.microsoft.com/en-us/azure/network-watcher/migrate-to-connection-monitor-from-network-performance-monitor) | decision-making | 0.70 | Migration guidance between deprecated and new service; likely includes scenario-based recommendations and mapping of old tests to new constructs, which supports decision-making and migration choices. |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-14'
+generated_at: '2026-08-09'
 category_descriptions:
   configuration: 'Configuring Azure AD B2C: custom policies, user flows, tokens, MFA,
     identity providers, claims/transformations, app/API registration, UI/localization,
@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Role-based access control (use azure-rbac), Az
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 289
+- **Updated Pages**: 1
+- **Unchanged**: 288
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-active-directory-b2c/azure-active-directory-b2c.csv`
 
@@ -76,6 +76,11 @@ confusable_not_for: Not for Azure Role-based access control (use azure-rbac), Az
 | *(Unclassified)* | 33 | 11.4% |
 
 ## Changes
+
+### Updated Pages
+
+- [Page layout versions](https://learn.microsoft.com/en-us/azure/active-directory-b2c/page-layout)
+  - Updated: 2025-07-17T22:14:00.000Z → 2025-08-07T08:00:00.000Z
 
 ## Classified Pages
 
@@ -346,7 +351,6 @@ confusable_not_for: Not for Azure Role-based access control (use azure-rbac), Az
 | [Manage users via Azure portal](https://learn.microsoft.com/en-us/azure/active-directory-b2c/manage-users-portal) | 0.40 | Primarily a portal how-to for creating/deleting users; lacks detailed configuration tables, limits, or specialized patterns beyond generic UI steps. |
 | [App registrations](https://learn.microsoft.com/en-us/azure/active-directory-b2c/app-registrations-training-guide) | 0.30 | Introductory guide to the new app registrations experience; primarily UI/experience overview without detailed configuration tables or numeric constraints. |
 | [Azure AD B2C partner gallery](https://learn.microsoft.com/en-us/azure/active-directory-b2c/partner-gallery) | 0.30 | High-level partner gallery/marketing overview listing ISV categories; does not provide detailed configuration parameters or error mappings. |
-| [Page layout versions](https://learn.microsoft.com/en-us/azure/active-directory-b2c/page-layout) | 0.30 | Appears to be a change log and version history for page layout packages. The summary does not indicate concrete configuration tables, limits, or decision matrices—more of a historical/reference list rather than a structured best-practices, configuration, or limits document. |
 | [Set up sign-in for a desktop app](https://learn.microsoft.com/en-us/azure/active-directory-b2c/quickstart-native-app-desktop) | 0.30 | Quickstart for WPF desktop sign-in; primarily walkthrough code and portal steps, not structured expert reference. |
 | [Set up sign-in for a single-page app](https://learn.microsoft.com/en-us/azure/active-directory-b2c/quickstart-single-page-app) | 0.30 | SPA sign-in quickstart; tutorial content without detailed configuration option tables or limits. |
 | [Set up sign-in for an ASP.NET app](https://learn.microsoft.com/en-us/azure/active-directory-b2c/quickstart-web-app-dotnet) | 0.30 | Quickstart tutorial for ASP.NET sign-in; step-by-step example but no config matrices, limits, or product-specific best-practice tables. |
@@ -375,3 +379,4 @@ confusable_not_for: Not for Azure Role-based access control (use azure-rbac), Az
 | [Web API authentication documentation](https://learn.microsoft.com/en-us/azure/active-directory-b2c/index-web-api) | 0.10 | Index page for Azure AD B2C web API docs; high-level navigation/overview without visible limits, configuration tables, error codes, or other expert-only details. |
 | [Web app authentication documentation](https://learn.microsoft.com/en-us/azure/active-directory-b2c/index-web-app) | 0.10 | Landing/navigation page for Azure AD B2C web app auth quickstarts; contains no specific quotas, configuration parameters, or troubleshooting mappings. |
 | [What's new in docs?](https://learn.microsoft.com/en-us/azure/active-directory-b2c/whats-new-docs) | 0.10 | Change-log style list of new/updated docs; navigation content, not deep technical guidance. |
+| [Page layout versions](https://learn.microsoft.com/en-us/azure/active-directory-b2c/page-layout) | - | Appears to be a change log/history of Azure AD B2C page layout versions and UI customization updates, not focused on limits, configuration parameter tables, error codes, or decision matrices. Without detailed numeric constraints, config tables, or troubleshooting mappings, it doesn't match any expert-knowledge sub-skill type. |

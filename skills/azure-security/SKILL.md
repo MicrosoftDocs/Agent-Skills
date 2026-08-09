@@ -1,9 +1,9 @@
 ---
 name: azure-security
-description: Expert knowledge for Azure Security development including best practices, decision making, security, configuration, integrations & coding patterns, and deployment. Use when securing AKS images, CMK encryption, Azure Antimalware, container SBOM signing, or Notation pipelines, and other Azure Security related development tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure Sentinel (use azure-sentinel), Azure DDos Protection (use azure-ddos-protection), Azure Web Application Firewall (use azure-web-application-firewall).
+description: Expert knowledge for Azure Security development including best practices, decision making, security, configuration, integrations & coding patterns, and deployment. Use when securing AKS images, Azure Antimalware, CMK/Key Vault, Lockbox, or Notation-signed container pipelines, and other Azure Security related development tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure Sentinel (use azure-sentinel), Azure DDoS Protection (use azure-ddos-protection), Azure Web Application Firewall (use azure-web-application-firewall).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-02"
+  generated_at: "2026-08-09"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Security Skill
@@ -26,7 +26,7 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Best Practices | L34-L58 | End-to-end Azure security guidance: hardening IaaS/PaaS, identity and access, network and operational security, backups and ransomware resilience, secrets management, and service-specific checklists. |
 | Decision Making | L59-L64 | Guidance on choosing Azure security options, including comparing security features in US Gov clouds and selecting appropriate key management (Key Vault, managed keys, BYOK). |
-| Security | L65-L97 | Security best practices for Azure: platform integrity, hardware/firmware, network and data access controls, AKS image validation, Threat Modeling mitigations, CMKs, logging, and secure boot/attestation. |
+| Security | L65-L97 | Platform-level and workload security: threat modeling mitigations, AKS image validation, crypto/authz/session hardening, Azure infra/network/SQL security, keys, Lockbox, Secure/Measured Boot, and integrity monitoring. |
 | Configuration | L98-L108 | Configuring Azure security features: antimalware, container scanning (Dependabot/Copacetic), firewall rules, CMK encryption, logging/auditing, TLS changes, ransomware protections, and Customer Lockbox alerts. |
 | Integrations & Coding Patterns | L109-L114 | Guides for generating signed SBOMs for container images and scripting Microsoft Antimalware configuration in Azure using PowerShell. |
 | Deployment | L115-L120 | Guides for signing and verifying container images with Notation in Azure Pipelines/GitHub Actions, plus comparing security feature availability in Azure vs Azure Government. |

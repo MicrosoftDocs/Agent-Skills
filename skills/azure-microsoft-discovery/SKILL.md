@@ -1,9 +1,9 @@
 ---
 name: azure-microsoft-discovery
-description: Expert knowledge for Azure Microsoft Discovery development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring Discovery workspaces, supercomputers, ACR-based tools, REST job APIs, or shared sessions, and other Azure Microsoft Discovery related development tasks. Not for Azure Portal (use azure-portal), Azure Resource Graph (use azure-resource-graph), Azure Monitor (use azure-monitor), Azure Cost Management (use azure-cost-management).
+description: Expert knowledge for Azure Microsoft Discovery development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building Discovery Engine shared sessions, supercomputer jobs, REST job APIs, custom tools, or ACR deployments, and other Azure Microsoft Discovery related development tasks.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-02"
+  generated_at: "2026-08-09"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Microsoft Discovery Skill
@@ -24,20 +24,21 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L41 | Diagnosing and fixing Discovery Engine task execution failures, including common error patterns, configuration issues, and steps to restore successful task runs. |
-| Best Practices | L42-L49 | Best practices for structuring projects and shared sessions, applying responsible AI, calibrating trust and safety patterns, and planning tool capabilities and compute for Discovery. |
-| Decision Making | L50-L57 | Guidance on selecting ACR setup, agent types, pricing/billing, and suitable AI models to design and configure Microsoft Discovery agents effectively. |
-| Architecture & Design Patterns | L58-L62 | Designing and implementing advanced shared session patterns in Discovery Engine, including multi-user session management, data sharing, and scalable architecture best practices. |
-| Limits & Quotas | L63-L68 | Planning capacity and Azure quotas for Microsoft Discovery deployments, plus required naming conventions and rules for Discovery resources. |
-| Security | L69-L83 | Security, encryption, RBAC, managed identities, private networking, supercomputer network hardening, and audit logging for protecting Microsoft Discovery resources. |
-| Configuration | L84-L104 | Configuring Discovery workspaces, supercomputers, storage, tools, data handling, and querying operational/indexing logs via Log Analytics, Kusto, and Azure activity logs |
-| Integrations & Coding Patterns | L105-L112 | Integrating custom tools/models into Discovery workflows, containerizing them with Docker, calling Discovery Supercomputer REST job APIs, and writing action scripts for action-based tools. |
-| Deployment | L113-L119 | Deploying Discovery infrastructure and tools: network-hardened stacks, Bicep-based deployments, REST provisioning of supercomputer resources, and publishing tool images to Azure Container Registry. |
+| Troubleshooting | L37-L42 | Diagnosing and resolving Microsoft Discovery Engine task failures, and locating/using correlation IDs from Activity Logs to debug and trace issues. |
+| Best Practices | L43-L50 | Best practices for structuring projects and shared sessions, applying responsible AI, calibrating trust and safety patterns, and planning tool capabilities and compute for Discovery. |
+| Decision Making | L51-L58 | Guidance on selecting ACR setup, agent types, pricing/billing, and suitable AI models to design and configure Microsoft Discovery agents effectively. |
+| Architecture & Design Patterns | L59-L63 | Designing and implementing advanced shared session patterns in Discovery Engine, including multi-user session management, data sharing, and scalable architecture best practices. |
+| Limits & Quotas | L64-L69 | Planning capacity and Azure quotas for Microsoft Discovery deployments, plus required naming conventions and rules for Discovery resources. |
+| Security | L70-L84 | Security, encryption, RBAC, managed identities, private networking, supercomputer network hardening, and audit logging for protecting Microsoft Discovery resources. |
+| Configuration | L85-L105 | Configuring Discovery workspaces, supercomputers, storage, tools, data handling, and querying operational/indexing logs via Log Analytics, Kusto, and Azure activity logs |
+| Integrations & Coding Patterns | L106-L113 | Integrating custom tools/models into Discovery workflows, containerizing them with Docker, calling Discovery Supercomputer REST job APIs, and writing action scripts for action-based tools. |
+| Deployment | L114-L120 | Deploying Discovery infrastructure and tools: network-hardened stacks, Bicep-based deployments, REST provisioning of supercomputer resources, and publishing tool images to Azure Container Registry. |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
 | Troubleshoot Discovery Engine task execution issues | https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-debug-task-execution |
+| Find Microsoft Discovery correlation IDs in Activity Log | https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-get-correlation-id |
 
 ### Best Practices
 | Topic | URL |

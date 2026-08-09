@@ -1,9 +1,9 @@
 ---
 name: azure-networking
-description: Expert knowledge for Azure Networking development including troubleshooting, decision making, architecture & design patterns, security, and configuration. Use when designing VNets, hub-spoke/Virtual WAN, Azure Firewall/DDoS, NSG/ASG rules, or private DNS, and other Azure Networking related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use azure-virtual-wan), Azure Network Watcher (use azure-network-watcher).
+description: Expert knowledge for Azure Networking development including troubleshooting, decision making, architecture & design patterns, security, and configuration. Use when designing VNets, hub-spoke/Virtual WAN, Azure Firewall/WAF, DDoS, or Virtual Network Manager configs, and other Azure Networking related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use azure-virtual-wan), Azure Traffic Manager (use azure-traffic-manager).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-02"
+  generated_at: "2026-08-09"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Networking Skill
@@ -25,8 +25,8 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L33-L37 | Monitoring tools and step-by-step guidance to diagnose, troubleshoot, and resolve issues with Azure virtual networks, connectivity, performance, and other network resources. |
-| Decision Making | L38-L54 | Guidance for choosing Azure networking architectures: load balancing, hybrid/multicloud connectivity, private access, secure topologies, and internet ingress/egress design. |
-| Architecture & Design Patterns | L55-L67 | Designing secure Azure network topologies (hub-spoke, flat, multi-region, Virtual WAN), planning IP ranges/subnets, and applying common workload-specific network patterns. |
+| Decision Making | L38-L54 | Guidance on choosing Azure network architectures: load balancing, hybrid/multicloud connectivity, private access, secure topologies, and internet ingress/egress for different workload patterns. |
+| Architecture & Design Patterns | L55-L67 | Designing secure Azure network topologies (hub-spoke, flat, multi-region, Virtual WAN), planning IP addressing/subnets, and applying common workload-specific networking patterns. |
 | Security | L68-L78 | Designing secure Azure networks: firewall and DDoS tiers, VM access, DNS/private name resolution, NSG/ASG rules, WAF protection, and policy-based compliance for network resources. |
 | Configuration | L79-L82 | Configuring and centrally managing multiple VNets using Azure Virtual Network Manager, including network groups, connectivity, security rules, and governance at scale. |
 
@@ -49,13 +49,13 @@ This skill requires **network access** to fetch documentation content:
 | Control outbound internet egress from Azure VNets | https://learn.microsoft.com/en-us/azure/networking/design-guide/outbound-egress |
 | Select private access options for Azure PaaS | https://learn.microsoft.com/en-us/azure/networking/design-guide/private-platform-as-a-service |
 | Decide when to use core Azure network foundation services | https://learn.microsoft.com/en-us/azure/networking/foundations/network-foundations-overview |
-| Choose a secure Azure application delivery service | https://learn.microsoft.com/en-us/azure/networking/secure-application-delivery |
-| Select a secure Azure network topology | https://learn.microsoft.com/en-us/azure/networking/secure-network-topology |
+| Select secure application delivery services in Azure | https://learn.microsoft.com/en-us/azure/networking/secure-application-delivery |
+| Choose a secure Azure network topology for workloads | https://learn.microsoft.com/en-us/azure/networking/secure-network-topology |
 
 ### Architecture & Design Patterns
 | Topic | URL |
 |-------|-----|
-| Deploy a Zero Trust virtual network for web apps | https://learn.microsoft.com/en-us/azure/networking/create-zero-trust-network-web-apps |
+| Deploy a Zero Trust virtual network for Azure web apps | https://learn.microsoft.com/en-us/azure/networking/create-zero-trust-network-web-apps |
 | Design a secure hub-spoke network for Azure web apps | https://learn.microsoft.com/en-us/azure/networking/cross-service-scenarios/design-secure-hub-spoke-network |
 | Implement a single-workload flat VNet topology | https://learn.microsoft.com/en-us/azure/networking/design-guide/flat-network |
 | Design hub-and-spoke network topology in Azure | https://learn.microsoft.com/en-us/azure/networking/design-guide/hub-spoke |

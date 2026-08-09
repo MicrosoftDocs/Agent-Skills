@@ -19,7 +19,7 @@ category_descriptions:
     ARM, Bicep, PowerShell), plus monitoring, metrics/logs, and Azure Policy for governance.
   security: Configuring and securing Azure DDoS IP/Network Protection using portal,
     CLI, and PowerShell, including permissions setup and hardening best practices.
-skill_description: Expert knowledge for Azure DDos Protection development including
+skill_description: Expert knowledge for Azure DDoS Protection development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   security, configuration, and integrations & coding patterns. Use when enabling DDoS
   IP/Network Protection, tuning policies, analyzing logs/metrics, or integrating NVAs
@@ -34,7 +34,7 @@ confusable_not_for: Not for Azure Firewall (use azure-firewall), Azure Firewall 
   (use azure-firewall-manager), Azure Web Application Firewall (use azure-web-application-firewall),
   Azure Virtual Network (use azure-virtual-network).
 ---
-# Azure DDos Protection Crawl Report
+# Azure DDoS Protection Crawl Report
 
 ## Summary
 
@@ -46,8 +46,8 @@ confusable_not_for: Not for Azure Firewall (use azure-firewall), Azure Firewall 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 36
+- **Updated Pages**: 0
+- **Unchanged**: 38
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-ddos-protection/azure-ddos-protection.csv`
 
@@ -65,13 +65,6 @@ confusable_not_for: Not for Azure Firewall (use azure-firewall), Azure Firewall 
 | *(Unclassified)* | 10 | 26.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [PowerShell](https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-protection-powershell-ip)
-  - Updated: 2026-01-26T08:00:00.000Z → 2026-08-01T05:13:00.000Z
-- [Types of attacks](https://learn.microsoft.com/en-us/azure/ddos-protection/types-of-attacks)
-  - Updated: 2026-03-17T08:00:00.000Z → 2026-08-01T05:13:00.000Z
 
 ## Classified Pages
 

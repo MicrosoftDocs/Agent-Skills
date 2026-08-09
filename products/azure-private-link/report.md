@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-07-26'
+generated_at: '2026-08-09'
 category_descriptions:
-  limits-quotas: Details on Private Link/Endpoint capacity limits, per‑VNet scaling
-    (High Scale), resource availability checks, and common behaviors/FAQs around quotas
-    and constraints
+  limits-quotas: Limits, quotas, and behaviors for Private Link/Endpoints, how to
+    check service availability per resource, and how to request increases to VNet
+    Private Endpoint limits.
   configuration: 'Configuring Azure Private Link and endpoints: NSP perimeters, routing,
     subnet/network policies, DNS, IPv6, SNAT, monitoring, diagnostics, and endpoint
     properties via portal, CLI, and PowerShell'
@@ -22,16 +22,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Private Link development including best
   practices, decision making, architecture & design patterns, limits & quotas, security,
   and configuration. Use when configuring Private Endpoints, DNS/Private Resolver,
-  NSP perimeters, Azure Firewall traffic, or IPv6/SNAT, and other Azure Private Link
-  related development tasks. Not for Azure Virtual Network (use azure-virtual-network),
-  Azure Virtual Network Manager (use azure-virtual-network-manager), Azure VPN Gateway
-  (use azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute).
-use_when: Use when configuring Private Endpoints, DNS/Private Resolver, NSP perimeters,
-  Azure Firewall traffic, or IPv6/SNAT, and other Azure Private Link related development
-  tasks.
+  NSP modes, Azure Firewall traffic control, or VNet limits, and other Azure Private
+  Link related development tasks. Not for Azure Virtual Network (use azure-virtual-network),
+  Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Application
+  Gateway (use azure-application-gateway), Azure VPN Gateway (use azure-vpn-gateway).
+use_when: Use when configuring Private Endpoints, DNS/Private Resolver, NSP modes,
+  Azure Firewall traffic control, or VNet limits, and other Azure Private Link related
+  development tasks.
 confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), Azure
-  Virtual Network Manager (use azure-virtual-network-manager), Azure VPN Gateway (use
-  azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute).
+  Virtual Network Manager (use azure-virtual-network-manager), Azure Application Gateway
+  (use azure-application-gateway), Azure VPN Gateway (use azure-vpn-gateway).
 ---
 # Azure Private Link Crawl Report
 
@@ -45,8 +45,8 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 56
+- **Updated Pages**: 4
+- **Unchanged**: 52
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-private-link/azure-private-link.csv`
 
@@ -64,11 +64,22 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ## Changes
 
+### Updated Pages
+
+- [Increase Private Endpoint virtual network limits](https://learn.microsoft.com/en-us/azure/private-link/increase-private-endpoint-vnet-limits)
+  - Updated: 2026-03-30T08:00:00.000Z → 2026-08-07T05:14:00.000Z
+- [Create a network security perimeter - PowerShell](https://learn.microsoft.com/en-us/azure/private-link/create-network-security-perimeter-powershell)
+  - Updated: 2025-10-08T22:11:00.000Z → 2026-08-06T05:14:00.000Z
+- [Create a network security perimeter - Bicep](https://learn.microsoft.com/en-us/azure/private-link/create-network-security-perimeter-bicep)
+  - Updated: 2025-10-08T22:11:00.000Z → 2026-08-05T08:00:00.000Z
+- [Create a network security perimeter - ARM template](https://learn.microsoft.com/en-us/azure/private-link/create-network-security-perimeter-template)
+  - Updated: 2025-08-01T08:00:00.000Z → 2026-08-06T05:14:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
-| [Increase Private Endpoint virtual network limits](https://learn.microsoft.com/en-us/azure/private-link/increase-private-endpoint-vnet-limits) | limits-quotas | 0.95 | Explicitly discusses numeric limits (1,000 private endpoints per VNet, 4,000 across peered VNets) and how to increase them via High Scale Private Endpoints; this is precise quota information unique to the product. |
+| [Increase Private Endpoint virtual network limits](https://learn.microsoft.com/en-us/azure/private-link/increase-private-endpoint-vnet-limits) | limits-quotas | 0.90 | The page discusses the current hard limit of 1,000 private endpoints per virtual network and a silently enforced limit of 4,000 private endpoints across peered VNets, and describes upgrading to High Scale Private Endpoints to increase these limits. These are specific numerical limits and constraints that qualify as expert knowledge under limits-quotas. |
 | [RBAC permissions](https://learn.microsoft.com/en-us/azure/private-link/rbac-permissions) | security | 0.86 | Page lists the exact built-in roles and custom role permissions required to create and manage private endpoints and private link services. It includes specific Azure RBAC actions/operations that must be granted, which are product-specific security configuration details not inferable from general knowledge. |
 | [Role-based access control permissions](https://learn.microsoft.com/en-us/azure/private-link/network-security-perimeter-role-based-access-control-requirements) | security | 0.85 | Describes specific RBAC actions and permissions required for NSP profiles, rules, associations, and diagnostics, which is detailed security configuration guidance. |
 | [Private DNS zone values](https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-dns) | configuration | 0.80 | Reference article for private DNS zone values per Azure service; contains specific zone names, record patterns, and FQDN mappings that are detailed configuration data. |
@@ -104,9 +115,7 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Connect to a SQL server - Azure portal](https://learn.microsoft.com/en-us/azure/private-link/tutorial-private-endpoint-sql-portal) | 0.35 | Portal tutorial for connecting SQL via Private Endpoint; scenario walkthrough rather than expert reference material. |
 | [Connect to a SQL server - PowerShell](https://learn.microsoft.com/en-us/azure/private-link/tutorial-private-endpoint-sql-powershell) | 0.35 | PowerShell tutorial; step-by-step creation of SQL with private endpoint, not a detailed configuration or limits document. |
 | [Connect to a storage account](https://learn.microsoft.com/en-us/azure/private-link/tutorial-private-endpoint-storage-portal) | 0.35 | Storage + Private Endpoint tutorial; scenario-based, not a reference for limits, configuration matrices, or troubleshooting. |
-| [Create a network security perimeter - ARM template](https://learn.microsoft.com/en-us/azure/private-link/create-network-security-perimeter-template) | 0.35 | ARM template quickstart; example-focused, not a detailed reference of parameters or limits. |
 | [Approve private link connections across subscriptions](https://learn.microsoft.com/en-us/azure/private-link/how-to-approve-private-link-cross-subscription) | 0.30 | How-to for approving private endpoint connections across subscriptions; procedural guidance without detailed RBAC role tables, limits, or error-code mappings. |
-| [Create a network security perimeter - Bicep](https://learn.microsoft.com/en-us/azure/private-link/create-network-security-perimeter-bicep) | 0.30 | Quickstart Bicep example for creating a network security perimeter; likely a step-by-step tutorial with one sample template rather than a comprehensive configuration reference or limits/quotas table. |
 | [Create a private endpoint - ARM template](https://learn.microsoft.com/en-us/azure/private-link/create-private-endpoint-template) | 0.30 | ARM template quickstart; example template but not a parameter reference or decision/troubleshooting guide. |
 | [Create a private endpoint - Azure CLI](https://learn.microsoft.com/en-us/azure/private-link/create-private-endpoint-cli) | 0.30 | CLI quickstart; focuses on basic creation steps rather than exhaustive configuration options or expert-only constraints. |
 | [Create a private endpoint - Azure portal](https://learn.microsoft.com/en-us/azure/private-link/create-private-endpoint-portal) | 0.30 | Quickstart walkthrough for portal; shows how to create a private endpoint but not a comprehensive configuration reference or limits. |
@@ -118,12 +127,14 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [What are network security perimeter links?](https://learn.microsoft.com/en-us/azure/private-link/perimeter-links-overview) | 0.30 | Page is an overview of perimeter links (cross-perimeter connections) and supported regions/services during preview; summary indicates conceptual/feature overview without clear evidence of numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. |
 | [Connect to a SQL server - Azure CLI](https://learn.microsoft.com/en-us/azure/private-link/tutorial-private-endpoint-sql-cli) | 0.25 | Tutorial for connecting to Azure SQL via Private Endpoint using CLI; scenario walkthrough rather than reference limits, configuration matrices, or troubleshooting. |
 | [Create a network security perimeter - Azure CLI](https://learn.microsoft.com/en-us/azure/private-link/create-network-security-perimeter-cli) | 0.25 | CLI quickstart for network security perimeter; tutorial-style content without expert-level configuration matrices or limits. |
-| [Create a network security perimeter - PowerShell](https://learn.microsoft.com/en-us/azure/private-link/create-network-security-perimeter-powershell) | 0.25 | PowerShell quickstart for network security perimeter; focuses on example commands rather than exhaustive configuration or security role references. |
 | [Create a Private Link service - ARM template](https://learn.microsoft.com/en-us/azure/private-link/create-private-link-service-template) | 0.20 | ARM template quickstart; example template usage rather than a full configuration reference or decision matrix. |
 | [Create a Private Link service - Azure CLI](https://learn.microsoft.com/en-us/azure/private-link/create-private-link-service-cli) | 0.20 | CLI quickstart for creating a Private Link service; shows commands but not organized configuration parameter reference or limits. |
 | [Create a Private Link service - Azure portal](https://learn.microsoft.com/en-us/azure/private-link/create-private-link-service-portal) | 0.20 | Quickstart using Azure portal; step-by-step creation of a Private Link service without detailed configuration option tables or expert-only constraints. |
 | [Create a Private Link service - Bicep](https://learn.microsoft.com/en-us/azure/private-link/create-private-link-service-bicep) | 0.20 | Bicep quickstart; focuses on example deployment, not exhaustive configuration parameters, limits, or troubleshooting mappings. |
 | [Create a Private Link service - PowerShell](https://learn.microsoft.com/en-us/azure/private-link/create-private-link-service-powershell) | 0.20 | PowerShell quickstart for creating a Private Link service; primarily procedural tutorial, not a configuration reference or troubleshooting guide. |
+| [Create a network security perimeter - ARM template](https://learn.microsoft.com/en-us/azure/private-link/create-network-security-perimeter-template) | 0.20 | Quickstart for creating a network security perimeter using an ARM template. Similar to other quickstarts, it focuses on example resource definitions and basic usage, without detailed limits, quotas, or specialized configuration/diagnostic information beyond standard template usage. |
+| [Create a network security perimeter - Bicep](https://learn.microsoft.com/en-us/azure/private-link/create-network-security-perimeter-bicep) | 0.20 | Quickstart for creating a network security perimeter using Bicep. It demonstrates basic deployment of a perimeter and access rules but does not expose detailed limits, specialized configuration matrices, or troubleshooting mappings that would count as expert knowledge. |
+| [Create a network security perimeter - PowerShell](https://learn.microsoft.com/en-us/azure/private-link/create-network-security-perimeter-powershell) | 0.20 | Quickstart showing how to create a network security perimeter using Azure PowerShell. It’s primarily a step-by-step tutorial without detailed configuration tables, limits, quotas, or product-specific error codes; it focuses on basic resource creation rather than expert-only details. |
 | [What is Azure Private Link?](https://learn.microsoft.com/en-us/azure/private-link/private-link-overview) | 0.20 | High-level overview of Azure Private Link features and concepts; no detailed limits, configuration tables, error codes, or product-specific decision matrices. |
 | [What is a network security perimeter?](https://learn.microsoft.com/en-us/azure/private-link/network-security-perimeter-concepts) | 0.20 | Conceptual explanation of Network Security Perimeter and how it secures PaaS resources; no indication of specific RBAC roles, config parameters, or numeric thresholds. |
 | [Private Link service](https://learn.microsoft.com/en-us/azure/private-link/private-link-service-overview) | 0.10 | Service overview for Azure Private Link service; primarily conceptual without expert-level numeric limits or config matrices. |

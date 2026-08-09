@@ -51,8 +51,8 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure N
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 24
+- **Updated Pages**: 0
+- **Unchanged**: 25
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-elastic-san/azure-elastic-san.csv`
 
@@ -72,11 +72,6 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure N
 | *(Unclassified)* | 1 | 4.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [Metrics](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-metrics)
-  - Updated: 2026-01-09T23:14:00.000Z → 2026-07-29T22:37:00.000Z
 
 ## Classified Pages
 

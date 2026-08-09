@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-02'
+generated_at: '2026-08-09'
 category_descriptions:
   architecture-patterns: Designing certificate lifecycle flows for Azure Device Registry
     and IoT Hub, including issuance, renewal planning, automation, and minimizing
@@ -34,10 +34,10 @@ confusable_not_for: Not for Azure IoT Central (use azure-iot-central), Azure IoT
 - **Unclassified**: 10
 
 ### Incremental Update
-- **New Pages**: 9
+- **New Pages**: 2
 - **Updated Pages**: 0
-- **Unchanged**: 9
-- **Deleted Pages**: 0
+- **Unchanged**: 16
+- **Deleted Pages**: 2
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-iot/azure-iot.csv`
 
 ## Classification Statistics
@@ -53,15 +53,13 @@ confusable_not_for: Not for Azure IoT Central (use azure-iot-central), Azure IoT
 
 ### New Pages
 
-- [Certificate management (preview) in Azure Device Registry](https://learn.microsoft.com/en-us/azure/iot/iot-hub-certificate-management-overview)
-- [Key concepts for certificate management](https://learn.microsoft.com/en-us/azure/iot/iot-hub-certificate-management-concepts)
-- [Configure a credential](https://learn.microsoft.com/en-us/azure/iot/how-to-configure-credential)
-- [Create a policy with a Microsoft root CA](https://learn.microsoft.com/en-us/azure/iot/how-to-create-policy)
-- [Create a policy with an external root CA](https://learn.microsoft.com/en-us/azure/iot/how-to-create-policy-external-certificate)
-- [Issuance of device certificates](https://learn.microsoft.com/en-us/azure/iot/concept-certificate-issuance)
-- [Renewal of device certificates](https://learn.microsoft.com/en-us/azure/iot/concept-certificate-renewal)
-- [Certificate revocation and policy management](https://learn.microsoft.com/en-us/azure/iot/concepts-certificate-policy-management)
-- [Revoke certificates and delete policies](https://learn.microsoft.com/en-us/azure/iot/how-to-revoke-certificate-delete-policy)
+- [Certificate management (preview) in Azure Device Registry](https://learn.microsoft.com/en-us/azure/iot/iot-certificate-management-overview)
+- [Key concepts for certificate management](https://learn.microsoft.com/en-us/azure/iot/iot-certificate-management-concepts)
+
+### Deleted Pages
+
+- ~~Key concepts for certificate management~~ (https://learn.microsoft.com/en-us/azure/iot/iot-hub-certificate-management-concepts)
+- ~~Certificate management (preview) in Azure Device Registry~~ (https://learn.microsoft.com/en-us/azure/iot/iot-hub-certificate-management-overview)
 
 ## Classified Pages
 
@@ -81,12 +79,12 @@ confusable_not_for: Not for Azure IoT Central (use azure-iot-central), Azure IoT
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
 | [Certificate revocation and policy management](https://learn.microsoft.com/en-us/azure/iot/concepts-certificate-policy-management) | 0.40 | Conceptual discussion of revoking certificates and policies and deleting resources; summary suggests high-level lifecycle concepts without detailed configuration parameters or error/diagnostic mappings. |
-| [Certificate management (preview) in Azure Device Registry](https://learn.microsoft.com/en-us/azure/iot/iot-hub-certificate-management-overview) | 0.30 | High-level overview of Microsoft-backed X.509 certificate management and ADR; appears conceptual without specific configuration parameters, limits, or error mappings. |
-| [Key concepts for certificate management](https://learn.microsoft.com/en-us/azure/iot/iot-hub-certificate-management-concepts) | 0.30 | Introduces key concepts of certificate management and certificate-based authentication; conceptual content without detailed settings, limits, or troubleshooting mappings. |
 | [Choose an Azure IoT service](https://learn.microsoft.com/en-us/azure/iot/iot-services-and-technologies) | 0.20 | Describes available Azure IoT services; appears as catalog/overview without detailed decision matrices or quantified comparisons. |
 | [Secure your solution](https://learn.microsoft.com/en-us/azure/iot/iot-overview-security) | 0.20 | High-level security and best practices overview for Azure IoT solutions without specific RBAC roles, configuration parameters, numeric limits, or product-specific settings; content is conceptual rather than detailed expert guidance. |
 | [What is Azure Device Registry?](https://learn.microsoft.com/en-us/azure/iot/iot-device-registry-overview) | 0.20 | Page is an overview of Azure Device Registry as a unified control plane for IoT devices and assets. It describes what the service is and how it integrates with Azure IoT Operations and IoT Hub, but there is no indication of numeric limits, configuration parameter tables, error-code-based troubleshooting, or other detailed, product-specific expert guidance. |
+| [Certificate management (preview) in Azure Device Registry](https://learn.microsoft.com/en-us/azure/iot/iot-certificate-management-overview) | 0.10 | Overview of Microsoft-backed X.509 certificate management and ADR integration; appears conceptual without specific configuration parameters, limits, error codes, or detailed settings unique to the product. |
 | [IoT device development](https://learn.microsoft.com/en-us/azure/iot/iot-overview-device-development) | 0.10 | Overview of IoT device development concepts and components; does not expose concrete configuration tables, quotas, error mappings, or product-specific best-practice details. |
+| [Key concepts for certificate management](https://learn.microsoft.com/en-us/azure/iot/iot-certificate-management-concepts) | 0.10 | Introduces key concepts for certificate management and certificate-based authentication in IoT Hub; content is conceptual and preview-status oriented, lacking concrete limits, configuration tables, or troubleshooting details. |
 | [Support and help options](https://learn.microsoft.com/en-us/azure/iot/iot-support-help) | 0.10 | Support and help options; meta-information, not technical configuration or troubleshooting content. |
 | [What is Azure IoT?](https://learn.microsoft.com/en-us/azure/iot/iot-introduction) | 0.10 | High-level introduction to Azure IoT portfolio and concepts without specific limits, configuration parameters, error codes, or decision matrices. |
 | [IoT glossary](https://learn.microsoft.com/en-us/azure/iot/iot-glossary) | - | Glossary of IoT terms is conceptual reference, not expert configuration, limits, troubleshooting, or decision-making content. |

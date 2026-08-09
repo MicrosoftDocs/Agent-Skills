@@ -53,7 +53,7 @@
 | Configure InfiniBand driver extension on Windows HPC VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/hpc-compute-infiniband-windows |
 | Configure AMD GPU Driver Extension on Linux N-series VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/hpccompute-amd-gpu-linux |
 | Configure AMD GPU Driver Extension on Windows NVv4 VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/hpccompute-amd-gpu-windows |
-| Configure NVIDIA GPU Driver Extension on Linux VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/hpccompute-gpu-linux |
+| Configure NVIDIA GPU driver extension on Azure Linux VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/hpccompute-gpu-linux |
 | Configure NVIDIA GPU Driver Extension on Windows VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/hpccompute-gpu-windows |
 | Configure Microsoft Antimalware Extension for Windows VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/iaas-antimalware-windows |
 | Configure Azure Key Vault VM extension on Linux | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/key-vault-linux |
@@ -130,7 +130,7 @@
 | Configure Azure Diagnostics Extension for Windows VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/extensions-diagnostics |
 | Set up time sync for AD domain Windows VMs in Azure | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/external-ntpsource-configuration |
 | Configure AMD GPU drivers on Azure N-series Windows VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/n-series-amd-driver-setup |
-| Install NVIDIA GPU drivers on Windows N-series VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/n-series-driver-setup |
+| Configure NVIDIA GPU driver extension on N-series VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/n-series-driver-setup |
 | Use Run Command to execute scripts on Windows Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/run-command |
 | Configure managed Run Command for Windows Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/run-command-managed |
 | Define Azure VM resources in ARM templates | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/template-description |

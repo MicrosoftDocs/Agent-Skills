@@ -41,9 +41,9 @@ confusable_not_for: Not for Azure Cost Management (use azure-cost-management), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 5
-- **Unchanged**: 28
-- **Deleted Pages**: 1
+- **Updated Pages**: 0
+- **Unchanged**: 33
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-advisor/azure-advisor.csv`
 
 ## Classification Statistics
@@ -59,23 +59,6 @@ confusable_not_for: Not for Azure Cost Management (use azure-cost-management), A
 | *(Unclassified)* | 13 | 39.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [Advisor data in Azure Resource Graph](https://learn.microsoft.com/en-us/azure/advisor/advisor-azure-resource-graph)
-  - Updated: 2026-05-13T06:04:00.000Z → 2026-07-27T12:03:00.000Z
-- [Cost](https://learn.microsoft.com/en-us/azure/advisor/advisor-reference-cost-recommendations)
-  - Updated: 2026-02-10T08:00:00.000Z → 2026-07-28T08:00:00.000Z
-- [Operational Excellence](https://learn.microsoft.com/en-us/azure/advisor/advisor-reference-operational-excellence-recommendations)
-  - Updated: 2026-04-14T08:00:00.000Z → 2026-07-28T12:05:00.000Z
-- [Performance](https://learn.microsoft.com/en-us/azure/advisor/advisor-reference-performance-recommendations)
-  - Updated: 2026-02-24T08:00:00.000Z → 2026-07-28T08:00:00.000Z
-- [Reliability](https://learn.microsoft.com/en-us/azure/advisor/advisor-reference-reliability-recommendations)
-  - Updated: 2026-05-26T08:00:00.000Z → 2026-07-28T08:00:00.000Z
-
-### Deleted Pages
-
-- ~~Azure Resource Graph queries~~ (https://learn.microsoft.com/en-us/azure/advisor/resource-graph-samples)
 
 ## Classified Pages
 

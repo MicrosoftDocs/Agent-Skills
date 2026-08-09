@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-02'
+generated_at: '2026-08-09'
 category_descriptions:
   security: 'Securing Azure Data Explorer: authn/z (RBAC, principals, Entra apps,
     Conditional Access), encryption, managed identities, network isolation, policies,
@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 7
-- **Unchanged**: 192
+- **Updated Pages**: 1
+- **Unchanged**: 198
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-explorer/azure-data-explorer.csv`
 
@@ -78,20 +78,8 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 
 ### Updated Pages
 
-- [Event Grid data connection](https://learn.microsoft.com/en-us/azure/data-explorer/ingest-data-event-grid-overview)
-  - Updated: 2025-08-11T08:00:00.000Z → 2026-07-28T08:00:00.000Z
-- [Use dashboard parameters](https://learn.microsoft.com/en-us/azure/data-explorer/dashboard-parameters)
-  - Updated: 2026-07-23T08:00:00.000Z → 2026-07-30T08:00:00.000Z
-- [Kibana (K2Bridge connector)](https://learn.microsoft.com/en-us/azure/data-explorer/k2bridge)
-  - Updated: 2023-10-13T11:04:00.000Z → 2026-07-28T08:00:00.000Z
-- [Access the web UI anywhere](https://learn.microsoft.com/en-us/azure/data-explorer/web-sync)
-  - Updated: 2026-06-16T22:03:00.000Z → 2026-07-28T08:00:00.000Z
-- [Use dashboards](https://learn.microsoft.com/en-us/azure/data-explorer/azure-data-explorer-dashboards)
-  - Updated: 2026-04-20T08:00:00.000Z → 2026-07-30T08:00:00.000Z
-- [Use Azure Data Explorer Clusters Insights](https://learn.microsoft.com/en-us/azure/data-explorer/data-explorer-insights)
-  - Updated: 2022-11-03T00:00:00.000Z → 2026-07-29T11:02:00.000Z
-- [Reserved capacity](https://learn.microsoft.com/en-us/azure/data-explorer/pricing-reserved-capacity)
-  - Updated: 2025-05-21T08:00:00.000Z → 2026-07-29T11:02:00.000Z
+- [Dashboard-specific visuals](https://learn.microsoft.com/en-us/azure/data-explorer/dashboard-visuals)
+  - Updated: 2026-02-09T12:03:00.000Z → 2026-08-06T17:02:00.000Z
 
 ## Classified Pages
 
@@ -265,7 +253,6 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | [Create external table](https://learn.microsoft.com/en-us/azure/data-explorer/external-table) | 0.30 | Wizard how-to for external tables; tutorial-style without deep configuration matrices or limits. |
 | [Create table](https://learn.microsoft.com/en-us/azure/data-explorer/create-table-wizard) | 0.30 | Wizard-based how-to for creating a table; mostly procedural without detailed config tables or limits. |
 | [Dashboard live refresh](https://learn.microsoft.com/en-us/azure/data-explorer/dashboard-live-refresh) | 0.30 | Explains live refresh behavior and configuration in dashboards, but the summary does not indicate specific numeric limits, timeout ranges, or detailed configuration parameter tables. It reads as a conceptual/how-to explanation of live refresh and fallback intervals rather than expert-only configuration or limits content. |
-| [Dashboard-specific visuals](https://learn.microsoft.com/en-us/azure/data-explorer/dashboard-visuals) | 0.30 | Lists dashboard-specific visuals; likely feature enumeration and links, not detailed limits or configuration tables. |
 | [Data ingestion overview](https://learn.microsoft.com/en-us/azure/data-explorer/ingest-data-overview) | 0.30 | High-level ingestion overview without concrete limits, configs, or error mappings. |
 | [Delete a database](https://learn.microsoft.com/en-us/azure/data-explorer/delete-database) | 0.30 | Simple how-to for deleting a database; summary doesn’t indicate special limits, soft-delete behavior, or complex configuration. |
 | [Excel](https://learn.microsoft.com/en-us/azure/data-explorer/excel) | 0.30 | Tutorial for exporting/importing queries into Excel; no indication of detailed config parameters, limits, or troubleshooting. |
@@ -301,3 +288,4 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | [Query sample data](https://learn.microsoft.com/en-us/azure/data-explorer/web-query-data) | 0.10 | Quickstart for using the Azure Data Explorer web UI to run sample KQL queries; primarily a step-by-step tutorial without product-specific limits, configuration tables, error-code troubleshooting, or decision matrices. |
 | [What is Azure Data Explorer?](https://learn.microsoft.com/en-us/azure/data-explorer/data-explorer-overview) | 0.10 | High-level product overview of Azure Data Explorer capabilities (ingestion, querying, visualization) without specific limits, configuration parameters, error codes, or decision matrices. |
 | [What's new](https://learn.microsoft.com/en-us/azure/data-explorer/whats-new) | 0.10 | Documentation change log; no technical limits, configs, or troubleshooting content. |
+| [Dashboard-specific visuals](https://learn.microsoft.com/en-us/azure/data-explorer/dashboard-visuals) | - | Page describes available dashboard visual types in Azure Data Explorer but, based on the summary, does not list product-specific limits, configuration tables, error codes, or decision matrices. It appears to be a feature overview/customization guide rather than detailed expert configuration, limits, or troubleshooting content. |

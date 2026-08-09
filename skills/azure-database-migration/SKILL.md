@@ -1,14 +1,14 @@
 ---
 name: azure-database-migration
-description: Expert knowledge for Azure Database Migration service development including troubleshooting, decision making, limits & quotas, security, integrations & coding patterns, and deployment. Use when migrating MySQL, PostgreSQL, SQL Server/SSIS, MongoDB, or hybrid databases with Azure DMS, and other Azure Database Migration service related development tasks. Not for Azure Migrate (use azure-migrate), Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines).
+description: Expert knowledge for Azure Database Migration Service development including troubleshooting, decision making, limits & quotas, security, integrations & coding patterns, and deployment. Use when migrating MySQL, PostgreSQL, SQL Server/SSIS, MongoDB, or hybrid databases with Azure DMS, and other Azure Database Migration service related development tasks. Not for Azure Migrate (use azure-migrate), Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-07-19"
   generator: "docs2skills/1.0.0"
 ---
-# Azure Database Migration service Skill
+# Azure Database Migration Service Skill
 
-This skill provides expert guidance for Azure Database Migration service. Covers troubleshooting, decision making, limits & quotas, security, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Database Migration Service. Covers troubleshooting, decision making, limits & quotas, security, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 

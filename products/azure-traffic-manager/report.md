@@ -46,10 +46,10 @@ confusable_not_for: Not for Azure Front Door (use azure-front-door), Azure Load 
 - **Unclassified**: 15
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 4
-- **Unchanged**: 40
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 46
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-traffic-manager/azure-traffic-manager.csv`
 
 ## Classification Statistics
@@ -66,26 +66,6 @@ confusable_not_for: Not for Azure Front Door (use azure-front-door), Azure Load 
 | *(Unclassified)* | 15 | 32.6% |
 
 ## Changes
-
-### New Pages
-
-- [Troubleshoot degraded state on Azure Traffic Manager](https://learn.microsoft.com/en-us/troubleshoot/azure/traffic-manager/troubleshoot-traffic-manager-degraded-status)
-- [Strictly typed profiles](https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-strictly-typed-profiles)
-
-### Updated Pages
-
-- [What is Traffic Manager?](https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-overview)
-  - Updated: 2025-12-30T06:12:00.000Z → 2026-07-31T19:23:00.000Z
-- [Endpoint types](https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-endpoint-types)
-  - Updated: 2024-06-27T22:45:00.000Z → 2026-07-31T19:23:00.000Z
-- [How Traffic Manager works](https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-how-it-works)
-  - Updated: 2025-12-30T06:12:00.000Z → 2026-06-01T08:00:00.000Z
-- [FAQs](https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-faqs)
-  - Updated: 2025-12-29T08:00:00.000Z → 2026-06-01T08:00:00.000Z
-
-### Deleted Pages
-
-- ~~Support and troubleshooting~~ (https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-support-help)
 
 ## Classified Pages
 

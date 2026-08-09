@@ -1,14 +1,14 @@
 ---
 name: azure-content-safety
-description: Expert knowledge for Azure AI Content Safety development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Content Safety Docker, text/image/prompt shield APIs, blocklists, provenance, or groundedness checks, and other Azure AI Content Safety related development tasks. Not for Azure Security (use azure-security), Azure Defender For Cloud (use azure-defender-for-cloud), Azure Sentinel (use azure-sentinel).
+description: Expert knowledge for Content Safety in Foundry Control Plane development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Content Moderator limits, Docker CS containers, blocklists, media provenance, or groundedness APIs, and other Content Safety in Foundry Control Plane related development tasks. Not for Azure Content Understanding in Foundry Tools (use azure-content-understanding), Azure Speech in Foundry Tools (use azure-speech), Azure Security (use azure-security), Azure Defender For Cloud (use azure-defender-for-cloud).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-02"
+  generated_at: "2026-08-09"
   generator: "docs2skills/1.0.0"
 ---
-# Azure AI Content Safety Skill
+# Content Safety in Foundry Control Plane Skill
 
-This skill provides expert guidance for Azure AI Content Safety. Covers troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Content Safety in Foundry Control Plane. Covers troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -28,11 +28,11 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L42-L46 | Tuning Content Safety thresholds, categories, and prompts to reduce misclassifications, plus strategies to balance safety, recall, and user experience. |
 | Decision Making | L47-L52 | Guidance on migrating apps from Content Safety preview to GA and deciding when and how to use limited-access Content Safety features and models. |
 | Architecture & Design Patterns | L53-L57 | Architectural guidance for combining cloud, hybrid, and on-device Azure AI Content Safety, including design patterns, deployment options, and integration strategies. |
-| Limits & Quotas | L58-L64 | Language coverage, building and training custom safety categories, and detecting protected/third‑party code in model outputs. |
-| Security | L65-L69 | Details on how Azure AI Content Safety encrypts data at rest, including encryption models, key management options, and compliance/security considerations. |
-| Configuration | L70-L75 | Configuring Content Safety runtime via Docker containers and setting up/managing text blocklists to customize and enforce content filtering rules |
-| Integrations & Coding Patterns | L76-L81 | Calling Content Safety APIs for provenance detection and groundedness checks, including request/response patterns, parameters, and integration examples for detecting source and factual alignment. |
-| Deployment | L82-L87 | How to install, configure, and run Azure AI Content Safety Docker containers for text, image, and prompt shield analysis in your own environment. |
+| Limits & Quotas | L58-L66 | Image/term list limits and quotas in Content Moderator, language support for Content Safety, training custom categories, and detecting protected code in generated outputs. |
+| Security | L67-L71 | Details on how Azure AI Content Safety encrypts data at rest, including encryption models, key management options, and compliance/security considerations. |
+| Configuration | L72-L77 | Configuring Content Safety runtime via Docker containers and setting up/managing text blocklists to customize and enforce content filtering rules |
+| Integrations & Coding Patterns | L78-L83 | Using Content Safety APIs in code, including media provenance detection and groundedness checks, with request patterns, parameters, and integration examples. |
+| Deployment | L84-L89 | How to install, configure, and run Azure AI Content Safety Docker containers for text, image, and prompt shield analysis in your own environment. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -58,6 +58,8 @@ This skill requires **network access** to fetch documentation content:
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
+| Apply image list quotas in Content Moderator | https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/image-lists-quickstart-dotnet |
+| Understand Content Moderator image and term list limits | https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/samples-dotnet |
 | Check language support for Azure AI Content Safety | https://learn.microsoft.com/en-us/azure/ai-services/content-safety/language-support |
 | Create and train custom categories with Content Safety | https://learn.microsoft.com/en-us/azure/ai-services/content-safety/quickstart-custom-categories |
 | Use protected material detection for code outputs | https://learn.microsoft.com/en-us/azure/ai-services/content-safety/quickstart-protected-material-code |
@@ -76,7 +78,7 @@ This skill requires **network access** to fetch documentation content:
 ### Integrations & Coding Patterns
 | Topic | URL |
 |-------|-----|
-| Call Azure Content Safety Provenance Detect API | https://learn.microsoft.com/en-us/azure/ai-services/content-safety/how-to/how-to-provenance-detection |
+| Use Content Provenance Detection API for media | https://learn.microsoft.com/en-us/azure/ai-services/content-safety/how-to/how-to-provenance-detection |
 | Use Azure AI Content Safety groundedness detection API | https://learn.microsoft.com/en-us/azure/ai-services/content-safety/quickstart-groundedness |
 
 ### Deployment

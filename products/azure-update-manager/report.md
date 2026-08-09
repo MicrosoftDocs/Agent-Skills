@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-19'
+generated_at: '2026-08-09'
 category_descriptions:
   deployment: 'Deploying and managing Automanage/Update Manager at scale: onboarding
     VMs/Arc servers, upgrading profiles, cross-region moves, tenant repairs, Azure
@@ -14,9 +14,9 @@ category_descriptions:
   integrations: Using SDKs (Go/Java/JS/Python) and REST APIs to assign Automanage
     profiles, manage VM/Arc server updates, and implement pre/post maintenance with
     Functions, webhooks, and runbooks
-  configuration: 'Configuring Update Manager: Automanage profiles, DCRs/workspaces,
-    Windows Update/ESU setup, scopes/schedules, alerts/events, policy-based assessments,
-    and reporting via workbooks/Resource Graph.'
+  configuration: 'Configuring Azure Update Manager: profiles, scopes, schedules, alerts,
+    ESU, client settings, data collection, Resource Graph, policy-based assessments,
+    and pre/post maintenance events.'
   limits-quotas: OS, region, image, and workload support limits for Update Manager,
     including supported update sources/types, change tracking matrix, and unsupported
     scenarios.
@@ -24,16 +24,17 @@ category_descriptions:
     migrating patch management from Configuration Manager to Azure Update Manager
 skill_description: Expert knowledge for Azure Update Manager development including
   troubleshooting, best practices, decision making, limits & quotas, security, configuration,
-  integrations & coding patterns, and deployment. Use when onboarding VMs/Arc servers,
-  configuring Automanage profiles, guest patching, DCRs/workspaces, or Update Manager
-  APIs, and other Azure Update Manager related development tasks. Not for Azure Automation
-  (use azure-automation), Azure Monitor (use azure-monitor), Azure Policy (use azure-policy),
-  Azure Osconfig (use azure-osconfig).
-use_when: Use when onboarding VMs/Arc servers, configuring Automanage profiles, guest
-  patching, DCRs/workspaces, or Update Manager APIs, and other Azure Update Manager
-  related development tasks.
+  integrations & coding patterns, and deployment. Use when onboarding VMs/Arc, configuring
+  patch schedules/ESU, using SDK/REST APIs, or migrating from ConfigMgr, and other
+  Azure Update Manager related development tasks. Not for Azure Automation (use azure-automation),
+  Azure Monitor (use azure-monitor), Azure Policy (use azure-policy), Azure Resource
+  Manager (use azure-resource-manager).
+use_when: Use when onboarding VMs/Arc, configuring patch schedules/ESU, using SDK/REST
+  APIs, or migrating from ConfigMgr, and other Azure Update Manager related development
+  tasks.
 confusable_not_for: Not for Azure Automation (use azure-automation), Azure Monitor
-  (use azure-monitor), Azure Policy (use azure-policy), Azure Osconfig (use azure-osconfig).
+  (use azure-monitor), Azure Policy (use azure-policy), Azure Resource Manager (use
+  azure-resource-manager).
 ---
 # Azure Update Manager Crawl Report
 
@@ -47,8 +48,8 @@ confusable_not_for: Not for Azure Automation (use azure-automation), Azure Monit
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 84
+- **Updated Pages**: 1
+- **Unchanged**: 83
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-update-manager/azure-update-manager.csv`
 
@@ -67,6 +68,11 @@ confusable_not_for: Not for Azure Automation (use azure-automation), Azure Monit
 | *(Unclassified)* | 30 | 35.7% |
 
 ## Changes
+
+### Updated Pages
+
+- [Extended Security Updates](https://learn.microsoft.com/en-us/azure/update-manager/extended-security-updates)
+  - Updated: 2025-03-23T08:00:00.000Z → 2026-08-06T22:11:00.000Z
 
 ## Classified Pages
 
@@ -108,13 +114,13 @@ confusable_not_for: Not for Azure Automation (use azure-automation), Azure Monit
 | [Supported regions](https://learn.microsoft.com/en-us/azure/update-manager/supported-regions) | limits-quotas | 0.70 | Supported regions matrix is effectively a capability/availability limit per region; this is specific, enumerated support data not inferable from training. |
 | [Supported updates, Types, Microsoft updates and Third-party updates](https://learn.microsoft.com/en-us/azure/update-manager/support-matrix) | deployment | 0.70 | A 'support matrix' page for update sources/types typically lists which update sources (Microsoft Update, WSUS, third-party catalogs, etc.) and update types are supported in specific environments and scenarios. This is deployment/feature-support specific, product- and tier-dependent information that an LLM is unlikely to know from training and is essential for planning how to deploy and manage updates with Azure Update Manager. |
 | [Ubuntu Pro support](https://learn.microsoft.com/en-us/azure/update-manager/security-awareness-ubuntu-support) | best-practices | 0.70 | Provides concrete guidance tied to specific Ubuntu versions and their support status, plus product-specific handling of security vulnerabilities and Ubuntu Pro. |
+| [Extended Security Updates](https://learn.microsoft.com/en-us/azure/update-manager/extended-security-updates) | configuration | 0.68 | ESU enrollment and management for Windows Server via Azure Update Manager involves product-specific configuration steps, prerequisites, and settings (such as supported versions, Azure VM vs Azure Arc handling, and ESU enablement flows) that go beyond generic concepts. The page likely details how to configure ESU on different machine types, including specific options and conditions unique to this service, fitting the configuration sub-skill more than the other categories. |
 | [Automanage for Linux](https://learn.microsoft.com/en-us/azure/automanage/automanage-linux) | best-practices | 0.65 | Describes specific services and configurations Automanage applies to Linux VMs; these are product-specific best-practice settings. |
 | [Automanage for Windows Server](https://learn.microsoft.com/en-us/azure/automanage/automanage-windows-server) | best-practices | 0.65 | Lists concrete services and configuration behaviors Automanage enforces on Windows Server, which are product-specific best practices. |
 | [Automatic VM Guest Patching](https://learn.microsoft.com/en-us/azure/update-manager/support-matrix-automatic-guest-patching) | best-practices | 0.65 | Covers configuration steps and best practices for automatic guest patching, likely including product-specific settings and recommendations for compliance. |
 | [Azure disk encryption](https://learn.microsoft.com/en-us/azure/automanage/overview-azure-disk-encryption) | security | 0.65 | Disk encryption on Automanaged VMs is security-specific and typically includes product-specific settings (Key Vault use, encryption types, required roles). |
 | [Create reports using workbooks](https://learn.microsoft.com/en-us/azure/update-manager/manage-workbooks) | configuration | 0.65 | Describes creating and editing workbooks for Update Manager, including product-specific queries, parameters, and visualization configuration. |
 | [Cross-subscription patching](https://learn.microsoft.com/en-us/azure/update-manager/cross-subscription-patching) | decision-making | 0.65 | Covers overview, key benefits, and limitations of cross-subscription patching; likely includes constraints and scenarios guiding when/how to use this capability. |
-| [Extended Security Updates](https://learn.microsoft.com/en-us/azure/update-manager/extended-security-updates) | configuration | 0.65 | ESU enrollment and management will include specific configuration steps, parameters, and version applicability unique to Update Manager and Windows Server 2012/2012 R2. |
 | [Manage updates for customized images](https://learn.microsoft.com/en-us/azure/update-manager/manage-updates-customized-images) | limits-quotas | 0.65 | The article explicitly includes a 'limitations' section for customized image support in Azure Update Manager. These pages typically enumerate concrete constraints (for example, supported/unsupported image types, preview-scope restrictions, and other hard limits) that are product-specific and not generally known. Among the available categories, limits-quotas best fits a page whose core value is describing what is and is not supported for customized images. |
 | [March 2025](https://learn.microsoft.com/en-us/azure/update-manager/overview-arc-enabled-vm-extensions) | deployment | 0.65 | Release notes for Arc-enabled VM extensions include version-specific behaviors, known issues, and constraints relevant to deployment and operations. |
 | [Unsupported workloads](https://learn.microsoft.com/en-us/azure/update-manager/unsupported-workloads) | limits-quotas | 0.65 | Explicitly lists workloads that cannot be managed, which are product-specific capability limits. |

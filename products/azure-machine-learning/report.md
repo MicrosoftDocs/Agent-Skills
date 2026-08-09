@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 37
-- **Unchanged**: 516
+- **Updated Pages**: 0
+- **Unchanged**: 553
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-machine-learning/azure-machine-learning.csv`
 
@@ -76,50 +76,6 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 | *(Unclassified)* | 135 | 24.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [Set up VS Code extension](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-setup-vs-code?view=azureml-api-2)
-  - Updated: 2026-02-11T23:10:00.000Z → 2026-04-10T22:08:00.000Z
-- [Forecast demand (Bike share data)](https://learn.microsoft.com/en-us/azure/machine-learning/tutorial-automated-ml-forecast?view=azureml-api-2)
-  - Updated: 2025-07-22T22:14:00.000Z → 2026-07-31T08:00:00.000Z
-- [Experiment and train models using features](https://learn.microsoft.com/en-us/azure/machine-learning/tutorial-experiment-train-models-using-features?view=azureml-api-2)
-  - Updated: 2026-04-13T17:17:00.000Z → 2026-07-31T22:12:00.000Z
-- [Enable recurrent materialization and run batch inference](https://learn.microsoft.com/en-us/azure/machine-learning/tutorial-enable-recurrent-materialization-run-batch-inference?view=azureml-api-2)
-  - Updated: 2026-04-13T17:17:00.000Z → 2026-07-31T22:12:00.000Z
-- [Enable online materialization and run online inference](https://learn.microsoft.com/en-us/azure/machine-learning/tutorial-online-materialization-inference?view=azureml-api-2)
-  - Updated: 2024-11-21T08:00:00.000Z → 2026-07-31T22:12:00.000Z
-- [Hub workspaces](https://learn.microsoft.com/en-us/azure/machine-learning/concept-hub-workspace?view=azureml-api-2)
-  - Updated: 2026-03-26T08:00:00.000Z → 2026-03-27T06:03:00.000Z
-- [Compute instances](https://learn.microsoft.com/en-us/azure/machine-learning/concept-compute-instance?view=azureml-api-2)
-  - Updated: 2025-10-06T08:00:00.000Z → 2026-07-27T17:05:00.000Z
-- [Manage resources VS Code](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-manage-resources-vscode?view=azureml-api-2)
-  - Updated: 2026-03-18T08:00:00.000Z → 2026-03-19T17:26:00.000Z
-- [Hugging Face Hub community partner models](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-deploy-models-from-huggingface?view=azureml-api-2)
-  - Updated: 2025-11-24T23:11:00.000Z → 2026-07-31T22:12:00.000Z
-- [What is prompt flow?](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/overview-what-is-prompt-flow?view=azureml-api-2)
-  - Updated: 2026-04-21T16:56:00.000Z → 2026-07-31T08:00:00.000Z
-- [Get started in prompt flow](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/get-started-prompt-flow?view=azureml-api-2)
-  - Updated: 2026-04-21T16:56:00.000Z → 2026-07-31T08:00:00.000Z
-- [Create image labeling projects](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-create-image-labeling-projects?view=azureml-api-2)
-  - Updated: 2026-01-27T08:00:00.000Z → 2026-01-27T23:14:00.000Z
-- [Create text labeling projects](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-create-text-labeling-projects?view=azureml-api-2)
-  - Updated: 2024-08-28T16:59:00.000Z → 2025-12-31T23:04:00.000Z
-- [Manage labeling projects](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-manage-labeling-projects?view=azureml-api-2)
-  - Updated: 2025-03-06T08:00:00.000Z → 2025-12-31T23:04:00.000Z
-- [Export and delete data](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-export-delete-data?view=azureml-api-2)
-  - Updated: 2025-03-31T17:04:00.000Z → 2025-12-31T23:04:00.000Z
-- [What is a pipeline](https://learn.microsoft.com/en-us/azure/machine-learning/concept-ml-pipelines?view=azureml-api-2)
-  - Updated: 2025-09-09T22:12:00.000Z → 2025-12-31T23:04:00.000Z
-- [Secured workspace traffic flow](https://learn.microsoft.com/en-us/azure/machine-learning/concept-secure-network-traffic-flow?view=azureml-api-2)
-  - Updated: 2025-02-06T08:00:00.000Z → 2026-04-03T22:09:00.000Z
-- [Manage users and roles](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-assign-roles?view=azureml-api-2)
-  - Updated: 2026-01-08T08:00:00.000Z → 2026-01-09T06:03:00.000Z
-- [Virtual network overview](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-network-security-overview?view=azureml-api-2)
-  - Updated: 2025-10-30T17:14:00.000Z → 2025-12-31T23:04:00.000Z
-- [Use custom DNS](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-custom-dns?view=azureml-api-2)
-  - Updated: 2026-03-26T08:00:00.000Z → 2026-07-08T17:05:00.000Z
-- *...and 17 more*
 
 ## Classified Pages
 
