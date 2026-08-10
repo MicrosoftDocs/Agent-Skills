@@ -127,6 +127,7 @@ Skills for Databases.
 | [azure-cosmos-db](skills/azure-cosmos-db/) | Expert knowledge for Azure Cosmos DB development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Cosmos DB applications. |
 | [azure-database-mysql](skills/azure-database-mysql/) | Expert knowledge for Azure Database for MySQL development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Database for MySQL applications. |
 | [azure-database-postgresql](skills/azure-database-postgresql/) | Expert knowledge for Azure Database for PostgreSQL development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Database for PostgreSQL applications. |
+| [azure-documentdb](skills/azure-documentdb/) | Expert knowledge for Azure DocumentDB development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, migrating, or optimizing Azure DocumentDB applications and MongoDB-compatible workloads. |
 | [azure-health-data-services](skills/azure-health-data-services/) | Expert knowledge for Azure Health Data Services development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Health Data Services applications. |
 | [azure-managed-redis](skills/azure-managed-redis/) | Expert knowledge for Azure Managed Redis development including troubleshooting, best practices, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Managed Redis applications. |
 | [azure-oracle](skills/azure-oracle/) | Expert knowledge for Azure Oracle development including troubleshooting, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Oracle applications. |
@@ -410,7 +411,7 @@ Skills for Web.
 - **Storage:** 11 skills
 - **Compute:** 11 skills
 - **Web:** 9 skills
-- **Databases:** 9 skills
+- **Databases:** 12 skills
 - **Developer Tools:** 8 skills
 - **DevOps:** 6 skills
 - **Internet of Things:** 6 skills
