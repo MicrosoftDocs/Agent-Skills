@@ -34,9 +34,9 @@ confusable_not_for: Not for Azure Reliability (use azure-reliability), Azure Sit
 - **Unclassified**: 25
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 34
+- **Unchanged**: 35
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-resiliency/azure-resiliency.csv`
 
@@ -50,10 +50,6 @@ confusable_not_for: Not for Azure Reliability (use azure-reliability), Azure Sit
 | *(Unclassified)* | 25 | 71.4% |
 
 ## Changes
-
-### New Pages
-
-- [Overview](https://learn.microsoft.com/en-us/azure/resiliency/infrastructure-resiliency-manager-overview)
 
 ## Classified Pages
 

@@ -1,7 +1,7 @@
 # Generation Summary
 
-**Generated**: 2026-08-02 02:02:26
-**Total Duration**: 0m 22s
+**Generated**: 2026-08-09 02:02:30
+**Total Duration**: 0m 38s
 
 ## Product Crawl Summary
 
@@ -9,30 +9,30 @@ Quick overview for reviewers. See individual product reports for details.
 
 | # | Product | Pages | Classified | New | Updated | Deleted | Status |
 |---|---------|-------|------------|-----|---------|---------|--------|
-| 1 | Azure Cloud Adoption Framework | 327 | 318 | 0 | 3 | 1 | OK |
+| 1 | Azure Cloud Adoption Framework | 360 | 350 | 33 | 2 | 0 | OK |
 
 ### Totals
 
 - **Products Processed**: 1 success, 0 failed
-- **Total Pages**: 327
-- **Total Classified**: 318
-- **Total New Pages**: 0
-- **Total Updated Pages**: 3
-- **Total Deleted Pages**: 1
+- **Total Pages**: 360
+- **Total Classified**: 350
+- **Total New Pages**: 33
+- **Total Updated Pages**: 2
+- **Total Deleted Pages**: 0
 
 ### Classification by Type (All Products)
 
 | Type | Count |
 |------|-------|
-| adoption-patterns | 21 |
-| governance | 24 |
-| operations | 31 |
-| organization | 14 |
-| planning | 24 |
-| readiness | 113 |
+| adoption-patterns | 26 |
+| governance | 30 |
+| operations | 36 |
+| organization | 16 |
+| planning | 25 |
+| readiness | 121 |
 | scenarios | 53 |
-| security | 23 |
-| strategy | 15 |
+| security | 27 |
+| strategy | 16 |
 
 ---
 
@@ -63,12 +63,12 @@ Quick overview for reviewers. See individual product reports for details.
 
 **Sub-TOCs:**
 
+- https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/toc.json
 - https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai-agents/toc.json
-- https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/ai/toc.json
+- https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/data/toc.json
 - https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/toc.json
 - https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/toc.json
 - https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-vmware/toc.json
-- https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/toc.json
 - https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
 - https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/oracle-on-azure/toc.json
 - https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/sap/toc.json

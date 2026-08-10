@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-08-02'
+generated_at: '2026-08-09'
 category_descriptions:
   configuration: 'Configuring AVS infrastructure: networking, DNS/DHCP, storage/datastores,
-    backup, monitoring/metrics, Arc/Run Command, HCX, Cloud Director, and high availability/placement
-    settings.'
+    backup, monitoring/alerts, HCX/Cloud Director, Arc/Run Command, and performance/placement
+    policies.'
   architecture-patterns: 'Network, storage, and private cloud design for AVS: hub-spoke
     patterns, vSAN/stretched clusters, Horizon and GitHub Enterprise sizing, Cloud
     Director networking, and Gen 2 architecture.'
@@ -24,22 +24,22 @@ category_descriptions:
   limits-quotas: Host, cluster, and routing limits for AVS; vSAN ESA settings; required
     ports; and how to request quota, deploy, and scale private clouds within platform
     constraints
-  troubleshooting: 'Diagnosing and fixing AVS issues: known bugs/workarounds, DR problems
-    for AV VMs, deployment failures, and Run Command errors/logs.'
+  troubleshooting: 'Diagnosing and fixing AVS issues: VM disaster recovery problems,
+    deployment failures, and errors when using AVS Run Commands.'
 skill_description: Expert knowledge for Azure VMware Solution development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when configuring AVS networking/HCX, vSAN/stretched clusters, Horizon/VDI, Cloud
-  Director, or SQL workloads, and other Azure VMware Solution related development
-  tasks. Not for Azure Virtual Machines (use azure-virtual-machines), SQL Server on
-  Azure Virtual Machines (use azure-sql-virtual-machines), Azure Stack Edge (use azure-stack-edge),
-  Azure Baremetal Infrastructure (use azure-baremetal-infrastructure).
-use_when: Use when configuring AVS networking/HCX, vSAN/stretched clusters, Horizon/VDI,
-  Cloud Director, or SQL workloads, and other Azure VMware Solution related development
+  Use when designing AVS networking/HCX, vSAN clusters, Horizon VDI, JetStream DR,
+  or SQL migration workloads, and other Azure VMware Solution related development
+  tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Virtual
+  Machine Scale Sets (use azure-vm-scalesets), Azure Nutanix (use azure-nutanix),
+  SAP HANA on Azure Large Instances (use azure-sap).
+use_when: Use when designing AVS networking/HCX, vSAN clusters, Horizon VDI, JetStream
+  DR, or SQL migration workloads, and other Azure VMware Solution related development
   tasks.
-confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines), SQL
-  Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Stack Edge
-  (use azure-stack-edge), Azure Baremetal Infrastructure (use azure-baremetal-infrastructure).
+confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines), Azure
+  Virtual Machine Scale Sets (use azure-vm-scalesets), Azure Nutanix (use azure-nutanix),
+  SAP HANA on Azure Large Instances (use azure-sap).
 ---
 # Azure VMware Solution Crawl Report
 
@@ -52,10 +52,10 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 - **Unclassified**: 43
 
 ### Incremental Update
-- **New Pages**: 2
+- **New Pages**: 0
 - **Updated Pages**: 3
-- **Unchanged**: 134
-- **Deleted Pages**: 1
+- **Unchanged**: 136
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-vmware-solution/azure-vmware-solution.csv`
 
 ## Classification Statistics
@@ -64,8 +64,8 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 |------|-------|------------|
 | architecture-patterns | 9 | 6.5% |
 | best-practices | 3 | 2.2% |
-| configuration | 32 | 23.0% |
-| decision-making | 10 | 7.2% |
+| configuration | 33 | 23.7% |
+| decision-making | 9 | 6.5% |
 | deployment | 8 | 5.8% |
 | integrations | 10 | 7.2% |
 | limits-quotas | 8 | 5.8% |
@@ -75,23 +75,14 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 
 ## Changes
 
-### New Pages
-
-- [Attach Azure Elastic SAN datastores to Azure VMware Solution](https://learn.microsoft.com/en-us/azure/azure-vmware/configure-azure-elastic-san)
-- [Elastic SAN datastore support on Azure VMware Solution using Service Endpoints](https://learn.microsoft.com/en-us/azure/azure-vmware/elastic-san-datastore-support-service-endpoints)
-
 ### Updated Pages
 
-- [Request host quota for Azure VMware Solution](https://learn.microsoft.com/en-us/azure/azure-vmware/request-host-quota-azure-vmware-solution)
-  - Updated: 2026-04-01T22:41:00.000Z → 2026-07-30T22:15:00.000Z
+- [Elastic SAN datastore support on Azure VMware Solution using Service Endpoints](https://learn.microsoft.com/en-us/azure/azure-vmware/elastic-san-datastore-support-service-endpoints)
+  - Updated: 2026-07-27T17:13:00.000Z → 2026-08-07T11:46:00.000Z
+- [Disaster recovery solutions for VMs](https://learn.microsoft.com/en-us/azure/azure-vmware/ecosystem-disaster-recovery-vms)
+  - Updated: 2026-06-18T17:32:00.000Z → 2026-08-07T22:20:00.000Z
 - [What's new](https://learn.microsoft.com/en-us/azure/azure-vmware/azure-vmware-solution-platform-updates)
-  - Updated: 2026-05-21T08:00:00.000Z → 2026-07-30T08:00:00.000Z
-- [Known issues](https://learn.microsoft.com/en-us/azure/azure-vmware/azure-vmware-solution-known-issues)
-  - Updated: 2026-04-13T22:10:00.000Z → 2026-07-30T08:00:00.000Z
-
-### Deleted Pages
-
-- ~~Configure Azure Elastic SAN~~ (https://learn.microsoft.com/en-us/azure/azure-vmware/configure-azure-elastic-san)
+  - Updated: 2026-07-30T08:00:00.000Z → 2026-08-04T08:00:00.000Z
 
 ## Classified Pages
 
@@ -161,7 +152,7 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Configure VMware Aria Operations](https://learn.microsoft.com/en-us/azure/azure-vmware/vrealize-operations-for-azure-vmware-solution) | configuration | 0.68 | The page describes detailed, product-specific setup of VMware Aria Operations with Azure VMware Solution, including configuration steps and parameters unique to this integration (vCenter, NSX Manager, AVS private cloud specifics). This goes beyond generic concepts and provides concrete configuration knowledge that an LLM is unlikely to infer from training alone, but it does not focus on limits, troubleshooting, or decision matrices. |
 | [Configure vSAN ESA](https://learn.microsoft.com/en-us/azure/azure-vmware/configure-vsan-esa) | limits-quotas | 0.68 | Summary indicates a table of AVS host types that support vSAN ESA as default and their per-cluster configurations; these are concrete, SKU-specific configuration/limit values that qualify as expert knowledge about supported host types and configurations. |
 | [Design considerations for Gen 2](https://learn.microsoft.com/en-us/azure/azure-vmware/native-network-design-consideration) | architecture-patterns | 0.68 | The page provides product-specific design considerations and patterns for Azure VMware Solution Generation 2 private clouds, including how to connect on-premises and Azure resources and solutions for specific use cases. This is architecture and design guidance unique to this service rather than generic concepts, but it does not focus on numeric limits, configuration tables, or troubleshooting error codes. |
-| [Disaster recovery solutions for VMs](https://learn.microsoft.com/en-us/azure/azure-vmware/ecosystem-disaster-recovery-vms) | troubleshooting | 0.68 | The article focuses on critical known issues related to vSphere upgrades, Azure VMware Solution, and Microsoft security enhancements in the context of disaster recovery. It describes product-specific problems and their handling, which aligns with troubleshooting (symptom/issue → cause/context → mitigation). This is expert operational knowledge that goes beyond generic DR concepts. |
+| [Elastic SAN datastore support on Azure VMware Solution using Service Endpoints](https://learn.microsoft.com/en-us/azure/azure-vmware/elastic-san-datastore-support-service-endpoints) | configuration | 0.68 | The summary indicates product-specific constraints (only new datastores, only AVS Gen 2 architecture) and details about using service endpoints for Elastic SAN as an external datastore on AVS. This is configuration-focused guidance with AVS/Elastic SAN–specific requirements that go beyond generic knowledge, but there’s no clear mention of numeric limits/quotas or decision matrices. |
 | [Enable guest management and install extensions on Arc-enabled VMs](https://learn.microsoft.com/en-us/azure/azure-vmware/arc-enable-guest-management) | configuration | 0.68 | How-to article for enabling guest management and installing extensions on Arc-enabled VMware VMs. This typically includes product-specific steps, required settings, and parameter values (for Arc agent/extension enablement) that go beyond generic knowledge, fitting the configuration sub-skill. |
 | [Move Azure VMware Solution resources across regions](https://learn.microsoft.com/en-us/azure/azure-vmware/move-azure-vmware-solution-across-regions) | decision-making | 0.68 | Migration article for moving AVS between regions typically includes region-specific capabilities, prerequisites, and step-by-step migration guidance (source vs target regions, sequencing, constraints). This is specialized decision/migration guidance that helps choose how and when to move AVS resources, beyond generic concepts. |
 | [Storage](https://learn.microsoft.com/en-us/azure/azure-vmware/architecture-storage) | architecture-patterns | 0.68 | Architecture-focused page describing how Azure VMware Solution private clouds use vSAN, local host storage, data-at-rest encryption defaults, and Azure Storage integration. This is product-specific architectural guidance about storage capacity, policies, and fault tolerance rather than generic concepts, fitting architecture-patterns best among the available categories. |
@@ -169,7 +160,7 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [1 - Plan the deployment](https://learn.microsoft.com/en-us/azure/azure-vmware/plan-private-cloud-deployment) | deployment | 0.65 | Planning article for a production-ready Azure VMware Solution environment likely includes product-specific deployment requirements, capacity planning details, and constraints unique to AVS deployments (for example, node counts, region/availability considerations, and migration-related deployment prerequisites), which qualify as deployment-focused expert knowledge beyond generic concepts. |
 | [Automatic peering sync for Gen 2 (Preview)](https://learn.microsoft.com/en-us/azure/azure-vmware/native-auto-peering-sync) | configuration | 0.65 | Describes a product-specific feature with automatic synchronization of peering and routing; likely includes specific settings and behaviors not generally known. |
 | [Configure Newest Metrics for Azure VMware Solution](https://learn.microsoft.com/en-us/azure/azure-vmware/configure-azure-vmware-solution-metrics) | configuration | 0.65 | How-to configuration article for the 'latest iteration' of AVS metrics. Likely includes specific metric names, dimensions, and configuration steps unique to AVS monitoring, which are product-specific details beyond generic monitoring knowledge. |
-| [Elastic SAN datastore support on Azure VMware Solution using Service Endpoints](https://learn.microsoft.com/en-us/azure/azure-vmware/elastic-san-datastore-support-service-endpoints) | decision-making | 0.65 | Page focuses on when and how Elastic SAN datastore support is available on AVS using service endpoints (only for new datastores and AVS Gen 2 architectures). It provides product-specific availability constraints and guidance on using service endpoints for this integration, which helps decide if/when this option can be used for a given AVS private cloud. |
+| [Disaster recovery solutions for VMs](https://learn.microsoft.com/en-us/azure/azure-vmware/ecosystem-disaster-recovery-vms) | troubleshooting | 0.65 | The page discusses critical known issues related to vSphere upgrades, Azure VMware Solution, Microsoft security enhancements, and dynamic run command modules that require coordinated input. This suggests symptom/cause/solution style content and product-specific DR issues for AVS VMs, which fits troubleshooting. It’s not just conceptual DR guidance or marketing content. |
 | [External storage solutions](https://learn.microsoft.com/en-us/azure/azure-vmware/ecosystem-external-storage-solutions) | decision-making | 0.65 | Describes concrete constraints of built-in vSAN capacity and when to consider external storage solutions for Azure VMware Solution private clouds. While the summary is partial, this type of article typically includes product-specific guidance on when to use each external storage option based on capacity and workload characteristics, which is decision-making guidance beyond generic concepts. |
 | [Manage Arc-enabled Azure VMware Solution](https://learn.microsoft.com/en-us/azure/azure-vmware/manage-arc-enabled-azure-vmware-solution) | configuration | 0.65 | Covers updating Arc appliance credentials, upgrading the Arc resource bridge, and collecting logs. These are product-specific management and configuration operations (bridge resource settings, credential handling, log collection commands/locations), aligning with configuration rather than generic concepts. |
 | [Migrate Microsoft SQL Server Always On Availability Group to Azure VMware Solution](https://learn.microsoft.com/en-us/azure/azure-vmware/migrate-sql-server-always-on-availability-group) | deployment | 0.65 | Provides specific guidance for migrating SQL Server Always On Availability Groups with VMware HCX vMotion and tested OS/SQL combinations; this is detailed, scenario-specific deployment knowledge. |
@@ -240,4 +231,4 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Operating system support for VMs](https://learn.microsoft.com/en-us/azure/azure-vmware/ecosystem-os-vms) | 0.20 | High-level statement that Azure VMware Solution supports OSes supported by vSphere; no detailed tables, parameters, or constraints are evident in the summary. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-vmware/resource-health-for-azure-vmware-solution-overview) | 0.20 | High-level overview of Azure Resource Health for AVS; summary indicates conceptual description of what Resource Health does, without concrete error codes, configuration parameters, or limits. |
 | [Security solutions for Azure VMware Solution](https://learn.microsoft.com/en-us/azure/azure-vmware/ecosystem-security-solutions) | 0.20 | High-level description of security partner solutions and ecosystem; appears marketing/overview oriented without specific RBAC roles, configuration parameters, or detailed integration settings. Lacks the concrete, product-specific security configuration details required for the security or other expert categories. |
-| [What's new](https://learn.microsoft.com/en-us/azure/azure-vmware/azure-vmware-solution-platform-updates) | 0.20 | High-level 'what's new' / platform updates summary without exposed limits, configuration tables, error codes, or other detailed expert-only data. |
+| [What's new](https://learn.microsoft.com/en-us/azure/azure-vmware/azure-vmware-solution-platform-updates) | - | Release notes / what's-new page summarizing platform updates and maintenance notifications without detailed limits, configuration parameters, error codes, or decision matrices. |

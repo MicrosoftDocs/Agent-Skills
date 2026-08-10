@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-02'
+generated_at: '2026-08-09'
 category_descriptions:
   decision-making: 'Planning and sizing Azure Site Recovery: choosing tools vs Azure
     Migrate, VMware/Hyper-V DR capacity and cost estimation, managed disk pricing,
@@ -10,12 +10,12 @@ category_descriptions:
   troubleshooting: Diagnosing and fixing Azure Site Recovery replication, failover,
     agent/extension, network, and appliance issues for Azure VMs, Hyper-V, VMware,
     and physical servers.
-  deployment: 'Support and compatibility details for Azure Site Recovery deployments:
-    DR support matrices for VMware/Hyper-V/replication appliances/shared disks and
-    guidance on migrating from classic to modern VMware DR.'
-  integrations: Automating and integrating Azure Site Recovery with scripts and infrastructure
-    tools (PowerShell, ARM/Bicep, Terraform) plus networking/traffic (ExpressRoute,
-    Traffic Manager) and Hyper-V/VMware DR planning.
+  deployment: Support matrices and validation guidance for Azure Site Recovery deployments,
+    including VM DR support (Azure, Hyper-V, VMware, physical), shared disks, and
+    replication appliance compatibility.
+  integrations: Automating Azure Site Recovery setup and DR workflows with PowerShell,
+    ARM/Bicep/Terraform, plus integrating ExpressRoute, Traffic Manager, and shared
+    disks for Hyper-V/VMware scenarios
   limits-quotas: 'Limits, capacity planning, and compatibility for Azure Site Recovery:
     churn limits, safe use with Backup, planner limitations, VMware/physical support,
     scaling, and Mobility service resource usage.'
@@ -31,12 +31,14 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Site Recovery development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when planning ASR for VMware/Hyper-V, Azure VMs, physical servers, ExpressRoute,
-  or multi-tier app DR, and other Azure Site Recovery related development tasks. Not
-  for Azure Backup (use azure-backup), Azure Migrate (use azure-migrate), Azure Virtual
-  Machines (use azure-virtual-machines), Azure Virtual Network (use azure-virtual-network).
-use_when: Use when planning ASR for VMware/Hyper-V, Azure VMs, physical servers, ExpressRoute,
-  or multi-tier app DR, and other Azure Site Recovery related development tasks.
+  Use when planning ASR for Azure/VMware/Hyper-V, automating DR, securing replication,
+  or protecting SAP/SQL workloads, and other Azure Site Recovery related development
+  tasks. Not for Azure Backup (use azure-backup), Azure Migrate (use azure-migrate),
+  Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Network (use
+  azure-virtual-network).
+use_when: Use when planning ASR for Azure/VMware/Hyper-V, automating DR, securing
+  replication, or protecting SAP/SQL workloads, and other Azure Site Recovery related
+  development tasks.
 confusable_not_for: Not for Azure Backup (use azure-backup), Azure Migrate (use azure-migrate),
   Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Network (use
   azure-virtual-network).
@@ -48,13 +50,13 @@ confusable_not_for: Not for Azure Backup (use azure-backup), Azure Migrate (use 
 - **Total Pages**: 202
 - **Fetched**: 202
 - **Fetch Failed**: 0
-- **Classified**: 130
-- **Unclassified**: 72
+- **Classified**: 131
+- **Unclassified**: 71
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 201
+- **Updated Pages**: 3
+- **Unchanged**: 199
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-site-recovery/azure-site-recovery.csv`
 
@@ -66,19 +68,23 @@ confusable_not_for: Not for Azure Backup (use azure-backup), Azure Migrate (use 
 | best-practices | 2 | 1.0% |
 | configuration | 55 | 27.2% |
 | decision-making | 14 | 6.9% |
-| deployment | 5 | 2.5% |
-| integrations | 10 | 5.0% |
-| limits-quotas | 7 | 3.5% |
+| deployment | 6 | 3.0% |
+| integrations | 11 | 5.4% |
+| limits-quotas | 6 | 3.0% |
 | security | 7 | 3.5% |
 | troubleshooting | 24 | 11.9% |
-| *(Unclassified)* | 72 | 35.6% |
+| *(Unclassified)* | 71 | 35.1% |
 
 ## Changes
 
 ### Updated Pages
 
-- [ARM Templates](https://learn.microsoft.com/en-us/azure/site-recovery/asr-arm-templates)
-  - Updated: 2026-02-12T08:00:00.000Z → 2026-07-27T17:13:00.000Z
+- [Add VMM scripts to recovery plans](https://learn.microsoft.com/en-us/azure/site-recovery/hyper-v-azure-powershell-resource-manager)
+  - Updated: 2023-03-10T00:00:00.000Z → 2026-08-04T11:41:00.000Z
+- [VMware/physical to Azure](https://learn.microsoft.com/en-us/azure/site-recovery/vmware-physical-azure-support-matrix)
+  - Updated: 2026-04-06T08:00:00.000Z → 2026-08-03T08:00:00.000Z
+- [Set up disaster recovery of Hyper-V VMs to Azure using PowerShell](https://learn.microsoft.com/en-us/azure/site-recovery/hyper-v-azure-powershell-resource-manager)
+  - Updated: 2023-03-10T00:00:00.000Z → 2026-08-04T11:41:00.000Z
 
 ## Classified Pages
 
@@ -97,7 +103,6 @@ confusable_not_for: Not for Azure Backup (use azure-backup), Azure Migrate (use 
 | [Virtual Machine errors](https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-virtual-machine-errors) | troubleshooting | 0.90 | Troubleshooting VM errors during replication; organized by error with causes and fixes, which is product-specific troubleshooting knowledge. |
 | [Azure VM Disaster Recovery - High Churn Support](https://learn.microsoft.com/en-us/azure/site-recovery/concepts-azure-to-azure-high-churn-support) | limits-quotas | 0.86 | The page specifies exact supported churn/data change rate limits per Azure VM (e.g., 54 MB/s for Normal Churn, 100 MB/s previous limit, 500 MB/s with High Churn), which are product-specific numerical constraints that an LLM wouldn't reliably know from training. These are precise limits/quotas tied to specific options in Azure Site Recovery, matching the limits-quotas criteria. |
 | [VMware vCenter discovery failures](https://learn.microsoft.com/en-us/azure/site-recovery/vmware-azure-troubleshoot-vcenter-discovery-failures) | troubleshooting | 0.86 | The page is a focused troubleshooting guide for VMware vCenter discovery failures in Azure Site Recovery. It is organized around specific failure scenarios and provides product-specific diagnosis and resolution steps, likely including concrete error messages, log locations, and prescribed fixes. This matches the troubleshooting criteria of symptom → cause → solution with Azure Site Recovery–specific details that go beyond generic debugging knowledge. |
-| [VMware/physical to Azure](https://learn.microsoft.com/en-us/azure/site-recovery/vmware-physical-azure-support-matrix) | limits-quotas | 0.86 | A 'support matrix' page for Site Recovery VMware/physical DR typically contains detailed, product-specific compatibility tables (supported OS versions, hypervisor versions, agent versions, storage types, etc.) and constraints that are not derivable from general knowledge. These are effectively hard limits/constraints for what is supported and are maintained as reference data, matching the limits-quotas category best among the available options. |
 | [Azure Site Recovery Provider upgrade failures](https://learn.microsoft.com/en-us/azure/site-recovery/vmware-azure-troubleshoot-upgrade-failures) | troubleshooting | 0.85 | Targets upgrade failures with specific causes and fixes; product-version-specific troubleshooting guidance. |
 | [Mobility agent health](https://learn.microsoft.com/en-us/azure/site-recovery/vmware-troubleshoot-mobility-agent-health) | troubleshooting | 0.85 | Step-by-step troubleshooting for mobility agent health; includes product-specific error conditions and fixes. |
 | [Other errors](https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-troubleshoot-errors) | troubleshooting | 0.85 | Covers additional replication errors; likely lists specific error IDs/messages and stepwise resolutions. |
@@ -115,6 +120,7 @@ confusable_not_for: Not for Azure Backup (use azure-backup), Azure Migrate (use 
 | [On CMK enabled disks](https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-how-to-enable-replication-cmk-disks) | configuration | 0.80 | Product-specific guidance for CMK-enabled disks replication; includes required Key Vault, disk, and Site Recovery settings. |
 | [On encrypted VMs](https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-how-to-enable-replication-ade-vms) | configuration | 0.80 | Details support matrix (Windows vs Linux, ADE versions, managed vs unmanaged disks) and required settings; product-specific encryption configuration and constraints. |
 | [Using Site Recovery with Azure Backup](https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-backup-interoperability) | limits-quotas | 0.80 | Interoperability matrix between Site Recovery and Backup includes specific supported/unsupported combinations and constraints (e.g., scenarios where MARS agents can’t co-exist). |
+| [VMware/physical to Azure](https://learn.microsoft.com/en-us/azure/site-recovery/vmware-physical-azure-support-matrix) | deployment | 0.78 | A 'support matrix' page for Azure Site Recovery typically lists detailed, product-specific compatibility constraints: supported VMware versions, guest OS versions, agent versions, storage types, and other environment requirements for disaster recovery to Azure. These are concrete, versioned constraints that an LLM is unlikely to know from training and are critical for planning and executing DR deployments, fitting best under deployment-focused expert knowledge. |
 | [Enable replication for VMware VMs](https://learn.microsoft.com/en-us/azure/site-recovery/vmware-azure-enable-replication) | configuration | 0.75 | Describes enabling VMware VM replication; includes Site Recovery-specific configuration parameters and prerequisites. |
 | [Enable replication for a physical server - Modernized](https://learn.microsoft.com/en-us/azure/site-recovery/physical-server-enable-replication) | configuration | 0.75 | How-to for enabling physical server replication; includes agent/appliance configuration and supported settings. |
 | [For an added disk](https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-enable-replication-added-disk) | configuration | 0.75 | Explains behavior when adding disks to already-protected VMs and how to enable replication; includes Site Recovery-specific state transitions and options. |
@@ -124,7 +130,7 @@ confusable_not_for: Not for Azure Backup (use azure-backup), Azure Migrate (use 
 | [Set up IP addressing for failover](https://learn.microsoft.com/en-us/azure/site-recovery/concepts-on-premises-to-azure-networking) | configuration | 0.75 | Covers VPN/ExpressRoute/DNS/RDP connectivity patterns post-failover; includes product-specific networking configuration for recovered VMs. |
 | [Azure to Azure](https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-support-matrix) | deployment | 0.72 | Support matrices for Azure-to-Azure VM disaster recovery list which OS versions, disk types, regions, features, and configurations are supported or unsupported for replication and failover. These product-specific matrices and prerequisites are not generally known from training and are critical for planning and executing DR deployments, fitting best under deployment-focused constraints/support by platform. |
 | [Accelerated networking for Azure VM disaster recovery](https://learn.microsoft.com/en-us/azure/site-recovery/azure-vm-disaster-recovery-with-accelerated-networking) | configuration | 0.70 | Explains how to enable accelerated networking in the context of DR; likely includes specific VM size requirements and configuration steps. |
-| [Add VMM scripts to recovery plans](https://learn.microsoft.com/en-us/azure/site-recovery/hyper-v-azure-powershell-resource-manager) | integrations | 0.70 | PowerShell-based automation includes cmdlet names, parameters, and example scripts specific to Site Recovery and Azure Resource Manager. |
+| [Add VMM scripts to recovery plans](https://learn.microsoft.com/en-us/azure/site-recovery/hyper-v-azure-powershell-resource-manager) | integrations | 0.70 | The article describes detailed, product-specific PowerShell automation for replicating Hyper-V VMs to Azure via Azure Site Recovery and Azure Resource Manager. It likely includes specific cmdlet names, parameters, and configuration patterns unique to this integration scenario, which go beyond generic PowerShell or Azure usage and qualify as expert integration knowledge. |
 | [Analyze the generated cost report](https://learn.microsoft.com/en-us/azure/site-recovery/hyper-v-deployment-planner-analyze-report) | decision-making | 0.70 | Explains Excel report sheets with quantitative metrics and recommendations for capacity and DR planning, supporting decision-making with numeric data. |
 | [Analyze the generated cost report](https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-vmware-deployment-planner-analyze-report) | decision-making | 0.70 | Analyzes Excel report sheets from Deployment Planner; these reports usually contain numeric projections, capacity and cost comparisons, and thresholds that guide DR design decisions, matching decision-making with quantified trade-offs. |
 | [Automate Mobility service deployment](https://learn.microsoft.com/en-us/azure/site-recovery/vmware-azure-mobility-install-configuration-mgr) | configuration | 0.70 | Covers automated install/update of Mobility Service agent, likely with specific command-line options, configuration parameters, and scheduling details unique to Site Recovery. |
@@ -159,6 +165,7 @@ confusable_not_for: Not for Azure Backup (use azure-backup), Azure Migrate (use 
 | [Run the Deployment Planner tool and generate a cost report](https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-vmware-deployment-planner-run) | configuration | 0.70 | User guide for running the planner; includes command-line parameters and configuration options specific to the tool. |
 | [Set up disaster recovery at scale](https://learn.microsoft.com/en-us/azure/site-recovery/vmware-physical-large-deployment) | limits-quotas | 0.70 | Large-scale (>1000 VMs) guidance typically includes numeric capacity limits, recommended ratios (VMs per process server, bandwidth per appliance), and scaling thresholds. |
 | [Set up disaster recovery for Azure VMs after migration to Azure](https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-replicate-after-migration) | configuration | 0.70 | Describes removing Mobility service and ensuring Azure VM agent for post-migration DR; product-specific configuration and cleanup steps. |
+| [Set up disaster recovery of Hyper-V VMs to Azure using PowerShell](https://learn.microsoft.com/en-us/azure/site-recovery/hyper-v-azure-powershell-resource-manager) | integrations | 0.70 | The article describes detailed, product-specific PowerShell automation for replicating Hyper-V VMs to Azure via Azure Site Recovery and Azure Resource Manager. It likely includes specific cmdlet names, parameters, and configuration patterns unique to this integration scenario, which go beyond generic PowerShell or Azure usage and qualify as expert integration knowledge. |
 | [Set up disaster recovery of VMware VMs to Azure using PowerShell](https://learn.microsoft.com/en-us/azure/site-recovery/vmware-azure-disaster-recovery-powershell) | integrations | 0.70 | The article provides product-specific PowerShell cmdlets and parameter usage for configuring Azure Site Recovery for VMware VMs (e.g., creating protection containers, setting replication policies, enabling protection, triggering failover). These are concrete integration/coding patterns with Azure Site Recovery APIs rather than just a conceptual tutorial, matching the integrations sub-skill definition. |
 | [Set up network mapping and retain IP addresses after failover](https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-network-mapping) | configuration | 0.70 | Describes mapping VNets between regions and IP addressing; typically includes specific mapping options and parameters for Site Recovery network configuration. |
 | [Support requirements for Azure Site Recovery replication appliance](https://learn.microsoft.com/en-us/azure/site-recovery/replication-appliance-support-matrix) | deployment | 0.70 | Support/requirements matrices for the replication appliance (OS versions, VMware versions, infrastructure prerequisites) are product- and version-specific details that change over time and are not reliably known from training data. The page is a support matrix for a specific deployment scenario (VMware to Azure with modernized architecture), which fits best under deployment because it defines what environments and configurations are supported for production use. |
@@ -260,7 +267,6 @@ confusable_not_for: Not for Azure Backup (use azure-backup), Azure Migrate (use 
 | [Run failover and failback](https://learn.microsoft.com/en-us/azure/site-recovery/physical-to-azure-failover-failback) | 0.30 | Described as a tutorial on failover and failback for physical servers. Tutorials typically show steps rather than detailed configuration tables, limits, or troubleshooting mappings; no indication of specific error codes or numeric thresholds. |
 | [Set up disaster recovery for Azure VMs](https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-tutorial-enable-replication) | 0.30 | Tutorial for setting up Azure VM disaster recovery; includes a regional support note but no detailed limits tables, configuration parameter references, or error-code-based troubleshooting. Mostly procedural how-to content. |
 | [Set up disaster recovery of Azure VMs using PowerShell](https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-powershell) | 0.30 | PowerShell-based DR setup tutorial; focuses on steps and commands, not on configuration matrices or troubleshooting mappings. |
-| [Set up disaster recovery of Hyper-V VMs to Azure using PowerShell](https://learn.microsoft.com/en-us/azure/site-recovery/hyper-v-azure-powershell-resource-manager) | 0.30 | Hyper-V DR automation tutorial; focuses on example replication of a single VM, not on expert-level configuration or troubleshooting reference. |
 | [Set up disaster recovery on Azure Extended Zones VMs using PowerShell](https://learn.microsoft.com/en-us/azure/site-recovery/tutorial-replicate-vms-edge-zone-to-azure-region) | 0.30 | Preview feature tutorial for Extended Zones; description suggests scenario walkthrough rather than expert reference material. |
 | [Set up disaster recovery on an Azure VM](https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-quickstart) | 0.30 | Quickstart/tutorial for enabling Azure-to-Azure VM disaster recovery; summary mentions a high-churn option but not concrete limits tables, config parameters, or error codes. Primarily step-by-step guidance without product-specific limits, configuration matrices, or troubleshooting mappings. |
 | [Set up replication for Hyper-V VMs](https://learn.microsoft.com/en-us/azure/site-recovery/hyper-v-azure-tutorial) | 0.30 | Tutorial for setting up Hyper-V disaster recovery without SCVMM; designed as a simple deployment path and does not expose detailed limits, configuration option tables, or structured troubleshooting content. |

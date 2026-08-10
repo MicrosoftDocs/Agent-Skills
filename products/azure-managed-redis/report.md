@@ -45,9 +45,9 @@ confusable_not_for: Not for Azure Cache for Redis (use azure-cache-redis).
 - **Unclassified**: 7
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 2
-- **Unchanged**: 70
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 73
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-managed-redis/azure-managed-redis.csv`
 
@@ -66,17 +66,6 @@ confusable_not_for: Not for Azure Cache for Redis (use azure-cache-redis).
 | *(Unclassified)* | 7 | 9.6% |
 
 ## Changes
-
-### New Pages
-
-- [Semantic routing](https://learn.microsoft.com/en-us/azure/redis/tutorial-semantic-router)
-
-### Updated Pages
-
-- [Monitoring data reference](https://learn.microsoft.com/en-us/azure/redis/monitor-cache-reference)
-  - Updated: 2026-03-11T05:11:00.000Z → 2026-07-29T22:37:00.000Z
-- [List of Redis metrics](https://learn.microsoft.com/en-us/azure/redis/monitor-cache-reference)
-  - Updated: 2026-03-11T05:11:00.000Z → 2026-07-29T22:37:00.000Z
 
 ## Classified Pages
 

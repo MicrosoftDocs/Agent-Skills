@@ -1,9 +1,9 @@
 ---
 name: azure-api-center
-description: Expert knowledge for Azure Api Center development including best practices, security, configuration, integrations & coding patterns, and deployment. Use when automating API linting/registration, ARM/Bicep deployment, backup/restore, portal access control, or API platform sync, and other Azure Api Center related development tasks. Not for Azure API Management (use azure-api-management), Azure Resource Manager (use azure-resource-manager), Azure Portal (use azure-portal).
+description: Expert knowledge for Azure Api Center development including best practices, security, configuration, integrations & coding patterns, and deployment. Use when automating API linting/registration, portal self-hosting, governance schemas, backups, or cross-platform sync, and other Azure Api Center related development tasks. Not for Azure API Management (use azure-api-management), Azure Resource Manager (use azure-resource-manager), Azure Portal (use azure-portal).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-02"
+  generated_at: "2026-08-09"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Api Center Skill
@@ -25,7 +25,7 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Best Practices | L33-L38 | Best practices for API governance in API Center: using managed linting for style compliance and applying shift-left checks via the VS Code extension. |
-| Security | L39-L44 | Configuring API authorization schemes for APIs in API Center and managing who can access the API Center portal via the VS Code extension |
+| Security | L39-L44 | Configuring API auth schemes (keys, OAuth, etc.) in API Center and managing portal access/permissions via the VS Code extension |
 | Configuration | L45-L54 | Configuring API Center instances: deployment via ARM/Bicep/CLI, setting up backup/restore, and defining/customizing governance metadata schemas. |
 | Integrations & Coding Patterns | L55-L61 | Patterns and scripts for syncing APIs between API Center and platforms like API Management, Amazon API Gateway, and Copilot Studio, plus automation via Azure CLI and Logic Apps/Teams |
 | Deployment | L62-L66 | Automating API linting and registration to Azure API Center (e.g., via GitHub Actions) and instructions for self-hosting the Azure API Center portal. |

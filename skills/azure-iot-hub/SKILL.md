@@ -1,9 +1,9 @@
 ---
 name: azure-iot-hub
-description: Expert knowledge for Azure IoT Hub development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using IoT Hub/DPS enrollment, device twins/methods, message routing, Device Update, or Cosmos DB event storage, and other Azure IoT Hub related development tasks. Not for Azure IoT (use azure-iot), Azure IoT Central (use azure-iot-central), Azure IoT Edge (use azure-iot-edge), Azure IoT Operations (use azure-iot-operations).
+description: Expert knowledge for Azure IoT Hub development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using IoT Hub/DPS device twins, routing/enrichments, device streams, Device Update, or Cosmos DB event storage, and other Azure IoT Hub related development tasks. Not for Azure IoT (use azure-iot), Azure IoT Central (use azure-iot-central), Azure IoT Edge (use azure-iot-edge), Azure IoT Operations (use azure-iot-operations).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-02"
+  generated_at: "2026-08-09"
   generator: "docs2skills/1.0.0"
 ---
 # Azure IoT Hub Skill
@@ -29,10 +29,10 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L63-L75 | Guidance for choosing IoT Hub vs alternatives, DR usage, routing options, C2D/D2C patterns, pricing and tiers, and methods for monitoring device connections. |
 | Architecture & Design Patterns | L76-L82 | Design patterns for DPS lifecycle/HA/DR, VNet connectivity, secure device streams, and reliably persisting ordered IoT Hub events with Cosmos DB. |
 | Limits & Quotas | L83-L89 | Limits, quotas, and throttling for IoT Hub, Device Provisioning Service, and Device Update, including per‑service caps, scaling behavior, and what happens when limits are exceeded. |
-| Security | L90-L126 | Securing IoT Hub, DPS, and Device Update: auth (Entra, SAS, X.509), RBAC, certificates, TLS, networking (IP filters, private endpoints), key rotation, and compliance/policy controls. |
-| Configuration | L127-L158 | Configuring IoT Hub and DPS behavior: enroll devices, set allocation/IP policies, twins, jobs, routing, protocols, file upload, message enrichments, Device Update manifests, and monitoring/logging. |
-| Integrations & Coding Patterns | L159-L184 | Patterns and code samples for connecting devices/DPUs to IoT Hub/DPS (MQTT/HTTPS/AMQP), managing identities, twins, methods, jobs, file upload, and message formats/endpoints. |
-| Deployment | L185-L197 | Deploying and updating IoT devices and hubs: Device Update setup (image/package/delta/proxy), platform support, regional failover, and IoT Hub migration and job scheduling. |
+| Security | L90-L127 | Securing IoT Hub, DPS, and Device Update: auth (Entra ID/RBAC, SAS, X.509), certificates/keys, TLS, IP/network controls, private endpoints, policies, and secure device lifecycle management. |
+| Configuration | L128-L160 | Configuring IoT Hub and DPS behavior: device/module twins, jobs, messaging, routing, enrichments, protocols, IPs/endpoints, Device Update manifests, file upload, and monitoring settings. |
+| Integrations & Coding Patterns | L161-L185 | Patterns and code samples for connecting devices/DPUs to IoT Hub/DPS (MQTT/HTTPS/AMQP), managing identities, twins, methods, jobs, file upload, and message formats/endpoints. |
+| Deployment | L186-L200 | Deploying and updating IoT devices and IoT Hub: Device Update setup/agents, delta/image/package updates, failover, platform support, migrations, and job scheduling. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -106,6 +106,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure network ports for Device Update traffic | https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-networking |
 | Manage root key rotation for Device Update | https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-rootkey |
 | Understand end-to-end security in Device Update | https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-security |
+| Configure TLS download security for Device Update | https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-tls-download |
 | Configure network security and private access for Device Update | https://learn.microsoft.com/en-us/azure/iot-hub-device-update/network-security |
 | Secure IoT Hub APIs with Microsoft Entra ID and RBAC | https://learn.microsoft.com/en-us/azure/iot-hub/authenticate-authorize-azure-ad |
 | Control IoT Hub access with SAS tokens | https://learn.microsoft.com/en-us/azure/iot-hub/authenticate-authorize-sas |
@@ -143,6 +144,7 @@ This skill requires **network access** to fetch documentation content:
 | Use IoT Hub file upload for large device data | https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-file-upload |
 | Configure and manage Azure IoT Hub jobs for device fleets | https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-jobs |
 | Configure cloud-to-device messaging in IoT Hub | https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-messages-c2d |
+| Define and use Azure IoT Hub message format | https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-messages-construct |
 | Configure IoT Hub device-to-cloud message routing | https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-messages-d2c |
 | Understand and configure Azure IoT Hub module twins | https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-module-twins |
 | Configure IoT Hub communication protocols and ports | https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-protocols |
@@ -175,7 +177,6 @@ This skill requires **network access** to fetch documentation content:
 | Use IoT Hub service SDK to schedule broadcast jobs | https://learn.microsoft.com/en-us/azure/iot-hub/how-to-schedule-broadcast-jobs |
 | Use AMQP protocol with Azure IoT Hub endpoints | https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-amqp-support |
 | Bulk import and export IoT Hub device identities | https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-bulk-identity-mgmt |
-| Construct Azure IoT Hub message formats | https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-messages-construct |
 | Read IoT Hub messages from built-in endpoint | https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-messages-read-builtin |
 | Connect devices to Azure IoT Hub using MQTT | https://learn.microsoft.com/en-us/azure/iot-hub/iot-mqtt-connect-to-iot-hub |
 | Control IoT devices via direct methods using .NET samples | https://learn.microsoft.com/en-us/azure/iot-hub/quickstart-control-device |
@@ -186,12 +187,14 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Generate and deploy delta updates with Device Update | https://learn.microsoft.com/en-us/azure/iot-hub-device-update/deploy-delta-updates |
+| Deploy device updates with Azure IoT Hub Device Update | https://learn.microsoft.com/en-us/azure/iot-hub-device-update/deploy-update |
 | Provision Device Update agent as IoT Edge module | https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-agent-provisioning |
 | Perform proxy updates with Device Update for IoT Hub | https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-howto-proxy-updates |
 | Deploy image-based Device Update on Raspberry Pi | https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-raspberry-pi |
 | Use regional failover mappings for Device Update | https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-region-mapping |
 | Deploy package-based Device Update with Ubuntu agent | https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-ubuntu-agent |
 | Check supported platforms for Device Update | https://learn.microsoft.com/en-us/azure/iot-hub-device-update/support |
+| Deploy IoT Hub with Device Registry and X.509 | https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-device-registry-setup |
 | Manually migrate Azure IoT Hub across regions or SKUs | https://learn.microsoft.com/en-us/azure/iot-hub/migrate-hub-arm |
 | Migrate Azure IoT Hub using Azure CLI state commands | https://learn.microsoft.com/en-us/azure/iot-hub/migrate-hub-state-cli |
 | Schedule IoT Hub jobs for device groups using Azure CLI | https://learn.microsoft.com/en-us/azure/iot-hub/schedule-jobs-cli |

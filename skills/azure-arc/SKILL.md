@@ -1,9 +1,9 @@
 ---
 name: azure-arc
-description: Expert knowledge for Azure Arc development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing Arc-enabled Kubernetes, servers, SQL/data services, resource bridge, or Edge RAG workloads, and other Azure Arc related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Stack Edge (use azure-stack-edge), Azure Local (use azure-local), Azure Virtual Machines (use azure-virtual-machines).
+description: Expert knowledge for Azure Arc development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing Arc-enabled Kubernetes, data services, Agentic Retrieval APIs, Connected Machine agents, or resource bridge, and other Azure Arc related development tasks. Not for Azure Local (use azure-local), Azure Stack Edge (use azure-stack-edge), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Virtual Machines (use azure-virtual-machines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-02"
+  generated_at: "2026-08-09"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Arc Skill
@@ -24,19 +24,21 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L73 | Diagnosing and fixing Azure Arc issues across Kubernetes, servers, VMs, storage, data services, site manager, resource bridge, and workload orchestration, including connectivity, extensions, and enrollment. |
-| Best Practices | L74-L80 | Best practices for Azure Arc storage and data services: filesystem behavior, avoiding out-of-space issues, static retain workflows for Edge Volumes, and common usage FAQs. |
-| Decision Making | L81-L101 | Guidance for planning, sizing, licensing, and migrating Azure Arc deployments for servers, SQL/data services, Kubernetes, ESU, and management tooling across hybrid environments. |
-| Architecture & Design Patterns | L102-L109 | Patterns for Arc data/compute design: container storage data flow, Arc Edge Volumes, HA/DR for Arc SQL MI and failover groups, and advanced Edge RAG data parsing. |
-| Limits & Quotas | L110-L119 | Limits, quotas, versions, and requirements for Arc-enabled Kubernetes, Edge RAG, Arc data services, resource bridge, and billing/ESU behavior for connected machines and Windows Server. |
-| Security | L120-L176 | Security, identity, and access control for Azure Arc: AD auth, TDE, keytabs/credential rotation, RBAC, network protection, Private Link, policies, and hardening for servers, Kubernetes, and SCVMM/vSphere. |
-| Configuration | L177-L265 | Configuring Azure Arc components: data services, Kubernetes, servers, networking, monitoring, GitOps, extensions, and agents, including setup, upgrades, backups, security, and connectivity. |
-| Integrations & Coding Patterns | L266-L288 | CLI, PowerShell, Ansible, Terraform, and ARM patterns for connecting machines/clusters to Azure Arc, managing extensions/agents, and integrating with tools like Sentinel, ARG, Event Grid, and SCVMM |
-| Deployment | L289-L318 | Deploying and upgrading Azure Arc components (data controllers, resource bridge, agents, SCVMM/vSphere/EKS onboarding), plus automation, monitoring, DR, and workload orchestration setup. |
+| Troubleshooting | L37-L75 | Diagnosing and fixing Azure Arc issues: connectivity, onboarding, storage, Kubernetes extensions/GitOps, resource bridge, site manager, workload orchestration, and server/VM auth/networking. |
+| Best Practices | L76-L85 | Best practices for Agentic Retrieval optimization/evaluation and Azure Arc storage: parsing docs, metrics, model/dataset eval, container FS quirks, out-of-space handling, and static retain workflows. |
+| Decision Making | L86-L108 | Guides for planning and choosing Azure Arc services, licensing, capacity, connectivity, Kubernetes platforms, and migration paths for servers, data services, and agent workloads. |
+| Architecture & Design Patterns | L109-L116 | Patterns for Arc data/compute design: container storage data flow, Arc Edge Volumes, HA/DR for Arc SQL MI and failover groups, and advanced Edge RAG data parsing. |
+| Limits & Quotas | L117-L127 | Limits, billing rules, prerequisites, and offline behavior for Azure Arc agents and services (Agentic Retrieval, Arc storage, Kubernetes, ESU, PAYG, Connected Machine). |
+| Security | L128-L188 | Securing Azure Arc: identity, RBAC, AD/Kerberos, key/cert rotation, network/Private Link, policy/compliance, and protecting data, workloads, and Kubernetes/servers/VMware/SCVMM resources. |
+| Configuration | L189-L297 | Configuring Azure Arc environments: networking, security, data services, Kubernetes/AKS, Agentic Retrieval, storage, monitoring, GitOps, resource bridge, and Connected Machine agent settings. |
+| Integrations & Coding Patterns | L298-L327 | REST/CLI/PowerShell/Ansible/Terraform patterns for Arc: agentic retrieval APIs, MCP/RAG tools, VM extensions, onboarding servers at scale, monitoring, licensing, and resource queries. |
+| Deployment | L328-L359 | Deploying, upgrading, and removing Azure Arc agents, extensions, data controllers, and resource bridges across Kubernetes, multicloud VMs, SCVMM, and VMware, including prerequisites and orchestration. |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
+| Reference and troubleshoot NFS with Kerberos for Agentic Retrieval | https://learn.microsoft.com/en-us/azure/azure-arc/agents-tools-foundry-local/connect-file-share-kerberos-reference |
+| Reference and troubleshoot SharePoint S2S auth for Agentic Retrieval | https://learn.microsoft.com/en-us/azure/azure-arc/agents-tools-foundry-local/connect-sharepoint-reference |
 | Fix blob upload and mirroring issues with managed identity | https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/blobs-not-uploaded |
 | Resolve common issues for Azure Container Storage enabled by Arc | https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/faq |
 | Troubleshoot Azure Arc container storage deployments | https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/troubleshooting |
@@ -57,7 +59,7 @@ This skill requires **network access** to fetch documentation content:
 | Troubleshoot SSH connectivity to Arc-enabled servers | https://learn.microsoft.com/en-us/azure/azure-arc/servers/ssh-arc-troubleshoot |
 | Diagnose Azure Arc Connected Machine agent onboarding issues | https://learn.microsoft.com/en-us/azure/azure-arc/servers/troubleshoot-agent-onboard |
 | Handle disconnected scenarios for Azure Arc-enabled servers | https://learn.microsoft.com/en-us/azure/azure-arc/servers/troubleshoot-connectivity |
-| Troubleshoot Azure Arc ESU licensing and patch delivery | https://learn.microsoft.com/en-us/azure/azure-arc/servers/troubleshoot-extended-security-updates |
+| Troubleshoot Azure Arc Extended Security Updates delivery | https://learn.microsoft.com/en-us/azure/azure-arc/servers/troubleshoot-extended-security-updates |
 | Troubleshoot networking problems for Azure Arc-enabled servers | https://learn.microsoft.com/en-us/azure/azure-arc/servers/troubleshoot-networking |
 | Diagnose and fix Azure Arc server VM extension failures | https://learn.microsoft.com/en-us/azure/azure-arc/servers/troubleshoot-vm-extensions |
 | Clarify Azure Arc vs VMware vSphere usage | https://learn.microsoft.com/en-us/azure/azure-arc/servers/vmware-faq |
@@ -74,6 +76,9 @@ This skill requires **network access** to fetch documentation content:
 ### Best Practices
 | Topic | URL |
 |-------|-----|
+| Optimize documents for advanced data parsing in Agentic Retrieval | https://learn.microsoft.com/en-us/azure/azure-arc/agents-tools-foundry-local/advanced-data-parsing |
+| Evaluate Agentic Retrieval system, models, and datasets | https://learn.microsoft.com/en-us/azure/azure-arc/agents-tools-foundry-local/evaluate-solution |
+| Use evaluation metrics for Agentic Retrieval system performance | https://learn.microsoft.com/en-us/azure/azure-arc/agents-tools-foundry-local/evaluation-metrics |
 | Handle Azure Arc container storage filesystem behaviors | https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/reference-filesystem-behavior |
 | Design for out-of-space conditions in Azure Arc storage | https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/reference-filesystem-out-of-space |
 | Use static retain workflows for Azure Arc Edge Volumes | https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/static-retain |
@@ -81,6 +86,8 @@ This skill requires **network access** to fetch documentation content:
 ### Decision Making
 | Topic | URL |
 |-------|-----|
+| Choose an appropriate language model for Agentic Retrieval | https://learn.microsoft.com/en-us/azure/azure-arc/agents-tools-foundry-local/prepare-language-model |
+| Choose search types for Agentic Retrieval deployments | https://learn.microsoft.com/en-us/azure/azure-arc/agents-tools-foundry-local/search-types |
 | Choose the right Azure Arc service for machines | https://learn.microsoft.com/en-us/azure/azure-arc/choose-service |
 | Choose connectivity modes for Arc data services | https://learn.microsoft.com/en-us/azure/azure-arc/data/connectivity |
 | Plan Azure Arc-enabled data services deployments | https://learn.microsoft.com/en-us/azure/azure-arc/data/plan-azure-arc-data-services |
@@ -90,8 +97,8 @@ This skill requires **network access** to fetch documentation content:
 | Select validated Kubernetes platforms for Azure Arc data | https://learn.microsoft.com/en-us/azure/azure-arc/data/validation-program |
 | Plan and execute migration to Secret Store extension | https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/secret-store-extension-migration |
 | Use validated Kubernetes distributions for Arc-enabled Kubernetes | https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/validation-program |
-| Choose cloud-native licensing and cost options for Arc servers | https://learn.microsoft.com/en-us/azure/azure-arc/servers/cloud-native/licensing-cost-management |
-| Plan and provision Azure Arc ESU licenses for WS2012 | https://learn.microsoft.com/en-us/azure/azure-arc/servers/license-extended-security-updates |
+| Choose cloud-native licensing options for Azure Arc servers | https://learn.microsoft.com/en-us/azure/azure-arc/servers/cloud-native/licensing-cost-management |
+| Plan and provision Azure Arc ESU licenses for Windows Server | https://learn.microsoft.com/en-us/azure/azure-arc/servers/license-extended-security-updates |
 | Migrate legacy Log Analytics agents via Azure Arc | https://learn.microsoft.com/en-us/azure/azure-arc/servers/migrate-legacy-agents |
 | Modernize server management from Config Manager to Arc | https://learn.microsoft.com/en-us/azure/azure-arc/servers/modernize-server-management |
 | Plan large-scale Azure Arc server deployments | https://learn.microsoft.com/en-us/azure/azure-arc/servers/plan-at-scale-deployment |
@@ -110,6 +117,7 @@ This skill requires **network access** to fetch documentation content:
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
+| Review known issues and limitations for Agentic Retrieval | https://learn.microsoft.com/en-us/azure/azure-arc/agents-tools-foundry-local/known-issues |
 | Disconnected operation behavior for Arc container storage | https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/disconnected-operations |
 | Review system requirements and constraints for Arc-enabled Kubernetes | https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/system-requirements |
 | Maintain Azure Arc resource bridge health and uptime | https://learn.microsoft.com/en-us/azure/azure-arc/resource-bridge/maintenance |
@@ -120,7 +128,11 @@ This skill requires **network access** to fetch documentation content:
 ### Security
 | Topic | URL |
 |-------|-----|
-| Secure Azure Arc access via Azure Firewall Explicit Proxy | https://learn.microsoft.com/en-us/azure/azure-arc/azure-firewall-explicit-proxy |
+| Configure BYOM endpoint API-key authentication for Agentic Retrieval | https://learn.microsoft.com/en-us/azure/azure-arc/agents-tools-foundry-local/configure-endpoint-authentication |
+| Configure NFS with Kerberos authentication for Agentic Retrieval | https://learn.microsoft.com/en-us/azure/azure-arc/agents-tools-foundry-local/connect-file-share-kerberos-overview |
+| Set up SharePoint S2S authentication for Agentic Retrieval | https://learn.microsoft.com/en-us/azure/azure-arc/agents-tools-foundry-local/connect-sharepoint-overview |
+| Configure Entra authentication and roles for Agentic Retrieval | https://learn.microsoft.com/en-us/azure/azure-arc/agents-tools-foundry-local/prepare-authentication |
+| Verify Azure Contributor role for Agentic Retrieval deployment | https://learn.microsoft.com/en-us/azure/azure-arc/agents-tools-foundry-local/prepare-contributor-permission |
 | Configure OneLake identity for Azure Arc cloud subvolumes | https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/howto-configure-onelake-identity |
 | Configure workload identity for Arc container subvolumes | https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/howto-configure-workload-identity |
 | Configure localhost token endpoint for Arc container storage | https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/howto-enable-local-identity-access |
@@ -177,6 +189,25 @@ This skill requires **network access** to fetch documentation content:
 ### Configuration
 | Topic | URL |
 |-------|-----|
+| Add and configure data sources in Agentic Retrieval | https://learn.microsoft.com/en-us/azure/azure-arc/agents-tools-foundry-local/add-data-source |
+| Complete deployment prerequisites for Agentic Retrieval | https://learn.microsoft.com/en-us/azure/azure-arc/agents-tools-foundry-local/complete-prerequisites |
+| Configure a Windows admin machine for Arc-enabled Kubernetes | https://learn.microsoft.com/en-us/azure/azure-arc/agents-tools-foundry-local/configure-driver-machine |
+| Configure an NFS server as a data source for Agentic Retrieval | https://learn.microsoft.com/en-us/azure/azure-arc/agents-tools-foundry-local/configure-nfs-server |
+| Configure NFS with Kerberos for Foundry Local ingestion | https://learn.microsoft.com/en-us/azure/azure-arc/agents-tools-foundry-local/connect-file-share-kerberos-setup |
+| Configure SharePoint S2S auth for Agentic Retrieval | https://learn.microsoft.com/en-us/azure/azure-arc/agents-tools-foundry-local/connect-sharepoint-setup |
+| Deployment parameters and environment variables for Agentic Retrieval | https://learn.microsoft.com/en-us/azure/azure-arc/agents-tools-foundry-local/deploy-reference |
+| Enable GPUs on AKS enabled by Azure Arc for Agentic Retrieval | https://learn.microsoft.com/en-us/azure/azure-arc/agents-tools-foundry-local/enable-gpu-aks |
+| Manage the default knowledge base in Agentic Retrieval | https://learn.microsoft.com/en-us/azure/azure-arc/agents-tools-foundry-local/knowledge-bases-guide |
+| Configure MCP-based knowledge sources in Agentic Retrieval | https://learn.microsoft.com/en-us/azure/azure-arc/agents-tools-foundry-local/knowledge-sources-guide |
+| Configure monitoring for Agentic Retrieval with Azure Monitor and Grafana | https://learn.microsoft.com/en-us/azure/azure-arc/agents-tools-foundry-local/observability |
+| Monitor Agentic Retrieval using available observability metrics | https://learn.microsoft.com/en-us/azure/azure-arc/agents-tools-foundry-local/observability-metrics |
+| Configure DNS for Agentic Retrieval local portal access | https://learn.microsoft.com/en-us/azure/azure-arc/agents-tools-foundry-local/prepare-dns |
+| Verify NFS file share access for Agentic Retrieval deployment | https://learn.microsoft.com/en-us/azure/azure-arc/agents-tools-foundry-local/prepare-file-server |
+| Create and configure OpenAI-compatible model endpoint for Agentic Retrieval | https://learn.microsoft.com/en-us/azure/azure-arc/agents-tools-foundry-local/prepare-model-endpoint |
+| Install networking and observability components for Agentic Retrieval | https://learn.microsoft.com/en-us/azure/azure-arc/agents-tools-foundry-local/prepare-networking-observability |
+| Meet hardware, software, and network requirements for Agentic Retrieval | https://learn.microsoft.com/en-us/azure/azure-arc/agents-tools-foundry-local/requirements |
+| Configure data query and model settings for Agentic Retrieval chat | https://learn.microsoft.com/en-us/azure/azure-arc/agents-tools-foundry-local/set-up-data-query |
+| Configure Azure Firewall Explicit Proxy for Azure Arc | https://learn.microsoft.com/en-us/azure/azure-arc/azure-firewall-explicit-proxy |
 | Configure Azure Monitor for Arc container storage clusters | https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/howto-azure-monitor-kubernetes |
 | Configure blob index and metadata tags from Edge Volumes | https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/howto-blob-index-metadata-tags |
 | Configure Cloud Ingest subvolumes for Azure Arc Edge Volumes | https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/howto-configure-cloud-ingest-subvolumes |
@@ -225,6 +256,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure Azure Key Vault Secret Store Extension on Arc Kubernetes | https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/secret-store-extension-reference |
 | Configure AKV Secrets Provider extension on Arc Kubernetes | https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/tutorial-akv-secrets-provider |
 | Apply Flux v2 configurations at scale with Azure Policy | https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/use-azure-policy-flux-2 |
+| Configure multicloud connector to onboard EKS to Arc | https://learn.microsoft.com/en-us/azure/azure-arc/multicloud-connector/onboard-elastic-kubernetes-service-clusters-arc |
 | Configure Azure Arc network endpoints, ports, and protocols | https://learn.microsoft.com/en-us/azure/azure-arc/network-requirements-consolidated |
 | Configure Azure Arc resource bridge network allowlists | https://learn.microsoft.com/en-us/azure/azure-arc/resource-bridge/network-requirements |
 | Meet system requirements for Azure Arc resource bridge | https://learn.microsoft.com/en-us/azure/azure-arc/resource-bridge/system-requirements |
@@ -266,9 +298,16 @@ This skill requires **network access** to fetch documentation content:
 ### Integrations & Coding Patterns
 | Topic | URL |
 |-------|-----|
+| Use Agents Runtime REST API for Agentic Retrieval | https://learn.microsoft.com/en-us/azure/azure-arc/agents-tools-foundry-local/reference/agents-runtime-api |
+| Manage collections via Agentic Retrieval REST API | https://learn.microsoft.com/en-us/azure/azure-arc/agents-tools-foundry-local/reference/collections-api-reference |
+| Query collections and models using Inference REST API | https://learn.microsoft.com/en-us/azure/azure-arc/agents-tools-foundry-local/reference/inference-api-reference |
+| Manage ingestion jobs with Agentic Retrieval REST API | https://learn.microsoft.com/en-us/azure/azure-arc/agents-tools-foundry-local/reference/ingestion-api-reference |
+| Manage knowledge bases via REST API in Agentic Retrieval | https://learn.microsoft.com/en-us/azure/azure-arc/agents-tools-foundry-local/reference/knowledge-base-manager-api |
+| Manage knowledge sources via REST API in Agentic Retrieval | https://learn.microsoft.com/en-us/azure/azure-arc/agents-tools-foundry-local/reference/knowledge-sources-api-reference |
+| Use MCP Server API to expose RAG tools in Agentic Retrieval | https://learn.microsoft.com/en-us/azure/azure-arc/agents-tools-foundry-local/reference/mcp-server-api-reference |
 | Azure CLI az arcdata command reference | https://learn.microsoft.com/en-us/azure/azure-arc/data/about-arcdata-extension |
 | Run Azure Resource Graph queries for Arc-enabled Kubernetes | https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/resource-graph-samples |
-| Use Azure Arc WS2012 ESU ARM APIs programmatically | https://learn.microsoft.com/en-us/azure/azure-arc/servers/api-extended-security-updates |
+| Use Azure Arc ESU ARM APIs for license management | https://learn.microsoft.com/en-us/azure/azure-arc/servers/api-extended-security-updates |
 | Use azcmagent CLI to manage Azure Arc servers | https://learn.microsoft.com/en-us/azure/azure-arc/servers/azcmagent |
 | Connect servers to Azure Arc with azcmagent connect | https://learn.microsoft.com/en-us/azure/azure-arc/servers/azcmagent-connect |
 | Manage Azure Arc VM extensions using Ansible | https://learn.microsoft.com/en-us/azure/azure-arc/servers/manage-vm-extensions-ansible |
@@ -289,6 +328,10 @@ This skill requires **network access** to fetch documentation content:
 ### Deployment
 | Topic | URL |
 |-------|-----|
+| Deploy the Agentic Retrieval extension on Azure Arc | https://learn.microsoft.com/en-us/azure/azure-arc/agents-tools-foundry-local/deploy |
+| Install Agentic Retrieval on disconnected Azure Local clusters | https://learn.microsoft.com/en-us/azure/azure-arc/agents-tools-foundry-local/disconnected-operations/deploy-disconnected |
+| Download and import Agentic Retrieval expansion pack for disconnected Azure Local | https://learn.microsoft.com/en-us/azure/azure-arc/agents-tools-foundry-local/disconnected-operations/prepare-disconnected |
+| Uninstall the Agentic Retrieval extension from Azure Arc | https://learn.microsoft.com/en-us/azure/azure-arc/agents-tools-foundry-local/uninstall-extension |
 | Install Edge Volumes extension for Azure Container Storage | https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/howto-install-edge-volumes |
 | Deploy Azure Arc data controller via Azure portal | https://learn.microsoft.com/en-us/azure/azure-arc/data/create-data-controller-direct-azure-portal |
 | Create Azure Arc data controller using Azure CLI | https://learn.microsoft.com/en-us/azure/azure-arc/data/create-data-controller-direct-cli |
@@ -298,10 +341,8 @@ This skill requires **network access** to fetch documentation content:
 | Install and test pre-release Arc data services builds | https://learn.microsoft.com/en-us/azure/azure-arc/data/preview-testing |
 | Manage Azure Arc-enabled Kubernetes agent upgrades and support policy | https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/agent-upgrade |
 | Deploy cert-manager extension on Arc-enabled Kubernetes | https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/cert-manager-deploy |
-| Onboard Amazon EKS clusters to Azure Arc via multicloud connector | https://learn.microsoft.com/en-us/azure/azure-arc/multicloud-connector/onboard-elastic-kubernetes-service-clusters-arc |
 | Onboard multicloud VMs to Azure Arc with the connector | https://learn.microsoft.com/en-us/azure/azure-arc/multicloud-connector/onboard-multicloud-vms-arc |
 | Use Azure CLI commands to deploy Arc resource bridge | https://learn.microsoft.com/en-us/azure/azure-arc/resource-bridge/deploy-cli |
-| Track Azure Arc resource bridge releases and support | https://learn.microsoft.com/en-us/azure/azure-arc/resource-bridge/release-notes |
 | Upgrade Azure Arc resource bridge safely | https://learn.microsoft.com/en-us/azure/azure-arc/resource-bridge/upgrade |
 | Deploy Azure Monitor Agent on Arc-enabled servers | https://learn.microsoft.com/en-us/azure/azure-arc/servers/azure-monitor-agent-deployment |
 | Choose deployment options for Azure Connected Machine agent | https://learn.microsoft.com/en-us/azure/azure-arc/servers/deployment-options |
@@ -311,7 +352,7 @@ This skill requires **network access** to fetch documentation content:
 | Cleanly remove SCVMM environments from Azure Arc | https://learn.microsoft.com/en-us/azure/azure-arc/system-center-virtual-machine-manager/remove-scvmm-from-azure-arc |
 | Support matrix and prerequisites for Arc-enabled SCVMM | https://learn.microsoft.com/en-us/azure/azure-arc/system-center-virtual-machine-manager/support-matrix-for-system-center-virtual-machine-manager |
 | Upgrade the Azure Arc resource bridge for SCVMM | https://learn.microsoft.com/en-us/azure/azure-arc/system-center-virtual-machine-manager/upgrade-azure-arc-resource-bridge |
-| Review support matrix for Arc-enabled VMware vSphere | https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/support-matrix-for-arc-enabled-vmware-vsphere |
+| Review support matrix for Arc-enabled VMware vSphere deployment | https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/support-matrix-for-arc-enabled-vmware-vsphere |
 | Switch existing Arc-enabled VMware vSphere to new version | https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/switch-to-new-version |
 | Bulk publish and deploy workloads with Arc | https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/bulk-deployment |
 | Automate Azure Arc workload orchestration onboarding | https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/onboarding-scripts |

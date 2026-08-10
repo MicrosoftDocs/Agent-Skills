@@ -1,9 +1,9 @@
 ---
 name: azure-functions
-description: Expert knowledge for Azure Functions development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building trigger/binding workflows, Durable Functions, Linux/container apps, CI/CD pipelines, or Flex/Consumption plans, and other Azure Functions related development tasks. Not for Azure App Service (use azure-app-service), Azure Logic Apps (use azure-logic-apps), Azure Container Apps (use azure-container-apps), Azure Kubernetes Service (AKS) (use azure-kubernetes-service).
+description: Expert knowledge for Azure Functions development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building trigger-based apps with Durable Functions, containers, CI/CD, VNet security, or scaling controls, and other Azure Functions related development tasks. Not for Azure App Service (use azure-app-service), Azure Logic Apps (use azure-logic-apps), Azure Container Apps (use azure-container-apps), Azure Kubernetes Service (AKS) (use azure-kubernetes-service).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-26"
+  generated_at: "2026-08-09"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Functions Skill
@@ -26,13 +26,13 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L37-L60 | Diagnosing and fixing Azure Functions runtime and configuration issues (AZFD/AZFW codes), storage and secrets errors, timers, worker runtime mismatches, networking, and Node.js/Python-specific problems. |
 | Best Practices | L61-L79 | Guidance on coding, performance, reliability, error handling, DI, idempotency, and language-specific (C#, Java, Node.js, Python) best practices for Azure Functions. |
-| Decision Making | L80-L100 | Guidance on choosing Functions hosting/runtime models, comparing platforms and costs, and planning/migrating apps (versions, models, plans, AWS Lambda, Express, Service Bus). |
-| Architecture & Design Patterns | L101-L106 | Running Functions in Linux containers, Durable Functions design with Azure Storage, and hosting Functions on Azure Container Apps for scalable, container-based architectures. |
-| Limits & Quotas | L107-L114 | Details on Functions hosting limits: legacy and Flex Consumption plans, scaling behavior, concurrency and target-based scaling settings, and supported languages/versions. |
+| Decision Making | L80-L101 | Guidance on choosing Azure Functions hosting/runtime models, comparing costs, and planning migrations (between plans, .NET models, runtime versions, AWS Lambda, Express.js, and related extensions). |
+| Architecture & Design Patterns | L102-L107 | Running Functions in Linux containers, Durable Functions design with Azure Storage, and hosting Functions on Azure Container Apps for scalable, container-based architectures. |
+| Limits & Quotas | L108-L114 | Scaling and concurrency limits for Functions: how triggers scale, configuring max concurrent executions, and using target-based scaling to control throughput and resource usage. |
 | Security | L115-L129 | Securing Azure Functions apps: encryption at rest, secure storage, keys and secrets, private endpoints/VNet, networking access controls, managed identity for SQL, and App Service security features. |
-| Configuration | L130-L172 | Configuring Azure Functions apps: app settings, host.json, runtimes, plans, IP/NAT, monitoring (App Insights, OpenTelemetry), and bindings/triggers for storage, SQL, Cosmos DB, Event Hubs, and OpenAI. |
-| Integrations & Coding Patterns | L173-L278 | Configuring Azure Functions triggers/bindings to integrate with data stores, messaging, AI/OpenAI, MCP, Dapr, APIs, and other Azure/third‑party services, including code patterns and tooling. |
-| Deployment | L279-L311 | Deploying and hosting Azure Functions: provisioning plans, containers, and Kubernetes; CI/CD with GitHub/Azure Pipelines; language-specific build/publish; migration and rollback strategies. |
+| Configuration | L130-L172 | Configuring Azure Functions behavior, runtime, triggers/bindings, networking, monitoring/tracing, local dev tools, and app settings (incl. Cosmos DB, SQL, Event Hubs, OpenAI, NAT, Elastic, versions). |
+| Integrations & Coding Patterns | L173-L278 | How to connect Functions to external services (storage, databases, messaging, AI/OpenAI, MCP/Dapr, SignalR/Web PubSub) using triggers/bindings and integration patterns across languages. |
+| Deployment | L279-L310 | Deploying and hosting Azure Functions: provisioning plans with IaC tools, containers/Kubernetes, CI/CD (GitHub/Azure Pipelines), slots, zip/package deploy, migrations, and language‑specific build/publish. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -84,6 +84,7 @@ This skill requires **network access** to fetch documentation content:
 | Plan migration from legacy Azure Functions Consumption plan | https://learn.microsoft.com/en-us/azure/azure-functions/consumption-plan |
 | Choose and use Azure Functions Dedicated hosting | https://learn.microsoft.com/en-us/azure/azure-functions/dedicated-plan |
 | Compare in-process vs isolated .NET Azure Functions models | https://learn.microsoft.com/en-us/azure/azure-functions/dotnet-isolated-in-process-differences |
+| Choose and configure Azure Functions Flex Consumption | https://learn.microsoft.com/en-us/azure/azure-functions/flex-consumption-plan |
 | Choose between Azure Functions, Logic Apps, WebJobs, and Power Automate | https://learn.microsoft.com/en-us/azure/azure-functions/functions-compare-logic-apps-ms-flow-webjobs |
 | Estimate and compare Azure Functions consumption plan costs | https://learn.microsoft.com/en-us/azure/azure-functions/functions-consumption-costs |
 | Choose the right Azure Functions hosting plan | https://learn.microsoft.com/en-us/azure/azure-functions/functions-scale |
@@ -108,7 +109,6 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Understand event-driven scaling limits in Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/event-driven-scaling |
-| Understand Azure Functions Flex Consumption hosting | https://learn.microsoft.com/en-us/azure/azure-functions/flex-consumption-plan |
 | Configure concurrency behavior in Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-concurrency |
 | Use target-based scaling for Azure Functions triggers | https://learn.microsoft.com/en-us/azure/azure-functions/functions-target-based-scaling |
 
@@ -133,7 +133,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure Application Insights monitoring for Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/configure-monitoring |
 | Disable and enable individual Azure Functions via settings | https://learn.microsoft.com/en-us/azure/azure-functions/disable-function |
 | Configure Azure Functions extension bundles for non-.NET apps | https://learn.microsoft.com/en-us/azure/azure-functions/extension-bundles |
-| Configure and manage Azure Functions Flex Consumption apps | https://learn.microsoft.com/en-us/azure/azure-functions/flex-consumption-how-to |
+| Configure and manage Flex Consumption function apps | https://learn.microsoft.com/en-us/azure/azure-functions/flex-consumption-how-to |
 | Configure Azure Functions app settings and environment variables | https://learn.microsoft.com/en-us/azure/azure-functions/functions-app-settings |
 | Configure Azure SQL trigger for Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-azure-sql-trigger |
 | Configure Azure Cosmos DB bindings for Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-cosmosdb-v2 |
@@ -224,7 +224,7 @@ This skill requires **network access** to fetch documentation content:
 | Implement HTTP triggers and bindings in Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-http-webhook |
 | Configure HTTP output bindings for Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-http-webhook-output |
 | Configure HTTP trigger for Azure Functions APIs | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-http-webhook-trigger |
-| Integrate Azure Functions with Apache Kafka bindings | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-kafka |
+| Use Apache Kafka bindings with Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-kafka |
 | Send messages with Kafka output binding in Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-kafka-output |
 | Configure Apache Kafka trigger for Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-kafka-trigger |
 | Expose Azure Functions as MCP tools via bindings | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-mcp |
@@ -286,7 +286,6 @@ This skill requires **network access** to fetch documentation content:
 | Provision Azure Functions resources using Bicep | https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-first-function-bicep |
 | Deploy Azure Functions with ARM templates | https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-first-function-resource-manager |
 | Provision Azure Functions Flex plan using Terraform | https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-first-function-terraform |
-| Create an Azure Functions app in the portal with correct hosting plan | https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-function-app-portal |
 | Deploy containerized Azure Functions on Linux in Azure | https://learn.microsoft.com/en-us/azure/azure-functions/functions-deploy-container |
 | Deploy containerized Azure Functions to Container Apps | https://learn.microsoft.com/en-us/azure/azure-functions/functions-deploy-container-apps |
 | Use deployment slots for Azure Functions apps | https://learn.microsoft.com/en-us/azure/azure-functions/functions-deployment-slots |
@@ -295,11 +294,11 @@ This skill requires **network access** to fetch documentation content:
 | Develop and deploy Azure Functions using Visual Studio Code | https://learn.microsoft.com/en-us/azure/azure-functions/functions-develop-vs-code |
 | Set up Azure Pipelines CI/CD for Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-how-to-azure-devops |
 | Run Azure Functions in custom Linux containers on Container Apps | https://learn.microsoft.com/en-us/azure/azure-functions/functions-how-to-custom-container |
-| Configure GitHub Actions CI/CD for Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-how-to-github-actions |
+| Set up GitHub Actions deployment for Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-how-to-github-actions |
 | Automate Azure Functions deployment with Bicep and ARM | https://learn.microsoft.com/en-us/azure/azure-functions/functions-infrastructure-as-code |
 | Host Azure Functions on Kubernetes with KEDA | https://learn.microsoft.com/en-us/azure/azure-functions/functions-kubernetes-keda |
 | Recover bad deployments for Flex Consumption apps | https://learn.microsoft.com/en-us/azure/azure-functions/functions-rollback-deployments |
-| Configure zone-redundant Azure Functions apps | https://learn.microsoft.com/en-us/azure/azure-functions/functions-zone-redundancy |
+| Deploy Azure Functions with zone redundancy | https://learn.microsoft.com/en-us/azure/azure-functions/functions-zone-redundancy |
 | Migrate Azure Cosmos DB Functions extension from v3 to v4 | https://learn.microsoft.com/en-us/azure/azure-functions/migrate-cosmos-db-version-3-version-4 |
 | Migrate Azure Functions from Consumption to Flex plan | https://learn.microsoft.com/en-us/azure/azure-functions/migration/migrate-plan-consumption-to-flex |
 | Build and deploy Python Azure Functions using supported methods | https://learn.microsoft.com/en-us/azure/azure-functions/python-build-options |

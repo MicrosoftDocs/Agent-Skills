@@ -1,9 +1,9 @@
 ---
 name: azure-firewall
-description: Expert knowledge for Azure Firewall development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring TLS inspection, DNAT/SNAT rules, DNS proxy, hub-and-spoke routing, or Premium firewall deployments, and other Azure Firewall related development tasks. Not for Azure Firewall Manager (use azure-firewall-manager), Azure Virtual Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan), Azure Web Application Firewall (use azure-web-application-firewall).
+description: Expert knowledge for Azure Firewall development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring TLS inspection, DNAT/SNAT, DNS proxy, hub-spoke routing, or SFTP to Azure Storage, and other Azure Firewall related development tasks. Not for Azure DDoS Protection (use azure-ddos-protection), Azure Web Application Firewall (use azure-web-application-firewall), Azure Virtual Network (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-02"
+  generated_at: "2026-08-09"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Firewall Skill
@@ -26,7 +26,7 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L37-L42 | Diagnosing Azure Firewall issues using known limitations, packet captures, and Sentinel log analysis for malware detection and traffic investigation. |
 | Best Practices | L43-L49 | Best practices for Azure Firewall DNS proxy/caching, rule and SNAT tuning, using Policy Analytics to refine rules, and hardening firewall security and configuration |
-| Decision Making | L50-L58 | Guidance on choosing Azure Firewall SKUs (Basic/Standard/Premium), comparing features and throughput, and planning or changing deployments based on performance and requirements. |
+| Decision Making | L50-L58 | Guidance on choosing Azure Firewall SKUs (Basic/Standard/Premium), comparing features and performance, and deploying or switching SKUs based on requirements. |
 | Architecture & Design Patterns | L59-L70 | Designing Azure Firewall network architectures: hub-and-spoke, forced tunneling, load balancer integration, hybrid/AVD/M365 protection, and DNAT for overlapping/private IP networks. |
 | Limits & Quotas | L71-L80 | Azure Firewall capacity, IP and SNAT port limits, prescaling options, TCP idle timeouts, and how to scale/extend outbound connectivity (including via NAT Gateway V2). |
 | Security | L81-L94 | Azure Firewall security setup: compliance, RBAC/permissions, Azure Policy, TLS inspection and CA chains, threat intel, DNAT, AKS and hybrid network protection, and portal deployment. |
@@ -54,7 +54,7 @@ This skill requires **network access** to fetch documentation content:
 | Select the appropriate Azure Firewall SKU | https://learn.microsoft.com/en-us/azure/firewall/choose-firewall-sku |
 | Deploy Azure Firewall Basic with portal and policy | https://learn.microsoft.com/en-us/azure/firewall/deploy-firewall-basic-portal-policy |
 | Compare Azure Firewall features across SKUs | https://learn.microsoft.com/en-us/azure/firewall/features-by-sku |
-| Plan Azure Firewall performance and SKU throughput | https://learn.microsoft.com/en-us/azure/firewall/firewall-performance |
+| Choose Azure Firewall SKU based on performance benchmarks | https://learn.microsoft.com/en-us/azure/firewall/firewall-performance |
 
 ### Architecture & Design Patterns
 | Topic | URL |

@@ -9,9 +9,11 @@
 |-------|-----|
 | Understand serverless compute DBU quotas in Databricks | https://learn.microsoft.com/en-us/azure/databricks/admin/account-settings/serverless-quotas |
 | Handle Supervisor Agent long-running tasks and timeouts | https://learn.microsoft.com/en-us/azure/databricks/agents/agent-bricks/multi-agent-supervisor-long-running-tasks |
-| Configure Unity AI Gateway rate limits for services | https://learn.microsoft.com/en-us/azure/databricks/ai-gateway/rate-limits |
+| Govern MCP services with tools, policies, and rate limits | https://learn.microsoft.com/en-us/azure/databricks/ai-gateway/govern-mcp-service |
+| Configure rate limits for Unity AI Gateway model and MCP services | https://learn.microsoft.com/en-us/azure/databricks/ai-gateway/rate-limits |
 | Scale Databricks AI Search endpoints for high QPS | https://learn.microsoft.com/en-us/azure/databricks/ai-search/high-qps |
 | Clone legacy Databricks dashboards to AI/BI | https://learn.microsoft.com/en-us/azure/databricks/archive/legacy/clone-legacy-to-aibi |
+| Use Databricks online tables for real-time features | https://learn.microsoft.com/en-us/azure/databricks/archive/machine-learning/feature-store/online-tables |
 | Collaborate as an invited Clean Rooms user | https://learn.microsoft.com/en-us/azure/databricks/clean-rooms/clean-room-collaborator |
 | Understand requirements and limitations of Databricks dedicated compute | https://learn.microsoft.com/en-us/azure/databricks/compute/dedicated-limitations |
 | Review Azure Databricks serverless compute limits | https://learn.microsoft.com/en-us/azure/databricks/compute/serverless/limitations |
@@ -22,11 +24,12 @@
 | Review Unity Catalog requirements and limitations | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/requirements |
 | Use Azure Databricks personal access tokens securely | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/auth/pat |
 | Understand Databricks Connect for Python limitations | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-connect/python/limitations |
+| Meet Databricks Connect usage and runtime requirements | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-connect/requirements |
 | Understand Databricks Connect Scala limitations | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-connect/scala/limitations |
-| Upload and analyze files in Genie Agents | https://learn.microsoft.com/en-us/azure/databricks/genie-agents/file-upload |
 | Create and manage Genie Agents with table limits | https://learn.microsoft.com/en-us/azure/databricks/genie-agents/set-up |
 | Tune Genie Agent quality with instructions and snippets | https://learn.microsoft.com/en-us/azure/databricks/genie-agents/tune-quality |
-| Query and interpret Genie usage and free allowance | https://learn.microsoft.com/en-us/azure/databricks/genie/monitor-cost |
+| Understand Genie Code pricing and usage limits | https://learn.microsoft.com/en-us/azure/databricks/genie-code/ |
+| Analyze Genie usage, free DBU allowance, and costs | https://learn.microsoft.com/en-us/azure/databricks/genie/monitor-cost |
 | Understand Databricks Free Edition quotas and limits | https://learn.microsoft.com/en-us/azure/databricks/getting-started/free-edition-limitations |
 | Auto Loader FAQ on limits and behavior | https://learn.microsoft.com/en-us/azure/databricks/ingestion/cloud-object-storage/auto-loader/faq |
 | Understand Databricks Aha! connector limitations | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/aha-limits |
@@ -46,13 +49,14 @@
 | Review Netskope Logs connector limitations and quotas | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/netskope-logs-limits |
 | Understand NetSuite connector limitations and constraints | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/netsuite-limits |
 | Understand Databricks OpenAI connector limitations | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/openai-limits |
-| Check Outlook connector limits, quotas, and supported data | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/outlook-limits |
+| Review Oracle integrated CDC connector limitations | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/oracle-limits |
+| Review Outlook connector limits and quotas in Lakeflow | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/outlook-limits |
+| Understand PagerDuty connector limitations in Lakeflow | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/pagerduty-limits |
 | Understand Databricks Pendo connector limitations and caps | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/pendo-limits |
 | Review PostgreSQL connector limitations and considerations | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/postgresql-limits |
-| Understand Lakeflow query-based connector limitations | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/query-based-limits |
 | RabbitMQ Lakeflow Connect connector limitations and quotas | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/rabbitmq-limits |
 | Review Reddit Ads connector limitations in Databricks | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/reddit-ads-limits |
-| Understand Salesforce connector limitations in Databricks | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/salesforce-limits |
+| Understand Databricks Salesforce ingestion limits and constraints | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/salesforce-limits |
 | Understand ServiceNow Lakeflow connector limitations | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/servicenow-limits |
 | Review Salesforce Marketing Cloud connector limitations | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/sfmc-limits |
 | Understand Databricks SharePoint connector limits | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/sharepoint-limits |
@@ -72,12 +76,12 @@
 | Understand Zip connector limitations and coverage | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/zip-limits |
 | Zoho Books connector FAQs and API call limits | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/zoho-books-faq |
 | Understand Zoho Books connector limitations and sync rules | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/zoho-books-limits |
-| Zoom Logs connector FAQs and account requirements | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/zoom-logs-faq |
-| Understand Zoom Logs connector limitations in Databricks | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/zoom-logs-limits |
-| Review Zerobus Ingest connector limits in Lakeflow | https://learn.microsoft.com/en-us/azure/databricks/ingestion/zerobus-limits |
+| Zerobus Ingest connector quotas and table behavior | https://learn.microsoft.com/en-us/azure/databricks/ingestion/zerobus-quotas |
 | Run queries with Azure Databricks JDBC driver limits | https://learn.microsoft.com/en-us/azure/databricks/integrations/jdbc-oss/example |
 | Handle Lakeflow Jobs with up to 1000 tasks | https://learn.microsoft.com/en-us/azure/databricks/jobs/large-jobs |
+| Run Clean Room notebook tasks in Databricks jobs | https://learn.microsoft.com/en-us/azure/databricks/jobs/tasks/clean-room-notebook |
 | Handle large parameter arrays in For each tasks | https://learn.microsoft.com/en-us/azure/databricks/jobs/tasks/for-each-lookup-example |
+| Use Run Job tasks with Databricks dependency limits | https://learn.microsoft.com/en-us/azure/databricks/jobs/tasks/run-job |
 | Configure environment versions for pipeline Python | https://learn.microsoft.com/en-us/azure/databricks/ldp/developer/environment-versions |
 | Configure REFRESH POLICY for materialized views | https://learn.microsoft.com/en-us/azure/databricks/ldp/developer/ldp-sql-ref-create-materialized-view-refresh-policy |
 | Lakeflow pipeline limits and constraints | https://learn.microsoft.com/en-us/azure/databricks/ldp/limitations |
@@ -85,6 +89,7 @@
 | Understand Databricks Foundation Model API limits | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/foundation-model-apis/ |
 | Foundation Model APIs rate limits and quotas | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/foundation-model-apis/limits |
 | Use priority pay-per-token for Databricks models | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/foundation-model-apis/priority-mode |
+| Available Databricks-hosted foundation models and features | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/foundation-model-apis/supported-models |
 | Model serving limits, quotas, and regions on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/model-serving-limits |
 | Understand and debug Databricks model serving timeouts | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/model-serving-timeouts |
 | Understand Databricks MLflow tracing latency and limits | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/tracing/faq |
@@ -93,19 +98,19 @@
 | Use Lakebase PgBouncer connection pooling at scale | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/connection-pooling |
 | Manage Lakebase Postgres databases per branch | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/manage-databases |
 | Configure Lakebase protected branches and branch limits | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/protected-branches |
+| Use predictive optimization for Unity Catalog tables | https://learn.microsoft.com/en-us/azure/databricks/optimizations/predictive-optimization |
 | Await PySpark streaming query termination with timeout | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/streamingquery/awaittermination |
 | Use approx_top_k with accuracy and limits | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/approx_top_k |
 | Understand Databricks monotonically_increasing_id limits | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/monotonically_increasing_id |
+| Supported comment syncing for Lakehouse foreign tables | https://learn.microsoft.com/en-us/azure/databricks/query-federation/foreign-table-comments |
 | Azure Databricks Git folders workspace limits | https://learn.microsoft.com/en-us/azure/databricks/release-notes/product/2024/september |
 | Review Azure Databricks Git folder limits and behavior | https://learn.microsoft.com/en-us/azure/databricks/repos/limits |
-| Review Azure Databricks resource limits and quotas | https://learn.microsoft.com/en-us/azure/databricks/resources/limits |
+| Review Azure Databricks resource and API limits | https://learn.microsoft.com/en-us/azure/databricks/resources/limits |
 | Monitor Unity Catalog resource quotas and usage | https://learn.microsoft.com/en-us/azure/databricks/resources/manage-resource-quotas |
-| Understand feature limitations when using Databricks RBAC | https://learn.microsoft.com/en-us/azure/databricks/security/auth/rbac/limitations |
 | Understand CACHE SELECT behavior and runtime support in Databricks | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/delta-cache |
 | Use DESCRIBE HISTORY and table history retention in Delta Lake | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/delta-describe-history |
 | Use approx_count_distinct with accuracy controls | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/approx_count_distinct |
 | Configure Databricks SQL statement timeout limits | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/parameters/statement_timeout |
-| Use Databricks SQL data types and value ranges correctly | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-datatypes |
 | Apply Unity Catalog object naming limits in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-names |
 | Use CALL for stored procedures in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-aux-call |
 | Use SHOW TABLES DROPPED to list recoverable tables and understand recovery periods | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-aux-show-tables-dropped |
@@ -115,4 +120,4 @@
 | Understand real-time mode limitations in Structured Streaming | https://learn.microsoft.com/en-us/azure/databricks/structured-streaming/real-time/limitations |
 | Reference supported features and limits for Databricks real-time mode | https://learn.microsoft.com/en-us/azure/databricks/structured-streaming/real-time/reference |
 | Use temporary tables in Databricks SQL sessions | https://learn.microsoft.com/en-us/azure/databricks/tables/temporary-tables |
-| Check Databricks metric view feature runtime requirements | https://learn.microsoft.com/en-us/azure/databricks/uc-semantics/metric-views/feature-availability |
+| Check Databricks runtime requirements for metric view features | https://learn.microsoft.com/en-us/azure/databricks/uc-semantics/metric-views/feature-availability |

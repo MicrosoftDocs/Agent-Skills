@@ -1,7 +1,7 @@
 # Generation Summary
 
-**Generated**: 2026-08-02 02:02:05
-**Total Duration**: 0m 20s
+**Generated**: 2026-08-09 02:02:11
+**Total Duration**: 0m 18s
 
 ## Product Crawl Summary
 
@@ -9,15 +9,15 @@ Quick overview for reviewers. See individual product reports for details.
 
 | # | Product | Pages | Classified | New | Updated | Deleted | Status |
 |---|---------|-------|------------|-----|---------|---------|--------|
-| 1 | Azure Well Architected | 205 | 174 | 0 | 3 | 0 | OK |
+| 1 | Azure Well Architected | 212 | 174 | 7 | 2 | 0 | OK |
 
 ### Totals
 
 - **Products Processed**: 1 success, 0 failed
-- **Total Pages**: 205
+- **Total Pages**: 212
 - **Total Classified**: 174
-- **Total New Pages**: 0
-- **Total Updated Pages**: 3
+- **Total New Pages**: 7
+- **Total Updated Pages**: 2
 - **Total Deleted Pages**: 0
 
 ### Classification by Type (All Products)
@@ -37,7 +37,7 @@ Quick overview for reviewers. See individual product reports for details.
 ## Product Discovery Summary
 
 - **Total Products**: 1
-- **Total Sub-TOCs**: 9
+- **Total Sub-TOCs**: 7
 - **Total Skipped**: 0
 
 ## Products by Status
@@ -50,7 +50,7 @@ Quick overview for reviewers. See individual product reports for details.
 
 | # | Status | Slug | Name | TOC URL | Sub-TOCs |
 |---|--------|------|------|---------|----------|
-| 1 | active | azure-well-architected | Azure Well Architected | ...learn.microsoft.com/en-us/azure/well-architected/toc.json | 9 |
+| 1 | active | azure-well-architected | Azure Well Architected | ...learn.microsoft.com/en-us/azure/well-architected/toc.json | 7 |
 
 ## Product Details
 
@@ -63,10 +63,8 @@ Quick overview for reviewers. See individual product reports for details.
 
 - https://learn.microsoft.com/en-us/azure/well-architected/ai/toc.json
 - https://learn.microsoft.com/en-us/azure/well-architected/azure-virtual-desktop/toc.json
-- https://learn.microsoft.com/en-us/azure/well-architected/azure-vmware/toc.json
 - https://learn.microsoft.com/en-us/azure/well-architected/hpc/toc.json
+- https://learn.microsoft.com/en-us/azure/well-architected/microsoft-fabric/toc.json
 - https://learn.microsoft.com/en-us/azure/well-architected/mission-critical/toc.json
-- https://learn.microsoft.com/en-us/azure/well-architected/oracle-iaas/toc.json
 - https://learn.microsoft.com/en-us/azure/well-architected/saas/toc.json
-- https://learn.microsoft.com/en-us/azure/well-architected/sap/toc.json
 - https://learn.microsoft.com/en-us/azure/well-architected/sustainability/toc.json

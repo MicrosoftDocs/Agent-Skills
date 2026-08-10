@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-02'
+generated_at: '2026-08-09'
 category_descriptions:
   troubleshooting: 'Troubleshooting Azure Quantum provider issues: diagnosing job
     failures and support/escalation policies and limits for IonQ, Quantinuum, and
@@ -53,8 +53,8 @@ confusable_not_for: Not for Azure HDInsight (use azure-hdinsight), Azure Databri
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 8
-- **Unchanged**: 128
+- **Updated Pages**: 2
+- **Unchanged**: 134
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-quantum/azure-quantum.csv`
 
@@ -77,22 +77,10 @@ confusable_not_for: Not for Azure HDInsight (use azure-hdinsight), Azure Databri
 
 ### Updated Pages
 
+- [Quantum Development Kit overview](https://learn.microsoft.com/en-us/azure/quantum/qdk-main-overview)
+  - Updated: 2026-07-15T22:07:00.000Z → 2026-08-04T00:02:00.000Z
 - [Set up the QDK](https://learn.microsoft.com/en-us/azure/quantum/install-overview-qdk)
-  - Updated: 2025-12-22T23:45:00.000Z → 2026-07-31T20:03:00.000Z
-- [Visual Studio Code agent mode](https://learn.microsoft.com/en-us/azure/quantum/qdk-vscode-agent-setup)
-  - Updated: 2026-04-28T15:50:00.000Z → 2026-07-31T20:03:00.000Z
-- [QDK language support overview](https://learn.microsoft.com/en-us/azure/quantum/qdk-language-support-overview)
-  - Updated: 2026-05-01T22:44:00.000Z → 2026-07-31T20:03:00.000Z
-- [Submit a circuit with Qiskit](https://learn.microsoft.com/en-us/azure/quantum/quickstart-microsoft-qiskit)
-  - Updated: 2026-06-22T08:00:00.000Z → 2026-07-31T20:03:00.000Z
-- [Submit a circuit with PennyLane](https://learn.microsoft.com/en-us/azure/quantum/quickstart-microsoft-pennylane)
-  - Updated: 2026-05-01T22:44:00.000Z → 2026-07-31T20:03:00.000Z
-- [Overview of QDK simulators](https://learn.microsoft.com/en-us/azure/quantum/simulators-overview-qdk)
-  - Updated: 2026-06-29T22:17:00.000Z → 2026-07-31T20:03:00.000Z
-- [Install and run the resource estimator](https://learn.microsoft.com/en-us/azure/quantum/install-run-resource-estimator)
-  - Updated: 2026-06-17T16:03:00.000Z → 2026-07-31T20:03:00.000Z
-- [Ways to run Q# programs](https://learn.microsoft.com/en-us/azure/quantum/qsharp-ways-to-work)
-  - Updated: 2026-05-15T22:10:00.000Z → 2026-07-31T20:03:00.000Z
+  - Updated: 2026-07-31T20:03:00.000Z → 2026-08-05T18:04:00.000Z
 
 ## Classified Pages
 
@@ -204,7 +192,6 @@ confusable_not_for: Not for Azure HDInsight (use azure-hdinsight), Azure Databri
 | [Quantum oracles](https://learn.microsoft.com/en-us/azure/quantum/concepts-oracles) | 0.20 | Conceptual explanation of quantum oracles and their mathematical form; no product-specific configuration parameters, limits, or troubleshooting mappings. |
 | [Quantum random number generator](https://learn.microsoft.com/en-us/azure/quantum/tutorial-qdk-quantum-random-number-generator) | 0.20 | Tutorial showing how to write a basic Q# quantum random number generator; primarily conceptual and step-by-step coding, without product-specific limits, configuration tables, error codes, or decision matrices. |
 | [Returns and termination](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/expressions/returnsandtermination) | 0.20 | Return and fail semantics; language-level behavior, no error code catalog or troubleshooting mapping. |
-| [Set up the QDK](https://learn.microsoft.com/en-us/azure/quantum/install-overview-qdk) | 0.20 | Installation/setup overview for the QDK VS Code extension and language support; likely step-by-step environment setup without detailed configuration tables, limits, or product-specific expert parameters. |
 | [Singleton tuple equivalence](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/typesystem/singletontupleequivalence) | 0.20 | Singleton tuple equivalence; language typing rule, not operational or configuration content. |
 | [Specialization declarations](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/programstructure/specializationdeclarations) | 0.20 | Explains Q# specialization declarations conceptually; no numeric thresholds, configs, or troubleshooting mappings. |
 | [Statements in Q#](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/statements/) | 0.20 | Overview of Q# statements; no product-specific limits, configs, or decision matrices. |
@@ -227,7 +214,6 @@ confusable_not_for: Not for Azure HDInsight (use azure-hdinsight), Azure Databri
 | [Microsoft's quantum machine](https://learn.microsoft.com/en-us/azure/quantum/overview-microsoft-quantum-machine) | 0.10 | Describes Microsoft's research quantum machine at a high level; no concrete product limits, configs, or troubleshooting. |
 | [Multiple qubits](https://learn.microsoft.com/en-us/azure/quantum/concepts-multiple-qubits) | 0.10 | Conceptual treatment of multi-qubit states and gates; no Azure- or QDK-specific parameters, limits, or decision guidance. |
 | [Q#](https://learn.microsoft.com/en-us/azure/quantum/qsharp-overview) | 0.10 | High-level introduction to Q# and program structure; conceptual overview without detailed configuration, limits, or troubleshooting content. |
-| [Quantum Development Kit overview](https://learn.microsoft.com/en-us/azure/quantum/qdk-main-overview) | 0.10 | Main landing/overview page for the Quantum Development Kit with high-level description and links; no detailed limits, configuration tables, error codes, or product-specific numeric guidance. |
 | [Quantum entanglement](https://learn.microsoft.com/en-us/azure/quantum/concepts-entanglement) | 0.10 | Conceptual overview of entanglement and correlations; does not provide product-specific settings, limits, or troubleshooting flows. |
 | [Self-consistent field calculations and active space selection](https://learn.microsoft.com/en-us/azure/quantum/overview-qdk-chem-scf-active-space) | 0.10 | Explains self-consistent field theory conceptually; not product-specific configuration or operational guidance. |
 | [The circuit editor](https://learn.microsoft.com/en-us/azure/quantum/qdk-circuit-editor) | 0.10 | Introduces the circuit editor feature and how to build/visualize circuits; appears to be a conceptual/usage overview without detailed configuration parameters, limits, or troubleshooting mappings. |
@@ -239,3 +225,5 @@ confusable_not_for: Not for Azure HDInsight (use azure-hdinsight), Azure Databri
 | [Contributing to the Microsoft Quantum Development Kit](https://learn.microsoft.com/en-us/azure/quantum/contributing-overview) | 0.05 | Community contribution overview for the Quantum Development Kit; process/participation guidance, not technical expert knowledge per defined categories. |
 | [Further reading](https://learn.microsoft.com/en-us/azure/quantum/further-reading-qdk) | 0.05 | Curated list of external learning resources; navigation/reference content without product-specific limits, configuration, or troubleshooting details. |
 | [QIR target profiles](https://learn.microsoft.com/en-us/azure/quantum/quantum-computing-target-profiles) | - | Appears to be an overview of QIR target profiles and hardware capabilities without detailed numeric limits, configuration tables, error codes, or decision matrices; no clear product-specific expert configuration, limits, or troubleshooting content is evident from the summary. |
+| [Quantum Development Kit overview](https://learn.microsoft.com/en-us/azure/quantum/qdk-main-overview) | - | High-level landing/overview page for the Quantum Development Kit with descriptive content and links, no specific limits, configuration parameters, error codes, or product-specific decision/troubleshooting details. |
+| [Set up the QDK](https://learn.microsoft.com/en-us/azure/quantum/install-overview-qdk) | - | Installation/setup overview for the QDK extension and environment; focuses on how to install rather than detailed configuration tables, limits, or troubleshooting mappings. |

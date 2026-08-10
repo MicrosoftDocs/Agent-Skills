@@ -46,8 +46,8 @@ confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure NetApp 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 29
+- **Updated Pages**: 0
+- **Unchanged**: 31
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-managed-lustre/azure-managed-lustre.csv`
 
@@ -65,13 +65,6 @@ confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure NetApp 
 | *(Unclassified)* | 4 | 12.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [Use Azure Blob Storage with Azure Managed Lustre](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/blob-integration)
-  - Updated: 2026-01-13T18:08:00.000Z → 2026-07-29T08:00:00.000Z
-- [Configure a network security group](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/configure-network-security-group)
-  - Updated: 2025-11-07T23:02:00.000Z → 2026-07-29T08:00:00.000Z
 
 ## Classified Pages
 

@@ -1,9 +1,9 @@
 ---
 name: azure-service-bus
-description: Expert knowledge for Azure Service Bus development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using queues/topics, sessions/FIFO, geo-replication, JMS/RabbitMQ clients, or Premium large messages, and other Azure Service Bus related development tasks. Not for Azure Event Hubs (use azure-event-hubs), Azure Event Grid (use azure-event-grid), Azure Queue Storage (use azure-queue-storage), Azure Relay (use azure-relay).
+description: Expert knowledge for Azure Service Bus development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using queues/topics, sessions, autoforwarding chains, JMS/RabbitMQ clients, or geo-disaster recovery, and other Azure Service Bus related development tasks. Not for Azure Event Hubs (use azure-event-hubs), Azure Relay (use azure-relay), Azure Queue Storage (use azure-queue-storage), Azure Web PubSub (use azure-web-pubsub).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-02"
+  generated_at: "2026-08-09"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Service Bus Skill
@@ -24,8 +24,8 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L46 | Diagnosing and fixing Service Bus issues: AMQP errors, tracing, .NET/current SDK exceptions, ARM/Resource Manager failures, and other common runtime or connectivity problems. |
-| Best Practices | L47-L59 | Best practices for reliable, ordered, and performant messaging: duplicate detection, FIFO/sessions, timestamps, maintenance prep, loss prevention, serialization, prefetch, timeouts, and retries. |
+| Troubleshooting | L37-L46 | Diagnosing and resolving Azure Service Bus errors and exceptions (AMQP, .NET, Resource Manager), configuring tracing, and fixing common messaging and connectivity issues. |
+| Best Practices | L47-L59 | Guidance on reliable, high-throughput messaging: duplicate detection, ordering/sessions, timestamps, maintenance prep, loss/duplicate prevention, serialization, prefetch, timeouts, and retries. |
 | Decision Making | L60-L68 | Guidance on choosing Service Bus vs other messaging options, configuring geo-disaster recovery/replication, Java/JMS client choices, and migrating from Standard to Premium. |
 | Architecture & Design Patterns | L69-L78 | Patterns and topologies for resilient, partitioned, and federated Service Bus architectures, including autoforwarding chains, multi-namespace designs, and message replication with NServiceBus. |
 | Limits & Quotas | L79-L86 | Service Bus message size, entity and namespace quotas, Premium large message handling, and how throttling, limits, and related behaviors affect throughput and reliability. |
@@ -54,7 +54,7 @@ This skill requires **network access** to fetch documentation content:
 | Prevent message loss and duplicates in Azure Service Bus | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-message-loss-and-duplicates |
 | Handle messages and serialization in Azure Service Bus | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messages-payloads |
 | Optimize Azure Service Bus performance and throughput | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-performance-improvements |
-| Tune Azure Service Bus prefetch for performance | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-prefetch |
+| Optimize Azure Service Bus performance with prefetch | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-prefetch |
 | Configure Service Bus timeouts and retry policies | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-timeouts-retries |
 
 ### Decision Making

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-02'
+generated_at: '2026-08-09'
 category_descriptions:
   security: 'Securing Web PubSub: authN/Z for chat, Socket.IO, MQTT; roles/permissions;
     Entra ID and managed identities; mTLS and WAF; keys/Key Vault; private endpoints,
@@ -13,11 +13,12 @@ category_descriptions:
   troubleshooting: Diagnosing and fixing Web PubSub errors, event handler/debug issues,
     service and Socket.IO problems, using resource/diagnostic logs and error codes
     for troubleshooting.
-  decision-making: Guidance on configuring Web PubSub for high availability with zones
-    and understanding pricing, billing meters, and cost considerations
+  decision-making: Guidance on choosing the right Web PubSub feature set for your
+    scenario and understanding pricing, quotas, and cost drivers in the Azure Web
+    PubSub billing model.
   architecture-patterns: 'Architectural patterns for Web PubSub: multi-region resiliency,
-    bridging MQTT with Web PubSub, and internal design details for Socket.IO protocol
-    support.'
+    bridging MQTT with WebSocket/Web PubSub, and understanding Socket.IO support internals
+    for integration design.'
   limits-quotas: Capacity and performance limits for Web PubSub (connections, messages,
     scaling) and which Socket.IO server APIs aren’t supported or behave differently.
   best-practices: Guidance on building resilient WebSocket clients for Azure Web PubSub,
@@ -28,58 +29,61 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Web PubSub development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building WebSocket/MQTT apps, Socket.IO backends, storage-backed chat, geo-replication,
-  or autoscale, and other Azure Web PubSub related development tasks. Not for Azure
-  SignalR Service (use azure-signalr-service), Azure Event Hubs (use azure-event-hubs),
-  Azure Service Bus (use azure-service-bus), Azure Relay (use azure-relay).
-use_when: Use when building WebSocket/MQTT apps, Socket.IO backends, storage-backed
-  chat, geo-replication, or autoscale, and other Azure Web PubSub related development
+  building WebSocket/MQTT or Socket.IO apps, storage-backed chat, geo-replication,
+  or Premium autoscale, and other Azure Web PubSub related development tasks. Not
+  for Azure SignalR Service (use azure-signalr-service), Azure Service Bus (use azure-service-bus),
+  Azure Event Hubs (use azure-event-hubs), Azure Relay (use azure-relay).
+use_when: Use when building WebSocket/MQTT or Socket.IO apps, storage-backed chat,
+  geo-replication, or Premium autoscale, and other Azure Web PubSub related development
   tasks.
 confusable_not_for: Not for Azure SignalR Service (use azure-signalr-service), Azure
-  Event Hubs (use azure-event-hubs), Azure Service Bus (use azure-service-bus), Azure
+  Service Bus (use azure-service-bus), Azure Event Hubs (use azure-event-hubs), Azure
   Relay (use azure-relay).
 ---
 # Azure Web PubSub Crawl Report
 
 ## Summary
 
-- **Total Pages**: 122
-- **Fetched**: 122
+- **Total Pages**: 123
+- **Fetched**: 123
 - **Fetch Failed**: 0
-- **Classified**: 87
+- **Classified**: 88
 - **Unclassified**: 35
 
 ### Incremental Update
 - **New Pages**: 1
-- **Updated Pages**: 0
-- **Unchanged**: 121
-- **Deleted Pages**: 1
+- **Updated Pages**: 2
+- **Unchanged**: 120
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-web-pubsub/azure-web-pubsub.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 3 | 2.5% |
+| architecture-patterns | 3 | 2.4% |
 | best-practices | 1 | 0.8% |
-| configuration | 13 | 10.7% |
-| decision-making | 1 | 0.8% |
+| configuration | 13 | 10.6% |
+| decision-making | 2 | 1.6% |
 | deployment | 4 | 3.3% |
-| integrations | 28 | 23.0% |
+| integrations | 28 | 22.8% |
 | limits-quotas | 2 | 1.6% |
-| security | 28 | 23.0% |
+| security | 28 | 22.8% |
 | troubleshooting | 7 | 5.7% |
-| *(Unclassified)* | 35 | 28.7% |
+| *(Unclassified)* | 35 | 28.5% |
 
 ## Changes
 
 ### New Pages
 
-- [Use playground to explore](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/quickstarts-playground)
+- [Choose Web PubSub capability](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/choose-web-pubsub-capability)
 
-### Deleted Pages
+### Updated Pages
 
-- ~~Use LiveTry to explore~~ (https://learn.microsoft.com/en-us/azure/azure-web-pubsub/quickstarts-livetry)
+- [Disaster recovery](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/concept-disaster-recovery)
+  - Updated: 2023-08-23T11:20:00.000Z → 2026-08-06T05:14:00.000Z
+- [About Web PubSub](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/overview)
+  - Updated: 2025-05-28T05:33:00.000Z → 2026-08-06T11:41:00.000Z
 
 ## Classified Pages
 
@@ -130,8 +134,10 @@ confusable_not_for: Not for Azure SignalR Service (use azure-signalr-service), A
 | [Azure Application Gateway](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-integrate-app-gateway) | security | 0.70 | Shows how to front Web PubSub with Application Gateway; likely includes listener, backend pool, and routing configuration specific to WebSocket/Web PubSub, which are product-specific integration/security settings. |
 | [Azure policy definitions](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/policy-definitions) | security | 0.70 | Lists built-in Azure Policy definitions for Web PubSub, including policy names and effects that control security/compliance posture for the service. |
 | [Billing model](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/concept-billing-model) | decision-making | 0.70 | Billing model article defines how units and outbound messages are counted; this supports cost/performance trade-off decisions and likely includes concrete pricing-related thresholds. |
+| [Choose Web PubSub capability](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/choose-web-pubsub-capability) | decision-making | 0.70 | Compares base Web PubSub, Socket.IO, MQTT, and chat capabilities to guide choice for different application scenarios. While summary is high-level, this type of page typically includes comparison criteria and guidance on when to choose each option, which fits the decision-making sub-skill. |
 | [Collect logs](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/socketio-troubleshoot-logging) | troubleshooting | 0.70 | Explains how to collect server and client logs when using Web PubSub for Socket.IO; includes product-specific logging configuration and locations. |
 | [Configure storage and enable Chat](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/chat-howto-enable-chat) | configuration | 0.70 | How-to for attaching Azure Storage and enabling the chat feature on a hub; likely includes specific configuration parameters (storage connection, hub settings) and feature toggles that are product-specific and not just generic tutorial content. |
+| [Disaster recovery](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/concept-disaster-recovery) | architecture-patterns | 0.70 | The page describes specific disaster recovery approaches and resiliency patterns for Azure Web PubSub, including how to set up and coordinate multiple service instances across regions. This is product-specific architecture guidance on when and how to use particular patterns for regional failover, which goes beyond generic concepts. |
 | [Easily migrate a self-hosted Socket.IO app](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/socketio-migrate-from-self-hosted) | deployment | 0.70 | Migration guide; contains product-specific steps, constraints, and possibly configuration changes required to move from self-hosted to managed service. |
 | [Generate client access URL](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-generate-client-access-url) | configuration | 0.70 | Describes the exact URL pattern and multiple ways to generate client access URLs for Azure Web PubSub clients, which typically involves specific parameter names, formats, and configuration details, aligning with configuration-focused expert knowledge. |
 | [Geo-replication](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-enable-geo-replication) | configuration | 0.70 | Describes enabling geo-replication via portal with service-specific options and behavior; this is concrete configuration of a specialized feature. |
@@ -149,7 +155,6 @@ confusable_not_for: Not for Azure SignalR Service (use azure-signalr-service), A
 | [Wildcard group role patterns](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/concept-wildcard-group-roles) | security | 0.70 | Describes wildcard group role patterns for client authorization, which is product-specific security/authorization configuration. Likely includes concrete role string formats and pattern syntax unique to Azure Web PubSub. |
 | [Write an upstream server](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-web-pubsub-write-upstream-server) | integrations | 0.70 | Shows complete implementations in multiple languages and explains how the service calls upstream handlers; includes product-specific request formats and handler patterns. |
 | [Admin UI](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/socketio-troubleshoot-admin-ui) | configuration | 0.68 | Describes Azure-customized Admin UI; likely includes configuration options and behaviors specific to the Azure-hosted version. |
-| [Disaster recovery](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/concept-disaster-recovery) | architecture-patterns | 0.68 | The page goes beyond conceptual DR to recommend specific multi-instance patterns for Azure Web PubSub, including when to use each approach for regional outages. It provides product-specific architectural guidance for resiliency and disaster recovery rather than generic theory, fitting the architecture-patterns sub-skill. |
 | [Authentication and permissions](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/tutorial-permission) | security | 0.65 | Walkthrough for adding authentication and permissions, including negotiate API behavior and access token usage; contains product-specific security patterns and configuration steps. |
 | [Autoscale](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-scale-autoscale) | deployment | 0.65 | Autoscale configuration usually includes tier-specific availability, metric names, and scale rules/constraints; these are product-specific deployment/runtime behaviors not generally known. |
 | [Configure event handler](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-develop-eventhandler) | configuration | 0.65 | Details how to register and configure event handlers, including webhook-style integration; product-specific configuration behavior. |
@@ -207,8 +212,8 @@ confusable_not_for: Not for Azure SignalR Service (use azure-signalr-service), A
 | [Publish and subscribe messages](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/tutorial-pub-sub-messages) | 0.20 | Tutorial combining WebSocket API and SDK; step-by-step app build, not configuration or limits reference. |
 | [Push message from server](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/quickstarts-push-messages-from-server) | 0.20 | Tutorial on pushing messages from server; focuses on pattern demonstration, not detailed product-specific configs. |
 | [Use playground to explore](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/quickstarts-playground) | 0.20 | Quickstart/tutorial for using the Azure Web PubSub playground; focuses on trying capabilities without code and explaining concepts like connections, groups, and messages. It does not present numeric limits, configuration parameter tables, error-code-based troubleshooting, or other product-specific expert details. |
-| [About Web PubSub](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/overview) | 0.10 | High-level overview and use cases for Azure Web PubSub without concrete limits, configs, or error details. |
 | [App scenarios](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/samples-app-scenarios) | 0.10 | Index of sample app scenarios; no indication of detailed limits, configs, or error mappings—primarily navigation/overview. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/chat-overview) | 0.10 | High-level overview of Web PubSub chat; no numeric limits, configuration tables, or detailed patterns beyond what an LLM likely knows. |
 | [Platform and frameworks](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/samples-platforms-and-frameworks) | 0.10 | Index of samples by platforms/frameworks; appears to be a listing page without deep configuration or troubleshooting content. |
 | [What's new](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/whats-new) | 0.10 | What's new/change log page with recent updates; description indicates high-level update summaries without detailed limits, configuration tables, error codes, or decision matrices. |
+| [About Web PubSub](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/overview) | - | High-level overview of Azure Web PubSub use cases and benefits without specific limits, configurations, error codes, or decision matrices. |

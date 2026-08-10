@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-02'
+generated_at: '2026-08-09'
 category_descriptions:
   architecture-patterns: 'Architectural patterns for Azure Front Door: apex domain
     setup, blue/green deployments, manual failover with Traffic Manager, static blob
@@ -19,9 +19,9 @@ category_descriptions:
   configuration: 'Configuring Azure Front Door behavior: CORS, HTTPS, headers, HTTP/2,
     rules (rewrite, caching, compression), origins, Private Link integrations, metrics/logs,
     and mapping classic to Standard/Premium.'
-  security: 'Configuring Azure Front Door security: TLS/cipher settings, custom certificates,
-    security headers, origin protection (Private Link, auth, direct access), and log
-    scrubbing/sensitive data protection.'
+  security: Configuring HTTPS/TLS, cipher suites, security headers, origin protection
+    (auth, Private Link), and log scrubbing/sensitive data controls for securing Azure
+    Front Door.
   limits-quotas: POP locations/abbreviations, regional Front Door presence, supported
     TLS versions/ciphers, routing composite limits, and bandwidth throttling behavior
     per subscription.
@@ -31,14 +31,13 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Front Door development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  configuring apex domains, rules engine, caching/streaming, WAF/TLS, or migrating
-  Classic to Standard/Premium, and other Azure Front Door related development tasks.
-  Not for Azure Application Gateway (use azure-application-gateway), Azure Load Balancer
-  (use azure-load-balancer), Azure Traffic Manager (use azure-traffic-manager), Azure
-  Web Application Firewall (use azure-web-application-firewall).
-use_when: Use when configuring apex domains, rules engine, caching/streaming, WAF/TLS,
-  or migrating Classic to Standard/Premium, and other Azure Front Door related development
-  tasks.
+  configuring apex domains, rules engine, caching/streaming, HTTPS/TLS, or JavaScript
+  edge logic, and other Azure Front Door related development tasks. Not for Azure
+  Application Gateway (use azure-application-gateway), Azure Load Balancer (use azure-load-balancer),
+  Azure Traffic Manager (use azure-traffic-manager), Azure Web Application Firewall
+  (use azure-web-application-firewall).
+use_when: Use when configuring apex domains, rules engine, caching/streaming, HTTPS/TLS,
+  or JavaScript edge logic, and other Azure Front Door related development tasks.
 confusable_not_for: Not for Azure Application Gateway (use azure-application-gateway),
   Azure Load Balancer (use azure-load-balancer), Azure Traffic Manager (use azure-traffic-manager),
   Azure Web Application Firewall (use azure-web-application-firewall).
@@ -54,10 +53,10 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 - **Unclassified**: 37
 
 ### Incremental Update
-- **New Pages**: 3
-- **Updated Pages**: 10
-- **Unchanged**: 88
-- **Deleted Pages**: 3
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 100
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-front-door/azure-front-door.csv`
 
 ## Classification Statistics
@@ -77,40 +76,10 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 
 ## Changes
 
-### New Pages
-
-- [Add a root or apex domain](https://learn.microsoft.com/en-us/azure/frontdoor/apex-domain-onboard)
-- [Cross-Origin Resource Sharing (CORS)](https://learn.microsoft.com/en-us/azure/frontdoor/cross-origin-resource-sharing)
-- [Migration FAQ](https://learn.microsoft.com/en-us/azure/frontdoor/migration-faq)
-
 ### Updated Pages
 
-- [Configure HTTPS on a custom domain](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-custom-domain-https)
-  - Updated: 2026-05-05T11:09:00.000Z → 2026-07-30T22:15:00.000Z
-- [Front Door best practices](https://learn.microsoft.com/en-us/azure/frontdoor/best-practices)
-  - Updated: 2026-03-28T06:12:00.000Z → 2026-07-29T18:02:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-faq)
-  - Updated: 2026-07-18T02:31:00.000Z → 2026-07-27T22:17:00.000Z
 - [Add origin authentication](https://learn.microsoft.com/en-us/azure/frontdoor/origin-authentication-with-managed-identities)
-  - Updated: 2025-12-23T18:13:00.000Z → 2026-08-01T05:13:00.000Z
-- [Classic to Standard/Premium migration](https://learn.microsoft.com/en-us/azure/frontdoor/tier-migration)
-  - Updated: 2025-10-02T17:11:00.000Z → 2026-08-01T05:13:00.000Z
-- [Post migration Dev-Ops experience](https://learn.microsoft.com/en-us/azure/frontdoor/post-migration-dev-ops-experience)
-  - Updated: 2025-08-07T11:10:00.000Z → 2026-07-27T22:17:00.000Z
-- [Front Door (classic) retirement FAQ](https://learn.microsoft.com/en-us/azure/frontdoor/classic-retirement-faq)
-  - Updated: 2026-05-05T11:09:00.000Z → 2026-07-27T22:17:00.000Z
-- [End-to-end TLS encryption](https://learn.microsoft.com/en-us/azure/frontdoor/end-to-end-tls)
-  - Updated: 2026-01-08T06:12:00.000Z → 2026-08-01T05:13:00.000Z
-- [Front Door TLS policy](https://learn.microsoft.com/en-us/azure/frontdoor/standard-premium/tls-policy)
-  - Updated: 2026-05-13T11:10:00.000Z → 2026-08-01T05:13:00.000Z
-- [Edge actions](https://learn.microsoft.com/en-us/azure/frontdoor/edge-actions)
-  - Updated: 2026-07-24T17:11:00.000Z → 2026-07-27T08:00:00.000Z
-
-### Deleted Pages
-
-- ~~Add a root or apex domain~~ (https://learn.microsoft.com/en-us/azure/frontdoor/front-door-how-to-onboard-apex-domain)
-- ~~AFD/CDN Classic migration FAQ~~ (https://learn.microsoft.com/en-us/azure/frontdoor/migration-faq)
-- ~~Cross-Origin Resource Sharing (CORS)~~ (https://learn.microsoft.com/en-us/azure/frontdoor/standard-premium/troubleshoot-cross-origin-resources)
+  - Updated: 2026-08-01T05:13:00.000Z → 2026-08-03T17:13:00.000Z
 
 ## Classified Pages
 
@@ -123,6 +92,7 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Front Door TLS policy](https://learn.microsoft.com/en-us/azure/frontdoor/standard-premium/tls-policy) | security | 0.80 | TLS policy configuration for Front Door Standard/Premium, including supported TLS versions, cipher suite control, and explicit note that mTLS isn't supported. Contains product-specific security configuration options and constraints, fitting the security category. |
 | [POP locations by region](https://learn.microsoft.com/en-us/azure/frontdoor/edge-locations-by-region) | limits-quotas | 0.80 | Lists exact numbers of POPs and metro cities, plus detailed location list; these are concrete, changing numeric and enumerated limits of the edge network footprint. |
 | [Server variables](https://learn.microsoft.com/en-us/azure/frontdoor/rule-set-server-variables) | configuration | 0.80 | Reference list of server variables and how they can be used in match conditions and actions; product-specific configuration surface. |
+| [Add origin authentication](https://learn.microsoft.com/en-us/azure/frontdoor/origin-authentication-with-managed-identities) | security | 0.78 | The page describes product-specific security configuration for Azure Front Door using Microsoft Entra managed identities, including supported scopes and required origin permissions. It focuses on how to securely authenticate to origins with specific identity and permission settings, which is expert, configuration-level security guidance rather than a generic overview. |
 | [Classic to Standard/Premium mapping](https://learn.microsoft.com/en-us/azure/frontdoor/tier-mapping) | configuration | 0.78 | Migration-focused mapping of classic to Standard/Premium settings is highly product-specific configuration knowledge. These mappings (which setting moved where, renamed options, and how to configure equivalents) are not generic concepts and function as a parameter/setting crosswalk unique to Azure Front Door tiers. |
 | [Front Door and CDN comparison](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-cdn-comparison) | decision-making | 0.78 | Comparison page between Azure Front Door and Azure CDN service tiers that helps users decide which service/tier to use; such pages typically include feature comparison tables, tier-specific capabilities, and scenario-based recommendations, which constitute product-specific decision guidance beyond generic knowledge. |
 | [Front Door best practices](https://learn.microsoft.com/en-us/azure/frontdoor/best-practices) | best-practices | 0.78 | The page is explicitly a best practices guide for Azure Front Door, covering concrete, product-specific recommendations around TLS, domain management, WAF, health probes, and routing. These are actionable DO/DON'T patterns tied to this service’s behavior rather than generic theory, so it fits the best-practices sub-skill. |
@@ -132,7 +102,6 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Secure traffic to origins](https://learn.microsoft.com/en-us/azure/frontdoor/origin-security) | security | 0.74 | The article describes product-specific origin security configuration so that only Azure Front Door can reach origins. It typically includes concrete settings such as required headers, firewall rules, and possibly IP/Private Link configuration patterns unique to Front Door, which fits the security category. |
 | [Set up managed identity](https://learn.microsoft.com/en-us/azure/frontdoor/managed-identity) | security | 0.72 | Shows how Front Door uses managed identities to access Key Vault certificates, including required permissions and configuration steps. |
 | [Front Door sensitive data protection](https://learn.microsoft.com/en-us/azure/frontdoor/standard-premium/sensitive-data-protection) | security | 0.71 | Explains log scrubbing behavior, supported fields, and scope; product-specific security/privacy configuration. |
-| [Add origin authentication](https://learn.microsoft.com/en-us/azure/frontdoor/origin-authentication-with-managed-identities) | security | 0.70 | How-to configuration article for using managed identities from Front Door to authenticate to origins. Likely includes specific Entra ID roles/permissions, resource scope details, and product-specific configuration steps/parameters, which qualify as security-focused expert knowledge. |
 | [Add origins to origin group](https://learn.microsoft.com/en-us/azure/frontdoor/how-to-configure-origin) | configuration | 0.70 | How-to for configuring origins and origin groups; includes product-specific settings such as hostnames, ports, and priority/weight behavior. |
 | [Add security headers with Rules engine](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-security-headers) | security | 0.70 | Shows how to configure specific security headers (HSTS, X-XSS-Protection, etc.) via Rules Engine; includes concrete header names, values, and Front Door rule configuration details that are product-specific security patterns. |
 | [Azure Storage blobs](https://learn.microsoft.com/en-us/azure/frontdoor/scenario-storage-blobs) | architecture-patterns | 0.70 | Scenario article for using Front Door with Storage blobs; describes a specific architecture pattern and when to use it for website hosting and file delivery. |

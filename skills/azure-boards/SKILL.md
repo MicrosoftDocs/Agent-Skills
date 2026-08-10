@@ -1,9 +1,9 @@
 ---
 name: azure-boards
-description: Expert knowledge for Azure Boards development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when managing work items, WIQL queries, Excel/Office sync, GitHub/Teams integrations, or process templates, and other Azure Boards related development tasks. Not for Azure DevOps (use azure-devops), Azure Test Plans (use azure-test-plans), Azure Pipelines (use azure-pipelines), Azure Repos (use azure-repos).
+description: Expert knowledge for Azure Boards development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when managing work items, queries, Excel/Office integration, GitHub/Teams links, or Boards security, and other Azure Boards related development tasks. Not for Azure DevOps (use azure-devops), Azure Pipelines (use azure-pipelines), Azure Repos (use azure-repos), Azure Test Plans (use azure-test-plans).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-26"
+  generated_at: "2026-08-09"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Boards Skill
@@ -30,7 +30,7 @@ This skill requires **network access** to fetch documentation content:
 | Limits & Quotas | L62-L66 | Managing limits, quotas, and recovery for Azure Boards test artifacts and work item attachments, including deletion, restoration, size/count constraints, and best practices. |
 | Security | L67-L73 | Managing Azure Boards security: default permissions, configuring query/folder access, and setting access controls and policies for teams and users. |
 | Configuration | L74-L84 | Configuring Azure Boards: work item fields and processes (Agile/Scrum/CMMI), bug/risk tracking, code review/feedback fields, query fields/macros, charts, and GitHub Enterprise integration. |
-| Integrations & Coding Patterns | L85-L95 | Connecting Azure Boards to Excel, GitHub, GitHub Copilot, Slack, and Teams, plus using WIQL to query and bulk-edit work items and surface status in external tools. |
+| Integrations & Coding Patterns | L85-L95 | Connecting Azure Boards to Excel, GitHub, Copilot, Slack, Teams, and using WIQL—covering bulk edits, status badges, artifact linking, and collaboration/work item query patterns. |
 
 ### Troubleshooting
 | Topic | URL |

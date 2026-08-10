@@ -1,9 +1,9 @@
 ---
 name: azure-cyclecloud
-description: Expert knowledge for Azure CycleCloud development including troubleshooting, best practices, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when automating CycleCloud via API/CLI/SDK, configuring Slurm clusters, using Spot VMs, securing access, or tuning HB/HC HPC workloads, and other Azure CycleCloud related development tasks. Not for Azure Batch (use azure-batch), Azure HPC Cache (use azure-hpc-cache), Azure Virtual Machines (use azure-virtual-machines), Azure Kubernetes Service (AKS) (use azure-kubernetes-service).
+description: Expert knowledge for Azure CycleCloud development including troubleshooting, best practices, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when building Azure CycleCloud Slurm/PBS clusters, BlobFuse2 storage, Event Grid alerts, HB/HC tuning, or Spot VMs, and other Azure CycleCloud related development tasks. Not for Azure Batch (use azure-batch), Azure HDInsight (use azure-hdinsight), Azure Databricks (use azure-databricks), Azure Virtual Machines (use azure-virtual-machines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-02"
+  generated_at: "2026-08-09"
   generator: "docs2skills/1.0.0"
 ---
 # Azure CycleCloud Skill
@@ -26,12 +26,12 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L36-L43 | Diagnosing and fixing CycleCloud errors, unhealthy VMs, and cluster/node startup issues, plus finding and using diagnostic logs for deeper troubleshooting. |
 | Best Practices | L44-L48 | Tuning CycleCloud clusters on HB/HC series: VM sizing, network and storage optimization, MPI/HPC performance tweaks, and cost/performance best practices. |
-| Decision Making | L49-L58 | Guidance on planning and sizing CycleCloud HPC clusters, Slurm workspaces, migration from v7, using Spot VMs, licensing/usage terms, and servicing/support policies. |
+| Decision Making | L49-L58 | Guidance on sizing and planning CycleCloud HPC/Slurm deployments, migration from v7, Spot VM usage, licensing terms, and support/servicing policies. |
 | Architecture & Design Patterns | L59-L64 | Designing resilient multi‑region CycleCloud HPC clusters and choosing VM placement strategies (single-zone, multi-zone, regional) for performance, availability, and cost optimization. |
 | Security | L65-L79 | Securing CycleCloud: auth (Entra, service principals, managed identities), SSL, SSH/Bastion access, SELinux, telemetry/data usage, and portal/cluster user authentication setup. |
 | Configuration | L80-L128 | Designing and configuring CycleCloud clusters: templates, nodes, networking, storage, autoscaling, images, events, monitoring, proxies, security, and deployment/CLI setup. |
-| Integrations & Coding Patterns | L129-L148 | APIs, CLI, and Python SDK for automating CycleCloud, plus configuring and integrating schedulers (Slurm, Grid Engine, HTCondor, LSF, OpenPBS, HPC Pack), monitoring, and Event Grid. |
-| Deployment | L149-L158 | Deploying and operating CycleCloud: installing via ARM/CLI/ACI, planning production setups, importing templates, moving cluster resources, and safely upgrading or migrating installations. |
+| Integrations & Coding Patterns | L129-L149 | Integrating CycleCloud with schedulers, APIs, storage, monitoring, and automation tools (Slurm, PBS, HTCondor, REST/CLI/Python, BlobFuse2, Event Grid, Prometheus/Grafana, Chef). |
+| Deployment | L150-L159 | Deploying and operating CycleCloud: installing via ARM/CLI/ACI, planning production setups, importing templates, moving cluster resources, and safely upgrading or migrating installations. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -137,6 +137,7 @@ This skill requires **network access** to fetch documentation content:
 | Submit and manage Slurm jobs on Azure CycleCloud | https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/ccws/submit-job-with-slurm?view=cyclecloud-8 |
 | Integrate Azure CycleCloud events with Event Grid | https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/event-grid?view=cyclecloud-8 |
 | Integrate Prometheus and Azure Managed Grafana with CycleCloud clusters | https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/monitor-cyclecloud-cluster-using-prometheus-grafana?view=cyclecloud-8 |
+| Mount Azure Blob Storage on CycleCloud nodes with BlobFuse2 | https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/mount-blob-storage?view=cyclecloud-8 |
 | Use the Azure CycleCloud REST API for automated cluster management | https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/use-rest-api?view=cyclecloud-8 |
 | Configure Microsoft HPC Pack with CycleCloud | https://learn.microsoft.com/en-us/azure/cyclecloud/hpcpack?view=cyclecloud-8 |
 | Integrate HTCondor scheduler with CycleCloud | https://learn.microsoft.com/en-us/azure/cyclecloud/htcondor?view=cyclecloud-8 |

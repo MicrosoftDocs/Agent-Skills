@@ -1,9 +1,9 @@
 ---
 name: azure-resource-manager
-description: Expert knowledge for Azure Resource Manager development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when authoring Bicep/ARM templates, using CLI/PowerShell/SDKs, Key Vault, stacks/registries, or multi-scope deployments, and other Azure Resource Manager related development tasks. Not for Azure Blueprints (use azure-blueprints), Azure Policy (use azure-policy), Azure Resource Graph (use azure-resource-graph), Azure Portal (use azure-portal).
+description: Expert knowledge for Azure Resource Manager development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when authoring Bicep/ARM templates, using CLI/PowerShell/REST, Key Vault, AKS, or ARM deployment stacks, and other Azure Resource Manager related development tasks. Not for Azure Policy (use azure-policy), Azure Resource Graph (use azure-resource-graph), Azure Portal (use azure-portal), Azure Networking (use azure-networking).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-02"
+  generated_at: "2026-08-09"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Resource Manager Skill
@@ -28,9 +28,9 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L136-L182 | Bicep/ARM template authoring and linting best practices: naming, locations, dependencies, unused code, safe patterns, testing with ARM toolkit, and resilient tagging/custom endpoints. |
 | Decision Making | L183-L196 | Guidance on migration and relocation decisions: moving from classic/ASM to ARM/Bicep, blueprint-to-stack migration, regional move planning, resource move/tag support, and relocation strategies. |
 | Architecture & Design Patterns | L197-L204 | Bicep architecture patterns for reusable configs, flexible parameters, deterministic name generation, and sharing variables across templates for scalable ARM deployments. |
-| Limits & Quotas | L205-L234 | ARM/Bicep limits, quotas, and constraints: subscription/RG caps, template size and history limits, naming/tag rules, throttling, and how to diagnose and fix quota-related deployment errors. |
+| Limits & Quotas | L205-L234 | Limits, quotas, and constraints for ARM/Bicep deployments: resource counts, parameters/outputs, naming/tag rules, throttling, subscription/RG limits, history cleanup, and quota error troubleshooting. |
 | Security | L235-L264 | Securing ARM/Bicep deployments: cross-tenant auth, private endpoints/VNETs, secrets handling (Key Vault, secure params), RBAC/locks, policy/regulatory mapping, and TLS/network hardening. |
-| Configuration | L265-L320 | Configuring ARM and Bicep deployments: linter and env setup, parameters, scopes, dependencies, tags, custom providers, monitoring, policy/governance, portal Form view UI, and preview/feature management. |
+| Configuration | L265-L320 | Configuring ARM and Bicep: template structure, parameters, scopes, tags, policies, custom providers, UI Form view, monitoring, async ops, and deployment/dev environment settings. |
 | Integrations & Coding Patterns | L321-L382 | Bicep and ARM template functions, operators, and patterns; integrating with CLI/PowerShell/SDKs/REST, using Key Vault, AKS, custom providers, and programmatic resource/tag management. |
 | Deployment | L383-L439 | Deploying and moving Azure resources with ARM/Bicep: scripts, stacks, registries, multi-scope deployments, CI/CD, and region/subscription relocation for many Azure services. |
 
@@ -216,7 +216,7 @@ This skill requires **network access** to fetch documentation content:
 | Use and constrain parameters in Bicep files | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/parameters |
 | Declare Bicep resources within file limits | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/resource-declaration |
 | Understand template spec limitations and workarounds | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/template-specs-known-issues |
-| Review Azure subscription and service limits and quotas | https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/azure-subscription-service-limits |
+| Reference Azure subscription and service limits | https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/azure-subscription-service-limits |
 | Networking resource move limitations across subscriptions | https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-limitations/networking-move-limitations |
 | Handle Azure Resource Manager request throttling limits | https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/request-limits-and-throttling |
 | Apply Azure resource naming rules and restrictions | https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/resource-name-rules |
@@ -279,7 +279,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure resource dependencies in Bicep deployments | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/resource-dependencies |
 | Define Azure monitoring resources using Bicep | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/scenarios-monitoring |
 | Configure Azure virtual networks using Bicep | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/scenarios-virtual-networks |
-| Set scope for extension resources in Bicep | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/scope-extension-resources |
+| Configure scope for Bicep extension resources | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/scope-extension-resources |
 | Create and use user-defined functions in Bicep | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/user-defined-functions |
 | Use built-in Azure Policy definitions for custom providers | https://learn.microsoft.com/en-us/azure/azure-resource-manager/custom-providers/policy-reference |
 | Configure cache custom resources for Azure Custom Providers | https://learn.microsoft.com/en-us/azure/azure-resource-manager/custom-providers/proxy-cache-resource-endpoint-reference |

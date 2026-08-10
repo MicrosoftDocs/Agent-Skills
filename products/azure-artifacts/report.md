@@ -43,8 +43,8 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 11
-- **Unchanged**: 62
+- **Updated Pages**: 0
+- **Unchanged**: 73
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-artifacts/azure-artifacts.csv`
 
@@ -62,31 +62,6 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 | *(Unclassified)* | 20 | 27.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [Use upstream sources with public feeds](https://learn.microsoft.com/en-us/azure/devops/artifacts/how-to/public-feeds-upstream-sources?view=azure-devops)
-  - Updated: 2026-05-05T21:06:00.000Z → 2026-07-30T22:05:00.000Z
-- [NuGet](https://learn.microsoft.com/en-us/azure/devops/artifacts/get-started-nuget?view=azure-devops)
-  - Updated: 2026-05-12T17:04:00.000Z → 2026-07-22T08:00:00.000Z
-- [What is Azure Artifacts?](https://learn.microsoft.com/en-us/azure/devops/artifacts/start-using-azure-artifacts?view=azure-devops)
-  - Updated: 2025-09-22T18:33:00.000Z → 2026-07-22T08:00:00.000Z
-- [Publish your first package](https://learn.microsoft.com/en-us/azure/devops/artifacts/get-started-artifacts-ai?view=azure-devops)
-  - Updated: 2026-05-12T17:04:00.000Z → 2026-07-22T08:00:00.000Z
-- [What are feeds?](https://learn.microsoft.com/en-us/azure/devops/artifacts/concepts/feeds?view=azure-devops)
-  - Updated: 2025-12-06T02:05:00.000Z → 2026-07-30T22:05:00.000Z
-- [Feed scopes](https://learn.microsoft.com/en-us/azure/devops/artifacts/feeds/project-scoped-feeds?view=azure-devops)
-  - Updated: 2025-10-30T14:05:00.000Z → 2026-07-30T22:05:00.000Z
-- [Share packages publicly](https://learn.microsoft.com/en-us/azure/devops/artifacts/tutorials/share-packages-publicly?view=azure-devops)
-  - Updated: 2026-05-01T01:05:00.000Z → 2026-07-30T22:05:00.000Z
-- [What are feed views?](https://learn.microsoft.com/en-us/azure/devops/artifacts/concepts/views?view=azure-devops)
-  - Updated: 2025-12-15T18:05:00.000Z → 2026-07-30T22:05:00.000Z
-- [Promote packages and manage views](https://learn.microsoft.com/en-us/azure/devops/artifacts/feeds/views?view=azure-devops)
-  - Updated: 2026-01-23T23:36:00.000Z → 2026-07-30T22:05:00.000Z
-- [Project setup (dotnet)](https://learn.microsoft.com/en-us/azure/devops/artifacts/nuget/dotnet-setup?view=azure-devops)
-  - Updated: 2026-05-12T17:04:00.000Z → 2026-07-22T08:00:00.000Z
-- [Project setup (NuGet.exe)](https://learn.microsoft.com/en-us/azure/devops/artifacts/nuget/nuget-exe?view=azure-devops)
-  - Updated: 2026-07-11T01:04:00.000Z → 2026-07-22T08:00:00.000Z
 
 ## Classified Pages
 

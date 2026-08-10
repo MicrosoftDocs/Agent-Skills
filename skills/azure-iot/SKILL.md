@@ -3,7 +3,7 @@ name: azure-iot
 description: Expert knowledge for Azure IoT development including decision making, architecture & design patterns, and configuration. Use when managing Azure Device Registry X.509 PKI, ADR policies, IoT Hub cert revocation, or device schema namespaces, and other Azure IoT related development tasks. Not for Azure IoT Central (use azure-iot-central), Azure IoT Edge (use azure-iot-edge), Azure IoT Hub (use azure-iot-hub), Azure Defender For Iot (use azure-defender-for-iot).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-02"
+  generated_at: "2026-08-09"
   generator: "docs2skills/1.0.0"
 ---
 # Azure IoT Skill

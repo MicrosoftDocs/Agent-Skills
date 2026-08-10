@@ -1,9 +1,8 @@
 ---
-generated_at: '2026-08-02'
+generated_at: '2026-08-09'
 category_descriptions:
   decision-making: Guidance on choosing Azure Firewall SKUs (Basic/Standard/Premium),
-    comparing features and throughput, and planning or changing deployments based
-    on performance and requirements.
+    comparing features and performance, and deploying or switching SKUs based on requirements.
   security: 'Azure Firewall security setup: compliance, RBAC/permissions, Azure Policy,
     TLS inspection and CA chains, threat intel, DNAT, AKS and hybrid network protection,
     and portal deployment.'
@@ -29,17 +28,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Firewall development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  configuring TLS inspection, DNAT/SNAT rules, DNS proxy, hub-and-spoke routing, or
-  Premium firewall deployments, and other Azure Firewall related development tasks.
-  Not for Azure Firewall Manager (use azure-firewall-manager), Azure Virtual Network
-  (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan), Azure Web
-  Application Firewall (use azure-web-application-firewall).
-use_when: Use when configuring TLS inspection, DNAT/SNAT rules, DNS proxy, hub-and-spoke
-  routing, or Premium firewall deployments, and other Azure Firewall related development
-  tasks.
-confusable_not_for: Not for Azure Firewall Manager (use azure-firewall-manager), Azure
-  Virtual Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan),
-  Azure Web Application Firewall (use azure-web-application-firewall).
+  configuring TLS inspection, DNAT/SNAT, DNS proxy, hub-spoke routing, or SFTP to
+  Azure Storage, and other Azure Firewall related development tasks. Not for Azure
+  DDoS Protection (use azure-ddos-protection), Azure Web Application Firewall (use
+  azure-web-application-firewall), Azure Virtual Network (use azure-virtual-network),
+  Azure Virtual Network Manager (use azure-virtual-network-manager).
+use_when: Use when configuring TLS inspection, DNAT/SNAT, DNS proxy, hub-spoke routing,
+  or SFTP to Azure Storage, and other Azure Firewall related development tasks.
+confusable_not_for: Not for Azure DDoS Protection (use azure-ddos-protection), Azure
+  Web Application Firewall (use azure-web-application-firewall), Azure Virtual Network
+  (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager).
 ---
 # Azure Firewall Crawl Report
 
@@ -53,8 +51,8 @@ confusable_not_for: Not for Azure Firewall Manager (use azure-firewall-manager),
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 85
+- **Updated Pages**: 1
+- **Unchanged**: 86
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-firewall/azure-firewall.csv`
 
@@ -77,10 +75,8 @@ confusable_not_for: Not for Azure Firewall Manager (use azure-firewall-manager),
 
 ### Updated Pages
 
-- [Policy Analytics](https://learn.microsoft.com/en-us/azure/firewall/policy-analytics)
-  - Updated: 2026-03-29T11:12:00.000Z → 2026-07-29T05:11:00.000Z
-- [Explicit Proxy](https://learn.microsoft.com/en-us/azure/firewall/explicit-proxy)
-  - Updated: 2026-03-29T11:12:00.000Z → 2026-07-31T11:41:00.000Z
+- [Performance](https://learn.microsoft.com/en-us/azure/firewall/firewall-performance)
+  - Updated: 2026-03-29T11:12:00.000Z → 2026-08-04T05:12:00.000Z
 
 ## Classified Pages
 
@@ -96,6 +92,7 @@ confusable_not_for: Not for Azure Firewall Manager (use azure-firewall-manager),
 | [Secure firewall deployment](https://learn.microsoft.com/en-us/azure/firewall/secure-firewall) | best-practices | 0.80 | Explicitly a best-practices article for securing Azure Firewall, likely including concrete recommendations and configurations for network, data, logging, and threat detection. |
 | [Choose the right SKU](https://learn.microsoft.com/en-us/azure/firewall/choose-firewall-sku) | decision-making | 0.78 | The page is a comparison guide between Azure Firewall Basic, Standard, and Premium SKUs to help users choose based on requirements. Such SKU selection content typically includes feature comparison tables and scenario-based recommendations (e.g., which SKU for specific security or performance needs), which fits the decision-making sub-skill. It goes beyond a generic overview by guiding SKU choice, even though the summary snippet doesn’t expose all details. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/firewall/firewall-faq) | limits-quotas | 0.78 | FAQ includes product-specific numeric limits (for example, maximum number of IP groups, rules, and collections), timeout and throughput characteristics, and other concrete behavioral details that are not generic networking knowledge. These are expressed as exact values and constraints, fitting the limits-quotas category better than others. |
+| [Performance](https://learn.microsoft.com/en-us/azure/firewall/firewall-performance) | decision-making | 0.78 | The page provides SKU-specific performance and throughput benchmarks for Azure Firewall Basic, Standard, and Premium across different use cases. These quantified metrics (throughput, performance data per SKU/use case) are used to guide selection between tiers, which aligns with decision-making. It goes beyond a conceptual overview by giving concrete performance data that helps users decide which SKU to use for their scenario. |
 | [TCP idle timeout behavior](https://learn.microsoft.com/en-us/azure/firewall/tcp-session-behavior) | limits-quotas | 0.78 | The page describes Azure Firewall TCP session management with specific idle timeout values and behaviors for long-running sessions. These are product-specific timeout limits and behaviors that qualify as expert knowledge under limits-quotas. |
 | [Application rules with SQL FQDNs](https://learn.microsoft.com/en-us/azure/firewall/sql-fqdn-filtering) | configuration | 0.75 | Provides product-specific configuration details: SQL FQDN filtering supported only in proxy mode on port 1433, behavior in redirect mode, and handling non-default ports—these are concrete configuration behaviors unique to Azure Firewall. |
 | [Certificates](https://learn.microsoft.com/en-us/azure/firewall/premium-certificates) | security | 0.75 | Details requirement for valid intermediate CA certificates and use of Azure Key Vault for TLS inspection; these are product-specific security configuration steps. |
@@ -121,7 +118,6 @@ confusable_not_for: Not for Azure Firewall Manager (use azure-firewall-manager),
 | [Monitoring Azure Firewall reference](https://learn.microsoft.com/en-us/azure/firewall/monitor-firewall-reference) | configuration | 0.70 | A monitoring data reference for Azure Firewall typically lists specific log categories, metric names, dimensions, and schema fields used with Azure Monitor. These are product-specific configuration/telemetry parameters (for example, table names, property names, and meanings) that an LLM is unlikely to know precisely from training. This aligns best with configuration, as it documents concrete monitoring/diagnostic settings and data structures rather than conceptual monitoring guidance. |
 | [Overview](https://learn.microsoft.com/en-us/azure/firewall/dns-details) | best-practices | 0.70 | Describes implementation details like FQDN caching, TTL handling, and how DNS proxy affects rule filtering; these are nuanced, product-specific behaviors and gotchas that qualify as expert knowledge/best practices. |
 | [Overview](https://learn.microsoft.com/en-us/azure/firewall/ip-groups) | configuration | 0.70 | Explains how IP Groups behave (top-level resource, allowed contents, uniqueness of names) and where they can be used (DNAT, network, application rules); these are product-specific configuration semantics. |
-| [Performance](https://learn.microsoft.com/en-us/azure/firewall/firewall-performance) | decision-making | 0.70 | Provides performance data and throughput benchmarks for Basic, Standard, and Premium across use cases; supports SKU/tier selection and capacity planning with quantified trade-offs. |
 | [Prescaling](https://learn.microsoft.com/en-us/azure/firewall/prescaling) | limits-quotas | 0.70 | Prescaling involves setting minimum and maximum capacity units; this feature typically includes numeric ranges and constraints for capacity units, which are limit/quota-like expert details. |
 | [Protect Azure Kubernetes Service (AKS)](https://learn.microsoft.com/en-us/azure/firewall/protect-azure-kubernetes-service) | security | 0.70 | Shows how to secure AKS inbound/outbound traffic with Azure Firewall, including scenario-specific rule and routing configurations. |
 | [Routing in hub and spoke](https://learn.microsoft.com/en-us/azure/firewall/firewall-multi-hub-spoke) | architecture-patterns | 0.70 | Covers using Azure Firewall in self-managed multi-hub-and-spoke topologies; this is a concrete Azure networking architecture pattern. |

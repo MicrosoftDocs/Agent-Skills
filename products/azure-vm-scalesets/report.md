@@ -56,8 +56,8 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 92
+- **Updated Pages**: 0
+- **Unchanged**: 94
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-vm-scalesets/azure-vm-scalesets.csv`
 
@@ -77,13 +77,6 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | *(Unclassified)* | 19 | 20.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [Migrate from regional to zonal scale sets (Preview)](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/migrate-scale-set-flex-to-availability-zones)
-  - Updated: 2026-05-07T18:17:00.000Z → 2026-07-28T06:03:00.000Z
-- [Create with the Azure CLI](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/flexible-virtual-machine-scale-sets-cli)
-  - Updated: 2026-05-19T08:00:00.000Z → 2026-07-26T11:03:00.000Z
 
 ## Classified Pages
 

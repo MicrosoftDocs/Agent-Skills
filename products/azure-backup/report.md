@@ -53,8 +53,8 @@ confusable_not_for: Not for Azure Site Recovery (use azure-site-recovery), Azure
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 8
-- **Unchanged**: 399
+- **Updated Pages**: 0
+- **Unchanged**: 407
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-backup/azure-backup.csv`
 
@@ -74,25 +74,6 @@ confusable_not_for: Not for Azure Site Recovery (use azure-site-recovery), Azure
 | *(Unclassified)* | 155 | 38.1% |
 
 ## Changes
-
-### Updated Pages
-
-- [Restore Confidential VMs](https://learn.microsoft.com/en-us/azure/backup/confidential-vm-restore)
-  - Updated: 2026-02-04T06:14:00.000Z → 2026-07-26T11:40:00.000Z
-- [Agentless multi-disk crash-consistent VM backup](https://learn.microsoft.com/en-us/azure/backup/backup-azure-vms-agentless-multi-disk-crash-consistent-overview)
-  - Updated: 2025-07-28T11:16:00.000Z → 2026-07-30T11:56:00.000Z
-- [Back up Confidential VMs](https://learn.microsoft.com/en-us/azure/backup/confidential-vm-backup)
-  - Updated: 2026-02-06T06:10:00.000Z → 2026-07-26T11:40:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/backup/azure-elastic-san-backup-overview)
-  - Updated: 2025-11-10T18:13:00.000Z → 2026-02-10T08:00:00.000Z
-- [Unattended installation](https://learn.microsoft.com/en-us/azure/backup/backup-mabs-unattended-install)
-  - Updated: 2025-07-14T11:09:00.000Z → 2026-07-31T11:41:00.000Z
-- [Use DPM to back up a SharePoint farm](https://learn.microsoft.com/en-us/azure/backup/backup-azure-backup-sharepoint)
-  - Updated: 2025-07-15T08:00:00.000Z → 2026-07-31T11:41:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/backup/offline-backup-overview)
-  - Updated: 2025-07-02T08:00:00.000Z → 2026-07-30T11:56:00.000Z
-- [Manage](https://learn.microsoft.com/en-us/azure/backup/sap-hana-database-manage)
-  - Updated: 2026-03-06T08:00:00.000Z → 2026-07-29T08:00:00.000Z
 
 ## Classified Pages
 

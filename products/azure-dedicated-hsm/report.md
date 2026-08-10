@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-12'
+generated_at: '2026-08-09'
 category_descriptions:
   architecture-patterns: 'Guidance on designing Dedicated HSM deployments: sizing
     and topology, high availability and failover patterns, and secure networking (VNet,
@@ -7,6 +7,9 @@ category_descriptions:
   troubleshooting: Diagnosing and fixing Azure Dedicated HSM deployment, configuration,
     usage, and support issues, including common errors and steps to resolve failed
     or misconfigured HSM instances.
+  deployment: Guidance for migrating Azure Dedicated HSM deployments from ExpressRoute
+    Basic to Standard, including network changes, prerequisites, and step-by-step
+    migration process.
   decision-making: Guidance on Dedicated HSM retirement, choosing successors (Managed/Cloud
     HSM), and planning/migrating ExpressRoute IPs and HSM workloads to new SKUs or
     services.
@@ -14,17 +17,16 @@ category_descriptions:
     configurations, policies, and operational best practices for protecting keys and
     access.
 skill_description: Expert knowledge for Azure Dedicated HSM development including
-  troubleshooting, decision making, architecture & design patterns, and security.
-  Use when deploying Dedicated HSMs, configuring VNet/ExpressRoute, planning HA/failover,
-  or migrating to Managed HSM, and other Azure Dedicated HSM related development tasks.
-  Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Payment Hsm (use azure-payment-hsm),
-  Azure Key Vault (use azure-key-vault), Azure Confidential Computing (use azure-confidential-computing).
-use_when: Use when deploying Dedicated HSMs, configuring VNet/ExpressRoute, planning
-  HA/failover, or migrating to Managed HSM, and other Azure Dedicated HSM related
+  troubleshooting, decision making, architecture & design patterns, security, and
+  deployment. Use when sizing HSM clusters, configuring VNet/ExpressRoute, migrating
+  ER Basic→Standard, or planning HSM retirement, and other Azure Dedicated HSM related
+  development tasks. Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Key Vault
+  (use azure-key-vault), Azure Payment Hsm (use azure-payment-hsm).
+use_when: Use when sizing HSM clusters, configuring VNet/ExpressRoute, migrating ER
+  Basic→Standard, or planning HSM retirement, and other Azure Dedicated HSM related
   development tasks.
-confusable_not_for: Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Payment Hsm
-  (use azure-payment-hsm), Azure Key Vault (use azure-key-vault), Azure Confidential
-  Computing (use azure-confidential-computing).
+confusable_not_for: Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Key Vault
+  (use azure-key-vault), Azure Payment Hsm (use azure-payment-hsm).
 ---
 # Azure Dedicated HSM Crawl Report
 
@@ -37,10 +39,10 @@ confusable_not_for: Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Payment
 - **Unclassified**: 6
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
-- **Unchanged**: 16
-- **Deleted Pages**: 0
+- **Unchanged**: 15
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-dedicated-hsm/azure-dedicated-hsm.csv`
 
 ## Classification Statistics
@@ -48,12 +50,21 @@ confusable_not_for: Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Payment
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 3 | 18.8% |
-| decision-making | 3 | 18.8% |
+| decision-making | 2 | 12.5% |
+| deployment | 1 | 6.2% |
 | security | 2 | 12.5% |
 | troubleshooting | 2 | 12.5% |
 | *(Unclassified)* | 6 | 37.5% |
 
 ## Changes
+
+### New Pages
+
+- [Migrate Dedicated HSM from ExpressRoute Basic SKU](https://learn.microsoft.com/en-us/azure/dedicated-hsm/migration-basic-standard)
+
+### Deleted Pages
+
+- ~~Migrate ExpressRoute Gateway Basic SKU public IP to Standard SKU public IP~~ (https://learn.microsoft.com/en-us/azure/dedicated-hsm/migration-basic-standard)
 
 ## Classified Pages
 
@@ -61,8 +72,8 @@ confusable_not_for: Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Payment
 |-----------|------|------------|--------|
 | [Troubleshooting](https://learn.microsoft.com/en-us/azure/dedicated-hsm/troubleshoot) | troubleshooting | 0.80 | Explicitly a troubleshooting article that distinguishes Azure-side registration/deployment from HSM configuration, and covers unique considerations arising from HSMs as Azure resources. It maps service-specific issues to causes and resolutions. |
 | [Migrate to Cloud or Managed HSM](https://learn.microsoft.com/en-us/azure/dedicated-hsm/migration-guide) | decision-making | 0.74 | Contains product-specific retirement dates, explicit restriction that key material cannot be migrated, and concrete guidance on when/how to transition from Dedicated HSM to Managed HSM or Cloud HSM. This is migration and service-selection guidance with specific constraints, fitting decision-making. |
+| [Migrate Dedicated HSM from ExpressRoute Basic SKU](https://learn.microsoft.com/en-us/azure/dedicated-hsm/migration-basic-standard) | deployment | 0.72 | The page describes a product-specific migration path and constraints for Azure Dedicated HSM connectivity when moving from the ExpressRoute Basic gateway SKU to the Standard SKU before a specific retirement date. It includes expert operational guidance about how this particular service uses an ExpressRoute gateway and a service-managed circuit, and notes that the standard ExpressRoute gateway migration process can't be used, implying unique deployment requirements and steps. This is deployment-focused expert knowledge rather than generic conceptual guidance. |
 | [Secure your Dedicated HSM](https://learn.microsoft.com/en-us/azure/dedicated-hsm/secure-dedicated-hsm) | security | 0.72 | The page focuses on securing Azure Dedicated HSM with product-specific guidance (network isolation, identity management, monitoring, backup strategies) tailored to this service. While the summary is high level, this type of page typically includes concrete recommendations and configurations unique to Dedicated HSM (for example, specific Azure networking and identity patterns for HSM appliances), which qualifies as expert, product-specific security knowledge rather than generic concepts. |
-| [Migrate ExpressRoute Gateway Basic SKU public IP to Standard SKU public IP](https://learn.microsoft.com/en-us/azure/dedicated-hsm/migration-basic-standard) | decision-making | 0.70 | Includes a specific support end date for Basic SKU public IP and prescriptive steps that there is no smooth migration and a new Dedicated HSM/VNET/ERGW must be created. This is concrete migration and SKU-transition guidance with product-specific constraints, aligning with decision-making. |
 | [Dedicated HSM overview](https://learn.microsoft.com/en-us/azure/dedicated-hsm/overview) | decision-making | 0.65 | Contains product-specific retirement timeline (support until July 31, 2028), explicit onboarding restrictions, and concrete guidance to choose Azure Cloud HSM vs Azure Managed HSM. This is decision guidance tied to specific dates and migration direction that an LLM is unlikely to know from training. |
 | [Frequently asked questions](https://learn.microsoft.com/en-us/azure/dedicated-hsm/faq) | troubleshooting | 0.62 | Service-specific FAQ for Dedicated HSM typically includes detailed answers about interoperability, high availability behavior, and support conditions that are not generic knowledge. While organized as FAQ rather than classic symptom trees, it provides concrete resolutions and clarifications to common operational issues, closest to troubleshooting. |
 | [Deciding on deployment architecture](https://learn.microsoft.com/en-us/azure/dedicated-hsm/deployment-architecture) | architecture-patterns | 0.60 | Discusses when customers benefit from Dedicated HSM, how devices are distributed across datacenters, pairing for HA, and cross-region deployment for disaster resilience. These are product-specific architectural deployment patterns. |

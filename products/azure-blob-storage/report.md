@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-02'
+generated_at: '2026-08-09'
 category_descriptions:
   decision-making: 'Cost planning and design choices for Blob Storage: tiers, archive
     retrieval, networking, reserved capacity, migration tools, data protection, and
@@ -7,9 +7,9 @@ category_descriptions:
   configuration: Configuring monitoring, lifecycle, immutability, restore, networking,
     and client tools (BlobFuse, Storage Mover), plus third‑party backup/migration
     integrations for Azure Blob Storage.
-  security: 'Securing Blob Storage and Data Lake: identity-based access (RBAC/ABAC),
-    SAS tokens, SFTP, ACLs, private networking, client-side and key-based encryption,
-    and anonymous access controls.'
+  security: 'Securing Blob Storage access: RBAC/ABAC, Entra auth, SAS tokens, SFTP,
+    ACLs, Storage Mover, anonymous access remediation, and encryption (CSE, keys,
+    scopes, BlobFuse2).'
   best-practices: 'Performance, reliability, and cost-optimization guidance for Azure
     Blob/Data Lake: access tiers, lifecycle, hot partitions, NFS/SFTP, client tuning,
     retries, monitoring, and backup best practices.'
@@ -27,15 +27,15 @@ category_descriptions:
     tags, SAS, events, and language-specific code samples.'
 skill_description: Expert knowledge for Azure Blob Storage development including troubleshooting,
   best practices, decision making, limits & quotas, security, configuration, integrations
-  & coding patterns, and deployment. Use when using Blob tiers, lifecycle policies,
-  immutability, SAS/SFTP access, or NFS/BlobFuse mounts, and other Azure Blob Storage
-  related development tasks. Not for Azure Files (use azure-files), Azure Table Storage
-  (use azure-table-storage), Azure Queue Storage (use azure-queue-storage), Azure
-  NetApp Files (use azure-netapp-files).
-use_when: Use when using Blob tiers, lifecycle policies, immutability, SAS/SFTP access,
-  or NFS/BlobFuse mounts, and other Azure Blob Storage related development tasks.
-confusable_not_for: Not for Azure Files (use azure-files), Azure Table Storage (use
-  azure-table-storage), Azure Queue Storage (use azure-queue-storage), Azure NetApp
+  & coding patterns, and deployment. Use when using Blob tiers, Data Lake, NFS/SFTP,
+  static websites, or SDK/CLI data operations, and other Azure Blob Storage related
+  development tasks. Not for Azure Files (use azure-files), Azure Queue Storage (use
+  azure-queue-storage), Azure Table Storage (use azure-table-storage), Azure NetApp
+  Files (use azure-netapp-files).
+use_when: Use when using Blob tiers, Data Lake, NFS/SFTP, static websites, or SDK/CLI
+  data operations, and other Azure Blob Storage related development tasks.
+confusable_not_for: Not for Azure Files (use azure-files), Azure Queue Storage (use
+  azure-queue-storage), Azure Table Storage (use azure-table-storage), Azure NetApp
   Files (use azure-netapp-files).
 ---
 # Azure Blob Storage Crawl Report
@@ -49,9 +49,9 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Table Storage (
 - **Unclassified**: 94
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 4
-- **Unchanged**: 413
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 417
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-blob-storage/azure-blob-storage.csv`
 
@@ -71,20 +71,10 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Table Storage (
 
 ## Changes
 
-### New Pages
-
-- [Mitigate hot partitions](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-performance-mitigate-hot-partitions)
-
 ### Updated Pages
 
-- [Blob storage](https://learn.microsoft.com/en-us/azure/storage/blobs/scalability-targets)
-  - Updated: 2026-06-03T05:14:00.000Z → 2026-07-27T22:17:00.000Z
-- [PowerShell](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-acl-powershell)
-  - Updated: 2024-11-26T23:03:00.000Z → 2026-07-29T05:11:00.000Z
-- [CLI](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-acl-cli)
-  - Updated: 2024-11-26T08:00:00.000Z → 2026-07-29T05:11:00.000Z
-- [About query acceleration](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-query-acceleration)
-  - Updated: 2024-11-18T08:00:00.000Z → 2026-07-29T05:11:00.000Z
+- [Host keys (SFTP) support](https://learn.microsoft.com/en-us/azure/storage/blobs/secure-file-transfer-protocol-host-keys)
+  - Updated: 2026-02-02T18:12:00.000Z → 2026-08-07T17:22:00.000Z
 
 ## Classified Pages
 
@@ -108,9 +98,9 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Table Storage (
 | [Azure roles required to edit a task](https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-authorization-roles) | security | 0.86 | The article is specifically about the least-privileged built-in Azure roles and/or RBAC actions required to read, update, delete, and view storage tasks. This is product-specific security guidance that lists concrete role names and required permissions, which qualifies as expert knowledge under the security sub-skill. |
 | [Configure role assignment conditions with Azure ABAC](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-auth-abac) | security | 0.86 | Explains configuring Azure ABAC conditions on Blob Storage role assignments with blob-specific attributes; product-specific authorization model details. |
 | [Example conditions](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-auth-abac-examples) | security | 0.86 | Contains concrete example condition expressions for Blob Storage ABAC, including attribute names and patterns; detailed security configuration patterns. |
+| [Host keys (SFTP) support](https://learn.microsoft.com/en-us/azure/storage/blobs/secure-file-transfer-protocol-host-keys) | security | 0.86 | The page provides a concrete list of valid SSH/SFTP host key fingerprints specifically used by Azure Blob Storage’s SFTP endpoint. These are product-specific security details (key types, exact fingerprints) that an LLM wouldn’t reliably know from training and are required for secure client configuration and host verification, fitting the security sub-skill type. |
 | [Performance checklist](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-performance-checklist) | best-practices | 0.86 | Contains concrete, product-specific performance recommendations tied to Azure Storage scale targets, including configuration choices and naming patterns to avoid throttling. |
 | [Soft delete versus versioning](https://learn.microsoft.com/en-us/azure/storage/blobs/soft-delete-vs-versioning-options) | decision-making | 0.86 | Explicitly helps decide when to enable soft delete, versioning, both, or neither based on workload, cost, and recovery needs; clear product-specific decision guidance. |
-| [Host keys (SFTP) support](https://learn.microsoft.com/en-us/azure/storage/blobs/secure-file-transfer-protocol-host-keys) | security | 0.85 | Contains a list of valid SSH host key fingerprints/types for Blob Storage SFTP endpoints. These are product-specific security parameters used to verify server identity. |
 | [Performance checklist for developers](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-performance-checklist-developers) | best-practices | 0.85 | Contains detailed, product-specific performance recommendations aligned to Azure Storage targets, including guidance on throttling, parallelism, and retries. |
 | [Security for conditions](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-auth-abac-security) | security | 0.84 | Provides product-specific security gotchas (for example, path rename implications) when using ABAC conditions; concrete security guidance unique to this feature. |
 | [Enable point-in-time restore](https://learn.microsoft.com/en-us/azure/storage/blobs/point-in-time-restore-manage) | configuration | 0.82 | Explains how to enable point-in-time restore and execute restore operations, including constraints (GPv2, standard tier, hot/cool only); concrete configuration behavior. |

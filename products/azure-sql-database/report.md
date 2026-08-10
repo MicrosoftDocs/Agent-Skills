@@ -1,6 +1,9 @@
 ---
-generated_at: '2026-08-02'
+generated_at: '2026-08-09'
 category_descriptions:
+  limits-quotas: 'Limits, quotas, and behaviors for Azure SQL: backups immutability,
+    free tier offers, DTU/vCore pool/single DB caps, serverless billing rules, and
+    maintenance window constraints.'
   decision-making: Guidance for choosing Azure SQL tiers, pricing models, DR/HA, Hyperscale
     options, licensing/Reservations, automation, and migration paths (on-prem, DTU↔vCore,
     SQL Data Sync, elastic sharding).
@@ -25,39 +28,36 @@ category_descriptions:
   deployment: 'Deploying and managing Azure SQL databases: CI/CD with GitHub/Terraform,
     scaling and tier changes (Hyperscale, zones, elastic pools), regional moves, and
     checking feature availability by region.'
-  limits-quotas: 'Limits, quotas, and billing rules for Azure SQL Database: free tiers,
-    DTU/vCore and serverless resource caps, maintenance windows, and how far you can
-    scale single DBs and elastic pools.'
 skill_description: Expert knowledge for Azure SQL Database development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  choosing tiers/HA, tuning performance, configuring geo-replication, serverless/elastic
-  pools, or Hyperscale, and other Azure SQL Database related development tasks. Not
-  for Azure Database for MariaDB (use azure-database-mariadb), Azure Database for
-  MySQL (use azure-database-mysql), Azure Database for PostgreSQL (use azure-database-postgresql),
-  Azure SQL Managed Instance (use azure-sql-managed-instance).
-use_when: Use when choosing tiers/HA, tuning performance, configuring geo-replication,
-  serverless/elastic pools, or Hyperscale, and other Azure SQL Database related development
+  using serverless billing, Hyperscale, geo-replication/DR, elastic pools/sharding,
+  or Managed Instance, and other Azure SQL Database related development tasks. Not
+  for Azure SQL Managed Instance (use azure-sql-managed-instance), SQL Server on Azure
+  Virtual Machines (use azure-sql-virtual-machines), Azure Cosmos DB (use azure-cosmos-db),
+  Azure Data Factory (use azure-data-factory).
+use_when: Use when using serverless billing, Hyperscale, geo-replication/DR, elastic
+  pools/sharding, or Managed Instance, and other Azure SQL Database related development
   tasks.
-confusable_not_for: Not for Azure Database for MariaDB (use azure-database-mariadb),
-  Azure Database for MySQL (use azure-database-mysql), Azure Database for PostgreSQL
-  (use azure-database-postgresql), Azure SQL Managed Instance (use azure-sql-managed-instance).
+confusable_not_for: Not for Azure SQL Managed Instance (use azure-sql-managed-instance),
+  SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Cosmos
+  DB (use azure-cosmos-db), Azure Data Factory (use azure-data-factory).
 ---
 # Azure SQL Database Crawl Report
 
 ## Summary
 
-- **Total Pages**: 372
-- **Fetched**: 372
+- **Total Pages**: 373
+- **Fetched**: 373
 - **Fetch Failed**: 0
-- **Classified**: 248
-- **Unclassified**: 124
+- **Classified**: 250
+- **Unclassified**: 123
 
 ### Incremental Update
-- **New Pages**: 9
-- **Updated Pages**: 7
-- **Unchanged**: 356
-- **Deleted Pages**: 1
+- **New Pages**: 1
+- **Updated Pages**: 1
+- **Unchanged**: 371
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sql-database/azure-sql-database.csv`
 
 ## Classification Statistics
@@ -67,48 +67,24 @@ confusable_not_for: Not for Azure Database for MariaDB (use azure-database-maria
 | architecture-patterns | 13 | 3.5% |
 | best-practices | 13 | 3.5% |
 | configuration | 66 | 17.7% |
-| decision-making | 24 | 6.5% |
+| decision-making | 24 | 6.4% |
 | deployment | 10 | 2.7% |
-| integrations | 27 | 7.3% |
-| limits-quotas | 10 | 2.7% |
+| integrations | 27 | 7.2% |
+| limits-quotas | 12 | 3.2% |
 | security | 63 | 16.9% |
 | troubleshooting | 22 | 5.9% |
-| *(Unclassified)* | 124 | 33.3% |
+| *(Unclassified)* | 123 | 33.0% |
 
 ## Changes
 
 ### New Pages
 
-- [Serverless compute tier overview](https://learn.microsoft.com/en-us/azure/azure-sql/database/serverless-tier-overview?view=azuresql)
-- [Create a serverless database](https://learn.microsoft.com/en-us/azure/azure-sql/database/serverless-tier-create-configure?view=azuresql)
-- [Monitor serverless databases](https://learn.microsoft.com/en-us/azure/azure-sql/database/serverless-tier-monitor?view=azuresql)
-- [Serverless auto-pause and auto-resume](https://learn.microsoft.com/en-us/azure/azure-sql/database/serverless-tier-auto-pause-resume?view=azuresql)
-- [Serverless autoscaling](https://learn.microsoft.com/en-us/azure/azure-sql/database/serverless-tier-auto-scaling?view=azuresql)
-- [Serverless billing](https://learn.microsoft.com/en-us/azure/azure-sql/database/serverless-tier-billing?view=azuresql)
-- [Serverless FAQ](https://learn.microsoft.com/en-us/azure/azure-sql/database/serverless-tier-faq?view=azuresql)
-- [Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/modifiable-configuration-reference?view=azuresql)
-- [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/modifiable-configuration-reference?view=azuresql)
+- [Automatic backup immutability](https://learn.microsoft.com/en-us/azure/azure-sql/automatic-backup-immutability?view=azuresql)
 
 ### Updated Pages
 
-- [Data collection and datasets](https://learn.microsoft.com/en-us/azure/azure-sql/database-watcher-data?view=azuresql)
-  - Updated: 2025-09-02T08:00:00.000Z → 2026-07-29T08:00:00.000Z
 - [What's new?](https://learn.microsoft.com/en-us/azure/azure-sql/database/doc-changes-updates-release-notes-whats-new?view=azuresql)
-  - Updated: 2026-06-05T17:38:00.000Z → 2026-07-31T17:52:00.000Z
-- [Bicep](https://learn.microsoft.com/en-us/azure/azure-sql/database/single-database-create-bicep-quickstart?view=azuresql)
-  - Updated: 2026-01-28T18:35:00.000Z → 2026-07-28T22:37:00.000Z
-- [ARM template](https://learn.microsoft.com/en-us/azure/azure-sql/database/single-database-create-arm-template-quickstart?view=azuresql)
-  - Updated: 2026-01-28T18:35:00.000Z → 2026-07-28T22:37:00.000Z
-- [Private Link](https://learn.microsoft.com/en-us/azure/azure-sql/database/private-endpoint-overview?view=azuresql)
-  - Updated: 2026-03-30T08:00:00.000Z → 2026-07-29T08:00:00.000Z
-- [Copy a database within Azure](https://learn.microsoft.com/en-us/azure/azure-sql/database/database-copy?view=azuresql)
-  - Updated: 2024-12-10T23:49:00.000Z → 2026-07-29T08:00:00.000Z
-- [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/region-availability?view=azuresql)
-  - Updated: 2026-03-24T00:04:00.000Z → 2026-07-31T17:52:00.000Z
-
-### Deleted Pages
-
-- ~~Serverless compute tier~~ (https://learn.microsoft.com/en-us/azure/azure-sql/database/serverless-tier-overview?view=azuresql)
+  - Updated: 2026-07-31T17:52:00.000Z → 2026-08-04T08:00:00.000Z
 
 ## Classified Pages
 
@@ -212,6 +188,7 @@ confusable_not_for: Not for Azure Database for MariaDB (use azure-database-maria
 | [Always Encrypted with secure enclaves using VBS](https://learn.microsoft.com/en-us/azure/azure-sql/database/always-encrypted-enclaves-getting-started-vbs?view=azuresql) | configuration | 0.70 | Tutorial for using virtualization-based security (VBS) enclaves with Always Encrypted in Azure SQL Database. It focuses on setting up a specific environment and enabling enclave-based operations in SSMS, which involves Azure SQL–specific configuration parameters and steps that qualify as expert configuration knowledge rather than generic concepts. |
 | [Analyze monitoring data](https://learn.microsoft.com/en-us/azure/azure-sql/database-watcher-analyze?view=azuresql) | best-practices | 0.70 | Provides concrete KQL and T-SQL query examples for analyzing watcher data; product-specific analytical patterns and queries. |
 | [Auditing policy at the server and database level](https://learn.microsoft.com/en-us/azure/azure-sql/database/auditing-server-level-database-level?view=azuresql) | security | 0.70 | Clarifies differences and interactions between server-level and database-level auditing policies in Azure SQL and Synapse; product-specific security behavior. |
+| [Automatic backup immutability](https://learn.microsoft.com/en-us/azure/azure-sql/automatic-backup-immutability?view=azuresql) | limits-quotas | 0.70 | Describes a specific, product-unique protection window: immutability applies to up to the most recent seven days of PITR backups, enabled by default and at no extra cost. This is a concrete numerical limit and behavior detail that qualifies as expert knowledge under limits-quotas. |
 | [Availability through redundancy](https://learn.microsoft.com/en-us/azure/azure-sql/database/high-availability-sla-local-zone-redundancy?view=azuresql) | architecture-patterns | 0.70 | Describes the specific architecture Azure SQL Database and SQL database in Fabric use for local and zone redundancy, including how to achieve high availability. This is product-specific HA architecture guidance (when/how to use zone redundancy vs local redundancy), which fits architecture-patterns. |
 | [Azure Hybrid Benefit](https://learn.microsoft.com/en-us/azure/azure-sql/azure-hybrid-benefit?view=azuresql) | decision-making | 0.70 | Describes Azure Hybrid Benefit discounts and how to allocate existing licenses; contains product-specific cost decision guidance beyond generic concepts. |
 | [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/azure-sql/database/policy-reference?view=azuresql) | security | 0.70 | Lists specific Azure Policy definition names, effects, and scopes for Azure SQL Database and Managed Instance, which are product-specific security/compliance configurations. |
@@ -339,6 +316,7 @@ confusable_not_for: Not for Azure Database for MariaDB (use azure-database-maria
 | [Set up Data Sync with REST API](https://learn.microsoft.com/en-us/azure/azure-sql/database/scripts/sql-data-sync-sync-data-between-sql-databases-rest-api?view=azuresql) | configuration | 0.65 | REST API example for configuring SQL Data Sync across multiple databases; includes product-specific sync configuration parameters and constraints. |
 | [Set up SQL Data Sync](https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-data-sync-sql-server-configure?view=azuresql) | configuration | 0.65 | Tutorial on configuring sync groups, membership, and schedules between Azure SQL and SQL Server; contains concrete configuration steps and parameters. |
 | [Single database](https://learn.microsoft.com/en-us/azure/azure-sql/database/scripts/setup-geodr-failover-database-cli?view=azuresql) | configuration | 0.65 | Shows CLI commands to set up active geo-replication and failover; includes specific parameters and configuration steps. |
+| [What's new?](https://learn.microsoft.com/en-us/azure/azure-sql/database/doc-changes-updates-release-notes-whats-new?view=azuresql) | limits-quotas | 0.65 | Page is primarily release notes, but includes a specific free offer limit (ten free General Purpose databases, each with 100,000 vCore seconds of compute per month), which is an exact, tier-specific quota value that an LLM is unlikely to know from training. |
 | [Always Encrypted with secure enclaves](https://learn.microsoft.com/en-us/azure/azure-sql/database/always-encrypted-enclaves-getting-started?view=azuresql) | security | 0.60 | Collection of tutorials for Always Encrypted with enclaves; includes enclave-related configuration steps and settings specific to Azure SQL security. |
 | [Azure Resource Graph queries](https://learn.microsoft.com/en-us/azure/azure-sql/database/resource-graph-samples?view=azuresql) | configuration | 0.60 | Sample queries reference specific resource types, property names, and schema details for Azure SQL in Resource Graph, which are product-specific configuration/metadata fields. |
 | [Azure Resource Manager](https://learn.microsoft.com/en-us/azure/azure-sql/database/arm-templates-content-guide?view=azuresql) | configuration | 0.60 | ARM template content guides typically enumerate resource types, properties, and schema fields for Azure SQL, which are detailed configuration parameters and structures. |
@@ -446,7 +424,6 @@ confusable_not_for: Not for Azure Database for MariaDB (use azure-database-maria
 | [Samples overview](https://learn.microsoft.com/en-us/azure/azure-sql/database/az-cli-script-samples-content-guide?view=azuresql) | 0.20 | Navigation/collection page for Azure CLI samples; no detailed technical content itself. |
 | [Security overview](https://learn.microsoft.com/en-us/azure/azure-sql/database/security-overview?view=azuresql) | 0.20 | High-level security overview describing defense-in-depth and general concepts for Azure SQL; no specific RBAC role names, configuration parameters, or detailed settings tables that would qualify as product-specific security configuration guidance. |
 | [Visual Studio Code](https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-vscode?view=azuresql) | 0.20 | VS Code connection/query quickstart; generic tutorial without detailed Azure SQL–specific configuration matrices or limits. |
-| [What's new?](https://learn.microsoft.com/en-us/azure/azure-sql/database/doc-changes-updates-release-notes-whats-new?view=azuresql) | 0.20 | Release notes/what's new summary; description indicates high-level feature and documentation change announcements without detailed limits, configs, error codes, or decision matrices. |
 | [Always Encrypted](https://learn.microsoft.com/en-us/azure/azure-sql/database/always-encrypted-landing?view=azuresql) | 0.10 | Landing page for Always Encrypted docs; navigation only without detailed content. |
 | [Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/doc-changes-updates-release-notes-whats-new-archive?view=azuresql) | 0.10 | Archive of 'what's new' release-note links and documentation changes; no detailed limits, configs, troubleshooting mappings, or other structured expert data indicated. |
 | [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-release-notes-whats-new-archive?view=azuresql) | 0.10 | Archive page summarizing older feature and documentation updates; functions as navigation/history, not detailed technical guidance with specific parameters or limits. |

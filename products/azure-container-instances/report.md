@@ -51,8 +51,8 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 12
-- **Unchanged**: 71
+- **Updated Pages**: 0
+- **Unchanged**: 83
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-container-instances/azure-container-instances.csv`
 
@@ -71,33 +71,6 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | *(Unclassified)* | 29 | 34.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [FAQ](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-faq)
-  - Updated: 2026-06-24T17:03:00.000Z → 2026-07-26T11:03:00.000Z
-- [About Azure Container Instances](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-overview)
-  - Updated: 2025-11-17T08:00:00.000Z → 2026-07-25T08:00:00.000Z
-- [Resources and Quota Limits](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-resource-and-quota-limits)
-  - Updated: 2025-11-17T08:00:00.000Z → 2026-07-25T08:00:00.000Z
-- [3 - Deploy application](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-tutorial-deploy-app)
-  - Updated: 2025-11-17T08:00:00.000Z → 2026-07-26T11:03:00.000Z
-- [Virtual networking](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-virtual-network-concepts)
-  - Updated: 2026-04-09T08:00:00.000Z → 2026-07-26T11:03:00.000Z
-- [Deploy in a virtual network](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-vnet)
-  - Updated: 2025-11-17T08:00:00.000Z → 2026-07-25T08:00:00.000Z
-- [Deploy using a service principal](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-using-azure-container-registry)
-  - Updated: 2025-11-17T08:00:00.000Z → 2026-07-25T08:00:00.000Z
-- [Deploy using a managed identity](https://learn.microsoft.com/en-us/azure/container-instances/using-azure-container-registry-mi)
-  - Updated: 2025-11-17T08:00:00.000Z → 2026-07-26T11:03:00.000Z
-- [Set restart policy for run-once tasks](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-restart-policy)
-  - Updated: 2025-11-17T08:00:00.000Z → 2026-07-26T11:03:00.000Z
-- [Logging with Azure Monitor logs](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-log-analytics)
-  - Updated: 2025-11-17T08:00:00.000Z → 2026-07-26T11:03:00.000Z
-- [Troubleshoot common issues](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-troubleshooting)
-  - Updated: 2025-11-17T08:00:00.000Z → 2026-07-26T11:03:00.000Z
-- [YAML](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-reference-yaml)
-  - Updated: 2025-11-17T08:00:00.000Z → 2026-07-25T08:00:00.000Z
 
 ## Classified Pages
 

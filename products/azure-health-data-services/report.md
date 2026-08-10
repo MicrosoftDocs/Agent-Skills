@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Data 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 5
-- **Unchanged**: 198
+- **Updated Pages**: 0
+- **Unchanged**: 203
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-health-data-services/azure-health-data-services.csv`
 
@@ -75,19 +75,6 @@ confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Data 
 | *(Unclassified)* | 54 | 26.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [Get started with the FHIR service](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/get-started-with-fhir)
-  - Updated: 2026-06-13T05:17:00.000Z → 2026-07-31T05:12:00.000Z
-- [Use Microsoft Entra External ID for an identity provider](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/azure-entra-external-id-setup)
-  - Updated: 2025-10-01T17:42:00.000Z → 2026-07-31T05:12:00.000Z
-- [Release notes](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/release-notes-2026)
-  - Updated: 2026-07-06T22:04:00.000Z → 2026-07-29T18:02:00.000Z
-- [Use Custom HTTP headers to add data to audit logs](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/use-custom-headers-diagnosticlog)
-  - Updated: 2025-10-10T08:00:00.000Z → 2025-10-10T22:10:00.000Z
-- [$bulk-update](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/fhir-bulk-update)
-  - Updated: 2026-02-23T23:22:00.000Z → 2026-07-29T22:37:00.000Z
 
 ## Classified Pages
 

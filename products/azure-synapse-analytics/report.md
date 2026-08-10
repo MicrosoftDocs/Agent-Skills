@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-19'
+generated_at: '2026-08-09'
 category_descriptions:
   security: 'Securing Synapse workspaces end-to-end: auth and RBAC, network and private
     endpoints, firewall and data exfiltration, encryption/TDE, policies, managed identities,
@@ -20,8 +20,8 @@ category_descriptions:
     SQL/serverless/Spark pools, data warehouse migrations, table/distribution/partition
     strategies, ELT/PolyBase loading, and workload management.
   troubleshooting: Diagnosing and fixing Synapse workspace, SQL pool, Spark, Studio,
-    and Synapse Link issues, including connectivity, performance, job failures, tenant
-    moves, and workload misclassification.
+    and Synapse Link errors, including connectivity, performance, workload classification,
+    and known issues/workarounds.
   integrations: Integrating Synapse with Spark, SQL, ML, storage, Cosmos DB, and external
     tools; patterns for data movement, querying files, logging/metrics, and managing
     compute via APIs and automation.
@@ -31,17 +31,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Synapse Analytics development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when designing Synapse workspaces, SQL/Spark pools, PolyBase ELT, Synapse Link,
-  or Purview/ML integrations, and other Azure Synapse Analytics related development
+  Use when using Synapse SQL pools, serverless SQL, Spark pools, Synapse Link, or
+  PolyBase/ELT data loading, and other Azure Synapse Analytics related development
   tasks. Not for Azure Data Factory (use azure-data-factory), Azure Data Explorer
-  (use azure-data-explorer), Azure Databricks (use azure-databricks), Azure HDInsight
-  (use azure-hdinsight).
-use_when: Use when designing Synapse workspaces, SQL/Spark pools, PolyBase ELT, Synapse
-  Link, or Purview/ML integrations, and other Azure Synapse Analytics related development
+  (use azure-data-explorer), Azure HDInsight (use azure-hdinsight), Azure Databricks
+  (use azure-databricks).
+use_when: Use when using Synapse SQL pools, serverless SQL, Spark pools, Synapse Link,
+  or PolyBase/ELT data loading, and other Azure Synapse Analytics related development
   tasks.
 confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure Data
-  Explorer (use azure-data-explorer), Azure Databricks (use azure-databricks), Azure
-  HDInsight (use azure-hdinsight).
+  Explorer (use azure-data-explorer), Azure HDInsight (use azure-hdinsight), Azure
+  Databricks (use azure-databricks).
 ---
 # Azure Synapse Analytics Crawl Report
 
@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure D
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 450
+- **Updated Pages**: 2
+- **Unchanged**: 448
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-synapse-analytics/azure-synapse-analytics.csv`
 
@@ -70,12 +70,19 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure D
 | decision-making | 19 | 4.2% |
 | deployment | 5 | 1.1% |
 | integrations | 46 | 10.2% |
-| limits-quotas | 7 | 1.6% |
+| limits-quotas | 6 | 1.3% |
 | security | 57 | 12.7% |
-| troubleshooting | 25 | 5.6% |
+| troubleshooting | 26 | 5.8% |
 | *(Unclassified)* | 172 | 38.2% |
 
 ## Changes
+
+### Updated Pages
+
+- [Synapse SQL pool stored procedure activity](https://learn.microsoft.com/en-us/azure/synapse-analytics/data-integration/sql-pool-stored-procedure-activity)
+  - Updated: 2025-03-27T17:09:00.000Z → 2026-07-22T22:29:00.000Z
+- [Known limitations and issues](https://learn.microsoft.com/en-us/azure/synapse-analytics/synapse-link/synapse-link-for-sql-known-issues)
+  - Updated: 2025-10-31T08:00:00.000Z → 2026-08-03T08:00:00.000Z
 
 ## Classified Pages
 
@@ -127,7 +134,6 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure D
 | [Enable encryption - portal](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-encryption-tde) | security | 0.80 | TDE configuration for dedicated SQL pool via portal; such pages include specific security settings, options, and possibly key management details. |
 | [Gateway IP addresses](https://learn.microsoft.com/en-us/azure/synapse-analytics/security/gateway-ip-addresses) | security | 0.80 | Provides region-specific gateway IP addresses and ranges; these are concrete values used in firewall/network security configuration. |
 | [Identify queries running beyond execution timeout](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-how-to-find-queries-running-beyond-wlm-elapsed-timeout) | troubleshooting | 0.80 | Guidance on identifying queries running beyond query_execution_timeout_sec; likely includes specific DMV queries, timeout parameters, and diagnostic steps. |
-| [Known limitations and issues](https://learn.microsoft.com/en-us/azure/synapse-analytics/synapse-link/synapse-link-for-sql-known-issues) | limits-quotas | 0.80 | Explicitly lists limitations and known issues; such pages typically contain concrete constraints, unsupported scenarios, and sometimes numeric limits that are expert knowledge. |
 | [OPENROWSET](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-openrowset) | integrations | 0.80 | Details OPENROWSET(BULK...) syntax, arguments, and constraints for serverless SQL pool, including storage-specific options and behaviors. |
 | [Overview](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-authentication) | security | 0.80 | Authentication article for dedicated SQL pool; covers Microsoft Entra ID vs SQL auth, likely with specific connection string parameters, login types, and permission scopes that are product-specific security configuration details. |
 | [Performance tuning guidance](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/performance-tuning-ordered-cci) | best-practices | 0.80 | Performance tuning article for ordered CCI in dedicated SQL pools; includes product-specific recommendations and considerations for query performance. |
@@ -140,6 +146,7 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure D
 | [Troubleshoot serverless SQL pools](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/resources-self-help-sql-on-demand) | troubleshooting | 0.80 | Explicitly a self-help troubleshooting article for serverless SQL pool; such pages typically list specific error messages, causes, and resolutions unique to the product. |
 | [Connect to Azure Synapse workspace with private endpoints](https://learn.microsoft.com/en-us/azure/synapse-analytics/security/how-to-connect-to-workspace-with-private-links) | security | 0.78 | How-to for configuring private links/endpoints to Synapse workspaces; includes security-related network configuration. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-overview-faq) | limits-quotas | 0.78 | FAQ for Azure Synapse dedicated SQL pool includes concrete, product-specific details such as maximum number of databases per server, DWU and storage constraints, and other numeric service limits that are not derivable from general knowledge. These are exact values and quotas that change over time and must be looked up. |
+| [Known limitations and issues](https://learn.microsoft.com/en-us/azure/synapse-analytics/synapse-link/synapse-link-for-sql-known-issues) | troubleshooting | 0.78 | A 'limitations and known issues' page for a specific Azure feature typically enumerates concrete product-specific problems, behaviors, and workarounds that aren't broadly known, often including specific error messages, edge cases, and guidance on how to avoid or mitigate them. This aligns best with troubleshooting, as it focuses on known issues and their implications rather than just conceptual limits. |
 | [Set up Managed private endpoints to data sources](https://learn.microsoft.com/en-us/azure/synapse-analytics/security/how-to-create-managed-private-endpoints) | security | 0.78 | Step-by-step configuration of managed private endpoints for secure data access; product-specific security connectivity details. |
 | [Statistics](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-tables-statistics) | best-practices | 0.78 | Provides concrete recommendations and examples for statistics management tailored to Synapse dedicated SQL pools, including product-specific behaviors and patterns not covered by generic SQL optimization knowledge. |
 | [Synapse workspace Managed private endpoints](https://learn.microsoft.com/en-us/azure/synapse-analytics/security/synapse-workspace-managed-private-endpoints) | security | 0.78 | How-to style security article for Synapse managed private endpoints; likely includes specific Synapse/Private Link configuration steps and parameters beyond generic concepts. |
@@ -512,7 +519,7 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure D
 | [Synapse SQL T-SQL language elements](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-reference-tsql-language-elements) | 0.20 | Navigation/index page linking to T‑SQL language element docs; does not itself contain detailed product-specific parameters or limits. |
 | [Synapse SQL T-SQL statements](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-reference-tsql-statements) | 0.20 | Navigation/index page linking to T‑SQL statement docs; no direct expert content like limits, config tables, or troubleshooting mappings. |
 | [Synapse SQL architecture](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/overview-architecture) | 0.20 | Architecture overview of Synapse SQL; conceptual description of components and processing, not product-specific decision matrices or limits. |
-| [Synapse SQL pool stored procedure activity](https://learn.microsoft.com/en-us/azure/synapse-analytics/data-integration/sql-pool-stored-procedure-activity) | 0.20 | Explains how to use the SQL pool stored procedure activity in Synapse pipelines. From the summary it seems to be a transformation activity tutorial, without evidence of limits tables, config parameter matrices, or error-code troubleshooting content. Likely standard how-to documentation rather than expert reference material. |
+| [Synapse SQL pool stored procedure activity](https://learn.microsoft.com/en-us/azure/synapse-analytics/data-integration/sql-pool-stored-procedure-activity) | 0.20 | Appears to be a how-to/tutorial on using the SQL pool stored procedure activity in Synapse/Data Factory. From the summary, it focuses on invoking stored procedures as a transformation activity, without mention of numeric limits, detailed configuration parameter tables, error-code-based troubleshooting, or tier-specific constraints. Likely general usage guidance that an LLM would already know conceptually, not product-specific expert details. |
 | [Synapse notebook activity](https://learn.microsoft.com/en-us/azure/synapse-analytics/synapse-notebook-activity) | 0.20 | Appears to be a how-to/tutorial on creating and using a Synapse notebook activity in a pipeline. Summary does not indicate presence of numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. Likely procedural guidance rather than expert reference details. |
 | [System views](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/reference-tsql-system-views) | 0.20 | Navigation page that just links to system view docs; no detailed limits, configuration tables, or error mappings on this page itself. |
 | [Use a sample notebook from the gallery](https://learn.microsoft.com/en-us/azure/synapse-analytics/machine-learning/quickstart-gallery-sample-notebook) | 0.20 | Quickstart for using a sample notebook; mostly workflow guidance, not configuration or limits. |

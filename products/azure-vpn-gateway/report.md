@@ -51,9 +51,9 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 - **Unclassified**: 25
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 3
-- **Unchanged**: 126
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 130
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-vpn-gateway/azure-vpn-gateway.csv`
 
@@ -73,19 +73,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | *(Unclassified)* | 25 | 19.2% |
 
 ## Changes
-
-### New Pages
-
-- [Azure CLI](https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-user-groups-create-cli)
-
-### Updated Pages
-
-- [Azure PowerShell](https://learn.microsoft.com/en-us/azure/vpn-gateway/create-gateway-powershell)
-  - Updated: 2024-11-20T23:04:00.000Z → 2026-08-01T05:13:00.000Z
-- [Azure CLI](https://learn.microsoft.com/en-us/azure/vpn-gateway/create-routebased-vpn-gateway-cli)
-  - Updated: 2024-11-20T23:04:00.000Z → 2026-08-01T05:13:00.000Z
-- [Run Prerequisites Test](https://learn.microsoft.com/en-us/azure/vpn-gateway/azure-vpn-client-prerequisites-check)
-  - Updated: 2025-03-14T08:00:00.000Z → 2026-08-01T05:13:00.000Z
 
 ## Classified Pages
 

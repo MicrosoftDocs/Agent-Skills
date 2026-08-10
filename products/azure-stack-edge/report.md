@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-08-02'
+generated_at: '2026-08-09'
 category_descriptions:
   limits-quotas: Limits, capacities, performance, and system requirements for Azure
-    Stack Edge and Data Box Gateway devices, including supported VM sizes and moving
-    Edge resources across subscriptions.
+    Stack Edge and Data Box Gateway devices, including supported VM sizes, GPU limits,
+    and cross-subscription resource moves.
   troubleshooting: 'Diagnosing and fixing Azure Stack Edge/Data Box Gateway issues:
     release-specific critical bugs, ordering/activation, certificates, ARM/Blob/IoT
     Edge/VM/GPU problems, and using logs/alerts for troubleshooting.'
@@ -27,16 +27,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Stack Edge development including troubleshooting,
   best practices, decision making, limits & quotas, security, configuration, integrations
   & coding patterns, and deployment. Use when deploying IoT Edge modules, GPU/Kubernetes
-  apps, DeepStream pipelines, Arc GitOps, or local ARM workloads, and other Azure
-  Stack Edge related development tasks. Not for Azure Data Box (use azure-data-box-family),
-  Azure IoT Edge (use azure-iot-edge), Azure Local (use azure-local), Azure Kubernetes
-  Service Edge Essentials (use azure-aks-edge-essentials).
-use_when: Use when deploying IoT Edge modules, GPU/Kubernetes apps, DeepStream pipelines,
-  Arc GitOps, or local ARM workloads, and other Azure Stack Edge related development
+  apps, DeepStream workloads, Arc GitOps, or local ARM integrations, and other Azure
+  Stack Edge related development tasks. Not for Azure IoT Edge (use azure-iot-edge),
+  Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Kubernetes
+  Service Edge Essentials (use azure-aks-edge-essentials), Azure Virtual Machines
+  (use azure-virtual-machines).
+use_when: Use when deploying IoT Edge modules, GPU/Kubernetes apps, DeepStream workloads,
+  Arc GitOps, or local ARM integrations, and other Azure Stack Edge related development
   tasks.
-confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure IoT
-  Edge (use azure-iot-edge), Azure Local (use azure-local), Azure Kubernetes Service
-  Edge Essentials (use azure-aks-edge-essentials).
+confusable_not_for: Not for Azure IoT Edge (use azure-iot-edge), Azure Kubernetes
+  Service (AKS) (use azure-kubernetes-service), Azure Kubernetes Service Edge Essentials
+  (use azure-aks-edge-essentials), Azure Virtual Machines (use azure-virtual-machines).
 ---
 # Azure Stack Edge Crawl Report
 
@@ -50,8 +51,8 @@ confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure Io
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 11
-- **Unchanged**: 222
+- **Updated Pages**: 1
+- **Unchanged**: 232
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-stack-edge/azure-stack-edge.csv`
 
@@ -59,12 +60,12 @@ confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure Io
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| best-practices | 3 | 1.3% |
+| best-practices | 2 | 0.9% |
 | configuration | 49 | 21.0% |
 | decision-making | 5 | 2.1% |
 | deployment | 1 | 0.4% |
 | integrations | 8 | 3.4% |
-| limits-quotas | 8 | 3.4% |
+| limits-quotas | 9 | 3.9% |
 | security | 23 | 9.9% |
 | troubleshooting | 47 | 20.2% |
 | *(Unclassified)* | 89 | 38.2% |
@@ -73,28 +74,8 @@ confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure Io
 
 ### Updated Pages
 
-- [0 - Get checklist](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-deploy-checklist)
-  - Updated: 2023-11-21T23:11:00.000Z → 2026-07-28T17:15:00.000Z
-- [2 - Install](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-deploy-install)
-  - Updated: 2022-07-25T17:07:00.000Z → 2026-07-28T17:15:00.000Z
-- [3 - Connect](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-deploy-connect)
-  - Updated: 2022-07-25T17:07:00.000Z → 2026-07-28T17:15:00.000Z
-- [4 - Configure network](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-deploy-configure-network-compute-web-proxy)
-  - Updated: 2025-11-25T06:13:00.000Z → 2026-07-28T17:15:00.000Z
-- [6 - Configure certificates](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-deploy-configure-certificates)
-  - Updated: 2022-11-08T23:08:00.000Z → 2026-07-28T17:15:00.000Z
-- [0 - Get checklist](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-pro-2-deploy-checklist)
-  - Updated: 2023-11-21T23:11:00.000Z → 2026-07-28T17:15:00.000Z
-- [2 - Install](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-pro-2-deploy-install)
-  - Updated: 2024-02-21T08:00:00.000Z → 2026-07-28T17:15:00.000Z
-- [3 - Connect](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-pro-2-deploy-connect)
-  - Updated: 2022-03-23T02:24:00.000Z → 2026-07-28T17:15:00.000Z
-- [4 - Configure network](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-pro-2-deploy-configure-network-compute-web-proxy)
-  - Updated: 2025-11-25T06:13:00.000Z → 2026-07-28T17:15:00.000Z
-- [Deploy via config file](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-powershell-based-configuration)
-  - Updated: 2023-12-21T08:00:00.000Z → 2026-07-28T17:15:00.000Z
-- [Reset, reactivate device](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-reset-reactivate-device)
-  - Updated: 2026-06-03T22:23:00.000Z → 2026-07-28T17:15:00.000Z
+- [FAQ - Operational guidelines](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-operational-guidelines-faq)
+  - Updated: 2024-10-23T22:05:00.000Z → 2026-08-03T05:10:00.000Z
 
 ## Classified Pages
 
@@ -160,6 +141,7 @@ confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure Io
 | [Create virtual switches and virtual networks via PowerShell](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-create-virtual-switch-powershell) | configuration | 0.70 | PowerShell-based creation of virtual switches on the device; includes cmdlets and parameters specific to Azure Stack Edge networking. |
 | [Enable proactive logging](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-proactive-log-collection) | configuration | 0.70 | Explains what is logged and how to enable/disable proactive log collection; likely includes specific toggles and settings unique to this device. |
 | [Enable remote support](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-remote-support-diagnostics-repair) | configuration | 0.70 | Covers enabling remote support with consent level and duration; implies specific configuration options and constraints for remote access. |
+| [FAQ - Operational guidelines](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-operational-guidelines-faq) | limits-quotas | 0.70 | FAQ-style operational guidance for Azure Stack Edge includes concrete, product-specific constraints (for example, supported operational behaviors, lifecycle rules, and hardware service limitations). These are not generic concepts and represent expert operational knowledge; the content is primarily about what is and isn’t allowed or supported, including specific limits on usage and operations. |
 | [For Azure Stack Edge](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-system-requirements) | configuration | 0.70 | System requirements for a specific device include supported OS versions, network prerequisites, and other concrete constraints that are expert configuration knowledge. |
 | [GPU extension](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-deploy-virtual-machine-install-gpu-extension) | configuration | 0.70 | Describes GPU driver extension installation via templates on Windows/Linux; likely includes extension name, publisher, type, version, and settings schema that are product-specific configuration details. |
 | [GPU shared workload](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-deploy-iot-edge-gpu-sharing) | integrations | 0.70 | Shows enabling NVIDIA MPS and wiring GPU workloads through IoT Edge deployment on Azure Stack Edge; contains product-specific integration and configuration details. |
@@ -191,7 +173,6 @@ confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure Io
 | [Via PowerShell](https://learn.microsoft.com/en-us/azure/databox-gateway/data-box-gateway-connect-powershell-interface) | configuration | 0.70 | PowerShell management article will include specific cmdlets and parameters unique to this product, which are configuration/management interfaces. |
 | [Via PowerShell](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-connect-powershell-interface) | configuration | 0.70 | Shows how to connect to the device’s PowerShell interface and perform management tasks; includes device-specific cmdlets and parameters. |
 | [What are certificates?](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-certificates-overview) | security | 0.70 | Certificate overview for this product family will enumerate certificate types and their roles/endpoints, which are product-specific security details. |
-| [FAQ - Operational guidelines](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-operational-guidelines-faq) | best-practices | 0.68 | The FAQ contains product-specific operational guidance and do/don't style recommendations for running Azure Stack Edge as a hardware-as-a-service offering (for example, how to handle power, networking, maintenance, and operational constraints). These are concrete, service-specific practices rather than generic concepts, but the content is framed as guidance rather than strict numeric limits or configuration tables, so best-practices is the closest fit. |
 | [2101](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-2101-release-notes) | troubleshooting | 0.65 | Version 2101 release notes; maps known issues to resolutions, which is troubleshooting knowledge. |
 | [2103](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-2103-release-notes) | troubleshooting | 0.65 | Release notes for 2103 with critical open issues and resolutions; expert troubleshooting content. |
 | [2105](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-2105-release-notes) | troubleshooting | 0.65 | Same pattern: version-specific critical issues and workarounds for 2105. |

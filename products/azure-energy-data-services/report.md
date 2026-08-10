@@ -47,9 +47,9 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 - **Unclassified**: 21
 
 ### Incremental Update
-- **New Pages**: 2
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 57
+- **Unchanged**: 59
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-energy-data-services/azure-energy-data-services.csv`
 
@@ -67,11 +67,6 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 | *(Unclassified)* | 21 | 35.6% |
 
 ## Changes
-
-### New Pages
-
-- [Monitoring data reference](https://learn.microsoft.com/en-us/azure/energy-data-services/concepts-monitor-data-reference)
-- [Monitor Azure Data Manager for Energy](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-monitor-data-manager-energy)
 
 ## Classified Pages
 

@@ -37,8 +37,8 @@ confusable_not_for: Not for Azure Firewall (use azure-firewall), Azure Virtual N
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 25
+- **Updated Pages**: 0
+- **Unchanged**: 27
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-firewall-manager/azure-firewall-manager.csv`
 
@@ -53,13 +53,6 @@ confusable_not_for: Not for Azure Firewall (use azure-firewall), Azure Virtual N
 | *(Unclassified)* | 15 | 55.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [Deploy firewall with policy - ARM template](https://learn.microsoft.com/en-us/azure/firewall-manager/quick-firewall-policy)
-  - Updated: 2025-01-08T08:00:00.000Z → 2026-08-01T05:13:00.000Z
-- [Architecture options](https://learn.microsoft.com/en-us/azure/firewall-manager/vhubs-and-vnets)
-  - Updated: 2024-03-08T16:06:00.000Z → 2026-08-01T05:13:00.000Z
 
 ## Classified Pages
 

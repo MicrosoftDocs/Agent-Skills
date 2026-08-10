@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-08-02'
+generated_at: '2026-08-09'
 category_descriptions:
-  decision-making: 'Guidance for choosing Azure networking architectures: load balancing,
+  decision-making: 'Guidance on choosing Azure network architectures: load balancing,
     hybrid/multicloud connectivity, private access, secure topologies, and internet
-    ingress/egress design.'
+    ingress/egress for different workload patterns.'
   architecture-patterns: Designing secure Azure network topologies (hub-spoke, flat,
-    multi-region, Virtual WAN), planning IP ranges/subnets, and applying common workload-specific
-    network patterns.
+    multi-region, Virtual WAN), planning IP addressing/subnets, and applying common
+    workload-specific networking patterns.
   security: 'Designing secure Azure networks: firewall and DDoS tiers, VM access,
     DNS/private name resolution, NSG/ASG rules, WAF protection, and policy-based compliance
     for network resources.'
@@ -18,16 +18,17 @@ category_descriptions:
     other network resources.
 skill_description: Expert knowledge for Azure Networking development including troubleshooting,
   decision making, architecture & design patterns, security, and configuration. Use
-  when designing VNets, hub-spoke/Virtual WAN, Azure Firewall/DDoS, NSG/ASG rules,
-  or private DNS, and other Azure Networking related development tasks. Not for Azure
-  Virtual Network (use azure-virtual-network), Azure Virtual Network Manager (use
-  azure-virtual-network-manager), Azure Virtual WAN (use azure-virtual-wan), Azure
-  Network Watcher (use azure-network-watcher).
-use_when: Use when designing VNets, hub-spoke/Virtual WAN, Azure Firewall/DDoS, NSG/ASG
-  rules, or private DNS, and other Azure Networking related development tasks.
+  when designing VNets, hub-spoke/Virtual WAN, Azure Firewall/WAF, DDoS, or Virtual
+  Network Manager configs, and other Azure Networking related development tasks. Not
+  for Azure Virtual Network (use azure-virtual-network), Azure Virtual Network Manager
+  (use azure-virtual-network-manager), Azure Virtual WAN (use azure-virtual-wan),
+  Azure Traffic Manager (use azure-traffic-manager).
+use_when: Use when designing VNets, hub-spoke/Virtual WAN, Azure Firewall/WAF, DDoS,
+  or Virtual Network Manager configs, and other Azure Networking related development
+  tasks.
 confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), Azure
   Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use
-  azure-virtual-wan), Azure Network Watcher (use azure-network-watcher).
+  azure-virtual-wan), Azure Traffic Manager (use azure-traffic-manager).
 ---
 # Azure Networking Crawl Report
 
@@ -41,8 +42,8 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 41
+- **Updated Pages**: 4
+- **Unchanged**: 39
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-networking/azure-networking.csv`
 
@@ -61,15 +62,20 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ### Updated Pages
 
-- [Azure Networking overview](https://learn.microsoft.com/en-us/azure/networking/networking-overview)
-  - Updated: 2026-04-22T19:06:00.000Z → 2026-07-27T22:17:00.000Z
-- [Azure network latency](https://learn.microsoft.com/en-us/azure/networking/azure-network-latency)
-  - Updated: 2026-07-02T17:11:00.000Z → 2026-07-30T22:15:00.000Z
+- [Design a secure hub-spoke network](https://learn.microsoft.com/en-us/azure/networking/cross-service-scenarios/design-secure-hub-spoke-network)
+  - Updated: 2026-03-24T22:22:00.000Z → 2026-08-05T08:00:00.000Z
+- [Zero Trust network for web applications](https://learn.microsoft.com/en-us/azure/networking/create-zero-trust-network-web-apps)
+  - Updated: 2023-01-23T12:15:00.000Z → 2026-08-05T08:00:00.000Z
+- [Secure application delivery](https://learn.microsoft.com/en-us/azure/networking/secure-application-delivery)
+  - Updated: 2024-06-17T08:00:00.000Z → 2026-08-06T05:14:00.000Z
+- [Secure network topology](https://learn.microsoft.com/en-us/azure/networking/secure-network-topology)
+  - Updated: 2024-06-17T08:00:00.000Z → 2026-08-06T05:14:00.000Z
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
+| [Secure application delivery](https://learn.microsoft.com/en-us/azure/networking/secure-application-delivery) | decision-making | 0.82 | The article uses a decision tree to help choose between secure application delivery options (for example, Azure Front Door at the edge vs. services within a virtual network) based on workload characteristics like global distribution and WAF usage. This is explicit technology selection guidance with scenario-based recommendations, fitting the decision-making sub-skill. |
 | [Application delivery](https://learn.microsoft.com/en-us/azure/networking/design-guide/app-delivery) | decision-making | 0.80 | Provides comparison and guidance on when to use Load Balancer, Application Gateway, and Front Door, including when to combine them for specific traffic patterns. |
 | [Azure Firewall](https://learn.microsoft.com/en-us/azure/networking/design-guide/azure-firewall) | security | 0.80 | Explains Azure Firewall capabilities and compares Basic, Standard, and Premium tiers with product-specific security and inspection features. |
 | [DNS and private name resolution](https://learn.microsoft.com/en-us/azure/networking/design-guide/dns-security) | security | 0.80 | Provides Azure-specific DNS patterns using private DNS zones, DNS Private Resolver, hybrid forwarding, Private Endpoint integration, and DNS-layer threat protection. |
@@ -78,10 +84,9 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Internet ingress](https://learn.microsoft.com/en-us/azure/networking/design-guide/internet-ingress) | decision-making | 0.80 | Compares Public IP, Load Balancer, Application Gateway, Front Door, and Traffic Manager with protocol, scale, and security criteria to guide choice. |
 | [Outbound egress](https://learn.microsoft.com/en-us/azure/networking/design-guide/outbound-egress) | decision-making | 0.80 | Compares NAT Gateway, Azure Firewall, and combined egress patterns with security and predictability considerations to guide outbound access design. |
 | [Private PaaS access](https://learn.microsoft.com/en-us/azure/networking/design-guide/private-platform-as-a-service) | decision-making | 0.80 | Explains differences between service endpoints, private endpoints, and Private Link with security/connectivity criteria to choose the right private access method. |
-| [Secure application delivery](https://learn.microsoft.com/en-us/azure/networking/secure-application-delivery) | decision-making | 0.80 | Uses a decision tree to select secure application delivery/topology options (edge vs VNet, WAF usage) with scenario-based guidance for web workloads. |
-| [Secure network topology](https://learn.microsoft.com/en-us/azure/networking/secure-network-topology) | decision-making | 0.80 | Provides a decision tree for choosing secure network topologies based on workload distribution and NVA usage, offering concrete selection guidance. |
+| [Secure network topology](https://learn.microsoft.com/en-us/azure/networking/secure-network-topology) | decision-making | 0.80 | The page provides a decision tree to select secure network topologies based on workload distribution (global vs single region) and use of third-party NVAs, giving structured guidance on which topology to choose under different conditions. This is product-specific decision-making content rather than a generic topology overview. |
 | [Web Application Firewall](https://learn.microsoft.com/en-us/azure/networking/design-guide/web-application-firewall) | security | 0.80 | Describes WAF behavior at HTTP layer and compares WAF on Application Gateway vs Front Door, providing Azure-specific web security design guidance. |
-| [Design a secure hub-spoke network](https://learn.microsoft.com/en-us/azure/networking/cross-service-scenarios/design-secure-hub-spoke-network) | architecture-patterns | 0.78 | Describes a repeatable, product-specific hub-spoke architecture pattern for regional web applications using Application Gateway, WAF, DDoS Protection, Bastion, NSGs, and VNet peering. Focuses on how to design a secure-by-default topology and when to use these components together, which is architecture guidance beyond generic concepts. |
+| [Design a secure hub-spoke network](https://learn.microsoft.com/en-us/azure/networking/cross-service-scenarios/design-secure-hub-spoke-network) | architecture-patterns | 0.78 | The article describes a repeatable, product-specific network architecture pattern (minimal hub-spoke topology) for regional web applications, including when to use this pattern and how to combine Application Gateway, WAF, DDoS Protection, Bastion, NSGs, and peering. This is concrete design guidance for Azure networking rather than a generic overview, matching architecture-patterns. |
 | [Azure Virtual WAN](https://learn.microsoft.com/en-us/azure/networking/design-guide/virtual-wan) | architecture-patterns | 0.75 | Explains Virtual WAN topology, managed hubs, routing, and compares with hub-and-spoke for branch connectivity and multi-region routing. |
 | [Cross-region and cross-cloud](https://learn.microsoft.com/en-us/azure/networking/design-guide/cross-region) | decision-making | 0.75 | Compares Global VNet Peering, Virtual WAN, ExpressRoute Global Reach, and cross-cloud VPN options to guide connectivity choices across regions and clouds. |
 | [DDoS protection](https://learn.microsoft.com/en-us/azure/networking/design-guide/ddos) | security | 0.75 | Compares infrastructure protection, DDoS Network Protection, and DDoS IP Protection with tier-specific capabilities for defending workloads. |
@@ -95,7 +100,7 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Security controls by Azure Policy](https://learn.microsoft.com/en-us/azure/networking/security-controls-policy) | security | 0.70 | Lists specific Azure Policy regulatory compliance controls and built-in definitions for networking services; includes product-specific policy names and mappings. |
 | [Single-workload flat network](https://learn.microsoft.com/en-us/azure/networking/design-guide/flat-network) | architecture-patterns | 0.70 | Describes the flat network pattern (one VNet, multiple subnets) and when it’s appropriate, with Azure-specific topology guidance. |
 | [Virtual networks and subnets](https://learn.microsoft.com/en-us/azure/networking/design-guide/vnets-subnets) | architecture-patterns | 0.70 | Contains product-specific guidance on VNet scope, subnet sizing, dedicated subnets, and when to use peering, including concrete design trade-offs. |
-| [Zero Trust network for web applications](https://learn.microsoft.com/en-us/azure/networking/create-zero-trust-network-web-apps) | architecture-patterns | 0.70 | Shows a concrete Zero Trust VNet configuration pattern using Azure Firewall, Application Gateway, WAF, and other services, specific to Azure web workloads. |
+| [Zero Trust network for web applications](https://learn.microsoft.com/en-us/azure/networking/create-zero-trust-network-web-apps) | architecture-patterns | 0.70 | The page focuses on a specific Zero Trust virtual network configuration pattern for web applications using Azure Firewall, Application Gateway, WAF, and other Azure networking services. It provides product-specific architectural guidance on how to structure the network for Zero Trust, which aligns with architecture-patterns rather than generic concepts. |
 | [Cross-cloud](https://learn.microsoft.com/en-us/azure/networking/design-guide/cross-cloud) | decision-making | 0.65 | Provides a guided path for connecting Azure to AWS/Google Cloud or migrating from other clouds, including scenario-based connectivity choices. |
 | [IP address planning](https://learn.microsoft.com/en-us/azure/networking/design-guide/ip-planning) | architecture-patterns | 0.65 | Provides detailed guidance on private/public IP allocation, avoiding overlaps, choosing IP types, and IPv6 dual-stack planning specific to Azure VNets. |
 | [Lift and shift](https://learn.microsoft.com/en-us/azure/networking/design-guide/lift-and-shift) | decision-making | 0.65 | Provides a sequenced path and stage-by-stage decisions for migrating on-premises workloads to Azure IaaS, guiding which networking options to choose at each step. |
