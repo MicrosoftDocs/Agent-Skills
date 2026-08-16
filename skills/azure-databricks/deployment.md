@@ -31,7 +31,7 @@
 | Upgrade Azure Databricks workspaces to Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/upgrade/ |
 | Deploy Lakeflow visual data prep files to production | https://learn.microsoft.com/en-us/azure/databricks/designer/production |
 | Run Databricks bundles in air-gapped environments via Docker | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/bundles/airgapped-environment |
-| Migrate Databricks bundles to direct deployment engine | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/bundles/direct |
+| Migrate Azure Databricks bundles to direct deployment | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/bundles/direct |
 | Deploy Declarative Automation Bundles from Databricks workspace | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/bundles/workspace-deploy |
 | Implement CI/CD for Azure Databricks with Azure DevOps | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/ci-cd/azure-devops |
 | Use GitHub Actions for CI/CD on Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/ci-cd/github |
@@ -39,12 +39,14 @@
 | Automate Databricks app CI/CD with GitHub Actions | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-apps/cicd-github-actions |
 | Prepare workspace and local environment for Databricks Apps | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-apps/configure-env |
 | Deploy Databricks apps via UI and CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-apps/deploy |
+| Deploy managed Amplitude ingestion pipelines in Databricks | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/amplitude-pipeline |
 | Build GitHub ingestion pipelines with Lakeflow Connect | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/github-pipeline |
 | Ingest GA4 data via Lakeflow Connect and BigQuery | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/google-analytics-pipeline |
 | Create managed Jira ingestion pipelines in Databricks | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/jira-pipeline |
 | Create and run MySQL ingestion pipelines in Databricks | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/mysql-pipeline |
 | Deploy OpenAI ingestion pipelines with Lakeflow Connect | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/openai-pipeline |
 | Ingest data from PostgreSQL using Lakeflow Connect | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/postgresql-pipeline |
+| Deploy SendGrid ingestion pipelines with Lakeflow Connect | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/sendgrid-pipeline |
 | Automate Lakeflow Jobs creation and management via APIs | https://learn.microsoft.com/en-us/azure/databricks/jobs/automate |
 | Plan Infrastructure as Code for Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/lakehouse-architecture/deployment-guide/iac |
 | Deploy Databricks batch LLM inference pipelines | https://learn.microsoft.com/en-us/azure/databricks/large-language-models/batch-inference-pipelines |
@@ -56,7 +58,7 @@
 | Start Ray clusters as jobs on Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ray/start-ray |
 | Package GenAI app code for Databricks Model Serving | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/prompt-version-mgmt/version-tracking/optionally-package-app-code-and-files-for-databricks-model-serving |
 | Deploy Lakebase projects with Declarative Bundles | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/dabs-typical-project |
-| Deploy Lakebase projects using Terraform | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/terraform-typical-project |
+| Deploy a production Lakebase project with Terraform | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/terraform-typical-project |
 | Set up Omnigent deployment on Databricks | https://learn.microsoft.com/en-us/azure/databricks/omnigent/quickstart |
 | Understand Lakeflow pipelines rolling release timing by region | https://learn.microsoft.com/en-us/azure/databricks/release-notes/dlt/2026 |
 | Integrate Databricks Git folders into CI/CD workflows | https://learn.microsoft.com/en-us/azure/databricks/repos/ci-cd |

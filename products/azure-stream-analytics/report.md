@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-19'
+generated_at: '2026-08-16'
 category_descriptions:
   configuration: 'Configuring Stream Analytics jobs: inputs, outputs (SQL, Cosmos
     DB, Event Hubs, Kafka, Power BI, Delta Lake, etc.), autoscale, ordering, error
@@ -7,9 +7,9 @@ category_descriptions:
   security: Securing Stream Analytics jobs with managed identities, private endpoints,
     VNets, data protection, credential rotation, and Azure Policy for outputs like
     Event Hubs, SQL, ADX, Cosmos DB, and Power BI
-  deployment: Deploying, starting/stopping, scaling, and moving Stream Analytics jobs
-    and clusters, plus CI/CD automation via ARM/Bicep, GitHub Actions, Azure DevOps,
-    npm/NuGet, and IoT Edge/Stack Hub.
+  deployment: Automating deployment, migration, and lifecycle (start/stop/delete)
+    of Stream Analytics jobs and clusters using ARM/Bicep, GitHub Actions, Azure DevOps,
+    REST, and edge/Stack Hub tools
   troubleshooting: 'Diagnosing and fixing Stream Analytics job issues: error codes
     (config, data, internal/external), input/output and query problems, and debugging
     with job diagrams, metrics, logs, and UDF tools.'
@@ -31,30 +31,30 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Stream Analytics development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when building jobs with Event Hubs/Kafka, Cosmos DB/SQL outputs, ML/AML integration,
-  IoT Edge, or Power BI, and other Azure Stream Analytics related development tasks.
-  Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure Data Factory
-  (use azure-data-factory), Azure Event Hubs (use azure-event-hubs), Azure Data Explorer
-  (use azure-data-explorer).
-use_when: Use when building jobs with Event Hubs/Kafka, Cosmos DB/SQL outputs, ML/AML
-  integration, IoT Edge, or Power BI, and other Azure Stream Analytics related development
-  tasks.
-confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics),
-  Azure Data Factory (use azure-data-factory), Azure Event Hubs (use azure-event-hubs),
-  Azure Data Explorer (use azure-data-explorer).
+  Use when building ASA jobs with Event Hubs/Kafka, Cosmos DB/SQL outputs, ML/AML
+  integration, UDFs, or IoT Edge, and other Azure Stream Analytics related development
+  tasks. Not for Azure Data Explorer (use azure-data-explorer), Azure Event Hubs (use
+  azure-event-hubs), Azure Functions (use azure-functions), Azure Synapse Analytics
+  (use azure-synapse-analytics).
+use_when: Use when building ASA jobs with Event Hubs/Kafka, Cosmos DB/SQL outputs,
+  ML/AML integration, UDFs, or IoT Edge, and other Azure Stream Analytics related
+  development tasks.
+confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure Event
+  Hubs (use azure-event-hubs), Azure Functions (use azure-functions), Azure Synapse
+  Analytics (use azure-synapse-analytics).
 ---
 # Azure Stream Analytics Crawl Report
 
 ## Summary
 
-- **Total Pages**: 164
-- **Fetched**: 164
+- **Total Pages**: 165
+- **Fetched**: 165
 - **Fetch Failed**: 0
-- **Classified**: 108
+- **Classified**: 109
 - **Unclassified**: 56
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
 - **Unchanged**: 164
 - **Deleted Pages**: 0
@@ -66,16 +66,20 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 |------|-------|------------|
 | architecture-patterns | 2 | 1.2% |
 | best-practices | 13 | 7.9% |
-| configuration | 30 | 18.3% |
+| configuration | 30 | 18.2% |
 | decision-making | 4 | 2.4% |
-| deployment | 10 | 6.1% |
+| deployment | 11 | 6.7% |
 | integrations | 14 | 8.5% |
 | limits-quotas | 3 | 1.8% |
-| security | 16 | 9.8% |
-| troubleshooting | 16 | 9.8% |
-| *(Unclassified)* | 56 | 34.1% |
+| security | 16 | 9.7% |
+| troubleshooting | 16 | 9.7% |
+| *(Unclassified)* | 56 | 33.9% |
 
 ## Changes
+
+### New Pages
+
+- [Move job to another region](https://learn.microsoft.com/en-us/azure/stream-analytics/move-across-regions)
 
 ## Classified Pages
 
@@ -174,6 +178,7 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | [Azure Functions](https://learn.microsoft.com/en-us/azure/stream-analytics/azure-functions-output) | configuration | 0.65 | Describes an output adapter to Functions; such pages usually define binding parameters, payload formats, and configuration fields unique to this integration. |
 | [C# UDF](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-edge-csharp-udf-methods) | integrations | 0.65 | Covers writing C# UDFs with Stream Analytics’ .NET Standard interface; such content includes method signatures, attribute usage, and deployment specifics unique to this product. |
 | [Geospatial scenarios](https://learn.microsoft.com/en-us/azure/stream-analytics/geospatial-scenarios) | best-practices | 0.65 | Uses built-in geospatial functions for specific scenarios; likely includes concrete query patterns and product-specific function usage that serve as best-practice patterns. |
+| [Move job to another region](https://learn.microsoft.com/en-us/azure/stream-analytics/move-across-regions) | deployment | 0.65 | Provides a product-specific, end-to-end migration pattern for redeploying Stream Analytics jobs to another region using ARM templates and recreating inputs/outputs/identities. This is concrete deployment/migration guidance rather than a generic overview, and includes a recommended cutover approach that an LLM is unlikely to infer from general knowledge. |
 | [Parse JSON and AVRO data](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-parsing-json) | integrations | 0.65 | The page explains how Azure Stream Analytics specifically parses JSON/Avro/CSV and complex types (nested objects, arrays), which involves product-specific query syntax and handling rules. This is expert, integration-oriented knowledge about how to work with these formats in this service, aligning best with integrations & coding patterns. |
 | [Power BI](https://learn.microsoft.com/en-us/azure/stream-analytics/power-bi-output) | configuration | 0.65 | Power BI output integration typically includes product-specific settings (workspace, dataset, authentication, region availability) and constraints (e.g., deprecation notes, unsupported clouds). These are configuration details and constraints unique to this integration that go beyond generic SDK usage. |
 | [Service Bus queues](https://learn.microsoft.com/en-us/azure/stream-analytics/service-bus-queues-output) | configuration | 0.65 | Service Bus output adapter pages typically list configuration properties (queue name, authentication, serialization) and protocol details (AMQP usage) that are product-specific configuration parameters. |

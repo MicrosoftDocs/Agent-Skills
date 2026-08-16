@@ -1,14 +1,14 @@
 ---
-generated_at: '2026-07-26'
+generated_at: '2026-08-16'
 category_descriptions:
   decision-making: Guidance on when to use single-slot vs multi-slot Personalizer,
     comparing scenarios, behavior, and design tradeoffs for different personalization
     needs.
   security: Configuring encryption at rest (including customer-managed keys) and controlling
     data collection, storage, and privacy settings for Azure Personalizer.
-  troubleshooting: 'Diagnosing and fixing common Azure Personalizer problems: configuration
-    and training issues, API/latency errors, low reward performance, and steps to
-    debug and resolve service failures.'
+  troubleshooting: 'Diagnosing and fixing common Azure Personalizer issues: API errors,
+    event/Reward calls, model training problems, configuration mistakes, and steps
+    to validate and debug your setup.'
   configuration: 'Configuring Personalizer’s learning behavior: policies, hyperparameters,
     exploration, apprentice mode, explainability, model export, and learning loop
     settings.'
@@ -17,17 +17,17 @@ category_descriptions:
     the model locally.
 skill_description: Expert knowledge for Azure AI Personalizer development including
   troubleshooting, decision making, security, configuration, and integrations & coding
-  patterns. Use when choosing single vs multi-slot, tuning exploration policies, configuring
-  CMK encryption, debugging low rewards, or using local inference SDK, and other Azure
-  AI Personalizer related development tasks. Not for Azure AI Metrics Advisor (use
-  azure-metrics-advisor), Azure AI Anomaly Detector (use azure-anomaly-detector),
-  Azure Machine Learning (use azure-machine-learning).
-use_when: Use when choosing single vs multi-slot, tuning exploration policies, configuring
-  CMK encryption, debugging low rewards, or using local inference SDK, and other Azure
-  AI Personalizer related development tasks.
-confusable_not_for: Not for Azure AI Metrics Advisor (use azure-metrics-advisor),
-  Azure AI Anomaly Detector (use azure-anomaly-detector), Azure Machine Learning (use
-  azure-machine-learning).
+  patterns. Use when choosing single vs multi-slot setups, tuning policies/exploration,
+  using apprentice mode, explainability, or local inference, and other Azure AI Personalizer
+  related development tasks. Not for Azure AI Search (use azure-cognitive-search),
+  Azure Machine Learning (use azure-machine-learning), Azure AI Metrics Advisor (use
+  azure-metrics-advisor), Azure AI Anomaly Detector (use azure-anomaly-detector).
+use_when: Use when choosing single vs multi-slot setups, tuning policies/exploration,
+  using apprentice mode, explainability, or local inference, and other Azure AI Personalizer
+  related development tasks.
+confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure Machine
+  Learning (use azure-machine-learning), Azure AI Metrics Advisor (use azure-metrics-advisor),
+  Azure AI Anomaly Detector (use azure-anomaly-detector).
 ---
 # Azure AI Personalizer Crawl Report
 
@@ -41,8 +41,8 @@ confusable_not_for: Not for Azure AI Metrics Advisor (use azure-metrics-advisor)
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 35
+- **Updated Pages**: 1
+- **Unchanged**: 34
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-personalizer/azure-personalizer.csv`
 
@@ -59,12 +59,17 @@ confusable_not_for: Not for Azure AI Metrics Advisor (use azure-metrics-advisor)
 
 ## Changes
 
+### Updated Pages
+
+- [Personalizer FAQ](https://learn.microsoft.com/en-us/azure/ai-services/personalizer/frequently-asked-questions)
+  - Updated: 2026-06-05T22:11:00.000Z → 2026-08-14T22:13:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
 | [Use customer-managed keys](https://learn.microsoft.com/en-us/azure/ai-services/personalizer/encrypt-data-at-rest) | security | 0.80 | Explicitly about encryption and using Key Vault for customer-managed keys; will contain key types, configuration steps, and possibly RBAC/identity scopes specific to Personalizer. |
-| [Personalizer FAQ](https://learn.microsoft.com/en-us/azure/ai-services/personalizer/frequently-asked-questions) | troubleshooting | 0.78 | The FAQ is explicitly described as containing answers to frequently asked troubleshooting questions for Azure Personalizer, which aligns with symptom → cause → solution style content and likely includes product-specific error behaviors and resolutions that go beyond generic debugging knowledge. |
+| [Personalizer FAQ](https://learn.microsoft.com/en-us/azure/ai-services/personalizer/frequently-asked-questions) | troubleshooting | 0.78 | The page is an FAQ specifically described as containing answers to frequently asked troubleshooting questions for Personalizer. Such FAQs typically map concrete symptoms and issues to causes and resolutions, often including service-specific behaviors, error conditions, and guidance that go beyond generic debugging knowledge, fitting the troubleshooting sub-skill definition. |
 | [Configure Personalizer](https://learn.microsoft.com/en-us/azure/ai-services/personalizer/how-to-settings) | configuration | 0.75 | Described as service configuration for rewards, exploration, retraining, and data storage; likely includes named settings, allowed ranges, and defaults specific to Personalizer. |
 | [Use local inference](https://learn.microsoft.com/en-us/azure/ai-services/personalizer/how-to-thick-client) | integrations | 0.70 | Local inference SDK usage is an integration pattern; likely includes SDK-specific parameters, update intervals, and configuration details unique to Personalizer. |
 | [Data and privacy](https://learn.microsoft.com/en-us/azure/ai-services/personalizer/responsible-data-and-privacy) | security | 0.65 | Data and privacy article for a specific service typically details what data is logged, retention controls, and service-specific privacy settings, which are product-specific security/privacy configurations. |

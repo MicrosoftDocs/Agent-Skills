@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Role-based access control (use azure-rbac), Az
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 288
+- **Updated Pages**: 0
+- **Unchanged**: 289
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-active-directory-b2c/azure-active-directory-b2c.csv`
 
@@ -76,11 +76,6 @@ confusable_not_for: Not for Azure Role-based access control (use azure-rbac), Az
 | *(Unclassified)* | 33 | 11.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [Page layout versions](https://learn.microsoft.com/en-us/azure/active-directory-b2c/page-layout)
-  - Updated: 2025-07-17T22:14:00.000Z → 2025-08-07T08:00:00.000Z
 
 ## Classified Pages
 

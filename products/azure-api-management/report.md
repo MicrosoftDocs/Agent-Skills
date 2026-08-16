@@ -1,9 +1,12 @@
 ---
-generated_at: '2026-08-09'
+generated_at: '2026-08-16'
 category_descriptions:
   integrations: Patterns and samples for integrating API Management with LLMs, backends,
     logging/monitoring, events, OAuth, GitHub, Dapr, and exporting/importing APIs
     via OpenAPI, Postman, and Power Platform
+  configuration: Configuring Azure API Management services, gateways, networking,
+    caching, monitoring, and detailed policy behaviors (rate limits, CORS, LLM/GraphQL,
+    caching, headers, retries, mock/redirect, etc.).
   security: 'Securing APIs and gateways: auth (OAuth, JWT, Entra, B2C, certs, basic),
     RBAC and identities, TLS/ciphers, policies, private networking, DDoS/Defender,
     and secure developer portal/self-hosted gateway.'
@@ -13,9 +16,6 @@ category_descriptions:
   decision-making: 'Guidance for planning and migrating API Management: pricing and
     scaling, cost control, DevOps/CI/CD, VNet choices, workspace and portal changes,
     and moving from legacy or other platforms.'
-  configuration: 'Configuring APIM behavior: policies, caching, domains, networking/VNet,
-    gateways, monitoring/metrics, developer portal, subscriptions/users, and integration
-    with external services.'
   troubleshooting: 'Diagnosing and fixing APIM issues: policies and error handling,
     request tracing/debugging, custom domain/Key Vault cert failures, SNAT timeouts,
     portal problems, and using Diagnose and Solve.'
@@ -31,16 +31,15 @@ category_descriptions:
 skill_description: Expert knowledge for Azure API Management development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when securing APIM gateways, integrating LLM/backends, configuring policies/VNet,
-  or deploying self-hosted gateways, and other Azure API Management related development
-  tasks. Not for Azure App Service (use azure-app-service), Azure Functions (use azure-functions),
-  Azure Logic Apps (use azure-logic-apps), Azure Web Application Firewall (use azure-web-application-firewall).
-use_when: Use when securing APIM gateways, integrating LLM/backends, configuring policies/VNet,
-  or deploying self-hosted gateways, and other Azure API Management related development
+  Use when integrating APIM with LLMs, OAuth backends, VNet/self-hosted gateways,
+  Front Door/App Gateway, or CI/CD, and other Azure API Management related development
+  tasks. Not for Azure Functions (use azure-functions), Azure Logic Apps (use azure-logic-apps),
+  Azure Service Bus (use azure-service-bus).
+use_when: Use when integrating APIM with LLMs, OAuth backends, VNet/self-hosted gateways,
+  Front Door/App Gateway, or CI/CD, and other Azure API Management related development
   tasks.
-confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Functions
-  (use azure-functions), Azure Logic Apps (use azure-logic-apps), Azure Web Application
-  Firewall (use azure-web-application-firewall).
+confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic Apps
+  (use azure-logic-apps), Azure Service Bus (use azure-service-bus).
 ---
 # Azure API Management Crawl Report
 
@@ -54,9 +53,9 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 
 ### Incremental Update
 - **New Pages**: 1
-- **Updated Pages**: 4
-- **Unchanged**: 278
-- **Deleted Pages**: 0
+- **Updated Pages**: 3
+- **Unchanged**: 279
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-api-management/azure-api-management.csv`
 
 ## Classification Statistics
@@ -65,12 +64,12 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 |------|-------|------------|
 | architecture-patterns | 3 | 1.1% |
 | best-practices | 6 | 2.1% |
-| configuration | 94 | 33.2% |
+| configuration | 95 | 33.6% |
 | decision-making | 15 | 5.3% |
 | deployment | 17 | 6.0% |
 | integrations | 28 | 9.9% |
 | limits-quotas | 15 | 5.3% |
-| security | 40 | 14.1% |
+| security | 39 | 13.8% |
 | troubleshooting | 5 | 1.8% |
 | *(Unclassified)* | 60 | 21.2% |
 
@@ -78,18 +77,20 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 
 ### New Pages
 
-- [Retirement of TLS 1.0 and TLS 1.1 (October 2025)](https://learn.microsoft.com/en-us/azure/api-management/breaking-changes/tls-versions-retirement-oct-2025)
+- [Private networking - AI Gateway tier (preview)](https://learn.microsoft.com/en-us/azure/api-management/ai-gateway-configure-private-networking)
 
 ### Updated Pages
 
-- [Manage protocols and ciphers](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-manage-protocols-ciphers)
-  - Updated: 2026-01-06T08:00:00.000Z → 2026-08-04T05:12:00.000Z
-- [llm-content-safety](https://learn.microsoft.com/en-us/azure/api-management/llm-content-safety-policy)
-  - Updated: 2026-05-21T08:00:00.000Z → 2026-08-07T08:00:00.000Z
-- [Breaking changes overview](https://learn.microsoft.com/en-us/azure/api-management/breaking-changes/overview)
-  - Updated: 2025-12-06T06:11:00.000Z → 2026-08-04T05:12:00.000Z
-- [Email notifications and templates](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-configure-notifications)
-  - Updated: 2026-05-14T22:12:00.000Z → 2026-08-03T17:13:00.000Z
+- [set-variable](https://learn.microsoft.com/en-us/azure/api-management/set-variable-policy)
+  - Updated: 2026-06-29T22:28:00.000Z → 2026-08-12T17:21:00.000Z
+- [emit-metric](https://learn.microsoft.com/en-us/azure/api-management/emit-metric-policy)
+  - Updated: 2025-07-28T17:12:00.000Z → 2026-06-25T22:12:00.000Z
+- [llm-emit-token-metric](https://learn.microsoft.com/en-us/azure/api-management/llm-emit-token-metric-policy)
+  - Updated: 2026-06-16T05:25:00.000Z → 2026-06-26T05:22:00.000Z
+
+### Deleted Pages
+
+- ~~Configure private networking~~ (https://learn.microsoft.com/en-us/azure/api-management/ai-gateway-configure-private-networking)
 
 ## Classified Pages
 
@@ -166,7 +167,6 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [get-authorization-context](https://learn.microsoft.com/en-us/azure/api-management/get-authorization-context-policy) | security | 0.78 | Explains how to fetch and store tokens from configured credential providers via connections; product-specific auth/authorization configuration. |
 | [jsonp](https://learn.microsoft.com/en-us/azure/api-management/jsonp-policy) | configuration | 0.78 | Details policy elements to add JSONP support, including callback parameter configuration, which is specific to APIM policy behavior. |
 | [llm-content-safety](https://learn.microsoft.com/en-us/azure/api-management/llm-content-safety-policy) | configuration | 0.78 | Policy reference pages for Azure API Management typically list specific policy elements, attributes, allowed values, and examples. A content-safety policy for LLMs will include configuration parameters (such as categories, severity thresholds, actions on violation, and integration settings with Azure AI Content Safety) that are product-specific and not generally known from training. This fits the configuration sub-skill, as it focuses on how to set and use these parameters rather than generic concepts. |
-| [llm-emit-token-metric](https://learn.microsoft.com/en-us/azure/api-management/llm-emit-token-metric-policy) | configuration | 0.78 | Policy reference pages for Azure API Management typically list specific policy elements, attribute names, allowed values, and sometimes defaults. This page describes the llm-emit-token-metric policy, including how to configure it to send token metrics to Application Insights. That constitutes product-specific configuration parameters rather than generic concepts, so it fits the configuration sub-skill. The summary indicates ordered elements and child elements, implying a structured configuration schema. |
 | [publish-to-dapr](https://learn.microsoft.com/en-us/azure/api-management/publish-to-dapr-policy) | integrations | 0.78 | Policy reference pages for APIM typically list exact policy attributes, allowed values, and default behaviors. This page describes the publish-to-dapr policy, including the specific HTTP endpoint format (http://localhost:3500/v1.0/publish/{{pubsub-name}}/{{topic}}), assumptions about the Dapr sidecar, and policy configuration details that are product- and integration-specific and not just conceptual. |
 | [rate-limit](https://learn.microsoft.com/en-us/azure/api-management/rate-limit-policy) | configuration | 0.78 | Policy reference pages list exact policy element names, attributes, allowed values, and behavior (e.g., how calls are counted, response behavior when limits are exceeded). This is product-specific configuration detail for the rate-limit policy, not just conceptual throttling guidance. |
 | [rate-limit-by-key](https://learn.microsoft.com/en-us/azure/api-management/rate-limit-by-key-policy) | configuration | 0.78 | The rate-limit-by-key policy reference describes specific configuration attributes (key, calls, renewal period, optional increment condition) and how they affect throttling behavior per key. These are detailed, product-specific policy configuration options rather than generic rate limiting concepts. |
@@ -208,6 +208,7 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [API Management features availability](https://learn.microsoft.com/en-us/azure/api-management/api-management-features) | decision-making | 0.72 | Page provides a feature-based comparison of Azure API Management tiers, summarizing which capabilities are available in each tier. This is tier/SKU selection guidance with a comparison table that helps decide which tier to choose, matching the decision-making criteria. It’s not focused on numeric limits/quotas but on feature availability per tier. |
 | [Configure multiple connections](https://learn.microsoft.com/en-us/azure/api-management/configure-credential-connection) | configuration | 0.72 | Describes setting up multiple connections to a credential provider; likely includes specific UI/config parameters and constraints for APIM credential manager that are product-specific. |
 | [Options to secure developer portal access](https://learn.microsoft.com/en-us/azure/api-management/secure-developer-portal-access) | security | 0.72 | Describes concrete security configuration options for the API Management developer portal (Microsoft Entra ID, External ID, basic auth, anonymous access default). While the summary is high level, this page typically includes product-specific security settings and configuration steps (e.g., toggling anonymous access, choosing auth providers) that go beyond generic security concepts. |
+| [Private networking - AI Gateway tier (preview)](https://learn.microsoft.com/en-us/azure/api-management/ai-gateway-configure-private-networking) | configuration | 0.72 | The page describes product-specific networking configuration for the AI Gateway tier, including how to set up inbound Private Link and outbound virtual network integration. It likely includes concrete settings (e.g., private endpoint configuration, subnet requirements, DNS considerations, and gateway-specific options) that are unique to this tier and not generally known from training. This aligns best with the configuration sub-skill, as it focuses on specific networking parameters and how to configure them rather than generic networking concepts. |
 | [ADAL-based identity provider retirement (September 2025)](https://learn.microsoft.com/en-us/azure/api-management/breaking-changes/identity-provider-adal-retirement-sep-2025) | security | 0.70 | Explains retirement of ADAL-based auth in the developer portal, affected identity providers, and required configuration changes to MSAL, which are detailed security/auth configuration decisions. |
 | [API Management policies overview](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-policies) | configuration | 0.70 | The page describes concrete, product-specific policy configuration for Azure API Management (over 75 built-in policies, applied sequentially on request/response). Policy usage and configuration details (policy names, where they run in the pipeline, and how they alter behavior such as authentication, rate limiting, caching, and transformations) are specific to APIM and go beyond generic concepts, fitting the configuration category best. |
 | [API version retirements (June 2024)](https://learn.microsoft.com/en-us/azure/api-management/breaking-changes/api-version-retirement-sep-2023) | decision-making | 0.70 | Specifies retirement of all API versions prior to 2021-08-01 and instructs updating tools/scripts to newer versions, which is concrete migration and version-selection decision guidance. |
@@ -223,7 +224,6 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [Configure credential manager - GitHub API](https://learn.microsoft.com/en-us/azure/api-management/credentials-how-to-github) | integrations | 0.70 | The article describes creating a managed connection from Azure API Management to the GitHub API using OAuth 2.0 authorization code grant. This involves product-specific integration steps, including configuration of connection/credential manager settings and OAuth parameters unique to APIM↔GitHub integration, which qualifies as expert integration knowledge rather than a generic tutorial. |
 | [Configure credential manager - user-delegated permissions](https://learn.microsoft.com/en-us/azure/api-management/credentials-how-to-user-delegated) | integrations | 0.70 | Guides configuring managed connections with user-delegated permissions to backend OAuth 2.0 APIs; likely details APIM credential manager settings and Entra/user delegation parameters not generally known. |
 | [Configure custom domain for self-hosted gateway](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-configure-custom-domain-gateway) | configuration | 0.70 | Custom DNS/hostname mapping for gateway; likely includes specific configuration steps, certificate requirements, and APIM settings. |
-| [Configure private networking](https://learn.microsoft.com/en-us/azure/api-management/ai-gateway-configure-private-networking) | security | 0.70 | Covers inbound Private Link and outbound VNet integration for AI Gateway; this typically includes product-specific networking and security configuration parameters, endpoint settings, and constraints that qualify as expert security-related configuration knowledge. |
 | [Configure update settings](https://learn.microsoft.com/en-us/azure/api-management/configure-service-update-settings) | configuration | 0.70 | Describes product-specific settings for service updates (upgrade groups, maintenance windows) with concrete configuration options and constraints for different API Management tiers, which are not generic knowledge. |
 | [Create and manage MCP servers programmatically](https://learn.microsoft.com/en-us/azure/api-management/manage-mcp-servers-rest-api) | configuration | 0.70 | Describes product-specific management of MCP servers via REST API, ARM templates, Bicep, CLI, and Terraform, including the requirement to pin REST API version 2025-09-01-preview or later. This is concrete, configuration-oriented guidance with versioning details that go beyond generic knowledge. |
 | [Create self-hosted portal](https://learn.microsoft.com/en-us/azure/api-management/developer-portal-self-host) | deployment | 0.70 | Tutorial for self-hosting includes environment requirements and product-specific hosting/deployment steps for the portal, which are not generic deployment knowledge. |
@@ -277,8 +277,9 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [Virtual network changes (September 2023)](https://learn.microsoft.com/en-us/azure/api-management/breaking-changes/rp-source-ip-address-change-sep-2023) | configuration | 0.70 | Provides exact new source IP address for Switzerland North and steps to adjust network configuration, which are concrete configuration details. |
 | [cache-remove-value](https://learn.microsoft.com/en-us/azure/api-management/cache-remove-value-policy) | configuration | 0.70 | Policy reference pages for Azure API Management include product-specific policy elements, attributes, and usage constraints that act as configuration parameters unique to this service. This goes beyond generic knowledge by detailing how to configure and use the cache-remove-value policy, including required/optional elements and ordering. |
 | [cross-domain](https://learn.microsoft.com/en-us/azure/api-management/cross-domain-policy) | configuration | 0.70 | Policy reference for enabling Flash/Silverlight cross-domain access with specific configuration elements; product-specific policy configuration. |
-| [emit-metric](https://learn.microsoft.com/en-us/azure/api-management/emit-metric-policy) | configuration | 0.70 | The emit-metric policy reference documents concrete policy attributes and formats for sending metrics to Application Insights, including configuration parameters unique to API Management. |
-| [set-variable](https://learn.microsoft.com/en-us/azure/api-management/set-variable-policy) | configuration | 0.70 | Policy reference pages typically list exact syntax, attributes, and configuration options (such as element ordering requirements and expression behavior) that are specific to Azure API Management and not generally known from training. This page describes how to declare and assign context variables with set-variable, including type behavior and ordering constraints, which fits product-specific configuration details. |
+| [emit-metric](https://learn.microsoft.com/en-us/azure/api-management/emit-metric-policy) | configuration | 0.70 | Policy reference pages for API Management typically include exact policy element names, attributes, allowed values, and usage constraints that are product-specific configuration details. This page describes how to configure the emit-metric policy (including its elements and required ordering) to send custom metrics to Application Insights, which fits the configuration sub-skill definition. |
+| [llm-emit-token-metric](https://learn.microsoft.com/en-us/azure/api-management/llm-emit-token-metric-policy) | configuration | 0.70 | This is a policy reference for the llm-emit-token-metric policy, which sends LLM token consumption metrics to Application Insights. Such references include specific policy element names, attributes, and constraints (including preview-only behaviors and token category handling) that are product-specific configuration details, matching the configuration sub-skill type. |
+| [set-variable](https://learn.microsoft.com/en-us/azure/api-management/set-variable-policy) | configuration | 0.70 | Policy reference pages for APIM typically list exact policy syntax, attribute names, allowed values, and behavior details (for example, how expressions are evaluated, type conversion rules like literals becoming System.String, and ordering requirements for elements). These are product-specific configuration details that go beyond generic LLM knowledge and map directly to configuration parameters and usage patterns for the set-variable policy. |
 | [trace](https://learn.microsoft.com/en-us/azure/api-management/trace-policy) | configuration | 0.70 | The trace policy reference defines specific policy elements and options for emitting traces to the test console, Application Insights, and logs, which are detailed configuration parameters. |
 | [validate-graphql-request](https://learn.microsoft.com/en-us/azure/api-management/validate-graphql-request-policy) | security | 0.70 | A validate-graphql-request policy reference will include concrete policy elements, attributes, and allowed values that control validation and authorization of GraphQL query paths. These are product-specific configuration and authorization details, mapping to security (authorization rules) with explicit policy syntax rather than generic concepts. |
 | [validate-headers](https://learn.microsoft.com/en-us/azure/api-management/validate-headers-policy) | limits-quotas | 0.70 | Policy reference includes a specific maximum API schema size limit (4 MB) and behavior when exceeded; this is an explicit numeric limit/constraint. |

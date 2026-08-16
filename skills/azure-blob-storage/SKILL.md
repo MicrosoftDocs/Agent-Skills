@@ -1,9 +1,9 @@
 ---
 name: azure-blob-storage
-description: Expert knowledge for Azure Blob Storage development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Blob tiers, Data Lake, NFS/SFTP, static websites, or SDK/CLI data operations, and other Azure Blob Storage related development tasks. Not for Azure Files (use azure-files), Azure Queue Storage (use azure-queue-storage), Azure Table Storage (use azure-table-storage), Azure NetApp Files (use azure-netapp-files).
+description: Expert knowledge for Azure Blob Storage development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using access tiers, lifecycle rules, immutability/soft delete, NFS/SFTP, or BlobFuse/BlobFuse2 mounts, and other Azure Blob Storage related development tasks. Not for Azure Files (use azure-files), Azure Queue Storage (use azure-queue-storage), Azure Table Storage (use azure-table-storage), Azure Cosmos DB (use azure-cosmos-db).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-09"
+  generated_at: "2026-08-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Blob Storage Skill
@@ -29,7 +29,7 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L83-L109 | Cost planning and design choices for Blob Storage: tiers, archive retrieval, networking, reserved capacity, migration tools, data protection, and mapping operations to billing. |
 | Limits & Quotas | L110-L128 | Limits, quotas, and performance/scalability behavior for Blob Storage features (archive, NFS, SFTP, static sites, replication, premium tiers), including known issues and latency guarantees. |
 | Security | L129-L187 | Securing Blob Storage access: RBAC/ABAC, Entra auth, SAS tokens, SFTP, ACLs, Storage Mover, anonymous access remediation, and encryption (CSE, keys, scopes, BlobFuse2). |
-| Configuration | L188-L249 | Configuring monitoring, lifecycle, immutability, restore, networking, and client tools (BlobFuse, Storage Mover), plus third‑party backup/migration integrations for Azure Blob Storage. |
+| Configuration | L188-L249 | Configuring Azure Blob Storage features: monitoring, lifecycle, immutability, soft delete, versioning, PITR, BlobFuse mounts, networking, inventory, and third‑party backup/migration tools. |
 | Integrations & Coding Patterns | L250-L376 | SDK, CLI, and tooling patterns for integrating with Blob Storage/ADLS: mounting, uploads/downloads, copy/delete/restore, leases, metadata, access tiers, tags, SAS, events, and language-specific code samples. |
 | Deployment | L377-L390 | Guides for deploying static websites on Blob Storage, enabling Data Lake features, and migrating data from on-prem, AWS, and third‑party NAS solutions into Azure Storage. |
 
@@ -207,7 +207,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure BlobFuse2 settings via YAML and environment variables | https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-configuration |
 | Configure BlobFuse connection and caching settings | https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-configure |
 | Configure BlobFuse caching mode and optimize workloads | https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-configure-caching |
-| Configure BlobFuse for streaming mode workloads | https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-configure-streaming |
+| Configure BlobFuse streaming mode for Azure Blob Storage | https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-configure-streaming |
 | Configure logging levels and outputs for BlobFuse | https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-enable-logs |
 | Monitor BlobFuse mounts and resource usage | https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-health-monitor |
 | Mount Azure Blob containers on Linux with BlobFuse | https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-mount-container |

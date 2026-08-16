@@ -28,6 +28,13 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 - **Classified**: 3
 - **Unclassified**: 8
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 11
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-application-network/azure-application-network.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -35,6 +42,8 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | configuration | 2 | 18.2% |
 | decision-making | 1 | 9.1% |
 | *(Unclassified)* | 8 | 72.7% |
+
+## Changes
 
 ## Classified Pages
 

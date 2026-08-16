@@ -1,12 +1,11 @@
 ---
-generated_at: '2026-08-02'
+generated_at: '2026-08-16'
 category_descriptions:
   configuration: Configuring Azure Advisor alerts, digests, and recommendation states
     via portal, ARM/Bicep, tags, and workbooks to control how and when recommendations
     are delivered and viewed.
-  best-practices: Guidance on using Azure Advisor for Well-Architected assessments
-    and bulk fixes to optimize cost, performance, reliability, and operational excellence
-    across VMs and other services.
+  best-practices: Using Azure Advisor to assess architectures, optimize VM costs/performance,
+    estimate savings, bulk-fix recommendations, and apply reliability best practices.
   decision-making: Using Advisor workbooks and critical risk views to assess reliability,
     plan migrations, and estimate cost impact of Azure Advisor recommendations across
     key resources
@@ -19,15 +18,15 @@ category_descriptions:
     and apps have appropriate access to Advisor recommendations and data
 skill_description: Expert knowledge for Azure Advisor development including best practices,
   decision making, limits & quotas, security, configuration, and integrations & coding
-  patterns. Use when managing Advisor alerts, digests, recommendation states, Resource
-  Graph queries, or RBAC access, and other Azure Advisor related development tasks.
-  Not for Azure Cost Management (use azure-cost-management), Azure Monitor (use azure-monitor),
-  Azure Policy (use azure-policy), Azure Security (use azure-security).
-use_when: Use when managing Advisor alerts, digests, recommendation states, Resource
-  Graph queries, or RBAC access, and other Azure Advisor related development tasks.
-confusable_not_for: Not for Azure Cost Management (use azure-cost-management), Azure
-  Monitor (use azure-monitor), Azure Policy (use azure-policy), Azure Security (use
-  azure-security).
+  patterns. Use when tuning Advisor alerts, digests, and states, bulk-fixing savings,
+  or querying recommendations via Resource Graph, and other Azure Advisor related
+  development tasks. Not for Cost Management (use azure-cost-management), Azure Monitor
+  (use azure-monitor), Azure Policy (use azure-policy), Azure Security (use azure-security).
+use_when: Use when tuning Advisor alerts, digests, and states, bulk-fixing savings,
+  or querying recommendations via Resource Graph, and other Azure Advisor related
+  development tasks.
+confusable_not_for: Not for Cost Management (use azure-cost-management), Azure Monitor
+  (use azure-monitor), Azure Policy (use azure-policy), Azure Security (use azure-security).
 ---
 # Azure Advisor Crawl Report
 
@@ -36,13 +35,13 @@ confusable_not_for: Not for Azure Cost Management (use azure-cost-management), A
 - **Total Pages**: 33
 - **Fetched**: 33
 - **Fetch Failed**: 0
-- **Classified**: 20
-- **Unclassified**: 13
+- **Classified**: 21
+- **Unclassified**: 12
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 33
+- **Updated Pages**: 1
+- **Unchanged**: 32
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-advisor/azure-advisor.csv`
 
@@ -50,15 +49,20 @@ confusable_not_for: Not for Azure Cost Management (use azure-cost-management), A
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| best-practices | 5 | 15.2% |
+| best-practices | 6 | 18.2% |
 | configuration | 7 | 21.2% |
 | decision-making | 5 | 15.2% |
 | integrations | 1 | 3.0% |
 | limits-quotas | 1 | 3.0% |
 | security | 1 | 3.0% |
-| *(Unclassified)* | 13 | 39.4% |
+| *(Unclassified)* | 12 | 36.4% |
 
 ## Changes
+
+### Updated Pages
+
+- [Reliability](https://learn.microsoft.com/en-us/azure/advisor/advisor-reference-reliability-recommendations)
+  - Updated: 2026-07-28T08:00:00.000Z → 2026-08-11T08:00:00.000Z
 
 ## Classified Pages
 
@@ -69,6 +73,7 @@ confusable_not_for: Not for Azure Cost Management (use azure-cost-management), A
 | [Advisor MCP Tools](https://learn.microsoft.com/en-us/azure/advisor/advisor-mcp-tools) | integrations | 0.70 | Describes Azure Advisor MCP tools for AI agents, including how to query recommendations via MCP-compatible clients and apply rules to ARM/Terraform; this is a product-specific integration pattern between Advisor and MCP/AI tools, likely with specific tool commands or parameters. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/advisor/advisor-alerts-portal) | configuration | 0.70 | Shows how to create Advisor alerts based on activity log events with subscription/resource group scoping and alert configuration options; likely includes specific alert rule parameters and settings. |
 | [Optimize virtual machine spend by resizing or shutting down underutilized instances](https://learn.microsoft.com/en-us/azure/advisor/advisor-cost-recommendations) | best-practices | 0.70 | Details how Advisor uses ML to detect underutilized VMs/VMSS and recommends resize/shutdown actions; includes product-specific cost optimization behavior and patterns. |
+| [Reliability](https://learn.microsoft.com/en-us/azure/advisor/advisor-reference-reliability-recommendations) | best-practices | 0.70 | Page is a reference list of concrete, product-specific reliability recommendations from Azure Advisor (DO/DO-NOT style guidance tied to specific Azure resources). While it’s not limits/quotas or architecture matrices, it contains actionable, service-specific best-practice guidance that goes beyond generic reliability concepts. |
 | [Roles and permissions](https://learn.microsoft.com/en-us/azure/advisor/permissions) | security | 0.70 | Page is about managing access to Advisor recommendations and reviews, which typically includes specific Azure RBAC roles and permissions. These role names and scope details are product-specific security configuration that qualify as expert knowledge. |
 | [Service Retirement workbook](https://learn.microsoft.com/en-us/azure/advisor/advisor-workbook-service-retirement) | decision-making | 0.70 | Describes how to use the Service Retirement workbook in Azure Advisor to identify impacted resources and plan migrations when services/features are retired. This is product-specific decision support for migration and service selection, including how to interpret workbook outputs to decide what to move and when. |
 | [Sovereign clouds](https://learn.microsoft.com/en-us/azure/advisor/advisor-sovereign-clouds) | limits-quotas | 0.70 | Explicitly described as listing feature variations and usage limitations for sovereign clouds; likely includes per-cloud constraints and disabled features, which are limit/usage details. |
@@ -101,4 +106,3 @@ confusable_not_for: Not for Azure Cost Management (use azure-cost-management), A
 | [Cost](https://learn.microsoft.com/en-us/azure/advisor/advisor-reference-cost-recommendations) | - | Parse error: Expecting value: line 23 column 14 (char 1189) |
 | [Operational Excellence](https://learn.microsoft.com/en-us/azure/advisor/advisor-reference-operational-excellence-recommendations) | - | Parse error: Expecting value: line 23 column 14 (char 1189) |
 | [Performance](https://learn.microsoft.com/en-us/azure/advisor/advisor-reference-performance-recommendations) | - | Parse error: Expecting value: line 23 column 14 (char 1189) |
-| [Reliability](https://learn.microsoft.com/en-us/azure/advisor/advisor-reference-reliability-recommendations) | - | Parse error: Expecting value: line 23 column 14 (char 1189) |

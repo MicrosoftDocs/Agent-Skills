@@ -33,10 +33,10 @@ confusable_not_for: Not for Azure Portal (use azure-portal), Azure Virtual Machi
 - **Unclassified**: 12
 
 ### Incremental Update
-- **New Pages**: 5
-- **Updated Pages**: 3
-- **Unchanged**: 10
-- **Deleted Pages**: 8
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 18
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cloud-shell/azure-cloud-shell.csv`
 
 ## Classification Statistics
@@ -49,34 +49,6 @@ confusable_not_for: Not for Azure Portal (use azure-portal), Azure Virtual Machi
 | *(Unclassified)* | 12 | 66.7% |
 
 ## Changes
-
-### New Pages
-
-- [Get started](https://learn.microsoft.com/en-us/azure/cloud-shell/get-started/ephemeral)
-- [Get started with new storage account](https://learn.microsoft.com/en-us/azure/cloud-shell/get-started/new-storage)
-- [Get started with existing storage account](https://learn.microsoft.com/en-us/azure/cloud-shell/get-started/existing-storage)
-- [Use the window](https://learn.microsoft.com/en-us/azure/cloud-shell/use-the-shell-window)
-- [Use the Cloud Shell editor](https://learn.microsoft.com/en-us/azure/cloud-shell/use-cloud-shell-editor)
-
-### Updated Pages
-
-- [What is Azure Cloud Shell?](https://learn.microsoft.com/en-us/azure/cloud-shell/overview)
-  - Updated: 2026-04-01T08:00:00.000Z → 2026-08-07T08:00:00.000Z
-- [Release notes](https://learn.microsoft.com/en-us/azure/cloud-shell/release-notes)
-  - Updated: 2026-07-27T08:00:00.000Z → 2026-08-07T08:00:00.000Z
-- [Predictive IntelliSense in Cloud Shell](https://learn.microsoft.com/en-us/azure/cloud-shell/cloud-shell-predictive-intellisense)
-  - Updated: 2026-04-01T08:00:00.000Z → 2026-08-07T08:00:00.000Z
-
-### Deleted Pages
-
-- ~~Get started (Classic)~~ (https://learn.microsoft.com/en-us/azure/cloud-shell/get-started/classic)
-- ~~Get started (New UI)~~ (https://learn.microsoft.com/en-us/azure/cloud-shell/get-started/ephemeral)
-- ~~Get started with existing storage account (New UI)~~ (https://learn.microsoft.com/en-us/azure/cloud-shell/get-started/existing-storage)
-- ~~Get started with new storage account (New UI)~~ (https://learn.microsoft.com/en-us/azure/cloud-shell/get-started/new-storage)
-- ~~Use the Cloud Shell editor (Classic UI)~~ (https://learn.microsoft.com/en-us/azure/cloud-shell/use-cloud-shell-editor-classic)
-- ~~Use the Cloud Shell editor (New UI)~~ (https://learn.microsoft.com/en-us/azure/cloud-shell/use-cloud-shell-editor-new)
-- ~~Use the window (Classic UI)~~ (https://learn.microsoft.com/en-us/azure/cloud-shell/use-the-shell-window-classic)
-- ~~Use the window (New UI)~~ (https://learn.microsoft.com/en-us/azure/cloud-shell/use-the-shell-window-new)
 
 ## Classified Pages
 

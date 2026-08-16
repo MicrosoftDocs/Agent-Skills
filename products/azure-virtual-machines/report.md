@@ -1,15 +1,15 @@
 ---
-generated_at: '2026-08-09'
+generated_at: '2026-08-16'
 category_descriptions:
   architecture-patterns: 'Architecting Azure VM solutions: compute fleet patterns,
     low-latency/NUMA placement, clustered/shared disk designs, and high-availability,
     DR, and cross-cloud architectures for Oracle and OpenShift.'
-  configuration: 'Configuring Azure VMs and scale sets: OS images, disks, networking,
-    GPU/HPC, extensions, monitoring/telemetry, maintenance, restore points, and Oracle/RHEL/Linux-specific
-    VM setup.'
-  decision-making: Guidance for choosing VM/disk/OS options, managing lifecycle, costs,
-    and migrations (sizes, SKUs, OS images, Oracle, AKS, GPU/HPC) and planning retirements,
-    backups, and reservations.
+  configuration: 'Configuring Azure VMs and images: storage/disks, networking, NVMe/InfiniBand/GPU,
+    Linux/Windows agents and extensions, maintenance/patching, SSH/WinRM, Oracle workloads,
+    monitoring, and VM restore.'
+  decision-making: Guidance for choosing Azure VM, disk, and image options, planning
+    costs and reservations, and designing or migrating Linux, AKS, Oracle, and GPU/HPC
+    workloads, especially for retirements and lifecycle changes.
   integrations: 'Scripts and patterns for automating Azure VM operations: backups,
     restore points, disk and snapshot management, maintenance events, monitoring,
     metadata, networking, and Oracle/SQL integrations via CLI, PowerShell, REST.'
@@ -25,39 +25,39 @@ category_descriptions:
   troubleshooting: 'Diagnosing and fixing Azure VM issues: kernel/AKS, package updates,
     hibernation, networking/NSG, encryption (Linux/Windows), extensions, restore points,
     Trusted Launch, and Image Builder failures.'
-  limits-quotas: VM size specs, disk/NVMe limits, dedicated host packing, performance
-    targets, vCPU quotas, and hardware benchmarks to plan capacity, storage, and workload
-    sizing for Azure VMs.
+  limits-quotas: VM size specs, disk and storage limits, GPU/HPC capabilities, quotas,
+    performance targets, and dedicated host packing/constraints for planning and scaling
+    Azure VM workloads.
 skill_description: Expert knowledge for Azure Virtual Machines development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when choosing VM sizes, disks/NVMe, GPU/HPC, encryption (ADE/CMK), or Oracle/RHEL/Linux
-  VM setups, and other Azure Virtual Machines related development tasks. Not for SQL
-  Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Virtual
-  Machine Scale Sets (use azure-vm-scalesets), Azure Stack Edge (use azure-stack-edge),
-  Azure Baremetal Infrastructure (use azure-baremetal-infrastructure).
-use_when: Use when choosing VM sizes, disks/NVMe, GPU/HPC, encryption (ADE/CMK), or
-  Oracle/RHEL/Linux VM setups, and other Azure Virtual Machines related development
+  Use when designing Oracle/OpenShift on VMs, GPU/HPC fleets, NVMe/InfiniBand, Trusted
+  Launch, or encrypted disks, and other Azure Virtual Machines related development
+  tasks. Not for Azure Data Science Virtual Machines (use azure-data-science-vm),
+  Azure Large Instances (use azure-large-instances), SQL Server on Azure Virtual Machines
+  (use azure-sql-virtual-machines), Azure Virtual Machine Scale Sets (use azure-vm-scalesets).
+use_when: Use when designing Oracle/OpenShift on VMs, GPU/HPC fleets, NVMe/InfiniBand,
+  Trusted Launch, or encrypted disks, and other Azure Virtual Machines related development
   tasks.
-confusable_not_for: Not for SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines),
-  Azure Virtual Machine Scale Sets (use azure-vm-scalesets), Azure Stack Edge (use
-  azure-stack-edge), Azure Baremetal Infrastructure (use azure-baremetal-infrastructure).
+confusable_not_for: Not for Azure Data Science Virtual Machines (use azure-data-science-vm),
+  Azure Large Instances (use azure-large-instances), SQL Server on Azure Virtual Machines
+  (use azure-sql-virtual-machines), Azure Virtual Machine Scale Sets (use azure-vm-scalesets).
 ---
 # Azure Virtual Machines Crawl Report
 
 ## Summary
 
-- **Total Pages**: 877
-- **Fetched**: 877
+- **Total Pages**: 876
+- **Fetched**: 876
 - **Fetch Failed**: 0
-- **Classified**: 616
-- **Unclassified**: 261
+- **Classified**: 614
+- **Unclassified**: 262
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 6
-- **Unchanged**: 871
-- **Deleted Pages**: 0
+- **New Pages**: 1
+- **Updated Pages**: 7
+- **Unchanged**: 868
+- **Deleted Pages**: 2
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-machines/azure-virtual-machines.csv`
 
 ## Classification Statistics
@@ -65,32 +65,43 @@ confusable_not_for: Not for SQL Server on Azure Virtual Machines (use azure-sql-
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 12 | 1.4% |
-| best-practices | 32 | 3.6% |
+| best-practices | 32 | 3.7% |
 | configuration | 135 | 15.4% |
-| decision-making | 69 | 7.9% |
-| deployment | 24 | 2.7% |
+| decision-making | 70 | 8.0% |
+| deployment | 22 | 2.5% |
 | integrations | 47 | 5.4% |
-| limits-quotas | 204 | 23.3% |
+| limits-quotas | 203 | 23.2% |
 | security | 66 | 7.5% |
 | troubleshooting | 27 | 3.1% |
-| *(Unclassified)* | 261 | 29.8% |
+| *(Unclassified)* | 262 | 29.9% |
 
 ## Changes
 
+### New Pages
+
+- [Deploy a Premium SSD v2](https://learn.microsoft.com/en-us/azure/virtual-machines/disks-deploy-premium-v2)
+
 ### Updated Pages
 
-- [Windows](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/n-series-driver-setup)
-  - Updated: 2026-07-09T22:04:00.000Z → 2026-08-04T22:04:00.000Z
-- [SCSI to NVMe for Linux and Windows VMs](https://learn.microsoft.com/en-us/azure/virtual-machines/nvme-linux)
-  - Updated: 2026-06-23T22:03:00.000Z → 2026-08-07T22:04:00.000Z
-- [Linux](https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/hpccompute-gpu-linux)
-  - Updated: 2025-12-02T06:02:00.000Z → 2026-08-07T22:04:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/trusted-launch)
-  - Updated: 2026-04-17T22:03:00.000Z → 2026-08-03T11:04:00.000Z
+- [ND-GB300-v6 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nd-gb300-v6-series)
+  - Updated: 2026-07-28T06:03:00.000Z → 2026-08-12T22:03:00.000Z
+- [Regional to zonal move guide](https://learn.microsoft.com/en-us/azure/virtual-machines/move-virtual-machines-regional-zonal-portal)
+  - Updated: 2026-04-10T06:03:00.000Z → 2026-08-14T17:04:00.000Z
+- [Disk types](https://learn.microsoft.com/en-us/azure/virtual-machines/disks-types)
+  - Updated: 2026-06-12T22:04:00.000Z → 2026-08-11T08:00:00.000Z
+- [Change disk types](https://learn.microsoft.com/en-us/azure/virtual-machines/disks-convert-types)
+  - Updated: 2026-03-12T08:00:00.000Z → 2026-08-11T22:04:00.000Z
+- [Azure VM utilities - Linux](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/azure-virtual-machine-utilities)
+  - Updated: 2025-09-30T22:28:00.000Z → 2026-08-14T06:04:00.000Z
 - [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/maintenance-and-updates)
-  - Updated: 2026-07-02T22:03:00.000Z → 2026-08-05T08:00:00.000Z
+  - Updated: 2026-08-05T08:00:00.000Z → 2026-08-13T08:00:00.000Z
 - [Previous-gen series capacity limitations and migration guidance](https://learn.microsoft.com/en-us/azure/virtual-machines/migration/sizes/previous-gen-series-capacity-limitations)
-  - Updated: 2026-07-23T17:02:00.000Z → 2026-08-04T06:03:00.000Z
+  - Updated: 2026-08-04T06:03:00.000Z → 2026-08-11T08:00:00.000Z
+
+### Deleted Pages
+
+- ~~Deploy a nonzonal Premium SSD v2~~ (https://learn.microsoft.com/en-us/azure/virtual-machines/disks-deploy-nonzonal-premium-v2)
+- ~~Deploy a zonal Premium SSD v2~~ (https://learn.microsoft.com/en-us/azure/virtual-machines/disks-deploy-premium-v2)
 
 ## Classified Pages
 
@@ -200,7 +211,6 @@ confusable_not_for: Not for SQL Server on Azure Virtual Machines (use azure-sql-
 | [NCads_H100_v5 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/ncadsh100v5-series) | limits-quotas | 0.86 | Azure VM size pages list exact, SKU-specific hardware specs (GPU count and model, per-GPU memory in GB, vCPU core counts, system RAM in GiB). These numeric constraints are effectively capacity/limit data unique to Azure and not generally known, fitting limits-quotas. |
 | [NCasT4_v3 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/ncast4v3-series) | limits-quotas | 0.86 | Provides detailed numeric specs: up to 4 GPUs with 16 GB each, up to 64 cores with specific base and turbo frequencies, and 440 GiB RAM. These are exact capacity limits for this Azure VM series, aligning with limits-quotas. |
 | [ND-GB200-v6 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nd-gb200-v6-series) | limits-quotas | 0.86 | Describes detailed hardware configuration (Grace CPUs, Blackwell GPUs, interconnect characteristics) with numeric performance/memory constraints. These are SKU-specific limits, so limits-quotas applies. |
-| [ND-GB300-v6 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nd-gb300-v6-series) | limits-quotas | 0.86 | Provides exact numbers: two Grace CPUs, four B300 GPUs, 4×1.8 TB/s NVLINK bandwidth, 800 Gbps InfiniBand per GPU. These are concrete capacity/performance limits unique to this VM series, matching limits-quotas. |
 | [ND-H200-v5 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nd-h200-v5-series) | limits-quotas | 0.86 | Includes specific numeric improvements and limits: 76% HBM increase over H100, 141 GB memory, 4.8 TB/s bandwidth. These are detailed capacity/performance constraints unique to this GPU VM series, aligning with limits-quotas. |
 | [ND-MI300X-v5 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/ndmi300xv5-series) | limits-quotas | 0.86 | Provides exact hardware configuration: eight MI300 GPUs, two Intel CPUs totaling 96 cores, 128 GB/s Infinity Fabric bandwidth per GPU. These are SKU-specific numeric limits, so limits-quotas applies. |
 | [NDv2 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/ndv2-series) | limits-quotas | 0.86 | Contains precise configuration: 8 V100 GPUs with 32 GB each, 40 cores, 672 GiB RAM. These are exact capacity limits for the NDv2 series, fitting limits-quotas. |
@@ -352,7 +362,6 @@ confusable_not_for: Not for SQL Server on Azure Virtual Machines (use azure-sql-
 | [DSC and Windows](https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/dsc-windows) | configuration | 0.78 | Focused on uploading and applying DSC via the extension, which involves extension schema, settings, and ARM/PowerShell parameters. |
 | [Dalsv6 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dalsv6-series) | limits-quotas | 0.78 | VM size-series pages list exact, SKU-specific technical specs (vCPU counts, RAM GiB, disk capabilities, and sometimes throughput caps) that function as concrete capacity limits for each size. These numeric constraints are not inferable generically and change over time, so they qualify as expert knowledge under limits-quotas. |
 | [Disk bursting models](https://learn.microsoft.com/en-us/azure/virtual-machines/disk-bursting) | limits-quotas | 0.78 | Disk bursting behavior for Azure managed disks and VMs is defined by specific IOPS and MB/s thresholds, burst durations, and eligibility conditions that are product- and SKU-specific. This is expert knowledge not reliably known from training and fits the limits-quotas category because it describes concrete performance limits and how bursting is constrained per disk/VM type. |
-| [Disk types](https://learn.microsoft.com/en-us/azure/virtual-machines/disks-types) | decision-making | 0.78 | Disk types page typically includes detailed comparison tables (IOPS, throughput, max size, latency characteristics, supported scenarios) and concrete guidance on when to choose Ultra, Premium SSD v2, Premium SSD, Standard SSD, or Standard HDD. This is product-specific decision guidance with quantified trade-offs and thresholds, which fits the decision-making category. |
 | [Dv5 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dv5-series) | limits-quotas | 0.78 | Dv5 size documentation provides per-size numeric specifications (vCPUs, memory, storage characteristics, possibly max NICs/throughput) that act as hard limits for workloads. These are precise numeric values unique to this series, matching the limits-quotas criteria. |
 | [ECasv6 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/ecasv6-series) | limits-quotas | 0.78 | ECasv6 size-series page describes confidential-compute VM sizes with exact numeric specs (vCPU, memory, cache, disk, throughput) in tables, representing concrete capacity limits and quotas. |
 | [ECccv5 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/lifecycle/retirement/ecccv5-series-retirement) | decision-making | 0.78 | Retirement guide for DCas_cc_v5/DCads_cc_v5/ECas_cc_v5/ECads_cc_v5 includes a specific retirement date and recommended replacement VM series, helping users decide migration paths and target SKUs. |
@@ -370,13 +379,12 @@ confusable_not_for: Not for SQL Server on Azure Virtual Machines (use azure-sql-
 | [Linux](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/storage-performance) | best-practices | 0.78 | Performance tuning guide with product-specific recommendations (I/O scheduler choices, filesystem options, queue depths, NVMe tuning, OS settings) tailored to Lsv3/Lasv3/Lsv2; includes concrete configuration values and patterns. |
 | [Linux - version 2](https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/custom-script-linux) | configuration | 0.78 | Custom Script Extension docs typically include extension schema, public/protectedSettings properties, allowed values, and ARM/CLI parameter names that are product-specific configuration details. |
 | [Monitoring data reference](https://learn.microsoft.com/en-us/azure/virtual-machines/monitor-vm-reference) | configuration | 0.78 | The page is a monitoring data reference for Azure Virtual Machines, listing specific metrics, log categories, and diagnostic signals unique to this service. It organizes product-specific monitoring configuration options (e.g., metric names, dimensions, log categories) that an LLM is unlikely to know from training. This fits best under configuration, as it defines the concrete monitoring data and categories used when configuring VM observability. |
+| [ND-GB300-v6 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nd-gb300-v6-series) | limits-quotas | 0.78 | VM size pages for specific GPU series list detailed, product-specific hardware specifications (GPU count, CPU type, memory, NVLink bandwidth, network bandwidth, local storage, and sometimes max NICs or disks) with exact numeric values that are not inferable from general training data. These constitute concrete capacity limits/constraints for this VM family, fitting the limits-quotas category. |
 | [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nv-family) | limits-quotas | 0.78 | NV family size pages list per-size vCPU, RAM, GPU model/count, disk throughput, and other numeric specifications in tables. These are concrete capacity limits for each SKU that change over time and are not reliably known from training, fitting limits-quotas. |
-| [Previous-gen series capacity limitations and migration guidance](https://learn.microsoft.com/en-us/azure/virtual-machines/migration/sizes/previous-gen-series-capacity-limitations) | limits-quotas | 0.78 | Page describes concrete capacity limitations for specific previous-generation Azure VM size series starting July 2026 and provides migration guidance to newer VM families. These are product- and date-specific limits that an LLM wouldn't reliably know from training, fitting the limits-quotas category. |
 | [Windows](https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/custom-script-windows) | configuration | 0.78 | Describes Windows Custom Script Extension settings and ARM/CLI usage with specific parameter names and configuration schema unique to this extension. |
 | [Windows](https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/hpccompute-gpu-windows) | configuration | 0.78 | Contains Windows extension schema, parameters, and supported VM series for GPU driver deployment, which are product-specific configuration options. |
 | [Windows](https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/key-vault-windows) | configuration | 0.78 | Similar to the Linux article, this page documents supported platforms and detailed configuration for the Key Vault VM extension on Windows VMs, including extension-specific settings and deployment options. These are product-specific configuration details that qualify as expert knowledge and align with the configuration sub-skill. |
 | [Windows](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/storage-performance) | best-practices | 0.78 | Windows-focused tuning article with specific registry/driver/disk configuration guidance, queue depths, and storage settings unique to L-series VMs; fits product-specific best practices. |
-| [Deploy a nonzonal Premium SSD v2](https://learn.microsoft.com/en-us/azure/virtual-machines/disks-deploy-nonzonal-premium-v2) | deployment | 0.76 | Nonzonal Premium SSD v2 deployment content focuses on how to deploy this specific disk type in regions with/without availability zones and documents nonzonal-specific limitations and regional support. These are product-specific deployment constraints and availability details, which align with the deployment category. |
 | [ECadsv6 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/ecadsv6-series) | limits-quotas | 0.76 | Confidential computing series with local storage; full page contains numeric vCPU, RAM, and disk specs per size that serve as concrete capacity limits. |
 | [Linux](https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/hpc-compute-infiniband-linux) | configuration | 0.76 | InfiniBand driver extension docs typically list extension names, supported VM families, and configuration options for driver installation, which are product-specific. |
 | [Linux](https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/hpccompute-amd-gpu-linux) | configuration | 0.76 | Linux AMD GPU extension configuration (publisher, type, settings) is product-specific and not generic knowledge. |
@@ -421,6 +429,7 @@ confusable_not_for: Not for SQL Server on Azure Virtual Machines (use azure-sql-
 | [Windows VM Agent](https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/agent-windows) | configuration | 0.75 | Covers detection and installation of Windows VM Agent; likely includes specific configuration options and versioning details unique to Azure. |
 | [Handle credentials](https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/dsc-credentials) | security | 0.74 | Covers secure credential handling in DSC extension, typically including specific configuration fields (protectedSettings, certificate thumbprints) and security patterns. |
 | [Linux VM Agent](https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/agent-linux) | configuration | 0.74 | The Linux VM Agent overview for waagent typically includes product-specific configuration details such as agent configuration file options, provisioning modes, and interaction behaviors with the Azure fabric controller. These are concrete, implementation-specific settings that an LLM is unlikely to know from training and map best to the configuration sub-skill. |
+| [Previous-gen series capacity limitations and migration guidance](https://learn.microsoft.com/en-us/azure/virtual-machines/migration/sizes/previous-gen-series-capacity-limitations) | decision-making | 0.74 | Page describes specific capacity growth restrictions starting July 2026 for particular previous-generation VM series and provides concrete migration guidance to newer-generation VM families. This is expert, time-bound service behavior not inferable from general training data and is focused on helping users decide when and how to move between VM families based on these constraints, fitting the decision-making category. |
 | [Chef](https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/chef) | configuration | 0.72 | Chef extension docs typically list extension settings (server URL, validation key, runlist) and deployment parameters unique to this extension. |
 | [Configure and optimize VMs](https://learn.microsoft.com/en-us/azure/virtual-machines/configure) | best-practices | 0.72 | Provides tuning and optimization guidance for specific VM series, including product-specific recommendations and gotchas for achieving HPC performance. |
 | [Configure and optimize VMs](https://learn.microsoft.com/en-us/azure/virtual-machines/configure) | best-practices | 0.72 | Provides tuning and optimization guidance for specific VM series, including product-specific recommendations and gotchas for achieving HPC performance. |
@@ -462,8 +471,8 @@ confusable_not_for: Not for SQL Server on Azure Virtual Machines (use azure-sql-
 | [Custom data](https://learn.microsoft.com/en-us/azure/virtual-machines/custom-data) | configuration | 0.70 | The page describes the Azure VM 'custom data' feature with product-specific behavior at provisioning time, including how and when the data is made available to the VM and how it is passed in creation parameters. This is configuration-focused, detailing how to inject scripts/metadata during VM setup, which is specific operational knowledge beyond generic VM concepts. |
 | [Debian](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/debian-create-upload-vhd) | configuration | 0.70 | Debian-specific preparation steps and configuration for Azure compatibility; includes commands and settings unique to this scenario. |
 | [Dedicated Host SKU Migration](https://learn.microsoft.com/en-us/azure/virtual-machines/migration/dedicated-host-migration-guide) | decision-making | 0.70 | Migration guide for retiring Dedicated Host SKUs; likely includes tables mapping old SKUs to recommended new SKUs and guidance for planning and executing migration, which is product-specific decision-making content. |
+| [Deploy a Premium SSD v2](https://learn.microsoft.com/en-us/azure/virtual-machines/disks-deploy-premium-v2) | configuration | 0.70 | A deployment article for Premium SSD v2 disks usually details disk configuration parameters (IOPS, throughput, size, zonal vs nonzonal flags, regional availability constraints) and how to set them via portal/CLI/PowerShell. These are product-specific configuration options and constraints, often with parameter names and allowed ranges, matching the configuration sub-skill. |
 | [Deploy a Virtual Machine or Virtual Machine Scale Sets With MSP](https://learn.microsoft.com/en-us/azure/virtual-machines/metadata-security-protocol/greenfield) | security | 0.70 | How-to configuration for enabling Metadata Security Protocol and GuestProxyAgent during VM/VMSS creation, including OS-specific behavior; product-specific security configuration details. |
-| [Deploy a zonal Premium SSD v2](https://learn.microsoft.com/en-us/azure/virtual-machines/disks-deploy-premium-v2) | deployment | 0.70 | Premium SSD v2 deployment page usually includes region availability matrices, constraints (for example which VM sizes/regions support the disk, sector size options), and product-specific deployment requirements. These are concrete deployment details and constraints by region/plan, matching the deployment category. |
 | [Deploy an Ultra Disk](https://learn.microsoft.com/en-us/azure/virtual-machines/disks-enable-ultra-ssd) | configuration | 0.70 | How-to for deploying Ultra Disks; full article includes disk performance configuration parameters (IOPS, throughput) and constraints unique to Ultra Disks. |
 | [Direct share](https://learn.microsoft.com/en-us/azure/virtual-machines/share-gallery-direct) | security | 0.70 | Covers direct sharing with subscriptions/tenants; relies on RBAC and access configuration specifics, fitting security configuration patterns. |
 | [Disable MSP](https://learn.microsoft.com/en-us/azure/virtual-machines/metadata-security-protocol/other-examples/disable) | security | 0.70 | Explains how to turn off MSP using REST API and portal; concrete security configuration operations specific to this feature. |
@@ -472,6 +481,7 @@ confusable_not_for: Not for SQL Server on Azure Virtual Machines (use azure-sql-
 | [Disk encryption on an isolated network](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/disk-encryption-isolated-network) | troubleshooting | 0.70 | Covers troubleshooting and special configuration for ADE in isolated networks, including product-specific connectivity and diagnostic guidance. |
 | [Disk encryption sample scripts](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/disk-encryption-sample-scripts) | integrations | 0.70 | Appendix of scripts with concrete command parameters and patterns for integrating ADE with automation; focuses on code/config patterns unique to ADE. |
 | [Disk encryption sample scripts](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/disk-encryption-sample-scripts) | integrations | 0.70 | Appendix of Windows ADE scripts with concrete parameters and patterns for automation; focuses on integration and coding patterns. |
+| [Disk types](https://learn.microsoft.com/en-us/azure/virtual-machines/disks-types) | decision-making | 0.70 | Disk-type selection guidance for Ultra, Premium SSD v2, Premium SSD, Standard SSD, and Standard HDD typically includes comparison tables (IOPS, throughput, latency, cost tiers) and scenario-based recommendations. This is product-specific decision guidance with quantified trade-offs (performance and capabilities per disk type), which fits the decision-making sub-skill. |
 | [ECas_cc_v5 and ECads_cc_v5 series](https://learn.microsoft.com/en-us/azure/virtual-machines/ecasccv5-ecadsccv5-series) | limits-quotas | 0.70 | Describes confidential child capable VM sizes with specific resource capacities and constraints, which are numeric limits unique to this preview series. |
 | [Enable InfiniBand](https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/enable-infiniband) | configuration | 0.70 | How-to for enabling InfiniBand on RDMA-capable HB/N-series VMs; typically includes specific extension names, settings, and required configuration parameters unique to these VMs. |
 | [Enable MSP on Existing Virtual Machine or Virtual Machine Scale Sets](https://learn.microsoft.com/en-us/azure/virtual-machines/metadata-security-protocol/brownfield) | security | 0.70 | Details concrete methods (portal, ARM template, REST API) to enable MSP on existing resources; product-specific security configuration steps. |
@@ -596,7 +606,6 @@ confusable_not_for: Not for SQL Server on Azure Virtual Machines (use azure-sql-
 | [Windows 11 images](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/windows-desktop-multitenant-hosting-deployment) | decision-making | 0.70 | Explains how to leverage Software Assurance and specific license types to run Windows 11 VMs without extra license cost; supports licensing and deployment decisions. |
 | [Assess readiness](https://learn.microsoft.com/en-us/azure/virtual-machines/migration/sizes/sizes-v6-v7-migration-assess) | best-practices | 0.68 | Provides a concrete readiness checklist (boot mode, image, storage interface, network driver, regional/zonal availability) and classifies workloads into specific outcomes; this is actionable, product-specific guidance on how to safely assess migration readiness. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/add-disk) | configuration | 0.68 | Details CLI-based attachment of persistent disks and explains behavior on reprovisioning, which is a product-specific configuration and behavior pattern. |
-| [Change disk types](https://learn.microsoft.com/en-us/azure/virtual-machines/disks-convert-types) | configuration | 0.68 | Page gives product-specific, stepwise commands and parameters for converting between Azure managed disk types (Premium SSD, Standard SSD, Standard HDD, Ultra, Premium v2). It includes concrete Azure CLI/PowerShell cmdlets and flags that are unique to this service, which an LLM is unlikely to fully infer without the docs. This aligns best with configuration-focused skill content rather than generic how-to or conceptual material. |
 | [Configure private links for disks - Portal](https://learn.microsoft.com/en-us/azure/virtual-machines/disks-enable-private-links-for-import-export-portal) | security | 0.68 | The article provides product-specific security configuration for restricting managed disk import/export via Azure Private Link and private endpoints. It includes concrete steps and settings (creating a disk access resource, associating it with disks, configuring private endpoints and network access) that are unique to Azure managed disks security posture, rather than generic networking concepts. |
 | [Create a disk from a VHD - CLI](https://learn.microsoft.com/en-us/azure/virtual-machines/scripts/create-managed-disk-from-vhd) | integrations | 0.68 | Shows exact CLI parameters to import specialized/data VHDs into managed disks, a product-specific integration pattern. |
 | [Create a disk from a VHD - PowerShell](https://learn.microsoft.com/en-us/azure/virtual-machines/scripts/virtual-machines-powershell-sample-create-managed-disk-from-vhd) | integrations | 0.68 | Includes warnings about creating multiple disks quickly and describes snapshot-based creation behavior—product-specific integration and subtle behavior details. |
@@ -727,7 +736,6 @@ confusable_not_for: Not for SQL Server on Azure Virtual Machines (use azure-sql-
 | [Windows](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/hybrid-use-benefit-licensing) | 0.50 | Azure Hybrid Benefit for Windows licensing article; focuses on eligibility and steps to enable benefit, but summary does not indicate detailed numeric limits or configuration parameter tables. |
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/multiple-nics) | 0.45 | Multiple NICs article is mostly how-to; while there are some constraints (same vNet, subnets), summary doesn’t indicate detailed numeric limits or config tables. |
 | [Azure VM sizes naming conventions](https://learn.microsoft.com/en-us/azure/virtual-machines/vm-naming-conventions) | 0.45 | Explains naming conventions for VM sizes; mostly descriptive mapping of letters to features, not a configuration, limits, or decision matrix page. |
-| [Azure VM utilities - Linux](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/azure-virtual-machine-utilities) | 0.45 | Intro to azure-vm-utils package; high-level description of utilities and udev rules, but summary suggests no detailed parameter tables or limits. |
 | [CLI](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/create-cli-availability-zone) | 0.45 | Step-by-step CLI tutorial to create a zoned VM; primarily procedural without deep configuration tables or limits. |
 | [CLI](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/find-unattached-disks) | 0.45 | Shows how to find/delete unattached disks with az CLI; some mention of LastOwnershipUpdateTime but mainly scripting steps, not structured config/limits/troubleshooting. |
 | [CLI](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/image-builder-vnet) | 0.45 | Tutorial for using Image Builder with an existing VNet; likely includes some networking settings but not a full options matrix or security role list. |
@@ -755,6 +763,7 @@ confusable_not_for: Not for SQL Server on Azure Virtual Machines (use azure-sql-
 | [Azure Virtual Desktop](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/image-builder-virtual-desktop) | 0.40 | How-to for Azure Virtual Desktop image customization; example-driven, not a general reference of configs or limits. |
 | [B-series CPU Credit Model](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/b-series-cpu-credit-model) | 0.40 | Describes CPU credit model conceptually; summary does not indicate concrete numeric tables or configuration parameters beyond general behavior. |
 | [CLI](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/spot-cli) | 0.40 | CLI how-to for deploying Spot VMs; primarily step-by-step deployment instructions, not a catalog of configuration parameters with ranges or limits. |
+| [Change disk types](https://learn.microsoft.com/en-us/azure/virtual-machines/disks-convert-types) | 0.40 | Page appears to be a how-to guide for converting managed disk types using portal/CLI/PowerShell. The summary does not indicate detailed numeric limits, configuration parameter tables, or decision matrices; it mainly describes available disk types and general convertibility rules. Without clear evidence of specific limits, quotas, or product-specific configuration tables, it does not meet the expert-knowledge criteria for any sub-skill type. |
 | [Cobalt VMs](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/cobalt-overview) | 0.40 | High-level overview of Cobalt-based VMs; likely descriptive without detailed size/limit tables or configuration parameters. |
 | [Configure swapfile](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/cloudinit-configure-swapfile) | 0.40 | Shows how to configure swap via cloud-init; likely includes example config but not a full parameter matrix or quantified best practices. |
 | [Core concepts](https://learn.microsoft.com/en-us/azure/azure-linux/aks-core-concepts) | 0.40 | Explains core concepts like CVE handling, upgrades, and testing; more process/architecture than concrete best-practices with quantified impact or config values. |
@@ -834,6 +843,7 @@ confusable_not_for: Not for SQL Server on Azure Virtual Machines (use azure-sql-
 | [ARM template](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/create-ssh-secured-vm-from-template) | 0.30 | Template-based Linux VM creation tutorial; focused on example template usage, not exhaustive configuration or limits. |
 | [Add a user on a VM](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/cloudinit-add-user) | 0.30 | How-to for adding a user with cloud-init; narrow example, not a general configuration or troubleshooting reference. |
 | [Auto-shutdown a VM](https://learn.microsoft.com/en-us/azure/virtual-machines/auto-shutdown-vm) | 0.30 | How-to for enabling auto-shutdown; likely step-by-step UI/CLI without detailed config tables, limits, or product-specific parameters beyond generic scheduling. |
+| [Azure VM utilities - Linux](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/azure-virtual-machine-utilities) | 0.30 | Page is an introduction to the azure-vm-utils package and its purpose (consolidating device management tools and udev rules). The summary suggests a conceptual/introductory overview without explicit configuration parameter tables, numeric limits, or troubleshooting mappings. Therefore it does not clearly contain the kind of expert, product-specific configuration or troubleshooting content required for classification. |
 | [Boot diagnostics](https://learn.microsoft.com/en-us/azure/virtual-machines/boot-diagnostics) | 0.30 | High-level overview of boot diagnostics; summary doesn’t show config parameter tables, limits, or troubleshooting mappings. |
 | [CLI](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/create-cli-complete) | 0.30 | Tutorial for creating a Linux environment with CLI; step-by-step resource creation, but not a catalog of configuration options or limits. |
 | [CLI](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/proximity-placement-groups) | 0.30 | How-to for creating proximity placement groups; primarily conceptual and step-based without product-specific limits, configs, or decision matrices. |
@@ -867,6 +877,7 @@ confusable_not_for: Not for SQL Server on Azure Virtual Machines (use azure-sql-
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-linux/azure-linux-aks-overview) | 0.30 | Service overview describing benefits and supported GPU sizes; summary does not show detailed config tables or limits. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-linux/container-images-overview) | 0.30 | Overview of Azure Linux container images and tagging policy; mostly conceptual description of image types and tags without detailed configuration parameters or limits. |
 | [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/backup-recovery) | 0.30 | Overview of backup options; no indication of numeric limits, decision matrices, or detailed configuration parameters. |
+| [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/maintenance-and-updates) | 0.30 | Page is described as an overview of maintenance and updates for Azure Virtual Machines. From the summary, it appears conceptual (explaining how Azure performs host maintenance and its impact on VMs) without clear evidence of specific numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. Lacking those concrete, product-specific details, it does not meet the expert-knowledge criteria for any sub-skill type. |
 | [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/compute-optimized/f-family) | 0.30 | This is a family overview listing F-series VM types conceptually; it doesn’t expose detailed per-size numeric limits or decision matrices, so it lacks the expert numeric or configuration detail required. |
 | [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/compute-optimized/fx-family) | 0.30 | FX family overview primarily describes the family conceptually and lists series names; it doesn’t focus on per-SKU numeric limits or detailed configuration tables, so it lacks the expert numeric or config detail required for these sub-skills. |
 | [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/a-family) | 0.30 | Family-level description of A-series; summary suggests conceptual positioning, not detailed per-size specs or limits. |
@@ -880,6 +891,7 @@ confusable_not_for: Not for SQL Server on Azure Virtual Machines (use azure-sql-
 | [Portal](https://learn.microsoft.com/en-us/azure/virtual-machines/spot-portal) | 0.30 | Portal-based deployment tutorial for Spot VMs; UI walkthrough rather than detailed configuration or limits reference. |
 | [Portal](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/proximity-placement-groups-portal) | 0.30 | Portal-based tutorial for proximity placement groups; no detailed configuration tables, limits, or troubleshooting mappings. |
 | [PowerShell](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/proximity-placement-groups) | 0.30 | PowerShell variant of proximity placement group creation; procedural tutorial without detailed limits, quotas, or specialized patterns. |
+| [Regional to zonal move guide](https://learn.microsoft.com/en-us/azure/virtual-machines/move-virtual-machines-regional-zonal-portal) | 0.30 | Appears to be a how-to guide for moving a VM from regional to zonal deployment using portal/PowerShell/CLI. No indication of numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices; primarily procedural steps rather than expert-only reference data. |
 | [Report issues and request features](https://learn.microsoft.com/en-us/azure/azure-linux/report-issues-request-features) | 0.30 | Explains how to report issues and request features; process-focused, not technical expert knowledge about the product configuration or behavior. |
 | [Run existing bash script](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/cloudinit-bash-script) | 0.30 | Tutorial for running a bash script with cloud-init; example usage rather than comprehensive configuration or troubleshooting content. |
 | [Security overview](https://learn.microsoft.com/en-us/azure/azure-linux/security-overview) | 0.30 | Security overview describing model and features; high-level security concepts and recommendations, but summary does not show specific RBAC roles or configuration parameters. |
@@ -948,7 +960,6 @@ confusable_not_for: Not for SQL Server on Azure Virtual Machines (use azure-sql-
 | [Portal](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-portal) | 0.20 | Quickstart showing how to create a Linux VM via the Azure portal; step-by-step tutorial without detailed limits, configuration matrices, or product-specific troubleshooting. |
 | [RHEL BYOS Offers](https://learn.microsoft.com/en-us/azure/virtual-machines/workloads/redhat/byos) | 0.20 | Page is primarily an overview of Red Hat Enterprise Linux BYOS (Gold Images) on Azure and a note about a StoreAPI enforcement gap. The provided summary does not show concrete limits/quotas, configuration parameter tables, error codes, or decision matrices with quantified trade-offs. It reads as conceptual/behavioral and policy clarification content rather than detailed expert configuration, troubleshooting, or limits documentation. |
 | [Red Hat](https://learn.microsoft.com/en-us/azure/virtual-machines/workloads/redhat/overview) | 0.20 | Overview of Red Hat workloads on Azure; high-level product listing without detailed configuration, limits, or decision matrices. |
-| [Regional to zonal move guide](https://learn.microsoft.com/en-us/azure/virtual-machines/move-virtual-machines-regional-zonal-portal) | 0.20 | Primarily a how-to migration guide for moving VMs from regional to zonal deployments via portal/PowerShell/CLI. Does not focus on limits, configuration matrices, error-code troubleshooting, or other expert-knowledge patterns defined in the sub-skill types. |
 | [Release cadence and lifecycle](https://learn.microsoft.com/en-us/azure/azure-linux/release-cadence-lifecycle) | 0.20 | Lifecycle principles described conceptually; no explicit version-support tables or numeric timelines surfaced in summary. |
 | [Remote Desktop](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/connect-rdp) | 0.20 | Page is a how-to guide for connecting via RDP to a Windows VM using the Azure portal; it does not focus on limits, configuration parameter tables, error-code-based troubleshooting, or other expert-only details. Content is largely procedural and generic (install RDP client, open port 3389, use credentials), which an LLM can infer from general knowledge. |
 | [Set up Azure HPC or AI VMs](https://learn.microsoft.com/en-us/azure/virtual-machines/set-up-hpc-vms) | 0.20 | How-to create a basic VM via portal; likely step-by-step tutorial without detailed config matrices or numeric limits. |
@@ -977,4 +988,3 @@ confusable_not_for: Not for SQL Server on Azure Virtual Machines (use azure-sql-
 | [What is Azure Linux?](https://learn.microsoft.com/en-us/azure/azure-linux/azure-linux-overview) | 0.10 | Introduction to Azure Linux is a high-level overview of the distribution, its purpose, and preview status. It lacks specific configuration parameters, limits, error codes, or decision criteria that would qualify as expert knowledge. |
 | [What's new](https://learn.microsoft.com/en-us/azure/virtual-machines/compute-gallery-whats-new) | 0.10 | What's new changelog-style page; typically feature announcements without deep numeric limits, configs, or troubleshooting matrices. |
 | [What's new in Azure Linux 4.0?](https://learn.microsoft.com/en-us/azure/azure-linux/whats-new-azure-linux-4) | 0.10 | What's new overview; describes features conceptually without detailed configs, limits, or troubleshooting content. |
-| [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/maintenance-and-updates) | - | The summary indicates a high-level overview of how Azure performs platform maintenance and updates for VMs, without mention of specific limits, configuration parameters, error codes, or decision matrices. It appears conceptual rather than containing detailed expert configuration, troubleshooting, or quota information. |

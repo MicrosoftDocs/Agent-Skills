@@ -3,7 +3,7 @@ name: azure-connector-namespace
 description: Expert knowledge for Azure Connector Namespace development including configuration. Use when setting up hosted MCP servers, defining Connector Namespace endpoints, auth settings, or runtime options, and other Azure Connector Namespace related development tasks. Not for Azure Service Connector (use azure-service-connector), Azure API Management (use azure-api-management), Azure Logic Apps (use azure-logic-apps), Azure Functions (use azure-functions).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-09"
+  generated_at: "2026-08-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Connector Namespace Skill

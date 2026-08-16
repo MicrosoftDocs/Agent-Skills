@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-07-19'
+generated_at: '2026-08-16'
 category_descriptions:
   decision-making: Guidance on choosing Azure regions and services (regional, zonal,
     multiregion, nonregional), using region pairs, and designing multi-region architectures
     for higher reliability.
-  architecture-patterns: Designing Azure apps for high availability using zones and
-    multi-region patterns, including zonal vs zone-redundant deployments, hardening
-    strategies, and non-paired region failover.
+  architecture-patterns: 'Designing Azure architectures for high availability: zone-resilient
+    and zonal deployments, and multiregion patterns (including nonpaired regions)
+    for resilient, hardened workloads'
   best-practices: Patterns and guidance for designing highly available, resilient,
     and disaster‑ready architectures across many Azure services (AKS, databases, networking,
     messaging, monitoring, and more).
@@ -14,16 +14,16 @@ category_descriptions:
     reliable, scalable Azure Web PubSub apps under service quotas and constraints
 skill_description: Expert knowledge for Azure Reliability development including best
   practices, decision making, architecture & design patterns, and limits & quotas.
-  Use when designing multi-region Azure apps using zones, AKS, databases, networking,
+  Use when designing multi-region Azure apps using region pairs, AKS, databases, networking,
   messaging, or Web PubSub, and other Azure Reliability related development tasks.
-  Not for Azure Resiliency (use azure-resiliency), Azure Monitor (use azure-monitor),
-  Azure Service Health (use azure-service-health), Azure Site Recovery (use azure-site-recovery).
-use_when: Use when designing multi-region Azure apps using zones, AKS, databases,
+  Not for Azure Resiliency (use azure-resiliency), Azure Service Health (use azure-service-health),
+  Azure Monitor (use azure-monitor), Azure Sre Agent (use azure-sre-agent).
+use_when: Use when designing multi-region Azure apps using region pairs, AKS, databases,
   networking, messaging, or Web PubSub, and other Azure Reliability related development
   tasks.
-confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Monitor
-  (use azure-monitor), Azure Service Health (use azure-service-health), Azure Site
-  Recovery (use azure-site-recovery).
+confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Service
+  Health (use azure-service-health), Azure Monitor (use azure-monitor), Azure Sre
+  Agent (use azure-sre-agent).
 ---
 # Azure Reliability Crawl Report
 
@@ -37,8 +37,8 @@ confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Monit
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 108
+- **Updated Pages**: 3
+- **Unchanged**: 105
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-reliability/azure-reliability.csv`
 
@@ -46,13 +46,22 @@ confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Monit
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 2 | 1.9% |
+| architecture-patterns | 3 | 2.8% |
 | best-practices | 38 | 35.2% |
-| decision-making | 6 | 5.6% |
+| decision-making | 5 | 4.6% |
 | limits-quotas | 2 | 1.9% |
 | *(Unclassified)* | 60 | 55.6% |
 
 ## Changes
+
+### Updated Pages
+
+- [Reliability and sovereignty in Azure](https://learn.microsoft.com/en-us/azure/reliability/concept-reliability-sovereignty)
+  - Updated: 2026-06-01T22:07:00.000Z → 2026-08-12T06:03:00.000Z
+- [Multiregion solutions in nonpaired regions](https://learn.microsoft.com/en-us/azure/reliability/regions-multi-region-nonpaired)
+  - Updated: 2026-06-02T17:15:00.000Z → 2026-08-11T22:14:00.000Z
+- [Overview](https://learn.microsoft.com/en-us/azure/reliability/overview)
+  - Updated: 2026-01-28T12:02:00.000Z → 2026-08-12T06:03:00.000Z
 
 ## Classified Pages
 
@@ -77,6 +86,7 @@ confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Monit
 | [Azure Database for MySQL](https://learn.microsoft.com/en-us/azure/reliability/reliability-database-mysql) | best-practices | 0.68 | Reliability guidance for Azure Database for MySQL typically includes product-specific recommendations (for example, how to configure HA/DR, backup/restore behavior, handling transient faults, and zone/region outage strategies) that go beyond generic concepts. These are actionable DO/DON'T patterns tied to this service’s capabilities rather than just conceptual reliability theory. |
 | [Azure Kubernetes Service (AKS)](https://learn.microsoft.com/en-us/azure/reliability/reliability-aks) | best-practices | 0.68 | AKS-specific guidance for transient faults, AZs, multi-region support, backups, and maintenance; actionable reliability configuration and patterns. |
 | [Azure Monitor Logs](https://learn.microsoft.com/en-us/azure/reliability/reliability-monitor-logs) | best-practices | 0.68 | Page focuses on making Log Analytics workspaces resilient to specific outage scenarios (transient faults, AZ outages, region outages) with product-specific guidance and patterns. While not about numeric limits, it provides concrete, Azure Monitor Logs–specific resiliency recommendations and configurations that go beyond generic reliability concepts, fitting best-practices. |
+| [Multiregion solutions in nonpaired regions](https://learn.microsoft.com/en-us/azure/reliability/regions-multi-region-nonpaired) | architecture-patterns | 0.68 | The page lists specific Azure services and concrete configuration patterns for achieving geo-redundancy and geo-replication when regions aren't paired. This is product-specific architectural guidance about when and how to use particular multiregion configurations, which fits architecture-patterns. It goes beyond generic concepts by enumerating service capabilities and recommended patterns for nonpaired-region scenarios. |
 | [Azure Event Hubs](https://learn.microsoft.com/en-us/azure/reliability/reliability-event-hubs) | best-practices | 0.67 | Event Hubs–specific handling of transient faults, AZs, geo-DR, geo-replication, and backups; detailed resiliency guidance. |
 | [App Service Environment](https://learn.microsoft.com/en-us/azure/reliability/reliability-app-service-environment) | best-practices | 0.66 | Provides guidance for making App Service Environment resilient to various outage types and maintenance; product-specific reliability configuration. |
 | [Azure Application Gateway v2](https://learn.microsoft.com/en-us/azure/reliability/reliability-application-gateway-v2) | best-practices | 0.66 | Explains how to use AZs and multi-region deployment patterns for Application Gateway v2 to handle transient faults and outages; product-specific reliability design. |
@@ -104,7 +114,6 @@ confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Monit
 | [Azure Bot Service](https://learn.microsoft.com/en-us/azure/reliability/reliability-bot) | best-practices | 0.62 | Describes concrete patterns for regional vs cross-region reliability, availability zones, and disaster recovery for bots with local data residency; product-specific resiliency guidance. |
 | [Azure Databricks](https://learn.microsoft.com/en-us/azure/reliability/reliability-databricks) | best-practices | 0.62 | Service-specific resiliency features and how to use them (transient fault handling, AZ support) in Databricks workloads; actionable reliability design guidance. |
 | [Azure Device Registry](https://learn.microsoft.com/en-us/azure/reliability/reliability-device-registry) | best-practices | 0.62 | Guidance on handling transient faults, AZ failures, and regional failures for Device Registry; service-specific reliability considerations. |
-| [Multiregion solutions in nonpaired regions](https://learn.microsoft.com/en-us/azure/reliability/regions-multi-region-nonpaired) | decision-making | 0.60 | Lists specific Azure services and configurations that support geo-redundancy across nonpaired regions, guiding how to choose and configure services for multi-region designs. This is product-specific selection and configuration guidance for a particular scenario (nonpaired regions), fitting decision-making. |
 | [Single zone (zonal) resources](https://learn.microsoft.com/en-us/azure/reliability/availability-zones-zonal-resource-resiliency) | architecture-patterns | 0.60 | Explains when to use zonal resources and responsibilities for making them resilient; product-specific pattern guidance for zonal vs zone-resilient deployments. |
 
 ## Unclassified Pages
@@ -160,14 +169,14 @@ confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Monit
 | [Azure Site Recovery](https://learn.microsoft.com/en-us/azure/reliability/reliability-site-recovery) | 0.20 | Reliability overview for Azure Site Recovery; summary suggests conceptual guidance about outages and shared responsibility without specific limits, configuration tables, error codes, or decision matrices. |
 | [Azure Virtual Network](https://learn.microsoft.com/en-us/azure/reliability/reliability-virtual-network) | 0.20 | Reliability overview for Azure Virtual Network; focuses on resiliency to faults and failures and mentions SLAs conceptually, but summary does not indicate concrete limits, configuration parameters, or troubleshooting mappings. |
 | [Azure service incident response](https://learn.microsoft.com/en-us/azure/reliability/incident-response) | 0.20 | Guidance on what to do during Azure service disruptions; focuses on process and support, not on technical limits, configs, or error-code troubleshooting. |
-| [Overview](https://learn.microsoft.com/en-us/azure/reliability/overview) | 0.20 | High-level overview of Azure reliability documentation and concepts; no concrete limits, configs, or error mappings. |
 | [Overview](https://learn.microsoft.com/en-us/azure/reliability/overview-reliability-guidance) | 0.20 | High-level hub page listing reliability guides for many Azure services; description and summary indicate conceptual overview and navigation content without specific limits, configs, error codes, or decision matrices. |
 | [Paired and nonpaired regions](https://learn.microsoft.com/en-us/azure/reliability/regions-paired) | 0.20 | Azure region pairs overview describes how region pairs and nonpaired regions work conceptually; it does not suggest specific numeric thresholds, decision matrices, or configuration details that would qualify as expert knowledge under the defined sub-skill types. |
-| [Reliability and sovereignty in Azure](https://learn.microsoft.com/en-us/azure/reliability/concept-reliability-sovereignty) | 0.20 | Discusses sovereignty and reliability at a conceptual architecture level; lacks quantified decision matrices, limits, or specific configuration parameters. |
+| [Reliability and sovereignty in Azure](https://learn.microsoft.com/en-us/azure/reliability/concept-reliability-sovereignty) | 0.20 | Content is an architecture/reliability conceptual overview about sovereignty and data residency trade-offs without quantified thresholds, decision matrices, or product-specific numeric criteria; it does not meet the expert-knowledge detection hints for any sub-skill type. |
 | [What are Azure availability zones?](https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview) | 0.20 | Availability Zones overview explains what zones are and general design guidance for resilient solutions, but the summary does not indicate concrete limits, configuration parameter tables, or detailed decision matrices beyond generic architecture concepts. |
 | [What are Azure regions?](https://learn.microsoft.com/en-us/azure/reliability/regions-overview) | 0.20 | High-level conceptual overview of Azure regions and resiliency options; no specific numeric limits, configuration parameters, error codes, or decision matrices with quantified trade-offs. |
 | [Business continuity, high availability, and disaster recovery](https://learn.microsoft.com/en-us/azure/reliability/concept-business-continuity-high-availability-disaster-recovery) | 0.10 | Defines business continuity, high availability, and disaster recovery concepts; no concrete product-specific settings, limits, or troubleshooting content. |
 | [Failover and failback](https://learn.microsoft.com/en-us/azure/reliability/concept-failover-failback) | 0.10 | Overview of failover and failback concepts; no indication of product-specific limits, configs, or troubleshooting mappings. |
+| [Overview](https://learn.microsoft.com/en-us/azure/reliability/overview) | 0.10 | High-level conceptual overview of reliability in Azure without specific limits, configuration parameters, error codes, or decision matrices; focuses on principles and why reliability matters rather than product-specific expert details. |
 | [Redundancy, replication, and backup](https://learn.microsoft.com/en-us/azure/reliability/concept-redundancy-replication-backup) | 0.10 | General introduction to redundancy, replication, and backup; high-level reliability concepts, not product-specific expert knowledge. |
 | [Shared responsibility for reliability](https://learn.microsoft.com/en-us/azure/reliability/concept-shared-responsibility) | 0.10 | Conceptual explanation of shared responsibility for reliability without product-specific limits, configurations, or decision matrices. |
 | [How to read a service-level agreement (SLA)](https://learn.microsoft.com/en-us/azure/reliability/concept-service-level-agreements) | - | This article explains how to interpret SLAs conceptually and contractually. It is general guidance on reading SLAs, without product-specific numeric limits, configuration parameters, or decision matrices with quantified thresholds. It does not meet the expert-knowledge criteria for any sub-skill type. |

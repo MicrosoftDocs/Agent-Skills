@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-02'
+generated_at: '2026-08-16'
 category_descriptions:
   configuration: 'Configuring ADME operations: monitoring metrics, data partitioning,
     CORS, audit logging, and milestone upgrade settings for secure, scalable data
@@ -40,14 +40,14 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 
 ## Summary
 
-- **Total Pages**: 59
-- **Fetched**: 59
+- **Total Pages**: 60
+- **Fetched**: 60
 - **Fetch Failed**: 0
 - **Classified**: 38
-- **Unclassified**: 21
+- **Unclassified**: 22
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
 - **Unchanged**: 59
 - **Deleted Pages**: 0
@@ -58,15 +58,19 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 1 | 1.7% |
-| configuration | 5 | 8.5% |
-| decision-making | 2 | 3.4% |
+| configuration | 5 | 8.3% |
+| decision-making | 2 | 3.3% |
 | deployment | 1 | 1.7% |
-| integrations | 17 | 28.8% |
-| security | 11 | 18.6% |
+| integrations | 17 | 28.3% |
+| security | 11 | 18.3% |
 | troubleshooting | 1 | 1.7% |
-| *(Unclassified)* | 21 | 35.6% |
+| *(Unclassified)* | 22 | 36.7% |
 
 ## Changes
+
+### New Pages
+
+- [Restore a seismic dataset](https://learn.microsoft.com/en-us/azure/energy-data-services/tutorial-seismic-restore-dataset)
 
 ## Classified Pages
 
@@ -127,6 +131,7 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 | [Domain Data Management Services (DDMS)](https://learn.microsoft.com/en-us/azure/energy-data-services/concepts-ddms) | 0.30 | DDMS concepts article; conceptual extension model, not concrete config or troubleshooting. |
 | [Indexing and search](https://learn.microsoft.com/en-us/azure/energy-data-services/concepts-index-and-search) | 0.30 | Index and search workflow concepts; high-level behavior, not configuration or limits. |
 | [Monitor Azure Data Manager for Energy](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-monitor-data-manager-energy) | 0.30 | Described as an introductory 'start here' article explaining what monitoring data is available and how to view/analyze it. This is more of a conceptual/how-to overview for monitoring Azure Data Manager for Energy, not a detailed reference of metrics, limits, or configuration tables, so it likely lacks the specific expert-only details required. |
+| [Restore a seismic dataset](https://learn.microsoft.com/en-us/azure/energy-data-services/tutorial-seismic-restore-dataset) | 0.30 | Tutorial-style walkthrough for restoring a seismic dataset; appears to be procedural steps without detailed limits, configuration tables, error-code mappings, or product-specific best-practice guidance that meets the expert-knowledge criteria. |
 | [About Domain Data Management Services (DDMS)](https://learn.microsoft.com/en-us/azure/energy-data-services/overview-ddms) | 0.20 | Conceptual overview of domain data management services; no specific parameters, limits, or troubleshooting mappings. |
 | [About Microsoft Azure Data Manager for Energy](https://learn.microsoft.com/en-us/azure/energy-data-services/overview-microsoft-energy-data-services) | 0.20 | High-level product overview without concrete limits, configs, or error details. |
 | [Analytics consumption zone (ACZ)](https://learn.microsoft.com/en-us/azure/energy-data-services/concepts-analytics-consumption-zone) | 0.20 | Conceptual overview of Analytics Consumption Zone explaining what it is and how it mirrors data; no detailed limits, configuration tables, error codes, or other expert-only specifics. |

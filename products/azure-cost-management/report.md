@@ -50,8 +50,8 @@ confusable_not_for: Not for Azure Advisor (use azure-advisor), Azure Monitor (us
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 270
+- **Updated Pages**: 0
+- **Unchanged**: 272
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cost-management/azure-cost-management.csv`
 
@@ -70,13 +70,6 @@ confusable_not_for: Not for Azure Advisor (use azure-advisor), Azure Monitor (us
 | *(Unclassified)* | 143 | 52.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [Choose a commitment amount](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/choose-commitment-amount)
-  - Updated: 2026-03-17T22:33:00.000Z → 2026-08-06T22:11:00.000Z
-- [Buy a savings plan](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/buy-savings-plan)
-  - Updated: 2026-03-17T22:33:00.000Z → 2026-08-06T22:11:00.000Z
 
 ## Classified Pages
 

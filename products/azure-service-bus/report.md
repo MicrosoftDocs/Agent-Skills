@@ -53,8 +53,8 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Relay
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 124
+- **Updated Pages**: 0
+- **Unchanged**: 126
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-bus/azure-service-bus.csv`
 
@@ -74,13 +74,6 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Relay
 | *(Unclassified)* | 36 | 28.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [Troubleshooting guide](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-troubleshooting-guide)
-  - Updated: 2026-07-27T22:17:00.000Z → 2026-08-07T08:00:00.000Z
-- [Prefetch messages](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-prefetch)
-  - Updated: 2025-05-02T22:46:00.000Z → 2026-08-06T05:14:00.000Z
 
 ## Classified Pages
 

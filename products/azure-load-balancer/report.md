@@ -52,8 +52,8 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 17
-- **Unchanged**: 70
+- **Updated Pages**: 0
+- **Unchanged**: 87
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-load-balancer/azure-load-balancer.csv`
 
@@ -73,43 +73,6 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | *(Unclassified)* | 52 | 59.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [Gateway load balancer overview](https://learn.microsoft.com/en-us/azure/load-balancer/gateway-overview)
-  - Updated: 2026-07-08T17:13:00.000Z → 2026-08-05T17:12:00.000Z
-- [Create an internal load balancer](https://learn.microsoft.com/en-us/azure/load-balancer/quickstart-load-balancer-standard-internal-portal)
-  - Updated: 2026-01-28T08:00:00.000Z → 2026-07-17T08:00:00.000Z
-- [Components](https://learn.microsoft.com/en-us/azure/load-balancer/components)
-  - Updated: 2026-02-19T23:10:00.000Z → 2026-08-05T17:12:00.000Z
-- [Load balancing algorithm](https://learn.microsoft.com/en-us/azure/load-balancer/concepts)
-  - Updated: 2026-01-07T08:00:00.000Z → 2026-08-05T17:12:00.000Z
-- [Load balancer best practices](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-best-practices)
-  - Updated: 2026-01-29T08:00:00.000Z → 2026-07-17T08:00:00.000Z
-- [Attach a cross-subscription frontend to an Azure Load Balancer](https://learn.microsoft.com/en-us/azure/load-balancer/cross-subscription-how-to-attach-frontend)
-  - Updated: 2024-10-17T08:00:00.000Z → 2026-07-17T08:00:00.000Z
-- [Create a global load balancer with cross-subscription backends](https://learn.microsoft.com/en-us/azure/load-balancer/cross-subscription-how-to-global-backend)
-  - Updated: 2025-02-20T08:00:00.000Z → 2026-08-07T17:22:00.000Z
-- [Create a cross-subscription internal load balancer](https://learn.microsoft.com/en-us/azure/load-balancer/cross-subscription-how-to-internal-load-balancer)
-  - Updated: 2025-05-12T08:00:00.000Z → 2026-07-17T08:00:00.000Z
-- [Upgrade options and guidance](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-basic-upgrade-guidance)
-  - Updated: 2026-01-30T23:12:00.000Z → 2026-08-05T17:12:00.000Z
-- [Configure inbound NAT rules for Virtual Machine Scale Sets](https://learn.microsoft.com/en-us/azure/load-balancer/configure-inbound-nat-rules-vm-scale-set)
-  - Updated: 2024-02-14T08:00:00.000Z → 2026-08-05T17:12:00.000Z
-- [Use Virtual Machine Scale Set instance with an existing Azure Load Balancer](https://learn.microsoft.com/en-us/azure/load-balancer/configure-vm-scale-set-portal)
-  - Updated: 2024-09-12T17:07:00.000Z → 2026-08-05T17:12:00.000Z
-- [Configure TCP reset and idle timeout](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-tcp-idle-timeout)
-  - Updated: 2026-07-27T22:17:00.000Z → 2026-08-05T17:12:00.000Z
-- [Outbound only load balancer configuration](https://learn.microsoft.com/en-us/azure/load-balancer/egress-only)
-  - Updated: 2026-03-02T06:19:00.000Z → 2026-07-17T08:00:00.000Z
-- [Add IPv6 to an IPv4 application - Azure CLI](https://learn.microsoft.com/en-us/azure/load-balancer/ipv6-add-to-existing-vnet-cli)
-  - Updated: 2024-09-30T08:00:00.000Z → 2026-08-05T17:12:00.000Z
-- [Retrieve information using the Azure Instance Metadata Service](https://learn.microsoft.com/en-us/azure/load-balancer/instance-metadata-service-load-balancer)
-  - Updated: 2026-04-14T22:21:00.000Z → 2026-08-05T17:12:00.000Z
-- [Get Load Balancer metrics with Azure Monitor CLI](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-monitor-metrics-cli)
-  - Updated: 2024-06-27T08:00:00.000Z → 2026-07-17T08:00:00.000Z
-- [Monitor and alert with LoadBalancerHealthEvent logs](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-monitor-alert-health-event-logs)
-  - Updated: 2025-02-25T12:10:00.000Z → 2026-07-17T08:00:00.000Z
 
 ## Classified Pages
 

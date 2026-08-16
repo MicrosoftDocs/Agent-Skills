@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-09'
+generated_at: '2026-08-16'
 category_descriptions:
   integrations: 'Patterns and code for integrating Azure Maps: Web/REST/Power BI SDK
     usage, layers and drawing, geocoding/routing/weather, Spatial IO/WMS, and migrations
@@ -25,7 +25,9 @@ skill_description: Expert knowledge for Azure Maps development including best pr
   decision making, architecture & design patterns, limits & quotas, security, configuration,
   and integrations & coding patterns. Use when using web/REST/Power BI SDKs, geocoding/routing/weather
   APIs, tiles/rendering, or multi-stop route optimization, and other Azure Maps related
-  development tasks.
+  development tasks. Not for Azure AI Search (use azure-cognitive-search), Azure IoT
+  (use azure-iot), Azure IoT Central (use azure-iot-central), Azure IoT Edge (use
+  azure-iot-edge).
 use_when: Use when using web/REST/Power BI SDKs, geocoding/routing/weather APIs, tiles/rendering,
   or multi-stop route optimization, and other Azure Maps related development tasks.
 confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure IoT
@@ -39,8 +41,8 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 - **Total Pages**: 147
 - **Fetched**: 147
 - **Fetch Failed**: 0
-- **Classified**: 114
-- **Unclassified**: 33
+- **Classified**: 113
+- **Unclassified**: 34
 
 ### Incremental Update
 - **New Pages**: 0
@@ -57,17 +59,17 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | best-practices | 7 | 4.8% |
 | configuration | 21 | 14.3% |
 | decision-making | 8 | 5.4% |
-| integrations | 59 | 40.1% |
+| integrations | 58 | 39.5% |
 | limits-quotas | 6 | 4.1% |
 | security | 11 | 7.5% |
-| *(Unclassified)* | 33 | 22.4% |
+| *(Unclassified)* | 34 | 23.1% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Weather service FAQ](https://learn.microsoft.com/en-us/azure/azure-maps/weather-services-faq)
-  - Updated: 2026-06-22T22:13:00.000Z → 2026-08-06T22:11:00.000Z
+- [Geocoding in Azure Maps Power BI Visual](https://learn.microsoft.com/en-us/azure/azure-maps/power-bi-visual-geocode)
+  - Updated: 2025-01-23T08:00:00.000Z → 2026-08-11T11:42:00.000Z
 
 ## Classified Pages
 
@@ -124,7 +126,6 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | [C# REST SDK Developers Guide](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-dev-guide-csharp-sdk) | integrations | 0.70 | Provides C# SDK usage patterns for Search, Route, Geolocation, etc., with concrete API calls and parameters; these are product-specific integration patterns. |
 | [Cluster point data](https://learn.microsoft.com/en-us/azure/azure-maps/clustering-point-data-web-sdk) | integrations | 0.70 | Provides concrete clustering configuration and event-handling patterns using Azure Maps data sources and layers, which are product-specific coding details. |
 | [Geocoding coverage](https://learn.microsoft.com/en-us/azure/azure-maps/geocoding-coverage) | limits-quotas | 0.70 | Provides detailed coverage levels (address points, house numbers, etc.) per country/region; effectively a capability matrix with region-specific support details that are not generic knowledge. |
-| [Geocoding in Azure Maps Power BI Visual](https://learn.microsoft.com/en-us/azure/azure-maps/power-bi-visual-geocode) | integrations | 0.70 | Describes how the Location field maps addresses to coordinates and how geocoding works within this visual—product-specific behavior and field configuration. |
 | [Get shape data](https://learn.microsoft.com/en-us/azure/azure-maps/map-get-shape-data) | integrations | 0.70 | Uses drawingManager.getSource() and related APIs to retrieve shape data, a concrete coding pattern specific to Azure Maps drawing tools. |
 | [How to use image templates](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-use-image-templates-web-sdk) | integrations | 0.70 | Lists built-in SVG templates, default preloaded marker images, and how they’re used via IconOptions and image sprites—SDK-specific configuration patterns. |
 | [Java REST SDK Developers Guide](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-dev-guide-java-sdk) | integrations | 0.70 | Covers Java SDK usage for multiple Azure Maps services with concrete API calls and configuration; product-specific integration patterns. |
@@ -215,6 +216,7 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | [Create a store locator](https://learn.microsoft.com/en-us/azure/azure-maps/tutorial-create-store-locator) | 0.20 | Store locator tutorial; step-by-step app creation, not deep configuration, limits, or troubleshooting content. |
 | [Create a web app](https://learn.microsoft.com/en-us/azure/azure-maps/quick-demo-map-app) | 0.20 | Quickstart tutorial for building an interactive map; primarily step-by-step usage, not configuration matrices, limits, or troubleshooting. |
 | [Drawing Tools module](https://learn.microsoft.com/en-us/azure/azure-maps/release-notes-drawing-tools-module) | 0.20 | This is a release notes page for the Azure Maps Drawing Tools Module. It mainly describes feature additions and changes, not product-specific limits, configuration parameters, troubleshooting mappings, or decision criteria that match any sub-skill type. |
+| [Geocoding in Azure Maps Power BI Visual](https://learn.microsoft.com/en-us/azure/azure-maps/power-bi-visual-geocode) | 0.20 | Page appears to explain how geocoding works in the Azure Maps Power BI visual and how to use the Location field with address data. From the summary, it does not indicate specific numeric limits, configuration parameter tables, error-code-based troubleshooting, or other product-specific expert details as defined in the sub-skill types. It is primarily conceptual/feature-usage guidance rather than expert-knowledge reference content. |
 | [Geographic coverage](https://learn.microsoft.com/en-us/azure/azure-maps/geographic-coverage) | 0.20 | Described as providing links to geographic coverage information. Likely a navigation/overview page pointing to external coverage details rather than containing concrete limits, configuration parameters, or decision matrices itself. Does not clearly match any expert-knowledge sub-skill type from the summary. |
 | [Map control](https://learn.microsoft.com/en-us/azure/azure-maps/release-notes-map-control) | 0.20 | Release notes typically list new features and changes without structured limits, configuration tables, error codes, or decision matrices. This page is a change log for the Azure Maps Web SDK Map Control, not a technical reference with expert-only details as defined by the sub-skill types. |
 | [Maps API](https://learn.microsoft.com/en-us/azure/azure-maps/rest-api-azure-maps) | 0.20 | Page is a navigational/overview index of Azure Maps REST APIs with service descriptions and links, but no concrete limits, configuration tables, error codes, or other product-specific expert details. |

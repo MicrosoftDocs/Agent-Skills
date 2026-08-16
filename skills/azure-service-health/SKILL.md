@@ -3,7 +3,7 @@ name: azure-service-health
 description: Expert knowledge for Azure Service Health development including troubleshooting, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when handling Service Health APIs, Resource Graph queries, webhooks, VM Resource Health, or retirement alerts, and other Azure Service Health related development tasks. Not for Azure Monitor (use azure-monitor), Azure Reliability (use azure-reliability), Azure Resiliency (use azure-resiliency).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-05"
+  generated_at: "2026-08-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Service Health Skill

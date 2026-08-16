@@ -48,8 +48,8 @@ confusable_not_for: Not for Azure Automation (use azure-automation), Azure Monit
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 83
+- **Updated Pages**: 0
+- **Unchanged**: 84
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-update-manager/azure-update-manager.csv`
 
@@ -68,11 +68,6 @@ confusable_not_for: Not for Azure Automation (use azure-automation), Azure Monit
 | *(Unclassified)* | 30 | 35.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [Extended Security Updates](https://learn.microsoft.com/en-us/azure/update-manager/extended-security-updates)
-  - Updated: 2025-03-23T08:00:00.000Z → 2026-08-06T22:11:00.000Z
 
 ## Classified Pages
 

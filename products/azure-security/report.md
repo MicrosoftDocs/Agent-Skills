@@ -44,8 +44,8 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 124
+- **Updated Pages**: 0
+- **Unchanged**: 126
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-security/azure-security.csv`
 
@@ -62,13 +62,6 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | *(Unclassified)* | 62 | 49.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [Introduction to Azure security](https://learn.microsoft.com/en-us/azure/security/fundamentals/overview)
-  - Updated: 2026-07-20T08:00:00.000Z → 2026-08-03T08:00:00.000Z
-- [Services supporting CMKs](https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-customer-managed-keys-support)
-  - Updated: 2026-07-27T08:00:00.000Z → 2026-08-03T08:00:00.000Z
 
 ## Classified Pages
 

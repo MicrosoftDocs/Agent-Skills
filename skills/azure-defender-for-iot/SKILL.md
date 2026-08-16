@@ -1,9 +1,9 @@
 ---
 name: azure-defender-for-iot
-description: Expert knowledge for Azure Defender For Iot development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when deploying OT sensors/micro agents, mirroring OT traffic, handling alerts, or integrating Defender for IoT APIs, and other Azure Defender For Iot related development tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure Security (use azure-security), Azure Sentinel (use azure-sentinel), Azure External Attack Surface Management (use azure-external-attack-surface-management).
+description: Expert knowledge for Azure Defender For Iot development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring OT sensors/micro agents, traffic mirroring, Zero Trust OT monitoring, SIEM/SOAR integrations, or OT network design, and other Azure Defender For Iot related development tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure Security (use azure-security), Azure IoT (use azure-iot), Azure IoT Hub (use azure-iot-hub).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-09"
+  generated_at: "2026-08-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Defender For Iot Skill
@@ -24,23 +24,22 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L47 | Diagnosing and resolving Defender for IoT issues: CIS benchmark findings, micro agent problems, OT sensor install/health, and investigating alert types and responses. |
-| Best Practices | L48-L53 | Designing OT monitoring architectures and preparing industrial sites, including sensor placement, network topology, and deployment planning for Defender for IoT. |
-| Decision Making | L54-L67 | Guidance for planning and choosing Defender for IoT deployment options: OT traffic mirroring methods, appliance selection, licensing/billing, micro agent and console retirement, and version/support tracking. |
+| Troubleshooting | L37-L46 | Diagnosing and resolving Defender for IoT issues: CIS benchmark findings, micro agent problems, OT sensor installation/health, and understanding alert types and sensor health messages. |
+| Best Practices | L47-L54 | Designing OT monitoring architectures, placing sensors, tuning OT alert workflows, and investigating OT controller/programming changes with Defender for IoT |
+| Decision Making | L55-L67 | Guidance for planning and choosing Defender for IoT deployment options: OT traffic mirroring methods, appliance selection, licensing/billing, micro agent and console retirement, and version/support tracking. |
 | Architecture & Design Patterns | L68-L74 | OT network architectures for connecting sensors to Azure, sample connectivity models, and mapping Defender for IoT components to Purdue OT network layers. |
-| Limits & Quotas | L75-L84 | Data residency, retention limits, networking/port requirements, supported OT sensor/virtual appliance versions, and hardware/software specs for Defender for IoT deployments. |
-| Security | L85-L104 | Security alerts, recommendations, roles, RBAC, SSO, certificates, and sensor auth for securing Defender for IoT hubs, OT sensors, and monitoring OT networks with Zero Trust. |
-| Configuration | L105-L133 | Configuring Defender for IoT micro agents and OT sensors: installation, dependencies, behavior, monitoring methods, alerts, networking, integrations, and sensor management/maintenance. |
-| Integrations & Coding Patterns | L134-L165 | Integrating Defender for IoT with APIs, SIEM/SOAR, firewalls, OT tools, and configuring traffic mirroring and scripts for alert, inventory, and vulnerability data handling. |
-| Deployment | L166-L191 | Guides for deploying, upgrading, and configuring Defender for IoT OT sensors and micro agents, including hardware/VM appliance setups, traffic mirroring, regional moves, and hybrid/air-gapped installs. |
+| Limits & Quotas | L75-L85 | Data residency, retention limits, networking/port requirements, supported OT/virtual appliances, and version/feature lifecycle details for Defender for IoT deployments. |
+| Security | L86-L105 | Security alerts, recommendations, roles, RBAC, SSO, certificates, and sensor auth for securing Defender for IoT hubs, OT sensors, and monitoring OT networks with Zero Trust. |
+| Configuration | L106-L134 | Configuring Defender for IoT micro agents and OT sensors, including installation, tuning, dependencies, alerting, monitoring, metadata import, networking, proxies, firewalls, and integrations. |
+| Integrations & Coding Patterns | L135-L165 | Integrating Defender for IoT with APIs, SIEM/SOAR, firewalls, OT tools, and configuring traffic mirroring and scripts for alert, inventory, and vulnerability data handling. |
+| Deployment | L166-L192 | Deploying and managing Defender for IoT sensors and micro agents, including hardware/VM appliance setup, traffic mirroring, upgrades, backups, region moves, and hybrid/air-gapped deployments. |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
-| Investigate Defender IoT CIS benchmark recommendations | https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/how-to-investigate-cis-benchmark |
+| Investigate CIS benchmark findings in Defender for IoT | https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/how-to-investigate-cis-benchmark |
 | Troubleshoot Defender for IoT micro agent issues | https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/troubleshoot-defender-micro-agent |
 | Reference Microsoft Defender for IoT alert types | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/alert-engine-messages |
-| Investigate and respond to Defender for IoT alerts | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/alerts |
 | Troubleshoot Microsoft Defender for IoT OT sensors | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-troubleshoot-sensor |
 | Validate Defender for IoT OT sensor software installation | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/ot-deploy/post-install-validation-ot-software |
 | Interpret Defender for IoT sensor health messages | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/sensor-health-messages |
@@ -50,11 +49,12 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Plan OT monitoring architecture with Defender for IoT | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/best-practices/plan-corporate-monitoring |
 | Prepare OT sites and sensor placement for Defender for IoT | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/best-practices/plan-prepare-deploy |
+| Optimize Defender for IoT OT alert workflows | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-accelerate-alert-incident-response |
+| Investigate OT programming changes with Defender for IoT | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-analyze-programming-details-changes |
 
 ### Decision Making
 | Topic | URL |
 |-------|-----|
-| Review Defender IoT micro agent feature support and retirement | https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/edge-security-module-deprecation |
 | Choose OT traffic mirroring methods for Defender for IoT | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/best-practices/traffic-mirroring-methods |
 | Decide between SPAN, RSPAN, ERSPAN for OT mirroring | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/best-practices/traffic-mirroring-methods |
 | Plan Defender for IoT billing and site licensing | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/billing |
@@ -76,6 +76,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Understand Defender for IoT data residency mapping | https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/concept-data-processing |
+| Review Defender for IoT micro agent feature lifecycle | https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/edge-security-module-deprecation |
 | Networking requirements and ports for Defender for IoT | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/networking-requirements |
 | Review catalog of preconfigured OT monitoring appliances | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/ot-pre-configured-appliances |
 | Check system requirements for virtual OT appliances | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/ot-virtual-appliances |
@@ -108,22 +109,22 @@ This skill requires **network access** to fetch documentation content:
 | Configure Defender for IoT micro agent behavior | https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/concept-micro-agent-configuration |
 | Review Linux OS dependencies for Defender micro agent | https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/concept-micro-agent-linux-dependencies |
 | Configure PAM to audit device sign-in events | https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/configure-pam-to-audit-sign-in-events |
-| Configure DMI decoder for Defender micro agent | https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/how-to-configure-dmi-decoder |
+| Configure Defender for IoT DMI decoder on devices | https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/how-to-configure-dmi-decoder |
 | Configure Defender IoT micro agent twin properties | https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/how-to-configure-micro-agent-twin |
 | Install and authenticate Defender IoT micro agent on Edge | https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/how-to-install-micro-agent-for-edge |
-| Configure Defender IoT micro agent for Eclipse ThreadX | https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/how-to-threadx-security-module |
+| Tune Defender IoT micro agent for Eclipse ThreadX | https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/how-to-threadx-security-module |
 | Create and assign custom Defender IoT alerts | https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/quickstart-create-custom-alerts |
-| Back up and restore Defender for IoT OT sensors | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/back-up-restore-sensor |
 | Use Defender for IoT OT sensor CLI commands | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/cli-ot-sensor |
-| Configure OT active monitoring methods in Defender for IoT | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/configure-active-monitoring |
+| Set up active monitoring methods for OT networks | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/configure-active-monitoring |
 | Configure reverse DNS lookup in Defender for IoT | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/configure-reverse-dns-lookup |
-| Configure OT sensor settings via Azure portal | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/configure-sensor-settings-portal |
+| Bulk-manage OT sensor settings via Azure portal | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/configure-sensor-settings-portal |
 | Configure Windows Endpoint Monitoring for OT sensors | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/configure-windows-endpoint-monitoring |
-| Configure Defender for IoT OT sensor proxy connections | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/connect-sensors |
+| Configure Defender for IoT OT sensor proxy settings | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/connect-sensors |
+| Configure local script to enrich Windows endpoint data | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/detect-windows-endpoints-script |
 | Enable enterprise IoT security in Defender for Endpoint | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/eiot-defender-for-endpoint |
 | Configure OT plans and sensors in Defender for IoT | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/getting-started |
-| Configure OT sensor alert forwarding to external systems | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-forward-alert-information-to-partners |
-| Import additional OT device data into sensors | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-import-device-information |
+| Configure OT alert forwarding to external systems | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-forward-alert-information-to-partners |
+| Import and map OT device metadata into Defender for IoT | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-import-device-information |
 | Maintain and configure OT network sensors via GUI | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-manage-individual-sensors |
 | Configure SNMP MIB health monitoring for OT sensors | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-set-up-snmp-mib-monitoring |
 | Manage threat intelligence packages on OT sensors | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-work-with-threat-intelligence-packages |
@@ -139,7 +140,6 @@ This skill requires **network access** to fetch documentation content:
 | Manage OT sensor inventory via Defender for IoT APIs | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/api/sensor-inventory-apis |
 | Access OT vulnerability data via Defender for IoT APIs | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/api/sensor-vulnerability-apis |
 | Automate OT sensor disconnection alerts with Sentinel playbooks | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/automate-sensor-disconnection-alerts |
-| Enrich OT sensor data using Windows endpoint script | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/detect-windows-endpoints-script |
 | Choose and configure Defender for IoT partner integrations | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/integrate-overview |
 | Integrate ArcSight with Defender for IoT alert forwarding | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/integrations/arcsight |
 | Send Defender for IoT alerts to LogRhythm SIEM | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/integrations/logrhythm |
@@ -166,8 +166,8 @@ This skill requires **network access** to fetch documentation content:
 ### Deployment
 | Topic | URL |
 |-------|-----|
-| Provision Defender IoT micro agent via DPS | https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/how-to-provision-micro-agent |
-| Move Defender IoT iotSecuritySolutions resource across regions | https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/how-to-region-move |
+| Provision Defender IoT micro agent via DPS with X.509 | https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/how-to-provision-micro-agent |
+| Move Defender for IoT iotSecuritySolutions resource across regions | https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/how-to-region-move |
 | Upgrade Defender for IoT micro agent on Linux devices | https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/upgrade-micro-agent |
 | Select and use OT monitoring appliances for Defender for IoT | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/appliance-catalog/ |
 | Deploy Dell PowerEdge R350 for OT sensor monitoring | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/appliance-catalog/dell-poweredge-r350-e1800 |
@@ -184,6 +184,7 @@ This skill requires **network access** to fetch documentation content:
 | Deploy Defender for IoT OT sensor VM on Hyper-V Gen 2 | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/appliance-catalog/virtual-sensor-hyper-v |
 | Deploy Defender for IoT OT sensor VM on VMware ESXi | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/appliance-catalog/virtual-sensor-vmware |
 | Deploy YS-techsystems YS-FIT2 for OT monitoring | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/appliance-catalog/ys-techsystems-ys-fit2 |
+| Back up and restore Defender for IoT OT sensors | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/back-up-restore-sensor |
 | Plan hybrid or air-gapped Defender for IoT deployments | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/ot-deploy/air-gapped-deploy |
 | Install and initially configure Defender for IoT OT sensor software | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/ot-deploy/install-software-ot-sensor |
 | Deploy Defender for IoT for OT monitoring environments | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/ot-deploy/ot-deploy-path |

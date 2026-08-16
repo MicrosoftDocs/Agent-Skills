@@ -52,8 +52,8 @@ confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Central (use az
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 5
-- **Unchanged**: 190
+- **Updated Pages**: 0
+- **Unchanged**: 195
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-iot-hub/azure-iot-hub.csv`
 
@@ -73,19 +73,6 @@ confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Central (use az
 | *(Unclassified)* | 66 | 33.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [Get started (ADR integration)](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-device-registry-setup)
-  - Updated: 2026-05-16T05:17:00.000Z → 2026-08-05T22:12:00.000Z
-- [Understand IoT Hub endpoints](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-endpoints)
-  - Updated: 2026-05-26T22:16:00.000Z → 2026-08-06T22:11:00.000Z
-- [Create and read IoT Hub messages](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-messages-construct)
-  - Updated: 2025-06-26T08:00:00.000Z → 2026-08-06T22:11:00.000Z
-- [Deploy an update](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/deploy-update)
-  - Updated: 2025-01-26T12:15:00.000Z → 2026-08-07T17:22:00.000Z
-- [Use TLS downloads](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-tls-download)
-  - Updated: 2025-03-07T18:03:00.000Z → 2026-08-08T05:14:00.000Z
 
 ## Classified Pages
 

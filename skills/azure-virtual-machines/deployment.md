@@ -11,8 +11,6 @@
 | Migrate Azure availability sets to VM scale sets | https://learn.microsoft.com/en-us/azure/virtual-machines/availability-set-migrate-to-scale-sets |
 | Migrate ADE-encrypted VMs to encryption at host | https://learn.microsoft.com/en-us/azure/virtual-machines/disk-encryption-migrate |
 | Copy incremental managed disk snapshots across regions | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-copy-incremental-snapshot-across-regions |
-| Deploy nonzonal Premium SSD v2 managed disks | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-deploy-nonzonal-premium-v2 |
-| Deploy Azure Premium SSD v2 managed disks | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-deploy-premium-v2 |
 | Export ARM templates for resource groups with VM extensions | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/export-templates |
 | Migrate from Azure HBv2 virtual machines before retirement | https://learn.microsoft.com/en-us/azure/virtual-machines/hbv2-series-overview |
 | Migrate Linux VMs from unmanaged to managed disks using CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/convert-unmanaged-to-managed-disks |

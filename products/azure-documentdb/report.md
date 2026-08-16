@@ -49,6 +49,13 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure Table S
 - **Classified**: 95
 - **Unclassified**: 27
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 122
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-documentdb/azure-documentdb.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -63,6 +70,8 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure Table S
 | security | 8 | 6.6% |
 | troubleshooting | 5 | 4.1% |
 | *(Unclassified)* | 27 | 22.1% |
+
+## Changes
 
 ## Classified Pages
 

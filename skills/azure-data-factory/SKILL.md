@@ -1,9 +1,9 @@
 ---
 name: azure-data-factory
-description: Expert knowledge for Azure Data Factory development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building ADF pipelines with connectors, mapping data flows, SSIS IR, SAP CDC, or CI/CD deployments, and other Azure Data Factory related development tasks. Not for Azure Data Explorer (use azure-data-explorer), Azure Synapse Analytics (use azure-synapse-analytics), Azure Stream Analytics (use azure-stream-analytics), Azure Databricks (use azure-databricks).
+description: Expert knowledge for Azure Data Factory development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building ADF pipelines with data flows, SHIR/SSIS IR, VNets/private endpoints, CI/CD templates, or SAP CDC, and other Azure Data Factory related development tasks. Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure Databricks (use azure-databricks), Azure Stream Analytics (use azure-stream-analytics), Azure Data Explorer (use azure-data-explorer).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-09"
+  generated_at: "2026-08-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Data Factory Skill
@@ -24,15 +24,15 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L91 | Diagnosing and fixing ADF pipeline, connector, runtime, performance, CDC, security, and Studio issues, plus interpreting errors and using tools/logs to resolve failures. |
-| Best Practices | L92-L113 | Performance, DataOps, and reliability best practices for ADF: tuning data flows/copy, optimizing sources/sinks/IR, handling schema drift/errors, and migrating data (HDFS, Netezza, S3) to Azure. |
-| Decision Making | L114-L132 | Guidance on cost planning, connector upgrades, integration runtime and compute choices, and migration/modernization of ADF, SSIS, Synapse, and pipelines to Fabric. |
-| Architecture & Design Patterns | L133-L141 | Patterns and architectures for ADF: efficient mapping data flows, metadata‑driven copy, SSIS IR with SQL MI/failover/VNet, Cosmos DB migration, and SAP CDC design. |
-| Limits & Quotas | L142-L149 | Configuring Until/Wait activity limits and timeouts, understanding data flow reservation discounts, and reviewing ADF service quotas and capacity constraints. |
-| Security | L150-L181 | Securing Data Factory with identity, encryption, and network controls: managed identities, Key Vault, Private Link, VNets, firewalls, trusted services, and secure runtimes/on-prem access. |
-| Configuration | L182-L295 | Configuring ADF pipelines, triggers, runtimes, connectors, formats, and data flows, including parameters, monitoring, fault tolerance, SAP CDC, SSIS IR, and studio/global settings. |
-| Integrations & Coding Patterns | L296-L463 | Integrating ADF with dozens of data sources (SAP, SaaS apps, DBs, files, Fabric), using connectors, mapping data flow functions, SSIS in ADF, templates, and activities to build end‑to‑end pipelines. |
-| Deployment | L464-L477 | CI/CD and deployment for ADF: ARM/linked templates, Azure DevOps pipelines, hotfix flows, pre/post scripts, SSIS job migration, and integration runtime install/migration. |
+| Troubleshooting | L37-L91 | Diagnosing and fixing ADF failures: connector/format errors, CDC, pipelines, triggers, data flows, SHIR/SSIS IR, performance, security, and known issues with concrete error patterns and workarounds. |
+| Best Practices | L92-L114 | Performance tuning, schema drift/error handling, reusable patterns, and migration best practices for Data Factory mapping data flows, copy activity, runtimes, and data lake writes. |
+| Decision Making | L115-L133 | Guidance on cost planning, connector upgrades, integration runtime and compute choices, and migration/modernization of ADF, SSIS, Synapse, and pipelines to Fabric. |
+| Architecture & Design Patterns | L134-L142 | Patterns and architectures for ADF: efficient mapping data flows, metadata‑driven copy, SSIS IR with SQL MI/failover/VNet, Cosmos DB migration, and SAP CDC design. |
+| Limits & Quotas | L143-L150 | Configuring Until/Wait activity limits and timeouts, understanding data flow reservation discounts, and reviewing ADF service quotas and capacity constraints. |
+| Security | L151-L182 | Securing Data Factory with network, identity, and encryption controls: VNets, private endpoints, firewalls, managed identities, Key Vault, CMK, TLS, and secure access to SQL, Purview, and SSIS IR. |
+| Configuration | L183-L294 | Configuring ADF: integration runtimes, SSIS/SHIR, triggers, monitoring/logging, copy/data flows, formats/connectors, parameters/expressions, and pipeline/control activities. |
+| Integrations & Coding Patterns | L295-L462 | Connecting Azure Data Factory to diverse data sources (SaaS, databases, files, SAP), using connectors, mapping data flow functions, SSIS integration, and reusable copy/transform templates. |
+| Deployment | L463-L476 | CI/CD and deployment for ADF: ARM/linked templates, Azure DevOps pipelines, hotfix flows, pre/post scripts, SSIS job migration, and integration runtime install/migration. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -42,7 +42,7 @@ This skill requires **network access** to fetch documentation content:
 | Resolve common Azure Data Factory connector upgrade issues | https://learn.microsoft.com/en-us/azure/data-factory/connector-deprecation-frequently-asked-questions |
 | Diagnose and fix Azure Data Factory Amazon S3 connector errors | https://learn.microsoft.com/en-us/azure/data-factory/connector-troubleshoot-amazon-simple-storage-service |
 | Fix Azure Blob Storage connector issues in ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-troubleshoot-azure-blob-storage |
-| Diagnose Azure Cosmos DB connector issues in Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-troubleshoot-azure-cosmos-db |
+| Diagnose and fix Azure Cosmos DB connector issues | https://learn.microsoft.com/en-us/azure/data-factory/connector-troubleshoot-azure-cosmos-db |
 | Resolve Azure Data Explorer connector problems in ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-troubleshoot-azure-data-explorer |
 | Troubleshoot Azure Data Lake Storage connectors in ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-troubleshoot-azure-data-lake |
 | Resolve Azure Data Factory Azure Files connector issues | https://learn.microsoft.com/en-us/azure/data-factory/connector-troubleshoot-azure-files |
@@ -57,7 +57,7 @@ This skill requires **network access** to fetch documentation content:
 | Diagnose Azure Data Factory Hive connector connection and query errors | https://learn.microsoft.com/en-us/azure/data-factory/connector-troubleshoot-hive |
 | Troubleshoot Microsoft Fabric Lakehouse connector in ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-troubleshoot-microsoft-fabric-lakehouse |
 | Fix Microsoft Fabric Warehouse connector issues in ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-troubleshoot-microsoft-fabric-warehouse |
-| Resolve MongoDB connector problems in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-troubleshoot-mongodb |
+| Resolve Azure Data Factory MongoDB connector errors | https://learn.microsoft.com/en-us/azure/data-factory/connector-troubleshoot-mongodb |
 | Resolve Oracle connector issues in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-troubleshoot-oracle |
 | Troubleshoot ORC format connector in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-troubleshoot-orc |
 | Fix Parquet format connector issues in Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-troubleshoot-parquet |
@@ -102,6 +102,7 @@ This skill requires **network access** to fetch documentation content:
 | Tune integration runtime performance for data flows | https://learn.microsoft.com/en-us/azure/data-factory/concepts-integration-runtime-performance |
 | Tune Azure-SSIS integration runtime for high performance | https://learn.microsoft.com/en-us/azure/data-factory/configure-azure-ssis-integration-runtime-performance |
 | Optimize Azure Data Factory copy activity performance | https://learn.microsoft.com/en-us/azure/data-factory/copy-activity-performance |
+| Optimize Azure Data Factory copy activity performance | https://learn.microsoft.com/en-us/azure/data-factory/copy-activity-performance-features |
 | Migrate on-premises HDFS data to Azure Storage | https://learn.microsoft.com/en-us/azure/data-factory/data-migration-guidance-hdfs-azure-storage |
 | Migrate Netezza data to Azure with Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/data-migration-guidance-netezza-azure-sqldw |
 | Migrate data from Amazon S3 to Azure Storage with ADF | https://learn.microsoft.com/en-us/azure/data-factory/data-migration-guidance-s3-azure-storage |
@@ -207,9 +208,8 @@ This skill requires **network access** to fetch documentation content:
 | Configure session logging for Copy activity | https://learn.microsoft.com/en-us/azure/data-factory/copy-activity-log |
 | Configure monitoring for ADF copy activities | https://learn.microsoft.com/en-us/azure/data-factory/copy-activity-monitoring |
 | Configure Copy activity in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/copy-activity-overview |
-| Use Copy activity performance optimization features | https://learn.microsoft.com/en-us/azure/data-factory/copy-activity-performance-features |
 | Preserve metadata and ACLs in ADF copy activity | https://learn.microsoft.com/en-us/azure/data-factory/copy-activity-preserve-metadata |
-| Configure schema and data type mapping in Copy activity | https://learn.microsoft.com/en-us/azure/data-factory/copy-activity-schema-and-type-mapping |
+| Configure schema and data type mapping in ADF copy | https://learn.microsoft.com/en-us/azure/data-factory/copy-activity-schema-and-type-mapping |
 | Use the Copy Data tool in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/copy-data-tool |
 | Create and configure Azure integration runtimes | https://learn.microsoft.com/en-us/azure/data-factory/create-azure-integration-runtime |
 | Provision Azure-SSIS integration runtime in Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/create-azure-ssis-integration-runtime |
@@ -271,7 +271,6 @@ This skill requires **network access** to fetch documentation content:
 | Use trigger metadata parameters in ADF pipelines | https://learn.microsoft.com/en-us/azure/data-factory/how-to-use-trigger-parameterization |
 | Reconfigure Azure-SSIS integration runtime settings | https://learn.microsoft.com/en-us/azure/data-factory/manage-azure-ssis-integration-runtime |
 | Configure diagnostic settings and Log Analytics for ADF | https://learn.microsoft.com/en-us/azure/data-factory/monitor-configure-diagnostics |
-| Monitor Azure Data Factory with Azure Monitor | https://learn.microsoft.com/en-us/azure/data-factory/monitor-data-factory |
 | Use monitoring reference data for Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/monitor-data-factory-reference |
 | Configure monitoring for Azure Data Factory integration runtimes | https://learn.microsoft.com/en-us/azure/data-factory/monitor-integration-runtime |
 | Monitor integration runtimes in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/monitor-integration-runtime |
@@ -309,7 +308,7 @@ This skill requires **network access** to fetch documentation content:
 | Transform Asana data with ADF Data Flows | https://learn.microsoft.com/en-us/azure/data-factory/connector-asana |
 | Copy and transform data in Azure Blob Storage with ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-azure-blob-storage |
 | Transform data in Cosmos DB analytical store via ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-azure-cosmos-analytical-store |
-| Copy and transform data in Azure Cosmos DB for NoSQL | https://learn.microsoft.com/en-us/azure/data-factory/connector-azure-cosmos-db |
+| Configure ADF copy activity with Azure Cosmos DB for NoSQL | https://learn.microsoft.com/en-us/azure/data-factory/connector-azure-cosmos-db |
 | Copy data to and from Azure Cosmos DB for MongoDB | https://learn.microsoft.com/en-us/azure/data-factory/connector-azure-cosmos-db-mongodb-api |
 | Copy and transform data in Azure Data Explorer with ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-azure-data-explorer |
 | Copy and transform data in Azure Data Lake Storage Gen2 | https://learn.microsoft.com/en-us/azure/data-factory/connector-azure-data-lake-storage |
@@ -355,7 +354,7 @@ This skill requires **network access** to fetch documentation content:
 | Use Microsoft Access connector with Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-microsoft-access |
 | Copy and transform data in Microsoft Fabric Lakehouse | https://learn.microsoft.com/en-us/azure/data-factory/connector-microsoft-fabric-lakehouse |
 | Copy and transform data in Microsoft Fabric Warehouse | https://learn.microsoft.com/en-us/azure/data-factory/connector-microsoft-fabric-warehouse |
-| Copy data to and from MongoDB using ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-mongodb |
+| Integrate Azure Data Factory with MongoDB connector | https://learn.microsoft.com/en-us/azure/data-factory/connector-mongodb |
 | Configure Azure Data Factory MongoDB Atlas connector | https://learn.microsoft.com/en-us/azure/data-factory/connector-mongodb-atlas |
 | Use legacy MongoDB connector in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-mongodb-legacy |
 | Use Azure Data Factory MySQL connector | https://learn.microsoft.com/en-us/azure/data-factory/connector-mysql |

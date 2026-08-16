@@ -40,6 +40,13 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI Cust
 - **Classified**: 17
 - **Unclassified**: 14
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 31
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-face/azure-face.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -51,6 +58,8 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI Cust
 | security | 6 | 19.4% |
 | troubleshooting | 1 | 3.2% |
 | *(Unclassified)* | 14 | 45.2% |
+
+## Changes
 
 ## Classified Pages
 

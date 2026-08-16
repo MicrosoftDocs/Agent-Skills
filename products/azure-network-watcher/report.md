@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-09'
+generated_at: '2026-08-16'
 category_descriptions:
   configuration: Configuring and deploying Network Watcher/NSG/VNet flow logs and
     Traffic Analytics, including agents (Linux/Arc), schemas, filtering, ARM/Bicep
@@ -10,9 +10,9 @@ category_descriptions:
   decision-making: 'Guidance for migrating network monitoring: moving from classic
     Connection Monitor and Network Performance Monitor tests, and switching NSG flow
     logs to VNet flow logs.'
-  integrations: 'Using Network Watcher data in tools and code: parsing NSG flow logs
-    with PowerShell, visualizing in Power BI, triggering packet capture from Functions,
-    querying Traffic Analytics with KQL, and integrating with Sentinel.'
+  integrations: 'Using Network Watcher programmatically: triggering packet captures
+    from Functions alerts, querying Traffic Analytics with KQL, and provisioning VNet
+    flow logs via Terraform.'
   limits-quotas: How to configure and run Network Watcher packet capture, storage
     and filtering options, and the key limits/quotas (size, duration, concurrency)
     that apply to captures
@@ -21,58 +21,52 @@ category_descriptions:
     logs using managed identities.'
 skill_description: Expert knowledge for Azure Network Watcher development including
   troubleshooting, decision making, limits & quotas, security, configuration, and
-  integrations & coding patterns. Use when configuring flow logs/Traffic Analytics,
-  VPN monitoring, packet capture, KQL/Sentinel, or Power BI views, and other Azure
+  integrations & coding patterns. Use when configuring NSG/VNet flow logs, Traffic
+  Analytics, Connection Monitor, packet captures, or VPN monitoring, and other Azure
   Network Watcher related development tasks. Not for Azure Monitor (use azure-monitor),
-  Azure Virtual Network (use azure-virtual-network), Azure Virtual Network Manager
-  (use azure-virtual-network-manager), Azure Networking (use azure-networking).
-use_when: Use when configuring flow logs/Traffic Analytics, VPN monitoring, packet
-  capture, KQL/Sentinel, or Power BI views, and other Azure Network Watcher related
-  development tasks.
-confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Virtual Network
-  (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager),
-  Azure Networking (use azure-networking).
+  Azure Networking (use azure-networking), Azure Virtual Network (use azure-virtual-network),
+  Azure Firewall (use azure-firewall).
+use_when: Use when configuring NSG/VNet flow logs, Traffic Analytics, Connection Monitor,
+  packet captures, or VPN monitoring, and other Azure Network Watcher related development
+  tasks.
+confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Networking (use
+  azure-networking), Azure Virtual Network (use azure-virtual-network), Azure Firewall
+  (use azure-firewall).
 ---
 # Azure Network Watcher Crawl Report
 
 ## Summary
 
-- **Total Pages**: 65
-- **Fetched**: 65
+- **Total Pages**: 66
+- **Fetched**: 66
 - **Fetch Failed**: 0
-- **Classified**: 28
+- **Classified**: 29
 - **Unclassified**: 37
 
 ### Incremental Update
-- **New Pages**: 2
+- **New Pages**: 1
 - **Updated Pages**: 0
-- **Unchanged**: 63
-- **Deleted Pages**: 2
+- **Unchanged**: 65
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-network-watcher/azure-network-watcher.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| configuration | 11 | 16.9% |
-| decision-making | 3 | 4.6% |
-| integrations | 2 | 3.1% |
+| configuration | 11 | 16.7% |
+| decision-making | 3 | 4.5% |
+| integrations | 3 | 4.5% |
 | limits-quotas | 1 | 1.5% |
-| security | 4 | 6.2% |
-| troubleshooting | 7 | 10.8% |
-| *(Unclassified)* | 37 | 56.9% |
+| security | 4 | 6.1% |
+| troubleshooting | 7 | 10.6% |
+| *(Unclassified)* | 37 | 56.1% |
 
 ## Changes
 
 ### New Pages
 
-- [Create using Bicep](https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-bicep)
-- [Create using an ARM template](https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-template)
-
-### Deleted Pages
-
-- ~~Bicep~~ (https://learn.microsoft.com/en-us/azure/network-watcher/nsg-flow-logs-bicep)
-- ~~ARM template~~ (https://learn.microsoft.com/en-us/azure/network-watcher/nsg-flow-logs-template)
+- [Create using Terraform](https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-terraform)
 
 ## Classified Pages
 
@@ -88,6 +82,7 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Virtual Net
 | [PowerShell](https://learn.microsoft.com/en-us/azure/network-watcher/vpn-troubleshoot-powershell) | troubleshooting | 0.75 | Explicitly about diagnosing and troubleshooting VPN gateways and connections; mentions long-running requests and log storage, indicating product-specific troubleshooting workflow and outputs. |
 | [Use queries in traffic analytics](https://learn.microsoft.com/en-us/azure/network-watcher/traffic-analytics-queries) | integrations | 0.75 | Provides sample KQL queries for Traffic Analytics; includes concrete query patterns, field names, and filters specific to this product’s data model, which are integration/coding patterns. |
 | [Create using Bicep](https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-bicep) | configuration | 0.70 | Bicep-based deployment articles typically include resource definitions and configuration parameters (for Network Watcher flow logs and Storage accounts) with specific property names and required values unique to Azure networking and logging. This is product-specific configuration detail rather than just conceptual guidance. |
+| [Create using Terraform](https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-terraform) | integrations | 0.70 | The article provides concrete Terraform configuration for Azure Network Watcher VNet flow logs and a storage account, including resource types, required properties, and Azure-specific wiring between services. These are product-specific integration patterns and configuration details that go beyond generic knowledge, but it is primarily a code-based integration pattern rather than a pure configuration reference. |
 | [Create using an ARM template](https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-template) | configuration | 0.70 | ARM template articles generally provide JSON schemas with resource types, property names, and required configuration values for Network Watcher flow logs and Storage accounts. These are concrete, product-specific configuration parameters that go beyond generic template usage and qualify as expert configuration knowledge. |
 | [Diagnose network security rules](https://learn.microsoft.com/en-us/azure/network-watcher/diagnose-network-security-rules) | troubleshooting | 0.70 | Shows how to use NSG diagnostics to determine why traffic is allowed/denied, including a misconfigured NSG example; this is a symptom→cause→solution troubleshooting guide specific to Network Watcher. |
 | [From Connection monitor (classic)](https://learn.microsoft.com/en-us/azure/network-watcher/migrate-to-connection-monitor-from-connection-monitor-classic) | decision-making | 0.70 | Migration article between classic and new versions; contains guidance on how and when to migrate with zero downtime, a product-specific decision/migration path. |

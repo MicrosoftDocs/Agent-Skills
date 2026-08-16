@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-09'
+generated_at: '2026-08-16'
 category_descriptions:
   deployment: 'Using App Configuration in CI/CD: exporting/importing settings, creating
     snapshots, integrating with Azure Pipelines, GitHub Actions, and Helm/Kubernetes
@@ -12,9 +12,9 @@ category_descriptions:
   configuration: 'Configuring App Configuration behavior: files, emulator, dynamic
     refresh, feature flags/filters/telemetry, snapshots, geo-replication, soft delete,
     Kubernetes, Front Door, and AI/chat settings.'
-  security: 'Securing App Configuration: encryption, RBAC/Entra ID, keys/HMAC, REST
-    authz models, managed identities, private endpoints, network perimeter, and Azure
-    Policy compliance.'
+  security: 'Configuring App Configuration security: encryption, keys, Entra ID/RBAC,
+    managed identities, REST auth (HMAC/Entra), private endpoints, network perimeters,
+    and Azure Policy compliance.'
   limits-quotas: 'Limits, retention, and lifecycle rules for App Configuration: snapshots,
     soft delete, key-value revision retention, preview API deprecation, and REST throttling
     quotas.'
@@ -27,16 +27,14 @@ category_descriptions:
 skill_description: Expert knowledge for Azure App Configuration development including
   troubleshooting, best practices, decision making, limits & quotas, security, configuration,
   integrations & coding patterns, and deployment. Use when using feature flags, dynamic
-  refresh, snapshots, Key Vault integration, or CI/CD with App Configuration, and
-  other Azure App Configuration related development tasks. Not for Azure App Service
-  (use azure-app-service), Azure Functions (use azure-functions), Azure Key Vault
-  (use azure-key-vault), Azure Portal (use azure-portal).
+  refresh, snapshots, Key Vault integration, or CI/CD exports/imports, and other Azure
+  App Configuration related development tasks. Not for Azure App Service (use azure-app-service),
+  Azure Key Vault (use azure-key-vault), Azure Portal (use azure-portal).
 use_when: Use when using feature flags, dynamic refresh, snapshots, Key Vault integration,
-  or CI/CD with App Configuration, and other Azure App Configuration related development
+  or CI/CD exports/imports, and other Azure App Configuration related development
   tasks.
-confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Functions
-  (use azure-functions), Azure Key Vault (use azure-key-vault), Azure Portal (use
-  azure-portal).
+confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Key Vault
+  (use azure-key-vault), Azure Portal (use azure-portal).
 ---
 # Azure App Configuration Crawl Report
 
@@ -45,13 +43,13 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 - **Total Pages**: 165
 - **Fetched**: 165
 - **Fetch Failed**: 0
-- **Classified**: 126
-- **Unclassified**: 39
+- **Classified**: 125
+- **Unclassified**: 40
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 162
+- **Updated Pages**: 2
+- **Unchanged**: 163
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-app-configuration/azure-app-configuration.csv`
 
@@ -60,25 +58,23 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | Type | Count | Percentage |
 |------|-------|------------|
 | best-practices | 1 | 0.6% |
-| configuration | 15 | 9.1% |
+| configuration | 14 | 8.5% |
 | decision-making | 2 | 1.2% |
 | deployment | 6 | 3.6% |
 | integrations | 77 | 46.7% |
 | limits-quotas | 5 | 3.0% |
 | security | 19 | 11.5% |
 | troubleshooting | 1 | 0.6% |
-| *(Unclassified)* | 39 | 23.6% |
+| *(Unclassified)* | 40 | 24.2% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-hyperscale-client-configuration)
-  - Updated: 2026-01-05T23:10:00.000Z → 2026-08-04T22:41:00.000Z
-- [Connect to Azure Front Door](https://learn.microsoft.com/en-us/azure/azure-app-configuration/how-to-connect-azure-front-door)
-  - Updated: 2026-03-16T11:10:00.000Z → 2026-08-04T22:41:00.000Z
-- [Load Configuration from Azure Front Door](https://learn.microsoft.com/en-us/azure/azure-app-configuration/how-to-load-azure-front-door-configuration-provider)
-  - Updated: 2026-03-16T11:10:00.000Z → 2026-08-04T22:41:00.000Z
+- [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/emulator-overview)
+  - Updated: 2025-12-12T18:11:00.000Z → 2026-08-12T17:21:00.000Z
+- [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/azure-app-configuration/policy-reference)
+  - Updated: 2024-02-06T08:00:00.000Z → 2025-08-06T05:10:00.000Z
 
 ## Classified Pages
 
@@ -127,6 +123,7 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [Add Managed Identities](https://learn.microsoft.com/en-us/azure/azure-app-configuration/overview-managed-identity) | security | 0.70 | The page goes beyond conceptual identity overview and provides product-specific guidance on configuring managed identities for Azure App Configuration, including how the service’s identity is created and used to access other Microsoft Entra-protected resources. This is concrete, service-specific security configuration knowledge (managed identity types, how they apply to App Configuration) that is not generic and fits the security sub-skill. |
 | [Authentication](https://learn.microsoft.com/en-us/azure/azure-app-configuration/rest-api-authentication-index) | security | 0.70 | Lists supported authentication schemes and requirements for REST calls; product-specific security configuration guidance. |
 | [Azure Policies](https://learn.microsoft.com/en-us/azure/azure-app-configuration/security-controls-policy) | security | 0.70 | Lists built-in policy definitions and mappings to compliance controls; these are product-specific security/compliance settings. |
+| [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/azure-app-configuration/policy-reference) | security | 0.70 | Lists specific built-in Azure Policy definitions for Azure App Configuration, which are security/governance configurations with concrete policy names and links to their definitions; this is product-specific security/management configuration knowledge. |
 | [Common headers](https://learn.microsoft.com/en-us/azure/azure-app-configuration/rest-api-headers) | integrations | 0.70 | Provides reference for custom headers used by this REST API; these are product-specific integration details. |
 | [Configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-python-provider) | integrations | 0.70 | Quickstart for Python provider; built on Azure SDK with provider-specific APIs and configuration usage. |
 | [Connect to Azure Front Door](https://learn.microsoft.com/en-us/azure/azure-app-configuration/how-to-connect-azure-front-door) | configuration | 0.70 | How-to page for connecting App Configuration to Azure Front Door using managed identity, caching, and endpoint controls likely includes specific configuration parameters, options, and settings unique to this integration rather than just conceptual guidance. |
@@ -187,7 +184,6 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [Get started](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-ai-agent-config) | configuration | 0.68 | Explains defining agent instructions and toolsets via code or declarative YAML stored in Azure App Configuration; likely includes specific schema/setting names for agent behavior and tools, which are product- and framework-specific configuration details. |
 | [Python](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-feature-filters-python) | integrations | 0.66 | Shows how to implement a custom feature filter for feature flags in a Python app; likely includes specific feature management APIs, filter registration patterns, and configuration keys unique to Azure App Configuration feature management. |
 | [ASP.NET Core](https://learn.microsoft.com/en-us/azure/azure-app-configuration/use-key-vault-references-dotnet-core) | integrations | 0.65 | Tutorial for using Key Vault references via the App Configuration provider; typically includes provider options, connection settings, and integration-specific patterns beyond generic SDK usage. |
-| [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/azure-app-configuration/policy-reference) | security | 0.65 | Index of built-in policies for App Configuration; each policy encodes specific security/compliance rules and effects, which are product-specific. |
 | [Configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-aspnet-core-app) | integrations | 0.65 | Quickstart for ASP.NET Core uses the App Configuration .NET provider; likely includes provider-specific configuration patterns and parameters unique to this integration. |
 | [Configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-dotnet-app) | integrations | 0.65 | Quickstart for .NET Framework console/ASP.NET apps; uses App Configuration provider and framework-specific wiring. |
 | [Configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-dotnet-core-app) | integrations | 0.65 | Quickstart for .NET console app using App Configuration provider; includes provider APIs and configuration usage unique to this service. |
@@ -209,7 +205,6 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [Configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-aspire) | integrations | 0.60 | Quickstart for Aspire integration; uses Aspire integration libraries and provisioning patterns that are product- and framework-specific. |
 | [Dynamic configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/enable-dynamic-configuration-aspire) | integrations | 0.60 | Dynamic configuration tutorial for Aspire; likely details provider usage, refresh configuration, and Aspire-specific wiring. |
 | [Feature management](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-feature-flag-aspire) | integrations | 0.60 | Feature flags quickstart for Aspire; uses specific feature management libraries and configuration patterns tied to App Configuration. |
-| [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/emulator-overview) | configuration | 0.60 | Emulator overview for local development; full article likely includes specific configuration options and behaviors unique to the emulator. |
 
 ## Unclassified Pages
 
@@ -248,6 +243,7 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [Import or export configuration data](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-import-export-data) | 0.20 | How-to for import/export via portal/CLI; typical tutorial flow, no indication of detailed config tables or limits. |
 | [Monitor App Configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/monitor-app-configuration) | 0.20 | High-level overview of monitoring data and Azure Monitor integration for App Configuration; summary indicates conceptual guidance without specific limits, configuration tables, or error-code-based troubleshooting. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-key-value) | 0.20 | Conceptual explanation of key-value storage; no specific limits, configuration tables, or product-specific error/role details. |
+| [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/emulator-overview) | 0.20 | Page is an overview of the Azure App Configuration emulator without mention of specific configuration parameters, limits, or detailed patterns; it is primarily conceptual/introductory. |
 | [Per-environment configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-labels-aspnet-core) | 0.20 | How-to for using labels per environment; primarily tutorial-style usage with no configuration tables, numeric limits, or product-specific best-practice gotchas. |
 | [Snapshot references](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-snapshot-references) | 0.20 | Conceptual explanation of snapshot references and their purpose (immutable configuration plus dynamic updates). The summary indicates high-level behavior without listing configuration parameters, limits, decision matrices, or error mappings, so it does not meet the expert-knowledge criteria for any sub-skill type. |
 | [About Azure App Configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/overview) | 0.10 | High-level overview of Azure App Configuration; no detailed limits, configs, or error mappings. |

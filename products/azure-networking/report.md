@@ -42,8 +42,8 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 39
+- **Updated Pages**: 0
+- **Unchanged**: 43
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-networking/azure-networking.csv`
 
@@ -59,17 +59,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | *(Unclassified)* | 12 | 27.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [Design a secure hub-spoke network](https://learn.microsoft.com/en-us/azure/networking/cross-service-scenarios/design-secure-hub-spoke-network)
-  - Updated: 2026-03-24T22:22:00.000Z → 2026-08-05T08:00:00.000Z
-- [Zero Trust network for web applications](https://learn.microsoft.com/en-us/azure/networking/create-zero-trust-network-web-apps)
-  - Updated: 2023-01-23T12:15:00.000Z → 2026-08-05T08:00:00.000Z
-- [Secure application delivery](https://learn.microsoft.com/en-us/azure/networking/secure-application-delivery)
-  - Updated: 2024-06-17T08:00:00.000Z → 2026-08-06T05:14:00.000Z
-- [Secure network topology](https://learn.microsoft.com/en-us/azure/networking/secure-network-topology)
-  - Updated: 2024-06-17T08:00:00.000Z → 2026-08-06T05:14:00.000Z
 
 ## Classified Pages
 

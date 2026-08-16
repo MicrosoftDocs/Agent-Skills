@@ -52,8 +52,8 @@ confusable_not_for: Not for Azure Operator Insights (use azure-operator-insights
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 5
-- **Unchanged**: 215
+- **Updated Pages**: 0
+- **Unchanged**: 220
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-operator-nexus/azure-operator-nexus.csv`
 
@@ -72,19 +72,6 @@ confusable_not_for: Not for Azure Operator Insights (use azure-operator-insights
 | *(Unclassified)* | 53 | 24.1% |
 
 ## Changes
-
-### Updated Pages
-
-- [Certificate Rotation](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-certificate-rotation)
-  - Updated: 2026-06-04T17:03:00.000Z → 2026-08-07T17:03:00.000Z
-- [Terminal Server as an Azure Operator Nexus Resource](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-terminal-server-as-resource)
-  - Updated: 2026-04-23T17:08:00.000Z → 2026-08-04T17:05:00.000Z
-- [Network Packet Broker](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-configure-network-packet-broker)
-  - Updated: 2026-04-07T17:03:00.000Z → 2026-07-09T08:00:00.000Z
-- [Customize cluster DNS](https://learn.microsoft.com/en-us/azure/operator-nexus/how-to-customize-kubernetes-cluster-dns)
-  - Updated: 2025-09-17T16:51:00.000Z → 2026-08-05T22:02:00.000Z
-- [List of metrics collected](https://learn.microsoft.com/en-us/azure/operator-nexus/list-of-metrics-collected)
-  - Updated: 2026-06-17T08:00:00.000Z → 2026-08-04T22:02:00.000Z
 
 ## Classified Pages
 
