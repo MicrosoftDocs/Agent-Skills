@@ -1,9 +1,9 @@
 ---
 name: azure-web-pubsub
-description: Expert knowledge for Azure Web PubSub development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building WebSocket/MQTT or Socket.IO apps, storage-backed chat, geo-replication, or Premium autoscale, and other Azure Web PubSub related development tasks. Not for Azure SignalR Service (use azure-signalr-service), Azure Service Bus (use azure-service-bus), Azure Event Hubs (use azure-event-hubs), Azure Relay (use azure-relay).
+description: Expert knowledge for Azure Web PubSub development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building WebSocket/MQTT or Socket.IO apps, chat routing, Entra ID auth, geo-replication, or autoscale, and other Azure Web PubSub related development tasks. Not for Azure SignalR Service (use azure-signalr-service), Azure Event Hubs (use azure-event-hubs), Azure Service Bus (use azure-service-bus).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-09"
+  generated_at: "2026-08-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Web PubSub Skill
@@ -30,7 +30,7 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L59-L65 | Architectural patterns for Web PubSub: multi-region resiliency, bridging MQTT with WebSocket/Web PubSub, and understanding Socket.IO support internals for integration design. |
 | Limits & Quotas | L66-L71 | Capacity and performance limits for Web PubSub (connections, messages, scaling) and which Socket.IO server APIs aren’t supported or behave differently. |
 | Security | L72-L103 | Securing Web PubSub: authN/Z for chat, Socket.IO, MQTT; roles/permissions; Entra ID and managed identities; mTLS and WAF; keys/Key Vault; private endpoints, service tags, and network access controls. |
-| Configuration | L104-L120 | Configuring Web PubSub instances: storage-backed chat, metrics/alerts, Azure Monitor, custom domains, event routing, geo-replication, client URLs, local tunneling, MQTT/Socket.IO options, and OData filters. |
+| Configuration | L104-L120 | Configuring Web PubSub: storage/chat setup, routing and handlers, custom domains, geo-replication, client URLs, metrics/logs, monitoring, local tunnel, MQTT/Socket.IO, and OData filters. |
 | Integrations & Coding Patterns | L121-L153 | Client/server integration patterns for Web PubSub: SDK and REST usage, WebSocket/MQTT, JSON/protobuf subprotocols, events via CloudEvents/Functions, auth, and Socket.IO integration. |
 | Deployment | L154-L160 | Guides for moving Web PubSub across regions, configuring Premium autoscale, and deploying/migrating Socket.IO apps and serverless chat to Azure Web PubSub. |
 
@@ -115,7 +115,7 @@ This skill requires **network access** to fetch documentation content:
 | Use Azure Web PubSub local tunnel for development | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-web-pubsub-tunnel-tool |
 | CloudEvents extensions for Web PubSub MQTT handlers | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/reference-mqtt-cloud-events |
 | Write OData filter expressions for Web PubSub | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/reference-odata-filter |
-| Specification for Web PubSub Socket.IO Serverless Mode | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/socket-io-serverless-protocol |
+| Configure Azure Web PubSub Socket.IO serverless protocol | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/socket-io-serverless-protocol |
 | Use Azure Socket.IO Admin UI for monitoring | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/socketio-troubleshoot-admin-ui |
 
 ### Integrations & Coding Patterns

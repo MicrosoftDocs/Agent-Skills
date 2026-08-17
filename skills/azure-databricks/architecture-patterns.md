@@ -33,7 +33,6 @@
 | Design Databricks high availability and disaster recovery | https://learn.microsoft.com/en-us/azure/databricks/lakehouse-architecture/deployment-guide/ha-dr |
 | Design Azure Databricks network architecture | https://learn.microsoft.com/en-us/azure/databricks/lakehouse-architecture/deployment-guide/network |
 | Design storage architecture for Azure Databricks and Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/lakehouse-architecture/deployment-guide/storage |
-| Apply medallion lakehouse architecture on Databricks | https://learn.microsoft.com/en-us/azure/databricks/lakehouse/medallion |
 | Replicate external RDBMS tables using AUTO CDC | https://learn.microsoft.com/en-us/azure/databricks/ldp/database-replication |
 | Design flows for streaming tables and backfills in Lakeflow | https://learn.microsoft.com/en-us/azure/databricks/ldp/flow-examples |
 | Backfill historical data with ONCE append flows | https://learn.microsoft.com/en-us/azure/databricks/ldp/flows-backfill |
@@ -43,6 +42,7 @@
 | Use MLflow deployment jobs in model lifecycles | https://learn.microsoft.com/en-us/azure/databricks/mlflow/deployment-job |
 | Choose batch vs view-based PII redaction for OTel traces | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/tracing/redact-pii-otel-traces-reference |
 | Configure high availability for Lakebase instances | https://learn.microsoft.com/en-us/azure/databricks/oltp/instances/create/high-availability |
+| Integrate Lakebase Postgres with Databricks lakehouse | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/lakehouse-integrations |
 | Configure Lakebase Postgres read replicas | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/manage-read-replicas |
 | Apply data exfiltration protection reference architectures | https://learn.microsoft.com/en-us/azure/databricks/security/network/data-exfiltration-protection/architecture |
 | Choose Azure Databricks network reference architectures | https://learn.microsoft.com/en-us/azure/databricks/security/network/deployment-architecture/ |
@@ -52,7 +52,7 @@
 | Choose patterns for semi-structured data in Databricks | https://learn.microsoft.com/en-us/azure/databricks/semi-structured/ |
 | Use asynchronous state checkpointing for Databricks streaming | https://learn.microsoft.com/en-us/azure/databricks/structured-streaming/async-checkpointing |
 | Enable asynchronous progress tracking in Databricks streaming | https://learn.microsoft.com/en-us/azure/databricks/structured-streaming/async-progress-checking |
-| Use catalog commits for Delta and Iceberg | https://learn.microsoft.com/en-us/azure/databricks/tables/features/catalog-commits |
+| Design multi-table transactions with catalog commits | https://learn.microsoft.com/en-us/azure/databricks/tables/features/catalog-commits |
 | Decide when to partition Delta Lake tables | https://learn.microsoft.com/en-us/azure/databricks/tables/partitions |
 | Design aggregation strategies with Databricks tables and views | https://learn.microsoft.com/en-us/azure/databricks/transform/aggregation |
 | Design materialization strategies for Databricks metric views | https://learn.microsoft.com/en-us/azure/databricks/uc-semantics/metric-views/materialization |

@@ -50,9 +50,9 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI Cust
 - **Unclassified**: 50
 
 ### Incremental Update
-- **New Pages**: 16
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 67
+- **Unchanged**: 83
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-video-indexer/azure-video-indexer.csv`
 
@@ -71,25 +71,6 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI Cust
 | *(Unclassified)* | 50 | 60.2% |
 
 ## Changes
-
-### New Pages
-
-- [Mark areas of interest](https://learn.microsoft.com/en-us/azure/azure-video-indexer/arc/live-area-interest)
-- [Troubleshooting guide](https://learn.microsoft.com/en-us/azure/azure-video-indexer/arc/azure-video-indexer-enabled-by-arc-troubleshooting)
-- [Release notes](https://learn.microsoft.com/en-us/azure/azure-video-indexer/arc/release-notes)
-- [What is VI enabled by Azure Arc?](https://learn.microsoft.com/en-us/azure/azure-video-indexer/arc/azure-video-indexer-enabled-by-arc-overview)
-- [Cost management](https://learn.microsoft.com/en-us/azure/azure-video-indexer/arc/cost-management)
-- [Start on Azure Arc](https://learn.microsoft.com/en-us/azure/azure-video-indexer/arc/azure-video-indexer-enabled-by-arc-quickstart)
-- [Deploy extension](https://learn.microsoft.com/en-us/azure/azure-video-indexer/arc/live-extension)
-- [Overview](https://learn.microsoft.com/en-us/azure/azure-video-indexer/arc/live-analysis)
-- [AI agents for detection](https://learn.microsoft.com/en-us/azure/azure-video-indexer/arc/agents-overview)
-- [Add or remove cameras](https://learn.microsoft.com/en-us/azure/azure-video-indexer/arc/live-add-remove-camera)
-- [Manage cameras](https://learn.microsoft.com/en-us/azure/azure-video-indexer/arc/live-manage-camera)
-- [Overview](https://learn.microsoft.com/en-us/azure/azure-video-indexer/arc/live-ai-insights-catalog)
-- [Custom insights overview](https://learn.microsoft.com/en-us/azure/azure-video-indexer/arc/live-custom-insights-overview)
-- [Create custom insights](https://learn.microsoft.com/en-us/azure/azure-video-indexer/arc/live-custom-insights-create)
-- [Create event summary](https://learn.microsoft.com/en-us/azure/azure-video-indexer/arc/live-event-summary)
-- [Watch recordings](https://learn.microsoft.com/en-us/azure/azure-video-indexer/arc/live-watch-recordings)
 
 ## Classified Pages
 

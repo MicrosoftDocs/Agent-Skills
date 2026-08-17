@@ -49,9 +49,9 @@ use_when: Use when designing Azure landing zones for AKS/AVS/Arc, securing SAP/O
 - **Unclassified**: 10
 
 ### Incremental Update
-- **New Pages**: 33
-- **Updated Pages**: 2
-- **Unchanged**: 325
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 360
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cloud-adoption-framework/azure-cloud-adoption-framework.csv`
 
@@ -71,37 +71,6 @@ use_when: Use when designing Azure landing zones for AKS/AVS/Arc, securing SAP/O
 | *(Unclassified)* | 10 | 2.8% |
 
 ## Changes
-
-### New Pages
-
-- [AI Plan](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/plan)
-- [Prepare AI environment](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/ready)
-- [AI architectures](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/platform/architectures)
-- [Resource selection](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/platform/resource-selection)
-- [Platform sharing](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/platform/ai-platform-sharing-isolation-colocation)
-- [Networking](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/platform/networking)
-- [Governance](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/platform/governance)
-- [Security](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/platform/security)
-- [Management](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/platform/management)
-- [AI on infrastructure overview](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/infrastructure/ai-azure-infrastructure)
-- [Compute](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/infrastructure/compute)
-- [Networking](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/infrastructure/networking)
-- [Storage](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/infrastructure/storage)
-- [Governance](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/infrastructure/governance)
-- [Security](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/infrastructure/security)
-- [Management](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/infrastructure/management)
-- [Well-architected](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/infrastructure/well-architected)
-- [Implementation options](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/infrastructure/ai-azure-infrastructure-implementation)
-- [Responsible AI](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/responsible-ai-policies)
-- [Govern AI process](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/govern)
-- *...and 13 more*
-
-### Updated Pages
-
-- [What is an Azure landing zone?](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/)
-  - Updated: 2026-07-29T15:05:00.000Z → 2026-08-03T20:24:00.000Z
-- [Modern application platform](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/)
-  - Updated: 2026-05-29T22:07:00.000Z → 2026-08-03T15:40:00.000Z
 
 ## Classified Pages
 

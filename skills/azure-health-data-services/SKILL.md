@@ -1,9 +1,9 @@
 ---
 name: azure-health-data-services
-description: Expert knowledge for Azure Health Data Services development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using FHIR/DICOM APIs, bulk import/export, de-identification, Synapse/ADF pipelines, or SMART on FHIR, and other Azure Health Data Services related development tasks. Not for Azure Health Bot (use azure-health-bot), Azure Data Factory (use azure-data-factory), Azure Synapse Analytics (use azure-synapse-analytics), Azure Machine Learning (use azure-machine-learning).
+description: Expert knowledge for Azure Health Data Services development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using FHIR/DICOM APIs, bulk import/export, de-identification, Synapse/ADF integration, or SMART on FHIR, and other Azure Health Data Services related development tasks. Not for Azure Health Bot (use azure-health-bot), Azure Data Factory (use azure-data-factory), Azure Synapse Analytics (use azure-synapse-analytics), Azure Machine Learning (use azure-machine-learning).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-02"
+  generated_at: "2026-08-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Health Data Services Skill
@@ -25,12 +25,12 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L37-L46 | Diagnosing and fixing Azure Health Data Services issues: FHIR access tokens, event delivery problems, $convert-data failures, identity provider setup, and known platform limitations. |
-| Best Practices | L47-L55 | Best practices for securing and managing Azure Health Data Services: BCDR planning, CMK encryption for FHIR/DICOM, performance tuning, and safely running FHIR reindex jobs. |
+| Best Practices | L47-L55 | BCDR planning, CMK encryption for FHIR/DICOM, FHIR performance tuning, and safe configuration/operation of FHIR reindex jobs |
 | Decision Making | L56-L64 | Planning and executing migrations from Azure API for FHIR and SMART on FHIR proxy to Azure Health Data Services, plus answers to common Azure API for FHIR questions. |
 | Architecture & Design Patterns | L65-L71 | Architectural patterns for FHIR, DICOM, and de-identification: disaster recovery setup, reliable anonymization services, DICOM + Data Lake integration, and digital pathology workflow design. |
 | Limits & Quotas | L72-L77 | Scaling and performance limits for Azure API for FHIR and DICOM: autoscale setup, throughput and request caps, storage and size constraints, and service-specific behavior under load. |
 | Security | L78-L117 | Configuring auth, RBAC, identities, keys, policies, network and client app security for Azure Health Data Services (FHIR, DICOM, de-identification) including tokens, CMK, Private Link, and SMART on FHIR. |
-| Configuration | L118-L168 | Configuring Azure Health Data Services (FHIR and DICOM): CORS, logging, bulk import/export, de-identification, profiles, search, history/versioning, events, and standards-specific integrations. |
+| Configuration | L118-L168 | Configuring Azure FHIR and DICOM services: CORS, bulk import/export, de-identification, logging/monitoring, search and history policies, profiles/validation, and interoperability operations (CARIN, Da Vinci, $convert-data). |
 | Integrations & Coding Patterns | L169-L206 | Using FHIR and DICOM APIs with cURL/SDKs, bulk export/import, search, de-identification, events, and integrating with Synapse, ADF, Logic Apps, and Da Vinci/CARIN implementations |
 | Deployment | L207-L220 | How to deploy and move Azure Health Data Services (FHIR, DICOM, de-identification, workspaces) using portal, ARM, Bicep, CLI, PowerShell, and check regional availability |
 
@@ -51,7 +51,7 @@ This skill requires **network access** to fetch documentation content:
 | Apply customer-managed key best practices to DICOM service | https://learn.microsoft.com/en-us/azure/healthcare-apis/dicom/customer-managed-keys |
 | Apply customer-managed key best practices for FHIR | https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/customer-managed-keys |
 | Apply performance best practices for Azure FHIR service | https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/fhir-best-practices |
-| Run reindex jobs safely in Azure FHIR service | https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/how-to-run-a-reindex |
+| Safely run and throttle FHIR reindex jobs | https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/how-to-run-a-reindex |
 
 ### Decision Making
 | Topic | URL |
@@ -143,7 +143,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure CORS settings for DICOM service | https://learn.microsoft.com/en-us/azure/healthcare-apis/dicom/configure-cross-origin-resource-sharing |
 | Customize image location URLs in DICOM responses | https://learn.microsoft.com/en-us/azure/healthcare-apis/dicom/dicom-proxy-url-support |
 | Understand DICOM service v1 conformance and APIs | https://learn.microsoft.com/en-us/azure/healthcare-apis/dicom/dicom-services-conformance-statement |
-| Understand DICOM service v2 conformance and APIs | https://learn.microsoft.com/en-us/azure/healthcare-apis/dicom/dicom-services-conformance-statement-v2 |
+| Implement Azure DICOM service v2 conformance | https://learn.microsoft.com/en-us/azure/healthcare-apis/dicom/dicom-services-conformance-statement-v2 |
 | Enable and query DICOM diagnostic logging | https://learn.microsoft.com/en-us/azure/healthcare-apis/dicom/enable-diagnostic-logging |
 | Disable FHIR and DICOM events by deleting subscriptions | https://learn.microsoft.com/en-us/azure/healthcare-apis/events/events-disable-delete-workspace |
 | Understand Azure Health Data Services event message schema | https://learn.microsoft.com/en-us/azure/healthcare-apis/events/events-message-structure |

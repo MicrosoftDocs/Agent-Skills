@@ -1,9 +1,9 @@
 ---
 name: azure-application-gateway
-description: Expert knowledge for Azure Application Gateway development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring listeners, WAF/TLS, AKS ingress, header rewrites, or autoscaling App Gateway v2/Containers, and other Azure Application Gateway related development tasks. Not for Azure Front Door (use azure-front-door), Azure Load Balancer (use azure-load-balancer), Azure Virtual Network (use azure-virtual-network), Azure Web Application Firewall (use azure-web-application-firewall).
+description: Expert knowledge for Azure Application Gateway development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring listeners, mTLS/TLS, WAF, AKS/AGIC or App Gateway for Containers, and autoscaling, and other Azure Application Gateway related development tasks. Not for Azure Front Door (use azure-front-door), Azure Load Balancer (use azure-load-balancer), Azure Virtual Network (use azure-virtual-network), Azure Web Application Firewall (use azure-web-application-firewall).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-09"
+  generated_at: "2026-08-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Application Gateway Skill
@@ -30,7 +30,7 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L61-L65 | Guidance on choosing and designing load-balancing strategies and traffic distribution patterns when using Azure Application Gateway for Containers. |
 | Limits & Quotas | L66-L71 | Autoscaling, zone redundancy, and detailed capacity, configuration, and performance limits for Application Gateway v2 and Application Gateway for Containers. |
 | Security | L72-L111 | Configuring TLS/SSL, certificates, mTLS, Key Vault integration, cipher suites, FIPS, WAF, HSTS, and secure cookie/session settings for Azure Application Gateway and its Containers/Ingress. |
-| Configuration | L112-L174 | Configuring Application Gateway and Application Gateway for Containers: listeners, routing, health probes, header/URL rewrites, diagnostics/monitoring, session affinity, mTLS, Private Link, and AKS ingress settings. |
+| Configuration | L112-L174 | Configuring Application Gateway and Application Gateway for Containers: listeners, routing, health probes, headers, redirects, mTLS, Private Link, session affinity, diagnostics, and monitoring. |
 | Integrations & Coding Patterns | L175-L184 | Configuring header rewrites, integrating App Gateway (incl. containers) with Key Vault, Prometheus/Grafana, Istio, Sentinel/Defender, and using its metrics to autoscale AKS pods. |
 | Deployment | L185-L197 | Deploying and scaling Application Gateway and AGIC: portal/ARM/PowerShell setup, IPv6 frontends, AKS add-on enable/disable, migrations, and Helm-based upgrades. |
 
@@ -159,7 +159,7 @@ This skill requires **network access** to fetch documentation content:
 | Enable multi-namespace support in Application Gateway Ingress Controller | https://learn.microsoft.com/en-us/azure/application-gateway/ingress-controller-multiple-namespace-support |
 | Use private IPs for internal ingress routing with AGIC | https://learn.microsoft.com/en-us/azure/application-gateway/ingress-controller-private-ip |
 | Monitor Azure Application Gateway with Azure Monitor | https://learn.microsoft.com/en-us/azure/application-gateway/monitor-application-gateway |
-| Reference for monitoring data from Azure Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/monitor-application-gateway-reference |
+| Use Azure Application Gateway monitoring metrics and logs | https://learn.microsoft.com/en-us/azure/application-gateway/monitor-application-gateway-reference |
 | Configure multi-site hosting on Azure Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/multiple-site-overview |
 | Configure mTLS passthrough on Application Gateway via ARM | https://learn.microsoft.com/en-us/azure/application-gateway/mutual-authentication-arm-template |
 | Route traffic with parameter-based path selection in Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/parameter-based-path-selection-portal |

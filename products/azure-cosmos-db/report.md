@@ -54,10 +54,10 @@ confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure
 - **Unclassified**: 193
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 18
-- **Unchanged**: 699
-- **Deleted Pages**: 124
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 718
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cosmos-db/azure-cosmos-db.csv`
 
 ## Classification Statistics
@@ -76,73 +76,6 @@ confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure
 | *(Unclassified)* | 193 | 26.9% |
 
 ## Changes
-
-### New Pages
-
-- [Query Advisor](https://learn.microsoft.com/en-us/azure/cosmos-db/vscode-extension/query-advisor)
-
-### Updated Pages
-
-- [Vector indexing and search](https://learn.microsoft.com/en-us/azure/cosmos-db/vector-search)
-  - Updated: 2026-05-04T23:12:00.000Z → 2026-08-05T22:14:00.000Z
-- [.NET SDK v2 (legacy)](https://learn.microsoft.com/en-us/azure/cosmos-db/sdk-dotnet-v2)
-  - Updated: 2026-04-27T13:06:00.000Z → 2026-08-04T17:14:00.000Z
-- [.NET Core SDK v2 (legacy)](https://learn.microsoft.com/en-us/azure/cosmos-db/sdk-dotnet-core-v2)
-  - Updated: 2026-04-27T13:06:00.000Z → 2026-08-04T17:14:00.000Z
-- [Async Java SDK v2 (legacy)](https://learn.microsoft.com/en-us/azure/cosmos-db/sdk-java-async-v2)
-  - Updated: 2026-04-27T13:06:00.000Z → 2026-07-16T08:00:00.000Z
-- [Java bulk executor library v2 (legacy)](https://learn.microsoft.com/en-us/azure/cosmos-db/sdk-java-bulk-executor-v2)
-  - Updated: 2026-04-27T13:06:00.000Z → 2026-08-04T17:14:00.000Z
-- [Python](https://learn.microsoft.com/en-us/azure/cosmos-db/sdk-python)
-  - Updated: 2026-04-27T13:06:00.000Z → 2026-08-04T17:14:00.000Z
-- [Visual Studio Code extension](https://learn.microsoft.com/en-us/azure/cosmos-db/vscode-extension/overview)
-  - Updated: 2026-06-03T12:06:00.000Z → 2026-08-04T12:04:00.000Z
-- [JSON syntax templates](https://learn.microsoft.com/en-us/azure/cosmos-db/samples-resource-manager-templates)
-  - Updated: 2026-04-27T13:06:00.000Z → 2026-08-04T17:14:00.000Z
-- [Tokens and the Token function](https://learn.microsoft.com/en-us/azure/cosmos-db/cassandra/tokens)
-  - Updated: 2026-04-27T13:06:00.000Z → 2026-08-05T17:10:00.000Z
-- [Scale an API for Apache Cassandra account](https://learn.microsoft.com/en-us/azure/cosmos-db/cassandra/scale-account-throughput)
-  - Updated: 2026-04-27T13:06:00.000Z → 2026-08-05T17:10:00.000Z
-- [API for Apache Cassandra extensions overview](https://learn.microsoft.com/en-us/azure/cosmos-db/cassandra/driver-extensions)
-  - Updated: 2026-04-27T13:06:00.000Z → 2026-08-05T17:10:00.000Z
-- [Secondary indexes](https://learn.microsoft.com/en-us/azure/cosmos-db/cassandra/secondary-indexing)
-  - Updated: 2026-04-27T13:06:00.000Z → 2026-08-05T17:10:00.000Z
-- [Lightweight Transactions in API for Apache Cassandra](https://learn.microsoft.com/en-us/azure/cosmos-db/cassandra/lightweight-transactions)
-  - Updated: 2026-04-27T13:06:00.000Z → 2026-08-05T17:10:00.000Z
-- [Store and manage Spring Data](https://learn.microsoft.com/en-us/azure/cosmos-db/cassandra/access-data-spring-data-app)
-  - Updated: 2026-04-27T13:06:00.000Z → 2026-08-05T17:10:00.000Z
-- [Upsert data](https://learn.microsoft.com/en-us/azure/cosmos-db/cassandra/spark-upsert-operations)
-  - Updated: 2026-04-27T13:06:00.000Z → 2026-08-05T17:10:00.000Z
-- [Delete data](https://learn.microsoft.com/en-us/azure/cosmos-db/cassandra/spark-delete-operation)
-  - Updated: 2026-04-27T13:06:00.000Z → 2026-08-05T17:10:00.000Z
-- [Copy table data](https://learn.microsoft.com/en-us/azure/cosmos-db/cassandra/spark-table-copy-operations)
-  - Updated: 2026-04-27T13:06:00.000Z → 2026-08-05T17:10:00.000Z
-- [Migrate - Oracle Database to API for Apache Cassandra using Striim](https://learn.microsoft.com/en-us/azure/cosmos-db/cassandra/migrate-data-striim)
-  - Updated: 2026-04-27T13:06:00.000Z → 2026-08-05T17:10:00.000Z
-
-### Deleted Pages
-
-- ~~Copilot Chat query assistance (preview)~~ (https://learn.microsoft.com/en-us/azure/cosmos-db/vscode-extension/copilot-chat-query-assistance-preview)
-- ~~Natural language to query (preview)~~ (https://learn.microsoft.com/en-us/azure/cosmos-db/vscode-extension/natural-language-to-query-preview)
-- ~~Overview~~ (https://learn.microsoft.com/en-us/azure/documentdb/ai-frameworks)
-- ~~Autoscale~~ (https://learn.microsoft.com/en-us/azure/documentdb/autoscale)
-- ~~High availability and disaster recovery - Behind the scenes~~ (https://learn.microsoft.com/en-us/azure/documentdb/availability-disaster-recovery-under-hood)
-- ~~First-party MongoDB service~~ (https://learn.microsoft.com/en-us/azure/documentdb/azure-mongo-first-party)
-- ~~Background indexing~~ (https://learn.microsoft.com/en-us/azure/documentdb/background-indexing)
-- ~~LangChain on Azure~~ (https://learn.microsoft.com/en-us/azure/documentdb/build-rag-applications)
-- ~~Haystack~~ (https://learn.microsoft.com/en-us/azure/documentdb/build-rag-pipelines)
-- ~~Schema conversion using Visual Studio Code extension~~ (https://learn.microsoft.com/en-us/azure/documentdb/cassandra-how-to-schema-conversion-vs-code)
-- ~~Migration benefits~~ (https://learn.microsoft.com/en-us/azure/documentdb/cassandra-migration-benefits)
-- ~~Change streams~~ (https://learn.microsoft.com/en-us/azure/documentdb/change-streams)
-- ~~Compare to MongoDB Atlas~~ (https://learn.microsoft.com/en-us/azure/documentdb/compare-mongodb-atlas)
-- ~~MongoDB feature compatibility~~ (https://learn.microsoft.com/en-us/azure/documentdb/compatibility-features)
-- ~~MongoDB query language compatibility~~ (https://learn.microsoft.com/en-us/azure/documentdb/compatibility-query-language)
-- ~~Burstable tier~~ (https://learn.microsoft.com/en-us/azure/documentdb/compute-storage)
-- ~~Compute and storage~~ (https://learn.microsoft.com/en-us/azure/documentdb/compute-storage)
-- ~~Cross-region replication~~ (https://learn.microsoft.com/en-us/azure/documentdb/cross-region-replication)
-- ~~Data API~~ (https://learn.microsoft.com/en-us/azure/documentdb/data-api)
-- ~~Data encryption~~ (https://learn.microsoft.com/en-us/azure/documentdb/database-encryption-at-rest)
-- *...and 104 more*
 
 ## Classified Pages
 

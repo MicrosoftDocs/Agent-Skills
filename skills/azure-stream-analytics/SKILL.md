@@ -1,9 +1,9 @@
 ---
 name: azure-stream-analytics
-description: Expert knowledge for Azure Stream Analytics development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building jobs with Event Hubs/Kafka, Cosmos DB/SQL outputs, ML/AML integration, IoT Edge, or Power BI, and other Azure Stream Analytics related development tasks. Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure Data Factory (use azure-data-factory), Azure Event Hubs (use azure-event-hubs), Azure Data Explorer (use azure-data-explorer).
+description: Expert knowledge for Azure Stream Analytics development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building ASA jobs with Event Hubs/Kafka, Cosmos DB/SQL outputs, ML/AML integration, UDFs, or IoT Edge, and other Azure Stream Analytics related development tasks. Not for Azure Data Explorer (use azure-data-explorer), Azure Event Hubs (use azure-event-hubs), Azure Functions (use azure-functions), Azure Synapse Analytics (use azure-synapse-analytics).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-19"
+  generated_at: "2026-08-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Stream Analytics Skill
@@ -32,7 +32,7 @@ This skill requires **network access** to fetch documentation content:
 | Security | L95-L114 | Securing Stream Analytics jobs with managed identities, private endpoints, VNets, data protection, credential rotation, and Azure Policy for outputs like Event Hubs, SQL, ADX, Cosmos DB, and Power BI |
 | Configuration | L115-L148 | Configuring Stream Analytics jobs: inputs, outputs (SQL, Cosmos DB, Event Hubs, Kafka, Power BI, Delta Lake, etc.), autoscale, ordering, error handling, monitoring, and compatibility. |
 | Integrations & Coding Patterns | L149-L166 | Patterns for integrating Stream Analytics with Kafka, Event Hubs, ML/AML, schema registry, and custom code (C#/JS UDFs/aggregates), plus JSON/Avro parsing and advanced scenarios like HFT. |
-| Deployment | L167-L179 | Deploying, starting/stopping, scaling, and moving Stream Analytics jobs and clusters, plus CI/CD automation via ARM/Bicep, GitHub Actions, Azure DevOps, npm/NuGet, and IoT Edge/Stack Hub. |
+| Deployment | L167-L180 | Automating deployment, migration, and lifecycle (start/stop/delete) of Stream Analytics jobs and clusters using ARM/Bicep, GitHub Actions, Azure DevOps, REST, and edge/Stack Hub tools |
 
 ### Troubleshooting
 | Topic | URL |
@@ -169,6 +169,7 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Generate and deploy Stream Analytics jobs with Bicep | https://learn.microsoft.com/en-us/azure/stream-analytics/cicd-deploy-with-bicep |
 | Deploy Stream Analytics jobs using GitHub Actions workflows | https://learn.microsoft.com/en-us/azure/stream-analytics/cicd-github-actions |
+| Migrate Azure Stream Analytics jobs across regions | https://learn.microsoft.com/en-us/azure/stream-analytics/move-across-regions |
 | Move Azure Stream Analytics clusters across regions | https://learn.microsoft.com/en-us/azure/stream-analytics/move-cluster |
 | Deploy Stream Analytics edge jobs to Azure Stack Hub | https://learn.microsoft.com/en-us/azure/stream-analytics/on-azure-stack |
 | Export Stream Analytics jobs as ARM templates | https://learn.microsoft.com/en-us/azure/stream-analytics/resource-manager-export |

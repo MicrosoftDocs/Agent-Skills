@@ -36,8 +36,8 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 37
+- **Updated Pages**: 0
+- **Unchanged**: 39
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-api-center/azure-api-center.csv`
 
@@ -53,13 +53,6 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 | *(Unclassified)* | 24 | 61.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [Authorize access to APIs](https://learn.microsoft.com/en-us/azure/api-center/authorize-api-access)
-  - Updated: 2026-03-11T05:11:00.000Z → 2026-08-07T22:20:00.000Z
-- [Enable API Center MCP server](https://learn.microsoft.com/en-us/azure/api-center/discover-catalog-mcp-server)
-  - Updated: 2026-06-02T20:30:00.000Z → 2026-07-29T08:00:00.000Z
 
 ## Classified Pages
 

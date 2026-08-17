@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-09'
+generated_at: '2026-08-16'
 category_descriptions:
   limits-quotas: ExpressRoute limits on bandwidth, routes, gateways, FastPath, provider
     rate limiting, plus monitoring and FAQs to avoid hitting connectivity and quota
@@ -19,27 +19,28 @@ category_descriptions:
   troubleshooting: Troubleshooting ExpressRoute resiliency and asymmetric routing
     issues, plus FAQs on connectivity models, supported services, bandwidth, and pricing
     to resolve design or outage-related questions.
-  security: Encryption (IPsec, MACsec), NAT rules, RBAC roles, and security best practices
-    for protecting ExpressRoute circuits and traffic
-  decision-making: Guidance on choosing ExpressRoute connectivity models, VNets and
-    gateways, planning gateway SKU changes, and estimating/managing ExpressRoute costs.
+  security: 'Encryption and security for ExpressRoute: IPsec/MACsec setup, NAT requirements,
+    RBAC roles/permissions, and applying network security controls to private circuits.'
+  decision-making: Guidance on choosing ExpressRoute connectivity models, gateways,
+    and VNet options, plus planning and optimizing ExpressRoute bandwidth, circuit,
+    and gateway costs.
   integrations: Automating ExpressRoute circuit creation/management with PowerShell
     or Azure CLI, and configuring a site-to-site VPN that runs over ExpressRoute Microsoft
     peering.
 skill_description: Expert knowledge for Azure ExpressRoute development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  designing ExpressRoute circuits/gateways, BGP routing/Global Reach, VPN coexistence,
-  QoS, or MACsec/IPsec, and other Azure ExpressRoute related development tasks. Not
-  for Azure Internet Peering (use azure-internet-peering), Azure Virtual WAN (use
-  azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway), Azure Virtual Network
-  (use azure-virtual-network).
-use_when: Use when designing ExpressRoute circuits/gateways, BGP routing/Global Reach,
-  VPN coexistence, QoS, or MACsec/IPsec, and other Azure ExpressRoute related development
-  tasks.
-confusable_not_for: Not for Azure Internet Peering (use azure-internet-peering), Azure
-  Virtual WAN (use azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway),
-  Azure Virtual Network (use azure-virtual-network).
+  configuring ExpressRoute circuits/gateways, BGP routing, Global Reach, FastPath,
+  or IPsec/MACsec encryption, and other Azure ExpressRoute related development tasks.
+  Not for Azure Virtual Network (use azure-virtual-network), Azure VPN Gateway (use
+  azure-vpn-gateway), Azure Virtual WAN (use azure-virtual-wan), Azure Internet Peering
+  (use azure-internet-peering).
+use_when: Use when configuring ExpressRoute circuits/gateways, BGP routing, Global
+  Reach, FastPath, or IPsec/MACsec encryption, and other Azure ExpressRoute related
+  development tasks.
+confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), Azure
+  VPN Gateway (use azure-vpn-gateway), Azure Virtual WAN (use azure-virtual-wan),
+  Azure Internet Peering (use azure-internet-peering).
 ---
 # Azure ExpressRoute Crawl Report
 
@@ -52,9 +53,9 @@ confusable_not_for: Not for Azure Internet Peering (use azure-internet-peering),
 - **Unclassified**: 27
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 1
-- **Unchanged**: 94
+- **New Pages**: 0
+- **Updated Pages**: 3
+- **Unchanged**: 93
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-expressroute/azure-expressroute.csv`
 
@@ -75,14 +76,14 @@ confusable_not_for: Not for Azure Internet Peering (use azure-internet-peering),
 
 ## Changes
 
-### New Pages
-
-- [ExpressRoute Resiliency Guard](https://learn.microsoft.com/en-us/azure/expressroute/resiliency-model)
-
 ### Updated Pages
 
-- [Overview](https://learn.microsoft.com/en-us/azure/expressroute/gateway-migration)
-  - Updated: 2026-03-30T08:00:00.000Z → 2026-08-04T05:12:00.000Z
+- [ExpressRoute Metro](https://learn.microsoft.com/en-us/azure/expressroute/metro)
+  - Updated: 2026-05-10T08:00:00.000Z → 2026-08-12T22:14:00.000Z
+- [Overview](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-about-virtual-network-gateways)
+  - Updated: 2026-05-20T05:21:00.000Z → 2026-08-12T08:00:00.000Z
+- [Secure ExpressRoute](https://learn.microsoft.com/en-us/azure/expressroute/secure-expressroute)
+  - Updated: 2025-06-18T05:09:00.000Z → 2026-08-13T22:14:00.000Z
 
 ## Classified Pages
 
@@ -100,8 +101,6 @@ confusable_not_for: Not for Azure Internet Peering (use azure-internet-peering),
 | [Routing requirements](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-routing) | configuration | 0.78 | Routing requirements pages for ExpressRoute typically enumerate product-specific BGP and routing constraints (e.g., required/allowed prefixes, ASNs, MD5, communities, maximum routes per peering, supported topologies). These are concrete configuration rules and parameter values unique to ExpressRoute routing behavior, which qualify as expert configuration knowledge rather than generic networking concepts. |
 | [Configure route filters for Microsoft peering](https://learn.microsoft.com/en-us/azure/expressroute/how-to-routefilter-portal) | configuration | 0.75 | Shows how to configure route filters and BGP community-based selection of Microsoft services; includes product-specific settings and behaviors. |
 | [NAT for ExpressRoute](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-nat) | security | 0.75 | The page defines detailed NAT requirements and public IP address rules for ExpressRoute circuits, including constraints on address ranges and usage for public and Microsoft peering. These are product-specific security and network boundary requirements. |
-| [Secure ExpressRoute](https://learn.microsoft.com/en-us/azure/expressroute/secure-expressroute) | security | 0.75 | Provides actionable, ExpressRoute-specific security recommendations for connectivity, access control, and monitoring. |
-| [Overview](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-about-virtual-network-gateways) | decision-making | 0.72 | The article goes beyond concepts and includes SKU-specific performance characteristics and feature differences for ExpressRoute virtual network gateways, helping users choose between gateway SKUs and features like FastPath. This is product-specific decision guidance with quantified trade-offs (for example, estimated performance per SKU), which fits the decision-making category more than generic configuration or limits. |
 | [Add IPv6 support for private peering](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-add-ipv6) | configuration | 0.70 | Describes exact steps and ordering to enable IPv6 for ExpressRoute private peering using portal/CLI/PowerShell; includes product-specific constraints. |
 | [Asymmetric routing](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-asymmetric-routing) | troubleshooting | 0.70 | Explains ExpressRoute-specific asymmetric routing issues in multi-link scenarios, including how stateful devices drop traffic when paths differ and how to adjust routing to correct it. Organized around a concrete networking symptom and ExpressRoute-specific causes/solutions, which qualifies as troubleshooting knowledge. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-linkvnet-cli) | configuration | 0.70 | Describes how to link VNets to ExpressRoute circuits with specific CLI commands and parameters (authorization keys, circuit IDs, etc.), which is product-specific configuration detail. |
@@ -133,12 +132,14 @@ confusable_not_for: Not for Azure Internet Peering (use azure-internet-peering),
 | [Optimize routing](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-optimize-routing) | architecture-patterns | 0.70 | ExpressRoute-specific routing optimization patterns when multiple circuits exist; uses standard routing tech but applied to this service’s topology. |
 | [Overview](https://learn.microsoft.com/en-us/azure/expressroute/about-upgrade-circuit-bandwidth) | best-practices | 0.70 | The page focuses on how to correctly upgrade ExpressRoute circuit bandwidth, including product-specific recommendations and gotchas around upgrading an existing circuit rather than recreating it, coordination with providers, and sequencing of changes. This is actionable, ExpressRoute-specific guidance rather than generic networking advice, fitting the best-practices category. |
 | [Overview](https://learn.microsoft.com/en-us/azure/expressroute/design-architecture-for-resiliency) | architecture-patterns | 0.70 | Provides product-specific resiliency architectures for ExpressRoute, including when to use specific topology patterns (dual circuits, diverse peering locations, failover designs) and trade-offs for high availability of hybrid connectivity. This goes beyond generic HA concepts and gives ExpressRoute-specific architectural guidance. |
+| [Overview](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-about-virtual-network-gateways) | decision-making | 0.70 | Describes gateway SKUs, estimated performance by SKU, and features such as FastPath; this is SKU/tier selection guidance with performance characteristics that help decide which gateway to use, fitting decision-making with product-specific details. |
 | [Overview](https://learn.microsoft.com/en-us/azure/expressroute/gateway-migration) | deployment | 0.70 | The page describes migrating from legacy ExpressRoute gateway SKUs (Standard/HighPerf/UltraPerf) to ErGw1/2/3AZ SKUs, including constraints like only supporting equal-or-higher SKU moves and Basic-to-Standard IP upgrade requirements. These are product-specific migration and upgrade rules tied to gateway deployment behavior, which align best with deployment-focused expert guidance. |
 | [Overview](https://learn.microsoft.com/en-us/azure/expressroute/scalable-gateway) | limits-quotas | 0.70 | Explains ErGwScale gateway with up to 40 Gbps bandwidth, configuration options, limitations, and performance details—likely with numeric limits per SKU. |
 | [Plan and manage costs](https://learn.microsoft.com/en-us/azure/expressroute/plan-manage-cost) | decision-making | 0.70 | Guidance on cost estimation, budgeting, and monitoring specific to ExpressRoute; supports financial decision-making and capacity planning. |
 | [Rate limit for ExpressRoute Direct circuit](https://learn.microsoft.com/en-us/azure/expressroute/rate-limit) | configuration | 0.70 | Guidance on enabling/disabling rate limiting for ExpressRoute Direct circuits will include specific configuration steps and parameter values (for example, rate limit settings per circuit/port). These are product-specific configuration details rather than generic concepts. |
 | [Rate limit for service provider ports](https://learn.microsoft.com/en-us/azure/expressroute/provider-rate-limit) | limits-quotas | 0.70 | Explains how rate limiting works over service provider ports and how to monitor throughput and drops. Such content typically includes specific bandwidth thresholds, drop behaviors, and possibly per-circuit limits, which are numeric constraints and limits. |
 | [Roles and permissions](https://learn.microsoft.com/en-us/azure/expressroute/roles-permissions) | security | 0.70 | Explains required permissions across circuits, gateways, VNets, and IPs; likely lists specific RBAC roles and scopes. |
+| [Secure ExpressRoute](https://learn.microsoft.com/en-us/azure/expressroute/secure-expressroute) | security | 0.70 | Provides ExpressRoute-specific security recommendations for routing, management access, connected VNets, monitoring data, and recovery paths; this is product-specific security guidance beyond generic concepts. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-gateway-migration-portal) | deployment | 0.68 | The article describes how to migrate from legacy Standard/HighPerf/UltraPerf ExpressRoute gateway SKUs to the ErGw1/2/3AZ SKUs, which is a product-specific migration/deployment path between tiers. It contains SKU-specific guidance and constraints for moving to availability zone-enabled gateways, which falls under deployment/migration patterns rather than generic how-to content. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/expressroute/howto-circuit-cli) | integrations | 0.65 | Duplicate of index 11; CLI commands and parameters for ExpressRoute circuits are product-specific integration patterns. |
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-set-global-reach) | configuration | 0.65 | PowerShell-based configuration of Global Reach; contains product-specific cmdlets and parameter usage. |
@@ -180,7 +181,7 @@ confusable_not_for: Not for Azure Internet Peering (use azure-internet-peering),
 | [Azure portal](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-linkvnet-portal-resource-manager) | 0.20 | Primarily a step-by-step portal tutorial for linking a VNet to an ExpressRoute circuit; it does not emphasize configuration matrices, limits, or product-specific best-practice nuances beyond generic how-to steps. |
 | [Create an ExpressRoute circuit - Portal](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-circuit-portal-resource-manager) | 0.20 | Quickstart for creating ExpressRoute circuits in the portal is a step-by-step tutorial. It focuses on how to create, update, and delete circuits, not on detailed limits, configuration parameter tables, or decision matrices. It doesn’t match any expert-knowledge sub-skill type as defined. |
 | [Create an ExpressRoute circuit - PowerShell](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-circuit-arm) | 0.20 | PowerShell quickstart for creating ExpressRoute circuits is procedural guidance. It shows commands and basic usage but not structured configuration option tables, limits, or troubleshooting mappings. It doesn’t meet the expert-knowledge criteria for any sub-skill type. |
-| [ExpressRoute Metro](https://learn.microsoft.com/en-us/azure/expressroute/metro) | 0.20 | The page is an overview of ExpressRoute Metro and how it works. The summary indicates conceptual description of circuits and connections but does not mention specific numeric limits, configuration parameter tables, error codes, or decision matrices. It reads as service overview/architecture explanation rather than detailed limits, configuration, troubleshooting, or decision guidance. |
+| [ExpressRoute Metro](https://learn.microsoft.com/en-us/azure/expressroute/metro) | 0.20 | Overview of ExpressRoute Metro; summary indicates conceptual description of circuits and peering locations without specific limits, configuration tables, error codes, or detailed decision matrices. |
 | [Monitor ExpressRoute](https://learn.microsoft.com/en-us/azure/expressroute/monitor-expressroute) | 0.20 | Page is a general monitoring overview for Azure ExpressRoute using Azure Monitor, with links to other resources. The summary does not indicate presence of specific limits, configuration parameter tables, error-code-based troubleshooting, or other detailed expert-only data; it appears conceptual and introductory. |
 | [Network Insights](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-network-insights) | 0.20 | Describes viewing ExpressRoute metrics and topology via Network Insights but appears to be a conceptual/UX overview without detailed configuration parameters, limits, or troubleshooting mappings. |
 | [Overview](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-circuit-peerings) | 0.20 | Described as an overview of ExpressRoute circuits and peering with conceptual explanation of routing domains and logical connectivity. No indication of specific limits, configuration tables, error codes, or decision matrices. |

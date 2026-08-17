@@ -1,9 +1,9 @@
 ---
 name: azure-virtual-desktop
-description: Expert knowledge for Azure Virtual Desktop development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing AVD host pools, autoscale, FSLogix profiles, MSIX App Attach apps, or Teams optimization, and other Azure Virtual Desktop related development tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Dev Box (use azure-dev-box), Azure VMware Solution (use azure-vmware-solution).
+description: Expert knowledge for Azure Virtual Desktop development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing AVD autoscale, FSLogix profiles, MSIX App Attach, Teams optimization, or WebRTC redirection, and other Azure Virtual Desktop related development tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Dev Box (use azure-dev-box), Azure VMware Solution (use azure-vmware-solution).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-09"
+  generated_at: "2026-08-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Virtual Desktop Skill
@@ -30,7 +30,7 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L80-L87 | Design patterns for AVD app delivery, stateless hosts, DR, FSLogix profile containers, and automated scaling with Automation/Logic Apps. |
 | Limits & Quotas | L88-L93 | Guidance on RDP bandwidth requirements and optimizing Microsoft Teams (audio/video, collaboration features) performance and configuration in Azure Virtual Desktop. |
 | Security | L94-L115 | Securing AVD access and sessions: SSO (Entra ID/AD FS/Kerberos), Conditional Access/MFA, RBAC and delegated admin, clipboard/screen/watermark controls, external identities, and Purview forensic onboarding. |
-| Configuration | L116-L175 | Configuring AVD environments: images, autoscale, networking, RDP/peripheral redirection, Teams/Office, licensing, monitoring, and client/host settings for performance and user experience. |
+| Configuration | L116-L175 | Configuring AVD environments: images, autoscale, networking, RDP/redirection, Teams/OneDrive, licensing, language packs, monitoring, and client/RemoteApp behavior. |
 | Integrations & Coding Patterns | L176-L182 | Managing AVD via CLI/PowerShell, integrating partner App Attach delivery, enabling WebRTC multimedia redirection, and launching resources using custom URI schemes. |
 | Deployment | L183-L192 | Guides for deploying and migrating AVD: adding session hosts, moving from classic, hybrid/on-prem setups, regional host pools, region moves, and client/MMR deployment via Intune/ConfigMgr. |
 
@@ -153,7 +153,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure RDP drive and storage redirection | https://learn.microsoft.com/en-us/azure/virtual-desktop/redirection-configure-drives-storage |
 | Configure RDP location redirection for AVD | https://learn.microsoft.com/en-us/azure/virtual-desktop/redirection-configure-location |
 | Configure MTP/PTP device redirection over RDP | https://learn.microsoft.com/en-us/azure/virtual-desktop/redirection-configure-plug-play-mtp-ptp |
-| Configure printer redirection in Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/redirection-configure-printers |
+| Configure RDP printer redirection for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/redirection-configure-printers |
 | Configure serial and COM port redirection over RDP | https://learn.microsoft.com/en-us/azure/virtual-desktop/redirection-configure-serial-com-ports |
 | Configure smart card redirection for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/redirection-configure-smart-cards |
 | Configure USB redirection on Windows RDP clients | https://learn.microsoft.com/en-us/azure/virtual-desktop/redirection-configure-usb |

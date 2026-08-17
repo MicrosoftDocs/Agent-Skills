@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-08-09'
+generated_at: '2026-08-16'
 category_descriptions:
   security: 'Securing Web PubSub: authN/Z for chat, Socket.IO, MQTT; roles/permissions;
     Entra ID and managed identities; mTLS and WAF; keys/Key Vault; private endpoints,
     service tags, and network access controls.'
-  configuration: 'Configuring Web PubSub instances: storage-backed chat, metrics/alerts,
-    Azure Monitor, custom domains, event routing, geo-replication, client URLs, local
-    tunneling, MQTT/Socket.IO options, and OData filters.'
+  configuration: 'Configuring Web PubSub: storage/chat setup, routing and handlers,
+    custom domains, geo-replication, client URLs, metrics/logs, monitoring, local
+    tunnel, MQTT/Socket.IO, and OData filters.'
   integrations: 'Client/server integration patterns for Web PubSub: SDK and REST usage,
     WebSocket/MQTT, JSON/protobuf subprotocols, events via CloudEvents/Functions,
     auth, and Socket.IO integration.'
@@ -29,16 +29,15 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Web PubSub development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building WebSocket/MQTT or Socket.IO apps, storage-backed chat, geo-replication,
-  or Premium autoscale, and other Azure Web PubSub related development tasks. Not
-  for Azure SignalR Service (use azure-signalr-service), Azure Service Bus (use azure-service-bus),
-  Azure Event Hubs (use azure-event-hubs), Azure Relay (use azure-relay).
-use_when: Use when building WebSocket/MQTT or Socket.IO apps, storage-backed chat,
-  geo-replication, or Premium autoscale, and other Azure Web PubSub related development
+  building WebSocket/MQTT or Socket.IO apps, chat routing, Entra ID auth, geo-replication,
+  or autoscale, and other Azure Web PubSub related development tasks. Not for Azure
+  SignalR Service (use azure-signalr-service), Azure Event Hubs (use azure-event-hubs),
+  Azure Service Bus (use azure-service-bus).
+use_when: Use when building WebSocket/MQTT or Socket.IO apps, chat routing, Entra
+  ID auth, geo-replication, or autoscale, and other Azure Web PubSub related development
   tasks.
 confusable_not_for: Not for Azure SignalR Service (use azure-signalr-service), Azure
-  Service Bus (use azure-service-bus), Azure Event Hubs (use azure-event-hubs), Azure
-  Relay (use azure-relay).
+  Event Hubs (use azure-event-hubs), Azure Service Bus (use azure-service-bus).
 ---
 # Azure Web PubSub Crawl Report
 
@@ -51,9 +50,9 @@ confusable_not_for: Not for Azure SignalR Service (use azure-signalr-service), A
 - **Unclassified**: 35
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 2
-- **Unchanged**: 120
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 122
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-web-pubsub/azure-web-pubsub.csv`
 
@@ -74,16 +73,10 @@ confusable_not_for: Not for Azure SignalR Service (use azure-signalr-service), A
 
 ## Changes
 
-### New Pages
-
-- [Choose Web PubSub capability](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/choose-web-pubsub-capability)
-
 ### Updated Pages
 
-- [Disaster recovery](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/concept-disaster-recovery)
-  - Updated: 2023-08-23T11:20:00.000Z → 2026-08-06T05:14:00.000Z
-- [About Web PubSub](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/overview)
-  - Updated: 2025-05-28T05:33:00.000Z → 2026-08-06T11:41:00.000Z
+- [Socket.IO Serverless Mode Specification](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/socket-io-serverless-protocol)
+  - Updated: 2024-10-10T11:23:00.000Z → 2026-08-10T22:12:00.000Z
 
 ## Classified Pages
 
@@ -108,7 +101,6 @@ confusable_not_for: Not for Azure SignalR Service (use azure-signalr-service), A
 | [Server SDK - JavaScript](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/reference-server-sdk-js) | integrations | 0.85 | JavaScript server SDK reference lists product-specific classes, methods, and configuration parameters for Web PubSub integration. |
 | [Server SDK - Python](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/reference-server-sdk-python) | integrations | 0.85 | Python server SDK reference includes Web PubSub-specific APIs and options for managing connections and messages. |
 | [REST API for MQTT](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/reference-rest-api-mqtt) | integrations | 0.84 | Clarifies how Web PubSub data-plane REST API maps to MQTT; includes parameter semantics and constraints unique to this integration. |
-| [Socket.IO Serverless Mode Specification](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/socket-io-serverless-protocol) | configuration | 0.84 | Formal specification of Serverless Mode; will define protocol details, message formats, and configuration requirements unique to this product. |
 | [Azure Function Bindings for Socket.IO](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/socket-io-serverless-function-binding) | integrations | 0.82 | Explains Function triggers/bindings for Socket.IO; will list binding names, direction, and configuration properties, which are detailed integration parameters. |
 | [Configure client certificate authentication](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-client-certificate) | security | 0.82 | Describes enabling client certificate/TLS mutual auth and validating certs in event handlers; this requires concrete configuration flags, header fields, and validation behavior unique to Web PubSub. |
 | [Reliable JSON WebSocket subprotocol](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/reference-json-reliable-webpubsub-subprotocol) | integrations | 0.82 | The json.reliable.webpubsub.azure.v1 reference will describe reliability-specific message flows (ack IDs, sequence numbers, resume tokens, etc.) and exact JSON payload structures for Azure Web PubSub’s reliable mode. These are detailed, product-specific protocol and configuration semantics used when coding against the service, fitting integrations and constituting expert knowledge. |
@@ -120,6 +112,7 @@ confusable_not_for: Not for Azure SignalR Service (use azure-signalr-service), A
 | [Debug event handlers](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-local-debug-event-handler) | troubleshooting | 0.78 | Focused on troubleshooting/debugging event handlers; likely includes specific HTTP behaviors, headers, and diagnostic steps unique to Web PubSub CloudEvents handling. |
 | [JSON WebSocket subprotocol](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/reference-json-webpubsub-subprotocol) | integrations | 0.78 | A protocol reference page for the json.webpubsub.azure.v1 subprotocol will enumerate message schemas, operation names, required/optional fields, and exact JSON payload formats unique to Azure Web PubSub. These are product-specific wire-level integration details and API contracts that qualify as expert knowledge and fit the integrations & coding patterns category. |
 | [Protobuf WebSocket subprotocol](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/reference-protobuf-webpubsub-subprotocol) | integrations | 0.78 | A reference for protobuf.webpubsub.azure.v1 will define protobuf message types, field names, numeric tags, and frame formats required to interoperate with Azure Web PubSub. These protocol-level details are product-specific integration contracts, matching the integrations sub-skill and representing expert knowledge beyond generic LLM training. |
+| [Socket.IO Serverless Mode Specification](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/socket-io-serverless-protocol) | configuration | 0.78 | The page is a protocol/specification document for Web PubSub's Socket.IO serverless mode, describing detailed mappings and transformations between Socket.IO and Azure Web PubSub interfaces. This constitutes product-specific configuration and behavior knowledge (protocol-level settings, message formats, and mappings) that an LLM is unlikely to fully know from training. It is not primarily about limits, troubleshooting, or deployment, but about how to configure and interpret the serverless protocol and its bindings. |
 | [Unsupported Socket.IO server APIs](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/socketio-supported-server-apis) | limits-quotas | 0.78 | Lists which Socket.IO server APIs are partially or not supported; effectively a capability/behavior limit matrix specific to this service. |
 | [Disable local authentication](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-disable-local-auth) | security | 0.76 | Covers turning off local access key authentication and enforcing Entra ID; such articles typically list exact portal/ARM settings and side effects, which are product-specific security configuration details. |
 | [Authenticate and connect clients](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/chat-howto-authenticate) | security | 0.75 | Covers issuing client access tokens, tying user IDs to identities, and portal vs server-issued tokens; likely includes token fields, scopes, and auth configuration details specific to Web PubSub chat. |

@@ -47,8 +47,8 @@ confusable_not_for: Not for Azure AI Language (use azure-language-service), Azur
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 5
-- **Unchanged**: 110
+- **Updated Pages**: 0
+- **Unchanged**: 115
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-translator/azure-translator.csv`
 
@@ -66,19 +66,6 @@ confusable_not_for: Not for Azure AI Language (use azure-language-service), Azur
 | *(Unclassified)* | 34 | 29.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [What is Azure Translator document translation?](https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/overview)
-  - Updated: 2026-07-30T08:00:00.000Z → 2026-08-07T08:00:00.000Z
-- [Document translation FAQ](https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/faq)
-  - Updated: 2026-07-31T06:04:00.000Z → 2026-08-07T08:00:00.000Z
-- [Document translation SDK guide](https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/document-sdk-overview)
-  - Updated: 2026-07-31T06:04:00.000Z → 2026-08-08T06:16:00.000Z
-- [What's new?](https://learn.microsoft.com/en-us/azure/ai-services/translator/whats-new)
-  - Updated: 2026-07-31T06:04:00.000Z → 2026-08-07T08:00:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/latest/overview)
-  - Updated: 2026-07-30T08:00:00.000Z → 2026-08-07T08:00:00.000Z
 
 ## Classified Pages
 

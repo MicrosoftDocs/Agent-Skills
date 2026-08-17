@@ -41,9 +41,9 @@ use_when: Use when designing AI, HPC, SaaS, AVD, AVS, or mission-critical worklo
 - **Unclassified**: 38
 
 ### Incremental Update
-- **New Pages**: 7
-- **Updated Pages**: 2
-- **Unchanged**: 203
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 212
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-well-architected/azure-well-architected.csv`
 
@@ -61,23 +61,6 @@ use_when: Use when designing AI, HPC, SaaS, AVD, AVS, or mission-critical worklo
 | *(Unclassified)* | 38 | 17.9% |
 
 ## Changes
-
-### New Pages
-
-- [Testing](https://learn.microsoft.com/en-us/azure/well-architected/design-guides/testing)
-- [Get started](https://learn.microsoft.com/en-us/azure/well-architected/microsoft-fabric/overview)
-- [Reliability](https://learn.microsoft.com/en-us/azure/well-architected/microsoft-fabric/reliability)
-- [Security](https://learn.microsoft.com/en-us/azure/well-architected/microsoft-fabric/security)
-- [Cost Optimization](https://learn.microsoft.com/en-us/azure/well-architected/microsoft-fabric/cost-optimization)
-- [Operational Excellence](https://learn.microsoft.com/en-us/azure/well-architected/microsoft-fabric/operational-excellence)
-- [Performance Efficiency](https://learn.microsoft.com/en-us/azure/well-architected/microsoft-fabric/performance-efficiency)
-
-### Updated Pages
-
-- [OE:09 Testing strategy](https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/testing)
-  - Updated: 2026-03-31T22:07:00.000Z → 2026-07-30T08:00:00.000Z
-- [PE:06 Performance testing](https://learn.microsoft.com/en-us/azure/well-architected/performance-efficiency/performance-test)
-  - Updated: 2026-05-06T17:10:00.000Z → 2026-08-04T17:09:00.000Z
 
 ## Classified Pages
 

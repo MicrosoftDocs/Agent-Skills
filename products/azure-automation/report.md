@@ -51,8 +51,8 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 113
+- **Updated Pages**: 0
+- **Unchanged**: 115
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-automation/azure-automation.csv`
 
@@ -71,13 +71,6 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 | *(Unclassified)* | 25 | 21.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [Automation runbook types](https://learn.microsoft.com/en-us/azure/automation/automation-runbook-types)
-  - Updated: 2025-07-15T08:00:00.000Z → 2026-08-06T06:11:00.000Z
-- [Automation Runtime environment](https://learn.microsoft.com/en-us/azure/automation/runtime-environment-overview)
-  - Updated: 2025-06-27T22:11:00.000Z → 2026-08-05T11:41:00.000Z
 
 ## Classified Pages
 

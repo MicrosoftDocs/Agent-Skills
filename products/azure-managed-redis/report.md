@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-02'
+generated_at: '2026-08-16'
 category_descriptions:
   integrations: Patterns and code samples for connecting apps (Functions, .NET, Go,
     Node.js, Python) to Azure Managed Redis, securing with Entra ID, caching/output,
@@ -13,8 +13,8 @@ category_descriptions:
   configuration: 'Configuring Azure Managed Redis instances: settings, modules, persistence,
     geo-replication, monitoring/metrics/logs, diagnostics, Grafana, migration tooling,
     and admin via CLI/PowerShell.'
-  security: 'Securing Azure Managed Redis: TLS, Entra auth, ACLs, disk encryption,
-    Private Link, security best practices, and applying Azure Policy compliance controls.'
+  security: 'Configuring Azure Managed Redis security: ACLs, Entra auth, disk encryption,
+    Private Link, TLS, security best practices, and Azure Policy compliance controls.'
   troubleshooting: 'Diagnosing and fixing Azure Managed Redis issues: connectivity,
     latency/timeouts, data loss, server resources, client performance, common errors,
     and using Redis Insight/redis-cli for troubleshooting.'
@@ -27,11 +27,12 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Managed Redis development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  using Azure Managed Redis clusters, sharding, persistence, geo-replication, Entra
-  auth, or Private Link, and other Azure Managed Redis related development tasks.
-  Not for Azure Cache for Redis (use azure-cache-redis).
-use_when: Use when using Azure Managed Redis clusters, sharding, persistence, geo-replication,
-  Entra auth, or Private Link, and other Azure Managed Redis related development tasks.
+  using Azure Managed Redis clusters, Entra-secured clients, geo-replication, persistence,
+  or migration tooling, and other Azure Managed Redis related development tasks. Not
+  for Azure Cache for Redis (use azure-cache-redis).
+use_when: Use when using Azure Managed Redis clusters, Entra-secured clients, geo-replication,
+  persistence, or migration tooling, and other Azure Managed Redis related development
+  tasks.
 confusable_not_for: Not for Azure Cache for Redis (use azure-cache-redis).
 ---
 # Azure Managed Redis Crawl Report
@@ -46,8 +47,8 @@ confusable_not_for: Not for Azure Cache for Redis (use azure-cache-redis).
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 73
+- **Updated Pages**: 1
+- **Unchanged**: 72
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-managed-redis/azure-managed-redis.csv`
 
@@ -67,11 +68,15 @@ confusable_not_for: Not for Azure Cache for Redis (use azure-cache-redis).
 
 ## Changes
 
+### Updated Pages
+
+- [Custom data access permissions](https://learn.microsoft.com/en-us/azure/redis/configure-access-permissions)
+  - Updated: 2026-06-03T05:14:00.000Z → 2026-08-13T05:11:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
-| [Custom data access permissions](https://learn.microsoft.com/en-us/azure/redis/configure-access-permissions) | security | 0.90 | Covers assigning per-user Redis ACL permissions via access strings and access policy assignments; includes product-specific RBAC/ACL configuration details and API versioning, which are security-focused expert knowledge. |
 | [Troubleshooting FAQs](https://learn.microsoft.com/en-us/azure/redis/monitor-troubleshoot-faq) | troubleshooting | 0.90 | A monitoring and troubleshooting FAQ for Azure Managed Redis is very likely organized around specific error messages, status conditions, and monitoring signals, with guidance on diagnosis and resolution. That matches the troubleshooting pattern (symptom → cause → solution) and will contain product-specific expert knowledge such as particular error codes, metrics, and recommended actions. |
 | [Best practices for the Flash Optimized tier](https://learn.microsoft.com/en-us/azure/redis/best-practices-flash-optimized) | best-practices | 0.85 | Explicitly labeled best practices for a specific tier; likely includes SKU sizing guidance, configuration recommendations, and tier-specific gotchas and common issues unique to the Flash Optimized tier. |
 | [Troubleshoot connectivity issues](https://learn.microsoft.com/en-us/azure/redis/troubleshoot-connectivity) | troubleshooting | 0.85 | Connectivity troubleshooting guide; likely organized by symptom (intermittent vs continuous), with product-specific checks, commands, and possibly error messages. |
@@ -88,6 +93,7 @@ confusable_not_for: Not for Azure Cache for Redis (use azure-cache-redis).
 | [Secure your Azure Managed Redis deployment](https://learn.microsoft.com/en-us/azure/redis/secure-azure-managed-redis) | security | 0.80 | The page explicitly focuses on securing Azure Managed Redis with best practices. Such articles normally include product-specific security settings (network isolation, auth modes, RBAC roles, key management) and configuration guidance that goes beyond generic security theory, fitting the security sub-skill. |
 | [Troubleshoot Redis server](https://learn.microsoft.com/en-us/azure/redis/troubleshoot-server) | troubleshooting | 0.80 | Covers server-side memory pressure, high CPU, long-running commands, bandwidth limits; includes Redis commands and metrics, fitting the troubleshooting pattern. |
 | [Troubleshoot client](https://learn.microsoft.com/en-us/azure/redis/troubleshoot-client) | troubleshooting | 0.80 | Troubleshoots client memory pressure, traffic bursts, high CPU, bandwidth limits, large requests/responses; this is symptom→cause→solution content specific to Redis clients. |
+| [Custom data access permissions](https://learn.microsoft.com/en-us/azure/redis/configure-access-permissions) | security | 0.78 | Page describes product-specific security configuration for Azure Managed Redis using custom Redis ACL access strings on access policy assignments, including preview API version details and how to scope commands and key access per user/service principal. This is fine-grained IAM-style configuration with specific parameter concepts (access strings tied to access policies) that go beyond generic security knowledge. |
 | [Monitoring data reference](https://learn.microsoft.com/en-us/azure/redis/monitor-cache-reference) | configuration | 0.78 | A monitoring data reference for a specific Azure service typically lists all supported metrics, dimensions, and log categories with their exact names, units, and sometimes default/allowed ranges. These are product-specific configuration/telemetry details that LLMs are unlikely to know from training and are needed to correctly configure monitoring and alerts, so it best fits the configuration sub-skill. |
 | [Server load management best practice](https://learn.microsoft.com/en-us/azure/redis/best-practices-server-load) | best-practices | 0.78 | The page is explicitly a best-practices guide for using and monitoring server load on Azure Managed Redis. These recommendations are product-specific (for this managed Redis offering), likely include concrete guidance on interpreting Redis-specific metrics, thresholds, and behaviors unique to Azure’s implementation. This fits the best-practices category rather than generic concepts, and the content is unlikely to be fully captured in pretraining. |
 | [Connection resilience best practices](https://learn.microsoft.com/en-us/azure/redis/best-practices-connection) | best-practices | 0.75 | Connection resilience best-practices are product-specific, covering retry patterns, timeouts, and failover behaviors. |

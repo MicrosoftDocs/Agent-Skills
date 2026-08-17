@@ -1,21 +1,21 @@
 ---
-generated_at: '2026-08-02'
+generated_at: '2026-08-16'
 category_descriptions:
   decision-making: Guidance for choosing Azure SQL options and pricing, comparing
     SQL VMs vs Managed Instance, planning migrations (including Db2), HADR choices,
     regional feature support, and SQL VM licensing/AHB.
-  troubleshooting: Diagnosing and fixing performance, connectivity, capacity, memory,
-    log, replication, and I/O issues for Azure SQL Database, Managed Instance, and
-    SQL Server on Azure VMs
+  troubleshooting: 'Diagnosing and fixing Azure SQL and SQL Server on Azure VM issues:
+    capacity, performance, connectivity, geo-replication, memory, transaction log
+    full, I/O throttling, and IaaS Agent extension errors.'
   architecture-patterns: 'High-level designs and patterns for SQL Server on Azure
     VMs: connectivity, Always On availability groups, failover cluster instances,
     and Windows Server Failover Clustering setup.'
   limits-quotas: Info on Azure SQL capacity limits, DTU benchmark behavior, regional
     feature availability, and how to request quota increases for databases and managed
     instances
-  configuration: 'Configuring SQL Server on Azure VMs: HA/DR (AGs, FCIs, listeners,
-    load balancers), storage and tempdb layout, editions/versions, IaaS Agent, and
-    connectivity options.'
+  configuration: 'Configuring SQL Server on Azure VMs and related services: deployment,
+    storage, clustering/FCI, availability groups, load balancers, backups, monitoring,
+    and SQL IaaS Agent/VM management.'
   best-practices: 'Best practices for SQL Server on Azure VMs: HA/DR clustering, DNN
     listeners, backup/restore, performance tuning, storage and VM sizing, baselines,
     and best practices assessments.'
@@ -30,14 +30,14 @@ category_descriptions:
 skill_description: Expert knowledge for SQL Server on Azure Virtual Machines development
   including troubleshooting, best practices, decision making, architecture & design
   patterns, limits & quotas, security, configuration, integrations & coding patterns,
-  and deployment. Use when planning SQL VM vs Managed Instance, Always On/FCI HADR,
-  DTU/capacity, AHB licensing, or Blob backups, and other SQL Server on Azure Virtual
-  Machines related development tasks. Not for Azure SQL Database (use azure-sql-database),
+  and deployment. Use when planning SQL VM vs Managed Instance, Always On/FCI, SQL
+  IaaS Agent, Key Vault/EKM, or Blob backup configs, and other SQL Server on Azure
+  Virtual Machines related development tasks. Not for Azure SQL Database (use azure-sql-database),
   Azure SQL Managed Instance (use azure-sql-managed-instance), Azure Virtual Machines
   (use azure-virtual-machines), SAP HANA on Azure Large Instances (use azure-sap).
-use_when: Use when planning SQL VM vs Managed Instance, Always On/FCI HADR, DTU/capacity,
-  AHB licensing, or Blob backups, and other SQL Server on Azure Virtual Machines related
-  development tasks.
+use_when: Use when planning SQL VM vs Managed Instance, Always On/FCI, SQL IaaS Agent,
+  Key Vault/EKM, or Blob backup configs, and other SQL Server on Azure Virtual Machines
+  related development tasks.
 confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure SQL
   Managed Instance (use azure-sql-managed-instance), Azure Virtual Machines (use azure-virtual-machines),
   SAP HANA on Azure Large Instances (use azure-sap).
@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 129
+- **Updated Pages**: 2
+- **Unchanged**: 127
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sql-virtual-machines/azure-sql-virtual-machines.csv`
 
@@ -76,6 +76,13 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 
 ## Changes
 
+### Updated Pages
+
+- [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/monitoring-sql-managed-instance-azure-monitor-reference?view=azuresql)
+  - Updated: 2026-02-13T18:37:00.000Z → 2026-08-12T17:36:00.000Z
+- [Known issues with Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-known-issues?view=azuresql)
+  - Updated: 2026-06-25T08:00:00.000Z → 2026-08-11T08:00:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
@@ -88,15 +95,15 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | [Transaction log errors in Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/troubleshoot-transaction-log-errors-issues?view=azuresql-mi) | troubleshooting | 0.86 | The page targets Azure SQL Managed Instance and addresses specific transaction log full errors (9002, 40552), explaining their causes and how to resolve them in this particular platform. It follows a symptom → cause → solution structure with platform-specific guidance, which fits the troubleshooting sub-skill and contains expert operational knowledge. |
 | [Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/modifiable-configuration-reference?view=azuresql) | configuration | 0.85 | Page lists specific Azure SQL Database configuration settings and explicitly marks which are mutable vs immutable after creation. This is a detailed configuration reference with product-specific setting names and constraints, which qualifies as configuration expert knowledge. |
 | [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/modifiable-configuration-reference?view=azuresql) | configuration | 0.85 | Page provides a reference of Azure SQL Managed Instance configuration options, indicating which can be changed post-deployment and which require creating a new instance. It contains product-specific configuration parameters and mutability rules, fitting the configuration sub-skill. |
+| [Known issues with Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-known-issues?view=azuresql) | troubleshooting | 0.82 | A 'Known Issues' article for Azure SQL Managed Instance typically lists specific problems, their conditions, error messages, and workarounds or resolutions, often with dates and product-specific behaviors. This matches the troubleshooting pattern of symptom → cause → workaround/solution and contains detailed, time-sensitive expert knowledge that is not generally known from training. |
 | [Capacity errors during deployment](https://learn.microsoft.com/en-us/azure/azure-sql/capacity-errors-troubleshoot?view=azuresql) | troubleshooting | 0.80 | Guides diagnosis and resolution of capacity errors with specific error messages and recommended actions for SQL Database and Managed Instance. |
 | [Common connection issues](https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-common-connectivity-issues?view=azuresql) | troubleshooting | 0.80 | The article explicitly focuses on preventing, diagnosing, and mitigating connection and transient errors, and will include specific error patterns, connection string options, retry logic settings, and symptom→cause→solution guidance unique to Azure SQL, which fits the troubleshooting category. |
 | [HADR configuration](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/hadr-cluster-best-practices?view=azuresql) | best-practices | 0.80 | Provides supported cluster configurations and best practices for AGs and FCIs on Azure VMs, including Azure-specific settings. |
 | [Microsoft Entra authentication](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/configure-azure-ad-authentication-for-sql-vm?view=azuresql) | security | 0.80 | Configuring Entra ID auth for SQL VMs requires specific roles, connection strings, and configuration steps that are product-specific security settings. |
 | [Troubleshoot out of memory errors](https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-memory-errors-issues?view=azuresql) | troubleshooting | 0.80 | Focuses on out-of-memory errors with causes and remediation steps, including references to service objective limits. |
 | [With the Azure portal](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/manage-sql-vm-portal?view=azuresql) | configuration | 0.80 | Explains SQL VM management settings exposed via the SQL virtual machines resource, including SQL-specific configuration options. |
-| [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/monitoring-sql-managed-instance-azure-monitor-reference?view=azuresql) | configuration | 0.78 | A monitoring data reference page for Azure SQL Managed Instance typically lists all Azure Monitor metrics, dimensions, and log categories specific to the service, including exact metric names, units, and sometimes default collection behavior. These product-specific monitoring fields and their meanings are not generally known from training and function as configuration/parameter references for observability setups rather than generic concepts. |
+| [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/monitoring-sql-managed-instance-azure-monitor-reference?view=azuresql) | configuration | 0.78 | A monitoring data reference page for Azure SQL Managed Instance typically enumerates all Azure Monitor metrics, diagnostic log categories, dimensions, and sometimes their units, aggregation types, and default collection behavior. This is product-specific reference information that an LLM is unlikely to fully memorize from training and is used to configure monitoring and alerting. It best fits the configuration sub-skill because it describes concrete monitoring configuration options and schema rather than general concepts. |
 | [Distributed network name (DNN)](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/failover-cluster-instance-distributed-network-name-dnn-configure?view=azuresql) | configuration | 0.78 | DNN setup for FCI requires specific cluster resource names and Azure networking parameters that are product-specific configuration details. |
-| [Known issues with Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-known-issues?view=azuresql) | troubleshooting | 0.78 | The page is a catalog of current known issues for Azure SQL Managed Instance, each with product-specific symptoms and workarounds or resolution details. This is expert troubleshooting knowledge that maps issues to causes and fixes, and is not just conceptual guidance. |
 | [SSL root certificate expiring](https://learn.microsoft.com/en-us/azure/azure-sql/updates/ssl-root-certificate-expiring?view=azuresql) | security | 0.78 | Details certificate authority changes and required client configuration updates to maintain secure connections, which are product-specific security settings. |
 | [Storage](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/performance-guidelines-best-practices-storage?view=azuresql) | best-practices | 0.78 | The page provides product-specific performance best practices for SQL Server on Azure VMs, including concrete recommendations on disk types, storage pool configurations, and caching strategies tailored to Azure infrastructure. These are actionable, implementation-focused guidelines rather than generic concepts, and include configuration details unique to SQL Server on Azure Virtual Machines. |
 | [VM vCore customization](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/vm-vcore-customization-for-sql?view=azuresql) | configuration | 0.78 | The article describes how to configure VM vCore customization (Configurable Constrained Cores and disabling SMT) specifically for SQL Server on Azure VMs, including product-specific settings and options that control how many vCores are exposed and how SMT is configured. These are concrete configuration parameters and behaviors unique to this Azure SQL VM scenario, rather than generic performance guidance. |

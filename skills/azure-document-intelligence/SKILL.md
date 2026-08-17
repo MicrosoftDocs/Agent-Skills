@@ -1,9 +1,9 @@
 ---
 name: azure-document-intelligence
-description: Expert knowledge for Azure AI Document Intelligence development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when training custom models, composing templates, using REST/SDK APIs, deploying containers, or planning v4.0 upgrades, and other Azure AI Document Intelligence related development tasks. Not for Azure AI Search (use azure-cognitive-search), Azure AI Custom Vision (use azure-custom-vision), Azure AI Language (use azure-language-service), Azure AI Video Indexer (use azure-video-indexer).
+description: Expert knowledge for Azure AI Document Intelligence development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when training custom models, calling AnalyzeDocument APIs, using containers, securing access, or migrating to v4.0, and other Azure AI Document Intelligence related development tasks. Not for Azure AI Search (use azure-cognitive-search), Azure AI Vision (use azure-ai-vision), Azure AI Custom Vision (use azure-custom-vision), Azure AI Video Indexer (use azure-video-indexer).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-12"
+  generated_at: "2026-08-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure AI Document Intelligence Skill
@@ -25,13 +25,13 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L36-L42 | Diagnosing latency, understanding and fixing Document Intelligence API error codes, and handling known service issues and limitations. |
-| Best Practices | L43-L54 | Guidance on training, labeling, composing, and managing custom/classification/template models to maximize Document Intelligence accuracy, confidence, and lifecycle quality. |
-| Decision Making | L55-L61 | Guidance on choosing the right Document Intelligence model, estimating usage/costs, and planning migration and version upgrades (including to v4.0). |
-| Limits & Quotas | L62-L72 | Capacity add-ons, container image tags, OCR and model language/locale support, batch processing at scale, and service quotas/limits for Azure Document Intelligence. |
-| Security | L73-L80 | Securing Document Intelligence resources: creating SAS tokens, configuring data-at-rest encryption with customer-managed keys, and using managed identities and VNETs for secure access. |
-| Configuration | L81-L86 | Configuring and deploying Document Intelligence containers, and managing/sharing custom model projects in Document Intelligence Studio for collaborative use. |
-| Integrations & Coding Patterns | L87-L97 | How to call Document Intelligence via REST/SDKs, use the sample tool, and integrate outputs (JSON/Markdown) into workflows with Azure Functions and Logic Apps. |
-| Deployment | L98-L105 | Guides for deploying Document Intelligence: Docker/container setup (including offline), SDK/REST API usage, disaster recovery, and deploying the sample labeling tool. |
+| Best Practices | L43-L54 | Guidance for training, labeling, composing, and managing custom Document Intelligence models to maximize accuracy, confidence, and table extraction quality. |
+| Decision Making | L55-L61 | Choosing the right Document Intelligence model, estimating and optimizing usage/costs, and planning or executing migration to v4.0 from earlier versions. |
+| Limits & Quotas | L62-L71 | Capacity limits, quotas, scaling with add-ons and batch analysis, container image tags, and supported OCR languages/locales and prebuilt model language coverage. |
+| Security | L72-L79 | Securing Document Intelligence resources: creating SAS tokens, configuring data-at-rest encryption with customer-managed keys, and using managed identities and VNETs for secure access. |
+| Configuration | L80-L84 | How to configure and run Azure Document Intelligence in containers, including environment settings, networking, storage, licensing, and deployment options for on-premises or hybrid scenarios. |
+| Integrations & Coding Patterns | L85-L94 | Using Document Intelligence APIs/SDKs, interpreting AnalyzeDocument/Markdown outputs, and integrating with Azure Functions or Logic Apps for end-to-end document processing workflows |
+| Deployment | L95-L101 | Running Document Intelligence in Docker/offline, deploying the labeling tool, and setting up resilient, disaster‑ready deployments for models and services |
 
 ### Troubleshooting
 | Topic | URL |
@@ -45,12 +45,12 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Improve Document Intelligence accuracy and confidence | https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/concept/accuracy-confidence?view=doc-intel-4.0.0 |
 | Train custom document classification models | https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/how-to-guides/build-a-custom-classifier?view=doc-intel-4.0.0 |
-| Build and train custom Document Intelligence models | https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/how-to-guides/build-a-custom-model?view=doc-intel-4.0.0 |
-| Create and compose custom Document Intelligence models | https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/how-to-guides/compose-custom-models?view=doc-intel-4.0.0 |
-| Use efficient labeling tips in Document Intelligence Studio | https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/train/custom-label-tips?view=doc-intel-4.0.0 |
+| Build and train Document Intelligence custom models | https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/how-to-guides/build-a-custom-model?view=doc-intel-4.0.0 |
+| Create and compose Document Intelligence custom models | https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/how-to-guides/compose-custom-models?view=doc-intel-4.0.0 |
+| Apply labeling best practices in Document Intelligence Studio | https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/train/custom-label-tips?view=doc-intel-4.0.0 |
 | Apply labeling best practices for high-accuracy custom models | https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/train/custom-labels?view=doc-intel-4.0.0 |
-| Manage Azure Document Intelligence custom model lifecycle | https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/train/custom-lifecycle?view=doc-intel-4.0.0 |
-| Train template models using supervised table tags | https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/v21/supervised-table-tags?view=doc-intel-2.1.0 |
+| Manage Document Intelligence custom model lifecycle | https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/train/custom-lifecycle?view=doc-intel-4.0.0 |
+| Train template models with supervised table tags | https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/v21/supervised-table-tags?view=doc-intel-2.1.0 |
 
 ### Decision Making
 | Topic | URL |
@@ -64,7 +64,6 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Increase Document Intelligence capacity with add-ons | https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/concept/add-on-capabilities?view=doc-intel-4.0.0 |
 | Reference Document Intelligence container image tags | https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/containers/image-tags?view=doc-intel-4.0.0 |
-| Understand language support for custom Document Intelligence models | https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/language-support/custom?view=doc-intel-4.0.0 |
 | Check OCR language and locale support for Read/Layout | https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/language-support/ocr?view=doc-intel-4.0.0 |
 | Review language support for Document Intelligence prebuilt models | https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/language-support/prebuilt?view=doc-intel-4.0.0 |
 | Use Document Intelligence batch analysis at scale | https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/prebuilt/batch-analysis?view=doc-intel-4.0.0 |
@@ -82,7 +81,6 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Configure Azure Document Intelligence containers | https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/containers/configuration?view=doc-intel-4.0.0 |
-| Share custom model projects in Document Intelligence Studio | https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/how-to-guides/project-share-custom-models?view=doc-intel-4.0.0 |
 
 ### Integrations & Coding Patterns
 | Topic | URL |
@@ -90,16 +88,14 @@ This skill requires **network access** to fetch documentation content:
 | Use AnalyzeDocument API response objects effectively | https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/concept/analyze-document-response?view=doc-intel-4.0.0 |
 | Consume Document Intelligence Markdown output | https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/concept/markdown-elements?view=doc-intel-4.0.0 |
 | Integrate Document Intelligence via SDKs and REST | https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/how-to-guides/use-sdk-rest-api?view=doc-intel-4.0.0 |
+| Use Document Intelligence SDKs and REST APIs | https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/quickstarts/get-started-sdks-rest-api?view=doc-intel-4.0.0 |
 | Process documents with Azure Functions and Document Intelligence | https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/tutorial/azure-function?view=doc-intel-4.0.0 |
 | Integrate Document Intelligence with Azure Logic Apps | https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/tutorial/logic-apps?view=doc-intel-4.0.0 |
-| Use sample tool with REST API to train models | https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/v21/label-tool?view=doc-intel-2.1.0 |
-| Label, train, and analyze forms with sample tool | https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/v21/try-sample-label-tool?view=doc-intel-2.1.0 |
 
 ### Deployment
 | Topic | URL |
 |-------|-----|
-| Run Document Intelligence containers in disconnected environments | https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/containers/disconnected?view=doc-intel-4.0.0 |
+| Run Document Intelligence containers offline | https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/containers/disconnected?view=doc-intel-4.0.0 |
 | Install and run Document Intelligence Docker containers | https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/containers/install-run?view=doc-intel-4.0.0 |
 | Implement disaster recovery for Document Intelligence models | https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/how-to-guides/disaster-recovery?view=doc-intel-4.0.0 |
-| Start using Document Intelligence SDKs and REST API | https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/quickstarts/get-started-sdks-rest-api?view=doc-intel-4.0.0 |
 | Deploy the Document Intelligence Sample Labeling tool | https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/v21/deploy-label-tool?view=doc-intel-2.1.0 |

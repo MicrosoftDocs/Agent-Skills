@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-08-09'
+generated_at: '2026-08-16'
 category_descriptions:
   decision-making: 'Cost planning and design choices for Blob Storage: tiers, archive
     retrieval, networking, reserved capacity, migration tools, data protection, and
     mapping operations to billing.'
-  configuration: Configuring monitoring, lifecycle, immutability, restore, networking,
-    and client tools (BlobFuse, Storage Mover), plus third‑party backup/migration
-    integrations for Azure Blob Storage.
+  configuration: 'Configuring Azure Blob Storage features: monitoring, lifecycle,
+    immutability, soft delete, versioning, PITR, BlobFuse mounts, networking, inventory,
+    and third‑party backup/migration tools.'
   security: 'Securing Blob Storage access: RBAC/ABAC, Entra auth, SAS tokens, SFTP,
     ACLs, Storage Mover, anonymous access remediation, and encryption (CSE, keys,
     scopes, BlobFuse2).'
@@ -27,16 +27,17 @@ category_descriptions:
     tags, SAS, events, and language-specific code samples.'
 skill_description: Expert knowledge for Azure Blob Storage development including troubleshooting,
   best practices, decision making, limits & quotas, security, configuration, integrations
-  & coding patterns, and deployment. Use when using Blob tiers, Data Lake, NFS/SFTP,
-  static websites, or SDK/CLI data operations, and other Azure Blob Storage related
-  development tasks. Not for Azure Files (use azure-files), Azure Queue Storage (use
-  azure-queue-storage), Azure Table Storage (use azure-table-storage), Azure NetApp
-  Files (use azure-netapp-files).
-use_when: Use when using Blob tiers, Data Lake, NFS/SFTP, static websites, or SDK/CLI
-  data operations, and other Azure Blob Storage related development tasks.
+  & coding patterns, and deployment. Use when using access tiers, lifecycle rules,
+  immutability/soft delete, NFS/SFTP, or BlobFuse/BlobFuse2 mounts, and other Azure
+  Blob Storage related development tasks. Not for Azure Files (use azure-files), Azure
+  Queue Storage (use azure-queue-storage), Azure Table Storage (use azure-table-storage),
+  Azure Cosmos DB (use azure-cosmos-db).
+use_when: Use when using access tiers, lifecycle rules, immutability/soft delete,
+  NFS/SFTP, or BlobFuse/BlobFuse2 mounts, and other Azure Blob Storage related development
+  tasks.
 confusable_not_for: Not for Azure Files (use azure-files), Azure Queue Storage (use
-  azure-queue-storage), Azure Table Storage (use azure-table-storage), Azure NetApp
-  Files (use azure-netapp-files).
+  azure-queue-storage), Azure Table Storage (use azure-table-storage), Azure Cosmos
+  DB (use azure-cosmos-db).
 ---
 # Azure Blob Storage Crawl Report
 
@@ -73,8 +74,8 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Queue Storage (
 
 ### Updated Pages
 
-- [Host keys (SFTP) support](https://learn.microsoft.com/en-us/azure/storage/blobs/secure-file-transfer-protocol-host-keys)
-  - Updated: 2026-02-02T18:12:00.000Z → 2026-08-07T17:22:00.000Z
+- [Configure streaming mode](https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-configure-streaming)
+  - Updated: 2026-01-30T18:17:00.000Z → 2026-08-11T17:12:00.000Z
 
 ## Classified Pages
 
@@ -86,7 +87,6 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Queue Storage (
 | [Actions and attributes for conditions](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-auth-abac-attributes) | security | 0.90 | Lists supported DataActions and attribute dictionaries for Blob Storage ABAC conditions; detailed, product-specific security configuration surface. |
 | [Conditions](https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-conditions) | configuration | 0.90 | Details JSON format of conditions plus properties and operators; this is a configuration reference with specific field names and allowed values. |
 | [Configure caching mode](https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-configure-caching) | configuration | 0.90 | Provides specific configuration options for caching mode and workload tuning, matching configuration and best-practice style guidance. |
-| [Configure streaming mode](https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-configure-streaming) | configuration | 0.90 | Details configuration parameters for streaming mode, including cache behavior and flush conditions, which are product-specific settings. |
 | [Create a configuration file](https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-configure) | configuration | 0.90 | Focuses on BlobFuse configuration file with specific setting names and allowed values controlling connection and behavior, matching configuration criteria. |
 | [Diagnostic logs](https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-enable-logs) | configuration | 0.90 | Explains logging configuration options (log levels, destinations, defaults) for BlobFuse, clearly matching configuration criteria. |
 | [Job run error codes](https://learn.microsoft.com/en-us/azure/storage-mover/status-code) | troubleshooting | 0.90 | Dedicated to job run error codes with AZSM-prefixed status codes and scopes; maps specific codes to meanings and remediation steps, which is classic troubleshooting content. |
@@ -151,6 +151,7 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Queue Storage (
 | [Authorize access with Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/storage/blobs/secure-file-transfer-protocol-support-entra-id-based-access) | security | 0.78 | The page describes how to authorize SFTP access to Azure Blob Storage using Microsoft Entra ID, including RBAC-based access control and specific role-based access patterns unique to this feature. It focuses on security configuration (identity, roles, and access model) rather than generic concepts, fitting the security sub-skill. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-data-operations-cli) | security | 0.78 | Details Azure CLI extensions and flags for choosing between Entra ID, account keys, and SAS for blob data operations; includes product-specific security configuration patterns. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-user-delegation-sas-create-cli) | security | 0.78 | Details Azure CLI commands and options to create user delegation SAS for containers/blobs; concrete security token configuration. |
+| [Configure streaming mode](https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-configure-streaming) | configuration | 0.78 | The article describes how to configure BlobFuse in streaming mode with product-specific settings and behavior (such as how data is cached in memory in chunks/blocks during reads and writes and when updates are flushed). This is configuration-focused, with BlobFuse-specific parameters and operational details that go beyond generic knowledge. It is not primarily about limits, troubleshooting, or deployment, but about how to set and use specific configuration options for streaming mode. |
 | [Enable soft delete for containers](https://learn.microsoft.com/en-us/azure/storage/blobs/soft-delete-container-enable) | configuration | 0.78 | Shows how to enable container soft delete and set retention periods; concrete configuration behavior and constraints. |
 | [Mitigate hot partitions](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-performance-mitigate-hot-partitions) | best-practices | 0.78 | Page provides product-specific guidance on identifying hot partitions using Azure Monitor metrics and resource logs, and prescriptive steps to redistribute load and reduce throttling. This is actionable, service-specific best-practices content rather than generic concepts. |
 | [Monitoring Blob Storage data reference](https://learn.microsoft.com/en-us/azure/storage/blobs/monitor-blob-storage-reference) | configuration | 0.78 | A monitoring data reference for Blob Storage will enumerate specific metric names, dimensions, and log fields with their meanings and sometimes units/allowed values. This is product-specific, parameter-level information that an LLM is unlikely to fully know from training and aligns best with the configuration category (detailed reference of observable fields and their structure), rather than conceptual monitoring guidance. |

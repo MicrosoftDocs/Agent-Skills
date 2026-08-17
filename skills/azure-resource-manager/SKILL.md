@@ -1,9 +1,9 @@
 ---
 name: azure-resource-manager
-description: Expert knowledge for Azure Resource Manager development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when authoring Bicep/ARM templates, using CLI/PowerShell/REST, Key Vault, AKS, or ARM deployment stacks, and other Azure Resource Manager related development tasks. Not for Azure Policy (use azure-policy), Azure Resource Graph (use azure-resource-graph), Azure Portal (use azure-portal), Azure Networking (use azure-networking).
+description: Expert knowledge for Azure Resource Manager development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when authoring Bicep/ARM templates, using CLI/PowerShell/REST, configuring policies/tags, or securing deployments, and other Azure Resource Manager related development tasks. Not for Azure Policy (use azure-policy), Azure Resource Graph (use azure-resource-graph), Azure Portal (use azure-portal), Azure Monitor (use azure-monitor).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-09"
+  generated_at: "2026-08-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Resource Manager Skill
@@ -25,14 +25,14 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L37-L135 | Diagnosing and fixing Azure Bicep/ARM deployment errors, including specific BCP codes, template syntax/type issues, scope and decorator problems, policy/SKU/name constraints, and common deployment failures. |
-| Best Practices | L136-L182 | Bicep/ARM template authoring and linting best practices: naming, locations, dependencies, unused code, safe patterns, testing with ARM toolkit, and resilient tagging/custom endpoints. |
-| Decision Making | L183-L196 | Guidance on migration and relocation decisions: moving from classic/ASM to ARM/Bicep, blueprint-to-stack migration, regional move planning, resource move/tag support, and relocation strategies. |
-| Architecture & Design Patterns | L197-L204 | Bicep architecture patterns for reusable configs, flexible parameters, deterministic name generation, and sharing variables across templates for scalable ARM deployments. |
-| Limits & Quotas | L205-L234 | Limits, quotas, and constraints for ARM/Bicep deployments: resource counts, parameters/outputs, naming/tag rules, throttling, subscription/RG limits, history cleanup, and quota error troubleshooting. |
-| Security | L235-L264 | Securing ARM/Bicep deployments: cross-tenant auth, private endpoints/VNETs, secrets handling (Key Vault, secure params), RBAC/locks, policy/regulatory mapping, and TLS/network hardening. |
-| Configuration | L265-L320 | Configuring ARM and Bicep: template structure, parameters, scopes, tags, policies, custom providers, UI Form view, monitoring, async ops, and deployment/dev environment settings. |
-| Integrations & Coding Patterns | L321-L382 | Bicep and ARM template functions, operators, and patterns; integrating with CLI/PowerShell/SDKs/REST, using Key Vault, AKS, custom providers, and programmatic resource/tag management. |
-| Deployment | L383-L439 | Deploying and moving Azure resources with ARM/Bicep: scripts, stacks, registries, multi-scope deployments, CI/CD, and region/subscription relocation for many Azure services. |
+| Best Practices | L136-L187 | Bicep/ARM template authoring best practices: linting rules, avoiding hardcoding, scoping and dependencies, using recent APIs/modules, and testing/validation for reliable deployments. |
+| Decision Making | L188-L201 | Guidance on migration and relocation decisions: moving from classic/ASM to ARM/Bicep, blueprint-to-stack migration, regional move planning, resource move/tag support, and relocation strategies. |
+| Architecture & Design Patterns | L202-L209 | Bicep architecture patterns for reusable configs, flexible parameters, deterministic name generation, and sharing variables across templates for scalable ARM deployments. |
+| Limits & Quotas | L210-L239 | Limits, quotas, and constraints for ARM/Bicep deployments: resource counts, parameters/outputs, naming/tag rules, throttling, subscription/RG limits, history cleanup, and quota error troubleshooting. |
+| Security | L240-L269 | Securing ARM/Bicep deployments: cross-tenant auth, private endpoints/VNETs, secrets handling (Key Vault, secure params), RBAC/locks, policy/regulatory mapping, and TLS/network hardening. |
+| Configuration | L270-L328 | Configuring ARM and Bicep deployments: scopes, parameters, tags, policies, custom providers, monitoring, portal Form view UI, and environment setup for scripts, extensions, and governance. |
+| Integrations & Coding Patterns | L329-L390 | Bicep and ARM integration patterns, functions, and operators, plus CLI/PowerShell/Python/REST usage for deploying, tagging, querying, and programmatically managing Azure resources. |
+| Deployment | L391-L445 | Deploying and moving Azure resources with ARM/Bicep: scripts, stacks, registries, multi-scope deployments, CI/CD, and region/subscription relocation for many Azure services. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -138,7 +138,7 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Apply Bicep development best practices for ARM templates | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/best-practices |
 | Use ARM preflight validation to catch deployment errors early | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deploy-preflight |
-| Apply and customize Bicep linter best practices | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter |
+| Apply and customize Azure Bicep linter rules | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter |
 | Use explicit locations for Bicep module parameters | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-explicit-values-for-loc-params |
 | Scope nested deployment templates correctly in Bicep | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-nested-deployment-template-scoping |
 | Avoid conflicting metadata decorators in Bicep | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-no-conflicting-metadata |
@@ -159,6 +159,11 @@ This skill requires **network access** to fetch documentation content:
 | Prefer unquoted property names in Bicep objects | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-prefer-unquoted-property-names |
 | Simplify unnecessary string interpolation in Bicep | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-simplify-interpolation |
 | Simplify JSON null usage in Bicep templates | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-simplify-json-null |
+| Enforce Bicep output descriptions with linter | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-use-description-outputs |
+| Require parameter descriptions using Bicep linter | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-use-description-parameters |
+| Apply descriptions to Bicep type properties | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-use-description-type-properties |
+| Use descriptions on Bicep user-defined types | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-use-description-types |
+| Enforce variable descriptions in Bicep files | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-use-description-variables |
 | Use parent property for child resources in Bicep | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-use-parent-property |
 | Use recent API versions with Bicep linter | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-use-recent-api-versions |
 | Use recent Az PowerShell versions in scripts | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-use-recent-az-powershell-version |
@@ -272,6 +277,7 @@ This skill requires **network access** to fetch documentation content:
 | Run and configure the Bicep MCP server for AI tools | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-mcp-server |
 | Configure child resource names and types in Bicep | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/child-resource-name-type |
 | Use supported data types in Bicep files | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/data-types |
+| Configure Bicep deployments at management group scope | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deploy-to-management-group |
 | Configure dev environments for Bicep deployment scripts | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deployment-script-bicep-configure-dev |
 | Configure artifacts parameters for Bicep linter compliance | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-artifacts-parameters |
 | Use iterative loops to generate Bicep resources | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/loops |
@@ -297,6 +303,8 @@ This skill requires **network access** to fetch documentation content:
 | Enforce tag compliance with Azure Policy definitions | https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/tag-policies |
 | Configure resource tags using Bicep templates | https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources-bicep |
 | Configure tags in ARM templates during deployment | https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources-templates |
+| Configure ARM template deployments at management group scope | https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-to-management-group |
+| Configure ARM template deployments at tenant scope | https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-to-tenant |
 | Configure dev environment for ARM deployment scripts | https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deployment-script-template-configure-dev |
 | Use supported Form view UI elements in ARM | https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/form-view-elements |
 | Configure Grid UI element in Form view | https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/form-view-microsoft-common-grid |
@@ -310,7 +318,7 @@ This skill requires **network access** to fetch documentation content:
 | Author Azure portal Form view JSON definitions | https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/form-view-overview |
 | Create and use ARM template parameter files | https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/parameter-files |
 | Configure scope for ARM extension resources | https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/scope-extension-resources |
-| Understand template function behavior in scoped deployments | https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/scope-functions |
+| Use ARM template functions in scoped deployments | https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/scope-functions |
 | Configure ARM template structure and JSON sections | https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/syntax |
 | Author ARM templates reusable across Azure clouds | https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-cloud-consistency |
 | Use deployment functions in ARM templates | https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-functions-deployment |
@@ -335,7 +343,7 @@ This skill requires **network access** to fetch documentation content:
 | Use numeric functions and operators in Bicep | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-functions-numeric |
 | Work with object functions in Bicep templates | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-functions-object |
 | Use functions in Bicep parameters files | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-functions-parameters-file |
-| Retrieve Azure resource values with Bicep functions | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-functions-resource |
+| Use Bicep resource functions to access ARM values | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-functions-resource |
 | Get deployment scope values using Bicep functions | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-functions-scope |
 | Use Azure Bicep string functions in templates | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-functions-string |
 | Deploy Kubernetes resources to AKS using Bicep extension | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-kubernetes-extension |
@@ -371,7 +379,7 @@ This skill requires **network access** to fetch documentation content:
 | Apply logical functions in ARM templates | https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-functions-logical |
 | Use numeric functions in ARM templates | https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-functions-numeric |
 | Manipulate objects with ARM template functions | https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-functions-object |
-| Retrieve resource values with ARM functions | https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-functions-resource |
+| Use ARM template resource functions effectively | https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-functions-resource |
 | Get deployment scope values in ARM templates | https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-functions-scope |
 | Use ARM template string functions effectively | https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-functions-string |
 | Deploy VM Custom Script extensions with ARM templates | https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-tutorial-deploy-vm-extensions |
@@ -430,9 +438,7 @@ This skill requires **network access** to fetch documentation content:
 | Deploy ARM templates using Python SDK | https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-python |
 | Deploy ARM templates via Azure REST API | https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-rest |
 | Use Deploy to Azure button for remote templates | https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-to-azure-button |
-| Deploy ARM templates at management group scope | https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-to-management-group |
 | Deploy ARM templates to one or many resource groups | https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-to-resource-group |
-| Deploy ARM templates at tenant scope | https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-to-tenant |
 | Use what-if analysis for ARM template changes | https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-what-if |
 | Understand complete mode deletion behavior in ARM | https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deployment-complete-mode-deletion |
 | Use linked and nested ARM templates for modular deployments | https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/linked-templates |

@@ -1,18 +1,14 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-08-16'
 category_descriptions:
-  integrations: APIs, SDKs, CLI, and query usage; integrating IoT Hub, Azure Data
-    Explorer, Functions, Power Platform; coding .NET clients and validating DTDL models
-    for Azure Digital Twins.
-  architecture-patterns: Patterns for routing data into/out of Azure Digital Twins,
-    plus strategies for high availability, redundancy, and disaster recovery planning
-    and configuration.
+  integrations: Using SDKs, REST/CLI, queries, and plugins to integrate Azure Digital
+    Twins with IoT Hub, Azure Data Explorer, Functions, Power Platform, and .NET clients,
+    including query and DTDL model patterns.
   configuration: 'Configuring and operating Azure Digital Twins: instance setup, security,
     endpoints/routes, data history, monitoring, graph/twin/model management, Explorer/3D
     tools, and query language usage.'
-  decision-making: Guidance on selecting DTDL-based industry ontologies for your twin
-    models and instructions for migrating from Azure Digital Twins preview control
-    plane APIs to current APIs.
+  architecture-patterns: Designing resilient Digital Twins solutions (HA/DR) and translating
+    industry ontologies into DTDL models for interoperable twin graphs.
   best-practices: 'Guidance on modeling best practices: converting RDF/OWL ontologies
     to DTDL, extending DTDL for Azure Digital Twins, and designing effective tagging
     patterns for twin graphs.'
@@ -23,56 +19,82 @@ category_descriptions:
     and best practices.'
   deployment: Guidance for moving an Azure Digital Twins instance to a different region,
     including prerequisites, supported scenarios, and step-by-step migration procedures.
+  decision-making: Guidance on selecting DTDL-based industry ontologies for your twin
+    models and instructions for migrating from Azure Digital Twins preview control
+    plane APIs to current APIs.
   troubleshooting: 'Diagnosing and fixing common Azure Digital Twins issues: 403/404
     errors, Explorer auth problems, CLI parse failures, known bugs, and performance
     troubleshooting.'
 skill_description: Expert knowledge for Azure Digital Twins development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when modeling with DTDL, querying twin graphs, integrating IoT Hub/Functions,
-  or migrating control plane APIs, and other Azure Digital Twins related development
+  Use when modeling DTDL graphs, integrating IoT Hub/ADx, configuring endpoints/routes,
+  securing access, or tuning query units, and other Azure Digital Twins related development
   tasks. Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Central (use azure-iot-central),
-  Azure IoT Edge (use azure-iot-edge), Azure IoT Operations (use azure-iot-operations).
-use_when: Use when modeling with DTDL, querying twin graphs, integrating IoT Hub/Functions,
-  or migrating control plane APIs, and other Azure Digital Twins related development
+  Azure IoT Operations (use azure-iot-operations).
+use_when: Use when modeling DTDL graphs, integrating IoT Hub/ADx, configuring endpoints/routes,
+  securing access, or tuning query units, and other Azure Digital Twins related development
   tasks.
 confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Central (use
-  azure-iot-central), Azure IoT Edge (use azure-iot-edge), Azure IoT Operations (use
-  azure-iot-operations).
+  azure-iot-central), Azure IoT Operations (use azure-iot-operations).
 ---
 # Azure Digital Twins Crawl Report
 
 ## Summary
 
-- **Total Pages**: 66
-- **Fetched**: 66
+- **Total Pages**: 65
+- **Fetched**: 65
 - **Fetch Failed**: 0
-- **Classified**: 55
-- **Unclassified**: 11
+- **Classified**: 53
+- **Unclassified**: 12
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 66
-- **Deleted Pages**: 0
+- **New Pages**: 2
+- **Updated Pages**: 5
+- **Unchanged**: 58
+- **Deleted Pages**: 3
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-digital-twins/azure-digital-twins.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 2 | 3.0% |
-| best-practices | 3 | 4.5% |
-| configuration | 21 | 31.8% |
-| decision-making | 2 | 3.0% |
+| architecture-patterns | 2 | 3.1% |
+| best-practices | 2 | 3.1% |
+| configuration | 21 | 32.3% |
+| decision-making | 1 | 1.5% |
 | deployment | 1 | 1.5% |
-| integrations | 13 | 19.7% |
-| limits-quotas | 2 | 3.0% |
-| security | 5 | 7.6% |
-| troubleshooting | 6 | 9.1% |
-| *(Unclassified)* | 11 | 16.7% |
+| integrations | 13 | 20.0% |
+| limits-quotas | 2 | 3.1% |
+| security | 5 | 7.7% |
+| troubleshooting | 6 | 9.2% |
+| *(Unclassified)* | 12 | 18.5% |
 
 ## Changes
+
+### New Pages
+
+- [Overview - About Azure Digital Twins](https://learn.microsoft.com/en-us/azure/digital-twins/overview)
+- [Quickstart - Get started with Azure Digital Twins Explorer](https://learn.microsoft.com/en-us/azure/digital-twins/quickstart-azure-digital-twins-explorer)
+
+### Updated Pages
+
+- [DTDL models](https://learn.microsoft.com/en-us/azure/digital-twins/concepts-models)
+  - Updated: 2025-01-27T08:00:00.000Z → 2026-08-10T08:00:00.000Z
+- [Adopting DTDL-based industry ontologies](https://learn.microsoft.com/en-us/azure/digital-twins/concepts-ontologies-adopt)
+  - Updated: 2025-03-07T23:05:00.000Z → 2026-08-11T05:12:00.000Z
+- [Converting ontologies](https://learn.microsoft.com/en-us/azure/digital-twins/concepts-ontologies-convert)
+  - Updated: 2025-01-27T08:00:00.000Z → 2026-08-11T05:12:00.000Z
+- [Querying with the Azure Data Explorer plugin](https://learn.microsoft.com/en-us/azure/digital-twins/concepts-data-explorer-plugin)
+  - Updated: 2025-01-27T08:00:00.000Z → 2026-08-11T05:12:00.000Z
+- [Data ingress and egress](https://learn.microsoft.com/en-us/azure/digital-twins/concepts-data-ingress-egress)
+  - Updated: 2025-01-27T08:00:00.000Z → 2026-08-11T05:12:00.000Z
+
+### Deleted Pages
+
+- ~~About Azure Digital Twins~~ (https://learn.microsoft.com/en-us/azure/digital-twins/overview)
+- ~~Get started with 3D Scenes Studio~~ (https://learn.microsoft.com/en-us/azure/digital-twins/quickstart-3d-scenes-studio)
+- ~~Get started with Azure Digital Twins Explorer~~ (https://learn.microsoft.com/en-us/azure/digital-twins/quickstart-azure-digital-twins-explorer)
 
 ## Classified Pages
 
@@ -99,13 +121,11 @@ confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Central
 | [Manage digital twins](https://learn.microsoft.com/en-us/azure/digital-twins/how-to-manage-twin) | configuration | 0.75 | Shows how to retrieve, update, and delete twins and relationships; includes specific API/SDK calls and payload structures unique to this service. |
 | [Manage the twin graph and relationships](https://learn.microsoft.com/en-us/azure/digital-twins/how-to-manage-graph) | configuration | 0.75 | Focuses on managing relationships and the graph; uses product-specific APIs/SDKs and patterns for graph operations. |
 | [Query the twin graph](https://learn.microsoft.com/en-us/azure/digital-twins/how-to-query-graph) | integrations | 0.75 | Provides concrete query examples and shows how to run them via Query API or SDK; includes product-specific query syntax and API usage. |
-| [Querying with the Azure Data Explorer plugin](https://learn.microsoft.com/en-us/azure/digital-twins/concepts-data-explorer-plugin) | integrations | 0.75 | Covers the Azure Digital Twins plugin for Azure Data Explorer; includes plugin invocation syntax and parameters unique to this integration. |
 | [Set up twin-to-twin event handling](https://learn.microsoft.com/en-us/azure/digital-twins/how-to-send-twin-to-twin-events) | integrations | 0.75 | Creates an Azure Function to handle twin lifecycle events and propagate updates; includes event schema and function bindings specific to Digital Twins. |
 | [Write app authentication code](https://learn.microsoft.com/en-us/azure/digital-twins/how-to-authenticate-client) | security | 0.72 | How-to for writing auth code against Azure Digital Twins using Entra/OAuth tokens; likely includes product-specific scopes, endpoints, and SDK auth patterns that qualify as security configuration details. |
 | [APIs and SDKs](https://learn.microsoft.com/en-us/azure/digital-twins/concepts-apis-sdks) | integrations | 0.70 | Overview of control/data plane APIs and SDKs with helper classes and usage notes; likely lists specific client types, methods, and patterns unique to this service. |
 | [CLI command set](https://learn.microsoft.com/en-us/azure/digital-twins/concepts-cli) | integrations | 0.70 | Describes az dt command set, requirements, and usage; includes specific CLI commands and parameters that are product-specific. |
 | [Call Azure Digital Twins APIs](https://learn.microsoft.com/en-us/azure/digital-twins/how-to-use-apis) | integrations | 0.70 | Shows how to structure HTTP requests for control and data plane APIs; includes endpoint URLs, headers, and payloads unique to this service. |
-| [Converting ontologies](https://learn.microsoft.com/en-us/azure/digital-twins/concepts-ontologies-convert) | best-practices | 0.70 | Provides a conversion pattern and sample converter code for RDF/OWL to DTDL; contains concrete design guidance and code patterns unique to this integration. |
 | [Create a data history connection](https://learn.microsoft.com/en-us/azure/digital-twins/how-to-create-data-history-connection) | configuration | 0.70 | Describes configuring data history to Azure Data Explorer; likely includes specific resource properties, connection settings, and CLI parameters, which are configuration details. |
 | [Create an app registration with Azure Digital Twins access](https://learn.microsoft.com/en-us/azure/digital-twins/how-to-create-app-registration) | security | 0.70 | Step-by-step creation of an app registration with Azure Digital Twins access; expected to list specific permission names, roles, and configuration fields, which are product-specific security settings. |
 | [Create endpoints](https://learn.microsoft.com/en-us/azure/digital-twins/how-to-create-endpoints) | configuration | 0.70 | How-to for creating endpoints via portal/CLI/APIs; expected to include endpoint types, required properties, and parameter names/values, which are concrete configuration options. |
@@ -123,13 +143,13 @@ confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Central
 | [Ingest telemetry from IoT Hub](https://learn.microsoft.com/en-us/azure/digital-twins/how-to-ingest-iot-hub-data) | integrations | 0.68 | Describes wiring IoT Hub to Azure Digital Twins via Azure Functions; likely includes binding configuration, connection settings, and SDK/API usage specific to this integration. |
 | [Troubleshoot performance](https://learn.microsoft.com/en-us/azure/digital-twins/troubleshoot-performance) | troubleshooting | 0.66 | Performance troubleshooting tips for a specific service typically map symptoms to causes and resolutions (e.g., query patterns, throttling), which are product-specific troubleshooting details. |
 | [Code a client app](https://learn.microsoft.com/en-us/azure/digital-twins/tutorial-code) | integrations | 0.65 | Developer-focused tutorial for the Azure Digital Twins .NET SDK; likely includes SDK client construction, auth options, and method usage patterns specific to this service. |
+| [Converting ontologies](https://learn.microsoft.com/en-us/azure/digital-twins/concepts-ontologies-convert) | architecture-patterns | 0.65 | Provides a concrete conversion pattern from RDF/OWL-based ontologies to DTDL, including stepwise mapping guidance that is specific to Azure Digital Twins; this is a product-specific design/architecture pattern for modeling and ontology conversion, even though it may not include numeric thresholds. |
 | [Event notifications](https://learn.microsoft.com/en-us/azure/digital-twins/concepts-event-notifications) | configuration | 0.65 | Explains event notification types and message structures; likely includes schema fields and event type names that are configuration/contract details. |
 | [Extending ontologies](https://learn.microsoft.com/en-us/azure/digital-twins/concepts-ontologies-extend) | best-practices | 0.65 | Describes reasons and strategies for extending ontologies with concrete DTDL patterns; product-specific modeling patterns and gotchas qualify as best practices. |
 | [Integrate with Power Platform and Logic Apps](https://learn.microsoft.com/en-us/azure/digital-twins/how-to-use-power-platform-logic-apps-connector) | integrations | 0.65 | Connector wraps Digital Twins data plane APIs; documentation typically lists connector actions, parameters, and constraints, which are product-specific integration details. |
+| [Querying with the Azure Data Explorer plugin](https://learn.microsoft.com/en-us/azure/digital-twins/concepts-data-explorer-plugin) | integrations | 0.65 | Describes a specific integration between Azure Digital Twins and Azure Data Explorer, including how to run queries that span twin graphs and time series data; this is a product-specific integration pattern, likely with plugin-specific query syntax and configuration details. |
 | [Use 3D Scenes Studio](https://learn.microsoft.com/en-us/azure/digital-twins/how-to-use-3d-scenes-studio) | configuration | 0.65 | How-to for 3D Scenes Studio; likely includes scene configuration, element/behavior settings, and bindings to Digital Twins data. |
 | [Monitor your instance](https://learn.microsoft.com/en-us/azure/digital-twins/how-to-monitor) | configuration | 0.64 | Monitoring integration with Azure Monitor usually includes specific metric names, diagnostic settings, and log categories, which are product-specific configuration options. |
-| [Adopting DTDL-based industry ontologies](https://learn.microsoft.com/en-us/azure/digital-twins/concepts-ontologies-adopt) | decision-making | 0.60 | Guidance on adopting existing industry ontologies; likely compares available model sets and when to use them, which is selection guidance specific to this product. |
-| [Data ingress and egress](https://learn.microsoft.com/en-us/azure/digital-twins/concepts-data-ingress-egress) | architecture-patterns | 0.60 | Covers how Digital Twins connects with upstream/downstream services and event routes; describes product-specific integration patterns and flows. |
 | [High availability and disaster recovery](https://learn.microsoft.com/en-us/azure/digital-twins/concepts-high-availability-disaster-recovery) | architecture-patterns | 0.60 | Discusses HA/DR features, intra-region and cross-region strategies, and uptime goals; provides product-specific resiliency design guidance. |
 | [Query language](https://learn.microsoft.com/en-us/azure/digital-twins/concepts-query-language) | integrations | 0.60 | Custom query language for this service; likely includes syntax, operators, and query capabilities that are product-specific API semantics. |
 | [Use the Azure CLI commands](https://learn.microsoft.com/en-us/azure/digital-twins/tutorial-command-line-cli) | integrations | 0.60 | Tutorial built around the az dt CLI command set; likely shows concrete command names, parameters, and usage patterns unique to Azure Digital Twins. |
@@ -139,13 +159,14 @@ confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Central
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
 | [Troubleshoot resource health](https://learn.microsoft.com/en-us/azure/digital-twins/troubleshoot-resource-health) | 0.45 | High-level use of Azure Resource Health; summary suggests conceptual guidance without detailed error codes, commands, or product-specific mappings. |
+| [Data ingress and egress](https://learn.microsoft.com/en-us/azure/digital-twins/concepts-data-ingress-egress) | 0.40 | Conceptual description of data ingress and egress patterns around Azure Digital Twins; while it references upstream/downstream services, it appears to be architectural overview without detailed configuration tables, limits, or error-based troubleshooting. |
 | [Use a sample client app](https://learn.microsoft.com/en-us/azure/digital-twins/tutorial-command-line-app) | 0.40 | Uses a sample command-line client app but primarily as a scenario walkthrough; description doesn’t indicate detailed SDK/API parameter references or config tables. |
 | [3D Scenes Studio](https://learn.microsoft.com/en-us/azure/digital-twins/concepts-3d-scenes-studio) | 0.35 | Conceptual overview of 3D Scenes Studio capabilities and use cases; detailed configuration is in the separate how-to article. |
 | [Azure Digital Twins Explorer](https://learn.microsoft.com/en-us/azure/digital-twins/concepts-azure-digital-twins-explorer) | 0.35 | Feature overview and use cases for Azure Digital Twins Explorer; detailed usage is in a separate how-to article. |
 | [Connect an end-to-end solution](https://learn.microsoft.com/en-us/azure/digital-twins/tutorial-end-to-end) | 0.30 | End-to-end solution tutorial integrating multiple services; description doesn’t emphasize detailed config matrices, limits, or error mappings. |
-| [DTDL models](https://learn.microsoft.com/en-us/azure/digital-twins/concepts-models) | 0.30 | Conceptual explanation of DTDL models; mostly definitions and structure, not product-specific config tables or limits. |
+| [DTDL models](https://learn.microsoft.com/en-us/azure/digital-twins/concepts-models) | 0.30 | Conceptual explanation of DTDL models and how they describe entities; focuses on language concepts rather than product-specific limits, configuration parameters, or quantified best practices. |
 | [Digital twins and the twin graph](https://learn.microsoft.com/en-us/azure/digital-twins/concepts-twins-graph) | 0.25 | Conceptual explanation of digital twins and twin graphs; no detailed configuration, limits, or troubleshooting content indicated. |
-| [Get started with 3D Scenes Studio](https://learn.microsoft.com/en-us/azure/digital-twins/quickstart-3d-scenes-studio) | 0.20 | Quickstart for 3D Scenes Studio; procedural setup and demo scene creation, not configuration references or quantified guidance. |
-| [Get started with Azure Digital Twins Explorer](https://learn.microsoft.com/en-us/azure/digital-twins/quickstart-azure-digital-twins-explorer) | 0.20 | Introductory quickstart using portal and Explorer; step-by-step demo but no config tables, limits, or specialized troubleshooting. |
+| [Adopting DTDL-based industry ontologies](https://learn.microsoft.com/en-us/azure/digital-twins/concepts-ontologies-adopt) | 0.20 | Describes available DTDL-based industry ontologies and their purpose; no detailed configuration parameters, limits, or decision matrices with quantified trade-offs. |
+| [Quickstart - Get started with Azure Digital Twins Explorer](https://learn.microsoft.com/en-us/azure/digital-twins/quickstart-azure-digital-twins-explorer) | 0.20 | Quickstart tutorial showing how to use Azure Digital Twins Explorer; primarily step-by-step usage, not configuration reference, limits, or troubleshooting with specific error codes. |
 | [What is an ontology?](https://learn.microsoft.com/en-us/azure/digital-twins/concepts-ontologies) | 0.20 | Conceptual article on ontologies and their use; no indication of numeric thresholds, config parameters, or error codes. |
-| [About Azure Digital Twins](https://learn.microsoft.com/en-us/azure/digital-twins/overview) | 0.10 | High-level product overview and value proposition without concrete limits, configs, or error details. |
+| [Overview - About Azure Digital Twins](https://learn.microsoft.com/en-us/azure/digital-twins/overview) | 0.10 | High-level product overview of Azure Digital Twins; describes concepts and value but no numeric limits, configuration tables, error codes, or product-specific decision matrices. |

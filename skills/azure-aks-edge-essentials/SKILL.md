@@ -1,9 +1,9 @@
 ---
 name: azure-aks-edge-essentials
-description: Expert knowledge for Azure Kubernetes Service Edge Essentials development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing AKS Edge/Hybrid clusters, Arc connectivity, IoT/OPC/ONVIF workloads, TPM/Key Vault, or SDN VNets, and other Azure Kubernetes Service Edge Essentials related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure IoT Edge (use azure-iot-edge), Azure Stack Edge (use azure-stack-edge).
+description: Expert knowledge for Azure Kubernetes Service Edge Essentials development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing AKS Edge/Hybrid/Arc clusters, Arc connectivity, IoT/OPC/ONVIF, TPM/Key Vault, or SDN VNets, and other Azure Kubernetes Service Edge Essentials related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Stack Edge (use azure-stack-edge), Azure IoT Edge (use azure-iot-edge), Azure Container Apps (use azure-container-apps).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-09"
+  generated_at: "2026-08-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Kubernetes Service Edge Essentials Skill
@@ -24,15 +24,15 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L82 | Diagnosing and fixing AKS Edge/Hybrid/Arc cluster issues: creation/upgrade failures, networking, storage, encryption, certificates, logs, VMware/Azure Local errors, and support tools. |
+| Troubleshooting | L37-L82 | Diagnosing and fixing AKS Edge/Hybrid/Arc issues: cluster creation/upgrade failures, networking, storage, auth, encryption, logs, VMware/Azure Local problems, and support/repair tools. |
 | Best Practices | L83-L91 | Guidance on resilient AKS Edge Essentials setups: availability sets, Azure Policy on Windows Server, restoring AKS Arc after VM failure, and upgrading AKS Arc clusters/Kubernetes versions. |
-| Decision Making | L92-L102 | Guidance on AKS Edge/Hybrid pricing, licensing, trials, migration paths (Windows Server, AKS Arc), monitoring/logging choices, and planning cloud vs edge vs on-prem and disconnected deployments. |
-| Architecture & Design Patterns | L103-L109 | Designing AKS on Windows Server for Azure Local: high availability on two-node setups, SDN VNet architectures, and deployment patterns for AKS Arc target clusters. |
-| Limits & Quotas | L110-L127 | Limits, quotas, and system requirements for AKS Edge/Hybrid variants: scale limits, IP capacity planning, supported versions, resource/VM sizes, and support policies across bare metal, VMware, Azure Local, and Windows Server. |
-| Security | L128-L164 | Identity, auth, RBAC, certificates, SSH, key rotation, gMSA, image validation, and other security hardening for AKS Edge/Hybrid/Arc/Azure Local clusters. |
-| Configuration | L165-L257 | Configuring AKS Edge/Hybrid/Arc clusters: networking, storage, load balancers, autoscaling, GPU, proxies, Arc connectivity, monitoring/logging, offline/upgrade flows, and PowerShell/CLI settings. |
-| Integrations & Coding Patterns | L258-L311 | Integrations, APIs, and PowerShell for connecting AKS Edge/Hybrid to Arc, IoT/OPC/ONVIF, TPM, storage/backup, metrics, AI models, CSI plugins, and Key Vault secrets. |
-| Deployment | L312-L349 | Deploying, upgrading, starting/stopping, and removing AKS Edge/AKS hybrid/AKS Arc clusters and nodes, including Windows node pools, offline images, and PowerShell-based lifecycle operations. |
+| Decision Making | L92-L100 | Guidance on AKS Edge/Hybrid deployment choices, pricing/licensing, trials, monitoring/logging options, and planning/operating disconnected or on-premises AKS environments. |
+| Architecture & Design Patterns | L101-L107 | Designing AKS on Windows Server for Azure Local: high availability on two-node setups, SDN VNet architectures, and deployment patterns for AKS Arc target clusters. |
+| Limits & Quotas | L108-L125 | Limits, system requirements, IP capacity planning, supported versions, and scale/support boundaries for AKS Edge Essentials, AKS on bare metal/VMware/Windows Server, and AKS on Azure Local. |
+| Security | L126-L162 | Identity, auth, RBAC, certificates, SSH, key rotation, gMSA, image validation, and other security hardening for AKS Edge/Hybrid/Arc/Azure Local clusters. |
+| Configuration | L163-L255 | Configuring AKS Edge/Hybrid/Arc clusters: networking, storage, load balancers, autoscaling, GPU, proxies, Arc connectivity, monitoring/logging, offline/upgrade flows, and PowerShell/CLI settings. |
+| Integrations & Coding Patterns | L256-L309 | Integrations, APIs, and PowerShell for connecting AKS Edge/Hybrid to Arc, IoT/OPC/ONVIF, TPM, storage/backup, metrics, AI models, CSI plugins, and Key Vault secrets. |
+| Deployment | L310-L348 | Deploying, managing, upgrading, and removing AKS Edge/AKS hybrid/AKS Arc clusters and node pools, including Windows nodes, offline images, preview channels, and PowerShell-based lifecycle operations |
 
 ### Troubleshooting
 | Topic | URL |
@@ -49,7 +49,7 @@ This skill requires **network access** to fetch documentation content:
 | Troubleshoot and request support for AKS Hybrid and Edge on VMware | https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-vmware-support-troubleshoot |
 | Use troubleshooting guide for AKS Arc on VMware errors | https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-vmware-troubleshooting-guide |
 | Fix AKS cluster creation failures after Azure Local upgrade | https://learn.microsoft.com/en-us/azure/aks/aksarc/cluster-create-fails-after-azure-local-upgrade |
-| Fix K8sVersionValidation errors in AKS Arc | https://learn.microsoft.com/en-us/azure/aks/aksarc/cluster-k8s-version |
+| Resolve K8sVersionValidation errors for AKS on Azure Local | https://learn.microsoft.com/en-us/azure/aks/aksarc/cluster-k8s-version |
 | Recover AKS Hybrid cluster unhealthy after upgrade | https://learn.microsoft.com/en-us/azure/aks/aksarc/cluster-unhealthy-after-kubernetes-upgrade |
 | Unstick AKS Hybrid cluster upgrades stuck in Upgrading state | https://learn.microsoft.com/en-us/azure/aks/aksarc/cluster-upgrade-status |
 | Troubleshoot BGP with FRR and MetalLB in AKS Arc | https://learn.microsoft.com/en-us/azure/aks/aksarc/connectivity-troubleshoot |
@@ -94,11 +94,9 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Understand AKS Edge Essentials pricing and licensing options | https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-edge-pricing |
 | Choose monitoring and logging options for AKS Hybrid | https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-monitor-logging |
-| Compare AKS cloud, edge, and on-premises options | https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-platforms-compare |
-| Plan migration for AKS Windows Server retirement | https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-windows-server-retirement |
+| Choose between AKS cloud, edge, and on-premises | https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-platforms-compare |
 | Plan and manage disconnected AKS on Azure Local | https://learn.microsoft.com/en-us/azure/aks/aksarc/disconnected-operations-aks |
 | Evaluate AKS on Windows Server pricing and trials | https://learn.microsoft.com/en-us/azure/aks/aksarc/pricing |
-| Plan AKS Arc migration from Windows Server 2019 to 2022 | https://learn.microsoft.com/en-us/azure/aks/aksarc/windows-server-migration-guide |
 
 ### Architecture & Design Patterns
 | Topic | URL |
@@ -114,7 +112,7 @@ This skill requires **network access** to fetch documentation content:
 | Check system requirements for AKS on bare metal | https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-bare-metal-system-requirements |
 | Check system requirements for AKS Edge Essentials hosts | https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-edge-system-requirements |
 | Plan IP address capacity for AKS Hybrid and Edge | https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-hci-ip-address-planning |
-| Understand support policies and limitations for AKS on Azure Local | https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-on-azure-local-support-policy |
+| Understand AKS on Azure Local support limits | https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-on-azure-local-support-policy |
 | Cluster and node pool scale limits for AKS VMware | https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-vmware-scale-requirements |
 | System requirements and support matrix for AKS VMware | https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-vmware-system-requirements |
 | Track AKS Hybrid and Edge release changes | https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-whats-new-local |
@@ -347,3 +345,4 @@ This skill requires **network access** to fetch documentation content:
 | Restart, remove, or reinstall AKS Arc clusters safely | https://learn.microsoft.com/en-us/azure/aks/aksarc/restart-cluster |
 | Verify system requirements for AKS on Windows Server | https://learn.microsoft.com/en-us/azure/aks/aksarc/system-requirements |
 | Upgrade AKS Arc host on Windows Server via PowerShell | https://learn.microsoft.com/en-us/azure/aks/aksarc/update-akshci-host-powershell |
+| Migrate AKS Arc workloads to Windows Server 2022 | https://learn.microsoft.com/en-us/azure/aks/aksarc/windows-server-migration-guide |

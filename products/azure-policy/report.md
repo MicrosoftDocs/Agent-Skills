@@ -50,9 +50,9 @@ confusable_not_for: Not for Azure Blueprints (use azure-blueprints), Azure Resou
 - **Unclassified**: 32
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 2
-- **Unchanged**: 211
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 215
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-policy/azure-policy.csv`
 
@@ -71,18 +71,6 @@ confusable_not_for: Not for Azure Blueprints (use azure-blueprints), Azure Resou
 | *(Unclassified)* | 32 | 14.9% |
 
 ## Changes
-
-### New Pages
-
-- [Enrollment structure](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/enrollment-structure)
-- [Guest configuration](https://learn.microsoft.com/en-us/azure/governance/policy/samples/built-in-packages)
-
-### Updated Pages
-
-- [Assignment structure](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/assignment-structure)
-  - Updated: 2025-03-04T08:00:00.000Z → 2026-08-07T22:20:00.000Z
-- [Exemption structure](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/exemption-structure)
-  - Updated: 2026-03-21T11:11:00.000Z → 2026-08-04T17:21:00.000Z
 
 ## Classified Pages
 

@@ -26,12 +26,21 @@ confusable_not_for: Not for Azure VMware Solution (use azure-vmware-solution), A
 - **Classified**: 1
 - **Unclassified**: 4
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 5
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-nutanix/azure-nutanix.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
 | decision-making | 1 | 20.0% |
 | *(Unclassified)* | 4 | 80.0% |
+
+## Changes
 
 ## Classified Pages
 

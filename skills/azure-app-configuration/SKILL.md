@@ -1,9 +1,9 @@
 ---
 name: azure-app-configuration
-description: Expert knowledge for Azure App Configuration development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using feature flags, dynamic refresh, snapshots, Key Vault integration, or CI/CD with App Configuration, and other Azure App Configuration related development tasks. Not for Azure App Service (use azure-app-service), Azure Functions (use azure-functions), Azure Key Vault (use azure-key-vault), Azure Portal (use azure-portal).
+description: Expert knowledge for Azure App Configuration development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using feature flags, dynamic refresh, snapshots, Key Vault integration, or CI/CD exports/imports, and other Azure App Configuration related development tasks. Not for Azure App Service (use azure-app-service), Azure Key Vault (use azure-key-vault), Azure Portal (use azure-portal).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-09"
+  generated_at: "2026-08-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure App Configuration Skill
@@ -28,10 +28,10 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L41-L45 | Guidance on designing and using App Configuration efficiently: key/value organization, labeling, feature flags, performance, security, and cost-optimized access patterns. |
 | Decision Making | L46-L51 | Guidance on App Configuration client library support lifecycles and how to upgrade Spring Boot apps to use App Configuration library v6. |
 | Limits & Quotas | L52-L60 | Limits, retention, and lifecycle rules for App Configuration: snapshots, soft delete, key-value revision retention, preview API deprecation, and REST throttling quotas. |
-| Security | L61-L83 | Securing App Configuration: encryption, RBAC/Entra ID, keys/HMAC, REST authz models, managed identities, private endpoints, network perimeter, and Azure Policy compliance. |
-| Configuration | L84-L102 | Configuring App Configuration behavior: files, emulator, dynamic refresh, feature flags/filters/telemetry, snapshots, geo-replication, soft delete, Kubernetes, Front Door, and AI/chat settings. |
-| Integrations & Coding Patterns | L103-L183 | Patterns and code for integrating App Configuration into .NET/Go/JS/Python apps, dynamic refresh, feature flags/filters/telemetry, Kubernetes, Key Vault, and using REST/SDK providers. |
-| Deployment | L184-L192 | Using App Configuration in CI/CD: exporting/importing settings, creating snapshots, integrating with Azure Pipelines, GitHub Actions, and Helm/Kubernetes deployment workflows. |
+| Security | L61-L83 | Configuring App Configuration security: encryption, keys, Entra ID/RBAC, managed identities, REST auth (HMAC/Entra), private endpoints, network perimeters, and Azure Policy compliance. |
+| Configuration | L84-L101 | Configuring App Configuration behavior: files, emulator, dynamic refresh, feature flags/filters/telemetry, snapshots, geo-replication, soft delete, Kubernetes, Front Door, and AI/chat settings. |
+| Integrations & Coding Patterns | L102-L182 | Patterns and code for integrating App Configuration into .NET/Go/JS/Python apps, dynamic refresh, feature flags/filters/telemetry, Kubernetes, Key Vault, and using REST/SDK providers. |
+| Deployment | L183-L191 | Using App Configuration in CI/CD: exporting/importing settings, creating snapshots, integrating with Azure Pipelines, GitHub Actions, and Helm/Kubernetes deployment workflows. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -71,7 +71,7 @@ This skill requires **network access** to fetch documentation content:
 | Associate Azure App Configuration with a network security perimeter | https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-set-up-network-security-perimeter |
 | Set up private access to Azure App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-set-up-private-access |
 | Configure managed identities for Azure App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/overview-managed-identity |
-| Apply built-in Azure Policy definitions to App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/policy-reference |
+| Use built-in Azure Policy definitions for App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/policy-reference |
 | Configure roles and permissions for App Configuration deployments | https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-deployment-overview |
 | Authenticate to App Configuration REST with Entra ID | https://learn.microsoft.com/en-us/azure/azure-app-configuration/rest-api-authentication-azure-ad |
 | Configure HMAC authentication for App Configuration REST | https://learn.microsoft.com/en-us/azure/azure-app-configuration/rest-api-authentication-hmac |
@@ -85,7 +85,6 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Use configuration files with Azure App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-config-file |
-| Use and configure the Azure App Configuration emulator | https://learn.microsoft.com/en-us/azure/azure-app-configuration/emulator-overview |
 | Configure dynamic refresh for Spring with App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/enable-dynamic-configuration-java-spring-app |
 | Configure and interpret Azure App Configuration feature flag telemetry | https://learn.microsoft.com/en-us/azure/azure-app-configuration/feature-flag-telemetry-reference |
 | Configure Azure App Configuration integration with Front Door | https://learn.microsoft.com/en-us/azure/azure-app-configuration/how-to-connect-azure-front-door |

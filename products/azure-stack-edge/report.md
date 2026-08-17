@@ -51,8 +51,8 @@ confusable_not_for: Not for Azure IoT Edge (use azure-iot-edge), Azure Kubernete
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 232
+- **Updated Pages**: 0
+- **Unchanged**: 233
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-stack-edge/azure-stack-edge.csv`
 
@@ -71,11 +71,6 @@ confusable_not_for: Not for Azure IoT Edge (use azure-iot-edge), Azure Kubernete
 | *(Unclassified)* | 89 | 38.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [FAQ - Operational guidelines](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-operational-guidelines-faq)
-  - Updated: 2024-10-23T22:05:00.000Z → 2026-08-03T05:10:00.000Z
 
 ## Classified Pages
 

@@ -1,9 +1,9 @@
 ---
 name: azure-maps
-description: Expert knowledge for Azure Maps development including best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when using web/REST/Power BI SDKs, geocoding/routing/weather APIs, tiles/rendering, or multi-stop route optimization, and other Azure Maps related development tasks.
+description: Expert knowledge for Azure Maps development including best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when using web/REST/Power BI SDKs, geocoding/routing/weather APIs, tiles/rendering, or multi-stop route optimization, and other Azure Maps related development tasks. Not for Azure AI Search (use azure-cognitive-search), Azure IoT (use azure-iot), Azure IoT Central (use azure-iot-central), Azure IoT Edge (use azure-iot-edge).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-09"
+  generated_at: "2026-08-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Maps Skill
@@ -30,7 +30,7 @@ This skill requires **network access** to fetch documentation content:
 | Limits & Quotas | L64-L73 | Coverage, limits, and capabilities of Azure Maps services: QPS rate limits, and regional support for geocoding, rendering/tiles, routing, traffic, and weather data. |
 | Security | L74-L88 | Securing Azure Maps access: auth methods (keys, SAS, Entra ID), SPA/daemon/device scenarios, Power BI visual governance, and network isolation with Private Link. |
 | Configuration | L89-L113 | Configuring Azure Maps web maps, styles, layers, data sources, routing models, localization, browser support, and migrating or updating to newer Azure Maps APIs and services. |
-| Integrations & Coding Patterns | L114-L175 | Patterns and code for integrating Azure Maps: Web/REST/Power BI SDK usage, layers and drawing, geocoding/routing/weather, Spatial IO/WMS, and migrations from Bing/Google/legacy SDKs. |
+| Integrations & Coding Patterns | L114-L174 | Patterns and code for integrating Azure Maps: Web/REST/Power BI SDK usage, layers and drawing, geocoding/routing/weather, Spatial IO/WMS, and migrations from Bing/Google/legacy SDKs. |
 
 ### Best Practices
 | Topic | URL |
@@ -164,7 +164,6 @@ This skill requires **network access** to fetch documentation content:
 | Add and configure marker layers in Azure Maps visual | https://learn.microsoft.com/en-us/azure/azure-maps/power-bi-visual-add-marker-layer |
 | Add pie chart layers in Azure Maps Power BI visual | https://learn.microsoft.com/en-us/azure/azure-maps/power-bi-visual-add-pie-chart-layer |
 | Use cluster bubble layers in Azure Maps visual | https://learn.microsoft.com/en-us/azure/azure-maps/power-bi-visual-cluster-bubbles |
-| Use geocoding in Azure Maps Power BI visual | https://learn.microsoft.com/en-us/azure/azure-maps/power-bi-visual-geocode |
 | Get started with Azure Maps visual in Power BI | https://learn.microsoft.com/en-us/azure/azure-maps/power-bi-visual-get-started |
 | Configure layers in Azure Maps Power BI visual | https://learn.microsoft.com/en-us/azure/azure-maps/power-bi-visual-understanding-layers |
 | Configure Azure Maps drawing tools module | https://learn.microsoft.com/en-us/azure/azure-maps/set-drawing-options |

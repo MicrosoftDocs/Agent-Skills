@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-08-09'
+generated_at: '2026-08-16'
 category_descriptions:
-  security: 'Securing Container Apps: auth (Entra, social, OIDC, mTLS), identities/secrets,
-    TLS/domains/certs, Dapr security, network controls (NSG, firewall, private endpoints),
-    and security best practices.'
+  security: 'Securing Container Apps: auth (Entra, social, OIDC, certs), identities/secrets,
+    TLS/domains, mTLS, Dapr security, network controls (NSG, firewall, egress), and
+    policy/best practices.'
   deployment: 'Deploying and automating Container Apps: CI/CD with GitHub Actions/Azure
-    Pipelines, Docker Compose migration, self-hosted runners, and Arc-enabled Kubernetes
-    integration.'
+    Pipelines, Docker Compose deployments, Arc-enabled Kubernetes, logging migration,
+    and self-hosted runners/jobs.'
   configuration: 'Configuring Container Apps environments and apps: networking, ingress,
     revisions/traffic, workload profiles, storage, Dapr/KEDA/Functions scaling, Java
     features, logging/monitoring, and maintenance.'
@@ -30,32 +30,32 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Container Apps development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when configuring ACA auth, Dapr/KEDA, workload profiles, Java microservices,
-  or CI/CD with GitHub Actions, and other Azure Container Apps related development
-  tasks. Not for Azure App Service (use azure-app-service), Azure Functions (use azure-functions),
-  Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Red Hat OpenShift
-  (use azure-redhat-openshift).
-use_when: Use when configuring ACA auth, Dapr/KEDA, workload profiles, Java microservices,
-  or CI/CD with GitHub Actions, and other Azure Container Apps related development
-  tasks.
-confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Functions
-  (use azure-functions), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
-  Azure Red Hat OpenShift (use azure-redhat-openshift).
+  Use when configuring ACA ingress, Dapr/KEDA scaling, workload profiles, Java microservices,
+  or CI/CD deployments, and other Azure Container Apps related development tasks.
+  Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Container
+  Instances (use azure-container-instances), Azure App Service (use azure-app-service),
+  Azure Spring Apps (use azure-spring-apps).
+use_when: Use when configuring ACA ingress, Dapr/KEDA scaling, workload profiles,
+  Java microservices, or CI/CD deployments, and other Azure Container Apps related
+  development tasks.
+confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
+  Azure Container Instances (use azure-container-instances), Azure App Service (use
+  azure-app-service), Azure Spring Apps (use azure-spring-apps).
 ---
 # Azure Container Apps Crawl Report
 
 ## Summary
 
-- **Total Pages**: 226
-- **Fetched**: 226
+- **Total Pages**: 227
+- **Fetched**: 227
 - **Fetch Failed**: 0
-- **Classified**: 135
+- **Classified**: 136
 - **Unclassified**: 91
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 223
+- **New Pages**: 1
+- **Updated Pages**: 2
+- **Unchanged**: 224
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-container-apps/azure-container-apps.csv`
 
@@ -65,25 +65,27 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 |------|-------|------------|
 | architecture-patterns | 2 | 0.9% |
 | best-practices | 3 | 1.3% |
-| configuration | 35 | 15.5% |
-| decision-making | 19 | 8.4% |
-| deployment | 6 | 2.7% |
+| configuration | 35 | 15.4% |
+| decision-making | 18 | 7.9% |
+| deployment | 7 | 3.1% |
 | integrations | 21 | 9.3% |
 | limits-quotas | 3 | 1.3% |
-| security | 34 | 15.0% |
+| security | 35 | 15.4% |
 | troubleshooting | 12 | 5.3% |
-| *(Unclassified)* | 91 | 40.3% |
+| *(Unclassified)* | 91 | 40.1% |
 
 ## Changes
 
+### New Pages
+
+- [Change logging from Log Analytics to Azure Monitor](https://learn.microsoft.com/en-us/azure/container-apps/migrate-logs-azure-monitor)
+
 ### Updated Pages
 
-- [Express frequently asked questions](https://learn.microsoft.com/en-us/azure/container-apps/express-faq)
-  - Updated: 2026-05-27T05:15:00.000Z → 2026-08-05T17:12:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/container-apps/ingress-overview)
-  - Updated: 2025-10-02T22:32:00.000Z → 2026-08-05T17:12:00.000Z
-- [Use rule-based routing](https://learn.microsoft.com/en-us/azure/container-apps/rule-based-routing)
-  - Updated: 2026-01-19T06:14:00.000Z → 2026-08-05T17:12:00.000Z
+- [Overview](https://learn.microsoft.com/en-us/azure/container-apps/functions-secrets-tutorial)
+  - Updated: 2026-06-11T17:23:00.000Z → 2026-08-13T11:42:00.000Z
+- [Configure host key storage](https://learn.microsoft.com/en-us/azure/container-apps/functions-secrets-host-keys)
+  - Updated: 2026-05-05T17:29:00.000Z → 2026-08-13T11:42:00.000Z
 
 ## Classified Pages
 
@@ -112,7 +114,7 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [Certificates from Key Vault](https://learn.microsoft.com/en-us/azure/container-apps/key-vault-certificates-manage) | security | 0.80 | Shows how to integrate Azure Key Vault certificates with Container Apps, including product-specific import and renewal behavior. |
 | [Compare container options in Azure](https://learn.microsoft.com/en-us/azure/container-apps/compare-options) | decision-making | 0.80 | Provides guidance on when to use Azure Container Apps versus other Azure container services, helping users choose based on scenarios and use cases; this is product-specific technology selection content. |
 | [Configure Dapr on an existing container app](https://learn.microsoft.com/en-us/azure/container-apps/enable-dapr) | configuration | 0.80 | Describes Dapr configuration channels, arguments, annotations, and revision behavior in Container Apps, which are detailed, product-specific configuration semantics. |
-| [Configure host key storage](https://learn.microsoft.com/en-us/azure/container-apps/functions-secrets-host-keys) | security | 0.80 | Covers configuration of Functions access/host keys for HTTP-triggered endpoints on Azure Container Apps, including supported backends (Container Apps secret store, Key Vault, Blob Storage) and how keys are used in headers/query parameters. This is detailed, product-specific authentication and secret storage configuration, matching the security sub-skill. |
+| [Configure host key storage](https://learn.microsoft.com/en-us/azure/container-apps/functions-secrets-host-keys) | security | 0.80 | Describes how Functions access keys (host keys) are used for securing HTTP-triggered endpoints and how to configure their storage in different backends (Container Apps secrets, Key Vault, Blob Storage). This is detailed, product-specific security configuration guidance with concrete mechanisms and parameters. |
 | [Container start](https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-container-start-failures) | troubleshooting | 0.80 | Guides diagnosis of containers that fail to start with Container Apps–specific checks and remedies. |
 | [Deployment failures](https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-deployment-errors) | troubleshooting | 0.80 | Described as a symptom-driven guide for diagnosing and fixing deployment failures, likely including specific error messages, causes, and resolutions unique to Azure Container Apps. |
 | [Egress policies](https://learn.microsoft.com/en-us/azure/container-apps/sandboxes-egress-policies) | security | 0.80 | Details a product-specific egress policy engine for controlling outbound traffic from sandboxes, including how policies are defined and enforced as part of the sandbox create request, which is concrete security configuration guidance. |
@@ -152,6 +154,7 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [Automatic memory fitting (preview)](https://learn.microsoft.com/en-us/azure/container-apps/java-memory-fit) | best-practices | 0.70 | Discusses Java automatic memory fitting with quantified performance impact (10–20%) and platform-specific JVM/container memory tuning guidance—product-specific performance best practices. |
 | [CLI](https://learn.microsoft.com/en-us/azure/container-apps/workload-profiles-manage-cli) | configuration | 0.70 | CLI-focused management of workload profiles is configuration-centric and likely includes specific parameter names, allowed values, and examples unique to Azure Container Apps. This goes beyond generic deployment steps and into product-specific configuration details. |
 | [CORS](https://learn.microsoft.com/en-us/azure/container-apps/cors) | security | 0.70 | Shows how to configure CORS settings (origins, methods, headers) for Container Apps in the portal, which is concrete security-related configuration. |
+| [Change logging from Log Analytics to Azure Monitor](https://learn.microsoft.com/en-us/azure/container-apps/migrate-logs-azure-monitor) | deployment | 0.70 | Explains how to change the logging destination for Azure Container Apps from the legacy Log Analytics HTTP Data Collector API (with a specific deprecation date and table names) to Azure Monitor. Contains product-specific migration and deployment/logging pipeline configuration details and constraints tied to service timelines. |
 | [Components overview](https://learn.microsoft.com/en-us/azure/container-apps/dapr-components) | configuration | 0.70 | Focuses on how to configure Dapr components as environment-level resources in Container Apps. Such content typically includes component spec fields, allowed values, and configuration examples unique to this hosting model, which are detailed configuration parameters beyond generic Dapr concepts. |
 | [Configure IP restrictions](https://learn.microsoft.com/en-us/azure/container-apps/ip-restrictions) | security | 0.70 | Contains product-specific security behavior and constraints for IP restriction rules (e.g., only IPv4 CIDR ranges, all rules must be same type, cannot mix allow and deny) that are implementation details rather than generic concepts. |
 | [Configure application performance management (APM) Java agent with init-container](https://learn.microsoft.com/en-us/azure/container-apps/java-application-performance-management-config) | configuration | 0.70 | Details init container and Java agent configuration, including container definitions, env vars, and arguments specific to Container Apps’ APM pattern. |
@@ -179,6 +182,7 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [Migrate Spring Cloud applications](https://learn.microsoft.com/en-us/azure/container-apps/migrate-spring-cloud) | decision-making | 0.70 | Explains what to be aware of when migrating Spring Cloud applications to Azure Container Apps, implying Azure- and Spring-Cloud-specific considerations and trade-offs. This is migration decision guidance rather than a simple tutorial, fitting decision-making with product-specific nuances. |
 | [Migrate Tomcat applications](https://learn.microsoft.com/en-us/azure/container-apps/migrate-tomcat) | decision-making | 0.70 | Walks through assessing, containerizing, and deploying Tomcat apps to Azure Container Apps. Contains migration-specific guidance and likely Tomcat/Azure-specific considerations and patterns, which are expert migration/decision knowledge rather than generic containerization advice. |
 | [Override auto-generated KEDA scale rules](https://learn.microsoft.com/en-us/azure/container-apps/functions-scale-rule-override) | configuration | 0.70 | Page describes the specific configuration property template.scale.allowScalingRuleOverride and how to replace platform-generated KEDA triggers with custom rules in template.scale.rules. This is product-specific configuration detail (exact setting names and behavior) that an LLM is unlikely to infer from general knowledge. |
+| [Overview](https://learn.microsoft.com/en-us/azure/container-apps/functions-secrets-tutorial) | security | 0.70 | Page is focused on how to handle two categories of secrets (app-level secrets and access keys) specifically for Azure Functions running on Azure Container Apps, including how they differ and how to choose storage approaches. This is product-specific security/secret-management guidance rather than generic concepts. |
 | [Overview](https://learn.microsoft.com/en-us/azure/container-apps/opentelemetry-agents) | integrations | 0.70 | Describes using a managed OpenTelemetry data agent with Azure Container Apps and routing data to various endpoints; likely includes product-specific configuration options, endpoint parameters, and integration patterns for OTLP-compatible backends. |
 | [Overview](https://learn.microsoft.com/en-us/azure/container-apps/sandboxes-overview) | security | 0.70 | Page introduces a specific Azure RBAC role name (Container Apps SandboxGroup Data Owner) required to manage sandboxes, which is product-specific security configuration detail not inferable from general training data. |
 | [Overview](https://learn.microsoft.com/en-us/azure/container-apps/security) | security | 0.70 | Although labeled as an overview, it explicitly mentions best practices and security features like managed identities, secrets management, and token store for Azure Container Apps. Such a page typically includes concrete RBAC role names, identity configuration steps, and product-specific security settings, which constitute expert security configuration knowledge. |
@@ -204,7 +208,6 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [X](https://learn.microsoft.com/en-us/azure/container-apps/authentication-twitter) | security | 0.70 | X/Twitter auth integration for Container Apps generally includes specific configuration fields, redirect URLs, and provider options unique to this product and provider. These are concrete, product-specific security configuration steps rather than generic OAuth guidance. |
 | [Communicate between multiple apps](https://learn.microsoft.com/en-us/azure/container-apps/connect-apps) | integrations | 0.68 | The page describes product-specific communication patterns between container apps in the same Azure Container Apps environment, including use of FQDNs, app names, Dapr service invocation, and custom domains. These are concrete, platform-specific integration patterns and routing behaviors that go beyond generic container networking knowledge, fitting the integrations sub-skill best. |
 | [Migrate Java with GitHub Copilot app modernization](https://learn.microsoft.com/en-us/azure/container-apps/migrate-java-github-copilot-app-modernization) | decision-making | 0.68 | Describes using GitHub Copilot app modernization with Azure Container Apps, including supported Java versions and frameworks and how to approach upgrades and migration. This is specialized migration and tool-selection guidance with product-specific constraints (e.g., supported Java versions). |
-| [Overview](https://learn.microsoft.com/en-us/azure/container-apps/functions-secrets-tutorial) | decision-making | 0.68 | The page explains the two categories of secrets (app-level secrets and access keys) specific to Azure Functions running on Azure Container Apps and guides how to choose the right storage approach for each. This is product- and scenario-specific guidance that helps decide between options for secret management, going beyond generic concepts. It does not focus on generic best practices or just how-to steps, but on selecting the appropriate approach for different secret types. |
 | [Blue/Green deployment](https://learn.microsoft.com/en-us/azure/container-apps/blue-green-deployment) | best-practices | 0.66 | Applies blue-green deployment strategy specifically to Container Apps, including how to route traffic between environments/revisions, which is actionable product-specific practice beyond generic theory. |
 | [AutoGen](https://learn.microsoft.com/en-us/azure/container-apps/sessions-tutorial-autogen) | integrations | 0.65 | Tutorial on wiring AutoGen agents to Azure Container Apps dynamic sessions as a code interpreter; likely includes product-specific configuration parameters, endpoint settings, and SDK usage patterns for this integration. |
 | [Azure Pipelines](https://learn.microsoft.com/en-us/azure/container-apps/azure-pipelines) | deployment | 0.65 | Describes using Azure Pipelines specifically to publish revisions for Azure Container Apps. While summarized as a tutorial, this scenario is product- and platform-specific CI/CD guidance for revision-based deployment. It likely includes pipeline configuration details and constraints unique to Container Apps revisions, fitting the deployment category better than generic how-to content. |

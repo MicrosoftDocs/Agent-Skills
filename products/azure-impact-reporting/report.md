@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-05'
+generated_at: '2026-08-16'
 category_descriptions:
   integrations: Patterns and examples for integrating Impact Reporting with Azure
     Monitor alerts, Logic Apps, diagnostic logs, Service Health, and APIs (sending,
@@ -7,22 +7,20 @@ category_descriptions:
   troubleshooting: Diagnosing and fixing Azure Impact Reporting connector failures
     and resolving Azure HPC Guest Health Reporting issues, errors, and data/health
     reporting problems.
-  configuration: 'Configuring Azure Impact Reporting and HPC guest health: setting
-    up connectors, valid impact/report categories, guest health settings, and attaching
-    diagnostic logs to reports.'
+  configuration: 'Configuring Azure Impact Reporting and HPC Guest Health: setting
+    up connectors, valid impact categories, VM guest health reporting, diagnostic
+    logs, and retrieving category metadata.'
 skill_description: Expert knowledge for Azure Impact Reporting development including
   troubleshooting, configuration, and integrations & coding patterns. Use when wiring
-  Impact Reporting to Monitor alerts, Logic Apps, Service Health, HPC guest health,
+  Impact Reporting to Monitor alerts, Logic Apps, Service Health, HPC Guest Health,
   or diagnostic logs, and other Azure Impact Reporting related development tasks.
-  Not for Azure Carbon Optimization (use azure-carbon-optimization), Azure Cost Management
-  (use azure-cost-management), Azure Monitor (use azure-monitor), Azure Policy (use
-  azure-policy).
+  Not for Azure Carbon Optimization (use azure-carbon-optimization), Cost Management
+  (use azure-cost-management), Azure Monitor (use azure-monitor).
 use_when: Use when wiring Impact Reporting to Monitor alerts, Logic Apps, Service
-  Health, HPC guest health, or diagnostic logs, and other Azure Impact Reporting related
+  Health, HPC Guest Health, or diagnostic logs, and other Azure Impact Reporting related
   development tasks.
 confusable_not_for: Not for Azure Carbon Optimization (use azure-carbon-optimization),
-  Azure Cost Management (use azure-cost-management), Azure Monitor (use azure-monitor),
-  Azure Policy (use azure-policy).
+  Cost Management (use azure-cost-management), Azure Monitor (use azure-monitor).
 ---
 # Azure Impact Reporting Crawl Report
 
@@ -36,8 +34,8 @@ confusable_not_for: Not for Azure Carbon Optimization (use azure-carbon-optimiza
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 15
+- **Updated Pages**: 1
+- **Unchanged**: 14
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-impact-reporting/azure-impact-reporting.csv`
 
@@ -52,6 +50,11 @@ confusable_not_for: Not for Azure Carbon Optimization (use azure-carbon-optimiza
 
 ## Changes
 
+### Updated Pages
+
+- [Report node health](https://learn.microsoft.com/en-us/azure/azure-impact-reporting/guest-health-impact-report)
+  - Updated: 2026-06-30T22:03:00.000Z → 2026-08-13T22:05:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
@@ -62,7 +65,7 @@ confusable_not_for: Not for Azure Carbon Optimization (use azure-carbon-optimiza
 | [Create an impact connector for Azure Monitor alerts](https://learn.microsoft.com/en-us/azure/azure-impact-reporting/create-azure-monitor-connector) | configuration | 0.70 | Details creating impact connectors via Azure CLI, PowerShell, or portal. This typically includes resource properties, required parameters, and configuration options specific to the connector resource. |
 | [Log Upload for Guest Health Reporting](https://learn.microsoft.com/en-us/azure/azure-impact-reporting/guest-health-log-upload) | configuration | 0.70 | Explains how to upload a log file and reference it via LogUrl in the additionalProperties section of a Guest Health Report request. The page contains product-specific request schema details and required parameter usage for Azure HPC Guest Health Reporting, which fits the configuration sub-skill. |
 | [Report impacts by using a logic app](https://learn.microsoft.com/en-us/azure/azure-impact-reporting/creating-logic-app) | integrations | 0.70 | Explains using a Logic App as a REST client for impact reporting. This typically includes connector/action configuration, request body schema, and product-specific integration patterns. |
-| [Report node health](https://learn.microsoft.com/en-us/azure/azure-impact-reporting/guest-health-impact-report) | configuration | 0.70 | Describes how to use Guest Health Reporting for Azure HPC VMs, including request body structure and required fields (such as health status payload and additionalProperties). These product-specific configuration details and API usage patterns go beyond generic knowledge and align best with the configuration sub-skill. |
+| [Report node health](https://learn.microsoft.com/en-us/azure/azure-impact-reporting/guest-health-impact-report) | configuration | 0.70 | The page describes how to use Guest Health Reporting for Azure HPC/supercomputing VMs, which typically includes product-specific configuration steps, parameters, and required settings unique to this preview feature (for example, how to emit health signals from the guest to Azure and any required agent or endpoint configuration). These details are not generic knowledge and qualify as expert, product-specific configuration guidance. |
 | [Report a resource impact](https://learn.microsoft.com/en-us/azure/azure-impact-reporting/report-impact) | integrations | 0.65 | Describes using Azure Service Health 'Report an issue' pane, REST API, and Azure Monitor connector to submit impact reports. Likely includes request schema, parameters, and integration-specific details beyond generic tutorials. |
 | [View allowed impact categories](https://learn.microsoft.com/en-us/azure/azure-impact-reporting/view-impact-categories) | configuration | 0.60 | Focuses on obtaining a valid list of impact categories via REST API. This implies specific category identifiers/values and how they must be used when configuring impact reports. |
 

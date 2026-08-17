@@ -45,10 +45,10 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Resiliency 
 - **Unclassified**: 18
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 45
-- **Unchanged**: 19
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 65
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-chaos-studio/azure-chaos-studio.csv`
 
 ## Classification Statistics
@@ -65,58 +65,6 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Resiliency 
 | *(Unclassified)* | 18 | 27.7% |
 
 ## Changes
-
-### New Pages
-
-- [Limitations and known issues](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-limitations)
-
-### Updated Pages
-
-- [Azure Policy definitions](https://learn.microsoft.com/en-us/azure/chaos-studio/sample-policy-targets)
-  - Updated: 2026-04-20T17:15:00.000Z → 2026-08-07T06:04:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-agent-overview)
-  - Updated: 2026-07-27T12:03:00.000Z → 2026-08-07T06:04:00.000Z
-- [Concepts](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-agent-concepts)
-  - Updated: 2025-04-16T11:13:00.000Z → 2026-08-07T06:04:00.000Z
-- [Supported operating systems](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-agent-os-support)
-  - Updated: 2025-12-10T13:05:00.000Z → 2026-08-07T06:04:00.000Z
-- [ARM template](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-agent-arm-template)
-  - Updated: 2025-03-20T05:32:00.000Z → 2026-08-07T06:04:00.000Z
-- [Verify agent status](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-agent-verify-status)
-  - Updated: 2025-03-12T08:00:00.000Z → 2026-08-07T06:04:00.000Z
-- [Private Link for agent](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-private-link-agent-service)
-  - Updated: 2024-09-11T16:50:00.000Z → 2026-08-07T06:04:00.000Z
-- [Uninstall the agent](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-agent-uninstall)
-  - Updated: 2025-03-14T22:02:00.000Z → 2026-08-07T06:04:00.000Z
-- [Known issues](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-agent-known-issues)
-  - Updated: 2026-07-14T12:03:00.000Z → 2026-08-07T06:04:00.000Z
-- [Assign experiment permissions](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-assign-experiment-permissions)
-  - Updated: 2025-03-21T11:30:00.000Z → 2026-08-07T06:04:00.000Z
-- [Private networking](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-private-networking)
-  - Updated: 2025-07-25T05:08:00.000Z → 2026-08-07T06:04:00.000Z
-- [Container image details](https://learn.microsoft.com/en-us/azure/chaos-studio/azure-container-instance-details)
-  - Updated: 2024-10-04T11:05:00.000Z → 2026-08-07T06:04:00.000Z
-- [Configure customer-managed keys](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-configure-customer-managed-keys)
-  - Updated: 2024-11-07T08:00:00.000Z → 2026-08-07T06:04:00.000Z
-- [Emit telemetry to Azure Monitor](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-set-up-azure-monitor)
-  - Updated: 2024-10-14T08:00:00.000Z → 2026-08-07T06:04:00.000Z
-- [Emit telemetry to App Insights](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-set-up-app-insights)
-  - Updated: 2025-12-02T23:15:00.000Z → 2026-08-07T06:04:00.000Z
-- [Experiment examples](https://learn.microsoft.com/en-us/azure/chaos-studio/experiment-examples)
-  - Updated: 2024-09-11T16:50:00.000Z → 2026-08-07T06:04:00.000Z
-- [Supported resource types](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-fault-providers)
-  - Updated: 2025-03-21T11:30:00.000Z → 2026-08-07T06:04:00.000Z
-- [Chaos Mesh version compatibility](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-versions)
-  - Updated: 2026-06-19T06:10:00.000Z → 2026-08-07T06:04:00.000Z
-- [Service limits](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-service-limits)
-  - Updated: 2024-09-11T16:50:00.000Z → 2026-08-07T06:04:00.000Z
-- [Compare workspaces and experiments](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-workspaces-vs-experiments)
-  - Updated: 2026-07-30T22:20:00.000Z → 2026-08-07T06:04:00.000Z
-- *...and 25 more*
-
-### Deleted Pages
-
-- ~~Limitations and known issues (classic)~~ (https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-limitations)
 
 ## Classified Pages
 

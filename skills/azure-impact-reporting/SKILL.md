@@ -1,9 +1,9 @@
 ---
 name: azure-impact-reporting
-description: Expert knowledge for Azure Impact Reporting development including troubleshooting, configuration, and integrations & coding patterns. Use when wiring Impact Reporting to Monitor alerts, Logic Apps, Service Health, HPC guest health, or diagnostic logs, and other Azure Impact Reporting related development tasks. Not for Azure Carbon Optimization (use azure-carbon-optimization), Azure Cost Management (use azure-cost-management), Azure Monitor (use azure-monitor), Azure Policy (use azure-policy).
+description: Expert knowledge for Azure Impact Reporting development including troubleshooting, configuration, and integrations & coding patterns. Use when wiring Impact Reporting to Monitor alerts, Logic Apps, Service Health, HPC Guest Health, or diagnostic logs, and other Azure Impact Reporting related development tasks. Not for Azure Carbon Optimization (use azure-carbon-optimization), Cost Management (use azure-cost-management), Azure Monitor (use azure-monitor).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-05"
+  generated_at: "2026-08-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Impact Reporting Skill
@@ -25,7 +25,7 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L31-L35 | Diagnosing and fixing Azure Impact Reporting connector failures and resolving Azure HPC Guest Health Reporting issues, errors, and data/health reporting problems. |
-| Configuration | L36-L44 | Configuring Azure Impact Reporting and HPC guest health: setting up connectors, valid impact/report categories, guest health settings, and attaching diagnostic logs to reports. |
+| Configuration | L36-L44 | Configuring Azure Impact Reporting and HPC Guest Health: setting up connectors, valid impact categories, VM guest health reporting, diagnostic logs, and retrieving category metadata. |
 | Integrations & Coding Patterns | L45-L50 | Patterns and examples for integrating Impact Reporting with Azure Monitor alerts, Logic Apps, diagnostic logs, Service Health, and APIs (sending, attaching data, and viewing insights). |
 
 ### Troubleshooting
@@ -38,7 +38,7 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Create Azure Impact Reporting connectors for alerts | https://learn.microsoft.com/en-us/azure/azure-impact-reporting/create-azure-monitor-connector |
 | Use valid HPC Guest Health impact categories | https://learn.microsoft.com/en-us/azure/azure-impact-reporting/guest-health-impact-categories |
-| Configure Azure HPC guest health reporting | https://learn.microsoft.com/en-us/azure/azure-impact-reporting/guest-health-impact-report |
+| Configure Azure HPC Guest Health Reporting for VMs | https://learn.microsoft.com/en-us/azure/azure-impact-reporting/guest-health-impact-report |
 | Attach diagnostic logs to Azure guest health reports | https://learn.microsoft.com/en-us/azure/azure-impact-reporting/guest-health-log-upload |
 | Retrieve valid Azure Impact Reporting categories | https://learn.microsoft.com/en-us/azure/azure-impact-reporting/view-impact-categories |
 

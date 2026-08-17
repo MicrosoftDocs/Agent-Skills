@@ -46,9 +46,9 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Service Hea
 - **Unclassified**: 68
 
 ### Incremental Update
-- **New Pages**: 3
-- **Updated Pages**: 6
-- **Unchanged**: 112
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 121
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sre-agent/azure-sre-agent.csv`
 
@@ -66,27 +66,6 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Service Hea
 | *(Unclassified)* | 68 | 56.2% |
 
 ## Changes
-
-### New Pages
-
-- [Connect a source code service](https://learn.microsoft.com/en-us/azure/sre-agent/connect-code-service)
-- [Connect a notification or work-tracking service](https://learn.microsoft.com/en-us/azure/sre-agent/connect-notification-service)
-- [Connect a telemetry source](https://learn.microsoft.com/en-us/azure/sre-agent/connect-telemetry-source)
-
-### Updated Pages
-
-- [Set up Kusto connector](https://learn.microsoft.com/en-us/azure/sre-agent/kusto-connector)
-  - Updated: 2026-04-07T22:12:00.000Z → 2026-08-05T22:12:00.000Z
-- [Set up Outlook connector](https://learn.microsoft.com/en-us/azure/sre-agent/outlook-connector)
-  - Updated: 2026-03-27T15:55:00.000Z → 2026-08-05T22:12:00.000Z
-- [Set up a managed connector](https://learn.microsoft.com/en-us/azure/sre-agent/setup-managed-connector)
-  - Updated: 2026-06-04T17:12:00.000Z → 2026-08-05T22:12:00.000Z
-- [Set up Log Analytics connector](https://learn.microsoft.com/en-us/azure/sre-agent/setup-log-analytics-connector)
-  - Updated: 2026-04-30T17:19:00.000Z → 2026-08-05T22:12:00.000Z
-- [Set up Teams connector](https://learn.microsoft.com/en-us/azure/sre-agent/set-up-teams-connector)
-  - Updated: 2026-04-21T22:10:00.000Z → 2026-08-05T22:12:00.000Z
-- [Set up ServiceNow indexing](https://learn.microsoft.com/en-us/azure/sre-agent/setup-servicenow-indexing)
-  - Updated: 2026-06-12T22:22:00.000Z → 2026-08-05T17:12:00.000Z
 
 ## Classified Pages
 

@@ -1,9 +1,9 @@
 ---
 name: azure-repos
-description: Expert knowledge for Azure Repos development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when managing Git/TFVC repos, branch policies, PR workflows, CLI/IDE integrations, or security scanning, and other Azure Repos related development tasks. Not for Azure DevOps (use azure-devops), Azure Pipelines (use azure-pipelines), Azure Boards (use azure-boards), Azure Test Plans (use azure-test-plans).
+description: Expert knowledge for Azure Repos development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when managing Git/TFVC repos, branch policies, PR checks, CodeQL/GHAS scans, or Azure Repos integrations, and other Azure Repos related development tasks. Not for Azure DevOps (use azure-devops), Azure Pipelines (use azure-pipelines), Azure Boards (use azure-boards), Azure Artifacts (use azure-artifacts).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-09"
+  generated_at: "2026-08-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Repos Skill
@@ -29,9 +29,9 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L66-L74 | Guidance on choosing Git vs TFVC, local vs server workspaces, and planning migrations from TFVC or SVN to Git, including handling large files in Azure Repos. |
 | Architecture & Design Patterns | L75-L83 | Designing and choosing TFVC branching structures/strategies, planning strategic branches, implementing feature isolation, and managing branches for DevOps workflows in Azure Repos. |
 | Limits & Quotas | L84-L90 | ELM migration timing, monitoring sync and read-only windows, plus hard limits and quotas for Git repositories (size, branches, files) in Azure Repos. |
-| Security | L91-L118 | Securing Azure Repos and TFVC: auth methods (PAT/SSH/Entra, credential managers, Xcode/Go), branch/repo permissions and policies, secure imports, GitHub Advanced Security, and access control. |
-| Configuration | L119-L153 | Configuring Azure Repos/DevOps behavior: branch policies, PR checks/notifications, Copilot reviews, Git/TFVC settings, workspaces, check-in policies, and GitHub Advanced Security scanning. |
-| Integrations & Coding Patterns | L154-L206 | Integrating Azure Repos with tools (CLI, IntelliJ, Slack/Teams, Functions, Node.js), PR policies/status, SARIF scanners, and detailed TFVC/tf.exe command usage for automation. |
+| Security | L91-L118 | Securing Azure Repos and TFVC: auth methods (Entra, PAT, SSH, credential managers, Xcode), permissions/ACLs, branch locks/policies, secure imports, and GitHub Advanced Security integration. |
+| Configuration | L119-L153 | Configuring Azure Repos/TFVC: branch policies, PR checks/notifications, Git/VS settings, Copilot & GitHub Advanced Security (CodeQL, dependency/secret scanning), and TFVC check-in/workspace policies. |
+| Integrations & Coding Patterns | L154-L205 | Integrating Azure Repos with tools (CLI, IntelliJ, Slack/Teams, Functions, Node.js), PR policies/status, SARIF scanners, and detailed TFVC/tf.exe command usage for automation. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -101,7 +101,7 @@ This skill requires **network access** to fetch documentation content:
 | Lock Azure Repos Git branches to prevent updates | https://learn.microsoft.com/en-us/azure/devops/repos/git/lock-branches?view=azure-devops |
 | Enforce branch folder structure and secure auth in Azure Repos | https://learn.microsoft.com/en-us/azure/devops/repos/git/require-branch-folders?view=azure-devops |
 | Secure Azure Repos with permissions and policies | https://learn.microsoft.com/en-us/azure/devops/repos/git/secure-repositories-pull-requests?view=azure-devops |
-| Configure Azure Repos Git repository permissions | https://learn.microsoft.com/en-us/azure/devops/repos/git/set-git-repository-permissions?view=azure-devops |
+| Configure Azure Repos Git repository permissions and access | https://learn.microsoft.com/en-us/azure/devops/repos/git/set-git-repository-permissions?view=azure-devops |
 | Securely authenticate to Azure Repos with credential managers | https://learn.microsoft.com/en-us/azure/devops/repos/git/set-up-credential-managers?view=azure-devops |
 | Configure secure authentication for Xcode with Azure Repos | https://learn.microsoft.com/en-us/azure/devops/repos/git/share-your-code-in-git-xcode?view=azure-devops |
 | Configure SSH key authentication for Azure Repos | https://learn.microsoft.com/en-us/azure/devops/repos/git/use-ssh-keys-to-authenticate?view=azure-devops |
@@ -125,7 +125,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure Azure Repos Git branch policies | https://learn.microsoft.com/en-us/azure/devops/repos/git/branch-policies?view=azure-devops |
 | Use Visual Studio Git commands and Azure DevOps integration | https://learn.microsoft.com/en-us/azure/devops/repos/git/command-prompt?view=azure-devops |
 | Configure Copilot code review instructions and agent skills | https://learn.microsoft.com/en-us/azure/devops/repos/git/configure-copilot-code-review-instructions?view=azure-devops |
-| Enable and configure Copilot code reviews in Azure Repos | https://learn.microsoft.com/en-us/azure/devops/repos/git/copilot-code-reviews?view=azure-devops |
+| Configure GitHub Copilot code reviews in Azure Repos | https://learn.microsoft.com/en-us/azure/devops/repos/git/copilot-code-reviews?view=azure-devops |
 | Configure Git preferences and config files in Visual Studio | https://learn.microsoft.com/en-us/azure/devops/repos/git/git-config?view=azure-devops |
 | Configure external status branch policies in Azure Repos | https://learn.microsoft.com/en-us/azure/devops/repos/git/pr-status-policy?view=azure-devops |
 | Configure Azure Repos pull request notification subscriptions | https://learn.microsoft.com/en-us/azure/devops/repos/git/pull-request-notifications?view=azure-devops |
@@ -158,7 +158,6 @@ This skill requires **network access** to fetch documentation content:
 | Authenticate and start ELM sync from Azure DevOps | https://learn.microsoft.com/en-us/azure/devops/repos/enterprise-live-migrations/start-migration?view=azure-devops |
 | Create Azure Functions-based custom branch policy for PRs | https://learn.microsoft.com/en-us/azure/devops/repos/git/create-pr-status-server-with-azure-functions?view=azure-devops |
 | Build a Node.js pull request status server for Azure Repos | https://learn.microsoft.com/en-us/azure/devops/repos/git/create-pr-status-server?view=azure-devops |
-| Use Azure DevOps IntelliJ plugin with Git repositories | https://learn.microsoft.com/en-us/azure/devops/repos/git/create-repo-intellij?view=azure-devops |
 | Extend Azure Repos pull request workflow with status and policy | https://learn.microsoft.com/en-us/azure/devops/repos/git/pull-request-status?view=azure-devops |
 | Use Azure CLI and Git to share code in Azure Repos | https://learn.microsoft.com/en-us/azure/devops/repos/git/share-your-code-in-git-cmdline?view=azure-devops |
 | Connect Azure Repos notifications to Slack channels | https://learn.microsoft.com/en-us/azure/devops/repos/integrations/repos-slack?view=azure-devops |

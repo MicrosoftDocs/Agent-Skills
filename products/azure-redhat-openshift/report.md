@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-09'
+generated_at: '2026-08-16'
 category_descriptions:
   best-practices: Guidance on sizing and optimizing ARO clusters and VMs, configuring
     infrastructure nodes for performance/scale, and understanding ARO 4 support policies
@@ -7,8 +7,9 @@ category_descriptions:
   configuration: 'Cluster-level setup for ARO: registry, networking (proxy, DNS, MTU,
     endpoints), storage (Azure Files, Prometheus), node/subnet layout, Spot VMs, capacity
     reservations, tags, and pull secrets.'
-  security: Identity, access, disk encryption, network egress, workload/managed identities,
-    FIPS, Lockbox, and securing ARO apps with Azure Front Door and Microsoft Entra.
+  security: 'Identity, encryption, and network security for ARO: Entra auth, service/managed
+    identities, disk CMK, FIPS, egress control, Front Door, Lockbox, and support/credential
+    rotation policies.'
   deployment: 'Deploying and operating ARO clusters and apps: cluster creation (private/ARM/Bicep),
     upgrades, networking migration, backups/restores, and app runtimes (JBoss, WebSphere,
     S2I, serverless).'
@@ -25,17 +26,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Red Hat OpenShift development including
   troubleshooting, best practices, decision making, limits & quotas, security, configuration,
   integrations & coding patterns, and deployment. Use when creating ARO clusters,
-  configuring networking/storage, securing with Entra/Front Door, or integrating GPUs/Key
-  Vault, and other Azure Red Hat OpenShift related development tasks. Not for Azure
-  Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Container Apps (use
-  azure-container-apps), Azure Container Instances (use azure-container-instances),
-  Azure VMware Solution (use azure-vmware-solution).
+  configuring networking/storage, securing with Entra/Key Vault, or integrating GPUs/ANF,
+  and other Azure Red Hat OpenShift related development tasks. Not for Azure Kubernetes
+  Service (AKS) (use azure-kubernetes-service), Azure Container Apps (use azure-container-apps),
+  Azure Virtual Machines (use azure-virtual-machines), Azure VMware Solution (use
+  azure-vmware-solution).
 use_when: Use when creating ARO clusters, configuring networking/storage, securing
-  with Entra/Front Door, or integrating GPUs/Key Vault, and other Azure Red Hat OpenShift
+  with Entra/Key Vault, or integrating GPUs/ANF, and other Azure Red Hat OpenShift
   related development tasks.
 confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
-  Azure Container Apps (use azure-container-apps), Azure Container Instances (use
-  azure-container-instances), Azure VMware Solution (use azure-vmware-solution).
+  Azure Container Apps (use azure-container-apps), Azure Virtual Machines (use azure-virtual-machines),
+  Azure VMware Solution (use azure-vmware-solution).
 ---
 # Azure Red Hat OpenShift Crawl Report
 
@@ -58,13 +59,13 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| best-practices | 4 | 6.0% |
+| best-practices | 3 | 4.5% |
 | configuration | 15 | 22.4% |
 | decision-making | 2 | 3.0% |
 | deployment | 8 | 11.9% |
 | integrations | 5 | 7.5% |
 | limits-quotas | 2 | 3.0% |
-| security | 14 | 20.9% |
+| security | 15 | 22.4% |
 | troubleshooting | 3 | 4.5% |
 | *(Unclassified)* | 14 | 20.9% |
 
@@ -73,7 +74,7 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 ### Updated Pages
 
 - [Support policies for Azure Red Hat OpenShift 4](https://learn.microsoft.com/en-us/azure/openshift/support-policies-v4)
-  - Updated: 2026-06-02T08:00:00.000Z → 2026-07-14T08:00:00.000Z
+  - Updated: 2026-07-14T08:00:00.000Z → 2026-08-10T08:00:00.000Z
 
 ## Classified Pages
 
@@ -113,7 +114,7 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Migrate from OpenShift SDN to OVN-Kubernetes](https://learn.microsoft.com/en-us/azure/openshift/howto-sdn-to-ovn) | deployment | 0.70 | Describes migration path due to SDN deprecation, including version constraints and steps; deployment/migration decision and process. |
 | [Rotate service principal credentials](https://learn.microsoft.com/en-us/azure/openshift/howto-service-principal-credential-rotation) | security | 0.70 | Contains product-specific steps and Azure CLI commands for rotating Microsoft Entra ID service principal credentials tied to Azure Red Hat OpenShift clusters, including required parameters and sequence of operations that are not generic knowledge. |
 | [Segregate worker nodes into subnets](https://learn.microsoft.com/en-us/azure/openshift/howto-segregate-machinesets) | configuration | 0.70 | Network-level configuration of worker machine sets into different private subnets with access control implications is product-specific configuration. |
-| [Support policies for Azure Red Hat OpenShift 4](https://learn.microsoft.com/en-us/azure/openshift/support-policies-v4) | best-practices | 0.70 | The page defines which specific cluster configuration changes are supported or unsupported in Azure Red Hat OpenShift 4, including concrete DO/DON'T guidance tied to product behavior (for example, restrictions on modifying internal components and using Technology Preview features). These are product-specific supportability rules and gotchas that go beyond generic knowledge, fitting best-practices. It doesn't focus on numeric limits, deployment matrices, or security configuration details. |
+| [Support policies for Azure Red Hat OpenShift 4](https://learn.microsoft.com/en-us/azure/openshift/support-policies-v4) | security | 0.70 | The page defines product-specific supportability rules for Azure Red Hat OpenShift 4 clusters, detailing which internal component changes and Technology Preview features invalidate Microsoft/Red Hat support. These are concrete, vendor-enforced policy constraints unique to this service, closely tied to supported configurations and compliance, fitting best under security/compliance-focused configuration and governance rather than generic concepts. |
 | [Tag resources using Azure Policy](https://learn.microsoft.com/en-us/azure/openshift/howto-tag-resources) | configuration | 0.70 | Involves creating JSON policy definitions/assignments and remediation for ARO-managed resource groups, with specific parameters and behavior. |
 | [Understand managed identities](https://learn.microsoft.com/en-us/azure/openshift/howto-understand-managed-identities) | security | 0.70 | An article on understanding managed identities in ARO is likely to include product-specific security configuration details: which managed identities are created, how they are scoped, required role assignments, and how ARO components use them to access Azure resources. These are concrete IAM patterns and role/scope configurations unique to ARO, fitting the security sub-skill. This goes beyond generic managed identity concepts. |
 | [Use Admin Kubeconfig](https://learn.microsoft.com/en-us/azure/openshift/howto-kubeconfig) | troubleshooting | 0.70 | Explicitly for regaining access when console/ingress/auth components fail; maps specific failure scenarios to using Admin Kubeconfig. |

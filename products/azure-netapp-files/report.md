@@ -53,9 +53,9 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure F
 - **Unclassified**: 69
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 2
-- **Unchanged**: 233
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 236
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-netapp-files/azure-netapp-files.csv`
 
@@ -75,17 +75,6 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure F
 | *(Unclassified)* | 69 | 29.2% |
 
 ## Changes
-
-### New Pages
-
-- [Understand double encryption at rest](https://learn.microsoft.com/en-us/azure/azure-netapp-files/double-encryption-at-rest)
-
-### Updated Pages
-
-- [Modify Active Directory connections](https://learn.microsoft.com/en-us/azure/azure-netapp-files/modify-active-directory-connections)
-  - Updated: 2025-12-03T08:00:00.000Z → 2026-08-06T08:00:00.000Z
-- [Troubleshoot volume errors](https://learn.microsoft.com/en-us/azure/azure-netapp-files/troubleshoot-volumes)
-  - Updated: 2026-01-12T08:00:00.000Z → 2026-08-07T08:00:00.000Z
 
 ## Classified Pages
 

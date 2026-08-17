@@ -1,9 +1,9 @@
 ---
 name: azure-pipelines
-description: Expert knowledge for Azure Pipelines development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring YAML CI/CD, agents, service connections, Key Vault secrets, or deploying to Web Apps/Kubernetes, and other Azure Pipelines related development tasks. Not for Azure DevOps (use azure-devops), Azure Test Plans (use azure-test-plans), Azure Boards (use azure-boards), Azure Repos (use azure-repos).
+description: Expert knowledge for Azure Pipelines development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring YAML pipelines, service connections/Key Vault, multi-platform agents, Git/Slack integrations, or Web App/Kubernetes deployments, and other Azure Pipelines related development tasks. Not for Azure DevOps (use azure-devops), Azure Boards (use azure-boards), Azure Repos (use azure-repos), Azure Test Plans (use azure-test-plans).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-09"
+  generated_at: "2026-08-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Pipelines Skill
@@ -28,9 +28,9 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L48-L59 | Guidance on YAML template design, caching for faster builds, cross-platform scripts, and best practices for configuring, parallelizing, and stabilizing automated tests (including UI and VSTest). |
 | Decision Making | L60-L65 | Guides for migrating CI/CD pipelines to Azure Pipelines, including from Jenkins/Travis and from classic UI pipelines to YAML, with patterns, pitfalls, and safe migration steps. |
 | Architecture & Design Patterns | L66-L73 | Guidance on end-to-end CI/CD and DevOps architectures for Azure: baseline pipeline patterns, Web App deployment design, and IaaS/VM-focused DevTest and production pipelines. |
-| Limits & Quotas | L74-L85 | Managing Azure Pipelines limits: agent quotas/concurrency, Microsoft/GitHub-hosted agent capabilities, image deprecations, parallel jobs, run retention, and large Universal Package handling. |
-| Security | L86-L137 | Securing Azure Pipelines: auth for agents, service connections, secrets/Key Vault, permissions, approvals/checks, secure variables, CodeQL/dependency scanning, and policy/compliance controls. |
-| Configuration | L138-L501 | Configuring Azure Pipelines: agents, triggers, environments, YAML schema, variables, deployment strategies, and detailed task/step options for builds, tests, and deployments. |
+| Limits & Quotas | L74-L85 | Limits, quotas, and planning for Azure Pipelines: agent concurrency, GitHub/Microsoft-hosted agent limits, image deprecations, parallel jobs, run retention, and large Universal Packages. |
+| Security | L86-L136 | Securing Azure Pipelines: agent auth, service connections, secrets/Key Vault, permissions and approvals, artifact/repo protection, workload identities, and security automation/tools. |
+| Configuration | L137-L501 | Configuring Azure Pipelines: agents, triggers, variables, environments, YAML schema, and detailed task/step settings for building, testing, deploying, and managing artifacts. |
 | Integrations & Coding Patterns | L502-L530 | Language-specific CI/CD pipeline examples, scripting patterns, and integrations (Git, Key Vault, Slack, ServiceNow, REST/Functions, Selenium) for building, testing, and automating Azure Pipelines. |
 | Deployment | L531-L589 | Deploying apps and packages with Azure Pipelines: agent setup (Windows/Linux/macOS/containers), artifacts (NuGet/npm/Maven/etc.), and deployment to VMs, web apps, Kubernetes, SQL, and Azure resources. |
 
@@ -77,7 +77,7 @@ This skill requires **network access** to fetch documentation content:
 | Review GitHub-hosted agents quotas and FAQs for Pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/github-hosted-faq?view=azure-devops |
 | Plan usage and limits for GitHub-hosted agents in Pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/github-hosted?view=azure-devops |
 | Track deprecation schedule for hosted build images | https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/hosted-deprecation-schedule?view=azure-devops |
-| Understand Microsoft-hosted agent limits and capabilities | https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/hosted?view=azure-devops |
+| Understand Microsoft-hosted agent limits in Azure Pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/hosted?view=azure-devops |
 | Analyze Azure Pipelines agent pool concurrency | https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/pool-consumption-report?view=azure-devops |
 | Publish and download large Universal Packages | https://learn.microsoft.com/en-us/azure/devops/pipelines/artifacts/universal-packages?view=azure-devops |
 | Configure and estimate Azure Pipelines parallel jobs | https://learn.microsoft.com/en-us/azure/devops/pipelines/licensing/concurrent-jobs?view=azure-devops |
@@ -98,7 +98,6 @@ This skill requires **network access** to fetch documentation content:
 | Handle special-case ARM service connections in Azure Pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/library/azure-resource-manager-alternate-approaches?view=azure-devops |
 | Link Azure Pipelines variable groups to Key Vault | https://learn.microsoft.com/en-us/azure/devops/pipelines/library/link-variable-groups-to-key-vaults?view=azure-devops |
 | Manage secure files and access in Azure Pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/library/secure-files?view=azure-devops |
-| Configure and manage Azure Pipelines service connections | https://learn.microsoft.com/en-us/azure/devops/pipelines/library/service-endpoints?view=azure-devops |
 | Manage Azure Pipelines variable groups and access | https://learn.microsoft.com/en-us/azure/devops/pipelines/library/variable-groups?view=azure-devops |
 | Manage Azure Pipelines permissions and security groups | https://learn.microsoft.com/en-us/azure/devops/pipelines/policies/permissions?view=azure-devops |
 | Manage Azure Pipelines permissions and security groups | https://learn.microsoft.com/en-us/azure/devops/pipelines/policies/permissions?view=azure-devops |
@@ -120,7 +119,7 @@ This skill requires **network access** to fetch documentation content:
 | Convert Azure DevOps issuer connections to Entra issuer | https://learn.microsoft.com/en-us/azure/devops/pipelines/release/convert-service-connections?view=azure-devops |
 | Secure Azure Pipelines access to private Key Vault | https://learn.microsoft.com/en-us/azure/devops/pipelines/release/key-vault-access?view=azure-devops |
 | Plan an approach for securing YAML pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/security/approach?view=azure-devops |
-| Securely handle variables and parameters in pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/security/inputs?view=azure-devops |
+| Securely handle variables and parameters in Azure Pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/security/inputs?view=azure-devops |
 | Secure Azure Pipelines agents, projects, and containers | https://learn.microsoft.com/en-us/azure/devops/pipelines/security/misc?view=azure-devops |
 | Configure security settings for Azure Pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/security/overview?view=azure-devops |
 | Automate Azure Pipelines security with REST and PowerShell | https://learn.microsoft.com/en-us/azure/devops/pipelines/security/project-security-script?view=azure-devops |
@@ -149,6 +148,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure trigger settings for Azure Pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/build/triggers?view=azure-devops |
 | Reference predefined Azure Pipelines variables | https://learn.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops |
 | Configure Azure Resource Manager service connections in Pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/library/connect-to-azure?view=azure-devops |
+| Configure and manage Azure Pipelines service connections | https://learn.microsoft.com/en-us/azure/devops/pipelines/library/service-endpoints?view=azure-devops |
 | Configure conditions for Azure Pipelines stages, jobs, and steps | https://learn.microsoft.com/en-us/azure/devops/pipelines/process/conditions?view=azure-devops |
 | Configure container jobs in Azure Pipelines YAML | https://learn.microsoft.com/en-us/azure/devops/pipelines/process/container-phases?view=azure-devops |
 | Author deployment jobs and strategies in Azure Pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/process/deployment-jobs?view=azure-devops |

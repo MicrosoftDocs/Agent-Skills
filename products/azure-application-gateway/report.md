@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-09'
+generated_at: '2026-08-16'
 category_descriptions:
   integrations: Configuring header rewrites, integrating App Gateway (incl. containers)
     with Key Vault, Prometheus/Grafana, Istio, Sentinel/Defender, and using its metrics
@@ -8,8 +8,8 @@ category_descriptions:
     and performance limits for Application Gateway v2 and Application Gateway for
     Containers.
   configuration: 'Configuring Application Gateway and Application Gateway for Containers:
-    listeners, routing, health probes, header/URL rewrites, diagnostics/monitoring,
-    session affinity, mTLS, Private Link, and AKS ingress settings.'
+    listeners, routing, health probes, headers, redirects, mTLS, Private Link, session
+    affinity, diagnostics, and monitoring.'
   security: Configuring TLS/SSL, certificates, mTLS, Key Vault integration, cipher
     suites, FIPS, WAF, HSTS, and secure cookie/session settings for Azure Application
     Gateway and its Containers/Ingress.
@@ -28,14 +28,14 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Application Gateway development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when configuring listeners, WAF/TLS, AKS ingress, header rewrites, or autoscaling
-  App Gateway v2/Containers, and other Azure Application Gateway related development
-  tasks. Not for Azure Front Door (use azure-front-door), Azure Load Balancer (use
-  azure-load-balancer), Azure Virtual Network (use azure-virtual-network), Azure Web
-  Application Firewall (use azure-web-application-firewall).
-use_when: Use when configuring listeners, WAF/TLS, AKS ingress, header rewrites, or
-  autoscaling App Gateway v2/Containers, and other Azure Application Gateway related
-  development tasks.
+  Use when configuring listeners, mTLS/TLS, WAF, AKS/AGIC or App Gateway for Containers,
+  and autoscaling, and other Azure Application Gateway related development tasks.
+  Not for Azure Front Door (use azure-front-door), Azure Load Balancer (use azure-load-balancer),
+  Azure Virtual Network (use azure-virtual-network), Azure Web Application Firewall
+  (use azure-web-application-firewall).
+use_when: Use when configuring listeners, mTLS/TLS, WAF, AKS/AGIC or App Gateway for
+  Containers, and autoscaling, and other Azure Application Gateway related development
+  tasks.
 confusable_not_for: Not for Azure Front Door (use azure-front-door), Azure Load Balancer
   (use azure-load-balancer), Azure Virtual Network (use azure-virtual-network), Azure
   Web Application Firewall (use azure-web-application-firewall).
@@ -52,8 +52,8 @@ confusable_not_for: Not for Azure Front Door (use azure-front-door), Azure Load 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 21
-- **Unchanged**: 158
+- **Updated Pages**: 1
+- **Unchanged**: 178
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-application-gateway/azure-application-gateway.csv`
 
@@ -76,47 +76,8 @@ confusable_not_for: Not for Azure Front Door (use azure-front-door), Azure Load 
 
 ### Updated Pages
 
-- [Host multiple sites](https://learn.microsoft.com/en-us/azure/application-gateway/create-multiple-sites-portal)
-  - Updated: 2026-02-26T08:00:00.000Z → 2026-08-03T08:00:00.000Z
-- [Route by URL](https://learn.microsoft.com/en-us/azure/application-gateway/create-url-route-portal)
-  - Updated: 2025-10-06T08:00:00.000Z → 2026-07-16T08:00:00.000Z
-- [Deploy Application Gateway with DDoS protection](https://learn.microsoft.com/en-us/azure/application-gateway/tutorial-protect-application-gateway-ddos)
-  - Updated: 2026-02-26T08:00:00.000Z → 2026-08-04T08:00:00.000Z
-- [Configure Key Vault - Portal](https://learn.microsoft.com/en-us/azure/application-gateway/configure-key-vault-portal)
-  - Updated: 2026-07-16T08:00:00.000Z → 2026-08-04T08:00:00.000Z
-- [End-to-end SSL - PowerShell](https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-end-to-end-ssl-powershell)
-  - Updated: 2022-10-20T11:15:00.000Z → 2026-07-16T08:00:00.000Z
-- [Configure SSL policy](https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-configure-ssl-policy-powershell)
-  - Updated: 2025-07-15T11:09:00.000Z → 2026-08-04T17:21:00.000Z
-- [Listener specific SSL policy](https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-configure-listener-specific-ssl-policy)
-  - Updated: 2025-07-16T22:08:00.000Z → 2026-08-03T22:12:00.000Z
-- [Application Gateway for Containers components](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/application-gateway-for-containers-components)
-  - Updated: 2026-06-05T08:00:00.000Z → 2026-08-04T22:41:00.000Z
-- [Frequently Asked Questions (FAQ)](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/faq)
-  - Updated: 2026-07-07T17:13:00.000Z → 2026-08-03T05:10:00.000Z
-- [Create Application Gateway - Portal](https://learn.microsoft.com/en-us/azure/application-gateway/quick-create-portal)
-  - Updated: 2026-03-04T23:27:00.000Z → 2026-08-04T08:00:00.000Z
-- [Create Application Gateway - PowerShell](https://learn.microsoft.com/en-us/azure/application-gateway/quick-create-powershell)
-  - Updated: 2025-08-22T22:10:00.000Z → 2026-08-04T08:00:00.000Z
-- [Application Gateway components](https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-components)
-  - Updated: 2025-05-21T08:00:00.000Z → 2026-07-16T08:00:00.000Z
-- [Infrastructure](https://learn.microsoft.com/en-us/azure/application-gateway/configuration-infrastructure)
-  - Updated: 2025-09-05T08:00:00.000Z → 2026-08-04T08:00:00.000Z
-- [Rewrite HTTP headers and URL](https://learn.microsoft.com/en-us/azure/application-gateway/rewrite-http-headers-url)
-  - Updated: 2025-12-09T08:00:00.000Z → 2026-08-05T17:12:00.000Z
-- [Secure with SSL](https://learn.microsoft.com/en-us/azure/application-gateway/create-ssl-portal)
-  - Updated: 2026-02-26T08:00:00.000Z → 2026-08-03T22:12:00.000Z
-- [Azure portal](https://learn.microsoft.com/en-us/azure/application-gateway/ipv6-application-gateway-portal)
-  - Updated: 2026-03-18T06:15:00.000Z → 2026-08-04T08:00:00.000Z
-- [Azure PowerShell](https://learn.microsoft.com/en-us/azure/application-gateway/add-http-header-rewrite-rule-powershell)
-  - Updated: 2025-07-15T22:19:00.000Z → 2026-08-03T08:00:00.000Z
-- [Resource Manager PowerShell](https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-create-probe-ps)
-  - Updated: 2023-04-09T00:00:00.000Z → 2026-08-04T17:21:00.000Z
-- [Deploy Application Gateway Basic](https://learn.microsoft.com/en-us/azure/application-gateway/deploy-basic-portal)
-  - Updated: 2026-02-26T08:00:00.000Z → 2026-08-04T08:00:00.000Z
-- [Migrate from v1 to v2](https://learn.microsoft.com/en-us/azure/application-gateway/migrate-v1-v2)
-  - Updated: 2026-04-30T08:00:00.000Z → 2026-08-04T08:00:00.000Z
-- *...and 1 more*
+- [Monitoring data reference](https://learn.microsoft.com/en-us/azure/application-gateway/monitor-application-gateway-reference)
+  - Updated: 2025-11-04T08:00:00.000Z → 2026-07-13T08:00:00.000Z
 
 ## Classified Pages
 
@@ -130,7 +91,6 @@ confusable_not_for: Not for Azure Front Door (use azure-front-door), Azure Load 
 | [Mutual authentication - PowerShell](https://learn.microsoft.com/en-us/azure/application-gateway/mutual-authentication-powershell) | security | 0.82 | PowerShell instructions for mutual authentication, including certificate management and listener configuration; these are concrete security settings and parameters. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/application-gateway/hsts-http-headers-portal) | security | 0.80 | Shows how to configure HSTS via Header Rewrite on v2 SKU, including HSTS policy behavior and security implications; product-specific security configuration. |
 | [JSON Web Token (JWT) Configuration](https://learn.microsoft.com/en-us/azure/application-gateway/json-web-token-overview) | security | 0.80 | Explains how Application Gateway validates JWTs from Microsoft Entra ID and enforces auth policies; includes product-specific security configuration and token handling behavior. |
-| [Monitoring data reference](https://learn.microsoft.com/en-us/azure/application-gateway/monitor-application-gateway-reference) | configuration | 0.80 | Contains detailed reference for metrics, logs, and diagnostic settings (names, dimensions, categories) specific to Application Gateway monitoring. |
 | [SIEM integration with Sentinel](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/siem-integration-with-sentinel) | integrations | 0.80 | Describes specific data connectors, configuration steps, and log types for SIEM integration between AGC and Sentinel/Defender. |
 | [Session affinity](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/session-affinity) | configuration | 0.80 | Explains cookie behavior, configuration options, and constraints for sticky sessions in AGC, which are product-specific settings. |
 | [TLS policy](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/tls-policy) | security | 0.80 | Lists predefined TLS policies, protocol versions, and cipher suites, and how to select them to meet compliance requirements. |
@@ -183,6 +143,7 @@ confusable_not_for: Not for Azure Front Door (use azure-front-door), Azure Load 
 | [Migrate from AGIC to Application Gateway for Containers](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/migrate-from-agic-to-agc) | decision-making | 0.70 | Migration overview between AGIC and Application Gateway for Containers; migration docs usually include scenario-based guidance and trade-offs for when and how to move, which fits decision-making and contains product-specific migration considerations. |
 | [Migrate from v1 to v2](https://learn.microsoft.com/en-us/azure/application-gateway/migrate-v1-v2) | decision-making | 0.70 | Migration article between V1 and V2 with staged configuration and traffic migration using specific scripts; this is explicit migration/upgrade guidance between SKUs, a form of decision-making and transition planning with product-specific steps and considerations. |
 | [Migration FAQ](https://learn.microsoft.com/en-us/azure/application-gateway/retirement-faq) | decision-making | 0.70 | Includes detailed retirement timeline, what happens after retirement, and guidance on when and how to migrate to V2; these time-bound, product-specific details support concrete migration and planning decisions. |
+| [Monitoring data reference](https://learn.microsoft.com/en-us/azure/application-gateway/monitor-application-gateway-reference) | configuration | 0.70 | Monitoring reference pages for Azure services typically list all available metrics, dimensions, log categories, and diagnostic settings with exact names, units, and sometimes default behaviors. These are product-specific configuration details (e.g., metric names, log categories, diagnostic table names) that an LLM is unlikely to fully know from training and are needed to correctly configure monitoring and alerts, so this best fits the configuration sub-skill. |
 | [Mutual authentication](https://learn.microsoft.com/en-us/azure/application-gateway/mutual-authentication-overview) | security | 0.70 | Mutual authentication overview for Application Gateway is security-focused and likely includes product-specific TLS/mTLS configuration modes (strict vs passthrough), certificate requirements, and possibly specific parameters, which are concrete security configuration details. |
 | [Mutual authentication - Template](https://learn.microsoft.com/en-us/azure/application-gateway/mutual-authentication-arm-template) | configuration | 0.70 | The page is an ARM template-based quickstart that defines specific resource properties and configuration fields for enabling mutual TLS passthrough on Azure Application Gateway using a particular API version. It includes product-specific configuration details (template schema, resource types, and property names/values) that go beyond generic knowledge and are needed to correctly configure mTLS behavior, fitting the configuration sub-skill. |
 | [Path, header, and query string based routing](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/how-to-path-header-query-string-routing-gateway-api) | configuration | 0.70 | Routing based on path, headers, and query strings will include concrete rule definitions, field names, and allowed patterns in Gateway API resources, which are product-specific configuration details. |

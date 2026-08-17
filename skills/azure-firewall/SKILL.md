@@ -1,9 +1,9 @@
 ---
 name: azure-firewall
-description: Expert knowledge for Azure Firewall development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring TLS inspection, DNAT/SNAT, DNS proxy, hub-spoke routing, or SFTP to Azure Storage, and other Azure Firewall related development tasks. Not for Azure DDoS Protection (use azure-ddos-protection), Azure Web Application Firewall (use azure-web-application-firewall), Azure Virtual Network (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager).
+description: Expert knowledge for Azure Firewall development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring Azure Firewall SKUs, DNAT/SNAT rules, TLS inspection, DNS proxy, or hub-and-spoke architectures, and other Azure Firewall related development tasks. Not for Azure Application Gateway (use azure-application-gateway), Azure Web Application Firewall (use azure-web-application-firewall), Azure Virtual Network (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-09"
+  generated_at: "2026-08-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Firewall Skill
@@ -25,11 +25,11 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L37-L42 | Diagnosing Azure Firewall issues using known limitations, packet captures, and Sentinel log analysis for malware detection and traffic investigation. |
-| Best Practices | L43-L49 | Best practices for Azure Firewall DNS proxy/caching, rule and SNAT tuning, using Policy Analytics to refine rules, and hardening firewall security and configuration |
-| Decision Making | L50-L58 | Guidance on choosing Azure Firewall SKUs (Basic/Standard/Premium), comparing features and performance, and deploying or switching SKUs based on requirements. |
-| Architecture & Design Patterns | L59-L70 | Designing Azure Firewall network architectures: hub-and-spoke, forced tunneling, load balancer integration, hybrid/AVD/M365 protection, and DNAT for overlapping/private IP networks. |
-| Limits & Quotas | L71-L80 | Azure Firewall capacity, IP and SNAT port limits, prescaling options, TCP idle timeouts, and how to scale/extend outbound connectivity (including via NAT Gateway V2). |
-| Security | L81-L94 | Azure Firewall security setup: compliance, RBAC/permissions, Azure Policy, TLS inspection and CA chains, threat intel, DNAT, AKS and hybrid network protection, and portal deployment. |
+| Best Practices | L43-L48 | Best practices for Azure Firewall DNS proxy/caching, rule and SNAT tuning, using Policy Analytics to refine rules, and hardening firewall security and configuration |
+| Decision Making | L49-L57 | Guidance on choosing Azure Firewall SKUs (Basic/Standard/Premium), comparing features and performance, and deploying or switching SKUs based on requirements. |
+| Architecture & Design Patterns | L58-L69 | Designing Azure Firewall network architectures: hub-and-spoke, forced tunneling, load balancer integration, hybrid/AVD/M365 protection, and DNAT for overlapping/private IP networks. |
+| Limits & Quotas | L70-L79 | Azure Firewall capacity, IP and SNAT port limits, prescaling options, TCP idle timeouts, and how to scale/extend outbound connectivity (including via NAT Gateway V2). |
+| Security | L80-L94 | Security hardening for Azure Firewall: compliance, RBAC and policy, TLS inspection and CA chains, threat intel, DNAT, hybrid/AKS protection, and deployment best practices. |
 | Configuration | L95-L118 | Configuring Azure Firewall features: rules, policies, IP groups, DNAT/SNAT, DNS, HTTP headers, explicit proxy, IPv6, logging/monitoring, advanced/Premium options, and PowerShell-based management. |
 | Integrations & Coding Patterns | L119-L123 | Configuring Azure Firewall to securely access Azure Storage via SFTP, including required rules, network paths, and integration patterns for SFTP traffic. |
 | Deployment | L124-L131 | How to deploy Azure Firewall (including Premium) with IP Groups using Bicep/ARM/Terraform, and integrate with Azure DDoS Protection, including basic configuration steps |
@@ -45,7 +45,6 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Understand Azure Firewall DNS proxy behavior and caching | https://learn.microsoft.com/en-us/azure/firewall/dns-details |
 | Optimize Azure Firewall performance with rule and SNAT tuning | https://learn.microsoft.com/en-us/azure/firewall/firewall-best-practices |
-| Apply security best practices to Azure Firewall | https://learn.microsoft.com/en-us/azure/firewall/secure-firewall |
 
 ### Decision Making
 | Topic | URL |
@@ -87,6 +86,7 @@ This skill requires **network access** to fetch documentation content:
 | Deploy Enterprise CA chain for Azure Firewall Premium | https://learn.microsoft.com/en-us/azure/firewall/premium-deploy-certificates-enterprise-ca |
 | Protect AKS clusters using Azure Firewall | https://learn.microsoft.com/en-us/azure/firewall/protect-azure-kubernetes-service |
 | Azure Firewall roles, permissions, and required access | https://learn.microsoft.com/en-us/azure/firewall/roles-permissions |
+| Apply security best practices to Azure Firewall | https://learn.microsoft.com/en-us/azure/firewall/secure-firewall |
 | Configure Azure Firewall threat intelligence filtering | https://learn.microsoft.com/en-us/azure/firewall/threat-intel |
 | Deploy and configure Azure Firewall in portal | https://learn.microsoft.com/en-us/azure/firewall/tutorial-firewall-deploy-portal |
 | Configure Azure Firewall DNAT for inbound filtering | https://learn.microsoft.com/en-us/azure/firewall/tutorial-firewall-dnat |

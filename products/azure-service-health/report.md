@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-05'
+generated_at: '2026-08-16'
 category_descriptions:
   integrations: Using APIs, Resource Graph, webhooks, and connectors (OpsGenie, PagerDuty,
     ServiceNow) to programmatically access, query, and route Azure Service Health
@@ -41,8 +41,8 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 49
+- **Updated Pages**: 1
+- **Unchanged**: 48
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-health/azure-service-health.csv`
 
@@ -59,6 +59,11 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 | *(Unclassified)* | 28 | 57.1% |
 
 ## Changes
+
+### Updated Pages
+
+- [Planned maintenance overview](https://learn.microsoft.com/en-us/azure/service-health/service-health-planned-maintenance)
+  - Updated: 2026-04-20T08:00:00.000Z → 2026-08-13T08:00:00.000Z
 
 ## Classified Pages
 
@@ -108,13 +113,13 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 | [Impacted Resources from Azure security advisories](https://learn.microsoft.com/en-us/azure/service-health/impacted-resources-security) | 0.20 | Describes feature for viewing impacted resources from security advisories and phased rollout; no detailed security configuration, limits, or troubleshooting mappings. |
 | [Impacted Resources from Service issues](https://learn.microsoft.com/en-us/azure/service-health/impacted-resources-outage) | 0.20 | Explains where to see impacted resources during service issues; appears procedural/UX-focused without numeric limits, config parameters, or error codes. |
 | [Impacted Resources from planned maintenance events](https://learn.microsoft.com/en-us/azure/service-health/impacted-resources-planned-maintenance) | 0.20 | Describes where to view impacted resources for planned maintenance; appears to be UI/experience explanation without expert-only numeric or config details. |
+| [Planned maintenance overview](https://learn.microsoft.com/en-us/azure/service-health/service-health-planned-maintenance) | 0.20 | Page is an overview of the Planned maintenance pane in Azure Service Health; based on the summary it describes purpose and high-level behavior without specific limits, configuration tables, error codes, or detailed decision matrices. It appears conceptual/UX-oriented rather than containing product-specific numeric limits, configuration parameters, or troubleshooting mappings. |
 | [Resource Health FAQ](https://learn.microsoft.com/en-us/azure/service-health/resource-health-faq) | 0.20 | FAQ-style overview about Azure Resource Health; primarily conceptual explanations of statuses and behavior without detailed limits, configuration tables, error-code mappings, or other product-specific expert data that meet the defined sub-skill criteria. |
 | [Service Health FAQ](https://learn.microsoft.com/en-us/azure/service-health/service-health-faq) | 0.20 | FAQ-style overview for Azure Service Health; focuses on general behavior and usage, not on numeric limits, configuration matrices, detailed troubleshooting mappings, or other expert-only data required by the sub-skill categories. |
 | [Service Health event tags](https://learn.microsoft.com/en-us/azure/service-health/service-health-event-tags) | 0.20 | Describes event tags, levels, and subtypes conceptually; no specific configuration values, limits, or decision matrices with thresholds. |
 | [Service Health notifications overview](https://learn.microsoft.com/en-us/azure/service-health/service-health-notifications-properties) | 0.20 | High-level overview of Azure Service Health notifications and where they appear; no specific limits, configuration parameters, error codes, or decision matrices. |
 | [Azure Service Health overview](https://learn.microsoft.com/en-us/azure/service-health/overview) | 0.10 | High-level overview of Azure Service Health; no detailed limits, configs, roles, or error mappings. |
 | [Health advisories overview](https://learn.microsoft.com/en-us/azure/service-health/service-health-advisories) | 0.10 | Describes the Health advisories pane and types of information it shows; appears to be conceptual guidance without detailed configuration, limits, or troubleshooting content. |
-| [Planned maintenance overview](https://learn.microsoft.com/en-us/azure/service-health/service-health-planned-maintenance) | 0.10 | Planned maintenance pane overview describing purpose and information shown; no specific numeric limits, configuration options, or decision criteria are indicated. |
 | [Resource Health overview](https://learn.microsoft.com/en-us/azure/service-health/resource-health-overview) | 0.10 | Conceptual overview of Resource Health; no specific error codes, configs, or limits. |
 | [Service issues overview](https://learn.microsoft.com/en-us/azure/service-health/service-issues-blade) | 0.10 | Explains how to view and interpret the Service issues pane; appears to be a conceptual/UX overview without product-specific limits, configuration tables, or troubleshooting mappings. |
 | [What's new](https://learn.microsoft.com/en-us/azure/service-health/whats-new) | 0.10 | What's new/change log style content describing new features; lacks detailed configuration parameters, limits, error codes, or decision matrices. |

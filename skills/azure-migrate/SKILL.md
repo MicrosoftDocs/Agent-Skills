@@ -1,9 +1,9 @@
 ---
 name: azure-migrate
-description: Expert knowledge for Azure Migrate development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring Azure Migrate appliances, Arc/AMA, AppCAT/.NET assessments, VMware agentless replication, or Resource Mover, and other Azure Migrate related development tasks. Not for Azure Database Migration service (use azure-database-migration), Azure Site Recovery (use azure-site-recovery), Azure Virtual Machines (use azure-virtual-machines), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines).
+description: Expert knowledge for Azure Migrate development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring Azure Migrate projects/appliances, VMware/Hyper-V discovery, SQL/PostgreSQL assessments, AppCAT, or Resource Mover, and other Azure Migrate related development tasks. Not for Azure Database Migration Service (use azure-database-migration), Azure Site Recovery (use azure-site-recovery), Azure Backup (use azure-backup).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-26"
+  generated_at: "2026-08-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Migrate Skill
@@ -30,9 +30,9 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L106-L111 | Architecture and data flow for Azure Migrate using Arc-based discovery and Hyper-V, including components, connectivity, prerequisites, and how discovery/inventory works. |
 | Limits & Quotas | L112-L125 | Limits, prerequisites, region support, and scale guidance for Azure Migrate appliances and discovery/migration of VMware, Hyper-V, and physical servers. |
 | Security | L126-L139 | Securing Azure Migrate: least-privilege roles/accounts, Private Link discovery/migration, encrypted VM moves, Trusted Launch, RBAC, and Entra ID app registration. |
-| Configuration | L140-L163 | Configuring Azure Migrate and related tools: assessment settings (VM, SQL, PostgreSQL, .NET/AppCAT), appliances, Arc/AMA, private endpoints, landing zones, and Resource Mover destination options. |
-| Integrations & Coding Patterns | L164-L169 | Patterns and tools for integrating code analysis and automation into Azure Migrate, including GitHub Copilot insights, AppCAT CLI, CAST Highlight scans, and REST-based VMware migration. |
-| Deployment | L170-L180 | Guides for deploying Azure Migrate appliances, preparing legacy servers, automating deployments with PowerShell/DevOps, and moving Azure/SQL resources between regions and governments. |
+| Configuration | L140-L164 | Configuring Azure Migrate projects, appliances, assessments, Arc/AMA, private networking, and Resource Mover settings, including credentials, metadata, SQL/PostgreSQL/VM assessment options, and policy/landing zone setup. |
+| Integrations & Coding Patterns | L165-L170 | Patterns and tools for integrating code analysis and automation into Azure Migrate, including GitHub Copilot insights, AppCAT CLI, CAST Highlight scans, and REST-based VMware migration. |
+| Deployment | L171-L181 | Guides for deploying Azure Migrate appliances, preparing legacy servers, configuring DevOps pipelines, and planning/executing cross-region VM and SQL moves with supported resource types. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -140,6 +140,7 @@ This skill requires **network access** to fetch documentation content:
 ### Configuration
 | Topic | URL |
 |-------|-----|
+| Configure Azure Migrate appliance server credentials | https://learn.microsoft.com/en-us/azure/migrate/add-server-credentials?view=migrate |
 | Use AppCAT 7 CLI commands and options | https://learn.microsoft.com/en-us/azure/migrate/appcat/appcat-7-cli-guide?view=migrate |
 | Configure AppCAT for .NET application migration assessments | https://learn.microsoft.com/en-us/azure/migrate/appcat/dotnet?view=migrate |
 | Meet Azure Migrate assessment prerequisites and settings | https://learn.microsoft.com/en-us/azure/migrate/assessment-prerequisites?view=migrate |
@@ -176,5 +177,5 @@ This skill requires **network access** to fetch documentation content:
 | Prepare Windows Server 2003 for Azure Migrate | https://learn.microsoft.com/en-us/azure/migrate/prepare-windows-server-2003-migration?view=migrate |
 | Configure Azure DevOps pipelines for containerized apps | https://learn.microsoft.com/en-us/azure/migrate/tutorial-app-containerization-azure-pipeline?view=migrate |
 | Supported extension resource types in Azure Resource Mover | https://learn.microsoft.com/en-us/azure/resource-mover/support-matrix-extension-resource-types |
-| Check regional move support for Azure VMs | https://learn.microsoft.com/en-us/azure/resource-mover/support-matrix-move-region-azure-vm |
+| Check support matrix for cross-region Azure VM moves | https://learn.microsoft.com/en-us/azure/resource-mover/support-matrix-move-region-azure-vm |
 | Support matrix for moving Azure SQL resources between regions | https://learn.microsoft.com/en-us/azure/resource-mover/support-matrix-move-region-sql |

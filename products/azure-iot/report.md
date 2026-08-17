@@ -34,10 +34,10 @@ confusable_not_for: Not for Azure IoT Central (use azure-iot-central), Azure IoT
 - **Unclassified**: 10
 
 ### Incremental Update
-- **New Pages**: 2
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 16
-- **Deleted Pages**: 2
+- **Unchanged**: 18
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-iot/azure-iot.csv`
 
 ## Classification Statistics
@@ -50,16 +50,6 @@ confusable_not_for: Not for Azure IoT Central (use azure-iot-central), Azure IoT
 | *(Unclassified)* | 10 | 55.6% |
 
 ## Changes
-
-### New Pages
-
-- [Certificate management (preview) in Azure Device Registry](https://learn.microsoft.com/en-us/azure/iot/iot-certificate-management-overview)
-- [Key concepts for certificate management](https://learn.microsoft.com/en-us/azure/iot/iot-certificate-management-concepts)
-
-### Deleted Pages
-
-- ~~Key concepts for certificate management~~ (https://learn.microsoft.com/en-us/azure/iot/iot-hub-certificate-management-concepts)
-- ~~Certificate management (preview) in Azure Device Registry~~ (https://learn.microsoft.com/en-us/azure/iot/iot-hub-certificate-management-overview)
 
 ## Classified Pages
 

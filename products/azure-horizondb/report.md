@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-09'
+generated_at: '2026-08-16'
 category_descriptions:
   best-practices: 'Performance and operations guidance for HorizonDB: data prep for
     AI, pgvector tuning, partitioning, extensions, Apache AGE, Query Store, and cluster
@@ -17,8 +17,9 @@ category_descriptions:
     implementing hybrid BM25+vector search, including design choices and query strategies.
   limits-quotas: Managing HorizonDB replica counts, read-scale limits, and how to
     request quota or limit increases for HorizonDB resources.
-  security: 'Securing HorizonDB clusters: TLS/SSL setup, certs, SCRAM auth, roles/users,
-    admin password, deletion protection, and data-at-rest encryption configuration.'
+  security: 'Configuring HorizonDB security: TLS/SSL and certificates, SCRAM auth,
+    access control/roles, users/permissions, data-at-rest encryption, deletion protection,
+    and admin password resets.'
   troubleshooting: Diagnosing and fixing HorizonDB extension management errors and
     resolving TLS connection issues that occur after certificate rotation.
   deployment: Guides for migrating data by dumping PostgreSQL databases and restoring
@@ -26,16 +27,15 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Horizondb development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  using azure_ai SQL/embedding/rerank, pgvector tuning, Apache AGE graphs, hybrid
-  search, or HorizonDB migration, and other Azure Horizondb related development tasks.
+  tuning pgvector, azure_ai SQL functions, LangChain vector stores, Apache AGE graphs,
+  or HorizonDB search indexes, and other Azure Horizondb related development tasks.
   Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Database (use azure-sql-database),
-  Azure Table Storage (use azure-table-storage), Azure Blob Storage (use azure-blob-storage).
-use_when: Use when using azure_ai SQL/embedding/rerank, pgvector tuning, Apache AGE
-  graphs, hybrid search, or HorizonDB migration, and other Azure Horizondb related
+  Azure Table Storage (use azure-table-storage).
+use_when: Use when tuning pgvector, azure_ai SQL functions, LangChain vector stores,
+  Apache AGE graphs, or HorizonDB search indexes, and other Azure Horizondb related
   development tasks.
 confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Database
-  (use azure-sql-database), Azure Table Storage (use azure-table-storage), Azure Blob
-  Storage (use azure-blob-storage).
+  (use azure-sql-database), Azure Table Storage (use azure-table-storage).
 ---
 # Azure Horizondb Crawl Report
 
@@ -46,6 +46,13 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Dat
 - **Fetch Failed**: 0
 - **Classified**: 109
 - **Unclassified**: 35
+
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 143
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-horizondb/azure-horizondb.csv`
 
 ## Classification Statistics
 
@@ -61,6 +68,13 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Dat
 | security | 11 | 7.6% |
 | troubleshooting | 2 | 1.4% |
 | *(Unclassified)* | 35 | 24.3% |
+
+## Changes
+
+### Updated Pages
+
+- [Manage database users](https://learn.microsoft.com/en-us/azure/horizondb/security/security-manage-database-users)
+  - Updated: 2026-07-07T22:12:00.000Z → 2026-08-12T06:06:00.000Z
 
 ## Classified Pages
 
@@ -97,6 +111,7 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Dat
 | [Restore to a custom restore point](https://learn.microsoft.com/en-us/azure/horizondb/backup-restore/how-to-restore-custom-restore-point) | configuration | 0.75 | Explains PITR behavior (new server in same region, snapshot + WAL replay) with HorizonDB-specific restore process and retention-period constraints. |
 | [Update trusted root certificate for Java](https://learn.microsoft.com/en-us/azure/horizondb/security/security-update-trusted-root-java) | security | 0.75 | Guides updating Java client trusted roots for HorizonDB TLS, with product-specific certificate details and steps. |
 | [Use pg_partman](https://learn.microsoft.com/en-us/azure/horizondb/configure-maintain/how-to-use-pg-partman) | best-practices | 0.75 | Shows how to enable and use pg_partman specifically on HorizonDB, with product-specific guidance and patterns for partitioning large tables to improve performance. |
+| [Manage database users](https://learn.microsoft.com/en-us/azure/horizondb/security/security-manage-database-users) | security | 0.72 | The page is focused on creating and managing user accounts within an Azure HorizonDB cluster, which is product-specific security/identity configuration. It likely includes concrete steps, role or permission mappings, and HorizonDB-specific security behaviors that go beyond generic RBAC concepts, fitting the 'security' sub-skill. While it references Azure RBAC, the core content is about database-level users, which is detailed, product-specific security configuration. |
 | [AI functions (azure_ai)](https://learn.microsoft.com/en-us/azure/horizondb/ai/ai-functions) | integrations | 0.70 | Overview of AI functions in the azure_ai extension; likely includes specific function names, parameters, and integration patterns with Foundry models unique to HorizonDB. |
 | [AI pipelines](https://learn.microsoft.com/en-us/azure/horizondb/ai/ai-pipelines) | configuration | 0.70 | AI pipelines are defined declaratively in SQL with durable execution semantics. The page likely documents specific pipeline catalog schema, state fields, retry/scheduling parameters, and configuration options for crash recovery and checkpoints—product-specific configuration details not known from general training. |
 | [Access control](https://learn.microsoft.com/en-us/azure/horizondb/security/security-access-control) | security | 0.70 | Explains using PostgreSQL roles and Azure features for permissions. Likely includes specific role names, permission scopes, and HorizonDB-specific access patterns. |
@@ -151,7 +166,6 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Dat
 | [Version and Platform Compatibility / Previous PostgreSQL Versions](https://learn.microsoft.com/en-us/azure/horizondb/parameters/parameters-version-platform-compatibility-postgresql-versions) | configuration | 0.70 | Previous PostgreSQL Versions parameters page documents HorizonDB-specific configuration options for version compatibility, representing expert configuration knowledge. |
 | [View installed extensions](https://learn.microsoft.com/en-us/azure/horizondb/extensions/how-to-view-installed-extensions) | configuration | 0.70 | Explains how to view installed extensions and their versions, likely via HorizonDB-specific queries or portal/CLI commands. |
 | [Integrate with LLM orchestration frameworks](https://learn.microsoft.com/en-us/azure/horizondb/ai/ai-frameworks) | integrations | 0.65 | Describes integration with Microsoft Agent Framework, Semantic Kernel, LangChain, LlamaIndex, and CrewAI. The full article likely includes HorizonDB-specific connection patterns, configuration parameters, and SDK usage details. |
-| [Manage database users](https://learn.microsoft.com/en-us/azure/horizondb/security/security-manage-database-users) | security | 0.65 | Describes creating users within HorizonDB clusters, likely with specific SQL commands, required privileges, and HorizonDB-specific constraints. |
 | [Overview](https://learn.microsoft.com/en-us/azure/horizondb/ai/ai-search-overview) | decision-making | 0.65 | The article explains when and why to use vector, full-text, and hybrid search in HorizonDB and how they fit into a retrieval strategy. This is product-specific decision guidance with scenario-based recommendations for search mode selection. |
 | [Process Title](https://learn.microsoft.com/en-us/azure/horizondb/parameters/parameters-process-title) | configuration | 0.65 | Although content is gated, the page is clearly a parameter reference for 'Process Title' settings in HorizonDB, which are product-specific configuration parameters not generally known to LLMs. |
 | [Protect against accidental deletion](https://learn.microsoft.com/en-us/azure/horizondb/configure-maintain/how-to-enable-deletion-protection) | security | 0.65 | Describes using Azure Resource Manager management locks (Delete, ReadOnly) specifically for HorizonDB resources, including control-plane behavior overriding user permissions—product-specific security configuration guidance. |

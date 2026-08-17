@@ -1,9 +1,9 @@
 ---
 name: azure-dns
-description: Expert knowledge for Azure DNS development including troubleshooting, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when automating DNS zones/records, securing DNSSEC, configuring Private Resolvers, migrating Private DNS, or fixing name resolution, and other Azure DNS related development tasks. Not for Azure Traffic Manager (use azure-traffic-manager), Azure Load Balancer (use azure-load-balancer), Azure Application Gateway (use azure-application-gateway), Azure Front Door (use azure-front-door).
+description: Expert knowledge for Azure DNS development including troubleshooting, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when automating DNS zones/records, configuring Private DNS/resolvers, enabling DNSSEC, or migrating legacy zones, and other Azure DNS related development tasks. Not for Azure Traffic Manager (use azure-traffic-manager), Azure Front Door (use azure-front-door), Azure Virtual Network (use azure-virtual-network), Azure Application Gateway (use azure-application-gateway).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-09"
+  generated_at: "2026-08-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure DNS Skill
@@ -28,9 +28,9 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L40-L44 | Guidance for planning and executing migration of legacy Azure Private DNS zones to the new DNS zone model, including compatibility, steps, and considerations. |
 | Architecture & Design Patterns | L45-L50 | Designing resilient private DNS architectures in Azure, including when to use centralized vs distributed DNS Private Resolvers and how to shard Private DNS zones for high availability. |
 | Limits & Quotas | L51-L55 | DNS record, zone, and query limits for Azure DNS and Private DNS, including quotas, scaling behaviors, usage constraints, and how many zones/records you can create and manage. |
-| Security | L56-L66 | Securing Azure DNS: protecting private/public zones from deletion, configuring DNS resolver policies and threat protection, using DNSSEC, and setting access control and monitoring. |
+| Security | L56-L66 | Securing Azure DNS and Private DNS: access control, monitoring, DNSSEC (enable/remove), resolver policies, and threat protection for zones, records, and name resolution. |
 | Configuration | L67-L79 | Configuring Azure DNS behavior: reverse DNS, private DNS zones and resolvers, zone file import/export, monitoring/metrics/logs, and query/ResolutionPolicy settings for name resolution. |
-| Integrations & Coding Patterns | L80-L90 | Automating Azure DNS zone/record management and subdomain delegation with PowerShell/CLI, plus importing/exporting DNS zone files and mapping Azure services to DNS record types. |
+| Integrations & Coding Patterns | L80-L88 | Automating Azure DNS zone/record management and subdomain delegation with PowerShell/CLI, plus importing/exporting DNS zone files and mapping Azure services to DNS record types. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -57,7 +57,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Protect Azure Private DNS zones and records | https://learn.microsoft.com/en-us/azure/dns/dns-protect-private-zones-recordsets |
-| Protect Azure DNS zones and records from deletion | https://learn.microsoft.com/en-us/azure/dns/dns-protect-zones-recordsets |
+| Protect Azure DNS zones and record sets | https://learn.microsoft.com/en-us/azure/dns/dns-protect-zones-recordsets |
 | Configure DNS resolver policy and threat protection | https://learn.microsoft.com/en-us/azure/dns/dns-traffic-log-how-to |
 | Use DNSSEC zone signing with Azure Public DNS | https://learn.microsoft.com/en-us/azure/dns/dnssec |
 | Enable DNSSEC signing for Azure Public DNS zones | https://learn.microsoft.com/en-us/azure/dns/dnssec-how-to |
@@ -81,9 +81,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Delegate DNS subdomains using Azure PowerShell | https://learn.microsoft.com/en-us/azure/dns/delegate-subdomain-ps |
-| Map Azure services to DNS record types in Azure DNS | https://learn.microsoft.com/en-us/azure/dns/dns-for-azure-services |
 | Import and export DNS zone files using Azure CLI | https://learn.microsoft.com/en-us/azure/dns/dns-import-export |
-| Import and export DNS zone files via Azure portal | https://learn.microsoft.com/en-us/azure/dns/dns-import-export-portal |
 | Manage Azure DNS zones using PowerShell commands | https://learn.microsoft.com/en-us/azure/dns/dns-operations-dnszones |
 | Manage Azure DNS zones with Azure CLI | https://learn.microsoft.com/en-us/azure/dns/dns-operations-dnszones-cli |
 | Manage Azure DNS records with PowerShell | https://learn.microsoft.com/en-us/azure/dns/dns-operations-recordsets |

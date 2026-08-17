@@ -47,10 +47,10 @@ confusable_not_for: Not for Azure Content Understanding in Foundry Tools (use az
 - **Unclassified**: 32
 
 ### Incremental Update
-- **New Pages**: 16
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 34
-- **Deleted Pages**: 2
+- **Unchanged**: 50
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-content-safety/azure-content-safety.csv`
 
 ## Classification Statistics
@@ -69,30 +69,6 @@ confusable_not_for: Not for Azure Content Understanding in Foundry Tools (use az
 | *(Unclassified)* | 32 | 64.0% |
 
 ## Changes
-
-### New Pages
-
-- [Use Content Provenance Detection API](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/how-to/how-to-provenance-detection)
-- [What is Content Moderator?](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/overview)
-- [Migrate from Azure Content Moderator to Azure AI Content Safety](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/content-moderator)
-- [Language support](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/language-support)
-- [Using the client library or REST API](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/client-libraries)
-- [.NET SDK samples](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/samples-dotnet)
-- [REST API samples in C#](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/samples-rest)
-- [Check video content](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/video-moderation-api)
-- [Check images against custom lists](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/image-lists-quickstart-dotnet)
-- [Check text against custom terms](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/term-lists-quickstart-dotnet)
-- [Export or delete account data](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/export-delete-data)
-- [Use customer-managed keys](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/encrypt-data-at-rest)
-- [Image moderation](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/image-moderation-api)
-- [Text moderation](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/text-moderation-api)
-- [Content Moderator REST API](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/api-reference)
-- [Content Provenance Detection](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/concepts/provenance-detection)
-
-### Deleted Pages
-
-- ~~Provenance Detection~~ (https://learn.microsoft.com/en-us/azure/ai-services/content-safety/concepts/provenance-detection)
-- ~~Use Provenance Detection API~~ (https://learn.microsoft.com/en-us/azure/ai-services/content-safety/how-to/how-to-provenance-detection)
 
 ## Classified Pages
 

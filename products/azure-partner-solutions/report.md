@@ -44,9 +44,9 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 - **Unclassified**: 88
 
 ### Incremental Update
-- **New Pages**: 5
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 108
+- **Unchanged**: 113
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-partner-solutions/azure-partner-solutions.csv`
 
@@ -63,14 +63,6 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 | *(Unclassified)* | 88 | 77.9% |
 
 ## Changes
-
-### New Pages
-
-- [What is Napster Companion API – Azure Native Integrations?](https://learn.microsoft.com/en-us/azure/partner-solutions/napster/overview)
-- [Napster Companion API resources and developer tools](https://learn.microsoft.com/en-us/azure/partner-solutions/napster/tools)
-- [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/napster/faq)
-- [Create a Napster Companion API resource](https://learn.microsoft.com/en-us/azure/partner-solutions/napster/create)
-- [Manage your Napster Companion API resource](https://learn.microsoft.com/en-us/azure/partner-solutions/napster/manage)
 
 ## Classified Pages
 

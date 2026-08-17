@@ -39,10 +39,10 @@ confusable_not_for: Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Key Vau
 - **Unclassified**: 6
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 15
-- **Deleted Pages**: 1
+- **Unchanged**: 16
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-dedicated-hsm/azure-dedicated-hsm.csv`
 
 ## Classification Statistics
@@ -57,14 +57,6 @@ confusable_not_for: Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Key Vau
 | *(Unclassified)* | 6 | 37.5% |
 
 ## Changes
-
-### New Pages
-
-- [Migrate Dedicated HSM from ExpressRoute Basic SKU](https://learn.microsoft.com/en-us/azure/dedicated-hsm/migration-basic-standard)
-
-### Deleted Pages
-
-- ~~Migrate ExpressRoute Gateway Basic SKU public IP to Standard SKU public IP~~ (https://learn.microsoft.com/en-us/azure/dedicated-hsm/migration-basic-standard)
 
 ## Classified Pages
 
