@@ -1,9 +1,9 @@
 ---
 name: azure-microsoft-discovery
-description: Expert knowledge for Azure Microsoft Discovery development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building Discovery shared sessions, configuring workspaces/tools, integrating Docker tools via REST, or deploying ACR-based supercomputers, and other Azure Microsoft Discovery related development tasks.
+description: Expert knowledge for Azure Microsoft Discovery development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing Discovery shared sessions, ACR tool images, REST jobs, supercomputer provisioning, or Log Analytics queries, and other Azure Microsoft Discovery related development tasks.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-16"
+  generated_at: "2026-08-31"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Microsoft Discovery Skill
@@ -29,10 +29,10 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L50-L57 | Guidance on selecting ACR setup, agent types, pricing/billing, and suitable AI models to design and configure Microsoft Discovery agents effectively. |
 | Architecture & Design Patterns | L58-L62 | Designing and implementing advanced shared session patterns in Discovery Engine, including multi-user session management, data sharing, and scalable architecture best practices. |
 | Limits & Quotas | L63-L68 | Planning capacity and Azure quotas for Microsoft Discovery deployments, plus required naming conventions and rules for Discovery resources. |
-| Security | L69-L83 | Security, encryption, RBAC, managed identities, private networking, supercomputer network hardening, and audit logging for Microsoft Discovery resources. |
-| Configuration | L84-L104 | Configuring Discovery workspaces, storage, tools, supercomputers, and data handling, plus querying operational, indexing, and activity logs via Log Analytics and Kusto. |
-| Integrations & Coding Patterns | L105-L112 | Patterns and APIs for integrating tools/models into Discovery workflows, including Docker-based packaging, REST job execution, and action script implementation for action-based tools. |
-| Deployment | L113-L119 | Deploying Discovery infrastructure and tools: network-hardened stacks, Bicep-based deployments, REST provisioning of supercomputer resources, and publishing tool images to Azure Container Registry. |
+| Security | L69-L84 | Security and compliance for Discovery: encryption at rest, customer-managed keys, RBAC/persona roles, managed identities, network hardening, secure supercomputer access, and audit logging. |
+| Configuration | L85-L105 | Configuring Discovery workspaces, storage, tools, supercomputers, and data handling, plus querying operational, indexing, and activity logs via Log Analytics and Kusto. |
+| Integrations & Coding Patterns | L106-L113 | Patterns and APIs for integrating tools/models into Discovery workflows, including Docker-based packaging, REST job execution, and action script implementation for action-based tools. |
+| Deployment | L114-L119 | Deploying Discovery infrastructure and tools: network-hardened stacks, Bicep-based deployments, REST provisioning of supercomputer resources, and publishing tool images to Azure Container Registry. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -76,8 +76,9 @@ This skill requires **network access** to fetch documentation content:
 | Configure RBAC role assignments for Microsoft Discovery | https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-role-assignments |
 | Assign Microsoft Discovery persona RBAC roles via PowerShell | https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-assign-persona-roles |
 | Configure user-assigned managed identities for Discovery | https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-configure-managed-identity |
-| Configure network security and private access for Discovery | https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-configure-network-security |
+| Configure network security for Microsoft Discovery workspaces | https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-configure-network-security |
 | Configure secure networking for Discovery supercomputers | https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-configure-supercomputer-network-security |
+| Deploy a fully network-hardened Microsoft Discovery stack | https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-deploy-network-hardened-stack |
 | Enable and export audit logs for Discovery resources | https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-enable-audit-logging |
 | Configure customer-managed keys for Discovery resources | https://learn.microsoft.com/en-us/azure/microsoft-discovery/howto-data-encryption-at-rest |
 
@@ -113,7 +114,6 @@ This skill requires **network access** to fetch documentation content:
 ### Deployment
 | Topic | URL |
 |-------|-----|
-| Deploy a fully network-hardened Microsoft Discovery stack | https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-deploy-network-hardened-stack |
 | Deploy and register tools to Microsoft Discovery | https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-deploy-tool-to-discovery |
 | Provision Discovery Supercomputer infrastructure via REST API | https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-manage-supercomputers-rest-api |
 | Publish Discovery tool images to Azure Container Registry | https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-publish-tool-to-acr |

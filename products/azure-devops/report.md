@@ -1,18 +1,18 @@
 ---
-generated_at: '2026-08-16'
+generated_at: '2026-08-31'
 category_descriptions:
   architecture-patterns: 'Architectural guidance for Azure DevOps/Server: pool architecture,
     reliability/DR, SQL/database dependencies, and design patterns for simple to complex
     multi-server topologies and analytics modeling.'
-  configuration: 'Configuring Azure DevOps/Server: managed pools (VMs, networking,
-    scaling), notifications, work item/process customization, Analytics/OData, dashboards,
-    backups, services, SQL, and server admin settings.'
+  configuration: 'Configuring Azure DevOps/Server: managed pools (VMs, scaling, networking,
+    storage), notifications, auditing, boards/work items, analytics/OData, dashboards,
+    backups, services, and SQL/server settings.'
   security: Configuring authentication, authorization, identities, permissions, roles,
     groups, and auditing for secure access to Azure DevOps organizations, projects,
     repos, pipelines, analytics, and servers.
-  troubleshooting: 'Diagnosing and fixing Azure DevOps issues: Managed DevOps Pools,
-    MCP servers, performance, notifications/email, connectivity/IP allowlists, permissions,
-    wikis restore, Analytics/Power BI, and upgrades.'
+  troubleshooting: 'Diagnosing and fixing Azure DevOps issues: pools/MCP servers,
+    performance, notifications/email, connectivity/permissions, wikis, dashboards/analytics,
+    and server upgrades.'
   limits-quotas: 'Limits, quotas, and constraints in Azure DevOps: org/project naming,
     images, deletes/retention/recovery, work item/wiki/portfolio limits, dashboards,
     pipelines size limits, and Analytics data availability'
@@ -31,13 +31,12 @@ category_descriptions:
 skill_description: Expert knowledge for Azure DevOps development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  managing agent pools, pipelines, work item tracking, Analytics/OData/Power BI, or
-  Azure DevOps Server deployments, and other Azure DevOps related development tasks.
-  Not for Azure Boards (use azure-boards), Azure Pipelines (use azure-pipelines),
-  Azure Repos (use azure-repos), Azure Test Plans (use azure-test-plans).
-use_when: Use when managing agent pools, pipelines, work item tracking, Analytics/OData/Power
-  BI, or Azure DevOps Server deployments, and other Azure DevOps related development
-  tasks.
+  managing agent pools, boards/work items, analytics/OData, pipelines, or Azure DevOps
+  Server deployments, and other Azure DevOps related development tasks. Not for Azure
+  Boards (use azure-boards), Azure Pipelines (use azure-pipelines), Azure Repos (use
+  azure-repos), Azure Test Plans (use azure-test-plans).
+use_when: Use when managing agent pools, boards/work items, analytics/OData, pipelines,
+  or Azure DevOps Server deployments, and other Azure DevOps related development tasks.
 confusable_not_for: Not for Azure Boards (use azure-boards), Azure Pipelines (use
   azure-pipelines), Azure Repos (use azure-repos), Azure Test Plans (use azure-test-plans).
 ---
@@ -45,16 +44,16 @@ confusable_not_for: Not for Azure Boards (use azure-boards), Azure Pipelines (us
 
 ## Summary
 
-- **Total Pages**: 986
-- **Fetched**: 986
+- **Total Pages**: 990
+- **Fetched**: 990
 - **Fetch Failed**: 0
-- **Classified**: 253
-- **Unclassified**: 733
+- **Classified**: 256
+- **Unclassified**: 734
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 9
-- **Unchanged**: 977
+- **New Pages**: 4
+- **Updated Pages**: 7
+- **Unchanged**: 979
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-devops/azure-devops.csv`
 
@@ -64,37 +63,40 @@ confusable_not_for: Not for Azure Boards (use azure-boards), Azure Pipelines (us
 |------|-------|------------|
 | architecture-patterns | 8 | 0.8% |
 | best-practices | 12 | 1.2% |
-| configuration | 71 | 7.2% |
+| configuration | 74 | 7.5% |
 | decision-making | 14 | 1.4% |
 | deployment | 29 | 2.9% |
-| integrations | 41 | 4.2% |
+| integrations | 40 | 4.0% |
 | limits-quotas | 12 | 1.2% |
 | security | 53 | 5.4% |
-| troubleshooting | 13 | 1.3% |
-| *(Unclassified)* | 733 | 74.3% |
+| troubleshooting | 14 | 1.4% |
+| *(Unclassified)* | 734 | 74.1% |
 
 ## Changes
 
+### New Pages
+
+- [August 20](https://learn.microsoft.com/en-us/azure/devops/release-notes/2026/sprint-278-update)
+- [August 20](https://learn.microsoft.com/en-us/azure/devops/release-notes/2026/pipelines/sprint-278-update)
+- [August 20](https://learn.microsoft.com/en-us/azure/devops/release-notes/2026/general/sprint-278-update)
+- [August 20](https://learn.microsoft.com/en-us/azure/devops/release-notes/2026/wiki/sprint-278-update)
+
 ### Updated Pages
 
-- [Overview](https://learn.microsoft.com/en-us/azure/devops/mcp-server/mcp-server-overview?view=azure-devops)
-  - Updated: 2026-07-31T22:05:00.000Z → 2026-08-12T22:03:00.000Z
 - [Remote MCP Server](https://learn.microsoft.com/en-us/azure/devops/mcp-server/remote-mcp-server?view=azure-devops)
-  - Updated: 2026-08-05T18:06:00.000Z → 2026-08-12T08:00:00.000Z
-- [How email recipients are determined](https://learn.microsoft.com/en-us/azure/devops/organizations/notifications/concepts-email-recipients?view=azure-devops)
-  - Updated: 2025-07-15T16:57:00.000Z → 2026-08-13T22:02:00.000Z
+  - Updated: 2026-08-12T08:00:00.000Z → 2026-08-28T18:04:00.000Z
+- [Create audit streaming](https://learn.microsoft.com/en-us/azure/devops/organizations/audit/auditing-streaming?view=azure-devops)
+  - Updated: 2025-12-01T22:03:00.000Z → 2026-08-21T22:05:00.000Z
+- [About notifications](https://learn.microsoft.com/en-us/azure/devops/organizations/notifications/about-notifications?view=azure-devops)
+  - Updated: 2026-02-17T08:00:00.000Z → 2026-08-19T08:00:00.000Z
 - [Manage team, group, Global notifications](https://learn.microsoft.com/en-us/azure/devops/organizations/notifications/manage-team-group-global-organization-notifications?view=azure-devops)
-  - Updated: 2026-03-04T02:02:00.000Z → 2026-08-13T22:02:00.000Z
-- [Troubleshoot notification emails](https://learn.microsoft.com/en-us/azure/devops/organizations/notifications/troubleshoot-not-getting-email?view=azure-devops)
-  - Updated: 2026-04-22T21:02:00.000Z → 2026-08-13T22:02:00.000Z
-- [RTW Release Notes](https://learn.microsoft.com/en-us/azure/devops/server/release-notes/azuredevopsserver?view=azure-devops)
-  - Updated: 2026-07-21T08:00:00.000Z → 2026-08-11T08:00:00.000Z
-- [SHA-256 Values](https://learn.microsoft.com/en-us/azure/devops/server/release-notes/azuredevopsserver-sha?view=azure-devops)
-  - Updated: 2026-07-21T19:02:00.000Z → 2026-08-11T18:33:00.000Z
-- [Update 2 Release Notes](https://learn.microsoft.com/en-us/azure/devops/server/release-notes/azuredevops2022u2?view=azure-devops)
-  - Updated: 2026-07-21T08:00:00.000Z → 2026-08-11T08:00:00.000Z
-- [SHA-256 Values](https://learn.microsoft.com/en-us/azure/devops/server/release-notes/azuredevops2022-sha?view=azure-devops)
-  - Updated: 2026-06-21T08:00:00.000Z → 2026-08-11T08:00:00.000Z
+  - Updated: 2026-08-13T22:02:00.000Z → 2026-08-19T08:00:00.000Z
+- [Add & edit wiki pages](https://learn.microsoft.com/en-us/azure/devops/project/wiki/add-edit-wiki?view=azure-devops)
+  - Updated: 2026-02-20T02:04:00.000Z → 2026-08-20T08:00:00.000Z
+- [Released features](https://learn.microsoft.com/en-us/azure/devops/release-notes/features-timeline-released)
+  - Updated: 2026-07-30T08:00:00.000Z → 2026-08-19T08:00:00.000Z
+- [FAQs](https://learn.microsoft.com/en-us/azure/devops/report/dashboards/faqs?view=azure-devops)
+  - Updated: 2026-04-22T21:02:00.000Z → 2026-08-24T22:05:00.000Z
 
 ## Classified Pages
 
@@ -226,7 +228,7 @@ confusable_not_for: Not for Azure Boards (use azure-boards), Azure Pipelines (us
 | [Configure networking](https://learn.microsoft.com/en-us/azure/devops/managed-devops-pools/configure-networking?view=azure-devops) | configuration | 0.70 | Networking setup for Managed DevOps Pools is product-specific configuration. Likely includes VNet/subnet requirements, IP ranges, NSG rules, and other concrete parameters unique to this service. |
 | [Connect using the OData feed](https://learn.microsoft.com/en-us/azure/devops/report/powerbi/access-analytics-power-bi?view=azure-devops) | integrations | 0.70 | Describes using the OData feed with Azure DevOps Analytics, including behavior like always pulling all data and client-side filtering, which is specific to this integration. |
 | [Construct OData queries](https://learn.microsoft.com/en-us/azure/devops/report/analytics/analytics-query-parts?view=azure-devops) | integrations | 0.70 | Describes detailed OData query URL structure, metadata, entity sets, and query options specific to Azure DevOps Analytics. This is product-specific API/query pattern knowledge beyond generic OData concepts, fitting integrations & coding patterns. |
-| [Create audit streaming](https://learn.microsoft.com/en-us/azure/devops/organizations/audit/auditing-streaming?view=azure-devops) | integrations | 0.70 | Describes creating audit streams to external tools with product-specific integration behavior and constraints (e.g., 90-day default retention). |
+| [Create audit streaming](https://learn.microsoft.com/en-us/azure/devops/organizations/audit/auditing-streaming?view=azure-devops) | configuration | 0.70 | The page describes how to create and enable an audit stream from Azure DevOps to external systems (such as SIEM tools) and mentions product-specific behavior like the default 90-day audit data retention and how streaming allows storing more than that. It focuses on concrete configuration steps and options for audit streaming rather than conceptual overview, matching the configuration sub-skill. |
 | [Cumulative flow & lead/cycle time guidance](https://learn.microsoft.com/en-us/azure/devops/report/dashboards/cumulative-flow-cycle-lead-time-guidance?view=azure-devops) | best-practices | 0.70 | Provides guidance on using CFDs and time metrics to identify issues and improve workflow; includes Azure DevOps-specific usage patterns and actionable recommendations. |
 | [Data location (cloud)](https://learn.microsoft.com/en-us/azure/devops/organizations/security/data-location?view=azure-devops) | security | 0.70 | Contains product-specific details on where Azure DevOps customer and profile data is stored by region and under what conditions data may be transferred outside the selected region. This is expert, service-specific compliance and data residency information that an LLM is unlikely to know from training. It aligns best with security because it concerns data residency, privacy, and compliance behavior rather than general concepts. |
 | [Default notifications](https://learn.microsoft.com/en-us/azure/devops/organizations/notifications/oob-built-in-notifications?view=azure-devops) | configuration | 0.70 | Reference for built-in/default notifications with role mappings (Reviewer, Assignee); product-specific subscription configuration. |
@@ -237,6 +239,7 @@ confusable_not_for: Not for Azure Boards (use azure-boards), Azure Pipelines (us
 | [Examples of moderate topology](https://learn.microsoft.com/en-us/azure/devops/server/architecture/examples-moderate-topo?view=azure-devops-server) | architecture-patterns | 0.70 | Covers moderately complex topology where data and app tiers are separated; product-specific architectural pattern guidance for scaling and maintenance. |
 | [Examples of simple topology](https://learn.microsoft.com/en-us/azure/devops/server/architecture/examples-simple-topo?view=azure-devops-server) | architecture-patterns | 0.70 | Describes specific simple topologies (single workgroup/domain) and when to use them; product-specific deployment patterns with trade-offs about simplicity and maintenance. |
 | [FAQs](https://learn.microsoft.com/en-us/azure/devops/organizations/notifications/faq-notifications?view=azure-devops) | troubleshooting | 0.70 | FAQ contains product-specific notification behaviors and resolutions (for example, why certain users or events do or do not trigger emails, how specific notification settings interact, and service-specific nuances). These are organized as symptom-style questions with concrete, Azure DevOps–specific answers, which aligns best with troubleshooting guidance rather than generic concepts. |
+| [FAQs](https://learn.microsoft.com/en-us/azure/devops/report/dashboards/faqs?view=azure-devops) | troubleshooting | 0.70 | FAQ content for dashboards/charts typically includes product-specific error messages, limitations, and behavior clarifications (for example, why certain widgets don't show data, permissions-related visibility issues, or chart configuration constraints). These are symptom → cause → resolution style details that go beyond generic knowledge and are unique to Azure DevOps reporting, fitting the troubleshooting sub-skill. |
 | [Filter on teams](https://learn.microsoft.com/en-us/azure/devops/report/powerbi/create-team-filter?view=azure-devops) | best-practices | 0.70 | Explains a product-specific workaround for missing team fields (using area paths and custom steps), a gotcha/edge case unique to Azure DevOps Analytics and Power BI. |
 | [Follow wiki pages, get notifications](https://learn.microsoft.com/en-us/azure/devops/project/wiki/follow-notifications-wiki-pages?view=azure-devops) | limits-quotas | 0.70 | Specifies notification behavior including a 30-minute digest window for edits and immediate notifications for renames/deletes; these are concrete timing limits/behaviors that qualify as product-specific limits. |
 | [Frequently asked questions](https://learn.microsoft.com/en-us/azure/devops/managed-devops-pools/faq?view=azure-devops) | limits-quotas | 0.70 | FAQ explicitly mentions quotas, VM SKUs, regions, and pricing; such pages typically list concrete numeric quotas and SKU-specific constraints that qualify as expert limits/quotas knowledge. |
@@ -263,6 +266,7 @@ confusable_not_for: Not for Azure Boards (use azure-boards), Azure Pipelines (us
 | [Provide help text, hyperlinks, or web content](https://learn.microsoft.com/en-us/azure/devops/reference/xml/provide-help-text-hyperlinks-web-content-form?view=azure-devops-server) | configuration | 0.70 | Page is about specific form controls for Azure DevOps work item forms (tooltip, text, hyperlink, HTML/web content). This usually includes control/element names, attributes, and usage constraints that are product-specific configuration details. |
 | [Public projects retirement](https://learn.microsoft.com/en-us/azure/devops/organizations/projects/public-projects-retirement?view=azure-devops) | decision-making | 0.70 | Provides service-specific retirement timelines and what changes for organizations, guiding decisions on when and how to transition away from public projects. This is concrete, time-bound guidance unique to the product lifecycle. |
 | [Query tools](https://learn.microsoft.com/en-us/azure/devops/report/analytics/analytics-query-tools?view=azure-devops) | decision-making | 0.70 | The page provides a task-based comparison of different tools (web browser, Power BI, etc.) for querying Azure DevOps Analytics, with guidance on which tool to use for which reporting scenario. This is product-specific decision guidance rather than a generic overview, fitting the decision-making category. |
+| [Remote MCP Server](https://learn.microsoft.com/en-us/azure/devops/mcp-server/remote-mcp-server?view=azure-devops) | configuration | 0.70 | The page describes how to connect an AI assistant to the hosted Azure DevOps MCP Server via streamable HTTP transport, which implies product-specific endpoint configuration details and parameters that go beyond generic concepts. While the summary is brief, this type of remote server setup typically includes expert configuration options (URLs, headers, transport settings) unique to this service. |
 | [Request change in permissions](https://learn.microsoft.com/en-us/azure/devops/organizations/security/request-changes-permissions?view=azure-devops) | security | 0.70 | Page is a concrete, product-specific guide for resolving insufficient-permission messages by mapping specific tasks and error conditions to required Azure DevOps roles/permissions and the process to request elevation. This is detailed security/permission configuration behavior rather than generic concepts. |
 | [Requirements](https://learn.microsoft.com/en-us/azure/devops/server/requirements?view=azure-devops-server) | deployment | 0.70 | Details supported OS, SQL versions, and hardware requirements for install/upgrade; these are product-specific deployment constraints and matrices. |
 | [Restore a deployment to new hardware (advanced)](https://learn.microsoft.com/en-us/azure/devops/server/admin/backup/tut-single-svr-home?view=azure-devops-server) | deployment | 0.70 | Tutorial for restoring a TFS deployment using backups and installation media; includes ordered deployment steps and requirements unique to this product. |
@@ -307,6 +311,7 @@ confusable_not_for: Not for Azure Boards (use azure-boards), Azure Pipelines (us
 | [Look up a project administrator](https://learn.microsoft.com/en-us/azure/devops/organizations/security/look-up-project-administrators?view=azure-devops) | security | 0.65 | Defines the Project Administrators security group and enumerates its authorized tasks, with guidance on locating members. These are concrete, product-specific permission capabilities tied to a named role. |
 | [Look up a project collection administrator](https://learn.microsoft.com/en-us/azure/devops/organizations/security/look-up-project-collection-administrators?view=azure-devops) | security | 0.65 | Explains how to locate members of a specific privileged security group in Azure DevOps with product-specific steps and role behavior; this is concrete security configuration rather than conceptual overview. |
 | [Manage search indexing](https://learn.microsoft.com/en-us/azure/devops/project/search/manage-search?view=azure-devops-server) | configuration | 0.65 | Describes managing search extension and indexing status, including pausing, resuming, and reindexing; product-specific operational configuration details. |
+| [Manage team, group, Global notifications](https://learn.microsoft.com/en-us/azure/devops/organizations/notifications/manage-team-group-global-organization-notifications?view=azure-devops) | configuration | 0.65 | The page focuses on managing email notifications at team, project, and organization scope with product-specific options and behaviors (such as notification types and filters). It provides actionable configuration guidance rather than just conceptual description, aligning with the configuration sub-skill. |
 | [Manage users and permissions](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/faq-user-and-permissions-management?view=azure-devops) | security | 0.65 | The FAQ focuses on user and permissions management, including required permissions and access levels, Visual Studio subscriptions, and GitHub Enterprise integration. It also explicitly recommends Microsoft Entra tokens over personal access tokens. These are product-specific security and identity management details, including role/permission guidance, which count as expert security configuration knowledge. |
 | [Manually back up](https://learn.microsoft.com/en-us/azure/devops/server/admin/backup/manually-backup-tfs?view=azure-devops-server) | configuration | 0.65 | Manual backup via SQL Server tools for Azure DevOps Server will include product-specific database names, sequences, and options required to keep backups in sync, which are concrete configuration steps unique to this product. |
 | [Monitor usage](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/usage-monitoring?view=azure-devops) | troubleshooting | 0.65 | Guidance for investigating delayed/unfulfilled requests using usage messages and audit logs; symptom-based performance troubleshooting. |
@@ -359,7 +364,6 @@ confusable_not_for: Not for Azure Boards (use azure-boards), Azure Pipelines (us
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
 | [View agent status](https://learn.microsoft.com/en-us/azure/devops/managed-devops-pools/view-agents?view=azure-devops) | 0.50 | Viewing agent status is mostly UI usage; summary suggests simple monitoring, not detailed configuration or limits. |
-| [About notifications](https://learn.microsoft.com/en-us/azure/devops/organizations/notifications/about-notifications?view=azure-devops) | 0.45 | Conceptual overview of notifications; no detailed config tables, limits, or error mappings indicated. |
 | [Use @mentions](https://learn.microsoft.com/en-us/azure/devops/organizations/notifications/at-mentions?view=azure-devops) | 0.45 | Explains @mentions usage; mostly UI behavior and generic concept, limited deep config or limits. |
 | [ARM template](https://learn.microsoft.com/en-us/azure/devops/managed-devops-pools/quickstart-arm-template?view=azure-devops) | 0.40 | Quickstart using ARM template; focused on one deployment example rather than full configuration matrices or limits. |
 | [About permissions, access, & security groups](https://learn.microsoft.com/en-us/azure/devops/organizations/security/about-permissions?view=azure-devops) | 0.40 | Conceptual explanation of permissions, access levels, inheritance, and security groups in Azure DevOps; appears to be an overview without detailed role lists, parameterized configurations, or advanced troubleshooting/decision content. |
@@ -399,7 +403,6 @@ confusable_not_for: Not for Azure Boards (use azure-boards), Azure Pipelines (us
 | [Set iteration paths (sprints)](https://learn.microsoft.com/en-us/azure/devops/organizations/settings/set-iteration-paths-sprints?view=azure-devops) | 0.35 | Explains iteration paths/sprints and how to configure them; mainly conceptual and UI steps, no explicit limits, configuration tables, or security specifics. |
 | [About Power BI integration](https://learn.microsoft.com/en-us/azure/devops/report/powerbi/overview?view=azure-devops) | 0.30 | High-level overview of Power BI integration options; primarily conceptual and navigational without detailed limits, configs, or decision matrices. |
 | [About feedback](https://learn.microsoft.com/en-us/azure/devops/project/feedback/?view=azure-devops) | 0.30 | Overview of feedback tools and how to request feedback; lacks detailed configuration parameters, limits, or error codes. |
-| [Add & edit wiki pages](https://learn.microsoft.com/en-us/azure/devops/project/wiki/add-edit-wiki?view=azure-devops) | 0.30 | Task-focused instructions for adding and editing wiki pages; no detailed configuration matrices, limits, or error-resolution mappings. |
 | [Add a team slicer to a report](https://learn.microsoft.com/en-us/azure/devops/report/powerbi/sample-boards-teamslicer?view=azure-devops) | 0.30 | Demonstrates adding a team slicer in Power BI; contains a single prerequisite field but no broader configuration tables or expert-only constraints. |
 | [Add and manage banners](https://learn.microsoft.com/en-us/azure/devops/organizations/settings/manage-banners?view=azure-devops) | 0.30 | Describes adding and managing information banners, but appears to be UI-driven instructions without configuration tables, limits, or security/role specifics. |
 | [Add privacy policy URL](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/add-privacy-policy-url?view=azure-devops) | 0.30 | How-to for adding a privacy policy URL; mainly UI steps and legal context, no detailed configuration tables, limits, or product-specific troubleshooting content. |
@@ -408,6 +411,7 @@ confusable_not_for: Not for Azure Boards (use azure-boards), Azure Pipelines (us
 | [Area & iteration paths](https://learn.microsoft.com/en-us/azure/devops/organizations/settings/about-areas-iterations?view=azure-devops) | 0.30 | Conceptual explanation of area and iteration paths; organizational guidance without numeric limits or detailed configuration tables. |
 | [August 13](https://learn.microsoft.com/en-us/azure/devops/release-notes/2024/sprint-243-update) | 0.30 | Announcement of Managed DevOps Pools preview and API enhancements; summary is high-level without detailed configuration matrices. |
 | [August 19](https://learn.microsoft.com/en-us/azure/devops/release-notes/2021/sprint-191-update) | 0.30 | Mentions environment variables support and ability to change working directory or proxy; but as a brief feature note, not a full config reference. |
+| [August 20](https://learn.microsoft.com/en-us/azure/devops/release-notes/2026/sprint-278-update) | 0.30 | Sprint release note describing new features and audit events is primarily an overview; the summary lacks detailed configuration parameters, limits, error-code mappings, or decision criteria that would qualify as expert knowledge for the defined sub-skill types. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/devops/managed-devops-pools/quickstart-azure-cli?view=azure-devops) | 0.30 | Quickstart for creating a Managed DevOps Pool via Azure CLI is a tutorial focused on basic commands. It likely shows example CLI usage rather than comprehensive configuration parameter tables, limits, or troubleshooting content. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/devops/managed-devops-pools/quickstart-azure-portal?view=azure-devops) | 0.30 | Quickstart for creating a Managed DevOps Pool via Azure portal is primarily a step-by-step tutorial. It usually shows basic creation and running a pipeline, not detailed configuration tables, limits, or error mappings unique to the product. |
 | [Bug trends](https://learn.microsoft.com/en-us/azure/devops/report/powerbi/sample-boards-bugtrend?view=azure-devops) | 0.30 | Bug trend sample report with example queries; focused on visualization, not on limits, configuration options, or troubleshooting mappings. |
@@ -443,7 +447,6 @@ confusable_not_for: Not for Azure Boards (use azure-boards), Azure Pipelines (us
 | [Open bugs](https://learn.microsoft.com/en-us/azure/devops/report/powerbi/sample-boards-openbugs?view=azure-devops) | 0.30 | Sample report for listing open bugs/user stories; provides example queries but not in the form of configuration matrices or product-specific best-practice tables. |
 | [Organization management overview](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/organization-management?view=azure-devops) | 0.30 | General organization management overview; mostly conceptual and navigational without detailed limits, config matrices, or error mappings. |
 | [RTW Release Notes](https://learn.microsoft.com/en-us/azure/devops/server/release-notes/azuredevopsserver?view=azure-devops) | 0.30 | General release notes landing page with links to other content; summary does not indicate specific limits, configs, error codes, or other detailed expert knowledge per the defined categories. |
-| [Remote MCP Server](https://learn.microsoft.com/en-us/azure/devops/mcp-server/remote-mcp-server?view=azure-devops) | 0.30 | High-level description of setting up the remote Azure DevOps MCP Server; summary does not indicate detailed configuration parameters, limits, or troubleshooting mappings that would qualify as expert knowledge. |
 | [Rename or delete a team](https://learn.microsoft.com/en-us/azure/devops/organizations/settings/rename-remove-team?view=azure-devops) | 0.30 | Procedural guide for renaming/removing teams; no evidence of numeric limits, configuration matrices, or detailed troubleshooting content. |
 | [Resolve orphaned organization](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/resolve-orphaned-organization?view=azure-devops) | 0.30 | Primarily a procedural guide for assigning an owner to an orphaned organization; no numeric limits, configuration tables, error codes, or other expert-only details. |
 | [Security Best Practices](https://learn.microsoft.com/en-us/azure/devops/organizations/security/security-overview?view=azure-devops) | 0.30 | High-level security overview for Azure DevOps; describes concepts like Zero Trust, network protection, and access controls without specific RBAC role names, configuration parameters, or detailed settings tables. |
@@ -547,6 +550,7 @@ confusable_not_for: Not for Azure Boards (use azure-boards), Azure Pipelines (us
 | [About public projects](https://learn.microsoft.com/en-us/azure/devops/organizations/projects/about-projects?view=azure-devops) | 0.20 | Page is an overview of Azure DevOps projects and organizational scaling concepts; no concrete limits, configuration tables, or product-specific numeric thresholds or decision matrices are indicated. |
 | [About wikis, READMEs, & Markdown](https://learn.microsoft.com/en-us/azure/devops/project/wiki/about-readme-wiki?view=azure-devops) | 0.20 | Conceptual/how-to guidance on using README and wiki with Markdown; no expert-only configuration, limits, or troubleshooting content. |
 | [Active bugs report](https://learn.microsoft.com/en-us/azure/devops/report/powerbi/active-bugs-sample-report?view=azure-devops) | 0.20 | Tutorial for creating a specific Power BI report; primarily step-by-step guidance without configuration tables, limits, or troubleshooting mappings. |
+| [Add & edit wiki pages](https://learn.microsoft.com/en-us/azure/devops/project/wiki/add-edit-wiki?view=azure-devops) | 0.20 | Page describes how to add and manage Azure DevOps wiki pages using the UI and Markdown. It is a usage/tutorial-style document without product-specific limits, configuration tables, error codes, or decision matrices. No expert-only numeric constraints, RBAC details, or specialized troubleshooting content are present. |
 | [Add an artifact or team artifacts](https://learn.microsoft.com/en-us/azure/devops/project/navigation/add-artifact-team?view=azure-devops) | 0.20 | Basic instructions for adding artifacts or teams; lacks detailed settings, limits, or error-resolution content. |
 | [April 10](https://learn.microsoft.com/en-us/azure/devops/release-notes/2024/boards/sprint-237-update) | 0.20 | Sprint 237 release notes; feature update summary without detailed limits, configuration options, or troubleshooting mappings. |
 | [April 10](https://learn.microsoft.com/en-us/azure/devops/release-notes/2024/ghazdo/sprint-237-update) | 0.20 | Sprint 237 update is a release note page; it does not contain the structured technical guidance required for any sub-skill type. |
@@ -651,7 +655,6 @@ confusable_not_for: Not for Azure Boards (use azure-boards), Azure Pipelines (us
 | [December 8](https://learn.microsoft.com/en-us/azure/devops/release-notes/2022/pipelines/sprint-213-update) | 0.20 | Sprint 213 Azure Pipelines release notes; primarily feature announcements and fixes. |
 | [Define your dashboard focus](https://learn.microsoft.com/en-us/azure/devops/report/dashboards/dashboard-focus?view=azure-devops) | 0.20 | Covers how to create and customize dashboards with widgets; appears to be a conceptual/UX and basic how-to guide without detailed configuration tables, limits, or product-specific diagnostic/security parameters. |
 | [End-to-end traceability](https://learn.microsoft.com/en-us/azure/devops/cross-service/end-to-end-traceability?view=azure-devops) | 0.20 | Traceability article is described as an overview of tools and features with links; likely conceptual guidance rather than detailed configuration or limits. |
-| [FAQs](https://learn.microsoft.com/en-us/azure/devops/report/dashboards/faqs?view=azure-devops) | 0.20 | FAQ page about Azure DevOps dashboards and charts; primarily conceptual usage Q&A and feature behavior explanations without concrete limits, configuration parameter tables, error-code-based troubleshooting flows, or decision matrices with quantified trade-offs. |
 | [February 04](https://learn.microsoft.com/en-us/azure/devops/release-notes/2021/boards/sprint-182-update) | 0.20 | Sprint 182 Azure Boards release notes list incremental feature updates; they don’t provide the kind of numeric limits, decision matrices, or config references required for expert-knowledge classification. |
 | [February 04](https://learn.microsoft.com/en-us/azure/devops/release-notes/2021/general/sprint-182-update) | 0.20 | Sprint 182 release notes describe sprint updates rather than structured expert content like quotas, security roles, or configuration tables. |
 | [February 04](https://learn.microsoft.com/en-us/azure/devops/release-notes/2021/reporting/sprint-182-update) | 0.20 | Sprint 182 reporting update is a release-note style page; it lacks numeric limits, config parameter tables, or error-code mappings. |
@@ -826,7 +829,6 @@ confusable_not_for: Not for Azure Boards (use azure-boards), Azure Pipelines (us
 | [Manage change](https://learn.microsoft.com/en-us/azure/devops/cross-service/manage-change?view=azure-devops) | 0.20 | Change management article maps Agile tasks to tools; primarily conceptual/process guidance without specific numeric thresholds, configs, or error codes. |
 | [Manage or enable features](https://learn.microsoft.com/en-us/azure/devops/project/navigation/preview-features?view=azure-devops) | 0.20 | Page explains how to enable/disable preview features in Azure DevOps and mentions a rough timeframe for feature availability, but does not provide detailed limits, configuration tables, error codes, or other product-specific expert data; it's primarily conceptual/how-to UI guidance. |
 | [Manage requirements](https://learn.microsoft.com/en-us/azure/devops/cross-service/manage-requirements?view=azure-devops) | 0.20 | Conceptual guidance on managing requirements with Agile tools in Azure DevOps; summary suggests process/usage overview without specific limits, configuration parameters, or troubleshooting mappings. |
-| [Manage team, group, Global notifications](https://learn.microsoft.com/en-us/azure/devops/organizations/notifications/manage-team-group-global-organization-notifications?view=azure-devops) | 0.20 | Describes how to manage notifications at team/project/organization scope and when emails are sent. Appears to be a procedural/overview guide without detailed configuration parameter tables, limits, or product-specific error mappings; thus lacks the expert-level specifics required by any sub-skill type. |
 | [March 03](https://learn.microsoft.com/en-us/azure/devops/release-notes/2021/artifacts/sprint-183-update) | 0.20 | Sprint 183 update for Azure Artifacts; release notes, not focused on limits, configuration, troubleshooting, or decision-making. |
 | [March 03](https://learn.microsoft.com/en-us/azure/devops/release-notes/2021/general/sprint-183-update) | 0.20 | Sprint 183 release notes are primarily a feature changelog, not expert guidance with parameters, error codes, or decision matrices. |
 | [March 16](https://learn.microsoft.com/en-us/azure/devops/release-notes/2020/general/sprint-166-update) | 0.20 | Sprint 166 general update notes are release notes, not structured limits, configuration, or troubleshooting guidance. |
@@ -970,7 +972,7 @@ confusable_not_for: Not for Azure Boards (use azure-boards), Azure Pipelines (us
 | [Process templates](https://learn.microsoft.com/en-us/azure/devops/reference/process-templates/?view=azure-devops) | 0.20 | High-level overview of Azure DevOps process templates and models; no detailed configuration tables, limits, or product-specific numeric thresholds. Primarily conceptual and navigational. |
 | [Project summary](https://learn.microsoft.com/en-us/azure/devops/organizations/projects/project-vision-status?view=azure-devops) | 0.20 | Explains the project summary page and its uses; largely conceptual and UI usage guidance without expert-level configuration, limits, or security details. |
 | [Quick reference](https://learn.microsoft.com/en-us/azure/devops/server/admin/admin-quick-ref?view=azure-devops-server) | 0.20 | Quick-reference index of admin tasks; primarily navigation without detailed limits, configs, or error mappings. |
-| [Released features](https://learn.microsoft.com/en-us/azure/devops/release-notes/features-timeline-released) | 0.20 | High-level release notes index/timeline; no detailed limits, configs, error codes, or product-specific patterns described. |
+| [Released features](https://learn.microsoft.com/en-us/azure/devops/release-notes/features-timeline-released) | 0.20 | Release notes and build numbers are high-level change logs; the summary does not indicate presence of specific limits, configuration tables, error codes, or decision matrices required for any sub-skill type. |
 | [Rename organization](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/rename-organization?view=azure-devops) | 0.20 | Procedural guide for renaming an Azure DevOps organization; lacks numeric limits, configuration tables, security roles, or decision matrices with quantified trade-offs. |
 | [Restore a project](https://learn.microsoft.com/en-us/azure/devops/organizations/projects/delete-project?view=azure-devops) | 0.20 | Task-focused how-to for deleting and restoring Azure DevOps projects; no numeric limits, configuration tables, error-code-based troubleshooting, or product-specific best-practice details beyond generic UI steps. |
 | [Save project data](https://learn.microsoft.com/en-us/azure/devops/organizations/projects/delete-project?view=azure-devops) | 0.20 | Same page as index 0 (delete/remove/restore Azure DevOps projects); procedural guidance without expert-level numeric limits, configuration tables, or troubleshooting content. |
@@ -1066,7 +1068,11 @@ confusable_not_for: Not for Azure Boards (use azure-boards), Azure Pipelines (us
 | [TFS is now Azure DevOps Server](https://learn.microsoft.com/en-us/azure/devops/server/tfs-is-now-azure-devops-server?view=azure-devops) | 0.10 | Rebranding/overview content without technical limits, configs, or decision matrices. |
 | [Team Foundation Server](https://learn.microsoft.com/en-us/azure/devops/server/release-notes/tfs?view=azure-devops) | 0.10 | Access-controlled TFS release notes index; from the visible summary, it is a navigation/change-log page without clear expert-knowledge structures. |
 | [What is Analytics?](https://learn.microsoft.com/en-us/azure/devops/report/powerbi/what-is-analytics?view=azure-devops) | 0.10 | Conceptual overview of Azure DevOps Analytics and its purpose; does not expose numeric limits, configuration tables, error codes, or decision matrices. |
+| [About notifications](https://learn.microsoft.com/en-us/azure/devops/organizations/notifications/about-notifications?view=azure-devops) | - | High-level explanation of notifications in Azure DevOps without detailed configuration tables, limits, or product-specific parameters; primarily conceptual overview of how notifications work. |
 | [April 14](https://learn.microsoft.com/en-us/azure/devops/release-notes/2026/pipelines/sprint-272-update) | - | Sprint release notes describe new features and changes but are not structured as limits, configuration references, troubleshooting guides, or other defined sub-skill types with stable expert knowledge. Content is primarily update/what’s new information rather than reusable technical reference with numeric limits, config tables, or decision matrices. |
+| [August 20](https://learn.microsoft.com/en-us/azure/devops/release-notes/2026/general/sprint-278-update) | - | Sprint release notes summarize new features and changes but do not provide detailed limits, configuration tables, error codes, or decision matrices; content is primarily update/overview rather than deep technical reference. |
+| [August 20](https://learn.microsoft.com/en-us/azure/devops/release-notes/2026/pipelines/sprint-278-update) | - | Sprint release notes summarize new features and changes without detailed limits, configuration tables, error-code mappings, or decision matrices; content is primarily update/overview rather than expert reference data. |
+| [August 20](https://learn.microsoft.com/en-us/azure/devops/release-notes/2026/wiki/sprint-278-update) | - | Sprint release notes for Azure DevOps Wiki; primarily feature announcements and high-level changes without detailed limits, configuration tables, error codes, or decision matrices that meet any sub-skill criteria. |
 | [Azure Pipelines >>](https://learn.microsoft.com/en-us/azure/devops/pipelines/?view=azure-devops) | - | Landing/overview page for Azure Pipelines documentation; description and summary indicate high-level CI/CD overview and navigation, not detailed limits, configuration tables, or troubleshooting content. |
 | [Azure Repos >>](https://learn.microsoft.com/en-us/azure/devops/repos/?view=azure-devops) | - | Landing/overview page for Azure Repos documentation; no indication of specific limits, configs, error codes, or product-unique patterns. |
 | [Azure Test Plans >>](https://learn.microsoft.com/en-us/azure/devops/test/?view=azure-devops) | - | Landing/overview page for Azure Test Plans documentation; content is conceptual and navigational, without specific limits, configuration parameters, or troubleshooting mappings. |

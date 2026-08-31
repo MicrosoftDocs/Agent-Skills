@@ -1,9 +1,9 @@
 ---
 name: azure-arc
-description: Expert knowledge for Azure Arc development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing Arc-enabled Kubernetes, data services, Agentic Retrieval, resource bridge, or Connected Machine agents, and other Azure Arc related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Virtual Machines (use azure-virtual-machines), Azure Resource Manager (use azure-resource-manager), Azure Policy (use azure-policy).
+description: Expert knowledge for Azure Arc development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Arc-enabled Kubernetes, data services, Agentic Retrieval APIs, Edge Volumes, or resource bridge, and other Azure Arc related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Stack Edge (use azure-stack-edge), Azure Local (use azure-local), Azure Virtual Machines (use azure-virtual-machines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-16"
+  generated_at: "2026-08-31"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Arc Skill
@@ -24,15 +24,15 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L75 | Diagnosing and fixing Azure Arc issues: connectivity, onboarding, storage, Kubernetes extensions/GitOps, resource bridge, site manager, workload orchestration, and server/VM auth/networking. |
+| Troubleshooting | L37-L75 | Diagnosing and fixing Azure Arc issues: onboarding, connectivity, extensions, storage, data services, Kubernetes/GitOps, resource bridge, site manager, VMware, and workload orchestration. |
 | Best Practices | L76-L86 | Best practices for Agentic Retrieval (document prep, evaluation, metrics) and Azure Arc storage/volumes (filesystem quirks, out-of-space handling, static retain, namespace validators). |
 | Decision Making | L87-L109 | Planning and design guidance for Azure Arc: choosing services, tiers, licensing, connectivity, Kubernetes platforms, and migration strategies for servers, data services, and workloads. |
 | Architecture & Design Patterns | L110-L117 | Patterns for Arc data/compute design: container storage data flow, Arc Edge Volumes, HA/DR for Arc SQL MI and failover groups, and advanced Edge RAG data parsing. |
-| Limits & Quotas | L118-L128 | Limits, billing rules, prerequisites, and offline behavior for Azure Arc agents and services (Agentic Retrieval, Arc storage, Kubernetes, ESU, PAYG, Connected Machine). |
-| Security | L129-L189 | Securing Azure Arc: identity, RBAC, AD/Kerberos, key/cert rotation, network/Private Link, policy/compliance, and protecting data, workloads, and Kubernetes/servers/VMware/SCVMM resources. |
-| Configuration | L190-L298 | Configuring Azure Arc environments: networking, security, data services, Kubernetes/AKS, Agentic Retrieval, storage, monitoring, GitOps, resource bridge, and Connected Machine agent settings. |
+| Limits & Quotas | L118-L127 | Limits, billing rules, prerequisites, and offline behavior for Azure Arc agents and services (Agentic Retrieval, Arc storage, Kubernetes, ESU, PAYG, Connected Machine). |
+| Security | L128-L188 | Securing Azure Arc: identity, RBAC, AD/Kerberos, key/cert rotation, network/Private Link, policy/compliance, and protecting data, workloads, and Kubernetes/servers/VMware/SCVMM resources. |
+| Configuration | L189-L298 | Configuring Azure Arc environments: networking, security, data services, Kubernetes/AKS, Agentic Retrieval, storage, monitoring, GitOps, VM/server agents, and workload orchestration. |
 | Integrations & Coding Patterns | L299-L329 | REST/CLI/Ansible/PowerShell patterns for Arc: agentic retrieval APIs, MCP/RAG tools, VM extensions, onboarding servers at scale, Resource Graph, Sentinel, Event Grid, Terraform, and licensing. |
-| Deployment | L330-L361 | Deploying and managing Azure Arc components: agents, data controllers, extensions, resource bridge, SCVMM/vSphere onboarding, upgrades, DR/failover, and disconnected/local scenarios. |
+| Deployment | L330-L361 | Deploying, upgrading, and uninstalling Azure Arc agents, extensions, data controllers, and resource bridges across Kubernetes, multicloud VMs, SCVMM, and VMware, including prerequisites and support matrices. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -53,7 +53,7 @@ This skill requires **network access** to fetch documentation content:
 | Troubleshoot Azure Key Vault Secret Store extension issues | https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/secret-store-extension-troubleshooting |
 | Troubleshoot Azure Arc-enabled Kubernetes platform and GitOps issues | https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/troubleshooting |
 | Troubleshoot Azure Arc multicloud connector issues | https://learn.microsoft.com/en-us/azure/azure-arc/multicloud-connector/troubleshoot-multicloud-connector |
-| Troubleshoot Azure Arc resource bridge deployment and connectivity | https://learn.microsoft.com/en-us/azure/azure-arc/resource-bridge/troubleshoot-resource-bridge |
+| Diagnose and fix Azure Arc resource bridge deployment issues | https://learn.microsoft.com/en-us/azure/azure-arc/resource-bridge/troubleshoot-resource-bridge |
 | Diagnose and fix Essential Machine Management enrollment issues | https://learn.microsoft.com/en-us/azure/azure-arc/servers/essential-machine-management/troubleshoot |
 | Evaluate Arc on Azure VMs and handle errors | https://learn.microsoft.com/en-us/azure/azure-arc/servers/plan-evaluate-on-azure-virtual-machine |
 | Troubleshoot SSH connectivity to Arc-enabled servers | https://learn.microsoft.com/en-us/azure/azure-arc/servers/ssh-arc-troubleshoot |
@@ -124,7 +124,6 @@ This skill requires **network access** to fetch documentation content:
 | Maintain Azure Arc resource bridge health and uptime | https://learn.microsoft.com/en-us/azure/azure-arc/resource-bridge/maintenance |
 | Understand Azure Arc ESU billing rules and timing | https://learn.microsoft.com/en-us/azure/azure-arc/servers/billing-extended-security-updates |
 | Billing behavior for Windows Server pay-as-you-go via Arc | https://learn.microsoft.com/en-us/azure/azure-arc/servers/billing-windows-server-pay-go |
-| Review prerequisites and supported environments for Connected Machine agent | https://learn.microsoft.com/en-us/azure/azure-arc/servers/prerequisites |
 
 ### Security
 | Topic | URL |
@@ -259,7 +258,7 @@ This skill requires **network access** to fetch documentation content:
 | Apply Flux v2 configurations at scale with Azure Policy | https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/use-azure-policy-flux-2 |
 | Configure multicloud connector to onboard EKS to Arc | https://learn.microsoft.com/en-us/azure/azure-arc/multicloud-connector/onboard-elastic-kubernetes-service-clusters-arc |
 | Configure Azure Arc network endpoints, ports, and protocols | https://learn.microsoft.com/en-us/azure/azure-arc/network-requirements-consolidated |
-| Configure Azure Arc resource bridge network allowlists | https://learn.microsoft.com/en-us/azure/azure-arc/resource-bridge/network-requirements |
+| Configure network and URL allowlists for Azure Arc resource bridge | https://learn.microsoft.com/en-us/azure/azure-arc/resource-bridge/network-requirements |
 | Meet system requirements for Azure Arc resource bridge | https://learn.microsoft.com/en-us/azure/azure-arc/resource-bridge/system-requirements |
 | Configure Azure Arc gateway network endpoints and usage | https://learn.microsoft.com/en-us/azure/azure-arc/servers/arc-gateway |
 | Allowed Azure Arc gateway endpoints for servers and Kubernetes | https://learn.microsoft.com/en-us/azure/azure-arc/servers/arc-gateway-endpoints |
@@ -287,6 +286,7 @@ This skill requires **network access** to fetch documentation content:
 | Onboard Arc servers via Windows Admin Center | https://learn.microsoft.com/en-us/azure/azure-arc/servers/onboard-windows-admin-center |
 | Onboard Windows Server to Arc via setup wizard | https://learn.microsoft.com/en-us/azure/azure-arc/servers/onboard-windows-server |
 | Organize Arc server inventory with tags and hierarchies | https://learn.microsoft.com/en-us/azure/azure-arc/servers/organize-inventory-servers |
+| Review prerequisites for Azure Arc Connected Machine agent | https://learn.microsoft.com/en-us/azure/azure-arc/servers/prerequisites |
 | Use Azure Machine Configuration and remote access with Arc servers | https://learn.microsoft.com/en-us/azure/azure-arc/servers/security-machine-configuration |
 | Enable SSH remoting to Arc-enabled servers | https://learn.microsoft.com/en-us/azure/azure-arc/servers/ssh-arc-overview |
 | Use PowerShell remoting over SSH with Arc servers | https://learn.microsoft.com/en-us/azure/azure-arc/servers/ssh-arc-powershell-remoting |
@@ -352,7 +352,7 @@ This skill requires **network access** to fetch documentation content:
 | Deliver Extended Security Updates to SCVMM VMs via Arc | https://learn.microsoft.com/en-us/azure/azure-arc/system-center-virtual-machine-manager/deliver-esus-for-system-center-virtual-machine-manager-vms |
 | Install Azure Arc agents on SCVMM VMs at scale | https://learn.microsoft.com/en-us/azure/azure-arc/system-center-virtual-machine-manager/enable-guest-management-at-scale |
 | Cleanly remove SCVMM environments from Azure Arc | https://learn.microsoft.com/en-us/azure/azure-arc/system-center-virtual-machine-manager/remove-scvmm-from-azure-arc |
-| Support matrix and prerequisites for Arc-enabled SCVMM | https://learn.microsoft.com/en-us/azure/azure-arc/system-center-virtual-machine-manager/support-matrix-for-system-center-virtual-machine-manager |
+| Review support matrix for Arc-enabled SCVMM deployment | https://learn.microsoft.com/en-us/azure/azure-arc/system-center-virtual-machine-manager/support-matrix-for-system-center-virtual-machine-manager |
 | Upgrade the Azure Arc resource bridge for SCVMM | https://learn.microsoft.com/en-us/azure/azure-arc/system-center-virtual-machine-manager/upgrade-azure-arc-resource-bridge |
 | Review support matrix for Arc-enabled VMware vSphere | https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/support-matrix-for-arc-enabled-vmware-vsphere |
 | Switch existing Arc-enabled VMware vSphere to new version | https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/switch-to-new-version |

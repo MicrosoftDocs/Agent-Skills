@@ -1,9 +1,9 @@
 ---
 name: azure-dedicated-hsm
-description: Expert knowledge for Azure Dedicated HSM development including troubleshooting, decision making, architecture & design patterns, security, and deployment. Use when sizing HSM clusters, configuring VNet/ExpressRoute, migrating ER Basic→Standard, or planning HSM retirement, and other Azure Dedicated HSM related development tasks. Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Key Vault (use azure-key-vault), Azure Payment Hsm (use azure-payment-hsm).
+description: Expert knowledge for Azure Dedicated HSM development including troubleshooting, decision making, architecture & design patterns, security, and deployment. Use when sizing HSM clusters, configuring ExpressRoute IP SKUs, securing VNets, or planning HSM retirement/migration, and other Azure Dedicated HSM related development tasks. Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Key Vault (use azure-key-vault), Azure Payment Hsm (use azure-payment-hsm).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-09"
+  generated_at: "2026-08-31"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Dedicated HSM Skill
@@ -28,7 +28,7 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L39-L44 | Guidance on Dedicated HSM retirement, choosing successors (Managed/Cloud HSM), and planning/migrating ExpressRoute IPs and HSM workloads to new SKUs or services. |
 | Architecture & Design Patterns | L45-L51 | Guidance on designing Dedicated HSM deployments: sizing and topology, high availability and failover patterns, and secure networking (VNet, subnets, routing, and connectivity). |
 | Security | L52-L57 | Physical security controls for Dedicated HSM devices and recommended security configurations, policies, and operational best practices for protecting keys and access. |
-| Deployment | L58-L61 | Guidance for migrating Azure Dedicated HSM deployments from ExpressRoute Basic to Standard, including network changes, prerequisites, and step-by-step migration process. |
+| Deployment | L58-L61 | Guidance for migrating the ExpressRoute gateway IP SKU used with Azure Dedicated HSM, including steps, prerequisites, and configuration considerations. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -58,4 +58,4 @@ This skill requires **network access** to fetch documentation content:
 ### Deployment
 | Topic | URL |
 |-------|-----|
-| Migrate Dedicated HSM from ExpressRoute Basic to Standard | https://learn.microsoft.com/en-us/azure/dedicated-hsm/migration-basic-standard |
+| Migrate Dedicated HSM ExpressRoute gateway IP SKU | https://learn.microsoft.com/en-us/azure/dedicated-hsm/migration-basic-standard |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-07'
+generated_at: '2026-08-31'
 category_descriptions:
   security: Tenant-wide admin/security policies, RBAC-based dashboard sharing, mobile
     app protection and user management with Intune/Entra ID, and roles needed to manage
@@ -34,8 +34,8 @@ confusable_not_for: Not for Azure Cloud Shell (use azure-cloud-shell), Azure Res
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 29
+- **Updated Pages**: 1
+- **Unchanged**: 28
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-portal/azure-portal.csv`
 
@@ -49,6 +49,11 @@ confusable_not_for: Not for Azure Cloud Shell (use azure-cloud-shell), Azure Res
 | *(Unclassified)* | 17 | 58.6% |
 
 ## Changes
+
+### Updated Pages
+
+- [Get help through Priority Community Support](https://learn.microsoft.com/en-us/azure/azure-portal/supportability/priority-community-support)
+  - Updated: 2026-02-05T23:09:00.000Z → 2026-08-20T22:12:00.000Z
 
 ## Classified Pages
 
@@ -76,9 +81,9 @@ confusable_not_for: Not for Azure Cloud Shell (use azure-cloud-shell), Azure Res
 | [Azure Copilot](https://learn.microsoft.com/en-us/azure/azure-portal/mobile-app/azure-copilot) | 0.35 | Overview of using Azure Copilot in the mobile app; summary does not indicate detailed configuration parameters or limits. |
 | [Use a custom markdown tile](https://learn.microsoft.com/en-us/azure/azure-portal/azure-portal-markdown-tile) | 0.35 | Shows how to add a markdown tile; mostly UI and basic markdown usage, no product-specific limits or configuration matrices. |
 | [Virtual machines](https://learn.microsoft.com/en-us/azure/azure-portal/mobile-app/virtual-machines) | 0.35 | Describes monitoring/managing VMs from the mobile app; appears as usage guidance without detailed configuration schemas or limits. |
-| [Get help through Priority Community Support](https://learn.microsoft.com/en-us/azure/azure-portal/supportability/priority-community-support) | 0.30 | Describes Priority Community Support as a feature of some plans; appears marketing/overview without technical limits or configuration details. |
 | [Create an Azure dashboard](https://learn.microsoft.com/en-us/azure/azure-portal/azure-portal-dashboards) | 0.20 | Page is a how-to for creating and customizing Azure portal dashboards; no numeric limits, configuration parameter tables, error codes, or product-specific decision matrices are indicated. |
 | [Find subscription and tenant IDs](https://learn.microsoft.com/en-us/azure/azure-portal/get-subscription-tenant-id) | 0.20 | Explains where to find subscription and tenant IDs; procedural UI guidance without product-specific parameters or limits. |
+| [Get help through Priority Community Support](https://learn.microsoft.com/en-us/azure/azure-portal/supportability/priority-community-support) | 0.20 | Page describes the Priority Community Support feature and workflow conceptually. It doesn't list numeric limits, configuration parameters, error codes, or detailed troubleshooting mappings. Content is primarily overview/experience-focused rather than expert technical details. |
 | [Learn about Azure](https://learn.microsoft.com/en-us/azure/azure-portal/mobile-app/learn-training) | 0.20 | Shows how to access Microsoft Learn content from the mobile app; educational navigation, not technical configuration or limits. |
 | [Manage Azure portal settings and preferences](https://learn.microsoft.com/en-us/azure/azure-portal/set-preferences) | 0.20 | Page describes how to change Azure portal UI preferences (theme, language, timeout, menu mode, etc.) without detailed configuration parameter tables, limits, quotas, or product-specific expert settings. It is primarily a UI walkthrough, not expert configuration or troubleshooting content. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-portal/mobile-app/overview) | 0.20 | Overview of Azure mobile app capabilities; no detailed configuration parameters, limits, or troubleshooting mappings indicated. |

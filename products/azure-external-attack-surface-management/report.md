@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-16'
+generated_at: '2026-08-31'
 category_descriptions:
   configuration: Configuring and using Defender EASM inventory filters (ASN, domains,
     hosts, IPs/blocks, pages, SSL certs, contacts) and exporting EASM data to analytics
@@ -29,8 +29,8 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 10
-- **Unchanged**: 12
+- **Updated Pages**: 1
+- **Unchanged**: 21
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-external-attack-surface-management/azure-external-attack-surface-management.csv`
 
@@ -45,26 +45,8 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 
 ### Updated Pages
 
-- [Modify inventory assets](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/modifying-inventory-assets)
-  - Updated: 2026-06-15T08:00:00.000Z → 2026-07-02T08:00:00.000Z
-- [Policy engine automation](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/policy-engine)
-  - Updated: 2026-06-15T08:00:00.000Z → 2026-07-02T08:00:00.000Z
-- [Leverage data connections](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/data-connections)
-  - Updated: 2026-05-18T17:39:00.000Z → 2026-08-10T22:36:00.000Z
-- [Inventory filters overview](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/inventory-filters)
-  - Updated: 2026-06-15T08:00:00.000Z → 2026-08-10T22:36:00.000Z
-- [Domain asset filters](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/domain-asset-filters)
-  - Updated: 2026-06-25T17:35:00.000Z → 2026-07-02T08:00:00.000Z
-- [Host asset filters](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/host-asset-filters)
-  - Updated: 2026-06-22T17:36:00.000Z → 2026-07-02T08:00:00.000Z
-- [Page asset filters](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/page-asset-filters)
-  - Updated: 2026-05-18T17:39:00.000Z → 2026-07-02T08:00:00.000Z
-- [Contact asset filters](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/contact-asset-filters)
-  - Updated: 2026-05-18T17:39:00.000Z → 2026-08-10T22:36:00.000Z
-- [IP address asset filters](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/ip-address-asset-filters)
-  - Updated: 2026-06-22T17:36:00.000Z → 2026-07-02T08:00:00.000Z
-- [ASN asset filters](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/asn-asset-filters)
-  - Updated: 2026-06-22T17:36:00.000Z → 2026-08-10T22:36:00.000Z
+- [Microsoft Security Copilot and Defender EASM](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/easm-copilot)
+  - Updated: 2026-04-24T17:58:00.000Z → 2026-08-19T22:43:00.000Z
 
 ## Classified Pages
 
@@ -89,10 +71,10 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | [Modify inventory assets](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/modifying-inventory-assets) | 0.40 | Task-oriented UI/how-to for modifying Defender EASM inventory assets (states, labels, external IDs, bulk removal). Likely procedural without detailed configuration tables, numeric limits, or product-specific error mappings. |
 | [Policy engine automation](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/policy-engine) | 0.40 | Describes using the Defender EASM policy engine to automate labeling and state changes based on queries. Appears as conceptual/usage guidance without explicit configuration parameter tables, limits, or troubleshooting mappings. |
 | [Understand billable assets](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/understanding-billable-assets) | 0.40 | Covers billing behavior and billable assets, including a 30‑day free trial; while it mentions a specific trial duration, it is mainly billing/overview content without detailed technical limits, configuration, or decision matrices. |
-| [Microsoft Security Copilot and Defender EASM](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/easm-copilot) | 0.35 | Explains using Microsoft Security Copilot with Defender EASM data; appears as a feature overview/integration usage without detailed parameter tables or error codes. |
 | [Understand asset details](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/understanding-asset-details) | 0.30 | Describes what asset details and metadata are shown in Defender EASM; appears to be a conceptual/UX explanation of fields rather than configuration tables, limits, or troubleshooting mappings. |
 | [Use and manage discovery](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/using-and-managing-discovery) | 0.30 | Describes how Defender EASM discovery works and how assets are indexed; summary suggests process/feature overview rather than specific configuration parameters, limits, or troubleshooting details. |
 | [Discover your attack surface](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/discovering-your-attack-surface) | 0.25 | Describes preemptive configuration of attack surfaces by Microsoft; summary suggests a conceptual/marketing-style description rather than detailed technical configuration or limits. |
+| [Microsoft Security Copilot and Defender EASM](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/easm-copilot) | 0.20 | Appears to be a conceptual/usage overview of Microsoft Security Copilot with Defender EASM data, without specific limits, configuration tables, error-code-based troubleshooting, or detailed security/decision matrices that meet the expert-knowledge criteria. |
 | [Overview](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/overview) | 0.20 | High-level product overview of Defender EASM; no concrete limits, configs, error codes, or decision matrices. |
 | [Understand dashboards](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/understanding-dashboards) | 0.20 | Explains dashboards and surfaced insights in Defender EASM; this is primarily conceptual/overview content about UI dashboards, not detailed configuration, limits, or error-resolution guidance. |
 | [Understand inventory assets](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/understanding-inventory-assets) | 0.20 | Describes what inventory assets are and how discovery works at a conceptual level; no concrete limits, configs, or product-specific procedures with parameters. |

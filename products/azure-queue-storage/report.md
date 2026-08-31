@@ -1,8 +1,9 @@
 ---
-generated_at: '2026-07-19'
+generated_at: '2026-08-31'
 category_descriptions:
-  security: Using Entra ID/RBAC/ABAC for queue data access, configuring auth in CLI/Portal/PowerShell,
-    client-side encryption, and migrating Queue apps to passwordless authentication
+  security: 'Securing Queue Storage: Entra ID/RBAC/ABAC auth, portal/CLI/PowerShell
+    access control, client-side encryption, passwordless migration, and security best
+    practices.'
   configuration: Setting up metrics, logs, and alerts for Azure Queue Storage, and
     understanding/using the collected monitoring data to troubleshoot performance
     and reliability issues.
@@ -15,30 +16,28 @@ category_descriptions:
     common coding patterns.
 skill_description: Expert knowledge for Azure Queue Storage development including
   best practices, limits & quotas, security, configuration, and integrations & coding
-  patterns. Use when using Entra ID/RBAC auth, client-side encryption, monitoring/alerts,
-  scaling limits, or .NET/Java/Python SDKs, and other Azure Queue Storage related
-  development tasks. Not for Azure Blob Storage (use azure-blob-storage), Azure Table
-  Storage (use azure-table-storage), Azure Service Bus (use azure-service-bus), Azure
-  Event Hubs (use azure-event-hubs).
-use_when: Use when using Entra ID/RBAC auth, client-side encryption, monitoring/alerts,
-  scaling limits, or .NET/Java/Python SDKs, and other Azure Queue Storage related
-  development tasks.
-confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure Table
-  Storage (use azure-table-storage), Azure Service Bus (use azure-service-bus), Azure
-  Event Hubs (use azure-event-hubs).
+  patterns. Use when configuring queue auth/encryption, monitoring metrics/logs, handling
+  limits, or coding with Azure Queue SDKs, and other Azure Queue Storage related development
+  tasks. Not for Azure Service Bus (use azure-service-bus), Azure Event Hubs (use
+  azure-event-hubs), Azure Table Storage (use azure-table-storage).
+use_when: Use when configuring queue auth/encryption, monitoring metrics/logs, handling
+  limits, or coding with Azure Queue SDKs, and other Azure Queue Storage related development
+  tasks.
+confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Event
+  Hubs (use azure-event-hubs), Azure Table Storage (use azure-table-storage).
 ---
 # Azure Queue Storage Crawl Report
 
 ## Summary
 
-- **Total Pages**: 24
-- **Fetched**: 24
+- **Total Pages**: 25
+- **Fetched**: 25
 - **Fetch Failed**: 0
-- **Classified**: 23
+- **Classified**: 24
 - **Unclassified**: 1
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
 - **Unchanged**: 24
 - **Deleted Pages**: 0
@@ -48,14 +47,18 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure T
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| best-practices | 3 | 12.5% |
-| configuration | 2 | 8.3% |
-| integrations | 6 | 25.0% |
-| limits-quotas | 2 | 8.3% |
-| security | 10 | 41.7% |
-| *(Unclassified)* | 1 | 4.2% |
+| best-practices | 3 | 12.0% |
+| configuration | 2 | 8.0% |
+| integrations | 6 | 24.0% |
+| limits-quotas | 2 | 8.0% |
+| security | 11 | 44.0% |
+| *(Unclassified)* | 1 | 4.0% |
 
 ## Changes
+
+### New Pages
+
+- [Secure your Azure Queue storage](https://learn.microsoft.com/en-us/azure/storage/queues/secure-queues)
 
 ## Classified Pages
 
@@ -73,6 +76,7 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure T
 | [PowerShell](https://learn.microsoft.com/en-us/azure/storage/queues/authorize-data-operations-powershell) | security | 0.80 | Details PowerShell extensions for Queue Storage, including how Entra tokens are used and which roles/permissions are required for data operations. |
 | [Scenarios and best practices](https://learn.microsoft.com/en-us/azure/storage/queues/queues-storage-monitoring-scenarios) | best-practices | 0.80 | Provides scenario-based monitoring guidance with specific metrics/logs to use and how to configure them, representing product-specific monitoring best practices. |
 | [Monitoring Queue Storage data reference](https://learn.microsoft.com/en-us/azure/storage/queues/monitor-queue-storage-reference) | configuration | 0.78 | The monitoring reference page for Azure Queue Storage typically lists detailed metric names, dimensions, log categories, and diagnostic settings with specific parameter names, allowed values, and sometimes defaults. This constitutes product-specific configuration knowledge for monitoring and diagnostics that an LLM is unlikely to fully know from training. It is not focused on limits/quotas or troubleshooting error codes, but rather on how to configure and interpret monitoring data, fitting the configuration sub-skill. |
+| [Secure your Azure Queue storage](https://learn.microsoft.com/en-us/azure/storage/queues/secure-queues) | security | 0.78 | The page focuses on securing Azure Queue Storage with product-specific guidance, including how to handle sensitive message content, queue authorization patterns, and queue-specific security practices that go beyond generic security concepts. These are actionable, Azure-Queue-specific recommendations rather than high-level theory. |
 | [Security recommendations](https://learn.microsoft.com/en-us/azure/storage/queues/security-recommendations) | best-practices | 0.75 | Security recommendations for Queue Storage with concrete product-specific guidance (for example, which features to enable, how to configure Defender for Cloud alerts). |
 | [Migrate to passwordless connections](https://learn.microsoft.com/en-us/azure/storage/queues/passwordless-migrate-queues) | security | 0.70 | Guides migration from Shared Key to Entra ID/RBAC for queues with product-specific authentication configuration steps and considerations. |
 | [Portal](https://learn.microsoft.com/en-us/azure/storage/queues/authorize-data-operations-portal) | security | 0.70 | Explains how portal operations against queue data are authorized via Entra ID or account keys, including specific permission requirements and modes. |

@@ -1,9 +1,9 @@
 ---
 name: azure-pipelines
-description: Expert knowledge for Azure Pipelines development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring YAML pipelines, service connections/Key Vault, multi-platform agents, Git/Slack integrations, or Web App/Kubernetes deployments, and other Azure Pipelines related development tasks. Not for Azure DevOps (use azure-devops), Azure Boards (use azure-boards), Azure Repos (use azure-repos), Azure Test Plans (use azure-test-plans).
+description: Expert knowledge for Azure Pipelines development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when securing agents/secrets, authoring YAML, deploying to AKS/Web Apps/VMs, or integrating Git/Key Vault, and other Azure Pipelines related development tasks. Not for Azure DevOps (use azure-devops), Azure Boards (use azure-boards), Azure Repos (use azure-repos), Azure Test Plans (use azure-test-plans).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-16"
+  generated_at: "2026-08-31"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Pipelines Skill
@@ -24,23 +24,24 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L47 | Diagnosing and fixing Azure Pipelines issues: service connection/auth errors, triggers not firing, runs not starting, log analysis, and deployment failures (especially Azure Web Apps). |
-| Best Practices | L48-L59 | Guidance on YAML template design, caching for faster builds, cross-platform scripts, and best practices for configuring, parallelizing, and stabilizing automated tests (including UI and VSTest). |
-| Decision Making | L60-L65 | Guides for migrating CI/CD pipelines to Azure Pipelines, including from Jenkins/Travis and from classic UI pipelines to YAML, with patterns, pitfalls, and safe migration steps. |
-| Architecture & Design Patterns | L66-L73 | Guidance on end-to-end CI/CD and DevOps architectures for Azure: baseline pipeline patterns, Web App deployment design, and IaaS/VM-focused DevTest and production pipelines. |
-| Limits & Quotas | L74-L85 | Limits, quotas, and planning for Azure Pipelines: agent concurrency, GitHub/Microsoft-hosted agent limits, image deprecations, parallel jobs, run retention, and large Universal Packages. |
-| Security | L86-L136 | Securing Azure Pipelines: agent auth, service connections, secrets/Key Vault, permissions and approvals, artifact/repo protection, workload identities, and security automation/tools. |
-| Configuration | L137-L501 | Configuring Azure Pipelines: agents, triggers, variables, environments, YAML schema, and detailed task/step settings for building, testing, deploying, and managing artifacts. |
-| Integrations & Coding Patterns | L502-L530 | Language-specific CI/CD pipeline examples, scripting patterns, and integrations (Git, Key Vault, Slack, ServiceNow, REST/Functions, Selenium) for building, testing, and automating Azure Pipelines. |
-| Deployment | L531-L589 | Deploying apps and packages with Azure Pipelines: agent setup (Windows/Linux/macOS/containers), artifacts (NuGet/npm/Maven/etc.), and deployment to VMs, web apps, Kubernetes, SQL, and Azure resources. |
+| Troubleshooting | L37-L48 | Diagnosing and fixing Azure Pipelines problems: service connection/auth issues, code coverage setup, log-based debugging, trigger/start failures, and common run/deployment errors. |
+| Best Practices | L49-L60 | Guidance on YAML template design, caching for faster builds, cross-platform scripts, and best practices for configuring, parallelizing, and stabilizing automated tests (including UI and VSTest). |
+| Decision Making | L61-L67 | Guidance on choosing GitHub-hosted agents and safely migrating CI/CD pipelines from Jenkins or classic Azure Pipelines to YAML-based Azure Pipelines. |
+| Architecture & Design Patterns | L68-L75 | Guidance on end-to-end CI/CD and DevOps architectures for Azure: baseline pipeline patterns, Web App deployment design, and IaaS/VM-focused DevTest and production pipelines. |
+| Limits & Quotas | L76-L85 | Limits, quotas, and planning for Azure Pipelines: agent concurrency, GitHub/Microsoft-hosted agent limits, image deprecations, parallel jobs, run retention, and large Universal Packages. |
+| Security | L86-L137 | Securing Azure Pipelines: auth for agents, permissions, approvals, secrets/Key Vault, secure ARM/service connections, repo protection, and security automation/configuration tasks. |
+| Configuration | L138-L500 | Configuring Azure Pipelines: agents, triggers, environments, YAML schema, variables, jobs/stages, artifacts, and detailed setup for built‑in tasks across languages and Azure services. |
+| Integrations & Coding Patterns | L501-L529 | Language-specific CI/CD pipeline examples, scripting patterns, and integrations (Git, Key Vault, Slack, ServiceNow, REST/Functions, Selenium) for building, testing, and automating Azure Pipelines. |
+| Deployment | L530-L588 | Deploying apps and packages with Azure Pipelines: agent setup (Windows/Linux/macOS/containers), artifacts (NuGet/npm/Maven/etc.), and deployment to VMs, web apps, Kubernetes, SQL, and Azure resources. |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
 | Troubleshoot Azure Resource Manager service connections in Pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/release/azure-rm-endpoint?view=azure-devops |
 | Troubleshoot ARM workload identity service connections in pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/release/troubleshoot-workload-identity?view=azure-devops |
+| Configure and troubleshoot code coverage in Azure Pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/test/review-code-coverage-results?view=azure-devops |
 | Review Azure Pipelines logs for diagnostics | https://learn.microsoft.com/en-us/azure/devops/pipelines/troubleshooting/review-logs?view=azure-devops |
-| Troubleshoot Azure Web App deployment tasks in pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/troubleshooting/troubleshoot-azure-web-app-deploy?view=azure-devops |
+| Resolve Azure Web App deployment task errors in Pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/troubleshooting/troubleshoot-azure-web-app-deploy?view=azure-devops |
 | Troubleshoot Azure Pipelines that fail to start | https://learn.microsoft.com/en-us/azure/devops/pipelines/troubleshooting/troubleshoot-start?view=azure-devops |
 | Troubleshoot Azure Pipelines trigger issues | https://learn.microsoft.com/en-us/azure/devops/pipelines/troubleshooting/troubleshoot-triggers?view=azure-devops |
 | Diagnose and fix Azure Pipelines run failures | https://learn.microsoft.com/en-us/azure/devops/pipelines/troubleshooting/troubleshooting?view=azure-devops |
@@ -60,6 +61,7 @@ This skill requires **network access** to fetch documentation content:
 ### Decision Making
 | Topic | URL |
 |-------|-----|
+| Choose and use GitHub-hosted agents for Azure Pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/github-hosted?view=azure-devops |
 | Migrate from Jenkins to Azure Pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/migrate/from-jenkins?view=azure-devops |
 | Migrate Classic Azure Pipelines to YAML safely | https://learn.microsoft.com/en-us/azure/devops/pipelines/release/from-classic-pipelines?view=azure-devops |
 
@@ -74,8 +76,6 @@ This skill requires **network access** to fetch documentation content:
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
-| Review GitHub-hosted agents quotas and FAQs for Pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/github-hosted-faq?view=azure-devops |
-| Plan usage and limits for GitHub-hosted agents in Pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/github-hosted?view=azure-devops |
 | Track deprecation schedule for hosted build images | https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/hosted-deprecation-schedule?view=azure-devops |
 | Understand Microsoft-hosted agent limits in Azure Pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/hosted?view=azure-devops |
 | Analyze Azure Pipelines agent pool concurrency | https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/pool-consumption-report?view=azure-devops |
@@ -96,6 +96,7 @@ This skill requires **network access** to fetch documentation content:
 | Secure Azure DevOps pipelines with Entra workload identities | https://learn.microsoft.com/en-us/azure/devops/pipelines/library/add-devops-entra-service-connection?view=azure-devops |
 | Assign administrators for protected pipeline resources | https://learn.microsoft.com/en-us/azure/devops/pipelines/library/add-resource-protection?view=azure-devops |
 | Handle special-case ARM service connections in Azure Pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/library/azure-resource-manager-alternate-approaches?view=azure-devops |
+| Configure Azure Resource Manager service connections securely | https://learn.microsoft.com/en-us/azure/devops/pipelines/library/connect-to-azure?view=azure-devops |
 | Link Azure Pipelines variable groups to Key Vault | https://learn.microsoft.com/en-us/azure/devops/pipelines/library/link-variable-groups-to-key-vaults?view=azure-devops |
 | Manage secure files and access in Azure Pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/library/secure-files?view=azure-devops |
 | Manage Azure Pipelines variable groups and access | https://learn.microsoft.com/en-us/azure/devops/pipelines/library/variable-groups?view=azure-devops |
@@ -121,7 +122,7 @@ This skill requires **network access** to fetch documentation content:
 | Plan an approach for securing YAML pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/security/approach?view=azure-devops |
 | Securely handle variables and parameters in Azure Pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/security/inputs?view=azure-devops |
 | Secure Azure Pipelines agents, projects, and containers | https://learn.microsoft.com/en-us/azure/devops/pipelines/security/misc?view=azure-devops |
-| Configure security settings for Azure Pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/security/overview?view=azure-devops |
+| Apply security configurations for Azure Pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/security/overview?view=azure-devops |
 | Automate Azure Pipelines security with REST and PowerShell | https://learn.microsoft.com/en-us/azure/devops/pipelines/security/project-security-script?view=azure-devops |
 | Configure pipeline resource security and approvals | https://learn.microsoft.com/en-us/azure/devops/pipelines/security/resources?view=azure-devops |
 | Protect and manage secrets in Azure Pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/security/secrets?view=azure-devops |
@@ -137,7 +138,7 @@ This skill requires **network access** to fetch documentation content:
 ### Configuration
 | Topic | URL |
 |-------|-----|
-| Choose and configure Azure Pipelines agents | https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/agents?view=azure-devops |
+| Configure and manage Azure Pipelines agents | https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/agents?view=azure-devops |
 | Configure Node.js runners in Azure Pipelines agent | https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/nodejs-runners?view=azure-devops |
 | Configure Azure Pipelines agent behind web proxy | https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/proxy?view=azure-devops |
 | Manage and configure Azure Pipelines v4 agents | https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/v4-agent?view=azure-devops |
@@ -147,7 +148,6 @@ This skill requires **network access** to fetch documentation content:
 | Use tasks and leases to retain Azure Pipelines runs | https://learn.microsoft.com/en-us/azure/devops/pipelines/build/run-retention?view=azure-devops |
 | Configure trigger settings for Azure Pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/build/triggers?view=azure-devops |
 | Reference predefined Azure Pipelines variables | https://learn.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops |
-| Configure Azure Resource Manager service connections in Pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/library/connect-to-azure?view=azure-devops |
 | Configure and manage Azure Pipelines service connections | https://learn.microsoft.com/en-us/azure/devops/pipelines/library/service-endpoints?view=azure-devops |
 | Configure conditions for Azure Pipelines stages, jobs, and steps | https://learn.microsoft.com/en-us/azure/devops/pipelines/process/conditions?view=azure-devops |
 | Configure container jobs in Azure Pipelines YAML | https://learn.microsoft.com/en-us/azure/devops/pipelines/process/container-phases?view=azure-devops |
@@ -281,7 +281,7 @@ This skill requires **network access** to fetch documentation content:
 | Install Duffle with DuffleInstaller@0 task | https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/duffle-installer-v0?view=azure-pipelines |
 | Extract archives with ExtractFiles@1 task | https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/extract-files-v1?view=azure-pipelines |
 | Configure FileTransform@1 for token replacement | https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/file-transform-v1?view=azure-pipelines |
-| Transform config files with FileTransform@2 | https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/file-transform-v2?view=azure-pipelines |
+| Configure FileTransform@2 task parameters in Azure Pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/file-transform-v2?view=azure-pipelines |
 | Configure FtpUpload@1 for FTP/FTPS uploads | https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/ftp-upload-v1?view=azure-pipelines |
 | Upload files via FTP with FtpUpload@2 | https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/ftp-upload-v2?view=azure-pipelines |
 | Configure FuncToolsInstaller@0 for Azure Functions | https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/func-tools-installer-v0?view=azure-pipelines |
@@ -419,13 +419,12 @@ This skill requires **network access** to fetch documentation content:
 | Configure Xcode@3 task for Xcode workspace builds | https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/xcode-v3?view=azure-pipelines |
 | Configure Xcode@4 task for macOS builds | https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/xcode-v4?view=azure-pipelines |
 | Configure Xcode@5 task for building and packaging iOS apps | https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/xcode-v5?view=azure-pipelines |
-| Configure and troubleshoot code coverage in pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/test/review-code-coverage-results?view=azure-devops |
 | Review and configure pipeline test result reporting | https://learn.microsoft.com/en-us/azure/devops/pipelines/test/review-continuous-test-results-after-build?view=azure-devops |
 | Configure and use Test Analytics in Azure Pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/test/test-analytics?view=azure-devops |
 | Configure Azure Pipelines YAML schema options | https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/?view=azure-pipelines |
 | Boolean type syntax and allowed values in pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/boolean?view=azure-pipelines |
 | Configure deployHook steps for application deployment | https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/deploy-hook?view=azure-pipelines |
-| Configure Azure Pipelines YAML extends templates | https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/extends?view=azure-pipelines |
+| Use YAML extends to compose Azure Pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/extends?view=azure-pipelines |
 | Configure include and exclude filters for triggers | https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/include-exclude-filters?view=azure-pipelines |
 | Configure string-based include and exclude filters | https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/include-exclude-string-filters?view=azure-pipelines |
 | Set deployment environments in Azure Pipelines YAML | https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/jobs-deployment-environment?view=azure-pipelines |

@@ -46,8 +46,8 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 10
-- **Unchanged**: 30
+- **Updated Pages**: 0
+- **Unchanged**: 40
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-bastion/azure-bastion.csv`
 
@@ -65,29 +65,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | *(Unclassified)* | 16 | 40.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [What's new in Bastion?](https://learn.microsoft.com/en-us/azure/bastion/whats-new)
-  - Updated: 2026-04-11T06:13:00.000Z → 2026-08-12T22:14:00.000Z
-- [Azure PowerShell](https://learn.microsoft.com/en-us/azure/bastion/bastion-create-host-powershell)
-  - Updated: 2025-03-03T08:00:00.000Z → 2026-08-12T05:20:00.000Z
-- [Configure Microsoft Entra ID authentication](https://learn.microsoft.com/en-us/azure/bastion/bastion-entra-id-authentication)
-  - Updated: 2026-03-09T22:17:00.000Z → 2026-08-11T08:00:00.000Z
-- [SSH connection](https://learn.microsoft.com/en-us/azure/bastion/bastion-connect-vm-ssh-linux)
-  - Updated: 2026-03-17T11:12:00.000Z → 2026-08-11T08:00:00.000Z
-- [RDP connection](https://learn.microsoft.com/en-us/azure/bastion/bastion-connect-vm-linux-rdp)
-  - Updated: 2026-03-17T06:14:00.000Z → 2026-08-11T08:00:00.000Z
-- [Configure native client support](https://learn.microsoft.com/en-us/azure/bastion/native-client)
-  - Updated: 2025-04-07T17:07:00.000Z → 2026-08-12T05:20:00.000Z
-- [Transfer files - native client](https://learn.microsoft.com/en-us/azure/bastion/vm-upload-download-native)
-  - Updated: 2025-01-24T08:00:00.000Z → 2026-08-10T08:00:00.000Z
-- [Configure a shareable link](https://learn.microsoft.com/en-us/azure/bastion/shareable-link)
-  - Updated: 2024-12-09T08:00:00.000Z → 2026-08-11T22:11:00.000Z
-- [Bastion configuration settings](https://learn.microsoft.com/en-us/azure/bastion/configuration-settings)
-  - Updated: 2026-03-19T22:26:00.000Z → 2026-08-12T22:14:00.000Z
-- [Secure Bastion](https://learn.microsoft.com/en-us/azure/bastion/secure-bastion)
-  - Updated: 2025-09-03T17:13:00.000Z → 2026-08-12T05:20:00.000Z
 
 ## Classified Pages
 

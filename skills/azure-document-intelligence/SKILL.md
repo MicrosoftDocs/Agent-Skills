@@ -1,9 +1,9 @@
 ---
 name: azure-document-intelligence
-description: Expert knowledge for Azure AI Document Intelligence development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when training custom models, calling AnalyzeDocument APIs, using containers, securing access, or migrating to v4.0, and other Azure AI Document Intelligence related development tasks. Not for Azure AI Search (use azure-cognitive-search), Azure AI Vision (use azure-ai-vision), Azure AI Custom Vision (use azure-custom-vision), Azure AI Video Indexer (use azure-video-indexer).
+description: Expert knowledge for Azure AI Document Intelligence development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing custom models, calling AnalyzeDocument APIs, running containers/offline, or migrating to v4.0, and other Azure AI Document Intelligence related development tasks. Not for Azure AI Vision (use azure-ai-vision), Azure AI Search (use azure-cognitive-search), Azure AI Custom Vision (use azure-custom-vision), Azure AI Video Indexer (use azure-video-indexer).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-16"
+  generated_at: "2026-08-31"
   generator: "docs2skills/1.0.0"
 ---
 # Azure AI Document Intelligence Skill
@@ -25,7 +25,7 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L36-L42 | Diagnosing latency, understanding and fixing Document Intelligence API error codes, and handling known service issues and limitations. |
-| Best Practices | L43-L54 | Guidance for training, labeling, composing, and managing custom Document Intelligence models to maximize accuracy, confidence, and table extraction quality. |
+| Best Practices | L43-L54 | Guidance on designing, training, labeling, composing, and maintaining custom/classification/template models to maximize Document Intelligence accuracy and confidence |
 | Decision Making | L55-L61 | Choosing the right Document Intelligence model, estimating and optimizing usage/costs, and planning or executing migration to v4.0 from earlier versions. |
 | Limits & Quotas | L62-L71 | Capacity limits, quotas, scaling with add-ons and batch analysis, container image tags, and supported OCR languages/locales and prebuilt model language coverage. |
 | Security | L72-L79 | Securing Document Intelligence resources: creating SAS tokens, configuring data-at-rest encryption with customer-managed keys, and using managed identities and VNETs for secure access. |

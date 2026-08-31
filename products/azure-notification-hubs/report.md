@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-19'
+generated_at: '2026-08-31'
 category_descriptions:
   integrations: Implementing and migrating push notification integrations (FCM v1,
     APNS, WNS), device/user targeting, templates, localization, and using REST/SDKs
@@ -12,45 +12,45 @@ category_descriptions:
   security: 'Security, encryption, TLS, and network isolation for Notification Hubs:
     data-at-rest encryption, EU data boundary, SAS/role-based access, TLS version
     planning, and Private Link setup.'
+  deployment: Guidance on safely migrating Notification Hubs across Azure regions,
+    including planning, data preservation, and minimizing downtime during region moves.
   architecture-patterns: Guidance on designing large-scale, multi-tenant, and geo-distributed
     push notification architectures with Azure Notification Hubs, including patterns,
     best practices, and integration approaches.
-  limits-quotas: Notification Hubs limits, quotas, and throttling behaviors, plus
-    how to create, manage, and understand constraints of scheduled push notifications.
+  best-practices: Designing Notification Hubs solutions, choosing registration patterns,
+    using tags/routing, and creating templates for efficient, targeted push notifications.
   troubleshooting: Diagnosing and fixing common Notification Hubs issues, including
     delivery failures, dropped notifications, platform-specific errors, and steps
     to trace, test, and resolve send problems.
-  best-practices: 'Guidance on designing Notification Hubs apps: registration patterns,
-    tags and routing, templates, and implementation FAQs for scalable, targeted push
-    notifications.'
+  limits-quotas: Notification Hubs limits, quotas, and throttling behaviors, plus
+    how to create, manage, and understand constraints of scheduled push notifications.
 skill_description: Expert knowledge for Azure Notification Hubs development including
   troubleshooting, best practices, decision making, architecture & design patterns,
-  limits & quotas, security, configuration, and integrations & coding patterns. Use
-  when integrating APNS/FCM/WNS, configuring PNS creds, using REST/SDKs, Private Link,
-  or scheduled pushes, and other Azure Notification Hubs related development tasks.
-  Not for Azure Event Hubs (use azure-event-hubs), Azure Service Bus (use azure-service-bus),
-  Azure Web PubSub (use azure-web-pubsub), Azure SignalR Service (use azure-signalr-service).
-use_when: Use when integrating APNS/FCM/WNS, configuring PNS creds, using REST/SDKs,
-  Private Link, or scheduled pushes, and other Azure Notification Hubs related development
+  limits & quotas, security, configuration, integrations & coding patterns, and deployment.
+  Use when integrating FCM/APNS/WNS, targeting devices/users, using tags/templates,
+  IaC config, or Private Link, and other Azure Notification Hubs related development
+  tasks. Not for Azure Event Hubs (use azure-event-hubs), Azure Service Bus (use azure-service-bus),
+  Azure Web PubSub (use azure-web-pubsub).
+use_when: Use when integrating FCM/APNS/WNS, targeting devices/users, using tags/templates,
+  IaC config, or Private Link, and other Azure Notification Hubs related development
   tasks.
 confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Service
-  Bus (use azure-service-bus), Azure Web PubSub (use azure-web-pubsub), Azure SignalR
-  Service (use azure-signalr-service).
+  Bus (use azure-service-bus), Azure Web PubSub (use azure-web-pubsub).
 ---
 # Azure Notification Hubs Crawl Report
 
 ## Summary
 
-- **Total Pages**: 67
-- **Fetched**: 67
+- **Total Pages**: 68
+- **Fetched**: 68
 - **Fetch Failed**: 0
 - **Classified**: 53
-- **Unclassified**: 14
+- **Unclassified**: 15
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 67
+- **New Pages**: 1
+- **Updated Pages**: 4
+- **Unchanged**: 63
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-notification-hubs/azure-notification-hubs.csv`
 
@@ -59,16 +59,32 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Servi
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 1 | 1.5% |
-| best-practices | 3 | 4.5% |
-| configuration | 16 | 23.9% |
+| best-practices | 4 | 5.9% |
+| configuration | 16 | 23.5% |
 | decision-making | 1 | 1.5% |
-| integrations | 24 | 35.8% |
-| limits-quotas | 2 | 3.0% |
-| security | 5 | 7.5% |
+| deployment | 1 | 1.5% |
+| integrations | 23 | 33.8% |
+| limits-quotas | 1 | 1.5% |
+| security | 5 | 7.4% |
 | troubleshooting | 1 | 1.5% |
-| *(Unclassified)* | 14 | 20.9% |
+| *(Unclassified)* | 15 | 22.1% |
 
 ## Changes
+
+### New Pages
+
+- [Enable disaster recovery for an existing namespace](https://learn.microsoft.com/en-us/azure/notification-hubs/enable-disaster-recovery-existing-namespace)
+
+### Updated Pages
+
+- [Move resources between regions](https://learn.microsoft.com/en-us/azure/notification-hubs/move-registrations)
+  - Updated: 2021-10-25T17:02:00.000Z → 2024-08-04T11:36:00.000Z
+- [FAQ](https://learn.microsoft.com/en-us/azure/notification-hubs/notification-hubs-push-notification-faq)
+  - Updated: 2026-07-15T22:16:00.000Z → 2026-08-26T11:42:00.000Z
+- [Create notification hub - Azure portal](https://learn.microsoft.com/en-us/azure/notification-hubs/create-notification-hub-portal)
+  - Updated: 2025-05-01T08:00:00.000Z → 2026-08-26T11:42:00.000Z
+- [UWP React Native sample overview](https://learn.microsoft.com/en-us/azure/notification-hubs/uwp-react)
+  - Updated: 2022-04-25T22:04:00.000Z → 2026-03-25T22:12:00.000Z
 
 ## Classified Pages
 
@@ -87,8 +103,8 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Servi
 | [Configure Windows Push Notification Service](https://learn.microsoft.com/en-us/azure/notification-hubs/configure-windows-push-notification-service) | configuration | 0.70 | WNS setup for Notification Hubs involves specific configuration fields (SID, secret, etc.) that are product-specific. |
 | [Configure a notification hub](https://learn.microsoft.com/en-us/azure/notification-hubs/configure-notification-hub-portal-pns-settings) | configuration | 0.70 | Portal-based setup of PNS credentials per platform (APNS, FCM, etc.) involves specific setting names and required values unique to Notification Hubs. |
 | [Enable resource logs](https://learn.microsoft.com/en-us/azure/notification-hubs/notification-hubs-diagnostic-logs) | configuration | 0.70 | Covers operational/diagnostic logs and how to enable them; likely includes specific log categories and settings names for this service. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/notification-hubs/notification-hubs-push-notification-faq) | limits-quotas | 0.70 | FAQ pages for Azure Notification Hubs typically include concrete, product-specific details such as maximum registrations per hub, tag limits, broadcast limits, platform-specific constraints, and sometimes timeouts or throughput caps. These are exact numeric limits and behavioral constraints that are not generally known from training data and are needed for capacity planning and design, fitting the limits-quotas sub-skill. |
 | [Initial configuration to receive push notification from Azure Notification Hubs](https://learn.microsoft.com/en-us/azure/notification-hubs/ios-sdk-current) | integrations | 0.70 | Details SDK version-specific APIs and patterns for integrating iOS apps with Notification Hubs, which are product-specific integration details. |
+| [Move resources between regions](https://learn.microsoft.com/en-us/azure/notification-hubs/move-registrations) | deployment | 0.70 | Region move guidance for Notification Hubs typically includes product-specific constraints and required steps (for example, handling registrations, connection strings, and sequencing) that go beyond generic deployment knowledge and are unique to this service’s behavior when relocating resources. |
 | [Security model](https://learn.microsoft.com/en-us/azure/notification-hubs/notification-hubs-push-notification-security) | security | 0.70 | Describes SAS keys, access levels, and security patterns specific to Notification Hubs, including how to securely access the service. |
 | [Send cross-platform notifications](https://learn.microsoft.com/en-us/azure/notification-hubs/notification-hubs-aspnet-cross-platform-notification) | integrations | 0.70 | Demonstrates template-based cross-platform notifications from ASP.NET backend, including concrete template and API usage patterns. |
 | [Send localized push notifications to iOS devices](https://learn.microsoft.com/en-us/azure/notification-hubs/notification-hubs-ios-xplat-localized-apns-push-notification) | integrations | 0.70 | Demonstrates Notification Hubs templates for localization, including template definitions and tag usage specific to this service. |
@@ -105,6 +121,7 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Servi
 | [Create notification hub - Bicep](https://learn.microsoft.com/en-us/azure/notification-hubs/create-notification-hub-bicep) | configuration | 0.65 | Bicep-based resource definition typically includes specific resource types, properties, and allowed values for Notification Hubs that are product-specific configuration knowledge. |
 | [Create notification hub - Template](https://learn.microsoft.com/en-us/azure/notification-hubs/create-notification-hub-template) | configuration | 0.65 | ARM template article defines JSON schema, resource types, and property names/values for Notification Hubs, which are detailed configuration parameters. |
 | [Data encryption at rest](https://learn.microsoft.com/en-us/azure/notification-hubs/encrypt-at-rest) | security | 0.65 | Explains how TDE is applied to Notification Hubs data and keys, including product-specific encryption behavior. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/notification-hubs/notification-hubs-push-notification-faq) | best-practices | 0.65 | A product-specific FAQ for Notification Hubs usually contains concrete recommendations, gotchas, and edge cases (for example, platform-specific behaviors, scaling considerations, and registration patterns) that are not generic and qualify as expert best-practice guidance rather than simple conceptual or marketing content. |
 | [Monitor Notification Hubs](https://learn.microsoft.com/en-us/azure/notification-hubs/monitor-notification-hubs) | configuration | 0.65 | Monitoring article for a specific service typically lists metrics, log categories, and alert configuration options unique to Notification Hubs. |
 | [Send push location-based notifications](https://learn.microsoft.com/en-us/azure/notification-hubs/notification-hubs-push-bing-spatial-data-geofencing-notification) | integrations | 0.65 | Combines Bing Spatial Data APIs with Notification Hubs, including query parameters and integration code unique to this scenario. |
 | [Send push notifications to specific devices](https://learn.microsoft.com/en-us/azure/notification-hubs/notification-hubs-ios-xplat-segmented-apns-push-notification) | integrations | 0.65 | Shows how to use tags/registrations and APNS payloads to send to specific iOS devices, including Notification Hubs-specific API usage. |
@@ -126,7 +143,6 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Servi
 | [Send push notifications to specific devices](https://learn.microsoft.com/en-us/azure/notification-hubs/notification-hubs-windows-notification-dotnet-push-xplat-segmented-wns) | integrations | 0.60 | Shows tag-based registration and targeting for UWP with Notification Hubs, including platform-specific code and patterns. |
 | [Send push notifications to specific users](https://learn.microsoft.com/en-us/azure/notification-hubs/notification-hubs-aspnet-backend-windows-dotnet-wns-notification) | integrations | 0.60 | Describes backend + Notification Hubs integration to target specific users on UWP, including registration and auth patterns. |
 | [Use APNS VOIP through Notification Hubs](https://learn.microsoft.com/en-us/azure/notification-hubs/voip-apns) | integrations | 0.60 | Describes an unofficial VOIP scenario; likely includes specific payload formats and headers unique to APNS VOIP with Notification Hubs. |
-| [UWP React Native sample overview](https://learn.microsoft.com/en-us/azure/notification-hubs/uwp-react) | integrations | 0.55 | Sample app overview for cross-platform notifications; likely includes platform-specific registration and Notification Hubs integration patterns. |
 
 ## Unclassified Pages
 
@@ -134,15 +150,16 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Servi
 |-----------|------------|--------|
 | [Export and import registrations in bulk](https://learn.microsoft.com/en-us/azure/notification-hubs/export-modify-registrations-bulk) | 0.50 | Bulk import/export article mentions availability only on the Standard tier but no specific numeric limits or detailed config tables in the summary. |
 | [Create notification hub - Azure CLI](https://learn.microsoft.com/en-us/azure/notification-hubs/create-notification-hub-azure-cli) | 0.40 | CLI quickstart for creating a hub; shows commands but not deep configuration matrices or product-specific constraints. |
-| [Create notification hub - Azure portal](https://learn.microsoft.com/en-us/azure/notification-hubs/create-notification-hub-portal) | 0.40 | Quickstart for creating a hub in the portal; mostly step-by-step UI instructions without detailed configuration parameter tables. |
 | [Deploy and manage notification hubs using Azure PowerShell](https://learn.microsoft.com/en-us/azure/notification-hubs/notification-hubs-deploy-and-manage-powershell) | 0.40 | PowerShell deployment/management tutorial; description doesn’t indicate detailed config parameter tables, limits, or troubleshooting mappings. |
-| [Move resources between regions](https://learn.microsoft.com/en-us/azure/notification-hubs/move-registrations) | 0.40 | Region move guidance; summary is high-level process without explicit limits, decision matrices, or configuration parameter references. |
 | [Push notifications using Baidu cloud push](https://learn.microsoft.com/en-us/azure/notification-hubs/notification-hubs-baidu-china-android-notifications-get-started) | 0.40 | Getting started tutorial for Baidu push; primarily step-by-step usage, not configuration tables, limits, or troubleshooting mappings. |
 | [Send secure notifications to users](https://learn.microsoft.com/en-us/azure/notification-hubs/notification-hubs-aspnet-backend-windows-dotnet-wns-secure-push-notification) | 0.40 | Secure push tutorial for Windows with C#; likely step-by-step and sample code, but summary doesn’t show RBAC roles or detailed security config tables. |
 | [Create notification hub - Node.js](https://learn.microsoft.com/en-us/azure/notification-hubs/notification-hubs-nodejs-push-notification-tutorial) | 0.30 | Node.js push tutorial; typical how-to without indication of config tables, limits, or troubleshooting mappings. |
+| [Enable disaster recovery for an existing namespace](https://learn.microsoft.com/en-us/azure/notification-hubs/enable-disaster-recovery-existing-namespace) | 0.30 | Portal-based how-to for enabling or changing disaster recovery region; likely high-level procedural guidance without explicit limits, configuration tables, or detailed DR decision matrices. |
 | [Integration with App Service Mobile Apps](https://learn.microsoft.com/en-us/azure/notification-hubs/notification-hubs-app-service) | 0.30 | Describes conceptual integration workflow between App Service Mobile Apps and Notification Hubs; lacks concrete config tables or error codes. |
 | [Push rich content to devices](https://learn.microsoft.com/en-us/azure/notification-hubs/notification-hubs-aspnet-backend-ios-apple-push-notification-service-apns-rich) | 0.30 | Tutorial on rich push notifications with sample code; no indication of product-specific limits, configs tables, or error mappings beyond general SDK usage. |
 | [SDKs](https://learn.microsoft.com/en-us/azure/notification-hubs/notification-hubs-sdks) | 0.30 | SDK list/overview; primarily navigation to repositories without detailed configuration, limits, or troubleshooting content. |
 | [Send browser push notifications](https://learn.microsoft.com/en-us/azure/notification-hubs/browser-push) | 0.30 | High-level article on browser push with Notification Hubs; summary suggests flow steps, not detailed configuration tables or limits. |
 | [About Notification Hubs](https://learn.microsoft.com/en-us/azure/notification-hubs/notification-hubs-push-notification-overview) | 0.20 | High-level product overview of Azure Notification Hubs; no detailed limits, configs, or error mappings. |
 | [Code samples](https://learn.microsoft.com/en-us/azure/notification-hubs/samples) | 0.20 | Index of sample links; does not itself contain technical details or configurations. |
+| [Create notification hub - Azure portal](https://learn.microsoft.com/en-us/azure/notification-hubs/create-notification-hub-portal) | 0.20 | Quickstart for creating a notification hub via the Azure portal; primarily step-by-step UI instructions without detailed configuration tables, limits, or product-specific expert constraints. |
+| [UWP React Native sample overview](https://learn.microsoft.com/en-us/azure/notification-hubs/uwp-react) | 0.10 | Overview of a sample cross-platform app using Notification Hubs; describes scenario and sample availability but lacks detailed configuration parameters, limits, or troubleshooting content. |

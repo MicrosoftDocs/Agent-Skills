@@ -43,34 +43,41 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 
 ## Summary
 
-- **Total Pages**: 115
-- **Fetched**: 115
+- **Total Pages**: 111
+- **Fetched**: 111
 - **Fetch Failed**: 0
-- **Classified**: 90
+- **Classified**: 86
 - **Unclassified**: 25
 
 ### Incremental Update
 - **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 115
-- **Deleted Pages**: 0
+- **Unchanged**: 111
+- **Deleted Pages**: 4
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-automation/azure-automation.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| best-practices | 6 | 5.2% |
-| configuration | 38 | 33.0% |
-| decision-making | 5 | 4.3% |
-| deployment | 4 | 3.5% |
-| integrations | 9 | 7.8% |
-| limits-quotas | 4 | 3.5% |
-| security | 17 | 14.8% |
-| troubleshooting | 7 | 6.1% |
-| *(Unclassified)* | 25 | 21.7% |
+| best-practices | 6 | 5.4% |
+| configuration | 38 | 34.2% |
+| decision-making | 4 | 3.6% |
+| deployment | 2 | 1.8% |
+| integrations | 9 | 8.1% |
+| limits-quotas | 4 | 3.6% |
+| security | 17 | 15.3% |
+| troubleshooting | 6 | 5.4% |
+| *(Unclassified)* | 25 | 22.5% |
 
 ## Changes
+
+### Deleted Pages
+
+- ~~Deploy agent-based Linux worker~~ (https://learn.microsoft.com/en-us/azure/automation/automation-linux-hrw-install)
+- ~~Deploy agent-based Windows worker~~ (https://learn.microsoft.com/en-us/azure/automation/automation-windows-hrw-install)
+- ~~Migrate existing Agent-based Hybrid Workers to Extension-based Workers~~ (https://learn.microsoft.com/en-us/azure/automation/migrate-existing-agent-based-hybrid-worker-to-extension-based-workers)
+- ~~Troubleshoot Agent-based Hybrid Runbook Worker Issues~~ (https://learn.microsoft.com/en-us/azure/automation/troubleshoot/hybrid-runbook-worker)
 
 ## Classified Pages
 
@@ -80,7 +87,6 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 | [Best practices for security in Azure Automation](https://learn.microsoft.com/en-us/azure/automation/automation-security-guidelines) | security | 0.95 | Explicitly a security best-practices article with detailed guidance on securing Automation accounts, Hybrid workers, identities, and networks. |
 | [Automation network configuration details](https://learn.microsoft.com/en-us/azure/automation/automation-network-configuration) | configuration | 0.90 | Provides detailed network information (endpoints, ports, URLs) required by Automation features, which is product-specific configuration. |
 | [Manage automation limits and quotas](https://learn.microsoft.com/en-us/azure/automation/automation-limits-quotas) | limits-quotas | 0.90 | Explicitly about Automation subscription limits and quota management; such pages typically list concrete numeric limits and quota adjustment procedures that are not inferable from general training. |
-| [Troubleshoot Agent-based Hybrid Runbook Worker Issues](https://learn.microsoft.com/en-us/azure/automation/troubleshoot/hybrid-runbook-worker) | troubleshooting | 0.90 | Agent-based Hybrid Runbook Worker troubleshooting article will map particular symptoms and error codes to causes and fixes, which is expert, product-specific troubleshooting knowledge. |
 | [Troubleshoot Extension-based Hybrid Runbook Worker Issues](https://learn.microsoft.com/en-us/azure/automation/troubleshoot/extension-based-hybrid-runbook-worker) | troubleshooting | 0.90 | Troubleshooting guide for extension-based Hybrid Runbook Workers will contain specific error conditions, logs, and resolution steps unique to this worker type, clearly matching the troubleshooting category. |
 | [Troubleshoot Managed Identity Issues](https://learn.microsoft.com/en-us/azure/automation/troubleshoot/managed-identity) | troubleshooting | 0.90 | Explicitly a troubleshooting article for managed identity with Automation accounts; such pages map specific symptoms and error messages to causes and resolutions, often including exact error texts and configuration checks, matching the troubleshooting criteria. |
 | [Troubleshoot Runbook Issues](https://learn.microsoft.com/en-us/azure/automation/troubleshoot/runbooks) | troubleshooting | 0.90 | Specifically about runbook issues and how to resolve them; such content typically includes error messages, job status meanings, and stepwise resolutions, fitting the troubleshooting sub-skill definition. |
@@ -98,7 +104,6 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 | [Supported regions](https://learn.microsoft.com/en-us/azure/azure-change-tracking-inventory/change-tracking-inventory-support-matrix) | limits-quotas | 0.80 | Explicitly a support matrix and limitations page; likely includes region support tables, OS/version support, and specific constraints that qualify as limits/quotas. |
 | [Using user-assigned managed identity](https://learn.microsoft.com/en-us/azure/automation/add-user-assigned-identity) | security | 0.80 | Describes setting up user-assigned managed identities and includes a specific constraint about Hybrid Runbook Worker usage; involves identity configuration and product-specific limitations, fitting security. |
 | [Connect privately to Automation account](https://learn.microsoft.com/en-us/azure/automation/how-to/private-link-security) | security | 0.75 | Details using Private Link/private endpoints for Automation, including network/security configuration specifics unique to this service. |
-| [Deploy agent-based Windows worker](https://learn.microsoft.com/en-us/azure/automation/automation-windows-hrw-install) | deployment | 0.75 | Describes deploying agent-based Hybrid Runbook Workers on Windows machines and their interaction with Azure Automation and Arc-enabled servers, which is product-specific deployment knowledge. |
 | [Forward Azure Automation diagnostic logs to Azure Monitor](https://learn.microsoft.com/en-us/azure/automation/automation-manage-send-joblogs-log-analytics) | integrations | 0.75 | Describes configuration to send job status and streams to Log Analytics workspaces; includes workspace and diagnostic settings specific to Automation–Monitor integration. |
 | [Manage Python 3 packages](https://learn.microsoft.com/en-us/azure/automation/python-3-packages) | configuration | 0.75 | Details Python 3 package handling, including version support notes and requirements for Hybrid Runbook Workers; product-specific configuration nuances. |
 | [Manage certificates](https://learn.microsoft.com/en-us/azure/automation/shared-resources/certificates) | security | 0.75 | Details secure storage/encryption of certificate assets and how to access them via specific cmdlets; product-specific security configuration patterns. |
@@ -148,13 +153,11 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 | [Create Automation account - Terraform](https://learn.microsoft.com/en-us/azure/automation/quickstarts/create-azure-automation-account-terraform) | security | 0.65 | Shows Terraform configuration to create an Automation account with system-assigned identity and assign a specific RBAC role (Reader), which is product-specific security configuration. |
 | [Create PowerShell runbook using managed identity](https://learn.microsoft.com/en-us/azure/automation/learn/powershell-runbook-managed-identity) | security | 0.65 | Tutorial on using managed identities with runbooks; likely includes specific role assignments, scopes, and identity configuration steps that are product-specific security details. |
 | [Create config from existing servers](https://learn.microsoft.com/en-us/azure/automation/automation-dsc-config-from-server) | configuration | 0.65 | Covers creating configurations from existing servers, which involves detailed DSC configuration constructs and mappings. |
-| [Deploy agent-based Linux worker](https://learn.microsoft.com/en-us/azure/automation/automation-linux-hrw-install) | deployment | 0.65 | Step-by-step installation for agent-based Linux Hybrid Runbook Worker with product-specific commands/requirements; contains concrete deployment details beyond generic knowledge. |
 | [Edit Graphical runbooks](https://learn.microsoft.com/en-us/azure/automation/automation-graphical-authoring-intro) | configuration | 0.65 | Explains how graphical runbooks generate PowerShell code and how to configure them; product-specific authoring behavior and options. |
 | [Edit textual runbooks](https://learn.microsoft.com/en-us/azure/automation/automation-edit-textual-runbook) | configuration | 0.65 | Describes editor features like inserting cmdlets/assets/child runbooks and how they map to Automation resources; product-specific authoring configuration. |
 | [Get started with State Configuration](https://learn.microsoft.com/en-us/azure/automation/automation-dsc-getting-started) | configuration | 0.65 | A 'get started' article for State Configuration commonly walks through enabling features, setting node configurations, and assigning configurations to machines with specific parameter names and values. This is product-specific configuration guidance rather than generic DSC concepts. |
 | [Manage Office 365 services](https://learn.microsoft.com/en-us/azure/automation/manage-office-365) | integrations | 0.65 | Covers Automation integration with Office 365 via Entra ID; likely includes connection setup, permissions, and cmdlet usage specific to this integration. |
 | [Migrate Run As account to managed identity](https://learn.microsoft.com/en-us/azure/automation/migrate-run-as-accounts-managed-identity) | decision-making | 0.65 | Migration-focused article with cadence, support timelines, and concrete guidance on when/how to move from Run As accounts to managed identities; fits decision-making around authentication model migration. |
-| [Migrate existing Agent-based Hybrid Workers to Extension-based Workers](https://learn.microsoft.com/en-us/azure/automation/migrate-existing-agent-based-hybrid-worker-to-extension-based-workers) | decision-making | 0.65 | The page provides migration guidance and retirement timelines for agent-based User Hybrid Runbook Workers, along with benefits of extension-based workers and how to move between them. This is product-specific decision and migration content (when and how to switch worker types) rather than a generic overview. |
 | [Migration from Log Analytics to Azure Monitoring Agent version](https://learn.microsoft.com/en-us/azure/automation/change-tracking/guidance-migration-log-analytics-monitoring-agent) | decision-making | 0.65 | Migration guidance between LA and AMA; likely includes comparison of behaviors, supported scenarios, and recommended migration paths, aiding technology selection and transition. |
 | [Monitor runbooks with metric alert](https://learn.microsoft.com/en-us/azure/automation/automation-alert-metric) | configuration | 0.65 | Describes setting up metric alerts based on runbook completion; likely includes metric names, dimensions, and threshold settings unique to Automation. |
 | [Remove node and configuration](https://learn.microsoft.com/en-us/azure/automation/state-configuration/remove-node-and-configuration-package) | configuration | 0.65 | Explains removing configuration documents and nodes; likely includes specific cmdlets, parameters, and portal actions unique to this service. |

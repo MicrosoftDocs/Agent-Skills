@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-16'
+generated_at: '2026-08-31'
 category_descriptions:
   integrations: Patterns and SDKs for integrating Logic Apps with AI agents, Azure/OpenAI,
     SAP, B2B/EDI, storage, messaging, on-prem systems, and for coding/testing workflows
@@ -49,13 +49,13 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Data Fa
 - **Total Pages**: 269
 - **Fetched**: 269
 - **Fetch Failed**: 0
-- **Classified**: 209
-- **Unclassified**: 60
+- **Classified**: 207
+- **Unclassified**: 62
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 0
-- **Unchanged**: 268
+- **New Pages**: 0
+- **Updated Pages**: 2
+- **Unchanged**: 267
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-logic-apps/azure-logic-apps.csv`
 
@@ -65,20 +65,23 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Data Fa
 |------|-------|------------|
 | architecture-patterns | 10 | 3.7% |
 | best-practices | 3 | 1.1% |
-| configuration | 34 | 12.6% |
+| configuration | 32 | 11.9% |
 | decision-making | 8 | 3.0% |
 | deployment | 19 | 7.1% |
 | integrations | 105 | 39.0% |
 | limits-quotas | 5 | 1.9% |
 | security | 13 | 4.8% |
 | troubleshooting | 12 | 4.5% |
-| *(Unclassified)* | 60 | 22.3% |
+| *(Unclassified)* | 62 | 23.0% |
 
 ## Changes
 
-### New Pages
+### Updated Pages
 
-- [Call Foundry agents from workflows](https://learn.microsoft.com/en-us/azure/logic-apps/automate-foundry-agents-with-workflows)
+- [Create integration account](https://learn.microsoft.com/en-us/azure/logic-apps/enterprise-integration/create-integration-account)
+  - Updated: 2025-09-05T08:00:00.000Z → 2026-08-25T08:00:00.000Z
+- [Manage integration accounts](https://learn.microsoft.com/en-us/azure/logic-apps/enterprise-integration/create-integration-account)
+  - Updated: 2025-09-05T08:00:00.000Z → 2026-08-25T08:00:00.000Z
 
 ## Classified Pages
 
@@ -209,7 +212,6 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Data Fa
 | [Create MCP servers from Standard workflows](https://learn.microsoft.com/en-us/azure/logic-apps/create-model-context-protocol-server-standard) | integrations | 0.70 | Describes configuring Standard Logic Apps as remote MCP servers so agents and MCP clients can call workflows as tools, a product-specific integration pattern. |
 | [Create chat completions with prompt templates](https://learn.microsoft.com/en-us/azure/logic-apps/connectors/create-chat-completions-prompt-template) | integrations | 0.70 | Describes using the Azure OpenAI action 'Get chat completions using Prompt Template'; such connector docs typically include action/parameter names, required fields, and configuration specifics for integrating Logic Apps with Azure OpenAI, which are product-specific integration details. |
 | [Create common example workflows](https://learn.microsoft.com/en-us/azure/logic-apps/connectors/sap-create-example-scenario-workflows) | integrations | 0.70 | Describes common SAP integration scenarios using the SAP connector; such scenario guides usually include connector-specific actions, parameters, and patterns for SAP (IDoc/BAPI handling, connection settings) that constitute product-specific integration knowledge. |
-| [Create integration account](https://learn.microsoft.com/en-us/azure/logic-apps/enterprise-integration/create-integration-account) | configuration | 0.70 | Details integration account resource creation and settings; includes artifact types and account-level configuration specific to B2B scenarios. |
 | [Create monitoring and tracking queries](https://learn.microsoft.com/en-us/azure/logic-apps/create-monitoring-tracking-queries) | configuration | 0.70 | Describes how to build Kusto queries against Logic Apps Consumption monitoring data, including schema details and field names specific to Logic Apps tracking. This is configuration-like expert knowledge of the log structure and query parameters rather than generic Kusto usage. |
 | [DataMapTestExecutor class](https://learn.microsoft.com/en-us/azure/logic-apps/testing-framework/data-map-test-executor-class-definition) | integrations | 0.70 | SDK class for compiling and executing data map tests. Product-specific integration for testing data transformations. |
 | [Deploy logic app templates for multitenant](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-deploy-azure-resource-manager-templates) | deployment | 0.70 | Covers concrete ways to deploy Logic Apps ARM templates, likely including deployment modes, required resource types, and Logic Apps–specific deployment behaviors. This is product-specific deployment guidance rather than generic ARM usage, so it qualifies as expert deployment knowledge. |
@@ -224,7 +226,6 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Data Fa
 | [IVariableWorkflowAction interface](https://learn.microsoft.com/en-us/azure/logic-apps/standard-sdk/i-variable-workflow-action-class-definition) | integrations | 0.70 | IVariableWorkflowAction interface extends IWorkflowAction with variable name/value semantics; SDK-specific integration surface. |
 | [Improve security for calls to custom APIs](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-custom-api-authentication) | security | 0.70 | Covers setting up Microsoft Entra authentication for custom APIs called from Logic Apps. This typically includes specific auth settings, portal configuration parameters, and enforcement options that are product-specific security configuration details. |
 | [Loops](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-control-flow-loops) | configuration | 0.70 | Details For each and Until loop actions, including how they operate on arrays and conditions in Logic Apps workflows—product-specific loop configuration. |
-| [Manage integration accounts](https://learn.microsoft.com/en-us/azure/logic-apps/enterprise-integration/create-integration-account) | configuration | 0.70 | Covers integration account resource, artifact types, and likely SKU/region constraints and settings; includes specific resource properties and configuration steps. |
 | [Monitor and collect diagnostic data for workflows](https://learn.microsoft.com/en-us/azure/logic-apps/monitor-workflows-collect-diagnostic-data) | configuration | 0.70 | Describes setting up diagnostic logging destinations (Log Analytics, storage, event hub) and Azure Monitor Resource Logs behavior. This typically includes specific diagnostic settings and categories, which are product-specific configuration parameters. |
 | [Monitoring data reference](https://learn.microsoft.com/en-us/azure/logic-apps/monitor-logic-apps-reference) | configuration | 0.70 | A monitoring data reference typically enumerates metrics, log categories, table names, and fields. These are detailed configuration/telemetry reference elements unique to Logic Apps. |
 | [Overview](https://learn.microsoft.com/en-us/azure/logic-apps/single-tenant-overview-compare) | decision-making | 0.70 | Comparison page explaining differences between Standard (single-tenant) and Consumption (multitenant) logic apps to guide hosting option selection; likely includes feature and capability comparisons that help decide which model to use in different scenarios. |
@@ -356,5 +357,7 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Data Fa
 | [Why migrate from BizTalk Server?](https://learn.microsoft.com/en-us/azure/logic-apps/biztalk-server-migration-overview) | 0.20 | High-level overview of reasons and benefits for migrating from BizTalk Server to Logic Apps Standard; no concrete limits, configs, error codes, or decision matrices with quantified criteria. |
 | [B2B integration & EDI processing](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-enterprise-integration-overview) | 0.15 | Enterprise integration/B2B overview; high-level description of EDI/B2B workflows and EIP, not detailed limits, configs, or troubleshooting content. |
 | [About Azure Logic Apps](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-overview) | 0.10 | High-level product overview for Azure Logic Apps without numeric limits, configuration tables, or detailed patterns; primarily conceptual and marketing-style description. |
+| [Create integration account](https://learn.microsoft.com/en-us/azure/logic-apps/enterprise-integration/create-integration-account) | - | From the summary, the page describes what an integration account is and that you need one to build B2B workflows and exchange messages. It appears to be a conceptual/introductory and how-to-create resource page, without mention of specific limits, configuration parameter tables, error codes, or decision matrices. Therefore it doesn't meet any of the expert-knowledge criteria for the defined sub-skill types. |
 | [Examples, scenarios, and walkthroughs](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-examples-and-scenarios) | - | Examples and scenarios overview describing common Logic Apps use cases and connectors; summary suggests tutorial and marketing-style content without detailed limits, configs, or error mappings. |
+| [Manage integration accounts](https://learn.microsoft.com/en-us/azure/logic-apps/enterprise-integration/create-integration-account) | - | From the summary, the page describes what an integration account is and that you need one to build B2B workflows and exchange messages. It appears to be a conceptual/introductory and how-to-create resource page, without mention of specific limits, configuration parameter tables, error codes, or decision matrices. Therefore it doesn't meet any of the expert-knowledge criteria for the defined sub-skill types. |
 | [Monitor workflows](https://learn.microsoft.com/en-us/azure/logic-apps/monitor-logic-apps-overview) | - | High-level overview of monitoring Logic Apps with Azure Monitor; summary indicates conceptual description of metrics, logs, and alerts without product-specific limits, error codes, or configuration tables. |

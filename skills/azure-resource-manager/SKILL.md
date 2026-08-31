@@ -1,9 +1,9 @@
 ---
 name: azure-resource-manager
-description: Expert knowledge for Azure Resource Manager development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when authoring Bicep/ARM templates, using CLI/PowerShell/REST, configuring policies/tags, or securing deployments, and other Azure Resource Manager related development tasks. Not for Azure Policy (use azure-policy), Azure Resource Graph (use azure-resource-graph), Azure Portal (use azure-portal), Azure Monitor (use azure-monitor).
+description: Expert knowledge for Azure Resource Manager development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when authoring Bicep/ARM templates, stacks/registries, multi-scope deployments, CI/CD, or cross-tenant auth, and other Azure Resource Manager related development tasks. Not for Azure Policy (use azure-policy), Azure Resource Graph (use azure-resource-graph), Azure Portal (use azure-portal), Azure Role-based access control (use azure-rbac).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-16"
+  generated_at: "2026-08-31"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Resource Manager Skill
@@ -24,20 +24,21 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L135 | Diagnosing and fixing Azure Bicep/ARM deployment errors, including specific BCP codes, template syntax/type issues, scope and decorator problems, policy/SKU/name constraints, and common deployment failures. |
-| Best Practices | L136-L187 | Bicep/ARM template authoring best practices: linting rules, avoiding hardcoding, scoping and dependencies, using recent APIs/modules, and testing/validation for reliable deployments. |
-| Decision Making | L188-L201 | Guidance on migration and relocation decisions: moving from classic/ASM to ARM/Bicep, blueprint-to-stack migration, regional move planning, resource move/tag support, and relocation strategies. |
-| Architecture & Design Patterns | L202-L209 | Bicep architecture patterns for reusable configs, flexible parameters, deterministic name generation, and sharing variables across templates for scalable ARM deployments. |
-| Limits & Quotas | L210-L239 | Limits, quotas, and constraints for ARM/Bicep deployments: resource counts, parameters/outputs, naming/tag rules, throttling, subscription/RG limits, history cleanup, and quota error troubleshooting. |
-| Security | L240-L269 | Securing ARM/Bicep deployments: cross-tenant auth, private endpoints/VNETs, secrets handling (Key Vault, secure params), RBAC/locks, policy/regulatory mapping, and TLS/network hardening. |
-| Configuration | L270-L328 | Configuring ARM and Bicep deployments: scopes, parameters, tags, policies, custom providers, monitoring, portal Form view UI, and environment setup for scripts, extensions, and governance. |
-| Integrations & Coding Patterns | L329-L390 | Bicep and ARM integration patterns, functions, and operators, plus CLI/PowerShell/Python/REST usage for deploying, tagging, querying, and programmatically managing Azure resources. |
-| Deployment | L391-L445 | Deploying and moving Azure resources with ARM/Bicep: scripts, stacks, registries, multi-scope deployments, CI/CD, and region/subscription relocation for many Azure services. |
+| Troubleshooting | L37-L136 | Diagnosing and fixing Azure Bicep/ARM deployment and template errors, including specific BCP codes, decorator and type issues, resource name/scope problems, and common Azure policy/SKU/region failures. |
+| Best Practices | L137-L189 | Best practices for authoring, linting, validating, and testing Bicep/ARM templates and scripts, including locations, types, dependencies, resource IDs, versions, and custom endpoints. |
+| Decision Making | L190-L203 | Guidance on migration and relocation decisions: moving from classic/ASM to ARM/Bicep, blueprint-to-stack migration, regional move planning, resource move/tag support, and relocation strategies. |
+| Architecture & Design Patterns | L204-L211 | Bicep architecture patterns for reusable configs, flexible parameters, deterministic name generation, and sharing variables across templates for scalable ARM deployments. |
+| Limits & Quotas | L212-L241 | Limits, quotas, and constraints for ARM/Bicep deployments: resource counts, parameters/outputs, naming/tag rules, throttling, subscription/RG limits, history cleanup, and quota error troubleshooting. |
+| Security | L242-L271 | Securing ARM/Bicep deployments: secrets handling, secure parameters, cross-tenant auth, Private Link, RBAC, locks, policy/regulatory mapping, and Key Vault integration. |
+| Configuration | L272-L330 | Configuring Bicep/ARM templates, scopes, tags, policies, custom providers, portal form UI, monitoring, async ops, and EU data boundary for compliant, scalable Azure deployments. |
+| Integrations & Coding Patterns | L331-L393 | Using Bicep/ARM functions, operators, and CLI/SDK/REST integrations to programmatically deploy, manage, tag, and query Azure resources, including advanced patterns and tooling integration. |
+| Deployment | L394-L446 | Deploying and moving Azure resources with ARM/Bicep: scripts, stacks, registries, multi-scope deployments, CI/CD, and region/subscription relocation for many Azure services. |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
 | Understand and manage Bicep diagnostic codes | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-core-diagnostics |
+| Create, monitor, and troubleshoot Bicep deployment scripts | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deployment-script-bicep |
 | Fix BCP007 unrecognized Bicep declaration type | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/diagnostics/bcp007 |
 | Resolve BCP009 incomplete Bicep declarations | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/diagnostics/bcp009 |
 | Resolve BCP018 missing character syntax errors | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/diagnostics/bcp018 |
@@ -181,6 +182,7 @@ This skill requires **network access** to fetch documentation content:
 | Use ARM toolkit tests for all JSON files | https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/all-files-test-cases |
 | Apply recommended authoring practices for ARM templates | https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/best-practices |
 | Test createUiDefinition.json with ARM toolkit | https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/createuidefinition-test-cases |
+| Set up dev environment for ARM deployment scripts | https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deployment-script-template-configure-dev |
 | Validate ARM parameter files with test toolkit | https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/parameter-file-test-cases |
 | Apply ARM template test cases for quality | https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-test-cases |
 | Run ARM template test toolkit for best practices | https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/test-toolkit |
@@ -241,8 +243,8 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Grant cross-tenant Bicep registry access with Lighthouse | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/cross-tenant-registry-lighthouse |
-| Run Bicep deployment scripts inside private virtual networks | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deployment-script-vnet |
-| Execute Bicep deployment scripts via private endpoints | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deployment-script-vnet-private-endpoint |
+| Secure Bicep deployment scripts in private virtual networks | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deployment-script-vnet |
+| Run Bicep deployment scripts via private endpoints securely | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deployment-script-vnet-private-endpoint |
 | Resolve BCP446 trusted registry restriction in Bicep | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/diagnostics/bcp446 |
 | Prevent exposing secrets in Bicep outputs | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-outputs-should-not-contain-secrets |
 | Protect commandToExecute secrets in Bicep scripts | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-protect-commandtoexecute-secrets |
@@ -278,7 +280,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure child resource names and types in Bicep | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/child-resource-name-type |
 | Use supported data types in Bicep files | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/data-types |
 | Configure Bicep deployments at management group scope | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deploy-to-management-group |
-| Configure dev environments for Bicep deployment scripts | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deployment-script-bicep-configure-dev |
+| Configure development environments for Bicep deployment scripts | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deployment-script-bicep-configure-dev |
 | Configure artifacts parameters for Bicep linter compliance | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-artifacts-parameters |
 | Use iterative loops to generate Bicep resources | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/loops |
 | Define and use Bicep parameter files for deployments | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/parameter-files |
@@ -305,7 +307,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure tags in ARM templates during deployment | https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources-templates |
 | Configure ARM template deployments at management group scope | https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-to-management-group |
 | Configure ARM template deployments at tenant scope | https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-to-tenant |
-| Configure dev environment for ARM deployment scripts | https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deployment-script-template-configure-dev |
+| Configure deploymentScripts resource in ARM templates | https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deployment-script-template |
 | Use supported Form view UI elements in ARM | https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/form-view-elements |
 | Configure Grid UI element in Form view | https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/form-view-microsoft-common-grid |
 | Configure LocationSelector element for ARM forms | https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/form-view-microsoft-common-locationselector |
@@ -348,6 +350,7 @@ This skill requires **network access** to fetch documentation content:
 | Use Azure Bicep string functions in templates | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-functions-string |
 | Deploy Kubernetes resources to AKS using Bicep extension | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-kubernetes-extension |
 | Map JSON ARM template syntax to Bicep | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/compare-template-syntax |
+| Develop Bicep deployment scripts with ARM integration details | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deployment-script-develop |
 | Use Key Vault secrets as Bicep deployment parameters | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/key-vault-parameter |
 | Convert Bicep to JSON ARM templates with MSBuild | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/msbuild-bicep-file |
 | Use the Bicep null-forgiving operator safely | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/operator-null-forgiving |
@@ -392,8 +395,6 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Create Azure resource groups using Bicep deployments | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/create-resource-group |
-| Use deploymentScripts resources in Bicep deployments | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deployment-script-bicep |
-| Develop and structure deployment scripts in Bicep | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deployment-script-develop |
 | Manage Azure deployment stacks using Bicep | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deployment-stacks |
 | Set up a private Azure container registry for Bicep modules | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/private-module-registry |
 | Create and deploy ARM template specs with Bicep | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/template-specs |

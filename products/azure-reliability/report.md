@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-16'
+generated_at: '2026-08-31'
 category_descriptions:
   decision-making: Guidance on choosing Azure regions and services (regional, zonal,
     multiregion, nonregional), using region pairs, and designing multi-region architectures
@@ -29,17 +29,17 @@ confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Servi
 
 ## Summary
 
-- **Total Pages**: 108
-- **Fetched**: 108
+- **Total Pages**: 109
+- **Fetched**: 109
 - **Fetch Failed**: 0
-- **Classified**: 48
-- **Unclassified**: 60
+- **Classified**: 46
+- **Unclassified**: 63
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 2
 - **Updated Pages**: 3
-- **Unchanged**: 105
-- **Deleted Pages**: 0
+- **Unchanged**: 104
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-reliability/azure-reliability.csv`
 
 ## Classification Statistics
@@ -47,21 +47,30 @@ confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Servi
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 3 | 2.8% |
-| best-practices | 38 | 35.2% |
+| best-practices | 36 | 33.0% |
 | decision-making | 5 | 4.6% |
-| limits-quotas | 2 | 1.9% |
-| *(Unclassified)* | 60 | 55.6% |
+| limits-quotas | 2 | 1.8% |
+| *(Unclassified)* | 63 | 57.8% |
 
 ## Changes
 
+### New Pages
+
+- [Azure Storage Discovery](https://learn.microsoft.com/en-us/azure/reliability/reliability-storage-discovery)
+- [Azure DNS public zones](https://learn.microsoft.com/en-us/azure/reliability/reliability-dns-public)
+
 ### Updated Pages
 
-- [Reliability and sovereignty in Azure](https://learn.microsoft.com/en-us/azure/reliability/concept-reliability-sovereignty)
-  - Updated: 2026-06-01T22:07:00.000Z → 2026-08-12T06:03:00.000Z
-- [Multiregion solutions in nonpaired regions](https://learn.microsoft.com/en-us/azure/reliability/regions-multi-region-nonpaired)
-  - Updated: 2026-06-02T17:15:00.000Z → 2026-08-11T22:14:00.000Z
 - [Overview](https://learn.microsoft.com/en-us/azure/reliability/overview)
-  - Updated: 2026-01-28T12:02:00.000Z → 2026-08-12T06:03:00.000Z
+  - Updated: 2026-08-12T06:03:00.000Z → 2026-08-12T08:00:00.000Z
+- [Azure Device Registry](https://learn.microsoft.com/en-us/azure/reliability/reliability-device-registry)
+  - Updated: 2026-01-22T23:17:00.000Z → 2026-08-19T11:02:00.000Z
+- [Azure Notification Hubs](https://learn.microsoft.com/en-us/azure/reliability/reliability-notification-hubs)
+  - Updated: 2026-01-22T18:34:00.000Z → 2026-08-27T06:02:00.000Z
+
+### Deleted Pages
+
+- ~~Azure DNS~~ (https://learn.microsoft.com/en-us/azure/reliability/reliability-dns)
 
 ## Classified Pages
 
@@ -107,13 +116,11 @@ confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Servi
 | [Azure Elastic SAN](https://learn.microsoft.com/en-us/azure/reliability/reliability-elastic-san) | best-practices | 0.64 | Reliability content for Azure Elastic SAN generally provides concrete guidance on using zones, regions, backup/restore, and transient fault handling specific to this storage service. That constitutes product-specific best practices for resilience rather than only high-level reliability concepts. |
 | [Azure Elastic SAN](https://learn.microsoft.com/en-us/azure/reliability/reliability-elastic-san) | best-practices | 0.64 | Reliability content for Azure Elastic SAN generally provides concrete guidance on using zones, regions, backup/restore, and transient fault handling specific to this storage service. That constitutes product-specific best practices for resilience rather than only high-level reliability concepts. |
 | [Azure Logic Apps](https://learn.microsoft.com/en-us/azure/reliability/reliability-logic-apps) | best-practices | 0.64 | Service-specific strategies for transient faults, AZ outages, and region outages in Logic Apps; concrete reliability practices. |
-| [Azure Notification Hubs](https://learn.microsoft.com/en-us/azure/reliability/reliability-notification-hubs) | best-practices | 0.64 | Describes AZ-based regional resiliency and DR/BCDR, including notification and device registration backup; product-specific reliability patterns. |
 | [Azure Virtual Machine Image Builder](https://learn.microsoft.com/en-us/azure/reliability/reliability-image-builder) | best-practices | 0.64 | Explains regional behavior, lack of AZ support, and how to use multi-region replication and Azure Resource Graph for recovery; nuanced, product-specific DR guidance. |
 | [Azure API Center](https://learn.microsoft.com/en-us/azure/reliability/reliability-api-center) | best-practices | 0.63 | Explains AZs, zone redundancy, data residency, and expected behavior during zone/region outages; concrete reliability expectations and configuration. |
 | [Azure Stream Analytics](https://learn.microsoft.com/en-us/azure/reliability/reliability-stream-analytics) | best-practices | 0.63 | Service-specific guidance for handling transient faults, AZ and region outages, and service maintenance in Stream Analytics; actionable reliability configuration. |
 | [Azure Bot Service](https://learn.microsoft.com/en-us/azure/reliability/reliability-bot) | best-practices | 0.62 | Describes concrete patterns for regional vs cross-region reliability, availability zones, and disaster recovery for bots with local data residency; product-specific resiliency guidance. |
 | [Azure Databricks](https://learn.microsoft.com/en-us/azure/reliability/reliability-databricks) | best-practices | 0.62 | Service-specific resiliency features and how to use them (transient fault handling, AZ support) in Databricks workloads; actionable reliability design guidance. |
-| [Azure Device Registry](https://learn.microsoft.com/en-us/azure/reliability/reliability-device-registry) | best-practices | 0.62 | Guidance on handling transient faults, AZ failures, and regional failures for Device Registry; service-specific reliability considerations. |
 | [Single zone (zonal) resources](https://learn.microsoft.com/en-us/azure/reliability/availability-zones-zonal-resource-resiliency) | architecture-patterns | 0.60 | Explains when to use zonal resources and responsibilities for making them resilient; product-specific pattern guidance for zonal vs zone-resilient deployments. |
 
 ## Unclassified Pages
@@ -135,7 +142,6 @@ confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Servi
 | [Azure Container Apps](https://learn.microsoft.com/en-us/azure/reliability/reliability-container-apps) | 0.40 | Reliability in Azure Container Apps; shared-responsibility framing and resiliency overview, not detailed limits or configs. |
 | [Azure Container Instances](https://learn.microsoft.com/en-us/azure/reliability/reliability-container-instances) | 0.40 | Reliability in Azure Container Instances; summary is conceptual about zones, multi-region, and backups without explicit numeric or config expert details. |
 | [Azure Container Instances](https://learn.microsoft.com/en-us/azure/reliability/reliability-container-instances) | 0.40 | Reliability in Azure Container Instances; summary is conceptual about zones, multi-region, and backups without explicit numeric or config expert details. |
-| [Azure DNS](https://learn.microsoft.com/en-us/azure/reliability/reliability-dns) | 0.40 | Azure DNS failover and DR patterns; appears architectural but summary doesn’t indicate quantified thresholds or decision matrices. |
 | [Azure ExpressRoute gateway](https://learn.microsoft.com/en-us/azure/reliability/reliability-virtual-network-gateway) | 0.40 | Reliability for Virtual Network Gateways; summary is descriptive and doesn’t show concrete numeric limits or config parameter tables. |
 | [Azure Files](https://learn.microsoft.com/en-us/azure/reliability/reliability-storage-files) | 0.40 | Reliability in Azure Files; summary is conceptual resiliency description without explicit numeric or configuration details. |
 | [Azure Firewall](https://learn.microsoft.com/en-us/azure/reliability/reliability-firewall) | 0.40 | Reliability in Azure Firewall including SLA mention; summary suggests shared-responsibility and resiliency concepts, not detailed limits or configs. |
@@ -146,6 +152,7 @@ confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Servi
 | [Azure Bastion](https://learn.microsoft.com/en-us/azure/reliability/reliability-bastion) | 0.30 | Reliability overview for Azure Bastion; likely high-level resiliency description without detailed configuration tables or numeric thresholds. |
 | [Azure Container Registry](https://learn.microsoft.com/en-us/azure/reliability/reliability-container-registry) | 0.30 | Reliability overview for Azure Container Registry; summary suggests conceptual shared-responsibility and resiliency patterns without concrete limits, configs, or error-code style troubleshooting. |
 | [Azure Container Registry](https://learn.microsoft.com/en-us/azure/reliability/reliability-container-registry) | 0.30 | Reliability overview for Azure Container Registry; summary suggests conceptual shared-responsibility and resiliency patterns without concrete limits, configs, or error-code style troubleshooting. |
+| [Azure DNS public zones](https://learn.microsoft.com/en-us/azure/reliability/reliability-dns-public) | 0.30 | Reliability guidance for Azure DNS public zones; summary indicates conceptual discussion of resiliency to faults and failures, but no mention of numeric limits, detailed configuration parameters, or troubleshooting error mappings. |
 | [Azure Data Explorer](https://learn.microsoft.com/en-us/azure/reliability/reliability-data-explorer) | 0.30 | Reliability overview for Azure Data Explorer; summary focuses on shared responsibility and general resiliency concepts. No evidence of concrete limits, configuration tables, error codes, or quantified decision criteria in the provided text. |
 | [Azure Key Vault Managed HSM](https://learn.microsoft.com/en-us/azure/reliability/reliability-managed-hsm) | 0.30 | Reliability article for Azure Key Vault Managed HSM focuses on built-in reliability features and shared responsibility concepts; the summary does not indicate detailed limits, configuration parameter tables, or troubleshooting mappings. |
 | [Azure NetApp Files](https://learn.microsoft.com/en-us/azure/reliability/reliability-netapp-files) | 0.30 | Reliability overview for Azure NetApp Files focusing on shared responsibility, resiliency concepts, and backup/SLA discussion. No evidence of specific numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices; content appears conceptual rather than detailed expert configuration or limits. |
@@ -163,10 +170,13 @@ confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Servi
 | [Azure Virtual Network Manager](https://learn.microsoft.com/en-us/azure/reliability/reliability-virtual-network-manager) | 0.30 | Reliability guidance for Azure Virtual Network Manager appears to be high-level resiliency concepts (shared responsibility, general patterns for handling faults and failures) without specific numeric limits, configuration tables, or product-specific error codes. |
 | [Azure Chaos Studio](https://learn.microsoft.com/en-us/azure/reliability/reliability-chaos-studio) | 0.20 | Reliability overview for Azure Chaos Studio; description suggests conceptual guidance on zones and outage behavior without clear indication of numeric limits, config tables, or error-code-based troubleshooting. |
 | [Azure DDoS Protection](https://learn.microsoft.com/en-us/azure/reliability/reliability-ddos-protection) | 0.20 | Reliability overview for Azure DDoS Protection; description suggests shared responsibility, resiliency concepts, and outage types but no indication of numeric limits, specific configuration tables, error codes, or decision matrices. |
+| [Azure Device Registry](https://learn.microsoft.com/en-us/azure/reliability/reliability-device-registry) | 0.20 | Service-specific reliability discussion for Azure Device Registry but appears focused on shared responsibility and conceptual resiliency patterns, not on concrete limits, configuration tables, or error-code-based troubleshooting. |
 | [Azure Disk Storage](https://learn.microsoft.com/en-us/azure/reliability/reliability-storage-disk) | 0.20 | Reliability overview for Azure Disk Storage; discusses redundancy options and shared responsibility but no evidence of detailed quotas, config tables, or error/diagnostic guidance that would qualify as expert knowledge. |
 | [Azure IoT Hub](https://learn.microsoft.com/en-us/azure/reliability/reliability-iot-hub) | 0.20 | Reliability overview for Azure IoT Hub; focuses on shared responsibility and resiliency concepts. The description mentions SLA details but not specific numeric SLA values, limits, or configuration/tier matrices that would qualify as expert knowledge under the defined categories. |
+| [Azure Notification Hubs](https://learn.microsoft.com/en-us/azure/reliability/reliability-notification-hubs) | 0.20 | Describes how to make Azure Notification Hubs resilient in general terms; summary does not indicate presence of numeric limits, detailed configuration parameters, or error-code mappings required for expert-knowledge classification. |
 | [Azure SignalR Service](https://learn.microsoft.com/en-us/azure/reliability/reliability-signalr) | 0.20 | Reliability in Azure SignalR Service; describes real-time communication and transport abstraction plus shared responsibility, but summary lacks specific quotas, configuration parameters, or error-resolution mappings. |
 | [Azure Site Recovery](https://learn.microsoft.com/en-us/azure/reliability/reliability-site-recovery) | 0.20 | Reliability overview for Azure Site Recovery; summary suggests conceptual guidance about outages and shared responsibility without specific limits, configuration tables, error codes, or decision matrices. |
+| [Azure Storage Discovery](https://learn.microsoft.com/en-us/azure/reliability/reliability-storage-discovery) | 0.20 | Reliability overview for Azure Storage Discovery; based on the summary, it describes resiliency concepts (availability zones, cross-region disaster recovery) without specific limits, configuration tables, error codes, or decision matrices. |
 | [Azure Virtual Network](https://learn.microsoft.com/en-us/azure/reliability/reliability-virtual-network) | 0.20 | Reliability overview for Azure Virtual Network; focuses on resiliency to faults and failures and mentions SLAs conceptually, but summary does not indicate concrete limits, configuration parameters, or troubleshooting mappings. |
 | [Azure service incident response](https://learn.microsoft.com/en-us/azure/reliability/incident-response) | 0.20 | Guidance on what to do during Azure service disruptions; focuses on process and support, not on technical limits, configs, or error-code troubleshooting. |
 | [Overview](https://learn.microsoft.com/en-us/azure/reliability/overview-reliability-guidance) | 0.20 | High-level hub page listing reliability guides for many Azure services; description and summary indicate conceptual overview and navigation content without specific limits, configs, error codes, or decision matrices. |
@@ -176,7 +186,7 @@ confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Servi
 | [What are Azure regions?](https://learn.microsoft.com/en-us/azure/reliability/regions-overview) | 0.20 | High-level conceptual overview of Azure regions and resiliency options; no specific numeric limits, configuration parameters, error codes, or decision matrices with quantified trade-offs. |
 | [Business continuity, high availability, and disaster recovery](https://learn.microsoft.com/en-us/azure/reliability/concept-business-continuity-high-availability-disaster-recovery) | 0.10 | Defines business continuity, high availability, and disaster recovery concepts; no concrete product-specific settings, limits, or troubleshooting content. |
 | [Failover and failback](https://learn.microsoft.com/en-us/azure/reliability/concept-failover-failback) | 0.10 | Overview of failover and failback concepts; no indication of product-specific limits, configs, or troubleshooting mappings. |
-| [Overview](https://learn.microsoft.com/en-us/azure/reliability/overview) | 0.10 | High-level conceptual overview of reliability in Azure without specific limits, configuration parameters, error codes, or decision matrices; focuses on principles and why reliability matters rather than product-specific expert details. |
+| [Overview](https://learn.microsoft.com/en-us/azure/reliability/overview) | 0.10 | High-level conceptual overview of reliability principles in Azure without product-specific limits, configurations, error codes, or decision matrices. |
 | [Redundancy, replication, and backup](https://learn.microsoft.com/en-us/azure/reliability/concept-redundancy-replication-backup) | 0.10 | General introduction to redundancy, replication, and backup; high-level reliability concepts, not product-specific expert knowledge. |
 | [Shared responsibility for reliability](https://learn.microsoft.com/en-us/azure/reliability/concept-shared-responsibility) | 0.10 | Conceptual explanation of shared responsibility for reliability without product-specific limits, configurations, or decision matrices. |
 | [How to read a service-level agreement (SLA)](https://learn.microsoft.com/en-us/azure/reliability/concept-service-level-agreements) | - | This article explains how to interpret SLAs conceptually and contractually. It is general guidance on reading SLAs, without product-specific numeric limits, configuration parameters, or decision matrices with quantified thresholds. It does not meet the expert-knowledge criteria for any sub-skill type. |

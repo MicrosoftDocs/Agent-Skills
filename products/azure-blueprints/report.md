@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-12'
+generated_at: '2026-08-31'
 category_descriptions:
   decision-making: Guidance on Azure Blueprints retirement timelines, planning and
     executing migrations, and answers to common questions about moving off Blueprints.
@@ -41,8 +41,8 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Resource Mana
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 43
+- **Updated Pages**: 1
+- **Unchanged**: 42
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-blueprints/azure-blueprints.csv`
 
@@ -59,6 +59,11 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Resource Mana
 | *(Unclassified)* | 14 | 32.6% |
 
 ## Changes
+
+### Updated Pages
+
+- [What is Azure Blueprints?](https://learn.microsoft.com/en-us/azure/governance/blueprints/overview)
+  - Updated: 2026-06-23T05:11:00.000Z → 2026-08-17T22:15:00.000Z
 
 ## Classified Pages
 
@@ -110,5 +115,5 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Resource Mana
 | [Create from a blueprint sample](https://learn.microsoft.com/en-us/azure/governance/blueprints/tutorials/create-from-sample) | 0.35 | Tutorial using a sample blueprint to set up resource groups and role assignments; mostly procedural without detailed config tables or error mappings. |
 | [Create a blueprint - Azure PowerShell](https://learn.microsoft.com/en-us/azure/governance/blueprints/create-blueprint-powershell) | 0.30 | Quickstart for creating a blueprint with PowerShell; primarily procedural tutorial without configuration tables, limits, or detailed deployment constraints. |
 | [Create a blueprint - Portal](https://learn.microsoft.com/en-us/azure/governance/blueprints/create-blueprint-portal) | 0.30 | Quickstart tutorial for creating a blueprint in the portal; step-by-step usage but no detailed configuration tables, limits, or troubleshooting content. |
-| [What is Azure Blueprints?](https://learn.microsoft.com/en-us/azure/governance/blueprints/overview) | 0.20 | High-level overview of Azure Blueprints; no detailed limits, configuration tables, error codes, or product-specific decision matrices. |
 | [Index](https://learn.microsoft.com/en-us/azure/governance/blueprints/samples/) | 0.10 | Index of sample blueprints; navigation/listing page without detailed technical content or expert-only parameters. |
+| [What is Azure Blueprints?](https://learn.microsoft.com/en-us/azure/governance/blueprints/overview) | - | Page is an overview of Azure Blueprints and its retirement timeline; it does not provide specific limits, configuration parameters, error codes, or decision matrices. Content is conceptual/service description rather than detailed expert guidance. |

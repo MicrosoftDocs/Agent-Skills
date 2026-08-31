@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-09'
+generated_at: '2026-08-31'
 category_descriptions:
   security: 'Securing Azure Data Explorer: authn/z (RBAC, principals, Entra apps,
     Conditional Access), encryption, managed identities, network isolation, policies,
@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 199
+- **Updated Pages**: 2
+- **Unchanged**: 197
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-explorer/azure-data-explorer.csv`
 
@@ -75,6 +75,13 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | *(Unclassified)* | 92 | 46.2% |
 
 ## Changes
+
+### Updated Pages
+
+- [Customize dashboard visuals](https://learn.microsoft.com/en-us/azure/data-explorer/dashboard-customize-visuals)
+  - Updated: 2026-06-29T11:03:00.000Z → 2026-08-19T17:04:00.000Z
+- [Apply conditional formatting](https://learn.microsoft.com/en-us/azure/data-explorer/dashboard-conditional-formatting)
+  - Updated: 2025-08-26T08:00:00.000Z → 2026-08-19T17:04:00.000Z
 
 ## Classified Pages
 
@@ -240,7 +247,6 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | [Sample app generator](https://learn.microsoft.com/en-us/azure/data-explorer/sample-app-generator-wizard) | 0.35 | Sample app generator wizard is a tooling overview; summary doesn’t indicate detailed configuration tables or non-obvious constraints, more of a guided example generator. |
 | [Write KQL queries](https://learn.microsoft.com/en-us/azure/data-explorer/web-ui-kql) | 0.35 | Describes KQL editor features like IntelliSense and quick fixes; mostly conceptual usage guidance without detailed parameter tables. |
 | [Add a cluster connection](https://learn.microsoft.com/en-us/azure/data-explorer/add-cluster-connection) | 0.30 | How to add cluster connections in web UI; likely step-by-step UI instructions rather than parameter tables. |
-| [Apply conditional formatting](https://learn.microsoft.com/en-us/azure/data-explorer/dashboard-conditional-formatting) | 0.30 | Explains conditional formatting rules conceptually; no product-specific limits, config parameter tables, or error codes. |
 | [Create a cluster and database](https://learn.microsoft.com/en-us/azure/data-explorer/create-cluster-and-database) | 0.30 | Quickstart for creating cluster and database; mostly step-by-step UI usage without detailed config matrices or limits. |
 | [Create a dashboard base query](https://learn.microsoft.com/en-us/azure/data-explorer/base-query) | 0.30 | Base queries as reusable snippets is a usage pattern, but article is procedural without numeric thresholds or config matrices. |
 | [Create a private endpoint](https://learn.microsoft.com/en-us/azure/data-explorer/security-network-private-endpoint-create) | 0.30 | Step-by-step tutorial for creating a private endpoint; appears to focus on portal workflow rather than detailed security configuration parameters, limits, or specialized settings tables. |
@@ -265,8 +271,9 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | [Visualization integrations overview](https://learn.microsoft.com/en-us/azure/data-explorer/integrate-visualize-overview) | 0.25 | Visualization integrations overview is primarily a catalog/marketing-style summary without deep configuration tables or limits. |
 | [Access the web UI anywhere](https://learn.microsoft.com/en-us/azure/data-explorer/web-sync) | 0.20 | How-to guide for syncing Azure Data Explorer web UI profile to the cloud; no numeric limits, config parameter tables, error-code-based troubleshooting, or product-specific decision matrices. Primarily conceptual/step-by-step usage, not expert-only reference data. |
 | [Add a query visualization](https://learn.microsoft.com/en-us/azure/data-explorer/add-query-visualization) | 0.20 | How-to UI guide for creating visualizations from query results; no limits, config tables, error codes, or product-specific thresholds. Primarily step-by-step usage, not expert reference content. |
+| [Apply conditional formatting](https://learn.microsoft.com/en-us/azure/data-explorer/dashboard-conditional-formatting) | 0.20 | Page explains conditional formatting for Azure Data Explorer dashboards, focusing on rules, colors, tags, and icons. The summary suggests general usage instructions rather than product-specific limits, configuration tables, or error-code-based troubleshooting. No clear expert-level numeric constraints or specialized configuration parameters are indicated. |
 | [Create a cluster and database using SDKs](https://learn.microsoft.com/en-us/azure/data-explorer/create-cluster-database) | 0.20 | Primarily a how-to/tutorial for creating a cluster and database using various tools. It doesn’t focus on limits, decision matrices, configuration tables, or troubleshooting mappings with error codes, so it doesn’t meet the expert-knowledge criteria for any sub-skill type. |
-| [Customize dashboard visuals](https://learn.microsoft.com/en-us/azure/data-explorer/dashboard-customize-visuals) | 0.20 | Page focuses on how to edit and customize dashboard visuals in Azure Data Explorer. It appears to be a UI/tutorial-style guide without tables of configuration parameters, numeric limits, or product-specific error codes. The customization properties are likely descriptive rather than detailed config matrices, so it doesn't meet the thresholds for configuration, integrations, or other expert-knowledge categories. |
+| [Customize dashboard visuals](https://learn.microsoft.com/en-us/azure/data-explorer/dashboard-customize-visuals) | 0.20 | Page describes how to edit and customize dashboard visuals in Azure Data Explorer. From the summary, it appears to be a UI/tutorial-style customization guide without tables of configuration parameters, limits, or product-specific numeric thresholds. No evidence of expert-only configuration values, quotas, or decision matrices. |
 | [Explore the results grid](https://learn.microsoft.com/en-us/azure/data-explorer/web-results-grid) | 0.20 | Describes how to work with the results grid in the web UI; lacks numeric limits, configuration parameter tables, or troubleshooting mappings. General feature-usage instructions rather than expert reference. |
 | [Explore the sample gallery](https://learn.microsoft.com/en-us/azure/data-explorer/web-ui-samples-query) | 0.20 | Sample data exploration tutorial; mainly KQL examples and navigation, not configuration or limits. |
 | [Get started for free](https://learn.microsoft.com/en-us/azure/data-explorer/start-for-free) | 0.20 | Page is an introductory 'start for free' overview for Azure Data Explorer, focused on how to get a free cluster and begin exploring. The summary does not indicate specific numeric limits/quotas, configuration parameter tables, error codes, or decision matrices. It appears to be onboarding/marketing-style content rather than detailed expert configuration, limits, or troubleshooting guidance. |

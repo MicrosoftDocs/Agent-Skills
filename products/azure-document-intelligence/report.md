@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-08-16'
+generated_at: '2026-08-31'
 category_descriptions:
   security: 'Securing Document Intelligence resources: creating SAS tokens, configuring
     data-at-rest encryption with customer-managed keys, and using managed identities
     and VNETs for secure access.'
-  best-practices: Guidance for training, labeling, composing, and managing custom
-    Document Intelligence models to maximize accuracy, confidence, and table extraction
-    quality.
+  best-practices: Guidance on designing, training, labeling, composing, and maintaining
+    custom/classification/template models to maximize Document Intelligence accuracy
+    and confidence
   limits-quotas: Capacity limits, quotas, scaling with add-ons and batch analysis,
     container image tags, and supported OCR languages/locales and prebuilt model language
     coverage.
@@ -25,17 +25,16 @@ category_descriptions:
     tool, and setting up resilient, disaster‑ready deployments for models and services
 skill_description: Expert knowledge for Azure AI Document Intelligence development
   including troubleshooting, best practices, decision making, limits & quotas, security,
-  configuration, integrations & coding patterns, and deployment. Use when training
-  custom models, calling AnalyzeDocument APIs, using containers, securing access,
-  or migrating to v4.0, and other Azure AI Document Intelligence related development
-  tasks. Not for Azure AI Search (use azure-cognitive-search), Azure AI Vision (use
-  azure-ai-vision), Azure AI Custom Vision (use azure-custom-vision), Azure AI Video
-  Indexer (use azure-video-indexer).
-use_when: Use when training custom models, calling AnalyzeDocument APIs, using containers,
-  securing access, or migrating to v4.0, and other Azure AI Document Intelligence
+  configuration, integrations & coding patterns, and deployment. Use when designing
+  custom models, calling AnalyzeDocument APIs, running containers/offline, or migrating
+  to v4.0, and other Azure AI Document Intelligence related development tasks. Not
+  for Azure AI Vision (use azure-ai-vision), Azure AI Search (use azure-cognitive-search),
+  Azure AI Custom Vision (use azure-custom-vision), Azure AI Video Indexer (use azure-video-indexer).
+use_when: Use when designing custom models, calling AnalyzeDocument APIs, running
+  containers/offline, or migrating to v4.0, and other Azure AI Document Intelligence
   related development tasks.
-confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure AI
-  Vision (use azure-ai-vision), Azure AI Custom Vision (use azure-custom-vision),
+confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI Search
+  (use azure-cognitive-search), Azure AI Custom Vision (use azure-custom-vision),
   Azure AI Video Indexer (use azure-video-indexer).
 ---
 # Azure AI Document Intelligence Crawl Report
@@ -50,8 +49,8 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 44
-- **Unchanged**: 33
+- **Updated Pages**: 4
+- **Unchanged**: 73
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-document-intelligence/azure-document-intelligence.csv`
 
@@ -73,47 +72,14 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 
 ### Updated Pages
 
-- [Custom model lifecycle](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/train/custom-lifecycle?view=doc-intel-4.0.0)
-  - Updated: 2026-06-29T08:00:00.000Z → 2026-07-10T22:08:00.000Z
-- [Enhanced capabilities](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/concept/add-on-capabilities?view=doc-intel-4.0.0)
-  - Updated: 2026-06-22T08:00:00.000Z → 2026-08-15T08:00:00.000Z
-- [Retrieval-Augmented Generation (RAG)](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/concept/retrieval-augmented-generation?view=doc-intel-4.0.0)
-  - Updated: 2026-06-25T08:00:00.000Z → 2026-08-15T08:00:00.000Z
-- [Get started with Document Intelligence client libraries](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/quickstarts/get-started-sdks-rest-api?view=doc-intel-4.0.0)
-  - Updated: 2026-04-22T08:00:00.000Z → 2026-08-15T08:00:00.000Z
-- [Sample Labeling tool](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/v21/try-sample-label-tool?view=doc-intel-2.1.0)
-  - Updated: 2026-05-11T08:00:00.000Z → 2026-08-15T08:00:00.000Z
-- [Migration guide overview](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/versioning/migration-guide-overview?view=doc-intel-4.0.0)
-  - Updated: 2026-06-17T22:13:00.000Z → 2026-08-11T08:00:00.000Z
-- [Build a custom extraction model](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/how-to-guides/build-a-custom-model?view=doc-intel-4.0.0)
-  - Updated: 2026-05-23T08:00:00.000Z → 2026-08-15T08:00:00.000Z
-- [Project sharing with custom models](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/how-to-guides/project-share-custom-models?view=doc-intel-4.0.0)
-  - Updated: 2026-04-11T08:00:00.000Z → 2026-07-10T22:08:00.000Z
-- [Compose custom extraction models](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/how-to-guides/compose-custom-models?view=doc-intel-4.0.0)
-  - Updated: 2026-04-07T08:00:00.000Z → 2026-07-10T22:08:00.000Z
-- [Deploy the sample-labeling tool](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/v21/deploy-label-tool?view=doc-intel-2.1.0)
-  - Updated: 2026-06-03T08:00:00.000Z → 2026-08-15T08:00:00.000Z
-- [Train a custom model with the sample-labeling tool](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/v21/label-tool?view=doc-intel-2.1.0)
-  - Updated: 2026-06-14T08:00:00.000Z → 2026-08-15T08:00:00.000Z
-- [Use table tags to train your custom model](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/v21/supervised-table-tags?view=doc-intel-2.1.0)
-  - Updated: 2026-05-23T08:00:00.000Z → 2026-08-15T08:00:00.000Z
-- [Install and run containers](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/containers/install-run?view=doc-intel-4.0.0)
-  - Updated: 2026-05-18T08:00:00.000Z → 2026-08-15T08:00:00.000Z
-- [Configure containers](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/containers/configuration?view=doc-intel-4.0.0)
-  - Updated: 2026-05-14T08:00:00.000Z → 2026-08-15T08:00:00.000Z
-- [Container image tags](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/containers/image-tags?view=doc-intel-4.0.0)
-  - Updated: 2026-05-20T08:00:00.000Z → 2026-08-15T08:00:00.000Z
-- [Disconnected containers](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/containers/disconnected?view=doc-intel-4.0.0)
-  - Updated: 2026-04-25T08:00:00.000Z → 2026-08-15T08:00:00.000Z
-- [What is Azure Document Intelligence in Foundry Tools?](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/overview?view=doc-intel-4.0.0)
-  - Updated: 2026-06-05T06:04:00.000Z → 2026-08-15T08:00:00.000Z
-- [Create a Document Intelligence resource](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/how-to-guides/create-document-intelligence-resource?view=doc-intel-4.0.0)
-  - Updated: 2026-04-26T08:00:00.000Z → 2026-07-10T22:08:00.000Z
-- [Custom models](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/language-support/custom?view=doc-intel-4.0.0)
-  - Updated: 2026-06-02T08:00:00.000Z → 2026-07-10T22:08:00.000Z
-- [SDK targets: REST API v4.0 2024-11-30 latest (GA)](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/versioning/sdk-overview-v4-0?view=doc-intel-4.0.0)
-  - Updated: 2026-05-06T08:00:00.000Z → 2026-08-15T08:00:00.000Z
-- *...and 24 more*
+- [Contract](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/prebuilt/contract?view=doc-intel-4.0.0)
+  - Updated: 2026-08-14T22:13:00.000Z → 2026-08-15T08:00:00.000Z
+- [Credit card](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/prebuilt/credit-card?view=doc-intel-4.0.0)
+  - Updated: 2026-08-14T22:13:00.000Z → 2026-08-15T08:00:00.000Z
+- [Invoice](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/prebuilt/invoice?view=doc-intel-4.0.0)
+  - Updated: 2026-08-14T22:13:00.000Z → 2026-08-15T08:00:00.000Z
+- [Custom labeling tips](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/train/custom-label-tips?view=doc-intel-4.0.0)
+  - Updated: 2026-08-14T22:13:00.000Z → 2026-08-15T08:00:00.000Z
 
 ## Classified Pages
 
@@ -137,7 +103,7 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | [Back up and recover models](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/how-to-guides/disaster-recovery?view=doc-intel-4.0.0) | deployment | 0.70 | Guidance on using copy model API across regions for backup; product-specific DR patterns and operational constraints. |
 | [Build a custom classification model](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/how-to-guides/build-a-custom-classifier?view=doc-intel-4.0.0) | best-practices | 0.70 | Includes minimum training documents per class and classification behavior; product-specific training requirements and patterns. |
 | [Create workflows using Azure Logic Apps](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/tutorial/logic-apps?view=doc-intel-4.0.0) | integrations | 0.70 | Tutorial for using the Logic Apps connector targeting specific REST API versions; includes connector-specific parameters and integration patterns. |
-| [Custom labeling tips](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/train/custom-label-tips?view=doc-intel-4.0.0) | best-practices | 0.70 | Explicitly described as tips and tricks for labeling custom model datasets; likely contains product-specific DOs/DON’Ts and guidance on labeling strategies unique to Document Intelligence Studio, fitting the best-practices category. |
+| [Custom labeling tips](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/train/custom-label-tips?view=doc-intel-4.0.0) | best-practices | 0.70 | This article explicitly provides tips and methods for labeling custom model datasets in Document Intelligence Studio. Such guidance is product-specific, focused on DOs and DON'Ts for effective labeling, and likely includes concrete recommendations and gotchas unique to this service, fitting the best-practices sub-skill. |
 | [Custom model lifecycle](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/train/custom-lifecycle?view=doc-intel-4.0.0) | best-practices | 0.70 | Lifecycle guidance for custom models tied to specific API versions and expirationDateTime behavior; includes product-specific recommendations on which API version to use for analyze requests and how model dependencies work, which are implementation details not generally known. |
 | [Deploy the sample-labeling tool](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/v21/deploy-label-tool?view=doc-intel-2.1.0) | deployment | 0.70 | Explains different deployment methods for the labeling tool, likely including environment requirements and supported hosting options; this is deployment-focused, with product-specific constraints and steps beyond generic commands. |
 | [Document analysis models](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/language-support/ocr?view=doc-intel-4.0.0) | limits-quotas | 0.70 | Language support pages typically contain explicit tables of supported languages/locales and model-specific capabilities, which are expert, product-specific limits. |
@@ -177,17 +143,17 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | [Bank check (US)](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/prebuilt/bank-check?view=doc-intel-4.0.0) | 0.35 | Bank check prebuilt model description; focuses on what it extracts and general capabilities, not detailed configuration, limits, or error handling. |
 | [Bank statement (US)](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/prebuilt/bank-statement?view=doc-intel-4.0.0) | 0.35 | Bank statement prebuilt model overview; describes extracted fields and general behavior, but no expert-level numeric limits or config tables. |
 | [Business card](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/prebuilt/business-card?view=doc-intel-4.0.0) | 0.35 | Business card model description and deprecation note; mainly conceptual and lifecycle info, not detailed configuration or troubleshooting. |
-| [Contract](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/prebuilt/contract?view=doc-intel-4.0.0) | 0.35 | Contract extraction model overview; explains what fields are extracted and supported formats, without specific limits or config parameters. |
-| [Credit card](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/prebuilt/credit-card?view=doc-intel-4.0.0) | 0.35 | Credit/debit card model description; general explanation of extracted fields and formats, no detailed settings or quotas. |
 | [Health insurance card (US)](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/prebuilt/health-insurance-card?view=doc-intel-4.0.0) | 0.35 | Health insurance card model overview; describes OCR-based extraction and supported documents, but no detailed configuration or numeric constraints. |
-| [Invoice](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/prebuilt/invoice?view=doc-intel-4.0.0) | 0.35 | Invoice model overview; focuses on extracted fields and general capabilities, not expert-level configuration or troubleshooting details. |
 | [Marriage certificate (US)](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/prebuilt/marriage-certificate?view=doc-intel-4.0.0) | 0.35 | Marriage certificate model description; general explanation of extracted fields and formats, no detailed limits or configuration tables. |
 | [Mortgage documents (US)](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/prebuilt/mortgage-documents?view=doc-intel-4.0.0) | 0.35 | US mortgage documents model overview; describes capabilities and supported language, but not specific quotas, configs, or troubleshooting mappings. |
 | [Pay stub](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/prebuilt/pay-stub?view=doc-intel-4.0.0) | 0.35 | Pay stub model overview; explains extracted compensation data, but lacks detailed configuration parameters or numeric limits. |
 | [Receipt](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/prebuilt/receipt?view=doc-intel-4.0.0) | 0.35 | Receipt model overview; describes OCR-based extraction and general capabilities, not expert-level configuration or troubleshooting content. |
 | [Tax documents (US)](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/prebuilt/tax-document?view=doc-intel-4.0.0) | 0.35 | US tax documents model overview; lists supported tax form types and general extraction behavior, without detailed limits or configuration parameters. |
+| [Contract](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/prebuilt/contract?view=doc-intel-4.0.0) | 0.30 | Prebuilt contract model page appears to describe capabilities, supported document types, and general usage. From the summary, it doesn't indicate specific numeric limits, configuration tables, error codes, or detailed troubleshooting/decision matrices. Likely a feature overview and basic usage, not expert-level configuration or limits. |
+| [Credit card](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/prebuilt/credit-card?view=doc-intel-4.0.0) | 0.30 | Credit/debit card model page focuses on what the model extracts (card number, issuing bank, expiration date) and supported input formats. The summary suggests an overview of capabilities and returned JSON, without product-specific limits, configuration parameter tables, or troubleshooting mappings. |
 | [Custom models](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/language-support/custom?view=doc-intel-4.0.0) | 0.30 | Language support overview for custom models; summary suggests general multilingual capabilities, not detailed per-locale limits or config parameters. |
 | [Document Intelligence Studio](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/studio-overview?view=doc-intel-4.0.0) | 0.30 | Studio overview and setup; mainly conceptual and UI usage, not detailed configuration or quotas. |
+| [Invoice](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/prebuilt/invoice?view=doc-intel-4.0.0) | 0.30 | Invoice model page describes OCR-based extraction of key invoice fields and versions supported. The summary indicates a capability/feature overview rather than detailed limits, quotas, configuration options, or error-resolution guidance that would qualify as expert knowledge. |
 | [Model overview](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/model-overview?view=doc-intel-4.0.0) | 0.30 | Model overview; describes available models and capabilities at a high level, not detailed configuration or limits. |
 | [Retrieval-Augmented Generation (RAG)](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/concept/retrieval-augmented-generation?view=doc-intel-4.0.0) | 0.30 | Described as an introduction to RAG and semantic chunking with the Layout model; likely conceptual without numeric thresholds, configuration tables, or product-specific error/limit details. |
 | [Create a Document Intelligence resource](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/how-to-guides/create-document-intelligence-resource?view=doc-intel-4.0.0) | 0.20 | Portal-based resource creation tutorial; likely step-by-step UI instructions without detailed configuration tables or limits. |

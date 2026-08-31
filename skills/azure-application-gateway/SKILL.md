@@ -1,9 +1,9 @@
 ---
 name: azure-application-gateway
-description: Expert knowledge for Azure Application Gateway development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring listeners, mTLS/TLS, WAF, AKS/AGIC or App Gateway for Containers, and autoscaling, and other Azure Application Gateway related development tasks. Not for Azure Front Door (use azure-front-door), Azure Load Balancer (use azure-load-balancer), Azure Virtual Network (use azure-virtual-network), Azure Web Application Firewall (use azure-web-application-firewall).
+description: Expert knowledge for Azure Application Gateway development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring listeners, WAF/TLS, AKS ingress/AGIC, autoscaling v2 gateways, or App Gateway for Containers, and other Azure Application Gateway related development tasks. Not for Azure Load Balancer (use azure-load-balancer), Azure Front Door (use azure-front-door), Azure Firewall (use azure-firewall), Azure Web Application Firewall (use azure-web-application-firewall).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-16"
+  generated_at: "2026-08-31"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Application Gateway Skill
@@ -26,11 +26,11 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L37-L42 | Diagnosing and fixing common Application Gateway for Containers issues using ALB Controller backend health, metrics, and troubleshooting guides for connectivity, routing, and configuration errors. |
 | Best Practices | L43-L48 | Tuning health probes, understanding probe behavior, and planning Application Gateway capacity, scaling, and configuration for high-traffic workloads. |
-| Decision Making | L49-L60 | Guidance on migration and retirement decisions (AGIC, V1, classic VMs), choosing container networking, and understanding pricing/billing for Application Gateway SKUs and containers. |
-| Architecture & Design Patterns | L61-L65 | Guidance on choosing and designing load-balancing strategies and traffic distribution patterns when using Azure Application Gateway for Containers. |
-| Limits & Quotas | L66-L71 | Autoscaling, zone redundancy, and detailed capacity, configuration, and performance limits for Application Gateway v2 and Application Gateway for Containers. |
-| Security | L72-L111 | Configuring TLS/SSL, certificates, mTLS, Key Vault integration, cipher suites, FIPS, WAF, HSTS, and secure cookie/session settings for Azure Application Gateway and its Containers/Ingress. |
-| Configuration | L112-L174 | Configuring Application Gateway and Application Gateway for Containers: listeners, routing, health probes, headers, redirects, mTLS, Private Link, session affinity, diagnostics, and monitoring. |
+| Decision Making | L49-L59 | Guidance on choosing networking and pricing for Application Gateway for Containers and planning/migrating between AGIC, v1/v2 gateways, and classic vs ARM VMs. |
+| Architecture & Design Patterns | L60-L64 | Guidance on choosing and designing load-balancing strategies and traffic distribution patterns when using Azure Application Gateway for Containers. |
+| Limits & Quotas | L65-L70 | Configuring autoscaling, zone redundancy, and multi-site hosting limits for Application Gateway v2, including capacity, scaling behavior, and site/hostname constraints. |
+| Security | L71-L111 | Configuring TLS/SSL, certificates, mTLS, Key Vault, cipher suites, FIPS, WAF, Private Link, and security headers for secure Azure Application Gateway and Containers deployments |
+| Configuration | L112-L174 | Configuring Application Gateway and Application Gateway for Containers: listeners, routing, probes, health, headers/URL rewrites, WebSockets, mTLS, Private Link, monitoring, alerts, and AKS/Ingress integration. |
 | Integrations & Coding Patterns | L175-L184 | Configuring header rewrites, integrating App Gateway (incl. containers) with Key Vault, Prometheus/Grafana, Istio, Sentinel/Defender, and using its metrics to autoscale AKS pods. |
 | Deployment | L185-L197 | Deploying and scaling Application Gateway and AGIC: portal/ARM/PowerShell setup, IPv6 frontends, AKS add-on enable/disable, migrations, and Helm-based upgrades. |
 
@@ -54,8 +54,7 @@ This skill requires **network access** to fetch documentation content:
 | Estimate and understand pricing for Application Gateway for Containers | https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/understanding-pricing |
 | Migrate Azure Application Gateway from V1 to V2 | https://learn.microsoft.com/en-us/azure/application-gateway/migrate-v1-v2 |
 | FAQ for Azure Application Gateway V1 retirement and migration | https://learn.microsoft.com/en-us/azure/application-gateway/retirement-faq |
-| Understand billing and pricing for Azure Application Gateway SKUs | https://learn.microsoft.com/en-us/azure/application-gateway/understanding-pricing |
-| Plan for Azure Application Gateway V1 retirement | https://learn.microsoft.com/en-us/azure/application-gateway/v1-retirement |
+| Plan migration from Application Gateway V1 to V2 | https://learn.microsoft.com/en-us/azure/application-gateway/v1-retirement |
 | Decide and plan migration from classic to Azure Resource Manager VMs | https://learn.microsoft.com/en-us/previous-versions/azure/virtual-machines/migration/migration-classic-resource-manager-faq |
 
 ### Architecture & Design Patterns
@@ -67,7 +66,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Configure autoscaling and zone redundancy for Application Gateway v2 | https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-autoscaling-zone-redundant |
-| Reference Azure Application Gateway limits and behaviors | https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-faq |
+| Configure multi-site hosting limits on Azure Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/multiple-site-overview |
 
 ### Security
 | Topic | URL |
@@ -75,9 +74,9 @@ This skill requires **network access** to fetch documentation content:
 | Configure listener-specific SSL policies in Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-configure-listener-specific-ssl-policy |
 | Configure TLS policy and cipher suites for Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-configure-ssl-policy-powershell |
 | Set up end-to-end TLS on Azure Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-end-to-end-ssl-powershell |
-| Deploy a private Azure Application Gateway with restricted access | https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-private-deployment |
+| Restrict access with private Azure Application Gateway deployment | https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-private-deployment |
 | Secure Application Gateway session affinity cookie flags | https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-secure-flag-session-affinity |
-| Configure TLS policies and cipher suites for Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-ssl-policy-overview |
+| Configure TLS policies for Azure Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-ssl-policy-overview |
 | Plan for TLS 1.0/1.1 retirement on Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-tls-version-retirement |
 | Prepare certificates for backend authentication in Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/certificates-for-backend-authentication |
 | Configure Key Vault TLS termination for Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/configure-key-vault-portal |
@@ -98,13 +97,14 @@ This skill requires **network access** to fetch documentation content:
 | Add HSTS security header using Application Gateway rewrite | https://learn.microsoft.com/en-us/azure/application-gateway/hsts-http-headers-portal |
 | Use Let's Encrypt certificates with Application Gateway for AKS | https://learn.microsoft.com/en-us/azure/application-gateway/ingress-controller-letsencrypt-certificate-application-gateway |
 | Configure JWT validation with Azure Application Gateway and Entra ID | https://learn.microsoft.com/en-us/azure/application-gateway/json-web-token-overview |
-| Configure TLS termination on Application Gateway with Key Vault | https://learn.microsoft.com/en-us/azure/application-gateway/key-vault-certs |
+| Use Azure Key Vault certificates for TLS termination on Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/key-vault-certs |
 | Export trusted client CA chains for Application Gateway client auth | https://learn.microsoft.com/en-us/azure/application-gateway/mutual-authentication-certificate-management |
 | Configure mutual TLS authentication on Azure Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/mutual-authentication-overview |
 | Configure mutual TLS authentication on Application Gateway via portal | https://learn.microsoft.com/en-us/azure/application-gateway/mutual-authentication-portal |
 | Configure mutual TLS on Application Gateway with PowerShell | https://learn.microsoft.com/en-us/azure/application-gateway/mutual-authentication-powershell |
+| Secure workloads using Azure Application Gateway Private Link | https://learn.microsoft.com/en-us/azure/application-gateway/private-link |
 | Renew TLS certificates for Azure Application Gateway listeners | https://learn.microsoft.com/en-us/azure/application-gateway/renew-certificates |
-| Generate self-signed certificates for Application Gateway v2 backends | https://learn.microsoft.com/en-us/azure/application-gateway/self-signed-certificates |
+| Generate self-signed certificates for Azure Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/self-signed-certificates |
 | Manage listener TLS certificates in Azure Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/ssl-certificate-management |
 | Configure TLS termination on Application Gateway with CLI | https://learn.microsoft.com/en-us/azure/application-gateway/tutorial-ssl-cli |
 | Configure TLS termination on Application Gateway with PowerShell | https://learn.microsoft.com/en-us/azure/application-gateway/tutorial-ssl-powershell |
@@ -114,13 +114,13 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Use backend health reports in Azure Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-backend-health |
 | Configure custom probe in classic Application Gateway via PowerShell | https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-create-probe-classic-ps |
-| Create custom health probe in Application Gateway portal | https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-create-probe-portal |
 | Configure custom health probes for Azure Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-create-probe-ps |
 | Configure and interpret Application Gateway diagnostic logs | https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-diagnostics |
 | Create and manage Application Gateway with ILB endpoint | https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-ilb-arm |
 | Use Azure Monitor metrics for Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-metrics |
-| Configure frontend IP addresses for Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/configuration-frontend-ip |
+| Configure frontend IP addresses for Azure Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/configuration-frontend-ip |
 | Configure backend HTTP settings for Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/configuration-http-settings |
+| Configure Azure Application Gateway network infrastructure | https://learn.microsoft.com/en-us/azure/application-gateway/configuration-infrastructure |
 | Configure listeners and protocols on Azure Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/configuration-listeners |
 | Configure core components of Azure Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/configuration-overview |
 | Configure request routing rules in Azure Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/configuration-request-routing-rules |
@@ -160,7 +160,6 @@ This skill requires **network access** to fetch documentation content:
 | Use private IPs for internal ingress routing with AGIC | https://learn.microsoft.com/en-us/azure/application-gateway/ingress-controller-private-ip |
 | Monitor Azure Application Gateway with Azure Monitor | https://learn.microsoft.com/en-us/azure/application-gateway/monitor-application-gateway |
 | Use Azure Application Gateway monitoring metrics and logs | https://learn.microsoft.com/en-us/azure/application-gateway/monitor-application-gateway-reference |
-| Configure multi-site hosting on Azure Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/multiple-site-overview |
 | Configure mTLS passthrough on Application Gateway via ARM | https://learn.microsoft.com/en-us/azure/application-gateway/mutual-authentication-arm-template |
 | Route traffic with parameter-based path selection in Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/parameter-based-path-selection-portal |
 | Configure Private Link for Azure Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/private-link-configure |
@@ -168,6 +167,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure client IP preservation with Application Gateway Layer 4 proxy | https://learn.microsoft.com/en-us/azure/application-gateway/proxy-protocol-header |
 | Configure traffic redirection rules in Azure Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/redirect-overview |
 | Configure HTTP header rewrite in Application Gateway portal | https://learn.microsoft.com/en-us/azure/application-gateway/rewrite-http-headers-portal |
+| Configure HTTP header and URL rewrite on Application Gateway v2 | https://learn.microsoft.com/en-us/azure/application-gateway/rewrite-http-headers-url |
 | Configure URL and query string rewrite in Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/rewrite-url-portal |
 | Create Application Gateway and configure header rewrite | https://learn.microsoft.com/en-us/azure/application-gateway/tutorial-http-header-rewrite-powershell |
 | Configure URL path-based routing in Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/url-route-overview |

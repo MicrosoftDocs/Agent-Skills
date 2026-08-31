@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-08-16'
+generated_at: '2026-08-31'
 category_descriptions:
   limits-quotas: Limits, quotas, and behaviors for Private Link/Endpoints, how to
     check service availability per resource, and how to request increases to VNet
     Private Endpoint limits.
-  configuration: 'Configuring Private Link and endpoints: NSP perimeters, subnet/network
-    policies, DNS, IPv6, SNAT/NVA routing, monitoring/diagnostics, and setup via portal,
-    CLI, or PowerShell.'
+  configuration: 'Configuring Azure Private Link and service endpoints: NSP perimeters,
+    subnet policies, DNS, SNAT/NVA, IPv6, monitoring/logs, and setup via portal, CLI,
+    PowerShell, and Terraform.'
   security: RBAC setup for Private Link and Network Security Perimeters, security
     best practices, and inspecting/controlling Private Endpoint traffic with Azure
     Firewall.
@@ -21,32 +21,32 @@ category_descriptions:
     with on-premises or hybrid networks
 skill_description: Expert knowledge for Azure Private Link development including best
   practices, decision making, architecture & design patterns, limits & quotas, security,
-  and configuration. Use when configuring Private Endpoints, DNS zones, Azure Private
-  Resolver, NSGs/NSPs, or Azure Firewall traffic flows, and other Azure Private Link
+  and configuration. Use when configuring Private Endpoints, NSP perimeters, DNS/Private
+  Resolver, Azure Firewall traffic, or Terraform setups, and other Azure Private Link
   related development tasks. Not for Azure Virtual Network (use azure-virtual-network),
-  Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Application
-  Gateway (use azure-application-gateway), Azure Front Door (use azure-front-door).
-use_when: Use when configuring Private Endpoints, DNS zones, Azure Private Resolver,
-  NSGs/NSPs, or Azure Firewall traffic flows, and other Azure Private Link related
+  Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Load Balancer
+  (use azure-load-balancer), Azure Application Gateway (use azure-application-gateway).
+use_when: Use when configuring Private Endpoints, NSP perimeters, DNS/Private Resolver,
+  Azure Firewall traffic, or Terraform setups, and other Azure Private Link related
   development tasks.
 confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), Azure
-  Virtual Network Manager (use azure-virtual-network-manager), Azure Application Gateway
-  (use azure-application-gateway), Azure Front Door (use azure-front-door).
+  Virtual Network Manager (use azure-virtual-network-manager), Azure Load Balancer
+  (use azure-load-balancer), Azure Application Gateway (use azure-application-gateway).
 ---
 # Azure Private Link Crawl Report
 
 ## Summary
 
-- **Total Pages**: 56
-- **Fetched**: 56
+- **Total Pages**: 57
+- **Fetched**: 57
 - **Fetch Failed**: 0
-- **Classified**: 25
+- **Classified**: 26
 - **Unclassified**: 31
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 7
-- **Unchanged**: 49
+- **New Pages**: 1
+- **Updated Pages**: 0
+- **Unchanged**: 56
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-private-link/azure-private-link.csv`
 
@@ -56,30 +56,17 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 |------|-------|------------|
 | architecture-patterns | 1 | 1.8% |
 | best-practices | 1 | 1.8% |
-| configuration | 14 | 25.0% |
-| decision-making | 2 | 3.6% |
-| limits-quotas | 3 | 5.4% |
-| security | 4 | 7.1% |
-| *(Unclassified)* | 31 | 55.4% |
+| configuration | 15 | 26.3% |
+| decision-making | 2 | 3.5% |
+| limits-quotas | 3 | 5.3% |
+| security | 4 | 7.0% |
+| *(Unclassified)* | 31 | 54.4% |
 
 ## Changes
 
-### Updated Pages
+### New Pages
 
-- [Configure an application security group](https://learn.microsoft.com/en-us/azure/private-link/configure-asg-private-endpoint)
-  - Updated: 2026-03-30T08:00:00.000Z → 2026-08-12T05:20:00.000Z
-- [What is a private endpoint?](https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview)
-  - Updated: 2026-03-30T08:00:00.000Z → 2026-08-11T08:00:00.000Z
-- [Private Link service](https://learn.microsoft.com/en-us/azure/private-link/private-link-service-overview)
-  - Updated: 2026-03-30T08:00:00.000Z → 2026-08-10T08:00:00.000Z
-- [Create a Private Link service - PowerShell](https://learn.microsoft.com/en-us/azure/private-link/create-private-link-service-powershell)
-  - Updated: 2026-03-30T08:00:00.000Z → 2026-08-10T08:00:00.000Z
-- [Configure Private Link service Direct Connect](https://learn.microsoft.com/en-us/azure/private-link/configure-private-link-service-direct-connect)
-  - Updated: 2026-05-20T22:22:00.000Z → 2026-08-10T08:00:00.000Z
-- [Private DNS zone values](https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-dns)
-  - Updated: 2026-07-16T08:00:00.000Z → 2026-08-11T08:00:00.000Z
-- [Connect to a SQL server - Azure portal](https://learn.microsoft.com/en-us/azure/private-link/tutorial-private-endpoint-sql-portal)
-  - Updated: 2025-03-25T08:00:00.000Z → 2026-08-10T08:00:00.000Z
+- [Configure a standard service endpoint - Terraform](https://learn.microsoft.com/en-us/azure/private-link/configure-service-endpoint-standard-terraform)
 
 ## Classified Pages
 
@@ -97,6 +84,7 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Configure a standard service endpoint - Azure CLI](https://learn.microsoft.com/en-us/azure/private-link/configure-service-endpoint-standard-cli) | configuration | 0.70 | CLI-focused configuration article; typically includes exact command parameters, property names, and allowed values for standard service endpoints and NSP. |
 | [Configure a standard service endpoint - Azure portal](https://learn.microsoft.com/en-us/azure/private-link/configure-service-endpoint-standard-portal) | configuration | 0.70 | Portal-based configuration guide for standard service endpoints with network identifiers and NSP; expected to contain concrete configuration parameters, resource names, and associations. |
 | [Configure a standard service endpoint - PowerShell](https://learn.microsoft.com/en-us/azure/private-link/configure-service-endpoint-standard-powershell) | configuration | 0.70 | PowerShell configuration guide with cmdlet parameters and property names for standard service endpoints and network security perimeters, which are product-specific configuration details. |
+| [Configure a standard service endpoint - Terraform](https://learn.microsoft.com/en-us/azure/private-link/configure-service-endpoint-standard-terraform) | configuration | 0.70 | Quickstart includes Terraform resource definitions and Azure-specific parameters (network identifier, network security perimeter, subnet/service endpoint configuration) that represent product-specific configuration details rather than generic concepts. |
 | [Cost optimization](https://learn.microsoft.com/en-us/azure/private-link/private-link-cost-optimization) | decision-making | 0.70 | Cost optimization guidance for a specific service usually includes scenario-based recommendations and trade-offs between security and cost, qualifying as decision-making content. |
 | [Disable SNAT for traffic through NVA](https://learn.microsoft.com/en-us/azure/private-link/private-link-disable-snat) | configuration | 0.70 | Describes enabling SNAT bypass via a specific tag on NVA VMs; this is product-specific configuration behavior with named settings that an LLM is unlikely to know from training. |
 | [Disable network policies for a Private Link service](https://learn.microsoft.com/en-us/azure/private-link/disable-private-link-service-network-policy) | configuration | 0.70 | Explains the required subnet setting privateLinkServiceNetworkPolicies for Azure Private Link service, including when it must be disabled and how portal vs. scripted deployments handle it. This is product-specific configuration knowledge tied to a named setting rather than generic networking concepts. |

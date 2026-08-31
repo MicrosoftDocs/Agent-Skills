@@ -24,14 +24,14 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L36-L46 | Diagnosing and fixing Azure Automation issues: runbook failures, DSC/State Configuration, Hybrid Runbook Workers, managed identities, shared resources, and collecting logs for support. |
-| Best Practices | L47-L56 | Best practices for structuring and running Automation runbooks: modular parent-child design, execution patterns, error handling, stream/output usage, and avoiding context/locking issues. |
-| Decision Making | L57-L65 | Guidance on choosing runbook types and planning migrations: Orchestrator to Automation, Log Analytics to AMA, agent to extension workers, and Run As accounts to managed identities. |
-| Limits & Quotas | L66-L73 | Limits, quotas, and version details for Azure Automation: DSC extension history, Automation account capacity, job/runbook limits, and Change Tracking/Inventory support matrix with AMA. |
-| Security | L74-L94 | Securing Automation accounts: identities (system/user-assigned), Entra auth, RBAC, encryption, credentials/certs, private endpoints, policies, and security best practices. |
-| Configuration | L95-L136 | Configuring Azure Automation runbooks, DSC/State Configuration, Hybrid Runbook Workers, schedules, modules/packages, alerts, policies, and integrations (VS Code, source control, ARM, Azure Monitor). |
-| Integrations & Coding Patterns | L137-L149 | Patterns for integrating runbooks with AWS, ARM/SQL/Office 365, webhooks, email (SendGrid), Azure Monitor logging, and using the graphical runbook SDK with managed identities |
-| Deployment | L150-L156 | Guides for deploying Automation resources: setting up DSC continuous deployment with Chocolatey and installing/configuring Windows and Linux Hybrid Runbook Worker agents (agent- and extension-based). |
+| Troubleshooting | L36-L45 | Diagnosing and fixing Azure Automation issues: runbook failures, DSC/State Configuration, Hybrid Runbook Workers, managed identities, shared resources, and collecting logs for support. |
+| Best Practices | L46-L55 | Best practices for structuring and running Automation runbooks: modular parent-child design, execution patterns, error handling, stream/output usage, and avoiding context/locking issues. |
+| Decision Making | L56-L63 | Guidance on choosing runbook types and planning migrations: Orchestrator to Automation, Log Analytics to AMA, agent to extension workers, and Run As accounts to managed identities. |
+| Limits & Quotas | L64-L71 | Limits, quotas, and version details for Azure Automation: DSC extension history, Automation account capacity, job/runbook limits, and Change Tracking/Inventory support matrix with AMA. |
+| Security | L72-L92 | Securing Automation accounts: identities (system/user-assigned), Entra auth, RBAC, encryption, credentials/certs, private endpoints, policies, and security best practices. |
+| Configuration | L93-L134 | Configuring Azure Automation runbooks, DSC/State Configuration, Hybrid Runbook Workers, schedules, modules/packages, alerts, policies, and integrations (VS Code, source control, ARM, Azure Monitor). |
+| Integrations & Coding Patterns | L135-L147 | Patterns for integrating runbooks with AWS, ARM/SQL/Office 365, webhooks, email (SendGrid), Azure Monitor logging, and using the graphical runbook SDK with managed identities |
+| Deployment | L148-L152 | Guides for deploying Automation resources: setting up DSC continuous deployment with Chocolatey and installing/configuring Windows and Linux Hybrid Runbook Worker agents (agent- and extension-based). |
 
 ### Troubleshooting
 | Topic | URL |
@@ -39,7 +39,6 @@ This skill requires **network access** to fetch documentation content:
 | Collect diagnostic data for Azure Automation support cases | https://learn.microsoft.com/en-us/azure/automation/troubleshoot/collect-data-microsoft-azure-automation-case |
 | Troubleshoot Azure Automation State Configuration problems | https://learn.microsoft.com/en-us/azure/automation/troubleshoot/desired-state-configuration |
 | Troubleshoot extension-based Hybrid Runbook Worker failures | https://learn.microsoft.com/en-us/azure/automation/troubleshoot/extension-based-hybrid-runbook-worker |
-| Troubleshoot agent-based Hybrid Runbook Worker issues | https://learn.microsoft.com/en-us/azure/automation/troubleshoot/hybrid-runbook-worker |
 | Troubleshoot managed identity issues in Azure Automation | https://learn.microsoft.com/en-us/azure/automation/troubleshoot/managed-identity |
 | Diagnose and fix Azure Automation runbook issues | https://learn.microsoft.com/en-us/azure/automation/troubleshoot/runbooks |
 | Troubleshoot Azure Automation shared resource problems | https://learn.microsoft.com/en-us/azure/automation/troubleshoot/shared-resources |
@@ -60,7 +59,6 @@ This skill requires **network access** to fetch documentation content:
 | Migrate System Center Orchestrator runbooks to Azure Automation | https://learn.microsoft.com/en-us/azure/automation/automation-orchestrator-migration |
 | Choose appropriate Azure Automation runbook type | https://learn.microsoft.com/en-us/azure/automation/automation-runbook-types |
 | Migrate Change Tracking from Log Analytics agent to AMA | https://learn.microsoft.com/en-us/azure/automation/change-tracking/guidance-migration-log-analytics-monitoring-agent |
-| Migrate agent-based workers to extension-based | https://learn.microsoft.com/en-us/azure/automation/migrate-existing-agent-based-hybrid-worker-to-extension-based-workers |
 | Plan and execute migration from Run As to managed identities | https://learn.microsoft.com/en-us/azure/automation/migrate-run-as-accounts-managed-identity |
 
 ### Limits & Quotas
@@ -151,6 +149,4 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Set up continuous deployment with DSC and Chocolatey | https://learn.microsoft.com/en-us/azure/automation/automation-dsc-cd-chocolatey |
-| Deploy Linux Hybrid Runbook Worker agent | https://learn.microsoft.com/en-us/azure/automation/automation-linux-hrw-install |
-| Deploy agent-based Windows Hybrid Runbook Workers in Automation | https://learn.microsoft.com/en-us/azure/automation/automation-windows-hrw-install |
 | Deploy extension-based Hybrid Runbook Workers | https://learn.microsoft.com/en-us/azure/automation/extension-based-hybrid-runbook-worker-install |

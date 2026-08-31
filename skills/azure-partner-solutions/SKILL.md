@@ -3,7 +3,7 @@ name: azure-partner-solutions
 description: Expert knowledge for Azure Partner Solutions development including troubleshooting, decision making, architecture & design patterns, security, configuration, and integrations & coding patterns. Use when using Service Connector to Confluent/MongoDB/Neon, Dynatrace/Datadog/Elastic/New Relic on Azure, or Palo Alto Cloud NGFW with App Gateway, and other Azure Partner Solutions related development tasks. Not for Azure Industry (use azure-industry), Azure Managed Applications (use azure-managed-applications), Azure Lighthouse (use azure-lighthouse), Azure Oracle (use azure-oracle).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-09"
+  generated_at: "2026-08-31"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Partner Solutions Skill
@@ -28,8 +28,8 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L46-L50 | Guidance on evaluating Dynatrace APM on Azure, starting a free trial from the portal/Marketplace, setup steps, and considerations before adopting it for monitoring. |
 | Architecture & Design Patterns | L51-L55 | Architectural guidance for integrating Palo Alto Cloud NGFW with Azure Application Gateway, including network design, routing, security, and deployment patterns. |
 | Security | L56-L61 | Managing security for Azure partner services, including Confluent Cloud RBAC in Azure portal and configuring SSO/access control for Informatica IDMC Azure resources. |
-| Configuration | L62-L76 | Configuring and managing Azure-integrated partner resources (Datadog, Dynatrace, Elastic, MongoDB Atlas, New Relic, NGINXaaS, etc.), including prerequisites, settings, and integrations. |
-| Integrations & Coding Patterns | L77-L81 | Patterns and setup guides for connecting Azure services to external data platforms (Confluent Cloud, MongoDB Atlas, Neon Postgres) using Service Connector and Foundry Agents. |
+| Configuration | L62-L75 | Configuring and managing Azure-integrated partner resources (Datadog, Dynatrace, Elastic, MongoDB Atlas, New Relic, NGINXaaS, etc.), including prerequisites, settings, and integrations. |
+| Integrations & Coding Patterns | L76-L80 | Patterns and setup guides for connecting Azure services to external data platforms (Confluent Cloud, MongoDB Atlas, Neon Postgres) using Service Connector and Foundry Agents. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -71,7 +71,6 @@ This skill requires **network access** to fetch documentation content:
 | Manage configuration for Azure Native New Relic Service | https://learn.microsoft.com/en-us/azure/partner-solutions/new-relic/manage |
 | Configure and manage NGINXaaS resources in Azure | https://learn.microsoft.com/en-us/azure/partner-solutions/nginx/manage |
 | Configure Cloud NGFW by Palo Alto Networks in Azure | https://learn.microsoft.com/en-us/azure/partner-solutions/palo-alto/manage |
-| Manage Azure Native Pure Storage Cloud settings | https://learn.microsoft.com/en-us/azure/partner-solutions/pure-storage/manage |
 | Configure and manage Azure Native Qumulo settings | https://learn.microsoft.com/en-us/azure/partner-solutions/qumulo/manage |
 
 ### Integrations & Coding Patterns

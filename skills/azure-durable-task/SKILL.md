@@ -1,9 +1,9 @@
 ---
 name: azure-durable-task
-description: Expert knowledge for Azure Durable Task development including best practices, decision making, architecture & design patterns, limits & quotas, configuration, integrations & coding patterns, and deployment. Use when choosing Durable storage backends, versioning orchestrations, tuning hub config, or using instance management APIs, and other Azure Durable Task related development tasks. Not for Azure Functions (use azure-functions), Azure Logic Apps (use azure-logic-apps), Azure App Service (use azure-app-service).
+description: Expert knowledge for Azure Durable Task development including best practices, decision making, architecture & design patterns, limits & quotas, configuration, integrations & coding patterns, and deployment. Use when versioning Durable workflows, using continue-as-new, managing instances via APIs, or fan-out/fan-in orchestration, and other Azure Durable Task related development tasks. Not for Azure Functions (use azure-functions), Azure Service Bus (use azure-service-bus), Azure Logic Apps (use azure-logic-apps), Azure App Service (use azure-app-service).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-16"
+  generated_at: "2026-08-31"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Durable Task Skill
@@ -24,7 +24,7 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Best Practices | L35-L43 | Patterns and guidance for robust orchestrator design: constraints, retries, eternal/continue-as-new flows, external event handling, and singleton orchestration techniques. |
+| Best Practices | L35-L43 | Guidance on writing robust orchestrator code, configuring retries and error handling, using continue-as-new, handling external events, and building singleton/eternal Durable Functions. |
 | Decision Making | L44-L49 | Guidance on when to use Durable Functions vs raw Durable Task SDK, and how to compare and choose durable storage providers/backends for orchestrations. |
 | Architecture & Design Patterns | L50-L57 | Patterns for orchestrating Durable workflows: fan-out/fan-in, human approval steps, long-running monitors, and function chaining design and implementation. |
 | Limits & Quotas | L58-L63 | Configuring orchestration status size/retention limits, querying status, and monitoring Durable Task Scheduler action metrics, performance, and billing impacts. |
@@ -35,7 +35,7 @@ This skill requires **network access** to fetch documentation content:
 ### Best Practices
 | Topic | URL |
 |-------|-----|
-| Apply orchestrator code constraints in Durable Task | https://learn.microsoft.com/en-us/azure/durable-task/common/durable-task-code-constraints |
+| Follow orchestrator code constraints in Durable Functions | https://learn.microsoft.com/en-us/azure/durable-task/common/durable-task-code-constraints |
 | Configure error handling and retries in Durable Functions | https://learn.microsoft.com/en-us/azure/durable-task/common/durable-task-error-handling |
 | Implement eternal orchestrations with continue-as-new | https://learn.microsoft.com/en-us/azure/durable-task/common/durable-task-eternal-orchestrations |
 | Handle external events in Durable orchestrations | https://learn.microsoft.com/en-us/azure/durable-task/common/durable-task-external-events |

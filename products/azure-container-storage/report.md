@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-28'
+generated_at: '2026-08-31'
 category_descriptions:
   security: Configuring customer-managed key (CMK) encryption for Azure Container
     Storage using Elastic SAN volumes, including setup steps and security considerations.
@@ -39,8 +39,8 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure F
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 33
+- **Updated Pages**: 1
+- **Unchanged**: 32
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-container-storage/azure-container-storage.csv`
 
@@ -56,6 +56,11 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure F
 | *(Unclassified)* | 19 | 57.6% |
 
 ## Changes
+
+### Updated Pages
+
+- [Release notes for Azure Container Storage](https://learn.microsoft.com/en-us/azure/storage/container-storage/container-storage-release-notes)
+  - Updated: 2026-01-30T08:00:00.000Z → 2026-08-20T22:11:00.000Z
 
 ## Classified Pages
 
@@ -95,7 +100,7 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure F
 | [Volume snapshots](https://learn.microsoft.com/en-us/azure/storage/container-storage/volume-snapshot-restore) | 0.40 | How-to for taking and restoring snapshots; typical Kubernetes patterns without product-specific limits, configs, or decision matrices. |
 | [Remove Azure Container Storage](https://learn.microsoft.com/en-us/azure/storage/container-storage/remove-container-storage) | 0.35 | Removal/cleanup steps for the extension and cluster; mostly procedural without structured configuration or limits. |
 | [Remove Azure Container Storage](https://learn.microsoft.com/en-us/azure/storage/container-storage/remove-container-storage-version-1) | 0.35 | Removal steps for v1; procedural cleanup without structured configuration, limits, or troubleshooting mappings. |
-| [Release notes for Azure Container Storage](https://learn.microsoft.com/en-us/azure/storage/container-storage/container-storage-release-notes) | 0.30 | Release notes; version and feature listings but not configuration references, limits tables, or troubleshooting mappings. |
 | [Frequently asked questions](https://learn.microsoft.com/en-us/azure/storage/container-storage/container-storage-faq) | 0.20 | FAQ; likely conceptual Q&A and high-level clarifications rather than detailed error codes, configs, or limits. |
+| [Release notes for Azure Container Storage](https://learn.microsoft.com/en-us/azure/storage/container-storage/container-storage-release-notes) | 0.20 | Release notes typically list version changes, fixes, and new features but not structured limits, configuration matrices, or troubleshooting mappings as defined by the sub-skill types. Without specific evidence of numeric limits, config tables, or error-code-based diagnosis, this page does not match any expert-knowledge category. |
 | [What is Azure Container Storage (version 1.x.x)?](https://learn.microsoft.com/en-us/azure/storage/container-storage/container-storage-introduction-version-1) | 0.20 | Introduction/overview for version 1.x.x; conceptual description without detailed limits, configs, or decision matrices. |
 | [What is Azure Container Storage?](https://learn.microsoft.com/en-us/azure/storage/container-storage/container-storage-introduction) | 0.20 | High-level introduction/overview of Azure Container Storage; no detailed limits, configs, or decision matrices. |

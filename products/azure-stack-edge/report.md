@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-08-09'
+generated_at: '2026-08-31'
 category_descriptions:
   limits-quotas: Limits, capacities, performance, and system requirements for Azure
     Stack Edge and Data Box Gateway devices, including supported VM sizes, GPU limits,
     and cross-subscription resource moves.
-  troubleshooting: 'Diagnosing and fixing Azure Stack Edge/Data Box Gateway issues:
-    release-specific critical bugs, ordering/activation, certificates, ARM/Blob/IoT
-    Edge/VM/GPU problems, and using logs/alerts for troubleshooting.'
+  troubleshooting: Release-specific known issues, alerts, and fixes for Azure Stack
+    Edge/Data Box Gateway, plus troubleshooting for ordering, activation, certificates,
+    ARM, storage, IoT Edge, VMs, GPU, diagnostics, and logs.
   configuration: 'Configuring and managing Azure Stack Edge/Data Box Gateway devices:
     networking, power, storage, Kubernetes/VMs, GPUs, monitoring, automation, and
     hardware/system requirements.'
@@ -43,17 +43,17 @@ confusable_not_for: Not for Azure IoT Edge (use azure-iot-edge), Azure Kubernete
 
 ## Summary
 
-- **Total Pages**: 233
-- **Fetched**: 233
+- **Total Pages**: 234
+- **Fetched**: 234
 - **Fetch Failed**: 0
-- **Classified**: 144
+- **Classified**: 145
 - **Unclassified**: 89
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 233
-- **Deleted Pages**: 0
+- **New Pages**: 2
+- **Updated Pages**: 1
+- **Unchanged**: 231
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-stack-edge/azure-stack-edge.csv`
 
 ## Classification Statistics
@@ -61,16 +61,30 @@ confusable_not_for: Not for Azure IoT Edge (use azure-iot-edge), Azure Kubernete
 | Type | Count | Percentage |
 |------|-------|------------|
 | best-practices | 2 | 0.9% |
-| configuration | 49 | 21.0% |
+| configuration | 49 | 20.9% |
 | decision-making | 5 | 2.1% |
 | deployment | 1 | 0.4% |
 | integrations | 8 | 3.4% |
-| limits-quotas | 9 | 3.9% |
-| security | 23 | 9.9% |
-| troubleshooting | 47 | 20.2% |
-| *(Unclassified)* | 89 | 38.2% |
+| limits-quotas | 9 | 3.8% |
+| security | 23 | 9.8% |
+| troubleshooting | 48 | 20.5% |
+| *(Unclassified)* | 89 | 38.0% |
 
 ## Changes
+
+### New Pages
+
+- [2607 - Current](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-2607-release-notes)
+- [2604](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-2604-release-notes)
+
+### Updated Pages
+
+- [Apply updates](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-install-update)
+  - Updated: 2026-05-28T08:00:00.000Z → 2026-08-27T09:10:00.000Z
+
+### Deleted Pages
+
+- ~~2604 - Current~~ (https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-2604-release-notes)
 
 ## Classified Pages
 
@@ -101,7 +115,8 @@ confusable_not_for: Not for Azure IoT Edge (use azure-iot-edge), Azure Kubernete
 | [View key vault integration](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-activation-key-vault) | security | 0.80 | Details how Key Vault is created and used for secret management during activation; includes product-specific security integration behavior. |
 | [View supported API profiles](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-profiles-azure-resource-manager-versions) | configuration | 0.80 | Contains tables of resource providers and supported API versions; product-specific configuration/compatibility matrix for integrations and tooling. |
 | [2510](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-2510-release-notes) | troubleshooting | 0.78 | Similar to the 2604 release notes, this version-specific page documents critical open issues and resolutions for Azure Stack Edge 2510. Such content provides detailed, version-bound problem descriptions and workarounds that function as troubleshooting guidance rather than generic documentation. |
-| [2604 - Current](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-2604-release-notes) | troubleshooting | 0.78 | Release notes for a specific Azure Stack Edge version typically list concrete bugs, symptoms, and workarounds that are version-specific and not inferable from general training data. These notes usually map issues to behaviors and fixes (symptom → cause → workaround/solution), which aligns best with the troubleshooting category. |
+| [2604](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-2604-release-notes) | troubleshooting | 0.78 | Similar to the 2607 release notes, this page documents critical open issues and resolved issues for the 2604 release, including version-specific behaviors and workarounds. These are detailed, product- and version-specific troubleshooting insights that an LLM wouldn't reliably know from general training. |
+| [2607 - Current](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-2607-release-notes) | troubleshooting | 0.78 | Release notes for a specific Azure Stack Edge build typically list concrete product-specific issues, symptoms, and workarounds tied to that version. These are not broadly known from training data and map closely to troubleshooting patterns (symptom → workaround/resolution) for this hardware/software release. |
 | [1906](https://learn.microsoft.com/en-us/azure/databox-gateway/data-box-gateway-1906-release-notes) | troubleshooting | 0.75 | Release notes for 1906 release; contains known issues and resolutions for troubleshooting. |
 | [1911](https://learn.microsoft.com/en-us/azure/databox-gateway/data-box-gateway-1911-release-notes) | troubleshooting | 0.75 | Release notes with critical issues and workarounds; specialized troubleshooting content. |
 | [2007](https://learn.microsoft.com/en-us/azure/databox-gateway/data-box-gateway-2007-release-notes) | troubleshooting | 0.75 | Release notes for 2007 release with open issues and resolutions; supports diagnosing version-specific behavior. |
@@ -261,7 +276,6 @@ confusable_not_for: Not for Azure IoT Edge (use azure-iot-edge), Azure Kubernete
 | [7 - Activate](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-pro-r-deploy-activate) | 0.40 | Activation tutorial is likely a guided workflow without detailed configuration matrices, limits, or troubleshooting mappings. |
 | [Add, connect to share](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-deploy-add-shares) | 0.40 | Tutorial for adding and connecting to shares; mostly procedural UI steps without detailed config tables or limits. |
 | [Add, connect to storage accounts](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-deploy-add-storage-accounts) | 0.40 | Tutorial for adding storage accounts; primarily step-by-step instructions rather than detailed configuration reference or troubleshooting. |
-| [Apply updates](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-install-update) | 0.40 | Appears to be a procedural how-to for installing updates on Azure Stack Edge Pro GPU devices via portal and local UI. Summary does not indicate presence of configuration parameter tables, limits, error-code-based troubleshooting, or other expert-only details; likely a step-by-step operations guide rather than deep config, limits, or troubleshooting content. |
 | [Contact Microsoft Support](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-contact-microsoft-support) | 0.40 | How to log a support request; procedural and portal-driven, not focused on technical configuration, limits, or error-code mappings. |
 | [Custom image from Azure VM](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-create-virtual-machine-image) | 0.40 | Step-by-step guide for creating custom VM images; likely mostly procedural without detailed config tables, limits, or product-specific error mappings. |
 | [Generalized image from ISO](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-prepare-windows-generalized-image-iso) | 0.40 | How-to for preparing a generalized Windows image from ISO; mostly imaging workflow, not detailed product-specific configuration or limits. |
@@ -291,6 +305,7 @@ confusable_not_for: Not for Azure IoT Edge (use azure-iot-edge), Azure Kubernete
 | [3 - Connect](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-mini-r-deploy-connect) | 0.30 | Connection tutorial via local web UI; likely basic steps rather than detailed configuration matrices or troubleshooting mappings. |
 | [3 - Connect](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-pro-2-deploy-connect) | 0.30 | Tutorial on connecting and activating via local web UI sounds like a basic how-to; summary does not indicate detailed configuration option tables, security role mappings, or error-code-based troubleshooting, so it likely lacks the required expert knowledge. |
 | [3 - Connect](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-pro-r-deploy-connect) | 0.30 | Tutorial for connecting via local web UI; primarily walkthrough, not configuration reference, limits, or troubleshooting with error codes. |
+| [Apply updates](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-install-update) | 0.30 | Appears to be a procedural update/install guide without tables of configuration parameters, limits, quotas, or error-code-based troubleshooting. It describes how to apply updates via Azure portal and local web UI, but the summary does not indicate product-specific settings, numeric constraints, or diagnostic mappings that meet any sub-skill criteria. |
 | [Azure Stack Edge Hardware Additional Terms](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-add-hardware-terms) | 0.30 | Documents additional hardware terms; legal/contractual content rather than technical limits, configuration, or troubleshooting details. |
 | [Create order](https://learn.microsoft.com/en-us/azure/azure-edge-hardware-center/azure-edge-hardware-center-create-order) | 0.30 | Step-by-step portal tutorial for creating an order; lacks detailed configuration tables or product-specific edge cases. |
 | [Open Support ticket](https://learn.microsoft.com/en-us/azure/azure-edge-hardware-center/azure-edge-hardware-center-contact-microsoft-support) | 0.30 | Describes how to open a support ticket; process guidance rather than technical troubleshooting or configuration. |

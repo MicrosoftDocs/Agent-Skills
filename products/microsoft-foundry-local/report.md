@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-16'
+generated_at: '2026-08-31'
 category_descriptions:
   configuration: 'Configuring and operating Foundry Local: compiling Hugging Face
     models with Olive, installing/using the CLI, and reference for all CLI commands
@@ -37,8 +37,8 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 21
+- **Updated Pages**: 1
+- **Unchanged**: 22
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/microsoft-foundry-local/microsoft-foundry-local.csv`
 
@@ -56,10 +56,8 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 
 ### Updated Pages
 
-- [Use the Foundry Local CLI (preview)](https://learn.microsoft.com/en-us/azure/foundry-local/how-to/how-to-use-foundry-local-cli)
-  - Updated: 2026-08-05T08:00:00.000Z → 2026-08-14T22:13:00.000Z
-- [CLI (preview) guide](https://learn.microsoft.com/en-us/azure/foundry-local/reference/reference-cli)
-  - Updated: 2026-08-05T08:00:00.000Z → 2026-08-13T08:00:00.000Z
+- [Get Started](https://learn.microsoft.com/en-us/azure/foundry-local/get-started)
+  - Updated: 2026-06-15T08:00:00.000Z → 2026-07-14T22:18:00.000Z
 
 ## Classified Pages
 
@@ -87,9 +85,9 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 |-----------|------------|--------|
 | [Build a RAG application](https://learn.microsoft.com/en-us/azure/foundry-local/tutorials/tutorial-build-rag-app) | 0.30 | RAG tutorial; focuses on building an example app, not on product-specific limits, configs, or decision matrices. |
 | [Build a voice-to-text note taker](https://learn.microsoft.com/en-us/azure/foundry-local/tutorials/tutorial-build-voice-to-text-note-taker) | 0.30 | Tutorial for voice-to-text app; appears as a guided example without detailed config matrices or troubleshooting content. |
-| [Get Started](https://learn.microsoft.com/en-us/azure/foundry-local/get-started) | 0.30 | Quickstart tutorial showing basic usage; no configuration tables, limits, or product-specific troubleshooting. |
 | [Build a document summarizer](https://learn.microsoft.com/en-us/azure/foundry-local/tutorials/tutorial-build-document-summarizer) | 0.20 | Document summarizer tutorial; scenario-focused guidance without clear indication of numeric limits, configuration matrices, or error-code-based troubleshooting content. |
 | [Build a multi-turn chat assistant](https://learn.microsoft.com/en-us/azure/foundry-local/tutorials/tutorial-build-chat-assistant) | 0.20 | Tutorial-style content for building a chat assistant with the Foundry Local SDK; likely shows example code and flow but not product-specific limits, configs tables, or troubleshooting matrices that qualify as expert knowledge per the defined categories. |
 | [Build an AI assistant with tool calling](https://learn.microsoft.com/en-us/azure/foundry-local/tutorials/tutorial-build-tool-calling-assistant) | 0.20 | Tutorial for building an AI assistant with tool calling; focuses on how to implement a scenario rather than detailed configuration tables, limits, or troubleshooting mappings. |
 | [Foundry Local Architecture](https://learn.microsoft.com/en-us/azure/foundry-local/concepts/foundry-local-architecture) | 0.20 | Architecture overview article; conceptual explanation of components, not a decision matrix or pattern guide with thresholds. |
+| [Get Started](https://learn.microsoft.com/en-us/azure/foundry-local/get-started) | 0.20 | Quickstart tutorial for Foundry Local SDK showing how to build a basic console app and download/run a local model. It focuses on step-by-step usage, not on limits, configuration matrices, error codes, or product-specific quotas/roles/settings. No detailed tables, numeric limits, or specialized troubleshooting/decision guidance are present. |
 | [What is Foundry Local?](https://learn.microsoft.com/en-us/azure/foundry-local/what-is-foundry-local) | 0.10 | High-level product overview of Foundry Local without specific limits, configs, error codes, or detailed patterns; primarily conceptual and marketing-style description. |

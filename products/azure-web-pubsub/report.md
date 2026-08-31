@@ -51,8 +51,8 @@ confusable_not_for: Not for Azure SignalR Service (use azure-signalr-service), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 122
+- **Updated Pages**: 0
+- **Unchanged**: 123
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-web-pubsub/azure-web-pubsub.csv`
 
@@ -72,11 +72,6 @@ confusable_not_for: Not for Azure SignalR Service (use azure-signalr-service), A
 | *(Unclassified)* | 35 | 28.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [Socket.IO Serverless Mode Specification](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/socket-io-serverless-protocol)
-  - Updated: 2024-10-10T11:23:00.000Z → 2026-08-10T22:12:00.000Z
 
 ## Classified Pages
 

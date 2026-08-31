@@ -41,8 +41,8 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 48
+- **Updated Pages**: 0
+- **Unchanged**: 49
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-health/azure-service-health.csv`
 
@@ -59,11 +59,6 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 | *(Unclassified)* | 28 | 57.1% |
 
 ## Changes
-
-### Updated Pages
-
-- [Planned maintenance overview](https://learn.microsoft.com/en-us/azure/service-health/service-health-planned-maintenance)
-  - Updated: 2026-04-20T08:00:00.000Z → 2026-08-13T08:00:00.000Z
 
 ## Classified Pages
 

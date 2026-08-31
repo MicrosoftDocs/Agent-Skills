@@ -3,7 +3,7 @@ name: azure-blueprints
 description: Expert knowledge for Azure Blueprints development including troubleshooting, decision making, security, configuration, integrations & coding patterns, and deployment. Use when migrating off Blueprints, mapping to PBMM/ISO/SWIFT, automating via CLI/PowerShell/REST, or fixing deployment errors, and other Azure Blueprints related development tasks. Not for Azure Policy (use azure-policy), Azure Resource Manager (use azure-resource-manager), Azure Resource Graph (use azure-resource-graph), Azure Portal (use azure-portal).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-12"
+  generated_at: "2026-08-31"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Blueprints Skill

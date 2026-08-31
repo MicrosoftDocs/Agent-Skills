@@ -3,7 +3,7 @@ name: azure-external-attack-surface-management
 description: Expert knowledge for Azure External Attack Surface Management development including configuration. Use when filtering EASM inventory by ASN, domains, hosts, IPs, pages, SSL certs, or exporting findings to analytics tools, and other Azure External Attack Surface Management related development tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure Security (use azure-security), Azure Sentinel (use azure-sentinel), Azure Networking (use azure-networking).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-16"
+  generated_at: "2026-08-31"
   generator: "docs2skills/1.0.0"
 ---
 # Azure External Attack Surface Management Skill

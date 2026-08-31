@@ -1,10 +1,11 @@
 ---
-generated_at: '2026-08-09'
+generated_at: '2026-08-31'
 category_descriptions:
   security: Configuring API auth schemes (keys, OAuth, etc.) in API Center and managing
     portal access/permissions via the VS Code extension
-  configuration: 'Configuring API Center instances: deployment via ARM/Bicep/CLI,
-    setting up backup/restore, and defining/customizing governance metadata schemas.'
+  configuration: 'Configuring Azure API Center instances: deployment via ARM/Bicep/CLI,
+    backup/restore setup, plugin marketplace endpoints, and defining/customizing governance
+    metadata schemas.'
   deployment: Automating API linting and registration to Azure API Center (e.g., via
     GitHub Actions) and instructions for self-hosting the Azure API Center portal.
   best-practices: 'Best practices for API governance in API Center: using managed
@@ -14,15 +15,17 @@ category_descriptions:
     Azure CLI and Logic Apps/Teams
 skill_description: Expert knowledge for Azure Api Center development including best
   practices, security, configuration, integrations & coding patterns, and deployment.
-  Use when automating API linting/registration, portal self-hosting, governance schemas,
-  backups, or cross-platform sync, and other Azure Api Center related development
+  Use when configuring API Center instances, portal auth, GitHub-based lint/registration,
+  portal self-hosting, or API sync, and other Azure Api Center related development
   tasks. Not for Azure API Management (use azure-api-management), Azure Resource Manager
-  (use azure-resource-manager), Azure Portal (use azure-portal).
-use_when: Use when automating API linting/registration, portal self-hosting, governance
-  schemas, backups, or cross-platform sync, and other Azure Api Center related development
+  (use azure-resource-manager), Azure Portal (use azure-portal), Azure Monitor (use
+  azure-monitor).
+use_when: Use when configuring API Center instances, portal auth, GitHub-based lint/registration,
+  portal self-hosting, or API sync, and other Azure Api Center related development
   tasks.
 confusable_not_for: Not for Azure API Management (use azure-api-management), Azure
-  Resource Manager (use azure-resource-manager), Azure Portal (use azure-portal).
+  Resource Manager (use azure-resource-manager), Azure Portal (use azure-portal),
+  Azure Monitor (use azure-monitor).
 ---
 # Azure Api Center Crawl Report
 
@@ -31,13 +34,13 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 - **Total Pages**: 39
 - **Fetched**: 39
 - **Fetch Failed**: 0
-- **Classified**: 15
-- **Unclassified**: 24
+- **Classified**: 16
+- **Unclassified**: 23
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 39
+- **Updated Pages**: 1
+- **Unchanged**: 38
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-api-center/azure-api-center.csv`
 
@@ -46,13 +49,18 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 | Type | Count | Percentage |
 |------|-------|------------|
 | best-practices | 2 | 5.1% |
-| configuration | 6 | 15.4% |
+| configuration | 7 | 17.9% |
 | deployment | 2 | 5.1% |
 | integrations | 3 | 7.7% |
 | security | 2 | 5.1% |
-| *(Unclassified)* | 24 | 61.5% |
+| *(Unclassified)* | 23 | 59.0% |
 
 ## Changes
+
+### Updated Pages
+
+- [Enable plugin marketplace](https://learn.microsoft.com/en-us/azure/api-center/enable-api-center-plugin-marketplace)
+  - Updated: 2026-06-02T20:30:00.000Z → 2026-08-17T08:00:00.000Z
 
 ## Classified Pages
 
@@ -62,6 +70,7 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 | [Create an API center - ARM template](https://learn.microsoft.com/en-us/azure/api-center/set-up-api-center-arm-template) | configuration | 0.70 | ARM template example exposes the schema for the API Center resource, including property names and allowed configurations. |
 | [Create an API center - Bicep](https://learn.microsoft.com/en-us/azure/api-center/set-up-api-center-bicep) | configuration | 0.70 | Bicep quickstart will define resource types, properties, and allowed values for API Center, which are product-specific configuration details. |
 | [Enable API Center portal view - VS Code extension](https://learn.microsoft.com/en-us/azure/api-center/enable-api-center-portal-vs-code-extension) | security | 0.70 | Uses Entra ID and RBAC to manage portal view access; includes role and permission configuration specific to this extension. |
+| [Enable plugin marketplace](https://learn.microsoft.com/en-us/azure/api-center/enable-api-center-plugin-marketplace) | configuration | 0.70 | Page describes how to enable discovery of plugins via the API Center plugin marketplace endpoint for tools like GitHub Copilot and Claude Code, which likely includes product-specific endpoint configuration details and parameters not generally known from training. |
 | [Import APIs from API Management](https://learn.microsoft.com/en-us/azure/api-center/import-api-management-apis) | integrations | 0.70 | Shows CLI-based integration between API Management and API Center, including specific commands, parameters, and options. |
 | [Use metadata for governance](https://learn.microsoft.com/en-us/azure/api-center/metadata) | configuration | 0.70 | Goes beyond concepts to describe built-in vs custom metadata, schema structure, and how to enforce consistency—product-specific configuration behavior. |
 | [Backup and restore](https://learn.microsoft.com/en-us/azure/api-center/backup-restore) | configuration | 0.68 | The page describes product-specific backup and restore commands (apiops apic), including required parameters and how to restore to different instances/regions/tenants. These are concrete configuration operations and CLI flags unique to Azure API Center, which qualify as expert configuration knowledge rather than generic backup concepts. |
@@ -81,7 +90,6 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 | [Discover and consume APIs - VS Code extension](https://learn.microsoft.com/en-us/azure/api-center/discover-apis-vscode-extension) | 0.45 | Describes discovery and consumption features in VS Code; likely usage-level guidance without deep configuration or limits. |
 | [2 - Add APIs to the inventory](https://learn.microsoft.com/en-us/azure/api-center/tutorials/register-apis) | 0.40 | Tutorial on registering APIs via portal; likely procedural without detailed parameter tables or numeric constraints. |
 | [3 - Add environments and deployments](https://learn.microsoft.com/en-us/azure/api-center/tutorials/configure-environments-deployments) | 0.40 | Tutorial for adding environments and deployments; appears task-focused rather than a structured configuration reference. |
-| [Enable plugin marketplace](https://learn.microsoft.com/en-us/azure/api-center/enable-api-center-plugin-marketplace) | 0.40 | Explains enabling plugin discovery via a marketplace endpoint; summary suggests integration steps but not detailed configuration parameter tables or numeric limits. |
 | [Synchronize assets from a Git repository](https://learn.microsoft.com/en-us/azure/api-center/synchronize-assets-git) | 0.40 | Describes integrating a Git repository to sync assets; summary does not indicate presence of configuration parameter tables with defaults or numeric constraints. |
 | [Create an API center - Visual Studio Code](https://learn.microsoft.com/en-us/azure/api-center/set-up-api-center-vs-code-extension) | 0.35 | VS Code extension quickstart for creating the resource; mostly wizard-driven steps, not a configuration reference or limits table. |
 | [Create an API center - portal](https://learn.microsoft.com/en-us/azure/api-center/set-up-api-center) | 0.30 | Quickstart for creating an API Center via portal; primarily step-by-step UI guidance, not configuration reference or limits. |

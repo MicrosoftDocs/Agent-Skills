@@ -34,8 +34,8 @@ confusable_not_for: Not for Azure Carbon Optimization (use azure-carbon-optimiza
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 14
+- **Updated Pages**: 0
+- **Unchanged**: 15
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-impact-reporting/azure-impact-reporting.csv`
 
@@ -49,11 +49,6 @@ confusable_not_for: Not for Azure Carbon Optimization (use azure-carbon-optimiza
 | *(Unclassified)* | 6 | 40.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [Report node health](https://learn.microsoft.com/en-us/azure/azure-impact-reporting/guest-health-impact-report)
-  - Updated: 2026-06-30T22:03:00.000Z → 2026-08-13T22:05:00.000Z
 
 ## Classified Pages
 

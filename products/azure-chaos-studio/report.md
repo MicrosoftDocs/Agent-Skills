@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-09'
+generated_at: '2026-08-31'
 category_descriptions:
   configuration: 'Configuring Chaos Studio and Azure Chaos Agent: deployment via ARM/Bicep,
     network/Private Link setup, monitoring integration, policies, targets, capabilities,
@@ -15,24 +15,22 @@ category_descriptions:
   integrations: How to configure and run Chaos Studio experiments via CLI, REST, and
     portal, including agent-based/service-direct faults, templates (AKS, VMSS, DNS),
     dynamic targeting, and Logic Apps scheduling
-  limits-quotas: Limits on chaos experiment runs, throttling, quotas, and restrictions
-    specific to Chaos Studio workspaces in preview, including supported scale and
-    usage constraints.
+  limits-quotas: Limits on experiments, faults, and resources in Chaos Studio, plus
+    workspace-level constraints, quotas, and known limitations or issues.
   decision-making: Guidance on selecting the right experiment targets/scope and deciding
     whether to use Chaos Studio workspaces or classic experiments for your chaos testing
     setup.
 skill_description: Expert knowledge for Chaos Studio development including troubleshooting,
   best practices, decision making, limits & quotas, security, configuration, and integrations
-  & coding patterns. Use when running AKS chaos experiments, configuring agents, using
-  CLI/REST, Logic Apps scheduling, or Workbooks, and other Chaos Studio related development
-  tasks. Not for Azure Monitor (use azure-monitor), Azure Resiliency (use azure-resiliency),
-  Azure Reliability (use azure-reliability), Azure Defender For Cloud (use azure-defender-for-cloud).
-use_when: Use when running AKS chaos experiments, configuring agents, using CLI/REST,
-  Logic Apps scheduling, or Workbooks, and other Chaos Studio related development
+  & coding patterns. Use when configuring Chaos Agent, AKS resiliency tests, REST/CLI
+  experiments, Logic Apps scheduling, or workspace scope, and other Chaos Studio related
+  development tasks. Not for Azure Resiliency (use azure-resiliency), Azure Reliability
+  (use azure-reliability), Azure Site Recovery (use azure-site-recovery).
+use_when: Use when configuring Chaos Agent, AKS resiliency tests, REST/CLI experiments,
+  Logic Apps scheduling, or workspace scope, and other Chaos Studio related development
   tasks.
-confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Resiliency (use
-  azure-resiliency), Azure Reliability (use azure-reliability), Azure Defender For
-  Cloud (use azure-defender-for-cloud).
+confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Reliability
+  (use azure-reliability), Azure Site Recovery (use azure-site-recovery).
 ---
 # Chaos Studio Crawl Report
 
@@ -46,8 +44,8 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Resiliency 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 65
+- **Updated Pages**: 3
+- **Unchanged**: 62
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-chaos-studio/azure-chaos-studio.csv`
 
@@ -65,6 +63,15 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Resiliency 
 | *(Unclassified)* | 18 | 27.7% |
 
 ## Changes
+
+### Updated Pages
+
+- [Scenarios](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-scenarios)
+  - Updated: 2026-07-27T12:03:00.000Z → 2026-08-19T08:00:00.000Z
+- [Tutorial: Deploy a sample app and test zone resilience on AKS](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-tutorial-sample-app)
+  - Updated: 2026-07-30T22:20:00.000Z → 2026-08-26T06:05:00.000Z
+- [Limitations and known issues (preview)](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-workspaces-limitations)
+  - Updated: 2026-07-30T08:00:00.000Z → 2026-08-18T06:05:00.000Z
 
 ## Classified Pages
 
@@ -99,7 +106,7 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Resiliency 
 | [Bicep](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-bicep) | configuration | 0.70 | Bicep samples expose Chaos Studio resource types and configuration parameters, providing detailed product-specific configuration knowledge. |
 | [Concepts](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-agent-concepts) | security | 0.70 | An in-depth concepts page for the agent is likely to include specific identity types, permission scopes, and network access requirements unique to Chaos Studio, which are product-specific security and configuration details. |
 | [Limitations and known issues](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-limitations) | troubleshooting | 0.70 | Limitations and known issues often include specific behaviors, constraints, and workarounds for Chaos Studio, providing product-specific edge cases and mitigation guidance. |
-| [Limitations and known issues (preview)](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-workspaces-limitations) | limits-quotas | 0.70 | Dedicated limitations and known issues page for workspaces preview; such pages typically enumerate specific unsupported features, constraints, and sometimes numeric limits, which are product-specific and not generally known. |
+| [Limitations and known issues (preview)](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-workspaces-limitations) | limits-quotas | 0.70 | Explicitly documents current limitations and known issues for Chaos Studio workspaces and scenarios preview. Such pages typically include precise constraints (unsupported features, behavioral limits, scope restrictions) that are product-specific and not generally known to LLMs, fitting the limits-quotas category better than others. |
 | [Private Link for agent](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-private-link-agent-service) | configuration | 0.70 | Private Link setup for agent-based experiments will include specific endpoint configuration parameters, resource types, and networking settings unique to Chaos Studio. |
 | [Verify agent status](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-agent-verify-status) | troubleshooting | 0.70 | A status verification guide typically includes specific commands, log locations, and status indicators for the Chaos Agent, mapping symptoms (agent not running) to diagnostic steps and resolutions. |
 | [CLI](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-tutorial-aks-cli) | integrations | 0.66 | Describes using AKS Chaos Mesh faults via CLI, which involves product-specific integration details and parameters between Chaos Studio, AKS, and Chaos Mesh. |
@@ -124,7 +131,6 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Resiliency 
 |-----------|------------|--------|
 | [Experiment examples](https://learn.microsoft.com/en-us/azure/chaos-studio/experiment-examples) | 0.40 | Example experiments via portal/CLI are likely tutorial-style, showing how to create experiments rather than listing configuration matrices, limits, or troubleshooting mappings. |
 | [Run and manage experiments](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-run-experiment) | 0.40 | Focuses on starting, stopping, and viewing experiment details/history; likely operational UI guidance without detailed limits, configs, or troubleshooting mappings. |
-| [Scenarios](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-scenarios) | 0.40 | Scenario catalog/overview describing available outage patterns; likely lists scenarios but not in the form of configuration parameter tables, limits, or troubleshooting mappings required by the sub-skill types. |
 | [Uninstall the agent](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-agent-uninstall) | 0.40 | Uninstall instructions via portal/CLI are typically procedural steps without detailed configuration tables, limits, or troubleshooting mappings; they are generic operational guidance. |
 | [Portal](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-tutorial-aks-portal) | 0.35 | Portal tutorial for AKS Chaos Mesh faults; scenario-based guide without comprehensive config matrices or limits. |
 | [Quickstart: Create and run a chaos experiment](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-quickstart-azure-portal) | 0.35 | Quickstart tutorial focused on basic creation and running of an experiment; likely step-by-step UI usage without detailed configuration matrices or limits. |
@@ -134,9 +140,10 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Resiliency 
 | [Quickstart: Create a Workspace and run a Scenario](https://learn.microsoft.com/en-us/azure/chaos-studio/quickstart-create-workspace) | 0.30 | Quickstart tutorial for creating a workspace and running a scenario; primarily step-by-step guidance without detailed configuration matrices, limits, or security role breakdowns. |
 | [Regional availability](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-region-availability) | 0.30 | Regional availability and high-availability model description is primarily conceptual/architectural and about where the service runs; summary does not indicate specific numeric limits, decision matrices, or detailed configuration parameters that qualify as expert knowledge under the defined categories. |
 | [Scenario reports](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-scenario-reports) | 0.30 | Explains structure and use of scenario reports; appears descriptive without specific configuration parameters, limits, or troubleshooting error mappings. |
+| [Scenarios](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-scenarios) | 0.30 | Reference list of Chaos Studio scenarios but summary does not indicate presence of numeric limits, configuration tables, or product-specific error codes; appears to be catalog/overview of available scenarios rather than detailed expert configuration or troubleshooting content. |
 | [Targets and capabilities](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-targets-capabilities) | 0.30 | Describes targets and capabilities conceptually for resource onboarding; summary does not indicate specific config parameters, limits, or error codes. |
-| [Tutorial: Deploy a sample app and test zone resilience on AKS](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-tutorial-sample-app) | 0.30 | Tutorial for deploying a sample AKS app and running a zone resilience test; primarily walkthrough content without structured limits, security role tables, or configuration matrices. |
 | [Tutorial: PostgreSQL zone-down failover](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-tutorial-postgresql-failover) | 0.30 | Tutorial for running a PostgreSQL zone-down Scenario; primarily procedural steps without detailed config tables, limits, or troubleshooting mappings. |
 | [What are Workspaces?](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-workspaces-overview) | 0.30 | Workspace overview and conceptual description of how Chaos Studio workspaces organize resilience testing; no detailed limits, RBAC role lists, configuration tables, or error mappings. |
+| [Tutorial: Deploy a sample app and test zone resilience on AKS](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-tutorial-sample-app) | 0.20 | Tutorial-style walkthrough for deploying a sample app and running a zone-down scenario on AKS; likely focuses on step-by-step instructions rather than detailed limits, configuration matrices, or troubleshooting mappings. |
 | [What is Azure Chaos Studio?](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-overview) | 0.20 | High-level overview of Azure Chaos Studio; no numeric limits, configuration tables, error codes, or product-specific configuration details. |
 | [Chaos engineering overview](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-chaos-engineering-overview) | 0.10 | Conceptual explanation of chaos engineering and fault injection; no product-specific limits, configs, or error mappings. |

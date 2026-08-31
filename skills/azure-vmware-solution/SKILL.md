@@ -1,9 +1,9 @@
 ---
 name: azure-vmware-solution
-description: Expert knowledge for Azure VMware Solution development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when working with AVS networking/HCX, vSAN/ANF storage, Horizon/Citrix VDI, JetStream DR, or VMware Cloud Director, and other Azure VMware Solution related development tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Machine Scale Sets (use azure-vm-scalesets), Azure Nutanix (use azure-nutanix), Azure Oracle (use azure-oracle).
+description: Expert knowledge for Azure VMware Solution development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing AVS private clouds, NSX/HCX networking, vSAN clusters, Horizon VDI, or Cloud Director setups, and other Azure VMware Solution related development tasks. Not for Azure Virtual Machines (use azure-virtual-machines), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Stack Edge (use azure-stack-edge), Azure Red Hat OpenShift (use azure-redhat-openshift).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-16"
+  generated_at: "2026-08-31"
   generator: "docs2skills/1.0.0"
 ---
 # Azure VMware Solution Skill
@@ -26,13 +26,13 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L37-L44 | Diagnosing and fixing AVS issues: deployment failures, DR/VM recovery problems, platform run command errors, and workarounds for common Azure VMware Solution faults. |
 | Best Practices | L45-L50 | Guidance on securing and safely operating AVS private clouds, plus tuning NSX/HCX scale and performance for efficient, reliable VMware workload migrations. |
-| Decision Making | L51-L63 | Guidance on choosing AVS SKUs, storage, backup, migration approaches, licensing, and reserved instances, plus FAQs to plan, size, and purchase Azure VMware Solution workloads. |
-| Architecture & Design Patterns | L64-L76 | Network, storage, and private cloud design for AVS: hub-spoke patterns, vSAN/stretched clusters, Horizon and GitHub Enterprise sizing, Cloud Director networking, and Gen 2 architecture. |
-| Limits & Quotas | L77-L88 | Host, cluster, and routing limits for AVS; vSAN ESA settings; required ports; and how to request quota, deploy, and scale private clouds within platform constraints |
-| Security | L89-L105 | Securing AVS: identity/access control, Defender for Cloud, vSAN CMK encryption, LDAP/vCenter identity, Trusted Launch/vTPM, NSX Edge internet, ESU, app protection, credential rotation, and best practices. |
-| Configuration | L106-L143 | Configuring and managing AVS environments: networking (SNAT, DNS, DHCP, IPv6, HCX), storage/datastores (vSAN, ANF, Elastic SAN, backup), monitoring/alerts, Arc/Run Command, and VMware Cloud Director. |
-| Integrations & Coding Patterns | L144-L157 | Patterns and step-by-step guides for integrating AVS with storage, networking, monitoring, backup, syslog, and VMware tools using Azure services and automation. |
-| Deployment | L158-L168 | Guides for planning and deploying AVS for production, including Horizon/Citrix VDI, JetStream DR, VMware Cloud Director, and migrating SQL (Always On, FCI, standalone) to Azure VMware Solution. |
+| Decision Making | L51-L64 | Guidance for planning AVS deployments: choosing SKUs, backup and storage, migration/region moves, licensing, reserved instances, and general FAQs for decision-making. |
+| Architecture & Design Patterns | L65-L77 | Network, storage, and private cloud design for AVS: hub-spoke patterns, vSAN/stretched clusters, Horizon and GitHub Enterprise sizing, Cloud Director networking, and Gen 2 architecture. |
+| Limits & Quotas | L78-L89 | Host, cluster, and routing limits for AVS; vSAN ESA settings; required ports; and how to request quota, deploy, and scale private clouds within platform constraints |
+| Security | L90-L107 | Securing AVS: identity/access control, Defender for Cloud, vSAN encryption, vCenter/NSX identity, VM trusted launch, network/IP security, ESU, credentials, licensing rules, and best practices. |
+| Configuration | L108-L146 | Configuring AVS infrastructure: networking, DNS/DHCP, storage/datastores, backup, monitoring/alerts, HCX/Cloud Director, Arc/Run Command, and performance/placement policies. |
+| Integrations & Coding Patterns | L147-L160 | Patterns and step-by-step guides for integrating AVS with storage, networking, monitoring, backup, syslog, and VMware tools using Azure services and automation. |
+| Deployment | L161-L171 | Guides for planning and deploying AVS for production, including Horizon/Citrix VDI, JetStream DR, VMware Cloud Director, and migrating SQL (Always On, FCI, standalone) to Azure VMware Solution. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -56,6 +56,7 @@ This skill requires **network access** to fetch documentation content:
 | Choose external storage options for Azure VMware | https://learn.microsoft.com/en-us/azure/azure-vmware/ecosystem-external-storage-solutions |
 | Evaluate migration solutions for AVS virtual machines | https://learn.microsoft.com/en-us/azure/azure-vmware/ecosystem-migration-vms |
 | Use Azure VMware Solution: FAQs and guidance | https://learn.microsoft.com/en-us/azure/azure-vmware/faq |
+| Plan Azure VMware Solution migration to portable VCF | https://learn.microsoft.com/en-us/azure/azure-vmware/license-included-service-retirement |
 | Choose and Apply Licensing for SQL and Windows on AVS | https://learn.microsoft.com/en-us/azure/azure-vmware/license-sql-windows-in-avs |
 | Plan and execute workload migration between AVS private clouds | https://learn.microsoft.com/en-us/azure/azure-vmware/migrate-between-private-clouds |
 | Plan and migrate Azure VMware Solution across regions | https://learn.microsoft.com/en-us/azure/azure-vmware/move-azure-vmware-solution-across-regions |
@@ -99,6 +100,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure Extended Security Updates in Azure VMware Solution | https://learn.microsoft.com/en-us/azure/azure-vmware/extended-security-updates-windows-sql-server |
 | Re-enable Azure VMware Solution Gen2 service principal | https://learn.microsoft.com/en-us/azure/azure-vmware/native-first-party-principle-security |
 | Manually configure AVS Gen 2 role assignments | https://learn.microsoft.com/en-us/azure/azure-vmware/native-role-assignment |
+| Apply portable VCF licensing rules on Azure VMware | https://learn.microsoft.com/en-us/azure/azure-vmware/portable-vcf-licensing-reference |
 | Protect AVS web apps with Azure Application Gateway | https://learn.microsoft.com/en-us/azure/azure-vmware/protect-azure-vmware-solution-with-application-gateway |
 | Rotate vCenter and NSX cloud admin credentials securely | https://learn.microsoft.com/en-us/azure/azure-vmware/rotate-cloudadmin-credentials |
 | Apply security best practices to Azure VMware Solution | https://learn.microsoft.com/en-us/azure/azure-vmware/security-recommendations |
@@ -138,6 +140,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure networking between Azure VMware Gen1 and Gen2 clouds | https://learn.microsoft.com/en-us/azure/azure-vmware/native-connect-private-cloud-previous-edition |
 | Configure DNS forward lookup zones for Azure VMware Gen2 | https://learn.microsoft.com/en-us/azure/azure-vmware/native-dns-forward-lookup-zone |
 | Execute VMware HCX Run Commands in AVS | https://learn.microsoft.com/en-us/azure/azure-vmware/use-hcx-run-commands |
+| Configure AVS storage policies with New-AVSStoragePolicy | https://learn.microsoft.com/en-us/azure/azure-vmware/use-new-avsstoragepolicy-run-command |
 | Configure vCenter login banner via AVS Run Command | https://learn.microsoft.com/en-us/azure/azure-vmware/use-vcenter-login-banner-run-command |
 | Configure VMware Aria Operations for Azure VMware Solution | https://learn.microsoft.com/en-us/azure/azure-vmware/vrealize-operations-for-azure-vmware-solution |
 

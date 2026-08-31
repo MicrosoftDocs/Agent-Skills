@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-16'
+generated_at: '2026-08-31'
 category_descriptions:
   configuration: 'Configuring ADF: integration runtimes, SSIS/SHIR, triggers, monitoring/logging,
     copy/data flows, formats/connectors, parameters/expressions, and pipeline/control
@@ -10,9 +10,9 @@ category_descriptions:
   security: 'Securing Data Factory with network, identity, and encryption controls:
     VNets, private endpoints, firewalls, managed identities, Key Vault, CMK, TLS,
     and secure access to SQL, Purview, and SSIS IR.'
-  integrations: Connecting Azure Data Factory to diverse data sources (SaaS, databases,
-    files, SAP), using connectors, mapping data flow functions, SSIS integration,
-    and reusable copy/transform templates.
+  integrations: Patterns and how-tos for connecting ADF to many data sources (SAP,
+    SaaS apps, DBs, files), using mapping data flow functions, running SSIS, Databricks/ML/Synapse
+    jobs, and pipeline templates.
   troubleshooting: 'Diagnosing and fixing ADF failures: connector/format errors, CDC,
     pipelines, triggers, data flows, SHIR/SSIS IR, performance, security, and known
     issues with concrete error patterns and workarounds.'
@@ -30,13 +30,13 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Data Factory development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building ADF pipelines with data flows, SHIR/SSIS IR, VNets/private endpoints, CI/CD
-  templates, or SAP CDC, and other Azure Data Factory related development tasks. Not
+  building ADF pipelines with IR/SSIS, triggers, data flows, SAP/SaaS connectors,
+  or CI/CD deployments, and other Azure Data Factory related development tasks. Not
   for Azure Synapse Analytics (use azure-synapse-analytics), Azure Databricks (use
   azure-databricks), Azure Stream Analytics (use azure-stream-analytics), Azure Data
   Explorer (use azure-data-explorer).
-use_when: Use when building ADF pipelines with data flows, SHIR/SSIS IR, VNets/private
-  endpoints, CI/CD templates, or SAP CDC, and other Azure Data Factory related development
+use_when: Use when building ADF pipelines with IR/SSIS, triggers, data flows, SAP/SaaS
+  connectors, or CI/CD deployments, and other Azure Data Factory related development
   tasks.
 confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics),
   Azure Databricks (use azure-databricks), Azure Stream Analytics (use azure-stream-analytics),
@@ -49,13 +49,13 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 - **Total Pages**: 505
 - **Fetched**: 505
 - **Fetch Failed**: 0
-- **Classified**: 405
-- **Unclassified**: 100
+- **Classified**: 406
+- **Unclassified**: 99
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 8
-- **Unchanged**: 497
+- **Updated Pages**: 2
+- **Unchanged**: 503
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-factory/azure-data-factory.csv`
 
@@ -68,32 +68,20 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | configuration | 108 | 21.4% |
 | decision-making | 15 | 3.0% |
 | deployment | 11 | 2.2% |
-| integrations | 164 | 32.5% |
+| integrations | 165 | 32.7% |
 | limits-quotas | 4 | 0.8% |
 | security | 28 | 5.5% |
 | troubleshooting | 51 | 10.1% |
-| *(Unclassified)* | 100 | 19.8% |
+| *(Unclassified)* | 99 | 19.6% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Azure Cosmos DB for NoSQL](https://learn.microsoft.com/en-us/azure/data-factory/connector-azure-cosmos-db)
-  - Updated: 2025-07-25T08:00:00.000Z → 2026-08-12T05:20:00.000Z
-- [Performance features](https://learn.microsoft.com/en-us/azure/data-factory/copy-activity-performance-features)
-  - Updated: 2025-02-13T08:00:00.000Z → 2026-08-13T22:14:00.000Z
-- [Schema and type mapping](https://learn.microsoft.com/en-us/azure/data-factory/copy-activity-schema-and-type-mapping)
-  - Updated: 2025-03-21T08:00:00.000Z → 2026-08-12T05:20:00.000Z
-- [MongoDB](https://learn.microsoft.com/en-us/azure/data-factory/connector-mongodb)
-  - Updated: 2026-01-26T12:11:00.000Z → 2026-08-12T05:20:00.000Z
-- [Azure Cosmos DB (including Azure Cosmos DB for NoSQL)](https://learn.microsoft.com/en-us/azure/data-factory/connector-troubleshoot-azure-cosmos-db)
-  - Updated: 2026-06-22T08:00:00.000Z → 2026-08-12T05:20:00.000Z
-- [MongoDB](https://learn.microsoft.com/en-us/azure/data-factory/connector-troubleshoot-mongodb)
-  - Updated: 2025-06-12T22:03:00.000Z → 2026-08-12T05:20:00.000Z
-- [Modern Trusted Service Data Factory](https://learn.microsoft.com/en-us/azure/data-factory/modern-trusted-service)
-  - Updated: 2026-07-16T22:11:00.000Z → 2026-08-13T17:14:00.000Z
-- [Monitor](https://learn.microsoft.com/en-us/azure/data-factory/monitor-data-factory)
-  - Updated: 2025-07-25T08:00:00.000Z → 2026-08-06T08:00:00.000Z
+- [Amazon Marketplace Web Service (Deprecated)](https://learn.microsoft.com/en-us/azure/data-factory/connector-amazon-marketplace-web-service)
+  - Updated: 2026-03-25T22:12:00.000Z → 2026-08-29T05:31:00.000Z
+- [Databricks Job activity](https://learn.microsoft.com/en-us/azure/data-factory/transform-data-databricks-job)
+  - Updated: 2026-08-04T22:41:00.000Z → 2026-08-29T05:31:00.000Z
 
 ## Classified Pages
 
@@ -267,6 +255,7 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | [Web Table](https://learn.microsoft.com/en-us/azure/data-factory/connector-web-table) | integrations | 0.80 | Web Table connector docs generally define how to specify URLs, table selection options, pagination/query parameters, and limitations on supported HTML structures, all via explicit parameter names and settings. These are detailed, product-specific integration patterns and configuration parameters, qualifying as integrations expert knowledge. |
 | [data.world](https://learn.microsoft.com/en-us/azure/data-factory/connector-dataworld) | integrations | 0.80 | Data.world transformation article describes how to configure data flow source/sink for this service, including connector-specific settings and parameters, which are detailed integration patterns. |
 | [Advanced topics](https://learn.microsoft.com/en-us/azure/data-factory/sap-change-data-capture-advanced-topics) | best-practices | 0.78 | Explicitly about advanced topics and best practices for SAP CDC, including metadata-driven integration, debugging, and monitoring. This likely contains product-specific recommendations, gotchas, and configuration patterns unique to SAP CDC in Data Factory. |
+| [Amazon Marketplace Web Service (Deprecated)](https://learn.microsoft.com/en-us/azure/data-factory/connector-amazon-marketplace-web-service) | integrations | 0.78 | Connector pages for specific services typically include expert, product-specific details such as required AWS MWS endpoints, authentication parameters, supported object types, and Azure Data Factory copy activity settings unique to this integration. These are configuration-heavy integration patterns (connection properties, dataset schema specifics, and sink compatibility) that go beyond generic SDK usage and are not broadly known from training data, fitting the 'integrations' sub-skill. |
 | [Amazon S3 Compatible Storage](https://learn.microsoft.com/en-us/azure/data-factory/connector-amazon-s3-compatible-storage) | integrations | 0.78 | ADF connector pages for specific sources/sinks typically include detailed integration settings (linked services, dataset properties, authentication options, parameter names, supported formats, and constraints) that are product-specific and not generic tutorial content. The Amazon S3-compatible storage connector doc will describe required configuration fields (endpoint, access keys, SSL options, path formats, compression settings, etc.) and their allowed values, which matches the integrations sub-skill definition. |
 | [Azure Cosmos DB analytical store](https://learn.microsoft.com/en-us/azure/data-factory/connector-azure-cosmos-analytical-store) | integrations | 0.78 | This connector article describes how to use Data Flows with Cosmos DB analytical store, including dataset/linked service properties, partitioning options, and transformation behavior specific to the analytical store. These are product-specific configuration and API patterns, aligning with the integrations sub-skill type. |
 | [Azure Data Lake Storage Gen1](https://learn.microsoft.com/en-us/azure/data-factory/connector-azure-data-lake-store) | integrations | 0.78 | The Data Lake Storage Gen1 connector article documents linked service and dataset properties (URI formats, authentication types, folder/file path patterns, compression, partitioning) and other connector-specific options. These are detailed integration parameters unique to this product, matching the integrations category. |
@@ -338,7 +327,6 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | [Zendesk](https://learn.microsoft.com/en-us/azure/data-factory/connector-zendesk) | integrations | 0.72 | Zendesk (Preview) transformation documentation is likely to describe connector-specific options (endpoints, objects, pagination, authentication) and how they are exposed in data flows, including parameter names and constraints. This is concrete, product-specific integration and configuration detail, matching the integrations sub-skill. |
 | [Access a secured Microsoft Purview account](https://learn.microsoft.com/en-us/azure/data-factory/how-to-access-secured-purview-account) | security | 0.70 | Covers firewall, private endpoint, and network configuration details for Purview–ADF integration, including security-specific settings and scopes. |
 | [Aggregate functions](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-aggregate-functions) | integrations | 0.70 | Lists aggregate functions, signatures, and usage specific to ADF/Synapse mapping data flows; functions and parameters are product-specific API details. |
-| [Amazon Marketplace Web Service (Deprecated)](https://learn.microsoft.com/en-us/azure/data-factory/connector-amazon-marketplace-web-service) | integrations | 0.70 | Connector article for AWS Marketplace typically includes linked service and dataset property tables, required API parameters, authentication settings, and constraints specific to this integration, matching the integrations pattern. |
 | [AppFigures](https://learn.microsoft.com/en-us/azure/data-factory/connector-appfigures) | integrations | 0.70 | AppFigures connector (preview) article outlines Data Flow integration, including connector-specific options, authentication parameters, and dataset/linked service properties, which are detailed integration patterns. |
 | [Asana](https://learn.microsoft.com/en-us/azure/data-factory/connector-asana) | integrations | 0.70 | Asana connector article similarly provides connector-specific configuration (API endpoints, auth, object selection) and Data Flow usage details, which are product-specific integration settings. |
 | [Assert](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-assert) | configuration | 0.70 | Assert transformation docs typically define assertion types, configuration fields, and how failures are handled in ADF data flows, which are product-specific configuration options. |
@@ -440,6 +428,7 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | [Window](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-window) | configuration | 0.70 | Window transformation pages define window types, partitioning, ordering, frame boundaries, and aggregate options with specific property names and allowed values. This is expert configuration knowledge for ADF/Synapse. |
 | [Window functions](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-window-functions) | integrations | 0.70 | Documents window functions and their parameters in ADF/Synapse mapping data flows; function set and syntax are product-specific integration APIs. |
 | [Automated publishing for CI/CD](https://learn.microsoft.com/en-us/azure/data-factory/continuous-integration-delivery-improvements) | deployment | 0.68 | Page is about automated publishing for CI/CD in Azure Data Factory/Synapse, which typically includes product-specific deployment behaviors and constraints (how publishing integrates with CI/CD pipelines, what gets published, and how). This is deployment-focused rather than generic CI/CD theory, so it fits the deployment sub-skill. While it may not list numeric limits, it likely contains expert, product-specific deployment guidance not obvious from general knowledge. |
+| [Databricks Job activity](https://learn.microsoft.com/en-us/azure/data-factory/transform-data-databricks-job) | integrations | 0.68 | The article describes the Azure Databricks Job activity in Azure Data Factory/Synapse, including product-specific integration details such as how to configure the activity to call Databricks jobs in a workspace (including serverless jobs). This is an integration-focused pattern between Data Factory/Synapse and Databricks with concrete, product-specific configuration and behavior that goes beyond generic knowledge. |
 | [Managed virtual network](https://learn.microsoft.com/en-us/azure/data-factory/managed-virtual-network-private-endpoint) | security | 0.68 | The page describes product-specific network isolation and access patterns for Azure Data Factory and Synapse using managed virtual networks and managed private endpoints. It includes detailed guidance on how to securely connect to data stores and services via private endpoints, with service-specific configuration behavior and constraints that go beyond generic networking concepts. These are security-focused configurations (network isolation, private access) that are unique to this product’s managed VNet model, qualifying as expert security knowledge. |
 | [Process fixed-width text files](https://learn.microsoft.com/en-us/azure/data-factory/how-to-fixed-width) | integrations | 0.68 | The page describes product-specific patterns and configuration details for handling fixed-width text files in Azure Data Factory/Synapse mapping data flows (for example, how to define column widths, delimiters, and schema handling for this connector). These are concrete integration and configuration patterns unique to ADF data flows rather than generic ETL concepts. |
 | [Use Azure SQL Managed Instance with Azure-SSIS IR](https://learn.microsoft.com/en-us/azure/data-factory/how-to-use-sql-managed-instance-with-ir) | integrations | 0.68 | The page describes product-specific patterns and configuration details for using Azure SQL Managed Instance as the catalog/hosting environment for Azure-SSIS Integration Runtime in Azure Data Factory, including connection configuration, required settings, and integration behavior that go beyond generic knowledge. This fits the integrations category as it focuses on how to wire up and configure SSIS with Azure SQL Managed Instance in ADF. |
@@ -554,7 +543,6 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | [Create data factory - ARM](https://learn.microsoft.com/en-us/azure/data-factory/quickstart-create-data-factory-resource-manager-template) | 0.30 | Quickstart ARM template tutorial for creating a factory and sample pipeline; step-by-step example, not a comprehensive config/limits/troubleshooting reference. |
 | [Custom activity](https://learn.microsoft.com/en-us/azure/data-factory/transform-data-using-custom-activity) | 0.30 | Describes custom activities conceptually (using .NET for unsupported data movement/transformations). The summary doesn’t show detailed config tables, limits, or error mappings. |
 | [Databricks Jar activity](https://learn.microsoft.com/en-us/azure/data-factory/transform-data-databricks-jar) | 0.30 | Appears to be a general how-to for running Databricks JARs in pipelines, building on a broader transformation overview. No evidence of numeric limits, detailed config parameters, or troubleshooting content in the summary. |
-| [Databricks Job activity](https://learn.microsoft.com/en-us/azure/data-factory/transform-data-databricks-job) | 0.30 | Covers running Databricks jobs (including serverless) from Data Factory pipelines. The summary suggests tutorial-style guidance without specific quotas, config tables, or error-code-based troubleshooting. |
 | [Databricks Notebook activity](https://learn.microsoft.com/en-us/azure/data-factory/transform-data-databricks-notebook) | 0.30 | Describes running Databricks notebooks via a pipeline. From the summary, it looks like a usage guide without detailed configuration matrices, limits, or product-specific diagnostic information. |
 | [Databricks Python activity](https://learn.microsoft.com/en-us/azure/data-factory/transform-data-databricks-python) | 0.30 | Explains Databricks Python activity usage. The summary indicates a general tutorial; no visible numeric limits, configuration parameter tables, or troubleshooting mappings. |
 | [Deactivate and reactivate](https://learn.microsoft.com/en-us/azure/data-factory/deactivate-activity) | 0.30 | Explains how to deactivate activities in a pipeline; simple feature usage, no deep configuration, limits, or troubleshooting content. |

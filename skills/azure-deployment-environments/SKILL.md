@@ -32,7 +32,7 @@ This skill requires **network access** to fetch documentation content:
 | Security | L62-L69 | RBAC and identity setup for Deployment Environments: planning and assigning roles, configuring managed identities, and authenticating to the REST APIs. |
 | Configuration | L70-L81 | Defining ADE environments and types, configuring Git catalogs and ARM provisioning, using the devcenter CLI, auto-deletion, and environment variables for custom images. |
 | Integrations & Coding Patterns | L82-L88 | Using Azure Developer CLI and ADE CLI to create environments, build custom container images, and manage custom image workflows for Azure Deployment Environments |
-| Deployment | L89-L93 | Using Azure Deployment Environments with CI/CD tools (Azure Pipelines, GitHub Actions) to automate environment creation, updates, and deployments from templates. |
+| Deployment | L89-L92 | Using Azure Deployment Environments with CI/CD tools (Azure Pipelines, GitHub Actions) to automate environment creation, updates, and deployments from templates. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -90,4 +90,3 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Integrate ADE with Azure Pipelines for CI/CD | https://learn.microsoft.com/en-us/azure/deployment-environments/tutorial-deploy-environments-in-cicd-azure-devops |
-| Deploy Azure environments via GitHub CI/CD pipelines | https://learn.microsoft.com/en-us/azure/deployment-environments/tutorial-deploy-environments-in-cicd-github |

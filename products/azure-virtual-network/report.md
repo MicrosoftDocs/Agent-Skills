@@ -1,21 +1,18 @@
 ---
-generated_at: '2026-08-16'
+generated_at: '2026-08-31'
 category_descriptions:
   decision-making: 'Guidance on performance and cost trade-offs: MANA support, Accelerated
     Networking, routing preference, public IP upgrades, VNet cost optimization, and
     VNet integration for service isolation.'
-  configuration: 'Configuring Azure virtual networks: IPs (public/private/custom),
-    gateways, MTU, DNS, DHCP, monitoring, subnet delegation/peering, encryption, and
-    Azure CNI/network adapters.'
+  configuration: 'Configuring Azure virtual networks: IPs, prefixes, DNS, MTU, DHCP,
+    monitoring, and adapters/CNI for VMs, Kubernetes, NVAs, gateways, firewalls, and
+    load balancers.'
   limits-quotas: 'Network resource limits and behaviors for Azure VMs/VNets: accelerated
     networking support, public IP quotas, VM throughput caps, and Virtual Network
     scale/performance constraints.'
   best-practices: 'Designing secure, high-performance VNets: outbound VM access control,
     NSG rules/flows, VM throughput tuning, TCP/IP optimization, and secure use of
     VNet service endpoints.'
-  troubleshooting: Configuring, validating, and debugging Azure routing appliances
-    (NVA/virtual routers), including routing setup, traffic flow issues, and common
-    misconfiguration fixes.
   deployment: Guidance for upgrading Azure Basic public IP addresses to Standard SKU,
     including requirements, steps, and considerations for network resources and downtime.
   security: 'Securing virtual networks: Kubernetes network policies, NSG/policy-based
@@ -25,19 +22,18 @@ category_descriptions:
     VNet peering, hybrid two-tier apps, traffic mirroring with TAP, topology planning,
     and custom routing options.'
 skill_description: Expert knowledge for Azure Virtual Network development including
-  troubleshooting, best practices, decision making, architecture & design patterns,
-  limits & quotas, security, configuration, and deployment. Use when configuring VNets
-  with peering, Accelerated Networking, Azure CNI, NSGs/service endpoints, or VNet
-  encryption, and other Azure Virtual Network related development tasks. Not for Azure
-  Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use
-  azure-virtual-wan), Azure Application Network (use azure-application-network), Azure
-  Networking (use azure-networking).
-use_when: Use when configuring VNets with peering, Accelerated Networking, Azure CNI,
-  NSGs/service endpoints, or VNet encryption, and other Azure Virtual Network related
-  development tasks.
+  best practices, decision making, architecture & design patterns, limits & quotas,
+  security, configuration, and deployment. Use when configuring VNets, NSGs, VNet
+  peering, service endpoints, public IP upgrades, or hybrid app routing, and other
+  Azure Virtual Network related development tasks. Not for Azure Virtual Network Manager
+  (use azure-virtual-network-manager), Azure Virtual WAN (use azure-virtual-wan),
+  Azure VPN Gateway (use azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute).
+use_when: Use when configuring VNets, NSGs, VNet peering, service endpoints, public
+  IP upgrades, or hybrid app routing, and other Azure Virtual Network related development
+  tasks.
 confusable_not_for: Not for Azure Virtual Network Manager (use azure-virtual-network-manager),
-  Azure Virtual WAN (use azure-virtual-wan), Azure Application Network (use azure-application-network),
-  Azure Networking (use azure-networking).
+  Azure Virtual WAN (use azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway),
+  Azure ExpressRoute (use azure-expressroute).
 ---
 # Azure Virtual Network Crawl Report
 
@@ -46,13 +42,13 @@ confusable_not_for: Not for Azure Virtual Network Manager (use azure-virtual-net
 - **Total Pages**: 131
 - **Fetched**: 131
 - **Fetch Failed**: 0
-- **Classified**: 57
-- **Unclassified**: 74
+- **Classified**: 56
+- **Unclassified**: 75
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 6
-- **Unchanged**: 125
+- **Updated Pages**: 5
+- **Unchanged**: 126
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-network/azure-virtual-network.csv`
 
@@ -67,25 +63,22 @@ confusable_not_for: Not for Azure Virtual Network Manager (use azure-virtual-net
 | deployment | 1 | 0.8% |
 | limits-quotas | 4 | 3.1% |
 | security | 5 | 3.8% |
-| troubleshooting | 1 | 0.8% |
-| *(Unclassified)* | 74 | 56.5% |
+| *(Unclassified)* | 75 | 57.3% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Deploy container networking](https://learn.microsoft.com/en-us/azure/virtual-network/deploy-container-networking)
-  - Updated: 2023-03-26T00:00:00.000Z → 2026-08-11T22:11:00.000Z
-- [Deploy container networking for a stand-alone host](https://learn.microsoft.com/en-us/azure/virtual-network/deploy-container-networking-docker-linux)
-  - Updated: 2026-02-24T06:10:00.000Z → 2026-07-30T08:00:00.000Z
+- [Virtual network routing appliance](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-routing-appliance-overview)
+  - Updated: 2026-08-04T05:12:00.000Z → 2026-08-27T08:00:00.000Z
+- [Create a routing appliance](https://learn.microsoft.com/en-us/azure/virtual-network/how-to-create-virtual-network-routing-appliance)
+  - Updated: 2026-08-04T05:12:00.000Z → 2026-08-19T08:00:00.000Z
+- [Overview](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-tap-overview)
+  - Updated: 2026-06-11T17:23:00.000Z → 2026-08-20T17:12:00.000Z
+- [Advertised gateway prefixes](https://learn.microsoft.com/en-us/azure/virtual-network/advertised-gateway-prefixes-overview)
+  - Updated: 2026-05-20T05:21:00.000Z → 2026-08-19T05:11:00.000Z
 - [Linux VMs](https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-linux)
-  - Updated: 2026-06-02T20:30:00.000Z → 2026-08-15T17:11:00.000Z
-- [Accelerated Networking](https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-overview)
-  - Updated: 2026-02-05T18:11:00.000Z → 2026-08-15T17:11:00.000Z
-- [Secure Virtual Network](https://learn.microsoft.com/en-us/azure/virtual-network/secure-virtual-network)
-  - Updated: 2025-06-18T22:03:00.000Z → 2026-08-13T17:14:00.000Z
-- [Virtual network peering](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview)
-  - Updated: 2026-05-20T05:21:00.000Z → 2026-08-12T08:00:00.000Z
+  - Updated: 2026-08-15T17:11:00.000Z → 2026-08-21T05:10:00.000Z
 
 ## Classified Pages
 
@@ -106,6 +99,7 @@ confusable_not_for: Not for Azure Virtual Network Manager (use azure-virtual-net
 | [Configure subnet peering](https://learn.microsoft.com/en-us/azure/virtual-network/how-to-configure-subnet-peering) | configuration | 0.70 | How-to page for subnet peering likely includes product-specific configuration steps, required settings, and options (e.g., which subnets can be selected, flags like 'allow forwarded traffic', 'use remote gateways'), which are detailed configuration parameters unique to Azure Virtual Network rather than generic concepts. |
 | [Deploy a DHCP server on an Azure VM](https://learn.microsoft.com/en-us/azure/virtual-network/how-to-dhcp-azure) | configuration | 0.70 | Describes Azure-specific DHCP relay behavior (no broadcasts) and detailed port/protocol requirements plus configuration steps for a highly available DHCP server in Azure, including product-specific networking constraints. |
 | [Deploy container networking](https://learn.microsoft.com/en-us/azure/virtual-network/deploy-container-networking) | configuration | 0.70 | Page is a how-to for deploying the Azure Virtual Network CNI plug-in into VMs/Kubernetes clusters. These CNI deployment docs typically include plugin-specific configuration files, parameter names, and required values (for example, networkPlugin=azure, subnet CIDRs, IP allocation settings) that are unique to Azure CNI and not just generic Kubernetes knowledge. This matches the configuration category: product-specific settings and parameters with allowed values. |
+| [Linux VMs](https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-linux) | configuration | 0.70 | Page is a how-to for enabling and using MANA on Linux VMs, with product-specific configuration steps and options (adapter usage, VM/network requirements). It goes beyond conceptual overview into concrete setup details, but is focused on configuring the adapter rather than limits, architecture, or troubleshooting. |
 | [MANA on Network Virtual Appliances (NVAs) for existing VM sizes](https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-network-virtual-appliance-opt-out) | configuration | 0.70 | Describes how to use Azure Policy to manage MANA deployments and opt-out behavior for NVAs on existing VM series. This implies product-specific configuration options and policy parameters controlling whether NVAs run on MANA-capable hardware, which fits the configuration sub-skill (specific settings and policy-based controls). |
 | [MANA support for existing VM sizes](https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-existing-sizes) | decision-making | 0.70 | Targets customers on existing VM sizes and discusses differing benefits versus newer VM series. This kind of content typically includes SKU/series-specific guidance or matrices indicating which VM sizes support MANA and how they benefit, helping users choose VM series or plan migrations. That aligns best with decision-making (tier/SKU selection and migration considerations). |
 | [Monitor data reference](https://learn.microsoft.com/en-us/azure/virtual-network/monitor-virtual-network-reference) | configuration | 0.70 | Monitoring reference pages for Azure services usually enumerate all metrics, logs, dimensions, and categories with exact names, units, and sometimes value ranges (for example, metric names, log table names, and category identifiers) that an LLM is unlikely to know reliably from training. This is structured, product-specific reference data that fits configuration-like knowledge for monitoring/diagnostics. |
@@ -126,10 +120,8 @@ confusable_not_for: Not for Azure Virtual Network Manager (use azure-virtual-net
 | [Azure Kubernetes network policies](https://learn.microsoft.com/en-us/azure/virtual-network/kubernetes-network-policies) | security | 0.65 | Describes Azure Network Policy Manager implementation details and how to apply network policies; product-specific security configuration guidance. |
 | [Configure IP addresses for an Azure network interface](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/virtual-network-network-interface-addresses) | configuration | 0.65 | How-to for adding/removing IPs on NICs; involves Azure-specific properties (primary/secondary IPs, allocation methods) that are configuration details rather than generic networking theory. |
 | [Cost optimization](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-cost-optimization) | decision-making | 0.65 | Cost optimization guidance for VNet design; likely includes concrete recommendations and trade-offs between connectivity, performance, and cost for different scenarios. |
-| [Create a routing appliance](https://learn.microsoft.com/en-us/azure/virtual-network/how-to-create-virtual-network-routing-appliance) | troubleshooting | 0.65 | The description explicitly states the article covers configuration and troubleshooting for routing appliances. Such pages typically include product-specific configuration parameters and symptom→cause→solution guidance, including error messages or diagnostic steps. While the summary only mentions creation in the portal, the description suggests deeper troubleshooting content beyond a basic tutorial, fitting the troubleshooting sub-skill. |
 | [Create a virtual machine with static public IP](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/virtual-network-static-public-ip) | limits-quotas | 0.65 | Mentions there is a limit to the number of public IP addresses per subscription and references downloadable IP range lists; this is concrete limits/quotas information beyond generic concepts. |
 | [Create a virtual network with encryption](https://learn.microsoft.com/en-us/azure/virtual-network/how-to-create-encryption) | configuration | 0.65 | How-to for creating an encrypted VNet; likely includes specific settings and parameters required to enable VNet encryption. |
-| [Linux VMs](https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-linux) | configuration | 0.65 | The page explains how to use the Microsoft Azure Network Adapter (MANA) for Linux VMs, which typically involves enabling specific drivers/extensions, setting VM properties, and possibly kernel or NIC configuration parameters unique to MANA. These are product-specific configuration steps and options (e.g., which VM sizes, OS versions, and settings are required) that go beyond generic networking knowledge, aligning with the configuration category. |
 | [Plan virtual networks](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-vnet-plan-design-arm) | architecture-patterns | 0.65 | Planning guidance for multiple VNets and connectivity; likely includes Azure-specific design patterns and when to use them for different isolation and location requirements. |
 | [Service endpoint policies for Azure Storage](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoint-policies-overview) | security | 0.65 | Describes endpoint policies to restrict data exfiltration to specific storage accounts; product-specific network security configuration. |
 | [Application gateway](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/configure-public-ip-application-gateway) | configuration | 0.64 | Covers how public IPs are used as frontends, SKU support, and interaction with HTTP routing; these are specific configuration patterns for Application Gateway. |
@@ -162,6 +154,7 @@ confusable_not_for: Not for Azure Virtual Network Manager (use azure-virtual-net
 | [Service tags](https://learn.microsoft.com/en-us/azure/virtual-network/service-tags-overview) | 0.45 | Service tags overview and conceptual usage; summary does not indicate detailed parameter tables or numeric thresholds. |
 | [Windows VMs](https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-windows) | 0.45 | Windows-specific MANA usage article; similar to Linux article, focused on enablement steps rather than deep configuration or troubleshooting content. |
 | [Add dual-stack network to an existing VM](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/add-dual-stack-ipv6-vm-portal) | 0.40 | How-to for adding dual-stack networking; likely shows commands but not organized as config parameter reference or limits/quotas. |
+| [Advertised gateway prefixes](https://learn.microsoft.com/en-us/azure/virtual-network/advertised-gateway-prefixes-overview) | 0.40 | Explains the concept of advertised gateway prefixes and summarizedGatewayPrefixes property. While it mentions a property name and general behavior, the summary does not include detailed configuration tables, numeric thresholds, or decision matrices that would qualify as expert configuration or limits content. |
 | [Application security groups](https://learn.microsoft.com/en-us/azure/virtual-network/application-security-groups) | 0.40 | Conceptual overview of application security groups; no clear indication of detailed configuration tables or limits. |
 | [Create a VM with Accelerated Networking](https://learn.microsoft.com/en-us/azure/virtual-network/create-virtual-machine-accelerated-networking) | 0.40 | Shows how to create VMs with Accelerated Networking via portal/CLI/PowerShell; largely procedural without config parameter reference tables or limits. |
 | [Create a virtual machine with a dual-stack network](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/create-vm-dual-stack-ipv6-portal) | 0.40 | Tutorial for creating a VM with dual-stack network; procedural, without detailed configuration tables or decision/limits content. |
@@ -178,7 +171,6 @@ confusable_not_for: Not for Azure Virtual Network Manager (use azure-virtual-net
 | [Private IPs](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/private-ip-addresses) | 0.36 | Overview of private IP addresses and scenarios; conceptual networking behavior without explicit limits, settings tables, or troubleshooting content. |
 | [Add or remove a subnet delegation](https://learn.microsoft.com/en-us/azure/virtual-network/manage-subnet-delegation) | 0.35 | How-to for adding/removing subnet delegation; procedural with minimal product-specific configuration tables or decision criteria. |
 | [Add or remove network interfaces](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-network-interface-vm) | 0.35 | Explains adding/removing NICs on VMs; operational steps, not a configuration reference or troubleshooting guide with error codes. |
-| [Advertised gateway prefixes](https://learn.microsoft.com/en-us/azure/virtual-network/advertised-gateway-prefixes-overview) | 0.35 | Describes the advertised gateway prefixes (summarizedGatewayPrefixes) feature conceptually. The summary suggests high-level behavior (summarizing CIDR prefixes) without exposing detailed configuration tables, numeric thresholds, or troubleshooting mappings that would qualify as expert knowledge. |
 | [Custom IP address prefix (BYOIP)](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/custom-ip-address-prefix) | 0.35 | Conceptual overview of custom IP address prefix (BYOIP); describes what it is and how it behaves, but summary shows no detailed limits or configuration tables. |
 | [Different subscriptions and tenants](https://learn.microsoft.com/en-us/azure/virtual-network/create-peering-different-subscriptions) | 0.35 | Tutorial for peering VNets across subscriptions/tenants; procedural steps, no detailed limits, config matrices, or troubleshooting mappings. |
 | [IP based access control list (ACL)](https://learn.microsoft.com/en-us/azure/virtual-network/ip-based-access-control-list-overview) | 0.35 | Conceptual explanation of IP-based ACLs and service tags; no clear indication of detailed configuration or limits. |
@@ -196,6 +188,7 @@ confusable_not_for: Not for Azure Virtual Network Manager (use azure-virtual-net
 | [Configure virtual network TAP - Azure portal](https://learn.microsoft.com/en-us/azure/virtual-network/tutorial-virtual-network-tap-portal) | 0.30 | Portal tutorial for TAP creation; mainly step-by-step without clear indication of full configuration reference. |
 | [Connect virtual networks](https://learn.microsoft.com/en-us/azure/virtual-network/tutorial-connect-virtual-networks) | 0.30 | Step-by-step tutorial for creating VNet peering; no limits tables, error codes, or product-specific configuration matrices beyond generic portal/CLI steps. |
 | [Container networking](https://learn.microsoft.com/en-us/azure/virtual-network/container-networking-overview) | 0.30 | Conceptual overview of container networking with Azure CNI; high-level explanation without detailed config parameters or limits. |
+| [Create a routing appliance](https://learn.microsoft.com/en-us/azure/virtual-network/how-to-create-virtual-network-routing-appliance) | 0.30 | A how-to guide for creating a routing appliance in the Azure portal. Based on the summary, it focuses on step-by-step creation and general GA status, without exposing detailed configuration parameter tables, limits, or troubleshooting error-code mappings. |
 | [Create a virtual machine with static private IP](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/virtual-networks-static-private-ip) | 0.30 | Explains static private IP assignment for a VM; no explicit numeric limits, config parameter tables, or troubleshooting mappings. |
 | [Create and associate service endpoint policies](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoint-policies) | 0.30 | How-to for creating and associating service endpoint policies; primarily procedural without detailed config parameter tables or troubleshooting mappings. |
 | [Create public IP address - Azure CLI](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/create-public-ip-cli) | 0.30 | Quickstart using Azure CLI to create public IP; standard tutorial content without detailed parameter reference or limits. |
@@ -208,6 +201,7 @@ confusable_not_for: Not for Azure Virtual Network Manager (use azure-virtual-net
 | [Manage route tables](https://learn.microsoft.com/en-us/azure/virtual-network/manage-route-table) | 0.30 | Basic route table management article; generic operations without detailed limits, configuration matrices, or troubleshooting mappings. |
 | [Overview](https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-overview) | 0.30 | Overview of MANA performance and capabilities; likely conceptual and marketing-style without detailed limits, configuration tables, or error codes. No clear evidence of numeric limits, config parameters, or troubleshooting mappings from the summary. |
 | [Overview](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-encryption-overview) | 0.30 | Appears to be a conceptual/overview page describing what Virtual Network encryption is and where it applies (VMs, scale sets, peered VNets). The summary does not indicate specific configuration parameters, limits, error codes, or detailed security configuration (such as RBAC roles or exact settings). It reads as a feature overview rather than expert-level configuration, limits, or troubleshooting content. |
+| [Overview](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-tap-overview) | 0.30 | Overview of Azure virtual network TAP, describing continuous traffic streaming and partner solutions. The summary indicates preview status and supported regions but does not show specific numeric limits, configuration parameter tables, or troubleshooting details. |
 | [Restrict network access to PaaS resources](https://learn.microsoft.com/en-us/azure/virtual-network/tutorial-restrict-network-access-to-resources) | 0.30 | Tutorial for restricting access with service endpoints; mostly wizard-driven steps, not deep configuration or troubleshooting content. |
 | [Route network traffic](https://learn.microsoft.com/en-us/azure/virtual-network/tutorial-create-route-table) | 0.30 | Route table tutorial showing how to create custom routes; no detailed routing limits, decision matrices, or troubleshooting mappings. |
 | [Traffic routing](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-udr-overview) | 0.30 | Appears to be a conceptual overview of Azure virtual network routing and user-defined routes; summary does not indicate specific numeric limits, configuration parameter tables, or error-code-based troubleshooting. Likely explains how routing works rather than providing expert-only configuration or limits. |
@@ -221,8 +215,7 @@ confusable_not_for: Not for Azure Virtual Network Manager (use azure-virtual-net
 | [Create public IP prefix - Azure CLI](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/create-public-ip-prefix-cli) | 0.20 | Azure CLI quickstart for creating a public IP prefix; similar to the PowerShell version, it is a procedural tutorial and the summary does not indicate detailed limits, quotas, configuration parameter tables, or specialized troubleshooting content that would qualify as expert knowledge. |
 | [Create public IP prefix - PowerShell](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/create-public-ip-prefix-powershell) | 0.20 | Quickstart focused on creating a public IP prefix with PowerShell; it appears to be a step-by-step tutorial without tables of limits, quotas, configuration matrices, or product-specific error codes. No clear expert-only numeric constraints or specialized troubleshooting/decision guidance are indicated in the summary. |
 | [Create public IP prefix - Terraform](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/create-public-ip-prefix-terraform) | 0.20 | Quickstart Terraform tutorial for creating a public IP prefix; focuses on basic creation/change/delete workflow without detailed configuration parameter tables, limits, or troubleshooting content. |
-| [Overview](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-tap-overview) | 0.20 | Page is an overview of Azure virtual network TAP functionality and preview status. Based on the summary, it does not surface concrete limits, configuration parameter tables, error codes, or decision matrices; it primarily explains what TAP is and mentions partner solutions and supported regions at a high level. |
-| [Virtual network routing appliance](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-routing-appliance-overview) | 0.20 | From the overview-style summary, this page describes what routing appliances are and their high-level benefits and characteristics. It does not indicate the presence of specific limits, configuration tables, error codes, or decision matrices. Likely a conceptual/marketing overview rather than detailed expert configuration or troubleshooting content. |
+| [Virtual network routing appliance](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-routing-appliance-overview) | 0.20 | Primarily a conceptual/marketing-style overview of routing appliances with no detailed limits, configuration tables, error codes, or decision matrices. It describes what the feature is and its benefits, but not product-specific parameters, quotas, or troubleshooting mappings. |
 | [What is Azure Virtual Network IP Services?](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/ip-services-overview) | 0.20 | High-level overview of IP services; no indication of numeric limits, detailed settings tables, or troubleshooting content. |
 | [What is Azure Virtual Network?](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview) | 0.20 | High-level overview of Azure Virtual Network concepts and capabilities without detailed limits, configs, or error mappings. |
 | [Create a virtual network](https://learn.microsoft.com/en-us/azure/virtual-network/quickstart-create-virtual-network) | 0.10 | Quickstart tutorial showing multiple ways to create a virtual network and related resources; it is step-by-step how-to content without detailed limits, configuration parameter tables, error-code troubleshooting, or decision matrices. No product-specific expert details beyond what a generic LLM would already know. |

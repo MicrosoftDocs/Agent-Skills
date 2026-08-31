@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 164
+- **Updated Pages**: 0
+- **Unchanged**: 168
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-database-mysql/azure-database-mysql.csv`
 
@@ -76,17 +76,6 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | *(Unclassified)* | 56 | 33.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [Try for free](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/quickstart-create-server-portal)
-  - Updated: 2025-08-15T08:00:00.000Z → 2026-08-12T06:06:00.000Z
-- [Prepay for reserved capacity](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concept-reserved-pricing)
-  - Updated: 2026-01-17T06:04:00.000Z → 2026-08-12T08:00:00.000Z
-- [Azure portal](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/quickstart-create-server-portal)
-  - Updated: 2025-08-15T08:00:00.000Z → 2026-08-12T06:06:00.000Z
-- [Configure Microsoft Entra authentication](https://learn.microsoft.com/en-us/azure/mysql/security/security-how-to-entra)
-  - Updated: 2026-07-18T06:02:00.000Z → 2026-08-10T22:14:00.000Z
 
 ## Classified Pages
 

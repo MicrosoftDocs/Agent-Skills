@@ -1,9 +1,9 @@
 ---
 name: azure-artifacts
-description: Expert knowledge for Azure Artifacts development including best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing feeds, upstream sources, storage limits, tool integrations (npm/NuGet/Maven), or CI/CD publishing, and other Azure Artifacts related development tasks. Not for Azure DevOps (use azure-devops), Azure Pipelines (use azure-pipelines), Azure Repos (use azure-repos), Azure Test Plans (use azure-test-plans).
+description: Expert knowledge for Azure Artifacts development including best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing feeds, upstream sources, .npmrc/.artifactignore, GitHub Actions CI/CD, or package quotas, and other Azure Artifacts related development tasks. Not for Azure DevOps (use azure-devops), Azure Pipelines (use azure-pipelines), Azure Repos (use azure-repos), Azure Test Plans (use azure-test-plans).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-02"
+  generated_at: "2026-08-31"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Artifacts Skill
@@ -24,11 +24,11 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Best Practices | L35-L41 | Guidance on Azure Artifacts package management best practices, configuring and using upstream sources, and safely restoring packages from external feeds. |
+| Best Practices | L35-L41 | Best practices for secure, reliable Azure Artifacts package management, including configuring and using upstream sources safely and restoring packages from them. |
 | Decision Making | L42-L48 | Guidance on planning and choosing Azure Artifacts feeds (project vs org scope) and migration paths from file shares or MyGet to Azure Artifacts. |
 | Limits & Quotas | L49-L56 | Storage quotas, package size/count limits, free allocation, and how to monitor, retain, delete, and publish Azure Artifacts packages within those limits. |
 | Security | L57-L62 | Securing Azure Artifacts feeds: configuring permissions, protecting upstream sources from malicious packages, and using npm audit to find and fix vulnerabilities. |
-| Configuration | L63-L70 | Configuring Azure Artifacts feeds and views, setting upstream sources, and connecting clients via .npmrc and .artifactignore for optimized package and pipeline artifact usage. |
+| Configuration | L63-L70 | Configuring Azure Artifacts feeds: views, upstream sources, npm .npmrc auth/settings, and .artifactignore for optimizing Azure Pipelines artifact behavior and performance. |
 | Integrations & Coding Patterns | L71-L110 | How to connect build tools (Cargo, Maven, Gradle, npm, NuGet, Python, PowerShell) to Azure Artifacts feeds, publish/restore packages, use upstream sources, and debug with symbols. |
 | Deployment | L111-L114 | Using GitHub Actions to build and push packages (NuGet, npm, etc.) to Azure Artifacts feeds, including workflow setup, authentication, and CI/CD integration. |
 
@@ -65,7 +65,7 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Configure and manage Azure Artifacts feed views | https://learn.microsoft.com/en-us/azure/devops/artifacts/feeds/views?view=azure-devops |
 | Configure upstream sources for Azure Artifacts feeds | https://learn.microsoft.com/en-us/azure/devops/artifacts/how-to/set-up-upstream-sources?view=azure-devops |
-| Configure .npmrc to connect npm to Azure Artifacts | https://learn.microsoft.com/en-us/azure/devops/artifacts/npm/npmrc?view=azure-devops |
+| Configure npm .npmrc files for Azure Artifacts feeds | https://learn.microsoft.com/en-us/azure/devops/artifacts/npm/npmrc?view=azure-devops |
 | Configure .artifactignore to optimize Azure Pipelines artifacts | https://learn.microsoft.com/en-us/azure/devops/artifacts/reference/artifactignore?view=azure-devops |
 
 ### Integrations & Coding Patterns

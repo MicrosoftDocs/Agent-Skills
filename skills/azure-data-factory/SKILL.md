@@ -1,9 +1,9 @@
 ---
 name: azure-data-factory
-description: Expert knowledge for Azure Data Factory development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building ADF pipelines with data flows, SHIR/SSIS IR, VNets/private endpoints, CI/CD templates, or SAP CDC, and other Azure Data Factory related development tasks. Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure Databricks (use azure-databricks), Azure Stream Analytics (use azure-stream-analytics), Azure Data Explorer (use azure-data-explorer).
+description: Expert knowledge for Azure Data Factory development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building ADF pipelines with IR/SSIS, triggers, data flows, SAP/SaaS connectors, or CI/CD deployments, and other Azure Data Factory related development tasks. Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure Databricks (use azure-databricks), Azure Stream Analytics (use azure-stream-analytics), Azure Data Explorer (use azure-data-explorer).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-16"
+  generated_at: "2026-08-31"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Data Factory Skill
@@ -31,8 +31,8 @@ This skill requires **network access** to fetch documentation content:
 | Limits & Quotas | L143-L150 | Configuring Until/Wait activity limits and timeouts, understanding data flow reservation discounts, and reviewing ADF service quotas and capacity constraints. |
 | Security | L151-L182 | Securing Data Factory with network, identity, and encryption controls: VNets, private endpoints, firewalls, managed identities, Key Vault, CMK, TLS, and secure access to SQL, Purview, and SSIS IR. |
 | Configuration | L183-L294 | Configuring ADF: integration runtimes, SSIS/SHIR, triggers, monitoring/logging, copy/data flows, formats/connectors, parameters/expressions, and pipeline/control activities. |
-| Integrations & Coding Patterns | L295-L462 | Connecting Azure Data Factory to diverse data sources (SaaS, databases, files, SAP), using connectors, mapping data flow functions, SSIS integration, and reusable copy/transform templates. |
-| Deployment | L463-L476 | CI/CD and deployment for ADF: ARM/linked templates, Azure DevOps pipelines, hotfix flows, pre/post scripts, SSIS job migration, and integration runtime install/migration. |
+| Integrations & Coding Patterns | L295-L463 | Patterns and how-tos for connecting ADF to many data sources (SAP, SaaS apps, DBs, files), using mapping data flow functions, running SSIS, Databricks/ML/Synapse jobs, and pipeline templates. |
+| Deployment | L464-L477 | CI/CD and deployment for ADF: ARM/linked templates, Azure DevOps pipelines, hotfix flows, pre/post scripts, SSIS job migration, and integration runtime install/migration. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -298,7 +298,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure SAP CDC connector to load data into Fabric OneLake | https://learn.microsoft.com/en-us/azure/data-factory/change-data-capture-from-sap-to-onelake-with-azure-data-factory |
 | Use expression builder for ADF mapping data flows | https://learn.microsoft.com/en-us/azure/data-factory/concepts-data-flow-expression-builder |
 | Connect Azure Data Factory to Microsoft Purview | https://learn.microsoft.com/en-us/azure/data-factory/connect-data-factory-to-azure-purview |
-| Configure ADF connector for Amazon Marketplace Web Service | https://learn.microsoft.com/en-us/azure/data-factory/connector-amazon-marketplace-web-service |
+| Integrate Amazon Marketplace Web Service with Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-amazon-marketplace-web-service |
 | Integrate Amazon RDS for Oracle with Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-amazon-rds-for-oracle |
 | Copy data from Amazon RDS for SQL Server with ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-amazon-rds-for-sql-server |
 | Integrate Azure Data Factory with Amazon Redshift | https://learn.microsoft.com/en-us/azure/data-factory/connector-amazon-redshift |
@@ -451,6 +451,7 @@ This skill requires **network access** to fetch documentation content:
 | Move files between file-based stores using ADF template | https://learn.microsoft.com/en-us/azure/data-factory/solution-template-move-files |
 | Replicate multiple SAP objects via SAP CDC using ADF | https://learn.microsoft.com/en-us/azure/data-factory/solution-template-replicate-multiple-objects-sap-cdc |
 | Access on-premises and Azure files from SSIS in ADF | https://learn.microsoft.com/en-us/azure/data-factory/ssis-azure-files-file-shares |
+| Run Azure Databricks jobs from Data Factory pipelines | https://learn.microsoft.com/en-us/azure/data-factory/transform-data-databricks-job |
 | Run Azure Machine Learning pipelines from Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/transform-data-machine-learning-service |
 | Run Synapse notebooks from Data Factory pipelines | https://learn.microsoft.com/en-us/azure/data-factory/transform-data-synapse-notebook |
 | Trigger Synapse Spark job definitions in Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/transform-data-synapse-spark-job-definition |

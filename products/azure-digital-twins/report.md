@@ -49,10 +49,10 @@ confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Central
 - **Unclassified**: 12
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 5
-- **Unchanged**: 58
-- **Deleted Pages**: 3
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 65
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-digital-twins/azure-digital-twins.csv`
 
 ## Classification Statistics
@@ -71,30 +71,6 @@ confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Central
 | *(Unclassified)* | 12 | 18.5% |
 
 ## Changes
-
-### New Pages
-
-- [Overview - About Azure Digital Twins](https://learn.microsoft.com/en-us/azure/digital-twins/overview)
-- [Quickstart - Get started with Azure Digital Twins Explorer](https://learn.microsoft.com/en-us/azure/digital-twins/quickstart-azure-digital-twins-explorer)
-
-### Updated Pages
-
-- [DTDL models](https://learn.microsoft.com/en-us/azure/digital-twins/concepts-models)
-  - Updated: 2025-01-27T08:00:00.000Z → 2026-08-10T08:00:00.000Z
-- [Adopting DTDL-based industry ontologies](https://learn.microsoft.com/en-us/azure/digital-twins/concepts-ontologies-adopt)
-  - Updated: 2025-03-07T23:05:00.000Z → 2026-08-11T05:12:00.000Z
-- [Converting ontologies](https://learn.microsoft.com/en-us/azure/digital-twins/concepts-ontologies-convert)
-  - Updated: 2025-01-27T08:00:00.000Z → 2026-08-11T05:12:00.000Z
-- [Querying with the Azure Data Explorer plugin](https://learn.microsoft.com/en-us/azure/digital-twins/concepts-data-explorer-plugin)
-  - Updated: 2025-01-27T08:00:00.000Z → 2026-08-11T05:12:00.000Z
-- [Data ingress and egress](https://learn.microsoft.com/en-us/azure/digital-twins/concepts-data-ingress-egress)
-  - Updated: 2025-01-27T08:00:00.000Z → 2026-08-11T05:12:00.000Z
-
-### Deleted Pages
-
-- ~~About Azure Digital Twins~~ (https://learn.microsoft.com/en-us/azure/digital-twins/overview)
-- ~~Get started with 3D Scenes Studio~~ (https://learn.microsoft.com/en-us/azure/digital-twins/quickstart-3d-scenes-studio)
-- ~~Get started with Azure Digital Twins Explorer~~ (https://learn.microsoft.com/en-us/azure/digital-twins/quickstart-azure-digital-twins-explorer)
 
 ## Classified Pages
 

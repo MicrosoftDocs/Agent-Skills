@@ -3,7 +3,7 @@ name: azure-reliability
 description: Expert knowledge for Azure Reliability development including best practices, decision making, architecture & design patterns, and limits & quotas. Use when designing multi-region Azure apps using region pairs, AKS, databases, networking, messaging, or Web PubSub, and other Azure Reliability related development tasks. Not for Azure Resiliency (use azure-resiliency), Azure Service Health (use azure-service-health), Azure Monitor (use azure-monitor), Azure Sre Agent (use azure-sre-agent).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-16"
+  generated_at: "2026-08-31"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Reliability Skill
@@ -24,10 +24,10 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Best Practices | L32-L73 | Patterns and guidance for designing highly available, resilient, and disaster‑ready architectures across many Azure services (AKS, databases, networking, messaging, monitoring, and more). |
-| Decision Making | L74-L82 | Guidance on choosing Azure regions and services (regional, zonal, multiregion, nonregional), using region pairs, and designing multi-region architectures for higher reliability. |
-| Architecture & Design Patterns | L83-L89 | Designing Azure architectures for high availability: zone-resilient and zonal deployments, and multiregion patterns (including nonpaired regions) for resilient, hardened workloads |
-| Limits & Quotas | L90-L94 | Guidance on Azure Queue Storage message size limits and designing reliable, scalable Azure Web PubSub apps under service quotas and constraints |
+| Best Practices | L32-L71 | Patterns and guidance for designing highly available, resilient, and disaster‑ready architectures across many Azure services (AKS, databases, networking, messaging, monitoring, and more). |
+| Decision Making | L72-L80 | Guidance on choosing Azure regions and services (regional, zonal, multiregion, nonregional), using region pairs, and designing multi-region architectures for higher reliability. |
+| Architecture & Design Patterns | L81-L87 | Designing Azure architectures for high availability: zone-resilient and zonal deployments, and multiregion patterns (including nonpaired regions) for resilient, hardened workloads |
+| Limits & Quotas | L88-L92 | Guidance on Azure Queue Storage message size limits and designing reliable, scalable Azure Web PubSub apps under service quotas and constraints |
 
 ### Best Practices
 | Topic | URL |
@@ -49,7 +49,6 @@ This skill requires **network access** to fetch documentation content:
 | Design resilient Azure Database for MySQL deployments | https://learn.microsoft.com/en-us/azure/reliability/reliability-database-mysql |
 | Implement resiliency for Azure Database for PostgreSQL | https://learn.microsoft.com/en-us/azure/reliability/reliability-database-postgresql |
 | Implement resilient architectures in Azure Databricks | https://learn.microsoft.com/en-us/azure/reliability/reliability-databricks |
-| Ensure reliability for Azure Device Registry metadata | https://learn.microsoft.com/en-us/azure/reliability/reliability-device-registry |
 | Design resilient architectures for Azure DNS Private Resolver | https://learn.microsoft.com/en-us/azure/reliability/reliability-dns-private-resolver |
 | Design high availability for Azure DocumentDB | https://learn.microsoft.com/en-us/azure/reliability/reliability-documentdb |
 | Implement resilient architectures with Azure Elastic SAN | https://learn.microsoft.com/en-us/azure/reliability/reliability-elastic-san |
@@ -65,7 +64,6 @@ This skill requires **network access** to fetch documentation content:
 | Improve reliability of Azure Managed Grafana workspaces | https://learn.microsoft.com/en-us/azure/reliability/reliability-managed-grafana |
 | Increase reliability of Azure Managed Redis caches | https://learn.microsoft.com/en-us/azure/reliability/reliability-managed-redis |
 | Design resilient Azure Monitor Logs workspaces | https://learn.microsoft.com/en-us/azure/reliability/reliability-monitor-logs |
-| Improve reliability of Azure Notification Hubs | https://learn.microsoft.com/en-us/azure/reliability/reliability-notification-hubs |
 | Harden Azure Private Link Service for high reliability | https://learn.microsoft.com/en-us/azure/reliability/reliability-private-link-service |
 | Increase reliability of Azure Stream Analytics jobs | https://learn.microsoft.com/en-us/azure/reliability/reliability-stream-analytics |
 | Design resilient architectures with Azure Traffic Manager | https://learn.microsoft.com/en-us/azure/reliability/reliability-traffic-manager |

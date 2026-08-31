@@ -1,9 +1,9 @@
 ---
 name: azure-resource-graph
-description: Expert knowledge for Azure Resource Graph development including troubleshooting, best practices, decision making, limits & quotas, configuration, and integrations & coding patterns. Use when querying via CLI/PowerShell/REST, using GET/LIST vs Query APIs, shared queries, alerts, or Power BI, and other Azure Resource Graph related development tasks. Not for Azure Monitor (use azure-monitor), Azure Policy (use azure-policy), Azure Resource Manager (use azure-resource-manager), Azure Portal (use azure-portal).
+description: Expert knowledge for Azure Resource Graph development including troubleshooting, best practices, decision making, limits & quotas, configuration, and integrations & coding patterns. Use when querying via CLI/PowerShell/REST, using GET/LIST vs Query, handling paging/quotas, or Power BI ARG reports, and other Azure Resource Graph related development tasks. Not for Azure Monitor (use azure-monitor), Azure Policy (use azure-policy), Cost Management (use azure-cost-management), Azure Resource Manager (use azure-resource-manager).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-03"
+  generated_at: "2026-08-31"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Resource Graph Skill
@@ -26,10 +26,10 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L34-L40 | Diagnosing and fixing Azure Resource Graph issues with alerts, query syntax/runtime errors, and Power BI connector connectivity, auth, and data refresh problems. |
 | Best Practices | L41-L45 | Guidance on designing Azure Resource Graph queries to avoid throttling, including efficient patterns, batching, pagination, and performance-friendly query structures. |
-| Decision Making | L46-L50 | Guidance on when to use Azure Resource Graph GET/LIST REST APIs vs the Query service, comparing capabilities, scenarios, and integration patterns. |
-| Limits & Quotas | L51-L58 | Understanding ARG request limits, pagination behavior, handling large result sets, and implementing efficient paging (including with PowerShell) to avoid quota issues. |
-| Configuration | L59-L66 | Configuring Resource Graph usage: keyboard shortcuts, supported resource types, and defining/deploying shared queries via Bicep and ARM templates. |
-| Integrations & Coding Patterns | L67-L78 | Running Resource Graph queries via CLI, PowerShell, REST, Logic Apps, Power BI; creating shared queries and alerts; and retrieving resource change history for automation and reporting. |
+| Decision Making | L46-L51 | Guidance on selecting efficient Azure Resource Graph query patterns and deciding when to use the GET/LIST APIs versus the Query service for different scenarios. |
+| Limits & Quotas | L52-L59 | Understanding ARG request limits, pagination behavior, handling large result sets, and implementing efficient paging (including with PowerShell) to avoid quota issues. |
+| Configuration | L60-L67 | Configuring Resource Graph usage: keyboard shortcuts, supported resource types, and defining/deploying shared queries via Bicep and ARM templates. |
+| Integrations & Coding Patterns | L68-L79 | Running Resource Graph queries via CLI, PowerShell, REST, Logic Apps, Power BI; creating shared queries and alerts; and retrieving resource change history for automation and reporting. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -46,6 +46,7 @@ This skill requires **network access** to fetch documentation content:
 ### Decision Making
 | Topic | URL |
 |-------|-----|
+| Select the right Azure Resource Graph query strategy | https://learn.microsoft.com/en-us/azure/governance/resource-graph/choose-query-strategy |
 | Choose between ARG GET/LIST API and Query service | https://learn.microsoft.com/en-us/azure/governance/resource-graph/concepts/get-list-query-service-differences |
 
 ### Limits & Quotas

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-02'
+generated_at: '2026-08-31'
 category_descriptions:
   limits-quotas: Storage quotas, package size/count limits, free allocation, and how
     to monitor, retain, delete, and publish Azure Artifacts packages within those
@@ -7,26 +7,26 @@ category_descriptions:
   integrations: How to connect build tools (Cargo, Maven, Gradle, npm, NuGet, Python,
     PowerShell) to Azure Artifacts feeds, publish/restore packages, use upstream sources,
     and debug with symbols.
-  best-practices: Guidance on Azure Artifacts package management best practices, configuring
-    and using upstream sources, and safely restoring packages from external feeds.
+  best-practices: Best practices for secure, reliable Azure Artifacts package management,
+    including configuring and using upstream sources safely and restoring packages
+    from them.
   security: 'Securing Azure Artifacts feeds: configuring permissions, protecting upstream
     sources from malicious packages, and using npm audit to find and fix vulnerabilities.'
   decision-making: Guidance on planning and choosing Azure Artifacts feeds (project
     vs org scope) and migration paths from file shares or MyGet to Azure Artifacts.
-  configuration: Configuring Azure Artifacts feeds and views, setting upstream sources,
-    and connecting clients via .npmrc and .artifactignore for optimized package and
-    pipeline artifact usage.
+  configuration: 'Configuring Azure Artifacts feeds: views, upstream sources, npm
+    .npmrc auth/settings, and .artifactignore for optimizing Azure Pipelines artifact
+    behavior and performance.'
   deployment: Using GitHub Actions to build and push packages (NuGet, npm, etc.) to
     Azure Artifacts feeds, including workflow setup, authentication, and CI/CD integration.
 skill_description: Expert knowledge for Azure Artifacts development including best
   practices, decision making, limits & quotas, security, configuration, integrations
-  & coding patterns, and deployment. Use when managing feeds, upstream sources, storage
-  limits, tool integrations (npm/NuGet/Maven), or CI/CD publishing, and other Azure
-  Artifacts related development tasks. Not for Azure DevOps (use azure-devops), Azure
-  Pipelines (use azure-pipelines), Azure Repos (use azure-repos), Azure Test Plans
-  (use azure-test-plans).
-use_when: Use when managing feeds, upstream sources, storage limits, tool integrations
-  (npm/NuGet/Maven), or CI/CD publishing, and other Azure Artifacts related development
+  & coding patterns, and deployment. Use when managing feeds, upstream sources, .npmrc/.artifactignore,
+  GitHub Actions CI/CD, or package quotas, and other Azure Artifacts related development
+  tasks. Not for Azure DevOps (use azure-devops), Azure Pipelines (use azure-pipelines),
+  Azure Repos (use azure-repos), Azure Test Plans (use azure-test-plans).
+use_when: Use when managing feeds, upstream sources, .npmrc/.artifactignore, GitHub
+  Actions CI/CD, or package quotas, and other Azure Artifacts related development
   tasks.
 confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (use
   azure-pipelines), Azure Repos (use azure-repos), Azure Test Plans (use azure-test-plans).
@@ -43,8 +43,8 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 73
+- **Updated Pages**: 2
+- **Unchanged**: 71
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-artifacts/azure-artifacts.csv`
 
@@ -63,19 +63,26 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 
 ## Changes
 
+### Updated Pages
+
+- [Best practices](https://learn.microsoft.com/en-us/azure/devops/artifacts/concepts/best-practices?view=azure-devops)
+  - Updated: 2025-10-30T14:05:00.000Z → 2026-08-28T15:09:00.000Z
+- [Project setup](https://learn.microsoft.com/en-us/azure/devops/artifacts/npm/npmrc?view=azure-devops)
+  - Updated: 2026-02-05T14:05:00.000Z → 2026-08-25T22:04:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
 | [Limits on package sizes and counts](https://learn.microsoft.com/en-us/azure/devops/artifacts/reference/limits?view=azure-devops) | limits-quotas | 0.95 | Explicitly documents size and count limits per package type for Azure Artifacts; this is a canonical limits page with concrete numerical constraints that qualify as expert quota knowledge. |
 | [Manage permissions](https://learn.microsoft.com/en-us/azure/devops/artifacts/feeds/feed-permissions?view=azure-devops) | security | 0.80 | Permissions-focused article; likely lists specific roles (e.g., Feed Administrator, Collaborator), scopes, and how they control access, which are product-specific security details. |
-| [Project setup](https://learn.microsoft.com/en-us/azure/devops/artifacts/npm/npmrc?view=azure-devops) | configuration | 0.80 | Focuses on npmrc configuration with feed URLs and auth tokens; includes parameter names and values unique to Azure Artifacts. |
 | [Project setup](https://learn.microsoft.com/en-us/azure/devops/artifacts/universal-packages/project-setup-universal-packages?view=azure-devops) | integrations | 0.80 | Universal Packages setup with Azure CLI; includes max size (4 TiB) and CLI parameters specific to Azure Artifacts. |
 | [Universal Packages quickstart](https://learn.microsoft.com/en-us/azure/devops/artifacts/quickstarts/universal-packages?view=azure-devops) | limits-quotas | 0.80 | States explicit package size limit (4 TiB) and requirements (name and version), which are concrete product limits. |
 | [Use the .artifactignore file](https://learn.microsoft.com/en-us/azure/devops/artifacts/reference/artifactignore?view=azure-devops) | configuration | 0.80 | Documents the .artifactignore file syntax and behavior; includes pattern rules, precedence, and product-specific behavior for artifact publishing. |
 | [Monitor storage consumption](https://learn.microsoft.com/en-us/azure/devops/artifacts/artifact-storage?view=azure-devops) | limits-quotas | 0.78 | Page describes Azure Artifacts’ consumption-based storage with a specific free-tier limit (2 GiB) and what happens when that limit is exceeded, which is product- and tier-specific quota information not derivable from general knowledge. |
+| [Project setup](https://learn.microsoft.com/en-us/azure/devops/artifacts/npm/npmrc?view=azure-devops) | configuration | 0.75 | The page describes how to configure project-level and user-level .npmrc files with Azure Artifacts feed URLs and authentication details. It contains product-specific configuration patterns and parameter usage for npm clients connecting to Azure Artifacts, matching the configuration sub-skill. |
 | [Publish NuGet packages (NuGet.exe)](https://learn.microsoft.com/en-us/azure/devops/artifacts/nuget/publish?view=azure-devops) | integrations | 0.75 | Guides setup and publishing via NuGet CLI to Azure Artifacts. Involves specific feed URLs, configuration in nuget.config, and CLI parameters unique to Azure Artifacts, aligning with integrations & coding patterns. |
-| [Best practices](https://learn.microsoft.com/en-us/azure/devops/artifacts/concepts/best-practices?view=azure-devops) | best-practices | 0.70 | Explicitly a best-practices article; likely includes concrete DOs/DON’Ts and product-specific guidance for publishing and consuming packages. |
+| [Best practices](https://learn.microsoft.com/en-us/azure/devops/artifacts/concepts/best-practices?view=azure-devops) | best-practices | 0.70 | The page focuses on concrete DO/DON'T guidance for Azure Artifacts feeds and packages (publishing, consuming, managing). These are product-specific operational recommendations and gotchas that go beyond generic package management theory, fitting the best-practices sub-skill. |
 | [Delete and recover packages](https://learn.microsoft.com/en-us/azure/devops/artifacts/how-to/delete-and-recover-packages?view=azure-devops) | limits-quotas | 0.70 | The summary explicitly states a precise retention behavior: deleted packages remain in the Recycle Bin for 30 days before permanent deletion. This is a product-specific numerical limit/timeout that an LLM is unlikely to know from training and fits the limits-quotas category. |
 | [Feed scopes](https://learn.microsoft.com/en-us/azure/devops/artifacts/feeds/project-scoped-feeds?view=azure-devops) | decision-making | 0.70 | Page explicitly compares project-scoped and organization-scoped feeds and when to choose each; this is product-specific selection guidance, fitting decision-making. Even without numbers, it provides concrete criteria for choosing scope. |
 | [Project setup](https://learn.microsoft.com/en-us/azure/devops/artifacts/cargo/project-setup-cargo?view=azure-devops) | integrations | 0.70 | Cargo integration; includes credential provider setup and registry configuration unique to Azure Artifacts. |

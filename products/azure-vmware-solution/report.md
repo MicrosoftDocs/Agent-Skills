@@ -1,18 +1,18 @@
 ---
-generated_at: '2026-08-16'
+generated_at: '2026-08-31'
 category_descriptions:
-  configuration: 'Configuring and managing AVS environments: networking (SNAT, DNS,
-    DHCP, IPv6, HCX), storage/datastores (vSAN, ANF, Elastic SAN, backup), monitoring/alerts,
-    Arc/Run Command, and VMware Cloud Director.'
+  configuration: 'Configuring AVS infrastructure: networking, DNS/DHCP, storage/datastores,
+    backup, monitoring/alerts, HCX/Cloud Director, Arc/Run Command, and performance/placement
+    policies.'
   architecture-patterns: 'Network, storage, and private cloud design for AVS: hub-spoke
     patterns, vSAN/stretched clusters, Horizon and GitHub Enterprise sizing, Cloud
     Director networking, and Gen 2 architecture.'
-  decision-making: Guidance on choosing AVS SKUs, storage, backup, migration approaches,
-    licensing, and reserved instances, plus FAQs to plan, size, and purchase Azure
-    VMware Solution workloads.
-  security: 'Securing AVS: identity/access control, Defender for Cloud, vSAN CMK encryption,
-    LDAP/vCenter identity, Trusted Launch/vTPM, NSX Edge internet, ESU, app protection,
-    credential rotation, and best practices.'
+  decision-making: 'Guidance for planning AVS deployments: choosing SKUs, backup and
+    storage, migration/region moves, licensing, reserved instances, and general FAQs
+    for decision-making.'
+  security: 'Securing AVS: identity/access control, Defender for Cloud, vSAN encryption,
+    vCenter/NSX identity, VM trusted launch, network/IP security, ESU, credentials,
+    licensing rules, and best practices.'
   deployment: Guides for planning and deploying AVS for production, including Horizon/Citrix
     VDI, JetStream DR, VMware Cloud Director, and migrating SQL (Always On, FCI, standalone)
     to Azure VMware Solution.
@@ -30,64 +30,69 @@ category_descriptions:
 skill_description: Expert knowledge for Azure VMware Solution development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when working with AVS networking/HCX, vSAN/ANF storage, Horizon/Citrix VDI,
-  JetStream DR, or VMware Cloud Director, and other Azure VMware Solution related
-  development tasks. Not for Azure Virtual Machines (use azure-virtual-machines),
-  Azure Virtual Machine Scale Sets (use azure-vm-scalesets), Azure Nutanix (use azure-nutanix),
-  Azure Oracle (use azure-oracle).
-use_when: Use when working with AVS networking/HCX, vSAN/ANF storage, Horizon/Citrix
-  VDI, JetStream DR, or VMware Cloud Director, and other Azure VMware Solution related
-  development tasks.
-confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines), Azure
-  Virtual Machine Scale Sets (use azure-vm-scalesets), Azure Nutanix (use azure-nutanix),
-  Azure Oracle (use azure-oracle).
+  Use when designing AVS private clouds, NSX/HCX networking, vSAN clusters, Horizon
+  VDI, or Cloud Director setups, and other Azure VMware Solution related development
+  tasks. Not for Azure Virtual Machines (use azure-virtual-machines), SQL Server on
+  Azure Virtual Machines (use azure-sql-virtual-machines), Azure Stack Edge (use azure-stack-edge),
+  Azure Red Hat OpenShift (use azure-redhat-openshift).
+use_when: Use when designing AVS private clouds, NSX/HCX networking, vSAN clusters,
+  Horizon VDI, or Cloud Director setups, and other Azure VMware Solution related development
+  tasks.
+confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines), SQL
+  Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Stack Edge
+  (use azure-stack-edge), Azure Red Hat OpenShift (use azure-redhat-openshift).
 ---
 # Azure VMware Solution Crawl Report
 
 ## Summary
 
-- **Total Pages**: 140
-- **Fetched**: 140
+- **Total Pages**: 143
+- **Fetched**: 143
 - **Fetch Failed**: 0
-- **Classified**: 97
+- **Classified**: 100
 - **Unclassified**: 43
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 3
-- **Unchanged**: 136
-- **Deleted Pages**: 0
+- **New Pages**: 4
+- **Updated Pages**: 2
+- **Unchanged**: 137
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-vmware-solution/azure-vmware-solution.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 9 | 6.4% |
+| architecture-patterns | 9 | 6.3% |
 | best-practices | 2 | 1.4% |
-| configuration | 34 | 24.3% |
-| decision-making | 9 | 6.4% |
-| deployment | 8 | 5.7% |
-| integrations | 10 | 7.1% |
-| limits-quotas | 8 | 5.7% |
-| security | 13 | 9.3% |
-| troubleshooting | 4 | 2.9% |
-| *(Unclassified)* | 43 | 30.7% |
+| configuration | 35 | 24.5% |
+| decision-making | 10 | 7.0% |
+| deployment | 8 | 5.6% |
+| integrations | 10 | 7.0% |
+| limits-quotas | 8 | 5.6% |
+| security | 14 | 9.8% |
+| troubleshooting | 4 | 2.8% |
+| *(Unclassified)* | 43 | 30.1% |
 
 ## Changes
 
 ### New Pages
 
-- [Configure IPv6 Layer 3 forwarding](https://learn.microsoft.com/en-us/azure/azure-vmware/configure-ipv6-layer-3-forwarding)
+- [Use New-AVSStoragePolicy Run Command](https://learn.microsoft.com/en-us/azure/azure-vmware/use-new-avsstoragepolicy-run-command)
+- [Configure portable VCF](https://learn.microsoft.com/en-us/azure/azure-vmware/vmware-cloud-foundations-license-portability)
+- [Portable VCF licensing reference](https://learn.microsoft.com/en-us/azure/azure-vmware/portable-vcf-licensing-reference)
+- [AVS License-included Service Retirement, using portable VCF and other options](https://learn.microsoft.com/en-us/azure/azure-vmware/license-included-service-retirement)
 
 ### Updated Pages
 
-- [Known issues](https://learn.microsoft.com/en-us/azure/azure-vmware/azure-vmware-solution-known-issues)
-  - Updated: 2026-07-30T08:00:00.000Z → 2026-08-11T08:00:00.000Z
-- [Save costs with a reserved instance](https://learn.microsoft.com/en-us/azure/azure-vmware/reserved-instance)
-  - Updated: 2026-03-20T08:00:00.000Z → 2026-08-10T08:00:00.000Z
-- [Azure VMware Solution private cloud maintenance](https://learn.microsoft.com/en-us/azure/azure-vmware/azure-vmware-solution-private-cloud-maintenance)
-  - Updated: 2026-05-22T22:13:00.000Z → 2026-08-12T08:00:00.000Z
+- [What's new](https://learn.microsoft.com/en-us/azure/azure-vmware/azure-vmware-solution-platform-updates)
+  - Updated: 2026-08-04T08:00:00.000Z → 2026-08-16T08:00:00.000Z
+- [Introduction to Gen 2](https://learn.microsoft.com/en-us/azure/azure-vmware/native-introduction)
+  - Updated: 2026-06-23T22:12:00.000Z → 2026-08-20T22:11:00.000Z
+
+### Deleted Pages
+
+- ~~VMware Cloud Foundations (VCF) license portability on Azure VMware Solution~~ (https://learn.microsoft.com/en-us/azure/azure-vmware/vmware-cloud-foundations-license-portability)
 
 ## Classified Pages
 
@@ -100,6 +105,7 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Enable first-party application service principal](https://learn.microsoft.com/en-us/azure/azure-vmware/native-first-party-principle-security) | security | 0.80 | Security-focused article with a specific application ID and service principal name required for Gen 2 deployments; this is product-specific IAM configuration detail that qualifies as expert knowledge. |
 | [Set an external identity source for NSX](https://learn.microsoft.com/en-us/azure/azure-vmware/configure-external-identity-source-nsx-t) | security | 0.80 | Explains how to configure VMware NSX in Azure VMware Solution to use external LDAP/Active Directory for authentication, including mapping accounts to NSX roles. This is product-specific identity and RBAC configuration, matching the security sub-skill type. |
 | [2 - Create a private cloud](https://learn.microsoft.com/en-us/azure/azure-vmware/tutorial-create-private-cloud) | limits-quotas | 0.78 | Page includes concrete numerical constraints such as minimum and maximum hosts per vSAN cluster (3–16), maximum clusters per private cloud (12), and initial deployment host count (3). These are specific service limits/quotas that an LLM is unlikely to infer without documentation. |
+| [Use New-AVSStoragePolicy Run Command](https://learn.microsoft.com/en-us/azure/azure-vmware/use-new-avsstoragepolicy-run-command) | configuration | 0.78 | The page documents a specific Azure VMware Solution run command (New-AVSStoragePolicy) with product-specific parameters and how to combine vSAN rules, VM encryption, datastore tag placement, and ESA compression in one policy. This is detailed configuration guidance for a niche Azure service feature that isn't generally known from training data, and it focuses on concrete command usage and settings rather than conceptual overview. |
 | [Configure alerts and work with metrics](https://learn.microsoft.com/en-us/azure/azure-vmware/configure-alerts-for-azure-vmware-solution) | configuration | 0.75 | Explains configuring Azure Alerts, Action Groups, and Metrics for AVS, including incident behavior and AVS-specific monitoring settings. |
 | [Integrate Microsoft Defender for Cloud](https://learn.microsoft.com/en-us/azure/azure-vmware/azure-security-integration) | security | 0.75 | Covers product-specific security integration between Defender for Cloud and AVS, including how alerts flow, how policies are applied, and how to protect AVS VMs. Such content typically includes concrete configuration steps and security settings unique to this integration. |
 | [NSX Scale and Performance Recommendations for VMware HCX](https://learn.microsoft.com/en-us/azure/azure-vmware/azure-vmware-solution-nsx-scale-and-performance-recommendations-for-vmware-hcx) | best-practices | 0.75 | Focuses on NSX topology, data path performance characteristics, identifying resource limits, and recommended configurations to mitigate performance issues for HCX migrations. This is product-specific, actionable guidance with configuration recommendations and edge-case considerations, fitting best-practices. |
@@ -172,6 +178,7 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Migrate Microsoft SQL Server Always On Availability Group to Azure VMware Solution](https://learn.microsoft.com/en-us/azure/azure-vmware/migrate-sql-server-always-on-availability-group) | deployment | 0.65 | Provides specific guidance for migrating SQL Server Always On Availability Groups with VMware HCX vMotion and tested OS/SQL combinations; this is detailed, scenario-specific deployment knowledge. |
 | [Migrate a SQL Server standalone instance to Azure VMware Solution](https://learn.microsoft.com/en-us/azure/azure-vmware/migrate-sql-server-standalone-cluster) | deployment | 0.65 | How-to migration guide for SQL Server standalone using VMware HCX vMotion vs Cold Migration, including downtime implications and product-specific constraints; contains concrete, product-specific migration/deployment behavior rather than generic concepts. |
 | [Migrate workloads between Azure VMware Solution private clouds](https://learn.microsoft.com/en-us/azure/azure-vmware/migrate-between-private-clouds) | decision-making | 0.65 | Focuses on when and how to migrate workloads between AVS private clouds (regions, SKUs, consolidation) using VMware HCX; while also procedural, it provides scenario-based guidance and migration considerations that help choose migration approaches, fitting decision-making best among the available types. |
+| [Portable VCF licensing reference](https://learn.microsoft.com/en-us/azure/azure-vmware/portable-vcf-licensing-reference) | security | 0.65 | Licensing reference content typically includes product-specific rules, core requirements, dates, and possibly compliance/security-related constraints that are not generally known; this is specialized, prescriptive information about how licensing and associated security details work for portable VCF on Azure VMware Solution. |
 | [Protect web apps with Azure Application Gateway](https://learn.microsoft.com/en-us/azure/azure-vmware/protect-azure-vmware-solution-with-application-gateway) | security | 0.65 | Shows how to place Azure Application Gateway in front of web apps running on Azure VMware Solution to securely expose them. While also an integration, the focus is on secure exposure and protection patterns for AVS workloads using a specific Azure security service, fitting security best as a sub-skill. |
 | [Protect, monitor, and manage VMs](https://learn.microsoft.com/en-us/azure/azure-vmware/integrate-azure-native-services) | integrations | 0.65 | Explains how to wire AVS workloads into specific Azure native services (monitoring, management, protection). Such integration articles typically include service-specific configuration steps, parameters, and patterns unique to AVS–Azure integration, which constitute expert integration knowledge. |
 | [Save costs with a reserved instance](https://learn.microsoft.com/en-us/azure/azure-vmware/reserved-instance) | decision-making | 0.65 | Reserved instance docs typically include SKU- and term-specific pricing/coverage details, scope behavior, and constraints that guide when and how to buy RIs for Azure VMware Solution. This is specialized cost/selection guidance (decision-making) beyond generic concepts, even though the summary is high level. |
@@ -180,6 +187,7 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Deploy Citrix on Azure VMware Solution](https://learn.microsoft.com/en-us/azure/azure-vmware/azure-vmware-solution-citrix) | deployment | 0.62 | Focuses on deploying Citrix Virtual Apps and Desktops service on Azure VMware Solution. Citrix-on-AVS is a specific deployment scenario with product-specific requirements and constraints (e.g., supported models, topology, and AVS usage patterns) that go beyond generic deployment knowledge, fitting the deployment sub-skill for a particular platform integration. |
 | [Enable VMware Cloud Director Service with Azure VMware Solution](https://learn.microsoft.com/en-us/azure/azure-vmware/enable-vmware-cds-with-azure) | deployment | 0.62 | Describes enabling VMware Cloud Director service on top of Azure VMware Solution private clouds to provision and manage virtual datacenters. This is a product-specific enablement/deployment scenario that likely includes required configurations and constraints for wiring the services together, best fitting deployment. |
 | [API Management](https://learn.microsoft.com/en-us/azure/azure-vmware/architecture-api-management) | architecture-patterns | 0.60 | Provides recommendations for integrating AVS into hub-and-spoke architectures in hybrid scenarios, which is a product-specific architecture pattern. |
+| [AVS License-included Service Retirement, using portable VCF and other options](https://learn.microsoft.com/en-us/azure/azure-vmware/license-included-service-retirement) | decision-making | 0.60 | Service retirement and transition guidance inherently involves choosing between licensing options and migration paths; this page likely provides concrete timelines, options, and trade-offs for moving from license-included to portable VCF and other choices, which is specialized decision guidance not captured in generic training data. |
 | [Access and identity](https://learn.microsoft.com/en-us/azure/azure-vmware/architecture-identity) | decision-making | 0.60 | Explains which API Management SKUs (Developer, Premium) support VNet integration for AVS workloads and when to use them, a product-specific selection guide. |
 | [Backup solutions for VMs](https://learn.microsoft.com/en-us/azure/azure-vmware/ecosystem-back-up-vms) | decision-making | 0.60 | Compares multiple ISV backup options validated for AVS; provides solution selection guidance beyond generic backup concepts. |
 | [Configure NSX network components](https://learn.microsoft.com/en-us/azure/azure-vmware/configure-nsx-network-components-azure-portal) | configuration | 0.60 | Explains how to configure port mirroring in AVS/NSX and notes intended use (troubleshooting), which is product-specific configuration. |
@@ -212,6 +220,7 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Application performance monitoring solutions for Azure VMware Solution](https://learn.microsoft.com/en-us/azure/azure-vmware/ecosystem-app-monitoring-solutions) | 0.30 | Described as an overview of application performance monitoring and troubleshooting solutions; likely catalog/marketing-style guidance without concrete error codes, configuration tables, or numeric thresholds. |
 | [Azure VMware Solution private cloud maintenance](https://learn.microsoft.com/en-us/azure/azure-vmware/azure-vmware-solution-private-cloud-maintenance) | 0.30 | The summary describes periodic maintenance, patches, and updates conceptually without indicating specific limits, configuration parameters, error codes, or decision matrices. It appears to be a process/overview page rather than detailed expert guidance in any listed sub-skill type. |
 | [Configure VMware HCX network extension](https://learn.microsoft.com/en-us/azure/azure-vmware/configure-hcx-network-extension) | 0.30 | How-to steps for creating an HCX network extension; summary shows basic UI actions and a generic timing note, but no detailed configuration parameters, limits, or error-resolution mappings. |
+| [Configure portable VCF](https://learn.microsoft.com/en-us/azure/azure-vmware/vmware-cloud-foundations-license-portability) | 0.30 | How-to for registering portable VCF licenses; summary indicates portal workflow and references another licensing reference page for rules and calculations, so the expert numeric/licensing details are not on this page. |
 | [Connect multiple Gen 2 Private Clouds](https://learn.microsoft.com/en-us/azure/azure-vmware/native-connect-multiple-private-clouds) | 0.30 | Covers connecting multiple Gen 2 private clouds; appears to be conceptual/how-to networking guidance without explicit limits, config parameter tables, or troubleshooting mappings in the summary. |
 | [Connect multiple private clouds in same region](https://learn.microsoft.com/en-us/azure/azure-vmware/connect-multiple-private-clouds-same-region) | 0.30 | Describes AVS Interconnect conceptually (nontransitive connections between private clouds in same region); summary does not show numeric limits, config tables, or troubleshooting/decision matrices. |
 | [Connect to an on-premises environment](https://learn.microsoft.com/en-us/azure/azure-vmware/native-connect-on-premises) | 0.30 | Describes how to connect on-premises to Gen 2 via ExpressRoute or VPN; from the summary it appears as general connectivity guidance without specific configuration parameter tables or limits. |
@@ -229,12 +238,11 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Restore VMs](https://learn.microsoft.com/en-us/azure/azure-vmware/restore-azure-netapp-files-vms) | 0.30 | Procedural restore-how-to for Cloud Backup and vCenter; description suggests step-by-step operations without explicit limits, config tables, error-code mappings, or product-specific parameter references that meet any sub-skill criteria. |
 | [Restore guest files and folders](https://learn.microsoft.com/en-us/azure/azure-vmware/restore-guest-files-folders) | 0.30 | How-to guide for restoring guest files/folders from VMDK; summary indicates operational steps only, with no numeric limits, configuration matrices, error-code troubleshooting, or detailed parameter tables required for any sub-skill type. |
 | [Run Command](https://learn.microsoft.com/en-us/azure/azure-vmware/using-run-command) | 0.30 | Appears to be a general overview of Run Commands in Azure VMware Solution and CloudAdmin role capabilities. The summary does not indicate detailed parameter tables, configuration values, or error mappings; it mainly explains what Run Commands are and supported operations, which is conceptual rather than expert-level specifics. |
-| [VMware Cloud Foundations (VCF) license portability on Azure VMware Solution](https://learn.microsoft.com/en-us/azure/azure-vmware/vmware-cloud-foundations-license-portability) | 0.30 | Licensing/portfolio change explanation for VMware Cloud Foundation on Azure VMware Solution; focuses on policy and dates rather than technical limits, configuration, or troubleshooting details. |
 | [Bitnami appliance deployment](https://learn.microsoft.com/en-us/azure/azure-vmware/bitnami-appliances-deployment) | 0.25 | Explains how to deploy Bitnami virtual appliances (LAMP, Jenkins, PostgreSQL, NGINX, RabbitMQ) on Azure VMware Solution. The summary suggests a guided installation/configuration tutorial, but not detailed configuration parameter tables, limits, or troubleshooting mappings; it reads as deployment guidance rather than deep, product-specific expert reference. |
 | [9 - Delete a private cloud](https://learn.microsoft.com/en-us/azure/azure-vmware/tutorial-delete-private-cloud) | 0.20 | Tutorial-style delete operation for an Azure VMware Solution private cloud; no detailed limits, configuration parameter tables, error-code-based troubleshooting, or other product-specific expert data beyond generic deletion behavior. |
 | [Deploy VMs from the content library](https://learn.microsoft.com/en-us/azure/azure-vmware/deploy-vm-content-library) | 0.20 | Primarily a procedural tutorial on creating a vSphere content library and deploying a VM from an ISO. It does not emphasize configuration parameter tables, limits, or product-specific edge cases; it’s mostly step-by-step UI usage that an LLM can approximate without needing this exact document. |
-| [Introduction to Gen 2](https://learn.microsoft.com/en-us/azure/azure-vmware/native-introduction) | 0.20 | Introductory/architecture overview of Azure VMware Solution Gen 2 private clouds; summary mentions networking benefits and AV64 SKU but no detailed limits tables, configuration parameters, or other expert-only specifics. |
+| [Introduction to Gen 2](https://learn.microsoft.com/en-us/azure/azure-vmware/native-introduction) | 0.20 | Introductory/architecture overview of Gen 2 private clouds; summary mentions limits but defers to another page without listing specific numeric limits, configurations, or other expert-only details. |
 | [Operating system support for VMs](https://learn.microsoft.com/en-us/azure/azure-vmware/ecosystem-os-vms) | 0.20 | High-level statement that Azure VMware Solution supports OSes supported by vSphere; no detailed tables, parameters, or constraints are evident in the summary. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-vmware/resource-health-for-azure-vmware-solution-overview) | 0.20 | High-level overview of Azure Resource Health for AVS; summary indicates conceptual description of what Resource Health does, without concrete error codes, configuration parameters, or limits. |
 | [Security solutions for Azure VMware Solution](https://learn.microsoft.com/en-us/azure/azure-vmware/ecosystem-security-solutions) | 0.20 | High-level description of security partner solutions and ecosystem; appears marketing/overview oriented without specific RBAC roles, configuration parameters, or detailed integration settings. Lacks the concrete, product-specific security configuration details required for the security or other expert categories. |
-| [What's new](https://learn.microsoft.com/en-us/azure/azure-vmware/azure-vmware-solution-platform-updates) | - | Release notes / what's-new page summarizing platform updates and maintenance notifications without detailed limits, configuration parameters, error codes, or decision matrices. |
+| [What's new](https://learn.microsoft.com/en-us/azure/azure-vmware/azure-vmware-solution-platform-updates) | 0.10 | Page is a high-level 'what's new' update overview without specific limits, configuration parameters, error codes, or decision matrices; it doesn't contain the kind of detailed expert knowledge defined for any sub-skill type. |

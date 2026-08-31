@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-09'
+generated_at: '2026-08-31'
 category_descriptions:
   security: Managing secure access, roles, and permissions for Azure billing, subscriptions,
     reservations, savings plans, and tax documents, including RBAC, EA/MCA/CSP roles,
@@ -50,8 +50,8 @@ confusable_not_for: Not for Azure Advisor (use azure-advisor), Azure Monitor (us
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 272
+- **Updated Pages**: 3
+- **Unchanged**: 269
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cost-management/azure-cost-management.csv`
 
@@ -70,6 +70,15 @@ confusable_not_for: Not for Azure Advisor (use azure-advisor), Azure Monitor (us
 | *(Unclassified)* | 143 | 52.6% |
 
 ## Changes
+
+### Updated Pages
+
+- [Billing accounts for Microsoft Customer Agreement](https://learn.microsoft.com/en-us/azure/cost-management-billing/understand/mca-overview)
+  - Updated: 2026-04-29T08:00:00.000Z → 2026-08-24T08:00:00.000Z
+- [Transfer CSP subscriptions](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/transfer-subscriptions-subscribers-csp)
+  - Updated: 2026-06-23T22:12:00.000Z → 2026-08-20T17:12:00.000Z
+- [Transfer Microsoft Partner Agreement ownership](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/mpa-request-ownership)
+  - Updated: 2026-07-09T08:00:00.000Z → 2026-08-24T17:12:00.000Z
 
 ## Classified Pages
 
@@ -310,7 +319,8 @@ confusable_not_for: Not for Azure Advisor (use azure-advisor), Azure Monitor (us
 | [Sweden Central select Linux VMs](https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/limited-time-central-sweden) | 0.30 | Limited-time discount marketing; no product-specific technical guidance or limits. |
 | [Synapse Analytics - Data warehouse](https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/reservation-discount-azure-sql-dw) | 0.30 | Explains how reservation discounts apply to Azure Synapse Analytics data warehousing; summary is conceptual and lacks specific numeric or configuration details. |
 | [Track your Microsoft Azure Consumption Commitment](https://learn.microsoft.com/en-us/azure/cost-management-billing/benefits/macc/track-consumption-commitment) | 0.30 | Defines MACC and notes that you can track dates, balance, and eligible spending; summary does not show concrete limits, role mappings, or configuration tables. |
-| [Transfer CSP subscriptions](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/transfer-subscriptions-subscribers-csp) | 0.30 | Article provides high-level steps for transferring Azure subscriptions between subscribers and CSPs, focused on coordination and process. The summary does not indicate specific numeric limits, configuration parameters, or detailed error/symptom mappings. It reads as procedural guidance rather than expert technical reference that fits the defined sub-skill types. |
+| [Transfer CSP subscriptions](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/transfer-subscriptions-subscribers-csp) | 0.30 | Article describes high-level steps and coordination process for transferring Azure subscriptions between subscribers and CSP partners; summary indicates procedural guidance without specific limits, configuration parameters, error codes, or decision matrices. Content is primarily process/portal workflow, not detailed expert configuration or troubleshooting data. |
+| [Transfer Microsoft Partner Agreement ownership](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/mpa-request-ownership) | 0.30 | Page focuses on requesting billing ownership of Azure products under a Microsoft Partner Agreement, with eligibility and portal steps. The summary suggests procedural instructions rather than detailed limits, configuration tables, security roles, or troubleshooting mappings. It does not clearly expose product-specific numeric limits, config parameters, or error codes that qualify as expert knowledge under the defined sub-skill types. |
 | [Transfer subscriptions between partners](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/azure-plan-subscription-transfer-partners) | 0.30 | Content is primarily procedural and policy-oriented about transferring billing ownership under an Azure plan between partners. It describes high-level steps and coordination rather than detailed technical limits, configuration parameters, or error-based troubleshooting. No clear sub-skill category with expert-only numeric limits, config tables, or error mappings is evident from the summary. |
 | [US West Dv3 VMs](https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/limited-time-us-west) | 0.30 | Limited-time discount marketing; no technical limits, configs, or troubleshooting details. |
 | [View billing accounts](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/view-all-accounts) | 0.30 | Explains how to view billing accounts and their scopes in the Azure portal; navigation/overview content without expert-level limits, configs, or security role details beyond high-level descriptions. |
@@ -319,7 +329,6 @@ confusable_not_for: Not for Azure Advisor (use azure-advisor), Azure Monitor (us
 | [What is centrally managed Azure Hybrid Benefit?](https://learn.microsoft.com/en-us/azure/cost-management-billing/scope-level/overview-azure-hybrid-benefit-scope) | 0.30 | High-level overview of centrally managed Azure Hybrid Benefit; primarily conceptual and cost/benefit description without clear evidence of detailed configs, limits, or troubleshooting. |
 | [Account administrator tasks](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/account-admin-tasks) | 0.20 | Task-oriented billing UI instructions (manage, replace, edit, delete payment methods, switch to wire transfer) without product-specific limits, quotas, configuration parameter tables, error-code-based troubleshooting, or quantified decision criteria. Mostly procedural portal guidance that a generic LLM can infer. |
 | [Add, update, or delete payment method](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/change-credit-card) | 0.20 | Procedural portal guide for managing Azure payment methods; no product-specific limits, configuration tables, error codes, or quantified decision criteria. |
-| [Billing accounts for Microsoft Customer Agreement](https://learn.microsoft.com/en-us/azure/cost-management-billing/understand/mca-overview) | 0.20 | Introductory overview of Microsoft Customer Agreement billing accounts; explains concepts like billing profiles and payment methods without expert-level numeric or configuration detail. |
 | [Changes to your updated pay-as-you-go billing account](https://learn.microsoft.com/en-us/azure/cost-management-billing/understand/mosp-new-customer-experience) | 0.20 | Overview of updated Azure billing account experience; largely conceptual and UI-oriented, not focused on numeric limits, configuration settings, or troubleshooting. |
 | [Check usage](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/check-free-service-usage) | 0.20 | Page explains how to view free service usage in the Azure portal and mentions that usage data is delayed by 1–2 days, but does not list specific numerical limits, quotas, configuration parameters, or decision matrices. Content is procedural/overview rather than detailed expert reference. |
 | [Download your invoice](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/download-azure-invoice-daily-usage-date) | 0.20 | Content focuses on how to download or view Azure billing invoices and mentions roles that can access invoices; it lacks detailed configuration parameters, limits, or troubleshooting mappings that would qualify as expert knowledge under the defined categories. |
@@ -350,5 +359,5 @@ confusable_not_for: Not for Azure Advisor (use azure-advisor), Azure Monitor (us
 | [View payment history](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/view-payment-history) | 0.10 | Simple guidance on viewing payment history in the Azure portal; no specific limits, configuration parameters, or technical troubleshooting content. |
 | [What is Billing?](https://learn.microsoft.com/en-us/azure/cost-management-billing/cost-management-billing-overview) | 0.10 | Overview of billing capabilities; conceptual and descriptive without product-specific numeric limits, configs, or troubleshooting content. |
 | [What is Cost Management?](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/overview-cost-management) | 0.10 | High-level overview of Cost Management; conceptual and marketing-style description without detailed limits, configs, or troubleshooting. |
+| [Billing accounts for Microsoft Customer Agreement](https://learn.microsoft.com/en-us/azure/cost-management-billing/understand/mca-overview) | - | Primarily a conceptual overview of Microsoft Customer Agreement billing accounts, profiles, and payment methods without detailed limits, configuration tables, error codes, or decision matrices. |
 | [Billing and subscriptions documentation](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/) | - | High-level landing page for billing and subscription management; appears to be navigational/overview content without specific limits, configuration tables, error codes, or decision matrices. |
-| [Transfer Microsoft Partner Agreement ownership](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/mpa-request-ownership) | - | Procedural guidance for requesting billing ownership transfer under Microsoft Partner Agreement; no detailed limits, configuration parameters, error codes, or decision matrices with quantified criteria. |

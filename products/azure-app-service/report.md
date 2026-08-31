@@ -1,18 +1,18 @@
 ---
-generated_at: '2026-08-16'
+generated_at: '2026-08-31'
 category_descriptions:
-  decision-making: Guidance on choosing tiers, plans, auth, networking, and secure
-    connectivity, plus planning and executing App Service migrations, scaling, domains,
-    and cost optimization.
+  decision-making: Guidance for planning and choosing App Service tiers, hosting plans,
+    networking, auth, secure connectivity, domains, and migration paths (Windows→Linux,
+    .NET, Docker, VNet, ASE vs multitenant).
   best-practices: Best practices for deploying and securing App Service apps, handling
     inbound/outbound and TLS IP changes, and using Traffic Manager for resilient,
     highly available endpoints
   configuration: 'Configuring App Service apps: runtime and language settings, containers/sidecars,
-    auth, networking/VNet/DNS/NAT, domains/SSL, storage, health/monitoring, backups,
+    networking (VNet, NAT, private endpoints, DNS), auth, SSL/domains, storage, backups,
     and environment variables.'
-  security: 'Configuring App Service security: auth (Entra, social, OpenID, MCP),
-    TLS/certs, managed identities, IP/VNet/firewall, storage/SQL/Graph access, and
-    encryption/compliance settings.'
+  security: 'Securing App Service apps: auth (Entra, social, OIDC, MCP), certificates/TLS,
+    IP/VNet/firewall, managed identities, Key Vault, storage/SQL/Graph access, and
+    end‑to‑end network isolation.'
   deployment: 'Deploying and managing App Service apps: CI/CD (GitHub Actions, Azure
     Pipelines), ZIP/FTP/local Git deploy, deployment slots, ASE setup/scale, DNS migration,
     and maintenance/patch automation.'
@@ -30,13 +30,13 @@ category_descriptions:
 skill_description: Expert knowledge for Azure App Service development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  configuring App Service plans/ASEs, VNet integration, managed identity access, deployment
-  slots, or CI/CD, and other Azure App Service related development tasks. Not for
-  Azure Functions (use azure-functions), Azure Container Apps (use azure-container-apps),
+  choosing App Service plans, VNet/ASE networking, Entra auth, deployment slots/CI/CD,
+  or Azure OpenAI chatbots, and other Azure App Service related development tasks.
+  Not for Azure Functions (use azure-functions), Azure Container Apps (use azure-container-apps),
   Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Static Web
   Apps (use azure-static-web-apps).
-use_when: Use when configuring App Service plans/ASEs, VNet integration, managed identity
-  access, deployment slots, or CI/CD, and other Azure App Service related development
+use_when: Use when choosing App Service plans, VNet/ASE networking, Entra auth, deployment
+  slots/CI/CD, or Azure OpenAI chatbots, and other Azure App Service related development
   tasks.
 confusable_not_for: Not for Azure Functions (use azure-functions), Azure Container
   Apps (use azure-container-apps), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
@@ -54,9 +54,9 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Contain
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 9
-- **Unchanged**: 235
-- **Deleted Pages**: 4
+- **Updated Pages**: 14
+- **Unchanged**: 230
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-app-service/azure-app-service.csv`
 
 ## Classification Statistics
@@ -78,31 +78,34 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Contain
 
 ### Updated Pages
 
-- [Overview](https://learn.microsoft.com/en-us/azure/app-service/overview-ai-integration)
-  - Updated: 2026-02-02T18:12:00.000Z → 2026-08-12T17:21:00.000Z
-- [Chatbots and RAG applications](https://learn.microsoft.com/en-us/azure/app-service/scenario-ai-chatbot-retrieval-augmented-generation)
-  - Updated: 2026-02-02T18:12:00.000Z → 2026-08-12T17:21:00.000Z
-- [Chatbot with OpenAI](https://learn.microsoft.com/en-us/azure/app-service/tutorial-ai-openai-chatbot-dotnet)
-  - Updated: 2025-11-18T08:00:00.000Z → 2026-08-12T17:21:00.000Z
+- [About App Service](https://learn.microsoft.com/en-us/azure/app-service/overview)
+  - Updated: 2025-11-18T17:01:00.000Z → 2026-08-18T22:40:00.000Z
+- [Managed Instance overview](https://learn.microsoft.com/en-us/azure/app-service/overview-managed-instance)
+  - Updated: 2026-05-01T08:00:00.000Z → 2026-08-18T22:40:00.000Z
+- [Built-in MCP (Preview)](https://learn.microsoft.com/en-us/azure/app-service/configure-mcp-built-in)
+  - Updated: 2026-07-17T08:00:00.000Z → 2026-08-18T08:00:00.000Z
+- [ASP.NET Core with SQL DB](https://learn.microsoft.com/en-us/azure/app-service/tutorial-dotnetcore-sqldb-app)
+  - Updated: 2026-07-22T08:00:00.000Z → 2026-08-20T08:00:00.000Z
+- [Migrate to Managed Instance](https://learn.microsoft.com/en-us/azure/app-service/quickstart-managed-instance)
+  - Updated: 2025-11-18T17:01:00.000Z → 2026-08-18T22:40:00.000Z
 - [Agentic web app (.NET)](https://learn.microsoft.com/en-us/azure/app-service/tutorial-ai-agent-web-app-semantic-kernel-foundry-dotnet)
-  - Updated: 2025-12-16T18:11:00.000Z → 2026-08-12T17:21:00.000Z
+  - Updated: 2026-08-12T17:21:00.000Z → 2026-08-27T17:12:00.000Z
+- [Authenticate Microsoft Foundry tool calls](https://learn.microsoft.com/en-us/azure/app-service/configure-authentication-ai-foundry-openapi-tool)
+  - Updated: 2025-12-16T18:11:00.000Z → 2026-08-27T09:10:00.000Z
+- [Configure a Managed Instance](https://learn.microsoft.com/en-us/azure/app-service/configure-managed-instance)
+  - Updated: 2026-05-11T08:00:00.000Z → 2026-08-18T22:40:00.000Z
+- [Quarkus with PostgreSQL](https://learn.microsoft.com/en-us/azure/app-service/tutorial-java-quarkus-postgresql-app)
+  - Updated: 2025-06-03T17:04:00.000Z → 2026-08-18T22:40:00.000Z
 - [Agentic web app](https://learn.microsoft.com/en-us/azure/app-service/tutorial-ai-agent-web-app-semantic-kernel-java)
-  - Updated: 2025-12-16T18:11:00.000Z → 2026-08-12T17:21:00.000Z
+  - Updated: 2026-08-12T17:21:00.000Z → 2026-08-27T09:10:00.000Z
 - [Agentic web app](https://learn.microsoft.com/en-us/azure/app-service/tutorial-ai-agent-web-app-langgraph-foundry-node)
-  - Updated: 2025-12-16T18:11:00.000Z → 2026-08-12T17:21:00.000Z
+  - Updated: 2026-08-12T17:21:00.000Z → 2026-08-27T17:12:00.000Z
 - [Agentic web app](https://learn.microsoft.com/en-us/azure/app-service/tutorial-ai-agent-web-app-langgraph-foundry-python)
-  - Updated: 2025-12-16T18:11:00.000Z → 2026-08-12T17:21:00.000Z
-- [Kudu service](https://learn.microsoft.com/en-us/azure/app-service/resources-kudu)
-  - Updated: 2025-01-29T12:19:00.000Z → 2026-08-11T05:12:00.000Z
-- [About OS and runtime patching](https://learn.microsoft.com/en-us/azure/app-service/overview-patch-os-runtime)
-  - Updated: 2025-09-02T11:12:00.000Z → 2026-08-10T22:12:00.000Z
-
-### Deleted Pages
-
-- ~~RAG with Azure OpenAI and your data~~ (https://learn.microsoft.com/en-us/azure/app-service/tutorial-ai-openai-search-dotnet)
-- ~~RAG with Azure OpenAI with your data~~ (https://learn.microsoft.com/en-us/azure/app-service/tutorial-ai-openai-search-java)
-- ~~RAG with Azure OpenAI and your data~~ (https://learn.microsoft.com/en-us/azure/app-service/tutorial-ai-openai-search-nodejs)
-- ~~RAG with Azure OpenAI and your data~~ (https://learn.microsoft.com/en-us/azure/app-service/tutorial-ai-openai-search-python)
+  - Updated: 2026-08-12T17:21:00.000Z → 2026-08-27T17:12:00.000Z
+- [App Service plans overview](https://learn.microsoft.com/en-us/azure/app-service/overview-hosting-plans)
+  - Updated: 2025-11-18T17:01:00.000Z → 2026-08-18T22:40:00.000Z
+- [Configure PremiumV4 tier](https://learn.microsoft.com/en-us/azure/app-service/app-service-configure-premium-v4-tier)
+  - Updated: 2026-08-03T08:00:00.000Z → 2026-08-18T08:00:00.000Z
 
 ## Classified Pages
 
@@ -118,7 +121,6 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Contain
 | [Use OpenID Connect](https://learn.microsoft.com/en-us/azure/app-service/configure-authentication-provider-openid-connect) | security | 0.84 | Explains how to add OIDC providers with specific metadata endpoints, client IDs, and App Service auth configuration fields—product-specific security setup. |
 | [Use X](https://learn.microsoft.com/en-us/azure/app-service/configure-authentication-provider-twitter) | security | 0.84 | Covers configuring X/Twitter as an auth provider. Requires specific configuration values (API key/secret, callback URL, scopes) and App Service auth settings, which are product-specific security configuration details. |
 | [About local cache](https://learn.microsoft.com/en-us/azure/app-service/overview-local-cache) | configuration | 0.82 | Covers how local cache works, how to enable and resize it, and likely includes specific app settings and size limits—detailed configuration unique to App Service. |
-| [Authenticate Microsoft Foundry tool calls](https://learn.microsoft.com/en-us/azure/app-service/configure-authentication-ai-foundry-openapi-tool) | security | 0.82 | Step-by-step configuration of Entra authentication and managed identity for Foundry Agent Service calls, including scopes and settings unique to this integration. |
 | [Configure TLS mutual authentication](https://learn.microsoft.com/en-us/azure/app-service/app-service-web-configure-tls-mutual-auth) | security | 0.82 | Mutual TLS setup includes App Service–specific settings (client cert mode, headers, validation behavior) and configuration parameters that are unique security configuration knowledge. |
 | [Overview](https://learn.microsoft.com/en-us/azure/app-service/configure-authentication-mcp) | security | 0.82 | Details how to align App Service Authentication with the MCP server authorization spec, including specific settings and flows unique to MCP. |
 | [Use Apple sign-in (preview)](https://learn.microsoft.com/en-us/azure/app-service/configure-authentication-provider-apple) | security | 0.82 | Sign in with Apple provider configuration, including Apple-specific requirements and App Service auth behavior (including noted management limitations). Contains concrete configuration steps and constraints that are product-specific security details. |
@@ -145,7 +147,7 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Contain
 | [Use file-based configuration](https://learn.microsoft.com/en-us/azure/app-service/configure-authentication-file-based) | configuration | 0.80 | Describes file-based configuration for App Service AuthN/AuthZ, including a dedicated config file and settings that travel with the app payload; this implies specific configuration keys/values unique to this feature. |
 | [VNet integration overview](https://learn.microsoft.com/en-us/azure/app-service/overview-vnet-integration) | configuration | 0.80 | Details App Service VNet integration variations and setup; includes product-specific configuration behaviors and constraints. |
 | [Work with tokens](https://learn.microsoft.com/en-us/azure/app-service/configure-authentication-oauth-tokens) | security | 0.80 | Explains how to retrieve, refresh, and extend OAuth tokens via App Service auth endpoints and settings—detailed token management behavior unique to this feature. |
-| [Configure a Managed Instance](https://learn.microsoft.com/en-us/azure/app-service/configure-managed-instance) | configuration | 0.78 | The article describes how to configure Managed Instance on Azure App Service, including general settings, storage mounts, registry keys, and Bastion/RDP access. These are product-specific configuration options and patterns (for example, how to define storage mounts and registry keys for this preview feature) that go beyond generic knowledge. It focuses on concrete configuration steps and parameters rather than just conceptual guidance. |
+| [Authenticate Microsoft Foundry tool calls](https://learn.microsoft.com/en-us/azure/app-service/configure-authentication-ai-foundry-openapi-tool) | security | 0.78 | The page provides product-specific security configuration for securing Foundry Agent Service OpenAPI tool calls to Azure App Service using Microsoft Entra and managed identities. It describes distinct identity roles (App Service managed identity, Foundry Agent Service identity, App Service authentication Entra application), how they interact, and how to configure authentication for this scenario. This is concrete, service-specific security guidance rather than a generic overview. |
 | [Configure common settings](https://learn.microsoft.com/en-us/azure/app-service/configure-common) | configuration | 0.78 | This page documents concrete App Service configuration options (e.g., app settings, platform settings, .NET/Java/PHP versions, ARR affinity, HTTP/HTTPS-only, client affinity, WebSockets, always-on, etc.) with specific setting names and values that are product-specific. It goes beyond a simple tutorial and lists how to configure these options via portal/CLI/PowerShell, matching the configuration sub-skill definition. |
 | [Use secrets from Key Vault](https://learn.microsoft.com/en-us/azure/app-service/app-service-key-vault-references) | security | 0.78 | How-to article for wiring Azure Key Vault references into App Service/Functions app settings and connection strings. Typically includes exact reference syntax, required identity/permissions, and platform-specific behaviors that are product-specific security configuration details rather than generic concepts. |
 | [Use settings from App Configuration](https://learn.microsoft.com/en-us/azure/app-service/app-service-configuration-references) | configuration | 0.78 | This page documents the exact syntax and behavior of App Configuration references in App Service/Functions (for example, @Microsoft.AppConfiguration(...) patterns, supported reference types, resolution behavior, and platform-specific settings). These are product-specific configuration details and parameter formats that go beyond generic knowledge and fit the configuration sub-skill. |
@@ -180,10 +182,10 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Contain
 | [Access restriction overview](https://learn.microsoft.com/en-us/azure/app-service/overview-access-restrictions) | security | 0.70 | Describes access restriction behavior, interaction with private endpoints, and default exposure; product-specific security configuration guidance. |
 | [Add and manage TLS/SSL certificates](https://learn.microsoft.com/en-us/azure/app-service/configure-ssl-certificate) | security | 0.70 | Page is a detailed configuration guide for installing and managing TLS/SSL certificates on Azure App Service, including product-specific options (App Service Managed Certificates, private certificates, bindings, SNI vs IP-based SSL) and concrete configuration steps and parameters unique to this service. This is security-focused configuration (cert management and HTTPS bindings) rather than generic concepts, so it best fits the security sub-skill. |
 | [App Service Managed Certificate July 2025 Changes](https://learn.microsoft.com/en-us/azure/app-service/app-service-managed-certificate-changes-july-2025) | security | 0.70 | Details ASMC requirements, exceptions, and validation steps tied to DigiCert changes; this is product-specific certificate/security configuration guidance. |
-| [App Service plans overview](https://learn.microsoft.com/en-us/azure/app-service/overview-hosting-plans) | decision-making | 0.70 | Explains how plans work, billing, and scaling; used to choose SKUs and capacity, which is App Service–specific decision guidance. |
+| [App Service plans overview](https://learn.microsoft.com/en-us/azure/app-service/overview-hosting-plans) | decision-making | 0.70 | App Service plan overview pages typically include detailed, SKU-specific comparisons (Free/Shared/Basic/Standard/Premium/Isolated/Managed Instance), with quantified differences in features, scaling behavior, and billing. These comparisons and guidance help decide which plan to use and how to scale, fitting the decision-making sub-skill. While the summary is high-level, this specific doc on hosting plans is known to contain plan comparison tables and concrete criteria for selection rather than just conceptual description. |
 | [Aspire](https://learn.microsoft.com/en-us/azure/app-service/configure-language-dotnet-aspire) | configuration | 0.70 | Describes configuring Aspire apps including App Service plan settings, Application Insights, dashboards, and health probes—product-specific configuration details. |
 | [Back up and restore app](https://learn.microsoft.com/en-us/azure/app-service/manage-backup) | configuration | 0.70 | Shows how to configure on-demand and scheduled backups, including linked database considerations and deprecation; product-specific backup configuration. |
-| [Built-in MCP (Preview)](https://learn.microsoft.com/en-us/azure/app-service/configure-mcp-built-in) | configuration | 0.70 | Page describes how to turn an App Service-hosted REST API into an MCP server, which typically involves product-specific configuration options (MCP endpoint path, OpenAPI spec location, possibly flags/parameters). This is detailed, product-specific configuration knowledge that isn't broadly known from training, but it's not primarily about limits, security, or deployment. |
+| [Built-in MCP (Preview)](https://learn.microsoft.com/en-us/azure/app-service/configure-mcp-built-in) | configuration | 0.70 | Describes how to turn an App Service-hosted REST API into an MCP server using OpenAPI specs and a specific MCP endpoint path. This is product-specific configuration for a preview feature, likely including concrete parameter names and endpoint settings beyond generic knowledge. |
 | [Built-in authentication overview](https://learn.microsoft.com/en-us/azure/app-service/overview-authentication-authorization) | security | 0.70 | This article describes App Service/Functions built-in auth (Easy Auth) with product-specific security configuration: identity providers, callback URLs, and likely concrete settings and role/permission implications. It focuses on how to configure secure authentication/authorization for these services, matching the security sub-skill. |
 | [Buy and configure App Service domain](https://learn.microsoft.com/en-us/azure/app-service/manage-custom-dns-buy-domain) | configuration | 0.70 | The page describes detailed, product-specific steps and settings for purchasing and configuring App Service domains, including DNS and certificate behavior changes tied to a specific date. These are concrete configuration behaviors and platform-specific nuances that go beyond generic domain setup knowledge, fitting the configuration sub-skill best. |
 | [Buy and manage App Service certificates](https://learn.microsoft.com/en-us/azure/app-service/configure-ssl-app-service-certificate) | configuration | 0.70 | Certificate management for Azure App Service typically includes product-specific steps, options, and constraints (such as how to purchase, bind, renew, synchronize, and delete App Service certificates) that go beyond generic SSL knowledge. These are configuration-focused details unique to App Service rather than conceptual guidance, so it best fits the configuration sub-skill. |
@@ -194,6 +196,7 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Contain
 | [Configure](https://learn.microsoft.com/en-us/azure/app-service/configure-language-nodejs) | configuration | 0.70 | Describes how App Service runs Node.js, npm install behavior, and deployment engine details; likely includes specific setting names and behaviors that are product-specific configuration knowledge. |
 | [Configure](https://learn.microsoft.com/en-us/azure/app-service/configure-language-php) | configuration | 0.70 | Covers common PHP app configuration tasks on App Service; likely includes specific setting names and behaviors that are product-specific configuration knowledge. |
 | [Configure PremiumV3 tier](https://learn.microsoft.com/en-us/azure/app-service/app-service-configure-premium-v3-tier) | decision-making | 0.70 | Covers when and how to use Premium v3, including performance and memory-to-core trade-offs; SKU selection guidance. |
+| [Configure a Managed Instance](https://learn.microsoft.com/en-us/azure/app-service/configure-managed-instance) | configuration | 0.70 | The page describes detailed configuration of Managed Instance on Azure App Service, including general settings, storage mounts, registry keys, and Bastion access. These are product-specific configuration options and patterns that go beyond generic knowledge, matching the configuration sub-skill. While the summary doesn’t show tables, the topic implies concrete parameters and settings unique to this feature. |
 | [Configure an App Service Environment for zone redundancy](https://learn.microsoft.com/en-us/azure/app-service/environment/configure-zone-redundancy-environment) | configuration | 0.70 | Explains how to configure zone redundancy for ASE and Isolated v2 plans; includes specific settings and plan applicability. |
 | [Configure error pages](https://learn.microsoft.com/en-us/azure/app-service/configure-error-pages) | configuration | 0.70 | Shows how to configure specific error pages (403, 502, 503) with App Service–specific settings and behaviors, which are concrete configuration details. |
 | [Configure gateway-required integration](https://learn.microsoft.com/en-us/azure/app-service/configure-gateway-required-vnet-integration) | configuration | 0.70 | Describes legacy gateway-based integration, limitations, and setup; detailed product-specific networking configuration. |
@@ -264,7 +267,6 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Contain
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
 | [Deploy app with Azure Container Registry](https://learn.microsoft.com/en-us/azure/app-service/tutorial-custom-container) | 0.45 | Tutorial for building and running a custom image; primarily a migration walkthrough rather than a detailed configuration or limits reference. |
-| [Migrate to Managed Instance](https://learn.microsoft.com/en-us/azure/app-service/quickstart-managed-instance) | 0.40 | Quickstart for Managed Instance; while it notes preview regions and plan limitations, summary doesn’t show detailed limit tables or configuration references. |
 | [Add MCP server to app](https://learn.microsoft.com/en-us/azure/app-service/tutorial-ai-model-context-protocol-server-java) | 0.35 | MCP server tutorial for Spring Boot; shows how to expose capabilities but not organized as integration reference with parameter tables. |
 | [Add MCP server to app](https://learn.microsoft.com/en-us/azure/app-service/tutorial-ai-model-context-protocol-server-node) | 0.35 | MCP server tutorial for Node.js; shows how to wire MCP but not as a structured integration reference with parameter tables. |
 | [Add MCP server to app](https://learn.microsoft.com/en-us/azure/app-service/tutorial-ai-model-context-protocol-server-python) | 0.35 | MCP server tutorial for Python; shows how to expose FastAPI via MCP but not as a structured integration reference. |
@@ -277,14 +279,14 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Contain
 | [Use Terraform](https://learn.microsoft.com/en-us/azure/app-service/provision-resource-terraform) | 0.35 | Quickstart using Terraform to create an app; mostly generic IaC usage rather than detailed App Service–specific configuration tables or troubleshooting. |
 | [About high density hosting](https://learn.microsoft.com/en-us/azure/app-service/manage-scale-per-app) | 0.30 | The summary focuses on explaining per-app scaling conceptually and how it differs from plan-level scaling. Without explicit mention of numeric limits, configuration parameter tables, or tier-specific constraints, it appears to be primarily conceptual guidance rather than expert-knowledge configuration, limits, or decision matrices. |
 | [Add MCP server to app](https://learn.microsoft.com/en-us/azure/app-service/tutorial-ai-model-context-protocol-server-dotnet) | 0.30 | Tutorial for exposing an app as MCP server; likely code-focused and procedural without configuration tables or limits. |
-| [Agentic web app (.NET)](https://learn.microsoft.com/en-us/azure/app-service/tutorial-ai-agent-web-app-semantic-kernel-foundry-dotnet) | 0.30 | Tutorial on adding agentic capabilities using Microsoft Agent Framework or Foundry Agent Service; focuses on how-to steps rather than detailed configuration options, limits, or troubleshooting mappings. |
+| [Agentic web app (.NET)](https://learn.microsoft.com/en-us/azure/app-service/tutorial-ai-agent-web-app-semantic-kernel-foundry-dotnet) | 0.30 | Tutorial on adding agentic capabilities to a .NET web app using Microsoft Agent Framework or Foundry Agent Service; mainly conceptual and procedural without deep product-specific configuration tables or error/limit details. |
 | [Chatbot with OpenAI](https://learn.microsoft.com/en-us/azure/app-service/tutorial-ai-openai-chatbot-dotnet) | 0.30 | Step-by-step tutorial for building a Blazor app with Azure OpenAI and App Service; primarily procedural, without configuration tables, limits, error-code troubleshooting, or decision matrices. |
 | [Chatbot with OpenAI](https://learn.microsoft.com/en-us/azure/app-service/tutorial-ai-openai-chatbot-java) | 0.30 | Spring Boot + Azure OpenAI tutorial; integration steps but no SDK parameter tables, limits, or troubleshooting mappings. |
 | [Chatbot with local SLM](https://learn.microsoft.com/en-us/azure/app-service/tutorial-ai-slm-dotnet) | 0.30 | Tutorial for ASP.NET Core chatbot with SLM sidecar; scenario-specific steps rather than general configuration or limits reference. |
 | [Chatbot with local SLM](https://learn.microsoft.com/en-us/azure/app-service/tutorial-ai-slm-expressjs) | 0.30 | Express.js chatbot with SLM sidecar; deployment walkthrough without detailed config matrices or limits. |
 | [Chatbot with local SLM](https://learn.microsoft.com/en-us/azure/app-service/tutorial-ai-slm-fastapi) | 0.30 | Tutorial for deploying a FastAPI chatbot with a Phi-4 sidecar extension on Azure App Service; focuses on walkthrough steps rather than detailed configuration tables, limits, or troubleshooting mappings that would qualify as expert knowledge. |
 | [Chatbot with local SLM](https://learn.microsoft.com/en-us/azure/app-service/tutorial-ai-slm-spring-boot) | 0.30 | Spring Boot chatbot with SLM sidecar tutorial; focuses on deployment steps, not detailed config matrices or limits. |
-| [Configure PremiumV4 tier](https://learn.microsoft.com/en-us/azure/app-service/app-service-configure-premium-v4-tier) | 0.30 | From the summary, the page primarily explains how to create or scale an app to the Premium v4 tier and describes performance characteristics in general terms. It doesn't clearly indicate the presence of specific numeric limits, configuration parameter tables, deployment matrices, or detailed decision criteria. Without evidence of exact values, tier-specific limits, or configuration options, it appears to be more of a feature/usage overview than expert-knowledge content. |
+| [Configure PremiumV4 tier](https://learn.microsoft.com/en-us/azure/app-service/app-service-configure-premium-v4-tier) | 0.30 | The summary focuses on what the Premium v4 tier is and how to scale an app to it, but does not indicate presence of detailed configuration tables, limits, or quantified decision matrices. It reads as a feature/tier overview and basic how-to, not expert-only details such as specific quotas, config parameters, or trade-off tables. |
 | [Deploy a REST API (tutorial)](https://learn.microsoft.com/en-us/azure/app-service/app-service-web-tutorial-rest-api) | 0.30 | Tutorial for hosting a REST API with CORS; focuses on basic deployment and CORS setup, not deep configuration references or troubleshooting matrices. |
 | [Deploy a custom container](https://learn.microsoft.com/en-us/azure/app-service/quickstart-custom-container) | 0.30 | Quickstart tutorial for running a custom container on App Service. Primarily step-by-step deployment from Visual Studio and ACR without detailed configuration matrices, limits, or specialized patterns; content is largely generic deployment and container usage that an LLM is likely to already know. |
 | [Deploy a multi-region app (tutorial)](https://learn.microsoft.com/en-us/azure/app-service/tutorial-multi-region-app) | 0.30 | Tutorial-style multi-region deployment walkthrough; likely step-by-step instructions without detailed limits tables, decision matrices, or product-specific configuration parameter catalogs. Primarily architecture concept and how-to, not expert reference content as defined. |
@@ -296,6 +298,7 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Contain
 | [Kudu service](https://learn.microsoft.com/en-us/azure/app-service/resources-kudu) | 0.30 | The page is an overview of the Kudu service and its role in App Service deployments. Based on the summary, it describes what Kudu is and its high-level features, without indicating detailed limits, configuration parameter tables, error-code-based troubleshooting, or deployment matrices. It reads as conceptual/architectural overview rather than containing product-specific numeric limits, configuration options, or error-resolution mappings that would qualify as expert knowledge under the defined sub-skill types. |
 | [Manage App Service plan](https://learn.microsoft.com/en-us/azure/app-service/app-service-plan-manage) | 0.30 | High-level management article (create, move, scale, delete App Service plans) that is likely procedural without detailed configuration tables, limits, or product-specific parameters. |
 | [Migrate WordPress to App Service](https://learn.microsoft.com/en-us/azure/app-service/migrate-wordpress) | 0.30 | WordPress migration guide; procedural migration steps without decision matrices, limits, or detailed configuration tables indicated. |
+| [Migrate to Managed Instance](https://learn.microsoft.com/en-us/azure/app-service/quickstart-managed-instance) | 0.30 | Quickstart for Managed Instance deployment with some plan/region notes, but primarily procedural; lacks detailed tier comparison tables, numeric limits, or configuration parameter tables required for expert-knowledge classification. |
 | [Model Context Protocol servers](https://learn.microsoft.com/en-us/azure/app-service/scenario-ai-model-context-protocol-server) | 0.30 | Describes using App Service as an MCP server at a conceptual level; lacks detailed configuration tables, limits, or troubleshooting mappings. |
 | [Monitor agents with OpenTelemetry](https://learn.microsoft.com/en-us/azure/app-service/tutorial-ai-agent-monitoring-dotnet) | 0.30 | Tutorial-style content for instrumenting a sample multi-agent app with OpenTelemetry and Application Insights. Based on the summary, it focuses on step-by-step instrumentation and monitoring rather than configuration tables, limits, or product-specific error mappings; it doesn't clearly expose expert-only configuration or troubleshooting data as defined by the sub-skill types. |
 | [Networking architecture](https://learn.microsoft.com/en-us/azure/app-service/environment/networking) | 0.30 | Provides a conceptual description of App Service Environment networking and its relationship to a virtual network and subnet, but the summary does not show specific configuration parameters, limits, or security role details. |
@@ -311,12 +314,12 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Contain
 | [using FastAPI](https://learn.microsoft.com/en-us/azure/app-service/tutorial-python-postgresql-app-fastapi) | 0.25 | FastAPI + PostgreSQL tutorial; app deployment steps, not a configuration or limits reference. |
 | [using Flask](https://learn.microsoft.com/en-us/azure/app-service/tutorial-python-postgresql-app-flask) | 0.25 | Flask + PostgreSQL tutorial; deployment walkthrough without structured config tables, limits, or troubleshooting mappings. |
 | [with MongoDB](https://learn.microsoft.com/en-us/azure/app-service/tutorial-nodejs-mongodb-app) | 0.25 | Node.js + MongoDB tutorial; focuses on building and deploying an app, not on structured config, limits, or troubleshooting. |
-| [ASP.NET Core with SQL DB](https://learn.microsoft.com/en-us/azure/app-service/tutorial-dotnetcore-sqldb-app) | 0.20 | Tutorial-style deployment walkthrough for an ASP.NET Core app with Azure SQL; does not emphasize configuration tables, limits, error-code-based troubleshooting, or other expert-only details beyond standard deployment steps. |
+| [ASP.NET Core with SQL DB](https://learn.microsoft.com/en-us/azure/app-service/tutorial-dotnetcore-sqldb-app) | 0.20 | Step-by-step tutorial for deploying an ASP.NET Core app with Azure SQL Database; focuses on basic deployment and connection flow without detailed limits, configuration matrices, or troubleshooting mappings. |
 | [ASP.NET with SQL DB](https://learn.microsoft.com/en-us/azure/app-service/app-service-web-tutorial-dotnet-sqldatabase) | 0.20 | Tutorial for ASP.NET app with SQL Database; focuses on deployment steps rather than reusable configuration or limits. |
 | [About App Service Environments](https://learn.microsoft.com/en-us/azure/app-service/environment/overview) | 0.20 | High-level overview of App Service Environment; summary indicates conceptual description and comparison reference but no explicit limits, configuration tables, error codes, or decision matrices. |
-| [Agentic web app](https://learn.microsoft.com/en-us/azure/app-service/tutorial-ai-agent-web-app-langgraph-foundry-node) | 0.20 | Node.js Express tutorial for adding agentic capabilities via LangGraph or Foundry Agent Service. The description suggests a how-to walkthrough rather than reference-style expert knowledge such as limits, configuration matrices, or troubleshooting error catalogs. |
-| [Agentic web app](https://learn.microsoft.com/en-us/azure/app-service/tutorial-ai-agent-web-app-langgraph-foundry-python) | 0.20 | Python FastAPI tutorial for integrating LangGraph or Foundry Agent Service into an existing CRUD app. Based on the summary, it focuses on example implementation steps, not on detailed configuration parameters, quotas, security roles, or decision matrices that would qualify as expert knowledge. |
-| [Agentic web app](https://learn.microsoft.com/en-us/azure/app-service/tutorial-ai-agent-web-app-semantic-kernel-java) | 0.20 | Tutorial-style content for adding agentic capabilities to a Java Spring Boot app using Semantic Kernel and Foundry Agent Service. From the summary, it appears to be a step-by-step integration/deployment tutorial without detailed configuration tables, limits, error-code mappings, or product-specific best-practice guidance with quantified values. |
+| [Agentic web app](https://learn.microsoft.com/en-us/azure/app-service/tutorial-ai-agent-web-app-langgraph-foundry-node) | 0.20 | Tutorial for adding agentic capabilities with LangGraph or Foundry Agent Service to a Node.js Express app on Azure App Service. The description focuses on approach and workflow, not on specific quotas, configuration matrices, or error-code-based troubleshooting. Likely general tutorial content rather than expert configuration or limits. |
+| [Agentic web app](https://learn.microsoft.com/en-us/azure/app-service/tutorial-ai-agent-web-app-langgraph-foundry-python) | 0.20 | Tutorial for adding agentic capabilities with LangGraph or Foundry Agent Service to a Python FastAPI app on Azure App Service. The summary indicates a how-to guide, not detailed product-specific limits, configuration parameter tables, or diagnostic error mappings. Does not meet the criteria for expert knowledge classification. |
+| [Agentic web app](https://learn.microsoft.com/en-us/azure/app-service/tutorial-ai-agent-web-app-semantic-kernel-java) | 0.20 | Tutorial showing how to add agentic capabilities with Semantic Kernel or Foundry Agent Service to a Spring Boot WebFlux app on Azure App Service. The summary suggests high-level integration and deployment steps, not detailed configuration tables, limits, or troubleshooting mappings. No clear expert-only reference data indicated. |
 | [Agentic web applications](https://learn.microsoft.com/en-us/azure/app-service/scenario-ai-agentic-web-apps) | 0.20 | Scenario/overview content about adding agentic capabilities to web apps; no concrete limits, configs, error codes, or product-specific decision matrices. |
 | [Aspire Quickstart](https://learn.microsoft.com/en-us/azure/app-service/quickstart-dotnet-aspire) | 0.20 | Quickstart for Aspire app deployment; primarily step-by-step tutorial, not a configuration reference or limits guide. |
 | [Azure Policy built-ins reference](https://learn.microsoft.com/en-us/azure/app-service/policy-reference) | 0.20 | Primarily an index of built-in policy definitions with links out; the expert details live in the linked definitions, not on this page itself. |
@@ -330,13 +333,13 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Contain
 | [JBoss with MySQL](https://learn.microsoft.com/en-us/azure/app-service/tutorial-java-jboss-mysql-app) | 0.20 | Tutorial for building and deploying a JBoss app with Azure Database for MySQL. It appears to be a guided example rather than a reference for limits, configuration options, security roles, or detailed troubleshooting, so it does not meet the expert-knowledge criteria. |
 | [Java Tomcat to Postgres](https://learn.microsoft.com/en-us/azure/app-service/tutorial-java-tomcat-connect-managed-identity-postgresql-database) | 0.20 | Tutorial-style walkthrough for using managed identity from a Java Tomcat app to access Azure Database for PostgreSQL. It focuses on step-by-step setup and conceptual security benefits, without detailed configuration parameter tables, specific RBAC role lists, error-code-based troubleshooting, or numeric limits/quotas. Content is primarily instructional, not a reference of expert-only details. |
 | [Local small language models](https://learn.microsoft.com/en-us/azure/app-service/scenario-ai-local-small-language-model) | 0.20 | Describes using local SLMs and mentions pricing tiers conceptually; no explicit numeric limits or configuration parameter tables in the summary. |
-| [Managed Instance overview](https://learn.microsoft.com/en-us/azure/app-service/overview-managed-instance) | 0.20 | Page is an overview of Managed Instance on Azure App Service (preview) describing what it is and target scenarios; no clear indication of detailed limits, configuration parameter tables, error codes, or other expert-only specifics based on the provided summary. |
+| [Managed Instance overview](https://learn.microsoft.com/en-us/azure/app-service/overview-managed-instance) | 0.20 | Overview of Managed Instance on App Service describing purpose and scenarios; does not include numeric limits, configuration parameters, or troubleshooting details. |
 | [Monitor App Service](https://learn.microsoft.com/en-us/azure/app-service/monitor-app-service) | 0.20 | High-level overview of monitoring options for Azure App Service and Azure Monitor without detailed limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. Content is primarily conceptual guidance on what monitoring features exist rather than product-specific expert details. |
 | [Overview](https://learn.microsoft.com/en-us/azure/app-service/overview-ai-integration) | 0.20 | High-level overview of AI integration options with Azure App Service; no detailed limits, configuration tables, error codes, or product-specific decision matrices. |
 | [Overview](https://learn.microsoft.com/en-us/azure/app-service/overview-sidecar) | 0.20 | Page is an overview of sidecars in App Service (what they are, benefits, how they work) without clear evidence of numeric limits, configuration tables, or product-specific error/decision matrices. It appears conceptual rather than containing expert-only details. |
 | [Overview](https://learn.microsoft.com/en-us/azure/app-service/overview-webjobs) | 0.20 | Overview of WebJobs capabilities and concepts without detailed configuration, limits, or troubleshooting content. |
 | [Overview](https://learn.microsoft.com/en-us/azure/app-service/overview-wordpress) | 0.20 | WordPress overview; marketing/overview style content without detailed limits, config tables, or troubleshooting. |
-| [Quarkus with PostgreSQL](https://learn.microsoft.com/en-us/azure/app-service/tutorial-java-quarkus-postgresql-app) | 0.20 | Step-by-step tutorial deploying Quarkus + PostgreSQL; no config tables, limits, or product-specific error mappings. |
+| [Quarkus with PostgreSQL](https://learn.microsoft.com/en-us/azure/app-service/tutorial-java-quarkus-postgresql-app) | 0.20 | Tutorial for deploying a Java Quarkus app with PostgreSQL on Azure App Service. Based on the summary, it appears to be a step-by-step deployment and integration guide without detailed limits, configuration matrices, or product-specific error/diagnostic content. Likely generic tutorial content rather than expert-only reference information. |
 | [Quickstart](https://learn.microsoft.com/en-us/azure/app-service/quickstart-dotnetcore) | 0.20 | Quickstart deployment tutorial; focuses on basic deployment steps without detailed product-specific configuration matrices or limits. |
 | [Quickstart](https://learn.microsoft.com/en-us/azure/app-service/quickstart-java) | 0.20 | Java quickstart using Maven plugin; basic deployment tutorial without detailed configuration matrices. |
 | [Quickstart](https://learn.microsoft.com/en-us/azure/app-service/quickstart-nodejs) | 0.20 | Node.js quickstart; basic deployment steps, no expert-level limits, config matrices, or troubleshooting. |
@@ -352,7 +355,7 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Contain
 | [to Microsoft Graph as User](https://learn.microsoft.com/en-us/azure/app-service/tutorial-connect-app-access-microsoft-graph-as-user-javascript) | 0.20 | Tutorial for accessing Microsoft Graph as the signed-in user from an App Service app; focuses on delegated permissions and sign-in flow, not on detailed configuration tables, limits, or troubleshooting mappings. |
 | [to Microsoft Graph with managed identity](https://learn.microsoft.com/en-us/azure/app-service/tutorial-connect-app-access-microsoft-graph-as-app-javascript) | 0.20 | Tutorial showing how to use managed identities from a JavaScript web app to call Microsoft Graph as the app; appears to be procedural with no RBAC role tables, config parameter matrices, or error-code-based troubleshooting. |
 | [to other Azure services with managed identity](https://learn.microsoft.com/en-us/azure/app-service/tutorial-connect-app-access-storage-javascript) | 0.20 | Tutorial for a JavaScript web app accessing Azure Storage via managed identities; primarily a how-to guide without explicit limits, RBAC role matrices, or detailed configuration/diagnostic tables. |
-| [About App Service](https://learn.microsoft.com/en-us/azure/app-service/overview) | 0.10 | High-level product overview of Azure App Service without detailed limits, configuration tables, or error mappings. |
+| [About App Service](https://learn.microsoft.com/en-us/azure/app-service/overview) | 0.10 | High-level overview of Azure App Service capabilities and supported stacks; no detailed limits, configuration tables, error codes, or product-specific decision matrices. |
 | [Get started](https://learn.microsoft.com/en-us/azure/app-service/getting-started) | 0.10 | Introductory getting-started page for Azure App Service; high-level overview and basic choices without detailed limits, configuration tables, error codes, or decision matrices with quantified trade-offs. |
 | [OpenAPI tools for Foundry agents](https://learn.microsoft.com/en-us/azure/app-service/scenario-ai-openapi-tool) | 0.10 | Scenario overview for using App Service as an OpenAPI tool; lacks detailed config tables or SDK parameter references. |
 | [Recommended services (preview)](https://learn.microsoft.com/en-us/azure/app-service/recommended-services) | 0.10 | Describes the Recommended Services feature and its purpose at a conceptual level; no concrete decision matrices, thresholds, or quantified trade-offs are evident in the summary. |
