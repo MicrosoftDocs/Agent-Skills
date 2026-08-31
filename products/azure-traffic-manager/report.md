@@ -46,8 +46,8 @@ confusable_not_for: Not for Azure Front Door (use azure-front-door), Azure Load 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 9
-- **Unchanged**: 37
+- **Updated Pages**: 0
+- **Unchanged**: 46
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-traffic-manager/azure-traffic-manager.csv`
 
@@ -65,27 +65,6 @@ confusable_not_for: Not for Azure Front Door (use azure-front-door), Azure Load 
 | *(Unclassified)* | 18 | 39.1% |
 
 ## Changes
-
-### Updated Pages
-
-- [Use Azure PowerShell to manage Traffic Manager](https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-powershell-arm)
-  - Updated: 2024-08-08T08:00:00.000Z → 2026-08-11T08:00:00.000Z
-- [Configure subnet override - Azure CLI](https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-subnet-override-cli)
-  - Updated: 2024-08-04T11:36:00.000Z → 2026-08-12T05:20:00.000Z
-- [Create a Traffic Manager profile - PowerShell](https://learn.microsoft.com/en-us/azure/traffic-manager/quickstart-create-traffic-manager-profile-powershell)
-  - Updated: 2023-03-31T00:00:00.000Z → 2026-08-10T08:00:00.000Z
-- [Create a Traffic Manager profile - Azure CLI](https://learn.microsoft.com/en-us/azure/traffic-manager/quickstart-create-traffic-manager-profile-cli)
-  - Updated: 2023-03-31T00:00:00.000Z → 2026-08-10T08:00:00.000Z
-- [Secure Traffic Manager deployment](https://learn.microsoft.com/en-us/azure/traffic-manager/secure-traffic-manager)
-  - Updated: 2026-06-05T11:44:00.000Z → 2026-08-13T22:14:00.000Z
-- [IPv6 and DNS record types](https://learn.microsoft.com/en-us/azure/traffic-manager/dns-record-types)
-  - Updated: 2025-07-08T22:15:00.000Z → 2026-08-12T05:20:00.000Z
-- [ARM template](https://learn.microsoft.com/en-us/azure/traffic-manager/configure-multivalue-routing-method-template)
-  - Updated: 2024-08-08T08:00:00.000Z → 2026-08-12T05:20:00.000Z
-- [Configure subnet routing in Traffic Manager](https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-configure-subnet-routing-method)
-  - Updated: 2024-08-08T08:00:00.000Z → 2026-08-10T08:00:00.000Z
-- [Using Visual Studio SDK](https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-create-rum-visual-studio)
-  - Updated: 2023-07-13T21:59:00.000Z → 2026-08-12T05:20:00.000Z
 
 ## Classified Pages
 

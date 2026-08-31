@@ -28,9 +28,9 @@ confusable_not_for: Not for Azure Service Connector (use azure-service-connector
 - **Unclassified**: 6
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 6
+- **Unchanged**: 7
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-connector-namespace/azure-connector-namespace.csv`
 
@@ -42,10 +42,6 @@ confusable_not_for: Not for Azure Service Connector (use azure-service-connector
 | *(Unclassified)* | 6 | 85.7% |
 
 ## Changes
-
-### New Pages
-
-- [Create MCP connectors for agents and Azure integrations](https://learn.microsoft.com/en-us/azure/connector-namespace/create-mcp-server-connectors)
 
 ## Classified Pages
 

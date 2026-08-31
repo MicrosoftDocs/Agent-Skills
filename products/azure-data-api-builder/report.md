@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-19'
+generated_at: '2026-08-31'
 category_descriptions:
   configuration: 'Configuring Data API builder: CLI setup, JSON schema, entities,
     data sources, security, caching, telemetry, logging, health checks, OpenAPI, and
@@ -21,20 +21,21 @@ category_descriptions:
   deployment: How to build and run Data API builder from source or Docker, and deploy
     it to Azure (App Service, Cosmos DB, air‑gapped/local SQL) with configuration
     and environment-specific guidance.
-  decision-making: Comparisons of Data API builder features across supported databases
-    and guidance on selecting secure Microsoft SQL authentication/authorization patterns.
+  decision-making: Comparing Data API builder capabilities across databases/API types
+    and choosing secure Microsoft SQL authentication/authorization patterns for your
+    setup.
 skill_description: Expert knowledge for Azure Data Api Builder development including
   troubleshooting, best practices, decision making, limits & quotas, security, configuration,
-  integrations & coding patterns, and deployment. Use when exposing databases via
-  DAB REST/GraphQL, configuring auth/RLS, tuning limits, or deploying to Azure/Docker,
+  integrations & coding patterns, and deployment. Use when exposing DB objects via
+  REST/GraphQL, tuning paging/timeouts, securing auth/RLS, or deploying DAB to Azure,
   and other Azure Data Api Builder related development tasks. Not for Azure API Management
-  (use azure-api-management), Azure Functions (use azure-functions), Azure App Service
-  (use azure-app-service), Azure Logic Apps (use azure-logic-apps).
-use_when: Use when exposing databases via DAB REST/GraphQL, configuring auth/RLS,
-  tuning limits, or deploying to Azure/Docker, and other Azure Data Api Builder related
-  development tasks.
+  (use azure-api-management), Azure App Service (use azure-app-service), Azure Functions
+  (use azure-functions), Azure Logic Apps (use azure-logic-apps).
+use_when: Use when exposing DB objects via REST/GraphQL, tuning paging/timeouts, securing
+  auth/RLS, or deploying DAB to Azure, and other Azure Data Api Builder related development
+  tasks.
 confusable_not_for: Not for Azure API Management (use azure-api-management), Azure
-  Functions (use azure-functions), Azure App Service (use azure-app-service), Azure
+  App Service (use azure-app-service), Azure Functions (use azure-functions), Azure
   Logic Apps (use azure-logic-apps).
 ---
 # Azure Data Api Builder Crawl Report
@@ -49,8 +50,8 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 135
+- **Updated Pages**: 1
+- **Unchanged**: 134
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-api-builder/azure-data-api-builder.csv`
 
@@ -69,6 +70,11 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 | *(Unclassified)* | 43 | 31.9% |
 
 ## Changes
+
+### Updated Pages
+
+- [Feature Availability](https://learn.microsoft.com/en-us/azure/data-api-builder/feature-availability)
+  - Updated: 2026-04-02T23:04:00.000Z → 2026-08-17T08:00:00.000Z
 
 ## Classified Pages
 
@@ -94,7 +100,6 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 | [Troubleshooting](https://learn.microsoft.com/en-us/azure/data-api-builder/troubleshooting/rest) | troubleshooting | 0.86 | Explicitly a troubleshooting page for REST endpoint availability, HTTP methods, OData filters, and CORS. This implies mappings from specific symptoms and errors to causes and resolutions. |
 | [Property: Data Source](https://learn.microsoft.com/en-us/azure/data-api-builder/configuration/data-source) | configuration | 0.85 | Configuration schema reference for the data-source section with detailed property descriptions and options; matches configuration skill type with parameter-level expert knowledge. |
 | [Pass-through (OBO)](https://learn.microsoft.com/en-us/azure/data-api-builder/concept/security/authenticate-on-behalf-of) | security | 0.84 | Explains DAB 2.0 OBO flow with specific configuration for exchanging tokens and connecting to SQL as the user, including product-specific flags/sections and behavior differences vs standard auth. |
-| [Feature Availability](https://learn.microsoft.com/en-us/azure/data-api-builder/feature-availability) | decision-making | 0.82 | Provides cross-database feature comparison tables indicating which features are supported where, guiding decisions on database/platform choice and capabilities. |
 | [dab configure](https://learn.microsoft.com/en-us/azure/data-api-builder/command-line/dab-configure) | configuration | 0.82 | A CLI reference for `dab configure` that adjusts non-entity runtime and data source properties in the DAB config. It likely includes specific option names, flags, and behaviors (all-or-nothing update semantics, TTL, JWT, MCP, DCR/DCE-related settings), which are detailed configuration parameters unique to Data API builder. |
 | [Auto configuration](https://learn.microsoft.com/en-us/azure/data-api-builder/concept/config/auto-config) | configuration | 0.80 | Explains how autoentities patterns are evaluated at startup and how they interact with entities; product-specific configuration semantics. |
 | [Azure Key Vault references](https://learn.microsoft.com/en-us/azure/data-api-builder/concept/config/akv-function) | configuration | 0.80 | Describes @akv() function usage for Key Vault integration in configuration; includes specific parameter patterns and behavior unique to DAB. |
@@ -104,6 +109,7 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 | [dab auto-config](https://learn.microsoft.com/en-us/azure/data-api-builder/command-line/dab-auto-config) | configuration | 0.80 | CLI reference for creating/updating autoentities definitions; includes pattern configuration parameters and behavior. |
 | [dab update](https://learn.microsoft.com/en-us/azure/data-api-builder/command-line/dab-update) | configuration | 0.80 | Documents `dab update` for modifying existing entity definitions, including fields like permissions, exposure, policies, caching, relationships, and field metadata flags (`--fields.name`, `--fields.alias`, etc.). These are concrete, product-specific configuration options and flags that constitute expert configuration knowledge. |
 | [Custom Tools](https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/how-to-configure-custom-tools) | configuration | 0.78 | Shows how to set custom-tool: true and related configuration so stored procedures appear as named MCP tools, including product-specific config fields and behavior. |
+| [Feature Availability](https://learn.microsoft.com/en-us/azure/data-api-builder/feature-availability) | decision-making | 0.78 | The page provides detailed feature support tables across databases and API platforms, enabling users to decide which combinations to use. It goes beyond a simple overview by listing which capabilities are available or unavailable per backend and API type, which is product-specific guidance useful for technology and platform selection. |
 | [Keyword $first](https://learn.microsoft.com/en-us/azure/data-api-builder/keywords/first-rest) | limits-quotas | 0.78 | Explains $first semantics including using -1 to request the configured maximum and pagination validation. This implies concrete numeric behavior and constraints around page size that function as limits/quotas for responses. |
 | [Keyword filter](https://learn.microsoft.com/en-us/azure/data-api-builder/keywords/filter-graphql) | integrations | 0.78 | Details DAB’s GraphQL filter argument syntax, supported operator types, SQL translation, ISO 8601 date requirements, and null handling via isNull. These are concrete, product-specific query patterns and constraints. |
 | [Keyword first](https://learn.microsoft.com/en-us/azure/data-api-builder/keywords/first-graphql) | limits-quotas | 0.78 | Describes how the first argument caps records per response, including using -1 to request the configured maximum and validation rules. This is explicit page-size limiting behavior akin to quotas. |

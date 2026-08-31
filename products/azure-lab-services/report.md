@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-08-31'
 category_descriptions:
   security: RBAC roles, lab creator/owner assignment, Azure Policy for compliance
     and VM size limits, firewall and public IP setup, and educator/student VM password
@@ -44,17 +44,17 @@ confusable_not_for: Not for Azure DevTest Labs (use azure-devtest-labs), Azure V
 
 ## Summary
 
-- **Total Pages**: 104
-- **Fetched**: 104
+- **Total Pages**: 103
+- **Fetched**: 103
 - **Fetch Failed**: 0
-- **Classified**: 79
-- **Unclassified**: 25
+- **Classified**: 77
+- **Unclassified**: 26
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 104
-- **Deleted Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 102
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-lab-services/azure-lab-services.csv`
 
 ## Classification Statistics
@@ -62,17 +62,26 @@ confusable_not_for: Not for Azure DevTest Labs (use azure-devtest-labs), Azure V
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 3 | 2.9% |
-| best-practices | 5 | 4.8% |
-| configuration | 27 | 26.0% |
-| decision-making | 8 | 7.7% |
-| deployment | 7 | 6.7% |
-| integrations | 10 | 9.6% |
-| limits-quotas | 4 | 3.8% |
-| security | 11 | 10.6% |
-| troubleshooting | 4 | 3.8% |
-| *(Unclassified)* | 25 | 24.0% |
+| best-practices | 5 | 4.9% |
+| configuration | 27 | 26.2% |
+| decision-making | 6 | 5.8% |
+| deployment | 7 | 6.8% |
+| integrations | 10 | 9.7% |
+| limits-quotas | 4 | 3.9% |
+| security | 11 | 10.7% |
+| troubleshooting | 4 | 3.9% |
+| *(Unclassified)* | 26 | 25.2% |
 
 ## Changes
+
+### Updated Pages
+
+- [Azure Lab Services retirement guide](https://learn.microsoft.com/en-us/azure/lab-services/retirement-guide)
+  - Updated: 2025-11-20T23:11:00.000Z → 2026-08-18T22:40:00.000Z
+
+### Deleted Pages
+
+- ~~Transition to Azure DevTest Labs~~ (https://learn.microsoft.com/en-us/azure/lab-services/transition-devtest-labs-guidance)
 
 ## Classified Pages
 
@@ -87,7 +96,6 @@ confusable_not_for: Not for Azure DevTest Labs (use azure-devtest-labs), Azure V
 | [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/lab-services/policy-reference) | configuration | 0.80 | Lists built-in Azure Policy definitions for Lab Services; includes policy names, parameters, and effects, which are detailed configuration references unique to this service. |
 | [Prepare a Windows template VM](https://learn.microsoft.com/en-us/azure/lab-services/how-to-prepare-windows-template) | best-practices | 0.80 | Explicitly a best-practices article with product-specific guidance on Windows Update, OneDrive, Microsoft 365, etc., tailored to Lab Services templates. |
 | [Redeploy or reimage a lab VM](https://learn.microsoft.com/en-us/azure/lab-services/how-to-reset-and-redeploy-vm) | troubleshooting | 0.80 | Explicit troubleshooting article for connection problems; describes symptom-driven actions (redeploy, reimage) and likely maps causes to solutions specific to Lab Services. |
-| [Transition to Azure DevTest Labs](https://learn.microsoft.com/en-us/azure/lab-services/transition-devtest-labs-guidance) | decision-making | 0.80 | Explicit guidance on when and when not to transition to DevTest Labs, with outlined steps; fits technology selection and migration decision-making criteria. |
 | [Azure role-based access control](https://learn.microsoft.com/en-us/azure/lab-services/concept-lab-services-role-based-access-control) | security | 0.78 | Azure RBAC integration article; expected to list specific built-in roles, scopes, and permissions for Lab Services, which are product-specific security details. |
 | [Connect a lab plan to a virtual network](https://learn.microsoft.com/en-us/azure/lab-services/how-to-connect-vnet-injection) | configuration | 0.78 | Advanced networking article; includes VNET injection requirements, subnet settings, and constraints specific to Lab Services. |
 | [Add a lab creator](https://learn.microsoft.com/en-us/azure/lab-services/add-lab-creator) | security | 0.76 | Describes adding users to Lab Creator role; includes specific RBAC role names and scope behavior, which are product-specific security details. |
@@ -97,7 +105,6 @@ confusable_not_for: Not for Azure DevTest Labs (use azure-devtest-labs), Azure V
 | [Add and manage lab users](https://learn.microsoft.com/en-us/azure/lab-services/how-to-manage-lab-users) | configuration | 0.70 | Covers specifying number of users and hours they can use VMs; likely includes product-specific settings and constraints for user quotas. |
 | [Attach or detach a shared image gallery](https://learn.microsoft.com/en-us/azure/lab-services/how-to-attach-detach-shared-image-gallery-1) | configuration | 0.70 | Explains attaching/detaching a shared image gallery; likely includes specific resource relationships, parameters, and constraints unique to Lab Services image configuration. |
 | [Az.LabServices PowerShell module for lab accounts](https://learn.microsoft.com/en-us/azure/lab-services/reference-powershell-module) | integrations | 0.70 | Reference for installing and launching the Az.LabServices module; likely lists cmdlets, parameters, and usage patterns specific to this product’s PowerShell integration. |
-| [Azure Lab Services retirement guide](https://learn.microsoft.com/en-us/azure/lab-services/retirement-guide) | decision-making | 0.70 | Retirement guide with specific retirement date and concrete guidance on transitioning to alternative Microsoft/partner services; contains product-specific migration considerations rather than generic concepts. |
 | [Azure Policies for Lab Services](https://learn.microsoft.com/en-us/azure/lab-services/azure-polices-for-lab-services) | security | 0.70 | Describes built-in Azure Policies for Lab Services; likely lists specific policy definitions and parameters, which are product-specific security/compliance configurations. |
 | [Configure Canvas to use the service](https://learn.microsoft.com/en-us/azure/lab-services/how-to-configure-canvas-for-lab-plans) | integrations | 0.70 | How-to for configuring Canvas to work with Lab Services; likely includes product-specific app registration, callback URLs, and configuration parameters unique to this integration. |
 | [Configure Teams to use the service](https://learn.microsoft.com/en-us/azure/lab-services/how-to-configure-teams-for-lab-plans) | integrations | 0.70 | Describes adding the Azure Lab Services Teams app and configuring access; likely includes Teams-specific configuration steps and parameters unique to this product integration. |
@@ -183,6 +190,7 @@ confusable_not_for: Not for Azure DevTest Labs (use azure-devtest-labs), Azure V
 | [1. Create and configure a lab](https://learn.microsoft.com/en-us/azure/lab-services/tutorial-setup-lab) | 0.25 | Tutorial for setting up a classroom lab; summary doesn’t indicate numeric limits, role tables, or advanced configuration parameters. |
 | [2. Access a lab from Teams & Canvas](https://learn.microsoft.com/en-us/azure/lab-services/tutorial-access-lab-virtual-machine-teams-canvas) | 0.25 | Tutorial for accessing lab VMs from Teams/Canvas; no indication of deep configuration or limits. |
 | [2. Register & access a lab](https://learn.microsoft.com/en-us/azure/lab-services/tutorial-connect-lab-virtual-machine) | 0.25 | Tutorial on registering and accessing a lab; focused on user flow rather than expert configuration or limits. |
+| [Azure Lab Services retirement guide](https://learn.microsoft.com/en-us/azure/lab-services/retirement-guide) | 0.20 | Retirement schedule and high-level transition guidance without detailed limits, configuration parameters, error codes, or decision matrices; primarily timeline and migration overview content. |
 | [Create and connect to a lab](https://learn.microsoft.com/en-us/azure/lab-services/quick-create-connect-lab) | 0.20 | Quickstart for creating and connecting to a lab; typical tutorial content without explicit expert-only configuration or limits. |
 | [Set up resources to create labs](https://learn.microsoft.com/en-us/azure/lab-services/quick-create-resources) | 0.20 | Quickstart for creating a lab plan; summary suggests step-by-step UI usage without detailed config tables or limits. |
 | [Key concepts for Azure Lab Services](https://learn.microsoft.com/en-us/azure/lab-services/classroom-labs-concepts) | 0.15 | Key concepts article; conceptual definitions and diagrams rather than expert configuration or numeric limits. |

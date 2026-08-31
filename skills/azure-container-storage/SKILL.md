@@ -3,7 +3,7 @@ name: azure-container-storage
 description: Expert knowledge for Azure Container Storage development including troubleshooting, decision making, limits & quotas, security, and configuration. Use when configuring Elastic SAN-backed pools, CMK encryption, LRS/ZRS redundancy, volume resizing, or Prometheus/Grafana monitoring, and other Azure Container Storage related development tasks. Not for Azure Blob Storage (use azure-blob-storage), Azure Files (use azure-files), Azure Elastic SAN (use azure-elastic-san), Azure NetApp Files (use azure-netapp-files).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-28"
+  generated_at: "2026-08-31"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Container Storage Skill

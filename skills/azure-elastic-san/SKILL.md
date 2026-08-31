@@ -1,9 +1,9 @@
 ---
 name: azure-elastic-san
-description: Expert knowledge for Azure Elastic SAN development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when provisioning Elastic SAN volumes, AVS datastores, iSCSI clients, snapshots, or CMK-encrypted deployments, and other Azure Elastic SAN related development tasks. Not for Azure Blob Storage (use azure-blob-storage), Azure NetApp Files (use azure-netapp-files), Azure Managed Lustre (use azure-managed-lustre), Azure Container Storage (use azure-container-storage).
+description: Expert knowledge for Azure Elastic SAN development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when creating Elastic SAN volumes, AVS datastores, iSCSI clients, snapshots, or clustered SQL/FC workloads, and other Azure Elastic SAN related development tasks. Not for Azure Blob Storage (use azure-blob-storage), Azure Files (use azure-files), Azure NetApp Files (use azure-netapp-files), Azure Virtual Machines (use azure-virtual-machines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-02"
+  generated_at: "2026-08-31"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Elastic SAN Skill
@@ -24,12 +24,12 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L41 | Diagnosing and resolving common Azure Elastic SAN issues, including provisioning failures, connectivity/IO errors, performance problems, and typical error codes/logs. |
-| Best Practices | L42-L48 | Performance tuning, benchmarking, and configuration best practices for Azure Elastic SAN (including AVS datastores) plus guidance on using snapshots for backup. |
+| Troubleshooting | L37-L41 | Diagnosing and fixing Elastic SAN issues: connectivity, performance, provisioning/attachment failures, health checks, and step-by-step resolution guidance. |
+| Best Practices | L42-L48 | Tuning Elastic SAN performance and configuration (including AVS datastores) and using, configuring, and managing Elastic SAN snapshot features |
 | Decision Making | L49-L53 | Guidance on sizing and configuring Elastic SAN (performance, capacity, architecture) and deciding how to integrate it with AKS workloads and storage patterns. |
 | Architecture & Design Patterns | L54-L58 | Patterns for running clustered apps (SQL, Failover Cluster, etc.) on Azure Elastic SAN, including shared volume setup, fencing, failover behavior, and high-availability design. |
 | Limits & Quotas | L59-L64 | Details on Elastic SAN capacity limits, max IOPS/throughput, and how VM sizes, volume groups, and workloads affect achievable performance and scaling. |
-| Security | L65-L74 | Encrypting Elastic SAN with customer-managed keys and securing access via encryption options, private endpoints, service endpoints, and network configuration for volumes. |
+| Security | L65-L74 | Configuring encryption (platform and customer-managed keys) and secure access to Elastic SAN using private endpoints, service endpoints, and other network security options. |
 | Configuration | L75-L83 | Deploying, resizing, deleting, and monitoring Azure Elastic SAN instances/volumes, plus configuring iSCSI IQN naming and safe operational best practices. |
 | Integrations & Coding Patterns | L84-L91 | Creating and benchmarking Elastic SAN volumes, plus step-by-step guidance to connect Linux and Windows clients using iSCSI and optimize performance. |
 | Deployment | L92-L95 | Guides for migrating Azure VMware Solution (AVS) datastores to Azure Elastic SAN, including configuring and using multiple private endpoints for secure connectivity. |
@@ -37,14 +37,14 @@ This skill requires **network access** to fetch documentation content:
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
-| Troubleshoot common Azure Elastic SAN issues and errors | https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-troubleshoot |
+| Diagnose and resolve Azure Elastic SAN issues | https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-troubleshoot |
 
 ### Best Practices
 | Topic | URL |
 |-------|-----|
 | Optimize Azure Elastic SAN configuration and performance | https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-best-practices |
 | Optimize Elastic SAN datastore performance on AVS | https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-performance-on-azure-vmware-solutions |
-| Use snapshots to back up Azure Elastic SAN volumes | https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-snapshots |
+| Use and manage Azure Elastic SAN snapshots | https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-snapshots |
 
 ### Decision Making
 | Topic | URL |
@@ -70,7 +70,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure service endpoints for Azure Elastic SAN access | https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-configure-service-endpoints |
 | Manage customer-managed encryption keys in Elastic SAN | https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-encryption-manage-customer-keys |
 | Configure encryption options for Azure Elastic SAN | https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-encryption-overview |
-| Configure secure networking for Azure Elastic SAN volumes | https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-networking |
+| Configure secure networking for Azure Elastic SAN | https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-networking |
 
 ### Configuration
 | Topic | URL |

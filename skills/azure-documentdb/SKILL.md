@@ -1,9 +1,9 @@
 ---
 name: azure-documentdb
-description: Expert knowledge for Azure DocumentDB development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using MongoDB‑compatible APIs, vector/BM25 search, change streams, cross‑region replication, or Data API, and other Azure DocumentDB related development tasks. Not for Azure Cosmos DB (use azure-cosmos-db), Azure Table Storage (use azure-table-storage), Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance).
+description: Expert knowledge for Azure DocumentDB development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using DocumentDB search (BM25/vector), Data API, MongoDB compatibility, change streams, or cross-region replication, and other Azure DocumentDB related development tasks. Not for Azure Cosmos DB (use azure-cosmos-db), Azure Table Storage (use azure-table-storage), Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-09"
+  generated_at: "2026-08-31"
   generator: "docs2skills/1.0.0"
 ---
 # Azure DocumentDB Skill
@@ -29,10 +29,10 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L57-L72 | Guides for choosing between DocumentDB and MongoDB services, planning migrations, configuring cross-region failover, and selecting optimal vector search/index algorithms across languages. |
 | Architecture & Design Patterns | L73-L84 | Patterns for scaling, HA/DR, sharding, multi‑cloud setups, and building Go/TypeScript AI agents (including autonomous travel) on Azure DocumentDB. |
 | Limits & Quotas | L85-L98 | Limits, quotas, and configuration constraints for DocumentDB: compute/storage tiers, free tier caps, SSD performance, indexing/text index limits, document/batch sizes, diagnostics, and feature availability. |
-| Security | L99-L110 | Securing DocumentDB: encryption at rest, firewalls, Entra ID RBAC, customer-managed keys, Private Link, public network controls, native user privileges, and cluster security best practices. |
-| Configuration | L111-L133 | Configuring DocumentDB features: search (BM25, vector, fuzzy, phrase, geo), MongoDB compatibility, change streams, replication/scale, transactions, Data API, alerts, and monitoring. |
-| Integrations & Coding Patterns | L134-L158 | Patterns for integrating Azure DocumentDB with languages, tools, and AI/RAG frameworks, including drivers, vector search, migrations, and app examples like MERN and Databricks. |
-| Deployment | L159-L166 | Guides for deploying and managing DocumentDB clusters: local dev to Azure, backup/restore, version upgrades, and IaC deployment with Bicep and Terraform. |
+| Security | L99-L110 | Securing DocumentDB clusters: encryption at rest and with customer keys, firewall and public access controls, Private Link, Entra ID RBAC, native users/privileges, and security best practices. |
+| Configuration | L111-L131 | Configuring DocumentDB features: search (BM25, vector, fuzzy, phrase, geo), MongoDB compatibility, change streams, replication/scale, transactions, Data API, alerts, and monitoring. |
+| Integrations & Coding Patterns | L132-L157 | Patterns and code to connect apps and AI/RAG tools to Azure DocumentDB, including drivers, HTTPS Data API, migrations (Mongo/Cassandra), vector search, and sample app integrations. |
+| Deployment | L158-L164 | Guides for deploying and managing DocumentDB clusters: local dev to Azure, backup/restore, version upgrades, and IaC deployment with Bicep and Terraform. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -100,9 +100,9 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Understand encryption at rest for Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/database-encryption-at-rest |
-| Configure firewall rules for Azure DocumentDB clusters | https://learn.microsoft.com/en-us/azure/documentdb/how-to-configure-firewall |
+| Configure Azure DocumentDB firewall access rules | https://learn.microsoft.com/en-us/azure/documentdb/how-to-configure-firewall |
 | Configure Entra ID RBAC authentication for Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/how-to-connect-role-based-access-control |
-| Configure customer-managed keys for Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/how-to-data-encryption |
+| Configure customer-managed encryption keys for Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/how-to-data-encryption |
 | Secure Azure DocumentDB with Azure Private Link | https://learn.microsoft.com/en-us/azure/documentdb/how-to-private-link |
 | Manage public network access to Azure DocumentDB clusters | https://learn.microsoft.com/en-us/azure/documentdb/how-to-public-access |
 | Manage secondary native users and privileges in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/secondary-users |
@@ -114,14 +114,12 @@ This skill requires **network access** to fetch documentation content:
 | Configure and use change streams in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/change-streams |
 | Configure MongoDB feature compatibility in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/compatibility-features |
 | Use MongoDB query language features on DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/compatibility-query-language |
-| Configure and call the Azure DocumentDB Data API | https://learn.microsoft.com/en-us/azure/documentdb/data-api |
 | Configure fuzzy full-text search in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/full-text-search-fuzzy |
 | Configure hybrid BM25 and vector search on DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/full-text-search-hybrid |
 | Set up BM25 keyword search indexes on DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/full-text-search-keyword |
 | Configure full-text search in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/full-text-search-overview |
 | Implement phrase and proximity search on DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/full-text-search-phrase-proximity |
 | Configure and run geospatial queries in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/geospatial-support |
-| Configure and manage replication for DocumentDB clusters | https://learn.microsoft.com/en-us/azure/documentdb/how-to-cluster-replica |
 | Configure wildcard indexes for dynamic schemas in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/how-to-create-wildcard-indexes |
 | Create and use replica clusters in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/how-to-cross-region-replica-portal |
 | Configure metric-based alerts for Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/how-to-manage-alerts |
@@ -137,6 +135,7 @@ This skill requires **network access** to fetch documentation content:
 | Use LangChain Azure AI vector store with DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/build-rag-applications |
 | Integrate Haystack RAG pipelines with Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/build-rag-pipelines |
 | Convert Cassandra schemas to Azure DocumentDB with VS Code | https://learn.microsoft.com/en-us/azure/documentdb/cassandra-how-to-schema-conversion-vs-code |
+| Use Azure DocumentDB Data API over HTTPS | https://learn.microsoft.com/en-us/azure/documentdb/data-api |
 | Connect Azure Databricks to Azure DocumentDB with Spark | https://learn.microsoft.com/en-us/azure/documentdb/how-to-connect-from-databricks |
 | Migrate MongoDB to DocumentDB using native tools | https://learn.microsoft.com/en-us/azure/documentdb/how-to-migrate-native-tools |
 | Migrate MongoDB using Azure DocumentDB VS Code extension | https://learn.microsoft.com/en-us/azure/documentdb/how-to-migrate-vs-code-extension |
@@ -160,7 +159,6 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Develop locally with DocumentDB and deploy to Azure | https://learn.microsoft.com/en-us/azure/documentdb/development-loop |
-| Restore Azure DocumentDB clusters from backups | https://learn.microsoft.com/en-us/azure/documentdb/how-to-restore-cluster |
 | Upgrade Azure DocumentDB clusters to newer MongoDB versions | https://learn.microsoft.com/en-us/azure/documentdb/how-to-upgrade-cluster |
 | Deploy Azure DocumentDB clusters with Bicep | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-bicep |
 | Deploy Azure DocumentDB clusters using Terraform | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-terraform |

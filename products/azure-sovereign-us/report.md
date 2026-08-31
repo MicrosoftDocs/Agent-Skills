@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-08-09'
+generated_at: '2026-08-31'
 category_descriptions:
-  security: 'Security and compliance guidance for Azure Government: isolation, IL5,
-    FedRAMP Rev5, TIC, secure naming, and identity/auth architecture with Microsoft
-    Entra.'
   decision-making: Guidance on choosing Azure Government vs global, FedRAMP/DoD scope
     and ATO, CSP reseller options, marketplace and DoD regions, and sector-specific
     compliance (NERC CIP, public safety, worldwide public sector).
+  security: 'Security and compliance guidance for Azure Government: isolation, IL5,
+    FedRAMP Rev5, TIC, secure naming, and identity/auth architecture with Microsoft
+    Entra.'
   architecture-patterns: Guidance on applying Secure Azure Computing Architecture
     (SACA) patterns to design compliant, secure, and resilient solutions in Azure
     Sovereign Cloud environments.
@@ -37,32 +37,41 @@ confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtu
 
 ## Summary
 
-- **Total Pages**: 40
-- **Fetched**: 40
+- **Total Pages**: 39
+- **Fetched**: 39
 - **Fetch Failed**: 0
-- **Classified**: 31
+- **Classified**: 30
 - **Unclassified**: 9
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 40
-- **Deleted Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 38
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sovereign-us/azure-sovereign-us.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 1 | 2.5% |
-| configuration | 5 | 12.5% |
-| decision-making | 9 | 22.5% |
-| deployment | 4 | 10.0% |
-| integrations | 3 | 7.5% |
-| security | 9 | 22.5% |
-| *(Unclassified)* | 9 | 22.5% |
+| architecture-patterns | 1 | 2.6% |
+| configuration | 5 | 12.8% |
+| decision-making | 9 | 23.1% |
+| deployment | 4 | 10.3% |
+| integrations | 3 | 7.7% |
+| security | 8 | 20.5% |
+| *(Unclassified)* | 9 | 23.1% |
 
 ## Changes
+
+### Updated Pages
+
+- [Azure Government product General Availability](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-product-roadmap)
+  - Updated: 2026-08-06T08:00:00.000Z → 2026-08-20T22:11:00.000Z
+
+### Deleted Pages
+
+- ~~Azure secure isolation guidance~~ (https://learn.microsoft.com/en-us/azure/azure-government/azure-secure-isolation-guidance)
 
 ## Classified Pages
 
@@ -80,7 +89,6 @@ confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtu
 | [Security](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-plan-security) | security | 0.70 | Page provides product-specific security guidance for Azure Government, including how Microsoft handles requirements at the infrastructure level and how customers should implement encryption, isolation, monitoring, and access controls to meet regulated/controlled data needs. This is concrete, Azure-Government-specific security configuration and practice rather than generic concepts. |
 | [Trusted Internet Connections with Azure](https://learn.microsoft.com/en-us/azure/azure-government/compliance/compliance-tic) | security | 0.70 | Maps TIC requirements to Azure IaaS/PaaS security features, providing concrete guidance for compliant configurations in Azure and Azure Government. |
 | [Use DISA CAP](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-ase-disa-cap) | deployment | 0.70 | Explains baseline configuration of App Service Environment with ILB for DISA CAP connectivity—highly specific deployment pattern for Azure Government. |
-| [Azure secure isolation guidance](https://learn.microsoft.com/en-us/azure/azure-government/azure-secure-isolation-guidance) | security | 0.68 | The page provides detailed, product-specific guidance for secure isolation across compute, networking, storage, and encryption in Azure Government and multitenant Azure. This goes beyond generic security concepts and includes concrete recommendations and patterns unique to Azure Government isolation scenarios, fitting the security sub-skill type. |
 | [Accelerate your path to ATO with Azure](https://learn.microsoft.com/en-us/azure/azure-government/compliance/documentation-accelerate-compliance) | decision-making | 0.65 | Aggregates resources, reference architectures, and partner tools to help plan and implement FedRAMP-compliant solutions, guiding technology and approach choices. |
 | [Access EA billing account](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-how-to-access-enterprise-agreement-billing-account) | configuration | 0.65 | Details how EA customers access billing accounts in the Azure Government portal, including portal behavior changes and environment-specific steps. |
 | [Department of Defense](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-overview-dod) | decision-making | 0.65 | DoD-focused overview with guidance on when and how to use DoD regions; informs region/service selection for specific impact levels and missions. |
@@ -110,6 +118,6 @@ confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtu
 | [Azure Government portal](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-get-started-connect-with-portal) | 0.30 | Quickstart for connecting via portal; mostly step-by-step UI usage without detailed configuration matrices or product-specific constraints. |
 | [PowerShell](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-get-started-connect-with-ps) | 0.30 | Quickstart for connecting with PowerShell; procedural steps rather than deep configuration options or expert-only details. |
 | [Visual Studio](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-connect-vs) | 0.30 | Quickstart for connecting with Visual Studio; focuses on basic connection steps, not advanced configuration or constraints. |
-| [Azure Government product General Availability](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-product-roadmap) | 0.20 | Roadmap/availability overview by authorization level; no specific limits, configuration parameters, error codes, or decision matrices with quantified criteria. |
+| [Azure Government product General Availability](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-product-roadmap) | 0.20 | Roadmap/availability overview by authorization level; does not expose specific limits, configuration parameters, error codes, or decision matrices with quantified criteria. |
 | [What is Azure Government?](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-welcome) | 0.10 | High-level overview of Azure Government capabilities and compliance positioning; no specific limits, configurations, error codes, or detailed technical guidance that meets the expert-knowledge criteria. |
 | [Export controls](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-overview-itar) | - | Content is primarily compliance and export-control overview and references a whitepaper and FAQ. It doesn’t expose product-specific configuration parameters, RBAC roles, or technical decision matrices; it’s high-level guidance about obligations and responsibilities. |

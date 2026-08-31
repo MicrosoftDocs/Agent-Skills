@@ -49,8 +49,8 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Dat
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 143
+- **Updated Pages**: 0
+- **Unchanged**: 144
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-horizondb/azure-horizondb.csv`
 
@@ -70,11 +70,6 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Dat
 | *(Unclassified)* | 35 | 24.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [Manage database users](https://learn.microsoft.com/en-us/azure/horizondb/security/security-manage-database-users)
-  - Updated: 2026-07-07T22:12:00.000Z → 2026-08-12T06:06:00.000Z
 
 ## Classified Pages
 

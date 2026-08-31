@@ -46,35 +46,39 @@ confusable_not_for: Not for Azure DevTest Labs (use azure-devtest-labs), Azure D
 
 ## Summary
 
-- **Total Pages**: 33
-- **Fetched**: 33
+- **Total Pages**: 32
+- **Fetched**: 32
 - **Fetch Failed**: 0
-- **Classified**: 22
+- **Classified**: 21
 - **Unclassified**: 11
 
 ### Incremental Update
 - **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 33
-- **Deleted Pages**: 0
+- **Unchanged**: 32
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-deployment-environments/azure-deployment-environments.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 1 | 3.0% |
-| best-practices | 1 | 3.0% |
-| configuration | 8 | 24.2% |
-| decision-making | 1 | 3.0% |
-| deployment | 2 | 6.1% |
-| integrations | 3 | 9.1% |
-| limits-quotas | 1 | 3.0% |
-| security | 4 | 12.1% |
-| troubleshooting | 1 | 3.0% |
-| *(Unclassified)* | 11 | 33.3% |
+| architecture-patterns | 1 | 3.1% |
+| best-practices | 1 | 3.1% |
+| configuration | 8 | 25.0% |
+| decision-making | 1 | 3.1% |
+| deployment | 1 | 3.1% |
+| integrations | 3 | 9.4% |
+| limits-quotas | 1 | 3.1% |
+| security | 4 | 12.5% |
+| troubleshooting | 1 | 3.1% |
+| *(Unclassified)* | 11 | 34.4% |
 
 ## Changes
+
+### Deleted Pages
+
+- ~~Automate with GitHub Actions (CI/CD)~~ (https://learn.microsoft.com/en-us/azure/deployment-environments/tutorial-deploy-environments-in-cicd-github)
 
 ## Classified Pages
 
@@ -99,7 +103,6 @@ confusable_not_for: Not for Azure DevTest Labs (use azure-devtest-labs), Azure D
 | [Create an environment from an azd template](https://learn.microsoft.com/en-us/azure/deployment-environments/how-to-configure-azure-developer-cli-deployment-environments) | integrations | 0.70 | Shows how to configure ADE and azd together using azd templates; likely includes specific CLI parameters and configuration values unique to this integration. |
 | [Maintenance mode for Azure Deployment Environments](https://learn.microsoft.com/en-us/azure/deployment-environments/maintenance-mode) | decision-making | 0.70 | Explains what maintenance mode means, support expectations, and planning guidance for existing deployments; this is product-specific decision guidance about whether/how to continue using the service. |
 | [Configure ARM or Bicep container image](https://learn.microsoft.com/en-us/azure/deployment-environments/how-to-configure-extensibility-model-custom-image) | integrations | 0.68 | Covers ADE’s extensibility model for custom container images, including how to reference images from registries like ACR/Docker Hub in environment definitions and use Bicep-based container images. This is a product-specific integration pattern between ADE, container registries, and IaC templates with concrete configuration details. |
-| [Automate with GitHub Actions (CI/CD)](https://learn.microsoft.com/en-us/azure/deployment-environments/tutorial-deploy-environments-in-cicd-github) | deployment | 0.65 | Tutorial on integrating Azure Deployment Environments with GitHub Actions CI/CD; likely includes product-specific workflow configuration (action names, inputs, environment variables) and constraints for using ADE in pipelines, which fits deployment-focused expert patterns. |
 | [Create dev center and project by using ARM](https://learn.microsoft.com/en-us/azure/deployment-environments/quickstart-create-dev-center-project-azure-resource-manager) | configuration | 0.65 | ARM template-based creation implies specific resource properties and parameter names unique to ADE; these are configuration details beyond generic knowledge. |
 | [Reliability in Azure Deployment Environments](https://learn.microsoft.com/en-us/azure/deployment-environments/concept-reliability-deployment-environments) | architecture-patterns | 0.65 | Covers reliability and availability patterns (zones, DR) specific to ADE; describes how ADE uses these mechanisms and likely includes pattern guidance for resiliency. |
 

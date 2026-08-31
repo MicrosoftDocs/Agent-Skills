@@ -1,14 +1,14 @@
 ---
 name: azure-networking
-description: Expert knowledge for Azure Networking development including troubleshooting, decision making, architecture & design patterns, security, and configuration. Use when designing VNets, hub-spoke/Virtual WAN, Azure Firewall/WAF, DDoS, or Virtual Network Manager configs, and other Azure Networking related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use azure-virtual-wan), Azure Traffic Manager (use azure-traffic-manager).
+description: Expert knowledge for Azure Networking development including troubleshooting, best practices, decision making, architecture & design patterns, security, and configuration. Use when designing VNets/VWAN, hub-spoke topologies, Azure Firewall/WAF/DDoS, private access, or NVA perf, and other Azure Networking related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use azure-virtual-wan), Azure Network Watcher (use azure-network-watcher).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-09"
+  generated_at: "2026-08-31"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Networking Skill
 
-This skill provides expert guidance for Azure Networking. Covers troubleshooting, decision making, architecture & design patterns, security, and configuration. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Networking. Covers troubleshooting, best practices, decision making, architecture & design patterns, security, and configuration. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -24,33 +24,41 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L37 | Monitoring tools and step-by-step guidance to diagnose, troubleshoot, and resolve issues with Azure virtual networks, connectivity, performance, and other network resources. |
-| Decision Making | L38-L54 | Guidance on choosing Azure network architectures: load balancing, hybrid/multicloud connectivity, private access, secure topologies, and internet ingress/egress for different workload patterns. |
-| Architecture & Design Patterns | L55-L67 | Designing secure Azure network topologies (hub-spoke, flat, multi-region, Virtual WAN), planning IP addressing/subnets, and applying common workload-specific networking patterns. |
-| Security | L68-L78 | Designing secure Azure networks: firewall and DDoS tiers, VM access, DNS/private name resolution, NSG/ASG rules, WAF protection, and policy-based compliance for network resources. |
-| Configuration | L79-L82 | Configuring and centrally managing multiple VNets using Azure Virtual Network Manager, including network groups, connectivity, security rules, and governance at scale. |
+| Troubleshooting | L34-L39 | Diagnosing and resolving Azure network resource issues, including monitoring, troubleshooting connectivity/performance, and fixing failed Microsoft.Network provisioning states. |
+| Best Practices | L40-L44 | Guidance on boosting Azure NVA/VM network throughput and latency using Accelerated Connections, including configuration steps and performance optimization best practices. |
+| Decision Making | L45-L62 | Guidance on choosing Azure network designs and services (topology, load balancing, DDoS/WAF/Firewall, hybrid/multicloud, private access, ingress/egress) for specific deployment scenarios. |
+| Architecture & Design Patterns | L63-L75 | Designing secure Azure network topologies (hub-spoke, flat, multi-region, Virtual WAN), planning IP addressing/subnets, and applying common workload-specific networking patterns. |
+| Security | L76-L90 | Designing and enforcing network security in Azure: firewalls, WAF, NSGs/ASGs, secure DNS, DDoS protection, and applying Zero Trust and policy compliance to all network paths. |
+| Configuration | L91-L95 | Configuring and centrally managing virtual networks with Virtual Network Manager, and enforcing/using built-in Azure Policy definitions for networking resources. |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
 | Monitor and troubleshoot Azure network resources | https://learn.microsoft.com/en-us/azure/networking/design-guide/monitor |
+| Diagnose failed Microsoft.Network provisioning states | https://learn.microsoft.com/en-us/azure/networking/troubleshoot-failed-state |
+
+### Best Practices
+| Topic | URL |
+|-------|-----|
+| Optimize NVA and VM performance with Accelerated Connections | https://learn.microsoft.com/en-us/azure/networking/nva-accelerated-connections |
 
 ### Decision Making
 | Topic | URL |
 |-------|-----|
-| Use Azure region latency stats for architecture decisions | https://learn.microsoft.com/en-us/azure/networking/azure-network-latency |
-| Choose Azure load balancing and app delivery options | https://learn.microsoft.com/en-us/azure/networking/design-guide/app-delivery |
+| Use Azure region latency stats for deployment planning | https://learn.microsoft.com/en-us/azure/networking/azure-network-latency |
+| Choose the right Azure load balancing service | https://learn.microsoft.com/en-us/azure/networking/design-guide/app-delivery |
 | Plan cross-cloud connectivity with Azure networking | https://learn.microsoft.com/en-us/azure/networking/design-guide/cross-cloud |
 | Plan cross-region and multicloud connectivity in Azure | https://learn.microsoft.com/en-us/azure/networking/design-guide/cross-region |
-| Choose hybrid connectivity: VPN vs ExpressRoute | https://learn.microsoft.com/en-us/azure/networking/design-guide/hybrid-connectivity |
+| Select the right Azure DDoS protection tier | https://learn.microsoft.com/en-us/azure/networking/design-guide/ddos |
+| Plan Azure hybrid connectivity with VPN or ExpressRoute | https://learn.microsoft.com/en-us/azure/networking/design-guide/hybrid-connectivity |
 | Select Azure services for internet ingress | https://learn.microsoft.com/en-us/azure/networking/design-guide/internet-ingress |
 | Plan lift-and-shift Azure network designs | https://learn.microsoft.com/en-us/azure/networking/design-guide/lift-and-shift |
 | Design networks for migrate-and-modernize workloads | https://learn.microsoft.com/en-us/azure/networking/design-guide/migrate-modernize |
 | Control outbound internet egress from Azure VNets | https://learn.microsoft.com/en-us/azure/networking/design-guide/outbound-egress |
 | Select private access options for Azure PaaS | https://learn.microsoft.com/en-us/azure/networking/design-guide/private-platform-as-a-service |
-| Decide when to use core Azure network foundation services | https://learn.microsoft.com/en-us/azure/networking/foundations/network-foundations-overview |
 | Select secure application delivery services in Azure | https://learn.microsoft.com/en-us/azure/networking/secure-application-delivery |
 | Choose a secure Azure network topology for workloads | https://learn.microsoft.com/en-us/azure/networking/secure-network-topology |
+| Choose between Azure Firewall, DDoS Protection, and WAF | https://learn.microsoft.com/en-us/azure/networking/security/network-security |
 
 ### Architecture & Design Patterns
 | Topic | URL |
@@ -69,14 +77,19 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Design Azure Firewall tiers and traffic inspection | https://learn.microsoft.com/en-us/azure/networking/design-guide/azure-firewall |
-| Select Azure DDoS protection tiers for networks | https://learn.microsoft.com/en-us/azure/networking/design-guide/ddos |
 | Secure developer and admin access to Azure VMs | https://learn.microsoft.com/en-us/azure/networking/design-guide/developer-admin-access |
 | Design secure DNS and private name resolution in Azure | https://learn.microsoft.com/en-us/azure/networking/design-guide/dns-security |
 | Secure Azure VNets with NSGs and ASGs | https://learn.microsoft.com/en-us/azure/networking/design-guide/network-application-security-groups |
 | Protect web apps with Azure Web Application Firewall | https://learn.microsoft.com/en-us/azure/networking/design-guide/web-application-firewall |
 | Apply Azure Policy compliance controls to networking | https://learn.microsoft.com/en-us/azure/networking/security-controls-policy |
+| Apply Zero Trust to Application Gateway WAF | https://learn.microsoft.com/en-us/azure/networking/security/zero-trust-application-gateway-waf |
+| Implement Zero Trust with Azure Firewall | https://learn.microsoft.com/en-us/azure/networking/security/zero-trust-azure-firewall |
+| Harden Azure DDoS Protection with Zero Trust | https://learn.microsoft.com/en-us/azure/networking/security/zero-trust-ddos-protection |
+| Secure Azure Front Door WAF using Zero Trust | https://learn.microsoft.com/en-us/azure/networking/security/zero-trust-front-door-waf |
+| Apply Zero Trust to Azure network security | https://learn.microsoft.com/en-us/azure/networking/security/zero-trust-network-security |
 
 ### Configuration
 | Topic | URL |
 |-------|-----|
 | Manage Azure VNets centrally with Virtual Network Manager | https://learn.microsoft.com/en-us/azure/networking/design-guide/azure-virtual-network-manager |
+| Use built-in Azure Policy for networking services | https://learn.microsoft.com/en-us/azure/networking/policy-reference |

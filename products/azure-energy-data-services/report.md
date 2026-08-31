@@ -47,9 +47,9 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 - **Unclassified**: 22
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 59
+- **Unchanged**: 60
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-energy-data-services/azure-energy-data-services.csv`
 
@@ -67,10 +67,6 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 | *(Unclassified)* | 22 | 36.7% |
 
 ## Changes
-
-### New Pages
-
-- [Restore a seismic dataset](https://learn.microsoft.com/en-us/azure/energy-data-services/tutorial-seismic-restore-dataset)
 
 ## Classified Pages
 

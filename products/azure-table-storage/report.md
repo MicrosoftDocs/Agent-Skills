@@ -1,8 +1,8 @@
 ---
-generated_at: '2026-07-19'
+generated_at: '2026-08-31'
 category_descriptions:
-  security: Managing access to Azure Table data using Microsoft Entra ID and Azure
-    RBAC, including assigning roles and configuring identity-based authorization.
+  security: 'Configuring Azure Table Storage security: using Microsoft Entra ID, assigning
+    RBAC roles, and applying best practices for access control and data protection.'
   configuration: 'Configuring Azure Table Storage monitoring: enabling metrics and
     logs, understanding available telemetry, and setting up alerts for performance,
     availability, and diagnostics.'
@@ -19,30 +19,28 @@ category_descriptions:
     insert/query/update/delete entities, and script common data operations.'
 skill_description: Expert knowledge for Azure Table Storage development including
   best practices, architecture & design patterns, limits & quotas, security, configuration,
-  and integrations & coding patterns. Use when designing partition/row keys, tuning
-  throughput, configuring metrics/logs, or scripting tables via PowerShell, and other
-  Azure Table Storage related development tasks. Not for Azure Cosmos DB (use azure-cosmos-db),
-  Azure Blob Storage (use azure-blob-storage), Azure Queue Storage (use azure-queue-storage),
-  Azure Files (use azure-files).
-use_when: Use when designing partition/row keys, tuning throughput, configuring metrics/logs,
-  or scripting tables via PowerShell, and other Azure Table Storage related development
-  tasks.
+  and integrations & coding patterns. Use when securing Table Storage, tuning telemetry,
+  planning scale limits, designing keys, or scripting with PowerShell, and other Azure
+  Table Storage related development tasks. Not for Azure Cosmos DB (use azure-cosmos-db),
+  Azure Blob Storage (use azure-blob-storage), Azure Queue Storage (use azure-queue-storage).
+use_when: Use when securing Table Storage, tuning telemetry, planning scale limits,
+  designing keys, or scripting with PowerShell, and other Azure Table Storage related
+  development tasks.
 confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure Blob Storage
-  (use azure-blob-storage), Azure Queue Storage (use azure-queue-storage), Azure Files
-  (use azure-files).
+  (use azure-blob-storage), Azure Queue Storage (use azure-queue-storage).
 ---
 # Azure Table Storage Crawl Report
 
 ## Summary
 
-- **Total Pages**: 15
-- **Fetched**: 15
+- **Total Pages**: 16
+- **Fetched**: 16
 - **Fetch Failed**: 0
-- **Classified**: 12
+- **Classified**: 13
 - **Unclassified**: 3
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
 - **Unchanged**: 15
 - **Deleted Pages**: 0
@@ -52,15 +50,19 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure Blob St
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 6 | 40.0% |
-| best-practices | 1 | 6.7% |
-| configuration | 1 | 6.7% |
-| integrations | 1 | 6.7% |
-| limits-quotas | 1 | 6.7% |
-| security | 2 | 13.3% |
-| *(Unclassified)* | 3 | 20.0% |
+| architecture-patterns | 6 | 37.5% |
+| best-practices | 1 | 6.2% |
+| configuration | 1 | 6.2% |
+| integrations | 1 | 6.2% |
+| limits-quotas | 1 | 6.2% |
+| security | 3 | 18.8% |
+| *(Unclassified)* | 3 | 18.8% |
 
 ## Changes
+
+### New Pages
+
+- [Secure your Azure Table storage](https://learn.microsoft.com/en-us/azure/storage/tables/secure-tables)
 
 ## Classified Pages
 
@@ -72,6 +74,7 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure Blob St
 | [Table design patterns](https://learn.microsoft.com/en-us/azure/storage/tables/table-storage-design-patterns) | architecture-patterns | 0.85 | Explicit catalog of patterns and anti-patterns for Table service with trade-offs; strongly aligned with architecture-patterns. |
 | [Monitoring Table Storage data reference](https://learn.microsoft.com/en-us/azure/storage/tables/monitor-table-storage-reference) | configuration | 0.80 | Monitoring data reference with specific metric/log names and fields; configuration/telemetry reference unique to this service. |
 | [Performance and scalability checklist](https://learn.microsoft.com/en-us/azure/storage/tables/storage-performance-checklist) | best-practices | 0.80 | Explicit performance checklist with proven, product-specific practices for Table storage; actionable DO/DON'T guidance rather than theory. |
+| [Secure your Azure Table storage](https://learn.microsoft.com/en-us/azure/storage/tables/secure-tables) | security | 0.78 | The page focuses on product-specific security practices for Azure Table Storage, including Entra ID authorization specifics and guidance distinct from other Azure Storage services. It contains concrete, service-specific recommendations and configuration guidance rather than generic security concepts, matching the security sub-skill type. |
 | [Design for data modification](https://learn.microsoft.com/en-us/azure/storage/tables/table-storage-design-for-modification) | architecture-patterns | 0.75 | Discusses trade-offs between query and write optimization and includes Table-specific design patterns; fits architecture-patterns. |
 | [Design for querying](https://learn.microsoft.com/en-us/azure/storage/tables/table-storage-design-for-query) | architecture-patterns | 0.75 | Covers partition key choices, query optimization, and sort strategies specific to Table storage; architecture and pattern-focused. |
 | [Guidelines for table design](https://learn.microsoft.com/en-us/azure/storage/tables/table-storage-design-guidelines) | architecture-patterns | 0.75 | Guidelines for read/write-efficient table designs specific to Azure Table service; focuses on design patterns and trade-offs. |

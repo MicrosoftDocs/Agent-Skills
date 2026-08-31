@@ -1,14 +1,15 @@
 ---
-generated_at: '2026-05-03'
+generated_at: '2026-08-31'
 category_descriptions:
   integrations: Running Resource Graph queries via CLI, PowerShell, REST, Logic Apps,
     Power BI; creating shared queries and alerts; and retrieving resource change history
     for automation and reporting.
+  decision-making: Guidance on selecting efficient Azure Resource Graph query patterns
+    and deciding when to use the GET/LIST APIs versus the Query service for different
+    scenarios.
   limits-quotas: Understanding ARG request limits, pagination behavior, handling large
     result sets, and implementing efficient paging (including with PowerShell) to
     avoid quota issues.
-  decision-making: Guidance on when to use Azure Resource Graph GET/LIST REST APIs
-    vs the Query service, comparing capabilities, scenarios, and integration patterns.
   best-practices: Guidance on designing Azure Resource Graph queries to avoid throttling,
     including efficient patterns, batching, pagination, and performance-friendly query
     structures.
@@ -20,30 +21,30 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Resource Graph development including
   troubleshooting, best practices, decision making, limits & quotas, configuration,
   and integrations & coding patterns. Use when querying via CLI/PowerShell/REST, using
-  GET/LIST vs Query APIs, shared queries, alerts, or Power BI, and other Azure Resource
-  Graph related development tasks. Not for Azure Monitor (use azure-monitor), Azure
-  Policy (use azure-policy), Azure Resource Manager (use azure-resource-manager),
-  Azure Portal (use azure-portal).
-use_when: Use when querying via CLI/PowerShell/REST, using GET/LIST vs Query APIs,
-  shared queries, alerts, or Power BI, and other Azure Resource Graph related development
+  GET/LIST vs Query, handling paging/quotas, or Power BI ARG reports, and other Azure
+  Resource Graph related development tasks. Not for Azure Monitor (use azure-monitor),
+  Azure Policy (use azure-policy), Cost Management (use azure-cost-management), Azure
+  Resource Manager (use azure-resource-manager).
+use_when: Use when querying via CLI/PowerShell/REST, using GET/LIST vs Query, handling
+  paging/quotas, or Power BI ARG reports, and other Azure Resource Graph related development
   tasks.
 confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Policy (use azure-policy),
-  Azure Resource Manager (use azure-resource-manager), Azure Portal (use azure-portal).
+  Cost Management (use azure-cost-management), Azure Resource Manager (use azure-resource-manager).
 ---
 # Azure Resource Graph Crawl Report
 
 ## Summary
 
-- **Total Pages**: 33
-- **Fetched**: 33
+- **Total Pages**: 34
+- **Fetched**: 34
 - **Fetch Failed**: 0
-- **Classified**: 22
+- **Classified**: 23
 - **Unclassified**: 11
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 33
+- **New Pages**: 1
+- **Updated Pages**: 1
+- **Unchanged**: 32
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-resource-graph/azure-resource-graph.csv`
 
@@ -51,15 +52,24 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Policy (use
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| best-practices | 1 | 3.0% |
-| configuration | 4 | 12.1% |
-| decision-making | 1 | 3.0% |
-| integrations | 9 | 27.3% |
-| limits-quotas | 4 | 12.1% |
-| troubleshooting | 3 | 9.1% |
-| *(Unclassified)* | 11 | 33.3% |
+| best-practices | 1 | 2.9% |
+| configuration | 4 | 11.8% |
+| decision-making | 2 | 5.9% |
+| integrations | 9 | 26.5% |
+| limits-quotas | 4 | 11.8% |
+| troubleshooting | 3 | 8.8% |
+| *(Unclassified)* | 11 | 32.4% |
 
 ## Changes
+
+### New Pages
+
+- [Choose the right query strategy for Azure Resource Graph](https://learn.microsoft.com/en-us/azure/governance/resource-graph/choose-query-strategy)
+
+### Updated Pages
+
+- [What is Azure Resource Graph?](https://learn.microsoft.com/en-us/azure/governance/resource-graph/overview)
+  - Updated: 2024-06-18T08:00:00.000Z → 2026-08-19T17:11:00.000Z
 
 ## Classified Pages
 
@@ -74,6 +84,7 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Policy (use
 | [Supported Azure Resource Manager resource types](https://learn.microsoft.com/en-us/azure/governance/resource-graph/reference/supported-tables-resources) | configuration | 0.80 | Comprehensive list of supported Azure Resource Manager resource types and their mapping to Resource Graph tables; detailed product-specific reference. |
 | [Guidance for throttled requests](https://learn.microsoft.com/en-us/azure/governance/resource-graph/concepts/guidance-for-throttled-requests) | best-practices | 0.75 | Provides concrete guidance on grouping, staggering, paginating, and parallelizing queries to avoid throttling; product-specific usage patterns and gotchas. |
 | [Run ARG query with Power BI connector](https://learn.microsoft.com/en-us/azure/governance/resource-graph/power-bi-connector-quickstart) | integrations | 0.75 | Describes Power BI connector behavior, default tenant scope, and option to return all records beyond the 1,000-record default; product-specific connector settings. |
+| [Choose the right query strategy for Azure Resource Graph](https://learn.microsoft.com/en-us/azure/governance/resource-graph/choose-query-strategy) | decision-making | 0.70 | Explains when to use ARG vs resource provider APIs and how to choose between ARG Query API and Get/List API. Provides product-specific guidance on control plane behavior and hybrid query strategies to support concrete technology selection decisions, rather than generic concepts. |
 | [Differences between the Azure Resource Graph GET/LIST API and Azure Resource Graph Query service](https://learn.microsoft.com/en-us/azure/governance/resource-graph/concepts/get-list-query-service-differences) | decision-making | 0.70 | Compares GET/LIST API and Query service with focus on latency and throttling quotas; helps decide which to use for different scenarios. |
 | [Keyboard shortcuts](https://learn.microsoft.com/en-us/azure/governance/resource-graph/reference/keyboard-shortcuts) | configuration | 0.70 | Lists specific keyboard shortcuts and their actions; effectively a configuration/reference table for Explorer behavior. |
 | [Run a query - REST](https://learn.microsoft.com/en-us/azure/governance/resource-graph/first-query-rest-api) | integrations | 0.70 | Describes REST endpoint, API version, and request body for Resource Graph queries; includes product-specific REST parameters. |
@@ -102,4 +113,4 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Policy (use
 | [Starter query samples](https://learn.microsoft.com/en-us/azure/governance/resource-graph/samples/starter) | 0.30 | Starter query samples; mostly KQL examples without product-specific limits, configs, or troubleshooting mappings. |
 | [Samples by category](https://learn.microsoft.com/en-us/azure/governance/resource-graph/samples/samples-by-category) | 0.20 | Index of sample queries by category; navigation-style content without detailed technical constraints. |
 | [Understanding the query language](https://learn.microsoft.com/en-us/azure/governance/resource-graph/concepts/query-language) | 0.20 | Primarily a conceptual and syntactic overview of Kusto Query Language constructs supported by Azure Resource Graph (data types, operators, functions). It does not focus on product-specific limits, configuration tables, error-code troubleshooting, or decision matrices with quantified trade-offs. The content is largely generic language reference that an LLM is likely to know from training rather than expert-only product configuration or limits. |
-| [What is Azure Resource Graph?](https://learn.microsoft.com/en-us/azure/governance/resource-graph/overview) | 0.20 | High-level overview of Azure Resource Graph capabilities; no concrete limits, configs, or error mappings. |
+| [What is Azure Resource Graph?](https://learn.microsoft.com/en-us/azure/governance/resource-graph/overview) | 0.20 | High-level overview of Azure Resource Graph capabilities and purpose without specific limits, configuration parameters, error codes, or decision matrices. Primarily conceptual service description. |

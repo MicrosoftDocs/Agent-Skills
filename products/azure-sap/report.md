@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-08-16'
+generated_at: '2026-08-31'
 category_descriptions:
-  configuration: 'Configuring SAP on Azure: automation (Terraform, SDAF, Azure Center),
-    networking, storage, HA/DR clusters, monitoring providers, and VM extensions for
-    HANA, NetWeaver, S/4HANA, and BPS.'
+  configuration: 'Configuring SAP on Azure: automation (Terraform, BOM, Ansible),
+    networking, storage, HA/DR clusters, monitoring (Azure Monitor, BPS, Datasphere),
+    and Azure Center/VM extensions setup.'
   deployment: 'End-to-end SAP on Azure deployment guidance: automation framework setup,
     control plane/workload zones, DevOps pipelines, HA/DR, and installing SAP products
     (S/4HANA, NetWeaver, BOBJ, B1, HANA) on VMs.'
@@ -31,17 +31,18 @@ category_descriptions:
 skill_description: Expert knowledge for SAP HANA on Azure Large Instances development
   including troubleshooting, best practices, decision making, architecture & design
   patterns, limits & quotas, security, configuration, integrations & coding patterns,
-  and deployment. Use when deploying HANA LIs, configuring HA/DR clusters, integrating
-  Azure Monitor, using VM extensions, or RISE connectivity, and other SAP HANA on
+  and deployment. Use when deploying SAP HANA LI with Terraform/Ansible, Azure Monitor,
+  HA/DR clusters, Entra ID/SSO, or Copilot–SAP integrations, and other SAP HANA on
   Azure Large Instances related development tasks. Not for Azure Large Instances (use
   azure-large-instances), Azure Virtual Machines (use azure-virtual-machines), SQL
-  Server on Azure Virtual Machines (use azure-sql-virtual-machines).
-use_when: Use when deploying HANA LIs, configuring HA/DR clusters, integrating Azure
-  Monitor, using VM extensions, or RISE connectivity, and other SAP HANA on Azure
+  Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure NetApp
+  Files (use azure-netapp-files).
+use_when: Use when deploying SAP HANA LI with Terraform/Ansible, Azure Monitor, HA/DR
+  clusters, Entra ID/SSO, or Copilot–SAP integrations, and other SAP HANA on Azure
   Large Instances related development tasks.
 confusable_not_for: Not for Azure Large Instances (use azure-large-instances), Azure
   Virtual Machines (use azure-virtual-machines), SQL Server on Azure Virtual Machines
-  (use azure-sql-virtual-machines).
+  (use azure-sql-virtual-machines), Azure NetApp Files (use azure-netapp-files).
 ---
 # SAP HANA on Azure Large Instances Crawl Report
 
@@ -54,8 +55,8 @@ confusable_not_for: Not for Azure Large Instances (use azure-large-instances), A
 - **Unclassified**: 40
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 2
 - **Unchanged**: 225
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sap/azure-sap.csv`
@@ -77,14 +78,12 @@ confusable_not_for: Not for Azure Large Instances (use azure-large-instances), A
 
 ## Changes
 
-### New Pages
-
-- [Customer enabled disaster recovery](https://learn.microsoft.com/en-us/azure/sap/monitor/customer-enabled-dr-reliability)
-
 ### Updated Pages
 
-- [Install HA SAP NetWeaver with NFS simple mount](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-suse-nfs-simple-mount)
-  - Updated: 2026-03-04T08:00:00.000Z → 2026-08-11T05:12:00.000Z
+- [Set up Pacemaker cluster](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-pacemaker)
+  - Updated: 2026-06-24T08:00:00.000Z → 2026-08-21T05:10:00.000Z
+- [Set up Pacemaker cluster](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-suse-pacemaker)
+  - Updated: 2026-07-24T17:11:00.000Z → 2026-08-21T05:10:00.000Z
 
 ## Classified Pages
 
@@ -123,6 +122,8 @@ confusable_not_for: Not for Azure Large Instances (use azure-large-instances), A
 | [Install HA SAP NetWeaver](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-suse) | configuration | 0.78 | The page provides a prescriptive HA setup for SAP NetWeaver/ABAP on Azure VMs with SUSE Linux Enterprise Server for SAP. It contains specific cluster framework configuration, recommended simple-mount vs classic Pacemaker setups, instance numbers, and SAP/Azure resource configuration details that are expert, product-specific knowledge rather than general guidance. |
 | [Install SAP NetWeaver with HANA HA cluster - RHEL](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-with-hana-ascs-ers-dialog-instance) | configuration | 0.78 | The article is a detailed implementation guide for deploying SAP ASCS/SCS and ERS with SAP HANA on high-availability RHEL clusters in Azure. It typically includes product- and OS-specific cluster parameters, Pacemaker/Corosync resource definitions, fencing/STONITH settings, SAP profile parameters, mount options, and other configuration values that are unique to this scenario and not generally known to an LLM from training. The focus is on how to configure the HA cluster and SAP instances rather than generic concepts, so it best fits the configuration sub-skill. |
 | [Scale-up with HSR and Pacemaker on Azure NetApp Files](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-hana-high-availability-netapp-files-red-hat) | configuration | 0.78 | The article describes detailed, product-specific configuration steps for SAP HANA System Replication using Azure NetApp Files over NFS on RHEL, including instance numbers, system IDs, and node roles. It focuses on how to configure the environment rather than general concepts, matching the configuration sub-skill. While the summary snippet doesn't show tables, such HA setup guides typically include exact parameter names, mount options, and configuration commands that constitute expert, implementation-level knowledge beyond generic LLM training. |
+| [Set up Pacemaker cluster](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-pacemaker) | configuration | 0.78 | Step-by-step setup of a two-node Pacemaker cluster on RHEL in Azure with product-specific configuration details (cluster properties, fencing/STONITH settings, Azure-specific parameters, package versions, and OS-version-specific steps). This goes beyond generic HA concepts and includes concrete config commands and values unique to running Pacemaker on Azure VMs. |
+| [Set up Pacemaker cluster](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-suse-pacemaker) | configuration | 0.78 | Detailed instructions for configuring a two-node Pacemaker cluster on SLES for SAP in Azure, including OS-version-specific commands, cluster and resource configuration, and Azure-aware settings. Contains concrete configuration parameters and patterns specific to Pacemaker on SLES in Azure rather than generic HA guidance. |
 | [Deploy multi-SID clusters with Pacemaker](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-multi-sid) | configuration | 0.76 | Multi-SID HA configuration for several SAP systems in a two-node RHEL cluster with Azure NetApp Files. Multi-SID clustering requires detailed, product-specific parameters (resource naming schemes, constraints, ANF volume layout, SAP profile and instance settings per SID) that go beyond generic HA concepts, so this is expert configuration guidance. |
 | [Configure Microsoft SQL Server provider](https://learn.microsoft.com/en-us/azure/sap/monitor/provider-sql-server) | security | 0.75 | Configuration article for the SQL Server provider in Azure Monitor for SAP solutions, explicitly mentioning firewall, authentication, and user permissions. Such pages normally include product-specific security settings (required roles/permissions, connection/auth configuration) that constitute expert security knowledge rather than generic concepts. |
 | [Configure NetWeaver provider](https://learn.microsoft.com/en-us/azure/sap/monitor/provider-netweaver) | configuration | 0.75 | Provider configuration guides include connection types, required credentials, and metric lists, which are detailed, product-specific configuration parameters. |
@@ -140,7 +141,6 @@ confusable_not_for: Not for Azure Large Instances (use azure-large-instances), A
 | [Scale-up with HSR and Pacemaker on Azure NetApp Files](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-hana-high-availability-netapp-files-suse) | configuration | 0.75 | Covers configuring SAP HANA system replication with NFS-mounted Azure NetApp Files, including instance IDs, file system mounts, and replication setup; these are product-specific configuration patterns and parameters that represent expert configuration knowledge. |
 | [Install HA SAP NetWeaver with Azure NetApp Files](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-netapp-files) | configuration | 0.74 | Describes detailed steps to configure VMs, cluster framework, and SAP instances for HA using Azure NetApp Files. Such SAP HA workload docs normally contain specific cluster resource definitions, ANF volume and mount configuration, SAP instance numbering conventions, and OS-level settings that are product- and scenario-specific, making this expert configuration guidance rather than a generic tutorial. |
 | [Install HA SAP NetWeaver with NFS on Azure Files](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-nfs-azure-files) | configuration | 0.74 | High-availability implementation guide for SAP NetWeaver on RHEL with NFS on Azure Files. These SAP-on-Azure HA guides typically include product- and scenario-specific cluster configuration parameters (Pacemaker/Corosync resources, fencing/STONITH settings, mount options, Azure Files/NFS export options, systemd and SAP profile parameters) and exact command lines unique to this workload, which qualify as expert configuration knowledge rather than generic concepts. |
-| [Set up Pacemaker cluster](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-pacemaker) | configuration | 0.74 | A Pacemaker HA setup guide for RHEL on Azure typically includes product- and OS-specific configuration commands, cluster resource definitions, fencing/STONITH settings, and parameter values unique to running Pacemaker with Azure VMs. This goes beyond generic theory and provides concrete, expert configuration details for this environment. |
 | [Service scenarios and selection guidance](https://learn.microsoft.com/en-us/azure/sap/choose-sap-services-by-scenario) | decision-making | 0.73 | The page provides scenario-based guidance for choosing between multiple Azure services (for deploying, managing, monitoring, integrating, and protecting SAP systems). It maps specific SAP scenarios to recommended Azure services and combinations, which is product- and scenario-specific decision guidance rather than generic concepts. |
 | [Install GlusterFS on Azure VMs for SAP NetWeaver](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-glusterfs) | configuration | 0.72 | The article provides step-by-step, product-specific configuration details for deploying and configuring a GlusterFS cluster on Azure VMs running RHEL for SAP NetWeaver, including concrete VM, network, storage, and cluster settings. It goes beyond generic concepts and includes exact configuration commands and patterns unique to this SAP-on-Azure scenario, fitting best under configuration rather than generic deployment guidance. |
 | [Install HA SAP NetWeaver](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel) | configuration | 0.72 | Covers deployment and configuration of VMs, cluster framework, and SAP NetWeaver HA on RHEL. These guides usually specify concrete Pacemaker/Corosync resource settings, Azure-specific cluster parameters, SAP instance configuration commands, and OS tuning values that are unique to SAP on Azure, which constitutes expert configuration knowledge. |
@@ -206,7 +206,6 @@ confusable_not_for: Not for Azure Large Instances (use azure-large-instances), A
 | [SAP ILM](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-information-lifecycle-management) | configuration | 0.70 | An ILM + Blob integration guide typically includes product-specific configuration steps (storage account/container setup, authentication options, ILM Store parameters) and exact setting names/values unique to SAP on Azure. This goes beyond conceptual ILM overview and into concrete configuration for archive storage. |
 | [Scale-up with HSR and Pacemaker](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-hana-high-availability) | configuration | 0.70 | Describes how to deploy and configure SAP HANA system replication for high availability on Azure VMs; such content typically includes specific replication modes, configuration parameters, and node setup details that constitute expert configuration knowledge. |
 | [Set Key Vault secrets with shell scripts](https://learn.microsoft.com/en-us/azure/sap/automation/bash/set-secrets) | configuration | 0.70 | set_secrets.sh configures service principal secrets in Azure Key Vault for SAP automation, with specific parameter names, expected formats, and Key Vault usage patterns that are configuration-focused. |
-| [Set up Pacemaker cluster](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-suse-pacemaker) | configuration | 0.70 | A detailed setup guide for Pacemaker on SLES in Azure will include product-specific configuration steps, cluster resource definitions, and parameter values unique to this environment, which qualify as configuration expert knowledge rather than generic tutorial content. |
 | [Set up network for Azure Monitor for SAP solutions](https://learn.microsoft.com/en-us/azure/sap/monitor/set-up-network) | configuration | 0.70 | How-to guide for setting up an Azure virtual network specifically for Azure Monitor for SAP solutions is likely to include product-specific network configuration details (subnets, required service endpoints, private link/DNS settings, NSG rules, and possibly required ports). These are concrete, service-specific configuration parameters rather than generic networking concepts, fitting the configuration sub-skill. |
 | [Supported scenarios](https://learn.microsoft.com/en-us/azure/sap/workloads/planning-supported-configurations) | decision-making | 0.70 | Page focuses on which SAP scenarios and configurations are supported or restricted on Azure VMs versus on-premises, guiding architecture choices for non-HA and HA deployments. This is product- and scenario-specific support guidance that an LLM is unlikely to infer from training data and is used to decide which configurations are allowed, fitting decision-making best. |
 | [Update SAP library SAS token](https://learn.microsoft.com/en-us/azure/sap/automation/bash/update-sas-token) | configuration | 0.70 | update_sas_token.sh is a specialized script to rotate/update SAS tokens for the SAP Library in Azure Key Vault, with specific configuration parameters and flows that are not generic and map to configuration. |

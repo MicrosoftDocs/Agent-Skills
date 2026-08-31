@@ -1,14 +1,14 @@
 ---
 name: azure-virtual-network
-description: Expert knowledge for Azure Virtual Network development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and deployment. Use when configuring VNets with peering, Accelerated Networking, Azure CNI, NSGs/service endpoints, or VNet encryption, and other Azure Virtual Network related development tasks. Not for Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use azure-virtual-wan), Azure Application Network (use azure-application-network), Azure Networking (use azure-networking).
+description: Expert knowledge for Azure Virtual Network development including best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and deployment. Use when configuring VNets, NSGs, VNet peering, service endpoints, public IP upgrades, or hybrid app routing, and other Azure Virtual Network related development tasks. Not for Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-16"
+  generated_at: "2026-08-31"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Virtual Network Skill
 
-This skill provides expert guidance for Azure Virtual Network. Covers troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Virtual Network. Covers best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -24,19 +24,13 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L36-L40 | Configuring, validating, and debugging Azure routing appliances (NVA/virtual routers), including routing setup, traffic flow issues, and common misconfiguration fixes. |
-| Best Practices | L41-L50 | Designing secure, high-performance VNets: outbound VM access control, NSG rules/flows, VM throughput tuning, TCP/IP optimization, and secure use of VNet service endpoints. |
-| Decision Making | L51-L60 | Guidance on performance and cost trade-offs: MANA support, Accelerated Networking, routing preference, public IP upgrades, VNet cost optimization, and VNet integration for service isolation. |
-| Architecture & Design Patterns | L61-L67 | Designing VNet architectures: subnet extension for migrations, VNet peering, hybrid two-tier apps, traffic mirroring with TAP, topology planning, and custom routing options. |
-| Limits & Quotas | L68-L75 | Network resource limits and behaviors for Azure VMs/VNets: accelerated networking support, public IP quotas, VM throughput caps, and Virtual Network scale/performance constraints. |
-| Security | L76-L84 | Securing virtual networks: Kubernetes network policies, NSG/policy-based controls, VNet encryption, and restricting storage egress with service endpoint policies. |
-| Configuration | L85-L119 | Configuring Azure virtual networks: IPs (public/private/custom), gateways, MTU, DNS, DHCP, monitoring, subnet delegation/peering, encryption, and Azure CNI/network adapters. |
-| Deployment | L120-L123 | Guidance for upgrading Azure Basic public IP addresses to Standard SKU, including requirements, steps, and considerations for network resources and downtime. |
-
-### Troubleshooting
-| Topic | URL |
-|-------|-----|
-| Configure and troubleshoot Azure routing appliances | https://learn.microsoft.com/en-us/azure/virtual-network/how-to-create-virtual-network-routing-appliance |
+| Best Practices | L35-L44 | Designing secure, high-performance VNets: outbound VM access control, NSG rules/flows, VM throughput tuning, TCP/IP optimization, and secure use of VNet service endpoints. |
+| Decision Making | L45-L54 | Guidance on performance and cost trade-offs: MANA support, Accelerated Networking, routing preference, public IP upgrades, VNet cost optimization, and VNet integration for service isolation. |
+| Architecture & Design Patterns | L55-L61 | Designing VNet architectures: subnet extension for migrations, VNet peering, hybrid two-tier apps, traffic mirroring with TAP, topology planning, and custom routing options. |
+| Limits & Quotas | L62-L69 | Network resource limits and behaviors for Azure VMs/VNets: accelerated networking support, public IP quotas, VM throughput caps, and Virtual Network scale/performance constraints. |
+| Security | L70-L78 | Securing virtual networks: Kubernetes network policies, NSG/policy-based controls, VNet encryption, and restricting storage egress with service endpoint policies. |
+| Configuration | L79-L113 | Configuring Azure virtual networks: IPs, prefixes, DNS, MTU, DHCP, monitoring, and adapters/CNI for VMs, Kubernetes, NVAs, gateways, firewalls, and load balancers. |
+| Deployment | L114-L117 | Guidance for upgrading Azure Basic public IP addresses to Standard SKU, including requirements, steps, and considerations for network resources and downtime. |
 
 ### Best Practices
 | Topic | URL |
@@ -85,7 +79,7 @@ This skill requires **network access** to fetch documentation content:
 ### Configuration
 | Topic | URL |
 |-------|-----|
-| Enable Microsoft Azure Network Adapter on Linux VMs | https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-linux |
+| Configure Azure Network Adapter (MANA) for Linux VMs | https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-linux |
 | Configure MANA behavior for NVAs on existing VM sizes | https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-network-virtual-appliance-opt-out |
 | Configure Azure CNI for Kubernetes virtual networks | https://learn.microsoft.com/en-us/azure/virtual-network/deploy-container-networking |
 | Install and configure Azure CNI on Linux Docker hosts | https://learn.microsoft.com/en-us/azure/virtual-network/deploy-container-networking-docker-linux |

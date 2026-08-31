@@ -1,9 +1,9 @@
 ---
 name: azure-queue-storage
-description: Expert knowledge for Azure Queue Storage development including best practices, limits & quotas, security, configuration, and integrations & coding patterns. Use when using Entra ID/RBAC auth, client-side encryption, monitoring/alerts, scaling limits, or .NET/Java/Python SDKs, and other Azure Queue Storage related development tasks. Not for Azure Blob Storage (use azure-blob-storage), Azure Table Storage (use azure-table-storage), Azure Service Bus (use azure-service-bus), Azure Event Hubs (use azure-event-hubs).
+description: Expert knowledge for Azure Queue Storage development including best practices, limits & quotas, security, configuration, and integrations & coding patterns. Use when configuring queue auth/encryption, monitoring metrics/logs, handling limits, or coding with Azure Queue SDKs, and other Azure Queue Storage related development tasks. Not for Azure Service Bus (use azure-service-bus), Azure Event Hubs (use azure-event-hubs), Azure Table Storage (use azure-table-storage).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-19"
+  generated_at: "2026-08-31"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Queue Storage Skill
@@ -26,9 +26,9 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Best Practices | L33-L39 | Monitoring, securing, and tuning Azure Queue Storage: metrics/logging, alerts, encryption, access control, and performance/scalability patterns and checklists. |
 | Limits & Quotas | L40-L45 | Scalability and size limits for Azure Queue Storage, including max queues/messages, throughput, message size, and total storage constraints. |
-| Security | L46-L59 | Using Entra ID/RBAC/ABAC for queue data access, configuring auth in CLI/Portal/PowerShell, client-side encryption, and migrating Queue apps to passwordless authentication |
-| Configuration | L60-L65 | Setting up metrics, logs, and alerts for Azure Queue Storage, and understanding/using the collected monitoring data to troubleshoot performance and reliability issues. |
-| Integrations & Coding Patterns | L66-L74 | Client library how-tos for using Azure Queue Storage with .NET, Java, JavaScript, Python, and PowerShell, including setup, auth, CRUD operations, and common coding patterns. |
+| Security | L46-L60 | Securing Queue Storage: Entra ID/RBAC/ABAC auth, portal/CLI/PowerShell access control, client-side encryption, passwordless migration, and security best practices. |
+| Configuration | L61-L66 | Setting up metrics, logs, and alerts for Azure Queue Storage, and understanding/using the collected monitoring data to troubleshoot performance and reliability issues. |
+| Integrations & Coding Patterns | L67-L75 | Client library how-tos for using Azure Queue Storage with .NET, Java, JavaScript, Python, and PowerShell, including setup, auth, CRUD operations, and common coding patterns. |
 
 ### Best Practices
 | Topic | URL |
@@ -56,6 +56,7 @@ This skill requires **network access** to fetch documentation content:
 | Use ABAC role assignment conditions for queues | https://learn.microsoft.com/en-us/azure/storage/queues/queues-auth-abac |
 | Actions and attributes for Queue Storage ABAC | https://learn.microsoft.com/en-us/azure/storage/queues/queues-auth-abac-attributes |
 | Example ABAC role conditions for Queue Storage | https://learn.microsoft.com/en-us/azure/storage/queues/queues-auth-abac-examples |
+| Apply security best practices to Azure Queue Storage | https://learn.microsoft.com/en-us/azure/storage/queues/secure-queues |
 
 ### Configuration
 | Topic | URL |

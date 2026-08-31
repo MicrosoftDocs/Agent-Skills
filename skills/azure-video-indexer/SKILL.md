@@ -1,9 +1,9 @@
 ---
 name: azure-video-indexer
-description: Expert knowledge for Azure AI Video Indexer development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring live AI insights, OpenAI integration, ARM-based deployment, APIs/widgets, or face redaction, and other Azure AI Video Indexer related development tasks. Not for Azure AI Vision (use azure-ai-vision), Azure AI Custom Vision (use azure-custom-vision), Azure AI Face (use azure-face), Azure AI Immersive Reader (use azure-immersive-reader).
+description: Expert knowledge for Azure AI Video Indexer development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when indexing video, live camera analysis, custom insights, OpenAI summaries, or Video Indexer APIs, and other Azure AI Video Indexer related development tasks. Not for Azure AI Vision (use azure-ai-vision), Azure AI Search (use azure-cognitive-search).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-09"
+  generated_at: "2026-08-31"
   generator: "docs2skills/1.0.0"
 ---
 # Azure AI Video Indexer Skill
@@ -24,19 +24,19 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L36-L40 | Diagnosing and resolving Azure Video Indexer Arc connectivity, firewall, and streaming issues, including network checks, configuration validation, and common error troubleshooting. |
+| Troubleshooting | L36-L40 | Diagnosing and resolving Azure AI Video Indexer Arc deployment and runtime issues, including connectivity, configuration, and infrastructure-related troubleshooting steps. |
 | Best Practices | L41-L50 | Best practices for scaling, customizing models (brands, language, speech), using AI agents for real-time insights, and designing disaster recovery/failover for Azure Video Indexer. |
 | Decision Making | L51-L58 | Guidance on cost planning, live AI insight selection vs custom models, camera analytics choices, and multi-tenant management strategies for Azure AI Video Indexer. |
 | Limits & Quotas | L59-L66 | Limits, quotas, formats, and language support for Video Indexer, plus how to configure, monitor, and summarize live camera recording durations and events. |
 | Security | L67-L76 | Securing Video Indexer: roles and access control, private endpoints, NSG service tags, firewall-protected storage, limited feature access, and security baselines/best practices. |
-| Configuration | L77-L88 | Configuring Video Indexer behavior: live AI insights, OpenAI integration, indexing options, regions, monitoring/diagnostics data, speaker identities, and text summarization settings. |
-| Integrations & Coding Patterns | L89-L95 | Using Video Indexer APIs, widgets, and low-code tools to call the service, embed insights, automate workflows, and programmatically redact faces in videos |
-| Deployment | L96-L99 | How to deploy and configure Azure Video Indexer using ARM templates, including required resources, parameters, and automation steps for setting up the service. |
+| Configuration | L77-L91 | Configuring Video Indexer: camera and live analysis setup, custom AI insights, OpenAI-based summarization, indexing options, speaker identities, regions, and monitoring/diagnostics. |
+| Integrations & Coding Patterns | L92-L98 | Using Video Indexer APIs, widgets, and low-code tools to call the service, embed insights, automate workflows, and programmatically redact faces in videos |
+| Deployment | L99-L104 | Deploying Video Indexer via Arc or ARM, configuring real-time extensions, and managing on-prem/edge deployments and infrastructure setup. |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
-| Diagnose Azure Video Indexer Arc connectivity and streaming issues | https://learn.microsoft.com/en-us/azure/azure-video-indexer/arc/azure-video-indexer-enabled-by-arc-troubleshooting |
+| Diagnose Azure AI Video Indexer Arc issues | https://learn.microsoft.com/en-us/azure/azure-video-indexer/arc/azure-video-indexer-enabled-by-arc-troubleshooting |
 
 ### Best Practices
 | Topic | URL |
@@ -77,14 +77,17 @@ This skill requires **network access** to fetch documentation content:
 ### Configuration
 | Topic | URL |
 |-------|-----|
+| Configure cameras for Video Indexer real-time analysis | https://learn.microsoft.com/en-us/azure/azure-video-indexer/arc/live-add-remove-camera |
+| Use vi_cli.sh for live Video Indexer via Arc | https://learn.microsoft.com/en-us/azure/azure-video-indexer/arc/live-cli-reference |
 | Configure custom live AI insights in Video Indexer | https://learn.microsoft.com/en-us/azure/azure-video-indexer/arc/live-custom-insights-create |
+| Manage real-time analysis camera settings in Video Indexer | https://learn.microsoft.com/en-us/azure/azure-video-indexer/arc/live-manage-camera |
 | Configure Azure Video Indexer with Azure OpenAI | https://learn.microsoft.com/en-us/azure/azure-video-indexer/connect-azure-open-ai-task |
 | Edit speaker identities in Azure Video Indexer transcripts | https://learn.microsoft.com/en-us/azure/azure-video-indexer/edit-speakers |
 | Configure Azure AI Video Indexer indexing options | https://learn.microsoft.com/en-us/azure/azure-video-indexer/indexing-configuration-guide |
 | Configure monitoring and diagnostics for Azure Video Indexer | https://learn.microsoft.com/en-us/azure/azure-video-indexer/monitor-video-indexer |
 | Reference for Azure Video Indexer monitoring data | https://learn.microsoft.com/en-us/azure/azure-video-indexer/monitor-video-indexer-data-reference |
 | Set Azure region parameters for Video Indexer APIs | https://learn.microsoft.com/en-us/azure/azure-video-indexer/regions |
-| Configure textual summarization with Azure Video Indexer | https://learn.microsoft.com/en-us/azure/azure-video-indexer/text-summarization-task |
+| Configure Azure OpenAI summarization in Video Indexer | https://learn.microsoft.com/en-us/azure/azure-video-indexer/text-summarization-task |
 
 ### Integrations & Coding Patterns
 | Topic | URL |
@@ -96,4 +99,6 @@ This skill requires **network access** to fetch documentation content:
 ### Deployment
 | Topic | URL |
 |-------|-----|
+| Deploy Azure Video Indexer as an Arc extension | https://learn.microsoft.com/en-us/azure/azure-video-indexer/arc/azure-video-indexer-enabled-by-arc-quickstart |
+| Create and manage Video Indexer real-time extensions | https://learn.microsoft.com/en-us/azure/azure-video-indexer/arc/live-extension |
 | Deploy Azure Video Indexer with ARM templates | https://learn.microsoft.com/en-us/azure/azure-video-indexer/deploy-with-arm-template |

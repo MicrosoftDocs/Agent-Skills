@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-16'
+generated_at: '2026-08-31'
 category_descriptions:
   integrations: 'Patterns and code for integrating Azure Maps: Web/REST/Power BI SDK
     usage, layers and drawing, geocoding/routing/weather, Spatial IO/WMS, and migrations
@@ -68,8 +68,8 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 
 ### Updated Pages
 
-- [Geocoding in Azure Maps Power BI Visual](https://learn.microsoft.com/en-us/azure/azure-maps/power-bi-visual-geocode)
-  - Updated: 2025-01-23T08:00:00.000Z → 2026-08-11T11:42:00.000Z
+- [Maps API](https://learn.microsoft.com/en-us/azure/azure-maps/rest-api-azure-maps)
+  - Updated: 2026-03-03T23:37:00.000Z → 2026-08-18T22:40:00.000Z
 
 ## Classified Pages
 
@@ -219,11 +219,11 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | [Geocoding in Azure Maps Power BI Visual](https://learn.microsoft.com/en-us/azure/azure-maps/power-bi-visual-geocode) | 0.20 | Page appears to explain how geocoding works in the Azure Maps Power BI visual and how to use the Location field with address data. From the summary, it does not indicate specific numeric limits, configuration parameter tables, error-code-based troubleshooting, or other product-specific expert details as defined in the sub-skill types. It is primarily conceptual/feature-usage guidance rather than expert-knowledge reference content. |
 | [Geographic coverage](https://learn.microsoft.com/en-us/azure/azure-maps/geographic-coverage) | 0.20 | Described as providing links to geographic coverage information. Likely a navigation/overview page pointing to external coverage details rather than containing concrete limits, configuration parameters, or decision matrices itself. Does not clearly match any expert-knowledge sub-skill type from the summary. |
 | [Map control](https://learn.microsoft.com/en-us/azure/azure-maps/release-notes-map-control) | 0.20 | Release notes typically list new features and changes without structured limits, configuration tables, error codes, or decision matrices. This page is a change log for the Azure Maps Web SDK Map Control, not a technical reference with expert-only details as defined by the sub-skill types. |
-| [Maps API](https://learn.microsoft.com/en-us/azure/azure-maps/rest-api-azure-maps) | 0.20 | Page is a navigational/overview index of Azure Maps REST APIs with service descriptions and links, but no concrete limits, configuration tables, error codes, or other product-specific expert details. |
 | [Multiple routes by mode of travel](https://learn.microsoft.com/en-us/azure/azure-maps/tutorial-prioritized-routes) | 0.20 | Tutorial for multiple travel modes; appears as example usage without detailed configuration matrices or limits. |
 | [On-object interaction](https://learn.microsoft.com/en-us/azure/azure-maps/power-bi-visual-on-object-interaction) | 0.20 | On-object interaction article describes UI formatting interactions; no indication of detailed configuration parameters or expert constraints. |
 | [Route to a destination](https://learn.microsoft.com/en-us/azure/azure-maps/tutorial-route-location) | 0.20 | Routing tutorial showing how to call Route service; no indication of limits, configuration tables, or troubleshooting mappings. |
 | [Search for point of interest](https://learn.microsoft.com/en-us/azure/azure-maps/tutorial-search-location) | 0.20 | Tutorial on searching locations; focuses on example usage rather than product-specific limits, configuration options, or error codes. |
 | [Spatial IO module](https://learn.microsoft.com/en-us/azure/azure-maps/release-notes-spatial-module) | 0.20 | This Spatial IO Module release notes page is a change log for the Azure Maps Spatial IO Module. It does not present structured limits, configuration tables, error codes, or decision-making guidance required for classification into the defined sub-skill types. |
 | [What is Azure Maps?](https://learn.microsoft.com/en-us/azure/azure-maps/about-azure-maps) | 0.20 | High-level product overview of Azure Maps services and capabilities without detailed limits, configuration tables, or error mappings. |
+| [Maps API](https://learn.microsoft.com/en-us/azure/azure-maps/rest-api-azure-maps) | - | Page is an overview and link hub for Azure Maps REST APIs, listing available services but not providing limits, configuration parameters, error codes, or other detailed expert knowledge. |
 | [Weather service FAQ](https://learn.microsoft.com/en-us/azure/azure-maps/weather-services-faq) | - | FAQ-style page about Azure Maps Weather service; based on the description it likely covers general questions about data and features rather than detailed limits, configuration parameters, error codes, or decision matrices. Without evidence of specific numeric limits, config tables, or error-code mappings, it doesn't meet any sub-skill detection criteria. |

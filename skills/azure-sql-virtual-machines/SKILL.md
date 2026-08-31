@@ -1,9 +1,9 @@
 ---
 name: azure-sql-virtual-machines
-description: Expert knowledge for SQL Server on Azure Virtual Machines development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when planning SQL VM vs Managed Instance, Always On/FCI, SQL IaaS Agent, Key Vault/EKM, or Blob backup configs, and other SQL Server on Azure Virtual Machines related development tasks. Not for Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance), Azure Virtual Machines (use azure-virtual-machines), SAP HANA on Azure Large Instances (use azure-sap).
+description: Expert knowledge for SQL Server on Azure Virtual Machines development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using SQL Server on Azure VMs with AG/FCI, WSFC, DNN listeners, Key Vault/EKM, or Blob backups, and other SQL Server on Azure Virtual Machines related development tasks. Not for Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance), Azure Virtual Machines (use azure-virtual-machines), Azure Data Science Virtual Machines (use azure-data-science-vm).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-16"
+  generated_at: "2026-08-31"
   generator: "docs2skills/1.0.0"
 ---
 # SQL Server on Azure Virtual Machines Skill
@@ -24,15 +24,15 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L51 | Diagnosing and fixing Azure SQL and SQL Server on Azure VM issues: capacity, performance, connectivity, geo-replication, memory, transaction log full, I/O throttling, and IaaS Agent extension errors. |
-| Best Practices | L52-L65 | Best practices for SQL Server on Azure VMs: HA/DR clustering, DNN listeners, backup/restore, performance tuning, storage and VM sizing, baselines, and best practices assessments. |
-| Decision Making | L66-L77 | Guidance for choosing Azure SQL options and pricing, comparing SQL VMs vs Managed Instance, planning migrations (including Db2), HADR choices, regional feature support, and SQL VM licensing/AHB. |
-| Architecture & Design Patterns | L78-L86 | High-level designs and patterns for SQL Server on Azure VMs: connectivity, Always On availability groups, failover cluster instances, and Windows Server Failover Clustering setup. |
-| Limits & Quotas | L87-L91 | Info on Azure SQL capacity limits, DTU benchmark behavior, regional feature availability, and how to request quota increases for databases and managed instances |
-| Security | L92-L101 | Securing SQL Server on Azure VMs: policies, TLS cert rotation, Key Vault/EKM, managed identities, Entra auth, Extended Security Updates, hardening guidance, and confidential VM deployment. |
-| Configuration | L102-L145 | Configuring SQL Server on Azure VMs and related services: deployment, storage, clustering/FCI, availability groups, load balancers, backups, monitoring, and SQL IaaS Agent/VM management. |
-| Integrations & Coding Patterns | L146-L151 | Backing up SQL Server on Azure VMs directly to Azure Blob Storage, including configurations that use managed identities instead of stored credentials. |
-| Deployment | L152-L169 | Deploying and configuring SQL Server Always On/FCI on Azure VMs, including single/multi-subnet AGs, cross-region setups, migrations (regions, disks, FCI), and confidential VM deployments. |
+| Troubleshooting | L37-L52 | Diagnosing and fixing performance, connectivity, capacity, memory, I/O, and transaction log issues for Azure SQL Database, Managed Instance, and SQL Server on Azure VMs. |
+| Best Practices | L53-L66 | Best practices for SQL Server on Azure VMs: HA/DR clustering, DNN listeners, backup/restore, performance tuning, storage and VM sizing, baselines, and best practices assessments. |
+| Decision Making | L67-L78 | Guidance for choosing Azure SQL options and pricing, comparing SQL VMs vs Managed Instance, planning migrations (including Db2), HADR choices, regional feature support, and SQL VM licensing/AHB. |
+| Architecture & Design Patterns | L79-L87 | High-level designs and patterns for SQL Server on Azure VMs: connectivity, Always On availability groups, failover cluster instances, and Windows Server Failover Clustering setup. |
+| Limits & Quotas | L88-L92 | Info on Azure SQL capacity limits, DTU benchmark behavior, regional feature availability, and how to request quota increases for databases and managed instances |
+| Security | L93-L102 | Securing SQL Server on Azure VMs: policies, TLS cert rotation, Key Vault/EKM, managed identities, Entra auth, Extended Security Updates, hardening guidance, and confidential VM deployment. |
+| Configuration | L103-L147 | Configuring SQL Server on Azure VMs and related services: VM deployment, storage, clustering/AG, load balancers/listeners, IaaS Agent, backups, performance, and connectivity settings. |
+| Integrations & Coding Patterns | L148-L153 | Backing up SQL Server on Azure VMs directly to Azure Blob Storage, including configurations that use managed identities instead of stored credentials. |
+| Deployment | L154-L170 | Deploying and configuring SQL Server availability groups and FCIs on Azure VMs, including single/multi-subnet, cross-region setups, migrations, and disk/Confidential VM deployment. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -46,6 +46,7 @@ This skill requires **network access** to fetch documentation content:
 | Diagnose and fix Azure SQL DB transaction log full errors | https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-transaction-log-errors-issues?view=azuresql-db |
 | Resolve known issues in Azure SQL Managed Instance | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-known-issues?view=azuresql |
 | Resolve transaction log full errors in Azure SQL Managed Instance | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/troubleshoot-transaction-log-errors-issues?view=azuresql-mi |
+| Resolve common SQL Server on Azure VM issues | https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/frequently-asked-questions-faq?view=azuresql |
 | Troubleshoot SQL Server IaaS Agent extension issues on Azure VMs | https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/sql-agent-extension-troubleshoot-known-issues?view=azuresql |
 | Diagnose I/O throttling for SQL Server on Azure VMs | https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/storage-performance-analysis?view=azuresql |
 
@@ -104,7 +105,7 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Identify modifiable settings in Azure SQL Database | https://learn.microsoft.com/en-us/azure/azure-sql/database/modifiable-configuration-reference?view=azuresql |
 | Reference for Azure SQL Database monitoring metrics and logs | https://learn.microsoft.com/en-us/azure/azure-sql/database/monitoring-sql-database-azure-monitor-reference?view=azuresql |
-| Identify modifiable settings in Azure SQL Managed Instance | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/modifiable-configuration-reference?view=azuresql |
+| Modify Azure SQL Managed Instance configuration settings | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/modifiable-configuration-reference?view=azuresql |
 | Reference Azure Monitor metrics for SQL Managed Instance | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/monitoring-sql-managed-instance-azure-monitor-reference?view=azuresql |
 | Set up Always On AG with DH2i DxEnterprise on Azure | https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/linux/dh2i-high-availability-tutorial?view=azuresql |
 | Configure availability group listener for Linux SQL VMs | https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/linux/high-availability-listener-tutorial?view=azuresql |
@@ -119,6 +120,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure DNN listener for SQL availability groups on VMs | https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/availability-group-distributed-network-name-dnn-listener-configure?view=azuresql |
 | Configure AG listeners and load balancer via PowerShell | https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/availability-group-listener-powershell-configure?view=azuresql |
 | Configure load balancer and AG listener in Azure portal | https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/availability-group-load-balancer-portal-configure?view=azuresql |
+| Configure SQL Server AG with Azure quickstart template | https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/availability-group-quickstart-template-configure?view=azuresql |
 | Configure Azure Load Balancer for SQL AG VNN listener | https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/availability-group-vnn-azure-load-balancer-configure?view=azuresql |
 | Change SQL Server edition in-place on Azure VMs | https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/change-sql-server-edition?view=azuresql |
 | Upgrade or downgrade SQL Server version in-place on Azure VMs | https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/change-sql-server-version?view=azuresql |
@@ -162,7 +164,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure multi-subnet availability group on SQL VMs | https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/availability-group-manually-configure-tutorial-multi-subnet?view=azuresql |
 | Configure single-subnet Always On availability group | https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/availability-group-manually-configure-tutorial-single-subnet?view=azuresql |
 | Migrate availability group from single to multi-subnet | https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/availability-group-manually-migrate-multi-subnet?view=azuresql |
-| Deploy availability group using Azure quickstart templates | https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/availability-group-quickstart-template-configure?view=azuresql |
 | Migrate SQL Server VMs to another Azure region | https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/move-sql-vm-different-region?view=azuresql |
 | Deploy SQL Server on Azure Confidential VMs | https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/sql-vm-create-confidential-vm-how-to?view=azuresql |
 | Migrate SQL Server VM log disk to Azure Ultra Disk | https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/storage-migrate-to-ultradisk?view=azuresql |

@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 27
-- **Unchanged**: 153
+- **Updated Pages**: 0
+- **Unchanged**: 180
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-defender-for-iot/azure-defender-for-iot.csv`
 
@@ -76,50 +76,6 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | *(Unclassified)* | 59 | 32.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [Alerts](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/alerts)
-  - Updated: 2026-06-23T22:34:00.000Z → 2026-07-03T08:00:00.000Z
-- [Configure proxy settings](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/connect-sensors)
-  - Updated: 2026-06-23T22:34:00.000Z → 2026-07-03T08:00:00.000Z
-- [Control OT traffic monitoring](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-control-what-traffic-is-monitored)
-  - Updated: 2026-06-23T22:34:00.000Z → 2026-07-03T08:00:00.000Z
-- [Azure portal](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-manage-device-inventory-for-organizations)
-  - Updated: 2026-06-23T22:34:00.000Z → 2026-08-11T07:34:00.000Z
-- [OT sensor console](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-investigate-sensor-detections-in-a-device-inventory)
-  - Updated: 2026-06-23T22:34:00.000Z → 2026-07-03T08:00:00.000Z
-- [Create data mining reports](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-create-data-mining-queries)
-  - Updated: 2026-06-23T22:34:00.000Z → 2026-07-03T08:00:00.000Z
-- [Azure portal](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-manage-cloud-alerts)
-  - Updated: 2026-06-23T22:34:00.000Z → 2026-07-03T08:00:00.000Z
-- [Accelerate on-premises alert workflows](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-accelerate-alert-incident-response)
-  - Updated: 2026-06-23T22:34:00.000Z → 2026-07-03T08:00:00.000Z
-- [Forward on-premises alert data](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-forward-alert-information-to-partners)
-  - Updated: 2026-06-23T22:34:00.000Z → 2026-07-03T08:00:00.000Z
-- [Create risk assessment reports](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-create-risk-assessment-reports)
-  - Updated: 2026-06-23T22:34:00.000Z → 2026-07-03T08:00:00.000Z
-- [Create trends and statistics reports](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-create-trends-and-statistics-reports)
-  - Updated: 2026-06-23T22:34:00.000Z → 2026-07-03T08:00:00.000Z
-- [Create attack vector reports](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-create-attack-vector-reports)
-  - Updated: 2026-06-23T22:34:00.000Z → 2026-08-11T07:34:00.000Z
-- [Analyze OT programming details and changes](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-analyze-programming-details-changes)
-  - Updated: 2026-06-23T22:34:00.000Z → 2026-07-03T08:00:00.000Z
-- [Import extra data for detected OT devices](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-import-device-information)
-  - Updated: 2026-06-23T22:34:00.000Z → 2026-08-11T07:34:00.000Z
-- [Detect Windows workstations and servers by script](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/detect-windows-endpoints-script)
-  - Updated: 2026-06-23T22:34:00.000Z → 2026-07-03T08:00:00.000Z
-- [Planning and prerequisites](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/configure-active-monitoring)
-  - Updated: 2026-04-28T17:57:00.000Z → 2026-08-11T07:34:00.000Z
-- [Configure Windows Endpoint Monitoring](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/configure-windows-endpoint-monitoring)
-  - Updated: 2026-06-23T22:34:00.000Z → 2026-07-03T08:00:00.000Z
-- [Backup and restore](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/back-up-restore-sensor)
-  - Updated: 2026-06-23T22:34:00.000Z → 2026-07-03T08:00:00.000Z
-- [Configure OT sensor settings from the Azure portal](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/configure-sensor-settings-portal)
-  - Updated: 2026-06-23T22:34:00.000Z → 2026-07-03T08:00:00.000Z
-- [Install Defender for IoT micro agent for Edge](https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/how-to-install-micro-agent-for-edge)
-  - Updated: 2026-08-07T17:41:00.000Z → 2026-08-11T07:34:00.000Z
-- *...and 7 more*
 
 ## Classified Pages
 

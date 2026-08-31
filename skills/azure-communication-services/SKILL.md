@@ -1,9 +1,9 @@
 ---
 name: azure-communication-services
-description: Expert knowledge for Azure Communication Services development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building ACS calling/chat, SMS/email, Teams interop, Rooms/Job Router, or telephony/PSTN solutions, and other Azure Communication Services related development tasks. Not for Azure Notification Hubs (use azure-notification-hubs), Azure SignalR Service (use azure-signalr-service), Azure Web PubSub (use azure-web-pubsub), Azure AI Bot Service (use azure-bot-service).
+description: Expert knowledge for Azure Communication Services development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building ACS calling/chat apps, SMS/email senders, Teams interop, Rooms/Job Router, or WhatsApp flows, and other Azure Communication Services related development tasks. Not for Azure AI Bot Service (use azure-bot-service), Azure Notification Hubs (use azure-notification-hubs), Azure Web PubSub (use azure-web-pubsub), Azure SignalR Service (use azure-signalr-service).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-26"
+  generated_at: "2026-08-31"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Communication Services Skill
@@ -28,7 +28,7 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L112-L137 | Best practices for ACS calling, SMS, email, IDs, auth, Teams interop, network/quality, spam/opt-out compliance, and production-ready virtual visit and meeting experiences. |
 | Decision Making | L138-L154 | Guidance for planning ACS solutions: Teams interop in gov clouds, PSTN/phone number options, pricing/licensing, and migration from Twilio Video/Chat to ACS Calling/Chat. |
 | Architecture & Design Patterns | L155-L160 | Designing scalable contact center solutions with ACS and patterns for integrating ACS with ExpressRoute for secure, private connectivity and network architecture. |
-| Limits & Quotas | L161-L228 | Limits, quotas, regional availability, and restrictions for ACS calling, phone numbers, email, Teams interop, media features, and troubleshooting token/metric-related issues. |
+| Limits & Quotas | L161-L228 | Limits, quotas, and regional rules for ACS calling, phone numbers, SMS, email sending, Teams interop, media features, and emergency/toll‑free/direct routing constraints. |
 | Security | L229-L254 | Security, auth, and compliance for ACS: encryption, identities, HMAC, caller ID, email/SMTP, Teams interop, captions/transcription, emergency calling, and secure webhooks/Rooms. |
 | Configuration | L255-L332 | Configuring monitoring, logging, metrics, and insights for ACS (chat, voice/video, calls, SMS, email), plus setup for Teams interop, direct routing, UI Library options, and SMS/email domain/sender settings. |
 | Integrations & Coding Patterns | L333-L480 | End-to-end patterns for integrating ACS calling, chat, SMS, email, Rooms, Job Router, WhatsApp, Teams, OpenAI/bots, and UI libraries, including media control, events, push, and telephony interop. |
@@ -165,15 +165,15 @@ This skill requires **network access** to fetch documentation content:
 | Supported MIME types for ACS email attachments | https://learn.microsoft.com/en-us/azure/communication-services/concepts/email/email-attachment-allowed-mime-types |
 | Request higher email sending quotas in ACS | https://learn.microsoft.com/en-us/azure/communication-services/concepts/email/email-quota-increase |
 | Review known issues and limitations for ACS Teams external users | https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/guest/limitations |
-| Argentina ACS phone number availability and restrictions | https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-argentina |
-| Australia ACS phone number availability and restrictions | https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-australia |
-| Austria ACS phone number availability and restrictions | https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-austria |
+| Check Azure phone number rules for Argentina | https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-argentina |
+| Check Azure phone number rules for Australia | https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-australia |
+| Azure phone number rules and SMS IDs for Austria | https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-austria |
 | Belgium ACS phone number availability and restrictions | https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-belgium |
-| Brazil ACS phone number availability and restrictions | https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-brazil |
-| Canada ACS phone number availability and restrictions | https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-canada |
-| Chile ACS phone number availability and restrictions | https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-chile |
-| China ACS phone number availability and restrictions | https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-china |
-| Colombia ACS phone number availability and restrictions | https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-colombia |
+| Check Azure phone number rules for Brazil | https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-brazil |
+| Check Azure phone number rules for Canada | https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-canada |
+| Check Azure phone number rules for Chile | https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-chile |
+| Check Azure phone number rules for China | https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-china |
+| Check Colombia phone number availability and restrictions | https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-colombia |
 | Czech Republic ACS phone number availability and restrictions | https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-czech-republic |
 | Check Denmark phone number availability and restrictions | https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-denmark |
 | Check Estonia phone number availability and restrictions | https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-estonia |
@@ -203,7 +203,7 @@ This skill requires **network access** to fetch documentation content:
 | Check Slovenia phone number availability and restrictions | https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-slovenia |
 | Check South Africa phone number availability and restrictions | https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-south-africa |
 | Check South Korea phone number availability and restrictions | https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-south-korea |
-| Check Spain phone number availability and restrictions | https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-spain |
+| Check Spain phone number availability and SMS restrictions | https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-spain |
 | Check Sweden phone number availability and restrictions | https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-sweden |
 | Check Switzerland phone number availability and restrictions | https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-switzerland |
 | Check Taiwan phone number availability and restrictions | https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-taiwan |

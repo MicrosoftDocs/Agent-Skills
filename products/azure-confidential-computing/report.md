@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-21'
+generated_at: '2026-08-31'
 category_descriptions:
   integrations: Coding patterns and samples for building, running, and attesting Intel
     SGX/AMD SEV-SNP confidential apps and containers, including SKR flows, tools,
@@ -48,8 +48,8 @@ confusable_not_for: Not for Azure Virtual Enclaves (use azure-virtual-enclaves),
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 70
+- **Updated Pages**: 1
+- **Unchanged**: 69
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-confidential-computing/azure-confidential-computing.csv`
 
@@ -67,6 +67,11 @@ confusable_not_for: Not for Azure Virtual Enclaves (use azure-virtual-enclaves),
 | *(Unclassified)* | 21 | 30.0% |
 
 ## Changes
+
+### Updated Pages
+
+- [BeeKeeperAI](https://learn.microsoft.com/en-us/azure/confidential-computing/partner-pages/beekeeperai)
+  - Updated: 2023-07-06T22:41:00.000Z → 2026-08-19T17:11:00.000Z
 
 ## Classified Pages
 
@@ -135,7 +140,6 @@ confusable_not_for: Not for Azure Virtual Enclaves (use azure-virtual-enclaves),
 | [Anjuna](https://learn.microsoft.com/en-us/azure/confidential-computing/partner-pages/anjuna) | 0.20 | Partner solution marketing page for Anjuna; likely conceptual and sales-focused rather than detailed technical guidance. |
 | [Application enclave VM FAQ](https://learn.microsoft.com/en-us/azure/confidential-computing/faq-application-enclaves) | 0.20 | Only a high-level FAQ description is provided; no evidence of specific limits, configuration parameters, error codes, or other detailed expert-only data. Likely general Q&A and conceptual guidance rather than numeric limits, configuration tables, or troubleshooting mappings. |
 | [Azure Confidential Clean Room](https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-clean-rooms) | 0.20 | Describes what Azure Confidential Clean Rooms are and typical scenarios; summary does not indicate concrete configuration settings, quotas, or troubleshooting details. |
-| [BeeKeeperAI](https://learn.microsoft.com/en-us/azure/confidential-computing/partner-pages/beekeeperai) | 0.20 | Partner solution marketing page for BeeKeeper AI; summary indicates high-level description only. |
 | [Confidential computing on Azure](https://learn.microsoft.com/en-us/azure/confidential-computing/overview-azure-products) | 0.20 | High-level overview of Azure Confidential Computing products; no detailed limits, configuration parameters, error codes, or decision matrices. |
 | [Decentriq](https://learn.microsoft.com/en-us/azure/confidential-computing/partner-pages/decentriq) | 0.20 | Partner solution marketing page for Decentriq; no evidence of detailed Azure configuration or limits. |
 | [Edgeless](https://learn.microsoft.com/en-us/azure/confidential-computing/partner-pages/edgeless) | 0.20 | Partner solution marketing page for Edgeless; appears to be high-level solution description. |
@@ -147,3 +151,4 @@ confusable_not_for: Not for Azure Virtual Enclaves (use azure-virtual-enclaves),
 | [Trusted compute base (TCB)](https://learn.microsoft.com/en-us/azure/confidential-computing/trusted-compute-base) | 0.20 | Conceptual explanation of Trusted Computing Base; no concrete Azure configuration, limits, or decision criteria. |
 | [Trusted execution environment (TEE)](https://learn.microsoft.com/en-us/azure/confidential-computing/trusted-execution-environment) | 0.20 | Explains what a TEE is conceptually; lacks product-specific configuration, limits, or decision matrices. |
 | [Real-time protection of data in use](https://learn.microsoft.com/en-us/azure/confidential-computing/overview) | 0.10 | High-level conceptual overview of Azure Confidential Computing without product-specific limits, configs, or detailed procedures. |
+| [BeeKeeperAI](https://learn.microsoft.com/en-us/azure/confidential-computing/partner-pages/beekeeperai) | - | Partner/marketing-style overview of BeeKeeperAI EscrowAI platform using Azure confidential computing; no concrete limits, configuration parameters, error codes, or decision matrices with quantified trade-offs. |

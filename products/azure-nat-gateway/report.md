@@ -46,8 +46,8 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 9
-- **Unchanged**: 16
+- **Updated Pages**: 0
+- **Unchanged**: 25
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-nat-gateway/azure-nat-gateway.csv`
 
@@ -66,27 +66,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | *(Unclassified)* | 11 | 44.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [Migrate Azure NAT Gateway to Standard V2](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-v2-migrate)
-  - Updated: 2026-07-29T08:00:00.000Z → 2026-08-11T08:00:00.000Z
-- [Use a NAT gateway with Azure Firewall](https://learn.microsoft.com/en-us/azure/nat-gateway/tutorial-hub-spoke-nat-firewall)
-  - Updated: 2025-11-18T17:01:00.000Z → 2026-08-11T08:00:00.000Z
-- [Migrate outbound access](https://learn.microsoft.com/en-us/azure/nat-gateway/tutorial-migrate-outbound-nat)
-  - Updated: 2026-04-16T22:31:00.000Z → 2026-08-10T08:00:00.000Z
-- [Manage a Standard NAT gateway](https://learn.microsoft.com/en-us/azure/nat-gateway/manage-nat-gateway)
-  - Updated: 2024-10-08T17:03:00.000Z → 2026-08-11T22:11:00.000Z
-- [Manage a Standard V2 NAT gateway](https://learn.microsoft.com/en-us/azure/nat-gateway/manage-nat-gateway-v2)
-  - Updated: 2026-04-09T06:11:00.000Z → 2026-08-11T08:00:00.000Z
-- [Manage Standard V2 NAT gateway flow logs](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-flow-logs)
-  - Updated: 2026-01-22T06:12:00.000Z → 2026-08-12T05:20:00.000Z
-- [Monitor Standard V2 NAT gateway flow logs](https://learn.microsoft.com/en-us/azure/nat-gateway/monitor-nat-gateway-flow-logs)
-  - Updated: 2026-01-22T06:12:00.000Z → 2026-08-12T05:20:00.000Z
-- [Monitoring data reference](https://learn.microsoft.com/en-us/azure/nat-gateway/monitor-nat-gateway-reference)
-  - Updated: 2025-06-19T22:03:00.000Z → 2026-08-10T08:00:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/nat-gateway/faq)
-  - Updated: 2026-04-16T17:19:00.000Z → 2026-08-11T22:11:00.000Z
 
 ## Classified Pages
 

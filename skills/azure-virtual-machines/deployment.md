@@ -27,5 +27,4 @@
 | Migrate Windows VMs from unmanaged to managed disks with PowerShell | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/convert-unmanaged-to-managed-disks |
 | Migrate Windows VMs to Azure Premium Storage with Site Recovery | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/migrate-to-premium-storage-using-azure-site-recovery |
 | Migrate AWS/on-prem VHDs to Azure managed disk VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/on-prem-to-azure |
-| Perform in-place upgrades of RHEL images on Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/workloads/redhat/redhat-in-place-upgrade |
 | Implement blue-green deployments to Azure Linux VMs with Azure Pipelines | https://learn.microsoft.com/en-us/previous-versions/azure/virtual-machines/linux/tutorial-azure-devops-blue-green-strategy |

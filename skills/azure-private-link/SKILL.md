@@ -1,9 +1,9 @@
 ---
 name: azure-private-link
-description: Expert knowledge for Azure Private Link development including best practices, decision making, architecture & design patterns, limits & quotas, security, and configuration. Use when configuring Private Endpoints, DNS zones, Azure Private Resolver, NSGs/NSPs, or Azure Firewall traffic flows, and other Azure Private Link related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Application Gateway (use azure-application-gateway), Azure Front Door (use azure-front-door).
+description: Expert knowledge for Azure Private Link development including best practices, decision making, architecture & design patterns, limits & quotas, security, and configuration. Use when configuring Private Endpoints, NSP perimeters, DNS/Private Resolver, Azure Firewall traffic, or Terraform setups, and other Azure Private Link related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Load Balancer (use azure-load-balancer), Azure Application Gateway (use azure-application-gateway).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-16"
+  generated_at: "2026-08-31"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Private Link Skill
@@ -29,7 +29,7 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L45-L49 | Designing DNS architectures for Private Endpoints using Azure Private Resolver, including name resolution patterns, forwarding rules, and integration with on-premises or hybrid networks |
 | Limits & Quotas | L50-L56 | Limits, quotas, and behaviors for Private Link/Endpoints, how to check service availability per resource, and how to request increases to VNet Private Endpoint limits. |
 | Security | L57-L64 | RBAC setup for Private Link and Network Security Perimeters, security best practices, and inspecting/controlling Private Endpoint traffic with Azure Firewall. |
-| Configuration | L65-L81 | Configuring Private Link and endpoints: NSP perimeters, subnet/network policies, DNS, IPv6, SNAT/NVA routing, monitoring/diagnostics, and setup via portal, CLI, or PowerShell. |
+| Configuration | L65-L82 | Configuring Azure Private Link and service endpoints: NSP perimeters, subnet policies, DNS, SNAT/NVA, IPv6, monitoring/logs, and setup via portal, CLI, PowerShell, and Terraform. |
 
 ### Best Practices
 | Topic | URL |
@@ -69,6 +69,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure standard service endpoints using Azure CLI | https://learn.microsoft.com/en-us/azure/private-link/configure-service-endpoint-standard-cli |
 | Configure standard service endpoints in Azure portal | https://learn.microsoft.com/en-us/azure/private-link/configure-service-endpoint-standard-portal |
 | Configure standard service endpoints with PowerShell | https://learn.microsoft.com/en-us/azure/private-link/configure-service-endpoint-standard-powershell |
+| Configure Azure Private Link service endpoint with Terraform | https://learn.microsoft.com/en-us/azure/private-link/configure-service-endpoint-standard-terraform |
 | Create and manage network security perimeters with Azure CLI | https://learn.microsoft.com/en-us/azure/private-link/create-network-security-perimeter-cli |
 | Create and manage a network security perimeter in portal | https://learn.microsoft.com/en-us/azure/private-link/create-network-security-perimeter-portal |
 | Configure subnet network policies for private endpoints | https://learn.microsoft.com/en-us/azure/private-link/disable-private-endpoint-network-policy |

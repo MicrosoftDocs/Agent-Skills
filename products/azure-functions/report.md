@@ -1,39 +1,39 @@
 ---
-generated_at: '2026-08-16'
+generated_at: '2026-08-31'
 category_descriptions:
-  integrations: How to connect Functions to external services (storage, databases,
-    messaging, AI/OpenAI, MCP/Dapr, SignalR/Web PubSub) using triggers/bindings and
-    integration patterns across languages.
-  decision-making: Guidance on choosing Azure Functions hosting/runtime models, comparing
-    costs, and planning migrations (AWS Lambda, legacy plans, .NET models, language/runtime
-    versions).
-  security: 'Securing Azure Functions: encryption at rest, secure storage, access
-    keys, networking/VNet/private endpoints, private site access, managed identity
-    for SQL, and MCP server hardening.'
-  configuration: Configuring Azure Functions behavior, runtime, triggers/bindings,
-    networking, monitoring/tracing, local dev tools, and app settings (incl. Cosmos
-    DB, SQL, Event Hubs, OpenAI, NAT, Elastic, versions).
+  integrations: Patterns and how-tos for wiring Functions to other services (OpenAI,
+    data stores, messaging, MCP, Dapr, Logic Apps), including triggers, input/output
+    bindings, and language-specific integration code.
+  security: 'Securing Azure Functions: encryption at rest, storage and key protection,
+    networking/VNet/private endpoints, private site access, managed identity for SQL,
+    and App Service security features.'
+  configuration: Configuring Azure Functions behavior, triggers/bindings, networking,
+    monitoring/telemetry, runtime versions, and local tools/settings for app execution
+    and integrations.
+  decision-making: Choosing Azure Functions hosting/runtime options (Consumption,
+    Dedicated, Flex, Container Apps), comparing costs, and planning migrations between
+    models, versions, and from AWS Lambda.
   deployment: 'Deploying and hosting Azure Functions: provisioning plans with IaC
     tools, containers/Kubernetes, CI/CD (GitHub/Azure Pipelines), slots, zip/package
     deploy, migrations, and language‑specific build/publish.'
   troubleshooting: Diagnosing and fixing Azure Functions runtime and configuration
     issues (AZFD/AZFW codes), storage and secrets errors, timers, worker runtime mismatches,
     networking, and Node.js/Python-specific problems.
-  best-practices: Guidance on coding, performance, reliability, error handling, DI,
-    idempotency, and language-specific (C#, Java, Node.js, Python) best practices
-    for Azure Functions.
+  best-practices: Design, coding, error-handling, performance, scaling, and reliability
+    best practices for Azure Functions across .NET, Node.js, Java, and Python, including
+    DI, idempotency, HttpClient, and memory use.
   limits-quotas: 'Scaling and concurrency limits for Functions: how triggers scale,
     configuring max concurrent executions, and using target-based scaling to control
     throughput and resource usage.'
 skill_description: Expert knowledge for Azure Functions development including troubleshooting,
   best practices, decision making, limits & quotas, security, configuration, integrations
-  & coding patterns, and deployment. Use when building trigger/binding integrations,
-  choosing hosting plans, securing VNets/identities, or tuning scaling limits, and
-  other Azure Functions related development tasks. Not for Azure App Service (use
-  azure-app-service), Azure Logic Apps (use azure-logic-apps), Azure Container Apps
-  (use azure-container-apps), Azure Kubernetes Service (AKS) (use azure-kubernetes-service).
-use_when: Use when building trigger/binding integrations, choosing hosting plans,
-  securing VNets/identities, or tuning scaling limits, and other Azure Functions related
+  & coding patterns, and deployment. Use when wiring Functions to triggers/bindings,
+  VNet/private endpoints, Flex/Container hosting, CI/CD, or scaling limits, and other
+  Azure Functions related development tasks. Not for Azure App Service (use azure-app-service),
+  Azure Logic Apps (use azure-logic-apps), Azure Container Apps (use azure-container-apps),
+  Azure Kubernetes Service (AKS) (use azure-kubernetes-service).
+use_when: Use when wiring Functions to triggers/bindings, VNet/private endpoints,
+  Flex/Container hosting, CI/CD, or scaling limits, and other Azure Functions related
   development tasks.
 confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Logic
   Apps (use azure-logic-apps), Azure Container Apps (use azure-container-apps), Azure
@@ -43,17 +43,17 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Log
 
 ## Summary
 
-- **Total Pages**: 295
-- **Fetched**: 295
+- **Total Pages**: 294
+- **Fetched**: 294
 - **Fetch Failed**: 0
-- **Classified**: 237
-- **Unclassified**: 58
+- **Classified**: 234
+- **Unclassified**: 60
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 291
-- **Deleted Pages**: 0
+- **New Pages**: 5
+- **Updated Pages**: 5
+- **Unchanged**: 284
+- **Deleted Pages**: 6
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-functions/azure-functions.csv`
 
 ## Classification Statistics
@@ -61,27 +61,46 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Log
 | Type | Count | Percentage |
 |------|-------|------------|
 | best-practices | 15 | 5.1% |
-| configuration | 39 | 13.2% |
-| decision-making | 19 | 6.4% |
+| configuration | 38 | 12.9% |
+| decision-making | 17 | 5.8% |
 | deployment | 28 | 9.5% |
-| integrations | 102 | 34.6% |
+| integrations | 102 | 34.7% |
 | limits-quotas | 3 | 1.0% |
 | security | 11 | 3.7% |
 | troubleshooting | 20 | 6.8% |
-| *(Unclassified)* | 58 | 19.7% |
+| *(Unclassified)* | 60 | 20.4% |
 
 ## Changes
 
+### New Pages
+
+- [Managed connectors](https://learn.microsoft.com/en-us/azure/azure-functions/functions-connectors-overview)
+- [Event-driven AI app](https://learn.microsoft.com/en-us/azure/azure-functions/scenario-hosted-skills)
+- [Overview](https://learn.microsoft.com/en-us/azure/azure-functions/functions-hosted-skills)
+- [Reference](https://learn.microsoft.com/en-us/azure/azure-functions/functions-hosted-skills-reference)
+- [Migrate from Express.js](https://learn.microsoft.com/en-us/azure/azure-functions/shift-expressjs)
+
 ### Updated Pages
 
+- [Reliable event processing](https://learn.microsoft.com/en-us/azure/azure-functions/functions-reliable-event-processing)
+  - Updated: 2025-07-01T17:29:00.000Z → 2026-08-18T06:11:00.000Z
+- [AI-enabled functions](https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-ai-enabled-apps)
+  - Updated: 2026-06-02T18:53:00.000Z → 2026-08-28T22:12:00.000Z
 - [Work with access keys](https://learn.microsoft.com/en-us/azure/azure-functions/function-keys-how-to)
-  - Updated: 2025-11-06T08:00:00.000Z → 2026-08-12T22:14:00.000Z
-- [Linux container (Premium)](https://learn.microsoft.com/en-us/azure/azure-functions/functions-deploy-container)
-  - Updated: 2025-02-05T23:02:00.000Z → 2026-08-08T08:00:00.000Z
-- [Containerized functions](https://learn.microsoft.com/en-us/azure/azure-functions/container-concepts)
-  - Updated: 2025-07-30T22:07:00.000Z → 2026-08-12T22:14:00.000Z
-- [Azure Container Apps hosting](https://learn.microsoft.com/en-us/azure/azure-functions/functions-container-apps-hosting)
-  - Updated: 2025-05-22T05:20:00.000Z → 2026-08-08T08:00:00.000Z
+  - Updated: 2026-08-12T22:14:00.000Z → 2026-08-27T09:10:00.000Z
+- [Migrate .NET apps to the isolated model](https://learn.microsoft.com/en-us/azure/azure-functions/migrate-dotnet-to-isolated-model)
+  - Updated: 2026-03-20T08:00:00.000Z → 2026-08-23T08:00:00.000Z
+- [Functions 1.x (legacy)](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-cosmosdb)
+  - Updated: 2023-09-27T22:04:00.000Z → 2026-08-12T08:00:00.000Z
+
+### Deleted Pages
+
+- ~~Compare agent options~~ (https://learn.microsoft.com/en-us/azure/azure-functions/compare-serverless-agents-runtime)
+- ~~Use connectors in Azure Functions~~ (https://learn.microsoft.com/en-us/azure/azure-functions/functions-connectors-overview)
+- ~~Overview~~ (https://learn.microsoft.com/en-us/azure/azure-functions/functions-serverless-agents-runtime)
+- ~~Reference~~ (https://learn.microsoft.com/en-us/azure/azure-functions/functions-serverless-agents-runtime-reference)
+- ~~Serverless agents~~ (https://learn.microsoft.com/en-us/azure/azure-functions/scenario-serverless-agents-runtime)
+- ~~Express.js~~ (https://learn.microsoft.com/en-us/azure/azure-functions/shift-expressjs)
 
 ## Classified Pages
 
@@ -98,7 +117,6 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Log
 | [Output](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-kafka-output) | integrations | 0.86 | Output binding reference includes Kafka topic configuration, connection parameters, and plan/runtime support details unique to Azure Functions. |
 | [Output](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-rabbitmq-output) | integrations | 0.86 | Output binding reference includes RabbitMQ queue configuration and plan/runtime support constraints unique to Azure Functions’ RabbitMQ integration. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-rabbitmq) | integrations | 0.86 | RabbitMQ bindings reference includes trigger/output binding configuration and a plan/runtime support matrix (Elastic Premium, Dedicated, unsupported plans), which are detailed integration constraints. |
-| [Reference](https://learn.microsoft.com/en-us/azure/azure-functions/functions-serverless-agents-runtime-reference) | configuration | 0.86 | A runtime reference page for serverless agents that documents agent file fields, app configuration, MCP servers, skills, tools, model providers, managed identity, and built-in endpoints. This is a configuration reference with product-specific setting names, structures, and allowed values that aren't derivable from general knowledge. |
 | [Trigger](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-http-webhook-trigger) | integrations | 0.86 | HTTP trigger reference includes specific binding properties (route templates, authorization levels) and notes about HttpClient usage that are concrete, product-specific integration details. |
 | [Trigger](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-kafka-trigger) | integrations | 0.86 | Trigger reference documents Kafka-specific binding parameters and plan/runtime support matrices, which are product-specific integration details. |
 | [Trigger](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-rabbitmq-trigger) | integrations | 0.86 | Trigger reference covers RabbitMQ-specific binding parameters and plan/runtime support limitations, which are product-specific integration details. |
@@ -108,6 +126,7 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Log
 | [Input](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-cosmosdb-v2-input) | integrations | 0.85 | Input binding reference with parameter names, partition key requirements, and query options; product-specific integration configuration. |
 | [Output](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-azure-mysql-output) | integrations | 0.85 | Output binding reference with configuration parameters and behavior for writing to MySQL; product-specific integration details. |
 | [Output](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-cache-output) | integrations | 0.85 | Output binding reference with configuration parameters and behavior for Redis keys; product-specific integration details. |
+| [Reference](https://learn.microsoft.com/en-us/azure/azure-functions/functions-hosted-skills-reference) | configuration | 0.85 | Described as a configuration reference for Azure Functions hosted skills, covering agent file fields, app configuration, MCP servers, skills, tools, model providers, managed identity, and built-in endpoints. This implies detailed, product-specific configuration parameters and structures that qualify as expert configuration knowledge. |
 | [AZFD0001](https://learn.microsoft.com/en-us/azure/azure-functions/errors-diagnostics/diagnostic-events/azfd0001) | troubleshooting | 0.84 | Diagnostic event page with specific event ID, condition, and steps to configure AzureWebJobsStorage, matching symptom→cause→solution. |
 | [AZFD0002](https://learn.microsoft.com/en-us/azure/azure-functions/errors-diagnostics/diagnostic-events/azfd0002) | troubleshooting | 0.84 | Maps event ID to invalid connection string/Key Vault reference and provides product-specific resolution guidance. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-event-hubs) | integrations | 0.84 | Event Hubs bindings reference includes trigger/output binding configuration, consumer group, connection, and partition settings unique to Azure Functions’ Event Hubs integration. |
@@ -145,7 +164,6 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Log
 | [Post input](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-openai-assistantpost-input) | integrations | 0.80 | Covers the assistant post input binding, detailing how to configure and use it to send prompts to assistant chat bots during function execution. This is an integration-focused binding reference with specific parameters and patterns. |
 | [Pub Sub](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-cache-trigger-redispubsub) | integrations | 0.80 | Binding-specific article with trigger configuration parameters and usage patterns for Redis pub/sub; product-specific integration details. |
 | [Query input](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-openai-assistantquery-input) | integrations | 0.80 | Explains how to use the Azure OpenAI assistant query input binding, including binding configuration and how assistant queries are passed into function code. This is an integration pattern with specific binding parameters and usage unique to this extension. |
-| [Reliable event processing](https://learn.microsoft.com/en-us/azure/azure-functions/functions-reliable-event-processing) | best-practices | 0.80 | Provides concrete best practices for checkpoints, error handling, and circuit breaker patterns specific to Event Hubs triggers in Functions; includes product-specific patterns and gotchas. |
 | [Security](https://learn.microsoft.com/en-us/azure/azure-functions/security-concepts) | security | 0.80 | Security-focused article with concrete strategies and likely specific settings/roles for securing function apps on App Service; product-specific security configuration guidance. |
 | [Stream](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-cache-trigger-redisstream) | integrations | 0.80 | Covers Redis stream trigger behavior and configuration parameters; product-specific binding integration details. |
 | [Trigger](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-documentdb-trigger) | integrations | 0.80 | Trigger reference with configuration guidance and attribute parameters for monitoring change streams; integration-specific details. |
@@ -169,6 +187,7 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Log
 | [PowerShell](https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-powershell) | configuration | 0.78 | PowerShell developer reference pages for Azure Functions typically include detailed, product-specific configuration such as function.json schema, binding names and types, supported trigger/ binding parameters, environment variables, and host/runtime settings. These are expressed as specific parameter names, allowed values, and code patterns unique to Azure Functions PowerShell, which fits the configuration sub-skill definition. |
 | [Quota information](https://learn.microsoft.com/en-us/azure/azure-functions/functions-scale) | decision-making | 0.78 | The page compares Azure Functions hosting options (Consumption, Flex Consumption, Premium, Dedicated) with plan-specific behaviors, scaling characteristics, and constraints to help select a hosting plan. This is product-specific decision guidance rather than just conceptual overview, matching the decision-making sub-skill. |
 | [Register binding extensions](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-register) | configuration | 0.78 | Page describes how to register non-native binding extensions for Azure Functions, including product-specific configuration patterns (e.g., extension bundles vs. NuGet packages, where and how to declare bindings). This is concrete, implementation-specific configuration knowledge that goes beyond generic concepts and is unlikely to be fully known from training. |
+| [Reliable event processing](https://learn.microsoft.com/en-us/azure/azure-functions/functions-reliable-event-processing) | best-practices | 0.78 | The article focuses on concrete, product-specific guidance for using Azure Functions with Event Hubs triggers: how to manage checkpoints to avoid event loss, error-handling strategies, and circuit breaker patterns tailored to Functions/Event Hubs behavior. These are actionable DO/DON'T recommendations and patterns specific to this integration, going beyond generic event-processing theory. |
 | [SendGrid](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-sendgrid) | integrations | 0.78 | Binding reference pages typically include binding-specific configuration properties, parameter names, and JSON schema for function.json that are unique to Azure Functions + SendGrid integration. |
 | [Trigger](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-cosmosdb-v2-trigger) | configuration | 0.78 | Binding reference pages for Azure Functions triggers typically include detailed configuration tables (e.g., connection, leaseCollectionName, maxItemsPerInvocation, preferredLocations) with allowed values, defaults, and behavior notes specific to the Cosmos DB trigger and Functions runtime versions. These are product-specific settings that go beyond generic knowledge and match the configuration sub-skill criteria. |
 | [Twilio](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-twilio) | integrations | 0.78 | Binding reference with Twilio-specific binding properties and function.json/attribute configuration unique to this integration. |
@@ -190,7 +209,7 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Log
 | [Configure monitoring](https://learn.microsoft.com/en-us/azure/azure-functions/configure-monitoring) | configuration | 0.75 | Shows how to connect a function app to Application Insights and configure data collection, including instrumentation key settings and related parameters, which are product-specific configuration details. |
 | [Consumption plan costs](https://learn.microsoft.com/en-us/azure/azure-functions/functions-consumption-costs) | decision-making | 0.75 | Cost estimation for Consumption vs Flex Consumption plans typically includes formulas, pricing dimensions, and usage-based thresholds that guide plan selection and capacity planning. |
 | [Establish private site access](https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-private-site-access) | security | 0.75 | Shows how to configure private site access tied to a specific virtual network, with concrete security configuration steps. |
-| [Functions 1.x (legacy)](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-cosmosdb) | integrations | 0.75 | Version-specific binding behavior and considerations for Functions v1; includes extension configuration details unique to this runtime. |
+| [Functions 1.x (legacy)](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-cosmosdb) | integrations | 0.75 | Azure Cosmos DB bindings for Functions 1.x documentation typically includes binding configuration details (trigger/input/output), attribute parameters, connection settings, and runtime-specific considerations that are unique to Functions v1.x. These are product-specific integration patterns and configuration parameters that qualify as expert knowledge for integrating Azure Functions with Cosmos DB. |
 | [Migrate v1.x to v4.x](https://learn.microsoft.com/en-us/azure/azure-functions/migrate-version-1-version-4) | decision-making | 0.75 | Guides migration from v1.x to v4.x with language-specific considerations, which is migration and version-selection decision guidance. |
 | [Migrate v3.x to v4.x](https://learn.microsoft.com/en-us/azure/azure-functions/migrate-version-3-version-4) | decision-making | 0.75 | Walks through migration from v3.x to v4.x, including compatibility considerations and steps, which are migration decision and execution guidance. |
 | [Migrate version 3.x to 4.x](https://learn.microsoft.com/en-us/azure/azure-functions/migrate-cosmos-db-version-3-version-4) | deployment | 0.75 | Migration guide between extension versions with retirement date and breaking changes; product-specific upgrade path and constraints. |
@@ -232,7 +251,6 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Log
 | [Build and deploy using GitHub Actions](https://learn.microsoft.com/en-us/azure/azure-functions/functions-how-to-github-actions) | deployment | 0.70 | Describes Azure Functions–specific continuous deployment using GitHub Actions and the Azure/functions-action, including OIDC authentication setup and automatic configuration steps performed by the Azure portal. These are product-specific deployment patterns and configuration details, not just generic GitHub Actions usage. |
 | [Build options](https://learn.microsoft.com/en-us/azure/azure-functions/typescript-build-options) | deployment | 0.70 | Covers multiple build and deployment options (local, remote, custom) for TypeScript Azure Functions with product-specific guidance on when to use each and how to handle compilation and dependencies. |
 | [Command line](https://learn.microsoft.com/en-us/azure/azure-functions/functions-add-output-binding-storage-queue-cli) | integrations | 0.70 | Shows how to add an Azure Storage queue output binding using CLI tools, with product-specific binding configuration details. |
-| [Compare agent options](https://learn.microsoft.com/en-us/azure/azure-functions/compare-serverless-agents-runtime) | decision-making | 0.70 | Compares Azure Functions serverless agents runtime with Foundry agents, Copilot Studio, and Microsoft Scout to help select the right option. Likely includes comparison tables and criteria (authoring model, billing, startup behavior, primary user) that guide technology selection, which fits decision-making. |
 | [Connect to a Virtual Network](https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-vnet) | security | 0.70 | A tutorial on integrating Azure Functions with a virtual network using private endpoints generally includes product-specific security configuration: exact resource types to create, required subnet and private endpoint settings, and sometimes specific RBAC roles or access restrictions for storage and Service Bus. These are concrete, Azure-specific security configuration steps rather than generic networking concepts, so it fits the security sub-skill. |
 | [Continuous deployment](https://learn.microsoft.com/en-us/azure/azure-functions/functions-continuous-deployment) | deployment | 0.70 | Covers Azure Functions–specific continuous deployment behavior using App Service source control integration, including guidance to always target staging slots instead of production and product-specific deployment workflow details. This is deployment-focused and contains concrete, service-specific recommendations beyond generic CI/CD knowledge. |
 | [Custom handlers](https://learn.microsoft.com/en-us/azure/azure-functions/functions-custom-handlers) | configuration | 0.70 | Custom handlers require specific host.json configuration, process startup commands, and HTTP contract details that are concrete configuration parameters unique to Azure Functions. |
@@ -261,6 +279,7 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Log
 | [Manage on-premises resources](https://learn.microsoft.com/en-us/azure/azure-functions/functions-hybrid-powershell) | integrations | 0.70 | Describes configuring Hybrid Connections in Azure Relay for PowerShell functions to manage on-prem resources, involving specific integration configuration steps. |
 | [Managing dependencies](https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-node) | best-practices | 0.70 | Same Node.js developer reference page as index 0; contains detailed, product-specific guidance on using the Azure Functions Node.js programming model, including concrete patterns and recommendations that qualify as expert best-practices. |
 | [Memory profiling](https://learn.microsoft.com/en-us/azure/azure-functions/python-memory-profiler-reference) | best-practices | 0.70 | Provides step-by-step use of memory-profiler with Functions, including configuration and usage patterns specific to this environment, which are actionable performance best practices. |
+| [Migrate .NET apps to the isolated model](https://learn.microsoft.com/en-us/azure/azure-functions/migrate-dotnet-to-isolated-model) | decision-making | 0.70 | Provides product-specific migration guidance from in-process to isolated worker model for Azure Functions .NET apps, including concrete steps, configuration changes, and model-specific considerations that go beyond generic knowledge. It focuses on how and when to move between execution models and addresses support timelines, making it primarily a decision/migration guide rather than just a conceptual overview. |
 | [Migrate Consumption plan apps to Flex Consumption](https://learn.microsoft.com/en-us/azure/azure-functions/migration/migrate-plan-consumption-to-flex) | deployment | 0.70 | Migration between Consumption and Flex Consumption plans is a deployment/hosting concern. The article is specifically about moving existing apps between plans, which falls under deployment patterns and migration paths. It likely includes plan-specific requirements and constraints (for example Linux Consumption retirement date and guidance to move), which are product-specific deployment details. |
 | [Migrate version 4.x to 5.x](https://learn.microsoft.com/en-us/azure/azure-functions/migrate-service-bus-version-4-version-5) | decision-making | 0.70 | Migration guide describes breaking changes, configuration differences, and upgrade considerations between extension versions, helping choose and move between versions. |
 | [Networking FAQ](https://learn.microsoft.com/en-us/azure/azure-functions/functions-networking-faq) | troubleshooting | 0.70 | FAQ is organized around specific networking symptoms and scenarios (for example, Functions not reaching storage, private endpoint access issues, VNet integration behavior) and provides product-specific causes and resolutions. It maps concrete problems to Azure Functions networking features and required configurations, which is troubleshooting-style expert knowledge rather than generic concepts. |
@@ -280,7 +299,6 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Log
 | [Register an MCP server in API Center](https://learn.microsoft.com/en-us/azure/azure-functions/register-mcp-server-api-center) | configuration | 0.70 | Covers registering MCP servers hosted on Azure Functions in Azure API Center, which is primarily about defining and managing registry configuration (names, URLs, metadata, possibly auth settings). This aligns with configuration expert knowledge for API Center and MCP server registration rather than generic overview content. |
 | [Run from package](https://learn.microsoft.com/en-us/azure/azure-functions/run-functions-from-deployment-package) | deployment | 0.70 | Describes the product-specific 'run from package' deployment mode for Azure Functions, including how to enable it via specific configuration settings (e.g., WEBSITE_RUN_FROM_PACKAGE) and where files are mounted versus traditional deployment paths. This is concrete deployment behavior and configuration unique to Azure Functions rather than a generic tutorial. |
 | [Scale and performance recommendations](https://learn.microsoft.com/en-us/azure/azure-functions/node-scale-performance) | best-practices | 0.70 | Provides concrete, product-specific performance and scaling recommendations (throughput settings, Node.js optimizations, configuration choices) that go beyond generic performance advice. |
-| [Serverless agents](https://learn.microsoft.com/en-us/azure/azure-functions/scenario-serverless-agents-runtime) | configuration | 0.70 | Describes defining agents in markdown files, configuring app-wide runtime defaults in agents.config.yaml, and connecting MCP servers in mcp.json. These are product-specific configuration artifacts and parameter names for the serverless agents runtime, which qualify as configuration expert knowledge. |
 | [Serverless comparison](https://learn.microsoft.com/en-us/azure/azure-functions/functions-compare-logic-apps-ms-flow-webjobs) | decision-making | 0.70 | Compares multiple Azure integration/automation services with guidance on when to use each; likely includes decision criteria and scenario-based recommendations beyond generic concepts, fitting decision-making. |
 | [Storage considerations](https://learn.microsoft.com/en-us/azure/azure-functions/storage-considerations) | security | 0.70 | Storage considerations article for Azure Functions typically includes product-specific details on required storage services, encryption behavior, and configuration of storage accounts/keys; these are concrete, service-specific security and configuration details beyond generic concepts. |
 | [Supported languages](https://learn.microsoft.com/en-us/azure/azure-functions/supported-languages) | deployment | 0.70 | Lists exact supported languages, versions, support levels, and end-of-support dates per plan/runtime, which are product- and time-specific details not reliably known from training; this directly informs deployment/runtime selection across SKUs. |
@@ -290,7 +308,7 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Log
 | [Visual Studio](https://learn.microsoft.com/en-us/azure/azure-functions/functions-add-output-binding-storage-queue-vs) | integrations | 0.70 | Shows how to configure an Azure Storage queue output binding in C# class library functions, including binding attributes and settings unique to Functions. |
 | [Visual Studio Code](https://learn.microsoft.com/en-us/azure/azure-functions/functions-add-output-binding-storage-queue-vs-code) | integrations | 0.70 | Demonstrates Azure Queue Storage output binding configuration in Functions with VS Code, including binding parameters and function.json settings. |
 | [Work with Event Grid](https://learn.microsoft.com/en-us/azure/azure-functions/event-grid-how-tos) | integrations | 0.70 | Provides procedures for configuring Event Grid triggers and bindings, likely including binding configuration parameters and local evaluation details, which are integration-specific patterns. |
-| [Work with access keys](https://learn.microsoft.com/en-us/azure/azure-functions/function-keys-how-to) | security | 0.70 | The page describes specific Azure Functions access key types (host, function, master), how they behave, and how to retrieve/renew/use them when calling function endpoints. These are product-specific security and authorization details, including concrete patterns for securing HTTP endpoints, which go beyond generic security concepts. |
+| [Work with access keys](https://learn.microsoft.com/en-us/azure/azure-functions/function-keys-how-to) | security | 0.70 | The page is focused on product-specific security behavior of Azure Functions access keys: the different key types (host, function, master), how they authorize HTTP endpoints, how to retrieve and renew them, and how they interact with function-level authorization. These are concrete, service-specific security configuration details and usage patterns rather than generic concepts. |
 | [Work with containers](https://learn.microsoft.com/en-us/azure/azure-functions/functions-how-to-custom-container) | deployment | 0.70 | Describes product-specific details for running Azure Functions in custom containers within Azure Container Apps, including supported hosting method, integration behavior, and environment-specific constraints that go beyond generic container knowledge. |
 | [Zone redundancy](https://learn.microsoft.com/en-us/azure/azure-functions/functions-zone-redundancy) | deployment | 0.70 | Zone redundancy configuration for Azure Functions depends on hosting plan and typically includes plan support matrices, constraints (which regions/tiers support zones), and migration steps for existing apps. These are product-specific deployment requirements and patterns (how to create or move apps into zone-redundant setups), matching the deployment sub-skill rather than generic reliability guidance. |
 | [Dedicated plan](https://learn.microsoft.com/en-us/azure/azure-functions/dedicated-plan) | decision-making | 0.68 | The page goes beyond a conceptual overview of App Service plans and explains when and why to run Azure Functions on a dedicated App Service hosting plan (including ASE). It provides product-specific guidance on selecting this hosting option versus others and how multiple function apps can share the same dedicated compute resources, which is concrete decision-making guidance about hosting model selection rather than just marketing or high-level concepts. |
@@ -309,14 +327,12 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Log
 | [HTTP streams (TypeScript/JavaScript)](https://learn.microsoft.com/en-us/azure/azure-functions/node-http-stream) | integrations | 0.65 | Describes how to enable and use HTTP streaming in Node.js Azure Functions, including configuration and code patterns for streaming large data and OpenAI responses, which are product- and runtime-specific integration patterns. |
 | [Input](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-web-pubsub-input) | integrations | 0.65 | Covers the WebPubSubConnection input binding behavior, including how it returns endpoint URL and time-limited access tokens for clients, and guidance not to cache or share tokens. These are product-specific binding behaviors and integration patterns between Azure Functions and Azure Web PubSub. |
 | [Java](https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-java) | best-practices | 0.65 | Java reference typically includes function signatures, annotation usage, and configuration details unique to Azure Functions’ Java worker, which are concrete coding patterns. |
-| [Migrate .NET apps to the isolated model](https://learn.microsoft.com/en-us/azure/azure-functions/migrate-dotnet-to-isolated-model) | decision-making | 0.65 | Provides a prescriptive migration guide from the in-process to isolated worker model for .NET Azure Functions, including time-bound support information, concrete steps, and model-specific considerations. This is expert, product-specific guidance for choosing and moving between execution models rather than a generic overview. |
 | [Migrate Linux apps to Flex Consumption using Copilot](https://learn.microsoft.com/en-us/azure/azure-functions/migration/scenario-migrate-linux-consumption-to-flex) | decision-making | 0.65 | Migration scenario between specific Azure Functions plans typically includes plan-specific constraints, required configuration changes, and step ordering that are not generic knowledge. Even though it’s framed as a Copilot quickstart, such migration docs usually encode concrete prerequisites, supported/unsupported features, and required settings for Flex Consumption vs Linux Consumption, which directly guide when and how to move between plans (a decision-making scenario). |
 | [Networking options](https://learn.microsoft.com/en-us/azure/azure-functions/functions-networking-options) | security | 0.65 | The page details concrete networking features (IP restrictions, private endpoints, VNet integration) per Azure Functions hosting model, including which isolation options are available on which plans. These are product-specific security and access configuration details that go beyond generic networking concepts. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-azure-data-explorer) | integrations | 0.65 | Overview of Azure Data Explorer input/output bindings; includes extension-specific integration behavior and configuration entry points. |
 | [Prompt trigger](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-mcp-prompt-trigger) | integrations | 0.65 | Page is about a product-specific trigger that exposes Azure Functions as Model Context Protocol server prompts. This is a concrete integration surface between Azure Functions and MCP, likely including trigger binding parameters and usage patterns that are not generally known. It’s not about limits, security, or deployment, but about how to wire up this specific integration. |
 | [Work with Flex Consumption apps](https://learn.microsoft.com/en-us/azure/azure-functions/flex-consumption-how-to) | configuration | 0.65 | Focuses on creating and managing Azure Functions apps on the Flex Consumption plan, including plan-specific settings and management options. This is primarily about product-specific configuration of function apps under that hosting plan rather than generic concepts. |
 | [Deploy Start/Stop VMs](https://learn.microsoft.com/en-us/azure/azure-functions/start-stop-v2/deploy) | deployment | 0.62 | Stepwise deployment of the Start/Stop VMs v2 solution, likely including required resources, roles, and region/plan constraints specific to this feature. |
-| [Express.js](https://learn.microsoft.com/en-us/azure/azure-functions/shift-expressjs) | decision-making | 0.60 | Provides concrete migration guidance from Express.js to Functions, including how to map middleware, routing, and request/response patterns, which is scenario-specific decision and design guidance. |
 | [Functions with Logic Apps](https://learn.microsoft.com/en-us/azure/azure-functions/functions-twitter-email) | integrations | 0.60 | Shows how Functions integrate into a Logic Apps workflow with Azure AI; includes product-specific configuration steps for cross-service integration. |
 | [In-process model](https://learn.microsoft.com/en-us/azure/azure-functions/functions-dotnet-class-library) | configuration | 0.60 | Contains project structure, attributes, and configuration specifics for the legacy in-process model, which are product-specific coding and configuration patterns. |
 | [Manage Start/Stop VMs](https://learn.microsoft.com/en-us/azure/azure-functions/start-stop-v2/manage) | configuration | 0.60 | Management article typically includes configuration of schedules, parameters, and monitoring settings specific to the Start/Stop VMs v2 implementation. |
@@ -359,18 +375,19 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Log
 | [Developer guide](https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference) | 0.30 | Described as general guidance and conceptual reference across all languages; likely high-level concepts rather than detailed limits, configs, or error mappings. |
 | [Diagnostics](https://learn.microsoft.com/en-us/azure/azure-functions/functions-diagnostics) | 0.30 | High-level overview of Azure Functions diagnostics without detailed error-code mappings or configuration tables; mostly conceptual and navigational. |
 | [Eclipse](https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-maven-eclipse) | 0.30 | Java + Eclipse how-to; basic creation and deployment tutorial without detailed product-specific reference content. |
+| [Event-driven AI app](https://learn.microsoft.com/en-us/azure/azure-functions/scenario-hosted-skills) | 0.30 | Quickstart for building an event-driven AI app with Azure Functions hosted skills. It references agent.mdfiles, agents.config.yaml, and mcp.json, but the summary suggests a tutorial-style deployment and usage guide rather than detailed configuration tables, limits, or troubleshooting mappings. |
 | [Gradle](https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-first-java-gradle) | 0.30 | Java + Gradle publishing tutorial; procedural steps rather than expert configuration or limits. |
 | [Image classification with PyTorch](https://learn.microsoft.com/en-us/azure/azure-functions/machine-learning-pytorch) | 0.30 | Local PyTorch + Functions tutorial; focuses on ML model usage, not Azure-specific limits, configuration matrices, or troubleshooting content. |
 | [MCP Apps](https://learn.microsoft.com/en-us/azure/azure-functions/scenario-mcp-apps) | 0.30 | Quickstart for building an MCP Apps server with Azure Functions; describes using templates and deployment flow, not deep product-specific configuration, limits, or troubleshooting content. |
 | [Machine learning with TensorFlow](https://learn.microsoft.com/en-us/azure/azure-functions/functions-machine-learning-tensorflow) | 0.30 | Local-only ML tutorial combining TensorFlow and Functions; mostly generic coding and no product-specific configuration tables, limits, or security/diagnostic details. |
+| [Migrate from Express.js](https://learn.microsoft.com/en-us/azure/azure-functions/shift-expressjs) | 0.30 | Refactoring Express.js endpoints to Azure Functions is largely conceptual and pattern-oriented without clear product-specific configuration tables, limits, or error mappings. It discusses middleware, routing, and general migration considerations that are broadly known and not tied to unique numeric thresholds, roles, or settings. |
 | [Monitor function executions](https://learn.microsoft.com/en-us/azure/azure-functions/functions-monitoring) | 0.30 | Monitoring article is described as an overview of capabilities and exporter choice; no indication of specific error codes, configuration tables, or parameter defaults unique to this product. Likely conceptual/how-to monitoring guidance rather than detailed troubleshooting, configuration, or limits. |
-| [Overview](https://learn.microsoft.com/en-us/azure/azure-functions/functions-serverless-agents-runtime) | 0.30 | Summary describes a conceptual/programming model overview for the serverless agents runtime (what it is, how agents are defined and triggered) without clear evidence of numeric limits, configuration tables, error-code troubleshooting, or decision matrices; likely high-level reference rather than expert configuration or troubleshooting content. |
 | [Process images with FFmpeg on a mounted share](https://learn.microsoft.com/en-us/azure/azure-functions/tutorial-ffmpeg-processing-azure-files) | 0.30 | Scenario/tutorial for using FFmpeg with Azure Functions and Azure Files; focuses on step-by-step deployment and usage, not on limits, configuration matrices, error-code troubleshooting, or other expert-only reference details. |
 | [Process real-time events](https://learn.microsoft.com/en-us/azure/azure-functions/scenario-real-time-events-processing) | 0.30 | Scenario/tutorial for creating and deploying an Event Hubs-triggered Azure Function using azd and Flex Consumption. Summary indicates a guided example and mentions best practices at a high level, but does not suggest specific quotas, configuration matrices, error codes, or other detailed expert-only content. |
 | [Run scheduled tasks](https://learn.microsoft.com/en-us/azure/azure-functions/scenario-scheduled-tasks) | 0.30 | Scenario/tutorial for creating and deploying a timer-triggered Azure Function using azd and Flex Consumption. Description suggests step-by-step deployment and code walkthrough, but no indication of detailed limits, configuration parameter tables, error-code-based troubleshooting, or other product-specific expert references beyond generic best-practice wording. |
 | [Visual Studio](https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-your-first-function-visual-studio) | 0.30 | Visual Studio C# quickstart; focuses on creating and publishing a simple HTTP-triggered function. |
 | [Visual Studio Code](https://learn.microsoft.com/en-us/azure/azure-functions/how-to-create-function-vs-code) | 0.30 | VS Code quickstart for creating and deploying functions; primarily a tutorial workflow, not a reference of configuration options, limits, or error diagnostics. |
-| [AI-enabled functions](https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-ai-enabled-apps) | 0.20 | High-level survey of AI-related scenarios and integrations with Azure Functions; summary indicates conceptual guidance, not detailed configuration tables or limits. |
+| [AI-enabled functions](https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-ai-enabled-apps) | 0.20 | High-level survey of AI scenarios and integrations with Azure Functions. From the summary, it appears conceptual and scenario-oriented without specific limits, configuration tables, error codes, or detailed product-specific parameters. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/azure-functions/functions-cli-samples) | 0.20 | Index page linking to Azure CLI sample scripts; does not itself contain detailed configuration tables, limits, or troubleshooting content. |
 | [Azure Functions CLI (v5)](https://learn.microsoft.com/en-us/azure/azure-functions/functions-cli-develop-local) | 0.20 | The page describes using the Azure Functions CLI v5 for local development and notes preview limitations and language support. From the summary, it appears to be a conceptual/how-to overview of the CLI rather than a detailed configuration reference, limits table, or troubleshooting guide with error codes or specific parameters. It likely lacks the kind of expert, product-specific numeric limits, configuration matrices, or error mappings required by the sub-skill types. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-function-app-portal) | 0.20 | Step-by-step portal tutorial for creating a function app; does not list specific limits, quotas, configuration parameter tables, error codes, or decision matrices with quantified trade-offs. Primarily a basic creation guide rather than expert, product-specific reference content. |
@@ -379,11 +396,12 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Log
 | [Develop Python functions with VS Code](https://learn.microsoft.com/en-us/azure/azure-functions/how-to-create-function-vs-code?pivots=programming-language-python) | 0.20 | VS Code tutorial for creating and deploying a function (including custom handler) to Flex Consumption. Content is primarily step-by-step guidance; no clear indication of detailed configuration tables, limits, or error-code-based troubleshooting. |
 | [Isolated worker model](https://learn.microsoft.com/en-us/azure/azure-functions/dotnet-isolated-process-guide) | 0.20 | Primarily an introduction to the .NET isolated worker model for Azure Functions and links to other content. The summary indicates conceptual overview and getting-started guidance, without mention of specific configuration tables, limits, error codes, or decision matrices. |
 | [Linux container (Premium)](https://learn.microsoft.com/en-us/azure/azure-functions/functions-deploy-container) | 0.20 | Primarily a getting-started deployment tutorial for containerized Azure Functions. It mentions required plans (Premium or Dedicated) and a general cost note, but does not provide plan-specific limits, configuration parameter tables, deployment matrices, or other detailed expert knowledge as defined by the sub-skill types. |
+| [Managed connectors](https://learn.microsoft.com/en-us/azure/azure-functions/functions-connectors-overview) | 0.20 | The page is an overview of managed connectors in Azure Functions and how they integrate with Azure Connector Namespace. The summary indicates conceptual description of capabilities (react to events, call operations, handle webhooks/auth/retries) without listing specific configuration parameters, limits, error codes, or detailed patterns. It reads as an integration/feature overview rather than expert, product-specific configuration or troubleshooting content. |
 | [Monitor Azure Functions](https://learn.microsoft.com/en-us/azure/azure-functions/monitor-functions) | 0.20 | Page appears to be a general overview of monitoring Azure Functions with Azure Monitor, without clear evidence of detailed limits, configuration parameter tables, error-code-based troubleshooting, or other product-specific expert details as defined by the sub-skill types. |
 | [Process file uploads](https://learn.microsoft.com/en-us/azure/azure-functions/scenario-blob-storage-events) | 0.20 | Quickstart/tutorial for responding to Blob Storage events with Azure Functions and azd. No evidence of numeric limits, configuration tables, error-code-based troubleshooting, or product-specific best-practice details beyond generic deployment guidance. |
 | [Scenarios](https://learn.microsoft.com/en-us/azure/azure-functions/functions-scenarios) | 0.20 | Scenario/overview page listing common Azure Functions use cases; no detailed limits, configs, error codes, or product-specific decision matrices. |
-| [Use connectors in Azure Functions](https://learn.microsoft.com/en-us/azure/azure-functions/functions-connectors-overview) | 0.20 | Content is an overview of how Azure Functions integrates with managed connectors, describing triggers and SDK-based actions conceptually. The summary does not indicate detailed configuration tables, specific parameter defaults, or error-code-based troubleshooting; it reads as a conceptual integration overview rather than expert, configuration-level guidance. |
 | [About triggers and bindings](https://learn.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings) | 0.10 | Page is a high-level conceptual overview of Azure Functions triggers and bindings without detailed limits, configuration tables, error codes, or product-specific numeric thresholds. |
 | [Functions overview](https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview) | 0.10 | High-level overview of Azure Functions; no specific limits, configuration tables, error codes, or product-specific decision matrices. |
 | [Get started](https://learn.microsoft.com/en-us/azure/azure-functions/functions-get-started) | 0.10 | Getting-started navigation article pointing to other content; no indication of specific limits, configs, or troubleshooting details. |
 | [IntelliJ IDEA](https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-maven-intellij) | 0.10 | Tutorial-style guide for creating and running a Java HTTP-triggered Azure Function using IntelliJ. It focuses on step-by-step creation and deployment, not on limits, configuration matrices, error-code troubleshooting, or product-specific quotas/thresholds. No detailed tables of settings, limits, or decision criteria are indicated, so it doesn't meet the expert-knowledge criteria for any sub-skill type. |
+| [Overview](https://learn.microsoft.com/en-us/azure/azure-functions/functions-hosted-skills) | - | This is an overview of Azure Functions hosted skills and its programming model. The summary indicates conceptual description of what hosted skills are and how they integrate, without detailed configuration tables, limits, or error mappings. |

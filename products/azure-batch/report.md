@@ -51,9 +51,9 @@ confusable_not_for: Not for Azure Container Instances (use azure-container-insta
 - **Unclassified**: 37
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 10
-- **Unchanged**: 106
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 118
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-batch/azure-batch.csv`
 
@@ -73,34 +73,6 @@ confusable_not_for: Not for Azure Container Instances (use azure-container-insta
 | *(Unclassified)* | 37 | 31.4% |
 
 ## Changes
-
-### New Pages
-
-- [Task requeue event](https://learn.microsoft.com/en-us/azure/batch/batch-task-requeue-event)
-- [Special task event](https://learn.microsoft.com/en-us/azure/batch/batch-special-task-event)
-
-### Updated Pages
-
-- [Monitoring data reference](https://learn.microsoft.com/en-us/azure/batch/monitor-batch-reference)
-  - Updated: 2025-06-16T17:05:00.000Z → 2026-08-11T05:12:00.000Z
-- [Batch analytics](https://learn.microsoft.com/en-us/azure/batch/batch-analytics)
-  - Updated: 2025-04-02T08:00:00.000Z → 2026-08-11T05:12:00.000Z
-- [Pool autoscale event](https://learn.microsoft.com/en-us/azure/batch/batch-pool-autoscale-event)
-  - Updated: 2025-07-01T08:00:00.000Z → 2026-08-11T05:12:00.000Z
-- [Task start event](https://learn.microsoft.com/en-us/azure/batch/batch-task-start-event)
-  - Updated: 2025-07-02T05:25:00.000Z → 2026-08-11T05:12:00.000Z
-- [Task complete event](https://learn.microsoft.com/en-us/azure/batch/batch-task-complete-event)
-  - Updated: 2026-02-05T23:11:00.000Z → 2026-08-11T05:12:00.000Z
-- [Task fail event](https://learn.microsoft.com/en-us/azure/batch/batch-task-fail-event)
-  - Updated: 2026-02-05T23:11:00.000Z → 2026-08-11T05:12:00.000Z
-- [Task schedule fail event](https://learn.microsoft.com/en-us/azure/batch/batch-task-schedule-fail-event)
-  - Updated: 2025-07-02T05:25:00.000Z → 2026-08-11T05:12:00.000Z
-- [APIs and tools](https://learn.microsoft.com/en-us/azure/batch/batch-apis-tools)
-  - Updated: 2026-01-12T08:00:00.000Z → 2026-08-10T08:00:00.000Z
-- [Best practices](https://learn.microsoft.com/en-us/azure/batch/best-practices)
-  - Updated: 2026-05-19T08:00:00.000Z → 2026-08-05T08:00:00.000Z
-- [Supported VM sizes](https://learn.microsoft.com/en-us/azure/batch/batch-pool-vm-sizes)
-  - Updated: 2026-01-05T08:00:00.000Z → 2026-08-10T11:48:00.000Z
 
 ## Classified Pages
 

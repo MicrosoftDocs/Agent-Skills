@@ -46,10 +46,10 @@ confusable_not_for: Not for Azure Traffic Manager (use azure-traffic-manager), A
 - **Unclassified**: 51
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 5
-- **Unchanged**: 72
-- **Deleted Pages**: 2
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 78
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-dns/azure-dns.csv`
 
 ## Classification Statistics
@@ -66,28 +66,6 @@ confusable_not_for: Not for Azure Traffic Manager (use azure-traffic-manager), A
 | *(Unclassified)* | 51 | 65.4% |
 
 ## Changes
-
-### New Pages
-
-- [What is DNS resolver policy?](https://learn.microsoft.com/en-us/azure/dns/dns-security-policy)
-
-### Updated Pages
-
-- [Create a private resolver - Terraform](https://learn.microsoft.com/en-us/azure/dns/dns-private-resolver-get-started-terraform)
-  - Updated: 2025-02-20T23:03:00.000Z → 2026-08-12T05:20:00.000Z
-- [Integrate with other Azure services](https://learn.microsoft.com/en-us/azure/dns/dns-for-azure-services)
-  - Updated: 2026-07-31T19:23:00.000Z → 2026-08-12T05:20:00.000Z
-- [Custom domains for Azure resources](https://learn.microsoft.com/en-us/azure/dns/dns-custom-domain)
-  - Updated: 2024-07-22T22:05:00.000Z → 2026-08-12T11:45:00.000Z
-- [Protect public DNS zones and records](https://learn.microsoft.com/en-us/azure/dns/dns-protect-zones-recordsets)
-  - Updated: 2023-11-30T08:00:00.000Z → 2026-08-12T05:20:00.000Z
-- [Azure portal](https://learn.microsoft.com/en-us/azure/dns/dns-import-export-portal)
-  - Updated: 2025-02-05T08:00:00.000Z → 2026-08-11T08:00:00.000Z
-
-### Deleted Pages
-
-- ~~What is DNS security policy?~~ (https://learn.microsoft.com/en-us/azure/dns/dns-security-policy)
-- ~~Resiliency in Azure DNS Private Resolver~~ (https://learn.microsoft.com/en-us/azure/dns/private-resolver-reliability)
 
 ## Classified Pages
 

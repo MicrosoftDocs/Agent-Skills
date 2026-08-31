@@ -3,7 +3,7 @@ name: azure-stack-edge
 description: Expert knowledge for Azure Stack Edge development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when deploying IoT Edge modules, GPU/Kubernetes apps, DeepStream workloads, Arc GitOps, or local ARM integrations, and other Azure Stack Edge related development tasks. Not for Azure IoT Edge (use azure-iot-edge), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Kubernetes Service Edge Essentials (use azure-aks-edge-essentials), Azure Virtual Machines (use azure-virtual-machines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-09"
+  generated_at: "2026-08-31"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Stack Edge Skill
@@ -24,14 +24,14 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L36-L86 | Diagnosing and fixing Azure Stack Edge/Data Box Gateway issues: release-specific critical bugs, ordering/activation, certificates, ARM/Blob/IoT Edge/VM/GPU problems, and using logs/alerts for troubleshooting. |
-| Best Practices | L87-L92 | Best practices for Azure Stack Edge Pro: device failure recovery, GPU sharing/partitioning guidance, and operational guidelines for deployment, monitoring, and maintenance. |
-| Decision Making | L93-L101 | Guidance on region and data-location choices, resiliency behavior, disconnected deployment planning, and processes for replacing Azure Stack Edge devices. |
-| Limits & Quotas | L102-L114 | Limits, capacities, performance, and system requirements for Azure Stack Edge and Data Box Gateway devices, including supported VM sizes, GPU limits, and cross-subscription resource moves. |
-| Security | L115-L141 | Securing Azure Stack Edge: user access, certificates/TLS, Key Vault secrets, VPN/BCDR, encryption, secure wipe, Kubernetes RBAC, and built-in security features/policies. |
-| Configuration | L142-L194 | Configuring and managing Azure Stack Edge/Data Box Gateway devices: networking, power, storage, Kubernetes/VMs, GPUs, monitoring, automation, and hardware/system requirements. |
-| Integrations & Coding Patterns | L195-L206 | How to deploy and integrate workloads on Azure Stack Edge: IoT Edge modules, GPU-sharing/Kubernetes apps, DeepStream, Arc/Kubernetes GitOps, and connecting to local ARM. |
-| Deployment | L207-L210 | Predeployment requirements and planning for Azure Stack Edge Pro GPU, including hardware, networking, certificates, capacity, and environment checks before deployment. |
+| Troubleshooting | L36-L87 | Release-specific known issues, alerts, and fixes for Azure Stack Edge/Data Box Gateway, plus troubleshooting for ordering, activation, certificates, ARM, storage, IoT Edge, VMs, GPU, diagnostics, and logs. |
+| Best Practices | L88-L93 | Best practices for Azure Stack Edge Pro: device failure recovery, GPU sharing/partitioning guidance, and operational guidelines for deployment, monitoring, and maintenance. |
+| Decision Making | L94-L102 | Guidance on region and data-location choices, resiliency behavior, disconnected deployment planning, and processes for replacing Azure Stack Edge devices. |
+| Limits & Quotas | L103-L115 | Limits, capacities, performance, and system requirements for Azure Stack Edge and Data Box Gateway devices, including supported VM sizes, GPU limits, and cross-subscription resource moves. |
+| Security | L116-L142 | Securing Azure Stack Edge: user access, certificates/TLS, Key Vault secrets, VPN/BCDR, encryption, secure wipe, Kubernetes RBAC, and built-in security features/policies. |
+| Configuration | L143-L195 | Configuring and managing Azure Stack Edge/Data Box Gateway devices: networking, power, storage, Kubernetes/VMs, GPUs, monitoring, automation, and hardware/system requirements. |
+| Integrations & Coding Patterns | L196-L207 | How to deploy and integrate workloads on Azure Stack Edge: IoT Edge modules, GPU-sharing/Kubernetes apps, DeepStream, Arc/Kubernetes GitOps, and connecting to local ARM. |
+| Deployment | L208-L211 | Predeployment requirements and planning for Azure Stack Edge Pro GPU, including hardware, networking, certificates, capacity, and environment checks before deployment. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -72,7 +72,8 @@ This skill requires **network access** to fetch documentation content:
 | Review critical issues for Azure Stack Edge 2501 | https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-2501-release-notes |
 | Review critical issues for Azure Stack Edge 2506 | https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-2506-release-notes |
 | Resolve issues in Azure Stack Edge 2510 release | https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-2510-release-notes |
-| Resolve issues in Azure Stack Edge 2604 release | https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-2604-release-notes |
+| Resolve Azure Stack Edge 2604 known issues | https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-2604-release-notes |
+| Resolve Azure Stack Edge 2607 known issues | https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-2607-release-notes |
 | Troubleshoot certificate issues on Azure Stack Edge | https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-certificate-troubleshooting |
 | Run diagnostics and collect logs on Azure Stack Edge | https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-troubleshoot |
 | Fix Azure Stack Edge activation and Key Vault errors | https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-troubleshoot-activation |

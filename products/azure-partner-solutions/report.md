@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-09'
+generated_at: '2026-08-31'
 category_descriptions:
   integrations: Patterns and setup guides for connecting Azure services to external
     data platforms (Confluent Cloud, MongoDB Atlas, Neon Postgres) using Service Connector
@@ -37,17 +37,17 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 
 ## Summary
 
-- **Total Pages**: 113
-- **Fetched**: 113
+- **Total Pages**: 114
+- **Fetched**: 114
 - **Fetch Failed**: 0
-- **Classified**: 25
-- **Unclassified**: 88
+- **Classified**: 24
+- **Unclassified**: 90
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 113
-- **Deleted Pages**: 0
+- **New Pages**: 7
+- **Updated Pages**: 5
+- **Unchanged**: 102
+- **Deleted Pages**: 6
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-partner-solutions/azure-partner-solutions.csv`
 
 ## Classification Statistics
@@ -55,14 +55,46 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 1 | 0.9% |
-| configuration | 11 | 9.7% |
+| configuration | 10 | 8.8% |
 | decision-making | 1 | 0.9% |
 | integrations | 2 | 1.8% |
 | security | 2 | 1.8% |
-| troubleshooting | 8 | 7.1% |
-| *(Unclassified)* | 88 | 77.9% |
+| troubleshooting | 8 | 7.0% |
+| *(Unclassified)* | 90 | 78.9% |
 
 ## Changes
+
+### New Pages
+
+- [What is Napster API?](https://learn.microsoft.com/en-us/azure/partner-solutions/napster/overview)
+- [Resources and developer tools](https://learn.microsoft.com/en-us/azure/partner-solutions/napster/tools)
+- [Create a resource](https://learn.microsoft.com/en-us/azure/partner-solutions/napster/create)
+- [Manage a resource](https://learn.microsoft.com/en-us/azure/partner-solutions/napster/manage)
+- [What is Everpure Cloud Azure Native?](https://learn.microsoft.com/en-us/azure/partner-solutions/pure-storage/overview)
+- [Napster API](https://learn.microsoft.com/en-us/azure/partner-solutions/napster/)
+- [Commvault](https://learn.microsoft.com/en-us/azure/partner-solutions/commvault/)
+
+### Updated Pages
+
+- [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/napster/faq)
+  - Updated: 2026-07-31T11:41:00.000Z → 2026-08-27T09:10:00.000Z
+- [Create a resource](https://learn.microsoft.com/en-us/azure/partner-solutions/pure-storage/create)
+  - Updated: 2026-01-07T06:10:00.000Z → 2026-08-27T17:12:00.000Z
+- [Manage your resource](https://learn.microsoft.com/en-us/azure/partner-solutions/pure-storage/manage)
+  - Updated: 2026-01-07T06:10:00.000Z → 2026-08-27T17:12:00.000Z
+- [Partner services](https://learn.microsoft.com/en-us/azure/partner-solutions/partners)
+  - Updated: 2026-05-27T20:49:00.000Z → 2026-08-28T22:12:00.000Z
+- [Pure Storage Cloud](https://learn.microsoft.com/en-us/azure/partner-solutions/pure-storage/)
+  - Updated: 2026-05-26T17:19:00Z → 2026-08-27T17:12:00Z
+
+### Deleted Pages
+
+- ~~Napster Companion API~~ (https://learn.microsoft.com/en-us/azure/partner-solutions/napster/)
+- ~~Create a Napster Companion API resource~~ (https://learn.microsoft.com/en-us/azure/partner-solutions/napster/create)
+- ~~Manage your Napster Companion API resource~~ (https://learn.microsoft.com/en-us/azure/partner-solutions/napster/manage)
+- ~~What is Napster Companion API – Azure Native Integrations?~~ (https://learn.microsoft.com/en-us/azure/partner-solutions/napster/overview)
+- ~~Napster Companion API resources and developer tools~~ (https://learn.microsoft.com/en-us/azure/partner-solutions/napster/tools)
+- ~~What is Azure Native Pure Storage Cloud?~~ (https://learn.microsoft.com/en-us/azure/partner-solutions/pure-storage/overview)
 
 ## Classified Pages
 
@@ -77,7 +109,6 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 | [Manage your resource](https://learn.microsoft.com/en-us/azure/partner-solutions/palo-alto/manage) | configuration | 0.80 | Managing networking, NAT, rulestack, logging, DNS proxy, and billing plans implies detailed product-specific configuration options and parameter values unique to this Azure Native integration. |
 | [Troubleshoot log forwarding with Copilot](https://learn.microsoft.com/en-us/azure/partner-solutions/new-relic/troubleshoot-logs-copilot) | troubleshooting | 0.78 | The page focuses on diagnosing and resolving log forwarding issues for Azure Native New Relic Service using Microsoft Copilot in Azure. It is organized around specific symptoms and how to use Copilot to identify causes and remediation steps, which is product- and integration-specific troubleshooting guidance that goes beyond generic debugging advice. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/dynatrace/faq) | troubleshooting | 0.75 | FAQ explicitly lists troubleshooting among topics (onboarding, linking environments, configuring metrics/logs, SSO, billing, data residency, free trial); such content typically includes specific error messages, configuration pitfalls, and resolution steps unique to Azure Native Dynatrace, fitting the troubleshooting sub-skill. |
-| [Manage your resource](https://learn.microsoft.com/en-us/azure/partner-solutions/pure-storage/manage) | configuration | 0.75 | Managing settings, metrics/logs, and AVS connectivity implies product-specific configuration parameters (for example, logging endpoints, metrics namespaces, connection properties) that constitute expert configuration knowledge. |
 | [Configure prerequisites](https://learn.microsoft.com/en-us/azure/partner-solutions/dynatrace/configure-prerequisites) | configuration | 0.70 | Pre-deployment prerequisites for Dynatrace in Azure/Entra ID will include specific roles, permissions, and configuration steps unique to this integration, fitting configuration expert knowledge. |
 | [Connect Foundry agents to MongoDB Atlas](https://learn.microsoft.com/en-us/azure/partner-solutions/mongo-db/connect-foundry-agents) | integrations | 0.70 | The page describes a product-specific integration between Microsoft Foundry Agents and MongoDB Atlas via the MongoDB MCP Server, including concrete connection details and configuration patterns that are unique to this integration rather than generic tutorial content. |
 | [Deploy Cloud NGFW by Palo Alto Networks with the Application Gateway](https://learn.microsoft.com/en-us/azure/partner-solutions/palo-alto/application-gateway) | architecture-patterns | 0.70 | Describes a recommended deployment architecture for Cloud NGFW behind Application Gateway; likely includes product-specific topology guidance, traffic flow patterns, and when to use this pattern for securing web apps. |
@@ -115,7 +146,6 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 | [Confluent resources and developer tools](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/confluent-tools) | 0.30 | Page about Confluent resources and developer tools; likely a curated links/tools overview rather than detailed configuration or troubleshooting content. |
 | [Create a resource](https://learn.microsoft.com/en-us/azure/partner-solutions/arize-ai/create) | 0.30 | Quickstart for creating Arize AI resource; basic portal steps rather than exhaustive configuration reference. |
 | [Create a resource](https://learn.microsoft.com/en-us/azure/partner-solutions/palo-alto/create) | 0.30 | Quickstart for creating a Cloud NGFW resource; primarily portal creation steps, not detailed configuration matrices or expert troubleshooting. |
-| [Create a resource](https://learn.microsoft.com/en-us/azure/partner-solutions/pure-storage/create) | 0.30 | Quickstart for creating a Pure Storage Cloud resource; mostly portal steps, not detailed configuration matrices or expert-only settings. |
 | [Create a resource - Azure CLI](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/create-cli) | 0.30 | Quickstart for creating Confluent resource via CLI; focuses on basic creation flow, not full configuration matrices. |
 | [Create a resource - Azure PowerShell](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/create-powershell) | 0.30 | Quickstart for creating Confluent resource via PowerShell; basic example usage rather than exhaustive config. |
 | [Create a resource - Azure portal](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/create) | 0.30 | Quickstart for creating Confluent resource via portal; step-by-step tutorial, not a comprehensive config reference. |
@@ -134,6 +164,7 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 | [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/pure-storage/faq) | 0.30 | Azure Native Pure Storage Cloud FAQ is described as general questions about resources and developer tools; this suggests high-level guidance rather than detailed limits, configuration options, or structured troubleshooting mappings. |
 | [Get started](https://learn.microsoft.com/en-us/azure/partner-solutions/new-relic/create) | 0.30 | Quickstart for creating a New Relic resource in the portal; typically step-by-step UI instructions without detailed configuration matrices or expert-only parameters. |
 | [Link to an existing Datadog organization](https://learn.microsoft.com/en-us/azure/partner-solutions/datadog/link-to-existing-organization) | 0.30 | How to link an existing Datadog organization; appears to be procedural without detailed configuration options, limits, or troubleshooting mappings. |
+| [Manage your resource](https://learn.microsoft.com/en-us/azure/partner-solutions/pure-storage/manage) | 0.30 | Describes managing Everpure Cloud settings and connecting to AVS; summary suggests operational guidance but not detailed configuration tables, limits, or troubleshooting mappings. |
 | [What is Apache Airflow on Astro – An Azure Native ISV Service?](https://learn.microsoft.com/en-us/azure/partner-solutions/astronomer/overview) | 0.30 | Overview of Apache Airflow on Astro; high-level description of service and marketplace offering. |
 | [What is Apache Kafka & Apache Flink on Confluent Cloud?](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/overview) | 0.30 | Overview of Confluent Cloud offering on Azure; summary is descriptive, no explicit limits, configs, or decision matrices. |
 | [What is Arize AI?](https://learn.microsoft.com/en-us/azure/partner-solutions/arize-ai/overview) | 0.30 | Overview of Arize AI Cloud Service; conceptual description of capabilities. |
@@ -145,44 +176,46 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 | [Astro](https://learn.microsoft.com/en-us/azure/partner-solutions/astronomer/) | 0.20 | High-level description of Apache Airflow on Astro as an Azure Native ISV Service; no explicit expert-level numeric or configuration details. |
 | [Confluent](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/) | 0.20 | Confluent Cloud with Azure landing/overview; summary focuses on managed Kafka/Flink service, not specific limits, configs, or troubleshooting. |
 | [Create Projects & Clusters](https://learn.microsoft.com/en-us/azure/partner-solutions/mongo-db/create-projects-clusters) | 0.20 | From the summary, this appears to be a how-to/tutorial on creating and managing MongoDB Atlas projects and clusters via the Azure portal. There’s no indication of specific limits/quotas, configuration parameter tables, error codes, or product-specific decision matrices. Without detailed expert-only settings or constraints, it’s primarily procedural guidance rather than expert knowledge per the defined categories. |
-| [Create a Napster Companion API resource](https://learn.microsoft.com/en-us/azure/partner-solutions/napster/create) | 0.20 | Quickstart for creating a Napster Companion API resource; likely step-by-step portal instructions without detailed configuration parameter tables or product-specific constraints. |
 | [Create a Qumulo resource](https://learn.microsoft.com/en-us/azure/partner-solutions/qumulo/create) | 0.20 | This is a quickstart for creating an Azure Native Qumulo Scalable File Service instance in the portal. Quickstarts are typically step-by-step tutorials without comprehensive configuration tables, limits, or detailed troubleshooting matrices. It likely shows one example configuration rather than enumerating all settings or expert-only constraints, so it does not meet the bar for expert knowledge under the defined sub-skill types. |
 | [Create a resource](https://learn.microsoft.com/en-us/azure/partner-solutions/dell/create) | 0.20 | Quickstart for creating a Dell PowerScale resource via the portal is likely a step-by-step tutorial. The summary does not indicate configuration tables, limits, or other expert-only details; it appears to be basic how-to content. |
+| [Create a resource](https://learn.microsoft.com/en-us/azure/partner-solutions/napster/create) | 0.20 | Quickstart for creating a Napster API resource in the Azure portal; likely step-by-step UI guidance without detailed configuration parameter tables or product-specific constraints. |
+| [Create a resource](https://learn.microsoft.com/en-us/azure/partner-solutions/pure-storage/create) | 0.20 | Quickstart for creating a Pure Storage Cloud resource; likely basic portal steps without detailed configuration options, limits, or deployment constraints. |
 | [Create an Apache Airflow deployment on Astro](https://learn.microsoft.com/en-us/azure/partner-solutions/astronomer/create) | 0.20 | Quickstart for creating an Astro resource in the Azure portal; likely step-by-step UI guidance without detailed configuration tables, limits, or product-specific troubleshooting. |
 | [Datadog](https://learn.microsoft.com/en-us/azure/partner-solutions/datadog/) | 0.20 | Entry page for Datadog Azure Native ISV Service; summary suggests general documentation hub, not a detailed limits/config/troubleshooting page. |
 | [Dell PowerScale Preview](https://learn.microsoft.com/en-us/azure/partner-solutions/dell/) | 0.20 | Overview of Dell PowerScale as an Azure Native Integration; description is marketing/positioning, not detailed expert guidance. |
 | [Dynatrace](https://learn.microsoft.com/en-us/azure/partner-solutions/dynatrace/) | 0.20 | Landing/overview for Azure Native Dynatrace Service; description focuses on experience and workflow, not expert configuration or limits. |
 | [Elastic](https://learn.microsoft.com/en-us/azure/partner-solutions/elastic/) | 0.20 | Elastic with Azure documentation landing page; summary is conceptual (centralized analytics) without specific expert details. |
 | [F5](https://learn.microsoft.com/en-us/azure/partner-solutions/nginx/) | 0.20 | NGINXaaS Azure Native ISV Service overview; description mentions create/manage/support but no specific expert configuration or limits. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/napster/faq) | 0.20 | FAQ about subscription, creation, management, and development; summary suggests general guidance rather than specific error codes, limits, or configuration values. |
 | [Frequently asked questions](https://learn.microsoft.com/en-us/azure/partner-solutions/faq) | 0.20 | FAQ summary only; likely conceptual and billing/usage questions without specific limits, configs, or error mappings in the provided description. |
 | [Get support](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/get-support) | 0.20 | Support-contact article; typically procedural with no technical limits, configs, or troubleshooting mappings. |
 | [Informatica](https://learn.microsoft.com/en-us/azure/partner-solutions/informatica/) | 0.20 | Informatica Azure Native ISV Service overview; summary mentions create/manage/support but no specific configuration tables or limits. |
+| [Manage a resource](https://learn.microsoft.com/en-us/azure/partner-solutions/napster/manage) | 0.20 | Explains how to manage a Napster API resource (overview, SSO, deletion) in the portal; no indication of expert-level limits, security role definitions, or configuration ranges. |
 | [Manage your Apache Airflow on Astro resource](https://learn.microsoft.com/en-us/azure/partner-solutions/astronomer/manage) | 0.20 | Management article for Astro resources appears to be general portal operations; no indication of detailed configuration parameters, limits, or error mappings. |
-| [Manage your Napster Companion API resource](https://learn.microsoft.com/en-us/azure/partner-solutions/napster/manage) | 0.20 | Management article focused on navigation, SSO access, and deletion steps; no indication of detailed RBAC roles, security parameters, or other expert-level configuration details. |
 | [Metrics and logs](https://learn.microsoft.com/en-us/azure/partner-solutions/metrics-logs) | 0.20 | Page is described as an overview of metrics and logs for Azure Native Integrations with key operational considerations, but no evidence of specific numeric limits, configuration parameter tables, error-code-based troubleshooting, or detailed decision matrices. It appears to be conceptual monitoring/observability guidance rather than expert, product-specific reference data. |
 | [MongoDB Atlas](https://learn.microsoft.com/en-us/azure/partner-solutions/mongo-db/) | 0.20 | MongoDB Atlas integration overview; description highlights capabilities (managed document DB, vector search) without expert numeric/config details. |
-| [Napster Companion API](https://learn.microsoft.com/en-us/azure/partner-solutions/napster/) | 0.20 | Page appears to be a high-level overview/marketing-style description of the Napster Companion API Azure Native Integration. No indication of numeric limits, configuration parameter tables, error-code-based troubleshooting, or detailed decision matrices; therefore it does not meet the expert-knowledge criteria for any sub-skill type. |
 | [New Relic](https://learn.microsoft.com/en-us/azure/partner-solutions/new-relic/) | 0.20 | Overview for Azure Native New Relic Service; description indicates a general integrated experience, not detailed limits/config/troubleshooting. |
-| [Pure Storage Cloud](https://learn.microsoft.com/en-us/azure/partner-solutions/pure-storage/) | 0.20 | Azure Native Pure Storage Cloud overview; summary is conceptual (secure, efficient block storage) with no explicit expert content. |
 | [Qumulo](https://learn.microsoft.com/en-us/azure/partner-solutions/qumulo/) | 0.20 | Landing page for Azure Native Qumulo Scalable File Service; focuses on portal experience, not detailed limits/config/troubleshooting. |
 | [What is Datadog?](https://learn.microsoft.com/en-us/azure/partner-solutions/datadog/overview) | 0.20 | High-level overview of Datadog and its Azure Native Integration; no specific limits, configuration tables, error codes, or decision matrices. |
 | [What is Elastic on Azure?](https://learn.microsoft.com/en-us/azure/partner-solutions/elastic/overview) | 0.20 | Overview of Elastic on Azure Native Integrations; marketing/positioning style description without detailed technical limits, configs, or troubleshooting. |
 | [What is Informatica Intelligent Data Management Cloud (IDMC)](https://learn.microsoft.com/en-us/azure/partner-solutions/informatica/overview) | 0.15 | Informatica IDMC overview is descriptive; no clear indication of detailed configuration, limits, or troubleshooting content. |
 | [What is MongoDB Atlas?](https://learn.microsoft.com/en-us/azure/partner-solutions/mongo-db/overview) | 0.15 | MongoDB Atlas overview is conceptual; no explicit expert-level configuration, limits, or troubleshooting content indicated. |
 | [Arize AI](https://learn.microsoft.com/en-us/azure/partner-solutions/arize-ai/) | 0.10 | Marketing-style integration overview for Arize AI; no indication of numeric limits, configuration tables, or troubleshooting details. |
+| [Commvault](https://learn.microsoft.com/en-us/azure/partner-solutions/commvault/) | 0.10 | Conceptual overview of Azure Native Commvault Cloud; lacks specific technical limits, configuration tables, troubleshooting mappings, or decision matrices. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/napster/faq) | 0.10 | FAQ focused on subscription, billing, and general usage; summary does not indicate presence of specific error codes, limits, or configuration details. |
 | [LambdaTest - HyperExecute](https://learn.microsoft.com/en-us/azure/partner-solutions/lambda-test/) | 0.10 | Marketing/overview description of LambdaTest HyperExecute integration; lacks evidence of expert-level configuration or limits. |
-| [Napster Companion API resources and developer tools](https://learn.microsoft.com/en-us/azure/partner-solutions/napster/tools) | 0.10 | Describes available developer tools (dashboard, portal, playground, guides) without detailed configuration tables, limits, or troubleshooting mappings. |
+| [Napster API](https://learn.microsoft.com/en-us/azure/partner-solutions/napster/) | 0.10 | Marketing-style description of Napster API Azure Native integration; no detailed configuration options, quotas, error codes, or decision guidance. |
 | [Overview](https://learn.microsoft.com/en-us/azure/partner-solutions/overview) | 0.10 | High-level overview of Azure Native Integrations; no concrete limits, configs, or error details. |
 | [Palo Alto Network](https://learn.microsoft.com/en-us/azure/partner-solutions/palo-alto/) | 0.10 | Cloud NGFW by Palo Alto Networks overview; summary is marketplace/benefits oriented without detailed technical guidance. |
-| [Partner services](https://learn.microsoft.com/en-us/azure/partner-solutions/partners) | 0.10 | High-level listing/overview of Azure Native Integrations partner solutions; no detailed limits, configs, or troubleshooting content. |
+| [Partner services](https://learn.microsoft.com/en-us/azure/partner-solutions/partners) | 0.10 | High-level overview of Azure Native Integrations partner solutions without specific limits, configuration parameters, error codes, or decision matrices. |
+| [Pure Storage Cloud](https://learn.microsoft.com/en-us/azure/partner-solutions/pure-storage/) | 0.10 | Introductory description of Everpure Cloud Azure Native integration; does not include expert-level details like quotas, configuration parameters, or error-resolution guidance. |
+| [Resources and developer tools](https://learn.microsoft.com/en-us/azure/partner-solutions/napster/tools) | 0.10 | Describes available developer tools (dashboard, portal, playground) conceptually; lacks detailed configuration tables, limits, or troubleshooting mappings. |
 | [What is Azure Native Dynatrace Service?](https://learn.microsoft.com/en-us/azure/partner-solutions/dynatrace/overview) | 0.10 | Dynatrace overview is high-level description of the service; no explicit expert-level configuration, limits, or troubleshooting content indicated. |
 | [What is Azure Native New Relic Service?](https://learn.microsoft.com/en-us/azure/partner-solutions/new-relic/overview) | 0.10 | High-level overview of Azure Native New Relic Service; description and positioning without detailed configuration, limits, or decision matrices. |
-| [What is Azure Native Pure Storage Cloud?](https://learn.microsoft.com/en-us/azure/partner-solutions/pure-storage/overview) | 0.10 | Overview of Azure Native Pure Storage Cloud; high-level description of service and benefits without detailed configuration or numeric limits in the summary. |
 | [What is Azure Native Qumulo Scalable File Service?](https://learn.microsoft.com/en-us/azure/partner-solutions/qumulo/overview) | 0.10 | Overview of Azure Native Qumulo; descriptive explanation of the service and its capabilities without detailed configuration or numeric thresholds indicated. |
 | [What is Cloud NGFW by Palo Alto Networks?](https://learn.microsoft.com/en-us/azure/partner-solutions/palo-alto/overview) | 0.10 | Overview of Cloud NGFW by Palo Alto Networks; descriptive content about the service and its capabilities without detailed technical configuration or limits indicated. |
 | [What is Dell PowerScale?](https://learn.microsoft.com/en-us/azure/partner-solutions/dell/overview) | 0.10 | Page is an overview/marketing-style description of Dell PowerScale Azure Native Integration without detailed limits, configuration parameters, error codes, or decision matrices; no product-specific numeric limits, settings tables, or troubleshooting content are evident. |
+| [What is Everpure Cloud Azure Native?](https://learn.microsoft.com/en-us/azure/partner-solutions/pure-storage/overview) | 0.10 | Overview of Everpure Cloud Azure Native block storage; marketing/positioning content without specific limits, quotas, or configuration matrices. |
 | [What is LambdaTest - HyperExecute?](https://learn.microsoft.com/en-us/azure/partner-solutions/lambda-test/overview) | 0.10 | LambdaTest - HyperExecute overview is marketing/feature description; no explicit expert-level configuration, limits, or troubleshooting content indicated. |
 | [What is NGINXaaS – An Azure Native ISV Service?](https://learn.microsoft.com/en-us/azure/partner-solutions/nginx/overview) | 0.10 | Overview of NGINXaaS integration; primarily descriptive and marketing-style capabilities summary without detailed configuration or limits. |
-| [What is Napster Companion API – Azure Native Integrations?](https://learn.microsoft.com/en-us/azure/partner-solutions/napster/overview) | 0.10 | High-level overview of Napster API as an Azure Native Integration; no specific limits, configuration parameters, error codes, or decision matrices. |
+| [What is Napster API?](https://learn.microsoft.com/en-us/azure/partner-solutions/napster/overview) | 0.10 | High-level overview of Napster API as an Azure Native Integration; no specific limits, configuration parameters, error codes, or decision matrices. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/qumulo/faq) | - | FAQ page appears to answer common conceptual and usage questions about Azure Native Qumulo without clear evidence of detailed numeric limits, configuration parameter tables, error-code-based troubleshooting, or other structured expert-only data as defined by the sub-skill types. |

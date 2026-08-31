@@ -3,7 +3,7 @@ name: azure-logic-apps
 description: Expert knowledge for Azure Logic Apps development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building Logic Apps with SAP/B2B, on-prem connectors, private endpoints, CI/CD, or DR/multi-region designs, and other Azure Logic Apps related development tasks. Not for Azure Functions (use azure-functions), Azure Data Factory (use azure-data-factory), Azure Service Bus (use azure-service-bus), Azure Event Grid (use azure-event-grid).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-16"
+  generated_at: "2026-08-31"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Logic Apps Skill
@@ -30,9 +30,9 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L72-L85 | Patterns and architectures for Logic Apps: batching, API calling, DR/multi-region design, ordered messaging, rules engine behavior, and multi-agent/prompt-chaining workflows. |
 | Limits & Quotas | L86-L94 | Limits, quotas, and tuning for Logic Apps: JS inline code limits, SQL result/timeouts, connector pagination, large-message chunking, config limits, and metering/billing behavior. |
 | Security | L95-L111 | Securing Logic Apps with identities, private endpoints, certificates, OAuth/OBO, Easy Auth, and Azure Policy/Defender controls for governance and cross-tenant/connector restrictions. |
-| Configuration | L112-L149 | Configuring Logic Apps behavior: triggers, loops, branches, scopes, B2B/integration accounts, monitoring/logging, on-premises access, storage, telemetry, and workflow JSON/schema settings. |
-| Integrations & Coding Patterns | L150-L258 | Patterns and SDKs for integrating Logic Apps with AI agents, Azure/OpenAI, SAP, B2B/EDI, storage, messaging, on-prem systems, and for coding/testing workflows in C#, .NET, and Python |
-| Deployment | L259-L280 | Deploying Logic Apps (Standard & Consumption) with ARM/Bicep/DevOps, migrating/ cloning workflows, hybrid setups, deployment slots, and CI/CD via VS Code, DevOps, and Deployment Center. |
+| Configuration | L112-L147 | Configuring Logic Apps behavior: triggers, loops, branches, scopes, B2B/integration accounts, monitoring/logging, on-premises access, storage, telemetry, and workflow JSON/schema settings. |
+| Integrations & Coding Patterns | L148-L256 | Patterns and SDKs for integrating Logic Apps with AI agents, Azure/OpenAI, SAP, B2B/EDI, storage, messaging, on-prem systems, and for coding/testing workflows in C#, .NET, and Python |
+| Deployment | L257-L278 | Deploying Logic Apps (Standard & Consumption) with ARM/Bicep/DevOps, migrating/ cloning workflows, hybrid setups, deployment slots, and CI/CD via VS Code, DevOps, and Deployment Center. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -118,8 +118,6 @@ This skill requires **network access** to fetch documentation content:
 | Create Kusto queries for Logic Apps monitoring data | https://learn.microsoft.com/en-us/azure/logic-apps/create-monitoring-tracking-queries |
 | Configure app and host settings for Standard Logic Apps | https://learn.microsoft.com/en-us/azure/logic-apps/edit-app-settings-host-settings |
 | Enable enhanced Application Insights telemetry for Logic Apps Standard | https://learn.microsoft.com/en-us/azure/logic-apps/enable-enhanced-telemetry-standard-workflows |
-| Create and manage integration accounts for Logic Apps B2B | https://learn.microsoft.com/en-us/azure/logic-apps/enterprise-integration/create-integration-account |
-| Create and manage integration accounts for B2B | https://learn.microsoft.com/en-us/azure/logic-apps/enterprise-integration/create-integration-account |
 | Install and configure on-premises data gateway for Logic Apps | https://learn.microsoft.com/en-us/azure/logic-apps/install-on-premises-data-gateway-workflows |
 | Author and extend Logic Apps JSON workflow definitions | https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-author-definitions |
 | Configure and handle content types in Logic Apps workflows | https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-content-type |

@@ -1,9 +1,9 @@
 ---
 name: azure-chaos-studio
-description: Expert knowledge for Chaos Studio development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when running AKS chaos experiments, configuring agents, using CLI/REST, Logic Apps scheduling, or Workbooks, and other Chaos Studio related development tasks. Not for Azure Monitor (use azure-monitor), Azure Resiliency (use azure-resiliency), Azure Reliability (use azure-reliability), Azure Defender For Cloud (use azure-defender-for-cloud).
+description: Expert knowledge for Chaos Studio development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when configuring Chaos Agent, AKS resiliency tests, REST/CLI experiments, Logic Apps scheduling, or workspace scope, and other Chaos Studio related development tasks. Not for Azure Resiliency (use azure-resiliency), Azure Reliability (use azure-reliability), Azure Site Recovery (use azure-site-recovery).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-09"
+  generated_at: "2026-08-31"
   generator: "docs2skills/1.0.0"
 ---
 # Chaos Studio Skill
@@ -27,7 +27,7 @@ This skill requires **network access** to fetch documentation content:
 | Troubleshooting | L35-L45 | Diagnosing and fixing Chaos Agent install/health issues, status problems, workspace/scenario/experiment errors, known limitations, and using Workbooks to measure fault impact. |
 | Best Practices | L46-L50 | Guidance for designing and running Chaos Studio experiments to validate and improve Azure Kubernetes Service (AKS) workload resiliency under failure scenarios. |
 | Decision Making | L51-L56 | Guidance on selecting the right experiment targets/scope and deciding whether to use Chaos Studio workspaces or classic experiments for your chaos testing setup. |
-| Limits & Quotas | L57-L62 | Limits on chaos experiment runs, throttling, quotas, and restrictions specific to Chaos Studio workspaces in preview, including supported scale and usage constraints. |
+| Limits & Quotas | L57-L62 | Limits on experiments, faults, and resources in Chaos Studio, plus workspace-level constraints, quotas, and known limitations or issues. |
 | Security | L63-L75 | Security setup for Chaos Studio: identities, Entra auth, IP/network rules, RBAC and workspace permissions, least-privilege roles, and customer-managed key configuration. |
 | Configuration | L76-L92 | Configuring Chaos Studio and Azure Chaos Agent: deployment via ARM/Bicep, network/Private Link setup, monitoring integration, policies, targets, capabilities, and version/OS compatibility. |
 | Integrations & Coding Patterns | L93-L108 | How to configure and run Chaos Studio experiments via CLI, REST, and portal, including agent-based/service-direct faults, templates (AKS, VMSS, DNS), dynamic targeting, and Logic Apps scheduling |
@@ -58,7 +58,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Reference throttling and usage limits for Chaos Studio | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-service-limits |
-| Understand Chaos Studio workspace preview limitations | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-workspaces-limitations |
+| Review Chaos Studio workspace limitations and issues | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-workspaces-limitations |
 
 ### Security
 | Topic | URL |

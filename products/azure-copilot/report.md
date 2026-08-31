@@ -44,10 +44,10 @@ confusable_not_for: Not for Azure Portal (use azure-portal), Azure Machine Learn
 - **Unclassified**: 20
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 9
-- **Unchanged**: 26
-- **Deleted Pages**: 3
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 36
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-copilot/azure-copilot.csv`
 
 ## Classification Statistics
@@ -63,37 +63,6 @@ confusable_not_for: Not for Azure Portal (use azure-portal), Azure Machine Learn
 | *(Unclassified)* | 20 | 55.6% |
 
 ## Changes
-
-### New Pages
-
-- [Overview](https://learn.microsoft.com/en-us/azure/copilot/agents)
-
-### Updated Pages
-
-- [Overview](https://learn.microsoft.com/en-us/azure/copilot/overview)
-  - Updated: 2026-05-27T22:15:00.000Z → 2026-08-10T21:58:00.000Z
-- [Deployment](https://learn.microsoft.com/en-us/azure/copilot/deployment-agent)
-  - Updated: 2025-11-18T16:11:00.000Z → 2026-08-10T21:58:00.000Z
-- [Migration](https://learn.microsoft.com/en-us/azure/copilot/migration-agent)
-  - Updated: 2026-04-15T22:10:00.000Z → 2026-08-10T21:58:00.000Z
-- [Optimization](https://learn.microsoft.com/en-us/azure/copilot/optimization-agent)
-  - Updated: 2025-11-18T16:11:00.000Z → 2026-08-10T21:58:00.000Z
-- [Resiliency](https://learn.microsoft.com/en-us/azure/copilot/resiliency-agent)
-  - Updated: 2026-01-11T23:02:00.000Z → 2026-08-10T21:58:00.000Z
-- [Troubleshooting](https://learn.microsoft.com/en-us/azure/copilot/troubleshooting-agent)
-  - Updated: 2025-11-18T16:11:00.000Z → 2026-08-10T21:58:00.000Z
-- [Capabilities](https://learn.microsoft.com/en-us/azure/copilot/capabilities)
-  - Updated: 2025-12-12T23:13:00.000Z → 2026-06-19T08:00:00.000Z
-- [Manage access](https://learn.microsoft.com/en-us/azure/copilot/manage-access)
-  - Updated: 2025-11-18T16:11:00.000Z → 2026-08-10T21:58:00.000Z
-- [Manage conversation storage](https://learn.microsoft.com/en-us/azure/copilot/bring-your-own-storage)
-  - Updated: 2026-03-12T22:17:00.000Z → 2026-08-10T21:58:00.000Z
-
-### Deleted Pages
-
-- ~~Overview~~ (https://learn.microsoft.com/en-us/azure/copilot/agents-preview)
-- ~~Manage preview access~~ (https://learn.microsoft.com/en-us/azure/copilot/manage-agents-preview)
-- ~~Observability~~ (https://learn.microsoft.com/en-us/azure/copilot/observability-agent)
 
 ## Classified Pages
 
